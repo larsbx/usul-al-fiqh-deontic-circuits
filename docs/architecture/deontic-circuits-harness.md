@@ -22,6 +22,8 @@ audits, derivations, explanations, reports
 
 The LLM is useful for translation, candidate extraction, query planning, summarization, and natural-language explanation. It is not the deontic authority.
 
+Optional mathematical or computational research substrates may consume explicit canonical/test data and emit non-authoritative findings. They do not gain a reverse authority edge into the normative graph.
+
 ## Prolog corpus shape
 
 The current corpus is primarily a knowledge lattice and audit system, not a heavy Prolog search engine. Representative modules include:
@@ -47,6 +49,7 @@ The current corpus is primarily a knowledge lattice and audit system, not a heav
 | LLM harness | Candidate generation only | Yes | Proposes normalized records and explanations. Never silently accepts facts. |
 | Database fact graph | Canonical domain data | Yes, versioned | Stores accepted roots, warrants, edges, classifications, exceptions, audit status. |
 | Deontic kernel | Formal admissibility | Rarely | Enforces validity, tier discipline, closure, quarantine, defeat semantics. |
+| Algebraic research substrate | Research evidence only | Yes | May compute exact finite-field invariants, symmetry/replay evidence, and equivalence candidates. Never acts as a warrant or normative rule. |
 | Reports/API/UI | Presentation | Yes | Exposes derivations and review queues without changing authority. |
 
 ## Do not encode the corpus as application logic
@@ -99,6 +102,29 @@ A deontic circuit is a finite, inspectable graph of typed nodes and edges.
 - Minimal warrant path for each accepted claim.
 - Audit findings for orphan IDs, tier violations, unknown warrants, and schema drift.
 
+## Optional Clifford-even research lane
+
+The Clifford-even finite-field work is admitted only as an **experimental representation and verification lane**.
+
+Potential uses:
+
+- exact representation-invariance tests;
+- associative composition and replay of declared transforms;
+- symmetry/equivalence experiments over finite encodings;
+- deterministic cross-language regression fixtures.
+
+It may emit an `AlgebraicFinding` or equivalent research record. Such a record is not a warrant and cannot support a normative derivation.
+
+Forbidden shortcuts include:
+
+- treating orthogonality as deontic opposition;
+- treating geometric proximity as semantic similarity;
+- treating an orbit as deontic equivalence;
+- deriving normative strength from norms, inner products, angle invariants, or group structure;
+- using an algebraic result to bypass quarantine, defeaters, or tier discipline.
+
+The detailed boundary and mathematical reference are documented in `docs/research/clifford-even-rotation-geometry.md`.
+
 ## Preferred implementation direction
 
 Use **Elixir + Ash** as the system of record and application framework.
@@ -108,7 +134,8 @@ Use **Gleam** optionally as a small generated checker over canonical JSON facts.
 ```text
 Ash/Postgres owns mutable canonical data.
 Gleam, if added, owns a pure typed validation pass.
-Neither replaces the other.
+Optional algebraic research lanes own only reproducible research evidence.
+None replaces the deontic authority boundary.
 ```
 
 ## Non-goals for the first branch
@@ -118,6 +145,7 @@ Neither replaces the other.
 - No LLM-only verdict generation.
 - No rewrite of the full Prolog corpus.
 - No hard-coded domain fact enum explosion.
+- No geometric or algebraic scoring of normative claims.
 
 ## First implementation target
 
