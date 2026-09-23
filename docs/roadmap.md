@@ -8,6 +8,8 @@ Turn the ADQ Prolog corpus into a database-backed, auditable deontic-circuit res
 
 Natural language and LLM prompting are allowed at the authoring boundary. They may propose candidate records. They may not directly create accepted normative facts or verdicts.
 
+Optional mathematical research lanes may consume explicit data and emit reproducible findings, but they may not become hidden normative authorities.
+
 ## Milestone 1 — Corpus manifest
 
 - Inventory all uploaded ADQ files.
@@ -51,6 +53,17 @@ Natural language and LLM prompting are allowed at the authoring boundary. They m
 - Validate the bundles with a pure typed checker.
 - Treat Gleam output as independent deterministic evidence, not as the database authority.
 
+## Milestone 7 — Optional Clifford-even algebraic research lane
+
+- Keep the full mathematical development in a dedicated research note.
+- Add a machine-readable `F_7` rank-3 fixture for the seven attainable angle-invariant values.
+- Add a tiny reference implementation for the quadratic form, bilinear form, angle invariant, and `SL_2(F_7)` conjugation action.
+- Define a research-only `AlgebraicFinding` schema that is disjoint from warrants and hukm evidence.
+- Require provenance for field, quadratic form, basis/encoding version, operator, input hashes, and output invariants.
+- Add a fail-closed test proving that algebraic findings cannot enter normative derivations.
+- Demonstrate that disabling the algebraic lane leaves every accepted deontic derivation unchanged.
+- Do not promote this lane beyond research status until a concrete migration, replay, or representation-invariance benefit is demonstrated.
+
 ## First issues to open after this PR
 
 1. Add ADQ corpus manifest.
@@ -58,3 +71,4 @@ Natural language and LLM prompting are allowed at the authoring boundary. They m
 3. Add Ash resource skeleton.
 4. Add bundle validator and negative fixtures.
 5. Add LLM candidate extraction contract.
+6. Add the `F_7` Clifford-even research fixture and authority-firewall test.
