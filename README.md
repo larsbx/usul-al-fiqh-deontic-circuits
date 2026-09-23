@@ -2,14 +2,16 @@
 
 Research repository for crystallizing a database-backed, auditable deontic-circuit harness from the ADQ Prolog corpus.
 
-## Current research branch
+## Current research direction
 
-The first branch is `research/deontic-circuits-harness`.
+The first branch, `research/deontic-circuits-harness`, established the repository harness and was merged through PR #1.
 
-It frames the migration around three layers:
+The follow-up branch, `research/adq-affect-deontic-path-lift`, pulls the second ADQ source pass into the project. It treats the v37 `deontic_obligation/6` layer as the current strongest affect-deontic fact shape and specifies the missing v38 bridge from affect facts into contextual world/path filtering.
+
+The migration is framed around three layers:
 
 1. **Plain-text and LLM authoring harness** for scholarly notes, extraction proposals, explanations, and review workflows.
-2. **Database-backed canonical fact graph** for affect roots, warrants, refinements, opposition, compounds, hukm classifications, defeaters, and audit history.
-3. **Small deterministic deontic kernel** for validity, tier discipline, closure, defeat/blocking semantics, quarantine, and derivation traces.
+2. **Database-backed canonical fact graph** for affect roots, warrants, refinements, opposition, compounds, hukm classifications, defeaters, subjects, modalities, and audit history.
+3. **Small deterministic deontic kernel** for validity, tier discipline, closure, defeat/blocking semantics, quarantine, derivation traces, and path-level affect constraints.
 
 The guiding constraint is that the LLM may propose, normalize, query, and explain, but it must not become the hidden deontic authority.
