@@ -38,14 +38,30 @@ Natural language and LLM prompting are allowed at the authoring boundary. They m
 - Ensure every accepted derivation has a minimal trace.
 - Prevent quarantined evidence from supporting normative derivations.
 
-## Milestone 5 — LLM harness
+## Milestone 5 — Contextual path lift
+
+- Treat `deontic_obligation/6` as the local affect-deontic section shape.
+- Add world, context, path, and path-realization vocabulary without replacing ADQ facts.
+- Require subject, object, modality, tier, and capacity guards before a local section can constrain a path.
+- Keep `affect_deontic`, `behavioral_deontic`, `somatic_context`, and `path_deontic` as distinct module boundaries.
+- Use anti-pairs as displacement/path-filter constraints, not as global contradictions.
+
+## Milestone 6 — Finite sheaf compatibility layer
+
+- Model a finite context poset as the first site.
+- Implement restriction checks from broader contexts to refined contexts.
+- Define compatibility of local deontic sections on overlaps.
+- Emit structured obstruction records for failed gluing.
+- Treat lexical/behavioral/somatic evidence as a cosheaf-like aggregation layer feeding the deontic sheaf.
+
+## Milestone 7 — LLM harness
 
 - Add plain-text candidate extraction.
 - Add review queues for extracted records.
 - Require explicit acceptance actions before canonical insertion.
 - Generate explanations from derivation traces, not free-form verdict invention.
 
-## Milestone 6 — Optional Gleam lane
+## Milestone 8 — Optional Gleam lane
 
 - Export canonical JSON bundles.
 - Validate the bundles with a pure typed checker.
@@ -57,4 +73,6 @@ Natural language and LLM prompting are allowed at the authoring boundary. They m
 2. Add canonical ID map for root/display aliases.
 3. Add Ash resource skeleton.
 4. Add bundle validator and negative fixtures.
-5. Add LLM candidate extraction contract.
+5. Add contextual path-lift predicates around `deontic_obligation/6`.
+6. Add finite sheaf gluing and obstruction fixtures.
+7. Add LLM candidate extraction contract.
