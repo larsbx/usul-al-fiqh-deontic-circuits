@@ -1,0 +1,51 @@
+{
+  "bundle_id": "adq-seed-sample",
+  "version": "0.1.0",
+  "source": "derived from the ADQ Prolog corpus shape; values are a minimal illustrative migration fixture",
+  "records": [
+    {
+      "kind": "affect_root",
+      "id": "hubb",
+      "display": "ḥubb",
+      "arabic_root": "ح-ب-ب",
+      "gloss": "love",
+      "cluster": "love",
+      "aliases": ["ḥubb", "hubb"],
+      "verse_refs": []
+    },
+    {
+      "kind": "affect_root",
+      "id": "raja",
+      "display": "rajāʾ",
+      "gloss": "hope",
+      "cluster": "hope",
+      "aliases": ["rajāʾ", "raja"],
+      "verse_refs": []
+    },
+    {
+      "kind": "warrant",
+      "id": "w_lexical_seed",
+      "tier": 1,
+      "source_kind": "lexical",
+      "status": "candidate",
+      "locator": "ADQ lexical/root inventory",
+      "note": "Seed lexical warrant used only to exercise the canonical schema."
+    },
+    {
+      "kind": "refinement_edge",
+      "id": "edge_hubb_refines_love",
+      "child": {"kind": "root", "id": "hubb"},
+      "parent": {"kind": "external_concept", "id": "love"},
+      "warrant_id": "w_lexical_seed"
+    },
+    {
+      "kind": "hukm_classification",
+      "id": "hukm_hubb_seed",
+      "target": {"kind": "root", "id": "hubb"},
+      "object": "Allah",
+      "hukm": "mandub",
+      "condition": "illustrative seed only; not an accepted fiqh verdict",
+      "warrant_id": "w_lexical_seed"
+    }
+  ]
+}
