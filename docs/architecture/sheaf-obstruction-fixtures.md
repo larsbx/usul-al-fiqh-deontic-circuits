@@ -2,12 +2,23 @@
 
 ## Purpose
 
-This note records the first concrete fixture layer after the v38 contextual affect-deontic bridge. The v38 bridge defines how ADQ-shaped facts can constrain local paths. The v39 fixture file makes the sheaf-style language testable by adding small worlds, paths, local sections, gluable cases, and obstruction records.
+This note records the first concrete fixture layer after the v38 contextual affect-deontic bridge. The v38 bridge defines how ADQ-shaped facts can constrain local paths. The v39 fixtures make the sheaf-style language testable by adding small worlds, paths, local sections, gluable cases, and obstruction records.
 
-Companion file:
+The fixture implementation is now split by concern. The original public path remains as a compatibility aggregator.
+
+## Companion files
 
 ```text
-examples/v39_sheaf_obstruction_fixtures.pl
+examples/v39_affect_concern.pl
+examples/v39_temporal_concern.pl
+examples/v39_sheaf_concern.pl
+examples/v39_sheaf_obstruction_fixtures.pl   # aggregator only
+```
+
+Related architecture note:
+
+```text
+docs/architecture/separated-concerns.md
 ```
 
 ## Boundary
@@ -23,6 +34,15 @@ These fixtures are not source-derived fiqh claims. They are executable design pr
 
 The fixture facts may later be replaced by canonical imports from the ADQ bundle, but the expected obstruction categories should survive that migration.
 
+## Concern ownership
+
+| Concern | File | Owns | Does not own |
+|---|---|---|---|
+| Affect | `examples/v39_affect_concern.pl` | ADQ-shaped `deontic_obligation/6`, `deontic_anti_pair/4`, and local `ctx_affect/6` observations | path topology or gluing |
+| Temporal/path | `examples/v39_temporal_concern.pl` | `ctx/3`, `path_realizes/4`, and `path_obligation_scope/4` | hukm/operator meaning or obstruction |
+| Sheaf/gluing | `examples/v39_sheaf_concern.pl` | `local_section/3`, compatibility, world/path gluing, obstruction, and fixture expectations | source facts or temporal topology |
+| Aggregator | `examples/v39_sheaf_obstruction_fixtures.pl` | stable load target and smoke-query comments | any domain facts |
+
 ## Fixture worlds
 
 | World | Intended behavior |
@@ -36,7 +56,7 @@ The fixture facts may later be replaced by canonical imports from the ADQ bundle
 
 ## Gluing vocabulary
 
-The fixture introduces the following finite sheaf-style predicates:
+The sheaf concern introduces the following finite sheaf-style predicates:
 
 ```prolog
 local_section(World, Agent, Section).
@@ -51,7 +71,7 @@ This keeps the architecture finite and inspectable. A world glues only when acti
 
 ## Why fixture conflicts are useful
 
-The generated conflict facts:
+The generated conflict facts remain in the affect concern:
 
 ```prolog
 deontic_obligation(test_conflict_affect, test_object, all_mukallafin,
@@ -61,11 +81,11 @@ deontic_obligation(test_conflict_affect, test_object, all_mukallafin,
     f, unconditional, fixture(haram_side)).
 ```
 
-are intentionally not claims about the source corpus. They prove that the gluing layer can reject a same-scope incompatible operator pair instead of silently accepting inconsistent sections.
+They are intentionally not claims about the source corpus. They prove that the gluing layer can reject a same-scope incompatible operator pair instead of silently accepting inconsistent sections.
 
 ## Expected smoke queries
 
-The v39 file records named fixture expectations such as:
+The sheaf concern records named fixture expectations such as:
 
 ```prolog
 fixture_expectation(allah_fear_path_glues,
@@ -80,5 +100,6 @@ These are not yet plunit tests. They are stable test vectors for the next branch
 1. Convert `fixture_expectation/3` into plunit tests or generated Ash fixture tests.
 2. Add a canonical import adapter from accepted ADQ facts into the v38 predicates.
 3. Replace artificial sample facts with fixture bundles generated from canonical JSON.
-4. Add negative tests for tier quarantine, alias gluing failure, object collision, subject collision, and modality unsatisfied.
-5. Preserve the rule that LLM text can propose fixture candidates but cannot turn them into accepted normative facts without deterministic review.
+4. Keep affect import, temporal case fixtures, and sheaf obstruction checks independently replaceable.
+5. Add negative tests for tier quarantine, alias gluing failure, object collision, subject collision, and modality unsatisfied.
+6. Preserve the rule that LLM text can propose fixture candidates but cannot turn them into accepted normative facts without deterministic review.
