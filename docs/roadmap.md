@@ -38,6 +38,14 @@ Natural language and LLM prompting are allowed at the authoring boundary. They m
 - Ensure every accepted derivation has a minimal trace.
 - Prevent quarantined evidence from supporting normative derivations.
 
+## Milestone 4A — Finite-valued Boolean boundary
+
+- Preserve five-fold hukm as finite verdict tags: `wajib`, `mandub`, `mubah`, `makruh`, `haram`, plus `no_ruling` outside taklif.
+- Permit Boolean circuits only as evidence gates, condition checks, admissibility predicates, projection views, and path filters.
+- Reject collapse rules such as `not_haram = mubah`, `not_wajib = haram`, `allowed = neutral`, and `ideal = not_haram`.
+- Add projection fixtures for `weak_permissible`, `ideal_positive`, `path_excluding`, and `path_demoting`.
+- Require accepted classifications to carry the original finite verdict in derivation traces even when a Boolean projection is also emitted.
+
 ## Milestone 5 — LLM harness
 
 - Add plain-text candidate extraction.
@@ -58,3 +66,5 @@ Natural language and LLM prompting are allowed at the authoring boundary. They m
 3. Add Ash resource skeleton.
 4. Add bundle validator and negative fixtures.
 5. Add LLM candidate extraction contract.
+6. Add finite-valued Boolean-boundary validator fixtures.
+7. Add path-filter projection tests for required, excluded, preferred, demoted, and neutral paths.
