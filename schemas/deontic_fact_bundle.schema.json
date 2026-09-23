@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/deontic_fact_bundle.schema.json",
+  "title": "Deontic Fact Bundle",
+  "type": "object",
+  "required": ["bundle_id", "version", "records"],
+  "additionalProperties": false,
+  "properties": {
+    "bundle_id": {"type": "string", "minLength": 1},
+    "version": {"type": "string", "minLength": 1},
+    "source": {"type": "string"},
+    "records": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/record"}
+    }
+  },
+  "$defs": {
+    "record": {
+      "oneOf": [
+        {"$ref": "#/$defs/affect_root"},
+        {"$ref": "#/$defs/warrant"},
+        {"$ref": "#/$defs/refinement_edge"},
+        {"$ref": "#/$defs/opposition_edge"},
+        {"$ref": "#/$defs/hukm_classification"},
+        {"$ref": "#/$defs/defeater"}
+      ]
+    },
+    "canonical_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "target": {
+      "type": "object",
+      "required": ["kind", "id"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"enum": ["root", "compound", "profile", "object_cluster", "external_concept"]},
+        "id": {"$ref": "#/$defs/canonical_id"}
+      }
+    },
+    "affect_root": {
+      "type": "object",
+      "required": ["kind", "id", "display", "cluster"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "affect_root"},
+        "id": {"$ref": "#/$defs/canonical_id"},
+        "display": {"type": "string", "minLength": 1},
+        "arabic_root": {"type": "string"},
+        "gloss": {"type": "string"},
+        "cluster": {"type": "string", "minLength": 1},
+        "aliases": {"type": "array", "items": {"type": "string"}},
+        "verse_refs": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "warrant": {
+      "type": "object",
+      "required": ["kind", "id", "tier", "source_kind", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "warrant"},
+        "id": {"$ref": "#/$defs/canonical_id"},
+        "tier": {"enum": [1, 2, 3, 4]},
+        "source_kind": {"enum": ["quranic", "lexical", "behavioral", "somatic", "tafsir", "inferred", "commentary"]},
+        "status": {"enum": ["candidate", "accepted", "quarantined", "rejected"]},
+        "locator": {"type": "string"},
+        "note": {"type": "string"},
+        "quarantine_reason": {"type": "string"}
+      }
+    },
+    "refinement_edge": {
+      "type": "object",
+      "required": ["kind", "id", "child", "parent", "warrant_id"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "refinement_edge"},
+        "id": {"$ref": "#/$defs/canonical_id"},
+        "child": {"$ref": "#/$defs/target"},
+        "parent": {"$ref": "#/$defs/target"},
+        "warrant_id": {"$ref": "#/$defs/canonical_id"}
+      }
+    },
+    "opposition_edge": {
+      "type": "object",
+      "required": ["kind", "id", "left", "right", "warrant_id"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "opposition_edge"},
+        "id": {"$ref": "#/$defs/canonical_id"},
+        "left": {"$ref": "#/$defs/target"},
+        "right": {"$ref": "#/$defs/target"},
+        "warrant_id": {"$ref": "#/$defs/canonical_id"},
+        "symmetric": {"type": "boolean", "default": true}
+      }
+    },
+    "hukm_classification": {
+      "type": "object",
+      "required": ["kind", "id", "target", "object", "hukm", "warrant_id"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "hukm_classification"},
+        "id": {"$ref": "#/$defs/canonical_id"},
+        "target": {"$ref": "#/$defs/target"},
+        "object": {"type": "string", "minLength": 1},
+        "hukm": {"enum": ["wajib", "mandub", "mubah", "makruh", "haram", "haram_when_dominant", "haram_when_ibadah_grade"]},
+        "condition": {"type": "string"},
+        "warrant_id": {"$ref": "#/$defs/canonical_id"}
+      }
+    },
+    "defeater": {
+      "type": "object",
+      "required": ["kind", "id", "target", "defeats", "warrant_id"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "defeater"},
+        "id": {"$ref": "#/$defs/canonical_id"},
+        "target": {"$ref": "#/$defs/target"},
+        "defeats": {"$ref": "#/$defs/canonical_id"},
+        "condition": {"type": "string"},
+        "warrant_id": {"$ref": "#/$defs/canonical_id"}
+      }
+    }
+  }
+}
