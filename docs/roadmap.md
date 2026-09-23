@@ -32,6 +32,14 @@ Natural language and LLM prompting are allowed at the authoring boundary. They m
 - Keep involuntary somatic panic as context evidence rather than direct liability.
 - Preserve a clear fixture/source boundary: generated conflict facts prove the failure mode only; they are not source-derived deontic claims.
 
+## Milestone 1c — Concern extraction
+
+- Separate affect-deontic facts and local affect observations from temporal/path fixtures.
+- Separate temporal/world/path data from sheaf gluing and obstruction checks.
+- Keep `examples/v39_sheaf_obstruction_fixtures.pl` as a compatibility aggregator only.
+- Document the concern boundary in `docs/architecture/separated-concerns.md`.
+- Preserve independent promotion paths for affect imports, temporal case fixtures, and sheaf compatibility tests.
+
 ## Milestone 2 — Canonical schema
 
 - Stabilize canonical IDs.
@@ -79,5 +87,6 @@ Natural language and LLM prompting are allowed at the authoring boundary. They m
 3. Add Ash resource skeleton.
 4. Add bundle validator and negative fixtures.
 5. Add LLM candidate extraction contract.
-6. Convert `fixture_expectation/3` records from `examples/v39_sheaf_obstruction_fixtures.pl` into executable tests.
+6. Convert `fixture_expectation/3` records from `examples/v39_sheaf_concern.pl` into executable tests.
 7. Add canonical JSON import adapters for the v38/v39 bridge predicates.
+8. Mirror the affect, temporal/path, and sheaf concern split in the Ash resource design.
