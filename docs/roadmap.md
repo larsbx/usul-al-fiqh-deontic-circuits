@@ -24,6 +24,22 @@ Natural language and LLM prompting are allowed at the authoring boundary. They m
 - Add a thin `v38_contextual_affect_deontics.pl` bridge before attempting a database rewrite.
 - Keep `behavioral_deontic` outside the affect lattice rather than collapsing acts into affect-state facts.
 
+## Milestone 1b — Finite sheaf obstruction fixtures
+
+- Treat active local ADQ verdicts as sections over a finite context site.
+- Add gluable world/path predicates over tiny fixture cases.
+- Emit structured obstruction records for forbidden realization, missing required realization, anti-pair displacement, and same-scope operator conflict.
+- Keep involuntary somatic panic as context evidence rather than direct liability.
+- Preserve a clear fixture/source boundary: generated conflict facts prove the failure mode only; they are not source-derived deontic claims.
+
+## Milestone 1c — Concern extraction
+
+- Separate affect-deontic facts and local affect observations from temporal/path fixtures.
+- Separate temporal/world/path data from sheaf gluing and obstruction checks.
+- Keep `examples/v39_sheaf_obstruction_fixtures.pl` as a compatibility aggregator only.
+- Document the concern boundary in `docs/architecture/separated-concerns.md`.
+- Preserve independent promotion paths for affect imports, temporal case fixtures, and sheaf compatibility tests.
+
 ## Milestone 2 — Canonical schema
 
 - Stabilize canonical IDs.
@@ -47,6 +63,7 @@ Natural language and LLM prompting are allowed at the authoring boundary. They m
 - Implement defeat/blocking semantics.
 - Implement subject/object/modality matching before verdict derivation.
 - Implement path-level affect violations for forbidden facts, missing in-scope obligations, and anti-pair displacement.
+- Implement finite sheaf-style compatibility checks and obstruction reports before accepting glued verdicts.
 - Ensure every accepted derivation has a minimal trace.
 - Prevent quarantined evidence from supporting normative derivations.
 
@@ -70,4 +87,6 @@ Natural language and LLM prompting are allowed at the authoring boundary. They m
 3. Add Ash resource skeleton.
 4. Add bundle validator and negative fixtures.
 5. Add LLM candidate extraction contract.
-6. Add v38 contextual path-lift tests over a tiny fixture world/path graph.
+6. Convert `fixture_expectation/3` records from `examples/v39_sheaf_concern.pl` into executable tests.
+7. Add canonical JSON import adapters for the v38/v39 bridge predicates.
+8. Mirror the affect, temporal/path, and sheaf concern split in the Ash resource design.
