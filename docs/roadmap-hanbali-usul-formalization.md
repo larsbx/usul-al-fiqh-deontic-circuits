@@ -33,6 +33,21 @@ Ibn Taymiyya's critique fixes three design decisions **before** any axiom is wri
 
 This rejects Standard Deontic Logic (KD) as the core: it has no defeasibility and is open to the Chisholm/Ross paradoxes. KD remains a possible *fragment*, valid for strict (qaṭʿī) rules only.
 
+### Status (2026-10-05)
+
+| Milestone | State | Evidence |
+|---|---|---|
+| M0 registry | **done for located texts** | `corpus/registry.json` (20 works, pinned witnesses), `corpus/lock.json`, `corpus/audit.json`: Ibn Rajab's 160 and Ibn al-Laḥḥām's 66 confirmed; al-Saʿdī's 60 needs OCR review |
+| M1 logic core | **kernel proved** | `Usul.Dung`: admissibility preserved by `F`, grounded ⊆ every complete extension. The ADR prose is still open |
+| M2 signature | **seeded** | 26 ḥudūd extracted from *al-Uṣūl*; `Usul.Hukm` / `Usul.Signature`; Σ map checked on both sides |
+| M3 qawāʿid | started | `Usul.Qawaid`: yaqīn/shakk, necessary-means closure ∧ ought-implies-can, ḍarūra bound |
+| M4 tests | candidates | 2117 `far` records (Ibn Rajab, Ibn al-Laḥḥām) |
+| M5 tarjīḥ | started | `Usul.Taarud` resolution order; Haskell mirror |
+| M6 TLA+ | started | Istishab, Taklif, Naskh, Review: all pass TLC, and each was mutation-checked |
+| M11 oracle | started | `semantic-categorical-oracle` `Oracle.Usul.*` advisory laws; three-way agreement on `grounded-v1.json` |
+
+Pipeline details: [`architecture/formalization-pipeline.md`](architecture/formalization-pipeline.md).
+
 ---
 
 ## 1. Source → layer map

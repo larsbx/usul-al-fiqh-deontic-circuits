@@ -1,0 +1,9 @@
+name = "usul"
+version = "0.1.0"
+defaultTargets = ["Usul", "UsulTest"]
+
+[[lean_lib]]
+name = "Usul"
+
+[[lean_lib]]
+name = "UsulTest"

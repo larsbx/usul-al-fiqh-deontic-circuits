@@ -1,0 +1,70 @@
+{
+  "archive-pdf1995": {
+    "work": "sadi.qawaid_jamia",
+    "found": 54,
+    "numbered": 52,
+    "max_number": 60,
+    "expected": 60,
+    "missing": [
+      3,
+      5,
+      8,
+      12,
+      22,
+      23,
+      32,
+      53,
+      54,
+      55,
+      56
+    ],
+    "duplicates": [
+      1,
+      15,
+      30
+    ],
+    "unparsed": 2,
+    "matches_expected": false
+  },
+  "openiti-lahham-shamay34193": {
+    "work": "ibn_lahham.qawaid_fawaid",
+    "found": 64,
+    "numbered": 63,
+    "max_number": 66,
+    "expected": 66,
+    "missing": [
+      16,
+      18,
+      30
+    ],
+    "duplicates": [],
+    "unparsed": 1,
+    "matches_expected": false
+  },
+  "openiti-lahham-shamela8526": {
+    "work": "ibn_lahham.qawaid_fawaid",
+    "found": 66,
+    "numbered": 66,
+    "max_number": 66,
+    "expected": 66,
+    "missing": [],
+    "duplicates": [],
+    "unparsed": 0,
+    "matches_expected": true
+  },
+  "openiti-rajab-shamela21730": {
+    "work": "ibn_rajab.taqrir_qawaid",
+    "found": 160,
+    "numbered": 160,
+    "max_number": 160,
+    "expected": 160,
+    "missing": [],
+    "duplicates": [],
+    "unparsed": 0,
+    "matches_expected": true
+  },
+  "shamela-9942": {
+    "work": "ibn_uthaymin.usul",
+    "found": 26
+  }
+}

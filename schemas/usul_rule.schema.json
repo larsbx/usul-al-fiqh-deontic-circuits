@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/usul_rule.schema.json",
+  "title": "Uṣūl Record (qāʿida, farʿ test case, or ḥadd)",
+  "type": "object",
+  "required": ["id", "work", "witness", "record_type", "locator", "status", "extraction"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z][a-z0-9_.]*$"},
+    "work": {"type": "string"},
+    "witness": {"type": "string"},
+    "record_type": {"enum": ["qaida", "far", "hadd"]},
+    "number": {"type": ["integer", "null"], "minimum": 1},
+    "locator": {"type": "string", "pattern": "^src:[a-z0-9-]+(/v\\d+:p\\d+)?#.+$"},
+    "heading_ar": {"type": "string"},
+    "excerpt_ar": {"type": "string"},
+    "term_ar": {"type": "string"},
+    "lughatan_ar": {"type": ["string", "null"]},
+    "istilahan_ar": {"type": "string"},
+    "kind": {"enum": ["unclassified", "meta", "default", "taqsim", "farq", "closure", "definition"]},
+    "furu_count": {"type": "integer", "minimum": 0},
+    "qaida": {"type": "string"},
+    "case_ar": {"type": "string", "minLength": 1},
+    "ocr_corrected": {"type": "boolean"},
+    "status": {"enum": ["candidate", "reviewed", "accepted", "quarantined"]},
+    "extraction": {
+      "type": "object",
+      "required": ["pipeline", "method"],
+      "properties": {"pipeline": {"type": "string"}, "method": {"type": "string"}}
+    }
+  },
+  "allOf": [
+    {"if": {"properties": {"record_type": {"const": "qaida"}}},
+     "then": {"required": ["number", "heading_ar", "excerpt_ar", "kind"]}},
+    {"if": {"properties": {"record_type": {"const": "far"}}},
+     "then": {"required": ["qaida", "case_ar"]}},
+    {"if": {"properties": {"record_type": {"const": "hadd"}}},
+     "then": {"required": ["term_ar", "istilahan_ar"]}}
+  ]
+}

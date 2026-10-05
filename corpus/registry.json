@@ -1,0 +1,309 @@
+{
+  "registry_version": "1",
+  "policy": {
+    "full_text": "Full texts are fetched into .cache/corpus and never committed. Committed records carry short excerpts with edition-qualified locators.",
+    "authority": "Records are candidates until reviewed. Nothing here is a fatwā."
+  },
+  "works": [
+    {
+      "id": "ibn_uthaymin.usul",
+      "title_ar": "الأصول من علم الأصول",
+      "title_tr": "al-Uṣūl min ʿIlm al-Uṣūl",
+      "author": {"name_tr": "Muḥammad b. Ṣāliḥ Ibn ʿUthaymīn", "death_ah": 1421},
+      "layers": ["signature"],
+      "kernel": true,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {"id": "shamela-9942", "kind": "shamela", "book_id": 9942, "pages": [1, 99],
+         "edition": "Dār Ibn al-Jawzī, 4th ed., 1430/2009; pagination matches print"}
+      ],
+      "segmenter": {"kind": "hudud_brackets"},
+      "status": "located"
+    },
+    {
+      "id": "ibn_qudama.rawda",
+      "title_ar": "روضة الناظر وجنة المناظر",
+      "title_tr": "Rawḍat al-Nāẓir wa-Junnat al-Munāẓir",
+      "author": {"name_tr": "Muwaffaq al-Dīn Ibn Qudāma", "death_ah": 620},
+      "layers": ["signature", "inference", "dialectic"],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {"id": "openiti-rawda-shamela12010", "kind": "openiti", "repo": "0625AH",
+         "commit": "f1e38210b32fd0d043949ff6471e869d658c3b16",
+         "path": "data/0620IbnQudamaMaqdisi/0620IbnQudamaMaqdisi.RawdatNazir/0620IbnQudamaMaqdisi.RawdatNazir.Shamela0012010-ara1",
+         "edition": "Shamela 12010, taḥqīq Shaʿbān"}
+      ],
+      "status": "located"
+    },
+    {
+      "id": "tufi.sharh_mukhtasar_rawda",
+      "title_ar": "شرح مختصر الروضة",
+      "title_tr": "Sharḥ Mukhtaṣar al-Rawḍa",
+      "author": {"name_tr": "Najm al-Dīn al-Ṭūfī", "death_ah": 716},
+      "layers": ["signature", "inference"],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {"id": "openiti-tufi-shamela10781", "kind": "openiti", "repo": "0725AH",
+         "commit": "056df249d6619b428a78f1d69a8ab2851b97b0a6",
+         "path": "data/0716NajmDinTufi/0716NajmDinTufi.SharhMukhtasarRawda/0716NajmDinTufi.SharhMukhtasarRawda.Shamela0010781-ara1",
+         "edition": "Shamela 10781"}
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_najjar.sharh_kawkab_munir",
+      "title_ar": "شرح الكوكب المنير",
+      "title_tr": "Sharḥ al-Kawkab al-Munīr",
+      "author": {"name_tr": "Ibn al-Najjār al-Futūḥī", "death_ah": 972},
+      "layers": ["signature", "inference"],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {"id": "openiti-kawkab-shamela12019", "kind": "openiti", "repo": "0975AH",
+         "commit": "c47ff1c47a9108eab999d7fa68ef30be16bc0f85",
+         "path": "data/0972IbnAhmadIbnNajjarHanbali/0972IbnAhmadIbnNajjarHanbali.SharhKawkabMunir/0972IbnAhmadIbnNajjarHanbali.SharhKawkabMunir.Shamela0012019-ara1",
+         "edition": "Shamela 12019"}
+      ],
+      "status": "located"
+    },
+    {
+      "id": "sadi.qawaid_jamia",
+      "title_ar": "القواعد والأصول الجامعة والفروق والتقاسيم البديعة النافعة",
+      "title_tr": "al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa wa'l-Furūq wa'l-Taqāsīm al-Badīʿa al-Nāfiʿa",
+      "author": {"name_tr": "ʿAbd al-Raḥmān b. Nāṣir al-Saʿdī", "death_ah": 1376},
+      "layers": ["axioms"],
+      "kernel": true,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {"id": "archive-pdf1995", "kind": "archive", "item": "Pdf1995",
+         "file": "كتاب   pdf     اقرا اونلاين   1995 - القواعد والأصول الجامعة والفروق والتقاسيم البديعة النافعة - ط دار الوطن_djvu.txt",
+         "edition": "Dār al-Waṭan, ed. Khālid al-Mushayqiḥ", "quality": "ocr_unreviewed"}
+      ],
+      "segmenter": {"kind": "lines", "marker": "القاعدة"},
+      "expected_units": {"unit": "qāʿida", "count": 60, "claim_source": "recall"},
+      "status": "located_ocr"
+    },
+    {
+      "id": "ibn_uthaymin.manzuma",
+      "title_ar": "منظومة أصول الفقه وقواعده",
+      "title_tr": "Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi",
+      "author": {"name_tr": "Muḥammad b. Ṣāliḥ Ibn ʿUthaymīn", "death_ah": 1421},
+      "layers": ["axioms"],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {"id": "archive-manthomat", "kind": "archive", "item": "manthomat_osool_alfiqh_othaimeen_f_11_202408",
+         "quality": "pdf_only"}
+      ],
+      "status": "pdf_only"
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid",
+      "title_ar": "تقرير القواعد وتحرير الفوائد",
+      "title_tr": "Taqrīr al-Qawāʿid wa-Taḥrīr al-Fawāʾid",
+      "author": {"name_tr": "Ibn Rajab al-Ḥanbalī", "death_ah": 795},
+      "layers": ["axioms"],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {"id": "openiti-rajab-shamela21730", "kind": "openiti", "repo": "0800AH",
+         "commit": "7b745ec7b83d6d4971f937364dbdec2fe0ba2a40",
+         "path": "data/0795IbnRajabHanbali/0795IbnRajabHanbali.Qawacid/0795IbnRajabHanbali.Qawacid.Shamela0021730-ara1.completed",
+         "edition": "Dār al-Fikr (Shamela 21730), OpenITI .completed"}
+      ],
+      "segmenter": {"kind": "headed", "marker": "القاعدة"},
+      "expected_units": {"unit": "qāʿida", "count": 160, "claim_source": "recall"},
+      "status": "located"
+    },
+    {
+      "id": "ibn_taymiyya.qawaid_nuraniyya",
+      "title_ar": "القواعد النورانية الفقهية",
+      "title_tr": "al-Qawāʿid al-Nūrāniyya",
+      "author": {"name_tr": "Ibn Taymiyya", "death_ah": 728},
+      "layers": ["axioms"],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {"id": "openiti-nuraniyya-shamela21729", "kind": "openiti", "repo": "0750AH",
+         "commit": "7c9c84d9f98581470aa2b7f8bee00ae285c5c707",
+         "path": "data/0728IbnTaymiyya/0728IbnTaymiyya.QawacidNuraniyya/0728IbnTaymiyya.QawacidNuraniyya.Shamela0021729-ara1.completed",
+         "edition": "Shamela 21729, OpenITI .completed"}
+      ],
+      "status": "located"
+    },
+    {
+      "id": "sadi.tariq_wusul",
+      "title_ar": "طريق الوصول إلى العلم المأمول بمعرفة القواعد والضوابط والأصول",
+      "title_tr": "Ṭarīq al-Wuṣūl ilā al-ʿIlm al-Maʾmūl",
+      "author": {"name_tr": "ʿAbd al-Raḥmān b. Nāṣir al-Saʿdī", "death_ah": 1376},
+      "layers": ["axioms"],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {"id": "archive-tareeq-wsoul", "kind": "archive", "item": "Tareeq_Wsoul", "file": "Tareeq_Wsoul.pdf",
+         "quality": "pdf_only"}
+      ],
+      "status": "pdf_only"
+    },
+    {
+      "id": "sadi.risala_latifa",
+      "title_ar": "رسالة لطيفة جامعة في أصول الفقه المهمة",
+      "title_tr": "Risāla Laṭīfa Jāmiʿa fī Uṣūl al-Fiqh al-Muhimma",
+      "author": {"name_tr": "ʿAbd al-Raḥmān b. Nāṣir al-Saʿdī", "death_ah": 1376},
+      "layers": ["signature", "axioms"],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "note": "Addition: al-Saʿdī's own compact uṣūl epitome; cross-check for the signature layer.",
+      "witnesses": [{"id": "shamela-9527", "kind": "shamela", "book_id": 9527}],
+      "status": "located"
+    },
+    {
+      "id": "ibn_lahham.qawaid_fawaid",
+      "title_ar": "القواعد والفوائد الأصولية وما يتبعها من الأحكام الفرعية",
+      "title_tr": "al-Qawāʿid wa'l-Fawāʾid al-Uṣūliyya",
+      "author": {"name_tr": "Ibn al-Laḥḥām al-Baʿlī", "death_ah": 803},
+      "layers": ["tests"],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {"id": "openiti-lahham-shamela8526", "kind": "openiti", "repo": "0825AH",
+         "commit": "bae1fba53712c020fe43e3e60b37dfe61f2b64a8",
+         "path": "data/0803IbnLahhamCalaDinBacli/0803IbnLahhamCalaDinBacli.Qawacid/0803IbnLahhamCalaDinBacli.Qawacid.Shamela0008526-ara1",
+         "edition": "Shamela 8526"},
+        {"id": "openiti-lahham-shamay34193", "kind": "openiti", "repo": "0825AH",
+         "commit": "bae1fba53712c020fe43e3e60b37dfe61f2b64a8",
+         "path": "data/0803IbnLahhamCalaDinBacli/0803IbnLahhamCalaDinBacli.Qawacid/0803IbnLahhamCalaDinBacli.Qawacid.ShamAY0034193-ara1",
+         "edition": "Shamela (AY) 34193; rule statement inline in header"}
+      ],
+      "segmenter": {"kind": "headed", "marker": "القاعدة"},
+      "expected_units": {"unit": "qāʿida", "count": 66, "claim_source": "witness openiti-lahham-shamela8526 (final header «القاعدة 66»)"},
+      "status": "located"
+    },
+    {
+      "id": "ibn_qayyim.ilam",
+      "title_ar": "إعلام الموقعين عن رب العالمين",
+      "title_tr": "Iʿlām al-Muwaqqiʿīn",
+      "author": {"name_tr": "Ibn Qayyim al-Jawziyya", "death_ah": 751},
+      "layers": ["inference", "tests"],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {"id": "openiti-ilam-shamela11496", "kind": "openiti", "repo": "0775AH",
+         "commit": "61b0c7891699554aeff8dffdb8b1a2a59d2d22ab",
+         "path": "data/0751IbnQayyimJawziyya/0751IbnQayyimJawziyya.AclamMuwaqqicin/0751IbnQayyimJawziyya.AclamMuwaqqicin.Shamela0011496-ara1",
+         "edition": "Shamela 11496"}
+      ],
+      "expected_units": {"unit": "sadd al-dharāʾiʿ instance", "count": 99, "claim_source": "recall"},
+      "status": "located"
+    },
+    {
+      "id": "ibn_uthaymin.sharh_mumti",
+      "title_ar": "الشرح الممتع على زاد المستقنع",
+      "title_tr": "al-Sharḥ al-Mumtiʿ ʿalā Zād al-Mustaqniʿ",
+      "author": {"name_tr": "Muḥammad b. Ṣāliḥ Ibn ʿUthaymīn", "death_ah": 1421},
+      "layers": ["tests"],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [{"id": "shamela-10649", "kind": "shamela", "book_id": 10649, "fetch": "on_demand"}],
+      "status": "located"
+    },
+    {
+      "id": "shinqiti.adab_bahth",
+      "title_ar": "آداب البحث والمناظرة",
+      "title_tr": "Ādāb al-Baḥth wa'l-Munāẓara",
+      "author": {"name_tr": "Muḥammad al-Amīn al-Shinqīṭī", "death_ah": 1393},
+      "layers": ["dialectic"],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [{"id": "shamela-266", "kind": "shamela", "book_id": 266}],
+      "status": "located"
+    },
+    {
+      "id": "shinqiti.mudhakkira",
+      "title_ar": "مذكرة أصول الفقه على روضة الناظر",
+      "title_tr": "Mudhakkira fī Uṣūl al-Fiqh",
+      "author": {"name_tr": "Muḥammad al-Amīn al-Shinqīṭī", "death_ah": 1393},
+      "layers": ["inference", "dialectic"],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {"id": "shamela-282", "kind": "shamela", "book_id": 282, "edition": "ʿAṭāʾāt al-ʿIlm"},
+        {"id": "shamela-9885", "kind": "shamela", "book_id": 9885, "edition": "Maktabat al-ʿUlūm wa'l-Ḥikam"}
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_taymiyya.radd_mantiqiyyin",
+      "title_ar": "الرد على المنطقيين",
+      "title_tr": "al-Radd ʿalā al-Manṭiqiyyīn",
+      "author": {"name_tr": "Ibn Taymiyya", "death_ah": 728},
+      "layers": ["dialectic"],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {"id": "openiti-radd-shamela7626", "kind": "openiti", "repo": "0750AH",
+         "commit": "7c9c84d9f98581470aa2b7f8bee00ae285c5c707",
+         "path": "data/0728IbnTaymiyya/0728IbnTaymiyya.RaddCalaMantiqiyyin/0728IbnTaymiyya.RaddCalaMantiqiyyin.Shamela0007626-ara1",
+         "edition": "Shamela 7626"}
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_uthaymin.qawaid_muthla",
+      "title_ar": "القواعد المثلى في صفات الله وأسمائه الحسنى",
+      "title_tr": "al-Qawāʿid al-Muthlā",
+      "author": {"name_tr": "Muḥammad b. Ṣāliḥ Ibn ʿUthaymīn", "death_ah": 1421},
+      "layers": ["aqida"],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [{"id": "shamela-8874", "kind": "shamela", "book_id": 8874}],
+      "status": "located"
+    },
+    {
+      "id": "ibn_taymiyya.tadmuriyya",
+      "title_ar": "الرسالة التدمرية",
+      "title_tr": "al-Risāla al-Tadmuriyya",
+      "author": {"name_tr": "Ibn Taymiyya", "death_ah": 728},
+      "layers": ["aqida"],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {"id": "openiti-tadmuriyya-shamela22666", "kind": "openiti", "repo": "0750AH",
+         "commit": "7c9c84d9f98581470aa2b7f8bee00ae285c5c707",
+         "path": "data/0728IbnTaymiyya/0728IbnTaymiyya.RisalaTadmuriyya/0728IbnTaymiyya.RisalaTadmuriyya.Shamela0022666-ara1",
+         "edition": "Shamela 22666"}
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_uthaymin.taqrib_tadmuriyya",
+      "title_ar": "تقريب التدمرية",
+      "title_tr": "Taqrīb al-Tadmuriyya",
+      "author": {"name_tr": "Muḥammad b. Ṣāliḥ Ibn ʿUthaymīn", "death_ah": 1421},
+      "layers": ["aqida"],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [{"id": "shamela-11100", "kind": "shamela", "book_id": 11100}],
+      "status": "located"
+    },
+    {
+      "id": "mardawi.insaf",
+      "title_ar": "الإنصاف في معرفة الراجح من الخلاف",
+      "title_tr": "al-Inṣāf fī Maʿrifat al-Rājiḥ min al-Khilāf",
+      "author": {"name_tr": "ʿAlāʾ al-Dīn al-Mardāwī", "death_ah": 885},
+      "layers": ["tests"],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "Addition (flagged in roadmap §1): intra-madhhab tarjīḥ oracle.",
+      "witnesses": [
+        {"id": "openiti-insaf-shamela21609", "kind": "openiti", "repo": "0900AH",
+         "commit": "271ff65bd8364d3a46b5806ca529617d1ffc3393",
+         "path": "data/0885CalaDinMardawi/0885CalaDinMardawi.Insaf/0885CalaDinMardawi.Insaf.Shamela0021609-ara1",
+         "edition": "Shamela 21609, taḥqīq al-Fiqī"}
+      ],
+      "status": "located"
+    }
+  ]
+}
