@@ -66,6 +66,8 @@
             "dpi": {"type": "integer", "minimum": 150},
             "psm": {"type": "integer", "minimum": 0, "maximum": 13},
             "verses": {"type": "boolean", "description": "detect verse lines and OCR each hemistich (verses.py)"},
+            "denoise": {"enum": ["median3"], "description": "median filter against scanner speckle before OCR"},
+            "frame": {"type": "boolean", "description": "crop each page inside its decorative border before OCR (ocr.frame_box)"},
             "verse_pages": {"type": "array", "items": {"type": "integer", "minimum": 1}, "minItems": 2, "maxItems": 2,
                             "description": "PDF page range for verse detection (excludes e.g. a two-column index)"}
           }

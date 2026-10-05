@@ -107,6 +107,43 @@ def strip_running_heads(pages: tuple[PageOCR, ...], min_share: float = 0.2) -> t
     return tuple(PageOCR(p.page, p.engine, tuple(l for l in p.lines if l.text not in heads)) for p in pages)
 
 
+FRAME_ZONE = 0.12      # a decorative border lies within the outer 12% of each side
+FRAME_DENSITY = 0.25   # border bands: ≥ 25% ink per row/column (text columns stay ≤ ~0.1)
+FRAME_RUN = 25         # … sustained over ≥ 25 px at 300 dpi
+FRAME_DIP = 5          # zigzag bands dip briefly below the threshold; bridge dips ≤ 5 px
+
+
+def frame_box(density: list[float], zone: float = FRAME_ZONE, min_density: float = FRAME_DENSITY,
+              min_run: int = FRAME_RUN, pad: int = 10, max_dip: int = FRAME_DIP) -> tuple[int, int]:
+    """Content interval [start, end) inside a decorative border along one axis.
+
+    ``density`` is the ink share per column (or row). Within the edge zone on each
+    side, the innermost run of ≥ ``min_run`` dense lines (dips ≤ ``max_dip`` bridged)
+    is the border; content starts ``pad`` past it. Unframed sides keep the full extent.
+    """
+    n = len(density)
+    dense = [d >= min_density for d in density]
+    bands = [(a, b) for a, b in _bridge(runs(dense), max_dip) if b - a >= min_run]
+    lead = [b for a, b in bands if b <= zone * n]
+    trail = [a for a, b in bands if a >= (1 - zone) * n]
+    return (max(lead) + pad if lead else 0), (min(trail) - pad if trail else n)
+
+
+def _bridge(spans: list[tuple[int, int]], max_gap: int) -> list[tuple[int, int]]:
+    """Merge consecutive spans separated by at most ``max_gap``."""
+    merged: list[tuple[int, int]] = []
+    for a, b in spans:
+        merged = merged[:-1] + [(merged[-1][0], b)] if merged and a - merged[-1][1] <= max_gap else merged + [(a, b)]
+    return merged
+
+
+def runs(flags: list[bool]) -> list[tuple[int, int]]:
+    """Maximal [start, end) runs of True."""
+    edges = [i for i in range(len(flags) + 1)
+             if (i < len(flags) and flags[i]) != (i > 0 and flags[i - 1])]
+    return list(zip(edges[::2], edges[1::2]))
+
+
 def quality(lines: tuple[Line, ...], low: float = LOW_CONF) -> dict:
     return {
         "mean_conf": round(statistics.fmean(l.conf for l in lines), 2) if lines else None,
@@ -137,6 +174,31 @@ def render(pdf: Path, page: int, out: Path, dpi: int) -> Path:
             check=True, capture_output=True,
         )
     return png
+
+
+FRAME_PAD = 20  # clear the border band's ragged inner edge
+
+
+def prepare(png: Path, frame: bool, denoise: str | None) -> Path:
+    """Page image as OCR'd: optionally cropped inside its border (``frame_box`` on both
+    axes) and median-filtered against scanner speckle. Cached next to the render."""
+    if not (frame or denoise):
+        return png
+    out = png.with_name(f"{png.stem}{'c' if frame else ''}{'m' if denoise else ''}.png")
+    if not out.exists():
+        import numpy as np
+        from PIL import Image, ImageFilter
+
+        page = Image.open(png).convert("L")
+        if frame:
+            ink = np.asarray(page) < 128
+            x0, x1 = frame_box(ink.mean(axis=0).tolist(), pad=FRAME_PAD)
+            y0, y1 = frame_box(ink.mean(axis=1).tolist(), pad=FRAME_PAD)
+            page = page.crop((x0, y0, x1, y1))
+        if denoise == "median3":
+            page = page.filter(ImageFilter.MedianFilter(3))
+        page.save(out)
+    return out
 
 
 def run_tesseract(png: Path, tessdata: Path, psm: int, out: Path) -> str:
@@ -181,16 +243,19 @@ def pdf_pages(pdf: Path) -> int:
 def ocr_pdf(
     pdf: Path, work: Path, engines: dict[str, Path], dpi: int = 300, psm: int = 4,
     pages: range | None = None, jobs: int = os.cpu_count() or 1, verses: range | None = None,
+    frame: bool = False, denoise: str | None = None,
 ) -> tuple[tuple[PageOCR, ...], tuple[PageOCR, ...]]:
     """OCR every page with every engine; return (chosen pages, all passes).
 
     On pages in ``verses``, detected verse lines are re-read per hemistich and
-    replace the page-level lines they overlap (see ``verses.py``).
+    replace the page-level lines they overlap (see ``verses.py``). ``frame`` and
+    ``denoise`` select the image preparation (see ``prepare``).
     """
     from .verses import merge_verses, ocr_verses
 
     def one(page: int) -> tuple[PageOCR, ...]:
         png = render(pdf, page, work / "png", dpi)
+        png = prepare(png, frame, denoise)
         return tuple(
             PageOCR(page, name, tuple(
                 Line(t, l.conf, l.top, l.bottom)

@@ -106,3 +106,60 @@ def test_page_level_bar_split_counts_as_a_verse_line():
         "# وخصص العام بخاص وردا * كقيد مطلق بما قد قيدا",
     ])
     assert [u.heading[:8] for u in segment_verse_block(text)] == ["واعتبر ا", "مالم يكن", "وخصص الع"]
+
+
+def test_trigram_similarity_ignores_diacritics_and_ocr_marks():
+    from usul_corpus.verses import similarity
+
+    assert similarity("والأصلُ في القيدِ احترازٌ", "والاصل في القيد احتراز") == 1.0
+    assert similarity("الحمد لله المعيد المبدي", "كتاب الصلاة باب الأذان") < 0.1
+
+
+def test_link_commentary_aligns_sharh_quotations_to_matn_verses():
+    from usul_corpus.verses import link_commentary
+
+    matn = [
+        "# الحمد لله المعيد المبدي * معطي النوال كل من يستجدي",
+        "# مثبت الأحكام بالأصول * معين من يصبو إلى الوصول",
+        "# ثم الصلاة مع سلام قد تم * على الذي أعطي جوامع الكلم",
+        "PageV01P027",
+        "# مقدمة الشرح", "# الحمد لله وحده", "# أما بعد فهذا شرح",   # prose separates matn and sharḥ
+        "PageV01P028",
+    ]
+    sharh = [
+        "# الحمد لله المعيد المبدي * معطي النوال كل من يستجدي",       # verse 1 quoted
+        "# قوله: (المعيد المبدي): هذان الوصفان",
+        "# مأخوذان من قوله تعالى", "# وفيه براعة استهلال",
+        "PageV01P029",
+        "# قال الشاعر في غير المنظومة * بيت لا صلة له",               # another poem: below threshold
+        "# شرح متصل", "# ثم شرح آخر", "# وتتمة الشرح",
+        "# الحمد لله المعيد المبدي * معطي النوال",                     # re-quote of verse 1: out of order
+        "# شرح متصل", "# ثم شرح آخر", "# وتتمة الشرح",
+        "# ثم الصلاة مع سلام قد تم * على الذي أعطي جوامع الكلم",       # verse 3 (verse 2's commentary lost)
+        "# قوله: (جوامع الكلم)",
+        "PageV01P031",
+    ]
+    links = link_commentary("\n".join(matn + sharh))
+    assert [(l.number, l.page, l.end_page) for l in links] == [(1, (1, 29), (1, 31)), (3, (1, 31), (1, 31))]
+    assert links[0].commentary.startswith("قوله: (المعيد المبدي)")
+    assert "قال الشاعر" in links[0].commentary          # unlinked lines stay inside the running commentary
+    assert links[1].similarity == 1.0
+
+
+def test_last_commentary_stops_at_the_index():
+    from usul_corpus.verses import link_commentary
+
+    text = "\n".join([
+        "# الحمد لله المعيد المبدي * معطي النوال كل من يستجدي",
+        "# مثبت الأحكام بالأصول * معين من يصبو إلى الوصول",
+        "PageV01P027",
+        "# مقدمة", "# تمهيد", "# أما بعد",
+        "# مثبت الأحكام بالأصول * معين من يصبو إلى الوصول",
+        "# قوله: (بالأصول)",
+        "PageV01P368",
+        "# فهرس الموضوعات",
+        "# الموضوع الصفحة",
+        "PageV01P372",
+    ])
+    (link,) = link_commentary(text)
+    assert link.end_page == (1, 368) and "فهرس" not in link.commentary

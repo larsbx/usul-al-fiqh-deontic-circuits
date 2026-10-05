@@ -17,7 +17,8 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from .arabic import normalize
-from .ocr import Line, clean_line, is_noise, parse_tsv, run_tesseract
+from .ocr import Line, clean_line, is_noise, parse_tsv, run_tesseract, runs
+from .openiti import Page
 from .segment import Unit, _paged_lines
 
 HEMISTICH_SEP = " * "
@@ -44,9 +45,7 @@ class Band:
 
 def bands_from_rows(rows: list[int], min_ink: int = MIN_INK, min_height: int = MIN_HEIGHT) -> list[tuple[int, int]]:
     """Runs of rows with ink (≥ ``min_ink`` dark pixels) at least ``min_height`` tall."""
-    edges = [i for i in range(len(rows) + 1)
-             if (i < len(rows) and rows[i] >= min_ink) != (i > 0 and rows[i - 1] >= min_ink)]
-    return [(a, b) for a, b in zip(edges[::2], edges[1::2]) if b - a >= min_height]
+    return [(a, b) for a, b in runs([r >= min_ink for r in rows]) if b - a >= min_height]
 
 
 def inner_gap(cols: list[bool]) -> tuple[int, int, int, int] | None:
@@ -181,6 +180,12 @@ def as_verse(line: str) -> str | None:
     return HEMISTICH_SEP.join(parts) if len(parts) == 2 and min(map(words, parts)) >= 2 else None
 
 
+def _matn(lines: list[tuple[str, "Page | None"]]) -> tuple[dict[int, str], list[int]]:
+    """Verse lines by position, and the matn: the longest contiguous verse block."""
+    verses = {i: v for i, (line, _) in enumerate(lines) if (v := as_verse(line))}
+    return verses, max(_blocks(sorted(verses)), key=len, default=[])
+
+
 def segment_verse_block(text: str) -> tuple[Unit, ...]:
     """Number the longest contiguous block of verse lines (the matn) by position.
 
@@ -191,9 +196,7 @@ def segment_verse_block(text: str) -> tuple[Unit, ...]:
     ``ocr_corrected`` unless its readable printed digits agree with its position.
     """
     lines = _paged_lines(text)
-    verses = {i: v for i, (line, _) in enumerate(lines) if (v := as_verse(line))}
-    verse_idx = sorted(verses)
-    block = max(_blocks(verse_idx), key=len, default=[])
+    verses, block = _matn(lines)
 
     def unit(n: int, i: int) -> Unit:
         body, printed = verse_text(verses[i])
@@ -201,3 +204,64 @@ def segment_verse_block(text: str) -> tuple[Unit, ...]:
         return Unit(n, body, "", lines[i][1], (), not agrees)
 
     return tuple(unit(n, i) for n, i in enumerate(block, 1))
+
+
+# ── commentary links ────────────────────────────────────────────────────────
+
+LINK_THRESHOLD = 0.3   # trigram Jaccard; measured: quotations ≥ 0.3 (mostly 0.7–1.0), other text ≤ 0.2
+LINK_STEP = 10         # consecutive linked verses may skip a few whose quotation OCR lost
+INDEX_MARK = normalize("فهرس")  # the book's index ends the last verse's commentary
+_NON_LETTER = re.compile("[^\u0621-\u064a ]")
+
+
+def _trigrams(text: str) -> frozenset[str]:
+    t = " ".join(_NON_LETTER.sub("", normalize(text)).split())
+    return frozenset(t[k:k + 3] for k in range(len(t) - 2))
+
+
+def similarity(a: str, b: str) -> float:
+    """Character-trigram Jaccard similarity after normalisation (diacritics, OCR marks)."""
+    ga, gb = _trigrams(a), _trigrams(b)
+    return round(len(ga & gb) / len(ga | gb), 2) if ga | gb else 0.0
+
+
+@dataclass(frozen=True)
+class CommentaryLink:
+    number: int            # verse number in the matn
+    page: "Page | None"    # where the commentary starts (the quoted verse)
+    end_page: "Page | None"
+    quoted: str            # the verse as quoted in the commentary
+    similarity: float      # against the matn verse
+    commentary: str        # running commentary until the next linked verse
+
+
+def link_commentary(text: str) -> tuple[CommentaryLink, ...]:
+    """Align verse quotations after the matn to matn verses (best trigram match above
+    LINK_THRESHOLD), keep the longest increasing chain, and attach the commentary that
+    runs until the next linked quotation."""
+    from .segment import _chain
+
+    lines = _paged_lines(text)
+    verses, block = _matn(lines)
+    matn = [verse_text(verses[i])[0] for i in block]
+    if not matn:
+        return ()
+
+    def best(i: int) -> tuple[int, float]:
+        sims = [similarity(verse_text(verses[i])[0], m) for m in matn]
+        n = max(range(len(sims)), key=sims.__getitem__)
+        return n + 1, sims[n]
+
+    scored = {i: best(i) for i in sorted(verses) if i > block[-1]}
+    cands = [(i, (lambda n: lambda _p: (n, n, False))(n)) for i, (n, s) in scored.items() if s >= LINK_THRESHOLD]
+    chain = _chain(cands, min_lines=1, max_step=LINK_STEP, late_start=False)
+    tail = chain[-1][0] if chain else len(lines)
+    index = next((k for k in range(tail + 1, len(lines)) if normalize(lines[k][0]).startswith(INDEX_MARK)), len(lines))
+    ends = [pos for pos, *_ in chain[1:]] + [index]
+
+    def link(pos: int, n: int, end: int) -> CommentaryLink:
+        body = [line for line, _ in lines[pos + 1:end]]
+        last = next((lines[k][1] for k in range(end - 1, pos, -1) if lines[k][1]), lines[pos][1])
+        return CommentaryLink(n, lines[pos][1], last, verse_text(verses[pos])[0], scored[pos][1], "\n".join(body))
+
+    return tuple(link(pos, n, end) for (pos, n, _, _), end in zip(chain, ends))

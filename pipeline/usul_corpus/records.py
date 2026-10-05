@@ -75,3 +75,25 @@ def hadd_record(work: dict, witness: str, idx: int, h: Hadd) -> dict:
         "status": "candidate",
         "extraction": {"pipeline": PIPELINE, "method": "hudud_brackets"},
     }
+
+
+def sharh_record(work: dict, witness: str, link) -> dict:
+    """The commentary on one verse, linked to that verse's record (``bayt``)."""
+    cap = EXCERPT_LEN[work["rights"]]
+    tag = f"q{link.number:03d}"
+    bayt = f"{work['id']}.{witness.replace('-', '_')}.{tag}"
+    return {
+        "id": f"{bayt}.sharh",
+        "work": work["id"],
+        "witness": witness,
+        "record_type": "sharh",
+        "bayt": bayt,
+        "number": link.number,
+        "locator": _loc(witness, link.page, f"{tag}.sharh"),
+        "page_span": [p[1] for p in (link.page, link.end_page) if p],
+        "quoted_ar": link.quoted[:cap],
+        "excerpt_ar": link.commentary[:cap],
+        "similarity": link.similarity,
+        "status": "candidate",
+        "extraction": {"pipeline": PIPELINE, "method": "verse_trigram_chain"},
+    }

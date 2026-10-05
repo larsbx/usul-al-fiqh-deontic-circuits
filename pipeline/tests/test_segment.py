@@ -157,3 +157,11 @@ def test_consensus_separates_numbers_beyond_the_expected_count():
     over = tuple(Unit(n, "", "", None, (), False) for n in (1, 3, 5))     # e.g. a digit-repair overshoot
     c = consensus_numbering({"tess": good, "djvu": over}, expected=3)
     assert c["missing_in_all"] == [] and c["beyond_expected"] == {"5": ["djvu"]} and c["complete"]
+
+
+def test_segment_numbered_accepts_tatweel_as_separator():
+    from usul_corpus.segment import segment_numbered
+
+    text = "# ١ ـ القاعدة الأولى نصها\n# شرح\n# ٢ ـ الثانية نصها\n# ٣ - الثالثة نصها"
+    assert [(u.number, u.heading) for u in segment_numbered(text)] == [
+        (1, "القاعدة الأولى نصها"), (2, "الثانية نصها"), (3, "الثالثة نصها")]

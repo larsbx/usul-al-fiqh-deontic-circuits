@@ -19,7 +19,7 @@ from .fetch import fetch
 from .hudud import extract_hudud
 from .ocr import MODELS, ensure_model, ocr_pdf, page_markdown, quality, tesseract_version
 from .openiti import parse_markdown
-from .records import hadd_record, qaida_records, unit_tags
+from .records import hadd_record, qaida_records, sharh_record, unit_tags
 from .segment import (
     audit_numbering,
     consensus_numbering,
@@ -28,7 +28,7 @@ from .segment import (
     segment_lines,
     segment_numbered,
 )
-from .verses import segment_verse_block
+from .verses import link_commentary, segment_verse_block
 
 ROOT = Path(__file__).resolve().parents[2]
 CORPUS = ROOT / "corpus"
@@ -90,7 +90,8 @@ def cmd_ocr(args: argparse.Namespace) -> int:
         engines = {name: ensure_model(name, ROOT / ".cache" / "tessdata") for name in cfg["engines"]}
         pages = _page_range(args.pages) if args.pages else None
         chosen, passes = ocr_pdf(pdf, ROOT / ".cache" / "ocr" / w["id"], engines,
-                                 cfg["dpi"], cfg["psm"], pages, args.jobs, _verse_range(cfg))
+                                 cfg["dpi"], cfg["psm"], pages, args.jobs, _verse_range(cfg), cfg.get("frame", False),
+                                 cfg.get("denoise"))
         text = "#META#Header#End#\n" + "".join(page_markdown(p) for p in chosen)
         (CACHE / f"{w['id']}.txt").write_text(text, encoding="utf-8")
         by_engine = {e: quality(tuple(l for p in passes if p.engine == e for l in p.lines)) for e in engines}
@@ -98,7 +99,7 @@ def cmd_ocr(args: argparse.Namespace) -> int:
             "witness": w["id"],
             "engine": tesseract_version(),
             "models": {e: MODELS[e][1] for e in engines},
-            "dpi": cfg["dpi"], "psm": cfg["psm"], "verses": cfg.get("verses", False),
+            "dpi": cfg["dpi"], "psm": cfg["psm"], "verses": cfg.get("verses", False), "frame": cfg.get("frame", False), "denoise": cfg.get("denoise"),
             "summary": {**quality(tuple(l for p in chosen for l in p.lines)),  # chosen pages
                         "pages": len(chosen),
                         "chosen": {e: sum(p.engine == e for p in chosen) for e in engines},
@@ -139,6 +140,18 @@ def _index(work: dict, witness: str, text: str) -> tuple[list[dict], tuple]:
     return [r for t, u in zip(tags, units) for r in qaida_records(work, witness, "index", t, u)], units
 
 
+def _commentary(work: dict, witness: str, text: str, units: tuple) -> tuple[list[dict], dict]:
+    """Sharḥ records linked to the matn verses, plus their coverage for the audit."""
+    links = link_commentary(text)
+    linked = {l.number for l in links}
+    return [sharh_record(work, witness, l) for l in links], {
+        "printed_number_agrees": sum(not u.ocr_corrected for u in units),
+        "commentary_linked": len(links),
+        "commentary_unlinked": [u.number for u in units if u.number not in linked],
+        "commentary_min_similarity": min((l.similarity for l in links), default=None),
+    }
+
+
 def cmd_build(_: argparse.Namespace) -> int:
     audit: dict[str, dict] = {}
     for work in (w for w in _works(None) if "segmenter" in w):
@@ -157,16 +170,18 @@ def cmd_build(_: argparse.Namespace) -> int:
                 records += index_records
                 audit[f"{w['id']}#index"] = {"work": work["id"], **audit_numbering(index_units, expected)}
                 numbered[f"{w['id']}#index"] = index_units
-            path = CORPUS / "records" / f"{w['id']}.jsonl"
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records), encoding="utf-8")
             if units is None:
                 audit[w["id"]] = {"work": work["id"], "found": len(records)}
             else:
                 audit[w["id"]] = {"work": work["id"], **audit_numbering(units, expected)}
                 if w.get("segmenter", work["segmenter"])["kind"] == "verse_block":
-                    audit[w["id"]]["printed_number_agrees"] = sum(not u.ocr_corrected for u in units)
+                    sharh, report = _commentary(work, w["id"], text, units)
+                    records += sharh
+                    audit[w["id"]] |= report
                 numbered[w["id"]] = units
+            path = CORPUS / "records" / f"{w['id']}.jsonl"
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records), encoding="utf-8")
             print(f"{w['id']:40} {len(records):>4} records")
         if len(numbered) > 1:
             audit[f"consensus:{work['id']}"] = consensus_numbering(numbered, expected)

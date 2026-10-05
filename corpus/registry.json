@@ -310,7 +310,9 @@
               "ara_best"
             ],
             "dpi": 300,
-            "psm": 4
+            "psm": 4,
+            "frame": true,
+            "denoise": "median3"
           },
           "quality": "ocr_unreviewed"
         }

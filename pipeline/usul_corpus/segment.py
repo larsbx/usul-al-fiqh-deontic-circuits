@@ -107,14 +107,18 @@ Resolve = Callable[[int], "tuple[int, int, bool] | None"]
 Link = tuple[int, int, int, bool]  # (line position, first, last, corrected)
 
 
-def _chain(cands: list[tuple[int, Resolve]], min_lines: int, max_step: int) -> list[Link]:
+def _chain(cands: list[tuple[int, Resolve]], min_lines: int, max_step: int, late_start: bool = True) -> list[Link]:
     """Longest numbering chain over candidates in document order.
 
     Each step advances by 1..max_step and spans at least ``min_lines`` lines
     (so a table of contents, one heading per line, cannot form a chain).
     Ties go to the tighter chain (smaller final number), then to the later start
-    (a table of contents precedes the body it lists).
+    (a table of contents precedes the body it lists) — or, with ``late_start=False``,
+    to the earlier one (a first quotation opens the commentary; re-quotes follow).
     """
+    def tightness(chain: list[Link]) -> tuple[int, int, int]:
+        return (len(chain), -chain[-1][2], chain[0][0] if late_start else -chain[0][0]) if chain else (0, 0, 0)
+
     best: list[list[Link]] = []
     for pos, resolve in cands:
         start = resolve(0)
@@ -123,12 +127,8 @@ def _chain(cands: list[tuple[int, Resolve]], min_lines: int, max_step: int) -> l
             nxt = resolve(chain[-1][2])
             if nxt and 0 < nxt[0] - chain[-1][2] <= max_step:
                 options.append(chain + [(pos, *nxt)])
-        best.append(max(options, key=_tightness, default=[]))
-    return max(best, key=_tightness, default=[])
-
-
-def _tightness(chain: list[Link]) -> tuple[int, int, int]:
-    return (len(chain), -chain[-1][2], chain[0][0]) if chain else (0, 0, 0)
+        best.append(max(options, key=tightness, default=[]))
+    return max(best, key=tightness, default=[])
 
 
 def _units(lines: list[tuple[str, Page | None]], chain: list[Link], heading: Callable[[str], str],
@@ -191,7 +191,7 @@ def segment_index(text: str, marker: str) -> tuple[Unit, ...]:
     )
 
 
-_VERSE = re.compile(r"^([0-9٠-٩۰-۹]{1,3})\s*[-–—.۔]\s*(\S.*)$")
+_VERSE = re.compile(r"^([0-9٠-٩۰-۹]{1,3})\s*[-–—.۔ـ]\s*(\S.*)$")
 
 
 def _repair(obs: str, prev: int) -> int:

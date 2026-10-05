@@ -29,3 +29,17 @@ def test_modern_rights_cap_excerpts():
 def test_unit_tags_disambiguate_repeats_and_unparsed():
     us = tuple(Unit(n, "", "", None, (), False) for n in (1, 15, None, 15, 1, 15))
     assert unit_tags(us) == ["q001", "q015", "u003", "q015_2", "q001_2", "q015_3"]
+
+
+def test_sharh_record_links_commentary_to_its_verse_and_validates():
+    from usul_corpus.records import sharh_record
+    from usul_corpus.verses import CommentaryLink
+
+    work = {"id": "ibn_uthaymin.manzuma", "rights": "modern_cache_only"}
+    link = CommentaryLink(89, (1, 337), (1, 339), "والأصل في القيد احتراز", 0.92, "قوله: " + "ش" * 400)
+    r = sharh_record(work, "archive-manzuma-tess", link)
+    assert r["id"] == "ibn_uthaymin.manzuma.archive_manzuma_tess.q089.sharh"
+    assert r["bayt"] == "ibn_uthaymin.manzuma.archive_manzuma_tess.q089"
+    assert r["locator"] == "src:archive-manzuma-tess/v01:p337#q089.sharh"
+    assert r["page_span"] == [337, 339] and len(r["excerpt_ar"]) == 160
+    jsonschema.validate(r, SCHEMA)

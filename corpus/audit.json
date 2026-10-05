@@ -62,7 +62,12 @@
     "duplicates": [],
     "unparsed": 0,
     "matches_expected": true,
-    "printed_number_agrees": 27
+    "printed_number_agrees": 27,
+    "commentary_linked": 102,
+    "commentary_unlinked": [
+      60
+    ],
+    "commentary_min_similarity": 0.3
   },
   "archive-pdf1995": {
     "work": "sadi.qawaid_jamia",

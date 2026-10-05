@@ -108,3 +108,30 @@ def test_strip_running_heads_removes_lines_repeated_across_pages():
     ) + (PageOCR(6, "best", (Line("القاعدة الأولى", 90.0),)),)
     out = strip_running_heads(pages, min_share=0.5)
     assert [l.text for p in out for l in p.lines] == [f"نص الصفحة رقم {n}" for n in range(1, 6)] + ["القاعدة الأولى"]
+
+
+def test_frame_box_crops_inside_a_decorative_border():
+    from usul_corpus.ocr import frame_box
+
+    # 1000 columns: margin, 60-px border band (density 0.4), text (≤ 0.1), border, margin
+    cols = [0.0] * 30 + [0.4] * 60 + [0.05] * 820 + [0.4] * 60 + [0.0] * 30
+    x0, x1 = frame_box(cols, pad=5)
+    assert (x0, x1) == (95, 905)
+
+
+def test_frame_box_leaves_unframed_pages_alone_and_ignores_text_runs_outside_the_zone():
+    from usul_corpus.ocr import frame_box
+
+    plain = [0.0] * 50 + [0.08] * 900 + [0.0] * 50
+    assert frame_box(plain) == (0, 1000)
+    dense_text = [0.0] * 200 + [0.4] * 100 + [0.05] * 700        # dense run at 20–30%: outside the 12% zone
+    assert frame_box(dense_text) == (0, 1000)
+
+
+def test_frame_box_bridges_short_dips_inside_a_border_band():
+    from usul_corpus.ocr import frame_box
+
+    # measured on PDF p. 28: a zigzag band with two 2–3 px dips below the density threshold
+    rows = [0.0] * 135 + [0.4] * 30 + [0.2] * 2 + [0.4] * 14 + [0.2] * 3 + [0.4] * 7 + [0.02] * 2600
+    y0, _ = frame_box(rows, pad=20)
+    assert y0 == 191 + 20
