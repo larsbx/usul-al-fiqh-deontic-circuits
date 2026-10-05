@@ -97,3 +97,24 @@ def parse_ordinal(phrase: str, fuzzy: bool = True) -> tuple[int, bool] | None:
     if max(units, teen, tens, hundred) > 1 or (teen and (tens or not units)):
         return None
     return sum(LEXICON[k] for k in keys), any(c for _, c in resolved)  # type: ignore[misc]
+
+
+def parse_ordinal_span(phrase: str, fuzzy: bool = True) -> tuple[tuple[int, int], bool] | None:
+    """Like ``parse_ordinal`` but also reads joint headings for consecutive rules:
+    «الثانية والثالثة والعشرون» → (22, 23). Single ordinals give (n, n)."""
+    single = parse_ordinal(phrase, fuzzy)
+    if single:
+        return (single[0], single[0]), single[1]
+    toks = _tokens(phrase)
+    resolved = [_lookup(t, fuzzy) for t in toks]
+    if not toks or any(r is None for r in resolved):
+        return None
+    keys = [k for k, _ in resolved]  # type: ignore[misc]
+    units = [UNITS[k] for k in keys if k in UNITS]
+    rest = [k for k in keys if k not in UNITS]
+    if len(units) != 2 or units[1] != units[0] + 1:
+        return None
+    base = parse_ordinal(" ".join(rest), fuzzy) if rest else (0, False)
+    if base is None:
+        return None
+    return (base[0] + units[0], base[0] + units[1]), base[1] or any(c for _, c in resolved)  # type: ignore[misc]

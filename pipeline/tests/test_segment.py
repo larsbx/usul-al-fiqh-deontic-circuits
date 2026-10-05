@@ -32,10 +32,30 @@ def test_segment_headed_numeric_header_and_number_on_body_line():
 
 
 def test_segment_lines_for_ocr_text():
-    text = "مقدمة\nالقاعدة الأولى\nالنية\nالقاعدة الثااثون\nكذا\nالقاعدة الثانية والثالثة والعشرون\nكذا"
+    text = "مقدمة\nالقاعدة الأولى\nالنية\nالقاعدة الثااثون\nكذا\nالقاعدة الثانية\nكذا"
     units = segment_lines(text, marker="القاعدة")
-    assert [(u.number, u.ocr_corrected) for u in units] == [(1, False), (30, True), (None, False)]
-    assert units[2].heading == "القاعدة الثانية والثالثة والعشرون"
+    # 30 is out of sequence after 1 and is dropped from the chain; 2 follows 1
+    assert [(u.number, u.ocr_corrected) for u in units] == [(1, False), (2, False)]
+
+
+def test_segment_lines_bare_ordinals_joint_headings_and_toc_duplicates():
+    text = "\n".join([
+        "الفهرس", "القاعدة الأولى", "القاعدة الثانية",            # table of contents
+        "القاعدة الأولى", "النية شرط في العبادات",
+        "انلقف ل",                                              # decorative «القاعدة» OCR'd as junk
+        "الثانية", "المشقة تجلب التيسير",
+        "وفيها مسائل: الثانية منها كذا",                          # ordinal inside prose: not a heading
+        "الثالثة ض",                                            # one stray glyph after the ordinal
+        "اليقين لا يزول بالشك",
+        "القاعدة الرابعة والخامسة", "الضرر يزال",                 # joint heading: rules 4 and 5
+        "السادسة", "العادة محكمة",
+    ])
+    units = segment_lines(text, marker="القاعدة")
+    assert [u.number for u in units] == [1, 2, 3, 4, 6]
+    assert units[3].covers == (4, 5)
+    assert units[0].statement.startswith("النية شرط")
+    a = audit_numbering(units, expected=6)
+    assert a["missing"] == [] and a["matches_expected"] and a["duplicates"] == []
 
 
 def test_audit_numbering():
@@ -100,3 +120,30 @@ def test_segment_numbered_repairs_lost_tens_digits():
     assert [u.number for u in units] == list(range(1, 13))
     assert [u.ocr_corrected for u in units] == [False] * 9 + [True] * 3
     assert units[9].heading == "بيت رقم 10"
+
+
+def test_segment_index_reads_numbered_statements():
+    from usul_corpus.segment import segment_index
+
+    text = "\n".join([
+        "# القاعدة الأولى",                                  # body heading: no colon, not an index entry
+        "# الفهرس",
+        "# القاعدة الأولى: الشارع لا يأمر إلا بما مصلحته خالصة أو راجحة",
+        "# القاعدة الثانية: الوسائل لها أحكام المقاصد",
+        "PageV01P170",
+        "# القاعدة الثانية والثالثة والعشرون: مثال مشترك",
+        "# القاعدة الرابعة: الوجوب يتعلق بالاستطاعة",
+    ])
+    units = segment_index(text, marker="القاعدة")
+    assert [(u.number, u.covers) for u in units] == [(1, ()), (2, ()), (4, ())]
+    assert units[1].heading == "القاعدة الثانية"
+    assert units[1].statement == "الوسائل لها أحكام المقاصد"
+    assert units[0].page == (1, 170)
+
+
+def test_verse_chain_uses_tighter_step_than_rules():
+    from usul_corpus.segment import segment_numbered
+
+    # 1, 2, then a stray «٦» four steps ahead: allowed for rule headings, not for verses
+    units = segment_numbered("# ١ - أ ب\n# ٢ - ج د\n# ٦ - شارد\n# ٣ - هـ و")
+    assert [u.number for u in units] == [1, 2, 3]

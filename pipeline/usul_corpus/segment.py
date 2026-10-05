@@ -6,7 +6,9 @@ import re
 from dataclasses import dataclass
 from itertools import groupby
 
-from .arabic import normalize, parse_ordinal
+from typing import Callable
+
+from .arabic import normalize, parse_ordinal, parse_ordinal_span
 from .openiti import _PAGE, Page, Section, clean_md_line
 
 _FARC = re.compile(r"^\(?و?منها\)?\s*[:.]?\s*")
@@ -23,6 +25,11 @@ class Unit:
     page: Page | None
     furu: tuple[str, ...]
     ocr_corrected: bool
+    covers: tuple[int, ...] = ()  # rule numbers under a joint heading, e.g. (22, 23)
+
+    @property
+    def numbers(self) -> tuple[int, ...]:
+        return self.covers or ((self.number,) if self.number is not None else ())
 
 
 def _number(after_marker: str) -> tuple[int | None, bool]:
@@ -91,60 +98,106 @@ def _paged_lines(text: str) -> list[tuple[str, Page | None]]:
     return out[::-1]
 
 
-def segment_lines(text: str, marker: str) -> tuple[Unit, ...]:
-    """Segment line-oriented (OCR) text where each unit opens with a line ``marker <ordinal>``.
+RULE_STEP = 4   # rule headings: tolerate up to three consecutive headings lost to OCR
+VERSE_STEP = 3  # verse numbers are dense and digit-repaired, so allow less slack
 
-    Accepts plain text or mARkdown with closing ``PageVxxPyyy`` markers.
+# A candidate resolves, given the last number of the chain so far, to
+# (first, last, ocr_corrected) — or None when it cannot follow.
+Resolve = Callable[[int], "tuple[int, int, bool] | None"]
+Link = tuple[int, int, int, bool]  # (line position, first, last, corrected)
+
+
+def _chain(cands: list[tuple[int, Resolve]], min_lines: int, max_step: int) -> list[Link]:
+    """Longest numbering chain over candidates in document order.
+
+    Each step advances by 1..max_step and spans at least ``min_lines`` lines
+    (so a table of contents, one heading per line, cannot form a chain).
+    Ties go to the tighter chain (smaller final number), then to the later start
+    (a table of contents precedes the body it lists).
+    """
+    best: list[list[Link]] = []
+    for pos, resolve in cands:
+        start = resolve(0)
+        options = [[(pos, *start)]] if start and start[0] <= max_step else []
+        for chain in (c for c in best if c and pos - c[-1][0] >= min_lines):
+            nxt = resolve(chain[-1][2])
+            if nxt and 0 < nxt[0] - chain[-1][2] <= max_step:
+                options.append(chain + [(pos, *nxt)])
+        best.append(max(options, key=_tightness, default=[]))
+    return max(best, key=_tightness, default=[])
+
+
+def _tightness(chain: list[Link]) -> tuple[int, int, int]:
+    return (len(chain), -chain[-1][2], chain[0][0]) if chain else (0, 0, 0)
+
+
+def _units(lines: list[tuple[str, Page | None]], chain: list[Link], heading: Callable[[str], str],
+           furu: bool) -> tuple[Unit, ...]:
+    ends = [pos for pos, *_ in chain[1:]] + [len(lines)]
+
+    def unit(link: Link, end: int) -> Unit:
+        pos, first, last, corrected = link
+        body = "\n".join(line for line, _ in lines[pos + 1:end])
+        covers = tuple(range(first, last + 1)) if last > first else ()
+        return Unit(first, heading(lines[pos][0]), _statement(body), lines[pos][1],
+                    _furu(body) if furu else (), corrected, covers)
+
+    return tuple(unit(c, e) for c, e in zip(chain, ends))
+
+
+def _heading_span(line: str, key: str) -> tuple[tuple[int, int], bool] | None:
+    """«القاعدة الثانية» or a bare «الثانية» (the word itself may be a graphic lost to OCR),
+    optionally followed by one stray glyph of at most two letters."""
+    words = normalize(line).replace("(", " ").replace(")", " ").replace(":", " ").replace(".", " ").split()
+    words = words[1:] if words[:1] == [key] else words
+    if words and len(words[-1]) <= 2 and len(words) > 1:
+        words = words[:-1]
+    return parse_ordinal_span(" ".join(words)) if 0 < len(words) <= 6 else None
+
+
+def segment_lines(text: str, marker: str) -> tuple[Unit, ...]:
+    """Rule headings in line-oriented (OCR) text: «القاعدة <ordinal>» or a bare ordinal line,
+    chained by number. Accepts plain text or mARkdown with closing page markers."""
+    key = normalize(marker)
+    lines = _paged_lines(text)
+    cands = [
+        (i, (lambda sp: lambda _prev: (sp[0][0], sp[0][1], sp[1]))(span))
+        for i, (line, _) in enumerate(lines)
+        if (span := _heading_span(line, key))
+    ]
+    return _units(lines, _chain(cands, min_lines=2, max_step=RULE_STEP), lambda l: " ".join(l.split()), furu=True)
+
+
+def segment_index(text: str, marker: str) -> tuple[Unit, ...]:
+    """Index entries «القاعدة <ordinal>: <statement>» (a book's closing list of its rules).
+
+    Joint entries are skipped here: an index restates each rule, so a fused entry is
+    an OCR merge, not a joint rule. The statement is the text after the colon.
     """
     key = normalize(marker)
     lines = _paged_lines(text)
-    starts = [
-        i for i, (line, _) in enumerate(lines)
-        if normalize(line).startswith(key + " ") and len(normalize(line).split()) <= 6
-    ]
 
-    def unit(i: int, j: int) -> Unit:
-        heading, page = " ".join(lines[i][0].split()), lines[i][1]
-        number, ocr = _number(normalize(heading)[len(key):])
-        body = "\n".join(line for line, _ in lines[i + 1:j])
-        return Unit(number, heading, _statement(body), page, _furu(body), ocr)
+    def entry(line: str) -> tuple[int, str] | None:
+        head, sep, statement = line.partition(":")
+        span = _heading_span(head, key) if sep and normalize(head).startswith(key + " ") else None
+        return (span[0][0], statement.strip()) if span and span[0][0] == span[0][1] and statement.strip() else None
 
-    return tuple(unit(i, j) for i, j in zip(starts, starts[1:] + [len(lines)]))
+    entries = [(i, e) for i, (line, _) in enumerate(lines) if (e := entry(line))]
+    chain = _chain([(i, (lambda n: lambda _p: (n, n, False))(n)) for i, (n, _) in entries], 1, RULE_STEP)
+    by_pos = dict(entries)
+    return tuple(
+        Unit(n, lines[pos][0].partition(":")[0].strip(), by_pos[pos][1], lines[pos][1], (), False)
+        for pos, n, _, _ in chain
+    )
 
 
 _VERSE = re.compile(r"^([0-9٠-٩۰-۹]{1,3})\s*[-–—.۔]\s*(\S.*)$")
-
-
-MAX_VERSE_GAP = 3  # tolerate up to two verses missed by OCR between accepted ones
 
 
 def _repair(obs: str, prev: int) -> int:
     """Smallest n > prev whose trailing digits equal the observed ones (OCR drops leading digits)."""
     m, o = 10 ** len(obs), int(obs)
     return prev + ((o - prev) % m or m)
-
-
-def _verse_chain(cands: list[tuple[int, str]]) -> list[tuple[int, int, bool]]:
-    """Longest chain of (line, repaired number, corrected?) with steps in 1..MAX_VERSE_GAP.
-
-    Dynamic programme over candidates in document order; ties go to the chain
-    with the smaller final number (the tighter run).
-    """
-    best: list[list[tuple[int, int, bool]]] = []
-    for pos, obs in cands:
-        options = [[(pos, int(obs), False)]] if 0 < int(obs) <= MAX_VERSE_GAP else []
-        options += [
-            chain + [(pos, v, v != int(obs))]
-            for chain in best
-            if chain
-            and 0 < (v := _repair(obs, chain[-1][1])) - chain[-1][1] <= MAX_VERSE_GAP
-        ]
-        best.append(max(options, key=_tightness, default=[]))
-    return max(best, key=_tightness, default=[])
-
-
-def _tightness(chain: list[tuple[int, int, bool]]) -> tuple[int, int]:
-    return (len(chain), -chain[-1][1]) if chain else (0, 0)
 
 
 def segment_numbered(text: str) -> tuple[Unit, ...]:
@@ -154,23 +207,20 @@ def segment_numbered(text: str) -> tuple[Unit, ...]:
     leading digits are repaired and flagged ``ocr_corrected``.
     """
     lines = _paged_lines(text)
-    cands = [(i, normalize(m.group(1))) for i, (line, _) in enumerate(lines) if (m := _VERSE.match(line))]
-    chain = _verse_chain(cands)
-    ends = [pos for pos, _, _ in chain[1:]] + [len(lines)]
 
-    def unit(start: tuple[int, int, bool], end: int) -> Unit:
-        i, n, corrected = start
-        body = "\n".join(line for line, _ in lines[i + 1:end])
-        return Unit(n, _VERSE.match(lines[i][0]).group(2).strip(), _statement(body), lines[i][1], (), corrected)
+    def resolve(obs: str) -> Resolve:
+        return lambda prev: (n := _repair(obs, prev), n, n != int(obs))
 
-    return tuple(unit(c, e) for c, e in zip(chain, ends))
+    cands = [(i, resolve(normalize(m.group(1)))) for i, (line, _) in enumerate(lines) if (m := _VERSE.match(line))]
+    return _units(lines, _chain(cands, min_lines=1, max_step=VERSE_STEP),
+                  lambda l: _VERSE.match(l).group(2).strip(), furu=False)
 
 
 def consensus_numbering(witnesses: dict[str, tuple[Unit, ...]], expected: int | None) -> dict:
     """Union unit numbers across independent witnesses (e.g. two OCR engines)."""
     found = {
-        n: sorted(w for w, us in witnesses.items() if any(u.number == n for u in us))
-        for n in sorted({u.number for us in witnesses.values() for u in us if u.number is not None})
+        n: sorted(w for w, us in witnesses.items() if any(n in u.numbers for u in us))
+        for n in sorted({n for us in witnesses.values() for u in us for n in u.numbers})
     }
     top = max([*found, expected or 0], default=0)
     return {
@@ -184,7 +234,7 @@ def consensus_numbering(witnesses: dict[str, tuple[Unit, ...]], expected: int | 
 
 def audit_numbering(units: tuple[Unit, ...], expected: int | None) -> dict:
     """Compare found unit numbers with the claimed count (edition verification, M0)."""
-    nums = sorted(u.number for u in units if u.number is not None)
+    nums = sorted(n for u in units for n in u.numbers)
     top = max([*nums, expected or 0], default=0)
     return {
         "found": len(units),

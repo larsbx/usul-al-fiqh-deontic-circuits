@@ -156,7 +156,8 @@
       ],
       "segmenter": {
         "kind": "lines",
-        "marker": "القاعدة"
+        "marker": "القاعدة",
+        "index": true
       },
       "expected_units": {
         "unit": "qāʿida",

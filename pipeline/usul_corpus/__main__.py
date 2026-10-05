@@ -21,7 +21,14 @@ from .ocr import MODELS, ensure_model, ocr_pdf, page_markdown, quality, tesserac
 from .hudud import extract_hudud
 from .openiti import parse_markdown
 from .records import hadd_record, qaida_records, unit_tags
-from .segment import audit_numbering, consensus_numbering, segment_headed, segment_lines, segment_numbered
+from .segment import (
+    audit_numbering,
+    consensus_numbering,
+    segment_headed,
+    segment_index,
+    segment_lines,
+    segment_numbered,
+)
 
 ROOT = Path(__file__).resolve().parents[2]
 CORPUS = ROOT / "corpus"
@@ -117,6 +124,13 @@ def _segment(work: dict, witness: str, text: str) -> tuple[list[dict], tuple | N
     return records, units
 
 
+def _index(work: dict, witness: str, text: str) -> tuple[list[dict], tuple]:
+    """Rules restated in the book's closing index: an extra witness with each rule's statement."""
+    units = segment_index(text, work["segmenter"]["marker"])
+    tags = unit_tags(units, prefix="i")
+    return [r for t, u in zip(tags, units) for r in qaida_records(work, witness, "index", t, u)], units
+
+
 def cmd_build(_: argparse.Namespace) -> int:
     audit: dict[str, dict] = {}
     for work in (w for w in _works(None) if "segmenter" in w):
@@ -128,7 +142,13 @@ def cmd_build(_: argparse.Namespace) -> int:
                 print(f"skip {w['id']}: not fetched{' or not OCR-ed' if w.get('format') == 'pdf' else ''}",
                       file=sys.stderr)
                 continue
-            records, units = _segment(work, w["id"], src.read_text(encoding="utf-8"))
+            text = src.read_text(encoding="utf-8")
+            records, units = _segment(work, w["id"], text)
+            if work["segmenter"].get("index"):
+                index_records, index_units = _index(work, w["id"], text)
+                records += index_records
+                audit[f"{w['id']}#index"] = {"work": work["id"], **audit_numbering(index_units, expected)}
+                numbered[f"{w['id']}#index"] = index_units
             path = CORPUS / "records" / f"{w['id']}.jsonl"
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records), encoding="utf-8")

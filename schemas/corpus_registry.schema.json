@@ -35,7 +35,8 @@
         "segmenter": {
           "type": "object",
           "required": ["kind"],
-          "properties": {"kind": {"enum": ["headed", "lines", "numbered", "hudud_brackets"]}, "marker": {"type": "string"}}
+          "properties": {"kind": {"enum": ["headed", "lines", "numbered", "hudud_brackets"]}, "marker": {"type": "string"},
+                         "index": {"type": "boolean", "description": "also read the closing index «marker <ordinal>: statement»"}}
         },
         "expected_units": {
           "type": "object",

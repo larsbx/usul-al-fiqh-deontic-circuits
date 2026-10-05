@@ -56,3 +56,12 @@ def test_parse_ordinal_fuzzy_marks_ocr_correction():
     assert parse_ordinal("الثااثون") == (30, True)
     assert parse_ordinal("الحادية والثلاتون") == (31, True)
     assert parse_ordinal("الثااثون", fuzzy=False) is None
+
+
+def test_parse_ordinal_span_joint_headings():
+    from usul_corpus.arabic import parse_ordinal_span
+
+    assert parse_ordinal_span("الثانية والثالثة والعشرون") == ((22, 23), False)
+    assert parse_ordinal_span("الرابعة والخامسة") == ((4, 5), False)
+    assert parse_ordinal_span("الحادية عشرة") == ((11, 11), False)
+    assert parse_ordinal_span("الأولى والثالثة") is None        # not consecutive

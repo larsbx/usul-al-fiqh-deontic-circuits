@@ -10,7 +10,8 @@
       "witness": "archive-manzuma-tess",
       "url": "https://archive.org/download/20210501_20210501_0220/%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9%20%D8%A3%D8%B5%D9%88%D9%84%20%D8%A7%D9%84%D9%81%D9%82%D9%87%20%D9%88%D9%82%D9%88%D8%A7%D8%B9%D8%AF%D9%87.pdf",
       "bytes": 8180831,
-      "sha256": "4a951826ed8908984796eb0cb359e602a1333b94f7c9ebb9a39f69f8e6051cb8"
+      "sha256": "4a951826ed8908984796eb0cb359e602a1333b94f7c9ebb9a39f69f8e6051cb8",
+      "ocr_sha256": "bb0a5924a6ea174b4d29c098a6e5704e249aec61a5f3d3a0f54640992dc26be4"
     },
     "archive-pdf1995": {
       "witness": "archive-pdf1995",
@@ -22,13 +23,15 @@
       "witness": "archive-pdf1995-tess",
       "url": "https://archive.org/download/Pdf1995/%D9%83%D8%AA%D8%A7%D8%A8%20%20%20pdf%20%20%20%20%20%D8%A7%D9%82%D8%B1%D8%A7%20%D8%A7%D9%88%D9%86%D9%84%D8%A7%D9%8A%D9%86%20%20%201995%20-%20%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%B9%D8%AF%20%D9%88%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D9%84%20%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9%20%D9%88%D8%A7%D9%84%D9%81%D8%B1%D9%88%D9%82%20%D9%88%D8%A7%D9%84%D8%AA%D9%82%D8%A7%D8%B3%D9%8A%D9%85%20%D8%A7%D9%84%D8%A8%D8%AF%D9%8A%D8%B9%D8%A9%20%D8%A7%D9%84%D9%86%D8%A7%D9%81%D8%B9%D8%A9%20-%20%D8%B7%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D9%88%D8%B7%D9%86.pdf",
       "bytes": 3595494,
-      "sha256": "e72bd24607744eae80522ed4c2b271eed565bb62d64dbd77d17bfbb4bda91eb4"
+      "sha256": "e72bd24607744eae80522ed4c2b271eed565bb62d64dbd77d17bfbb4bda91eb4",
+      "ocr_sha256": "3c3dd555c5d7ed6056baf81f99479af89ce6a003dd641d45c8a7e178af55914e"
     },
     "archive-tariq-tess": {
       "witness": "archive-tariq-tess",
       "url": "https://archive.org/download/Tareeq_Wsoul/Tareeq_Wsoul.pdf",
       "bytes": 11813686,
-      "sha256": "5127a70227a889ac8601d7dc946ba46b03b467525743a752e6daac4a582d59db"
+      "sha256": "5127a70227a889ac8601d7dc946ba46b03b467525743a752e6daac4a582d59db",
+      "ocr_sha256": "65932538520211bb585c256617ec6612cb1fad5b4e653b80826b63de6457cb1b"
     },
     "openiti-ilam-shamela11496": {
       "witness": "openiti-ilam-shamela11496",

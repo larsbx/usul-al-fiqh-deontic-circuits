@@ -14,10 +14,10 @@ def _loc(witness: str, page: tuple[int, int] | None, anchor: str) -> str:
     return f"src:{witness}{where}#{anchor}"
 
 
-def unit_tags(units: tuple[Unit, ...]) -> list[str]:
+def unit_tags(units: tuple[Unit, ...], prefix: str = "q") -> list[str]:
     """Stable per-witness tags: q015 for qāʿida 15, q015_2 for a repeated heading
     (OCR or table of contents), u007 for the 7th unit when its number is unparsed."""
-    base = [f"q{u.number:03d}" if u.number else f"u{i:03d}" for i, u in enumerate(units, 1)]
+    base = [f"{prefix}{u.number:03d}" if u.number else f"u{i:03d}" for i, u in enumerate(units, 1)]
     return [t if base[:i].count(t) == 0 else f"{t}_{base[:i].count(t) + 1}" for i, t in enumerate(base)]
 
 

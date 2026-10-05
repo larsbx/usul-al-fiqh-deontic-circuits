@@ -28,11 +28,11 @@ Each witness is pinned: the OpenITI ones by commit SHA, the others by Shamela bo
 | Ibn Qudāma, *Rawḍat al-Nāẓir* | OpenITI 0625AH, Shamela 12010 | located |
 | al-Ṭūfī, *Sharḥ Mukhtaṣar al-Rawḍa* | OpenITI 0725AH, Shamela 10781 | located |
 | Ibn al-Najjār, *Sharḥ al-Kawkab al-Munīr* | OpenITI 0975AH, Shamela 12019 | located |
-| al-Saʿdī, *al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa* | archive.org `Pdf1995` (Dār al-Waṭan), OCR text | located; **OCR needs review** |
-| Ibn ʿUthaymīn, *Manẓūmat Uṣūl al-Fiqh* | archive.org (PDF only) | text layer needed |
+| al-Saʿdī, *al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa* | archive.org `Pdf1995` (Dār al-Waṭan): archive.org OCR + our OCR | located; 60 confirmed; text needs review |
+| Ibn ʿUthaymīn, *Sharḥ Manẓūmat Uṣūl al-Fiqh* | archive.org scan: archive.org OCR + our OCR | located; verse count open |
 | Ibn Rajab, *Taqrīr al-Qawāʿid* | OpenITI 0800AH, Shamela 21730 (`.completed`) | located; segmented |
 | Ibn Taymiyya, *al-Qawāʿid al-Nūrāniyya* | OpenITI 0750AH, Shamela 21729 (`.completed`) | located |
-| al-Saʿdī, *Ṭarīq al-Wuṣūl* | archive.org (PDF only) | text layer needed |
+| al-Saʿdī, *Ṭarīq al-Wuṣūl* | archive.org scan, our OCR | OCR done; not segmented |
 | al-Saʿdī, *Risāla Laṭīfa fī Uṣūl al-Fiqh* *(addition)* | Shamela 9527 | located |
 | Ibn al-Laḥḥām, *al-Qawāʿid wa'l-Fawāʾid al-Uṣūliyya* | OpenITI 0825AH: Shamela 8526 + ShamAY 34193 | located; segmented |
 | Ibn al-Qayyim, *Iʿlām al-Muwaqqiʿīn* | OpenITI 0775AH, Shamela 11496 | located |
@@ -56,7 +56,7 @@ These come from `corpus/audit.json`, produced by `audit_numbering`:
 | Ibn Rajab: 160 qawāʿid | Shamela 21730 | **confirmed**: 1…160, no gaps or duplicates |
 | Ibn al-Laḥḥām: 66 qawāʿid | Shamela 8526 | **confirmed**: 1…66 |
 | Ibn al-Laḥḥām: 66 qawāʿid | ShamAY 34193 | 64 headers, missing 16, 18 and 30. This is a witness defect, so 8526 is the primary witness |
-| al-Saʿdī: 60 qawāʿid | archive OCR | highest number found is 60, which is consistent with the claim. 11 numbers are missing and 3 are duplicated because of OCR damage and table-of-contents lines, so the count is unconfirmed until the OCR is reviewed |
+| al-Saʿdī: 60 qawāʿid | 2 OCRs × (body + closing index) | **confirmed**: every number from 1 to 60 is attested by at least one of four witnesses; 22 and 23 share one printed heading (see [`ocr-pipeline.md`](ocr-pipeline.md)) |
 
 ## 3. Records
 
@@ -104,5 +104,5 @@ Each invariant was mutation-checked once: a seeded bug in the spec makes TLC rep
 1. **Review queue (M0/M4):** review the 26 ḥudūd and the al-Saʿdī OCR units; correct h014; classify qawāʿid `kind` (meta / default / taqsīm / farq / closure).
 2. **M3:** encode al-Saʿdī's rules one by one from the reviewed records. Each gets a Lean statement, a Haskell executable and at least one farʿ test.
 3. **M4:** turn the Ibn al-Laḥḥām `far` records into golden entailments. This needs a ruling annotation per case, which is human or LLM-assisted and always goes through review.
-4. **Text layers:** OCR the *Manẓūma* and *Ṭarīq al-Wuṣūl* PDFs, or find text witnesses for them.
+4. **OCR:** detect the verse frames in the *Manẓūma* and OCR each column; segment *Ṭarīq al-Wuṣūl* (see [`ocr-pipeline.md`](ocr-pipeline.md)).
 5. **Proof debt:** prove that `Grounded.grounded` reaches the least fixed point within `n + 1` steps. Today agreement rests on `mem_step_iff` plus the vectors.
