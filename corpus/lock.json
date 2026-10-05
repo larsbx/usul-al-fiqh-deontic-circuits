@@ -22,8 +22,7 @@
       "witness": "archive-pdf1995-tess",
       "url": "https://archive.org/download/Pdf1995/%D9%83%D8%AA%D8%A7%D8%A8%20%20%20pdf%20%20%20%20%20%D8%A7%D9%82%D8%B1%D8%A7%20%D8%A7%D9%88%D9%86%D9%84%D8%A7%D9%8A%D9%86%20%20%201995%20-%20%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%B9%D8%AF%20%D9%88%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D9%84%20%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9%20%D9%88%D8%A7%D9%84%D9%81%D8%B1%D9%88%D9%82%20%D9%88%D8%A7%D9%84%D8%AA%D9%82%D8%A7%D8%B3%D9%8A%D9%85%20%D8%A7%D9%84%D8%A8%D8%AF%D9%8A%D8%B9%D8%A9%20%D8%A7%D9%84%D9%86%D8%A7%D9%81%D8%B9%D8%A9%20-%20%D8%B7%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D9%88%D8%B7%D9%86.pdf",
       "bytes": 3595494,
-      "sha256": "e72bd24607744eae80522ed4c2b271eed565bb62d64dbd77d17bfbb4bda91eb4",
-      "ocr_sha256": "9f6343654b8df093059c90f99664365a6f0f85b75842edaa846711ee12ce5a87"
+      "sha256": "e72bd24607744eae80522ed4c2b271eed565bb62d64dbd77d17bfbb4bda91eb4"
     },
     "archive-tariq-tess": {
       "witness": "archive-tariq-tess",
