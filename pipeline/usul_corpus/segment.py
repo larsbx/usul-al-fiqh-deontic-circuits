@@ -217,18 +217,24 @@ def segment_numbered(text: str) -> tuple[Unit, ...]:
 
 
 def consensus_numbering(witnesses: dict[str, tuple[Unit, ...]], expected: int | None) -> dict:
-    """Union unit numbers across independent witnesses (e.g. two OCR engines)."""
+    """Union unit numbers across independent witnesses (e.g. two OCR engines).
+
+    Numbers above the expected count are reported apart (``beyond_expected``):
+    they are witness errors, not evidence about the count.
+    """
     found = {
         n: sorted(w for w, us in witnesses.items() if any(n in u.numbers for u in us))
         for n in sorted({n for us in witnesses.values() for u in us for n in u.numbers})
     }
-    top = max([*found, expected or 0], default=0)
+    top = expected or max(found, default=0)
+    within = [n for n in found if n <= top]
     return {
         "expected": expected,
-        "found_by_any": list(found),
+        "found_by_any": within,
         "missing_in_all": [n for n in range(1, top + 1) if n not in found],
-        "found_by": {str(n): ws for n, ws in found.items()},
-        "complete": expected is not None and list(found) == list(range(1, expected + 1)),
+        "beyond_expected": {str(n): ws for n, ws in found.items() if n > top},
+        "found_by": {str(n): found[n] for n in within},
+        "complete": expected is not None and within == list(range(1, expected + 1)),
     }
 
 

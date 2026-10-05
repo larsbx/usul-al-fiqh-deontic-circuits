@@ -37,7 +37,7 @@ This rejects Standard Deontic Logic (KD) as the core: it has no defeasibility an
 
 | Milestone | State | Evidence |
 |---|---|---|
-| M0 registry | **done for located texts** | `corpus/registry.json` (20 works, pinned witnesses), `corpus/lock.json`, `corpus/audit.json`: Ibn Rajab's 160, Ibn al-Laḥḥām's 66 and al-Saʿdī's 60 confirmed (al-Saʿdī via the [OCR pipeline](architecture/ocr-pipeline.md)) |
+| M0 registry | **done for located texts** | `corpus/registry.json` (20 works, pinned witnesses), `corpus/lock.json`, `corpus/audit.json`: Ibn Rajab's 160, Ibn al-Laḥḥām's 66, al-Saʿdī's 60 and the *Manẓūma*'s 103 abyāt confirmed (al-Saʿdī via the [OCR pipeline](architecture/ocr-pipeline.md)) |
 | M1 logic core | **kernel proved** | `Usul.Dung`: admissibility preserved by `F`, grounded ⊆ every complete extension. The ADR prose is still open |
 | M2 signature | **seeded** | 26 ḥudūd extracted from *al-Uṣūl*; `Usul.Hukm` / `Usul.Signature`; Σ map checked on both sides |
 | M3 qawāʿid | started | `Usul.Qawaid`: yaqīn/shakk, necessary-means closure ∧ ought-implies-can, ḍarūra bound |

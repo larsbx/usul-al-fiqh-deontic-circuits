@@ -81,3 +81,28 @@ def test_verse_text_strips_unreadable_number_prefix():
     assert verse_text("٨٩ - والأصل في القيد * لغيره") == ("والأصل في القيد * لغيره", "89")
     assert verse_text("بر ثم الصلاة * على الذي") == ("ثم الصلاة * على الذي", "")
     assert verse_text("-١ الحمد لله * معطي") == ("الحمد لله * معطي", "1")
+
+
+def test_segment_verse_block_takes_the_longest_block_not_the_first():
+    from usul_corpus.verses import segment_verse_block
+
+    early = ["# عضوا في هيئة كبار العلماء * من عام", "# عضوا في المجلس العلمي * بجامعة الإمام"]
+    gap = ["# نص نثري", "# نص نثري آخر", "# ونص ثالث"]
+    matn = [f"# بيت رقم {k} في المتن * وعجزه {k}" for k in range(1, 6)]
+    units = segment_verse_block("\n".join(early + gap + matn))
+    assert [u.number for u in units] == [1, 2, 3, 4, 5]
+    assert units[0].heading.startswith("بيت رقم 1")
+
+
+def test_page_level_bar_split_counts_as_a_verse_line():
+    from usul_corpus.verses import as_verse, segment_verse_block
+
+    assert as_verse("٠١ مالم يكن متصفا بوصف | يفيد علة فخذ بالوصف") == "٠١ مالم يكن متصفا بوصف * يفيد علة فخذ بالوصف"
+    assert as_verse("الموضوع | الصفحة") is None                     # one word a side: not a bayt
+    assert as_verse("قوله: كلام بلا فاصل") is None
+    text = "\n".join([
+        "# واعتبر العموم في نص أثر * ما خصوص سبب فما اعتبر",
+        "# ٠١ مالم يكن متصفا بوصف | يفيد علة فخذ بالوصف",
+        "# وخصص العام بخاص وردا * كقيد مطلق بما قد قيدا",
+    ])
+    assert [u.heading[:8] for u in segment_verse_block(text)] == ["واعتبر ا", "مالم يكن", "وخصص الع"]

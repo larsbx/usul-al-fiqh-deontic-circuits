@@ -161,22 +161,42 @@ def verse_text(line: str) -> tuple[str, str]:
     return " ".join(toks[k:]), digits
 
 
+def _blocks(idx: list[int]) -> list[list[int]]:
+    """Group line indices into blocks broken by more than MAX_BLOCK_BREAK other lines."""
+    cuts = [k for k in range(1, len(idx)) if idx[k] - idx[k - 1] - 1 > MAX_BLOCK_BREAK]
+    return [idx[a:b] for a, b in zip([0, *cuts], [*cuts, len(idx)])] if idx else []
+
+
+_BAR = re.compile(r"\s+[|]\s+")
+
+
+def as_verse(line: str) -> str | None:
+    """The line as a verse («… * …»), or None. Besides our own separator, accept the
+    page-level reading where tesseract kept the hemistich gap as «|» — provided
+    each side has at least two Arabic words (a two-column index row does not)."""
+    if HEMISTICH_SEP.strip() in line.split():
+        return line
+    parts = _BAR.split(line)
+    words = lambda t: sum(bool(_ARABIC.search(w)) for w in t.split())  # noqa: E731
+    return HEMISTICH_SEP.join(parts) if len(parts) == 2 and min(map(words, parts)) >= 2 else None
+
+
 def segment_verse_block(text: str) -> tuple[Unit, ...]:
-    """Number the first contiguous block of verse lines (the matn) by position.
+    """Number the longest contiguous block of verse lines (the matn) by position.
+
+    Shorter blocks (gapped lines in front matter, verses quoted in the commentary)
+    are ignored; ties go to the earliest block.
 
     The printed number is a check, not the source: a unit is flagged
     ``ocr_corrected`` unless its readable printed digits agree with its position.
     """
     lines = _paged_lines(text)
-    verse_idx = [i for i, (line, _) in enumerate(lines) if HEMISTICH_SEP.strip() in line.split()]
-    block = verse_idx[:1]
-    for i in verse_idx[1:]:
-        if i - block[-1] - 1 > MAX_BLOCK_BREAK:
-            break
-        block.append(i)
+    verses = {i: v for i, (line, _) in enumerate(lines) if (v := as_verse(line))}
+    verse_idx = sorted(verses)
+    block = max(_blocks(verse_idx), key=len, default=[])
 
     def unit(n: int, i: int) -> Unit:
-        body, printed = verse_text(lines[i][0])
+        body, printed = verse_text(verses[i])
         agrees = bool(printed) and int(printed) % 10 ** len(printed) == n % 10 ** len(printed)
         return Unit(n, body, "", lines[i][1], (), not agrees)
 

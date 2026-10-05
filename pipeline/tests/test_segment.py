@@ -83,6 +83,7 @@ def test_consensus_numbering_unions_witnesses():
         "expected": 5,
         "found_by_any": [1, 2, 3, 4],
         "missing_in_all": [5],
+        "beyond_expected": {},
         "found_by": {"1": ["djvu", "tess"], "2": ["djvu"], "3": ["tess"], "4": ["djvu"]},
         "complete": False,
     }
@@ -147,3 +148,12 @@ def test_verse_chain_uses_tighter_step_than_rules():
     # 1, 2, then a stray «٦» four steps ahead: allowed for rule headings, not for verses
     units = segment_numbered("# ١ - أ ب\n# ٢ - ج د\n# ٦ - شارد\n# ٣ - هـ و")
     assert [u.number for u in units] == [1, 2, 3]
+
+
+def test_consensus_separates_numbers_beyond_the_expected_count():
+    from usul_corpus.segment import consensus_numbering
+
+    good = tuple(Unit(n, "", "", None, (), False) for n in (1, 2, 3))
+    over = tuple(Unit(n, "", "", None, (), False) for n in (1, 3, 5))     # e.g. a digit-repair overshoot
+    c = consensus_numbering({"tess": good, "djvu": over}, expected=3)
+    assert c["missing_in_all"] == [] and c["beyond_expected"] == {"5": ["djvu"]} and c["complete"]
