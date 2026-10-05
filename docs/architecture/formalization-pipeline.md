@@ -32,7 +32,7 @@ Each witness is pinned: the OpenITI ones by commit SHA, the others by Shamela bo
 | Ibn ʿUthaymīn, *Sharḥ Manẓūmat Uṣūl al-Fiqh* | archive.org scan: archive.org OCR + our OCR with verse reader | located; 103 verses confirmed and segmented |
 | Ibn Rajab, *Taqrīr al-Qawāʿid* | OpenITI 0800AH, Shamela 21730 (`.completed`) | located; segmented |
 | Ibn Taymiyya, *al-Qawāʿid al-Nūrāniyya* | OpenITI 0750AH, Shamela 21729 (`.completed`) | located |
-| al-Saʿdī, *Ṭarīq al-Wuṣūl* | archive.org scan, our OCR | OCR done; not segmented |
+| al-Saʿdī, *Ṭarīq al-Wuṣūl* | archive.org scan, our OCR (frame crop, denoise, number reader) | 1015 paragraphs confirmed; 997 segmented |
 | al-Saʿdī, *Risāla Laṭīfa fī Uṣūl al-Fiqh* *(addition)* | Shamela 9527 | located |
 | Ibn al-Laḥḥām, *al-Qawāʿid wa'l-Fawāʾid al-Uṣūliyya* | OpenITI 0825AH: Shamela 8526 + ShamAY 34193 | located; segmented |
 | Ibn al-Qayyim, *Iʿlām al-Muwaqqiʿīn* | OpenITI 0775AH, Shamela 11496 | located |
@@ -57,6 +57,7 @@ These come from `corpus/audit.json`, produced by `audit_numbering`:
 | Ibn al-Laḥḥām: 66 qawāʿid | Shamela 8526 | **confirmed**: 1…66 |
 | Ibn al-Laḥḥām: 66 qawāʿid | ShamAY 34193 | 64 headers, missing 16, 18 and 30. This is a witness defect, so 8526 is the primary witness |
 | Ibn ʿUthaymīn, *Manẓūma*: 103 abyāt | printed matn, autograph facsimile, our OCR (verse reader) | **confirmed**: the matn and the autograph both end at ١٠٣, and the pipeline numbers 1…103 with no gaps (see [`ocr-pipeline.md`](ocr-pipeline.md)) |
+| al-Saʿdī, *Ṭarīq al-Wuṣūl*: 1015 paragraphs | printed last number ١٠١٥, part-two opening ٨٢٤, pipeline | **confirmed**: 997 segmented, all 8 eye-checked positions agree (see [`ocr-pipeline.md`](ocr-pipeline.md)) |
 | al-Saʿdī: 60 qawāʿid | 2 OCRs × (body + closing index) | **confirmed**: every number from 1 to 60 is attested by at least one of four witnesses; 22 and 23 share one printed heading (see [`ocr-pipeline.md`](ocr-pipeline.md)) |
 
 ## 3. Records
@@ -105,5 +106,5 @@ Each invariant was mutation-checked once: a seeded bug in the spec makes TLC rep
 1. **Review queue (M0/M4):** review the 26 ḥudūd and the al-Saʿdī OCR units; correct h014; classify qawāʿid `kind` (meta / default / taqsīm / farq / closure).
 2. **M3:** encode al-Saʿdī's rules one by one from the reviewed records. Each gets a Lean statement, a Haskell executable and at least one farʿ test.
 3. **M4:** turn the Ibn al-Laḥḥām `far` records into golden entailments. This needs a ruling annotation per case, which is human or LLM-assisted and always goes through review.
-4. **OCR:** link each commentary passage to its verse in the *Manẓūma*, by matching the verse text the commentary quotes; segment *Ṭarīq al-Wuṣūl* (see [`ocr-pipeline.md`](ocr-pipeline.md)).
+4. **OCR:** recover the 18 missing *Ṭarīq* paragraphs and verse 60's commentary link; split *Ṭarīq* into its source sections («ومن رسالة …») (see [`ocr-pipeline.md`](ocr-pipeline.md)).
 5. **Proof debt:** prove that `Grounded.grounded` reaches the least fixed point within `n + 1` steps. Today agreement rests on `mem_step_iff` plus the vectors.

@@ -3,2069 +3,2142 @@
   "engine": "tesseract 5.3.4",
   "models": {
     "ara_std": "2005976778bbc14fc56a4ea8d43c6080847aeee72fcc2201488f240daca15c5b",
-    "ara_best": "ab9d157d8e38ca00e7e39c7d5363a5239e053f5b0dbdb3167dde9d8124335896"
+    "ara_best": "ab9d157d8e38ca00e7e39c7d5363a5239e053f5b0dbdb3167dde9d8124335896",
+    "arabic_script": "a80454f72df35c6f52550551dd69b8521ea6a62d834396d1c7dce4c35493902e"
   },
-  "dpi": 300,
-  "psm": 4,
+  "config": {
+    "engines": [
+      "ara_std",
+      "ara_best"
+    ],
+    "dpi": 300,
+    "psm": 4,
+    "frame": true,
+    "denoise": "median3",
+    "numbers": true,
+    "number_exemplars": [
+      {
+        "page": 29,
+        "numbers": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      {
+        "page": 30,
+        "numbers": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ]
+      },
+      {
+        "page": 207,
+        "numbers": [
+          824,
+          825,
+          826,
+          827,
+          828
+        ]
+      }
+    ]
+  },
+  "numbers": {
+    "exemplar_pages": [
+      29,
+      30,
+      207
+    ],
+    "exemplar_glyphs": 45,
+    "leave_one_page_out_digit_accuracy": 0.956,
+    "reader": "templates",
+    "self_training": [
+      {
+        "round": 0,
+        "templates": 45,
+        "chain": 1012,
+        "confirmed": 818
+      },
+      {
+        "round": 1,
+        "templates": 2392,
+        "chain": 1012,
+        "confirmed": 818
+      },
+      {
+        "round": 2,
+        "templates": 2392,
+        "chain": 1012,
+        "confirmed": 818
+      }
+    ],
+    "numbered_lines": 1100
+  },
   "summary": {
-    "mean_conf": 70.86,
-    "low_conf_lines": 1210,
-    "lines": 6733,
+    "mean_conf": 82.48,
+    "low_conf_lines": 228,
+    "lines": 6399,
     "pages": 291,
     "chosen": {
-      "ara_std": 175,
-      "ara_best": 116
+      "ara_std": 106,
+      "ara_best": 185
     },
     "by_engine": {
       "ara_std": {
-        "mean_conf": 70.52,
-        "low_conf_lines": 1235,
-        "lines": 6664
+        "mean_conf": 82.02,
+        "low_conf_lines": 256,
+        "lines": 6365
       },
       "ara_best": {
-        "mean_conf": 69.79,
-        "low_conf_lines": 1411,
-        "lines": 6971
+        "mean_conf": 82.2,
+        "low_conf_lines": 251,
+        "lines": 6435
       }
     }
   },
   "pages": [
     {
       "page": 1,
-      "engine": "ara_best",
-      "mean_conf": 36.84,
+      "engine": "ara_std",
+      "mean_conf": 37.21,
       "low_conf_lines": 6,
       "lines": 6
     },
     {
       "page": 2,
-      "engine": "ara_best",
-      "mean_conf": 34.19,
-      "low_conf_lines": 7,
-      "lines": 7
+      "engine": "ara_std",
+      "mean_conf": 46.51,
+      "low_conf_lines": 8,
+      "lines": 11
     },
     {
       "page": 3,
       "engine": "ara_std",
-      "mean_conf": 57.38,
-      "low_conf_lines": 3,
-      "lines": 6
+      "mean_conf": 66.5,
+      "low_conf_lines": 1,
+      "lines": 4
     },
     {
       "page": 4,
       "engine": "ara_std",
-      "mean_conf": 42.61,
-      "low_conf_lines": 6,
-      "lines": 7
+      "mean_conf": 86.34,
+      "low_conf_lines": 0,
+      "lines": 3
     },
     {
       "page": 5,
-      "engine": "ara_std",
-      "mean_conf": 68.06,
-      "low_conf_lines": 4,
-      "lines": 21
+      "engine": "ara_best",
+      "mean_conf": 76.48,
+      "low_conf_lines": 2,
+      "lines": 22
     },
     {
       "page": 6,
-      "engine": "ara_std",
-      "mean_conf": 71.93,
-      "low_conf_lines": 2,
-      "lines": 23
+      "engine": "ara_best",
+      "mean_conf": 85.35,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 7,
-      "engine": "ara_std",
-      "mean_conf": 63.68,
-      "low_conf_lines": 2,
+      "engine": "ara_best",
+      "mean_conf": 75.86,
+      "low_conf_lines": 0,
       "lines": 9
     },
     {
       "page": 8,
       "engine": "ara_std",
-      "mean_conf": 36.73,
-      "low_conf_lines": 4,
-      "lines": 4
+      "mean_conf": null,
+      "low_conf_lines": 0,
+      "lines": 0
     },
     {
       "page": 9,
-      "engine": "ara_std",
-      "mean_conf": 68.22,
-      "low_conf_lines": 2,
-      "lines": 19
+      "engine": "ara_best",
+      "mean_conf": 81.61,
+      "low_conf_lines": 0,
+      "lines": 20
     },
     {
       "page": 10,
       "engine": "ara_std",
-      "mean_conf": 76.03,
-      "low_conf_lines": 2,
-      "lines": 26
+      "mean_conf": 81.53,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 11,
-      "engine": "ara_best",
-      "mean_conf": 70.15,
-      "low_conf_lines": 3,
-      "lines": 24
+      "engine": "ara_std",
+      "mean_conf": 81.44,
+      "low_conf_lines": 0,
+      "lines": 21
     },
     {
       "page": 12,
       "engine": "ara_best",
-      "mean_conf": 73.05,
-      "low_conf_lines": 3,
-      "lines": 24
+      "mean_conf": 82.51,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 13,
-      "engine": "ara_std",
-      "mean_conf": 75.76,
-      "low_conf_lines": 2,
+      "engine": "ara_best",
+      "mean_conf": 86.66,
+      "low_conf_lines": 0,
       "lines": 23
     },
     {
       "page": 14,
       "engine": "ara_best",
-      "mean_conf": 65.78,
-      "low_conf_lines": 7,
-      "lines": 26
+      "mean_conf": 79.9,
+      "low_conf_lines": 3,
+      "lines": 24
     },
     {
       "page": 15,
-      "engine": "ara_best",
-      "mean_conf": 71.05,
-      "low_conf_lines": 5,
-      "lines": 26
+      "engine": "ara_std",
+      "mean_conf": 82.58,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 16,
-      "engine": "ara_std",
-      "mean_conf": 68.34,
-      "low_conf_lines": 7,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 83.59,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 17,
       "engine": "ara_best",
-      "mean_conf": 69.06,
-      "low_conf_lines": 4,
-      "lines": 25
+      "mean_conf": 85.0,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 18,
       "engine": "ara_best",
-      "mean_conf": 76.97,
-      "low_conf_lines": 2,
+      "mean_conf": 85.19,
+      "low_conf_lines": 0,
       "lines": 23
     },
     {
       "page": 19,
       "engine": "ara_best",
-      "mean_conf": 67.95,
-      "low_conf_lines": 5,
-      "lines": 25
+      "mean_conf": 79.81,
+      "low_conf_lines": 3,
+      "lines": 23
     },
     {
       "page": 20,
-      "engine": "ara_std",
-      "mean_conf": 78.1,
-      "low_conf_lines": 2,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 83.55,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 21,
-      "engine": "ara_std",
-      "mean_conf": 61.45,
-      "low_conf_lines": 9,
-      "lines": 21
+      "engine": "ara_best",
+      "mean_conf": 81.84,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 22,
       "engine": "ara_best",
-      "mean_conf": 71.31,
+      "mean_conf": 82.37,
       "low_conf_lines": 2,
-      "lines": 23
+      "lines": 22
     },
     {
       "page": 23,
-      "engine": "ara_std",
-      "mean_conf": 66.1,
-      "low_conf_lines": 7,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 81.04,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 24,
-      "engine": "ara_best",
-      "mean_conf": 69.23,
-      "low_conf_lines": 3,
-      "lines": 24
+      "engine": "ara_std",
+      "mean_conf": 85.75,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 25,
-      "engine": "ara_std",
-      "mean_conf": 65.64,
-      "low_conf_lines": 6,
-      "lines": 20
+      "engine": "ara_best",
+      "mean_conf": 80.14,
+      "low_conf_lines": 2,
+      "lines": 22
     },
     {
       "page": 26,
-      "engine": "ara_std",
-      "mean_conf": 68.51,
-      "low_conf_lines": 6,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 81.35,
+      "low_conf_lines": 1,
+      "lines": 21
     },
     {
       "page": 27,
-      "engine": "ara_best",
-      "mean_conf": 75.29,
-      "low_conf_lines": 1,
-      "lines": 23
+      "engine": "ara_std",
+      "mean_conf": 85.09,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 28,
       "engine": "ara_best",
-      "mean_conf": 73.91,
-      "low_conf_lines": 2,
-      "lines": 24
+      "mean_conf": 78.82,
+      "low_conf_lines": 3,
+      "lines": 23
     },
     {
       "page": 29,
-      "engine": "ara_std",
-      "mean_conf": 52.91,
-      "low_conf_lines": 20,
-      "lines": 28
+      "engine": "ara_best",
+      "mean_conf": 84.33,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 30,
-      "engine": "ara_std",
-      "mean_conf": 70.97,
-      "low_conf_lines": 3,
-      "lines": 22
+      "engine": "ara_best",
+      "mean_conf": 85.05,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 31,
-      "engine": "ara_std",
-      "mean_conf": 58.38,
-      "low_conf_lines": 13,
+      "engine": "ara_best",
+      "mean_conf": 78.94,
+      "low_conf_lines": 2,
       "lines": 24
     },
     {
       "page": 32,
       "engine": "ara_best",
-      "mean_conf": 78.15,
-      "low_conf_lines": 2,
-      "lines": 25
+      "mean_conf": 84.15,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 33,
       "engine": "ara_std",
-      "mean_conf": 66.72,
-      "low_conf_lines": 7,
+      "mean_conf": 82.9,
+      "low_conf_lines": 0,
       "lines": 23
     },
     {
       "page": 34,
-      "engine": "ara_std",
-      "mean_conf": 76.81,
-      "low_conf_lines": 1,
+      "engine": "ara_best",
+      "mean_conf": 83.57,
+      "low_conf_lines": 0,
       "lines": 22
     },
     {
       "page": 35,
       "engine": "ara_std",
-      "mean_conf": 61.49,
-      "low_conf_lines": 9,
-      "lines": 22
+      "mean_conf": 84.17,
+      "low_conf_lines": 1,
+      "lines": 20
     },
     {
       "page": 36,
       "engine": "ara_std",
-      "mean_conf": 70.38,
-      "low_conf_lines": 6,
-      "lines": 23
+      "mean_conf": 84.42,
+      "low_conf_lines": 0,
+      "lines": 21
     },
     {
       "page": 37,
-      "engine": "ara_std",
-      "mean_conf": 65.15,
-      "low_conf_lines": 7,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 83.38,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 38,
       "engine": "ara_best",
-      "mean_conf": 72.11,
-      "low_conf_lines": 2,
+      "mean_conf": 85.1,
+      "low_conf_lines": 0,
       "lines": 24
     },
     {
       "page": 39,
       "engine": "ara_best",
-      "mean_conf": 68.25,
-      "low_conf_lines": 3,
+      "mean_conf": 83.66,
+      "low_conf_lines": 0,
       "lines": 20
     },
     {
       "page": 40,
       "engine": "ara_std",
-      "mean_conf": 73.97,
-      "low_conf_lines": 4,
-      "lines": 25
+      "mean_conf": 81.43,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 41,
-      "engine": "ara_std",
-      "mean_conf": 63.61,
-      "low_conf_lines": 7,
-      "lines": 26
+      "engine": "ara_best",
+      "mean_conf": 80.61,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 42,
-      "engine": "ara_std",
-      "mean_conf": 73.73,
-      "low_conf_lines": 1,
+      "engine": "ara_best",
+      "mean_conf": 84.59,
+      "low_conf_lines": 0,
       "lines": 23
     },
     {
       "page": 43,
-      "engine": "ara_std",
-      "mean_conf": 74.46,
-      "low_conf_lines": 1,
-      "lines": 22
-    },
-    {
-      "page": 44,
       "engine": "ara_best",
-      "mean_conf": 73.42,
-      "low_conf_lines": 3,
-      "lines": 25
-    },
-    {
-      "page": 45,
-      "engine": "ara_std",
-      "mean_conf": 64.23,
-      "low_conf_lines": 9,
-      "lines": 26
-    },
-    {
-      "page": 46,
-      "engine": "ara_best",
-      "mean_conf": 71.13,
-      "low_conf_lines": 3,
-      "lines": 26
-    },
-    {
-      "page": 47,
-      "engine": "ara_std",
-      "mean_conf": 70.55,
-      "low_conf_lines": 3,
+      "mean_conf": 84.77,
+      "low_conf_lines": 0,
       "lines": 24
     },
     {
-      "page": 48,
+      "page": 44,
       "engine": "ara_std",
-      "mean_conf": 74.48,
+      "mean_conf": 85.01,
       "low_conf_lines": 1,
       "lines": 23
     },
     {
-      "page": 49,
-      "engine": "ara_std",
-      "mean_conf": 66.31,
-      "low_conf_lines": 6,
+      "page": 45,
+      "engine": "ara_best",
+      "mean_conf": 85.55,
+      "low_conf_lines": 0,
+      "lines": 22
+    },
+    {
+      "page": 46,
+      "engine": "ara_best",
+      "mean_conf": 84.19,
+      "low_conf_lines": 0,
       "lines": 24
+    },
+    {
+      "page": 47,
+      "engine": "ara_best",
+      "mean_conf": 83.22,
+      "low_conf_lines": 0,
+      "lines": 23
+    },
+    {
+      "page": 48,
+      "engine": "ara_best",
+      "mean_conf": 86.47,
+      "low_conf_lines": 0,
+      "lines": 24
+    },
+    {
+      "page": 49,
+      "engine": "ara_best",
+      "mean_conf": 81.92,
+      "low_conf_lines": 2,
+      "lines": 23
     },
     {
       "page": 50,
       "engine": "ara_best",
-      "mean_conf": 73.55,
-      "low_conf_lines": 2,
-      "lines": 24
+      "mean_conf": 85.91,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 51,
-      "engine": "ara_std",
-      "mean_conf": 80.61,
-      "low_conf_lines": 1,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 85.95,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 52,
-      "engine": "ara_std",
-      "mean_conf": 69.1,
-      "low_conf_lines": 4,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 82.86,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 53,
       "engine": "ara_std",
-      "mean_conf": 52.87,
-      "low_conf_lines": 20,
-      "lines": 26
+      "mean_conf": 82.39,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 54,
-      "engine": "ara_std",
-      "mean_conf": 75.04,
+      "engine": "ara_best",
+      "mean_conf": 82.26,
       "low_conf_lines": 1,
-      "lines": 22
+      "lines": 23
     },
     {
       "page": 55,
-      "engine": "ara_std",
-      "mean_conf": 81.85,
+      "engine": "ara_best",
+      "mean_conf": 85.1,
       "low_conf_lines": 0,
-      "lines": 21
+      "lines": 22
     },
     {
       "page": 56,
       "engine": "ara_best",
-      "mean_conf": 80.56,
-      "low_conf_lines": 1,
-      "lines": 24
+      "mean_conf": 85.72,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 57,
-      "engine": "ara_std",
-      "mean_conf": 61.3,
-      "low_conf_lines": 10,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 81.21,
+      "low_conf_lines": 2,
+      "lines": 23
     },
     {
       "page": 58,
       "engine": "ara_best",
-      "mean_conf": 75.03,
-      "low_conf_lines": 2,
-      "lines": 25
+      "mean_conf": 84.82,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 59,
-      "engine": "ara_std",
-      "mean_conf": 71.43,
-      "low_conf_lines": 5,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 79.79,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 60,
       "engine": "ara_best",
-      "mean_conf": 75.25,
-      "low_conf_lines": 2,
+      "mean_conf": 81.49,
+      "low_conf_lines": 1,
       "lines": 25
     },
     {
       "page": 61,
       "engine": "ara_std",
-      "mean_conf": 58.53,
-      "low_conf_lines": 12,
-      "lines": 22
+      "mean_conf": 82.48,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 62,
-      "engine": "ara_std",
-      "mean_conf": 74.29,
-      "low_conf_lines": 2,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 81.18,
+      "low_conf_lines": 1,
+      "lines": 23
     },
     {
       "page": 63,
       "engine": "ara_std",
-      "mean_conf": 62.24,
-      "low_conf_lines": 6,
-      "lines": 20
+      "mean_conf": 83.11,
+      "low_conf_lines": 1,
+      "lines": 23
     },
     {
       "page": 64,
       "engine": "ara_std",
-      "mean_conf": 79.53,
-      "low_conf_lines": 2,
-      "lines": 25
+      "mean_conf": 84.93,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 65,
-      "engine": "ara_std",
-      "mean_conf": 74.4,
-      "low_conf_lines": 2,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 83.44,
+      "low_conf_lines": 1,
+      "lines": 23
     },
     {
       "page": 66,
       "engine": "ara_std",
-      "mean_conf": 75.04,
-      "low_conf_lines": 2,
-      "lines": 25
+      "mean_conf": 86.7,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 67,
-      "engine": "ara_best",
-      "mean_conf": 69.12,
-      "low_conf_lines": 3,
+      "engine": "ara_std",
+      "mean_conf": 81.18,
+      "low_conf_lines": 1,
       "lines": 23
     },
     {
       "page": 68,
       "engine": "ara_best",
-      "mean_conf": 70.6,
-      "low_conf_lines": 3,
-      "lines": 25
+      "mean_conf": 84.79,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 69,
-      "engine": "ara_std",
-      "mean_conf": 73.3,
-      "low_conf_lines": 2,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 84.84,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 70,
-      "engine": "ara_std",
-      "mean_conf": 75.14,
+      "engine": "ara_best",
+      "mean_conf": 85.1,
       "low_conf_lines": 1,
-      "lines": 22
+      "lines": 23
     },
     {
       "page": 71,
-      "engine": "ara_std",
-      "mean_conf": 72.65,
-      "low_conf_lines": 5,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 83.52,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 72,
       "engine": "ara_std",
-      "mean_conf": 76.72,
-      "low_conf_lines": 4,
-      "lines": 23
+      "mean_conf": 83.44,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 73,
       "engine": "ara_std",
-      "mean_conf": 67.99,
-      "low_conf_lines": 4,
-      "lines": 23
+      "mean_conf": 80.57,
+      "low_conf_lines": 2,
+      "lines": 24
     },
     {
       "page": 74,
       "engine": "ara_std",
-      "mean_conf": 79.86,
-      "low_conf_lines": 2,
-      "lines": 25
+      "mean_conf": 84.94,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 75,
-      "engine": "ara_std",
-      "mean_conf": 75.38,
-      "low_conf_lines": 1,
-      "lines": 21
+      "engine": "ara_best",
+      "mean_conf": 87.71,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 76,
-      "engine": "ara_best",
-      "mean_conf": 68.96,
-      "low_conf_lines": 4,
-      "lines": 23
+      "engine": "ara_std",
+      "mean_conf": 85.57,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 77,
-      "engine": "ara_std",
-      "mean_conf": 72.56,
-      "low_conf_lines": 5,
-      "lines": 23
+      "engine": "ara_best",
+      "mean_conf": 84.61,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 78,
       "engine": "ara_best",
-      "mean_conf": 78.86,
-      "low_conf_lines": 2,
-      "lines": 25
+      "mean_conf": 84.21,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 79,
-      "engine": "ara_std",
-      "mean_conf": 69.22,
+      "engine": "ara_best",
+      "mean_conf": 76.79,
       "low_conf_lines": 2,
-      "lines": 22
+      "lines": 25
     },
     {
       "page": 80,
       "engine": "ara_best",
-      "mean_conf": 70.25,
-      "low_conf_lines": 3,
-      "lines": 25
+      "mean_conf": 83.49,
+      "low_conf_lines": 1,
+      "lines": 23
     },
     {
       "page": 81,
       "engine": "ara_std",
-      "mean_conf": 75.01,
-      "low_conf_lines": 3,
-      "lines": 26
+      "mean_conf": 85.16,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 82,
       "engine": "ara_std",
-      "mean_conf": 70.37,
-      "low_conf_lines": 5,
-      "lines": 24
+      "mean_conf": 86.02,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 83,
       "engine": "ara_best",
-      "mean_conf": 72.73,
-      "low_conf_lines": 2,
-      "lines": 23
+      "mean_conf": 83.07,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 84,
       "engine": "ara_best",
-      "mean_conf": 67.92,
-      "low_conf_lines": 6,
-      "lines": 26
+      "mean_conf": 82.84,
+      "low_conf_lines": 1,
+      "lines": 24
     },
     {
       "page": 85,
-      "engine": "ara_std",
-      "mean_conf": 65.02,
-      "low_conf_lines": 6,
-      "lines": 22
+      "engine": "ara_best",
+      "mean_conf": 83.86,
+      "low_conf_lines": 1,
+      "lines": 23
     },
     {
       "page": 86,
       "engine": "ara_best",
-      "mean_conf": 69.92,
-      "low_conf_lines": 4,
-      "lines": 25
+      "mean_conf": 83.29,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 87,
-      "engine": "ara_std",
-      "mean_conf": 74.28,
-      "low_conf_lines": 3,
-      "lines": 24
-    },
-    {
-      "page": 88,
       "engine": "ara_best",
-      "mean_conf": 67.12,
-      "low_conf_lines": 7,
+      "mean_conf": 85.01,
+      "low_conf_lines": 0,
       "lines": 23
     },
     {
+      "page": 88,
+      "engine": "ara_std",
+      "mean_conf": 81.23,
+      "low_conf_lines": 0,
+      "lines": 22
+    },
+    {
       "page": 89,
-      "engine": "ara_best",
-      "mean_conf": 63.44,
-      "low_conf_lines": 7,
-      "lines": 24
+      "engine": "ara_std",
+      "mean_conf": 79.49,
+      "low_conf_lines": 3,
+      "lines": 21
     },
     {
       "page": 90,
       "engine": "ara_std",
-      "mean_conf": 71.22,
-      "low_conf_lines": 5,
-      "lines": 27
+      "mean_conf": 82.04,
+      "low_conf_lines": 1,
+      "lines": 23
     },
     {
       "page": 91,
-      "engine": "ara_std",
-      "mean_conf": 74.04,
-      "low_conf_lines": 3,
+      "engine": "ara_best",
+      "mean_conf": 84.83,
+      "low_conf_lines": 2,
       "lines": 24
     },
     {
       "page": 92,
       "engine": "ara_best",
-      "mean_conf": 73.82,
-      "low_conf_lines": 4,
-      "lines": 24
+      "mean_conf": 79.54,
+      "low_conf_lines": 1,
+      "lines": 21
     },
     {
       "page": 93,
       "engine": "ara_std",
-      "mean_conf": 65.76,
-      "low_conf_lines": 6,
-      "lines": 23
-    },
-    {
-      "page": 94,
-      "engine": "ara_std",
-      "mean_conf": 78.13,
-      "low_conf_lines": 2,
+      "mean_conf": 80.46,
+      "low_conf_lines": 1,
       "lines": 24
     },
     {
+      "page": 94,
+      "engine": "ara_best",
+      "mean_conf": 84.19,
+      "low_conf_lines": 0,
+      "lines": 23
+    },
+    {
       "page": 95,
-      "engine": "ara_std",
-      "mean_conf": 63.46,
-      "low_conf_lines": 8,
-      "lines": 21
+      "engine": "ara_best",
+      "mean_conf": 82.4,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 96,
       "engine": "ara_best",
-      "mean_conf": 76.33,
-      "low_conf_lines": 3,
-      "lines": 26
+      "mean_conf": 82.66,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 97,
-      "engine": "ara_std",
-      "mean_conf": 67.11,
-      "low_conf_lines": 7,
-      "lines": 22
+      "engine": "ara_best",
+      "mean_conf": 80.7,
+      "low_conf_lines": 0,
+      "lines": 21
     },
     {
       "page": 98,
       "engine": "ara_std",
-      "mean_conf": 79.47,
-      "low_conf_lines": 1,
-      "lines": 23
+      "mean_conf": 85.08,
+      "low_conf_lines": 0,
+      "lines": 19
     },
     {
       "page": 99,
       "engine": "ara_std",
-      "mean_conf": 71.81,
-      "low_conf_lines": 4,
-      "lines": 23
+      "mean_conf": 82.43,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 100,
-      "engine": "ara_best",
-      "mean_conf": 58.87,
-      "low_conf_lines": 11,
-      "lines": 23
+      "engine": "ara_std",
+      "mean_conf": 78.14,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 101,
       "engine": "ara_std",
-      "mean_conf": 60.06,
-      "low_conf_lines": 13,
+      "mean_conf": 77.1,
+      "low_conf_lines": 2,
       "lines": 22
     },
     {
       "page": 102,
       "engine": "ara_std",
-      "mean_conf": 70.66,
-      "low_conf_lines": 1,
+      "mean_conf": 84.14,
+      "low_conf_lines": 0,
       "lines": 21
     },
     {
       "page": 103,
       "engine": "ara_std",
-      "mean_conf": 63.67,
-      "low_conf_lines": 7,
-      "lines": 18
+      "mean_conf": 82.85,
+      "low_conf_lines": 0,
+      "lines": 21
     },
     {
       "page": 104,
-      "engine": "ara_best",
-      "mean_conf": 62.46,
-      "low_conf_lines": 8,
-      "lines": 27
+      "engine": "ara_std",
+      "mean_conf": 82.66,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 105,
-      "engine": "ara_best",
-      "mean_conf": 70.56,
-      "low_conf_lines": 4,
-      "lines": 25
+      "engine": "ara_std",
+      "mean_conf": 83.67,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 106,
-      "engine": "ara_std",
-      "mean_conf": 74.54,
-      "low_conf_lines": 2,
+      "engine": "ara_best",
+      "mean_conf": 85.91,
+      "low_conf_lines": 0,
       "lines": 22
     },
     {
       "page": 107,
       "engine": "ara_std",
-      "mean_conf": 71.35,
-      "low_conf_lines": 3,
+      "mean_conf": 84.43,
+      "low_conf_lines": 0,
       "lines": 23
     },
     {
       "page": 108,
-      "engine": "ara_std",
-      "mean_conf": 64.53,
-      "low_conf_lines": 7,
-      "lines": 22
+      "engine": "ara_best",
+      "mean_conf": 80.06,
+      "low_conf_lines": 2,
+      "lines": 23
     },
     {
       "page": 109,
-      "engine": "ara_std",
-      "mean_conf": 67.77,
-      "low_conf_lines": 6,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 79.97,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 110,
       "engine": "ara_std",
-      "mean_conf": 74.96,
-      "low_conf_lines": 1,
-      "lines": 23
+      "mean_conf": 85.82,
+      "low_conf_lines": 0,
+      "lines": 21
     },
     {
       "page": 111,
       "engine": "ara_best",
-      "mean_conf": 70.91,
-      "low_conf_lines": 4,
-      "lines": 24
+      "mean_conf": 84.8,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 112,
-      "engine": "ara_std",
-      "mean_conf": 76.97,
-      "low_conf_lines": 2,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 83.1,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 113,
-      "engine": "ara_std",
-      "mean_conf": 62.21,
-      "low_conf_lines": 8,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 81.38,
+      "low_conf_lines": 1,
+      "lines": 24
     },
     {
       "page": 114,
-      "engine": "ara_std",
-      "mean_conf": 76.09,
-      "low_conf_lines": 2,
+      "engine": "ara_best",
+      "mean_conf": 85.64,
+      "low_conf_lines": 0,
       "lines": 24
     },
     {
       "page": 115,
-      "engine": "ara_best",
-      "mean_conf": 70.3,
-      "low_conf_lines": 4,
-      "lines": 24
+      "engine": "ara_std",
+      "mean_conf": 83.24,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 116,
-      "engine": "ara_std",
-      "mean_conf": 62.59,
-      "low_conf_lines": 7,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 78.04,
+      "low_conf_lines": 2,
+      "lines": 23
     },
     {
       "page": 117,
-      "engine": "ara_std",
-      "mean_conf": 55.26,
-      "low_conf_lines": 13,
+      "engine": "ara_best",
+      "mean_conf": 80.22,
+      "low_conf_lines": 2,
       "lines": 24
     },
     {
       "page": 118,
       "engine": "ara_std",
-      "mean_conf": 73.63,
-      "low_conf_lines": 1,
-      "lines": 23
+      "mean_conf": 85.48,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 119,
       "engine": "ara_std",
-      "mean_conf": 75.81,
-      "low_conf_lines": 3,
+      "mean_conf": 82.99,
+      "low_conf_lines": 0,
       "lines": 23
     },
     {
       "page": 120,
-      "engine": "ara_best",
-      "mean_conf": 66.84,
-      "low_conf_lines": 4,
-      "lines": 22
+      "engine": "ara_std",
+      "mean_conf": 81.97,
+      "low_conf_lines": 0,
+      "lines": 21
     },
     {
       "page": 121,
       "engine": "ara_best",
-      "mean_conf": 76.26,
-      "low_conf_lines": 2,
+      "mean_conf": 82.19,
+      "low_conf_lines": 0,
       "lines": 21
     },
     {
       "page": 122,
-      "engine": "ara_std",
-      "mean_conf": 72.56,
-      "low_conf_lines": 6,
-      "lines": 28
+      "engine": "ara_best",
+      "mean_conf": 84.91,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 123,
       "engine": "ara_best",
-      "mean_conf": 66.34,
-      "low_conf_lines": 5,
-      "lines": 25
+      "mean_conf": 82.69,
+      "low_conf_lines": 1,
+      "lines": 23
     },
     {
       "page": 124,
-      "engine": "ara_best",
-      "mean_conf": 66.49,
-      "low_conf_lines": 5,
-      "lines": 23
+      "engine": "ara_std",
+      "mean_conf": 83.62,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 125,
       "engine": "ara_std",
-      "mean_conf": 53.52,
-      "low_conf_lines": 17,
-      "lines": 27
+      "mean_conf": 80.69,
+      "low_conf_lines": 2,
+      "lines": 23
     },
     {
       "page": 126,
-      "engine": "ara_std",
-      "mean_conf": 76.66,
-      "low_conf_lines": 3,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 84.83,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 127,
-      "engine": "ara_std",
-      "mean_conf": 68.28,
-      "low_conf_lines": 4,
-      "lines": 18
+      "engine": "ara_best",
+      "mean_conf": 84.83,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 128,
-      "engine": "ara_best",
-      "mean_conf": 74.82,
-      "low_conf_lines": 5,
-      "lines": 27
+      "engine": "ara_std",
+      "mean_conf": 81.97,
+      "low_conf_lines": 2,
+      "lines": 25
     },
     {
       "page": 129,
-      "engine": "ara_std",
-      "mean_conf": 73.76,
-      "low_conf_lines": 2,
+      "engine": "ara_best",
+      "mean_conf": 85.08,
+      "low_conf_lines": 0,
       "lines": 23
     },
     {
       "page": 130,
-      "engine": "ara_std",
-      "mean_conf": 70.73,
-      "low_conf_lines": 6,
-      "lines": 27
+      "engine": "ara_best",
+      "mean_conf": 83.81,
+      "low_conf_lines": 1,
+      "lines": 23
     },
     {
       "page": 131,
-      "engine": "ara_std",
-      "mean_conf": 75.05,
-      "low_conf_lines": 3,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 84.78,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 132,
       "engine": "ara_std",
-      "mean_conf": 78.43,
-      "low_conf_lines": 2,
-      "lines": 25
+      "mean_conf": 81.98,
+      "low_conf_lines": 1,
+      "lines": 24
     },
     {
       "page": 133,
-      "engine": "ara_std",
-      "mean_conf": 75.03,
-      "low_conf_lines": 3,
-      "lines": 26
+      "engine": "ara_best",
+      "mean_conf": 85.96,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 134,
       "engine": "ara_best",
-      "mean_conf": 81.09,
-      "low_conf_lines": 2,
-      "lines": 25
+      "mean_conf": 85.84,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 135,
       "engine": "ara_best",
-      "mean_conf": 65.93,
-      "low_conf_lines": 8,
-      "lines": 26
+      "mean_conf": 85.27,
+      "low_conf_lines": 0,
+      "lines": 25
     },
     {
       "page": 136,
       "engine": "ara_best",
-      "mean_conf": 73.15,
-      "low_conf_lines": 6,
-      "lines": 27
+      "mean_conf": 82.79,
+      "low_conf_lines": 1,
+      "lines": 23
     },
     {
       "page": 137,
-      "engine": "ara_best",
-      "mean_conf": 69.34,
-      "low_conf_lines": 4,
-      "lines": 24
+      "engine": "ara_std",
+      "mean_conf": 82.84,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 138,
-      "engine": "ara_std",
-      "mean_conf": 81.57,
-      "low_conf_lines": 2,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 85.22,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 139,
       "engine": "ara_best",
-      "mean_conf": 75.22,
-      "low_conf_lines": 2,
-      "lines": 23
+      "mean_conf": 84.92,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 140,
-      "engine": "ara_best",
-      "mean_conf": 69.15,
-      "low_conf_lines": 4,
-      "lines": 24
+      "engine": "ara_std",
+      "mean_conf": 79.72,
+      "low_conf_lines": 2,
+      "lines": 22
     },
     {
       "page": 141,
       "engine": "ara_best",
-      "mean_conf": 72.93,
-      "low_conf_lines": 4,
-      "lines": 25
+      "mean_conf": 78.7,
+      "low_conf_lines": 2,
+      "lines": 23
     },
     {
       "page": 142,
       "engine": "ara_best",
-      "mean_conf": 77.64,
-      "low_conf_lines": 1,
-      "lines": 23
+      "mean_conf": 83.95,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 143,
       "engine": "ara_std",
-      "mean_conf": 76.48,
-      "low_conf_lines": 3,
-      "lines": 24
-    },
-    {
-      "page": 144,
-      "engine": "ara_best",
-      "mean_conf": 72.98,
-      "low_conf_lines": 3,
-      "lines": 23
-    },
-    {
-      "page": 145,
-      "engine": "ara_std",
-      "mean_conf": 72.88,
-      "low_conf_lines": 2,
-      "lines": 20
-    },
-    {
-      "page": 146,
-      "engine": "ara_best",
-      "mean_conf": 74.39,
+      "mean_conf": 82.79,
       "low_conf_lines": 1,
       "lines": 23
     },
     {
+      "page": 144,
+      "engine": "ara_std",
+      "mean_conf": 80.28,
+      "low_conf_lines": 1,
+      "lines": 18
+    },
+    {
+      "page": 145,
+      "engine": "ara_std",
+      "mean_conf": 84.1,
+      "low_conf_lines": 0,
+      "lines": 22
+    },
+    {
+      "page": 146,
+      "engine": "ara_std",
+      "mean_conf": 85.08,
+      "low_conf_lines": 0,
+      "lines": 20
+    },
+    {
       "page": 147,
       "engine": "ara_best",
-      "mean_conf": 71.75,
-      "low_conf_lines": 3,
-      "lines": 24
+      "mean_conf": 81.65,
+      "low_conf_lines": 1,
+      "lines": 23
     },
     {
       "page": 148,
-      "engine": "ara_std",
-      "mean_conf": 70.26,
-      "low_conf_lines": 4,
+      "engine": "ara_best",
+      "mean_conf": 82.5,
+      "low_conf_lines": 2,
       "lines": 24
     },
     {
       "page": 149,
-      "engine": "ara_std",
-      "mean_conf": 64.22,
-      "low_conf_lines": 7,
+      "engine": "ara_best",
+      "mean_conf": 85.04,
+      "low_conf_lines": 1,
       "lines": 23
     },
     {
       "page": 150,
-      "engine": "ara_std",
-      "mean_conf": 78.18,
-      "low_conf_lines": 3,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 81.76,
+      "low_conf_lines": 2,
+      "lines": 24
     },
     {
       "page": 151,
       "engine": "ara_std",
-      "mean_conf": 73.73,
-      "low_conf_lines": 4,
+      "mean_conf": 79.22,
+      "low_conf_lines": 2,
       "lines": 24
     },
     {
       "page": 152,
       "engine": "ara_best",
-      "mean_conf": 64.8,
-      "low_conf_lines": 8,
-      "lines": 25
+      "mean_conf": 80.79,
+      "low_conf_lines": 2,
+      "lines": 23
     },
     {
       "page": 153,
-      "engine": "ara_std",
-      "mean_conf": 62.23,
-      "low_conf_lines": 7,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 79.05,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 154,
-      "engine": "ara_best",
-      "mean_conf": 69.82,
-      "low_conf_lines": 5,
-      "lines": 25
+      "engine": "ara_std",
+      "mean_conf": 85.41,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 155,
-      "engine": "ara_std",
-      "mean_conf": 73.15,
-      "low_conf_lines": 2,
-      "lines": 21
+      "engine": "ara_best",
+      "mean_conf": 85.03,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 156,
       "engine": "ara_best",
-      "mean_conf": 78.67,
-      "low_conf_lines": 2,
-      "lines": 25
+      "mean_conf": 83.49,
+      "low_conf_lines": 1,
+      "lines": 24
     },
     {
       "page": 157,
-      "engine": "ara_std",
-      "mean_conf": 61.83,
-      "low_conf_lines": 8,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 83.45,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 158,
       "engine": "ara_best",
-      "mean_conf": 78.63,
-      "low_conf_lines": 2,
-      "lines": 25
+      "mean_conf": 86.01,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 159,
       "engine": "ara_best",
-      "mean_conf": 60.81,
-      "low_conf_lines": 10,
+      "mean_conf": 82.8,
+      "low_conf_lines": 0,
       "lines": 23
     },
     {
       "page": 160,
       "engine": "ara_best",
-      "mean_conf": 76.58,
-      "low_conf_lines": 4,
-      "lines": 25
+      "mean_conf": 86.57,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 161,
-      "engine": "ara_std",
-      "mean_conf": 73.7,
-      "low_conf_lines": 2,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 79.52,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 162,
       "engine": "ara_best",
-      "mean_conf": 70.44,
-      "low_conf_lines": 3,
-      "lines": 24
+      "mean_conf": 85.4,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 163,
-      "engine": "ara_std",
-      "mean_conf": 72.9,
-      "low_conf_lines": 3,
-      "lines": 21
+      "engine": "ara_best",
+      "mean_conf": 82.92,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 164,
-      "engine": "ara_best",
-      "mean_conf": 67.36,
-      "low_conf_lines": 5,
-      "lines": 24
+      "engine": "ara_std",
+      "mean_conf": 82.98,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 165,
       "engine": "ara_std",
-      "mean_conf": 68.82,
-      "low_conf_lines": 5,
-      "lines": 23
+      "mean_conf": 79.77,
+      "low_conf_lines": 2,
+      "lines": 22
     },
     {
       "page": 166,
-      "engine": "ara_best",
-      "mean_conf": 68.93,
-      "low_conf_lines": 4,
-      "lines": 28
+      "engine": "ara_std",
+      "mean_conf": 84.16,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 167,
       "engine": "ara_best",
-      "mean_conf": 63.41,
-      "low_conf_lines": 10,
-      "lines": 23
+      "mean_conf": 79.09,
+      "low_conf_lines": 2,
+      "lines": 22
     },
     {
       "page": 168,
       "engine": "ara_best",
-      "mean_conf": 74.99,
-      "low_conf_lines": 4,
-      "lines": 25
+      "mean_conf": 80.32,
+      "low_conf_lines": 3,
+      "lines": 23
     },
     {
       "page": 169,
-      "engine": "ara_std",
-      "mean_conf": 71.17,
-      "low_conf_lines": 3,
+      "engine": "ara_best",
+      "mean_conf": 82.2,
+      "low_conf_lines": 2,
       "lines": 23
     },
     {
       "page": 170,
-      "engine": "ara_best",
-      "mean_conf": 69.64,
-      "low_conf_lines": 3,
-      "lines": 25
+      "engine": "ara_std",
+      "mean_conf": 84.89,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 171,
-      "engine": "ara_std",
-      "mean_conf": 69.35,
-      "low_conf_lines": 6,
-      "lines": 26
+      "engine": "ara_best",
+      "mean_conf": 85.04,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 172,
-      "engine": "ara_std",
-      "mean_conf": 66.91,
-      "low_conf_lines": 5,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 80.17,
+      "low_conf_lines": 3,
+      "lines": 23
     },
     {
       "page": 173,
-      "engine": "ara_std",
-      "mean_conf": 72.37,
-      "low_conf_lines": 3,
+      "engine": "ara_best",
+      "mean_conf": 85.76,
+      "low_conf_lines": 0,
       "lines": 23
     },
     {
       "page": 174,
-      "engine": "ara_std",
-      "mean_conf": 75.02,
-      "low_conf_lines": 2,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 83.12,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 175,
       "engine": "ara_std",
-      "mean_conf": 75.41,
-      "low_conf_lines": 2,
-      "lines": 24
+      "mean_conf": 84.21,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 176,
       "engine": "ara_best",
-      "mean_conf": 74.98,
-      "low_conf_lines": 2,
-      "lines": 25
+      "mean_conf": 83.77,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 177,
-      "engine": "ara_std",
-      "mean_conf": 73.71,
-      "low_conf_lines": 3,
+      "engine": "ara_best",
+      "mean_conf": 82.03,
+      "low_conf_lines": 0,
       "lines": 23
     },
     {
       "page": 178,
-      "engine": "ara_std",
-      "mean_conf": 71.38,
-      "low_conf_lines": 4,
+      "engine": "ara_best",
+      "mean_conf": 81.7,
+      "low_conf_lines": 1,
       "lines": 21
     },
     {
       "page": 179,
       "engine": "ara_std",
-      "mean_conf": 68.72,
-      "low_conf_lines": 3,
-      "lines": 22
+      "mean_conf": 83.61,
+      "low_conf_lines": 1,
+      "lines": 23
     },
     {
       "page": 180,
-      "engine": "ara_best",
-      "mean_conf": 69.32,
-      "low_conf_lines": 4,
-      "lines": 27
+      "engine": "ara_std",
+      "mean_conf": 81.59,
+      "low_conf_lines": 2,
+      "lines": 23
     },
     {
       "page": 181,
-      "engine": "ara_std",
-      "mean_conf": 66.82,
-      "low_conf_lines": 5,
+      "engine": "ara_best",
+      "mean_conf": 82.2,
+      "low_conf_lines": 2,
       "lines": 24
     },
     {
       "page": 182,
-      "engine": "ara_std",
-      "mean_conf": 75.46,
-      "low_conf_lines": 3,
-      "lines": 23
+      "engine": "ara_best",
+      "mean_conf": 84.61,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 183,
-      "engine": "ara_std",
-      "mean_conf": 76.04,
-      "low_conf_lines": 1,
+      "engine": "ara_best",
+      "mean_conf": 85.55,
+      "low_conf_lines": 0,
       "lines": 23
     },
     {
       "page": 184,
       "engine": "ara_best",
-      "mean_conf": 80.16,
-      "low_conf_lines": 2,
-      "lines": 23
+      "mean_conf": 85.37,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 185,
       "engine": "ara_best",
-      "mean_conf": 69.99,
-      "low_conf_lines": 8,
-      "lines": 26
+      "mean_conf": 80.11,
+      "low_conf_lines": 2,
+      "lines": 23
     },
     {
       "page": 186,
       "engine": "ara_std",
-      "mean_conf": 74.01,
-      "low_conf_lines": 3,
-      "lines": 19
+      "mean_conf": 83.54,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 187,
       "engine": "ara_best",
-      "mean_conf": 73.64,
-      "low_conf_lines": 4,
-      "lines": 27
-    },
-    {
-      "page": 188,
-      "engine": "ara_best",
-      "mean_conf": 72.72,
-      "low_conf_lines": 3,
-      "lines": 25
-    },
-    {
-      "page": 189,
-      "engine": "ara_std",
-      "mean_conf": 63.46,
-      "low_conf_lines": 9,
+      "mean_conf": 80.36,
+      "low_conf_lines": 0,
       "lines": 24
     },
     {
-      "page": 190,
+      "page": 188,
       "engine": "ara_std",
-      "mean_conf": 80.26,
-      "low_conf_lines": 2,
-      "lines": 25
+      "mean_conf": 83.68,
+      "low_conf_lines": 0,
+      "lines": 24
+    },
+    {
+      "page": 189,
+      "engine": "ara_best",
+      "mean_conf": 83.29,
+      "low_conf_lines": 0,
+      "lines": 23
+    },
+    {
+      "page": 190,
+      "engine": "ara_best",
+      "mean_conf": 87.32,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 191,
-      "engine": "ara_std",
-      "mean_conf": 69.82,
-      "low_conf_lines": 4,
-      "lines": 19
+      "engine": "ara_best",
+      "mean_conf": 80.62,
+      "low_conf_lines": 1,
+      "lines": 23
     },
     {
       "page": 192,
       "engine": "ara_best",
-      "mean_conf": 78.42,
-      "low_conf_lines": 2,
-      "lines": 24
+      "mean_conf": 85.92,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 193,
       "engine": "ara_best",
-      "mean_conf": 67.24,
-      "low_conf_lines": 4,
-      "lines": 25
+      "mean_conf": 82.56,
+      "low_conf_lines": 1,
+      "lines": 24
     },
     {
       "page": 194,
-      "engine": "ara_best",
-      "mean_conf": 81.8,
-      "low_conf_lines": 1,
-      "lines": 25
+      "engine": "ara_std",
+      "mean_conf": 84.38,
+      "low_conf_lines": 0,
+      "lines": 21
     },
     {
       "page": 195,
-      "engine": "ara_best",
-      "mean_conf": 76.21,
-      "low_conf_lines": 2,
-      "lines": 23
+      "engine": "ara_std",
+      "mean_conf": 86.72,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 196,
       "engine": "ara_best",
-      "mean_conf": 79.55,
-      "low_conf_lines": 2,
-      "lines": 25
+      "mean_conf": 85.88,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 197,
       "engine": "ara_best",
-      "mean_conf": 70.17,
-      "low_conf_lines": 4,
-      "lines": 24
+      "mean_conf": 87.6,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 198,
-      "engine": "ara_best",
-      "mean_conf": 76.11,
-      "low_conf_lines": 3,
-      "lines": 25
-    },
-    {
-      "page": 199,
       "engine": "ara_std",
-      "mean_conf": 77.43,
-      "low_conf_lines": 4,
-      "lines": 23
-    },
-    {
-      "page": 200,
-      "engine": "ara_std",
-      "mean_conf": 71.63,
-      "low_conf_lines": 5,
-      "lines": 24
-    },
-    {
-      "page": 201,
-      "engine": "ara_best",
-      "mean_conf": 72.02,
-      "low_conf_lines": 3,
-      "lines": 24
-    },
-    {
-      "page": 202,
-      "engine": "ara_std",
-      "mean_conf": 75.97,
+      "mean_conf": 84.88,
       "low_conf_lines": 1,
       "lines": 24
     },
     {
+      "page": 199,
+      "engine": "ara_best",
+      "mean_conf": 80.45,
+      "low_conf_lines": 2,
+      "lines": 22
+    },
+    {
+      "page": 200,
+      "engine": "ara_std",
+      "mean_conf": 85.78,
+      "low_conf_lines": 0,
+      "lines": 23
+    },
+    {
+      "page": 201,
+      "engine": "ara_best",
+      "mean_conf": 83.31,
+      "low_conf_lines": 1,
+      "lines": 23
+    },
+    {
+      "page": 202,
+      "engine": "ara_std",
+      "mean_conf": 86.98,
+      "low_conf_lines": 0,
+      "lines": 23
+    },
+    {
       "page": 203,
       "engine": "ara_std",
-      "mean_conf": 70.73,
-      "low_conf_lines": 2,
+      "mean_conf": 82.81,
+      "low_conf_lines": 0,
       "lines": 21
     },
     {
       "page": 204,
       "engine": "ara_best",
-      "mean_conf": 73.34,
-      "low_conf_lines": 2,
-      "lines": 22
+      "mean_conf": 87.13,
+      "low_conf_lines": 0,
+      "lines": 21
     },
     {
       "page": 205,
-      "engine": "ara_std",
-      "mean_conf": 66.77,
-      "low_conf_lines": 7,
-      "lines": 21
+      "engine": "ara_best",
+      "mean_conf": 79.61,
+      "low_conf_lines": 2,
+      "lines": 22
     },
     {
       "page": 206,
       "engine": "ara_std",
-      "mean_conf": 46.79,
-      "low_conf_lines": 1,
-      "lines": 2
+      "mean_conf": null,
+      "low_conf_lines": 0,
+      "lines": 0
     },
     {
       "page": 207,
       "engine": "ara_std",
-      "mean_conf": 69.85,
-      "low_conf_lines": 3,
-      "lines": 21
+      "mean_conf": 83.65,
+      "low_conf_lines": 1,
+      "lines": 19
     },
     {
       "page": 208,
       "engine": "ara_std",
-      "mean_conf": 68.89,
-      "low_conf_lines": 2,
-      "lines": 21
+      "mean_conf": 82.02,
+      "low_conf_lines": 0,
+      "lines": 20
     },
     {
       "page": 209,
       "engine": "ara_std",
-      "mean_conf": 67.67,
-      "low_conf_lines": 5,
-      "lines": 25
+      "mean_conf": 85.44,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 210,
       "engine": "ara_best",
-      "mean_conf": 72.64,
-      "low_conf_lines": 2,
-      "lines": 25
+      "mean_conf": 84.33,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 211,
-      "engine": "ara_std",
-      "mean_conf": 79.65,
+      "engine": "ara_best",
+      "mean_conf": 82.06,
       "low_conf_lines": 1,
-      "lines": 25
+      "lines": 24
     },
     {
       "page": 212,
       "engine": "ara_std",
-      "mean_conf": 72.43,
-      "low_conf_lines": 1,
-      "lines": 22
+      "mean_conf": 83.51,
+      "low_conf_lines": 0,
+      "lines": 20
     },
     {
       "page": 213,
       "engine": "ara_std",
-      "mean_conf": 75.59,
-      "low_conf_lines": 3,
-      "lines": 26
+      "mean_conf": 82.28,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 214,
       "engine": "ara_best",
-      "mean_conf": 69.62,
-      "low_conf_lines": 2,
-      "lines": 25
+      "mean_conf": 84.99,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 215,
-      "engine": "ara_std",
-      "mean_conf": 75.77,
-      "low_conf_lines": 2,
+      "engine": "ara_best",
+      "mean_conf": 84.52,
+      "low_conf_lines": 0,
       "lines": 22
     },
     {
       "page": 216,
       "engine": "ara_std",
-      "mean_conf": 73.13,
-      "low_conf_lines": 2,
-      "lines": 24
+      "mean_conf": 86.11,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 217,
       "engine": "ara_best",
-      "mean_conf": 63.83,
-      "low_conf_lines": 9,
-      "lines": 23
+      "mean_conf": 81.79,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 218,
       "engine": "ara_best",
-      "mean_conf": 74.93,
-      "low_conf_lines": 3,
-      "lines": 24
+      "mean_conf": 84.48,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 219,
       "engine": "ara_best",
-      "mean_conf": 70.91,
-      "low_conf_lines": 2,
-      "lines": 23
+      "mean_conf": 82.6,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 220,
-      "engine": "ara_std",
-      "mean_conf": 72.99,
-      "low_conf_lines": 3,
+      "engine": "ara_best",
+      "mean_conf": 85.04,
+      "low_conf_lines": 0,
       "lines": 22
     },
     {
       "page": 221,
       "engine": "ara_std",
-      "mean_conf": 63.54,
-      "low_conf_lines": 7,
+      "mean_conf": 83.71,
+      "low_conf_lines": 1,
       "lines": 20
     },
     {
       "page": 222,
-      "engine": "ara_best",
-      "mean_conf": 71.62,
-      "low_conf_lines": 2,
-      "lines": 24
+      "engine": "ara_std",
+      "mean_conf": 84.34,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 223,
-      "engine": "ara_std",
-      "mean_conf": 74.22,
-      "low_conf_lines": 1,
-      "lines": 22
+      "engine": "ara_best",
+      "mean_conf": 86.49,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 224,
       "engine": "ara_std",
-      "mean_conf": 78.84,
-      "low_conf_lines": 1,
-      "lines": 25
+      "mean_conf": 81.63,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 225,
       "engine": "ara_std",
-      "mean_conf": 69.06,
-      "low_conf_lines": 4,
-      "lines": 25
+      "mean_conf": 85.01,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 226,
-      "engine": "ara_std",
-      "mean_conf": 77.45,
+      "engine": "ara_best",
+      "mean_conf": 85.79,
       "low_conf_lines": 0,
       "lines": 25
     },
     {
       "page": 227,
       "engine": "ara_best",
-      "mean_conf": 69.99,
-      "low_conf_lines": 4,
+      "mean_conf": 84.62,
+      "low_conf_lines": 0,
       "lines": 24
     },
     {
       "page": 228,
-      "engine": "ara_std",
-      "mean_conf": 69.89,
-      "low_conf_lines": 3,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 83.13,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 229,
-      "engine": "ara_std",
-      "mean_conf": 76.78,
+      "engine": "ara_best",
+      "mean_conf": 80.67,
       "low_conf_lines": 2,
       "lines": 23
     },
     {
       "page": 230,
-      "engine": "ara_std",
-      "mean_conf": 75.83,
-      "low_conf_lines": 2,
-      "lines": 22
+      "engine": "ara_best",
+      "mean_conf": 85.88,
+      "low_conf_lines": 1,
+      "lines": 24
     },
     {
       "page": 231,
-      "engine": "ara_std",
-      "mean_conf": 64.67,
-      "low_conf_lines": 7,
+      "engine": "ara_best",
+      "mean_conf": 75.13,
+      "low_conf_lines": 4,
       "lines": 25
     },
     {
       "page": 232,
       "engine": "ara_best",
-      "mean_conf": 71.89,
-      "low_conf_lines": 2,
-      "lines": 24
+      "mean_conf": 82.79,
+      "low_conf_lines": 1,
+      "lines": 23
     },
     {
       "page": 233,
-      "engine": "ara_std",
-      "mean_conf": 69.4,
-      "low_conf_lines": 5,
+      "engine": "ara_best",
+      "mean_conf": 81.92,
+      "low_conf_lines": 0,
       "lines": 23
     },
     {
       "page": 234,
       "engine": "ara_best",
-      "mean_conf": 70.19,
-      "low_conf_lines": 3,
-      "lines": 23
+      "mean_conf": 80.52,
+      "low_conf_lines": 2,
+      "lines": 22
     },
     {
       "page": 235,
-      "engine": "ara_std",
-      "mean_conf": 83.46,
-      "low_conf_lines": 1,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 84.74,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 236,
-      "engine": "ara_best",
-      "mean_conf": 77.89,
-      "low_conf_lines": 1,
-      "lines": 23
+      "engine": "ara_std",
+      "mean_conf": 84.41,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 237,
       "engine": "ara_std",
-      "mean_conf": 68.3,
-      "low_conf_lines": 5,
-      "lines": 24
+      "mean_conf": 83.27,
+      "low_conf_lines": 0,
+      "lines": 21
     },
     {
       "page": 238,
       "engine": "ara_std",
-      "mean_conf": 72.6,
-      "low_conf_lines": 4,
+      "mean_conf": 80.84,
+      "low_conf_lines": 1,
       "lines": 23
     },
     {
       "page": 239,
       "engine": "ara_best",
-      "mean_conf": 70.09,
-      "low_conf_lines": 4,
-      "lines": 24
+      "mean_conf": 80.76,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 240,
-      "engine": "ara_std",
-      "mean_conf": 69.97,
-      "low_conf_lines": 5,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 82.09,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 241,
-      "engine": "ara_std",
-      "mean_conf": 67.88,
-      "low_conf_lines": 3,
-      "lines": 21
+      "engine": "ara_best",
+      "mean_conf": 79.62,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 242,
       "engine": "ara_best",
-      "mean_conf": 73.35,
-      "low_conf_lines": 2,
-      "lines": 23
+      "mean_conf": 86.44,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 243,
       "engine": "ara_best",
-      "mean_conf": 71.29,
-      "low_conf_lines": 2,
-      "lines": 23
+      "mean_conf": 82.41,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 244,
-      "engine": "ara_best",
-      "mean_conf": 67.34,
-      "low_conf_lines": 5,
+      "engine": "ara_std",
+      "mean_conf": 84.05,
+      "low_conf_lines": 0,
       "lines": 22
     },
     {
       "page": 245,
-      "engine": "ara_std",
-      "mean_conf": 74.83,
-      "low_conf_lines": 3,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 83.53,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 246,
-      "engine": "ara_best",
-      "mean_conf": 75.48,
-      "low_conf_lines": 2,
+      "engine": "ara_std",
+      "mean_conf": 87.21,
+      "low_conf_lines": 0,
       "lines": 23
     },
     {
       "page": 247,
       "engine": "ara_std",
-      "mean_conf": 79.52,
-      "low_conf_lines": 1,
-      "lines": 24
+      "mean_conf": 84.1,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 248,
       "engine": "ara_best",
-      "mean_conf": 70.53,
-      "low_conf_lines": 4,
-      "lines": 23
+      "mean_conf": 85.48,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 249,
       "engine": "ara_std",
-      "mean_conf": 70.03,
-      "low_conf_lines": 4,
-      "lines": 18
+      "mean_conf": 84.34,
+      "low_conf_lines": 0,
+      "lines": 21
     },
     {
       "page": 250,
-      "engine": "ara_std",
-      "mean_conf": 72.62,
-      "low_conf_lines": 2,
-      "lines": 19
+      "engine": "ara_best",
+      "mean_conf": 81.68,
+      "low_conf_lines": 1,
+      "lines": 21
     },
     {
       "page": 251,
-      "engine": "ara_std",
-      "mean_conf": 70.59,
-      "low_conf_lines": 2,
-      "lines": 20
+      "engine": "ara_best",
+      "mean_conf": 82.67,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 252,
       "engine": "ara_std",
-      "mean_conf": 77.79,
-      "low_conf_lines": 2,
-      "lines": 24
+      "mean_conf": 87.82,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 253,
-      "engine": "ara_std",
-      "mean_conf": 65.43,
-      "low_conf_lines": 6,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 84.2,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 254,
-      "engine": "ara_std",
-      "mean_conf": 71.01,
-      "low_conf_lines": 4,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 79.53,
+      "low_conf_lines": 2,
+      "lines": 23
     },
     {
       "page": 255,
-      "engine": "ara_best",
-      "mean_conf": 71.7,
-      "low_conf_lines": 4,
-      "lines": 26
+      "engine": "ara_std",
+      "mean_conf": 80.94,
+      "low_conf_lines": 2,
+      "lines": 23
     },
     {
       "page": 256,
-      "engine": "ara_std",
-      "mean_conf": 72.72,
-      "low_conf_lines": 3,
+      "engine": "ara_best",
+      "mean_conf": 83.01,
+      "low_conf_lines": 0,
       "lines": 23
     },
     {
       "page": 257,
-      "engine": "ara_best",
-      "mean_conf": 63.59,
-      "low_conf_lines": 6,
-      "lines": 25
+      "engine": "ara_std",
+      "mean_conf": 83.22,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 258,
-      "engine": "ara_std",
-      "mean_conf": 72.26,
-      "low_conf_lines": 4,
-      "lines": 27
+      "engine": "ara_best",
+      "mean_conf": 80.07,
+      "low_conf_lines": 0,
+      "lines": 24
     },
     {
       "page": 259,
       "engine": "ara_std",
-      "mean_conf": 67.46,
-      "low_conf_lines": 7,
-      "lines": 23
+      "mean_conf": 85.74,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 260,
-      "engine": "ara_std",
-      "mean_conf": 71.86,
-      "low_conf_lines": 3,
+      "engine": "ara_best",
+      "mean_conf": 81.7,
+      "low_conf_lines": 1,
       "lines": 24
     },
     {
       "page": 261,
-      "engine": "ara_std",
-      "mean_conf": 73.69,
-      "low_conf_lines": 2,
+      "engine": "ara_best",
+      "mean_conf": 84.2,
+      "low_conf_lines": 0,
       "lines": 24
     },
     {
       "page": 262,
-      "engine": "ara_std",
-      "mean_conf": 70.31,
-      "low_conf_lines": 4,
+      "engine": "ara_best",
+      "mean_conf": 83.98,
+      "low_conf_lines": 1,
       "lines": 23
     },
     {
       "page": 263,
       "engine": "ara_best",
-      "mean_conf": 69.04,
-      "low_conf_lines": 4,
+      "mean_conf": 84.92,
+      "low_conf_lines": 0,
       "lines": 22
     },
     {
       "page": 264,
       "engine": "ara_best",
-      "mean_conf": 77.11,
-      "low_conf_lines": 4,
-      "lines": 26
+      "mean_conf": 83.09,
+      "low_conf_lines": 1,
+      "lines": 24
     },
     {
       "page": 265,
-      "engine": "ara_std",
-      "mean_conf": 68.27,
-      "low_conf_lines": 5,
-      "lines": 25
+      "engine": "ara_best",
+      "mean_conf": 81.95,
+      "low_conf_lines": 1,
+      "lines": 24
     },
     {
       "page": 266,
       "engine": "ara_best",
-      "mean_conf": 70.34,
-      "low_conf_lines": 4,
-      "lines": 25
+      "mean_conf": 80.44,
+      "low_conf_lines": 2,
+      "lines": 23
     },
     {
       "page": 267,
       "engine": "ara_best",
-      "mean_conf": 69.81,
-      "low_conf_lines": 5,
-      "lines": 24
+      "mean_conf": 84.95,
+      "low_conf_lines": 1,
+      "lines": 23
     },
     {
       "page": 268,
       "engine": "ara_best",
-      "mean_conf": 74.13,
-      "low_conf_lines": 3,
-      "lines": 24
+      "mean_conf": 87.07,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 269,
       "engine": "ara_best",
-      "mean_conf": 76.58,
-      "low_conf_lines": 2,
-      "lines": 25
+      "mean_conf": 85.36,
+      "low_conf_lines": 0,
+      "lines": 23
     },
     {
       "page": 270,
-      "engine": "ara_std",
-      "mean_conf": 76.35,
-      "low_conf_lines": 1,
+      "engine": "ara_best",
+      "mean_conf": 84.27,
+      "low_conf_lines": 0,
       "lines": 21
     },
     {
       "page": 271,
-      "engine": "ara_best",
-      "mean_conf": 70.49,
-      "low_conf_lines": 5,
-      "lines": 25
+      "engine": "ara_std",
+      "mean_conf": 82.36,
+      "low_conf_lines": 0,
+      "lines": 22
     },
     {
       "page": 272,
-      "engine": "ara_std",
-      "mean_conf": 70.26,
-      "low_conf_lines": 3,
+      "engine": "ara_best",
+      "mean_conf": 83.21,
+      "low_conf_lines": 0,
       "lines": 22
     },
     {
       "page": 273,
-      "engine": "ara_std",
-      "mean_conf": 72.6,
-      "low_conf_lines": 3,
-      "lines": 20
+      "engine": "ara_best",
+      "mean_conf": 79.89,
+      "low_conf_lines": 2,
+      "lines": 21
     },
     {
       "page": 274,
-      "engine": "ara_best",
-      "mean_conf": 62.89,
-      "low_conf_lines": 6,
-      "lines": 20
+      "engine": "ara_std",
+      "mean_conf": 79.43,
+      "low_conf_lines": 1,
+      "lines": 18
     },
     {
       "page": 275,
-      "engine": "ara_best",
-      "mean_conf": 59.65,
-      "low_conf_lines": 9,
-      "lines": 22
+      "engine": "ara_std",
+      "mean_conf": 73.44,
+      "low_conf_lines": 2,
+      "lines": 20
     },
     {
       "page": 276,
       "engine": "ara_best",
-      "mean_conf": 61.91,
-      "low_conf_lines": 7,
-      "lines": 19
+      "mean_conf": 76.08,
+      "low_conf_lines": 1,
+      "lines": 18
     },
     {
       "page": 277,
       "engine": "ara_std",
-      "mean_conf": 58.96,
-      "low_conf_lines": 9,
-      "lines": 22
+      "mean_conf": 79.95,
+      "low_conf_lines": 1,
+      "lines": 20
     },
     {
       "page": 278,
-      "engine": "ara_best",
-      "mean_conf": 62.83,
-      "low_conf_lines": 7,
+      "engine": "ara_std",
+      "mean_conf": 74.64,
+      "low_conf_lines": 2,
       "lines": 23
     },
     {
       "page": 279,
       "engine": "ara_std",
-      "mean_conf": 63.84,
-      "low_conf_lines": 7,
-      "lines": 22
+      "mean_conf": 77.22,
+      "low_conf_lines": 2,
+      "lines": 21
     },
     {
       "page": 280,
       "engine": "ara_std",
-      "mean_conf": 73.43,
-      "low_conf_lines": 3,
+      "mean_conf": 77.33,
+      "low_conf_lines": 1,
       "lines": 21
     },
     {
       "page": 281,
       "engine": "ara_best",
-      "mean_conf": 59.49,
-      "low_conf_lines": 11,
-      "lines": 22
+      "mean_conf": 73.38,
+      "low_conf_lines": 1,
+      "lines": 21
     },
     {
       "page": 282,
-      "engine": "ara_best",
-      "mean_conf": 70.88,
-      "low_conf_lines": 11,
-      "lines": 49
+      "engine": "ara_std",
+      "mean_conf": 73.1,
+      "low_conf_lines": 3,
+      "lines": 23
     },
     {
       "page": 283,
-      "engine": "ara_std",
-      "mean_conf": 60.76,
-      "low_conf_lines": 10,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 73.39,
+      "low_conf_lines": 1,
+      "lines": 22
     },
     {
       "page": 284,
       "engine": "ara_std",
-      "mean_conf": 63.36,
-      "low_conf_lines": 8,
-      "lines": 25
+      "mean_conf": 74.09,
+      "low_conf_lines": 1,
+      "lines": 23
     },
     {
       "page": 285,
-      "engine": "ara_std",
-      "mean_conf": 57.87,
-      "low_conf_lines": 4,
-      "lines": 11
+      "engine": "ara_best",
+      "mean_conf": 76.06,
+      "low_conf_lines": 0,
+      "lines": 9
     },
     {
       "page": 286,
-      "engine": "ara_std",
-      "mean_conf": 73.81,
-      "low_conf_lines": 4,
-      "lines": 24
+      "engine": "ara_best",
+      "mean_conf": 84.97,
+      "low_conf_lines": 0,
+      "lines": 21
     },
     {
       "page": 287,
       "engine": "ara_best",
-      "mean_conf": 59.95,
-      "low_conf_lines": 5,
-      "lines": 13
+      "mean_conf": 82.07,
+      "low_conf_lines": 0,
+      "lines": 10
     },
     {
       "page": 288,
-      "engine": "ara_best",
-      "mean_conf": 39.33,
-      "low_conf_lines": 2,
-      "lines": 2
+      "engine": "ara_std",
+      "mean_conf": null,
+      "low_conf_lines": 0,
+      "lines": 0
     },
     {
       "page": 289,
       "engine": "ara_std",
-      "mean_conf": 69.87,
-      "low_conf_lines": 6,
-      "lines": 24
+      "mean_conf": 57.41,
+      "low_conf_lines": 10,
+      "lines": 16
     },
     {
       "page": 290,
       "engine": "ara_best",
-      "mean_conf": 62.7,
-      "low_conf_lines": 8,
-      "lines": 26
+      "mean_conf": 48.67,
+      "low_conf_lines": 16,
+      "lines": 25
     },
     {
       "page": 291,
       "engine": "ara_std",
-      "mean_conf": 84.41,
-      "low_conf_lines": 2,
-      "lines": 21
+      "mean_conf": 45.68,
+      "low_conf_lines": 17,
+      "lines": 20
     }
   ]
 }

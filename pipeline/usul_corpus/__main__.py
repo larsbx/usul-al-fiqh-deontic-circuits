@@ -17,7 +17,7 @@ from pathlib import Path
 
 from .fetch import fetch
 from .hudud import extract_hudud
-from .ocr import MODELS, ensure_model, ocr_pdf, page_markdown, quality, tesseract_version
+from .ocr import MODELS, OcrOptions, ocr_pdf, page_markdown, quality, tesseract_version
 from .openiti import parse_markdown
 from .records import hadd_record, qaida_records, sharh_record, unit_tags
 from .segment import (
@@ -71,35 +71,30 @@ def _page_range(spec: str) -> range:
     return range(first, last + 1)
 
 
-def _verse_range(cfg: dict) -> range | None:
-    if not cfg.get("verses"):
-        return None
-    first, last = cfg.get("verse_pages", [1, 10**6])
-    return range(first, last + 1)
-
-
 def cmd_ocr(args: argparse.Namespace) -> int:
     """PDF witness → <id>.txt (mARkdown) in the cache + corpus/ocr/<id>.json (metrics only)."""
     lock = _load(CORPUS / "lock.json").get("witnesses", {})
-    for _, w in _pdf_witnesses(args.work):
+    for work, w in _pdf_witnesses(args.work):
         cfg = w["ocr"]
         pdf = CACHE / f"{w['id']}.pdf"
         if not pdf.exists():
             print(f"skip {w['id']}: run fetch first", file=sys.stderr)
             continue
-        engines = {name: ensure_model(name, ROOT / ".cache" / "tessdata") for name in cfg["engines"]}
+        seg = w.get("segmenter", work.get("segmenter", {}))
+        opts = OcrOptions.from_config(cfg, anchor_step=seg.get("anchor_step"))
         pages = _page_range(args.pages) if args.pages else None
-        chosen, passes = ocr_pdf(pdf, ROOT / ".cache" / "ocr" / w["id"], engines,
-                                 cfg["dpi"], cfg["psm"], pages, args.jobs, _verse_range(cfg), cfg.get("frame", False),
-                                 cfg.get("denoise"))
+        chosen, passes, numbers_report = ocr_pdf(pdf, ROOT / ".cache" / "ocr" / w["id"], ROOT / ".cache" / "tessdata",
+                                 opts, pages, args.jobs)
+        engines = opts.engines
         text = "#META#Header#End#\n" + "".join(page_markdown(p) for p in chosen)
         (CACHE / f"{w['id']}.txt").write_text(text, encoding="utf-8")
         by_engine = {e: quality(tuple(l for p in passes if p.engine == e for l in p.lines)) for e in engines}
         _dump(CORPUS / "ocr" / f"{w['id']}.json", {
             "witness": w["id"],
             "engine": tesseract_version(),
-            "models": {e: MODELS[e][1] for e in engines},
-            "dpi": cfg["dpi"], "psm": cfg["psm"], "verses": cfg.get("verses", False), "frame": cfg.get("frame", False), "denoise": cfg.get("denoise"),
+            "models": {e: MODELS[e][1] for e in (*engines, *(["arabic_script"] if opts.numbers else []))},
+            "config": cfg,
+            "numbers": numbers_report,
             "summary": {**quality(tuple(l for p in chosen for l in p.lines)),  # chosen pages
                         "pages": len(chosen),
                         "chosen": {e: sum(p.engine == e for p in chosen) for e in engines},
@@ -117,7 +112,7 @@ def cmd_ocr(args: argparse.Namespace) -> int:
 SEGMENTERS = {
     "headed": lambda text, seg: segment_headed(parse_markdown(text), seg["marker"]),
     "lines": lambda text, seg: segment_lines(text, seg["marker"]),
-    "numbered": lambda text, seg: segment_numbered(text),
+    "numbered": lambda text, seg: segment_numbered(text, seg.get("anchor_step")),
     "verse_block": lambda text, seg: segment_verse_block(text),
 }
 

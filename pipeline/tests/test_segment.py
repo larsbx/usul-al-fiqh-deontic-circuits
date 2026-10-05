@@ -165,3 +165,13 @@ def test_segment_numbered_accepts_tatweel_as_separator():
     text = "# ١ ـ القاعدة الأولى نصها\n# شرح\n# ٢ ـ الثانية نصها\n# ٣ - الثالثة نصها"
     assert [(u.number, u.heading) for u in segment_numbered(text)] == [
         (1, "القاعدة الأولى نصها"), (2, "الثانية نصها"), (3, "الثالثة نصها")]
+
+
+def test_four_digit_numbers_match_and_chain_across_1000():
+    from usul_corpus.arabic import normalize
+    from usul_corpus.segment import _VERSE, _repair
+
+    m = _VERSE.match("١٠١٥ - وأما فوائد الصلاة")
+    assert m and normalize(m.group(1)) == "1015"
+    assert _repair("1000", 999, anchor_step=30) == 1000   # full four-digit read anchors
+    assert _repair("000", 999) == 1000                     # «١» lost: suffix repair still lands on 1000

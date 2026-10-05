@@ -312,12 +312,55 @@
             "dpi": 300,
             "psm": 4,
             "frame": true,
-            "denoise": "median3"
+            "denoise": "median3",
+            "numbers": true,
+            "number_exemplars": [
+              {
+                "page": 29,
+                "numbers": [
+                  100,
+                  101,
+                  102,
+                  103,
+                  104
+                ]
+              },
+              {
+                "page": 30,
+                "numbers": [
+                  105,
+                  106,
+                  107,
+                  108,
+                  109
+                ]
+              },
+              {
+                "page": 207,
+                "numbers": [
+                  824,
+                  825,
+                  826,
+                  827,
+                  828
+                ]
+              }
+            ]
           },
-          "quality": "ocr_unreviewed"
+          "quality": "ocr_unreviewed",
+          "ocr_note": "number_exemplars: printed paragraph numbers read by eye from the page images (PDF pp. 29, 30, 207); together they contain every digit 0–9."
         }
       ],
-      "status": "located_ocr"
+      "status": "located_ocr",
+      "segmenter": {
+        "kind": "numbered",
+        "anchor_step": 30
+      },
+      "expected_units": {
+        "unit": "numbered paragraph (qāʿida/fāʾida)",
+        "count": 1015,
+        "claim_source": "last printed number ١٠١٥ (PDF p. 272); part two (Ibn al-Qayyim) opens at ٨٢٤ (PDF p. 207), after the editor's note that part one gives «more than eight hundred» principles from Ibn Taymiyya (PDF p. 205)"
+      }
     },
     {
       "id": "sadi.risala_latifa",

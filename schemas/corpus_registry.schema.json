@@ -36,6 +36,7 @@
           "type": "object",
           "required": ["kind"],
           "properties": {"kind": {"enum": ["headed", "lines", "numbered", "verse_block", "hudud_brackets"]}, "marker": {"type": "string"},
+                         "anchor_step": {"type": "integer", "minimum": 1, "description": "numbered: full-length reads may bridge gaps up to this size"},
                          "index": {"type": "boolean", "description": "also read the closing index «marker <ordinal>: statement»"}}
         },
         "expected_units": {
@@ -56,16 +57,21 @@
         "quality": {"enum": ["ocr_unreviewed", "pdf_only"]},
         "fetch": {"enum": ["default", "on_demand"]},
         "segmenter": {"type": "object", "description": "overrides the work's segmenter for this witness"},
+        "ocr_note": {"type": "string"},
         "format": {"enum": ["text", "pdf"]},
         "ocr": {
           "type": "object",
           "required": ["engines", "dpi", "psm"],
           "additionalProperties": false,
           "properties": {
-            "engines": {"type": "array", "minItems": 1, "items": {"enum": ["ara_std", "ara_best"]}},
+            "engines": {"type": "array", "minItems": 1, "items": {"enum": ["ara_std", "ara_best", "arabic_script"]}},
             "dpi": {"type": "integer", "minimum": 150},
             "psm": {"type": "integer", "minimum": 0, "maximum": 13},
             "verses": {"type": "boolean", "description": "detect verse lines and OCR each hemistich (verses.py)"},
+            "number_exemplars": {"type": "array", "items": {"type": "object", "required": ["page", "numbers"],
+                                 "properties": {"page": {"type": "integer"}, "numbers": {"type": "array", "items": {"type": "integer"}}}},
+                                 "description": "pages whose printed numbers were verified by eye: labels for the digit templates"},
+            "numbers": {"type": "boolean", "description": "re-read paragraph numbers from their crops with the arabic_script model (numbers.py)"},
             "denoise": {"enum": ["median3"], "description": "median filter against scanner speckle before OCR"},
             "frame": {"type": "boolean", "description": "crop each page inside its decorative border before OCR (ocr.frame_box)"},
             "verse_pages": {"type": "array", "items": {"type": "integer", "minimum": 1}, "minItems": 2, "maxItems": 2,

@@ -107,28 +107,64 @@ Resolve = Callable[[int], "tuple[int, int, bool] | None"]
 Link = tuple[int, int, int, bool]  # (line position, first, last, corrected)
 
 
+CHAIN_WINDOW = 100  # a chain step may skip at most this many candidate lines
+
+
+@dataclass(frozen=True)
+class _State:
+    """A chain ending at one (candidate, number) state, kept as aggregates plus a parent pointer."""
+    length: int
+    exact: int
+    start: int
+    link: Link
+    parent: "_State | None"
+
+
 def _chain(cands: list[tuple[int, Resolve]], min_lines: int, max_step: int, late_start: bool = True) -> list[Link]:
-    """Longest numbering chain over candidates in document order.
+    """Best numbering chain over candidates in document order.
 
     Each step advances by 1..max_step and spans at least ``min_lines`` lines
-    (so a table of contents, one heading per line, cannot form a chain).
-    Ties go to the tighter chain (smaller final number), then to the later start
-    (a table of contents precedes the body it lists) — or, with ``late_start=False``,
-    to the earlier one (a first quotation opens the commentary; re-quotes follow).
-    """
-    def tightness(chain: list[Link]) -> tuple[int, int, int]:
-        return (len(chain), -chain[-1][2], chain[0][0] if late_start else -chain[0][0]) if chain else (0, 0, 0)
+    (so a table of contents, one heading per line, cannot form a chain). Score:
+    length, with exact reads (no repair) counted double. Ties go to the tighter
+    chain (smaller final number), then to the later start (a table of contents
+    precedes the body it lists) — or, with ``late_start=False``, to the earlier one
+    (a first quotation opens the commentary; re-quotes follow).
 
-    best: list[list[Link]] = []
-    for pos, resolve in cands:
+    The DP keeps the best chain per (candidate, number) state: a line's number
+    depends on the path, and a shifted path that leads at one line must not
+    evict the path that later agrees with the exact reads.
+    """
+    def key(st: _State) -> tuple[int, int, int]:
+        return (st.length + st.exact, -st.link[2], st.start if late_start else -st.start)
+
+    def step(parent: _State | None, pos: int, r: tuple[int, int, bool]) -> _State:
+        link = (pos, *r)
+        return _State((parent.length if parent else 0) + 1, (parent.exact if parent else 0) + (not r[2]),
+                      parent.start if parent else pos, link, parent)
+
+    layers: list[dict[int, _State]] = []   # per candidate: last number → best state
+    for k, (pos, resolve) in enumerate(cands):
+        layer: dict[int, _State] = {}
+
+        def offer(st: _State) -> None:
+            if st.link[2] not in layer or key(st) > key(layer[st.link[2]]):
+                layer[st.link[2]] = st
+
         start = resolve(0)
-        options = [[(pos, *start)]] if start and start[0] <= max_step else []
-        for chain in (c for c in best if c and pos - c[-1][0] >= min_lines):
-            nxt = resolve(chain[-1][2])
-            if nxt and 0 < nxt[0] - chain[-1][2] <= max_step:
-                options.append(chain + [(pos, *nxt)])
-        best.append(max(options, key=tightness, default=[]))
-    return max(best, key=tightness, default=[])
+        if start and start[0] <= max_step:
+            offer(step(None, pos, start))
+        for prev in layers[max(0, k - CHAIN_WINDOW):k]:
+            for st in prev.values():
+                if pos - st.link[0] >= min_lines and (nxt := resolve(st.link[2])) and 0 < nxt[0] - st.link[2] <= max_step:
+                    offer(step(st, pos, nxt))
+        layers.append(layer)
+
+    best = max((st for layer in layers for st in layer.values()), key=key, default=None)
+    chain: list[Link] = []
+    while best:
+        chain.append(best.link)
+        best = best.parent
+    return chain[::-1]
 
 
 def _units(lines: list[tuple[str, Page | None]], chain: list[Link], heading: Callable[[str], str],
@@ -191,29 +227,52 @@ def segment_index(text: str, marker: str) -> tuple[Unit, ...]:
     )
 
 
-_VERSE = re.compile(r"^([0-9٠-٩۰-۹]{1,3})\s*[-–—.۔ـ]\s*(\S.*)$")
+_VERSE = re.compile(r"^([0-9٠-٩۰-۹]{1,4})\s*[-–—.۔ـ]\s*(\S.*)$")
 
 
-def _repair(obs: str, prev: int) -> int:
-    """Smallest n > prev whose trailing digits equal the observed ones (OCR drops leading digits)."""
-    m, o = 10 ** len(obs), int(obs)
-    return prev + ((o - prev) % m or m)
+def _repair(obs: str, prev: int, max_step: int = VERSE_STEP, anchor_step: int | None = None) -> int:
+    """Smallest n > prev whose trailing digits match the observed ones (OCR drops digits).
+
+    Longer suffixes are tried first; the first that lands within ``max_step`` wins,
+    so «١٩» read for ١٠٩ (its ٠ lost) resolves to 109 after 108, not to 119.
+    A full-length read (as many digits as prev + 1) within ``anchor_step`` is taken
+    as-is: it re-anchors the chain after a run of numbers lost to OCR.
+    """
+    if anchor_step and len(obs) >= len(str(prev + 1)) and prev < int(obs) <= prev + anchor_step:
+        return int(obs)
+
+    def nxt(suffix: str) -> int:
+        m = 10 ** len(suffix)
+        return prev + ((int(suffix) - prev) % m or m)
+
+    fits = [n for k in range(len(obs), 0, -1) if (n := nxt(obs[-k:])) - prev <= max_step]
+    return fits[0] if fits else nxt(obs)
 
 
-def segment_numbered(text: str) -> tuple[Unit, ...]:
-    """Numbered verses («١ - …», «۹۔ …») as the longest plausible numbering chain.
+def number_chain(reads: list[str], anchor_step: int | None = None) -> list[tuple[int, int, bool]]:
+    """The longest plausible numbering over printed-number reads in document order:
+    (index into ``reads``, number, repaired?) — see ``_repair`` for digit repair and anchors."""
+    def resolve(obs: str) -> Resolve:
+        def at(prev: int) -> tuple[int, int, bool] | None:
+            n = _repair(obs, prev, VERSE_STEP, anchor_step)
+            anchored = anchor_step and n == int(obs) and len(obs) >= len(str(prev + 1))
+            return (n, n, n != int(obs)) if n - prev <= VERSE_STEP or anchored else None
+        return at
 
-    Footnotes «(١) …» never match; stray numbers fall outside the chain; lost
-    leading digits are repaired and flagged ``ocr_corrected``.
+    chain = _chain([(i, resolve(r)) for i, r in enumerate(reads)], min_lines=1,
+                   max_step=max(VERSE_STEP, anchor_step or 0))
+    return [(i, n, corrected) for i, n, _, corrected in chain]
+
+
+def segment_numbered(text: str, anchor_step: int | None = None) -> tuple[Unit, ...]:
+    """Numbered verses or paragraphs («١ - …», «۹۔ …», «١٠٥ ـ …») as the longest
+    plausible numbering chain. Footnotes «(١) …» never match; stray numbers fall
+    outside the chain; lost digits are repaired and flagged ``ocr_corrected``.
     """
     lines = _paged_lines(text)
-
-    def resolve(obs: str) -> Resolve:
-        return lambda prev: (n := _repair(obs, prev), n, n != int(obs))
-
-    cands = [(i, resolve(normalize(m.group(1)))) for i, (line, _) in enumerate(lines) if (m := _VERSE.match(line))]
-    return _units(lines, _chain(cands, min_lines=1, max_step=VERSE_STEP),
-                  lambda l: _VERSE.match(l).group(2).strip(), furu=False)
+    starts = [(i, normalize(m.group(1))) for i, (line, _) in enumerate(lines) if (m := _VERSE.match(line))]
+    chain = [(starts[k][0], n, n, c) for k, n, c in number_chain([r for _, r in starts], anchor_step)]
+    return _units(lines, chain, lambda l: _VERSE.match(l).group(2).strip(), furu=False)
 
 
 def consensus_numbering(witnesses: dict[str, tuple[Unit, ...]], expected: int | None) -> dict:

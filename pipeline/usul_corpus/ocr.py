@@ -31,6 +31,11 @@ MODELS = {
         "https://raw.githubusercontent.com/tesseract-ocr/tessdata_best/main/ara.traineddata",
         "ab9d157d8e38ca00e7e39c7d5363a5239e053f5b0dbdb3167dde9d8124335896",
     ),
+    # multi-font Arabic-script model; used only to read printed numbers (numbers.py)
+    "arabic_script": (
+        "https://raw.githubusercontent.com/tesseract-ocr/tessdata_best/main/script/Arabic.traineddata",
+        "a80454f72df35c6f52550551dd69b8521ea6a62d834396d1c7dce4c35493902e",
+    ),
 }
 
 
@@ -123,13 +128,13 @@ def frame_box(density: list[float], zone: float = FRAME_ZONE, min_density: float
     """
     n = len(density)
     dense = [d >= min_density for d in density]
-    bands = [(a, b) for a, b in _bridge(runs(dense), max_dip) if b - a >= min_run]
+    bands = [(a, b) for a, b in bridge(runs(dense), max_dip) if b - a >= min_run]
     lead = [b for a, b in bands if b <= zone * n]
     trail = [a for a, b in bands if a >= (1 - zone) * n]
     return (max(lead) + pad if lead else 0), (min(trail) - pad if trail else n)
 
 
-def _bridge(spans: list[tuple[int, int]], max_gap: int) -> list[tuple[int, int]]:
+def bridge(spans: list[tuple[int, int]], max_gap: int) -> list[tuple[int, int]]:
     """Merge consecutive spans separated by at most ``max_gap``."""
     merged: list[tuple[int, int]] = []
     for a, b in spans:
@@ -240,40 +245,90 @@ def pdf_pages(pdf: Path) -> int:
     return int(re.search(r"^Pages:\s+(\d+)", info, re.M).group(1))
 
 
-def ocr_pdf(
-    pdf: Path, work: Path, engines: dict[str, Path], dpi: int = 300, psm: int = 4,
-    pages: range | None = None, jobs: int = os.cpu_count() or 1, verses: range | None = None,
-    frame: bool = False, denoise: str | None = None,
-) -> tuple[tuple[PageOCR, ...], tuple[PageOCR, ...]]:
-    """OCR every page with every engine; return (chosen pages, all passes).
+@dataclass(frozen=True)
+class OcrOptions:
+    """A witness's ``ocr`` block from the registry (see corpus_registry.schema.json)."""
+    engines: tuple[str, ...]
+    dpi: int = 300
+    psm: int = 4
+    verse_pages: range | None = None   # pages whose verse lines are re-read per hemistich
+    frame: bool = False                # crop inside a decorative border
+    denoise: str | None = None         # "median3"
+    numbers: bool = False              # re-read paragraph numbers (numbers.py)
+    number_exemplars: tuple = ()       # pages whose printed numbers were verified by eye
+    anchor_step: int | None = None     # numbering chain: full reads may bridge gaps up to this
 
-    On pages in ``verses``, detected verse lines are re-read per hemistich and
-    replace the page-level lines they overlap (see ``verses.py``). ``frame`` and
-    ``denoise`` select the image preparation (see ``prepare``).
+    @classmethod
+    def from_config(cls, cfg: dict, anchor_step: int | None = None) -> "OcrOptions":
+        first, last = cfg.get("verse_pages", [1, 10**6])
+        return cls(
+            tuple(cfg["engines"]), cfg["dpi"], cfg["psm"],
+            range(first, last + 1) if cfg.get("verses") else None,
+            cfg.get("frame", False), cfg.get("denoise"), cfg.get("numbers", False),
+            tuple(cfg.get("number_exemplars", ())), anchor_step,
+        )
+
+
+def ocr_pdf(
+    pdf: Path, work: Path, tessdata: Path, opts: OcrOptions,
+    pages: range | None = None, jobs: int = os.cpu_count() or 1,
+) -> tuple[tuple[PageOCR, ...], tuple[PageOCR, ...], dict]:
+    """OCR every page with every engine; return (chosen pages, all passes, number report).
+
+    Two optional repair passes follow page choice: verse lines re-read per
+    hemistich (``verses.py``) and paragraph numbers re-read from crops right of
+    their dash (``numbers.py``) — by templates fitted on the exemplar pages, or by
+    tesseract when none are configured. Image preparation is ``prepare``.
     """
+    from .numbers import NUMBER_MODEL, exemplar_templates, number_crops, renumber, self_train, tesseract_read
     from .verses import merge_verses, ocr_verses
 
+    engines = {name: ensure_model(name, tessdata) for name in opts.engines}
+
+    def image(page: int) -> Path:
+        return prepare(render(pdf, page, work / "png", opts.dpi), opts.frame, opts.denoise)
+
     def one(page: int) -> tuple[PageOCR, ...]:
-        png = render(pdf, page, work / "png", dpi)
-        png = prepare(png, frame, denoise)
+        png = image(page)
         return tuple(
             PageOCR(page, name, tuple(
                 Line(t, l.conf, l.top, l.bottom)
-                for l in parse_tsv(run_tesseract(png, td, psm, work / "tsv" / name))
+                for l in parse_tsv(run_tesseract(png, td, opts.psm, work / "tsv" / name))
                 if (t := clean_line(l.text)) and not is_noise(t)
             ))
             for name, td in engines.items()
         )
 
-    def with_verses(page: PageOCR) -> PageOCR:
-        if page.page not in verses:
-            return page
-        found = ocr_verses(render(pdf, page.page, work / "png", dpi), engines, work)
-        return PageOCR(page.page, page.engine, merge_verses(page.lines, found)) if found else page
+    def with_verses(p: PageOCR) -> PageOCR:
+        if not (opts.verse_pages and p.page in opts.verse_pages):
+            return p
+        return PageOCR(p.page, p.engine, merge_verses(p.lines, ocr_verses(image(p.page), engines, work)))
 
+    report: dict = {}
     with ThreadPoolExecutor(max_workers=jobs) as pool:
         passes = tuple(pool.map(one, pages or range(1, pdf_pages(pdf) + 1)))
-        chosen = tuple(choose(p) for p in passes)
-        if verses:
-            chosen = tuple(pool.map(with_verses, chosen))
-    return strip_running_heads(chosen), tuple(x for p in passes for x in p)
+        chosen = tuple(pool.map(with_verses, (choose(p) for p in passes)))
+        passes_by_page = {p[0].page: p for p in passes}
+        if opts.numbers:
+            alternatives = {x.page: tuple(l for y in passes_by_page[x.page] if y.engine != x.engine for l in y.lines)
+                            for x in chosen}
+            found = dict(zip((p.page for p in chosen), pool.map(
+                lambda p: number_crops(image(p.page), p.lines, alternatives[p.page], work), chosen)))
+            chosen = tuple(PageOCR(p.page, p.engine, found[p.page][0]) for p in chosen)
+            crops = {page: cs for page, (_, cs) in found.items()}
+            exemplars, report = exemplar_templates(crops, list(opts.number_exemplars))
+            ordered = [(page, i, c) for page in sorted(crops) for i, c in crops[page]]
+            if exemplars:
+                digits, history = self_train([c for *_, c in ordered], exemplars, opts.anchor_step)
+                report |= {"reader": "templates", "self_training": history}
+            else:
+                tess = ensure_model(NUMBER_MODEL, tessdata)
+                digits = list(pool.map(lambda o: tesseract_read(o[2], tess, work), ordered))
+                report |= {"reader": "tesseract"}
+            reads: dict[int, dict[int, str]] = {}
+            for (page, i, _), d in zip(ordered, digits):
+                if d:
+                    reads.setdefault(page, {})[i] = d
+            chosen = tuple(PageOCR(p.page, p.engine, renumber(p.lines, reads.get(p.page, {}))) for p in chosen)
+            report |= {"numbered_lines": len(ordered)}
+    return strip_running_heads(chosen), tuple(x for p in passes for x in p), report
