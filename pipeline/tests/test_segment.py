@@ -51,3 +51,52 @@ def test_audit_numbering():
         "unparsed": 1,
         "matches_expected": False,
     }
+
+
+def test_consensus_numbering_unions_witnesses():
+    from usul_corpus.segment import consensus_numbering
+
+    a = tuple(Unit(n, "", "", None, (), False) for n in (1, 2, 4))
+    b = tuple(Unit(n, "", "", None, (), False) for n in (1, 3, None))
+    c = consensus_numbering({"djvu": a, "tess": b}, expected=5)
+    assert c == {
+        "expected": 5,
+        "found_by_any": [1, 2, 3, 4],
+        "missing_in_all": [5],
+        "found_by": {"1": ["djvu", "tess"], "2": ["djvu"], "3": ["tess"], "4": ["djvu"]},
+        "complete": False,
+    }
+
+
+def test_segment_numbered_keeps_longest_increasing_verse_run():
+    from usul_corpus.segment import segment_numbered
+
+    text = "\n".join([
+        "# مقدمة المحقق ٣ - كلام",            # stray number inside prose: not line-initial
+        "# ١ - الحمد لله المعيد المبدي",
+        "# شرح البيت الأول",
+        "# (١) أخرجه البخاري",                 # parenthesised footnote numbers are excluded
+        "PageV01P010",
+        "# ۲۔ وبعد فالعلم بحور زاخرة",          # Persian digits and the Urdu full stop
+        "# ٧ . حاشية رقمية شاردة",             # out-of-run number dropped by the LIS
+        "# 3. والأصل في القيد احتراز",
+        "# الشرح",
+        "PageV01P011",
+    ])
+    units = segment_numbered(text)
+    assert [(u.number, u.page) for u in units] == [(1, (1, 10)), (2, (1, 11)), (3, (1, 11))]
+    assert units[0].heading == "الحمد لله المعيد المبدي"
+    assert "شرح البيت الأول" in units[0].statement
+
+
+def test_segment_numbered_repairs_lost_tens_digits():
+    from usul_corpus.segment import segment_numbered
+
+    digits = "١٢٣٤٥٦٧٨٩٠١٢"                       # OCR kept only the last digit of 10, 11, 12
+    lines = [f"# {d} - بيت رقم {k}" for k, d in enumerate(digits, 1)]
+    lines.insert(6, "# ٥٠ - رقم شارد")               # far out of sequence: dropped
+    lines.insert(3, "# (٤) حاشية")                   # footnote: never a candidate
+    units = segment_numbered("\n".join(lines))
+    assert [u.number for u in units] == list(range(1, 13))
+    assert [u.ocr_corrected for u in units] == [False] * 9 + [True] * 3
+    assert units[9].heading == "بيت رقم 10"

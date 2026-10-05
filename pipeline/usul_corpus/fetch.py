@@ -87,7 +87,7 @@ def _shamela(w: dict, max_pages: int | None) -> bytes:
 
 def fetch(w: dict, cache: Path, max_pages: int | None = None, refresh: bool = False) -> dict:
     """Fetch one witness into ``cache`` and return its lock entry."""
-    path = cache / f"{w['id']}.txt"
+    path = cache / f"{w['id']}.{'pdf' if w.get('format') == 'pdf' else 'txt'}"
     if refresh or not path.exists():
         data = _shamela(w, max_pages) if w["kind"] == "shamela" else _get(witness_url(w))
         path.parent.mkdir(parents=True, exist_ok=True)

@@ -4,6 +4,7 @@
     python -m usul_corpus build
     python -m usul_corpus validate
     python -m usul_corpus signature   # regenerate the Lean Σ-coverage check
+    python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
 """
 
 from __future__ import annotations
@@ -13,11 +14,14 @@ import json
 import sys
 from pathlib import Path
 
+import hashlib
+
 from .fetch import fetch
+from .ocr import MODELS, ensure_model, ocr_pdf, page_markdown, quality, tesseract_version
 from .hudud import extract_hudud
 from .openiti import parse_markdown
 from .records import hadd_record, qaida_records, unit_tags
-from .segment import audit_numbering, segment_headed, segment_lines
+from .segment import audit_numbering, consensus_numbering, segment_headed, segment_lines, segment_numbered
 
 ROOT = Path(__file__).resolve().parents[2]
 CORPUS = ROOT / "corpus"
@@ -51,17 +55,64 @@ def cmd_fetch(args: argparse.Namespace) -> int:
     return 0
 
 
+def _pdf_witnesses(only: str | None) -> list[tuple[dict, dict]]:
+    return [(work, w) for work in _works(only) for w in work["witnesses"] if w.get("format") == "pdf"]
+
+
+def _page_range(spec: str) -> range:
+    first, last = map(int, spec.split("-"))
+    return range(first, last + 1)
+
+
+def cmd_ocr(args: argparse.Namespace) -> int:
+    """PDF witness → <id>.txt (mARkdown) in the cache + corpus/ocr/<id>.json (metrics only)."""
+    lock = _load(CORPUS / "lock.json").get("witnesses", {})
+    for _, w in _pdf_witnesses(args.work):
+        cfg = w["ocr"]
+        pdf = CACHE / f"{w['id']}.pdf"
+        if not pdf.exists():
+            print(f"skip {w['id']}: run fetch first", file=sys.stderr)
+            continue
+        engines = {name: ensure_model(name, ROOT / ".cache" / "tessdata") for name in cfg["engines"]}
+        pages = _page_range(args.pages) if args.pages else None
+        chosen, passes = ocr_pdf(pdf, ROOT / ".cache" / "ocr" / w["id"], engines,
+                                 cfg["dpi"], cfg["psm"], pages, args.jobs)
+        text = "#META#Header#End#\n" + "".join(page_markdown(p) for p in chosen)
+        (CACHE / f"{w['id']}.txt").write_text(text, encoding="utf-8")
+        by_engine = {e: quality(tuple(l for p in passes if p.engine == e for l in p.lines)) for e in engines}
+        _dump(CORPUS / "ocr" / f"{w['id']}.json", {
+            "witness": w["id"],
+            "engine": tesseract_version(),
+            "models": {e: MODELS[e][1] for e in engines},
+            "dpi": cfg["dpi"], "psm": cfg["psm"],
+            "summary": {**quality(tuple(l for p in chosen for l in p.lines)),  # chosen pages
+                        "pages": len(chosen),
+                        "chosen": {e: sum(p.engine == e for p in chosen) for e in engines},
+                        "by_engine": by_engine},
+            "pages": [{"page": p.page, "engine": p.engine, **quality(p.lines)} for p in chosen],
+        })
+        lock[w["id"]] = {**lock.get(w["id"], {}), "ocr_sha256": hashlib.sha256(text.encode()).hexdigest()}
+        _dump(CORPUS / "lock.json", {"witnesses": dict(sorted(lock.items()))})
+        total = quality(tuple(l for p in chosen for l in p.lines))
+        print(f"{w['id']:40} {len(chosen):>4} pages  mean conf {total['mean_conf']}  "
+              f"low-confidence lines {total['low_conf_lines']}/{total['lines']}")
+    return 0
+
+
+SEGMENTERS = {
+    "headed": lambda text, seg: segment_headed(parse_markdown(text), seg["marker"]),
+    "lines": lambda text, seg: segment_lines(text, seg["marker"]),
+    "numbered": lambda text, seg: segment_numbered(text),
+}
+
+
 def _segment(work: dict, witness: str, text: str) -> tuple[list[dict], tuple | None]:
     """Records for one witness, plus the numbered units when the segmenter yields any."""
     seg = work["segmenter"]
     if seg["kind"] == "hudud_brackets":
         hudud = extract_hudud(parse_markdown(text))
         return [hadd_record(work, witness, i, h) for i, h in enumerate(hudud, 1)], None
-    units = (
-        segment_headed(parse_markdown(text), seg["marker"])
-        if seg["kind"] == "headed"
-        else segment_lines(text, seg["marker"])
-    )
+    units = SEGMENTERS[seg["kind"]](text, seg)
     records = [r for t, u in zip(unit_tags(units), units) for r in qaida_records(work, witness, seg["kind"], t, u)]
     return records, units
 
@@ -69,22 +120,26 @@ def _segment(work: dict, witness: str, text: str) -> tuple[list[dict], tuple | N
 def cmd_build(_: argparse.Namespace) -> int:
     audit: dict[str, dict] = {}
     for work in (w for w in _works(None) if "segmenter" in w):
+        expected = work.get("expected_units", {}).get("count")
+        numbered: dict[str, tuple] = {}
         for w in work["witnesses"]:
             src = CACHE / f"{w['id']}.txt"
             if not src.exists():
-                print(f"skip {w['id']}: not fetched", file=sys.stderr)
+                print(f"skip {w['id']}: not fetched{' or not OCR-ed' if w.get('format') == 'pdf' else ''}",
+                      file=sys.stderr)
                 continue
             records, units = _segment(work, w["id"], src.read_text(encoding="utf-8"))
             path = CORPUS / "records" / f"{w['id']}.jsonl"
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records), encoding="utf-8")
-            expected = work.get("expected_units", {}).get("count")
-            audit[w["id"]] = (
-                {"work": work["id"], **audit_numbering(units, expected)}
-                if units is not None
-                else {"work": work["id"], "found": len(records)}
-            )
+            if units is None:
+                audit[w["id"]] = {"work": work["id"], "found": len(records)}
+            else:
+                audit[w["id"]] = {"work": work["id"], **audit_numbering(units, expected)}
+                numbered[w["id"]] = units
             print(f"{w['id']:40} {len(records):>4} records")
+        if len(numbered) > 1:
+            audit[f"consensus:{work['id']}"] = consensus_numbering(numbered, expected)
     _dump(CORPUS / "audit.json", dict(sorted(audit.items())))
     return 0
 
@@ -150,6 +205,11 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("build").set_defaults(run=cmd_build)
     sub.add_parser("validate").set_defaults(run=cmd_validate)
     sub.add_parser("signature").set_defaults(run=cmd_signature)
+    o = sub.add_parser("ocr")
+    o.add_argument("--work")
+    o.add_argument("--pages", help="PDF page range A-B (default: all)")
+    o.add_argument("--jobs", type=int, default=4)
+    o.set_defaults(run=cmd_ocr)
     args = p.parse_args(argv)
     return args.run(args)
 

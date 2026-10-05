@@ -20,7 +20,8 @@ class Section:
     end_page: Page | None
 
 
-def _clean(line: str) -> str:
+def clean_md_line(line: str) -> str:
+    """Strip page markers and mARkdown line prefixes."""
     line = _PAGE.sub("", line)
     for prefix in ("~~", "#"):
         if line.startswith(prefix):
@@ -47,18 +48,18 @@ def parse_markdown(source: str) -> tuple[Section, ...]:
     for raw in body.splitlines():
         header = _HEADER.match(raw)
         if header:
-            titles.append((len(header.group(1)), _clean(header.group(2))))
+            titles.append((len(header.group(1)), clean_md_line(header.group(2))))
             texts.append([])
             pages.append(None)
             ends.append(None)
             awaiting_start.add(len(titles) - 1)
             awaiting_end.add(len(titles) - 1)
-        elif titles and _clean(raw):
+        elif titles and clean_md_line(raw):
             paras = texts[-1]
             if raw.startswith("~~") and paras:
-                paras[-1] = f"{paras[-1]} {_clean(raw)}"
+                paras[-1] = f"{paras[-1]} {clean_md_line(raw)}"
             else:
-                paras.append(_clean(raw))
+                paras.append(clean_md_line(raw))
             awaiting_end.add(len(titles) - 1)
         for m in _PAGE.finditer(raw):
             page = (int(m.group(1)), int(m.group(2)))

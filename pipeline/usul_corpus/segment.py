@@ -7,7 +7,7 @@ from dataclasses import dataclass
 from itertools import groupby
 
 from .arabic import normalize, parse_ordinal
-from .openiti import Page, Section
+from .openiti import _PAGE, Page, Section, clean_md_line
 
 _FARC = re.compile(r"^\(?و?منها\)?\s*[:.]?\s*")
 _NUM = re.compile(r"^\s*(\d{1,3})\b")
@@ -79,22 +79,107 @@ def _next_top(sections: tuple[Section, ...], last: int) -> int:
     return next((k for k in range(last + 1, len(sections)) if sections[k].level == 1), len(sections))
 
 
+def _paged_lines(text: str) -> list[tuple[str, Page | None]]:
+    """Non-empty content lines, each with the page its closing marker assigns."""
+    page: Page | None = None
+    out: list[tuple[str, Page | None]] = []
+    for raw in reversed(text.splitlines()):
+        m = _PAGE.search(raw)
+        page = (int(m.group(1)), int(m.group(2))) if m else page
+        if line := clean_md_line(raw):
+            out.append((line, page))
+    return out[::-1]
+
+
 def segment_lines(text: str, marker: str) -> tuple[Unit, ...]:
-    """Segment plain (e.g. OCR) text where each unit opens with a line ``marker <ordinal>``."""
+    """Segment line-oriented (OCR) text where each unit opens with a line ``marker <ordinal>``.
+
+    Accepts plain text or mARkdown with closing ``PageVxxPyyy`` markers.
+    """
     key = normalize(marker)
-    lines = text.splitlines()
+    lines = _paged_lines(text)
     starts = [
-        i for i, line in enumerate(lines)
+        i for i, (line, _) in enumerate(lines)
         if normalize(line).startswith(key + " ") and len(normalize(line).split()) <= 6
     ]
 
     def unit(i: int, j: int) -> Unit:
-        heading = " ".join(lines[i].split())
+        heading, page = " ".join(lines[i][0].split()), lines[i][1]
         number, ocr = _number(normalize(heading)[len(key):])
-        body = "\n".join(lines[i + 1:j])
-        return Unit(number, heading, _statement(body), None, _furu(body), ocr)
+        body = "\n".join(line for line, _ in lines[i + 1:j])
+        return Unit(number, heading, _statement(body), page, _furu(body), ocr)
 
     return tuple(unit(i, j) for i, j in zip(starts, starts[1:] + [len(lines)]))
+
+
+_VERSE = re.compile(r"^([0-9٠-٩۰-۹]{1,3})\s*[-–—.۔]\s*(\S.*)$")
+
+
+MAX_VERSE_GAP = 3  # tolerate up to two verses missed by OCR between accepted ones
+
+
+def _repair(obs: str, prev: int) -> int:
+    """Smallest n > prev whose trailing digits equal the observed ones (OCR drops leading digits)."""
+    m, o = 10 ** len(obs), int(obs)
+    return prev + ((o - prev) % m or m)
+
+
+def _verse_chain(cands: list[tuple[int, str]]) -> list[tuple[int, int, bool]]:
+    """Longest chain of (line, repaired number, corrected?) with steps in 1..MAX_VERSE_GAP.
+
+    Dynamic programme over candidates in document order; ties go to the chain
+    with the smaller final number (the tighter run).
+    """
+    best: list[list[tuple[int, int, bool]]] = []
+    for pos, obs in cands:
+        options = [[(pos, int(obs), False)]] if 0 < int(obs) <= MAX_VERSE_GAP else []
+        options += [
+            chain + [(pos, v, v != int(obs))]
+            for chain in best
+            if chain
+            and 0 < (v := _repair(obs, chain[-1][1])) - chain[-1][1] <= MAX_VERSE_GAP
+        ]
+        best.append(max(options, key=_tightness, default=[]))
+    return max(best, key=_tightness, default=[])
+
+
+def _tightness(chain: list[tuple[int, int, bool]]) -> tuple[int, int]:
+    return (len(chain), -chain[-1][1]) if chain else (0, 0)
+
+
+def segment_numbered(text: str) -> tuple[Unit, ...]:
+    """Numbered verses («١ - …», «۹۔ …») as the longest plausible numbering chain.
+
+    Footnotes «(١) …» never match; stray numbers fall outside the chain; lost
+    leading digits are repaired and flagged ``ocr_corrected``.
+    """
+    lines = _paged_lines(text)
+    cands = [(i, normalize(m.group(1))) for i, (line, _) in enumerate(lines) if (m := _VERSE.match(line))]
+    chain = _verse_chain(cands)
+    ends = [pos for pos, _, _ in chain[1:]] + [len(lines)]
+
+    def unit(start: tuple[int, int, bool], end: int) -> Unit:
+        i, n, corrected = start
+        body = "\n".join(line for line, _ in lines[i + 1:end])
+        return Unit(n, _VERSE.match(lines[i][0]).group(2).strip(), _statement(body), lines[i][1], (), corrected)
+
+    return tuple(unit(c, e) for c, e in zip(chain, ends))
+
+
+def consensus_numbering(witnesses: dict[str, tuple[Unit, ...]], expected: int | None) -> dict:
+    """Union unit numbers across independent witnesses (e.g. two OCR engines)."""
+    found = {
+        n: sorted(w for w, us in witnesses.items() if any(u.number == n for u in us))
+        for n in sorted({u.number for us in witnesses.values() for u in us if u.number is not None})
+    }
+    top = max([*found, expected or 0], default=0)
+    return {
+        "expected": expected,
+        "found_by_any": list(found),
+        "missing_in_all": [n for n in range(1, top + 1) if n not in found],
+        "found_by": {str(n): ws for n, ws in found.items()},
+        "complete": expected is not None and list(found) == list(range(1, expected + 1)),
+    }
 
 
 def audit_numbering(units: tuple[Unit, ...], expected: int | None) -> dict:
