@@ -10,15 +10,14 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 from pathlib import Path
 
-import hashlib
-
 from .fetch import fetch
-from .ocr import MODELS, ensure_model, ocr_pdf, page_markdown, quality, tesseract_version
 from .hudud import extract_hudud
+from .ocr import MODELS, ensure_model, ocr_pdf, page_markdown, quality, tesseract_version
 from .openiti import parse_markdown
 from .records import hadd_record, qaida_records, unit_tags
 from .segment import (
@@ -29,6 +28,7 @@ from .segment import (
     segment_lines,
     segment_numbered,
 )
+from .verses import segment_verse_block
 
 ROOT = Path(__file__).resolve().parents[2]
 CORPUS = ROOT / "corpus"
@@ -71,6 +71,13 @@ def _page_range(spec: str) -> range:
     return range(first, last + 1)
 
 
+def _verse_range(cfg: dict) -> range | None:
+    if not cfg.get("verses"):
+        return None
+    first, last = cfg.get("verse_pages", [1, 10**6])
+    return range(first, last + 1)
+
+
 def cmd_ocr(args: argparse.Namespace) -> int:
     """PDF witness → <id>.txt (mARkdown) in the cache + corpus/ocr/<id>.json (metrics only)."""
     lock = _load(CORPUS / "lock.json").get("witnesses", {})
@@ -83,7 +90,7 @@ def cmd_ocr(args: argparse.Namespace) -> int:
         engines = {name: ensure_model(name, ROOT / ".cache" / "tessdata") for name in cfg["engines"]}
         pages = _page_range(args.pages) if args.pages else None
         chosen, passes = ocr_pdf(pdf, ROOT / ".cache" / "ocr" / w["id"], engines,
-                                 cfg["dpi"], cfg["psm"], pages, args.jobs)
+                                 cfg["dpi"], cfg["psm"], pages, args.jobs, _verse_range(cfg))
         text = "#META#Header#End#\n" + "".join(page_markdown(p) for p in chosen)
         (CACHE / f"{w['id']}.txt").write_text(text, encoding="utf-8")
         by_engine = {e: quality(tuple(l for p in passes if p.engine == e for l in p.lines)) for e in engines}
@@ -91,7 +98,7 @@ def cmd_ocr(args: argparse.Namespace) -> int:
             "witness": w["id"],
             "engine": tesseract_version(),
             "models": {e: MODELS[e][1] for e in engines},
-            "dpi": cfg["dpi"], "psm": cfg["psm"],
+            "dpi": cfg["dpi"], "psm": cfg["psm"], "verses": cfg.get("verses", False),
             "summary": {**quality(tuple(l for p in chosen for l in p.lines)),  # chosen pages
                         "pages": len(chosen),
                         "chosen": {e: sum(p.engine == e for p in chosen) for e in engines},
@@ -110,12 +117,13 @@ SEGMENTERS = {
     "headed": lambda text, seg: segment_headed(parse_markdown(text), seg["marker"]),
     "lines": lambda text, seg: segment_lines(text, seg["marker"]),
     "numbered": lambda text, seg: segment_numbered(text),
+    "verse_block": lambda text, seg: segment_verse_block(text),
 }
 
 
-def _segment(work: dict, witness: str, text: str) -> tuple[list[dict], tuple | None]:
+def _segment(work: dict, w: dict, text: str) -> tuple[list[dict], tuple | None]:
     """Records for one witness, plus the numbered units when the segmenter yields any."""
-    seg = work["segmenter"]
+    seg, witness = w.get("segmenter", work["segmenter"]), w["id"]
     if seg["kind"] == "hudud_brackets":
         hudud = extract_hudud(parse_markdown(text))
         return [hadd_record(work, witness, i, h) for i, h in enumerate(hudud, 1)], None
@@ -143,7 +151,7 @@ def cmd_build(_: argparse.Namespace) -> int:
                       file=sys.stderr)
                 continue
             text = src.read_text(encoding="utf-8")
-            records, units = _segment(work, w["id"], text)
+            records, units = _segment(work, w, text)
             if work["segmenter"].get("index"):
                 index_records, index_units = _index(work, w["id"], text)
                 records += index_records
@@ -156,6 +164,8 @@ def cmd_build(_: argparse.Namespace) -> int:
                 audit[w["id"]] = {"work": work["id"], "found": len(records)}
             else:
                 audit[w["id"]] = {"work": work["id"], **audit_numbering(units, expected)}
+                if w.get("segmenter", work["segmenter"])["kind"] == "verse_block":
+                    audit[w["id"]]["printed_number_agrees"] = sum(not u.ocr_corrected for u in units)
                 numbered[w["id"]] = units
             print(f"{w['id']:40} {len(records):>4} records")
         if len(numbered) > 1:

@@ -38,6 +38,8 @@ MODELS = {
 class Line:
     text: str
     conf: float
+    top: int = -1      # pixel extent on the rendered page (-1: unknown)
+    bottom: int = -1
 
 
 @dataclass(frozen=True)
@@ -55,12 +57,17 @@ def parse_tsv(tsv: str) -> tuple[Line, ...]:
     """Tesseract TSV → lines (word order is logical, i.e. right-to-left reading order)."""
     rows = [r.split("\t") for r in tsv.splitlines()[1:]]
     words = [
-        ((int(r[2]), int(r[3]), int(r[4])), int(r[5]), float(r[10]), r[11].strip())
+        ((int(r[2]), int(r[3]), int(r[4])), int(r[5]), float(r[10]), r[11].strip(), int(r[7]), int(r[7]) + int(r[9]))
         for r in rows
         if len(r) == 12 and r[0] == "5" and r[11].strip()
     ]
     return tuple(
-        Line(" ".join(w[3] for w in ws), round(statistics.fmean(w[2] for w in ws), 2))
+        Line(
+            " ".join(w[3] for w in ws),
+            round(statistics.fmean(w[2] for w in ws), 2),
+            min(w[4] for w in ws),
+            max(w[5] for w in ws),
+        )
         for _, g in groupby(sorted(words, key=lambda w: (w[0], w[1])), key=lambda w: w[0])
         for ws in [list(g)]
     )
@@ -173,21 +180,35 @@ def pdf_pages(pdf: Path) -> int:
 
 def ocr_pdf(
     pdf: Path, work: Path, engines: dict[str, Path], dpi: int = 300, psm: int = 4,
-    pages: range | None = None, jobs: int = os.cpu_count() or 1,
+    pages: range | None = None, jobs: int = os.cpu_count() or 1, verses: range | None = None,
 ) -> tuple[tuple[PageOCR, ...], tuple[PageOCR, ...]]:
-    """OCR every page with every engine; return (chosen pages, all passes)."""
+    """OCR every page with every engine; return (chosen pages, all passes).
+
+    On pages in ``verses``, detected verse lines are re-read per hemistich and
+    replace the page-level lines they overlap (see ``verses.py``).
+    """
+    from .verses import merge_verses, ocr_verses
 
     def one(page: int) -> tuple[PageOCR, ...]:
         png = render(pdf, page, work / "png", dpi)
         return tuple(
             PageOCR(page, name, tuple(
-                Line(t, l.conf)
+                Line(t, l.conf, l.top, l.bottom)
                 for l in parse_tsv(run_tesseract(png, td, psm, work / "tsv" / name))
                 if (t := clean_line(l.text)) and not is_noise(t)
             ))
             for name, td in engines.items()
         )
 
+    def with_verses(page: PageOCR) -> PageOCR:
+        if page.page not in verses:
+            return page
+        found = ocr_verses(render(pdf, page.page, work / "png", dpi), engines, work)
+        return PageOCR(page.page, page.engine, merge_verses(page.lines, found)) if found else page
+
     with ThreadPoolExecutor(max_workers=jobs) as pool:
         passes = tuple(pool.map(one, pages or range(1, pdf_pages(pdf) + 1)))
-    return strip_running_heads(tuple(choose(p) for p in passes)), tuple(x for p in passes for x in p)
+        chosen = tuple(choose(p) for p in passes)
+        if verses:
+            chosen = tuple(pool.map(with_verses, chosen))
+    return strip_running_heads(chosen), tuple(x for p in passes for x in p)

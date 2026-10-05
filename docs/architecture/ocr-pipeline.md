@@ -30,6 +30,8 @@ Run it with `make fetch ocr build`. It needs `tesseract-ocr` 5 and `poppler-util
 | Rule headings (chain) | `segment.segment_lines` | Accepts «القاعدة <ordinal>» or a bare ordinal line, because the edition sets the word «القاعدة» as a graphic that OCR turns into junk. Joint headings («الثانية والثالثة والعشرون») cover a range of rules. The longest chain with steps of 1 to 4, with at least one body line per step, drops ordinals in prose and the table of contents |
 | Closing index | `segment.segment_index` | «القاعدة <ordinal>: <statement>» lines: an independent witness to the count, and each rule's statement |
 | Verse numbers | `segment.segment_numbered` | «١ - …», «۹۔ …». A dynamic programme finds the longest numbering chain with steps of 1 to 3. Footnotes «(١)» never match. OCR that dropped a leading digit (10 read as «۰») is repaired to the smallest consistent value and flagged `ocr_corrected` |
+| Verse lines | `verses.is_verse`, `verses.ocr_verses` | A bayt is printed as one line whose two hemistichs are separated by a wide, roughly central gap. The test: the line spans at least 80% of the text width, its widest internal gap is 4–25% of its width, and the gap starts 30–70% of the way across. Justified prose has only word gaps (about 35 px at 300 dpi, against about 120 px between hemistichs). Each hemistich is cropped and OCR'd as a single line (psm 7) with both models, keeping the better read. The verse replaces the page-level lines it overlaps (`merge_verses`). Hemistichs are joined with « * » |
+| Verse numbering | `verses.segment_verse_block` | The first contiguous block of verse lines (the matn) is numbered by position. The bold printed number defeats tesseract even when cropped alone, so it serves only as a check: a unit is flagged `ocr_corrected` unless its readable printed digits agree with its position |
 | Cross-check | `segment.consensus_numbering` | For a work with several witnesses (archive.org OCR and our OCR), lists which witness found each rule number and which numbers no witness found |
 
 ## Witnesses
@@ -37,7 +39,7 @@ Run it with `make fetch ocr build`. It needs `tesseract-ocr` 5 and `poppler-util
 | Work | Witnesses | Segmenter |
 |---|---|---|
 | al-Saʿdī, *al-Qawāʿid al-Jāmiʿa* | `archive-pdf1995` (archive.org OCR), `archive-pdf1995-tess` (this pipeline) | `lines` on «القاعدة» |
-| Ibn ʿUthaymīn, *Sharḥ Manẓūmat Uṣūl al-Fiqh* | `archive-manzuma-djvu` (archive.org OCR), `archive-manzuma-tess` | `numbered` (verses) |
+| Ibn ʿUthaymīn, *Sharḥ Manẓūmat Uṣūl al-Fiqh* | `archive-manzuma-tess` (our OCR, verse reader on PDF pp. 1–371), `archive-manzuma-djvu` (archive.org OCR) | `verse_block`; the archive.org witness overrides to `numbered` |
 | al-Saʿdī, *Ṭarīq al-Wuṣūl* | `archive-tariq-tess` | none yet (see status) |
 
 Correction to the earlier registry: the archive.org item first listed for the *Manẓūma* holds audio lessons, not a scan. The witness is now Ibn ʿUthaymīn's printed sharḥ, which quotes every verse.
@@ -63,6 +65,12 @@ All OCR records stay `status: candidate` and `quality: ocr_unreviewed`. Confiden
 
 Rules 22 and 23 share one printed heading; that is the edition, not an OCR loss.
 
-**Manẓūma: verse count not yet established.** The archive.org OCR chain reaches verse 132 with 41 gaps. Our OCR cannot read the verse block, because the verses are vocalised two-column hemistichs inside a decorated frame and single-column layout analysis (psm 4) garbles them. The commentary text OCRs well. Next step: detect the verse frames and OCR each hemistich column separately (psm 6 or 7 on crops).
+**Manẓūma: 103 verses.** Three independent observations agree:
+
+1. The printed matn ends at «١٠٣», followed by its closing ornament (PDF p. 27).
+2. The author's handwritten autograph, reproduced in facsimile on PDF p. 22, also ends at «١٠٣».
+3. Verse-line detection finds exactly 103 verse lines in the matn block (PDF pp. 23–27: 16 + 24 + 24 + 24 + 15).
+
+The archive.org OCR chain, which reached 132, was an overshoot of the digit repair. Elsewhere in the book, the commentary (pp. 29–371) holds 136 verse-shaped lines. That count is higher because each verse is re-quoted, sometimes more than once, and other poems are quoted in the same two-hemistich layout. The two-column index (pp. 372–389) is excluded through `verse_pages`, since its column gutter imitates a hemistich gap.
 
 **Ṭarīq al-Wuṣūl: OCR done, not segmented.** The scan quality is lower (mean confidence 71), and no reliable heading pattern has been identified yet.

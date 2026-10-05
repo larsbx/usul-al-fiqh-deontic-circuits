@@ -192,7 +192,12 @@
               "ara_best"
             ],
             "dpi": 300,
-            "psm": 4
+            "psm": 4,
+            "verses": true,
+            "verse_pages": [
+              1,
+              371
+            ]
           },
           "edition": "same 8,180,831-byte scan is mirrored in items 20200423_20200423_0034 and 20220131_20220131_2000",
           "quality": "ocr_unreviewed"
@@ -203,13 +208,21 @@
           "item": "20210501_20210501_0220",
           "file": "منظومة أصول الفقه وقواعده_djvu.txt",
           "edition": "archive.org OCR layer of the same scan",
-          "quality": "ocr_unreviewed"
+          "quality": "ocr_unreviewed",
+          "segmenter": {
+            "kind": "numbered"
+          }
         }
       ],
       "status": "located_ocr",
       "note": "Witness is Ibn ʿUthaymīn's own sharḥ, which quotes each verse of the manẓūma before commenting.",
       "segmenter": {
-        "kind": "numbered"
+        "kind": "verse_block"
+      },
+      "expected_units": {
+        "unit": "bayt",
+        "count": 103,
+        "claim_source": "printed matn ends at ١٠٣ followed by its closing ornament (PDF p. 27); the author's autograph facsimile (PDF p. 22) also ends at ١٠٣"
       }
     },
     {
