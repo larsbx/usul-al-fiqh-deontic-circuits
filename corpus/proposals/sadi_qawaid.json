@@ -117,7 +117,10 @@
    "gloss_en": "Proof is on the claimant, the oath on the one who denies.",
    "kind": "procedure",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.burden",
+    "Usul.Muamalat.q10_burden_injective"
+   ]
   },
   {
    "number": 11,
@@ -136,7 +139,11 @@
    "gloss_en": "Mutual consent is required in contracts of exchange.",
    "kind": "rule",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.Exchange.gate",
+    "Usul.Muamalat.q12_no_contract_without_consent",
+    "Usul.Muamalat.q12_mutual_consent_suffices"
+   ]
   },
   {
    "number": 13,
@@ -144,7 +151,11 @@
    "gloss_en": "In destruction of property the deliberate, the ignorant and the forgetful are alike (liable).",
    "kind": "rule",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.itlafLiable",
+    "Usul.Muamalat.q13_intent_irrelevant",
+    "Usul.Muamalat.q13_q36_consistent"
+   ]
   },
   {
    "number": 14,
@@ -152,7 +163,12 @@
    "gloss_en": "Loss in a trustee's hand is not compensable unless he transgressed or was negligent; in a wrongdoer's hand it is compensable absolutely.",
    "kind": "farq",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.lossLiable",
+    "Usul.Muamalat.q14_trustee_without_fault",
+    "Usul.Muamalat.q14_wrongdoer_always",
+    "Usul.Muamalat.q14_fault_makes_trustee_liable"
+   ]
   },
   {
    "number": 15,
@@ -187,7 +203,10 @@
    "gloss_en": "Fungibles are compensated with their like, non-fungibles with their value.",
    "kind": "taqsim",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.compensation",
+    "Usul.Muamalat.q18_partition"
+   ]
   },
   {
    "number": 19,
@@ -195,7 +214,11 @@
    "gloss_en": "When the stipulated price is unattainable, one reverts to the value.",
    "kind": "default",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.priceDue",
+    "Usul.Muamalat.q19_unattainable_reverts_to_value",
+    "Usul.Muamalat.q19_stipulated_binds"
+   ]
   },
   {
    "number": 20,
@@ -203,7 +226,10 @@
    "gloss_en": "When the right-holder cannot be identified, he is treated as non-existent.",
    "kind": "default",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.recipient",
+    "Usul.Muamalat.q20_unknown_owner"
+   ]
   },
   {
    "number": 21,
@@ -211,7 +237,10 @@
    "gloss_en": "Uncertainty (gharar) and gambling are forbidden in exchanges and contests.",
    "kind": "rule",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.ghararForbidden",
+    "Usul.Muamalat.q21_forbidden_iff"
+   ]
   },
   {
    "number": 22,
@@ -241,7 +270,10 @@
    "gloss_en": "Whoever reaches unowned permissible things first has the better right to them.",
    "kind": "rule",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.firstClaimant",
+    "Usul.Muamalat.q24_first_has_priority"
+   ]
   },
   {
    "number": 25,
@@ -249,7 +281,10 @@
    "gloss_en": "Lots are prescribed when the entitled party is unknown and division is impossible.",
    "kind": "procedure",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.lotPrescribed",
+    "Usul.Muamalat.q25_lot_iff"
+   ]
   },
   {
    "number": 26,
@@ -257,7 +292,10 @@
    "gloss_en": "Trustees are believed about what is in their hands, except where sense and custom contradict them.",
    "kind": "procedure",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.wordAccepted",
+    "Usul.Muamalat.q26_q43_consistent"
+   ]
   },
   {
    "number": 27,
@@ -340,7 +378,11 @@
    "gloss_en": "Whoever escapes punishment for a reason bears doubled compensation.",
    "kind": "rule",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.compensationOwed",
+    "Usul.Muamalat.q35_doubled",
+    "Usul.Muamalat.q35_never_less"
+   ]
   },
   {
    "number": 36,
@@ -348,7 +390,12 @@
    "gloss_en": "Destroying a thing to benefit from it makes one liable; destroying it to repel its harm does not.",
    "kind": "farq",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.withRight",
+    "Usul.Muamalat.q36_benefit_liable",
+    "Usul.Muamalat.q36_repel_not_liable",
+    "Usul.Muamalat.q13_q36_consistent"
+   ]
   },
   {
    "number": 37,
@@ -356,7 +403,10 @@
    "gloss_en": "When contracting parties disagree on a term, the one with the stronger evidence prevails.",
    "kind": "procedure",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.prevailing",
+    "Usul.Muamalat.q37_strongest_prevails"
+   ]
   },
   {
    "number": 38,
@@ -411,7 +461,11 @@
    "gloss_en": "Whoever took possession for his own benefit is not believed about returning it; for the owner's benefit, he is.",
    "kind": "farq",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.returnClaimAccepted",
+    "Usul.Muamalat.q43_self_interest_not_believed",
+    "Usul.Muamalat.q26_q43_consistent"
+   ]
   },
   {
    "number": 44,
@@ -419,7 +473,10 @@
    "gloss_en": "Whoever performs what is due earns what was set for him.",
    "kind": "rule",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.earned",
+    "Usul.Muamalat.q44_performance_earns"
+   ]
   },
   {
    "number": 45,
@@ -436,7 +493,11 @@
    "gloss_en": "A creditor with an evident cause may take his due from a refusing debtor's property; with a hidden cause he may not.",
    "kind": "farq",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.mayTake",
+    "Usul.Muamalat.q46_hidden_cause_forbids",
+    "Usul.Muamalat.q46_never_more_than_due"
+   ]
   },
   {
    "number": 47,
@@ -444,7 +505,10 @@
    "gloss_en": "What is obligatory by vow is assimilated to what is obligatory by the law.",
    "kind": "rule",
    "domain": "ibadat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.obligationStatus",
+    "Usul.Muamalat.q47_vow_as_law"
+   ]
   },
   {
    "number": 48,
@@ -460,7 +524,10 @@
    "gloss_en": "A person's basic needs do not count as surplus wealth.",
    "kind": "rule",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.surplus",
+    "Usul.Muamalat.q49_needs_excluded"
+   ]
   },
   {
    "number": 50,
@@ -494,7 +561,10 @@
    "gloss_en": "If a contract proves void, what was built on it is void; if it is rescinded by choice, contracts concluded before the rescission stand.",
    "kind": "farq",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.dependentsSurvive",
+    "Usul.Muamalat.q53_distinction"
+   ]
   },
   {
    "number": 54,
@@ -502,7 +572,10 @@
    "gloss_en": "In transactions what counts is the actual state of affairs.",
    "kind": "interpretation",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.dispositionValid",
+    "Usul.Muamalat.q54_belief_irrelevant"
+   ]
   },
   {
    "number": 55,
@@ -510,7 +583,10 @@
    "gloss_en": "There is no excuse for one who has confessed, even if he claims error.",
    "kind": "procedure",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.confessionBinds",
+    "Usul.Muamalat.q55_error_claim_irrelevant"
+   ]
   },
   {
    "number": 56,
@@ -518,7 +594,10 @@
    "gloss_en": "The heir stands in the place of the deceased in everything concerning the estate.",
    "kind": "rule",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.inherits",
+    "Usul.Muamalat.q56_exceptions_only"
+   ]
   },
   {
    "number": 57,

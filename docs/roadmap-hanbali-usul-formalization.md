@@ -40,7 +40,7 @@ This rejects Standard Deontic Logic (KD) as the core: it has no defeasibility an
 | M0 registry | **done for located texts** | `corpus/registry.json` (20 works, pinned witnesses), `corpus/lock.json`, `corpus/audit.json`: Ibn Rajab's 160, Ibn al-Laḥḥām's 66, al-Saʿdī's 60, the *Manẓūma*'s 103 abyāt and *Ṭarīq al-Wuṣūl*'s 1015 paragraphs confirmed (al-Saʿdī via the [OCR pipeline](architecture/ocr-pipeline.md)) |
 | M1 logic core | **kernel proved** | `Usul.Dung`: admissibility preserved by `F`, grounded ⊆ every complete extension. The ADR prose is still open |
 | M2 signature | **seeded** | 26 ḥudūd extracted from *al-Uṣūl*; `Usul.Hukm` / `Usul.Signature`; Σ map checked on both sides |
-| M3 qawāʿid | **al-Saʿdī catalogued; 20 of 60 formalised** | `corpus/proposals/sadi_qawaid.json` (all 60: statement, gloss, kind, domain; candidate status, awaiting human review); `Usul.Sadi`: Q1, 2, 4, 6, 8, 11, 16, 22/23, 27, 28, 33, 38, 40, 52, 58, 59, 60, with proved theorems; Haskell mirror `Oracle.Usul.Sadi` |
+| M3 qawāʿid | **al-Saʿdī catalogued; 43 of 60 formalised** | `corpus/proposals/sadi_qawaid.json` (all 60: statement, gloss, kind, domain; candidate status, awaiting human review); `Usul.Sadi`: Q1, 2, 4, 6, 8, 11, 16, 22/23, 27, 28, 33, 38, 40, 52, 58, 59, 60, with proved theorems; `Usul.Muamalat`: Q10, 12–14, 18–21, 24–26, 35–37, 43, 44, 46, 47, 49, 53–56 (possession, liability, contract), with consistency theorems Q13 ⇔ Q36 and Q43 ⊑ Q26; Haskell mirror `Oracle.Usul.Sadi` |
 | M4 tests | candidates | 2117 `far` records (Ibn Rajab, Ibn al-Laḥḥām) |
 | M5 tarjīḥ | started | `Usul.Taarud` resolution order; Haskell mirror |
 | M6 TLA+ | started | Istishab, Taklif, Naskh, Review: all pass TLC, and each was mutation-checked |
