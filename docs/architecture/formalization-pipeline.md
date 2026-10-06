@@ -83,6 +83,7 @@ Known extraction defect: h014 is labelled «فمن المخصص المتصل» b
 | `Usul.Dung` | `F_mono`, `admissible_F`, `approx_admissible`, `approx_conflictFree`, `approx_succ`, `approx_sub_complete` (grounded ⊆ every complete extension), `unattacked_in_approx_one` |
 | `Usul.Grounded` | executable grounded extension; `defended_iff` and `mem_step_iff` show that one step equals `Dung.F` |
 | `Usul.Taarud` | `resolve` (jamʿ → naskh → tarjīḥ → tawaqquf), `resolve_jam_first`, `resolve_naskh_before_tarjih`, `resolve_tawaqquf_iff` |
+| `Usul.Sadi` | al-Saʿdī's rules: `q01_balanced_is_mubah` (under maṣlaḥa weighing, a balanced act is mubāḥ); `q04_*` (no obligation with inability, no prohibition with necessity, relief never binds); `q06_*` (domain defaults); `q08_*` (conditions, pillars, impediments); `q11_yaqin`, `q52_strong_qarina_prevails`; `q16`; `q22_valid_iff_preserves_prohibition`; `q27_asymmetry` (omission versus commission under an excuse); `q28`; `q33_higher_benefit`, `q33_lighter_harm`; `q38_voids_iff_intrinsic`; `q40_*` (partial capability); `q58_qiyas`, `q58_factors` (a ruling depends only on its ʿilla iff it factors through it), `q58_naqd`; `q59`/`q60` generality markers |
 | `Usul.Qawaid` | `yaqin_la_yazul_bish_shakk`, `update_grade_mono`, `closure_respects_capacity` (*mā lā yatimm al-wājib…* is consistent with *lā wājib maʿa ʿajz*), `darura_bounded` |
 | `UsulTest` | 47 shared grounded-extension vectors checked with `#guard`; Σ-map constants checked with `#check` |
 
@@ -104,7 +105,7 @@ Each invariant was mutation-checked once: a seeded bug in the spec makes TLC rep
 ## 5. Next steps
 
 1. **Review queue (M0/M4):** review the 26 ḥudūd and the al-Saʿdī OCR units; correct h014; classify qawāʿid `kind` (meta / default / taqsīm / farq / closure).
-2. **M3:** encode al-Saʿdī's rules one by one from the reviewed records. Each gets a Lean statement, a Haskell executable and at least one farʿ test.
+2. **M3:** review `corpus/proposals/sadi_qawaid.json`, which needs a human to check the readings, especially the three emendations (Q9, Q32, Q45), and to confirm the kinds. Then formalise the remaining 40 rules; the substantive transaction rules need a model of ownership, liability and contract first.
 3. **M4:** turn the Ibn al-Laḥḥām `far` records into golden entailments. This needs a ruling annotation per case, which is human or LLM-assisted and always goes through review.
 4. **OCR:** recover the 18 missing *Ṭarīq* paragraphs and verse 60's commentary link; split *Ṭarīq* into its source sections («ومن رسالة …») (see [`ocr-pipeline.md`](ocr-pipeline.md)).
 5. **Proof debt:** prove that `Grounded.grounded` reaches the least fixed point within `n + 1` steps. Today agreement rests on `mem_step_iff` plus the vectors.

@@ -43,3 +43,22 @@ def test_sharh_record_links_commentary_to_its_verse_and_validates():
     assert r["locator"] == "src:archive-manzuma-tess/v01:p337#q089.sharh"
     assert r["page_span"] == [337, 339] and len(r["excerpt_ar"]) == 160
     jsonschema.validate(r, SCHEMA)
+
+
+def test_sadi_catalogue_is_complete_typed_and_backed_by_records():
+    """Every rule 1..60 once, kinds declared, and each number attested by some record."""
+    root = Path(__file__).parents[2]
+    cat = json.loads((root / "corpus/proposals/sadi_qawaid.json").read_text())
+    jsonschema.validate(cat, json.loads((root / "schemas/qawaid_proposal.schema.json").read_text()))
+    numbers = [r["number"] for r in cat["rules"]]
+    assert numbers == list(range(1, 61))
+    assert {r["kind"] for r in cat["rules"]} <= set(cat["kinds"])
+    attested = {
+        n
+        for w in ("archive-pdf1995", "archive-pdf1995-tess")
+        for line in (root / f"corpus/records/{w}.jsonl").read_text().splitlines()
+        for rec in [json.loads(line)]
+        if rec["record_type"] == "qaida" and rec["number"]
+        for n in [rec["number"]]
+    }
+    assert set(numbers) - attested <= {23}   # 23 shares the printed heading of 22 (joint heading)

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/qawaid_proposal.schema.json",
+  "title": "Qawāʿid catalogue proposal (machine-normalised, awaiting review)",
+  "type": "object",
+  "required": ["work", "status", "provenance", "kinds", "rules"],
+  "additionalProperties": false,
+  "properties": {
+    "work": {"type": "string"},
+    "status": {"enum": ["candidate", "reviewed", "accepted"]},
+    "provenance": {"type": "string", "minLength": 1},
+    "kinds": {"type": "object", "additionalProperties": {"type": "string"}},
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["number", "statement_ar", "gloss_en", "kind", "domain", "lean"],
+        "additionalProperties": false,
+        "properties": {
+          "number": {"type": "integer", "minimum": 1},
+          "statement_ar": {"type": "string", "minLength": 1, "maxLength": 160},
+          "gloss_en": {"type": "string", "minLength": 1},
+          "kind": {"type": "string"},
+          "domain": {"enum": ["general", "ibadat", "muamalat", "lafz"]},
+          "lean": {"type": "array", "items": {"type": "string", "pattern": "^Usul\\."}, "uniqueItems": true},
+          "emendation": {"type": "string"}
+        }
+      }
+    }
+  }
+}
