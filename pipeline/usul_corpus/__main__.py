@@ -233,7 +233,7 @@ def cmd_takhrij(_: argparse.Namespace) -> int:
     (tests / "TakhrijMirror.lean").write_text(takhrij.mirror_file(), encoding="utf-8")
     rep = takhrij.report(cases)
     (CORPUS / "takhrij" / "report.json").write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(json.dumps({k: rep[k] for k in ("total", "coverage", "encoding_error", "classes")}, ensure_ascii=False))
+    print(json.dumps({k: rep[k] for k in ("total", "coverage", "madhhab_coverage", "encoding_error", "ikhtilaf_matching_madhhab", "classes")}, ensure_ascii=False))
     return 0
 
 

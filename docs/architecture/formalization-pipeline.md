@@ -116,6 +116,6 @@ Each invariant was mutation-checked once: a seeded bug in the spec makes TLC rep
 
 1. **Review queue (M0/M4):** review the 26 ḥudūd and the al-Saʿdī OCR units; correct h014; classify qawāʿid `kind` (meta / default / taqsīm / farq / closure).
 2. **M3:** review `corpus/proposals/sadi_qawaid.json`, which needs a human to check the readings, especially the three emendations (Q9, Q32, Q45), and to confirm the kinds. All 60 rules now have a formal reading (`test_sadi_catalogue_is_formalised_and_checked` keeps it so). The readings are deliberately thin; review should judge each against the text, especially where a reading adds a condition the heading leaves implicit (Q15 outside prescribed retaliation, Q32 unless given as a gift).
-3. **M4:** turn the Ibn al-Laḥḥām `far` records into golden entailments. This needs a ruling annotation per case, which is human or LLM-assisted and always goes through review.
+3. **M4:** the first tranche is in (204 furūʿ, Lean-guarded; see [`takhrij.md`](takhrij.md)). Next: review the annotations, decide IQ-09 and IQ-20 and the generality ʿahd field, then extend to the remaining ~1900 furūʿ and, after M5, to Ibn al-Laḥḥām's uṣūl rules.
 4. **OCR:** recover the 18 missing *Ṭarīq* paragraphs and verse 60's commentary link; split *Ṭarīq* into its source sections («ومن رسالة …») (see [`ocr-pipeline.md`](ocr-pipeline.md)).
 5. **Proof debt:** prove that `Grounded.grounded` reaches the least fixed point within `n + 1` steps. Today agreement rests on `mem_step_iff` plus the vectors.

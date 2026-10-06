@@ -167,6 +167,7 @@ def report(cases: list[dict]) -> dict:
     ikh = [c for c in cases if c["class"] == "genuine_ikhtilaf"]
     return {"total": len(cases), "classes": dict(sorted(by.items())),
             "coverage": round((by["derivable"] + by["genuine_ikhtilaf"]) / scope, 3) if scope else 0.0,
+            "madhhab_coverage": round((by["derivable"] + sum(1 for c in ikh if c.get("matches_madhhab"))) / scope, 3) if scope else 0.0,
             "encoding_error": by["encoding_error"],
             "ikhtilaf_matching_madhhab": sum(1 for c in ikh if c.get("matches_madhhab")),
             "per_encoder": {e: dict(sorted(v.items())) for e, v in per.items() if v}}

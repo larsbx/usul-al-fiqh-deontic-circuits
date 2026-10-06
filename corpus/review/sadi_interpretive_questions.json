@@ -448,6 +448,12 @@
      "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160",
      "relation": "refines",
      "note": "Lots distinguish the entitled when entitlement attaches to an unspecified one among equals, or to recover a specific entitled person lost in confusion; not used for lineage. The reading lacks the equality condition and the lineage exclusion."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p348",
+     "relation": "contradicts",
+     "note": "Takhrīj evidence (corpus/takhrij, cases q160.f007, f012, f015, f044): where a specific entitled person is lost in confusion, Ibn Rajab prescribes lots even though the property could be divided between the claimants; the reading's order (division before lots) holds only for an unspecified entitlement among equals.",
+     "excerpt_ar": "إذا ادعى الوديعة اثنان فقال المودع: لا أعلم لمن هي منكما. فإنه يقرع بينهما، فمن قرع فصاحبه ، حلف وأخذها نص عليه أحمد، وهي من فروع مسألة تداعي عين بيد ثالث يعترف بأنها لأحدهما وسنذكرها إن شاء الله."
     }
    ],
    "analogies": [
@@ -991,6 +997,49 @@
      "kind": "illustrative",
      "domain": "criminal law",
      "note": "Nullum crimen sine lege: analogy in criminal law barred in many systems, as the Ḥanafīs bar qiyās in ḥudūd."
+    }
+   ]
+  },
+  {
+   "id": "IQ-20",
+   "rules": [
+    52
+   ],
+   "schemata": [
+    "S6-presumption"
+   ],
+   "pins": [
+    "Usul.Sadi.q52_strong_qarina_prevails"
+   ],
+   "commitment": "An indication displaces the presumption whenever its grade is at least the presumption's (ties go to the ẓāhir), with grades as the only input.",
+   "alternatives": [
+    "Ties go to the aṣl (certainty is not removed except by what is at least as strong and decisive).",
+    "Whether preponderant belief suffices depends on whether the matter has known indicators (amārāt), as Ibn Rajab says of sunset; this needs a field the reading lacks.",
+    "Equal aṣl and ẓāhir are left as khilāf (Ibn Rajab's fourth category), not decided."
+   ],
+   "if_changed": "Qawaid.update's tie rule or inputs change; q52_strong_qarina_prevails changes with it. The review process's own reliance on Q11 (yaqin_doubts_inert, doubts at shakk below a certain judgement) is unaffected, since shakk is strictly below zann.",
+   "route": "halaqa:shared/usul-k/evidence-order.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p338",
+     "relation": "contradicts",
+     "note": "Takhrīj evidence (cases q159.f007, f008): with a known state and preponderant belief of its removal, Ibn Rajab holds to the aṣl and says preponderant belief does not suffice; at f013 he allows breaking the fast on preponderant belief of sunset «because time has indicators by which it is known». Equal grades, opposite rulings: the deciding fact is the indicator, not the grade.",
+     "excerpt_ar": "إذا شك في طلوع الفجر في رمضان فإنه يباح له الأكل حتى يتيقن طلوعه نص عليه، أحمد، ولا عبرة في ذلك بغلبة الظن وبالقرائن ونحوها ما لم يكن مستندا إلى إخبار ثقة بالطلع."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 10,
+     "schema": "S6-presumption",
+     "transported": "Usul.Schema.burden_factors",
+     "note": "As the burden of proof follows the presumption (Q10), the presumption's displacement should follow what the law counts as proof, not a bare grade."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "evidence law",
+     "note": "Presumptions rebuttable only by particular kinds of evidence (e.g. documentary) rather than by any evidence of equal weight."
     }
    ]
   }

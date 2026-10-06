@@ -68,3 +68,11 @@ def test_annotated_cases_cover_their_qawaid_exactly_once_and_stay_generated():
     assert (tests / "Takhrij.lean").read_text() == takhrij.lean_file(cases)
     assert (tests / "TakhrijMirror.lean").read_text() == takhrij.mirror_file()
     assert json.loads((ROOT / "corpus/takhrij/report.json").read_text()) == takhrij.report(cases)
+
+
+def test_case_findings_point_at_register_questions_on_their_rule():
+    """An encoding error tagged with a register question must be about the encoder's own rule."""
+    reg = {q["id"]: q for q in json.loads((ROOT / "corpus/review/sadi_interpretive_questions.json").read_text())["questions"]}
+    for c in takhrij.load(ROOT / "corpus"):
+        if "iq" in c:
+            assert c["iq"] in reg and set(reg[c["iq"]]["rules"]) & set(takhrij.ENCODERS[c["encoder"]]["sadi"]), c["far"]
