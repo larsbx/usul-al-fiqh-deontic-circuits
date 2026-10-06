@@ -220,6 +220,23 @@ def _review_names(reg: dict) -> list[str]:
             *(a["transported"] for q in reg["questions"] for a in q["analogies"] if a["kind"] == "internal")]
 
 
+def cmd_takhrij(_: argparse.Namespace) -> int:
+    """Generate the takhrīj guards and the mirror check, and write the coverage report."""
+    from . import takhrij
+    cases = takhrij.load(CORPUS)
+    bad = {c["far"]: e for c in cases if (e := takhrij.check_case(c))}
+    if bad:
+        print(json.dumps(bad, ensure_ascii=False, indent=1))
+        return 1
+    tests = SIGNATURE_LEAN.parent
+    (tests / "Takhrij.lean").write_text(takhrij.lean_file(cases), encoding="utf-8")
+    (tests / "TakhrijMirror.lean").write_text(takhrij.mirror_file(), encoding="utf-8")
+    rep = takhrij.report(cases)
+    (CORPUS / "takhrij" / "report.json").write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(json.dumps({k: rep[k] for k in ("total", "coverage", "encoding_error", "classes")}, ensure_ascii=False))
+    return 0
+
+
 def cmd_signature(_: argparse.Namespace) -> int:
     SIGNATURE_LEAN.write_text(signature_lean(_lean_names()), encoding="utf-8")
     return 0
@@ -261,6 +278,7 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("build").set_defaults(run=cmd_build)
     sub.add_parser("validate").set_defaults(run=cmd_validate)
     sub.add_parser("signature").set_defaults(run=cmd_signature)
+    sub.add_parser("takhrij").set_defaults(run=cmd_takhrij)
     o = sub.add_parser("ocr")
     o.add_argument("--work")
     o.add_argument("--pages", help="PDF page range A-B (default: all)")
