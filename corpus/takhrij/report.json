@@ -1,17 +1,18 @@
 {
- "total": 204,
+ "total": 214,
  "classes": {
-  "derivable": 83,
+  "derivable": 86,
   "encoding_error": 6,
   "genuine_ikhtilaf": 98,
-  "missing_fact": 5,
-  "missing_rule": 12
+  "missing_fact": 6,
+  "missing_rule": 17,
+  "segmentation_error": 1
  },
- "coverage": 0.887,
- "madhhab_coverage": 0.554,
+ "coverage": 0.864,
+ "madhhab_coverage": 0.545,
  "encoding_error": 6,
  "ikhtilaf_matching_madhhab": 30,
- "gaps_open": 24,
+ "gaps_open": 30,
  "revisited": 4,
  "revisit_queue": [],
  "per_encoder": {
@@ -80,6 +81,14 @@
    "derivable": 9,
    "genuine_ikhtilaf": 6,
    "missing_rule": 2
+  },
+  "amr": {
+   "missing_fact": 1,
+   "missing_rule": 5,
+   "segmentation_error": 1
+  },
+  "umum_lafz": {
+   "derivable": 3
   }
  }
 }

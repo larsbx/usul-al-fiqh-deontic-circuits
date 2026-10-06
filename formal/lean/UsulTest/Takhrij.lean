@@ -3,6 +3,12 @@
 -- ikhtilāf cases (the madhhab position), != for recorded encoding errors.
 import Usul
 
+-- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061.f001 (derivable)
+#guard (Usul.Dalala.coversBeyondSabab true false true) == true
+-- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061.f002 (derivable)
+#guard (Usul.Dalala.coversBeyondSabab true false true) == true
+-- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061.f003 (derivable)
+#guard (Usul.Dalala.coversBeyondSabab true false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001 (derivable)
 #guard ((Usul.Qawaid.update (⟨0, .zann⟩ : Usul.Qawaid.Held Nat) ⟨1, .qat⟩).value == 1) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002 (derivable)

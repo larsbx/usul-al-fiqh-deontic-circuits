@@ -83,3 +83,15 @@ A revisited case keeps its history in `revisit` (`from_class`, `from_encoder`, `
 | 52.f008, tayammum for «الصلاة» | ikhtilāf | **not closed**: the majority's restriction is «تنزيلا له على الأدنى», a different principle; the tag was corrected to `rule:haml_ala_adna` on revisit |
 
 Coverage rose from 0.873 to 0.887 and madhhab coverage from 0.534 to 0.554, with encoding errors down from 7 to 6. The other 24 gaps stay open. Each names what it waits for: the indicator (amāra) for aṣl/ẓāhir, the confusion category for lots, permission and owed-by-other for recourse, and principles such as abstention under a possible condition.
+
+**M5 readings on Ibn al-Laḥḥām (`corpus/takhrij/dalala_furu.json`).** Ten furūʿ, under qāʿida 43 (the command) and 61 (wording versus occasion):
+- **Qāʿida 61:** all three cases are derivable under ʿumūm al-lafẓ. For f003 (ʿarāyā) one of the text's two reasons is a different principle, so the annotator flagged `missing_rule` as defensible.
+- **Qāʿida 43:** none is derivable. Ibn al-Laḥḥām says its furūʿ are «very many» and gives uṣūl points instead (one record is no case at all). Each point names where `amrStatus` is too thin:
+  - what counts as a command: writing or gesture, and the Prophet's act;
+  - wording no indication may override («farḍ», «wājib», an explicit threat). The kernel lets any qarīna override any command;
+  - an indication that only removes obligation without naming another status;
+  - one command over items of mixed status;
+  - literal versus figurative use of «amr».
+  These are now open needs in the ledger. The queue stays empty, because the bank does not provide them yet.
+
+Totals after this round: 214 cases, coverage 0.864, madhhab coverage 0.545, 6 encoding errors, 30 open gaps, 5 revisited.
