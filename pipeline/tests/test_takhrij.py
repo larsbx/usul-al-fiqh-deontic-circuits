@@ -59,9 +59,10 @@ def test_annotated_cases_cover_their_qawaid_exactly_once_and_stay_generated():
                 far[r["id"]] = r["qaida"]
     ids = [c["far"] for c in cases]
     assert len(ids) == len(set(ids)) and set(ids) <= set(far)
+    home = {c["far"]: c.get("revisit", {}).get("from_encoder", c["encoder"]) for c in cases}
     for c in cases:
-        assert far[c["far"]] in takhrij.ENCODERS[c["encoder"]]["qawaid"], c["far"]
-    annotated = {e for e in takhrij.ENCODERS if any(c["encoder"] == e for c in cases)}
+        assert far[c["far"]] in takhrij.ENCODERS[home[c["far"]]]["qawaid"], c["far"]
+    annotated = set(home.values())
     expected = {i for e in annotated for i, q in far.items() if q in takhrij.ENCODERS[e]["qawaid"]}
     assert set(ids) == expected
     tests = ROOT / "formal/lean/UsulTest"
@@ -76,3 +77,13 @@ def test_case_findings_point_at_register_questions_on_their_rule():
     for c in takhrij.load(ROOT / "corpus"):
         if "iq" in c:
             assert c["iq"] in reg and set(reg[c["iq"]]["rules"]) & set(takhrij.ENCODERS[c["encoder"]]["sadi"]), c["far"]
+
+
+def test_bank_is_applied_to_itself():
+    """No gap may stay open once the bank provides everything it needs: each extension of the
+    bank is run back over the earlier gaps (revisited cases keep their history)."""
+    cases = takhrij.load(ROOT / "corpus")
+    assert takhrij.revisit_queue(cases) == []
+    for c in cases:
+        if "revisit" in c:
+            assert set(c["revisit"]["closed_by"]) <= takhrij.provides(), c["far"]

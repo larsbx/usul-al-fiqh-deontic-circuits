@@ -64,23 +64,53 @@ import Usul
 #guard ((Usul.Qawaid.update (⟨0, .qat⟩ : Usul.Qawaid.Held Nat) ⟨1, .shakk⟩).value == 1) == false
 #guard ((Usul.Qawaid.update (⟨0, .qat⟩ : Usul.Qawaid.Held Nat) ⟨1, .zann⟩).value == 1) == false
 #guard ((Usul.Qawaid.update (⟨0, .qat⟩ : Usul.Qawaid.Held Nat) ⟨1, .qat⟩).value == 1) == true
-#guard (Usul.Sadi.IsGeneral .nakira .affirmation) == false
-#guard (Usul.Sadi.IsGeneral .nakira .negation) == true
-#guard (Usul.Sadi.IsGeneral .nakira .prohibition) == true
-#guard (Usul.Sadi.IsGeneral .nakira .condition) == true
-#guard (Usul.Sadi.IsGeneral .nakira .question) == false
-#guard (Usul.Sadi.IsGeneral .particle .affirmation) == true
-#guard (Usul.Sadi.IsGeneral .particle .negation) == true
-#guard (Usul.Sadi.IsGeneral .particle .prohibition) == true
-#guard (Usul.Sadi.IsGeneral .particle .condition) == true
-#guard (Usul.Sadi.IsGeneral .particle .question) == true
-#guard (Usul.Sadi.IsGeneral .definiteAl .affirmation) == true
-#guard (Usul.Sadi.IsGeneral .definiteAl .negation) == true
-#guard (Usul.Sadi.IsGeneral .definiteAl .prohibition) == true
-#guard (Usul.Sadi.IsGeneral .definiteAl .condition) == true
-#guard (Usul.Sadi.IsGeneral .definiteAl .question) == true
-#guard (Usul.Sadi.IsGeneral .singularAnnexed .affirmation) == true
-#guard (Usul.Sadi.IsGeneral .singularAnnexed .negation) == true
-#guard (Usul.Sadi.IsGeneral .singularAnnexed .prohibition) == true
-#guard (Usul.Sadi.IsGeneral .singularAnnexed .condition) == true
-#guard (Usul.Sadi.IsGeneral .singularAnnexed .question) == true
+#guard (Usul.Dalala.IsGeneralIn .nakira .affirmation false) == false
+#guard (Usul.Dalala.IsGeneralIn .nakira .affirmation true) == false
+#guard (Usul.Dalala.IsGeneralIn .nakira .negation false) == true
+#guard (Usul.Dalala.IsGeneralIn .nakira .negation true) == false
+#guard (Usul.Dalala.IsGeneralIn .nakira .prohibition false) == true
+#guard (Usul.Dalala.IsGeneralIn .nakira .prohibition true) == false
+#guard (Usul.Dalala.IsGeneralIn .nakira .condition false) == true
+#guard (Usul.Dalala.IsGeneralIn .nakira .condition true) == false
+#guard (Usul.Dalala.IsGeneralIn .nakira .question false) == false
+#guard (Usul.Dalala.IsGeneralIn .nakira .question true) == false
+#guard (Usul.Dalala.IsGeneralIn .particle .affirmation false) == true
+#guard (Usul.Dalala.IsGeneralIn .particle .affirmation true) == false
+#guard (Usul.Dalala.IsGeneralIn .particle .negation false) == true
+#guard (Usul.Dalala.IsGeneralIn .particle .negation true) == false
+#guard (Usul.Dalala.IsGeneralIn .particle .prohibition false) == true
+#guard (Usul.Dalala.IsGeneralIn .particle .prohibition true) == false
+#guard (Usul.Dalala.IsGeneralIn .particle .condition false) == true
+#guard (Usul.Dalala.IsGeneralIn .particle .condition true) == false
+#guard (Usul.Dalala.IsGeneralIn .particle .question false) == true
+#guard (Usul.Dalala.IsGeneralIn .particle .question true) == false
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .affirmation false) == true
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .affirmation true) == false
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .negation false) == true
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .negation true) == false
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .prohibition false) == true
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .prohibition true) == false
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .condition false) == true
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .condition true) == false
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .question false) == true
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .question true) == false
+#guard (Usul.Dalala.IsGeneralIn .singularAnnexed .affirmation false) == true
+#guard (Usul.Dalala.IsGeneralIn .singularAnnexed .affirmation true) == false
+#guard (Usul.Dalala.IsGeneralIn .singularAnnexed .negation false) == true
+#guard (Usul.Dalala.IsGeneralIn .singularAnnexed .negation true) == false
+#guard (Usul.Dalala.IsGeneralIn .singularAnnexed .prohibition false) == true
+#guard (Usul.Dalala.IsGeneralIn .singularAnnexed .prohibition true) == false
+#guard (Usul.Dalala.IsGeneralIn .singularAnnexed .condition false) == true
+#guard (Usul.Dalala.IsGeneralIn .singularAnnexed .condition true) == false
+#guard (Usul.Dalala.IsGeneralIn .singularAnnexed .question false) == true
+#guard (Usul.Dalala.IsGeneralIn .singularAnnexed .question true) == false
+#guard (Usul.Dalala.amrStatus none) == .wajib
+#guard (Usul.Dalala.amrStatus (some .wajib)) == .wajib
+#guard (Usul.Dalala.amrStatus (some .mandub)) == .mandub
+#guard (Usul.Dalala.amrStatus (some .mubah)) == .mubah
+#guard (Usul.Dalala.amrStatus (some .makruh)) == .makruh
+#guard (Usul.Dalala.amrStatus (some .haram)) == .haram
+#guard (Usul.Dalala.coversBeyondSabab true false false) == false
+#guard (Usul.Dalala.coversBeyondSabab true false true) == true
+#guard (Usul.Dalala.coversBeyondSabab true true false) == true
+#guard (Usul.Dalala.coversBeyondSabab true true true) == true

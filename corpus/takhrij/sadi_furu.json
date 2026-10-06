@@ -90,7 +90,10 @@
    },
    "expected": false,
    "note": "Cat. 2: known purity/impurity (or hadath) with preponderant belief (ghalabat al-zann) of its removal: the text holds to the asl and expressly says preponderant belief does not suffice; asl (continuation of a state)=zann and zahir (ghalabat al-zann)=zann, so the >= comparison wrongly gives the zahir -- the asl here behaves as yaqin (text: tayaqqana), which the default grading does not capture.",
-   "iq": "IQ-20"
+   "iq": "IQ-20",
+   "needs": [
+    "fact:amara"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008",
@@ -102,7 +105,10 @@
    },
    "expected": false,
    "note": "Cat. 2: doubting dawn in Ramadan, eating stays permitted until dawn is certain and 'no account is taken of preponderant belief or indications' unless a reliable report exists; asl (night continues)=zann, zahir (preponderant belief/indications)=zann, so the kernel gives the zahir while the text keeps the asl -- only a qat zahir moves it.",
-   "iq": "IQ-20"
+   "iq": "IQ-20",
+   "needs": [
+    "fact:amara"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009",
@@ -889,7 +895,10 @@
    "class": "missing_rule",
    "facts": null,
    "expected": null,
-   "note": "Theft from booty treated as ghulul adds forfeiture of the thief's share, which may equal, be less or more than the theft; it is decided by the ghulul forfeiture rule, not a 1-or-2 multiplier."
+   "note": "Theft from booty treated as ghulul adds forfeiture of the thief's share, which may equal, be less or more than the theft; it is decided by the ghulul forfeiture rule, not a 1-or-2 multiplier.",
+   "needs": [
+    "rule:ghulul_forfeiture"
+   ]
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f001",
@@ -897,7 +906,8 @@
    "class": "genuine_ikhtilaf",
    "facts": {
     "form": "definiteAl",
-    "context": "affirmation"
+    "context": "affirmation",
+    "ahd": false
    },
    "expected": true,
    "positions": [
@@ -919,7 +929,8 @@
    "class": "genuine_ikhtilaf",
    "facts": {
     "form": "definiteAl",
-    "context": "affirmation"
+    "context": "affirmation",
+    "ahd": false
    },
    "expected": true,
    "positions": [
@@ -938,10 +949,20 @@
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f003",
    "encoder": "generality",
-   "class": "missing_fact",
-   "facts": null,
-   "expected": null,
-   "note": "'Keep clear of al-bawl' could make all urine impure, but the ashab read al- as 'ahd (human urine) by a contextual indication; the deciding fact (qarinat 'ahd) is not expressible in the encoder."
+   "class": "derivable",
+   "facts": {
+    "form": "definiteAl",
+    "context": "affirmation",
+    "ahd": true
+   },
+   "expected": false,
+   "note": "'Keep clear of al-bawl': the companions read al- as ʿahd (human urine) by an indication, so it is not general over all urine; with the ʿahd input the kernel derives this.",
+   "revisit": {
+    "from_class": "missing_fact",
+    "closed_by": [
+     "fact:ahd"
+    ]
+   }
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f004",
@@ -949,9 +970,10 @@
    "class": "genuine_ikhtilaf",
    "facts": {
     "form": "definiteAl",
-    "context": "affirmation"
+    "context": "affirmation",
+    "ahd": true
    },
-   "expected": true,
+   "expected": false,
    "positions": [
     {
      "who": "al-madhhab al-mansus al-sahih ('ahd: only Allahu akbar)",
@@ -962,8 +984,15 @@
      "ruling": true
     }
    ],
-   "matches_madhhab": false,
-   "note": "'Its tahrim is al-takbir': the madhhab (al-mansus al-sahih) accepts only 'Allahu akbar' reading al- as 'ahd, against the disputed view admitting variants; the kernel matches only the non-madhhab view."
+   "matches_madhhab": true,
+   "note": "'Its taḥrīm is al-takbīr': the madhhab (al-manṣūṣ al-ṣaḥīḥ) reads al- as ʿahd and accepts only 'Allāhu akbar'; the other view reads genus. The positions differ on the ʿahd fact, and with the madhhab's reading of it the kernel gives the madhhab's ruling.",
+   "revisit": {
+    "from_class": "genuine_ikhtilaf",
+    "closed_by": [
+     "fact:ahd"
+    ],
+    "note": "previously the kernel matched only the non-madhhab view"
+   }
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f005",
@@ -971,7 +1000,8 @@
    "class": "genuine_ikhtilaf",
    "facts": {
     "form": "definiteAl",
-    "context": "affirmation"
+    "context": "affirmation",
+    "ahd": false
    },
    "expected": true,
    "positions": [
@@ -993,7 +1023,8 @@
    "class": "genuine_ikhtilaf",
    "facts": {
     "form": "definiteAl",
-    "context": "affirmation"
+    "context": "affirmation",
+    "ahd": false
    },
    "expected": true,
    "positions": [
@@ -1015,7 +1046,10 @@
    "class": "missing_rule",
    "facts": null,
    "expected": null,
-   "note": "A qadi saying 'the qadi's wife is divorced' has no transmitted ruling; Ibn al-Lahham offers it as possibly resting on al- generality or on whether a speaker is included in his own general speech, so no ruling to test."
+   "note": "A qadi saying 'the qadi's wife is divorced' has no transmitted ruling; Ibn al-Lahham offers it as possibly resting on al- generality or on whether a speaker is included in his own general speech, so no ruling to test.",
+   "needs": [
+    "rule:speaker_in_own_speech"
+   ]
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f008",
@@ -1023,7 +1057,8 @@
    "class": "genuine_ikhtilaf",
    "facts": {
     "form": "definiteAl",
-    "context": "affirmation"
+    "context": "affirmation",
+    "ahd": false
    },
    "expected": true,
    "positions": [
@@ -1037,7 +1072,10 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Tayammum intended for 'al-salat' without specifying: two views, covering obligatory and supererogatory by the rule or only the supererogatory; the ashhar is the latter, so the kernel matches the non-mashhur view."
+   "note": "Tayammum intended for 'al-salat' without specifying: two views, covering obligatory and supererogatory by the rule or only the supererogatory; the ashhar is the latter, so the kernel matches the non-mashhur view. The majority's restriction is «tanzīlan lahu ʿalā al-adnā» (reading toward the lowest), a different principle from ʿahd; the earlier fact:ahd tag was corrected on revisit.",
+   "needs": [
+    "rule:haml_ala_adna"
+   ]
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f009",
@@ -1045,7 +1083,8 @@
    "class": "derivable",
    "facts": {
     "form": "definiteAl",
-    "context": "condition"
+    "context": "condition",
+    "ahd": false
    },
    "expected": true,
    "note": "'If you recite al-Qur'an you are mudabbar': reciting part does not suffice, the article taken as exhaustive."
@@ -1056,7 +1095,8 @@
    "class": "derivable",
    "facts": {
     "form": "singularAnnexed",
-    "context": "affirmation"
+    "context": "affirmation",
+    "ahd": false
    },
    "expected": true,
    "note": "A vow to slaughter 'my child' (a ram due) with several children requires a ram for each, per Ibn Qudama citing Ahmad and built on the rule."
@@ -1067,7 +1107,8 @@
    "class": "derivable",
    "facts": {
     "form": "singularAnnexed",
-    "context": "affirmation"
+    "context": "affirmation",
+    "ahd": false
    },
    "expected": true,
    "note": "A bequest to 'a woman's pregnancy' covers male and female equally (Abu Muhammad and others)."
@@ -1078,7 +1119,8 @@
    "class": "derivable",
    "facts": {
     "form": "singularAnnexed",
-    "context": "affirmation"
+    "context": "affirmation",
+    "ahd": false
    },
    "expected": true,
    "note": "A bequest to a mukatab of 'the middle of his instalments' with an even number covers both middle ones, built on the rule."
@@ -1089,7 +1131,8 @@
    "class": "derivable",
    "facts": {
     "form": "singularAnnexed",
-    "context": "condition"
+    "context": "condition",
+    "ahd": false
    },
    "expected": true,
    "note": "'If your pregnancy is a male... if female...' and she bears twins of both sexes: no divorce, since 'your pregnancy' as a whole is neither, consistent with the annexed noun being general."
@@ -1100,7 +1143,8 @@
    "class": "derivable",
    "facts": {
     "form": "singularAnnexed",
-    "context": "affirmation"
+    "context": "affirmation",
+    "ahd": false
    },
    "expected": true,
    "note": "A waqf on 'his child' covers all his children male and female (al-ashab, with a nass); the grandchildren sub-question is not encoded."
@@ -1108,13 +1152,20 @@
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f006",
    "encoder": "generality",
-   "class": "encoding_error",
+   "class": "derivable",
    "facts": {
     "form": "singularAnnexed",
-    "context": "affirmation"
+    "context": "affirmation",
+    "ahd": true
    },
    "expected": false,
-   "note": "'I bequeath to my neighbour Muhammad' with two neighbours of that name: invalid (al-asahh) or valid for one chosen by the heirs, and nobody gives it to both as generality would; Ibn al-Lahham himself calls it contrary to the rule, showing the annexed singular is not general when individuated by a proper name."
+   "note": "'I bequeath to my neighbour Muḥammad' with two neighbours so named: the proper name pins the annexed singular (taʿyīn), so it is not general; both positions (invalid, al-aṣaḥḥ; or valid for one chosen by the heirs) agree on that, and their dispute about validity lies beyond this reading.",
+   "revisit": {
+    "from_class": "encoding_error",
+    "closed_by": [
+     "fact:ahd"
+    ]
+   }
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q054.f001",
@@ -1122,7 +1173,8 @@
    "class": "derivable",
    "facts": {
     "form": "nakira",
-    "context": "prohibition"
+    "context": "prohibition",
+    "ahd": false
    },
    "expected": true,
    "note": "'Let neither the menstruating nor the junub recite shay'an of the Qur'an' forbids even less than a verse, the indefinite being general under prohibition."
@@ -1133,7 +1185,10 @@
    "class": "missing_rule",
    "facts": null,
    "expected": null,
-   "note": "A claimant who said 'I have no bayyina' then brings one is not heard (al-mansus) though a witness who denied holding testimony is heard; both are negated indefinites and the text distinguishes them by right-for-him vs right-against-him, not generality."
+   "note": "A claimant who said 'I have no bayyina' then brings one is not heard (al-mansus) though a witness who denied holding testimony is heard; both are negated indefinites and the text distinguishes them by right-for-him vs right-against-him, not generality.",
+   "needs": [
+    "rule:negated_indefinite_by_role"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001",
@@ -1313,7 +1368,10 @@
    },
    "expected": "lot",
    "note": "Deposit claimed by two, depositary does not know whose: Aḥmad prescribes lot (winner swears and takes); the deposit is property that the madhhab elsewhere splits between claimants (f045, f046), so the kernel says divide — it lacks Ibn Rajab's second category (a specific owner lost in confusion is recovered by lot, not by division).",
-   "iq": "IQ-09"
+   "iq": "IQ-09",
+   "needs": [
+    "fact:confusion_category"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f008",
@@ -1414,7 +1472,10 @@
    },
    "expected": "lot",
    "note": "Bequest to 'my neighbour Muḥammad' with two neighbours so named: the positions are voidness or validity with lot (the earlier fuller treatment, l.8054, says per qiyās al-madhhab the confused entitled to property is extracted by lot, and the naṣṣ is validity); a property bequest is divisible, so the kernel says divide, matching no position — the reading lacks the rule that a confused specific entitled is not served by division.",
-   "iq": "IQ-09"
+   "iq": "IQ-09",
+   "needs": [
+    "fact:confusion_category"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f013",
@@ -1482,7 +1543,10 @@
    },
    "expected": "lot",
    "note": "Man dies leaving wives one of whom was irrevocably divorced or invalidly married and unknown: Aḥmad prescribes lot to identify her and the inheritance goes to the rest; the wives' share is divisible money so the kernel divides it among all, contradicting the naṣṣ — again the specific-entitled-in-confusion category is missing.",
-   "iq": "IQ-09"
+   "iq": "IQ-09",
+   "needs": [
+    "fact:confusion_category"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f016",
@@ -1694,7 +1758,10 @@
    "class": "missing_rule",
    "facts": null,
    "expected": null,
-   "note": "Wife whose divorce he delegated to an agent: he abstains until he knows what the agent did; this is Taqī al-Dīn's principle of abstention while a divorce condition may have occurred, not qurʿa."
+   "note": "Wife whose divorce he delegated to an agent: he abstains until he knows what the agent did; this is Taqī al-Dīn's principle of abstention while a divorce condition may have occurred, not qurʿa.",
+   "needs": [
+    "rule:abstention_under_possible_condition"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f027",
@@ -1702,7 +1769,10 @@
    "class": "missing_rule",
    "facts": null,
    "expected": null,
-   "note": "Divorce 'on Laylat al-Qadr': he abstains from the last ten nights; decided by the abstention-under-possible-condition principle, not by lots."
+   "note": "Divorce 'on Laylat al-Qadr': he abstains from the last ten nights; decided by the abstention-under-possible-condition principle, not by lots.",
+   "needs": [
+    "rule:abstention_under_possible_condition"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f028",
@@ -1710,7 +1780,10 @@
    "class": "missing_rule",
    "facts": null,
    "expected": null,
-   "note": "Divorce 'a month before my death': he abstains absolutely (Muhannā); same abstention principle, not qurʿa (the appended sentence only cross-references the raven case)."
+   "note": "Divorce 'a month before my death': he abstains absolutely (Muhannā); same abstention principle, not qurʿa (the appended sentence only cross-references the raven case).",
+   "needs": [
+    "rule:abstention_under_possible_condition"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f029",
@@ -1906,7 +1979,10 @@
    "class": "missing_fact",
    "facts": null,
    "expected": null,
-   "note": "Two fayʾ recipients of equal rank: ordered by age/hijra or Islam-precedence/religion/age/courage, then the ruler may lot or order by ijtihād; the ruling turns on tie-breaking criteria and on the ruler's discretion (lot optional), which the encoder has no field for."
+   "note": "Two fayʾ recipients of equal rank: ordered by age/hijra or Islam-precedence/religion/age/courage, then the ruler may lot or order by ijtihād; the ruling turns on tie-breaking criteria and on the ruler's discretion (lot optional), which the encoder has no field for.",
+   "needs": [
+    "fact:tie_break_criteria"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f039",
@@ -1995,7 +2071,10 @@
    },
    "expected": "lot",
    "note": "Thing in a third party's hand acknowledged for one of two claimants unspecified: lot (the wajhān are only about the oath); the thing is property the madhhab otherwise splits between claimants (f045, f046), so the kernel says divide — missing the specific-owner-in-confusion category.",
-   "iq": "IQ-09"
+   "iq": "IQ-09",
+   "needs": [
+    "fact:confusion_category"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f045",
@@ -2316,7 +2395,10 @@
    "class": "missing_fact",
    "facts": null,
    "expected": null,
-   "note": "Spending on a found item gives recourse with a judge's permission and is disputed without it, partly because keeping it was not required; it turns on the judge's permission and on whether keeping it was required, facts the encoder lacks."
+   "note": "Spending on a found item gives recourse with a judge's permission and is disputed without it, partly because keeping it was not required; it turns on the judge's permission and on whether keeping it was required, facts the encoder lacks.",
+   "needs": [
+    "fact:permission"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f005",
@@ -2345,7 +2427,10 @@
    "class": "missing_fact",
    "facts": null,
    "expected": null,
-   "note": "A depositary feeding a deposited animal intending recourse has it if asking the owner was impossible, and otherwise faces two disputed ṭarīqas; it turns on whether permission could be sought, which the encoder lacks."
+   "note": "A depositary feeding a deposited animal intending recourse has it if asking the owner was impossible, and otherwise faces two disputed ṭarīqas; it turns on whether permission could be sought, which the encoder lacks.",
+   "needs": [
+    "fact:permission"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f007",
@@ -2395,7 +2480,10 @@
    "class": "missing_fact",
    "facts": null,
    "expected": null,
-   "note": "A pledgee rebuilding a ruined pledged house: al-Qāḍī (Mujarrad), al-Mughnī and al-Muḥarrir allow only his materials because rebuilding is not owed by the owner, al-Qāḍī (Khilāf) and Ibn ʿAqīl allow recourse for preserving the security; it turns on whether the expense was owed or needed, which the encoder lacks."
+   "note": "A pledgee rebuilding a ruined pledged house: al-Qāḍī (Mujarrad), al-Mughnī and al-Muḥarrir allow only his materials because rebuilding is not owed by the owner, al-Qāḍī (Khilāf) and Ibn ʿAqīl allow recourse for preserving the security; it turns on whether the expense was owed or needed, which the encoder lacks.",
+   "needs": [
+    "fact:owed_by_other"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f010",
@@ -2403,7 +2491,10 @@
    "class": "missing_fact",
    "facts": null,
    "expected": null,
-   "note": "A lessee rebuilding the rented house has no recourse (naṣṣ), with a possibility of recourse tied to whether the lessor is obliged to renovate (al-Talkhīṣ); the kernel's gift=False would wrongly give recourse because it lacks a field for whether the expense was owed by the other party."
+   "note": "A lessee rebuilding the rented house has no recourse (naṣṣ), with a possibility of recourse tied to whether the lessor is obliged to renovate (al-Talkhīṣ); the kernel's gift=False would wrongly give recourse because it lacks a field for whether the expense was owed by the other party.",
+   "needs": [
+    "fact:owed_by_other"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f011",
@@ -3277,7 +3368,10 @@
    "class": "missing_rule",
    "facts": null,
    "expected": null,
-   "note": "Whether a transgressing executor ceases to be executor (two ihtimalat of Ibn 'Aqil) is decided by the pure-trust vs compound-trust voidance principle, not by loss liability."
+   "note": "Whether a transgressing executor ceases to be executor (two ihtimalat of Ibn 'Aqil) is decided by the pure-trust vs compound-trust voidance principle, not by loss liability.",
+   "needs": [
+    "rule:trust_voidance"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f001",
@@ -3285,7 +3379,10 @@
    "class": "missing_rule",
    "facts": null,
    "expected": null,
-   "note": "Days of a mustahada beyond her sitting are treated as non-existent (purity rulings); no right-holder is involved, the broader 'unknown as non-existent' rule decides."
+   "note": "Days of a mustahada beyond her sitting are treated as non-existent (purity rulings); no right-holder is involved, the broader 'unknown as non-existent' rule decides.",
+   "needs": [
+    "rule:unknown_as_nonexistent"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002",
@@ -3293,7 +3390,10 @@
    "class": "missing_rule",
    "facts": null,
    "expected": null,
-   "note": "A luqata after the year is owned by the finder because its owner is unknown (non-ownable ones are given in charity for him, al-sahih); finder-ownership comes from the luqata law and is outside the owner/publicInterest outputs."
+   "note": "A luqata after the year is owned by the finder because its owner is unknown (non-ownable ones are given in charity for him, al-sahih); finder-ownership comes from the luqata law and is outside the owner/publicInterest outputs.",
+   "needs": [
+    "rule:luqata"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003",
@@ -3311,7 +3411,10 @@
    "class": "missing_rule",
    "facts": null,
    "expected": null,
-   "note": "A sister confused among a city's women, carrion among a town's meat, a little haram among much halal: the unknown prohibited item is disregarded (ishtibah rule), not a right-holder question."
+   "note": "A sister confused among a city's women, carrion among a town's meat, a little haram among much halal: the unknown prohibited item is disregarded (ishtibah rule), not a right-holder question.",
+   "needs": [
+    "rule:unknown_as_nonexistent"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f005",
@@ -3319,15 +3422,28 @@
    "class": "missing_rule",
    "facts": null,
    "expected": null,
-   "note": "Street mud is ruled pure (al-sahih al-mansus): unknown impurity treated as non-existent, no right-holder."
+   "note": "Street mud is ruled pure (al-sahih al-mansus): unknown impurity treated as non-existent, no right-holder.",
+   "needs": [
+    "rule:unknown_as_nonexistent"
+   ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f006",
-   "encoder": "unknown_owner",
-   "class": "missing_rule",
-   "facts": null,
-   "expected": null,
-   "note": "One wife divorced and forgotten is identified by lot and the rest are lawful; decided by the lot principle, not a recipient rule."
+   "encoder": "lots",
+   "class": "derivable",
+   "facts": {
+    "entitled_known": false,
+    "divisible": false
+   },
+   "expected": "lot",
+   "note": "One wife divorced and forgotten is identified by lot and the others are lawful (al-madhhab al-ṣaḥīḥ al-mashhūr); retested under the lots reading, which the bank now has.",
+   "revisit": {
+    "from_class": "missing_rule",
+    "from_encoder": "unknown_owner",
+    "closed_by": [
+     "rule:lots"
+    ]
+   }
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f007",
@@ -3335,7 +3451,10 @@
    "class": "missing_rule",
    "facts": null,
    "expected": null,
-   "note": "A forgotten ihram later specified as qiran suffices for hajj, with two wujuh for the umra; a ritual-intention question, no right-holder."
+   "note": "A forgotten ihram later specified as qiran suffices for hajj, with two wujuh for the umra; a ritual-intention question, no right-holder.",
+   "needs": [
+    "rule:ihram_specification"
+   ]
   }
  ]
 }

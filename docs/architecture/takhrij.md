@@ -65,3 +65,21 @@ The second figure is the honest one: in 69 ikhtilāf cases the reading lands on 
 - **Unknown owner (Q20 ← Ibn Rajab 106): six missing rules.** Ibn Rajab's qāʿida is broader («the unknown is treated as non-existent»). Most of its furūʿ, such as the duration of istiḥāḍa, are not about a right-holder at all.
 
 None of these were patched in the readings. Changing a reading is a review decision, and its guards will show what changes.
+
+## The bank applied to itself
+
+Every gap carries `needs`: the capability that would close it, as `fact:<field>` for a missing input or `rule:<principle>` for a missing principle. Every encoder `provides` its rule and its fact fields. `revisit_queue` lists the gaps whose needs the bank now provides in full. `test_bank_is_applied_to_itself` requires that queue to be empty, so an extension of the bank cannot land without being run back over the earlier gaps.
+
+A revisited case keeps its history in `revisit` (`from_class`, `from_encoder`, `closed_by`): artifacts are superseded, not silently rewritten. Mutation-checked: making an open gap's need a provided one fails the test.
+
+**First round (M5's ʿahd-aware generality, `Usul.Dalala.IsGeneralIn`).** The generality encoder was refined in place. By `isGeneralIn_no_ahd` its old cases are unchanged, and the Lean guards confirm it. The queue then held five gaps:
+
+| Case | Before | After |
+|---|---|---|
+| Ibn al-Laḥḥām 52.f003, «تنزهوا من البول» | missing fact | derivable (al- read as ʿahd by an indication) |
+| 52.f004, «تحريمها التكبير» | ikhtilāf, kernel on the minority side | ikhtilāf on the **madhhab** side: the positions differ on the ʿahd fact, and the kernel reproduces each from its reading of it |
+| 53.f006, «أوصيت لجاري محمد» | encoding error | derivable (a proper name pins the annexed singular) |
+| Ibn Rajab 106.f006, the forgotten divorced wife | missing rule | derivable under the lots reading, which the bank already had |
+| 52.f008, tayammum for «الصلاة» | ikhtilāf | **not closed**: the majority's restriction is «تنزيلا له على الأدنى», a different principle; the tag was corrected to `rule:haml_ala_adna` on revisit |
+
+Coverage rose from 0.873 to 0.887 and madhhab coverage from 0.534 to 0.554, with encoding errors down from 7 to 6. The other 24 gaps stay open. Each names what it waits for: the indicator (amāra) for aṣl/ẓāhir, the confusion category for lots, permission and owed-by-other for recourse, and principles such as abstention under a possible condition.

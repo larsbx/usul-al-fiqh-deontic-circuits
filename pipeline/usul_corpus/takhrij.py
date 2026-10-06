@@ -17,6 +17,7 @@ B = (False, True)
 GRADES = ("wahm", "shakk", "zann", "qat")
 FORMS = ("nakira", "particle", "definiteAl", "singularAnnexed")
 CONTEXTS = ("affirmation", "negation", "prohibition", "condition", "question")
+HUKM = ("wajib", "mandub", "mubah", "makruh", "haram")
 
 RAJAB = "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q{:03d}"
 LAHHAM = "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q{:03d}"
@@ -92,13 +93,34 @@ ENCODERS: dict[str, dict] = {
         py=lambda f: GRADES.index(f["asl_grade"]) <= GRADES.index(f["zahir_grade"])),
     "generality": dict(
         sadi=[59, 60], qawaid=[LAHHAM.format(n) for n in (52, 53, 54)],
-        facts={"form": FORMS, "context": CONTEXTS},
-        out=B, lean="Usul.Sadi.IsGeneral {form} {context}",
-        py=lambda f: f["form"] != "nakira" or f["context"] in ("negation", "prohibition", "condition")),
+        facts={"form": FORMS, "context": CONTEXTS, "ahd": B},
+        out=B, lean="Usul.Dalala.IsGeneralIn {form} {context} {ahd}",
+        py=lambda f: not f["ahd"] and (f["form"] != "nakira" or f["context"] in ("negation", "prohibition", "condition"))),
+    "amr": dict(
+        sadi=[], qawaid=[LAHHAM.format(43)], facts={"qarina": ("none",) + HUKM},
+        out=HUKM, lean="Usul.Dalala.amrStatus {qarina}",
+        lits={"qarina": {"none": "none", **{h: f"(some .{h})" for h in HUKM}}},
+        py=lambda f: "wajib" if f["qarina"] == "none" else f["qarina"]),
+    "umum_lafz": dict(
+        sadi=[], qawaid=[LAHHAM.format(61)], facts={"in_occasion": B, "general_wording": B},
+        out=B, lean="Usul.Dalala.coversBeyondSabab true {in_occasion} {general_wording}",
+        py=lambda f: f["in_occasion"] or f["general_wording"]),
 }
+
+
+def provides() -> set[str]:
+    """What the bank can now express: one rule per encoder and every fact field."""
+    return {f"rule:{n}" for n in ENCODERS} | {f"fact:{k}" for e in ENCODERS.values() for k in e["facts"]}
+
+
+def revisit_queue(cases: list[dict]) -> list[str]:
+    """Gaps whose every need the bank now provides: the bank applied to itself."""
+    have = provides()
+    return [c["far"] for c in cases if c.get("needs") and set(c["needs"]) <= have]
 
 CLASSES = ("derivable", "genuine_ikhtilaf", "encoding_error", "missing_fact", "missing_rule", "segmentation_error")
 GUARDED = {"derivable": "==", "genuine_ikhtilaf": "==", "encoding_error": "!="}
+GAPS = ("encoding_error", "missing_fact", "missing_rule")
 
 
 def _lit(v) -> str:
@@ -110,7 +132,8 @@ def _lit(v) -> str:
 
 
 def lean_expr(encoder: str, facts: dict) -> str:
-    return ENCODERS[encoder]["lean"].format(**{k: _lit(v) for k, v in facts.items()})
+    lits = ENCODERS[encoder].get("lits", {})
+    return ENCODERS[encoder]["lean"].format(**{k: lits[k][v] if k in lits else _lit(v) for k, v in facts.items()})
 
 
 def check_case(case: dict) -> list[str]:
@@ -131,6 +154,11 @@ def check_case(case: dict) -> list[str]:
             errs.append("class contradicts the kernel's output")
     if case["class"] == "genuine_ikhtilaf" and len(case.get("positions") or []) < 2:
         errs.append("ikhtilāf needs at least two positions")
+    for n in case.get("needs", []):
+        if not n.startswith(("fact:", "rule:")):
+            errs.append(f"need {n} is neither fact: nor rule:")
+    if "needs" in case and case["class"] not in GAPS and not (case["class"] == "genuine_ikhtilaf" and not case.get("matches_madhhab")):
+        errs.append("needs on a case that is not a gap")
     return errs
 
 
@@ -170,6 +198,9 @@ def report(cases: list[dict]) -> dict:
             "madhhab_coverage": round((by["derivable"] + sum(1 for c in ikh if c.get("matches_madhhab"))) / scope, 3) if scope else 0.0,
             "encoding_error": by["encoding_error"],
             "ikhtilaf_matching_madhhab": sum(1 for c in ikh if c.get("matches_madhhab")),
+            "gaps_open": sum(1 for c in cases if c.get("needs")),
+            "revisited": sum(1 for c in cases if c.get("revisit")),
+            "revisit_queue": revisit_queue(cases),
             "per_encoder": {e: dict(sorted(v.items())) for e, v in per.items() if v}}
 
 

@@ -936,7 +936,10 @@
    "lean": [
     "Usul.Sadi.IsGeneral",
     "Usul.Sadi.q59_nakira_general_in_negation",
-    "Usul.Sadi.q59_nakira_absolute_in_affirmation"
+    "Usul.Sadi.q59_nakira_absolute_in_affirmation",
+    "Usul.Dalala.IsGeneralIn",
+    "Usul.Dalala.isGeneralIn_no_ahd",
+    "Usul.Dalala.ahd_blocks"
    ]
   },
   {
@@ -947,7 +950,10 @@
    "domain": "lafz",
    "lean": [
     "Usul.Sadi.IsGeneral",
-    "Usul.Sadi.q60_markers_general"
+    "Usul.Sadi.q60_markers_general",
+    "Usul.Dalala.IsGeneralIn",
+    "Usul.Dalala.isGeneralIn_no_ahd",
+    "Usul.Dalala.ahd_blocks"
    ]
   }
  ]

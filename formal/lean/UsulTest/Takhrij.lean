@@ -110,33 +110,35 @@ import Usul
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f005 (derivable)
 #guard (Usul.Muamalat.compensationOwed 1 true) == 2
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f001 (genuine_ikhtilaf)
-#guard (Usul.Sadi.IsGeneral .definiteAl .affirmation) == true
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .affirmation false) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f002 (genuine_ikhtilaf)
-#guard (Usul.Sadi.IsGeneral .definiteAl .affirmation) == true
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .affirmation false) == true
+-- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f003 (derivable)
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .affirmation true) == false
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f004 (genuine_ikhtilaf)
-#guard (Usul.Sadi.IsGeneral .definiteAl .affirmation) == true
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .affirmation true) == false
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f005 (genuine_ikhtilaf)
-#guard (Usul.Sadi.IsGeneral .definiteAl .affirmation) == true
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .affirmation false) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f006 (genuine_ikhtilaf)
-#guard (Usul.Sadi.IsGeneral .definiteAl .affirmation) == true
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .affirmation false) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f008 (genuine_ikhtilaf)
-#guard (Usul.Sadi.IsGeneral .definiteAl .affirmation) == true
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .affirmation false) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f009 (derivable)
-#guard (Usul.Sadi.IsGeneral .definiteAl .condition) == true
+#guard (Usul.Dalala.IsGeneralIn .definiteAl .condition false) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f001 (derivable)
-#guard (Usul.Sadi.IsGeneral .singularAnnexed .affirmation) == true
+#guard (Usul.Dalala.IsGeneralIn .singularAnnexed .affirmation false) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f002 (derivable)
-#guard (Usul.Sadi.IsGeneral .singularAnnexed .affirmation) == true
+#guard (Usul.Dalala.IsGeneralIn .singularAnnexed .affirmation false) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f003 (derivable)
-#guard (Usul.Sadi.IsGeneral .singularAnnexed .affirmation) == true
+#guard (Usul.Dalala.IsGeneralIn .singularAnnexed .affirmation false) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f004 (derivable)
-#guard (Usul.Sadi.IsGeneral .singularAnnexed .condition) == true
+#guard (Usul.Dalala.IsGeneralIn .singularAnnexed .condition false) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f005 (derivable)
-#guard (Usul.Sadi.IsGeneral .singularAnnexed .affirmation) == true
--- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f006 (encoding_error)
-#guard (Usul.Sadi.IsGeneral .singularAnnexed .affirmation) != false
+#guard (Usul.Dalala.IsGeneralIn .singularAnnexed .affirmation false) == true
+-- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f006 (derivable)
+#guard (Usul.Dalala.IsGeneralIn .singularAnnexed .affirmation true) == false
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q054.f001 (derivable)
-#guard (Usul.Sadi.IsGeneral .nakira .prohibition) == true
+#guard (Usul.Dalala.IsGeneralIn .nakira .prohibition false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001 (genuine_ikhtilaf)
 #guard (Usul.Muamalat.itlafLiable (Usul.Muamalat.withRight .repelHarm) .deliberate) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002 (derivable)
@@ -373,3 +375,5 @@ import Usul
 #guard (Usul.Muamalat.lossLiable .trustee false true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003 (derivable)
 #guard (Usul.Muamalat.recipient false) == .publicInterest
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f006 (derivable)
+#guard (Usul.Muamalat.allocation false false) == .lot

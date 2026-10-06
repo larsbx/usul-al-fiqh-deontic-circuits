@@ -273,6 +273,9 @@ import Usul
 #check @Usul.Sadi.IsGeneral
 #check @Usul.Sadi.q59_nakira_general_in_negation
 #check @Usul.Sadi.q59_nakira_absolute_in_affirmation
+#check @Usul.Dalala.IsGeneralIn
+#check @Usul.Dalala.isGeneralIn_no_ahd
+#check @Usul.Dalala.ahd_blocks
 #check @Usul.Sadi.q60_markers_general
 #check @Usul.Process.status
 #check @Usul.Process.analogy_never_outranks_text
