@@ -9,7 +9,7 @@ a pin disagree. Tag lines: `-- @schema Q<n> <schema>`.
 
 namespace UsulTest.Schemata
 
-open Usul Usul.Schema Usul.Muamalat Usul.Kulliyyat Usul.Qiyas
+open Usul Usul.Schema Usul.Muamalat Usul.Kulliyyat Usul.Qiyas Usul.Jadal
 
 -- @schema Q2 S4-closure
 example {Act : Type} (needs : Act → Act → Prop) (base : Act → Prop) (a : Act) :
@@ -165,5 +165,9 @@ example (g : Bool) {p : Nat} (hp : 0 < p) :
 -- @schema Q58 S3-gate
 example {α β : Type} {a : Qiyas.Argument α β} (hg : Qiyas.gate.Holds a) {H : α → β}
     (hH : Qiyas.Agrees H a.known) (hf : Factors H a.illa) : H a.far = a.hukm := qiyas_sound hg hH hf
+
+-- @schema Q58 S2-priority
+example {β : Type} (s : Bool) (text illaQ shabahQ : Option β) (d : β) :
+    farByOrder s text illaQ shabahQ d = resolveD [text, illaQ, if s then shabahQ else none] d := rfl
 
 end UsulTest.Schemata

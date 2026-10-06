@@ -906,10 +906,21 @@
     "Usul.Qiyas.fasad_wad",
     "Usul.Qiyas.dawaran_not_unique",
     "Usul.Qiyas.tard_vacuous",
-    "Usul.Qiyas.sabr_needs_hasr"
+    "Usul.Qiyas.sabr_needs_hasr",
+    "Usul.Jadal.farByOrder",
+    "Usul.Jadal.shabah_never_overrides_illa",
+    "Usul.Jadal.shabah_only_as_fallback",
+    "Usul.Jadal.shabah_rejected",
+    "Usul.Jadal.Qadih.kind",
+    "Usul.Jadal.kind_spec",
+    "Usul.Jadal.debateGate_holds_iff",
+    "Usul.Jadal.debateGate",
+    "Usul.Jadal.debateGate_sound",
+    "Usul.Jadal.objection_blocks"
    ],
    "schemata": [
     "S1-invariance",
+    "S2-priority",
     "S3-gate"
    ]
   },

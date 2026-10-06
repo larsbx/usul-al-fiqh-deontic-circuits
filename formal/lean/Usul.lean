@@ -10,3 +10,4 @@ import Usul.Muamalat
 import Usul.Kulliyyat
 import Usul.Process
 import Usul.Qiyas
+import Usul.Jadal

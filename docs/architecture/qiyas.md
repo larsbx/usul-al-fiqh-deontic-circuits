@@ -39,16 +39,73 @@ Model: a waṣf is a Boolean description of cases. The given cases (`Known`) are
 - `qiyas_sound`: through the gate, every ruling that agrees with the given cases and depends only on the ʿilla gives the farʿ the aṣl's ruling.
 - `gate_consistent`: through the gate, such a ruling exists. The naqḍ impediment is exactly what consistency needs: removing it breaks this theorem, which was mutation-checked.
 
+## All objections at once: the debate gate (`Usul.Jadal`)
+
+The sources list twelve objections (Rawḍa v2 p301; al-Ṭūfī v3 p458) or twenty-five (al-Kawkab v4 p229, after Ibn al-Ḥājib and Ibn Mufliḥ). They hold that «all reduce to manʿ or muʿāraḍa» (al-Ṭūfī v3 p565; al-Kawkab v4 p229; Ādāb al-Baḥth p351). `Usul.Jadal` makes that a theorem.
+
+A `Debate` extends the qiyās `Argument` with everything an objection speaks about. Each `Qadih` (eighteen of them) has a success condition and a kind:
+
+| Kind | Objections | Role in the gate |
+|---|---|---|
+| manʿ (denies a premise) | istifsār, manʿ, taqsīm, muṭālaba, al-qawl bi'l-mūjab, tarkīb, ikhtilāf al-ḍābiṭ, mukhālafat al-ḥukm, ifḍāʾ, inḍibāṭ | its negation is a condition |
+| muʿāraḍa (brings a competing source) | fasād al-iʿtibār, fasād al-waḍʿ, naqḍ, kasr, ʿadam al-taʾthīr, farq, qalb, muʿāraḍa | it is an impediment |
+
+- `debateGate_holds_iff`: the gate holds **iff no objection succeeds**. The list of objections is exactly the gate, nothing more and nothing less.
+- `objection_blocks`, `kind_spec`: every successful objection blocks, as a missing condition or a present impediment.
+- `debateGate_sound`: when none succeeds, every ruling agreeing with the given cases and depending only on the ʿilla gives the farʿ the claimed ruling.
+- Qalb and muʿāraḍa produce a taʿāruḍ, which goes to `Usul.resolve` (`counter_resolved_by_tarjih`).
+
+Mutation-checked: dropping an objection from `Qadih.all` breaks `mem_all`, and neutering tarkīb breaks soundness. The classification of each objection is this encoding's reading of the reduction claim, which the sources do not tabulate (IQ-18).
+
+## Kinds of qiyās and tarjīḥ
+
+| | Lean | Source |
+|---|---|---|
+| qiyās al-ʿaks: the contrary ruling where the ʿilla is absent | `qiyas_aks` | al-Kawkab v4 p8; Ibn ʿUthaymīn p74 |
+| qiyās al-dalāla: joining by an indicator of the ʿilla | `dalala_verifies` | Rawḍa v2 p246; al-Kawkab v4 p7 |
+| qiyās al-awlā / al-musāwī: a fortiori on a graded ʿilla | `qiyas_awla`, `qiyas_musawi` | Rawḍa v2 p187; al-Kawkab v4 pp. 105–106 |
+| shabah only as a fallback after qiyās al-ʿilla (S2) | `farByOrder`, `shabah_never_overrides_illa` | al-Kawkab v4 p190 |
+| tarjīḥ: pick an ʿilla of maximal rank (S8) under any scale meeting the stated constraints | `RespectsSources`, `preferred_optimal`, `sabr_beats_shabah` | al-Kawkab v4 p718; Rawḍa v2 p401; al-Ṭūfī v3 p716 |
+
+Tarjīḥ is stated as *constraints* (sabr ≻ munāsaba ≻ shabah, ijmāʿ ≻ naṣṣ ≻ inferred), not as an invented total order. `exampleRank_respects` shows the constraints are consistent.
+
 ## Disputed points are parameters, with the established positions cited
 
 | Question | Parameter | Established answer cited |
 |---|---|---|
-| IQ-13 takhṣīṣ al-ʿilla | `policy : IllaSource → Bool` | al-Musawwada v1 p412: no takhṣīṣ of an inferred ʿilla, "its specification is a naqḍ of it" (Aḥmad), with a second view among the companions |
+| IQ-13 takhṣīṣ al-ʿilla | `policy : IllaSource → Bool` | al-Musawwada v1 p412: no takhṣīṣ of an inferred ʿilla (Aḥmad), two views among the companions. Rawḍa v2 p274: Ibn Qudāma defends the split by source. Al-Kawkab v4 p58: ten views, most Ḥanbalīs allowing takhṣīṣ. **The sources report al-Qāḍī on both sides** (Rawḍa v2 p271 vs al-Kawkab v4 p58). Ibn al-Qayyim (Iʿlām v3 p27): takhṣīṣ for a missing condition or a present impediment |
 | IQ-14 plural ʿilal | `allowPlural` | al-Musawwada v1 p328: permitted when the two require one ruling |
-| IQ-15 kasr | (admissibility not yet a gate impediment) | al-Musawwada v1 p428: two views; Abū al-Khaṭṭāb: not a valid objection |
+| IQ-15 kasr | `Policy.admitKasr` (an impediment of the debate gate when admitted) | al-Musawwada v1 p428: two views; Abū al-Khaṭṭāb: not valid. Rawḍa v2 p312, al-Ṭūfī v3 p510, al-Kawkab v4 p67: not binding (the sound view among the companions). Al-Shinqīṭī (Mudhakkira p459): like naqḍ |
+| IQ-17 shabah | `acceptShabah` in `farByOrder` | al-Kawkab v4 p190: a proof for us only where qiyās al-ʿilla is impossible; Rawḍa v2 p243: two reports from Aḥmad, al-Qāḍī rejecting; Ibn al-Qayyim (Iʿlām v1 p115): reported only from those in error; Ibn Taymiyya (al-Radd p203): folded into ʿilla or dalāla |
+| IQ-18 manʿ / muʿāraḍa classification | `Qadih.kind` | al-Ṭūfī v3 p565, al-Kawkab v4 p229, Ādāb al-Baḥth p351 (some: all reduce to manʿ), p344 (muṭālaba and tarkīb under manʿ) |
 | IQ-16 the mursal | `acceptMursal` | al-Musawwada v1 p450: not, per the later Ḥanbalī uṣūlīs (Mālik: yes); Rawḍa v1 p477: the threefold division |
 
 These are interpretive commitments for the `SHARIAH-AUTHORITY` gate (see [`schemata.md`](schemata.md#governance-where-the-explanations-live-and-why-there)). Nothing here fixes a parameter.
+
+## Citation map
+
+`corpus/citations/qiyas_principles.json` (schema `citation_map.schema.json`) holds 241 citations from the qiyās chapters of the pinned works:
+
+| Work | Pages |
+|---|---|
+| Rawḍa | v2 pp. 140–332, 397–401 |
+| al-Ṭūfī | v3 pp. 218–574, 713–720 |
+| al-Kawkab | v4 pp. 5–396, 716–735 |
+| Iʿlām | v1 pp. 102–116, 151–263, 289 to v2 p44 |
+| Ibn Taymiyya, al-Radd | pp. 115–121, 200–212, 371–373 |
+| al-Shinqīṭī's Mudhakkira | pp. 379–492 |
+| al-Shinqīṭī's Ādāb al-Baḥth | pp. 290–355 |
+| Ibn ʿUthaymīn | pp. 68–74 |
+
+Every excerpt was re-verified verbatim against the cached witness, and every OpenITI locator against the next page marker, before commit. Its `formalises` table maps each topic to the Lean constants it grounds, and `unformalised` names the rest:
+- ḥujjiyya;
+- shahādat al-uṣūl;
+- jalī versus khafī;
+- qiyās in asbāb, fixed amounts and negation;
+- Ibn al-Qayyim's catalogue of erroneous qiyās;
+- tamthīl versus shumūl.
+
+`test_citation_maps_are_grounded` requires every catalogued `Usul.Qiyas` / `Usul.Jadal` constant to be grounded by a cited topic.
 
 ## Sources
 

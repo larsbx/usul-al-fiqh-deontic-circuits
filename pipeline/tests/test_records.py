@@ -148,3 +148,28 @@ def test_questions_do_not_overlap():
     would merge into one."""
     pins = [c for q in _register(Path(__file__).parents[2])["questions"] for c in q["pins"]]
     assert len(pins) == len(set(pins))
+
+
+def test_citation_maps_are_grounded():
+    """Each citation names a registered witness within its excerpt limit; every topic is either
+    formalised (by #check-ed constants) or listed as unformalised; every Usul.Qiyas / Usul.Jadal
+    constant linked in the catalogue is grounded by some cited topic."""
+    from usul_corpus.records import EXCERPT_LEN
+    root = Path(__file__).parents[2]
+    rights = {w["id"]: work["rights"] for work in json.loads((root / "corpus/registry.json").read_text())["works"] for w in work["witnesses"]}
+    checked = (root / "formal/lean/UsulTest/SignatureMap.lean").read_text()
+    schema = json.loads((root / "schemas/citation_map.schema.json").read_text())
+    linked = {n for r in json.loads((root / "corpus/proposals/sadi_qawaid.json").read_text())["rules"] for n in r["lean"]}
+    for f in sorted((root / "corpus/citations").glob("*.json")):
+        cmap = json.loads(f.read_text())
+        jsonschema.validate(cmap, schema)
+        for p in cmap["principles"]:
+            assert p["witness"] in rights and p["locator"].startswith(f"src:{p['witness']}/"), p["locator"]
+            assert len(p["excerpt_ar"]) <= EXCERPT_LEN[rights[p["witness"]]], p["locator"]
+        topics = {p["topic"] for p in cmap["principles"]}
+        assert topics == set(cmap["formalises"]) | set(cmap["unformalised"])
+        assert not set(cmap["formalises"]) & set(cmap["unformalised"])
+        grounded = {n for ns in cmap["formalises"].values() for n in ns}
+        assert all(f"#check @{n}\n" in checked for n in grounded)
+        qiyas = {n for n in linked if n.startswith(("Usul.Qiyas.", "Usul.Jadal."))}
+        assert qiyas <= grounded, qiyas - grounded

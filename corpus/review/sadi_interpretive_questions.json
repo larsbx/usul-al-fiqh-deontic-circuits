@@ -631,6 +631,42 @@
      "ref": "src:openiti-musawwada-shamela11814/v01:p389",
      "relation": "bears-on",
      "note": "Abū al-Khaṭṭāb, within the question of takhṣīṣ: a textual ʿilla is sound even if it does not extend to other branches, which the editor notes departs from the well-known view of the companions."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p271",
+     "relation": "bears-on",
+     "note": "Al-Barmakī reports two views on whether constancy (iṭṭirād) is a condition: naqḍ voids the ʿilla (supported by al-Qāḍī), or the ʿilla stays a proof elsewhere like a specified general term (Abū al-Khaṭṭāb).",
+     "excerpt_ar": "حكى أبو حفص البرمكي في كون ذلك شرطا لصحتها وجهين"
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p274",
+     "relation": "agrees",
+     "note": "A third view, which Ibn Qudāma defends: naqḍ voids an inferred ʿilla but not a textual one. This is the source-dependent policy the encoding allows.",
+     "excerpt_ar": "وفرق قوم بين العلة المنصوص عليها، وبين المستنبطة، وجعل نقض المستنبطة مبطلا لها"
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p058",
+     "relation": "contradicts",
+     "note": "Ten views. The first, that naqḍ does not impair the ʿilla at all, is ascribed to al-Qāḍī and Abū al-Khaṭṭāb and by al-Āmidī to most Ḥanbalīs; the second, that it does, to Ibn Ḥāmid and al-Qāḍī as well. The reports of al-Qāḍī's position conflict across the sources.",
+     "excerpt_ar": "وهذا قول القاضي وأبي الخطاب. وحكاه الآمدي عن أكثر أصحابنا"
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p325",
+     "relation": "bears-on",
+     "note": "Al-Ṭūfī: the dispute arises from two conflicting presumptions (an ʿilla with a proof is retained; absence of the ruling presumes absence of its cause).",
+     "excerpt_ar": "قلت: قد تعارض هنا أصلان، فخرج الخلاف لملاحظتهما"
+    },
+    {
+     "ref": "src:openiti-ilam-shamela11496/v03:p027",
+     "relation": "agrees",
+     "note": "Ibn al-Qayyim: takhṣīṣ for a missing condition or a present impediment is not impossible, and whether these belong to the ʿilla is a verbal dispute. This is the repair `takhsis_repairs` models.",
+     "excerpt_ar": "وبالجملة فلا يمتنع تخصيص العلة لفوات شرط أو لقيام مانع"
+    },
+    {
+     "ref": "src:shamela-282/v01:p454",
+     "relation": "contradicts",
+     "note": "Al-Shinqīṭī prefers the reverse of Mālik's split: a textual ʿilla is not voided by naqḍ (as Ibn Qudāma), against those who allow takhṣīṣ only of the inferred.",
+     "excerpt_ar": "وقال قومٌ بالعكس، وعزاهُ إمامُ الحرمين في البرهانِ للأكثر، وهو أوجه عندي مما قبله"
     }
    ],
    "analogies": [
@@ -696,7 +732,7 @@
     "Usul.Qiyas.naqd_gives_kasr",
     "Usul.Qiyas.kasr_without_naqd"
    ],
-   "commitment": "Kasr is modelled as a naqḍ against the ḥikma (the purpose the waṣf stands for). The encoding fixes only its logical relation to naqḍ (a naqḍ of the waṣf gives a kasr of its ḥikma, not conversely), not whether kasr is an admissible objection.",
+   "commitment": "Kasr is modelled as a naqḍ against the ḥikma (the purpose the waṣf stands for). The encoding fixes only its logical relation to naqḍ (a naqḍ of the waṣf gives a kasr of its ḥikma, not conversely), not whether kasr is an admissible objection; in the debate gate its admission is the policy flag admitKasr.",
    "alternatives": [
     "Kasr admitted as an objection (it defeats the ʿilla through its purpose).",
     "Kasr rejected because the ḥikma is not a fixed criterion (ghayr munḍabiṭa)."
@@ -710,6 +746,30 @@
      "relation": "refines",
      "note": "They disagree whether kasr, a naqḍ of the meaning of the ʿilla, is a valid objection; two views; Abū al-Khaṭṭāb chose that it is not.",
      "excerpt_ar": "اختلفوا في الكسر هل هو سؤال صحيح وهو نقض لمعنى العلة فيه قولان اختار أبو الخطاب أنه ليس بسؤال صحيح"
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p312",
+     "relation": "bears-on",
+     "note": "Kasr, showing the ḥikma without the ruling, is not binding, since the ḥikma cannot be measured by opinion.",
+     "excerpt_ar": "وهو إبداء الحكمة بدون الحكم: فغير لازم"
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p510",
+     "relation": "bears-on",
+     "note": "The same: kasr is not binding.",
+     "excerpt_ar": "والكسر: وهو إبداء الحكمة بدون الحكم، غير لازم"
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p067",
+     "relation": "bears-on",
+     "note": "The sound view among the companions and most: kasr and the broken naqḍ do not void the ʿilla.",
+     "excerpt_ar": "الصحيح عند أصحابنا والأكثر: أن الكسر والنقض المكسور \"لا يبطلانها"
+    },
+    {
+     "ref": "src:shamela-282/v01:p459",
+     "relation": "bears-on",
+     "note": "Al-Shinqīṭī dissents: kasr is like naqḍ, so it impairs wherever naqḍ does.",
+     "excerpt_ar": "فالظاهرُ أنَّ الكسر كالنقض، فعلى أنَّ النقضَ قادحٌ فالكسرُ كذلك"
     }
    ],
    "analogies": [
@@ -747,7 +807,7 @@
      "ref": "src:openiti-musawwada-shamela11814/v01:p450",
      "relation": "refines",
      "note": "Rulings may not be built on maṣāliḥ mursala: so Ibn al-Bāqillānī and the theologians, and the view of the later Ḥanbalī uṣūlīs and dialecticians; Mālik permits it.",
-     "excerpt_ar": "مسألة: المصالح المرسلة لا يجوز بناء الاحكام عليها قاله ابن الباقلاني وجماعة المتكلمين وهو قول متأخري أصحابنا أهل الأصول والجدل وقال مالك يجوز ذلك"
+     "excerpt_ar": "مسألة: المصالح المرسلة لا يجوز بناء الاحكام عليها قاله ابن الباقلاني ني وجماعة المتكلمين وهوقول متأخري أصحابنا أهل الأصول والجدل وقال مالك يجوز ذلك"
     },
     {
      "ref": "src:openiti-rawda-shamela12010/v01:p477",
@@ -761,6 +821,127 @@
      "kind": "illustrative",
      "domain": "common law",
      "note": "Policy arguments accepted when anchored in an existing doctrine (the mulāʾim), not free-standing."
+    }
+   ]
+  },
+  {
+   "id": "IQ-17",
+   "rules": [
+    58
+   ],
+   "schemata": [
+    "S2-priority"
+   ],
+   "pins": [
+    "Usul.Jadal.farByOrder",
+    "Usul.Jadal.shabah_never_overrides_illa",
+    "Usul.Jadal.shabah_only_as_fallback",
+    "Usul.Jadal.shabah_rejected"
+   ],
+   "commitment": "Qiyās al-shabah is admitted only as a fallback: text, then qiyās al-ʿilla, then shabah if accepted, else suspension. Acceptance is a parameter.",
+   "alternatives": [
+    "Shabah rejected outright (al-Qāḍī; Ibn al-Qayyim: God reports it only from those in error).",
+    "Shabah not a separate kind but folded into qiyās al-ʿilla or al-dalāla (Ibn Taymiyya), which removes the third slot."
+   ],
+   "if_changed": "acceptShabah is fixed, or the third slot removed; the S2 pins record the order.",
+   "route": "halaqa:shared/usul-k/evidence-order.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p190",
+     "relation": "agrees",
+     "note": "Shabah is not resorted to where qiyās al-ʿilla is possible (al-Bāqillānī reports consensus); otherwise it is a proof for us and the Shāfiʿīs; not per al-Qāḍī, the Ḥanafīs, al-Bāqillānī and al-Shīrāzī.",
+     "excerpt_ar": "فإن عدم\" إمكان قياس العلة \"فحجة\" أي فقياس الشبه حجة عندنا"
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p243",
+     "relation": "bears-on",
+     "note": "Two reports from Aḥmad on shabah: valid, and invalid (chosen by al-Qāḍī); Ibn Qudāma argues for validity since it yields preponderant belief.",
+     "excerpt_ar": "واختلفت الرواية عن أحمد -رحمه الله- في قياس الشبه: فروي: أنه صحيح"
+    },
+    {
+     "ref": "src:openiti-ilam-shamela11496/v01:p115",
+     "relation": "contradicts",
+     "note": "Ibn al-Qayyim: God reports qiyās al-shabah only from the people of falsehood.",
+     "excerpt_ar": "وأما قياس الشبه فلم يحكه الله سبحانه إلا عن المبطلين"
+    },
+    {
+     "ref": "src:openiti-radd-shamela7626/v01:p203",
+     "relation": "refines",
+     "note": "Ibn Taymiyya: shabah, if accepted, does not fall outside qiyās al-ʿilla or al-dalāla.",
+     "excerpt_ar": "وأما قياس الشبة فإذا قيل به لم يخرج عن أحدهما"
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 57,
+     "schema": "S2-priority",
+     "transported": "Usul.Kulliyyat.q57_is_priority",
+     "note": "Possible intent before the literal, as qiyās al-ʿilla before shabah: a weaker source only as fallback."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "evidence law",
+     "note": "Circumstantial resemblance admitted only when no direct evidence of the operative fact exists."
+    }
+   ]
+  },
+  {
+   "id": "IQ-18",
+   "rules": [
+    58
+   ],
+   "schemata": [
+    "S3-gate"
+   ],
+   "pins": [
+    "Usul.Jadal.Qadih.kind",
+    "Usul.Jadal.kind_spec",
+    "Usul.Jadal.debateGate_holds_iff"
+   ],
+   "commitment": "Each objection is classified as manʿ (it denies something the qiyās needs: istifsār, manʿ, taqsīm, muṭālaba, al-qawl bi'l-mūjab, tarkīb, ikhtilāf al-ḍābiṭ, mukhālafat al-ḥukm, ifḍāʾ, inḍibāṭ) or muʿāraḍa (it brings a competing source: fasād al-iʿtibār, fasād al-waḍʿ, naqḍ, kasr, ʿadam al-taʾthīr, farq, qalb, muʿāraḍa). The sources state the reduction but do not tabulate it.",
+   "alternatives": [
+    "All objections reduce to manʿ (a view reported in Ādāb al-Baḥth), so the gate has conditions only.",
+    "Naqḍ classed as manʿ (denial of the ʿilla's constancy) rather than muʿāraḍa."
+   ],
+   "if_changed": "Qadih.kind changes; debateGate_holds_iff is unaffected (the gate is the absence of all objections either way), kind_spec records the new placement.",
+   "route": "halaqa:shared/usul-k/resolution-schema.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p565",
+     "relation": "agrees",
+     "note": "All objections reduce to manʿ or muʿāraḍa; some count twenty-five; ordering them is agreed to be better, its obligation disputed."
+    },
+    {
+     "ref": "src:shamela-266/v01:p351",
+     "relation": "refines",
+     "note": "All qawādiḥ reduce to manʿ and muʿāraḍa; some say all reduce to manʿ."
+    },
+    {
+     "ref": "src:shamela-266/v01:p344",
+     "relation": "agrees",
+     "note": "Muṭālaba and tarkīb are omitted as falling under manʿ, as the encoding classifies them."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p229",
+     "relation": "agrees",
+     "note": "The objections reduce to manʿ of premises or muʿāraḍa in the ruling; most count twenty-five."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 8,
+     "schema": "S3-gate",
+     "transported": "Usul.Sadi.Gate.holds_meet",
+     "note": "A ruling's conditions and impediments (Q8) and a qiyās's manʿ and muʿāraḍa are the same gate algebra."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "argumentation theory",
+     "note": "Undercutting versus rebutting defeaters: denying a premise or the inference, versus offering a competing conclusion."
     }
    ]
   }

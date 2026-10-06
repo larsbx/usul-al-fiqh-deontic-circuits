@@ -209,7 +209,8 @@ def _lean_names() -> list[str]:
     sigma = [link["lean"] for link in _load(CORPUS / "signature_map.json")["links"]]
     proposals = [n for p in sorted((CORPUS / "proposals").glob("*.json")) for r in _load(p)["rules"] for n in r["lean"]]
     review = [n for p in sorted((CORPUS / "review").glob("*.json")) for n in _review_names(_load(p))]
-    return sigma + proposals + review
+    citations = [n for p in sorted((CORPUS / "citations").glob("*.json")) for ns in _load(p)["formalises"].values() for n in ns]
+    return sigma + proposals + review + citations
 
 
 def _review_names(reg: dict) -> list[str]:
