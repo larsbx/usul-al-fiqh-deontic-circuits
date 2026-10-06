@@ -278,4 +278,73 @@ theorem q56_exceptions_only (r : EstateRight) :
     inherits r = false ↔ r = .khiyarShart ∨ r = .shufaUnclaimed := by
   cases r <;> simp [inherits]
 
+/-! ## Q30 — a refusing co-owner is compelled to what the common holding necessarily requires -/
+
+def partnerMustJoin (necessary consents : Bool) : Bool := necessary || consents
+
+theorem q30_necessity_compels (c : Bool) : partnerMustJoin true c = true := by
+  cases c <;> rfl
+
+theorem q30_otherwise_by_consent (c : Bool) : partnerMustJoin false c = c := by
+  cases c <;> rfl
+
+/-! ## Q32 — whoever pays another's obligation has recourse against him, unless he gave it -/
+
+def recourse (intendedGift : Bool) (paid : Nat) : Nat := if intendedGift then 0 else paid
+
+theorem q32_recourse_for_paid (p : Nat) : recourse false p = p := rfl
+theorem q32_gift_no_recourse (p : Nat) : recourse true p = 0 := rfl
+theorem q32_never_more_than_paid (g : Bool) (p : Nat) : recourse g p ≤ p := by
+  cases g <;> simp [recourse]
+
+/-! ## Q42 — reserving a usufruct: a known one in exchanges, known or unknown in gifts -/
+
+def reservationValid (k : ContractKind) (known : Bool) : Bool := known || k == .gift
+
+/-- Q42 is Q21 applied to the reserved usufruct: the reservation is valid exactly when
+its uncertainty is not forbidden gharar. -/
+theorem q42_instance_of_q21 (k : ContractKind) (known : Bool) :
+    reservationValid k known = !ghararForbidden k !known := by
+  cases k <;> cases known <;> rfl
+
+/-! ## Q45 — whose consent a contract or rescission does not require, his knowledge it
+does not require either -/
+
+structure Requirement where
+  consent : Bool
+  knowledge : Bool
+  deriving DecidableEq, Repr
+
+/-- Q45 as a coherence condition: knowledge is required only where consent is. -/
+def Requirement.Coherent (r : Requirement) : Prop := r.knowledge = true → r.consent = true
+
+/-- Bring a requirement in line with Q45 by dropping an unsupported knowledge requirement. -/
+def Requirement.normalize (r : Requirement) : Requirement :=
+  { r with knowledge := r.knowledge && r.consent }
+
+theorem q45_normalize_coherent (r : Requirement) : r.normalize.Coherent := by
+  cases r with | mk c k => cases c <;> cases k <;> simp [Requirement.normalize, Requirement.Coherent]
+
+theorem q45_normalize_fixes_coherent (r : Requirement) (h : r.Coherent) : r.normalize = r := by
+  cases r with | mk c k => cases c <;> cases k <;> simp_all [Requirement.normalize, Requirement.Coherent]
+
+/-! ## Q51 — the causes and motives of contracts and gifts are taken into account -/
+
+inductive Motive where
+  | lawful | unlawful
+  deriving DecidableEq, Repr
+
+def contractValid (formValid : Bool) (m : Motive) : Bool := formValid && m == .lawful
+
+theorem q51_form_insufficient : contractValid true .unlawful = false := rfl
+
+theorem q51_valid_iff (f : Bool) (m : Motive) :
+    contractValid f m = true ↔ f = true ∧ m = .lawful := by
+  cases f <;> cases m <;> simp [contractValid]
+
+/-- Q51 and Q54 agree: motive counts (Q51), belief about entitlement does not (Q54);
+a disposition needs actual entitlement and a lawful motive. -/
+theorem q51_q54_consistent (a b b' : Bool) (m : Motive) :
+    contractValid (dispositionValid a b) m = contractValid (dispositionValid a b') m := rfl
+
 end Usul.Muamalat

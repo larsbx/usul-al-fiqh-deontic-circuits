@@ -64,7 +64,10 @@
    "gloss_en": "The law rests on two foundations: sincerity towards the One worshipped, and following the Messenger.",
    "kind": "meta",
    "domain": "ibadat",
-   "lean": []
+   "lean": [
+    "Usul.Kulliyyat.Worship.gate",
+    "Usul.Kulliyyat.q05_both_foundations"
+   ]
   },
   {
    "number": 6,
@@ -108,7 +111,12 @@
    "gloss_en": "Custom decides every ruling the Lawgiver set without defining its measure.",
    "kind": "meta",
    "domain": "general",
-   "lean": [],
+   "lean": [
+    "Usul.Kulliyyat.measure",
+    "Usul.Kulliyyat.q09_law_prevails",
+    "Usul.Kulliyyat.q09_custom_decides",
+    "Usul.Kulliyyat.q09_follows_custom"
+   ],
    "emendation": "OCR (both witnesses): «يرجح»; read «يرجع» (custom is the reference for undefined measures)."
   },
   {
@@ -176,7 +184,11 @@
    "gloss_en": "No harm and no reciprocal harm.",
    "kind": "rule",
    "domain": "general",
-   "lean": []
+   "lean": [
+    "Usul.Kulliyyat.mayInflict",
+    "Usul.Kulliyyat.q15_no_harm",
+    "Usul.Kulliyyat.q15_no_reciprocal_harm"
+   ]
   },
   {
    "number": 16,
@@ -195,7 +207,11 @@
    "gloss_en": "Whoever hastens a thing before its time is punished by being deprived of it.",
    "kind": "rule",
    "domain": "general",
-   "lean": []
+   "lean": [
+    "Usul.Kulliyyat.obtains",
+    "Usul.Kulliyyat.q17_hastening_deprives",
+    "Usul.Kulliyyat.q17_never_beyond_entitlement"
+   ]
   },
   {
    "number": 18,
@@ -239,7 +255,8 @@
    "domain": "muamalat",
    "lean": [
     "Usul.Muamalat.ghararForbidden",
-    "Usul.Muamalat.q21_forbidden_iff"
+    "Usul.Muamalat.q21_forbidden_iff",
+    "Usul.Muamalat.q42_instance_of_q21"
    ]
   },
   {
@@ -325,7 +342,12 @@
    "gloss_en": "An utterance must be qualified by its attachments: description, condition, exception and the like.",
    "kind": "interpretation",
    "domain": "lafz",
-   "lean": []
+   "lean": [
+    "Usul.Kulliyyat.Utterance.meaning",
+    "Usul.Kulliyyat.q29_unqualified",
+    "Usul.Kulliyyat.q29_qualifiers_narrow",
+    "Usul.Kulliyyat.q29_attach_narrows"
+   ]
   },
   {
    "number": 30,
@@ -333,7 +355,11 @@
    "gloss_en": "Co-owners of property, rights and usufructs: the refusing partner is compelled to what the common holding necessarily requires.",
    "kind": "rule",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.partnerMustJoin",
+    "Usul.Muamalat.q30_necessity_compels",
+    "Usul.Muamalat.q30_otherwise_by_consent"
+   ]
   },
   {
    "number": 31,
@@ -341,7 +367,11 @@
    "gloss_en": "Rulings divide according to their distinct causes; each cause operates in its own effect.",
    "kind": "meta",
    "domain": "general",
-   "lean": []
+   "lean": [
+    "Usul.Kulliyyat.rulings",
+    "Usul.Kulliyyat.q31_each_cause_its_effect",
+    "Usul.Kulliyyat.q31_absent_cause_inert"
+   ]
   },
   {
    "number": 32,
@@ -349,7 +379,12 @@
    "gloss_en": "Whoever pays another's obligation has recourse against him (reading from the index stub; body heading lost to OCR).",
    "kind": "rule",
    "domain": "muamalat",
-   "lean": [],
+   "lean": [
+    "Usul.Muamalat.recourse",
+    "Usul.Muamalat.q32_recourse_for_paid",
+    "Usul.Muamalat.q32_gift_no_recourse",
+    "Usul.Muamalat.q32_never_more_than_paid"
+   ],
    "emendation": "Body heading lost to OCR; index stub reads «من أدى عن غيره واجبات…»; the completion «رجع عليه» is an editorial reading to be checked against the scan."
   },
   {
@@ -361,7 +396,8 @@
    "lean": [
     "Usul.Sadi.best",
     "Usul.Sadi.q33_higher_benefit",
-    "Usul.Sadi.q33_lighter_harm"
+    "Usul.Sadi.q33_lighter_harm",
+    "Usul.Kulliyyat.q34_best_admissible"
    ]
   },
   {
@@ -370,7 +406,11 @@
    "gloss_en": "A choice given for one's own benefit is free preference; a choice given for another's benefit obliges seeking that other's best interest.",
    "kind": "taqsim",
    "domain": "general",
-   "lean": []
+   "lean": [
+    "Usul.Kulliyyat.Admissible",
+    "Usul.Kulliyyat.q34_other_stricter",
+    "Usul.Kulliyyat.q34_best_admissible"
+   ]
   },
   {
    "number": 35,
@@ -425,7 +465,11 @@
    "gloss_en": "Acts of worship and expiations may not precede the cause of obligation, but may precede its condition once the cause exists.",
    "kind": "rule",
    "domain": "ibadat",
-   "lean": []
+   "lean": [
+    "Usul.Kulliyyat.timelyPerformance",
+    "Usul.Kulliyyat.q39_not_before_cause",
+    "Usul.Kulliyyat.q39_before_condition_after_cause"
+   ]
   },
   {
    "number": 40,
@@ -445,7 +489,11 @@
    "gloss_en": "Two acts of worship of one kind, with one purpose, merge into a single performance.",
    "kind": "rule",
    "domain": "ibadat",
-   "lean": []
+   "lean": [
+    "Usul.Kulliyyat.discharges",
+    "Usul.Kulliyyat.q41_one_performance",
+    "Usul.Kulliyyat.q41_distinct_purposes_stay_apart"
+   ]
   },
   {
    "number": 42,
@@ -453,7 +501,10 @@
    "gloss_en": "Reserving a known usufruct in a transferred thing is valid in exchanges; known or unknown usufructs may be reserved in gifts.",
    "kind": "farq",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.reservationValid",
+    "Usul.Muamalat.q42_instance_of_q21"
+   ]
   },
   {
    "number": 43,
@@ -484,7 +535,11 @@
    "gloss_en": "Whose consent is not required for a contract or its rescission, his knowledge is not required either.",
    "kind": "rule",
    "domain": "muamalat",
-   "lean": [],
+   "lean": [
+    "Usul.Muamalat.Requirement.Coherent",
+    "Usul.Muamalat.q45_normalize_coherent",
+    "Usul.Muamalat.q45_normalize_fixes_coherent"
+   ],
    "emendation": "OCR (tess) reads «عمله»; read «علمه» (knowledge), as the rule's commentary on option holders indicates — to be checked against the scan."
   },
   {
@@ -516,7 +571,10 @@
    "gloss_en": "The parts of a single act build on one another when customarily continuous.",
    "kind": "rule",
    "domain": "general",
-   "lean": []
+   "lean": [
+    "Usul.Kulliyyat.continuous",
+    "Usul.Kulliyyat.q48_custom_monotone"
+   ]
   },
   {
    "number": 49,
@@ -535,7 +593,12 @@
    "gloss_en": "What is not established independently may be established as a dependent.",
    "kind": "rule",
    "domain": "general",
-   "lean": []
+   "lean": [
+    "Usul.Kulliyyat.established",
+    "Usul.Kulliyyat.q50_dependent_suffices",
+    "Usul.Kulliyyat.q50_independent_suffices",
+    "Usul.Kulliyyat.q50_neither_fails"
+   ]
   },
   {
    "number": 51,
@@ -543,7 +606,12 @@
    "gloss_en": "The causes and motives of contracts and gifts are taken into account.",
    "kind": "interpretation",
    "domain": "muamalat",
-   "lean": []
+   "lean": [
+    "Usul.Muamalat.contractValid",
+    "Usul.Muamalat.q51_form_insufficient",
+    "Usul.Muamalat.q51_valid_iff",
+    "Usul.Muamalat.q51_q54_consistent"
+   ]
   },
   {
    "number": 52,
@@ -574,7 +642,8 @@
    "domain": "muamalat",
    "lean": [
     "Usul.Muamalat.dispositionValid",
-    "Usul.Muamalat.q54_belief_irrelevant"
+    "Usul.Muamalat.q54_belief_irrelevant",
+    "Usul.Muamalat.q51_q54_consistent"
    ]
   },
   {
@@ -605,7 +674,12 @@
    "gloss_en": "Speakers' words must be read according to their intent wherever possible.",
    "kind": "interpretation",
    "domain": "lafz",
-   "lean": []
+   "lean": [
+    "Usul.Kulliyyat.reading",
+    "Usul.Kulliyyat.q57_possible_intent_prevails",
+    "Usul.Kulliyyat.q57_impossible_intent_falls_back",
+    "Usul.Kulliyyat.q57_unknown_intent_literal"
+   ]
   },
   {
    "number": 58,

@@ -6,3 +6,4 @@ import Usul.Taarud
 import Usul.Qawaid
 import Usul.Sadi
 import Usul.Muamalat
+import Usul.Kulliyyat

@@ -62,3 +62,12 @@ def test_sadi_catalogue_is_complete_typed_and_backed_by_records():
         for n in [rec["number"]]
     }
     assert set(numbers) - attested <= {23}   # 23 shares the printed heading of 22 (joint heading)
+
+
+def test_sadi_catalogue_is_formalised_and_checked():
+    """Every rule names at least one Lean constant, and each is #check-ed in UsulTest."""
+    root = Path(__file__).parents[2]
+    cat = json.loads((root / "corpus/proposals/sadi_qawaid.json").read_text())
+    checked = (root / "formal/lean/UsulTest/SignatureMap.lean").read_text()
+    assert all(r["lean"] for r in cat["rules"])
+    assert all(f"#check @{n}\n" in checked for r in cat["rules"] for n in r["lean"])
