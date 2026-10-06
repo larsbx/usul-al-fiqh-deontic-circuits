@@ -23,6 +23,15 @@ ctx(w_yusuf_brothers, brothers, [within_capacity, action_guiding]).
 ctx(w_involuntary_panic, agent, [involuntary]).
 ctx(w_fixture_conflict, agent, [within_capacity]).
 
+% Guard-withdrawal worlds: one lifting condition removed from each.
+ctx(w_other_fear_no_displacement, agent, [within_capacity]).
+ctx(w_allah_fear_no_precedence, agent, [within_capacity]).
+ctx(w_subject_inside, member, [within_capacity]).
+ctx(w_subject_outside, outsider, [within_capacity]).
+
+% Subject membership. `outsider` deliberately has none.
+agent_subject(member, test_subject_class).
+
 % -------------------------------------------------------------------------
 % Path scopes and realizations
 % -------------------------------------------------------------------------

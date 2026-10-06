@@ -40,6 +40,11 @@ deontic_obligation(test_conflict_affect, test_object, all_mukallafin,
 deontic_obligation(test_conflict_affect, test_object, all_mukallafin,
     f, unconditional, fixture(haram_side)).
 
+% Deliberate fixture subject scope: the only fact not addressed to
+% all_mukallafin, so the subject guard can be exercised. Not source-derived.
+deontic_obligation(test_scoped_affect, test_object, test_subject_class,
+    f, unconditional, fixture(subject_scoped)).
+
 deontic_anti_pair(raja, qunut, allah_rahmah,
     [warrant(quranic('39:53')), relation(displacement)]).
 
@@ -65,4 +70,18 @@ ctx_affect(w_involuntary_panic, agent, khawf_panic, threat,
     evidence(tier3, somatic_context), panic_overflow).
 
 ctx_affect(w_fixture_conflict, agent, test_conflict_affect, test_object,
+    evidence(fixture, generated), action_guiding).
+
+% Guard-withdrawal worlds: each repeats an observation above in a context
+% that lacks exactly one lifting condition.
+ctx_affect(w_other_fear_no_displacement, agent, khawf, other_than_allah,
+    evidence(tier1, quranic('3:175')), action_guiding).
+
+ctx_affect(w_allah_fear_no_precedence, agent, khawf, allah_essence,
+    evidence(tier1, quranic('3:175')), oriented).
+
+ctx_affect(w_subject_inside, member, test_scoped_affect, test_object,
+    evidence(fixture, generated), action_guiding).
+
+ctx_affect(w_subject_outside, outsider, test_scoped_affect, test_object,
     evidence(fixture, generated), action_guiding).

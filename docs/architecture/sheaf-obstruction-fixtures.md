@@ -93,13 +93,40 @@ fixture_expectation(allah_fear_path_glues,
     expect_true).
 ```
 
-These are not yet plunit tests. They are stable test vectors for the next branch to convert into executable CI once the repository chooses a Prolog runner or migrates the fixtures into Ash/Gleam.
+## Executable vectors
+
+`tests/run_all.sh` runs in CI (`.github/workflows/fixtures.yml`) and has three stages:
+
+| Stage | File | Fails when |
+|---|---|---|
+| Runner self-tests | `tests/test_fixture_runner.pl` | the runner passes or skips a wrong, raising, unknown-kind, duplicate, or premise-free vector |
+| Fixture vectors | `tests/run_fixture_expectations.pl` | any `fixture_expectation/3` vector fails |
+| Guard mutants | `tests/mutation_test.sh` | disabling a kernel guard leaves every vector green |
+
+Kinds are `expect_true` (the query succeeds) and `expect_false` (the query fails finitely).
+
+A query over a world, agent, or fact that does not exist fails trivially, so an `expect_false` vector must declare at least one `fixture_premise(Name, query(Premise))`. Every premise must hold before the vector is judged. This makes a negative vector fail if its data disappears, instead of passing vacuously.
+
+Each implemented guard is pinned from both sides. The guard-withdrawal worlds below remove exactly one lifting condition from an existing world:
+
+| Guard | Positive vector | Withdrawal world / negative vector |
+|---|---|---|
+| capacity (`under_taklif_control/1`) | `yusuf_brothers_hasad_blocks` | `w_involuntary_panic`: `involuntary_panic_lifts_no_section` |
+| conditional modality | `other_fear_displacing_taqwa_blocks` | `w_other_fear_no_displacement` |
+| comparative modality | `allah_fear_with_precedence_lifts_obligation` | `w_allah_fear_no_precedence` |
+| subject (`subject_matches/2`) | `subject_scoped_fact_lifts_inside_subject` | `w_subject_outside` |
+| same-scope operator conflict | `operator_conflict_emits_obstruction` | `distinct_affects_do_not_conflict` |
+| obligation discharge | `qunut_without_raja_emits_missing_required` | `raja_path_has_no_missing_required` |
+
+`test_scoped_affect` / `test_subject_class` is a fixture fact like the conflict pair. It is not source-derived. It exists because every ADQ-shaped fact is addressed to `all_mukallafin`, which would leave the subject guard untested.
+
+Every guard in `tests/mutation_test.sh` is killed by at least one vector.
 
 ## Promotion path
 
-1. Convert `fixture_expectation/3` into plunit tests or generated Ash fixture tests.
+1. ~~Convert `fixture_expectation/3` into executable tests.~~ Done, see *Executable vectors*. Generated Ash fixture tests remain open.
 2. Add a canonical import adapter from accepted ADQ facts into the v38 predicates.
 3. Replace artificial sample facts with fixture bundles generated from canonical JSON.
 4. Keep affect import, temporal case fixtures, and sheaf obstruction checks independently replaceable.
-5. Add negative tests for tier quarantine, alias gluing failure, object collision, subject collision, and modality unsatisfied.
+5. Add negative tests for tier quarantine, alias gluing failure, and object collision. These need new obstruction emitters. Subject and modality guards are covered by withdrawal vectors; the named `subject_collision` and `modality_unsatisfied` obstruction records are not emitted yet.
 6. Preserve the rule that LLM text can propose fixture candidates but cannot turn them into accepted normative facts without deterministic review.
