@@ -12,7 +12,7 @@ by the same uṣūl the project formalises, applied only where doing so cannot d
 * **Persistence (Q11, istiṣḥāb).** Status is computed from the evidence on file; nothing
   moves it but new evidence.
 * **Analogy is qiyās (Q58, S1).** An analogy between two rules is licensed by a shared schema
-  (the ʿilla); naqḍ — a cited ʿilla missing from either side — rejects it.
+  (the ʿilla); manʿ (a cited ʿilla missing from either side) rejects it.
 * **Adoption is a gate (Q8, S3).** No status here means "adopted": adoption needs the
   `SHARIAH-AUTHORITY` gate, which this repository does not hold.
 
@@ -72,8 +72,10 @@ theorem licensed_transfers {R S β : Type} (tags : R → S → Prop) [∀ r s, D
     P (decide (tags far s)) = P (decide (tags asl s)) := by
   simp [h.1, h.2]
 
-/-- Naqḍ: a missing tag on either side defeats the analogy. -/
-theorem naqd {R S : Type} {tags : R → S → Prop} {asl far : R} {s : S}
+/-- Manʿ: a cited ʿilla missing on either side defeats the analogy. (This is manʿ, denial
+that the ʿilla is present, not naqḍ: the process relies only on manʿ, whose force is not in
+dispute, and not on the disputed doctrine of naqḍ and takhṣīṣ; see `Usul.Qiyas.man_defeats`.) -/
+theorem man {R S : Type} {tags : R → S → Prop} {asl far : R} {s : S}
     (h : ¬ tags far s ∨ ¬ tags asl s) : ¬ Licensed tags asl far s :=
   fun ⟨ha, hf⟩ => h.elim (· hf) (· ha)
 

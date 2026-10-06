@@ -244,7 +244,8 @@
         "uses",
         "uses_why",
         "avoids",
-        "lean"
+        "lean",
+        "relies_on"
       ],
       "additionalProperties": false,
       "properties": {
@@ -277,6 +278,17 @@
           "items": {
             "type": "string",
             "pattern": "^Usul\\."
+          }
+        },
+        "relies_on": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^Usul\\."
+            },
+            "minItems": 1
           }
         }
       }

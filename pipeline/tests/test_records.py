@@ -132,15 +132,19 @@ def test_internal_analogies_are_licensed():
 
 
 def test_process_is_stratified():
-    """No bootstrap deadlock: rules the process uses are under no live question; avoided ones are."""
+    """No bootstrap deadlock (Usul.Process.no_deadlock_of_stratified at the level of constants):
+    the process relies only on constants no live question pins; avoided rules are under question."""
     reg = _register(Path(__file__).parents[2])
-    live = {n for q in reg["questions"] if q["status"] != "withdrawn" for n in q["rules"]}
-    assert not set(reg["process"]["uses"]) & live
-    assert {int(n) for n in reg["process"]["avoids"]} <= live
-    assert set(reg["process"]["uses_why"]) == {str(n) for n in reg["process"]["uses"]}
+    proc = reg["process"]
+    live = [q for q in reg["questions"] if q["status"] != "withdrawn"]
+    relied = {c for cs in proc["relies_on"].values() for c in cs}
+    assert set(proc["relies_on"]) == set(proc["uses_why"]) == {str(n) for n in proc["uses"]}
+    assert not relied & {c for q in live for c in q["pins"]}
+    assert {int(n) for n in proc["avoids"]} <= {n for q in live for n in q["rules"]}
 
 
 def test_questions_do_not_overlap():
-    """S7 on the register: two questions on the same rules and schema would merge into one."""
-    keys = [(tuple(sorted(q["rules"])), tuple(sorted(q["schemata"]))) for q in _register(Path(__file__).parents[2])["questions"]]
-    assert len(keys) == len(set(keys))
+    """S7 on the register: two questions pinning the same constant concern one commitment and
+    would merge into one."""
+    pins = [c for q in _register(Path(__file__).parents[2])["questions"] for c in q["pins"]]
+    assert len(pins) == len(set(pins))

@@ -9,3 +9,4 @@ import Usul.Schema
 import Usul.Muamalat
 import Usul.Kulliyyat
 import Usul.Process
+import Usul.Qiyas
