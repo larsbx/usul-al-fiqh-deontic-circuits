@@ -27,7 +27,7 @@
           "schemata": {
             "type": "array",
             "uniqueItems": true,
-            "items": {"enum": ["S1-invariance", "S2-priority", "S3-gate", "S4-closure", "S5-inert", "S6-presumption", "S7-merge"]}
+            "items": {"enum": ["S1-invariance", "S2-priority", "S3-gate", "S4-closure", "S5-inert", "S6-presumption", "S7-merge", "S8-optimal"]}
           }
         }
       }

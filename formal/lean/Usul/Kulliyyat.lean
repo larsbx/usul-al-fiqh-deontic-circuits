@@ -155,6 +155,15 @@ theorem q34_best_admissible {α : Type} (options : List α) (interest : α → N
     Admissible .other options interest b :=
   ⟨Sadi.best_mem _ h, fun _ => Sadi.q33_higher_benefit interest h⟩
 
+/-- Q34 is S8: a choice for another's benefit is exactly an optimal one. -/
+theorem q34_other_iff_optimal {α : Type} (options : List α) (interest : α → Nat) (p : α) :
+    Admissible .other options interest p ↔ Optimal (fun o => (interest o : Int)) options p := by
+  constructor
+  · intro ⟨hm, h⟩
+    exact ⟨hm, fun y hy => Int.ofNat_le.mpr (h rfl y hy)⟩
+  · intro ⟨hm, h⟩
+    exact ⟨hm, fun _ y hy => Int.ofNat_le.mp (h y hy)⟩
+
 /-! ## Q39 — worship and expiations may not precede the cause of obligation, but may precede
 its condition once the cause exists -/
 

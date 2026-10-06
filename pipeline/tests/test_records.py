@@ -81,3 +81,17 @@ def test_schemata_tags_are_pinned():
     pins = (root / "formal/lean/UsulTest/Schemata.lean").read_text()
     pinned = {tuple(line.split()[2:4]) for line in pins.splitlines() if line.startswith("-- @schema ")}
     assert tagged == pinned
+
+
+def test_interpretive_questions_are_grounded():
+    """Each open question names tagged rules, pinned constants and a usul-k route; it decides nothing."""
+    root = Path(__file__).parents[2]
+    reg = json.loads((root / "corpus/review/sadi_interpretive_questions.json").read_text())
+    jsonschema.validate(reg, json.loads((root / "schemas/review_question.schema.json").read_text()))
+    cat = {r["number"]: r for r in json.loads((root / "corpus/proposals/sadi_qawaid.json").read_text())["rules"]}
+    linked = {n for r in cat.values() for n in r["lean"]}
+    ids = [q["id"] for q in reg["questions"]]
+    assert len(ids) == len(set(ids))
+    for q in reg["questions"]:
+        assert all(set(q["schemata"]) & set(cat[n].get("schemata", [])) for n in q["rules"]), q["id"]
+        assert set(q["pins"]) <= linked, q["id"]

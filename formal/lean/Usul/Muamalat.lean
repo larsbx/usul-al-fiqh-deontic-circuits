@@ -127,6 +127,12 @@ theorem q14_liable_iff_unauthorized (h : Hand) (t n : Bool) : lossLiable h t n =
 
 theorem q13_liable_iff_unauthorized (r : Bool) (m : MentalState) : itlafLiable r m = !r := rfl
 
+/-- Q14 is S1: liability for loss factors through authorisation. -/
+theorem q14_factors_through_authorization :
+    Factors (fun x : Hand × Bool × Bool => lossLiable x.1 x.2.1 x.2.2)
+      (fun x => authorizedHold x.1 x.2.1 x.2.2) :=
+  Factors.of_eq (fun a => !a) fun ⟨h, t, n⟩ => q14_liable_iff_unauthorized h t n
+
 theorem q14_fault_makes_trustee_liable (t n : Bool) (h : t = true ∨ n = true) :
     lossLiable .trustee t n = true := by
   rcases h with h | h <;> simp [lossLiable, h]
@@ -187,6 +193,12 @@ theorem q21_forbidden_iff (k : ContractKind) (g : Bool) :
     ghararForbidden k g = true ↔ g = true ∧ k ≠ .gift := by
   cases k <;> cases g <;> simp [ghararForbidden]
 
+/-- Q21 is S3: gharar is an impediment, outside gifts. -/
+theorem q21_is_gate (k : ContractKind) (g : Bool) :
+    ghararForbidden k g = false ↔
+      (Sadi.Gate.ofBools [] [fun x : ContractKind × Bool => x.2 && x.1 != .gift]).Holds (k, g) := by
+  rw [Sadi.Gate.holds_ofBools]; cases k <;> cases g <;> simp [ghararForbidden]
+
 /-! ## Q24 — whoever reaches an unowned permissible thing first has the better right -/
 
 /-- The claimant with the earliest time (Q33's `best` on the negated time). -/
@@ -197,12 +209,28 @@ theorem q24_first_has_priority {P : Type} {claims : List (P × Nat)} {w : P × N
     (h : firstClaimant claims = some w) : ∀ c ∈ claims, w.2 ≤ c.2 :=
   Sadi.q33_lighter_harm (fun c : P × Nat => c.2) h
 
+/-- Q24 is S8 on the negated time. -/
+theorem q24_is_optimal {P : Type} {claims : List (P × Nat)} {w : P × Nat}
+    (h : firstClaimant claims = some w) : Optimal (fun c => -(c.2 : Int)) claims w :=
+  best_optimal h
+
 /-! ## Q25 — lots are prescribed when the entitled is unknown and division impossible -/
 
 def lotPrescribed (entitledKnown divisible : Bool) : Bool := !entitledKnown && !divisible
 
 theorem q25_lot_iff (k d : Bool) : lotPrescribed k d = true ↔ k = false ∧ d = false := by
   cases k <;> cases d <;> simp [lotPrescribed]
+
+inductive Allocation where
+  | toEntitled | divide | lot
+  deriving DecidableEq, Repr
+
+/-- Q25 is S2: give to the known entitled, else divide, else cast lots. -/
+def allocation (entitledKnown divisible : Bool) : Allocation :=
+  resolveD [if entitledKnown then some .toEntitled else none, if divisible then some .divide else none] .lot
+
+theorem q25_lot_is_last_resort (k d : Bool) : allocation k d = .lot ↔ lotPrescribed k d = true := by
+  cases k <;> cases d <;> simp [allocation, lotPrescribed, resolveD, first]
 
 /-! ## Q26 / Q43 — a trustee's word is accepted, unless sense or custom belie it (Q26); about
 returning the thing, only if he held it for the owner's benefit (Q43) -/
@@ -250,6 +278,11 @@ def prevailing {P : Type} (claims : List (P × Nat)) : Option (P × Nat) :=
 theorem q37_strongest_prevails {P : Type} {claims : List (P × Nat)} {w : P × Nat}
     (h : prevailing claims = some w) : ∀ c ∈ claims, c.2 ≤ w.2 :=
   Sadi.q33_higher_benefit (fun c : P × Nat => c.2) h
+
+/-- Q37 is S8 on the strength of evidence. -/
+theorem q37_is_optimal {P : Type} {claims : List (P × Nat)} {w : P × Nat}
+    (h : prevailing claims = some w) : Optimal (fun c => (c.2 : Int)) claims w :=
+  best_optimal h
 
 /-! ## Q44 — whoever performs what is due earns what was set for him -/
 
@@ -398,6 +431,11 @@ theorem q32_recourse_for_paid (p : Nat) : recourse false p = p := rfl
 theorem q32_gift_no_recourse (p : Nat) : recourse true p = 0 := rfl
 theorem q32_never_more_than_paid (g : Bool) (p : Nat) : recourse g p ≤ p := by
   cases g <;> simp [recourse]
+
+/-- Q32 is S3: having paid as a gift is the impediment to recourse. -/
+theorem q32_is_gate (g : Bool) {p : Nat} (hp : 0 < p) :
+    0 < recourse g p ↔ (Sadi.Gate.ofBools [] [fun x : Bool => x]).Holds g := by
+  rw [Sadi.Gate.holds_ofBools]; cases g <;> simp [recourse, hp]
 
 /-! ## Q42 — reserving a usufruct: a known one in exchanges, known or unknown in gifts -/
 

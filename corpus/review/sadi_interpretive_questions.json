@@ -1,0 +1,282 @@
+{
+ "register": "sadi.interpretive_questions",
+ "status": "candidate",
+ "provenance": "Surfaced while proving al-Saʿdī's readings to be instances of Usul.Schema. Each question names an interpretive commitment the encoding makes, the alternatives, and which typed pins fail if the commitment changes. LLM-drafted; awaiting human review (Review.tla).",
+ "authority": {
+  "gate": "SHARIAH-AUTHORITY",
+  "class": "C",
+  "basis": [
+   "halaqa shared/STUB-CLASSIFICATION.md: usul-k/ is class C, reserved to Sharīʿah authority",
+   "ICM-H §17: research agents may classify, compare, identify uncertainty and surface questions",
+   "ICM-H §32: analytical preparation never satisfies a SHARIAH-AUTHORITY gate",
+   "docs/architecture/deontic-circuits-harness.md: the LLM proposes; only human review admits"
+  ],
+  "this_register_may": [
+   "name the commitment an encoding makes",
+   "list alternatives found in the tradition",
+   "say which formal pins change if the commitment changes",
+   "suggest the usul-k home a ruling would eventually live in"
+  ],
+  "this_register_may_not": [
+   "answer a question",
+   "rank the alternatives",
+   "write to halaqa shared/usul-k/",
+   "promote a reading past candidate"
+  ]
+ },
+ "questions": [
+  {
+   "id": "IQ-01",
+   "rules": [
+    10
+   ],
+   "schemata": [
+    "S6-presumption"
+   ],
+   "pins": [
+    "Usul.Muamalat.q10_from_presumption"
+   ],
+   "commitment": "The operative presumption for a claim is barāʾat al-dhimma (no liability), so the denier is whoever agrees with it and the claimant whoever departs from it.",
+   "alternatives": [
+    "The apparent state (al-ẓāhir) as the presumption, which can place the claimant role on the party asserting freedom from liability.",
+    "A presumption fixed per bāb rather than one for all claims."
+   ],
+   "if_changed": "Change the presumption argument of burdenOf in q10_from_presumption; the S6 pin for Q10 fails until the new presumption is stated.",
+   "route": "halaqa:shared/usul-k/evidence-order.md",
+   "status": "open"
+  },
+  {
+   "id": "IQ-02",
+   "rules": [
+    26,
+    43
+   ],
+   "schemata": [
+    "S6-presumption"
+   ],
+   "pins": [
+    "Usul.Muamalat.returnPresumption",
+    "Usul.Muamalat.q26_q43_from_presumption"
+   ],
+   "commitment": "When sense or custom belies a trustee, the presumption that he returned the thing is displaced entirely, and he must bring evidence.",
+   "alternatives": [
+    "Being belied only weakens the presumption: the oath is still accepted, but with a stronger form or added conditions.",
+    "Only sense (ḥiss) displaces it; custom (ʿurf) does not."
+   ],
+   "if_changed": "returnPresumption would need a graded result (a Qawaid.Held with a Grade) instead of a Bool, and burden_after_update (Q52) would decide; the Q26/Q43 pins fail.",
+   "route": "halaqa:shared/usul-k/evidence-order.md",
+   "status": "open"
+  },
+  {
+   "id": "IQ-03",
+   "rules": [
+    55
+   ],
+   "schemata": [
+    "S5-inert"
+   ],
+   "pins": [
+    "Usul.Muamalat.plead",
+    "Usul.Muamalat.q55_confession_absorbs"
+   ],
+   "commitment": "After a confession, every later plea (a claim of error, a retraction) is inert. This reading is for the rights of persons (ḥuqūq al-ādamiyyīn).",
+   "alternatives": [
+    "In the ḥudūd (rights of God) a retraction is accepted, so retract is not inert there and needs its own plead.",
+    "A claim of error is inert but a retraction is not, in some domains."
+   ],
+   "if_changed": "A domain parameter on plead; q55_confession_absorbs then holds only for the persons domain, and a second S5 instance (without retract) is pinned for ḥudūd.",
+   "route": "halaqa:shared/usul-k/derogation.md",
+   "status": "open"
+  },
+  {
+   "id": "IQ-04",
+   "rules": [
+    41
+   ],
+   "schemata": [
+    "S7-merge"
+   ],
+   "pins": [
+    "Usul.Kulliyyat.Merges",
+    "Usul.Kulliyyat.q41_representatives"
+   ],
+   "commitment": "Two owed acts merge when kind and purpose are equal, whatever the occasion that made each owed. 'Purpose' is a label compared for equality.",
+   "alternatives": [
+    "Purpose as intention (niyya): merging needs the performer to intend both, or to intend the higher one.",
+    "Merging limited to listed kinds (ṭahāra, ḥudūd of one genus) instead of every kind."
+   ],
+   "if_changed": "Merges gains an intention argument or a kind whitelist; it must stay reflexive for reps_covers, and the S7 pin records whether it is still an equivalence.",
+   "route": "halaqa:shared/usul-k/operators.md",
+   "status": "open"
+  },
+  {
+   "id": "IQ-05",
+   "rules": [
+    13,
+    54
+   ],
+   "schemata": [
+    "S1-invariance"
+   ],
+   "pins": [
+    "Usul.Muamalat.q13_ignores_intent",
+    "Usul.Muamalat.q54_ignores_belief"
+   ],
+   "commitment": "Liability for destroying property ignores the destroyer's mental state (Q13), and the validity of a disposition ignores the actor's belief about his entitlement (Q54).",
+   "alternatives": [
+    "Mental state matters for sin and punishment but not for compensation (a two-output reading: liability ignores intent, sin does not).",
+    "Belief matters where the actor was misled by the other party."
+   ],
+   "if_changed": "Ignores no longer holds; the S1 pins for Q13 and Q54 fail, which is the intended signal that a coordinate became relevant.",
+   "route": "halaqa:shared/usul-k/operators.md",
+   "status": "open"
+  },
+  {
+   "id": "IQ-06",
+   "rules": [
+    15
+   ],
+   "schemata": [
+    "S1-invariance"
+   ],
+   "pins": [
+    "Usul.Kulliyyat.mayInflict",
+    "Usul.Kulliyyat.q15_ignores_received"
+   ],
+   "commitment": "Harm may be inflicted only if it is none, whatever harm was received. Prescribed retaliation (qiṣāṣ) and prescribed penalties are outside the reading, not exceptions inside it.",
+   "alternatives": [
+    "Retaliation modelled inside Q15 as a derogation with its own conditions (equality, authority of the ruler)."
+   ],
+   "if_changed": "mayInflict gains a derogation argument; q15_ignores_received holds only off the derogation.",
+   "route": "halaqa:shared/usul-k/derogation.md",
+   "status": "open"
+  },
+  {
+   "id": "IQ-07",
+   "rules": [
+    32
+   ],
+   "schemata": [
+    "S3-gate"
+   ],
+   "pins": [
+    "Usul.Muamalat.recourse",
+    "Usul.Muamalat.q32_is_gate"
+   ],
+   "commitment": "Whoever pays another's obligation has recourse unless he paid as a gift. The heading in the witness is lost to OCR (reading from the index stub).",
+   "alternatives": [
+    "Recourse only when he paid intending to reclaim it (the condition stated positively, which differs when intention is unknown).",
+    "Recourse only with the debtor's permission."
+   ],
+   "if_changed": "recourse gains an intention or permission argument, which becomes a second impediment or a condition in q32_is_gate; q32_never_more_than_paid must still hold.",
+   "route": "halaqa:shared/usul-k/derogation.md",
+   "status": "open"
+  },
+  {
+   "id": "IQ-08",
+   "rules": [
+    9
+   ],
+   "schemata": [
+    "S2-priority"
+   ],
+   "pins": [
+    "Usul.Kulliyyat.q09_is_priority"
+   ],
+   "commitment": "A measure defined by the law strictly precedes custom: custom decides only where the law is silent, and never overrides a defined measure.",
+   "alternatives": [
+    "Custom also specifies (takhṣīṣ) a general legal term, which is not a fallback but a refinement."
+   ],
+   "if_changed": "Custom as a refinement is an S1/S3 reading (a qualifier), not S2; the Q9 pin would move schema.",
+   "route": "halaqa:shared/usul-k/specificity.md",
+   "status": "open"
+  },
+  {
+   "id": "IQ-09",
+   "rules": [
+    25
+   ],
+   "schemata": [
+    "S2-priority"
+   ],
+   "pins": [
+    "Usul.Muamalat.allocation",
+    "Usul.Muamalat.q25_lot_is_last_resort"
+   ],
+   "commitment": "Allocation follows the order: the known entitled, then division, then lots. Lots are the last resort.",
+   "alternatives": [
+    "Division and lots ranked differently where division destroys value (e.g. an indivisible object)."
+   ],
+   "if_changed": "The order of sources in allocation changes; q25_lot_is_last_resort records when lots apply and fails if the order changes.",
+   "route": "halaqa:shared/usul-k/resolution-schema.md",
+   "status": "open"
+  },
+  {
+   "id": "IQ-10",
+   "rules": [
+    24,
+    33,
+    34,
+    37
+   ],
+   "schemata": [
+    "S8-optimal"
+   ],
+   "pins": [
+    "Usul.Schema.Optimal",
+    "Usul.Schema.best_optimal",
+    "Usul.Schema.Optimal.key_unique"
+   ],
+   "commitment": "Options are compared on one integer scale (benefit, harm, time, strength of evidence). Ties go to the earliest-listed option. The tie-break is an artefact of the encoding, not of the text.",
+   "alternatives": [
+    "Benefits and harms incommensurable in general (a partial order), so a choice may not exist.",
+    "Ties resolved by a second criterion (e.g. precaution) instead of list order."
+   ],
+   "if_changed": "A partial order replaces Int; best becomes a set of maximal options, and Optimal.key_unique no longer holds, which the S8 pins expose.",
+   "route": "halaqa:shared/usul-k/resolution-schema.md",
+   "status": "open"
+  },
+  {
+   "id": "IQ-11",
+   "rules": [
+    50
+   ],
+   "schemata": [
+    "S4-closure"
+   ],
+   "pins": [
+    "Usul.Kulliyyat.Established",
+    "Usul.Kulliyyat.q50_least"
+   ],
+   "commitment": "Establishment by dependence is transitive: a dependent of a dependent of a proved thing is established.",
+   "alternatives": [
+    "Only one step of dependence (a dependent of a proved principal), not the transitive closure."
+   ],
+   "if_changed": "Established becomes one step of the step relation rather than Closure; q50_follower_established then needs a proved principal.",
+   "route": "halaqa:shared/usul-k/specificity.md",
+   "status": "open"
+  },
+  {
+   "id": "IQ-12",
+   "rules": [
+    53
+   ],
+   "schemata": [
+    "S4-closure"
+   ],
+   "pins": [
+    "Usul.Muamalat.Voided",
+    "Usul.Muamalat.q53_void_propagates",
+    "Usul.Muamalat.q53_rescission_inert"
+   ],
+   "commitment": "Proved voidness propagates along 'built on' to every dependent contract, transitively. Rescinding a contract that was not proved void leaves the set of void contracts unchanged.",
+   "alternatives": [
+    "Propagation stops at a dependent acquired in good faith by a third party.",
+    "Rescission affects dependents concluded after it, which needs time on the relation."
+   ],
+   "if_changed": "A good-faith or time guard on builtOn; q53_rescission_inert still holds, q53_void_propagates gains a hypothesis.",
+   "route": "halaqa:shared/usul-k/derogation.md",
+   "status": "open"
+  }
+ ]
+}

@@ -24,6 +24,7 @@ import Usul
 #check @Usul.Sadi.q04_no_wajib_with_inability
 #check @Usul.Sadi.q04_no_haram_with_necessity
 #check @Usul.Sadi.q04_ordinary_case
+#check @Usul.Schema.operative_is_gate
 #check @Usul.Kulliyyat.Worship.gate
 #check @Usul.Kulliyyat.q05_both_foundations
 #check @Usul.Domain.default
@@ -67,6 +68,7 @@ import Usul
 #check @Usul.Muamalat.q14_fault_makes_trustee_liable
 #check @Usul.Muamalat.authorizedHold
 #check @Usul.Muamalat.q14_liable_iff_unauthorized
+#check @Usul.Muamalat.q14_factors_through_authorization
 #check @Usul.Kulliyyat.mayInflict
 #check @Usul.Kulliyyat.q15_no_harm
 #check @Usul.Kulliyyat.q15_no_reciprocal_harm
@@ -89,12 +91,17 @@ import Usul
 #check @Usul.Muamalat.ghararForbidden
 #check @Usul.Muamalat.q21_forbidden_iff
 #check @Usul.Muamalat.q42_instance_of_q21
+#check @Usul.Muamalat.q21_is_gate
 #check @Usul.Sadi.Voids
 #check @Usul.Sadi.q22_valid_iff_preserves_prohibition
 #check @Usul.Muamalat.firstClaimant
 #check @Usul.Muamalat.q24_first_has_priority
+#check @Usul.Muamalat.q24_is_optimal
 #check @Usul.Muamalat.lotPrescribed
 #check @Usul.Muamalat.q25_lot_iff
+#check @Usul.Muamalat.Allocation
+#check @Usul.Muamalat.allocation
+#check @Usul.Muamalat.q25_lot_is_last_resort
 #check @Usul.Muamalat.wordAccepted
 #check @Usul.Muamalat.q26_q43_consistent
 #check @Usul.Muamalat.returnPresumption
@@ -103,6 +110,7 @@ import Usul
 #check @Usul.Sadi.q27_asymmetry
 #check @Usul.Sadi.useSubstitute
 #check @Usul.Sadi.q28_substitute_only_when_needed
+#check @Usul.Schema.substitute_is_priority
 #check @Usul.Kulliyyat.Utterance.meaning
 #check @Usul.Kulliyyat.q29_unqualified
 #check @Usul.Kulliyyat.q29_qualifiers_narrow
@@ -120,12 +128,18 @@ import Usul
 #check @Usul.Muamalat.q32_recourse_for_paid
 #check @Usul.Muamalat.q32_gift_no_recourse
 #check @Usul.Muamalat.q32_never_more_than_paid
+#check @Usul.Muamalat.q32_is_gate
 #check @Usul.Sadi.best
 #check @Usul.Sadi.q33_higher_benefit
 #check @Usul.Sadi.q33_lighter_harm
 #check @Usul.Kulliyyat.q34_best_admissible
+#check @Usul.Schema.Optimal
+#check @Usul.Schema.best_optimal
+#check @Usul.Schema.q33_is_optimal
+#check @Usul.Schema.Optimal.key_unique
 #check @Usul.Kulliyyat.Admissible
 #check @Usul.Kulliyyat.q34_other_stricter
+#check @Usul.Kulliyyat.q34_other_iff_optimal
 #check @Usul.Muamalat.compensationOwed
 #check @Usul.Muamalat.q35_doubled
 #check @Usul.Muamalat.q35_never_less
@@ -134,6 +148,7 @@ import Usul
 #check @Usul.Muamalat.q36_repel_not_liable
 #check @Usul.Muamalat.prevailing
 #check @Usul.Muamalat.q37_strongest_prevails
+#check @Usul.Muamalat.q37_is_optimal
 #check @Usul.Sadi.validDespiteProhibition
 #check @Usul.Sadi.q38_voids_iff_intrinsic
 #check @Usul.Kulliyyat.timelyPerformance
@@ -144,6 +159,7 @@ import Usul
 #check @Usul.Sadi.obligedParts
 #check @Usul.Sadi.q40_only_capable_parts
 #check @Usul.Sadi.q40_every_capable_part
+#check @Usul.Schema.obligedParts_is_gate
 #check @Usul.Kulliyyat.discharges
 #check @Usul.Kulliyyat.q41_one_performance
 #check @Usul.Kulliyyat.q41_distinct_purposes_stay_apart

@@ -59,7 +59,11 @@
     "Usul.Sadi.operative",
     "Usul.Sadi.q04_no_wajib_with_inability",
     "Usul.Sadi.q04_no_haram_with_necessity",
-    "Usul.Sadi.q04_ordinary_case"
+    "Usul.Sadi.q04_ordinary_case",
+    "Usul.Schema.operative_is_gate"
+   ],
+   "schemata": [
+    "S3-gate"
    ]
   },
   {
@@ -219,7 +223,11 @@
     "Usul.Muamalat.q14_wrongdoer_always",
     "Usul.Muamalat.q14_fault_makes_trustee_liable",
     "Usul.Muamalat.authorizedHold",
-    "Usul.Muamalat.q14_liable_iff_unauthorized"
+    "Usul.Muamalat.q14_liable_iff_unauthorized",
+    "Usul.Muamalat.q14_factors_through_authorization"
+   ],
+   "schemata": [
+    "S1-invariance"
    ]
   },
   {
@@ -316,7 +324,11 @@
    "lean": [
     "Usul.Muamalat.ghararForbidden",
     "Usul.Muamalat.q21_forbidden_iff",
-    "Usul.Muamalat.q42_instance_of_q21"
+    "Usul.Muamalat.q42_instance_of_q21",
+    "Usul.Muamalat.q21_is_gate"
+   ],
+   "schemata": [
+    "S3-gate"
    ]
   },
   {
@@ -349,7 +361,11 @@
    "domain": "muamalat",
    "lean": [
     "Usul.Muamalat.firstClaimant",
-    "Usul.Muamalat.q24_first_has_priority"
+    "Usul.Muamalat.q24_first_has_priority",
+    "Usul.Muamalat.q24_is_optimal"
+   ],
+   "schemata": [
+    "S8-optimal"
    ]
   },
   {
@@ -360,7 +376,13 @@
    "domain": "muamalat",
    "lean": [
     "Usul.Muamalat.lotPrescribed",
-    "Usul.Muamalat.q25_lot_iff"
+    "Usul.Muamalat.q25_lot_iff",
+    "Usul.Muamalat.Allocation",
+    "Usul.Muamalat.allocation",
+    "Usul.Muamalat.q25_lot_is_last_resort"
+   ],
+   "schemata": [
+    "S2-priority"
    ]
   },
   {
@@ -398,7 +420,11 @@
    "domain": "general",
    "lean": [
     "Usul.Sadi.useSubstitute",
-    "Usul.Sadi.q28_substitute_only_when_needed"
+    "Usul.Sadi.q28_substitute_only_when_needed",
+    "Usul.Schema.substitute_is_priority"
+   ],
+   "schemata": [
+    "S2-priority"
    ]
   },
   {
@@ -454,9 +480,13 @@
     "Usul.Muamalat.recourse",
     "Usul.Muamalat.q32_recourse_for_paid",
     "Usul.Muamalat.q32_gift_no_recourse",
-    "Usul.Muamalat.q32_never_more_than_paid"
+    "Usul.Muamalat.q32_never_more_than_paid",
+    "Usul.Muamalat.q32_is_gate"
    ],
-   "emendation": "Body heading lost to OCR; index stub reads «من أدى عن غيره واجبات…»; the completion «رجع عليه» is an editorial reading to be checked against the scan."
+   "emendation": "Body heading lost to OCR; index stub reads «من أدى عن غيره واجبات…»; the completion «رجع عليه» is an editorial reading to be checked against the scan.",
+   "schemata": [
+    "S3-gate"
+   ]
   },
   {
    "number": 33,
@@ -468,7 +498,14 @@
     "Usul.Sadi.best",
     "Usul.Sadi.q33_higher_benefit",
     "Usul.Sadi.q33_lighter_harm",
-    "Usul.Kulliyyat.q34_best_admissible"
+    "Usul.Kulliyyat.q34_best_admissible",
+    "Usul.Schema.Optimal",
+    "Usul.Schema.best_optimal",
+    "Usul.Schema.q33_is_optimal",
+    "Usul.Schema.Optimal.key_unique"
+   ],
+   "schemata": [
+    "S8-optimal"
    ]
   },
   {
@@ -480,7 +517,11 @@
    "lean": [
     "Usul.Kulliyyat.Admissible",
     "Usul.Kulliyyat.q34_other_stricter",
-    "Usul.Kulliyyat.q34_best_admissible"
+    "Usul.Kulliyyat.q34_best_admissible",
+    "Usul.Kulliyyat.q34_other_iff_optimal"
+   ],
+   "schemata": [
+    "S8-optimal"
    ]
   },
   {
@@ -520,7 +561,11 @@
    "domain": "muamalat",
    "lean": [
     "Usul.Muamalat.prevailing",
-    "Usul.Muamalat.q37_strongest_prevails"
+    "Usul.Muamalat.q37_strongest_prevails",
+    "Usul.Muamalat.q37_is_optimal"
+   ],
+   "schemata": [
+    "S8-optimal"
    ]
   },
   {
@@ -560,7 +605,11 @@
    "lean": [
     "Usul.Sadi.obligedParts",
     "Usul.Sadi.q40_only_capable_parts",
-    "Usul.Sadi.q40_every_capable_part"
+    "Usul.Sadi.q40_every_capable_part",
+    "Usul.Schema.obligedParts_is_gate"
+   ],
+   "schemata": [
+    "S3-gate"
    ]
   },
   {

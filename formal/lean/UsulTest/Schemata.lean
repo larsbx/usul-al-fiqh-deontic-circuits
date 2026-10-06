@@ -117,4 +117,49 @@ example {M : Type} (l : M) (i : Option M) (p : M → Bool) :
 example {Case F : Type} (H : Case → Hukm) (e : Case → F) : Sadi.DependsOn H e ↔ Factors H e :=
   dependsOn_iff_factors H e
 
+-- @schema Q4 S3-gate
+example (c d : Bool) : Sadi.operative c d .wajib = .wajib ↔ (Sadi.Gate.ofBools [Prod.fst] []).Holds (c, d) :=
+  (operative_is_gate c d).1
+
+-- @schema Q14 S1-invariance
+example : Factors (fun x : Hand × Bool × Bool => lossLiable x.1 x.2.1 x.2.2)
+    (fun x => authorizedHold x.1 x.2.1 x.2.2) := q14_factors_through_authorization
+
+-- @schema Q21 S3-gate
+example (k : ContractKind) (g : Bool) : ghararForbidden k g = false ↔
+    (Sadi.Gate.ofBools [] [fun x : ContractKind × Bool => x.2 && x.1 != .gift]).Holds (k, g) := q21_is_gate k g
+
+-- @schema Q24 S8-optimal
+example {P : Type} {claims : List (P × Nat)} {w : P × Nat} (h : firstClaimant claims = some w) :
+    Optimal (fun c => -(c.2 : Int)) claims w := q24_is_optimal h
+
+-- @schema Q25 S2-priority
+example (k d : Bool) : allocation k d =
+    resolveD [if k then some .toEntitled else none, if d then some .divide else none] .lot := rfl
+
+-- @schema Q28 S2-priority
+example (p : Bool) : Sadi.useSubstitute p = resolveD [if p then some false else none] true :=
+  substitute_is_priority p
+
+-- @schema Q33 S8-optimal
+example {α : Type} (key : α → Int) {xs : List α} {b : α} (h : Sadi.best key xs = some b) :
+    Optimal key xs b := best_optimal h
+
+-- @schema Q34 S8-optimal
+example {α : Type} (os : List α) (i : α → Nat) (p : α) :
+    Admissible .other os i p ↔ Optimal (fun o => (i o : Int)) os p := q34_other_iff_optimal os i p
+
+-- @schema Q37 S8-optimal
+example {P : Type} {claims : List (P × Nat)} {w : P × Nat} (h : prevailing claims = some w) :
+    Optimal (fun c => (c.2 : Int)) claims w := q37_is_optimal h
+
+-- @schema Q40 S3-gate
+example {P : Type} (parts : List P) (can pm : P → Bool) (p : P) :
+    p ∈ Sadi.obligedParts parts can pm ↔ p ∈ parts ∧ (Sadi.Gate.ofBools [can] [pm]).Holds p :=
+  obligedParts_is_gate parts can pm p
+
+-- @schema Q32 S3-gate
+example (g : Bool) {p : Nat} (hp : 0 < p) :
+    0 < recourse g p ↔ (Sadi.Gate.ofBools [] [fun x : Bool => x]).Holds g := q32_is_gate g hp
+
 end UsulTest.Schemata

@@ -21,9 +21,13 @@ shape is stated here once, over arbitrary types, with
 | S5 `Inert` | events that leave a state unchanged | `inert_fold` | — (pointwise) |
 | S6 `burdenOf` | proof on whoever departs from the presumption | `burden_factors`, `burden_after_update` | via S1 |
 | S7 `Covers` / `reps` | one performance per merge class | `reps_covers`, `reps_length_le`, `reps_sub` | `Covers.map` |
+| S8 `Optimal` | choose a best option on one scale | `best_optimal`, `best_eq_none_iff`, `Optimal.key_unique`, `Optimal.restrict` | `Optimal.mono`, `Optimal.map` |
 
-Instances already in the kernel are proved here (Q2 `Wajib`, taʿāruḍ `resolve`, Q6 `ruled`,
-Q11 `update`, Q58 `DependsOn`); the rest are proved in `Usul.Muamalat` and `Usul.Kulliyyat`.
+Instances already in the kernel are proved here (Q2 `Wajib`, Q4 `operative`, Q6 `ruled`,
+Q11 `update`, Q28 `useSubstitute`, Q33 `best`, Q40 `obligedParts`, Q58 `DependsOn`, taʿāruḍ
+`resolve`); the rest are proved in `Usul.Muamalat` and `Usul.Kulliyyat`. Which interpretive
+commitment each instance makes is recorded, as open questions for review, in
+`corpus/review/sadi_interpretive_questions.json`.
 -/
 
 namespace Usul.Schema
@@ -365,5 +369,76 @@ theorem Covers.map {r' : β → β → Prop} (f : α → β) (hr : ∀ a b, r a 
   exact ⟨f d, List.mem_map_of_mem hd, hr _ _ hdo⟩
 
 end Merge
+
+/-! ## S8 — optimisation: choose a best option on one scale -/
+
+/-- `b` is an available option and no option scores higher. -/
+def Optimal {α : Type} (key : α → Int) (xs : List α) (b : α) : Prop :=
+  b ∈ xs ∧ ∀ y ∈ xs, key y ≤ key b
+
+section Optimisation
+
+variable {α β : Type} {key : α → Int} {xs : List α} {b b' : α}
+
+/-- Q33's `best` always returns an optimal option. -/
+theorem best_optimal (h : Sadi.best key xs = some b) : Optimal key xs b :=
+  ⟨Sadi.best_mem key h, Sadi.best_max key h⟩
+
+/-- A choice exists exactly when some option does. -/
+theorem best_eq_none_iff : Sadi.best key xs = none ↔ xs = [] := by
+  cases xs with
+  | nil => simp [Sadi.best]
+  | cons z zs => simp [Sadi.best_cons_ne_none key z zs]
+
+/-- Optimal options are equally good: the scale, not the tie-break, carries the ruling. -/
+theorem Optimal.key_unique (h : Optimal key xs b) (h' : Optimal key xs b') : key b = key b' :=
+  Int.le_antisymm (h'.2 b h.1) (h.2 b' h'.1)
+
+/-- Removing options other than the chosen one never unseats it. -/
+theorem Optimal.restrict {ys : List α} (h : Optimal key xs b) (hs : ∀ y ∈ ys, y ∈ xs) (hb : b ∈ ys) :
+    Optimal key ys b :=
+  ⟨hb, fun y hy => h.2 y (hs y hy)⟩
+
+/-- Transport along the scale: any monotone re-scaling keeps the optimum (lighter harm is
+the antitone case, via negation). -/
+theorem Optimal.mono (g : Int → Int) (hg : ∀ a c, a ≤ c → g a ≤ g c) (h : Optimal key xs b) :
+    Optimal (g ∘ key) xs b :=
+  ⟨h.1, fun y hy => hg _ _ (h.2 y hy)⟩
+
+/-- Transport along the options: a renaming of options carries the optimum. -/
+theorem Optimal.map (f : α → β) {k : β → Int} (h : Optimal (k ∘ f) xs b) : Optimal k (xs.map f) (f b) :=
+  ⟨List.mem_map_of_mem h.1, fun y hy => by
+    obtain ⟨x, hx, rfl⟩ := List.mem_map.1 hy
+    exact h.2 x hx⟩
+
+end Optimisation
+
+/-! ## Kernel instances of S2, S3 and S8 -/
+
+/-- Q4 is S3 twice: capability is a condition of obligation, necessity an impediment of
+prohibition. -/
+theorem operative_is_gate (c d : Bool) :
+    (Sadi.operative c d .wajib = .wajib ↔ (Sadi.Gate.ofBools [Prod.fst] []).Holds (c, d)) ∧
+    (Sadi.operative c d .haram = .haram ↔ (Sadi.Gate.ofBools [] [Prod.snd]).Holds (c, d)) := by
+  simp only [Sadi.Gate.holds_ofBools]
+  cases c <;> cases d <;> simp [Sadi.operative]
+
+/-- Q28 is S2: the original when possible, the substitute otherwise. -/
+theorem substitute_is_priority (p : Bool) :
+    Sadi.useSubstitute p = resolveD [if p then some false else none] true := by
+  cases p <;> rfl
+
+/-- Q40 is S3 per part: capability is the condition, being a pure means the impediment. -/
+theorem obligedParts_is_gate {P : Type} (parts : List P) (can pureMeans : P → Bool) (p : P) :
+    p ∈ Sadi.obligedParts parts can pureMeans ↔ p ∈ parts ∧ (Sadi.Gate.ofBools [can] [pureMeans]).Holds p := by
+  rw [Sadi.Gate.holds_ofBools]
+  simp [Sadi.obligedParts, List.mem_filter]
+
+/-- Q33 is S8, for benefits and (antitone) for harms. -/
+theorem q33_is_optimal {α : Type} (benefit harm : α → Nat) {xs : List α} {b h : α}
+    (hb : Sadi.best (fun x => (benefit x : Int)) xs = some b)
+    (hh : Sadi.best (fun x => -(harm x : Int)) xs = some h) :
+    Optimal (fun x => (benefit x : Int)) xs b ∧ Optimal (fun x => -(harm x : Int)) xs h :=
+  ⟨best_optimal hb, best_optimal hh⟩
 
 end Usul.Schema
