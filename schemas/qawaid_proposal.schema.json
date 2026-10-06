@@ -23,7 +23,12 @@
           "kind": {"type": "string"},
           "domain": {"enum": ["general", "ibadat", "muamalat", "lafz"]},
           "lean": {"type": "array", "items": {"type": "string", "pattern": "^Usul\\."}, "uniqueItems": true},
-          "emendation": {"type": "string"}
+          "emendation": {"type": "string"},
+          "schemata": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {"enum": ["S1-invariance", "S2-priority", "S3-gate", "S4-closure", "S5-inert", "S6-presumption", "S7-merge"]}
+          }
         }
       }
     }

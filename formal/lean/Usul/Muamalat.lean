@@ -1,4 +1,4 @@
-import Usul.Sadi
+import Usul.Schema
 
 /-!
 # al-Saʿdī's transaction rules (muʿāmalāt) — formal readings (roadmap M3)
@@ -6,22 +6,20 @@ import Usul.Sadi
 A small model of possession, liability and contract. Most of these rules are case
 distinctions (taqsīm / farq); their readings are total functions over the cases, with
 theorems stating each branch. Where rules interact, a consistency theorem shows the
-readings agree (Q13 with Q36, Q26 with Q43). Rule numbers as in
+readings agree (Q13 with Q36, Q26 with Q43). Each thin reading is also proved to be an
+instance of a schema in `Usul.Schema` (`*_is_*`, `*_from_*`), so its structure transports to
+any other bāb. Rule numbers as in
 `corpus/proposals/sadi_qawaid.json`; every reading is a candidate until reviewed.
 -/
 
 namespace Usul.Muamalat
 
-open Usul
+open Usul Usul.Schema
 
 /-! ## Q10 — proof on the claimant, oath on the one who denies -/
 
 inductive Party where
   | claimant | denier
-  deriving DecidableEq, Repr
-
-inductive Proof where
-  | bayyina | yamin
   deriving DecidableEq, Repr
 
 def burden : Party → Proof
@@ -30,6 +28,16 @@ def burden : Party → Proof
 
 theorem q10_burden_injective (a b : Party) (h : burden a = burden b) : a = b := by
   cases a <;> cases b <;> simp_all [burden]
+
+/-- What each party asserts about the defendant's dhimma: occupied (claimant) or free (denier). -/
+def Party.claim : Party → Bool
+  | .claimant => true
+  | .denier => false
+
+/-- Q10 is S6 under the presumption of barāʾat al-dhimma: the roles are derived from whether
+a claim departs from the presumption. -/
+theorem q10_from_presumption (p : Party) : burden p = burdenOf false p.claim := by
+  cases p <;> rfl
 
 /-! ## Q12 — exchange contracts require the consent of both parties -/
 
@@ -82,6 +90,14 @@ theorem q13_q36_consistent (p : Purpose) (m : MentalState) :
     itlafLiable (withRight p) m = true ↔ p = .benefit := by
   cases p <;> simp [itlafLiable, withRight]
 
+/-- Q13 is S1: liability ignores the mental state. -/
+theorem q13_ignores_intent : Ignores itlafLiable := fun _ _ _ => rfl
+
+/-- Qiyās over liability: destructions with the same right-status share liability. -/
+theorem q13_q36_factor_through_right :
+    Factors (fun pm : Purpose × MentalState => itlafLiable (withRight pm.1) pm.2) (withRight ·.1) :=
+  Factors.of_eq (fun r => !r) fun _ => rfl
+
 /-! ## Q14 — loss in a trustee's hand is not compensable without transgression or
 negligence; in a wrongdoer's hand it is compensable absolutely -/
 
@@ -98,6 +114,18 @@ theorem q14_trustee_without_fault (t n : Bool) (ht : t = false) (hn : n = false)
     lossLiable .trustee t n = false := by simp [lossLiable, ht, hn]
 
 theorem q14_wrongdoer_always (t n : Bool) : lossLiable .wrongdoer t n = true := rfl
+
+/-- Authorised holding: a trustee without transgression or negligence; never a wrongdoer. -/
+def authorizedHold : Hand → Bool → Bool → Bool
+  | .trustee, t, n => !(t || n)
+  | .wrongdoer, _, _ => false
+
+/-- Q13 and Q14 share one shape: liability is the absence of authorisation (for Q13 the
+authorisation is the right of Q36). -/
+theorem q14_liable_iff_unauthorized (h : Hand) (t n : Bool) : lossLiable h t n = !authorizedHold h t n := by
+  cases h <;> simp [lossLiable, authorizedHold]
+
+theorem q13_liable_iff_unauthorized (r : Bool) (m : MentalState) : itlafLiable r m = !r := rfl
 
 theorem q14_fault_makes_trustee_liable (t n : Bool) (h : t = true ∨ n = true) :
     lossLiable .trustee t n = true := by
@@ -126,6 +154,10 @@ def priceDue (stipulated : Option Nat) (value : Nat) : Nat := stipulated.getD va
 theorem q19_unattainable_reverts_to_value (v : Nat) : priceDue none v = v := rfl
 theorem q19_stipulated_binds (p v : Nat) : priceDue (some p) v = p := rfl
 
+/-- Q19 is S2: the stipulated price, falling back to value. -/
+theorem q19_is_priority (s : Option Nat) (v : Nat) : priceDue s v = resolveD [s] v := by
+  cases s <;> rfl
+
 /-! ## Q20 — an unidentifiable right-holder is treated as non-existent -/
 
 inductive Recipient where
@@ -137,6 +169,11 @@ def recipient (ownerIdentifiable : Bool) : Recipient :=
 
 theorem q20_unknown_owner (b : Bool) : recipient b = .publicInterest ↔ b = false := by
   cases b <;> simp [recipient]
+
+/-- Q20 is S2: the owner when identifiable, falling back to the public interest. -/
+theorem q20_is_priority (b : Bool) :
+    recipient b = resolveD [if b then some .owner else none] .publicInterest := by
+  cases b <;> rfl
 
 /-! ## Q21 — uncertainty and gambling are forbidden in exchanges and contests -/
 
@@ -186,6 +223,16 @@ theorem q26_q43_consistent (h : HeldFor) (c : Bool) :
     returnClaimAccepted h c = true → wordAccepted c = true := by
   cases h <;> simp [returnClaimAccepted]
 
+/-- The presumption about a return: made, when the thing was held for the owner (amāna) and
+nothing in sense or custom belies it; otherwise not made (the presumption of ʿadam). -/
+def returnPresumption (h : HeldFor) (contradicts : Bool) : Bool := h == .owner && !contradicts
+
+/-- Q26 and Q43 are S6: the trustee's claim is taken on oath exactly when it agrees with the
+presumption; contradiction by sense or custom (a Q52 qarīna) displaces it. -/
+theorem q26_q43_from_presumption (h : HeldFor) (c : Bool) :
+    returnClaimAccepted h c = (burdenOf (returnPresumption h c) true == .yamin) := by
+  cases h <;> cases c <;> rfl
+
 /-! ## Q35 — whoever escapes punishment for a reason owes doubled compensation -/
 
 def compensationOwed (value : Nat) (punishmentLapsed : Bool) : Nat :=
@@ -231,6 +278,16 @@ def obligationStatus (_ : ObligationSource) : Hukm := .wajib
 
 theorem q47_vow_as_law : obligationStatus .vow = obligationStatus .sharia := rfl
 
+/-- Q47 is S1: the status ignores its source … -/
+theorem q47_ignores_source : Factors obligationStatus (fun _ => ()) :=
+  Factors.of_eq (fun _ => .wajib) fun _ => rfl
+
+/-- … so every ruling computed from the status (making up, expiation, sin of omission, …)
+is the same for a vow as for the law. -/
+theorem q47_consequences {β : Type} (g : Hukm → β) :
+    g (obligationStatus .vow) = g (obligationStatus .sharia) :=
+  (q47_ignores_source.post g).qiyas rfl
+
 /-! ## Q49 — basic needs are not surplus wealth -/
 
 def surplus (assets basicNeeds : Nat) : Nat := assets - basicNeeds
@@ -252,17 +309,62 @@ def dependentsSurvive : Ending → Bool
 theorem q53_distinction : dependentsSurvive .provedVoid ≠ dependentsSurvive .rescinded := by
   simp [dependentsSurvive]
 
+section Voiding
+
+variable {C : Type}
+
+/-- Q53 is S4: the void contracts are the closure of those proved void under "built on". -/
+def Voided (builtOn : C → C → Prop) (ending : C → Option Ending) : C → Prop :=
+  Closure builtOn (fun c => ending c = some .provedVoid)
+
+theorem q53_void_propagates {builtOn : C → C → Prop} {ending : C → Option Ending} {a b : C}
+    (ha : Voided builtOn ending a) (h : builtOn a b) : Voided builtOn ending b :=
+  .step ha h
+
+/-- Rescinding a contract (that was not proved void) voids nothing: the closure is unchanged. -/
+theorem q53_rescission_inert [DecidableEq C] (builtOn : C → C → Prop) (ending : C → Option Ending)
+    (c₀ : C) (h₀ : ending c₀ ≠ some .provedVoid) (c : C) :
+    Voided builtOn (fun c => if c = c₀ then some .rescinded else ending c) c ↔ Voided builtOn ending c := by
+  have hseed : ∀ c, (if c = c₀ then some Ending.rescinded else ending c) = some .provedVoid ↔
+      ending c = some .provedVoid := by
+    intro c
+    by_cases hc : c = c₀
+    · subst hc; simp [h₀]
+    · simp [hc]
+  exact ⟨Closure.mono (fun c h => (hseed c).1 h) (fun _ _ h => h) c,
+    Closure.mono (fun c h => (hseed c).2 h) (fun _ _ h => h) c⟩
+
+end Voiding
+
 /-! ## Q54 — in transactions the actual state of affairs counts, not belief -/
 
 def dispositionValid (actuallyEntitled _believedEntitled : Bool) : Bool := actuallyEntitled
 
 theorem q54_belief_irrelevant (a b b' : Bool) : dispositionValid a b = dispositionValid a b' := rfl
 
+/-- Q54 is S1: validity ignores belief. -/
+theorem q54_ignores_belief : Ignores dispositionValid := fun _ _ _ => rfl
+
 /-! ## Q55 — no excuse for one who confessed, even if he claims error -/
 
 def confessionBinds (_claimsError : Bool) : Bool := true
 
 theorem q55_error_claim_irrelevant (e : Bool) : confessionBinds e = true := rfl
+
+inductive Plea where
+  | confess | claimError | retract
+  deriving DecidableEq, Repr
+
+/-- Whether the confessor is bound after a plea (in the rights of persons). -/
+def plead (bound : Bool) : Plea → Bool
+  | .confess => true
+  | _ => bound
+
+/-- Q55 is S5: after a confession every later plea is inert, whatever came before. -/
+theorem q55_confession_absorbs (pre post : List Plea) :
+    (pre ++ Plea.confess :: post).foldl plead false = true := by
+  rw [List.foldl_append, List.foldl_cons]
+  exact inert_fold plead (· = true) true rfl post fun e _ s hs => by subst hs; cases e <;> rfl
 
 /-! ## Q56 — the heir stands in the deceased's place for the estate, except the listed rights -/
 
@@ -328,6 +430,10 @@ theorem q45_normalize_coherent (r : Requirement) : r.normalize.Coherent := by
 theorem q45_normalize_fixes_coherent (r : Requirement) (h : r.Coherent) : r.normalize = r := by
   cases r with | mk c k => cases c <;> cases k <;> simp_all [Requirement.normalize, Requirement.Coherent]
 
+/-- `normalize` is an interior operator onto the coherent requirements. -/
+theorem q45_normalize_idem (r : Requirement) : r.normalize.normalize = r.normalize :=
+  q45_normalize_fixes_coherent r.normalize (q45_normalize_coherent r)
+
 /-! ## Q51 — the causes and motives of contracts and gifts are taken into account -/
 
 inductive Motive where
@@ -346,5 +452,19 @@ theorem q51_valid_iff (f : Bool) (m : Motive) :
 a disposition needs actual entitlement and a lawful motive. -/
 theorem q51_q54_consistent (a b b' : Bool) (m : Motive) :
     contractValid (dispositionValid a b) m = contractValid (dispositionValid a b') m := rfl
+
+/-- Q12 ⊓ Q51 (S3): a deal is the exchange gate read on deals, met with the motive gate. -/
+structure Deal where
+  exchange : Exchange
+  motive : Motive
+
+def Deal.gate : Sadi.Gate Deal :=
+  (Exchange.gate.comap Deal.exchange).meet (Sadi.Gate.ofBools [fun d => d.motive == .lawful] [])
+
+theorem deal_holds_iff (d : Deal) :
+    Deal.gate.Holds d ↔ Exchange.gate.Holds d.exchange ∧ d.motive = .lawful := by
+  rw [Deal.gate, Sadi.Gate.holds_meet, Sadi.Gate.holds_comap, Sadi.Gate.holds_ofBools]
+  rcases d with ⟨e, m⟩
+  cases m <;> simp
 
 end Usul.Muamalat

@@ -5,5 +5,6 @@ import Usul.Grounded
 import Usul.Taarud
 import Usul.Qawaid
 import Usul.Sadi
+import Usul.Schema
 import Usul.Muamalat
 import Usul.Kulliyyat

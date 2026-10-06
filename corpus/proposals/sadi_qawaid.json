@@ -32,7 +32,11 @@
    "domain": "general",
    "lean": [
     "Usul.Sadi.q02_means_of_wajib",
-    "Usul.Qawaid.closure_respects_capacity"
+    "Usul.Qawaid.closure_respects_capacity",
+    "Usul.Schema.wajib_is_closure"
+   ],
+   "schemata": [
+    "S4-closure"
    ]
   },
   {
@@ -67,6 +71,9 @@
    "lean": [
     "Usul.Kulliyyat.Worship.gate",
     "Usul.Kulliyyat.q05_both_foundations"
+   ],
+   "schemata": [
+    "S3-gate"
    ]
   },
   {
@@ -79,7 +86,11 @@
     "Usul.Domain.default",
     "Usul.Sadi.q06_no_worship_without_dalil",
     "Usul.Sadi.q06_customs_permitted_by_default",
-    "Usul.Sadi.q06_dalil_prevails"
+    "Usul.Sadi.q06_dalil_prevails",
+    "Usul.Schema.ruled_is_priority"
+   ],
+   "schemata": [
+    "S2-priority"
    ]
   },
   {
@@ -102,7 +113,13 @@
    "lean": [
     "Usul.Sadi.Gate.Holds",
     "Usul.Sadi.q08_missing_condition",
-    "Usul.Sadi.q08_present_impediment"
+    "Usul.Sadi.q08_present_impediment",
+    "Usul.Sadi.Gate.holds_meet",
+    "Usul.Sadi.Gate.holds_comap",
+    "Usul.Sadi.Gate.holds_ofBools"
+   ],
+   "schemata": [
+    "S3-gate"
    ]
   },
   {
@@ -115,9 +132,13 @@
     "Usul.Kulliyyat.measure",
     "Usul.Kulliyyat.q09_law_prevails",
     "Usul.Kulliyyat.q09_custom_decides",
-    "Usul.Kulliyyat.q09_follows_custom"
+    "Usul.Kulliyyat.q09_follows_custom",
+    "Usul.Kulliyyat.q09_is_priority"
    ],
-   "emendation": "OCR (both witnesses): «يرجح»; read «يرجع» (custom is the reference for undefined measures)."
+   "emendation": "OCR (both witnesses): «يرجح»; read «يرجع» (custom is the reference for undefined measures).",
+   "schemata": [
+    "S2-priority"
+   ]
   },
   {
    "number": 10,
@@ -127,7 +148,13 @@
    "domain": "muamalat",
    "lean": [
     "Usul.Muamalat.burden",
-    "Usul.Muamalat.q10_burden_injective"
+    "Usul.Muamalat.q10_burden_injective",
+    "Usul.Muamalat.Party.claim",
+    "Usul.Muamalat.q10_from_presumption"
+   ],
+   "schemata": [
+    "S1-invariance",
+    "S6-presumption"
    ]
   },
   {
@@ -138,7 +165,11 @@
    "domain": "general",
    "lean": [
     "Usul.Sadi.q11_yaqin",
-    "Usul.Qawaid.yaqin_la_yazul_bish_shakk"
+    "Usul.Qawaid.yaqin_la_yazul_bish_shakk",
+    "Usul.Schema.yaqin_doubts_inert"
+   ],
+   "schemata": [
+    "S5-inert"
    ]
   },
   {
@@ -150,7 +181,12 @@
    "lean": [
     "Usul.Muamalat.Exchange.gate",
     "Usul.Muamalat.q12_no_contract_without_consent",
-    "Usul.Muamalat.q12_mutual_consent_suffices"
+    "Usul.Muamalat.q12_mutual_consent_suffices",
+    "Usul.Muamalat.Deal.gate",
+    "Usul.Muamalat.deal_holds_iff"
+   ],
+   "schemata": [
+    "S3-gate"
    ]
   },
   {
@@ -162,7 +198,13 @@
    "lean": [
     "Usul.Muamalat.itlafLiable",
     "Usul.Muamalat.q13_intent_irrelevant",
-    "Usul.Muamalat.q13_q36_consistent"
+    "Usul.Muamalat.q13_q36_consistent",
+    "Usul.Muamalat.q13_ignores_intent",
+    "Usul.Muamalat.q13_q36_factor_through_right",
+    "Usul.Muamalat.q13_liable_iff_unauthorized"
+   ],
+   "schemata": [
+    "S1-invariance"
    ]
   },
   {
@@ -175,7 +217,9 @@
     "Usul.Muamalat.lossLiable",
     "Usul.Muamalat.q14_trustee_without_fault",
     "Usul.Muamalat.q14_wrongdoer_always",
-    "Usul.Muamalat.q14_fault_makes_trustee_liable"
+    "Usul.Muamalat.q14_fault_makes_trustee_liable",
+    "Usul.Muamalat.authorizedHold",
+    "Usul.Muamalat.q14_liable_iff_unauthorized"
    ]
   },
   {
@@ -187,7 +231,11 @@
    "lean": [
     "Usul.Kulliyyat.mayInflict",
     "Usul.Kulliyyat.q15_no_harm",
-    "Usul.Kulliyyat.q15_no_reciprocal_harm"
+    "Usul.Kulliyyat.q15_no_reciprocal_harm",
+    "Usul.Kulliyyat.q15_ignores_received"
+   ],
+   "schemata": [
+    "S1-invariance"
    ]
   },
   {
@@ -210,7 +258,11 @@
    "lean": [
     "Usul.Kulliyyat.obtains",
     "Usul.Kulliyyat.q17_hastening_deprives",
-    "Usul.Kulliyyat.q17_never_beyond_entitlement"
+    "Usul.Kulliyyat.q17_never_beyond_entitlement",
+    "Usul.Kulliyyat.q17_is_gate"
+   ],
+   "schemata": [
+    "S3-gate"
    ]
   },
   {
@@ -233,7 +285,11 @@
    "lean": [
     "Usul.Muamalat.priceDue",
     "Usul.Muamalat.q19_unattainable_reverts_to_value",
-    "Usul.Muamalat.q19_stipulated_binds"
+    "Usul.Muamalat.q19_stipulated_binds",
+    "Usul.Muamalat.q19_is_priority"
+   ],
+   "schemata": [
+    "S2-priority"
    ]
   },
   {
@@ -244,7 +300,11 @@
    "domain": "muamalat",
    "lean": [
     "Usul.Muamalat.recipient",
-    "Usul.Muamalat.q20_unknown_owner"
+    "Usul.Muamalat.q20_unknown_owner",
+    "Usul.Muamalat.q20_is_priority"
+   ],
+   "schemata": [
+    "S2-priority"
    ]
   },
   {
@@ -311,7 +371,12 @@
    "domain": "muamalat",
    "lean": [
     "Usul.Muamalat.wordAccepted",
-    "Usul.Muamalat.q26_q43_consistent"
+    "Usul.Muamalat.q26_q43_consistent",
+    "Usul.Muamalat.returnPresumption",
+    "Usul.Muamalat.q26_q43_from_presumption"
+   ],
+   "schemata": [
+    "S6-presumption"
    ]
   },
   {
@@ -346,7 +411,11 @@
     "Usul.Kulliyyat.Utterance.meaning",
     "Usul.Kulliyyat.q29_unqualified",
     "Usul.Kulliyyat.q29_qualifiers_narrow",
-    "Usul.Kulliyyat.q29_attach_narrows"
+    "Usul.Kulliyyat.q29_attach_narrows",
+    "Usul.Kulliyyat.q29_is_gate"
+   ],
+   "schemata": [
+    "S3-gate"
    ]
   },
   {
@@ -370,7 +439,9 @@
    "lean": [
     "Usul.Kulliyyat.rulings",
     "Usul.Kulliyyat.q31_each_cause_its_effect",
-    "Usul.Kulliyyat.q31_absent_cause_inert"
+    "Usul.Kulliyyat.q31_absent_cause_inert",
+    "Usul.Kulliyyat.q31_join",
+    "Usul.Kulliyyat.q31_monotone"
    ]
   },
   {
@@ -434,7 +505,11 @@
     "Usul.Muamalat.withRight",
     "Usul.Muamalat.q36_benefit_liable",
     "Usul.Muamalat.q36_repel_not_liable",
-    "Usul.Muamalat.q13_q36_consistent"
+    "Usul.Muamalat.q13_q36_consistent",
+    "Usul.Muamalat.q13_q36_factor_through_right"
+   ],
+   "schemata": [
+    "S1-invariance"
    ]
   },
   {
@@ -468,7 +543,12 @@
    "lean": [
     "Usul.Kulliyyat.timelyPerformance",
     "Usul.Kulliyyat.q39_not_before_cause",
-    "Usul.Kulliyyat.q39_before_condition_after_cause"
+    "Usul.Kulliyyat.q39_before_condition_after_cause",
+    "Usul.Kulliyyat.q39_ignores_condition",
+    "Usul.Kulliyyat.q39_shift_invariant"
+   ],
+   "schemata": [
+    "S1-invariance"
    ]
   },
   {
@@ -492,7 +572,15 @@
    "lean": [
     "Usul.Kulliyyat.discharges",
     "Usul.Kulliyyat.q41_one_performance",
-    "Usul.Kulliyyat.q41_distinct_purposes_stay_apart"
+    "Usul.Kulliyyat.q41_distinct_purposes_stay_apart",
+    "Usul.Kulliyyat.Merges",
+    "Usul.Kulliyyat.q41_merges_refl",
+    "Usul.Kulliyyat.q41_merges_symm",
+    "Usul.Kulliyyat.q41_merges_trans",
+    "Usul.Kulliyyat.q41_representatives"
+   ],
+   "schemata": [
+    "S7-merge"
    ]
   },
   {
@@ -515,7 +603,12 @@
    "lean": [
     "Usul.Muamalat.returnClaimAccepted",
     "Usul.Muamalat.q43_self_interest_not_believed",
-    "Usul.Muamalat.q26_q43_consistent"
+    "Usul.Muamalat.q26_q43_consistent",
+    "Usul.Muamalat.returnPresumption",
+    "Usul.Muamalat.q26_q43_from_presumption"
+   ],
+   "schemata": [
+    "S6-presumption"
    ]
   },
   {
@@ -538,7 +631,8 @@
    "lean": [
     "Usul.Muamalat.Requirement.Coherent",
     "Usul.Muamalat.q45_normalize_coherent",
-    "Usul.Muamalat.q45_normalize_fixes_coherent"
+    "Usul.Muamalat.q45_normalize_fixes_coherent",
+    "Usul.Muamalat.q45_normalize_idem"
    ],
    "emendation": "OCR (tess) reads «عمله»; read «علمه» (knowledge), as the rule's commentary on option holders indicates — to be checked against the scan."
   },
@@ -562,7 +656,12 @@
    "domain": "ibadat",
    "lean": [
     "Usul.Muamalat.obligationStatus",
-    "Usul.Muamalat.q47_vow_as_law"
+    "Usul.Muamalat.q47_vow_as_law",
+    "Usul.Muamalat.q47_ignores_source",
+    "Usul.Muamalat.q47_consequences"
+   ],
+   "schemata": [
+    "S1-invariance"
    ]
   },
   {
@@ -573,7 +672,8 @@
    "domain": "general",
    "lean": [
     "Usul.Kulliyyat.continuous",
-    "Usul.Kulliyyat.q48_custom_monotone"
+    "Usul.Kulliyyat.q48_custom_monotone",
+    "Usul.Kulliyyat.q48_shift_invariant"
    ]
   },
   {
@@ -597,7 +697,13 @@
     "Usul.Kulliyyat.established",
     "Usul.Kulliyyat.q50_dependent_suffices",
     "Usul.Kulliyyat.q50_independent_suffices",
-    "Usul.Kulliyyat.q50_neither_fails"
+    "Usul.Kulliyyat.q50_neither_fails",
+    "Usul.Kulliyyat.Established",
+    "Usul.Kulliyyat.q50_follower_established",
+    "Usul.Kulliyyat.q50_least"
+   ],
+   "schemata": [
+    "S4-closure"
    ]
   },
   {
@@ -610,7 +716,12 @@
     "Usul.Muamalat.contractValid",
     "Usul.Muamalat.q51_form_insufficient",
     "Usul.Muamalat.q51_valid_iff",
-    "Usul.Muamalat.q51_q54_consistent"
+    "Usul.Muamalat.q51_q54_consistent",
+    "Usul.Muamalat.Deal.gate",
+    "Usul.Muamalat.deal_holds_iff"
+   ],
+   "schemata": [
+    "S3-gate"
    ]
   },
   {
@@ -620,7 +731,11 @@
    "kind": "default",
    "domain": "general",
    "lean": [
-    "Usul.Sadi.q52_strong_qarina_prevails"
+    "Usul.Sadi.q52_strong_qarina_prevails",
+    "Usul.Schema.burden_after_update"
+   ],
+   "schemata": [
+    "S6-presumption"
    ]
   },
   {
@@ -631,7 +746,13 @@
    "domain": "muamalat",
    "lean": [
     "Usul.Muamalat.dependentsSurvive",
-    "Usul.Muamalat.q53_distinction"
+    "Usul.Muamalat.q53_distinction",
+    "Usul.Muamalat.Voided",
+    "Usul.Muamalat.q53_void_propagates",
+    "Usul.Muamalat.q53_rescission_inert"
+   ],
+   "schemata": [
+    "S4-closure"
    ]
   },
   {
@@ -643,7 +764,11 @@
    "lean": [
     "Usul.Muamalat.dispositionValid",
     "Usul.Muamalat.q54_belief_irrelevant",
-    "Usul.Muamalat.q51_q54_consistent"
+    "Usul.Muamalat.q51_q54_consistent",
+    "Usul.Muamalat.q54_ignores_belief"
+   ],
+   "schemata": [
+    "S1-invariance"
    ]
   },
   {
@@ -654,7 +779,12 @@
    "domain": "muamalat",
    "lean": [
     "Usul.Muamalat.confessionBinds",
-    "Usul.Muamalat.q55_error_claim_irrelevant"
+    "Usul.Muamalat.q55_error_claim_irrelevant",
+    "Usul.Muamalat.plead",
+    "Usul.Muamalat.q55_confession_absorbs"
+   ],
+   "schemata": [
+    "S5-inert"
    ]
   },
   {
@@ -678,7 +808,11 @@
     "Usul.Kulliyyat.reading",
     "Usul.Kulliyyat.q57_possible_intent_prevails",
     "Usul.Kulliyyat.q57_impossible_intent_falls_back",
-    "Usul.Kulliyyat.q57_unknown_intent_literal"
+    "Usul.Kulliyyat.q57_unknown_intent_literal",
+    "Usul.Kulliyyat.q57_is_priority"
+   ],
+   "schemata": [
+    "S2-priority"
    ]
   },
   {
@@ -691,7 +825,11 @@
     "Usul.Sadi.DependsOn",
     "Usul.Sadi.q58_qiyas",
     "Usul.Sadi.q58_factors",
-    "Usul.Sadi.q58_naqd"
+    "Usul.Sadi.q58_naqd",
+    "Usul.Schema.dependsOn_iff_factors"
+   ],
+   "schemata": [
+    "S1-invariance"
    ]
   },
   {

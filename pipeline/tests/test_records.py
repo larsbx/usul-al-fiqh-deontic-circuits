@@ -71,3 +71,13 @@ def test_sadi_catalogue_is_formalised_and_checked():
     checked = (root / "formal/lean/UsulTest/SignatureMap.lean").read_text()
     assert all(r["lean"] for r in cat["rules"])
     assert all(f"#check @{n}\n" in checked for r in cat["rules"] for n in r["lean"])
+
+
+def test_schemata_tags_are_pinned():
+    """Catalogue schema tags coincide with the typed pins in UsulTest/Schemata.lean."""
+    root = Path(__file__).parents[2]
+    cat = json.loads((root / "corpus/proposals/sadi_qawaid.json").read_text())
+    tagged = {(f"Q{r['number']}", s) for r in cat["rules"] for s in r.get("schemata", [])}
+    pins = (root / "formal/lean/UsulTest/Schemata.lean").read_text()
+    pinned = {tuple(line.split()[2:4]) for line in pins.splitlines() if line.startswith("-- @schema ")}
+    assert tagged == pinned
