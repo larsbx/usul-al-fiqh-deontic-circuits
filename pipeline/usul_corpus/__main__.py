@@ -208,7 +208,15 @@ def _lean_names() -> list[str]:
     """Lean constants named by the Σ map and by every catalogue proposal, in order."""
     sigma = [link["lean"] for link in _load(CORPUS / "signature_map.json")["links"]]
     proposals = [n for p in sorted((CORPUS / "proposals").glob("*.json")) for r in _load(p)["rules"] for n in r["lean"]]
-    return sigma + proposals
+    review = [n for p in sorted((CORPUS / "review").glob("*.json")) for n in _review_names(_load(p))]
+    return sigma + proposals + review
+
+
+def _review_names(reg: dict) -> list[str]:
+    """Lean constants a review register relies on: its process, its pins, its transported laws."""
+    return [*reg["process"]["lean"],
+            *(n for q in reg["questions"] for n in q["pins"]),
+            *(a["transported"] for q in reg["questions"] for a in q["analogies"] if a["kind"] == "internal")]
 
 
 def cmd_signature(_: argparse.Namespace) -> int:

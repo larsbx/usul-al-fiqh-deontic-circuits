@@ -95,3 +95,52 @@ def test_interpretive_questions_are_grounded():
     for q in reg["questions"]:
         assert all(set(q["schemata"]) & set(cat[n].get("schemata", [])) for n in q["rules"]), q["id"]
         assert set(q["pins"]) <= linked, q["id"]
+
+
+def _register(root):
+    return json.loads((root / "corpus/review/sadi_interpretive_questions.json").read_text())
+
+
+def test_status_is_computed_from_evidence_on_file():
+    """Q11 on the register: a status is what its evidence supports (Usul.Process.status), nothing more."""
+    for q in _register(Path(__file__).parents[2])["questions"]:
+        internal = any(a["kind"] == "internal" for a in q["analogies"])
+        expected = "referenced" if q["established"] else "analogized" if internal else "open"
+        assert q["status"] in (expected, "withdrawn"), q["id"]
+
+
+def test_citations_resolve_to_pinned_sources():
+    """Every established answer cites a committed record or a locator into a registered witness."""
+    root = Path(__file__).parents[2]
+    ids = {json.loads(line)["id"] for f in (root / "corpus/records").glob("*.jsonl") for line in f.read_text().splitlines()}
+    witnesses = {w["id"] for work in json.loads((root / "corpus/registry.json").read_text())["works"] for w in work["witnesses"]}
+    for q in _register(root)["questions"]:
+        for e in q["established"]:
+            ref = e["ref"]
+            assert (ref.split("/")[0][4:] in witnesses) if ref.startswith("src:") else ref in ids, (q["id"], ref)
+            assert ref.startswith("src:") or "excerpt_ar" not in e, (q["id"], "records carry their own excerpt")
+
+
+def test_internal_analogies_are_licensed():
+    """Q58 on the register: an internal analogy needs the schema on both aṣl and farʿ (else naqḍ)."""
+    root = Path(__file__).parents[2]
+    tags = {r["number"]: set(r.get("schemata", [])) for r in json.loads((root / "corpus/proposals/sadi_qawaid.json").read_text())["rules"]}
+    for q in _register(root)["questions"]:
+        for a in (a for a in q["analogies"] if a["kind"] == "internal"):
+            assert a["asl"] not in q["rules"], (q["id"], "an analogy needs a distinct aṣl")
+            assert a["schema"] in tags[a["asl"]] and all(a["schema"] in tags[n] for n in q["rules"]), (q["id"], a["asl"])
+
+
+def test_process_is_stratified():
+    """No bootstrap deadlock: rules the process uses are under no live question; avoided ones are."""
+    reg = _register(Path(__file__).parents[2])
+    live = {n for q in reg["questions"] if q["status"] != "withdrawn" for n in q["rules"]}
+    assert not set(reg["process"]["uses"]) & live
+    assert {int(n) for n in reg["process"]["avoids"]} <= live
+    assert set(reg["process"]["uses_why"]) == {str(n) for n in reg["process"]["uses"]}
+
+
+def test_questions_do_not_overlap():
+    """S7 on the register: two questions on the same rules and schema would merge into one."""
+    keys = [(tuple(sorted(q["rules"])), tuple(sorted(q["schemata"]))) for q in _register(Path(__file__).parents[2])["questions"]]
+    assert len(keys) == len(set(keys))

@@ -44,7 +44,7 @@ A schema proves *structure*. Which coordinate a rule ignores, which source ranks
 |---|---|---|
 | Structure (laws, transport, instance-of) | Lean holds proof authority | `Usul.Schema`, `UsulTest/Schemata.lean` |
 | Bounded cross-checks | advisory oracle, never proof (`semantic-categorical-oracle/docs/authority-boundary.md`) | `Oracle.Usul.Schema`, `registry/laws.toml` spikes |
-| Interpretive commitments | class C, `SHARIAH-AUTHORITY` gate (`halaqa/shared/STUB-CLASSIFICATION.md`) | surfaced only, as open questions |
+| Interpretive commitments | class C, `SHARIAH-AUTHORITY` gate (`halaqa/shared/STUB-CLASSIFICATION.md`) | surfaced as questions, with cited established answers and analogies; never adopted |
 | Admission of any reading | human review (`Review.tla`, `deontic-circuits-harness.md`) | every record stays `candidate` |
 
 So the explanations of *what each reading commits to* are not prose in this note. They are a register of review questions: [`corpus/review/sadi_interpretive_questions.json`](../../corpus/review/sadi_interpretive_questions.json), validated by `schemas/review_question.schema.json`. Each question records:
@@ -52,8 +52,27 @@ So the explanations of *what each reading commits to* are not prose in this note
 - the **rules** and the **schema** whose instance makes the commitment;
 - the **pins**, the Lean constants that fail if the commitment changes. The test requires each pin to be linked in the catalogue, and therefore `#check`-ed;
 - the **commitment**, the **alternatives** found in the tradition, and what changes formally **if changed**;
+- **established** answers: the positions of the Ḥanbalī tradition the commitment should be weighed against, cited from the pinned corpus by record id (e.g. Ibn Rajab's qāʿida) or by source locator (al-Inṣāf, Iʿlām, Sharḥ al-Kawkab), each marked `agrees`, `refines`, `contradicts` or `bears-on`;
+- **analogies**: *internal* ones from another of al-Saʿdī's rules sharing the schema (qiyās: the shared schema is the ʿilla, and a transported Lean law carries the structure), and *illustrative* ones from other legal traditions, which explain but never count as evidence;
 - a suggested **route**: the halaqa `shared/usul-k/` file where an eventual ruling would live (`evidence-order`, `derogation`, `operators`, `specificity`, `resolution-schema`).
 
-The register follows the halaqa rules for agents. It may classify, compare, identify uncertainty and surface questions (ICM-H §17). It does not answer or rank, and it does not write to `usul-k/`. Its existence does not satisfy the gate (§32). `test_interpretive_questions_are_grounded` keeps it honest: every question must name rules that actually carry the schema it cites, and every pin must be a linked constant. On the first run this test caught two errors, a wrong schema tag (Q32 is S3, not S2) and a pin that was never `#check`-ed.
+The register follows the halaqa rules for agents. It may classify, compare, identify uncertainty and surface questions (ICM-H §17). Citing an established answer is comparison, not adoption. It does not adopt or rank, and it does not write to `usul-k/`. Its existence does not satisfy the gate (§32). `test_interpretive_questions_are_grounded` keeps it honest: every question must name rules that actually carry the schema it cites, and every pin must be a linked constant. On the first run this test caught two errors, a wrong schema tag (Q32 is S3, not S2) and a pin that was never `#check`-ed.
 
 When a question is answered under the gate, the reading changes, its pins fail, and the change is made deliberately: the reading, its pin and, if the shape changes, its tag.
+
+## Dogfooding: the review runs on its own principles
+
+Principles that are formalised and not themselves under question are applied to the review process (`formal/lean/Usul/Process.lean`, the `process` block of the register):
+
+| Principle | Applied as | Check |
+|---|---|---|
+| Aḥmad's order of resort, taʿāruḍ order (S2) | status = `referenced` if an established answer is cited, else `analogized` if an internal analogy is offered, else `open` (tawaqquf). An analogy never outranks a cited text (`analogy_never_outranks_text`, `order_is_resort`) | `test_status_is_computed_from_evidence_on_file` |
+| Q11, istiṣḥāb | a status is exactly what the evidence on file supports; nothing else moves it | same test |
+| Q58, qiyās (S1) | an internal analogy is licensed only if aṣl and farʿ both carry the schema; a missing tag is naqḍ (`Licensed`, `naqd`) | `test_internal_analogies_are_licensed` |
+| Q8, gate (S3) | no status means "adopted" (`never_adopts`); adoption is the `SHARIAH-AUTHORITY` gate | schema: no such status |
+| Q41, merging (S7) | two questions on the same rules and schema would merge into one | `test_questions_do_not_overlap` |
+
+**Bootstrap deadlocks.** The review cannot use a principle whose reading is itself under live review. Otherwise the review waits on the question and the question waits on the review. `no_deadlock_of_stratified` proves the condition sufficient: if the rules the process uses are disjoint from the rules under live questions, nothing waits on anything. `no_cycle_of_rank` gives the general form: a rank that every wait lowers rules out any cycle through the wait relation's closure. The register declares `uses` (Q8, 11, 58) and `avoids` (Q33: IQ-10 is open on its tie-break, so choosing among cited answers "by the best" is not done). `test_process_is_stratified` checks both on the data. Mutation-checked: adding a rule under question to `uses` fails it.
+
+So the principles are applied while building, except where applying them would make the process depend on its own unanswered questions.
+

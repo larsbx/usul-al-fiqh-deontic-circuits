@@ -230,3 +230,14 @@ import Usul
 #check @Usul.Sadi.q59_nakira_general_in_negation
 #check @Usul.Sadi.q59_nakira_absolute_in_affirmation
 #check @Usul.Sadi.q60_markers_general
+#check @Usul.Process.status
+#check @Usul.Process.analogy_never_outranks_text
+#check @Usul.Process.order_is_resort
+#check @Usul.Process.never_adopts
+#check @Usul.Process.Licensed
+#check @Usul.Process.naqd
+#check @Usul.Process.Stratified
+#check @Usul.Process.no_deadlock_of_stratified
+#check @Usul.Process.no_cycle_of_rank
+#check @Usul.Schema.burden_factors
+#check @Usul.Schema.Factors.post

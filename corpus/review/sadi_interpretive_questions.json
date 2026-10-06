@@ -1,7 +1,7 @@
 {
  "register": "sadi.interpretive_questions",
  "status": "candidate",
- "provenance": "Surfaced while proving al-Saʿdī's readings to be instances of Usul.Schema. Each question names an interpretive commitment the encoding makes, the alternatives, and which typed pins fail if the commitment changes. LLM-drafted; awaiting human review (Review.tla).",
+ "provenance": "Surfaced while proving al-Saʿdī's readings to be instances of Usul.Schema. Each question names an interpretive commitment, the alternatives, the typed pins that fail if it changes, established answers cited from the pinned Ḥanbalī corpus (by record id or source locator), and analogies (internal ones licensed by a shared schema, illustrative ones non-evidential). LLM-drafted; awaiting human review (Review.tla).",
  "authority": {
   "gate": "SHARIAH-AUTHORITY",
   "class": "C",
@@ -14,14 +14,43 @@
   "this_register_may": [
    "name the commitment an encoding makes",
    "list alternatives found in the tradition",
+   "cite an established answer from a pinned source, with its relation to the commitment",
+   "offer analogies: internal ones licensed by a shared schema (qiyās), illustrative ones marked non-evidential",
    "say which formal pins change if the commitment changes",
    "suggest the usul-k home a ruling would eventually live in"
   ],
   "this_register_may_not": [
-   "answer a question",
-   "rank the alternatives",
+   "adopt an answer or rank the alternatives",
+   "treat an analogy as outranking a cited text",
    "write to halaqa shared/usul-k/",
    "promote a reading past candidate"
+  ]
+ },
+ "process": {
+  "note": "The review applies the project's principles to itself where this cannot deadlock (Usul.Process). Status is computed: referenced if an established answer is cited, else analogized if an internal analogy is offered, else open.",
+  "uses": [
+   8,
+   11,
+   58
+  ],
+  "uses_why": {
+   "8": "adoption is a gate (SHARIAH-AUTHORITY), never a status here",
+   "11": "status persists until evidence on file changes it",
+   "58": "internal analogies are qiyās through a shared schema; naqḍ rejects a missing tag"
+  },
+  "avoids": {
+   "33": "IQ-10 is open on Q33's tie-break; choosing among cited answers by 'best' would wait on its own question"
+  },
+  "lean": [
+   "Usul.Process.status",
+   "Usul.Process.analogy_never_outranks_text",
+   "Usul.Process.order_is_resort",
+   "Usul.Process.never_adopts",
+   "Usul.Process.Licensed",
+   "Usul.Process.naqd",
+   "Usul.Process.Stratified",
+   "Usul.Process.no_deadlock_of_stratified",
+   "Usul.Process.no_cycle_of_rank"
   ]
  },
  "questions": [
@@ -43,7 +72,28 @@
    ],
    "if_changed": "Change the presumption argument of burdenOf in q10_from_presumption; the S6 pin for Q10 fails until the new presumption is stated.",
    "route": "halaqa:shared/usul-k/evidence-order.md",
-   "status": "open"
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159",
+     "relation": "refines",
+     "note": "When the presumption (aṣl) and the apparent state (ẓāhir) conflict: an apparent state that is a sharʿī proof (testimony, report) prevails without dispute; one resting on custom, habit, indications or preponderant belief sometimes yields, sometimes prevails, and sometimes the madhhab is divided. A single presumption covers one of these classes only."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 52,
+     "schema": "S6-presumption",
+     "transported": "Usul.Schema.burden_after_update",
+     "note": "As in Q52, an indication strong enough to displace the presumption moves the burden; IQ-01 asks which presumption is displaced."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "civil law",
+     "note": "actori incumbit probatio: the burden lies on whoever asserts a change from the status quo, which is S6 with the status quo as presumption."
+    }
+   ]
   },
   {
    "id": "IQ-02",
@@ -65,7 +115,33 @@
    ],
    "if_changed": "returnPresumption would need a graded result (a Qawaid.Held with a Grade) instead of a Bool, and burden_after_update (Q52) would decide; the Q26/Q43 pins fail.",
    "route": "halaqa:shared/usul-k/evidence-order.md",
-   "status": "open"
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q044",
+     "relation": "refines",
+     "note": "For loss, every trustee's word is accepted, since trust means no liability. For return, trustees fall into three classes; one who took the property for the owner's benefit alone is believed (the madhhab), but a narration through Abū Ṭālib and Ibn Manṣūr holds that a deposit proved by evidence is not discharged by a bare claim of return."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159",
+     "relation": "bears-on",
+     "note": "Displacement by custom or indication is the second class of aṣl/ẓāhir conflict, where the madhhab goes both ways."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 10,
+     "schema": "S6-presumption",
+     "transported": "Usul.Schema.burden_factors",
+     "note": "As for claimant and denier, the trustee's role is derived from whether his claim agrees with the presumption."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "common law of bailment",
+     "note": "A bailee for the bailor's sole benefit is held to a lighter standard than one who benefits himself."
+    }
+   ]
   },
   {
    "id": "IQ-03",
@@ -86,7 +162,35 @@
    ],
    "if_changed": "A domain parameter on plead; q55_confession_absorbs then holds only for the persons domain, and a second S5 instance (without retract) is pinned for ḥudūd.",
    "route": "halaqa:shared/usul-k/derogation.md",
-   "status": "open"
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v12:p008",
+     "relation": "refines",
+     "note": "The judge may invite one who confessed to a ḥadd to retract; al-Intiṣār: prompting the retraction is lawful. So in the ḥudūd a retraction is not inert.",
+     "excerpt_ar": "للحاكم أن يعرض للمقر بحد أن يرجع عن إقراره، وقال في الانتصار: تلقينه الرجوع مشروع"
+    },
+    {
+     "ref": "src:openiti-ilam-shamela11496/v03:p295",
+     "relation": "refines",
+     "note": "Retracting the confession drops the ḥadd (the case of Māʿiz: 'why did you not leave him to repent').",
+     "excerpt_ar": "فالحيلة أن يرجع عن إقراره فيسقط عنه الحد"
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 11,
+     "schema": "S5-inert",
+     "transported": "Usul.Schema.yaqin_doubts_inert",
+     "note": "As later doubts are inert on a certain judgement (Q11), later pleas are inert on a confession; both are absorbing states."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "evidence law",
+     "note": "An admission against interest binds in civil matters, while a criminal confession may be withdrawn before judgment: the same split as persons/ḥudūd."
+    }
+   ]
   },
   {
    "id": "IQ-04",
@@ -107,7 +211,21 @@
    ],
    "if_changed": "Merges gains an intention argument or a kind whitelist; it must stay reflexive for reps_covers, and the S7 pin records whether it is still an equivalence.",
    "route": "halaqa:shared/usul-k/operators.md",
-   "status": "open"
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018",
+     "relation": "contradicts",
+     "note": "Merging requires two acts of one genus at one time, neither performed as a make-up (qaḍāʾ) nor as a dependent of the other; and in the first type both must be intended, on the well-known view (two impurities: the major ablution suffices if both are intended). The reading ignores time, make-up, dependence and intention."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "illustrative",
+     "domain": "sentencing",
+     "note": "Concurrent sentences: one term covers several convictions only when ordered so and the offences are of a kind, which adds an intention-like condition to the merge relation."
+    }
+   ]
   },
   {
    "id": "IQ-05",
@@ -129,7 +247,40 @@
    ],
    "if_changed": "Ignores no longer holds; the S1 pins for Q13 and Q54 fail, which is the intended signal that a coordinate became relevant.",
    "route": "halaqa:shared/usul-k/operators.md",
-   "status": "open"
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095",
+     "relation": "refines",
+     "note": "Whoever destroys another's property believing it his own: if the belief rests on a visible cause from another who erred or admits intent, that other is liable; if on bare ijtihād, there are two views on liability. Belief can move liability between parties."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q089",
+     "relation": "agrees",
+     "note": "The causes of liability are three: contract, hand and destruction. Destruction is a cause by the act itself, not by the intent behind it."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 14,
+     "schema": "S1-invariance",
+     "transported": "Usul.Muamalat.q14_factors_through_authorization",
+     "note": "Loss liability factors through authorisation, not mental state, as destruction liability does in Q13."
+    },
+    {
+     "kind": "internal",
+     "asl": 47,
+     "schema": "S1-invariance",
+     "transported": "Usul.Schema.Factors.post",
+     "note": "Every consequence computed from an invariant ruling is invariant too; if intent were relevant to sin but not to liability, two outputs would be needed."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "tort law",
+     "note": "Strict liability: liability for the act regardless of fault, with fault relevant to other consequences."
+    }
+   ]
   },
   {
    "id": "IQ-06",
@@ -149,7 +300,29 @@
    ],
    "if_changed": "mayInflict gains a derogation argument; q15_ignores_received holds only off the derogation.",
    "route": "halaqa:shared/usul-k/derogation.md",
-   "status": "open"
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p442",
+     "relation": "agrees",
+     "note": "'No harm and no reciprocal harm' is a principle our companions reasoned with in many matters; rulings are either for securing benefits or for repelling harms.",
+     "excerpt_ar": "لا ضرر ولا ضرار ... وقد علل أصحابنا بذلك في مسائل كثيرة"
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 13,
+     "schema": "S1-invariance",
+     "transported": "Usul.Muamalat.q13_ignores_intent",
+     "note": "The harm received is ignored as intent is ignored in Q13: both readings declare one coordinate irrelevant."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "public law",
+     "note": "Self-help is barred and retaliation reserved to the court, so the carve-out sits outside the private rule."
+    }
+   ]
   },
   {
    "id": "IQ-07",
@@ -170,7 +343,28 @@
    ],
    "if_changed": "recourse gains an intention or permission argument, which becomes a second impediment or a condition in q32_is_gate; q32_never_more_than_paid must still hold.",
    "route": "halaqa:shared/usul-k/derogation.md",
-   "status": "open"
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075",
+     "relation": "refines",
+     "note": "Recourse for paying another's due without his permission, in the sounder narration (the madhhab of al-Khiraqī, Abū Bakr, al-Qāḍī and most). Al-Qāḍī requires intending recourse and witnessing it at payment: intending a gift or leaving the intention unspecified gives no recourse. The reading grants recourse when the intention is unspecified."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 17,
+     "schema": "S3-gate",
+     "transported": "Usul.Kulliyyat.q17_is_gate",
+     "note": "Intention to reclaim as a condition and gift as an impediment, in the same gate algebra as entitlement and hastening in Q17."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "civil law",
+     "note": "Negotiorum gestio and subrogation: the payer's recourse depends on acting for the debtor without donative intent."
+    }
+   ]
   },
   {
    "id": "IQ-08",
@@ -189,7 +383,30 @@
    ],
    "if_changed": "Custom as a refinement is an S1/S3 reading (a qualifier), not S2; the Q9 pin would move schema.",
    "route": "halaqa:shared/usul-k/specificity.md",
-   "status": "open"
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121",
+     "relation": "refines",
+     "note": "Custom specifies a general term: where customary use has made one sense the real one, the general is restricted to it without dispute (an oath not to eat 'roast' covers roast meat only). Custom then refines a term rather than only filling a gap."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 57,
+     "schema": "S2-priority",
+     "transported": "Usul.Kulliyyat.q57_is_priority",
+     "note": "Law over custom has the shape of possible intent over the literal (Q57); the refinement alternative changes the shape for both."
+    },
+    {
+     "kind": "internal",
+     "asl": 6,
+     "schema": "S2-priority",
+     "transported": "Usul.Schema.ruled_is_priority",
+     "note": "The dalīl over the domain default, the same priority shape."
+    }
+   ]
   },
   {
    "id": "IQ-09",
@@ -209,7 +426,30 @@
    ],
    "if_changed": "The order of sources in allocation changes; q25_lot_is_last_resort records when lots apply and fails if the order changes.",
    "route": "halaqa:shared/usul-k/resolution-schema.md",
-   "status": "open"
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160",
+     "relation": "refines",
+     "note": "Lots distinguish the entitled when entitlement attaches to an unspecified one among equals, or to recover a specific entitled person lost in confusion; not used for lineage. The reading lacks the equality condition and the lineage exclusion."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 28,
+     "schema": "S2-priority",
+     "transported": "Usul.Schema.substitute_is_priority",
+     "note": "Original before substitute, as entitled before division before lots."
+    },
+    {
+     "kind": "internal",
+     "asl": 19,
+     "schema": "S2-priority",
+     "transported": "Usul.Muamalat.q19_is_priority",
+     "note": "Stipulated price before value, the same fallback shape."
+    }
+   ]
   },
   {
    "id": "IQ-10",
@@ -234,7 +474,26 @@
    ],
    "if_changed": "A partial order replaces Int; best becomes a set of maximal options, and Optimal.key_unique no longer holds, which the S8 pins expose.",
    "route": "halaqa:shared/usul-k/resolution-schema.md",
-   "status": "open"
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017",
+     "relation": "contradicts",
+     "note": "One noble act against many lesser: Aḥmad's apparent view prefers multiplicity; other narrations prefer the noble one, or equality. Two dimensions and genuine ties occur, where the reading assumes one scale and breaks ties by list order."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158",
+     "relation": "refines",
+     "note": "Two conflicting presumptions: act on the stronger; if equal, the question is divided in the madhhab. Ties yield disagreement, not an order of listing."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "illustrative",
+     "domain": "decision theory",
+     "note": "A scalar ranking versus a Pareto (partial) order: under the second, 'the best' may not exist, and Optimal.key_unique fails."
+    }
+   ]
   },
   {
    "id": "IQ-11",
@@ -254,7 +513,30 @@
    ],
    "if_changed": "Established becomes one step of the step relation rather than Closure; q50_follower_established then needs a proved principal.",
    "route": "halaqa:shared/usul-k/specificity.md",
-   "status": "open"
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133",
+     "relation": "agrees",
+     "note": "The same rule: what is not established independently is established as a dependent (women's testimony to birth establishes lineage). Its examples are one step; transitivity is not addressed."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 53,
+     "schema": "S4-closure",
+     "transported": "Usul.Muamalat.q53_void_propagates",
+     "note": "Voidness propagates transitively along 'built on'; IQ-11 asks whether establishment propagates the same way."
+    },
+    {
+     "kind": "internal",
+     "asl": 2,
+     "schema": "S4-closure",
+     "transported": "Usul.Schema.wajib_is_closure",
+     "note": "The means of a means of an obligation is obligatory: transitivity is accepted in Q2."
+    }
+   ]
   },
   {
    "id": "IQ-12",
@@ -276,7 +558,29 @@
    ],
    "if_changed": "A good-faith or time guard on builtOn; q53_rescission_inert still holds, q53_void_propagates gains a hypothesis.",
    "route": "halaqa:shared/usul-k/derogation.md",
-   "status": "open"
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p045#q036",
+     "relation": "refines",
+     "note": "Al-Qāḍī and Ibn ʿAqīl: rescission for a defect lifts the contract from now; rescission by an option lifts it from its origin, since the option prevents bindingness altogether. 'Rescission is inert' fits rescission for a defect only.",
+     "excerpt_ar": "الفسخ بالعيب رفع للعقد من حينه، والفسخ بالخيار رفع للعقد من أصله"
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 50,
+     "schema": "S4-closure",
+     "transported": "Usul.Kulliyyat.q50_follower_established",
+     "note": "Establishment and voidness are the same closure with different seeds."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "civil law",
+     "note": "Void ab initio (ex tunc) versus voidable and rescinded (ex nunc)."
+    }
+   ]
   }
  ]
 }

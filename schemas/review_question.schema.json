@@ -1,24 +1,64 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/schemas/review_question.schema.json",
-  "title": "Interpretive-question register (surfaced for review; decides nothing)",
+  "title": "Interpretive-question register (surfaced for review; cites and compares, adopts nothing)",
   "type": "object",
-  "required": ["register", "status", "provenance", "authority", "questions"],
+  "required": [
+    "register",
+    "status",
+    "provenance",
+    "authority",
+    "process",
+    "questions"
+  ],
   "additionalProperties": false,
   "properties": {
-    "register": {"type": "string"},
-    "status": {"const": "candidate"},
-    "provenance": {"type": "string", "minLength": 1},
+    "register": {
+      "type": "string"
+    },
+    "status": {
+      "const": "candidate"
+    },
+    "provenance": {
+      "type": "string",
+      "minLength": 1
+    },
     "authority": {
       "type": "object",
-      "required": ["gate", "class", "basis", "this_register_may", "this_register_may_not"],
+      "required": [
+        "gate",
+        "class",
+        "basis",
+        "this_register_may",
+        "this_register_may_not"
+      ],
       "additionalProperties": false,
       "properties": {
-        "gate": {"const": "SHARIAH-AUTHORITY"},
-        "class": {"const": "C"},
-        "basis": {"type": "array", "items": {"type": "string"}, "minItems": 1},
-        "this_register_may": {"type": "array", "items": {"type": "string"}},
-        "this_register_may_not": {"type": "array", "items": {"type": "string"}}
+        "gate": {
+          "const": "SHARIAH-AUTHORITY"
+        },
+        "class": {
+          "const": "C"
+        },
+        "basis": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "this_register_may": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "this_register_may_not": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
       }
     },
     "questions": {
@@ -26,27 +66,234 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["id", "rules", "schemata", "pins", "commitment", "alternatives", "if_changed", "route", "status"],
+        "required": [
+          "id",
+          "rules",
+          "schemata",
+          "pins",
+          "commitment",
+          "alternatives",
+          "if_changed",
+          "route",
+          "status",
+          "established",
+          "analogies"
+        ],
         "additionalProperties": false,
         "properties": {
-          "id": {"type": "string", "pattern": "^IQ-[0-9]{2}$"},
-          "rules": {"type": "array", "items": {"type": "integer", "minimum": 1, "maximum": 60}, "minItems": 1},
-          "schemata": {"type": "array", "items": {"enum": ["S1-invariance", "S2-priority", "S3-gate", "S4-closure", "S5-inert", "S6-presumption", "S7-merge", "S8-optimal"]}, "minItems": 1},
-          "pins": {"type": "array", "items": {"type": "string", "pattern": "^Usul\\."}, "minItems": 1},
-          "commitment": {"type": "string", "minLength": 1},
-          "alternatives": {"type": "array", "items": {"type": "string"}, "minItems": 1},
-          "if_changed": {"type": "string", "minLength": 1},
-          "route": {"enum": [
-            "halaqa:shared/usul-k/kernel-contract.md",
-            "halaqa:shared/usul-k/operators.md",
-            "halaqa:shared/usul-k/specificity.md",
-            "halaqa:shared/usul-k/derogation.md",
-            "halaqa:shared/usul-k/evidence-order.md",
-            "halaqa:shared/usul-k/resolution-schema.md"
-          ]},
-          "status": {"enum": ["open", "answered", "withdrawn"]}
+          "id": {
+            "type": "string",
+            "pattern": "^IQ-[0-9]{2}$"
+          },
+          "rules": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 60
+            },
+            "minItems": 1
+          },
+          "schemata": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/schema"
+            },
+            "minItems": 1
+          },
+          "pins": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^Usul\\."
+            },
+            "minItems": 1
+          },
+          "commitment": {
+            "type": "string",
+            "minLength": 1
+          },
+          "alternatives": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "if_changed": {
+            "type": "string",
+            "minLength": 1
+          },
+          "route": {
+            "enum": [
+              "halaqa:shared/usul-k/kernel-contract.md",
+              "halaqa:shared/usul-k/operators.md",
+              "halaqa:shared/usul-k/specificity.md",
+              "halaqa:shared/usul-k/derogation.md",
+              "halaqa:shared/usul-k/evidence-order.md",
+              "halaqa:shared/usul-k/resolution-schema.md"
+            ]
+          },
+          "status": {
+            "enum": [
+              "referenced",
+              "analogized",
+              "open",
+              "withdrawn"
+            ]
+          },
+          "established": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "ref",
+                "relation",
+                "note"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "ref": {
+                  "type": "string",
+                  "pattern": "^(src:[a-z0-9-]+/v[0-9]+:p[0-9]+(#q[0-9]+)?|[a-z_]+\\.[a-z_]+\\.[a-z0-9_]+\\.q[0-9]{3})$"
+                },
+                "relation": {
+                  "enum": [
+                    "agrees",
+                    "refines",
+                    "contradicts",
+                    "bears-on"
+                  ]
+                },
+                "note": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "excerpt_ar": {
+                  "type": "string",
+                  "maxLength": 400
+                }
+              }
+            }
+          },
+          "analogies": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "required": [
+                    "kind",
+                    "asl",
+                    "schema",
+                    "transported",
+                    "note"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "kind": {
+                      "const": "internal"
+                    },
+                    "asl": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 60
+                    },
+                    "schema": {
+                      "$ref": "#/$defs/schema"
+                    },
+                    "transported": {
+                      "type": "string",
+                      "pattern": "^Usul\\."
+                    },
+                    "note": {
+                      "type": "string"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "required": [
+                    "kind",
+                    "domain",
+                    "note"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "kind": {
+                      "const": "illustrative"
+                    },
+                    "domain": {
+                      "type": "string"
+                    },
+                    "note": {
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            }
+          }
         }
       }
+    },
+    "process": {
+      "type": "object",
+      "required": [
+        "note",
+        "uses",
+        "uses_why",
+        "avoids",
+        "lean"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "note": {
+          "type": "string"
+        },
+        "uses": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 60
+          },
+          "uniqueItems": true
+        },
+        "uses_why": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "avoids": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "lean": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^Usul\\."
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "schema": {
+      "enum": [
+        "S1-invariance",
+        "S2-priority",
+        "S3-gate",
+        "S4-closure",
+        "S5-inert",
+        "S6-presumption",
+        "S7-merge",
+        "S8-optimal"
+      ]
     }
   }
 }
