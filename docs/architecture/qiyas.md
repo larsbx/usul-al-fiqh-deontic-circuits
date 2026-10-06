@@ -69,6 +69,17 @@ Mutation-checked: dropping an objection from `Qadih.all` breaks `mem_all`, and n
 
 Tarjīḥ is stated as *constraints* (sabr ≻ munāsaba ≻ shabah, ijmāʿ ≻ naṣṣ ≻ inferred), not as an invented total order. `exampleRank_respects` shows the constraints are consistent.
 
+## The limits of qiyās (`Usul.QiyasLimits`)
+
+| Topic | Lean | Source |
+|---|---|---|
+| fallibility: with the ʿilla as a conjunction of descriptions, an **added** description keeps qiyās sound but narrow, while an **omitted** one makes it unsound | `addition_sound`, `addition_never_overextends`, `omission_unsound` | Rawḍa v2 p185 (the five errors); Ibn al-Qayyim's errors of the qiyāsīs (Iʿlām v1 p263) are the addition and omission cases |
+| "nothing in the sharīʿa is against sound qiyās": with texts among the given cases, a qiyās against a text is a naqḍ | `qiyas_against_text_unsound` | Iʿlām v1 p289 ff.; Ibn Taymiyya |
+| scope: Ḥanbalī = rationale understood (ḥudūd, kaffārāt, fixed amounts included); original negation only by qiyās al-dalāla; the Ḥanafī scope is strictly narrower | `hanbaliAdmits`, `hanbali_hudud`, `no_qiyas_without_rationale`, `nafy_asli_only_dalala`, `hanafi_within_hanbali`, `hanafi_strictly_narrower` | Rawḍa v2 pp. 293–300; al-Ṭūfī v3 pp. 448–453; al-Kawkab v4 p220 |
+| jalī / khafī | `clarity`, `textual_is_jali`, `khafi_iff` | al-Kawkab v4 p207; Ibn ʿUthaymīn pp. 72, 82 |
+| shahādat al-uṣūl (disputed, so not a gate condition) | `shahadatUsul`, `shahada_restrict` | Rawḍa v2 p231; al-Ṭūfī v3 p713 |
+| tamthīl ≡ shumūl: pairwise agreement through the jāmiʿ ⇔ one ruling for everything with the middle term | `tamthil_iff_shumul`, `shumul_of_factors` | Ibn Taymiyya, al-Radd p116; Ādāb al-Baḥth p291 |
+
 ## Disputed points are parameters, with the established positions cited
 
 | Question | Parameter | Established answer cited |
@@ -78,6 +89,7 @@ Tarjīḥ is stated as *constraints* (sabr ≻ munāsaba ≻ shabah, ijmāʿ ≻
 | IQ-15 kasr | `Policy.admitKasr` (an impediment of the debate gate when admitted) | al-Musawwada v1 p428: two views; Abū al-Khaṭṭāb: not valid. Rawḍa v2 p312, al-Ṭūfī v3 p510, al-Kawkab v4 p67: not binding (the sound view among the companions). Al-Shinqīṭī (Mudhakkira p459): like naqḍ |
 | IQ-17 shabah | `acceptShabah` in `farByOrder` | al-Kawkab v4 p190: a proof for us only where qiyās al-ʿilla is impossible; Rawḍa v2 p243: two reports from Aḥmad, al-Qāḍī rejecting; Ibn al-Qayyim (Iʿlām v1 p115): reported only from those in error; Ibn Taymiyya (al-Radd p203): folded into ʿilla or dalāla |
 | IQ-18 manʿ / muʿāraḍa classification | `Qadih.kind` | al-Ṭūfī v3 p565, al-Kawkab v4 p229, Ādāb al-Baḥth p351 (some: all reduce to manʿ), p344 (muṭālaba and tarkīb under manʿ) |
+| IQ-19 qiyās in causes, conditions, impediments | `allowAsbab` in `hanbaliAdmits` | Rawḍa v2 p293: Ibn Qudāma affirms (via tanqīḥ al-manāṭ and the ḥikma); al-Kawkab v4 p220: denied by al-Āmidī and Ibn al-Ḥājib |
 | IQ-16 the mursal | `acceptMursal` | al-Musawwada v1 p450: not, per the later Ḥanbalī uṣūlīs (Mālik: yes); Rawḍa v1 p477: the threefold division |
 
 These are interpretive commitments for the `SHARIAH-AUTHORITY` gate (see [`schemata.md`](schemata.md#governance-where-the-explanations-live-and-why-there)). Nothing here fixes a parameter.
@@ -97,15 +109,11 @@ These are interpretive commitments for the `SHARIAH-AUTHORITY` gate (see [`schem
 | al-Shinqīṭī's Ādāb al-Baḥth | pp. 290–355 |
 | Ibn ʿUthaymīn | pp. 68–74 |
 
-Every excerpt was re-verified verbatim against the cached witness, and every OpenITI locator against the next page marker, before commit. Its `formalises` table maps each topic to the Lean constants it grounds, and `unformalised` names the rest:
-- ḥujjiyya;
-- shahādat al-uṣūl;
-- jalī versus khafī;
-- qiyās in asbāb, fixed amounts and negation;
-- Ibn al-Qayyim's catalogue of erroneous qiyās;
-- tamthīl versus shumūl.
+Every excerpt was re-verified verbatim against the cached witness, and every OpenITI locator against the next page marker, before commit. Its `formalises` table maps each topic to the Lean constants it grounds, and `unformalised` names the rest. Two topics remain unformalised, both premises rather than structure:
+- ḥujjiyya, the authority of qiyās itself;
+- Ibn al-Qayyim's thesis that the texts suffice for all rulings.
 
-`test_citation_maps_are_grounded` requires every catalogued `Usul.Qiyas` / `Usul.Jadal` constant to be grounded by a cited topic.
+`test_citation_maps_are_grounded` requires every `theorem` stated in `Usul.Qiyas`, `Usul.Jadal` and `Usul.QiyasLimits` to be grounded by a cited topic. Mutation-checked: an uncited theorem fails it.
 
 ## Sources
 

@@ -916,7 +916,10 @@
     "Usul.Jadal.debateGate_holds_iff",
     "Usul.Jadal.debateGate",
     "Usul.Jadal.debateGate_sound",
-    "Usul.Jadal.objection_blocks"
+    "Usul.Jadal.objection_blocks",
+    "Usul.QiyasLimits.hanbaliAdmits",
+    "Usul.QiyasLimits.no_qiyas_without_rationale",
+    "Usul.QiyasLimits.hanafi_strictly_narrower"
    ],
    "schemata": [
     "S1-invariance",

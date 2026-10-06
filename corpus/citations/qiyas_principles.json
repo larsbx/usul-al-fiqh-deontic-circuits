@@ -83,7 +83,8 @@
   ],
   "rukn:illa": [
    "Usul.Qiyas.Wasf",
-   "Usul.Schema.Factors"
+   "Usul.Schema.Factors",
+   "Usul.QiyasLimits.conj_iff"
   ],
   "masalik:tard": [
    "Usul.Qiyas.tard_iff",
@@ -92,7 +93,8 @@
   "masalik:dawaran": [
    "Usul.Qiyas.dawaran_iff",
    "Usul.Qiyas.dawaran_not_unique",
-   "Usul.Qiyas.dawaran"
+   "Usul.Qiyas.dawaran",
+   "Usul.Qiyas.aks_iff"
   ],
   "masalik:sabr_taqsim": [
    "Usul.Qiyas.sabr_sound",
@@ -136,10 +138,12 @@
    "Usul.Qiyas.Naqd"
   ],
   "qadih:man": [
-   "Usul.Qiyas.man_defeats"
+   "Usul.Qiyas.man_defeats",
+   "Usul.Qiyas.underdetermined"
   ],
   "qadih:farq": [
-   "Usul.Qiyas.farq_defeats"
+   "Usul.Qiyas.farq_defeats",
+   "Usul.Qiyas.underdetermined"
   ],
   "qadih:muarada": [
    "Usul.Jadal.counter_resolved_by_tarjih"
@@ -163,7 +167,8 @@
   ],
   "qadih:adam_al_tathir": [
    "Usul.Qiyas.adamTathir_iff_not_aks",
-   "Usul.Qiyas.AdamTathirSucceeds"
+   "Usul.Qiyas.AdamTathirSucceeds",
+   "Usul.Qiyas.dawaran_answers_adamTathir"
   ],
   "qadih:istifsar": [
    "Usul.Jadal.Qadih.succeeds",
@@ -200,7 +205,8 @@
   "qadih:list": [
    "Usul.Jadal.Qadih.all",
    "Usul.Jadal.debateGate_holds_iff",
-   "Usul.Jadal.debateGate"
+   "Usul.Jadal.debateGate",
+   "Usul.Jadal.Qadih.mem_all"
   ],
   "qadih:order": [
    "Usul.Jadal.Qadih.kind",
@@ -213,7 +219,8 @@
    "Usul.Qiyas.naqd_answered_by_takhsis"
   ],
   "type:aks": [
-   "Usul.Jadal.qiyas_aks"
+   "Usul.Jadal.qiyas_aks",
+   "Usul.Qiyas.aks_iff"
   ],
   "type:dalala": [
    "Usul.Jadal.dalala_verifies"
@@ -239,33 +246,66 @@
   ],
   "tarjih": [
    "Usul.Jadal.preferred_optimal",
-   "Usul.Jadal.RespectsSources"
+   "Usul.Jadal.RespectsSources",
+   "Usul.Jadal.exampleRank_respects",
+   "Usul.Jadal.sabr_beats_shabah"
   ],
   "ibn_qayyim:no_conflict": [
-   "Usul.Qiyas.qiyas_against_text_discarded"
+   "Usul.Qiyas.qiyas_against_text_discarded",
+   "Usul.QiyasLimits.qiyas_against_text_unsound"
   ],
   "ibn_taymiyya:no_contra_qiyas": [
-   "Usul.Qiyas.qiyas_against_text_discarded"
+   "Usul.Qiyas.qiyas_against_text_discarded",
+   "Usul.QiyasLimits.qiyas_against_text_unsound"
   ],
   "ibn_qayyim:sahih_fasid": [
    "Usul.Schema.Factors.qiyas",
    "Usul.Qiyas.farq_defeats"
   ],
   "scope:hudud_kaffarat": [
-   "Usul.Jadal.Qadih.succeeds"
+   "Usul.Jadal.Qadih.succeeds",
+   "Usul.QiyasLimits.hanbali_hudud",
+   "Usul.QiyasLimits.hanafi_within_hanbali",
+   "Usul.QiyasLimits.hanafi_strictly_narrower"
+  ],
+  "fallibility": [
+   "Usul.QiyasLimits.addition_sound",
+   "Usul.QiyasLimits.omission_unsound",
+   "Usul.QiyasLimits.addition_never_overextends",
+   "Usul.QiyasLimits.conj"
+  ],
+  "ibn_qayyim:errors": [
+   "Usul.QiyasLimits.addition_sound",
+   "Usul.QiyasLimits.omission_unsound",
+   "Usul.QiyasLimits.qiyas_against_text_unsound"
+  ],
+  "type:jali_khafi": [
+   "Usul.QiyasLimits.clarity",
+   "Usul.QiyasLimits.textual_is_jali",
+   "Usul.QiyasLimits.khafi_iff"
+  ],
+  "scope:asbab": [
+   "Usul.QiyasLimits.hanbaliAdmits"
+  ],
+  "scope:muqaddarat": [
+   "Usul.QiyasLimits.no_qiyas_without_rationale",
+   "Usul.QiyasLimits.hanafiAdmits"
+  ],
+  "scope:nafy": [
+   "Usul.QiyasLimits.nafy_asli_only_dalala"
+  ],
+  "masalik:shahadat_al_usul": [
+   "Usul.QiyasLimits.shahadatUsul",
+   "Usul.QiyasLimits.shahada_restrict"
+  ],
+  "ibn_taymiyya:tamthil_shumul": [
+   "Usul.QiyasLimits.tamthil_iff_shumul",
+   "Usul.QiyasLimits.shumul_of_factors"
   ]
  },
  "unformalised": {
   "hujjiyya": "the authority of qiyās is a premise of the model, not derived in it",
-  "masalik:shahadat_al_usul": "testimony of the uṣūl (disputed maslak) not yet modelled",
-  "type:jali_khafi": "the clear/hidden grading is not yet modelled",
-  "scope:asbab": "qiyās in causes not yet modelled",
-  "scope:muqaddarat": "fixed amounts not yet modelled",
-  "scope:nafy": "qiyās for negation not yet modelled",
-  "ibn_qayyim:errors": "Ibn al-Qayyim's catalogue of erroneous qiyās is not yet modelled",
-  "ibn_qayyim:nusus_kafiya": "sufficiency of the texts is a thesis about coverage, not modelled",
-  "ibn_taymiyya:tamthil_shumul": "qiyās al-tamthīl versus al-shumūl (logic) not yet modelled",
-  "fallibility": "the fallibility of qiyās is outside the model"
+  "ibn_qayyim:nusus_kafiya": "sufficiency of the texts is a thesis about coverage, not modelled"
  },
  "principles": [
   {

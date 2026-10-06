@@ -171,5 +171,11 @@ def test_citation_maps_are_grounded():
         assert not set(cmap["formalises"]) & set(cmap["unformalised"])
         grounded = {n for ns in cmap["formalises"].values() for n in ns}
         assert all(f"#check @{n}\n" in checked for n in grounded)
-        qiyas = {n for n in linked if n.startswith(("Usul.Qiyas.", "Usul.Jadal."))}
+        qiyas = {n for n in linked if n.startswith(("Usul.Qiyas.", "Usul.Jadal.", "Usul.QiyasLimits."))}
         assert qiyas <= grounded, qiyas - grounded
+    # every theorem stated in the qiyās modules is grounded by a cited topic
+    import re
+    grounded_all = {n for f in (root / "corpus/citations").glob("*.json") for ns in json.loads(f.read_text())["formalises"].values() for n in ns}
+    for mod in ("Qiyas", "Jadal", "QiyasLimits"):
+        names = re.findall(r"^theorem (\S+)", (root / f"formal/lean/Usul/{mod}.lean").read_text(), re.M)
+        assert names and all(f"Usul.{mod}.{n}" in grounded_all for n in names), mod

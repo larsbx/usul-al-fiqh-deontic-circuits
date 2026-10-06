@@ -944,6 +944,55 @@
      "note": "Undercutting versus rebutting defeaters: denying a premise or the inference, versus offering a competing conclusion."
     }
    ]
+  },
+  {
+   "id": "IQ-19",
+   "rules": [
+    58
+   ],
+   "schemata": [
+    "S3-gate"
+   ],
+   "pins": [
+    "Usul.QiyasLimits.hanbaliAdmits",
+    "Usul.QiyasLimits.no_qiyas_without_rationale",
+    "Usul.QiyasLimits.hanafi_strictly_narrower"
+   ],
+   "commitment": "The Ḥanbalī scope of qiyās is intelligibility of the rationale alone (ḥudūd, kaffārāt and fixed amounts included), with original negation only by qiyās al-dalāla; qiyās in causes, conditions and impediments is a parameter.",
+   "alternatives": [
+    "Qiyās in causes affirmed (Ibn Qudāma, via tanqīḥ al-manāṭ and the ḥikma).",
+    "Qiyās in causes, conditions and impediments denied (al-Āmidī, Ibn al-Ḥājib)."
+   ],
+   "if_changed": "allowAsbab is fixed; hanbaliAdmits then decides asbāb, and no_qiyas_without_rationale is unaffected.",
+   "route": "halaqa:shared/usul-k/specificity.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p293",
+     "relation": "refines",
+     "note": "Qiyās in causes: some allow it (sodomy on zinā for stoning), others deny; Ibn Qudāma affirms it via tanqīḥ al-manāṭ and via the ḥikma (anger, then hunger and thirst, for judging).",
+     "excerpt_ar": "قال قوم: يجوز إجراء القياس في الأسباب"
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p220",
+     "relation": "refines",
+     "note": "Some deny qiyās in cause, condition and impediment, as did al-Āmidī and Ibn al-Ḥājib; al-Āmidī reports most Shāfiʿīs allow it. The same page reports the Ḥanafī exclusion of ḥudūd, kaffārāt, substitutes, rukhaṣ and fixed amounts, and the Ḥanbalī «for us» against it."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 8,
+     "schema": "S3-gate",
+     "transported": "Usul.Sadi.Gate.holds_meet",
+     "note": "Causes, conditions and impediments are the parts of Q8's gate; extending a cause by qiyās adds to the gate's conditions."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "criminal law",
+     "note": "Nullum crimen sine lege: analogy in criminal law barred in many systems, as the Ḥanafīs bar qiyās in ḥudūd."
+    }
+   ]
   }
  ]
 }

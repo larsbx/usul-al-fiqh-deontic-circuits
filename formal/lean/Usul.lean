@@ -11,3 +11,4 @@ import Usul.Kulliyyat
 import Usul.Process
 import Usul.Qiyas
 import Usul.Jadal
+import Usul.QiyasLimits
