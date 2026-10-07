@@ -1,0 +1,1093 @@
+{
+ "contract": "usul.grounded-extension",
+ "version": 1,
+ "vectors": [
+  {
+   "id": "unattacked",
+   "note": "an uncontested naṣṣ",
+   "n": 1,
+   "attacks": [],
+   "grounded": [
+    0
+   ]
+  },
+  {
+   "id": "two_riwayat",
+   "note": "mutual attack: grounded suspends (tawaqquf); two preferred extensions",
+   "n": 2,
+   "attacks": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "grounded": []
+  },
+  {
+   "id": "reinstatement",
+   "note": "naqḍ (1) against a qiyās (2) is itself defeated by (0)",
+   "n": 3,
+   "attacks": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "grounded": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": "self_attack",
+   "note": "a self-defeating argument",
+   "n": 1,
+   "attacks": [
+    [
+     0,
+     0
+    ]
+   ],
+   "grounded": []
+  },
+  {
+   "id": "odd_cycle",
+   "note": "three-cycle",
+   "n": 3,
+   "attacks": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "grounded": []
+  },
+  {
+   "id": "chain4",
+   "note": "alternating chain",
+   "n": 4,
+   "attacks": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "grounded": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": "defended_by_two",
+   "note": "attacker defeated twice",
+   "n": 4,
+   "attacks": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "grounded": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "random_00",
+   "note": "seeded random",
+   "n": 1,
+   "attacks": [],
+   "grounded": [
+    0
+   ]
+  },
+  {
+   "id": "random_01",
+   "note": "seeded random",
+   "n": 2,
+   "attacks": [
+    [
+     0,
+     1
+    ]
+   ],
+   "grounded": [
+    0
+   ]
+  },
+  {
+   "id": "random_02",
+   "note": "seeded random",
+   "n": 2,
+   "attacks": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "grounded": [
+    0
+   ]
+  },
+  {
+   "id": "random_03",
+   "note": "seeded random",
+   "n": 2,
+   "attacks": [
+    [
+     0,
+     0
+    ]
+   ],
+   "grounded": [
+    1
+   ]
+  },
+  {
+   "id": "random_04",
+   "note": "seeded random",
+   "n": 4,
+   "attacks": [
+    [
+     0,
+     0
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "grounded": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "random_05",
+   "note": "seeded random",
+   "n": 3,
+   "attacks": [
+    [
+     0,
+     1
+    ]
+   ],
+   "grounded": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": "random_06",
+   "note": "seeded random",
+   "n": 6,
+   "attacks": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     4
+    ]
+   ],
+   "grounded": []
+  },
+  {
+   "id": "random_07",
+   "note": "seeded random",
+   "n": 1,
+   "attacks": [
+    [
+     0,
+     0
+    ]
+   ],
+   "grounded": []
+  },
+  {
+   "id": "random_08",
+   "note": "seeded random",
+   "n": 6,
+   "attacks": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     4
+    ]
+   ],
+   "grounded": [
+    0,
+    1,
+    3
+   ]
+  },
+  {
+   "id": "random_09",
+   "note": "seeded random",
+   "n": 3,
+   "attacks": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "grounded": [
+    2
+   ]
+  },
+  {
+   "id": "random_10",
+   "note": "seeded random",
+   "n": 3,
+   "attacks": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "grounded": []
+  },
+  {
+   "id": "random_11",
+   "note": "seeded random",
+   "n": 5,
+   "attacks": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     4,
+     2
+    ]
+   ],
+   "grounded": []
+  },
+  {
+   "id": "random_12",
+   "note": "seeded random",
+   "n": 4,
+   "attacks": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "grounded": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": "random_13",
+   "note": "seeded random",
+   "n": 2,
+   "attacks": [
+    [
+     1,
+     0
+    ]
+   ],
+   "grounded": [
+    1
+   ]
+  },
+  {
+   "id": "random_14",
+   "note": "seeded random",
+   "n": 1,
+   "attacks": [],
+   "grounded": [
+    0
+   ]
+  },
+  {
+   "id": "random_15",
+   "note": "seeded random",
+   "n": 5,
+   "attacks": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     4,
+     2
+    ]
+   ],
+   "grounded": [
+    1,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "random_16",
+   "note": "seeded random",
+   "n": 2,
+   "attacks": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "grounded": []
+  },
+  {
+   "id": "random_17",
+   "note": "seeded random",
+   "n": 7,
+   "attacks": [
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     4,
+     5
+    ]
+   ],
+   "grounded": [
+    0,
+    1,
+    3
+   ]
+  },
+  {
+   "id": "random_18",
+   "note": "seeded random",
+   "n": 1,
+   "attacks": [],
+   "grounded": [
+    0
+   ]
+  },
+  {
+   "id": "random_19",
+   "note": "seeded random",
+   "n": 5,
+   "attacks": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "grounded": []
+  },
+  {
+   "id": "random_20",
+   "note": "seeded random",
+   "n": 4,
+   "attacks": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "grounded": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "random_21",
+   "note": "seeded random",
+   "n": 2,
+   "attacks": [],
+   "grounded": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": "random_22",
+   "note": "seeded random",
+   "n": 7,
+   "attacks": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     6,
+     3
+    ]
+   ],
+   "grounded": [
+    6
+   ]
+  },
+  {
+   "id": "random_23",
+   "note": "seeded random",
+   "n": 1,
+   "attacks": [],
+   "grounded": [
+    0
+   ]
+  },
+  {
+   "id": "random_24",
+   "note": "seeded random",
+   "n": 1,
+   "attacks": [],
+   "grounded": [
+    0
+   ]
+  },
+  {
+   "id": "random_25",
+   "note": "seeded random",
+   "n": 2,
+   "attacks": [],
+   "grounded": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": "random_26",
+   "note": "seeded random",
+   "n": 5,
+   "attacks": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "grounded": []
+  },
+  {
+   "id": "random_27",
+   "note": "seeded random",
+   "n": 2,
+   "attacks": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "grounded": []
+  },
+  {
+   "id": "random_28",
+   "note": "seeded random",
+   "n": 6,
+   "attacks": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     3
+    ]
+   ],
+   "grounded": [
+    2
+   ]
+  },
+  {
+   "id": "random_29",
+   "note": "seeded random",
+   "n": 6,
+   "attacks": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     0
+    ]
+   ],
+   "grounded": []
+  },
+  {
+   "id": "random_30",
+   "note": "seeded random",
+   "n": 4,
+   "attacks": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "grounded": [
+    1
+   ]
+  },
+  {
+   "id": "random_31",
+   "note": "seeded random",
+   "n": 3,
+   "attacks": [
+    [
+     1,
+     1
+    ]
+   ],
+   "grounded": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": "random_32",
+   "note": "seeded random",
+   "n": 3,
+   "attacks": [
+    [
+     1,
+     0
+    ]
+   ],
+   "grounded": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "random_33",
+   "note": "seeded random",
+   "n": 1,
+   "attacks": [
+    [
+     0,
+     0
+    ]
+   ],
+   "grounded": []
+  },
+  {
+   "id": "random_34",
+   "note": "seeded random",
+   "n": 3,
+   "attacks": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "grounded": [
+    2
+   ]
+  },
+  {
+   "id": "random_35",
+   "note": "seeded random",
+   "n": 1,
+   "attacks": [],
+   "grounded": [
+    0
+   ]
+  },
+  {
+   "id": "random_36",
+   "note": "seeded random",
+   "n": 6,
+   "attacks": [
+    [
+     0,
+     5
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     3
+    ]
+   ],
+   "grounded": [
+    0,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "random_37",
+   "note": "seeded random",
+   "n": 5,
+   "attacks": [
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     4,
+     3
+    ]
+   ],
+   "grounded": [
+    0,
+    1,
+    4
+   ]
+  },
+  {
+   "id": "random_38",
+   "note": "seeded random",
+   "n": 7,
+   "attacks": [
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     6,
+     6
+    ]
+   ],
+   "grounded": [
+    2,
+    5
+   ]
+  },
+  {
+   "id": "random_39",
+   "note": "seeded random",
+   "n": 1,
+   "attacks": [],
+   "grounded": [
+    0
+   ]
+  }
+ ]
+}

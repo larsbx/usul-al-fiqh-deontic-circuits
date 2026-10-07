@@ -1,0 +1,1276 @@
+{
+  "registry_version": "1",
+  "policy": {
+    "full_text": "Full texts are fetched into .cache/corpus and never committed. Committed records carry short excerpts with edition-qualified locators.",
+    "authority": "Records are candidates until reviewed. Nothing here is a fatwā."
+  },
+  "works": [
+    {
+      "id": "ibn_uthaymin.usul",
+      "title_ar": "الأصول من علم الأصول",
+      "title_tr": "al-Uṣūl min ʿIlm al-Uṣūl",
+      "author": {
+        "name_tr": "Muḥammad b. Ṣāliḥ Ibn ʿUthaymīn",
+        "death_ah": 1421
+      },
+      "layers": [
+        "signature"
+      ],
+      "kernel": true,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "shamela-9942",
+          "kind": "shamela",
+          "book_id": 9942,
+          "pages": [
+            1,
+            99
+          ],
+          "edition": "Dār Ibn al-Jawzī, 4th ed., 1430/2009; pagination matches print"
+        }
+      ],
+      "segmenter": {
+        "kind": "hudud_brackets"
+      },
+      "status": "located"
+    },
+    {
+      "id": "ibn_qudama.rawda",
+      "title_ar": "روضة الناظر وجنة المناظر",
+      "title_tr": "Rawḍat al-Nāẓir wa-Junnat al-Munāẓir",
+      "author": {
+        "name_tr": "Muwaffaq al-Dīn Ibn Qudāma",
+        "death_ah": 620
+      },
+      "layers": [
+        "signature",
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-rawda-shamela12010",
+          "kind": "openiti",
+          "repo": "0625AH",
+          "commit": "f1e38210b32fd0d043949ff6471e869d658c3b16",
+          "path": "data/0620IbnQudamaMaqdisi/0620IbnQudamaMaqdisi.RawdatNazir/0620IbnQudamaMaqdisi.RawdatNazir.Shamela0012010-ara1",
+          "edition": "Shamela 12010, taḥqīq Shaʿbān"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "tufi.sharh_mukhtasar_rawda",
+      "title_ar": "شرح مختصر الروضة",
+      "title_tr": "Sharḥ Mukhtaṣar al-Rawḍa",
+      "author": {
+        "name_tr": "Najm al-Dīn al-Ṭūfī",
+        "death_ah": 716
+      },
+      "layers": [
+        "signature",
+        "inference"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-tufi-shamela10781",
+          "kind": "openiti",
+          "repo": "0725AH",
+          "commit": "056df249d6619b428a78f1d69a8ab2851b97b0a6",
+          "path": "data/0716NajmDinTufi/0716NajmDinTufi.SharhMukhtasarRawda/0716NajmDinTufi.SharhMukhtasarRawda.Shamela0010781-ara1",
+          "edition": "Shamela 10781"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_najjar.sharh_kawkab_munir",
+      "title_ar": "شرح الكوكب المنير",
+      "title_tr": "Sharḥ al-Kawkab al-Munīr",
+      "author": {
+        "name_tr": "Ibn al-Najjār al-Futūḥī",
+        "death_ah": 972
+      },
+      "layers": [
+        "signature",
+        "inference"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-kawkab-shamela12019",
+          "kind": "openiti",
+          "repo": "0975AH",
+          "commit": "c47ff1c47a9108eab999d7fa68ef30be16bc0f85",
+          "path": "data/0972IbnAhmadIbnNajjarHanbali/0972IbnAhmadIbnNajjarHanbali.SharhKawkabMunir/0972IbnAhmadIbnNajjarHanbali.SharhKawkabMunir.Shamela0012019-ara1",
+          "edition": "Shamela 12019"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "sadi.qawaid_jamia",
+      "title_ar": "القواعد والأصول الجامعة والفروق والتقاسيم البديعة النافعة",
+      "title_tr": "al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa wa'l-Furūq wa'l-Taqāsīm al-Badīʿa al-Nāfiʿa",
+      "author": {
+        "name_tr": "ʿAbd al-Raḥmān b. Nāṣir al-Saʿdī",
+        "death_ah": 1376
+      },
+      "layers": [
+        "axioms"
+      ],
+      "kernel": true,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "archive-pdf1995",
+          "kind": "archive",
+          "item": "Pdf1995",
+          "file": "كتاب   pdf     اقرا اونلاين   1995 - القواعد والأصول الجامعة والفروق والتقاسيم البديعة النافعة - ط دار الوطن_djvu.txt",
+          "edition": "Dār al-Waṭan, ed. Khālid al-Mushayqiḥ",
+          "quality": "ocr_unreviewed"
+        },
+        {
+          "id": "archive-pdf1995-tess",
+          "kind": "archive",
+          "item": "Pdf1995",
+          "file": "كتاب   pdf     اقرا اونلاين   1995 - القواعد والأصول الجامعة والفروق والتقاسيم البديعة النافعة - ط دار الوطن.pdf",
+          "format": "pdf",
+          "ocr": {
+            "engines": [
+              "ara_std",
+              "ara_best"
+            ],
+            "dpi": 300,
+            "psm": 4
+          },
+          "edition": "Dār al-Waṭan, ed. Khālid al-Mushayqiḥ (same scan as archive-pdf1995)",
+          "quality": "ocr_unreviewed"
+        }
+      ],
+      "segmenter": {
+        "kind": "lines",
+        "marker": "القاعدة",
+        "index": true
+      },
+      "expected_units": {
+        "unit": "qāʿida",
+        "count": 60,
+        "claim_source": "recall"
+      },
+      "status": "located_ocr"
+    },
+    {
+      "id": "ibn_uthaymin.manzuma",
+      "title_ar": "شرح منظومة أصول الفقه وقواعده",
+      "title_tr": "Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi",
+      "author": {
+        "name_tr": "Muḥammad b. Ṣāliḥ Ibn ʿUthaymīn",
+        "death_ah": 1421
+      },
+      "layers": [
+        "axioms"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "archive-manzuma-tess",
+          "kind": "archive",
+          "item": "20210501_20210501_0220",
+          "file": "منظومة أصول الفقه وقواعده.pdf",
+          "format": "pdf",
+          "ocr": {
+            "engines": [
+              "ara_std",
+              "ara_best"
+            ],
+            "dpi": 300,
+            "psm": 4,
+            "verses": true,
+            "verse_pages": [
+              1,
+              371
+            ]
+          },
+          "edition": "same 8,180,831-byte scan is mirrored in items 20200423_20200423_0034 and 20220131_20220131_2000",
+          "quality": "ocr_unreviewed"
+        },
+        {
+          "id": "archive-manzuma-djvu",
+          "kind": "archive",
+          "item": "20210501_20210501_0220",
+          "file": "منظومة أصول الفقه وقواعده_djvu.txt",
+          "edition": "archive.org OCR layer of the same scan",
+          "quality": "ocr_unreviewed",
+          "segmenter": {
+            "kind": "numbered"
+          }
+        }
+      ],
+      "status": "located_ocr",
+      "note": "Witness is Ibn ʿUthaymīn's own sharḥ, which quotes each verse of the manẓūma before commenting.",
+      "segmenter": {
+        "kind": "verse_block"
+      },
+      "expected_units": {
+        "unit": "bayt",
+        "count": 103,
+        "claim_source": "printed matn ends at ١٠٣ followed by its closing ornament (PDF p. 27); the author's autograph facsimile (PDF p. 22) also ends at ١٠٣"
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid",
+      "title_ar": "تقرير القواعد وتحرير الفوائد",
+      "title_tr": "Taqrīr al-Qawāʿid wa-Taḥrīr al-Fawāʾid",
+      "author": {
+        "name_tr": "Ibn Rajab al-Ḥanbalī",
+        "death_ah": 795
+      },
+      "layers": [
+        "axioms"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-rajab-shamela21730",
+          "kind": "openiti",
+          "repo": "0800AH",
+          "commit": "7b745ec7b83d6d4971f937364dbdec2fe0ba2a40",
+          "path": "data/0795IbnRajabHanbali/0795IbnRajabHanbali.Qawacid/0795IbnRajabHanbali.Qawacid.Shamela0021730-ara1.completed",
+          "edition": "Dār al-Fikr (Shamela 21730), OpenITI .completed"
+        }
+      ],
+      "segmenter": {
+        "kind": "headed",
+        "marker": "القاعدة"
+      },
+      "expected_units": {
+        "unit": "qāʿida",
+        "count": 160,
+        "claim_source": "recall"
+      },
+      "status": "located"
+    },
+    {
+      "id": "ibn_taymiyya.qawaid_nuraniyya",
+      "title_ar": "القواعد النورانية الفقهية",
+      "title_tr": "al-Qawāʿid al-Nūrāniyya",
+      "author": {
+        "name_tr": "Ibn Taymiyya",
+        "death_ah": 728
+      },
+      "layers": [
+        "axioms"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-nuraniyya-shamela21729",
+          "kind": "openiti",
+          "repo": "0750AH",
+          "commit": "7c9c84d9f98581470aa2b7f8bee00ae285c5c707",
+          "path": "data/0728IbnTaymiyya/0728IbnTaymiyya.QawacidNuraniyya/0728IbnTaymiyya.QawacidNuraniyya.Shamela0021729-ara1.completed",
+          "edition": "Shamela 21729, OpenITI .completed"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "sadi.tariq_wusul",
+      "title_ar": "طريق الوصول إلى العلم المأمول بمعرفة القواعد والضوابط والأصول",
+      "title_tr": "Ṭarīq al-Wuṣūl ilā al-ʿIlm al-Maʾmūl",
+      "author": {
+        "name_tr": "ʿAbd al-Raḥmān b. Nāṣir al-Saʿdī",
+        "death_ah": 1376
+      },
+      "layers": [
+        "axioms"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "archive-tariq-tess",
+          "kind": "archive",
+          "item": "Tareeq_Wsoul",
+          "file": "Tareeq_Wsoul.pdf",
+          "format": "pdf",
+          "ocr": {
+            "engines": [
+              "ara_std",
+              "ara_best"
+            ],
+            "dpi": 300,
+            "psm": 4,
+            "frame": true,
+            "denoise": "median3",
+            "numbers": true,
+            "number_exemplars": [
+              {
+                "page": 29,
+                "numbers": [
+                  100,
+                  101,
+                  102,
+                  103,
+                  104
+                ]
+              },
+              {
+                "page": 30,
+                "numbers": [
+                  105,
+                  106,
+                  107,
+                  108,
+                  109
+                ]
+              },
+              {
+                "page": 207,
+                "numbers": [
+                  824,
+                  825,
+                  826,
+                  827,
+                  828
+                ]
+              }
+            ]
+          },
+          "quality": "ocr_unreviewed",
+          "ocr_note": "number_exemplars: printed paragraph numbers read by eye from the page images (PDF pp. 29, 30, 207); together they contain every digit 0–9."
+        }
+      ],
+      "status": "located_ocr",
+      "segmenter": {
+        "kind": "numbered",
+        "anchor_step": 30
+      },
+      "expected_units": {
+        "unit": "numbered paragraph (qāʿida/fāʾida)",
+        "count": 1015,
+        "claim_source": "last printed number ١٠١٥ (PDF p. 272); part two (Ibn al-Qayyim) opens at ٨٢٤ (PDF p. 207), after the editor's note that part one gives «more than eight hundred» principles from Ibn Taymiyya (PDF p. 205)"
+      }
+    },
+    {
+      "id": "sadi.risala_latifa",
+      "title_ar": "رسالة لطيفة جامعة في أصول الفقه المهمة",
+      "title_tr": "Risāla Laṭīfa Jāmiʿa fī Uṣūl al-Fiqh al-Muhimma",
+      "author": {
+        "name_tr": "ʿAbd al-Raḥmān b. Nāṣir al-Saʿdī",
+        "death_ah": 1376
+      },
+      "layers": [
+        "signature",
+        "axioms"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "note": "Addition: al-Saʿdī's own compact uṣūl epitome; cross-check for the signature layer.",
+      "witnesses": [
+        {
+          "id": "shamela-9527",
+          "kind": "shamela",
+          "book_id": 9527
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_lahham.qawaid_fawaid",
+      "title_ar": "القواعد والفوائد الأصولية وما يتبعها من الأحكام الفرعية",
+      "title_tr": "al-Qawāʿid wa'l-Fawāʾid al-Uṣūliyya",
+      "author": {
+        "name_tr": "Ibn al-Laḥḥām al-Baʿlī",
+        "death_ah": 803
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-lahham-shamela8526",
+          "kind": "openiti",
+          "repo": "0825AH",
+          "commit": "bae1fba53712c020fe43e3e60b37dfe61f2b64a8",
+          "path": "data/0803IbnLahhamCalaDinBacli/0803IbnLahhamCalaDinBacli.Qawacid/0803IbnLahhamCalaDinBacli.Qawacid.Shamela0008526-ara1",
+          "edition": "Shamela 8526"
+        },
+        {
+          "id": "openiti-lahham-shamay34193",
+          "kind": "openiti",
+          "repo": "0825AH",
+          "commit": "bae1fba53712c020fe43e3e60b37dfe61f2b64a8",
+          "path": "data/0803IbnLahhamCalaDinBacli/0803IbnLahhamCalaDinBacli.Qawacid/0803IbnLahhamCalaDinBacli.Qawacid.ShamAY0034193-ara1",
+          "edition": "Shamela (AY) 34193; rule statement inline in header"
+        }
+      ],
+      "segmenter": {
+        "kind": "headed",
+        "marker": "القاعدة"
+      },
+      "expected_units": {
+        "unit": "qāʿida",
+        "count": 66,
+        "claim_source": "witness openiti-lahham-shamela8526 (final header «القاعدة 66»)"
+      },
+      "status": "located"
+    },
+    {
+      "id": "ibn_qayyim.ilam",
+      "title_ar": "إعلام الموقعين عن رب العالمين",
+      "title_tr": "Iʿlām al-Muwaqqiʿīn",
+      "author": {
+        "name_tr": "Ibn Qayyim al-Jawziyya",
+        "death_ah": 751
+      },
+      "layers": [
+        "inference",
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ilam-shamela11496",
+          "kind": "openiti",
+          "repo": "0775AH",
+          "commit": "61b0c7891699554aeff8dffdb8b1a2a59d2d22ab",
+          "path": "data/0751IbnQayyimJawziyya/0751IbnQayyimJawziyya.AclamMuwaqqicin/0751IbnQayyimJawziyya.AclamMuwaqqicin.Shamela0011496-ara1",
+          "edition": "Shamela 11496"
+        }
+      ],
+      "expected_units": {
+        "unit": "sadd al-dharāʾiʿ instance",
+        "count": 99,
+        "claim_source": "recall"
+      },
+      "status": "located"
+    },
+    {
+      "id": "ibn_uthaymin.sharh_mumti",
+      "title_ar": "الشرح الممتع على زاد المستقنع",
+      "title_tr": "al-Sharḥ al-Mumtiʿ ʿalā Zād al-Mustaqniʿ",
+      "author": {
+        "name_tr": "Muḥammad b. Ṣāliḥ Ibn ʿUthaymīn",
+        "death_ah": 1421
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "shamela-10649",
+          "kind": "shamela",
+          "book_id": 10649,
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "shinqiti.adab_bahth",
+      "title_ar": "آداب البحث والمناظرة",
+      "title_tr": "Ādāb al-Baḥth wa'l-Munāẓara",
+      "author": {
+        "name_tr": "Muḥammad al-Amīn al-Shinqīṭī",
+        "death_ah": 1393
+      },
+      "layers": [
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "shamela-266",
+          "kind": "shamela",
+          "book_id": 266
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "shinqiti.mudhakkira",
+      "title_ar": "مذكرة أصول الفقه على روضة الناظر",
+      "title_tr": "Mudhakkira fī Uṣūl al-Fiqh",
+      "author": {
+        "name_tr": "Muḥammad al-Amīn al-Shinqīṭī",
+        "death_ah": 1393
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "shamela-282",
+          "kind": "shamela",
+          "book_id": 282,
+          "edition": "ʿAṭāʾāt al-ʿIlm"
+        },
+        {
+          "id": "shamela-9885",
+          "kind": "shamela",
+          "book_id": 9885,
+          "edition": "Maktabat al-ʿUlūm wa'l-Ḥikam"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_taymiyya.radd_mantiqiyyin",
+      "title_ar": "الرد على المنطقيين",
+      "title_tr": "al-Radd ʿalā al-Manṭiqiyyīn",
+      "author": {
+        "name_tr": "Ibn Taymiyya",
+        "death_ah": 728
+      },
+      "layers": [
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-radd-shamela7626",
+          "kind": "openiti",
+          "repo": "0750AH",
+          "commit": "7c9c84d9f98581470aa2b7f8bee00ae285c5c707",
+          "path": "data/0728IbnTaymiyya/0728IbnTaymiyya.RaddCalaMantiqiyyin/0728IbnTaymiyya.RaddCalaMantiqiyyin.Shamela0007626-ara1",
+          "edition": "Shamela 7626"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_uthaymin.qawaid_muthla",
+      "title_ar": "القواعد المثلى في صفات الله وأسمائه الحسنى",
+      "title_tr": "al-Qawāʿid al-Muthlā",
+      "author": {
+        "name_tr": "Muḥammad b. Ṣāliḥ Ibn ʿUthaymīn",
+        "death_ah": 1421
+      },
+      "layers": [
+        "aqida"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "shamela-8874",
+          "kind": "shamela",
+          "book_id": 8874
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_taymiyya.tadmuriyya",
+      "title_ar": "الرسالة التدمرية",
+      "title_tr": "al-Risāla al-Tadmuriyya",
+      "author": {
+        "name_tr": "Ibn Taymiyya",
+        "death_ah": 728
+      },
+      "layers": [
+        "aqida"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-tadmuriyya-shamela22666",
+          "kind": "openiti",
+          "repo": "0750AH",
+          "commit": "7c9c84d9f98581470aa2b7f8bee00ae285c5c707",
+          "path": "data/0728IbnTaymiyya/0728IbnTaymiyya.RisalaTadmuriyya/0728IbnTaymiyya.RisalaTadmuriyya.Shamela0022666-ara1",
+          "edition": "Shamela 22666"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_uthaymin.taqrib_tadmuriyya",
+      "title_ar": "تقريب التدمرية",
+      "title_tr": "Taqrīb al-Tadmuriyya",
+      "author": {
+        "name_tr": "Muḥammad b. Ṣāliḥ Ibn ʿUthaymīn",
+        "death_ah": 1421
+      },
+      "layers": [
+        "aqida"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "shamela-11100",
+          "kind": "shamela",
+          "book_id": 11100
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "mardawi.insaf",
+      "title_ar": "الإنصاف في معرفة الراجح من الخلاف",
+      "title_tr": "al-Inṣāf fī Maʿrifat al-Rājiḥ min al-Khilāf",
+      "author": {
+        "name_tr": "ʿAlāʾ al-Dīn al-Mardāwī",
+        "death_ah": 885
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "Addition (flagged in roadmap §1): intra-madhhab tarjīḥ oracle.",
+      "witnesses": [
+        {
+          "id": "openiti-insaf-shamela21609",
+          "kind": "openiti",
+          "repo": "0900AH",
+          "commit": "271ff65bd8364d3a46b5806ca529617d1ffc3393",
+          "path": "data/0885CalaDinMardawi/0885CalaDinMardawi.Insaf/0885CalaDinMardawi.Insaf.Shamela0021609-ara1",
+          "edition": "Shamela 21609, taḥqīq al-Fiqī"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "abu_yala.udda",
+      "title_ar": "العدة في أصول الفقه",
+      "title_tr": "al-ʿUdda fī Uṣūl al-Fiqh",
+      "author": {
+        "name_tr": "al-Qāḍī Abū Yaʿlā Ibn al-Farrāʾ",
+        "death_ah": 458
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (hanbali usul, Ḥanbalī); qiyās span: PageV04P1273 (bāb al-kalām fī al-qiyās) – PageV05P1539 (before bāb al-ijtihād, V05P1540); incl. bāb al-ʿilla from V05P1423; definitions of qiyās/ʿilla also at V01P174–178",
+      "witnesses": [
+        {
+          "id": "openiti-udda-shamela22793",
+          "kind": "openiti",
+          "repo": "0475AH",
+          "commit": "cc9beb0d9645e8cdce892556423b9926a127054f",
+          "path": "data/0458AbuYaclaIbnFarra/0458AbuYaclaIbnFarra.CuddaFiUsulFiqh/0458AbuYaclaIbnFarra.CuddaFiUsulFiqh.Shamela0022793-ara1",
+          "edition": "ed. Aḥmad b. ʿAlī Sīr al-Mubārakī, 2nd ed. 1410/1990, 5 vols continuous pagination (page markers follow print)"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "abu_al_khattab.tamhid",
+      "title_ar": "التمهيد في أصول الفقه",
+      "title_tr": "al-Tamhīd fī Uṣūl al-Fiqh",
+      "author": {
+        "name_tr": "Abū al-Khaṭṭāb Maḥfūẓ b. Aḥmad al-Kalwadhānī",
+        "death_ah": 510
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (hanbali usul, Ḥanbalī); qiyās span: PageV03P358 (bāb al-kalām fī al-qiyās) – PageV04P250 (incl. shurūṭ al-qiyās V04P005 and tarjīḥ al-maʿānī V04P226; istiṣḥāb begins V04P251)",
+      "witnesses": [
+        {
+          "id": "openiti-tamhid-sham19y14103",
+          "kind": "openiti",
+          "repo": "0525AH",
+          "commit": "6290621b58e063ed1aa47ffd0a6fc1630191e7cb",
+          "path": "data/0510AbuKhattabKalwadhani/0510AbuKhattabKalwadhani.TamhidhFiUsulFiqh/0510AbuKhattabKalwadhani.TamhidhFiUsulFiqh.Sham19Y0014103-ara1",
+          "edition": "ed. Mufīd Abū ʿAmsha (vols 1–2) & Muḥammad b. ʿAlī b. Ibrāhīm (vols 3–4), Umm al-Qurā (Markaz al-Baḥth al-ʿIlmī 37), 1st ed. 1406/1985, 4 vols"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_aqil.wadih",
+      "title_ar": "الواضح في أصول الفقه",
+      "title_tr": "al-Wāḍiḥ fī Uṣūl al-Fiqh",
+      "author": {
+        "name_tr": "Abū al-Wafāʾ ʿAlī Ibn ʿAqīl",
+        "death_ah": 513
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (hanbali usul, Ḥanbalī); qiyās span: Two blocks: (a) jadal section on qiyās and its objections PageV01P433 (fuṣūl fī al-qiyās) – PageV02P309 (before istiṣḥāb V02P310), with ʿilla chapters from V01P350; (b) masāʾil al-qiyās PageV05P270 – PageV05P503 (end of file)",
+      "witnesses": [
+        {
+          "id": "openiti-wadih-sham19y122232",
+          "kind": "openiti",
+          "repo": "0525AH",
+          "commit": "6290621b58e063ed1aa47ffd0a6fc1630191e7cb",
+          "path": "data/0513AbuWafaIbnCaqil/0513AbuWafaIbnCaqil.WadihFiUsulFiqh/0513AbuWafaIbnCaqil.WadihFiUsulFiqh.Sham19Y0122232-ara1",
+          "edition": "ed. ʿAbd Allāh b. ʿAbd al-Muḥsin al-Turkī, Muʾassasat al-Risāla, 1st ed. 1420/1999, 5 vols"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "al_taymiyya.musawwada",
+      "title_ar": "المسودة في أصول الفقه",
+      "title_tr": "al-Musawwada fī Uṣūl al-Fiqh",
+      "author": {
+        "name_tr": "Āl Taymiyya (Majd al-Dīn ʿAbd al-Salām d. 652, ʿAbd al-Ḥalīm d. 682, Taqī al-Dīn Aḥmad d. 728)",
+        "death_ah": 728
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (hanbali usul, Ḥanbalī); qiyās span: PageV01P365 (kitāb al-qiyās) – PageV01P449 (maṣāliḥ mursala V01P450, istiḥsān V01P451)",
+      "witnesses": [
+        {
+          "id": "openiti-musawwada-shamela11814",
+          "kind": "openiti",
+          "repo": "0750AH",
+          "commit": "7c9c84d9f98581470aa2b7f8bee00ae285c5c707",
+          "path": "data/0728IbnTaymiyya/0728IbnTaymiyya.MusawwadaFiUsulFiqh/0728IbnTaymiyya.MusawwadaFiUsulFiqh.Shamela0011814-ara1",
+          "edition": "ed. Muḥammad Muḥyī al-Dīn ʿAbd al-Ḥamīd, Dār al-Kitāb al-ʿArabī, 1 vol"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_muflih.usul",
+      "title_ar": "أصول الفقه",
+      "title_tr": "Uṣūl al-Fiqh",
+      "author": {
+        "name_tr": "Shams al-Dīn Muḥammad Ibn Mufliḥ al-Maqdisī",
+        "death_ah": 763
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (hanbali usul, Ḥanbalī); qiyās span: PageV03P1189 (al-qiyās) – PageV04P1428 (incl. iʿtirāḍāt ʿalā al-qiyās V03P1352; al-istidlāl begins V04P1429)",
+      "witnesses": [
+        {
+          "id": "openiti-ibnmuflih-sham19y122256",
+          "kind": "openiti",
+          "repo": "0775AH",
+          "commit": "61b0c7891699554aeff8dffdb8b1a2a59d2d22ab",
+          "path": "data/0763IbnMuflihMaqdisi/0763IbnMuflihMaqdisi.UsulFiqh/0763IbnMuflihMaqdisi.UsulFiqh.Sham19Y0122256-ara1",
+          "edition": "ed. Fahd b. Muḥammad al-Sadḥān, Maktabat al-ʿUbaykān, 1st ed. 1420/1999, 4 vols continuous pagination"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "mardawi.tahbir",
+      "title_ar": "التحبير شرح التحرير في أصول الفقه",
+      "title_tr": "al-Taḥbīr Sharḥ al-Taḥrīr fī Uṣūl al-Fiqh",
+      "author": {
+        "name_tr": "ʿAlāʾ al-Dīn ʿAlī b. Sulaymān al-Mardāwī",
+        "death_ah": 885
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (hanbali usul, Ḥanbalī); qiyās span: PageV07P3115 (bāb al-qiyās) – PageV08P3736 (bāb al-istidlāl begins V08P3737); masālik al-ʿilla from V07P3311",
+      "witnesses": [
+        {
+          "id": "openiti-tahbir-shamela6336",
+          "kind": "openiti",
+          "repo": "0900AH",
+          "commit": "271ff65bd8364d3a46b5806ca529617d1ffc3393",
+          "path": "data/0885CalaDinMardawi/0885CalaDinMardawi.TahbirSharhTahrir/0885CalaDinMardawi.TahbirSharhTahrir.Shamela0006336-ara1",
+          "edition": "ed. ʿAbd al-Raḥmān al-Jibrīn, ʿAwaḍ al-Qarnī, Aḥmad al-Sarrāḥ, Maktabat al-Rushd, Riyadh, 1st ed. 1421/2000, 8 vols (continuous pagination)"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_taymiyya.risala_maana_al_qiyas",
+      "title_ar": "رسالة في معنى القياس (القياس الصحيح والقياس الفاسد)، ضمن مجموع الفتاوى",
+      "title_tr": "Risāla fī Maʿnā al-Qiyās (in Majmūʿ al-Fatāwā, vol. 20)",
+      "author": {
+        "name_tr": "Taqī al-Dīn Aḥmad Ibn Taymiyya",
+        "death_ah": 728
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (hanbali usul, Ḥanbalī); qiyās span: PageV20P504 – PageV20P585 (the file's own table of treatises reads «رسالة في معنى القياس 20 / 504 - 585»; heading at V20P504 «القياس الصحيح والقياس الفاسد»); the witness is the full Majmūʿ al-Fatāwā file (29 MB), the treatise is v20 pp. 504–585",
+      "witnesses": [
+        {
+          "id": "openiti-majmufatawa-shamela7289",
+          "kind": "openiti",
+          "repo": "0750AH",
+          "commit": "7c9c84d9f98581470aa2b7f8bee00ae285c5c707",
+          "path": "data/0728IbnTaymiyya/0728IbnTaymiyya.MajmucFatawa/0728IbnTaymiyya.MajmucFatawa.Shamela0007289-ara1",
+          "edition": "Majmūʿ al-Fatāwā, collected by ʿAbd al-Raḥmān b. Qāsim, Mujammaʿ al-Malik Fahd, Medina, 1416/1995, 35 vols",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_badran.madkhal",
+      "title_ar": "المدخل إلى مذهب الإمام أحمد بن حنبل",
+      "title_tr": "al-Madkhal ilā Madhhab al-Imām Aḥmad b. Ḥanbal",
+      "author": {
+        "name_tr": "ʿAbd al-Qādir Ibn Badrān",
+        "death_ah": 1346
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "note": "qiyās source (hanbali usul, Ḥanbalī); qiyās span: PageV01P300 (al-aṣl al-khāmis: al-qiyās) – PageV01P366 (ijtihād wa-taqlīd begins V01P367)",
+      "witnesses": [
+        {
+          "id": "openiti-madkhal-shamela6309",
+          "kind": "openiti",
+          "repo": "1350AH",
+          "commit": "6d0c197e84a46a3cadbd36a045d09cb2bc9aa71e",
+          "path": "data/1346CabdQadirBadran/1346CabdQadirBadran.MadkhalIlaMadhhabAhmad/1346CabdQadirBadran.MadkhalIlaMadhhabAhmad.Shamela0006309-ara1",
+          "edition": "ed. ʿAbd Allāh b. ʿAbd al-Muḥsin al-Turkī, Muʾassasat al-Risāla, 2nd ed. 1401"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "shafii.risala",
+      "title_ar": "الرسالة",
+      "title_tr": "al-Risāla",
+      "author": {
+        "name_tr": "Muḥammad b. Idrīs al-Shāfiʿī",
+        "death_ah": 204
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (foundational, Shāfiʿī); qiyās span: PageV01P476 ([al-qiyās]) – PageV01P485; bāb al-ijtihād V01P486–502 and bāb al-istiḥsān V01P503ff are continuous with it; [manzilat al-ijmāʿ wa-l-qiyās] at V01P598",
+      "witnesses": [
+        {
+          "id": "openiti-risala-shamela8180",
+          "kind": "openiti",
+          "repo": "0225AH",
+          "commit": "2cfdc8cf1b89abfd15463d1c429fbb822aa5d9a5",
+          "path": "data/0204Shafici/0204Shafici.Risala/0204Shafici.Risala.Shamela0008180-ara1",
+          "edition": "ed. Aḥmad Shākir, Maktabat al-Ḥalabī, Cairo, 1st ed. 1358/1940"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "abu_al_husayn_basri.mutamad",
+      "title_ar": "المعتمد في أصول الفقه",
+      "title_tr": "al-Muʿtamad fī Uṣūl al-Fiqh",
+      "author": {
+        "name_tr": "Abū al-Ḥusayn Muḥammad b. ʿAlī al-Baṣrī",
+        "death_ah": 436
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (foundational, Muʿtazilī / Ḥanafī-Shāfiʿī); qiyās span: PageV02P189 (al-kalām fī al-qiyās wa-l-ijtihād) – PageV02P314 (al-ḥaẓr wa-l-ibāḥa begins V02P315); a further summary (bāb fī ḥadd al-qiyās, al-ʿilla, tarjīḥ) at V02P443–V02P462",
+      "witnesses": [
+        {
+          "id": "openiti-mutamad-shamela6319",
+          "kind": "openiti",
+          "repo": "0450AH",
+          "commit": "8b80029191e1b7a8809d812ec6186df862e18217",
+          "path": "data/0436IbnCaliBasri/0436IbnCaliBasri.MuctamadFiUsulFiqh/0436IbnCaliBasri.MuctamadFiUsulFiqh.Shamela0006319-ara1",
+          "edition": "ed. Khalīl al-Mays, Dār al-Kutub al-ʿIlmiyya, 1st ed. 1403, 2 vols"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "shirazi.luma",
+      "title_ar": "اللمع في أصول الفقه",
+      "title_tr": "al-Lumaʿ fī Uṣūl al-Fiqh",
+      "author": {
+        "name_tr": "Abū Isḥāq Ibrāhīm b. ʿAlī al-Shīrāzī",
+        "death_ah": 476
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (foundational, Shāfiʿī); qiyās span: PageV01P096 (al-kalām fī al-qiyās) – PageV01P120 (incl. tarjīḥ al-ʿillatayn V01P118; istiḥsān V01P121)",
+      "witnesses": [
+        {
+          "id": "openiti-luma-shamela8536",
+          "kind": "openiti",
+          "repo": "0500AH",
+          "commit": "fff9e21790e2e54f14826322ae49ab7671f12744",
+          "path": "data/0476AbuIshaqShirazi/0476AbuIshaqShirazi.LumacFiUsulFiqh/0476AbuIshaqShirazi.LumacFiUsulFiqh.Shamela0008536-ara1",
+          "edition": "Dār al-Kutub al-ʿIlmiyya, 2nd ed. 1424/2003, 1 vol"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "shirazi.tabsira",
+      "title_ar": "التبصرة في أصول الفقه",
+      "title_tr": "al-Tabṣira fī Uṣūl al-Fiqh",
+      "author": {
+        "name_tr": "Abū Isḥāq Ibrāhīm b. ʿAlī al-Shīrāzī",
+        "death_ah": 476
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (foundational, Shāfiʿī); qiyās span: PageV01P416 (masāʾil al-qiyās) – PageV01P495 (masāʾil al-ijtihād V01P496)",
+      "witnesses": [
+        {
+          "id": "openiti-tabsira-shamela25787",
+          "kind": "openiti",
+          "repo": "0500AH",
+          "commit": "fff9e21790e2e54f14826322ae49ab7671f12744",
+          "path": "data/0476AbuIshaqShirazi/0476AbuIshaqShirazi.TabsiraFiUsulFiqh/0476AbuIshaqShirazi.TabsiraFiUsulFiqh.Shamela0025787-ara1",
+          "edition": "ed. Muḥammad Ḥasan Hītū, Dār al-Fikr, Damascus, 1st ed. 1403"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "shirazi.mauna",
+      "title_ar": "المعونة في الجدل",
+      "title_tr": "al-Maʿūna fī al-Jadal",
+      "author": {
+        "name_tr": "Abū Isḥāq Ibrāhīm b. ʿAlī al-Shīrāzī",
+        "death_ah": 476
+      },
+      "layers": [
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (jadal, Shāfiʿī); qiyās span: PageV01P090 (bāb al-kalām ʿalā maʿnā al-khiṭāb wa-huwa al-qiyās: objections to qiyās) – PageV01P127 (end of file)",
+      "witnesses": [
+        {
+          "id": "openiti-mauna-shamela6320",
+          "kind": "openiti",
+          "repo": "0500AH",
+          "commit": "fff9e21790e2e54f14826322ae49ab7671f12744",
+          "path": "data/0476AbuIshaqShirazi/0476AbuIshaqShirazi.MacunaFiJadal/0476AbuIshaqShirazi.MacunaFiJadal.Shamela0006320-ara1",
+          "edition": "ed. ʿAlī ʿAbd al-ʿAzīz al-ʿUmayrīnī, Jamʿiyyat Iḥyāʾ al-Turāth al-Islāmī, Kuwait, 1st ed. 1407"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "juwayni.burhan",
+      "title_ar": "البرهان في أصول الفقه",
+      "title_tr": "al-Burhān fī Uṣūl al-Fiqh",
+      "author": {
+        "name_tr": "Imām al-Ḥaramayn ʿAbd al-Malik al-Juwaynī",
+        "death_ah": 478
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (foundational, Shāfiʿī (Ashʿarī)); qiyās span: PageV02P003 (al-kitāb al-thālith: kitāb al-qiyās) – PageV02P160 (kitāb al-istidlāl V02P161)",
+      "witnesses": [
+        {
+          "id": "openiti-burhan-shamela7439",
+          "kind": "openiti",
+          "repo": "0500AH",
+          "commit": "fff9e21790e2e54f14826322ae49ab7671f12744",
+          "path": "data/0478ImamHaramaynJuwayni/0478ImamHaramaynJuwayni.BurhanFiUsulFiqh/0478ImamHaramaynJuwayni.BurhanFiUsulFiqh.Shamela0007439-ara1",
+          "edition": "ed. Ṣalāḥ b. Muḥammad b. ʿUwayḍa, Dār al-Kutub al-ʿIlmiyya, 1st ed. 1418/1997, 2 vols"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "baji.ishara",
+      "title_ar": "الإشارة في أصول الفقه",
+      "title_tr": "al-Ishāra fī Uṣūl al-Fiqh",
+      "author": {
+        "name_tr": "Abū al-Walīd Sulaymān b. Khalaf al-Bājī",
+        "death_ah": 474
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (foundational, Mālikī); qiyās span: PageV01P022 (faṣl fī al-istidlāl wa-l-qiyās) – PageV01P053 (ʿilla chapters V01P045–051), plus bāb aḥkām al-qiyās PageV01P076–V01P086 (end)",
+      "witnesses": [
+        {
+          "id": "openiti-ishara-sham19y17871",
+          "kind": "openiti",
+          "repo": "0475AH",
+          "commit": "cc9beb0d9645e8cdce892556423b9926a127054f",
+          "path": "data/0474IbnKhalafBaji/0474IbnKhalafBaji.IsharaFiUsulFiqh/0474IbnKhalafBaji.IsharaFiUsulFiqh.Sham19Y0017871-ara1",
+          "edition": "ed. Muḥammad Ḥasan Muḥammad Ḥasan Ismāʿīl, Dār al-Kutub al-ʿIlmiyya, 1st ed. 1424/2003"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ghazali.mustasfa",
+      "title_ar": "المستصفى",
+      "title_tr": "al-Mustaṣfā min ʿIlm al-Uṣūl",
+      "author": {
+        "name_tr": "Abū Ḥāmid al-Ghazālī",
+        "death_ah": 505
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (foundational, Shāfiʿī (Ashʿarī)); qiyās span: PageV01P280 (al-fann al-thālith ... bi-ṭarīq al-qiyās; muqaddima fī ḥadd al-qiyās) – PageV01P341 (al-quṭb al-rābiʿ / ijtihād V01P342); taʿlīl by munāsaba also V01P264",
+      "witnesses": [
+        {
+          "id": "openiti-mustasfa-shamela5459",
+          "kind": "openiti",
+          "repo": "0525AH",
+          "commit": "6290621b58e063ed1aa47ffd0a6fc1630191e7cb",
+          "path": "data/0505Ghazali/0505Ghazali.Mustasfa/0505Ghazali.Mustasfa.Shamela0005459-ara1",
+          "edition": "ed. Muḥammad ʿAbd al-Salām ʿAbd al-Shāfī, Dār al-Kutub al-ʿIlmiyya, 1st ed. 1413/1993, 1 vol"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ghazali.shifa_al_ghalil",
+      "title_ar": "شفاء الغليل في بيان الشبه والمخيل ومسالك التعليل",
+      "title_tr": "Shifāʾ al-Ghalīl fī Bayān al-Shabah wa-l-Mukhīl wa-Masālik al-Taʿlīl",
+      "author": {
+        "name_tr": "Abū Ḥāmid al-Ghazālī",
+        "death_ah": 505
+      },
+      "layers": [
+        "inference"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (monograph illa, Shāfiʿī (Ashʿarī)); qiyās span: Whole work: PageV01P018 (ḥadd al-qiyās wa-ṣūratuh ... maʿnā al-ʿilla) – PageV01P679 (end); masālik al-ʿilla V01P023–V01P302, qiyās al-shabah V01P303ff, ʿilla as rukn V01P456ff",
+      "witnesses": [
+        {
+          "id": "openiti-shifaghalil-sham19y17827",
+          "kind": "openiti",
+          "repo": "0525AH",
+          "commit": "6290621b58e063ed1aa47ffd0a6fc1630191e7cb",
+          "path": "data/0505Ghazali/0505Ghazali.ShifaGhalil/0505Ghazali.ShifaGhalil.Sham19Y0017827-ara1",
+          "edition": "ed. Ḥamad al-Kubaysī, Maṭbaʿat al-Irshād, Baghdad, 1st ed. 1390/1971"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "sarakhsi.usul",
+      "title_ar": "أصول السرخسي",
+      "title_tr": "Uṣūl al-Sarakhsī",
+      "author": {
+        "name_tr": "Shams al-Aʾimma Muḥammad b. Aḥmad al-Sarakhsī",
+        "death_ah": 483
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (foundational, Ḥanafī); qiyās span: PageV02P118 (bāb al-qiyās, untagged paragraph) – PageV02P339 (incl. qiyās/istiḥsān V02P199, takhṣīṣ al-ʿilal V02P208, wujūh al-iʿtirāḍ ʿalā al-ʿilal V02P232, taqsīm al-ʿilla V02P312; ahliyya begins V02P340)",
+      "witnesses": [
+        {
+          "id": "openiti-sarakhsi-shamela6301",
+          "kind": "openiti",
+          "repo": "0500AH",
+          "commit": "fff9e21790e2e54f14826322ae49ab7671f12744",
+          "path": "data/0483IbnAhmadSarakhsi/0483IbnAhmadSarakhsi.Usul/0483IbnAhmadSarakhsi.Usul.Shamela0006301-ara1",
+          "edition": "Dār al-Maʿrifa, Beirut, 2 vols (Afghānī ed. reprint)"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "razi.mahsul",
+      "title_ar": "المحصول",
+      "title_tr": "al-Maḥṣūl fī ʿIlm Uṣūl al-Fiqh",
+      "author": {
+        "name_tr": "Fakhr al-Dīn al-Rāzī",
+        "death_ah": 606
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (foundational, Shāfiʿī (Ashʿarī)); qiyās span: PageV05P003 (al-kalām fī al-qiyās) – PageV05P376 (al-taʿādul wa-l-tarjīḥ begins V05P377)",
+      "witnesses": [
+        {
+          "id": "openiti-mahsul-shamela2022",
+          "kind": "openiti",
+          "repo": "0625AH",
+          "commit": "f1e38210b32fd0d043949ff6471e869d658c3b16",
+          "path": "data/0606FakhrDinRazi/0606FakhrDinRazi.Mahsul/0606FakhrDinRazi.Mahsul.Shamela0002022-ara1",
+          "edition": "ed. Ṭāhā Jābir al-ʿAlwānī, Muʾassasat al-Risāla, 3rd ed. 1418/1997, 6 vols"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "amidi.ihkam",
+      "title_ar": "الإحكام في أصول الأحكام",
+      "title_tr": "al-Iḥkām fī Uṣūl al-Aḥkām",
+      "author": {
+        "name_tr": "Sayf al-Dīn al-Āmidī",
+        "death_ah": 631
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (foundational, Shāfiʿī (Ashʿarī; formerly Ḥanbalī)); qiyās span: PageV03P183 (al-aṣl al-khāmis fī al-qiyās) – PageV04P117 (incl. bāb 5 on iʿtirāḍāt ʿalā al-qiyās V04P069–117; al-aṣl al-sādis fī al-istidlāl begins V04P118)",
+      "witnesses": [
+        {
+          "id": "openiti-amidi-shamela10801",
+          "kind": "openiti",
+          "repo": "0650AH",
+          "commit": "287c0cc31845e7f63afb4c0e3c776fc13b45f00f",
+          "path": "data/0631SayfDinAmidi/0631SayfDinAmidi.IhkamFiUsulAhkam/0631SayfDinAmidi.IhkamFiUsulAhkam.Shamela0010801-ara1",
+          "edition": "ed. ʿAbd al-Razzāq ʿAfīfī, al-Maktab al-Islāmī, 4 vols"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "isfahani.bayan_al_mukhtasar",
+      "title_ar": "بيان المختصر شرح مختصر ابن الحاجب",
+      "title_tr": "Bayān al-Mukhtaṣar Sharḥ Mukhtaṣar Ibn al-Ḥājib",
+      "author": {
+        "name_tr": "Abū al-Thanāʾ Shams al-Dīn al-Iṣfahānī (on Ibn al-Ḥājib, d. 646)",
+        "death_ah": 749
+      },
+      "layers": [
+        "inference",
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (foundational, Shāfiʿī (matn Mālikī)); qiyās span: PageV02P578 ([al-qiyās]/[taʿrīf al-qiyās]) – PageV03P248 (al-istidlāl begins V03P249)",
+      "witnesses": [
+        {
+          "id": "openiti-bayanmukhtasar-shamela8156",
+          "kind": "openiti",
+          "repo": "0750AH",
+          "commit": "7c9c84d9f98581470aa2b7f8bee00ae285c5c707",
+          "path": "data/0749AbuThanaIsbahani/0749AbuThanaIsbahani.BayanMukhtasar/0749AbuThanaIsbahani.BayanMukhtasar.Shamela0008156-ara1",
+          "edition": "ed. Muḥammad Maẓhar Baqā, Dār al-Madanī, 1st ed. 1406/1986, 3 vols"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_hazm.ihkam",
+      "title_ar": "الإحكام في أصول الأحكام",
+      "title_tr": "al-Iḥkām fī Uṣūl al-Aḥkām",
+      "author": {
+        "name_tr": "Abū Muḥammad ʿAlī Ibn Ḥazm",
+        "death_ah": 456
+      },
+      "layers": [
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (counter position, Ẓāhirī); qiyās span: PageV07P053 (bāb 38: ibṭāl al-qiyās) – PageV08P132 (bāb 39 ibṭāl al-ʿilal from V08P076; bāb 40 on ijtihād begins V08P133); see also bāb 35 istiḥsān V06P016",
+      "witnesses": [
+        {
+          "id": "openiti-ibnhazm-shamela10432",
+          "kind": "openiti",
+          "repo": "0475AH",
+          "commit": "cc9beb0d9645e8cdce892556423b9926a127054f",
+          "path": "data/0456IbnHazm/0456IbnHazm.IhkamFiUsulAhkam/0456IbnHazm.IhkamFiUsulAhkam.Shamela0010432-ara1",
+          "edition": "ed. Aḥmad Muḥammad Shākir, Dār al-Āfāq al-Jadīda, Beirut, 8 vols"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_hazm.nubdha_kafiya",
+      "title_ar": "النبذة الكافية في أحكام أصول الدين (النبذ في أصول الفقه)",
+      "title_tr": "al-Nubdha al-Kāfiya fī Aḥkām Uṣūl al-Dīn (al-Nubadh fī Uṣūl al-Fiqh)",
+      "author": {
+        "name_tr": "Abū Muḥammad ʿAlī Ibn Ḥazm",
+        "death_ah": 456
+      },
+      "layers": [
+        "dialectic"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "qiyās source (counter position, Ẓāhirī); qiyās span: PageV01P062 (faṣl fī al-qiyās) – PageV01P070 (faṣl fī al-taqlīd V01P071)",
+      "witnesses": [
+        {
+          "id": "openiti-nubdhakafiya-shamela6321",
+          "kind": "openiti",
+          "repo": "0475AH",
+          "commit": "cc9beb0d9645e8cdce892556423b9926a127054f",
+          "path": "data/0456IbnHazm/0456IbnHazm.NubdhaKafiya/0456IbnHazm.NubdhaKafiya.Shamela0006321-ara1.mARkdown",
+          "edition": "ed. Muḥammad Aḥmad ʿAbd al-ʿAzīz, Dār al-Kutub al-ʿIlmiyya, 1st ed. 1405"
+        }
+      ],
+      "status": "located"
+    }
+  ]
+}

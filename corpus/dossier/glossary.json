@@ -1,0 +1,2951 @@
+{
+ "status": "candidate",
+ "provenance": "Drafted by an LLM agent from committed records (corpus/records), corpus/citations/qiyas_principles.json and verbatim excerpts of the cached witnesses (.cache/corpus), each excerpt checked letters-only against its witness and its page taken from the next PageV marker; Lean constants checked with #check against formal/lean (import Usul). Summaries await human review.",
+ "terms": [
+  {
+   "key": "hukm",
+   "ar": "الحكم",
+   "tr": "al-ḥukm",
+   "gloss": "legal ruling",
+   "definition": "Ibn ʿUthaymīn defines the aḥkām as what the address of the Lawgiver concerning the acts of the mukallafūn requires, by way of demand (ṭalab), choice (takhyīr) or positing (waḍʿ). Demand covers command and prohibition, binding or preferential; choice is the mubāḥ; positing is the waḍʿī ruling. Ibn al-Laḥḥām separates khiṭāb al-waḍʿ, which can attach to the acts of a child or madman, from khiṭāb al-taklīf, which does not bind them.",
+   "conditions": [
+    "three modes: ṭalab, takhyīr, waḍʿ",
+    "taklīf requires ʿaql and understanding the address (Ibn al-Laḥḥām q2)"
+   ],
+   "related": [
+    "hukm_taklifi",
+    "hukm_wadi",
+    "wajib",
+    "mandub",
+    "mubah",
+    "makruh",
+    "haram"
+   ],
+   "lean": [
+    "Usul.Hukm",
+    "Usul.Hukm.Mode",
+    "Usul.Hukm.mode",
+    "Usul.Hukm.binding",
+    "Usul.Hukm.mode_binding_injective",
+    "Usul.Wad",
+    "Usul.applies",
+    "Usul.Subject.IsMukallaf",
+    "Usul.no_taklif_without_mukallaf"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h002",
+     "note": "Definition: what the Lawgiver's address requires by ṭalab, takhyīr or waḍʿ."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p010",
+     "excerpt_ar": "والمراد بقولنا: «من طلب»؛ الأمر والنهي سواء على سبيل الإلزام، أو الأفضلية.",
+     "note": "Ibn ʿUthaymīn: ṭalab covers command and prohibition, binding (ilzām) or preferential (afḍaliyya)."
+    },
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q002",
+     "note": "Condition of taklīf is ʿaql and understanding the address; distinguishes khiṭāb al-waḍʿ from khiṭāb al-taklīf."
+    }
+   ]
+  },
+  {
+   "key": "hukm_taklifi",
+   "ar": "الحكم التكليفي",
+   "tr": "al-ḥukm al-taklīfī",
+   "gloss": "obligating ruling",
+   "definition": "The part of the ḥukm consisting of demand (to do or to refrain, bindingly or not) or choice. In Ibn ʿUthaymīn it is the five statuses wājib, mandūb, muḥarram, makrūh and mubāḥ, each defined by whether there is a command or prohibition and whether it is binding.",
+   "conditions": [
+    "applies to the mukallaf (bāligh and ʿāqil)"
+   ],
+   "related": [
+    "hukm",
+    "wajib",
+    "mandub",
+    "mubah",
+    "makruh",
+    "haram"
+   ],
+   "lean": [
+    "Usul.Hukm",
+    "Usul.Hukm.mode",
+    "Usul.Hukm.binding",
+    "Usul.Hukm.σ",
+    "Usul.Hukm.σ_involutive",
+    "Usul.Hukm.valence",
+    "Usul.Subject.IsMukallaf"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h002",
+     "note": "The ṭalab/takhyīr part of the definition of al-aḥkām."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p010",
+     "excerpt_ar": "والمراد بقولنا: «من طلب»؛ الأمر والنهي سواء على سبيل الإلزام، أو الأفضلية.",
+     "note": "Ṭalab = command and prohibition, binding or preferential; takhyīr = mubāḥ."
+    },
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q002",
+     "note": "Taklīf does not bind the child or the madman (only khiṭāb al-waḍʿ attaches to their acts)."
+    }
+   ]
+  },
+  {
+   "key": "hukm_wadi",
+   "ar": "الحكم الوضعي",
+   "tr": "al-ḥukm al-waḍʿī",
+   "gloss": "declaratory ruling",
+   "definition": "Ibn ʿUthaymīn: what the Lawgiver has posited as signs (amārāt) of the establishment or negation, the effectiveness or nullity, of something; among them validity and invalidity. The waḍʿī elements include sabab, sharṭ and māniʿ; Ibn Qudāma says that setting something as a condition or impediment of a ruling is itself a sharʿī ruling.",
+   "conditions": [
+    "validity requires the conditions present and the impediments absent (Ibn ʿUthaymīn)"
+   ],
+   "related": [
+    "hukm",
+    "sabab",
+    "shart",
+    "mani",
+    "sahih",
+    "fasid",
+    "amara"
+   ],
+   "lean": [
+    "Usul.Wad",
+    "Usul.Wad.sabab",
+    "Usul.Wad.shart",
+    "Usul.Wad.mani",
+    "Usul.applies",
+    "Usul.Sadi.Gate",
+    "Usul.Sadi.Gate.Holds"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h002",
+     "note": "Definition of al-aḥkām includes «aw waḍʿ»."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p013",
+     "excerpt_ar": "الأحكام الوضعية: ما وضعه الشارع من أمارات، لثبوت أو انتفاء، أو نفوذ، أو إلغاء.",
+     "note": "Definition of al-aḥkām al-waḍʿiyya as signs posited by the Lawgiver; ṣiḥḥa and fasād are among them."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v01:p181",
+     "excerpt_ar": "وعكس الشرط: المانع: وهو: ما يلزم من وجوده عدم الحكم",
+     "note": "Ibn Qudāma: the māniʿ as the converse of the sharṭ (the following sentence calls positing them a sharʿī ruling)."
+    },
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q002",
+     "note": "Khiṭāb al-waḍʿ attaches to the acts of those not under taklīf."
+    }
+   ]
+  },
+  {
+   "key": "wajib",
+   "ar": "الواجب",
+   "tr": "al-wājib",
+   "gloss": "obligatory",
+   "definition": "What the Lawgiver commanded by way of binding (ʿalā wajh al-ilzām), e.g. the five prayers. Ibn al-Laḥḥām reports two narrations from Aḥmad on farḍ and wājib: in the soundest they are synonyms; in the other farḍ is stronger (e.g. established by a decisive proof).",
+   "conditions": [
+    "a command (amr)",
+    "binding (ilzām)"
+   ],
+   "related": [
+    "hukm_taklifi",
+    "mandub",
+    "haram",
+    "amr"
+   ],
+   "lean": [
+    "Usul.Hukm.wajib",
+    "Usul.Hukm.amr_nahy_didd",
+    "Usul.Qawaid.Wajib",
+    "Usul.Qawaid.closure_respects_capacity",
+    "Usul.Sadi.operative",
+    "Usul.Sadi.q04_no_wajib_with_inability",
+    "Usul.Muamalat.obligationStatus"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h003",
+     "note": "Definition."
+    },
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q010",
+     "note": "Farḍ and wājib synonymous in the soundest narration; the other narration makes farḍ stronger."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p038",
+     "excerpt_ar": "الوجوب يتعلق بالاستطاعة؛ فلا واجب مع العجزء ولا محرم مع الضرورة",
+     "note": "Al-Saʿdī Q4: no obligation with inability (formalised as Sadi.operative)."
+    }
+   ]
+  },
+  {
+   "key": "mandub",
+   "ar": "المندوب",
+   "tr": "al-mandūb",
+   "gloss": "recommended",
+   "definition": "What the Lawgiver commanded not by way of binding, e.g. the regular sunna prayers.",
+   "conditions": [
+    "a command",
+    "not binding"
+   ],
+   "related": [
+    "hukm_taklifi",
+    "wajib",
+    "makruh"
+   ],
+   "lean": [
+    "Usul.Hukm.mandub",
+    "Usul.Sadi.Conduct.status",
+    "Usul.Sadi.q16_adl_binding_fadl_not"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h004",
+     "note": "Definition."
+    }
+   ]
+  },
+  {
+   "key": "mubah",
+   "ar": "المباح",
+   "tr": "al-mubāḥ",
+   "gloss": "permitted",
+   "definition": "What no command or prohibition attaches to in itself, e.g. eating at night in Ramaḍān. Ibn ʿUthaymīn adds that it may take the ruling of what it is a means to. In the ʿādāt the default is ibāḥa and in the ʿibādāt prohibition (al-Saʿdī Q6).",
+   "conditions": [
+    "no amr or nahy attaches to it li-dhātihi"
+   ],
+   "related": [
+    "hukm_taklifi",
+    "asl",
+    "rukhsa"
+   ],
+   "lean": [
+    "Usul.Hukm.mubah",
+    "Usul.Hukm.σ_fixed_iff",
+    "Usul.Sadi.q01_balanced_is_mubah",
+    "Usul.Domain.default",
+    "Usul.Sadi.ruled",
+    "Usul.Sadi.q06_customs_permitted_by_default"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h007",
+     "note": "Definition."
+    }
+   ]
+  },
+  {
+   "key": "makruh",
+   "ar": "المكروه",
+   "tr": "al-makrūh",
+   "gloss": "disliked",
+   "definition": "What the Lawgiver prohibited not by way of binding abstention, e.g. taking and giving with the left hand.",
+   "conditions": [
+    "a prohibition",
+    "not binding"
+   ],
+   "related": [
+    "hukm_taklifi",
+    "haram",
+    "mandub"
+   ],
+   "lean": [
+    "Usul.Hukm.makruh"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h006",
+     "note": "Definition."
+    }
+   ]
+  },
+  {
+   "key": "haram",
+   "ar": "المحرم",
+   "tr": "al-muḥarram / al-ḥarām",
+   "gloss": "forbidden",
+   "definition": "What the Lawgiver prohibited by way of binding abstention, e.g. disobedience to parents. Al-Saʿdī Q4: there is no prohibition with necessity (ḍarūra).",
+   "conditions": [
+    "a prohibition (nahy)",
+    "binding abstention"
+   ],
+   "related": [
+    "hukm_taklifi",
+    "wajib",
+    "nahy",
+    "rukhsa"
+   ],
+   "lean": [
+    "Usul.Hukm.haram",
+    "Usul.Dalala.nahyStatus",
+    "Usul.Sadi.q04_no_haram_with_necessity",
+    "Usul.Sadi.Voids"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h005",
+     "note": "Definition."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p038",
+     "excerpt_ar": "الوجوب يتعلق بالاستطاعة؛ فلا واجب مع العجزء ولا محرم مع الضرورة",
+     "note": "Al-Saʿdī Q4: no prohibition with necessity."
+    }
+   ]
+  },
+  {
+   "key": "sahih",
+   "ar": "الصحيح",
+   "tr": "al-ṣaḥīḥ",
+   "gloss": "valid",
+   "definition": "Ibn ʿUthaymīn: what the effects of performing it follow from, whether an act of worship or a contract; it requires its conditions complete and its impediments absent. Ibn Qudāma defines ṣiḥḥa as the Lawgiver's taking the thing into account with respect to its ruling. Ibn Rajab and al-Saʿdī: a prohibition directed at the act of worship itself or its condition voids it, one directed at something external does not (Ibn Rajab reports two narrations where the prohibition of a condition is not specific to it).",
+   "conditions": [
+    "conditions present",
+    "impediments absent"
+   ],
+   "related": [
+    "fasid",
+    "shart",
+    "mani",
+    "nahy"
+   ],
+   "lean": [
+    "Usul.Sadi.validDespiteProhibition",
+    "Usul.Sadi.q38_voids_iff_intrinsic",
+    "Usul.Muamalat.contractValid",
+    "Usul.Muamalat.dispositionValid",
+    "Usul.Sadi.Gate.Holds"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h008",
+     "note": "Definition."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p013",
+     "excerpt_ar": "فإن فُقِد شرطٌ من الشروط، أو وُجِد مانع من الموانع امتنعت الصحة.",
+     "note": "Validity fails if a condition is missing or an impediment present."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v01:p181",
+     "excerpt_ar": "فالصحة: هو اعتبار الشرع الشيء في حق حكمه",
+     "note": "Ibn Qudāma's definition of ṣiḥḥa."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009",
+     "note": "Prohibition returning to the essence or a specific condition of worship voids it; otherwise two narrations or two wajhs."
+    }
+   ]
+  },
+  {
+   "key": "fasid",
+   "ar": "الفاسد",
+   "tr": "al-fāsid",
+   "gloss": "invalid",
+   "definition": "Ibn ʿUthaymīn: what the effects of performing it do not follow from, whether worship or contract. Ibn al-Laḥḥām: for the Ḥanbalīs and Shāfiʿīs fāsid and bāṭil are synonyms, whereas Abū Ḥanīfa distinguishes the bāṭil (not legislated at all) from the fāsid (legislated in origin but forbidden for a prohibited attribute); Ibn ʿUthaymīn notes the Ḥanbalīs still distinguish them in ḥajj and marriage. Ibn Rajab: a contract whose sound form entails liability entails it when fāsid too.",
+   "conditions": [
+    "a missing condition or present impediment (Ibn ʿUthaymīn)"
+   ],
+   "related": [
+    "sahih",
+    "nahy",
+    "daman"
+   ],
+   "lean": [
+    "Usul.Sadi.validDespiteProhibition",
+    "Usul.Muamalat.Ending.provedVoid",
+    "Usul.Muamalat.Voided",
+    "Usul.Muamalat.q53_void_propagates"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h009",
+     "note": "Definition."
+    },
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q021",
+     "note": "Buṭlān = fasād for Ḥanbalīs and Shāfiʿīs; Abū Ḥanīfa distinguishes them."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p014",
+     "excerpt_ar": "فرقوا بينهما بأن الفاسد ما اختلف العلماء في فساده كالنكاح بلا ولي، والباطل ما أجمعوا على بطلانه كنكاح المعتدة.",
+     "note": "Ibn ʿUthaymīn: the distinction is kept in marriage (disputed vs agreed invalidity)."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047",
+     "note": "Liability under a fāsid contract follows its ṣaḥīḥ counterpart."
+    }
+   ]
+  },
+  {
+   "key": "sabab",
+   "ar": "السبب",
+   "tr": "al-sabab",
+   "gloss": "cause",
+   "definition": "Al-Kawkab (after al-Qarāfī, also quoted by al-Ṭūfī): what by its existence entails the existence (of the ruling) and by its absence its absence, in itself; 'in itself' excludes cases where a condition is missing or an impediment present (e.g. the niṣāb before the year is complete). Al-Ṭūfī notes that a sharʿī cause, unlike a rational one, need not always produce its effect. Al-Saʿdī Q39 and Ibn Rajab q4: worship and expiations may not precede the cause of obligation but may precede its condition.",
+   "conditions": [
+    "existence entails the ruling, absence its absence, li-dhātihi"
+   ],
+   "related": [
+    "hukm_wadi",
+    "shart",
+    "mani",
+    "illa"
+   ],
+   "lean": [
+    "Usul.Wad.sabab",
+    "Usul.Kulliyyat.rulings",
+    "Usul.Kulliyyat.q31_each_cause_its_effect",
+    "Usul.Kulliyyat.timelyPerformance",
+    "Usul.Kulliyyat.q39_not_before_cause"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v01:p445",
+     "excerpt_ar": "والسبب في عرف أهل الشرع: \"ما يلزم من وجوده الوجود و\" يلزم \"من عدمه العدم لذاته\"",
+     "note": "Definition of sabab in al-Kawkab with its three restrictions."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p091",
+     "excerpt_ar": "لا يجوز تقديم العبادات؛ أو الكفارات على سبب الوجوب، ويجوز تقديمها بعد وجود السبب، وقبل شرط الوجوب وتحققه",
+     "note": "Al-Saʿdī Q39: no performance before the cause, permitted before the condition."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004",
+     "note": "Ibn Rajab: same rule for ʿibādāt."
+    }
+   ]
+  },
+  {
+   "key": "shart",
+   "ar": "الشرط",
+   "tr": "al-sharṭ",
+   "gloss": "condition",
+   "definition": "Ibn Qudāma: what entails, by its absence, the absence of the ruling (iḥṣān for stoning, the year for zakāt); the conditioned does not exist without it, but need not exist when it exists. Al-Kawkab: what by its absence entails absence and by its existence neither existence nor absence, in itself. Conditions are rational, linguistic or sharʿī; al-Kawkab (after al-Qarāfī) says the linguistic 'condition' (if you enter the house you are divorced) is really a sabab.",
+   "conditions": [
+    "absence entails absence of the ruling",
+    "existence does not entail the ruling"
+   ],
+   "related": [
+    "sabab",
+    "mani",
+    "sahih",
+    "hukm_wadi"
+   ],
+   "lean": [
+    "Usul.Wad.shart",
+    "Usul.Sadi.Gate",
+    "Usul.Sadi.Gate.conds",
+    "Usul.Sadi.q08_missing_condition",
+    "Usul.Sadi.Gate.ofBools"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v01:p179",
+     "excerpt_ar": "وهو: ما يلزم من انتفائه انتفاء الحكم، كالإحصان مع الرجم، والحول في الزكاة.",
+     "note": "Ibn Qudāma's definition."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v01:p452",
+     "excerpt_ar": "الشرط \"شرعا\" أي في عرف أهل الشرع: \"ما يلزم من عدمه العدم\" و \"لا\" يلزم \"من وجوده وجود ولا عدم لذاته\"",
+     "note": "Al-Kawkab's definition."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p051",
+     "excerpt_ar": "لابد لذلك من أحد أمرين : إما لفقد لازم من لوازمهاء أو لوجود مانع خاص يبطلها",
+     "note": "Al-Saʿdī Q8: a failed act lacks a required element or has a voiding impediment."
+    }
+   ]
+  },
+  {
+   "key": "mani",
+   "ar": "المانع",
+   "tr": "al-māniʿ",
+   "gloss": "impediment",
+   "definition": "The converse of the sharṭ: what by its existence entails the absence of the ruling (Ibn Qudāma; al-Ṭūfī gives debt with zakāt and fatherhood with retaliation). Al-Kawkab distinguishes an impediment of the cause, which disturbs the cause's ḥikma (debt against the niṣāb), from an impediment of the ruling, which leaves the ḥikma intact.",
+   "conditions": [
+    "its existence entails absence of the ruling"
+   ],
+   "related": [
+    "shart",
+    "sabab",
+    "hikma",
+    "takhsis_al_illa"
+   ],
+   "lean": [
+    "Usul.Wad.mani",
+    "Usul.Sadi.Gate.impediments",
+    "Usul.Sadi.q08_present_impediment"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v01:p181",
+     "excerpt_ar": "وعكس الشرط: المانع: وهو: ما يلزم من وجوده عدم الحكم",
+     "note": "Ibn Qudāma's definition."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p041",
+     "excerpt_ar": "ومن أجل كون العلة لا بد من اشتمالها على حكمة تدعو إلى الامتثال، كان مانعها وصفا وجوديا يخل بحكمتها، ويسمى مانع السبب، فإن لم يخل بحكمتها، بل بالحكم فقط، والحكمة باقية، سمي مانع الحكم.",
+     "note": "Al-Kawkab: māniʿ al-sabab vs māniʿ al-ḥukm."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057",
+     "note": "Ibn Rajab: when a ruling and its impediment coincide, the well-known madhhab is that the ruling does not arise (Ibn Ḥāmid disagrees)."
+    }
+   ]
+  },
+  {
+   "key": "rukhsa",
+   "ar": "الرخصة",
+   "tr": "al-rukhṣa",
+   "gloss": "dispensation",
+   "definition": "Ibn Qudāma gives two definitions: making the forbidden permitted while the prohibiting factor remains; or what is established against a sharʿī proof because of a preponderant opposing factor. What does not go against a proof is not called rukhṣa even if it is lenient.",
+   "conditions": [
+    "a prohibiting proof still stands",
+    "a preponderant opposing factor (e.g. necessity, hardship)"
+   ],
+   "related": [
+    "azima",
+    "mubah",
+    "haram"
+   ],
+   "lean": [
+    "Usul.Sadi.operative",
+    "Usul.Sadi.q04_no_haram_with_necessity",
+    "Usul.Qawaid.daruraPermits",
+    "Usul.QiyasLimits.Domain.rukhas"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v01:p189",
+     "excerpt_ar": "والرخصة: استباحة المحظور، مع قيام الحاظر",
+     "note": "First definition."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v01:p190",
+     "excerpt_ar": "وقيل: ما ثبت على خلاف دليل شرعي لمعارض راجح",
+     "note": "Second definition."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p038",
+     "excerpt_ar": "الوجوب يتعلق بالاستطاعة؛ فلا واجب مع العجزء ولا محرم مع الضرورة",
+     "note": "Al-Saʿdī Q4 (necessity lifts prohibition), the case the Lean readings model; the term rukhṣa itself is not a Lean constant."
+    }
+   ]
+  },
+  {
+   "key": "azima",
+   "ar": "العزيمة",
+   "tr": "al-ʿazīma",
+   "gloss": "strict rule",
+   "definition": "Linguistically firm intent. Ibn Qudāma: the ruling established without contravening a sharʿī proof (or: what God made binding on His servants). Ibn al-Laḥḥām, quoting al-Ṭūfī: the ruling established by a sharʿī proof free of an opposing factor, which al-Ṭūfī says covers the obligatory, prohibited and disliked. Not formalised in the Lean modules.",
+   "conditions": [],
+   "related": [
+    "rukhsa"
+   ],
+   "lean": [],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v01:p189",
+     "excerpt_ar": "فالعزيمة: الحكم الثابت من غير مخالفة دليل شرعي",
+     "note": "Ibn Qudāma's definition."
+    },
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q022",
+     "note": "Ibn al-Laḥḥām / al-Ṭūfī's definition and its scope."
+    }
+   ]
+  },
+  {
+   "key": "dalil",
+   "ar": "الدليل",
+   "tr": "al-dalīl",
+   "gloss": "proof, indicant",
+   "definition": "Al-Kawkab: technically, that by which correct reflection can lead to a sought-for informative conclusion. Ibn ʿUthaymīn orders the adilla as Book, Sunna, ijmāʿ and qiyās and requires reconciling them before abrogation or preference.",
+   "conditions": [],
+   "related": [
+    "ijma",
+    "qiyas",
+    "asl",
+    "taarud"
+   ],
+   "lean": [
+    "Usul.DalilKind",
+    "Usul.DalilKind.resort",
+    "Usul.DalilKind.qiyas_after_athar",
+    "Usul.Sadi.ruled",
+    "Usul.Sadi.q06_dalil_prevails"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v01:p052",
+     "excerpt_ar": "الدليل \"شرعا\" أي في اصطلاح علماء الشريعة: \"ما\" أي الشيء الذي \"يمكن التوصل بصحيح النظر\" - متعلق بالتوصل- أي بالنظر الصحيح؛ من باب إضافة الصفة إلى الموصوف \"فيه\" أي في ذلك الشيء \"إلى مطلوب خبري\"",
+     "note": "Definition of dalīl."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p082",
+     "excerpt_ar": "وإن تعارضت، وأمكن الجمع وجب الجمع، وإن لم يمكن الجمع عمل بالنسخ إن تمت شروطه.",
+     "note": "Ordering of adilla in conflict."
+    }
+   ]
+  },
+  {
+   "key": "ijma",
+   "ar": "الإجماع",
+   "tr": "al-ijmāʿ",
+   "gloss": "consensus",
+   "definition": "The agreement of the mujtahids of this umma after the Prophet on a sharʿī ruling. It is also a maslak of the ʿilla (the umma agrees that the ruling's ʿilla is X). Ibn ʿUthaymīn prefers decisive over presumptive ijmāʿ.",
+   "conditions": [
+    "mujtahids",
+    "of this umma",
+    "after the Prophet",
+    "on a sharʿī ruling"
+   ],
+   "related": [
+    "dalil",
+    "masalik_al_illa"
+   ],
+   "lean": [
+    "Usul.DalilKind.ijma",
+    "Usul.Jadal.Maslak.ijma",
+    "Usul.Qiyas.IllaSource"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h022",
+     "note": "Definition."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p116",
+     "excerpt_ar": "والمراد بثبوت العلة بالإجماع: أن تجمع الأمة على أن هذا الحكم علته كذا",
+     "note": "Ijmāʿ as the first maslak of the ʿilla."
+    }
+   ]
+  },
+  {
+   "key": "qiyas",
+   "ar": "القياس",
+   "tr": "al-qiyās",
+   "gloss": "analogy",
+   "definition": "Ibn ʿUthaymīn: equating a farʿ with an aṣl in a ruling for an ʿilla uniting them. Ibn Qudāma and al-Ṭūfī: carrying (ḥaml) a farʿ onto an aṣl in a ruling by a common factor; al-Kawkab: returning (radd) a farʿ to an aṣl by a uniting ʿilla. Its pillars are aṣl, farʿ, ʿilla and ḥukm. Ibn Taymiyya (via Ibn al-Qayyim) distinguishes sound qiyās (joining like cases, separating unlike ones), which never contradicts a text, from unsound qiyās.",
+   "conditions": [
+    "four arkān: aṣl, farʿ, ʿilla, ḥukm",
+    "not against a stronger proof (Ibn ʿUthaymīn cond. 1)",
+    "aṣl ruling by text or ijmāʿ",
+    "ʿilla present in the farʿ"
+   ],
+   "related": [
+    "asl_qiyas",
+    "far",
+    "illa",
+    "masalik_al_illa",
+    "qawadih"
+   ],
+   "lean": [
+    "Usul.Schema.Factors.qiyas",
+    "Usul.Qiyas.Argument",
+    "Usul.Qiyas.gate",
+    "Usul.Qiyas.qiyas_sound",
+    "Usul.Qiyas.gate_consistent",
+    "Usul.Sadi.q58_qiyas",
+    "Usul.DalilKind.qiyas",
+    "Usul.QiyasLimits.tamthil_iff_shumul"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h023",
+     "note": "Ibn ʿUthaymīn's definition."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p141",
+     "excerpt_ar": "حمل فرع على أصل في حكم بجامع بينهما",
+     "note": "Ibn Qudāma's definition."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p006",
+     "excerpt_ar": "رد فرع إلى أصل بعلة جامعة",
+     "note": "Al-Kawkab's definition."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p143",
+     "excerpt_ar": "ولا بد في كل قياس من أصل، وفرع، وعلة، وحكم",
+     "note": "Four arkān."
+    },
+    {
+     "ref": "src:openiti-ilam-shamela11496/v01:p290",
+     "excerpt_ar": "والصحيح هو الذي وردت به الشريعة، وهو الجمع بين المتماثلين والفرق بين المختلفين، فالأول قياس الطرد، والثاني قياس العكس",
+     "note": "Ibn Taymiyya: sound vs unsound qiyās."
+    }
+   ]
+  },
+  {
+   "key": "asl_qiyas",
+   "ar": "الأصل (ركن القياس)",
+   "tr": "al-aṣl (rukn al-qiyās)",
+   "gloss": "base case",
+   "definition": "The case compared to. Al-Kawkab: for the jurists it is the locus of the ruling compared to; others say it is the proof of the ruling or the ruling itself, a verbal dispute; al-Ṭūfī likewise reports text (the ribā ḥadīth) or its locus (the six commodities). Conditions: its ruling is established by text or agreement of the disputants (Ibn Qudāma) or by text or ijmāʿ, not by qiyās (Ibn ʿUthaymīn), and is rationally intelligible.",
+   "conditions": [
+    "ruling established by naṣṣ or agreement/ijmāʿ",
+    "ruling maʿqūl al-maʿnā",
+    "its proof does not already cover the farʿ"
+   ],
+   "related": [
+    "qiyas",
+    "far",
+    "illa"
+   ],
+   "lean": [
+    "Usul.Qiyas.Argument.asl",
+    "Usul.Qiyas.gate",
+    "Usul.Jadal.Qadih.succeeds"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p014",
+     "excerpt_ar": "فالأصل محل الحكم المشبه به",
+     "note": "What the aṣl is (locus) and the verbal dispute."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p249",
+     "excerpt_ar": "أحدهما: أن يكون ثابتا بنص، أو اتفاق من الخصمين",
+     "note": "Ibn Qudāma: established by text or agreement of both disputants."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p070",
+     "excerpt_ar": "أن يكون حكم الأصل ثابتاً بنص أو إجماع، فإن كان ثابتاً بقياس لم يصح القياس عليه",
+     "note": "Ibn ʿUthaymīn: by text or ijmāʿ; not by qiyās."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p256",
+     "excerpt_ar": "أن يكون الحكم معقول المعنى، إذ القياس إنما هو: تعدية الحكم من محل إلى محل بواسطة تعدي المقتضى",
+     "note": "Ruling must be rationally intelligible."
+    }
+   ]
+  },
+  {
+   "key": "far",
+   "ar": "الفرع",
+   "tr": "al-farʿ",
+   "gloss": "new case",
+   "definition": "The case to which the aṣl's ruling is extended. Its condition is that the ʿilla of the aṣl exist in it as it does in the aṣl (Ibn ʿUthaymīn); al-Ṭūfī accepts presumptive presence. Al-Kawkab: there must be no text on the farʿ's ruling.",
+   "conditions": [
+    "the aṣl's ʿilla present in it",
+    "no text already rules it"
+   ],
+   "related": [
+    "asl_qiyas",
+    "illa",
+    "tahqiq_al_manat"
+   ],
+   "lean": [
+    "Usul.Qiyas.Argument.far",
+    "Usul.Qiyas.TahqiqManat",
+    "Usul.Qiyas.gate"
+   ],
+   "refs": [
+    {
+     "ref": "src:shamela-9942/v01:p071",
+     "excerpt_ar": "أن تكون العلة موجودة في الفرع كوجودها في الأصل",
+     "note": "Ibn ʿUthaymīn's condition."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p313",
+     "excerpt_ar": "وشرط الفرع وجود علة الأصل فيه ظنا إذ هو كالقاطع في الشرعيات",
+     "note": "Al-Ṭūfī: presumptive presence suffices."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p111",
+     "excerpt_ar": "وقال الموفق والمجد والطوفي: يشترط لقياس العلة، لا لقياس الدلالة",
+     "note": "Al-Kawkab: no concordant text on the farʿ."
+    }
+   ]
+  },
+  {
+   "key": "illa",
+   "ar": "العلة",
+   "tr": "al-ʿilla",
+   "gloss": "ratio legis",
+   "definition": "Ibn Qudāma: the manāṭ (anchor) of the ruling; the sharʿī ʿilla is a sign (ʿalāma), which may be a ruling, a description, simple or compound, positive or negative. Al-Ṭūfī: a sign and identifier which must be transitive (so the restricted ʿilla is disregarded), against al-Shāfiʿī and Abū al-Khaṭṭāb. Ibn ʿUthaymīn requires it to contain a suitable meaning recognised by the sharʿ. Al-Saʿdī Q58 instead says the ʿilla of the ruling is the ḥikma in commanding, forbidding or permitting it.",
+   "conditions": [
+    "present in aṣl and farʿ",
+    "suitable meaning (Ibn ʿUthaymīn)",
+    "transitive (disputed)"
+   ],
+   "related": [
+    "wasf",
+    "hikma",
+    "masalik_al_illa",
+    "sabab"
+   ],
+   "lean": [
+    "Usul.Qiyas.Wasf",
+    "Usul.Schema.Factors",
+    "Usul.Sadi.DependsOn",
+    "Usul.Sadi.q58_factors",
+    "Usul.QiyasLimits.conj",
+    "Usul.Qiyas.IllaSource"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p144",
+     "excerpt_ar": "ونعني بالعلة: مناط الحكم. وسميت علة؛ لأنها غيرت حال المحل",
+     "note": "ʿIlla as manāṭ al-ḥukm."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p259",
+     "excerpt_ar": "ومعنى العلة الشرعية: العلامة",
+     "note": "The sharʿī ʿilla is a sign; kinds of description it may be."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p313",
+     "excerpt_ar": "أما العلة الشرعية فهي علامة ومعرف، ومن شرطها أن تكون متعدية فلا عبرة بالقاصرة",
+     "note": "Al-Ṭūfī: sign; transitivity required (disputed)."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p071",
+     "excerpt_ar": "أن تكون العلة مشتملة على معنى مناسب للحكم يعلم من قواعد الشرع اعتباره",
+     "note": "Ibn ʿUthaymīn: must contain a suitable meaning."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p107",
+     "excerpt_ar": "وعلة الحكم هي الحكمة في الأمر به، أو النهي عنه؛ أو إباحته",
+     "note": "Al-Saʿdī Q58: ʿilla identified with the ḥikma."
+    }
+   ]
+  },
+  {
+   "key": "hikma",
+   "ar": "الحكمة",
+   "tr": "al-ḥikma",
+   "gloss": "wisdom, purpose",
+   "definition": "The purpose a ruling serves. Al-Kawkab: the ʿilla must contain a ḥikma that calls to compliance, and an impediment of the cause is one that disturbs that ḥikma. Ibn Qudāma and al-Ṭūfī: showing the ḥikma without the ruling (kasr) is not binding, since ḥikmas cannot be measured by opinion. Al-Saʿdī identifies the ʿilla with the ḥikma, where Ibn Qudāma treats the ʿilla as a sign.",
+   "conditions": [],
+   "related": [
+    "illa",
+    "kasr",
+    "munasaba",
+    "maslaha_mursala"
+   ],
+   "lean": [
+    "Usul.Jadal.Debate.hikma",
+    "Usul.Qiyas.naqd_gives_kasr",
+    "Usul.Qiyas.kasr_without_naqd",
+    "Usul.Qiyas.Munasib"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p041",
+     "excerpt_ar": "ومن أجل كون العلة لا بد من اشتمالها على حكمة تدعو إلى الامتثال، كان مانعها وصفا وجوديا يخل بحكمتها، ويسمى مانع السبب، فإن لم يخل بحكمتها، بل بالحكم فقط، والحكمة باقية، سمي مانع الحكم.",
+     "note": "The ʿilla must contain a ḥikma; māniʿ al-sabab disturbs it."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p312",
+     "excerpt_ar": "وهو إبداء الحكمة بدون الحكم: فغير لازم",
+     "note": "Kasr (ḥikma without ruling) not binding."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p107",
+     "excerpt_ar": "وعلة الحكم هي الحكمة في الأمر به، أو النهي عنه؛ أو إباحته",
+     "note": "Al-Saʿdī: the ʿilla is the ḥikma."
+    }
+   ]
+  },
+  {
+   "key": "wasf",
+   "ar": "الوصف",
+   "tr": "al-waṣf",
+   "gloss": "description, feature",
+   "definition": "A description of the case that may serve as the ʿilla. Ibn Qudāma: the sharʿī ʿilla may be an accidental or inherent description, simple or compound, negative or positive, suitable or not. Ibn ʿUthaymīn excludes a ṭardī description (e.g. blackness) as a cause. Sabr enumerates the descriptions in the aṣl and cancels the unfit ones.",
+   "conditions": [],
+   "related": [
+    "illa",
+    "tard",
+    "sabr_wal_taqsim",
+    "munasaba"
+   ],
+   "lean": [
+    "Usul.Qiyas.Wasf",
+    "Usul.QiyasLimits.conj",
+    "Usul.QiyasLimits.conj_iff",
+    "Usul.QiyasLimits.addition_sound",
+    "Usul.QiyasLimits.omission_unsound"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p259",
+     "excerpt_ar": "ومعنى العلة الشرعية: العلامة",
+     "note": "Kinds of description that can be an ʿilla."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p071",
+     "excerpt_ar": "أن تكون العلة مشتملة على معنى مناسب للحكم يعلم من قواعد الشرع اعتباره",
+     "note": "Suitable vs ṭardī description."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p142",
+     "excerpt_ar": "وهو: حصر الأوصاف\" في الأصل المقيس عليه \"وإبطال ما لا يصلح",
+     "note": "Sabr operates on the descriptions of the aṣl."
+    }
+   ]
+  },
+  {
+   "key": "masalik_al_illa",
+   "ar": "مسالك العلة",
+   "tr": "masālik al-ʿilla",
+   "gloss": "ways to the ʿilla",
+   "definition": "The proofs that establish the ʿilla, which Ibn Qudāma reduces to text, consensus and extraction (istinbāṭ). Extraction includes munāsaba, sabr wa-taqsīm and dawarān; al-Kawkab lists ijmāʿ, naṣṣ, sabr, munāsaba, shabah, dawarān and discusses ṭard. Preference: an ʿilla by sabr over munāsaba over shabah (al-Kawkab); consensual over textual over extracted (al-Ṭūfī).",
+   "conditions": [],
+   "related": [
+    "illa",
+    "ijma",
+    "munasaba",
+    "sabr_wal_taqsim",
+    "dawaran",
+    "shabah",
+    "tard",
+    "tarjih"
+   ],
+   "lean": [
+    "Usul.Jadal.Maslak",
+    "Usul.Qiyas.IllaSource",
+    "Usul.Jadal.RespectsSources",
+    "Usul.Jadal.exampleRank_respects"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p191",
+     "excerpt_ar": "وأدلة الشرع ترجع إلى \"نص\" أو \"إجماع\" أو \"استنباط\" فهذه ثلاثة أقسام",
+     "note": "Text, ijmāʿ, istinbāṭ."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p718",
+     "excerpt_ar": "و\" يرجح أحد القياسين ب \"سبر، فمناسبة",
+     "note": "Ranking of masālik for tarjīḥ."
+    }
+   ]
+  },
+  {
+   "key": "dawaran",
+   "ar": "الدوران",
+   "tr": "al-dawarān",
+   "gloss": "co-variation",
+   "definition": "The ruling exists with the description and ceases with its absence (prohibition with the intoxicating strength of wine). It yields presumption (ẓann) of causality according to most Ḥanbalīs (al-Kawkab, al-Ṭūfī); Ibn Qudāma reports that some require it to be combined with something else. Al-Āmidī and Ibn al-Ḥājib call it ṭard wa-ʿaks.",
+   "conditions": [
+    "ṭard: ruling with the description",
+    "ʿaks: no ruling without it"
+   ],
+   "related": [
+    "tard",
+    "masalik_al_illa",
+    "adam_al_tathir"
+   ],
+   "lean": [
+    "Usul.Qiyas.dawaran",
+    "Usul.Qiyas.dawaran_iff",
+    "Usul.Qiyas.aks",
+    "Usul.Qiyas.aks_iff",
+    "Usul.Qiyas.dawaran_not_unique",
+    "Usul.Qiyas.dawaran_answers_adamTathir"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p226",
+     "excerpt_ar": "النوع الثالث- في إثبات العلة: أن يوجد الحكم بوجودها، ويعدم بعدمها",
+     "note": "Ibn Qudāma's definition."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p193",
+     "excerpt_ar": "ويفيد\" الدوران \"العلة ظنا\" عند الأكثر من أصحابنا",
+     "note": "Al-Kawkab: yields ẓann per most aṣḥāb."
+    }
+   ]
+  },
+  {
+   "key": "tard",
+   "ar": "الطرد",
+   "tr": "al-ṭard",
+   "gloss": "concomitance",
+   "definition": "Concomitance of ruling and description without suitability. Proving an ʿilla by its mere constancy (iṭṭirād) is invalid according to Ibn Qudāma and al-Ṭūfī (absence of one defeater is not proof), and al-Kawkab says ṭard alone is not a proof according to the four imams.",
+   "conditions": [],
+   "related": [
+    "dawaran",
+    "wasf",
+    "naqd"
+   ],
+   "lean": [
+    "Usul.Qiyas.tard",
+    "Usul.Qiyas.tard_iff",
+    "Usul.Qiyas.tard_vacuous"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p233",
+     "excerpt_ar": "فأما الدلالة على صحة العلة باطرادها ففاسد",
+     "note": "Ibn Qudāma: proof by iṭṭirād is void."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p419",
+     "excerpt_ar": "خاتمة اطراد العلة لا يفيد صحتها",
+     "note": "Al-Ṭūfī: iṭṭirād does not prove validity."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p198",
+     "excerpt_ar": "وليس\" الطرد \"دليلا وحده\" عند الأئمة الأربعة وغيرهم",
+     "note": "Al-Kawkab: not a proof by itself."
+    }
+   ]
+  },
+  {
+   "key": "sabr_wal_taqsim",
+   "ar": "السبر والتقسيم",
+   "tr": "al-sabr wa'l-taqsīm",
+   "gloss": "probing and division",
+   "definition": "Enumerating the descriptions in the aṣl and cancelling those unfit, so that the remainder is the ʿilla (al-Kawkab). Ibn Qudāma: the ruling is caused; the ʿilla is only X or Y; one is void so the other is fixed. The enumeration must be exhaustive, and naqḍ alone does not suffice to cancel a description.",
+   "conditions": [
+    "the ruling is agreed to be caused",
+    "exhaustive enumeration (ḥaṣr)",
+    "cancellation of all but one"
+   ],
+   "related": [
+    "masalik_al_illa",
+    "takhrij_al_manat",
+    "naqd"
+   ],
+   "lean": [
+    "Usul.Qiyas.survivors",
+    "Usul.Qiyas.sabr_sound",
+    "Usul.Qiyas.sabr_needs_hasr",
+    "Usul.Qiyas.refutedByNaqd",
+    "Usul.Jadal.sabr_beats_shabah"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p142",
+     "excerpt_ar": "وهو: حصر الأوصاف\" في الأصل المقيس عليه \"وإبطال ما لا يصلح",
+     "note": "Al-Kawkab's definition."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p221",
+     "excerpt_ar": "فنقول: الحكم معلل، ولا علة إلا كذا أو كذا، وقد بطل أحدهما فيتعين الآخر",
+     "note": "Ibn Qudāma's structure."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p222",
+     "excerpt_ar": "الأمر الثاني: أن يكون سبره حاصرا لجميع ما يعلل به",
+     "note": "Exhaustiveness condition."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p224",
+     "excerpt_ar": "ولا يكفيه في إفساد علة خصمه: النقض",
+     "note": "Naqḍ alone does not cancel a description."
+    }
+   ]
+  },
+  {
+   "key": "munasaba",
+   "ar": "المناسبة",
+   "tr": "al-munāsaba",
+   "gloss": "suitability",
+   "definition": "The description coupled with the ruling is suitable: establishing the ruling after it secures a maṣlaḥa (Ibn Qudāma). The munāsib is muʾaththir, mulāʾim or gharīb; some restricted qiyās to the muʾaththir, which Ibn Qudāma rejects. Al-Kawkab also calls it ikhāla and says extracting the ʿilla by it is takhrīj al-manāṭ.",
+   "conditions": [],
+   "related": [
+    "masalik_al_illa",
+    "maslaha_mursala",
+    "hikma",
+    "takhrij_al_manat"
+   ],
+   "lean": [
+    "Usul.Qiyas.Munasib",
+    "Usul.Qiyas.munasaba_of_q01",
+    "Usul.Qiyas.Recognition",
+    "Usul.Qiyas.Recognition.accepted",
+    "Usul.Qiyas.mulgha_never_accepted"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p208",
+     "excerpt_ar": "ومعناه: أن يكون في إثبات الحكم عقيبه مصلحة",
+     "note": "Definition."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p210",
+     "excerpt_ar": "فالمناسب ثلاثة أنواع: مؤثر، وملائم، وغريب",
+     "note": "Three kinds of munāsib."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p152",
+     "excerpt_ar": "الرابع \" من مسالك العلة \"المناسبة، و\" يقال \"الإخالة",
+     "note": "Al-Kawkab: ikhāla; takhrīj al-manāṭ."
+    }
+   ]
+  },
+  {
+   "key": "maslaha_mursala",
+   "ar": "المصلحة المرسلة",
+   "tr": "al-maṣlaḥa al-mursala",
+   "gloss": "unattested interest",
+   "definition": "Ibn Qudāma: istiṣlāḥ is following the maṣlaḥa mursala; maṣlaḥa is securing benefit or repelling harm. A maṣlaḥa neither attested nor cancelled by the law is called mursala, not qiyās, since qiyās returns to a specific aṣl. Mālik and some Shāfiʿīs accept it as a proof; Ibn Qudāma and, per al-Kawkab, most Ḥanbalīs do not.",
+   "conditions": [],
+   "related": [
+    "munasaba",
+    "hikma"
+   ],
+   "lean": [
+    "Usul.Qiyas.Recognition.mursal",
+    "Usul.Qiyas.Recognition.accepted"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v01:p478",
+     "excerpt_ar": "الرابع من الأصول المختلف فيها: الاستصلاح: وهو: اتباع المصلحة المرسلة. والمصلحة: هي جلب المنفعة، أو دفع المضرة.",
+     "note": "Definition of istiṣlāḥ and maṣlaḥa."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v01:p482",
+     "excerpt_ar": "فيسمى ذلك مصلحة مرسلة، ولا نسميه قياسا؛ لأن القياس يرجع إلى أصل معين. والصحيح: أن ذلك ليس بحجة",
+     "note": "Not called qiyās; Ibn Qudāma: not a proof."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p169",
+     "excerpt_ar": "\"وليست هذه المصلحة بحجة\" عند الأكثر، خلافا لمالك وبعض الشافعية، وتسمى المصلحة المرسلة.",
+     "note": "Al-Kawkab: not a proof for most, against Mālik and some Shāfiʿīs."
+    }
+   ]
+  },
+  {
+   "key": "shabah",
+   "ar": "الشبه",
+   "tr": "al-shabah",
+   "gloss": "resemblance",
+   "definition": "Al-Qāḍī: the farʿ oscillates between a permitting and a prohibiting aṣl and is joined to the one it resembles more (the slave between the free man and the beast). Sources differ on its authority: two reports from Aḥmad (al-Ṭūfī: the more apparent is that it is valid); al-Kawkab: a proof only where qiyās al-ʿilla is impossible; Ibn ʿUthaymīn calls it weak; Ibn al-Qayyim says God reports it only from the people of falsehood.",
+   "conditions": [],
+   "related": [
+    "masalik_al_illa",
+    "tarjih"
+   ],
+   "lean": [
+    "Usul.Qiyas.resemblance",
+    "Usul.Qiyas.shabahAsl",
+    "Usul.Qiyas.shabah_optimal",
+    "Usul.Jadal.farByOrder",
+    "Usul.Jadal.shabah_only_as_fallback",
+    "Usul.Jadal.shabah_rejected"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p241",
+     "excerpt_ar": "هو أن يتردد الفرع بين أصلين: حاظر ومبيح، ويكون شبهه بأحدهما أكثر",
+     "note": "Definition."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p424",
+     "excerpt_ar": "والثالث: الشبه، وفي صحة التمسك به قولان لأحمد والشافعي - رضي الله عنهما -، والأظهر: نعم لإثارته الظن، خلافا للقاضي",
+     "note": "Two views from Aḥmad; al-Ṭūfī prefers validity."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p190",
+     "excerpt_ar": "فإن عدم\" إمكان قياس العلة \"فحجة\" أي فقياس الشبه حجة عندنا",
+     "note": "Al-Kawkab: only when qiyās al-ʿilla is unavailable."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p073",
+     "excerpt_ar": "وهذا القسم من القياس ضعيف إذ ليس بينه وبين الأصل علة مناسبة",
+     "note": "Ibn ʿUthaymīn: weak."
+    },
+    {
+     "ref": "src:openiti-ilam-shamela11496/v01:p115",
+     "excerpt_ar": "وأما قياس الشبه فلم يحكه الله سبحانه إلا عن المبطلين",
+     "note": "Ibn al-Qayyim: reported only from the people of falsehood."
+    }
+   ]
+  },
+  {
+   "key": "tanqih_al_manat",
+   "ar": "تنقيح المناط",
+   "tr": "tanqīḥ al-manāṭ",
+   "gloss": "refining the anchor",
+   "definition": "The Lawgiver attaches a ruling to its cause together with descriptions that play no part, which must be set aside so that the ruling extends (the Bedouin who had intercourse in Ramaḍān). Al-Ṭūfī says most deniers of qiyās accept it.",
+   "conditions": [],
+   "related": [
+    "takhrij_al_manat",
+    "tahqiq_al_manat",
+    "illa"
+   ],
+   "lean": [
+    "Usul.Qiyas.tanqih_manat",
+    "Usul.Schema.Ignores"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p148",
+     "excerpt_ar": "وهو: أن يضيف الشارع الحكم إلى سببه، فيقترن به أوصاف لا مدخل لها في الإضافة، فيجب حذفها عن الاعتبار، ليتسع الحكم",
+     "note": "Ibn Qudāma's definition."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p237",
+     "excerpt_ar": "وقال به أكثر منكري القياس",
+     "note": "Al-Ṭūfī."
+    }
+   ]
+  },
+  {
+   "key": "takhrij_al_manat",
+   "ar": "تخريج المناط",
+   "tr": "takhrīj al-manāṭ",
+   "gloss": "extracting the anchor",
+   "definition": "The Lawgiver states a ruling without indicating its manāṭ and the mujtahid extracts it by reasoning (intoxication for wine). Ibn Qudāma calls this the disputed qiyās; al-Ṭūfī calls it the qiyās-based ijtihād; al-Kawkab identifies extraction by munāsaba with it.",
+   "conditions": [],
+   "related": [
+    "tanqih_al_manat",
+    "tahqiq_al_manat",
+    "munasaba",
+    "sabr_wal_taqsim"
+   ],
+   "lean": [
+    "Usul.Qiyas.sabr_sound",
+    "Usul.Qiyas.Munasib"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p150",
+     "excerpt_ar": "فيستنبط المناط بالرأي والنظر",
+     "note": "Ibn Qudāma."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p242",
+     "excerpt_ar": "وهو الاجتهاد القياسي، وأجاز أصحابنا التعبد به عقلا وشرعا، وبه قال عامة الفقهاء والمتكلمين خلافا للظاهرية والنظام",
+     "note": "Al-Ṭūfī."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p152",
+     "excerpt_ar": "الرابع \" من مسالك العلة \"المناسبة، و\" يقال \"الإخالة",
+     "note": "Al-Kawkab: extraction by munāsaba is takhrīj al-manāṭ."
+    }
+   ]
+  },
+  {
+   "key": "tahqiq_al_manat",
+   "ar": "تحقيق المناط",
+   "tr": "taḥqīq al-manāṭ",
+   "gloss": "verifying the anchor",
+   "definition": "The general rule (or ʿilla) is agreed or textual, and one verifies it in the particular case (Ibn Qudāma); al-Kawkab: establishing the ʿilla in its individual instances. Al-Shinqīṭī notes that in its first type 'manāṭ' is not the technical ʿilla but the general text being applied.",
+   "conditions": [
+    "the manāṭ is already known by text or agreement"
+   ],
+   "related": [
+    "tanqih_al_manat",
+    "takhrij_al_manat",
+    "far"
+   ],
+   "lean": [
+    "Usul.Qiyas.TahqiqManat",
+    "Usul.Jadal.dalala_verifies"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p145",
+     "excerpt_ar": "ومعناه: أن تكون القاعدة الكلية متفقا عليها، أو منصوصا عليها، ويجتهد في تحقيقها في الفرع",
+     "note": "Ibn Qudāma."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p200",
+     "excerpt_ar": "وتحقيقه\": أي تحقيق المناط \"إثبات العلة في آحاد صورها",
+     "note": "Al-Kawkab's definitions of the manāṭ operations."
+    },
+    {
+     "ref": "src:shamela-282/v01:p380",
+     "excerpt_ar": "والمناطُ هنا ليس بمعناه الاصطلاحي",
+     "note": "Al-Shinqīṭī's remark."
+    }
+   ]
+  },
+  {
+   "key": "qawadih",
+   "ar": "القوادح",
+   "tr": "al-qawādiḥ",
+   "gloss": "objections",
+   "definition": "The objections to a qiyās. Ibn Qudāma lists twelve (istifsār, fasād al-iʿtibār, fasād al-waḍʿ, manʿ, taqsīm, muṭālaba, naqḍ, qawl bi'l-mūjab, qalb, ʿadam al-taʾthīr, muʿāraḍa, tarkīb); al-Kawkab and others count twenty-five. Al-Ṭūfī, al-Kawkab and al-Shinqīṭī say they all reduce to manʿ or muʿāraḍa.",
+   "conditions": [],
+   "related": [
+    "man",
+    "naqd",
+    "kasr",
+    "adam_al_tathir",
+    "qalb",
+    "al_qawl_bil_mujab",
+    "fasad_al_itibar",
+    "fasad_al_wad",
+    "muarada",
+    "farq"
+   ],
+   "lean": [
+    "Usul.Jadal.Qadih",
+    "Usul.Jadal.Qadih.all",
+    "Usul.Jadal.Qadih.kind",
+    "Usul.Jadal.Qadih.succeeds",
+    "Usul.Jadal.debateGate",
+    "Usul.Jadal.debateGate_holds_iff",
+    "Usul.Jadal.objection_blocks",
+    "Usul.Jadal.kind_spec",
+    "Usul.Jadal.debateGate_sound"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p301",
+     "excerpt_ar": "قال بعض أهل العلم: يتوجه على القياس اثنا عشر سؤالا",
+     "note": "Twelve questions."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p229",
+     "excerpt_ar": "القوادح ترجع إلى المنع في المقدمات، أو المعارضات في الحكم",
+     "note": "Al-Kawkab: reduce to manʿ or muʿāraḍa; 25."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p565",
+     "excerpt_ar": "والأسئلة راجعة إلى منع، أو معارضة، وإلا لم يسمع",
+     "note": "Al-Ṭūfī: reduction."
+    }
+   ]
+  },
+  {
+   "key": "man",
+   "ar": "المنع",
+   "tr": "al-manʿ",
+   "gloss": "denial",
+   "definition": "Denial, by the objector, of the aṣl's ruling, of the ʿilla's existence in the aṣl, of its causality, or of its existence in the farʿ; the soundest view is that the arguer is not cut off by denial of the aṣl ruling (Ibn Qudāma, al-Ṭūfī). Muṭālaba (demanding proof of causality) is the third of these denials.",
+   "conditions": [],
+   "related": [
+    "qawadih",
+    "muarada"
+   ],
+   "lean": [
+    "Usul.Qiyas.man_defeats",
+    "Usul.Qiyas.underdetermined",
+    "Usul.Jadal.Qadih.man",
+    "Usul.Jadal.Kind.man",
+    "Usul.Process.man"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p305",
+     "excerpt_ar": "وقد اختلف في انقطاع المستدل عند توجه منع الحكم في الأصل: والصحيح: أنه لا ينقطع",
+     "note": "Ibn Qudāma."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p481",
+     "excerpt_ar": "المنع، وهو منع حكم الأصل، ولا ينقطع به المستدل على الأصح",
+     "note": "Al-Ṭūfī."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p308",
+     "excerpt_ar": "وهي: طلب المستدل بذكر ما يدل على أن ما جعله جامعا هو العلة",
+     "note": "Muṭālaba as the third manʿ."
+    }
+   ]
+  },
+  {
+   "key": "naqd",
+   "ar": "النقض",
+   "tr": "al-naqḍ",
+   "gloss": "counter-case",
+   "definition": "Showing the ʿilla without the ruling (Ibn Qudāma, al-Ṭūfī). Whether it voids the ʿilla is disputed; Ibn Qudāma prefers that it is a valid objection and that the arguer should guard his proof against it. Al-Kawkab calls it takhṣīṣ al-ʿilla and records ten views on whether it impairs the ʿilla.",
+   "conditions": [],
+   "related": [
+    "takhsis_al_illa",
+    "kasr",
+    "tard",
+    "qawadih"
+   ],
+   "lean": [
+    "Usul.Qiyas.Naqd",
+    "Usul.Qiyas.naqd_iff_not_tard",
+    "Usul.Qiyas.naqd_defeats",
+    "Usul.Qiyas.NaqdSucceeds",
+    "Usul.Sadi.q58_naqd",
+    "Usul.Jadal.Qadih.naqd"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p309",
+     "excerpt_ar": "ومعناه: إبداء العلة بدون الحكم",
+     "note": "Ibn Qudāma's definition and preference."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p498",
+     "excerpt_ar": "وهو إبداء العلة بدون الحكم، وفي بطلان العلة به خلاف",
+     "note": "Al-Ṭūfī: invalidation is disputed."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p056",
+     "excerpt_ar": "والنقض، ويسمى تخصيص العلة\" هو \"عدم اطرادها",
+     "note": "Al-Kawkab: called takhṣīṣ al-ʿilla."
+    }
+   ]
+  },
+  {
+   "key": "takhsis_al_illa",
+   "ar": "تخصيص العلة",
+   "tr": "takhṣīṣ al-ʿilla",
+   "gloss": "specifying the ʿilla",
+   "definition": "Whether the ʿilla survives a naqḍ as a proof in the remaining cases, like a specified general term. Sources differ: al-Qāḍī and Abū al-Khaṭṭāb (al-Kawkab) hold naqḍ does not impair it; Ibn Ḥāmid holds it does; Ibn Qudāma distinguishes, voiding the extracted ʿilla but not the textual one when a condition is missing or an impediment present; al-Shinqīṭī prefers the reverse attribution; Ibn al-Qayyim says takhṣīṣ for a missing condition or present impediment is not impossible.",
+   "conditions": [],
+   "related": [
+    "naqd",
+    "mani",
+    "illa"
+   ],
+   "lean": [
+    "Usul.Qiyas.takhsis_repairs",
+    "Usul.Qiyas.NaqdSucceedsBy",
+    "Usul.Qiyas.naqd_succeeds_without_takhsis",
+    "Usul.Qiyas.naqd_answered_by_takhsis",
+    "Usul.Qiyas.IllaSource",
+    "Usul.Jadal.Policy"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p056",
+     "excerpt_ar": "والنقض، ويسمى تخصيص العلة\" هو \"عدم اطرادها",
+     "note": "Naqḍ is called takhṣīṣ al-ʿilla."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p058",
+     "excerpt_ar": "وهذا قول القاضي وأبي الخطاب. وحكاه الآمدي عن أكثر أصحابنا",
+     "note": "First view: does not impair."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p058",
+     "excerpt_ar": "والقول الثاني: يقدح. اختاره من أصحابنا: ابن حامد وقاله القاضي أيضا",
+     "note": "Second view: impairs."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p274",
+     "excerpt_ar": "وفرق قوم بين العلة المنصوص عليها، وبين المستنبطة، وجعل نقض المستنبطة مبطلا لها",
+     "note": "Ibn Qudāma's distinction textual vs extracted."
+    },
+    {
+     "ref": "src:openiti-ilam-shamela11496/v03:p027",
+     "excerpt_ar": "وبالجملة فلا يمتنع تخصيص العلة لفوات شرط أو لقيام مانع",
+     "note": "Ibn al-Qayyim."
+    }
+   ]
+  },
+  {
+   "key": "kasr",
+   "ar": "الكسر",
+   "tr": "al-kasr",
+   "gloss": "breaking (the ḥikma)",
+   "definition": "Showing the ḥikma without the ruling. Ibn Qudāma and al-Ṭūfī: not binding, since the ḥikma cannot be measured by opinion; al-Kawkab: the sound view among the aṣḥāb is that kasr does not void the ʿilla, while Ibn Mufliḥ calls it 'naqḍ of the meaning', treated like naqḍ; al-Shinqīṭī holds it impairs wherever naqḍ does.",
+   "conditions": [],
+   "related": [
+    "naqd",
+    "hikma",
+    "qawadih"
+   ],
+   "lean": [
+    "Usul.Qiyas.naqd_gives_kasr",
+    "Usul.Qiyas.kasr_without_naqd",
+    "Usul.Jadal.Qadih.kasr",
+    "Usul.Jadal.Policy"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p312",
+     "excerpt_ar": "وهو إبداء الحكمة بدون الحكم: فغير لازم",
+     "note": "Ibn Qudāma: not binding."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p067",
+     "excerpt_ar": "الصحيح عند أصحابنا والأكثر: أن الكسر والنقض المكسور \"لا يبطلانها",
+     "note": "Al-Kawkab: does not void the ʿilla."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p293",
+     "excerpt_ar": "قال ابن مفلح: الكسر: نقض المعنى. والكلام فيه كالنقض",
+     "note": "Ibn Mufliḥ: naqḍ of the meaning."
+    },
+    {
+     "ref": "src:shamela-282/v01:p459",
+     "excerpt_ar": "فالظاهرُ أنَّ الكسر كالنقض، فعلى أنَّ النقضَ قادحٌ فالكسرُ كذلك",
+     "note": "Al-Shinqīṭī: like naqḍ."
+    }
+   ]
+  },
+  {
+   "key": "adam_al_tathir",
+   "ar": "عدم التأثير",
+   "tr": "ʿadam al-taʾthīr",
+   "gloss": "non-efficacy",
+   "definition": "Ibn Qudāma and al-Ṭūfī: the proof mentions something superfluous to establishing the aṣl's ruling, because the ruling holds without it or because it is a ṭardī description. Al-Kawkab frames it as the claim that the description lacks suitability, not raised against qiyās al-dalāla.",
+   "conditions": [],
+   "related": [
+    "qawadih",
+    "dawaran",
+    "wasf"
+   ],
+   "lean": [
+    "Usul.Qiyas.AdamTathir",
+    "Usul.Qiyas.adamTathir_iff_not_aks",
+    "Usul.Qiyas.AdamTathirSucceeds",
+    "Usul.Qiyas.dawaran_answers_adamTathir",
+    "Usul.Jadal.Qadih.adamTathir"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p325",
+     "excerpt_ar": "ومعناه: أن يذكر في الدليل ما يستغنى عنه في إثبات الحكم في الأصل",
+     "note": "Ibn Qudāma."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p547",
+     "excerpt_ar": "عدم التأثير، وهو ذكر ما يستغني عنه الدليل في ثبوت حكم الأصل",
+     "note": "Al-Ṭūfī."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p264",
+     "excerpt_ar": "و \"لا يرد\" هذا \"على قياس الدلالة\" قاله الشيخ تقي الدين وابن عقيل",
+     "note": "Al-Kawkab."
+    }
+   ]
+  },
+  {
+   "key": "qalb",
+   "ar": "القلب",
+   "tr": "al-qalb",
+   "gloss": "turning the argument",
+   "definition": "The objector derives from the arguer's own proof, keeping the aṣl and description, a ruling contrary to his (Ibn Qudāma); al-Ṭūfī: attaching the negation of the arguer's ruling to his very ʿilla. Al-Kawkab and Ibn Qudāma count it a kind of muʿāraḍa.",
+   "conditions": [],
+   "related": [
+    "muarada",
+    "qawadih"
+   ],
+   "lean": [
+    "Usul.Qiyas.qalb_defeats",
+    "Usul.Jadal.Qadih.qalb"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p315",
+     "excerpt_ar": "ومعناه: أن يذكر لدليل المستدل حكما ينافي حكم المستدل، مع تبقية الأصل والوصف بحالهما",
+     "note": "Ibn Qudāma."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p519",
+     "excerpt_ar": "القلب، وهو تعليق نقيض حكم المستدل على علته بعينها",
+     "note": "Al-Ṭūfī."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p331",
+     "excerpt_ar": "وهو \"تعليق نقيض الحكم أو لازمه",
+     "note": "Al-Kawkab."
+    }
+   ]
+  },
+  {
+   "key": "al_qawl_bil_mujab",
+   "ar": "القول بالموجب",
+   "tr": "al-qawl bi'l-mūjab",
+   "gloss": "conceding the implication",
+   "definition": "Conceding what the arguer made the consequence of his proof while the dispute remains; the last of the objections (Ibn Qudāma, al-Ṭūfī, al-Kawkab).",
+   "conditions": [],
+   "related": [
+    "qawadih"
+   ],
+   "lean": [
+    "Usul.Qiyas.QawlBiMujab",
+    "Usul.Qiyas.qawlBiMujab_defeats",
+    "Usul.Jadal.Qadih.qawlBiMujab"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p328",
+     "excerpt_ar": "وحقيقته: تسليم ما جعله المستدل موجبا لدليله، مع بقاء الخلاف",
+     "note": "Ibn Qudāma."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p555",
+     "excerpt_ar": "القول بالموجب، وهو: تسليم الدليل مع منع المدلول",
+     "note": "Al-Ṭūfī."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p340",
+     "excerpt_ar": "تسليم مقتضى الدليل مع بقاء النزاع",
+     "note": "Al-Kawkab."
+    }
+   ]
+  },
+  {
+   "key": "fasad_al_itibar",
+   "ar": "فساد الاعتبار",
+   "tr": "fasād al-iʿtibār",
+   "gloss": "invalid consideration",
+   "definition": "The objection that the qiyās contradicts a text (Ibn Qudāma, al-Ṭūfī) or a text or ijmāʿ (al-Kawkab), so it is void. Ibn ʿUthaymīn makes non-collision with a stronger proof the first condition of qiyās.",
+   "conditions": [],
+   "related": [
+    "qawadih",
+    "fasad_al_wad"
+   ],
+   "lean": [
+    "Usul.Qiyas.farRuling",
+    "Usul.Qiyas.fasad_itibar",
+    "Usul.Qiyas.qiyas_against_text_discarded",
+    "Usul.QiyasLimits.qiyas_against_text_unsound",
+    "Usul.Jadal.Qadih.fasadItibar"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p303",
+     "excerpt_ar": "وهو أن يقول: هذا قياس يخالف نصا، فيكون باطلا",
+     "note": "Ibn Qudāma."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p236",
+     "excerpt_ar": "الثاني: من القوادح \"فساد الاعتبار",
+     "note": "Al-Kawkab: text or ijmāʿ."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p070",
+     "excerpt_ar": "أن لا يصادم دليلاً أقوى منه",
+     "note": "Ibn ʿUthaymīn's condition 1."
+    }
+   ]
+  },
+  {
+   "key": "fasad_al_wad",
+   "ar": "فساد الوضع",
+   "tr": "fasād al-waḍʿ",
+   "gloss": "invalid construction",
+   "definition": "Showing that the ʿilla requires the opposite of the ruling attached to it (Ibn Qudāma, al-Ṭūfī). Al-Kawkab: more specific than fasād al-iʿtibār; the qiyās is not in a form fit to yield the ruling.",
+   "conditions": [],
+   "related": [
+    "fasad_al_itibar",
+    "qawadih"
+   ],
+   "lean": [
+    "Usul.Qiyas.fasad_wad",
+    "Usul.Jadal.Qadih.fasadWad"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p304",
+     "excerpt_ar": "وهو: أن يبين أن الحكم المعلق على العلة تقتضي العلة نقيضه",
+     "note": "Ibn Qudāma."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p472",
+     "excerpt_ar": "وهو اقتضاء العلة نقيض ما علق بها",
+     "note": "Al-Ṭūfī."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p241",
+     "excerpt_ar": "الثالث: من القوادح \"فساد الوضع",
+     "note": "Al-Kawkab."
+    }
+   ]
+  },
+  {
+   "key": "muarada",
+   "ar": "المعارضة",
+   "tr": "al-muʿāraḍa",
+   "gloss": "counter-argument",
+   "definition": "Either in the aṣl, showing another cause for its ruling (better, needs no aṣl of its own), or in the farʿ, citing what prevents the ruling there, a stronger proof or a description; Ibn Qudāma and al-Kawkab accept it. With manʿ, it is one of the two kinds to which all objections reduce.",
+   "conditions": [],
+   "related": [
+    "man",
+    "farq",
+    "qalb",
+    "qawadih",
+    "taarud"
+   ],
+   "lean": [
+    "Usul.Jadal.Qadih.muarada",
+    "Usul.Jadal.Kind.muarada",
+    "Usul.Jadal.counterConflict",
+    "Usul.Jadal.counter_resolved_by_tarjih",
+    "Usul.Qiyas.farq_defeats"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p318",
+     "excerpt_ar": "وأحسنهما: المعارضة في الأصل؛ لأنه لا يحتاج إلى ذكر غير صلاحية ما يذكره، ولا يحتاج إلى أصل",
+     "note": "In the aṣl."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p323",
+     "excerpt_ar": "وهو: أن يذكر في الفرع ما يمتنع معه ثبوت الحكم",
+     "note": "In the farʿ."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p318",
+     "excerpt_ar": "المعارضة في الفرع بما يقتضي نقيض حكم المستدل",
+     "note": "Al-Kawkab: accepted."
+    }
+   ]
+  },
+  {
+   "key": "farq",
+   "ar": "الفرق",
+   "tr": "al-farq",
+   "gloss": "distinction",
+   "definition": "The objector shows a meaning distinguishing the aṣl from the farʿ so that the farʿ is not joined to it; al-Kawkab says it reduces to muʿāraḍa in the aṣl or farʿ. Ibn al-Qayyim: equating cases that differ in what requires or prevents the ruling is unsound qiyās.",
+   "conditions": [],
+   "related": [
+    "muarada",
+    "qawadih",
+    "qiyas"
+   ],
+   "lean": [
+    "Usul.Qiyas.farq_defeats",
+    "Usul.Qiyas.underdetermined",
+    "Usul.Jadal.Qadih.farq"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p320",
+     "excerpt_ar": "وهو إبداء المعترض معنى يحصل به الفرق بين الأصل والفرع حتى لا يلحق به في حكمه",
+     "note": "Al-Kawkab's definition."
+    },
+    {
+     "ref": "src:openiti-ilam-shamela11496/v02:p006",
+     "excerpt_ar": "وأما التسوية بينهما في الحكم مع افتراقهما فيما يقتضي الحكم أو يمنعه فهذا هو القياس الفاسد",
+     "note": "Ibn al-Qayyim."
+    }
+   ]
+  },
+  {
+   "key": "asl",
+   "ar": "الأصل / الاستصحاب",
+   "tr": "al-aṣl / al-istiṣḥāb",
+   "gloss": "presumption of continuity",
+   "definition": "Ibn Qudāma: istiṣḥāb is holding to a rational or sharʿī proof (original non-liability, a general term until specified, a text until abrogated, a ruling the law shows to continue), resting on a presumptive proof with no changer known. Al-Saʿdī Q11: the presumption is that what was remains, and certainty is not removed by doubt. Ibn Rajab: when two presumptions conflict the stronger is followed; al-Saʿdī Q6: the default in ʿādāt is permission and in ʿibādāt prohibition.",
+   "conditions": [],
+   "related": [
+    "yaqin",
+    "shakk",
+    "zahir",
+    "qarina",
+    "dalil"
+   ],
+   "lean": [
+    "Usul.DalilKind.istishab",
+    "Usul.Qawaid.Held",
+    "Usul.Qawaid.update",
+    "Usul.Qawaid.yaqin_la_yazul_bish_shakk",
+    "Usul.Domain.default",
+    "Usul.Sadi.ruled",
+    "Usul.Schema.burdenOf",
+    "Usul.Muamalat.q10_from_presumption"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v01:p449",
+     "excerpt_ar": "فالاستصحاب إذن: عبارة عن التمسك بدليل عقلي أو شرعي، وليس راجعا إلى عدم الدليل، بل إلى دليل ظني مع انتفاء المغير، أو العلم به.",
+     "note": "Ibn Qudāma's definition."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p057",
+     "excerpt_ar": "الأصل بقاء ما كان على ما كان، واليقين لا يزول بالشك",
+     "note": "Al-Saʿdī Q11."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158",
+     "note": "Conflict of two presumptions."
+    }
+   ]
+  },
+  {
+   "key": "zahir",
+   "ar": "الظاهر",
+   "tr": "al-ẓāhir",
+   "gloss": "apparent",
+   "definition": "The term is used in two senses. Textual: what indicates by itself a preponderant meaning while admitting another (Ibn ʿUthaymīn). Factual (Ibn Rajab): when the aṣl and the ẓāhir conflict, a ẓāhir that is a sharʿī proof (testimony, report) prevails without dispute; one resting on custom, indicators or preponderant belief sometimes prevails, sometimes not, sometimes is disputed.",
+   "conditions": [],
+   "related": [
+    "asl",
+    "amara",
+    "qarina",
+    "zann"
+   ],
+   "lean": [
+    "Usul.Refinements.zahirPrevails",
+    "Usul.Refinements.tie_without_amara_keeps_asl",
+    "Usul.Refinements.stronger_prevails",
+    "Usul.Refinements.zahirPrevails_conservative"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h019",
+     "note": "Textual definition."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159",
+     "note": "Conflict of aṣl and ẓāhir, four kinds."
+    }
+   ]
+  },
+  {
+   "key": "yaqin",
+   "ar": "اليقين",
+   "tr": "al-yaqīn",
+   "gloss": "certainty",
+   "definition": "Decisive perception (ʿilm: «إدراكاً جازماً», Ibn ʿUthaymīn). Al-Saʿdī Q11: certainty is not removed by doubt. Adopted reading (IQ-21, human review 2026-10-07): a judgement is certain for acting when it is qaṭʿ, or a ẓann whose preponderance is itself known on a dalīl (Ibn Taymiyya: belief in a view's preponderance is ʿilm; al-Rawḍa: God makes ẓann a sign of the obligation, so the obligation is known). A ẓann of unknown preponderance is not yaqīn. Where certainty cannot be reached, one builds on ghalabat al-ẓann (bayt 90).",
+   "conditions": [],
+   "related": [
+    "asl",
+    "ghalabat_al_zann",
+    "ilm",
+    "shakk",
+    "zann"
+   ],
+   "lean": [
+    "Usul.Grade.YaqinFor",
+    "Usul.Qawaid.Held.IsYaqin",
+    "Usul.Grade.yaqinFor_known",
+    "Usul.Grade.zann_unknown_not_yaqin",
+    "Usul.Grade.IsYaqin",
+    "Usul.Grade.qat",
+    "Usul.Qawaid.yaqin_la_yazul_bish_shakk",
+    "Usul.Sadi.q11_yaqin",
+    "Usul.Schema.yaqin_doubts_inert",
+    "Usul.Refinements.yaqinForAmal",
+    "Usul.Refinements.yaqinForAmal_conservative",
+    "Usul.Refinements.qat_suffices"
+   ],
+   "refs": [
+    {
+     "ref": "src:shamela-9942/v01:p015",
+     "excerpt_ar": "العلم: إدراك الشيء على ما هو عليه إدراكاً جازماً",
+     "note": "Definition of ʿilm (decisive perception)."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p057",
+     "excerpt_ar": "الأصل بقاء ما كان على ما كان، واليقين لا يزول بالشك",
+     "note": "Certainty is not removed by doubt."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v01:p311",
+     "excerpt_ar": "أي استحالة في أن يجعل الله -تعالى- الظن علامة للوجوب، والظن مدرك بالحس، فيكون الوجوب معلوما",
+     "note": "Ẓann a sign of the obligation, which is then known."
+    }
+   ]
+  },
+  {
+   "key": "shakk",
+   "ar": "الشك",
+   "tr": "al-shakk",
+   "gloss": "doubt",
+   "definition": "Perceiving a thing with an equal possibility of its opposite (Ibn ʿUthaymīn).",
+   "conditions": [],
+   "related": [
+    "yaqin",
+    "zann"
+   ],
+   "lean": [
+    "Usul.Grade.shakk",
+    "Usul.Grade.rank",
+    "Usul.Qawaid.yaqin_la_yazul_bish_shakk"
+   ],
+   "refs": [
+    {
+     "ref": "src:shamela-9942/v01:p016",
+     "excerpt_ar": "شك، وهو إدراك الشيء مع احتمال ضدٍّ مساو.",
+     "note": "Definition."
+    }
+   ]
+  },
+  {
+   "key": "zann",
+   "ar": "الظن",
+   "tr": "al-ẓann",
+   "gloss": "presumption, probable belief",
+   "definition": "Perceiving a thing with a weaker possibility of its opposite (Ibn ʿUthaymīn); the weaker side is wahm, equal sides shakk. Ẓann has degrees, the higher called ghalabat al-ẓann (al-Kawkab), and leans on a cause, unlike wahm (al-Rawḍa). Usage: «ʿilm» is said figuratively of presumptive assent («فإن علمتموهن مؤمنات») and «ẓann» of knowledge («الذين يظنون أنهم ملاقو ربهم»), but neither collapses the grades. Whether fiqh, mostly ẓann, is ʿilm is answered several ways: the ruling is known and the ẓann lies on its way (al-Rāzī; al-Ṭūfī finds it contrived and would define fiqh as ẓann); fiqh is maʿrifa covering both (Ibn ʿUthaymīn); Ibn Taymiyya: belief that a view preponderates is ʿilm, the preponderance of one belief over another is ẓann, and fiqh is the former (IQ-21).",
+   "conditions": [],
+   "related": [
+    "ghalabat_al_zann",
+    "ilm",
+    "shakk",
+    "yaqin",
+    "zahir",
+    "zann_bayyin_khatauh"
+   ],
+   "lean": [
+    "Usul.Grade.zann",
+    "Usul.Grade.wahm",
+    "Usul.Grade.rank",
+    "Usul.Grade.IsYaqin",
+    "Usul.Refinements.yaqinForAmal"
+   ],
+   "refs": [
+    {
+     "ref": "src:shamela-9942/v01:p016",
+     "excerpt_ar": "ظن، وهو إدراك الشيء مع احتمال ضد مرجوح.",
+     "note": "Definition."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p152",
+     "excerpt_ar": "ويجب العمل بالظن فيها\" أي في علل الأحكام \"إجماعا",
+     "note": "Acting on ẓann in ʿilal obligatory by consensus."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v01:p074",
+     "excerpt_ar": "ويتفاوت الظن، حتى يقال: غلبة الظن",
+     "note": "Ẓann has degrees; the higher is ghalabat al-ẓann."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p220",
+     "excerpt_ar": "فإن الوهم ميل النفس من غير سبب، والظن: ميلها بسبب",
+     "note": "Wahm inclines without a cause, ẓann with one."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v01:p064",
+     "excerpt_ar": "يعني أن الظن يطلق ويراد به العلم. ومنه قوله تعالى: {الذين يظنون أنهم ملاقو ربهم}",
+     "note": "Ẓann said of knowledge (2:46)."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v01:p064",
+     "excerpt_ar": "وأما التصديق الظني: فإطلاقه عليه2 على سبيل المجاز. ومن أمثلته قوله تعالى: {فإن علمتموهن مؤمنات}",
+     "note": "ʿIlm said figuratively of presumptive assent (60:10)."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v01:p155",
+     "excerpt_ar": "وأجيب عن الأول: بأن الحكم معلوم، والظن في طريقه",
+     "note": "The standard answer: the ruling is known, the ẓann is on its way."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v01:p155",
+     "excerpt_ar": "ولو قيل: ظن جملة من الأحكام الشرعية الفرعية، باستنباطها من أدلة تفصيلية، لحصل المقصود وخف الإشكال",
+     "note": "Al-Ṭūfī's own proposal: define fiqh as ẓann."
+    }
+   ]
+  },
+  {
+   "key": "qarina",
+   "ar": "القرينة",
+   "tr": "al-qarīna",
+   "gloss": "contextual indication",
+   "definition": "An accompanying indication that changes how a text or presumption is taken. The bare command implies obligation unless a qarīna turns it to something else (Ibn al-Laḥḥām, Aḥmad's text). Al-Saʿdī Q52: when qarāʾin are strong they are put before the aṣl. Ibn Rajab: a ẓāhir resting on qarāʾin sometimes prevails over the aṣl and sometimes not; the circumstances (dalālat al-aḥwāl) change the meaning of words.",
+   "conditions": [],
+   "related": [
+    "amr",
+    "zahir",
+    "amara",
+    "asl"
+   ],
+   "lean": [
+    "Usul.Sadi.q52_strong_qarina_prevails",
+    "Usul.Dalala.amrStatus",
+    "Usul.Dalala.amr_defeasible",
+    "Usul.Schema.burden_after_update"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043",
+     "note": "Amr without qarīna implies wujūb."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p102",
+     "excerpt_ar": "إذا قويت القرائن قدمت على الأصل",
+     "note": "Al-Saʿdī Q52."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159",
+     "note": "Ẓāhir based on qarāʾin vs aṣl."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151",
+     "note": "Dalālat al-aḥwāl."
+    }
+   ]
+  },
+  {
+   "key": "amara",
+   "ar": "الأمارة",
+   "tr": "al-amāra",
+   "gloss": "indicator, sign",
+   "definition": "A sign that is not necessarily always accompanied by what it indicates. Ibn ʿUthaymīn defines the waḍʿī rulings as amārāt posited by the Lawgiver; those who admit takhṣīṣ al-ʿilla argue that sharʿī ʿilal are amārāt, which suffice if their ruling is mostly with them (reported by Ibn Qudāma, who answers it). Ibn Rajab allows acting on preponderant belief about time because time has amārāt, unlike completing prayer, purity or ḥadath.",
+   "conditions": [],
+   "related": [
+    "hukm_wadi",
+    "illa",
+    "zahir",
+    "qarina"
+   ],
+   "lean": [
+    "Usul.Refinements.zahirPrevails",
+    "Usul.Refinements.tie_without_amara_keeps_asl"
+   ],
+   "refs": [
+    {
+     "ref": "src:shamela-9942/v01:p013",
+     "excerpt_ar": "الأحكام الوضعية: ما وضعه الشارع من أمارات، لثبوت أو انتفاء، أو نفوذ، أو إلغاء.",
+     "note": "Waḍʿī rulings as amārāt."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p272",
+     "excerpt_ar": "أحدهما: أن علل الشرع أمارات، والأمارة لا توجب وجود حكمها معها أبدا، بل يكفي كونه معها في الأغلب الأكثر.",
+     "note": "ʿIlal as amārāt (argument reported in Rawḍa)."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p341",
+     "excerpt_ar": "والأول أصح ; لأن الوقت عليه أمارات تعرف بها فاكتفي فيها بالظن الغالب، بخلاف ما لا أمارة عليه من إتمام الصلاة والطهارة والحدث ونحوها",
+     "note": "Ibn Rajab: time has amārāt."
+    }
+   ]
+  },
+  {
+   "key": "taarud",
+   "ar": "التعارض",
+   "tr": "al-taʿāruḍ",
+   "gloss": "conflict of proofs",
+   "definition": "Two proofs facing each other so that one contradicts the other (Ibn ʿUthaymīn). Resolution order: reconcile (jamʿ) if possible, else abrogation if its conditions are met, else preference (tarjīḥ); where none applies, suspension (tawaqquf). Ibn ʿUthaymīn holds such an unresolvable conflict cannot exist in the texts themselves, only in the mujtahid's view.",
+   "conditions": [
+    "jamʿ",
+    "then naskh",
+    "then tarjīḥ",
+    "then tawaqquf"
+   ],
+   "related": [
+    "jam",
+    "naskh",
+    "tarjih",
+    "tawaqquf"
+   ],
+   "lean": [
+    "Usul.Conflict",
+    "Usul.Resolution",
+    "Usul.resolve",
+    "Usul.resolve_jam_first",
+    "Usul.resolve_naskh_before_tarjih",
+    "Usul.resolve_tawaqquf_iff",
+    "Usul.Schema.taarud_is_priority"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h024",
+     "note": "Definition."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p082",
+     "excerpt_ar": "وإن تعارضت، وأمكن الجمع وجب الجمع، وإن لم يمكن الجمع عمل بالنسخ إن تمت شروطه.",
+     "note": "Order: jamʿ, then naskh."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p082",
+     "excerpt_ar": "وإن لم يمكن النسخ وجب الترجيح.",
+     "note": "Then tarjīḥ."
+    }
+   ]
+  },
+  {
+   "key": "jam",
+   "ar": "الجمع",
+   "tr": "al-jamʿ",
+   "gloss": "reconciliation",
+   "definition": "Reconciling two conflicting proofs so each is acted on; it comes first, and abrogation requires that reconciliation be impossible (Ibn ʿUthaymīn).",
+   "conditions": [],
+   "related": [
+    "taarud",
+    "naskh"
+   ],
+   "lean": [
+    "Usul.Resolution.jam",
+    "Usul.resolve_jam_first"
+   ],
+   "refs": [
+    {
+     "ref": "src:shamela-9942/v01:p082",
+     "excerpt_ar": "وإن تعارضت، وأمكن الجمع وجب الجمع، وإن لم يمكن الجمع عمل بالنسخ إن تمت شروطه.",
+     "note": "Jamʿ is obligatory if possible."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p053",
+     "excerpt_ar": "تعذر الجمع بين الدليلين، فإن أمكن الجمع فلا نسخ لإمكان العمل بكل منهما.",
+     "note": "Naskh conditional on impossibility of jamʿ."
+    }
+   ]
+  },
+  {
+   "key": "naskh",
+   "ar": "النسخ",
+   "tr": "al-naskh",
+   "gloss": "abrogation",
+   "definition": "Lifting the ruling of a sharʿī proof, or its wording, by a proof from the Book and Sunna. Conditions include that reconciliation be impossible and the later date of the abrogating text be known.",
+   "conditions": [
+    "jamʿ impossible",
+    "the abrogating proof known to be later"
+   ],
+   "related": [
+    "taarud",
+    "jam",
+    "takhsis"
+   ],
+   "lean": [
+    "Usul.Resolution.naskh",
+    "Usul.resolve_naskh_before_tarjih",
+    "Usul.Dalala.takhsis_not_naskh"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h021",
+     "note": "Definition."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p053",
+     "excerpt_ar": "تعذر الجمع بين الدليلين، فإن أمكن الجمع فلا نسخ لإمكان العمل بكل منهما.",
+     "note": "First condition of naskh."
+    }
+   ]
+  },
+  {
+   "key": "tarjih",
+   "ar": "الترجيح",
+   "tr": "al-tarjīḥ",
+   "gloss": "preference",
+   "definition": "When neither reconciliation nor abrogation is possible, preference is obligatory (Ibn ʿUthaymīn: text over ẓāhir, ẓāhir over muʾawwal, manṭūq over mafhūm, the jalī qiyās over the khafī). Among ʿilal, Ibn Qudāma says an ʿilla is preferred by what a report is preferred by; al-Kawkab ranks sabr over munāsaba over shabah.",
+   "conditions": [],
+   "related": [
+    "taarud",
+    "tawaqquf",
+    "masalik_al_illa"
+   ],
+   "lean": [
+    "Usul.Resolution.tarjih",
+    "Usul.Dalala.Prefers",
+    "Usul.Dalala.prefers_wf",
+    "Usul.Jadal.preferred",
+    "Usul.Jadal.preferred_optimal",
+    "Usul.Jadal.RespectsSources",
+    "Usul.Jadal.sabr_beats_shabah"
+   ],
+   "refs": [
+    {
+     "ref": "src:shamela-9942/v01:p082",
+     "excerpt_ar": "وإن لم يمكن النسخ وجب الترجيح.",
+     "note": "Ibn ʿUthaymīn."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p397",
+     "excerpt_ar": "قال أصحابنا: ترجح العلة بما يرج به الخبر",
+     "note": "Ibn Qudāma: ʿilla preferred as reports are."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p718",
+     "excerpt_ar": "و\" يرجح أحد القياسين ب \"سبر، فمناسبة",
+     "note": "Al-Kawkab: sabr > munāsaba > shabah."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p082",
+     "excerpt_ar": "ويقدم من القياس: الجلي على الخفي",
+     "note": "Jalī over khafī."
+    }
+   ]
+  },
+  {
+   "key": "tawaqquf",
+   "ar": "التوقف",
+   "tr": "al-tawaqquf",
+   "gloss": "suspension of judgement",
+   "definition": "Ibn ʿUthaymīn: where two general texts conflict and nothing specifies one by the other, each is acted on where they do not conflict and judgement is suspended where they do. Ibn Rajab reports that Aḥmad suspended judgement on the two-men 'raven' divorce case. Ibn Taymiyya extends it to the single jurist: «وحيث لا يعلم الرجحان فهو متوقف لا قول له». Adopted in the kernel (IQ-21, human review): a ẓann of unknown preponderance is suspended in Qawaid.update, inert as a challenger and counted as shakk as the incumbent.",
+   "conditions": [],
+   "related": [
+    "ihtiyat",
+    "ilm",
+    "taarud",
+    "tarjih",
+    "zann"
+   ],
+   "lean": [
+    "Usul.Resolution.tawaqquf",
+    "Usul.resolve_tawaqquf_iff",
+    "Usul.Process.open_iff",
+    "Usul.Qawaid.Held.Suspended",
+    "Usul.Qawaid.suspended_inert",
+    "Usul.Qawaid.suspended_yields",
+    "Usul.Qawaid.update_conservative"
+   ],
+   "refs": [
+    {
+     "ref": "src:shamela-9942/v01:p080",
+     "excerpt_ar": "وجب العمل بكل منهما فيما لا يتعارضان فيه، والتوقف في الصورة التي يتعارضان فيها.",
+     "note": "Ibn ʿUthaymīn."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p019",
+     "excerpt_ar": "ولنا وجه آخر بوجوب اعتزال كل منهما زوجته حتى يتيقن الأمر ونص عليه أحمد رحمه الله في رواية عبد الله ونقل حرب عن أحمد رحمه الله أنه ذكر هذه المسألة فتوقف فيها",
+     "note": "Ibn Rajab q14: Aḥmad's tawaqquf (and the iʿtizāl wajh)."
+    },
+    {
+     "ref": "src:openiti-majmufatawa-shamela7289/v13:p120",
+     "excerpt_ar": "وحيث لا يعلم الرجحان فهو متوقف لا قول له",
+     "note": "Ibn Taymiyya: no known preponderance, no view."
+    }
+   ]
+  },
+  {
+   "key": "amm",
+   "ar": "العام",
+   "tr": "al-ʿāmm",
+   "gloss": "general term",
+   "definition": "A term encompassing all its individuals without limit. Al-Saʿdī Q59–60: an indefinite after negation, prohibition or condition, the particles man, mā, ayy, matā, generic al- and the annexed singular are general. Ibn al-Laḥḥām: the singular with al- is general unless there is a qarīna of ʿahd. The generality of the wording, not the specific occasion, counts (Ibn ʿUthaymīn; Ibn al-Laḥḥām q61, with a second view reported).",
+   "conditions": [],
+   "related": [
+    "khass",
+    "takhsis",
+    "ahd",
+    "mutlaq"
+   ],
+   "lean": [
+    "Usul.Sadi.IsGeneral",
+    "Usul.Sadi.NounForm",
+    "Usul.Sadi.q59_nakira_general_in_negation",
+    "Usul.Sadi.q60_markers_general",
+    "Usul.Dalala.IsGeneralIn",
+    "Usul.Dalala.coversBeyondSabab"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h011",
+     "note": "Definition."
+    },
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052",
+     "note": "Singular with al- general absent ʿahd."
+    },
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061",
+     "note": "ʿUmūm al-lafẓ vs khuṣūṣ al-sabab (two views)."
+    }
+   ]
+  },
+  {
+   "key": "khass",
+   "ar": "الخاص",
+   "tr": "al-khāṣṣ",
+   "gloss": "specific term",
+   "definition": "A term indicating something limited to a person or number, such as proper names, demonstratives and numbers.",
+   "conditions": [],
+   "related": [
+    "amm",
+    "takhsis"
+   ],
+   "lean": [
+    "Usul.Dalala.Takhsis",
+    "Usul.Dalala.Takhsis.specific"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h012",
+     "note": "Definition."
+    }
+   ]
+  },
+  {
+   "key": "takhsis",
+   "ar": "التخصيص",
+   "tr": "al-takhṣīṣ",
+   "gloss": "specification",
+   "definition": "Taking some individuals out of the general term. Its proof is connected (e.g. istithnāʾ: removing some individuals by illā or its sisters) or separate. Ibn Rajab: custom and usage specify the general (ʿurf).",
+   "conditions": [],
+   "related": [
+    "amm",
+    "khass",
+    "naskh",
+    "urf"
+   ],
+   "lean": [
+    "Usul.Dalala.Takhsis",
+    "Usul.Dalala.Takhsis.ruling",
+    "Usul.Dalala.takhsis_specific_governs",
+    "Usul.Dalala.takhsis_not_naskh"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h013",
+     "note": "Definition."
+    },
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h014",
+     "note": "Record mislabelled 'fa-min al-mukhaṣṣiṣ al-muttaṣil': it is the definition of al-istithnāʾ, a connected specifier."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121",
+     "note": "Takhṣīṣ by custom."
+    }
+   ]
+  },
+  {
+   "key": "ahd",
+   "ar": "العهد",
+   "tr": "al-ʿahd",
+   "gloss": "known referent",
+   "definition": "A qarīna that al- refers to a known referent; then the singular with al- is not general but turns to the referent (Ibn al-Laḥḥām q52).",
+   "conditions": [],
+   "related": [
+    "amm",
+    "qarina"
+   ],
+   "lean": [
+    "Usul.Dalala.IsGeneralIn",
+    "Usul.Dalala.ahd_blocks",
+    "Usul.Dalala.isGeneralIn_no_ahd",
+    "Usul.Dalala.isGeneralIn_is_gate"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052",
+     "note": "Generality unless a qarīna of ʿahd."
+    }
+   ]
+  },
+  {
+   "key": "mutlaq",
+   "ar": "المطلق",
+   "tr": "al-muṭlaq",
+   "gloss": "unrestricted",
+   "definition": "Ibn ʿUthaymīn: what indicates the reality without restriction ('freeing a slave'). Ibn al-Laḥḥām: what applies to one unspecified individual by a reality common to its genus. When muṭlaq and muqayyad differ in ruling one is not carried on the other (no dispute reported).",
+   "conditions": [],
+   "related": [
+    "muqayyad",
+    "amm"
+   ],
+   "lean": [
+    "Usul.Dalala.carryRestriction",
+    "Usul.Dalala.no_carry_different_hukm",
+    "Usul.Dalala.carry_same_hukm_same_sabab",
+    "Usul.Sadi.q59_nakira_absolute_in_affirmation"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h015",
+     "note": "Ibn ʿUthaymīn's definition."
+    },
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q064",
+     "note": "Ibn al-Laḥḥām's definition and the carrying rule."
+    }
+   ]
+  },
+  {
+   "key": "muqayyad",
+   "ar": "المقيد",
+   "tr": "al-muqayyad",
+   "gloss": "restricted",
+   "definition": "Ibn ʿUthaymīn: what indicates the reality with a restriction ('a believing slave'). Ibn al-Laḥḥām: what applies to a specified individual or one described by something added to its genus. Al-Saʿdī Q29: an utterance must be restricted by its attachments (description, condition, exception).",
+   "conditions": [],
+   "related": [
+    "mutlaq"
+   ],
+   "lean": [
+    "Usul.Dalala.carryRestriction",
+    "Usul.Dalala.carry_narrows",
+    "Usul.Kulliyyat.Utterance",
+    "Usul.Kulliyyat.q29_qualifiers_narrow"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.usul.shamela_9942.h016",
+     "note": "Ibn ʿUthaymīn's definition."
+    },
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q064",
+     "note": "Ibn al-Laḥḥām's definition."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p080",
+     "excerpt_ar": "يجب تقييد اللفظ بملحقاته من وصف؛»؛ أو شرط,؛ أو استثناء؛ أو غيرها",
+     "note": "Al-Saʿdī Q29."
+    }
+   ]
+  },
+  {
+   "key": "mafhum_al_mukhalafa",
+   "ar": "مفهوم المخالفة",
+   "tr": "mafhūm al-mukhālafa",
+   "gloss": "contrary implication",
+   "definition": "Dalīl al-khiṭāb: inferring from the singling out of something by mention that the ruling is negated for what lies outside it (the 'grazing' sheep). A proof for Aḥmad, al-Shāfiʿī, Mālik and most theologians; Abū Ḥanīfa and some theologians deny it. Al-Kawkab: it is not taken when the qualifier follows the usual case (khuruj makhraj al-ghālib).",
+   "conditions": [
+    "not where the unmentioned is more or equally entitled (then mafhūm al-muwāfaqa)",
+    "not where the qualifier follows the usual case"
+   ],
+   "related": [
+    "amr",
+    "mutlaq"
+   ],
+   "lean": [
+    "Usul.Dalala.mafhum",
+    "Usul.Dalala.Blocker",
+    "Usul.Dalala.mafhum_contrary",
+    "Usul.Dalala.mafhum_blocked"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p114",
+     "excerpt_ar": "الضرب الرابع: دليل الخطاب: ومعناه: الاستدلال بتخصيص الشيء بالذكر على نفي الحكم عما عداه. ويسمى مفهوم المخالفة",
+     "note": "Ibn Qudāma's definition."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p115",
+     "excerpt_ar": "وهذا حجة في قول إمامنا، والشافعي، ومالك، وأكثر المتكلمين. وقالت طائفة منهم، وأبو حنيفة: لا دلالة له",
+     "note": "Ḥujja for the three imams; denied by Abū Ḥanīfa."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v03:p490",
+     "excerpt_ar": "\"ولا خرج مخرج الغالب\" فأما إن خرج مخرج الغالب فلا يعتبر مفهومه",
+     "note": "Blocker: makhraj al-ghālib."
+    },
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q065",
+     "note": "The two kinds of mafhūm."
+    }
+   ]
+  },
+  {
+   "key": "amr",
+   "ar": "الأمر",
+   "tr": "al-amr",
+   "gloss": "command",
+   "definition": "Speech containing a demand for action by way of superiority (Ibn ʿUthaymīn). Unqualified, it implies obligation unless a qarīna turns it elsewhere (Ibn al-Laḥḥām: Aḥmad's text). Commanding a thing is prohibiting its opposites in meaning, not wording (Ibn al-Laḥḥām q48).",
+   "conditions": [],
+   "related": [
+    "nahy",
+    "wajib",
+    "qarina"
+   ],
+   "lean": [
+    "Usul.Dalala.amrStatus",
+    "Usul.Dalala.amr_default",
+    "Usul.Dalala.amr_defeasible",
+    "Usul.Hukm.amr_nahy_didd",
+    "Usul.Dalala.RespectsDidd",
+    "Usul.Dalala.amr_nahy_didd_of"
+   ],
+   "refs": [
+    {
+     "ref": "src:shamela-9942/v01:p023",
+     "excerpt_ar": "الأمر: قول يتضمن طلب الفعل على وجه الاستعلاء",
+     "note": "Definition."
+    },
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043",
+     "note": "Amr for wujūb absent qarīna."
+    },
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q048",
+     "note": "Al-amr bi'l-shayʾ nahy ʿan aḍdādih."
+    }
+   ]
+  },
+  {
+   "key": "nahy",
+   "ar": "النهي",
+   "tr": "al-nahy",
+   "gloss": "prohibition",
+   "definition": "Speech containing a demand to refrain by way of superiority, in the form lā tafʿal (Ibn ʿUthaymīn). Unqualified it requires prohibition (Ibn al-Laḥḥām) and, per Ibn ʿUthaymīn, also the invalidity of what is prohibited; whether a prohibition voids worship depends on whether it returns to the act, its condition or something external (Ibn Rajab q9, al-Saʿdī Q38).",
+   "conditions": [],
+   "related": [
+    "amr",
+    "haram",
+    "fasid"
+   ],
+   "lean": [
+    "Usul.Dalala.nahyStatus",
+    "Usul.Dalala.nahy_default_is_sigma",
+    "Usul.Dalala.nahy_amr_didd_of",
+    "Usul.Sadi.validDespiteProhibition",
+    "Usul.Sadi.ProhibitionTarget"
+   ],
+   "refs": [
+    {
+     "ref": "src:shamela-9942/v01:p028",
+     "excerpt_ar": "النهي: قول يتضمن طلب الكف على وجه الاستعلاء بصيغة مخصوصة هي المضارع المقرون بلا الناهية",
+     "note": "Definition."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p029",
+     "excerpt_ar": "صيغة النهي عند الإطلاق تقتضي تحريم المنهي عنه وفساده.",
+     "note": "Implies taḥrīm and fasād."
+    },
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q051",
+     "note": "Nahy unqualified for taḥrīm."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009",
+     "note": "When the prohibition voids worship."
+    }
+   ]
+  },
+  {
+   "key": "daman",
+   "ar": "الضمان",
+   "tr": "al-ḍamān",
+   "gloss": "liability",
+   "definition": "Ibn Rajab: the causes of liability are three: contract, hand (possession) and destruction (itlāf). A contract whose valid form entails liability entails it when invalid too. Al-Saʿdī Q14: loss in a trustee's hand is not compensable without transgression or negligence, in a wrongdoer's hand it is; Q18: fungibles are compensated in kind, others by value.",
+   "conditions": [
+    "a cause: ʿaqd, yad or itlāf"
+   ],
+   "related": [
+    "itlaf",
+    "amana",
+    "fasid"
+   ],
+   "lean": [
+    "Usul.Muamalat.lossLiable",
+    "Usul.Muamalat.itlafLiable",
+    "Usul.Muamalat.q14_liable_iff_unauthorized",
+    "Usul.Muamalat.compensation",
+    "Usul.Muamalat.compensationOwed"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q089",
+     "note": "Three causes of ḍamān."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047",
+     "note": "Liability under fāsid contracts."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p061",
+     "excerpt_ar": "التلف في يد الأمين غير مضمون إذا لم يتعد؛ أو يفرط؛",
+     "note": "Al-Saʿdī Q14."
+    }
+   ]
+  },
+  {
+   "key": "amana",
+   "ar": "الأمانة (المحضة والمتضمنة)",
+   "tr": "al-amāna (al-maḥḍa wa'l-mutaḍammina)",
+   "gloss": "trust",
+   "definition": "Al-Saʿdī: the trustee (amīn) holds another's property with the owner's or the law's consent; loss with him is not compensable unless he transgresses or is negligent. Ibn Rajab: the very meaning of amāna is absence of liability, so a trustee's word on loss is accepted; a pure trust (maḥḍa), held only for the owner's benefit like a deposit, is voided by transgression, while a trust that includes another matter (mutaḍammina) is not, on the sound view. Al-Saʿdī Q43: one who took the thing for his own benefit is not believed on its return; for the owner's benefit he is. Lean encodes Q43's distinction, not Ibn Rajab's voiding rule.",
+   "conditions": [
+    "held with the owner's or the law's permission",
+    "no transgression or negligence"
+   ],
+   "related": [
+    "daman",
+    "itlaf"
+   ],
+   "lean": [
+    "Usul.Muamalat.Hand",
+    "Usul.Muamalat.Hand.trustee",
+    "Usul.Muamalat.authorizedHold",
+    "Usul.Muamalat.HeldFor",
+    "Usul.Muamalat.returnClaimAccepted",
+    "Usul.Muamalat.returnPresumption",
+    "Usul.Muamalat.q26_q43_from_presumption"
+   ],
+   "refs": [
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p061",
+     "excerpt_ar": "الأمين: هو الذي في يده مال غيره برضى المالك، أو برضى",
+     "note": "Al-Saʿdī's definition of al-amīn."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q044",
+     "note": "Amāna means no liability; trustee believed on loss."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045",
+     "note": "Maḥḍa voided by taʿaddī; mutaḍammina not."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p059",
+     "excerpt_ar": "ما أخذه لمصلحة مالكه خاصة كالمودع فهو أمين محض",
+     "note": "Ibn Rajab: what he took solely for the owner's benefit (the depositee) is a pure trustee."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p095",
+     "excerpt_ar": "من قبض العين لحظ نفسه لم يقبل قوله في الرد، فإن قبضه لحظ مالكه قبل",
+     "note": "Al-Saʿdī Q43."
+    }
+   ]
+  },
+  {
+   "key": "itlaf",
+   "ar": "الإتلاف",
+   "tr": "al-itlāf",
+   "gloss": "destruction",
+   "definition": "Directly destroying by an act that requires it, or wrongfully setting up a cause that leads to destruction (Ibn Rajab). Al-Saʿdī Q13: the deliberate, the ignorant and the forgetful are equal in it. Destroying a thing to repel its harm is not compensable; destroying it to benefit from it is (Ibn Rajab q26, al-Saʿdī Q36).",
+   "conditions": [],
+   "related": [
+    "daman"
+   ],
+   "lean": [
+    "Usul.Muamalat.itlafLiable",
+    "Usul.Muamalat.withRight",
+    "Usul.Muamalat.q13_intent_irrelevant",
+    "Usul.Muamalat.q36_benefit_liable",
+    "Usul.Muamalat.q36_repel_not_liable",
+    "Usul.Muamalat.q13_q36_consistent"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q089",
+     "note": "Itlāf as a cause of ḍamān."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p060",
+     "excerpt_ar": "الإتلاف يستوي فيه المتعمد»؛ والجاهل؛ والناسي",
+     "note": "Al-Saʿdī Q13."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026",
+     "note": "Destroying to repel harm vs to benefit."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p088",
+     "excerpt_ar": "من أتلف شيئا لينتفع به ضمنه؛ ومن أتلفه دفعاً لمضرته فلا ضمان عليه",
+     "note": "Al-Saʿdī Q36."
+    }
+   ]
+  },
+  {
+   "key": "qurah",
+   "ar": "القرعة",
+   "tr": "al-qurʿa",
+   "gloss": "lot-casting",
+   "definition": "Al-Saʿdī Q25: lots are prescribed when the entitled is unknown and division impossible. Ibn Rajab q160 uses lots to distinguish the entitled when an entitlement belongs to an unspecified one among equals, and also to distinguish a specific entitled person from those he is confused with, in property and (per the madhhab) marriages, but not for lineage. The sources differ on whether divisibility excludes lots in the second case.",
+   "conditions": [],
+   "related": [
+    "tawaqquf"
+   ],
+   "lean": [
+    "Usul.Muamalat.lotPrescribed",
+    "Usul.Muamalat.allocation",
+    "Usul.Muamalat.q25_lot_is_last_resort",
+    "Usul.Refinements.allocationFull",
+    "Usul.Refinements.confused_goes_to_lot"
+   ],
+   "refs": [
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p076",
+     "excerpt_ar": "تشرع القرعة إذا جهل المستحق, وتعذرت القسمة",
+     "note": "Al-Saʿdī Q25."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160",
+     "note": "Ibn Rajab's two uses of qurʿa."
+    }
+   ]
+  },
+  {
+   "key": "tadakhul",
+   "ar": "التداخل",
+   "tr": "al-tadākhul",
+   "gloss": "merging",
+   "definition": "When two acts of worship of one kind meet, their acts merge and one performance suffices. Ibn Rajab requires that they fall at one time and that neither be qaḍāʾ or follow the other; al-Saʿdī Q41 requires that their purpose be one.",
+   "conditions": [
+    "same genus",
+    "Ibn Rajab: same time, neither qaḍāʾ nor tabaʿ",
+    "al-Saʿdī: same purpose"
+   ],
+   "related": [
+    "tabaiyya"
+   ],
+   "lean": [
+    "Usul.Kulliyyat.discharges",
+    "Usul.Kulliyyat.Merges",
+    "Usul.Kulliyyat.q41_one_performance",
+    "Usul.Kulliyyat.q41_representatives",
+    "Usul.Schema.Covers",
+    "Usul.Schema.reps"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018",
+     "note": "Ibn Rajab q18."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p093",
+     "excerpt_ar": "إذا اجتمعت عبادتان من جنس واحد تداخلت أفعالهماء واكتفي عنهما بفعل واحد إذا كان مقصودهما واحدا",
+     "note": "Al-Saʿdī Q41."
+    }
+   ]
+  },
+  {
+   "key": "tabaiyya",
+   "ar": "التبعية",
+   "tr": "al-tabaʿiyya",
+   "gloss": "dependency",
+   "definition": "What is not established independently may be established as a dependent: e.g. women's testimony to birth establishes lineage, though their testimony to lineage alone does not (Ibn Rajab q133; al-Saʿdī Q50).",
+   "conditions": [],
+   "related": [
+    "tadakhul"
+   ],
+   "lean": [
+    "Usul.Kulliyyat.established",
+    "Usul.Kulliyyat.Established",
+    "Usul.Kulliyyat.q50_dependent_suffices",
+    "Usul.Kulliyyat.q50_least"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133",
+     "note": "Ibn Rajab q133."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p100",
+     "excerpt_ar": "يثبت تبعاً ما لا يثبت استقلالاً",
+     "note": "Al-Saʿdī Q50."
+    }
+   ]
+  },
+  {
+   "key": "urf",
+   "ar": "العرف",
+   "tr": "al-ʿurf",
+   "gloss": "custom",
+   "definition": "Al-Saʿdī Q9: custom is referred to in every ruling the Lawgiver laid down without defining its measure (receipt, safekeeping, negligence). Ibn Rajab: custom specifies general terms, without dispute where usage has made a customary reality, and usage specifies on the text. Ibn ʿUthaymīn: the customary reality is a term used for what it was set for in custom.",
+   "conditions": [],
+   "related": [
+    "takhsis",
+    "qarina"
+   ],
+   "lean": [
+    "Usul.Kulliyyat.measure",
+    "Usul.Kulliyyat.q09_custom_decides",
+    "Usul.Kulliyyat.q09_law_prevails",
+    "Usul.Kulliyyat.continuous",
+    "Usul.Muamalat.wordAccepted"
+   ],
+   "refs": [
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p052",
+     "excerpt_ar": "العرف والعادة يرجع إليه في كل حكم حكم به الشارع؛ ولم يحده بحد",
+     "note": "Al-Saʿdī Q9."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121",
+     "note": "Takhṣīṣ by ʿurf."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122",
+     "note": "Takhṣīṣ by ʿāda."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p020",
+     "excerpt_ar": "والحقيقة العرفية هي: اللفظ المستعمل فيما وضع له في العرف.",
+     "note": "Ibn ʿUthaymīn: ḥaqīqa ʿurfiyya."
+    }
+   ]
+  },
+  {
+   "key": "ihtiyat",
+   "ar": "الاحتياط / الاعتزال",
+   "tr": "al-iḥtiyāṭ / al-iʿtizāl",
+   "gloss": "precaution; abstention",
+   "definition": "Abstaining from one's wife when a divorce may have taken effect. Ibn Rajab reports Aḥmad's text that two men whose oaths make one wife divorced abstain until certain, and Ibn Taymiyya's reading of Aḥmad: whenever divorce is tied to a condition that may have occurred, the husband abstains until he knows it has not. Al-Saʿdī instead says that on doubt whether the condition occurred one builds on its non-occurrence (the marriage stands), precaution being commendable. Not formalised in the Lean modules.",
+   "conditions": [],
+   "related": [
+    "yaqin",
+    "shakk",
+    "asl",
+    "tawaqquf"
+   ],
+   "lean": [],
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p357",
+     "excerpt_ar": "قال الشيخ تقي الدين تأملت نصوص أحمد فوجدته يأمر باعتزال الرجل امرأته في كل يمين حلف الرجل عليها بالطلاق وهو لا يدري أهو بار فيها أم لا؟ حتى يستيقن أنه بار",
+     "note": "Ibn Taymiyya on Aḥmad's texts (in Ibn Rajab q160)."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p357",
+     "excerpt_ar": "وحاصله أنه متى علق الطلاق بشرط وأمكن وجوده فإنه يعتزل امرأته حتى يعلم انتفاؤه.",
+     "note": "Summary: abstain until the condition is known not to have occurred."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p019",
+     "excerpt_ar": "ولنا وجه آخر بوجوب اعتزال كل منهما زوجته حتى يتيقن الأمر ونص عليه أحمد رحمه الله في رواية عبد الله ونقل حرب عن أحمد رحمه الله أنه ذكر هذه المسألة فتوقف فيها",
+     "note": "Ibn Rajab q14: the iʿtizāl wajh and Aḥmad's tawaqquf."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p150",
+     "excerpt_ar": "وعلى عدم وجود الشرط الذي علق عليه إذا شك في وجوده",
+     "note": "Al-Saʿdī: on doubt, build on the condition not having occurred."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p150",
+     "excerpt_ar": "ولو سلك العبد طريق الاحتياط كان حسناً.",
+     "note": "Al-Saʿdī: taking the path of precaution is good."
+    }
+   ]
+  },
+  {
+   "key": "majhul",
+   "ar": "المجهول",
+   "tr": "al-majhūl",
+   "gloss": "the unknown",
+   "definition": "Ibn Rajab q106: the unknown is treated as non-existent, even if the presumption is its continuance, when knowledge of it is despaired of or its consideration is burdensome. Al-Saʿdī Q20: when the right-holder cannot be identified he is treated as non-existent and the property goes to the most beneficial use.",
+   "conditions": [
+    "knowledge despaired of or too burdensome"
+   ],
+   "related": [
+    "asl",
+    "qurah"
+   ],
+   "lean": [
+    "Usul.Muamalat.recipient",
+    "Usul.Muamalat.q20_unknown_owner",
+    "Usul.Muamalat.q20_is_priority"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106",
+     "note": "Ibn Rajab q106."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p070",
+     "excerpt_ar": "إذا تعذر معرفة من له الحق جُعل كالمعدوم",
+     "note": "Al-Saʿdī Q20."
+    }
+   ]
+  },
+  {
+   "key": "ilm",
+   "ar": "العلم",
+   "tr": "al-ʿilm",
+   "gloss": "knowledge",
+   "definition": "Perceiving a thing as it is, decisively (Ibn ʿUthaymīn); opposed to simple and compound ignorance and distinguished from ẓann, wahm and shakk. Al-Kawkab lists four uses: literal (what admits no contrary), bare perception, assent decisive or (figuratively) presumptive, and acquaintance. Ibn Taymiyya: what God commands is followed by ʿilm, since the jurist knows which proof preponderates; most fiqh people need is established by text or consensus.",
+   "conditions": [],
+   "related": [
+    "yaqin",
+    "zann",
+    "ghalabat_al_zann"
+   ],
+   "lean": [
+    "Usul.Grade.qat",
+    "Usul.Refinements.yaqinForAmal",
+    "Usul.Refinements.unknown_rujhan_suspends"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-majmufatawa-shamela7289/v13:p117",
+     "excerpt_ar": "فرق بين اعتقاد الرجحان ورجحان الاعتقاد أما اعتقاد الرجحان فهو علم والمجتهد ما عمل إلا بذلك العلم وهو اعتقاد رجحان هذا على هذا وأما رجحان هذا الاعتقاد على هذا الاعتقاد فهو الظن",
+     "note": "Ibn Taymiyya: belief in preponderance is ʿilm; preponderance of a belief is ẓann."
+    },
+    {
+     "ref": "src:openiti-majmufatawa-shamela7289/v13:p119",
+     "excerpt_ar": "فالفقه هو علمه برجحان هذا الدليل وهذا الظن",
+     "note": "Fiqh is the jurist's knowledge that this proof and this ẓann preponderate."
+    },
+    {
+     "ref": "src:openiti-majmufatawa-shamela7289/v13:p120",
+     "excerpt_ar": "وحيث لا يعلم الرجحان فهو متوقف لا قول له",
+     "note": "Where preponderance is not known: suspension, no view."
+    },
+    {
+     "ref": "src:openiti-majmufatawa-shamela7289/v13:p118",
+     "excerpt_ar": "جمهور مسائل الفقه التي يحتاج إليها الناس ويفتون بها هي ثابتة بالنص أو الإجماع",
+     "note": "Most fiqh people need is established by text or consensus."
+    }
+   ]
+  },
+  {
+   "key": "ghalabat_al_zann",
+   "ar": "غلبة الظن",
+   "tr": "ghalabat al-ẓann",
+   "gloss": "preponderant belief (also al-ẓann al-ghālib, ghālib al-ẓann; the verb: ghalaba ʿalā ẓannih)",
+   "definition": "The higher degree of ẓann. Ibn ʿUthaymīn, bayt 90: «وإن تعذر اليقين فارجعا لغالب الظن تكن متبعا», i.e. «إذا تعذر اليقين رجعنا إلى غلبة الظن»; with no preponderant belief one returns to the aṣl. It suffices to perform worship or a contract (Ibn Rajab 68) and is put before the aṣl where strong indications support it (al-Saʿdī Q52), but not against an aṣl that certainty can still reach, nor where Aḥmad's naṣṣ requires certainty (dawn in Ramaḍān, Ibn Rajab 159). Al-Saʿdī: management (taṣarruf) rests on it, rulings have fixed routes.",
+   "conditions": [
+    "certainty is unattainable",
+    "the belief rests on a cause (amāra), not mere inclination",
+    "no aṣl that certainty can reach is displaced by it",
+    "its error has not become evident"
+   ],
+   "related": [
+    "zann",
+    "yaqin",
+    "asl",
+    "amara",
+    "zann_bayyin_khatauh"
+   ],
+   "lean": [
+    "Usul.Refinements.basis",
+    "Usul.Refinements.basis_is_first",
+    "Usul.Refinements.attainable_yaqin_excludes_ghalaba",
+    "Usul.Refinements.zahirPrevails"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.manzuma.archive_manzuma_tess.q090",
+     "note": "Bayt 90 of Ibn ʿUthaymīn's manẓūma."
+    },
+    {
+     "ref": "ibn_uthaymin.manzuma.archive_manzuma_tess.q090.sharh",
+     "note": "His commentary: the rule, its proofs (64:16, 2:185, Ibn Masʿūd's ḥadīth «فليتحر الصواب»), and its limits."
+    },
+    {
+     "ref": "src:archive-manzuma-tess/v01:p341",
+     "excerpt_ar": "وإن لم يكن غلبة ظن رجعنا إلى الأصل، وهو البناء على اليقين",
+     "note": "With no preponderant belief, back to the aṣl."
+    },
+    {
+     "ref": "src:archive-tariq-tess/v01:p107",
+     "excerpt_ar": "عمدة التصرف على غلبة الظن، بخلاف الأحكام، فإن طرقها مضبوطة",
+     "note": "Al-Saʿdī: management rests on preponderant belief; rulings have fixed routes."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p102",
+     "excerpt_ar": "منها: تقديم غلبة الظن في المواضع التي يقدم فيها على  الأصل",
+     "note": "Al-Saʿdī Q52: preponderant belief put before the aṣl in its places."
+    }
+   ]
+  },
+  {
+   "key": "zann_bayyin_khatauh",
+   "ar": "الظن البين خطؤه",
+   "tr": "al-ẓann al-bayyin khaṭaʾuh",
+   "gloss": "a belief whose error has become evident",
+   "definition": "«لا عبرة بالظن البين خطؤه»: no regard is paid to a belief once its error is evident (al-Mardāwī, al-Taḥbīr; al-Kawkab: «ولا يلتفت إلى ظنه الذي بان خطؤه»). Ibn ʿUthaymīn: one who ended the prayer on a preponderant belief of four, then learned it was three, cannot plead that worship suffices with preponderant belief, «لأنه تبين الخطأ». The limit is «الاجتهاد لا ينقض بالاجتهاد»: the error must be shown by what is decisive (a mufti is liable when «بان خطؤه بدليل قاطع»), not by a second ijtihād. Some domains keep the act even after a certain error: qibla, «سواء كان خطؤه يقينا أو عن اجتهاد», and zakāt given to one believed poor.",
+   "conditions": [
+    "the error is shown by what is decisive (qaṭʿ), not by another ijtihād",
+    "the domain is not one where the act stands regardless (qibla, zakāt)"
+   ],
+   "related": [
+    "ghalabat_al_zann",
+    "zann",
+    "yaqin"
+   ],
+   "lean": [
+    "Usul.Refinements.zannSetAside",
+    "Usul.Refinements.ijtihad_not_overturned_by_ijtihad",
+    "Usul.Refinements.evident_error_sets_aside"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-tahbir-shamela6336/v02:p917",
+     "excerpt_ar": "لبقاء الوقت، ولا عبرة بالظن البين خطؤه",
+     "note": "Al-Mardāwī: the formula."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v01:p373",
+     "excerpt_ar": "ولا يلتفت إلى ظنه الذي بان خطؤه",
+     "note": "Al-Kawkab: the same, of a belief that time would run out."
+    },
+    {
+     "ref": "src:archive-manzuma-tess/v01:p171",
+     "excerpt_ar": "الجواب: لا، لأنه تبين الخطاء، فيجب عليه أن يكمل أربعا",
+     "note": "Ibn ʿUthaymīn: an evident error undoes reliance on preponderant belief."
+    },
+    {
+     "ref": "src:openiti-musawwada-shamela11814/v01:p522",
+     "excerpt_ar": "فإن عمل بفتياه في إتلاف فبان خطؤه بدليل قاطع ضمنه",
+     "note": "Error shown by a decisive proof."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p495",
+     "excerpt_ar": "كمن صلى صلاتين باجتهادين إلى جهتين في وقتين، ولم يتبين أنه أخطأ؛ ولأن الاجتهاد لا ينقض بالاجتهاد",
+     "note": "Ijtihād is not undone by ijtihād."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v02:p017",
+     "excerpt_ar": "هذا المذهب، وعليه الأصحاب، سواء كان خطؤه يقينا أو عن اجتهاد",
+     "note": "Qibla: no repetition even after a certain error."
+    }
+   ]
+  }
+ ]
+}

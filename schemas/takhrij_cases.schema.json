@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/takhrij_cases.schema.json",
+  "title": "M4 takhrīj cases: furūʿ annotated against a formal reading (candidates)",
+  "type": "object",
+  "required": [
+    "suite",
+    "status",
+    "provenance",
+    "cases"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "suite": {
+      "type": "string"
+    },
+    "status": {
+      "const": "candidate"
+    },
+    "provenance": {
+      "type": "string",
+      "minLength": 1
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "far",
+          "encoder",
+          "class",
+          "note"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "far": {
+            "type": "string",
+            "pattern": "\\.f[0-9]{3}$"
+          },
+          "encoder": {
+            "type": "string"
+          },
+          "class": {
+            "enum": [
+              "derivable",
+              "genuine_ikhtilaf",
+              "encoding_error",
+              "missing_fact",
+              "missing_rule",
+              "segmentation_error"
+            ]
+          },
+          "facts": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "expected": {},
+          "positions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "who",
+                "ruling"
+              ]
+            }
+          },
+          "matches_madhhab": {
+            "type": "boolean"
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          },
+          "iq": {
+            "type": "string",
+            "pattern": "^IQ-[0-9]{2}$"
+          },
+          "needs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^(fact|rule):[a-z_]+$"
+            },
+            "minItems": 1
+          },
+          "revisit": {
+            "type": "object",
+            "required": [
+              "from_class",
+              "closed_by"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "from_class": {
+                "type": "string"
+              },
+              "from_encoder": {
+                "type": "string"
+              },
+              "closed_by": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "note": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
