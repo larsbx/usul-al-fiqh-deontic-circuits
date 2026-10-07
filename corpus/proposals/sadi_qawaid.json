@@ -379,7 +379,10 @@
     "Usul.Muamalat.q25_lot_iff",
     "Usul.Muamalat.Allocation",
     "Usul.Muamalat.allocation",
-    "Usul.Muamalat.q25_lot_is_last_resort"
+    "Usul.Muamalat.q25_lot_is_last_resort",
+    "Usul.Refinements.allocationFull",
+    "Usul.Refinements.allocationFull_conservative",
+    "Usul.Refinements.confused_goes_to_lot"
    ],
    "schemata": [
     "S2-priority"
@@ -481,7 +484,10 @@
     "Usul.Muamalat.q32_recourse_for_paid",
     "Usul.Muamalat.q32_gift_no_recourse",
     "Usul.Muamalat.q32_never_more_than_paid",
-    "Usul.Muamalat.q32_is_gate"
+    "Usul.Muamalat.q32_is_gate",
+    "Usul.Refinements.recourseFull",
+    "Usul.Refinements.recourseFull_conservative",
+    "Usul.Refinements.no_recourse_unowed_unpermitted"
    ],
    "emendation": "Body heading lost to OCR; index stub reads «من أدى عن غيره واجبات…»; the completion «رجع عليه» is an editorial reading to be checked against the scan.",
    "schemata": [
@@ -781,7 +787,11 @@
    "domain": "general",
    "lean": [
     "Usul.Sadi.q52_strong_qarina_prevails",
-    "Usul.Schema.burden_after_update"
+    "Usul.Schema.burden_after_update",
+    "Usul.Refinements.zahirPrevails",
+    "Usul.Refinements.zahirPrevails_conservative",
+    "Usul.Refinements.tie_without_amara_keeps_asl",
+    "Usul.Refinements.stronger_prevails"
    ],
    "schemata": [
     "S6-presumption"

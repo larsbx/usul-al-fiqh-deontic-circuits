@@ -1,19 +1,18 @@
 {
  "total": 214,
  "classes": {
-  "derivable": 86,
-  "encoding_error": 6,
-  "genuine_ikhtilaf": 98,
-  "missing_fact": 6,
+  "derivable": 93,
+  "genuine_ikhtilaf": 100,
+  "missing_fact": 3,
   "missing_rule": 17,
   "segmentation_error": 1
  },
- "coverage": 0.864,
- "madhhab_coverage": 0.545,
- "encoding_error": 6,
- "ikhtilaf_matching_madhhab": 30,
- "gaps_open": 30,
- "revisited": 4,
+ "coverage": 0.906,
+ "madhhab_coverage": 0.582,
+ "encoding_error": 0,
+ "ikhtilaf_matching_madhhab": 31,
+ "gaps_open": 21,
+ "revisited": 13,
  "revisit_queue": [],
  "per_encoder": {
   "itlaf": {
@@ -45,14 +44,13 @@
    "genuine_ikhtilaf": 4
   },
   "recourse": {
-   "derivable": 5,
-   "genuine_ikhtilaf": 6,
-   "missing_fact": 4
+   "derivable": 7,
+   "genuine_ikhtilaf": 7,
+   "missing_fact": 1
   },
   "lots": {
-   "derivable": 19,
-   "encoding_error": 4,
-   "genuine_ikhtilaf": 24,
+   "derivable": 22,
+   "genuine_ikhtilaf": 25,
    "missing_fact": 1,
    "missing_rule": 3
   },
@@ -73,8 +71,7 @@
    "genuine_ikhtilaf": 5
   },
   "asl_zahir": {
-   "derivable": 13,
-   "encoding_error": 2,
+   "derivable": 15,
    "genuine_ikhtilaf": 24
   },
   "generality": {

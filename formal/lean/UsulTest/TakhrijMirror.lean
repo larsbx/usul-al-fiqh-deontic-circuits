@@ -24,12 +24,22 @@ import Usul
 #guard (Usul.Muamalat.partnerMustJoin false true) == true
 #guard (Usul.Muamalat.partnerMustJoin true false) == true
 #guard (Usul.Muamalat.partnerMustJoin true true) == true
-#guard (decide (0 < Usul.Muamalat.recourse false 1)) == true
-#guard (decide (0 < Usul.Muamalat.recourse true 1)) == false
-#guard (Usul.Muamalat.allocation false false) == .lot
-#guard (Usul.Muamalat.allocation false true) == .divide
-#guard (Usul.Muamalat.allocation true false) == .toEntitled
-#guard (Usul.Muamalat.allocation true true) == .toEntitled
+#guard (Usul.Refinements.recourseFull false false false) == false
+#guard (Usul.Refinements.recourseFull false false true) == true
+#guard (Usul.Refinements.recourseFull false true false) == true
+#guard (Usul.Refinements.recourseFull false true true) == true
+#guard (Usul.Refinements.recourseFull true false false) == false
+#guard (Usul.Refinements.recourseFull true false true) == false
+#guard (Usul.Refinements.recourseFull true true false) == false
+#guard (Usul.Refinements.recourseFull true true true) == false
+#guard (Usul.Refinements.allocationFull false false false) == .lot
+#guard (Usul.Refinements.allocationFull false false true) == .lot
+#guard (Usul.Refinements.allocationFull false true false) == .divide
+#guard (Usul.Refinements.allocationFull false true true) == .lot
+#guard (Usul.Refinements.allocationFull true false false) == .toEntitled
+#guard (Usul.Refinements.allocationFull true false true) == .toEntitled
+#guard (Usul.Refinements.allocationFull true true false) == .toEntitled
+#guard (Usul.Refinements.allocationFull true true true) == .toEntitled
 #guard (Usul.Kulliyyat.discharges (⟨0, 0, 0⟩ : Usul.Kulliyyat.Act Nat Nat Nat) ⟨if false then 0 else 1, if false then 0 else 1, 1⟩) == false
 #guard (Usul.Kulliyyat.discharges (⟨0, 0, 0⟩ : Usul.Kulliyyat.Act Nat Nat Nat) ⟨if false then 0 else 1, if true then 0 else 1, 1⟩) == false
 #guard (Usul.Kulliyyat.discharges (⟨0, 0, 0⟩ : Usul.Kulliyyat.Act Nat Nat Nat) ⟨if true then 0 else 1, if false then 0 else 1, 1⟩) == false
@@ -48,22 +58,38 @@ import Usul
 #guard (decide (0 ∈ Usul.Sadi.obligedParts [0] (fun _ => true) (fun _ => true))) == false
 #guard (Usul.Sadi.useSubstitute false) == true
 #guard (Usul.Sadi.useSubstitute true) == false
-#guard ((Usul.Qawaid.update (⟨0, .wahm⟩ : Usul.Qawaid.Held Nat) ⟨1, .wahm⟩).value == 1) == true
-#guard ((Usul.Qawaid.update (⟨0, .wahm⟩ : Usul.Qawaid.Held Nat) ⟨1, .shakk⟩).value == 1) == true
-#guard ((Usul.Qawaid.update (⟨0, .wahm⟩ : Usul.Qawaid.Held Nat) ⟨1, .zann⟩).value == 1) == true
-#guard ((Usul.Qawaid.update (⟨0, .wahm⟩ : Usul.Qawaid.Held Nat) ⟨1, .qat⟩).value == 1) == true
-#guard ((Usul.Qawaid.update (⟨0, .shakk⟩ : Usul.Qawaid.Held Nat) ⟨1, .wahm⟩).value == 1) == false
-#guard ((Usul.Qawaid.update (⟨0, .shakk⟩ : Usul.Qawaid.Held Nat) ⟨1, .shakk⟩).value == 1) == true
-#guard ((Usul.Qawaid.update (⟨0, .shakk⟩ : Usul.Qawaid.Held Nat) ⟨1, .zann⟩).value == 1) == true
-#guard ((Usul.Qawaid.update (⟨0, .shakk⟩ : Usul.Qawaid.Held Nat) ⟨1, .qat⟩).value == 1) == true
-#guard ((Usul.Qawaid.update (⟨0, .zann⟩ : Usul.Qawaid.Held Nat) ⟨1, .wahm⟩).value == 1) == false
-#guard ((Usul.Qawaid.update (⟨0, .zann⟩ : Usul.Qawaid.Held Nat) ⟨1, .shakk⟩).value == 1) == false
-#guard ((Usul.Qawaid.update (⟨0, .zann⟩ : Usul.Qawaid.Held Nat) ⟨1, .zann⟩).value == 1) == true
-#guard ((Usul.Qawaid.update (⟨0, .zann⟩ : Usul.Qawaid.Held Nat) ⟨1, .qat⟩).value == 1) == true
-#guard ((Usul.Qawaid.update (⟨0, .qat⟩ : Usul.Qawaid.Held Nat) ⟨1, .wahm⟩).value == 1) == false
-#guard ((Usul.Qawaid.update (⟨0, .qat⟩ : Usul.Qawaid.Held Nat) ⟨1, .shakk⟩).value == 1) == false
-#guard ((Usul.Qawaid.update (⟨0, .qat⟩ : Usul.Qawaid.Held Nat) ⟨1, .zann⟩).value == 1) == false
-#guard ((Usul.Qawaid.update (⟨0, .qat⟩ : Usul.Qawaid.Held Nat) ⟨1, .qat⟩).value == 1) == true
+#guard (Usul.Refinements.zahirPrevails .wahm .wahm false) == false
+#guard (Usul.Refinements.zahirPrevails .wahm .wahm true) == true
+#guard (Usul.Refinements.zahirPrevails .wahm .shakk false) == true
+#guard (Usul.Refinements.zahirPrevails .wahm .shakk true) == true
+#guard (Usul.Refinements.zahirPrevails .wahm .zann false) == true
+#guard (Usul.Refinements.zahirPrevails .wahm .zann true) == true
+#guard (Usul.Refinements.zahirPrevails .wahm .qat false) == true
+#guard (Usul.Refinements.zahirPrevails .wahm .qat true) == true
+#guard (Usul.Refinements.zahirPrevails .shakk .wahm false) == false
+#guard (Usul.Refinements.zahirPrevails .shakk .wahm true) == false
+#guard (Usul.Refinements.zahirPrevails .shakk .shakk false) == false
+#guard (Usul.Refinements.zahirPrevails .shakk .shakk true) == true
+#guard (Usul.Refinements.zahirPrevails .shakk .zann false) == true
+#guard (Usul.Refinements.zahirPrevails .shakk .zann true) == true
+#guard (Usul.Refinements.zahirPrevails .shakk .qat false) == true
+#guard (Usul.Refinements.zahirPrevails .shakk .qat true) == true
+#guard (Usul.Refinements.zahirPrevails .zann .wahm false) == false
+#guard (Usul.Refinements.zahirPrevails .zann .wahm true) == false
+#guard (Usul.Refinements.zahirPrevails .zann .shakk false) == false
+#guard (Usul.Refinements.zahirPrevails .zann .shakk true) == false
+#guard (Usul.Refinements.zahirPrevails .zann .zann false) == false
+#guard (Usul.Refinements.zahirPrevails .zann .zann true) == true
+#guard (Usul.Refinements.zahirPrevails .zann .qat false) == true
+#guard (Usul.Refinements.zahirPrevails .zann .qat true) == true
+#guard (Usul.Refinements.zahirPrevails .qat .wahm false) == false
+#guard (Usul.Refinements.zahirPrevails .qat .wahm true) == false
+#guard (Usul.Refinements.zahirPrevails .qat .shakk false) == false
+#guard (Usul.Refinements.zahirPrevails .qat .shakk true) == false
+#guard (Usul.Refinements.zahirPrevails .qat .zann false) == false
+#guard (Usul.Refinements.zahirPrevails .qat .zann true) == false
+#guard (Usul.Refinements.zahirPrevails .qat .qat false) == false
+#guard (Usul.Refinements.zahirPrevails .qat .qat true) == true
 #guard (Usul.Dalala.IsGeneralIn .nakira .affirmation false) == false
 #guard (Usul.Dalala.IsGeneralIn .nakira .affirmation true) == false
 #guard (Usul.Dalala.IsGeneralIn .nakira .negation false) == true

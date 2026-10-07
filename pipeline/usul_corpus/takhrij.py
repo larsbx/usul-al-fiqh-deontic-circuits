@@ -59,13 +59,14 @@ ENCODERS: dict[str, dict] = {
         out=B, lean="Usul.Muamalat.partnerMustJoin {necessary} {consents}",
         py=lambda f: f["necessary"] or f["consents"]),
     "recourse": dict(
-        sadi=[32], qawaid=[RAJAB.format(75)], facts={"gift": B},
-        out=B, lean="decide (0 < Usul.Muamalat.recourse {gift} 1)",
-        py=lambda f: not f["gift"]),
+        sadi=[32], qawaid=[RAJAB.format(75)], facts={"gift": B, "owed_by_other": B, "permission": B},
+        out=B, lean="Usul.Refinements.recourseFull {gift} {owed_by_other} {permission}",
+        py=lambda f: not f["gift"] and (f["owed_by_other"] or f["permission"])),
     "lots": dict(
-        sadi=[25], qawaid=[RAJAB.format(160)], facts={"entitled_known": B, "divisible": B},
-        out=("toEntitled", "divide", "lot"), lean="Usul.Muamalat.allocation {entitled_known} {divisible}",
-        py=lambda f: "toEntitled" if f["entitled_known"] else "divide" if f["divisible"] else "lot"),
+        sadi=[25], qawaid=[RAJAB.format(160)], facts={"entitled_known": B, "divisible": B, "confusion_category": B},
+        out=("toEntitled", "divide", "lot"),
+        lean="Usul.Refinements.allocationFull {entitled_known} {divisible} {confusion_category}",
+        py=lambda f: "toEntitled" if f["entitled_known"] else "lot" if f["confusion_category"] else "divide" if f["divisible"] else "lot"),
     "tadakhul": dict(
         sadi=[41], qawaid=[RAJAB.format(18)], facts={"same_kind": B, "same_purpose": B},
         out=B,
@@ -87,10 +88,10 @@ ENCODERS: dict[str, dict] = {
         out=B, lean="Usul.Sadi.useSubstitute {original_possible}",
         py=lambda f: not f["original_possible"]),
     "asl_zahir": dict(
-        sadi=[11, 52], qawaid=[RAJAB.format(159)], facts={"asl_grade": GRADES, "zahir_grade": GRADES},
-        out=B,
-        lean="(Usul.Qawaid.update (⟨0, {asl_grade}⟩ : Usul.Qawaid.Held Nat) ⟨1, {zahir_grade}⟩).value == 1",
-        py=lambda f: GRADES.index(f["asl_grade"]) <= GRADES.index(f["zahir_grade"])),
+        sadi=[11, 52], qawaid=[RAJAB.format(159)], facts={"asl_grade": GRADES, "zahir_grade": GRADES, "amara": B},
+        out=B, lean="Usul.Refinements.zahirPrevails {asl_grade} {zahir_grade} {amara}",
+        py=lambda f: GRADES.index(f["asl_grade"]) < GRADES.index(f["zahir_grade"])
+        or (f["asl_grade"] == f["zahir_grade"] and f["amara"])),
     "generality": dict(
         sadi=[59, 60], qawaid=[LAHHAM.format(n) for n in (52, 53, 54)],
         facts={"form": FORMS, "context": CONTEXTS, "ahd": B},

@@ -102,6 +102,9 @@ import Usul
 #check @Usul.Muamalat.Allocation
 #check @Usul.Muamalat.allocation
 #check @Usul.Muamalat.q25_lot_is_last_resort
+#check @Usul.Refinements.allocationFull
+#check @Usul.Refinements.allocationFull_conservative
+#check @Usul.Refinements.confused_goes_to_lot
 #check @Usul.Muamalat.wordAccepted
 #check @Usul.Muamalat.q26_q43_consistent
 #check @Usul.Muamalat.returnPresumption
@@ -129,6 +132,9 @@ import Usul
 #check @Usul.Muamalat.q32_gift_no_recourse
 #check @Usul.Muamalat.q32_never_more_than_paid
 #check @Usul.Muamalat.q32_is_gate
+#check @Usul.Refinements.recourseFull
+#check @Usul.Refinements.recourseFull_conservative
+#check @Usul.Refinements.no_recourse_unowed_unpermitted
 #check @Usul.Sadi.best
 #check @Usul.Sadi.q33_higher_benefit
 #check @Usul.Sadi.q33_lighter_harm
@@ -202,6 +208,10 @@ import Usul
 #check @Usul.Muamalat.q51_q54_consistent
 #check @Usul.Sadi.q52_strong_qarina_prevails
 #check @Usul.Schema.burden_after_update
+#check @Usul.Refinements.zahirPrevails
+#check @Usul.Refinements.zahirPrevails_conservative
+#check @Usul.Refinements.tie_without_amara_keeps_asl
+#check @Usul.Refinements.stronger_prevails
 #check @Usul.Muamalat.dependentsSurvive
 #check @Usul.Muamalat.q53_distinction
 #check @Usul.Muamalat.Voided

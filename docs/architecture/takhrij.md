@@ -95,3 +95,19 @@ Coverage rose from 0.873 to 0.887 and madhhab coverage from 0.534 to 0.554, with
   These are now open needs in the ledger. The queue stays empty, because the bank does not provide them yet.
 
 Totals after this round: 214 cases, coverage 0.864, madhhab coverage 0.545, 6 encoding errors, 30 open gaps, 5 revisited.
+
+**Second round: conservative refinements (`Usul.Refinements`).** The cheapest open gaps asked for inputs the readings lacked. Each refinement adds that input with a default that gives back the earlier reading exactly, proved in Lean (`*_conservative`). Existing cases were migrated to the defaults, and all their guards still hold. Each refinement is grounded in the text that exposed it:
+
+| Refinement | Ground | Revisited |
+|---|---|---|
+| `allocationFull`: a specific entitlement lost in confusion goes to lots, divisible or not | Ibn Rajab 160's own second clause («تمييز المستحق المعين في نفس الأمر عن اشتباهه») | 160.f007, f015, f044 encoding error → derivable; f012 → ikhtilāf on the madhhab side (naṣṣ: valid, lot) |
+| `recourseFull`: recourse for paying what another owed, or for spending by permission, unless a gift | Ibn Rajab 75's two types | 75.f004, f010 → derivable; f009 → ikhtilāf (no madhhab marked) |
+| `zahirPrevails`: on equal grades the ẓāhir prevails only where the matter has indicators | Ibn Rajab 159 at f013: «لأن الوقت عليه أمارات… بخلاف ما لا أمارة عليه من… الطهارة والحدث» | 159.f007, f008 encoding error → derivable |
+
+Not revisited:
+- **75.f006:** it turns on whether asking the owner was *impossible*, a different fact. Its tag was corrected to `fact:permission_unobtainable`.
+- **Ibn al-Laḥḥām 43.f004:** it is the uṣūl dispute itself: whether «فرض», «واجب» or an explicit threat is a text immune to reinterpretation (al-Qāḍī: no; Abū al-Barakāt: yes). A refinement would pick a side of a policy question, so it stays open for the register.
+
+The refinements do not decide IQ-09 or IQ-20. They make the alternatives each question names expressible, and are pinned there: adopting one as *the* reading of Q25 or Q52 is the review decision those questions ask for.
+
+After this round: 214 cases, **coverage 0.906**, **madhhab coverage 0.582**, **0 encoding errors** (from 7 at the start of M4), 21 open gaps, 14 revisited.

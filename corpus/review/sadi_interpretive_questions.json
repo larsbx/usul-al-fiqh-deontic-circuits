@@ -434,13 +434,15 @@
    ],
    "pins": [
     "Usul.Muamalat.allocation",
-    "Usul.Muamalat.q25_lot_is_last_resort"
+    "Usul.Muamalat.q25_lot_is_last_resort",
+    "Usul.Refinements.allocationFull",
+    "Usul.Refinements.confused_goes_to_lot"
    ],
    "commitment": "Allocation follows the order: the known entitled, then division, then lots. Lots are the last resort.",
    "alternatives": [
     "Division and lots ranked differently where division destroys value (e.g. an indivisible object)."
    ],
-   "if_changed": "The order of sources in allocation changes; q25_lot_is_last_resort records when lots apply and fails if the order changes.",
+   "if_changed": "The order of sources in allocation changes; q25_lot_is_last_resort records when lots apply and fails if the order changes. A conservative refinement now exists (Usul.Refinements.allocationFull: a confused specific entitlement goes to lots whatever the divisibility; with confusion_category false it is the old reading, allocationFull_conservative); it closed four takhrīj cases. Adopting it as the reading of Q25 is the decision this question asks for.",
    "route": "halaqa:shared/usul-k/resolution-schema.md",
    "status": "referenced",
    "established": [
@@ -1009,7 +1011,9 @@
     "S6-presumption"
    ],
    "pins": [
-    "Usul.Sadi.q52_strong_qarina_prevails"
+    "Usul.Sadi.q52_strong_qarina_prevails",
+    "Usul.Refinements.zahirPrevails",
+    "Usul.Refinements.tie_without_amara_keeps_asl"
    ],
    "commitment": "An indication displaces the presumption whenever its grade is at least the presumption's (ties go to the ẓāhir), with grades as the only input.",
    "alternatives": [
@@ -1017,7 +1021,7 @@
     "Whether preponderant belief suffices depends on whether the matter has known indicators (amārāt), as Ibn Rajab says of sunset; this needs a field the reading lacks.",
     "Equal aṣl and ẓāhir are left as khilāf (Ibn Rajab's fourth category), not decided."
    ],
-   "if_changed": "Qawaid.update's tie rule or inputs change; q52_strong_qarina_prevails changes with it. The review process's own reliance on Q11 (yaqin_doubts_inert, doubts at shakk below a certain judgement) is unaffected, since shakk is strictly below zann.",
+   "if_changed": "Qawaid.update's tie rule or inputs change; q52_strong_qarina_prevails changes with it. The review process's own reliance on Q11 (yaqin_doubts_inert, doubts at shakk below a certain judgement) is unaffected, since shakk is strictly below zann. A conservative refinement now exists (Usul.Refinements.zahirPrevails: on equal grades the ẓāhir prevails only where the matter has indicators; with amara true it is the old reading, zahirPrevails_conservative); it closed two takhrīj cases. Adopting it is the decision this question asks for.",
    "route": "halaqa:shared/usul-k/evidence-order.md",
    "status": "referenced",
    "established": [

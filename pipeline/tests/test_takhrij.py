@@ -15,22 +15,22 @@ def _case(cls, facts, expected, **kw):
 
 
 def test_check_case_accepts_agreement_and_recorded_disagreement():
-    unknown = {"entitled_known": False, "divisible": False}
+    unknown = {"entitled_known": False, "divisible": False, "confusion_category": False}
     assert takhrij.check_case(_case("derivable", unknown, "lot")) == []
     assert takhrij.check_case(_case("encoding_error", unknown, "divide")) == []
 
 
 def test_check_case_rejects_a_class_the_kernel_contradicts():
-    unknown = {"entitled_known": False, "divisible": False}
+    unknown = {"entitled_known": False, "divisible": False, "confusion_category": False}
     assert takhrij.check_case(_case("derivable", unknown, "divide")) == ["class contradicts the kernel's output"]
     assert takhrij.check_case(_case("encoding_error", unknown, "lot")) == ["class contradicts the kernel's output"]
 
 
 def test_check_case_rejects_bad_facts_domains_and_thin_ikhtilaf():
     assert takhrij.check_case(_case("derivable", {"entitled_known": True}, "toEntitled")) == ["facts do not match the encoder"]
-    assert takhrij.check_case(_case("derivable", {"entitled_known": True, "divisible": True}, "x")) == ["expected outside the encoder's output domain"]
+    assert takhrij.check_case(_case("derivable", {"entitled_known": True, "divisible": True, "confusion_category": False}, "x")) == ["expected outside the encoder's output domain"]
     one = [{"who": "madhhab", "ruling": "lot"}]
-    facts = {"entitled_known": False, "divisible": False}
+    facts = {"entitled_known": False, "divisible": False, "confusion_category": False}
     assert takhrij.check_case(_case("genuine_ikhtilaf", facts, "lot", positions=one, matches_madhhab=True)) == ["ikhtilāf needs at least two positions"]
     assert takhrij.check_case(_case("missing_fact", None, None)) == []
 
