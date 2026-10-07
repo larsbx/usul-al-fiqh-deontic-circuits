@@ -1046,6 +1046,61 @@
      "note": "Presumptions rebuttable only by particular kinds of evidence (e.g. documentary) rather than by any evidence of equal weight."
     }
    ]
+  },
+  {
+   "id": "IQ-21",
+   "rules": [
+    11
+   ],
+   "schemata": [
+    "S5-inert"
+   ],
+   "pins": [
+    "Usul.Grade.IsYaqin",
+    "Usul.Sadi.q11_yaqin"
+   ],
+   "commitment": "The 'yaqīn' that doubt does not remove is any grade from preponderant belief (ẓann) up: IsYaqin g := zann ≤ g.",
+   "alternatives": [
+    "Yaqīn is qaṭʿ only (Ibn ʿUthaymīn's ʿilm: decisive perception); a held ẓann is then displaceable by an equal ẓann, and Q11 protects fewer judgements.",
+    "Two thresholds: ẓann suffices to act (performing worship or a contract, Ibn Rajab 68) while only qaṭʿ is immune to later doubt; Q11 would take the second."
+   ],
+   "if_changed": "Grade.IsYaqin's threshold moves; every theorem taking it as hypothesis (q11_yaqin, yaqin_la_yazul_bish_shakk, yaqin_doubts_inert, Refinements.abstention_keeps_status) still holds, with a stronger hypothesis, so nothing proved is lost; fewer held judgements are protected. The review process relies on yaqin_doubts_inert only for its form (doubts at shakk are inert), which survives either threshold, so there is no bootstrap dependency. Takhrīj cases with a ẓann-grade aṣl (asl_zahir encoder) would need re-checking.",
+   "route": "halaqa:shared/usul-k/evidence-order.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:shamela-9942/v01:p015",
+     "relation": "bears-on",
+     "excerpt_ar": "العلم: إدراك الشيء على ما هو عليه إدراكاً جازماً",
+     "note": "Ibn ʿUthaymīn: ʿilm is decisive perception; ẓann (p016) is perception with a weaker contrary possibility. Read strictly, yaqīn is qaṭʿ."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p007",
+     "relation": "bears-on",
+     "excerpt_ar": "العلم والظن؛ لأن إدراك الأحكام الفقهية قد يكون يقينيًّا، وقد يكون ظنيًّا",
+     "note": "But fiqh itself is ʿilm and ẓann: the knowledge the law acts on includes the preponderant."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p120",
+     "relation": "bears-on",
+     "excerpt_ar": "فلا يصح إيقاعه بهذا التردد ما لم يكن الشك غلبة ظن تكفي مثله في إيقاع العبادة أو العقد كغلبة الظن بدخول الوقت وطهارة الماء والثوب",
+     "note": "Ibn Rajab 68: preponderant belief suffices to perform worship or a contract (entry of the time, purity of water and garment): ẓann counts for acting."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 55,
+     "schema": "S5-inert",
+     "transported": "Usul.Schema.inert_fold",
+     "note": "As a later claim of error leaves a confession binding (Q55), a later doubt leaves what is held: both are S5 folds over inert evidence. The analogy fixes the form; the threshold is what this question asks."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "evidence law",
+     "note": "Standards of proof: balance of probabilities to act or decide, a higher standard for what later doubt may not reopen."
+    }
+   ]
   }
  ]
 }

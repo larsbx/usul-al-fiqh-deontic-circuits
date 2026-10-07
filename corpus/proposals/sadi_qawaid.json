@@ -168,6 +168,7 @@
    "kind": "default",
    "domain": "general",
    "lean": [
+    "Usul.Grade.IsYaqin",
     "Usul.Sadi.q11_yaqin",
     "Usul.Qawaid.yaqin_la_yazul_bish_shakk",
     "Usul.Schema.yaqin_doubts_inert",

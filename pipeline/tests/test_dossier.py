@@ -19,9 +19,6 @@ def _json(p):
     return json.loads(p.read_text(encoding="utf-8"))
 
 
-if not GLOSSARY.exists():
-    pytest.skip("glossary not yet committed", allow_module_level=True)
-
 DOSS, GLOSS = _json(DOSSIER), _json(GLOSSARY)
 RECORDS = {r["id"] for f in (ROOT / "corpus/records").glob("*.jsonl") for r in map(json.loads, f.read_text().splitlines())}
 RIGHTS = {w["id"]: work["rights"] for work in _json(ROOT / "corpus/registry.json")["works"] for w in work["witnesses"]}
