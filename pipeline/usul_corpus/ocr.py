@@ -269,6 +269,14 @@ class OcrOptions:
         )
 
 
+def cache_dir(root: Path, pdf: Path, opts: OcrOptions) -> Path:
+    """Render and TSV cache for one source and configuration, keyed by the PDF's hash and the
+    settings that change pixels (dpi) or reads (psm): a refreshed PDF or new settings never
+    reuse stale output. Frame and denoise variants already have their own file names."""
+    sha = hashlib.sha256(pdf.read_bytes()).hexdigest()[:12]
+    return root / f"{sha}-r{opts.dpi}-psm{opts.psm}"
+
+
 def ocr_pdf(
     pdf: Path, work: Path, tessdata: Path, opts: OcrOptions,
     pages: range | None = None, jobs: int = os.cpu_count() or 1,

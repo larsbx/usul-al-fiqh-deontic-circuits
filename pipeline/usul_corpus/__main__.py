@@ -19,7 +19,7 @@ from pathlib import Path
 
 from .fetch import fetch
 from .hudud import extract_hudud
-from .ocr import MODELS, OcrOptions, ocr_pdf, page_markdown, quality, tesseract_version
+from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
 from .openiti import parse_markdown
 from .records import hadd_record, qaida_records, sharh_record, unit_tags
 from .segment import (
@@ -87,10 +87,15 @@ def cmd_ocr(args: argparse.Namespace) -> int:
         seg = w.get("segmenter", work.get("segmenter", {}))
         opts = OcrOptions.from_config(cfg, anchor_step=seg.get("anchor_step"))
         pages = _page_range(args.pages) if args.pages else None
-        chosen, passes, numbers_report = ocr_pdf(pdf, ROOT / ".cache" / "ocr" / w["id"], ROOT / ".cache" / "tessdata",
-                                 opts, pages, args.jobs)
+        work_dir = cache_dir(ROOT / ".cache" / "ocr" / w["id"], pdf, opts)
+        chosen, passes, numbers_report = ocr_pdf(pdf, work_dir, ROOT / ".cache" / "tessdata", opts, pages, args.jobs)
         engines = opts.engines
         text = "#META#Header#End#\n" + "".join(page_markdown(p) for p in chosen)
+        if pages:  # a diagnostic range never replaces the witness, its lock hash or its metrics
+            out = CACHE / f"{w['id']}.p{pages.start}-{pages.stop - 1}.txt"
+            out.write_text(text, encoding="utf-8")
+            print(f"{w['id']:40} {len(chosen):>4} pages  → {out.name} (range only; witness untouched)")
+            continue
         (CACHE / f"{w['id']}.txt").write_text(text, encoding="utf-8")
         by_engine = {e: quality(tuple(l for p in passes if p.engine == e for l in p.lines)) for e in engines}
         _dump(CORPUS / "ocr" / f"{w['id']}.json", {

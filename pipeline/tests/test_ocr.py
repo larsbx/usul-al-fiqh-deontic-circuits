@@ -135,3 +135,45 @@ def test_frame_box_bridges_short_dips_inside_a_border_band():
     rows = [0.0] * 135 + [0.4] * 30 + [0.2] * 2 + [0.4] * 14 + [0.2] * 3 + [0.4] * 7 + [0.02] * 2600
     y0, _ = frame_box(rows, pad=20)
     assert y0 == 191 + 20
+
+
+def test_cache_dir_is_keyed_by_source_and_settings(tmp_path):
+    """A refreshed PDF, or a new dpi or psm, gets a fresh render/TSV cache."""
+    from usul_corpus.ocr import OcrOptions, cache_dir
+
+    pdf = tmp_path / "w.pdf"
+    pdf.write_bytes(b"one")
+    base = OcrOptions(("ara",))
+    a = cache_dir(tmp_path, pdf, base)
+    assert a == cache_dir(tmp_path, pdf, base)
+    assert a != cache_dir(tmp_path, pdf, OcrOptions(("ara",), dpi=400))
+    assert a != cache_dir(tmp_path, pdf, OcrOptions(("ara",), psm=6))
+    pdf.write_bytes(b"two")
+    assert a != cache_dir(tmp_path, pdf, base)
+
+
+def test_ocr_page_range_leaves_witness_lock_and_metrics_untouched(tmp_path, monkeypatch):
+    """`ocr --pages A-B` is diagnostic: it writes <id>.pA-B.txt and nothing canonical."""
+    import argparse
+    import json
+
+    import usul_corpus.__main__ as cli
+    from usul_corpus.ocr import Line, PageOCR
+
+    cache, corpus = tmp_path / "cache", tmp_path / "corpus"
+    cache.mkdir(), corpus.mkdir()
+    (cache / "w.pdf").write_bytes(b"pdf")
+    (cache / "w.txt").write_text("FULL", encoding="utf-8")
+    (corpus / "lock.json").write_text(json.dumps({"witnesses": {"w": {"ocr_sha256": "x"}}}), encoding="utf-8")
+    work = {"id": "k", "witnesses": [{"id": "w", "format": "pdf", "ocr": {"engines": ["ara"], "dpi": 300, "psm": 4}}]}
+    page = PageOCR(1, "ara", (Line("نص", 90.0),))
+    monkeypatch.setattr(cli, "CACHE", cache)
+    monkeypatch.setattr(cli, "CORPUS", corpus)
+    monkeypatch.setattr(cli, "ROOT", tmp_path)
+    monkeypatch.setattr(cli, "_works", lambda only: [work])
+    monkeypatch.setattr(cli, "ocr_pdf", lambda *a, **k: ((page,), (page,), {}))
+    assert cli.cmd_ocr(argparse.Namespace(work=None, pages="1-2", jobs=1)) == 0
+    assert (cache / "w.txt").read_text(encoding="utf-8") == "FULL"
+    assert json.loads((corpus / "lock.json").read_text())["witnesses"]["w"] == {"ocr_sha256": "x"}
+    assert not (corpus / "ocr").exists()
+    assert "PageV01P001" in (cache / "w.p1-2.txt").read_text(encoding="utf-8")
