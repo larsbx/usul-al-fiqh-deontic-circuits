@@ -1789,19 +1789,24 @@
    "ar": "اليقين",
    "tr": "al-yaqīn",
    "gloss": "certainty",
-   "definition": "Ibn ʿUthaymīn defines knowledge (ʿilm) as perceiving a thing as it is decisively. Al-Saʿdī Q11: certainty is not removed by doubt. Note: Lean's Grade.IsYaqin counts prevailing ẓann as yaqīn; the cited Ibn ʿUthaymīn passage keeps ʿilm and ẓann apart.",
+   "definition": "Decisive perception (ʿilm: «إدراكاً جازماً», Ibn ʿUthaymīn). Al-Saʿdī Q11: certainty is not removed by doubt. The kernel's Grade.IsYaqin counts ẓann as yaqīn; the sources rather make knowledge of a ẓann's preponderance the certainty acted on (Ibn Taymiyya; al-Rawḍa: God makes ẓann a sign of the obligation, so the obligation is known). Refinements.yaqinForAmal expresses that reading and is conservative over IsYaqin (IQ-21). Where certainty cannot be reached, one builds on ghalabat al-ẓann (bayt 90).",
    "conditions": [],
    "related": [
+    "asl",
+    "ghalabat_al_zann",
+    "ilm",
     "shakk",
-    "zann",
-    "asl"
+    "zann"
    ],
    "lean": [
     "Usul.Grade.IsYaqin",
     "Usul.Grade.qat",
     "Usul.Qawaid.yaqin_la_yazul_bish_shakk",
     "Usul.Sadi.q11_yaqin",
-    "Usul.Schema.yaqin_doubts_inert"
+    "Usul.Schema.yaqin_doubts_inert",
+    "Usul.Refinements.yaqinForAmal",
+    "Usul.Refinements.yaqinForAmal_conservative",
+    "Usul.Refinements.qat_suffices"
    ],
    "refs": [
     {
@@ -1813,6 +1818,11 @@
      "ref": "src:archive-pdf1995-tess/v01:p057",
      "excerpt_ar": "الأصل بقاء ما كان على ما كان، واليقين لا يزول بالشك",
      "note": "Certainty is not removed by doubt."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v01:p311",
+     "excerpt_ar": "أي استحالة في أن يجعل الله -تعالى- الظن علامة للوجوب، والظن مدرك بالحس، فيكون الوجوب معلوما",
+     "note": "Ẓann a sign of the obligation, which is then known."
     }
    ]
   },
@@ -1845,18 +1855,22 @@
    "ar": "الظن",
    "tr": "al-ẓann",
    "gloss": "presumption, probable belief",
-   "definition": "Perceiving a thing with a less likely possibility of its opposite; the opposite, more likely, perception is wahm (Ibn ʿUthaymīn). Al-Kawkab: acting on ẓann in the ʿilal of rulings is obligatory by consensus.",
+   "definition": "Perceiving a thing with a weaker possibility of its opposite (Ibn ʿUthaymīn); the weaker side is wahm, equal sides shakk. Ẓann has degrees, the higher called ghalabat al-ẓann (al-Kawkab), and leans on a cause, unlike wahm (al-Rawḍa). Usage: «ʿilm» is said figuratively of presumptive assent («فإن علمتموهن مؤمنات») and «ẓann» of knowledge («الذين يظنون أنهم ملاقو ربهم»), but neither collapses the grades. Whether fiqh, mostly ẓann, is ʿilm is answered several ways: the ruling is known and the ẓann lies on its way (al-Rāzī; al-Ṭūfī finds it contrived and would define fiqh as ẓann); fiqh is maʿrifa covering both (Ibn ʿUthaymīn); Ibn Taymiyya: belief that a view preponderates is ʿilm, the preponderance of one belief over another is ẓann, and fiqh is the former (IQ-21).",
    "conditions": [],
    "related": [
+    "ghalabat_al_zann",
+    "ilm",
     "shakk",
     "yaqin",
-    "zahir"
+    "zahir",
+    "zann_bayyin_khatauh"
    ],
    "lean": [
     "Usul.Grade.zann",
     "Usul.Grade.wahm",
     "Usul.Grade.rank",
-    "Usul.Grade.IsYaqin"
+    "Usul.Grade.IsYaqin",
+    "Usul.Refinements.yaqinForAmal"
    ],
    "refs": [
     {
@@ -1868,6 +1882,36 @@
      "ref": "src:openiti-kawkab-shamela12019/v04:p152",
      "excerpt_ar": "ويجب العمل بالظن فيها\" أي في علل الأحكام \"إجماعا",
      "note": "Acting on ẓann in ʿilal obligatory by consensus."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v01:p074",
+     "excerpt_ar": "ويتفاوت الظن، حتى يقال: غلبة الظن",
+     "note": "Ẓann has degrees; the higher is ghalabat al-ẓann."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p220",
+     "excerpt_ar": "فإن الوهم ميل النفس من غير سبب، والظن: ميلها بسبب",
+     "note": "Wahm inclines without a cause, ẓann with one."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v01:p064",
+     "excerpt_ar": "يعني أن الظن يطلق ويراد به العلم. ومنه قوله تعالى: {الذين يظنون أنهم ملاقو ربهم}",
+     "note": "Ẓann said of knowledge (2:46)."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v01:p064",
+     "excerpt_ar": "وأما التصديق الظني: فإطلاقه عليه2 على سبيل المجاز. ومن أمثلته قوله تعالى: {فإن علمتموهن مؤمنات}",
+     "note": "ʿIlm said figuratively of presumptive assent (60:10)."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v01:p155",
+     "excerpt_ar": "وأجيب عن الأول: بأن الحكم معلوم، والظن في طريقه",
+     "note": "The standard answer: the ruling is known, the ẓann is on its way."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v01:p155",
+     "excerpt_ar": "ولو قيل: ظن جملة من الأحكام الشرعية الفرعية، باستنباطها من أدلة تفصيلية، لحصل المقصود وخف الإشكال",
+     "note": "Al-Ṭūfī's own proposal: define fiqh as ẓann."
     }
    ]
   },
@@ -2741,6 +2785,150 @@
      "ref": "src:archive-pdf1995-tess/v01:p070",
      "excerpt_ar": "إذا تعذر معرفة من له الحق جُعل كالمعدوم",
      "note": "Al-Saʿdī Q20."
+    }
+   ]
+  },
+  {
+   "key": "ilm",
+   "ar": "العلم",
+   "tr": "al-ʿilm",
+   "gloss": "knowledge",
+   "definition": "Perceiving a thing as it is, decisively (Ibn ʿUthaymīn); opposed to simple and compound ignorance and distinguished from ẓann, wahm and shakk. Al-Kawkab lists four uses: literal (what admits no contrary), bare perception, assent decisive or (figuratively) presumptive, and acquaintance. Ibn Taymiyya: what God commands is followed by ʿilm, since the jurist knows which proof preponderates; most fiqh people need is established by text or consensus.",
+   "conditions": [],
+   "related": [
+    "yaqin",
+    "zann",
+    "ghalabat_al_zann"
+   ],
+   "lean": [
+    "Usul.Grade.qat",
+    "Usul.Refinements.yaqinForAmal",
+    "Usul.Refinements.unknown_rujhan_suspends"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-majmufatawa-shamela7289/v13:p117",
+     "excerpt_ar": "فرق بين اعتقاد الرجحان ورجحان الاعتقاد أما اعتقاد الرجحان فهو علم والمجتهد ما عمل إلا بذلك العلم وهو اعتقاد رجحان هذا على هذا وأما رجحان هذا الاعتقاد على هذا الاعتقاد فهو الظن",
+     "note": "Ibn Taymiyya: belief in preponderance is ʿilm; preponderance of a belief is ẓann."
+    },
+    {
+     "ref": "src:openiti-majmufatawa-shamela7289/v13:p119",
+     "excerpt_ar": "فالفقه هو علمه برجحان هذا الدليل وهذا الظن",
+     "note": "Fiqh is the jurist's knowledge that this proof and this ẓann preponderate."
+    },
+    {
+     "ref": "src:openiti-majmufatawa-shamela7289/v13:p120",
+     "excerpt_ar": "وحيث لا يعلم الرجحان فهو متوقف لا قول له",
+     "note": "Where preponderance is not known: suspension, no view."
+    },
+    {
+     "ref": "src:openiti-majmufatawa-shamela7289/v13:p118",
+     "excerpt_ar": "جمهور مسائل الفقه التي يحتاج إليها الناس ويفتون بها هي ثابتة بالنص أو الإجماع",
+     "note": "Most fiqh people need is established by text or consensus."
+    }
+   ]
+  },
+  {
+   "key": "ghalabat_al_zann",
+   "ar": "غلبة الظن",
+   "tr": "ghalabat al-ẓann",
+   "gloss": "preponderant belief (also al-ẓann al-ghālib, ghālib al-ẓann; the verb: ghalaba ʿalā ẓannih)",
+   "definition": "The higher degree of ẓann. Ibn ʿUthaymīn, bayt 90: «وإن تعذر اليقين فارجعا لغالب الظن تكن متبعا», i.e. «إذا تعذر اليقين رجعنا إلى غلبة الظن»; with no preponderant belief one returns to the aṣl. It suffices to perform worship or a contract (Ibn Rajab 68) and is put before the aṣl where strong indications support it (al-Saʿdī Q52), but not against an aṣl that certainty can still reach, nor where Aḥmad's naṣṣ requires certainty (dawn in Ramaḍān, Ibn Rajab 159). Al-Saʿdī: management (taṣarruf) rests on it, rulings have fixed routes.",
+   "conditions": [
+    "certainty is unattainable",
+    "the belief rests on a cause (amāra), not mere inclination",
+    "no aṣl that certainty can reach is displaced by it",
+    "its error has not become evident"
+   ],
+   "related": [
+    "zann",
+    "yaqin",
+    "asl",
+    "amara",
+    "zann_bayyin_khatauh"
+   ],
+   "lean": [
+    "Usul.Refinements.basis",
+    "Usul.Refinements.basis_is_first",
+    "Usul.Refinements.attainable_yaqin_excludes_ghalaba",
+    "Usul.Refinements.zahirPrevails"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_uthaymin.manzuma.archive_manzuma_tess.q090",
+     "note": "Bayt 90 of Ibn ʿUthaymīn's manẓūma."
+    },
+    {
+     "ref": "ibn_uthaymin.manzuma.archive_manzuma_tess.q090.sharh",
+     "note": "His commentary: the rule, its proofs (64:16, 2:185, Ibn Masʿūd's ḥadīth «فليتحر الصواب»), and its limits."
+    },
+    {
+     "ref": "src:archive-manzuma-tess/v01:p341",
+     "excerpt_ar": "وإن لم يكن غلبة ظن رجعنا إلى الأصل، وهو البناء على اليقين",
+     "note": "With no preponderant belief, back to the aṣl."
+    },
+    {
+     "ref": "src:archive-tariq-tess/v01:p107",
+     "excerpt_ar": "عمدة التصرف على غلبة الظن، بخلاف الأحكام، فإن طرقها مضبوطة",
+     "note": "Al-Saʿdī: management rests on preponderant belief; rulings have fixed routes."
+    },
+    {
+     "ref": "src:archive-pdf1995-tess/v01:p102",
+     "excerpt_ar": "منها: تقديم غلبة الظن في المواضع التي يقدم فيها على  الأصل",
+     "note": "Al-Saʿdī Q52: preponderant belief put before the aṣl in its places."
+    }
+   ]
+  },
+  {
+   "key": "zann_bayyin_khatauh",
+   "ar": "الظن البين خطؤه",
+   "tr": "al-ẓann al-bayyin khaṭaʾuh",
+   "gloss": "a belief whose error has become evident",
+   "definition": "«لا عبرة بالظن البين خطؤه»: no regard is paid to a belief once its error is evident (al-Mardāwī, al-Taḥbīr; al-Kawkab: «ولا يلتفت إلى ظنه الذي بان خطؤه»). Ibn ʿUthaymīn: one who ended the prayer on a preponderant belief of four, then learned it was three, cannot plead that worship suffices with preponderant belief, «لأنه تبين الخطأ». The limit is «الاجتهاد لا ينقض بالاجتهاد»: the error must be shown by what is decisive (a mufti is liable when «بان خطؤه بدليل قاطع»), not by a second ijtihād. Some domains keep the act even after a certain error: qibla, «سواء كان خطؤه يقينا أو عن اجتهاد», and zakāt given to one believed poor.",
+   "conditions": [
+    "the error is shown by what is decisive (qaṭʿ), not by another ijtihād",
+    "the domain is not one where the act stands regardless (qibla, zakāt)"
+   ],
+   "related": [
+    "ghalabat_al_zann",
+    "zann",
+    "yaqin"
+   ],
+   "lean": [
+    "Usul.Refinements.zannSetAside",
+    "Usul.Refinements.ijtihad_not_overturned_by_ijtihad",
+    "Usul.Refinements.evident_error_sets_aside"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-tahbir-shamela6336/v02:p917",
+     "excerpt_ar": "لبقاء الوقت، ولا عبرة بالظن البين خطؤه",
+     "note": "Al-Mardāwī: the formula."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v01:p373",
+     "excerpt_ar": "ولا يلتفت إلى ظنه الذي بان خطؤه",
+     "note": "Al-Kawkab: the same, of a belief that time would run out."
+    },
+    {
+     "ref": "src:archive-manzuma-tess/v01:p171",
+     "excerpt_ar": "الجواب: لا، لأنه تبين الخطاء، فيجب عليه أن يكمل أربعا",
+     "note": "Ibn ʿUthaymīn: an evident error undoes reliance on preponderant belief."
+    },
+    {
+     "ref": "src:openiti-musawwada-shamela11814/v01:p522",
+     "excerpt_ar": "فإن عمل بفتياه في إتلاف فبان خطؤه بدليل قاطع ضمنه",
+     "note": "Error shown by a decisive proof."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p495",
+     "excerpt_ar": "كمن صلى صلاتين باجتهادين إلى جهتين في وقتين، ولم يتبين أنه أخطأ؛ ولأن الاجتهاد لا ينقض بالاجتهاد",
+     "note": "Ijtihād is not undone by ijtihād."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v02:p017",
+     "excerpt_ar": "هذا المذهب، وعليه الأصحاب، سواء كان خطؤه يقينا أو عن اجتهاد",
+     "note": "Qibla: no repetition even after a certain error."
     }
    ]
   }

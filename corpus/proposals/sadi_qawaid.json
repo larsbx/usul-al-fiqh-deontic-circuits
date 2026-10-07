@@ -176,7 +176,9 @@
     "Usul.Refinements.abstention_keeps_status",
     "Usul.Refinements.known_absence_ends_abstention",
     "Usul.Refinements.hamlAlaAdna",
-    "Usul.Refinements.adna_is_certain"
+    "Usul.Refinements.adna_is_certain",
+    "Usul.Refinements.yaqinForAmal",
+    "Usul.Refinements.zannSetAside"
    ],
    "schemata": [
     "S5-inert"

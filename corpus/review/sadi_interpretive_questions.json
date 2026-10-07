@@ -1057,14 +1057,17 @@
    ],
    "pins": [
     "Usul.Grade.IsYaqin",
-    "Usul.Sadi.q11_yaqin"
+    "Usul.Sadi.q11_yaqin",
+    "Usul.Refinements.yaqinForAmal",
+    "Usul.Refinements.zannSetAside"
    ],
    "commitment": "The 'yaqīn' that doubt does not remove is any grade from preponderant belief (ẓann) up: IsYaqin g := zann ≤ g.",
    "alternatives": [
     "Yaqīn is qaṭʿ only (Ibn ʿUthaymīn's ʿilm: decisive perception); a held ẓann is then displaceable by an equal ẓann, and Q11 protects fewer judgements.",
-    "Two thresholds: ẓann suffices to act (performing worship or a contract, Ibn Rajab 68) while only qaṭʿ is immune to later doubt; Q11 would take the second."
+    "Two thresholds: ẓann suffices to act (performing worship or a contract, Ibn Rajab 68) while only qaṭʿ is immune to later doubt; Q11 would take the second.",
+    "Ibn Taymiyya's second-order reading: the certainty acted on is knowledge that the ẓann preponderates (iʿtiqād al-rujḥān), not the ẓann itself (rujḥān al-iʿtiqād); an unknown preponderance suspends. Expressible as Refinements.yaqinForAmal, conservative over IsYaqin (yaqinForAmal_conservative)."
    ],
-   "if_changed": "Grade.IsYaqin's threshold moves; every theorem taking it as hypothesis (q11_yaqin, yaqin_la_yazul_bish_shakk, yaqin_doubts_inert, Refinements.abstention_keeps_status) still holds, with a stronger hypothesis, so nothing proved is lost; fewer held judgements are protected. The review process relies on yaqin_doubts_inert only for its form (doubts at shakk are inert), which survives either threshold, so there is no bootstrap dependency. Takhrīj cases with a ẓann-grade aṣl (asl_zahir encoder) would need re-checking.",
+   "if_changed": "Grade.IsYaqin's threshold moves; every theorem taking it as hypothesis (q11_yaqin, yaqin_la_yazul_bish_shakk, yaqin_doubts_inert, Refinements.abstention_keeps_status) still holds, with a stronger hypothesis, so nothing proved is lost; fewer held judgements are protected. The review process relies on yaqin_doubts_inert only for its form (doubts at shakk are inert), which survives either threshold, so there is no bootstrap dependency. Takhrīj cases with a ẓann-grade aṣl (asl_zahir encoder) would need re-checking. Under the second-order reading Held would carry whether the preponderance is known; with it true everywhere the kernel is unchanged. Overturning is separate: a ẓann acted on is set aside only when its error is shown decisively (Refinements.zannSetAside; «الاجتهاد لا ينقض بالاجتهاد»).",
    "route": "halaqa:shared/usul-k/evidence-order.md",
    "status": "referenced",
    "established": [
@@ -1085,6 +1088,29 @@
      "relation": "bears-on",
      "excerpt_ar": "فلا يصح إيقاعه بهذا التردد ما لم يكن الشك غلبة ظن تكفي مثله في إيقاع العبادة أو العقد كغلبة الظن بدخول الوقت وطهارة الماء والثوب",
      "note": "Ibn Rajab 68: preponderant belief suffices to perform worship or a contract (entry of the time, purity of water and garment): ẓann counts for acting."
+    },
+    {
+     "ref": "src:openiti-majmufatawa-shamela7289/v13:p117",
+     "relation": "refines",
+     "excerpt_ar": "فرق بين اعتقاد الرجحان ورجحان الاعتقاد أما اعتقاد الرجحان فهو علم والمجتهد ما عمل إلا بذلك العلم وهو اعتقاد رجحان هذا على هذا وأما رجحان هذا الاعتقاد على هذا الاعتقاد فهو الظن",
+     "note": "Ibn Taymiyya: the jurist acts on knowledge of preponderance; only the preponderance of one belief over another is ẓann."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v01:p311",
+     "relation": "refines",
+     "excerpt_ar": "أي استحالة في أن يجعل الله -تعالى- الظن علامة للوجوب، والظن مدرك بالحس، فيكون الوجوب معلوما",
+     "note": "Al-Rawḍa: God makes ẓann a sign of the obligation, so the obligation is known."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v01:p155",
+     "relation": "bears-on",
+     "excerpt_ar": "ولو قيل: ظن جملة من الأحكام الشرعية الفرعية، باستنباطها من أدلة تفصيلية، لحصل المقصود وخف الإشكال",
+     "note": "Al-Ṭūfī: the standard answers are contrived; define fiqh as ẓann instead."
+    },
+    {
+     "ref": "ibn_uthaymin.manzuma.archive_manzuma_tess.q090",
+     "relation": "bears-on",
+     "note": "Ibn ʿUthaymīn, bayt 90: where certainty is unattainable, build on preponderant belief; ghalabat al-ẓann is a fallback below yaqīn, not yaqīn."
     }
    ],
    "analogies": [

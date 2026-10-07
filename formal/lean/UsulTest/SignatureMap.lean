@@ -57,6 +57,8 @@ import Usul
 #check @Usul.Refinements.known_absence_ends_abstention
 #check @Usul.Refinements.hamlAlaAdna
 #check @Usul.Refinements.adna_is_certain
+#check @Usul.Refinements.yaqinForAmal
+#check @Usul.Refinements.zannSetAside
 #check @Usul.Muamalat.Exchange.gate
 #check @Usul.Muamalat.q12_no_contract_without_consent
 #check @Usul.Muamalat.q12_mutual_consent_suffices
@@ -420,6 +422,8 @@ import Usul
 #check @Usul.Qawaid.update
 #check @Usul.Schema.burdenOf
 #check @Usul.Grade.qat
+#check @Usul.Refinements.yaqinForAmal_conservative
+#check @Usul.Refinements.qat_suffices
 #check @Usul.Grade.shakk
 #check @Usul.Grade.rank
 #check @Usul.Grade.zann
@@ -466,3 +470,9 @@ import Usul
 #check @Usul.Muamalat.HeldFor
 #check @Usul.Schema.Covers
 #check @Usul.Schema.reps
+#check @Usul.Refinements.unknown_rujhan_suspends
+#check @Usul.Refinements.basis
+#check @Usul.Refinements.basis_is_first
+#check @Usul.Refinements.attainable_yaqin_excludes_ghalaba
+#check @Usul.Refinements.ijtihad_not_overturned_by_ijtihad
+#check @Usul.Refinements.evident_error_sets_aside
