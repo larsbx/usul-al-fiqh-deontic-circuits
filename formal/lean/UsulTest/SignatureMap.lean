@@ -51,6 +51,11 @@ import Usul
 #check @Usul.Sadi.q11_yaqin
 #check @Usul.Qawaid.yaqin_la_yazul_bish_shakk
 #check @Usul.Schema.yaqin_doubts_inert
+#check @Usul.Refinements.abstains
+#check @Usul.Refinements.abstention_keeps_status
+#check @Usul.Refinements.known_absence_ends_abstention
+#check @Usul.Refinements.hamlAlaAdna
+#check @Usul.Refinements.adna_is_certain
 #check @Usul.Muamalat.Exchange.gate
 #check @Usul.Muamalat.q12_no_contract_without_consent
 #check @Usul.Muamalat.q12_mutual_consent_suffices
@@ -69,6 +74,9 @@ import Usul
 #check @Usul.Muamalat.authorizedHold
 #check @Usul.Muamalat.q14_liable_iff_unauthorized
 #check @Usul.Muamalat.q14_factors_through_authorization
+#check @Usul.Refinements.trustVoided
+#check @Usul.Refinements.compound_trust_survives
+#check @Usul.Refinements.liability_independent_of_voidance
 #check @Usul.Kulliyyat.mayInflict
 #check @Usul.Kulliyyat.q15_no_harm
 #check @Usul.Kulliyyat.q15_no_reciprocal_harm
@@ -88,6 +96,9 @@ import Usul
 #check @Usul.Muamalat.recipient
 #check @Usul.Muamalat.q20_unknown_owner
 #check @Usul.Muamalat.q20_is_priority
+#check @Usul.Refinements.treatedAsAbsent
+#check @Usul.Refinements.q20_is_instance
+#check @Usul.Refinements.knowable_not_set_aside
 #check @Usul.Muamalat.ghararForbidden
 #check @Usul.Muamalat.q21_forbidden_iff
 #check @Usul.Muamalat.q42_instance_of_q21
@@ -135,6 +146,8 @@ import Usul
 #check @Usul.Refinements.recourseFull
 #check @Usul.Refinements.recourseFull_conservative
 #check @Usul.Refinements.no_recourse_unowed_unpermitted
+#check @Usul.Refinements.recourseNec
+#check @Usul.Refinements.recourseNec_conservative
 #check @Usul.Sadi.best
 #check @Usul.Sadi.q33_higher_benefit
 #check @Usul.Sadi.q33_lighter_harm

@@ -59,9 +59,10 @@ ENCODERS: dict[str, dict] = {
         out=B, lean="Usul.Muamalat.partnerMustJoin {necessary} {consents}",
         py=lambda f: f["necessary"] or f["consents"]),
     "recourse": dict(
-        sadi=[32], qawaid=[RAJAB.format(75)], facts={"gift": B, "owed_by_other": B, "permission": B},
-        out=B, lean="Usul.Refinements.recourseFull {gift} {owed_by_other} {permission}",
-        py=lambda f: not f["gift"] and (f["owed_by_other"] or f["permission"])),
+        sadi=[32], qawaid=[RAJAB.format(75)],
+        facts={"gift": B, "owed_by_other": B, "permission": B, "permission_unobtainable": B},
+        out=B, lean="Usul.Refinements.recourseNec {gift} {owed_by_other} {permission} {permission_unobtainable}",
+        py=lambda f: not f["gift"] and (f["owed_by_other"] or f["permission"] or f["permission_unobtainable"])),
     "lots": dict(
         sadi=[25], qawaid=[RAJAB.format(160)], facts={"entitled_known": B, "divisible": B, "confusion_category": B},
         out=("toEntitled", "divide", "lot"),
@@ -102,6 +103,22 @@ ENCODERS: dict[str, dict] = {
         out=HUKM, lean="Usul.Dalala.amrStatus {qarina}",
         lits={"qarina": {"none": "none", **{h: f"(some .{h})" for h in HUKM}}},
         py=lambda f: "wajib" if f["qarina"] == "none" else f["qarina"]),
+    "unknown_as_nonexistent": dict(
+        sadi=[20], qawaid=[RAJAB.format(106)], facts={"unknown": B, "despair": B, "hardship": B},
+        out=B, lean="Usul.Refinements.treatedAsAbsent {unknown} {despair} {hardship}",
+        py=lambda f: f["unknown"] and (f["despair"] or f["hardship"])),
+    "haml_ala_adna": dict(
+        sadi=[], qawaid=[LAHHAM.format(52)], facts={"unspecified": B, "ranked": B},
+        out=B, lean="Usul.Refinements.hamlAlaAdna {unspecified} {ranked}",
+        py=lambda f: f["unspecified"] and f["ranked"]),
+    "trust_voidance": dict(
+        sadi=[14], qawaid=[RAJAB.format(45)], facts={"pure_trust": B, "transgressed": B},
+        out=B, lean="Usul.Refinements.trustVoided {pure_trust} {transgressed}",
+        py=lambda f: f["pure_trust"] and f["transgressed"]),
+    "abstention_under_possible_condition": dict(
+        sadi=[11], qawaid=[RAJAB.format(160)], facts={"suspended": B, "possible": B, "absence_known": B},
+        out=B, lean="Usul.Refinements.abstains {suspended} {possible} {absence_known}",
+        py=lambda f: f["suspended"] and f["possible"] and not f["absence_known"]),
     "umum_lafz": dict(
         sadi=[], qawaid=[LAHHAM.format(61)], facts={"in_occasion": B, "general_wording": B},
         out=B, lean="Usul.Dalala.coversBeyondSabab true {in_occasion} {general_wording}",

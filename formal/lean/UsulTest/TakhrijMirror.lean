@@ -24,14 +24,22 @@ import Usul
 #guard (Usul.Muamalat.partnerMustJoin false true) == true
 #guard (Usul.Muamalat.partnerMustJoin true false) == true
 #guard (Usul.Muamalat.partnerMustJoin true true) == true
-#guard (Usul.Refinements.recourseFull false false false) == false
-#guard (Usul.Refinements.recourseFull false false true) == true
-#guard (Usul.Refinements.recourseFull false true false) == true
-#guard (Usul.Refinements.recourseFull false true true) == true
-#guard (Usul.Refinements.recourseFull true false false) == false
-#guard (Usul.Refinements.recourseFull true false true) == false
-#guard (Usul.Refinements.recourseFull true true false) == false
-#guard (Usul.Refinements.recourseFull true true true) == false
+#guard (Usul.Refinements.recourseNec false false false false) == false
+#guard (Usul.Refinements.recourseNec false false false true) == true
+#guard (Usul.Refinements.recourseNec false false true false) == true
+#guard (Usul.Refinements.recourseNec false false true true) == true
+#guard (Usul.Refinements.recourseNec false true false false) == true
+#guard (Usul.Refinements.recourseNec false true false true) == true
+#guard (Usul.Refinements.recourseNec false true true false) == true
+#guard (Usul.Refinements.recourseNec false true true true) == true
+#guard (Usul.Refinements.recourseNec true false false false) == false
+#guard (Usul.Refinements.recourseNec true false false true) == false
+#guard (Usul.Refinements.recourseNec true false true false) == false
+#guard (Usul.Refinements.recourseNec true false true true) == false
+#guard (Usul.Refinements.recourseNec true true false false) == false
+#guard (Usul.Refinements.recourseNec true true false true) == false
+#guard (Usul.Refinements.recourseNec true true true false) == false
+#guard (Usul.Refinements.recourseNec true true true true) == false
 #guard (Usul.Refinements.allocationFull false false false) == .lot
 #guard (Usul.Refinements.allocationFull false false true) == .lot
 #guard (Usul.Refinements.allocationFull false true false) == .divide
@@ -136,6 +144,30 @@ import Usul
 #guard (Usul.Dalala.amrStatus (some .mubah)) == .mubah
 #guard (Usul.Dalala.amrStatus (some .makruh)) == .makruh
 #guard (Usul.Dalala.amrStatus (some .haram)) == .haram
+#guard (Usul.Refinements.treatedAsAbsent false false false) == false
+#guard (Usul.Refinements.treatedAsAbsent false false true) == false
+#guard (Usul.Refinements.treatedAsAbsent false true false) == false
+#guard (Usul.Refinements.treatedAsAbsent false true true) == false
+#guard (Usul.Refinements.treatedAsAbsent true false false) == false
+#guard (Usul.Refinements.treatedAsAbsent true false true) == true
+#guard (Usul.Refinements.treatedAsAbsent true true false) == true
+#guard (Usul.Refinements.treatedAsAbsent true true true) == true
+#guard (Usul.Refinements.hamlAlaAdna false false) == false
+#guard (Usul.Refinements.hamlAlaAdna false true) == false
+#guard (Usul.Refinements.hamlAlaAdna true false) == false
+#guard (Usul.Refinements.hamlAlaAdna true true) == true
+#guard (Usul.Refinements.trustVoided false false) == false
+#guard (Usul.Refinements.trustVoided false true) == false
+#guard (Usul.Refinements.trustVoided true false) == false
+#guard (Usul.Refinements.trustVoided true true) == true
+#guard (Usul.Refinements.abstains false false false) == false
+#guard (Usul.Refinements.abstains false false true) == false
+#guard (Usul.Refinements.abstains false true false) == false
+#guard (Usul.Refinements.abstains false true true) == false
+#guard (Usul.Refinements.abstains true false false) == false
+#guard (Usul.Refinements.abstains true false true) == false
+#guard (Usul.Refinements.abstains true true false) == true
+#guard (Usul.Refinements.abstains true true true) == false
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 #guard (Usul.Dalala.coversBeyondSabab true true false) == true

@@ -128,7 +128,7 @@ import Usul
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f006 (genuine_ikhtilaf)
 #guard (Usul.Dalala.IsGeneralIn .definiteAl .affirmation false) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f008 (genuine_ikhtilaf)
-#guard (Usul.Dalala.IsGeneralIn .definiteAl .affirmation false) == true
+#guard (Usul.Refinements.hamlAlaAdna true true) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f009 (derivable)
 #guard (Usul.Dalala.IsGeneralIn .definiteAl .condition false) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f001 (derivable)
@@ -207,6 +207,12 @@ import Usul
 #guard (Usul.Refinements.allocationFull false false false) == .lot
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f025 (genuine_ikhtilaf)
 #guard (Usul.Refinements.allocationFull false false false) == .lot
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f026 (derivable)
+#guard (Usul.Refinements.abstains true true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f027 (derivable)
+#guard (Usul.Refinements.abstains true true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f028 (derivable)
+#guard (Usul.Refinements.abstains true true false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f029 (genuine_ikhtilaf)
 #guard (Usul.Refinements.allocationFull false false false) == .lot
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f030 (derivable)
@@ -268,33 +274,35 @@ import Usul
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f005 (derivable)
 #guard (Usul.Muamalat.partnerMustJoin true false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f001 (genuine_ikhtilaf)
-#guard (Usul.Refinements.recourseFull false true false) == true
+#guard (Usul.Refinements.recourseNec false true false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f002 (derivable)
-#guard (Usul.Refinements.recourseFull false true false) == true
+#guard (Usul.Refinements.recourseNec false true false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f003 (derivable)
-#guard (Usul.Refinements.recourseFull false true false) == true
+#guard (Usul.Refinements.recourseNec false true false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f004 (derivable)
-#guard (Usul.Refinements.recourseFull false false true) == true
+#guard (Usul.Refinements.recourseNec false false true false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f005 (genuine_ikhtilaf)
-#guard (Usul.Refinements.recourseFull false true false) == true
+#guard (Usul.Refinements.recourseNec false true false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f006 (derivable)
+#guard (Usul.Refinements.recourseNec false false false true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f007 (genuine_ikhtilaf)
-#guard (Usul.Refinements.recourseFull false true false) == true
+#guard (Usul.Refinements.recourseNec false true false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f008 (genuine_ikhtilaf)
-#guard (Usul.Refinements.recourseFull false true false) == true
+#guard (Usul.Refinements.recourseNec false true false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f009 (genuine_ikhtilaf)
-#guard (Usul.Refinements.recourseFull false false false) == false
+#guard (Usul.Refinements.recourseNec false false false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f010 (derivable)
-#guard (Usul.Refinements.recourseFull false false false) == false
+#guard (Usul.Refinements.recourseNec false false false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f011 (genuine_ikhtilaf)
-#guard (Usul.Refinements.recourseFull false true false) == true
+#guard (Usul.Refinements.recourseNec false true false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f012 (genuine_ikhtilaf)
-#guard (Usul.Refinements.recourseFull false true false) == true
+#guard (Usul.Refinements.recourseNec false true false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f013 (derivable)
-#guard (Usul.Refinements.recourseFull false true false) == true
+#guard (Usul.Refinements.recourseNec false true false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f014 (derivable)
-#guard (Usul.Refinements.recourseFull false true false) == true
+#guard (Usul.Refinements.recourseNec false true false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f015 (derivable)
-#guard (Usul.Refinements.recourseFull false true false) == true
+#guard (Usul.Refinements.recourseNec false true false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f001 (genuine_ikhtilaf)
 #guard (Usul.Sadi.useSubstitute true) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f002 (derivable)
@@ -385,7 +393,15 @@ import Usul
 #guard (Usul.Muamalat.lossLiable .trustee true false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004 (derivable)
 #guard (Usul.Muamalat.lossLiable .trustee false true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005 (genuine_ikhtilaf)
+#guard (Usul.Refinements.trustVoided false true) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f001 (derivable)
+#guard (Usul.Refinements.treatedAsAbsent true true false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003 (derivable)
 #guard (Usul.Muamalat.recipient false) == .publicInterest
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f004 (genuine_ikhtilaf)
+#guard (Usul.Refinements.treatedAsAbsent true false true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f005 (derivable)
+#guard (Usul.Refinements.treatedAsAbsent true false true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f006 (derivable)
 #guard (Usul.Refinements.allocationFull false false false) == .lot

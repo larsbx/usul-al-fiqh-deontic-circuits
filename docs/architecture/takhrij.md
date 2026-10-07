@@ -110,4 +110,41 @@ Not revisited:
 
 The refinements do not decide IQ-09 or IQ-20. They make the alternatives each question names expressible, and are pinned there: adopting one as *the* reading of Q25 or Q52 is the review decision those questions ask for.
 
-After this round: 214 cases, **coverage 0.906**, **madhhab coverage 0.582**, **0 encoding errors** (from 7 at the start of M4), 21 open gaps, 14 revisited.
+After this round: 214 cases, **coverage 0.906**, **madhhab coverage 0.582**, **0 encoding errors** (from 7 at the start of M4), 21 open gaps, 13 revisited.
+
+**Third round: the open gaps' own principles.** The remaining gaps named principles, not inputs. Each was formalised from the text that states it, in `Usul.Refinements`, and given an encoder. The queue then held nine cases, and all closed:
+
+| Principle | Ground | Revisited |
+|---|---|---|
+| `treatedAsAbsent`: the unknown is treated as non-existent when one despairs of learning it or taking it into account is a hardship. Al-Saʿdī's Q20 is its instance (`q20_is_instance`) | Ibn Rajab 106 («ينزل المجهول منزلة المعدوم… إذا يئس من الوقوف عليه أو شق اعتباره») | 106.f001, f005 missing rule → derivable; f004 → ikhtilāf on the madhhab side |
+| `hamlAlaAdna`: an unspecified intention over ranked referents is read as the lowest, because the lowest is certain (`adna_is_certain`) | Ibn al-Laḥḥām 52.f008 («تنزيلا له على الأدنى»), grounded in Aḥmad's naṣṣ «له أخسهم… لأنه المتيقن» (Ibn Rajab v1 p351) | 52.f008 → ikhtilāf on the madhhab side |
+| `trustVoided`: a pure trust is voided by transgression, a compound trust is not. Liability is independent of voidance | Ibn Rajab 45 («الأمانة المحضة تبطل بالتعدي…») | 45.f005 missing rule → ikhtilāf (Ibn ʿAqīl's two possibilities, neither marked; the kernel takes the qāʿida's compound-trust position) |
+| `recourseNec`: where asking the owner is impossible, recourse as if permitted. Conservative over `recourseFull` | Ibn Rajab 75.f006, and the ground given for the judge's permission: «إذنه قائم مقام إذن الغائب» (v1 p138) | 75.f006 missing fact → derivable |
+| `abstains`: while a divorce condition may have occurred, the husband abstains until its absence is known. The status is untouched (`abstention_keeps_status`, from Q11) | Taqī al-Dīn on Aḥmad's texts, cited by Ibn Rajab (v1 p357); «متيقن لحل زوجته شاك في تحريمها» (p356) | 160.f026, f027, f028 missing rule → derivable |
+
+These are not refinements of earlier readings. The new encoders sit beside the old ones, so no earlier guard is touched. `recourseNec` is the exception: it extends `recourseFull` and carries its conservativity theorem.
+
+After this round: 214 cases, **coverage 0.944**, **madhhab coverage 0.620**, **0 encoding errors**, 12 open gaps, 22 revisited. The open gaps are:
+- the six command points of Ibn al-Laḥḥām 43, among them the policy dispute 43.f004;
+- ghulūl forfeiture (140.f006);
+- the speaker inside his own speech (52.f007);
+- the negated indefinite by syntactic role (54.f002);
+- tie-break criteria for lots (160.f038);
+- luqaṭa (106.f002);
+- specifying iḥrām (106.f007).
+
+### Citations, rationale and terms
+
+Every closure is documented in [the dossier](dossier.md). For each principle it gives:
+- the statement and the texts, with excerpts verified verbatim against the pinned witness;
+- the conditions and the rationale;
+- the Lean constants and the conservativity theorem;
+- the related register questions.
+
+Both the dossier and [the glossary](../glossary.md) are generated (`python -m usul_corpus docs`) from `corpus/dossier/*.json`. `test_dossier.py` keeps them honest:
+- no `closed_by` tag without a dossier entry;
+- every ref resolves to a record or a registered witness;
+- each excerpt is verbatim, checked letters-only against the cache, with its page computed from the next page marker;
+- every constant is `#check`-ed;
+- every term is a glossary key;
+- every refinement by an added fact names its conservativity theorem.

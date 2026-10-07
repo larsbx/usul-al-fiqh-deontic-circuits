@@ -1098,29 +1098,32 @@
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f008",
-   "encoder": "generality",
+   "encoder": "haml_ala_adna",
    "class": "genuine_ikhtilaf",
    "facts": {
-    "form": "definiteAl",
-    "context": "affirmation",
-    "ahd": false
+    "unspecified": true,
+    "ranked": true
    },
    "expected": true,
+   "note": "Tayammum intended for «al-ṣalāt» without specifying obligatory or supererogatory: by the rule of generality it covers both, or «تنزيلا له على الأدنى» only the supererogatory; the latter is «أشهرهما عند الأصحاب», which the lowest-reading derives (the lowest is the certain).",
+   "revisit": {
+    "from_class": "genuine_ikhtilaf",
+    "closed_by": [
+     "rule:haml_ala_adna"
+    ],
+    "from_encoder": "generality"
+   },
    "positions": [
     {
-     "who": "by the qa'ida (fard and nafl)",
-     "ruling": true
+     "who": "by the rule (generality of al-)",
+     "ruling": false
     },
     {
-     "who": "ashhar 'inda al-ashab (only nafl, the lowest)",
-     "ruling": false
+     "who": "ashhar ʿinda al-aṣḥāb (tanzīl ʿalā al-adnā)",
+     "ruling": true
     }
    ],
-   "matches_madhhab": false,
-   "note": "Tayammum intended for 'al-salat' without specifying: two views, covering obligatory and supererogatory by the rule or only the supererogatory; the ashhar is the latter, so the kernel matches the non-mashhur view. The majority's restriction is «tanzīlan lahu ʿalā al-adnā» (reading toward the lowest), a different principle from ʿahd; the earlier fact:ahd tag was corrected on revisit.",
-   "needs": [
-    "rule:haml_ala_adna"
-   ]
+   "matches_madhhab": true
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f009",
@@ -1844,36 +1847,60 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f026",
-   "encoder": "lots",
-   "class": "missing_rule",
-   "facts": null,
-   "expected": null,
-   "note": "Wife whose divorce he delegated to an agent: he abstains until he knows what the agent did; this is Taqī al-Dīn's principle of abstention while a divorce condition may have occurred, not qurʿa.",
-   "needs": [
-    "rule:abstention_under_possible_condition"
-   ]
+   "encoder": "abstention_under_possible_condition",
+   "class": "derivable",
+   "facts": {
+    "suspended": true,
+    "possible": true,
+    "absence_known": false
+   },
+   "expected": true,
+   "note": "Having appointed an agent to divorce his wife, he abstains from her «حتى يدري ما يفعل»: the divorce depends on what may already have happened, so by Taqī al-Dīn's summary of Aḥmad's texts he abstains until its absence is known.",
+   "revisit": {
+    "from_class": "missing_rule",
+    "closed_by": [
+     "rule:abstention_under_possible_condition"
+    ],
+    "from_encoder": "lots"
+   }
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f027",
-   "encoder": "lots",
-   "class": "missing_rule",
-   "facts": null,
-   "expected": null,
-   "note": "Divorce 'on Laylat al-Qadr': he abstains from the last ten nights; decided by the abstention-under-possible-condition principle, not by lots.",
-   "needs": [
-    "rule:abstention_under_possible_condition"
-   ]
+   "encoder": "abstention_under_possible_condition",
+   "class": "derivable",
+   "facts": {
+    "suspended": true,
+    "possible": true,
+    "absence_known": false
+   },
+   "expected": true,
+   "note": "«You are divorced on Laylat al-Qadr»: he abstains once the last ten nights begin «لإمكان أن يكون أول ليلة» (since it may be the first night).",
+   "revisit": {
+    "from_class": "missing_rule",
+    "closed_by": [
+     "rule:abstention_under_possible_condition"
+    ],
+    "from_encoder": "lots"
+   }
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f028",
-   "encoder": "lots",
-   "class": "missing_rule",
-   "facts": null,
-   "expected": null,
-   "note": "Divorce 'a month before my death': he abstains absolutely (Muhannā); same abstention principle, not qurʿa (the appended sentence only cross-references the raven case).",
-   "needs": [
-    "rule:abstention_under_possible_condition"
-   ]
+   "encoder": "abstention_under_possible_condition",
+   "class": "derivable",
+   "facts": {
+    "suspended": true,
+    "possible": true,
+    "absence_known": false
+   },
+   "expected": true,
+   "note": "«You are divorced a month before my death»: he abstains absolutely (Muhannā from Aḥmad), since the condition may already obtain and its absence cannot be known in his lifetime.",
+   "revisit": {
+    "from_class": "missing_rule",
+    "closed_by": [
+     "rule:abstention_under_possible_condition"
+    ],
+    "from_encoder": "lots"
+   }
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f029",
@@ -2469,7 +2496,8 @@
    "facts": {
     "gift": false,
     "owed_by_other": true,
-    "permission": false
+    "permission": false,
+    "permission_unobtainable": false
    },
    "expected": true,
    "positions": [
@@ -2492,7 +2520,8 @@
    "facts": {
     "gift": false,
     "owed_by_other": true,
-    "permission": false
+    "permission": false,
+    "permission_unobtainable": false
    },
    "expected": true,
    "note": "Maintenance of slaves, wives, kin or animals paid by a third party, with intent of recourse, when the obligor refuses gives recourse like paying debts (al-Qāḍī, Ibn ʿAqīl)."
@@ -2504,7 +2533,8 @@
    "facts": {
     "gift": false,
     "owed_by_other": true,
-    "permission": false
+    "permission": false,
+    "permission_unobtainable": false
    },
    "expected": true,
    "note": "Spending on a runaway slave while returning him gives recourse (naṣṣ, no dispute among most), even if he escapes again before delivery."
@@ -2516,7 +2546,8 @@
    "facts": {
     "gift": false,
     "owed_by_other": false,
-    "permission": true
+    "permission": true,
+    "permission_unobtainable": false
    },
    "expected": true,
    "note": "Spending on a found item with the judge's permission gives recourse, «because his permission stands in place of the absent owner's»; without it the two riwāyāt (not encoded here).",
@@ -2534,7 +2565,8 @@
    "facts": {
     "gift": false,
     "owed_by_other": true,
-    "permission": false
+    "permission": false,
+    "permission_unobtainable": false
    },
    "expected": true,
    "positions": [
@@ -2553,13 +2585,21 @@
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f006",
    "encoder": "recourse",
-   "class": "missing_fact",
-   "facts": null,
-   "expected": null,
-   "note": "A depositary feeding a deposited animal intending recourse has it if asking the owner was impossible, and otherwise faces two disputed ṭarīqas; it turns on whether permission could be sought, which the encoder lacks. Re-tagged on revisit: the deciding fact is that asking the owner was impossible («تعذر استئذان مالكه»), not permission itself.",
-   "needs": [
-    "fact:permission_unobtainable"
-   ]
+   "class": "derivable",
+   "facts": {
+    "gift": false,
+    "owed_by_other": false,
+    "permission": false,
+    "permission_unobtainable": true
+   },
+   "expected": true,
+   "note": "A depositary who feeds the deposited animal intending recourse has it «فإن تعذر استئذان مالكه»; when asking was possible there are two ṭarīqas (not encoded here).",
+   "revisit": {
+    "from_class": "missing_fact",
+    "closed_by": [
+     "fact:permission_unobtainable"
+    ]
+   }
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f007",
@@ -2568,7 +2608,8 @@
    "facts": {
     "gift": false,
     "owed_by_other": true,
-    "permission": false
+    "permission": false,
+    "permission_unobtainable": false
    },
    "expected": true,
    "positions": [
@@ -2591,7 +2632,8 @@
    "facts": {
     "gift": false,
     "owed_by_other": true,
-    "permission": false
+    "permission": false,
+    "permission_unobtainable": false
    },
    "expected": true,
    "positions": [
@@ -2614,7 +2656,8 @@
    "facts": {
     "gift": false,
     "owed_by_other": false,
-    "permission": false
+    "permission": false,
+    "permission_unobtainable": false
    },
    "expected": false,
    "note": "A pledgee rebuilding a ruined pledged house without permission: only his own materials, «because building the house is not owed by the owner» (al-Qāḍī in al-Mujarrad, al-Mughnī, al-Muḥarrir), or recourse as in the pledge's interest (al-Qāḍī in al-Khilāf); no position is marked as the madhhab.",
@@ -2643,7 +2686,8 @@
    "facts": {
     "gift": false,
     "owed_by_other": false,
-    "permission": false
+    "permission": false,
+    "permission_unobtainable": false
    },
    "expected": false,
    "note": "A lessee rebuilding the rented house has no recourse (naṣṣ of Aḥmad): the rebuilding was not owed by the lessor (al-Talkhīṣ: he is compelled to repairs, not to renewal).",
@@ -2661,7 +2705,8 @@
    "facts": {
     "gift": false,
     "owed_by_other": true,
-    "permission": false
+    "permission": false,
+    "permission_unobtainable": false
    },
    "expected": true,
    "positions": [
@@ -2684,7 +2729,8 @@
    "facts": {
     "gift": false,
     "owed_by_other": true,
-    "permission": false
+    "permission": false,
+    "permission_unobtainable": false
    },
    "expected": true,
    "positions": [
@@ -2707,7 +2753,8 @@
    "facts": {
     "gift": false,
     "owed_by_other": true,
-    "permission": false
+    "permission": false,
+    "permission_unobtainable": false
    },
    "expected": true,
    "note": "A wife who borrows her own and her children's standard maintenance in her husband's absence has recourse (naṣṣ, Abū Zurʿa), with no judge's permission required."
@@ -2719,7 +2766,8 @@
    "facts": {
     "gift": false,
     "owed_by_other": true,
-    "permission": false
+    "permission": false,
+    "permission_unobtainable": false
    },
    "expected": true,
    "note": "A lender of an item for pledging who redeems it by paying the debt has recourse in one voice (al-Qāḍī)."
@@ -2731,7 +2779,8 @@
    "facts": {
     "gift": false,
     "owed_by_other": true,
-    "permission": false
+    "permission": false,
+    "permission_unobtainable": false
    },
    "expected": true,
    "note": "An heir who pays the deceased's debt to free the estate has recourse, with no dispute in al-Qāḍī."
@@ -3532,25 +3581,51 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005",
-   "encoder": "trust_loss",
-   "class": "missing_rule",
-   "facts": null,
-   "expected": null,
-   "note": "Whether a transgressing executor ceases to be executor (two ihtimalat of Ibn 'Aqil) is decided by the pure-trust vs compound-trust voidance principle, not by loss liability.",
-   "needs": [
-    "rule:trust_voidance"
-   ]
+   "encoder": "trust_voidance",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "pure_trust": false,
+    "transgressed": true
+   },
+   "expected": false,
+   "note": "Does an executor who transgresses cease to be executor? Ibn ʿAqīl gives two possibilities, unmarked. Executorship is a trust that includes authority (wilāya), and the qāʿida's madhhab statement keeps such a compound trust after transgression, which the reading derives; the case itself marks neither possibility as the madhhab.",
+   "revisit": {
+    "from_class": "missing_rule",
+    "closed_by": [
+     "rule:trust_voidance"
+    ],
+    "from_encoder": "trust_loss"
+   },
+   "positions": [
+    {
+     "who": "first possibility (Ibn ʿAqīl, al-Mufradāt): voided",
+     "ruling": true
+    },
+    {
+     "who": "second possibility: not voided",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f001",
-   "encoder": "unknown_owner",
-   "class": "missing_rule",
-   "facts": null,
-   "expected": null,
-   "note": "Days of a mustahada beyond her sitting are treated as non-existent (purity rulings); no right-holder is involved, the broader 'unknown as non-existent' rule decides.",
-   "needs": [
-    "rule:unknown_as_nonexistent"
-   ]
+   "encoder": "unknown_as_nonexistent",
+   "class": "derivable",
+   "facts": {
+    "unknown": true,
+    "despair": true,
+    "hardship": false
+   },
+   "expected": true,
+   "note": "The days of the mustaḥāḍa beyond her customary sitting are treated as non-existent (she takes the rulings of the pure), «فإن مدة الاستحاضة تطول ولا غاية لها تنتظر»: one despairs of learning them, unlike the beginner's doubtful days, which become known by repetition soon.",
+   "revisit": {
+    "from_class": "missing_rule",
+    "closed_by": [
+     "rule:unknown_as_nonexistent"
+    ],
+    "from_encoder": "unknown_owner"
+   }
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002",
@@ -3575,25 +3650,52 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f004",
-   "encoder": "unknown_owner",
-   "class": "missing_rule",
-   "facts": null,
-   "expected": null,
-   "note": "A sister confused among a city's women, carrion among a town's meat, a little haram among much halal: the unknown prohibited item is disregarded (ishtibah rule), not a right-holder question.",
-   "needs": [
-    "rule:unknown_as_nonexistent"
-   ]
+   "encoder": "unknown_as_nonexistent",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "unknown": true,
+    "despair": false,
+    "hardship": true
+   },
+   "expected": true,
+   "note": "A sister confused among the women of a city: he may marry from them without investigation «على أصح الوجهين» (also carrion among a town's meat, a little forbidden among much permitted); taking the unknown into account is a hardship. Ibn Rajab excepts the case where the forbidden is many and predominant, which falls to the aṣl/ẓāhir conflict.",
+   "revisit": {
+    "from_class": "missing_rule",
+    "closed_by": [
+     "rule:unknown_as_nonexistent"
+    ],
+    "from_encoder": "unknown_owner"
+   },
+   "positions": [
+    {
+     "who": "aṣaḥḥ al-wajhayn (no investigation needed)",
+     "ruling": true
+    },
+    {
+     "who": "the other wajh (investigate)",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f005",
-   "encoder": "unknown_owner",
-   "class": "missing_rule",
-   "facts": null,
-   "expected": null,
-   "note": "Street mud is ruled pure (al-sahih al-mansus): unknown impurity treated as non-existent, no right-holder.",
-   "needs": [
-    "rule:unknown_as_nonexistent"
-   ]
+   "encoder": "unknown_as_nonexistent",
+   "class": "derivable",
+   "facts": {
+    "unknown": true,
+    "despair": false,
+    "hardship": true
+   },
+   "expected": true,
+   "note": "Street mud is ruled pure «على الصحيح المنصوص»: its unknown impurity is set aside because taking it into account is a hardship.",
+   "revisit": {
+    "from_class": "missing_rule",
+    "closed_by": [
+     "rule:unknown_as_nonexistent"
+    ],
+    "from_encoder": "unknown_owner"
+   }
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f006",

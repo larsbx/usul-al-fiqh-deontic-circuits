@@ -170,7 +170,12 @@
    "lean": [
     "Usul.Sadi.q11_yaqin",
     "Usul.Qawaid.yaqin_la_yazul_bish_shakk",
-    "Usul.Schema.yaqin_doubts_inert"
+    "Usul.Schema.yaqin_doubts_inert",
+    "Usul.Refinements.abstains",
+    "Usul.Refinements.abstention_keeps_status",
+    "Usul.Refinements.known_absence_ends_abstention",
+    "Usul.Refinements.hamlAlaAdna",
+    "Usul.Refinements.adna_is_certain"
    ],
    "schemata": [
     "S5-inert"
@@ -224,7 +229,10 @@
     "Usul.Muamalat.q14_fault_makes_trustee_liable",
     "Usul.Muamalat.authorizedHold",
     "Usul.Muamalat.q14_liable_iff_unauthorized",
-    "Usul.Muamalat.q14_factors_through_authorization"
+    "Usul.Muamalat.q14_factors_through_authorization",
+    "Usul.Refinements.trustVoided",
+    "Usul.Refinements.compound_trust_survives",
+    "Usul.Refinements.liability_independent_of_voidance"
    ],
    "schemata": [
     "S1-invariance"
@@ -309,7 +317,10 @@
    "lean": [
     "Usul.Muamalat.recipient",
     "Usul.Muamalat.q20_unknown_owner",
-    "Usul.Muamalat.q20_is_priority"
+    "Usul.Muamalat.q20_is_priority",
+    "Usul.Refinements.treatedAsAbsent",
+    "Usul.Refinements.q20_is_instance",
+    "Usul.Refinements.knowable_not_set_aside"
    ],
    "schemata": [
     "S2-priority"
@@ -487,7 +498,9 @@
     "Usul.Muamalat.q32_is_gate",
     "Usul.Refinements.recourseFull",
     "Usul.Refinements.recourseFull_conservative",
-    "Usul.Refinements.no_recourse_unowed_unpermitted"
+    "Usul.Refinements.no_recourse_unowed_unpermitted",
+    "Usul.Refinements.recourseNec",
+    "Usul.Refinements.recourseNec_conservative"
    ],
    "emendation": "Body heading lost to OCR; index stub reads «من أدى عن غيره واجبات…»; the completion «رجع عليه» is an editorial reading to be checked against the scan.",
    "schemata": [

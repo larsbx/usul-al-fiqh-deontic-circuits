@@ -4,6 +4,8 @@
     python -m usul_corpus build
     python -m usul_corpus validate
     python -m usul_corpus signature   # regenerate the Lean Σ-coverage check
+    python -m usul_corpus takhrij     # regenerate the takhrīj guards and report
+    python -m usul_corpus docs        # render the dossier and glossary pages from corpus/dossier
     python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
 """
 
@@ -33,6 +35,8 @@ from .verses import link_commentary, segment_verse_block
 ROOT = Path(__file__).resolve().parents[2]
 CORPUS = ROOT / "corpus"
 CACHE = ROOT / ".cache" / "corpus"
+DOSSIER = CORPUS / "dossier" / "refinements.json"
+GLOSSARY = CORPUS / "dossier" / "glossary.json"
 FETCHABLE = {"located", "located_ocr"}
 
 
@@ -210,7 +214,9 @@ def _lean_names() -> list[str]:
     proposals = [n for p in sorted((CORPUS / "proposals").glob("*.json")) for r in _load(p)["rules"] for n in r["lean"]]
     review = [n for p in sorted((CORPUS / "review").glob("*.json")) for n in _review_names(_load(p))]
     citations = [n for p in sorted((CORPUS / "citations").glob("*.json")) for ns in _load(p)["formalises"].values() for n in ns]
-    return sigma + proposals + review + citations
+    dossier = [n for e in _load(DOSSIER)["entries"] for n in e["lean"]]
+    glossary = [n for t in _load(GLOSSARY)["terms"] for n in t.get("lean", [])]
+    return sigma + proposals + review + citations + dossier + glossary
 
 
 def _review_names(reg: dict) -> list[str]:
@@ -234,6 +240,21 @@ def cmd_takhrij(_: argparse.Namespace) -> int:
     rep = takhrij.report(cases)
     (CORPUS / "takhrij" / "report.json").write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(json.dumps({k: rep[k] for k in ("total", "coverage", "madhhab_coverage", "encoding_error", "ikhtilaf_matching_madhhab", "classes")}, ensure_ascii=False))
+    return 0
+
+
+def docs_pages() -> dict[Path, str]:
+    """The generated documentation pages, keyed by path: the dossier and the glossary."""
+    from .dossier import render_dossier, render_glossary
+    records = {r["id"]: r for p in (CORPUS / "records").glob("*.jsonl") for r in map(json.loads, p.read_text(encoding="utf-8").splitlines())}
+    glossary = _load(GLOSSARY)
+    return {ROOT / "docs/architecture/dossier.md": render_dossier(_load(DOSSIER), records, {t["key"]: t for t in glossary["terms"]}),
+            ROOT / "docs/glossary.md": render_glossary(glossary, records)}
+
+
+def cmd_docs(_: argparse.Namespace) -> int:
+    for path, text in docs_pages().items():
+        path.write_text(text, encoding="utf-8")
     return 0
 
 
@@ -279,6 +300,7 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("validate").set_defaults(run=cmd_validate)
     sub.add_parser("signature").set_defaults(run=cmd_signature)
     sub.add_parser("takhrij").set_defaults(run=cmd_takhrij)
+    sub.add_parser("docs").set_defaults(run=cmd_docs)
     o = sub.add_parser("ocr")
     o.add_argument("--work")
     o.add_argument("--pages", help="PDF page range A-B (default: all)")
