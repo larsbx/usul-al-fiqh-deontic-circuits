@@ -2146,17 +2146,23 @@
    "ar": "التوقف",
    "tr": "al-tawaqquf",
    "gloss": "suspension of judgement",
-   "definition": "Ibn ʿUthaymīn: where two general texts conflict and nothing specifies one by the other, each is acted on where they do not conflict and judgement is suspended where they do. Ibn Rajab reports that Aḥmad suspended judgement on the two-men 'raven' divorce case.",
+   "definition": "Ibn ʿUthaymīn: where two general texts conflict and nothing specifies one by the other, each is acted on where they do not conflict and judgement is suspended where they do. Ibn Rajab reports that Aḥmad suspended judgement on the two-men 'raven' divorce case. Ibn Taymiyya extends it to the single jurist: «وحيث لا يعلم الرجحان فهو متوقف لا قول له». Adopted in the kernel (IQ-21, human review): a ẓann of unknown preponderance is suspended in Qawaid.update, inert as a challenger and counted as shakk as the incumbent.",
    "conditions": [],
    "related": [
+    "ihtiyat",
+    "ilm",
     "taarud",
     "tarjih",
-    "ihtiyat"
+    "zann"
    ],
    "lean": [
     "Usul.Resolution.tawaqquf",
     "Usul.resolve_tawaqquf_iff",
-    "Usul.Process.open_iff"
+    "Usul.Process.open_iff",
+    "Usul.Qawaid.Held.Suspended",
+    "Usul.Qawaid.suspended_inert",
+    "Usul.Qawaid.suspended_yields",
+    "Usul.Qawaid.update_conservative"
    ],
    "refs": [
     {
@@ -2168,6 +2174,11 @@
      "ref": "src:openiti-rajab-shamela21730/v01:p019",
      "excerpt_ar": "ولنا وجه آخر بوجوب اعتزال كل منهما زوجته حتى يتيقن الأمر ونص عليه أحمد رحمه الله في رواية عبد الله ونقل حرب عن أحمد رحمه الله أنه ذكر هذه المسألة فتوقف فيها",
      "note": "Ibn Rajab q14: Aḥmad's tawaqquf (and the iʿtizāl wajh)."
+    },
+    {
+     "ref": "src:openiti-majmufatawa-shamela7289/v13:p120",
+     "excerpt_ar": "وحيث لا يعلم الرجحان فهو متوقف لا قول له",
+     "note": "Ibn Taymiyya: no known preponderance, no view."
     }
    ]
   },

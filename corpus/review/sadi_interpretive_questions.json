@@ -1022,7 +1022,7 @@
     "Whether preponderant belief suffices depends on whether the matter has known indicators (amārāt), as Ibn Rajab says of sunset; this needs a field the reading lacks.",
     "Equal aṣl and ẓāhir are left as khilāf (Ibn Rajab's fourth category), not decided."
    ],
-   "if_changed": "Qawaid.update's tie rule or inputs change; q52_strong_qarina_prevails changes with it. The review process's own reliance on Q11 (yaqin_doubts_inert, doubts at shakk below a certain judgement) is unaffected, since shakk is strictly below zann. A conservative refinement now exists (Usul.Refinements.zahirPrevails: on equal grades the ẓāhir prevails only where the matter has indicators; with amara true it is the old reading, zahirPrevails_conservative); it closed two takhrīj cases. Adopting it is the decision this question asks for.",
+   "if_changed": "Qawaid.update's tie rule or inputs change; q52_strong_qarina_prevails changes with it. The review process's own reliance on Q11 (yaqin_doubts_inert, doubts at shakk below a certain judgement) is unaffected, since shakk is strictly below zann. A conservative refinement now exists (Usul.Refinements.zahirPrevails: on equal grades the ẓāhir prevails only where the matter has indicators; with amara true it is the old reading, zahirPrevails_conservative); it closed two takhrīj cases. Adopting it is the decision this question asks for. Since IQ-21's amendment, q52_strong_qarina_prevails is stated on strength (a suspended ẓann counts as shakk) and requires the indication not to be suspended; for unsuspended judgements it is the earlier statement (Qawaid.update_conservative).",
    "route": "halaqa:shared/usul-k/evidence-order.md",
    "status": "referenced",
    "established": [
@@ -1112,6 +1112,12 @@
      "ref": "ibn_uthaymin.manzuma.archive_manzuma_tess.q090",
      "relation": "bears-on",
      "note": "Ibn ʿUthaymīn, bayt 90: where certainty is unattainable, build on preponderant belief; ghalabat al-ẓann is a fallback below yaqīn, not yaqīn."
+    },
+    {
+     "ref": "src:openiti-majmufatawa-shamela7289/v13:p120",
+     "relation": "agrees",
+     "excerpt_ar": "وحيث لا يعلم الرجحان فهو متوقف لا قول له",
+     "note": "Ibn Taymiyya: where preponderance is not known, the jurist suspends and holds no view; the ground for treating such a ẓann as inert in update."
     }
    ],
    "analogies": [
@@ -1142,8 +1148,26 @@
     ],
     "scope": "Encoding E of this repository: Held carries rujhanKnown, and q11_yaqin, yaqin_la_yazul_bish_shakk, yaqin_doubts_inert and abstention_keeps_status now take Held.IsYaqin. Grade.IsYaqin remains as the grade floor (YaqinFor.isYaqin). halaqa usul-k/evidence-order.md is not written.",
     "follow_up": [
-     "Qawaid.update is still grade-only, so a ẓann of unknown preponderance can still displace or resist like any ẓann; whether it should be treated as suspension (tawaqquf) in update is a separate question, not decided here.",
-     "The takhrīj encoders take grades only (asl_zahir); none constructs a ẓann of unknown preponderance, so no case changes."
+     "The takhrīj encoders take grades only (asl_zahir); none constructs a ẓann of unknown preponderance, so no case changes.",
+     "That a suspended incumbent counts at shakk (rather than, say, yielding to any grounded judgement including wahm) is the formaliser's reading of «لا قول له» together with Ibn ʿUthaymīn's «الوهم… لا يعمل به»; it is recorded here as part of the amendment and may be revisited."
+    ],
+    "amendments": [
+     {
+      "by": "human",
+      "date": "2026-10-07",
+      "instruction": "treat unknown preponderance as tawaqquf in update",
+      "adopted": "In Qawaid.update a ẓann of unknown preponderance is suspended (tawaqquf, «لا قول له»): as a challenger it is inert; as the incumbent it counts at shakk strength and yields to any grounded judgement of at least shakk. Where neither side is suspended, update is the earlier grade-only rule (update_conservative).",
+      "lean": [
+       "Usul.Qawaid.Held.Suspended",
+       "Usul.Qawaid.Held.strength",
+       "Usul.Qawaid.update",
+       "Usul.Qawaid.updateByGrade",
+       "Usul.Qawaid.update_conservative",
+       "Usul.Qawaid.suspended_inert",
+       "Usul.Qawaid.suspended_yields",
+       "Usul.Qawaid.update_strength_mono"
+      ]
+     }
     ]
    }
   }

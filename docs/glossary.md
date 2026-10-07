@@ -1462,11 +1462,11 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-tawaqquf (التوقف)
 
-*suspension of judgement.* Ibn ʿUthaymīn: where two general texts conflict and nothing specifies one by the other, each is acted on where they do not conflict and judgement is suspended where they do. Ibn Rajab reports that Aḥmad suspended judgement on the two-men 'raven' divorce case.
+*suspension of judgement.* Ibn ʿUthaymīn: where two general texts conflict and nothing specifies one by the other, each is acted on where they do not conflict and judgement is suspended where they do. Ibn Rajab reports that Aḥmad suspended judgement on the two-men 'raven' divorce case. Ibn Taymiyya extends it to the single jurist: «وحيث لا يعلم الرجحان فهو متوقف لا قول له». Adopted in the kernel (IQ-21, human review): a ẓann of unknown preponderance is suspended in Qawaid.update, inert as a challenger and counted as shakk as the incumbent.
 
-**Related:** [taarud](#taarud), [tarjih](#tarjih), [ihtiyat](#ihtiyat)
+**Related:** [ihtiyat](#ihtiyat), [ilm](#ilm), [taarud](#taarud), [tarjih](#tarjih), [zann](#zann)
 
-**Lean:** `Usul.Resolution.tawaqquf`, `Usul.resolve_tawaqquf_iff`, `Usul.Process.open_iff`
+**Lean:** `Usul.Resolution.tawaqquf`, `Usul.resolve_tawaqquf_iff`, `Usul.Process.open_iff`, `Usul.Qawaid.Held.Suspended`, `Usul.Qawaid.suspended_inert`, `Usul.Qawaid.suspended_yields`, `Usul.Qawaid.update_conservative`
 
 **Texts**
 
@@ -1474,6 +1474,8 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > وجب العمل بكل منهما فيما لا يتعارضان فيه، والتوقف في الصورة التي يتعارضان فيها.
 - `src:openiti-rajab-shamela21730/v01:p019`: Ibn Rajab q14: Aḥmad's tawaqquf (and the iʿtizāl wajh).
   > ولنا وجه آخر بوجوب اعتزال كل منهما زوجته حتى يتيقن الأمر ونص عليه أحمد رحمه الله في رواية عبد الله ونقل حرب عن أحمد رحمه الله أنه ذكر هذه المسألة فتوقف فيها
+- `src:openiti-majmufatawa-shamela7289/v13:p120`: Ibn Taymiyya: no known preponderance, no view.
+  > وحيث لا يعلم الرجحان فهو متوقف لا قول له
 
 <a id="urf"></a>
 

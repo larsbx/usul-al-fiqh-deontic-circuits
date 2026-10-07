@@ -100,9 +100,9 @@ theorem q11_yaqin {V : Type} (cur ev : Qawaid.Held V) (hy : cur.IsYaqin)
     (hs : ev.grade = .shakk) : Qawaid.update cur ev = cur :=
   Qawaid.yaqin_la_yazul_bish_shakk cur ev hy hs
 
-theorem q52_strong_qarina_prevails {V : Type} (asl q : Qawaid.Held V) (h : asl.grade ≤ q.grade) :
-    Qawaid.update asl q = q := by
-  simp [Qawaid.update, h]
+theorem q52_strong_qarina_prevails {V : Type} (asl q : Qawaid.Held V)
+    (hq : q.Suspended = false) (h : asl.strength ≤ q.strength) : Qawaid.update asl q = q := by
+  simp [Qawaid.update, hq, h]
 
 /-! ## Q16 — justice is obligatory in everything, generosity recommended -/
 

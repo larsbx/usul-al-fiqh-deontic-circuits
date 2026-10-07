@@ -20,22 +20,56 @@ structure Held (V : Type) where
 /-- The judgement is certain for acting (`Grade.YaqinFor`, IQ-21). -/
 def Held.IsYaqin {V : Type} (h : Held V) : Prop := h.grade.YaqinFor h.rujhanKnown
 
-/-- A challenger displaces the incumbent only at equal or higher grade. -/
+/-- Tawaqquf (IQ-21 follow-up, human review): a ẓann whose preponderance is not known is no view.
+Ibn Taymiyya (Majmūʿ v13 p119): «وحيث لا يعلم الرجحان فهو متوقف لا قول له». -/
+def Held.Suspended {V : Type} (h : Held V) : Bool := h.grade == .zann && !h.rujhanKnown
+
+/-- The strength a judgement counts at: a suspended ẓann counts as shakk, since for the one who
+holds it neither side is known to outweigh the other. -/
+def Held.strength {V : Type} (h : Held V) : Grade := if h.Suspended then .shakk else h.grade
+
+/-- A challenger displaces the incumbent only at equal or higher strength; a suspended challenger,
+being no view, displaces nothing. -/
 def update {V : Type} (cur ev : Held V) : Held V :=
+  if !ev.Suspended && decide (cur.strength ≤ ev.strength) then ev else cur
+
+/-- The earlier, grade-only reading. -/
+def updateByGrade {V : Type} (cur ev : Held V) : Held V :=
   if cur.grade ≤ ev.grade then ev else cur
 
-theorem update_grade_mono {V : Type} (cur ev : Held V) : cur.grade ≤ (update cur ev).grade := by
+theorem strength_of_not_suspended {V : Type} {h : Held V} (hs : h.Suspended = false) :
+    h.strength = h.grade := by simp [Held.strength, hs]
+
+/-- Conservative: where neither judgement is suspended, `update` is the grade-only reading. -/
+theorem update_conservative {V : Type} (cur ev : Held V) (hc : cur.Suspended = false)
+    (he : ev.Suspended = false) : update cur ev = updateByGrade cur ev := by
+  simp [update, updateByGrade, he, strength_of_not_suspended hc, strength_of_not_suspended he]
+
+/-- A suspended ẓann is inert as a challenger (S5): «لا قول له». -/
+theorem suspended_inert {V : Type} (cur ev : Held V) (hs : ev.Suspended = true) :
+    update cur ev = cur := by simp [update, hs]
+
+/-- A suspended incumbent yields to any grounded judgement of at least shakk. -/
+theorem suspended_yields {V : Type} (cur ev : Held V) (hc : cur.Suspended = true)
+    (he : ev.Suspended = false) (hg : Grade.shakk ≤ ev.grade) : update cur ev = ev := by
+  simp [update, Held.strength, hc, he, hg]
+
+theorem update_strength_mono {V : Type} (cur ev : Held V) :
+    cur.strength ≤ (update cur ev).strength := by
   unfold update; split
-  · assumption
+  · next h => simp only [Bool.and_eq_true, decide_eq_true_eq] at h; exact h.2
   · exact Nat.le_refl _
 
 /-- Certainty is not removed by doubt. -/
 theorem yaqin_la_yazul_bish_shakk {V : Type} (cur ev : Held V)
     (hy : cur.IsYaqin) (hs : ev.grade = .shakk) : update cur ev = cur := by
+  have hn : cur.Suspended = false := by
+    rcases hy with h | ⟨_, h⟩ <;> simp_all [Held.Suspended]
   have hg := Grade.YaqinFor.isYaqin hy
+  have he : ev.Suspended = false := by simp [Held.Suspended, hs]
   have : ¬ cur.grade ≤ ev.grade := by
     rw [hs]; revert hg; cases cur.grade <;> decide
-  simp [update, this]
+  simp [update, strength_of_not_suspended hn, strength_of_not_suspended he, he, this]
 
 /-! ## *mā lā yatimm al-wājib illā bihi fa-huwa wājib* ∧ *lā wājib maʿa ʿajz* -/
 

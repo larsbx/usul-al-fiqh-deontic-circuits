@@ -115,7 +115,8 @@ def test_adoptions_are_human_and_checked():
     checked = (root / "formal/lean/UsulTest/SignatureMap.lean").read_text()
     for q in (q for q in _register(root)["questions"] if q["status"] == "adopted"):
         assert q["decision"]["by"] == "human" and q["established"], q["id"]
-        assert all(f"#check @{n}\n" in checked for n in q["decision"]["lean"]), q["id"]
+        lean = q["decision"]["lean"] + [n for a in q["decision"].get("amendments", []) for n in a["lean"]]
+        assert all(f"#check @{n}\n" in checked for n in lean), q["id"]
 
 
 def test_citations_resolve_to_pinned_sources():

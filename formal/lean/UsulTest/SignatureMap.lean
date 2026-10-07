@@ -317,6 +317,14 @@ import Usul
 #check @Usul.Grade.yaqinFor_known
 #check @Usul.Grade.zann_unknown_not_yaqin
 #check @Usul.Refinements.yaqinForAmal_iff
+#check @Usul.Qawaid.Held.Suspended
+#check @Usul.Qawaid.Held.strength
+#check @Usul.Qawaid.update
+#check @Usul.Qawaid.updateByGrade
+#check @Usul.Qawaid.update_conservative
+#check @Usul.Qawaid.suspended_inert
+#check @Usul.Qawaid.suspended_yields
+#check @Usul.Qawaid.update_strength_mono
 #check @Usul.Schema.burden_factors
 #check @Usul.Schema.Factors.post
 #check @Usul.Schema.inert_fold
@@ -424,7 +432,6 @@ import Usul
 #check @Usul.Jadal.Qadih.farq
 #check @Usul.DalilKind.istishab
 #check @Usul.Qawaid.Held
-#check @Usul.Qawaid.update
 #check @Usul.Schema.burdenOf
 #check @Usul.Grade.qat
 #check @Usul.Refinements.yaqinForAmal_conservative

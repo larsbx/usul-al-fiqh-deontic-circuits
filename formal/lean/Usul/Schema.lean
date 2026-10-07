@@ -304,9 +304,10 @@ theorem burden_factors :
     by_cases h : c = p <;> simp [burdenOf, h]
 
 /-- With Q52: an indication strong enough to displace the presumption moves the burden. -/
-theorem burden_after_update (cur ev : Qawaid.Held V) (h : cur.grade ≤ ev.grade) (c : V) :
+theorem burden_after_update (cur ev : Qawaid.Held V) (he : ev.Suspended = false)
+    (h : cur.strength ≤ ev.strength) (c : V) :
     burdenOf (Qawaid.update cur ev).value c = burdenOf ev.value c := by
-  rw [Sadi.q52_strong_qarina_prevails cur ev h]
+  rw [Sadi.q52_strong_qarina_prevails cur ev he h]
 
 end Burden
 

@@ -95,8 +95,9 @@ example (e : Exchange) : Deal.gate.Holds ⟨e, .unlawful⟩ → False := fun h =
   nomatch ((deal_holds_iff ⟨e, .unlawful⟩).1 h).2
 
 -- @schema Q52 S6-presumption
-example {V : Type} [DecidableEq V] (cur ev : Qawaid.Held V) (h : cur.grade ≤ ev.grade) (c : V) :
-    burdenOf (Qawaid.update cur ev).value c = burdenOf ev.value c := burden_after_update cur ev h c
+example {V : Type} [DecidableEq V] (cur ev : Qawaid.Held V) (he : ev.Suspended = false)
+    (h : cur.strength ≤ ev.strength) (c : V) :
+    burdenOf (Qawaid.update cur ev).value c = burdenOf ev.value c := burden_after_update cur ev he h c
 
 -- @schema Q53 S4-closure
 example {C : Type} (builtOn : C → C → Prop) (ending : C → Option Ending) :

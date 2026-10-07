@@ -224,6 +224,7 @@ def _review_names(reg: dict) -> list[str]:
     return [*reg["process"]["lean"],
             *(n for q in reg["questions"] for n in q["pins"]),
             *(n for q in reg["questions"] for n in q.get("decision", {}).get("lean", [])),
+            *(n for q in reg["questions"] for a in q.get("decision", {}).get("amendments", []) for n in a["lean"]),
             *(a["transported"] for q in reg["questions"] for a in q["analogies"] if a["kind"] == "internal")]
 
 
