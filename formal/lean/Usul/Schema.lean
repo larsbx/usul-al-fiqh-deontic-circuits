@@ -270,10 +270,10 @@ theorem inert_fold {S E : Type} (step : S → E → S) (P : S → Prop) (s : S) 
     exact inert_fold step P s hs es (fun e' he' => h e' (by simp [he']))
 
 /-- Q11 is S5: on a certain judgement, doubts are inert, however many arrive. -/
-theorem yaqin_doubts_inert {V : Type} (cur : Qawaid.Held V) (hy : cur.grade.IsYaqin)
+theorem yaqin_doubts_inert {V : Type} (cur : Qawaid.Held V) (hy : cur.IsYaqin)
     (evs : List (Qawaid.Held V)) (hs : ∀ e ∈ evs, e.grade = .shakk) :
     evs.foldl Qawaid.update cur = cur := by
-  refine inert_fold Qawaid.update (fun c => c.grade.IsYaqin) cur hy evs ?_
+  refine inert_fold Qawaid.update (fun c => c.IsYaqin) cur hy evs ?_
   intro e he c hc
   exact Qawaid.yaqin_la_yazul_bish_shakk c e hc (hs e he)
 

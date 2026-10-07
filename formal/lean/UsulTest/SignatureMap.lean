@@ -312,6 +312,11 @@ import Usul
 #check @Usul.Process.Stratified
 #check @Usul.Process.no_deadlock_of_stratified
 #check @Usul.Process.no_cycle_of_rank
+#check @Usul.Grade.YaqinFor
+#check @Usul.Qawaid.Held.IsYaqin
+#check @Usul.Grade.yaqinFor_known
+#check @Usul.Grade.zann_unknown_not_yaqin
+#check @Usul.Refinements.yaqinForAmal_iff
 #check @Usul.Schema.burden_factors
 #check @Usul.Schema.Factors.post
 #check @Usul.Schema.inert_fold

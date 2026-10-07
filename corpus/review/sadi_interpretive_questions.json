@@ -24,7 +24,8 @@
    "treat an analogy as outranking a cited text",
    "write to halaqa shared/usul-k/",
    "promote a reading past candidate"
-  ]
+  ],
+  "decisions": "Recorded only on a human reviewer's instruction (Review.tla: accepted ⇒ reviewedBy = human), quoted verbatim, with the date and the Lean constants that now carry the reading. A decision fixes this repository's encoding E; it does not write to halaqa shared/usul-k/, whose class-C entry still needs the SHARIAH-AUTHORITY gate there."
  },
  "process": {
   "note": "The review applies the project's principles to itself where this cannot deadlock (Usul.Process). Status is computed: referenced if an established answer is cited, else analogized if an internal analogy is offered, else open. Stratification is checked at the level of Lean constants: the process relies only on the undisputed core of each rule it uses (relies_on), and no live question may pin one of those constants.",
@@ -1069,7 +1070,7 @@
    ],
    "if_changed": "Grade.IsYaqin's threshold moves; every theorem taking it as hypothesis (q11_yaqin, yaqin_la_yazul_bish_shakk, yaqin_doubts_inert, Refinements.abstention_keeps_status) still holds, with a stronger hypothesis, so nothing proved is lost; fewer held judgements are protected. The review process relies on yaqin_doubts_inert only for its form (doubts at shakk are inert), which survives either threshold, so there is no bootstrap dependency. Takhrīj cases with a ẓann-grade aṣl (asl_zahir encoder) would need re-checking. Under the second-order reading Held would carry whether the preponderance is known; with it true everywhere the kernel is unchanged. Overturning is separate: a ẓann acted on is set aside only when its error is shown decisively (Refinements.zannSetAside; «الاجتهاد لا ينقض بالاجتهاد»).",
    "route": "halaqa:shared/usul-k/evidence-order.md",
-   "status": "referenced",
+   "status": "adopted",
    "established": [
     {
      "ref": "src:shamela-9942/v01:p015",
@@ -1126,7 +1127,25 @@
      "domain": "evidence law",
      "note": "Standards of proof: balance of probabilities to act or decide, a higher standard for what later doubt may not reopen."
     }
-   ]
+   ],
+   "decision": {
+    "by": "human",
+    "date": "2026-10-07",
+    "instruction": "yes adopt it",
+    "adopted": "Ibn Taymiyya's second-order reading: a judgement is certain for acting when it is qaṭʿ, or a ẓann whose preponderance is itself known on a dalīl (iʿtiqād al-rujḥān is ʿilm, rujḥān al-iʿtiqād is ẓann); a ẓann of unknown preponderance is not yaqīn. Q11 protects exactly these judgements.",
+    "lean": [
+     "Usul.Grade.YaqinFor",
+     "Usul.Qawaid.Held.IsYaqin",
+     "Usul.Grade.yaqinFor_known",
+     "Usul.Grade.zann_unknown_not_yaqin",
+     "Usul.Refinements.yaqinForAmal_iff"
+    ],
+    "scope": "Encoding E of this repository: Held carries rujhanKnown, and q11_yaqin, yaqin_la_yazul_bish_shakk, yaqin_doubts_inert and abstention_keeps_status now take Held.IsYaqin. Grade.IsYaqin remains as the grade floor (YaqinFor.isYaqin). halaqa usul-k/evidence-order.md is not written.",
+    "follow_up": [
+     "Qawaid.update is still grade-only, so a ẓann of unknown preponderance can still displace or resist like any ẓann; whether it should be treated as suspension (tawaqquf) in update is a separate question, not decided here.",
+     "The takhrīj encoders take grades only (asl_zahir); none constructs a ẓann of unknown preponderance, so no case changes."
+    ]
+   }
   }
  ]
 }

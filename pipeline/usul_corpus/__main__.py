@@ -223,6 +223,7 @@ def _review_names(reg: dict) -> list[str]:
     """Lean constants a review register relies on: its process, its pins, its transported laws."""
     return [*reg["process"]["lean"],
             *(n for q in reg["questions"] for n in q["pins"]),
+            *(n for q in reg["questions"] for n in q.get("decision", {}).get("lean", [])),
             *(a["transported"] for q in reg["questions"] for a in q["analogies"] if a["kind"] == "internal")]
 
 

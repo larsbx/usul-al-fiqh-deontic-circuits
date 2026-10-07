@@ -37,7 +37,7 @@ example : Factors (fun pc : Bool × Bool => burdenOf pc.1 pc.2) (fun pc => decid
 example (p : Party) : burden p = burdenOf false p.claim := q10_from_presumption p
 
 -- @schema Q11 S5-inert
-example {V : Type} (cur : Qawaid.Held V) (hy : cur.grade.IsYaqin) (evs : List (Qawaid.Held V))
+example {V : Type} (cur : Qawaid.Held V) (hy : cur.IsYaqin) (evs : List (Qawaid.Held V))
     (hs : ∀ e ∈ evs, e.grade = .shakk) : evs.foldl Qawaid.update cur = cur :=
   yaqin_doubts_inert cur hy evs hs
 

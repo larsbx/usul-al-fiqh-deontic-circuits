@@ -10,10 +10,15 @@ namespace Usul.Qawaid
 
 /-! ## *al-yaqīn lā yazūl bi'l-shakk* — grade monotonicity -/
 
-/-- A held judgement with its epistemic grade. -/
+/-- A held judgement with its epistemic grade, and whether its preponderance is known on a dalīl
+(meaningful for ẓann; IQ-21). -/
 structure Held (V : Type) where
   value : V
   grade : Grade
+  rujhanKnown : Bool
+
+/-- The judgement is certain for acting (`Grade.YaqinFor`, IQ-21). -/
+def Held.IsYaqin {V : Type} (h : Held V) : Prop := h.grade.YaqinFor h.rujhanKnown
 
 /-- A challenger displaces the incumbent only at equal or higher grade. -/
 def update {V : Type} (cur ev : Held V) : Held V :=
@@ -26,9 +31,10 @@ theorem update_grade_mono {V : Type} (cur ev : Held V) : cur.grade ≤ (update c
 
 /-- Certainty is not removed by doubt. -/
 theorem yaqin_la_yazul_bish_shakk {V : Type} (cur ev : Held V)
-    (hy : cur.grade.IsYaqin) (hs : ev.grade = .shakk) : update cur ev = cur := by
+    (hy : cur.IsYaqin) (hs : ev.grade = .shakk) : update cur ev = cur := by
+  have hg := Grade.YaqinFor.isYaqin hy
   have : ¬ cur.grade ≤ ev.grade := by
-    rw [hs]; revert hy; cases cur.grade <;> decide
+    rw [hs]; revert hg; cases cur.grade <;> decide
   simp [update, this]
 
 /-! ## *mā lā yatimm al-wājib illā bihi fa-huwa wājib* ∧ *lā wājib maʿa ʿajz* -/

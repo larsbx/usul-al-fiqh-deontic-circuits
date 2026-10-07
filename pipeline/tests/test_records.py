@@ -106,7 +106,16 @@ def test_status_is_computed_from_evidence_on_file():
     for q in _register(Path(__file__).parents[2])["questions"]:
         internal = any(a["kind"] == "internal" for a in q["analogies"])
         expected = "referenced" if q["established"] else "analogized" if internal else "open"
-        assert q["status"] in (expected, "withdrawn"), q["id"]
+        assert q["status"] in (expected, "withdrawn", "adopted"), q["id"]
+
+
+def test_adoptions_are_human_and_checked():
+    """Review.tla on the register: only a human decision adopts, and what it adopts is #check-ed."""
+    root = Path(__file__).parents[2]
+    checked = (root / "formal/lean/UsulTest/SignatureMap.lean").read_text()
+    for q in (q for q in _register(root)["questions"] if q["status"] == "adopted"):
+        assert q["decision"]["by"] == "human" and q["established"], q["id"]
+        assert all(f"#check @{n}\n" in checked for n in q["decision"]["lean"]), q["id"]
 
 
 def test_citations_resolve_to_pinned_sources():
@@ -136,7 +145,7 @@ def test_process_is_stratified():
     the process relies only on constants no live question pins; avoided rules are under question."""
     reg = _register(Path(__file__).parents[2])
     proc = reg["process"]
-    live = [q for q in reg["questions"] if q["status"] != "withdrawn"]
+    live = [q for q in reg["questions"] if q["status"] not in ("withdrawn", "adopted")]
     relied = {c for cs in proc["relies_on"].values() for c in cs}
     assert set(proc["relies_on"]) == set(proc["uses_why"]) == {str(n) for n in proc["uses"]}
     assert not relied & {c for q in live for c in q["pins"]}

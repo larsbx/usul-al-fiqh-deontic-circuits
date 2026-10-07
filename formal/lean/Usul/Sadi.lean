@@ -96,7 +96,7 @@ theorem q08_present_impediment {α : Type} {g : Gate α} {x : α} {m : α → Pr
 /-! ## Q11 / Q52 — what was stays as it was, certainty is not removed by doubt; but strong
 indications (qarāʾin) prevail over the presumption -/
 
-theorem q11_yaqin {V : Type} (cur ev : Qawaid.Held V) (hy : cur.grade.IsYaqin)
+theorem q11_yaqin {V : Type} (cur ev : Qawaid.Held V) (hy : cur.IsYaqin)
     (hs : ev.grade = .shakk) : Qawaid.update cur ev = cur :=
   Qawaid.yaqin_la_yazul_bish_shakk cur ev hy hs
 

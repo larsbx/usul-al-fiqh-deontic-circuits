@@ -66,7 +66,7 @@ def zahirPrevails (asl zahir : Grade) (amara : Bool) : Bool :=
 
 /-- With indicators assumed, this is `Qawaid.update`'s choice. -/
 theorem zahirPrevails_conservative (a z : Grade) :
-    zahirPrevails a z true = ((Qawaid.update (⟨0, a⟩ : Qawaid.Held Nat) ⟨1, z⟩).value == 1) := by
+    zahirPrevails a z true = ((Qawaid.update (⟨0, a, true⟩ : Qawaid.Held Nat) ⟨1, z, true⟩).value == 1) := by
   cases a <;> cases z <;> decide
 
 /-- Without indicators, equal grades keep the aṣl (Ibn Rajab 159, f007). -/
@@ -149,7 +149,7 @@ def abstains (suspended possible absenceKnown : Bool) : Bool := suspended && pos
 
 /-- The status is untouched: a doubt about the condition (shakk) does not displace the certain
 marriage (Q11); abstention is a separate rule of conduct. -/
-theorem abstention_keeps_status {V : Type} (marriage : Qawaid.Held V) (hy : marriage.grade.IsYaqin)
+theorem abstention_keeps_status {V : Type} (marriage : Qawaid.Held V) (hy : marriage.IsYaqin)
     (doubt : Qawaid.Held V) (hs : doubt.grade = .shakk) :
     Qawaid.update marriage doubt = marriage ∧ abstains true true false = true :=
   ⟨Qawaid.yaqin_la_yazul_bish_shakk marriage doubt hy hs, rfl⟩
@@ -169,6 +169,10 @@ def yaqinForAmal (g : Grade) (rujhanKnown : Bool) : Bool :=
 /-- Conservative: with preponderance known, it is the kernel's `IsYaqin`. -/
 theorem yaqinForAmal_conservative (g : Grade) : yaqinForAmal g true = decide g.IsYaqin := by
   cases g <;> decide
+
+/-- The Boolean form of the adopted kernel reading `Grade.YaqinFor`. -/
+theorem yaqinForAmal_iff (g : Grade) (k : Bool) : yaqinForAmal g k = decide (g.YaqinFor k) := by
+  cases g <;> cases k <;> decide
 
 /-- A ẓann whose preponderance is not known grounds nothing: suspension (tawaqquf). -/
 theorem unknown_rujhan_suspends : yaqinForAmal .zann false = false := rfl

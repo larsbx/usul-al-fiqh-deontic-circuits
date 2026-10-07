@@ -32,9 +32,25 @@ instance : LE Grade := ⟨fun a b => a.rank ≤ b.rank⟩
 instance : LT Grade := ⟨fun a b => a.rank < b.rank⟩
 instance (a b : Grade) : Decidable (a ≤ b) := inferInstanceAs (Decidable (a.rank ≤ b.rank))
 instance (a b : Grade) : Decidable (a < b) := inferInstanceAs (Decidable (a.rank < b.rank))
-/-- *Yaqīn* is qaṭʿ or prevailing ẓann (both count as knowledge for ʿamal). -/
+/-- The grade floor of *yaqīn*: qaṭʿ or ẓann. Necessary but, since IQ-21, not sufficient: a ẓann
+is certain for acting only when its preponderance is known (`YaqinFor`). -/
 def IsYaqin (g : Grade) : Prop := zann ≤ g
 instance (g : Grade) : Decidable g.IsYaqin := inferInstanceAs (Decidable (zann ≤ g))
+
+/-- *Yaqīn* for acting (IQ-21, adopted on human review): qaṭʿ, or a ẓann whose preponderance is
+itself known on a dalīl. Ibn Taymiyya (Majmūʿ v13 p117): «اعتقاد الرجحان» is ʿilm, «رجحان
+الاعتقاد» is ẓann; where the preponderance is not known, «فهو متوقف لا قول له». -/
+def YaqinFor (g : Grade) (rujhanKnown : Bool) : Prop := g = qat ∨ (g = zann ∧ rujhanKnown = true)
+instance (g : Grade) (k : Bool) : Decidable (g.YaqinFor k) := inferInstanceAs (Decidable (_ ∨ _))
+
+theorem YaqinFor.isYaqin {g : Grade} {k : Bool} (h : g.YaqinFor k) : g.IsYaqin := by
+  rcases h with rfl | ⟨rfl, _⟩ <;> decide
+
+/-- With the preponderance known, the adopted reading is the earlier one. -/
+theorem yaqinFor_known (g : Grade) : g.YaqinFor true ↔ g.IsYaqin := by cases g <;> decide
+
+/-- A ẓann of unknown preponderance is not certain. -/
+theorem zann_unknown_not_yaqin : ¬ zann.YaqinFor false := by decide
 end Grade
 
 /-- Sources of evidence, in Aḥmad's order of resort as reported in *Iʿlām al-Muwaqqiʿīn*:

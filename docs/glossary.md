@@ -1542,11 +1542,11 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-yaqīn (اليقين)
 
-*certainty.* Decisive perception (ʿilm: «إدراكاً جازماً», Ibn ʿUthaymīn). Al-Saʿdī Q11: certainty is not removed by doubt. The kernel's Grade.IsYaqin counts ẓann as yaqīn; the sources rather make knowledge of a ẓann's preponderance the certainty acted on (Ibn Taymiyya; al-Rawḍa: God makes ẓann a sign of the obligation, so the obligation is known). Refinements.yaqinForAmal expresses that reading and is conservative over IsYaqin (IQ-21). Where certainty cannot be reached, one builds on ghalabat al-ẓann (bayt 90).
+*certainty.* Decisive perception (ʿilm: «إدراكاً جازماً», Ibn ʿUthaymīn). Al-Saʿdī Q11: certainty is not removed by doubt. Adopted reading (IQ-21, human review 2026-10-07): a judgement is certain for acting when it is qaṭʿ, or a ẓann whose preponderance is itself known on a dalīl (Ibn Taymiyya: belief in a view's preponderance is ʿilm; al-Rawḍa: God makes ẓann a sign of the obligation, so the obligation is known). A ẓann of unknown preponderance is not yaqīn. Where certainty cannot be reached, one builds on ghalabat al-ẓann (bayt 90).
 
 **Related:** [asl](#asl), [ghalabat_al_zann](#ghalabat_al_zann), [ilm](#ilm), [shakk](#shakk), [zann](#zann)
 
-**Lean:** `Usul.Grade.IsYaqin`, `Usul.Grade.qat`, `Usul.Qawaid.yaqin_la_yazul_bish_shakk`, `Usul.Sadi.q11_yaqin`, `Usul.Schema.yaqin_doubts_inert`, `Usul.Refinements.yaqinForAmal`, `Usul.Refinements.yaqinForAmal_conservative`, `Usul.Refinements.qat_suffices`
+**Lean:** `Usul.Grade.YaqinFor`, `Usul.Qawaid.Held.IsYaqin`, `Usul.Grade.yaqinFor_known`, `Usul.Grade.zann_unknown_not_yaqin`, `Usul.Grade.IsYaqin`, `Usul.Grade.qat`, `Usul.Qawaid.yaqin_la_yazul_bish_shakk`, `Usul.Sadi.q11_yaqin`, `Usul.Schema.yaqin_doubts_inert`, `Usul.Refinements.yaqinForAmal`, `Usul.Refinements.yaqinForAmal_conservative`, `Usul.Refinements.qat_suffices`
 
 **Texts**
 
