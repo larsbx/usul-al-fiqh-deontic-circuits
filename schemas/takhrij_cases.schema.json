@@ -110,6 +110,10 @@
                 "type": "string"
               }
             }
+          },
+          "home": {
+            "type": "string",
+            "description": "The encoder whose qāʿida this farʿ belongs to, when the case is decided under another encoder (a fresh annotation, not a revisit)."
           }
         }
       }

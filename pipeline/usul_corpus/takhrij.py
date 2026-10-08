@@ -148,6 +148,18 @@ ENCODERS: dict[str, dict] = {
         sadi=[], qawaid=[LAHHAM.format(43)], facts={"per_item_status": ("wajib", "mandub")},
         out=HUKM, lean="Usul.Refinements.amrPerItem (fun _ : Unit => {per_item_status}) ()",
         py=lambda f: f["per_item_status"]),
+    "excused_error": dict(
+        sadi=[11], qawaid=[RAJAB.format(6)], facts={"others_right": B, "negligent": B},
+        out=B, lean="Usul.Refinements.errorExcused {others_right} {negligent}",
+        py=lambda f: not f["others_right"] and not f["negligent"]),
+    "istihlak": dict(
+        sadi=[20], qawaid=[RAJAB.format(22)], facts={"consumed": B},
+        out=B, lean="Usul.Refinements.istihlak {consumed}",
+        py=lambda f: f["consumed"]),
+    "doubt_in_condition": dict(
+        sadi=[11, 52], qawaid=[RAJAB.format(68)], facts={"needs_firm_intention": B, "ghalaba": B, "asl_mustashab": B},
+        out=B, lean="Usul.Refinements.validUnderDoubt {needs_firm_intention} {ghalaba} {asl_mustashab}",
+        py=lambda f: not f["needs_firm_intention"] or f["ghalaba"] or f["asl_mustashab"]),
     "umum_lafz": dict(
         sadi=[], qawaid=[LAHHAM.format(61)], facts={"in_occasion": B, "general_wording": B},
         out=B, lean="Usul.Dalala.coversBeyondSabab true {in_occasion} {general_wording}",

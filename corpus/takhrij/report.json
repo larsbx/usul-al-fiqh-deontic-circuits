@@ -1,16 +1,17 @@
 {
- "total": 214,
+ "total": 237,
  "classes": {
-  "derivable": 103,
-  "genuine_ikhtilaf": 105,
-  "missing_rule": 5,
+  "derivable": 109,
+  "genuine_ikhtilaf": 119,
+  "missing_fact": 1,
+  "missing_rule": 7,
   "segmentation_error": 1
  },
- "coverage": 0.977,
- "madhhab_coverage": 0.648,
+ "coverage": 0.966,
+ "madhhab_coverage": 0.644,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 35,
- "gaps_open": 5,
+ "ikhtilaf_matching_madhhab": 43,
+ "gaps_open": 11,
  "revisited": 29,
  "revisit_queue": [],
  "per_encoder": {
@@ -53,7 +54,8 @@
    "genuine_ikhtilaf": 11
   },
   "trust_loss": {
-   "derivable": 4
+   "derivable": 4,
+   "genuine_ikhtilaf": 1
   },
   "partial_capability": {
    "derivable": 2,
@@ -109,6 +111,21 @@
   },
   "amr_mixed": {
    "derivable": 1
+  },
+  "excused_error": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 2
+  },
+  "istihlak": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 5,
+   "missing_rule": 1
+  },
+  "doubt_in_condition": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 6,
+   "missing_fact": 1,
+   "missing_rule": 1
   },
   "umum_lafz": {
    "derivable": 3
