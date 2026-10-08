@@ -7,6 +7,7 @@
     python -m usul_corpus takhrij     # regenerate the takhrīj guards and report
     python -m usul_corpus docs        # render the dossier and glossary pages from corpus/dossier
     python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
+    python -m usul_corpus fatawa [--refresh]   # IslamQA fatāwā → .cache/corpus/fatawa/*.jsonl (needs pyarrow)
 """
 
 from __future__ import annotations
@@ -17,6 +18,7 @@ import json
 import sys
 from pathlib import Path
 
+from .fatawa import normalize
 from .fetch import fetch
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
@@ -270,6 +272,23 @@ def cmd_signature(_: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_fatawa(args: argparse.Namespace) -> int:
+    import pyarrow.parquet as pq  # optional dependency, only for this command
+
+    cache = CACHE / "fatawa"
+    for src in _load(CORPUS / "fatawa" / "sources.json")["sources"]:
+        entry = fetch(src, cache, refresh=args.refresh)
+        if entry["sha256"] != src["sha256"]:
+            print(f"{src['id']}: sha256 {entry['sha256']} != pinned {src['sha256']}", file=sys.stderr)
+            return 1
+        records = normalize(pq.read_table(cache / f"{src['id']}.parquet").to_pylist(), tuple(src["langs"]))
+        out = cache / f"{src['id']}.jsonl"
+        out.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records), encoding="utf-8")
+        counts = {l: sum(l in r for r in records) for l in src["langs"]}
+        print(f"{src['id']:20} {len(records):>6} answers {counts}  → {out.relative_to(ROOT)}")
+    return 0
+
+
 def cmd_validate(_: argparse.Namespace) -> int:
     import jsonschema  # test-time dependency only
 
@@ -308,6 +327,9 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("signature").set_defaults(run=cmd_signature)
     sub.add_parser("takhrij").set_defaults(run=cmd_takhrij)
     sub.add_parser("docs").set_defaults(run=cmd_docs)
+    fa = sub.add_parser("fatawa")
+    fa.add_argument("--refresh", action="store_true")
+    fa.set_defaults(run=cmd_fatawa)
     o = sub.add_parser("ocr")
     o.add_argument("--work")
     o.add_argument("--pages", help="PDF page range A-B (default: all)")

@@ -1,0 +1,26 @@
+{
+  "policy": "Community scrapes of islamqa.info (founded and supervised by Muḥammad Ṣāliḥ al-Munajjid). Fetched into .cache/corpus/fatawa and never committed. Answers are oracle labels for evaluation, not deontic authority.",
+  "sources": [
+    {
+      "id": "islamqa-parallel",
+      "kind": "huggingface",
+      "repo": "kingkaung/islamqainfo_parallel_corpus",
+      "revision": "0996d8d8934c5339f723e07564e26d96552f523f",
+      "file": "islamqainfo_parallel_corpus.parquet",
+      "format": "parquet",
+      "bytes": 186794948,
+      "sha256": "71e59cda86bd4367c1044ec154e93fced83a2ea154b043659dca908bc1da381d",
+      "license": "CC-BY-NC-4.0",
+      "langs": ["ar", "en"],
+      "observed": {"rows": 19052, "ids": 15303, "ids_with_ar": 14820, "id_range": [1, 518455], "scraped": "2025-01"}
+    }
+  ],
+  "alternatives": [
+    {"repo": "abdulmunimjemal/IslamQA-Multilingual-Dataset", "note": "67,059 QA pairs in 16 languages (~23k ar), ShareGPT chat format with an injected system prompt; no topic metadata; license 'other'."},
+    {"repo": "kingkaung/english_islamqainfo", "note": "English-only CSV slice of the parallel corpus (19,052 rows)."},
+    {"repo": "minhalvp/islamqa", "note": "3,355 English QA pairs, no ids or links."},
+    {"repo": "IslamQA/islamqa", "note": "Answer embeddings only (no answer text); April 2024."},
+    {"repo": "github:ahr9n/islamqa-web-scrapping", "note": "Scraper; 4,069 Arabic QA pairs."},
+    {"repo": "official", "note": "No bulk export. The official IslamQA Offline app (zad.com.islamqaoffline) bundles the full site database; extraction is out of scope here."}
+  ]
+}
