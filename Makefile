@@ -8,7 +8,7 @@ all: test validate generated lean tla
 
 test:      ; cd pipeline && $(PY) -m pytest -q
 fetch:     ; cd pipeline && $(PY) -m usul_corpus fetch
-fatawa:    ; cd pipeline && $(PY) -m usul_corpus fatawa   # needs pyarrow
+fatawa:    ; cd pipeline && $(PY) -m usul_corpus fatawa
 ocr:       ; cd pipeline && $(PY) -m usul_corpus ocr --jobs $(shell nproc)   # needs tesseract + poppler-utils
 build:     ; cd pipeline && $(PY) -m usul_corpus build
 validate:  ; cd pipeline && $(PY) -m usul_corpus validate

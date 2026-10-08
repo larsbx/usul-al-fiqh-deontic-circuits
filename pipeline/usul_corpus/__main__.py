@@ -7,7 +7,7 @@
     python -m usul_corpus takhrij     # regenerate the takhrīj guards and report
     python -m usul_corpus docs        # render the dossier and glossary pages from corpus/dossier
     python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
-    python -m usul_corpus fatawa [--refresh]   # IslamQA fatāwā → .cache/corpus/fatawa/*.jsonl (needs pyarrow)
+    python -m usul_corpus fatawa [--lang L] [--refresh]   # IslamQA offline dumps → .cache/corpus/fatawa/*.jsonl
 """
 
 from __future__ import annotations
@@ -18,7 +18,7 @@ import json
 import sys
 from pathlib import Path
 
-from .fatawa import normalize
+from .fatawa import answers, fold, snapshot_witnesses
 from .fetch import fetch
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
@@ -273,19 +273,23 @@ def cmd_signature(_: argparse.Namespace) -> int:
 
 
 def cmd_fatawa(args: argparse.Namespace) -> int:
-    import pyarrow.parquet as pq  # optional dependency, only for this command
+    """Pinned IslamQA snapshot (one dump per language) → answers JSONL, sha256-checked."""
+    import gzip
 
     cache = CACHE / "fatawa"
-    for src in _load(CORPUS / "fatawa" / "sources.json")["sources"]:
-        entry = fetch(src, cache, refresh=args.refresh)
-        if entry["sha256"] != src["sha256"]:
-            print(f"{src['id']}: sha256 {entry['sha256']} != pinned {src['sha256']}", file=sys.stderr)
+    dump = _load(CORPUS / "fatawa" / "sources.json")["dump"]
+    for w in snapshot_witnesses(dump):
+        if args.lang not in (None, w["lang"]):
+            continue
+        entry = fetch(w, cache, refresh=args.refresh)
+        if entry["sha256"] != w["sha256"]:
+            print(f"{w['id']}: sha256 {entry['sha256']} != pinned {w['sha256']}", file=sys.stderr)
             return 1
-        records = normalize(pq.read_table(cache / f"{src['id']}.parquet").to_pylist(), tuple(src["langs"]))
-        out = cache / f"{src['id']}.jsonl"
+        with gzip.open(cache / f"{w['id']}.ndjson.gz", "rt", encoding="utf-8") as f:
+            records = answers(fold(map(json.loads, f)))
+        out = cache / f"{w['id']}.jsonl"
         out.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records), encoding="utf-8")
-        counts = {l: sum(l in r for r in records) for l in src["langs"]}
-        print(f"{src['id']:20} {len(records):>6} answers {counts}  → {out.relative_to(ROOT)}")
+        print(f"{w['id']:12} {len(records):>6} answers  → {out.relative_to(ROOT)}")
     return 0
 
 
@@ -328,6 +332,7 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("takhrij").set_defaults(run=cmd_takhrij)
     sub.add_parser("docs").set_defaults(run=cmd_docs)
     fa = sub.add_parser("fatawa")
+    fa.add_argument("--lang")
     fa.add_argument("--refresh", action="store_true")
     fa.set_defaults(run=cmd_fatawa)
     o = sub.add_parser("ocr")
