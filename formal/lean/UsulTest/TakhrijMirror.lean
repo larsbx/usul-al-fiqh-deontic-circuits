@@ -198,6 +198,16 @@ import Usul
 #guard (Usul.Refinements.validUnderDoubt true false true) == true
 #guard (Usul.Refinements.validUnderDoubt true true false) == true
 #guard (Usul.Refinements.validUnderDoubt true true true) == true
+#guard (Usul.Refinements.mustSwitch false) == false
+#guard (Usul.Refinements.mustSwitch true) == true
+#guard (Usul.Refinements.liableForOthersBenefit false) == false
+#guard (Usul.Refinements.liableForOthersBenefit true) == true
+#guard (Usul.Refinements.concurrentShare false) == .half
+#guard (Usul.Refinements.concurrentShare true) == .full
+#guard (Usul.Refinements.countsAsMet false false) == false
+#guard (Usul.Refinements.countsAsMet false true) == true
+#guard (Usul.Refinements.countsAsMet true false) == true
+#guard (Usul.Refinements.countsAsMet true true) == true
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 #guard (Usul.Dalala.coversBeyondSabab true true false) == true

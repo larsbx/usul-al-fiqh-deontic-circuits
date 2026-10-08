@@ -160,6 +160,22 @@ ENCODERS: dict[str, dict] = {
         sadi=[11, 52], qawaid=[RAJAB.format(68)], facts={"needs_firm_intention": B, "ghalaba": B, "asl_mustashab": B},
         out=B, lean="Usul.Refinements.validUnderDoubt {needs_firm_intention} {ghalaba} {asl_mustashab}",
         py=lambda f: not f["needs_firm_intention"] or f["ghalaba"] or f["asl_mustashab"]),
+    "switch_to_original": dict(
+        sadi=[28], qawaid=[RAJAB.format(7)], facts={"necessity": B},
+        out=B, lean="Usul.Refinements.mustSwitch {necessity}",
+        py=lambda f: f["necessity"]),
+    "benefit_to_other": dict(
+        sadi=[36], qawaid=[RAJAB.format(27)], facts={"benefits_other": B},
+        out=B, lean="Usul.Refinements.liableForOthersBenefit {benefits_other}",
+        py=lambda f: f["benefits_other"]),
+    "concurrent_causes": dict(
+        sadi=[], qawaid=[RAJAB.format(28)], facts={"other_act_permitted": B},
+        out=("full", "half"), lean="Usul.Refinements.concurrentShare {other_act_permitted}",
+        py=lambda f: "full" if f["other_act_permitted"] else "half"),
+    "unknown_condition": dict(
+        sadi=[], qawaid=[RAJAB.format(64), RAJAB.format(65)], facts={"knew": B, "liability_only": B},
+        out=B, lean="Usul.Refinements.countsAsMet {knew} {liability_only}",
+        py=lambda f: f["knew"] or f["liability_only"]),
     "umum_lafz": dict(
         sadi=[], qawaid=[LAHHAM.format(61)], facts={"in_occasion": B, "general_wording": B},
         out=B, lean="Usul.Dalala.coversBeyondSabab true {in_occasion} {general_wording}",
