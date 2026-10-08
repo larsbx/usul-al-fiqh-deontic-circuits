@@ -184,6 +184,20 @@ import Usul
 #guard (Usul.Refinements.jawazAfterSarf true) == false
 #guard (Usul.Refinements.amrPerItem (fun _ : Unit => .wajib) ()) == .wajib
 #guard (Usul.Refinements.amrPerItem (fun _ : Unit => .mandub) ()) == .mandub
+#guard (Usul.Refinements.errorExcused false false) == true
+#guard (Usul.Refinements.errorExcused false true) == false
+#guard (Usul.Refinements.errorExcused true false) == false
+#guard (Usul.Refinements.errorExcused true true) == false
+#guard (Usul.Refinements.istihlak false) == false
+#guard (Usul.Refinements.istihlak true) == true
+#guard (Usul.Refinements.validUnderDoubt false false false) == true
+#guard (Usul.Refinements.validUnderDoubt false false true) == true
+#guard (Usul.Refinements.validUnderDoubt false true false) == true
+#guard (Usul.Refinements.validUnderDoubt false true true) == true
+#guard (Usul.Refinements.validUnderDoubt true false false) == false
+#guard (Usul.Refinements.validUnderDoubt true false true) == true
+#guard (Usul.Refinements.validUnderDoubt true true false) == true
+#guard (Usul.Refinements.validUnderDoubt true true true) == true
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 #guard (Usul.Dalala.coversBeyondSabab true true false) == true

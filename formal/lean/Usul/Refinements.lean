@@ -351,4 +351,48 @@ theorem mixed_readings_agree {α : Type} (status : α → Hukm)
   rcases h x with hx | hx <;>
     simp [amrByTakhsis, amrPerItem, Dalala.Takhsis.ruling, Schema.first, hx]
 
+/-! ## M8, first tranche: readings of Ibn Rajab's qawāʿid 6, 22 and 68 -/
+
+/-! ### Qāʿida 6: an act done on a belief later shown wrong
+
+«إذا فعل عبادة في وقت وجوبها يظن أنها الواجبة عليه ثم تبين بآخرة أن الواجب كان غيرها فإنه
+يجزئه»; joined to it: «ما إذا خفي الاطلاع على خلل الشرط ثم تبين، فإنه يغتفر في الأصح». Its
+limits: a judge's ruling is undone «لتعلق حق الغير به», and repetition falls on one who «فرط بترك
+البحث والتحقيق». -/
+
+/-- The act stands despite the error, unless another's right is attached or he was negligent. -/
+def errorExcused (othersRight negligent : Bool) : Bool := !othersRight && !negligent
+
+/-- Qāʿida 6 grounds `zannSetAside`'s exemption: a decisively shown error sets the act aside
+exactly when another's right is attached or he was negligent. -/
+theorem q6_grounds_exemption (o n : Bool) : zannSetAside .qat (errorExcused o n) = (o || n) := by
+  cases o <;> cases n <;> rfl
+
+/-! ### Qāʿida 22: what is consumed in another
+
+«العين المنغمرة في غيرها إذا لم يظهر أثرها فهل هي كالمعدومة حكما أو لا؟ فيه خلاف». The reading
+takes one side: consumed without trace, it is treated as non-existent. -/
+
+/-- One side of the khilāf, as an instance of qāʿida 106: its trace cannot be found. -/
+def istihlak (consumed : Bool) : Bool := treatedAsAbsent consumed true false
+
+theorem istihlak_iff (c : Bool) : istihlak c = c := by cases c <;> rfl
+
+/-! ### Qāʿida 68: acting while doubting a condition of validity
+
+«أحدهما ما يشترط فيه النية الجازمة فلا يصح إيقاعه بهذا التردد ما لم يكن الشك غلبة ظن تكفي
+مثله»; and where he «بني على أصل لم يثبت زواله» the hesitation does not harm; «والنوع الثاني ما
+لا يحتاج إلى نية جازمة فالصحيح فيه الصحة». -/
+
+def validUnderDoubt (needsFirm ghalaba aslMustashab : Bool) : Bool :=
+  !needsFirm || ghalaba || aslMustashab
+
+/-- Where firmness is needed, what makes it firm is a basis the bank already has: ghalabat
+al-ẓann (bayt 90's `basis`) or a presumption that has not been shown to end. -/
+theorem firm_by_basis (g a : Bool) :
+    validUnderDoubt true g a = ((basis false g == .ghalabatZann) || a) := by
+  cases g <;> cases a <;> rfl
+
+theorem no_firmness_needed (g a : Bool) : validUnderDoubt false g a = true := rfl
+
 end Usul.Refinements

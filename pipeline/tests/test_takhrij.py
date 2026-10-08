@@ -59,7 +59,7 @@ def test_annotated_cases_cover_their_qawaid_exactly_once_and_stay_generated():
                 far[r["id"]] = r["qaida"]
     ids = [c["far"] for c in cases]
     assert len(ids) == len(set(ids)) and set(ids) <= set(far)
-    home = {c["far"]: c.get("revisit", {}).get("from_encoder", c["encoder"]) for c in cases}
+    home = {c["far"]: c.get("home") or c.get("revisit", {}).get("from_encoder", c["encoder"]) for c in cases}
     for c in cases:
         assert far[c["far"]] in takhrij.ENCODERS[home[c["far"]]]["qawaid"], c["far"]
     annotated = set(home.values())
