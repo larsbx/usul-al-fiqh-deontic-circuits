@@ -25,7 +25,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 **Texts**
 
 - `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f006`: «أوصيت لجاري محمد» with two neighbours of that name: the proper name pins the referent, «مخالف للقاعدة».
-  > وهو مخالف للقاعدة إذا قال الموصى أوصيت لجارى محمد بكذا وله جاران بهذا الاسم هل تصح الوصية أم لا؟
+  > وهو مخالف للقاعدة إذا قال الموصى أوصيت لجارى محمد بكذا وله جاران بهذا الاسم هل تصح الوصية أم لا؟ في المسألة روايتان أصحهما قول الأصحاب لا تصح للابهام والرواية الأخرى تصح ويعطى هو الورثة واحدا وهل هو بقرعتهم أو بتعيينهم في المسألة وجهان. ومقتضى القاعدة أنه يصرف إليهما جميعا على السواء ولم يقل بواحد.
 - `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f003`: «تنزهوا من البول»: the companions read al- as ʿahd (human urine) «بقرينة».
   > دعوى أن الأصل في الأبوال كلها النجاسة استدلالا بقوله عليه السلام: "تنزهوا من البول فإن عامة عذاب القبر منه" 1 ولكن أصحابنا حملوا الألف واللام هنا على العهد وهو بول الآدمى بقرينة.
 
@@ -87,7 +87,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `src:openiti-rajab-shamela21730/v01:p138`: The judge's permission gives recourse for spending on a found item, «because his permission stands in place of the absent owner's».
   > لأن إذنه قائم مقام إذن الغائب
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f010`: A lessee rebuilding the rented house has no recourse (naṣṣ): the rebuilding was not owed by the lessor.
-  > عمارة المستأجر في الدار المستأجرة ولا يرجع بها نص عليه أحمد في غلق ms175 الدار إذا عمله الساكن ويحتمل الرجوع بناء على مثله في الرهن، ولكن حكى صاحب التلخيص أن المؤجر يجبر على الترميم بإصلاح منكسر وإقامة مائل فأما تجديد البناء والأخشاب فلا يلزمه لأنه إجبار على تسليم عين لم يتناولها العقد وللمستأجر الخيار، قال ويحتمل أن يلزمه التجديد انتهى.
+  > عمارة المستأجر في الدار المستأجرة ولا يرجع بها نص عليه أحمد في غلق ms175 الدار إذا عمله الساكن ويحتمل الرجوع بناء على مثله في الرهن، ولكن حكى صاحب التلخيص أن المؤجر يجبر على الترميم بإصلاح منكسر وإقامة مائل فأما تجديد البناء والأخشاب فلا يلزمه لأنه إجبار على تسليم عين لم يتناولها العقد وللمستأجر الخيار، قال ويحتمل أن يلزمه التجديد انتهى. فعلى [القول] الأول لا يمكن القول برجوع المستأجر بما أنفق على
 
 **Rationale.** Al-Saʿdī's Q32 covers the first type only. The furūʿ under qāʿida 75 turn on whether the expense was owed by the other party and on permission, so both become inputs. With owed-by-other true the reading is Q32's.
 
@@ -105,7 +105,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 **Statement**
 
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f006`: «الحيوان المودع إذا أنفق عليه المستودع ناويا للرجوع فإن تعذر استئذان مالكه رجع».
-  > الحيوان المودع إذا أنفق عليه المستودع ناويا للرجوع فإن تعذر استئذان مالكه رجع وإن لم يتعذر فطريقان: إحداهما أنه على الروايتين في قضاء الدين وأولى لأن للحيوان حرمة في نفسه فوجب تقديمه على الديون أحيانا وهي طريقة صاحب المغني.
+  > الحيوان المودع إذا أنفق عليه المستودع ناويا للرجوع فإن تعذر استئذان مالكه رجع وإن لم يتعذر فطريقان: إحداهما أنه على الروايتين في قضاء الدين وأولى لأن للحيوان حرمة في نفسه فوجب تقديمه على الديون أحيانا وهي طريقة صاحب المغني. والثانية: لا يرجع قولا واحدا وهي ي طريقة المحرر ومتابعة لأبي الخطاب لكن من اعتبر الرجوع في قضاء الدين بعذر الإذن فههنا أولى وأما من لم يعتبر ذلك في الدين واعتبره ههنا فالفرق أن
 
 **Conditions**
 
@@ -176,7 +176,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f004`: The exception: if the forbidden is many and predominant, the case falls to the conflict of aṣl and ẓāhir.
   > إذا اشتبهت أخته بنساء أهل مصر جاز له الإقدام على النكاح من نسائه ولا يحتاج إلى التحري في ذلك على أصح الوجهين، وكذلك لو اشتبهت ميتة بلحم أهل مصر أو قرية، أو اشتبه حرام قليل بمباح كثير ونحو ذلك إلا أن يكثر الحرام ويغلب فيخرج المسألة على تعارض الأصل والظاهر كثياب الكفار وأوانيهم.
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f001`: The mustaḥāḍa's excess days are set aside; the beginner's doubtful days are not, «لأن أمره ينكشف بالتكرار عن قرب».
-  > الزائد على ما تجلسه المستحاضة من أقل الحيض أو غالبه إلى منتهى أكثره، حكمه حكم المعدوم حيث حكمنا فيها للمرأة بأحكام الطاهرات كلها فإن مدة الاستحاضة تطول ولا غاية لها تنتظر بخلاف الزائد على الأقل في حق المبتدأة على ظاهر المذهب حيث تقضي الصوم الواقع فيه قبل ثبوت العادة بالتكرار ; لأن أمره ينكشف بالتكرار عن قرب. وكذلك النفاس المشكوك
+  > الزائد على ما تجلسه المستحاضة من أقل الحيض أو غالبه إلى منتهى أكثره، حكمه حكم المعدوم حيث حكمنا فيها للمرأة بأحكام الطاهرات كلها فإن مدة الاستحاضة تطول ولا غاية لها تنتظر بخلاف الزائد على الأقل في حق المبتدأة على ظاهر المذهب حيث تقضي الصوم الواقع فيه قبل ثبوت العادة بالتكرار ; لأن أمره ينكشف بالتكرار عن قرب. وكذلك النفاس المشكوك فيه تقضي فيه الصوم ; لأنه لا يتكرر
 
 **Rationale.** Al-Saʿdī's Q20 states the right-holder case. Ibn Rajab's qāʿida is the general rule, and most of its furūʿ (istiḥāḍa, confused women, street mud) have no right-holder. Q20 is proved to be its instance (q20_is_instance).
 
@@ -232,7 +232,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 **Texts**
 
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005`: The transgressing executor: two possibilities (Ibn ʿAqīl), unmarked.
-  > الوصي إذا تعدى في التصرف فهل يبطل كونه وصيا أم لا؟ ذكر ابن عقيل في المفردات [فيه] احتمالين:
+  > الوصي إذا تعدى في التصرف فهل يبطل كونه وصيا أم لا؟ ذكر ابن عقيل في المفردات [فيه] احتمالين: أحدهما: لا يبطل بل تزول أمانته سبتية ضامنا كالوكيل والثاني تبطل لأنه خرج من حيز الأمانة بالتفريط فزالت ولايته بانتفاء شرطها كالحاكم إذا فسق. وفرض المسألة فيما إذا أقدم على البيع بدون قيمة المثل وعلى هذا يتخرج بيع العدل الذي بيده الرهن له بدون ثمن المثل أو الثمن المقدر هل يصح أم لا لأن الأمانة معتبرة فيه، وا
 
 **Rationale.** Voidance of the contract is a different question from liability for loss (Q14). The theorem liability_independent_of_voidance keeps the two apart.
 
@@ -310,7 +310,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 **Statement**
 
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f006`: Ibn Rajab under qāʿida 140: on the riwāya that theft from booty is ghulūl and the ghāll forfeits his share, he bears the theft's restitution together with the loss of his share, «وقد يكون قدر السرقة وأقل وأكثر».
-  > السرقة من الغنيمة إذا قلنا هي كالغلول وإن الغال يحرم سهمه منها على رواية، فيجتمع عليه غرم ما سرقه مع حرمان سهمه المستحق منها، وقد يكون قدر السرقة وأقل وأكثر.
+  > السرقة من الغنيمة إذا قلنا هي كالغلول وإن الغال يحرم سهمه منها على رواية، فيجتمع عليه غرم ما سرقه مع حرمان سهمه المستحق منها، وقد يكون قدر السرقة وأقل وأكثر. وليس من هذه القاعدة تغليظ الدية بقتل ذي الرحم عمدا ; لأن القصاص فيه قد يكون واجبا في غير الابن، وإنما هو لزيادة حرمة الجناية فهو كالتضعيف بالقتل في الحرم والإحرام.
 
 **Conditions**
 
@@ -349,7 +349,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 **Texts**
 
 - `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q054.f002`: The two texts: the claimant who said «لا بينة لي» is not heard (al-manṣūṣ; Ibn ʿAqīl: heard); the witness who denied holding testimony is heard.
-  > إا قال المدعى لا بينة لى ثم أتى ببينة فالمذهب المنصوص أنها لا تسمع بينته ولنا قول آخر أنها تسمع واختاره ابن عقيل وغيره واستشكل على المنصوص إذا قال الشاهد لست متحملا عليك شهادة ثم أداها بعد ذلك فإن المنصوص عن أحمد أنها تسمع.
+  > إا قال المدعى لا بينة لى ثم أتى ببينة فالمذهب المنصوص أنها لا تسمع بينته ولنا قول آخر أنها تسمع واختاره ابن عقيل وغيره واستشكل على المنصوص إذا قال الشاهد لست متحملا عليك شهادة ثم أداها بعد ذلك فإن المنصوص عن أحمد أنها تسمع. والفرق بين النصين أن الشهادة حق عليه فتسمع بعد النفي كما لو أقر بالحق بعد جحوده والبينة حق له فلا تسمع كما لو ادعى الخق بعد أن نفاه والله أعلم.
 - `sadi.qawaid_jamia.archive_pdf1995_tess.q055`: Al-Saʿdī Q55: no excuse for one who confesses, even claiming error; the ground of the second half.
   > لاعذر لمن أقر، ولو ادعى غلطاً وذلك أن الإقرار أقوى البينات، وكل بينة غيره، فإنه يحتمل خطؤهاء وأما إذا أقر العاقل المكلف على نفسه بحق من الحقوق ترتب على إقراره م
 
@@ -427,7 +427,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 **Statement**
 
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f007`: Ibn Rajab under qāʿida 106: it suffices for the ḥajj; for the ʿumra the better known wajh among the later companions is that it does not.
-  > إذا أحرم بنسك وأنسيه ثم عينه بقران ms310 فإنه يجزئه عن الحج، وهل يجزئه عن العمرة؟ وجهين أشهرهما عند المتأخرين لا يجزئه لجواز أن يكون أحرم بحج أو لا، ثم أدخل عليه العمرة بنية القران فلا تصح عمرته.
+  > إذا أحرم بنسك وأنسيه ثم عينه بقران ms310 فإنه يجزئه عن الحج، وهل يجزئه عن العمرة؟ وجهين أشهرهما عند المتأخرين لا يجزئه لجواز أن يكون أحرم بحج أو لا، ثم أدخل عليه العمرة بنية القران فلا تصح عمرته. والثاني: يجزئه ; لأنه إنما يمنع من إدخال العمرة على الحج مع العلم فأما مع عدمه فلا تنزيلا للمجهول كالمعدوم فكأنه ابتدأ الإحرام بهما من حين التعيين.
 
 **Conditions**
 
@@ -466,7 +466,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 **Texts**
 
 - `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f005`: The positions: some Ḥanafīs and Shāfiʿīs and al-Rāzī let it prove recommendation or permission; Abū Yaʿlā's report and Ibn Burhān do not; Abū al-Khaṭṭāb gives two wujūh.
-  > ما قاله في المسودة إذا صرف الأمر عن الوجوب جاز أن يحتج به على الندب أو الإباحة وهو قول بعض الحنفية وبعض الشافعية ومنهم الرازى.
+  > ما قاله في المسودة إذا صرف الأمر عن الوجوب جاز أن يحتج به على الندب أو الإباحة وهو قول بعض الحنفية وبعض الشافعية ومنهم الرازى. وبعضهم قال لا يحتج به كذا حكاه القاضى أبو يعلى وكذلك اختاره ابن برهان ولفظة الأمر إذا دلت على وجوب فعل ثم نسخ وجوبه لا تبقى دليلا على الجواز بل يرجع إلى ما كان عليه خلافا للحنفية وكذلك اختاره أبو الطيب الطبرى ولفظه إذا صرف الأمر عن الوجوب لم يجز أن يحتج به على الجواز قال ل
 - `sadi.qawaid_jamia.archive_pdf1995_tess.q050`: Al-Saʿdī Q50: what is not established independently may be established as a dependent, and only so.
   > يثبت تبعاً ما لا يثبت استقلالاً وذلك أن المسائل والصور التابعة لغيرهاء يشملها حكم متبوعهاء فلا تفرد بحكم ٠ فلو أفردت بحكم لثبت لها حكم آخر . وهذا هو الموجب لكون
 
@@ -498,7 +498,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `src:openiti-lahham-shamela8526/v01:p226`: Ibn ʿAbd al-Salām: obligation with takhṣīṣ, since the command is mostly for obligation and the general mostly specified.
   > والحمل على الوجوب مع التزام التخصيص أولى لأن الغالب على صيغة الأمر الإيجاب والغالب على العموم التخصيص
 - `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f006`: «وافعلوا الخير», «دع ما يريبك»: the dilemma that either reading drops some items.
-  > إذا كان المأمور به بعضه واجبا وبعضه مستحبا كقوله تعالى: {وافعلوا الخير} [الحج: 77] وقوله صلى الله عليه وسلم: "دع ما يريبك إلى ما لا
+  > إذا كان المأمور به بعضه واجبا وبعضه مستحبا كقوله تعالى: {وافعلوا الخير} [الحج: 77] وقوله صلى الله عليه وسلم: "دع ما يريبك إلى ما لا يريبك" 1 ونحو ذلك وهو كثير في الكتابة والسنة. قال بعض الأصوليين إن حمل الأمر على الوجوب خرجت منه المستحبات وإن حمل على الندب خرجت منه الواجبات مع أنه يحكم وإن حمل عليهما لزم حمل اللفظ على حقيقته ومجازه أو على حقيقته. قال ms128 ابن عبد السلام في قواعده والحمل على الوجو
 
 **Rationale.** The dilemma assumes one status for the whole command. Both answers give each item its own status, one by takhṣīṣ of a general obligation, the other by the meaning of the command; mixed_readings_agree proves they rule alike on every item, so the case is derivable whichever is taken. They remain different claims about the word's meaning (ḥaqīqa and majāz), which the kernel does not model.
 

@@ -12,6 +12,9 @@ from .arabic import normalize, parse_ordinal, parse_ordinal_span
 from .openiti import _PAGE, Page, Section, clean_md_line
 
 _FARC = re.compile(r"^\(?و?منها\)?\s*[:.]?\s*")
+# The first example, given inline after «صور:» / «مسائل:» («منها», «(ومنها)», «(إحداها)»),
+# or as a paragraph opening «ومن أمثلة ذلك» / «فمن ذلك», before any «(و)منها» paragraph.
+_OPENING = re.compile(r":\s*\(?(?:و?منها|إحداها)\)?\s*[:.]?\s*(?=\S)|^\(?(?:ومن أمثلة ذلك|فمن ذلك)\)?\s*[:.]?\s*(?=\S)")
 _NUM = re.compile(r"^\s*(\d{1,3})\b")
 _TAGS = re.compile(r"<[^>]+>")
 _STATEMENT_LEN = 400
@@ -26,6 +29,7 @@ class Unit:
     furu: tuple[str, ...]
     ocr_corrected: bool
     covers: tuple[int, ...] = ()  # rule numbers under a joint heading, e.g. (22, 23)
+    opening: str | None = None  # the first example, inline before the «(و)منها» paragraphs
 
     @property
     def numbers(self) -> tuple[int, ...]:
@@ -53,13 +57,39 @@ def _statement(text: str) -> str:
     return " ".join(_TAGS.sub("", text).split())[:_STATEMENT_LEN]
 
 
+def _blocks(text: str) -> tuple[list[str], list[list[str]]]:
+    """The prelude (lines before the first farʿ marker) and one block per marker line, each
+    running to the next marker: a case that crosses a line break (a page marker) keeps its
+    continuation."""
+    prelude: list[str] = []
+    blocks: list[list[str]] = []
+    for line in text.split("\n"):
+        if _FARC.match(normalize(line)):
+            blocks.append([line])
+        else:
+            (blocks[-1] if blocks else prelude).append(line)
+    return prelude, blocks
+
+
 def _furu(text: str) -> tuple[str, ...]:
-    """Furūʿ: paragraphs that open with «منها» / «ومنها» (optionally parenthesised)."""
+    """Furūʿ: blocks opening with «منها» / «ومنها» (optionally parenthesised). A marker line
+    with nothing after it opens no farʿ (as it never did), so farʿ ids do not shift."""
     return tuple(
-        _statement(_FARC.sub("", p, count=1))
-        for p in text.split("\n")
-        if _FARC.match(normalize(p)) and _FARC.sub("", p, count=1).strip()
+        _statement(" ".join([_FARC.sub("", b[0], count=1), *b[1:]]))
+        for b in _blocks(text)[1]
+        if _FARC.sub("", b[0], count=1).strip()
     )
+
+
+def _opening(text: str) -> str | None:
+    """The opening example: in the prelude, the text after the first inline marker, to the
+    end of the prelude. It becomes farʿ 0, so the paragraph furūʿ keep their numbers."""
+    prelude = _blocks(text)[0]
+    for k, line in enumerate(prelude):
+        m = _OPENING.search(line)
+        if m and line[m.end():].strip():
+            return _statement(" ".join([line[m.end():], *prelude[k + 1:]]))
+    return None
 
 
 def segment_headed(sections: tuple[Section, ...], marker: str) -> tuple[Unit, ...]:
@@ -76,7 +106,7 @@ def segment_headed(sections: tuple[Section, ...], marker: str) -> tuple[Unit, ..
         if number is None:  # number printed on the first body line (Shamela layout)
             number, ocr = _number(_TAGS.sub("", head.text))
             text = text.split("\n", 1)[1] if "\n" in text else text
-        return Unit(number, head.title, _statement(text), head.page, _furu(text), ocr)
+        return Unit(number, head.title, _statement(text), head.page, _furu(text), ocr, opening=_opening(text))
 
     return tuple(unit(i, j) for i, j in bounds)
 

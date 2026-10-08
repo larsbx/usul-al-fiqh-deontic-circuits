@@ -3779,6 +3779,138 @@
     }
    ],
    "matches_madhhab": true
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f000",
+   "encoder": "partial_capability",
+   "class": "derivable",
+   "facts": {
+    "capable_of_part": true,
+    "pure_means": false
+   },
+   "expected": true,
+   "note": "One unable to recite must still stand: standing is «مقصود في نفسه وهو عبادة منفردة», not a pure means to the recitation. (Opening example, segmented as f000.)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f000",
+   "encoder": "substitute",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "original_possible": true
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "the state at performance: he moves to the hady",
+     "ruling": false
+    },
+    {
+     "who": "the state at obligation: fasting has become the original",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "Hady al-mutʿa lacking, fasting became due, then the hady is found before fasting began: whether he must move to it rests on two riwāyas, the state at obligation or at performance. The reading (the original is possible again, so the substitute is not used) takes the state at performance; no madhhab is marked between them. (Opening example, segmented as f000.)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000",
+   "encoder": "itlaf",
+   "class": "derivable",
+   "facts": {
+    "purpose": "repelHarm",
+    "mental": "deliberate"
+   },
+   "expected": false,
+   "note": "Killing an attacking animal or person in self-defence: not liable; killing another's animal in famine to save oneself: liable. The reading gives both: repelling harm is with right, taking a benefit is not; the first is annotated. (Opening example, segmented as f000.)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f000",
+   "encoder": "trust_voidance",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "pure_trust": true,
+    "transgressed": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "al-mashhūr: void, a pure trust",
+     "ruling": true
+    },
+    {
+     "who": "Ibn al-Zāghūnī: not void once he resumes keeping it",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "Transgression in a deposit voids it, the duty is to return it at once, «لأنها أمانة محضة… هذا هو المشهور»; Ibn al-Zāghūnī: once the transgression ends and he resumes keeping it, it is not void. (Opening example, segmented as f000.)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063.f000",
+   "encoder": "knowledge",
+   "class": "derivable",
+   "facts": {
+    "consent_required": false
+   },
+   "expected": false,
+   "note": "«منها الطلاق»: one whose consent is not needed to undo a contract need not know of it; the wife's knowledge is not needed for divorce. The record continues with khulʿ through a stranger (valid on the madhhab, a wajh against it if khulʿ is faskh); the first item is annotated. (Opening example, segmented as f000.)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f000",
+   "encoder": "recourse",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "gift": false,
+    "owed_by_other": true,
+    "permission": false,
+    "permission_unobtainable": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "al-madhhab: recourse",
+     "ruling": true
+    },
+    {
+     "who": "the other riwāya: no recourse",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "Paying another's due debt without his permission: recourse «في أصح الروايتين وهي المذهب»; al-Qāḍī adds conditions (intending recourse, the debtor refusing), which the authors of al-Mughnī and al-Muḥarrar reject. (Opening example, segmented as f000.)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f000",
+   "encoder": "partners",
+   "class": "derivable",
+   "facts": {
+    "necessary": true,
+    "consents": false
+   },
+   "expected": true,
+   "note": "A shared wall collapses: «فالمذهب إجبار الممتنع منهما بالبناء مع الآخر», necessity overriding his refusal. (Opening example, segmented as f000.)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f000",
+   "encoder": "doubled",
+   "class": "derivable",
+   "facts": {
+    "lapsed": true
+   },
+   "expected": 2,
+   "note": "A Muslim who kills a dhimmī deliberately owes the diya of a Muslim: retaliation lapses, so the compensation is doubled. (Opening example, segmented as f000.)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true
+   },
+   "expected": true,
+   "note": "Category 1 of qāʿida 159: a ẓāhir that is a sharʿī proof prevails over the aṣl «بغير خلاف»; two upright witnesses that the defendant owes. Annotated as its sibling f001. (Opening example, segmented as f000.)"
   }
  ]
 }

@@ -175,3 +175,30 @@ def test_four_digit_numbers_match_and_chain_across_1000():
     assert m and normalize(m.group(1)) == "1015"
     assert _repair("1000", 999, anchor_step=30) == 1000   # full four-digit read anchors
     assert _repair("000", 999) == 1000                     # «١» lost: suffix repair still lands on 1000
+
+
+def test_opening_example_before_the_first_paragraph_farc():
+    """A qāʿida's first example, introduced inline after «صور:»/«مسائل:» or by a paragraph
+    opening «ومن أمثلة ذلك», is kept as the opening example; the «(و)منها» paragraphs that
+    follow keep their own order, so existing farʿ ids do not move."""
+    q6 = sec("(القاعدة السادسة) :", "إذا فعل عبادة يظن أنها الواجبة فإنه يجزئه ولذلك صور: منها إذا أحج المعضوب ثم برئ.\n(ومنها) إذا كفر بالإطعام ثم عوفي.")
+    q14 = sec("(القاعدة الرابعة عشر) :", "إذا وجد سبب من أحد رجلين ولها صور: (إحداها) إذا وجد اثنان منيا.\n(والثانية) : يلزمهما الغسل.")
+    q22 = sec("(القاعدة الثانية والعشرون) :", "العين المنغمرة هل هي كالمعدومة.\nفيه خلاف وينبني عليه مسائل: (ومنها) الماء الذي استهلكت فيه النجاسة.\n(ومنها) اللبن المشوب.")
+    q68 = sec("(القاعدة الثامنة والستون) :", "هي نوعان:\nأحدهما ما يشترط فيه النية الجازمة\nومن أمثلة ذلك إذا صلى يظن نفسه محدثا.\nومنها لو شك في المسح.")
+    q1 = sec("(القاعدة الأولى)", "الماء الجاري لا ينجس. ومنها كذا في المتن.\nمنها: إذا نسي الماء.")
+    u6, u14, u22, u68, u1 = segment_headed((q6, q14, q22, q68, q1), marker="القاعدة")
+    assert (u6.opening, u6.furu) == ("إذا أحج المعضوب ثم برئ.", ("إذا كفر بالإطعام ثم عوفي.",))
+    # the rest of the prelude belongs to the case: here the second riwāya on it
+    assert (u14.opening, u14.furu) == ("إذا وجد اثنان منيا. (والثانية) : يلزمهما الغسل.", ())
+    assert (u22.opening, u22.furu) == ("الماء الذي استهلكت فيه النجاسة.", ("اللبن المشوب.",))
+    assert u68.opening == "إذا صلى يظن نفسه محدثا." and u68.furu == ("لو شك في المسح.",)
+    assert u1.opening is None  # «ومنها» mid-sentence, with no «صور:/مسائل:», is not an example
+
+
+def test_cases_run_to_the_next_farc_marker():
+    """A case crossing a source line break (e.g. a page marker) keeps its continuation, up to
+    the next farʿ marker; a marker line with nothing after it still opens no farʿ, so ids stay."""
+    q16 = sec("(القاعدة السادسة عشر) :", "إذا كان الواجب بدلا للمسألة صور عديدة: (منها) هدي المتعة ثم وجد الهدي فهل يجب\nعليه الانتقال؟ فيه روايتان.\n(ومنها) كفارة الظهار ونحوها\nوالحكم فيهما كهدي المتعة.\n(ومنها)\nلا شيء.\n(ومنها) إذا أتلف مثليا.")
+    (u,) = segment_headed((q16,), marker="القاعدة")
+    assert u.opening == "هدي المتعة ثم وجد الهدي فهل يجب عليه الانتقال؟ فيه روايتان."
+    assert u.furu == ("كفارة الظهار ونحوها والحكم فيهما كهدي المتعة.", "إذا أتلف مثليا.")

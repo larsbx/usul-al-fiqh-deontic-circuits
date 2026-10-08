@@ -20,6 +20,16 @@ def test_qaida_records_emit_parent_then_furu_and_validate():
         jsonschema.validate(r, SCHEMA)
 
 
+def test_opening_example_is_f000_and_keeps_later_ids():
+    u = Unit(6, "القاعدة 6", "يجزئه", (1, 8), ("إذا كفر بالإطعام",), False, opening="إذا أحج المعضوب")
+    q, f0, f1 = qaida_records(WORK, "openiti-x", "headed", "q006", u)
+    assert (f0["id"], f1["id"]) == (q["id"] + ".f000", q["id"] + ".f001")
+    assert f0["case_ar"] == "إذا أحج المعضوب" and f0["extraction"]["method"] == "headed+opening_example"
+    assert q["furu_count"] == 2
+    for r in (q, f0, f1):
+        jsonschema.validate(r, SCHEMA)
+
+
 def test_modern_rights_cap_excerpts():
     u = Unit(1, "القاعدة الأولى", "ا" * 1000, None, ("ب" * 1000,), False)
     q, f = qaida_records({"id": "sadi.qawaid_jamia", "rights": "modern_cache_only"}, "archive-x", "lines", "q001", u)

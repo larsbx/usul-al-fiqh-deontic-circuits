@@ -53,6 +53,10 @@ import Usul
 #guard (Usul.Refinements.validUnderDoubt false false true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f010 (derivable)
 #guard (Usul.Refinements.validUnderDoubt false false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f000 (derivable)
+#guard (Usul.Refinements.errorExcused false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f000 (derivable)
+#guard (Usul.Refinements.validUnderDoubt true false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001 (derivable)
 #guard (Usul.Refinements.zahirPrevails .zann .qat true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002 (derivable)
@@ -459,3 +463,21 @@ import Usul
 #guard (Usul.Refinements.allocationFull false false false) == .lot
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f007 (genuine_ikhtilaf)
 #guard (Usul.Refinements.validOnEvery Usul.Refinements.umraValid Usul.Refinements.Nusuk.all) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f000 (derivable)
+#guard (decide (0 ∈ Usul.Sadi.obligedParts [0] (fun _ => true) (fun _ => false))) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f000 (genuine_ikhtilaf)
+#guard (Usul.Sadi.useSubstitute true) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000 (derivable)
+#guard (Usul.Muamalat.itlafLiable (Usul.Muamalat.withRight .repelHarm) .deliberate) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f000 (genuine_ikhtilaf)
+#guard (Usul.Refinements.trustVoided true true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063.f000 (derivable)
+#guard ((Usul.Muamalat.Requirement.normalize ⟨false, true⟩).knowledge) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f000 (genuine_ikhtilaf)
+#guard (Usul.Refinements.recourseNec false true false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f000 (derivable)
+#guard (Usul.Muamalat.partnerMustJoin true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f000 (derivable)
+#guard (Usul.Muamalat.compensationOwed 1 true) == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000 (derivable)
+#guard (Usul.Refinements.zahirPrevails .zann .qat true) == true
