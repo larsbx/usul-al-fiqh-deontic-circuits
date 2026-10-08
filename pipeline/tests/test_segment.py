@@ -249,3 +249,19 @@ def test_divisions_after_an_announcement():
     assert (u66.opening, u66.furu) == ("أن يكون الاستناد صحيحا.", ("أن لا يكون صحيحا أحدهما: يبرأ. والثاني: لا يبرأ.",))
     assert (u152.opening, u152.furu) == (None, ("المحرمات بالنسب.", "المحرمات بالصهر] ، وهن أقارب الزوجين"))
     assert (u135.opening, u135.furu) == (None, ())  # two wujūh, not announced divisions
+
+
+def test_list_after_an_inline_first_case_keeps_the_opening():
+    """«مسائل: (إحداها) …» makes the first case the opening (.f000, as before); the following
+    «(والثانية)», «(والثالثة)» are then cut after it, so .f000 keeps its id."""
+    q = sec("(القاعدة الثانية) :", "فيه خلاف ينبني عليه مسائل: (إحداها) لو كذا.\n(والثانية) لو كذا أيضا.\n(والثالثة) لو غير ذلك.")
+    (u,) = segment_headed((q,), marker="القاعدة")
+    assert (u.opening, u.furu) == ("لو كذا.", ("لو كذا أيضا.", "لو غير ذلك."))
+
+
+def test_only_an_open_feminine_pair_absorbs_the_second():
+    """A masculine pair («أحدهما … والثاني») or a closed feminine one inside a case does not
+    absorb the next case's «(والثانية)»; an open «(إحداهما)» does."""
+    q = sec("(القاعدة الثالثة) :", "وله صور.\n(أحدها) لو كذا ففيه وجهان أحدهما يصح والثاني لا.\n(والثانية) لو كذا أيضا.\n(والثالثة) لو غير ذلك.")
+    (u,) = segment_headed((q,), marker="القاعدة")
+    assert u.furu == ("لو كذا ففيه وجهان أحدهما يصح والثاني لا.", "لو كذا أيضا.", "لو غير ذلك.")

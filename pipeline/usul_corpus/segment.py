@@ -82,7 +82,7 @@ _DIVISION = re.compile(r"^[\[(]?و?(?:ال)?(نوع|قسم|ضرب|حال[ةه]|�
 _BARE_DIVISION = re.compile(r"^\(?و?(ال(?:أول|ثاني|ثالث|رابع|خامس|سادس|سابع|ثامن|تاسع|عاشر))\)?\s*:\s*")
 _ANNOUNCE = re.compile(r"(?:نوعان|نوعين|أنواع|قسمان|قسمين|أقسام|ضربان|ضربين|أضرب|أشياء)\s*:\s*")
 _LIST_OPENING = re.compile(f"{_OPENING.pattern}|" r":\s*\(?أحدها(?!م)\)?\s*[:.]?\s*(?=\S)")
-_DUAL = re.compile(r"\(?(?:أحدهما|إحداهما)\)?")
+_OPEN_PAIR = re.compile(r"إحداهما(?!.*الثانية)")
 _FIRST = re.compile(r"^\(?(?:أحدهما|إحداهما|أحدها|إحداها|الأول|الأولى)\)?\s*[:.]?\s*")
 
 
@@ -146,10 +146,11 @@ def _marked(lines: tuple[str, ...], starts: tuple[int, ...], strip: Callable[[st
     return _Cut(lines, starts, strip, _inline_opening(lines[: starts[0]] if starts else lines))
 
 
-def _list_cut(lines: tuple[str, ...]) -> _Cut | None:
+def _list_cut(lines: tuple[str, ...], opened: bool = False) -> _Cut | None:
     """Feminine-ordinal cases if they form a list, else divisions: a labelled level (one label
     noun) before bare «والثاني:», which counts only after an announcement. A list starts at 1,
-    or at 2 when its first item is the opening."""
+    or at 2 when its first item is the opening. A unit that already has an opening (`opened`)
+    takes only a list from 2, so its .f000 stays."""
     def strip_by(*rxs: re.Pattern) -> Callable[[str], str]:
         def strip(line: str) -> str:
             m = next(filter(None, (rx.match(line) for rx in rxs)), None)
@@ -157,22 +158,23 @@ def _list_cut(lines: tuple[str, ...]) -> _Cut | None:
         return strip
 
     def chained(ms: list[tuple[int, int]], first: Callable[[tuple[str, ...]], str | None], strip) -> _Cut | None:
-        if len(c := _ordinal_chain(ms, 1)) >= 2:
+        if not opened and len(c := _ordinal_chain(ms, 1)) >= 2:
             return _Cut(lines, tuple(c), strip, None)
         c = _ordinal_chain(ms, 2)
         return _Cut(lines, tuple(c), strip, o) if c and (o := first(lines[: c[0]])) else None
 
     cases = [(i, v) for i, l in enumerate(lines) if (m := _CASE_LIST.match(l)) and (v := _ordinal(m[1]))]
     pos = {i: k for k, (i, _) in enumerate(cases)}
-    # a 2 after a dual «أحدهما/إحداهما» (since the last mark) is the second of a pair, not a case
+    # a «(والثانية)» after an open «(إحداهما)» (since the last mark) is that pair's second, not a case
     cases = [(i, v) for i, v in cases
-             if not (v == 2 and any(_DUAL.search(l) for l in lines[(cases[pos[i] - 1][0] if pos[i] else 0):i]))]
+             if not (v == 2 and _OPEN_PAIR.search(" ".join(lines[(cases[pos[i] - 1][0] if pos[i] else 0):i])))]
     labelled = [(i, normalize(m[1]).replace("ه", "ة"), v) for i, l in enumerate(lines)
                 if (m := _DIVISION.match(l)) and (v := _ordinal(m[2]))]
     bare = [(i, v) for i, l in enumerate(lines) if (m := _BARE_DIVISION.match(l)) and (v := _ordinal(m[1]))]
     levels = [[(i, v) for i, n, v in labelled if n == noun] for noun in dict.fromkeys(n for _, n, _ in labelled)]
+    first_case = _inline_opening if opened else (lambda p: _inline_opening(p, _LIST_OPENING))
     options = [
-        lambda: chained(cases, lambda p: _inline_opening(p, _LIST_OPENING), strip_by(_CASE_LIST)),
+        lambda: chained(cases, first_case, strip_by(_CASE_LIST)),
         *(lambda ms=ms: chained(ms, _announced_opening, strip_by(_DIVISION)) for ms in levels),
         lambda: chained(sorted(bare + [(i, v) for i, _, v in labelled]), _announced_opening, strip_by(_DIVISION, _BARE_DIVISION)),
     ]
@@ -180,15 +182,15 @@ def _list_cut(lines: tuple[str, ...]) -> _Cut | None:
 
 
 def _cut(text: str) -> _Cut:
-    """«(و)منها» paragraphs where the unit has any; else «الصورة/المسألة» ordinal cases; else,
-    where the unit has no opening example either, a list of cases or divisions. A layer applies
-    only where the ones before it find nothing, so no existing farʿ id moves."""
+    """«(و)منها» paragraphs where the unit has any; else «الصورة/المسألة» ordinal cases; else a
+    list of cases or divisions, after the opening example if there is one. A layer applies only
+    where the ones before it find nothing, so no existing farʿ id moves."""
     lines = tuple(text.split("\n"))
     for marker in (_PARAGRAPH, _ORDINAL):
         if starts := tuple(i for i, l in enumerate(lines) if marker.opens(l)):
             return _marked(lines, starts, marker.strip)
     bare = _marked(lines, (), _PARAGRAPH.strip)
-    return bare if bare.opening else _list_cut(lines) or bare
+    return _list_cut(lines, opened=bool(bare.opening)) or bare
 
 
 def _furu(text: str) -> tuple[str, ...]:
