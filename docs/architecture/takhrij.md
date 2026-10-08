@@ -148,3 +148,21 @@ Both the dossier and [the glossary](../glossary.md) are generated (`python -m us
 - every constant is `#check`-ed;
 - every term is a glossary key;
 - every refinement by an added fact names its conservativity theorem.
+
+**Fourth round: what the remaining texts say themselves.** Seven of the twelve open gaps quote their own reason, or a reason the bank already holds. Each is formalised in `Usul.Refinements` from that text, given an encoder and revisited (cited in [the dossier](dossier.md)):
+
+| Principle | Ground | Revisited |
+|---|---|---|
+| `bootyTheftBurden`, `ghululForfeits`: restitution once, plus the share forfeited. `ghulul_is_not_doubling` proves the burden can be below, at or above twice the theft | Ibn Rajab 140.f006 («وقد يكون قدر السرقة وأقل وأكثر») | 140.f006 missing rule → derivable |
+| `heardAfterDenial`: after denial, a right *against* oneself is heard and a right *for* oneself is not. The first half is Q55's confession rule (`against_self_like_confession`) | Ibn al-Laḥḥām's own distinction between the two texts («والفرق بين النصين أن الشهادة حق عليه… والبينة حق له») | 54.f002 → ikhtilāf on the madhhab side; the tag corrected from `rule:negated_indefinite_by_role` |
+| `fayTieBreak`: ordered criteria by S2 (`resolveD`), then the ruler's choice; here the lot is optional | Ibn Rajab 160.f038 («ثم ولي الأمر مخير إن شاء أقرع… وإن شاء رتبهما») | 160.f038 missing fact → derivable |
+| `luqata`: after its year, owned or given in charity. It is an instance of qāʿida 106 (`luqata_is_instance`) | Ibn Rajab 106.f002 («تتملك لجهالة ربها») | 106.f002 missing rule → derivable |
+| `validOnEvery`: under a forgotten intention, what holds on every possibility suffices. The second wajh is `treatedAsAbsent` applied to the ifrād possibility | Ibn Rajab 106.f007; the second wajh's «تنزيلا للمجهول كالمعدوم» | 106.f007 → ikhtilāf on the madhhab side (the better-known wajh) |
+| `jawazAfterSarf`: permission follows obligation and falls with it. This is Q50 (`Kulliyyat.established`) with no independent proof | Abū al-Ṭayyib and al-Tamīmī («الجواز تبع للوجوب… فإذا سقط الوجوب سقط التابع له») | 43.f005 → ikhtilāf (two wujūh; no madhhab marked) |
+| `amrPerItem` and `amrByTakhsis`: `mixed_readings_agree` proves Ibn ʿAbd al-Salām's takhṣīṣ and Abū al-ʿAbbās's per-item reading rule alike on every item | al-Musawwada («أريد به الواجب في الواجبات والمستحب في المستحبات») | 43.f006 missing fact → derivable |
+
+All seven are new encoders beside the old ones, so no earlier guard is touched. The conservativity check now follows the ledger rather than tag names: it requires a conservativity theorem exactly for the cases refined under the encoder they already had.
+
+After this round: 214 cases, **coverage 0.977**, **madhhab coverage 0.648**, **0 encoding errors**, 5 open gaps, 29 revisited. The five that remain are not principles the bank lacks:
+- four of Ibn al-Laḥḥām's points on qāʿida 43 are about naming or policy, not a ruling: whether writing, gesture or the Prophet's act is *called* a command, ḥaqīqa versus majāz, and whether «فرض»/«واجب» is immune to reinterpretation;
+- 52.f007 has no transmitted ruling to test («هذه المسألة لم أرها منقولة»).

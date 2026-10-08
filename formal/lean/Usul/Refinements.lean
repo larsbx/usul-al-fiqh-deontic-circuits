@@ -1,5 +1,7 @@
 import Usul.Muamalat
 import Usul.Qawaid
+import Usul.Kulliyyat
+import Usul.Dalala
 
 /-!
 # Refinements driven by the takhrīj suite (the bank applied to itself)
@@ -21,6 +23,10 @@ register question; it makes the alternatives expressible.
 * **Recourse when permission cannot be sought** (gap `fact:permission_unobtainable`; Ibn Rajab 75).
 * **Abstention while a divorce condition may have occurred** (gap
   `rule:abstention_under_possible_condition`; Taqī al-Dīn on Aḥmad's texts, cited by Ibn Rajab).
+* **Round 4** (the open gaps' own texts): ghulūl forfeiture (Ibn Rajab 140.f006), the right for
+  and against oneself after denial (Ibn al-Laḥḥām 54.f002), tie-breaks among fayʾ recipients (Ibn
+  Rajab 160.f038), luqaṭa (106.f002), the forgotten iḥrām (106.f007), the command after ṣarf
+  (Ibn al-Laḥḥām 43.f005) and the command over mixed items (43.f006).
 * **Ẓann and ʿilm** (register IQ-21, no takhrīj gap): the knowledge acted on is knowledge
   *that* a view preponderates (Ibn Taymiyya: «اعتقاد الرجحان» is ʿilm, «رجحان الاعتقاد» is ẓann);
   bayt 90 of Ibn ʿUthaymīn's manẓūma, «وإن تعذر اليقين فارجعا لغالب الظن»; and «لا عبرة بالظن البين
@@ -208,5 +214,141 @@ theorem ijtihad_not_overturned_by_ijtihad (e : Bool) : zannSetAside .zann e = fa
   cases e <;> rfl
 
 theorem evident_error_sets_aside : zannSetAside .qat false = true := rfl
+
+/-! ## Round 4: the open gaps' own principles -/
+
+/-! ### Ghulūl (Ibn Rajab 140.f006)
+
+«فيجتمع عليه غرم ما سرقه مع حرمان سهمه المستحق منها، وقد يكون قدر السرقة وأقل وأكثر»: on the
+riwāya that theft from booty is ghulūl, the thief owes the theft once and forfeits his share. -/
+
+/-- What a thief from the booty bears: the theft once, plus his share when it counts as ghulūl. -/
+def bootyTheftBurden (theft share : Nat) (asGhulul : Bool) : Nat :=
+  Muamalat.compensationOwed theft false + if asGhulul then share else 0
+
+/-- Whether the share is forfeited. -/
+def ghululForfeits (asGhulul : Bool) : Bool := asGhulul
+
+/-- Not Q35's doubling: the aggravation may be less than, equal to or more than the theft. -/
+theorem ghulul_is_not_doubling (theft : Nat) (h : 0 < theft) :
+    bootyTheftBurden theft 0 true < 2 * theft ∧ bootyTheftBurden theft theft true = 2 * theft ∧
+      2 * theft < bootyTheftBurden theft (theft + 1) true := by
+  simp only [bootyTheftBurden, Muamalat.compensationOwed, if_true, Bool.false_eq_true, if_false]
+  omega
+
+/-! ### A right for or against oneself after denying it (Ibn al-Laḥḥām 54.f002)
+
+«والفرق بين النصين أن الشهادة حق عليه فتسمع بعد النفي كما لو أقر بالحق بعد جحوده والبينة حق له
+فلا تسمع كما لو ادعى الحق بعد أن نفاه». -/
+
+/-- After denying it, a right *for* the speaker is not heard; a right *against* him is. -/
+def heardAfterDenial (forHimself : Bool) : Bool := !forHimself
+
+/-- The ground for the second half is Q55: a confession after any denial binds. -/
+theorem against_self_like_confession (pre post : List Muamalat.Plea) :
+    heardAfterDenial false = true ∧ (pre ++ .confess :: post).foldl Muamalat.plead false = true :=
+  ⟨rfl, Muamalat.q55_confession_absorbs pre post⟩
+
+/-! ### Tie-breaks among fayʾ recipients (Ibn Rajab 160.f038)
+
+Equal in rank: ordered by criteria (al-Mujarrad: age, then hijra; al-Aḥkām al-Sulṭāniyya:
+precedence in Islam, religion, age, courage), «ثم ولي الأمر مخير إن شاء أقرع بينهما وإن شاء
+رتبهما على رأيه واجتهاده». -/
+
+inductive TieBreak where
+  | byCriteria | rulerChoice
+  deriving DecidableEq, Repr
+
+/-- The first criterion on which they differ decides; if none, the ruler chooses (S2). -/
+def fayTieBreak (differs : List Bool) : TieBreak :=
+  Schema.resolveD (differs.map fun d => if d then some .byCriteria else none) .rulerChoice
+
+/-- Here lots are optional: the ruler may lot or rank by ijtihād, unlike a confused specific
+entitlement, where lots are owed (`confused_goes_to_lot`). -/
+def rulerMayLot : TieBreak → Bool
+  | .rulerChoice => true
+  | .byCriteria => false
+
+theorem equal_on_all_criteria (n : Nat) : fayTieBreak (List.replicate n false) = .rulerChoice := by
+  induction n with
+  | zero => rfl
+  | succ n ih => simpa [fayTieBreak, Schema.resolveD, Schema.first, List.replicate] using ih
+
+/-! ### Luqaṭa (Ibn Rajab 106.f002)
+
+«اللقطة بعد الحول فإنها تتملك لجهالة ربها وما لا يتملك منها يتصدق به عنه على الصحيح». -/
+
+inductive LuqataOutcome where
+  | hold | finderOwns | charity
+  deriving DecidableEq, Repr
+
+def luqata (yearPassed ownable : Bool) : LuqataOutcome :=
+  if !yearPassed then .hold else if ownable then .finderOwns else .charity
+
+/-- It is an instance of qāʿida 106: after the year of announcement the owner, still unknown,
+is treated as absent (despair of learning him). -/
+theorem luqata_is_instance (ownable : Bool) :
+    luqata true ownable ≠ .hold ∧ treatedAsAbsent true true false = true := by
+  cases ownable <;> exact ⟨by decide, rfl⟩
+
+/-! ### The forgotten iḥrām (Ibn Rajab 106.f007)
+
+Specified as qirān, it suffices for the ḥajj; for the ʿumra «أشهرهما عند المتأخرين لا يجزئه لجواز
+أن يكون أحرم بحج أو لا، ثم أدخل عليه العمرة»; the second view: it suffices, «تنزيلا للمجهول
+كالمعدوم». -/
+
+inductive Nusuk where
+  | ifrad | tamattu | qiran
+  deriving DecidableEq, Repr
+
+def Nusuk.all : List Nusuk := [.ifrad, .tamattu, .qiran]
+
+/-- What suffices under a forgotten intention: what is valid on every possibility. -/
+def validOnEvery {P : Type} (valid : P → Bool) (ps : List P) : Bool := ps.all valid
+
+def hajjValid : Nusuk → Bool := fun _ => true
+
+/-- Adding the ʿumra to a ḥajj already begun (ifrād first) does not make a valid ʿumra. -/
+def umraValid : Nusuk → Bool
+  | .ifrad => false
+  | _ => true
+
+theorem forgotten_ihram :
+    validOnEvery hajjValid Nusuk.all = true ∧ validOnEvery umraValid Nusuk.all = false := ⟨rfl, rfl⟩
+
+/-- The second view: the unknown ifrād possibility treated as absent, the ʿumra suffices. -/
+theorem second_view_by_treated_as_absent :
+    validOnEvery umraValid (Nusuk.all.filter (· != .ifrad)) = true := rfl
+
+/-! ### The command after ṣarf (Ibn al-Laḥḥām 43.f005)
+
+Abū al-Ṭayyib, and al-Tamīmī among the Ḥanbalīs: «اللفظ موضوع لإفادة الوجوب دون الجواز وإنما
+الجواز تبع للوجوب… فإذا سقط الوجوب سقط التابع له». That is Q50 (`Kulliyyat.established`): the
+jawāz has no independent proof in the wording and follows the wujūb. -/
+
+/-- Whether the command still proves permissibility once its obligation is turned away. -/
+def jawazAfterSarf (sarf : Bool) : Bool := Kulliyyat.established false (!sarf)
+
+theorem sarf_removes_jawaz : jawazAfterSarf true = false := rfl
+
+/-! ### A command over mixed items (Ibn al-Laḥḥām 43.f006)
+
+«وافعلوا الخير», «دع ما يريبك». Ibn ʿAbd al-Salām: obligation, specified by the recommended items;
+Abū al-ʿAbbās: «أريد به الواجب في الواجبات والمستحب في المستحبات». -/
+
+/-- Abū al-ʿAbbās's reading: each item takes its own status. -/
+def amrPerItem {α : Type} (status : α → Hukm) (x : α) : Hukm := status x
+
+/-- Ibn ʿAbd al-Salām's reading: obligation, with the recommended items specified out. -/
+def amrByTakhsis {α : Type} (status : α → Hukm) : Dalala.Takhsis α :=
+  ⟨fun _ => true, fun x => status x == .mandub, .wajib, .mandub⟩
+
+/-- The two readings give the same ruling on every item; they differ only in what the word
+means, not in what it rules. -/
+theorem mixed_readings_agree {α : Type} (status : α → Hukm)
+    (h : ∀ x, status x = .wajib ∨ status x = .mandub) (x : α) :
+    (amrByTakhsis status).ruling x = some (amrPerItem status x) := by
+  rcases h x with hx | hx <;>
+    simp [amrByTakhsis, amrPerItem, Dalala.Takhsis.ruling, Schema.first, hx]
 
 end Usul.Refinements

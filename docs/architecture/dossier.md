@@ -298,3 +298,209 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Lean:** `Usul.Muamalat.allocation`, `Usul.Refinements.allocationFull`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="ghulul_forfeiture"></a>
+
+## Theft from the booty as ghulūl: restitution once, and the share forfeited
+
+**Terms:** [al-ghulūl](../glossary.md#ghulul), [al-ḍamān](../glossary.md#daman)  
+**Closes:** `rule:ghulul_forfeiture`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f006`: Ibn Rajab under qāʿida 140: on the riwāya that theft from booty is ghulūl and the ghāll forfeits his share, he bears the theft's restitution together with the loss of his share, «وقد يكون قدر السرقة وأقل وأكثر».
+  > السرقة من الغنيمة إذا قلنا هي كالغلول وإن الغال يحرم سهمه منها على رواية، فيجتمع عليه غرم ما سرقه مع حرمان سهمه المستحق منها، وقد يكون قدر السرقة وأقل وأكثر.
+
+**Conditions**
+
+1. the theft is from the booty
+2. it is treated as ghulūl (a riwāya)
+3. the ghāll forfeits his share (a riwāya)
+
+**Texts**
+
+- `sadi.qawaid_jamia.archive_pdf1995_tess.q035`: Al-Saʿdī Q35, the doubling of compensation where a punishment lapses: the reading this case was filed under.
+  > من سقطت عنه العقوبة لموجب ضوعف عليه الضمان وذلك إذا كان فعله سبباً ناهضاً لوجوب العقوبة عليه ولكن سقطت عنه لسبب من الأسباب، فإنه يضاعف عليه ضمان الشيء؛ (؟) سورة
+
+**Rationale.** The case sits under the qāʿida of aggravated compensation but is not a doubling: the restitution is owed once and the aggravation is a forfeiture whose size is the share, not the theft. ghulul_is_not_doubling proves the burden can be below, at or above twice the theft, which is exactly the text's «قدر السرقة وأقل وأكثر».
+
+**Lean:** `Usul.Refinements.bootyTheftBurden`, `Usul.Refinements.ghululForfeits`, `Usul.Refinements.ghulul_is_not_doubling`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="right_for_or_against_self"></a>
+
+## After denial, a right against oneself is heard, a right for oneself is not
+
+**Terms:** [al-iqrār](../glossary.md#iqrar), [al-bayyina](../glossary.md#bayyina)  
+**Closes:** `rule:right_for_or_against_self`  
+**Register:** —
+
+**Statement**
+
+- `src:openiti-lahham-shamela8526/v01:p276`: Ibn al-Laḥḥām's own farq between Aḥmad's two texts.
+  > والفرق بين النصين أن الشهادة حق عليه فتسمع بعد النفي كما لو أقر بالحق بعد جحوده والبينة حق له فلا تسمع كما لو ادعى الخق بعد أن نفاه
+
+**Conditions**
+
+1. the speaker first denied the right
+2. the right's direction: for him (claim, bayyina) or against him (testimony, confession)
+
+**Texts**
+
+- `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q054.f002`: The two texts: the claimant who said «لا بينة لي» is not heard (al-manṣūṣ; Ibn ʿAqīl: heard); the witness who denied holding testimony is heard.
+  > إا قال المدعى لا بينة لى ثم أتى ببينة فالمذهب المنصوص أنها لا تسمع بينته ولنا قول آخر أنها تسمع واختاره ابن عقيل وغيره واستشكل على المنصوص إذا قال الشاهد لست متحملا عليك شهادة ثم أداها بعد ذلك فإن المنصوص عن أحمد أنها تسمع.
+- `sadi.qawaid_jamia.archive_pdf1995_tess.q055`: Al-Saʿdī Q55: no excuse for one who confesses, even claiming error; the ground of the second half.
+  > لاعذر لمن أقر، ولو ادعى غلطاً وذلك أن الإقرار أقوى البينات، وكل بينة غيره، فإنه يحتمل خطؤهاء وأما إذا أقر العاقل المكلف على نفسه بحق من الحقوق ترتب على إقراره م
+
+**Rationale.** The case was tagged as a generality question because both denials are negated indefinites, but the text decides it by the direction of the right. The half about a right against oneself is Q55's confession rule, which the kernel already proves (q55_confession_absorbs); against_self_like_confession links the two.
+
+**Lean:** `Usul.Refinements.heardAfterDenial`, `Usul.Refinements.against_self_like_confession`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="fay_tie_break"></a>
+
+## Equal fayʾ recipients: criteria in order, then the ruler's choice
+
+**Terms:** [al-qurʿa](../glossary.md#qurah), [al-tarjīḥ](../glossary.md#tarjih)  
+**Closes:** `fact:tie_break_criteria`  
+**Register:** IQ-09
+
+**Statement**
+
+- `src:openiti-rajab-shamela21730/v01:p362`: Ibn Rajab under qāʿida 160: after the criteria, the ruler may lot or rank them by his ijtihād.
+  > ثم ولي الأمر مخير إن شاء أقرع بينهما وإن شاء رتبهما على رأيه واجتهاده
+
+**Conditions**
+
+1. equal in rank (daraja)
+2. the first criterion on which they differ decides
+3. equal on all: the ruler chooses, lot or ijtihād
+
+**Texts**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f038`: The criteria: al-Mujarrad (age, then hijra) and al-Aḥkām al-Sulṭāniyya (precedence in Islam, religion, age, courage).
+  > إذا استوى اثنان من أهل الفيء في درجة ففي المجرد يقدم أسنهما ثم أقدمهما هجرة وفي الأحكام السلطانية يقدم بالسابقة في الإسلام ثم بالدين ثم بالسن ثم بالشجاعة، ثم ولي الأمر مخير إن شاء أقرع بينهما وإن شاء رتبهما على رأيه واجتهاده.
+
+**Rationale.** An ordered list of criteria with a default is S2 (resolveD), so fayTieBreak is defined by it. The two books differ in the criteria and their order, not in the procedure. The lot here is optional, which separates this case from qāʿida 160's confused specific entitlement, where the lot is owed.
+
+**Lean:** `Usul.Refinements.fayTieBreak`, `Usul.Refinements.rulerMayLot`, `Usul.Refinements.equal_on_all_criteria`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="luqata"></a>
+
+## Luqaṭa after its year: owned, or given in charity, because the owner is unknown
+
+**Terms:** [al-luqaṭa](../glossary.md#luqata), [al-majhūl](../glossary.md#majhul)  
+**Closes:** `rule:luqata`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002`: Ibn Rajab under qāʿida 106: after the year the luqaṭa is owned «لجهالة ربها»; what is not ownable is given in charity on his behalf (al-ṣaḥīḥ), and so too deposits and usurped goods.
+  > اللقطة بعد ms309 الحول فإنها تتملك لجهالة ربها وما لا يتملك منها يتصدق به عنه على الصحيح وكذلك الودائع والغصوب ونحوها.
+
+**Conditions**
+
+1. the year of announcement has passed
+2. the owner is still unknown
+3. ownable: the finder owns it; not ownable: charity on the owner's behalf
+
+**Texts**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106`: Qāʿida 106: the unknown is treated as non-existent when one despairs of learning it.
+  > ينزل المجهول منزلة المعدوم وإن كان الأصل بقاءه إذا يئس من الوقوف عليه أو شق اعتباره وذلك في مسائل: (منها) الزائد على ما تجلسه المستحاضة من أقل الحيض أو غالبه إلى منتهى أكثره، حكمه حكم المعدوم حيث حكمنا فيها للمرأة بأحكام الطاهرات كلها فإن مدة الاستحاضة تطول ولا غاية لها تنتظر بخلاف الزائد على الأقل في حق المبتدأة على ظاهر المذهب حيث تقضي الصوم الواقع فيه قبل ثبوت العادة بالتكرار ; لأن أمره ينكشف ب
+
+**Rationale.** The case was filed under the unknown-owner reading (al-Saʿdī Q20), whose outputs are owner or public interest, while the luqaṭa law gives the finder ownership. It is still qāʿida 106: the year of announcement is the despair of learning the owner (luqata_is_instance).
+
+**Lean:** `Usul.Refinements.luqata`, `Usul.Refinements.luqata_is_instance`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="ihram_specification"></a>
+
+## A forgotten iḥrām specified as qirān: what is valid on every possibility
+
+**Terms:** [al-yaqīn](../glossary.md#yaqin), [al-majhūl](../glossary.md#majhul)  
+**Closes:** `rule:ihram_specification`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f007`: Ibn Rajab under qāʿida 106: it suffices for the ḥajj; for the ʿumra the better known wajh among the later companions is that it does not.
+  > إذا أحرم بنسك وأنسيه ثم عينه بقران ms310 فإنه يجزئه عن الحج، وهل يجزئه عن العمرة؟ وجهين أشهرهما عند المتأخرين لا يجزئه لجواز أن يكون أحرم بحج أو لا، ثم أدخل عليه العمرة بنية القران فلا تصح عمرته.
+
+**Conditions**
+
+1. the nusuk intended is forgotten
+2. it is later specified as qirān
+3. the ḥajj is valid on every possibility; the ʿumra fails if he began with ḥajj
+
+**Texts**
+
+- `src:openiti-rajab-shamela21730/v01:p238`: The second wajh: the bar on adding an ʿumra to a ḥajj holds only with knowledge, so the unknown is treated as non-existent.
+  > والثاني: يجزئه ; لأنه إنما يمنع من إدخال العمرة على الحج مع العلم فأما مع عدمه فلا تنزيلا للمجهول كالمعدوم
+
+**Rationale.** What suffices under a forgotten intention is what holds on every possibility, the certain (validOnEvery; cf. adna_is_certain). The ḥajj does, the ʿumra does not. The second wajh is the bank's treatedAsAbsent applied to the ifrād possibility, so both positions are expressible; the kernel takes the better known.
+
+**Lean:** `Usul.Refinements.Nusuk`, `Usul.Refinements.validOnEvery`, `Usul.Refinements.hajjValid`, `Usul.Refinements.umraValid`, `Usul.Refinements.forgotten_ihram`, `Usul.Refinements.second_view_by_treated_as_absent`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="residual_jawaz_after_sarf"></a>
+
+## The command after its obligation is turned away: jawāz falls with wujūb
+
+**Terms:** [al-amr](../glossary.md#amr), [al-tabaʿiyya](../glossary.md#tabaiyya)  
+**Closes:** `rule:residual_jawaz_after_sarf`  
+**Register:** —
+
+**Statement**
+
+- `src:openiti-lahham-shamela8526/v01:p225`: Abū al-Ṭayyib, which al-Tamīmī of the Ḥanbalīs also held: the wording is for obligation, permission only follows it.
+  > لأن اللفظ موضوع لإفادة الوجوب دون الجواز وإنما الجواز تبع للوجوب إذ لا يجوز أن يكون واجبا ولا يجوز فعله فإذا سقط الوجوب سقط التابع له
+
+**Conditions**
+
+1. an indication removes the obligation
+2. it names no other status
+
+**Texts**
+
+- `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f005`: The positions: some Ḥanafīs and Shāfiʿīs and al-Rāzī let it prove recommendation or permission; Abū Yaʿlā's report and Ibn Burhān do not; Abū al-Khaṭṭāb gives two wujūh.
+  > ما قاله في المسودة إذا صرف الأمر عن الوجوب جاز أن يحتج به على الندب أو الإباحة وهو قول بعض الحنفية وبعض الشافعية ومنهم الرازى.
+- `sadi.qawaid_jamia.archive_pdf1995_tess.q050`: Al-Saʿdī Q50: what is not established independently may be established as a dependent, and only so.
+  > يثبت تبعاً ما لا يثبت استقلالاً وذلك أن المسائل والصور التابعة لغيرهاء يشملها حكم متبوعهاء فلا تفرد بحكم ٠ فلو أفردت بحكم لثبت لها حكم آخر . وهذا هو الموجب لكون
+
+**Rationale.** Al-Tamīmī's argument is Q50 in the other direction: permission has no independent proof in the wording, so it stands only with the obligation it follows. jawazAfterSarf is Kulliyyat.established with no independent proof. The opposing view would give the wording an independent proof of jawāz; no madhhab is marked.
+
+**Lean:** `Usul.Refinements.jawazAfterSarf`, `Usul.Refinements.sarf_removes_jawaz`, `Usul.Kulliyyat.established`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="amr_mixed"></a>
+
+## A command over items of mixed status: two readings, one ruling
+
+**Terms:** [al-amr](../glossary.md#amr), [al-takhṣīṣ](../glossary.md#takhsis)  
+**Closes:** `fact:per_item_status`  
+**Register:** —
+
+**Statement**
+
+- `src:openiti-lahham-shamela8526/v01:p226`: Abū al-ʿAbbās in al-Musawwada, the second and clearer path.
+  > والمسلك الثانى وهو أظهر أن نقول هذا الأمر أريد به الواجب في الواجبات والمستحب في المستحبات
+
+**Conditions**
+
+1. one command covers items of different status
+2. each item's status is fixed by its own proof
+
+**Texts**
+
+- `src:openiti-lahham-shamela8526/v01:p226`: Ibn ʿAbd al-Salām: obligation with takhṣīṣ, since the command is mostly for obligation and the general mostly specified.
+  > والحمل على الوجوب مع التزام التخصيص أولى لأن الغالب على صيغة الأمر الإيجاب والغالب على العموم التخصيص
+- `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f006`: «وافعلوا الخير», «دع ما يريبك»: the dilemma that either reading drops some items.
+  > إذا كان المأمور به بعضه واجبا وبعضه مستحبا كقوله تعالى: {وافعلوا الخير} [الحج: 77] وقوله صلى الله عليه وسلم: "دع ما يريبك إلى ما لا
+
+**Rationale.** The dilemma assumes one status for the whole command. Both answers give each item its own status, one by takhṣīṣ of a general obligation, the other by the meaning of the command; mixed_readings_agree proves they rule alike on every item, so the case is derivable whichever is taken. They remain different claims about the word's meaning (ḥaqīqa and majāz), which the kernel does not model.
+
+**Lean:** `Usul.Refinements.amrPerItem`, `Usul.Refinements.amrByTakhsis`, `Usul.Refinements.mixed_readings_agree`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)

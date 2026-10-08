@@ -202,6 +202,27 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q022`: Ibn al-Laḥḥām / al-Ṭūfī's definition and its scope.
   > العزيمة لغة القصد المؤكد وشرعا الحكم الثابت بدليل شرعى خلا عن معارض. قال الطوفي وقولنا بدليل شرعى يتناول الواجب وتحريم الحرام وكراهة المكروه ولهذا قال أصحابنا إن سجدة ص هل هى من عزائم السجود أولا مع أن سجدات القرآن كلها عندهم ندب. قلت: فظاهر كلامه أن سجدة ص اختلفوا في أنها هل هى مندوبة أم لا فمن قال هى مندوبة تكون من العزائم ومن قال ليست مندوبة فليست من العزائم وليس الأمر كذلك بل يستحب سجودها خارج
 
+<a id="bayyina"></a>
+
+## al-bayyina (البينة)
+
+*proof brought by a claimant (typically witnesses).* The proof a claimant brings for his claim. Ibn al-Laḥḥām treats it as a right for the claimant: one who said «لا بينة لي» and then brings one is not heard (al-manṣūṣ; Ibn ʿAqīl: heard), «كما لو ادعى الحق بعد أن نفاه». As used in the cited text.
+
+**Conditions**
+
+- a right for the one who brings it
+
+**Related:** [iqrar](#iqrar)
+
+**Lean:** `Usul.Refinements.heardAfterDenial`
+
+**Texts**
+
+- `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q054.f002`: Ibn al-Laḥḥām under qāʿida 54.
+  > إا قال المدعى لا بينة لى ثم أتى ببينة فالمذهب المنصوص أنها لا تسمع بينته ولنا قول آخر أنها تسمع واختاره ابن عقيل وغيره واستشكل على المنصوص إذا قال الشاهد لست متحملا عليك شهادة ثم أداها بعد ذلك فإن المنصوص عن أحمد أنها تسمع.
+- `src:openiti-lahham-shamela8526/v01:p276`: The farq: bayyina is a right for him.
+  > والفرق بين النصين أن الشهادة حق عليه فتسمع بعد النفي كما لو أقر بالحق بعد جحوده والبينة حق له فلا تسمع كما لو ادعى الخق بعد أن نفاه
+
 <a id="dalil"></a>
 
 ## al-dalīl (الدليل)
@@ -397,6 +418,26 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > عمدة التصرف على غلبة الظن، بخلاف الأحكام، فإن طرقها مضبوطة
 - `src:archive-pdf1995-tess/v01:p102`: Al-Saʿdī Q52: preponderant belief put before the aṣl in its places.
   > منها: تقديم غلبة الظن في المواضع التي يقدم فيها على  الأصل
+
+<a id="ghulul"></a>
+
+## al-ghulūl (الغلول)
+
+*misappropriation from the booty before its division.* Taking from the war booty before it is divided. On a riwāya the ghāll forfeits his own share; Ibn Rajab applies it to theft from the booty when that is treated as ghulūl, so the thief bears the restitution and loses his share, «وقد يكون قدر السرقة وأقل وأكثر». As used in the cited text; the corpus holds no formal definition.
+
+**Conditions**
+
+- the taking is from the booty before division
+- forfeiture of the share is a riwāya, not agreed
+
+**Related:** [daman](#daman)
+
+**Lean:** `Usul.Refinements.bootyTheftBurden`, `Usul.Refinements.ghulul_is_not_doubling`
+
+**Texts**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f006`: Ibn Rajab under qāʿida 140.
+  > السرقة من الغنيمة إذا قلنا هي كالغلول وإن الغال يحرم سهمه منها على رواية، فيجتمع عليه غرم ما سرقه مع حرمان سهمه المستحق منها، وقد يكون قدر السرقة وأقل وأكثر.
 
 <a id="haram"></a>
 
@@ -601,6 +642,28 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `src:openiti-majmufatawa-shamela7289/v13:p118`: Most fiqh people need is established by text or consensus.
   > جمهور مسائل الفقه التي يحتاج إليها الناس ويفتون بها هي ثابتة بالنص أو الإجماع
 
+<a id="iqrar"></a>
+
+## al-iqrār (الإقرار)
+
+*confession, acknowledgement of a right against oneself.* Acknowledging a right that lies against oneself. Al-Saʿdī Q55: there is no excuse for one who confesses, even if he then claims error. Ibn al-Laḥḥām uses it as the model for a right against oneself being heard after denial: «كما لو أقر بالحق بعد جحوده».
+
+**Conditions**
+
+- the right lies against the speaker
+- in the rights of persons (Q55's scope)
+
+**Related:** [bayyina](#bayyina)
+
+**Lean:** `Usul.Muamalat.confessionBinds`, `Usul.Muamalat.q55_confession_absorbs`, `Usul.Refinements.against_self_like_confession`
+
+**Texts**
+
+- `sadi.qawaid_jamia.archive_pdf1995_tess.q055`: Al-Saʿdī Q55.
+  > لاعذر لمن أقر، ولو ادعى غلطاً وذلك أن الإقرار أقوى البينات، وكل بينة غيره، فإنه يحتمل خطؤهاء وأما إذا أقر العاقل المكلف على نفسه بحق من الحقوق ترتب على إقراره م
+- `src:openiti-lahham-shamela8526/v01:p276`: Ibn al-Laḥḥām: confession after denial, the model for a right against oneself.
+  > والفرق بين النصين أن الشهادة حق عليه فتسمع بعد النفي كما لو أقر بالحق بعد جحوده والبينة حق له فلا تسمع كما لو ادعى الخق بعد أن نفاه
+
 <a id="itlaf"></a>
 
 ## al-itlāf (الإتلاف)
@@ -673,6 +736,26 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 **Texts**
 
 - `ibn_uthaymin.usul.shamela_9942.h012`: Definition.
+
+<a id="luqata"></a>
+
+## al-luqaṭa (اللقطة)
+
+*a lost thing found.* A lost item picked up by a finder. After the year of announcement it is owned «لجهالة ربها», and what is not ownable is given in charity on the owner's behalf (al-ṣaḥīḥ): an instance of treating the unknown owner as non-existent (qāʿida 106). Whether ownership comes automatically or by the finder's choice is two wujūh (Ibn Rajab elsewhere), not modelled.
+
+**Conditions**
+
+- the year of announcement has passed
+- the owner remains unknown
+
+**Related:** [majhul](#majhul)
+
+**Lean:** `Usul.Refinements.luqata`, `Usul.Refinements.luqata_is_instance`
+
+**Texts**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002`: Ibn Rajab under qāʿida 106.
+  > اللقطة بعد ms309 الحول فإنها تتملك لجهالة ربها وما لا يتملك منها يتصدق به عنه على الصحيح وكذلك الودائع والغصوب ونحوها.
 
 <a id="mafhum_al_mukhalafa"></a>
 
