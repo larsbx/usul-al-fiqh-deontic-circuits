@@ -1,17 +1,17 @@
 {
  "total": 249,
  "classes": {
-  "derivable": 118,
+  "derivable": 117,
   "genuine_ikhtilaf": 122,
-  "missing_fact": 1,
+  "missing_fact": 2,
   "missing_rule": 7,
   "segmentation_error": 1
  },
- "coverage": 0.968,
- "madhhab_coverage": 0.657,
+ "coverage": 0.964,
+ "madhhab_coverage": 0.653,
  "encoding_error": 0,
  "ikhtilaf_matching_madhhab": 45,
- "gaps_open": 11,
+ "gaps_open": 12,
  "revisited": 29,
  "revisit_queue": [],
  "per_encoder": {
@@ -117,8 +117,9 @@
    "genuine_ikhtilaf": 2
   },
   "istihlak": {
-   "derivable": 2,
+   "derivable": 1,
    "genuine_ikhtilaf": 5,
+   "missing_fact": 1,
    "missing_rule": 1
   },
   "doubt_in_condition": {

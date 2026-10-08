@@ -188,7 +188,17 @@ def test_opening_example_before_the_first_paragraph_farc():
     q1 = sec("(القاعدة الأولى)", "الماء الجاري لا ينجس. ومنها كذا في المتن.\nمنها: إذا نسي الماء.")
     u6, u14, u22, u68, u1 = segment_headed((q6, q14, q22, q68, q1), marker="القاعدة")
     assert (u6.opening, u6.furu) == ("إذا أحج المعضوب ثم برئ.", ("إذا كفر بالإطعام ثم عوفي.",))
-    assert (u14.opening, u14.furu) == ("إذا وجد اثنان منيا.", ())
+    # the rest of the prelude belongs to the case: here the second riwāya on it
+    assert (u14.opening, u14.furu) == ("إذا وجد اثنان منيا. (والثانية) : يلزمهما الغسل.", ())
     assert (u22.opening, u22.furu) == ("الماء الذي استهلكت فيه النجاسة.", ("اللبن المشوب.",))
     assert u68.opening == "إذا صلى يظن نفسه محدثا." and u68.furu == ("لو شك في المسح.",)
     assert u1.opening is None  # «ومنها» mid-sentence, with no «صور:/مسائل:», is not an example
+
+
+def test_cases_run_to_the_next_farc_marker():
+    """A case crossing a source line break (e.g. a page marker) keeps its continuation, up to
+    the next farʿ marker; a marker line with nothing after it still opens no farʿ, so ids stay."""
+    q16 = sec("(القاعدة السادسة عشر) :", "إذا كان الواجب بدلا للمسألة صور عديدة: (منها) هدي المتعة ثم وجد الهدي فهل يجب\nعليه الانتقال؟ فيه روايتان.\n(ومنها) كفارة الظهار ونحوها\nوالحكم فيهما كهدي المتعة.\n(ومنها)\nلا شيء.\n(ومنها) إذا أتلف مثليا.")
+    (u,) = segment_headed((q16,), marker="القاعدة")
+    assert u.opening == "هدي المتعة ثم وجد الهدي فهل يجب عليه الانتقال؟ فيه روايتان."
+    assert u.furu == ("كفارة الظهار ونحوها والحكم فيهما كهدي المتعة.", "إذا أتلف مثليا.")

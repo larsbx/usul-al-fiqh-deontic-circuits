@@ -55,8 +55,6 @@ import Usul
 #guard (Usul.Refinements.validUnderDoubt false false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f000 (derivable)
 #guard (Usul.Refinements.errorExcused false false) == true
--- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f000 (derivable)
-#guard (Usul.Refinements.istihlak true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f000 (derivable)
 #guard (Usul.Refinements.validUnderDoubt true false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001 (derivable)

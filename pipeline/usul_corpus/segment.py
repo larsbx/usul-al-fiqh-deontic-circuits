@@ -57,24 +57,38 @@ def _statement(text: str) -> str:
     return " ".join(_TAGS.sub("", text).split())[:_STATEMENT_LEN]
 
 
+def _blocks(text: str) -> tuple[list[str], list[list[str]]]:
+    """The prelude (lines before the first farʿ marker) and one block per marker line, each
+    running to the next marker: a case that crosses a line break (a page marker) keeps its
+    continuation."""
+    prelude: list[str] = []
+    blocks: list[list[str]] = []
+    for line in text.split("\n"):
+        if _FARC.match(normalize(line)):
+            blocks.append([line])
+        else:
+            (blocks[-1] if blocks else prelude).append(line)
+    return prelude, blocks
+
+
 def _furu(text: str) -> tuple[str, ...]:
-    """Furūʿ: paragraphs that open with «منها» / «ومنها» (optionally parenthesised)."""
+    """Furūʿ: blocks opening with «منها» / «ومنها» (optionally parenthesised). A marker line
+    with nothing after it opens no farʿ (as it never did), so farʿ ids do not shift."""
     return tuple(
-        _statement(_FARC.sub("", p, count=1))
-        for p in text.split("\n")
-        if _FARC.match(normalize(p)) and _FARC.sub("", p, count=1).strip()
+        _statement(" ".join([_FARC.sub("", b[0], count=1), *b[1:]]))
+        for b in _blocks(text)[1]
+        if _FARC.sub("", b[0], count=1).strip()
     )
 
 
 def _opening(text: str) -> str | None:
-    """The opening example: in the paragraphs before the first farʿ paragraph, the text after
-    the first inline marker. It becomes farʿ 0, so the paragraph furūʿ keep their numbers."""
-    for p in text.split("\n"):
-        if _FARC.match(normalize(p)):
-            return None
-        m = _OPENING.search(p)
-        if m and p[m.end():].strip():
-            return _statement(p[m.end():])
+    """The opening example: in the prelude, the text after the first inline marker, to the
+    end of the prelude. It becomes farʿ 0, so the paragraph furūʿ keep their numbers."""
+    prelude = _blocks(text)[0]
+    for k, line in enumerate(prelude):
+        m = _OPENING.search(line)
+        if m and line[m.end():].strip():
+            return _statement(" ".join([line[m.end():], *prelude[k + 1:]]))
     return None
 
 
