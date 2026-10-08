@@ -76,3 +76,10 @@ section_claim(w_subject_unresolved, stranger,
     deontic(test_scoped_affect, test_object, f, unconditional,
         fixture(subject_scoped)),
     fixture(unknown_membership)).
+
+% Unknown membership and no observation: the observation failure is a
+% determined obstruction, so the claim is obstructed, not undetermined.
+section_claim(w_claim_unresolved_unobserved, stranger,
+    deontic(test_scoped_affect, test_object, f, unconditional,
+        fixture(subject_scoped)),
+    fixture(unknown_membership_without_observation)).

@@ -202,6 +202,7 @@ section_obstruction(World, Agent, Section, modality_unsatisfied,
     \+ modality_satisfied(Modality, Conditions).
 section_obstruction(World, Agent, Section, unsupported_claim, no_observation) :-
     source_fact(Section, _Subject),
+    ctx(World, Agent, _),
     Section = deontic(Affect, Object, _, _, _),
     \+ ctx_affect(World, Agent, Affect, Object, _, _).
 section_obstruction(World, Agent, Section, capacity_violation,
@@ -213,14 +214,15 @@ section_obstruction(World, Agent, Section, tier_quarantine,
     unsupported_observation(World, Agent, Section, Evidence, _ControlStatus),
     quarantined_evidence(Evidence).
 
-% A claim whose membership is unknown is neither obstructed by subject nor
-% lifted.
+% A claim whose membership is unknown, and that no other check obstructs, is
+% neither obstructed nor lifted. Obstruction takes precedence, as in verdicts.
 claim_undetermined(World, Agent, Claim,
         unknown(subject_membership(Agent, Subject))) :-
     section_claim(World, Agent, Claim, _Origin),
     normalized_section(Claim, Section),
     source_fact(Section, Subject),
-    membership_unknown(Agent, Subject).
+    membership_unknown(Agent, Subject),
+    \+ claim_obstruction(World, Agent, Claim, _, _).
 
 % claim_state(?World, ?Agent, ?Claim, -State): obstructed, undetermined, or
 % lifted. Exactly one holds for every claim.
@@ -234,9 +236,11 @@ claim_state(World, Agent, Claim, lifted) :-
 source_fact(deontic(Affect, Object, Operator, Modality, Warrant), Subject) :-
     deontic_obligation(Affect, Object, Subject, Operator, Modality, Warrant).
 
-% Observations are diagnosed only when none of them supports lifting.
+% Observations are diagnosed only in a known context and only when none of
+% them supports lifting.
 unsupported_observation(World, Agent, Section, Evidence, ControlStatus) :-
     source_fact(Section, _Subject),
+    ctx(World, Agent, _),
     Section = deontic(Affect, Object, _, _, _),
     \+ supporting_observation(World, Agent, Affect, Object),
     ctx_affect(World, Agent, Affect, Object, Evidence, ControlStatus).
@@ -490,6 +494,14 @@ fixture_expectation(claim_without_context_is_unsupported,
         no_context)),
     expect_true).
 
+% A context failure stops the observation checks: one diagnosis, not two.
+fixture_expectation(claim_without_context_has_only_no_context,
+    query(( findall(Detail,
+                claim_obstruction(w_claim_no_context, agent, _, _, Detail),
+                Details),
+            Details == [no_context] )),
+    expect_true).
+
 % Quarantined evidence lifts nothing and so supports no path verdict.
 fixture_expectation(quarantined_evidence_lifts_no_section,
     query(local_section(w_claim_tier, agent, _)),
@@ -554,7 +566,7 @@ fixture_premise(world_with_obstructed_claim_is_not_gluable,
     query(ctx(w_claim_subject, outsider, _))).
 
 fixture_premise(every_claim_has_exactly_one_state,
-    query((aggregate_all(count, section_claim(_, _, _, _), N), N >= 12))).
+    query((aggregate_all(count, section_claim(_, _, _, _), N), N >= 13))).
 
 % -------------------------------------------------------------------------
 % Verdict vectors
@@ -576,6 +588,12 @@ fixture_expectation(conflict_world_verdict_is_obstructed,
 
 fixture_expectation(unresolved_subject_world_is_undetermined,
     query(world_verdict(w_subject_unresolved,
+        undetermined([unknown(subject_membership(stranger,
+            test_subject_class))]))),
+    expect_true).
+
+fixture_expectation(unknown_membership_without_claim_is_undetermined,
+    query(world_verdict(w_subject_unresolved_unclaimed,
         undetermined([unknown(subject_membership(stranger,
             test_subject_class))]))),
     expect_true).
@@ -623,6 +641,14 @@ fixture_expectation(undetermined_world_makes_path_undetermined,
 fixture_expectation(claim_with_unknown_membership_is_undetermined,
     query(claim_undetermined(w_subject_unresolved, stranger, _,
         unknown(subject_membership(stranger, test_subject_class)))),
+    expect_true).
+
+% An obstruction takes precedence over unknown membership, as in verdicts.
+fixture_expectation(obstruction_takes_precedence_over_unknown_membership,
+    query(( findall(State,
+                claim_state(w_claim_unresolved_unobserved, stranger, _, State),
+                States),
+            States == [obstructed] )),
     expect_true).
 
 fixture_expectation(claim_with_unknown_membership_is_not_obstructed,

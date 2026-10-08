@@ -29,13 +29,21 @@
 flip_kind(expect_true, expect_false).
 flip_kind(expect_false, expect_true).
 
-%!  check_expectation(:Query, +Kind, +Premises, -Outcome) is det.
+%!  check_expectation(:Query, +Kind, :Premises, -Outcome) is det.
 %
-%   Outcome is `pass` or `fail(Reason)`.
-check_expectation(Query, Kind, Premises, Outcome) :-
+%   Outcome is `pass` or `fail(Reason)`. Unqualified goals in Query and
+%   Premises run in the caller's module.
+:- meta_predicate check_expectation(0, +, :, -).
+
+check_expectation(Query, Kind, Module:Premises0, Outcome) :-
+    maplist(qualify(Module), Premises0, Premises),
     catch(judge(Kind, Query, Premises, Judged), Error,
           Judged = fail(error(Error))),
     Outcome = Judged.
+
+qualify(_, Qualified, Qualified) :-
+    Qualified = _:_, !.
+qualify(Module, Goal, Module:Goal).
 
 judge(Kind, _, _, fail(unknown_kind(Kind))) :-
     \+ flip_kind(Kind, _), !.

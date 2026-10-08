@@ -48,6 +48,8 @@ subject_closed(member).
 subject_closed(outsider).
 
 ctx(w_subject_unresolved, stranger, [within_capacity]).
+ctx(w_claim_unresolved_unobserved, stranger, [within_capacity]).
+ctx(w_subject_unresolved_unclaimed, stranger, [within_capacity]).
 
 % -------------------------------------------------------------------------
 % Path scopes and realizations

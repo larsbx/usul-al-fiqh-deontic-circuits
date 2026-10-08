@@ -29,12 +29,15 @@ mutants=(
   "context_emitter|v39_sheaf_concern.pl|s/^    \\\\+ ctx(World, Agent, _)\\./    \\\\+ ctx(World, Agent, _), fail./"
   "subject_emitter|v39_sheaf_concern.pl|s/^    \\\\+ subject_matches(Agent, Subject),$/    \\\\+ subject_matches(Agent, Subject), fail,/"
   "membership_closure|v39_sheaf_concern.pl|s/^    \\\\+ subject_closed(Agent)\./    Agent = Agent./"
-  "undetermined_emitters|v39_sheaf_concern.pl|s/^    membership_unknown(Agent, Subject)\./    membership_unknown(Agent, Subject), fail./"
+  "world_undetermined_emitter|v39_sheaf_concern.pl|s/^    membership_unknown(Agent, Subject)\./    membership_unknown(Agent, Subject), fail./"
+  "claim_undetermined_emitter|v39_sheaf_concern.pl|s/^    membership_unknown(Agent, Subject),$/    membership_unknown(Agent, Subject), fail,/"
   "unbound_world_guard|v39_sheaf_concern.pl|s/^    must_be(atom, World),$/    true,/"
   "undetermined_verdict|v39_sheaf_concern.pl|s/^        Unknowns \\\\== \[\]$/        Unknowns \\\\== [], fail/"
   "modality_emitter|v39_sheaf_concern.pl|s/^    \\\\+ modality_satisfied(Modality, Conditions)\./    \\\\+ modality_satisfied(Modality, Conditions), fail./"
   "capacity_emitter|v39_sheaf_concern.pl|s/^    \\\\+ under_taklif_control(ControlStatus)\./    \\\\+ under_taklif_control(ControlStatus), fail./"
   "tier_emitter|v39_sheaf_concern.pl|s/^    quarantined_evidence(Evidence)\./    quarantined_evidence(Evidence), fail./"
+  "observation_context_gate|v39_sheaf_concern.pl|s/^    ctx(World, Agent, _),$/    true,/"
+  "claim_state_precedence|v39_sheaf_concern.pl|s/^    \\\\+ claim_obstruction(World, Agent, Claim, _, _)\\./    true./"
   "claim_to_world|v39_sheaf_concern.pl|s/^    claim_obstruction(World, Agent, Section, Category, Detail)\./    claim_obstruction(World, Agent, Section, Category, Detail), fail./"
 )
 

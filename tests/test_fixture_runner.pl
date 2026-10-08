@@ -13,6 +13,12 @@
 
 runner_probe_true.
 
+add_probe :-
+    assertz(runner_probe_module:runner_local_probe).
+
+drop_probe :-
+    retractall(runner_probe_module:runner_local_probe).
+
 :- begin_tests(fixture_runner).
 
 test(expect_true_passes_when_query_succeeds) :-
@@ -64,6 +70,18 @@ test(failing_premise_fails_positive_vector) :-
 test(raising_premise_is_failure) :-
     check_expectation(user:true, expect_true, [user:runner_probe_undefined_xyz],
         fail(error(_))).
+
+% Query and premises are meta arguments: unqualified goals run in the
+% caller's module, not in fixture_runner.
+test(unqualified_query_runs_in_caller_module, [setup(add_probe), cleanup(drop_probe)]) :-
+    @(check_expectation(runner_local_probe, expect_true, [], Outcome),
+      runner_probe_module),
+    Outcome == pass.
+
+test(unqualified_premise_runs_in_caller_module, [setup(add_probe), cleanup(drop_probe)]) :-
+    @(check_expectation(true, expect_true, [runner_local_probe], Outcome),
+      runner_probe_module),
+    Outcome == pass.
 
 test(failure_count_counts_only_failures) :-
     failure_count(

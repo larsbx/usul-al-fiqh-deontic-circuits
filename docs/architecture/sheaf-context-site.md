@@ -119,8 +119,8 @@ The checks run in this order:
 1. **Alias normalization.** An ambiguous alias stops the remaining checks.
 2. **Source-fact resolution.** No fact at all gives `unsupported_claim`; a fact only for another object gives `object_collision`.
 3. **Subject.**
-4. **Context and modality.**
-5. **Observations.** These are diagnosed only when none of them supports lifting, which yields `capacity_violation` and/or `tier_quarantine`.
+4. **Context and modality.** A missing context stops the observation checks.
+5. **Observations.** These are diagnosed only in a known context, and only when none of them supports lifting. That yields `no_observation`, `capacity_violation`, and/or `tier_quarantine`.
 
 ## Verdicts
 
@@ -136,7 +136,7 @@ Precedence is: no context at all gives `undetermined([unknown(world_context)])`;
 
 `undetermined` is never read as `glues`. `world_gluable/1` and `path_gluable/2` are kept as wrappers that succeed only on `glues(_)`.
 
-The one open question the kernel detects today is subject membership. An agent's `agent_subject/2` facts count as complete only when `subject_closed/1` declares them so. If membership is the only thing deciding whether a fact lifts, and the agent is not closed, the result is `unknown(subject_membership(Agent, Subject))`. The kernel never infers non-membership from silence. Claims follow the same rule: such a claim is undetermined, neither `subject_collision` nor lifted. Every claim is in exactly one state: `obstructed`, `undetermined`, or `lifted`.
+The one open question the kernel detects today is subject membership. An agent's `agent_subject/2` facts count as complete only when `subject_closed/1` declares them so. If membership is the only thing deciding whether a fact lifts, and the agent is not closed, the result is `unknown(subject_membership(Agent, Subject))`. The kernel never infers non-membership from silence. Claims follow the same rule: such a claim is undetermined, neither `subject_collision` nor lifted, unless another check obstructs it. As with verdicts, obstruction takes precedence. Every claim is in exactly one state: `obstructed`, `undetermined`, or `lifted`.
 
 ## Evidence cosheaf feeding the deontic sheaf
 

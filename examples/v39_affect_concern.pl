@@ -119,3 +119,7 @@ ctx_affect(w_claim_unsupported, agent, raja, allah_rahmah,
 
 ctx_affect(w_subject_unresolved, stranger, test_scoped_affect, test_object,
     evidence(fixture, generated), action_guiding).
+
+% Unknown membership with no claim: undetermined from observation alone.
+ctx_affect(w_subject_unresolved_unclaimed, stranger, test_scoped_affect,
+    test_object, evidence(fixture, generated), action_guiding).
