@@ -1,0 +1,640 @@
+{
+ "subject": "principles formalised from takhrīj gaps, with their sources and rationale",
+ "status": "candidate",
+ "provenance": "Each statement and excerpt verified verbatim against the pinned witness (letters-only comparison) and each OpenITI locator computed from the closing page marker. Rationale is the formaliser's reading and awaits human review (Review.tla); none of these entries adopts a ruling.",
+ "entries": [
+  {
+   "id": "ahd_blocks_generality",
+   "title": "ʿAhd blocks the generality of al-",
+   "terms": [
+    "amm",
+    "ahd",
+    "khass"
+   ],
+   "statement": {
+    "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052",
+    "note": "Ibn al-Laḥḥām, qāʿida 52: the singular with al- is general «إذا لم تكن هناك قرينة عهد», when there is no indication of a known referent."
+   },
+   "refs": [
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f006",
+     "note": "«أوصيت لجاري محمد» with two neighbours of that name: the proper name pins the referent, «مخالف للقاعدة»."
+    },
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f003",
+     "note": "«تنزهوا من البول»: the companions read al- as ʿahd (human urine) «بقرينة»."
+    }
+   ],
+   "conditions": [
+    "a marker of generality (al- of genus, an annexed singular, a particle, or an indefinite in negation, prohibition or condition)",
+    "no indication of ʿahd and no proper name pinning the referent"
+   ],
+   "rationale": "The generality of al- is the default reading of the marker, and the qāʿida states its own blocking condition. Five of the six generality ikhtilāf cases split exactly on whether al- is ʿahd or genus, so the blocking fact must be an input: without it the kernel always took genus and landed on the minority side.",
+   "lean": [
+    "Usul.Dalala.IsGeneralIn",
+    "Usul.Dalala.isGeneralIn_no_ahd",
+    "Usul.Dalala.ahd_blocks",
+    "Usul.Dalala.isGeneralIn_is_gate"
+   ],
+   "conservative": "Usul.Dalala.isGeneralIn_no_ahd",
+   "closes": [
+    "fact:ahd"
+   ],
+   "iq": []
+  },
+  {
+   "id": "confused_entitlement_lots",
+   "title": "A specific entitlement lost in confusion goes to lots",
+   "terms": [
+    "qurah"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160",
+    "note": "Ibn Rajab, qāʿida 160: lots distinguish the entitled when entitlement attaches to an unspecified one among equals, and «ويستعمل أيضا في تمييز المستحق المعين في نفس الأمر عن اشتباهه»."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p348",
+     "excerpt_ar": "ويستعمل أيضا في تمييز المستحق المعين في نفس الأمر عن اشتباهه",
+     "note": "The second category, verbatim."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f007",
+     "note": "A deposit claimed by two, the depositary not knowing whose: lot (naṣṣ of Aḥmad)."
+    }
+   ],
+   "conditions": [
+    "the entitled person is specific in fact (muʿayyan fī nafs al-amr)",
+    "he is confused with others and cannot be identified"
+   ],
+   "rationale": "Al-Saʿdī's Q25 orders known entitled, then division, then lots. That fits Ibn Rajab's first category but not his second, where a specific entitled person lost in confusion is recovered by lot although the thing could be divided. Division would give a share to someone certainly not entitled.",
+   "lean": [
+    "Usul.Refinements.allocationFull",
+    "Usul.Refinements.allocationFull_conservative",
+    "Usul.Refinements.confused_goes_to_lot"
+   ],
+   "conservative": "Usul.Refinements.allocationFull_conservative",
+   "closes": [
+    "fact:confusion_category"
+   ],
+   "iq": [
+    "IQ-09"
+   ]
+  },
+  {
+   "id": "recourse_two_types",
+   "title": "Recourse: paying another's due, or spending by permission",
+   "terms": [
+    "daman"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075",
+    "note": "Ibn Rajab, qāʿida 75: recourse for what one spends on another's property without his permission is of two types: «من أدى واجبا عن غيره» and «من أنفق على ما تعلق به حقه من مال غيره»."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p138",
+     "excerpt_ar": "لأن إذنه قائم مقام إذن الغائب",
+     "note": "The judge's permission gives recourse for spending on a found item, «because his permission stands in place of the absent owner's»."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f010",
+     "note": "A lessee rebuilding the rented house has no recourse (naṣṣ): the rebuilding was not owed by the lessor."
+    }
+   ],
+   "conditions": [
+    "not given as a gift (al-Qāḍī: the payer intends recourse)",
+    "either the payment discharged an obligation owed by the other party, or the spending was by the owner's or the judge's permission"
+   ],
+   "rationale": "Al-Saʿdī's Q32 covers the first type only. The furūʿ under qāʿida 75 turn on whether the expense was owed by the other party and on permission, so both become inputs. With owed-by-other true the reading is Q32's.",
+   "lean": [
+    "Usul.Refinements.recourseFull",
+    "Usul.Refinements.recourseFull_conservative",
+    "Usul.Refinements.no_recourse_unowed_unpermitted"
+   ],
+   "conservative": "Usul.Refinements.recourseFull_conservative",
+   "closes": [
+    "fact:owed_by_other",
+    "fact:permission"
+   ],
+   "iq": [
+    "IQ-07"
+   ]
+  },
+  {
+   "id": "recourse_necessity",
+   "title": "Recourse when the owner's permission cannot be sought",
+   "terms": [
+    "daman"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f006",
+    "note": "«الحيوان المودع إذا أنفق عليه المستودع ناويا للرجوع فإن تعذر استئذان مالكه رجع»."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p138",
+     "excerpt_ar": "لأن إذنه قائم مقام إذن الغائب",
+     "note": "The same ground: what stands in for the absent owner's permission."
+    }
+   ],
+   "conditions": [
+    "intending recourse",
+    "asking the owner was impossible"
+   ],
+   "rationale": "Where permission could not be sought, the text gives recourse outright, and keeps the two ṭarīqas only for the case where asking was possible. Necessity stands where permission would have.",
+   "lean": [
+    "Usul.Refinements.recourseNec",
+    "Usul.Refinements.recourseNec_conservative"
+   ],
+   "conservative": "Usul.Refinements.recourseNec_conservative",
+   "closes": [
+    "fact:permission_unobtainable"
+   ],
+   "iq": [
+    "IQ-07"
+   ]
+  },
+  {
+   "id": "amara_on_equal_grades",
+   "title": "On equal grades the ẓāhir needs indicators",
+   "terms": [
+    "asl",
+    "zahir",
+    "zann",
+    "amara",
+    "yaqin"
+   ],
+   "statement": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p341",
+    "excerpt_ar": "لأن الوقت عليه أمارات تعرف بها فاكتفي فيها بالظن الغالب، بخلاف ما لا أمارة عليه من إتمام الصلاة والطهارة",
+    "note": "Ibn Rajab on breaking the fast at believed sunset (qāʿida 159): time has indicators, so preponderant belief suffices, unlike what has none: completing prayer, purity, ḥadath."
+   },
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159",
+     "note": "Qāʿida 159: when aṣl and ẓāhir conflict, a ẓāhir that is a sharʿī proof prevails; one resting on custom or indications sometimes yields, sometimes prevails, and is sometimes disputed."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008",
+     "note": "Doubting dawn: «ولا عبرة في ذلك بغلبة الظن وبالقرائن» unless a reliable report."
+    }
+   ],
+   "conditions": [
+    "a ẓāhir strictly stronger than the aṣl always prevails (a sharʿī proof)",
+    "on equal grades the ẓāhir prevails only where the matter has indicators by which it is known"
+   ],
+   "rationale": "Equal grades produced opposite rulings in the cases (purity and dawn keep the aṣl; sunset follows the ẓāhir), so the grade cannot be the deciding input. Ibn Rajab names the deciding fact himself: whether the matter has indicators.",
+   "lean": [
+    "Usul.Refinements.zahirPrevails",
+    "Usul.Refinements.zahirPrevails_conservative",
+    "Usul.Refinements.tie_without_amara_keeps_asl",
+    "Usul.Refinements.stronger_prevails"
+   ],
+   "conservative": "Usul.Refinements.zahirPrevails_conservative",
+   "closes": [
+    "fact:amara"
+   ],
+   "iq": [
+    "IQ-20"
+   ]
+  },
+  {
+   "id": "unknown_as_nonexistent",
+   "title": "The unknown is treated as non-existent",
+   "terms": [
+    "majhul",
+    "asl",
+    "yaqin"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106",
+    "note": "Ibn Rajab, qāʿida 106: «ينزل المجهول منزلة المعدوم وإن كان الأصل بقاءه إذا يئس من الوقوف عليه أو شق اعتباره»."
+   },
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f004",
+     "note": "The exception: if the forbidden is many and predominant, the case falls to the conflict of aṣl and ẓāhir."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f001",
+     "note": "The mustaḥāḍa's excess days are set aside; the beginner's doubtful days are not, «لأن أمره ينكشف بالتكرار عن قرب»."
+    }
+   ],
+   "conditions": [
+    "the thing is unknown",
+    "one despairs of learning it, or taking it into account is a hardship",
+    "(exception) the forbidden is not many and predominant"
+   ],
+   "rationale": "Al-Saʿdī's Q20 states the right-holder case. Ibn Rajab's qāʿida is the general rule, and most of its furūʿ (istiḥāḍa, confused women, street mud) have no right-holder. Q20 is proved to be its instance (q20_is_instance).",
+   "lean": [
+    "Usul.Refinements.treatedAsAbsent",
+    "Usul.Refinements.q20_is_instance",
+    "Usul.Refinements.knowable_not_set_aside"
+   ],
+   "conservative": "Usul.Refinements.q20_is_instance",
+   "closes": [
+    "rule:unknown_as_nonexistent"
+   ],
+   "iq": []
+  },
+  {
+   "id": "haml_ala_adna",
+   "title": "An unspecified intention over ranked referents is read as the lowest",
+   "terms": [
+    "yaqin",
+    "amm"
+   ],
+   "statement": {
+    "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f008",
+    "note": "Tayammum intended for «al-ṣalāt» unspecified: by the rule of generality it covers both, or «تنزيلا له على الأدنى» only the supererogatory, «أشهرهما عند الأصحاب الثانى»."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p351",
+     "excerpt_ar": "والمنصوص عن أحمد في رواية ابن منصور أن له أخسهم يعني أدنى ما يقع عليه الاسم ; لأنه المتيقن",
+     "note": "The ground: Aḥmad's naṣṣ on a bequest of «a slave» from several: the least the name covers, because it is the certain."
+    }
+   ],
+   "conditions": [
+    "the intention is unspecified",
+    "the referents differ in rank"
+   ],
+   "rationale": "Covering a higher level covers the lower, so the lowest of the candidate levels is covered whichever was meant: it is the certain (al-mutayaqqan). This ties the reading to Q11, certainty, and explains why the majority view departs from the generality of al-.",
+   "lean": [
+    "Usul.Refinements.hamlAlaAdna",
+    "Usul.Refinements.adna_is_certain"
+   ],
+   "conservative": null,
+   "closes": [
+    "rule:haml_ala_adna"
+   ],
+   "iq": []
+  },
+  {
+   "id": "trust_voidance",
+   "title": "A pure trust is voided by transgression; a compound trust is not",
+   "terms": [
+    "amana",
+    "daman"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045",
+    "note": "Ibn Rajab, qāʿida 45: «المذهب أن الأمانة المحضة تبطل بالتعدي والأمانة المتضمنة لأمر آخر لا تبطل على الصحيح»."
+   },
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005",
+     "note": "The transgressing executor: two possibilities (Ibn ʿAqīl), unmarked."
+    }
+   ],
+   "conditions": [
+    "transgression (taʿaddī)",
+    "the trust is pure (amāna maḥḍa), not one that includes something else such as authority"
+   ],
+   "rationale": "Voidance of the contract is a different question from liability for loss (Q14). The theorem liability_independent_of_voidance keeps the two apart.",
+   "lean": [
+    "Usul.Refinements.trustVoided",
+    "Usul.Refinements.compound_trust_survives",
+    "Usul.Refinements.liability_independent_of_voidance"
+   ],
+   "conservative": null,
+   "closes": [
+    "rule:trust_voidance"
+   ],
+   "iq": []
+  },
+  {
+   "id": "abstention_possible_condition",
+   "title": "Abstain while a divorce condition may have occurred",
+   "terms": [
+    "yaqin",
+    "shakk",
+    "ihtiyat"
+   ],
+   "statement": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p357",
+    "excerpt_ar": "وحاصله أنه متى علق الطلاق بشرط وأمكن وجوده فإنه يعتزل امرأته حتى يعلم انتفاؤه",
+    "note": "Taqī al-Dīn's summary of Aḥmad's texts, cited by Ibn Rajab."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p356",
+     "excerpt_ar": "متيقن لحل زوجته شاك في تحريمها",
+     "note": "The marriage is not judged dissolved: he is certain of her lawfulness and doubts her prohibition."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f027",
+     "note": "«You are divorced on Laylat al-Qadr»: abstain from the last ten «لإمكان أن يكون أول ليلة»."
+    }
+   ],
+   "conditions": [
+    "divorce suspended on a condition",
+    "its occurrence is possible",
+    "its absence is not known"
+   ],
+   "rationale": "Abstention is a rule of conduct, not of status. The doubtful condition does not displace the certain marriage (Q11), so the theorem abstention_keeps_status proves both at once: the held judgement is unchanged, and abstention is due. Whether abstention is obligatory (al-Qāḍī) or scrupulous (Ibn ʿAqīl) is a further question the reading does not decide.",
+   "lean": [
+    "Usul.Refinements.abstains",
+    "Usul.Refinements.abstention_keeps_status",
+    "Usul.Refinements.known_absence_ends_abstention"
+   ],
+   "conservative": null,
+   "closes": [
+    "rule:abstention_under_possible_condition"
+   ],
+   "iq": []
+  },
+  {
+   "id": "lots_for_forgotten_wife",
+   "title": "Lots decide which wife was divorced when she is forgotten",
+   "terms": [
+    "qurah",
+    "majhul"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160",
+    "note": "Ibn Rajab, qāʿida 160: lots also «distinguish the entitled person, specific in fact, from his confusion and the inability to learn him», in property and in marriages alike «in the apparent madhhab»."
+   },
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f006",
+     "note": "Under qāʿida 106 (the unknown as non-existent): one wife divorced and forgotten is identified by lot and the others remain lawful, the sound and well-known position."
+    }
+   ],
+   "conditions": [
+    "the divorce fell on one specific wife",
+    "she cannot be identified (forgotten, or the husband died)",
+    "the matter is a marriage or property, not lineage, which lots never decide"
+   ],
+   "rationale": "The case was filed under qāʿida 106, but its ruling is qāʿida 160's second category: a specific entitlement lost in confusion. The bank already had the lots reading (al-Saʿdī Q25), so the case was retested there rather than under a new principle. The dispute inside the madhhab (whether lots make the remaining wives lawful inwardly) is the 'other view' Ibn Rajab names for marriages; the kernel takes the apparent madhhab.",
+   "lean": [
+    "Usul.Muamalat.allocation",
+    "Usul.Refinements.allocationFull"
+   ],
+   "conservative": null,
+   "closes": [
+    "rule:lots"
+   ],
+   "iq": [
+    "IQ-09"
+   ]
+  },
+  {
+   "id": "ghulul_forfeiture",
+   "title": "Theft from the booty as ghulūl: restitution once, and the share forfeited",
+   "terms": [
+    "ghulul",
+    "daman"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f006",
+    "note": "Ibn Rajab under qāʿida 140: on the riwāya that theft from booty is ghulūl and the ghāll forfeits his share, he bears the theft's restitution together with the loss of his share, «وقد يكون قدر السرقة وأقل وأكثر»."
+   },
+   "refs": [
+    {
+     "ref": "sadi.qawaid_jamia.archive_pdf1995_tess.q035",
+     "note": "Al-Saʿdī Q35, the doubling of compensation where a punishment lapses: the reading this case was filed under."
+    }
+   ],
+   "conditions": [
+    "the theft is from the booty",
+    "it is treated as ghulūl (a riwāya)",
+    "the ghāll forfeits his share (a riwāya)"
+   ],
+   "rationale": "The case sits under the qāʿida of aggravated compensation but is not a doubling: the restitution is owed once and the aggravation is a forfeiture whose size is the share, not the theft. ghulul_is_not_doubling proves the burden can be below, at or above twice the theft, which is exactly the text's «قدر السرقة وأقل وأكثر».",
+   "lean": [
+    "Usul.Refinements.bootyTheftBurden",
+    "Usul.Refinements.ghululForfeits",
+    "Usul.Refinements.ghulul_is_not_doubling"
+   ],
+   "conservative": null,
+   "closes": [
+    "rule:ghulul_forfeiture"
+   ],
+   "iq": []
+  },
+  {
+   "id": "right_for_or_against_self",
+   "title": "After denial, a right against oneself is heard, a right for oneself is not",
+   "terms": [
+    "iqrar",
+    "bayyina"
+   ],
+   "statement": {
+    "ref": "src:openiti-lahham-shamela8526/v01:p276",
+    "excerpt_ar": "والفرق بين النصين أن الشهادة حق عليه فتسمع بعد النفي كما لو أقر بالحق بعد جحوده والبينة حق له فلا تسمع كما لو ادعى الخق بعد أن نفاه",
+    "note": "Ibn al-Laḥḥām's own farq between Aḥmad's two texts."
+   },
+   "refs": [
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q054.f002",
+     "note": "The two texts: the claimant who said «لا بينة لي» is not heard (al-manṣūṣ; Ibn ʿAqīl: heard); the witness who denied holding testimony is heard."
+    },
+    {
+     "ref": "sadi.qawaid_jamia.archive_pdf1995_tess.q055",
+     "note": "Al-Saʿdī Q55: no excuse for one who confesses, even claiming error; the ground of the second half."
+    }
+   ],
+   "conditions": [
+    "the speaker first denied the right",
+    "the right's direction: for him (claim, bayyina) or against him (testimony, confession)"
+   ],
+   "rationale": "The case was tagged as a generality question because both denials are negated indefinites, but the text decides it by the direction of the right. The half about a right against oneself is Q55's confession rule, which the kernel already proves (q55_confession_absorbs); against_self_like_confession links the two.",
+   "lean": [
+    "Usul.Refinements.heardAfterDenial",
+    "Usul.Refinements.against_self_like_confession"
+   ],
+   "conservative": null,
+   "closes": [
+    "rule:right_for_or_against_self"
+   ],
+   "iq": []
+  },
+  {
+   "id": "fay_tie_break",
+   "title": "Equal fayʾ recipients: criteria in order, then the ruler's choice",
+   "terms": [
+    "qurah",
+    "tarjih"
+   ],
+   "statement": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p362",
+    "excerpt_ar": "ثم ولي الأمر مخير إن شاء أقرع بينهما وإن شاء رتبهما على رأيه واجتهاده",
+    "note": "Ibn Rajab under qāʿida 160: after the criteria, the ruler may lot or rank them by his ijtihād."
+   },
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f038",
+     "note": "The criteria: al-Mujarrad (age, then hijra) and al-Aḥkām al-Sulṭāniyya (precedence in Islam, religion, age, courage)."
+    }
+   ],
+   "conditions": [
+    "equal in rank (daraja)",
+    "the first criterion on which they differ decides",
+    "equal on all: the ruler chooses, lot or ijtihād"
+   ],
+   "rationale": "An ordered list of criteria with a default is S2 (resolveD), so fayTieBreak is defined by it. The two books differ in the criteria and their order, not in the procedure. The lot here is optional, which separates this case from qāʿida 160's confused specific entitlement, where the lot is owed.",
+   "lean": [
+    "Usul.Refinements.fayTieBreak",
+    "Usul.Refinements.rulerMayLot",
+    "Usul.Refinements.equal_on_all_criteria"
+   ],
+   "conservative": null,
+   "closes": [
+    "fact:tie_break_criteria"
+   ],
+   "iq": [
+    "IQ-09"
+   ]
+  },
+  {
+   "id": "luqata",
+   "title": "Luqaṭa after its year: owned, or given in charity, because the owner is unknown",
+   "terms": [
+    "luqata",
+    "majhul"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002",
+    "note": "Ibn Rajab under qāʿida 106: after the year the luqaṭa is owned «لجهالة ربها»; what is not ownable is given in charity on his behalf (al-ṣaḥīḥ), and so too deposits and usurped goods."
+   },
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106",
+     "note": "Qāʿida 106: the unknown is treated as non-existent when one despairs of learning it."
+    }
+   ],
+   "conditions": [
+    "the year of announcement has passed",
+    "the owner is still unknown",
+    "ownable: the finder owns it; not ownable: charity on the owner's behalf"
+   ],
+   "rationale": "The case was filed under the unknown-owner reading (al-Saʿdī Q20), whose outputs are owner or public interest, while the luqaṭa law gives the finder ownership. It is still qāʿida 106: the year of announcement is the despair of learning the owner (luqata_is_instance).",
+   "lean": [
+    "Usul.Refinements.luqata",
+    "Usul.Refinements.luqata_is_instance"
+   ],
+   "conservative": null,
+   "closes": [
+    "rule:luqata"
+   ],
+   "iq": []
+  },
+  {
+   "id": "ihram_specification",
+   "title": "A forgotten iḥrām specified as qirān: what is valid on every possibility",
+   "terms": [
+    "yaqin",
+    "majhul"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f007",
+    "note": "Ibn Rajab under qāʿida 106: it suffices for the ḥajj; for the ʿumra the better known wajh among the later companions is that it does not."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p238",
+     "excerpt_ar": "والثاني: يجزئه ; لأنه إنما يمنع من إدخال العمرة على الحج مع العلم فأما مع عدمه فلا تنزيلا للمجهول كالمعدوم",
+     "note": "The second wajh: the bar on adding an ʿumra to a ḥajj holds only with knowledge, so the unknown is treated as non-existent."
+    }
+   ],
+   "conditions": [
+    "the nusuk intended is forgotten",
+    "it is later specified as qirān",
+    "the ḥajj is valid on every possibility; the ʿumra fails if he began with ḥajj"
+   ],
+   "rationale": "What suffices under a forgotten intention is what holds on every possibility, the certain (validOnEvery; cf. adna_is_certain). The ḥajj does, the ʿumra does not. The second wajh is the bank's treatedAsAbsent applied to the ifrād possibility, so both positions are expressible; the kernel takes the better known.",
+   "lean": [
+    "Usul.Refinements.Nusuk",
+    "Usul.Refinements.validOnEvery",
+    "Usul.Refinements.hajjValid",
+    "Usul.Refinements.umraValid",
+    "Usul.Refinements.forgotten_ihram",
+    "Usul.Refinements.second_view_by_treated_as_absent"
+   ],
+   "conservative": null,
+   "closes": [
+    "rule:ihram_specification"
+   ],
+   "iq": []
+  },
+  {
+   "id": "residual_jawaz_after_sarf",
+   "title": "The command after its obligation is turned away: jawāz falls with wujūb",
+   "terms": [
+    "amr",
+    "tabaiyya"
+   ],
+   "statement": {
+    "ref": "src:openiti-lahham-shamela8526/v01:p225",
+    "excerpt_ar": "لأن اللفظ موضوع لإفادة الوجوب دون الجواز وإنما الجواز تبع للوجوب إذ لا يجوز أن يكون واجبا ولا يجوز فعله فإذا سقط الوجوب سقط التابع له",
+    "note": "Abū al-Ṭayyib, which al-Tamīmī of the Ḥanbalīs also held: the wording is for obligation, permission only follows it."
+   },
+   "refs": [
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f005",
+     "note": "The positions: some Ḥanafīs and Shāfiʿīs and al-Rāzī let it prove recommendation or permission; Abū Yaʿlā's report and Ibn Burhān do not; Abū al-Khaṭṭāb gives two wujūh."
+    },
+    {
+     "ref": "sadi.qawaid_jamia.archive_pdf1995_tess.q050",
+     "note": "Al-Saʿdī Q50: what is not established independently may be established as a dependent, and only so."
+    }
+   ],
+   "conditions": [
+    "an indication removes the obligation",
+    "it names no other status"
+   ],
+   "rationale": "Al-Tamīmī's argument is Q50 in the other direction: permission has no independent proof in the wording, so it stands only with the obligation it follows. jawazAfterSarf is Kulliyyat.established with no independent proof. The opposing view would give the wording an independent proof of jawāz; no madhhab is marked.",
+   "lean": [
+    "Usul.Refinements.jawazAfterSarf",
+    "Usul.Refinements.sarf_removes_jawaz",
+    "Usul.Kulliyyat.established"
+   ],
+   "conservative": null,
+   "closes": [
+    "rule:residual_jawaz_after_sarf"
+   ],
+   "iq": []
+  },
+  {
+   "id": "amr_mixed",
+   "title": "A command over items of mixed status: two readings, one ruling",
+   "terms": [
+    "amr",
+    "takhsis"
+   ],
+   "statement": {
+    "ref": "src:openiti-lahham-shamela8526/v01:p226",
+    "excerpt_ar": "والمسلك الثانى وهو أظهر أن نقول هذا الأمر أريد به الواجب في الواجبات والمستحب في المستحبات",
+    "note": "Abū al-ʿAbbās in al-Musawwada, the second and clearer path."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-lahham-shamela8526/v01:p226",
+     "excerpt_ar": "والحمل على الوجوب مع التزام التخصيص أولى لأن الغالب على صيغة الأمر الإيجاب والغالب على العموم التخصيص",
+     "note": "Ibn ʿAbd al-Salām: obligation with takhṣīṣ, since the command is mostly for obligation and the general mostly specified."
+    },
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f006",
+     "note": "«وافعلوا الخير», «دع ما يريبك»: the dilemma that either reading drops some items."
+    }
+   ],
+   "conditions": [
+    "one command covers items of different status",
+    "each item's status is fixed by its own proof"
+   ],
+   "rationale": "The dilemma assumes one status for the whole command. Both answers give each item its own status, one by takhṣīṣ of a general obligation, the other by the meaning of the command; mixed_readings_agree proves they rule alike on every item, so the case is derivable whichever is taken. They remain different claims about the word's meaning (ḥaqīqa and majāz), which the kernel does not model.",
+   "lean": [
+    "Usul.Refinements.amrPerItem",
+    "Usul.Refinements.amrByTakhsis",
+    "Usul.Refinements.mixed_readings_agree"
+   ],
+   "conservative": null,
+   "closes": [
+    "fact:per_item_status"
+   ],
+   "iq": []
+  }
+ ]
+}

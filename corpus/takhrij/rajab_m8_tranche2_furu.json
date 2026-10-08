@@ -1,0 +1,509 @@
+{
+  "suite": "m8_rajab_tranche_2",
+  "status": "candidate",
+  "provenance": "M8 second tranche: every far record of Ibn Rajab's qawāʿid 7, 27, 28, 64 and 65, annotated against readings formalised from each qāʿida's own statement (Usul.Refinements). Annotated by reading the full paragraph in the pinned witness; every claim of agreement is guarded by Lean (UsulTest/Takhrij.lean); classes and facts await human review (Review.tla).",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f000",
+      "encoder": "switch_to_original",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "necessity": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the madhhab: no switch",
+          "ruling": false
+        },
+        {
+          "who": "a wajh: switch",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Expiation fast begun, then a slave found: the madhhab does not oblige the switch, «لأن ذلك رخصة»; a wajh obliges it, since expiations carry an aggravation that excludes an absolute concession."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f001",
+      "encoder": "switch_to_original",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "necessity": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "riwāya: the prayer is void",
+          "ruling": true
+        },
+        {
+          "who": "riwāya: it continues",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Tayammum, water found during the prayer: two riwāyas on invalidity; Ibn Rajab: tayammum is between the two kinds (a general concession, and a necessity-purification). Read as necessity; the riwāya against invalidity reads it as concession."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f002",
+      "encoder": "switch_to_original",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "necessity": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "riwāya: dissolved",
+          "ruling": true
+        },
+        {
+          "who": "riwāya: not dissolved",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Marriage to a slave woman by one fearing ʿanat without means, then one condition lapses: is the marriage dissolved? Two riwāyas; marriage has a tinge of worship. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f000",
+      "encoder": "benefit_to_other",
+      "class": "derivable",
+      "facts": {
+        "benefits_other": true
+      },
+      "expected": true,
+      "note": "Pregnant or nursing woman breaking the fast for fear for the child: fidya is due «في المشهور»; for fear for herself, none."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f001",
+      "encoder": "benefit_to_other",
+      "class": "derivable",
+      "facts": {
+        "benefits_other": true
+      },
+      "expected": true,
+      "note": "Rescuing one drowning in Ramaḍān, water entering the throat (if it breaks the fast): fidya is due, the breaking being for another's benefit."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f002",
+      "encoder": "benefit_to_other",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "benefits_other": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Qāḍī: liable",
+          "ruling": true
+        },
+        {
+          "who": "Ibn ʿAqīl, Ibn al-Zāghūnī: not liable",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Repelling an attacker from another by killing: liable (al-Qāḍī); not liable (Ibn ʿAqīl and Ibn al-Zāghūnī, al-Fatāwā al-Rajabiyyāt). No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f003",
+      "encoder": "benefit_to_other",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "benefits_other": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Qāḍī: binding",
+          "ruling": true
+        },
+        {
+          "who": "Abū al-Khaṭṭāb: not binding (al-aẓhar)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Oath forced to repel wrong from another: binding (al-Qāḍī, Sharḥ al-Madhhab); not binding (Abū al-Khaṭṭāb), «وهو الأظهر». Ibn Rajab prefers the view against his own qāʿida here."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f000",
+      "encoder": "concurrent_causes",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "other_act_permitted": true
+      },
+      "expected": "full",
+      "positions": [
+        {
+          "who": "qawl: full diya",
+          "ruling": "full"
+        },
+        {
+          "who": "qawl: half",
+          "ruling": "half"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The imam adds a lash to the ḥadd and the offender dies: two qawls (Abū Bakr), the full diya or half."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f001",
+      "encoder": "concurrent_causes",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "other_act_permitted": true
+      },
+      "expected": "full",
+      "positions": [
+        {
+          "who": "the stated ruling: full",
+          "ruling": "full"
+        },
+        {
+          "who": "a wajh: half",
+          "ruling": "half"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Retaliation taken, then he or another wounds the offender aggressively: the full diya; a wajh: half."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f002",
+      "encoder": "concurrent_causes",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "other_act_permitted": true
+      },
+      "expected": "full",
+      "positions": [
+        {
+          "who": "the stated ruling: whole",
+          "ruling": "full"
+        },
+        {
+          "who": "a wajh: half",
+          "ruling": "half"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Game disabled by one shot, then shot by another, dying of both wounds: the second owes the whole game, as wounded by the first."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f003",
+      "encoder": "concurrent_causes",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "other_act_permitted": true
+      },
+      "expected": "full",
+      "positions": [
+        {
+          "who": "naṣṣ: full value",
+          "ruling": "full"
+        },
+        {
+          "who": "a wajh: by share",
+          "ruling": "half"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Hired animal driven beyond the agreed distance or load, and it perishes: the full value, by Aḥmad's naṣṣ."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f004",
+      "encoder": "concurrent_causes",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "other_act_permitted": true
+      },
+      "expected": "full",
+      "positions": [
+        {
+          "who": "ẓāhir of Aḥmad: full",
+          "ruling": "full"
+        },
+        {
+          "who": "al-Qāḍī: half",
+          "ruling": "half"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A non-muḥrim and a muḥrim wound game together and it dies: the muḥrim owes it in full, the ẓāhir of Aḥmad's words; al-Qāḍī: half."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f005",
+      "encoder": "concurrent_causes",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "other_act_permitted": false
+      },
+      "expected": "half",
+      "positions": [
+        {
+          "who": "naṣṣ: stranger owes half",
+          "ruling": "half"
+        },
+        {
+          "who": "al-Mughnī's takhrīj",
+          "ruling": "full"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Husband and a stranger push the wife and take her virginity, then divorce before consummation: Aḥmad (Muhannā) — the stranger owes half the arsh, since that taking was «غير مأذون فيه»; al-Mughnī derives another wajh."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f000",
+      "encoder": "unknown_condition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "knew": false,
+        "liability_only": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "wajh: not valid",
+          "ruling": false
+        },
+        {
+          "who": "wajh: valid",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Acting in another's property, then it appears he had permitted it: valid or not? Two wujūh. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f001",
+      "encoder": "unknown_condition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "knew": false,
+        "liability_only": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "ashhar, manṣūṣ: divorced",
+          "ruling": false
+        },
+        {
+          "who": "the other wajh: not divorced",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«If you go out without my permission you are divorced»; he permits, she goes out not knowing: divorced, per the ashhar and the manṣūṣ: the unknown permission does not count."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f002",
+      "encoder": "unknown_condition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "knew": false,
+        "liability_only": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī: not effective",
+          "ruling": false
+        },
+        {
+          "who": "the other wajh: effective",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Seller permits the buyer to act within the option period; he acts after the permission, before learning of it: derived from the wujūh on agency; al-Qāḍī: not effective. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f003",
+      "encoder": "unknown_condition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "knew": false,
+        "liability_only": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Abū al-Khaṭṭāb: liable",
+          "ruling": false
+        },
+        {
+          "who": "Ibn Rajab: not liable",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Usurper eats food the owner had permitted, not knowing: liable (Abū al-Khaṭṭāb, al-Intiṣār); Ibn Rajab: «بعيد جدا والصواب الجزم بعدم الضمان», since liability is not established by belief alone."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f000",
+      "encoder": "unknown_condition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "knew": false,
+        "liability_only": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "wajh: invalid",
+          "ruling": false
+        },
+        {
+          "who": "wajh: valid",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Sells his father's property without permission, then the father had already died, he being the sole heir: two wujūh (or riwāyas); Ibn Rajab's analogy to the jester leans toward invalidity. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f001",
+      "encoder": "unknown_condition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "knew": false,
+        "liability_only": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "riwāya: no divorce",
+          "ruling": false
+        },
+        {
+          "who": "riwāya: divorced",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Divorces a woman he takes for a stranger, and she is his wife: two riwāyas (Abū Bakr builds them on whether explicit words need intention). No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f002",
+      "encoder": "unknown_condition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "knew": false,
+        "liability_only": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-aẓhar (Ibn Rajab): consent to the unknown is not considered, so not freed",
+          "ruling": false
+        },
+        {
+          "who": "the other wajh: freed",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "«Step aside, free woman» to one who is his own slave: the same disagreement; Aḥmad's naṣṣ and al-Mughnī's possibility of distinguishing it. Ibn Rajab builds it on whether consent to the unknown counts: «والأظهر عدم اعتباره». No madhhab marked; the reading follows Ibn Rajab's preference."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f003",
+      "encoder": "unknown_condition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "knew": false,
+        "liability_only": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "wajh: no release",
+          "ruling": false
+        },
+        {
+          "who": "wajh: released",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Releases a debt he believes is not owed, and it was: the two wujūh. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f004",
+      "encoder": "unknown_condition",
+      "class": "missing_rule",
+      "note": "Pardons qiṣāṣ for a non-retaliable wound and its spread, then it spreads to the life: does qiṣāṣ lapse? Derived on the two wujūh; it turns on whose right qiṣāṣ for the spread is at the time of pardon, which the reading does not express.",
+      "needs": [
+        "rule:qisas_belongs_to_whom"
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f005",
+      "encoder": "unknown_condition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "knew": false,
+        "liability_only": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Mughnī: invalid",
+          "ruling": false
+        },
+        {
+          "who": "the other wajh: valid",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The missing man's wife remarries before the required period, then he had died (or divorced her) long enough before: al-Mughnī: invalid. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f006",
+      "encoder": "unknown_condition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "knew": false,
+        "liability_only": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "possibility: not freed",
+          "ruling": false
+        },
+        {
+          "who": "possibility: freed",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Ordered to free a slave he thinks the commander's, and it is his own: al-Talkhīṣ — derivable on one who frees a slave in the dark; two possibilities. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f007",
+      "encoder": "unknown_condition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "knew": false,
+        "liability_only": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "wajh: invalid",
+          "ruling": false
+        },
+        {
+          "who": "wajh: valid",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Buys a runaway believing it unobtainable, and it was obtainable: two wujūh (he believed the validity condition absent), and al-Mughnī's third. No madhhab marked."
+    }
+  ]
+}

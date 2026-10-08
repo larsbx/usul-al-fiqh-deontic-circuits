@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/citation_map.schema.json",
+  "title": "Citation map: what the pinned sources say on a subject, and which Lean constants each topic grounds",
+  "type": "object",
+  "required": ["subject", "status", "provenance", "works", "formalises", "unformalised", "principles"],
+  "additionalProperties": false,
+  "properties": {
+    "subject": {"type": "string"},
+    "status": {"const": "candidate"},
+    "provenance": {"type": "string", "minLength": 1},
+    "works": {"type": "array", "items": {"type": "object", "required": ["witness"], "properties": {"witness": {"type": "string"}}}},
+    "formalises": {"type": "object", "additionalProperties": {"type": "array", "items": {"type": "string", "pattern": "^Usul\\."}, "minItems": 1}},
+    "unformalised": {"type": "object", "additionalProperties": {"type": "string", "minLength": 1}},
+    "principles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["topic", "claim_en", "witness", "locator", "excerpt_ar"],
+        "additionalProperties": false,
+        "properties": {
+          "topic": {"type": "string"},
+          "claim_en": {"type": "string", "minLength": 1},
+          "witness": {"type": "string"},
+          "locator": {"type": "string", "pattern": "^src:[a-z0-9-]+/v[0-9]+:p[0-9]+$"},
+          "excerpt_ar": {"type": "string", "minLength": 1, "maxLength": 400},
+          "hanbali_position": {"type": ["string", "null"]}
+        }
+      }
+    }
+  }
+}

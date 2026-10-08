@@ -1,0 +1,17 @@
+{
+  "note": "Σ coverage (roadmap M2): each Lean constant is tied to the ḥadd it formalizes. `python -m usul_corpus validate` checks the record side; the generated UsulTest/SignatureMap.lean makes the Lean build check the constant side.",
+  "links": [
+    {"lean": "Usul.Hukm", "witness": "shamela-9942", "term_ar": "الأحكام"},
+    {"lean": "Usul.Hukm.wajib", "witness": "shamela-9942", "term_ar": "الواجب"},
+    {"lean": "Usul.Hukm.mandub", "witness": "shamela-9942", "term_ar": "المندوب"},
+    {"lean": "Usul.Hukm.haram", "witness": "shamela-9942", "term_ar": "المحرم"},
+    {"lean": "Usul.Hukm.makruh", "witness": "shamela-9942", "term_ar": "المكروه"},
+    {"lean": "Usul.Hukm.mubah", "witness": "shamela-9942", "term_ar": "المباح"},
+    {"lean": "Usul.Hukm.binding", "witness": "shamela-9942", "term_ar": "الواجب"},
+    {"lean": "Usul.DalilKind.ijma", "witness": "shamela-9942", "term_ar": "الإجماع"},
+    {"lean": "Usul.DalilKind.qiyas", "witness": "shamela-9942", "term_ar": "القياس"},
+    {"lean": "Usul.Conflict", "witness": "shamela-9942", "term_ar": "التعارض"},
+    {"lean": "Usul.Resolution.naskh", "witness": "shamela-9942", "term_ar": "النسخ"},
+    {"lean": "Usul.Subject.IsMukallaf", "witness": "openiti-lahham-shamela8526", "qaida": 2}
+  ]
+}

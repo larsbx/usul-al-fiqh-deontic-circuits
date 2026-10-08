@@ -15,3 +15,14 @@ The migration is framed around three layers:
 3. **Small deterministic deontic kernel** for validity, tier discipline, closure, defeat/blocking semantics, quarantine, derivation traces, and path-level affect constraints.
 
 The guiding constraint is that the LLM may propose, normalize, query, and explain, but it must not become the hidden deontic authority.
+
+## Ḥanbalī uṣūl formalization track
+
+- Roadmap: [`docs/roadmap-hanbali-usul-formalization.md`](docs/roadmap-hanbali-usul-formalization.md)
+- Pipeline: [`docs/architecture/formalization-pipeline.md`](docs/architecture/formalization-pipeline.md)
+- `make all` runs the corpus tests, record validation, the generated-file drift check, the Lean build and TLC. `make fetch build` refreshes the corpus cache and records.
+
+## al-Albānī ḥadīth-methodology track
+
+- Roadmap: [`docs/roadmap-albani-hadith-methodology.md`](docs/roadmap-albani-hadith-methodology.md)
+- Lean: `formal/lean/Hadith/` (narrator grades, isnād and tadlīs, ṭuruq aggregation as a defeasible argument), vectors in `formal/lean/HadithTest/`. The only edge into the uṣūl kernel is `Hadith.Verdict.grade : Verdict → Usul.Grade`.

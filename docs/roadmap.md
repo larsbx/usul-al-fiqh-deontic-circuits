@@ -4,6 +4,8 @@
 
 Turn the ADQ Prolog corpus into a database-backed, auditable deontic-circuit research harness.
 
+Long-range Ḥanbalī uṣūl formalization track (Lean 4, TLA+, Haskell, category theory, type theory): see [`roadmap-hanbali-usul-formalization.md`](roadmap-hanbali-usul-formalization.md).
+
 ## Working principle
 
 Natural language and LLM prompting are allowed at the authoring boundary. They may propose candidate records. They may not directly create accepted normative facts or verdicts.

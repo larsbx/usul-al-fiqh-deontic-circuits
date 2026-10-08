@@ -1,0 +1,137 @@
+{
+ "suite": "dalala_readings_on_lahham_furu",
+ "status": "candidate",
+ "provenance": "Ibn al-Laḥḥām's furūʿ under qawāʿid 43 (the command) and 61 (wording vs occasion) annotated by an LLM agent against the M5 readings in Usul.Dalala; claims checked by Lean (UsulTest/Takhrij.lean); awaiting human review (Review.tla).",
+ "cases": [
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f001",
+   "encoder": "amr",
+   "needs": [
+    "rule:amr_by_writing_or_gesture"
+   ],
+   "note": "Whether writing or gesture counts as a command (al-Qadi: not truly; his Jami' argument from the Prophet's letters implies it does) is a question about what constitutes the command, prior to and outside the kernel, which presupposes a command and only assigns its status.",
+   "class": "missing_rule",
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f002",
+   "encoder": "amr",
+   "note": "Whether it is proper to ask of a bare command 'is it obligatory?' is a dialectical point on which Abu Ya'la reports only refusal and concession; it is one of the text's 'fawa'id usuliyya', not a case whose ruling could be tested.",
+   "class": "segmentation_error",
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f003",
+   "encoder": "amr",
+   "needs": [
+    "rule:fil_nabawi_as_amr"
+   ],
+   "note": "Whether the Prophet's act is called a command literally (Abu al-Barakat: only figuratively, per Ahmad and the majority; some Malikis/Shafi'is and Abu Ya'la's Kifaya: literally) is governed by the theory of the Prophet's acts and the semantics of the word 'amr', not by the bare-command default.",
+   "class": "missing_rule",
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+   "encoder": "amr",
+   "needs": [
+    "rule:nass_immune_to_tawil"
+   ],
+   "note": "Whether an unqualified threat, or the words 'obligatory'/'fard', are a text (nass) for obligation that admits no reinterpretation (al-Qadi: no; Abu al-Barakat, preferred: yes) asks whether an indication may override the default at all, whereas the kernel lets any qarina override every command.",
+   "class": "missing_rule",
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f005",
+   "encoder": "residual_jawaz_after_sarf",
+   "note": "Abū al-Khaṭṭāb gives the Ḥanbalīs two wujūh, so no madhhab is marked. The kernel takes al-Tamīmī's reading, which is Q50: the jawāz has no independent proof in the wording and follows the wujūb (jawazAfterSarf, sarf_removes_jawaz).",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "sarf": true
+   },
+   "expected": false,
+   "revisit": {
+    "from_class": "missing_rule",
+    "from_encoder": "amr",
+    "closed_by": [
+     "rule:residual_jawaz_after_sarf"
+    ]
+   },
+   "positions": [
+    {
+     "who": "some Ḥanafīs and Shāfiʿīs, al-Rāzī: it still proves recommendation or permission",
+     "ruling": true
+    },
+    {
+     "who": "Abū Yaʿlā's report, Ibn Burhān, Abū al-Ṭayyib, al-Tamīmī: it does not; jawāz follows wujūb and falls with it",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false
+  },
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f006",
+   "encoder": "amr_mixed",
+   "note": "A command over items partly obligatory, partly recommended («وافعلوا الخير»): Ibn ʿAbd al-Salām reads obligation with takhṣīṣ, Abū al-ʿAbbās the obligatory in the obligatory items and the recommended in the recommended; the two give the same ruling on every item (mixed_readings_agree), so the case is derivable whichever is taken.",
+   "class": "derivable",
+   "facts": {
+    "per_item_status": "mandub"
+   },
+   "expected": "mandub",
+   "revisit": {
+    "from_class": "missing_fact",
+    "from_encoder": "amr",
+    "closed_by": [
+     "fact:per_item_status"
+    ]
+   }
+  },
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f007",
+   "encoder": "amr",
+   "needs": [
+    "rule:haqiqa_majaz"
+   ],
+   "note": "Once nadb (or ibaha) is meant by the command the status is not in dispute; the dispute (literal per Ahmad's apparent words, al-Qadi and most companions vs figurative per al-Karkhi, al-Razi and al-Halwani; for ibaha Abu al-Barakat and Ibn 'Aqil say figurative) is over literal vs figurative usage, which the kernel does not model.",
+   "class": "missing_rule",
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061.f001",
+   "encoder": "umum_lafz",
+   "facts": {
+    "in_occasion": false,
+    "general_wording": true
+   },
+   "expected": true,
+   "note": "Breaking the fast is better for every traveller, with or without hardship, by the general wording 'it is not piety to fast while travelling' (a verbal sentence, indefinite under negation): a traveller without hardship is outside the occasion but covered by the general wording.",
+   "class": "derivable"
+  },
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061.f002",
+   "encoder": "umum_lafz",
+   "facts": {
+    "in_occasion": false,
+    "general_wording": true
+   },
+   "expected": true,
+   "note": "An animal slaughtered without tasmiya is unlawful (al-sahih of the madhhab) by the general wording of 'do not eat of that over which God's name has not been mentioned', applied beyond its occasion; the contrary view implied by 'al-sahih' is not stated here (the text defers to its discussion of the basmala).",
+   "class": "derivable"
+  },
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061.f003",
+   "encoder": "umum_lafz",
+   "facts": {
+    "in_occasion": false,
+    "general_wording": false
+   },
+   "expected": false,
+   "note": "The 'araya licence does not cover a buyer without need, which looks like an exception to the generality of the definite article, but Ibn al-Lahham resolves it by reading 'al-'araya' as the known ('ahdi) sale licensed for the needy, so the wording is not general and a non-needy buyer, outside the occasion, is not covered.",
+   "class": "derivable"
+  }
+ ]
+}
