@@ -187,7 +187,25 @@ Results on the tranche:
   - **q68 types 1 and 2 track the madhhab** on the doubtful vessel, the zakāt intention, the night of doubt and the deposited dinars. The exception is f007: the stronger view (al-Qāḍī, Ibn ʿAqīl) rests on the bar on conditional sale, a separate principle (`rule:taliq_al_bay`).
   - **New gaps:** whether a concession needs certainty of its permission (68.f001, `fact:rukhsa_needs_certainty`); dirhams mixed with usurped ones, decided by proportion (22.f007, `rule:mixed_haram_by_proportion`); and a judge ruling against his own ijtihād (68.f009).
 - **Segmentation finding, opening examples (found on review, now fixed):** a qāʿida's first example often comes inline before the first «(ومنها)» paragraph, after «صور:» or «مسائل:» («منها», «(ومنها)», «(إحداها)»), or in a paragraph opening «ومن أمثلة ذلك». It used to stay inside the qāʿida record. The segmenter now emits it as `.f000`, so every existing farʿ id is unchanged; the rebuilt corpus differs from the old one only by 74 new records (73 Ibn Rajab, 1 Ibn al-Laḥḥām) and their `furu_count`. Twelve annotated qawāʿid gained one, and all twelve are annotated: q6, 22 and 68 in this tranche, and q8, 16, 26, 45, 63, 75, 76, 140 and 159 from M4. A case now runs from its marker to the next farʿ marker. Before, the text stopped at the first source line break, so page markers cut cases mid-sentence; that affected paragraph furūʿ (e.g. Ibn al-Laḥḥām 43.f006, «دع ما يريبك إلى ما لا») as well as the new opening examples. Ids are unchanged; only `case_ar` grows, up to its excerpt cap. Known rough edges: q9's f000 holds two examples joined by an inline «(ومنها)»; q63's and q147's f000 begin with a fragment from before the marker; for q90 and q150, f000 is the heading of a sub-list.
-- **Segmentation finding, other layouts:** qāʿida 14 enumerates «(إحداها)», «(الصورة الثانية)»…: its first case is now `.f000`, but the later ones are still unsegmented. Qāʿida 66 is written as two types with «مثل» examples and has none. Twenty-one qawāʿid in all have no segmented farʿ. Covering ordinal and «فمن ذلك» paragraphs would give them ids after the existing ones, which is the next segmenter step.
+- **Segmentation finding, other layouts (ordinal cases now segmented):** a qāʿida with no «(و)منها» paragraph may enumerate its cases by ordinal, «(الصورة الثانية)», «المسألة الثالثة:». Such a qāʿida now takes those lines as its farʿ markers; a qāʿida with any «(و)منها» line keeps that marker alone, so no existing id moves. The opening example is also read after «… مسائل إحداها:» and «فمن صور المسألة». The rebuilt corpus gains 7 records (q13.f000; q14.f001–2; q52.f000–3) and changes only q14.f000, which no longer runs on into the second ṣūra; it is not annotated. Divisions (النوع, القسم, الضرب) are not cases and stay unsegmented: they head sub-lists whose cases are «مثل» examples or running prose, as in qāʿida 66 (two types) and most of the 20 qawāʿid that still have no segmented farʿ (e.g. 43, 44, 49, 89, 152, 155). Those want a division-aware segmenter, or manual cutting.
+
+**Tranche 2 (qawāʿid 7, 27, 28, 64, 65; 25 furūʿ).** Five qawāʿid with no reading yet, each formalised from its own statement (`corpus/takhrij/rajab_m8_tranche2_furu.json`):
+
+| Qāʿida | Reading | Link to the bank |
+|---|---|---|
+| 7: on finding the original mid-substitute, the switch is due if the substitute was a necessity, not if a concession | `mustSwitch`: the switch follows necessity | `necessity_is_q28`: the complement of al-Saʿdī's `useSubstitute` |
+| 27: one who acts for another's benefit bears its cost, for his own does not | `liableForOthersBenefit` | new (al-Saʿdī Q36 divides by a different fact: benefit from the thing destroyed against repelling its harm) |
+| 28: a loss from a permitted and a forbidden act together: the forbidden one bears all | `concurrentShare`: `full` if the other act was permitted, else `half` | new |
+| 64–65: an act whose condition was met without his knowledge | `countsAsMet knew liabilityOnly`: the condition counts if known, or if only liability turns on it | `liability_not_by_belief`: Ibn Rajab's own ground in 64.f003 |
+
+Results on the tranche:
+- **2 derivable, 22 ikhtilāf (8 on the madhhab side), 1 missing rule, 0 encoding errors.** Coverage 24/25 = 0.960, madhhab coverage 10/25 = 0.400. One ledger entry is opened (65.f004, `rule:qisas_belongs_to_whom`).
+- **What the cases say about the readings:**
+  - **The low madhhab figure is the qāʿidas' own khilāf, not a misreading.** 7, 64 and 65 are stated as disputed («فيه وجهان», «روايتان»), and 14 of the 22 ikhtilāf cases mark no madhhab, which counts against madhhab coverage by convention. Three of those carry Ibn Rajab's own preference: the reading follows it in 64.f003 and 65.f002 («والأظهر عدم اعتباره») and goes against it in 27.f003. Where a side is marked (7.f000, 64.f001, all of 28) the reading is on it.
+  - **28 tracks the madhhab throughout:** six cases, the full share on the stated ruling in each, the half a minority wajh. 28.f005 checks the guard: there the act was «غير مأذون فيه», and the stranger owes half, by naṣṣ.
+  - **27.f003 goes against its own qāʿida in Ibn Rajab's judgement:** a forced oath to protect another binds (al-Qāḍī), but Abū al-Khaṭṭāb's «لا تنعقد» is «الأظهر». 27.f002 is split the same way (al-Qāḍī against Ibn ʿAqīl and Ibn al-Zāghūnī).
+  - **7.f001, tayammum:** Ibn Rajab places it between the two kinds; the riwāya that the prayer is void reads it as necessity, which the reading follows.
+  - **64.f003 refines 64–65:** for the usurper who eats food already permitted to him, Ibn Rajab rejects liability («الصواب الجزم بعدم الضمان»), since liability is not established by belief. Hence the reading's second argument; it would otherwise land on Abū al-Khaṭṭāb.
 
 **Coverage trend:**
 
@@ -199,5 +217,7 @@ Results on the tranche:
 | M4 with its 9 opening examples | 223 | 0.977 | 0.658 | 0 | 5 |
 | M8 tranche 1 with its 3 opening examples | 26 | 0.846 | 0.615 | 0 | 7 |
 | All, after the opening-example fix | 249 | 0.964 | 0.653 | 0 | 12 |
+| M8 tranche 2 alone | 25 | 0.960 | 0.400 | 0 | 1 |
+| All, after tranche 2 | 274 | 0.963 | 0.630 | 0 | 13 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.

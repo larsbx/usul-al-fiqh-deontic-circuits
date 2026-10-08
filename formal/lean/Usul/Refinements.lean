@@ -395,4 +395,57 @@ theorem firm_by_basis (g a : Bool) :
 
 theorem no_firmness_needed (g a : Bool) : validUnderDoubt false g a = true := rfl
 
+/-! ## M8, second tranche: Ibn Rajab's qawāʿid 7, 27, 28, 64 and 65 -/
+
+/-! ### Qāʿida 7: finding the original while performing the substitute
+
+«(أحدهما) أن يكون المتلبس به رخصة عامة شرعت تيسيرا… فهذا لا يجب عليه الانتقال… الضرب الثاني: أن
+يكون المتلبس به إنما شرع ضرورة للعجز عن الأصل… فهذا يلزمه الانتقال إلى الأصل عند القدرة عليه». -/
+
+/-- Switch to the original when the substitute was a necessity, not when it was a general
+concession. -/
+def mustSwitch (necessity : Bool) : Bool := necessity
+
+/-- The necessity type is Q28 (Ibn Rajab 16): once the original is possible, the substitute is
+not used. -/
+theorem necessity_is_q28 : mustSwitch true = !Sadi.useSubstitute true := rfl
+
+/-! ### Qāʿida 27: destroying or spoiling for one's own benefit or another's
+
+«من أتلف نفسا أو أفسد عبادة لنفع يعود إلى نفسه فلا ضمان عليه، وإن كان النفع يعود إلى غيره فعليه
+الضمان». -/
+
+def liableForOthersBenefit (benefitsOther : Bool) : Bool := benefitsOther
+
+/-! ### Qāʿida 28: loss from two acts
+
+«إذا حصل التلف من فعلين أحدهما مأذون فيه والآخر غير مأذون فيه وجب الضمان كاملا على الصحيح، وإن
+كان من فعلين غير مأذون فيهما فالضمان بينهما نصفين حتى لو كان أحدهما من فعل من لا يجب الضمان عليه
+لم يجب على الآخر أكثر من النصف». -/
+
+inductive Share where
+  | full | half
+  deriving DecidableEq, Repr
+
+/-- The non-permitted actor's share: all, if the other act was permitted; half otherwise, even
+when the other actor owes nothing. -/
+def concurrentShare (otherPermitted : Bool) : Share := if otherPermitted then .full else .half
+
+/-! ### Qawāʿid 64 and 65: a condition that existed in fact but was unknown
+
+64: one who acted before learning of a permission that in fact existed; 65: one who disposed of a
+thing believing it not his, and it was his. Both «فيه وجهان». The reading takes knowledge as
+required (65: «الرضا بغير المعلوم هل هو رضى معتبر والأظهر عدم اعتباره»; 64.f001, al-manṣūṣ),
+with Ibn Rajab's exception in 64: «الضمان لا يثبت بمجرد الاعتقاد فيما ليس بمضمون». -/
+
+/-- Whether the condition counts as met: if he knew it, or if all that is at stake is liability,
+which mere belief does not establish. -/
+def countsAsMet (knew liabilityOnly : Bool) : Bool := knew || liabilityOnly
+
+theorem liability_not_by_belief : countsAsMet false true = true := rfl
+
+/-- The converse of qāʿida 6: there an act done on a belief later shown wrong stands; here an
+act done against a belief later shown wrong does not, unless only liability is at stake. -/
+theorem unknown_condition_does_not_count : countsAsMet false false = false := rfl
+
 end Usul.Refinements
