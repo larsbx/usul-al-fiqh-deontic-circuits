@@ -165,7 +165,7 @@ ENCODERS: dict[str, dict] = {
         out=B, lean="Usul.Refinements.mustSwitch {necessity}",
         py=lambda f: f["necessity"]),
     "benefit_to_other": dict(
-        sadi=[36], qawaid=[RAJAB.format(27)], facts={"benefits_other": B},
+        sadi=[], qawaid=[RAJAB.format(27)], facts={"benefits_other": B},
         out=B, lean="Usul.Refinements.liableForOthersBenefit {benefits_other}",
         py=lambda f: f["benefits_other"]),
     "concurrent_causes": dict(

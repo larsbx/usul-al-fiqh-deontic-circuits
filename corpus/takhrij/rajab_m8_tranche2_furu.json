@@ -397,16 +397,16 @@
       "expected": false,
       "positions": [
         {
-          "who": "wajh: not freed",
+          "who": "al-aẓhar (Ibn Rajab): consent to the unknown is not considered, so not freed",
           "ruling": false
         },
         {
-          "who": "wajh: freed",
+          "who": "the other wajh: freed",
           "ruling": true
         }
       ],
       "matches_madhhab": false,
-      "note": "«Step aside, free woman» to one who is his own slave: the same disagreement; Aḥmad's naṣṣ and al-Mughnī's possibilities. No madhhab marked."
+      "note": "«Step aside, free woman» to one who is his own slave: the same disagreement; Aḥmad's naṣṣ and al-Mughnī's possibility of distinguishing it. Ibn Rajab builds it on whether consent to the unknown counts: «والأظهر عدم اعتباره». No madhhab marked; the reading follows Ibn Rajab's preference."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f003",

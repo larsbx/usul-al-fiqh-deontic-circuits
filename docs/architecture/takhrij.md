@@ -194,14 +194,14 @@ Results on the tranche:
 | Qāʿida | Reading | Link to the bank |
 |---|---|---|
 | 7: on finding the original mid-substitute, the switch is due if the substitute was a necessity, not if a concession | `mustSwitch`: the switch follows necessity | `necessity_is_q28`: the complement of al-Saʿdī's `useSubstitute` |
-| 27: one who acts for another's benefit bears its cost, for his own does not | `liableForOthersBenefit` | al-Saʿdī Q36 |
+| 27: one who acts for another's benefit bears its cost, for his own does not | `liableForOthersBenefit` | new (al-Saʿdī Q36 divides by a different fact: benefit from the thing destroyed against repelling its harm) |
 | 28: a loss from a permitted and a forbidden act together: the forbidden one bears all | `concurrentShare`: `full` if the other act was permitted, else `half` | new |
 | 64–65: an act whose condition was met without his knowledge | `countsAsMet knew liabilityOnly`: the condition counts if known, or if only liability turns on it | `liability_not_by_belief`: Ibn Rajab's own ground in 64.f003 |
 
 Results on the tranche:
 - **2 derivable, 22 ikhtilāf (8 on the madhhab side), 1 missing rule, 0 encoding errors.** Coverage 24/25 = 0.960, madhhab coverage 10/25 = 0.400. One ledger entry is opened (65.f004, `rule:qisas_belongs_to_whom`).
 - **What the cases say about the readings:**
-  - **The low madhhab figure is the qāʿidas' own khilāf, not a misreading.** 7, 64 and 65 are stated as disputed («فيه وجهان», «روايتان»), and 12 of the 22 ikhtilāf cases mark no madhhab, which counts against madhhab coverage by convention (two more, 27.f003 and 64.f003, follow Ibn Rajab's own preference). Where a side is marked (7.f000, 64.f001, all of 28) the reading is on it.
+  - **The low madhhab figure is the qāʿidas' own khilāf, not a misreading.** 7, 64 and 65 are stated as disputed («فيه وجهان», «روايتان»), and 14 of the 22 ikhtilāf cases mark no madhhab, which counts against madhhab coverage by convention. Three of those carry Ibn Rajab's own preference: the reading follows it in 64.f003 and 65.f002 («والأظهر عدم اعتباره») and goes against it in 27.f003. Where a side is marked (7.f000, 64.f001, all of 28) the reading is on it.
   - **28 tracks the madhhab throughout:** six cases, the full share on the stated ruling in each, the half a minority wajh. 28.f005 checks the guard: there the act was «غير مأذون فيه», and the stranger owes half, by naṣṣ.
   - **27.f003 goes against its own qāʿida in Ibn Rajab's judgement:** a forced oath to protect another binds (al-Qāḍī), but Abū al-Khaṭṭāb's «لا تنعقد» is «الأظهر». 27.f002 is split the same way (al-Qāḍī against Ibn ʿAqīl and Ibn al-Zāghūnī).
   - **7.f001, tayammum:** Ibn Rajab places it between the two kinds; the riwāya that the prayer is void reads it as necessity, which the reading follows.
