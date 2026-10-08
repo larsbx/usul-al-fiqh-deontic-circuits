@@ -936,14 +936,20 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f006",
-   "encoder": "doubled",
-   "class": "missing_rule",
-   "facts": null,
-   "expected": null,
-   "note": "Theft from booty treated as ghulul adds forfeiture of the thief's share, which may equal, be less or more than the theft; it is decided by the ghulul forfeiture rule, not a 1-or-2 multiplier.",
-   "needs": [
-    "rule:ghulul_forfeiture"
-   ]
+   "encoder": "ghulul_forfeiture",
+   "class": "derivable",
+   "facts": {
+    "as_ghulul": true
+   },
+   "expected": true,
+   "note": "On the riwāya that theft from booty is ghulūl and the ghāll forfeits his share, the thief owes the theft once and forfeits his share; the aggravation is forfeiture, which may be equal to, less than or more than the theft (ghulul_is_not_doubling), not Q35's doubling.",
+   "revisit": {
+    "from_class": "missing_rule",
+    "from_encoder": "doubled",
+    "closed_by": [
+     "rule:ghulul_forfeiture"
+    ]
+   }
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f001",
@@ -1229,14 +1235,31 @@
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q054.f002",
-   "encoder": "generality",
-   "class": "missing_rule",
-   "facts": null,
-   "expected": null,
-   "note": "A claimant who said 'I have no bayyina' then brings one is not heard (al-mansus) though a witness who denied holding testimony is heard; both are negated indefinites and the text distinguishes them by right-for-him vs right-against-him, not generality.",
-   "needs": [
-    "rule:negated_indefinite_by_role"
-   ]
+   "encoder": "right_for_or_against_self",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "for_himself": true
+   },
+   "expected": false,
+   "note": "The text's own farq between the two nuṣūṣ: the bayyina is a right for him, so after denying it it is not heard, as one who claims a right after denying it; testimony is a right against the witness, so it is heard, as a confession after denial (against_self_like_confession). Tag corrected on revisit from rule:negated_indefinite_by_role: the deciding principle is the right's direction, not generality.",
+   "revisit": {
+    "from_class": "missing_rule",
+    "from_encoder": "generality",
+    "closed_by": [
+     "rule:right_for_or_against_self"
+    ]
+   },
+   "positions": [
+    {
+     "who": "al-manṣūṣ: not heard",
+     "ruling": false
+    },
+    {
+     "who": "another view, chosen by Ibn ʿAqīl and others: heard",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001",
@@ -2101,14 +2124,20 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f038",
-   "encoder": "lots",
-   "class": "missing_fact",
-   "facts": null,
-   "expected": null,
-   "note": "Two fayʾ recipients of equal rank: ordered by age/hijra or Islam-precedence/religion/age/courage, then the ruler may lot or order by ijtihād; the ruling turns on tie-breaking criteria and on the ruler's discretion (lot optional), which the encoder has no field for.",
-   "needs": [
-    "fact:tie_break_criteria"
-   ]
+   "encoder": "fay_tie_break",
+   "class": "derivable",
+   "facts": {
+    "tie_break_criteria": false
+   },
+   "expected": "rulerChoice",
+   "note": "Equal in rank and in the criteria (al-Mujarrad: age, hijra; al-Aḥkām al-Sulṭāniyya: precedence, religion, age, courage), the ruler chooses: lot or rank by ijtihād. The lot is optional here, unlike a confused specific entitlement; the two books' criteria differ in order but not in the procedure (fayTieBreak).",
+   "revisit": {
+    "from_class": "missing_fact",
+    "from_encoder": "lots",
+    "closed_by": [
+     "fact:tie_break_criteria"
+    ]
+   }
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f039",
@@ -3629,14 +3658,21 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002",
-   "encoder": "unknown_owner",
-   "class": "missing_rule",
-   "facts": null,
-   "expected": null,
-   "note": "A luqata after the year is owned by the finder because its owner is unknown (non-ownable ones are given in charity for him, al-sahih); finder-ownership comes from the luqata law and is outside the owner/publicInterest outputs.",
-   "needs": [
-    "rule:luqata"
-   ]
+   "encoder": "luqata",
+   "class": "derivable",
+   "facts": {
+    "year_passed": true,
+    "ownable": true
+   },
+   "expected": "finderOwns",
+   "note": "After the year of announcement the luqaṭa is owned «لجهالة ربها»; what is not ownable is given in charity for him (al-ṣaḥīḥ). An instance of qāʿida 106: the owner, still unknown, is treated as absent (luqata_is_instance).",
+   "revisit": {
+    "from_class": "missing_rule",
+    "from_encoder": "unknown_owner",
+    "closed_by": [
+     "rule:luqata"
+    ]
+   }
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003",
@@ -3718,14 +3754,31 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f007",
-   "encoder": "unknown_owner",
-   "class": "missing_rule",
-   "facts": null,
-   "expected": null,
-   "note": "A forgotten ihram later specified as qiran suffices for hajj, with two wujuh for the umra; a ritual-intention question, no right-holder.",
-   "needs": [
-    "rule:ihram_specification"
-   ]
+   "encoder": "ihram_specification",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "component": "umra"
+   },
+   "expected": false,
+   "note": "Specified as qirān it suffices for the ḥajj, which is valid on every possibility. For the ʿumra, the better known wajh: no, since he may have begun with ḥajj and then added the ʿumra (validOnEvery umraValid = false); the second wajh treats that unknown possibility as absent (second_view_by_treated_as_absent). The kernel takes the better known.",
+   "revisit": {
+    "from_class": "missing_rule",
+    "from_encoder": "unknown_owner",
+    "closed_by": [
+     "rule:ihram_specification"
+    ]
+   },
+   "positions": [
+    {
+     "who": "the better known wajh among the later companions: it does not suffice for the ʿumra",
+     "ruling": false
+    },
+    {
+     "who": "second wajh: it suffices, treating the unknown as non-existent",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true
   }
  ]
 }

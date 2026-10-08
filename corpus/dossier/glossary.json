@@ -2946,6 +2946,111 @@
      "note": "Qibla: no repetition even after a certain error."
     }
    ]
+  },
+  {
+   "key": "ghulul",
+   "ar": "الغلول",
+   "tr": "al-ghulūl",
+   "gloss": "misappropriation from the booty before its division",
+   "definition": "Taking from the war booty before it is divided. On a riwāya the ghāll forfeits his own share; Ibn Rajab applies it to theft from the booty when that is treated as ghulūl, so the thief bears the restitution and loses his share, «وقد يكون قدر السرقة وأقل وأكثر». As used in the cited text; the corpus holds no formal definition.",
+   "conditions": [
+    "the taking is from the booty before division",
+    "forfeiture of the share is a riwāya, not agreed"
+   ],
+   "related": [
+    "daman"
+   ],
+   "lean": [
+    "Usul.Refinements.bootyTheftBurden",
+    "Usul.Refinements.ghulul_is_not_doubling"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f006",
+     "note": "Ibn Rajab under qāʿida 140."
+    }
+   ]
+  },
+  {
+   "key": "luqata",
+   "ar": "اللقطة",
+   "tr": "al-luqaṭa",
+   "gloss": "a lost thing found",
+   "definition": "A lost item picked up by a finder. After the year of announcement it is owned «لجهالة ربها», and what is not ownable is given in charity on the owner's behalf (al-ṣaḥīḥ): an instance of treating the unknown owner as non-existent (qāʿida 106). Whether ownership comes automatically or by the finder's choice is two wujūh (Ibn Rajab elsewhere), not modelled.",
+   "conditions": [
+    "the year of announcement has passed",
+    "the owner remains unknown"
+   ],
+   "related": [
+    "majhul"
+   ],
+   "lean": [
+    "Usul.Refinements.luqata",
+    "Usul.Refinements.luqata_is_instance"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002",
+     "note": "Ibn Rajab under qāʿida 106."
+    }
+   ]
+  },
+  {
+   "key": "iqrar",
+   "ar": "الإقرار",
+   "tr": "al-iqrār",
+   "gloss": "confession, acknowledgement of a right against oneself",
+   "definition": "Acknowledging a right that lies against oneself. Al-Saʿdī Q55: there is no excuse for one who confesses, even if he then claims error. Ibn al-Laḥḥām uses it as the model for a right against oneself being heard after denial: «كما لو أقر بالحق بعد جحوده».",
+   "conditions": [
+    "the right lies against the speaker",
+    "in the rights of persons (Q55's scope)"
+   ],
+   "related": [
+    "bayyina"
+   ],
+   "lean": [
+    "Usul.Muamalat.confessionBinds",
+    "Usul.Muamalat.q55_confession_absorbs",
+    "Usul.Refinements.against_self_like_confession"
+   ],
+   "refs": [
+    {
+     "ref": "sadi.qawaid_jamia.archive_pdf1995_tess.q055",
+     "note": "Al-Saʿdī Q55."
+    },
+    {
+     "ref": "src:openiti-lahham-shamela8526/v01:p276",
+     "excerpt_ar": "والفرق بين النصين أن الشهادة حق عليه فتسمع بعد النفي كما لو أقر بالحق بعد جحوده والبينة حق له فلا تسمع كما لو ادعى الخق بعد أن نفاه",
+     "note": "Ibn al-Laḥḥām: confession after denial, the model for a right against oneself."
+    }
+   ]
+  },
+  {
+   "key": "bayyina",
+   "ar": "البينة",
+   "tr": "al-bayyina",
+   "gloss": "proof brought by a claimant (typically witnesses)",
+   "definition": "The proof a claimant brings for his claim. Ibn al-Laḥḥām treats it as a right for the claimant: one who said «لا بينة لي» and then brings one is not heard (al-manṣūṣ; Ibn ʿAqīl: heard), «كما لو ادعى الحق بعد أن نفاه». As used in the cited text.",
+   "conditions": [
+    "a right for the one who brings it"
+   ],
+   "related": [
+    "iqrar"
+   ],
+   "lean": [
+    "Usul.Refinements.heardAfterDenial"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q054.f002",
+     "note": "Ibn al-Laḥḥām under qāʿida 54."
+    },
+    {
+     "ref": "src:openiti-lahham-shamela8526/v01:p276",
+     "excerpt_ar": "والفرق بين النصين أن الشهادة حق عليه فتسمع بعد النفي كما لو أقر بالحق بعد جحوده والبينة حق له فلا تسمع كما لو ادعى الخق بعد أن نفاه",
+     "note": "The farq: bayyina is a right for him."
+    }
+   ]
   }
  ]
 }

@@ -168,6 +168,22 @@ import Usul
 #guard (Usul.Refinements.abstains true false true) == false
 #guard (Usul.Refinements.abstains true true false) == true
 #guard (Usul.Refinements.abstains true true true) == false
+#guard (Usul.Refinements.ghululForfeits false) == false
+#guard (Usul.Refinements.ghululForfeits true) == true
+#guard (Usul.Refinements.heardAfterDenial false) == true
+#guard (Usul.Refinements.heardAfterDenial true) == false
+#guard (Usul.Refinements.fayTieBreak [false]) == .rulerChoice
+#guard (Usul.Refinements.fayTieBreak [true]) == .byCriteria
+#guard (Usul.Refinements.luqata false false) == .hold
+#guard (Usul.Refinements.luqata false true) == .hold
+#guard (Usul.Refinements.luqata true false) == .charity
+#guard (Usul.Refinements.luqata true true) == .finderOwns
+#guard (Usul.Refinements.validOnEvery Usul.Refinements.hajjValid Usul.Refinements.Nusuk.all) == true
+#guard (Usul.Refinements.validOnEvery Usul.Refinements.umraValid Usul.Refinements.Nusuk.all) == false
+#guard (Usul.Refinements.jawazAfterSarf false) == true
+#guard (Usul.Refinements.jawazAfterSarf true) == false
+#guard (Usul.Refinements.amrPerItem (fun _ : Unit => .wajib) ()) == .wajib
+#guard (Usul.Refinements.amrPerItem (fun _ : Unit => .mandub) ()) == .mandub
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 #guard (Usul.Dalala.coversBeyondSabab true true false) == true

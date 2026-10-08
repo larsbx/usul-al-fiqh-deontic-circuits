@@ -3,6 +3,10 @@
 -- ikhtilāf cases (the madhhab position), != for recorded encoding errors.
 import Usul
 
+-- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f005 (genuine_ikhtilaf)
+#guard (Usul.Refinements.jawazAfterSarf true) == false
+-- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f006 (derivable)
+#guard (Usul.Refinements.amrPerItem (fun _ : Unit => .mandub) ()) == .mandub
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061.f001 (derivable)
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061.f002 (derivable)
@@ -115,6 +119,8 @@ import Usul
 #guard (Usul.Muamalat.compensationOwed 1 true) == 2
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f005 (derivable)
 #guard (Usul.Muamalat.compensationOwed 1 true) == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f006 (derivable)
+#guard (Usul.Refinements.ghululForfeits true) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f001 (genuine_ikhtilaf)
 #guard (Usul.Dalala.IsGeneralIn .definiteAl .affirmation false) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f002 (genuine_ikhtilaf)
@@ -145,6 +151,8 @@ import Usul
 #guard (Usul.Dalala.IsGeneralIn .singularAnnexed .affirmation true) == false
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q054.f001 (derivable)
 #guard (Usul.Dalala.IsGeneralIn .nakira .prohibition false) == true
+-- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q054.f002 (genuine_ikhtilaf)
+#guard (Usul.Refinements.heardAfterDenial true) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001 (genuine_ikhtilaf)
 #guard (Usul.Muamalat.itlafLiable (Usul.Muamalat.withRight .repelHarm) .deliberate) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002 (derivable)
@@ -231,6 +239,8 @@ import Usul
 #guard (Usul.Refinements.allocationFull false false false) == .lot
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f037 (derivable)
 #guard (Usul.Refinements.allocationFull false false false) == .lot
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f038 (derivable)
+#guard (Usul.Refinements.fayTieBreak [false]) == .rulerChoice
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f039 (derivable)
 #guard (Usul.Refinements.allocationFull false false false) == .lot
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f040 (genuine_ikhtilaf)
@@ -397,6 +407,8 @@ import Usul
 #guard (Usul.Refinements.trustVoided false true) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f001 (derivable)
 #guard (Usul.Refinements.treatedAsAbsent true true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002 (derivable)
+#guard (Usul.Refinements.luqata true true) == .finderOwns
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003 (derivable)
 #guard (Usul.Muamalat.recipient false) == .publicInterest
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f004 (genuine_ikhtilaf)
@@ -405,3 +417,5 @@ import Usul
 #guard (Usul.Refinements.treatedAsAbsent true false true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f006 (derivable)
 #guard (Usul.Refinements.allocationFull false false false) == .lot
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f007 (genuine_ikhtilaf)
+#guard (Usul.Refinements.validOnEvery Usul.Refinements.umraValid Usul.Refinements.Nusuk.all) == false

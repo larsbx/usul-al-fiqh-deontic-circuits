@@ -46,25 +46,48 @@
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f005",
-   "encoder": "amr",
-   "needs": [
-    "rule:residual_jawaz_after_sarf"
+   "encoder": "residual_jawaz_after_sarf",
+   "note": "Abū al-Khaṭṭāb gives the Ḥanbalīs two wujūh, so no madhhab is marked. The kernel takes al-Tamīmī's reading, which is Q50: the jawāz has no independent proof in the wording and follows the wujūb (jawazAfterSarf, sarf_removes_jawaz).",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "sarf": true
+   },
+   "expected": false,
+   "revisit": {
+    "from_class": "missing_rule",
+    "from_encoder": "amr",
+    "closed_by": [
+     "rule:residual_jawaz_after_sarf"
+    ]
+   },
+   "positions": [
+    {
+     "who": "some Ḥanafīs and Shāfiʿīs, al-Rāzī: it still proves recommendation or permission",
+     "ruling": true
+    },
+    {
+     "who": "Abū Yaʿlā's report, Ibn Burhān, Abū al-Ṭayyib, al-Tamīmī: it does not; jawāz follows wujūb and falls with it",
+     "ruling": false
+    }
    ],
-   "note": "When an indication only removes obligation without fixing another status, some Hanafis/Shafi'is (al-Razi) let the command still prove recommendation or permission while Abu Ya'la's report, Ibn Burhan, Abu al-Tayyib and al-Tamimi deny it (two wujuh for the Hanbalis per Abu al-Khattab); the kernel's qarina always names the target status, so it cannot express a merely negating indication.",
-   "class": "missing_rule",
-   "facts": null,
-   "expected": null
+   "matches_madhhab": false
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f006",
-   "encoder": "amr",
-   "needs": [
-    "fact:per_item_status"
-   ],
-   "note": "A command whose object is partly obligatory and partly recommended ('do good', 'leave what makes you doubt') is read by Abu al-'Abbas as meaning the obligatory in the obligatory items and the recommended in the recommended ones, which needs a status per covered item, while the encoder takes one qarina for one act.",
-   "class": "missing_fact",
-   "facts": null,
-   "expected": null
+   "encoder": "amr_mixed",
+   "note": "A command over items partly obligatory, partly recommended («وافعلوا الخير»): Ibn ʿAbd al-Salām reads obligation with takhṣīṣ, Abū al-ʿAbbās the obligatory in the obligatory items and the recommended in the recommended; the two give the same ruling on every item (mixed_readings_agree), so the case is derivable whichever is taken.",
+   "class": "derivable",
+   "facts": {
+    "per_item_status": "mandub"
+   },
+   "expected": "mandub",
+   "revisit": {
+    "from_class": "missing_fact",
+    "from_encoder": "amr",
+    "closed_by": [
+     "fact:per_item_status"
+    ]
+   }
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f007",

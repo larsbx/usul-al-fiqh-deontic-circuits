@@ -1,18 +1,17 @@
 {
  "total": 214,
  "classes": {
-  "derivable": 99,
-  "genuine_ikhtilaf": 102,
-  "missing_fact": 2,
-  "missing_rule": 10,
+  "derivable": 103,
+  "genuine_ikhtilaf": 105,
+  "missing_rule": 5,
   "segmentation_error": 1
  },
- "coverage": 0.944,
- "madhhab_coverage": 0.62,
+ "coverage": 0.977,
+ "madhhab_coverage": 0.648,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 33,
- "gaps_open": 12,
- "revisited": 22,
+ "ikhtilaf_matching_madhhab": 35,
+ "gaps_open": 5,
+ "revisited": 29,
  "revisit_queue": [],
  "per_encoder": {
   "itlaf": {
@@ -21,8 +20,7 @@
   },
   "doubled": {
    "derivable": 4,
-   "genuine_ikhtilaf": 1,
-   "missing_rule": 1
+   "genuine_ikhtilaf": 1
   },
   "knowledge": {
    "derivable": 1
@@ -36,8 +34,7 @@
    "genuine_ikhtilaf": 11
   },
   "unknown_owner": {
-   "derivable": 1,
-   "missing_rule": 2
+   "derivable": 1
   },
   "partners": {
    "derivable": 1,
@@ -49,8 +46,7 @@
   },
   "lots": {
    "derivable": 22,
-   "genuine_ikhtilaf": 25,
-   "missing_fact": 1
+   "genuine_ikhtilaf": 25
   },
   "tadakhul": {
    "derivable": 4,
@@ -74,11 +70,10 @@
   "generality": {
    "derivable": 9,
    "genuine_ikhtilaf": 5,
-   "missing_rule": 2
+   "missing_rule": 1
   },
   "amr": {
-   "missing_fact": 1,
-   "missing_rule": 5,
+   "missing_rule": 4,
    "segmentation_error": 1
   },
   "unknown_as_nonexistent": {
@@ -93,6 +88,27 @@
   },
   "abstention_under_possible_condition": {
    "derivable": 3
+  },
+  "ghulul_forfeiture": {
+   "derivable": 1
+  },
+  "right_for_or_against_self": {
+   "genuine_ikhtilaf": 1
+  },
+  "fay_tie_break": {
+   "derivable": 1
+  },
+  "luqata": {
+   "derivable": 1
+  },
+  "ihram_specification": {
+   "genuine_ikhtilaf": 1
+  },
+  "residual_jawaz_after_sarf": {
+   "genuine_ikhtilaf": 1
+  },
+  "amr_mixed": {
+   "derivable": 1
   },
   "umum_lafz": {
    "derivable": 3

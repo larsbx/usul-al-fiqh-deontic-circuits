@@ -119,6 +119,35 @@ ENCODERS: dict[str, dict] = {
         sadi=[11], qawaid=[RAJAB.format(160)], facts={"suspended": B, "possible": B, "absence_known": B},
         out=B, lean="Usul.Refinements.abstains {suspended} {possible} {absence_known}",
         py=lambda f: f["suspended"] and f["possible"] and not f["absence_known"]),
+    "ghulul_forfeiture": dict(
+        sadi=[35], qawaid=[RAJAB.format(140)], facts={"as_ghulul": B},
+        out=B, lean="Usul.Refinements.ghululForfeits {as_ghulul}",
+        py=lambda f: f["as_ghulul"]),
+    "right_for_or_against_self": dict(
+        sadi=[55], qawaid=[LAHHAM.format(54)], facts={"for_himself": B},
+        out=B, lean="Usul.Refinements.heardAfterDenial {for_himself}",
+        py=lambda f: not f["for_himself"]),
+    "fay_tie_break": dict(
+        sadi=[25], qawaid=[RAJAB.format(160)], facts={"tie_break_criteria": B},
+        out=("byCriteria", "rulerChoice"), lean="Usul.Refinements.fayTieBreak [{tie_break_criteria}]",
+        py=lambda f: "byCriteria" if f["tie_break_criteria"] else "rulerChoice"),
+    "luqata": dict(
+        sadi=[20], qawaid=[RAJAB.format(106)], facts={"year_passed": B, "ownable": B},
+        out=("hold", "finderOwns", "charity"), lean="Usul.Refinements.luqata {year_passed} {ownable}",
+        py=lambda f: "hold" if not f["year_passed"] else "finderOwns" if f["ownable"] else "charity"),
+    "ihram_specification": dict(
+        sadi=[11], qawaid=[RAJAB.format(106)], facts={"component": ("hajj", "umra")},
+        out=B, lean="Usul.Refinements.validOnEvery {component} Usul.Refinements.Nusuk.all",
+        lits={"component": {"hajj": "Usul.Refinements.hajjValid", "umra": "Usul.Refinements.umraValid"}},
+        py=lambda f: f["component"] == "hajj"),
+    "residual_jawaz_after_sarf": dict(
+        sadi=[50], qawaid=[LAHHAM.format(43)], facts={"sarf": B},
+        out=B, lean="Usul.Refinements.jawazAfterSarf {sarf}",
+        py=lambda f: not f["sarf"]),
+    "amr_mixed": dict(
+        sadi=[], qawaid=[LAHHAM.format(43)], facts={"per_item_status": ("wajib", "mandub")},
+        out=HUKM, lean="Usul.Refinements.amrPerItem (fun _ : Unit => {per_item_status}) ()",
+        py=lambda f: f["per_item_status"]),
     "umum_lafz": dict(
         sadi=[], qawaid=[LAHHAM.format(61)], facts={"in_occasion": B, "general_wording": B},
         out=B, lean="Usul.Dalala.coversBeyondSabab true {in_occasion} {general_wording}",

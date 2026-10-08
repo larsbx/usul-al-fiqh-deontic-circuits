@@ -91,10 +91,14 @@ def test_entries_are_linked():
 
 
 def test_refinement_closures_are_conservative():
-    """A closure that refines an earlier reading (an added fact) names its conservativity theorem."""
+    """A closure that refines the case's own earlier reading (closed under the encoder it had)
+    names a conservativity theorem; a new encoder beside the old ones changes no earlier result."""
+    refined = {t for c in takhrij.load(ROOT / "corpus") if (r := c.get("revisit")) and r.get("from_encoder", c["encoder"]) == c["encoder"]
+               for t in r["closed_by"]}
     for e in DOSS["entries"]:
-        if any(t.startswith("fact:") for t in e["closes"]):
+        if set(e["closes"]) & refined:
             assert e["conservative"], e["id"]
+    assert refined, "no in-place refinement found: the check would be vacuous"
 
 
 def test_docs_are_generated():
