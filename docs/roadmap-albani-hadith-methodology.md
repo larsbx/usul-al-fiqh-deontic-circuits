@@ -42,12 +42,12 @@ is the contested axiom. This fixes three decisions before any axiom is written:
 
 | Milestone | State | Evidence |
 |---|---|---|
-| H0 registry | **open** | sources listed in §1; no witness pinned yet |
+| H0 registry | **done for the kernel** | 22 works added to `corpus/registry.json` (`track: albani_hadith`), pinned to OpenITI commits or Shamela ids; 14 witnesses fetched and locked (`corpus/lock.json`). The three recalled counts are **confirmed** against the text: 12 marātib (*Taqrīb*, v01:p074–075), 5 tadlīs tiers (*Taʿrīf*, v01:p013–014), 15 qawāʿid (*Tamām al-Minna*, v01:p015–041). Every rung is quoted verbatim in `corpus/hadith/kernel_scales.json` and checked by `test_hadith.py` (see §1.1) |
 | H1 logic record | **decided in §0.1**, ADR prose open | reuses `Usul.Dung` / `Usul.Grounded`; no new semantics |
-| H2 signature | **seeded** | `Hadith.Grade`: the 12 *Taqrīb* marātib, 5-valued verdict, bands (ḥujja 1–4, iʿtibār 5–9, shadīd 10–12) proved by `hujja_iff` / `shadid_iff`; bridge `grade` monotone, never `qat` |
-| H3 axioms | **seeded** | `Hadith.Isnad`: 5 tadlīs tiers with the tolerance as a `Policy` parameter (Ibn Ḥajar's default); weakest link proved (`verdict_le_link`, `verdict_attained`); monotone in links and in policy; kadhdhāb ⇒ mawḍūʿ; inqiṭāʿ ⇒ not ḥujja |
-| H5 aggregation | **seeded** | `Hadith.Turuq`: lift as a defeasible argument; shadīd inert (`liftable_cons_shadid`, `aggregate_of_shadid`); one madār never lifts; at most one rung; worked defeat / reinstatement; non-monotonicity witness |
-| H4 tests | **synthetic only** | `HadithTest.Chains`: 15 `#guard` vectors, each naming its rule; no transcribed entries yet |
+| H2 signature | **seeded; marātib verified** | `Hadith.Grade`: the 12 marātib match the *Taqrīb* wording rung for rung, each linked to its constructor (generated `HadithTest/ScaleMap.lean`); 5-valued verdict; bands (ḥujja 1–4, iʿtibār 5–9, shadīd 10–12) proved by `hujja_iff` / `shadid_iff`; bridge `grade` monotone, never `qat`. The *Nuzha* partition tree is not yet extracted |
+| H3 axioms | **15 qawāʿid classified; 6 linked** | `kernel_scales.json`: 2 defeaters (Q1 shudhūdh, Q2 iḍṭirāb), 3 valuations (Q3 tadlīs, Q4 jahāla, Q5 Ibn Ḥibbān's tawthīq), 5 guards (Q6–Q10), 2 presentation rules (Q11, Q13), 3 seam rules (Q12, Q14, Q15). Linked to Lean: Q1–Q4, Q10, Q12. `Hadith.Isnad`: tadlīs tolerance as a `Policy` (the *Taʿrīf* records the tier-3 dispute itself); weakest link proved; monotone in links and in policy |
+| H5 aggregation | **seeded** | `Hadith.Turuq`: the lift as a defeasible argument; Q10's criterion (sūʾ al-ḥifẓ repairs, tuhma does not) is the shadīd band, proved inert (`liftable_cons_shadid`, `aggregate_of_shadid`); one madār never lifts; at most one rung; worked defeat / reinstatement; non-monotonicity witness |
+| H4 tests | **synthetic only** | `HadithTest.Chains`: 15 `#guard` vectors, each naming its rule; *al-Ḍaʿīfa* is registered (on demand), no entries transcribed yet |
 
 All of this builds with `make lean` and carries no `sorry`; CI's `sorry` check covers `Hadith` and `HadithTest`.
 
@@ -65,6 +65,16 @@ Counts are from recall and vary by edition. H0 checks each against a pinned witn
 | **U — uṣūl and fiqh method** | al-Albānī, *al-Ḥadīth Ḥujja bi-Nafsihi*, *Manzilat al-Sunna*, muqaddima of *Ṣifat Ṣalāt al-Nabī*; Ibn Ḥazm, *al-Iḥkām* (the most deductive uṣūl text in the tradition, and criticised by al-Albānī); al-Shawkānī, *Irshād al-Fuḥūl* and *al-Rawḍa al-Nadiyya* + al-Albānī's taʿlīqāt; al-Shāfiʿī, *al-Risāla* (Shākir's ed.) | The seam: how a verdict becomes a dalīl; āḥād in ʿaqīda and aḥkām |
 | **⊢ — proof theory** | Ibn Rajab, *Sharḥ ʿIlal al-Tirmidhī* | Fixes §0.1: which rules are defeasible |
 | **ʿAq — ʿaqīda** (optional, firewalled) | *Mukhtaṣar al-ʿUluww*; takhrīj of *Sharḥ al-Ṭaḥāwiyya* | Test corpus only; same firewall as uṣūl M12 |
+
+### 1.1 What H0 found
+
+- **Counts.** All three recalled counts hold. Q10 of *Tamām al-Minna* states the shadīd criterion in the terms the kernel uses: a ḍaʿīf is strengthened by its ṭuruq only when the weakness comes from *sūʾ al-ḥifẓ*, «لا من تهمة في صدقهم أو دينهم».
+- **Witness defect.** The Shamela 8609 *Taqrīb* (ʿAwwāma, Dār al-Rashīd) on OpenITI starts at the ṭabaqāt, without the marātib. JK 121 (same taḥqīq) carries them and is the primary witness for the scale.
+- **Dispute recorded at the source.** The *Taʿrīf* says of tier 3 that some rejected their ḥadīth outright and some accepted it. That supports keeping tadlīs tolerance a parameter, not an axiom. *Tamām al-Minna* Q3 states the general rule (only what is explicitly heard is accepted) and defers to Ibn Ḥajar's tafṣīl.
+- **Shared works.** *al-Risāla* (Shākir) and Ibn Ḥazm's *Iḥkām* (Shākir) were already registered as qiyās sources (`shafii.risala`, `ibn_hazm.ihkam`). This track reuses those entries and does not duplicate them.
+- **Editions to check.** *al-Tankīl*: Shamela 12767 is the al-Maktab al-Islāmī edition, the one carrying al-Albānī's work. *al-Bāʿith al-Ḥathīth*: the OpenITI witness is Shākir's sharḥ without al-Albānī's taʿlīqāt, so the annotated edition is still to be located.
+- **Not located.** al-Albānī's takhrīj of *Sharḥ al-Ṭaḥāwiyya* has no separate witness yet.
+- **Rights.** Modern works (al-Albānī, al-Muʿallimī, Shākir, Ṣiddīq Ḥasan Khān) are `modern_cache_only` with excerpts of at most 160 characters. The large ones (*al-Ḍaʿīfa*, *al-Ṣaḥīḥa*, *al-Irwāʾ*, the *Taqrīb*) are `fetch: on_demand`.
 
 **Minimal kernel:** *Nuzhat al-Naẓar* for Σ, the *Taqrīb* marātib plus the 15 qawāʿid for Ax, *al-Ḍaʿīfa* for T.
 
@@ -128,9 +138,9 @@ Given critics' statements about one narrator, resolve to a martaba. The candidat
 Notation as in the uṣūl roadmap: **Exit** criteria are machine-checkable unless marked *(review)*; `⟵` lists hard dependencies.
 
 #### H0 · Registry ⟵ —
-- Add the §1 works to `corpus/registry.json` with pinned witnesses (Shamela / OpenITI / archive.org). Most are modern (al-Albānī d. 1420, al-Muʿallimī d. 1386, Shākir d. 1377): `rights: modern_cache_only` and 160-character excerpts.
-- Verify the counts: 12 marātib, 5 tiers, 15 qawāʿid, ≈2,700 *Irwāʾ* entries.
-- **Exit:** schema-valid entries; `audit.json` confirms each count or records the witness defect.
+- Add the §1 works to `corpus/registry.json` with pinned witnesses (Shamela / OpenITI / archive.org). Most are modern (al-Albānī d. 1420, al-Muʿallimī d. 1386, Shākir d. 1377): `rights: modern_cache_only` and 160-character excerpts. **Done** (§1.1).
+- Verify the counts: 12 marātib, 5 tiers, 15 qawāʿid (**confirmed**, `kernel_scales.json`); ≈2,700 *Irwāʾ* entries (open: needs the on-demand fetch and a numbered segmenter).
+- **Exit:** schema-valid entries; each count confirmed verbatim or the witness defect recorded. Met for the kernel; the *Irwāʾ* count remains.
 
 #### H1 · Logic record ⟵ H0
 - The ADR states §0.1 and its rejection of a monotone calculus, with Ibn Rajab cited.

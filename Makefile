@@ -11,7 +11,7 @@ fetch:     ; cd pipeline && $(PY) -m usul_corpus fetch
 ocr:       ; cd pipeline && $(PY) -m usul_corpus ocr --jobs $(shell nproc)   # needs tesseract + poppler-utils
 build:     ; cd pipeline && $(PY) -m usul_corpus build
 validate:  ; cd pipeline && $(PY) -m usul_corpus validate
-generated: ; $(PY) formal/fixtures/gen_grounded.py && cd pipeline && $(PY) -m usul_corpus signature && git diff --exit-code ../formal/fixtures ../formal/lean/UsulTest
+generated: ; $(PY) formal/fixtures/gen_grounded.py && cd pipeline && $(PY) -m usul_corpus signature && git diff --exit-code ../formal/fixtures ../formal/lean/UsulTest ../formal/lean/HadithTest
 lean:      ; cd formal/lean && lake build
 $(TLA_JAR):; mkdir -p $(@D) && curl -sSL -o $@ $(TLA_URL)
 tla: $(TLA_JAR) ; TLA2TOOLS=$(abspath $(TLA_JAR)) formal/tla/check.sh

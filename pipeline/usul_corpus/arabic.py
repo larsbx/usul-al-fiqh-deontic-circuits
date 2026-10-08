@@ -118,3 +118,25 @@ def parse_ordinal_span(phrase: str, fuzzy: bool = True) -> tuple[tuple[int, int]
     if base is None:
         return None
     return (base[0] + units[0], base[0] + units[1]), base[1] or any(c for _, c in resolved)  # type: ignore[misc]
+
+
+_MARKERS = re.compile(r"ms\d+|PageV\d+P\d+")
+_PAGE = re.compile(r"PageV(\d+)P(\d+)")
+
+
+def letters(s: str) -> str:
+    """Arabic letters only: the comparison key for verbatim excerpts."""
+    return re.sub(r"[^ء-ي]", "", _MARKERS.sub("", s))
+
+
+def locate(text: str, excerpt: str) -> str | None:
+    """`v<vol>:p<page>` of the page an excerpt ends on (the next page marker closes it), comparing
+    letters only; None when the excerpt is not in the text."""
+    text = re.sub(r"ms\d+", "", text)
+    idx = [i for i, ch in enumerate(text) if "ء" <= ch <= "ي"]
+    e = letters(excerpt)
+    k = "".join(text[i] for i in idx).find(e)
+    if k < 0:
+        return None
+    m = _PAGE.search(text[idx[k + len(e) - 1]:])
+    return f"v{m[1]}:p{m[2]}" if m else None

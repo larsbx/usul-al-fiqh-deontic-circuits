@@ -2,13 +2,13 @@
 resolvable and verbatim, every constant checked, every page generated."""
 
 import json
-import re
 from pathlib import Path
 
 import jsonschema
 import pytest
 
 from usul_corpus import takhrij
+from usul_corpus.arabic import locate
 from usul_corpus.__main__ import CACHE, DOSSIER, GLOSSARY, docs_pages
 from usul_corpus.records import EXCERPT_LEN
 
@@ -44,10 +44,6 @@ def test_refs_resolve_within_their_limits():
             assert r["ref"] in RECORDS and "excerpt_ar" not in r, r["ref"]
 
 
-def _letters(s):
-    return re.sub(r"[^ء-ي]", "", re.sub(r"ms\d+|PageV\d+P\d+", "", s))
-
-
 @pytest.mark.parametrize("ref", [r for r in REFS if "excerpt_ar" in r], ids=lambda r: r["ref"])
 def test_excerpts_are_verbatim(ref):
     """Letters-only comparison against the cached witness, and the page is the one the excerpt
@@ -56,13 +52,7 @@ def test_excerpts_are_verbatim(ref):
     src = CACHE / f"{w}.txt"
     if not src.exists():
         pytest.skip(f"{w} not cached")
-    text = re.sub(r"ms\d+", "", src.read_text(encoding="utf-8"))
-    idx = [i for i, ch in enumerate(text) if "ء" <= ch <= "ي"]
-    letters, e = "".join(text[i] for i in idx), _letters(ref["excerpt_ar"])
-    k = letters.find(e)
-    assert k >= 0, ref["ref"]
-    m = re.search(r"PageV(\d+)P(\d+)", text[idx[k + len(e) - 1]:])
-    assert loc == f"v{m[1]}:p{m[2]}", ref["ref"]
+    assert locate(src.read_text(encoding="utf-8"), ref["excerpt_ar"]) == loc, ref["ref"]
 
 
 def test_every_closure_is_cited():

@@ -6,11 +6,14 @@ import Hadith.Grade
 A chain is a list of links. Each link carries the narrator's martaba (`Hadith.Grade`), its
 continuity, and, for a mudallis, his tier and the *ṣīgha* of transmission.
 
-**Tadlīs.** Ibn Ḥajar, *Taʿrīf Ahl al-Taqdīs*: five *marātib* of mudallisīn. Tiers 1–2 have
-their ʿanʿana accepted; tiers 3–4 need explicit *taṣrīḥ bi'l-samāʿ*; tier 5 are weak for a
-further reason, which is already carried by their martaba, so taṣrīḥ cures the tadlīs but
-not that weakness. Which tiers are tolerated is a `Policy`, because it is disputed (a
-parameter with Ibn Ḥajar's position as the default), as the qiyās modules treat disputes.
+**Tadlīs.** Ibn Ḥajar, *Taʿrīf Ahl al-Taqdīs* (`src:openiti-tarif-shamela1186/v01:p013`–`p014`):
+five *marātib* of mudallisīn. Tiers 1–2 have their ʿanʿana accepted; tiers 3–4 need explicit
+*taṣrīḥ bi'l-samāʿ*; tier 5 are weak for a further reason, which is already carried by their
+martaba, so taṣrīḥ cures the tadlīs but not that weakness. Which tiers are tolerated is a
+`Policy`: the *Taʿrīf* itself records the dispute over tier 3 («ومنهم من رد حديثهم مطلقا ومنهم
+من قبلهم»), so the tolerance is a parameter with Ibn Ḥajar's position as the default, as the
+qiyās modules treat disputes. al-Albānī, *Tamām al-Minna* qāʿida 3, states the general rule
+(only what is explicitly heard is accepted) and defers to Ibn Ḥajar's *tafṣīl* for the tiers.
 
 **Verdict.** *Nuzha*: ṣaḥīḥ li-dhātihi needs ʿadāla, tamām al-ḍabṭ and ittiṣāl at every link.
 So the prima-facie chain verdict is the meet over link verdicts. Absence of ʿilla and
