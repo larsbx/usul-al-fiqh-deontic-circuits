@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
+import hashlib
+
 from .hudud import Hadd
-from .segment import Unit
+from .segment import Unit, source_excerpt
 
 PIPELINE = "usul_corpus/1"
 EXCERPT_LEN = {"public_domain_text": 400, "modern_cache_only": 160}
@@ -39,7 +41,36 @@ def qaida_records(work: dict, witness: str, method: str, tag: str, u: Unit) -> l
         }
         for k, case in enumerate(u.furu, 1)
     ]
-    return [_qaida(work, witness, method, qid, tag, u)] + furu
+    opening = [
+        {
+            "id": f"{qid}.{opening_tag(k)}",
+            "work": work["id"],
+            "witness": witness,
+            "record_type": "far",
+            "qaida": qid,
+            "locator": _loc(witness, u.page, f"{tag}.{opening_tag(k)}"),
+            "case_ar": source_excerpt(u.body[case.start:case.end])[:cap],
+            "status": "candidate",
+            "extraction": {
+                "pipeline": "usul_corpus/opening-furu-1",
+                "method": f"{method}+{case.method}",
+                "source_span": {
+                    "basis": "headed_unit_body/v1",
+                    "body_sha256": hashlib.sha256(u.body.encode()).hexdigest(),
+                    "start": case.start,
+                    "end": case.end,
+                    "sha256": hashlib.sha256(u.body[case.start:case.end].encode()).hexdigest(),
+                },
+            },
+        }
+        for k, case in enumerate(u.opening)
+    ]
+    return [_qaida(work, witness, method, qid, tag, u)] + opening + furu
+
+
+def opening_tag(index: int) -> str:
+    """Reserve zero for recovered examples; never consume a legacy positive index."""
+    return "f000" if index == 0 else f"f000_{index + 1}"
 
 
 def _qaida(work: dict, witness: str, method: str, qid: str, tag: str, u: Unit) -> dict:
@@ -53,7 +84,7 @@ def _qaida(work: dict, witness: str, method: str, qid: str, tag: str, u: Unit) -
         "heading_ar": u.heading,
         "excerpt_ar": u.statement[: EXCERPT_LEN[work["rights"]]],
         "kind": "unclassified",
-        "furu_count": len(u.furu),
+        "furu_count": len(u.furu) + len(u.opening),
         "ocr_corrected": u.ocr_corrected,
         "status": "candidate",
         "extraction": {"pipeline": PIPELINE, "method": method},

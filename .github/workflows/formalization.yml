@@ -20,7 +20,9 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install pytest jsonschema numpy pillow
-      - run: make test validate generated
+      - name: Fetch pinned opening-example witness
+        run: cd pipeline && python -m usul_corpus fetch --work ibn_rajab.taqrir_qawaid
+      - run: make test validate generated opening-replay
 
   lean:
     name: Lean 4 kernel (no sorry)

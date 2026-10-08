@@ -7,6 +7,8 @@
   "missing_rule": 7,
   "segmentation_error": 1
  },
+ "coverage_basis": "annotated cases only, excluding annotated segmentation_error",
+ "annotation_denominator": 236,
  "coverage": 0.966,
  "madhhab_coverage": 0.644,
  "encoding_error": 0,
@@ -129,6 +131,64 @@
   },
   "umum_lafz": {
    "derivable": 3
+  }
+ },
+ "corpus_coverage": {
+  "basis": "All generated far records in each scope, including unannotated examples; exclude only explicitly annotated segmentation_error records. Structural segmentation is not an exhaustive semantic source census.",
+  "encoded_qawaid": {
+   "segmented_far": 252,
+   "annotated": 237,
+   "segmentation_error": 1,
+   "denominator": 251,
+   "unannotated": 15,
+   "qawaid_with_pending": 13,
+   "annotation_complete": false,
+   "coverage": 0.908,
+   "madhhab_coverage": 0.606,
+   "pending_ids": [
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f000",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f000",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f000_2",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f000",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f000",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f000",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f000",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063.f000",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063.f000_2",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f000",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f000",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f000",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f000",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000"
+   ]
+  },
+  "rajab": {
+   "segmented_far": 1143,
+   "annotated": 210,
+   "segmentation_error": 0,
+   "denominator": 1143,
+   "unannotated": 933,
+   "qawaid_with_pending": 136,
+   "annotation_complete": false,
+   "coverage": 0.181,
+   "madhhab_coverage": 0.119
+  },
+  "m8_tranche_1": {
+   "segmented_far": 26,
+   "annotated": 23,
+   "segmentation_error": 0,
+   "denominator": 26,
+   "unannotated": 3,
+   "qawaid_with_pending": 3,
+   "annotation_complete": false,
+   "coverage": 0.769,
+   "madhhab_coverage": 0.538,
+   "pending_ids": [
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f000",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f000",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f000"
+   ]
   }
  }
 }

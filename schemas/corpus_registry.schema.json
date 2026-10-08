@@ -37,7 +37,8 @@
           "required": ["kind"],
           "properties": {"kind": {"enum": ["headed", "lines", "numbered", "verse_block", "hudud_brackets"]}, "marker": {"type": "string"},
                          "anchor_step": {"type": "integer", "minimum": 1, "description": "numbered: full-length reads may bridge gaps up to this size"},
-                         "index": {"type": "boolean", "description": "also read the closing index «marker <ordinal>: statement»"}}
+                         "index": {"type": "boolean", "description": "also read the closing index «marker <ordinal>: statement»"},
+                         "opening_examples": {"type": "boolean", "description": "headed: conservative Ibn Rajab opening and inline example profile; emits f000 and f000_N without renumbering existing furu"}}
         },
         "expected_units": {
           "type": "object",

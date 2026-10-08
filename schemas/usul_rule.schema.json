@@ -30,7 +30,21 @@
     "extraction": {
       "type": "object",
       "required": ["pipeline", "method"],
-      "properties": {"pipeline": {"type": "string"}, "method": {"type": "string"}}
+      "properties": {
+        "pipeline": {"type": "string"}, "method": {"type": "string"},
+        "source_span": {
+          "type": "object",
+          "required": ["basis", "body_sha256", "start", "end", "sha256"],
+          "additionalProperties": false,
+          "properties": {
+            "basis": {"const": "headed_unit_body/v1"},
+            "body_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "start": {"type": "integer", "minimum": 0},
+            "end": {"type": "integer", "minimum": 1},
+            "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+          }
+        }
+      }
     }
   },
   "allOf": [

@@ -186,8 +186,8 @@ Results on the tranche:
   - **q22.f008 is decided by another reading.** The mashhūr makes the mixer of a deposit liable *for transgression*. It is annotated under the trust-loss reading and gives the madhhab's ruling. A new optional `home` field records that its qāʿida is 22, so coverage stays exact without pretending the case was revisited.
   - **q68 types 1 and 2 track the madhhab** on the doubtful vessel, the zakāt intention, the night of doubt and the deposited dinars. The exception is f007: the stronger view (al-Qāḍī, Ibn ʿAqīl) rests on the bar on conditional sale, a separate principle (`rule:taliq_al_bay`).
   - **New gaps:** whether a concession needs certainty of its permission (68.f001, `fact:rukhsa_needs_certainty`); dirhams mixed with usurped ones, decided by proportion (22.f007, `rule:mixed_haram_by_proportion`); and a judge ruling against his own ijtihād (68.f009).
-- **Segmentation finding, opening examples:** a qāʿida's first example, introduced by a bare «منها» before the first «(ومنها)» paragraph, stays inside the qāʿida record and is never a `far` record. Tranche 1 therefore did not test three source cases: the maʿḍūb's ḥajj (q6), the impure water (q22) and the prayer while believing oneself impure (q68). The coverage check counts segmented furūʿ only, so it cannot see this. The problem is systematic. At least 78 of the 160 qāʿida records carry an inline opening example, and that is a lower bound because excerpts are capped at 400 characters. Eleven of the 14 qawāʿid annotated in M4 are among them. Every coverage figure here is therefore coverage *of segmented furūʿ*. The fix is for the segmenter to emit the opening example as `.f000`, which keeps every existing farʿ id stable, and then to annotate those cases. It is the next change, ahead of tranche 2.
-- **Segmentation finding:** qawāʿid 14 and 66 have no segmented furūʿ, because their examples are written inline («إحداها», «مثل») rather than as «ومنها» paragraphs. They need a segmenter fix before they can be annotated.
+- **Pre-correction segmentation finding (tranche 1 snapshot):** a qāʿida's first example, introduced before the first «(ومنها)» paragraph, stayed inside the qāʿida record and was never a `far` record. Tranche 1 therefore did not test three source cases: the maʿḍūb's ḥajj (q6), the impure water (q22) and the prayer while believing oneself impure (q68). The old exact-coverage check counted generated furūʿ only. The excerpt inspection reported at least 78 affected records and 11 M4 qawāʿid; those were inspection estimates from capped excerpts, not a full-source census. The historical figures below describe that earlier segmentation. The October 8 correction and revised denominator follow below.
+- **Pre-correction inline finding:** qawāʿid 14 and 66 had no segmented furūʿ, because their examples use «إحداها», «الصورة الثانية/الثالثة» and «مثل أن». The correction now handles those documented forms.
 
 **Coverage trend:**
 
@@ -199,3 +199,39 @@ Results on the tranche:
 | All, after M8 tranche 1 | 237 | 0.966 | 0.644 | 0 | 11 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
+
+## October 8, 2026: opening-example segmentation correction
+
+The conservative headed-source profile now recovers **87 candidate examples in 79 qawāʿid** from the full pinned Ibn Rajab witness. It adds them to the existing **1,056** furūʿ, giving **1,143 generated furūʿ**. Every existing `.f001` and later identifier, excerpt, locator and extraction field is unchanged. Only the affected parent `furu_count` fields change. The first recovered example uses `.f000`; additional explicitly labeled examples use `.f000_2`, `.f000_3`, and so on, in source order. These suffixes reserve the zero namespace without consuming an existing positive identifier.
+
+The three tranche omissions are now q006.f000 (the maʿḍūb's ḥajj), q022.f000 (impure water), and q068.f000 (prayer while believing oneself impure). Q14 has three picture-labeled records; its «إحداهما» and «والثانية» ruling alternatives are retained inside the first case. Q66 has two type-specific «مثل أن» records. Other supported opening forms require an explicit enumeration of صور / مسائل / أمثلة / مواضع / أنواع, or «ومن أمثلة ذلك». A bare pronoun «منها», ordinary «مثل», or a ruling alternative does not create a case. The profile is enabled only for this registered witness; it is not an exhaustive semantic source census.
+
+No new fiqh annotation is inferred by this correction. All 87 records remain `candidate`, with no encoder facts, expected ruling, disagreement classification or approval. They await the existing human review and annotation gates (`Review.tla`). Existing annotations and all their Lean guards are unchanged. The prior 846-case backlog is therefore **933 unannotated generated Ibn Rajab furūʿ** after this addition; these occur in 136 qawāʿid with pending emitted records. This is a count of actual records, rather than subtracting annotated qawāʿid from 160 regardless of whether a rule has emitted cases.
+
+`corpus/takhrij/report.json` retains the historical annotated-case results and adds `corpus_coverage`. Each scope's new denominator includes every generated farʿ, including unannotated openings, and excludes only an explicitly annotated `segmentation_error`. Unannotated cases do not count as an agreement or a disagreement:
+
+| Scope | Generated furūʿ | Annotated | Pending | Coverage of revised denominator | Madhhab coverage |
+|---|---:|---:|---:|---:|---:|
+| All qawāʿid with an encoder already used in the annotations | 252 | 237 | 15 | 228/251 = 0.908 | 152/251 = 0.606 |
+| M8 tranche 1: q6, q22, q68 | 26 | 23 | 3 | 20/26 = 0.769 | 14/26 = 0.538 |
+| All generated Ibn Rajab furūʿ | 1,143 | 210 | 933 | 0.181 | 0.119 |
+
+The first row excludes its one known segmentation error. All three scopes have `annotation_complete: false`. The historical tranche's 20/23 and 14/23 remain valid as results on its annotated subset; they are not completeness claims about the corrected source scope. Annotation coverage checks permit only the new records named in the source receipt to remain pending in an already covered qāʿida. Removing an old annotation still fails the gate.
+
+### Provenance and replay
+
+The witness remains OpenITI `0800AH` commit `7b745ec7b83d6d4971f937364dbdec2fe0ba2a40`, file `0795IbnRajabHanbali.Qawacid.Shamela0021730-ara1.completed`, **1,660,710 bytes**, SHA-256 `f077fdf1ba4ec9cfecafed8b5e0023e850f57084e17463847cc238e3d1128e68`. `corpus/lock.json` is unchanged. The legacy-record baseline is main at `6f48b4ac5431b2f0ab81dfd8d3eec08d583afed7` (the merge of #27).
+
+`corpus/segmentation/openiti-rajab-shamela21730-opening.json` pins the complete source hash, each full unit body's hash, and each uncapped example slice's character offsets and hash. Offsets are Unicode code points, end exclusive, in the parser's headed unit body (section text joined by newline); hashes cover UTF-8 bytes. Locators retain the parent qāʿida's page anchor. The record excerpt remains capped at 400 characters; recovering and replaying an example never uses that excerpt as input. Matching normalization has an offset map back to the source text, so Arabic letters, diacritics, editorial brackets and source spelling are preserved in the stored excerpt. The receipt also commits to all 1,216 prior records apart from parent counts, including all 1,056 prior furūʿ.
+
+Regenerate and replay with:
+
+```sh
+cd pipeline
+python -m usul_corpus fetch --work ibn_rajab.taqrir_qawaid
+python -m usul_corpus build --work ibn_rajab.taqrir_qawaid
+python -m usul_corpus takhrij
+python -m usul_corpus opening-replay --work ibn_rajab.taqrir_qawaid
+```
+
+The targeted build preserves unrelated audit evidence and refuses a missing or changed locked source. Replay compares every regenerated record and opening receipt, not just its count. Short pinned-source fixtures cover q6, q22 and q68, the multiple-inline form in q9, and q14/q66; synthetic negatives exercise prose, ruling alternatives, empty markers and already counted paragraphs. Mutation tests reject changed legacy fields, source hashes, receipt spans and attempted promotions. CI fetches the pinned witness, then runs full-source replay as well as the offline receipt, Python, Lean and TLA+ governance gates. Full texts remain in `.cache/`; committed fixture fragments and record excerpts obey the 400-character cap.

@@ -250,7 +250,8 @@
       ],
       "segmenter": {
         "kind": "headed",
-        "marker": "القاعدة"
+        "marker": "القاعدة",
+        "opening_examples": true
       },
       "expected_units": {
         "unit": "qāʿida",

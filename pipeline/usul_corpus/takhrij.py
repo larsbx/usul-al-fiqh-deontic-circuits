@@ -203,6 +203,9 @@ def check_case(case: dict) -> list[str]:
         return [f"unknown encoder {case.get('encoder')}"]
     if case["class"] not in CLASSES:
         errs.append(f"unknown class {case['class']}")
+    home = case.get("home") or case.get("revisit", {}).get("from_encoder", case["encoder"])
+    if home not in ENCODERS:
+        errs.append(f"unknown home encoder {home}")
     if case["class"] in GUARDED:
         f = case.get("facts") or {}
         if set(f) != set(enc["facts"]) or any(f[k] not in dom for k, dom in enc["facts"].items()):
@@ -247,12 +250,72 @@ def mirror_file() -> str:
     return "\n".join(lines) + "\n"
 
 
-def report(cases: list[dict]) -> dict:
+def home_qawaid(cases: list[dict]) -> set[str]:
+    return {q for c in cases for q in ENCODERS[
+        c.get("home") or c.get("revisit", {}).get("from_encoder", c["encoder"])
+    ]["qawaid"]}
+
+
+def check_annotation_coverage(cases: list[dict], records: list[dict],
+                              recovered: set[str]) -> list[str]:
+    """Only receipted new examples may await annotation in an already covered rule."""
+    far = {r["id"]: r for r in records if r["record_type"] == "far"}
+    ids = [c["far"] for c in cases]
+    expected = {i for i, r in far.items() if r["qaida"] in home_qawaid(cases)}
+    errors = []
+    if len(ids) != len(set(ids)):
+        errors.append("duplicate annotation")
+    errors += [f"unknown far: {i}" for i in sorted(set(ids) - far.keys())]
+    errors += [f"unannotated legacy far: {i}" for i in sorted(expected - set(ids) - recovered)]
+    for c in cases:
+        home = c.get("home") or c.get("revisit", {}).get("from_encoder", c["encoder"])
+        if c["far"] in far and far[c["far"]]["qaida"] not in ENCODERS[home]["qawaid"]:
+            errors.append(f"annotation outside its home qāʿida: {c['far']}")
+    return errors
+
+
+def corpus_coverage(cases: list[dict], records: list[dict]) -> dict:
+    """Count pending source records as denominator entries, without inventing annotations."""
+    far = {r["id"]: r for r in records if r["record_type"] == "far"}
+
+    def scope(qawaid: set[str], include_pending_ids: bool = True) -> dict:
+        found = {i for i, r in far.items() if r["qaida"] in qawaid}
+        annotated = [c for c in cases if c["far"] in found]
+        excluded = sum(c["class"] == "segmentation_error" for c in annotated)
+        denominator = len(found) - excluded
+        pending = sorted(found - {c["far"] for c in annotated})
+        successes = sum(c["class"] in ("derivable", "genuine_ikhtilaf") for c in annotated)
+        madhhab = sum(c["class"] == "derivable" or
+                      (c["class"] == "genuine_ikhtilaf" and c.get("matches_madhhab", False))
+                      for c in annotated)
+        result = {"segmented_far": len(found), "annotated": len(annotated),
+                "segmentation_error": excluded, "denominator": denominator,
+                "unannotated": len(pending),
+                "qawaid_with_pending": len({far[i]["qaida"] for i in pending}),
+                "annotation_complete": not pending,
+                "coverage": round(successes / denominator, 3) if denominator else 0.0,
+                "madhhab_coverage": round(madhhab / denominator, 3) if denominator else 0.0}
+        if include_pending_ids:
+            result["pending_ids"] = pending
+        return result
+
+    rajab = {r["qaida"] for r in far.values() if r["work"] == "ibn_rajab.taqrir_qawaid"}
+    return {"basis": "All generated far records in each scope, including unannotated examples; "
+                     "exclude only explicitly annotated segmentation_error records. "
+                     "Structural segmentation is not an exhaustive semantic source census.",
+            "encoded_qawaid": scope(home_qawaid(cases)),
+            "rajab": scope(rajab, include_pending_ids=False),
+            "m8_tranche_1": scope({RAJAB.format(n) for n in (6, 22, 68)})}
+
+
+def report(cases: list[dict], records: list[dict] | None = None) -> dict:
     by = Counter(c["class"] for c in cases)
     scope = len(cases) - by["segmentation_error"]
     per = {e: dict(Counter(c["class"] for c in cases if c["encoder"] == e)) for e in ENCODERS}
     ikh = [c for c in cases if c["class"] == "genuine_ikhtilaf"]
-    return {"total": len(cases), "classes": dict(sorted(by.items())),
+    result = {"total": len(cases), "classes": dict(sorted(by.items())),
+            "coverage_basis": "annotated cases only, excluding annotated segmentation_error",
+            "annotation_denominator": scope,
             "coverage": round((by["derivable"] + by["genuine_ikhtilaf"]) / scope, 3) if scope else 0.0,
             "madhhab_coverage": round((by["derivable"] + sum(1 for c in ikh if c.get("matches_madhhab"))) / scope, 3) if scope else 0.0,
             "encoding_error": by["encoding_error"],
@@ -261,6 +324,9 @@ def report(cases: list[dict]) -> dict:
             "revisited": sum(1 for c in cases if c.get("revisit")),
             "revisit_queue": revisit_queue(cases),
             "per_encoder": {e: dict(sorted(v.items())) for e, v in per.items() if v}}
+    if records is not None:
+        result["corpus_coverage"] = corpus_coverage(cases, records)
+    return result
 
 
 def load(root: Path) -> list[dict]:

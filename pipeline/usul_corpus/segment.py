@@ -18,6 +18,14 @@ _STATEMENT_LEN = 400
 
 
 @dataclass(frozen=True)
+class SourceExample:
+    """An uncapped slice of the headed unit body; matching never rewrites its text."""
+    start: int
+    end: int
+    method: str
+
+
+@dataclass(frozen=True)
 class Unit:
     number: int | None
     heading: str
@@ -26,6 +34,8 @@ class Unit:
     furu: tuple[str, ...]
     ocr_corrected: bool
     covers: tuple[int, ...] = ()  # rule numbers under a joint heading, e.g. (22, 23)
+    body: str = ""  # full parser text, independent of the displayed statement cap
+    opening: tuple[SourceExample, ...] = ()
 
     @property
     def numbers(self) -> tuple[int, ...]:
@@ -49,8 +59,13 @@ def _number(after_marker: str) -> tuple[int | None, bool]:
     return None, False
 
 
+def source_excerpt(text: str) -> str:
+    """Presentation cleanup only; preserve source letters, marks and bracketed readings."""
+    return " ".join(_TAGS.sub("", text).split())
+
+
 def _statement(text: str) -> str:
-    return " ".join(_TAGS.sub("", text).split())[:_STATEMENT_LEN]
+    return source_excerpt(text)[:_STATEMENT_LEN]
 
 
 def _furu(text: str) -> tuple[str, ...]:
@@ -62,7 +77,95 @@ def _furu(text: str) -> tuple[str, ...]:
     )
 
 
-def segment_headed(sections: tuple[Section, ...], marker: str) -> tuple[Unit, ...]:
+_ENUM_OPEN = re.compile(
+    r"(?<!\w)[وف]?(?:صور|مسايل|امثله|مواضع|انواع)"
+    r"(?:\s+(?:كثيره|عديده|متعدده|جدا|متردده|بين|الضربين|ذلك|هنا)){0,6}"
+    r"\s*[:.;،]?\s*(?P<marker>\(?و?منها\)?)\s*[:.]?\s*"
+)
+_EXAMPLE_OPEN = re.compile(r"(?<!\w)ومن امثله ذلك\s*[:.]?\s*")
+_INLINE_NEXT = re.compile(r"(?<!\w)\(?ومنها\)?\s*[:.]?\s+")
+_PICTURE = re.compile(r"\(الصوره (?:الثانيه|الثالثه)\)\s*[:.]?\s*")
+_TYPE_EXAMPLE = re.compile(r"(?:احدهما|والثاني)\s*:\s*[^\n]*?\bمثل\s+(?=ان\b)")
+
+
+def _matching_text(text: str) -> tuple[str, list[int]]:
+    """Normalized characters with an index back into the unmodified body.
+
+    Unlike slicing a normalized string, this survives diacritics, tatweel and
+    repeated whitespace without changing the text we store or the receipt span.
+    """
+    chars: list[str] = []
+    offsets: list[int] = []
+    for i, char in enumerate(text):
+        if char.isspace():
+            if chars and chars[-1] != " ":
+                chars.append(" ")
+                offsets.append(i)
+        else:
+            for normalized in normalize(char):
+                chars.append(normalized)
+                offsets.append(i)
+    return "".join(chars), offsets
+
+
+def _opening_furu(text: str, number: int | None) -> tuple[SourceExample, ...]:
+    """Conservative Ibn Rajab profile, before the first legacy farʿ paragraph.
+
+    Require an explicit enumeration or example introducer. A bare pronoun
+    «منها», an alternative ruling «إحداهما», and ordinary «مثل» are not cases.
+    Q14's picture labels and Q66's two type examples are separate source forms.
+    Existing paragraph-start furūʿ are deliberately left to `_furu`.
+    """
+    paragraphs = text.splitlines(keepends=True)
+    limit = 0
+    for paragraph in paragraphs:
+        if _FARC.match(normalize(paragraph)):
+            break
+        limit += len(paragraph)
+    prefix = text[:limit]
+    matched, offsets = _matching_text(prefix)
+    starts: list[tuple[int, int, str]] = []  # introducer start, content start, method
+    for pattern, method in ((_ENUM_OPEN, "opening_minha"), (_EXAMPLE_OPEN, "opening_example")):
+        for m in pattern.finditer(matched):
+            if m.end() < len(offsets):
+                starts.append((offsets[m.start()], offsets[m.end()], method))
+                # More than one explicitly introduced example on the same line.
+                line_end = prefix.find("\n", offsets[m.end()])
+                line_end = len(prefix) if line_end < 0 else line_end
+                for extra in _INLINE_NEXT.finditer(matched, m.end()):
+                    if offsets[extra.start()] >= line_end:
+                        break
+                    if extra.end() < len(offsets):
+                        starts.append((offsets[extra.start()], offsets[extra.end()], "opening_minha"))
+    if number == 14:
+        # «إحداها» names a picture, «إحداهما» names a ruling within that picture.
+        first = re.search(r"صور\s*:\s*\(احداها\)\s*", matched)
+        if first and first.end() < len(offsets):
+            starts.append((offsets[first.start()], offsets[first.end()], "inline_picture"))
+            starts += [(offsets[m.start()], offsets[m.end()], "inline_picture") for m in _PICTURE.finditer(matched)
+                       if m.end() < len(offsets)]
+    if number == 66 and re.search(r"نوعان\s*:", matched):
+        starts += [(offsets[m.start()], offsets[m.end()], "inline_type_example") for m in _TYPE_EXAMPLE.finditer(matched)
+                   if m.end() < len(offsets)]
+
+    # End a case at the next introducer, not at the next example's *content*.
+    starts = sorted(set(starts))
+    spans = []
+    for i, (_, start, method) in enumerate(starts):
+        end = starts[i + 1][0] if i + 1 < len(starts) else limit
+        if number == 14:
+            boundary = re.search(r"\nوليس من هذه القاعدة", prefix[start:end])
+            if boundary:
+                end = start + boundary.start()
+        while end > start and prefix[end - 1].isspace():
+            end -= 1
+        if end > start and source_excerpt(prefix[start:end]):
+            spans.append(SourceExample(start, end, method))
+    return tuple(spans)
+
+
+def segment_headed(sections: tuple[Section, ...], marker: str,
+                   opening_examples: bool = False) -> tuple[Unit, ...]:
     """Units start at level-1 headers containing ``marker``; deeper sections fold in."""
     key = normalize(marker)
     starts = [i for i, s in enumerate(sections) if s.level == 1 and key in normalize(s.title)]
@@ -76,7 +179,8 @@ def segment_headed(sections: tuple[Section, ...], marker: str) -> tuple[Unit, ..
         if number is None:  # number printed on the first body line (Shamela layout)
             number, ocr = _number(_TAGS.sub("", head.text))
             text = text.split("\n", 1)[1] if "\n" in text else text
-        return Unit(number, head.title, _statement(text), head.page, _furu(text), ocr)
+        return Unit(number, head.title, _statement(text), head.page, _furu(text), ocr,
+                    body=text, opening=_opening_furu(text, number) if opening_examples else ())
 
     return tuple(unit(i, j) for i, j in bounds)
 

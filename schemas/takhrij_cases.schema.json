@@ -35,7 +35,7 @@
         "properties": {
           "far": {
             "type": "string",
-            "pattern": "\\.f[0-9]{3}$"
+            "pattern": "\\.f(?:[0-9]{3}|000_(?:[2-9]|[1-9][0-9]+))$"
           },
           "encoder": {
             "type": "string"

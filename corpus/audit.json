@@ -1548,7 +1548,19 @@
     "missing": [],
     "duplicates": [],
     "unparsed": 0,
-    "matches_expected": true
+    "matches_expected": true,
+    "opening_furu": {
+      "recovered": 87,
+      "qawaid": 79,
+      "by_method": {
+        "inline_picture": 3,
+        "inline_type_example": 2,
+        "opening_example": 3,
+        "opening_minha": 79
+      },
+      "legacy_far": 1056,
+      "revised_far": 1143
+    }
   },
   "shamela-9942": {
     "work": "ibn_uthaymin.usul",

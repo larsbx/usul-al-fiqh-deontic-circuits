@@ -52,9 +52,11 @@ def test_annotated_cases_cover_their_qawaid_exactly_once_and_stay_generated():
     cases = takhrij.load(ROOT / "corpus")
     assert cases and all(takhrij.check_case(c) == [] for c in cases)
     far = {}
+    records = []
     for f in (ROOT / "corpus/records").glob("*.jsonl"):
         for line in f.read_text().splitlines():
             r = json.loads(line)
+            records.append(r)
             if r["record_type"] == "far":
                 far[r["id"]] = r["qaida"]
     ids = [c["far"] for c in cases]
@@ -64,11 +66,14 @@ def test_annotated_cases_cover_their_qawaid_exactly_once_and_stay_generated():
         assert far[c["far"]] in takhrij.ENCODERS[home[c["far"]]]["qawaid"], c["far"]
     annotated = set(home.values())
     expected = {i for e in annotated for i, q in far.items() if q in takhrij.ENCODERS[e]["qawaid"]}
-    assert set(ids) == expected
+    recovered = {r["id"] for f in (ROOT / "corpus/segmentation").glob("*-opening.json")
+                 for r in json.loads(f.read_text())["records"]}
+    assert expected - set(ids) <= recovered
+    assert takhrij.check_annotation_coverage(cases, records, recovered) == []
     tests = ROOT / "formal/lean/UsulTest"
     assert (tests / "Takhrij.lean").read_text() == takhrij.lean_file(cases)
     assert (tests / "TakhrijMirror.lean").read_text() == takhrij.mirror_file()
-    assert json.loads((ROOT / "corpus/takhrij/report.json").read_text()) == takhrij.report(cases)
+    assert json.loads((ROOT / "corpus/takhrij/report.json").read_text()) == takhrij.report(cases, records)
 
 
 def test_case_findings_point_at_register_questions_on_their_rule():

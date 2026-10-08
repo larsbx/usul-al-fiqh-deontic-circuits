@@ -1,0 +1,1859 @@
+{
+  "format": "opening-furu/v1",
+  "status": "candidate",
+  "source": {
+    "witness": "openiti-rajab-shamela21730",
+    "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0795IbnRajabHanbali/0795IbnRajabHanbali.Qawacid/0795IbnRajabHanbali.Qawacid.Shamela0021730-ara1.completed",
+    "bytes": 1660710,
+    "sha256": "f077fdf1ba4ec9cfecafed8b5e0023e850f57084e17463847cc238e3d1128e68"
+  },
+  "span_basis": "Unicode code-point offsets, end exclusive, in the full headed unit body: OpenITI parse_markdown section texts joined by newline, as in segment_headed. Hash UTF-8 bytes. Locators retain the parent qāʿida's page anchor.",
+  "legacy": {
+    "records": 1216,
+    "far_records": 1056,
+    "records_except_furu_count_sha256": "248f5acd52114c5c6520aea8e0e02699128227eb928ed5c37b25ea4ec34e9f06"
+  },
+  "summary": {
+    "recovered": 87,
+    "qawaid": 79,
+    "by_method": {
+      "inline_picture": 3,
+      "inline_type_example": 2,
+      "opening_example": 3,
+      "opening_minha": 79
+    },
+    "legacy_far": 1056,
+    "revised_far": 1143
+  },
+  "records": [
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002",
+      "locator": "src:openiti-rajab-shamela21730/v01:p004#q002.f000",
+      "case_ar": "إذا مس شعر امرأة بشهوة لم ينتقض وضوءه، وكذلك ظفرها أو مسها بظفره أو شعره ولهذه المسألة مأخذ آخر: وهو أن هذه الأجزاء ليست بمحل للشهوة الأصلية، وهي شرط لنقض الوضوء عندنا. [الشعر لا ينجس بالموت ولا بالانفصال]",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "992587f794ff5066ea467b69dc443fcf553622e299ffa2a21fef3bafe0261a36",
+          "start": 109,
+          "end": 314,
+          "sha256": "b8255cf5a0476710834294ec530a620994d6a3cb8373f6610ce727a493dd6900"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003",
+      "locator": "src:openiti-rajab-shamela21730/v01:p005#q003.f000",
+      "case_ar": "إذا أدرك الإمام في الركوع بعد فوات قدر الإجزاء منه هل يكون مدركا له في الفريضة. ظاهر كلام القاضي وابن عقيل تخريجها على الوجهين إذا قلنا لا يصح اقتداء المفترض بالمتنفل قال ابن عقيل ويحتمل أن تجري الزيادة مجرى الواجب في باب الاتباع خاصة إذ الاتباع قد يسقط الواجب كما في المسبوق ومصلي الجمعة من امرأة وعبد مسافر. [وجب عليه شاة فذبح بدنة]",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "dc908edb08a24376f438de15c1dd4f3f93cab115707743a764dc6fee152ce252",
+          "start": 286,
+          "end": 620,
+          "sha256": "e0732670cdcaa39c2ca73417a8635985df0dd38cee56503bf0491599d11506e0"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004",
+      "locator": "src:openiti-rajab-shamela21730/v01:p006#q004.f000",
+      "case_ar": "الطهارة سبب وجوبها الحدث وشرط الوجوب فعل العبادة المشترط لها الطهارة فيجوز تقديمها على العبادة ولو بالزمن الطويل بعد الحدث.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "01303b86fd318b6e33efa14836582383e1179b91616e63c0ac40ae11589edb24",
+          "start": 179,
+          "end": 302,
+          "sha256": "33276d56e96a016bf4f12233632b85d3014e01bcc262247dc38e6454d538fd41"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006",
+      "locator": "src:openiti-rajab-shamela21730/v01:p008#q006.f000",
+      "case_ar": "إذا أحج المعضوب عن نفسه ثم برئ فإنه يجزئه على المذهب لأنه فعل الواجب عليه في وقته لا سيما إن قيل إن ذلك عليه على الفور.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "7e6f7820fe556f24c76d230bda156b86726bbb3e88d389aabec28d7a1901eae8",
+          "start": 111,
+          "end": 230,
+          "sha256": "c31b7777d9787e479612bbd5fd1255886ad4bc0607c053a91ccf7805e6fd4b6a"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007",
+      "locator": "src:openiti-rajab-shamela21730/v01:p009#q007.f000",
+      "case_ar": "من شرع في صيام كفارة ظهار أو يمين أو غيرهما ثم وجد الرقبة، فالمذهب لا يلزمه الانتقال لأن ذلك رخصة، فهو كصيام المتمتع. وفيه وجه يلزمه الانتقال لأن الكفارات مشروعة بإرباغ والزجر وفيها من التغليظ ما ينافي الرخصة المطلقة، ولهذا يلزم شراء الرقبة بثمن في الذمة إذا كان ماله غائبا، ولو لم يجد من يبيعه رقبة بالدين وماله غائب فهل يلزمه انتظاره أو يجوز له العدول إلى الصيام للمشقة أو يفرق بين الظهار وغيره على",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "140f407088b45156858a56a655755de7923f1b012151c9e6d1a669e3fd6f27f6",
+          "start": 1048,
+          "end": 1461,
+          "sha256": "43623d5c2a7a93ee6b9289cc10a71d494b941ea70035e4d849c4258f651029ee"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008",
+      "locator": "src:openiti-rajab-shamela21730/v01:p010#q008.f000",
+      "case_ar": "المريض إذا عجز في الصلاة عن وضع وجهه على الأرض وقدر على وضع بقية أعضاء السجود، فإنه لا يلزمه ذلك على الصحيح، لأن السجود على بقية الأعضاء إنما وجب تبعا للسجود على الوجه وتكميلا له. والقسم الثالث: ما هو جزء من العبادة وليس بعبادة في نفسه بانفراده، أو هو غير مأمور به لضرورة (فالأول) كصوم بعض اليوم لمن قدر عليه وعجز عن إتمامه فلا يلزمه بغير خلاف. (والثاني) كعتق بعض الرقبة في الكفارة فلا يلزم القادر عل",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_example",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "dc77a2a5d1e6a0a54ca629f9f9d8af526e049e5f03b9cc7108b5ffe46f1dcfa5",
+          "start": 1107,
+          "end": 1752,
+          "sha256": "a1ca84ff71b82a87f382a3baf958a5846bfb69af7412c25c2d905b60f99d14af"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f000_2",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008",
+      "locator": "src:openiti-rajab-shamela21730/v01:p010#q008.f000_2",
+      "case_ar": "العاجز عن القراءة يلزمه القيام لأنه وإن كان مقصوده الأعظم القراءة لكنه أيضا مقصود في نفسه وهو عبادة منفردة.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "dc77a2a5d1e6a0a54ca629f9f9d8af526e049e5f03b9cc7108b5ffe46f1dcfa5",
+          "start": 1773,
+          "end": 1880,
+          "sha256": "da6460dd7f8eb452dbf7dd50ba7bce95962c2fb7be8c48aded2a562ff2a20834"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009",
+      "locator": "src:openiti-rajab-shamela21730/v01:p012#q009.f000",
+      "case_ar": "صوم يوم العيد فلا يصح بحال على المذهب",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "e2e51abb32aa40061c2e4cae89411c1cd8a1e2469e6042fa68be471303910f6e",
+          "start": 323,
+          "end": 360,
+          "sha256": "02cf76355653febbe4ecae8e3e5696fa1919c1ec2e209f1a3b2c77e3430baf51"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f000_2",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009",
+      "locator": "src:openiti-rajab-shamela21730/v01:p012#q009.f000_2",
+      "case_ar": "الصلاة في أوقات النهي.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "e2e51abb32aa40061c2e4cae89411c1cd8a1e2469e6042fa68be471303910f6e",
+          "start": 369,
+          "end": 391,
+          "sha256": "edf67d1febb849814a0aa87b2139d836f8deb010c6f06ef3f3bc10429118bf20"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011",
+      "locator": "src:openiti-rajab-shamela21730/v01:p013#q011.f000",
+      "case_ar": "إذا تضايق وقت المكتوبة هل ينعقد التنفل [المطلق] حينئذ؟ على وجهين.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "accf19936bd697e84b6a24badac434564bd6f06641e21cd9c8d252bc4a0ec928",
+          "start": 232,
+          "end": 297,
+          "sha256": "80b91c5b8ecd4d1fb24e42f8718f52364de0e83e2c2602c89b3945cb8b833bf7"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012",
+      "locator": "src:openiti-rajab-shamela21730/v01:p014#q012.f000",
+      "case_ar": "مسح الأذنين المذهب أنه يستحب مسحهما مرة واحدة إما مع الرأس أو بماء جديد ولا يسن ms014 الجمع بينهما وحكي عن القاضي عبد الوهاب بن جلبة قاضي حران أن الأفضل الجمع بينهما عملا بالحديثين",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "54f870ec424ede7a7b3303fe535ba79e376494252c5255a6ca139deb987b9e2e",
+          "start": 538,
+          "end": 718,
+          "sha256": "fcc1186e5b2abb0b37ec7ba7b3a63eb4b675eff48b3dec4752fb0be82da53790"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014",
+      "locator": "src:openiti-rajab-shamela21730/v01:p018#q014.f000",
+      "case_ar": "إذا وجد اثنان منيا في ثوب ينامان فيه أو سمعا صوتا خارجا ولم يعلم من أيهما هو ففي المسألة روايتان (إحداهما) لا يلزم واحدا منهما غسل ولا وضوء نظرا إلى أن كل واحد منهما متيقن للطهارة شاك في الحدث. (والثانية) : يلزمهما الغسل والوضوء لأن الأصل زال يقينا في أحدهما فتعذر البقاء عليه وتعين الاحتياط ولم يلتفت إلى النظر في كل واحد بمفرده كثوبين أو إناءين نجس أحدهما.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+inline_picture",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "eb161ac4cc8c631d9c5a08be73281ffb3d1201ab18f7a683780ee3d98f5807d1",
+          "start": 171,
+          "end": 530,
+          "sha256": "5046b29279c327c0408b4877e1dbf2ee9e43dbdd43c0b36baa69eb4410876d18"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000_2",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014",
+      "locator": "src:openiti-rajab-shamela21730/v01:p018#q014.f000_2",
+      "case_ar": "قال أحد الرجلين إن كان هذا الطائر غرابا فامرأتي طالق، وقال الآخر إن لم يكن غرابا فامرأتي طالق وغاب ولم يعلم ما هو. ففيها وجهان: أحدهما: ما قال القاضي في المجرد وأبو الخطاب وغيرهما يبني كل واحد منهما على يقين نكاحه. والثاني: وهو اختيار الشيرازي في الإيضاح وابن عقيل أنه تخرج المطلقة منهما بالقرعة. وقال القاضي في الجامع هو قياس المذهب لأن واحدة منهما طلقت يقينا فأخرجت بالقرعة كما لو كانت الزوجتان لرج",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+inline_picture",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "eb161ac4cc8c631d9c5a08be73281ffb3d1201ab18f7a683780ee3d98f5807d1",
+          "start": 548,
+          "end": 2055,
+          "sha256": "76ca5bcb49df3a24ea94115db91aef286cf66d44496dd3d0b5d47eb4806ebedf"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000_3",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014",
+      "locator": "src:openiti-rajab-shamela21730/v01:p018#q014.f000_3",
+      "case_ar": "قال أحدهما إن كان غرابا فأمتي حرة وقال الآخر إن لم يكن غرابا فأمتي حرة وفيها الوجهان المذكوران في الطلاق، وقياس المنصوص ههنا أن يكف كل واحد عن وطء أمته حتى يتيقن فإن اشترى أحدهما أمة الآخر عين المعتقة منهما بالقرعة على أصح الوجهين لاجتماعهما في ملكه وإحداهما عتيقة كما قلنا لا يصح أن يأتم أحدهما بالآخر في الصورة الأولى لأن أحدهما محدث يقينا فينظر إليهما مجتمعين في حكم يتعلق باجتماعهما.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+inline_picture",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "eb161ac4cc8c631d9c5a08be73281ffb3d1201ab18f7a683780ee3d98f5807d1",
+          "start": 2073,
+          "end": 2460,
+          "sha256": "839769ce486f252615f26d0a8c7222c3d579285b5e45700f72ea2299d43493ff"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016",
+      "locator": "src:openiti-rajab-shamela21730/v01:p020#q016.f000",
+      "case_ar": "هدي المتعة إذا عدمه ووجب الصيام عليه ثم وجد الهدي قبل الشروع فيه، فهل يجب عليه الانتقال أم لا ينبني على الاعتبار في الكفارات بحال الوجوب أو بحال الفعل فيه روايتان فإن قلنا بحال الوجوب صار الصوم أصلا لا بدلا وعلى هذا فهل يجزئه فعل الأصل وهو الهدي؟ المشهور أنه يجزئه لأنه الأصل في الجملة وإنما سقط رخصة، وحكى القاضي في شرح المذهب عن ابن حامد أنه لا يجزئه.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "fa52795ed4609e4bf126c4554d6fb617e29526becaf62c326e2eb97f75f56fdb",
+          "start": 152,
+          "end": 506,
+          "sha256": "3a2ed248593dac2a7aecca464c5dfee8a531a2b370207d5d61d3473287709013"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018",
+      "locator": "src:openiti-rajab-shamela21730/v01:p023#q018.f000",
+      "case_ar": "من عليه حدثان أصغر وأكبر فالمذهب أنه يكفيه أفعال الطهارة الكبرى إذا نوى الطهارتين [جميعا] بها وعنه لا يجزئه عن الأصغر حتى يأتي بالوضوء واختار أبو بكر أنه يجزئه عنهما إذا أتى بخصائص الوضوء من الترتيب والموالاة وإلا فلا، وجزم به صاحب المبهج ولو كان عادما للماء فتيمم تيمما واحدا ينوي به الحدثين أجزأه عنهما بغير خلاف ونص عليه أحمد في رواية مهنا.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_example",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "74aaab2e06f6cf32402512fa959503929235b4c2bcb571f5017a3eef78bd9be7",
+          "start": 268,
+          "end": 611,
+          "sha256": "e7c933627b7c9c72286a64a0fc15199413a0828701544eec06711649bb05efc1"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020",
+      "locator": "src:openiti-rajab-shamela21730/v01:p027#q020.f000",
+      "case_ar": "لو كان عنده دون نصاب فكمل نصابا بنتاجه فهل يحسب حوله من حين كمل كما لو كان النتاج من غيره أو من حين ملك الأمهات لأن النتاج جزء من الأمهات فهو موجود فيها بالقوة من أول الحول؟ . في المسألة روايتان ولو كان له مائة وخمسون درهما فاتجر بها حتى صارت مائتين فحولها من حين كمل بغير خلاف لأن الكسب يتولد من الخارج وهو رغبات الناس لا من نفس العين",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "8d4eeaa9823244d0ed60c9142e6df64803411af8821b27f53adc59ff3b182d01",
+          "start": 108,
+          "end": 443,
+          "sha256": "a13db0607cb9a3e0dceb8c7d6c399141e8d79fdf06fafcba443ad1aa6576a023"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022",
+      "locator": "src:openiti-rajab-shamela21730/v01:p029#q022.f000",
+      "case_ar": "الماء الذي استهلكت فيه النجاسة فإن كان كثيرا سقط حكمها بغير خلاف، وإن كان يسيرا فروايتان ثم من الأصحاب من يقول إنما سقط حكمها وإلا فهي موجودة ومنهم من يقول بل الماء أحالها لأن له قوة الإحالة فلم يبق لها وجود بل الموجود غيرها فهو عين طاهرة وهي طريقة أبي الخطاب.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "d8fb0d1b917dad1ceb300ac6a91c794944255e05148ef3cb227b962b79d6006d",
+          "start": 109,
+          "end": 369,
+          "sha256": "886c468f7c97061dfaf82378d28b0768c0737fad4d0a8a0815648994adc44691"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023",
+      "locator": "src:openiti-rajab-shamela21730/v01:p031#q023.f000",
+      "case_ar": "وضع الخشب على جدار جاره إذا لم يضر به وقد نص أحمد على عدم اعتبار إذنه في ذلك وفي التلخيص أنه يجبر عليه إن أباه.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "337ad85755f6b9b2cdbe9cbe661aedb06b19dba139faa729b7e230c45a5d58dc",
+          "start": 171,
+          "end": 282,
+          "sha256": "10e0825d51966131d50e30a0a04e15e12ba2624516ead98761628084b70fa2aa"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024",
+      "locator": "src:openiti-rajab-shamela21730/v01:p033#q024.f000",
+      "case_ar": "لو بادر الغال قبل إحراق رحله وباعه ففيه وجهان حكاهما في المغني (أحدهما) يصح لأن ملكه باق لم يزل ويسقط التحريق لانتقاله عنه فهو كما لو مات وانتقل إلى وارثه (والثاني) : ينفسخ البيع ويحرق لأن حق التحريق أسبق وقد تعلق بهذا المال عقوبة لمالكه على جريمته السابقة.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "817e8b4a4f43b09ea5c1f8d0385153358ae58a5dd6a9b85161b6ac91dcf43e39",
+          "start": 217,
+          "end": 475,
+          "sha256": "7152e34e51508979e5beef9e7a967c1e32c1bb5309ba19d2f9dc06c69f241d07"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025",
+      "locator": "src:openiti-rajab-shamela21730/v01:p034#q025.f000",
+      "case_ar": "أن من ثبت له ملك أمة في يد غيره ومعها ولد فهل يتبعها في الملك إذا ادعاه؟ على وجهين: (أحدهما) : لا وهو الذي ذكره القاضي لأنه لا يتبعها في بيع ولا غيره ويجوز أن يكون ولدته قبل ملكه لها. (والثاني) : وإليه ميل ابن عقيل أنه يتبعها لأنه من أجزائها وقد ثبت سبق اليد الحكمية لليد المشاهدة فتكون مرجحة عليها، ويشبه هذه المسألة ما إذا ادعى أمة في يد غيره أنها أم ولده وأن ولدها منه [حر] وأقام بذلك شاهدا وحلف م",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "75758c41b8bd6c95501e263aa903ab4d958d9396af8eba11ecd3dcabbf3019e1",
+          "start": 111,
+          "end": 883,
+          "sha256": "97b9c28aacecaf0b24247557ffa117d1017b405a4f8234392deb6dbd1fbd7b8b"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026",
+      "locator": "src:openiti-rajab-shamela21730/v01:p036#q026.f000",
+      "case_ar": "لو صال عليه حيوان آدمي أو بهيمة فدفعه عن نفسه بالقتل لم يضمنه ms041 ولو قتل حيوانا لغيره في مخمصة ليحيي به نفسه ضمنه.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "49b9c4f4befb47c08bacd6bbcd170de46926910dc64e91506ea74c59b1610d1f",
+          "start": 92,
+          "end": 209,
+          "sha256": "bb4a6c98529cf5b8c60a66cd46ccfdcd2a5d9c887d82fe996786179f1f0a4b3a"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028",
+      "locator": "src:openiti-rajab-shamela21730/v01:p037#q028.f000",
+      "case_ar": "إذا زاد الإمام سوطا في الحد فمات المحدود فحكى أبو بكر في المسألة قولين: (أحدهما) : يجب كمال الدية. (والثاني) : يجب نصفها والأول هو المشهور وعليه القاضي وأصحابه لأن المأذون فيه لا أثر له في الضمان وإنما الجناية ما زاد عليه فأسند بالضمان إليها.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "284f50267a733de56d7bf9b6bf192b8a03aeb288051df5137d2c8a93a5a746fc",
+          "start": 251,
+          "end": 493,
+          "sha256": "86fb49f6496ab41c8ed3cb044e92720494211b5af81bb224e46e63de7d030859"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032",
+      "locator": "src:openiti-rajab-shamela21730/v01:p041#q032.f000",
+      "case_ar": "المبيع إذا استثنى البائع منفعته مدة معلومة صح، وحكي فيه رواية أخرى بعدم الصحة.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "85468ff1c7e3b5f462a9eceb6d9217d7b468eb28ff09c735df34d40ac5ba6811",
+          "start": 93,
+          "end": 171,
+          "sha256": "0facfe2045ca816bcb9637a44d8df98094881df20c4353463f3de70814707c41"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033",
+      "locator": "src:openiti-rajab-shamela21730/v01:p041#q033.f000",
+      "case_ar": "لو باعه أمة حاملا بحر وقلنا يصح استثناء الحمل لفظا فهل يصح أم لا؟ على وجهين.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "a53ee851cfc4c544b7b96421d049c17b3e59ea47479111b21c26a31395e47bb7",
+          "start": 175,
+          "end": 251,
+          "sha256": "ccc832e71f99d94d171ef5fac3eb3b5c424873613071978e5caa02ef9063c17b"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034",
+      "locator": "src:openiti-rajab-shamela21730/v01:p042#q034.f000",
+      "case_ar": "إذا عتقت الأمة المزوجة لم تملك منفعة البضع التي هي مورد النكاح، وإنما يثبت لها الخيار تحت العبد لأنها كملت تحت ناقص فزالت كفاءته بذلك، أو تعبدا غير معقول المعنى، ومن ms048 قال بسراية العتق قال: قد ملكت بضعها فلم يبق لأحد عليها ملك فصار الخيار لها في المقام مع الزوج أو مفارقته سواء كان حرا أو عبدا، وعلى هذا لو استثنى منفعة بضعها للزوج صح ولم تملك الخيار سواء كان زوجها حرا أو عبدا ذكره الشيخ وقال: و",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "55680eb9ea8e8df14a24ce03170c2b08b874b747039dc47dd96f37528288ad90",
+          "start": 282,
+          "end": 955,
+          "sha256": "4616e7a92dcdd98baf2b640ac4dcc95591c567b922e2795cd63b11d14995d9f3"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035",
+      "locator": "src:openiti-rajab-shamela21730/v01:p042#q035.f000",
+      "case_ar": "لو اشترى المستأجر العين المستأجرة من مؤجرها ففي انفساخ الإجارة وجهان حكاهما الأصحاب وربما حكي روايتان: أحدهما: ينفسخ لأنه ملك الرقبة فبطل ملك المنفعة كما لو اشترى زوجته. والثاني: لا ينفسخ وهو الصحيح وهو اختيار القاضي وابن عقيل والأكثرين ; لأن المنافع ملكها أولا بجهة الإجارة وخرجت عن ملك المؤجر، والبيع بعد ذلك يقع على ما يملكه البائع وهو العين المسلوبة النفع فصار كما لو اشترى العين الموصى بمنافعها ",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "984c35a2d2dbfbda78e80c4bff5122326f77085dfd44d5c8b584d52765ee37d1",
+          "start": 1159,
+          "end": 2471,
+          "sha256": "0946edeee50d77e147f44589ec93bdbd3f796d48c59b405f173b45e8a1aec9db"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037",
+      "locator": "src:openiti-rajab-shamela21730/v01:p046#q037.f000",
+      "case_ar": "إذا رهنه شيئا ثم أذن له في الانتفاع به، فهل يصير عارية حالة الانتفاع أم لا؟ قال القاضي في خلافه، وابن عقيل في نظرياته، وصاحب المغني والتلخيص: يصير مضمونا بالانتفاع لأن ذلك حقيقة العارية، وأورد ابن عقيل في نظرياته في وقت ضمانه احتمالين: أحدهما: أنه لا يصير مضمونا بدون الانتفاع والثاني: يصير مضمونا بمجرد القبض إذا قبضه على هذا الشرط، لأنه صار ممسكا للعين لمنفعة نفسه منفردا به، وهل يزول لزومه أم لا؟ ",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "0657a1544859447af6fd89dea9f00af4ee0e772d8f52e34723f811dba5f3b29c",
+          "start": 79,
+          "end": 809,
+          "sha256": "def8650334ac17d3520b8ffd96a1c1b70961669a32f5491ff8450f79310667cc"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038",
+      "locator": "src:openiti-rajab-shamela21730/v01:p048#q038.f000",
+      "case_ar": "لو أعاره شيئا وشرط عليه العوض فهل يصح أم لا؟ على وجهين: أحدهما: يصح ويكون كناية عن القرض فيملكه بالقبض إذا كان مكيلا أو موزونا ذكره أبو الخطاب في انتصاره، وكذلك ذكر القاضي في خلافه وأبو الخطاب في موضع من رءوس المسائل أنه يصح عندنا شرط العوض في العارية كما يصح شرط العوض في الهبة ; لأن العارية هبة منفعة، ولا تفسد بذلك، مع أن القاضي قرر أن الهبة المشروط فيها العوض ليست بيعا، وإنما الهبة تارة تكون تبر",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "2b8c5596fa8ffbae89882bacaf9d9a4718b1812a435cd2ceb25c14ce5e0b8db4",
+          "start": 193,
+          "end": 1120,
+          "sha256": "b6b7a041950b18d0d62b1625451f261e9541fcaf6d054ec877ea3ee4e1d1eeda"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040",
+      "locator": "src:openiti-rajab-shamela21730/v01:p050#q040.f000",
+      "case_ar": "الإجارة فمن استأجر شيئا مدة فزال ملك صاحبه عنه بتملك قهري يشمل العين والمنفعة ثم عاد ملك المؤجر والمدة باقية لم تعد الإجارة، هذا هو الظاهر ; لأن ملك المستأجر زال عن المنافع وثبت له الرجوع على المالك بقسطه من الأجرة، فإذا استوفاه منه لم يبق له حق فتعود العين بمنافعها ملكا للمؤجر، أما إن لم يستوف شيئا فقد سبق نظائرها في قاعدة من تعذر عليه ms059 الأصل واستقر حقه في البدل ثم وجد الأصل فيحتمل وجهين، وا",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "be989ae1644f3d0c418b581d30972571dc8d017fab1a4bc19ad9b1e45d403c0b",
+          "start": 162,
+          "end": 625,
+          "sha256": "8adb873b6846f0448fce83256db9672daf20bdf0b1be67722f68fb8838e137b3"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041",
+      "locator": "src:openiti-rajab-shamela21730/v01:p053#q041.f000",
+      "case_ar": "لو أتلف الرهن متلف وأخذت قيمته فظاهر كلامهم أنها تكون رهنا بمجرد الأخذ وفرع القاضي على ذلك أن الوكيل في بيع المتلف يملك بيع البدل المأخوذ بغير إذن جديد وخالفه صاحب الكافي والتلخيص، وظاهر كلام أبي الخطاب في الانتصار في مسألة إبدال الأضحية أنه لا يصير رهنا إلا بجعل الراهن.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "101f2003c623ee6ece01f46ba3b4c48e7e11020bcd26350f00c21c3436cb287a",
+          "start": 140,
+          "end": 411,
+          "sha256": "7b61afc3f162a93c28c0420f44a2568047637e1005fd030ae357e6c106837e91"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q042.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q042",
+      "locator": "src:openiti-rajab-shamela21730/v01:p053#q042.f000",
+      "case_ar": "الأمانات التي حصلت في يد المؤتمن برضى صاحبها فلا يجب أداؤها إلا بعد المطالبة منه ودخل في ذلك الوديعة وكذلك أموال الشركة والمضاربة والوكالة مع بقاء عقودها.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "ba291831c8f344ee21639505ad2a5e45e8cd9464e18eb15e54f74b3601f2a69a",
+          "start": 563,
+          "end": 717,
+          "sha256": "e599f65f552bf0eb5f5f5754422b62c0acc61cfd41ef1cca83bd48e5dd12794a"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045",
+      "locator": "src:openiti-rajab-shamela21730/v01:p064#q045.f000",
+      "case_ar": "إذا تعدى في الوديعة بطلت ولم يجز له الإمساك ووجب الرد على الفور لأنها أمانة محضة وقد زالت بالتعدي فلا تعود بدون عقد متجدد هذا هو المشهور، ولو كانت عينين فتعدى في إحداهما فهل يصير ضامنا لهما أو لما وجد فيه التعدي خاصة فيه تردد وذكره القاضي أبو يعلى الصغير وذكره ابن الزاغوني أنه إذا زال التعدي وعاد إلى الحفظ لم تبطل وقد يوجه بأن المالك أسند إليه الحفظ لرضاه بأمانته فمتى وجدت الأمانة فالإسناد موجود ل",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "8e1c01f4a2aacfeda3fdd19fcfb888d269254b1faec3bb4188e6ae84ea940ed7",
+          "start": 161,
+          "end": 687,
+          "sha256": "c1d647f880c80b6cb2f9697e19c6ea3cf9a72cfe68b7597491409cb61b963471"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047",
+      "locator": "src:openiti-rajab-shamela21730/v01:p067#q047.f000",
+      "case_ar": "المبيع والمعروف في المذهب ضمانه بالقيمة لا بالثمن المسمى [فيه] نص عليه أحمد في رواية ابن منصور وأبي طالب لأن المسمى إنما وقع الرضى به في ضمان العقد والعقد غير موجب للضمان. وإنما يترتب الضمان بأمر آخر طارئ على العقد وهو التلف تحت يده فيجب ضمانه بالقيمة أو المثل كما لو اتفقا على ms080 ضمان العارية عند إقباضها بشيء ثم تلفت فإنه يلغى المتفق عليه ويجب المثل أو القيمة كذلك ههنا، وحكى القاضي في المجرد وا",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "5fe58c9c844cf6a5ec2652af2994f8b4e41fcb26cbb356255e86f5dc9e79faff",
+          "start": 1998,
+          "end": 2863,
+          "sha256": "6c8d7ee3092412d0c21d12e479bc190ea527aaaa0b269b1e75c3364904d2babc"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053",
+      "locator": "src:openiti-rajab-shamela21730/v01:p086#q053.f000",
+      "case_ar": "التصرف في المرهون ببيع أو غيره مما لا سراية له لا يصح لأن المرتهن أخذ بحقه في الرهن من التوثيق والحبس وقبضه وحكم له به فهو بالنسبة إلى الرهن كغرماء المفلس المحجور عليه، فأما العتق فإنما نفذ لقوته وسرايته كما نفذ حج المرأة والعبد بدون إذن السيد والزوج حتى أنهما لا يملكان تحليلهما على إحدى الروايتين كقوة الإحرام ولزومه، ولهذا ينعقد مع فساده ويلزم إتمامه.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "802f9701722c3ff0cc52f8339623775c411500a161c835ab01a4ad21732ec0ff",
+          "start": 844,
+          "end": 1198,
+          "sha256": "0ad51e72860624e50b43c5a935b525d4f0d905d83e9358333813ad8f03dc42b8"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q054.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q054",
+      "locator": "src:openiti-rajab-shamela21730/v01:p089#q054.f000",
+      "case_ar": "مفارقة أحد المتبايعين الآخر في المجلس بغير إذنه خشية أن يفسخ الآخر، وفيه روايتان إحداهما يجوز ; لفعل ابن عمر. والثانية لا يجوز ; لحديث عمرو بن شعيب عن أبيه عن جده أن النبي صلى الله عليه وسلم قال: «لا يحل له أن يفارقه خشية أن يستقيله» . وهو صريح في التحريم وهو اختيار أبي بكر وصاحب المغني ومنها تصرف المشتري في الشقص المشفوع بالوقف قبل الطلب ينبغي أن يخرج على الخلاف في التي قبلها، وصرح القاضي بجوازه،",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "c4a7c43af1100839bae0ffd0c92d4f9658774e84855d8c293852ca0e3d127b9b",
+          "start": 1719,
+          "end": 2520,
+          "sha256": "deefc5059dbbd18f33bfd6c18ac6416b0ecb7082d295a2356aab177243542259"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057",
+      "locator": "src:openiti-rajab-shamela21730/v01:p097#q057.f000",
+      "case_ar": "لو قال الزوج لامرأته أنت طالق مع انقضاء عدتك، أو قال كلما ولدت ولدا فأنت طالق فولدت ولدين متعاقبين فإنها تطلق بالأول وتنقضي العدة بالثاني، ولا تطلق به كما لا تطلق في قوله مع انقضاء عدتك، هذا المذهب المشهور وعليه أبو بكر وأبو حفص والقاضي وأصحابه والخلاف فيه مع ابن حامد وحده، وفي الفصول يشير إلى أن مأخذ ابن حامد في مسألة الولادة القول بتقارن العلة ومعلولها فيقع الطلاق في حال الولادة قبل البينونة ولا",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "16f1b92c92aff27ce81062d9f8e5f738558d4f237e48a1c82ea256ee710a66fd",
+          "start": 385,
+          "end": 865,
+          "sha256": "4bd5a03b77fdcbe4c7e7caf9b94d8f493b27f0d0dd0d8efb34f89c12416cc8ea"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f000_2",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057",
+      "locator": "src:openiti-rajab-shamela21730/v01:p097#q057.f000_2",
+      "case_ar": "لو قال أنت طالق بعد موتي لم تطلق بغير خلاف نعلمه، ولو قال مع موتي أو موتك لم تطلق نص عليه في رواية مهنا لأن الموت سبب البينونة فلا يجامعها الطلاق ويلزم على قول ابن حامد الوقوع ههنا لأنه إذا وقع الطلاق مع الحكم بالبينونة فإيقاعه مع سبب الحكم أولى ويلزم مثل ذلك القاضي ومن تابعه على الوقوع مع سبب الانفساخ لتأخر الانفساخ عنه ولم يلتزموا ذلك، وادعوا ههنا المقارنة دون السبق ولا يصح ولعل المانع من إيقاع ",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "16f1b92c92aff27ce81062d9f8e5f738558d4f237e48a1c82ea256ee710a66fd",
+          "start": 872,
+          "end": 1372,
+          "sha256": "f14fa5c4c070a1aa8361229f80354f66989bd60da000897c85163c0e1aef8959"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059",
+      "locator": "src:openiti-rajab-shamela21730/v01:p107#q059.f000",
+      "case_ar": "إذا تلف المبيع المبهم قبل قبضه انفسخ العقد فيه وفي عوضه سواء كان ثمنا أو مثمنا.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "2475f1a0626a6d51b454c81d4fb9b46c357fdbeae31d2a5e74ec3c028e04da4b",
+          "start": 314,
+          "end": 393,
+          "sha256": "f80f506b78ffc0628dbd41f9b94be9651a1d19d925c9b477c6690ff0e29ce818"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062",
+      "locator": "src:openiti-rajab-shamela21730/v01:p114#q062.f000",
+      "case_ar": "الحاكم إذا قيل بانعزاله قال القاضي وأبو الخطاب فيه الخلاف الذي في الوكيل. وفي التلخيص لا ينعزل قبل العلم بغير خلاف ورجحه الشيخ تقي الدين لأن في ولايته حقا لله وإن قيل إنه وكيل فهو شبيه بنسخ الأحكام لا يثبت قبل بلوغ الناسخ على الصحيح بخلاف الوكالة المحضة. قال: هذا هو المنصوص عن أحمد وأيضا فإن ولاية القاضي عامة لما يترتب عليها من عموم العقود والفسوخ فتعظم البلوى بإبطالها قبل العلم بخلاف الوكالة",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "8c25758331415f08c22a1b830427eec67be0f45cd9d6609f41f2b01c6fee63fc",
+          "start": 384,
+          "end": 779,
+          "sha256": "20e7db28f13895bc4d6a0abe3a8bc99a4bef32e41273ba875d71825f7517f4b6"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063",
+      "locator": "src:openiti-rajab-shamela21730/v01:p115#q063.f000",
+      "case_ar": "الطلاق",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "20048f45a7d8b263900a69b940b143f3cb6ad6cae2b7465cf4391df716c9025d",
+          "start": 84,
+          "end": 90,
+          "sha256": "03812683dceadf96b88fcc9b3c08a4bca714bda2ccb40e5a5c557f0c79f3a462"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063.f000_2",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063",
+      "locator": "src:openiti-rajab-shamela21730/v01:p115#q063.f000_2",
+      "case_ar": "الخلع فإنه يصح مع ms143 الأجنبي على المذهب سواء قيل هو فسخ أو طلاق ولنا وجه آخر أنه لا يصح مع الأجنبي إذا قلنا إنه فسخ كالإقالة والصحيح خلافه لأن فسخ البيع اللازم لا يستقل به أحد المتبايعين بخلاف النكاح فإن الزوج يستقل بإزالته بالطلاق.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "20048f45a7d8b263900a69b940b143f3cb6ad6cae2b7465cf4391df716c9025d",
+          "start": 97,
+          "end": 332,
+          "sha256": "034c566d5a2d2fe762523c36e81102bbda507467dfa076191a4959de78f96c28"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064",
+      "locator": "src:openiti-rajab-shamela21730/v01:p116#q064.f000",
+      "case_ar": "لو تصرف في مال غيره بعقد أو غيره ثم تبين أنه كان أذن له في التصرف هل ms144 يصح أم لا؟ فيه وجهان.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "284fe90102fe4288dbf39576187bf7c6f44cf2c0a98408648fa3f0f36c833ff1",
+          "start": 176,
+          "end": 272,
+          "sha256": "2f7d15622fa1600eccac64e343ea980b7ee5b3fc3e5d677b021c92fbcec8c525"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065",
+      "locator": "src:openiti-rajab-shamela21730/v01:p117#q065.f000",
+      "case_ar": "لو باع ملك أبيه بغير إذنه ثم تبين أن أباه كان قد مات ولا وارث له وفي صحة تصرفه وجهان ويقال روايتان.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "70e9c110d32dfd3672fcc4bf6c9277cbef62119df381e86025bbdf23e03aa166",
+          "start": 96,
+          "end": 195,
+          "sha256": "dfa271e8d293d3fe23b1617dba2529298900b80a8e04ea40450e430da57376fb"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066",
+      "locator": "src:openiti-rajab-shamela21730/v01:p118#q066.f000",
+      "case_ar": "أن يستدل على القبلة بنجم يظنه الجدي ثم تبين أنه نجم آخر مسامته.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+inline_type_example",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "e3c31d6eb00f867042734664c311f26a8b32517debe5a8946ca2210a0b6758bb",
+          "start": 149,
+          "end": 212,
+          "sha256": "db35ddece5143ef047c9406674bbacdcef2a0d4d584486f98d183ed8c91fe042"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f000_2",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066",
+      "locator": "src:openiti-rajab-shamela21730/v01:p118#q066.f000_2",
+      "case_ar": "أن يشتري شيئا ويتصرف فيه ثم تبين أن الشراء كان فاسدا وأنه ورث تلك العين فإن قلنا في القاعدة الأولى بالصحة فهنا أولى، وإن قلنا ثم بالبطلان فيحتمل هنا الصحة لأنه استند إلى سبب مسوغ وكان في نفس الأمر له مسوغ غيره فاستند التصرف إلى مسوغ في الباطن والظاهر بخلاف القسم الذي قبله ذكره الشيخ تقي الدين [رحمه الله] . والمذهب هنا الصحة بلا ريب لأن أصحابنا اختلفوا فيما إذا وهب الغاصب المغصوب من مالكه وأقبضه إي",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+inline_type_example",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "e3c31d6eb00f867042734664c311f26a8b32517debe5a8946ca2210a0b6758bb",
+          "start": 267,
+          "end": 1146,
+          "sha256": "f39159128cf992db43b098d62d66c2a9b89d4a9b6cbbb5c6608059ee36327e02"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067",
+      "locator": "src:openiti-rajab-shamela21730/v01:p119#q067.f000",
+      "case_ar": "باع عينا ثم وهب ثمنها للمشتري أو أبرأه منه ثم بان بها عيب يوجب الرد فهل له ردها والمطالبة بالثمن أم لا؟ على وجهين. وكذا لو أبرأه من بعض الثمن فهل له المطالبة بقدر ما أبرأه منه؟ على الوجهين، واختار القاضي في خلافه أنه إذا رده لم يرجع عليه بشيء مما أبرأه منه ويتخرج التفريق بين الهبة والإبراء فيرجع بالهبة دون الإبراء وسنذكر أصله ولو ظهر هذا المبيع [معيبا] بعد أن تعيب عنده فهل له المطالبة بأرش العيب؟ ",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "70acd1bed3df097555cb68d106a14a0e00201b573e4cf855575ed099a91023c8",
+          "start": 165,
+          "end": 793,
+          "sha256": "de2ed7b7495f40324b9fd219c13c464158a0fd1bdf8f1b15238d6ad34f44a480"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068",
+      "locator": "src:openiti-rajab-shamela21730/v01:p120#q068.f000",
+      "case_ar": "إذا صلى يظن نفسه محدثا فتبين متطهرا.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_example",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "4dbbc21e04ade3cfcb59782516ec1319333bd69d69bd622723a73d2e34f78b54",
+          "start": 299,
+          "end": 335,
+          "sha256": "2b0e67a2721403cacae330f38092382896fac70a34d2624f25b07b8e7450424a"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069",
+      "locator": "src:openiti-rajab-shamela21730/v01:p123#q069.f000",
+      "case_ar": "الأجير المشترك فيجوز له الاستنابة في العمل لأنه ضمن تحصيله لا عمله بنفسه واستثنى الأصحاب من ذلك أن يكون العمل متفاوتا كالفسخ فليس له الاستنابة فيه بدون إذن المستأجر صريحا ونقلت من خط القاضي على ظهر جزء من خلافه قال نقلت من مسائل ابن أبي حرب الجرجاني سمعت أبا عبد الله سئل قال دفعت ثوبا إلى خياط فقطعه ثم دفعه إلى آخر ليخيطه قال هو ضامن ولعل هذا فيما [إذا] دلت الحال على وقوع العقد فيه على خياطة المست",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "95043f51060bdf3f8eb29cc5327d6b25e85ab145ef9df61ccaf767f0f5148a30",
+          "start": 419,
+          "end": 1107,
+          "sha256": "5b63c0d035a481c76cbf688e103e458f32b7fd8f91ae09aa1e815cfc8d1d54ea"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070",
+      "locator": "src:openiti-rajab-shamela21730/v01:p125#q070.f000",
+      "case_ar": "النهي عن الكلام والإمام يخطب لا يشمل الإمام على المذهب المشهور.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "0d269f273e2cc663073d1dfc821e2612769dd034d30fec1e3769e77877db709e",
+          "start": 297,
+          "end": 360,
+          "sha256": "eabb797b9ecc78393de044797ee8b766ad4deaf702e808f6bd15a204c0065893"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071",
+      "locator": "src:openiti-rajab-shamela21730/v01:p130#q071.f000",
+      "case_ar": "ولي اليتيم يأكل مع الحاجة بقدر عمله وهل يرده إذا أيسر؟ على روايتين واختار ابن عقيل أنه يأكل مع الحاجة وعدمها ولو فرض له الحاكم شيئا جاز له أخذه مجانا بغير خلاف هذا ظاهر كلام القاضي ونص [عليه] أحمد في رواية البرزاطي في الأم الحاضنة أنها لا تأكل من مال ولدها إلا لضرورة إلا أن يفرض لها الحاكم في المال حق الحضانة ووجهه أن من أعطاه غيره فله تدودت مع الغنى بخلاف الأخذ بنفسه ولهذا أجاز للوصي الأخذ إذا شر",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "0ab67040b64260d7661f2fe6b99a9411a79d9f46080007ddf8d09373739dc0ca",
+          "start": 1209,
+          "end": 1800,
+          "sha256": "7f07d94f663505a7597340e021f68dc22b6f8f7aa03defe333b4d8c1f839bce1"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073",
+      "locator": "src:openiti-rajab-shamela21730/v01:p134#q073.f000",
+      "case_ar": "اشتراط مشتري الزرع القائم في الأرض حصاده على البائع فلا يصح ويفسد به العقد ذكره الخرقي وحكى ابن أبي موسى في فساده به وجهين لأن حصاد الزرع قد يتوهم أنه من تمام التسليم الواجب كما ظنه بعض الفقهاء.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "27fbbc5ec1c1870954119bce9c7b9cf1c5b4bd4ebe3c9ef70d52f4c8b4be016d",
+          "start": 330,
+          "end": 524,
+          "sha256": "209653dc1038c1f4e46de2086c6ca325860ccaaa614a7e3b661d37d7845d0b85"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074",
+      "locator": "src:openiti-rajab-shamela21730/v01:p135#q074.f000",
+      "case_ar": "من قتل مشركا في حال الحرب مغررا بنفسه في قتله فإنه يستحق سلبه بالشرع لا بالشرط في أصح الروايتين.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "b403293f04c01a9dd12cb6e45dc81b60b094d2d55f56a45b745398fa9ad790b7",
+          "start": 405,
+          "end": 501,
+          "sha256": "cc500d2727d6c4b3f799916b5a667051b1b1f180de53b59de2c38c97c73d90a9"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075",
+      "locator": "src:openiti-rajab-shamela21730/v01:p137#q075.f000",
+      "case_ar": "إذا قضى عنه دينا واجبا بغير إذنه فإنه يرجع به عليه في أصح الروايتين وهي المذهب عند الخرقي وأبي بكر والقاضي والأكثرين، واشترط القاضي أن ينوي الرجوع ويشهد على نيته عند الأداء فلو نوى التبرع أو أطلق النية فلا رجوع له واشترط أيضا أن يكون المدين ممتنعا من الأداء، وهو يرجع إلى أن لا رجوع إلا عند تعذر إذنه وخالف في ذلك صاحبا المغني والمحرر وهو ظاهر الخلاف للقاضي في المجرد والأكثرين وهذا في ديون الآدميين.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "242382d8fa7517e6c1d723311f4c4affd3cd0ac8062cfb85b600e8bb2fd37f90",
+          "start": 171,
+          "end": 917,
+          "sha256": "566e3636816e0e29e37d2270d90b4f7ee6d98f6816b58041b8bb3c41316754d6"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076",
+      "locator": "src:openiti-rajab-shamela21730/v01:p142#q076.f000",
+      "case_ar": "إذا انهدم الحائط المشترك فالمذهب إجبار الممتنع منهما بالبناء مع الآخر نص عليه في رواية جماعة فإن الإجبار هنا من جنس المعاوضة في الأموال المشتركة واجبة لدفع الضرر بالانتزاع بالشفعة وبيع ما لا يمكن قسمته والمغني فيه أن المالك مستحق الانتفاع بملكه ويجب على شريكه تمكينه منه فإذا دار الأمر بين تعطيل الحق بالكلية وبين المعاوضة عليه فالمعاوضة عليه أولى لأنه يرجع فيها إلى الانتفاع بالبدل بخلاف التعطيل وأم",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "4f9e35caeff0356eb06391d319283ae1adc45c5a3a4d6b9c1d3a57833ef7bbc6",
+          "start": 341,
+          "end": 2787,
+          "sha256": "f3facb309618214a9dcf1a095c2e87c7e62487550dd3565e035a74152420f1a2"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077",
+      "locator": "src:openiti-rajab-shamela21730/v01:p147#q077.f000",
+      "case_ar": "غراس المستأجر وبناؤه بعد انقضاء المدة إذا لم يقلعه المالك فللمؤجر تملكه بالقيمة لأنه لا يملك قلعه بدون ضمان نقصه، وفيه ضرر عليه ذكر ذلك القاضي وابن عقيل والأكثرون، ولم يشترط أبو الخطاب أن لا يقلعه المالك فلعله جعل الخيرة لمالك الأرض دون مالك الغراس والبناء. ms185",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "5385f39a202ae30bf8ce2ce1b36ad645532517b2e4b0a0d387c5b1ed4590a412",
+          "start": 318,
+          "end": 581,
+          "sha256": "3846f5347cf35c4d93a08b6cbe35ffb99561535d1b3eabc84326a4add9edf5af"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078",
+      "locator": "src:openiti-rajab-shamela21730/v01:p150#q078.f000",
+      "case_ar": "لو باع دارا فيها ناقة لم تخرج من الباب إلا بهدمه فإنه يهدم ويضمن للمشتري النقص.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "ef0adda90d62b9ed36cc3136542790fbb2d37037ae7089e783e6dcec87f204a3",
+          "start": 394,
+          "end": 473,
+          "sha256": "22f569cc6a5f2dfbd0e856a8be51667f5126ef1c26b564297e5e898b7f0ec85e"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080",
+      "locator": "src:openiti-rajab-shamela21730/v01:p157#q080.f000",
+      "case_ar": "هل يجوز بيع هذه الأصول مفردة أم لا إن ألحقناها بالشجر لتكرر حملها جاز فيه صرح القاضي وابن عقيل في موضع وفرقا في موضع آخر بين ما يتباقى منها سنين كالقطن الحجازي فيجوز بيع أصوله، وما لا يتباقى إلا سنة ونحوها لا يجوز بيعها إلا بشرط القطع إلا أن تباع معه الأرض كالزرع ورجح صاحب التلخيص أن المقاثي ونحوها لا يجوز بيعها إلا بشرط القطع فإنها مع أصولها معرضة للآفات كالزرع وهو مقتضى كلام الخرقي وابن أبي موسى",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "fda74e31d0686f9ed5e76343d103368b065497e9c868634f46919828866953ee",
+          "start": 107,
+          "end": 509,
+          "sha256": "2ebfc25e5fd2c53a371c26a7410804aee7b66647c8198a79a0ff06f32004219a"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081",
+      "locator": "src:openiti-rajab-shamela21730/v01:p157#q081.f000",
+      "case_ar": "المردود بالعيب إذا كان قد زاد زيادة متصلة كالسمن وتعلم صناعة فالمشهور عند الأصحاب أن الزيادة للبائع تبعا لأصلها ولا يستحق المشتري عليه شيئا وخرج ابن عقيل بأن الزيادة للمشتري وكذلك قال الشيرازي وزاد أنه يرجع على البائع بقيمة النماء وكذلك ذكره الشيخ تقي الدين إبهامه من عموم كلام أحمد في رواية أبي طالب إذا اشترى غنما فنمت ثم استحقت فالنماء له قال وهذا يعم المنفصل والمتصل قلت وقد نص أحمد على الرجوع بق",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "02927f6a9ec1a685ba7a973538b07ad1d6757f20c511b443490186b77fb1992d",
+          "start": 327,
+          "end": 1385,
+          "sha256": "71806bd00bc687388a36bc4fe7d95651fdcf18526d0a8a3c1d26af00bc682a10"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090",
+      "locator": "src:openiti-rajab-shamela21730/v01:p206#q090.f000",
+      "case_ar": "استيلاء المسلمين على أموال أهل الحرب.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "ca21b9ab54297b14b58e140fd36eef608b91c2593044aabf14e56c4d7ca9e25c",
+          "start": 256,
+          "end": 293,
+          "sha256": "a9cf5e72e218f96b7603722b4f5f37d71e60cc297d6acfe2bf53802c2e3e4c7f"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095",
+      "locator": "src:openiti-rajab-shamela21730/v01:p217#q095.f000",
+      "case_ar": "أن يشهد شاهدان بموت زيد فيقسم ماله بين ورثته ثم يتبين بطلان الشهادة بقدومه حيا فنص [أحمد] في رواية الميموني أنهما يضمنان المال ولم يتعرض للورثة وظاهر كلامه استقرار الضمان على المشهور أو اختصاصهم به وهو في الجملة موافق لقوله المشهور عنه في تقرير الضمان على الغار كما سبق وقال القاضي يحتمل أن يكون أغرم الورثة ورجعوا بذلك على الشهود لتغريرهم ولا ضمان هنا على الحاكم ; لأنه ملجأ إلى الحكم من جهة الشهود ",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "869846a8baafb7d8382daa7dc603bdf2f65527a1874a3719b954e2abd6ea64de",
+          "start": 536,
+          "end": 1123,
+          "sha256": "09750ae8d9b23910c4be2964ec610c2132da346ba8df458c3021d7809ac8af3c"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096",
+      "locator": "src:openiti-rajab-shamela21730/v01:p221#q096.f000",
+      "case_ar": "لو امتنع من وفاء دينه وله مال فباع الحاكم ماله ووفاه عنه صح وبرئ منه ولا ضمان",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "8bfd8e4adfd395316bb61cca6bcec44a61109fa695bc2b1a4b1fe468b0dd91d7",
+          "start": 440,
+          "end": 517,
+          "sha256": "46973a36799212c5b2895ae2ec08c4a4da385afb26240162482f178c2646dad9"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099",
+      "locator": "src:openiti-rajab-shamela21730/v01:p227#q099.f000",
+      "case_ar": "الهر لا يجوز بيعه على أصح الروايتين وثبت في صحيح مسلم النهي عنه. ومأخذ المنع ما ذكرنا.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "31158e028f4f7353c35f759bbdd6dabe4e4fa10fb889031ea47137b35cd9d863",
+          "start": 167,
+          "end": 253,
+          "sha256": "ecb2a88acfcf1fba653bd653345a13c1570b9169f0b096ca821d367a50b0827b"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111",
+      "locator": "src:openiti-rajab-shamela21730/v01:p245#q111.f000",
+      "case_ar": "إذا قلنا موجب قتل العمد أحد شيئين فإذا ادعى أولياء المقتول على ولي القاتل في القسامة فنكل فهل يلزمه الدية على روايتين.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "b06e5c9ea565cf45bdb202c80b68ea1c0de06a24579f8fb929a8f49f451e8a9a",
+          "start": 121,
+          "end": 239,
+          "sha256": "c235034bf31424766b9a59a6f76e552e2ff19ce6223ecbf544ff549fcefa98d2"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115",
+      "locator": "src:openiti-rajab-shamela21730/v01:p261#q115.f000",
+      "case_ar": "الشفعاء المجتمعون كل منهم يستحق الشفعة بكمالها فإذا عفى أحدهم عن حقه توفر على الباقين",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "7aecbcb45cca0ccd6abe91247312e5f42c65e469fb2da6b04a3010937c6350df",
+          "start": 192,
+          "end": 277,
+          "sha256": "528f85a9c1daa8bc7752485b5a532373c15e78293a534baa029743f328eece5a"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120",
+      "locator": "src:openiti-rajab-shamela21730/v01:p273#q120.f000",
+      "case_ar": "في الأخ للأبوين على الأخ للأب في الميراث بالولاء رواية واحدة، وخرج ابن الزاغوني في كتابه التلخيص في الفرائض رواية أخرى باشتراكه في ms357 مسألة النكاح.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "439cb3d491c5acaccb657077cd1b74b92e928ccb6326ca794e58cd2d82d4a9bb",
+          "start": 99,
+          "end": 249,
+          "sha256": "abae30561c8d199f2f7c2fb3146a827f9b3f6edeb864556eceee8d3a815cfe9a"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121",
+      "locator": "src:openiti-rajab-shamela21730/v01:p273#q121.f000",
+      "case_ar": "لو حلف لا يأكل الرءوس فقال القاضي يحنث بأكل كل ما يسمى رأسا من رءوس الطيور والسمك، ونقله في موضع عن أحمد، وقال في موضع العرف يعتبر في تعميم الخاص لا في تخصيص العام. وقال أبو الخطاب: لا يحنث إلا برأس يؤكل في العادة مفردا، وكذلك ذكر القاضي في موضع من خلافه أن يمينه تختص بما يسمى رأسا عرفا، وحكى ابن الزاغوني ms358 في الإقناع روايتين. إحداهما: يحنث بأكل كل رأس. والثانية: لا يحنث إلا بأكل رأس بهيمة الأ",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "14be212cc50946ea6509e235787d5a54a7e4a7bf637545a92daeab37ae3aafec",
+          "start": 807,
+          "end": 1450,
+          "sha256": "721fe5534271e87a6b1a3320b26f432f52da199175fbf2539e162d2f2d62a432"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122",
+      "locator": "src:openiti-rajab-shamela21730/v01:p275#q122.f000",
+      "case_ar": "لو وصى لأقربائه أو أهل بيته، قال أحمد في رواية ابن القاسم: إذا قال لأهل بيتي أو قرابتي فهو على ما يعرف من مذهب الرجل، إن كان يصل عمته وخالته، ونقل سندي نحوه. وقال في رواية صالح في الوصية لأهل بيته: ينظر من كان يصل من أهل بيته من قبل أبيه وأمه، فإن كان لا يصل قرابته من قبل أمه فأهل بيته من قبل أبيه. واختلف الأصحاب في حكاية هذه الرواية على طريقين: أحدهما: أنها رواية ثالثة في قرابة الأم خاصة أنهم لا ",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "42273eb15ee797fa9b4aff53771b543fd4a87c8801674fd7f5c9def2be595009",
+          "start": 54,
+          "end": 1237,
+          "sha256": "ad111587d4a2b614a50fe344597a8ebe9343b48109885d8e7bd3d350899fc4e2"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123",
+      "locator": "src:openiti-rajab-shamela21730/v01:p277#q123.f000",
+      "case_ar": "إذا نذر صوم الدهر لم يدخل في ذلك ما يحرم صومه من أيام السنة أو وما يجب صومه شرعا كرمضان على أصح الروايتين.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "70948b3d06fd7b835e0881bd55d7c315020c0f7d94e291c68f6af84bb04dd4c5",
+          "start": 51,
+          "end": 157,
+          "sha256": "cea5a0c30a64133fd5c6704b4a5223922caf2855acc6309262d15e81965fc2e0"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124",
+      "locator": "src:openiti-rajab-shamela21730/v01:p277#q124.f000",
+      "case_ar": "لو دعي إلى غداء فحلف لا يتغدى، فهل يحنث بغداء غير ذلك المحلوف بسببه؟ على وجهين وجزم القاضي في الكفاية وصاحب المحرر بعدم الحنث.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "5c8660bffd714f86a6e47e7e727f39af61624181b875586bdb1e1f5d19a54f61",
+          "start": 1476,
+          "end": 1602,
+          "sha256": "e237883380392345e058fa1f9e24b18a4ede393b3d09c8ade119b00e5f9104a6"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125",
+      "locator": "src:openiti-rajab-shamela21730/v01:p279#q125.f000",
+      "case_ar": "لو حلف على زوجته لا تركت هذا الصبي يخرج فخرج بغير اختيارها، فنص أحمد في رواية مهنا أنه إن نوى أن لا يخرج من الباب فخرج فقد حنث وإن كان نوى أن لا تدعه لم يحنث ; لأنها لم تدعه.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "68ddca2838f036e343f782115877ac0f95098950ad3a43c5f116d6ad2ddb610f",
+          "start": 163,
+          "end": 337,
+          "sha256": "e6e12212e4b5f1cb0ec9102e7bcef93813ec45706daf5ae74621ceda2af59b0e"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127",
+      "locator": "src:openiti-rajab-shamela21730/v01:p284#q127.f000",
+      "case_ar": "إذا حفر واحد بئرا عدوانا ثم دفع غيره فيها آدميا معصوما أو مالا لمعصوم فسقط فتلف فالضمان على الدافع وحده.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "395699263584a32ea25dbecf734fa4ebd5b4bbbd9a5a7688eae1398ae2ce7531",
+          "start": 332,
+          "end": 436,
+          "sha256": "f7e73b167611606f7dc968a95d4e51e4cdff55e704c37d28a10379c2c764fa62"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128",
+      "locator": "src:openiti-rajab-shamela21730/v01:p288#q128.f000",
+      "case_ar": "لو جرح ذميا فأسلم ثم مات فلا قود، وهل يجب فيه دية مسلم أو دية ذمي؟ على وجهين، اختار القاضي وأبو الخطاب وجوب دية ذمي اعتبارا بحال الجناية، وابن حامد وجوب دية مسلم. وذكر ابن أبي موسى أنه نص أحمد، وبكل حال فالدية تكون لورثته من المسلمين ; لأنه استحق ms377 أرش جرحه حيا فملكه ثم أسلم فانتقل ما ملكه إلى ورثته المسلمين ذكره القاضي في خلافه وأبو الخطاب في الانتصار.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "faed7f92a6c7c0e7e39922c04b66ef304326556cb2263bd0fca7997daf9013df",
+          "start": 454,
+          "end": 814,
+          "sha256": "26364afcf45d0ecbcf8f799522ab3b1be8543a2d432ad384ee0a6cf124da885e"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136",
+      "locator": "src:openiti-rajab-shamela21730/v01:p302#q136.f000",
+      "case_ar": "الحيض والنفاس يحرم بهما الوطء في الفرج ولا يحرم ما دونه في المذهب الصحيح وفيه رواية أخرى يمنع الاستمتاع ما بين السرة والركبة.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "971082c9b318671de1d4b2dc327d96203c65078f7079ff0103c52f7f0e48892b",
+          "start": 684,
+          "end": 809,
+          "sha256": "1ffa7bddb138c4cd0e7ba31a3c42e2687e8556f4233d302dc2daefe760fcb7d3"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138",
+      "locator": "src:openiti-rajab-shamela21730/v01:p308#q138.f000",
+      "case_ar": "الزكاة فإذا قلنا تتعلق بالعين على المشهور فإنها لا تسقط بتلف المال ويجب ضمانها.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "def1428b975ed6d105995026b94b73177fcba9014ed275131f1c35e82cbc21fe",
+          "start": 236,
+          "end": 315,
+          "sha256": "745a104f43212c7ab0f105a87a666ac4cdd9a2bc41816b3b4134890d7501abcc"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q139.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q139",
+      "locator": "src:openiti-rajab-shamela21730/v01:p311#q139.f000",
+      "case_ar": "الحد والتعزير فلا يبلغ بتعزير الحر والعبد أدنى حدودهما إلا فيما سببه الوطء فيجوز أن يبلغ بالتعزير عليه في حق الحر مائة جلدة بدون نفي، وقيل لا يبلغ المائة بل ينقص منه سوطا وفي حق العبد خمسين إلا سوطا، ويجوز النقص منه على ما يراه السلطان، ومن الأصحاب من حكى أنه لا يبلغ بالتعزير في معصية حدا مشروعا في جنسها، ويجوز أن يزيد على حد غير جنسها. قال في المغني: ويحتمله كلام أحمد والخرقي وعن أحمد لا يزاد في ",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "0062151184232f41e45b82398f9a064bc4b1a8aa529bc0d0da7defdb71720cb0",
+          "start": 458,
+          "end": 892,
+          "sha256": "4d7931f3275cd2cd1e551c673b1ccd604b96534aa80f05fe3ee25126b6de0082"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140",
+      "locator": "src:openiti-rajab-shamela21730/v01:p311#q140.f000",
+      "case_ar": "إذا قتل مسلم ذميا عمدا ضمنه بدية مسلم.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "96ff3586e1f5a7629c09671c712898f236766c7906abef2f1ceb30671bd5f3dd",
+          "start": 115,
+          "end": 153,
+          "sha256": "a1c13ac29edc285387bda8d40621e18f1d8be2e96fc5f2cde70f85ff69c2e9e7"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141",
+      "locator": "src:openiti-rajab-shamela21730/v01:p312#q141.f000",
+      "case_ar": "لو ترك الساعي زكاة الثمار أمانة بيد رب المال فأتلفها قبل جفافها أو تلفت بتفريطه ضمنها بقدرها يابسا لا رطبا على الصحيح، وعنه يضمنها بمثلها رطبا.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "bf717bf4c2d99615b664d6ee53493ad39b45d4c5fb3a82ea645db65eda24fbca",
+          "start": 223,
+          "end": 366,
+          "sha256": "0246b3a2ca0d987fd5c02797a40ea3a6d09603287d4452e6d147884b0ce34f3c"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142",
+      "locator": "src:openiti-rajab-shamela21730/v01:p312#q142.f000",
+      "case_ar": "لو قلع سنه أو قطع أذنه فأعاده في الحال فثبت والتحم كما كان لم يرح، فهل يحكم بطهارته أم لا نص أحمد على طهارته إذا ثبت والتحم، وعلى نجاسته إذا لم يثبت، وحكى القاضي المسألة على روايتين، وفرق ابن أبي موسى بين أن يثبت ويلتحم فيحكم بطهارته لعود الحياة إليه، وهذا بخلاف ما إذا لم يثبت وهذا حسن. فإن كان بجناية جان فالمنصوص عن أحمد أنه لا قود فيه ولا دية سوى حكومة نقصه. واختاره أبو بكر، وبناه كثير من الأصحا",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "b9dbbc223f36a721166294e17ad027cccce77e5483555e4b0e124e4048f1b4c0",
+          "start": 116,
+          "end": 748,
+          "sha256": "933b842763753831daf843eafebdac9fcd141803b5a40b954bf8b7e963c6d210"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146",
+      "locator": "src:openiti-rajab-shamela21730/v01:p319#q146.f000",
+      "case_ar": "أن في إباحتها في مدة العدة روايتين، وعلى رواية التحريم فهل يجب لها المهر بالوطء؟ على وجهين.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "9d7375333a18b146fa81ed2b3245557bd1556c6cf77582b2989bfd9bd90ff6a5",
+          "start": 44,
+          "end": 135,
+          "sha256": "922cf3aa07ff92633b786c5f6a4ba6bdb3d0a7f66f65f12b1092c6254ee1598b"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147",
+      "locator": "src:openiti-rajab-shamela21730/v01:p320#q147.f000",
+      "case_ar": "الميراث والدية،",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "29c4ace91aa61285167e392bae4e1e62ad1739b020687380015de73ae473e25b",
+          "start": 55,
+          "end": 70,
+          "sha256": "402402e6f633594eeef0a216d921e86383fe85ab8bc62e7d687d730864739ab8"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f000_2",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147",
+      "locator": "src:openiti-rajab-shamela21730/v01:p320#q147.f000_2",
+      "case_ar": "العقيقة عن الغلام شاتان وعن الجارية شاة.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "29c4ace91aa61285167e392bae4e1e62ad1739b020687380015de73ae473e25b",
+          "start": 78,
+          "end": 118,
+          "sha256": "6d377be48cc31127c84766cc8f1550d3b21fad77595807de78fc73326ed5a1af"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150",
+      "locator": "src:openiti-rajab-shamela21730/v01:p321#q150.f000",
+      "case_ar": "مسائل العينة.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "f09dc154318703d0352cdb279d1fb478486df922d0f3ccfdb46b90a41d68bd3b",
+          "start": 95,
+          "end": 108,
+          "sha256": "5460aa8f804f7678fbf3ec0e6281950069730417763a664b40444aee13535fbc"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151",
+      "locator": "src:openiti-rajab-shamela21730/v01:p322#q151.f000",
+      "case_ar": "كنايات الطلاق في حالة الغضب والخصومة لا يقبل دعوى إرادة غير الطلاق بها.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "456ab3e7de5013a21e1f9a2fbcb37bcbd10e2d696ff800b811b206a937ea6e10",
+          "start": 133,
+          "end": 204,
+          "sha256": "8222268b70b9fa22102d0b81e1bc9be5e544986819053c12d157919cc062eb6d"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154",
+      "locator": "src:openiti-rajab-shamela21730/v01:p327#q154.f000",
+      "case_ar": "لو أفسد مفسد نكاح امرأة قبل الدخول بها برضاع أو غيره فإنه يجب عليه نصف المهر حيث يلزم الزوج نصف المهر كما إذا كانت الفرقة من الأجنبي وحده وله مأخذان: أحدهما: أن خروج البضع من الزوج متقوم فيتقوم قبل الدخول بنصف المهر المسمى وفيه وجه بنصف مهر المثل. والثاني: أنه ليس بمتقوم لكن المفسد قرر هذا النصف على الزوج إذا كان بصدد أن يسقط عنه بانفساخ النكاح بسبب من جهتها. والثالث: أن المهر كله يسقط بالفرقة لكن",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "20b5f872da2e00fb2c293d3ec15a3d702d89239a1d7414337de2179493bba241",
+          "start": 361,
+          "end": 2841,
+          "sha256": "9b172ba61c442e93aff626f6bf92f738d5b7c13a714e94d05f1e7120099f538f"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q157.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q157",
+      "locator": "src:openiti-rajab-shamela21730/v01:p334#q157.f000",
+      "case_ar": "الرجعية ms438 إذا أعتقت أو توفي زوجها انتقلت إلى عدة حرة أو عدة وفاة.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "8bec2d72ec36a52bd0a662859edff2927a6a6889199402a86cff5210ce20dfee",
+          "start": 299,
+          "end": 368,
+          "sha256": "f7ab95878883c6474e894826f9816aa3d41b302a27a8df88759dfe0c97e54219"
+        }
+      }
+    },
+    {
+      "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000",
+      "work": "ibn_rajab.taqrir_qawaid",
+      "witness": "openiti-rajab-shamela21730",
+      "record_type": "far",
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159",
+      "locator": "src:openiti-rajab-shamela21730/v01:p338#q159.f000",
+      "case_ar": "شهادة عدلين بشغل ذمة المدعى عليه.",
+      "status": "candidate",
+      "extraction": {
+        "pipeline": "usul_corpus/opening-furu-1",
+        "method": "headed+opening_minha",
+        "source_span": {
+          "basis": "headed_unit_body/v1",
+          "body_sha256": "4beb439af6bf10c72922692c1d306733e44432a984e51d4eaa27204b3aed2fb4",
+          "start": 434,
+          "end": 468,
+          "sha256": "36c39e16de630b61b5aa5dc6bf05df4926556d8129198a7339b76fb623cb4584"
+        }
+      }
+    }
+  ],
+  "review": "Source segmentation candidates only. No encoder facts, positions, rulings, or review approvals are inferred. Review.tla still governs promotion; unannotated recovered records remain in the coverage denominator.",
+  "boundary": "This is a conservative structural profile, not an exhaustive semantic case census. Bare pronouns, generic comparisons and ruling alternatives are not example introducers. Other unlabeled cases still require source review."
+}
