@@ -504,3 +504,69 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Lean:** `Usul.Refinements.amrPerItem`, `Usul.Refinements.amrByTakhsis`, `Usul.Refinements.mixed_readings_agree`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="makeup_after_failure"></a>
+
+## Make-up description after a binding undertaking
+
+**Terms:** [al-wājib](../glossary.md#wajib), [al-fāsid](../glossary.md#fasid), [al-rukhṣa](../glossary.md#rukhsa)  
+**Closes:** `rule:makeup_after_failure`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031`: Q31 requires make-up in the description of the binding undertaking when it is corrupted.
+  > من شرع في عبادة تلزم بالشروع ثم فسدت فعليه قضاؤها على صفة التي أفسدها سواء كانت واجبة في الذمة على تلك الصفة أو دونها ويتخرج على ذلك مسائل: (منها) إذا صلى المسافر خلف مقيم وفسدت صلاته فإنه يجب عليه قضاؤها تامة (ومنها) إذا أحرم من بلده ثم أفسد نسكه بجماع وجب قضاؤه والإحرام من موضع إحرامه أولا نص عليه أحمد بخلاف ما إذا أحصر في نسكه ذاك ثم قضاه فإنه لا يلزمه الإحرام إلا من الميقات نص عليه أيضا لأن ال
+
+**Conditions**
+
+1. a binding undertaking within the source scope
+2. distinguish corruption from prevention, and fault from no-fault loss
+
+**Texts**
+
+- `src:openiti-rajab-shamela21730/v01:p040`: The qāʿida's scope: corruption after a binding start.
+  > من شرع في عبادة تلزم بالشروع ثم فسدت فعليه قضاؤها على صفة التي أفسدها سواء كانت واجبة في الذمة على تلك الصفة أو دونها
+- `src:openiti-rajab-shamela21730/v01:p040`: The paragraph itself supplies corruption and prevention as distinct inputs.
+  > إذا أحرم من بلده ثم أفسد نسكه بجماع وجب قضاؤه والإحرام من موضع إحرامه أولا نص عليه أحمد بخلاف ما إذا أحصر في نسكه ذاك ثم قضاه فإنه لا يلزمه الإحرام إلا من الميقات نص عليه أيضا لأن المحصر فيه لم يلزمه إتمامه
+- `src:openiti-rajab-shamela21730/v01:p040`: Fault branch and two no-fault positions.
+  > فإن كان تلفه بتفريطه فعليه إبداله بمثله وإن كان بغير تفريط ففيه وجهان
+- `src:openiti-rajab-shamela21730/v01:p040`: Selected no-fault position; not a claimed scholarly adoption.
+  > وجزم صاحب المغني بأنه لا يلزمه أكثر مما كان في ذمته
+
+**Rationale.** Candidate reading of Q31 and its explicit contrasts. The no-fault branch follows the author of al-Mughni, with the other wajh kept in the suite; no scholarly decision is inferred. The substitute rules are contextual neighbors, not an asserted equivalence.
+
+**Lean:** `Usul.Refinements.makeupAfterFailure`, `Usul.Refinements.prevention_not_corruption`, `Usul.Refinements.fault_changes_replacement`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="defective_compensation"></a>
+
+## Named versus equivalent compensation in defective contracts
+
+**Terms:** [al-ḍamān](../glossary.md#daman), [al-fāsid](../glossary.md#fasid), [al-itlāf](../glossary.md#itlaf)  
+**Closes:** `rule:defective_compensation`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047`: Q47 distinguishes liability class from the amount/basis of compensation; each of its four emitted records tests the latter.
+  > في ضمان المقبوض بالعقد الفاسد] ، كل عقد يجب الضمان في صحيحه يجب الضمان في فاسده وكل عقد لا يجب الضمان في صحيحه لا يجب الضمان في فاسده. ونعني بذلك أن العقد الصحيح إذا كان موجبا للضمان فالفاسد كذلك وإذا لم يكن الصحيح موجبا للضمان فالفاسد كذلك، فالبيع والإجارة والنكاح موجبة للضمان مع الصحة فكذلك مع الفساد. والأمانات كالمضاربة والشركة والوكالة الوديعة وعقود التبرعات كالهبة لا يجب الضمان فيها مع الصحة.
+
+**Conditions**
+
+1. the source identifies whether the selected position treats compensation as contract or loss liability
+2. lawful consideration; the void/prohibited-consideration branch is outside this encoding
+
+**Texts**
+
+- `src:openiti-rajab-shamela21730/v01:p068`: The source distinction used as the encoder fact.
+  > ضمان المهر في النكاح الفاسد ضمان عقد كضمانه في الصحيح وضمان البيع الفاسد ضمان تلف بخلاف البيع الصحيح
+- `src:openiti-rajab-shamela21730/v01:p067`: Known madhhab amount basis.
+  > المبيع والمعروف في المذهب ضمانه بالقيمة لا بالثمن المسمى
+- `src:openiti-rajab-shamela21730/v01:p068`: The common outcome; no claim to resolve competing explanations.
+  > الكتابة الفاسدة تضمن بالمسمى فإذا أدى ما سمى فيها حصل العتق ولم يلزمه ضمان قيمته ذكره أبو بكر وهو ظاهر كلام أحمد، واتفق الأصحاب على ذلك
+
+**Rationale.** The source explicitly contrasts contract compensation in the selected nikah position with loss compensation for defective sale. The suite records the competing named/value positions. Muamalat.priceDue is reused after fixing that source fact, not as evidence for the fact itself. All readings and attributions await human review.
+
+**Lean:** `Usul.Refinements.defectiveCompensationBasis`, `Usul.Refinements.defectiveCompensation`, `Usul.Refinements.defective_compensation_by_basis`, `Usul.Refinements.defective_loss_ignores_named`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)

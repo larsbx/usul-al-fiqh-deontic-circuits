@@ -5,6 +5,7 @@
     python -m usul_corpus validate
     python -m usul_corpus signature   # regenerate the Lean Σ-coverage check
     python -m usul_corpus takhrij     # regenerate the takhrīj guards and report
+    python -m usul_corpus m8-worklist [--check]  # reconcile committed M8 scope
     python -m usul_corpus docs        # render the dossier and glossary pages from corpus/dossier
     python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
 """
@@ -250,6 +251,29 @@ def cmd_takhrij(_: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_m8_worklist(args: argparse.Namespace) -> int:
+    from .m8_worklist import OUTPUT, render, scoped_documents
+    path = CORPUS / OUTPUT
+    try:
+        text = render(CORPUS)
+        documents = scoped_documents(ROOT, json.loads(text))
+    except ValueError as e:
+        print(f"m8-worklist: {e}", file=sys.stderr)
+        return 1
+    if args.check:
+        if (not path.exists() or path.read_text(encoding="utf-8") != text
+                or any(p.read_text(encoding="utf-8") != content for p, content in documents.items())):
+            print("M8 worklist stale: run python -m usul_corpus m8-worklist", file=sys.stderr)
+            return 1
+    else:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text, encoding="utf-8")
+        for p, content in documents.items():
+            p.write_text(content, encoding="utf-8")
+    print(json.dumps(json.loads(text)["summary"]))
+    return 0
+
+
 def docs_pages() -> dict[Path, str]:
     """The generated documentation pages, keyed by path: the dossier and the glossary."""
     from .dossier import render_dossier, render_glossary
@@ -307,6 +331,9 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("validate").set_defaults(run=cmd_validate)
     sub.add_parser("signature").set_defaults(run=cmd_signature)
     sub.add_parser("takhrij").set_defaults(run=cmd_takhrij)
+    m = sub.add_parser("m8-worklist")
+    m.add_argument("--check", action="store_true")
+    m.set_defaults(run=cmd_m8_worklist)
     sub.add_parser("docs").set_defaults(run=cmd_docs)
     o = sub.add_parser("ocr")
     o.add_argument("--work")

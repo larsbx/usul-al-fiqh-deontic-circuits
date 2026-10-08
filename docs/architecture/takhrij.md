@@ -169,7 +169,15 @@ After this round: 214 cases, **coverage 0.977**, **madhhab coverage 0.648**, **0
 
 ## M8: scale-up, first tranche
 
-**The size of the remaining work.** The segmented Ibn Rajab records held 1,056 furūʿ, and 1,129 now that opening examples are segmented (see below). The 187 annotated in M4 cover 14 qawāʿid, so **869 remain, in 146 qawāʿid** (earlier estimates of ~1,900 were wrong). None of those qawāʿid has a formal reading yet, and a farʿ can only test a reading. So each tranche first formalises its qawāʿid from their own statements in `Usul.Refinements`, then annotates every farʿ of each qāʿida against that reading (`corpus/takhrij/rajab_m8_furu.json`).
+**Scope reconciliation.** Counts come from committed record IDs minus all existing annotations, not historical estimates. M4 now annotates 196 Ibn Rajab records under 14 qawāʿid, including nine `.f000` additions. PR #29's 1,129 segmented records minus those 196 and tranche 1's 26 left 907 records in 122 qawāʿid with cases. The old “869 in 146” mixed pre-opening counts with all unannotated qawāʿid, including those with no segmented case. PR #30 then added seven segmented records and annotated tranche 2's 25: 1,136 − 196 − 26 − 25 = 889, in 118 qawāʿid. Tranche 3 below annotates eight existing records in two more qawāʿid. Ibn al-Laḥḥām and the global report's totals are separate scopes.
+
+<!-- BEGIN GENERATED M8 SCOPE -->
+**Current M8 inventory (generated).** 1,136 segmented Ibn Rajab furūʿ records = 255 annotated + **881 awaiting annotation**. Of 160 qawāʿid, 140 have segmented records: 24 are fully annotated and **116 await annotation**. The other **20 need source segmentation review**; zero emitted records does not establish zero examples in the text.
+
+The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
+<!-- END GENERATED M8 SCOPE -->
+
+Each selected qāʿida needs an explicitly sourced reading connected to a Lean encoder before its furūʿ can test that reading. An unannotated qāʿida is not proof that no related principle exists in the bank. Every emitted record of a selected qāʿida is inventoried, including `.f000`; known extraction gaps remain separate.
 
 **Tranche 1 (qawāʿid 6, 22, 68; 26 furūʿ with the opening examples).** These are the qawāʿid whose principles the bank had just formalised, so the tranche also tests those principles:
 
@@ -180,7 +188,7 @@ After this round: 214 cases, **coverage 0.977**, **madhhab coverage 0.648**, **0
 | 68: doubt in a condition of validity | `validUnderDoubt`: what needs a firm intention is valid only on ghalabat al-ẓann or an aṣl mustaṣḥab; what does not is valid («فالصحيح فيه الصحة») | `firm_by_basis`: the firm basis is bayt 90's `basis` or the presumption |
 
 Results on the tranche:
-- **8 derivable, 14 ikhtilāf (8 on the madhhab side), 4 missing rule or fact, 0 encoding errors.** Coverage is 22/26 = 0.846 and madhhab coverage 16/26 = 0.615, with the three opening examples included. Two of them are derivable; q22.f000 (impure water) turns on the quantity of water and is a missing fact (`fact:water_quantity`). Six ledger entries are opened: the three missing cases, and three minority-side ikhtilāf cases that name what they need (22.f003, 22.f004, 68.f007).
+- **8 derivable, 14 ikhtilāf (8 on the madhhab side), 4 missing rule or fact, 0 encoding errors.** Coverage is 22/26 = 0.846 and madhhab coverage 16/26 = 0.615, with the three opening examples included. Two of them are derivable; q22.f000 (impure water) turns on the quantity of water and is a missing fact (`fact:water_quantity`). Seven ledger entries are now open for this tranche: the four missing cases, and three minority-side ikhtilāf cases that name what they need (22.f003, 22.f004, 68.f007).
 - **What the cases say about the readings:**
   - **q22's khilāf is real.** On mixed oil (f003, and the bequest in f004 that follows it) the manṣūṣ is *partnership*, not consumption. Same-kind fungibles mixed together become a shirka, which consumption-as-absence cannot express. The kernel lands on the minority (al-Mujarrad), and the gap is now in the ledger (`rule:khalt_as_shirka`). On milk in water (f001) and grains of wheat in barley (f006) no madhhab is marked.
   - **q22.f008 is decided by another reading.** The mashhūr makes the mixer of a deposit liable *for transgression*. It is annotated under the trust-loss reading and gives the madhhab's ruling. A new optional `home` field records that its qāʿida is 22, so coverage stays exact without pretending the case was revisited.
@@ -207,6 +215,32 @@ Results on the tranche:
   - **7.f001, tayammum:** Ibn Rajab places it between the two kinds; the riwāya that the prayer is void reads it as necessity, which the reading follows.
   - **64.f003 refines 64–65:** for the usurper who eats food already permitted to him, Ibn Rajab rejects liability («الصواب الجزم بعدم الضمان»), since liability is not established by belief. Hence the reading's second argument; it would otherwise land on Abū al-Khaṭṭāb.
 
+**Tranche 3 (qawāʿid 31 and 47; eight existing records).** This continues after merged PR #30 rather than repeating tranche 2. Both full source sections are available in the locked OpenITI witness; the source replays all 1,296 Ibn Rajab records exactly. No record, identifier, source lock, earlier annotation or accepted conclusion is changed. The exact obligations, page-correct source excerpts, excerpt hashes, related Lean definitions, additional contrast guards and four open human-review questions are in [`rajab_m8_tranche3_plan.json`](../../corpus/worklists/rajab_m8_tranche3_plan.json).
+
+| Qāʿida | Source-backed reading and regression value | Boundary |
+|---|---|---|
+| 31 (f001–f004) | `makeupAfterFailure`: corruption of a binding undertaking retains its begun description; prevention has a different make-up description. Faulty and non-faulty loss are separate inputs. Additional guards check both contrasts within f002 and f003 | The no-fault branch follows the author of al-Mughnī; the other wajh remains recorded. Apparent Aḥmad text in f004 is not assigned a new positive madhhab label. “Baseline” describes a subsequent make-up, not a newly inferred duty to make it up |
+| 47 (f000–f003) | `defectiveCompensationBasis`: the selected sale/lease positions require equivalent compensation; the stated kitāba outcome and selected nikāḥ position use the named consideration. `defectiveCompensation` reuses `Muamalat.priceDue` only after the source fixes the basis; distinct test amounts catch incorrect price leakage | Both amount positions and their attributions remain explicit. The prohibited-consideration/void branch of kitāba is excluded. Agreement on an outcome does not resolve the contract-versus-condition explanations |
+
+Selection used source availability, bounded size, case diversity and regression value. Q31 supplies pilgrimage, prayer, offerings and retreat cases; q47 supplies four transaction contexts and an opening record. Larger or less clean tranches such as q3 (several examples inside a record) and q12 (variant preferences) remain in the exact worklist. The neighboring substitute definitions are context, not an asserted equivalence with q31.
+
+Results: **3 derivable, 5 ikhtilāf (3 with a source-marked madhhab label), no new encoding errors or capability gaps**. Record-level coverage is 8/8; madhhab coverage is 6/8 = 0.750. These are candidate annotations. Lean checks their stated encoding, not whether an independent scholar accepts that encoding, attribution or preference. All four interpretation questions remain open; no register decision is adopted. Across all suites there are 282 annotations, a coverage denominator of 281 after the one segmentation error, coverage 271/281 = 0.964 and madhhab coverage 178/281 = 0.633. The 13 previously open gaps and 29 revisits remain unchanged.
+
+Replay after caching the registered full witness and checking its lock hash:
+
+```sh
+cd pipeline
+python -m usul_corpus takhrij
+python -m usul_corpus m8-worklist
+python -m usul_corpus docs
+python -m usul_corpus signature
+python -m pytest -q
+cd ..
+make validate generated lean
+```
+
+`m8-worklist --check` checks both the JSON inventory and the generated scope paragraphs in this note and the roadmap. The suite's source check verifies the full witness hash, exact record replay and all selected excerpt/page receipts when that witness is cached. Tests for other uncached witnesses report skips; they are not claimed as full-source replays.
+
 **Coverage trend:**
 
 | Stage | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
@@ -219,5 +253,7 @@ Results on the tranche:
 | All, after the opening-example fix | 249 | 0.964 | 0.653 | 0 | 12 |
 | M8 tranche 2 alone | 25 | 0.960 | 0.400 | 0 | 1 |
 | All, after tranche 2 | 274 | 0.963 | 0.630 | 0 | 13 |
+| M8 tranche 3 alone | 8 | 1.000 | 0.750 | 0 | 0 |
+| All, after tranche 3 | 282 | 0.964 | 0.633 | 0 | 13 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.

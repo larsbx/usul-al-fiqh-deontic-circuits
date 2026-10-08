@@ -105,6 +105,22 @@ import Usul
 #guard (Usul.Refinements.countsAsMet false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f007 (genuine_ikhtilaf)
 #guard (Usul.Refinements.countsAsMet false false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f001 (derivable)
+#guard (Usul.Refinements.makeupAfterFailure .corruption) == .asBegun
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f002 (derivable)
+#guard (Usul.Refinements.makeupAfterFailure .corruption) == .asBegun
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f003 (genuine_ikhtilaf)
+#guard (Usul.Refinements.makeupAfterFailure .lossWithoutFault) == .baseline
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004 (genuine_ikhtilaf)
+#guard (Usul.Refinements.makeupAfterFailure .corruption) == .asBegun
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f000 (genuine_ikhtilaf)
+#guard (Usul.Refinements.defectiveCompensationBasis false) == .equivalent
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f001 (genuine_ikhtilaf)
+#guard (Usul.Refinements.defectiveCompensationBasis false) == .equivalent
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f002 (derivable)
+#guard (Usul.Refinements.defectiveCompensationBasis true) == .agreed
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f003 (genuine_ikhtilaf)
+#guard (Usul.Refinements.defectiveCompensationBasis true) == .agreed
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001 (derivable)
 #guard (Usul.Refinements.zahirPrevails .zann .qat true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002 (derivable)

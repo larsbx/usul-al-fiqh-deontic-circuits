@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "base_commit": "86f457b9f283ba63444c49aef4c7bdd6165df027",
+  "source": {
+    "witness": "openiti-rajab-shamela21730",
+    "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0795IbnRajabHanbali/0795IbnRajabHanbali.Qawacid/0795IbnRajabHanbali.Qawacid.Shamela0021730-ara1.completed",
+    "bytes": 1660710,
+    "sha256": "f077fdf1ba4ec9cfecafed8b5e0023e850f57084e17463847cc238e3d1128e68"
+  },
+  "selection": [
+    {
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031",
+      "reason": "Four records, a complete locked source, and contrasts between corruption, prevention, faulty loss and non-faulty loss. Exposes an attempted overgeneralization from the chapter heading. No existing encoder directly gives the make-up description.",
+      "existing_lean": [
+        "Usul.Refinements.mustSwitch",
+        "Usul.Sadi.useSubstitute"
+      ],
+      "relationship": "Context only: the new reading does not claim a reduction to the substitute rules.",
+      "reading": [
+        "Usul.Refinements.makeupAfterFailure",
+        "Usul.Refinements.prevention_not_corruption",
+        "Usul.Refinements.fault_changes_replacement"
+      ]
+    },
+    {
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047",
+      "reason": "Four records including f000; complete locked source; sale, lease, kitabah and nikah distinguish named and equivalent compensation. Regression value: a named price must not leak into loss compensation.",
+      "existing_lean": [
+        "Usul.Muamalat.priceDue",
+        "Usul.Muamalat.compensation"
+      ],
+      "relationship": "The amount selector is reused only after an explicitly sourced compensation basis; it supplies no fact about which basis applies.",
+      "reading": [
+        "Usul.Refinements.defectiveCompensationBasis",
+        "Usul.Refinements.defectiveCompensation",
+        "Usul.Refinements.defective_compensation_by_basis",
+        "Usul.Refinements.defective_loss_ignores_named"
+      ]
+    }
+  ],
+  "review_questions": [
+    {
+      "id": "M8-T3-01",
+      "status": "open",
+      "scope": [
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f003"
+      ],
+      "question": "Confirm the choice of the al-Mughni no-fault branch and the mapping of loss versus corruption. The source reports two wujuh; this implementation records both and adopts neither."
+    },
+    {
+      "id": "M8-T3-02",
+      "status": "open",
+      "scope": [
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004"
+      ],
+      "question": "Confirm the corresponding-days reading and whether the apparent Ahmad text warrants a madhhab label. matches_madhhab remains false, meaning no positive label is asserted."
+    },
+    {
+      "id": "M8-T3-03",
+      "status": "open",
+      "scope": [
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f002"
+      ],
+      "question": "Review contract versus conditional-manumission explanations and the lawful-consideration restriction. The encoding tests only the common named-amount outcome and excludes the void/prohibited-consideration branch."
+    },
+    {
+      "id": "M8-T3-04",
+      "status": "open",
+      "scope": [
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f000",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f001",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f003"
+      ],
+      "question": "Confirm attribution and the contract-liability/loss-liability fact for each selected position. Source madhhab labels are candidate annotations, not independent acceptance."
+    }
+  ],
+  "obligations": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f001",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p040#q031.f001",
+      "case_ar_sha256": "b7dd8b56a5c738a242a83c261cfdf0a32becebdb451ec1daf767a89959225800",
+      "encoder": "makeup_after_failure",
+      "facts": {
+        "failure": "corruption"
+      },
+      "expected": "asBegun",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p040",
+          "excerpt_ar": "إذا صلى المسافر خلف مقيم وفسدت صلاته فإنه يجب عليه قضاؤها تامة",
+          "note": "Full make-up after corruption."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f002",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p040#q031.f002",
+      "case_ar_sha256": "0d9f025404807f91556d439b55b53afe75b4e7f9f68280045c9a43e6c0a87269",
+      "encoder": "makeup_after_failure",
+      "facts": {
+        "failure": "corruption"
+      },
+      "expected": "asBegun",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p040",
+          "excerpt_ar": "إذا أحرم من بلده ثم أفسد نسكه بجماع وجب قضاؤه والإحرام من موضع إحرامه أولا نص عليه أحمد بخلاف ما إذا أحصر في نسكه ذاك ثم قضاه فإنه لا يلزمه الإحرام إلا من الميقات نص عليه أيضا لأن المحصر فيه لم يلزمه إتمامه",
+          "note": "The paragraph itself supplies corruption and prevention as distinct inputs."
+        }
+      ],
+      "additional_guards": [
+        "#guard makeupAfterFailure .prevention == .baseline"
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f003",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p040#q031.f003",
+      "case_ar_sha256": "3cc1ce1b9ca54f2bdd9d0353d10e967dd293ac63f01eba32f05247f693285cbb",
+      "encoder": "makeup_after_failure",
+      "facts": {
+        "failure": "lossWithoutFault"
+      },
+      "expected": "baseline",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p040",
+          "excerpt_ar": "فإن كان تلفه بتفريطه فعليه إبداله بمثله وإن كان بغير تفريط ففيه وجهان",
+          "note": "Fault branch and two no-fault positions."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p040",
+          "excerpt_ar": "وجزم صاحب المغني بأنه لا يلزمه أكثر مما كان في ذمته",
+          "note": "Selected no-fault position; not a claimed scholarly adoption."
+        }
+      ],
+      "additional_guards": [
+        "#guard makeupAfterFailure .lossWithFault == .asBegun"
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p040#q031.f004",
+      "case_ar_sha256": "cfc717b1eee697e298008a624ea3bc8a8ea12e5d829e5f1b9b7766b910010379",
+      "encoder": "makeup_after_failure",
+      "facts": {
+        "failure": "corruption"
+      },
+      "expected": "asBegun",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p040",
+          "excerpt_ar": "لو نذر اعتكافا في شهر رمضان ثم أفسده فهل يلزمه قضاؤه في مثل تلك الأيام؟ على وجهين",
+          "note": "The source explicitly reports two positions."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p040",
+          "excerpt_ar": "وظاهر كلام أحمد لزومه وهو اختيار ابن أبي موسى",
+          "note": "Selected position, without a new madhhab acceptance claim."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f000",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p067#q047.f000",
+      "case_ar_sha256": "d949dfcbbe7465e202b014aaed59992b749b9db4271a1c49e8a26c030b9a67d7",
+      "encoder": "defective_compensation",
+      "facts": {
+        "contract_liability": false
+      },
+      "expected": "equivalent",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p067",
+          "excerpt_ar": "المبيع والمعروف في المذهب ضمانه بالقيمة لا بالثمن المسمى",
+          "note": "Known madhhab amount basis."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p068",
+          "excerpt_ar": "أن المقبوض بالبيع الفاسد يضمن بالمسمى وهو اختيار الشيخ تقي الدين",
+          "note": "Named-consideration alternative, beyond the record cap."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f001",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p067#q047.f001",
+      "case_ar_sha256": "26c273de88a827076c1c96747f038ad99a8957ae574f96a6b3593c24bb3fa1f9",
+      "encoder": "defective_compensation",
+      "facts": {
+        "contract_liability": false
+      },
+      "expected": "equivalent",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p068",
+          "excerpt_ar": "الإجارة الفاسدة والمعروف من المذهب ضمانها بأجرة المثل أيضا ويتخرج على قول أبي بكر أنها تضمن بالأجرة المسماة",
+          "note": "Both lease positions and their attribution."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f002",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p067#q047.f002",
+      "case_ar_sha256": "46af6ce766801c1bb462f0f3c6035494472d6c02719662f59ddb8b106343e9cc",
+      "encoder": "defective_compensation",
+      "facts": {
+        "contract_liability": true
+      },
+      "expected": "agreed",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p068",
+          "excerpt_ar": "الكتابة الفاسدة تضمن بالمسمى فإذا أدى ما سمى فيها حصل العتق ولم يلزمه ضمان قيمته ذكره أبو بكر وهو ظاهر كلام أحمد، واتفق الأصحاب على ذلك",
+          "note": "The common outcome; no claim to resolve competing explanations."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p068",
+          "excerpt_ar": "ولا يقع العتق عنده بأداء المحرم لأن العقد لا ينعقد بعوض محرم بل هو عنده باطل",
+          "note": "Excluded prohibited-consideration branch."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f003",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p067#q047.f003",
+      "case_ar_sha256": "8a4667391df928dce8e6bc3bc14ffc50c3110bd7c10336b3a9f98b56b7fc353d",
+      "encoder": "defective_compensation",
+      "facts": {
+        "contract_liability": true
+      },
+      "expected": "agreed",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p068",
+          "excerpt_ar": "النكاح الفاسد يستقر بالدخول فيه وجوب المهر المسمى في الرواية المشهورة عن أحمد وهي المذهب عند أبي بكر وابن أبي موسى",
+          "note": "Source-identified selected mahr position."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p068",
+          "excerpt_ar": "وحكي عن أحمد رواية أخرى أن الواجب مهر المثل",
+          "note": "The alternative transmission."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p068",
+          "excerpt_ar": "ضمان المهر في النكاح الفاسد ضمان عقد كضمانه في الصحيح وضمان البيع الفاسد ضمان تلف بخلاف البيع الصحيح",
+          "note": "The source distinction used as the encoder fact."
+        }
+      ],
+      "additional_guards": []
+    }
+  ]
+}

@@ -395,6 +395,13 @@ import Usul
 #check @Usul.Refinements.amrPerItem
 #check @Usul.Refinements.amrByTakhsis
 #check @Usul.Refinements.mixed_readings_agree
+#check @Usul.Refinements.makeupAfterFailure
+#check @Usul.Refinements.prevention_not_corruption
+#check @Usul.Refinements.fault_changes_replacement
+#check @Usul.Refinements.defectiveCompensationBasis
+#check @Usul.Refinements.defectiveCompensation
+#check @Usul.Refinements.defective_compensation_by_basis
+#check @Usul.Refinements.defective_loss_ignores_named
 #check @Usul.Hukm.Mode
 #check @Usul.Hukm.mode
 #check @Usul.Hukm.mode_binding_injective
