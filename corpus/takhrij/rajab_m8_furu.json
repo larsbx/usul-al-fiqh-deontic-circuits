@@ -416,6 +416,39 @@
    },
    "expected": true,
    "note": "Ruling that one accused of apostasy who denies it and says the two testimonies is a Muslim: a valid ruling despite the hesitation over its ground."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f000",
+   "encoder": "excused_error",
+   "class": "derivable",
+   "facts": {
+    "others_right": false,
+    "negligent": false
+   },
+   "expected": true,
+   "note": "The maʿḍūb who has someone perform the ḥajj for him, then recovers: it suffices «على المذهب», since he did the duty in its time. (Opening example, segmented as f000.)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f000",
+   "encoder": "istihlak",
+   "class": "derivable",
+   "facts": {
+    "consumed": true
+   },
+   "expected": true,
+   "note": "Water in which impurity is consumed: if the water is much, the impurity's ruling falls «بغير خلاف»; if little, two riwāyas. The reading gives the agreed case; quantity, which decides the little-water riwāyas, is outside it. (Opening example, segmented as f000.)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f000",
+   "encoder": "doubt_in_condition",
+   "class": "derivable",
+   "facts": {
+    "needs_firm_intention": true,
+    "ghalaba": false,
+    "asl_mustashab": false
+   },
+   "expected": false,
+   "note": "Praying while believing oneself in ḥadath, then found pure: not valid, the example of type 1 (firm intention needed; the belief was against validity, with no presumption built on). (Opening example, segmented as f000.)"
   }
  ]
 }

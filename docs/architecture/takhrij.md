@@ -169,9 +169,9 @@ After this round: 214 cases, **coverage 0.977**, **madhhab coverage 0.648**, **0
 
 ## M8: scale-up, first tranche
 
-**The size of the remaining work.** The segmented Ibn Rajab records hold 1,056 furūʿ (not counting the opening examples left inside qāʿida records; see below). The 187 annotated in M4 cover 14 qawāʿid, so **869 remain, in 146 qawāʿid** (earlier estimates of ~1,900 were wrong). None of those qawāʿid has a formal reading yet, and a farʿ can only test a reading. So each tranche first formalises its qawāʿid from their own statements in `Usul.Refinements`, then annotates every farʿ of each qāʿida against that reading (`corpus/takhrij/rajab_m8_furu.json`).
+**The size of the remaining work.** The segmented Ibn Rajab records held 1,056 furūʿ, and 1,129 now that opening examples are segmented (see below). The 187 annotated in M4 cover 14 qawāʿid, so **869 remain, in 146 qawāʿid** (earlier estimates of ~1,900 were wrong). None of those qawāʿid has a formal reading yet, and a farʿ can only test a reading. So each tranche first formalises its qawāʿid from their own statements in `Usul.Refinements`, then annotates every farʿ of each qāʿida against that reading (`corpus/takhrij/rajab_m8_furu.json`).
 
-**Tranche 1 (qawāʿid 6, 22, 68; 23 furūʿ).** These are the qawāʿid whose principles the bank had just formalised, so the tranche also tests those principles:
+**Tranche 1 (qawāʿid 6, 22, 68; 26 furūʿ with the opening examples).** These are the qawāʿid whose principles the bank had just formalised, so the tranche also tests those principles:
 
 | Qāʿida | Reading | Link to the bank |
 |---|---|---|
@@ -180,14 +180,14 @@ After this round: 214 cases, **coverage 0.977**, **madhhab coverage 0.648**, **0
 | 68: doubt in a condition of validity | `validUnderDoubt`: what needs a firm intention is valid only on ghalabat al-ẓann or an aṣl mustaṣḥab; what does not is valid («فالصحيح فيه الصحة») | `firm_by_basis`: the firm basis is bayt 90's `basis` or the presumption |
 
 Results on the tranche:
-- **6 derivable, 14 ikhtilāf (8 on the madhhab side), 3 missing rule or fact, 0 encoding errors.** Coverage is 20/23 = 0.870 and madhhab coverage 14/23 = 0.609. Six ledger entries are opened: the three missing cases, and three minority-side ikhtilāf cases that name what they need (22.f003, 22.f004, 68.f007).
+- **9 derivable, 14 ikhtilāf (8 on the madhhab side), 3 missing rule or fact, 0 encoding errors.** Coverage is 23/26 = 0.885 and madhhab coverage 17/26 = 0.654, with the three opening examples (all derivable) included. Six ledger entries are opened: the three missing cases, and three minority-side ikhtilāf cases that name what they need (22.f003, 22.f004, 68.f007).
 - **What the cases say about the readings:**
   - **q22's khilāf is real.** On mixed oil (f003, and the bequest in f004 that follows it) the manṣūṣ is *partnership*, not consumption. Same-kind fungibles mixed together become a shirka, which consumption-as-absence cannot express. The kernel lands on the minority (al-Mujarrad), and the gap is now in the ledger (`rule:khalt_as_shirka`). On milk in water (f001) and grains of wheat in barley (f006) no madhhab is marked.
   - **q22.f008 is decided by another reading.** The mashhūr makes the mixer of a deposit liable *for transgression*. It is annotated under the trust-loss reading and gives the madhhab's ruling. A new optional `home` field records that its qāʿida is 22, so coverage stays exact without pretending the case was revisited.
   - **q68 types 1 and 2 track the madhhab** on the doubtful vessel, the zakāt intention, the night of doubt and the deposited dinars. The exception is f007: the stronger view (al-Qāḍī, Ibn ʿAqīl) rests on the bar on conditional sale, a separate principle (`rule:taliq_al_bay`).
   - **New gaps:** whether a concession needs certainty of its permission (68.f001, `fact:rukhsa_needs_certainty`); dirhams mixed with usurped ones, decided by proportion (22.f007, `rule:mixed_haram_by_proportion`); and a judge ruling against his own ijtihād (68.f009).
-- **Segmentation finding, opening examples:** a qāʿida's first example, introduced by a bare «منها» before the first «(ومنها)» paragraph, stays inside the qāʿida record and is never a `far` record. Tranche 1 therefore did not test three source cases: the maʿḍūb's ḥajj (q6), the impure water (q22) and the prayer while believing oneself impure (q68). The coverage check counts segmented furūʿ only, so it cannot see this. The problem is systematic. At least 78 of the 160 qāʿida records carry an inline opening example, and that is a lower bound because excerpts are capped at 400 characters. Eleven of the 14 qawāʿid annotated in M4 are among them. Every coverage figure here is therefore coverage *of segmented furūʿ*. The fix is for the segmenter to emit the opening example as `.f000`, which keeps every existing farʿ id stable, and then to annotate those cases. It is the next change, ahead of tranche 2.
-- **Segmentation finding:** qawāʿid 14 and 66 have no segmented furūʿ, because their examples are written inline («إحداها», «مثل») rather than as «ومنها» paragraphs. They need a segmenter fix before they can be annotated.
+- **Segmentation finding, opening examples (found on review, now fixed):** a qāʿida's first example often comes inline before the first «(ومنها)» paragraph, after «صور:» or «مسائل:» («منها», «(ومنها)», «(إحداها)»), or in a paragraph opening «ومن أمثلة ذلك». It used to stay inside the qāʿida record. The segmenter now emits it as `.f000`, so every existing farʿ id is unchanged; the rebuilt corpus differs from the old one only by 74 new records (73 Ibn Rajab, 1 Ibn al-Laḥḥām) and their `furu_count`. Twelve annotated qawāʿid gained one, and all twelve are annotated: q6, 22 and 68 in this tranche, and q8, 16, 26, 45, 63, 75, 76, 140 and 159 from M4. Known rough edges: q9's f000 holds two examples joined by an inline «(ومنها)»; q63's and q147's f000 begin with a fragment from before the marker; for q90 and q150, f000 is the heading of a sub-list.
+- **Segmentation finding, other layouts:** qāʿida 14 enumerates «(إحداها)», «(الصورة الثانية)»…: its first case is now `.f000`, but the later ones are still unsegmented. Qāʿida 66 is written as two types with «مثل» examples and has none. Twenty-one qawāʿid in all have no segmented farʿ. Covering ordinal and «فمن ذلك» paragraphs would give them ids after the existing ones, which is the next segmenter step.
 
 **Coverage trend:**
 
@@ -196,6 +196,8 @@ Results on the tranche:
 | M4 first tranche | 204 | 0.873 | 0.534 | 7 | — |
 | M4 rounds 1–4 (the bank applied to itself) | 214 | 0.977 | 0.648 | 0 | 5 |
 | M8 tranche 1 alone | 23 | 0.870 | 0.609 | 0 | 6 |
-| All, after M8 tranche 1 | 237 | 0.966 | 0.644 | 0 | 11 |
+| M4 with its 9 opening examples | 223 | 0.977 | 0.658 | 0 | 5 |
+| M8 tranche 1 with its 3 opening examples | 26 | 0.885 | 0.654 | 0 | 6 |
+| All, after the opening-example fix | 249 | 0.968 | 0.657 | 0 | 11 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.

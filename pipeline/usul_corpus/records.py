@@ -25,6 +25,8 @@ def qaida_records(work: dict, witness: str, method: str, tag: str, u: Unit) -> l
     """A qāʿida record followed by one candidate test record per farʿ (M4 seed)."""
     qid = f"{work['id']}.{witness.replace('-', '_')}.{tag}"
     cap = EXCERPT_LEN[work["rights"]]
+    cases = ([(0, u.opening, "opening_example")] if u.opening else []) + [
+        (k, case, "furu_minha") for k, case in enumerate(u.furu, 1)]
     furu = [
         {
             "id": f"{qid}.f{k:03d}",
@@ -35,9 +37,9 @@ def qaida_records(work: dict, witness: str, method: str, tag: str, u: Unit) -> l
             "locator": _loc(witness, u.page, f"{tag}.f{k:03d}"),
             "case_ar": case[:cap],
             "status": "candidate",
-            "extraction": {"pipeline": PIPELINE, "method": f"{method}+furu_minha"},
+            "extraction": {"pipeline": PIPELINE, "method": f"{method}+{how}"},
         }
-        for k, case in enumerate(u.furu, 1)
+        for k, case, how in cases
     ]
     return [_qaida(work, witness, method, qid, tag, u)] + furu
 
@@ -53,7 +55,7 @@ def _qaida(work: dict, witness: str, method: str, qid: str, tag: str, u: Unit) -
         "heading_ar": u.heading,
         "excerpt_ar": u.statement[: EXCERPT_LEN[work["rights"]]],
         "kind": "unclassified",
-        "furu_count": len(u.furu),
+        "furu_count": len(u.furu) + bool(u.opening),
         "ocr_corrected": u.ocr_corrected,
         "status": "candidate",
         "extraction": {"pipeline": PIPELINE, "method": method},

@@ -12,6 +12,9 @@ from .arabic import normalize, parse_ordinal, parse_ordinal_span
 from .openiti import _PAGE, Page, Section, clean_md_line
 
 _FARC = re.compile(r"^\(?و?منها\)?\s*[:.]?\s*")
+# The first example, given inline after «صور:» / «مسائل:» («منها», «(ومنها)», «(إحداها)»),
+# or as a paragraph opening «ومن أمثلة ذلك» / «فمن ذلك», before any «(و)منها» paragraph.
+_OPENING = re.compile(r":\s*\(?(?:و?منها|إحداها)\)?\s*[:.]?\s*(?=\S)|^\(?(?:ومن أمثلة ذلك|فمن ذلك)\)?\s*[:.]?\s*(?=\S)")
 _NUM = re.compile(r"^\s*(\d{1,3})\b")
 _TAGS = re.compile(r"<[^>]+>")
 _STATEMENT_LEN = 400
@@ -26,6 +29,7 @@ class Unit:
     furu: tuple[str, ...]
     ocr_corrected: bool
     covers: tuple[int, ...] = ()  # rule numbers under a joint heading, e.g. (22, 23)
+    opening: str | None = None  # the first example, inline before the «(و)منها» paragraphs
 
     @property
     def numbers(self) -> tuple[int, ...]:
@@ -62,6 +66,18 @@ def _furu(text: str) -> tuple[str, ...]:
     )
 
 
+def _opening(text: str) -> str | None:
+    """The opening example: in the paragraphs before the first farʿ paragraph, the text after
+    the first inline marker. It becomes farʿ 0, so the paragraph furūʿ keep their numbers."""
+    for p in text.split("\n"):
+        if _FARC.match(normalize(p)):
+            return None
+        m = _OPENING.search(p)
+        if m and p[m.end():].strip():
+            return _statement(p[m.end():])
+    return None
+
+
 def segment_headed(sections: tuple[Section, ...], marker: str) -> tuple[Unit, ...]:
     """Units start at level-1 headers containing ``marker``; deeper sections fold in."""
     key = normalize(marker)
@@ -76,7 +92,7 @@ def segment_headed(sections: tuple[Section, ...], marker: str) -> tuple[Unit, ..
         if number is None:  # number printed on the first body line (Shamela layout)
             number, ocr = _number(_TAGS.sub("", head.text))
             text = text.split("\n", 1)[1] if "\n" in text else text
-        return Unit(number, head.title, _statement(text), head.page, _furu(text), ocr)
+        return Unit(number, head.title, _statement(text), head.page, _furu(text), ocr, opening=_opening(text))
 
     return tuple(unit(i, j) for i, j in bounds)
 
