@@ -70,3 +70,9 @@ section_claim(w_claim_unobserved, agent,
 section_claim(w_claim_no_context, agent,
     deontic(raja, allah_rahmah, o, unconditional, quranic('39:53')),
     fixture(no_context)).
+
+% Membership of `stranger` is unknown: the claim is undetermined, not obstructed.
+section_claim(w_subject_unresolved, stranger,
+    deontic(test_scoped_affect, test_object, f, unconditional,
+        fixture(subject_scoped)),
+    fixture(unknown_membership)).

@@ -36,6 +36,8 @@ The temporal concern owns finite worlds, context conditions, and path realizatio
 ctx(World, Agent, Conditions).
 path_realizes(Path, Agent, Affect, Object).
 path_obligation_scope(Path, Agent, Affect, Object).
+agent_subject(Agent, Subject).
+subject_closed(Agent).          % Agent's agent_subject/2 facts are complete
 ```
 
 It does **not** decide whether a realized affect is forbidden, obligatory, or gluable. It only says what context and path data are present.

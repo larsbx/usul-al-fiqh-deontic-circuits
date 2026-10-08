@@ -5,7 +5,8 @@
 %    swipl tests/run_fixture_expectations.pl [-- FixtureFile]
 %
 %  Exit status: 0 all vectors pass; 1 a vector failed; 2 the fixtures could
-%  not be judged (bad usage, a load warning or error, or a stray source).
+%  not be judged (bad usage, a load warning or error, a stray source, or a
+%  malformed or orphaned expectation or premise).
 %
 %  FixtureFile defaults to the v39 aggregator. It must follow `--`: swipl
 %  loads any other trailing file argument as source, which would mix two
@@ -41,6 +42,7 @@ main(Argv) :-
     load_files(user:Path, [if(true)]),
     require_clean_load,
     require_expectations_from(Path),
+    require_well_formed_fixtures,
     findall(expectation(Name, user:Query, Kind, Premises),
         ( user:fixture_expectation(Name, query(Query), Kind),
           findall(user:P, user:fixture_premise(Name, query(P)), Premises) ),
@@ -73,3 +75,24 @@ require_clean_load :-
     ;   format(user_error, "refusing: ~d load warning(s) or error(s)~n", [Problems]),
         halt(2)
     ).
+
+% Every expectation is fixture_expectation(Name, query(Goal), Kind) and every
+% premise is fixture_premise(Name, query(Goal)) naming an expectation. A
+% premise of another shape would otherwise be skipped silently.
+require_well_formed_fixtures :-
+    findall(Problem, fixture_problem(Problem), Problems),
+    (   Problems == []
+    ->  true
+    ;   forall(member(P, Problems), format(user_error, "malformed: ~q~n", [P])),
+        halt(2)
+    ).
+
+fixture_problem(expectation(Name, Query)) :-
+    catch(user:fixture_expectation(Name, Query, _), _, fail),
+    Query \= query(_).
+fixture_problem(premise(Name, Query)) :-
+    catch(user:fixture_premise(Name, Query), _, fail),
+    Query \= query(_).
+fixture_problem(orphan_premise(Name)) :-
+    catch(user:fixture_premise(Name, _), _, fail),
+    \+ user:fixture_expectation(Name, _, _).

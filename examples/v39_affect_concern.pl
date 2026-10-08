@@ -116,3 +116,6 @@ ctx_affect(w_claim_tier, agent, khawf, other_than_allah,
 
 ctx_affect(w_claim_unsupported, agent, raja, allah_rahmah,
     evidence(tier1, quranic('39:53')), oriented).
+
+ctx_affect(w_subject_unresolved, stranger, test_scoped_affect, test_object,
+    evidence(fixture, generated), action_guiding).

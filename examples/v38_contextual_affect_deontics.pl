@@ -15,6 +15,7 @@
 %    path_realizes/4
 %    path_obligation_scope/4
 %    agent_subject/2
+%    subject_closed/1   the agent's agent_subject/2 facts are complete
 % =========================================================================
 
 :- multifile(ctx/3).
@@ -22,12 +23,15 @@
 :- multifile(path_realizes/4).
 :- multifile(path_obligation_scope/4).
 :- multifile(agent_subject/2).
+:- multifile(subject_closed/1).
 
 :- discontiguous(ctx/3).
 :- discontiguous(ctx_affect/6).
 :- discontiguous(path_realizes/4).
 :- discontiguous(path_obligation_scope/4).
 :- discontiguous(agent_subject/2).
+:- discontiguous(subject_closed/1).
+:- dynamic(subject_closed/1).
 
 % -------------------------------------------------------------------------
 % Context schema hooks

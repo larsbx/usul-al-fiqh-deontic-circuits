@@ -122,6 +122,22 @@ The checks run in this order:
 4. **Context and modality.**
 5. **Observations.** These are diagnosed only when none of them supports lifting, which yields `capacity_violation` and/or `tier_quarantine`.
 
+## Verdicts
+
+Gluing is not boolean. `world_verdict/2` and `path_verdict/3` return exactly one of:
+
+```text
+glues(Sections)            sorted Agent-Section pairs: the global section
+obstructed(Obstructions)   at least one obstruction record
+undetermined(Reasons)      at least one unknown(What)
+```
+
+Precedence is: no context at all gives `undetermined([unknown(world_context)])`; then any obstruction gives `obstructed`; then any open question gives `undetermined`; otherwise `glues`. A path verdict inherits a non-gluing world verdict, and otherwise lists every path obstruction.
+
+`undetermined` is never read as `glues`. `world_gluable/1` and `path_gluable/2` are kept as wrappers that succeed only on `glues(_)`.
+
+The one open question the kernel detects today is subject membership. An agent's `agent_subject/2` facts count as complete only when `subject_closed/1` declares them so. If membership is the only thing deciding whether a fact lifts, and the agent is not closed, the result is `unknown(subject_membership(Agent, Subject))`. The kernel never infers non-membership from silence. Claims follow the same rule: such a claim is undetermined, neither `subject_collision` nor lifted. Every claim is in exactly one state: `obstructed`, `undetermined`, or `lifted`.
+
 ## Evidence cosheaf feeding the deontic sheaf
 
 Evidence moves in the opposite direction from deontic restriction. Lexical, behavioral, and somatic observations aggregate upward into an affect diagnosis:

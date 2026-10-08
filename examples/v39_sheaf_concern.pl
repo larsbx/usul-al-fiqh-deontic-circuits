@@ -54,15 +54,79 @@ world_obstruction(World, Reason) :-
 path_obstruction(World, Path, Reason) :-
     path_affect_violation(World, Path, Reason).
 
-% A world glues when its active local sections do not conflict.
-world_gluable(World) :-
-    ctx(World, _Agent, _),
-    \+ world_obstruction(World, _Reason).
+% -------------------------------------------------------------------------
+% Verdicts
+%
+% world_verdict(+World, -Verdict) and path_verdict(+World, +Path, -Verdict)
+% give exactly one of:
+%
+%   glues(Sections)            Sections = sorted Agent-Section pairs
+%   obstructed(Obstructions)   sorted, non-empty
+%   undetermined(Reasons)      sorted, non-empty; Reason = unknown(What)
+%
+% Obstruction takes precedence over undetermined. Undetermined never glues.
+% World must be bound: an unbound world raises rather than answering for an
+% arbitrary one.
+% -------------------------------------------------------------------------
 
-% A path glues when the world glues and the v38 affect-path filter accepts it.
+world_verdict(World, Verdict) :-
+    must_be(atom, World),
+    (   \+ ctx(World, _, _)
+    ->  Verdict = undetermined([unknown(world_context)])
+    ;   sorted_solutions(Reason, world_obstruction(World, Reason), Reasons),
+        Reasons \== []
+    ->  Verdict = obstructed(Reasons)
+    ;   sorted_solutions(Unknown, world_undetermined(World, Unknown), Unknowns),
+        Unknowns \== []
+    ->  Verdict = undetermined(Unknowns)
+    ;   sorted_solutions(Agent-Section, local_section(World, Agent, Section),
+            Sections),
+        Verdict = glues(Sections)
+    ).
+
+path_verdict(World, Path, Verdict) :-
+    world_verdict(World, WorldVerdict),
+    (   WorldVerdict = glues(Sections)
+    ->  sorted_solutions(Reason, path_obstruction(World, Path, Reason), Reasons),
+        (   Reasons == [] -> Verdict = glues(Sections)
+        ;   Verdict = obstructed(Reasons)
+        )
+    ;   Verdict = WorldVerdict
+    ).
+
+world_gluable(World) :-
+    world_verdict(World, glues(_)).
+
 path_gluable(World, Path) :-
-    world_gluable(World),
-    ideal_path_affect_ok(World, Path).
+    path_verdict(World, Path, glues(_)).
+
+verdict_kind(glues(_), glues).
+verdict_kind(obstructed([_|_]), obstructed).
+verdict_kind(undetermined([_|_]), undetermined).
+
+fixture_world(World) :-
+    sorted_solutions(W, ctx(W, _, _), Worlds),
+    member(World, Worlds).
+
+sorted_solutions(Template, Goal, Sorted) :-
+    findall(Template, Goal, Found),
+    sort(Found, Sorted).
+
+% Membership decides lifting but is unknown: the agent has no matching
+% agent_subject/2 fact and its membership list is not declared complete.
+membership_unknown(Agent, Subject) :-
+    Subject \== all_mukallafin,
+    \+ agent_subject(Agent, Subject),
+    \+ subject_closed(Agent).
+
+world_undetermined(World, unknown(subject_membership(Agent, Subject))) :-
+    ctx(World, Agent, Conditions),
+    supporting_observation(World, Agent, Affect, Object),
+    deontic_obligation(Affect, Object, Subject, _, Modality, _),
+    modality_satisfied(Modality, Conditions),
+    membership_unknown(Agent, Subject).
+world_undetermined(World, Reason) :-
+    claim_undetermined(World, _Agent, _Claim, Reason).
 
 % -------------------------------------------------------------------------
 % Claim obstructions
@@ -128,7 +192,8 @@ section_obstruction(World, Agent, Section, unsupported_claim, no_context) :-
 section_obstruction(_World, Agent, Section, subject_collision,
         outside_subject(Agent, Subject)) :-
     source_fact(Section, Subject),
-    \+ subject_matches(Agent, Subject).
+    \+ subject_matches(Agent, Subject),
+    \+ membership_unknown(Agent, Subject).
 section_obstruction(World, Agent, Section, modality_unsatisfied,
         inactive(Modality)) :-
     source_fact(Section, _Subject),
@@ -147,6 +212,24 @@ section_obstruction(World, Agent, Section, tier_quarantine,
         quarantined_evidence(Evidence)) :-
     unsupported_observation(World, Agent, Section, Evidence, _ControlStatus),
     quarantined_evidence(Evidence).
+
+% A claim whose membership is unknown is neither obstructed by subject nor
+% lifted.
+claim_undetermined(World, Agent, Claim,
+        unknown(subject_membership(Agent, Subject))) :-
+    section_claim(World, Agent, Claim, _Origin),
+    normalized_section(Claim, Section),
+    source_fact(Section, Subject),
+    membership_unknown(Agent, Subject).
+
+% claim_state(?World, ?Agent, ?Claim, -State): obstructed, undetermined, or
+% lifted. Exactly one holds for every claim.
+claim_state(World, Agent, Claim, obstructed) :-
+    once(claim_obstruction(World, Agent, Claim, _, _)).
+claim_state(World, Agent, Claim, undetermined) :-
+    once(claim_undetermined(World, Agent, Claim, _)).
+claim_state(World, Agent, Claim, lifted) :-
+    claim_lifted(World, Agent, Claim).
 
 source_fact(deontic(Affect, Object, Operator, Modality, Warrant), Subject) :-
     deontic_obligation(Affect, Object, Subject, Operator, Modality, Warrant).
@@ -436,16 +519,6 @@ fixture_expectation(world_with_obstructed_claim_is_not_gluable,
     query(world_gluable(w_claim_subject)),
     expect_false).
 
-% The emitter and the lifting guards agree on every claim:
-% obstructed ⇔ not lifted.
-fixture_expectation(claim_obstruction_agrees_with_lifting,
-    query(forall(section_claim(W, A, S, _),
-        (   claim_obstruction(W, A, S, _, _)
-        ->  \+ claim_lifted(W, A, S)
-        ;   claim_lifted(W, A, S)
-        ))),
-    expect_true).
-
 % Every obstruction category in docs/architecture/sheaf-context-site.md is
 % emitted by at least one fixture world or path.
 fixture_expectation(every_obstruction_category_is_emitted,
@@ -480,5 +553,95 @@ fixture_premise(display_alias_claim_normalizes_and_is_clean,
 fixture_premise(world_with_obstructed_claim_is_not_gluable,
     query(ctx(w_claim_subject, outsider, _))).
 
-fixture_premise(claim_obstruction_agrees_with_lifting,
-    query(aggregate_all(count, section_claim(_, _, _, _), N), N >= 10)).
+fixture_premise(every_claim_has_exactly_one_state,
+    query((aggregate_all(count, section_claim(_, _, _, _), N), N >= 12))).
+
+% -------------------------------------------------------------------------
+% Verdict vectors
+%
+% world_verdict/2 and path_verdict/3 return exactly one of glues(Sections),
+% obstructed(Obstructions), or undetermined(Reasons). Undetermined is never
+% read as glues.
+% -------------------------------------------------------------------------
+
+fixture_expectation(clean_world_verdict_glues_with_its_sections,
+    query(( world_verdict(w_allah_fear, glues(Sections)),
+            memberchk(agent-deontic(khawf, allah_essence, o, _, _), Sections) )),
+    expect_true).
+
+fixture_expectation(conflict_world_verdict_is_obstructed,
+    query(world_verdict(w_fixture_conflict,
+        obstructed([obstruction(operator_conflict, _, _)]))),
+    expect_true).
+
+fixture_expectation(unresolved_subject_world_is_undetermined,
+    query(world_verdict(w_subject_unresolved,
+        undetermined([unknown(subject_membership(stranger,
+            test_subject_class))]))),
+    expect_true).
+
+fixture_expectation(undetermined_world_is_not_gluable,
+    query(world_gluable(w_subject_unresolved)),
+    expect_false).
+
+fixture_expectation(world_without_context_is_undetermined,
+    query(world_verdict(w_no_such_world, undetermined([unknown(world_context)]))),
+    expect_true).
+
+% Known non-membership is determined: the world glues with no section.
+fixture_expectation(closed_outsider_world_glues,
+    query(world_verdict(w_subject_outside, glues([]))),
+    expect_true).
+
+fixture_expectation(unbound_world_verdict_raises,
+    query(catch((world_verdict(_, _), fail), error(instantiation_error, _), true)),
+    expect_true).
+
+fixture_expectation(every_fixture_world_has_exactly_one_verdict,
+    query(forall(fixture_world(W),
+        (   findall(V, world_verdict(W, V), [Verdict]),
+            verdict_kind(Verdict, _)
+        ))),
+    expect_true).
+
+fixture_expectation(obstructed_path_verdict_lists_every_reason,
+    query(( path_verdict(w_rahmah_balance, path_qunut_without_raja,
+                obstructed(Reasons)),
+            length(Reasons, 3) )),
+    expect_true).
+
+fixture_expectation(clean_path_verdict_glues,
+    query(path_verdict(w_allah_fear, path_allah_fear_ok, glues(_))),
+    expect_true).
+
+fixture_expectation(undetermined_world_makes_path_undetermined,
+    query(path_verdict(w_subject_unresolved, path_raja_ok, undetermined(_))),
+    expect_true).
+
+% A claim whose only open question is membership is undetermined, not
+% obstructed.
+fixture_expectation(claim_with_unknown_membership_is_undetermined,
+    query(claim_undetermined(w_subject_unresolved, stranger, _,
+        unknown(subject_membership(stranger, test_subject_class)))),
+    expect_true).
+
+fixture_expectation(claim_with_unknown_membership_is_not_obstructed,
+    query(claim_obstruction(w_subject_unresolved, stranger, _, _, _)),
+    expect_false).
+
+% The emitter and the lifting guards agree on every claim: exactly one of
+% obstructed, undetermined, lifted.
+fixture_expectation(every_claim_has_exactly_one_state,
+    query(forall(section_claim(W, A, S, _),
+        (   findall(State, claim_state(W, A, S, State), States),
+            sort(States, [_])
+        ))),
+    expect_true).
+
+fixture_premise(undetermined_world_is_not_gluable,
+    query(ctx(w_subject_unresolved, stranger, _))).
+
+fixture_premise(claim_with_unknown_membership_is_not_obstructed,
+    query(section_claim(w_subject_unresolved, stranger, _, _))).
+fixture_premise(claim_with_unknown_membership_is_not_obstructed,
+    query(\+ subject_closed(stranger))).

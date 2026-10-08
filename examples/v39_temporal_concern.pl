@@ -11,6 +11,7 @@
 :- discontiguous(path_realizes/4).
 :- discontiguous(path_obligation_scope/4).
 :- discontiguous(agent_subject/2).
+:- discontiguous(subject_closed/1).
 
 % -------------------------------------------------------------------------
 % Fixture worlds and their context conditions
@@ -39,8 +40,14 @@ ctx(w_claim_tier, agent, [within_capacity, when_displaces_taqwa]).
 ctx(w_claim_unsupported, agent, [within_capacity]).
 ctx(w_claim_unobserved, agent, [within_capacity]).
 
-% Subject membership. `outsider` deliberately has none.
+% Subject membership. `outsider` deliberately has none. subject_closed/1
+% declares an agent's membership list complete, so absence means non-membership.
+% `stranger` is not closed: its membership is unknown, not negative.
 agent_subject(member, test_subject_class).
+subject_closed(member).
+subject_closed(outsider).
+
+ctx(w_subject_unresolved, stranger, [within_capacity]).
 
 % -------------------------------------------------------------------------
 % Path scopes and realizations

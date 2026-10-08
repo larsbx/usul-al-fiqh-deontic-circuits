@@ -121,7 +121,7 @@ Each implemented guard is pinned from both sides. The guard-withdrawal worlds be
 
 `test_scoped_affect` / `test_subject_class` is a fixture fact like the conflict pair. It is not source-derived. It exists because every ADQ-shaped fact is addressed to `all_mukallafin`, which would leave the subject guard untested.
 
-The fixture runner exits 2 on any load warning or error. A mutant counts as killed only on exit 1, meaning a vector failed. Every guard and emitter in `tests/mutation_test.sh` is killed this way.
+The fixture runner exits 2 when the fixtures cannot be judged. That covers any load warning or error, a stray source, and a malformed or orphaned `fixture_expectation/3` or `fixture_premise/2`. A premise not written as `query(Goal)` would otherwise be skipped silently. A mutant counts as killed only on exit 1, meaning a vector failed. Every guard and emitter in `tests/mutation_test.sh` is killed this way.
 
 ## Claim obstruction worlds
 
@@ -144,6 +144,18 @@ Clean claims in `w_allah_fear` and `w_yusuf_brothers` emit nothing. The second u
 `every_obstruction_category_is_emitted` checks that every documented category is emitted by some fixture world or path.
 
 The lifting guard now also rejects tier-4 evidence (`quarantined_evidence/1`). Before this change, a tier-4 observation lifted a section.
+
+## Verdict worlds
+
+| World | Verdict |
+|---|---|
+| `w_allah_fear` | `glues(...)` containing the comparative khawf obligation |
+| `w_fixture_conflict` | `obstructed([obstruction(operator_conflict, _, _)])` |
+| `w_subject_unresolved` | `undetermined([unknown(subject_membership(stranger, test_subject_class))])` |
+| `w_subject_outside` | `glues([])`, since `outsider` is `subject_closed` and so known to be outside |
+| any world without `ctx/3` | `undetermined([unknown(world_context)])` |
+
+`every_fixture_world_has_exactly_one_verdict` checks that every fixture world yields exactly one well-formed verdict. `every_claim_has_exactly_one_state` checks that each claim is exactly one of obstructed, undetermined, or lifted.
 
 ## Promotion path
 
