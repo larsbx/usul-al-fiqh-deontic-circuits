@@ -67,6 +67,22 @@ Fixture module:
 examples/v39_sheaf_concern.pl
 ```
 
+## Concern 4 — claims
+
+The claim concern owns proposed local sections:
+
+```prolog
+section_claim(World, Agent, Section, Origin).
+```
+
+A claim is a candidate verdict, for example from the LLM harness or an import adapter. It never adds a section. The sheaf concern checks it and emits `claim_obstruction/5` records.
+
+Fixture module:
+
+```text
+examples/v39_claim_concern.pl
+```
+
 ## Aggregator compatibility
 
 The original public fixture path is retained as an aggregator:
@@ -75,7 +91,7 @@ The original public fixture path is retained as an aggregator:
 examples/v39_sheaf_obstruction_fixtures.pl
 ```
 
-It loads the three concern modules and contains only smoke-query documentation. This keeps existing links stable while making the separation explicit.
+It loads the concern modules and contains only smoke-query documentation. This keeps existing links stable while making the separation explicit.
 
 ## Boundary rules
 
@@ -84,6 +100,7 @@ It loads the three concern modules and contains only smoke-query documentation. 
 - Sheaf predicates may derive gluing/obstruction status but must not invent new ADQ source facts.
 - The v38 bridge remains the adapter between ADQ-shaped facts and path filters.
 - LLM-authored fixtures remain proposals/test vectors, not accepted normative facts.
+- Claims are checked, never lifted. A claim cannot create a section, only an obstruction.
 
 ## Promotion path
 

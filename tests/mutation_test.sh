@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# Disables one kernel guard at a time in a scratch copy of examples/ and
-# requires the fixture suite to fail for every mutant. A mutant that survives
-# means no vector depends on that guard.
+# Disables one kernel guard or emitter at a time in a scratch copy of
+# examples/ and requires a fixture vector to fail for every mutant (runner
+# exit 1). A mutant that survives means no vector depends on that clause; a
+# mutant that breaks loading (exit 2) proves nothing and also fails.
 set -euo pipefail
 
 root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -10,15 +11,27 @@ scratch="$(mktemp -d)"
 trap 'rm -rf "$scratch"' EXIT
 
 # name | file | sed expression
+# Guards are removed by a goal that keeps every variable used; emitters are
+# disabled by appending ", fail". Both keep the mutant warning-free.
 mutants=(
-  "capacity_guard|v38_contextual_affect_deontics.pl|s/^outside_direct_taklif(panic_overflow)\./under_taklif_control(panic_overflow)./"
-  "modality_guard|v38_contextual_affect_deontics.pl|s/^modality_satisfied(conditional(Cond), Conditions) :-/modality_satisfied(conditional(_), _) :- true.\nmodality_satisfied_unused(Cond, Conditions) :-/"
-  "comparative_guard|v38_contextual_affect_deontics.pl|s/^modality_satisfied(comparative(stronger_than(Other)), Conditions) :-/modality_satisfied(comparative(_), _) :- true.\nmodality_satisfied_unused(Other, Conditions) :-/"
-  "subject_guard|v38_contextual_affect_deontics.pl|s/^subject_matches(Agent, Subject) :-/subject_matches(_, _) :- true.\nsubject_matches_unused(Agent, Subject) :-/"
-  "scope_guard|v39_sheaf_concern.pl|s/deontic(Affect, Object, _Operator2/deontic(_Affect2, Object, _Operator2/"
-  "discharge_guard|v38_contextual_affect_deontics.pl|s/^    \\\\+ path_realizes(Path, Agent, Affect, Object)\\./    true./"
-  "anti_pair_guard|v38_contextual_affect_deontics.pl|s/^    \\\\+ path_realizes(Path, Agent, Commanded, Object)\\./    fail./"
-  "operator_conflict|v39_sheaf_concern.pl|s/^operator_incompatible(o, f)\\./operator_incompatible_unused(o, f)./;s/^operator_incompatible(f, o)\\./operator_incompatible_unused(f, o)./"
+  "capacity_guard|v38_contextual_affect_deontics.pl|s/^under_taklif_control(cultivated)\./under_taklif_control(panic_overflow).\nunder_taklif_control(cultivated)./"
+  "modality_guard|v38_contextual_affect_deontics.pl|s/^    memberchk(Cond, Conditions)\./    Cond = Cond, Conditions = Conditions./"
+  "comparative_guard|v38_contextual_affect_deontics.pl|s/^    memberchk(stronger_than(Other), Conditions)\./    Other = Other, Conditions = Conditions./"
+  "subject_guard|v38_contextual_affect_deontics.pl|s/^    agent_subject(Agent, Subject)\./    Agent = Agent, Subject = Subject./"
+  "tier_guard|v38_contextual_affect_deontics.pl|s/^    \\\\+ quarantined_evidence(Evidence)\./    Evidence = Evidence./"
+  "discharge_guard|v38_contextual_affect_deontics.pl|s/^    \\\\+ path_realizes(Path, Agent, Affect, Object)\./    \\\\+ \\\\+ path_realizes(Path, Agent, Affect, Object)./"
+  "anti_pair_guard|v38_contextual_affect_deontics.pl|s/^    \\\\+ path_realizes(Path, Agent, Commanded, Object)\./    \\\\+ \\\\+ path_realizes(Path, Agent, Commanded, Object)./"
+  "scope_guard|v39_sheaf_concern.pl|s/deontic(Affect, Object, _Operator1/deontic(_Affect1, Object, _Operator1/;s/deontic(Affect, Object, _Operator2/deontic(_Affect2, Object, _Operator2/"
+  "operator_conflict|v39_sheaf_concern.pl|s/^operator_incompatible(o, f)\./operator_incompatible(o, f) :- fail./;s/^operator_incompatible(f, o)\./operator_incompatible(f, o) :- fail./"
+  "alias_normalization|v39_sheaf_concern.pl|s/^    findall(Id, canonical_alias(Term, Id), Ids0),/    findall(Id, canonical_alias(Term, Id), _), Ids0 = [],/"
+  "object_emitter|v39_sheaf_concern.pl|s/^    Source \\\\== Object\./    Source \\\\== Object, fail./"
+  "source_fact_emitter|v39_sheaf_concern.pl|s/^    \\\\+ deontic_obligation(Affect, _, _, Operator, Modality, Warrant)\./    \\\\+ deontic_obligation(Affect, _, _, Operator, Modality, Warrant), fail./"
+  "context_emitter|v39_sheaf_concern.pl|s/^    \\\\+ ctx(World, Agent, _)\\./    \\\\+ ctx(World, Agent, _), fail./"
+  "subject_emitter|v39_sheaf_concern.pl|s/^    \\\\+ subject_matches(Agent, Subject)\./    \\\\+ subject_matches(Agent, Subject), fail./"
+  "modality_emitter|v39_sheaf_concern.pl|s/^    \\\\+ modality_satisfied(Modality, Conditions)\./    \\\\+ modality_satisfied(Modality, Conditions), fail./"
+  "capacity_emitter|v39_sheaf_concern.pl|s/^    \\\\+ under_taklif_control(ControlStatus)\./    \\\\+ under_taklif_control(ControlStatus), fail./"
+  "tier_emitter|v39_sheaf_concern.pl|s/^    quarantined_evidence(Evidence)\./    quarantined_evidence(Evidence), fail./"
+  "claim_to_world|v39_sheaf_concern.pl|s/^    claim_obstruction(World, Agent, Section, Category, Detail)\./    claim_obstruction(World, Agent, Section, Category, Detail), fail./"
 )
 
 survivors=0
@@ -31,11 +44,14 @@ for spec in "${mutants[@]}"; do
   if cmp -s "$root/examples/$file" "$target"; then
     echo "not ok - $name: mutation did not apply"
     survivors=$((survivors + 1))
-  elif swipl "$runner" -- "$scratch/examples/v39_sheaf_obstruction_fixtures.pl" >/dev/null 2>&1; then
-    echo "not ok - $name: mutant survived"
-    survivors=$((survivors + 1))
   else
-    echo "ok - $name: killed"
+    status=0
+    swipl "$runner" -- "$scratch/examples/v39_sheaf_obstruction_fixtures.pl" >/dev/null 2>&1 || status=$?
+    case "$status" in
+      1) echo "ok - $name: killed" ;;
+      0) echo "not ok - $name: mutant survived"; survivors=$((survivors + 1)) ;;
+      *) echo "not ok - $name: mutant not judged (exit $status)"; survivors=$((survivors + 1)) ;;
+    esac
   fi
 done
 

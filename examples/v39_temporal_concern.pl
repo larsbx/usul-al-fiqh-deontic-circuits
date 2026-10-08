@@ -29,6 +29,16 @@ ctx(w_allah_fear_no_precedence, agent, [within_capacity]).
 ctx(w_subject_inside, member, [within_capacity]).
 ctx(w_subject_outside, outsider, [within_capacity]).
 
+% Claim worlds: each lacks exactly what one claim check needs.
+ctx(w_claim_alias, agent, [within_capacity]).
+ctx(w_claim_object, agent, [within_capacity, stronger_than(other_than_allah)]).
+ctx(w_claim_subject, outsider, [within_capacity]).
+ctx(w_claim_modality, agent, [within_capacity]).
+ctx(w_claim_capacity, agent, [within_capacity, action_guiding]).
+ctx(w_claim_tier, agent, [within_capacity, when_displaces_taqwa]).
+ctx(w_claim_unsupported, agent, [within_capacity]).
+ctx(w_claim_unobserved, agent, [within_capacity]).
+
 % Subject membership. `outsider` deliberately has none.
 agent_subject(member, test_subject_class).
 

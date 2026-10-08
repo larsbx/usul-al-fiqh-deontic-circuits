@@ -105,6 +105,22 @@ Initial obstruction categories:
 | `anti_pair_failure` | A forbidden/displacing affect was realized while the commanded counterpart failed in scope. |
 | `operator_conflict` | Same affect/object/subject scope carries incompatible operators without a defeater or priority resolution. |
 | `alias_gluing_failure` | Display/Unicode/root aliases fail to normalize to one canonical ID. |
+| `unsupported_claim` | A claimed section has no source fact, no context, or no observation. |
+
+### Where obstructions come from
+
+`operator_conflict` arises between lifted sections. `anti_pair_failure` arises on a path; it is emitted as `anti_pair_displacement/3`.
+
+The other categories describe a *misapplication*: something treated as active where a guard says it is not. A guard that correctly declines to lift is not an obstruction. For example, involuntary panic lifts no section, and its world still glues.
+
+These categories are therefore emitted against claims. A claim, `section_claim/4` in `examples/v39_claim_concern.pl`, is a proposed section from an LLM candidate, an import, or a restriction from another context. `claim_obstruction/5` checks a claim with the same guards that lift sections; claims never add sections. A fixture vector enforces the correspondence: a claim is obstructed exactly when it is not a lifted section.
+
+The checks run in this order:
+1. **Alias normalization.** An ambiguous alias stops the remaining checks.
+2. **Source-fact resolution.** No fact at all gives `unsupported_claim`; a fact only for another object gives `object_collision`.
+3. **Subject.**
+4. **Context and modality.**
+5. **Observations.** These are diagnosed only when none of them supports lifting, which yields `capacity_violation` and/or `tier_quarantine`.
 
 ## Evidence cosheaf feeding the deontic sheaf
 

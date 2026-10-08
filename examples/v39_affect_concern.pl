@@ -9,6 +9,7 @@
 :- discontiguous(deontic_obligation/6).
 :- discontiguous(deontic_anti_pair/4).
 :- discontiguous(ctx_affect/6).
+:- discontiguous(canonical_alias/2).
 
 % -------------------------------------------------------------------------
 % Minimal ADQ-shaped facts for fixtures
@@ -49,6 +50,17 @@ deontic_anti_pair(raja, qunut, allah_rahmah,
     [warrant(quranic('39:53')), relation(displacement)]).
 
 % -------------------------------------------------------------------------
+% Canonical aliases: display form -> canonical ID
+% -------------------------------------------------------------------------
+
+canonical_alias('ḥasad', hasad).
+
+% Deliberate fixture ambiguity: one alias, two canonical IDs. Not
+% source-derived; it exists only to exercise alias_gluing_failure.
+canonical_alias(test_ambiguous_alias, test_conflict_affect).
+canonical_alias(test_ambiguous_alias, test_scoped_affect).
+
+% -------------------------------------------------------------------------
 % Local affect observations by world/agent
 % -------------------------------------------------------------------------
 
@@ -85,3 +97,22 @@ ctx_affect(w_subject_inside, member, test_scoped_affect, test_object,
 
 ctx_affect(w_subject_outside, outsider, test_scoped_affect, test_object,
     evidence(fixture, generated), action_guiding).
+
+% Claim worlds: observations against which proposed sections are checked.
+ctx_affect(w_claim_object, agent, khawf, other_than_allah,
+    evidence(tier1, quranic('3:175')), oriented).
+
+ctx_affect(w_claim_subject, outsider, test_scoped_affect, test_object,
+    evidence(fixture, generated), action_guiding).
+
+ctx_affect(w_claim_modality, agent, khawf, other_than_allah,
+    evidence(tier1, quranic('3:175')), action_guiding).
+
+ctx_affect(w_claim_capacity, agent, hasad, creation_blessing,
+    evidence(tier2, behavioral_profile(hasad)), raw_occurrence).
+
+ctx_affect(w_claim_tier, agent, khawf, other_than_allah,
+    evidence(tier4, commentary(fixture)), action_guiding).
+
+ctx_affect(w_claim_unsupported, agent, raja, allah_rahmah,
+    evidence(tier1, quranic('39:53')), oriented).

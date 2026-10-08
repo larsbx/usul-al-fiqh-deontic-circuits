@@ -41,6 +41,7 @@ The fixture facts may later be replaced by canonical imports from the ADQ bundle
 | Affect | `examples/v39_affect_concern.pl` | ADQ-shaped `deontic_obligation/6`, `deontic_anti_pair/4`, and local `ctx_affect/6` observations | path topology or gluing |
 | Temporal/path | `examples/v39_temporal_concern.pl` | `ctx/3`, `path_realizes/4`, and `path_obligation_scope/4` | hukm/operator meaning or obstruction |
 | Sheaf/gluing | `examples/v39_sheaf_concern.pl` | `local_section/3`, compatibility, world/path gluing, obstruction, and fixture expectations | source facts or temporal topology |
+| Claims | `examples/v39_claim_concern.pl` | proposed sections (`section_claim/4`) | verdicts; claims are checked, never lifted |
 | Aggregator | `examples/v39_sheaf_obstruction_fixtures.pl` | stable load target and smoke-query comments | any domain facts |
 
 ## Fixture worlds
@@ -101,7 +102,7 @@ fixture_expectation(allah_fear_path_glues,
 |---|---|---|
 | Runner self-tests | `tests/test_fixture_runner.pl` | the runner passes or skips a wrong, raising, unknown-kind, duplicate, or premise-free vector |
 | Fixture vectors | `tests/run_fixture_expectations.pl` | any `fixture_expectation/3` vector fails |
-| Guard mutants | `tests/mutation_test.sh` | disabling a kernel guard leaves every vector green |
+| Guard and emitter mutants | `tests/mutation_test.sh` | disabling a guard or an emitter clause leaves every vector green, or breaks loading |
 
 Kinds are `expect_true` (the query succeeds) and `expect_false` (the query fails finitely).
 
@@ -120,7 +121,29 @@ Each implemented guard is pinned from both sides. The guard-withdrawal worlds be
 
 `test_scoped_affect` / `test_subject_class` is a fixture fact like the conflict pair. It is not source-derived. It exists because every ADQ-shaped fact is addressed to `all_mukallafin`, which would leave the subject guard untested.
 
-Every guard in `tests/mutation_test.sh` is killed by at least one vector.
+The fixture runner exits 2 on any load warning or error. A mutant counts as killed only on exit 1, meaning a vector failed. Every guard and emitter in `tests/mutation_test.sh` is killed this way.
+
+## Claim obstruction worlds
+
+Each claim world fails exactly one check, and its vectors pin the complete category set as a singleton.
+
+| World | Claim | Emitted |
+|---|---|---|
+| `w_claim_alias` | uses `test_ambiguous_alias` (two canonical IDs) | `alias_gluing_failure` |
+| `w_claim_object` | the `allah_essence` obligation applied to `other_than_allah` | `object_collision` |
+| `w_claim_subject` | subject-scoped fact claimed for `outsider` | `subject_collision` |
+| `w_claim_modality` | `when_displaces_taqwa` not in context | `modality_unsatisfied` |
+| `w_claim_capacity` | `hasad` observed only as `raw_occurrence` | `capacity_violation` |
+| `w_claim_tier` | only tier-4 evidence observed | `tier_quarantine` |
+| `w_claim_unsupported` | inverted operator, no source fact | `unsupported_claim(no_source_fact)` |
+| `w_claim_unobserved` | no observation in that world | `unsupported_claim(no_observation)` |
+| `w_claim_no_context` | no `ctx/3` for the world | `unsupported_claim(no_context)` |
+
+Clean claims in `w_allah_fear` and `w_yusuf_brothers` emit nothing. The second uses the display alias `ḥasad`.
+
+`every_obstruction_category_is_emitted` checks that every documented category is emitted by some fixture world or path.
+
+The lifting guard now also rejects tier-4 evidence (`quarantined_evidence/1`). Before this change, a tier-4 observation lifted a section.
 
 ## Promotion path
 
@@ -128,5 +151,5 @@ Every guard in `tests/mutation_test.sh` is killed by at least one vector.
 2. Add a canonical import adapter from accepted ADQ facts into the v38 predicates.
 3. Replace artificial sample facts with fixture bundles generated from canonical JSON.
 4. Keep affect import, temporal case fixtures, and sheaf obstruction checks independently replaceable.
-5. Add negative tests for tier quarantine, alias gluing failure, and object collision. These need new obstruction emitters. Subject and modality guards are covered by withdrawal vectors; the named `subject_collision` and `modality_unsatisfied` obstruction records are not emitted yet.
+5. ~~Add negative tests for tier quarantine, alias gluing failure, object collision, subject collision, and modality unsatisfied.~~ Done: every category is emitted against claims, see *Claim obstruction worlds*.
 6. Preserve the rule that LLM text can propose fixture candidates but cannot turn them into accepted normative facts without deterministic review.

@@ -88,10 +88,20 @@ modality_satisfied(scalar(Scale), Conditions) :-
 % Local hukm lifting
 % -------------------------------------------------------------------------
 
+% Tier 4 evidence is quarantined: it may annotate review but supports no
+% normative derivation.
+quarantined_evidence(evidence(tier4, _Source)).
+
+% An observation supports lifting only when it is under taklif control and
+% its evidence is not quarantined. Claim checking reuses this guard.
+supporting_observation(World, Agent, Affect, Object) :-
+    ctx_affect(World, Agent, Affect, Object, Evidence, ControlStatus),
+    under_taklif_control(ControlStatus),
+    \+ quarantined_evidence(Evidence).
+
 local_affect_hukm(World, Agent, Affect, Object, Operator, Modality, Warrant) :-
     ctx(World, Agent, Conditions),
-    ctx_affect(World, Agent, Affect, Object, _Evidence, ControlStatus),
-    under_taklif_control(ControlStatus),
+    supporting_observation(World, Agent, Affect, Object),
     deontic_obligation(Affect, Object, Subject, Operator, Modality, Warrant),
     subject_matches(Agent, Subject),
     modality_satisfied(Modality, Conditions).
