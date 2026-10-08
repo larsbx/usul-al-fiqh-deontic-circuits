@@ -207,6 +207,25 @@ Results on the tranche:
   - **7.f001, tayammum:** Ibn Rajab places it between the two kinds; the riwāya that the prayer is void reads it as necessity, which the reading follows.
   - **64.f003 refines 64–65:** for the usurper who eats food already permitted to him, Ibn Rajab rejects liability («الصواب الجزم بعدم الضمان»), since liability is not established by belief. Hence the reading's second argument; it would otherwise land on Abū al-Khaṭṭāb.
 
+**Tranche 3 (qawāʿid 1, 17, 66, 91, 93; 21 furūʿ and divisions).** Five qawāʿid that only the list-and-division segmenter opened (`corpus/takhrij/rajab_m8_tranche3_furu.json`). A division is annotated like a farʿ: it is a sub-rule with its own ruling, and its wujūh are the positions.
+
+| Qāʿida | Reading | Link to the bank |
+|---|---|---|
+| 1: is running water like still water, or is each jirya water on its own? («فيه خلاف») | `runningBody`: each jirya, the second limb (al-Qāḍī's madhhab on its first farʿ) | new |
+| 17: one noble act against many of the same cost | `preferMany`: «ظاهر كلام أحمد ترجيح الكثرة» | new |
+| 66: acting on a mistaken basis while the true one exists | `validWithBasis`: valid in both types («والمذهب هنا الصحة بلا ريب») | `q65_is_the_unbelieved_basis`: the contrast with q65's `countsAsMet` |
+| 91: what the hand takes in | `handLiable`: what has a share of property, not the free person | new |
+| 93: the ten hands that take from a usurper unaware | `takerRecourse`: recourse on the usurper unless he undertook the liability («دخل على ضمان … استقر ضمانها عليه») | `undertaken_settles` |
+
+Results on the tranche:
+- **5 derivable, 16 ikhtilāf (12 on the madhhab side), 0 encoding errors.** Coverage 21/21 = 1.000, madhhab coverage 17/21 = 0.810. One ledger entry is opened (1.f003, `rule:ayman_by_urf`).
+- **What the cases say about the readings:**
+  - **Qāʿida 93 tracks the madhhab in all eight segments**, on the thing and on the benefit alike: whoever undertook a liability bears it, and whoever did not has recourse. Ibn Rajab argues against the madhhab twice. In 93.f003 he holds that the taker who did not undertake the liability cannot be made liable at all («وينبغي أن يكون هو المذهب»). In 93.f005 he holds that the buyer's loss settles on the usurper («وهو عندي قياس المذهب»).
+  - **Qāʿida 1's khilāf divides by subject.** Each jirya counts on its own for najāsa (al-Qāḍī's madhhab) and for lifting ḥadath (al-ashhar). The water counts as one body for washing a vessel (the ẓāhir of the aṣḥāb) and for the oath, where «الأيمان مرجعها إلى العرف» decides (Ibn Rajab's qiyās al-manṣūṣ). The oath case is the new gap.
+  - **Qāʿida 17 holds where Aḥmad speaks** (prayer, sacrifice, the one who forces himself to obey). Where Aḥmad's narrations divide (recitation with reflection) or only later authorities speak (the precious slave), Ibn Rajab and Taqī al-Dīn prefer the noble act.
+  - **Qāʿidas 66 and 65 are each other's complement:** the act stands when he relied on a basis he believed (66), and fails when he believed the basis absent (65).
+- **Segmentation finding:** in qāʿida 93 the ninth and tenth hands begin mid-line («بخلاف ما على الشجر (اليد التاسعة)»), so they stay inside 93.f008. Both agree with the reading, as its note records.
+
 **Coverage trend:**
 
 | Stage | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
@@ -219,5 +238,7 @@ Results on the tranche:
 | All, after the opening-example fix | 249 | 0.964 | 0.653 | 0 | 12 |
 | M8 tranche 2 alone | 25 | 0.960 | 0.400 | 0 | 1 |
 | All, after tranche 2 | 274 | 0.963 | 0.630 | 0 | 13 |
+| M8 tranche 3 alone | 21 | 1.000 | 0.810 | 0 | 1 |
+| All, after tranche 3 | 295 | 0.966 | 0.643 | 0 | 14 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
