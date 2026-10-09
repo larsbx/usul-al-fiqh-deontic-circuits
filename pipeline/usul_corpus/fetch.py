@@ -6,8 +6,10 @@ downstream parser is shared (one reader, many sources).
 
 from __future__ import annotations
 
+import contextlib
 import hashlib
 import html
+import json
 import re
 import time
 import urllib.error
@@ -75,14 +77,21 @@ def _get(url: str, backoff: tuple[int, ...] = (2, 4, 8, 16)) -> bytes:
         return _get(url, backoff[1:])
 
 
-def _shamela(w: dict, max_pages: int | None) -> bytes:
-    page: int | None = w.get("pages", [1])[0]
-    out: list[str] = []
-    while page is not None and (max_pages is None or len(out) < max_pages):
-        body = _get(f"https://shamela.ws/book/{w['book_id']}/{page}").decode()
-        out.append(shamela_page_to_markdown(body))
-        page = next_page_id(body)
-        time.sleep(SHAMELA_DELAY_S)
+def _shamela(w: dict, max_pages: int | None, part: Path | None = None) -> bytes:
+    """Walk the reader page by page. With `part`, each page is checkpointed as one JSON line
+    (markdown + next page id), so an interrupted fetch resumes where it stopped."""
+    done = [json.loads(l) for l in part.read_text(encoding="utf-8").splitlines()] if part and part.exists() else []
+    out = [d["md"] for d in done]
+    page: int | None = done[-1]["next"] if done else w.get("pages", [1])[0]
+    with (part.open("a", encoding="utf-8") if part else contextlib.nullcontext()) as log:
+        while page is not None and (max_pages is None or len(out) < max_pages):
+            body = _get(f"https://shamela.ws/book/{w['book_id']}/{page}").decode()
+            out.append(shamela_page_to_markdown(body))
+            page = next_page_id(body)
+            if log:
+                log.write(json.dumps({"md": out[-1], "next": page}, ensure_ascii=False) + "\n")
+                log.flush()
+            time.sleep(SHAMELA_DELAY_S)
     return ("#META#Header#End#\n" + "\n".join(out) + "\n").encode()
 
 
@@ -90,9 +99,14 @@ def fetch(w: dict, cache: Path, max_pages: int | None = None, refresh: bool = Fa
     """Fetch one witness into ``cache`` and return its lock entry."""
     path = cache / f"{w['id']}.{'pdf' if w.get('format') == 'pdf' else 'txt'}"
     if refresh or not path.exists():
-        data = _shamela(w, max_pages) if w["kind"] == "shamela" else _get(witness_url(w))
         path.parent.mkdir(parents=True, exist_ok=True)
+        part = path.with_suffix(".part") if max_pages is None else None  # full fetches only
+        if refresh and part:
+            part.unlink(missing_ok=True)
+        data = _shamela(w, max_pages, part) if w["kind"] == "shamela" else _get(witness_url(w))
         path.write_bytes(data)
+        if part:
+            part.unlink(missing_ok=True)
     data = path.read_bytes()
     return {
         "witness": w["id"],
