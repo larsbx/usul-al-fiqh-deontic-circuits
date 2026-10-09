@@ -51,14 +51,18 @@ The admission boundary adds external premises through `CommandPremises.Holds`:
   for every supplied qarīna.
 - Intended use requires the first-command-position context; its intended ruling is
   supplied and preserved by `derivation_preserves_intended_ruling`.
-- The author's conditional prophetic-act inference carries evidence that the imitation
-  input is true. `author_literal_requires_imitation` excludes the unsupported branch.
+- The author's conditional prophetic-act trace carries evidence that its imitation
+  input is true. Admission additionally requires an external proof of
+  `imitationEstablished`; choosing a Boolean flag cannot supply that proof.
+  `author_literal_requires_imitation` excludes a false input, while
+  `no_author_admission_without_imitation` rejects admission without external evidence.
+  The false-input branch remains unanswered and makes no positive imitation claim.
 - `no_positive_gesture_derivation` and `no_karkhi_permission_classification` preserve
   the source's unanswered branches.
 
 `admitted_iff` characterizes a candidate admitted trace as both valid premises and the
 correct evaluation. `no_admission_without_premises` prevents evaluation from replacing
-missing context or admissibility evidence. Those predicates are external parameters;
+missing context, admissibility or imitation evidence. Those predicates are external parameters;
 the module does not decide whether real-world evidence establishes them.
 
 All readings and interpretation records remain candidates. These derivations are
@@ -75,7 +79,7 @@ not complete the roadmap. In particular:
 - The M5 trace calculus covers the four command capabilities, not the complete structured
   argumentation calculus over all adilla. General attacks on subderivations and propagation
   of defeat remain to be integrated.
-- Command-context and qarīna admissibility are supplied premises. They need their own
+- Command-context, qarīna admissibility and established imitation are supplied premises. They need their own
   governed source-backed formalizations before a live case can be revisited.
 - `Taarud.resolve` orders already-supplied reconciliation, chronology and preference
   results. It does not construct those results or their evidence.

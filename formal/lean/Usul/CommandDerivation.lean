@@ -8,8 +8,9 @@ The constructors record which reported reading licenses an evaluation. They are 
 connect this independently stated rule system to the M5 executable functions.
 
 These are derivations *under a supplied candidate reading*, not accepted fatwās.
-Admissibility of a qarīna and the first-command-position context are external
-premises at the admission boundary; the evaluator cannot establish either.
+Admissibility of a qarīna, the first-command-position context and established
+imitation are external premises at the admission boundary. Evaluation cannot
+establish them.
 -/
 
 namespace Usul.CommandSchemata
@@ -124,13 +125,15 @@ def CommandRequest.evaluate (q : CommandRequest) : q.Result :=
   | .obligation r e c => obligationStatus r e c
   | .intended r i => intendedCommand r i
 
-/-- The caller must justify every supplied indication and the source's first-position
-context. This policy is not computed from an encoder output. -/
+/-- The caller must justify every supplied indication, the source's first-position
+context and the author's imitation condition. Boolean selection is not evidence. -/
 structure CommandPremises where
   admissibleQarina : Hukm → Prop
   firstCommandPosition : Prop
+  imitationEstablished : Prop
 
 def CommandPremises.Holds (p : CommandPremises) : CommandRequest → Prop
+  | .propheticAct .authorConditional i => i = true → p.imitationEstablished
   | .obligation _ _ q => p.firstCommandPosition ∧ ∀ h, q = some h → p.admissibleQarina h
   | .intended .. => p.firstCommandPosition
   | _ => True
@@ -182,6 +185,13 @@ theorem admitted_iff {p : CommandPremises} {q : CommandRequest} {v : q.Result} :
 theorem no_admission_without_premises {p : CommandPremises} {q : CommandRequest}
     (missing : ¬ p.Holds q) (v : q.Result) : ¬ Nonempty (AdmittedCommand p q v) :=
   fun ⟨d⟩ => missing d.premises
+
+/-- Setting the encoder flag cannot replace external evidence of imitation. -/
+theorem no_author_admission_without_imitation {p : CommandPremises}
+    (missing : ¬ p.imitationEstablished) :
+    ¬ Nonempty (AdmittedCommand p (.propheticAct .authorConditional true) .literal) := by
+  apply no_admission_without_premises
+  exact fun supplied => missing (supplied rfl)
 
 theorem author_literal_requires_imitation {i : Bool}
     (d : PropheticActDerivation .authorConditional i .literal) : i = true := by

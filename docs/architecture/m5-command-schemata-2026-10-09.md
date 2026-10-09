@@ -24,6 +24,9 @@ supply the question's first-command-position context for the obligation and inte
 branches, and justify every supplied qarīna by an external admissibility predicate.
 An encoder result alone cannot supply those proofs. This admission boundary does not
 adopt a reading, close an interpretation question or confer scholarly authority.
+For the author's conditional prophetic-act inference, setting the imitation flag to
+`true` additionally requires external evidence of established imitation; selecting the
+flag is not evidence. The `false` branch remains an unanswered candidate trace.
 See [the semantic contracts and remaining proof debt](lean-semantic-contracts.md).
 
 ## Source contrasts and boundaries

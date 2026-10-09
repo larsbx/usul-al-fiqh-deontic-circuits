@@ -30,8 +30,25 @@ example {n : Nat} {edges : List (Nat × Nat)} {S : List Nat}
   checkedGrounded_least ok complete
 
 -- Evaluation alone supplies neither the command context nor admissibility.
-def rejectAll : CommandPremises := ⟨fun _ => False, False⟩
-def rejectQarina : CommandPremises := ⟨fun _ => False, True⟩
+def rejectAll : CommandPremises := ⟨fun _ => False, False, False⟩
+def rejectQarina : CommandPremises := ⟨fun _ => False, True, False⟩
+
+-- Even a true input flag cannot manufacture the author's factual premise.
+example : CommandDerivation (.propheticAct .authorConditional true) .literal :=
+  .propheticAct (.authorInference rfl)
+
+example : ¬ Nonempty (AdmittedCommand rejectAll
+    (.propheticAct .authorConditional true) .literal) :=
+  no_author_admission_without_imitation (fun h => h)
+
+-- A caller with actual external evidence can admit the conditional trace.
+example (p : CommandPremises) (imitation : p.imitationEstablished) :
+    AdmittedCommand p (.propheticAct .authorConditional true) .literal :=
+  ⟨fun _ => imitation, .propheticAct (.authorInference rfl)⟩
+
+-- The unanswered branch requires no positive imitation claim.
+example : AdmittedCommand rejectAll (.propheticAct .authorConditional false) .unsettled :=
+  ⟨fun impossible => Bool.noConfusion impossible, .propheticAct (.authorUnanswered rfl)⟩
 
 example : CommandDerivation (.obligation .qadi .wujubLabel (some .mandub)) .mandub :=
   .obligation (.indication rfl)
