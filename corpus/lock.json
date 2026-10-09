@@ -333,6 +333,12 @@
       "bytes": 898601,
       "sha256": "b9f0f61cb04f5174a50b07bb26002290991a409868c2b95ab033b8d2989e22d6"
     },
+    "shamela-337": {
+      "witness": "shamela-337",
+      "url": "https://shamela.ws/book/337/1",
+      "bytes": 2653020,
+      "sha256": "5296e70d35bf1f084aaaa4225c6180adc308f05c16e4769cba4869a4f0a6b321"
+    },
     "shamela-705": {
       "witness": "shamela-705",
       "url": "https://shamela.ws/book/705/1",
@@ -350,6 +356,12 @@
       "url": "https://shamela.ws/book/8874/1",
       "bytes": 203918,
       "sha256": "b58b808206089804adf976ba92e8a46202a1774fb8290e997806f24ce86da8ad"
+    },
+    "shamela-9442": {
+      "witness": "shamela-9442",
+      "url": "https://shamela.ws/book/9442/1",
+      "bytes": 12749777,
+      "sha256": "9076613d147f873e5f21f330bcabdd8d275b14929e0a5c8ea64956be00fe12a7"
     },
     "shamela-9527": {
       "witness": "shamela-9527",
