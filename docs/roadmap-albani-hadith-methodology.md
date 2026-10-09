@@ -38,16 +38,16 @@ is the contested axiom. This fixes three decisions before any axiom is written:
 2. **The prima-facie chain verdict is the weakest link; ʿilla and shudhūdh are not.** The *Nuzha* defines ṣaḥīḥ as ʿadāla, tamām al-ḍabṭ and ittiṣāl, plus the absence of ʿilla and shudhūdh. The first three compose over links. The last two are judged from qarāʾin, so they enter only as defeaters.
 3. **Reversals are data.** al-Albānī's tarājuʿāt are non-monotonicity witnesses: the same ṭuruq with a richer evidence file get a lower (or higher) verdict. A monotone theory could not represent them; the AF can (`Hadith.judge_not_monotone`).
 
-### Status (2026-10-08)
+### Status (2026-10-09)
 
 | Milestone | State | Evidence |
 |---|---|---|
 | H0 registry | **done for the kernel** | 22 works added to `corpus/registry.json` (`track: albani_hadith`), pinned to OpenITI commits or Shamela ids; 14 witnesses fetched and locked (`corpus/lock.json`). The three recalled counts are **confirmed** against the text: 12 marātib (*Taqrīb*, v01:p074–075), 5 tadlīs tiers (*Taʿrīf*, v01:p013–014), 15 qawāʿid (*Tamām al-Minna*, v01:p015–041). Every rung is quoted verbatim in `corpus/hadith/kernel_scales.json` and checked by `test_hadith.py` (see §1.1) |
 | H1 logic record | **decided in §0.1**, ADR prose open | reuses `Usul.Dung` / `Usul.Grounded`; no new semantics |
-| H2 signature | **seeded; marātib verified** | `Hadith.Grade`: the 12 marātib match the *Taqrīb* wording rung for rung, each linked to its constructor (generated `HadithTest/ScaleMap.lean`); 5-valued verdict; bands (ḥujja 1–4, iʿtibār 5–9, shadīd 10–12) proved by `hujja_iff` / `shadid_iff`; bridge `grade` monotone, never `qat`. The *Nuzha* partition tree is not yet extracted |
-| H3 axioms | **15 qawāʿid classified; 6 linked** | `kernel_scales.json`: 2 defeaters (Q1 shudhūdh, Q2 iḍṭirāb), 3 valuations (Q3 tadlīs, Q4 jahāla, Q5 Ibn Ḥibbān's tawthīq), 5 guards (Q6–Q10), 2 presentation rules (Q11, Q13), 3 seam rules (Q12, Q14, Q15). Linked to Lean: Q1–Q4, Q10, Q12. `Hadith.Isnad`: tadlīs tolerance as a `Policy` (the *Taʿrīf* records the tier-3 dispute itself); weakest link proved; monotone in links and in policy |
+| H2 signature | **Nukhba tree in; marātib verified** | `Hadith.Grade`: the 12 marātib match the *Taqrīb* rung for rung; bands proved; bridge `grade` never `qat`. `Hadith.Nukhba` (§2.5): number of ṭuruq (only tawātur yields qaṭʿ: `knowledge_qat_iff`), saqṭ (muʿallaq / mursal / muʿḍal / munqaṭiʿ; tadlīs vs irsāl khafī), the ten ṭaʿn causes in the text's severity order (5 ʿadāla + 5 ḍabṭ), the *Nuzha*'s jabr list; muʿāraḍa reuses `Usul.resolve`. All 20 classes quoted and linked |
+| H3 axioms | **15 + 9 qawāʿid; jarḥ/taʿdīl resolution built** | *Tamām al-Minna*: 15 qawāʿid classified, 7 linked (Q1–Q5, Q10, Q12). *al-Tankīl*: 9 qawāʿid quoted, 4 linked (Q4, Q5, Q7, Q8). `Hadith.JarhTadil` (§2.4): what counts, strength as remoteness of error, the resolution, bias as a qarīna only, narrator ≠ witness. `Hadith.Isnad`: tadlīs `Policy`, weakest link |
 | H5 aggregation | **seeded** | `Hadith.Turuq`: the lift as a defeasible argument; Q10's criterion (sūʾ al-ḥifẓ repairs, tuhma does not) is the shadīd band, proved inert (`liftable_cons_shadid`, `aggregate_of_shadid`); one madār never lifts; at most one rung; worked defeat / reinstatement; non-monotonicity witness |
-| H4 tests | **synthetic only** | `HadithTest.Chains`: 15 `#guard` vectors, each naming its rule; *al-Ḍaʿīfa* is registered (on demand), no entries transcribed yet |
+| H4 tests | **tranche 1 in (al-Ḍaʿīfa 1–16)** | `corpus/hadith/daifa_tranche1.json`, kernel outputs checked by the generated `HadithTest/Daifa.lean`: coverage 12/16 = 0.75; with an isnād 6/10 = 0.6; qarīna share 3/16 (§3, H4). Verbatim checks run once the full *al-Ḍaʿīfa* is cached |
 
 All of this builds with `make lean` and carries no `sorry`; CI's `sorry` check covers `Hadith` and `HadithTest`.
 
@@ -125,11 +125,35 @@ Guards, proved: aggregation never lowers `best` and never climbs more than one r
 
 Defeasibility, shown on worked AFs: no objection ⇒ ḥasan li-ghayrihi; an ʿilla ⇒ ḍaʿīf; a jawāb ⇒ ḥasan again; a second unanswered ʿilla ⇒ ḍaʿīf. `judge_not_monotone` states the existence of a file where adding an objection lowers the verdict.
 
+**Checked against the text** (`Hadith.Nukhba`, §2.5). The *Nuzha* names what a muʿtabar follower repairs: sūʾ al-ḥifẓ (and the unsorted mukhtaliṭ), the mastūr, the mursal, and the mudallas whose omitted narrator is unknown. Every martaba whose cause is on that list sits in the kernel's iʿtibār band (`liftable_in_itibar`), and kadhib/tuhma are shadīd (`kadhib_tuhma_shadid`). The kernel is **wider** in one place: majhūl al-ʿayn (martaba 9) is liftable in the kernel but not named in the text (`majhul_gap`). This stays an open interpretive point rather than a silent fix. Two refinements are pending for H5:
+- the follower must be «فوقه أو مثله لا دونه», which holds at verdict granularity but not yet per martaba;
+- the *Nuzha* says the lifted ḥadīth is «منحط عن رتبة الحسن لذاته» and that some critics would not call it ḥasan. The five-valued verdict does not separate ḥasan li-ghayrihi from ḥasan li-dhātihi.
+
+The *Nuzha*'s justification of the lift is itself evidential: each weak route is equally likely right or wrong, and an agreeing route «رجح أحد الجانبين … فارتقى من درجة التوقف إلى درجة القبول». That supports the design choice of an argument, not an axiom.
+
 **Not claimed:** that the lift is truth-preserving. Whether a given lift *should* stand is the mutaqaddimūn question, and the AF represents it without answering it.
 
-### 2.4 Jarḥ wa-taʿdīl conflict (planned, H3)
+### 2.4 Jarḥ wa-taʿdīl conflict — `Hadith.JarhTadil` (built)
 
-Given critics' statements about one narrator, resolve to a martaba. The candidate order (al-Muʿallimī, *al-Tankīl*; the classical *al-jarḥ al-mufassar muqaddam ʿalā al-taʿdīl*) is a `resolveD` chain of the same shape as `Usul.Taarud`: explained jarḥ ≻ taʿdīl ≻ unexplained jarḥ, with the competence and the tashaddud/tasāhul of each critic as parameters. Exit: the order is total and well-founded, and each disputed step is a parameter with its established positions cited.
+From al-Muʿallimī, *al-Tankīl* (al-Albānī's edition), qawāʿid 4, 5, 7, 8, with *Tamām al-Minna* Q5:
+
+```text
+counts q    = q made «على وجه الحكم» ∧ critic relied on for it (Tamām Q5: not Ibn Ḥibbān's tawthīq of a majhūl)
+strength    = mujmal | mufassar | qāṭiʿ            -- qāṭiʿ: rejecting it imputes deliberate falsehood
+resolve j t = majrūḥ    if j, no t                  -- Q5: an unexplained jarḥ suffices without taʿdīl
+            = ʿadl      if t, no j
+            = tawaqquf  if neither                  -- majhūl
+            = winner    if exactly one side is qāṭiʿ -- «وإن كثر المعدلون»
+            = tarjīḥ by qarīna, else tawaqquf        -- Q7: the side whose error is more remote
+```
+
+Proved: `qati_jarh_wins` and `qati_tadil_wins` hold for every qarīna, so bias (Q4) cannot defeat an established statement; `qarina_only_in_tarjih`; jarḥ antitone, taʿdīl monotone; statements that do not count change nothing (`not_counting_ignored`). The number of critics never enters, only the strongest statement on each side.
+
+**Correction to the earlier plan.** I had planned the order «explained jarḥ ≻ taʿdīl ≻ unexplained jarḥ». The *Tankīl* rejects its middle step for narrators. Taʿdīl beats an unexplained jarḥ by default only for a *witness*, where the judge can question the critic. For a narrator the result is tarjīḥ, or tawaqquf «حتى يسفر البحث» (`rawi_not_shahid`). Tawaqquf is the mastūr's status, so it lands in the iʿtibār band (`tawaqquf_itibar`).
+
+### 2.5 The *Nukhba* tree — `Hadith.Nukhba` (built)
+
+Each taqsīm is a total function into an inductive type, so exhaustive ∧ disjoint hold by construction; the `_iff` lemmas fix each class to the text's definition. See the H2 row and §2.3 for what it checks.
 
 ---
 
@@ -159,6 +183,11 @@ Notation as in the uṣūl roadmap: **Exit** criteria are machine-checkable unle
 - Encode entries from *al-Ḍaʿīfa* (then *al-Ṣaḥīḥa*): ṭuruq, grades as al-Albānī states them, objections and jawābs, and his verdict as the expected output.
 - Failure classes, as in uṣūl M4: `missing_fact | missing_rule | genuine_ikhtilāf | encoding_error`, plus `qarīna` for a verdict that rests on a critic's iʿlāl not reducible to a rule.
 - **Exit:** a CI coverage report; `encoding_error = 0`; the `qarīna` share is reported, because it directly measures the mutaqaddimūn critique.
+- **Tranche 1 (entries 1–16, none skipped).** 12 derivable, 3 qarīna, 1 missing rule, 0 encoding errors. Coverage is 0.75 overall and 0.6 on the 10 entries with an isnād; the 6 no-isnād entries («لا أصل له») are the kernel's empty file. What the data show:
+  - **Defeat on real data.** #2: the marfūʿ has two independent routes, both on the *Nuzha*'s list, so the guard allows ḥasan li-ghayrihi (`kernel_undefeated`). The ṣaḥīḥ mawqūf versions are an ʿilla that defeats it.
+  - **Rules at work.** #11 has one madār, so no lift. In #13 every narrator is thiqa, but al-Walīd b. Muslim (tier 4) uses ʿanʿana: *Tamām* Q6 in action. In #14, takdhīb against a partisan tawthīq is `JarhTadil` in action.
+  - **Qarīna class (#1, #2, #12).** In all three, al-Albānī's verdict falls *below* the best route, through a critic's iʿlāl («باطل منكر», «هو موضوع») or naqd al-matn. The kernel can lower a verdict only by defeating a lift, never below the best route. The missing piece is an ʿilla that attacks a single chain or the matn itself.
+  - **Missing rule (#8).** Matn identity by meaning (siyāq): a weak marfūʿ route exists, but al-Albānī says «لا أصل له مرفوعا» because its siyāq is not the popular saying's sense.
 
 #### H5 · Aggregation metatheory ⟵ H3
 - Generalize §2.3 from labels to the graph. Prove the guards on the graph: independence is graph-theoretic (no shared weak node), and a shadīd node blocks every path through it.
@@ -209,6 +238,8 @@ graph TD
 | Hiding the qarāʾin critique in an encoding error | `qarīna` is a separate failure class with its own metric (H4) |
 | Freezing the *Taqrīb* as truth | It is the default valuation; overrides are data (H3) |
 | Disputed tadlīs tolerance | `Policy` is a parameter; Ibn Ḥajar's default is named, not assumed |
+| Cherry-picking test cases | Tranches are consecutive runs of entries, none skipped (`test_tranches_are_consecutive`) |
+| The kernel wider than the text | Stated as a theorem (`majhul_gap`), not patched |
 | Counts from recall | H0 verifies against pinned witnesses |
 | Verdicts read as taṣḥīḥ | Non-authority clause; every output carries (T, G, E, k) |
 | Leakage into the deontic kernel | One seam (`grade`), checked in H7 |

@@ -20,6 +20,7 @@ import Hadith
 #check @Hadith.Tier.t5
 #check @Hadith.judge
 #check @Hadith.acceptsTadlis
+#check @Hadith.JarhTadil.not_counting_ignored
 #check @Hadith.liftable_cons_shadid
 #check @Hadith.Verdict.hujja_iff_yaqin
 #check @Hadith.Nukhba.Kathra.mutawatir
@@ -42,3 +43,7 @@ import Hadith
 #check @Hadith.Nukhba.Taan.suHifz
 #check @Hadith.Nukhba.liftable
 #check @Hadith.Nukhba.liftable_in_itibar
+#check @Hadith.JarhTadil.qarina_only_in_tarjih
+#check @Hadith.JarhTadil.jarh_alone_wounds
+#check @Hadith.JarhTadil.qati_jarh_wins
+#check @Hadith.JarhTadil.qati_tadil_wins

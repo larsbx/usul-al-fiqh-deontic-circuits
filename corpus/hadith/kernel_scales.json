@@ -159,7 +159,8 @@
           "ref": "src:shamela-11122/v01:p020",
           "excerpt_ar": "القاعدة الخامسة عدم الاعتماد على توثيق ابن حبان",
           "kind": "valuation",
-          "note": "a critic's tasāhul discounts his tawthīq: jarḥ/taʿdīl resolution (H3, roadmap §2.4)"
+          "lean": "Hadith.JarhTadil.not_counting_ignored",
+          "note": "a critic's tasāhul discounts his tawthīq: a statement from a critic not relied on for it counts for nothing (Hadith.JarhTadil)"
         },
         {
           "n": 6,
@@ -380,6 +381,70 @@
           "ref": "src:openiti-nukhba-shamela5940/v04:p724",
           "excerpt_ar": "وكذا المستور والمرسل، والمدلس: صار حديثهم حسنا لا لذاته، بل ب",
           "lean": "Hadith.Nukhba.liftable_in_itibar"
+        }
+      ]
+    },
+    {
+      "id": "tankil_qawaid",
+      "work": "mualimi.tankil",
+      "claim": 9,
+      "items": [
+        {
+          "n": 1,
+          "ref": "src:shamela-12767/v01:p217",
+          "excerpt_ar": "١- رمي الراوي بالكذب في غير الحديث النبوي تقدم في الفصل الثالث قول مالك «لا تأخذ العلم من أربعة وخذ ممن سوى ذلك، لا تأخذ عن معلن بالسفه وإن كان أروى"
+        },
+        {
+          "n": 2,
+          "ref": "src:shamela-12767/v01:p221",
+          "excerpt_ar": "٢- التهمة بالكذب تقدم أن أشد موجبات ردُّ الراوي كذبه في الحديث النبوي، ثم تهمته بذلك، وفي درجتها كذبة في غير الحديث النبوي، فإذا كان في الرواية"
+        },
+        {
+          "n": 3,
+          "ref": "src:shamela-12767/v01:p228",
+          "excerpt_ar": "٣ - رواية المبتدع لا شبهة أن المبتدع إن خرج ببدعته عن الإسلام لم تقبل روايته لأن من شرط قبول الرواية"
+        },
+        {
+          "n": 4,
+          "ref": "src:shamela-12767/v01:p239",
+          "excerpt_ar": "٤- قدح الساخط ومدح المحب ونحو ذلك كلام العالم في غيره على",
+          "kind": "defeater",
+          "lean": "Hadith.JarhTadil.qarina_only_in_tarjih",
+          "note": "bias (sukhṭ, friendship) is a qarīna inside tarjīḥ only; words said in anger or as advice do not count"
+        },
+        {
+          "n": 5,
+          "ref": "src:shamela-12767/v01:p247",
+          "excerpt_ar": "٥- هل يشترط تفسير الجرح؟ إعلم أن الجرح على درجات الأولى المجمل وهو ما لم يبين فيه السبب كقول الجارح «ليس بعدل» «فاسق» ومنه على ذكره الخطيب في",
+          "kind": "valuation",
+          "lean": "Hadith.JarhTadil.jarh_alone_wounds",
+          "note": "an unexplained jarḥ wounds whoever has no taʿdīl, and forces tawaqquf against one who has"
+        },
+        {
+          "n": 6,
+          "ref": "src:shamela-12767/v01:p250",
+          "excerpt_ar": "٦- كيف البحث عن أحوال الرواة من أحب أن ينظر في كتب الجرح والتعديل عن حال رجل وقع في سند، فعليه أن يراعي"
+        },
+        {
+          "n": 7,
+          "ref": "src:shamela-12767/v01:p262",
+          "excerpt_ar": "٧- إذا اجتمع جرح وتعديل فبأيهما يعمل؟ قد ينقل في راو جرح وتعديل ولكننا إذا بحثنا بمقتضى القاعدة السابقة سقط أحدهما أو تبين أنه إنما أريد به ما لا",
+          "kind": "valuation",
+          "lean": "Hadith.JarhTadil.qati_jarh_wins",
+          "note": "taʿdīl does not win by default; the side with the more remote error does; an established jarḥ wins «وإن كثر المعدلون»"
+        },
+        {
+          "n": 8,
+          "ref": "src:shamela-12767/v01:p265",
+          "excerpt_ar": "٨- قولهم: من ثبتت عدالته لم يقبل فيه الجرح إلا ... قال البخاري في (جزء القراءة) : «والذي يذكر عن مالك في ابن إسحاق لا يكاد يبين.. ولو صح.. فلربما",
+          "kind": "valuation",
+          "lean": "Hadith.JarhTadil.qati_tadil_wins",
+          "note": "«من ثبتت عدالته»: established ʿadāla yields only to jarḥ that cannot be dismissed without imputing falsehood (against al-Subkī's blanket immunity)"
+        },
+        {
+          "n": 9,
+          "ref": "src:shamela-12767/v01:p268",
+          "excerpt_ar": "٩- مباحث في الاتصال والانقطاع المبحث الأول: في رواية الرجل بصيغة محتملة للسماع عمن عاصره ولم يثبت لقاؤه"
         }
       ]
     }

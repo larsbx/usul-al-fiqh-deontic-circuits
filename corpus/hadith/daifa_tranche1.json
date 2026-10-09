@@ -1,0 +1,508 @@
+{
+  "note": "Tranche 1 of al-Ḍaʿīfa (H4): entries 1–16 in order, none skipped. Each case gives al-Albānī's verdict, the ṭuruq for the claim (the exact matn, marfūʿ) with only the grades he states, and the objections he raises. `kernel` is what Hadith.judge returns; HadithTest/Daifa.lean (generated) checks every value. Narrators he does not grade, and does not name as the āfa, are encoded thiqa. Term mapping: باطل, ليس بحديث, لا أصل له ↦ mawdu (the bottom; the kernel does not distinguish forged from baseless).",
+  "work": "albani.daifa",
+  "cases": [
+    {
+      "n": 1,
+      "ref": "src:shamela-12762/v01:p053",
+      "excerpt_ar": "(الدين هو العقل، ومن لا دين له لا عقل له) . باطل.",
+      "term_ar": "باطل.",
+      "albani": "mawdu",
+      "kernel": "daif",
+      "class": "qarina",
+      "turuq": [
+        {
+          "madar": "bishr_b_ghalib",
+          "links": [
+            {
+              "rawi": "majhul",
+              "who": "بشر بن غالب",
+              "said_ar": "مجهول كما قال الأزدي"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "الزهري"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "مجمع بن جارية"
+            },
+            {
+              "rawi": "sahabi"
+            }
+          ]
+        },
+        {
+          "madar": "dawud_b_al_muhabbir",
+          "links": [
+            {
+              "rawi": "matruk",
+              "who": "داود بن المحبر",
+              "said_ar": "متروك (الدارقطني)"
+            }
+          ]
+        }
+      ],
+      "note": "kernel: the best route is ḍaʿīf (majhūl) and the other is shadīd, so no lift. al-Albānī's bāṭil rests on al-Nasāʾī's «باطل منكر» and Ibn al-Qayyim's «أحاديث العقل كلها كذب»: a critic's iʿlāl and naqd al-matn, which can lower a verdict below its best route; the kernel cannot."
+    },
+    {
+      "n": 2,
+      "ref": "src:shamela-12762/v01:p054",
+      "excerpt_ar": "(من لم تنهه صلاته عن الفحشاء والمنكر لم يزدد من الله إلا بعدا) . باطل.",
+      "term_ar": "باطل.",
+      "albani": "mawdu",
+      "kernel": "daif",
+      "kernel_undefeated": "hasan",
+      "class": "qarina",
+      "turuq": [
+        {
+          "madar": "layth_b_abi_sulaym",
+          "links": [
+            {
+              "rawi": "daif",
+              "who": "ليث بن أبي سليم",
+              "said_ar": "ضعيف؛ التقريب: صدوق اختلط أخيرا ولم يتميز حديثه فترك"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "طاووس"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "ابن عباس"
+            }
+          ]
+        },
+        {
+          "madar": "al_hasan",
+          "links": [
+            {
+              "rawi": "thiqa",
+              "who": "الحسن البصري",
+              "said_ar": "مرسل",
+              "muttasil": false
+            }
+          ]
+        }
+      ],
+      "args": 2,
+      "attacks": [
+        [
+          1,
+          0
+        ]
+      ],
+      "objections": [
+        "ʿilla: the ṣaḥīḥ version is mawqūf (Ibn Masʿūd; al-Ḥasan's own words), so the rafʿ is not established"
+      ],
+      "note": "Both routes are on the Nuzha's repairable list (mukhtaliṭ not sorted; mursal) and independent, so the lift's guard holds; the mawqūf ʿilla defeats it (args 0 = lift, 1 = ʿilla). The kernel stops at ḍaʿīf; bāṭil adds naqd al-matn (the matn contradicts ṣalāt's being kaffāra)."
+    },
+    {
+      "n": 3,
+      "ref": "src:shamela-12762/v01:p059",
+      "excerpt_ar": "\" همة الرجال تزيل الجبال \". ليس بحديث.",
+      "term_ar": "ليس بحديث.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [],
+      "note": "no isnād: the kernel's empty file is the bottom verdict"
+    },
+    {
+      "n": 4,
+      "ref": "src:shamela-12762/v01:p060",
+      "excerpt_ar": "(الحديث فى المسجد يأكل الحسنات كما تأكل البهائم الحشيش) . لا أصل له.",
+      "term_ar": "لا أصل له.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [],
+      "note": "no isnād"
+    },
+    {
+      "n": 5,
+      "ref": "src:shamela-12762/v01:p061",
+      "excerpt_ar": "(ما ترك عبد شيئا لله لا يتركه إلا لله إلا عوضه منه ما هو خير له فى دينه ودنياه) موضوع بهذا اللفظ.",
+      "term_ar": "موضوع بهذا اللفظ.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "abd_allah_b_sad_al_raqqi",
+          "links": [
+            {
+              "rawi": "kadhdhab",
+              "who": "عبد الله بن سعد الرقي",
+              "said_ar": "كذبه الدارقطني وقال: كان يضع الحديث"
+            },
+            {
+              "rawi": "majhul",
+              "who": "مروة بنت مروان",
+              "said_ar": "لا ذكر لهم في شيء من كتب الحديث"
+            },
+            {
+              "rawi": "majhul",
+              "who": "عاتكة بنت بكار"
+            },
+            {
+              "rawi": "majhul",
+              "who": "بكار بن محمد",
+              "said_ar": "لم يذكر فيه جرحا ولا تعديلا"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "الزهري"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "سالم"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "ابن عمر"
+            }
+          ]
+        }
+      ],
+      "note": "weakest link: a waḍḍāʿ. The shorter matn without «في دينه ودنياه» is ṣaḥīḥ, a different claim"
+    },
+    {
+      "n": 6,
+      "ref": "src:shamela-12762/v01:p062",
+      "excerpt_ar": "\" تنكبوا الغبار فإنه منه تكون النسمة \". لا أعلم له أصلا.",
+      "term_ar": "لا أعلم له أصلا.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [],
+      "note": "the only route (Ibn Saʿd) is mawqūf on ʿAmr b. al-ʿĀṣ, so there is no route for the marfūʿ claim"
+    },
+    {
+      "n": 7,
+      "ref": "src:shamela-12762/v01:p063",
+      "excerpt_ar": "\" اثنتان لا تقربهما: الشرك بالله والإضرار بالناس \". لا أصل له.",
+      "term_ar": "لا أصل له.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [],
+      "note": "no isnād"
+    },
+    {
+      "n": 8,
+      "ref": "src:shamela-12762/v01:p063",
+      "excerpt_ar": "\" اعمل لدنياك كأنك تعيش أبدا، واعمل لآخرتك كأنك تموت غدا \". لا أصل له مرفوعا.",
+      "term_ar": "لا أصل له مرفوعا.",
+      "albani": "mawdu",
+      "kernel": "daif",
+      "class": "missing_rule",
+      "turuq": [
+        {
+          "madar": "mawla_umar_b_abd_al_aziz",
+          "links": [
+            {
+              "rawi": "daif",
+              "who": "أبو صالح عبد الله بن صالح",
+              "said_ar": "ضعف"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "الليث"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "ابن عجلان"
+            },
+            {
+              "rawi": "majhul",
+              "who": "مولى لعمر بن عبد العزيز",
+              "said_ar": "جهالة"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "عبد الله بن عمرو"
+            }
+          ]
+        }
+      ],
+      "note": "the one marfūʿ route (al-Bayhaqī) is weak, yet al-Albānī says «لا أصل له مرفوعا»: its siyāq is not the popular saying's meaning («ليس نصا في أن العمل المذكور فيه هو العمل للدنيا»). Matn identity by meaning is not modelled"
+    },
+    {
+      "n": 9,
+      "ref": "src:shamela-12762/v01:p065",
+      "excerpt_ar": "\" أنا جد كل تقي \". لا أصل له.",
+      "term_ar": "لا أصل له.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [],
+      "note": "no isnād"
+    },
+    {
+      "n": 10,
+      "ref": "src:shamela-12762/v01:p066",
+      "excerpt_ar": "\" إن الله يحب أن يرى عبده تعبا في طلب الحلال \". موضوع.",
+      "term_ar": "موضوع.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "muhammad_b_sahl_al_attar",
+          "links": [
+            {
+              "rawi": "kadhdhab",
+              "who": "محمد بن سهل العطار",
+              "said_ar": "قال الدارقطني: يضع الحديث"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "n": 11,
+      "ref": "src:shamela-12762/v01:p066",
+      "excerpt_ar": "\" إنما بعثت معلما \". ضعيف.",
+      "term_ar": "ضعيف.",
+      "albani": "daif",
+      "kernel": "daif",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "abd_al_rahman_b_ziyad",
+          "links": [
+            {
+              "rawi": "daif",
+              "who": "عبد الرحمن بن زياد بن أنعم",
+              "said_ar": "ضعيف (التقريب)"
+            },
+            {
+              "rawi": "daif",
+              "who": "عبد الرحمن بن رافع",
+              "said_ar": "ضعيف (التقريب)"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "عبد الله بن عمرو"
+            }
+          ]
+        },
+        {
+          "madar": "abd_al_rahman_b_ziyad",
+          "links": [
+            {
+              "rawi": "daif",
+              "who": "داود بن الزبرقان",
+              "said_ar": "ضعفاء"
+            },
+            {
+              "rawi": "daif",
+              "who": "بكر بن خنيس"
+            },
+            {
+              "rawi": "daif",
+              "who": "عبد الرحمن بن زياد"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "عبد الله بن يزيد"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "عبد الله بن عمرو"
+            }
+          ]
+        }
+      ],
+      "note": "two routes, one madār (ʿAbd al-Raḥmān b. Ziyād): no lift (not_liftable_of_one_madar)"
+    },
+    {
+      "n": 12,
+      "ref": "src:shamela-12762/v01:p068",
+      "excerpt_ar": "\" أوحى الله إلى الدنيا: أن اخدمي من خدمني، وأتعبي من خدمك \". موضوع.",
+      "term_ar": "موضوع.",
+      "albani": "mawdu",
+      "kernel": "daif",
+      "class": "qarina",
+      "turuq": [
+        {
+          "madar": "al_husayn_b_dawud",
+          "links": [
+            {
+              "rawi": "daif",
+              "who": "الحسين بن داود البلخي",
+              "said_ar": "لم يكن ثقة (الخطيب)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "الفضيل بن عياض"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "منصور"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "إبراهيم"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "علقمة"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "ابن مسعود"
+            }
+          ]
+        }
+      ],
+      "note": "the only weak link is «not thiqa»; mawḍūʿ follows al-Khaṭīb's ḥukm and the narrator's nuskha «أكثرها موضوع», a qarīna beyond his grade"
+    },
+    {
+      "n": 13,
+      "ref": "src:shamela-12762/v01:p068",
+      "excerpt_ar": "\" أهل الشام سوط الله في أرضه ينتقم بهم ممن يشاء من عباده، وحرام على منافقيهم أن يظهروا على مؤمنيهم، ولا يموتوا إلا غما وهما \". ضعيف.",
+      "term_ar": "ضعيف.",
+      "albani": "daif",
+      "kernel": "daif",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "al_walid_b_muslim",
+          "links": [
+            {
+              "rawi": "thiqa",
+              "who": "الوليد بن مسلم",
+              "said_ar": "ثقة لكنه كثير التدليس والتسوية؛ عنعن",
+              "tadlis": "t4",
+              "sigha": "anana"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "محمد بن أيوب"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "أيوب بن ميسرة"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "خريم بن فاتك"
+            }
+          ]
+        }
+      ],
+      "note": "«إسناد ظاهره الصحة» (Tamām Q6): every narrator thiqa, but a tier-4 mudallis's ʿanʿana caps the chain at ḍaʿīf. The mawqūf ʿilla is a second cause"
+    },
+    {
+      "n": 14,
+      "ref": "src:shamela-12762/v01:p069",
+      "excerpt_ar": "\" إياكم وخضراء الدمن، فقيل: وما خضراء الدمن؟ قال: المرأة الحسناء فى المنبت السوء \". ضعيف جدا.",
+      "term_ar": "ضعيف جدا.",
+      "albani": "daifJiddan",
+      "kernel": "daifJiddan",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "al_waqidi",
+          "links": [
+            {
+              "rawi": "matruk",
+              "who": "الواقدي",
+              "said_ar": "متروك؛ كذبه أحمد والنسائي وابن المديني"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "يحيى بن سعيد بن دينار"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "أبو وجيزة"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "عطاء بن يزيد"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "أبو سعيد الخدري"
+            }
+          ]
+        }
+      ],
+      "disputes": [
+        {
+          "who": "الواقدي",
+          "expected": "majruh",
+          "qawl": [
+            {
+              "side": "jarh",
+              "strength": "mufassar",
+              "by": "أحمد"
+            },
+            {
+              "side": "jarh",
+              "strength": "mufassar",
+              "by": "النسائي"
+            },
+            {
+              "side": "jarh",
+              "strength": "mufassar",
+              "by": "ابن المديني"
+            },
+            {
+              "side": "tadil",
+              "strength": "mujmal",
+              "mutamad": false,
+              "by": "بعض المتعصبين"
+            }
+          ]
+        }
+      ],
+      "note": "«الجرح المبين مقدم على التعديل»: takdhīb is explained jarḥ; the tawthīq comes from partisans (not relied on), so jarḥ stands alone (JarhTadil.not_counting_ignored, jarh_alone_wounds)"
+    },
+    {
+      "n": 15,
+      "ref": "src:shamela-12762/v01:p070",
+      "excerpt_ar": "\" الشام كنانتي فمن أرادها بسوء رميته بسهم منها \". لا أصل له في المرفوع.",
+      "term_ar": "لا أصل له في المرفوع.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [],
+      "note": "the only route is an Isrāʾīlī report (ʿAwn b. ʿAbd Allāh), not marfūʿ"
+    },
+    {
+      "n": 16,
+      "ref": "src:shamela-12762/v01:p070",
+      "excerpt_ar": "\" صنفان من أمتي إذا صلحا صلح الناس: الأمراء والفقهاء، [وفي رواية: العلماء] \". موضوع.",
+      "term_ar": "موضوع.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "muhammad_b_ziyad_al_yashkuri",
+          "links": [
+            {
+              "rawi": "kadhdhab",
+              "who": "محمد بن زياد اليشكري",
+              "said_ar": "كذاب أعور يضع الحديث (أحمد)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "ميمون بن مهران"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "ابن عباس"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/daifa_tranche.schema.json",
+  "title": "al-Ḍaʿīfa test tranche (al-Albānī track, H4)",
+  "type": "object",
+  "required": ["work", "cases"],
+  "additionalProperties": false,
+  "$defs": {
+    "verdict": {"enum": ["mawdu", "daifJiddan", "daif", "hasan", "sahih"]},
+    "martaba": {"enum": ["sahabi", "awthaq", "thiqa", "saduq", "saduqYahim", "maqbul", "mastur", "daif", "majhul", "matruk", "muttaham", "kadhdhab"]}
+  },
+  "properties": {
+    "note": {"type": "string"},
+    "work": {"const": "albani.daifa"},
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["n", "ref", "excerpt_ar", "term_ar", "albani", "kernel", "class", "turuq", "note"],
+        "additionalProperties": false,
+        "properties": {
+          "n": {"type": "integer", "minimum": 1},
+          "ref": {"type": "string", "pattern": "^src:shamela-12762/v\\d+:p\\d+$"},
+          "excerpt_ar": {"type": "string", "minLength": 1},
+          "term_ar": {"type": "string"},
+          "albani": {"$ref": "#/$defs/verdict"},
+          "kernel": {"$ref": "#/$defs/verdict"},
+          "kernel_undefeated": {"$ref": "#/$defs/verdict"},
+          "class": {"enum": ["derivable", "missing_fact", "missing_rule", "genuine_ikhtilaf", "encoding_error", "qarina"]},
+          "turuq": {"type": "array", "items": {
+            "type": "object", "required": ["madar", "links"], "additionalProperties": false,
+            "properties": {
+              "madar": {"type": "string", "pattern": "^[a-z_]+$"},
+              "links": {"type": "array", "minItems": 1, "items": {
+                "type": "object", "required": ["rawi"], "additionalProperties": false,
+                "properties": {
+                  "rawi": {"$ref": "#/$defs/martaba"},
+                  "who": {"type": "string"},
+                  "said_ar": {"type": "string"},
+                  "muttasil": {"type": "boolean"},
+                  "tadlis": {"enum": ["t1", "t2", "t3", "t4", "t5"]},
+                  "sigha": {"enum": ["tasrih", "anana"]}}}}}}},
+          "args": {"type": "integer", "minimum": 1},
+          "attacks": {"type": "array", "items": {"type": "array", "items": {"type": "integer", "minimum": 0}, "minItems": 2, "maxItems": 2}},
+          "objections": {"type": "array", "items": {"type": "string"}},
+          "disputes": {"type": "array", "items": {
+            "type": "object", "required": ["who", "expected", "qawl"], "additionalProperties": false,
+            "properties": {
+              "who": {"type": "string"},
+              "expected": {"enum": ["majruh", "tawaqquf", "adl"]},
+              "qawl": {"type": "array", "items": {
+                "type": "object", "required": ["side", "strength"], "additionalProperties": false,
+                "properties": {"side": {"enum": ["jarh", "tadil"]}, "strength": {"enum": ["mujmal", "mufassar", "qati"]},
+                               "mutamad": {"type": "boolean"}, "hukm": {"type": "boolean"}, "by": {"type": "string"}}}}}}},
+          "note": {"type": "string"}
+        }
+      }
+    }
+  }
+}

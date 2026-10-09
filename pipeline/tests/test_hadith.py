@@ -51,3 +51,54 @@ def test_excerpts_are_verbatim(scale, item):
 
 def test_scale_map_is_generated():
     assert SCALE_LEAN.read_text(encoding="utf-8") == signature_lean(hadith_lean_names(), "Hadith")
+
+
+# --- H4: al-Ḍaʿīfa tranches -------------------------------------------------------------
+
+from usul_corpus import hadith  # noqa: E402
+from usul_corpus.__main__ import CORPUS, DAIFA_LEAN  # noqa: E402
+
+TRANCHES = hadith.tranches(CORPUS)
+CASES = [c for t in TRANCHES for c in t["cases"]]
+DAIFA_RIGHTS = EXCERPT_LEN[WORKS["albani.daifa"]["rights"]]
+
+
+def test_tranche_schema():
+    schema = json.loads((ROOT / "schemas/daifa_tranche.schema.json").read_text())
+    for t in TRANCHES:
+        jsonschema.validate(t, schema)
+
+
+def test_tranches_are_consecutive():
+    """No cherry-picking: a tranche covers a run of entries with none skipped."""
+    for t in TRANCHES:
+        ns = [c["n"] for c in t["cases"]]
+        assert ns == list(range(ns[0], ns[0] + len(ns)))
+
+
+@pytest.mark.parametrize("c", CASES, ids=lambda c: f"daifa-{c['n']}")
+def test_class_matches_kernel(c):
+    """`derivable` exactly when the kernel (as #guard-ed in Lean) agrees with al-Albānī."""
+    assert (c["class"] == "derivable") == (c["kernel"] == c["albani"])
+    assert len(c["excerpt_ar"]) <= DAIFA_RIGHTS
+    assert all(len(l.get("said_ar", "")) <= DAIFA_RIGHTS for t in c["turuq"] for l in t["links"])
+
+
+@pytest.mark.parametrize("c", CASES, ids=lambda c: f"daifa-{c['n']}")
+def test_daifa_excerpts_are_verbatim(c):
+    w, loc = _witness(c["ref"])
+    src = CACHE / f"{w}.txt"
+    if not src.exists():
+        pytest.skip(f"{w} not cached")
+    assert locate(src.read_text(encoding="utf-8"), c["excerpt_ar"]) == loc
+
+
+def test_daifa_lean_is_generated():
+    assert DAIFA_LEAN.read_text(encoding="utf-8") == hadith.daifa_lean(CORPUS)
+
+
+def test_coverage_report():
+    """The H4 metric, pinned so a change to the kernel or the data shows up in review."""
+    assert hadith.coverage(CASES) == {
+        "cases": 16, "coverage": 0.75, "with_isnad": 10, "coverage_with_isnad": 0.6,
+        "qarina_share": 0.188, "classes": {"derivable": 12, "missing_rule": 1, "qarina": 3}}

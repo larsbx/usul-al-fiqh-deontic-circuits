@@ -17,6 +17,7 @@ import json
 import sys
 from pathlib import Path
 
+from . import hadith
 from .fetch import fetch
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
@@ -205,6 +206,7 @@ def _link_matches(link: dict, r: dict) -> bool:
 
 
 SCALE_LEAN = ROOT / "formal" / "lean" / "HadithTest" / "ScaleMap.lean"
+DAIFA_LEAN = ROOT / "formal" / "lean" / "HadithTest" / "Daifa.lean"
 _SOURCES = {"Usul": "corpus/signature_map.json and\n-- corpus/proposals/*.json", "Hadith": "corpus/hadith/*.json"}
 
 
@@ -219,7 +221,7 @@ def signature_lean(names: list[str], lib: str = "Usul") -> str:
 
 def hadith_lean_names() -> list[str]:
     """Lean constants linked from the al-Albānī track's scales, in order."""
-    return [i["lean"] for p in sorted((CORPUS / "hadith").glob("*.json"))
+    return [i["lean"] for p in sorted((CORPUS / "hadith").glob("kernel_scales*.json"))
             for s in _load(p)["scales"] for i in s["items"] if "lean" in i]
 
 
@@ -278,6 +280,7 @@ def cmd_docs(_: argparse.Namespace) -> int:
 def cmd_signature(_: argparse.Namespace) -> int:
     SIGNATURE_LEAN.write_text(signature_lean(_lean_names()), encoding="utf-8")
     SCALE_LEAN.write_text(signature_lean(hadith_lean_names(), "Hadith"), encoding="utf-8")
+    DAIFA_LEAN.write_text(hadith.daifa_lean(CORPUS), encoding="utf-8")
     return 0
 
 
