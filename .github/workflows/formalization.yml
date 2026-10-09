@@ -34,7 +34,7 @@ jobs:
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
       - run: make lean
       - name: Reject sorry
-        run: "! grep -rn --include=*.lean -w sorry formal/lean/Usul formal/lean/UsulTest"
+        run: "! grep -rn --include=*.lean -w sorry formal/lean/Usul formal/lean/UsulTest formal/lean/Hadith formal/lean/HadithTest"
 
   tla:
     name: TLA+ model checking (bounded)

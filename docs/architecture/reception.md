@@ -7,6 +7,8 @@ The canonical fatāwā, masāʾil and rulings collections that the modern Najdī
 | `cited` | a work the modern jurists cite: its `genre`, `madhhab`, the forms that name it (`cite_as`) and the namesakes that must not count (`not`) |
 | `citer` | one of the modern jurists' own collections, tagged with its `scholar` (`ibn_baz`, `ibn_uthaymin`, `albani`, `sadi`) |
 
+The modern oracle data (IslamQA answers that quote these muftīs) is a separate, unregistered source: see [`fatawa-oracle.md`](fatawa-oracle.md). This page covers the classical sources behind those answers.
+
 All works are `layers: ["tests"]`: like *al-Inṣāf* and *al-Sharḥ al-Mumtiʿ* before them, they are sources of furūʿ for the takhrīj suite, not of rules. Nothing here is a fatwā, and the registry makes no claim about which view in a work is correct.
 
 ## Selection
