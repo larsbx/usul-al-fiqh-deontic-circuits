@@ -183,8 +183,11 @@ theorem kadhib_tuhma_shadid (m : Martaba) (t : Taan) (hc : m.cause = some (.taan
   rcases ht with rfl | rfl <;> cases m <;> simp [Martaba.cause] at hc <;> decide
 
 /-- **Where the kernel is wider than the text.** Majhūl al-ʿayn (martaba 9) is in the kernel's
-iʿtibār band, so `Hadith.Turuq` may lift it, but the *Nuzha* names only the mastūr. This is
-recorded as an open interpretive point (roadmap §2.3), not resolved here. -/
+iʿtibār band, so `Hadith.Turuq` may lift it, but the *Nuzha* names only the mastūr.
+**Decision (2026-10-09, project owner): kept repairable.** The kernel follows *Tamām al-Minna*
+Q10, which withholds repair only for «تهمة في صدقهم أو دينهم»; unknown status is not tuhma.
+The theorem stays as the standing record that this goes beyond the *Nuzha*'s list
+(roadmap §2.3, decision D1). -/
 theorem majhul_gap : ¬ Martaba.majhul.verdict.Shadid ∧ liftable (.taan .jahala) = false := by
   decide
 

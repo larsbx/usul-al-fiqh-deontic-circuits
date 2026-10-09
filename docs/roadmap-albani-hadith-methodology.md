@@ -125,7 +125,7 @@ Guards, proved: aggregation never lowers `best` and never climbs more than one r
 
 Defeasibility, shown on worked AFs: no objection ⇒ ḥasan li-ghayrihi; an ʿilla ⇒ ḍaʿīf; a jawāb ⇒ ḥasan again; a second unanswered ʿilla ⇒ ḍaʿīf. `judge_not_monotone` states the existence of a file where adding an objection lowers the verdict.
 
-**Checked against the text** (`Hadith.Nukhba`, §2.5). The *Nuzha* names what a muʿtabar follower repairs: sūʾ al-ḥifẓ (and the unsorted mukhtaliṭ), the mastūr, the mursal, and the mudallas whose omitted narrator is unknown. Every martaba whose cause is on that list sits in the kernel's iʿtibār band (`liftable_in_itibar`), and kadhib/tuhma are shadīd (`kadhib_tuhma_shadid`). The kernel is **wider** in one place: majhūl al-ʿayn (martaba 9) is liftable in the kernel but not named in the text (`majhul_gap`). This stays an open interpretive point rather than a silent fix. Two refinements are pending for H5:
+**Checked against the text** (`Hadith.Nukhba`, §2.5). The *Nuzha* names what a muʿtabar follower repairs: sūʾ al-ḥifẓ (and the unsorted mukhtaliṭ), the mastūr, the mursal, and the mudallas whose omitted narrator is unknown. Every martaba whose cause is on that list sits in the kernel's iʿtibār band (`liftable_in_itibar`), and kadhib/tuhma are shadīd (`kadhib_tuhma_shadid`). The kernel is **wider** in one place: majhūl al-ʿayn (martaba 9) is liftable in the kernel but not named in the text (`majhul_gap`). **Decided: kept repairable** (decision D1 below); the theorem stays as the record of the divergence. Two refinements are pending for H5:
 - the follower must be «فوقه أو مثله لا دونه», which holds at verdict granularity but not yet per martaba;
 - the *Nuzha* says the lifted ḥadīth is «منحط عن رتبة الحسن لذاته» and that some critics would not call it ḥasan. The five-valued verdict does not separate ḥasan li-ghayrihi from ḥasan li-dhātihi.
 
@@ -230,6 +230,12 @@ graph TD
 
 ---
 
+## 3.1 Decisions
+
+| # | Date | Question | Decision | Basis | Record |
+|---|---|---|---|---|---|
+| D1 | 2026-10-09 | Should another route repair a majhūl al-ʿayn (martaba 9)? The *Nuzha*'s jabr list names only the mastūr (majhūl al-ḥāl), sūʾ al-ḥifẓ, the mursal and the mudallas. | **Yes, kept repairable**, as the kernel already had it (iʿtibār band = marātib 5–9). | *Tamām al-Minna* Q10 withholds repair only where the weakness is «تهمة في صدقهم أو دينهم»; jahāla is unknown status, not tuhma. The kernel follows al-Albānī's own criterion here, not the narrower *Nuzha* list. | `Hadith.Nukhba.majhul_gap` states the divergence from the *Nuzha*; `Hadith.Grade.Martaba.shadid_iff` fixes the band. Revisit if H4 tranches show al-Albānī refusing a majhūl al-ʿayn as a shāhid |
+
 ## 4. Risks
 
 | Risk | Mitigation |
@@ -239,7 +245,7 @@ graph TD
 | Freezing the *Taqrīb* as truth | It is the default valuation; overrides are data (H3) |
 | Disputed tadlīs tolerance | `Policy` is a parameter; Ibn Ḥajar's default is named, not assumed |
 | Cherry-picking test cases | Tranches are consecutive runs of entries, none skipped (`test_tranches_are_consecutive`) |
-| The kernel wider than the text | Stated as a theorem (`majhul_gap`), not patched |
+| The kernel wider than the text | Stated as a theorem (`majhul_gap`) and decided explicitly (D1), not patched silently |
 | Counts from recall | H0 verifies against pinned witnesses |
 | Verdicts read as taṣḥīḥ | Non-authority clause; every output carries (T, G, E, k) |
 | Leakage into the deontic kernel | One seam (`grade`), checked in H7 |
