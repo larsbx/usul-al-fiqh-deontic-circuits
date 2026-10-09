@@ -637,4 +637,41 @@ def pardonOfSpreadValid (rightIsVictims : Bool) : Bool := rightIsVictims
 pardon: qāʿida 65's unknown condition. -/
 theorem heirs_right_is_q65 : pardonOfSpreadValid false = countsAsMet false false := rfl
 
+/-! ## M8 tranche 4 -/
+
+/-! ### Qāʿida 2: hair and nails
+
+«شعر الحيوان في حكم المنفصل عنه لا في حكم المتصل، وكذلك الظفر. هذا هو جادة المذهب». -/
+
+inductive Attachment where
+  | attached | detached
+  deriving DecidableEq, Repr
+
+def hairStatus (hairOrNail : Bool) : Attachment := if hairOrNail then .detached else .attached
+
+/-! ### Qawāʿid 20–21: growth from the substance is as a part
+
+20: «النماء المتولد من العين حكمه حكم الجزء، والمتولد من الكسب بخلافه على الصحيح»; 21: whether
+the child is as a part or as earnings, «والأظهر أنه جزء». -/
+
+inductive Growth where
+  | part | separate
+  deriving DecidableEq, Repr
+
+def growthKind (fromSubstance : Bool) : Growth := if fromSubstance then .part else .separate
+
+/-- Qāʿida 21's al-aẓhar is qāʿida 20 applied: the child grows from the mother's substance. -/
+theorem child_is_part : growthKind true = .part := rfl
+
+/-! ### Qāʿida 24: transferring property a due right attaches to
+
+«من تعلق بماله حق واجب عليه فبادر إلى نقل الملك عنه صح، ثم إن كان الحق متعلقا بالمال نفسه لم
+يسقط وإن كان متعلقا بمالكه لمعنى زال بانتقاله عنه سقط، وإن كان لا يزول بانتقاله لم يسقط على
+الأصح». The transfer itself is valid; the reading decides whether the right survives it. -/
+
+def rightSurvivesTransfer (onProperty reasonCeases : Bool) : Bool := onProperty || !reasonCeases
+
+theorem owner_right_lapses_with_its_reason : rightSurvivesTransfer false true = false := rfl
+theorem property_right_survives (r : Bool) : rightSurvivesTransfer true r = true := rfl
+
 end Usul.Refinements

@@ -1,16 +1,16 @@
 {
- "total": 303,
+ "total": 324,
  "classes": {
-  "derivable": 127,
-  "genuine_ikhtilaf": 169,
+  "derivable": 134,
+  "genuine_ikhtilaf": 183,
   "missing_fact": 1,
   "missing_rule": 5,
   "segmentation_error": 1
  },
- "coverage": 0.98,
- "madhhab_coverage": 0.659,
+ "coverage": 0.981,
+ "madhhab_coverage": 0.653,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 72,
+ "ikhtilaf_matching_madhhab": 77,
  "gaps_open": 6,
  "revisited": 37,
  "revisit_queue": [],
@@ -182,6 +182,18 @@
   "defective_compensation": {
    "derivable": 1,
    "genuine_ikhtilaf": 3
+  },
+  "hair_detached": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 3
+  },
+  "growth_from_substance": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 7
+  },
+  "right_after_transfer": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 4
   },
   "umum_lafz": {
    "derivable": 3
