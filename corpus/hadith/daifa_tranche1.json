@@ -9,6 +9,8 @@
       "term_ar": "باطل.",
       "albani": "mawdu",
       "kernel": "daif",
+      "kernel_with_rulings": "mawdu",
+      "args": 2,
       "class": "qarina",
       "turuq": [
         {
@@ -43,6 +45,15 @@
           ]
         }
       ],
+      "rulings": [
+        {
+          "arg": 1,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "النسائي",
+          "said_ar": "هذا حديث باطل منكر"
+        }
+      ],
       "note": "kernel: the best route is ḍaʿīf (majhūl) and the other is shadīd, so no lift. al-Albānī's bāṭil rests on al-Nasāʾī's «باطل منكر» and Ibn al-Qayyim's «أحاديث العقل كلها كذب»: a critic's iʿlāl and naqd al-matn, which can lower a verdict below its best route; the kernel cannot."
     },
     {
@@ -52,7 +63,9 @@
       "term_ar": "باطل.",
       "albani": "mawdu",
       "kernel": "daif",
+      "kernel_with_rulings": "mawdu",
       "kernel_undefeated": "hasan",
+      "args": 4,
       "class": "qarina",
       "turuq": [
         {
@@ -85,7 +98,6 @@
           ]
         }
       ],
-      "args": 2,
       "attacks": [
         [
           1,
@@ -94,6 +106,22 @@
       ],
       "objections": [
         "ʿilla: the ṣaḥīḥ version is mawqūf (Ibn Masʿūd; al-Ḥasan's own words), so the rafʿ is not established"
+      ],
+      "rulings": [
+        {
+          "arg": 2,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "ابن الجنيد",
+          "said_ar": "كذب وزور"
+        },
+        {
+          "arg": 3,
+          "kind": "matn",
+          "ceiling": "mawdu",
+          "by": "الألباني",
+          "said_ar": "هذا مما لا يعقل ولا تشهد له الشريعة"
+        }
       ],
       "note": "Both routes are on the Nuzha's repairable list (mukhtaliṭ not sorted; mursal) and independent, so the lift's guard holds; the mawqūf ʿilla defeats it (args 0 = lift, 1 = ʿilla). The kernel stops at ḍaʿīf; bāṭil adds naqd al-matn (the matn contradicts ṣalāt's being kaffāra)."
     },
@@ -325,6 +353,8 @@
       "term_ar": "موضوع.",
       "albani": "mawdu",
       "kernel": "daif",
+      "kernel_with_rulings": "mawdu",
+      "args": 2,
       "class": "qarina",
       "turuq": [
         {
@@ -356,6 +386,15 @@
               "who": "ابن مسعود"
             }
           ]
+        }
+      ],
+      "rulings": [
+        {
+          "arg": 1,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "الخطيب",
+          "said_ar": "تفرد بروايته الحسين عن الفضيل، وهو موضوع"
         }
       ],
       "note": "the only weak link is «not thiqa»; mawḍūʿ follows al-Khaṭīb's ḥukm and the narrator's nuskha «أكثرها موضوع», a qarīna beyond his grade"

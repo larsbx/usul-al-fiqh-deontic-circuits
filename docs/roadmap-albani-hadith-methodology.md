@@ -47,7 +47,7 @@ is the contested axiom. This fixes three decisions before any axiom is written:
 | H2 signature | **Nukhba tree in; marātib verified** | `Hadith.Grade`: the 12 marātib match the *Taqrīb* rung for rung; bands proved; bridge `grade` never `qat`. `Hadith.Nukhba` (§2.5): number of ṭuruq (only tawātur yields qaṭʿ: `knowledge_qat_iff`), saqṭ (muʿallaq / mursal / muʿḍal / munqaṭiʿ; tadlīs vs irsāl khafī), the ten ṭaʿn causes in the text's severity order (5 ʿadāla + 5 ḍabṭ), the *Nuzha*'s jabr list; muʿāraḍa reuses `Usul.resolve`. All 20 classes quoted and linked |
 | H3 axioms | **15 + 9 qawāʿid; jarḥ/taʿdīl resolution built** | *Tamām al-Minna*: 15 qawāʿid classified, 7 linked (Q1–Q5, Q10, Q12). *al-Tankīl*: 9 qawāʿid quoted, 4 linked (Q4, Q5, Q7, Q8). `Hadith.JarhTadil` (§2.4): what counts, strength as remoteness of error, the resolution, bias as a qarīna only, narrator ≠ witness. `Hadith.Isnad`: tadlīs `Policy`, weakest link |
 | H5 aggregation | **seeded** | `Hadith.Turuq`: the lift as a defeasible argument; Q10's criterion (sūʾ al-ḥifẓ repairs, tuhma does not) is the shadīd band, proved inert (`liftable_cons_shadid`, `aggregate_of_shadid`); one madār never lifts; at most one rung; worked defeat / reinstatement; non-monotonicity witness |
-| H4 tests | **tranches 1–2 in (al-Ḍaʿīfa 1–25)** | `corpus/hadith/daifa_tranche{1,2}.json`, contiguous from entry 1; every kernel output and dispute is checked by the generated `HadithTest/Daifa.lean` (31 guards). Coverage 18/25 = 0.72; with an isnād 10/17 = 0.588; qarīna share 6/25 = 0.24; 0 encoding errors. All 25 quotes verified against the downloaded pages |
+| H4 tests | **tranches 1–2 in (al-Ḍaʿīfa 1–25)** | `corpus/hadith/daifa_tranche{1,2}.json`, contiguous from entry 1; every kernel output and dispute is checked by the generated `HadithTest/Daifa.lean` (31 guards). Coverage by rules 18/25 = 0.72; with an isnād 10/17 = 0.588; qarīna share 6/25 = 0.24; 0 encoding errors. Reported apart (D2): with the critics' cited rulings, 24/25 = 0.96 (all six qarīna cases reach al-Albānī's verdict; #8 still needs a rule). All 25 quotes verified against the downloaded pages |
 
 All of this builds with `make lean` and carries no `sorry`; CI's `sorry` check covers `Hadith` and `HadithTest`.
 
@@ -130,6 +130,8 @@ Defeasibility, shown on worked AFs: no objection ⇒ ḥasan li-ghayrihi; an ʿi
 - the *Nuzha* says the lifted ḥadīth is «منحط عن رتبة الحسن لذاته» and that some critics would not call it ḥasan. The five-valued verdict does not separate ḥasan li-ghayrihi from ḥasan li-dhātihi.
 
 The *Nuzha*'s justification of the lift is itself evidential: each weak route is equally likely right or wrong, and an agreeing route «رجح أحد الجانبين … فارتقى من درجة التوقف إلى درجة القبول». That supports the design choice of an argument, not an axiom.
+
+**Rulings (D2).** A critic's ḥukm («باطل منكر», «هو موضوع») or a matn criterion is an argument with a *ceiling*: if it survives in the AF the verdict is capped there, and a jawāb removes the cap (`judgeR`). Proved: a ruling only lowers (`judgeR_le`), a surviving ruling bounds the verdict (`capWith_le_ceiling`), and with no rulings `judgeR = judge`. Rulings are attached only to qarīna cases, and coverage with rulings is reported apart from coverage by rules.
 
 **Not claimed:** that the lift is truth-preserving. Whether a given lift *should* stand is the mutaqaddimūn question, and the AF represents it without answering it.
 
@@ -239,6 +241,7 @@ graph TD
 | # | Date | Question | Decision | Basis | Record |
 |---|---|---|---|---|---|
 | D1 | 2026-10-09 | Should another route repair a majhūl al-ʿayn (martaba 9)? The *Nuzha*'s jabr list names only the mastūr (majhūl al-ḥāl), sūʾ al-ḥifẓ, the mursal and the mudallas. | **Yes, kept repairable**, as the kernel already had it (iʿtibār band = marātib 5–9). | *Tamām al-Minna* Q10 withholds repair only where the weakness is «تهمة في صدقهم أو دينهم»; jahāla is unknown status, not tuhma. The kernel follows al-Albānī's own criterion here, not the narrower *Nuzha* list. | `Hadith.Nukhba.majhul_gap` states the divergence from the *Nuzha*; `Hadith.Grade.Martaba.shadid_iff` fixes the band. Revisit if H4 tranches show al-Albānī refusing a majhūl al-ʿayn as a shāhid. **Triggered once:** al-Ḍaʿīfa #24 rejects a follower «لجهالة الراوي عنه» (Ibn Dhakwān, unknown to Ibn Maʿīn; ʿayn or ḥāl not stated). Encoded as an objection, so the verdict matches either way; the decision stands until the project owner reopens it |
+| D2 | 2026-10-09 | How should a critic's ruling (ḥukm bi'l-waḍʿ, buṭlān) or a matn criterion enter the kernel? | **As a capping argument, counted apart.** Cases it decides keep `class: qarina`; the kernel's result with the rulings is recorded as `kernel_with_rulings` and reported as `coverage_with_rulings`, never folded into rule coverage. | Folding the rulings into the rules would make the qarīna share (the measure of the mutaqaddimūn critique, §0.1) vanish by construction. | `Hadith.judgeR`, `judgeR_le`, `capWith_le_ceiling`; `test_rulings_only_on_qarina_cases` |
 
 ## 4. Risks
 

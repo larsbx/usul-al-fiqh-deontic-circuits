@@ -43,6 +43,10 @@ def case_lean(c: dict) -> list[str]:
     att = ", ".join(f"({a}, {b})" for a, b in c.get("attacks", []))
     lines = [f"-- al-Ḍaʿīfa {c['n']}: {c['term_ar']} ({c['class']})",
              f"#guard judge {_turuq(c['turuq'])} {c.get('args', 1)} [{att}] = .{c['kernel']}"]
+    if "rulings" in c:
+        rs = ", ".join(f"⟨{r['arg']}, .{r['kind']}, .{r['ceiling']}⟩" for r in c["rulings"])
+        lines.append(f"#guard judgeR {_turuq(c['turuq'])} {c.get('args', 1)} [{att}] [{rs}] = .{c['kernel_with_rulings']}"
+                     "  -- with the cited rulings (D2)")
     if "kernel_undefeated" in c:
         lines.append(f"#guard judge {_turuq(c['turuq'])} 1 [] = .{c['kernel_undefeated']}  -- without the objections")
     lines += [f"#guard JarhTadil.judge [{', '.join(map(_qawl, d['qawl']))}] {_qarina(d)} = .{d['expected']}"
@@ -61,10 +65,13 @@ def daifa_lean(corpus: Path) -> str:
 
 
 def coverage(cases: list[dict]) -> dict:
-    """Derivable share overall and among cases with an isnād (no-isnād cases are trivially bottom)."""
+    """Derivable share overall and among cases with an isnād (no-isnād cases are trivially bottom),
+    and, reported apart (decision D2), the share reached once the critics' cited rulings are added."""
     with_isnad = [c for c in cases if c["turuq"]]
     share = lambda xs, k: round(sum(c["class"] == k for c in xs) / len(xs), 3) if xs else None
     return {"cases": len(cases), "coverage": share(cases, "derivable"),
             "with_isnad": len(with_isnad), "coverage_with_isnad": share(with_isnad, "derivable"),
             "qarina_share": share(cases, "qarina"),
+            "coverage_with_rulings": round(sum(c["class"] == "derivable" or c.get("kernel_with_rulings") == c["albani"]
+                                               for c in cases) / len(cases), 3) if cases else None,
             "classes": {k: sum(c["class"] == k for c in cases) for k in CLASSES if any(c["class"] == k for c in cases)}}

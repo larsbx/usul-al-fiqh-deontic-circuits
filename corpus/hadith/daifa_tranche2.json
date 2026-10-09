@@ -48,6 +48,8 @@
       "term_ar": "موضوع.",
       "albani": "mawdu",
       "kernel": "daifJiddan",
+      "kernel_with_rulings": "mawdu",
+      "args": 2,
       "class": "qarina",
       "turuq": [
         {
@@ -85,6 +87,15 @@
               "who": "أنس"
             }
           ]
+        }
+      ],
+      "rulings": [
+        {
+          "arg": 1,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "ابن الجوزي",
+          "said_ar": "ومن ثم حكم ابن الجوزي بوضعه"
         }
       ],
       "note": "the best route is through ʿUthmān b. Maṭar, encoded muttaham from Ibn Ḥibbān's «يروي الموضوعات عن الأثبات», which the kernel (with the Nukhba: tuhma ⇒ matrūk) values ḍaʿīf jiddan. Mawḍūʿ follows Ibn al-Jawzī's ḥukm, adopted by Ibn ʿArrāq, al-Hindī and Ibn al-Qayyim"
@@ -126,6 +137,8 @@
       "term_ar": "موضوع.",
       "albani": "mawdu",
       "kernel": "daifJiddan",
+      "kernel_with_rulings": "mawdu",
+      "args": 3,
       "class": "qarina",
       "turuq": [
         {
@@ -171,6 +184,22 @@
               "who": "واثلة بن الأسقع"
             }
           ]
+        }
+      ],
+      "rulings": [
+        {
+          "arg": 1,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "ابن الجوزي",
+          "said_ar": "لا أصل له، العلاء يضع"
+        },
+        {
+          "arg": 2,
+          "kind": "matn",
+          "ceiling": "mawdu",
+          "by": "ابن القيم",
+          "said_ar": "ومنها سماجة الحديث وكونه مما يسخر منه"
         }
       ],
       "note": "«علة الحديث ممن دون من ذكرهم»: the others are not the āfa. The second route (al-Suyūṭī's) runs through a narrator «حدث بالبواطيل», valued ḍaʿīf jiddan; mawḍūʿ rests on Ibn al-Jawzī and Ibn al-Qayyim's matn criterion «سماجة الحديث وكونه مما يسخر منه»"
@@ -395,6 +424,8 @@
       "term_ar": "موضوع.",
       "albani": "mawdu",
       "kernel": "daifJiddan",
+      "kernel_with_rulings": "mawdu",
+      "args": 3,
       "class": "qarina",
       "turuq": [
         {
@@ -448,6 +479,22 @@
               "who": "عمر بن الخطاب"
             }
           ]
+        }
+      ],
+      "rulings": [
+        {
+          "arg": 1,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "الذهبي",
+          "said_ar": "بل موضوع، وعبد الرحمن واه"
+        },
+        {
+          "arg": 2,
+          "kind": "matn",
+          "ceiling": "mawdu",
+          "by": "الألباني",
+          "said_ar": "الحديث صريح في أن آدم عليه السلام عرف النبي صلى الله عليه وسلم عقب خلقه"
         }
       ],
       "note": "both routes meet in ʿAbd al-Raḥmān b. Zayd, «الفاحش الخطأ», so the kernel gives ḍaʿīf jiddan; al-Albānī says as much («ضعيفا جدا على أقل الأحوال»). Mawḍūʿ/bāṭil rests on al-Dhahabī and Ibn Ḥajar's «خبر باطل» and on naqd al-matn (Ādam knew the Prophet only after his descent). Al-Fihrī may be the muttaham Ibn Rashīd (Ibn Ḥajar: «لا أستبعد»); encoded majhūl as identified by al-Dhahabī"

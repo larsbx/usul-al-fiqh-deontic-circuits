@@ -9,7 +9,7 @@ import jsonschema
 import pytest
 
 from usul_corpus.__main__ import CACHE, SCALE_LEAN, hadith_lean_names, signature_lean
-from usul_corpus.arabic import locate
+from usul_corpus.arabic import letters, locate
 from usul_corpus.records import EXCERPT_LEN
 
 ROOT = Path(__file__).parents[2]
@@ -101,7 +101,25 @@ def test_coverage_report():
     """The H4 metric, pinned so a change to the kernel or the data shows up in review."""
     assert hadith.coverage(CASES) == {
         "cases": 25, "coverage": 0.72, "with_isnad": 17, "coverage_with_isnad": 0.588,
-        "qarina_share": 0.24, "classes": {"derivable": 18, "missing_rule": 1, "qarina": 6}}
+        "qarina_share": 0.24, "coverage_with_rulings": 0.96,
+        "classes": {"derivable": 18, "missing_rule": 1, "qarina": 6}}
+
+
+@pytest.mark.parametrize("c", CASES, ids=lambda c: f"daifa-{c['n']}")
+def test_rulings_only_on_qarina_cases(c):
+    """D2: a critic's ruling is evidence only where the rules fall short; rule-derived cases carry
+    none, so the qarīna share is not absorbed into the coverage."""
+    assert ("rulings" in c) == (c["class"] == "qarina") == ("kernel_with_rulings" in c)
+    assert all(len(r["said_ar"]) <= DAIFA_RIGHTS for r in c.get("rulings", []))
+
+
+@pytest.mark.parametrize("c", [c for c in CASES if "rulings" in c], ids=lambda c: f"daifa-{c['n']}")
+def test_rulings_are_quoted_verbatim(c):
+    src = CACHE / "shamela-12762.txt"
+    if not src.exists():
+        pytest.skip("al-Ḍaʿīfa not cached")
+    text = letters(src.read_text(encoding="utf-8"))
+    assert all(letters(r["said_ar"]) in text for r in c["rulings"])
 
 
 def test_tranches_are_contiguous():

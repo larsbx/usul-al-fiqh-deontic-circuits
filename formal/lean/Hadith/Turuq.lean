@@ -119,4 +119,67 @@ theorem judge_not_monotone :
     ∃ ts n att n' att', att ⊆ att' ∧ (judge ts n' att').rank < (judge ts n att).rank :=
   ⟨twoWeak, 1, [], 2, [(1, 0)], List.nil_subset _, by decide⟩
 
+
+/-! ## Rulings: a critic's ḥukm or a matn criterion caps the verdict (decision D2)
+
+The qarīna cases of the H4 tranches all sit above al-Albānī's verdict: what lowers them is a
+critic's ruling («باطل منكر», «هو موضوع») or a criterion on the matn, never a rule over
+grades and routes. Such a ruling is an argument of the same AF, with a ceiling: when it is in
+the grounded extension the verdict is capped at the ceiling, and a jawāb that defeats it removes
+the cap. A ruling only ever lowers (`judgeR_le`), and with no rulings `judgeR` is `judge`. The
+kind (`hukm` / `matn`) is kept for reporting: cases decided this way are counted apart from
+rule-derived ones, so the share that rests on a critic's judgement stays visible. -/
+
+inductive RulingKind where
+  | hukm | matn
+  deriving DecidableEq, Repr
+
+structure Ruling where
+  arg     : Nat          -- its index in the AF
+  kind    : RulingKind
+  ceiling : Verdict
+  deriving DecidableEq, Repr
+
+/-- Apply every ruling that survives (is in the grounded set `g`). -/
+def capWith (g : List Nat) (rs : List Ruling) (v : Verdict) : Verdict :=
+  rs.foldr (fun r acc => if g.contains r.arg then r.ceiling.meet acc else acc) v
+
+def judgeR (ts : List Tariq) (n : Nat) (att : List (Nat × Nat)) (rs : List Ruling) : Verdict :=
+  capWith (Usul.Grounded.grounded n att) rs (judge ts n att)
+
+theorem judgeR_nil (ts : List Tariq) (n : Nat) (att : List (Nat × Nat)) :
+    judgeR ts n att [] = judge ts n att := rfl
+
+theorem capWith_le (g : List Nat) (rs : List Ruling) (v : Verdict) : capWith g rs v ≤ v := by
+  induction rs with
+  | nil => exact Verdict.le_refl' v
+  | cons r rs ih =>
+    simp only [capWith, List.foldr_cons]
+    split
+    · exact Verdict.le_trans' (Verdict.meet_le_right _ _) ih
+    · exact ih
+
+/-- A ruling only lowers: it never raises a verdict the rules gave. -/
+theorem judgeR_le (ts : List Tariq) (n : Nat) (att : List (Nat × Nat)) (rs : List Ruling) :
+    judgeR ts n att rs ≤ judge ts n att :=
+  capWith_le _ _ _
+
+/-- A surviving ruling bounds the verdict by its ceiling. -/
+theorem capWith_le_ceiling {g : List Nat} {rs : List Ruling} {r : Ruling} (hr : r ∈ rs)
+    (hg : g.contains r.arg = true) (v : Verdict) : capWith g rs v ≤ r.ceiling := by
+  induction rs with
+  | nil => cases hr
+  | cons x xs ih =>
+    simp only [capWith, List.foldr_cons]
+    rcases List.mem_cons.1 hr with rfl | h
+    · simp only [hg, ite_true]; exact Verdict.meet_le_left _ _
+    · split
+      · exact Verdict.le_trans' (Verdict.meet_le_right _ _) (ih h)
+      · exact ih h
+
+/-- Worked: a forgery ruling caps two weak routes at mawḍūʿ; a jawāb that defeats it restores
+the rule-derived verdict. -/
+example : judgeR twoWeak 2 [] [⟨1, .hukm, .mawdu⟩] = .mawdu := by decide
+example : judgeR twoWeak 3 [(2, 1)] [⟨1, .hukm, .mawdu⟩] = .hasan := by decide
+
 end Hadith

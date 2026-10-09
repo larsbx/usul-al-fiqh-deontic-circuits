@@ -26,6 +26,11 @@
           "albani": {"$ref": "#/$defs/verdict"},
           "kernel": {"$ref": "#/$defs/verdict"},
           "kernel_undefeated": {"$ref": "#/$defs/verdict"},
+          "kernel_with_rulings": {"$ref": "#/$defs/verdict"},
+          "rulings": {"type": "array", "minItems": 1, "items": {
+            "type": "object", "required": ["arg", "kind", "ceiling", "by", "said_ar"], "additionalProperties": false,
+            "properties": {"arg": {"type": "integer", "minimum": 1}, "kind": {"enum": ["hukm", "matn"]},
+                           "ceiling": {"$ref": "#/$defs/verdict"}, "by": {"type": "string"}, "said_ar": {"type": "string"}}}},
           "class": {"enum": ["derivable", "missing_fact", "missing_rule", "genuine_ikhtilaf", "encoding_error", "qarina"]},
           "turuq": {"type": "array", "items": {
             "type": "object", "required": ["madar", "links"], "additionalProperties": false,
