@@ -89,9 +89,10 @@ def test_generated_mirror_exhausts_all_66_new_domain_combinations_and_checks_the
 
 @pytest.mark.parametrize("mutation,message", [
     ("status", "candidate plan"), ("scope", "scope changed"),
+    ("base_commit", "contribution anchor"),
     ("witness", "wrong source witness"), ("source_hash", "source lock"),
     ("records_hash", "source record receipt"), ("case_hash", "original case hash"),
-    ("rewrite_case", "live case changed"), ("promote_gap", "gap was promoted"),
+    ("rewrite_case", "base anchor"), ("promote_gap", "gap was promoted"),
     ("drop_receipt", "case receipt set"), ("duplicate_receipt", "case receipt set"),
     ("locator", "record locator"), ("case_excerpt", "case excerpt"),
     ("encoder", "wrong capability encoder"), ("question_status", "human review"),
@@ -109,6 +110,8 @@ def test_receipt_validation_rejects_unrecorded_changes_and_premature_promotion(m
         plan["status"] = "accepted"
     elif mutation == "scope":
         plan["scope"] = "four gaps closed"
+    elif mutation == "base_commit":
+        plan["base_commit"] = "0" * 40
     elif mutation == "witness":
         plan["source"]["witness"] = "another-witness"
     elif mutation == "source_hash":
@@ -155,6 +158,49 @@ def test_receipt_validation_rejects_unrecorded_changes_and_premature_promotion(m
     else:
         fixture["source_evidence"][0]["excerpt_sha256"] = "0" * 64
     with pytest.raises(ValueError, match=message):
+        m5.validate(plan, CORPUS)
+
+
+@pytest.mark.parametrize("field,value", [
+    ("note", "a silently replaced interpretation"), ("encoder", "nahy"),
+    ("needs", ["rule:another_unprovided_rule"]),
+])
+def test_simultaneous_live_case_and_receipt_rewrite_cannot_move_the_base_anchor(monkeypatch, field, value):
+    plan = _plan()
+    receipt = plan["case_receipts"][0]
+    receipt["original_case"][field] = value
+    receipt["original_case_sha256"] = m5.case_sha256(receipt["original_case"])
+    receipt["needs"] = receipt["original_case"]["needs"]
+    cases = takhrij.load(CORPUS)
+    cases = [receipt["original_case"] if c["far"] == receipt["far"] else c for c in cases]
+    monkeypatch.setattr(takhrij, "load", lambda corpus: cases)
+    with pytest.raises(ValueError, match="original case differs from base anchor"):
+        m5.validate(plan, CORPUS)
+
+
+def test_live_case_change_is_rejected_with_the_original_receipt_intact(monkeypatch):
+    plan = _plan()
+    cases = takhrij.load(CORPUS)
+    next(c for c in cases if c["far"] == plan["case_receipts"][0]["far"])["note"] = "changed live case"
+    monkeypatch.setattr(takhrij, "load", lambda corpus: cases)
+    with pytest.raises(ValueError, match="live case changed without an explicit revisit"):
+        m5.validate(plan, CORPUS)
+
+
+@pytest.mark.parametrize("fixture_id", sorted(m5.required_fixtures()))
+def test_every_required_source_contrast_rejects_silent_deletion(fixture_id):
+    plan = _plan()
+    plan["fixtures"] = [f for f in plan["fixtures"] if f["id"] != fixture_id]
+    with pytest.raises(ValueError, match="required fixture set changed"):
+        m5.validate(plan, CORPUS)
+
+
+def test_retaining_fixture_ids_cannot_replace_a_required_input_contrast():
+    plan = _plan()
+    fixture = next(f for f in plan["fixtures"] if f["id"] == "M5-CMD-004-qadi-fardLabel-mandub")
+    fixture["facts"]["qarina"] = "makruh"
+    fixture["expected"] = "makruh"  # a valid domain input/output, but not the required contrast
+    with pytest.raises(ValueError, match="fixture input matrix changed"):
         m5.validate(plan, CORPUS)
 
 

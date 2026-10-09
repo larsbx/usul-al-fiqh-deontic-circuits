@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+from itertools import product
 from pathlib import Path
 
 from . import takhrij
@@ -13,11 +14,42 @@ PLAN = "worklists/lahham_m5_commands_plan.json"
 WITNESS = "openiti-lahham-shamela8526"
 QAIDA = takhrij.LAHHAM.format(43)
 FARS = {QAIDA + f".f{i:03d}" for i in (1, 3, 4, 7)}
+BASE_COMMIT = "3a9d11776eb3be21702d3624f4152e276fda00ed"
+# Canonical case hashes independently verified at BASE_COMMIT. These anchors live
+# outside the mutable work plan, so editing a case and its receipt together fails.
+ORIGINAL_CASE_SHA256 = {
+    QAIDA + ".f001": "3432b0a46543ccde7f97d0893c50e4a13a3a9e89c83d20ff5bdec5e208ea37cc",
+    QAIDA + ".f003": "42faedea481cd1102166866a76dd6f75c8a428cdc69a74ce2cb8b5388590869e",
+    QAIDA + ".f004": "6c67447789d873d8dc6778ef86c92bc705baf672195282ba6782e4ef2ba8ce65",
+    QAIDA + ".f007": "6541542f5cd5909107f61ba24243afa448e298b15e9744ba3952d11e3abeb15c",
+}
 ENCODERS_BY_FAR = dict(zip(
     [QAIDA + f".f{i:03d}" for i in (1, 3, 4, 7)],
     ["command_nonverbal_usage", "command_prophetic_act_usage",
      "command_obligation_status", "command_intended_usage"],
 ))
+
+
+def required_fixtures() -> dict[str, dict]:
+    """The complete source-contrast input matrix, independently of plan contents."""
+    required = {}
+
+    def add(n: int, label: str, facts: dict) -> None:
+        required[f"M5-CMD-{n:03d}-{label}"] = {"far": QAIDA + f".f{n:03d}", "facts": facts}
+
+    for reading, form in product(("qadiReported", "jamiWriting"), ("writing", "gesture")):
+        add(1, f"{reading}-{form}", dict(reading=reading, form=form))
+    for reading, premise in product(("abuBarakat", "literalReport", "authorConditional"), (False, True)):
+        add(3, f"{reading}-{str(premise).lower()}", dict(reading=reading, imitation_established=premise))
+    for reading in ("qadi", "abuBarakat"):
+        for expression in ("bareCommand", "unqualifiedThreat", "wujubLabel", "fardLabel"):
+            add(4, f"{reading}-{expression}-mandub", dict(reading=reading, expression=expression, qarina="mandub"))
+        add(4, f"{reading}-bareCommand-mubah", dict(reading=reading, expression="bareCommand", qarina="mubah"))
+        add(4, f"{reading}-wujubLabel-none", dict(reading=reading, expression="wujubLabel", qarina="none"))
+    for reading, intended in product(("qadiReport", "karkhiRazi", "abuBarakat", "qadiArgument"),
+                                     ("recommendation", "permission")):
+        add(7, f"{reading}-{intended}", dict(reading=reading, intended=intended))
+    return required
 
 
 def sha256(data: bytes) -> str:
@@ -36,6 +68,7 @@ def _require(condition: bool, message: str) -> None:
 def validate(plan: dict, corpus: Path) -> None:
     """Check candidate scope, source locks, original case receipts, fixtures and review gaps."""
     _require(plan["schema_version"] == 1 and plan["status"] == "candidate", "candidate plan required")
+    _require(plan["base_commit"] == BASE_COMMIT, "original contribution anchor changed")
     _require(plan["scope"] == "capability fixtures only; six live gaps remain open", "scope changed")
     _require(plan["source"]["witness"] == WITNESS, "wrong source witness")
     lock = json.loads((corpus / "lock.json").read_text())["witnesses"][WITNESS]
@@ -51,6 +84,7 @@ def validate(plan: dict, corpus: Path) -> None:
         origin = receipt["original_case"]
         _require(origin["far"] == far and origin["class"] == "missing_rule", "wrong original case")
         _require(case_sha256(origin) == receipt["original_case_sha256"], "original case hash changed")
+        _require(receipt["original_case_sha256"] == ORIGINAL_CASE_SHA256[far], "original case differs from base anchor")
         _require(cases[far] == origin, "live case changed without an explicit revisit")
         _require(receipt["gap_status"] == "open" and receipt["needs"] == origin["needs"], "gap was promoted")
         _require(receipt["record_locator"] == records[far]["locator"], "record locator changed")
@@ -71,6 +105,8 @@ def validate(plan: dict, corpus: Path) -> None:
     _require(selection[0]["status"] == "candidate" and selection[0]["reading"], "reading status changed")
     fixtures = plan["fixtures"]
     _require(len({f["id"] for f in fixtures}) == len(fixtures), "duplicate fixture id")
+    required = required_fixtures()
+    _require({f["id"] for f in fixtures} == required.keys(), "required fixture set changed")
     _require({f["far"] for f in fixtures} == FARS, "fixture scope changed")
     by_far = {r["far"]: r["capability_encoder"] for r in receipts}
     for fixture in fixtures:
@@ -80,6 +116,7 @@ def validate(plan: dict, corpus: Path) -> None:
         _require(set(facts) == set(enc["facts"]), "fixture fact keys changed")
         _require(all(any(type(facts[k]) is type(v) and facts[k] == v for v in dom)
                      for k, dom in enc["facts"].items()), "fixture fact outside typed domain")
+        _require({"far": fixture["far"], "facts": facts} == required[fixture["id"]], "fixture input matrix changed")
         _require(any(type(fixture["expected"]) is type(v) and fixture["expected"] == v for v in enc["out"]),
                  "fixture output outside typed domain")
         _require(enc["py"](facts) == fixture["expected"], "fixture contradicts the candidate encoder")

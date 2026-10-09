@@ -40,8 +40,10 @@ scholarly acceptance is implied by executable outputs.
 ## Provenance and governed scope
 
 The plan pins the full witness, the committed source-record file, four complete original
-case receipts and their Arabic excerpt hashes. Validation compares each live case with
-its original receipt and rejects an unrecorded reinterpretation or status promotion.
+case receipts and their Arabic excerpt hashes. The original case hashes are independently
+anchored in the validator at base commit `3a9d11776eb3be21702d3624f4152e276fda00ed`.
+Validation checks those anchors before comparing each live case with its receipt, so
+rewriting the case and its receipt together cannot silently replace the original reading.
 The historical case locators retain the parent's opening page, p221. Evidence locators
 record the actual later pages without rewriting those historical records.
 
@@ -74,9 +76,12 @@ checks its closing-page marker. It fails if the source is missing unless fetchin
 explicitly requested, and rejects a changed download rather than repinning it. CI runs
 this replay before corpus tests, so these source checks cannot silently skip in CI.
 
-There are 30 source-backed contrast fixtures, 66 exhaustive new Python/Lean domain
+Validation requires all 30 source-backed fixture IDs and their original input matrix;
+deleting a contrast or keeping its ID while changing its inputs fails. There are
+66 exhaustive new Python/Lean domain
 comparisons, 22 independent Lean guards and general proofs of bare-command preservation,
 conditional imitation and preservation of the given intended ruling. The generated
 signature check covers the plan's Lean constants. Receipt mutation tests reject changed
-hashes, missing cases, crossed review links, premature acceptance, unknown inputs and
+hashes, simultaneous case/receipt rewrites, missing cases or contrasts, crossed review
+links, premature acceptance, unknown inputs and
 the unsupported literal gesture conclusion.
