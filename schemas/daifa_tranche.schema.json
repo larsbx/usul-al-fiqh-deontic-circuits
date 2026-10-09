@@ -48,6 +48,7 @@
             "properties": {
               "who": {"type": "string"},
               "expected": {"enum": ["majruh", "tawaqquf", "adl"]},
+              "qarina": {"enum": ["jarh", "tadil"], "description": "the side al-Albānī's qarāʾin favour in tarjīḥ"},
               "qawl": {"type": "array", "items": {
                 "type": "object", "required": ["side", "strength"], "additionalProperties": false,
                 "properties": {"side": {"enum": ["jarh", "tadil"]}, "strength": {"enum": ["mujmal", "mufassar", "qati"]},

@@ -100,5 +100,11 @@ def test_daifa_lean_is_generated():
 def test_coverage_report():
     """The H4 metric, pinned so a change to the kernel or the data shows up in review."""
     assert hadith.coverage(CASES) == {
-        "cases": 16, "coverage": 0.75, "with_isnad": 10, "coverage_with_isnad": 0.6,
-        "qarina_share": 0.188, "classes": {"derivable": 12, "missing_rule": 1, "qarina": 3}}
+        "cases": 25, "coverage": 0.72, "with_isnad": 17, "coverage_with_isnad": 0.588,
+        "qarina_share": 0.24, "classes": {"derivable": 18, "missing_rule": 1, "qarina": 6}}
+
+
+def test_tranches_are_contiguous():
+    """Tranches continue one another: entries 1…n with no gap between tranches."""
+    ns = [c["n"] for c in CASES]
+    assert ns == list(range(1, len(ns) + 1))

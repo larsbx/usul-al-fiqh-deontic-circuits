@@ -1,0 +1,456 @@
+{
+  "note": "Tranche 2 of al-Ḍaʿīfa (H4): entries 17–25 in order, none skipped. Conventions as in tranche 1.",
+  "work": "albani.daifa",
+  "cases": [
+    {
+      "n": 17,
+      "ref": "src:shamela-12762/v01:p071",
+      "excerpt_ar": "\" من أذنب وهو يضحك دخل النار وهو يبكي \". موضوع.",
+      "term_ar": "موضوع.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "al_yashkuri",
+          "links": [
+            {
+              "rawi": "daif",
+              "who": "عمر بن أيوب",
+              "said_ar": "وهاه الدارقطني"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "أبو إبراهيم الترجماني"
+            },
+            {
+              "rawi": "kadhdhab",
+              "who": "محمد بن زياد اليشكري",
+              "said_ar": "كذاب يضع الحديث (أحمد، ابن معين)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "ميمون بن مهران"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "ابن عباس"
+            }
+          ]
+        }
+      ],
+      "note": "the same forger as #16 («فالحمل في الحديث على اليشكري أولى»); the mawqūf on Bakr al-Muzanī is «الأشبه», a different claim"
+    },
+    {
+      "n": 18,
+      "ref": "src:shamela-12762/v01:p072",
+      "excerpt_ar": "\" اتخذوا الحمام المقاصيص فإنها تلهي الجن عن صبيانكم \". موضوع.",
+      "term_ar": "موضوع.",
+      "albani": "mawdu",
+      "kernel": "daifJiddan",
+      "class": "qarina",
+      "turuq": [
+        {
+          "madar": "al_yashkuri",
+          "links": [
+            {
+              "rawi": "kadhdhab",
+              "who": "محمد بن زياد اليشكري",
+              "said_ar": "كذاب يضع الحديث (أحمد، ابن معين)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "ميمون بن مهران"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "ابن عباس"
+            }
+          ]
+        },
+        {
+          "madar": "uthman_b_matar",
+          "links": [
+            {
+              "rawi": "muttaham",
+              "who": "عثمان بن مطر",
+              "said_ar": "يروي الموضوعات عن الأثبات (ابن حبان)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "ثابت"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "أنس"
+            }
+          ]
+        }
+      ],
+      "note": "the best route is through ʿUthmān b. Maṭar, encoded muttaham from Ibn Ḥibbān's «يروي الموضوعات عن الأثبات», which the kernel (with the Nukhba: tuhma ⇒ matrūk) values ḍaʿīf jiddan. Mawḍūʿ follows Ibn al-Jawzī's ḥukm, adopted by Ibn ʿArrāq, al-Hindī and Ibn al-Qayyim"
+    },
+    {
+      "n": 19,
+      "ref": "src:shamela-12762/v01:p072",
+      "excerpt_ar": "\" زينوا مجالس نسائكم بالمغزل \". موضوع.",
+      "term_ar": "موضوع.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "al_yashkuri",
+          "links": [
+            {
+              "rawi": "kadhdhab",
+              "who": "محمد بن زياد اليشكري",
+              "said_ar": "كذاب يضع الحديث (أحمد، ابن معين)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "ميمون بن مهران"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "ابن عباس"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "n": 20,
+      "ref": "src:shamela-12762/v01:p073",
+      "excerpt_ar": "\" زينوا موائدكم بالبقل فإنه مطردة للشيطان مع التسمية \". موضوع.",
+      "term_ar": "موضوع.",
+      "albani": "mawdu",
+      "kernel": "daifJiddan",
+      "class": "qarina",
+      "turuq": [
+        {
+          "madar": "al_ala_b_maslama",
+          "links": [
+            {
+              "rawi": "kadhdhab",
+              "who": "العلاء بن مسلمة",
+              "said_ar": "كان يضع الحديث (ابن طاهر)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "إسماعيل بن مغراء"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "ابن عياش"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "برد"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "مكحول"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "أبو أمامة"
+            }
+          ]
+        },
+        {
+          "madar": "al_hasan_b_shabib",
+          "links": [
+            {
+              "rawi": "muttaham",
+              "who": "الحسن بن شبيب المكتب",
+              "said_ar": "حدث بالبواطيل عن الثقات (ابن عدي)"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "واثلة بن الأسقع"
+            }
+          ]
+        }
+      ],
+      "note": "«علة الحديث ممن دون من ذكرهم»: the others are not the āfa. The second route (al-Suyūṭī's) runs through a narrator «حدث بالبواطيل», valued ḍaʿīf jiddan; mawḍūʿ rests on Ibn al-Jawzī and Ibn al-Qayyim's matn criterion «سماجة الحديث وكونه مما يسخر منه»"
+    },
+    {
+      "n": 21,
+      "ref": "src:shamela-12762/v01:p074",
+      "excerpt_ar": "\" حسبي من سؤالي علمه بحالي \". لا أصل له.",
+      "term_ar": "لا أصل له.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [],
+      "note": "Isrāʾīlī (Kaʿb al-Aḥbār), no marfūʿ route"
+    },
+    {
+      "n": 22,
+      "ref": "src:shamela-12762/v01:p076",
+      "excerpt_ar": "\" توسلوا بجاهي فإن جاهي عند الله عظيم \". لا أصل له.",
+      "term_ar": "لا أصل له.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [],
+      "note": "no isnād (Ibn Taymiyya, al-Qāʿida al-Jalīla)"
+    },
+    {
+      "n": 23,
+      "ref": "src:shamela-12762/v01:p079",
+      "excerpt_ar": "\" الله الذي يحيي ويميت وهو حي لا يموت، اغفر لأمي فاطمة بنت أسد ولقنها حجتها ووسع عليها مدخلها، بحق نبيك والأنبياء الذين من قبلي فإنك أرحم الراحمين ... \". ضعيف.",
+      "term_ar": "ضعيف.",
+      "albani": "daif",
+      "kernel": "daif",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "rawh_b_salah",
+          "links": [
+            {
+              "rawi": "thiqa",
+              "who": "أحمد بن حماد بن زغبة",
+              "said_ar": "ثقة"
+            },
+            {
+              "rawi": "daif",
+              "who": "روح بن صلاح",
+              "said_ar": "ضعفوه؛ السبب روايته المناكير"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "سفيان الثوري"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "عاصم الأحول"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "أنس"
+            }
+          ]
+        }
+      ],
+      "disputes": [
+        {
+          "who": "روح بن صلاح",
+          "expected": "majruh",
+          "qawl": [
+            {
+              "side": "jarh",
+              "strength": "mufassar",
+              "by": "أئمة الجرح (روايته المناكير)"
+            },
+            {
+              "side": "tadil",
+              "strength": "mujmal",
+              "mutamad": false,
+              "by": "ابن حبان"
+            },
+            {
+              "side": "tadil",
+              "strength": "mujmal",
+              "mutamad": false,
+              "by": "الحاكم"
+            }
+          ]
+        }
+      ],
+      "note": "«ابن حبان متساهل… ومثله في التساهل الحاكم… فقولهما عند التعارض لا يقام له وزن حتى ولو كان الجرح مبهما»: the lenient critics' tawthīq does not count, so jarḥ stands alone"
+    },
+    {
+      "n": 24,
+      "ref": "src:shamela-12762/v01:p082",
+      "excerpt_ar": "\" من خرج من بيته إلى الصلاة فقال: اللهم إني أسألك بحق السائلين عليك، وأسألك بحق ممشاي هذا، فإني لم أخرج أشرا ولا بطرا ... أقبل الله عليه بوجهه",
+      "term_ar": "ضعيف.",
+      "albani": "daif",
+      "kernel": "daif",
+      "kernel_undefeated": "hasan",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "atiyya_al_awfi",
+          "links": [
+            {
+              "rawi": "saduqYahim",
+              "who": "فضيل بن مرزوق",
+              "said_ar": "صدوق يهم كثيرا (أبو حاتم)"
+            },
+            {
+              "rawi": "saduqYahim",
+              "who": "عطية العوفي",
+              "said_ar": "صدوق يخطيء كثيرا كان شيعيا مدلسا (التقريب)",
+              "tadlis": "t4",
+              "sigha": "anana"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "أبو سعيد الخدري"
+            }
+          ]
+        },
+        {
+          "madar": "abd_al_hakam_b_dhakwan",
+          "links": [
+            {
+              "rawi": "majhul",
+              "who": "عبد الحكم بن ذكوان",
+              "said_ar": "لا أعرفه (ابن معين)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "أبو الصديق"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "أبو سعيد الخدري"
+            }
+          ]
+        },
+        {
+          "madar": "al_wazi_b_nafi",
+          "links": [
+            {
+              "rawi": "matruk",
+              "who": "الوازع بن نافع",
+              "said_ar": "ضعيف الحديث جدا ليس بشيء (أبو حاتم)"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "بلال"
+            }
+          ]
+        }
+      ],
+      "args": 3,
+      "attacks": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "objections": [
+        "ʿilla: iḍṭirāb of ʿAṭiyya or Ibn Marzūq, marfūʿ and mawqūf («موقوف أشبه», Ibn Abī Ḥātim)",
+        "the follower via ʿAbd al-Ḥakam b. Dhakwān is of no value: «لا قيمة لهذا المتابع لجهالة الراوي عنه»"
+      ],
+      "disputes": [
+        {
+          "who": "فضيل بن مرزوق",
+          "expected": "majruh",
+          "qarina": "jarh",
+          "qawl": [
+            {
+              "side": "tadil",
+              "strength": "mujmal",
+              "by": "جماعة"
+            },
+            {
+              "side": "jarh",
+              "strength": "mufassar",
+              "by": "أبو حاتم: يهم كثيرا"
+            },
+            {
+              "side": "jarh",
+              "strength": "mujmal",
+              "by": "النسائي"
+            },
+            {
+              "side": "jarh",
+              "strength": "mufassar",
+              "by": "ابن حبان في الضعفاء"
+            }
+          ]
+        },
+        {
+          "who": "عطية العوفي",
+          "expected": "majruh",
+          "qarina": "jarh",
+          "qawl": [
+            {
+              "side": "tadil",
+              "strength": "mujmal",
+              "by": "قلة"
+            },
+            {
+              "side": "jarh",
+              "strength": "mufassar",
+              "by": "الجمهور: يخطيء كثيرا"
+            }
+          ]
+        }
+      ],
+      "note": "Without objections the kernel lifts to ḥasan li-ghayrihi: two independent ḍaʿīf routes (ʿAṭiyya; Ibn Dhakwān), al-Wāziʿ shadīd and inert. Two objections defeat the lift. The second rejects a majhūl follower outright: this is D1's revisit trigger (roadmap §3.1), recorded, not acted on. Both disputes go to tarjīḥ (explained jarḥ against unexplained taʿdīl), and the qarīna is the jumhūr's explained jarḥ, adopted in the Taqrīb"
+    },
+    {
+      "n": 25,
+      "ref": "src:shamela-12762/v01:p088",
+      "excerpt_ar": "\" لما اقترف آدم الخطيئة، قال: يا رب أسألك بحق محمد لما غفرت لي",
+      "term_ar": "موضوع.",
+      "albani": "mawdu",
+      "kernel": "daifJiddan",
+      "class": "qarina",
+      "turuq": [
+        {
+          "madar": "abd_al_rahman_b_zayd",
+          "links": [
+            {
+              "rawi": "majhul",
+              "who": "عبد الله بن مسلم الفهري",
+              "said_ar": "لا أدري من هو (الذهبي)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "إسماعيل بن مسلمة"
+            },
+            {
+              "rawi": "matruk",
+              "who": "عبد الرحمن بن زيد بن أسلم",
+              "said_ar": "ضعيف باتفاقهم يغلط كثيرا… فاستحق الترك"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "زيد بن أسلم"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "أسلم"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "عمر بن الخطاب"
+            }
+          ]
+        },
+        {
+          "madar": "abd_al_rahman_b_zayd",
+          "links": [
+            {
+              "rawi": "matruk",
+              "who": "عبد الرحمن بن زيد بن أسلم"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "زيد بن أسلم"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "أسلم"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "عمر بن الخطاب"
+            }
+          ]
+        }
+      ],
+      "note": "both routes meet in ʿAbd al-Raḥmān b. Zayd, «الفاحش الخطأ», so the kernel gives ḍaʿīf jiddan; al-Albānī says as much («ضعيفا جدا على أقل الأحوال»). Mawḍūʿ/bāṭil rests on al-Dhahabī and Ibn Ḥajar's «خبر باطل» and on naqd al-matn (Ādam knew the Prophet only after his descent). Al-Fihrī may be the muttaham Ibn Rashīd (Ibn Ḥajar: «لا أستبعد»); encoded majhūl as identified by al-Dhahabī"
+    }
+  ]
+}

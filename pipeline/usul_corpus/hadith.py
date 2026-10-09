@@ -35,13 +35,17 @@ def _qawl(q: dict) -> str:
     return f"{{ side := .{q['side']}, strength := .{q['strength']}{extra} }}"
 
 
+def _qarina(d: dict) -> str:
+    return f"(some .{d['qarina']})" if "qarina" in d else "none"
+
+
 def case_lean(c: dict) -> list[str]:
     att = ", ".join(f"({a}, {b})" for a, b in c.get("attacks", []))
     lines = [f"-- al-Ḍaʿīfa {c['n']}: {c['term_ar']} ({c['class']})",
              f"#guard judge {_turuq(c['turuq'])} {c.get('args', 1)} [{att}] = .{c['kernel']}"]
     if "kernel_undefeated" in c:
         lines.append(f"#guard judge {_turuq(c['turuq'])} 1 [] = .{c['kernel_undefeated']}  -- without the objections")
-    lines += [f"#guard JarhTadil.judge [{', '.join(map(_qawl, d['qawl']))}] none = .{d['expected']}"
+    lines += [f"#guard JarhTadil.judge [{', '.join(map(_qawl, d['qawl']))}] {_qarina(d)} = .{d['expected']}"
               for d in c.get("disputes", [])]
     return lines
 
