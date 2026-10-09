@@ -637,6 +637,102 @@
    "iq": []
   },
   {
+   "id": "makeup_after_failure",
+   "title": "Make-up description after a binding undertaking",
+   "terms": [
+    "wajib",
+    "fasid",
+    "rukhsa"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031",
+    "note": "Q31 requires make-up in the description of the binding undertaking when it is corrupted."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p040",
+     "excerpt_ar": "من شرع في عبادة تلزم بالشروع ثم فسدت فعليه قضاؤها على صفة التي أفسدها سواء كانت واجبة في الذمة على تلك الصفة أو دونها",
+     "note": "The qāʿida's scope: corruption after a binding start."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p040",
+     "excerpt_ar": "إذا أحرم من بلده ثم أفسد نسكه بجماع وجب قضاؤه والإحرام من موضع إحرامه أولا نص عليه أحمد بخلاف ما إذا أحصر في نسكه ذاك ثم قضاه فإنه لا يلزمه الإحرام إلا من الميقات نص عليه أيضا لأن المحصر فيه لم يلزمه إتمامه",
+     "note": "The paragraph itself supplies corruption and prevention as distinct inputs."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p040",
+     "excerpt_ar": "فإن كان تلفه بتفريطه فعليه إبداله بمثله وإن كان بغير تفريط ففيه وجهان",
+     "note": "Fault branch and two no-fault positions."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p040",
+     "excerpt_ar": "وجزم صاحب المغني بأنه لا يلزمه أكثر مما كان في ذمته",
+     "note": "Selected no-fault position; not a claimed scholarly adoption."
+    }
+   ],
+   "conditions": [
+    "a binding undertaking within the source scope",
+    "distinguish corruption from prevention, and fault from no-fault loss"
+   ],
+   "rationale": "Candidate reading of Q31 and its explicit contrasts. The no-fault branch follows the author of al-Mughni, with the other wajh kept in the suite; no scholarly decision is inferred. The substitute rules are contextual neighbors, not an asserted equivalence.",
+   "lean": [
+    "Usul.Refinements.makeupAfterFailure",
+    "Usul.Refinements.prevention_not_corruption",
+    "Usul.Refinements.fault_changes_replacement"
+   ],
+   "conservative": null,
+   "closes": [
+    "rule:makeup_after_failure"
+   ],
+   "iq": []
+  },
+  {
+   "id": "defective_compensation",
+   "title": "Named versus equivalent compensation in defective contracts",
+   "terms": [
+    "daman",
+    "fasid",
+    "itlaf"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047",
+    "note": "Q47 distinguishes liability class from the amount/basis of compensation; each of its four emitted records tests the latter."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p068",
+     "excerpt_ar": "ضمان المهر في النكاح الفاسد ضمان عقد كضمانه في الصحيح وضمان البيع الفاسد ضمان تلف بخلاف البيع الصحيح",
+     "note": "The source distinction used as the encoder fact."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p067",
+     "excerpt_ar": "المبيع والمعروف في المذهب ضمانه بالقيمة لا بالثمن المسمى",
+     "note": "Known madhhab amount basis."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p068",
+     "excerpt_ar": "الكتابة الفاسدة تضمن بالمسمى فإذا أدى ما سمى فيها حصل العتق ولم يلزمه ضمان قيمته ذكره أبو بكر وهو ظاهر كلام أحمد، واتفق الأصحاب على ذلك",
+     "note": "The common outcome; no claim to resolve competing explanations."
+    }
+   ],
+   "conditions": [
+    "the source identifies whether the selected position treats compensation as contract or loss liability",
+    "lawful consideration; the void/prohibited-consideration branch is outside this encoding"
+   ],
+   "rationale": "The source explicitly contrasts contract compensation in the selected nikah position with loss compensation for defective sale. The suite records the competing named/value positions. Muamalat.priceDue is reused after fixing that source fact, not as evidence for the fact itself. All readings and attributions await human review.",
+   "lean": [
+    "Usul.Refinements.defectiveCompensationBasis",
+    "Usul.Refinements.defectiveCompensation",
+    "Usul.Refinements.defective_compensation_by_basis",
+    "Usul.Refinements.defective_loss_ignores_named"
+   ],
+   "conservative": null,
+   "closes": [
+    "rule:defective_compensation"
+   ],
+   "iq": []
+  },
+  {
    "conservative": null,
    "iq": [
     "IQ-21"

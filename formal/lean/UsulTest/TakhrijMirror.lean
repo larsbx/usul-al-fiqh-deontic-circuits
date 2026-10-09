@@ -240,6 +240,12 @@ import Usul
 #guard (Usul.Refinements.conditionedSaleValid true true) == true
 #guard (Usul.Refinements.pardonOfSpreadValid false) == false
 #guard (Usul.Refinements.pardonOfSpreadValid true) == true
+#guard (Usul.Refinements.makeupAfterFailure .corruption) == .asBegun
+#guard (Usul.Refinements.makeupAfterFailure .prevention) == .baseline
+#guard (Usul.Refinements.makeupAfterFailure .lossWithFault) == .asBegun
+#guard (Usul.Refinements.makeupAfterFailure .lossWithoutFault) == .baseline
+#guard (Usul.Refinements.defectiveCompensationBasis false) == .equivalent
+#guard (Usul.Refinements.defectiveCompensationBasis true) == .agreed
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 #guard (Usul.Dalala.coversBeyondSabab true true false) == true

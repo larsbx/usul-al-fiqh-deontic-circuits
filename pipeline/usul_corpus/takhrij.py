@@ -224,6 +224,15 @@ ENCODERS: dict[str, dict] = {
         sadi=[], qawaid=[RAJAB.format(65)], facts={"right_is_victims": B},
         out=B, lean="Usul.Refinements.pardonOfSpreadValid {right_is_victims}",
         py=lambda f: f["right_is_victims"]),
+    "makeup_after_failure": dict(
+        sadi=[], qawaid=[RAJAB.format(31)],
+        facts={"failure": ("corruption", "prevention", "lossWithFault", "lossWithoutFault")},
+        out=("asBegun", "baseline"), lean="Usul.Refinements.makeupAfterFailure {failure}",
+        py=lambda f: "asBegun" if f["failure"] in ("corruption", "lossWithFault") else "baseline"),
+    "defective_compensation": dict(
+        sadi=[], qawaid=[RAJAB.format(47)], facts={"contract_liability": B},
+        out=("agreed", "equivalent"), lean="Usul.Refinements.defectiveCompensationBasis {contract_liability}",
+        py=lambda f: "agreed" if f["contract_liability"] else "equivalent"),
     "umum_lafz": dict(
         sadi=[], qawaid=[LAHHAM.format(61)], facts={"in_occasion": B, "general_wording": B},
         out=B, lean="Usul.Dalala.coversBeyondSabab true {in_occasion} {general_wording}",

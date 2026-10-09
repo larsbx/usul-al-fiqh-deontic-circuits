@@ -497,6 +497,60 @@ riwāyas; the reading follows the head principle, recourse unless he undertook t
 def takerRecourse (enteredOnLiability : Bool) : Bool := !enteredOnLiability
 
 theorem undertaken_settles : takerRecourse true = false := rfl
+/-! ## M8, third tranche: Ibn Rajab's qawāʿid 31 and 47
+
+These are candidate readings of the named source positions, not adopted rulings.
+Q31 distinguishes corruption after a binding start from prevention, and faulty from
+non-faulty loss. The non-faulty-loss branch follows the author of al-Mughnī; another
+position remains recorded in the annotation. Q47 distinguishes compensation under
+the contract from compensation for loss. It does not identify every defective contract
+with a void contract, or decide which contracts are binding. -/
+
+inductive MakeupFailure where
+  | corruption | prevention | lossWithFault | lossWithoutFault
+  deriving DecidableEq, Repr
+
+inductive MakeupExtent where
+  | asBegun | baseline
+  deriving DecidableEq, Repr
+
+/-- Q31, within its source scope of a binding undertaking. `baseline` in the prevention
+case describes the form of a subsequent make-up, not a duty to perform it. -/
+def makeupAfterFailure : MakeupFailure → MakeupExtent
+  | .corruption | .lossWithFault => .asBegun
+  | .prevention | .lossWithoutFault => .baseline
+
+/-- The pilgrim who corrupted the undertaking and the prevented pilgrim are distinct. -/
+theorem prevention_not_corruption :
+    makeupAfterFailure .prevention ≠ makeupAfterFailure .corruption := by decide
+
+/-- Q31's designated offering: fault preserves its enhanced description; the no-fault
+branch is the expressly recorded al-Mughnī position, not a resolution of the two wujūh. -/
+theorem fault_changes_replacement :
+    makeupAfterFailure .lossWithFault ≠ makeupAfterFailure .lossWithoutFault := by decide
+
+inductive CompensationBasis where
+  | agreed | equivalent
+  deriving DecidableEq, Repr
+
+/-- Q47's explanatory distinction: contract compensation uses the named consideration;
+loss compensation uses the equivalent. The annotation must establish which applies. -/
+def defectiveCompensationBasis (contractLiability : Bool) : CompensationBasis :=
+  if contractLiability then .agreed else .equivalent
+
+/-- Use the existing price/value selector only after the source-backed basis is fixed.
+These Nat arguments are test amounts, not estimates of any historical price. -/
+def defectiveCompensation (contractLiability : Bool) (named equivalent : Nat) : Nat :=
+  Muamalat.priceDue (if contractLiability then some named else none) equivalent
+
+theorem defective_compensation_by_basis (c : Bool) (n v : Nat) :
+    defectiveCompensation c n v =
+      if defectiveCompensationBasis c = .agreed then n else v := by
+  cases c <;> rfl
+
+/-- The loss branch must not preserve the price merely because it was named. -/
+theorem defective_loss_ignores_named (n n' v : Nat) :
+    defectiveCompensation false n v = defectiveCompensation false n' v := rfl
 
 /-! ## Round 5: the open gaps' own principles, after M8 tranches 1–3 -/
 

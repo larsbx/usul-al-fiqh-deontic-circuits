@@ -5,6 +5,7 @@
     python -m usul_corpus validate
     python -m usul_corpus signature   # regenerate the Lean Σ-coverage check
     python -m usul_corpus takhrij     # regenerate the takhrīj guards and report
+    python -m usul_corpus m8-worklist [--check]  # reconcile committed M8 scope
     python -m usul_corpus docs        # render the dossier and glossary pages from corpus/dossier
     python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
     python -m usul_corpus fatawa [--lang L] [--refresh]   # IslamQA offline dumps → .cache/corpus/fatawa/*.jsonl
@@ -223,7 +224,9 @@ def _lean_names() -> list[str]:
     citations = [n for p in sorted((CORPUS / "citations").glob("*.json")) for ns in _load(p)["formalises"].values() for n in ns]
     dossier = [n for e in _load(DOSSIER)["entries"] for n in e["lean"]]
     glossary = [n for t in _load(GLOSSARY)["terms"] for n in t.get("lean", [])]
-    return sigma + proposals + review + citations + dossier + glossary
+    m8 = [n for p in sorted((CORPUS / "worklists").glob("*_plan.json"))
+          for q in _load(p)["selection"] for n in q["reading"]]
+    return sigma + proposals + review + citations + dossier + glossary + m8
 
 
 def _review_names(reg: dict) -> list[str]:
@@ -249,6 +252,29 @@ def cmd_takhrij(_: argparse.Namespace) -> int:
     rep = takhrij.report(cases)
     (CORPUS / "takhrij" / "report.json").write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(json.dumps({k: rep[k] for k in ("total", "coverage", "madhhab_coverage", "encoding_error", "ikhtilaf_matching_madhhab", "classes")}, ensure_ascii=False))
+    return 0
+
+
+def cmd_m8_worklist(args: argparse.Namespace) -> int:
+    from .m8_worklist import OUTPUT, render, scoped_documents
+    path = CORPUS / OUTPUT
+    try:
+        text = render(CORPUS)
+        documents = scoped_documents(ROOT, json.loads(text))
+    except ValueError as e:
+        print(f"m8-worklist: {e}", file=sys.stderr)
+        return 1
+    if args.check:
+        if (not path.exists() or path.read_text(encoding="utf-8") != text
+                or any(p.read_text(encoding="utf-8") != content for p, content in documents.items())):
+            print("M8 worklist stale: run python -m usul_corpus m8-worklist", file=sys.stderr)
+            return 1
+    else:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text, encoding="utf-8")
+        for p, content in documents.items():
+            p.write_text(content, encoding="utf-8")
+    print(json.dumps(json.loads(text)["summary"]))
     return 0
 
 
@@ -330,6 +356,9 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("validate").set_defaults(run=cmd_validate)
     sub.add_parser("signature").set_defaults(run=cmd_signature)
     sub.add_parser("takhrij").set_defaults(run=cmd_takhrij)
+    m = sub.add_parser("m8-worklist")
+    m.add_argument("--check", action="store_true")
+    m.set_defaults(run=cmd_m8_worklist)
     sub.add_parser("docs").set_defaults(run=cmd_docs)
     fa = sub.add_parser("fatawa")
     fa.add_argument("--lang")

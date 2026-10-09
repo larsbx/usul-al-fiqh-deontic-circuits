@@ -395,6 +395,13 @@ import Usul
 #check @Usul.Refinements.amrPerItem
 #check @Usul.Refinements.amrByTakhsis
 #check @Usul.Refinements.mixed_readings_agree
+#check @Usul.Refinements.makeupAfterFailure
+#check @Usul.Refinements.prevention_not_corruption
+#check @Usul.Refinements.fault_changes_replacement
+#check @Usul.Refinements.defectiveCompensationBasis
+#check @Usul.Refinements.defectiveCompensation
+#check @Usul.Refinements.defective_compensation_by_basis
+#check @Usul.Refinements.defective_loss_ignores_named
 #check @Usul.Refinements.rulingUndone
 #check @Usul.Refinements.own_ijtihad_does_not_undo
 #check @Usul.Refinements.clear_text_undoes
@@ -524,3 +531,10 @@ import Usul
 #check @Usul.Refinements.basis_is_first
 #check @Usul.Refinements.attainable_yaqin_excludes_ghalaba
 #check @Usul.Refinements.evident_error_sets_aside
+#check @Usul.Refinements.runningBody
+#check @Usul.Refinements.preferMany
+#check @Usul.Refinements.validWithBasis
+#check @Usul.Refinements.q65_is_the_unbelieved_basis
+#check @Usul.Refinements.handLiable
+#check @Usul.Refinements.takerRecourse
+#check @Usul.Refinements.undertaken_settles

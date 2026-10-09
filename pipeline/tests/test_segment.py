@@ -265,3 +265,25 @@ def test_only_an_open_feminine_pair_absorbs_the_second():
     q = sec("(القاعدة الثالثة) :", "وله صور.\n(أحدها) لو كذا ففيه وجهان أحدهما يصح والثاني لا.\n(والثانية) لو كذا أيضا.\n(والثالثة) لو غير ذلك.")
     (u,) = segment_headed((q,), marker="القاعدة")
     assert u.furu == ("لو كذا ففيه وجهان أحدهما يصح والثاني لا.", "لو كذا أيضا.", "لو غير ذلك.")
+
+
+def test_closed_feminine_pair_keeps_the_next_top_level_second_item():
+    q = sec("(القاعدة الثالثة) :", "وله صور.\n(أحدها) لو كذا ففيه روايتان إحداهما يصح والثانية لا.\n(والثانية) لو كذا أيضا.\n(والثالثة) لو غير ذلك.")
+    (u,) = segment_headed((q,), marker="القاعدة")
+    assert u.furu == ("لو كذا ففيه روايتان إحداهما يصح والثانية لا.", "لو كذا أيضا.", "لو غير ذلك.")
+
+
+def test_open_feminine_pair_closes_before_the_next_top_level_second_item():
+    q = sec("(القاعدة الثالثة) :", "وله صور.\n(أحدها) لو كذا ففيه روايتان إحداهما يصح.\n(والثانية) لا يصح.\n(والثانية) لو كذا أيضا.\n(والثالثة) لو غير ذلك.")
+    (u,) = segment_headed((q,), marker="القاعدة")
+    assert u.furu == ("لو كذا ففيه روايتان إحداهما يصح. (والثانية) لا يصح.", "لو كذا أيضا.", "لو غير ذلك.")
+
+
+def test_opening_list_preserves_f000_and_numbers_only_the_following_records():
+    from usul_corpus.records import qaida_records
+
+    q = sec("(القاعدة الثانية) :", "مسائل: (إحداها) أول مثال.\n(والثانية) ثاني مثال.\n(والثالثة) ثالث مثال.")
+    (u,) = segment_headed((q,), marker="القاعدة")
+    records = qaida_records({"id": "fixture", "rights": "public_domain_text"}, "w", "headed", "q002", u)
+    assert [r["id"] for r in records] == ["fixture.w.q002", "fixture.w.q002.f000", "fixture.w.q002.f001", "fixture.w.q002.f002"]
+    assert [r["case_ar"] for r in records[1:]] == ["أول مثال.", "ثاني مثال.", "ثالث مثال."]
