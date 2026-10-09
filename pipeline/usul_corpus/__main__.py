@@ -6,6 +6,7 @@
     python -m usul_corpus signature   # regenerate the Lean Σ-coverage check
     python -m usul_corpus takhrij     # regenerate the takhrīj guards and report
     python -m usul_corpus m8-worklist [--check]  # reconcile committed M8 scope
+    python -m usul_corpus m5-commands [--fetch-source]  # replay candidate capability receipts
     python -m usul_corpus docs        # render the dossier and glossary pages from corpus/dossier
     python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
     python -m usul_corpus fatawa [--lang L] [--refresh]   # IslamQA offline dumps → .cache/corpus/fatawa/*.jsonl
@@ -278,6 +279,23 @@ def cmd_m8_worklist(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_m5_commands(args: argparse.Namespace) -> int:
+    from . import m5_commands
+    plan = _load(CORPUS / m5_commands.PLAN)
+    try:
+        m5_commands.validate(plan, CORPUS)
+        if args.fetch_source:
+            data = m5_commands.fetch_locked_source(plan, CORPUS, CACHE)
+        else:
+            data = (CACHE / f"{m5_commands.WITNESS}.txt").read_bytes()
+        m5_commands.validate_source(plan, data)
+    except (ValueError, KeyError, OSError) as e:
+        print(f"m5-commands: {e}", file=sys.stderr)
+        return 1
+    print(f"ok: {len(plan['fixtures'])} M5 capability fixtures + full locked source; six case gaps remain open")
+    return 0
+
+
 def docs_pages() -> dict[Path, str]:
     """The generated documentation pages, keyed by path: the dossier and the glossary."""
     from .dossier import render_dossier, render_glossary
@@ -321,6 +339,7 @@ def cmd_fatawa(args: argparse.Namespace) -> int:
 
 def cmd_validate(_: argparse.Namespace) -> int:
     import jsonschema  # test-time dependency only
+    from . import m5_commands
 
     schemas = ROOT / "schemas"
     reg = jsonschema.Draft202012Validator(_load(schemas / "corpus_registry.schema.json"))
@@ -340,7 +359,11 @@ def cmd_validate(_: argparse.Namespace) -> int:
     for link in _load(CORPUS / "signature_map.json")["links"]:
         hits = sum(_link_matches(link, r) for r in records)
         errors += [f"signature_map: {link['lean']} resolves to {hits} records (want 1)"] * (hits != 1)
-    print("\n".join(errors) or f"ok: registry + {len(ids)} records + signature map")
+    try:
+        m5_commands.validate(_load(CORPUS / m5_commands.PLAN), CORPUS)
+    except (ValueError, KeyError, OSError) as e:
+        errors.append(f"m5-commands: {e}")
+    print("\n".join(errors) or f"ok: registry + {len(ids)} records + signature map + M5 receipts")
     return 1 if errors else 0
 
 
@@ -359,6 +382,9 @@ def main(argv: list[str] | None = None) -> int:
     m = sub.add_parser("m8-worklist")
     m.add_argument("--check", action="store_true")
     m.set_defaults(run=cmd_m8_worklist)
+    m5 = sub.add_parser("m5-commands", help="check candidate command capabilities and source receipts")
+    m5.add_argument("--fetch-source", action="store_true", help="restore the full pinned witness without repinning")
+    m5.set_defaults(run=cmd_m5_commands)
     sub.add_parser("docs").set_defaults(run=cmd_docs)
     fa = sub.add_parser("fatawa")
     fa.add_argument("--lang")
