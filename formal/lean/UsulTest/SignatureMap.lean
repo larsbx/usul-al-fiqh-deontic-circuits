@@ -410,6 +410,7 @@ import Usul
 #check @Usul.Refinements.oath_follows_custom
 #check @Usul.Refinements.mixedOutcome
 #check @Usul.Refinements.other_kind_is_consumed
+#check @Usul.Refinements.distinct_stays_separate
 #check @Usul.Refinements.mixedHaram
 #check @Usul.Refinements.rukhsaValid
 #check @Usul.Refinements.rukhsa_is_firm_condition

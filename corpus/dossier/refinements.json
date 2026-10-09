@@ -823,10 +823,11 @@
     "same kind",
     "mixed so that neither part can be told apart"
    ],
-   "rationale": "Qāʿida 22 asks whether what is lost in another is as non-existent. For a thing mixed with its own kind the manṣūṣ answers no: the owners become partners in the whole. Consumption (al-Mujarrad) is kept for other kinds (other_kind_is_consumed).",
+   "rationale": "Qāʿida 22 asks whether what is lost in another is as non-existent. For a thing mixed with its own kind the manṣūṣ answers no: the owners become partners in the whole. Consumption (al-Mujarrad) is kept for other kinds (other_kind_is_consumed). What can still be told apart is neither, and each keeps his own (distinct_stays_separate; 22.f006).",
    "lean": [
     "Usul.Refinements.mixedOutcome",
-    "Usul.Refinements.other_kind_is_consumed"
+    "Usul.Refinements.other_kind_is_consumed",
+    "Usul.Refinements.distinct_stays_separate"
    ],
    "closes": [
     "rule:khalt_as_shirka"
@@ -894,7 +895,7 @@
     "Usul.Refinements.validUnderDoubt"
    ],
    "closes": [
-    "rule:rukhsa_needs_certainty"
+    "fact:rukhsa_needs_certainty"
    ]
   },
   {

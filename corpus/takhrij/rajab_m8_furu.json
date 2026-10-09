@@ -269,10 +269,10 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f001",
-      "encoder": "rukhsa_needs_certainty",
+      "encoder": "rukhsa_under_doubt",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "rukhsa": true,
+        "rukhsa_needs_certainty": true,
         "permission_established": false
       },
       "expected": false,
@@ -292,7 +292,7 @@
         "from_class": "missing_fact",
         "from_encoder": "doubt_in_condition",
         "closed_by": [
-          "rule:rukhsa_needs_certainty"
+          "fact:rukhsa_needs_certainty"
         ]
       }
     },

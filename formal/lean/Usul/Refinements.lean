@@ -583,14 +583,16 @@ theorem oath_follows_custom (c : Bool) :
 «لو خلط زيته بزيت غيره على وجه لا يتميز … المنصوص في رواية عبد الله وأبي الحارث أنه اشتراك». -/
 
 inductive Mixed where
-  | shared | consumed
+  | shared | consumed | separate
   deriving DecidableEq, Repr
 
-/-- Shared when mixed indistinguishably with its own kind; otherwise qāʿida 22's consumption. -/
+/-- Still distinguishable: each keeps his own (22.f006, grain that can be picked out). Mixed
+indistinguishably: shared with its own kind, qāʿida 22's consumption in another kind. -/
 def mixedOutcome (sameKind indistinct : Bool) : Mixed :=
-  if sameKind && indistinct then .shared else .consumed
+  if !indistinct then .separate else if sameKind then .shared else .consumed
 
-theorem other_kind_is_consumed (i : Bool) : mixedOutcome false i = .consumed := rfl
+theorem other_kind_is_consumed : mixedOutcome false true = .consumed := rfl
+theorem distinct_stays_separate (s : Bool) : mixedOutcome s false = .separate := by cases s <;> rfl
 
 /-! ### Lawful wealth mixed with unlawful (Ibn Rajab 22.f007)
 
@@ -608,8 +610,9 @@ def mixedHaram (lawfulMany : Bool) : MixedHaram := if lawfulMany then .takeOut e
 
 «لأن المسح رخصة ولم تتحقق إباحتها فلم يصح كمن قصر وهو يشك في جواز القصر». -/
 
-/-- A concession stands only when its permission is established. -/
-def rukhsaValid (rukhsa permissionEstablished : Bool) : Bool := !rukhsa || permissionEstablished
+/-- A concession whose permission needs certainty stands only when that permission is established. -/
+def rukhsaValid (rukhsaNeedsCertainty permissionEstablished : Bool) : Bool :=
+  !rukhsaNeedsCertainty || permissionEstablished
 
 /-- A concession is qāʿida 68's first type: a condition that needs a firm basis, with no aṣl to
 lean on (the aṣl is the ʿazīma). -/

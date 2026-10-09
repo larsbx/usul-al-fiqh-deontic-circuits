@@ -651,9 +651,9 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f004`: The bequest of a raṭl of the oil stands on partnership and lapses on consumption.
   > لو وصى له برطل من زيت معين ثم خلطه بزيت [آخر] فإن قلنا هو اشتراك لم تبطل الوصية وإن قلنا هو استهلاك بطلت.
 
-**Rationale.** Qāʿida 22 asks whether what is lost in another is as non-existent. For a thing mixed with its own kind the manṣūṣ answers no: the owners become partners in the whole. Consumption (al-Mujarrad) is kept for other kinds (other_kind_is_consumed).
+**Rationale.** Qāʿida 22 asks whether what is lost in another is as non-existent. For a thing mixed with its own kind the manṣūṣ answers no: the owners become partners in the whole. Consumption (al-Mujarrad) is kept for other kinds (other_kind_is_consumed). What can still be told apart is neither, and each keeps his own (distinct_stays_separate; 22.f006).
 
-**Lean:** `Usul.Refinements.mixedOutcome`, `Usul.Refinements.other_kind_is_consumed`  
+**Lean:** `Usul.Refinements.mixedOutcome`, `Usul.Refinements.other_kind_is_consumed`, `Usul.Refinements.distinct_stays_separate`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
 
 <a id="mixed_haram_by_proportion"></a>
@@ -689,7 +689,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 ## A concession stands only when its permission is established
 
 **Terms:** [al-rukhṣa](../glossary.md#rukhsa), [al-yaqīn](../glossary.md#yaqin), [al-shakk](../glossary.md#shakk)  
-**Closes:** `rule:rukhsa_needs_certainty`  
+**Closes:** `fact:rukhsa_needs_certainty`  
 **Register:** —
 
 **Statement**

@@ -15,7 +15,7 @@
     "lock.json": "4273436171c166ee17e5adbc79e64b6384533431f62e67d9f89281c35ea22bc8",
     "records/openiti-rajab-shamela21730.jsonl": "f9cf2452d9cc5b3d9c064eb020b4cd0c6ee00e0dbd06eed8e5f1d821cd06b44c",
     "takhrij/dalala_furu.json": "fe691a7fe3ea277505aa97a3af440a48e88397584164804c11aa13a06808c96f",
-    "takhrij/rajab_m8_furu.json": "78ae3f630b13bcf2fafa4f41a51452b2497eb428dbc96b3e58355e5dba3fd9e8",
+    "takhrij/rajab_m8_furu.json": "ebfc6b6b2caa38a0b205f729323591b7e314bf836856ebd56045209fa581ceed",
     "takhrij/rajab_m8_tranche2_furu.json": "392da202fdfec1c7e5b699eb1e85dced9ca862e344e51a0c209cda91fd55dc0a",
     "takhrij/rajab_m8_tranche3_furu.json": "2cc423038118df38951e81217479363acf9c7aee6b3dc9be4614e4796e825ad1",
     "takhrij/sadi_furu.json": "831e85422af3244e160d1955925c515c6a7e328c4ec5263575b814209839fdc5"
@@ -1165,7 +1165,7 @@
       "home_encoders": [
         "doubt_in_condition",
         "hukm_against_own_ijtihad",
-        "rukhsa_needs_certainty",
+        "rukhsa_under_doubt",
         "taliq_al_bay"
       ]
     },

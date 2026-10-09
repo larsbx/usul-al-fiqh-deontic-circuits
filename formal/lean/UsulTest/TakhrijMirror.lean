@@ -224,9 +224,9 @@ import Usul
 #guard (Usul.Refinements.rulingUndone true) == true
 #guard (Usul.Refinements.oathBody false) == .perJirya
 #guard (Usul.Refinements.oathBody true) == .whole
-#guard (Usul.Refinements.mixedOutcome false false) == .consumed
+#guard (Usul.Refinements.mixedOutcome false false) == .separate
 #guard (Usul.Refinements.mixedOutcome false true) == .consumed
-#guard (Usul.Refinements.mixedOutcome true false) == .consumed
+#guard (Usul.Refinements.mixedOutcome true false) == .separate
 #guard (Usul.Refinements.mixedOutcome true true) == .shared
 #guard (Usul.Refinements.mixedHaram false) == .suspend
 #guard (Usul.Refinements.mixedHaram true) == .takeOut

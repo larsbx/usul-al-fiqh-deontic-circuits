@@ -206,16 +206,16 @@ ENCODERS: dict[str, dict] = {
         py=lambda f: "whole" if f["custom_one_body"] else "perJirya"),
     "khalt_as_shirka": dict(
         sadi=[], qawaid=[RAJAB.format(22)], facts={"same_kind": B, "indistinct": B},
-        out=("shared", "consumed"), lean="Usul.Refinements.mixedOutcome {same_kind} {indistinct}",
-        py=lambda f: "shared" if f["same_kind"] and f["indistinct"] else "consumed"),
+        out=("shared", "consumed", "separate"), lean="Usul.Refinements.mixedOutcome {same_kind} {indistinct}",
+        py=lambda f: "separate" if not f["indistinct"] else "shared" if f["same_kind"] else "consumed"),
     "mixed_haram_by_proportion": dict(
         sadi=[], qawaid=[RAJAB.format(22)], facts={"lawful_many": B},
         out=("suspend", "takeOut"), lean="Usul.Refinements.mixedHaram {lawful_many}",
         py=lambda f: "takeOut" if f["lawful_many"] else "suspend"),
-    "rukhsa_needs_certainty": dict(
-        sadi=[11], qawaid=[RAJAB.format(68)], facts={"rukhsa": B, "permission_established": B},
-        out=B, lean="Usul.Refinements.rukhsaValid {rukhsa} {permission_established}",
-        py=lambda f: not f["rukhsa"] or f["permission_established"]),
+    "rukhsa_under_doubt": dict(
+        sadi=[11], qawaid=[RAJAB.format(68)], facts={"rukhsa_needs_certainty": B, "permission_established": B},
+        out=B, lean="Usul.Refinements.rukhsaValid {rukhsa_needs_certainty} {permission_established}",
+        py=lambda f: not f["rukhsa_needs_certainty"] or f["permission_established"]),
     "taliq_al_bay": dict(
         sadi=[], qawaid=[RAJAB.format(68)], facts={"conditional": B, "known_to_hold": B},
         out=B, lean="Usul.Refinements.conditionedSaleValid {conditional} {known_to_hold}",
