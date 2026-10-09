@@ -14,6 +14,18 @@ from usul_corpus import __main__ as cli
 ROOT = Path(__file__).parents[2]
 CORPUS = ROOT / "corpus"
 
+# Complete gap records independently checked at the original contribution base
+# 3a9d11776eb3be21702d3624f4152e276fda00ed and integrated main 24051f90.
+# Keep this preservation gate separate from the mutable work plan and live totals.
+ORIGINAL_GAP_CASE_SHA256 = {
+    takhrij.LAHHAM.format(43) + ".f001": "3432b0a46543ccde7f97d0893c50e4a13a3a9e89c83d20ff5bdec5e208ea37cc",
+    takhrij.LAHHAM.format(43) + ".f003": "42faedea481cd1102166866a76dd6f75c8a428cdc69a74ce2cb8b5388590869e",
+    takhrij.LAHHAM.format(43) + ".f004": "6c67447789d873d8dc6778ef86c92bc705baf672195282ba6782e4ef2ba8ce65",
+    takhrij.LAHHAM.format(43) + ".f007": "6541542f5cd5909107f61ba24243afa448e298b15e9744ba3952d11e3abeb15c",
+    takhrij.LAHHAM.format(52) + ".f007": "0ba95f474f71653933db2a1bb78fe2483a9ddac3e918abd07e98c499453b9543",
+    takhrij.RAJAB.format(22) + ".f000": "ba72663774a7a84972999b44d0291ed0f05f3a5db176c740042be8d68353ec0a",
+}
+
 
 def _plan():
     return json.loads((CORPUS / m5.PLAN).read_text())
@@ -29,6 +41,7 @@ def _source():
 def test_candidate_receipts_preserve_the_four_live_gaps():
     plan = _plan()
     m5.validate(plan, CORPUS)
+    assert set(m5.ORIGINAL_EVIDENCE_SHA256) == set(m5.required_fixtures())
     assert plan["status"] == "candidate"
     assert all(q["status"] == "open" for q in plan["review_questions"])
     assert all(r["gap_status"] == "open" for r in plan["case_receipts"])
@@ -39,10 +52,12 @@ def test_candidate_receipts_preserve_the_four_live_gaps():
         assert not set(cases[r["far"]]["needs"]) <= takhrij.provides()
 
 
-def test_unrevisited_gaps_stay_open_and_the_report_counts_live_annotations():
+def test_all_six_original_gaps_are_unchanged_and_the_report_counts_live_annotations():
     cases = takhrij.load(CORPUS)
     report = takhrij.report(cases)
-    assert m5.FARS <= {c["far"] for c in cases if c["class"] in takhrij.GAPS}
+    gaps = {c["far"]: m5.case_sha256(c) for c in cases if c["class"] in takhrij.GAPS}
+    assert gaps == ORIGINAL_GAP_CASE_SHA256
+    assert report["gaps_open"] == len(ORIGINAL_GAP_CASE_SHA256) == 6
     assert report["total"] == len(cases)
     assert report["classes"].get("encoding_error", 0) == 0
     assert not {f["id"] for f in _plan()["fixtures"]} & {c["far"] for c in cases}
@@ -293,11 +308,19 @@ def test_source_replay_rejects_hash_or_source_location_drift(mutation):
         m5.validate_source(plan, data)
 
 
-def test_an_existing_q43_quote_cannot_replace_another_fixtures_evidence():
+@pytest.mark.parametrize("fixture_id", sorted(m5.required_fixtures()))
+def test_an_existing_q43_quote_cannot_replace_any_fixtures_evidence(fixture_id):
     plan, data = _plan(), _source()
-    plan["fixtures"][0]["source_evidence"] = copy.deepcopy(plan["fixtures"][-1]["source_evidence"])
+    fixture = next(f for f in plan["fixtures"] if f["id"] == fixture_id)
+    refs = [e["ref"] for e in fixture["source_evidence"]]
+    replacement = next(f for f in plan["fixtures"] if f["far"] != fixture["far"]
+                       and [e["ref"] for e in f["source_evidence"]] != refs)
+    fixture["source_evidence"] = copy.deepcopy(replacement["source_evidence"])
     # The substitute is valid source text from Q43, with valid page and excerpt
-    # hashes, but belongs to the permission question rather than writing/gesture.
+    # hashes, but belongs to a different command question. The fixture's original
+    # ID, inputs, encoder and expected result remain intact.
+    assert all(e["excerpt_sha256"] == m5.sha256(e["excerpt_ar"].encode())
+               for e in fixture["source_evidence"])
     with pytest.raises(ValueError, match="fixture evidence differs from original anchor"):
         m5.validate(plan, CORPUS)
     with pytest.raises(ValueError, match="fixture evidence differs from original anchor"):

@@ -65,8 +65,9 @@ transmitted ruling, and Ibn Rajab 22.f000 combines agreed and disputed cases req
 segmentation or additional facts. A capability fixture is not an annotated case and does
 not increase the live-annotation denominator. The original 303 cases retain their
 interpretations and provenance; main's merged tranche 4 supplies the additional 21
-candidate annotations. Tests check the live report rather than freezing a historical
-snapshot count. Derivability under a candidate encoding is not an
+candidate annotations. Tests independently pin the complete records of all six original
+gaps, including their classifications, requirements and notes. They check the live report
+rather than freezing a historical snapshot count. Derivability under a candidate encoding is not an
 accepted fatwā.
 
 ## Replay and checks
@@ -93,6 +94,7 @@ deleting a contrast or keeping its ID while changing its inputs fails. There are
 comparisons, 22 independent Lean guards and general proofs of bare-command preservation,
 conditional imitation and preservation of the given intended ruling. The generated
 signature check covers the plan's Lean constants. Receipt mutation tests reject changed
-hashes, simultaneous case/receipt rewrites, missing cases or contrasts, crossed review
+hashes, coordinated quotation/reference/hash substitutions for each of the 30 fixtures,
+simultaneous case/receipt rewrites, missing cases or contrasts, crossed review
 links, premature acceptance, unknown inputs and
 the unsupported literal gesture conclusion.
