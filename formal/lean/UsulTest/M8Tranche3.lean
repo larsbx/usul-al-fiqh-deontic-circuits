@@ -20,3 +20,17 @@ open Usul.Refinements
 -- q47.f002–3: the selected contract reading preserves the named consideration.
 #guard defectiveCompensation true 7 11 == 7
 #guard defectiveCompensation true 7 13 == 7
+
+-- PR #32: the generic readings retain their explicit input boundaries.
+#guard runningBody false == .whole
+#guard runningBody true == .perJirya
+#guard preferMany false == false
+#guard preferMany true == true
+#guard validWithBasis true false == false
+#guard validWithBasis false true == false
+#guard validWithBasis true true == true
+#guard handLiable false == false
+#guard handLiable true == true
+-- The input refers to the liability object being checked, not every object in the record.
+#guard takerRecourse true == false
+#guard takerRecourse false == true

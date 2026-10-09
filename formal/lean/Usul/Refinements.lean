@@ -448,6 +448,55 @@ theorem liability_not_by_belief : countsAsMet false true = true := rfl
 act done against a belief later shown wrong does not, unless only liability is at stake. -/
 theorem unknown_condition_does_not_count : countsAsMet false false = false := rfl
 
+/-! ## M8 tranche 3: qawāʿid segmented by their lists and divisions -/
+
+/-! ### Qāʿida 1: running water
+
+«الماء الجاري هل هو كالراكد أو كل جرية منه لها حكم الماء المنفرد. فيه خلاف في المذهب». The reading
+takes the second limb, al-Qāḍī's madhhab on the first farʿ («(والثانية) : المذهب عند القاضي»). -/
+
+inductive Body where
+  | perJirya | whole
+  deriving DecidableEq, Repr
+
+/-- Running water is judged jirya by jirya; still water as one body. -/
+def runningBody (running : Bool) : Body := if running then .perJirya else .whole
+
+/-! ### Qāʿida 17: one noble act against many
+
+«إذا تقابل عملان أحدهما ذو شرف في نفسه ورفعة وهو واحد، والآخر ذو تعدد في نفسه وكثرة … ظاهر كلام
+أحمد ترجيح الكثرة», the two costing the same time or money («في زمن واحد», «بعشرة»). Outside
+equal cost the qāʿida makes no comparison, and the reading prefers neither. -/
+
+def preferMany (sameCost : Bool) : Bool := sameCost
+
+/-! ### Qāʿida 66: acting on a mistaken basis while the true one exists
+
+«ولو تصرف مستندا إلى سبب ثم تبين خطؤه فيه وأن السبب المعتمد غيره وهو موجود فهو نوعان», and in
+both «التصرف صحيح» (the second: «والمذهب هنا الصحة بلا ريب»). -/
+
+/-- Valid when he acted on a basis he believed and a valid basis in fact existed. -/
+def validWithBasis (believed actual : Bool) : Bool := believed && actual
+
+/-- The contrast with qāʿida 65: there he acted believing the basis absent, and the act fails. -/
+theorem q65_is_the_unbelieved_basis : validWithBasis false true = countsAsMet false false := rfl
+
+/-! ### Qāʿida 91: what the hand takes in
+
+«يضمن بالعقد وباليد الأموال المحضة»; of what is not pure property, what has a share of it (umm
+al-walad, the mukātab, the mudabbar) «فيضمن باليد», while «الحر لا تثبت عليه اليد». -/
+
+def handLiable (propertyLike : Bool) : Bool := propertyLike
+
+/-! ### Qāʿida 93: the hands that take from a usurper unaware
+
+«إن كان القابض قد دخل على ضمان عين أو منفعة استقر ضمانها عليه ولم يرجع على الغاصب … ما لم يدخل
+على ضمانه … رجع به على الغاصب». Where he benefited from what he did not undertake there are two
+riwāyas; the reading follows the head principle, recourse unless he undertook the liability. -/
+
+def takerRecourse (enteredOnLiability : Bool) : Bool := !enteredOnLiability
+
+theorem undertaken_settles : takerRecourse true = false := rfl
 /-! ## M8, third tranche: Ibn Rajab's qawāʿid 31 and 47
 
 These are candidate readings of the named source positions, not adopted rulings.

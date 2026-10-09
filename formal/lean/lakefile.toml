@@ -1,9 +1,15 @@
 name = "usul"
 version = "0.1.0"
-defaultTargets = ["Usul", "UsulTest"]
+defaultTargets = ["Usul", "UsulTest", "Hadith", "HadithTest"]
 
 [[lean_lib]]
 name = "Usul"
 
 [[lean_lib]]
 name = "UsulTest"
+
+[[lean_lib]]
+name = "Hadith"
+
+[[lean_lib]]
+name = "HadithTest"

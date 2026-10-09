@@ -208,6 +208,18 @@ import Usul
 #guard (Usul.Refinements.countsAsMet false true) == true
 #guard (Usul.Refinements.countsAsMet true false) == true
 #guard (Usul.Refinements.countsAsMet true true) == true
+#guard (Usul.Refinements.runningBody false) == .whole
+#guard (Usul.Refinements.runningBody true) == .perJirya
+#guard (Usul.Refinements.preferMany false) == false
+#guard (Usul.Refinements.preferMany true) == true
+#guard (Usul.Refinements.validWithBasis false false) == false
+#guard (Usul.Refinements.validWithBasis false true) == false
+#guard (Usul.Refinements.validWithBasis true false) == false
+#guard (Usul.Refinements.validWithBasis true true) == true
+#guard (Usul.Refinements.handLiable false) == false
+#guard (Usul.Refinements.handLiable true) == true
+#guard (Usul.Refinements.takerRecourse false) == true
+#guard (Usul.Refinements.takerRecourse true) == false
 #guard (Usul.Refinements.makeupAfterFailure .corruption) == .asBegun
 #guard (Usul.Refinements.makeupAfterFailure .prevention) == .baseline
 #guard (Usul.Refinements.makeupAfterFailure .lossWithFault) == .asBegun

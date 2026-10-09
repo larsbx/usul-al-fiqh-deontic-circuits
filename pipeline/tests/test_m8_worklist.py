@@ -27,15 +27,19 @@ def test_worklist_is_generated_and_its_denominators_reconcile_independently():
     covered = {c["far"] for c in takhrij.load(CORPUS)} & fars.keys()
     pending = fars.keys() - covered
     summary = inventory["summary"]
-    assert summary["segmented_furu"] == len(fars) == 1136
+    assert summary["segmented_furu"] == len(fars) == 1179
     assert summary["annotated_furu"] == len(covered)
     assert summary["pending_furu"] == len(pending)
     assert summary["qawaid_awaiting_annotation"] == len({fars[i] for i in pending})
-    assert summary["qawaid_needing_source_segmentation"] == len(parents - set(fars.values())) == 20
+    assert summary["qawaid_needing_source_segmentation"] == len(parents - set(fars.values())) == 6
     assert set(i for q in inventory["qawaid"] for i in q["pending_furu"]) == pending
     assert not any(q["pending_furu"] for q in inventory["qawaid"] if q["state"] == "needs_source_segmentation")
     # Annotated gaps are already inventoried, not silently counted again as new work.
     assert not {c["far"] for c in takhrij.load(CORPUS) if c.get("needs")} & pending
+    report = takhrij.report(takhrij.load(CORPUS))
+    assert inventory["aggregate_report"] == {k: report[k] for k in inventory["aggregate_report"]}
+    suite = _json(CORPUS / "takhrij/rajab_m8_tranche3_furu.json")
+    assert inventory["tranche3_report"] == takhrij.report(suite["cases"])
 
 
 def _fixture():
@@ -98,7 +102,7 @@ def test_selected_tranche_has_exact_obligations_and_open_human_review():
     expected = {r["id"] for r in records.values() if r.get("qaida") in chosen}
     cases = {c["far"]: c for c in suite["cases"]}
     assert set(cases) == expected == {o["far"] for o in plan["obligations"]}
-    assert len(expected) == len(plan["obligations"]) == 8
+    assert len(expected) == len(plan["obligations"]) == 29
     assert takhrij.RAJAB.format(47) + ".f000" in expected
     assert suite["status"] == plan["status"] == "candidate"
     assert all(q["status"] == "open" for q in plan["review_questions"])
@@ -117,8 +121,49 @@ def test_selected_tranche_has_exact_obligations_and_open_human_review():
         assert all(g in guards for g in o["additional_guards"])
 
 
+def test_both_pr_contributions_are_preserved_without_case_reinterpretation():
+    plan = _json(CORPUS / "worklists/rajab_m8_tranche3_plan.json")
+    cases = {c["far"]: c for c in _json(CORPUS / "takhrij/rajab_m8_tranche3_furu.json")["cases"]}
+    receipts = {r["pr"]: r["case_sha256"] for r in plan["contributions"]}
+    assert set(receipts) == {31, 32}
+    assert len(receipts[31]) == 8 and len(receipts[32]) == 21
+    assert not receipts[31].keys() & receipts[32].keys()
+    assert receipts[31].keys() | receipts[32].keys() == cases.keys()
+    for receipt in receipts.values():
+        for far, expected_hash in receipt.items():
+            encoded = json.dumps(cases[far], ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+            assert hashlib.sha256(encoded.encode()).hexdigest() == expected_hash, far
+
+
+def test_new_segmentation_preserves_every_legacy_record_and_identifier():
+    """Project away just the 43 added far records and their parent count increments.
+    The result must equal the hash-pinned pre-list corpus, including order and case text."""
+    from collections import Counter
+
+    plan = _json(CORPUS / "worklists/rajab_m8_tranche3_plan.json")
+    receipt = plan["segmentation"]
+    raw = (CORPUS / m8_worklist.RECORDS).read_bytes()
+    assert hashlib.sha256(raw).hexdigest() == receipt["current_records_sha256"]
+    records = [json.loads(line) for line in raw.decode().splitlines()]
+    by_id = {r["id"]: r for r in records}
+    added = set(receipt["added_far_ids"])
+    assert len(added) == 43 and len(receipt["affected_qawaid"]) == 14
+    assert all(by_id[i]["record_type"] == "far" for i in added)
+    counts = Counter(by_id[i]["qaida"] for i in added)
+    assert set(counts) == set(receipt["affected_qawaid"])
+    legacy = [copy.deepcopy(r) for r in records if r["id"] not in added]
+    for r in legacy:
+        if r["record_type"] == "qaida":
+            r["furu_count"] -= counts[r["id"]]
+    projected = "".join(json.dumps(r, ensure_ascii=False) + "\n" for r in legacy).encode()
+    assert len(records) == receipt["current_record_count"] == 1339
+    assert len(legacy) == receipt["base_record_count"] == 1296
+    assert hashlib.sha256(projected).hexdigest() == receipt["base_records_sha256"]
+
+
 def test_full_locked_source_replays_records_and_selected_source_evidence():
     from usul_corpus.__main__ import CACHE, _segment
+    from usul_corpus.segment import _number
 
     source = CACHE / f"{m8_worklist.WITNESS}.txt"
     if not source.exists():
@@ -132,12 +177,22 @@ def test_full_locked_source_replays_records_and_selected_source_evidence():
     records, _ = _segment(work, witness, raw.decode("utf-8"))
     assert records == [json.loads(l) for l in (CORPUS / m8_worklist.RECORDS).read_text().splitlines()]
     text = re.sub(r"ms\d+", "", raw.decode("utf-8"))
+    headers = [m for m in re.finditer(r"^###\s*(\|+)\s*(.*)$", text, re.M) if len(m[1]) == 1]
+    spans = {}
+    for k, header in enumerate(headers):
+        if "القاعدة" in header[2]:
+            number, _ = _number(header[2].split("القاعدة", 1)[1])
+            spans[number] = (header.start(), headers[k + 1].start() if k + 1 < len(headers) else len(text))
     indices = [i for i, ch in enumerate(text) if "ء" <= ch <= "ي"]
     letters = "".join(text[i] for i in indices)
     for o in plan["obligations"]:
+        lo, hi = spans[int(o["far"].split(".")[-2][1:])]
         for evidence in o["source_evidence"]:
             excerpt = re.sub(r"[^ء-ي]", "", evidence["excerpt_ar"])
+            assert excerpt in re.sub(r"[^ء-ي]", "", text[lo:hi]), o["far"]
             start = letters.find(excerpt)
+            while start >= 0 and not lo <= indices[start] < hi:
+                start = letters.find(excerpt, start + 1)
             assert start >= 0, o["far"]
             marker = re.search(r"PageV(\d+)P(\d+)", text[indices[start + len(excerpt) - 1]:])
             assert evidence["ref"] == f"src:{m8_worklist.WITNESS}/v{marker[1]}:p{marker[2]}", o["far"]

@@ -516,3 +516,10 @@ import Usul
 #check @Usul.Refinements.attainable_yaqin_excludes_ghalaba
 #check @Usul.Refinements.ijtihad_not_overturned_by_ijtihad
 #check @Usul.Refinements.evident_error_sets_aside
+#check @Usul.Refinements.runningBody
+#check @Usul.Refinements.preferMany
+#check @Usul.Refinements.validWithBasis
+#check @Usul.Refinements.q65_is_the_unbelieved_basis
+#check @Usul.Refinements.handLiable
+#check @Usul.Refinements.takerRecourse
+#check @Usul.Refinements.undertaken_settles

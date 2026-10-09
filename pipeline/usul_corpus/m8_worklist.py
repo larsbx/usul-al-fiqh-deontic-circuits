@@ -90,6 +90,9 @@ def build(corpus: Path) -> dict:
         if subset:
             suites[data["suite"]] = {"annotated_furu": len(subset),
                                     "qawaid": sorted({int(c["far"].rsplit(".", 2)[1][1:]) for c in subset})}
+    aggregate = takhrij.report(cases)
+    tranche3 = next(json.loads(p.read_text(encoding="utf-8"))["cases"] for p in files
+                    if p.name == "rajab_m8_tranche3_furu.json")
     return {"schema_version": 1, "status": "candidate",
             "unit": "committed far record; a record may contain more than one example",
             "scope": "Only this registered Ibn Rajab witness; no Ibn al-Lahham or inferred missing examples",
@@ -97,6 +100,10 @@ def build(corpus: Path) -> dict:
                        "sha256": lock["sha256"], "bytes": lock["bytes"]},
             "input_sha256": {str(p.relative_to(corpus)): sha256(p.read_bytes()) for p in inputs},
             "summary": summary, "suites": suites,
+            "aggregate_report": {k: aggregate[k] for k in (
+                "total", "classes", "coverage", "madhhab_coverage", "encoding_error",
+                "ikhtilaf_matching_madhhab", "gaps_open", "revisited")},
+            "tranche3_report": takhrij.report(tranche3),
             "unsegmented_scope": "No segmented far is an extraction backlog, not proof of no examples; no case count is imputed",
             "annotation_scope": "Annotated includes recorded gaps and disagreements; all readings remain candidate, not adopted",
             "qawaid": rows}
@@ -108,6 +115,9 @@ def render(corpus: Path) -> str:
 
 def scope_block(inventory: dict) -> str:
     s = inventory["summary"]
+    def row(label: str, report: dict) -> str:
+        return (f"| {label} | {report['total']} | {report['coverage']:.3f} | "
+                f"{report['madhhab_coverage']:.3f} | {report['encoding_error']} | {report['gaps_open']} |\n")
     return (f"{BEGIN}\n"
             f"**Current M8 inventory (generated).** {s['segmented_furu']:,} segmented Ibn Rajab furūʿ records = "
             f"{s['annotated_furu']:,} annotated + **{s['pending_furu']:,} awaiting annotation**. "
@@ -118,7 +128,13 @@ def scope_block(inventory: dict) -> str:
             "The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and "
             "disagreements are already counted as annotated; annotation does not mean independently reviewed or "
             "scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input "
-            "hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.\n"
+            "hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.\n\n"
+            "| Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |\n"
+            "|---|---|---|---|---|---|\n"
+            + row("Combined M8 tranche 3", inventory["tranche3_report"])
+            + row("All annotation suites", inventory["aggregate_report"])
+            + "\nCoverage counts derivability under the candidate encoding. Madhhab coverage uses candidate "
+            "source attributions; neither metric establishes scholarly acceptance.\n"
             f"{END}")
 
 

@@ -8,6 +8,7 @@
     python -m usul_corpus m8-worklist [--check]  # reconcile committed M8 scope
     python -m usul_corpus docs        # render the dossier and glossary pages from corpus/dossier
     python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
+    python -m usul_corpus fatawa [--lang L] [--refresh]   # IslamQA offline dumps → .cache/corpus/fatawa/*.jsonl
 """
 
 from __future__ import annotations
@@ -18,6 +19,7 @@ import json
 import sys
 from pathlib import Path
 
+from .fatawa import answers, fold, snapshot_witnesses
 from .fetch import fetch
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
@@ -222,7 +224,9 @@ def _lean_names() -> list[str]:
     citations = [n for p in sorted((CORPUS / "citations").glob("*.json")) for ns in _load(p)["formalises"].values() for n in ns]
     dossier = [n for e in _load(DOSSIER)["entries"] for n in e["lean"]]
     glossary = [n for t in _load(GLOSSARY)["terms"] for n in t.get("lean", [])]
-    return sigma + proposals + review + citations + dossier + glossary
+    m8 = [n for p in sorted((CORPUS / "worklists").glob("*_plan.json"))
+          for q in _load(p)["selection"] for n in q["reading"]]
+    return sigma + proposals + review + citations + dossier + glossary + m8
 
 
 def _review_names(reg: dict) -> list[str]:
@@ -294,6 +298,27 @@ def cmd_signature(_: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_fatawa(args: argparse.Namespace) -> int:
+    """Pinned IslamQA snapshot (one dump per language) → answers JSONL, sha256-checked."""
+    import gzip
+
+    cache = CACHE / "fatawa"
+    dump = _load(CORPUS / "fatawa" / "sources.json")["dump"]
+    for w in snapshot_witnesses(dump):
+        if args.lang not in (None, w["lang"]):
+            continue
+        entry = fetch(w, cache, refresh=args.refresh)
+        if entry["sha256"] != w["sha256"]:
+            print(f"{w['id']}: sha256 {entry['sha256']} != pinned {w['sha256']}", file=sys.stderr)
+            return 1
+        with gzip.open(cache / f"{w['id']}.ndjson.gz", "rt", encoding="utf-8") as f:
+            records = answers(fold(map(json.loads, f)))
+        out = cache / f"{w['id']}.jsonl"
+        out.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records), encoding="utf-8")
+        print(f"{w['id']:12} {len(records):>6} answers  → {out.relative_to(ROOT)}")
+    return 0
+
+
 def cmd_validate(_: argparse.Namespace) -> int:
     import jsonschema  # test-time dependency only
 
@@ -335,6 +360,10 @@ def main(argv: list[str] | None = None) -> int:
     m.add_argument("--check", action="store_true")
     m.set_defaults(run=cmd_m8_worklist)
     sub.add_parser("docs").set_defaults(run=cmd_docs)
+    fa = sub.add_parser("fatawa")
+    fa.add_argument("--lang")
+    fa.add_argument("--refresh", action="store_true")
+    fa.set_defaults(run=cmd_fatawa)
     o = sub.add_parser("ocr")
     o.add_argument("--work")
     o.add_argument("--pages", help="PDF page range A-B (default: all)")

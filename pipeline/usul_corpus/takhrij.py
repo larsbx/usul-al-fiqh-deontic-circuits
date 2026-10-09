@@ -176,6 +176,26 @@ ENCODERS: dict[str, dict] = {
         sadi=[], qawaid=[RAJAB.format(64), RAJAB.format(65)], facts={"knew": B, "liability_only": B},
         out=B, lean="Usul.Refinements.countsAsMet {knew} {liability_only}",
         py=lambda f: f["knew"] or f["liability_only"]),
+    "running_water": dict(
+        sadi=[], qawaid=[RAJAB.format(1)], facts={"running": B},
+        out=("perJirya", "whole"), lean="Usul.Refinements.runningBody {running}",
+        py=lambda f: "perJirya" if f["running"] else "whole"),
+    "many_over_noble": dict(
+        sadi=[], qawaid=[RAJAB.format(17)], facts={"same_cost": B},
+        out=B, lean="Usul.Refinements.preferMany {same_cost}",
+        py=lambda f: f["same_cost"]),
+    "mistaken_basis": dict(
+        sadi=[], qawaid=[RAJAB.format(66)], facts={"believed_basis": B, "actual_basis": B},
+        out=B, lean="Usul.Refinements.validWithBasis {believed_basis} {actual_basis}",
+        py=lambda f: f["believed_basis"] and f["actual_basis"]),
+    "hand_liability": dict(
+        sadi=[], qawaid=[RAJAB.format(91)], facts={"property_like": B},
+        out=B, lean="Usul.Refinements.handLiable {property_like}",
+        py=lambda f: f["property_like"]),
+    "taker_from_usurper": dict(
+        sadi=[], qawaid=[RAJAB.format(93)], facts={"entered_on_liability": B},
+        out=B, lean="Usul.Refinements.takerRecourse {entered_on_liability}",
+        py=lambda f: not f["entered_on_liability"]),
     "makeup_after_failure": dict(
         sadi=[], qawaid=[RAJAB.format(31)],
         facts={"failure": ("corruption", "prevention", "lossWithFault", "lossWithoutFault")},
