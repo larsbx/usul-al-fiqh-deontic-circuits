@@ -2,6 +2,7 @@
 
 import copy
 import json
+import shutil
 from itertools import product
 from pathlib import Path
 
@@ -202,6 +203,68 @@ def test_retaining_fixture_ids_cannot_replace_a_required_input_contrast():
     fixture["expected"] = "makruh"  # a valid domain input/output, but not the required contrast
     with pytest.raises(ValueError, match="fixture input matrix changed"):
         m5.validate(plan, CORPUS)
+
+
+@pytest.mark.parametrize("mutation,message", [
+    ("merged_questions", "review question mapping"), ("swapped_gates", "review question mapping"),
+    ("rename_gate", "review question mapping"), ("duplicate_case_link", "case-specific review link"),
+    ("blank_question", "review question is empty"),
+])
+def test_review_gates_remain_distinct_even_when_scopes_and_links_are_edited_together(mutation, message):
+    plan = _plan()
+    questions, receipts = plan["review_questions"], plan["case_receipts"]
+    if mutation == "merged_questions":
+        questions[0]["scope"] = sorted(m5.FARS)
+        for q in questions[1:]:
+            q["scope"] = []
+        for r in receipts:
+            r["review_questions"] = [questions[0]["id"]]
+    elif mutation == "swapped_gates":
+        questions[0]["scope"], questions[1]["scope"] = questions[1]["scope"], questions[0]["scope"]
+        receipts[0]["review_questions"], receipts[1]["review_questions"] = receipts[1]["review_questions"], receipts[0]["review_questions"]
+    elif mutation == "rename_gate":
+        questions[0]["id"] = "another-review-gate"
+        receipts[0]["review_questions"] = [questions[0]["id"]]
+    elif mutation == "duplicate_case_link":
+        receipts[0]["review_questions"] *= 2
+    else:
+        questions[0]["question"] = " "
+    with pytest.raises(ValueError, match=message):
+        m5.validate(plan, CORPUS)
+
+
+def _copy_receipted_corpus(target):
+    (target / "records").mkdir()
+    shutil.copy(CORPUS / "lock.json", target / "lock.json")
+    shutil.copy(CORPUS / f"records/{m5.WITNESS}.jsonl", target / "records")
+    shutil.copytree(CORPUS / "takhrij", target / "takhrij")
+
+
+@pytest.mark.parametrize("field,value", [
+    ("url", "https://example.invalid/replacement-source"),
+    ("bytes", 722415), ("sha256", "0" * 64),
+])
+def test_joint_plan_and_lock_edits_cannot_replace_original_source_metadata(tmp_path, field, value):
+    _copy_receipted_corpus(tmp_path)
+    plan = _plan()
+    lock = json.loads((tmp_path / "lock.json").read_text())
+    plan["source"][field] = lock["witnesses"][m5.WITNESS][field] = value
+    (tmp_path / "lock.json").write_text(json.dumps(lock))
+    with pytest.raises(ValueError, match="source contribution anchor changed"):
+        m5.validate(plan, tmp_path)
+
+
+def test_joint_plan_and_record_edits_cannot_replace_the_base_source_records(tmp_path):
+    _copy_receipted_corpus(tmp_path)
+    plan = _plan()
+    path = tmp_path / f"records/{m5.WITNESS}.jsonl"
+    records = [json.loads(line) for line in path.read_text().splitlines()]
+    records[0]["excerpt_ar"] = "تفسير بديل غير مسجل"
+    raw = "".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records).encode()
+    path.write_bytes(raw)
+    plan["records_sha256"] = m5.sha256(raw)
+    with pytest.raises(ValueError, match="source record differs from base anchor"):
+        m5.validate(plan, tmp_path)
 
 
 def test_full_source_replays_all_evidence_with_closing_page_markers():

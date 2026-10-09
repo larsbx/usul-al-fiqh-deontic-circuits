@@ -15,6 +15,15 @@ WITNESS = "openiti-lahham-shamela8526"
 QAIDA = takhrij.LAHHAM.format(43)
 FARS = {QAIDA + f".f{i:03d}" for i in (1, 3, 4, 7)}
 BASE_COMMIT = "3a9d11776eb3be21702d3624f4152e276fda00ed"
+ORIGINAL_SOURCE = {
+    "witness": WITNESS,
+    "url": ("https://raw.githubusercontent.com/OpenITI/0825AH/bae1fba53712c020fe43e3e60b37dfe61f2b64a8/"
+            "data/0803IbnLahhamCalaDinBacli/0803IbnLahhamCalaDinBacli.Qawacid/"
+            "0803IbnLahhamCalaDinBacli.Qawacid.Shamela0008526-ara1"),
+    "bytes": 722414,
+    "sha256": "d1efbaa04ca15696f92db87137381a77415ca7b3dde39e105d8e503cdcc706b0",
+}
+ORIGINAL_RECORDS_SHA256 = "9ebb8913504fa536ba8d32d173fadd43868a9af68507333b330ef5df15a6f494"
 # Canonical case hashes independently verified at BASE_COMMIT. These anchors live
 # outside the mutable work plan, so editing a case and its receipt together fails.
 ORIGINAL_CASE_SHA256 = {
@@ -23,6 +32,7 @@ ORIGINAL_CASE_SHA256 = {
     QAIDA + ".f004": "6c67447789d873d8dc6778ef86c92bc705baf672195282ba6782e4ef2ba8ce65",
     QAIDA + ".f007": "6541542f5cd5909107f61ba24243afa448e298b15e9744ba3952d11e3abeb15c",
 }
+REVIEW_BY_FAR = {QAIDA + f".f{n:03d}": f"M5-CMD-Q{n:03d}" for n in (1, 3, 4, 7)}
 ENCODERS_BY_FAR = dict(zip(
     [QAIDA + f".f{i:03d}" for i in (1, 3, 4, 7)],
     ["command_nonverbal_usage", "command_prophetic_act_usage",
@@ -73,8 +83,10 @@ def validate(plan: dict, corpus: Path) -> None:
     _require(plan["source"]["witness"] == WITNESS, "wrong source witness")
     lock = json.loads((corpus / "lock.json").read_text())["witnesses"][WITNESS]
     _require(all(plan["source"][k] == lock[k] for k in ("url", "bytes", "sha256")), "source lock changed")
+    _require(all(plan["source"][k] == v for k, v in ORIGINAL_SOURCE.items()), "source contribution anchor changed")
     raw = (corpus / f"records/{WITNESS}.jsonl").read_bytes()
     _require(sha256(raw) == plan["records_sha256"], "source record receipt changed")
+    _require(plan["records_sha256"] == ORIGINAL_RECORDS_SHA256, "source record differs from base anchor")
     records = {r["id"]: r for r in map(json.loads, raw.decode().splitlines())}
     cases = {c["far"]: c for c in takhrij.load(corpus)}
     receipts = plan["case_receipts"]
@@ -96,10 +108,16 @@ def validate(plan: dict, corpus: Path) -> None:
     _require(len(ids) == len(questions) == 4, "review question set changed")
     _require(all(q["status"] == "open" for q in questions), "human review remains open")
     _require({f for q in questions for f in q["scope"]} == FARS, "review scope changed")
+    _require({q["id"]: q["scope"] for q in questions} ==
+             {ident: [far] for far, ident in REVIEW_BY_FAR.items()}, "review question mapping changed")
+    _require(all(isinstance(q["question"], str) and q["question"].strip() for q in questions),
+             "review question is empty")
     _require(all(set(r["review_questions"]) <= ids and r["review_questions"] for r in receipts), "review link missing")
     by_question = {q["id"]: set(q["scope"]) for q in questions}
     _require(all(all(r["far"] in by_question[q] for q in r["review_questions"]) for r in receipts),
              "review link has another case's scope")
+    _require(all(r["review_questions"] == [REVIEW_BY_FAR[r["far"]]] for r in receipts),
+             "case-specific review link changed")
     selection = plan["selection"]
     _require(len(selection) == 1 and selection[0]["qaida"] == QAIDA, "wrong selected qaida")
     _require(selection[0]["status"] == "candidate" and selection[0]["reading"], "reading status changed")

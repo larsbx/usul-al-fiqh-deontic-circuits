@@ -41,14 +41,18 @@ scholarly acceptance is implied by executable outputs.
 
 The plan pins the full witness, the committed source-record file, four complete original
 case receipts and their Arabic excerpt hashes. The original case hashes are independently
-anchored in the validator at base commit `3a9d11776eb3be21702d3624f4152e276fda00ed`.
+anchored in the validator at base commit `3a9d11776eb3be21702d3624f4152e276fda00ed`,
+alongside the original source URL, bytes, hash and complete source-record hash.
 Validation checks those anchors before comparing each live case with its receipt, so
 rewriting the case and its receipt together cannot silently replace the original reading.
 The historical case locators retain the parent's opening page, p221. Evidence locators
 record the actual later pages without rewriting those historical records.
 
-Four linked interpretation questions stay `open`; the plan and selected readings stay
-`candidate`. The existing dossier, review registers, M8 receipts and revision ledger are
+Four linked interpretation questions stay `open`; validation preserves their exact
+question-ID-to-case mapping and requires one distinct, nonempty question linked to each
+case. Editing scopes and links together cannot collapse or swap these review gates.
+The plan and selected readings stay `candidate`. The existing dossier, review registers,
+M8 receipts and revision ledger are
 preserved. A future case revisit must record its own justification and provenance rather
 than replacing these original receipts. The new encoder names deliberately do not claim
 to satisfy the old gap requirements.
