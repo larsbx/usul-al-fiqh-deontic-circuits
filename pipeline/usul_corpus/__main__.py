@@ -6,6 +6,7 @@
     python -m usul_corpus signature   # regenerate the Lean Σ-coverage check
     python -m usul_corpus takhrij     # regenerate the takhrīj guards and report
     python -m usul_corpus docs        # render the dossier and glossary pages from corpus/dossier
+    python -m usul_corpus reception   # count the citers' citations of each cited work (cached citers only)
     python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
 """
 
@@ -255,13 +256,26 @@ def docs_pages() -> dict[Path, str]:
     from .dossier import render_dossier, render_glossary
     records = {r["id"]: r for p in (CORPUS / "records").glob("*.jsonl") for r in map(json.loads, p.read_text(encoding="utf-8").splitlines())}
     glossary = _load(GLOSSARY)
+    from .reception import render_counts
+    titles = {w["id"]: (w["title_tr"], w.get("reception", {}).get("genre", "")) for w in _load(CORPUS / "registry.json")["works"]}
     return {ROOT / "docs/architecture/dossier.md": render_dossier(_load(DOSSIER), records, {t["key"]: t for t in glossary["terms"]}),
-            ROOT / "docs/glossary.md": render_glossary(glossary, records)}
+            ROOT / "docs/glossary.md": render_glossary(glossary, records),
+            ROOT / "docs/architecture/reception-counts.md": render_counts(_load(CORPUS / "reception" / "report.json"), titles)}
 
 
 def cmd_docs(_: argparse.Namespace) -> int:
     for path, text in docs_pages().items():
         path.write_text(text, encoding="utf-8")
+    return 0
+
+
+def cmd_reception(_: argparse.Namespace) -> int:
+    from .reception import build
+    rep = build(_load(CORPUS / "registry.json"), CACHE)
+    _dump(CORPUS / "reception" / "report.json", rep)
+    for work, c in sorted(rep["counts"].items(), key=lambda kv: -kv[1]["total"]):
+        print(f"{work:40} {c['total']:>6}  {c['by_scholar']}")
+    print(f"missing citers: {rep['missing'] or 'none'}", file=sys.stderr)
     return 0
 
 
@@ -308,6 +322,7 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("signature").set_defaults(run=cmd_signature)
     sub.add_parser("takhrij").set_defaults(run=cmd_takhrij)
     sub.add_parser("docs").set_defaults(run=cmd_docs)
+    sub.add_parser("reception").set_defaults(run=cmd_reception)
     o = sub.add_parser("ocr")
     o.add_argument("--work")
     o.add_argument("--pages", help="PDF page range A-B (default: all)")
