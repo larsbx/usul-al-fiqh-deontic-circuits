@@ -52,18 +52,21 @@ def _qarina(d: dict) -> str:
 
 
 def case_lean(c: dict) -> list[str]:
+    """Guards for one case. The kernel is `judgeI .strict` (decision D3); `kernel_lax_undefeated`
+    records the lax reading of the muʿtabar condition beside it."""
     att = ", ".join(f"({a}, {b})" for a, b in c.get("attacks", []))
+    routes = _routes(c["turuq"])
     lines = [f"-- al-Ḍaʿīfa {c['n']}: {c['term_ar']} ({c['class']})",
-             f"#guard judge {_turuq(c['turuq'])} {c.get('args', 1)} [{att}] = .{c['kernel']}"]
+             f"#guard judgeI .strict {routes} {c.get('args', 1)} [{att}] = .{c['kernel']}"]
     if "rulings" in c:
         rs = ", ".join(f"⟨{r['arg']}, .{r['kind']}, .{r['ceiling']}⟩" for r in c["rulings"])
-        lines.append(f"#guard judgeR {_turuq(c['turuq'])} {c.get('args', 1)} [{att}] [{rs}] = .{c['kernel_with_rulings']}"
+        lines.append(f"#guard judgeRI .strict {routes} {c.get('args', 1)} [{att}] [{rs}] = .{c['kernel_with_rulings']}"
                      "  -- with the cited rulings (D2)")
     if "kernel_undefeated" in c:
-        lines.append(f"#guard judge {_turuq(c['turuq'])} 1 [] = .{c['kernel_undefeated']}  -- without the objections")
-    if "kernel_strict_undefeated" in c:
-        lines.append(f"#guard judgeI .strict {_routes(c['turuq'])} 1 [] = .{c['kernel_strict_undefeated']}"
-                     "  -- without the objections, strict muʿtabar (D3)")
+        lines.append(f"#guard judgeI .strict {routes} 1 [] = .{c['kernel_undefeated']}  -- without the objections")
+    if "kernel_lax_undefeated" in c:
+        lines.append(f"#guard judge {_turuq(c['turuq'])} 1 [] = .{c['kernel_lax_undefeated']}"
+                     "  -- without the objections, lax muʿtabar (D3 alternative)")
     lines += [f"#guard JarhTadil.judge [{', '.join(map(_qawl, d['qawl']))}] {_qarina(d)} = .{d['expected']}"
               for d in c.get("disputes", [])]
     return lines

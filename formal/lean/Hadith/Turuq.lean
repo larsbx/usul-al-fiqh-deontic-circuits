@@ -1,5 +1,6 @@
 import Hadith.Isnad
 import Usul.Grounded
+import Usul.Qawaid
 
 /-!
 # Ṭuruq: aggregation as defeasible evidence (al-Albānī track §2.3, H5)
@@ -273,5 +274,51 @@ theorem strict_le_lax (rs : List (Tariq × Nat)) (n : Nat) (att : List (Nat × N
 example : judgeI .lax [(⟨.daif, 1⟩, 5), (⟨.daif, 2⟩, 9)] 1 [] = .hasan := by decide
 example : judgeI .strict [(⟨.daif, 1⟩, 5), (⟨.daif, 2⟩, 9)] 1 [] = .daif := by decide
 example : judgeI .strict [(⟨.daif, 1⟩, 9), (⟨.daif, 2⟩, 9)] 1 [] = .hasan := by decide
+
+
+/-! ### D3 decided: strict, checked against the dogfooded bank
+
+The uṣūl track's bank decides displacement with `Usul.Qawaid.update` (al-Saʿdī Q11/Q52): a
+challenger displaces the incumbent only at equal or greater strength, and a weaker one never does
+(Ibn Rajab 159, `Usul.Refinements.zahirPrevails`). Here the incumbent is the base route's tawaqquf
+and the challenger is the follower: «فوقه أو مثله لا دونه» is that rule read on the *Taqrīb*
+scale, which is `strict`. On the bank's own four-grade scale every iʿtibār martaba is shakk, so the
+bank cannot separate the readings there (`bank_scale_blind_in_itibar`): it is neutral, and gives
+no support to `lax`. -/
+
+/-- The bank: a weaker challenger leaves the incumbent in place. -/
+theorem bank_weaker_never_displaces {V : Type} (cur ev : Usul.Qawaid.Held V)
+    (h : ¬ cur.strength ≤ ev.strength) : Usul.Qawaid.update cur ev = cur := by
+  simp [Usul.Qawaid.update, h]
+
+/-- The same rule here: a follower weaker than the base does not make the file muʿtabar. -/
+theorem strict_weaker_follower_never_lifts (a b : Nat) (h : a < b) :
+    mutabar .strict [(⟨.daif, 0⟩, a), (⟨.daif, 1⟩, b)] = false := by
+  have hb : ¬ b < a := by omega
+  have hba : ¬ b ≤ a := by omega
+  have d1 : ¬ (Verdict.daif ≤ Verdict.mawdu) := by decide
+  have d2 : Verdict.daif ≤ Verdict.daif := by decide
+  simp [mutabar, baseRoute, best, Verdict.join, hb, hba, d1, d2]
+
+/-- …while `lax` lets it through: the reading the bank rules out. -/
+theorem lax_weaker_follower_lifts (a b : Nat) :
+    mutabar .lax [(⟨.daif, 0⟩, a), (⟨.daif, 1⟩, b)] = true := rfl
+
+/-- The bank's scale is too coarse here: every iʿtibār martaba grades as shakk. -/
+theorem bank_scale_blind_in_itibar (m : Martaba) (h5 : 5 ≤ m.rank) (h9 : m.rank ≤ 9) :
+    m.verdict.grade = .shakk := by
+  cases m <;> simp_all [Martaba.rank, Martaba.verdict, Verdict.grade]
+
+/-- The project default (decision D3, 2026-10-09). -/
+def Itibar.default : Itibar := .strict
+
+/-- Rulings over the strict muʿtabar reading: the kernel as recorded in the H4 tranches. -/
+def judgeRI (pol : Itibar) (rs : List (Tariq × Nat)) (n : Nat) (att : List (Nat × Nat))
+    (rulings : List Ruling) : Verdict :=
+  capWith (Usul.Grounded.grounded n att) rulings (judgeI pol rs n att)
+
+theorem judgeRI_lax (rs : List (Tariq × Nat)) (n : Nat) (att : List (Nat × Nat)) (rulings : List Ruling) :
+    judgeRI .lax rs n att rulings = judgeR (rs.map Prod.fst) n att rulings := by
+  simp [judgeRI, judgeR, judgeI_lax]
 
 end Hadith

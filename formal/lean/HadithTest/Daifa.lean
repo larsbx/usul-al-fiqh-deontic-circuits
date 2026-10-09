@@ -4,89 +4,89 @@ import Hadith
 open Hadith
 
 -- al-Ḍaʿīfa 1: باطل. (qarina)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }], 1⟩] 2 [] = .daif
-#guard judgeR [⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }], 1⟩] 2 [] [⟨1, .hukm, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }], 1⟩, Isnad.floor .ibnHajar [{ rawi := .matruk }])] 2 [] = .daif
+#guard judgeRI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }], 1⟩, Isnad.floor .ibnHajar [{ rawi := .matruk }])] 2 [] [⟨1, .hukm, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
 -- al-Ḍaʿīfa 2: باطل. (qarina)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .thiqa, muttasil := false }], 1⟩] 4 [(1, 0)] = .daif
-#guard judgeR [⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .thiqa, muttasil := false }], 1⟩] 4 [(1, 0)] [⟨2, .hukm, .mawdu⟩, ⟨3, .matn, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .thiqa, muttasil := false }], 1⟩] 1 [] = .hasan  -- without the objections
-#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .thiqa, muttasil := false }], 1⟩, Isnad.floor .ibnHajar [{ rawi := .thiqa, muttasil := false }])] 1 [] = .daif  -- without the objections, strict muʿtabar (D3)
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .thiqa, muttasil := false }], 1⟩, Isnad.floor .ibnHajar [{ rawi := .thiqa, muttasil := false }])] 4 [(1, 0)] = .daif
+#guard judgeRI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .thiqa, muttasil := false }], 1⟩, Isnad.floor .ibnHajar [{ rawi := .thiqa, muttasil := false }])] 4 [(1, 0)] [⟨2, .hukm, .mawdu⟩, ⟨3, .matn, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .thiqa, muttasil := false }], 1⟩, Isnad.floor .ibnHajar [{ rawi := .thiqa, muttasil := false }])] 1 [] = .daif  -- without the objections
+#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .thiqa, muttasil := false }], 1⟩] 1 [] = .hasan  -- without the objections, lax muʿtabar (D3 alternative)
 -- al-Ḍaʿīfa 3: ليس بحديث. (derivable)
-#guard judge [] 1 [] = .mawdu
+#guard judgeI .strict [] 1 [] = .mawdu
 -- al-Ḍaʿīfa 4: لا أصل له. (derivable)
-#guard judge [] 1 [] = .mawdu
+#guard judgeI .strict [] 1 [] = .mawdu
 -- al-Ḍaʿīfa 5: موضوع بهذا اللفظ. (derivable)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .majhul }, { rawi := .majhul }, { rawi := .majhul }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩] 1 [] = .mawdu
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .majhul }, { rawi := .majhul }, { rawi := .majhul }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .kadhdhab }, { rawi := .majhul }, { rawi := .majhul }, { rawi := .majhul }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }])] 1 [] = .mawdu
 -- al-Ḍaʿīfa 6: لا أعلم له أصلا. (derivable)
-#guard judge [] 1 [] = .mawdu
+#guard judgeI .strict [] 1 [] = .mawdu
 -- al-Ḍaʿīfa 7: لا أصل له. (derivable)
-#guard judge [] 1 [] = .mawdu
+#guard judgeI .strict [] 1 [] = .mawdu
 -- al-Ḍaʿīfa 8: لا أصل له مرفوعا. (missing_rule)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .majhul }, { rawi := .sahabi }], 0⟩] 1 [] = .daif
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .majhul }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .majhul }, { rawi := .sahabi }])] 1 [] = .daif
 -- al-Ḍaʿīfa 9: لا أصل له. (derivable)
-#guard judge [] 1 [] = .mawdu
+#guard judgeI .strict [] 1 [] = .mawdu
 -- al-Ḍaʿīfa 10: موضوع. (derivable)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }], 0⟩] 1 [] = .mawdu
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .kadhdhab }])] 1 [] = .mawdu
 -- al-Ḍaʿīfa 11: ضعيف. (derivable)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .daif }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .daif }, { rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩] 1 [] = .daif
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .daif }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .daif }, { rawi := .daif }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .daif }, { rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .daif }, { rawi := .daif }, { rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }])] 1 [] = .daif
 -- al-Ḍaʿīfa 12: موضوع. (qarina)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩] 2 [] = .daif
-#guard judgeR [⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩] 2 [] [⟨1, .hukm, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }])] 2 [] = .daif
+#guard judgeRI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }])] 2 [] [⟨1, .hukm, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
 -- al-Ḍaʿīfa 13: ضعيف. (derivable)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .thiqa, tadlis := some .t4, sigha := .anana }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩] 1 [] = .daif
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .thiqa, tadlis := some .t4, sigha := .anana }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .thiqa, tadlis := some .t4, sigha := .anana }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }])] 1 [] = .daif
 -- al-Ḍaʿīfa 14: ضعيف جدا. (derivable)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩] 1 [] = .daifJiddan
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .matruk }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }])] 1 [] = .daifJiddan
 #guard JarhTadil.judge [{ side := .jarh, strength := .mufassar }, { side := .jarh, strength := .mufassar }, { side := .jarh, strength := .mufassar }, { side := .tadil, strength := .mujmal, mutamad := false }] none = .majruh
 -- al-Ḍaʿīfa 15: لا أصل له في المرفوع. (derivable)
-#guard judge [] 1 [] = .mawdu
+#guard judgeI .strict [] 1 [] = .mawdu
 -- al-Ḍaʿīfa 16: موضوع. (derivable)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩] 1 [] = .mawdu
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }])] 1 [] = .mawdu
 -- al-Ḍaʿīfa 17: موضوع. (derivable)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩] 1 [] = .mawdu
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .daif }, { rawi := .thiqa }, { rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }])] 1 [] = .mawdu
 -- al-Ḍaʿīfa 18: موضوع. (qarina)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .muttaham }, { rawi := .thiqa }, { rawi := .sahabi }], 1⟩] 2 [] = .daifJiddan
-#guard judgeR [⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .muttaham }, { rawi := .thiqa }, { rawi := .sahabi }], 1⟩] 2 [] [⟨1, .hukm, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .muttaham }, { rawi := .thiqa }, { rawi := .sahabi }], 1⟩, Isnad.floor .ibnHajar [{ rawi := .muttaham }, { rawi := .thiqa }, { rawi := .sahabi }])] 2 [] = .daifJiddan
+#guard judgeRI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .muttaham }, { rawi := .thiqa }, { rawi := .sahabi }], 1⟩, Isnad.floor .ibnHajar [{ rawi := .muttaham }, { rawi := .thiqa }, { rawi := .sahabi }])] 2 [] [⟨1, .hukm, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
 -- al-Ḍaʿīfa 19: موضوع. (derivable)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩] 1 [] = .mawdu
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }])] 1 [] = .mawdu
 -- al-Ḍaʿīfa 20: موضوع. (qarina)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .muttaham }, { rawi := .sahabi }], 1⟩] 3 [] = .daifJiddan
-#guard judgeR [⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .muttaham }, { rawi := .sahabi }], 1⟩] 3 [] [⟨1, .hukm, .mawdu⟩, ⟨2, .matn, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .muttaham }, { rawi := .sahabi }], 1⟩, Isnad.floor .ibnHajar [{ rawi := .muttaham }, { rawi := .sahabi }])] 3 [] = .daifJiddan
+#guard judgeRI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .muttaham }, { rawi := .sahabi }], 1⟩, Isnad.floor .ibnHajar [{ rawi := .muttaham }, { rawi := .sahabi }])] 3 [] [⟨1, .hukm, .mawdu⟩, ⟨2, .matn, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
 -- al-Ḍaʿīfa 21: لا أصل له. (derivable)
-#guard judge [] 1 [] = .mawdu
+#guard judgeI .strict [] 1 [] = .mawdu
 -- al-Ḍaʿīfa 22: لا أصل له. (derivable)
-#guard judge [] 1 [] = .mawdu
+#guard judgeI .strict [] 1 [] = .mawdu
 -- al-Ḍaʿīfa 23: ضعيف. (derivable)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .thiqa }, { rawi := .daif }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩] 1 [] = .daif
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .thiqa }, { rawi := .daif }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .thiqa }, { rawi := .daif }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }])] 1 [] = .daif
 #guard JarhTadil.judge [{ side := .jarh, strength := .mufassar }, { side := .tadil, strength := .mujmal, mutamad := false }, { side := .tadil, strength := .mujmal, mutamad := false }] none = .majruh
 -- al-Ḍaʿīfa 24: ضعيف. (derivable)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .saduqYahim }, { rawi := .saduqYahim, tadlis := some .t4, sigha := .anana }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .sahabi }], 1⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }, { rawi := .sahabi }], 2⟩] 3 [(1, 0), (2, 0)] = .daif
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .saduqYahim }, { rawi := .saduqYahim, tadlis := some .t4, sigha := .anana }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .sahabi }], 1⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }, { rawi := .sahabi }], 2⟩] 1 [] = .hasan  -- without the objections
-#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .saduqYahim }, { rawi := .saduqYahim, tadlis := some .t4, sigha := .anana }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .saduqYahim }, { rawi := .saduqYahim, tadlis := some .t4, sigha := .anana }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .sahabi }], 1⟩, Isnad.floor .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }, { rawi := .sahabi }], 2⟩, Isnad.floor .ibnHajar [{ rawi := .matruk }, { rawi := .sahabi }])] 1 [] = .hasan  -- without the objections, strict muʿtabar (D3)
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .saduqYahim }, { rawi := .saduqYahim, tadlis := some .t4, sigha := .anana }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .saduqYahim }, { rawi := .saduqYahim, tadlis := some .t4, sigha := .anana }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .sahabi }], 1⟩, Isnad.floor .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }, { rawi := .sahabi }], 2⟩, Isnad.floor .ibnHajar [{ rawi := .matruk }, { rawi := .sahabi }])] 3 [(1, 0), (2, 0)] = .daif
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .saduqYahim }, { rawi := .saduqYahim, tadlis := some .t4, sigha := .anana }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .saduqYahim }, { rawi := .saduqYahim, tadlis := some .t4, sigha := .anana }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .sahabi }], 1⟩, Isnad.floor .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }, { rawi := .sahabi }], 2⟩, Isnad.floor .ibnHajar [{ rawi := .matruk }, { rawi := .sahabi }])] 1 [] = .hasan  -- without the objections
+#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .saduqYahim }, { rawi := .saduqYahim, tadlis := some .t4, sigha := .anana }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .sahabi }], 1⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }, { rawi := .sahabi }], 2⟩] 1 [] = .hasan  -- without the objections, lax muʿtabar (D3 alternative)
 #guard JarhTadil.judge [{ side := .tadil, strength := .mujmal }, { side := .jarh, strength := .mufassar }, { side := .jarh, strength := .mujmal }, { side := .jarh, strength := .mufassar }] (some .jarh) = .majruh
 #guard JarhTadil.judge [{ side := .tadil, strength := .mujmal }, { side := .jarh, strength := .mufassar }] (some .jarh) = .majruh
 -- al-Ḍaʿīfa 25: موضوع. (qarina)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .matruk }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩] 3 [] = .daifJiddan
-#guard judgeR [⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .matruk }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩] 3 [] [⟨1, .hukm, .mawdu⟩, ⟨2, .matn, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .matruk }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .matruk }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .matruk }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }])] 3 [] = .daifJiddan
+#guard judgeRI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .matruk }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .majhul }, { rawi := .thiqa }, { rawi := .matruk }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .matruk }, { rawi := .thiqa }, { rawi := .thiqa }, { rawi := .sahabi }])] 3 [] [⟨1, .hukm, .mawdu⟩, ⟨2, .matn, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
 -- al-Ḍaʿīfa 26: ضعيف. (derivable)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .muttaham }, { rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }], 1⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .saduq }, { rawi := .thiqa, muttasil := false }], 2⟩] 1 [] = .daif
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .muttaham }, { rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .muttaham }, { rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }], 1⟩, Isnad.floor .ibnHajar [{ rawi := .kadhdhab }, { rawi := .daif }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .saduq }, { rawi := .thiqa, muttasil := false }], 2⟩, Isnad.floor .ibnHajar [{ rawi := .saduq }, { rawi := .thiqa, muttasil := false }])] 1 [] = .daif
 -- al-Ḍaʿīfa 27: موضوع. (derivable)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .sahabi }], 0⟩] 1 [] = .mawdu
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .kadhdhab }, { rawi := .sahabi }])] 1 [] = .mawdu
 -- al-Ḍaʿīfa 28: موضوع. (derivable)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩] 1 [] = .mawdu
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .kadhdhab }, { rawi := .thiqa }, { rawi := .sahabi }])] 1 [] = .mawdu
 -- al-Ḍaʿīfa 29: باطل. (qarina)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }], 1⟩] 2 [] = .daifJiddan
-#guard judgeR [⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, ⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }], 1⟩] 2 [] [⟨1, .hukm, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .matruk }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }], 1⟩, Isnad.floor .ibnHajar [{ rawi := .kadhdhab }])] 2 [] = .daifJiddan
+#guard judgeRI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .matruk }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .matruk }, { rawi := .thiqa }, { rawi := .sahabi }]), (⟨Isnad.verdict .ibnHajar [{ rawi := .kadhdhab }], 1⟩, Isnad.floor .ibnHajar [{ rawi := .kadhdhab }])] 2 [] [⟨1, .hukm, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
 -- al-Ḍaʿīfa 30: لا أصل له. (derivable)
-#guard judge [] 1 [] = .mawdu
+#guard judgeI .strict [] 1 [] = .mawdu
 -- al-Ḍaʿīfa 31: لا أصل له. (derivable)
-#guard judge [] 1 [] = .mawdu
+#guard judgeI .strict [] 1 [] = .mawdu
 -- al-Ḍaʿīfa 32: موضوع. (qarina)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .majhul }, { rawi := .majhul }, { rawi := .thiqa }, { rawi := .daif }, { rawi := .thiqa, tadlis := some .t3, sigha := .anana }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩] 2 [] = .daif
-#guard judgeR [⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .majhul }, { rawi := .majhul }, { rawi := .thiqa }, { rawi := .daif }, { rawi := .thiqa, tadlis := some .t3, sigha := .anana }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩] 2 [] [⟨1, .matn, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .majhul }, { rawi := .majhul }, { rawi := .thiqa }, { rawi := .daif }, { rawi := .thiqa, tadlis := some .t3, sigha := .anana }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .majhul }, { rawi := .majhul }, { rawi := .majhul }, { rawi := .thiqa }, { rawi := .daif }, { rawi := .thiqa, tadlis := some .t3, sigha := .anana }, { rawi := .thiqa }, { rawi := .sahabi }])] 2 [] = .daif
+#guard judgeRI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .majhul }, { rawi := .majhul }, { rawi := .majhul }, { rawi := .thiqa }, { rawi := .daif }, { rawi := .thiqa, tadlis := some .t3, sigha := .anana }, { rawi := .thiqa }, { rawi := .sahabi }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .majhul }, { rawi := .majhul }, { rawi := .majhul }, { rawi := .thiqa }, { rawi := .daif }, { rawi := .thiqa, tadlis := some .t3, sigha := .anana }, { rawi := .thiqa }, { rawi := .sahabi }])] 2 [] [⟨1, .matn, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
 -- al-Ḍaʿīfa 33: لا أصل له. (derivable)
-#guard judge [] 1 [] = .mawdu
+#guard judgeI .strict [] 1 [] = .mawdu
 -- al-Ḍaʿīfa 34: منكر لا أصل له. (qarina)
-#guard judge [⟨Isnad.verdict .ibnHajar [{ rawi := .saduqYahim }, { rawi := .thiqa }, { rawi := .saduqYahim }, { rawi := .majhul, muttasil := false }], 0⟩] 2 [] = .daif
-#guard judgeR [⟨Isnad.verdict .ibnHajar [{ rawi := .saduqYahim }, { rawi := .thiqa }, { rawi := .saduqYahim }, { rawi := .majhul, muttasil := false }], 0⟩] 2 [] [⟨1, .hukm, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
+#guard judgeI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .saduqYahim }, { rawi := .thiqa }, { rawi := .saduqYahim }, { rawi := .majhul, muttasil := false }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .saduqYahim }, { rawi := .thiqa }, { rawi := .saduqYahim }, { rawi := .majhul, muttasil := false }])] 2 [] = .daif
+#guard judgeRI .strict [(⟨Isnad.verdict .ibnHajar [{ rawi := .saduqYahim }, { rawi := .thiqa }, { rawi := .saduqYahim }, { rawi := .majhul, muttasil := false }], 0⟩, Isnad.floor .ibnHajar [{ rawi := .saduqYahim }, { rawi := .thiqa }, { rawi := .saduqYahim }, { rawi := .majhul, muttasil := false }])] 2 [] [⟨1, .hukm, .mawdu⟩] = .mawdu  -- with the cited rulings (D2)
 -- al-Ḍaʿīfa 35: لا أصل له بهذا اللفظ. (derivable)
-#guard judge [] 1 [] = .mawdu
+#guard judgeI .strict [] 1 [] = .mawdu

@@ -64,8 +64,8 @@
       "albani": "mawdu",
       "kernel": "daif",
       "kernel_with_rulings": "mawdu",
-      "kernel_undefeated": "hasan",
-      "kernel_strict_undefeated": "daif",
+      "kernel_undefeated": "daif",
+      "kernel_lax_undefeated": "hasan",
       "args": 4,
       "class": "qarina",
       "turuq": [
@@ -124,7 +124,7 @@
           "said_ar": "هذا مما لا يعقل ولا تشهد له الشريعة"
         }
       ],
-      "note": "Both routes are on the Nuzha's repairable list (mukhtaliṭ not sorted; mursal) and independent, so the lift's guard holds; the mawqūf ʿilla defeats it (args 0 = lift, 1 = ʿilla). The kernel stops at ḍaʿīf; bāṭil adds naqd al-matn (the matn contradicts ṣalāt's being kaffāra)."
+      "note": "Both routes are on the Nuzha's repairable list (mukhtaliṭ not sorted; mursal) and independent, so the lax guard would lift; under the strict muʿtabar reading (D3) the mursal follower (floor 9) is weaker than Layth (8), so no lift arises, and the mawqūf ʿilla (args 0 = lift, 1 = ʿilla) is recorded as al-Albānī gives it. The kernel stops at ḍaʿīf; bāṭil adds naqd al-matn (the matn contradicts ṣalāt's being kaffāra)."
     },
     {
       "n": 3,
