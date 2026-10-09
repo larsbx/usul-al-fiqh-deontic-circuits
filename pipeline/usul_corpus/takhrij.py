@@ -233,6 +233,18 @@ ENCODERS: dict[str, dict] = {
         sadi=[], qawaid=[RAJAB.format(47)], facts={"contract_liability": B},
         out=("agreed", "equivalent"), lean="Usul.Refinements.defectiveCompensationBasis {contract_liability}",
         py=lambda f: "agreed" if f["contract_liability"] else "equivalent"),
+    "hair_detached": dict(
+        sadi=[], qawaid=[RAJAB.format(2)], facts={"hair_or_nail": B},
+        out=("attached", "detached"), lean="Usul.Refinements.hairStatus {hair_or_nail}",
+        py=lambda f: "detached" if f["hair_or_nail"] else "attached"),
+    "growth_from_substance": dict(
+        sadi=[], qawaid=[RAJAB.format(20), RAJAB.format(21)], facts={"from_substance": B},
+        out=("part", "separate"), lean="Usul.Refinements.growthKind {from_substance}",
+        py=lambda f: "part" if f["from_substance"] else "separate"),
+    "right_after_transfer": dict(
+        sadi=[], qawaid=[RAJAB.format(24)], facts={"on_property": B, "reason_ceases": B},
+        out=B, lean="Usul.Refinements.rightSurvivesTransfer {on_property} {reason_ceases}",
+        py=lambda f: f["on_property"] or not f["reason_ceases"]),
     "umum_lafz": dict(
         sadi=[], qawaid=[LAHHAM.format(61)], facts={"in_occasion": B, "general_wording": B},
         out=B, lean="Usul.Dalala.coversBeyondSabab true {in_occasion} {general_wording}",
