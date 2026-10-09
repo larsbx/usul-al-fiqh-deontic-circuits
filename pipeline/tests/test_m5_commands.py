@@ -244,11 +244,53 @@ def test_fetch_rejects_changed_download_without_repinning(monkeypatch, tmp_path)
     plan = _plan()
     old_lock = (CORPUS / "lock.json").read_bytes()
 
-    def changed_download(witness, cache):
+    def changed_download(witness, cache, *, refresh=False):
+        assert refresh
         (cache / f"{m5.WITNESS}.txt").write_bytes(b"different content")
         return {**plan["source"], "sha256": "0" * 64}
 
     monkeypatch.setattr(fetch, "fetch", changed_download)
     with pytest.raises(ValueError, match="download differs from locked source"):
         m5.fetch_locked_source(plan, CORPUS, tmp_path)
+    assert (CORPUS / "lock.json").read_bytes() == old_lock
+
+
+def test_explicit_fetch_restores_an_invalid_cache_from_the_pinned_url(monkeypatch, tmp_path):
+    from usul_corpus import fetch
+
+    plan, data = _plan(), _source()
+    old_lock = (CORPUS / "lock.json").read_bytes()
+    cache_file = tmp_path / f"{m5.WITNESS}.txt"
+    cache_file.write_bytes(b"truncated witness")
+    requests = []
+
+    def get_source(url):
+        requests.append(url)
+        return data
+
+    monkeypatch.setattr(fetch, "_get", get_source)
+    restored = m5.fetch_locked_source(plan, CORPUS, tmp_path)
+    assert requests == [plan["source"]["url"]]
+    assert cache_file.read_bytes() == restored == data
+    m5.validate_source(plan, restored)
+    assert (CORPUS / "lock.json").read_bytes() == old_lock
+
+
+def test_retry_after_a_rejected_download_can_restore_the_cache_without_repinning(monkeypatch, tmp_path):
+    from usul_corpus import fetch
+
+    plan, data = _plan(), _source()
+    old_lock = (CORPUS / "lock.json").read_bytes()
+    replies = iter((b"changed upstream bytes", data))
+    requests = []
+
+    def get_source(url):
+        requests.append(url)
+        return next(replies)
+
+    monkeypatch.setattr(fetch, "_get", get_source)
+    with pytest.raises(ValueError, match="download differs from locked source"):
+        m5.fetch_locked_source(plan, CORPUS, tmp_path)
+    assert m5.fetch_locked_source(plan, CORPUS, tmp_path) == data
+    assert requests == [plan["source"]["url"]] * 2
     assert (CORPUS / "lock.json").read_bytes() == old_lock

@@ -167,11 +167,11 @@ def validate_source(plan: dict, data: bytes) -> None:
 
 
 def fetch_locked_source(plan: dict, corpus: Path, cache: Path) -> bytes:
-    """Restore a cache entry without changing any source lock or corpus record."""
+    """Explicitly redownload the pinned witness without changing locks or records."""
     from .fetch import fetch
 
     registry = json.loads((corpus / "registry.json").read_text())
     witness = next(w for work in registry["works"] for w in work["witnesses"] if w["id"] == WITNESS)
-    entry = fetch(witness, cache)
+    entry = fetch(witness, cache, refresh=True)
     _require(all(entry[k] == plan["source"][k] for k in ("url", "bytes", "sha256")), "download differs from locked source")
     return (cache / f"{WITNESS}.txt").read_bytes()

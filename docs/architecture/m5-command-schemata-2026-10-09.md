@@ -70,7 +70,8 @@ cd ..
 make test validate generated lean
 ```
 
-The source replay restores the pinned witness into cache without changing `lock.json`.
+The explicit fetch path redownloads the pinned witness, replacing an invalid or previously
+rejected cache entry without changing `lock.json`.
 It checks the full bytes and hash, then finds every evidence quote inside qāʿida 43 and
 checks its closing-page marker. It fails if the source is missing unless fetching is
 explicitly requested, and rejects a changed download rather than repinning it. CI runs
