@@ -14,57 +14,58 @@ How often each cited work is named in the citers' own texts; method in [`recepti
 | Fatāwā Nūr ʿalā al-Darb (Ibn ʿUthaymīn) | `openiti-ibnuthaymin-nuraladarb-shamela2300` | Ibn ʿUthaymīn | 7468 |
 | Tamām al-Minna | `shamela-11122` | al-Albānī | 464 |
 | Irshād Ulī al-Baṣāʾir wa'l-Albāb | `shamela-1602` | al-Saʿdī | 147 |
+| Irwāʾ al-Ghalīl | `shamela-22592` | al-Albānī | 2504 |
 | Bahjat Qulūb al-Abrār | `shamela-9945` | al-Saʿdī | 212 |
 
-Not cached when the report was built: `shamela-10649`, `shamela-22592`.
+Not cached when the report was built: `shamela-10649`.
 
 ## Cited works
 
 | Work | Id | Genre | Total | Ibn Bāz | Ibn ʿUthaymīn | al-Albānī | al-Saʿdī | Sample hits |
 |---|---|---|---:|---:|---:|---:|---:|---|
-| Zād al-Maʿād | `ibn_qayyim.zad_maad` | ahkam_hadith | 127 | 36 | 68 | 23 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P134` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P305` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV04P122` |
-| Bulūgh al-Marām min Adillat al-Aḥkām | `ibn_hajar.bulugh` | ahkam_hadith | 120 | 58 | 49 | 13 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV04P109` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV04P109` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV04P125` |
-| al-Mughnī | `ibn_qudama.mughni` | khilaf | 99 | 43 | 53 | 3 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV02P357` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P359` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV04P030` |
+| Bulūgh al-Marām min Adillat al-Aḥkām | `ibn_hajar.bulugh` | ahkam_hadith | 146 | 58 | 49 | 39 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV04P109` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV04P109` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV04P125` |
+| Zād al-Maʿād | `ibn_qayyim.zad_maad` | ahkam_hadith | 141 | 36 | 68 | 37 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P134` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P305` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV04P122` |
+| al-Mughnī | `ibn_qudama.mughni` | khilaf | 128 | 43 | 53 | 32 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV02P357` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P359` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV04P030` |
+| Fatḥ al-Bārī | `ibn_hajar.fath_bari` | ahkam_hadith | 77 | 23 | 38 | 16 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P012` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P060` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P060` |
 | Majmūʿ al-Fatāwā | `ibn_taymiyya.majmu_fatawa` | fatawa | 69 | 17 | 51 | 1 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P404` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV02P327` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P087` |
-| Fatḥ al-Bārī | `ibn_hajar.fath_bari` | ahkam_hadith | 65 | 23 | 38 | 4 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P012` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P060` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P060` |
+| al-Majmūʿ Sharḥ al-Muhadhdhab | `nawawi.majmu` | khilaf | 66 | 1 | 17 | 48 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P349` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P185` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P314` |
+| al-Muḥallā bi'l-Āthār | `ibn_hazm.muhalla` | khilaf | 58 | 8 | 10 | 40 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV15P231` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV15P231` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV20P299` |
+| Nayl al-Awṭār | `shawkani.nayl_awtar` | ahkam_hadith | 56 | 11 | 10 | 35 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P355` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV15P417` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV19P107` |
 | al-Furūʿ | `ibn_muflih.furu` | sharh | 52 | 7 | 45 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P374` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P187` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV11P135` |
-| Nayl al-Awṭār | `shawkani.nayl_awtar` | ahkam_hadith | 46 | 11 | 10 | 25 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P355` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV15P417` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV19P107` |
-| al-Muḥallā bi'l-Āthār | `ibn_hazm.muhalla` | khilaf | 35 | 8 | 10 | 17 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV15P231` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV15P231` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV20P299` |
-| al-Majmūʿ Sharḥ al-Muhadhdhab | `nawawi.majmu` | khilaf | 35 | 1 | 17 | 17 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P349` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P185` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P314` |
-| Iʿlām al-Muwaqqiʿīn | `ibn_qayyim.ilam` | fatawa | 31 | 18 | 11 | 2 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV02P241` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P052` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P339` |
+| Iʿlām al-Muwaqqiʿīn | `ibn_qayyim.ilam` | fatawa | 32 | 18 | 11 | 3 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV02P241` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P052` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P339` |
+| Subul al-Salām | `sanani.subul_salam` | ahkam_hadith | 32 | 11 | 6 | 14 | 1 | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P211` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P179` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P187` |
 | al-Sayl al-Jarrār | `shawkani.sayl_jarrar` | khilaf | 25 | 1 |  | 24 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV20P294` `src:shamela-11122/PageV01P046` `src:shamela-11122/PageV01P048` |
-| Subul al-Salām | `sanani.subul_salam` | ahkam_hadith | 24 | 11 | 6 | 6 | 1 | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P211` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P179` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P187` |
-| al-Inṣāf fī Maʿrifat al-Rājiḥ min al-Khilāf | `mardawi.insaf` | sharh | 20 | 2 | 18 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV19P317` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV25P375` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P187` |
+| al-Inṣāf fī Maʿrifat al-Rājiḥ min al-Khilāf | `mardawi.insaf` | sharh | 22 | 2 | 18 | 2 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV19P317` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV25P375` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P187` |
+| al-Ikhtiyārāt al-Fiqhiyya | `bali.ikhtiyarat` | ikhtiyarat | 19 |  | 8 | 11 |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P186` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P304` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV14P307` |
 | al-Durar al-Saniyya fī al-Ajwiba al-Najdiyya | `ulama_najd.durar_saniyya` | fatawa | 19 | 12 | 7 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV04P077` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV07P063` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV07P073` |
-| al-Ikhtiyārāt al-Fiqhiyya | `bali.ikhtiyarat` | ikhtiyarat | 17 |  | 8 | 9 |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P186` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P304` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV14P307` |
 | Zād al-Mustaqniʿ | `hajjawi.zad_mustaqni` | matn | 17 | 4 | 13 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV08P233` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV24P330` `src:openiti-ibnbaz-nuraladarb-shamela107/PageV09P223` |
 | Ighāthat al-Lahfān | `ibn_qayyim.ighatha` | fatawa | 14 | 14 |  |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P407` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P399` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P435` |
 | al-Rawḍ al-Murbiʿ | `buhuti.rawd_murbi` | sharh | 13 | 1 | 12 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV24P330` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV15P361` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV17P175` |
 | al-Iqnāʿ | `hajjawi.iqna` | matn | 12 |  | 12 |  |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P259` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV15P160` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV15P361` |
-| al-Muḥarrar | `majd.muharrar` | matn | 11 | 5 | 6 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P186` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P187` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV18P265` |
-| al-Sharḥ al-Kabīr | `shams_ibn_qudama.sharh_kabir` | sharh | 11 | 6 | 5 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV19P127` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV19P128` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV21P352` |
-| al-Rawḍa al-Nadiyya | `qannawji.rawda_nadiyya` | khilaf | 10 |  | 1 | 9 |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV18P283` `src:shamela-11122/PageV01P262` `src:shamela-11122/PageV01P332` |
+| al-Muḥarrar | `majd.muharrar` | matn | 12 | 5 | 6 | 1 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P186` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P187` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV18P265` |
+| al-Sharḥ al-Kabīr | `shams_ibn_qudama.sharh_kabir` | sharh | 12 | 6 | 5 | 1 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV19P127` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV19P128` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV21P352` |
+| al-Rawḍa al-Nadiyya | `qannawji.rawda_nadiyya` | khilaf | 11 |  | 1 | 10 |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV18P283` `src:shamela-11122/PageV01P262` `src:shamela-11122/PageV01P332` |
+| al-Tamhīd li-mā fī al-Muwaṭṭaʾ min al-Maʿānī wa'l-Asānīd | `ibn_abd_al_barr.tamhid` | ahkam_hadith | 10 | 1 | 3 | 6 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV20P328` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV01P240` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV09P418` |
+| al-Minhāj Sharḥ Ṣaḥīḥ Muslim | `nawawi.sharh_muslim` | ahkam_hadith | 10 | 6 | 1 | 3 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P225` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV20P322` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV20P377` |
 | Aḥkām Ahl al-Dhimma | `ibn_qayyim.ahkam_ahl_dhimma` | fatawa | 9 | 2 | 7 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV08P213` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV18P439` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV03P031` |
-| al-Minhāj Sharḥ Ṣaḥīḥ Muslim | `nawawi.sharh_muslim` | ahkam_hadith | 9 | 6 | 1 | 2 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P225` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV20P322` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV20P377` |
-| al-Kāfī fī Fiqh al-Imām Aḥmad | `ibn_qudama.kafi` | matn | 8 | 2 | 6 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV20P388` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV20P395` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P262` |
+| al-Kāfī fī Fiqh al-Imām Aḥmad | `ibn_qudama.kafi` | matn | 9 | 2 | 6 | 1 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV20P388` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV20P395` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P262` |
 | al-Ṭuruq al-Ḥukmiyya | `ibn_qayyim.turuq_hukmiyya` | fatawa | 7 | 5 | 2 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV04P239` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV07P211` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV23P439` |
 | Muntahā al-Irādāt | `ibn_najjar.muntaha` | matn | 6 |  | 6 |  |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P183` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV16P253` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV16P361` |
 | Bidāyat al-Mujtahid wa-Nihāyat al-Muqtaṣid | `ibn_rushd.bidaya` | khilaf | 6 |  | 4 | 2 |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P261` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV18P282` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV26P379` |
 | Sharḥ Muntahā al-Irādāt | `buhuti.sharh_muntaha` | sharh | 4 | 1 | 3 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV25P352` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV12P270` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV13P304` |
-| al-Tamhīd li-mā fī al-Muwaṭṭaʾ min al-Maʿānī wa'l-Asānīd | `ibn_abd_al_barr.tamhid` | ahkam_hadith | 4 | 1 | 3 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV20P328` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV01P240` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV09P418` |
 | al-Muqniʿ | `ibn_qudama.muqni` | matn | 4 | 3 | 1 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P186` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV18P265` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV30P332` |
 | ʿUmdat al-Fiqh | `ibn_qudama.umda` | matn | 4 | 2 | 2 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV08P233` `src:openiti-ibnbaz-nuraladarb-shamela107/PageV09P223` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV26P094` |
+| al-Fatāwā al-Kubrā | `ibn_taymiyya.fatawa_kubra` | fatawa | 4 |  | 3 | 1 |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV13P076` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV13P083` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV14P235` |
+| Maʿālim al-Sunan | `khattabi.maalim_sunan` | ahkam_hadith | 4 | 1 |  | 3 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV19P116` `src:shamela-11122/PageV01P374` `src:shamela-22592/PageV01P096` |
 | al-Talkhīṣ al-Ḥabīr | `ibn_hajar.talkhis_habir` | takhrij | 3 |  | 1 | 2 |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV23P223` `src:shamela-11122/PageV01P112` `src:shamela-11122/PageV01P347` |
 | Badāʾiʿ al-Fawāʾid | `ibn_qayyim.badai_fawaid` | fatawa | 3 |  | 3 |  |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV07P244` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV24P454` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV26P210` |
-| al-Fatāwā al-Kubrā | `ibn_taymiyya.fatawa_kubra` | fatawa | 3 |  | 3 |  |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV13P076` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV13P083` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV14P235` |
+| Masāʾil al-Imām Aḥmad, riwāyat Abī Dāwūd | `abu_dawud.masail_ahmad` | masail | 2 |  |  | 2 |  | `src:shamela-22592/PageV01P150` `src:shamela-22592/PageV01P069` |
 | al-Istidhkār | `ibn_abd_al_barr.istidhkar` | khilaf | 2 |  | 1 | 1 |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV18P282` `src:shamela-11122/PageV01P411` |
-| Maʿālim al-Sunan | `khattabi.maalim_sunan` | ahkam_hadith | 2 | 1 |  | 1 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV19P116` `src:shamela-11122/PageV01P374` |
-| Masāʾil al-Imām Aḥmad, riwāyat Abī Dāwūd | `abu_dawud.masail_ahmad` | masail | 0 |  |  |  |  |  |
+| Marātib al-Ijmāʿ | `ibn_hazm.maratib_ijma` | ijma | 2 |  |  | 2 |  | `src:shamela-22592/PageV01P063` `src:shamela-22592/PageV01P293` |
+| al-Awsaṭ fī al-Sunan wa'l-Ijmāʿ wa'l-Ikhtilāf | `ibn_mundhir.awsat` | khilaf | 2 |  |  | 2 |  | `src:shamela-22592/PageV01P066` `src:shamela-22592/PageV01P294` |
 | Kashshāf al-Qināʿ | `buhuti.kashshaf` | sharh | 0 |  |  |  |  |  |
 | al-Mubdiʿ fī Sharḥ al-Muqniʿ | `burhan_ibn_muflih.mubdi` | sharh | 0 |  |  |  |  |  |
 | Masāʾil Ḥarb al-Kirmānī | `harb.masail` | masail | 0 |  |  |  |  |  |
-| Marātib al-Ijmāʿ | `ibn_hazm.maratib_ijma` | ijma | 0 |  |  |  |  |  |
-| al-Awsaṭ fī al-Sunan wa'l-Ijmāʿ wa'l-Ikhtilāf | `ibn_mundhir.awsat` | khilaf | 0 |  |  |  |  |  |
 | al-Ijmāʿ | `ibn_mundhir.ijma` | ijma | 0 |  |  |  |  |  |
 | al-Ishrāf ʿalā Madhāhib al-ʿUlamāʾ | `ibn_mundhir.ishraf` | khilaf | 0 |  |  |  |  |  |
 | Taqrīr al-Qawāʿid wa-Taḥrīr al-Fawāʾid | `ibn_rajab.taqrir_qawaid` | qawaid | 0 |  |  |  |  |  |

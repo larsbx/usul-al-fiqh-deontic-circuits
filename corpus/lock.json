@@ -567,6 +567,12 @@
       "bytes": 259348,
       "sha256": "0ccb8b4ce4e8caf8d3c967c36473ed1634d450f48fd13aa853741863d6d9ae6c"
     },
+    "shamela-22592": {
+      "witness": "shamela-22592",
+      "url": "https://shamela.ws/book/22592/1",
+      "bytes": 5128848,
+      "sha256": "c95f3c6e3000991365556b3d8ee9878808da1207b74812584f69083953be23f7"
+    },
     "shamela-266": {
       "witness": "shamela-266",
       "url": "https://shamela.ws/book/266/1",
