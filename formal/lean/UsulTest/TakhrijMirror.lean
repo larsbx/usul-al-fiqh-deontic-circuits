@@ -246,6 +246,14 @@ import Usul
 #guard (Usul.Refinements.makeupAfterFailure .lossWithoutFault) == .baseline
 #guard (Usul.Refinements.defectiveCompensationBasis false) == .equivalent
 #guard (Usul.Refinements.defectiveCompensationBasis true) == .agreed
+#guard (Usul.Refinements.hairStatus false) == .attached
+#guard (Usul.Refinements.hairStatus true) == .detached
+#guard (Usul.Refinements.growthKind false) == .separate
+#guard (Usul.Refinements.growthKind true) == .part
+#guard (Usul.Refinements.rightSurvivesTransfer false false) == true
+#guard (Usul.Refinements.rightSurvivesTransfer false true) == false
+#guard (Usul.Refinements.rightSurvivesTransfer true false) == true
+#guard (Usul.Refinements.rightSurvivesTransfer true true) == true
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 #guard (Usul.Dalala.coversBeyondSabab true true false) == true

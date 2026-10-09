@@ -33,6 +33,39 @@ ORIGINAL_CASE_SHA256 = {
     QAIDA + ".f007": "6541542f5cd5909107f61ba24243afa448e298b15e9744ba3952d11e3abeb15c",
 }
 REVIEW_BY_FAR = {QAIDA + f".f{n:03d}": f"M5-CMD-Q{n:03d}" for n in (1, 3, 4, 7)}
+# Original capability receipts bind each fixture's complete ref/excerpt/hash list.
+ORIGINAL_EVIDENCE_SHA256 = {
+    "M5-CMD-001-qadiReported-writing": "d6bf886a194eb8c84881710335f375055fe7662416535cdcdcda793aa600552b",
+    "M5-CMD-001-qadiReported-gesture": "d6bf886a194eb8c84881710335f375055fe7662416535cdcdcda793aa600552b",
+    "M5-CMD-001-jamiWriting-writing": "c1553dc2f5e11f43438b552e009b5d88c8c4cc5ad42021283f646f7c88373db1",
+    "M5-CMD-001-jamiWriting-gesture": "c1553dc2f5e11f43438b552e009b5d88c8c4cc5ad42021283f646f7c88373db1",
+    "M5-CMD-003-abuBarakat-false": "31f65c5dc019b496a2d0ec56ec0ca33cca4437bee0ffae23a087c18dc3595fc6",
+    "M5-CMD-003-abuBarakat-true": "31f65c5dc019b496a2d0ec56ec0ca33cca4437bee0ffae23a087c18dc3595fc6",
+    "M5-CMD-003-literalReport-false": "90556b5b2214ee615146a9cb40288b4912930e53f85679a6950549fed96a045b",
+    "M5-CMD-003-literalReport-true": "90556b5b2214ee615146a9cb40288b4912930e53f85679a6950549fed96a045b",
+    "M5-CMD-003-authorConditional-false": "59ab91acee1b592e853dea7d412856ea3b95ee9506e0bdec429518e502035654",
+    "M5-CMD-003-authorConditional-true": "59ab91acee1b592e853dea7d412856ea3b95ee9506e0bdec429518e502035654",
+    "M5-CMD-004-qadi-bareCommand-mandub": "5beae3114c1ebf3e808bccdd1943144fa855d1c862a1c18f5ae79df1c29ad2dd",
+    "M5-CMD-004-qadi-unqualifiedThreat-mandub": "192a4f759d8ba680e9f1d617bfde8c2a54158098997226ffaa47c0402720cf1f",
+    "M5-CMD-004-qadi-wujubLabel-mandub": "192a4f759d8ba680e9f1d617bfde8c2a54158098997226ffaa47c0402720cf1f",
+    "M5-CMD-004-qadi-fardLabel-mandub": "192a4f759d8ba680e9f1d617bfde8c2a54158098997226ffaa47c0402720cf1f",
+    "M5-CMD-004-qadi-bareCommand-mubah": "5beae3114c1ebf3e808bccdd1943144fa855d1c862a1c18f5ae79df1c29ad2dd",
+    "M5-CMD-004-qadi-wujubLabel-none": "192a4f759d8ba680e9f1d617bfde8c2a54158098997226ffaa47c0402720cf1f",
+    "M5-CMD-004-abuBarakat-bareCommand-mandub": "5beae3114c1ebf3e808bccdd1943144fa855d1c862a1c18f5ae79df1c29ad2dd",
+    "M5-CMD-004-abuBarakat-unqualifiedThreat-mandub": "18a9850d0da6e319005520fd1a155214188e83f3f346f3fdadb406a672057540",
+    "M5-CMD-004-abuBarakat-wujubLabel-mandub": "18a9850d0da6e319005520fd1a155214188e83f3f346f3fdadb406a672057540",
+    "M5-CMD-004-abuBarakat-fardLabel-mandub": "18a9850d0da6e319005520fd1a155214188e83f3f346f3fdadb406a672057540",
+    "M5-CMD-004-abuBarakat-bareCommand-mubah": "5beae3114c1ebf3e808bccdd1943144fa855d1c862a1c18f5ae79df1c29ad2dd",
+    "M5-CMD-004-abuBarakat-wujubLabel-none": "18a9850d0da6e319005520fd1a155214188e83f3f346f3fdadb406a672057540",
+    "M5-CMD-007-qadiReport-recommendation": "b1e9dbaee32b892869b2dc62e5cc21f89f063cc991843f94e87bb7c0f37a855e",
+    "M5-CMD-007-qadiReport-permission": "1b0f0cc13f8f832f7e834e836e21d470edac6d0f02d0488c0d3ef7daab0b7191",
+    "M5-CMD-007-karkhiRazi-recommendation": "ddcb83ebdd27926dca6e41c9383ccf26f8d10ca521556305efd2f28510caa2a7",
+    "M5-CMD-007-karkhiRazi-permission": "ddcb83ebdd27926dca6e41c9383ccf26f8d10ca521556305efd2f28510caa2a7",
+    "M5-CMD-007-abuBarakat-recommendation": "1b0f0cc13f8f832f7e834e836e21d470edac6d0f02d0488c0d3ef7daab0b7191",
+    "M5-CMD-007-abuBarakat-permission": "1b0f0cc13f8f832f7e834e836e21d470edac6d0f02d0488c0d3ef7daab0b7191",
+    "M5-CMD-007-qadiArgument-recommendation": "8263bee512506905aa76e8a7d885e0d522477f88e5ee553dd28a27246c77dc4e",
+    "M5-CMD-007-qadiArgument-permission": "8263bee512506905aa76e8a7d885e0d522477f88e5ee553dd28a27246c77dc4e",
+}
 ENCODERS_BY_FAR = dict(zip(
     [QAIDA + f".f{i:03d}" for i in (1, 3, 4, 7)],
     ["command_nonverbal_usage", "command_prophetic_act_usage",
@@ -70,6 +103,14 @@ def case_sha256(case: dict) -> str:
     return sha256(json.dumps(case, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode())
 
 
+def check_evidence_anchor(fixture: dict) -> None:
+    """Pin the original supporting quotations, not just any passage in the chapter."""
+    digest = sha256(json.dumps(fixture["source_evidence"], ensure_ascii=False,
+                               sort_keys=True, separators=(",", ":")).encode())
+    _require(digest == ORIGINAL_EVIDENCE_SHA256.get(fixture["id"]),
+             "fixture evidence differs from original anchor")
+
+
 def _require(condition: bool, message: str) -> None:
     if not condition:
         raise ValueError(message)
@@ -79,7 +120,7 @@ def validate(plan: dict, corpus: Path) -> None:
     """Check candidate scope, source locks, original case receipts, fixtures and review gaps."""
     _require(plan["schema_version"] == 1 and plan["status"] == "candidate", "candidate plan required")
     _require(plan["base_commit"] == BASE_COMMIT, "original contribution anchor changed")
-    _require(plan["scope"] == "capability fixtures only; six live gaps remain open", "scope changed")
+    _require(plan["scope"] == "capability fixtures only; four original command gaps remain open", "scope changed")
     _require(plan["source"]["witness"] == WITNESS, "wrong source witness")
     lock = json.loads((corpus / "lock.json").read_text())["witnesses"][WITNESS]
     _require(all(plan["source"][k] == lock[k] for k in ("url", "bytes", "sha256")), "source lock changed")
@@ -143,6 +184,7 @@ def validate(plan: dict, corpus: Path) -> None:
             excerpt = evidence["excerpt_ar"]
             _require(0 < len(excerpt) <= 400 and evidence["ref"].startswith(f"src:{WITNESS}/"), "invalid source excerpt")
             _require(sha256(excerpt.encode()) == evidence["excerpt_sha256"], "evidence hash changed")
+        check_evidence_anchor(fixture)
 
 
 def validate_source(plan: dict, data: bytes) -> None:
@@ -168,6 +210,7 @@ def validate_source(plan: dict, data: bytes) -> None:
     indices = [i for i, ch in enumerate(text) if "ء" <= ch <= "ي"]
     letters = "".join(text[i] for i in indices)
     for fixture in plan["fixtures"]:
+        check_evidence_anchor(fixture)
         for evidence in fixture["source_evidence"]:
             excerpt = re.sub(r"[^ء-ي]", "", evidence["excerpt_ar"])
             _require(bool(excerpt), "source excerpt contains no Arabic letters")

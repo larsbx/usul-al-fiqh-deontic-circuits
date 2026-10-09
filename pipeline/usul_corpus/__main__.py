@@ -292,7 +292,7 @@ def cmd_m5_commands(args: argparse.Namespace) -> int:
     except (ValueError, KeyError, OSError) as e:
         print(f"m5-commands: {e}", file=sys.stderr)
         return 1
-    print(f"ok: {len(plan['fixtures'])} M5 capability fixtures + full locked source; six case gaps remain open")
+    print(f"ok: {len(plan['fixtures'])} M5 capability fixtures + full locked source; four original command gaps remain open")
     return 0
 
 

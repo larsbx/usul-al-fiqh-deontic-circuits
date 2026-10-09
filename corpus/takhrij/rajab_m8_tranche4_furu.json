@@ -1,0 +1,379 @@
+{
+  "suite": "m8_rajab_tranche_4",
+  "status": "candidate",
+  "provenance": "M8 fourth tranche: every far record of Ibn Rajab's qawāʿid 2, 20, 21 and 24, annotated against readings formalised from each qāʿida's own statement (Usul.Refinements). Annotated by reading the full paragraph in the pinned witness; every claim of agreement is guarded by Lean (UsulTest/Takhrij.lean); classes and facts await human review (Review.tla).",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f000",
+      "encoder": "hair_detached",
+      "class": "derivable",
+      "facts": {
+        "hair_or_nail": true
+      },
+      "expected": "detached",
+      "note": "Touching a woman's hair or nail with desire does not break wuḍūʾ, nor touching her with one's own; Ibn Rajab adds a second ground, that these parts are not a seat of original desire."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f001",
+      "encoder": "hair_detached",
+      "class": "derivable",
+      "facts": {
+        "hair_or_nail": true
+      },
+      "expected": "detached",
+      "note": "Hair does not become impure by death or separation «على المذهب»; a long nail likewise on one iḥtimāl, while on the mashhūr a nail separated from a non-human is impure, life having left it."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002",
+      "encoder": "hair_detached",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "hair_or_nail": true
+      },
+      "expected": "detached",
+      "positions": [
+        {
+          "who": "al-Mughnī, ẓāhir of al-Khiraqī: not obligatory",
+          "ruling": "detached"
+        },
+        {
+          "who": "the other wajh: obligatory taʿabbudan",
+          "ruling": "attached"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Washing the hair in janāba: two wujūh; al-Mughnī prefers no obligation «طردا للقاعدة» and gives it as the ẓāhir of al-Khiraqī; the other: obligatory as worship. For the minor ḥadath, the hanging hair is washed «على الصحيح», against the qāʿida."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f003",
+      "encoder": "hair_detached",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "hair_or_nail": true
+      },
+      "expected": "detached",
+      "positions": [
+        {
+          "who": "al-aṣaḥḥ: no effect",
+          "ruling": "detached"
+        },
+        {
+          "who": "the other view: effective",
+          "ruling": "attached"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Attaching divorce, manumission or ẓihār to the hair or nail: none of them follows «على الأصح»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f004",
+      "encoder": "hair_detached",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "hair_or_nail": true
+      },
+      "expected": "detached",
+      "positions": [
+        {
+          "who": "the madhhab, Aḥmad's naṣṣ: it covers, as something apart from the body",
+          "ruling": "detached"
+        },
+        {
+          "who": "al-Qāḍī's first view: the attached is no covering",
+          "ruling": "attached"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A wide collar showing the ʿawra, covered by a long beard: «فالمذهب أنه يكفيه في الستر», Aḥmad's naṣṣ (al-Mughnī); al-Qāḍī first denied that the attached covers, then returned to the naṣṣ for prayer only."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f000",
+      "encoder": "growth_from_substance",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "from_substance": true
+      },
+      "expected": "part",
+      "positions": [
+        {
+          "who": "riwāya: from owning the mothers (part)",
+          "ruling": "part"
+        },
+        {
+          "who": "riwāya: from completion",
+          "ruling": "separate"
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A niṣāb completed by offspring: is its ḥawl from the completion, or from owning the mothers, the offspring being part of them? Two riwāyas; trade profit counts from completion «بغير خلاف». No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f001",
+      "encoder": "growth_from_substance",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "from_substance": true
+      },
+      "expected": "part",
+      "positions": [
+        {
+          "who": "takhrīj: allowed for offspring, as part of the niṣāb",
+          "ruling": "part"
+        },
+        {
+          "who": "wajh: not allowed",
+          "ruling": "separate"
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Paying zakāt early for the niṣāb's growth before it exists: three wujūh (the third: allowed if the growth is below a niṣāb, as following it), and a fourth by takhrīj: allowed for offspring, not for profit, from the previous farʿ. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f002",
+      "encoder": "growth_from_substance",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "from_substance": true
+      },
+      "expected": "part",
+      "positions": [
+        {
+          "who": "riwāya: returned with it, as part",
+          "ruling": "part"
+        },
+        {
+          "who": "riwāya: kept by the buyer",
+          "ruling": "separate"
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Returning a purchase for a defect: earnings are not returned with it «بغير خلاف» (many aṣḥāb); growth from its substance (offspring, milk, wool, fruit): «فيه روايتان معروفتان». No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f003",
+      "encoder": "growth_from_substance",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "from_substance": true
+      },
+      "expected": "part",
+      "positions": [
+        {
+          "who": "ashhar: from the third, the fruit growing from his property",
+          "ruling": "part"
+        },
+        {
+          "who": "the other wajh: not from the third",
+          "ruling": "separate"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A dying man's musāqāt naming more than the usual share: «أشهرهما أنه يعتبر من الثلث لحدوث الثمر من عين ملكه»; his muḍāraba with the same excess is not counted, profit being earnings."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f004",
+      "encoder": "growth_from_substance",
+      "class": "derivable",
+      "facts": {
+        "from_substance": true
+      },
+      "expected": "part",
+      "note": "The worker cancels: in muḍāraba before profit he has nothing; in musāqāt before the fruit he has his wage, since «الثمر متولد من عين الشجر» and his work affected it."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f005",
+      "encoder": "growth_from_substance",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "from_substance": true
+      },
+      "expected": "part",
+      "positions": [
+        {
+          "who": "many aṣḥāb: not allowed, the yield is as the substance",
+          "ruling": "part"
+        },
+        {
+          "who": "riwāya, Taqī al-Dīn: allowed",
+          "ruling": "separate"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Partnership of one's property and another's work: in what grows from work (profit) allowed; in what the substance yields (milk, offspring) two riwāyas, «وكثير من الأصحاب يختار فيه المنع … والمتولد من العين حكمه حكمها»; Abū al-Khaṭṭāb excepts fruit, and Taqī al-Dīn treats renewing substances as benefits."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q021.f001",
+      "encoder": "growth_from_substance",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "from_substance": true
+      },
+      "expected": "part",
+      "positions": [
+        {
+          "who": "al-aẓhar: the child is a part",
+          "ruling": "part"
+        },
+        {
+          "who": "the child is earnings",
+          "ruling": "separate"
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A slave-woman whose benefits were bequeathed gives birth: on earnings the child is the beneficiary's; on part (al-aẓhar in the qāʿida), two wujūh: as she is, or the heirs'. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q021.f002",
+      "encoder": "growth_from_substance",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "from_substance": true
+      },
+      "expected": "part",
+      "positions": [
+        {
+          "who": "al-aẓhar: a part, so it follows",
+          "ruling": "part"
+        },
+        {
+          "who": "earnings: two wujūh",
+          "ruling": "separate"
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Does the child follow its mother in a void kitāba as in a valid one? On part it follows; on earnings two wujūh, on whether earnings are kept in a void kitāba. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f000",
+      "encoder": "right_after_transfer",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "on_property": false,
+        "reason_ceases": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "wajh: the sale is undone and the goods burned",
+          "ruling": true
+        },
+        {
+          "who": "wajh: valid, the burning lapses",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The one who stole from the spoils sells his goods before they are burned: two wujūh (al-Mughnī). The burning punishes his past crime, which the sale does not undo, so the right survives: «ينفسخ البيع ويحرق لأن حق التحريق أسبق». The other wajh: valid, and the burning lapses as at his death. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f001",
+      "encoder": "right_after_transfer",
+      "class": "derivable",
+      "facts": {
+        "on_property": true,
+        "reason_ceases": false
+      },
+      "expected": true,
+      "note": "The buyer sells the pre-empted share before the demand: the shafīʿ takes it from the second buyer or undoes the sale («لسبق حقه»), on both wujūh. On the validity of the sale, the mashhūr (al-Khiraqī) agrees with the qāʿida's «صح»; Abū Bakr: void."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f002",
+      "encoder": "right_after_transfer",
+      "class": "derivable",
+      "facts": {
+        "on_property": false,
+        "reason_ceases": true
+      },
+      "expected": false,
+      "note": "A dhimmī ordered to lower his building sells it to a Muslim: valid, and the demolition lapses «لزوال علته», since it removed an ongoing harm, not a punishment for the past."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f003",
+      "encoder": "right_after_transfer",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "on_property": false,
+        "reason_ceases": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī: lapses",
+          "ruling": false
+        },
+        {
+          "who": "Ibn ʿAqīl: does not lapse if sold to escape",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A leaning wall, demanded to be demolished, then the house sold: does liability for its fall lapse? al-Qāḍī: it lapses; Ibn ʿAqīl: not if he sold to escape the demand, its cause having arisen in his ownership. No madhhab marked; the reading follows al-Qāḍī."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f004",
+      "encoder": "right_after_transfer",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "on_property": true,
+        "reason_ceases": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "as God's right, like a vowed slave: survives",
+          "ruling": true
+        },
+        {
+          "who": "as the seller's right: lapses",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A slave bought on condition of manumission, then sold on the same condition: two wujūh (al-Azajī: not valid). Ibn Rajab builds it on whose right the manumission is: God's, as with the vowed slave, so it survives; or the seller's, which lapses with the arsh. The reading takes the right as on the slave. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f005",
+      "encoder": "right_after_transfer",
+      "class": "derivable",
+      "facts": {
+        "on_property": true,
+        "reason_ceases": false
+      },
+      "expected": true,
+      "note": "Selling a slave who committed a crime: he must ransom him; if insolvent, the sale is undone «تقديما لحق المجني عليه لسبقه»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f006",
+      "encoder": "right_after_transfer",
+      "class": "derivable",
+      "facts": {
+        "on_property": true,
+        "reason_ceases": false
+      },
+      "expected": true,
+      "note": "The heir sells an estate exhausted by debt, undertaking to pay it, and cannot: the sale is undone."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f007",
+      "encoder": "right_after_transfer",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "on_property": true,
+        "reason_ceases": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "zakāt on the property: undone in its share",
+          "ruling": true
+        },
+        {
+          "who": "on the owner's dhimma: not undone",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Selling the niṣāb after zakāt fell due, then insolvent: two wujūh, built on whether zakāt attaches to the property or to its owner's dhimma; on the property, the sale is undone in the zakāt's share. The reading takes it as on the property. No madhhab marked."
+    }
+  ]
+}

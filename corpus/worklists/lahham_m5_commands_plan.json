@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "candidate",
-  "scope": "capability fixtures only; six live gaps remain open",
+  "scope": "capability fixtures only; four original command gaps remain open",
   "base_commit": "3a9d11776eb3be21702d3624f4152e276fda00ed",
   "source": {
     "witness": "openiti-lahham-shamela8526",

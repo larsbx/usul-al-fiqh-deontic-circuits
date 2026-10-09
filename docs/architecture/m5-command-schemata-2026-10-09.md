@@ -1,8 +1,9 @@
 # M5 command capabilities: Ibn al-Laḥḥām 43
 
 This contribution makes four command questions expressible as **candidate capabilities**.
-It does not select a preferred reading or revisit a live annotation. The aggregate remains
-303 cases, coverage 0.980, madhhab coverage 0.659, zero encoding errors and six open gaps.
+It does not select a preferred reading or revisit a live annotation. At the integrated
+tranche-4 base `24051f90c289868618c86e4bf22b62fe4fba1633`, the aggregate is 324 cases,
+coverage 0.981, madhhab coverage 0.653, zero encoding errors and six open gaps.
 All four command gaps retain their original `missing_rule` records and `needs` values.
 
 `Usul.CommandSchemata` supplies explicit reading parameters; Python encoders mirror them.
@@ -43,6 +44,8 @@ The plan pins the full witness, the committed source-record file, four complete 
 case receipts and their Arabic excerpt hashes. The original case hashes are independently
 anchored in the validator at base commit `3a9d11776eb3be21702d3624f4152e276fda00ed`,
 alongside the original source URL, bytes, hash and complete source-record hash.
+Each fixture's complete evidence receipt is independently pinned as well; another
+passage from the same chapter cannot silently replace its supporting quotation.
 Validation checks those anchors before comparing each live case with its receipt, so
 rewriting the case and its receipt together cannot silently replace the original reading.
 The historical case locators retain the parent's opening page, p221. Evidence locators
@@ -60,7 +63,10 @@ to satisfy the old gap requirements.
 The other two live gaps also remain unchanged: Ibn al-Laḥḥām 52.f007 supplies no
 transmitted ruling, and Ibn Rajab 22.f000 combines agreed and disputed cases requiring
 segmentation or additional facts. A capability fixture is not an annotated case and does
-not increase the 303-case denominator. Derivability under a candidate encoding is not an
+not increase the live-annotation denominator. The original 303 cases retain their
+interpretations and provenance; main's merged tranche 4 supplies the additional 21
+candidate annotations. Tests check the live report rather than freezing a historical
+snapshot count. Derivability under a candidate encoding is not an
 accepted fatwā.
 
 ## Replay and checks

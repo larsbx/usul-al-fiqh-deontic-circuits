@@ -172,14 +172,14 @@ After this round: 214 cases, **coverage 0.977**, **madhhab coverage 0.648**, **0
 **Scope reconciliation.** Counts come from committed record IDs minus all existing annotations, not historical estimates. M4 now annotates 196 Ibn Rajab records under 14 qawāʿid, including nine `.f000` additions. PR #29's 1,129 segmented records minus those 196 and tranche 1's 26 left 907 records in 122 qawāʿid with cases. The old “869 in 146” mixed pre-opening counts with all unannotated qawāʿid, including those with no segmented case. PR #30 then added seven segmented records and annotated tranche 2's 25: 1,136 − 196 − 26 − 25 = 889, in 118 qawāʿid. Merged PR #32 then added the list-and-division segmentation and 21 candidate annotations. The unified tranche 3 below preserves those cases and PR #31's eight existing-record annotations, in one 29-record suite; current totals are generated below. Ibn al-Laḥḥām and the global report's totals are separate scopes.
 
 <!-- BEGIN GENERATED M8 SCOPE -->
-**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 276 annotated + **903 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 29 are fully annotated and **125 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
+**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 297 annotated + **882 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 33 are fully annotated and **121 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
 
 The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
 
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.793 | 0 | 0 |
-| All annotation suites | 303 | 0.980 | 0.659 | 0 | 6 |
+| All annotation suites | 324 | 0.981 | 0.653 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -284,6 +284,23 @@ Four of the eight now land on the madhhab side (22.f003, 22.f004, 22.f007, 65.f0
 - 52.f007, which has no transmitted ruling;
 - 22.f000, which bundles a case agreed «بغير خلاف» (much water) with a disputed one (little water) in a single record.
 
+**Tranche 4 (qawāʿid 2, 20, 21, 24; 21 furūʿ).** Read from each qāʿida's own statement (`corpus/takhrij/rajab_m8_tranche4_furu.json`):
+
+| Qāʿida | Reading | Link to the bank |
+|---|---|---|
+| 2: hair and nails are as detached («هذا هو جادة المذهب») | `hairStatus` | new |
+| 20: growth from the substance is as a part; growth from earnings is not («على الصحيح») | `growthKind` | new |
+| 21: is the child a part or earnings? («والأظهر أنه جزء») | the same encoder | `child_is_part`: 21 is 20 applied |
+| 24: property that a due right attaches to may be transferred; the right survives if it is on the property, or if its reason does not cease with the transfer | `rightSurvivesTransfer` | `owner_right_lapses_with_its_reason`, `property_right_survives` |
+
+Results on the tranche:
+- **7 derivable, 14 ikhtilāf (5 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 21/21 = 1.000, madhhab coverage 12/21 = 0.571.
+- **What the cases say about the readings:**
+  - **Qāʿida 2 holds wherever a madhhab is marked**, for wuḍūʾ, impurity, divorce attached to the hair, and the beard as covering in prayer (Aḥmad's naṣṣ). The exception is inside 2.f002: the hanging hair is washed in the minor ḥadath «على الصحيح», against the qāʿida.
+  - **Qāʿidas 20 and 21 mark a madhhab only where the aṣḥāb take the yield as a part** (20.f003, the ashhar; 20.f005, many aṣḥāb). Elsewhere two riwāyas stand, and the qāʿida's «على الصحيح» decides only between substance and earnings, not each farʿ.
+  - **Qāʿida 24 separates the punitive from the remedial right.** Burning the thief's goods (24.f000) punishes a past act, so the sale does not end it. Lowering the dhimmī's building (24.f002) removes an ongoing harm, which ends with the transfer, as the text itself contrasts («لا عقوبة للتعلية الماضية»).
+- **Segmentation finding:** qāʿida 21's first example opens mid-line («والأظهر أنه جزء فمن ذلك …»), so it has no `.f000`. Qāʿida 9, whose inline «(ومنها)» joins several cases in one record, is left for the segmenter.
+
 **Coverage trend:**
 
 | Stage | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
@@ -299,6 +316,8 @@ Four of the eight now land on the madhhab side (22.f003, 22.f004, 22.f007, 65.f0
 | PR #32 contribution alone | 21 | 1.000 | 0.810 | 0 | 1 |
 | All, after PR #32 merged (historical) | 295 | 0.966 | 0.643 | 0 | 14 |
 | All, after round 5 (the bank applied to its gaps) | 303 | 0.980 | 0.659 | 0 | 6 |
+| M8 tranche 4 alone | 21 | 1.000 | 0.571 | 0 | 0 |
+| All, after tranche 4 | 324 | 0.981 | 0.653 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 
