@@ -1170,6 +1170,54 @@
      }
     ]
    }
+  },
+  {
+   "id": "IQ-22",
+   "rules": [
+    24
+   ],
+   "schemata": [
+    "S8-optimal"
+   ],
+   "pins": [
+    "Usul.Muamalat.q24_first_has_priority",
+    "Usul.Muamalat.q24_is_optimal"
+   ],
+   "commitment": "Q24 is encoded as an established rule. The one ḥadīth al-Saʿdī cites for it («من سبق إلى ما لم يسبق إليه مسلم فهو أحق به») is graded ḍaʿīf by al-Albānī (al-Irwāʾ 1555), so under the ḥadīth track's single gate (Hadith.Verdict.Hujja) it is not a dalīl; under the uṣūl track's adilla order (roadmap §2.2: mursal / non-fabricated ḍaʿīf ≻ qiyās) it may be. Surfaced by the H8 join (corpus/hadith/irwa_join.json).",
+   "alternatives": [
+    "Aḥmad's fourth aṣl (Iʿlām): the ḍaʿīf that is not bāṭil, munkar or through a suspected narrator is acted on before qiyās when nothing in the chapter opposes it. On this reading the ḥadīth still supports Q24 within the Ḥanbalī track, and the two tracks' gates differ.",
+    "Ibn al-Qayyim's gloss on the same aṣl: Aḥmad's ḍaʿīf is «قسيم الصحيح وقسم من أقسام الحسن». If his usable ḍaʿīf is the later ḥasan, a ḥadīth al-Albānī grades ḍaʿīf (below ḥasan) falls outside it: the disagreement is terminological, and Q24 needs another dalīl.",
+    "Q24 stands without the ḥadīth: al-ibāḥa al-aṣliyya for what has no protected owner (al-Saʿdī's own gloss: «ما ليس له مالك محترم») with the general rule that the earlier claim prevails (S8). The rule survives; only its cited naṣṣ is lost."
+   ],
+   "if_changed": "Nothing proved changes: q24_first_has_priority and q24_is_optimal do not take the ḥadīth as a hypothesis. What changes is Q24's recorded support: the Ḥanbalī fourth aṣl (alternative 1), the ibāḥa aṣliyya and S8 (alternative 3), or no textual dalīl. The question also fixes how the seam is read across tracks: whether Hadith.Verdict.Hujja is the gate for the uṣūl track's ḥadīth dalīls, or only the ḥadīth track's.",
+   "route": "halaqa:shared/usul-k/evidence-order.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:shamela-22592/v06:p011",
+     "relation": "contradicts",
+     "excerpt_ar": "من سبق إلى ما لم يسبق إليه مسلم فهو أحق به \" رواه أبو داود (ص ٤٥٥) . * ضعيف",
+     "note": "al-Albānī, al-Irwāʾ 1555: the ḥadīth al-Saʿdī cites for Q24 is ḍaʿīf."
+    },
+    {
+     "ref": "sadi.qawaid_jamia.archive_pdf1995.q024",
+     "relation": "bears-on",
+     "note": "al-Saʿdī cites this ḥadīth as Q24's dalīl («لقوله ﷺ»)."
+    },
+    {
+     "ref": "src:openiti-ilam-shamela11496/v01:p025",
+     "relation": "refines",
+     "excerpt_ar": "الأصل الرابع: الأخذ بالمرسل والحديث الضعيف، إذا لم يكن في الباب شيء يدفعه، وهو الذي رجحه على القياس، وليس المراد بالضعيف عنده الباطل ولا المنكر ولا ما في روايته متهم بحيث لا يسوغ الذهاب إليه فالعمل به؛ بل الحديث الضعيف عنده قسيم الصحيح وقسم من أقسام الحسن",
+     "note": "Ibn al-Qayyim on Aḥmad's fourth aṣl: the non-fabricated ḍaʿīf before qiyās, where his ḍaʿīf includes the later ḥasan."
+    },
+    {
+     "ref": "src:shamela-11122/v01:p034",
+     "relation": "contradicts",
+     "excerpt_ar": "القاعدة الثانية عشرة ترك العمل بالحديث الضعيف في فضائل الأعمال",
+     "note": "al-Albānī, Tamām al-Minna Q12: no acting on a ḍaʿīf ḥadīth, even in faḍāʾil."
+    }
+   ],
+   "analogies": []
   }
  ]
 }

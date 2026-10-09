@@ -207,6 +207,7 @@ def _link_matches(link: dict, r: dict) -> bool:
 
 SCALE_LEAN = ROOT / "formal" / "lean" / "HadithTest" / "ScaleMap.lean"
 DAIFA_LEAN = ROOT / "formal" / "lean" / "HadithTest" / "Daifa.lean"
+SEAM_LEAN = ROOT / "formal" / "lean" / "HadithTest" / "Seam.lean"
 _SOURCES = {"Usul": "corpus/signature_map.json and\n-- corpus/proposals/*.json", "Hadith": "corpus/hadith/*.json"}
 
 
@@ -281,6 +282,7 @@ def cmd_signature(_: argparse.Namespace) -> int:
     SIGNATURE_LEAN.write_text(signature_lean(_lean_names()), encoding="utf-8")
     SCALE_LEAN.write_text(signature_lean(hadith_lean_names(), "Hadith"), encoding="utf-8")
     DAIFA_LEAN.write_text(hadith.daifa_lean(CORPUS), encoding="utf-8")
+    SEAM_LEAN.write_text(hadith.seam_lean(_load(CORPUS / "hadith" / "irwa_join.json")["links"]), encoding="utf-8")
     return 0
 
 

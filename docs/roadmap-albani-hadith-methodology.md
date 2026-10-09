@@ -216,6 +216,8 @@ Notation as in the uṣūl roadmap: **Exit** criteria are machine-checkable unle
 - Attach *Irwāʾ* verdicts to the furūʿ of the Ḥanbalī matn. Report where a ḍaʿīf verdict removes the only dalīl of a farʿ the uṣūl track derives.
 - **Exit:** a cross-track coverage table; each removal classified, never silently patched.
 
+- **Seed (2026-10-09).** `hadith.irwa_join` matches the quoted matn of every *al-Irwāʾ* entry against the uṣūl track's qāʿida records; `corpus/hadith/irwa_join.json` holds 7 links, and the generated `HadithTest/Seam.lean` checks each verdict against the one seam and that the qāʿida's Lean constants exist. Outcome: the ḥadīth dalīls of al-Saʿdī Q22 (two ḥadīths), Q47 and Q57 pass (ṣaḥīḥ or ḥasan); **Q24's does not**: «من سبق إلى ما لم يسبق إليه مسلم فهو أحق به» is ḍaʿīf (*al-Irwāʾ* 1555). This is not a ruling on Q24. It is surfaced as **IQ-22** in the uṣūl register, with the evidence on both sides: Aḥmad's fourth aṣl (*Iʿlām*: the non-fabricated ḍaʿīf before qiyās) against *Tamām al-Minna* Q12, and Ibn al-Qayyim's gloss that Aḥmad's ḍaʿīf is «قسم من أقسام الحسن», which may make the disagreement terminological. The match is lexical (the quoted matn's first 24 letters, or all of it if shorter, at least 12), so paraphrased dalīls are missed; Ibn Rajab's and Ibn al-Laḥḥām's furūʿ rarely quote within their excerpts.
+
 #### H9 · ʿAqīda corpus (optional, firewalled) ⟵ H4
 - *Mukhtaṣar al-ʿUluww*, takhrīj of *Sharḥ al-Ṭaḥāwiyya* as test data only.
 

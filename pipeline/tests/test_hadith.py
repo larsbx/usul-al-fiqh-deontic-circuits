@@ -140,3 +140,37 @@ def test_irwa_audit_is_reproducible():
 def test_longest_increasing_skips_strays():
     assert hadith._longest_increasing([(0, 1), (1, 2), (2, 1650), (3, 3), (4, 7), (5, 8)]) == \
         [(0, 1), (1, 2), (3, 3), (4, 7), (5, 8)]
+
+
+# --- H8: the al-Irwāʾ join and the seam ------------------------------------------------------
+
+from usul_corpus.__main__ import SEAM_LEAN  # noqa: E402
+
+JOIN = json.loads((ROOT / "corpus/hadith/irwa_join.json").read_text(encoding="utf-8"))["links"]
+
+
+def test_join_is_reproducible():
+    src = CACHE / "shamela-22592.txt"
+    if not src.exists():
+        pytest.skip("al-Irwāʾ not cached")
+    records = [json.loads(l) for p in sorted((ROOT / "corpus/records").glob("*.jsonl"))
+               for l in p.read_text(encoding="utf-8").splitlines()]
+    proposals = json.loads((ROOT / "corpus/proposals/sadi_qawaid.json").read_text(encoding="utf-8"))
+    assert hadith.irwa_join(src.read_text(encoding="utf-8"), records, proposals) == JOIN
+
+
+def test_seam_lean_is_generated():
+    assert SEAM_LEAN.read_text(encoding="utf-8") == hadith.seam_lean(JOIN)
+
+
+def test_verdict_terms():
+    assert [hadith.irwa_verdict(t) for t in ("صحيح", "صحيح , مشهور", "حسن", "ضعيف جدا", "ضعيف", "باطل",
+                                             "لم أقف على سنده", None)] == \
+        ["sahih", "sahih", "hasan", "daifJiddan", "daif", "mawdu", None, None]
+
+
+def test_seam_findings():
+    """The join's outcome, pinned: every joined qāʿida dalīl passes the seam except Q24's."""
+    failing = {q for l in JOIN if l["hujja"] is False for q in l["sadi_qawaid"]}
+    passing = {q for l in JOIN if l["hujja"] for q in l["sadi_qawaid"]}
+    assert (failing, passing) == ({24}, {22, 47, 57})
