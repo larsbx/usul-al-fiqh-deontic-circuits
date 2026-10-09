@@ -220,6 +220,12 @@ import Usul
 #guard (Usul.Refinements.handLiable true) == true
 #guard (Usul.Refinements.takerRecourse false) == true
 #guard (Usul.Refinements.takerRecourse true) == false
+#guard (Usul.Refinements.makeupAfterFailure .corruption) == .asBegun
+#guard (Usul.Refinements.makeupAfterFailure .prevention) == .baseline
+#guard (Usul.Refinements.makeupAfterFailure .lossWithFault) == .asBegun
+#guard (Usul.Refinements.makeupAfterFailure .lossWithoutFault) == .baseline
+#guard (Usul.Refinements.defectiveCompensationBasis false) == .equivalent
+#guard (Usul.Refinements.defectiveCompensationBasis true) == .agreed
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 #guard (Usul.Dalala.coversBeyondSabab true true false) == true
