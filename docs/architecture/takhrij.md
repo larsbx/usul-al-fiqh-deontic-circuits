@@ -172,14 +172,14 @@ After this round: 214 cases, **coverage 0.977**, **madhhab coverage 0.648**, **0
 **Scope reconciliation.** Counts come from committed record IDs minus all existing annotations, not historical estimates. M4 now annotates 196 Ibn Rajab records under 14 qawāʿid, including nine `.f000` additions. PR #29's 1,129 segmented records minus those 196 and tranche 1's 26 left 907 records in 122 qawāʿid with cases. The old “869 in 146” mixed pre-opening counts with all unannotated qawāʿid, including those with no segmented case. PR #30 then added seven segmented records and annotated tranche 2's 25: 1,136 − 196 − 26 − 25 = 889, in 118 qawāʿid. Merged PR #32 then added the list-and-division segmentation and 21 candidate annotations. The unified tranche 3 below preserves those cases and PR #31's eight existing-record annotations, in one 29-record suite; current totals are generated below. Ibn al-Laḥḥām and the global report's totals are separate scopes.
 
 <!-- BEGIN GENERATED M8 SCOPE -->
-**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 297 annotated + **882 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 33 are fully annotated and **121 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
+**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 324 annotated + **855 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 39 are fully annotated and **115 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
 
 The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
 
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.793 | 0 | 0 |
-| All annotation suites | 324 | 0.981 | 0.653 | 0 | 6 |
+| All annotation suites | 351 | 0.983 | 0.657 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -301,6 +301,25 @@ Results on the tranche:
   - **Qāʿida 24 separates the punitive from the remedial right.** Burning the thief's goods (24.f000) punishes a past act, so the sale does not end it. Lowering the dhimmī's building (24.f002) removes an ongoing harm, which ends with the transfer, as the text itself contrasts («لا عقوبة للتعلية الماضية»).
 - **Segmentation finding:** qāʿida 21's first example opens mid-line («والأظهر أنه جزء فمن ذلك …»), so it has no `.f000`. Qāʿida 9, whose inline «(ومنها)» joins several cases in one record, is left for the segmenter.
 
+**Tranche 5 (qawāʿid 25, 29, 30, 32, 33, 34; 27 furūʿ).** Read from each qāʿida's own statement (`corpus/takhrij/rajab_m8_tranche5_furu.json`):
+
+| Qāʿida | Reading | Link to the bank |
+|---|---|---|
+| 25: does what is attached to or born of a thing follow ownership proven by evidence or confession? («فيه خلاف») | `followsProven`: Ibn Rajab's recurring measure, what follows in sale follows here | new |
+| 29: a tolerated amount exceeded: does tolerance lapse in all, or in the excess? («فيه وجهان») | `toleranceLapse`: in all when at fault, in the excess otherwise, Ibn Rajab's distinction in 29.f003 | new |
+| 30: what was given out as due and failed to count: does it return? («فيه خلاف») | `returnsToOwner` | new |
+| 32: excepting the benefit of a transferred thing («يصح عندنا … مدة معلومة») | `benefitExceptionValid`: a known period, or a transfer that tolerates uncertainty (waqf, manumission) | `known_period_suffices` |
+| 33: the implicit exception tolerates uncertainty («والصحيح … الصحة، وهو قياس المذهب») | `uncertainExceptionValid` | new |
+| 34: benefits owed under a binding contract are not reached by manumission | `manumissionReachesBenefits` | `binding_is_implicit_exception`: 34 is 33 applied |
+
+Results on the tranche:
+- **12 derivable, 15 ikhtilāf (7 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 27/27 = 1.000, madhhab coverage 19/27 = 0.704.
+- **What the cases say about the readings:**
+  - **Qawāʿid 32–34 form one chain.** An exception of benefit is valid when stated for a known period (32). When it arises by law it is valid even for an unknown period (33: the leased house, the married slave, the muḥrim). A binding contract over the benefits is such an exception, so manumission stops at it (34). Qāʿida 33's madhhab side is «قياس المذهب» against al-Qāḍī, and 34's is the madhhab against Taqī al-Dīn's spreading of manumission.
+  - **Qāʿida 29's dispute resolves by fault.** The ashhar in 29.f003 (impurity beyond its place) limits the lapse to the excess, and Ibn Rajab grounds it in the absence of negligence «بخلاف الوكيل والمضحي». The reading takes that as its parameter, so the agent and the sacrificer land on the whole; no madhhab is marked for them.
+  - **Qāʿidas 25 and 30 are stated as khilāf throughout.** 25 tracks the madhhab where it is marked (the trees, the ashhar on containers); 30 marks none.
+- **Segmentation finding:** 32's first example follows «مسائل منها:» without the colon the opening rule expects, so it has no `.f000`; 29's first case is a «(منها)» paragraph and is `.f001`.
+
 **Coverage trend:**
 
 | Stage | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
@@ -318,6 +337,8 @@ Results on the tranche:
 | All, after round 5 (the bank applied to its gaps) | 303 | 0.980 | 0.659 | 0 | 6 |
 | M8 tranche 4 alone | 21 | 1.000 | 0.571 | 0 | 0 |
 | All, after tranche 4 | 324 | 0.981 | 0.653 | 0 | 6 |
+| M8 tranche 5 alone | 27 | 1.000 | 0.704 | 0 | 0 |
+| All, after tranche 5 | 351 | 0.983 | 0.657 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 

@@ -254,6 +254,20 @@ import Usul
 #guard (Usul.Refinements.rightSurvivesTransfer false true) == false
 #guard (Usul.Refinements.rightSurvivesTransfer true false) == true
 #guard (Usul.Refinements.rightSurvivesTransfer true true) == true
+#guard (Usul.Refinements.followsProven false) == false
+#guard (Usul.Refinements.followsProven true) == true
+#guard (Usul.Refinements.toleranceLapse false) == .excess
+#guard (Usul.Refinements.toleranceLapse true) == .all
+#guard (Usul.Refinements.returnsToOwner false) == false
+#guard (Usul.Refinements.returnsToOwner true) == true
+#guard (Usul.Refinements.benefitExceptionValid false false) == false
+#guard (Usul.Refinements.benefitExceptionValid false true) == true
+#guard (Usul.Refinements.benefitExceptionValid true false) == true
+#guard (Usul.Refinements.benefitExceptionValid true true) == true
+#guard (Usul.Refinements.uncertainExceptionValid false) == false
+#guard (Usul.Refinements.uncertainExceptionValid true) == true
+#guard (Usul.Refinements.manumissionReachesBenefits false) == true
+#guard (Usul.Refinements.manumissionReachesBenefits true) == false
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 #guard (Usul.Dalala.coversBeyondSabab true true false) == true
