@@ -182,4 +182,42 @@ the rule-derived verdict. -/
 example : judgeR twoWeak 2 [] [⟨1, .hukm, .mawdu⟩] = .mawdu := by decide
 example : judgeR twoWeak 3 [(2, 1)] [⟨1, .hukm, .mawdu⟩] = .hasan := by decide
 
+
+/-! ## Li-dhātihi vs li-ghayrihi
+
+*Nuzha*: the lifted ḥadīth «منحط عن رتبة الحسن لذاته، وربما توقف بعضهم عن إطلاق اسم الحسن عليه».
+The five-valued verdict keeps one ḥasan; `Basis` records how it was reached, and `refinedRank`
+places the lifted grade strictly below the same grade reached by itself. -/
+
+inductive Basis where
+  | dhati | ghayri
+  deriving DecidableEq, Repr
+
+def basis (ts : List Tariq) (liftStands : Bool) : Basis :=
+  if liftStands ∧ Liftable ts then .ghayri else .dhati
+
+theorem bump_ne_of_liftable {ts : List Tariq} (h : Liftable ts) : bump (best ts) ≠ best ts := by
+  rcases h.1 with h | h <;> rw [h] <;> decide
+
+/-- A verdict is li-ghayrihi exactly when aggregation moved it off the best single route. -/
+theorem ghayri_iff (ts : List Tariq) (b : Bool) :
+    basis ts b = .ghayri ↔ aggregate ts b ≠ best ts := by
+  unfold basis aggregate
+  by_cases h : b = true ∧ Liftable ts
+  · simp only [h, and_self, ite_true, ne_eq, true_iff]; exact bump_ne_of_liftable h.2
+  · simp only [h, ite_false, ne_eq, not_true_eq_false, iff_false]; decide
+
+/-- The *Nuzha*'s ordering: same verdict, li-ghayrihi below li-dhātihi. -/
+def refinedRank (v : Verdict) (b : Basis) : Nat := 2 * v.rank + (if b = .dhati then 1 else 0)
+
+theorem ghayri_below_dhati (v : Verdict) : refinedRank v .ghayri < refinedRank v .dhati := by
+  simp [refinedRank]
+
+/-- The refinement never reorders different verdicts. -/
+theorem refinedRank_respects {v w : Verdict} (h : v.rank < w.rank) (b c : Basis) :
+    refinedRank v b < refinedRank w c := by
+  unfold refinedRank; split <;> split <;> omega
+
+example : basis twoWeak true = .ghayri := by decide
+
 end Hadith
