@@ -178,8 +178,8 @@ The unit is a committed farʿ record, which can contain multiple examples. Annot
 
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
-| Combined M8 tranche 3 | 29 | 1.000 | 0.793 | 0 | 1 |
-| All annotation suites | 303 | 0.967 | 0.646 | 0 | 14 |
+| Combined M8 tranche 3 | 29 | 1.000 | 0.793 | 0 | 0 |
+| All annotation suites | 303 | 0.980 | 0.659 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -267,6 +267,23 @@ make validate generated lean
 
 `m8-worklist --check` checks both the JSON inventory and the generated scope paragraphs in this note and the roadmap. The suite's source check verifies the full witness hash, exact record replay and all selected excerpt/page receipts when that witness is cached. Tests for other uncached witnesses report skips; they are not claimed as full-source replays.
 
+**Round 5: the bank applied to its own gaps, after tranches 1–3.** Of the 14 open gaps, 8 close, each by the principle the case itself names. Every closure is cited in the [dossier](dossier.md) and is a new reading beside the old one (`revisit.from_encoder`), so no earlier result changes:
+
+| Case | Was | Closed by | Ground |
+|---|---|---|---|
+| 68.f009 | missing rule | `rulingUndone`: undone only by a clear text | IQ-21's adopted principle, `ijtihad_not_overturned_by_ijtihad` (Ibn Abī Mūsā) |
+| 1.f003 | ikhtilāf, needs ʿurf | `oathBody`: the oath's object measured by custom | al-Saʿdī Q9 (`Kulliyyat.measure`); «والأيمان مرجعها إلى العرف» |
+| 22.f003, 22.f004 | ikhtilāf, minority side | `mixedOutcome`: same kind, indistinct, means shared | the manṣūṣ «أنه اشتراك» |
+| 22.f007 | missing rule | `mixedHaram`: few, suspend; many, take out the share | Aḥmad's naṣṣ (al-Marrūdhī) |
+| 68.f001 | missing fact | `rukhsaValid`: a concession needs its permission established | `rukhsa_is_firm_condition`: qāʿida 68's first type |
+| 68.f007 | ikhtilāf, needs taʿlīq | `conditionedSaleValid`: a condition both know to hold adds nothing | al-Kāfī, with Aḥmad's naṣṣ on the absent sale |
+| 65.f004 | missing rule | `pardonOfSpreadValid`: void if the right is the heirs' | `heirs_right_is_q65`; al-Qāḍī's jazm |
+
+Four of the eight now land on the madhhab side (22.f003, 22.f004, 22.f007, 65.f004). The other four are disputes with no madhhab marked; the reading follows Ibn Rajab in 1.f003. Six gaps stay open:
+- the four command gaps of Ibn al-Laḥḥām 43, which are uṣūl proper and wait for M5's schemata;
+- 52.f007, which has no transmitted ruling;
+- 22.f000, which bundles a case agreed «بغير خلاف» (much water) with a disputed one (little water) in a single record.
+
 **Coverage trend:**
 
 | Stage | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
@@ -281,6 +298,7 @@ make validate generated lean
 | All, after tranche 2 | 274 | 0.963 | 0.630 | 0 | 13 |
 | PR #32 contribution alone | 21 | 1.000 | 0.810 | 0 | 1 |
 | All, after PR #32 merged (historical) | 295 | 0.966 | 0.643 | 0 | 14 |
+| All, after round 5 (the bank applied to its gaps) | 303 | 0.980 | 0.659 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 

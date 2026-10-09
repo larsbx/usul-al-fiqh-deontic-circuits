@@ -570,3 +570,201 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Lean:** `Usul.Refinements.defectiveCompensationBasis`, `Usul.Refinements.defectiveCompensation`, `Usul.Refinements.defective_compensation_by_basis`, `Usul.Refinements.defective_loss_ignores_named`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="hukm_against_own_ijtihad"></a>
+
+## A ruling against the judge's own ijtihād stands unless a clear text contradicts it
+
+**Terms:** [al-ẓann al-bayyin khaṭaʾuh](../glossary.md#zann_bayyin_khatauh), [ghalabat al-ẓann](../glossary.md#ghalabat_al_zann)  
+**Closes:** `rule:hukm_against_own_ijtihad`  
+**Register:** IQ-21
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f009`: Ibn Abī Mūsā: he sins, and the ruling is not undone «إلا أن يكون مخالفا لنص صريح».
+  > لو حكم حاكم في مسألة مختلف فيها بما يرى أن الحق في غيره أثم وعصى بذلك ولم ينقض حكمه إلا أن يكون مخالفا لنص صريح ذكره ابن أبي موسى وقال السامري بل ينقض حكمه لأن شرط صحة الحكم موافقة الاعتقاد، ولهذا لو حكم بجهل لنقض حكمه مع أنه لا يعتقد بطلان ما حكم به فإذا اعتقد بطلانه فهو بالرد أولى وللأصحاب وجهان فيما ينقض فيه حكم الجاهل والفاسق أحدهما تنقض جميع أحكامه لفقد أهليته وهو قول أبي الخطاب وغيره. والثان
+
+**Conditions**
+
+1. a ruling in a disputed question
+2. the judge believed the truth lay elsewhere
+3. no clear text contradicts the ruling
+
+**Texts**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068`: Qāʿida 68: acting while doubting a condition of validity, under which Ibn Rajab places the case.
+  > إيقاع العبادات أو العقود أو غيرهما مع الشك في شرط صحتها هل يجعلها كالمعلقة على تحقيق ذلك الشرط أم لا؟ هي نوعان: أحدهما ما يشترط فيه النية الجازمة فلا يصح إيقاعه بهذا التردد ما لم يكن الشك غلبة ظن تكفي مثله في إيقاع العبادة أو العقد كغلبة الظن بدخول الوقت وطهارة الماء والثوب ونحو ذلك. ومن أمثلة ذلك إذا صلى يظن نفسه محدثا فتبين متطهرا. ومنها لو شك هل ابتدأ [مدة] مسح الخفين في السفر أو الحضر فمسح يوم
+
+**Rationale.** This is IQ-21's adopted principle applied to the judge. The ruling is undone only by what shows it wrong decisively (a clear text), never by an ijtihād, his own included: «الاجتهاد لا ينقض بالاجتهاد». Al-Sāmirī's contrary view, that the ruling must agree with his belief, is kept as the other position.
+
+**Lean:** `Usul.Refinements.rulingUndone`, `Usul.Refinements.own_ijtihad_does_not_undo`, `Usul.Refinements.clear_text_undoes`, `Usul.Refinements.ijtihad_not_overturned_by_ijtihad`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="ayman_by_urf"></a>
+
+## An oath's object is measured by custom
+
+**Terms:** [al-ʿurf](../glossary.md#urf)  
+**Closes:** `rule:ayman_by_urf`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003`: «وقياس المنصوص أنه يحنث، لا سيما والعرف يشهد له والأيمان مرجعها إلى العرف».
+  > لو حلف لا يقف في هذا الماء وكان جاريا لم يحنث عند أبي الخطاب وغيره ; لأن الجاري يتبدل ويستخلف شيئا فشيئا، فلا يتصور الوقوف فيه. وقياس المنصوص أنه يحنث، لا سيما والعرف يشهد له والأيمان مرجعها إلى العرف، ثم وجدت القاضي في الجامع الكبير ذكر نحو هذا [والله أعلم] .
+
+**Conditions**
+
+1. the swearer's intention does not define the object
+2. the law does not define it
+
+**Texts**
+
+- `sadi.qawaid_jamia.archive_pdf1995.q009`: al-Saʿdī Q9: custom decides every ruling whose measure the Lawgiver did not define.
+  > العرف والعادة يرجح إليه في كل حكم حکم به الشارع» ولم یحده بحد وهذا أصل واسع موجود في المعاملات. والحقوق» وغيرهاء وذلك: أن جميع الأحكام يُحتاج كل واحد منها إلى أ
+
+**Rationale.** What an oath names is not defined by the law, so by Q9 custom measures it (Usul.Kulliyyat.measure). Custom counts a running river as one body of water, so one who stands in it has stood in 'this water'. That is Ibn Rajab's qiyās al-manṣūṣ, against Abū al-Khaṭṭāb's per-jirya reading.
+
+**Lean:** `Usul.Refinements.oathBody`, `Usul.Refinements.oath_follows_custom`, `Usul.Kulliyyat.measure`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="khalt_as_shirka"></a>
+
+## Fungibles mixed indistinguishably with their own kind are shared, not consumed
+
+**Terms:** [al-ḍamān](../glossary.md#daman)  
+**Closes:** `rule:khalt_as_shirka`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f003`: «المنصوص في رواية عبد الله وأبي الحارث أنه اشتراك واختاره ابن حامد والقاضي في خلافه».
+  > لو خلط زيته بزيت غيره على وجه لا يتميز فهل هو استهلاك بحيث يجب لصاحبه عوضه من أي موضع كان أو هو اشتراك. في المسألة روايتان المنصوص في رواية عبد الله وأبي الحارث أنه اشتراك واختاره ابن حامد والقاضي في خلافه واختار في المجرد أنه استهلاك. وأما إن كان المختلط غصبا فقال في رواية أبي طالب هذا قد اختلط أوله وآخره أعجب إلي أن يتنزه عنه كله يتصدق به وأنكر قول من قال يخرج منه قدر ما خالطه. واختار ابن عقيل ف
+
+**Conditions**
+
+1. same kind
+2. mixed so that neither part can be told apart
+
+**Texts**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f004`: The bequest of a raṭl of the oil stands on partnership and lapses on consumption.
+  > لو وصى له برطل من زيت معين ثم خلطه بزيت [آخر] فإن قلنا هو اشتراك لم تبطل الوصية وإن قلنا هو استهلاك بطلت.
+
+**Rationale.** Qāʿida 22 asks whether what is lost in another is as non-existent. For a thing mixed with its own kind the manṣūṣ answers no: the owners become partners in the whole. Consumption (al-Mujarrad) is kept for other kinds (other_kind_is_consumed). What can still be told apart is neither, and each keeps his own (distinct_stays_separate; 22.f006).
+
+**Lean:** `Usul.Refinements.mixedOutcome`, `Usul.Refinements.other_kind_is_consumed`, `Usul.Refinements.distinct_stays_separate`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="mixed_haram_by_proportion"></a>
+
+## Lawful money mixed with unlawful: suspend when it is little, take out the share when it is much
+
+**Terms:** [al-muḥarram / al-ḥarām](../glossary.md#haram), [al-iḥtiyāṭ / al-iʿtizāl](../glossary.md#ihtiyat)  
+**Closes:** `rule:mixed_haram_by_proportion`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f007`: Aḥmad (al-Marrūdhī): three with one unlawful, suspend until known; thirty with one, take one out and use the rest.
+  > لو اختلطت دراهمه بدراهم مغصوبة فالمنصوص عن ms033 أحمد في رواية المروذي إن كانت الدراهم قليلة كثلاثة فيها درهم حرام وجب التوقف عنها حتى يعلم وإن كانت كثيرة كثلاثين فيها درهم حرام فإنه يخرج منها درهما [واحدا] ويتصرف في الباقي وله نصوص كثيرة في هذا المعنى وعلل بأن الكثير يجحف بماله إخراجه وأنكر على من قال يخرج هذا قدر الحرام من القليل كالثلاثة إنكارا [شديدا] وأما القاضي فتأول كلامه على الاستحباب لأنه
+
+**Conditions**
+
+1. one's own money mixed with usurped money
+2. the proportion is known
+
+**Texts**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022`: Qāʿida 22: is what is lost in another as non-existent? The mixed dirhams are among its furūʿ.
+  > العين المنغمرة في غيرها إذا لم يظهر أثرها فهل هي كالمعدومة حكما أو لا؟ . فيه خلاف وينبني عليه مسائل: (ومنها) الماء الذي استهلكت فيه النجاسة فإن كان كثيرا سقط حكمها بغير خلاف، وإن كان يسيرا فروايتان ثم من الأصحاب من يقول إنما سقط حكمها وإلا فهي موجودة ومنهم من يقول بل الماء أحالها لأن له قوة الإحالة فلم يبق لها وجود بل الموجود غيرها فهو عين طاهرة وهي طريقة أبي الخطاب. (ومنها) اللبن المشوب بالماء ال
+
+**Rationale.** Aḥmad's ground is that taking out the share from much «يجحف بماله», while the little can be left without loss. Al-Qāḍī reads the suspension as recommendation and requires taking out the share in all; Ibn ʿAqīl in al-Funūn forbids the whole. Both are kept as positions.
+
+**Lean:** `Usul.Refinements.mixedHaram`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="rukhsa_needs_certainty"></a>
+
+## A concession stands only when its permission is established
+
+**Terms:** [al-rukhṣa](../glossary.md#rukhsa), [al-yaqīn](../glossary.md#yaqin), [al-shakk](../glossary.md#shakk)  
+**Closes:** `fact:rukhsa_needs_certainty`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f001`: «لأن المسح رخصة ولم تتحقق إباحتها فلم يصح كمن قصر وهو يشك في جواز القصر».
+  > لو شك هل ابتدأ [مدة] مسح الخفين في السفر أو الحضر فمسح يوما آخر بعد انقضاء مدة الحضر ثم تبين أنه ابتدأها في السفر لزمه إعادة الصلاة بالشك وهل يلزمه إعادة الوضوء؟ ms149 فيه وجهان: أحدهما: لا يلزمه وبه جزم في المغني لأن الوضوء يصح مع الشك في سببه كمن شك في الحدث فتوضأ ينوي رفعه ثم تبين محدثا. والثاني: يلزمه لأن المسح رخصة ولم تتحقق إباحتها فلم يصح كمن قصر وهو يشك في جواز القصر.
+
+**Conditions**
+
+1. the act is a concession
+2. its permitting condition is in doubt
+
+**Texts**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068`: Qāʿida 68's first type: what needs a firm intention is not valid with doubt unless ghalabat al-ẓann or an aṣl supports it.
+  > إيقاع العبادات أو العقود أو غيرهما مع الشك في شرط صحتها هل يجعلها كالمعلقة على تحقيق ذلك الشرط أم لا؟ هي نوعان: أحدهما ما يشترط فيه النية الجازمة فلا يصح إيقاعه بهذا التردد ما لم يكن الشك غلبة ظن تكفي مثله في إيقاع العبادة أو العقد كغلبة الظن بدخول الوقت وطهارة الماء والثوب ونحو ذلك. ومن أمثلة ذلك إذا صلى يظن نفسه محدثا فتبين متطهرا. ومنها لو شك هل ابتدأ [مدة] مسح الخفين في السفر أو الحضر فمسح يوم
+
+**Rationale.** A concession is qāʿida 68's first type, a condition that needs a firm basis. Its aṣl is the ʿazīma, so no aṣl supports it (rukhsa_is_firm_condition). Al-Mughnī's view, that wuḍūʾ is valid with doubt in its cause, is the other position.
+
+**Lean:** `Usul.Refinements.rukhsaValid`, `Usul.Refinements.rukhsa_is_firm_condition`, `Usul.Refinements.validUnderDoubt`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="taliq_al_bay"></a>
+
+## A sale conditioned on a fact both know to hold is as if unconditioned
+
+**Terms:** [al-sharṭ](../glossary.md#shart), [al-ṣaḥīḥ](../glossary.md#sahih)  
+**Closes:** `rule:taliq_al_bay`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f007`: al-Kāfī: «لأنه تعليق على شرط واقع يعلمانه فلا يؤثر ذكره في العقد».
+  > لو وكله في شراء جارية فاشتراها له ثم جحد الموكل الوكالة فأراد الوكيل أن يشتريها منه فلم يعترف بالملك ثم قال له إن كنت أذنت لك في شرائها فقد بعتكها فهل يصح أم لا؟ على وجهين: أحدهما: لا يصح لأن البيع لا يصح تعليقه وهو قول القاضي وابن عقيل. والثاني: يصح ذكره في الكافي احتمالا لأنه تعليق على شرط واقع يعلمانه فلا يؤثر ذكره في العقد كما لو قال بعتك هذه إن كانت جارية ويشهد له نص أحمد في رواية ابن منصور ب
+
+**Conditions**
+
+1. the condition is a present fact
+2. both parties know it holds
+
+**Texts**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068`: Qāʿida 68: acting while doubting a condition of validity, «هل يجعلها كالمعلقة على تحقيق ذلك الشرط».
+  > إيقاع العبادات أو العقود أو غيرهما مع الشك في شرط صحتها هل يجعلها كالمعلقة على تحقيق ذلك الشرط أم لا؟ هي نوعان: أحدهما ما يشترط فيه النية الجازمة فلا يصح إيقاعه بهذا التردد ما لم يكن الشك غلبة ظن تكفي مثله في إيقاع العبادة أو العقد كغلبة الظن بدخول الوقت وطهارة الماء والثوب ونحو ذلك. ومن أمثلة ذلك إذا صلى يظن نفسه محدثا فتبين متطهرا. ومنها لو شك هل ابتدأ [مدة] مسح الخفين في السفر أو الحضر فمسح يوم
+
+**Rationale.** The bar on conditioned sale (al-Qāḍī, Ibn ʿAqīl) is against uncertainty in the contract. A condition both know to hold adds none, as with «بعتك هذه إن كانت جارية» and Aḥmad's naṣṣ on selling the absent thing «إن كان سالما».
+
+**Lean:** `Usul.Refinements.conditionedSaleValid`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="qisas_belongs_to_whom"></a>
+
+## Pardoning qiṣāṣ for the spread turns on whose right qiṣāṣ is
+
+**Terms:** [al-sabab](../glossary.md#sabab)  
+**Closes:** `rule:qisas_belongs_to_whom`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f004`: Majd al-Dīn builds it «على أن القصاص هل يجب للميت أو لورثته»; «وجزم القاضي وغيره بأنه لا يصح العفو ههنا».
+  > لو جرحه جرحا لا قصاص فيه فعفا عن القصاص وسرايته ثم سرى إلى نفسه فهل يسقط القصاص؟ يخرج على الوجهين أشار إلى ذلك الشيخ مجد الدين في تعليقه على الهداية وبناه على أن القصاص هل يجب للميت أو لورثته كالدية، وجزم القاضي وغيره بأنه لا يصح العفو ههنا.
+
+**Conditions**
+
+1. the wound itself is not retaliable
+2. he pardoned qiṣāṣ and its spread
+3. the spread reached the life
+
+**Texts**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065`: Qāʿida 65: one who disposed of what he thought not his.
+  > وهي من تصرف في شيء يظن أنه لا يملكه فتبين أنه كان يملكه، وفيها خلاف أيضا ويندرج تحتها صور: منها لو باع ملك أبيه بغير إذنه ثم تبين أن أباه كان قد مات ولا وارث له وفي صحة تصرفه وجهان ويقال روايتان. ومنها لو طلق امرأة يظنها أجنبية فتبينت زوجته ففي وقوع الطلاق روايتان، وبناهما أبو بكر على أن الصريح هل يحتاج إلى نية أم لا؟ قال القاضي إنما هذا الخلاف في صورة الجهل بأهلية المحل ولا يطرد مع العلم به ومنها
+
+**Rationale.** If qiṣāṣ for the life is the heirs', the victim pardoned a right he did not know to be his to pardon. That is qāʿida 65's unknown condition (heirs_right_is_q65), so the pardon is void, as al-Qāḍī and others hold.
+
+**Lean:** `Usul.Refinements.pardonOfSpreadValid`, `Usul.Refinements.heirs_right_is_q65`, `Usul.Refinements.countsAsMet`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)

@@ -2,17 +2,17 @@
  "total": 303,
  "classes": {
   "derivable": 127,
-  "genuine_ikhtilaf": 165,
-  "missing_fact": 2,
-  "missing_rule": 8,
+  "genuine_ikhtilaf": 169,
+  "missing_fact": 1,
+  "missing_rule": 5,
   "segmentation_error": 1
  },
- "coverage": 0.967,
- "madhhab_coverage": 0.646,
+ "coverage": 0.98,
+ "madhhab_coverage": 0.659,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 68,
- "gaps_open": 14,
- "revisited": 29,
+ "ikhtilaf_matching_madhhab": 72,
+ "gaps_open": 6,
+ "revisited": 37,
  "revisit_queue": [],
  "per_encoder": {
   "itlaf": {
@@ -118,15 +118,12 @@
   },
   "istihlak": {
    "derivable": 1,
-   "genuine_ikhtilaf": 5,
-   "missing_fact": 1,
-   "missing_rule": 1
+   "genuine_ikhtilaf": 3,
+   "missing_fact": 1
   },
   "doubt_in_condition": {
    "derivable": 3,
-   "genuine_ikhtilaf": 6,
-   "missing_fact": 1,
-   "missing_rule": 1
+   "genuine_ikhtilaf": 5
   },
   "switch_to_original": {
    "genuine_ikhtilaf": 3
@@ -139,11 +136,10 @@
    "genuine_ikhtilaf": 6
   },
   "unknown_condition": {
-   "genuine_ikhtilaf": 11,
-   "missing_rule": 1
+   "genuine_ikhtilaf": 11
   },
   "running_water": {
-   "genuine_ikhtilaf": 4
+   "genuine_ikhtilaf": 3
   },
   "many_over_noble": {
    "genuine_ikhtilaf": 5
@@ -157,6 +153,27 @@
   "taker_from_usurper": {
    "derivable": 1,
    "genuine_ikhtilaf": 7
+  },
+  "hukm_against_own_ijtihad": {
+   "genuine_ikhtilaf": 1
+  },
+  "ayman_by_urf": {
+   "genuine_ikhtilaf": 1
+  },
+  "khalt_as_shirka": {
+   "genuine_ikhtilaf": 2
+  },
+  "mixed_haram_by_proportion": {
+   "genuine_ikhtilaf": 1
+  },
+  "rukhsa_under_doubt": {
+   "genuine_ikhtilaf": 1
+  },
+  "taliq_al_bay": {
+   "genuine_ikhtilaf": 1
+  },
+  "qisas_belongs_to_whom": {
+   "genuine_ikhtilaf": 1
   },
   "makeup_after_failure": {
    "derivable": 2,

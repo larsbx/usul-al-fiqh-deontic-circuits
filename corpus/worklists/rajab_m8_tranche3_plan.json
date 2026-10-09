@@ -894,5 +894,18 @@
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155"
     ]
-  }
+  },
+  "revisions": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003",
+      "round": "round 5: the bank applied to its own gaps",
+      "from_case_sha256": "96121c595d8d21f29ea33d5b685af0d8f2ccd243e2dd41183bcd2659e3e5efe5",
+      "case_sha256": "6d10b657264916b2301fc318cc33559aec1d2cf85f1d790367294062234b27b0",
+      "from_encoder": "running_water",
+      "encoder": "ayman_by_urf",
+      "closed_by": [
+        "rule:ayman_by_urf"
+      ]
+    }
+  ]
 }

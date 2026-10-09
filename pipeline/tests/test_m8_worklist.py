@@ -112,16 +112,23 @@ def test_selected_tranche_has_exact_obligations_and_open_human_review():
     checked = (ROOT / "formal/lean/UsulTest/SignatureMap.lean").read_text()
     for q in plan["selection"]:
         assert all(f"#check @{n}\n" in checked for n in q["reading"])
+    revised = {r["far"]: r for r in plan.get("revisions", [])}
     for o in plan["obligations"]:
         record, case = records[o["far"]], cases[o["far"]]
         assert o["record_locator"] == record["locator"]
         assert o["case_ar_sha256"] == hashlib.sha256(record["case_ar"].encode()).hexdigest()
-        assert all(o[k] == case[k] for k in ("encoder", "facts", "expected"))
+        if o["far"] in revised:  # a later round re-read it under a new encoder; the obligation is its origin
+            assert case["revisit"]["from_encoder"] == o["encoder"] == revised[o["far"]]["from_encoder"]
+            assert case["encoder"] == revised[o["far"]]["encoder"]
+        else:
+            assert all(o[k] == case[k] for k in ("encoder", "facts", "expected"))
         assert o["source_evidence"] and all(0 < len(e["excerpt_ar"]) <= 400 for e in o["source_evidence"])
         assert all(g in guards for g in o["additional_guards"])
 
 
 def test_both_pr_contributions_are_preserved_without_case_reinterpretation():
+    """Every case equals its contribution receipt, unless a later round revised it: then the
+    plan's revision ledger links the receipt to the current case and its closure."""
     plan = _json(CORPUS / "worklists/rajab_m8_tranche3_plan.json")
     cases = {c["far"]: c for c in _json(CORPUS / "takhrij/rajab_m8_tranche3_furu.json")["cases"]}
     receipts = {r["pr"]: r["case_sha256"] for r in plan["contributions"]}
@@ -129,10 +136,17 @@ def test_both_pr_contributions_are_preserved_without_case_reinterpretation():
     assert len(receipts[31]) == 8 and len(receipts[32]) == 21
     assert not receipts[31].keys() & receipts[32].keys()
     assert receipts[31].keys() | receipts[32].keys() == cases.keys()
+    revised = {r["far"]: r for r in plan.get("revisions", [])}
     for receipt in receipts.values():
         for far, expected_hash in receipt.items():
             encoded = json.dumps(cases[far], ensure_ascii=False, sort_keys=True, separators=(",", ":"))
-            assert hashlib.sha256(encoded.encode()).hexdigest() == expected_hash, far
+            current = hashlib.sha256(encoded.encode()).hexdigest()
+            if far in revised:  # a revisit leaves a ledger entry from the receipt to the current case
+                rev = revised[far]
+                assert (rev["from_case_sha256"], rev["case_sha256"]) == (expected_hash, current), far
+                assert cases[far]["revisit"]["closed_by"] == rev["closed_by"], far
+            else:
+                assert current == expected_hash, far
 
 
 def test_new_segmentation_preserves_every_legacy_record_and_identifier():

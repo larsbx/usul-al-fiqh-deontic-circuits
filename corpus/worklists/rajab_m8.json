@@ -15,9 +15,9 @@
     "lock.json": "4273436171c166ee17e5adbc79e64b6384533431f62e67d9f89281c35ea22bc8",
     "records/openiti-rajab-shamela21730.jsonl": "f9cf2452d9cc5b3d9c064eb020b4cd0c6ee00e0dbd06eed8e5f1d821cd06b44c",
     "takhrij/dalala_furu.json": "fe691a7fe3ea277505aa97a3af440a48e88397584164804c11aa13a06808c96f",
-    "takhrij/rajab_m8_furu.json": "c3e0ea9f2da43f52e6ab9926220365fd8422e185ce941723764acbdf896a0a21",
-    "takhrij/rajab_m8_tranche2_furu.json": "1948207f8a15590c67b0b601442f1a631c638176e1a2068b567cd57e2adcfdd8",
-    "takhrij/rajab_m8_tranche3_furu.json": "a2929c8630dd1df99748d27fbbaa00bf7f5d704673f69f286497062af4d06859",
+    "takhrij/rajab_m8_furu.json": "ebfc6b6b2caa38a0b205f729323591b7e314bf836856ebd56045209fa581ceed",
+    "takhrij/rajab_m8_tranche2_furu.json": "392da202fdfec1c7e5b699eb1e85dced9ca862e344e51a0c209cda91fd55dc0a",
+    "takhrij/rajab_m8_tranche3_furu.json": "2cc423038118df38951e81217479363acf9c7aee6b3dc9be4614e4796e825ad1",
     "takhrij/sadi_furu.json": "831e85422af3244e160d1955925c515c6a7e328c4ec5263575b814209839fdc5"
   },
   "summary": {
@@ -85,17 +85,17 @@
     "total": 303,
     "classes": {
       "derivable": 127,
-      "genuine_ikhtilaf": 165,
-      "missing_fact": 2,
-      "missing_rule": 8,
+      "genuine_ikhtilaf": 169,
+      "missing_fact": 1,
+      "missing_rule": 5,
       "segmentation_error": 1
     },
-    "coverage": 0.967,
-    "madhhab_coverage": 0.646,
+    "coverage": 0.98,
+    "madhhab_coverage": 0.659,
     "encoding_error": 0,
-    "ikhtilaf_matching_madhhab": 68,
-    "gaps_open": 14,
-    "revisited": 29
+    "ikhtilaf_matching_madhhab": 72,
+    "gaps_open": 6,
+    "revisited": 37
   },
   "tranche3_report": {
     "total": 29,
@@ -107,12 +107,12 @@
     "madhhab_coverage": 0.793,
     "encoding_error": 0,
     "ikhtilaf_matching_madhhab": 15,
-    "gaps_open": 1,
-    "revisited": 0,
+    "gaps_open": 0,
+    "revisited": 1,
     "revisit_queue": [],
     "per_encoder": {
       "running_water": {
-        "genuine_ikhtilaf": 4
+        "genuine_ikhtilaf": 3
       },
       "many_over_noble": {
         "genuine_ikhtilaf": 5
@@ -126,6 +126,9 @@
       "taker_from_usurper": {
         "derivable": 1,
         "genuine_ikhtilaf": 7
+      },
+      "ayman_by_urf": {
+        "genuine_ikhtilaf": 1
       },
       "makeup_after_failure": {
         "derivable": 2,
@@ -149,6 +152,7 @@
       "annotated_furu": 4,
       "pending_furu": [],
       "home_encoders": [
+        "ayman_by_urf",
         "running_water"
       ]
     },
@@ -467,7 +471,9 @@
       "annotated_furu": 9,
       "pending_furu": [],
       "home_encoders": [
-        "istihlak"
+        "istihlak",
+        "khalt_as_shirka",
+        "mixed_haram_by_proportion"
       ]
     },
     {
@@ -1115,6 +1121,7 @@
       "annotated_furu": 8,
       "pending_furu": [],
       "home_encoders": [
+        "qisas_belongs_to_whom",
         "unknown_condition"
       ]
     },
@@ -1156,7 +1163,10 @@
       "annotated_furu": 11,
       "pending_furu": [],
       "home_encoders": [
-        "doubt_in_condition"
+        "doubt_in_condition",
+        "hukm_against_own_ijtihad",
+        "rukhsa_under_doubt",
+        "taliq_al_bay"
       ]
     },
     {

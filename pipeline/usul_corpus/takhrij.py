@@ -196,6 +196,34 @@ ENCODERS: dict[str, dict] = {
         sadi=[], qawaid=[RAJAB.format(93)], facts={"entered_on_liability": B},
         out=B, lean="Usul.Refinements.takerRecourse {entered_on_liability}",
         py=lambda f: not f["entered_on_liability"]),
+    "hukm_against_own_ijtihad": dict(
+        sadi=[], qawaid=[RAJAB.format(68)], facts={"contradicts_nass": B},
+        out=B, lean="Usul.Refinements.rulingUndone {contradicts_nass}",
+        py=lambda f: f["contradicts_nass"]),
+    "ayman_by_urf": dict(
+        sadi=[9], qawaid=[RAJAB.format(1)], facts={"custom_one_body": B},
+        out=("perJirya", "whole"), lean="Usul.Refinements.oathBody {custom_one_body}",
+        py=lambda f: "whole" if f["custom_one_body"] else "perJirya"),
+    "khalt_as_shirka": dict(
+        sadi=[], qawaid=[RAJAB.format(22)], facts={"same_kind": B, "indistinct": B},
+        out=("shared", "consumed", "separate"), lean="Usul.Refinements.mixedOutcome {same_kind} {indistinct}",
+        py=lambda f: "separate" if not f["indistinct"] else "shared" if f["same_kind"] else "consumed"),
+    "mixed_haram_by_proportion": dict(
+        sadi=[], qawaid=[RAJAB.format(22)], facts={"lawful_many": B},
+        out=("suspend", "takeOut"), lean="Usul.Refinements.mixedHaram {lawful_many}",
+        py=lambda f: "takeOut" if f["lawful_many"] else "suspend"),
+    "rukhsa_under_doubt": dict(
+        sadi=[11], qawaid=[RAJAB.format(68)], facts={"rukhsa_needs_certainty": B, "permission_established": B},
+        out=B, lean="Usul.Refinements.rukhsaValid {rukhsa_needs_certainty} {permission_established}",
+        py=lambda f: not f["rukhsa_needs_certainty"] or f["permission_established"]),
+    "taliq_al_bay": dict(
+        sadi=[], qawaid=[RAJAB.format(68)], facts={"conditional": B, "known_to_hold": B},
+        out=B, lean="Usul.Refinements.conditionedSaleValid {conditional} {known_to_hold}",
+        py=lambda f: not f["conditional"] or f["known_to_hold"]),
+    "qisas_belongs_to_whom": dict(
+        sadi=[], qawaid=[RAJAB.format(65)], facts={"right_is_victims": B},
+        out=B, lean="Usul.Refinements.pardonOfSpreadValid {right_is_victims}",
+        py=lambda f: f["right_is_victims"]),
     "makeup_after_failure": dict(
         sadi=[], qawaid=[RAJAB.format(31)],
         facts={"failure": ("corruption", "prevention", "lossWithFault", "lossWithoutFault")},
