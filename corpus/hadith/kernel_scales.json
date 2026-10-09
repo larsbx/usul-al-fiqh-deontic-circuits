@@ -234,6 +234,154 @@
           "note": "ʿumūm al-khiṭāb: an uṣūl rule, handed to the Ḥanbalī kernel (Usul.Dalala)"
         }
       ]
+    },
+    {
+      "id": "nukhba_khabar",
+      "work": "ibn_hajar.nukhba",
+      "claim": 4,
+      "items": [
+        {
+          "n": 1,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p721",
+          "excerpt_ar": "فالأول: المتواتر المفيد للعلم اليقيني بشروطه",
+          "lean": "Hadith.Nukhba.Kathra.mutawatir"
+        },
+        {
+          "n": 2,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p721",
+          "excerpt_ar": "والثاني: المشهور وهو المستفيض على رأي",
+          "lean": "Hadith.Nukhba.Kathra.mashhur"
+        },
+        {
+          "n": 3,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p721",
+          "excerpt_ar": "والثالث: العزيز، وليس شرطا للصحيح خلافا لمن زعمه",
+          "lean": "Hadith.Nukhba.Kathra.aziz"
+        },
+        {
+          "n": 4,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p721",
+          "excerpt_ar": "والرابع: الغريب",
+          "lean": "Hadith.Nukhba.Kathra.gharib"
+        }
+      ]
+    },
+    {
+      "id": "nukhba_saqt",
+      "work": "ibn_hajar.nukhba",
+      "claim": 4,
+      "items": [
+        {
+          "n": 1,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p722",
+          "excerpt_ar": "فالأول: المعلق",
+          "lean": "Hadith.Nukhba.SaqtName.muallaq"
+        },
+        {
+          "n": 2,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p722",
+          "excerpt_ar": "والثاني: هو المرسل",
+          "lean": "Hadith.Nukhba.SaqtName.mursal"
+        },
+        {
+          "n": 3,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p722",
+          "excerpt_ar": "والثالث: إن كان باثنين فصاعدا مع التوالي فهو المعضل",
+          "lean": "Hadith.Nukhba.SaqtName.muadal"
+        },
+        {
+          "n": 4,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p722",
+          "excerpt_ar": "وإلا فالمنقطع",
+          "lean": "Hadith.Nukhba.SaqtName.munqati"
+        }
+      ]
+    },
+    {
+      "id": "nukhba_taan",
+      "work": "ibn_hajar.nukhba",
+      "claim": 10,
+      "items": [
+        {
+          "n": 1,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "إما أن يكون لكذب الراوي",
+          "lean": "Hadith.Nukhba.Taan.kadhib"
+        },
+        {
+          "n": 2,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو تهمته بذلك",
+          "lean": "Hadith.Nukhba.Taan.tuhma"
+        },
+        {
+          "n": 3,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو فحش غلطه",
+          "lean": "Hadith.Nukhba.Taan.fuhshGhalat"
+        },
+        {
+          "n": 4,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو غفلته",
+          "lean": "Hadith.Nukhba.Taan.ghafla"
+        },
+        {
+          "n": 5,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو فسقه",
+          "lean": "Hadith.Nukhba.Taan.fisq"
+        },
+        {
+          "n": 6,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو وهمه",
+          "lean": "Hadith.Nukhba.Taan.wahm"
+        },
+        {
+          "n": 7,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو مخالفته",
+          "lean": "Hadith.Nukhba.Taan.mukhalafa"
+        },
+        {
+          "n": 8,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو جهالته",
+          "lean": "Hadith.Nukhba.Taan.jahala"
+        },
+        {
+          "n": 9,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو بدعته",
+          "lean": "Hadith.Nukhba.Taan.bida"
+        },
+        {
+          "n": 10,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو سوء حفظه",
+          "lean": "Hadith.Nukhba.Taan.suHifz"
+        }
+      ]
+    },
+    {
+      "id": "nukhba_jabr",
+      "work": "ibn_hajar.nukhba",
+      "claim": 2,
+      "items": [
+        {
+          "n": 1,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p724",
+          "excerpt_ar": "ومتى توبع سيئ الحفظ بمعتبر",
+          "lean": "Hadith.Nukhba.liftable"
+        },
+        {
+          "n": 2,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p724",
+          "excerpt_ar": "وكذا المستور والمرسل، والمدلس: صار حديثهم حسنا لا لذاته، بل ب",
+          "lean": "Hadith.Nukhba.liftable_in_itibar"
+        }
+      ]
     }
   ]
 }
