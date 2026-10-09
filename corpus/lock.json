@@ -87,6 +87,12 @@
       "bytes": 11376275,
       "sha256": "2092ed927f4145a4dbae35dbc9fddcd1cc64e08601ed643998f9ae70984dbe80"
     },
+    "openiti-irshad-shamela11437": {
+      "witness": "openiti-irshad-shamela11437",
+      "url": "https://raw.githubusercontent.com/OpenITI/1275AH/d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8/data/1255Shawkani/1255Shawkani.IrshadFuhul/1255Shawkani.IrshadFuhul.Shamela0011437-ara1",
+      "bytes": 1767897,
+      "sha256": "ae192d2722fab030e230625ca7e29b9b08dabb0f23d1bb1f7fe1d993dc3dcc5d"
+    },
     "openiti-ishara-sham19y17871": {
       "witness": "openiti-ishara-sham19y17871",
       "url": "https://raw.githubusercontent.com/OpenITI/0475AH/cc9beb0d9645e8cdce892556423b9926a127054f/data/0474IbnKhalafBaji/0474IbnKhalafBaji.IsharaFiUsulFiqh/0474IbnKhalafBaji.IsharaFiUsulFiqh.Sham19Y0017871-ara1",
@@ -327,6 +333,12 @@
       "bytes": 5128848,
       "sha256": "c95f3c6e3000991365556b3d8ee9878808da1207b74812584f69083953be23f7"
     },
+    "shamela-25881": {
+      "witness": "shamela-25881",
+      "url": "https://shamela.ws/book/25881/1",
+      "bytes": 5998123,
+      "sha256": "dce0e2cc1bc8ef184de12862b8fd6944c574780746445462bd1061dd9bf03bdd"
+    },
     "shamela-266": {
       "witness": "shamela-266",
       "url": "https://shamela.ws/book/266/1",
@@ -345,11 +357,29 @@
       "bytes": 2653020,
       "sha256": "5296e70d35bf1f084aaaa4225c6180adc308f05c16e4769cba4869a4f0a6b321"
     },
+    "shamela-5914": {
+      "witness": "shamela-5914",
+      "url": "https://shamela.ws/book/5914/1",
+      "bytes": 1480683,
+      "sha256": "3aeddf4cf9a3e3cfa1387c5adfca22d63124a91c74a1930c4f8fa7c41b047f5a"
+    },
+    "shamela-657": {
+      "witness": "shamela-657",
+      "url": "https://shamela.ws/book/657/1",
+      "bytes": 201043,
+      "sha256": "0949b37b0cec5e754cfc1a5372be28f9730df05acba0b7c160ea0a7811b6400f"
+    },
     "shamela-705": {
       "witness": "shamela-705",
       "url": "https://shamela.ws/book/705/1",
       "bytes": 28534,
       "sha256": "a1068e41cb44d60f2e2c15124d2c3e8105da97d216283a221f58eb8c7cdb15c2"
+    },
+    "shamela-7318": {
+      "witness": "shamela-7318",
+      "url": "https://shamela.ws/book/7318/1",
+      "bytes": 722102,
+      "sha256": "91926e6f5dd10fa340326a4cdbee443aaa0e43b11a4b6dec7f7d823a0cb41a4c"
     },
     "shamela-7607": {
       "witness": "shamela-7607",
@@ -362,6 +392,12 @@
       "url": "https://shamela.ws/book/8874/1",
       "bytes": 203918,
       "sha256": "b58b808206089804adf976ba92e8a46202a1774fb8290e997806f24ce86da8ad"
+    },
+    "shamela-9293": {
+      "witness": "shamela-9293",
+      "url": "https://shamela.ws/book/9293/1",
+      "bytes": 2321804,
+      "sha256": "294d29ce44da72f5c97144429bdde8aa1aa9185cea2dfe44517278e46f1351fc"
     },
     "shamela-9442": {
       "witness": "shamela-9442",
