@@ -154,4 +154,12 @@ theorem Isnad.not_hujja_of_gap {c : Isnad} {l : Link} (hl : l ∈ c) (hg : l.mut
   absurd (Verdict.le_trans' hh (Verdict.le_trans' (Isnad.verdict_le_link hl)
     (Link.verdict_le_daif_of_defect l (by simp [hg])))) (by decide)
 
+
+/-- The chain's weakest narrator as a *Taqrīb* rank (12 = worst). A gap, or tadlīs the policy does
+not accept, hides an unknown narrator, counted as majhūl (rank 9). Used by the *Nuzha*'s
+muʿtabar condition (`Hadith.Itibar`). -/
+def Isnad.floor (p : Policy) (c : Isnad) : Nat :=
+  c.foldr (fun l acc => max acc
+    (if l.muttasil && acceptsTadlis p l.tadlis l.sigha then l.rawi.rank else max l.rawi.rank 9)) 0
+
 end Hadith

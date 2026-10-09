@@ -298,6 +298,7 @@
       "albani": "daif",
       "kernel": "daif",
       "kernel_undefeated": "hasan",
+      "kernel_strict_undefeated": "hasan",
       "class": "derivable",
       "turuq": [
         {

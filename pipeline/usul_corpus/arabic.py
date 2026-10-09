@@ -129,10 +129,26 @@ def letters(s: str) -> str:
     return re.sub(r"[^ء-ي]", "", _MARKERS.sub("", s))
 
 
+def revolume(text: str) -> str:
+    """Shamela fetches mark every page `PageV01`; Shamela numbers pages per volume, so a page number
+    that goes back starts the next volume. Texts whose markers already name volumes are unchanged."""
+    if any(m.group(1) != "01" for m in _PAGE.finditer(text)):
+        return text
+    state = {"vol": 1, "prev": -1}
+
+    def mark(m: re.Match) -> str:
+        n = int(m.group(2))
+        state["vol"] += n < state["prev"]
+        state["prev"] = n
+        return f"PageV{state['vol']:02d}P{m.group(2)}"
+
+    return _PAGE.sub(mark, text)
+
+
 def locate(text: str, excerpt: str) -> str | None:
     """`v<vol>:p<page>` of the page an excerpt ends on (the next page marker closes it), comparing
     letters only; None when the excerpt is not in the text."""
-    text = re.sub(r"ms\d+", "", text)
+    text = re.sub(r"ms\d+", "", revolume(text))
     idx = [i for i, ch in enumerate(text) if "ء" <= ch <= "ي"]
     e = letters(excerpt)
     k = "".join(text[i] for i in idx).find(e)

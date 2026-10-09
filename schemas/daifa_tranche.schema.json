@@ -27,6 +27,7 @@
           "kernel": {"$ref": "#/$defs/verdict"},
           "kernel_undefeated": {"$ref": "#/$defs/verdict"},
           "kernel_with_rulings": {"$ref": "#/$defs/verdict"},
+          "kernel_strict_undefeated": {"$ref": "#/$defs/verdict", "description": "as kernel_undefeated, under the strict muʿtabar reading (D3)"},
           "rulings": {"type": "array", "minItems": 1, "items": {
             "type": "object", "required": ["arg", "kind", "ceiling", "by", "said_ar"], "additionalProperties": false,
             "properties": {"arg": {"type": "integer", "minimum": 1}, "kind": {"enum": ["hukm", "matn"]},

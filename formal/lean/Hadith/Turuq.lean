@@ -220,4 +220,58 @@ theorem refinedRank_respects {v w : Verdict} (h : v.rank < w.rank) (b c : Basis)
 
 example : basis twoWeak true = .ghayri := by decide
 
+
+/-! ## The muʿtabar follower: «فوقه أو مثله لا دونه» (decision D3)
+
+The *Nuzha* requires the follower to be at least as good as the narrator it follows. Two readings:
+* `lax`: any independent supporting route qualifies (the rule as first encoded);
+* `strict`: the strongest route (best verdict, then the best weakest-narrator rank) must have an
+  independent supporter whose weakest narrator is no worse than its own.
+Routes carry their `Isnad.floor` beside them. `strict` never lifts where `lax` does not
+(`strict_le_lax`), and `lax` is exactly `judge` (`judgeI_lax`). -/
+
+inductive Itibar where
+  | lax | strict
+  deriving DecidableEq, Repr
+
+/-- The route a lift would build on: best verdict, then lowest floor (first wins ties). -/
+def baseRoute (rs : List (Tariq × Nat)) : Option (Tariq × Nat) :=
+  let b := best (rs.map Prod.fst)
+  (rs.filter (·.1.verdict == b)).foldl
+    (fun acc r => match acc with
+      | none => some r
+      | some a => if r.2 < a.2 then some r else some a) none
+
+def mutabar : Itibar → List (Tariq × Nat) → Bool
+  | .lax, _ => true
+  | .strict, rs => match baseRoute rs with
+    | none => false
+    | some b => rs.any fun r => r.1.madar != b.1.madar && decide (Verdict.daif ≤ r.1.verdict) && decide (r.2 ≤ b.2)
+
+def judgeI (pol : Itibar) (rs : List (Tariq × Nat)) (n : Nat) (att : List (Nat × Nat)) : Verdict :=
+  let ts := rs.map Prod.fst
+  aggregate ts ((Usul.Grounded.grounded n att).contains 0 && mutabar pol rs)
+
+theorem judgeI_lax (rs : List (Tariq × Nat)) (n : Nat) (att : List (Nat × Nat)) :
+    judgeI .lax rs n att = judge (rs.map Prod.fst) n att := by
+  simp [judgeI, judge, mutabar]
+
+theorem aggregate_mono_flag (ts : List Tariq) : aggregate ts false ≤ aggregate ts true := by
+  unfold aggregate; simp only [Bool.false_eq_true, false_and, ite_false]; split
+  · exact le_bump _
+  · exact Verdict.le_refl' _
+
+/-- The strict reading never lifts where the lax one does not. -/
+theorem strict_le_lax (rs : List (Tariq × Nat)) (n : Nat) (att : List (Nat × Nat)) :
+    judgeI .strict rs n att ≤ judgeI .lax rs n att := by
+  unfold judgeI
+  cases (Usul.Grounded.grounded n att).contains 0 <;> cases mutabar .strict rs <;>
+    simp [mutabar] <;> first | exact Verdict.le_refl' _ | exact aggregate_mono_flag _
+
+/-- Worked: a ṣadūq-yahim route (floor 5) followed only by a majhūl route (floor 9) lifts under
+`lax` but not under `strict`; two majhūl routes lift under both (decision D1 untouched). -/
+example : judgeI .lax [(⟨.daif, 1⟩, 5), (⟨.daif, 2⟩, 9)] 1 [] = .hasan := by decide
+example : judgeI .strict [(⟨.daif, 1⟩, 5), (⟨.daif, 2⟩, 9)] 1 [] = .daif := by decide
+example : judgeI .strict [(⟨.daif, 1⟩, 9), (⟨.daif, 2⟩, 9)] 1 [] = .hasan := by decide
+
 end Hadith

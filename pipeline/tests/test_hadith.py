@@ -126,3 +126,17 @@ def test_tranches_are_contiguous():
     """Tranches continue one another: entries 1…n with no gap between tranches."""
     ns = [c["n"] for c in CASES]
     assert ns == list(range(1, len(ns) + 1))
+
+
+def test_irwa_audit_is_reproducible():
+    """H0: the committed al-Irwāʾ audit is what the reader derives from the pinned witness."""
+    src = CACHE / "shamela-22592.txt"
+    if not src.exists():
+        pytest.skip("al-Irwāʾ not cached")
+    committed = json.loads((ROOT / "corpus/hadith/irwa_audit.json").read_text(encoding="utf-8"))
+    assert hadith.irwa_audit(src.read_text(encoding="utf-8")) == committed
+
+
+def test_longest_increasing_skips_strays():
+    assert hadith._longest_increasing([(0, 1), (1, 2), (2, 1650), (3, 3), (4, 7), (5, 8)]) == \
+        [(0, 1), (1, 2), (3, 3), (4, 7), (5, 8)]

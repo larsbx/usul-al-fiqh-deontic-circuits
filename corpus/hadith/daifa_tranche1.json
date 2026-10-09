@@ -65,6 +65,7 @@
       "kernel": "daif",
       "kernel_with_rulings": "mawdu",
       "kernel_undefeated": "hasan",
+      "kernel_strict_undefeated": "daif",
       "args": 4,
       "class": "qarina",
       "turuq": [

@@ -23,6 +23,18 @@ def _link(l: dict) -> str:
     return "{ " + ", ".join(fields) + " }"
 
 
+def _isnad(t: dict) -> str:
+    return f"[{', '.join(map(_link, t['links']))}]"
+
+
+def _routes(turuq: list[dict]) -> str:
+    """(route, floor) pairs for the muʿtabar check (`Hadith.judgeI`)."""
+    madar: dict[str, int] = {}
+    items = [f"(⟨Isnad.verdict .ibnHajar {_isnad(t)}, {madar.setdefault(t['madar'], len(madar))}⟩, "
+             f"Isnad.floor .ibnHajar {_isnad(t)})" for t in turuq]
+    return f"[{', '.join(items)}]"
+
+
 def _turuq(turuq: list[dict]) -> str:
     madar: dict[str, int] = {}
     items = [f"⟨Isnad.verdict .ibnHajar [{', '.join(map(_link, t['links']))}], "
@@ -49,6 +61,9 @@ def case_lean(c: dict) -> list[str]:
                      "  -- with the cited rulings (D2)")
     if "kernel_undefeated" in c:
         lines.append(f"#guard judge {_turuq(c['turuq'])} 1 [] = .{c['kernel_undefeated']}  -- without the objections")
+    if "kernel_strict_undefeated" in c:
+        lines.append(f"#guard judgeI .strict {_routes(c['turuq'])} 1 [] = .{c['kernel_strict_undefeated']}"
+                     "  -- without the objections, strict muʿtabar (D3)")
     lines += [f"#guard JarhTadil.judge [{', '.join(map(_qawl, d['qawl']))}] {_qarina(d)} = .{d['expected']}"
               for d in c.get("disputes", [])]
     return lines
@@ -75,3 +90,67 @@ def coverage(cases: list[dict]) -> dict:
             "coverage_with_rulings": round(sum(c["class"] == "derivable" or c.get("kernel_with_rulings") == c["albani"]
                                                for c in cases) / len(cases), 3) if cases else None,
             "classes": {k: sum(c["class"] == k for c in cases) for k in CLASSES if any(c["class"] == k for c in cases)}}
+
+
+# --- al-Irwāʾ: entry numbering and verdicts (H0 count, H8 input) ----------------------------
+
+import bisect
+import re
+from collections import Counter
+
+from .arabic import normalize
+
+_IRWA_HEAD = re.compile(r"^# \[?\(([٠-٩]+)\)\s*[-ـ–]?\s*[\[\(\"“]")
+_IRWA_VERDICT = re.compile(r"^# \*\s*(.{1,30}?)[\.\s]*$")
+
+
+def _longest_increasing(seq: list[tuple[int, int]]) -> list[tuple[int, int]]:
+    """Longest strictly increasing run of entry numbers in document order: gaps of any size are
+    bridged, while stray numbers (citations such as «أبو داود (١٦٥٠)») cannot join it."""
+    tails: list[int] = []
+    tail_at: list[int] = []
+    back: list[int | None] = [None] * len(seq)
+    for k, (_, n) in enumerate(seq):
+        p = bisect.bisect_left(tails, n)
+        if p == len(tails):
+            tails.append(n)
+            tail_at.append(k)
+        else:
+            tails[p], tail_at[p] = n, k
+        back[k] = tail_at[p - 1] if p else None
+    out, k = [], tail_at[-1] if tail_at else None
+    while k is not None:
+        out.append(seq[k])
+        k = back[k]
+    return out[::-1]
+
+
+def irwa_entries(text: str) -> list[tuple[int, str | None]]:
+    """(entry number, al-Albānī's verdict line «* صحيح.») for every headed entry of al-Irwāʾ."""
+    lines = text.split("\n")
+    heads = [(i, int(normalize(m.group(1)))) for i, l in enumerate(lines) if (m := _IRWA_HEAD.match(l))]
+
+    def verdict(i: int) -> str | None:
+        for l in lines[i + 1:i + 15]:
+            if _IRWA_HEAD.match(l):
+                return None
+            if m := _IRWA_VERDICT.match(l):
+                return m.group(1).strip()
+        return None
+
+    return [(n, verdict(i)) for i, n in _longest_increasing(heads)]
+
+
+def irwa_audit(text: str) -> dict:
+    entries = irwa_entries(text)
+    nums = [n for n, _ in entries]
+    present = set(nums)
+    return {
+        "witness": "shamela-22592",
+        "method": "longest increasing chain of «(n) -» headers (hadith.irwa_entries)",
+        "claim": "≈2,700 takhrījāt (recalled)",
+        "max_number": nums[-1],
+        "entries_present": len(nums),
+        "missing_numbers": len([n for n in range(1, nums[-1] + 1) if n not in present]),
+        "verdicts": dict(Counter(v or "(no verdict line)" for _, v in entries).most_common()),
+    }
