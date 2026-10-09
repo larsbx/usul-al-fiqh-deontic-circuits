@@ -1,0 +1,814 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "scope": "capability fixtures only; four original command gaps remain open",
+  "base_commit": "3a9d11776eb3be21702d3624f4152e276fda00ed",
+  "source": {
+    "witness": "openiti-lahham-shamela8526",
+    "url": "https://raw.githubusercontent.com/OpenITI/0825AH/bae1fba53712c020fe43e3e60b37dfe61f2b64a8/data/0803IbnLahhamCalaDinBacli/0803IbnLahhamCalaDinBacli.Qawacid/0803IbnLahhamCalaDinBacli.Qawacid.Shamela0008526-ara1",
+    "bytes": 722414,
+    "sha256": "d1efbaa04ca15696f92db87137381a77415ca7b3dde39e105d8e503cdcc706b0"
+  },
+  "records_sha256": "9ebb8913504fa536ba8d32d173fadd43868a9af68507333b330ef5df15a6f494",
+  "selection": [
+    {
+      "qaida": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043",
+      "status": "candidate",
+      "context": "For f004 and f007, the question presupposes that a bare command obligates absent an admissible qarina; no other command-default position is modeled.",
+      "reading": [
+        "Usul.CommandSchemata.CommandUsage",
+        "Usul.CommandSchemata.NonverbalForm",
+        "Usul.CommandSchemata.NonverbalReading",
+        "Usul.CommandSchemata.nonverbalUsage",
+        "Usul.CommandSchemata.writing_does_not_settle_gesture",
+        "Usul.CommandSchemata.writing_readings_differ",
+        "Usul.CommandSchemata.PropheticActReading",
+        "Usul.CommandSchemata.propheticActUsage",
+        "Usul.CommandSchemata.author_inference_needs_imitation",
+        "Usul.CommandSchemata.author_inference_with_imitation",
+        "Usul.CommandSchemata.ObligationExpression",
+        "Usul.CommandSchemata.ObligationReading",
+        "Usul.CommandSchemata.obligationIsNass",
+        "Usul.CommandSchemata.obligationStatus",
+        "Usul.CommandSchemata.bare_command_conservative",
+        "Usul.CommandSchemata.qadi_retains_defeasibility",
+        "Usul.CommandSchemata.nass_blocks_reinterpretation",
+        "Usul.CommandSchemata.explicit_readings_differ",
+        "Usul.CommandSchemata.IntendedRuling",
+        "Usul.CommandSchemata.IntendedRuling.hukm",
+        "Usul.CommandSchemata.IntendedUseReading",
+        "Usul.CommandSchemata.intendedUsage",
+        "Usul.CommandSchemata.IntendedCommand",
+        "Usul.CommandSchemata.intendedCommand",
+        "Usul.CommandSchemata.naming_preserves_intended_ruling",
+        "Usul.CommandSchemata.permission_reports_stay_distinct",
+        "Usul.CommandSchemata.recommendation_report_does_not_settle_permission"
+      ]
+    }
+  ],
+  "case_receipts": [
+    {
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f001",
+      "original_case": {
+        "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f001",
+        "encoder": "amr",
+        "needs": [
+          "rule:amr_by_writing_or_gesture"
+        ],
+        "note": "Whether writing or gesture counts as a command (al-Qadi: not truly; his Jami' argument from the Prophet's letters implies it does) is a question about what constitutes the command, prior to and outside the kernel, which presupposes a command and only assigns its status.",
+        "class": "missing_rule",
+        "facts": null,
+        "expected": null
+      },
+      "original_case_sha256": "3432b0a46543ccde7f97d0893c50e4a13a3a9e89c83d20ff5bdec5e208ea37cc",
+      "needs": [
+        "rule:amr_by_writing_or_gesture"
+      ],
+      "gap_status": "open",
+      "record_locator": "src:openiti-lahham-shamela8526/v01:p221#q043.f001",
+      "case_ar_sha256": "f4512a2d21002cd6ce063162f3aa9c6e9931ebe768d9eb03ef203ce5195de92d",
+      "capability_encoder": "command_nonverbal_usage",
+      "review_questions": [
+        "M5-CMD-Q001"
+      ]
+    },
+    {
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f003",
+      "original_case": {
+        "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f003",
+        "encoder": "amr",
+        "needs": [
+          "rule:fil_nabawi_as_amr"
+        ],
+        "note": "Whether the Prophet's act is called a command literally (Abu al-Barakat: only figuratively, per Ahmad and the majority; some Malikis/Shafi'is and Abu Ya'la's Kifaya: literally) is governed by the theory of the Prophet's acts and the semantics of the word 'amr', not by the bare-command default.",
+        "class": "missing_rule",
+        "facts": null,
+        "expected": null
+      },
+      "original_case_sha256": "42faedea481cd1102166866a76dd6f75c8a428cdc69a74ce2cb8b5388590869e",
+      "needs": [
+        "rule:fil_nabawi_as_amr"
+      ],
+      "gap_status": "open",
+      "record_locator": "src:openiti-lahham-shamela8526/v01:p221#q043.f003",
+      "case_ar_sha256": "5d26e0429ba9c949946b333ec9118ec05bfa727dc4ae79fffbbf8146d95359b8",
+      "capability_encoder": "command_prophetic_act_usage",
+      "review_questions": [
+        "M5-CMD-Q003"
+      ]
+    },
+    {
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+      "original_case": {
+        "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+        "encoder": "amr",
+        "needs": [
+          "rule:nass_immune_to_tawil"
+        ],
+        "note": "Whether an unqualified threat, or the words 'obligatory'/'fard', are a text (nass) for obligation that admits no reinterpretation (al-Qadi: no; Abu al-Barakat, preferred: yes) asks whether an indication may override the default at all, whereas the kernel lets any qarina override every command.",
+        "class": "missing_rule",
+        "facts": null,
+        "expected": null
+      },
+      "original_case_sha256": "6c67447789d873d8dc6778ef86c92bc705baf672195282ba6782e4ef2ba8ce65",
+      "needs": [
+        "rule:nass_immune_to_tawil"
+      ],
+      "gap_status": "open",
+      "record_locator": "src:openiti-lahham-shamela8526/v01:p221#q043.f004",
+      "case_ar_sha256": "3a01bd761619cd54d126992897bcc2560febaa66c1927e151caac2f4ae9d6f73",
+      "capability_encoder": "command_obligation_status",
+      "review_questions": [
+        "M5-CMD-Q004"
+      ]
+    },
+    {
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f007",
+      "original_case": {
+        "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f007",
+        "encoder": "amr",
+        "needs": [
+          "rule:haqiqa_majaz"
+        ],
+        "note": "Once nadb (or ibaha) is meant by the command the status is not in dispute; the dispute (literal per Ahmad's apparent words, al-Qadi and most companions vs figurative per al-Karkhi, al-Razi and al-Halwani; for ibaha Abu al-Barakat and Ibn 'Aqil say figurative) is over literal vs figurative usage, which the kernel does not model.",
+        "class": "missing_rule",
+        "facts": null,
+        "expected": null
+      },
+      "original_case_sha256": "6541542f5cd5909107f61ba24243afa448e298b15e9744ba3952d11e3abeb15c",
+      "needs": [
+        "rule:haqiqa_majaz"
+      ],
+      "gap_status": "open",
+      "record_locator": "src:openiti-lahham-shamela8526/v01:p221#q043.f007",
+      "case_ar_sha256": "2e18e95544d1ac1e06755a7dc7510eb2e35ebb336fb5f62dd9e85010061f6383",
+      "capability_encoder": "command_intended_usage",
+      "review_questions": [
+        "M5-CMD-Q007"
+      ]
+    }
+  ],
+  "review_questions": [
+    {
+      "id": "M5-CMD-Q001",
+      "status": "open",
+      "scope": [
+        "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f001"
+      ],
+      "question": "Can the writing inference be used beyond writing, especially for gesture? No positive gesture conclusion is encoded without a transmitted attestation."
+    },
+    {
+      "id": "M5-CMD-Q003",
+      "status": "open",
+      "scope": [
+        "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f003"
+      ],
+      "question": "What establishes imitation of the Prophet's act in an application, and how does literal naming relate to an act's ruling? The author's conditional inference is preserved."
+    },
+    {
+      "id": "M5-CMD-Q004",
+      "status": "open",
+      "scope": [
+        "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004"
+      ],
+      "question": "Which indications are admissible for the three explicit obligation expressions under each reported reading? Neither a case-specific indication nor an adopted reading is selected."
+    },
+    {
+      "id": "M5-CMD-Q007",
+      "status": "open",
+      "scope": [
+        "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f007"
+      ],
+      "question": "How should the conflicting al-Qadi permission reports be reconciled under the question's stated command position? Literal or figurative naming must not change the given intended ruling."
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "M5-CMD-001-qadiReported-writing",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f001",
+      "encoder": "command_nonverbal_usage",
+      "facts": {
+        "reading": "qadiReported",
+        "form": "writing"
+      },
+      "expected": "notLiteral",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p224",
+          "excerpt_ar": "أن الكتابة أو الإشارة هل تسمى أمرا أم لا؟ ذكر أبو البركات في المسودة عن القاضى أنها لا تسمى أمرا حقيقة",
+          "excerpt_sha256": "618383f0789283b71d3b2303229cbc8d93dc14bf8fac407b313a593dcb6a00db"
+        }
+      ],
+      "note": "Literal naming only; no act ruling or adopted reading."
+    },
+    {
+      "id": "M5-CMD-001-qadiReported-gesture",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f001",
+      "encoder": "command_nonverbal_usage",
+      "facts": {
+        "reading": "qadiReported",
+        "form": "gesture"
+      },
+      "expected": "notLiteral",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p224",
+          "excerpt_ar": "أن الكتابة أو الإشارة هل تسمى أمرا أم لا؟ ذكر أبو البركات في المسودة عن القاضى أنها لا تسمى أمرا حقيقة",
+          "excerpt_sha256": "618383f0789283b71d3b2303229cbc8d93dc14bf8fac407b313a593dcb6a00db"
+        }
+      ],
+      "note": "Literal naming only; no act ruling or adopted reading."
+    },
+    {
+      "id": "M5-CMD-001-jamiWriting-writing",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f001",
+      "encoder": "command_nonverbal_usage",
+      "facts": {
+        "reading": "jamiWriting",
+        "form": "writing"
+      },
+      "expected": "literal",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p224",
+          "excerpt_ar": "أن الكتابة تقوم مقام قول الكاتب بدلالة أن النبي صلى الله عليه وسلم كان مأمورا بدعوة جميع الناس إلى الإسلام ثم كتب إلى كسرى وقيصر فقام ذلك مقام دعوتهما إلى الإسلام وهذا يقتضى أن يكون أمرا حقيقة والله أعلم.",
+          "excerpt_sha256": "684bb3499ed41d0a1479fe18bb1f21b5bd8fbb0a856a06846558933bd03940d1"
+        }
+      ],
+      "note": "Literal naming only; no act ruling or adopted reading."
+    },
+    {
+      "id": "M5-CMD-001-jamiWriting-gesture",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f001",
+      "encoder": "command_nonverbal_usage",
+      "facts": {
+        "reading": "jamiWriting",
+        "form": "gesture"
+      },
+      "expected": "unsettled",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p224",
+          "excerpt_ar": "أن الكتابة تقوم مقام قول الكاتب بدلالة أن النبي صلى الله عليه وسلم كان مأمورا بدعوة جميع الناس إلى الإسلام ثم كتب إلى كسرى وقيصر فقام ذلك مقام دعوتهما إلى الإسلام وهذا يقتضى أن يكون أمرا حقيقة والله أعلم.",
+          "excerpt_sha256": "684bb3499ed41d0a1479fe18bb1f21b5bd8fbb0a856a06846558933bd03940d1"
+        }
+      ],
+      "note": "The positive writing inference supplies no positive gesture conclusion."
+    },
+    {
+      "id": "M5-CMD-003-abuBarakat-false",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f003",
+      "encoder": "command_prophetic_act_usage",
+      "facts": {
+        "reading": "abuBarakat",
+        "imitation_established": false
+      },
+      "expected": "figurative",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p224",
+          "excerpt_ar": "قال أبو البركات لا يسمى أمرا حقيقة بل مجازا في قول إمامنا وأصحابه والجمهور.",
+          "excerpt_sha256": "43104add06f05638feb636e22d8765ce1a2d4af27a136dc1c81e1b2e871ceae3"
+        }
+      ],
+      "note": "The author inference requires established imitation; naming alone does not establish an obligation."
+    },
+    {
+      "id": "M5-CMD-003-abuBarakat-true",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f003",
+      "encoder": "command_prophetic_act_usage",
+      "facts": {
+        "reading": "abuBarakat",
+        "imitation_established": true
+      },
+      "expected": "figurative",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p224",
+          "excerpt_ar": "قال أبو البركات لا يسمى أمرا حقيقة بل مجازا في قول إمامنا وأصحابه والجمهور.",
+          "excerpt_sha256": "43104add06f05638feb636e22d8765ce1a2d4af27a136dc1c81e1b2e871ceae3"
+        }
+      ],
+      "note": "The author inference requires established imitation; naming alone does not establish an obligation."
+    },
+    {
+      "id": "M5-CMD-003-literalReport-false",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f003",
+      "encoder": "command_prophetic_act_usage",
+      "facts": {
+        "reading": "literalReport",
+        "imitation_established": false
+      },
+      "expected": "literal",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p224",
+          "excerpt_ar": "وقال بعض المالكية وبعض متأخرى الشافعية يسمى أمرا حقيقة وأقره عبد الحليم",
+          "excerpt_sha256": "a8313445f29d6a205a72976c216820c7c9dd00a0241708689730b51f1614bb67"
+        }
+      ],
+      "note": "The author inference requires established imitation; naming alone does not establish an obligation."
+    },
+    {
+      "id": "M5-CMD-003-literalReport-true",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f003",
+      "encoder": "command_prophetic_act_usage",
+      "facts": {
+        "reading": "literalReport",
+        "imitation_established": true
+      },
+      "expected": "literal",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p224",
+          "excerpt_ar": "وقال بعض المالكية وبعض متأخرى الشافعية يسمى أمرا حقيقة وأقره عبد الحليم",
+          "excerpt_sha256": "a8313445f29d6a205a72976c216820c7c9dd00a0241708689730b51f1614bb67"
+        }
+      ],
+      "note": "The author inference requires established imitation; naming alone does not establish an obligation."
+    },
+    {
+      "id": "M5-CMD-003-authorConditional-false",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f003",
+      "encoder": "command_prophetic_act_usage",
+      "facts": {
+        "reading": "authorConditional",
+        "imitation_established": false
+      },
+      "expected": "unsettled",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "قلت: وهذا يقتضى أن يسمى أمرا حقيقة وهذا ينبغى إذا ثبت التأسى بفعله صلى الله عليه وسلم.",
+          "excerpt_sha256": "392b8ef7dc106ee5e0dbc7a4583659226af475a78c39e222941916ca08a663c2"
+        }
+      ],
+      "note": "The author inference requires established imitation; naming alone does not establish an obligation."
+    },
+    {
+      "id": "M5-CMD-003-authorConditional-true",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f003",
+      "encoder": "command_prophetic_act_usage",
+      "facts": {
+        "reading": "authorConditional",
+        "imitation_established": true
+      },
+      "expected": "literal",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "قلت: وهذا يقتضى أن يسمى أمرا حقيقة وهذا ينبغى إذا ثبت التأسى بفعله صلى الله عليه وسلم.",
+          "excerpt_sha256": "392b8ef7dc106ee5e0dbc7a4583659226af475a78c39e222941916ca08a663c2"
+        }
+      ],
+      "note": "The author inference requires established imitation; naming alone does not establish an obligation."
+    },
+    {
+      "id": "M5-CMD-004-qadi-bareCommand-mandub",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+      "encoder": "command_obligation_status",
+      "facts": {
+        "reading": "qadi",
+        "expression": "bareCommand",
+        "qarina": "mandub"
+      },
+      "expected": "mandub",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p221",
+          "excerpt_ar": "أحدها أنه يقتضى الوجوب ما لم تقم قرينة تصرفه إلى غيره نص عليه الإمام أحمد رضى الله عنه في مواضع",
+          "excerpt_sha256": "6cbb331f5d1634c5b5ab5e398831b1668c0f1a30e91c7d7d75e4e09995522d01"
+        }
+      ],
+      "note": "An admissible qarina is an input; this fixture does not establish its admissibility in an actual case."
+    },
+    {
+      "id": "M5-CMD-004-qadi-unqualifiedThreat-mandub",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+      "encoder": "command_obligation_status",
+      "facts": {
+        "reading": "qadi",
+        "expression": "unqualifiedThreat",
+        "qarina": "mandub"
+      },
+      "expected": "mandub",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "إذا قلنا إطلاق الأمر يقتضى ms127 الوجوب إلا أن تصرفه قرينة فإطلاق التوعد لفعل ما توعد عليه أو إطلاق الوجوب أو الفرض هل يكون ذذلك نصا في الوجوب لا يقبل التأويل أم لا.",
+          "excerpt_sha256": "24fa228a4d683045e152f3a4b06471639b6fd128d4d41c56ac137b1df81d537d"
+        },
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "قال القاضى لا يكون نصا في الوجوب بل يقبل التأويل ذكره في الثلاثة.",
+          "excerpt_sha256": "dbf170dd40ad862c71e8ac2440bd6dd41ff87e060a607fa554bb4bda050c6179"
+        }
+      ],
+      "note": "An admissible qarina is an input; this fixture does not establish its admissibility in an actual case."
+    },
+    {
+      "id": "M5-CMD-004-qadi-wujubLabel-mandub",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+      "encoder": "command_obligation_status",
+      "facts": {
+        "reading": "qadi",
+        "expression": "wujubLabel",
+        "qarina": "mandub"
+      },
+      "expected": "mandub",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "إذا قلنا إطلاق الأمر يقتضى ms127 الوجوب إلا أن تصرفه قرينة فإطلاق التوعد لفعل ما توعد عليه أو إطلاق الوجوب أو الفرض هل يكون ذذلك نصا في الوجوب لا يقبل التأويل أم لا.",
+          "excerpt_sha256": "24fa228a4d683045e152f3a4b06471639b6fd128d4d41c56ac137b1df81d537d"
+        },
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "قال القاضى لا يكون نصا في الوجوب بل يقبل التأويل ذكره في الثلاثة.",
+          "excerpt_sha256": "dbf170dd40ad862c71e8ac2440bd6dd41ff87e060a607fa554bb4bda050c6179"
+        }
+      ],
+      "note": "An admissible qarina is an input; this fixture does not establish its admissibility in an actual case."
+    },
+    {
+      "id": "M5-CMD-004-qadi-fardLabel-mandub",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+      "encoder": "command_obligation_status",
+      "facts": {
+        "reading": "qadi",
+        "expression": "fardLabel",
+        "qarina": "mandub"
+      },
+      "expected": "mandub",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "إذا قلنا إطلاق الأمر يقتضى ms127 الوجوب إلا أن تصرفه قرينة فإطلاق التوعد لفعل ما توعد عليه أو إطلاق الوجوب أو الفرض هل يكون ذذلك نصا في الوجوب لا يقبل التأويل أم لا.",
+          "excerpt_sha256": "24fa228a4d683045e152f3a4b06471639b6fd128d4d41c56ac137b1df81d537d"
+        },
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "قال القاضى لا يكون نصا في الوجوب بل يقبل التأويل ذكره في الثلاثة.",
+          "excerpt_sha256": "dbf170dd40ad862c71e8ac2440bd6dd41ff87e060a607fa554bb4bda050c6179"
+        }
+      ],
+      "note": "An admissible qarina is an input; this fixture does not establish its admissibility in an actual case."
+    },
+    {
+      "id": "M5-CMD-004-qadi-bareCommand-mubah",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+      "encoder": "command_obligation_status",
+      "facts": {
+        "reading": "qadi",
+        "expression": "bareCommand",
+        "qarina": "mubah"
+      },
+      "expected": "mubah",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p221",
+          "excerpt_ar": "أحدها أنه يقتضى الوجوب ما لم تقم قرينة تصرفه إلى غيره نص عليه الإمام أحمد رضى الله عنه في مواضع",
+          "excerpt_sha256": "6cbb331f5d1634c5b5ab5e398831b1668c0f1a30e91c7d7d75e4e09995522d01"
+        }
+      ],
+      "note": "The new capability preserves the existing bare-command default under an admissible qarina."
+    },
+    {
+      "id": "M5-CMD-004-qadi-wujubLabel-none",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+      "encoder": "command_obligation_status",
+      "facts": {
+        "reading": "qadi",
+        "expression": "wujubLabel",
+        "qarina": "none"
+      },
+      "expected": "wajib",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "إذا قلنا إطلاق الأمر يقتضى ms127 الوجوب إلا أن تصرفه قرينة فإطلاق التوعد لفعل ما توعد عليه أو إطلاق الوجوب أو الفرض هل يكون ذذلك نصا في الوجوب لا يقبل التأويل أم لا.",
+          "excerpt_sha256": "24fa228a4d683045e152f3a4b06471639b6fd128d4d41c56ac137b1df81d537d"
+        },
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "قال القاضى لا يكون نصا في الوجوب بل يقبل التأويل ذكره في الثلاثة.",
+          "excerpt_sha256": "dbf170dd40ad862c71e8ac2440bd6dd41ff87e060a607fa554bb4bda050c6179"
+        }
+      ],
+      "note": "Without a contrary indication both readings return the question's presupposed obligation."
+    },
+    {
+      "id": "M5-CMD-004-abuBarakat-bareCommand-mandub",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+      "encoder": "command_obligation_status",
+      "facts": {
+        "reading": "abuBarakat",
+        "expression": "bareCommand",
+        "qarina": "mandub"
+      },
+      "expected": "mandub",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p221",
+          "excerpt_ar": "أحدها أنه يقتضى الوجوب ما لم تقم قرينة تصرفه إلى غيره نص عليه الإمام أحمد رضى الله عنه في مواضع",
+          "excerpt_sha256": "6cbb331f5d1634c5b5ab5e398831b1668c0f1a30e91c7d7d75e4e09995522d01"
+        }
+      ],
+      "note": "An admissible qarina is an input; this fixture does not establish its admissibility in an actual case."
+    },
+    {
+      "id": "M5-CMD-004-abuBarakat-unqualifiedThreat-mandub",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+      "encoder": "command_obligation_status",
+      "facts": {
+        "reading": "abuBarakat",
+        "expression": "unqualifiedThreat",
+        "qarina": "mandub"
+      },
+      "expected": "wajib",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "إذا قلنا إطلاق الأمر يقتضى ms127 الوجوب إلا أن تصرفه قرينة فإطلاق التوعد لفعل ما توعد عليه أو إطلاق الوجوب أو الفرض هل يكون ذذلك نصا في الوجوب لا يقبل التأويل أم لا.",
+          "excerpt_sha256": "24fa228a4d683045e152f3a4b06471639b6fd128d4d41c56ac137b1df81d537d"
+        },
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "واختار أبو البركات إطلاق القواعد وإطلاق الفرض أو الوجوب نص في الوجوب لا يقبل التأويل وهو أظهر إذ يمتنع وجود خاصة الشىء بدون ثبوته والله أعلم.",
+          "excerpt_sha256": "756744e66ab44a1dcb7747ddd262b673abafd01bf7b2764d348c440e5b66988f"
+        }
+      ],
+      "note": "An admissible qarina is an input; this fixture does not establish its admissibility in an actual case."
+    },
+    {
+      "id": "M5-CMD-004-abuBarakat-wujubLabel-mandub",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+      "encoder": "command_obligation_status",
+      "facts": {
+        "reading": "abuBarakat",
+        "expression": "wujubLabel",
+        "qarina": "mandub"
+      },
+      "expected": "wajib",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "إذا قلنا إطلاق الأمر يقتضى ms127 الوجوب إلا أن تصرفه قرينة فإطلاق التوعد لفعل ما توعد عليه أو إطلاق الوجوب أو الفرض هل يكون ذذلك نصا في الوجوب لا يقبل التأويل أم لا.",
+          "excerpt_sha256": "24fa228a4d683045e152f3a4b06471639b6fd128d4d41c56ac137b1df81d537d"
+        },
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "واختار أبو البركات إطلاق القواعد وإطلاق الفرض أو الوجوب نص في الوجوب لا يقبل التأويل وهو أظهر إذ يمتنع وجود خاصة الشىء بدون ثبوته والله أعلم.",
+          "excerpt_sha256": "756744e66ab44a1dcb7747ddd262b673abafd01bf7b2764d348c440e5b66988f"
+        }
+      ],
+      "note": "An admissible qarina is an input; this fixture does not establish its admissibility in an actual case."
+    },
+    {
+      "id": "M5-CMD-004-abuBarakat-fardLabel-mandub",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+      "encoder": "command_obligation_status",
+      "facts": {
+        "reading": "abuBarakat",
+        "expression": "fardLabel",
+        "qarina": "mandub"
+      },
+      "expected": "wajib",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "إذا قلنا إطلاق الأمر يقتضى ms127 الوجوب إلا أن تصرفه قرينة فإطلاق التوعد لفعل ما توعد عليه أو إطلاق الوجوب أو الفرض هل يكون ذذلك نصا في الوجوب لا يقبل التأويل أم لا.",
+          "excerpt_sha256": "24fa228a4d683045e152f3a4b06471639b6fd128d4d41c56ac137b1df81d537d"
+        },
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "واختار أبو البركات إطلاق القواعد وإطلاق الفرض أو الوجوب نص في الوجوب لا يقبل التأويل وهو أظهر إذ يمتنع وجود خاصة الشىء بدون ثبوته والله أعلم.",
+          "excerpt_sha256": "756744e66ab44a1dcb7747ddd262b673abafd01bf7b2764d348c440e5b66988f"
+        }
+      ],
+      "note": "An admissible qarina is an input; this fixture does not establish its admissibility in an actual case."
+    },
+    {
+      "id": "M5-CMD-004-abuBarakat-bareCommand-mubah",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+      "encoder": "command_obligation_status",
+      "facts": {
+        "reading": "abuBarakat",
+        "expression": "bareCommand",
+        "qarina": "mubah"
+      },
+      "expected": "mubah",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p221",
+          "excerpt_ar": "أحدها أنه يقتضى الوجوب ما لم تقم قرينة تصرفه إلى غيره نص عليه الإمام أحمد رضى الله عنه في مواضع",
+          "excerpt_sha256": "6cbb331f5d1634c5b5ab5e398831b1668c0f1a30e91c7d7d75e4e09995522d01"
+        }
+      ],
+      "note": "The new capability preserves the existing bare-command default under an admissible qarina."
+    },
+    {
+      "id": "M5-CMD-004-abuBarakat-wujubLabel-none",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+      "encoder": "command_obligation_status",
+      "facts": {
+        "reading": "abuBarakat",
+        "expression": "wujubLabel",
+        "qarina": "none"
+      },
+      "expected": "wajib",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "إذا قلنا إطلاق الأمر يقتضى ms127 الوجوب إلا أن تصرفه قرينة فإطلاق التوعد لفعل ما توعد عليه أو إطلاق الوجوب أو الفرض هل يكون ذذلك نصا في الوجوب لا يقبل التأويل أم لا.",
+          "excerpt_sha256": "24fa228a4d683045e152f3a4b06471639b6fd128d4d41c56ac137b1df81d537d"
+        },
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p225",
+          "excerpt_ar": "واختار أبو البركات إطلاق القواعد وإطلاق الفرض أو الوجوب نص في الوجوب لا يقبل التأويل وهو أظهر إذ يمتنع وجود خاصة الشىء بدون ثبوته والله أعلم.",
+          "excerpt_sha256": "756744e66ab44a1dcb7747ddd262b673abafd01bf7b2764d348c440e5b66988f"
+        }
+      ],
+      "note": "Without a contrary indication both readings return the question's presupposed obligation."
+    },
+    {
+      "id": "M5-CMD-007-qadiReport-recommendation",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f007",
+      "encoder": "command_intended_usage",
+      "facts": {
+        "reading": "qadiReport",
+        "intended": "recommendation"
+      },
+      "expected": "literal",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p226",
+          "excerpt_ar": "لفظ الأمر إذا قلنا بالقول الأول المنصوص عن أحمد فأريد بالأمر الندب فهو حقيقة فيه على ظاهر كلام أحمد واختاره أكثر أصحابنا القاضى وغيره",
+          "excerpt_sha256": "cfc894345ecf8331841b5021b99c52b34f4da77da66d307edeb00158520106b6"
+        }
+      ],
+      "note": "Within the stated first command position; the intended ruling is given. Untransmitted branches stay unsettled and the conflicting Qadi permission reports remain distinct."
+    },
+    {
+      "id": "M5-CMD-007-qadiReport-permission",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f007",
+      "encoder": "command_intended_usage",
+      "facts": {
+        "reading": "qadiReport",
+        "intended": "permission"
+      },
+      "expected": "literal",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p226",
+          "excerpt_ar": "لفظ الأمر إذا قلنا بالقول الأول المنصوص عن أحمد فأريد بالأمر الندب فهو حقيقة فيه على ظاهر كلام أحمد واختاره أكثر أصحابنا القاضى وغيره",
+          "excerpt_sha256": "cfc894345ecf8331841b5021b99c52b34f4da77da66d307edeb00158520106b6"
+        },
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p226",
+          "excerpt_ar": "وإن أريد به الإباحة فعند أبى البركات أنه مجاز وحكاه عن الحنفية وقال المقدسي واختاره ابن عقيل وقال هو قول أكثر الأصوليين وقال القاضى يكون خقيقة.",
+          "excerpt_sha256": "95261be195387f08a25a1d8cc8ab1a43c4f0aea266e2ebadb48dbd726d16b912"
+        }
+      ],
+      "note": "Within the stated first command position; the intended ruling is given. Untransmitted branches stay unsettled and the conflicting Qadi permission reports remain distinct."
+    },
+    {
+      "id": "M5-CMD-007-karkhiRazi-recommendation",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f007",
+      "encoder": "command_intended_usage",
+      "facts": {
+        "reading": "karkhiRazi",
+        "intended": "recommendation"
+      },
+      "expected": "figurative",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p226",
+          "excerpt_ar": "لفظ الأمر إذا قلنا بالقول الأول المنصوص عن أحمد فأريد بالأمر الندب فهو حقيقة فيه على ظاهر كلام أحمد واختاره أكثر أصحابنا القاضى وغيره",
+          "excerpt_sha256": "cfc894345ecf8331841b5021b99c52b34f4da77da66d307edeb00158520106b6"
+        },
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p226",
+          "excerpt_ar": "وقال الكرخى والرازى من الحنفية هو مجاز واختاره عبد الرحمن الحلوانى من أصحابنا وعن الشافعية كالمذهبين.",
+          "excerpt_sha256": "66b25fe4dda0cb3db042680a7d2eb69cc491d037034f0a1e687175ff86aa38e3"
+        }
+      ],
+      "note": "Within the stated first command position; the intended ruling is given. Untransmitted branches stay unsettled and the conflicting Qadi permission reports remain distinct."
+    },
+    {
+      "id": "M5-CMD-007-karkhiRazi-permission",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f007",
+      "encoder": "command_intended_usage",
+      "facts": {
+        "reading": "karkhiRazi",
+        "intended": "permission"
+      },
+      "expected": "unsettled",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p226",
+          "excerpt_ar": "لفظ الأمر إذا قلنا بالقول الأول المنصوص عن أحمد فأريد بالأمر الندب فهو حقيقة فيه على ظاهر كلام أحمد واختاره أكثر أصحابنا القاضى وغيره",
+          "excerpt_sha256": "cfc894345ecf8331841b5021b99c52b34f4da77da66d307edeb00158520106b6"
+        },
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p226",
+          "excerpt_ar": "وقال الكرخى والرازى من الحنفية هو مجاز واختاره عبد الرحمن الحلوانى من أصحابنا وعن الشافعية كالمذهبين.",
+          "excerpt_sha256": "66b25fe4dda0cb3db042680a7d2eb69cc491d037034f0a1e687175ff86aa38e3"
+        }
+      ],
+      "note": "Within the stated first command position; the intended ruling is given. Untransmitted branches stay unsettled and the conflicting Qadi permission reports remain distinct."
+    },
+    {
+      "id": "M5-CMD-007-abuBarakat-recommendation",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f007",
+      "encoder": "command_intended_usage",
+      "facts": {
+        "reading": "abuBarakat",
+        "intended": "recommendation"
+      },
+      "expected": "unsettled",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p226",
+          "excerpt_ar": "لفظ الأمر إذا قلنا بالقول الأول المنصوص عن أحمد فأريد بالأمر الندب فهو حقيقة فيه على ظاهر كلام أحمد واختاره أكثر أصحابنا القاضى وغيره",
+          "excerpt_sha256": "cfc894345ecf8331841b5021b99c52b34f4da77da66d307edeb00158520106b6"
+        },
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p226",
+          "excerpt_ar": "وإن أريد به الإباحة فعند أبى البركات أنه مجاز وحكاه عن الحنفية وقال المقدسي واختاره ابن عقيل وقال هو قول أكثر الأصوليين وقال القاضى يكون خقيقة.",
+          "excerpt_sha256": "95261be195387f08a25a1d8cc8ab1a43c4f0aea266e2ebadb48dbd726d16b912"
+        }
+      ],
+      "note": "Within the stated first command position; the intended ruling is given. Untransmitted branches stay unsettled and the conflicting Qadi permission reports remain distinct."
+    },
+    {
+      "id": "M5-CMD-007-abuBarakat-permission",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f007",
+      "encoder": "command_intended_usage",
+      "facts": {
+        "reading": "abuBarakat",
+        "intended": "permission"
+      },
+      "expected": "figurative",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p226",
+          "excerpt_ar": "لفظ الأمر إذا قلنا بالقول الأول المنصوص عن أحمد فأريد بالأمر الندب فهو حقيقة فيه على ظاهر كلام أحمد واختاره أكثر أصحابنا القاضى وغيره",
+          "excerpt_sha256": "cfc894345ecf8331841b5021b99c52b34f4da77da66d307edeb00158520106b6"
+        },
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p226",
+          "excerpt_ar": "وإن أريد به الإباحة فعند أبى البركات أنه مجاز وحكاه عن الحنفية وقال المقدسي واختاره ابن عقيل وقال هو قول أكثر الأصوليين وقال القاضى يكون خقيقة.",
+          "excerpt_sha256": "95261be195387f08a25a1d8cc8ab1a43c4f0aea266e2ebadb48dbd726d16b912"
+        }
+      ],
+      "note": "Within the stated first command position; the intended ruling is given. Untransmitted branches stay unsettled and the conflicting Qadi permission reports remain distinct."
+    },
+    {
+      "id": "M5-CMD-007-qadiArgument-recommendation",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f007",
+      "encoder": "command_intended_usage",
+      "facts": {
+        "reading": "qadiArgument",
+        "intended": "recommendation"
+      },
+      "expected": "literal",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p226",
+          "excerpt_ar": "لفظ الأمر إذا قلنا بالقول الأول المنصوص عن أحمد فأريد بالأمر الندب فهو حقيقة فيه على ظاهر كلام أحمد واختاره أكثر أصحابنا القاضى وغيره",
+          "excerpt_sha256": "cfc894345ecf8331841b5021b99c52b34f4da77da66d307edeb00158520106b6"
+        },
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p227",
+          "excerpt_ar": "وأجاب القاضى بأن الندب بعض الوجوب فهو كدلالة العام على بعضه وهو عنده ليس بمجاز إنما المجاز دلالته على غيره وهذا منه يقتضى أن الأمر إذا أريد به الإباحة أن يكون مجازا وهو خلاف ما تقدم عنه والله أعلم.",
+          "excerpt_sha256": "9bb6bac9177d1b87846f7556d9d95ea249dc7284533307741287341e0e3620c9"
+        }
+      ],
+      "note": "Within the stated first command position; the intended ruling is given. Untransmitted branches stay unsettled and the conflicting Qadi permission reports remain distinct."
+    },
+    {
+      "id": "M5-CMD-007-qadiArgument-permission",
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f007",
+      "encoder": "command_intended_usage",
+      "facts": {
+        "reading": "qadiArgument",
+        "intended": "permission"
+      },
+      "expected": "figurative",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p226",
+          "excerpt_ar": "لفظ الأمر إذا قلنا بالقول الأول المنصوص عن أحمد فأريد بالأمر الندب فهو حقيقة فيه على ظاهر كلام أحمد واختاره أكثر أصحابنا القاضى وغيره",
+          "excerpt_sha256": "cfc894345ecf8331841b5021b99c52b34f4da77da66d307edeb00158520106b6"
+        },
+        {
+          "ref": "src:openiti-lahham-shamela8526/v01:p227",
+          "excerpt_ar": "وأجاب القاضى بأن الندب بعض الوجوب فهو كدلالة العام على بعضه وهو عنده ليس بمجاز إنما المجاز دلالته على غيره وهذا منه يقتضى أن الأمر إذا أريد به الإباحة أن يكون مجازا وهو خلاف ما تقدم عنه والله أعلم.",
+          "excerpt_sha256": "9bb6bac9177d1b87846f7556d9d95ea249dc7284533307741287341e0e3620c9"
+        }
+      ],
+      "note": "Within the stated first command position; the intended ruling is given. Untransmitted branches stay unsettled and the conflicting Qadi permission reports remain distinct."
+    }
+  ]
+}
