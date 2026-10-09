@@ -8,6 +8,7 @@
     python -m usul_corpus m8-worklist [--check]  # reconcile committed M8 scope
     python -m usul_corpus m5-commands [--fetch-source]  # replay candidate capability receipts
     python -m usul_corpus docs        # render the dossier and glossary pages from corpus/dossier
+    python -m usul_corpus reception   # count the citers' citations of each cited work (cached citers only)
     python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
     python -m usul_corpus fatawa [--lang L] [--refresh]   # IslamQA offline dumps → .cache/corpus/fatawa/*.jsonl
 """
@@ -301,13 +302,26 @@ def docs_pages() -> dict[Path, str]:
     from .dossier import render_dossier, render_glossary
     records = {r["id"]: r for p in (CORPUS / "records").glob("*.jsonl") for r in map(json.loads, p.read_text(encoding="utf-8").splitlines())}
     glossary = _load(GLOSSARY)
+    from .reception import render_counts
+    titles = {w["id"]: (w["title_tr"], w.get("reception", {}).get("genre", "")) for w in _load(CORPUS / "registry.json")["works"]}
     return {ROOT / "docs/architecture/dossier.md": render_dossier(_load(DOSSIER), records, {t["key"]: t for t in glossary["terms"]}),
-            ROOT / "docs/glossary.md": render_glossary(glossary, records)}
+            ROOT / "docs/glossary.md": render_glossary(glossary, records),
+            ROOT / "docs/architecture/reception-counts.md": render_counts(_load(CORPUS / "reception" / "report.json"), titles)}
 
 
 def cmd_docs(_: argparse.Namespace) -> int:
     for path, text in docs_pages().items():
         path.write_text(text, encoding="utf-8")
+    return 0
+
+
+def cmd_reception(_: argparse.Namespace) -> int:
+    from .reception import build
+    rep = build(_load(CORPUS / "registry.json"), CACHE)
+    _dump(CORPUS / "reception" / "report.json", rep)
+    for work, c in sorted(rep["counts"].items(), key=lambda kv: -kv[1]["total"]):
+        print(f"{work:40} {c['total']:>6}  {c['by_scholar']}")
+    print(f"missing citers: {rep['missing'] or 'none'}", file=sys.stderr)
     return 0
 
 
@@ -386,6 +400,7 @@ def main(argv: list[str] | None = None) -> int:
     m5.add_argument("--fetch-source", action="store_true", help="restore the full pinned witness without repinning")
     m5.set_defaults(run=cmd_m5_commands)
     sub.add_parser("docs").set_defaults(run=cmd_docs)
+    sub.add_parser("reception").set_defaults(run=cmd_reception)
     fa = sub.add_parser("fatawa")
     fa.add_argument("--lang")
     fa.add_argument("--refresh", action="store_true")
