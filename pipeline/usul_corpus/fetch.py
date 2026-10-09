@@ -61,12 +61,13 @@ def next_page_id(page_html: str) -> int | None:
 
 
 def _get(url: str, backoff: tuple[int, ...] = (2, 4, 8, 16)) -> bytes:
-    """GET with exponential backoff on transient (5xx / network) failures."""
+    """GET with exponential backoff on transient failures: 5xx, network errors, timeouts and
+    connection resets (a reset mid-book used to abort an hours-long Shamela fetch)."""
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
             return r.read()
-    except (urllib.error.URLError, TimeoutError) as e:
+    except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
         transient = not isinstance(e, urllib.error.HTTPError) or e.code >= 500
         if not (transient and backoff):
             raise
