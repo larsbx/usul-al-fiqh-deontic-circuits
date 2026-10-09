@@ -74,48 +74,139 @@ class _Marker:
 _PARAGRAPH = _Marker(lambda line: bool(_FARC.match(normalize(line))), _FARC)
 _ORDINAL = _Marker(lambda line: bool((m := _ORD_CASE.match(line)) and parse_ordinal(normalize(m[1]), fuzzy=False)), _ORD_CASE)
 
+# The list layouts of a qāʿida with neither: cases by feminine ordinal («(أحدها)», «(والثانية)»,
+# «(اليد السادسة)»), or divisions («النوع/القسم/الضرب/الحالة/المقرر <ordinal>», or a bare
+# «(و)الثاني:» once the qāʿida announces them: «نوعان:», «على قسمين:», «ثلاثة أشياء:»).
+_CASE_LIST = re.compile(r"^[\[(]?و?(?:اليد\s+)?(أحدها(?!م)|إحداها(?!م)|الأولى|ال[^\s():.\]]+[ةه])[)\]]?\s*[:.]?\s*")
+_DIVISION = re.compile(r"^[\[(]?و?(?:ال)?(نوع|قسم|ضرب|حال[ةه]|مقرر)\s+(?:ms\d+\s+)?(ال[^\s():.\]]+)[)\]]?\s*[:.]?\s*")
+_BARE_DIVISION = re.compile(r"^\(?و?(ال(?:أول|ثاني|ثالث|رابع|خامس|سادس|سابع|ثامن|تاسع|عاشر))\)?\s*:\s*")
+_ANNOUNCE = re.compile(r"(?:نوعان|نوعين|أنواع|قسمان|قسمين|أقسام|ضربان|ضربين|أضرب|أشياء)\s*:\s*")
+_LIST_OPENING = re.compile(f"{_OPENING.pattern}|" r":\s*\(?أحدها(?!م)\)?\s*[:.]?\s*(?=\S)")
+_OPEN_PAIR = re.compile(r"إحداهما(?!.*الثانية)")
+_FIRST = re.compile(r"^\(?(?:أحدهما|إحداهما|أحدها|إحداها|الأول|الأولى)\)?\s*[:.]?\s*")
 
-def _marker(text: str) -> _Marker:
-    """«(و)منها» paragraphs where the unit has any; ordinal cases only where it has none, so
-    no existing farʿ id moves."""
-    return _PARAGRAPH if any(map(_PARAGRAPH.opens, text.split("\n"))) else _ORDINAL
+
+def _ordinal(word: str) -> int | None:
+    if normalize(word) in (normalize("أحدها"), normalize("إحداها")):
+        return 1
+    parsed = parse_ordinal(normalize(word), fuzzy=False)
+    return parsed[0] if parsed else None
 
 
-def _blocks(text: str) -> tuple[_Marker, list[str], list[list[str]]]:
-    """The unit's marker, the prelude (lines before the first farʿ marker) and one block per
-    marker line, each running to the next marker: a case that crosses a line break (a page
-    marker) keeps its continuation."""
-    marker = _marker(text)
-    prelude: list[str] = []
-    blocks: list[list[str]] = []
-    for line in text.split("\n"):
-        if marker.opens(line):
-            blocks.append([line])
-        else:
-            (blocks[-1] if blocks else prelude).append(line)
-    return marker, prelude, blocks
+def _ordinal_chain(marks: list[tuple[int, int]], start: int) -> list[int]:
+    """Line indices of the consecutive ordinals start, start+1, …: each k cuts at its last mark
+    before the first (k+1)-mark (an inner «والثانية», a second riwāya, stays in its case); the
+    final k cuts at its first."""
+    out: list[int] = []
+    k, lo = start, -1
+    while ks := [i for i, v in marks if v == k and i > lo]:
+        nxt = [i for i, v in marks if v == k + 1 and i > ks[0]]
+        lo = max(i for i in ks if i < nxt[0]) if nxt else ks[0]
+        out.append(lo)
+        k += 1
+    return out
+
+
+def _inline_opening(prelude: tuple[str, ...], rx: re.Pattern = _OPENING) -> str | None:
+    """The text after the first inline marker with something after it, to the end of the prelude."""
+    for k, line in enumerate(prelude):
+        m = rx.search(line)
+        if m and line[m.end():].strip():
+            return _statement(" ".join([line[m.end():], *prelude[k + 1:]]))
+    return None
+
+
+def _announced_opening(prelude: tuple[str, ...]) -> str | None:
+    """An announced first division: after «نوعان:» … , opening with its own «أحدهما:» / «الأول:»
+    on the same line or the next, to the end of the prelude."""
+    for k, line in enumerate(prelude):
+        if m := _ANNOUNCE.search(line):
+            body = " ".join([line[m.end():], *prelude[k + 1:]]).strip()
+            if f := _FIRST.match(body):
+                return _statement(body[f.end():])
+    return None
+
+
+@dataclass(frozen=True)
+class _Cut:
+    """A unit's text cut into farʿ blocks, with its opening example."""
+    lines: tuple[str, ...]
+    starts: tuple[int, ...]
+    strip: Callable[[str], str]
+    opening: str | None
+
+    @property
+    def blocks(self) -> list[tuple[str, ...]]:
+        """One block per start, running to the next: a case that crosses a line break (a page
+        marker) keeps its continuation."""
+        return [self.lines[i:j] for i, j in zip(self.starts, (*self.starts[1:], len(self.lines)))]
+
+
+def _marked(lines: tuple[str, ...], starts: tuple[int, ...], strip: Callable[[str], str]) -> _Cut:
+    return _Cut(lines, starts, strip, _inline_opening(lines[: starts[0]] if starts else lines))
+
+
+def _list_cut(lines: tuple[str, ...], opened: bool = False) -> _Cut | None:
+    """Feminine-ordinal cases if they form a list, else divisions: a labelled level (one label
+    noun) before bare «والثاني:», which counts only after an announcement. A list starts at 1,
+    or at 2 when its first item is the opening. A unit that already has an opening (`opened`)
+    takes only a list from 2, so its .f000 stays."""
+    def strip_by(*rxs: re.Pattern) -> Callable[[str], str]:
+        def strip(line: str) -> str:
+            m = next(filter(None, (rx.match(line) for rx in rxs)), None)
+            return line[m.end():] if m else line
+        return strip
+
+    def chained(ms: list[tuple[int, int]], first: Callable[[tuple[str, ...]], str | None], strip) -> _Cut | None:
+        if not opened and len(c := _ordinal_chain(ms, 1)) >= 2:
+            return _Cut(lines, tuple(c), strip, None)
+        c = _ordinal_chain(ms, 2)
+        return _Cut(lines, tuple(c), strip, o) if c and (o := first(lines[: c[0]])) else None
+
+    cases = [(i, v) for i, l in enumerate(lines) if (m := _CASE_LIST.match(l)) and (v := _ordinal(m[1]))]
+    pos = {i: k for k, (i, _) in enumerate(cases)}
+    # a «(والثانية)» after an open «(إحداهما)» (since the last mark) is that pair's second, not a case
+    cases = [(i, v) for i, v in cases
+             if not (v == 2 and _OPEN_PAIR.search(" ".join(lines[(cases[pos[i] - 1][0] if pos[i] else 0):i])))]
+    labelled = [(i, normalize(m[1]).replace("ه", "ة"), v) for i, l in enumerate(lines)
+                if (m := _DIVISION.match(l)) and (v := _ordinal(m[2]))]
+    bare = [(i, v) for i, l in enumerate(lines) if (m := _BARE_DIVISION.match(l)) and (v := _ordinal(m[1]))]
+    levels = [[(i, v) for i, n, v in labelled if n == noun] for noun in dict.fromkeys(n for _, n, _ in labelled)]
+    first_case = _inline_opening if opened else (lambda p: _inline_opening(p, _LIST_OPENING))
+    options = [
+        lambda: chained(cases, first_case, strip_by(_CASE_LIST)),
+        *(lambda ms=ms: chained(ms, _announced_opening, strip_by(_DIVISION)) for ms in levels),
+        lambda: chained(sorted(bare + [(i, v) for i, _, v in labelled]), _announced_opening, strip_by(_DIVISION, _BARE_DIVISION)),
+    ]
+    return next(filter(None, (o() for o in options)), None)
+
+
+def _cut(text: str) -> _Cut:
+    """«(و)منها» paragraphs where the unit has any; else «الصورة/المسألة» ordinal cases; else a
+    list of cases or divisions, after the opening example if there is one. A layer applies only
+    where the ones before it find nothing, so no existing farʿ id moves."""
+    lines = tuple(text.split("\n"))
+    for marker in (_PARAGRAPH, _ORDINAL):
+        if starts := tuple(i for i, l in enumerate(lines) if marker.opens(l)):
+            return _marked(lines, starts, marker.strip)
+    bare = _marked(lines, (), _PARAGRAPH.strip)
+    return _list_cut(lines, opened=bool(bare.opening)) or bare
 
 
 def _furu(text: str) -> tuple[str, ...]:
-    """Furūʿ: blocks opening with the unit's marker. A marker line with nothing after it opens
-    no farʿ (as it never did), so farʿ ids do not shift."""
-    marker, _, blocks = _blocks(text)
+    """Furūʿ: the unit's blocks. A marker line with nothing after it opens no farʿ (as it never
+    did), so farʿ ids do not shift."""
+    cut = _cut(text)
     return tuple(
-        _statement(" ".join([marker.strip(b[0]), *b[1:]]))
-        for b in blocks
-        if marker.strip(b[0]).strip()
+        _statement(" ".join([cut.strip(b[0]), *b[1:]]))
+        for b in cut.blocks
+        if cut.strip(b[0]).strip()
     )
 
 
 def _opening(text: str) -> str | None:
-    """The opening example: in the prelude, the text after the first inline marker, to the
-    end of the prelude. It becomes farʿ 0, so the paragraph furūʿ keep their numbers."""
-    prelude = _blocks(text)[1]
-    for k, line in enumerate(prelude):
-        m = _OPENING.search(line)
-        if m and line[m.end():].strip():
-            return _statement(" ".join([line[m.end():], *prelude[k + 1:]]))
-    return None
+    """The opening example, farʿ 0, so the paragraph furūʿ keep their numbers."""
+    return _cut(text).opening
 
 
 def segment_headed(sections: tuple[Section, ...], marker: str) -> tuple[Unit, ...]:
