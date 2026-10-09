@@ -68,27 +68,31 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003",
-      "encoder": "running_water",
+      "encoder": "ayman_by_urf",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "running": true
+        "custom_one_body": true
       },
-      "expected": "perJirya",
+      "expected": "whole",
       "positions": [
         {
           "who": "Abū al-Khaṭṭāb: not broken",
           "ruling": "perJirya"
         },
         {
-          "who": "qiyās al-manṣūṣ (Ibn Rajab): broken, by custom",
+          "who": "qiyās al-manṣūṣ (Ibn Rajab), al-Qāḍī's Jāmiʿ: broken, by custom",
           "ruling": "whole"
         }
       ],
       "matches_madhhab": false,
-      "note": "Oath not to stand in this water, and it is running: not broken (Abū al-Khaṭṭāb), since running water is renewed; «وقياس المنصوص أنه يحنث … والأيمان مرجعها إلى العرف», Ibn Rajab's preference. No madhhab marked; the oath turns on custom, which the reading does not express.",
-      "needs": [
-        "rule:ayman_by_urf"
-      ]
+      "note": "Oath not to stand in this water, and it is running: not broken (Abū al-Khaṭṭāb), since running water is renewed; «وقياس المنصوص أنه يحنث … والأيمان مرجعها إلى العرف», Ibn Rajab's preference. No madhhab marked; the oath turns on custom, which the reading does not express. Round 5: al-Saʿdī's Q9 measures the oath's object by custom (oathBody), which counts the river as one; the reading now follows Ibn Rajab. No madhhab marked.",
+      "revisit": {
+        "from_class": "genuine_ikhtilaf",
+        "from_encoder": "running_water",
+        "closed_by": [
+          "rule:ayman_by_urf"
+        ]
+      }
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f001",

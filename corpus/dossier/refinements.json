@@ -635,6 +635,235 @@
     "fact:per_item_status"
    ],
    "iq": []
+  },
+  {
+   "conservative": null,
+   "iq": [
+    "IQ-21"
+   ],
+   "id": "hukm_against_own_ijtihad",
+   "title": "A ruling against the judge's own ijtihād stands unless a clear text contradicts it",
+   "terms": [
+    "zann_bayyin_khatauh",
+    "ghalabat_al_zann"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f009",
+    "note": "Ibn Abī Mūsā: he sins, and the ruling is not undone «إلا أن يكون مخالفا لنص صريح»."
+   },
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068",
+     "note": "Qāʿida 68: acting while doubting a condition of validity, under which Ibn Rajab places the case."
+    }
+   ],
+   "conditions": [
+    "a ruling in a disputed question",
+    "the judge believed the truth lay elsewhere",
+    "no clear text contradicts the ruling"
+   ],
+   "rationale": "This is IQ-21's adopted principle applied to the judge. The ruling is undone only by what shows it wrong decisively (a clear text), never by an ijtihād, his own included: «الاجتهاد لا ينقض بالاجتهاد». Al-Sāmirī's contrary view, that the ruling must agree with his belief, is kept as the other position.",
+   "lean": [
+    "Usul.Refinements.rulingUndone",
+    "Usul.Refinements.own_ijtihad_does_not_undo",
+    "Usul.Refinements.clear_text_undoes",
+    "Usul.Refinements.ijtihad_not_overturned_by_ijtihad"
+   ],
+   "closes": [
+    "rule:hukm_against_own_ijtihad"
+   ]
+  },
+  {
+   "conservative": null,
+   "iq": [],
+   "id": "ayman_by_urf",
+   "title": "An oath's object is measured by custom",
+   "terms": [
+    "urf"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003",
+    "note": "«وقياس المنصوص أنه يحنث، لا سيما والعرف يشهد له والأيمان مرجعها إلى العرف»."
+   },
+   "refs": [
+    {
+     "ref": "sadi.qawaid_jamia.archive_pdf1995.q009",
+     "note": "al-Saʿdī Q9: custom decides every ruling whose measure the Lawgiver did not define."
+    }
+   ],
+   "conditions": [
+    "the swearer's intention does not define the object",
+    "the law does not define it"
+   ],
+   "rationale": "What an oath names is not defined by the law, so by Q9 custom measures it (Usul.Kulliyyat.measure). Custom counts a running river as one body of water, so one who stands in it has stood in 'this water'. That is Ibn Rajab's qiyās al-manṣūṣ, against Abū al-Khaṭṭāb's per-jirya reading.",
+   "lean": [
+    "Usul.Refinements.oathBody",
+    "Usul.Refinements.oath_follows_custom",
+    "Usul.Kulliyyat.measure"
+   ],
+   "closes": [
+    "rule:ayman_by_urf"
+   ]
+  },
+  {
+   "conservative": null,
+   "iq": [],
+   "id": "khalt_as_shirka",
+   "title": "Fungibles mixed indistinguishably with their own kind are shared, not consumed",
+   "terms": [
+    "daman"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f003",
+    "note": "«المنصوص في رواية عبد الله وأبي الحارث أنه اشتراك واختاره ابن حامد والقاضي في خلافه»."
+   },
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f004",
+     "note": "The bequest of a raṭl of the oil stands on partnership and lapses on consumption."
+    }
+   ],
+   "conditions": [
+    "same kind",
+    "mixed so that neither part can be told apart"
+   ],
+   "rationale": "Qāʿida 22 asks whether what is lost in another is as non-existent. For a thing mixed with its own kind the manṣūṣ answers no: the owners become partners in the whole. Consumption (al-Mujarrad) is kept for other kinds (other_kind_is_consumed).",
+   "lean": [
+    "Usul.Refinements.mixedOutcome",
+    "Usul.Refinements.other_kind_is_consumed"
+   ],
+   "closes": [
+    "rule:khalt_as_shirka"
+   ]
+  },
+  {
+   "conservative": null,
+   "iq": [],
+   "id": "mixed_haram_by_proportion",
+   "title": "Lawful money mixed with unlawful: suspend when it is little, take out the share when it is much",
+   "terms": [
+    "haram",
+    "ihtiyat"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f007",
+    "note": "Aḥmad (al-Marrūdhī): three with one unlawful, suspend until known; thirty with one, take one out and use the rest."
+   },
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022",
+     "note": "Qāʿida 22: is what is lost in another as non-existent? The mixed dirhams are among its furūʿ."
+    }
+   ],
+   "conditions": [
+    "one's own money mixed with usurped money",
+    "the proportion is known"
+   ],
+   "rationale": "Aḥmad's ground is that taking out the share from much «يجحف بماله», while the little can be left without loss. Al-Qāḍī reads the suspension as recommendation and requires taking out the share in all; Ibn ʿAqīl in al-Funūn forbids the whole. Both are kept as positions.",
+   "lean": [
+    "Usul.Refinements.mixedHaram"
+   ],
+   "closes": [
+    "rule:mixed_haram_by_proportion"
+   ]
+  },
+  {
+   "conservative": null,
+   "iq": [],
+   "id": "rukhsa_needs_certainty",
+   "title": "A concession stands only when its permission is established",
+   "terms": [
+    "rukhsa",
+    "yaqin",
+    "shakk"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f001",
+    "note": "«لأن المسح رخصة ولم تتحقق إباحتها فلم يصح كمن قصر وهو يشك في جواز القصر»."
+   },
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068",
+     "note": "Qāʿida 68's first type: what needs a firm intention is not valid with doubt unless ghalabat al-ẓann or an aṣl supports it."
+    }
+   ],
+   "conditions": [
+    "the act is a concession",
+    "its permitting condition is in doubt"
+   ],
+   "rationale": "A concession is qāʿida 68's first type, a condition that needs a firm basis. Its aṣl is the ʿazīma, so no aṣl supports it (rukhsa_is_firm_condition). Al-Mughnī's view, that wuḍūʾ is valid with doubt in its cause, is the other position.",
+   "lean": [
+    "Usul.Refinements.rukhsaValid",
+    "Usul.Refinements.rukhsa_is_firm_condition",
+    "Usul.Refinements.validUnderDoubt"
+   ],
+   "closes": [
+    "rule:rukhsa_needs_certainty"
+   ]
+  },
+  {
+   "conservative": null,
+   "iq": [],
+   "id": "taliq_al_bay",
+   "title": "A sale conditioned on a fact both know to hold is as if unconditioned",
+   "terms": [
+    "shart",
+    "sahih"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f007",
+    "note": "al-Kāfī: «لأنه تعليق على شرط واقع يعلمانه فلا يؤثر ذكره في العقد»."
+   },
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068",
+     "note": "Qāʿida 68: acting while doubting a condition of validity, «هل يجعلها كالمعلقة على تحقيق ذلك الشرط»."
+    }
+   ],
+   "conditions": [
+    "the condition is a present fact",
+    "both parties know it holds"
+   ],
+   "rationale": "The bar on conditioned sale (al-Qāḍī, Ibn ʿAqīl) is against uncertainty in the contract. A condition both know to hold adds none, as with «بعتك هذه إن كانت جارية» and Aḥmad's naṣṣ on selling the absent thing «إن كان سالما».",
+   "lean": [
+    "Usul.Refinements.conditionedSaleValid"
+   ],
+   "closes": [
+    "rule:taliq_al_bay"
+   ]
+  },
+  {
+   "conservative": null,
+   "iq": [],
+   "id": "qisas_belongs_to_whom",
+   "title": "Pardoning qiṣāṣ for the spread turns on whose right qiṣāṣ is",
+   "terms": [
+    "sabab"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f004",
+    "note": "Majd al-Dīn builds it «على أن القصاص هل يجب للميت أو لورثته»; «وجزم القاضي وغيره بأنه لا يصح العفو ههنا»."
+   },
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065",
+     "note": "Qāʿida 65: one who disposed of what he thought not his."
+    }
+   ],
+   "conditions": [
+    "the wound itself is not retaliable",
+    "he pardoned qiṣāṣ and its spread",
+    "the spread reached the life"
+   ],
+   "rationale": "If qiṣāṣ for the life is the heirs', the victim pardoned a right he did not know to be his to pardon. That is qāʿida 65's unknown condition (heirs_right_is_q65), so the pardon is void, as al-Qāḍī and others hold.",
+   "lean": [
+    "Usul.Refinements.pardonOfSpreadValid",
+    "Usul.Refinements.heirs_right_is_q65",
+    "Usul.Refinements.countsAsMet"
+   ],
+   "closes": [
+    "rule:qisas_belongs_to_whom"
+   ]
   }
  ]
 }

@@ -498,4 +498,86 @@ def takerRecourse (enteredOnLiability : Bool) : Bool := !enteredOnLiability
 
 theorem undertaken_settles : takerRecourse true = false := rfl
 
+/-! ## Round 5: the open gaps' own principles, after M8 tranches 1–3 -/
+
+/-! ### A ruling against the judge's own ijtihād (Ibn Rajab 68.f009)
+
+«لو حكم حاكم في مسألة مختلف فيها بما يرى أن الحق في غيره أثم وعصى بذلك ولم ينقض حكمه إلا أن
+يكون مخالفا لنص صريح» (Ibn Abī Mūsā). -/
+
+/-- Undone only when a clear text shows it wrong: IQ-21's `zannSetAside`, the text being decisive
+and the judge's own contrary view an ijtihād. -/
+def rulingUndone (contradictsNass : Bool) : Bool :=
+  zannSetAside (if contradictsNass then .qat else .zann) false
+
+theorem own_ijtihad_does_not_undo : rulingUndone false = false := ijtihad_not_overturned_by_ijtihad false
+theorem clear_text_undoes : rulingUndone true = true := evident_error_sets_aside
+
+/-! ### Oaths read by custom (Ibn Rajab 1.f003; al-Saʿdī Q9)
+
+«والأيمان مرجعها إلى العرف»: what the oath names, the law not defining it, is measured by custom
+(Q9, `Usul.Kulliyyat.measure`). Custom counts the running river as one body of water. -/
+
+def oathBody (customOneBody : Bool) : Body :=
+  Usul.Kulliyyat.measure none (if customOneBody then .whole else .perJirya)
+
+theorem oath_follows_custom (c : Bool) :
+    oathBody c = if c then .whole else .perJirya := Usul.Kulliyyat.q09_custom_decides _
+
+/-! ### Fungibles mixed with their own kind (Ibn Rajab 22.f003–f004)
+
+«لو خلط زيته بزيت غيره على وجه لا يتميز … المنصوص في رواية عبد الله وأبي الحارث أنه اشتراك». -/
+
+inductive Mixed where
+  | shared | consumed
+  deriving DecidableEq, Repr
+
+/-- Shared when mixed indistinguishably with its own kind; otherwise qāʿida 22's consumption. -/
+def mixedOutcome (sameKind indistinct : Bool) : Mixed :=
+  if sameKind && indistinct then .shared else .consumed
+
+theorem other_kind_is_consumed (i : Bool) : mixedOutcome false i = .consumed := rfl
+
+/-! ### Lawful wealth mixed with unlawful (Ibn Rajab 22.f007)
+
+Aḥmad (al-Marrūdhī): «إن كانت الدراهم قليلة كثلاثة فيها درهم حرام وجب التوقف عنها حتى يعلم وإن
+كانت كثيرة كثلاثين فيها درهم حرام فإنه يخرج منها درهما ويتصرف في الباقي», since taking out the
+much «يجحف بماله». -/
+
+inductive MixedHaram where
+  | suspend | takeOut
+  deriving DecidableEq, Repr
+
+def mixedHaram (lawfulMany : Bool) : MixedHaram := if lawfulMany then .takeOut else .suspend
+
+/-! ### A concession under doubt (Ibn Rajab 68.f001)
+
+«لأن المسح رخصة ولم تتحقق إباحتها فلم يصح كمن قصر وهو يشك في جواز القصر». -/
+
+/-- A concession stands only when its permission is established. -/
+def rukhsaValid (rukhsa permissionEstablished : Bool) : Bool := !rukhsa || permissionEstablished
+
+/-- A concession is qāʿida 68's first type: a condition that needs a firm basis, with no aṣl to
+lean on (the aṣl is the ʿazīma). -/
+theorem rukhsa_is_firm_condition (r p : Bool) : rukhsaValid r p = validUnderDoubt r p false := by
+  cases r <;> cases p <;> rfl
+
+/-! ### A sale conditioned on a known fact (Ibn Rajab 68.f007)
+
+al-Kāfī: «لأنه تعليق على شرط واقع يعلمانه فلا يؤثر ذكره في العقد», with Aḥmad's naṣṣ (Ibn Manṣūr)
+on selling the absent thing «إن كان سالما». -/
+
+def conditionedSaleValid (conditional knownToHold : Bool) : Bool := !conditional || knownToHold
+
+/-! ### Pardoning qiṣāṣ before the spread (Ibn Rajab 65.f004)
+
+Majd al-Dīn builds it «على أن القصاص هل يجب للميت أو لورثته»; «وجزم القاضي وغيره بأنه لا يصح العفو
+ههنا». -/
+
+def pardonOfSpreadValid (rightIsVictims : Bool) : Bool := rightIsVictims
+
+/-- If the right to qiṣāṣ for the life is the heirs', he pardoned what he did not know to be his to
+pardon: qāʿida 65's unknown condition. -/
+theorem heirs_right_is_q65 : pardonOfSpreadValid false = countsAsMet false false := rfl
+
 end Usul.Refinements

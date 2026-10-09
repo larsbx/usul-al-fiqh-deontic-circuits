@@ -220,6 +220,26 @@ import Usul
 #guard (Usul.Refinements.handLiable true) == true
 #guard (Usul.Refinements.takerRecourse false) == true
 #guard (Usul.Refinements.takerRecourse true) == false
+#guard (Usul.Refinements.rulingUndone false) == false
+#guard (Usul.Refinements.rulingUndone true) == true
+#guard (Usul.Refinements.oathBody false) == .perJirya
+#guard (Usul.Refinements.oathBody true) == .whole
+#guard (Usul.Refinements.mixedOutcome false false) == .consumed
+#guard (Usul.Refinements.mixedOutcome false true) == .consumed
+#guard (Usul.Refinements.mixedOutcome true false) == .consumed
+#guard (Usul.Refinements.mixedOutcome true true) == .shared
+#guard (Usul.Refinements.mixedHaram false) == .suspend
+#guard (Usul.Refinements.mixedHaram true) == .takeOut
+#guard (Usul.Refinements.rukhsaValid false false) == true
+#guard (Usul.Refinements.rukhsaValid false true) == true
+#guard (Usul.Refinements.rukhsaValid true false) == false
+#guard (Usul.Refinements.rukhsaValid true true) == true
+#guard (Usul.Refinements.conditionedSaleValid false false) == true
+#guard (Usul.Refinements.conditionedSaleValid false true) == true
+#guard (Usul.Refinements.conditionedSaleValid true false) == false
+#guard (Usul.Refinements.conditionedSaleValid true true) == true
+#guard (Usul.Refinements.pardonOfSpreadValid false) == false
+#guard (Usul.Refinements.pardonOfSpreadValid true) == true
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 #guard (Usul.Dalala.coversBeyondSabab true true false) == true

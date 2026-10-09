@@ -226,6 +226,23 @@ Results on the tranche:
   - **Qāʿidas 66 and 65 are each other's complement:** the act stands when he relied on a basis he believed (66), and fails when he believed the basis absent (65).
 - **Segmentation finding:** in qāʿida 93 the ninth and tenth hands begin mid-line («بخلاف ما على الشجر (اليد التاسعة)»), so they stay inside 93.f008. Both agree with the reading, as its note records.
 
+**Round 5: the bank applied to its own gaps, after tranches 1–3.** Of the 14 open gaps, 8 close, each by the principle the case itself names. Every closure is cited in the [dossier](dossier.md) and is a new reading beside the old one (`revisit.from_encoder`), so no earlier result changes:
+
+| Case | Was | Closed by | Ground |
+|---|---|---|---|
+| 68.f009 | missing rule | `rulingUndone`: undone only by a clear text | IQ-21's adopted principle, `ijtihad_not_overturned_by_ijtihad` (Ibn Abī Mūsā) |
+| 1.f003 | ikhtilāf, needs ʿurf | `oathBody`: the oath's object measured by custom | al-Saʿdī Q9 (`Kulliyyat.measure`); «والأيمان مرجعها إلى العرف» |
+| 22.f003, 22.f004 | ikhtilāf, minority side | `mixedOutcome`: same kind, indistinct, means shared | the manṣūṣ «أنه اشتراك» |
+| 22.f007 | missing rule | `mixedHaram`: few, suspend; many, take out the share | Aḥmad's naṣṣ (al-Marrūdhī) |
+| 68.f001 | missing fact | `rukhsaValid`: a concession needs its permission established | `rukhsa_is_firm_condition`: qāʿida 68's first type |
+| 68.f007 | ikhtilāf, needs taʿlīq | `conditionedSaleValid`: a condition both know to hold adds nothing | al-Kāfī, with Aḥmad's naṣṣ on the absent sale |
+| 65.f004 | missing rule | `pardonOfSpreadValid`: void if the right is the heirs' | `heirs_right_is_q65`; al-Qāḍī's jazm |
+
+Four of the eight now land on the madhhab side (22.f003, 22.f004, 22.f007, 65.f004). The other four are disputes with no madhhab marked; the reading follows Ibn Rajab in 1.f003. Six gaps stay open:
+- the four command gaps of Ibn al-Laḥḥām 43, which are uṣūl proper and wait for M5's schemata;
+- 52.f007, which has no transmitted ruling;
+- 22.f000, which bundles a case agreed «بغير خلاف» (much water) with a disputed one (little water) in a single record.
+
 **Coverage trend:**
 
 | Stage | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
@@ -240,5 +257,6 @@ Results on the tranche:
 | All, after tranche 2 | 274 | 0.963 | 0.630 | 0 | 13 |
 | M8 tranche 3 alone | 21 | 1.000 | 0.810 | 0 | 1 |
 | All, after tranche 3 | 295 | 0.966 | 0.643 | 0 | 14 |
+| All, after round 5 (the bank applied to its gaps) | 295 | 0.980 | 0.656 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
