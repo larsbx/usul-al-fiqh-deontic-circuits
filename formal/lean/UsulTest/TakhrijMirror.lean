@@ -308,6 +308,24 @@ import Usul
 #guard (Usul.Refinements.eachOnItsAsl true) == true
 #guard (Usul.Refinements.settlesInDhimma false) == true
 #guard (Usul.Refinements.settlesInDhimma true) == false
+#guard (Usul.Refinements.leaseDissolves false) == true
+#guard (Usul.Refinements.leaseDissolves true) == false
+#guard (Usul.Refinements.returnAtOnce false false) == true
+#guard (Usul.Refinements.returnAtOnce false true) == true
+#guard (Usul.Refinements.returnAtOnce true false) == false
+#guard (Usul.Refinements.returnAtOnce true true) == true
+#guard (Usul.Refinements.holderLiable false) == false
+#guard (Usul.Refinements.holderLiable true) == true
+#guard (Usul.Refinements.voidConcluded false false) == false
+#guard (Usul.Refinements.voidConcluded false true) == false
+#guard (Usul.Refinements.voidConcluded true false) == false
+#guard (Usul.Refinements.voidConcluded true true) == true
+#guard (Usul.Refinements.bindsWithoutQabd false) == true
+#guard (Usul.Refinements.bindsWithoutQabd true) == false
+#guard (Usul.Refinements.ownedBeforePayment false) == false
+#guard (Usul.Refinements.ownedBeforePayment true) == true
+#guard (Usul.Refinements.inNewOwnersDaman false) == false
+#guard (Usul.Refinements.inNewOwnersDaman true) == true
 #guard (Usul.Refinements.excessObligatoryIn false false false) == false
 #guard (Usul.Refinements.excessObligatoryIn false false true) == true
 #guard (Usul.Refinements.excessObligatoryIn false true false) == true

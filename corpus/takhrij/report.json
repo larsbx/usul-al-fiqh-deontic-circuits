@@ -1,17 +1,17 @@
 {
- "total": 426,
+ "total": 442,
  "classes": {
-  "derivable": 177,
-  "genuine_ikhtilaf": 242,
-  "missing_fact": 1,
+  "derivable": 189,
+  "genuine_ikhtilaf": 245,
+  "missing_fact": 2,
   "missing_rule": 5,
   "segmentation_error": 1
  },
- "coverage": 0.986,
- "madhhab_coverage": 0.68,
+ "coverage": 0.984,
+ "madhhab_coverage": 0.687,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 112,
- "gaps_open": 6,
+ "ikhtilaf_matching_madhhab": 114,
+ "gaps_open": 7,
  "revisited": 37,
  "revisit_queue": [],
  "per_encoder": {
@@ -241,6 +241,31 @@
   },
   "settles_without_ability": {
    "genuine_ikhtilaf": 5
+  },
+  "lease_after_authority": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "return_of_held_property": {
+   "derivable": 3
+  },
+  "continued_holding": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1,
+   "missing_fact": 1
+  },
+  "void_contract_concluded": {
+   "derivable": 2
+  },
+  "qabd_in_contracts": {
+   "derivable": 2
+  },
+  "forced_acquisition": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "daman_without_qabd": {
+   "derivable": 2
   },
   "excess_in_following": {
    "genuine_ikhtilaf": 4

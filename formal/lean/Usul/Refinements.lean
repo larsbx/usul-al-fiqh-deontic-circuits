@@ -886,6 +886,39 @@ def eachOnItsAsl (separateMatters : Bool) : Bool := separateMatters
 
 def settlesInDhimma (makingUp : Bool) : Bool := !makingUp
 
+/-! ## M8 tranche 9: qawāʿid 36, 42, 43, 46, 49, 50, 51 -/
+
+/-- Qāʿida 36: a lease by one whose authority ends dissolves unless the new holder succeeds the
+lessor in what is his («فلا اعتراض له على عقوده بل هو منفذ لها»): the ward who comes of age, the heir,
+the buyer; it dissolves for the conqueror and for the next waqf tier, who take from the wāqif. -/
+def leaseDissolves (succeedsLessor : Bool) : Bool := !succeedsLessor
+
+/-- Qāʿida 42: a property held for another must be returned at once where the owner did not
+consent to its holding, or where it is guaranteed («فتجب المبادرة إلى الرد بكل حال»); a trust held
+by consent waits for the demand. -/
+def returnAtOnce (heldByConsent guaranteed : Bool) : Bool := !heldByConsent || guaranteed
+
+/-- Qāʿida 43: continued holding without permission makes liable only one who withholds it
+(«فإن كان ممتنعا من تسليمه فهو غاصب»; «لتعديه بترك الرد مع إمكانه»). -/
+def holderLiable (withholds : Bool) : Bool := withholds
+
+/-- Qāʿida 46: a void contract is concluded only where it binds and cannot be left by word
+(iḥrām) or carries a pervasive effect (nikāḥ, kitāba); a void sale or lease «فالمعروف من المذهب
+أنه غير منعقد». -/
+def voidConcluded (binding pervasive : Bool) : Bool := binding && pervasive
+
+/-- Qāʿida 49: a contract binds without qabḍ unless qabḍ is part of its completion (salam,
+ribawī exchange). -/
+def bindsWithoutQabd (qabdCompletes : Bool) : Bool := !qabdCompletes
+
+/-- Qāʿida 50: a forced acquisition is owned before the price is paid only under necessity
+(«لأن ضرره لا يندفع إلا بذلك»); otherwise «والضرر لا يزال بالضرر». -/
+def ownedBeforePayment (necessity : Bool) : Bool := necessity
+
+/-- Qāʿida 51: what is determined enters the new owner's ḍamān without transport, the bond of
+the former owner cut («وقد انقطعت علق البائع منه»); the undetermined needs qabḍ. -/
+def inNewOwnersDaman (determined : Bool) : Bool := determined
+
 /-! ## Reconciliation refinements (`corpus/reconciliation/ledger.json`)
 
 Each is a jamʿ: a farq the later works cite, conservative over the earlier reading where the farq
