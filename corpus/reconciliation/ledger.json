@@ -682,7 +682,33 @@
         "nass"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p229",
+          "excerpt_ar": "ينام فيه هو وغيره، وكانا من أهل الاحتلام على الصحيح من المذهب، وعنه يجب.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Al-Mardāwī rules that the ghusl is not obligatory when semen is seen in a garment that he and another, both of an age to have wet dreams, sleep in. He calls this al-ṣaḥīḥ min al-madhhab (\"lā yajibu al-ghuslu idhā raʾā maniyyan fī thawb\" ends the previous line), with a riwāya that it is obligatory, so position 1 (neither)."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v01:p255",
+          "excerpt_ar": "ولا يجب بحلم بلا بلل، ولا بمني في ثوب ينام فيه اثنان عن الأصح فيهما",
+          "position": 1,
+          "grade": "tashih",
+          "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
+          "note": "Al-Furūʿ: the ghusl is not obligatory for semen in a garment two people sleep in, \"ʿalā al-aṣaḥḥ\"."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p080",
+          "excerpt_ar": "إذا كان الثوب لا ينام فيه غيره ممن يحتلم. فإن كان كذلك فلا غسل على واحد",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā states decisively that if another person of wet-dream age sleeps in the garment, neither of them owes a ghusl, though neither may follow the other in prayer or stand alone in a row with him."
+        }
+      ]
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f001",
@@ -700,7 +726,49 @@
       ],
       "jam": null,
       "naskh": null,
-      "note": "al-Qāḍī in al-Jāmiʿ calls the lot qiyās al-madhhab; Taqī al-Dīn reads Aḥmad's words (Ṣāliḥ) as pointing to both falling; abstention is by Aḥmad's naṣṣ (ʿAbd Allāh)."
+      "note": "al-Qāḍī in al-Jāmiʿ calls the lot qiyās al-madhhab; Taqī al-Dīn reads Aḥmad's words (Ṣāliḥ) as pointing to both falling; abstention is by Aḥmad's naṣṣ (ʿAbd Allāh).",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p145",
+          "excerpt_ar": "أحدهما خطأ الآخر، في أصح الوجهين فيهما، نقل ابن القاسم \" فليتقيا الشبهة",
+          "position": 3,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Al-Inṣāf (fāʾida under the raven case) says neither wife is divorced but intercourse is forbidden to both men unless one believes the other is wrong, \"fī aṣaḥḥ al-wajhayn fīhimā\". The preceding line reads \"lam taṭluqā, wa-yaḥrumu ʿalayhimā al-waṭʾ, illā maʿa iʿtiqād\", which is the abstention view of Aḥmad's naṣṣ (Ibn al-Qāsim: \"fa-l-yattaqiyā al-shubha\")."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p130",
+          "excerpt_ar": "الوطء إلا مع اعتقاد أحدهما خطأ الآخر، في الأصح فيهما، نقل ابن القاسم",
+          "position": 3,
+          "grade": "tashih",
+          "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
+          "note": "Al-Furūʿ rules that intercourse is forbidden to both unless one believes the other is wrong, \"fī al-aṣaḥḥ fīhimā\", while the marriages remain."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p333",
+          "excerpt_ar": "ولم يعلما لم تطلقا ولم تعتقا ويحرم عليهما الوطء إلا مع اعتقاد أحدهما خطأ",
+          "position": 3,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The Muntahā states decisively that neither wife is divorced but intercourse is forbidden to both unless one believes the other wrong, so each abstains."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p144",
+          "excerpt_ar": "الطائر غرابا أم غيره (لم تطلقا) أي زوجتاهما (ولم تعتقا) أي أمتاهما ; لأن",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā rules that neither wife is divorced, since the one who broke his oath is unknown and each one's certainty of marriage remains, with maintenance still owed."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p145",
+          "excerpt_ar": "والشيخ تقي الدين - رحمه الله - وقوع الطلاق، وجزم به في الروضة، فيقرع،",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Al-Inṣāf adds al-Ḥulwānī, his son (al-Tabṣira), Taqī al-Dīn and al-Rawḍa to the holders of \"divorce falls, so lots are drawn\". Al-Qāḍī called this the manṣūṣ."
+        }
+      ]
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f002",
@@ -711,7 +779,41 @@
       ],
       "jam": null,
       "naskh": null,
-      "note": "«وقياس المنصوص ههنا أن يكف كل واحد عن وطء أمته»."
+      "note": "«وقياس المنصوص ههنا أن يكف كل واحد عن وطء أمته».",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p333",
+          "excerpt_ar": "ولم يعلما لم تطلقا ولم تعتقا ويحرم عليهما الوطء إلا مع اعتقاد أحدهما خطأ",
+          "position": 2,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The Muntahā rules that neither slave-woman is freed but intercourse with them is forbidden to both owners unless one believes the other is wrong, which is the qiyās al-manṣūṣ that each abstains."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p064",
+          "excerpt_ar": "يعلماه لم تعتقا ولم تطلق وحرم عليها الوطء إلا مع اعتقاد أحدهما خطأ الآخر",
+          "position": 2,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ likewise says the slave-women are not freed and intercourse is forbidden unless one believes the other is wrong."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p338",
+          "excerpt_ar": "تعتقا) أي الأمتان (ولم تطلقا) أي المرأتان، لأن الحانث منهما ليس معلوما",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf explains that the two slave-women are not freed because the one who broke his oath is unknown, and no ruling falls on either man individually."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p129",
+          "excerpt_ar": "حر، ولم يعلماه، فلا عتق، فإن اشترى أحدهما عبد الآخر فقيل: يعتق أحدهما",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
+          "note": "Al-Furūʿ states for the parallel case of two slaves that no manumission takes place while it remains unknown."
+        }
+      ]
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f004",
@@ -1295,7 +1397,41 @@
       ],
       "jam": null,
       "naskh": null,
-      "note": "Majd reports the ẓāhir of Aḥmad's words (Ṣāliḥ)."
+      "note": "Majd reports the ẓāhir of Aḥmad's words (Ṣāliḥ).",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p305",
+          "excerpt_ar": "النظر. ولو طرده في الحضر لكان قد أجاد وأصاب. قلت: وهو المذهب، وهو مخالف",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On the traveller who reaches water as the time runs short, al-Mardāwī reports al-Mughnī and al-Sharḥ (wuḍūʾ after the time) against al-Muḥarrar, the Ḥāwīs, al-Majd and Ibn ʿUbaydān (tayammum), then says \"qultu: wa-huwa al-madhhab\" of the tayammum view."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v01:p292",
+          "excerpt_ar": "هذا النظر. ولو طرده في الحضر لكان قد أجاد وأصاب، قلت وهو الصواب، وكذا",
+          "position": 1,
+          "grade": "tashih",
+          "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
+          "note": "In Taṣḥīḥ al-Furūʿ al-Mardāwī corrects al-Furūʿ's unweighted iṭlāq in favour of tayammum: \"qultu: wa-huwa al-ṣawāb\"."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p057",
+          "excerpt_ar": "إذا وصل مسافر إلى ماء وقد ضاق الوقت أو علم أن النوبة لا تصل إليه إلا بعد",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ makes this case the exception to \"tayammum is not valid for fear of missing a prescribed prayer\", so the traveller does tayammum."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p095",
+          "excerpt_ar": "(و) إلا فيما (إذا وصل مسافر إلى ماء وقد ضاق الوقت) عن طهارته (أو) لم",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā (with the Muntahā) likewise exempts the traveller who reaches water as the time runs short: he does tayammum, being unable to use the water within the time."
+        }
+      ]
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f005",
@@ -1308,7 +1444,49 @@
       ],
       "jam": null,
       "naskh": null,
-      "note": "Two riwāyas; «أظهر» is Ibn Rajab's."
+      "note": "Two riwāyas; «أظهر» is Ibn Rajab's.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p408",
+          "excerpt_ar": "وتخلية الطريق: من شرائط الوجوب، وهو الصحيح من المذهب على ما يأتي في",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Al-Mardāwī says the riwāya that the possibility of travel and a safe road are conditions of wujūb, not merely of performance, is al-ṣaḥīḥ min al-madhhab. So if he dies before they exist, nothing settles in his dhimma."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v05:p240",
+          "excerpt_ar": "شرائط الوجوب, وهو الصحيح, جزم به في الهداية والمذهب ومسبوك الذهب",
+          "position": 1,
+          "grade": "tashih",
+          "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
+          "note": "In Taṣḥīḥ al-Furūʿ al-Mardāwī calls the conditions-of-wujūb riwāya \"al-ṣaḥīḥ\", held decisively in al-Hidāya, al-Madhhab and Masbūk al-dhahab."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p342",
+          "excerpt_ar": "لأدائه وأمن الطريق بألا يكون فيه مانع من خوف ولا غيره من شرائط الوجوب:",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ puts the time's sufficiency for travel (\"imkān al-masīr\") and a safe road among the conditions of wujūb, and gives the conditions-of-performance view only as \"wa-ʿanhu\"."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p518",
+          "excerpt_ar": "فلو شرع من وقت وجوبه فمات في الطريق بينا عدم وجوبه ; لعدم وجود",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā, which counts the time's sufficiency and a safe road as part of istiṭāʿa, rules that one who sets out and dies on the way is shown never to have owed it."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p407",
+          "excerpt_ar": "الأداء، وهو إحدى الروايتين، وعليه أكثر الأصحاب، وجزم به في الوجيز، وهو",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "For the other side, al-Inṣāf says al-Muqniʿ's view (conditions only of performance, so it settles in the dhimma) is held by most aṣḥāb, as al-Majd says, and is decisive in al-Wajīz."
+        }
+      ]
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f000",

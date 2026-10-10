@@ -377,7 +377,9 @@ Results on the tranche:
   - **Qāʿida 4 is wholly derivable.**
   - **Qāʿida 11 has a carve-out for zakāt.** A voluntary ṣadaqa is valid before an immediate zakāt («فقال الأصحاب يصح»), so the narrowness test belongs to pure acts of worship of one kind.
   - **Qāʿida 14's raven oaths repeat Ibn Rajab's qāʿida 160 under another name.** There Aḥmad's naṣṣ of abstention outranks every wajh.
-- **Reconciliation:** the 6 new apparent contradictions entered the ledger, with their later taṣḥīḥ imported as before.
+- **Reconciliation:** the 6 new apparent contradictions entered the ledger, with their later taṣḥīḥ imported as before. Five are residues against the reading, and none of them has a cited farq for a jamʿ:
+  - On qāʿida 14 the later madhhab binds neither man in all three furūʿ. Where a wife or a slave-woman is at stake, both abstain («حرم الوطء عليهما»). The madhhab thus overrides Ibn Rajab's own «لا ضرر فيه» even for purification.
+  - On qāʿida 19, al-Mardāwī's taṣḥīḥ and the muʿtamad give tayammum to the traveller as the time runs out (19.f001), and make ability a condition of the ḥajj's wujūb (19.f005).
 
 **Coverage trend:**
 
