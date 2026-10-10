@@ -268,6 +268,16 @@ import Usul
 #guard (Usul.Refinements.uncertainExceptionValid true) == true
 #guard (Usul.Refinements.manumissionReachesBenefits false) == true
 #guard (Usul.Refinements.manumissionReachesBenefits true) == false
+#guard (Usul.Refinements.priorContractDissolves false) == false
+#guard (Usul.Refinements.priorContractDissolves true) == true
+#guard (Usul.Refinements.laterContractGoverns false) == false
+#guard (Usul.Refinements.laterContractGoverns true) == true
+#guard (Usul.Refinements.asKinayaValid false) == false
+#guard (Usul.Refinements.asKinayaValid true) == true
+#guard (Usul.Refinements.kinayaConcludes false) == true
+#guard (Usul.Refinements.kinayaConcludes true) == false
+#guard (Usul.Refinements.rightPassesToSubstitute false) == false
+#guard (Usul.Refinements.rightPassesToSubstitute true) == true
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 #guard (Usul.Dalala.coversBeyondSabab true true false) == true

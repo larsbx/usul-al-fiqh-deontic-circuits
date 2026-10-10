@@ -269,6 +269,26 @@ ENCODERS: dict[str, dict] = {
         sadi=[], qawaid=[RAJAB.format(34)], facts={"binding_contract": B},
         out=B, lean="Usul.Refinements.manumissionReachesBenefits {binding_contract}",
         py=lambda f: not f["binding_contract"]),
+    "benefit_then_thing": dict(
+        sadi=[], qawaid=[RAJAB.format(35)], facts={"perpetual_commutative": B},
+        out=B, lean="Usul.Refinements.priorContractDissolves {perpetual_commutative}",
+        py=lambda f: f["perpetual_commutative"]),
+    "successive_contracts": dict(
+        sadi=[], qawaid=[RAJAB.format(37)], facts={"successive": B},
+        out=B, lean="Usul.Refinements.laterContractGoverns {successive}",
+        py=lambda f: f["successive"]),
+    "words_out_of_nature": dict(
+        sadi=[], qawaid=[RAJAB.format(38)], facts={"other_contract_possible": B},
+        out=B, lean="Usul.Refinements.asKinayaValid {other_contract_possible}",
+        py=lambda f: f["other_contract_possible"]),
+    "contract_by_kinaya": dict(
+        sadi=[], qawaid=[RAJAB.format(39)], facts={"needs_witnessing": B},
+        out=B, lean="Usul.Refinements.kinayaConcludes {needs_witnessing}",
+        py=lambda f: not f["needs_witnessing"]),
+    "right_to_substitute": dict(
+        sadi=[], qawaid=[RAJAB.format(41)], facts={"bound_to_thing": B},
+        out=B, lean="Usul.Refinements.rightPassesToSubstitute {bound_to_thing}",
+        py=lambda f: f["bound_to_thing"]),
     "umum_lafz": dict(
         sadi=[], qawaid=[LAHHAM.format(61)], facts={"in_occasion": B, "general_wording": B},
         out=B, lean="Usul.Dalala.coversBeyondSabab true {in_occasion} {general_wording}",

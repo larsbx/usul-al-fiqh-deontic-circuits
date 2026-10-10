@@ -730,4 +730,47 @@ def manumissionReachesBenefits (bindingContract : Bool) : Bool := !bindingContra
 theorem binding_is_implicit_exception (b : Bool) :
     manumissionReachesBenefits b = !uncertainExceptionValid b := rfl
 
+/-! ## M8 tranche 6 -/
+
+/-! ### Qāʿida 35: owning the benefit by contract, then the thing
+
+A perpetual commutative contract (nikāḥ) dissolves on owning the person; a lease does not, «لا
+ينفسخ وهو الصحيح وهو اختيار القاضي وابن عقيل والأكثرين». -/
+
+def priorContractDissolves (perpetualCommutative : Bool) : Bool := perpetualCommutative
+
+/-! ### Qāʿida 37: successive contracts on one thing
+
+«في توارد العقود المختلفة بعضها على بعض، وتداخل أحكامها»: the later contract's ruling governs the
+hand (the pledge used becomes a loan, the pledge on usurped goods clears the usurper). -/
+
+def laterContractGoverns (successive : Bool) : Bool := successive
+
+/-! ### Qāʿida 38: contract words joined with what takes them out of their nature
+
+«فهل يفسد العقد بذلك أو يجعل كناية عما يمكن صحته على ذلك الوجه؟ … يلتفت إلى أن المغلب هل هو اللفظ
+أو المعنى». The reading takes the meaning. -/
+
+def asKinayaValid (otherContractPossible : Bool) : Bool := otherContractPossible
+
+/-! ### Qāʿida 39: contracts by allusion
+
+Kināyāt conclude «سائر العقود سوى النكاح لاشتراط الشهادة عليه وهي لا تقع على النية» (Abū al-Khaṭṭāb,
+al-Mughnī, «وكلام كثير من الأصحاب يدل عليه»), against al-Qāḍī's restriction to divorce and
+manumission. -/
+
+def kinayaConcludes (needsWitnessing : Bool) : Bool := !needsWitnessing
+
+theorem witnessed_needs_explicit : kinayaConcludes true = false := rfl
+
+/-! ### Qāʿida 41: a bound right and the destroyed thing's substitute
+
+«إذا تعلق بعين حق تعلقا لازما فأتلفها من يلزمه الضمان فهل يعود الحق إلى البدل المأخوذ من غير عقد
+آخر؟ فيه خلاف». The reading: the right passes to the substitute. -/
+
+def rightPassesToSubstitute (boundToThing : Bool) : Bool := boundToThing
+
+/-- As with transfer (qāʿida 24): a right on the property itself follows it. -/
+theorem substitute_as_transfer : rightPassesToSubstitute true = rightSurvivesTransfer true false := rfl
+
 end Usul.Refinements
