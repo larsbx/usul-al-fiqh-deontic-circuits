@@ -126,7 +126,7 @@ Tranche 7 added 12 contradictions, and its later taṣḥīḥ gave four more ja
 | `advancedSufficesIn` (qāʿida 5) | «الاعتبار في الكفارات بحالة الوجوب» | 5.f001 |
 | `otherTongueValidIn` (qāʿida 10) | «لأن النكاح غير واجب بأصل الشرع فلم يجب تعلم» | 10.f004, f005 |
 
-Over 140 entries this gives 15 jamʿ, 117 tarjīḥ (58 residues) and 8 tawaqquf.
+Over 140 entries and 347 evidence items (the first pass's 321 plus tranche 7's 26), this gives 15 jamʿ, 117 tarjīḥ (58 residues) and 8 tawaqquf. In 10.f002 the later works split by the dhikr's status, so only the evidence on the obligatory takbīr, the farʿ's leading example, is graded.
 
 **Left as residues, for want of a cited farq:**
 

@@ -523,24 +523,9 @@
           "grade": "jazm",
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf/Iqnāʿ rule that every obligatory dhikr, including the tasbīḥ of rukūʿ and sujūd, is like takbīrat al-iḥrām, which the one unable says in his tongue."
-        },
-        {
-          "ref": "src:openiti-insaf-shamela21609/v02:p043",
-          "excerpt_ar": "يأتي به بلغته، وأما المستحب: فلا يترجم عنه، فإن فعل بطلت صلاته نص عليه،",
-          "position": 1,
-          "grade": "nass",
-          "who": "al-Mardāwī, al-Inṣāf",
-          "note": "For a supererogatory dhikr or duʿāʾ, Aḥmad's naṣṣ is that it is not translated and the prayer is void if it is, so for that class it lapses (position 1); a \"qīla\" allows it in his tongue."
-        },
-        {
-          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p331",
-          "excerpt_ar": "إليه (فإن فعل) أي: ترجم عن الذكر المستحب (بطلت) صلاته لأنه كلام أجنبي",
-          "position": 1,
-          "grade": "jazm",
-          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
-          "note": "Kashshāf/Iqnāʿ rule decisively that a recommended dhikr is not translated even when unable, and translating it voids the prayer as foreign speech."
         }
-      ]
+      ],
+      "note": "Annotated for its leading example, the takbīr, an obligatory dhikr. The later works rule the recommended dhikr and duʿāʾ separately (not translated, by Aḥmad's naṣṣ), which is a different fact, so that evidence is not graded here."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f004",
