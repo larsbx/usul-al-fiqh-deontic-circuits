@@ -124,3 +124,60 @@ import Usul
 -- F41: daif
 #guard Usul.Furuq.Grade.apart .daif == false
 #guard Usul.Furuq.Grade.madhhab .daif == true
+-- F42: daif
+#guard Usul.Furuq.Grade.apart .daif == false
+#guard Usul.Furuq.Grade.madhhab .daif == true
+-- F43: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F44: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F45: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F46: daif
+#guard Usul.Furuq.Grade.apart .daif == false
+#guard Usul.Furuq.Grade.madhhab .daif == true
+-- F47: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F48: daif
+#guard Usul.Furuq.Grade.apart .daif == false
+#guard Usul.Furuq.Grade.madhhab .daif == true
+-- F49: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F50: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F51: daif
+#guard Usul.Furuq.Grade.apart .daif == false
+#guard Usul.Furuq.Grade.madhhab .daif == true
+-- F52: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F53: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F54: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F55: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F56: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F57: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F58: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F59: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F60: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true

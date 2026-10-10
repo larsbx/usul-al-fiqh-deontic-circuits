@@ -56,7 +56,7 @@ def test_lean_is_checked_and_complete():
 
 def test_tally_is_pinned():
     from collections import Counter
-    assert Counter(i["grade"] for i in ITEMS) == {"sahih": 14, "daif": 22, "jamDaif": 5}
+    assert Counter(i["grade"] for i in ITEMS) == {"sahih": 29, "daif": 26, "jamDaif": 5}
 
 
 def test_table_lean_is_generated():
