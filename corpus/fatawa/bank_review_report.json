@@ -1,0 +1,88 @@
+{
+  "labelled": 14359,
+  "class": {
+    "confirmed": 7956,
+    "consistent": 4617,
+    "rejected": 5,
+    "misread": 1766,
+    "ikhtilaf": 1,
+    "conflict": 12,
+    "no_reading": 2
+  },
+  "class_by_hukm": {
+    "wajib": {
+      "confirmed": 2778,
+      "misread": 568,
+      "conflict": 5
+    },
+    "mandub": {
+      "confirmed": 512,
+      "misread": 82,
+      "ikhtilaf": 1,
+      "rejected": 1,
+      "consistent": 1
+    },
+    "mubah": {
+      "misread": 353,
+      "consistent": 4612,
+      "conflict": 5,
+      "confirmed": 97,
+      "rejected": 4
+    },
+    "makruh": {
+      "misread": 37,
+      "confirmed": 73,
+      "consistent": 2
+    },
+    "haram": {
+      "confirmed": 4496,
+      "misread": 726,
+      "conflict": 2,
+      "no_reading": 2,
+      "consistent": 2
+    }
+  },
+  "english_agreement_by_class": {
+    "confirmed": {
+      "agree": 2723,
+      "voted": 3369
+    },
+    "consistent": {
+      "agree": 1663,
+      "voted": 2044
+    },
+    "rejected": {
+      "agree": 1,
+      "voted": 3
+    },
+    "misread": {
+      "agree": 533,
+      "voted": 747
+    },
+    "ikhtilaf": {
+      "agree": 0,
+      "voted": 1
+    },
+    "conflict": {
+      "agree": 6,
+      "voted": 10
+    },
+    "no_reading": {
+      "agree": 1,
+      "voted": 1
+    }
+  },
+  "priority": {
+    "medium": 8823,
+    "high": 2813,
+    "low": 2723
+  },
+  "omission_perspective": 80,
+  "conflicts_by_round": {
+    "R0 bare reading": 959,
+    "R1 reading": 566,
+    "R2 jamʿ σ": 543,
+    "R3 jamʿ scope": 15,
+    "R4 tarjīḥ": 13
+  }
+}
