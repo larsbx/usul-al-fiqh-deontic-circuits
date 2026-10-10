@@ -88,6 +88,72 @@ def test_draft_grades_from_the_annotation():
         "tashih", "nass", "zahir", "wajh", "ashab"]
 
 
+def test_author_preference_is_not_automatically_a_madhhab_tashih():
+    for who in ("Ibn Rajab (al-aẓhar)", "one author: azhar", "al-Mughnī (al-ṣawāb)"):
+        assert reconcile.draft_grade(who) == "ashab"
+
+
+def test_non_ijmal_is_only_indirect_support_for_generality():
+    case = next(c for c in CASES if c["far"].endswith("q052.f001"))
+    entry = next(e for e in LEDGER["entries"] if e["far"] == case["far"])
+    assert entry["grades"] == ["ashab", "wajh"]
+    assert [v["grade"] for v in entry["evidence"]] == ["takhrij", "takhrij", "ashab"]
+    assert reconcile.resolve(case, entry) == ("tarjih", True)
+    assert not reconcile.marked_for_reading(case, entry)
+    assert not case["matches_madhhab"]
+
+
+def test_review_audit_retains_originals_and_tracks_current_candidates():
+    audit = json.loads((ROOT / "corpus/reconciliation/review-audit-2026-10-10.json").read_text())
+    assert audit["cohort_size"] == len(audit["cases"]) == 48
+    assert len({row["far"] for row in audit["cases"]}) == 48
+    cases = {c["far"]: c for c in CASES}
+    entries = {e["far"]: e for e in LEDGER["entries"]}
+    locks = json.loads((ROOT / "corpus/lock.json").read_text())["witnesses"]
+    for receipt in audit["source_receipts"]:
+        assert all(receipt[k] == locks[receipt["witness"]][k] for k in ("url", "bytes", "sha256"))
+    for row in audit["cases"]:
+        c, e = cases[row["far"]], entries[row["far"]]
+        assert row["scholarly_status"] == "open"
+        assert row["grades"] == e["grades"]
+        assert row["imported_evidence"] == e.get("evidence", [])
+        assert row["current_resolution"] == list(reconcile.resolve(c, e))
+        assert row["current_review_member"] == reconcile.marked_for_reading(c, e)
+        if row["far"].endswith("q159.f035"):
+            assert "a man of unknown lineage commits qadhf" in row["original_annotation"]["note"]
+            assert "the accused person is enslaved" in c["note"]
+            assert {k: v for k, v in row["original_annotation"].items() if k != "note"} == {
+                k: v for k, v in c.items() if k != "note"}
+        else:
+            assert row["original_annotation"] == c
+
+
+def test_locked_replay_rejects_missing_tampered_and_wrong_location(tmp_path):
+    import hashlib
+    wid = "test-source"
+    text = "# لا إجمال في البيع\nPageV01P001\n"
+    data = text.encode()
+    witness = {"id": wid, "kind": "openiti", "repo": "test", "commit": "pin", "path": "source"}
+    from usul_corpus.fetch import witness_url
+    corpus, cache = tmp_path / "corpus", tmp_path / "cache"
+    corpus.mkdir(); cache.mkdir()
+    (corpus / "registry.json").write_text(json.dumps({"works": [{"witnesses": [witness]}]}))
+    (corpus / "lock.json").write_text(json.dumps({"witnesses": {wid: {
+        "url": witness_url(witness), "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}}}))
+    item = {"ref": f"src:{wid}/v01:p001", "excerpt_ar": "لا إجمال في البيع"}
+    ledger = {"entries": [{"evidence": [item]}]}
+    assert reconcile.verify_evidence(ledger, corpus, cache) == [f"{wid}: locked witness not cached"]
+    source = cache / f"{wid}.txt"
+    source.write_bytes(data)
+    assert reconcile.verify_evidence(ledger, corpus, cache) == []
+    source.write_bytes(data + b" ")
+    assert reconcile.verify_evidence(ledger, corpus, cache) == [f"{wid}: full source differs from lock"]
+    source.write_bytes(data)
+    item["ref"] = f"src:{wid}/v01:p002"
+    assert reconcile.verify_evidence(ledger, corpus, cache) == [
+        f"src:{wid}/v01:p002: excerpt or location differs from locked witness"]
+
+
 def test_imported_evidence_adds_a_graded_holder():
     c = _ikh("x", True, [True, False])
     e = _entry("x", ["ashab", "ashab"])

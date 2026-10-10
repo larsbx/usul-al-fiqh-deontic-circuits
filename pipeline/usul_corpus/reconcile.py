@@ -170,7 +170,7 @@ def marked_for_reading(case: dict, entry: dict) -> bool:
 
 
 # Drafting aid for new tranches: a grade proposed from the annotator's `who`, for review.
-_DRAFT = (("tashih", r"madhhab|mashh|ashhar|aṣaḥḥ|ṣaḥīḥ|sahih|aẓhar|azhar"),
+_DRAFT = (("tashih", r"madhhab|mashh|ashhar|aṣaḥḥ|ṣaḥīḥ|sahih"),
           ("nass", r"naṣṣ|nass|manṣūṣ|mansus|riwāya|riwaya|Aḥmad \(|^Aḥmad"),
           ("zahir", r"ẓāhir (of|kalām) Aḥmad|zahir kalam Ahmad|apparent text of Ahmad"),
           ("qiyas", r"qiyās al-madhhab"),
@@ -192,3 +192,43 @@ def draft(cases: list[dict], ledger: dict) -> list[dict]:
 def load(corpus: Path) -> dict:
     p = corpus / LEDGER
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {"entries": []}
+
+
+def verify_evidence(ledger: dict, corpus: Path, cache: Path, fetch_source: bool = False) -> list[str]:
+    """Replay every imported excerpt against a complete locked witness, failing closed.
+
+    This checks transcription and location, not scholarly relevance or grading.
+    It never creates or updates a content lock.
+    """
+    import hashlib
+    from .arabic import locate
+    from .fetch import fetch, witness_url
+
+    registry = json.loads((corpus / "registry.json").read_text())
+    witnesses = {w["id"]: w for work in registry["works"] for w in work["witnesses"]}
+    locks = json.loads((corpus / "lock.json").read_text())["witnesses"]
+    grouped: dict[str, list[dict]] = {}
+    for entry in ledger["entries"]:
+        for item in entry.get("evidence", []):
+            grouped.setdefault(item["ref"][4:].split("/")[0], []).append(item)
+    errors = []
+    for wid, items in sorted(grouped.items()):
+        witness, lock = witnesses.get(wid), locks.get(wid)
+        if not witness or not lock or witness_url(witness) != lock["url"]:
+            errors.append(f"{wid}: missing or inconsistent registered source lock")
+            continue
+        source = cache / f"{wid}.txt"
+        if fetch_source and not source.exists():
+            fetch(witness, cache)
+        if not source.exists():
+            errors.append(f"{wid}: locked witness not cached")
+            continue
+        data = source.read_bytes()
+        if len(data) != lock["bytes"] or hashlib.sha256(data).hexdigest() != lock["sha256"]:
+            errors.append(f"{wid}: full source differs from lock")
+            continue
+        text = data.decode("utf-8")
+        for item in items:
+            if locate(text, item["excerpt_ar"]) != item["ref"].split("/")[1]:
+                errors.append(f"{item['ref']}: excerpt or location differs from locked witness")
+    return errors

@@ -280,6 +280,10 @@ def cmd_reconcile(args: argparse.Namespace) -> int:
     """Run every apparent contradiction through the kernel's taʿāruḍ procedure."""
     from . import reconcile, takhrij
     cases, ledger = takhrij.load(CORPUS), reconcile.load(CORPUS)
+    if args.verify_source or args.fetch_source:
+        if errs := reconcile.verify_evidence(ledger, CORPUS, CACHE, args.fetch_source):
+            print("\n".join(errs), file=sys.stderr)
+            return 1
     if args.draft:
         print(json.dumps(reconcile.draft(cases, ledger), ensure_ascii=False, indent=1))
         return 0
@@ -503,6 +507,8 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("signature").set_defaults(run=cmd_signature)
     sub.add_parser("takhrij").set_defaults(run=cmd_takhrij)
     rc = sub.add_parser("reconcile", help="resolve the bank's apparent contradictions by its own taʿāruḍ procedure")
+    rc.add_argument("--verify-source", action="store_true", help="require complete locked witnesses and replay all imported excerpts")
+    rc.add_argument("--fetch-source", action="store_true", help="fetch missing locked witnesses and require evidence replay")
     rc.add_argument("--draft", action="store_true", help="print draft ledger entries for unledgered contradictions")
     rc.set_defaults(run=cmd_reconcile)
     m = sub.add_parser("m8-worklist")

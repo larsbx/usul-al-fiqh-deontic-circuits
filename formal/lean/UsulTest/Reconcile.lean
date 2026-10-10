@@ -7,7 +7,7 @@ open Usul.Reconcile
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f005
 #guard reconcile (P := String) none none [("true", .wajh), ("false", .wajh), ("true", .tashih), ("true", .tashih), ("true", .jazm), ("false", .nass)] == (.tarjih "true")
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f001
-#guard reconcile (P := String) none none [("true", .ashab), ("false", .wajh), ("true", .jazm), ("true", .jazm), ("false", .ashab)] == (.tarjih "true")
+#guard reconcile (P := String) none none [("true", .ashab), ("false", .wajh), ("true", .takhrij), ("true", .takhrij), ("false", .ashab)] == (.tarjih "true")
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f002
 #guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f005

@@ -141,3 +141,24 @@ Tranche 8 added 4 contradictions and 12 evidence items, and no new jamʿ. Its th
 `review` lists the cases where the reading holds the prevailing marked side while the annotation says no madhhab matches. These are for the human reviewer to re-annotate. Nothing is rewritten here.
 
 Everything here has status `candidate`. The grades are a reading of the annotated paragraph. A resolution is "derivable under the encoding", never a fatwā.
+
+### Review audit, 2026-10-10
+
+The [follow-up audit](reconciliation-review-audit-2026-10-10.md) pins the original
+48-case review queue to PR #47's merge and records each original annotation, Arabic
+record, imported evidence and unresolved scholarly obligation in
+`corpus/reconciliation/review-audit-2026-10-10.json`. It does not promote later
+preferences into the original annotations.
+
+In 52.f001, denial of ijmāl is only indirect support for the encoded universal
+generality. Two imported grades therefore change from jazm to takhrīj; all excerpts
+and competing holders remain. The current review queue falls from 54 to 53, with
+144 entries, 15 jamʿ, 121 tarjīḥ, 8 tawaqquf and 61 residues unchanged.
+The English subject/object error in 159.f035 is corrected without changing its
+facts or two riwāyas. Drafting no longer treats an author's own aẓhar as taṣḥīḥ.
+
+`python -m usul_corpus reconcile --verify-source` requires every imported source
+to match its complete locked bytes and SHA-256, then replays every excerpt and
+locator. `--fetch-source` restores missing witnesses without repinning. CI now
+runs this mandatory replay; it cannot pass by skipping absent witness caches.
+This verifies transcription, not semantic relevance, grading or accepted authority.

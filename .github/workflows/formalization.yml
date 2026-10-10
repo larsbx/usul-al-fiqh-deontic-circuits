@@ -22,6 +22,8 @@ jobs:
       - run: pip install pytest jsonschema numpy pillow
       - name: Replay locked M5 command-schema evidence
         run: cd pipeline && python -m usul_corpus m5-commands --fetch-source
+      - name: Replay locked reconciliation evidence
+        run: cd pipeline && python -m usul_corpus reconcile --fetch-source
       - run: make test validate generated
 
   lean:
