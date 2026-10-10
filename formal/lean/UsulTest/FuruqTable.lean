@@ -409,3 +409,93 @@ import Usul
 -- F136: daif
 #guard Usul.Furuq.Grade.apart .daif == false
 #guard Usul.Furuq.Grade.madhhab .daif == true
+-- F137: reported
+#guard Usul.Furuq.Grade.apart .reported == true
+#guard Usul.Furuq.Grade.madhhab .reported == true
+-- F138: reported
+#guard Usul.Furuq.Grade.apart .reported == true
+#guard Usul.Furuq.Grade.madhhab .reported == true
+-- F139: reported
+#guard Usul.Furuq.Grade.apart .reported == true
+#guard Usul.Furuq.Grade.madhhab .reported == true
+-- F140: daif
+#guard Usul.Furuq.Grade.apart .daif == false
+#guard Usul.Furuq.Grade.madhhab .daif == true
+-- F141: reported
+#guard Usul.Furuq.Grade.apart .reported == true
+#guard Usul.Furuq.Grade.madhhab .reported == true
+-- F142: daif
+#guard Usul.Furuq.Grade.apart .daif == false
+#guard Usul.Furuq.Grade.madhhab .daif == true
+-- F143: reported
+#guard Usul.Furuq.Grade.apart .reported == true
+#guard Usul.Furuq.Grade.madhhab .reported == true
+-- F144: daif
+#guard Usul.Furuq.Grade.apart .daif == false
+#guard Usul.Furuq.Grade.madhhab .daif == true
+-- F145: reported
+#guard Usul.Furuq.Grade.apart .reported == true
+#guard Usul.Furuq.Grade.madhhab .reported == true
+-- F146: daif
+#guard Usul.Furuq.Grade.apart .daif == false
+#guard Usul.Furuq.Grade.madhhab .daif == true
+-- F147: reported
+#guard Usul.Furuq.Grade.apart .reported == true
+#guard Usul.Furuq.Grade.madhhab .reported == true
+-- F148: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F149: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F150: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F151: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F152: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F153: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F154: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F155: daif
+#guard Usul.Furuq.Grade.apart .daif == false
+#guard Usul.Furuq.Grade.madhhab .daif == true
+-- F156: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F157: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F158: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F159: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F160: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F161: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F162: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F163: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F164: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F165: daif
+#guard Usul.Furuq.Grade.apart .daif == false
+#guard Usul.Furuq.Grade.madhhab .daif == true
+-- F166: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true

@@ -266,6 +266,14 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
   - F134: zakāt to an heir relative;
   - F136: the old man who travels, «عليه الكفارة لظاهر النصوص».
   Running tally over F01–F136: 79 sound, 35 weak, 6 wrongly treated alike, 16 reported.
+- **Furūq tranche 8 (F137–F166): the taqāsīm, to the end of part two.** 17 sound, 7 reported, 6 weak. In each weak item he restates the aṣḥāb's division, then calls the other view correct on one branch:
+  - F140: unripe fruit sold to the owner of its trees, «أصح المنع … لدخولها في العموم وعدم المعارض»;
+  - F142: the mithlī as only the measured and the weighed, «وهو الصحيح: أن المثلي أعم من ذلك»;
+  - F144: a pledge before possession, «بلزومه مطلقاً، وهو الصحيح»;
+  - F146: the slave's dealings without permission, on his dhimma «على القول الصحيح»;
+  - F155: a part freed by an insolvent partner, «يعتق كله، ويستسعى العبد … وهو الصحيح»;
+  - F165: a wife under nine, «وظاهر الأدلة وجوبها».
+  The closing remark on the twenty-odd furūq of nikāḥ («قد ذكرتها في كتاب الإرشاد») names no cases and is not an item. Final tally over F01–F166: 96 sound, 41 weak, 6 wrongly treated alike, 23 reported. Part two is complete.
 - **Exit:** every new rule is classified and linked; the coverage trend is reported. Disagreement with Ibn ʿUthaymīn's tarjīḥ is classified as in M4, never silently patched.
 
 #### M9 · Qiyās metatheory ⟵ M5, M7

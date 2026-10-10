@@ -1,0 +1,529 @@
+{
+ "note": "al-Saʿdī, al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa, part two (al-furūq), tranche 8: F137–F166 in order after tranche 7, to the end of the book; conventions as in tranches 1 and 6. The closing remark on the twenty-odd furūq between nikāḥ and the other contracts («قد ذكرتها في كتاب الإرشاد») names no cases here and is not an item.",
+ "work": "sadi.qawaid_jamia",
+ "witness": "islamhouse-qj-doc",
+ "module": "Usul.Furuq",
+ "asl": {
+  "ref": "src:islamhouse-qj-doc#furuq",
+  "excerpt_ar": "أن الشارع لا يفرق بين المتشابهات من كل وجه، بل لا بد فيها من فوارق معنوية، وأوصاف متفاوتة أوجبت الفرق"
+ },
+ "lean": [
+  "Usul.Furuq.Grade",
+  "Usul.Furuq.Grade.apart",
+  "Usul.Furuq.alike_unless_farq",
+  "Usul.Furuq.farq_is_maana",
+  "Usul.Furuq.suri_farq_idle"
+ ],
+ "items": [
+  {
+   "id": "F137",
+   "cases_en": [
+    "the able in body and wealth (hajj at once), the able in wealth only (sends a deputy)",
+    "the unable in both (none), the able in body only (only if near)"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وقسّموا المكلفين الذين يوجه إليهم فرض الحج إلى أربعة أقسام"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F138",
+   "cases_en": [
+    "a defective sale: return or arsh (the aṣl), arsh only when return is impossible, return or keep without arsh (ribawī for its kind)",
+    "the seller who concealed bears the loss; the buyer who knew has neither"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وقسّموا البيع المعيب إلى خمسة أقسام"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F139",
+   "cases_en": [
+    "fruit sold before it ripens (not allowed, the aṣl)",
+    "sold with its trees, on condition of cutting now, or to the owner of the trees (allowed)"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وقسّموا بيع الثمرة قبل بدو صلاحها إلى قسمين"
+   },
+   "grounds": [],
+   "note": "«ومثل ذلك بيع الزرع قبل اشتداد حبه»"
+  },
+  {
+   "id": "F140",
+   "cases_en": [
+    "unripe fruit sold to the owner of its trees (allowed, the madhhab)",
+    "unripe fruit sold to another (not allowed)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والرواية الأخرى أصح المنع في هذه الأخيرة لدخولها في العموم وعدم المعارض"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F141",
+   "cases_en": [
+    "a destroyed thing with a like (the like owed)",
+    "a valued thing (its value owed)"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وقسّموا المتلفات إلى قسمين"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F142",
+   "cases_en": [
+    "the measured and weighed (mithlī, the madhhab: «فقط»)",
+    "the measured by length, the counted, whatever has a like or near-like (valued)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وقيل وهو الصحيح: أن المثلي أعم من ذلك"
+   },
+   "grounds": [],
+   "note": "«واختاره شيخ الإسلام»; the division mithlī ∕ mutaqawwam stands, with the wider mithlī"
+  },
+  {
+   "id": "F143",
+   "cases_en": [
+    "what is completed only by taking possession (ribawī exchange, salam capital, pledge, gift, …)",
+    "everything else (possession not a condition)"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وقسّموا الأشياء إلى قسمين"
+   },
+   "grounds": [],
+   "note": "the father's taking from his son's wealth: «وفيه خلاف قوي تقدم»"
+  },
+  {
+   "id": "F144",
+   "cases_en": [
+    "a pledge before it is taken into possession (not binding, the aṣḥāb)",
+    "a pledge after possession (binding)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "قوي بلزومه مطلقاً، وهو الصحيح"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F145",
+   "cases_en": [
+    "what the slave was permitted (on his master's dhimma), his crimes and damages (on his neck)",
+    "his debts without permission (on his own dhimma, followed after manumission)"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وقسّموا ما يتعلق بالرقيق من ضمانات الأموال إلى أربعة أقسام"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F146",
+   "cases_en": [
+    "the slave's dealings that incur property (on his neck, the mashhūr)",
+    "his debts without permission (on his dhimma «قولاً واحداً»)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وعلى القول الصحيح. هذا القسم يتعلق بذمته"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F147",
+   "cases_en": [
+    "the transgressing hand (liable, negligent or not), destruction without right (liable, deliberate or not)",
+    "the trustee (liable only if negligent or transgressing)"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وقسّم الأصحاب أسباب الضمان إلى ثلاثة أقسام"
+   },
+   "grounds": [],
+   "note": "«ولا فرق في الإتلاف بين المباشر والمتسبب على وجه العدوان»"
+  },
+  {
+   "id": "F148",
+   "cases_en": [
+    "the usurper's planting and building (the owner may compel removal)",
+    "the lessee's and borrower's (no removal without consent; lease or purchase, the owner's choice)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وأصل هذا كله الحديث الصحيح"
+   },
+   "grounds": [],
+   "note": "«ليس لعرق ظالم حق» «فهذا حد فاصل»"
+  },
+  {
+   "id": "F149",
+   "cases_en": [
+    "the special agent or guardian (bound by the permission)",
+    "the general one, the imām and judge (whatever is in the interest); the one of necessity (only what necessity requires)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: تقسيمهم الولاية، والوكالة على الأموال والحقوق إلى ثلاثة أقسام"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F150",
+   "cases_en": [
+    "the fixed-share heirs (a share raised only by radd, cut only by ʿawl)",
+    "the residuary (no fixed share), the distant kin (inheriting through them)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق والتقاسيم الصحيحة: تقسيم الورثة إلى أصحاب فروض"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F151",
+   "cases_en": [
+    "the residuary by himself",
+    "by another (daughters with their brothers), with another (sisters with daughters)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وتقسيم العصبات إلى"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F152",
+   "cases_en": [
+    "siblings: the male twice the female",
+    "uterine siblings and distant kin (equal); nephews, uncles, walāʾ (the male alone)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وأن الأخوات مع إخوتهن ثلاثة أقسام"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F153",
+   "cases_en": [
+    "exclusion by a trait (killing, slavery, difference of religion), partial exclusion by a person (all heirs)",
+    "total exclusion by a person (all but spouses, parents, children)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وتقسيم الحجب إلى ثلاثة أنواع"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F154",
+   "cases_en": [
+    "manumission by words, by mutilation",
+    "by owning a close maḥram relative, by spreading (sirāya)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن التقاسيم الصحيحة: تقسيم العتق إلى أربعة أقسام"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F155",
+   "cases_en": [
+    "a part freed by an insolvent partner (the rest stays slave, the mashhūr)",
+    "by a solvent partner (all freed, the partner compensated)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ويستسعى العبد بالمعروف وهو الصحيح"
+   },
+   "grounds": [],
+   "note": "«فقيل: يعتق كله»"
+  },
+  {
+   "id": "F156",
+   "cases_en": [
+    "the pure slave (the aṣl), the mudabbar (freed from the third)",
+    "the umm walad (from the capital), the mukātab, the one freed on a condition"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن التقاسيم الصحيحة: تقسيم المماليك إلى أقسام بحسب الأسباب"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F157",
+   "cases_en": [
+    "the named dower (slight ignorance pardoned), the dower of the like",
+    "the obligatory and the recommended mutʿa"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن التقاسيم الصحيحة: تقسيم الصداق إلى مسمى"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F158",
+   "cases_en": [
+    "the dower lapses (separation from her before consummation)",
+    "settles (consummation, seclusion, death), is halved (separation from him before consummation)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وكذلك تقسيم المهر إلى ثلاثة أقسام"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F159",
+   "cases_en": [
+    "the wedding feast (answering obligatory), the funeral feast (disliked)",
+    "other invitations (recommended)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق والتقاسيم الصحيحة: تقسيم الإجابة إلى الدعوات ثلاثة أقسام"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F160",
+   "cases_en": [
+    "divorce without need (disliked, the aṣl), in menses, in a touched ṭuhr, or triple (forbidden)",
+    "obligatory, recommended, permitted (by need)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن التقاسيم الصحيحة: أن الطلاق يكره من غير حاجة"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F161",
+   "cases_en": [
+    "the irrevocably separated (three, for a price, invalid marriage, before consummation, ʿidda ended)",
+    "the rajʿiyya"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وتبين المرأة من الزوج إذا كمل الطلاق"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F162",
+   "cases_en": [
+    "the pregnant (delivery), the widow (four months and ten)",
+    "the separated after consummation (three quruʾ, or three months)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن التقاسيم الصحيحة والفروق: تقسيم العِدد إلى أنواع"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F163",
+   "cases_en": [
+    "mourning the husband (obligatory for the ʿidda), any dead three days or less (permitted)",
+    "beyond that (forbidden)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن التقاسيم الصحيحة: تقسيم الإحداد إلى واجب، ومباح، وحرام"
+   },
+   "grounds": [],
+   "note": "«كما دلت على ذلك نصوص السنّة، وكلام الأصحاب هنا فيه خلل»"
+  },
+  {
+   "id": "F164",
+   "cases_en": [
+    "the wife in marriage, the revocably divorced, the pregnant (maintenance due)",
+    "the recalcitrant, the irrevocably divorced without pregnancy (none)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن التقاسيم الصحيحة: تقسيم الزوجات إلى من تجب لها النفقة"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F165",
+   "cases_en": [
+    "a wife too young for intercourse, under nine (no maintenance, the aṣḥāb)",
+    "other wives (maintenance due)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وظاهر الأدلة وجوبها، فإنه وإن كان لا يمكن وطؤها"
+   },
+   "grounds": [],
+   "note": "«فبأي شيء تسقط نفقتها وهي زوجة»"
+  },
+  {
+   "id": "F166",
+   "cases_en": [
+    "a relative in the ascending or descending line (wealth of the giver, need of the receiver)",
+    "other relatives (and the giver inherits from him)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ويكفي هذان الشرطان في الأصول والفروع، ويزاد في غيرهم"
+   },
+   "grounds": [],
+   "note": ""
+  }
+ ]
+}
