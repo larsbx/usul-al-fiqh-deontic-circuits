@@ -792,4 +792,34 @@ def rightPassesToSubstitute (boundToThing : Bool) : Bool := boundToThing
 /-- As with transfer (qāʿida 24): a right on the property itself follows it. -/
 theorem substitute_as_transfer : rightPassesToSubstitute true = rightSurvivesTransfer true false := rfl
 
+/-! ## Reconciliation refinements (`corpus/reconciliation/ledger.json`)
+
+Each is a jamʿ: a farq the later works cite, conservative over the earlier reading where the farq
+is absent, carrying the residues it touches to the prevailing (taṣḥīḥ) side. -/
+
+/-- Qāʿida 16 with the state at obligation: once the substitute is what was due when the obligation
+arose, finding the original later does not move him to it. «والاعتبار في الكفارات بحالة الوجوب»
+(al-Iqnāʿ); «اعتبارا بوقت الوجوب كسائر الكفارات» (Kashshāf); for a right fixed in the value at the
+divorce or the conversion, al-aṣḥāb deny the return to the thing. -/
+def useSubstituteAt (originalPossible settledAtObligation : Bool) : Bool :=
+  !originalPossible || settledAtObligation
+
+theorem useSubstituteAt_conservative (p : Bool) :
+    useSubstituteAt p false = Usul.Sadi.useSubstitute p := by
+  cases p <;> rfl
+
+theorem settled_substitute_stands : useSubstituteAt true true = true := rfl
+
+/-- Qāʿidas 64–65 with the madhhab's farq for transactions: where the unknown condition is the
+actor's own authority over the property (his ownership, or the owner's permission), the transaction
+stands, «لأن الاعتبار في العقود بما في نفس الأمر» (Kashshāf); ṭalāq, ʿitq and nikāḥ keep the reading. -/
+def countsAsMetIn (knew liabilityOnly transactionAuthority : Bool) : Bool :=
+  knew || liabilityOnly || transactionAuthority
+
+theorem countsAsMetIn_conservative (k l : Bool) :
+    countsAsMetIn k l false = countsAsMet k l := by
+  cases k <;> cases l <;> rfl
+
+theorem authority_in_fact_suffices : countsAsMetIn false false true = true := rfl
+
 end Usul.Refinements

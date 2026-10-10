@@ -103,18 +103,25 @@ The later works settle 65 of the 71 suspended cases. They mostly settle them aga
 - **Nine reviews** (`review`): tarjīḥ gives the reading a marked side while the annotation says no madhhab matches. Examples are the naṣṣ of Aḥmad against a takhrīj (75.f005, 75.f007) and al-Talkhīṣ's qiyās al-madhhab (133.f018). These are questions for the human reviewer. Annotations are never rewritten from here.
 - **No naskh yet.** None of the annotated paragraphs reports the chronology of a retraction.
 
-### The refinement worklist after the import
+### Refinements from the worklist
 
-The residues against each reading (`report.json` → `worklist`) are where the readings need the next round of refinement:
+The residues against each reading (`report.json` → `worklist`) are where the readings need the next round of refinement. A residue becomes a jamʿ only when the later works cite a farq that separates it from the furūʿ the reading already gets right.
 
-| Encoder | Residues / cases | The madhhab, per the later taṣḥīḥ |
+| Refinement | Farq | Result |
 |---|---|---|
-| `lots` | 12 / 47 | Lots are excluded where the manṣūṣ or another rule decides: annulment by the ḥākim, the heirs' choice, the wife's word, loss of lineage, nothing binding |
-| `asl_zahir` | 12 / 40 | The aṣl prevails over a ẓāhir of equal grade: street mud, unbelievers' clothes, the count of rakʿas and circuits, the husband's word |
-| `unknown_condition` | 6 / 11 | A disposal is valid when its condition held in fact: «العبرة بما في نفس الأمر» |
-| `substitute` | 5 / 7 | Kaffārāt are judged by the state at obligation |
-| `tadakhul` | 4 / 15 | The mashhūra on vows; the single takbīr does not open the prayer |
+| `substitute_at_obligation` (`useSubstituteAt`, qāʿida 16) | «والاعتبار في الكفارات بحالة الوجوب» (al-Iqnāʿ; Kashshāf «اعتبارا بوقت الوجوب»). Once the substitute is what fell due, finding the original does not move him. | 5 of the qāʿida's 7 furūʿ move to the taṣḥīḥ side. 16.f002 (the like found before payment) and 16.f006 keep their rulings. |
+| `unknown_condition_in_fact` (`countsAsMetIn`, qāʿidas 64–65) | «لأن الاعتبار في العقود بما في نفس الأمر» (Kashshāf). In a transaction whose unknown condition is the actor's own authority, the condition counts as it is in fact. | 4 furūʿ move: the disposal under an unknown permission, the khiyār disposal, the sale by an unknowing heir, the release of an unknown debt. ṭalāq, ʿitq, nikāḥ and the runaway's sale (a condition of the object) keep the reading. |
 
-`review` lists the 48 cases where the reading now holds the prevailing marked side while the annotation says no madhhab matches. These are for the human reviewer to re-annotate. Nothing is rewritten here.
+With these and qāʿida 37 there are 12 jamʿ. The residues fall to 58 and madhhab coverage reaches 0.668.
+
+**Left as residues, for want of a cited farq:**
+
+| Encoder | Residues / cases | Why no jamʿ |
+|---|---|---|
+| `asl_zahir` | 12 / 40 | All in Ibn Rajab's category 4 (aṣl and ẓāhir of equal grade), where the madhhab keeps the aṣl. No source separates them from 159.f031, f035, f039 and f021, where the ẓāhir prevails. Moving all of category 4 to the aṣl would move those four to their weaker side, which the jamʿ check forbids. |
+| `lots` | 12 / 47 | Each exclusion of lots rests on its own rule: annulment by the ḥākim, the heirs' choice, the wife's word, loss of lineage, nothing binding. |
+| `tadakhul` | 4 / 15 | Two rest on the mashhūra on vows, and one on the takbīr shared between a rukn and a non-rukn. |
+
+`review` lists the cases where the reading holds the prevailing marked side while the annotation says no madhhab matches. These are for the human reviewer to re-annotate. Nothing is rewritten here.
 
 Everything here has status `candidate`. The grades are a reading of the annotated paragraph. A resolution is "derivable under the encoding", never a fatwā.

@@ -428,6 +428,12 @@ import Usul
 #check @Usul.Refinements.laterBindingGoverns_conservative
 #check @Usul.Refinements.laterBindingGoverns_unbound_earlier
 #check @Usul.Refinements.binding_pledge_survives
+#check @Usul.Refinements.useSubstituteAt
+#check @Usul.Refinements.useSubstituteAt_conservative
+#check @Usul.Refinements.settled_substitute_stands
+#check @Usul.Refinements.countsAsMetIn
+#check @Usul.Refinements.countsAsMetIn_conservative
+#check @Usul.Refinements.authority_in_fact_suffices
 #check @Usul.Hukm.Mode
 #check @Usul.Hukm.mode
 #check @Usul.Hukm.mode_binding_injective

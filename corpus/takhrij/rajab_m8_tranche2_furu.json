@@ -256,13 +256,14 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f000",
-      "encoder": "unknown_condition",
+      "encoder": "unknown_condition_in_fact",
       "class": "genuine_ikhtilaf",
       "facts": {
         "knew": false,
-        "liability_only": false
+        "liability_only": false,
+        "transaction_authority": true
       },
-      "expected": false,
+      "expected": true,
       "positions": [
         {
           "who": "wajh: not valid",
@@ -273,16 +274,17 @@
           "ruling": true
         }
       ],
-      "matches_madhhab": false,
-      "note": "Acting in another's property, then it appears he had permitted it: valid or not? Two wujūh. No madhhab marked."
+      "matches_madhhab": true,
+      "note": "Acting in another's property, then it appears he had permitted it: valid or not? Two wujūh. No madhhab marked. Reconciled (jamʿ, the condition in fact): the unknown condition is the owner's permission, which held, so the disposal stands (al-Inṣāf: «على الصحيح»; Taṣḥīḥ al-Furūʿ)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f001",
-      "encoder": "unknown_condition",
+      "encoder": "unknown_condition_in_fact",
       "class": "genuine_ikhtilaf",
       "facts": {
         "knew": false,
-        "liability_only": false
+        "liability_only": false,
+        "transaction_authority": false
       },
       "expected": false,
       "positions": [
@@ -300,13 +302,14 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f002",
-      "encoder": "unknown_condition",
+      "encoder": "unknown_condition_in_fact",
       "class": "genuine_ikhtilaf",
       "facts": {
         "knew": false,
-        "liability_only": false
+        "liability_only": false,
+        "transaction_authority": true
       },
-      "expected": false,
+      "expected": true,
       "positions": [
         {
           "who": "al-Qāḍī: not effective",
@@ -317,16 +320,17 @@
           "ruling": true
         }
       ],
-      "matches_madhhab": false,
-      "note": "Seller permits the buyer to act within the option period; he acts after the permission, before learning of it: derived from the wujūh on agency; al-Qāḍī: not effective. No madhhab marked."
+      "matches_madhhab": true,
+      "note": "Seller permits the buyer to act within the option period; he acts after the permission, before learning of it: derived from the wujūh on agency; al-Qāḍī: not effective. No madhhab marked. Reconciled (jamʿ, the condition in fact): the permission held, as with the agent who acts before learning of his agency (Kashshāf, al-Iqnāʿ)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f003",
-      "encoder": "unknown_condition",
+      "encoder": "unknown_condition_in_fact",
       "class": "genuine_ikhtilaf",
       "facts": {
         "knew": false,
-        "liability_only": true
+        "liability_only": true,
+        "transaction_authority": false
       },
       "expected": true,
       "positions": [
@@ -344,13 +348,14 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f000",
-      "encoder": "unknown_condition",
+      "encoder": "unknown_condition_in_fact",
       "class": "genuine_ikhtilaf",
       "facts": {
         "knew": false,
-        "liability_only": false
+        "liability_only": false,
+        "transaction_authority": true
       },
-      "expected": false,
+      "expected": true,
       "positions": [
         {
           "who": "wajh: invalid",
@@ -361,16 +366,17 @@
           "ruling": true
         }
       ],
-      "matches_madhhab": false,
-      "note": "Sells his father's property without permission, then the father had already died, he being the sole heir: two wujūh (or riwāyas); Ibn Rajab's analogy to the jester leans toward invalidity. No madhhab marked."
+      "matches_madhhab": true,
+      "note": "Sells his father's property without permission, then the father had already died, he being the sole heir: two wujūh (or riwāyas); Ibn Rajab's analogy to the jester leans toward invalidity. No madhhab marked. Reconciled (jamʿ, the condition in fact): his ownership by inheritance held, so the sale stands (al-Inṣāf: «على الصحيح»; al-Iqnāʿ; Kashshāf)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f001",
-      "encoder": "unknown_condition",
+      "encoder": "unknown_condition_in_fact",
       "class": "genuine_ikhtilaf",
       "facts": {
         "knew": false,
-        "liability_only": false
+        "liability_only": false,
+        "transaction_authority": false
       },
       "expected": false,
       "positions": [
@@ -388,11 +394,12 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f002",
-      "encoder": "unknown_condition",
+      "encoder": "unknown_condition_in_fact",
       "class": "genuine_ikhtilaf",
       "facts": {
         "knew": false,
-        "liability_only": false
+        "liability_only": false,
+        "transaction_authority": false
       },
       "expected": false,
       "positions": [
@@ -410,13 +417,14 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f003",
-      "encoder": "unknown_condition",
+      "encoder": "unknown_condition_in_fact",
       "class": "genuine_ikhtilaf",
       "facts": {
         "knew": false,
-        "liability_only": false
+        "liability_only": false,
+        "transaction_authority": true
       },
-      "expected": false,
+      "expected": true,
       "positions": [
         {
           "who": "wajh: no release",
@@ -427,8 +435,8 @@
           "ruling": true
         }
       ],
-      "matches_madhhab": false,
-      "note": "Releases a debt he believes is not owed, and it was: the two wujūh. No madhhab marked."
+      "matches_madhhab": true,
+      "note": "Releases a debt he believes is not owed, and it was: the two wujūh. No madhhab marked. Reconciled (jamʿ, the condition in fact): the debt was his, so the release stands (al-Muntahā, al-Iqnāʿ; al-Inṣāf: «فكذا هنا»)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f004",
@@ -460,11 +468,12 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f005",
-      "encoder": "unknown_condition",
+      "encoder": "unknown_condition_in_fact",
       "class": "genuine_ikhtilaf",
       "facts": {
         "knew": false,
-        "liability_only": false
+        "liability_only": false,
+        "transaction_authority": false
       },
       "expected": false,
       "positions": [
@@ -482,11 +491,12 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f006",
-      "encoder": "unknown_condition",
+      "encoder": "unknown_condition_in_fact",
       "class": "genuine_ikhtilaf",
       "facts": {
         "knew": false,
-        "liability_only": false
+        "liability_only": false,
+        "transaction_authority": false
       },
       "expected": false,
       "positions": [
@@ -504,11 +514,12 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f007",
-      "encoder": "unknown_condition",
+      "encoder": "unknown_condition_in_fact",
       "class": "genuine_ikhtilaf",
       "facts": {
         "knew": false,
-        "liability_only": false
+        "liability_only": false,
+        "transaction_authority": false
       },
       "expected": false,
       "positions": [
@@ -522,7 +533,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "Buys a runaway believing it unobtainable, and it was obtainable: two wujūh (he believed the validity condition absent), and al-Mughnī's third. No madhhab marked."
+      "note": "Buys a runaway believing it unobtainable, and it was obtainable: two wujūh (he believed the validity condition absent), and al-Mughnī's third. No madhhab marked. The transaction farq does not reach this farʿ: the unknown condition is deliverability, not his authority, and the muʿtamad voids the runaway's sale outright."
     }
   ]
 }

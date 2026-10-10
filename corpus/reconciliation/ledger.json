@@ -325,7 +325,11 @@
         "nass",
         "nass"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "substitute_at_obligation",
+        "from": "substitute",
+        "farq": "src:openiti-hajjawi-iqna-shamela7360/v04:p086"
+      },
       "naskh": null,
       "note": "Two riwāyas, the state at obligation or at performance.",
       "evidence": [
@@ -361,7 +365,11 @@
         "nass",
         "nass"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "substitute_at_obligation",
+        "from": "substitute",
+        "farq": "src:openiti-hajjawi-iqna-shamela7360/v04:p086"
+      },
       "naskh": null,
       "evidence": [
         {
@@ -388,7 +396,11 @@
         "wajh",
         "wajh"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "substitute_at_obligation",
+        "from": "substitute",
+        "farq": "src:openiti-hajjawi-iqna-shamela7360/v04:p086"
+      },
       "naskh": null,
       "evidence": [
         {
@@ -415,7 +427,11 @@
         "ashab",
         "wajh"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "substitute_at_obligation",
+        "from": "substitute",
+        "farq": "src:openiti-hajjawi-iqna-shamela7360/v04:p086"
+      },
       "naskh": null,
       "evidence": [
         {
@@ -443,7 +459,11 @@
         "takhrij",
         "ashab"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "substitute_at_obligation",
+        "from": "substitute",
+        "farq": "src:openiti-hajjawi-iqna-shamela7360/v04:p086"
+      },
       "naskh": null
     },
     {
@@ -1958,7 +1978,11 @@
         "wajh",
         "wajh"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "unknown_condition_in_fact",
+        "from": "unknown_condition",
+        "farq": "src:openiti-buhuti-kashshaf-shamela21642/v03:p462"
+      },
       "naskh": null,
       "evidence": [
         {
@@ -2001,7 +2025,11 @@
         "ashab",
         "wajh"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "unknown_condition_in_fact",
+        "from": "unknown_condition",
+        "farq": "src:openiti-buhuti-kashshaf-shamela21642/v03:p462"
+      },
       "naskh": null,
       "evidence": [
         {
@@ -2063,7 +2091,11 @@
         "wajh",
         "wajh"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "unknown_condition_in_fact",
+        "from": "unknown_condition",
+        "farq": "src:openiti-buhuti-kashshaf-shamela21642/v03:p462"
+      },
       "naskh": null,
       "evidence": [
         {
@@ -2185,7 +2217,11 @@
         "wajh",
         "wajh"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "unknown_condition_in_fact",
+        "from": "unknown_condition",
+        "farq": "src:openiti-buhuti-kashshaf-shamela21642/v03:p462"
+      },
       "naskh": null,
       "evidence": [
         {

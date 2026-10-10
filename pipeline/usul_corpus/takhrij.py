@@ -282,6 +282,15 @@ ENCODERS: dict[str, dict] = {
         facts={"successive": B, "earlier_binding": B, "later_binding": B}, out=B,
         lean="Usul.Refinements.laterBindingGoverns {successive} {earlier_binding} {later_binding}",
         py=lambda f: f["successive"] and (f["later_binding"] or not f["earlier_binding"])),
+    "substitute_at_obligation": dict(
+        sadi=[28], qawaid=[RAJAB.format(16)], facts={"original_possible": B, "settled_at_obligation": B},
+        out=B, lean="Usul.Refinements.useSubstituteAt {original_possible} {settled_at_obligation}",
+        py=lambda f: not f["original_possible"] or f["settled_at_obligation"]),
+    "unknown_condition_in_fact": dict(
+        sadi=[], qawaid=[RAJAB.format(64), RAJAB.format(65)],
+        facts={"knew": B, "liability_only": B, "transaction_authority": B},
+        out=B, lean="Usul.Refinements.countsAsMetIn {knew} {liability_only} {transaction_authority}",
+        py=lambda f: f["knew"] or f["liability_only"] or f["transaction_authority"]),
     "words_out_of_nature": dict(
         sadi=[], qawaid=[RAJAB.format(38)], facts={"other_contract_possible": B},
         out=B, lean="Usul.Refinements.asKinayaValid {other_contract_possible}",

@@ -280,6 +280,18 @@ import Usul
 #guard (Usul.Refinements.laterBindingGoverns true false true) == true
 #guard (Usul.Refinements.laterBindingGoverns true true false) == false
 #guard (Usul.Refinements.laterBindingGoverns true true true) == true
+#guard (Usul.Refinements.useSubstituteAt false false) == true
+#guard (Usul.Refinements.useSubstituteAt false true) == true
+#guard (Usul.Refinements.useSubstituteAt true false) == false
+#guard (Usul.Refinements.useSubstituteAt true true) == true
+#guard (Usul.Refinements.countsAsMetIn false false false) == false
+#guard (Usul.Refinements.countsAsMetIn false false true) == true
+#guard (Usul.Refinements.countsAsMetIn false true false) == true
+#guard (Usul.Refinements.countsAsMetIn false true true) == true
+#guard (Usul.Refinements.countsAsMetIn true false false) == true
+#guard (Usul.Refinements.countsAsMetIn true false true) == true
+#guard (Usul.Refinements.countsAsMetIn true true false) == true
+#guard (Usul.Refinements.countsAsMetIn true true true) == true
 #guard (Usul.Refinements.asKinayaValid false) == false
 #guard (Usul.Refinements.asKinayaValid true) == true
 #guard (Usul.Refinements.kinayaConcludes false) == true
