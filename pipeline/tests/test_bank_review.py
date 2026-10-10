@@ -249,3 +249,14 @@ def test_a_ruling_of_an_earlier_sharia_is_not_ours():
     assert roles("كانت صناعة التماثيل جائزة في شريعة سليمان فانها محرمة في شرعنا")[0] == ("جائزة", "prior_law")
     r = review(lab("mubah", "وكانت هذه الصورة جائزة في حقه غير جائزة في شرعنا .", "جائزة"))
     assert r["class"] == "misread"
+
+
+def test_antonyms_win_over_a_shared_object():
+    r = review(lab("wajib", "ستر الوجه واجب وكشف الوجه حرام .", "واجب"))
+    assert (r["class"], r["set"]) == ("confirmed", ["wajib"])
+
+
+def test_prior_law_needs_an_earlier_law():
+    assert roles("الصلاة واجبة في شريعة الاسلام") == [("واجبة", "predication")]
+    assert roles("الزكاة واجبة في شريعة محمد") == [("واجبة", "predication")]
+    assert roles("كانت هذه الصورة جائزة في شريعة يعقوب")[0][1] == "prior_law"

@@ -71,13 +71,14 @@ def _addressee(after: list[str]) -> tuple[str | None, int]:
     return None, 0
 
 
-def act_of(scope: str, cue: Mapping, until: int | None = None) -> dict:
-    """{"text", "stems", "addressee"} of the act a cue (with start/end in `scope`) rules on."""
+def act_of(scope: str, cue: Mapping, until: int | None = None, since: int = 0) -> dict:
+    """{"text", "stems", "addressee"} of the act a cue (with start/end in `scope`) rules on;
+    its complement runs to the next cue (`until`), its subject back to the previous one (`since`)."""
     after = scope[cue["end"]:until].split()
     addressee, used = _addressee(after)
     words = _content(after[used:])[:3]
     if not words or cue["text"].startswith(("حرام", "محرم", "واجب", "مستحب", "مكروه", "جائز", "مباح", "حلال", "سنة", "فرض")):
-        words = _content(scope[:cue["start"]].split())[-3:] or words
+        words = _content(scope[since:cue["start"]].split())[-3:] or words
     return {"text": " ".join(words), "stems": sorted({stem(w) for w in words}), "addressee": addressee}
 
 

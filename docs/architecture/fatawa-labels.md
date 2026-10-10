@@ -92,9 +92,9 @@ Only predications on the act are compared (see *Conflicts* below for what is set
 
 | class | answers | English version agrees |
 |---|---:|---:|
-| confirmed (the predication fixes one status, the candidate's) | 7,957 | 81% (2,724/3,371) |
+| confirmed (the predication fixes one status, the candidate's) | 7,958 | 81% (2,724/3,371) |
 | consistent (candidate allowed; the text underdetermines, e.g. jawāz) | 4,624 | 81% (1,666/2,048) |
-| misread (the candidate's own cue is not a ruling on the act) | 1,761 | 71% (532/746) |
+| misread (the candidate's own cue is not a ruling on the act) | 1,760 | 71% (532/746) |
 | rejected (candidate excluded) | 3 | 0% (0/1) |
 | ikhtilāf (reported positions, no preference stated) | 1 | 0% (0/1) |
 | conflict (tawaqquf) | 4 | 75% (3/4) |

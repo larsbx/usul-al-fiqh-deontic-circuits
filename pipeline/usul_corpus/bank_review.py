@@ -74,6 +74,7 @@ _QUESTION_WORDS = {"هل", "متى", "ام"}
 _FRAME_OBJECT = re.compile(r"^[نتي](?:علم|عرف|نبه|بين)")
 _IHRAM = re.compile(rf"(?<![{_L}])(?:بالحج|بالعمرة|بحج|بعمرة|احرام|الاحرام)(?![{_L}])")
 _PROOF = re.compile(r"(?:تعالى|وسلم|عنه|عنها|عنهما)\s*:?\s*[\"«]")
+_PRIOR_PROPHET = re.compile(r"شريعة\s+(?:من\s+قبلنا|ادم|نوح|ابراهيم|اسحاق|يعقوب|يوسف|موسى|هارون|داود|سليمان|يحيى|زكريا|عيسى|السابقين|الامم)")
 _VERB_TOKEN = re.compile(rf"^[وف]?[يت][{_L}]{{2,}}$")
 _TARJIH = re.compile(rf"(?<![{_L}])(?:[وف](?:ال)?(?:صواب|صحيح|راجح|اظهر|اقرب|مختار)|(?:ال)?(?:صحيح|راجح)\s+من\s+(?:اقوال|قولي))(?![{_L}])")
 _REPORT = re.compile(rf"(?<![{_L}])[وف]?(?:ذهب|قال\s+بعض|عند\s+(?:الجمهور|بعض|الحنفية|المالكية|الشافعية|الحنابلة)|عندهم"
@@ -131,7 +132,9 @@ def _role(scope: str, c: Mapping) -> str:
     if prev[-1:] == ["قد"]:
         return "modal"
     nxt = " ".join(after[:3])
-    if re.search(r"(?<![\u0621-\u064A])في\s+شريعة", nxt) or ("في حقه" in nxt and "شرعنا" in scope and "شرعنا" not in nxt):
+    contrasted = "شرعنا" in scope and "شرعنا" not in nxt     # «… في شرعنا» elsewhere in the clause
+    if ((re.search(r"(?<![\u0621-\u064A])في\s+شريعة", nxt) and (contrasted or _PRIOR_PROPHET.search(nxt)))
+            or ("في حقه" in nxt and contrasted)):
         return "prior_law"                                    # sharʿ man qablanā: reported, not our ruling
     if prev[-1:] and prev[-1] in _QUESTION_WORDS:
         return "question"
@@ -201,7 +204,7 @@ def bank_clauses(text: str, stages: frozenset = STAGES) -> list[dict]:
                 if sigma:
                     how, s = f"σ ∘ {how}", frozenset(SIGMA[h] for h in s)
                 read.append({"cue": c["text"], "reading": how, "set": s, "literal": literal, "sigma": sigma,
-                             "act": act_of(scope, c, nxt and nxt["start"]),
+                             "act": act_of(scope, c, nxt and nxt["start"], since),
                              "start": c["start"], "end": c["end"],
                              "role": _role(scope, c) if "roles" in stages else "predication"})
                 since = c["end"]
@@ -240,10 +243,10 @@ def _comparable(own: Mapping, read: list[dict], by_act: bool) -> list[frozenset]
             a, b = own["act"], x["act"]
             if a["addressee"] and b["addressee"] and a["addressee"] != b["addressee"]:
                 continue
+            if a["stems"] and b["stems"] and antonyms(a["stems"], b["stems"]):
+                out.append(frozenset(SIGMA[h] for h in x["set"]))   # opposite acts, even with a shared object
+                continue
             if a["stems"] and b["stems"] and not set(a["stems"]) & set(b["stems"]):
-                if not antonyms(a["stems"], b["stems"]):
-                    continue
-                out.append(frozenset(SIGMA[h] for h in x["set"]))
                 continue
         out.append(x["set"])
     return out

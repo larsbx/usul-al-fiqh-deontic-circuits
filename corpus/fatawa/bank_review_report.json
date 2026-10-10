@@ -1,10 +1,10 @@
 {
   "labelled": 14352,
   "class": {
-    "confirmed": 7957,
+    "confirmed": 7958,
     "consistent": 4624,
     "rejected": 3,
-    "misread": 1761,
+    "misread": 1760,
     "ikhtilaf": 1,
     "conflict": 4,
     "no_reading": 2
@@ -35,8 +35,8 @@
       "consistent": 2
     },
     "haram": {
-      "confirmed": 4496,
-      "misread": 727,
+      "confirmed": 4497,
+      "misread": 726,
       "conflict": 1,
       "no_reading": 2,
       "consistent": 2
@@ -73,8 +73,8 @@
     }
   },
   "priority": {
-    "medium": 8828,
-    "high": 2800,
+    "medium": 8829,
+    "high": 2799,
     "low": 2724
   },
   "omission_perspective": 80,
