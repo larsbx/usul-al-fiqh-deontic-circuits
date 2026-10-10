@@ -280,6 +280,42 @@ import Usul
 #guard (Usul.Refinements.laterBindingGoverns true false true) == true
 #guard (Usul.Refinements.laterBindingGoverns true true false) == false
 #guard (Usul.Refinements.laterBindingGoverns true true true) == true
+#guard (Usul.Refinements.excessObligatory false false) == false
+#guard (Usul.Refinements.excessObligatory false true) == true
+#guard (Usul.Refinements.excessObligatory true false) == false
+#guard (Usul.Refinements.excessObligatory true true) == false
+#guard (Usul.Refinements.advancedSuffices false) == false
+#guard (Usul.Refinements.advancedSuffices true) == true
+#guard (Usul.Refinements.validDespite .essence) == false
+#guard (Usul.Refinements.validDespite .specificCondition) == false
+#guard (Usul.Refinements.validDespite .generalCondition) == false
+#guard (Usul.Refinements.validDespite .outside) == true
+#guard (Usul.Refinements.otherTongueValid false false) == true
+#guard (Usul.Refinements.otherTongueValid false true) == false
+#guard (Usul.Refinements.otherTongueValid true false) == true
+#guard (Usul.Refinements.otherTongueValid true true) == true
+#guard (Usul.Refinements.combineForms false) == true
+#guard (Usul.Refinements.combineForms true) == false
+#guard (Usul.Refinements.excessObligatoryIn false false false) == false
+#guard (Usul.Refinements.excessObligatoryIn false false true) == true
+#guard (Usul.Refinements.excessObligatoryIn false true false) == true
+#guard (Usul.Refinements.excessObligatoryIn false true true) == true
+#guard (Usul.Refinements.excessObligatoryIn true false false) == false
+#guard (Usul.Refinements.excessObligatoryIn true false true) == false
+#guard (Usul.Refinements.excessObligatoryIn true true false) == false
+#guard (Usul.Refinements.excessObligatoryIn true true true) == false
+#guard (Usul.Refinements.advancedSufficesIn false false) == false
+#guard (Usul.Refinements.advancedSufficesIn false true) == false
+#guard (Usul.Refinements.advancedSufficesIn true false) == true
+#guard (Usul.Refinements.advancedSufficesIn true true) == false
+#guard (Usul.Refinements.otherTongueValidIn false false false) == true
+#guard (Usul.Refinements.otherTongueValidIn false false true) == true
+#guard (Usul.Refinements.otherTongueValidIn false true false) == false
+#guard (Usul.Refinements.otherTongueValidIn false true true) == true
+#guard (Usul.Refinements.otherTongueValidIn true false false) == true
+#guard (Usul.Refinements.otherTongueValidIn true false true) == true
+#guard (Usul.Refinements.otherTongueValidIn true true false) == true
+#guard (Usul.Refinements.otherTongueValidIn true true true) == true
 #guard (Usul.Refinements.useSubstituteAt false false) == true
 #guard (Usul.Refinements.useSubstituteAt false true) == true
 #guard (Usul.Refinements.useSubstituteAt true false) == false

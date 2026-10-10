@@ -282,6 +282,39 @@ ENCODERS: dict[str, dict] = {
         facts={"successive": B, "earlier_binding": B, "later_binding": B}, out=B,
         lean="Usul.Refinements.laterBindingGoverns {successive} {earlier_binding} {later_binding}",
         py=lambda f: f["successive"] and (f["later_binding"] or not f["earlier_binding"])),
+    "excess_over_sufficient": dict(
+        sadi=[], qawaid=[RAJAB.format(3)], facts={"separable": B, "lightened": B},
+        out=B, lean="Usul.Refinements.excessObligatory {separable} {lightened}",
+        py=lambda f: not f["separable"] and f["lightened"]),
+    "advanced_worship": dict(
+        sadi=[], qawaid=[RAJAB.format(5)], facts={"due_at_performance": B},
+        out=B, lean="Usul.Refinements.advancedSuffices {due_at_performance}",
+        py=lambda f: f["due_at_performance"]),
+    "prohibited_worship": dict(
+        sadi=[], qawaid=[RAJAB.format(9)],
+        facts={"target": ("essence", "specificCondition", "generalCondition", "outside")},
+        out=B, lean="Usul.Refinements.validDespite {target}",
+        py=lambda f: f["target"] == "outside"),
+    "wording_in_other_tongue": dict(
+        sadi=[], qawaid=[RAJAB.format(10)], facts={"meaning_only": B, "able": B},
+        out=B, lean="Usul.Refinements.otherTongueValid {meaning_only} {able}",
+        py=lambda f: f["meaning_only"] or not f["able"]),
+    "combining_forms": dict(
+        sadi=[], qawaid=[RAJAB.format(12)], facts={"substitutes": B},
+        out=B, lean="Usul.Refinements.combineForms {substitutes}",
+        py=lambda f: not f["substitutes"]),
+    "excess_in_following": dict(
+        sadi=[], qawaid=[RAJAB.format(3)], facts={"separable": B, "lightened": B, "following": B},
+        out=B, lean="Usul.Refinements.excessObligatoryIn {separable} {lightened} {following}",
+        py=lambda f: not f["separable"] and (f["lightened"] or f["following"])),
+    "advanced_kaffara_at_obligation": dict(
+        sadi=[], qawaid=[RAJAB.format(5)], facts={"due_at_performance": B, "kaffara_changed": B},
+        out=B, lean="Usul.Refinements.advancedSufficesIn {due_at_performance} {kaffara_changed}",
+        py=lambda f: f["due_at_performance"] and not f["kaffara_changed"]),
+    "wording_need_not_learn": dict(
+        sadi=[], qawaid=[RAJAB.format(10)], facts={"meaning_only": B, "able": B, "need_not_learn": B},
+        out=B, lean="Usul.Refinements.otherTongueValidIn {meaning_only} {able} {need_not_learn}",
+        py=lambda f: f["meaning_only"] or not f["able"] or f["need_not_learn"]),
     "substitute_at_obligation": dict(
         sadi=[28], qawaid=[RAJAB.format(16)], facts={"original_possible": B, "settled_at_obligation": B},
         out=B, lean="Usul.Refinements.useSubstituteAt {original_possible} {settled_at_obligation}",

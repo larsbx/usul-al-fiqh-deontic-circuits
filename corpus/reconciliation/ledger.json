@@ -239,6 +239,186 @@
       ]
     },
     {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f000",
+      "grades": [
+        "takhrij",
+        "takhrij"
+      ],
+      "jam": {
+        "encoder": "excess_in_following",
+        "from": "excess_over_sufficient",
+        "farq": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f000"
+      },
+      "naskh": null,
+      "note": "Both sides are derivations: al-Qāḍī and Ibn ʿAqīl's takhrīj on the two wujūh, and Ibn ʿAqīl's iḥtimāl.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v02:p223",
+          "excerpt_ar": "(ومن أدرك الركوع أدرك الركعة) هذا المذهب مطلقا، سواء أدرك معه",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Al-Mardāwī says it is al-madhhab without qualification that whoever catches the rukūʿ catches the rakʿa, whether or not he catches the imam's ṭumaʾnīna, so the imam's rukūʿ beyond the sufficient measure still counts for following (position 1)."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p460",
+          "excerpt_ar": "في إدراكه) أي الإمام (راكعا ms0522 أدرك الركعة ولو لم يدرك معه الطمأنينة إذا",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf/Iqnāʿ rule decisively that he catches the rakʿa even if he did not catch the ṭumaʾnīna with the imam, provided he settles himself."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v01:p285",
+          "excerpt_ar": "قبل تسليمة الإمام الأولى أدرك الجماعة ومن أدرك الركوع دون الطمأنينة معه",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The Muntahā states decisively that whoever catches the rukūʿ without the ṭumaʾnīna with the imam settles himself, follows, and has caught the rakʿa."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f001",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v05:p551",
+          "excerpt_ar": "انتهى. \"قلت\": وهو الصواب, ولها نظائر, منها لو أخرج بعيرا عن خمس من الإبل",
+          "position": 0,
+          "grade": "tashih",
+          "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
+          "note": "In Taṣḥīḥ al-Furūʿ al-Mardāwī corrects the two unweighted wujūh in favour of \"only the seventh is due\" (\"qultu: wa-huwa al-ṣawāb\"), naming as its parallels the camel paid for five camels and the badana slaughtered for a vowed hady."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p534",
+          "excerpt_ar": "بدنة لم تلزمه كلها في الأشهر. انتهى. وقدمه ابن رزين في شرحه، وقال: هذا",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Al-Inṣāf quotes Ibn Abī al-Majd that the whole badana is not binding \"fī al-ashhar\", with Ibn Razīn putting it first and calling it \"aqyas\"."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p462",
+          "excerpt_ar": "(وإن ذبح بدنة أو بقرة فهو أفضل وتكون كلها واجبة) ؛ لأنه اختار الأعلى",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf/Iqnāʿ rule decisively that if he slaughters a badana for a sheep-dam it is better and all of it is obligatory, as when one chooses the highest of the expiation options."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p373",
+          "excerpt_ar": "بقرة وإن ذبح بدنة أو بقرة فهو أفضل وتكون كلها واجبة ومن وجبت عليه بدنة",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ matn states without dispute that the whole badana is obligatory."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f002",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p162",
+          "excerpt_ar": "الكل فرض، أو قدر الناصية؟ فيه وجهان، والصحيح منهما: أن الواجب قدر",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "For wiping the whole head at once on the riwāya that the farḍ is the nāṣiya's measure, al-Mardāwī says of the two wujūh that the correct one is that the obligatory part is the nāṣiya's measure (the line ends \"qadr / al-nāṣiya\")."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f003",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "«وهو الصواب» is Ibn Rajab's own preference.",
+      "evidence": [
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p190",
+          "excerpt_ar": "وجود التبيع لأنه إخراج الواجب وزيادة تنفع ولا تضر (وإن لم يفعل) أي: يدفع",
+          "position": 0,
+          "grade": "takhrij",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf justifies accepting an older animal (a musinna for a tabīʿ) as \"paying the obligatory plus an excess that benefits and does no harm\", which treats the excess as extra beyond the farḍ (position 0), though it does not say so in taṣḥīḥ terms. Graded takhrīj: the source rules by implication, not on this masʾala."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f001",
+      "grades": [
+        "jazm",
+        "ashab"
+      ],
+      "jam": {
+        "encoder": "advanced_kaffara_at_obligation",
+        "from": "advanced_worship",
+        "farq": "src:openiti-hajjawi-iqna-shamela7360/v04:p086"
+      },
+      "naskh": null,
+      "note": "«إطلاق الأكثرين»: the unqualified statements of most aṣḥāb.",
+      "evidence": [
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p244",
+          "excerpt_ar": "(وإذا كفر بالصوم قبل الحنث لفقره) إذ (ثم حنث وهو موسر لم يجزئه) الصوم",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf/Iqnāʿ rule decisively that one who expiated by fasting before breaking the oath, then broke it while well off, has not been discharged, since the expiation is judged at the time of wujūb; Ibn Rajab's objection is then quoted only as a report."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p338",
+          "excerpt_ar": "وهو موسر لم يجزئه ومن كرر يمينا موجبها واحد على فعل واحد كقوله: والله لا",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ matn ends the sentence \"if he expiated by fasting before the ḥinth for poverty, then broke the oath\" (previous line) with \"while well off, it does not suffice\"."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p044",
+          "excerpt_ar": "المصنف في المغني، والشارح، وغيرهما: لا يجزئه؛ لأنا تبينا أن الواجب غير",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Al-Inṣāf adds al-Shāriḥ and others to al-Mughnī for \"it does not suffice\", then quotes Ibn Rajab's report that the unqualified statements of most aṣḥāb disagree, giving no taṣḥīḥ of its own."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f002",
+      "grades": [
+        "jazm",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f003",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f001",
       "grades": [
         "nass",
@@ -316,6 +496,182 @@
           "grade": "jazm",
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā rules that even the muḥdith who finds insufficient water uses it and then performs tayammum."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f002",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v02:p042",
+          "excerpt_ar": "وهذا المذهب، وعليه الجمهور وقطع به أكثرهم، وعنه لا يكبر بلغته. ذكرها",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On takbīrat al-iḥrām for one who cannot learn it or fears the time will run out, al-Mardāwī says saying it in his own tongue is al-madhhab, held by the majority, and adds that tasbīḥ in rukūʿ and sujūd and duʿāʾ take the same ruling (citing al-Qawāʿid q.10)."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p331",
+          "excerpt_ar": "(وحكم كل ذكر واجب) كتشهد وتسبيح ركوع وسجود (كتكبيرة الإحرام) لمساواته",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf/Iqnāʿ rule that every obligatory dhikr, including the tasbīḥ of rukūʿ and sujūd, is like takbīrat al-iḥrām, which the one unable says in his tongue."
+        }
+      ],
+      "note": "Annotated for its leading example, the takbīr, an obligatory dhikr. The later works rule the recommended dhikr and duʿāʾ separately (not translated, by Aḥmad's naṣṣ), which is a different fact, so that evidence is not graded here."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f004",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": {
+        "encoder": "wording_need_not_learn",
+        "from": "wording_in_other_tongue",
+        "farq": "src:openiti-buhuti-kashshaf-shamela21642/v05:p039"
+      },
+      "naskh": null,
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p048",
+          "excerpt_ar": "المذهب. اختاره القاضي، وابن عبدوس في تذكرته. وصححه في التصحيح. وجزم به",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On one who could learn the Arabic words of nikāḥ, al-Mardāwī says the first wajh, that he need not learn them and the contract is concluded in his tongue with their specific meaning, \"wa-huwa al-madhhab\" (the label starts this line), chosen by al-Qāḍī and Ibn ʿAbdūs and corrected in al-Taṣḥīḥ."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p039",
+          "excerpt_ar": "يلزمه) تعلمها بالعربية لأن النكاح غير واجب بأصل الشرع فلم يجب تعلم",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf/Iqnāʿ rule decisively that one able to learn the Arabic offer and acceptance need not learn them, because nikāḥ is not obligatory in itself and the meaning is what counts."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p059",
+          "excerpt_ar": "الخاص بكل لسان من عاجز ولا يلزمه تعلم لا كتابة وإن قيل لمزوج أزوجت فقال",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The Muntahā states that nikāḥ is valid from one who cannot manage the Arabic with whatever conveys its specific meaning in any tongue, and that he need not learn it."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p048",
+          "excerpt_ar": "يتعلم ذلك بالعربية: لزمه في أصح الوجهين. وقدمه في الهداية. والمستوعب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "For the other wajh, al-Inṣāf quotes the two Riʿāyas and al-Ḥāwī al-ṣaghīr that learning is obligatory \"fī aṣaḥḥ al-wajhayn\", put first in al-Hidāya and al-Mustawʿib."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f005",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": {
+        "encoder": "wording_need_not_learn",
+        "from": "wording_in_other_tongue",
+        "farq": "src:openiti-buhuti-kashshaf-shamela21642/v05:p039"
+      },
+      "naskh": null,
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p238",
+          "excerpt_ar": "في المذهب، والمستوعب، والخلاصة، والنظم. أحدهما: يصح بلسانه، وهو المذهب،",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On liʿān by one unable in Arabic (where al-Muqniʿ asks whether he must learn it), al-Mardāwī says the wajh that it is valid in his tongue is al-madhhab, chosen by al-Muwaffaq and al-Shāriḥ and decisive in al-Wajīz."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p097",
+          "excerpt_ar": "نفيه لم يعتد به وإن عجزا عنه بالعربية لم يلزمهما تعلمها ويصح بلسانهما",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ rules that if the spouses cannot manage the liʿān in Arabic they need not learn it and it is valid in their own tongue."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p372",
+          "excerpt_ar": "العربية من يحسنها ولا يلزمه تعلمها إن عجز عنه بها أو علقه بشرط أو عدمت",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The Muntahā likewise says the one unable in Arabic need not learn it, while one who knows Arabic must use it."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f002",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p425",
+          "excerpt_ar": "يقول: لا حول ولا قوة إلا بالله العلي العظيم) الصحيح من المذهب: أنه يستحب",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Al-Mardāwī says al-ṣaḥīḥ min al-madhhab is that the hearer says only \"lā ḥawla wa-lā quwwata illā bi-llāh\" at the ḥayʿala (\"faqaṭ\", next line), held by the great majority of the aṣḥāb; combining them is only a \"qīla\"."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p081",
+          "excerpt_ar": "فيقول: لا حول ولا قوة إلا بالله وعند التثويب صدقت وبررت وفي الإقامة عند",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ matn has the hearer substitute the ḥawqala for the ḥayʿala and \"ṣadaqta wa-barirta\" at the tathwīb, without combining."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f004",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v02:p077",
+          "excerpt_ar": "هذا اختيار أكثر أصحابنا قال الزركشي: هذا هو المشهور من الروايتين،",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Al-Mardāwī rules (al-ṣaḥīḥ min al-madhhab, held by the majority) that the form al-Muqniʿ gives first is the best: \"kamā ṣallayta ʿalā āli Ibrāhīm\", without combining. Al-Majd calls it the choice of most aṣḥāb and al-Zarkashī \"the mashhūr of the two riwāyas\"."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p358",
+          "excerpt_ar": "آل إبراهيم إنك حميد مجيد هذا الأولى من ألفاظ الصلاة والبركة) عليه صلى",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf/Iqnāʿ rule decisively that the best wording is the Kaʿb b. ʿUjra form with \"āli Ibrāhīm\" only; other transmitted forms are allowed."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v02:p078",
+          "excerpt_ar": "والمستوعب، والخلاصة، وغيرهم، وعنه الأفضل كما صليت على إبراهيم، وعلى آل",
+          "position": 1,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Al-Inṣāf reports a riwāya from Aḥmad that the best form is the combined \"kamā ṣallayta ʿalā Ibrāhīma wa-ʿalā āli Ibrāhīm\", which supports the combining view."
         }
       ]
     },

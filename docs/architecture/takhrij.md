@@ -176,14 +176,14 @@ Every ikhtilāf farʿ off the marked madhhab side is run through the kernel's ow
 **Scope reconciliation.** Counts come from committed record IDs minus all existing annotations, not historical estimates. M4 now annotates 196 Ibn Rajab records under 14 qawāʿid, including nine `.f000` additions. PR #29's 1,129 segmented records minus those 196 and tranche 1's 26 left 907 records in 122 qawāʿid with cases. The old “869 in 146” mixed pre-opening counts with all unannotated qawāʿid, including those with no segmented case. PR #30 then added seven segmented records and annotated tranche 2's 25: 1,136 − 196 − 26 − 25 = 889, in 118 qawāʿid. Merged PR #32 then added the list-and-division segmentation and 21 candidate annotations. The unified tranche 3 below preserves those cases and PR #31's eight existing-record annotations, in one 29-record suite; current totals are generated below. Ibn al-Laḥḥām and the global report's totals are separate scopes.
 
 <!-- BEGIN GENERATED M8 SCOPE -->
-**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 348 annotated + **831 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 44 are fully annotated and **110 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
+**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 372 annotated + **807 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 49 are fully annotated and **105 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
 
 The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
 
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.793 | 0 | 0 |
-| All annotation suites | 375 | 0.984 | 0.668 | 0 | 6 |
+| All annotation suites | 399 | 0.985 | 0.668 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -343,6 +343,24 @@ Results on the tranche:
   - **39.f002 contains Aḥmad's own exception to 39's exception:** «أجعل عتقك صداقك … كل ذلك جائز إذا كانت له نية», an allusion concluding a marriage. The farʿ is annotated for the rajʿa it opens with.
 - **Segmentation finding:** 39's prelude is its general statement, so it has no `.f000`; its two furūʿ are `.f001` and `.f002`.
 
+**Tranche 7 (qawāʿid 3, 5, 9, 10, 12; 24 furūʿ).** Read from each qāʿida's own statement (`corpus/takhrij/rajab_m8_tranche7_furu.json`):
+
+| Qāʿida | Reading | Link to the bank |
+|---|---|---|
+| 3: an undistinguished excess over what suffices («ففيه وجهان») | `excessObligatory`: obligatory only where the whole was the duty, lightened («على الصحيح»); otherwise voluntary (al-Qāḍī, «وهو الصواب») | new |
+| 5: an act advanced before its time, the state then changing | `advancedSuffices`: it suffices when it was the duty at performance («كان فرضه في الظاهر فبرئ به») | new |
+| 9: worship performed in a prohibited way | `validDespite`: valid only where the prohibition returns to what is no condition («وخالفه الأكثرون») | new |
+| 10: wordings in worship and contracts | `otherTongueValid`: where only the meaning counts, or he cannot manage the Arabic | new |
+| 12: worship transmitted in several forms | `combineForms`: not where the forms are substitutes («لا يصح الجمع بين البدل والمبدل») | new |
+
+Results on the tranche:
+- **9 derivable, 15 ikhtilāf (3 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 24/24 = 1.000, madhhab coverage 12/24 = 0.500.
+- **What the cases say about the readings:**
+  - **Qāʿidas 3, 10 and 12 are stated as khilāf**, and Ibn Rajab marks no madhhab on their disputed furūʿ. The readings take his own resolutions: the lightened whole (3), the meaning-or-inability rule (10), and Taqī al-Dīn's substitute criterion (12). That criterion also explains why Aḥmad combines the two Friday sunnas («جمعت فعله وأمره»): two prayers are not substitutes for one another.
+  - **Qāʿida 5** follows the unqualified statements of most aṣḥāb against al-Mughnī and Ibn al-Zāghūnī. It also follows the manṣūṣ on the boy's prayer, which discharged no duty.
+- **Reconciliation:** the 12 new apparent contradictions entered the ledger (`corpus/reconciliation/`), with their later taṣḥīḥ imported as for the earlier tranches. Four became jamʿ, each on a farq the later works cite: following (3.f000, `excessObligatoryIn`), the kaffāra at its wujūb (5.f001, `advancedSufficesIn`), and no duty to learn the Arabic for an act not itself due (10.f004, f005, `otherTongueValidIn`). The tranche's madhhab coverage rises to 16/24 = 0.667.
+- **Segmentation finding:** 9.f000 and 9.f001 each run several «(ومنها)» examples together, because the inline examples sit mid-line (the known 9 edge). Each is annotated for its leading example.
+
 **Coverage trend:**
 
 | Stage | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
@@ -366,6 +384,9 @@ Results on the tranche:
 | All, after tranche 6 | 375 | 0.984 | 0.642 | 0 | 6 |
 | All, after reconciliation (jamʿ on qāʿida 37) | 375 | 0.984 | 0.647 | 0 | 6 |
 | All, after the reconciliation refinements (qāʿidas 16, 64–65) | 375 | 0.984 | 0.668 | 0 | 6 |
+| M8 tranche 7 alone | 24 | 1.000 | 0.500 | 0 | 0 |
+| All, after tranche 7 | 399 | 0.985 | 0.658 | 0 | 6 |
+| All, after tranche 7's reconciliation | 399 | 0.985 | 0.668 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 
