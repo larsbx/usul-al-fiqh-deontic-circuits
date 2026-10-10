@@ -39,6 +39,7 @@ mutants=(
   "furuq_daif_alike|furuq_oracle.pl|s/^grade(daif,    apart, alike)\./grade(daif,    apart, apart)./"
   "furuq_jam_daif|furuq_oracle.pl|s/^grade(jamDaif, alike, apart)\./grade(jamDaif, apart, apart)./"
   "furuq_reported|furuq_oracle.pl|s/^grade(reported, apart, apart)\./grade(reported, apart, alike)./"
+  "furuq_his|furuq_oracle.pl|s/^his(G) :- G \\\\== reported, grade(G, _, _)\./his(G) :- grade(G, _, _)./"
 )
 
 fail=0

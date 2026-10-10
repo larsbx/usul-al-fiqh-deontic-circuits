@@ -16,6 +16,7 @@
 %    tanaqud/<T>/clash      the two readings really disagree somewhere (oracle's own model)
 %    tanaqud/<T>/resolution the register's resolution is jamʿ, the first stage
 %    furuq/<F>/madhhab, furuq/<F>/ruling  corpus/furuq/*.json: each item's two rulings from its grade
+%    furuq/<F>/overturns    an item that overturns an earlier one: a bare report, overturned by his own grade
 %
 %  Exit status: 0 all agree; 1 a vector disagrees; 2 nothing could be judged
 %  (no data found, or a load warning or error).
@@ -89,13 +90,22 @@ run(Root) :-
            ( directory_file_path(TDir, F, P), read_json(P, R), forall(member(Pair, R.pairs), tanaqud_pair(Pair)) )),
     directory_file_path(Root, 'corpus/furuq', FDir),
     directory_files(FDir, FFs0), msort(FFs0, FFs),
-    forall(( member(F, FFs), file_name_extension(_, json, F) ),
-           ( directory_file_path(FDir, F, P), read_json(P, T), forall(member(I, T.items), furuq_item(I)) )).
+    findall(I, ( member(F, FFs), file_name_extension(_, json, F),
+                 directory_file_path(FDir, F, P), read_json(P, T), member(I, T.items) ), Items),
+    forall(member(I, Items), furuq_item(I)),
+    forall(( member(I, Items), get_dict(overturns, I, PId) ), furuq_overturn(Items, I, PId)).
 
 furuq_item(I) :-
     rulings(I.grade, M, A),
     format(atom(N1), "furuq/~w/madhhab", [I.id]), check(N1, I.madhhab, M),
     format(atom(N2), "furuq/~w/ruling", [I.id]), check(N2, I.ruling, A).
+
+% The overturned item must come earlier in the book.
+furuq_overturn(Items, I, PId) :-
+    format(atom(Name), "furuq/~w/overturns", [I.id]),
+    (   nth1(KP, Items, P), P.id == PId, nth1(KI, Items, I), KP < KI, overturn_ok(P.grade, I.grade)
+    ->  Got = true ; Got = false ),
+    check(Name, true, Got).
 
 tanaqud_pair(Pair) :-
     atom_concat('T-', Num, Pair.id), atom_number(Num, N),

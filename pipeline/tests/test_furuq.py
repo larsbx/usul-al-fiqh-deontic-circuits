@@ -63,3 +63,22 @@ def test_table_lean_is_generated():
     from usul_corpus.__main__ import CORPUS, FURUQ_LEAN
     from usul_corpus.furuq import table_lean
     assert FURUQ_LEAN.read_text(encoding="utf-8") == table_lean(CORPUS)
+
+
+def test_overturns_only_a_bare_report():
+    """The register applied to itself: two items ruling one case differently are a bare report and
+    the grade he gives it later; his own grades never overturn each other (`overturn_iff_daif`)."""
+    seen = {}
+    for i in ITEMS:
+        if "overturns" in i:
+            p = seen[i["overturns"]]                      # an earlier item
+            assert (p["grade"], i["grade"]) == ("reported", "daif"), i["id"]
+            assert p["ruling"] != i["ruling"], i["id"]
+        seen[i["id"]] = i
+    assert sum("overturns" in i for i in ITEMS) == 6
+
+
+def test_qaida_basis_is_grounded():
+    """An item whose reason is a qāʿida names a theorem, unless the aṣl lies outside the sixty."""
+    outside = {"F27", "F47"}                              # «الأصل المحكم في كل الأبواب», «الأصول الشرعية»
+    assert {i["id"] for i in ITEMS if i["basis"] == "qaida" and not i["grounds"]} == outside

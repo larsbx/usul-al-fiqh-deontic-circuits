@@ -45,6 +45,19 @@ weak grade overturns it. -/
 theorem confirms_iff_sahih (g : Grade) : g.apart = g.madhhab ↔ g = .sahih ∨ g = .reported := by
   cases g <;> decide
 
+/-- Whether the ruling is his own: every grade but the bare report. -/
+def Grade.his : Grade → Bool
+  | .reported => false
+  | _ => true
+
+/-- The register applied to itself. A later item may overturn an earlier one on a shared case
+only if the earlier is a bare report (overturning his own grade would make him contradict
+himself) and the later is his own grade. The overturn is then exactly a `daif` grade: the
+reported farq is the one he holds weak. -/
+theorem overturn_iff_daif (p c : Grade) :
+    (p.his = false ∧ c.his = true ∧ p.apart ≠ c.apart) ↔ (p = .reported ∧ c = .daif) := by
+  cases p <;> cases c <;> decide
+
 section Asl
 
 variable {α F G β : Type} {H : α → β} {m : α → F} {a b : α}
@@ -111,5 +124,14 @@ theorem f15_apart :
 
 theorem f18_sahih : Sadi.dischargedByExcuse .omitCommand ≠ Sadi.dischargedByExcuse .commitProhibited := by
   decide
+
+/-! ## F109 · destruction by the non-mukallaf: T-01's human side
+
+«ويشبه هذا إيجاب الضمان على المكلفين وغير المكلفين في إتلافات النفوس والأموال». F13 states the
+same qayd: «إنما الإتلاف الذي يستوي فيه الأهل وغيره في حقوق الآدميين». On the human side of
+T-01, whoever destroys is liable, whatever his state, so F109, F13 and T-01 agree. -/
+
+theorem f109_adami (m : Muamalat.MentalState) : Tanaqud.t1.jam (.adami, m) = true := by
+  cases m <;> decide
 
 end Usul.Furuq

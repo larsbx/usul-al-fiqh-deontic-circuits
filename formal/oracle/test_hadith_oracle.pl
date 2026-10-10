@@ -64,4 +64,7 @@ test(sound_confirms) :- rulings(sahih, apart, apart).
 test(weak_farq_alike) :- rulings(daif, apart, alike).
 test(weak_jam_apart) :- rulings(jamDaif, alike, apart).
 test(reported_as_theirs) :- rulings(reported, apart, apart).
+test(report_overturned_by_weak) :- overturn_ok(reported, daif).
+test(own_grade_never_overturned, [fail]) :- overturn_ok(sahih, daif).
+test(report_not_overturned_by_sound, [fail]) :- overturn_ok(reported, sahih).
 :- end_tests(furuq).

@@ -403,12 +403,16 @@ import Usul
 -- F134: daif
 #guard Usul.Furuq.Grade.apart .daif == false
 #guard Usul.Furuq.Grade.madhhab .daif == true
+-- F134 overturns F133 (Usul.Furuq.overturn_iff_daif)
+#guard !Usul.Furuq.Grade.his .reported && Usul.Furuq.Grade.his .daif && Usul.Furuq.Grade.apart .reported != Usul.Furuq.Grade.apart .daif
 -- F135: reported
 #guard Usul.Furuq.Grade.apart .reported == true
 #guard Usul.Furuq.Grade.madhhab .reported == true
 -- F136: daif
 #guard Usul.Furuq.Grade.apart .daif == false
 #guard Usul.Furuq.Grade.madhhab .daif == true
+-- F136 overturns F135 (Usul.Furuq.overturn_iff_daif)
+#guard !Usul.Furuq.Grade.his .reported && Usul.Furuq.Grade.his .daif && Usul.Furuq.Grade.apart .reported != Usul.Furuq.Grade.apart .daif
 -- F137: reported
 #guard Usul.Furuq.Grade.apart .reported == true
 #guard Usul.Furuq.Grade.madhhab .reported == true
@@ -421,24 +425,32 @@ import Usul
 -- F140: daif
 #guard Usul.Furuq.Grade.apart .daif == false
 #guard Usul.Furuq.Grade.madhhab .daif == true
+-- F140 overturns F139 (Usul.Furuq.overturn_iff_daif)
+#guard !Usul.Furuq.Grade.his .reported && Usul.Furuq.Grade.his .daif && Usul.Furuq.Grade.apart .reported != Usul.Furuq.Grade.apart .daif
 -- F141: reported
 #guard Usul.Furuq.Grade.apart .reported == true
 #guard Usul.Furuq.Grade.madhhab .reported == true
 -- F142: daif
 #guard Usul.Furuq.Grade.apart .daif == false
 #guard Usul.Furuq.Grade.madhhab .daif == true
+-- F142 overturns F141 (Usul.Furuq.overturn_iff_daif)
+#guard !Usul.Furuq.Grade.his .reported && Usul.Furuq.Grade.his .daif && Usul.Furuq.Grade.apart .reported != Usul.Furuq.Grade.apart .daif
 -- F143: reported
 #guard Usul.Furuq.Grade.apart .reported == true
 #guard Usul.Furuq.Grade.madhhab .reported == true
 -- F144: daif
 #guard Usul.Furuq.Grade.apart .daif == false
 #guard Usul.Furuq.Grade.madhhab .daif == true
+-- F144 overturns F143 (Usul.Furuq.overturn_iff_daif)
+#guard !Usul.Furuq.Grade.his .reported && Usul.Furuq.Grade.his .daif && Usul.Furuq.Grade.apart .reported != Usul.Furuq.Grade.apart .daif
 -- F145: reported
 #guard Usul.Furuq.Grade.apart .reported == true
 #guard Usul.Furuq.Grade.madhhab .reported == true
 -- F146: daif
 #guard Usul.Furuq.Grade.apart .daif == false
 #guard Usul.Furuq.Grade.madhhab .daif == true
+-- F146 overturns F145 (Usul.Furuq.overturn_iff_daif)
+#guard !Usul.Furuq.Grade.his .reported && Usul.Furuq.Grade.his .daif && Usul.Furuq.Grade.apart .reported != Usul.Furuq.Grade.apart .daif
 -- F147: reported
 #guard Usul.Furuq.Grade.apart .reported == true
 #guard Usul.Furuq.Grade.madhhab .reported == true

@@ -257,7 +257,10 @@
     "ref": "src:islamhouse-qj-doc#furuq",
     "excerpt_ar": "والتفريق بين المعذور وغيره هو الأولى كما اختاره شيخ الإسلام ابن تيمية"
    },
-   "grounds": [],
+   "grounds": [
+    "Usul.Sadi.q27_asymmetry",
+    "Usul.Tanaqud.t1_jam"
+   ],
    "note": "the madhhab treats them alike; he prefers distinguishing them, as in the fast and the ḥajj"
   },
   {

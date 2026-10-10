@@ -236,7 +236,9 @@
     "excerpt_ar": "لأنها من الحقوق المالية التي يستوي فيها من له قدرة مالية من مكلف وغيره"
    },
    "grounds": [
-    "Usul.Muamalat.q13_intent_irrelevant"
+    "Usul.Muamalat.q13_intent_irrelevant",
+    "Usul.Furuq.f109_adami",
+    "Usul.Tanaqud.t1_jam"
    ],
    "note": "compensation follows its cause «لربط الحكم بسببه الموجب للضمان» (Q13)"
   },

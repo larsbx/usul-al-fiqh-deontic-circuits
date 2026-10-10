@@ -386,6 +386,9 @@ import Usul
 #check @Usul.Furuq.f13_alike
 #check @Usul.Furuq.f15_apart
 #check @Usul.Furuq.f18_sahih
+#check @Usul.Furuq.f109_adami
+#check @Usul.Furuq.Grade.his
+#check @Usul.Furuq.overturn_iff_daif
 #check @Usul.Schema.Factors.qiyas
 #check @Usul.Qiyas.Argument
 #check @Usul.Qiyas.Agrees

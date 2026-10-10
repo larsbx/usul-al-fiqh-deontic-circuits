@@ -1,5 +1,5 @@
 {
- "note": "al-Saʿdī, al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa, part two (al-furūq), tranche 8: F137–F166 in order after tranche 7, to the end of the book; conventions as in tranches 1 and 6. The closing remark on the twenty-odd furūq between nikāḥ and the other contracts («قد ذكرتها في كتاب الإرشاد») names no cases here and is not an item.",
+ "note": "al-Saʿdī, al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa, part two (al-furūq), tranche 8: F137–F166 in order after tranche 7, to the end of the book; conventions as in tranches 1 and 6. The closing remark on the twenty-odd furūq between nikāḥ and the other contracts («قد ذكرتها في كتاب الإرشاد») names no cases here and is not an item. Six weak items here and in tranche 7 overturn a case inside the bare report just before them (`overturns`); the bank applied to the register (Usul.Furuq.overturn_iff_daif).",
  "work": "sadi.qawaid_jamia",
  "witness": "islamhouse-qj-doc",
  "module": "Usul.Furuq",
@@ -12,7 +12,9 @@
   "Usul.Furuq.Grade.apart",
   "Usul.Furuq.alike_unless_farq",
   "Usul.Furuq.farq_is_maana",
-  "Usul.Furuq.suri_farq_idle"
+  "Usul.Furuq.suri_farq_idle",
+  "Usul.Furuq.Grade.his",
+  "Usul.Furuq.overturn_iff_daif"
  ],
  "items": [
   {
@@ -81,7 +83,8 @@
     "excerpt_ar": "والرواية الأخرى أصح المنع في هذه الأخيرة لدخولها في العموم وعدم المعارض"
    },
    "grounds": [],
-   "note": ""
+   "note": "",
+   "overturns": "F139"
   },
   {
    "id": "F141",
@@ -115,7 +118,8 @@
     "excerpt_ar": "وقيل وهو الصحيح: أن المثلي أعم من ذلك"
    },
    "grounds": [],
-   "note": "«واختاره شيخ الإسلام»; the division mithlī ∕ mutaqawwam stands, with the wider mithlī"
+   "note": "«واختاره شيخ الإسلام»; the division mithlī ∕ mutaqawwam stands, with the wider mithlī",
+   "overturns": "F141"
   },
   {
    "id": "F143",
@@ -149,7 +153,8 @@
     "excerpt_ar": "قوي بلزومه مطلقاً، وهو الصحيح"
    },
    "grounds": [],
-   "note": ""
+   "note": "",
+   "overturns": "F143"
   },
   {
    "id": "F145",
@@ -183,7 +188,8 @@
     "excerpt_ar": "وعلى القول الصحيح. هذا القسم يتعلق بذمته"
    },
    "grounds": [],
-   "note": ""
+   "note": "",
+   "overturns": "F145"
   },
   {
    "id": "F147",
