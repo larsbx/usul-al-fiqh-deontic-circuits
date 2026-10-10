@@ -64,6 +64,7 @@ def test_jam_must_be_conservative_and_land_on_the_prevailing_side():
     assert reconcile.check([unbound], {"entries": [_entry("x", ["ashab", "zahir"], jam)]}, DOSSIER) == []
     # The flip lands on the weaker side: not a jamʿ.
     assert reconcile.check([unbound], {"entries": [_entry("x", ["zahir", "ashab"], jam)]}, DOSSIER) == [
+        "x: a jamʿ must land on the prevailing side",
         "x: the refinement departs from successive_contracts other than to the prevailing side"]
     # A derivable farʿ the refinement changes breaks conservativity.
     derivable = {**unbound, "far": "y", "class": "derivable"}
@@ -118,3 +119,19 @@ def test_evidence_is_verbatim(v):
     if not src.exists():
         pytest.skip(f"{w} not cached")
     assert locate(src.read_text(encoding="utf-8"), v["excerpt_ar"]) == loc, v["ref"]
+
+
+def test_named_companions_count_once_per_ruling():
+    """Unmarked holders (one companion, a takhrīj, a wajh) do not weigh by number; marked ones do."""
+    assert reconcile.support([("a", "ashab"), ("a", "ashab"), ("a", "ashab")], "a") == [2]
+    assert reconcile.prevail([("a", "ashab"), ("a", "ashab"), ("b", "ashab")]) is None
+    assert reconcile.prevail([("a", "nass"), ("a", "nass"), ("b", "nass")]) == "a"
+
+
+def test_every_jam_lands_on_the_prevailing_side():
+    jam = {"encoder": "successive_by_binding", "from": "successive_contracts", "farq": "r"}
+    f = lambda e, l: {"successive": True, "earlier_binding": e, "later_binding": l}
+    moved = _ikh("x", False, [True, False], True, "successive_by_binding", f(True, False))
+    kept = _ikh("y", True, [True, False], False, "successive_by_binding", f(False, False))
+    ledger = {"entries": [_entry("x", ["ashab", "zahir"], jam), _entry("y", ["ashab", "zahir"], jam)]}
+    assert reconcile.check([moved, kept], ledger, DOSSIER) == ["y: a jamʿ must land on the prevailing side"]

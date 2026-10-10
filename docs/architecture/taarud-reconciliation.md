@@ -33,7 +33,7 @@ All of them sit in `corpus/reconciliation/ledger.json`. When a new tranche adds 
 7. **takhrīj:** a takhrīj or an iḥtimāl.
 8. **wajh:** a bare wajh.
 
-**Tarjīḥ.** Each position lists the distinct grades of the people who hold it. Positions with the same ruling pool their grades, and a ruling's support is its pooled grades sorted strongest first. Supports are compared lexicographically, so a weaker grade never outweighs a stronger one, however many hold it. When two supports share every grade, the longer one wins, following «الأكثرون». Named companions do not count individually, so two of them against one is still a tie.
+**Tarjīḥ.** Each position lists the distinct grades of the people who hold it. Positions with the same ruling pool their grades, and a ruling's support is its pooled grades sorted strongest first. Supports are compared lexicographically, so a weaker grade never outweighs a stronger one, however many hold it. When two supports share every grade, the longer one wins, following «الأكثرون». Unmarked grades (one companion, a takhrīj, a wajh) count once per ruling, however many hold them, so two named companions against one is still a tie. Marked grades count per holder.
 
 **Lean is the authority.** `UsulTest/Reconcile.lean` holds one generated guard per entry, so the Python mirror cannot drift from `Usul.Reconcile.reconcile`. A test also pins the grade ranks to the Lean definition.
 
@@ -71,12 +71,16 @@ Some evidence does not speak to the farʿ itself, and is graded lower:
 
 ## Results
 
-| Stage | Ibn Rajab's reports alone | With the later taṣḥīḥ |
-|---|---|---|
-| jamʿ | 3 | 3 |
-| tarjīḥ for the reading | 29 | 52 |
-| tarjīḥ against the reading (residue) | 25 | 67 |
-| tawaqquf | 71 | 6 |
+| Stage | Ibn Rajab's reports alone | With the later taṣḥīḥ | After the refinements (current) |
+|---|---|---|---|
+| jamʿ | 3 | 3 | 11 |
+| tarjīḥ for the reading | 29 | 52 | 52 |
+| tarjīḥ against the reading (residue) | 25 | 67 | 58 |
+| tawaqquf | 71 | 6 | 7 |
+
+The first two columns predate two fixes from review:
+- unmarked grades now count once per ruling, which turns 64.f003 into a tie;
+- every jamʿ entry, not only one whose ruling moves, must land on the prevailing side, which makes 37.f001 a residue.
 
 The later works settle 65 of the 71 suspended cases. They mostly settle them against the reading, because the readings follow the qāʿida while the madhhab often follows its own exceptions.
 
@@ -94,7 +98,7 @@ The later works settle 65 of the 71 suspended cases. They mostly settle them aga
   - Abū al-Barakāt's own farq is the jamʿ: «ويسقط ضمان العارية لأنها ليست لازمة، وعقد هذه الأمانة لازم» (37.f003). Under it, the later contract governs where it binds, or where the earlier one did not.
   - Two theorems show the refinement is the old reading on every farʿ where that holds: `laterBindingGoverns_conservative` and `laterBindingGoverns_unbound_earlier`. So 37.f002–f005 keep their rulings.
   - 37.f000 and 37.f006 move to the higher-graded side.
-  - 37.f001 (the deposit) stays liable, and Majd's own «وفرق صاحب المحرر بينهما» separates it from the pledge.
+  - 37.f001 (the deposit) stays liable under the refinement, as Majd's «وفرق صاحب المحرر بينهما» has it. Because a jamʿ must land on the prevailing side, and the later authors' ẓāhir of Aḥmad outranks Majd there, it remains a residue.
   - Madhhab coverage rises from 0.642 to 0.647.
 - **The 25 residues are the refinement worklist** (`corpus/reconciliation/report.json`, `worklist`). These are furūʿ where tarjīḥ goes against the reading, grouped by encoder. The largest groups:
   - `lots` (7): the manṣūṣ and the mashhūr exclude lots where the reading allows them.
@@ -112,7 +116,7 @@ The residues against each reading (`report.json` → `worklist`) are where the r
 | `substitute_at_obligation` (`useSubstituteAt`, qāʿida 16) | «والاعتبار في الكفارات بحالة الوجوب» (al-Iqnāʿ; Kashshāf «اعتبارا بوقت الوجوب»). Once the substitute is what fell due, finding the original does not move him. | 5 of the qāʿida's 7 furūʿ move to the taṣḥīḥ side. 16.f002 (the like found before payment) and 16.f006 keep their rulings. |
 | `unknown_condition_in_fact` (`countsAsMetIn`, qāʿidas 64–65) | «لأن الاعتبار في العقود بما في نفس الأمر» (Kashshāf). In a transaction whose unknown condition is the actor's own authority, the condition counts as it is in fact. | 4 furūʿ move: the disposal under an unknown permission, the khiyār disposal, the sale by an unknowing heir, the release of an unknown debt. ṭalāq, ʿitq, nikāḥ and the runaway's sale (a condition of the object) keep the reading. |
 
-With these and qāʿida 37 there are 12 jamʿ. The residues fall to 58 and madhhab coverage reaches 0.668.
+With these and qāʿida 37 there are 11 jamʿ. The residues fall to 58 and madhhab coverage reaches 0.668.
 
 **Left as residues, for want of a cited farq:**
 

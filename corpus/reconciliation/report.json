@@ -1,14 +1,14 @@
 {
   "entries": 128,
   "stages": {
-    "jam": 12,
+    "jam": 11,
     "tarjih": 110,
-    "tawaqquf": 6
+    "tawaqquf": 7
   },
   "standing": {
     "against_reading": 58,
-    "for_reading": 64,
-    "tawaqquf": 6
+    "for_reading": 63,
+    "tawaqquf": 7
   },
   "worklist": {
     "asl_zahir": [
@@ -63,6 +63,10 @@
       "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f002",
       "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f005"
     ],
+    "successive_by_binding": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f007"
+    ],
     "tabaa": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f004",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f008"
@@ -70,10 +74,6 @@
     "tolerance_exceeded": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f002",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f004"
-    ],
-    "unknown_condition_in_fact": [
-      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f003",
-      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f002"
     ],
     "benefit_to_other": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f003"
@@ -111,11 +111,11 @@
     "running_water": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001"
     ],
-    "successive_by_binding": [
-      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f007"
-    ],
     "switch_to_original": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f002"
+    ],
+    "unknown_condition_in_fact": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f002"
     ]
   },
   "review": [

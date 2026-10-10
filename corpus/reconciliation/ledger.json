@@ -1573,13 +1573,9 @@
         "ashab",
         "zahir"
       ],
-      "jam": {
-        "encoder": "successive_by_binding",
-        "from": "successive_contracts",
-        "farq": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001"
-      },
+      "jam": null,
       "naskh": null,
-      "note": "«وفرق صاحب المحرر بينهما»: the later authors' ẓāhir is stated «كالرهن», and the binding farq separates the deposit from the pledge."
+      "note": "The binding refinement keeps the deposit liable (deposit and loan alike non-binding, «وفرق صاحب المحرر بينهما»), but a jamʿ must land on the prevailing side, and the later authors' ẓāhir of Aḥmad outranks it here: a residue."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f006",

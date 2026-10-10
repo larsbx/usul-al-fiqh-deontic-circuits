@@ -34,7 +34,9 @@ def candidates(cases: list[dict]) -> list[dict]:
 
 
 def support(ps: list[tuple[object, str]], p: object) -> list[int]:
-    return sorted((RANK[g] for r, g in ps if r == p), reverse=True)
+    """Ranks for ruling `p`, strongest first; an unmarked grade counts once however many hold it."""
+    rs = [RANK[g] for r, g in ps if r == p]
+    return sorted([x for x in rs if x >= RANK["jazm"]] + list(dict.fromkeys(x for x in rs if x < RANK["jazm"])), reverse=True)
 
 
 def prevail(ps: list[tuple[object, str]]) -> object | None:
@@ -100,6 +102,8 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
                 errs.append(f"{f}: jamʿ needs the case under a refinement with a conservativity theorem")
                 continue
             jams.setdefault(j["encoder"], []).append(c)
+            if prevail(graded(c, e)) != c["expected"]:
+                errs.append(f"{f}: a jamʿ must land on the prevailing side")
         if c.get("matches_madhhab") and not e.get("jam"):
             errs.append(f"{f}: matches the madhhab without a jamʿ; nothing to reconcile")
     for enc, cs in jams.items():
