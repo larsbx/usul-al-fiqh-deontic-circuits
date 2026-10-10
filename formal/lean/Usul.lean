@@ -13,5 +13,6 @@ import Usul.Qiyas
 import Usul.Jadal
 import Usul.QiyasLimits
 import Usul.Dalala
+import Usul.CommandSchemata
 import Usul.Refinements
 import Usul.Seam

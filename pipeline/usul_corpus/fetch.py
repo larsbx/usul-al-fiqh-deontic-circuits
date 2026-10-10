@@ -36,6 +36,8 @@ def witness_url(w: dict) -> str:
         return f"https://archive.org/download/{w['item']}/{urllib.parse.quote(w['file'])}"
     if kind == "shamela":
         return f"https://shamela.ws/book/{w['book_id']}/{w.get('pages', [1])[0]}"
+    if kind == "zadapps":
+        return f"{w['base']}/{w['folder']}/{w['file']}"
     raise ValueError(f"no URL scheme for witness kind {kind!r}")
 
 
@@ -97,7 +99,7 @@ def _shamela(w: dict, max_pages: int | None, part: Path | None = None) -> bytes:
 
 def fetch(w: dict, cache: Path, max_pages: int | None = None, refresh: bool = False) -> dict:
     """Fetch one witness into ``cache`` and return its lock entry."""
-    path = cache / f"{w['id']}.{'pdf' if w.get('format') == 'pdf' else 'txt'}"
+    path = cache / f"{w['id']}.{'txt' if w.get('format', 'text') == 'text' else w['format']}"
     if refresh or not path.exists():
         path.parent.mkdir(parents=True, exist_ok=True)
         part = path.with_suffix(".part") if max_pages is None else None  # full fetches only

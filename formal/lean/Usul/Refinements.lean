@@ -448,4 +448,230 @@ theorem liability_not_by_belief : countsAsMet false true = true := rfl
 act done against a belief later shown wrong does not, unless only liability is at stake. -/
 theorem unknown_condition_does_not_count : countsAsMet false false = false := rfl
 
+/-! ## M8 tranche 3: qawāʿid segmented by their lists and divisions -/
+
+/-! ### Qāʿida 1: running water
+
+«الماء الجاري هل هو كالراكد أو كل جرية منه لها حكم الماء المنفرد. فيه خلاف في المذهب». The reading
+takes the second limb, al-Qāḍī's madhhab on the first farʿ («(والثانية) : المذهب عند القاضي»). -/
+
+inductive Body where
+  | perJirya | whole
+  deriving DecidableEq, Repr
+
+/-- Running water is judged jirya by jirya; still water as one body. -/
+def runningBody (running : Bool) : Body := if running then .perJirya else .whole
+
+/-! ### Qāʿida 17: one noble act against many
+
+«إذا تقابل عملان أحدهما ذو شرف في نفسه ورفعة وهو واحد، والآخر ذو تعدد في نفسه وكثرة … ظاهر كلام
+أحمد ترجيح الكثرة», the two costing the same time or money («في زمن واحد», «بعشرة»). Outside
+equal cost the qāʿida makes no comparison, and the reading prefers neither. -/
+
+def preferMany (sameCost : Bool) : Bool := sameCost
+
+/-! ### Qāʿida 66: acting on a mistaken basis while the true one exists
+
+«ولو تصرف مستندا إلى سبب ثم تبين خطؤه فيه وأن السبب المعتمد غيره وهو موجود فهو نوعان», and in
+both «التصرف صحيح» (the second: «والمذهب هنا الصحة بلا ريب»). -/
+
+/-- Valid when he acted on a basis he believed and a valid basis in fact existed. -/
+def validWithBasis (believed actual : Bool) : Bool := believed && actual
+
+/-- The contrast with qāʿida 65: there he acted believing the basis absent, and the act fails. -/
+theorem q65_is_the_unbelieved_basis : validWithBasis false true = countsAsMet false false := rfl
+
+/-! ### Qāʿida 91: what the hand takes in
+
+«يضمن بالعقد وباليد الأموال المحضة»; of what is not pure property, what has a share of it (umm
+al-walad, the mukātab, the mudabbar) «فيضمن باليد», while «الحر لا تثبت عليه اليد». -/
+
+def handLiable (propertyLike : Bool) : Bool := propertyLike
+
+/-! ### Qāʿida 93: the hands that take from a usurper unaware
+
+«إن كان القابض قد دخل على ضمان عين أو منفعة استقر ضمانها عليه ولم يرجع على الغاصب … ما لم يدخل
+على ضمانه … رجع به على الغاصب». Where he benefited from what he did not undertake there are two
+riwāyas; the reading follows the head principle, recourse unless he undertook the liability. -/
+
+def takerRecourse (enteredOnLiability : Bool) : Bool := !enteredOnLiability
+
+theorem undertaken_settles : takerRecourse true = false := rfl
+/-! ## M8, third tranche: Ibn Rajab's qawāʿid 31 and 47
+
+These are candidate readings of the named source positions, not adopted rulings.
+Q31 distinguishes corruption after a binding start from prevention, and faulty from
+non-faulty loss. The non-faulty-loss branch follows the author of al-Mughnī; another
+position remains recorded in the annotation. Q47 distinguishes compensation under
+the contract from compensation for loss. It does not identify every defective contract
+with a void contract, or decide which contracts are binding. -/
+
+inductive MakeupFailure where
+  | corruption | prevention | lossWithFault | lossWithoutFault
+  deriving DecidableEq, Repr
+
+inductive MakeupExtent where
+  | asBegun | baseline
+  deriving DecidableEq, Repr
+
+/-- Q31, within its source scope of a binding undertaking. `baseline` in the prevention
+case describes the form of a subsequent make-up, not a duty to perform it. -/
+def makeupAfterFailure : MakeupFailure → MakeupExtent
+  | .corruption | .lossWithFault => .asBegun
+  | .prevention | .lossWithoutFault => .baseline
+
+/-- The pilgrim who corrupted the undertaking and the prevented pilgrim are distinct. -/
+theorem prevention_not_corruption :
+    makeupAfterFailure .prevention ≠ makeupAfterFailure .corruption := by decide
+
+/-- Q31's designated offering: fault preserves its enhanced description; the no-fault
+branch is the expressly recorded al-Mughnī position, not a resolution of the two wujūh. -/
+theorem fault_changes_replacement :
+    makeupAfterFailure .lossWithFault ≠ makeupAfterFailure .lossWithoutFault := by decide
+
+inductive CompensationBasis where
+  | agreed | equivalent
+  deriving DecidableEq, Repr
+
+/-- Q47's explanatory distinction: contract compensation uses the named consideration;
+loss compensation uses the equivalent. The annotation must establish which applies. -/
+def defectiveCompensationBasis (contractLiability : Bool) : CompensationBasis :=
+  if contractLiability then .agreed else .equivalent
+
+/-- Use the existing price/value selector only after the source-backed basis is fixed.
+These Nat arguments are test amounts, not estimates of any historical price. -/
+def defectiveCompensation (contractLiability : Bool) (named equivalent : Nat) : Nat :=
+  Muamalat.priceDue (if contractLiability then some named else none) equivalent
+
+theorem defective_compensation_by_basis (c : Bool) (n v : Nat) :
+    defectiveCompensation c n v =
+      if defectiveCompensationBasis c = .agreed then n else v := by
+  cases c <;> rfl
+
+/-- The loss branch must not preserve the price merely because it was named. -/
+theorem defective_loss_ignores_named (n n' v : Nat) :
+    defectiveCompensation false n v = defectiveCompensation false n' v := rfl
+
+/-! ## Round 5: the open gaps' own principles, after M8 tranches 1–3 -/
+
+/-! ### A ruling against the judge's own ijtihād (Ibn Rajab 68.f009)
+
+«لو حكم حاكم في مسألة مختلف فيها بما يرى أن الحق في غيره أثم وعصى بذلك ولم ينقض حكمه إلا أن
+يكون مخالفا لنص صريح» (Ibn Abī Mūsā). -/
+
+/-- Undone only when a clear text shows it wrong: IQ-21's `zannSetAside`, the text being decisive
+and the judge's own contrary view an ijtihād. -/
+def rulingUndone (contradictsNass : Bool) : Bool :=
+  zannSetAside (if contradictsNass then .qat else .zann) false
+
+theorem own_ijtihad_does_not_undo : rulingUndone false = false := ijtihad_not_overturned_by_ijtihad false
+theorem clear_text_undoes : rulingUndone true = true := evident_error_sets_aside
+
+/-! ### Oaths read by custom (Ibn Rajab 1.f003; al-Saʿdī Q9)
+
+«والأيمان مرجعها إلى العرف»: what the oath names, the law not defining it, is measured by custom
+(Q9, `Usul.Kulliyyat.measure`). Custom counts the running river as one body of water. -/
+
+def oathBody (customOneBody : Bool) : Body :=
+  Usul.Kulliyyat.measure none (if customOneBody then .whole else .perJirya)
+
+theorem oath_follows_custom (c : Bool) :
+    oathBody c = if c then .whole else .perJirya := Usul.Kulliyyat.q09_custom_decides _
+
+/-! ### Fungibles mixed with their own kind (Ibn Rajab 22.f003–f004)
+
+«لو خلط زيته بزيت غيره على وجه لا يتميز … المنصوص في رواية عبد الله وأبي الحارث أنه اشتراك». -/
+
+inductive Mixed where
+  | shared | consumed | separate
+  deriving DecidableEq, Repr
+
+/-- Still distinguishable: each keeps his own (22.f006, grain that can be picked out). Mixed
+indistinguishably: shared with its own kind, qāʿida 22's consumption in another kind. -/
+def mixedOutcome (sameKind indistinct : Bool) : Mixed :=
+  if !indistinct then .separate else if sameKind then .shared else .consumed
+
+theorem other_kind_is_consumed : mixedOutcome false true = .consumed := rfl
+theorem distinct_stays_separate (s : Bool) : mixedOutcome s false = .separate := by cases s <;> rfl
+
+/-! ### Lawful wealth mixed with unlawful (Ibn Rajab 22.f007)
+
+Aḥmad (al-Marrūdhī): «إن كانت الدراهم قليلة كثلاثة فيها درهم حرام وجب التوقف عنها حتى يعلم وإن
+كانت كثيرة كثلاثين فيها درهم حرام فإنه يخرج منها درهما ويتصرف في الباقي», since taking out the
+much «يجحف بماله». -/
+
+inductive MixedHaram where
+  | suspend | takeOut
+  deriving DecidableEq, Repr
+
+def mixedHaram (lawfulMany : Bool) : MixedHaram := if lawfulMany then .takeOut else .suspend
+
+/-! ### A concession under doubt (Ibn Rajab 68.f001)
+
+«لأن المسح رخصة ولم تتحقق إباحتها فلم يصح كمن قصر وهو يشك في جواز القصر». -/
+
+/-- A concession whose permission needs certainty stands only when that permission is established. -/
+def rukhsaValid (rukhsaNeedsCertainty permissionEstablished : Bool) : Bool :=
+  !rukhsaNeedsCertainty || permissionEstablished
+
+/-- A concession is qāʿida 68's first type: a condition that needs a firm basis, with no aṣl to
+lean on (the aṣl is the ʿazīma). -/
+theorem rukhsa_is_firm_condition (r p : Bool) : rukhsaValid r p = validUnderDoubt r p false := by
+  cases r <;> cases p <;> rfl
+
+/-! ### A sale conditioned on a known fact (Ibn Rajab 68.f007)
+
+al-Kāfī: «لأنه تعليق على شرط واقع يعلمانه فلا يؤثر ذكره في العقد», with Aḥmad's naṣṣ (Ibn Manṣūr)
+on selling the absent thing «إن كان سالما». -/
+
+def conditionedSaleValid (conditional knownToHold : Bool) : Bool := !conditional || knownToHold
+
+/-! ### Pardoning qiṣāṣ before the spread (Ibn Rajab 65.f004)
+
+Majd al-Dīn builds it «على أن القصاص هل يجب للميت أو لورثته»; «وجزم القاضي وغيره بأنه لا يصح العفو
+ههنا». -/
+
+def pardonOfSpreadValid (rightIsVictims : Bool) : Bool := rightIsVictims
+
+/-- If the right to qiṣāṣ for the life is the heirs', he pardoned what he did not know to be his to
+pardon: qāʿida 65's unknown condition. -/
+theorem heirs_right_is_q65 : pardonOfSpreadValid false = countsAsMet false false := rfl
+
+/-! ## M8 tranche 4 -/
+
+/-! ### Qāʿida 2: hair and nails
+
+«شعر الحيوان في حكم المنفصل عنه لا في حكم المتصل، وكذلك الظفر. هذا هو جادة المذهب». -/
+
+inductive Attachment where
+  | attached | detached
+  deriving DecidableEq, Repr
+
+def hairStatus (hairOrNail : Bool) : Attachment := if hairOrNail then .detached else .attached
+
+/-! ### Qawāʿid 20–21: growth from the substance is as a part
+
+20: «النماء المتولد من العين حكمه حكم الجزء، والمتولد من الكسب بخلافه على الصحيح»; 21: whether
+the child is as a part or as earnings, «والأظهر أنه جزء». -/
+
+inductive Growth where
+  | part | separate
+  deriving DecidableEq, Repr
+
+def growthKind (fromSubstance : Bool) : Growth := if fromSubstance then .part else .separate
+
+/-- Qāʿida 21's al-aẓhar is qāʿida 20 applied: the child grows from the mother's substance. -/
+theorem child_is_part : growthKind true = .part := rfl
+
+/-! ### Qāʿida 24: transferring property a due right attaches to
+
+«من تعلق بماله حق واجب عليه فبادر إلى نقل الملك عنه صح، ثم إن كان الحق متعلقا بالمال نفسه لم
+يسقط وإن كان متعلقا بمالكه لمعنى زال بانتقاله عنه سقط، وإن كان لا يزول بانتقاله لم يسقط على
+الأصح». The transfer itself is valid; the reading decides whether the right survives it. -/
+
+def rightSurvivesTransfer (onProperty reasonCeases : Bool) : Bool := onProperty || !reasonCeases
+
+theorem owner_right_lapses_with_its_reason : rightSurvivesTransfer false true = false := rfl
+theorem property_right_survives (r : Bool) : rightSurvivesTransfer true r = true := rfl
+
 end Usul.Refinements

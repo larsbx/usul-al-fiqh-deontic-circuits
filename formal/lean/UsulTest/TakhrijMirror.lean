@@ -208,7 +208,119 @@ import Usul
 #guard (Usul.Refinements.countsAsMet false true) == true
 #guard (Usul.Refinements.countsAsMet true false) == true
 #guard (Usul.Refinements.countsAsMet true true) == true
+#guard (Usul.Refinements.runningBody false) == .whole
+#guard (Usul.Refinements.runningBody true) == .perJirya
+#guard (Usul.Refinements.preferMany false) == false
+#guard (Usul.Refinements.preferMany true) == true
+#guard (Usul.Refinements.validWithBasis false false) == false
+#guard (Usul.Refinements.validWithBasis false true) == false
+#guard (Usul.Refinements.validWithBasis true false) == false
+#guard (Usul.Refinements.validWithBasis true true) == true
+#guard (Usul.Refinements.handLiable false) == false
+#guard (Usul.Refinements.handLiable true) == true
+#guard (Usul.Refinements.takerRecourse false) == true
+#guard (Usul.Refinements.takerRecourse true) == false
+#guard (Usul.Refinements.rulingUndone false) == false
+#guard (Usul.Refinements.rulingUndone true) == true
+#guard (Usul.Refinements.oathBody false) == .perJirya
+#guard (Usul.Refinements.oathBody true) == .whole
+#guard (Usul.Refinements.mixedOutcome false false) == .separate
+#guard (Usul.Refinements.mixedOutcome false true) == .consumed
+#guard (Usul.Refinements.mixedOutcome true false) == .separate
+#guard (Usul.Refinements.mixedOutcome true true) == .shared
+#guard (Usul.Refinements.mixedHaram false) == .suspend
+#guard (Usul.Refinements.mixedHaram true) == .takeOut
+#guard (Usul.Refinements.rukhsaValid false false) == true
+#guard (Usul.Refinements.rukhsaValid false true) == true
+#guard (Usul.Refinements.rukhsaValid true false) == false
+#guard (Usul.Refinements.rukhsaValid true true) == true
+#guard (Usul.Refinements.conditionedSaleValid false false) == true
+#guard (Usul.Refinements.conditionedSaleValid false true) == true
+#guard (Usul.Refinements.conditionedSaleValid true false) == false
+#guard (Usul.Refinements.conditionedSaleValid true true) == true
+#guard (Usul.Refinements.pardonOfSpreadValid false) == false
+#guard (Usul.Refinements.pardonOfSpreadValid true) == true
+#guard (Usul.Refinements.makeupAfterFailure .corruption) == .asBegun
+#guard (Usul.Refinements.makeupAfterFailure .prevention) == .baseline
+#guard (Usul.Refinements.makeupAfterFailure .lossWithFault) == .asBegun
+#guard (Usul.Refinements.makeupAfterFailure .lossWithoutFault) == .baseline
+#guard (Usul.Refinements.defectiveCompensationBasis false) == .equivalent
+#guard (Usul.Refinements.defectiveCompensationBasis true) == .agreed
+#guard (Usul.Refinements.hairStatus false) == .attached
+#guard (Usul.Refinements.hairStatus true) == .detached
+#guard (Usul.Refinements.growthKind false) == .separate
+#guard (Usul.Refinements.growthKind true) == .part
+#guard (Usul.Refinements.rightSurvivesTransfer false false) == true
+#guard (Usul.Refinements.rightSurvivesTransfer false true) == false
+#guard (Usul.Refinements.rightSurvivesTransfer true false) == true
+#guard (Usul.Refinements.rightSurvivesTransfer true true) == true
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 #guard (Usul.Dalala.coversBeyondSabab true true false) == true
 #guard (Usul.Dalala.coversBeyondSabab true true true) == true
+#guard (Usul.CommandSchemata.nonverbalUsage .qadiReported .writing) == .notLiteral
+#guard (Usul.CommandSchemata.nonverbalUsage .qadiReported .gesture) == .notLiteral
+#guard (Usul.CommandSchemata.nonverbalUsage .jamiWriting .writing) == .literal
+#guard (Usul.CommandSchemata.nonverbalUsage .jamiWriting .gesture) == .unsettled
+#guard (Usul.CommandSchemata.propheticActUsage .abuBarakat false) == .figurative
+#guard (Usul.CommandSchemata.propheticActUsage .abuBarakat true) == .figurative
+#guard (Usul.CommandSchemata.propheticActUsage .literalReport false) == .literal
+#guard (Usul.CommandSchemata.propheticActUsage .literalReport true) == .literal
+#guard (Usul.CommandSchemata.propheticActUsage .authorConditional false) == .unsettled
+#guard (Usul.CommandSchemata.propheticActUsage .authorConditional true) == .literal
+#guard (Usul.CommandSchemata.obligationStatus .qadi .bareCommand none) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .qadi .bareCommand (some .wajib)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .qadi .bareCommand (some .mandub)) == .mandub
+#guard (Usul.CommandSchemata.obligationStatus .qadi .bareCommand (some .mubah)) == .mubah
+#guard (Usul.CommandSchemata.obligationStatus .qadi .bareCommand (some .makruh)) == .makruh
+#guard (Usul.CommandSchemata.obligationStatus .qadi .bareCommand (some .haram)) == .haram
+#guard (Usul.CommandSchemata.obligationStatus .qadi .unqualifiedThreat none) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .qadi .unqualifiedThreat (some .wajib)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .qadi .unqualifiedThreat (some .mandub)) == .mandub
+#guard (Usul.CommandSchemata.obligationStatus .qadi .unqualifiedThreat (some .mubah)) == .mubah
+#guard (Usul.CommandSchemata.obligationStatus .qadi .unqualifiedThreat (some .makruh)) == .makruh
+#guard (Usul.CommandSchemata.obligationStatus .qadi .unqualifiedThreat (some .haram)) == .haram
+#guard (Usul.CommandSchemata.obligationStatus .qadi .wujubLabel none) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .qadi .wujubLabel (some .wajib)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .qadi .wujubLabel (some .mandub)) == .mandub
+#guard (Usul.CommandSchemata.obligationStatus .qadi .wujubLabel (some .mubah)) == .mubah
+#guard (Usul.CommandSchemata.obligationStatus .qadi .wujubLabel (some .makruh)) == .makruh
+#guard (Usul.CommandSchemata.obligationStatus .qadi .wujubLabel (some .haram)) == .haram
+#guard (Usul.CommandSchemata.obligationStatus .qadi .fardLabel none) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .qadi .fardLabel (some .wajib)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .qadi .fardLabel (some .mandub)) == .mandub
+#guard (Usul.CommandSchemata.obligationStatus .qadi .fardLabel (some .mubah)) == .mubah
+#guard (Usul.CommandSchemata.obligationStatus .qadi .fardLabel (some .makruh)) == .makruh
+#guard (Usul.CommandSchemata.obligationStatus .qadi .fardLabel (some .haram)) == .haram
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .bareCommand none) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .bareCommand (some .wajib)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .bareCommand (some .mandub)) == .mandub
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .bareCommand (some .mubah)) == .mubah
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .bareCommand (some .makruh)) == .makruh
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .bareCommand (some .haram)) == .haram
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .unqualifiedThreat none) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .unqualifiedThreat (some .wajib)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .unqualifiedThreat (some .mandub)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .unqualifiedThreat (some .mubah)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .unqualifiedThreat (some .makruh)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .unqualifiedThreat (some .haram)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .wujubLabel none) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .wujubLabel (some .wajib)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .wujubLabel (some .mandub)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .wujubLabel (some .mubah)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .wujubLabel (some .makruh)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .wujubLabel (some .haram)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .fardLabel none) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .fardLabel (some .wajib)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .fardLabel (some .mandub)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .fardLabel (some .mubah)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .fardLabel (some .makruh)) == .wajib
+#guard (Usul.CommandSchemata.obligationStatus .abuBarakat .fardLabel (some .haram)) == .wajib
+#guard (Usul.CommandSchemata.intendedUsage .qadiReport .recommendation) == .literal
+#guard (Usul.CommandSchemata.intendedUsage .qadiReport .permission) == .literal
+#guard (Usul.CommandSchemata.intendedUsage .karkhiRazi .recommendation) == .figurative
+#guard (Usul.CommandSchemata.intendedUsage .karkhiRazi .permission) == .unsettled
+#guard (Usul.CommandSchemata.intendedUsage .abuBarakat .recommendation) == .unsettled
+#guard (Usul.CommandSchemata.intendedUsage .abuBarakat .permission) == .figurative
+#guard (Usul.CommandSchemata.intendedUsage .qadiArgument .recommendation) == .literal
+#guard (Usul.CommandSchemata.intendedUsage .qadiArgument .permission) == .figurative

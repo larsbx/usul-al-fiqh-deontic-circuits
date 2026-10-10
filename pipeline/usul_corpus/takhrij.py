@@ -176,10 +176,116 @@ ENCODERS: dict[str, dict] = {
         sadi=[], qawaid=[RAJAB.format(64), RAJAB.format(65)], facts={"knew": B, "liability_only": B},
         out=B, lean="Usul.Refinements.countsAsMet {knew} {liability_only}",
         py=lambda f: f["knew"] or f["liability_only"]),
+    "running_water": dict(
+        sadi=[], qawaid=[RAJAB.format(1)], facts={"running": B},
+        out=("perJirya", "whole"), lean="Usul.Refinements.runningBody {running}",
+        py=lambda f: "perJirya" if f["running"] else "whole"),
+    "many_over_noble": dict(
+        sadi=[], qawaid=[RAJAB.format(17)], facts={"same_cost": B},
+        out=B, lean="Usul.Refinements.preferMany {same_cost}",
+        py=lambda f: f["same_cost"]),
+    "mistaken_basis": dict(
+        sadi=[], qawaid=[RAJAB.format(66)], facts={"believed_basis": B, "actual_basis": B},
+        out=B, lean="Usul.Refinements.validWithBasis {believed_basis} {actual_basis}",
+        py=lambda f: f["believed_basis"] and f["actual_basis"]),
+    "hand_liability": dict(
+        sadi=[], qawaid=[RAJAB.format(91)], facts={"property_like": B},
+        out=B, lean="Usul.Refinements.handLiable {property_like}",
+        py=lambda f: f["property_like"]),
+    "taker_from_usurper": dict(
+        sadi=[], qawaid=[RAJAB.format(93)], facts={"entered_on_liability": B},
+        out=B, lean="Usul.Refinements.takerRecourse {entered_on_liability}",
+        py=lambda f: not f["entered_on_liability"]),
+    "hukm_against_own_ijtihad": dict(
+        sadi=[], qawaid=[RAJAB.format(68)], facts={"contradicts_nass": B},
+        out=B, lean="Usul.Refinements.rulingUndone {contradicts_nass}",
+        py=lambda f: f["contradicts_nass"]),
+    "ayman_by_urf": dict(
+        sadi=[9], qawaid=[RAJAB.format(1)], facts={"custom_one_body": B},
+        out=("perJirya", "whole"), lean="Usul.Refinements.oathBody {custom_one_body}",
+        py=lambda f: "whole" if f["custom_one_body"] else "perJirya"),
+    "khalt_as_shirka": dict(
+        sadi=[], qawaid=[RAJAB.format(22)], facts={"same_kind": B, "indistinct": B},
+        out=("shared", "consumed", "separate"), lean="Usul.Refinements.mixedOutcome {same_kind} {indistinct}",
+        py=lambda f: "separate" if not f["indistinct"] else "shared" if f["same_kind"] else "consumed"),
+    "mixed_haram_by_proportion": dict(
+        sadi=[], qawaid=[RAJAB.format(22)], facts={"lawful_many": B},
+        out=("suspend", "takeOut"), lean="Usul.Refinements.mixedHaram {lawful_many}",
+        py=lambda f: "takeOut" if f["lawful_many"] else "suspend"),
+    "rukhsa_under_doubt": dict(
+        sadi=[11], qawaid=[RAJAB.format(68)], facts={"rukhsa_needs_certainty": B, "permission_established": B},
+        out=B, lean="Usul.Refinements.rukhsaValid {rukhsa_needs_certainty} {permission_established}",
+        py=lambda f: not f["rukhsa_needs_certainty"] or f["permission_established"]),
+    "taliq_al_bay": dict(
+        sadi=[], qawaid=[RAJAB.format(68)], facts={"conditional": B, "known_to_hold": B},
+        out=B, lean="Usul.Refinements.conditionedSaleValid {conditional} {known_to_hold}",
+        py=lambda f: not f["conditional"] or f["known_to_hold"]),
+    "qisas_belongs_to_whom": dict(
+        sadi=[], qawaid=[RAJAB.format(65)], facts={"right_is_victims": B},
+        out=B, lean="Usul.Refinements.pardonOfSpreadValid {right_is_victims}",
+        py=lambda f: f["right_is_victims"]),
+    "makeup_after_failure": dict(
+        sadi=[], qawaid=[RAJAB.format(31)],
+        facts={"failure": ("corruption", "prevention", "lossWithFault", "lossWithoutFault")},
+        out=("asBegun", "baseline"), lean="Usul.Refinements.makeupAfterFailure {failure}",
+        py=lambda f: "asBegun" if f["failure"] in ("corruption", "lossWithFault") else "baseline"),
+    "defective_compensation": dict(
+        sadi=[], qawaid=[RAJAB.format(47)], facts={"contract_liability": B},
+        out=("agreed", "equivalent"), lean="Usul.Refinements.defectiveCompensationBasis {contract_liability}",
+        py=lambda f: "agreed" if f["contract_liability"] else "equivalent"),
+    "hair_detached": dict(
+        sadi=[], qawaid=[RAJAB.format(2)], facts={"hair_or_nail": B},
+        out=("attached", "detached"), lean="Usul.Refinements.hairStatus {hair_or_nail}",
+        py=lambda f: "detached" if f["hair_or_nail"] else "attached"),
+    "growth_from_substance": dict(
+        sadi=[], qawaid=[RAJAB.format(20), RAJAB.format(21)], facts={"from_substance": B},
+        out=("part", "separate"), lean="Usul.Refinements.growthKind {from_substance}",
+        py=lambda f: "part" if f["from_substance"] else "separate"),
+    "right_after_transfer": dict(
+        sadi=[], qawaid=[RAJAB.format(24)], facts={"on_property": B, "reason_ceases": B},
+        out=B, lean="Usul.Refinements.rightSurvivesTransfer {on_property} {reason_ceases}",
+        py=lambda f: f["on_property"] or not f["reason_ceases"]),
     "umum_lafz": dict(
         sadi=[], qawaid=[LAHHAM.format(61)], facts={"in_occasion": B, "general_wording": B},
         out=B, lean="Usul.Dalala.coversBeyondSabab true {in_occasion} {general_wording}",
         py=lambda f: f["in_occasion"] or f["general_wording"]),
+    # Candidate capability fixtures; the six live case gaps are not reclassified.
+    "command_nonverbal_usage": dict(
+        sadi=[], qawaid=[LAHHAM.format(43)],
+        facts={"reading": ("qadiReported", "jamiWriting"), "form": ("writing", "gesture")},
+        out=("literal", "notLiteral", "unsettled"),
+        lean="Usul.CommandSchemata.nonverbalUsage {reading} {form}",
+        py=lambda f: "notLiteral" if f["reading"] == "qadiReported" else
+            "literal" if f["form"] == "writing" else "unsettled"),
+    "command_prophetic_act_usage": dict(
+        sadi=[], qawaid=[LAHHAM.format(43)],
+        facts={"reading": ("abuBarakat", "literalReport", "authorConditional"), "imitation_established": B},
+        out=("literal", "figurative", "unsettled"),
+        lean="Usul.CommandSchemata.propheticActUsage {reading} {imitation_established}",
+        py=lambda f: "figurative" if f["reading"] == "abuBarakat" else
+            "literal" if f["reading"] == "literalReport" or f["imitation_established"] else "unsettled"),
+    "command_obligation_status": dict(
+        sadi=[], qawaid=[LAHHAM.format(43)],
+        facts={"reading": ("qadi", "abuBarakat"),
+               "expression": ("bareCommand", "unqualifiedThreat", "wujubLabel", "fardLabel"),
+               "qarina": ("none",) + HUKM},
+        out=HUKM,
+        lean="Usul.CommandSchemata.obligationStatus {reading} {expression} {qarina}",
+        lits={"qarina": {"none": "none", **{h: f"(some .{h})" for h in HUKM}}},
+        py=lambda f: "wajib" if f["reading"] == "abuBarakat" and f["expression"] != "bareCommand" else
+            "wajib" if f["qarina"] == "none" else f["qarina"]),
+    "command_intended_usage": dict(
+        sadi=[], qawaid=[LAHHAM.format(43)],
+        facts={"reading": ("qadiReport", "karkhiRazi", "abuBarakat", "qadiArgument"),
+               "intended": ("recommendation", "permission")},
+        out=("literal", "figurative", "unsettled"),
+        lean="Usul.CommandSchemata.intendedUsage {reading} {intended}",
+        py=lambda f: {
+            ("qadiReport", "recommendation"): "literal", ("qadiReport", "permission"): "literal",
+            ("karkhiRazi", "recommendation"): "figurative", ("karkhiRazi", "permission"): "unsettled",
+            ("abuBarakat", "recommendation"): "unsettled", ("abuBarakat", "permission"): "figurative",
+            ("qadiArgument", "recommendation"): "literal", ("qadiArgument", "permission"): "figurative",
+        }[(f["reading"], f["intended"])]),
 }
 
 

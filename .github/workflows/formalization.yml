@@ -20,6 +20,8 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install pytest jsonschema numpy pillow
+      - name: Replay locked M5 command-schema evidence
+        run: cd pipeline && python -m usul_corpus m5-commands --fetch-source
       - run: make test validate generated
 
   lean:

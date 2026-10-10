@@ -28,15 +28,19 @@ import Usul
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f002 (genuine_ikhtilaf)
 #guard (Usul.Refinements.istihlak true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f003 (genuine_ikhtilaf)
-#guard (Usul.Refinements.istihlak true) == true
+#guard (Usul.Refinements.mixedOutcome true true) == .shared
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f004 (genuine_ikhtilaf)
-#guard (Usul.Refinements.istihlak true) == true
+#guard (Usul.Refinements.mixedOutcome true true) == .shared
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f005 (derivable)
 #guard (Usul.Refinements.istihlak true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f006 (genuine_ikhtilaf)
 #guard (Usul.Refinements.istihlak false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f007 (genuine_ikhtilaf)
+#guard (Usul.Refinements.mixedHaram false) == .suspend
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008 (genuine_ikhtilaf)
 #guard (Usul.Muamalat.lossLiable .trustee true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f001 (genuine_ikhtilaf)
+#guard (Usul.Refinements.rukhsaValid true false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f002 (genuine_ikhtilaf)
 #guard (Usul.Refinements.validUnderDoubt true false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f003 (genuine_ikhtilaf)
@@ -48,9 +52,11 @@ import Usul
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f006 (genuine_ikhtilaf)
 #guard (Usul.Refinements.validUnderDoubt false false true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f007 (genuine_ikhtilaf)
-#guard (Usul.Refinements.validUnderDoubt false false false) == true
+#guard (Usul.Refinements.conditionedSaleValid true true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f008 (derivable)
 #guard (Usul.Refinements.validUnderDoubt false false true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f009 (genuine_ikhtilaf)
+#guard (Usul.Refinements.rulingUndone false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f010 (derivable)
 #guard (Usul.Refinements.validUnderDoubt false false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f000 (derivable)
@@ -99,12 +105,114 @@ import Usul
 #guard (Usul.Refinements.countsAsMet false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f003 (genuine_ikhtilaf)
 #guard (Usul.Refinements.countsAsMet false false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f004 (genuine_ikhtilaf)
+#guard (Usul.Refinements.pardonOfSpreadValid false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f005 (genuine_ikhtilaf)
 #guard (Usul.Refinements.countsAsMet false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f006 (genuine_ikhtilaf)
 #guard (Usul.Refinements.countsAsMet false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f007 (genuine_ikhtilaf)
 #guard (Usul.Refinements.countsAsMet false false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000 (genuine_ikhtilaf)
+#guard (Usul.Refinements.runningBody true) == .perJirya
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001 (genuine_ikhtilaf)
+#guard (Usul.Refinements.runningBody true) == .perJirya
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f002 (genuine_ikhtilaf)
+#guard (Usul.Refinements.runningBody true) == .perJirya
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003 (genuine_ikhtilaf)
+#guard (Usul.Refinements.oathBody true) == .whole
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f001 (genuine_ikhtilaf)
+#guard (Usul.Refinements.preferMany true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f002 (genuine_ikhtilaf)
+#guard (Usul.Refinements.preferMany true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f003 (genuine_ikhtilaf)
+#guard (Usul.Refinements.preferMany true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f004 (genuine_ikhtilaf)
+#guard (Usul.Refinements.preferMany true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f005 (genuine_ikhtilaf)
+#guard (Usul.Refinements.preferMany true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f001 (derivable)
+#guard (Usul.Refinements.makeupAfterFailure .corruption) == .asBegun
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f002 (derivable)
+#guard (Usul.Refinements.makeupAfterFailure .corruption) == .asBegun
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f003 (genuine_ikhtilaf)
+#guard (Usul.Refinements.makeupAfterFailure .lossWithoutFault) == .baseline
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004 (genuine_ikhtilaf)
+#guard (Usul.Refinements.makeupAfterFailure .corruption) == .asBegun
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f000 (genuine_ikhtilaf)
+#guard (Usul.Refinements.defectiveCompensationBasis false) == .equivalent
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f001 (genuine_ikhtilaf)
+#guard (Usul.Refinements.defectiveCompensationBasis false) == .equivalent
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f002 (derivable)
+#guard (Usul.Refinements.defectiveCompensationBasis true) == .agreed
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f003 (genuine_ikhtilaf)
+#guard (Usul.Refinements.defectiveCompensationBasis true) == .agreed
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f000 (derivable)
+#guard (Usul.Refinements.validWithBasis true true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f001 (derivable)
+#guard (Usul.Refinements.validWithBasis true true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f000 (derivable)
+#guard (Usul.Refinements.handLiable true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f001 (derivable)
+#guard (Usul.Refinements.handLiable false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f001 (derivable)
+#guard (Usul.Refinements.takerRecourse true) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f002 (genuine_ikhtilaf)
+#guard (Usul.Refinements.takerRecourse false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f003 (genuine_ikhtilaf)
+#guard (Usul.Refinements.takerRecourse false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f004 (genuine_ikhtilaf)
+#guard (Usul.Refinements.takerRecourse false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f005 (genuine_ikhtilaf)
+#guard (Usul.Refinements.takerRecourse true) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f006 (genuine_ikhtilaf)
+#guard (Usul.Refinements.takerRecourse true) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f007 (genuine_ikhtilaf)
+#guard (Usul.Refinements.takerRecourse true) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f008 (genuine_ikhtilaf)
+#guard (Usul.Refinements.takerRecourse false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f000 (derivable)
+#guard (Usul.Refinements.hairStatus true) == .detached
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f001 (derivable)
+#guard (Usul.Refinements.hairStatus true) == .detached
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002 (genuine_ikhtilaf)
+#guard (Usul.Refinements.hairStatus true) == .detached
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f003 (genuine_ikhtilaf)
+#guard (Usul.Refinements.hairStatus true) == .detached
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f004 (genuine_ikhtilaf)
+#guard (Usul.Refinements.hairStatus true) == .detached
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f000 (genuine_ikhtilaf)
+#guard (Usul.Refinements.growthKind true) == .part
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f001 (genuine_ikhtilaf)
+#guard (Usul.Refinements.growthKind true) == .part
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f002 (genuine_ikhtilaf)
+#guard (Usul.Refinements.growthKind true) == .part
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f003 (genuine_ikhtilaf)
+#guard (Usul.Refinements.growthKind true) == .part
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f004 (derivable)
+#guard (Usul.Refinements.growthKind true) == .part
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f005 (genuine_ikhtilaf)
+#guard (Usul.Refinements.growthKind true) == .part
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q021.f001 (genuine_ikhtilaf)
+#guard (Usul.Refinements.growthKind true) == .part
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q021.f002 (genuine_ikhtilaf)
+#guard (Usul.Refinements.growthKind true) == .part
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f000 (genuine_ikhtilaf)
+#guard (Usul.Refinements.rightSurvivesTransfer false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f001 (derivable)
+#guard (Usul.Refinements.rightSurvivesTransfer true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f002 (derivable)
+#guard (Usul.Refinements.rightSurvivesTransfer false true) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f003 (genuine_ikhtilaf)
+#guard (Usul.Refinements.rightSurvivesTransfer false true) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f004 (genuine_ikhtilaf)
+#guard (Usul.Refinements.rightSurvivesTransfer true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f005 (derivable)
+#guard (Usul.Refinements.rightSurvivesTransfer true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f006 (derivable)
+#guard (Usul.Refinements.rightSurvivesTransfer true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f007 (genuine_ikhtilaf)
+#guard (Usul.Refinements.rightSurvivesTransfer true false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001 (derivable)
 #guard (Usul.Refinements.zahirPrevails .zann .qat true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002 (derivable)

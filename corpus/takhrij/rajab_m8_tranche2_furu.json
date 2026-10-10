@@ -432,12 +432,31 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f004",
-      "encoder": "unknown_condition",
-      "class": "missing_rule",
-      "note": "Pardons qiṣāṣ for a non-retaliable wound and its spread, then it spreads to the life: does qiṣāṣ lapse? Derived on the two wujūh; it turns on whose right qiṣāṣ for the spread is at the time of pardon, which the reading does not express.",
-      "needs": [
-        "rule:qisas_belongs_to_whom"
-      ]
+      "encoder": "qisas_belongs_to_whom",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "right_is_victims": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī and others (jazm): the pardon is not valid",
+          "ruling": false
+        },
+        {
+          "who": "the other wajh: valid",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Pardons qiṣāṣ for a non-retaliable wound and its spread, then it spreads to the life: does qiṣāṣ lapse? Derived on the two wujūh; it turns on whose right qiṣāṣ for the spread is at the time of pardon, which the reading does not express. Round 5: on the right being the heirs', he pardoned what he did not know to be his (heirs_right_is_q65), as al-Qāḍī holds.",
+      "revisit": {
+        "from_class": "missing_rule",
+        "from_encoder": "unknown_condition",
+        "closed_by": [
+          "rule:qisas_belongs_to_whom"
+        ]
+      }
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f005",

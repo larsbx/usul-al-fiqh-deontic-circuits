@@ -169,7 +169,22 @@ After this round: 214 cases, **coverage 0.977**, **madhhab coverage 0.648**, **0
 
 ## M8: scale-up, first tranche
 
-**The size of the remaining work.** The segmented Ibn Rajab records held 1,056 furūʿ, and 1,129 now that opening examples are segmented (see below). The 187 annotated in M4 cover 14 qawāʿid, so **869 remain, in 146 qawāʿid** (earlier estimates of ~1,900 were wrong). None of those qawāʿid has a formal reading yet, and a farʿ can only test a reading. So each tranche first formalises its qawāʿid from their own statements in `Usul.Refinements`, then annotates every farʿ of each qāʿida against that reading (`corpus/takhrij/rajab_m8_furu.json`).
+**Scope reconciliation.** Counts come from committed record IDs minus all existing annotations, not historical estimates. M4 now annotates 196 Ibn Rajab records under 14 qawāʿid, including nine `.f000` additions. PR #29's 1,129 segmented records minus those 196 and tranche 1's 26 left 907 records in 122 qawāʿid with cases. The old “869 in 146” mixed pre-opening counts with all unannotated qawāʿid, including those with no segmented case. PR #30 then added seven segmented records and annotated tranche 2's 25: 1,136 − 196 − 26 − 25 = 889, in 118 qawāʿid. Merged PR #32 then added the list-and-division segmentation and 21 candidate annotations. The unified tranche 3 below preserves those cases and PR #31's eight existing-record annotations, in one 29-record suite; current totals are generated below. Ibn al-Laḥḥām and the global report's totals are separate scopes.
+
+<!-- BEGIN GENERATED M8 SCOPE -->
+**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 297 annotated + **882 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 33 are fully annotated and **121 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
+
+The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
+
+| Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
+|---|---|---|---|---|---|
+| Combined M8 tranche 3 | 29 | 1.000 | 0.793 | 0 | 0 |
+| All annotation suites | 324 | 0.981 | 0.653 | 0 | 6 |
+
+Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
+<!-- END GENERATED M8 SCOPE -->
+
+Each selected qāʿida needs an explicitly sourced reading connected to a Lean encoder before its furūʿ can test that reading. An unannotated qāʿida is not proof that no related principle exists in the bank. Every emitted record of a selected qāʿida is inventoried, including `.f000`; known extraction gaps remain separate.
 
 **Tranche 1 (qawāʿid 6, 22, 68; 26 furūʿ with the opening examples).** These are the qawāʿid whose principles the bank had just formalised, so the tranche also tests those principles:
 
@@ -180,14 +195,14 @@ After this round: 214 cases, **coverage 0.977**, **madhhab coverage 0.648**, **0
 | 68: doubt in a condition of validity | `validUnderDoubt`: what needs a firm intention is valid only on ghalabat al-ẓann or an aṣl mustaṣḥab; what does not is valid («فالصحيح فيه الصحة») | `firm_by_basis`: the firm basis is bayt 90's `basis` or the presumption |
 
 Results on the tranche:
-- **8 derivable, 14 ikhtilāf (8 on the madhhab side), 4 missing rule or fact, 0 encoding errors.** Coverage is 22/26 = 0.846 and madhhab coverage 16/26 = 0.615, with the three opening examples included. Two of them are derivable; q22.f000 (impure water) turns on the quantity of water and is a missing fact (`fact:water_quantity`). Six ledger entries are opened: the three missing cases, and three minority-side ikhtilāf cases that name what they need (22.f003, 22.f004, 68.f007).
+- **8 derivable, 14 ikhtilāf (8 on the madhhab side), 4 missing rule or fact, 0 encoding errors.** Coverage is 22/26 = 0.846 and madhhab coverage 16/26 = 0.615, with the three opening examples included. Two of them are derivable; q22.f000 (impure water) turns on the quantity of water and is a missing fact (`fact:water_quantity`). Seven ledger entries are now open for this tranche: the four missing cases, and three minority-side ikhtilāf cases that name what they need (22.f003, 22.f004, 68.f007).
 - **What the cases say about the readings:**
   - **q22's khilāf is real.** On mixed oil (f003, and the bequest in f004 that follows it) the manṣūṣ is *partnership*, not consumption. Same-kind fungibles mixed together become a shirka, which consumption-as-absence cannot express. The kernel lands on the minority (al-Mujarrad), and the gap is now in the ledger (`rule:khalt_as_shirka`). On milk in water (f001) and grains of wheat in barley (f006) no madhhab is marked.
   - **q22.f008 is decided by another reading.** The mashhūr makes the mixer of a deposit liable *for transgression*. It is annotated under the trust-loss reading and gives the madhhab's ruling. A new optional `home` field records that its qāʿida is 22, so coverage stays exact without pretending the case was revisited.
   - **q68 types 1 and 2 track the madhhab** on the doubtful vessel, the zakāt intention, the night of doubt and the deposited dinars. The exception is f007: the stronger view (al-Qāḍī, Ibn ʿAqīl) rests on the bar on conditional sale, a separate principle (`rule:taliq_al_bay`).
   - **New gaps:** whether a concession needs certainty of its permission (68.f001, `fact:rukhsa_needs_certainty`); dirhams mixed with usurped ones, decided by proportion (22.f007, `rule:mixed_haram_by_proportion`); and a judge ruling against his own ijtihād (68.f009).
 - **Segmentation finding, opening examples (found on review, now fixed):** a qāʿida's first example often comes inline before the first «(ومنها)» paragraph, after «صور:» or «مسائل:» («منها», «(ومنها)», «(إحداها)»), or in a paragraph opening «ومن أمثلة ذلك». It used to stay inside the qāʿida record. The segmenter now emits it as `.f000`, so every existing farʿ id is unchanged; the rebuilt corpus differs from the old one only by 74 new records (73 Ibn Rajab, 1 Ibn al-Laḥḥām) and their `furu_count`. Twelve annotated qawāʿid gained one, and all twelve are annotated: q6, 22 and 68 in this tranche, and q8, 16, 26, 45, 63, 75, 76, 140 and 159 from M4. A case now runs from its marker to the next farʿ marker. Before, the text stopped at the first source line break, so page markers cut cases mid-sentence; that affected paragraph furūʿ (e.g. Ibn al-Laḥḥām 43.f006, «دع ما يريبك إلى ما لا») as well as the new opening examples. Ids are unchanged; only `case_ar` grows, up to its excerpt cap. Known rough edges: q9's f000 holds two examples joined by an inline «(ومنها)»; q63's and q147's f000 begin with a fragment from before the marker; for q90 and q150, f000 is the heading of a sub-list.
-- **Segmentation finding, other layouts (ordinal cases now segmented):** a qāʿida with no «(و)منها» paragraph may enumerate its cases by ordinal, «(الصورة الثانية)», «المسألة الثالثة:». Such a qāʿida now takes those lines as its farʿ markers; a qāʿida with any «(و)منها» line keeps that marker alone, so no existing id moves. The opening example is also read after «… مسائل إحداها:» and «فمن صور المسألة». The rebuilt corpus gains 7 records (q13.f000; q14.f001–2; q52.f000–3) and changes only q14.f000, which no longer runs on into the second ṣūra; it is not annotated. Divisions (النوع, القسم, الضرب) are not cases and stay unsegmented: they head sub-lists whose cases are «مثل» examples or running prose, as in qāʿida 66 (two types) and most of the 20 qawāʿid that still have no segmented farʿ (e.g. 43, 44, 49, 89, 152, 155). Those want a division-aware segmenter, or manual cutting.
+- **Segmentation finding, other layouts (ordinal cases now segmented):** a qāʿida with no «(و)منها» paragraph may enumerate its cases by ordinal, «(الصورة الثانية)», «المسألة الثالثة:». Such a qāʿida now takes those lines as its farʿ markers; a qāʿida with any «(و)منها» line keeps that marker alone, so no existing id moves. The opening example is also read after «… مسائل إحداها:» and «فمن صور المسألة». The rebuilt corpus gains 7 records (q13.f000; q14.f001–2; q52.f000–3) and changes only q14.f000, which no longer runs on into the second ṣūra; it is not annotated. **Lists and divisions (now segmented)**: a qāʿida with neither marker is cut by its list; an existing opening remains `.f000` and the following ordinal chain starts at 2. First choice is cases by feminine ordinal, «(أحدها)», «(والثانية)», «(اليد السادسة)». Failing those, divisions: one labelled level («النوع/القسم/الضرب/الحالة/المقرر الثاني»), or bare «والثاني:» once the qāʿida announces them («نوعان:», «على قسمين:», «ثلاثة أشياء:»). The list is a chain of consecutive ordinals 1, 2, …, or 2, … when the first item is the opening. For each k the cut is the last k-mark before the first (k+1)-mark, so a second riwāya written «(والثانية)» inside a case stays in it (q1). In a case list, a feminine 2 closes an open «إحداهما» pair before it can open a top-level item. A masculine «أحدهما … والثاني» pair or an already closed feminine pair does not absorb the next top-level «(والثانية)». A labelled level wins over bare marks, so a wajh «والثاني:» inside a division does not cut (q36), and «القسم» and «النوع» are never mixed (q43). The rebuilt corpus gains 43 records in 14 qawāʿid (1, 17, 36, 43, 46, 49, 50, 51, 61, 66, 91, 93, 152, 155); no id moves and no existing case changes. Six qawāʿid still have none: 44 (a restarted القسم sequence with no announcement), 48 and 89 (prose), 83 (a «الحالة الثانية» with no announced first), 135 (two wujūh) and 148 (a dual «مسألتان: إحداهما»). A division is a sub-rule with its own ruling, so it is annotated like a farʿ; its wujūh are the positions.
 
 **Tranche 2 (qawāʿid 7, 27, 28, 64, 65; 25 furūʿ).** Five qawāʿid with no reading yet, each formalised from its own statement (`corpus/takhrij/rajab_m8_tranche2_furu.json`):
 
@@ -207,6 +222,85 @@ Results on the tranche:
   - **7.f001, tayammum:** Ibn Rajab places it between the two kinds; the riwāya that the prayer is void reads it as necessity, which the reading follows.
   - **64.f003 refines 64–65:** for the usurper who eats food already permitted to him, Ibn Rajab rejects liability («الصواب الجزم بعدم الضمان»), since liability is not established by belief. Hence the reading's second argument; it would otherwise land on Abū al-Khaṭṭāb.
 
+**Tranche 3, PR #32 contribution (qawāʿid 1, 17, 66, 91, 93; 21 furūʿ and divisions).** Five qawāʿid that only the list-and-division segmenter opened (`corpus/takhrij/rajab_m8_tranche3_furu.json`). A division is annotated like a farʿ: it is a sub-rule with its own ruling, and its wujūh are the positions.
+
+| Qāʿida | Reading | Link to the bank |
+|---|---|---|
+| 1: is running water like still water, or is each jirya water on its own? («فيه خلاف») | `runningBody`: each jirya, the second limb (al-Qāḍī's madhhab on its first farʿ) | new |
+| 17: one noble act against many of the same cost | `preferMany`: «ظاهر كلام أحمد ترجيح الكثرة» | new |
+| 66: acting on a mistaken basis while the true one exists | `validWithBasis`: valid in both types («والمذهب هنا الصحة بلا ريب») | `q65_is_the_unbelieved_basis`: the contrast with q65's `countsAsMet` |
+| 91: what the hand takes in | `handLiable`: what has a share of property, not the free person | new |
+| 93: the ten hands that take from a usurper unaware | `takerRecourse`: recourse on the usurper unless he undertook the liability («دخل على ضمان … استقر ضمانها عليه») | `undertaken_settles` |
+
+Results on the tranche:
+- **5 derivable, 16 ikhtilāf (12 on the madhhab side), 0 encoding errors.** Coverage 21/21 = 1.000, madhhab coverage 17/21 = 0.810. One ledger entry is opened (1.f003, `rule:ayman_by_urf`).
+- **What the cases say about the readings:**
+  - **Qāʿida 93 tracks the madhhab in all eight segments**, on the thing and on the benefit alike: whoever undertook a liability bears it, and whoever did not has recourse. Ibn Rajab argues against the madhhab twice. In 93.f003 he holds that the taker who did not undertake the liability cannot be made liable at all («وينبغي أن يكون هو المذهب»). In 93.f005 he holds that the buyer's loss settles on the usurper («وهو عندي قياس المذهب»).
+  - **Qāʿida 1's khilāf divides by subject.** Each jirya counts on its own for najāsa (al-Qāḍī's madhhab) and for lifting ḥadath (al-ashhar). The water counts as one body for washing a vessel (the ẓāhir of the aṣḥāb) and for the oath, where «الأيمان مرجعها إلى العرف» decides (Ibn Rajab's qiyās al-manṣūṣ). The oath case is the new gap.
+  - **Qāʿida 17 holds where Aḥmad speaks** (prayer, sacrifice, the one who forces himself to obey). Where Aḥmad's narrations divide (recitation with reflection) or only later authorities speak (the precious slave), Ibn Rajab and Taqī al-Dīn prefer the noble act.
+  - **Qāʿidas 66 and 65 are each other's complement:** the act stands when he relied on a basis he believed (66), and fails when he believed the basis absent (65).
+- **Segmentation finding:** in qāʿida 93 the ninth and tenth hands begin mid-line («بخلاف ما على الشجر (اليد التاسعة)»), so they stay inside 93.f008. Both agree with the reading, as its note records.
+
+**Tranche 3, PR #31 contribution (qawāʿid 31 and 47; eight existing records).** This continues after merged PR #30 rather than repeating tranche 2. Both full source sections are available in the locked OpenITI witness; the source replays the complete current Ibn Rajab record set exactly, including the 43 added list-and-division records. No record, identifier, source lock, earlier annotation or accepted conclusion is changed. The exact obligations, page-correct source excerpts, excerpt hashes, related Lean definitions, additional contrast guards and all nine open human-review questions (the original four plus five concerning PR #32's readings) are in [`rajab_m8_tranche3_plan.json`](../../corpus/worklists/rajab_m8_tranche3_plan.json).
+
+| Qāʿida | Source-backed reading and regression value | Boundary |
+|---|---|---|
+| 31 (f001–f004) | `makeupAfterFailure`: corruption of a binding undertaking retains its begun description; prevention has a different make-up description. Faulty and non-faulty loss are separate inputs. Additional guards check both contrasts within f002 and f003 | The no-fault branch follows the author of al-Mughnī; the other wajh remains recorded. Apparent Aḥmad text in f004 is not assigned a new positive madhhab label. “Baseline” describes a subsequent make-up, not a newly inferred duty to make it up |
+| 47 (f000–f003) | `defectiveCompensationBasis`: the selected sale/lease positions require equivalent compensation; the stated kitāba outcome and selected nikāḥ position use the named consideration. `defectiveCompensation` reuses `Muamalat.priceDue` only after the source fixes the basis; distinct test amounts catch incorrect price leakage | Both amount positions and their attributions remain explicit. The prohibited-consideration/void branch of kitāba is excluded. Agreement on an outcome does not resolve the contract-versus-condition explanations |
+
+Selection used source availability, bounded size, case diversity and regression value. Q31 supplies pilgrimage, prayer, offerings and retreat cases; q47 supplies four transaction contexts and an opening record. Larger or less clean tranches such as q3 (several examples inside a record) and q12 (variant preferences) remain in the exact worklist. The neighboring substitute definitions are context, not an asserted equivalence with q31.
+
+Results: **3 derivable, 5 ikhtilāf (3 with a source-marked madhhab label), no new encoding errors or capability gaps**. Record-level coverage is 8/8; madhhab coverage is 6/8 = 0.750. These are candidate annotations. Lean checks their stated encoding, not whether an independent scholar accepts that encoding, attribution or preference. The original four interpretation questions remain open; no register decision is adopted. Both contributions share one suite, with exact case fingerprints pinned to their original PR heads. The aggregate report, inventory and roadmap metrics are regenerated from the combined corpus. PR #32's oath/custom gap remains open, and the candidate statuses and 29 prior revisits are preserved.
+
+Replay after caching the registered full witness and checking its lock hash:
+
+```sh
+cd pipeline
+python -m usul_corpus takhrij
+python -m usul_corpus m8-worklist
+python -m usul_corpus docs
+python -m usul_corpus signature
+python -m pytest -q
+cd ..
+make validate generated lean
+```
+
+`m8-worklist --check` checks both the JSON inventory and the generated scope paragraphs in this note and the roadmap. The suite's source check verifies the full witness hash, exact record replay and all selected excerpt/page receipts when that witness is cached. Tests for other uncached witnesses report skips; they are not claimed as full-source replays.
+
+**Round 5: the bank applied to its own gaps, after tranches 1–3.** Of the 14 open gaps, 8 close, each by the principle the case itself names. Every closure is cited in the [dossier](dossier.md) and is a new reading beside the old one (`revisit.from_encoder`), so no earlier result changes:
+
+| Case | Was | Closed by | Ground |
+|---|---|---|---|
+| 68.f009 | missing rule | `rulingUndone`: undone only by a clear text | IQ-21's adopted principle, `ijtihad_not_overturned_by_ijtihad` (Ibn Abī Mūsā) |
+| 1.f003 | ikhtilāf, needs ʿurf | `oathBody`: the oath's object measured by custom | al-Saʿdī Q9 (`Kulliyyat.measure`); «والأيمان مرجعها إلى العرف» |
+| 22.f003, 22.f004 | ikhtilāf, minority side | `mixedOutcome`: same kind, indistinct, means shared | the manṣūṣ «أنه اشتراك» |
+| 22.f007 | missing rule | `mixedHaram`: few, suspend; many, take out the share | Aḥmad's naṣṣ (al-Marrūdhī) |
+| 68.f001 | missing fact | `rukhsaValid`: a concession needs its permission established | `rukhsa_is_firm_condition`: qāʿida 68's first type |
+| 68.f007 | ikhtilāf, needs taʿlīq | `conditionedSaleValid`: a condition both know to hold adds nothing | al-Kāfī, with Aḥmad's naṣṣ on the absent sale |
+| 65.f004 | missing rule | `pardonOfSpreadValid`: void if the right is the heirs' | `heirs_right_is_q65`; al-Qāḍī's jazm |
+
+Four of the eight now land on the madhhab side (22.f003, 22.f004, 22.f007, 65.f004). The other four are disputes with no madhhab marked; the reading follows Ibn Rajab in 1.f003. Six gaps stay open:
+- the four command gaps of Ibn al-Laḥḥām 43, which are uṣūl proper and wait for M5's schemata;
+- 52.f007, which has no transmitted ruling;
+- 22.f000, which bundles a case agreed «بغير خلاف» (much water) with a disputed one (little water) in a single record.
+
+**Tranche 4 (qawāʿid 2, 20, 21, 24; 21 furūʿ).** Read from each qāʿida's own statement (`corpus/takhrij/rajab_m8_tranche4_furu.json`):
+
+| Qāʿida | Reading | Link to the bank |
+|---|---|---|
+| 2: hair and nails are as detached («هذا هو جادة المذهب») | `hairStatus` | new |
+| 20: growth from the substance is as a part; growth from earnings is not («على الصحيح») | `growthKind` | new |
+| 21: is the child a part or earnings? («والأظهر أنه جزء») | the same encoder | `child_is_part`: 21 is 20 applied |
+| 24: property that a due right attaches to may be transferred; the right survives if it is on the property, or if its reason does not cease with the transfer | `rightSurvivesTransfer` | `owner_right_lapses_with_its_reason`, `property_right_survives` |
+
+Results on the tranche:
+- **7 derivable, 14 ikhtilāf (5 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 21/21 = 1.000, madhhab coverage 12/21 = 0.571.
+- **What the cases say about the readings:**
+  - **Qāʿida 2 holds wherever a madhhab is marked**, for wuḍūʾ, impurity, divorce attached to the hair, and the beard as covering in prayer (Aḥmad's naṣṣ). The exception is inside 2.f002: the hanging hair is washed in the minor ḥadath «على الصحيح», against the qāʿida.
+  - **Qāʿidas 20 and 21 mark a madhhab only where the aṣḥāb take the yield as a part** (20.f003, the ashhar; 20.f005, many aṣḥāb). Elsewhere two riwāyas stand, and the qāʿida's «على الصحيح» decides only between substance and earnings, not each farʿ.
+  - **Qāʿida 24 separates the punitive from the remedial right.** Burning the thief's goods (24.f000) punishes a past act, so the sale does not end it. Lowering the dhimmī's building (24.f002) removes an ongoing harm, which ends with the transfer, as the text itself contrasts («لا عقوبة للتعلية الماضية»).
+- **Segmentation finding:** qāʿida 21's first example opens mid-line («والأظهر أنه جزء فمن ذلك …»), so it has no `.f000`. Qāʿida 9, whose inline «(ومنها)» joins several cases in one record, is left for the segmenter.
+
 **Coverage trend:**
 
 | Stage | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
@@ -219,5 +313,12 @@ Results on the tranche:
 | All, after the opening-example fix | 249 | 0.964 | 0.653 | 0 | 12 |
 | M8 tranche 2 alone | 25 | 0.960 | 0.400 | 0 | 1 |
 | All, after tranche 2 | 274 | 0.963 | 0.630 | 0 | 13 |
+| PR #32 contribution alone | 21 | 1.000 | 0.810 | 0 | 1 |
+| All, after PR #32 merged (historical) | 295 | 0.966 | 0.643 | 0 | 14 |
+| All, after round 5 (the bank applied to its gaps) | 303 | 0.980 | 0.659 | 0 | 6 |
+| M8 tranche 4 alone | 21 | 1.000 | 0.571 | 0 | 0 |
+| All, after tranche 4 | 324 | 0.981 | 0.653 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
+
+The current combined result is the generated M8 table above. Segmentation review receipts and the exact validation boundary are recorded in [the reconciliation audit](m8-tranche3-reconciliation-2026-10-08.md).

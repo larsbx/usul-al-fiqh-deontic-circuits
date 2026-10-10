@@ -1,0 +1,911 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "base_commit": "86f457b9f283ba63444c49aef4c7bdd6165df027",
+  "source": {
+    "witness": "openiti-rajab-shamela21730",
+    "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0795IbnRajabHanbali/0795IbnRajabHanbali.Qawacid/0795IbnRajabHanbali.Qawacid.Shamela0021730-ara1.completed",
+    "bytes": 1660710,
+    "sha256": "f077fdf1ba4ec9cfecafed8b5e0023e850f57084e17463847cc238e3d1128e68"
+  },
+  "selection": [
+    {
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001",
+      "reason": "Preserve the complete set of source-backed list-and-division annotations merged through PR #32.",
+      "existing_lean": [],
+      "relationship": "Candidate per-jirya reading; the vessel and oath positions and the custom gap remain explicit.",
+      "reading": [
+        "Usul.Refinements.runningBody"
+      ]
+    },
+    {
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017",
+      "reason": "Preserve the complete set of source-backed list-and-division annotations merged through PR #32.",
+      "existing_lean": [],
+      "relationship": "Candidate equal-budget comparison; equality and the noble-act preferences are not resolved by the Boolean output.",
+      "reading": [
+        "Usul.Refinements.preferMany"
+      ]
+    },
+    {
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031",
+      "reason": "Four records, a complete locked source, and contrasts between corruption, prevention, faulty loss and non-faulty loss. Exposes an attempted overgeneralization from the chapter heading. No existing encoder directly gives the make-up description.",
+      "existing_lean": [
+        "Usul.Refinements.mustSwitch",
+        "Usul.Sadi.useSubstitute"
+      ],
+      "relationship": "Context only: the new reading does not claim a reduction to the substitute rules.",
+      "reading": [
+        "Usul.Refinements.makeupAfterFailure",
+        "Usul.Refinements.prevention_not_corruption",
+        "Usul.Refinements.fault_changes_replacement"
+      ]
+    },
+    {
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047",
+      "reason": "Four records including f000; complete locked source; sale, lease, kitabah and nikah distinguish named and equivalent compensation. Regression value: a named price must not leak into loss compensation.",
+      "existing_lean": [
+        "Usul.Muamalat.priceDue",
+        "Usul.Muamalat.compensation"
+      ],
+      "relationship": "The amount selector is reused only after an explicitly sourced compensation basis; it supplies no fact about which basis applies.",
+      "reading": [
+        "Usul.Refinements.defectiveCompensationBasis",
+        "Usul.Refinements.defectiveCompensation",
+        "Usul.Refinements.defective_compensation_by_basis",
+        "Usul.Refinements.defective_loss_ignores_named"
+      ]
+    },
+    {
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066",
+      "reason": "Preserve the complete set of source-backed list-and-division annotations merged through PR #32.",
+      "existing_lean": [],
+      "relationship": "Scoped to the two mistaken-basis divisions. The q65 theorem checks only the stated contrasting input.",
+      "reading": [
+        "Usul.Refinements.validWithBasis",
+        "Usul.Refinements.q65_is_the_unbelieved_basis"
+      ]
+    },
+    {
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091",
+      "reason": "Preserve the complete set of source-backed list-and-division annotations merged through PR #32.",
+      "existing_lean": [],
+      "relationship": "The coarse property-like input does not decide the disputed free-minor and contract subcases.",
+      "reading": [
+        "Usul.Refinements.handLiable"
+      ]
+    },
+    {
+      "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093",
+      "reason": "Preserve the complete set of source-backed list-and-division annotations merged through PR #32.",
+      "existing_lean": [],
+      "relationship": "Recourse for the selected liability object, not a complete initial-liability judgment. Hands 9 and 10 remain embedded in f008.",
+      "reading": [
+        "Usul.Refinements.takerRecourse",
+        "Usul.Refinements.undertaken_settles"
+      ]
+    }
+  ],
+  "review_questions": [
+    {
+      "id": "M8-T3-01",
+      "status": "open",
+      "scope": [
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f003"
+      ],
+      "question": "Confirm the choice of the al-Mughni no-fault branch and the mapping of loss versus corruption. The source reports two wujuh; this implementation records both and adopts neither."
+    },
+    {
+      "id": "M8-T3-02",
+      "status": "open",
+      "scope": [
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004"
+      ],
+      "question": "Confirm the corresponding-days reading and whether the apparent Ahmad text warrants a madhhab label. matches_madhhab remains false, meaning no positive label is asserted."
+    },
+    {
+      "id": "M8-T3-03",
+      "status": "open",
+      "scope": [
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f002"
+      ],
+      "question": "Review contract versus conditional-manumission explanations and the lawful-consideration restriction. The encoding tests only the common named-amount outcome and excludes the void/prohibited-consideration branch."
+    },
+    {
+      "id": "M8-T3-04",
+      "status": "open",
+      "scope": [
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f000",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f001",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f003"
+      ],
+      "question": "Confirm attribution and the contract-liability/loss-liability fact for each selected position. Source madhhab labels are candidate annotations, not independent acceptance."
+    },
+    {
+      "id": "M8-T3-05",
+      "status": "open",
+      "scope": [
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f002",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003"
+      ],
+      "question": "Review the per-jirya generalization separately for najasa, vessel washing, hadath and the oath. The oath custom gap and contrary preferred readings remain open."
+    },
+    {
+      "id": "M8-T3-06",
+      "status": "open",
+      "scope": [
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f001",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f002",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f003",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f004",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f005"
+      ],
+      "question": "Review the equal-budget feature, the same-or-lower-price offering, and the Boolean collapse of equality with the contrary preference. The candidate encoding does not adjudicate Ahmad's divided narrations."
+    },
+    {
+      "id": "M8-T3-07",
+      "status": "open",
+      "scope": [
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f000",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f001"
+      ],
+      "question": "Confirm the believed-basis/actual-basis facts within the two source divisions; no theorem extends the reading to arbitrary mistaken acts."
+    },
+    {
+      "id": "M8-T3-08",
+      "status": "open",
+      "scope": [
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f000",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f001"
+      ],
+      "question": "Review the distinction between liability by hand and by contract, including the disputed free-minor subcases retained within f001."
+    },
+    {
+      "id": "M8-T3-09",
+      "status": "open",
+      "scope": [
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f001",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f002",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f003",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f004",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f005",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f006",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f007",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f008"
+      ],
+      "question": "Review recourse for the thing versus the benefit and distinguish recourse from the alternative of no initial liability; preserve Ibn Rajab's contrary preferences and the embedded ninth and tenth hands."
+    }
+  ],
+  "obligations": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p003#q001.f000",
+      "case_ar_sha256": "8ff95e57915837323a2180681db5868aa9d18e0d6dbd29090768910b3b7f4cdd",
+      "encoder": "running_water",
+      "facts": {
+        "running": true
+      },
+      "expected": "perJirya",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p004",
+          "excerpt_ar": "لو وقعت فيه نجاسة فهل يعتبر مجموعه، فإن كان كثيرا لم ينجس بدون تغير وإلا نجس أو تعتبر كل جرية بانفرادها فإن بلغت قلتين لم ينجس وإلا نجست. فيه روايتان حكاهما الشيرازي وغيره. [غمس الإناء النجس في ماء جار] (والثانية) : المذهب عند القاضي",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p003#q001.f001",
+      "case_ar_sha256": "1290c0c3b6a13f0ea9da9c2290e121dd9bf46c848b1c542f35b596ee06422da5",
+      "encoder": "running_water",
+      "facts": {
+        "running": true
+      },
+      "expected": "perJirya",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p004",
+          "excerpt_ar": "لو غمس الإناء النجس في ماء جار ومرت عليه سبع جريات فهل ذلك غسلة واحدة أو سبع غسلات؟ على وجهين: ms001 حكاهما أبو الحسن بن الغازي تلميذ الآمدي، وذكر أن ظاهر كلام الأصحاب أن ذلك غسلة واحدة، وفي شرح المذهب للقاضي: أن كلام أحمد يدل عليه، وكذلك لو كان ثوبا ونحوه وعص",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f002",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p003#q001.f002",
+      "case_ar_sha256": "8ef7ec690634eaff60bbc1f1c138e33c34e86ccd7c0e32ecbdfc0ac853224a95",
+      "encoder": "running_water",
+      "facts": {
+        "running": true
+      },
+      "expected": "perJirya",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p004",
+          "excerpt_ar": "لو انغمس المحدث حدثا أصغر في ماء جار للوضوء ومرت عليه أربع جريات متوالية فهل يرتفع بذلك حدثه أم لا؟ على وجهين: أشهرهما عند الأصحاب أنه يرتفع حدثه. وقال أبو الخطاب في الانتصار: ظاهر كلام أحمد أنه لا يرتفع حدثه لأنه لم يفرق بين الجاري والراكد. قلت: بل نص أحمد عل",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p003#q001.f003",
+      "case_ar_sha256": "13320e60a8aa26c822f6fea28c1689f6b13124f3accfc28a744820513d05ee64",
+      "encoder": "running_water",
+      "facts": {
+        "running": true
+      },
+      "expected": "perJirya",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p004",
+          "excerpt_ar": "لو حلف لا يقف في هذا الماء وكان جاريا لم يحنث عند أبي الخطاب وغيره ; لأن الجاري يتبدل ويستخلف شيئا فشيئا، فلا يتصور الوقوف فيه. وقياس المنصوص أنه يحنث، لا سيما والعرف يشهد له والأيمان مرجعها إلى العرف، ثم وجدت القاضي في الجامع الكبير ذكر نحو هذا [والله أعلم] .",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f001",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p022#q017.f001",
+      "case_ar_sha256": "1e9dd9264d32da630366ba1157b6564c3425e73047012b25329ea440e006aa47",
+      "encoder": "many_over_noble",
+      "facts": {
+        "same_cost": true
+      },
+      "expected": true,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p022",
+          "excerpt_ar": "إذا تعارض صلاة ركعتين طويلتين وصلاة أربع ركعات في زمن واحد فالمشهور أن الكثرة أفضل، وحكي عن أحمد رواية أخرى بالعكس وحكي عنه رواية ثالثة بالتسوية.",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f002",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p022#q017.f002",
+      "case_ar_sha256": "6f7e0c7f17f4831ef26dccd8b017def96a09fb2f34abb25de59d0cfb3ff2cf53",
+      "encoder": "many_over_noble",
+      "facts": {
+        "same_cost": true
+      },
+      "expected": true,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p022",
+          "excerpt_ar": "أهدى بدنة سمينة بعشرة وبدنتين بعشرة أو بأقل قال ابن منصور قلت لأحمد بدنتان سمينتان بتسعة وبدنة بعشرة قال ثنتان أعجب إلي. ورجح الشيخ تقي الدين تفضيل البدنة السمينة، وفي سنن أبي داود حديث يدل عليه.",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p022",
+          "excerpt_ar": "قال ثنتان أعجب إلي. ورجح الشيخ تقي الدين تفضيل البدنة السمينة",
+          "note": "Source attribution or embedded-boundary receipt; no scholarly acceptance is asserted."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f003",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p022#q017.f003",
+      "case_ar_sha256": "c09f73e17e78ec6192bff161936b3667f5319f6a2c5ff7336fb9aeebedf69307",
+      "encoder": "many_over_noble",
+      "facts": {
+        "same_cost": true
+      },
+      "expected": true,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p022",
+          "excerpt_ar": "رجل قرأ بتدبر وتفكر سورة وآخر قرأ في تلك المدة سورا عديدة سردا. قال أحمد في رواية جعفر بن أحمد بن أبي قيماز وسئل أيما أحب إليك الترسل أو الإسراع، قال: أليس قد جاء بكل حرف كذا وكذا حسنة؟ قالوا له: في السرعة؟ قال: إذا صور الحرف بلسانه ولم يسقط من الهجاء، وهذا ظا",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p022",
+          "excerpt_ar": "وهذا يدل على تفضيل قراءة التفكر على السرعة، وهو اختيار الشيخ تقي الدين وهو المنصوص صريحا عن الصحابة والتابعين",
+          "note": "Source attribution or embedded-boundary receipt; no scholarly acceptance is asserted."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f004",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p022#q017.f004",
+      "case_ar_sha256": "6ea7fe30ecb671794658af1d9b4663a9425fe07ae2afe1b710486673740b6d35",
+      "encoder": "many_over_noble",
+      "facts": {
+        "same_cost": true
+      },
+      "expected": true,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p023",
+          "excerpt_ar": "رجلان أحدهما ارتاضت نفسه على الطاعة وانشرحت بها وتنعمت وبادرت إليها طواعية ومحبة، والآخر يجاهد نفسه على تلك الطاعات ويكرهها عليها أيهما أفضل قال الخلال كتب إلي يوسف بن عبد الله الإسكافي حدثنا الحسن بن علي بن الحسن أنه سأل أبا عبد الله عن الرجل يشرع له وجه بر ف",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p023",
+          "excerpt_ar": "وهذا ظاهر في ترجيح المكره نفسه لأن له عملين جهادا وطاعة أخرى",
+          "note": "Source attribution or embedded-boundary receipt; no scholarly acceptance is asserted."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p023",
+          "excerpt_ar": "وعند الجنيد وجماعة من عباد البصرة أن الباذل لذلك طوعا ومحبة أفضل وهو اختيار الشيخ تقي الدين",
+          "note": "Source attribution or embedded-boundary receipt; no scholarly acceptance is asserted."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f005",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p022#q017.f005",
+      "case_ar_sha256": "16aaa460c9e943398c634ab6a9f1553bb4e140e796c30890338bbf9514458ded",
+      "encoder": "many_over_noble",
+      "facts": {
+        "same_cost": true
+      },
+      "expected": true,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p023",
+          "excerpt_ar": "تعارض عتق رقبة نفيسة بمال وعتق رقاب متعددة بذلك المال، قال القاضي وابن عقيل الرقاب أفضل وفيه أيضا نظر وقد كان طائفة من السلف كابن عمر والربيع بن خثيم يستحبون الصدقة بما يشتهون من الأطعمة. وإن كان المسكين ينتفع بقيمته أكثر، عملا بقوله ( {لن تنالوا البر حتى تنفق",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f001",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p040#q031.f001",
+      "case_ar_sha256": "b7dd8b56a5c738a242a83c261cfdf0a32becebdb451ec1daf767a89959225800",
+      "encoder": "makeup_after_failure",
+      "facts": {
+        "failure": "corruption"
+      },
+      "expected": "asBegun",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p040",
+          "excerpt_ar": "إذا صلى المسافر خلف مقيم وفسدت صلاته فإنه يجب عليه قضاؤها تامة",
+          "note": "Full make-up after corruption."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f002",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p040#q031.f002",
+      "case_ar_sha256": "0d9f025404807f91556d439b55b53afe75b4e7f9f68280045c9a43e6c0a87269",
+      "encoder": "makeup_after_failure",
+      "facts": {
+        "failure": "corruption"
+      },
+      "expected": "asBegun",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p040",
+          "excerpt_ar": "إذا أحرم من بلده ثم أفسد نسكه بجماع وجب قضاؤه والإحرام من موضع إحرامه أولا نص عليه أحمد بخلاف ما إذا أحصر في نسكه ذاك ثم قضاه فإنه لا يلزمه الإحرام إلا من الميقات نص عليه أيضا لأن المحصر فيه لم يلزمه إتمامه",
+          "note": "The paragraph itself supplies corruption and prevention as distinct inputs."
+        }
+      ],
+      "additional_guards": [
+        "#guard makeupAfterFailure .prevention == .baseline"
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f003",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p040#q031.f003",
+      "case_ar_sha256": "3cc1ce1b9ca54f2bdd9d0353d10e967dd293ac63f01eba32f05247f693285cbb",
+      "encoder": "makeup_after_failure",
+      "facts": {
+        "failure": "lossWithoutFault"
+      },
+      "expected": "baseline",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p040",
+          "excerpt_ar": "فإن كان تلفه بتفريطه فعليه إبداله بمثله وإن كان بغير تفريط ففيه وجهان",
+          "note": "Fault branch and two no-fault positions."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p040",
+          "excerpt_ar": "وجزم صاحب المغني بأنه لا يلزمه أكثر مما كان في ذمته",
+          "note": "Selected no-fault position; not a claimed scholarly adoption."
+        }
+      ],
+      "additional_guards": [
+        "#guard makeupAfterFailure .lossWithFault == .asBegun"
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p040#q031.f004",
+      "case_ar_sha256": "cfc717b1eee697e298008a624ea3bc8a8ea12e5d829e5f1b9b7766b910010379",
+      "encoder": "makeup_after_failure",
+      "facts": {
+        "failure": "corruption"
+      },
+      "expected": "asBegun",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p040",
+          "excerpt_ar": "لو نذر اعتكافا في شهر رمضان ثم أفسده فهل يلزمه قضاؤه في مثل تلك الأيام؟ على وجهين",
+          "note": "The source explicitly reports two positions."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p040",
+          "excerpt_ar": "وظاهر كلام أحمد لزومه وهو اختيار ابن أبي موسى",
+          "note": "Selected position, without a new madhhab acceptance claim."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f000",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p067#q047.f000",
+      "case_ar_sha256": "d949dfcbbe7465e202b014aaed59992b749b9db4271a1c49e8a26c030b9a67d7",
+      "encoder": "defective_compensation",
+      "facts": {
+        "contract_liability": false
+      },
+      "expected": "equivalent",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p067",
+          "excerpt_ar": "المبيع والمعروف في المذهب ضمانه بالقيمة لا بالثمن المسمى",
+          "note": "Known madhhab amount basis."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p068",
+          "excerpt_ar": "أن المقبوض بالبيع الفاسد يضمن بالمسمى وهو اختيار الشيخ تقي الدين",
+          "note": "Named-consideration alternative, beyond the record cap."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f001",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p067#q047.f001",
+      "case_ar_sha256": "26c273de88a827076c1c96747f038ad99a8957ae574f96a6b3593c24bb3fa1f9",
+      "encoder": "defective_compensation",
+      "facts": {
+        "contract_liability": false
+      },
+      "expected": "equivalent",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p068",
+          "excerpt_ar": "الإجارة الفاسدة والمعروف من المذهب ضمانها بأجرة المثل أيضا ويتخرج على قول أبي بكر أنها تضمن بالأجرة المسماة",
+          "note": "Both lease positions and their attribution."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f002",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p067#q047.f002",
+      "case_ar_sha256": "46af6ce766801c1bb462f0f3c6035494472d6c02719662f59ddb8b106343e9cc",
+      "encoder": "defective_compensation",
+      "facts": {
+        "contract_liability": true
+      },
+      "expected": "agreed",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p068",
+          "excerpt_ar": "الكتابة الفاسدة تضمن بالمسمى فإذا أدى ما سمى فيها حصل العتق ولم يلزمه ضمان قيمته ذكره أبو بكر وهو ظاهر كلام أحمد، واتفق الأصحاب على ذلك",
+          "note": "The common outcome; no claim to resolve competing explanations."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p068",
+          "excerpt_ar": "ولا يقع العتق عنده بأداء المحرم لأن العقد لا ينعقد بعوض محرم بل هو عنده باطل",
+          "note": "Excluded prohibited-consideration branch."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f003",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p067#q047.f003",
+      "case_ar_sha256": "8a4667391df928dce8e6bc3bc14ffc50c3110bd7c10336b3a9f98b56b7fc353d",
+      "encoder": "defective_compensation",
+      "facts": {
+        "contract_liability": true
+      },
+      "expected": "agreed",
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p068",
+          "excerpt_ar": "النكاح الفاسد يستقر بالدخول فيه وجوب المهر المسمى في الرواية المشهورة عن أحمد وهي المذهب عند أبي بكر وابن أبي موسى",
+          "note": "Source-identified selected mahr position."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p068",
+          "excerpt_ar": "وحكي عن أحمد رواية أخرى أن الواجب مهر المثل",
+          "note": "The alternative transmission."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p068",
+          "excerpt_ar": "ضمان المهر في النكاح الفاسد ضمان عقد كضمانه في الصحيح وضمان البيع الفاسد ضمان تلف بخلاف البيع الصحيح",
+          "note": "The source distinction used as the encoder fact."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f000",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p118#q066.f000",
+      "case_ar_sha256": "1140156a00ea2795fafad546fe125bfe1ea68551f3b5d61ce58700f4916d4205",
+      "encoder": "mistaken_basis",
+      "facts": {
+        "believed_basis": true,
+        "actual_basis": true
+      },
+      "expected": true,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p118",
+          "excerpt_ar": "أن يكون الاستناد إلى ما ظنه صحيحا أيضا فالتصرف صحيح مثل أن يستدل على القبلة بنجم يظنه الجدي ثم تبين أنه نجم آخر مسامته.",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f001",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p118#q066.f001",
+      "case_ar_sha256": "65159756c643fef61a101d09c335f49423e4930ddd0d50abf576ed38637c1596",
+      "encoder": "mistaken_basis",
+      "facts": {
+        "believed_basis": true,
+        "actual_basis": true
+      },
+      "expected": true,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p118",
+          "excerpt_ar": "أن لا يكون ما ظنه مستندا [استنادا] صحيحا مثل أن يشتري شيئا ويتصرف فيه ثم تبين أن الشراء كان فاسدا وأنه ورث تلك العين فإن قلنا في القاعدة الأولى بالصحة فهنا أولى، وإن قلنا ثم بالبطلان فيحتمل هنا الصحة لأنه استند إلى سبب مسوغ وكان في نفس الأمر له مسوغ غيره فاستن",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p119",
+          "excerpt_ar": "والمذهب هنا الصحة بلا ريب لأن أصحابنا اختلفوا فيما إذا وهب الغاصب المغصوب من مالكه",
+          "note": "Source attribution or embedded-boundary receipt; no scholarly acceptance is asserted."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f000",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p207#q091.f000",
+      "case_ar_sha256": "943993f57338c79e337976d2efac35126fbe0ed9b15e48bfed0af13ab0a7fa63",
+      "encoder": "hand_liability",
+      "facts": {
+        "property_like": true
+      },
+      "expected": true,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p208",
+          "excerpt_ar": "ما فيه شائبة الحرية لثبوت بعض أحكامها دون حقيقتها كأم الولد والمكاتب والمدبر فيضمن باليد على ما ذكره القاضي والأصحاب وكذلك يضمن بالعقد الفاسد في قياس المذهب قاله أبو البركات في تعليقه على الهداية.",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f001",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p207#q091.f001",
+      "case_ar_sha256": "d247c851c102044374cdb6929f3a2c2d08b86cbcccf864e9ccb2bb312aecb265",
+      "encoder": "hand_liability",
+      "facts": {
+        "property_like": false
+      },
+      "expected": false,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p208",
+          "excerpt_ar": "الحر المحض هل تثبت عليه اليد فيترتب عليه الضمان أم لا؟ المعروف من المذهب أن الحر لا تثبت عليه اليد فلا يضمن بها بحال ولو كان تابعا لمن تثبت عليه اليد كمن غصب أمة حاملا بحر ذكره القاضي في خلافه بما يشعر أنه محل وفاق حكى القاضي في خلافه أيضا وتابعه صاحب المحرر ف",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f001",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p210#q093.f001",
+      "case_ar_sha256": "ad094e3a81f35aa81494ca1626c1dcbe0391ce39616755744ef3aa4f7b85aeb4",
+      "encoder": "taker_from_usurper",
+      "facts": {
+        "entered_on_liability": true
+      },
+      "expected": false,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p210",
+          "excerpt_ar": "الغاصبة يتعلق بها الضمان كأصلها ويستقر عليها مع التلف تحتها ولا يطالب بما زاد على مدتها.",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f002",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p210#q093.f002",
+      "case_ar_sha256": "dbc28931981d0e0ae97a16429496144a35de23ca3a5fd93b1401b2619b44a0f9",
+      "encoder": "taker_from_usurper",
+      "facts": {
+        "entered_on_liability": false
+      },
+      "expected": true,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p210",
+          "excerpt_ar": "الآخذة لمصلحة الدافع كالاستيداع والوكالة بغير جعل فالمشهور أن للمالك تضمينها ثم يرجع بما ضمن على الغاصب لتغريره، وفيه وجه آخر باستقرار الضمان عليها لتلف المال تحتها من غير إذن صرح به القاضي في المجرد في باب المضاربة وسيأتي أصله ويتخرج فيه وجه آخر أنه لا يجوز ت",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f003",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p210#q093.f003",
+      "case_ar_sha256": "b99bf48f7eddb611bf0d236b25586bd7b48d5d89ef677c5879a3b96b85a38c8a",
+      "encoder": "taker_from_usurper",
+      "facts": {
+        "entered_on_liability": false
+      },
+      "expected": true,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p211",
+          "excerpt_ar": "القابضة لمصلحتها، ومصلحة الدافع كالشريك والمضارب والوكيل بجعل والمرتهن، فالمشهور جواز تضمينها أيضا وترجع بما ضمنت لدخولها على الأمانة وذكر القاضي في المجرد وابن عقيل وصاحب المغني في الرهن احتمالين آخرين: أحدهما: أنه يستقر الضمان على القابض لتلف مال الغير تحت ي",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p211",
+          "excerpt_ar": "والثاني: لا يجوز تضمينها بحال لدخولها على الأمانة وينبغي أن يكون هو المذهب",
+          "note": "Source attribution or embedded-boundary receipt; no scholarly acceptance is asserted."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f004",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p210#q093.f004",
+      "case_ar_sha256": "410f988ab0e0aa022406a48a3893cbbe09b22d0cf19d5706b0593b8d29f46226",
+      "encoder": "taker_from_usurper",
+      "facts": {
+        "entered_on_liability": false
+      },
+      "expected": true,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p211",
+          "excerpt_ar": "القابضة لمصلحتها خاصة إما باستيفاء العين كالقرض أو باستيفاء المنفعة كالعارية فهي داخلة في الضمان في العين دون المنفعة فإذا ضمنت العين والمنفعة رجعت على الغاصب بضمان المنفعة ; لأن ضمانها كان بتغريره، وفي المذهب رواية ثانية لا يرجع بضمان المنفعة إذا تلفت بالاستي",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f005",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p210#q093.f005",
+      "case_ar_sha256": "a7b9a524b71517cdc31beb3a19ce8430a50f344199674ac449a418c17b3a3492",
+      "encoder": "taker_from_usurper",
+      "facts": {
+        "entered_on_liability": true
+      },
+      "expected": false,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p212",
+          "excerpt_ar": "القابضة تملكا بعوض مسمى عن العين بالبيع فهي داخلة على ضمان العين دون المنفعة فإذا ضمنت قيمة العين والمنفعة لم يرجع بما ضمنت من قيمة العين كدخولها على ضمانها ولكن يسترد الثمن من الغاصب ; لأنه لم يملكه لانتفاء صحة العقد وسواء كانت القيمة التي ضمنت المالك وفق الث",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p212",
+          "excerpt_ar": "ح القاضي بمثل ذلك في خلافه في مسألة رجوع ~~المغرور بالمهر. وهو عندي قياس المذهب حيث قلنا في إحدى الروايتين برجوع ~~المغرور بنكاح الأمة على من غره مع استيفائه منفعة البضع واستهلاكها ودخوله ~~على",
+          "note": "Source attribution or embedded-boundary receipt; no scholarly acceptance is asserted."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f006",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p210#q093.f006",
+      "case_ar_sha256": "30987c1681364176b80310d7666565fb226532a2d6a6f024eb1834a7d0d6287d",
+      "encoder": "taker_from_usurper",
+      "facts": {
+        "entered_on_liability": true
+      },
+      "expected": false,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p214",
+          "excerpt_ar": "القابضة عوضا مستحقا بغير عقد البيع كالصداق وعوض الخلع والعتق والصلح عن دم عمد إذا كان معينا منه أو كان القبض وفاء كدين مستقر في الذمة من ثمن مبيع أو غيره وصداق أو قيمة متلف ونحوه فإذا تلفت هذه الأعيان في يد من قبضها ثم استحقت فللمستحق الرجوع على القابض ببدل ال",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f007",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p210#q093.f007",
+      "case_ar_sha256": "4b33bb6e50c059fc01ab16f7e48cee393684926c1de18beca2d29683d9adc286",
+      "encoder": "taker_from_usurper",
+      "facts": {
+        "entered_on_liability": true
+      },
+      "expected": false,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p214",
+          "excerpt_ar": "القابضة بمعاوضة عن المنفعة وهي يد المستأجر فقال القاضي والأكثرون إذا ضمنت المنفعة لم يرجع بها ولو زادت أجرة المثل على الأجرة المسماة ففيه ما مر من زيادة قيمة العين على الثمن وإذا ضمنت قيمة العين رجعت بها على الغاصب لتغريره وفي تعليقة ms278 أبي البركات على الهد",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        }
+      ],
+      "additional_guards": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f008",
+      "record_locator": "src:openiti-rajab-shamela21730/v01:p210#q093.f008",
+      "case_ar_sha256": "9e56bd6af3cc05e380682da6db628b1f57eb5502e2d3d97a5baa6e0a6333ba00",
+      "encoder": "taker_from_usurper",
+      "facts": {
+        "entered_on_liability": false
+      },
+      "expected": true,
+      "source_evidence": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p215",
+          "excerpt_ar": "القابضة للشركة وهي المتصرفة في المال بما ينميه بجزء من النماء كالشريك والمضارب والمزارع والمساقي ولهم جرة على الغاصب لعملهم له بعوض لم يسلم، فأما المضارب والمزارع بالعين المغصوبة وشريك العنان فقد دخلوا على أن لا ضمان عليهم بحال فإذا ضمنوا على المشهور رجعوا بما",
+          "note": "Case-identifying excerpt from the locked full witness; the record locator names the parent start page, whereas this receipt names the actual excerpt page."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p216",
+          "excerpt_ar": "مل الثمر التالف بعد جداده واستحفاظه بخلاف ما على # PageV01P215 # الشجر (اليد التاسعة) القابضة تملكا لا بعوض إما للعين بمنافعها بالهبة ~~والوقف والصدقة والوصية أو للمنفعة كالموصى له بالمنافع فالمش",
+          "note": "Source attribution or embedded-boundary receipt; no scholarly acceptance is asserted."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p216",
+          "excerpt_ar": "ي الخلاف من الكل من غير تفصيل وهي طريقة أبي الخطاب وغيره. # (اليد العاشرة) المتلفة للمال نيابة عن الغاصب كالذبح للحيوان والطابخ له ~~فلا قرار عليها بحال وإنما القرار على الغاصب لوقوع الف",
+          "note": "Source attribution or embedded-boundary receipt; no scholarly acceptance is asserted."
+        }
+      ],
+      "additional_guards": []
+    }
+  ],
+  "reconciled_against": "77a5c58d71bf126c42e802b507e463836d686ac5",
+  "contributions": [
+    {
+      "pr": 31,
+      "head_commit": "54a364a5baf24cf9da82998fda1029a165bb9594",
+      "case_sha256": {
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f001": "b7644a375d1b4fe4e659eb9b9a2599b93b5b79bb47c04062db3e2ed04f745a20",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f002": "abfc15decf6371ef8610bb97a5aab8df383813015c40e1e311957bdd1204eda1",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f003": "390345b9517252b1f826d27c09888561543388b475ef91de9f6fe053089e441a",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004": "f9ca63ace45461d5e39c61ab1a2d61ab051653efa4cea495c2489e4c1df69e25",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f000": "f3b8e781901037db4d17f0a6b1401f8008003f7e38d1f45ca2f5374905770216",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f001": "5ff6c84bc93082465bc60331f72dcdc5bc514b73bf068180f6452fcc727e256e",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f002": "9c23ac5074de1715bd8ab4958ff83e7ab235a243201e744b490c5e8661f0e14e",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f003": "3644227df64236eebde5f41eec1dab971d51d8132308f8bab93c96a2b156c56b"
+      }
+    },
+    {
+      "pr": 32,
+      "head_commit": "62c65fc10d78e97a6ee612cad356483ffedb21d4",
+      "case_sha256": {
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000": "07ad9ea909d40aa6dcf2cb6e1bf14c77a848e5c36d41c19dd69de066e4a8df35",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001": "939d7b363440e5ab38bafc8172cc3224d48bba9b01326473eee2354adfa32247",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f002": "caefd1d06605bf4d1e43427518bbf0e911b1784abfb01edea50db48e7cb38243",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003": "96121c595d8d21f29ea33d5b685af0d8f2ccd243e2dd41183bcd2659e3e5efe5",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f001": "512a8d0bf9cecc8d71b41f69d96b1c2041ea96f7c3637997e7b654e028b15b69",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f002": "27a2223d3f219da1fb059b537edc51a2b1b938218c2ed0e18f65db74300329e5",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f003": "6a3b41441352233f9c65e8b578075cb7b6211d10a4f2b73cc4db24af036361a7",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f004": "48523235454cc32a7a533af2e1be938699fa48358684fb9f8d0e4fc2fed5a5e7",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f005": "1d76b6dad1c39a8ade3499186f4450263d882ccbdc6b06ba46158f97c4b75acf",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f000": "5bbbf93732921d8d3c9b5a69f3763b3c46be411c162acba30d9d91a5c415fda0",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f001": "cecba579dfd510f476c2d53069369e6830d7aa7c3d7c0ee20ad5cbc0f4b4eb41",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f000": "aea5b623915a8accde9d6062fcf619d1ef7cd39a37704d82f17c6bf72d84f171",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f001": "b9ba2392593667a440cc416c1dfee018590b3afd0666f9488898731e63fa6b51",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f001": "550d7dda50441f945671352f1b8615f33cd0eb3ad0dfb893b19d6565cf50c19e",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f002": "60a1bb70adc3bb771d166ead6598435e6304fe531a14ab635c85e823d4e84944",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f003": "283dafefa06f082de8023ade370c6e7b17bc2ade23a8c60b7c2ac7b0f2628acc",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f004": "c013035256f004ff4f213703da4f7f66da39ae459d91a0e9ec7166cb1fea96f1",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f005": "935b350bdf9eb8492ebb357295a1c520629cd10835450b842f6a352c5a835c9d",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f006": "ef24660718bae567143e0c63e1e4f26a0fcfabf1335736581df017f05ac58c76",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f007": "a9f34f4049ff99981ab734264b16472f3e407cbf3b10c0e6f0fd85b4c4d13ea9",
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f008": "d27d9b64eb9edc5f0c5bdefb39cf86c1adb815372bb53777549208a7530ced58"
+      }
+    }
+  ],
+  "segmentation": {
+    "base_commit": "86f457b9f283ba63444c49aef4c7bdd6165df027",
+    "base_records_sha256": "8408273eec778b16d015b80eee08b0941bfdde55df125373cbcea2ffea1d78f9",
+    "current_records_sha256": "f9cf2452d9cc5b3d9c064eb020b4cd0c6ee00e0dbd06eed8e5f1d821cd06b44c",
+    "base_record_count": 1296,
+    "current_record_count": 1339,
+    "added_far_ids": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f002",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f002",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f003",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f004",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f005",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q036.f000",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q036.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f000",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f002",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q046.f000",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q046.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q049.f000",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q049.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f000",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f000",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f000",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f000",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f000",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f002",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f003",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f004",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f005",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f006",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f007",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f008",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152.f002",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152.f003",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152.f004",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155.f000",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155.f002"
+    ],
+    "affected_qawaid": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q036",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q046",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q049",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155"
+    ]
+  },
+  "revisions": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003",
+      "round": "round 5: the bank applied to its own gaps",
+      "from_case_sha256": "96121c595d8d21f29ea33d5b685af0d8f2ccd243e2dd41183bcd2659e3e5efe5",
+      "case_sha256": "6d10b657264916b2301fc318cc33559aec1d2cf85f1d790367294062234b27b0",
+      "from_encoder": "running_water",
+      "encoder": "ayman_by_urf",
+      "closed_by": [
+        "rule:ayman_by_urf"
+      ]
+    }
+  ]
+}

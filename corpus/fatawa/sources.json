@@ -1,0 +1,118 @@
+{
+  "policy": "IslamQA.info (founded and supervised by Muḥammad Ṣāliḥ al-Munajjid). The site's own offline dumps — the files its app and website download for offline reading — committed under data/islamqa via Git LFS because this repository is private; © IslamQA, all rights reserved, so it must not be made public. Answers are oracle labels for evaluation, not deontic authority.",
+  "dump": {
+    "base": "https://files.zadapps.info/m.islamqa.info",
+    "manifest": "dumps/manifest.json",
+    "snapshot": "dumps/2026-10-04-220000",
+    "file": "data.ndjson.gz",
+    "langs": {
+      "ar": {
+        "sha256": "ddc9acebc81c5fed47a0e80c3466bc0152e6829750d086a3b0e100f4a1f67a64",
+        "bytes": 66272811,
+        "events": 34900
+      },
+      "en": {
+        "sha256": "efdbc0b327c6bed54a9b4dff43f24ab68a06cd5478db7dddadfe1a77aec7417a",
+        "bytes": 29138232,
+        "events": 18093
+      },
+      "bn": {
+        "sha256": "8abe117e3e91b4a34af1e6ee0237877e600442bae4ded4a820f221d6c3e82f82",
+        "bytes": 3448334,
+        "events": 2471
+      },
+      "es": {
+        "sha256": "a55f7e21429fc4e07a3b2cbd4d444791fdc07631e593f3130a35738e173d03a3",
+        "bytes": 9777264,
+        "events": 6810
+      },
+      "fa": {
+        "sha256": "8f93d29d13b2986ec7d0333bbc2c125f4a4d75f6b2fff6e83ce052f59246d47b",
+        "bytes": 2793154,
+        "events": 2221
+      },
+      "fr": {
+        "sha256": "13cfaf474679633a361a59dd0fbffeb73b55f7157c8081ec9ee5da34a21671fb",
+        "bytes": 12801832,
+        "events": 9460
+      },
+      "ge": {
+        "sha256": "ef4304c98484d0f64056872dfeac0350b6b24f1a3f7b4755a99f06627bd7ab89",
+        "bytes": 3623808,
+        "events": 2796
+      },
+      "hi": {
+        "sha256": "9dc17f6cb9f2a3ad7da70332922b18e7ca499df8ca4bbdf87a64d95db4b6bba5",
+        "bytes": 4004151,
+        "events": 2680
+      },
+      "id": {
+        "sha256": "7ce4f0493e59c21614512c17e086565898f952a9aa732d02d5dd7931363c6ae0",
+        "bytes": 10967562,
+        "events": 7068
+      },
+      "pt": {
+        "sha256": "4f033bc6328d2f60ef1335e49fd51ae0388778432b8c67e68b243648e8accd34",
+        "bytes": 3875103,
+        "events": 2900
+      },
+      "ru": {
+        "sha256": "6f21b85f637c110ffb2a9857046594265627a3c65e79a30dbf6a0e12afb876ad",
+        "bytes": 4596487,
+        "events": 2838
+      },
+      "ta": {
+        "sha256": "2c318c979f0a14f9d439bcc3eff1e4955b30dd6c1d7b06a7310daafb56f903d4",
+        "bytes": 566090,
+        "events": 184
+      },
+      "tg": {
+        "sha256": "d6a49341e664dc78f114d9197ed110d7b12afb882c9efd6bda5f0afc919c894d",
+        "bytes": 1148214,
+        "events": 1768
+      },
+      "tr": {
+        "sha256": "f73fad0e5df5991e67c78f032fffddbd5cf2240b77f24af466acb7946568a9b0",
+        "bytes": 5716903,
+        "events": 4354
+      },
+      "ug": {
+        "sha256": "d6b230cedf6098d7bcbbc0b055804ee6982c7e555fa1753b7bb63230861c6231",
+        "bytes": 5108152,
+        "events": 3232
+      },
+      "ur": {
+        "sha256": "12797e534b393e062adb8fd20714f7e333c77fabd519a5a87e6e0f4ab93ac4ba",
+        "bytes": 16354146,
+        "events": 10849
+      },
+      "zh": {
+        "sha256": "c1c07c6d43d3fe20843cd4679e8510bf5ef504a85b6a3734990e57f67e740ad4",
+        "bytes": 5011614,
+        "events": 4545
+      }
+    }
+  },
+  "alternatives": [
+    {
+      "repo": "hf:kingkaung/islamqainfo_parallel_corpus",
+      "note": "Community scrape (Jan 2025, CC BY-NC 4.0): 15,303 answers, 14,820 in Arabic; flat, noisy topic labels. Superseded by the official dump."
+    },
+    {
+      "repo": "hf:abdulmunimjemal/IslamQA-Multilingual-Dataset",
+      "note": "67,059 QA pairs in 16 languages, ShareGPT chat format; no ids or topics."
+    },
+    {
+      "repo": "hf:IslamQA/islamqa",
+      "note": "Answer embeddings only (no answer text)."
+    },
+    {
+      "repo": "hf:minhalvp/islamqa",
+      "note": "3,355 English QA pairs, no ids."
+    },
+    {
+      "repo": "https://files.zadapps.info/islamqa.info/dumps/manifest.json",
+      "note": "Older official dump series (2023-08-14, ar: 28,289 events)."
+    }
+  ]
+}
