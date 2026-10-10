@@ -20,6 +20,9 @@ R2 jamʿ (σ)  a ruling on the act's opposite («التهاون», «الكف ع
 R3 jamʿ      «بل / وإنما / ومنه ما» and «،» open a new predication scope
 R4 tarjīḥ    Usul.resolve ⟨none, none, some p⟩ when the text prefers p
              («والصواب …»); otherwise tawaqquf
+R5 act       a ruling is compared only with rulings on the same act and
+             addressee (acts.py); on the opposite act by meaning («يعدل» /
+             «تفضيل») it is read through σ
 
 The Python mirrors are guarded against Lean in ``UsulTest/FatawaBank.lean``.
 """
@@ -30,11 +33,12 @@ import re
 from collections.abc import Mapping
 from functools import reduce
 
+from .acts import act_of, antonyms
 from .labels import HUKM, cues, normalize_ar
 from .takhrij import ENCODERS
 
 ALL = frozenset(HUKM)
-STAGES = frozenset({"roles", "didd", "scope", "tarjih"})
+STAGES = frozenset({"roles", "didd", "scope", "tarjih", "act"})
 # Mirrors of Usul.Hukm (formal/lean/Usul/Hukm.lean), guarded exhaustively.
 SIGMA = {"wajib": "haram", "mandub": "makruh", "mubah": "mubah", "makruh": "mandub", "haram": "wajib"}
 MODE = {"wajib": "talabFil", "mandub": "talabFil", "mubah": "takhyir", "makruh": "talabTark", "haram": "talabTark"}
@@ -70,6 +74,7 @@ _QUESTION_WORDS = {"هل", "متى", "ام"}
 _FRAME_OBJECT = re.compile(r"^[نتي](?:علم|عرف|نبه|بين)")
 _IHRAM = re.compile(rf"(?<![{_L}])(?:بالحج|بالعمرة|بحج|بعمرة|احرام|الاحرام)(?![{_L}])")
 _PROOF = re.compile(r"(?:تعالى|وسلم|عنه|عنها|عنهما)\s*:?\s*[\"«]")
+_PRIOR_PROPHET = re.compile(r"شريعة\s+(?:من\s+قبلنا|ادم|نوح|ابراهيم|اسحاق|يعقوب|يوسف|موسى|هارون|داود|سليمان|يحيى|زكريا|عيسى|السابقين|الامم)")
 _VERB_TOKEN = re.compile(rf"^[وف]?[يت][{_L}]{{2,}}$")
 _TARJIH = re.compile(rf"(?<![{_L}])(?:[وف](?:ال)?(?:صواب|صحيح|راجح|اظهر|اقرب|مختار)|(?:ال)?(?:صحيح|راجح)\s+من\s+(?:اقوال|قولي))(?![{_L}])")
 _REPORT = re.compile(rf"(?<![{_L}])[وف]?(?:ذهب|قال\s+بعض|عند\s+(?:الجمهور|بعض|الحنفية|المالكية|الشافعية|الحنابلة)|عندهم"
@@ -126,6 +131,11 @@ def _role(scope: str, c: Mapping) -> str:
             return "kinship"                                  # مَحْرَم
     if prev[-1:] == ["قد"]:
         return "modal"
+    nxt = " ".join(after[:3])
+    contrasted = "شرعنا" in scope and "شرعنا" not in nxt     # «… في شرعنا» elsewhere in the clause
+    if ((re.search(r"(?<![\u0621-\u064A])في\s+شريعة", nxt) and (contrasted or _PRIOR_PROPHET.search(nxt)))
+            or ("في حقه" in nxt and contrasted)):
+        return "prior_law"                                    # sharʿ man qablanā: reported, not our ruling
     if prev[-1:] and prev[-1] in _QUESTION_WORDS:
         return "question"
     if (("يجب" in t or "تجب" in t) and after[:1] == ["ان"] and len(after) > 1 and _FRAME_OBJECT.match(after[1])) or (
@@ -194,6 +204,7 @@ def bank_clauses(text: str, stages: frozenset = STAGES) -> list[dict]:
                 if sigma:
                     how, s = f"σ ∘ {how}", frozenset(SIGMA[h] for h in s)
                 read.append({"cue": c["text"], "reading": how, "set": s, "literal": literal, "sigma": sigma,
+                             "act": act_of(scope, c, nxt and nxt["start"], since),
                              "start": c["start"], "end": c["end"],
                              "role": _role(scope, c) if "roles" in stages else "predication"})
                 since = c["end"]
@@ -221,6 +232,26 @@ def _preferred(clauses: list[dict]) -> str | None:
     return None
 
 
+def _comparable(own: Mapping, read: list[dict], by_act: bool) -> list[frozenset]:
+    """R5: the status sets that constrain the label's act: same act and addressee as is,
+    the opposite act through σ, other acts not at all."""
+    out = []
+    for x in read:
+        if x is own or x["role"] != "predication":
+            continue
+        if by_act:
+            a, b = own["act"], x["act"]
+            if a["addressee"] and b["addressee"] and a["addressee"] != b["addressee"]:
+                continue
+            if a["stems"] and b["stems"] and antonyms(a["stems"], b["stems"]):
+                out.append(frozenset(SIGMA[h] for h in x["set"]))   # opposite acts, even with a shared object
+                continue
+            if a["stems"] and b["stems"] and not set(a["stems"]) & set(b["stems"]):
+                continue
+        out.append(x["set"])
+    return out
+
+
 def _priority(cls: str, h: str | None, en: str | None) -> str:
     """Human-review order. The bank checks how the clause's statuses combine, not which act
     they are about, so a confirmation is never a gold label (docs/architecture/fatawa-labels.md)."""
@@ -245,7 +276,7 @@ def review(label: Mapping, en: str | None = None, stages: frozenset = STAGES) ->
     out |= {"clause": cl["text"][:300], "steps": steps}
     if own["role"] != "predication":
         return out | {"class": "misread", "priority": "high"}
-    s = reduce(frozenset.__and__, (x["set"] for x in cl["cues"] if x["role"] == "predication"))
+    s = reduce(frozenset.__and__, _comparable(own, cl["cues"], "act" in stages), own["set"])
     p = _preferred(clauses) if "tarjih" in stages else None
     if p and (not s or _REPORT.search(cl["text"])):
         stage, v = resolve(None, None, p)

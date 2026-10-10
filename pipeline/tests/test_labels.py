@@ -149,3 +149,11 @@ def test_wad_comes_from_the_passage_the_ruling_came_from():
 def test_evidence_records_which_occurrence_of_the_cue_decided():
     rec = {"id": "islamqa.10", "topics": [], "answer": "الحمد لله.\nالتي تجب عليها النفقة ، تجب عليها الصلاة ."}
     assert label(rec)["evidence"]["nth"] == 0
+def test_negated_obligation_without_ba():
+    assert hukms("لان قراءة السور ليست واجبة") == [("wajib", "-")] and hukms("ليس واجبا") == [("wajib", "-")]
+
+
+def test_label_carries_the_act_and_whether_it_matches_the_question():
+    rec = {"id": "islamqa.9", "title": "حكم بيع الخمر", "topics": [], "answer": "الحمد لله.\nلا يجوز بيع الخمر ."}
+    l = label(rec)
+    assert "بيع" in l["act"]["stems"] and l["matches_question"] is True
