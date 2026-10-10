@@ -10,6 +10,7 @@
     python -m usul_corpus docs        # render the dossier and glossary pages from corpus/dossier
     python -m usul_corpus reception   # count the citers' citations of each cited work (cached citers only)
     python -m usul_corpus labels [--review N] [--import FILE]   # citation-mention dataset → .cache/labels
+    python -m usul_corpus texts       # stage verified public-domain witness texts into corpus/texts (Git LFS)
     python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
     python -m usul_corpus fatawa [--lang L] [--refresh]   # IslamQA offline dumps → .cache/corpus/fatawa/*.jsonl
 """
@@ -23,7 +24,8 @@ import sys
 from pathlib import Path
 
 from .fatawa import answers, fold, snapshot_witnesses
-from .fetch import fetch
+from .fetch import fetch, merge_lock
+from .texts import publishable, restore, stage
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
 from .openiti import parse_markdown
@@ -43,6 +45,7 @@ CORPUS = ROOT / "corpus"
 CACHE = ROOT / ".cache" / "corpus"
 DOSSIER = CORPUS / "dossier" / "refinements.json"
 GLOSSARY = CORPUS / "dossier" / "glossary.json"
+TEXTS = CORPUS / "texts"
 FETCHABLE = {"located", "located_ocr"}
 
 
@@ -62,14 +65,21 @@ def _works(only: str | None) -> list[dict]:
 
 def cmd_fetch(args: argparse.Namespace) -> int:
     lock = _load(CORPUS / "lock.json").get("witnesses", {})
+    changed = []
     for work in _works(args.work):
         for w in work["witnesses"]:
             if w.get("quality") == "pdf_only" or (w.get("fetch") == "on_demand" and not args.work):
                 continue
-            lock[w["id"]] = entry = fetch(w, CACHE, args.max_pages, args.refresh)
+            if not args.refresh and not (CACHE / f"{w['id']}.txt").exists():
+                restore(w["id"], lock, TEXTS, CACHE)  # a committed public-domain text saves the download
+            entry, drift = merge_lock(lock.get(w["id"]), fetch(w, CACHE, args.max_pages, args.refresh))
+            lock[w["id"]] = entry
+            changed += [w["id"]] * drift
             _dump(CORPUS / "lock.json", {"witnesses": dict(sorted(lock.items()))})
-            print(f"{w['id']:40} {entry['bytes']:>10} B  {entry['sha256'][:12]}")
-    return 0
+            print(f"{w['id']:40} {entry['bytes']:>10} B  {entry['sha256'][:12]}{'  CHANGED since pinned' if drift else ''}")
+    if changed:
+        print(f"content changed since pinned (see git diff corpus/lock.json): {', '.join(changed)}", file=sys.stderr)
+    return 1 if changed else 0
 
 
 def _pdf_witnesses(only: str | None) -> list[tuple[dict, dict]]:
@@ -370,6 +380,16 @@ def cmd_labels(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_texts(_: argparse.Namespace) -> int:
+    """Copy every verified, cached public-domain witness text into corpus/texts."""
+    rep = stage(publishable(_load(CORPUS / "registry.json")), _load(CORPUS / "lock.json")["witnesses"], CACHE, TEXTS)
+    print(json.dumps({k: len(v) for k, v in rep.items()}))
+    for k in ("missing", "mismatch"):
+        if rep[k]:
+            print(f"{k}: {', '.join(rep[k])}", file=sys.stderr)
+    return 1 if rep["mismatch"] else 0
+
+
 def cmd_signature(_: argparse.Namespace) -> int:
     SIGNATURE_LEAN.write_text(signature_lean(_lean_names()), encoding="utf-8")
     return 0
@@ -446,6 +466,7 @@ def main(argv: list[str] | None = None) -> int:
     m5.set_defaults(run=cmd_m5_commands)
     sub.add_parser("docs").set_defaults(run=cmd_docs)
     sub.add_parser("reception").set_defaults(run=cmd_reception)
+    sub.add_parser("texts").set_defaults(run=cmd_texts)
     lb = sub.add_parser("labels")
     lb.add_argument("--review", type=int, default=300, help="rows per task in the review queue")
     lb.add_argument("--import", dest="import_", metavar="FILE", help="reviewed JSONL rows to merge into the gold labels")

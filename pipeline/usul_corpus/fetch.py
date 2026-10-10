@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import html
+import http.client
 import re
 import time
 import urllib.error
@@ -68,7 +69,7 @@ def _get(url: str, backoff: tuple[int, ...] = (2, 4, 8, 16)) -> bytes:
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
             return r.read()
-    except (urllib.error.URLError, TimeoutError) as e:
+    except (urllib.error.URLError, TimeoutError, http.client.HTTPException, ConnectionError) as e:
         transient = not isinstance(e, urllib.error.HTTPError) or e.code >= 500
         if not (transient and backoff):
             raise
@@ -101,3 +102,13 @@ def fetch(w: dict, cache: Path, max_pages: int | None = None, refresh: bool = Fa
         "bytes": len(data),
         "sha256": hashlib.sha256(data).hexdigest(),
     }
+
+
+def merge_lock(old: dict | None, new: dict) -> tuple[dict, bool]:
+    """The lock entry after a fetch, and whether the content changed. Unchanged bytes keep the old
+    entry whole (derived hashes such as ``ocr_sha256`` included); changed bytes drop them."""
+    if old is None:
+        return new, False
+    if old["sha256"] == new["sha256"]:
+        return old, False
+    return new, True

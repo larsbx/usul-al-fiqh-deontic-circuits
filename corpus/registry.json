@@ -1,7 +1,7 @@
 {
   "registry_version": "1",
   "policy": {
-    "full_text": "Full texts are fetched into .cache/corpus and never committed. Committed records carry short excerpts with edition-qualified locators.",
+    "full_text": "Full texts are fetched into .cache/corpus. Public-domain text witnesses (works with rights public_domain_text) are also committed, byte-identical to their pinned source, under corpus/texts via Git LFS; modern texts are never committed. Committed records carry short excerpts with edition-qualified locators.",
     "authority": "Records are candidates until reviewed. Nothing here is a fatwā."
   },
   "works": [

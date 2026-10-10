@@ -1,4 +1,7 @@
-from usul_corpus.fetch import next_page_id, shamela_page_to_markdown, witness_url
+import http.client
+
+from usul_corpus import fetch as fetch_mod
+from usul_corpus.fetch import merge_lock, next_page_id, shamela_page_to_markdown, witness_url
 from usul_corpus.openiti import parse_markdown
 
 PAGE = (
@@ -29,3 +32,30 @@ def test_witness_urls_are_pinned():
     ar = {"kind": "archive", "item": "Pdf1995", "file": "a b.txt"}
     assert witness_url(ar) == "https://archive.org/download/Pdf1995/a%20b.txt"
     assert witness_url({"kind": "shamela", "book_id": 9942}) == "https://shamela.ws/book/9942/1"
+
+
+def test_merge_lock_keeps_derived_hashes_while_the_content_is_unchanged():
+    old = {"witness": "w", "url": "u", "bytes": 3, "sha256": "aa", "ocr_sha256": "oo"}
+    assert merge_lock(old, {"witness": "w", "url": "u", "bytes": 3, "sha256": "aa"}) == (old, False)
+    new = {"witness": "w", "url": "u", "bytes": 4, "sha256": "bb"}
+    assert merge_lock(old, new) == (new, True)  # derived hashes describe the old bytes: dropped
+    assert merge_lock(None, new) == (new, False)
+
+
+def test_get_retries_a_dropped_connection(monkeypatch):
+    calls = []
+
+    class Body:
+        def __enter__(self): return self
+        def __exit__(self, *a): return False
+        def read(self): return b"ok"
+
+    def urlopen(req, timeout):
+        calls.append(req)
+        if len(calls) == 1:
+            raise http.client.RemoteDisconnected("Remote end closed connection without response")
+        return Body()
+
+    monkeypatch.setattr(fetch_mod.urllib.request, "urlopen", urlopen)
+    monkeypatch.setattr(fetch_mod.time, "sleep", lambda s: None)
+    assert fetch_mod._get("https://example.invalid/x") == b"ok" and len(calls) == 2
