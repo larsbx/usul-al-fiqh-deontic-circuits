@@ -16,12 +16,12 @@
     "records/openiti-rajab-shamela21730.jsonl": "f9cf2452d9cc5b3d9c064eb020b4cd0c6ee00e0dbd06eed8e5f1d821cd06b44c",
     "takhrij/dalala_furu.json": "fe691a7fe3ea277505aa97a3af440a48e88397584164804c11aa13a06808c96f",
     "takhrij/rajab_m8_furu.json": "ebfc6b6b2caa38a0b205f729323591b7e314bf836856ebd56045209fa581ceed",
-    "takhrij/rajab_m8_tranche2_furu.json": "392da202fdfec1c7e5b699eb1e85dced9ca862e344e51a0c209cda91fd55dc0a",
+    "takhrij/rajab_m8_tranche2_furu.json": "bbc536f5080f1eb241975ea373d81140d85c7fd2bdc726f306726b225846447f",
     "takhrij/rajab_m8_tranche3_furu.json": "2cc423038118df38951e81217479363acf9c7aee6b3dc9be4614e4796e825ad1",
     "takhrij/rajab_m8_tranche4_furu.json": "5ace8ad622bac680d06d128516e7cb78c5861c0d95296e920fe5f60ce58faa01",
     "takhrij/rajab_m8_tranche5_furu.json": "30c4ff813fb1cce2456eaaaf5220afb8a12b7c740a431d878350101a37aacb49",
-    "takhrij/rajab_m8_tranche6_furu.json": "fe365e0d0e6368f231e6030e43c303f2d5e9d3fad8399d9c1bbce31d69ffbb4a",
-    "takhrij/sadi_furu.json": "831e85422af3244e160d1955925c515c6a7e328c4ec5263575b814209839fdc5"
+    "takhrij/rajab_m8_tranche6_furu.json": "5a8d25e322084d1a5804d8c183e81f0700797038d4696c67d37bcd494464ff33",
+    "takhrij/sadi_furu.json": "f0973c5528a52de64df6759ee63d6fad7619096e2040c5672cae7256a2747a37"
   },
   "summary": {
     "qawaid": 160,
@@ -124,9 +124,9 @@
       "segmentation_error": 1
     },
     "coverage": 0.984,
-    "madhhab_coverage": 0.647,
+    "madhhab_coverage": 0.668,
     "encoding_error": 0,
-    "ikhtilaf_matching_madhhab": 89,
+    "ikhtilaf_matching_madhhab": 97,
     "gaps_open": 6,
     "revisited": 37
   },
@@ -418,7 +418,8 @@
       "annotated_furu": 7,
       "pending_furu": [],
       "home_encoders": [
-        "substitute"
+        "substitute",
+        "substitute_at_obligation"
       ]
     },
     {
@@ -1086,7 +1087,8 @@
       "annotated_furu": 4,
       "pending_furu": [],
       "home_encoders": [
-        "unknown_condition"
+        "unknown_condition",
+        "unknown_condition_in_fact"
       ]
     },
     {
@@ -1099,7 +1101,8 @@
       "pending_furu": [],
       "home_encoders": [
         "qisas_belongs_to_whom",
-        "unknown_condition"
+        "unknown_condition",
+        "unknown_condition_in_fact"
       ]
     },
     {

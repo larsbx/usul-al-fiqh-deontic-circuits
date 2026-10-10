@@ -2816,12 +2816,13 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f001",
-   "encoder": "substitute",
+   "encoder": "substitute_at_obligation",
    "class": "genuine_ikhtilaf",
    "facts": {
-    "original_possible": true
+    "original_possible": true,
+    "settled_at_obligation": true
    },
-   "expected": false,
+   "expected": true,
    "positions": [
     {
      "who": "riwaya: state at performance (move to the original)",
@@ -2832,27 +2833,29 @@
      "ruling": true
     }
    ],
-   "matches_madhhab": false,
-   "note": "Kaffarat of zihar and oaths follow the hady al-mut'a case: if the original becomes available before the fast, one riwaya (state at performance) requires moving to it, the other (state at obligation) fixes the substitute; the text marks neither here."
+   "matches_madhhab": true,
+   "note": "Kaffarat of zihar and oaths follow the hady al-mut'a case: if the original becomes available before the fast, one riwaya (state at performance) requires moving to it, the other (state at obligation) fixes the substitute; the text marks neither here. Reconciled (jamʿ, state at obligation): «والاعتبار في الكفارات بحالة الوجوب» (al-Iqnāʿ); al-Inṣāf: «على الصحيح من المذهب»."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f002",
-   "encoder": "substitute",
+   "encoder": "substitute_at_obligation",
    "class": "derivable",
    "facts": {
-    "original_possible": true
+    "original_possible": true,
+    "settled_at_obligation": false
    },
    "expected": false,
    "note": "A fungible thing destroyed, the like unavailable and value adjudged, then the like found before payment: the like must be given (al-ashab), as the original became possible before the substitute was performed."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f003",
-   "encoder": "substitute",
+   "encoder": "substitute_at_obligation",
    "class": "genuine_ikhtilaf",
    "facts": {
-    "original_possible": true
+    "original_possible": true,
+    "settled_at_obligation": true
    },
-   "expected": false,
+   "expected": true,
    "positions": [
     {
      "who": "wajh: does not return (settled in the value)",
@@ -2863,17 +2866,18 @@
      "ruling": false
     }
    ],
-   "matches_madhhab": false,
-   "note": "A slave-girl promised as reward becomes Muslim so the unbeliever gets her value; if he later converts, two wujuh on whether his right returns to her; none marked."
+   "matches_madhhab": true,
+   "note": "A slave-girl promised as reward becomes Muslim so the unbeliever gets her value; if he later converts, two wujuh on whether his right returns to her; none marked. Reconciled (jamʿ, state at obligation): his right was fixed in the value at her conversion; the books give him only the value (al-Inṣāf, Taṣḥīḥ al-Furūʿ)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f004",
-   "encoder": "substitute",
+   "encoder": "substitute_at_obligation",
    "class": "genuine_ikhtilaf",
    "facts": {
-    "original_possible": true
+    "original_possible": true,
+    "settled_at_obligation": true
    },
-   "expected": false,
+   "expected": true,
    "positions": [
     {
      "who": "Ibn 'Aqil (right moved to value; not compelled)",
@@ -2885,16 +2889,17 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Fruiting trees given as dower, divorce before consummation, value fixed after she refuses; if he offers to take half the trees leaving the fruit, two wujuh: she is not compelled (Ibn 'Aqil) or she is; none marked."
+   "note": "Fruiting trees given as dower, divorce before consummation, value fixed after she refuses; if he offers to take half the trees leaving the fruit, two wujuh: she is not compelled (Ibn 'Aqil) or she is; none marked. Reconciled (jamʿ, state at obligation): the right moved to the value when she refused, so she is not compelled (Ibn ʿAqīl, al-Mughnī, al-Sharḥ)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f005",
-   "encoder": "substitute",
+   "encoder": "substitute_at_obligation",
    "class": "genuine_ikhtilaf",
    "facts": {
-    "original_possible": true
+    "original_possible": true,
+    "settled_at_obligation": true
    },
-   "expected": false,
+   "expected": true,
    "positions": [
     {
      "who": "al-ashab (no return; right fixed in value)",
@@ -2909,15 +2914,16 @@
      "ruling": true
     }
    ],
-   "matches_madhhab": false,
-   "note": "Divorced before consummation after she sold the dower, the sale rescinded before he took half its value: al-ashab deny return to the thing; the kernel matches only Ibn Rajab's takhrij of a return."
+   "matches_madhhab": true,
+   "note": "Divorced before consummation after she sold the dower, the sale rescinded before he took half its value: al-ashab deny return to the thing; the kernel matches only Ibn Rajab's takhrij of a return. Reconciled (jamʿ, state at obligation): the right was fixed in the value at the divorce, so it does not return to the thing (al-aṣḥāb)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f006",
-   "encoder": "substitute",
+   "encoder": "substitute_at_obligation",
    "class": "genuine_ikhtilaf",
    "facts": {
-    "original_possible": true
+    "original_possible": true,
+    "settled_at_obligation": false
    },
    "expected": false,
    "positions": [
@@ -3793,12 +3799,13 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f000",
-   "encoder": "substitute",
+   "encoder": "substitute_at_obligation",
    "class": "genuine_ikhtilaf",
    "facts": {
-    "original_possible": true
+    "original_possible": true,
+    "settled_at_obligation": true
    },
-   "expected": false,
+   "expected": true,
    "positions": [
     {
      "who": "the state at performance: he moves to the hady",
@@ -3809,8 +3816,8 @@
      "ruling": true
     }
    ],
-   "matches_madhhab": false,
-   "note": "Hady al-mutʿa lacking, fasting became due, then the hady is found before fasting began: whether he must move to it rests on two riwāyas, the state at obligation or at performance. The reading (the original is possible again, so the substitute is not used) takes the state at performance; no madhhab is marked between them. (Opening example, segmented as f000.)"
+   "matches_madhhab": true,
+   "note": "Hady al-mutʿa lacking, fasting became due, then the hady is found before fasting began: whether he must move to it rests on two riwāyas, the state at obligation or at performance. The reading (the original is possible again, so the substitute is not used) takes the state at performance; no madhhab is marked between them. (Opening example, segmented as f000.) Reconciled (jamʿ, state at obligation): the fast became due before the hady was found, so it stands (al-Inṣāf: the madhhab; al-Iqnāʿ, Kashshāf)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000",

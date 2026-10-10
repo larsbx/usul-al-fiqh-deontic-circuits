@@ -325,7 +325,11 @@
         "nass",
         "nass"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "substitute_at_obligation",
+        "from": "substitute",
+        "farq": "src:openiti-hajjawi-iqna-shamela7360/v04:p086"
+      },
       "naskh": null,
       "note": "Two riwāyas, the state at obligation or at performance.",
       "evidence": [
@@ -361,7 +365,11 @@
         "nass",
         "nass"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "substitute_at_obligation",
+        "from": "substitute",
+        "farq": "src:openiti-hajjawi-iqna-shamela7360/v04:p086"
+      },
       "naskh": null,
       "evidence": [
         {
@@ -388,7 +396,11 @@
         "wajh",
         "wajh"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "substitute_at_obligation",
+        "from": "substitute",
+        "farq": "src:openiti-hajjawi-iqna-shamela7360/v04:p086"
+      },
       "naskh": null,
       "evidence": [
         {
@@ -415,7 +427,11 @@
         "ashab",
         "wajh"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "substitute_at_obligation",
+        "from": "substitute",
+        "farq": "src:openiti-hajjawi-iqna-shamela7360/v04:p086"
+      },
       "naskh": null,
       "evidence": [
         {
@@ -443,7 +459,11 @@
         "takhrij",
         "ashab"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "substitute_at_obligation",
+        "from": "substitute",
+        "farq": "src:openiti-hajjawi-iqna-shamela7360/v04:p086"
+      },
       "naskh": null
     },
     {
@@ -1553,13 +1573,9 @@
         "ashab",
         "zahir"
       ],
-      "jam": {
-        "encoder": "successive_by_binding",
-        "from": "successive_contracts",
-        "farq": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001"
-      },
+      "jam": null,
       "naskh": null,
-      "note": "«وفرق صاحب المحرر بينهما»: the later authors' ẓāhir is stated «كالرهن», and the binding farq separates the deposit from the pledge."
+      "note": "The binding refinement keeps the deposit liable (deposit and loan alike non-binding, «وفرق صاحب المحرر بينهما»), but a jamʿ must land on the prevailing side, and the later authors' ẓāhir of Aḥmad outranks it here: a residue."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f006",
@@ -1958,7 +1974,11 @@
         "wajh",
         "wajh"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "unknown_condition_in_fact",
+        "from": "unknown_condition",
+        "farq": "src:openiti-buhuti-kashshaf-shamela21642/v03:p462"
+      },
       "naskh": null,
       "evidence": [
         {
@@ -2001,7 +2021,11 @@
         "ashab",
         "wajh"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "unknown_condition_in_fact",
+        "from": "unknown_condition",
+        "farq": "src:openiti-buhuti-kashshaf-shamela21642/v03:p462"
+      },
       "naskh": null,
       "evidence": [
         {
@@ -2063,7 +2087,11 @@
         "wajh",
         "wajh"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "unknown_condition_in_fact",
+        "from": "unknown_condition",
+        "farq": "src:openiti-buhuti-kashshaf-shamela21642/v03:p462"
+      },
       "naskh": null,
       "evidence": [
         {
@@ -2185,7 +2213,11 @@
         "wajh",
         "wajh"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "unknown_condition_in_fact",
+        "from": "unknown_condition",
+        "farq": "src:openiti-buhuti-kashshaf-shamela21642/v03:p462"
+      },
       "naskh": null,
       "evidence": [
         {

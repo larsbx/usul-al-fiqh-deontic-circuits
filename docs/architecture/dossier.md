@@ -800,3 +800,70 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Lean:** `Usul.Refinements.laterBindingGoverns`, `Usul.Refinements.laterBindingGoverns_conservative`, `Usul.Refinements.laterBindingGoverns_unbound_earlier`, `Usul.Refinements.binding_pledge_survives`  
 **Conservative over the earlier reading:** `Usul.Refinements.laterBindingGoverns_conservative`
+
+<a id="substitute_at_obligation"></a>
+
+## The substitute stands once it was what fell due
+
+**Terms:** [al-jamʿ](../glossary.md#jam), [al-farq](../glossary.md#farq), [al-taʿāruḍ](../glossary.md#taarud)  
+**Closes:** `rule:substitute_at_obligation`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016`: Ibn Rajab, qāʿida 16: one unable to perform the original, who then becomes able after the substitute is due; al-Saʿdī's Q28 reading moved him to the original whenever it became possible.
+  > إذا كان الواجب بدلا فتعذر الوصول إلى الأصل حالة الوجوب، فهل يتعلق الوجوب بالبدل تعلقا مستقرا بحيث لا يعود إلى الأصل عند وجوده للمسألة صور عديدة: (منها) هدي المتعة إذا عدمه ووجب الصيام عليه ثم وجد الهدي قبل الشروع فيه، فهل يجب عليه الانتقال أم لا ينبني على الاعتبار في الكفارات بحال الوجوب أو بحال الفعل فيه روايتان فإن قلنا بحال الوجوب صار الصوم أصلا لا بدلا وعلى هذا فهل يجزئه فعل الأصل وهو الهدي؟ ا
+
+**Conditions**
+
+1. the original became possible after the obligation arose
+2. the substitute was what fell due when it arose (the fast once due, the value once the right was fixed in it)
+
+**Texts**
+
+- `src:openiti-hajjawi-iqna-shamela7360/v04:p086`: The Iqnāʿ makes the state at obligation decisive in kaffārāt: he is not obliged to move to the original, but may.
+  > والاعتبار في الكفارات بحالة الوجوب كالحد1 وإمكان الأداء مبني على زكاة فإن وجبت وهو موسر ثم أعسر لم يجزئه إلا العتق وإن وجبت وهو معسر ثم أيسر أو هو عبد ثم عتق لم يلزمه العتق وله الانتقال إليه إن شاء
+- `src:openiti-buhuti-kashshaf-shamela21642/v02:p454`: Kashshāf grounds the same ruling in 'regard for the time of obligation, as in the other kaffārāt', i.e. position 1.
+  > (أو لم يشرع) فيه (ثم قدر على الهدي لم يلزمه الانتقال إليه) اعتبارا بوقت الوجوب كسائر الكفارات. (وإن شاء انتقل)
+- `src:openiti-insaf-shamela21609/v09:p209`: In the ẓihār kaffāra, al-Inṣāf says that one who became wealthy after it fell due as a poor man need not manumit 'according to the correct view of the madhhab' (time of obligation governs), so the substitute stands.
+  > وإن وجبت وهو معسر، ثم أيسر: لم يلزمه العتق، وله الانتقال إليه إن شاء، مطلقا على الصحيح من المذهب،
+- `src:openiti-insaf-shamela21609/v04:p145`: al-Mardāwī reads the apparent sense of al-Muqniʿ, al-Hidāya, al-Mudhhab, al-Mustawʿib and others as 'she is not returned to him', since they give only her value. This is position 0 (his right stays settled in the value).
+  > لكن لو أسلم بعد ذلك: ففي جواز ردها إليه احتمالان وأطلقهما في الرعاية الكبرى، والفروع، والقواعد الفقهية. قلت: ظاهر كلام المصنف هنا، وصاحب الهداية، والمذهب، والمستوعب، وغيرهم: أنها لا ترد إليه، لاقتصارهم على إعطاء قيمتها.
+
+**Rationale.** The reconciliation ledger found the reading against the later taṣḥīḥ on five of the qāʿida's seven furūʿ: al-Inṣāf, al-Iqnāʿ and Kashshāf judge kaffārāt by the state at obligation, and the books give the value where the right was fixed in it. The refinement is the earlier reading wherever the substitute was not yet settled (the fungible destroyed and its like found before payment, the bankrupt's purchase freed of the competing right), so those keep their rulings.
+
+**Lean:** `Usul.Refinements.useSubstituteAt`, `Usul.Refinements.useSubstituteAt_conservative`, `Usul.Refinements.settled_substitute_stands`  
+**Conservative over the earlier reading:** `Usul.Refinements.useSubstituteAt_conservative`
+
+<a id="unknown_condition_in_fact"></a>
+
+## In transactions the condition counts as it is in fact
+
+**Terms:** [al-jamʿ](../glossary.md#jam), [al-farq](../glossary.md#farq), [al-sharṭ](../glossary.md#shart)  
+**Closes:** `rule:unknown_condition_in_fact`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065`: Ibn Rajab, qāʿidas 64–65: one who acts not knowing a condition of his act holds, or believing it absent; the tranche-2 reading required knowledge.
+  > وهي من تصرف في شيء يظن أنه لا يملكه فتبين أنه كان يملكه، وفيها خلاف أيضا ويندرج تحتها صور: منها لو باع ملك أبيه بغير إذنه ثم تبين أن أباه كان قد مات ولا وارث له وفي صحة تصرفه وجهان ويقال روايتان. ومنها لو طلق امرأة يظنها أجنبية فتبينت زوجته ففي وقوع الطلاق روايتان، وبناهما أبو بكر على أن الصريح هل يحتاج إلى نية أم لا؟ قال القاضي إنما هذا الخلاف في صورة الجهل بأهلية المحل ولا يطرد مع العلم به ومنها
+
+**Conditions**
+
+1. a transaction over property
+2. the unknown condition is the actor's own authority: his ownership, or the owner's permission
+3. ṭalāq, ʿitq, nikāḥ and conditions of the object (deliverability) are outside it
+
+**Texts**
+
+- `src:openiti-buhuti-kashshaf-shamela21642/v03:p462`: Kashshāf: an agent who sells not knowing he was appointed — his sale is effective, since in contracts what counts is the actual state of affairs.
+  > يعلم الوكيل فباعها نفذ بيعه لأن الاعتبار في العقود بما في نفس الأمر
+- `src:openiti-insaf-shamela21609/v04:p286`: al-Inṣāf (after the fuḍūlī sale) marks validity as «على الصحيح» for selling what one thinks another's and it turns out his by inheritance, i.e. the 'valid' wajh.
+  > لو باع ما يظنه لغيره، فظهر له كالإرث والوكالة صح البيع، على الصحيح. قال في التلخيص: صح على الأظهر. وقدمه في المغني في باب الرهن. وقيل: لا يصح. وجزم به في المنور.
+- `src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p399`: The Muntahā rules the release valid even if the creditor believed the debt did not exist.
+  > أو تركه، أو ملكه له، أو تصدق به عليه، أو عفا عنه، صح ولو قبل حلوله، أو اعتقد عدمه. لا إن علقه.
+
+**Rationale.** The ledger found the reading against al-Inṣāf's «على الصحيح», Taṣḥīḥ al-Furūʿ and the muʿtamad on the sale of what he thought another's, the release of what he thought not owed and the disposal under an unknown permission. Kashshāf gives the farq: «الاعتبار في العقود بما في نفس الأمر». Outside it the reading stands (the divorce on an unknown permission, al-manṣūṣ; the remarriage of the missing man's wife; the runaway's sale, voided on deliverability).
+
+**Lean:** `Usul.Refinements.countsAsMetIn`, `Usul.Refinements.countsAsMetIn_conservative`, `Usul.Refinements.authority_in_fact_suffices`  
+**Conservative over the earlier reading:** `Usul.Refinements.countsAsMetIn_conservative`

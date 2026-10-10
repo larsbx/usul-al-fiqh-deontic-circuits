@@ -8,9 +8,9 @@
   "segmentation_error": 1
  },
  "coverage": 0.984,
- "madhhab_coverage": 0.647,
+ "madhhab_coverage": 0.668,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 89,
+ "ikhtilaf_matching_madhhab": 97,
  "gaps_open": 6,
  "revisited": 37,
  "revisit_queue": [],
@@ -60,10 +60,6 @@
   "partial_capability": {
    "derivable": 3,
    "genuine_ikhtilaf": 2
-  },
-  "substitute": {
-   "derivable": 1,
-   "genuine_ikhtilaf": 6
   },
   "asl_zahir": {
    "derivable": 16,
@@ -134,9 +130,6 @@
   },
   "concurrent_causes": {
    "genuine_ikhtilaf": 6
-  },
-  "unknown_condition": {
-   "genuine_ikhtilaf": 11
   },
   "running_water": {
    "genuine_ikhtilaf": 3
@@ -223,6 +216,13 @@
   "successive_by_binding": {
    "derivable": 4,
    "genuine_ikhtilaf": 4
+  },
+  "substitute_at_obligation": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 6
+  },
+  "unknown_condition_in_fact": {
+   "genuine_ikhtilaf": 11
   },
   "words_out_of_nature": {
    "derivable": 1,

@@ -48,9 +48,11 @@ theorem lexGt_irrefl : ∀ l : List Nat, lexGt l l = false
 
 variable {P : Type} [DecidableEq P]
 
-/-- Every grade reported for ruling `p`, strongest first. -/
+/-- Every grade reported for ruling `p`, strongest first. A marked grade counts per holder; an
+unmarked one (a companion, a takhrīj, a wajh) once, however many hold it. -/
 def support (ps : List (P × Grade)) (p : P) : List Nat :=
-  ((ps.filter (·.1 = p)).map (·.2.rank)).mergeSort (fun a b => a ≥ b)
+  let rs := (ps.filter (·.1 = p)).map (·.2.rank)
+  (rs.filter (· ≥ Grade.jazm.rank) ++ (rs.filter (· < Grade.jazm.rank)).eraseDups).mergeSort (fun a b => a ≥ b)
 
 /-- Tarjīḥ: the ruling whose support strictly exceeds every other ruling's, if any. -/
 def prevail (ps : List (P × Grade)) : Option P :=
@@ -83,6 +85,8 @@ theorem reconcile_tawaqquf_iff {jam naskh : Option P} {ps : List (P × Grade)} :
 #guard prevail [("a", Grade.wajh), ("b", .wajh)] == none
 -- More holders of the top grade prevail.
 #guard prevail [("a", Grade.nass), ("a", .nass), ("b", .nass)] == some "a"
+-- Named companions do not weigh by number.
+#guard prevail [("a", Grade.ashab), ("a", .ashab), ("b", .ashab)] == none
 -- A weaker grade never outweighs a stronger one, however many hold it.
 #guard prevail [("a", Grade.zahir), ("b", .jazm), ("b", .jazm), ("b", .ashab)] == some "a"
 #guard reconcile none none [("a", Grade.wajh), ("b", .wajh)] == .tawaqquf
