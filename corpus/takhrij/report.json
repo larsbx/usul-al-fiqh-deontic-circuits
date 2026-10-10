@@ -1,16 +1,16 @@
 {
- "total": 324,
+ "total": 351,
  "classes": {
-  "derivable": 134,
-  "genuine_ikhtilaf": 183,
+  "derivable": 146,
+  "genuine_ikhtilaf": 198,
   "missing_fact": 1,
   "missing_rule": 5,
   "segmentation_error": 1
  },
- "coverage": 0.981,
- "madhhab_coverage": 0.653,
+ "coverage": 0.983,
+ "madhhab_coverage": 0.657,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 77,
+ "ikhtilaf_matching_madhhab": 84,
  "gaps_open": 6,
  "revisited": 37,
  "revisit_queue": [],
@@ -194,6 +194,27 @@
   "right_after_transfer": {
    "derivable": 4,
    "genuine_ikhtilaf": 4
+  },
+  "follows_proven_ownership": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 4
+  },
+  "tolerance_exceeded": {
+   "genuine_ikhtilaf": 4
+  },
+  "failed_obligation_returns": {
+   "genuine_ikhtilaf": 3
+  },
+  "benefit_exception": {
+   "derivable": 6
+  },
+  "implicit_exception": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 2
+  },
+  "manumission_spread": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 2
   },
   "umum_lafz": {
    "derivable": 3

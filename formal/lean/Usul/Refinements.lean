@@ -674,4 +674,60 @@ def rightSurvivesTransfer (onProperty reasonCeases : Bool) : Bool := onProperty 
 theorem owner_right_lapses_with_its_reason : rightSurvivesTransfer false true = false := rfl
 theorem property_right_survives (r : Bool) : rightSurvivesTransfer true r = true := rfl
 
+/-! ## M8 tranche 5 -/
+
+/-! ### Qāʿida 25: what follows ownership proven by evidence or confession
+
+«من ثبت له ملك عين ببينة أو إقرار فهل يتبعها ما يتصل بها أو تولد منها أم لا؟ في المسألة خلاف».
+The reading takes Ibn Rajab's recurring measure: what follows in sale follows here. -/
+
+def followsProven (followsInSale : Bool) : Bool := followsInSale
+
+/-! ### Qāʿida 29: a tolerated amount exceeded
+
+«من سومح في مقدار يسير فزاد عليه فهل تنتفي المسامحة في الزيادة وحدها أو في الجميع فيه وجهان».
+The reading takes Ibn Rajab's distinction in 29.f003: the excess alone where he is not at fault,
+«بخلاف الوكيل والمضحي». -/
+
+inductive Lapse where
+  | all | excess
+  deriving DecidableEq, Repr
+
+def toleranceLapse (atFault : Bool) : Lapse := if atFault then .all else .excess
+
+/-! ### Qāʿida 30: what was given out as due and failed to count
+
+«… فهل يعود إلى ملكه أم لا؟ فيه خلاف». The reading: what did not discharge the duty is still his. -/
+
+def returnsToOwner (failedToCount : Bool) : Bool := failedToCount
+
+/-! ### Qāʿida 32: excepting the benefit of a transferred thing
+
+«يصح عندنا استثناء منفعة العين المنتقل ملكها من ناقلها مدة معلومة», and in waqf and manumission
+for his life too, «لأن جهالة المدة هنا لا تؤثر». -/
+
+def benefitExceptionValid (knownPeriod toleratesUncertainty : Bool) : Bool :=
+  knownPeriod || toleratesUncertainty
+
+theorem known_period_suffices (t : Bool) : benefitExceptionValid true t = true := rfl
+
+/-! ### Qāʿida 33: the implicit exception
+
+«الاستثناء الحكمي هل هو كالاستثناء اللفظي أم تغتفر فيه الجهالة … والصحيح عند صاحب المغني الصحة،
+وهو قياس المذهب، خلافا للقاضي». -/
+
+/-- An exception of uncertain extent: valid when it arises by law, not when stated. -/
+def uncertainExceptionValid (implicit : Bool) : Bool := implicit
+
+/-! ### Qāʿida 34: benefits owed under a binding contract
+
+«استحقاق منافع العبد بعقد لازم يمنع من سريان العتق إليها كالاستثناء في العقد وأولى ; لأن الاستثناء
+الحكمي أقوى», against Taqī al-Dīn. -/
+
+def manumissionReachesBenefits (bindingContract : Bool) : Bool := !bindingContract
+
+/-- 34 is 33 applied: the binding contract is an implicit exception, so manumission stops at it. -/
+theorem binding_is_implicit_exception (b : Bool) :
+    manumissionReachesBenefits b = !uncertainExceptionValid b := rfl
+
 end Usul.Refinements
