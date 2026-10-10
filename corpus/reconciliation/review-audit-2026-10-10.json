@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 70329)
-Total output lines: 5007
-
 {
   "status": "candidate",
   "base_commit": "3ca9fd9c0954eaad30517ab61dfb13417756ccd8",
@@ -2080,7 +2077,768 @@ Total output lines: 5007
         ],
         "matches_madhhab": false
       },
-      "…10329 tokens truncated…xcerpt_ar": "ولو تزوجت امرأته قبل الزمان لمعتبر ثم تبين أنه كان ميتا أو أنه كان طلقها قبل ذلك بمدة تنقضي فيها العدة لم يصح النكاح",
+      "grades": [
+        "zahir",
+        "wajh"
+      ],
+      "imported_evidence": [],
+      "current_resolution": [
+        "tarjih",
+        "asBegun"
+      ],
+      "current_review_member": true,
+      "original_ledger_entry": {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004",
+        "grades": [
+          "zahir",
+          "wajh"
+        ],
+        "jam": null,
+        "naskh": null
+      }
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f002",
+      "classification": "source_scope_difference",
+      "disposition": "The original records the competing holders below without an independently accepted madhhab selection. Later evidence supplies a stronger candidate for the encoded ruling; retain the original annotation. Any promotion of matches_madhhab requires an explicit decision about source scope and authority, not execution alone.",
+      "scholarly_status": "open",
+      "original_record": {
+        "locator": "src:openiti-rajab-shamela21730/v01:p048#q038.f002",
+        "case_ar": "لو استأجر المكيل أو الموزون أو النقود أو الفلوس ولم يذكر ما يستأجرها له، فقال القاضي في خلافه في الإجارات: يصلح ويكون قرضا ولنا وجه آخر أنه لا يصح.",
+        "sha256": "8601e17b42d6d63812fc19a79e87c339566b3bf6e8c563beae8343947d7137e7"
+      },
+      "original_annotation": {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f002",
+        "encoder": "words_out_of_nature",
+        "class": "genuine_ikhtilaf",
+        "facts": {
+          "other_contract_possible": true
+        },
+        "expected": true,
+        "positions": [
+          {
+            "who": "al-Qāḍī: valid as a loan",
+            "ruling": true
+          },
+          {
+            "who": "wajh: not valid",
+            "ruling": false
+          }
+        ],
+        "matches_madhhab": false,
+        "note": "Hiring measured goods or money without stating a use: al-Qāḍī: valid, as a loan; another wajh: not valid. No madhhab marked."
+      },
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "imported_evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p028",
+          "excerpt_ar": "قرضا أيضا. فعلى المذهب: يكون قرضا. قاله الأصحاب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Inṣāf: the ijāra of money left unspecified is not valid «وهو المذهب» (chosen by al-Qāḍī), but «فعلى المذهب: يكون قرضا. قاله الأصحاب» — i.e. it is effective as a loan, which is position 0's construal; Inṣāf adds (V06P028) that the same holds for makīl, mawzūn and fulūs."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p562",
+          "excerpt_ar": "وتكون قرضا في ذمة القابض؛؛ لأن الإجارة تقتضي الانتفاع،",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf: an unspecified ijāra of money is not valid as ijāra and becomes a loan in the recipient's dhimma; for makīl, mawzūn and fulūs «وعلى قياس ما سبق تكون قرضا»."
+        }
+      ],
+      "current_resolution": [
+        "tarjih",
+        true
+      ],
+      "current_review_member": true,
+      "original_ledger_entry": {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f002",
+        "grades": [
+          "ashab",
+          "wajh"
+        ],
+        "jam": null,
+        "naskh": null,
+        "evidence": [
+          {
+            "ref": "src:openiti-insaf-shamela21609/v06:p028",
+            "excerpt_ar": "قرضا أيضا. فعلى المذهب: يكون قرضا. قاله الأصحاب.",
+            "position": 0,
+            "grade": "tashih",
+            "who": "al-Mardāwī, al-Inṣāf",
+            "note": "Inṣāf: the ijāra of money left unspecified is not valid «وهو المذهب» (chosen by al-Qāḍī), but «فعلى المذهب: يكون قرضا. قاله الأصحاب» — i.e. it is effective as a loan, which is position 0's construal; Inṣāf adds (V06P028) that the same holds for makīl, mawzūn and fulūs."
+          },
+          {
+            "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p562",
+            "excerpt_ar": "وتكون قرضا في ذمة القابض؛؛ لأن الإجارة تقتضي الانتفاع،",
+            "position": 0,
+            "grade": "jazm",
+            "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+            "note": "Kashshāf: an unspecified ijāra of money is not valid as ijāra and becomes a loan in the recipient's dhimma; for makīl, mawzūn and fulūs «وعلى قياس ما سبق تكون قرضا»."
+          }
+        ]
+      }
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f005",
+      "classification": "source_scope_difference",
+      "disposition": "The original records the competing holders below without an independently accepted madhhab selection. Later evidence supplies a stronger candidate for the encoded ruling; retain the original annotation. Any promotion of matches_madhhab requires an explicit decision about source scope and authority, not execution alone.",
+      "scholarly_status": "open",
+      "original_record": {
+        "locator": "src:openiti-rajab-shamela21730/v01:p048#q038.f005",
+        "case_ar": "إذا قال: أنت علي حرام أعني به الطلاق وقلنا الحرام صريح في الظهار فهل يلغو تفسيره ويكون ظهارا أو يصح ويكون طلاقا؟ على روايتين.",
+        "sha256": "397d6f819764976c1844d79168f71d504815effd3525156f8f11ae74b685fdd8"
+      },
+      "original_annotation": {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f005",
+        "encoder": "words_out_of_nature",
+        "class": "genuine_ikhtilaf",
+        "facts": {
+          "other_contract_possible": true
+        },
+        "expected": true,
+        "positions": [
+          {
+            "who": "riwāya: divorce, as he meant",
+            "ruling": true
+          },
+          {
+            "who": "riwāya: ẓihār, by the word",
+            "ruling": false
+          }
+        ],
+        "matches_madhhab": false,
+        "note": "«You are ḥarām to me, I mean divorce», ḥarām being explicit for ẓihār: is the explanation void and it ẓihār, or valid and divorce? Two riwāyas. No madhhab marked."
+      },
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "imported_evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v09:p046",
+          "excerpt_ar": "أعني به الطلاق، والمذهب طلاق بالإنشاء، وفي لزوم الثلاث مع التعريف",
+          "position": 0,
+          "grade": "tashih",
+          "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
+          "note": "Ibn Mufliḥ, on «أنت علي حرام» (ẓihār on the madhhab) followed by «أعني به الطلاق»: one riwāya makes it ẓihār, «والمذهب طلاق بالإنشاء», i.e. the explanation is valid and it is divorce: position 0."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p489",
+          "excerpt_ar": "أو يصح، ويكون طلاقا؟ على روايتين. انتهى. قلت: الذي يظهر أنه طلاق قياسا",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "After quoting Ibn Rajab's two riwāyas al-Mardāwī says «قلت: الذي يظهر أنه طلاق», by analogy with «ما أحل الله علي حرام أعني به الطلاق», which he marks «الصحيح من المذهب: أن ذلك طلاق»."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p089",
+          "excerpt_ar": "وكذا قوله أنت علي حرام أو الحل علي حرام أعني به الطلاق",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā states decisively that «أنت علي حرام ... أعني به الطلاق» is divorce (like «ما أحل الله علي حرام أعني به الطلاق»), unlike «كظهر أمي أعني به الطلاق»."
+        }
+      ],
+      "current_resolution": [
+        "tarjih",
+        true
+      ],
+      "current_review_member": true,
+      "original_ledger_entry": {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f005",
+        "grades": [
+          "nass",
+          "nass"
+        ],
+        "jam": null,
+        "naskh": null,
+        "evidence": [
+          {
+            "ref": "src:openiti-ibnmuflih-furu-shamela12052/v09:p046",
+            "excerpt_ar": "أعني به الطلاق، والمذهب طلاق بالإنشاء، وفي لزوم الثلاث مع التعريف",
+            "position": 0,
+            "grade": "tashih",
+            "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
+            "note": "Ibn Mufliḥ, on «أنت علي حرام» (ẓihār on the madhhab) followed by «أعني به الطلاق»: one riwāya makes it ẓihār, «والمذهب طلاق بالإنشاء», i.e. the explanation is valid and it is divorce: position 0."
+          },
+          {
+            "ref": "src:openiti-insaf-shamela21609/v08:p489",
+            "excerpt_ar": "أو يصح، ويكون طلاقا؟ على روايتين. انتهى. قلت: الذي يظهر أنه طلاق قياسا",
+            "position": 0,
+            "grade": "ashab",
+            "who": "al-Mardāwī, al-Inṣāf",
+            "note": "After quoting Ibn Rajab's two riwāyas al-Mardāwī says «قلت: الذي يظهر أنه طلاق», by analogy with «ما أحل الله علي حرام أعني به الطلاق», which he marks «الصحيح من المذهب: أن ذلك طلاق»."
+          },
+          {
+            "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p089",
+            "excerpt_ar": "وكذا قوله أنت علي حرام أو الحل علي حرام أعني به الطلاق",
+            "position": 0,
+            "grade": "jazm",
+            "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+            "note": "Sharḥ al-Muntahā states decisively that «أنت علي حرام ... أعني به الطلاق» is divorce (like «ما أحل الله علي حرام أعني به الطلاق»), unlike «كظهر أمي أعني به الطلاق»."
+          }
+        ]
+      }
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f006",
+      "classification": "source_scope_difference",
+      "disposition": "The original records the competing holders below without an independently accepted madhhab selection. Later evidence supplies a stronger candidate for the encoded ruling; retain the original annotation. Any promotion of matches_madhhab requires an explicit decision about source scope and authority, not execution alone.",
+      "scholarly_status": "open",
+      "original_record": {
+        "locator": "src:openiti-rajab-shamela21730/v01:p048#q038.f006",
+        "case_ar": "لو قال له في دين السلم: صالحني منه على مثل الثمن، قال القاضي: يصح ويكون إقالة، وقال هو وابن عقيل: لا يجوز بيع الدين من الغريم بمثله لأنه نفس حقه فيخرج في المسألة وجهان التفاتا إلى اللفظ والمعنى.",
+        "sha256": "f110bb9427f521ce1ec18fe17713206b24aff31b48e8fc42cf7de4ed03ff2b0f"
+      },
+      "original_annotation": {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f006",
+        "encoder": "words_out_of_nature",
+        "class": "genuine_ikhtilaf",
+        "facts": {
+          "other_contract_possible": true
+        },
+        "expected": true,
+        "positions": [
+          {
+            "who": "al-Qāḍī: valid as iqāla",
+            "ruling": true
+          },
+          {
+            "who": "by the word: not allowed",
+            "ruling": false
+          }
+        ],
+        "matches_madhhab": false,
+        "note": "«Settle the salam debt with me for the like of the price»: al-Qāḍī: valid as iqāla; he and Ibn ʿAqīl: selling the debt to the debtor for its like is not allowed, «فيخرج في المسألة وجهان التفاتا إلى اللفظ والمعنى»."
+      },
+      "grades": [
+        "takhrij",
+        "takhrij"
+      ],
+      "imported_evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p144",
+          "excerpt_ar": "ولو قال في دين السلم صالحني منه على مثل الثمن صح وكان إقالة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ matn states decisively that 'settle with me from the salam debt for the like of the price' is valid and is an iqāla: position 0."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p307",
+          "excerpt_ar": "(وكان إقالة) بلفظ الصلح لأنها تصح بكل ما أدى معناها",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf: it is an iqāla in the word of ṣulḥ, since iqāla is valid with any word conveying its meaning: position 0."
+        }
+      ],
+      "current_resolution": [
+        "tarjih",
+        true
+      ],
+      "current_review_member": true,
+      "original_ledger_entry": {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f006",
+        "grades": [
+          "takhrij",
+          "takhrij"
+        ],
+        "jam": null,
+        "naskh": null,
+        "note": "«فيخرج في المسألة وجهان التفاتا إلى اللفظ والمعنى».",
+        "evidence": [
+          {
+            "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p144",
+            "excerpt_ar": "ولو قال في دين السلم صالحني منه على مثل الثمن صح وكان إقالة",
+            "position": 0,
+            "grade": "jazm",
+            "who": "al-Ḥajjāwī, al-Iqnāʿ",
+            "note": "The Iqnāʿ matn states decisively that 'settle with me from the salam debt for the like of the price' is valid and is an iqāla: position 0."
+          },
+          {
+            "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p307",
+            "excerpt_ar": "(وكان إقالة) بلفظ الصلح لأنها تصح بكل ما أدى معناها",
+            "position": 0,
+            "grade": "jazm",
+            "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+            "note": "Kashshāf: it is an iqāla in the word of ṣulḥ, since iqāla is valid with any word conveying its meaning: position 0."
+          }
+        ]
+      }
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q039.f001",
+      "classification": "source_scope_difference",
+      "disposition": "The original records the competing holders below without an independently accepted madhhab selection. Later evidence supplies a stronger candidate for the encoded ruling; retain the original annotation. Any promotion of matches_madhhab requires an explicit decision about source scope and authority, not execution alone.",
+      "scholarly_status": "open",
+      "original_record": {
+        "locator": "src:openiti-rajab-shamela21730/v01:p049#q039.f001",
+        "case_ar": "لو أجره عينا بلفظ البيع ففي الصحة وجهان وقال صاحب التلخيص: إن أضاف البيع إلى العين لم يصح والوجهان في إضافتها إلى المنفعة.",
+        "sha256": "161e670cec47fc8320856441e1213080d67b8b869b3ccbc89f6230dcee5dd8d2"
+      },
+      "original_annotation": {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q039.f001",
+        "encoder": "contract_by_kinaya",
+        "class": "genuine_ikhtilaf",
+        "facts": {
+          "needs_witnessing": false
+        },
+        "expected": true,
+        "positions": [
+          {
+            "who": "wajh: valid as a lease",
+            "ruling": true
+          },
+          {
+            "who": "wajh: not valid",
+            "ruling": false
+          }
+        ],
+        "matches_madhhab": false,
+        "note": "Leasing a thing with the word «sale»: two wujūh; al-Talkhīṣ: not valid if the sale is added to the thing, the two wujūh being where it is added to the benefit. No madhhab marked."
+      },
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "imported_evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v07:p134",
+          "excerpt_ar": "أحدهما: يصح، وهو الصحيح، اختاره ابن عبدوس في تذكرته، والشيخ تقي الدين",
+          "position": 0,
+          "grade": "tashih",
+          "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
+          "note": "Al-Mardāwī in Taṣḥīḥ al-Furūʿ (masʾala 1, «وفي لفظ البيع وجهان») rules «يصح، وهو الصحيح», chosen by Ibn ʿAbdūs and Shaykh Taqī al-Dīn: position 0."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p066",
+          "excerpt_ar": "وتنعقد بلفظ إجارة وكراء وما بمعناهما وبلفظ بيع إن لم يضف إلى العين",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The Muntahā matn states decisively that ijāra is concluded with the word «بيع» provided it is not added to the thing itself (al-Talkhīṣ's distinction): position 0 for the benefit-added form."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p547",
+          "excerpt_ar": "(بلفظ بيع أضافه إلى النفع نحو) قول: (بعتك نفعها أو) بعتك (سكنى الدار",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf (on the Iqnāʿ) states decisively that ijāra is concluded with the word of sale added to the benefit («بعتك نفعها»), citing Taṣḥīḥ al-Furūʿ's taṣḥīḥ."
+        }
+      ],
+      "current_resolution": [
+        "tarjih",
+        true
+      ],
+      "current_review_member": true,
+      "original_ledger_entry": {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q039.f001",
+        "grades": [
+          "wajh",
+          "wajh"
+        ],
+        "jam": null,
+        "naskh": null,
+        "evidence": [
+          {
+            "ref": "src:openiti-ibnmuflih-furu-shamela12052/v07:p134",
+            "excerpt_ar": "أحدهما: يصح، وهو الصحيح، اختاره ابن عبدوس في تذكرته، والشيخ تقي الدين",
+            "position": 0,
+            "grade": "tashih",
+            "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
+            "note": "Al-Mardāwī in Taṣḥīḥ al-Furūʿ (masʾala 1, «وفي لفظ البيع وجهان») rules «يصح، وهو الصحيح», chosen by Ibn ʿAbdūs and Shaykh Taqī al-Dīn: position 0."
+          },
+          {
+            "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p066",
+            "excerpt_ar": "وتنعقد بلفظ إجارة وكراء وما بمعناهما وبلفظ بيع إن لم يضف إلى العين",
+            "position": 0,
+            "grade": "jazm",
+            "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+            "note": "The Muntahā matn states decisively that ijāra is concluded with the word «بيع» provided it is not added to the thing itself (al-Talkhīṣ's distinction): position 0 for the benefit-added form."
+          },
+          {
+            "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p547",
+            "excerpt_ar": "(بلفظ بيع أضافه إلى النفع نحو) قول: (بعتك نفعها أو) بعتك (سكنى الدار",
+            "position": 0,
+            "grade": "jazm",
+            "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+            "note": "Kashshāf (on the Iqnāʿ) states decisively that ijāra is concluded with the word of sale added to the benefit («بعتك نفعها»), citing Taṣḥīḥ al-Furūʿ's taṣḥīḥ."
+          }
+        ]
+      }
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f001",
+      "classification": "source_scope_difference",
+      "disposition": "The original records the competing holders below without an independently accepted madhhab selection. Later evidence supplies a stronger candidate for the encoded ruling; retain the original annotation. Any promotion of matches_madhhab requires an explicit decision about source scope and authority, not execution alone.",
+      "scholarly_status": "open",
+      "original_record": {
+        "locator": "src:openiti-rajab-shamela21730/v01:p053#q041.f001",
+        "case_ar": "الوقف إذا أتلفه متلف وأخذت قيمته فاشتري بها بدله فهل يصير وقفا بدون إنشاء الوقف عليه من الناظر حكى بعض الأصحاب في ذلك وجهين.",
+        "sha256": "e7da1bd7b4844c6b89058bce6130c62423d8da9b85d9ecd7934ed4ead90ac725"
+      },
+      "original_annotation": {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f001",
+        "encoder": "right_to_substitute",
+        "class": "genuine_ikhtilaf",
+        "facts": {
+          "bound_to_thing": true
+        },
+        "expected": true,
+        "positions": [
+          {
+            "who": "wajh: waqf by the purchase",
+            "ruling": true
+          },
+          {
+            "who": "wajh: needs a new waqf",
+            "ruling": false
+          }
+        ],
+        "matches_madhhab": false,
+        "note": "A waqf destroyed, its value used to buy a replacement: is it waqf without the administrator making it so? Two wujūh. No madhhab marked."
+      },
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "imported_evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p110",
+          "excerpt_ar": "قلت: وهو ظاهر كلام كثير من الأصحاب هنا. لاقتصارهم على بيعه وشراء بدله.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "After presenting the two wujūh (from Ibn Rajab), al-Mardāwī says becoming waqf by the purchase alone is the apparent view of many aṣḥāb, then quotes al-Talkhīṣ, al-Riʿāya, al-Ḥulwānī and Ibn Qundus and concludes «وهو الصواب»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p295",
+          "excerpt_ar": "أتلف أتلف ونحوه (يصير) البدل (وقفا كبدل أضحية و) بدل (رهن أتلف)",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf (on the Iqnāʿ): by the mere purchase of the replacement for a waqf sold or destroyed, the replacement becomes waqf, like the replacement of a sacrifice and of a destroyed pledge."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p009",
+          "excerpt_ar": "وقفا بمجرد الشراء - ويأتي - وأن قتل ولو عمدا فليس له عفو",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ matn, on a waqf slave destroyed by anyone: its value buys a like or a share «يكون وقفا بمجرد الشراء»."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p427",
+          "excerpt_ar": "(وبمجرد شراء البدل) لجهة الوقف (يصير وقفا كبدل",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā (on the Muntahā matn): by the mere purchase of the replacement for the waqf it becomes waqf, like the replacement of a sacrifice."
+        }
+      ],
+      "current_resolution": [
+        "tarjih",
+        true
+      ],
+      "current_review_member": true,
+      "original_ledger_entry": {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f001",
+        "grades": [
+          "wajh",
+          "wajh"
+        ],
+        "jam": null,
+        "naskh": null,
+        "evidence": [
+          {
+            "ref": "src:openiti-insaf-shamela21609/v07:p110",
+            "excerpt_ar": "قلت: وهو ظاهر كلام كثير من الأصحاب هنا. لاقتصارهم على بيعه وشراء بدله.",
+            "position": 0,
+            "grade": "jazm",
+            "who": "al-Mardāwī, al-Inṣāf",
+            "note": "After presenting the two wujūh (from Ibn Rajab), al-Mardāwī says becoming waqf by the purchase alone is the apparent view of many aṣḥāb, then quotes al-Talkhīṣ, al-Riʿāya, al-Ḥulwānī and Ibn Qundus and concludes «وهو الصواب»."
+          },
+          {
+            "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p295",
+            "excerpt_ar": "أتلف أتلف ونحوه (يصير) البدل (وقفا كبدل أضحية و) بدل (رهن أتلف)",
+            "position": 0,
+            "grade": "jazm",
+            "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+            "note": "Kashshāf (on the Iqnāʿ): by the mere purchase of the replacement for a waqf sold or destroyed, the replacement becomes waqf, like the replacement of a sacrifice and of a destroyed pledge."
+          },
+          {
+            "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p009",
+            "excerpt_ar": "وقفا بمجرد الشراء - ويأتي - وأن قتل ولو عمدا فليس له عفو",
+            "position": 0,
+            "grade": "jazm",
+            "who": "al-Ḥajjāwī, al-Iqnāʿ",
+            "note": "The Iqnāʿ matn, on a waqf slave destroyed by anyone: its value buys a like or a share «يكون وقفا بمجرد الشراء»."
+          },
+          {
+            "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p427",
+            "excerpt_ar": "(وبمجرد شراء البدل) لجهة الوقف (يصير وقفا كبدل",
+            "position": 0,
+            "grade": "jazm",
+            "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+            "note": "Sharḥ al-Muntahā (on the Muntahā matn): by the mere purchase of the replacement for the waqf it becomes waqf, like the replacement of a sacrifice."
+          }
+        ]
+      }
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f002",
+      "classification": "source_scope_difference",
+      "disposition": "The original records the competing holders below without an independently accepted madhhab selection. Later evidence supplies a stronger candidate for the encoded ruling; retain the original annotation. Any promotion of matches_madhhab requires an explicit decision about source scope and authority, not execution alone.",
+      "scholarly_status": "open",
+      "original_record": {
+        "locator": "src:openiti-rajab-shamela21730/v01:p053#q041.f002",
+        "case_ar": "إذا أتلف الأضحية متلف وأخذت منه القيمة أو باعها من أوجبها ثم اشترى بالقيمة أو الثمن مثلها فهل تصير متعينة بمجرد الشراء يتخرج على وجهين.",
+        "sha256": "a163523f85fbc9a2702796283bd38533967d81d1359ba5037469e7aed62e7aa0"
+      },
+      "original_annotation": {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f002",
+        "encoder": "right_to_substitute",
+        "class": "genuine_ikhtilaf",
+        "facts": {
+          "bound_to_thing": true
+        },
+        "expected": true,
+        "positions": [
+          {
+            "who": "wajh: designated by the purchase",
+            "ruling": true
+          },
+          {
+            "who": "wajh: needs designation",
+            "ruling": false
+          }
+        ],
+        "matches_madhhab": false,
+        "note": "A designated sacrifice destroyed (or sold by its designator), its like bought with the value: designated by the purchase itself? Derived on two wujūh. No madhhab marked."
+      },
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "imported_evidence": [
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p386",
+          "excerpt_ar": "كبدل أضحية ورهن أتلف والاحتياط وقفه ... تتمة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The Muntahā matn makes the replacement of a waqf waqf by the mere purchase «كبدل أضحية», presupposing that the bought replacement of a destroyed sacrifice is designated by the purchase itself: position 0 (indirect)."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p295",
+          "excerpt_ar": "أتلف أتلف ونحوه (يصير) البدل (وقفا كبدل أضحية و) بدل (رهن أتلف)",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf: the waqf replacement becomes waqf by the purchase «كبدل أضحية و) بدل (رهن أتلف)», taking the sacrifice replacement as the settled base case."
+        }
+      ],
+      "current_resolution": [
+        "tarjih",
+        true
+      ],
+      "current_review_member": true,
+      "original_ledger_entry": {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f002",
+        "grades": [
+          "wajh",
+          "wajh"
+        ],
+        "jam": null,
+        "naskh": null,
+        "evidence": [
+          {
+            "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p386",
+            "excerpt_ar": "كبدل أضحية ورهن أتلف والاحتياط وقفه ... تتمة",
+            "position": 0,
+            "grade": "jazm",
+            "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+            "note": "The Muntahā matn makes the replacement of a waqf waqf by the mere purchase «كبدل أضحية», presupposing that the bought replacement of a destroyed sacrifice is designated by the purchase itself: position 0 (indirect)."
+          },
+          {
+            "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p295",
+            "excerpt_ar": "أتلف أتلف ونحوه (يصير) البدل (وقفا كبدل أضحية و) بدل (رهن أتلف)",
+            "position": 0,
+            "grade": "jazm",
+            "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+            "note": "Kashshāf: the waqf replacement becomes waqf by the purchase «كبدل أضحية و) بدل (رهن أتلف)», taking the sacrifice replacement as the settled base case."
+          }
+        ]
+      }
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f001",
+      "classification": "source_scope_difference",
+      "disposition": "The original records the competing holders below without an independently accepted madhhab selection. Later evidence supplies a stronger candidate for the encoded ruling; retain the original annotation. Any promotion of matches_madhhab requires an explicit decision about source scope and authority, not execution alone.",
+      "scholarly_status": "open",
+      "original_record": {
+        "locator": "src:openiti-rajab-shamela21730/v01:p117#q065.f001",
+        "case_ar": "لو طلق امرأة يظنها أجنبية فتبينت زوجته ففي وقوع الطلاق روايتان، وبناهما أبو بكر على أن الصريح هل يحتاج إلى نية أم لا؟ قال القاضي إنما هذا الخلاف في صورة الجهل بأهلية المحل ولا يطرد مع العلم به",
+        "sha256": "7ab2ef2912d5f00e385609ca29074d068a42bea5bb7b10f1fe636716316e4955"
+      },
+      "original_annotation": {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f001",
+        "encoder": "unknown_condition_in_fact",
+        "class": "genuine_ikhtilaf",
+        "facts": {
+          "knew": false,
+          "liability_only": false,
+          "transaction_authority": false
+        },
+        "expected": false,
+        "positions": [
+          {
+            "who": "riwāya: no divorce",
+            "ruling": false
+          },
+          {
+            "who": "riwāya: divorced",
+            "ruling": true
+          }
+        ],
+        "matches_madhhab": false,
+        "note": "Divorces a woman he takes for a stranger, and she is his wife: two riwāyas (Abū Bakr builds them on whether explicit words need intention). No madhhab marked."
+      },
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "imported_evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p149",
+          "excerpt_ar": "إحداهما: لا يقع، قال ابن عقيل وغيره: العمل على أنه لا يقع، وجزم به في الوجيز، واختاره أبو بكر، وهو ظاهر ما قدمه في الشرح، والمغني، وصححه في تصحيح المحرر.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf says the two riwāyas are left open (aṭlaqahumā) in many books, but reports «العمل على أنه لا يقع», al-Wajīz's jazm and Taṣḥīḥ al-Muḥarrar for no divorce."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p341",
+          "excerpt_ar": "قاله أبو بكر ونصره في الشرح لأنه لم يردها بذلك وصححه في الاختيارات ويخرج على قول ابن حامد أنها تطلق قاله في المبدع وجزم به في المنتهى",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf glosses the Iqnāʿ's «لم تطلق امرأته» (no divorce) while noting the Muntahā decides the opposite."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p145",
+          "excerpt_ar": "(وكذا عكسها) بأن قال لزوجته ظانا أنها أجنبية أنت طالق فتطلق، لأنه واجهها بصريح الطلاق كما لو علمها زوجته ولا أثر لظنها أجنبية",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "The Muntahā («وكذا عكسها») and its sharḥ rule that the wife taken for a stranger is divorced, since she was addressed with explicit words."
+        }
+      ],
+      "current_resolution": [
+        "tarjih",
+        false
+      ],
+      "current_review_member": true,
+      "original_ledger_entry": {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f001",
+        "grades": [
+          "nass",
+          "nass"
+        ],
+        "jam": null,
+        "naskh": null,
+        "evidence": [
+          {
+            "ref": "src:openiti-insaf-shamela21609/v09:p149",
+            "excerpt_ar": "إحداهما: لا يقع، قال ابن عقيل وغيره: العمل على أنه لا يقع، وجزم به في الوجيز، واختاره أبو بكر، وهو ظاهر ما قدمه في الشرح، والمغني، وصححه في تصحيح المحرر.",
+            "position": 0,
+            "grade": "jazm",
+            "who": "al-Mardāwī, al-Inṣāf",
+            "note": "al-Inṣāf says the two riwāyas are left open (aṭlaqahumā) in many books, but reports «العمل على أنه لا يقع», al-Wajīz's jazm and Taṣḥīḥ al-Muḥarrar for no divorce."
+          },
+          {
+            "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p341",
+            "excerpt_ar": "قاله أبو بكر ونصره في الشرح لأنه لم يردها بذلك وصححه في الاختيارات ويخرج على قول ابن حامد أنها تطلق قاله في المبدع وجزم به في المنتهى",
+            "position": 0,
+            "grade": "jazm",
+            "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+            "note": "Kashshāf glosses the Iqnāʿ's «لم تطلق امرأته» (no divorce) while noting the Muntahā decides the opposite."
+          },
+          {
+            "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p145",
+            "excerpt_ar": "(وكذا عكسها) بأن قال لزوجته ظانا أنها أجنبية أنت طالق فتطلق، لأنه واجهها بصريح الطلاق كما لو علمها زوجته ولا أثر لظنها أجنبية",
+            "position": 1,
+            "grade": "jazm",
+            "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+            "note": "The Muntahā («وكذا عكسها») and its sharḥ rule that the wife taken for a stranger is divorced, since she was addressed with explicit words."
+          }
+        ]
+      }
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f005",
+      "classification": "source_scope_difference",
+      "disposition": "The original records the competing holders below without an independently accepted madhhab selection. Later evidence supplies a stronger candidate for the encoded ruling; retain the original annotation. Any promotion of matches_madhhab requires an explicit decision about source scope and authority, not execution alone.",
+      "scholarly_status": "open",
+      "original_record": {
+        "locator": "src:openiti-rajab-shamela21730/v01:p117#q065.f005",
+        "case_ar": "لو تزوجت امرأة المفقود قبل الزمان المعتبر ثم تبين أنه كان ميتا قبل ذلك بمدة تنقضي فيها العدة أو أنه كان طلقها ففي صحة النكاح الوجهان ذكره القاضي ورجح صاحب المغني عدم الصحة هنا لفقد شرط النكاح في الابتداء كما لو تزوجت المرتابة قبل زوال الريبة.",
+        "sha256": "43593d2b09530806e240d04ea9e3ed0ac9327eddad632d1ca2a026799f93bfcb"
+      },
+      "original_annotation": {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f005",
+        "encoder": "unknown_condition_in_fact",
+        "class": "genuine_ikhtilaf",
+        "facts": {
+          "knew": false,
+          "liability_only": false,
+          "transaction_authority": false
+        },
+        "expected": false,
+        "positions": [
+          {
+            "who": "al-Mughnī: invalid",
+            "ruling": false
+          },
+          {
+            "who": "the other wajh: valid",
+            "ruling": true
+          }
+        ],
+        "matches_madhhab": false,
+        "note": "The missing man's wife remarries before the required period, then he had died (or divorced her) long enough before: al-Mughnī: invalid. No madhhab marked."
+      },
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "imported_evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p290",
+          "excerpt_ar": "لو تزوجت امرأة المفقود قبل الزمان المعتبر، ثم تبين أنه كان ميتا أو أنه طلقها قبل ذلك بمدة تنقضي فيها العدة: ففي صحة النكاح قولان. ذكرهما القاضي. الصحيح منهما: عدم الصحة.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf marks invalidity as «الصحيح» in exactly this case."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p400",
+          "excerpt_ar": "ومن تزوجت قبل ما ذكر لم يصح ولو بان أنه كان طلق أو ميتا حين التزويج",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The Muntahā rules flatly that the marriage is invalid even if he had already divorced her or died."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p113",
+          "excerpt_ar": "ولو تزوجت امرأته قبل الزمان لمعتبر ثم تبين أنه كان ميتا أو أنه كان طلقها قبل ذلك بمدة تنقضي فيها العدة لم يصح النكاح",
           "position": 0,
           "grade": "jazm",
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
