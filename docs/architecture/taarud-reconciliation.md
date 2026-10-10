@@ -132,6 +132,8 @@ Tranche 8 added 4 contradictions and 12 evidence items, and no new jamʿ. Its th
 
 Tranche 9 added 2 contradictions and 6 evidence items. On the shufʿa (50.f001) the madhhab's own condition, «إذا كان مليئا بالثمن», is the farq for a jamʿ (`ownedBeforePaymentIn`). On 43.f001 the muʿtamad holds the rescinded object as a trust, which leaves a residue. The ledger stands at 146 entries and 365 evidence items, with 16 jamʿ, 122 tarjīḥ (62 residues) and 8 tawaqquf.
 
+Tranche 10 added 7 contradictions and 23 evidence items, after checking each of its on-the-madhhab annotations against al-Inṣāf and the muʿtamad. Two are jamʿ on farqs the madhhab states: `disposeBeforeQabdIn` (52.f001: a settled debt is sold only to the debtor, «وهو الصحيح من المذهب. وعليه الأصحاب») and `removedWithPrincipalIn` (61.f001: the qāḍī's deputies are his, «لأنهم نوابه»). Five are residues, four of them on qāʿida 56, where the madhhab does not take concurrence as sufficient in the kitāba with a sale, agency before the nikāḥ or the umm walad's ʿidda, and none cites one farq for all three. The ledger stands at 153 entries and 388 evidence items, with 18 jamʿ, 127 tarjīḥ (67 residues) and 8 tawaqquf.
+
 **Left as residues, for want of a cited farq:**
 
 | Encoder | Residues / cases | Why no jamʿ |
@@ -139,6 +141,7 @@ Tranche 9 added 2 contradictions and 6 evidence items. On the shufʿa (50.f001) 
 | `asl_zahir` | 12 / 40 | All in Ibn Rajab's category 4 (aṣl and ẓāhir of equal grade), where the madhhab keeps the aṣl. No source separates them from 159.f031, f035, f039 and f021, where the ẓāhir prevails. Moving all of category 4 to the aṣl would move those four to their weaker side, which the jamʿ check forbids. |
 | `lots` | 12 / 47 | Each exclusion of lots rests on its own rule: annulment by the ḥākim, the heirs' choice, the wife's word, loss of lineage, nothing binding. |
 | `tadakhul` | 4 / 15 | Two rest on the mashhūra on vows, and one on the takbīr shared between a rukn and a non-rukn. |
+| `concurrent_condition` | 4 / 6 | The madhhab voids the kitāba with a sale for «باع ماله لماله», agency before the nikāḥ for want of present ownership, and counts no concurrent freedom in the umm walad's clearance: three grounds, none a farq on concurrence itself. 56.f003 has no later treatment. |
 
 `review` lists the cases where the reading holds the prevailing marked side while the annotation says no madhhab matches. These are for the human reviewer to re-annotate. Nothing is rewritten here.
 

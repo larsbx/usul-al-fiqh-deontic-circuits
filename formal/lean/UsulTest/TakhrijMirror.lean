@@ -336,6 +336,34 @@ import Usul
 #guard (Usul.Refinements.ownedBeforePaymentIn true true true) == true
 #guard (Usul.Refinements.inNewOwnersDaman false) == false
 #guard (Usul.Refinements.inNewOwnersDaman true) == true
+#guard (Usul.Refinements.disposeBeforeQabd false false) == false
+#guard (Usul.Refinements.disposeBeforeQabd false true) == true
+#guard (Usul.Refinements.disposeBeforeQabd true false) == false
+#guard (Usul.Refinements.disposeBeforeQabd true true) == false
+#guard (Usul.Refinements.mayDisposeOver false) == true
+#guard (Usul.Refinements.mayDisposeOver true) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn false false false) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn false false true) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn false true false) == true
+#guard (Usul.Refinements.disposeBeforeQabdIn false true true) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn true false false) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn true false true) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn true true false) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn true true true) == false
+#guard (Usul.Refinements.conditionMet false false) == false
+#guard (Usul.Refinements.conditionMet false true) == true
+#guard (Usul.Refinements.conditionMet true false) == true
+#guard (Usul.Refinements.conditionMet true true) == true
+#guard (Usul.Refinements.desistIsAct false) == false
+#guard (Usul.Refinements.desistIsAct true) == true
+#guard (Usul.Refinements.removedWithPrincipal false) == true
+#guard (Usul.Refinements.removedWithPrincipal true) == false
+#guard (Usul.Refinements.removedWithPrincipalIn false false) == true
+#guard (Usul.Refinements.removedWithPrincipalIn false true) == true
+#guard (Usul.Refinements.removedWithPrincipalIn true false) == false
+#guard (Usul.Refinements.removedWithPrincipalIn true true) == true
+#guard (Usul.Refinements.removedBeforeKnowledge false) == true
+#guard (Usul.Refinements.removedBeforeKnowledge true) == false
 #guard (Usul.Refinements.excessObligatoryIn false false false) == false
 #guard (Usul.Refinements.excessObligatoryIn false false true) == true
 #guard (Usul.Refinements.excessObligatoryIn false true false) == true

@@ -443,6 +443,10 @@ import Usul
 #check @Usul.Refinements.ownedBeforePaymentIn
 #check @Usul.Refinements.ownedBeforePaymentIn_conservative
 #check @Usul.Refinements.ownedBeforePaymentIn_insolvent
+#check @Usul.Refinements.disposeBeforeQabdIn
+#check @Usul.Refinements.disposeBeforeQabdIn_conservative
+#check @Usul.Refinements.removedWithPrincipalIn
+#check @Usul.Refinements.removedWithPrincipalIn_conservative
 #check @Usul.Hukm.Mode
 #check @Usul.Hukm.mode
 #check @Usul.Hukm.mode_binding_injective

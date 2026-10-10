@@ -176,14 +176,14 @@ Every ikhtilāf farʿ off the marked madhhab side is run through the kernel's ow
 **Scope reconciliation.** Counts come from committed record IDs minus all existing annotations, not historical estimates. M4 now annotates 196 Ibn Rajab records under 14 qawāʿid, including nine `.f000` additions. PR #29's 1,129 segmented records minus those 196 and tranche 1's 26 left 907 records in 122 qawāʿid with cases. The old “869 in 146” mixed pre-opening counts with all unannotated qawāʿid, including those with no segmented case. PR #30 then added seven segmented records and annotated tranche 2's 25: 1,136 − 196 − 26 − 25 = 889, in 118 qawāʿid. Merged PR #32 then added the list-and-division segmentation and 21 candidate annotations. The unified tranche 3 below preserves those cases and PR #31's eight existing-record annotations, in one 29-record suite; current totals are generated below. Ibn al-Laḥḥām and the global report's totals are separate scopes.
 
 <!-- BEGIN GENERATED M8 SCOPE -->
-**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 415 annotated + **764 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 61 are fully annotated and **93 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
+**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 434 annotated + **745 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 67 are fully annotated and **87 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
 
 The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
 
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.793 | 0 | 0 |
-| All annotation suites | 442 | 0.986 | 0.689 | 0 | 6 |
+| All annotation suites | 461 | 0.987 | 0.691 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -397,6 +397,22 @@ Results on the tranche:
 - **12 derivable, 4 ikhtilāf (3 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 16/16 = 1.000, madhhab coverage 15/16 = 0.938. 43.f001's wujūh turn on who caused the contract's ending, so it gets its own reading on that fact rather than a gap. The bank's gaps stay the six original ones.
 - **Reconciliation:** the two new apparent contradictions entered the ledger. The madhhab on the shufʿa (50.f001), «يملكه بمجرد المطالبة إذا كان مليئا بالثمن، وهو المذهب», became a jamʿ on that solvency farq (`ownedBeforePaymentIn`), restricted to the shufʿa by a `shufa` fact since the farq is cited for it alone, and solvency answers Ibn Rajab's own «والضرر لا يزال بالضرر». On 43.f001 the muʿtamad (al-Muntahā, Kashshāf) makes the rescinded sale object a trust in the buyer's hand, against `liableAfterEnding`. That is a residue.
 
+**Tranche 10 (qawāʿid 52, 54, 56, 58, 61, 62; 19 furūʿ).** Typological records are annotated for their leading ruling (`corpus/takhrij/rajab_m8_tranche10_furu.json`):
+
+| Qāʿida | Reading |
+|---|---|
+| 52: disposal before qabḍ | `disposeBeforeQabd`: barred only in the undetermined («جادة المذهب ... إلا في المبهم خاصة») and where the right is not settled; reconciled to `disposeBeforeQabdIn`: and a debt to any but the debtor |
+| 54: disposing so as to extinguish another's right | `mayDisposeOver`: not without his leave, «والصحيح أنه لا يجوز أيضا» |
+| 56: conditions concurrent with the contract | `conditionMet`: concurrence suffices («المنصوص عن أحمد الاكتفاء بالمقارنة») |
+| 58: desisting from what one is engaged in | `desistIsAct`: only where he began knowing the prohibition imminent |
+| 61: the imām and his deputies | `removedWithPrincipal`: unless the mandate is general; reconciled to `removedWithPrincipalIn`: the qāḍī's deputies are removed with him |
+| 62: removal before it is known | `removedBeforeKnowledge`: at once, except a public office («شبيه بنسخ الأحكام») |
+
+Results on the tranche:
+- **5 derivable, 14 ikhtilāf (9 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 19/19 = 1.000, madhhab coverage 14/19 = 0.737. The bank's gaps stay the six original ones.
+- **Verification:** every ikhtilāf annotated as on the madhhab side was checked against al-Inṣāf and the muʿtamad. Four were not (56.f002, 56.f004, 58.f001, 61.f001) and entered the ledger. 62.f002 was re-read: the keeper's annulment by word dissolves the deposit at once (al-Qāḍī's usual statement and the muʿtamad), so no keeper fact is needed.
+- **Reconciliation:** 7 new apparent contradictions, 23 evidence items. Two are jamʿ on farqs the madhhab states: the deeds (52.f001) fall under «ولا يجوز لغيره», a debt sold only to the debtor (`disposeBeforeQabdIn`), and the qāḍī's general deputies (61.f001) are removed with him, «لأنهم نوابه» (`removedWithPrincipalIn`). Five are residues: on qāʿida 56 the madhhab voids the sale joined to a kitāba (f002) and agency to divorce a woman not yet married (f004), and clears the umm walad by one period (f006), each against concurrence; 56.f003 has no later treatment and leans to al-Qāḍī's «الأشبه»; on 58.f001 the muʿtamad owes the kaffāra «لأن النزع جماع».
+
 **Coverage trend:**
 
 | Stage | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
@@ -427,6 +443,8 @@ Results on the tranche:
 | All, after tranche 8 | 426 | 0.986 | 0.680 | 0 | 6 |
 | M8 tranche 9 alone | 16 | 1.000 | 0.938 | 0 | 0 |
 | All, after tranche 9 | 442 | 0.986 | 0.689 | 0 | 6 |
+| M8 tranche 10 alone | 19 | 1.000 | 0.737 | 0 | 0 |
+| All, after tranche 10 | 461 | 0.987 | 0.691 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 

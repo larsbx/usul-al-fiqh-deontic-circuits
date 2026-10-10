@@ -924,6 +924,33 @@ def ownedBeforePayment (necessity : Bool) : Bool := necessity
 the former owner cut («وقد انقطعت علق البائع منه»); the undetermined needs qabḍ. -/
 def inNewOwnersDaman (determined : Bool) : Bool := determined
 
+/-- Qāʿida 52: disposal before qabḍ is barred only in the undetermined («جادة المذهب وهو أن لا
+ضمان ولا منع من التصرف إلا في المبهم خاصة»), and where the disposer's right is not settled: the
+stipend, «شيء مغيب لا يدرى أيصل إليه أم لا», and the alms, «لا تملك بدون القبض». -/
+def disposeBeforeQabd (mubham settled : Bool) : Bool := !mubham && settled
+
+/-- Qāʿida 54: one may not dispose of a thing so as to extinguish another's right in it without
+his leave, whether the right was taken, demanded, or only established («والصحيح أنه لا يجوز
+أيضا»); a disposal that leaves the right to a substitute is allowed. -/
+def mayDisposeOver (extinguishes : Bool) : Bool := !extinguishes
+
+/-- Qāʿida 56: a contract's condition of capacity suffices when concurrent with it («المنصوص عن
+أحمد الاكتفاء بالمقارنة في الصحة»), against the wajh that it must precede. -/
+def conditionMet (prior concurrent : Bool) : Bool := prior || concurrent
+
+/-- Qāʿida 58: desisting at once from what one is engaged in is not doing the forbidden, unless
+one began knowing the prohibition imminent («لإقدامه على الفعل مع علمه بتحريمه في وقته لا سيما مع
+قرب الوقت»). -/
+def desistIsAct (foresaw : Bool) : Bool := foresaw
+
+/-- Qāʿida 61: a deputy is removed with his principal's removal or death unless his mandate is
+general, a deputy for the Muslims («بخلاف القضاة فإنهم نواب للمسلمين»). -/
+def removedWithPrincipal (general : Bool) : Bool := !general
+
+/-- Qāʿida 62: removal takes effect before it is known (the agent, «المشهور»), except in a public
+office carrying a right of God, «شبيه بنسخ الأحكام لا يثبت قبل بلوغ الناسخ». -/
+def removedBeforeKnowledge (publicOffice : Bool) : Bool := !publicOffice
+
 /-! ## Reconciliation refinements (`corpus/reconciliation/ledger.json`)
 
 Each is a jamʿ: a farq the later works cite, conservative over the earlier reading where the farq
@@ -999,5 +1026,23 @@ theorem ownedBeforePaymentIn_conservative (n v : Bool) :
 theorem ownedBeforePaymentIn_insolvent (n s : Bool) :
     ownedBeforePaymentIn n s false = ownedBeforePayment n := by
   cases n <;> cases s <;> rfl
+
+/-- Qāʿida 52 with the madhhab's bar on selling a debt to any but the debtor («ولا يجوز لغيره»: al-Inṣāf,
+«وهو الصحيح من المذهب. وعليه الأصحاب»), which covers the deeds. -/
+def disposeBeforeQabdIn (mubham settled debtToThird : Bool) : Bool :=
+  disposeBeforeQabd mubham settled && !debtToThird
+
+theorem disposeBeforeQabdIn_conservative (m s : Bool) :
+    disposeBeforeQabdIn m s false = disposeBeforeQabd m s := by
+  cases m <;> cases s <;> rfl
+
+/-- Qāʿida 61 with the madhhab on the qāḍī's deputies: removed with him even under a general
+mandate, «لأنهم نواب القاضي بخلاف القضاة فإنهم نواب للمسلمين» (al-Inṣāf: «هذا الصحيح من المذهب.
+وعليه أكثر الأصحاب»). -/
+def removedWithPrincipalIn (general ofQadi : Bool) : Bool := removedWithPrincipal general || ofQadi
+
+theorem removedWithPrincipalIn_conservative (g : Bool) :
+    removedWithPrincipalIn g false = removedWithPrincipal g := by
+  cases g <;> rfl
 
 end Usul.Refinements

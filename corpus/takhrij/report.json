@@ -1,16 +1,16 @@
 {
- "total": 442,
+ "total": 461,
  "classes": {
-  "derivable": 189,
-  "genuine_ikhtilaf": 246,
+  "derivable": 194,
+  "genuine_ikhtilaf": 260,
   "missing_fact": 1,
   "missing_rule": 5,
   "segmentation_error": 1
  },
- "coverage": 0.986,
- "madhhab_coverage": 0.689,
+ "coverage": 0.987,
+ "madhhab_coverage": 0.691,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 115,
+ "ikhtilaf_matching_madhhab": 124,
  "gaps_open": 6,
  "revisited": 37,
  "revisit_queue": [],
@@ -268,6 +268,28 @@
   },
   "daman_without_qabd": {
    "derivable": 2
+  },
+  "disposal_over_anothers_right": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "disposal_before_qabd_debt": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 2
+  },
+  "concurrent_condition": {
+   "genuine_ikhtilaf": 6
+  },
+  "desisting_at_once": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "deputy_of_qadi": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "removal_before_knowledge": {
+   "genuine_ikhtilaf": 3
   },
   "excess_in_following": {
    "genuine_ikhtilaf": 4
