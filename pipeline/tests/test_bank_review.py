@@ -230,3 +230,22 @@ def test_english_vote_claims_negations_first():
     assert en_vote("You must not sell it.") == "haram"
     assert en_vote("It is not obligatory to repeat it.") is None
     assert en_vote("It is not recommended, but it is permissible.") == "mubah"
+# ── Round 5 (act-relative): compare rulings only on the same act and addressee ─
+def test_r5_opposite_acts_by_meaning_are_read_through_sigma():
+    r = review(lab("wajib", "بل يجب ان يعدل بين اولاده فلا يجوز له تفضيل بعضهم .", "يجب"))
+    assert (r["class"], r["set"]) == ("confirmed", ["wajib"])
+
+
+def test_r5_different_addressees_are_not_compared():
+    r = review(lab("wajib", "فاما الختان فواجب على الرجال ومكرمة في حق النساء وليس بواجب عليهن .", "واجب"))
+    assert r["class"] == "confirmed"
+
+
+def test_r5_the_same_act_still_clashes():
+    assert review(lab("haram", "هو واجب حرام .", "واجب"))["class"] == "conflict"
+
+
+def test_a_ruling_of_an_earlier_sharia_is_not_ours():
+    assert roles("كانت صناعة التماثيل جائزة في شريعة سليمان فانها محرمة في شرعنا")[0] == ("جائزة", "prior_law")
+    r = review(lab("mubah", "وكانت هذه الصورة جائزة في حقه غير جائزة في شرعنا .", "جائزة"))
+    assert r["class"] == "misread"

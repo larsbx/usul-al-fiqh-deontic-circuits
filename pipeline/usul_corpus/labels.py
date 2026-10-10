@@ -16,6 +16,8 @@ import re
 from collections import Counter
 from collections.abc import Mapping
 
+from .acts import act_of, stems
+
 HUKM = ("wajib", "mandub", "mubah", "makruh", "haram")
 
 _TASHKEEL = re.compile(r"[ً-ْٰـ]")
@@ -31,7 +33,7 @@ _NEG = r"(?:لا|لم|لن)\s+"
 LEXICON: tuple[tuple[str, str, str], ...] = (
     ("haram", "+", r"لا\s+[يت]جوز"), ("haram", "+", r"لم\s+[يت]جز"), ("haram", "+", _NEG + r"[يت]حل"), ("haram", "+", r"لا\s+يباح"),
     ("haram", "-", _NEG + r"[يت]حرم"), ("haram", "-", r"ليس(?:ت)?\s+(?:بحرام|حراما|بمحرم(?:ة)?|محرما|محرمة)"), ("haram", "-", r"غير\s+محرم(?:ة)?"),
-    ("wajib", "-", _NEG + r"[يت]جب"), ("wajib", "-", r"ليس(?:ت)?\s+بواجب(?:ة)?"),
+    ("wajib", "-", _NEG + r"[يت]جب"), ("wajib", "-", r"ليس(?:ت)?\s+(?:بواجب(?:ة)?|واجبا|واجبة)"),
     ("wajib", "-", _NEG + r"[يت]لزم" + _SUF), ("wajib", "-", r"غير\s+واجب(?:ة)?"),
     ("makruh", "-", _NEG + r"[يت]كره"), ("makruh", "-", r"غير\s+مكروه(?:ة)?"), ("makruh", "-", r"(?:ليس(?:ت)?|ولا|لا)\s+(?:بمكروه(?:ة)?|مكروها|مكروهة)"),
     ("mubah", "+", r"لا\s+حرج"), ("mubah", "+", r"لا\s+باس"), ("mubah", "+", r"لا\s+مانع"),
@@ -118,7 +120,7 @@ def label(rec: Mapping) -> dict:
     domain, chapter = _domain(rec)
     out = {"id": rec["id"], "split": split_of(ref), "domain": domain, "chapter": chapter,
            "hukm": None, "basis": None, "conditional": False, "also": [], "evidence": None,
-           "wad": [], "status": "candidate"}
+           "wad": [], "act": None, "matches_question": None, "status": "candidate"}
     if passages:
         wad_text = hit[1] if hit else passages[0][1]          # validity from the passage the ruling came from
         out["wad"] = list(dict.fromkeys(w for _, _, (w,) in _spans(_WRX, wad_text)))
@@ -126,7 +128,10 @@ def label(rec: Mapping) -> dict:
         basis, text, cs = hit
         first = cs[0]
         also = list(dict.fromkeys(c["hukm"] for c in cs if c["hukm"] != first["hukm"]))
-        out |= {"hukm": first["hukm"], "basis": basis, "also": also,
+        act = act_of(normalize_ar(text), first)
+        question = stems(normalize_ar(f"{rec.get('title') or ''} {rec.get('question') or ''}"))
+        out |= {"hukm": first["hukm"], "basis": basis, "also": also, "act": act,
+                "matches_question": bool(set(act["stems"]) & question),
                 "conditional": bool(also) or bool(_COND.search(text)),
                 "evidence": _evidence(text, first)}
     return out

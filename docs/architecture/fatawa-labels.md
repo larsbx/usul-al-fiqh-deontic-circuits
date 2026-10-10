@@ -92,12 +92,12 @@ Only predications on the act are compared (see *Conflicts* below for what is set
 
 | class | answers | English version agrees |
 |---|---:|---:|
-| confirmed (the predication fixes one status, the candidate's) | 7,956 | 81% (2,723/3,369) |
-| consistent (candidate allowed; the text underdetermines, e.g. jawāz) | 4,617 | 81% (1,663/2,044) |
-| misread (the candidate's own cue is not a ruling on the act) | 1,766 | 71% (533/747) |
-| rejected (candidate excluded) | 5 | 33% (1/3) |
+| confirmed (the predication fixes one status, the candidate's) | 7,957 | 81% (2,724/3,371) |
+| consistent (candidate allowed; the text underdetermines, e.g. jawāz) | 4,624 | 81% (1,666/2,048) |
+| misread (the candidate's own cue is not a ruling on the act) | 1,761 | 71% (532/746) |
+| rejected (candidate excluded) | 3 | 0% (0/1) |
 | ikhtilāf (reported positions, no preference stated) | 1 | 0% (0/1) |
-| conflict (tawaqquf) | 12 | 60% (6/10) |
+| conflict (tawaqquf) | 4 | 75% (3/4) |
 
 80 confirmations are of a label that rules on the *omission* (`act: omission`): «لا يجوز التفريط فيها» is ḥarām of neglect, which is σ of wājib of the act (`RespectsDidd`). They were the bulk of the earlier "rejected" class.
 
@@ -119,15 +119,16 @@ Making the bank a real reviewer needs act-relative readings, i.e. (act, ḥukm, 
 
 ## Conflicts: the bank applied to its own conflicts
 
-A conflict is a predication set the kernel cannot satisfy. `Usul.resolve` ([Taarud.lean](../../formal/lean/Usul/Taarud.lean), after Ibn ʿUthaymīn) orders their resolution: jamʿ ≻ naskh ≻ tarjīḥ ≻ tawaqquf. The reviewer follows that order. Each round adds one principle, and is tested on the corpus sentences that motivated it (`test_bank_review.py`):
+A conflict is a set of predications the kernel cannot satisfy together. `Usul.resolve` ([Taarud.lean](../../formal/lean/Usul/Taarud.lean), after Ibn ʿUthaymīn) orders their resolution: jamʿ ≻ naskh ≻ tarjīḥ ≻ tawaqquf. The reviewer follows that order. Each round adds one principle, and is tested on the corpus sentences that motivated it (`test_bank_review.py`):
 
 | round | principle | conflicts left |
 |---|---|---:|
-| R0 bare reading | every cue is a ruling on one act | 959 |
-| R1 reading | only predications on the act take part: not cues inside another cue's complement, a relative, reason or reported clause («أن يلزم», «التي لا يجوز», «لأن …», «بأنه»); not status words used as ordinary words (after a preposition, attributive «بتجارة مباحة», inside a proof-text); not homographs (مَحْرَم kinsman, مُحْرِم pilgrim); not frames («يجب أن تعلم أن», «لا يلزم منه»), questions or «قد» | 566 |
-| R2 jamʿ via σ | a ruling on the opposite act is the same ruling: H(ḍidd a) = σ(H a) (`Dalala.amr_nahy_didd_of`) | 543 |
-| R3 jamʿ by scope | each predication rules on its own act: «،», «:», «بل», «وإنما», «أما», «ما عدا», «ومنه ما», conditional branches «فإن / وإذا / وإلا», and «و» before a verbal ruling open a new scope; «أو / أم» between statuses is a union | 15 |
-| R4 tarjīḥ | `resolve ⟨none, none, some p⟩ = .tarjih p` when the text prefers p, forward («والصواب أنها …») or backward («… وهو الصحيح»); a reported disagreement without preference is `ikhtilaf` | **13** |
+| R0 bare reading | every cue is a ruling on one act | 951 |
+| R1 reading | only predications on the act take part: not cues inside another cue's complement, a relative, reason or reported clause («أن يلزم», «التي لا يجوز», «لأن …», «بأنه»); not status words used as ordinary words (after a preposition, attributive «بتجارة مباحة», inside a proof-text); not homographs (مَحْرَم kinsman, مُحْرِم pilgrim); not frames («يجب أن تعلم أن», «لا يلزم منه»), questions or «قد» | 565 |
+| R2 jamʿ via σ | a ruling on the opposite act is the same ruling: H(ḍidd a) = σ(H a) (`Dalala.amr_nahy_didd_of`) | 542 |
+| R3 jamʿ by scope | each predication rules on its own act: «،», «:», «بل», «وإنما», «أما», «ما عدا», «ومنه ما», conditional branches «فإن / وإذا / وإلا», and «و» before a verbal ruling open a new scope; «أو / أم» between statuses is a union | 13 |
+| R4 tarjīḥ | `resolve ⟨none, none, some p⟩ = .tarjih p` when the text prefers p, forward («والصواب أنها …») or backward («… وهو الصحيح»); a reported disagreement without preference is `ikhtilaf` | 11 |
+| R5 act | a ruling constrains another only on the same act and addressee (`acts.py`); on the opposite act by meaning («يعدل / تفضيل», «تمتنع / تبقى») through σ; a ruling reported for an earlier Sharīʿa («في شريعة سليمان») is not ours | **5** |
 
 `resolve`'s Python mirror is guarded on all eight stage combinations in `UsulTest/FatawaBank.lean`. Naskh never fires, because fatwa text gives no chronology. `bank_review_report.json` → `conflicts_by_round` reproduces the table.
 
@@ -136,16 +137,31 @@ A conflict is a predication set the kernel cannot satisfy. `Usul.resolve` ([Taar
 - R3: about 55% were two rulings on two different acts in one clause («الغصب محرم ويجب رد المغصوب»).
 - R2: a few percent were one ruling stated on the act and on its opposite («لا يجوز التهاون … بل يجب المحافظة»).
 
-**The 13 that remain, all read by hand:**
+**The 5 that remain, all read by hand:**
 
-| cause | n | what would resolve it |
-|---|---:|---|
-| genuine ikhtilāf, three positions, no preference stated (Eid prayer) | 1 | correctly `ikhtilaf`: the madhhab or a reviewer decides |
-| a different Sharīʿa: «جائزة في شريعة سليمان … محرمة في شرعنا» | 2 | a scope for *sharʿ man qablanā* |
-| opposites by meaning, not by the word ترك: «يعدل / تفضيل», «تمتنع / تبقى» | 3 | an antonym table for σ, i.e. act identity |
-| different subject or addressee: «على الرجال … عليهن», «والتي زارت جهلاً» | 3 | act-relative readings (subject as part of the act) |
-| proof-texts quoted without delimiters («وسلم في مكة : "…"», an athar) | 2 | quotation segmentation |
-| homograph مُحْرِم without a ḥajj word nearby («اغتسل وهو محرم») | 1 | a lexicon |
-| a bare «إنما» marking contrast | 1 | splitting there without breaking reason clauses |
+| cause | n |
+|---|---:|
+| genuine ikhtilāf, three positions, no preference stated (Eid prayer): correctly `ikhtilaf` | 1 |
+| the same act under different qualifiers: stoning before noon vs at night | 1 |
+| homograph مُحْرِم without a ḥajj word nearby («اغتسل وهو محرم») | 1 |
+| an athar quoted without delimiters | 1 |
+| a bare «إنما» marking contrast | 1 |
 
 The bank's verdict stays triage, not gold: it reads the same cues the labeller read. But the conflicts it found were nearly all misreadings, and fixing them is what turned `misread` into a usable signal for flawed labels.
+
+## Act-relative readings (`acts.py`)
+
+Each label records the act its ruling is about and its addressee (`act: {text, stems, addressee}`), the (act, ḥukm) shape of `hukm_classification`:
+- a verbal cue rules on its complement, and its addressee comes right after it: «لا يجوز **للمسلم** أن **يبيع الخمر**»;
+- a nominal cue rules on its subject: «**الغصب** محرم».
+
+Acts are compared by light stems, and opposite acts by a small ḍidd table (`ANTONYMS`). R5 above uses both.
+
+`matches_question` says whether the label's act shares a stem with the question. It is a confidence feature, not a relabelling rule:
+
+| act matches the question | English version agrees |
+|---|---:|
+| yes | 82% (3,238/3,943) |
+| no | 76% (1,688/2,229) |
+
+A prototype that relabelled by question match (taking the ruling whose act best matches the question) lowered English agreement from 82.8% to 79.2%. That comparison is biased, since the English vote also takes the opening ruling. Read by hand, though, the old label was better in 11 of 18 changed answers, the new one in 3, with 4 ties. IslamQA answers open with their verdict, and question words recur throughout the answer. So the label keeps its first ruling and carries the flag.
