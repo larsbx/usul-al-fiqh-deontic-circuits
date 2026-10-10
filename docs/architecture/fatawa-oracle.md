@@ -88,3 +88,41 @@ These numbers are the floor that any real oracle must clear on this fixed split.
 Two directions can clear the floor:
 - **A model that reads the question in depth.** For example, an LLM fine-tuned or prompted on the weighted set. Its output stays a candidate, checked by the bank.
 - **The kernel itself.** Encode each case's facts (act, addressee, conditions) as the takhrīj encoders do, and let `Usul` derive the ruling. That is the deontic-circuit oracle the project is building, with this corpus as its test bench.
+
+## Kernel oracle: takhrīj over IslamQA (`make fatawa-takhrij`)
+
+The kernel route treats IslamQA as a new takhrīj tranche of *modern* furūʿ: fatwās that fall under the bank's existing encoders.
+- Each case is annotated with the facts the encoder takes and the ruling the answer states, plus the answer's own words for it (`quote`).
+- The kernel computes its own ruling, and the case is classed as in [takhrij.md](takhrij.md).
+- `fatawa_takhrij.check` runs takhrīj's `check_case` and verifies that the answer exists and contains the quote verbatim.
+- [`UsulTest/FatawaTakhrij.lean`](../../formal/lean/UsulTest/FatawaTakhrij.lean) guards every derivable and ikhtilāf case (`==`) and every encoding error (`!=`).
+
+**Tranche 1** ([`corpus/fatawa/takhrij/islamqa_tranche1.json`](../../corpus/fatawa/takhrij/islamqa_tranche1.json)): 123 cases from 53 answers, retrieved by keyword and annotated LLM-assisted, one agent per encoder. Status `candidate`, not human-reviewed. A hand reading of 19 cases found 17 sound. Of the two fixed, one was decided under another encoder (`home`) and one was not a case.
+
+| encoder | derivable | ikhtilāf | encoding error | missing fact | missing rule | coverage |
+|---|---:|---:|---:|---:|---:|---:|
+| `asl_zahir` | 24 | 0 | 0 | 1 | 2 | 24/27 |
+| `trust_loss` | 18 | 0 | 0 | 1 | 2 | 18/21 |
+| `unknown_owner` | 11 | 1 | 0 | 4 | 1 | 12/17 |
+| `luqata` | 10 | 1 | 3 | 12 | 4 | 11/30 |
+| `itlaf` | 0 | 0 | 0 | 11 | 16 | 0/27 |
+
+Overall coverage 0.533; 68 Lean guards.
+
+**What the modern cases say about the bank**
+- **Doubt and certainty (`asl_zahir`) carries over almost whole.** «اليقين لا يزول بالشك», waswās, a felt wetness put down to the water: 24 of 27 are derived.
+  - The rakʿa-count case (islamqa.23424.f002) follows preponderant belief, «ولو بالنظر إلى من بجواره», on equal grades with an external sign. It is derived only through the IQ-20 refinement (ties go to the indicator), so modern evidence now supports that refinement.
+- **Trust liability (`trust_loss`) carries over:** deposits, muḍāraba banks, a seller holding sold goods.
+  - Two gaps: a current account is a *loan*, a hand of guarantee that is not wrongful (`rule:qard_transfers_ownership`), and something without legal value (`fact:mal_mutaqawwam`).
+- **Lost property (`luqata`) has a real encoding error.** For a find in the Ḥaram the text says it is never owned and is announced forever or handed to the authorities. The kernel's not-ownable branch gives charity after the year, a position neither side holds. That happens in 3 cases (4046.f002, 4050.f001, 191459.f001). The encoder needs a "never owned: keep holding" outcome.
+  - The other gaps are modern-practical: trivial finds (`fact:trivial` ×5), animals (`fact:animal_kind`), buried treasure (`rule:rikaz` ×4).
+- **Unknown owner carries over**, with one telling ikhtilāf (104241.f002). A bribe given to get what was not the payer's right goes to the poor *even though the payer is known*: Ibn Taymiyya and Ibn al-Qayyim, adopted by IslamQA. The kernel takes the other reported position (return it to the owner): the deciding fact is the illicit exchange, which the encoder does not see.
+- **Damage (`itlaf`) does not carry over at all.** The bank's rule turns on *purpose*: destroying for one's own benefit versus repelling the thing's harm. Modern cases are accidents with no purpose: car crashes, medical error, breakage. They turn on fault (`fact:negligence` ×10), direct versus indirect causation (`rule:mubashara_tasabbub` ×9), physician liability, and whether a later death follows from the injury (`rule:sirayat_al_jinaya`).
+
+**The gap ledger is the agenda for the next encoders**, ordered by how many modern cases each would open:
+1. negligence + mubāshara/tasabbub (19);
+2. trivial / animal finds (9);
+3. rikāz (4);
+4. the Ḥaram luqaṭa outcome (3 encoding errors).
+
+As in M4, nothing here patches a reading; changing one is a review decision.
