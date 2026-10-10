@@ -718,6 +718,7 @@ text_ruling('islamqa.126387.f001', charity).
 % oracle gap: The text permits charity, handing it to the officials, or announcing it, and never says he may keep it, unlike 126502.f001 with the same facts; the facts carry no distinction between the two answers.
 fixture_expectation(agrees('islamqa.126387.f001'), query(agrees('islamqa.126387.f001')), expect_false).
 fixture_premise(agrees('islamqa.126387.f001'), query(text_ruling('islamqa.126387.f001', _))).
+fixture_premise(agrees('islamqa.126387.f001'), query(oracle('islamqa.126387.f001', _, _))).
 
 encoder('islamqa.126502.f001', luqata).
 fact('islamqa.126502.f001', animal, none).
@@ -1178,6 +1179,7 @@ text_ruling('islamqa.107436.f001', publicInterest).
 % oracle gap: Public money spent on public-interest channels without asking whether the paying body can take it back; with the state as an identifiable owner, the oracle returns it to the owner, as 260724.f001's text does.
 fixture_expectation(agrees('islamqa.107436.f001'), query(agrees('islamqa.107436.f001')), expect_false).
 fixture_premise(agrees('islamqa.107436.f001'), query(text_ruling('islamqa.107436.f001', _))).
+fixture_premise(agrees('islamqa.107436.f001'), query(oracle('islamqa.107436.f001', _, _))).
 
 encoder('islamqa.179911.f001', unknown_owner).
 encoder_fact('islamqa.179911.f001', owner_identifiable, true).
@@ -1286,6 +1288,7 @@ text_ruling('islamqa.287215.f002', keepForOwner).
 % oracle gap: The text permits a choice: hold her share for her or give it in charity on her behalf. A ruling records one option; the oracle gives the charity route (publicInterest).
 fixture_expectation(agrees('islamqa.287215.f002'), query(agrees('islamqa.287215.f002')), expect_false).
 fixture_premise(agrees('islamqa.287215.f002'), query(text_ruling('islamqa.287215.f002', _))).
+fixture_premise(agrees('islamqa.287215.f002'), query(oracle('islamqa.287215.f002', _, _))).
 
 encoder('islamqa.287215.f003', unknown_owner).
 fact('islamqa.287215.f003', illicit_exchange, false).

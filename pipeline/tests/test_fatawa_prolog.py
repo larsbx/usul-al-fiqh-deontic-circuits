@@ -46,6 +46,7 @@ def test_vectors_bank_agreement_and_recorded_gaps():
     pl = fatawa_prolog.prolog_file([r | {"gap": "a choice the schema cannot hold"}])
     assert f"fixture_expectation(agrees({c}), query(agrees({c})), expect_false)." in pl
     assert f"fixture_premise(agrees({c}), query(text_ruling({c}, _)))." in pl
+    assert f"fixture_premise(agrees({c}), query(oracle({c}, _, _)))." in pl
 
 
 def test_committed_cases_are_generated():

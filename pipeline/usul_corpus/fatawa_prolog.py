@@ -8,7 +8,8 @@ with two kinds of fixture vector per case:
 
     bank(C)    the Prolog bank reproduces the Python/Lean kernel on C's encoder facts
     agrees(C)  the oracle's ruling is the text's; expect_false for a case the
-               facts file records as an ``oracle_gap`` (with its reason)
+               facts file records as an ``oracle_gap`` (with its reason), on
+               the premise that the oracle answers it at all
 
 The gap ledger is written by hand: a disagreement is either fixed in the rules
 or recorded there, never absorbed silently.
@@ -89,6 +90,7 @@ def prolog_file(records: list[dict]) -> str:
             lines.append(f"% oracle gap: {r['gap']}")
             lines.append(f"fixture_expectation(agrees({c}), query(agrees({c})), expect_false).")
             lines.append(f"fixture_premise(agrees({c}), query(text_ruling({c}, _))).")
+            lines.append(f"fixture_premise(agrees({c}), query(oracle({c}, _, _))).")
         else:
             lines.append(f"fixture_expectation(agrees({c}), query(agrees({c})), expect_true).")
     return "\n".join(lines) + "\n"
