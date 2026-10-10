@@ -5,4 +5,5 @@ import UsulTest.TakhrijMirror
 import UsulTest.Takhrij
 import UsulTest.M8Tranche3
 import UsulTest.CommandSchemata
+import UsulTest.Reconcile
 import UsulTest.FatawaBank

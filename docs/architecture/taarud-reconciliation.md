@@ -1,0 +1,120 @@
+# Reconciliation: the bank's taʿāruḍ procedure applied to its own furūʿ
+
+The bank's kernel already has a procedure for conflicting adilla: `Usul.resolve` (`formal/lean/Usul/Taarud.lean`), after Ibn ʿUthaymīn. It tries jamʿ first, then naskh, then tarjīḥ, and suspends judgement (tawaqquf) when all three fail. `Usul.Reconcile` (`formal/lean/Usul/Reconcile.lean`) points that procedure at the bank itself, so the bank works through its apparent contradictions by its own rule rather than by an outside judgement.
+
+## What counts as an apparent contradiction
+
+An **apparent contradiction** is an ikhtilāf farʿ where the reading does not land on the madhhab's marked side (`matches_madhhab` is false). There are two adilla in play:
+
+- the reading, which is the qāʿida as formalised;
+- the reported positions on that farʿ.
+
+All of them sit in `corpus/reconciliation/ledger.json`. When a new tranche adds one, `reconcile.check` fails until it gets a ledger entry, and `python -m usul_corpus reconcile --draft` proposes grades for the reviewer to correct.
+
+## The four stages
+
+`reconcile jam naskh ps = resolve ⟨jam, naskh, prevail ps⟩`
+
+| Stage | Offered when | Checked by |
+|---|---|---|
+| jamʿ | The source cites a farq. The case is re-encoded under a refinement whose dossier entry names a conservativity theorem over the earlier reading. | Python checks that every farʿ the refinement moves away from the earlier reading lands on its prevailing side, and that at least one farʿ moves. Lean checks the theorem and the re-encoded guards. |
+| naskh | A later riwāya or a retraction (rujūʿ) with reported chronology. | The ledger's `naskh.ref`. |
+| tarjīḥ | Some ruling's graded support strictly exceeds every other ruling's. | `prevail`, which carries `prevail_mem` (it never invents a ruling) and `prevail_unanimous`. |
+| tawaqquf | Every earlier stage fails. | `reconcile_tawaqquf_iff`. |
+
+**Grades (`Usul.Reconcile.Grade`), strongest first.** The first five are the annotation convention's marked sides (`Grade.marked`):
+
+1. **taṣḥīḥ:** the aṣḥāb label a position «المذهب», «المشهور», «الأشهر» or «الصحيح».
+2. **naṣṣ:** a riwāya or a manṣūṣ of Aḥmad.
+3. **ẓāhir:** the ẓāhir of Aḥmad's words.
+4. **qiyās:** qiyās al-madhhab, or qiyās al-manṣūṣ.
+5. **jazm:** the aṣḥāb at large: «الأصحاب», most of them, or the ẓāhir of the aṣḥāb.
+6. **aṣḥāb:** one named companion's choice. This includes an author's own «الأظهر» or «الصواب»: an author weighing the evidence is not labelling the madhhab.
+7. **takhrīj:** a takhrīj or an iḥtimāl.
+8. **wajh:** a bare wajh.
+
+**Tarjīḥ.** Each position lists the distinct grades of the people who hold it. Positions with the same ruling pool their grades, and a ruling's support is its pooled grades sorted strongest first. Supports are compared lexicographically, so a weaker grade never outweighs a stronger one, however many hold it. When two supports share every grade, the longer one wins, following «الأكثرون». Named companions do not count individually, so two of them against one is still a tie.
+
+**Lean is the authority.** `UsulTest/Reconcile.lean` holds one generated guard per entry, so the Python mirror cannot drift from `Usul.Reconcile.reconcile`. A test also pins the grade ranks to the Lean definition.
+
+## Imported evidence: the later taṣḥīḥ
+
+Ibn Rajab and Ibn al-Laḥḥām often report a dispute without marking the madhhab. The bank therefore imports the works written to settle exactly that question. All of them were already registered in `corpus/registry.json`, but they had not been fetched before this pass.
+
+| Kind of work | Works used |
+|---|---|
+| Taṣḥīḥ | al-Mardāwī's *al-Inṣāf* and *Taṣḥīḥ al-Furūʿ* (with Ibn Mufliḥ's *al-Furūʿ*) |
+| The later muʿtamad | *al-Muntahā* and *al-Iqnāʿ*, with al-Buhūtī's *Sharḥ al-Muntahā* and *Kashshāf al-Qināʿ* |
+| Other furūʿ works | *al-Mubdiʿ*, *al-Mughnī*, *al-Kāfī*, *al-Sharḥ al-Kabīr* |
+| Uṣūl, for Ibn al-Laḥḥām's masāʾil | *al-Taḥbīr*, Ibn Mufliḥ's *Uṣūl*, *Sharḥ al-Kawkab al-Munīr* |
+
+**The evidence item.** Each item in a ledger entry's `evidence` adds one graded holder to one listed position. It records:
+- a `src:` locator and a verbatim excerpt;
+- the excerpt is checked letter by letter against the pinned witness (`test_evidence_is_verbatim`, skipped where the witness is not cached), and it stays within the witness's excerpt limit.
+
+**How evidence is graded.** The grades are the same as above:
+
+| What the source says | Grade |
+|---|---|
+| «الصحيح من المذهب», «المذهب», «الأصح», or al-Mardāwī's taṣḥīḥ | taṣḥīḥ |
+| «وعليه جماهير الأصحاب», or the decisive statement of a muʿtamad matn or sharḥ | jazm |
+| A riwāya not already listed | naṣṣ |
+| One author's choice | aṣḥāb |
+
+Some evidence does not speak to the farʿ itself, and is graded lower:
+- A taṣḥīḥ of the farʿ's premise, of a general rule, or of a cognate masʾala is graded **qiyās**: the madhhab applied to the farʿ, not a ruling on it.
+- A ruling only by implication or on a parallel masʾala is graded **takhrīj**.
+- Evidence about different facts is dropped (31.f004 concerns a missed vow, not a corrupted one). So is evidence that matches no listed position.
+- A source never counts twice for one position, and a holder already listed is not added again.
+
+**What was found.** The later works treat 113 of the 125 contradictions not resolved by jamʿ, and 321 evidence items were imported. Twelve were not found: 16.f005, 25.f000, 25.f002, 45.f005, 65.f006, 68.f003, 133.f007, 133.f014, 133.f020, 159.f032, 160.f035, and 31.f004 (dropped). Each finding's reasoning is kept in the item's `note`.
+
+## Results
+
+| Stage | Ibn Rajab's reports alone | With the later taṣḥīḥ |
+|---|---|---|
+| jamʿ | 3 | 3 |
+| tarjīḥ for the reading | 29 | 52 |
+| tarjīḥ against the reading (residue) | 25 | 67 |
+| tawaqquf | 71 | 6 |
+
+The later works settle 65 of the 71 suspended cases. They mostly settle them against the reading, because the readings follow the qāʿida while the madhhab often follows its own exceptions.
+
+### First pass, before the import (Ibn Rajab's reports alone)
+
+
+| Stage | Entries | Standing |
+|---|---|---|
+| jamʿ | 3 | for the reading |
+| tarjīḥ | 54 | 29 for the reading, 25 against |
+| tawaqquf | 71 | — |
+
+- **The one jamʿ is qāʿida 37 (`successive_by_binding`).**
+  - The tranche-6 reading let the later contract always govern. That ran against Majd's ẓāhir of Aḥmad on the pledge used with permission (37.f000) and against Aḥmad's riwāya on the pledge with a void condition (37.f006).
+  - Abū al-Barakāt's own farq is the jamʿ: «ويسقط ضمان العارية لأنها ليست لازمة، وعقد هذه الأمانة لازم» (37.f003). Under it, the later contract governs where it binds, or where the earlier one did not.
+  - Two theorems show the refinement is the old reading on every farʿ where that holds: `laterBindingGoverns_conservative` and `laterBindingGoverns_unbound_earlier`. So 37.f002–f005 keep their rulings.
+  - 37.f000 and 37.f006 move to the higher-graded side.
+  - 37.f001 (the deposit) stays liable, and Majd's own «وفرق صاحب المحرر بينهما» separates it from the pledge.
+  - Madhhab coverage rises from 0.642 to 0.647.
+- **The 25 residues are the refinement worklist** (`corpus/reconciliation/report.json`, `worklist`). These are furūʿ where tarjīḥ goes against the reading, grouped by encoder. The largest groups:
+  - `lots` (7): the manṣūṣ and the mashhūr exclude lots where the reading allows them.
+  - `asl_zahir` (3) and `tadakhul` (3): the mashhūra riwāya against the reading.
+  - `words_out_of_nature` (2): qāʿida 38, where the madhhab follows the wording. No farq is cited there, so no jamʿ is possible, and the residue stands as the record.
+- **Nine reviews** (`review`): tarjīḥ gives the reading a marked side while the annotation says no madhhab matches. Examples are the naṣṣ of Aḥmad against a takhrīj (75.f005, 75.f007) and al-Talkhīṣ's qiyās al-madhhab (133.f018). These are questions for the human reviewer. Annotations are never rewritten from here.
+- **No naskh yet.** None of the annotated paragraphs reports the chronology of a retraction.
+
+### The refinement worklist after the import
+
+The residues against each reading (`report.json` → `worklist`) are where the readings need the next round of refinement:
+
+| Encoder | Residues / cases | The madhhab, per the later taṣḥīḥ |
+|---|---|---|
+| `lots` | 12 / 47 | Lots are excluded where the manṣūṣ or another rule decides: annulment by the ḥākim, the heirs' choice, the wife's word, loss of lineage, nothing binding |
+| `asl_zahir` | 12 / 40 | The aṣl prevails over a ẓāhir of equal grade: street mud, unbelievers' clothes, the count of rakʿas and circuits, the husband's word |
+| `unknown_condition` | 6 / 11 | A disposal is valid when its condition held in fact: «العبرة بما في نفس الأمر» |
+| `substitute` | 5 / 7 | Kaffārāt are judged by the state at obligation |
+| `tadakhul` | 4 / 15 | The mashhūra on vows; the single takbīr does not open the prayer |
+
+`review` lists the 48 cases where the reading now holds the prevailing marked side while the annotation says no madhhab matches. These are for the human reviewer to re-annotate. Nothing is rewritten here.
+
+Everything here has status `candidate`. The grades are a reading of the annotated paragraph. A resolution is "derivable under the encoding", never a fatwā.

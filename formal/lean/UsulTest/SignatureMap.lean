@@ -424,6 +424,10 @@ import Usul
 #check @Usul.Refinements.pardonOfSpreadValid
 #check @Usul.Refinements.heirs_right_is_q65
 #check @Usul.Refinements.countsAsMet
+#check @Usul.Refinements.laterBindingGoverns
+#check @Usul.Refinements.laterBindingGoverns_conservative
+#check @Usul.Refinements.laterBindingGoverns_unbound_earlier
+#check @Usul.Refinements.binding_pledge_survives
 #check @Usul.Hukm.Mode
 #check @Usul.Hukm.mode
 #check @Usul.Hukm.mode_binding_injective

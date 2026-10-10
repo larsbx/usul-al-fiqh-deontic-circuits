@@ -5,6 +5,7 @@
     python -m usul_corpus validate
     python -m usul_corpus signature   # regenerate the Lean Σ-coverage check
     python -m usul_corpus takhrij     # regenerate the takhrīj guards and report
+    python -m usul_corpus reconcile   # resolve apparent contradictions (ledger → Lean guards, report)
     python -m usul_corpus m8-worklist [--check]  # reconcile committed M8 scope
     python -m usul_corpus m5-commands [--fetch-source]  # replay candidate capability receipts
     python -m usul_corpus docs        # render the dossier and glossary pages from corpus/dossier
@@ -275,6 +276,23 @@ def cmd_takhrij(_: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_reconcile(args: argparse.Namespace) -> int:
+    """Run every apparent contradiction through the kernel's taʿāruḍ procedure."""
+    from . import reconcile, takhrij
+    cases, ledger = takhrij.load(CORPUS), reconcile.load(CORPUS)
+    if args.draft:
+        print(json.dumps(reconcile.draft(cases, ledger), ensure_ascii=False, indent=1))
+        return 0
+    if errs := reconcile.check(cases, ledger, _load(DOSSIER)):
+        print("\n".join(errs), file=sys.stderr)
+        return 1
+    (SIGNATURE_LEAN.parent / "Reconcile.lean").write_text(reconcile.lean_file(cases, ledger), encoding="utf-8")
+    rep = reconcile.report(cases, ledger)
+    _dump(CORPUS / reconcile.REPORT, rep)
+    print(json.dumps({k: rep[k] for k in ("entries", "stages", "standing")}, ensure_ascii=False))
+    return 0
+
+
 def cmd_m8_worklist(args: argparse.Namespace) -> int:
     from .m8_worklist import OUTPUT, render, scoped_documents
     path = CORPUS / OUTPUT
@@ -480,6 +498,9 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("validate").set_defaults(run=cmd_validate)
     sub.add_parser("signature").set_defaults(run=cmd_signature)
     sub.add_parser("takhrij").set_defaults(run=cmd_takhrij)
+    rc = sub.add_parser("reconcile", help="resolve the bank's apparent contradictions by its own taʿāruḍ procedure")
+    rc.add_argument("--draft", action="store_true", help="print draft ledger entries for unledgered contradictions")
+    rc.set_defaults(run=cmd_reconcile)
     m = sub.add_parser("m8-worklist")
     m.add_argument("--check", action="store_true")
     m.set_defaults(run=cmd_m8_worklist)

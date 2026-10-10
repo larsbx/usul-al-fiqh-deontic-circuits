@@ -768,3 +768,35 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Lean:** `Usul.Refinements.pardonOfSpreadValid`, `Usul.Refinements.heirs_right_is_q65`, `Usul.Refinements.countsAsMet`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="successive_by_binding"></a>
+
+## The later contract governs where it binds
+
+**Terms:** [al-jamʿ](../glossary.md#jam), [al-farq](../glossary.md#farq), [al-taʿāruḍ](../glossary.md#taarud), [al-ḍamān](../glossary.md#daman), [al-amāna (al-maḥḍa wa'l-mutaḍammina)](../glossary.md#amana)  
+**Closes:** `rule:successive_by_binding`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037`: Ibn Rajab, qāʿida 37: successive contracts on one thing and how their rulings interlock; the tranche-6 reading let the later contract always govern.
+  > في توارد العقود المختلفة بعضها على بعض، وتداخل أحكامها وتندرج تحتها صور: منها: إذا رهنه شيئا ثم أذن له في الانتفاع به، فهل يصير عارية حالة الانتفاع أم لا؟ قال القاضي في خلافه، وابن عقيل في نظرياته، وصاحب المغني والتلخيص: يصير مضمونا بالانتفاع لأن ذلك حقيقة العارية، وأورد ابن عقيل في نظرياته في وقت ضمانه احتمالين: أحدهما: أنه لا يصير مضمونا بدون الانتفاع والثاني: يصير مضمونا بمجرد القبض إذا قبضه عل
+
+**Conditions**
+
+1. two contracts (or a hand and a contract) succeed one another on one thing
+2. the later binds, or the earlier did not
+
+**Texts**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f003`: Abū al-Barakāt: «قياس المذهب صحته ويسقط ضمان العارية لأنها ليست لازمة، وعقد هذه الأمانة لازم»: the binding later contract displaces the non-binding earlier one.
+  > لو أعاره شيئا ثم رهنه عنده. فقال أبو البركات في الشرح: قياس المذهب صحته ويسقط ضمان العارية لأنها ليست لازمة، وعقد هذه الأمانة لازم، ثم أخذه من كلام الإمام أحمد في ورود عقد الإعارة على الراهن كما سبق، ويتخرج في هذه المسألة ما في تلك.
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001`: The deposit used with permission: «وفرق صاحب المحرر بينهما», deposit and loan being alike non-binding («ولا اختلاف هاهنا بين العقدين في الجواز»).
+  > إذا أودعه شيئا ثم أذن له في الانتفاع به، فقال القاضي في خلافه وابن عقيل في نظرياته وصاحب التلخيص: يصير مضمونا حالة الانتفاع لمصيره عارية حينئذ قال ابن عقيل: ولا يضمن بالقبض قبل الانتفاع هاهنا لأنه لم يمسكه لمنفعة نفسه منفردا بل لمنفعته ومنفعة مالكه، بخلاف الرهن. ومن المتأخرين من قال: ظاهر كلام أحمد أنه لا يصير مضمونا أيضا كالرهن، وفرق صاحب المحرر بينهما، ولا اختلاف هاهنا بين العقدين في الجواز إلا 
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f006`: Aḥmad's riwāya: the void condition «يصير وجوده كعدمه», so the binding pledge stands.
+  > لو قال الراهن للمرتهن: إن جئتك بحقك إلى وقت كذا وإلا فالرهن لك بالدين وقبل ذلك فهو أمانة عنده إلى ذلك الوقت، ثم يصير مضمونا ; لأن قبضه صار بعقد فاسد ذكره القاضي وابن عقيل، باللآلي عن أحمد في رواية محمد بن الحسن بن هارون أنه لا يضمنه بحال ذكره القاضي في الخلاف ; لأن الشرط يفسد فيصير وجوده كعدمه.
+
+**Rationale.** The reconciliation ledger found the reading against Majd's ẓāhir of Aḥmad on the pledge used with permission (37.f000) and against Aḥmad's riwāya on the pledge with a void condition (37.f006). Abū al-Barakāt's own farq in 37.f003 is the jamʿ: a non-binding permission cannot undo a binding pledge. The refinement is the old reading wherever the later contract binds or the earlier did not, so every derivable farʿ of the qāʿida keeps its ruling, and the two contradictions resolve to the higher-graded side.
+
+**Lean:** `Usul.Refinements.laterBindingGoverns`, `Usul.Refinements.laterBindingGoverns_conservative`, `Usul.Refinements.laterBindingGoverns_unbound_earlier`, `Usul.Refinements.binding_pledge_survives`  
+**Conservative over the earlier reading:** `Usul.Refinements.laterBindingGoverns_conservative`

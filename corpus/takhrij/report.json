@@ -1,16 +1,16 @@
 {
- "total": 351,
+ "total": 375,
  "classes": {
-  "derivable": 146,
-  "genuine_ikhtilaf": 198,
+  "derivable": 153,
+  "genuine_ikhtilaf": 215,
   "missing_fact": 1,
   "missing_rule": 5,
   "segmentation_error": 1
  },
- "coverage": 0.983,
- "madhhab_coverage": 0.657,
+ "coverage": 0.984,
+ "madhhab_coverage": 0.647,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 84,
+ "ikhtilaf_matching_madhhab": 89,
  "gaps_open": 6,
  "revisited": 37,
  "revisit_queue": [],
@@ -215,6 +215,25 @@
   "manumission_spread": {
    "derivable": 1,
    "genuine_ikhtilaf": 2
+  },
+  "benefit_then_thing": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 2
+  },
+  "successive_by_binding": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 4
+  },
+  "words_out_of_nature": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 6
+  },
+  "contract_by_kinaya": {
+   "genuine_ikhtilaf": 2
+  },
+  "right_to_substitute": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 3
   },
   "umum_lafz": {
    "derivable": 3

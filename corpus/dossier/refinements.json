@@ -961,6 +961,51 @@
    "closes": [
     "rule:qisas_belongs_to_whom"
    ]
+  },
+  {
+   "id": "successive_by_binding",
+   "title": "The later contract governs where it binds",
+   "terms": [
+    "jam",
+    "farq",
+    "taarud",
+    "daman",
+    "amana"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037",
+    "note": "Ibn Rajab, qāʿida 37: successive contracts on one thing and how their rulings interlock; the tranche-6 reading let the later contract always govern."
+   },
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f003",
+     "note": "Abū al-Barakāt: «قياس المذهب صحته ويسقط ضمان العارية لأنها ليست لازمة، وعقد هذه الأمانة لازم»: the binding later contract displaces the non-binding earlier one."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001",
+     "note": "The deposit used with permission: «وفرق صاحب المحرر بينهما», deposit and loan being alike non-binding («ولا اختلاف هاهنا بين العقدين في الجواز»)."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f006",
+     "note": "Aḥmad's riwāya: the void condition «يصير وجوده كعدمه», so the binding pledge stands."
+    }
+   ],
+   "conditions": [
+    "two contracts (or a hand and a contract) succeed one another on one thing",
+    "the later binds, or the earlier did not"
+   ],
+   "rationale": "The reconciliation ledger found the reading against Majd's ẓāhir of Aḥmad on the pledge used with permission (37.f000) and against Aḥmad's riwāya on the pledge with a void condition (37.f006). Abū al-Barakāt's own farq in 37.f003 is the jamʿ: a non-binding permission cannot undo a binding pledge. The refinement is the old reading wherever the later contract binds or the earlier did not, so every derivable farʿ of the qāʿida keeps its ruling, and the two contradictions resolve to the higher-graded side.",
+   "lean": [
+    "Usul.Refinements.laterBindingGoverns",
+    "Usul.Refinements.laterBindingGoverns_conservative",
+    "Usul.Refinements.laterBindingGoverns_unbound_earlier",
+    "Usul.Refinements.binding_pledge_survives"
+   ],
+   "conservative": "Usul.Refinements.laterBindingGoverns_conservative",
+   "closes": [
+    "rule:successive_by_binding"
+   ],
+   "iq": []
   }
  ]
 }
