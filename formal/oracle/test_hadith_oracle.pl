@@ -44,3 +44,15 @@ test(qati_wins) :- jarh_tadil([_{side: jarh, strength: qati}, _{side: tadil, str
 test(no_qarina) :- jarh_tadil([_{side: jarh, strength: mujmal}, _{side: tadil, strength: mufassar}], none, tawaqquf).
 test(not_mutamad) :- jarh_tadil([_{side: tadil, strength: mujmal, mutamad: false}], none, tawaqquf).
 :- end_tests(jarh_tadil).
+
+:- use_module(tanaqud_oracle).
+
+:- begin_tests(tanaqud).
+test(t1_gods_right_excuses) :- jam(1, [allah, forgetful], false).
+test(t1_human_right_liable) :- jam(1, [adami, forgetful], true).
+test(t6_pure_means) :- jam(6, [true, true], false).
+test(t6_capable_part) :- jam(6, [true, false], true).
+test(t8_doubt_keeps_asl) :- jam(8, [shakk], true).
+test(t8_zann_displaces) :- jam(8, [zann], false).
+test(t10_trustee_on_oath) :- jam(10, [true], yamin).
+:- end_tests(tanaqud).

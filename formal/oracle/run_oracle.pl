@@ -12,19 +12,15 @@
 %    daifa-<n>/lax          … without the objections, lax muʿtabar (D3 alternative)
 %    daifa-<n>/dispute-<k>  … each jarḥ/taʿdīl dispute
 %    seam/<k>               corpus/hadith/irwa_join.json: the ḥujja gate (D4)
+%    tanaqud/<T>/<row>/<side>  corpus/tanaqud/*.json: each truth-table value (first, second, jamʿ)
+%    tanaqud/<T>/clash      the two readings really disagree somewhere (oracle's own model)
+%    tanaqud/<T>/resolution the register's resolution is jamʿ, the first stage
 %
 %  Exit status: 0 all agree; 1 a vector disagrees; 2 nothing could be judged
 %  (no data found, or a load warning or error).
 % =========================================================================
 
-:- use_module(library(http/json)).
-:- use_module(library(apply)).
-:- use_module(library(lists)).
-:- use_module(library(filesex)).
-:- use_module(hadith_oracle).
-
-:- initialization(main, main).
-
+% Declared before any module loads, so a load warning anywhere is caught (exit 2).
 :- dynamic(load_problem/1).
 :- dynamic(result/2).
 
@@ -33,6 +29,16 @@ user:message_hook(Message, Kind, _) :-
     memberchk(Kind, [warning, error]),
     assertz(load_problem(Message)),
     fail.
+
+:- use_module(library(http/json)).
+:- use_module(library(apply)).
+:- use_module(library(lists)).
+:- use_module(library(filesex)).
+:- use_module(hadith_oracle).
+:- use_module(tanaqud_oracle).
+
+:- initialization(main, main).
+
 
 main(Argv) :-
     (   Argv = [Root] -> true
@@ -74,7 +80,23 @@ run(Root) :-
            ( directory_file_path(HDir, F, P), read_json(P, T), forall(member(C, T.cases), daifa_case(C)) )),
     directory_file_path(HDir, 'irwa_join.json', JFile),
     read_json(JFile, J),
-    forall(nth1(K, J.links, L), seam_link(K, L)).
+    forall(nth1(K, J.links, L), seam_link(K, L)),
+    directory_file_path(Root, 'corpus/tanaqud', TDir),
+    directory_files(TDir, TFs0), msort(TFs0, TFs),
+    forall(( member(F, TFs), file_name_extension(_, json, F) ),
+           ( directory_file_path(TDir, F, P), read_json(P, R), forall(member(Pair, R.pairs), tanaqud_pair(Pair)) )).
+
+tanaqud_pair(Pair) :-
+    atom_concat('T-', Num, Pair.id), atom_number(Num, N),
+    forall(nth1(I, Pair.table, Row),
+           forall(member(Side, [first, second, jam]),
+                  ( ( Side == jam -> jam(N, Row.case, Got) ; reading(N, Side, Row.case, Got) ),
+                    format(atom(Name), "tanaqud/~w/~w/~w", [Pair.id, I, Side]),
+                    check(Name, Row.get(Side), Got) ))),
+    (   member(Row, Pair.table), reading(N, first, Row.case, A), reading(N, second, Row.case, B), A \== B
+    ->  Clash = true ; Clash = false ),
+    format(atom(CName), "tanaqud/~w/clash", [Pair.id]), check(CName, true, Clash),
+    format(atom(RName), "tanaqud/~w/resolution", [Pair.id]), check(RName, jam, Pair.resolution).
 
 grounded_vector(V) :-
     grounded(V.n, V.attacks, Got),

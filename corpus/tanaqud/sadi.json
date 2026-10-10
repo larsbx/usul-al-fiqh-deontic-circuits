@@ -63,6 +63,62 @@
     "Usul.Tanaqud.t1",
     "Usul.Tanaqud.t1_clash",
     "Usul.Tanaqud.t1_jam"
+   ],
+   "table": [
+    {
+     "case": [
+      "adami",
+      "deliberate"
+     ],
+     "first": true,
+     "second": true,
+     "jam": true
+    },
+    {
+     "case": [
+      "adami",
+      "ignorant"
+     ],
+     "first": true,
+     "second": false,
+     "jam": true
+    },
+    {
+     "case": [
+      "adami",
+      "forgetful"
+     ],
+     "first": true,
+     "second": false,
+     "jam": true
+    },
+    {
+     "case": [
+      "allah",
+      "deliberate"
+     ],
+     "first": true,
+     "second": true,
+     "jam": true
+    },
+    {
+     "case": [
+      "allah",
+      "ignorant"
+     ],
+     "first": true,
+     "second": false,
+     "jam": false
+    },
+    {
+     "case": [
+      "allah",
+      "forgetful"
+     ],
+     "first": true,
+     "second": false,
+     "jam": false
+    }
    ]
   },
   {
@@ -91,6 +147,24 @@
     "Usul.Tanaqud.t2",
     "Usul.Tanaqud.t2_clash",
     "Usul.Tanaqud.t2_jam"
+   ],
+   "table": [
+    {
+     "case": [
+      true
+     ],
+     "first": "lot",
+     "second": "publicInterest",
+     "jam": "lot"
+    },
+    {
+     "case": [
+      false
+     ],
+     "first": "lot",
+     "second": "publicInterest",
+     "jam": "publicInterest"
+    }
    ]
   },
   {
@@ -119,6 +193,24 @@
     "Usul.Tanaqud.t3",
     "Usul.Tanaqud.t3_clash",
     "Usul.Tanaqud.t3_jam"
+   ],
+   "table": [
+    {
+     "case": [
+      true
+     ],
+     "first": 1,
+     "second": 2,
+     "jam": 1
+    },
+    {
+     "case": [
+      false
+     ],
+     "first": 1,
+     "second": 2,
+     "jam": 2
+    }
    ]
   },
   {
@@ -143,6 +235,24 @@
     "Usul.Tanaqud.t4",
     "Usul.Tanaqud.t4_clash",
     "Usul.Tanaqud.t4_jam"
+   ],
+   "table": [
+    {
+     "case": [
+      true
+     ],
+     "first": true,
+     "second": false,
+     "jam": true
+    },
+    {
+     "case": [
+      false
+     ],
+     "first": true,
+     "second": false,
+     "jam": false
+    }
    ]
   },
   {
@@ -171,6 +281,24 @@
     "Usul.Tanaqud.t5",
     "Usul.Tanaqud.t5_clash",
     "Usul.Tanaqud.t5_jam"
+   ],
+   "table": [
+    {
+     "case": [
+      true
+     ],
+     "first": true,
+     "second": false,
+     "jam": true
+    },
+    {
+     "case": [
+      false
+     ],
+     "first": true,
+     "second": false,
+     "jam": false
+    }
    ]
   },
   {
@@ -197,6 +325,44 @@
     "Usul.Tanaqud.t6_clash",
     "Usul.Tanaqud.t6_jam",
     "Usul.Tanaqud.t6_obligedParts"
+   ],
+   "table": [
+    {
+     "case": [
+      true,
+      false
+     ],
+     "first": true,
+     "second": false,
+     "jam": true
+    },
+    {
+     "case": [
+      true,
+      true
+     ],
+     "first": false,
+     "second": false,
+     "jam": false
+    },
+    {
+     "case": [
+      false,
+      false
+     ],
+     "first": true,
+     "second": false,
+     "jam": false
+    },
+    {
+     "case": [
+      false,
+      true
+     ],
+     "first": false,
+     "second": false,
+     "jam": false
+    }
    ]
   },
   {
@@ -221,6 +387,24 @@
     "Usul.Tanaqud.t7",
     "Usul.Tanaqud.t7_clash",
     "Usul.Tanaqud.t7_jam"
+   ],
+   "table": [
+    {
+     "case": [
+      true
+     ],
+     "first": false,
+     "second": true,
+     "jam": false
+    },
+    {
+     "case": [
+      false
+     ],
+     "first": false,
+     "second": true,
+     "jam": true
+    }
    ]
   },
   {
@@ -245,6 +429,40 @@
     "Usul.Tanaqud.t8",
     "Usul.Tanaqud.t8_clash",
     "Usul.Tanaqud.t8_jam"
+   ],
+   "table": [
+    {
+     "case": [
+      "wahm"
+     ],
+     "first": false,
+     "second": true,
+     "jam": true
+    },
+    {
+     "case": [
+      "shakk"
+     ],
+     "first": false,
+     "second": true,
+     "jam": true
+    },
+    {
+     "case": [
+      "zann"
+     ],
+     "first": false,
+     "second": true,
+     "jam": false
+    },
+    {
+     "case": [
+      "qat"
+     ],
+     "first": false,
+     "second": true,
+     "jam": false
+    }
    ]
   },
   {
@@ -269,6 +487,24 @@
     "Usul.Tanaqud.t9",
     "Usul.Tanaqud.t9_clash",
     "Usul.Tanaqud.t9_exchange_side"
+   ],
+   "table": [
+    {
+     "case": [
+      true
+     ],
+     "first": true,
+     "second": false,
+     "jam": true
+    },
+    {
+     "case": [
+      false
+     ],
+     "first": true,
+     "second": false,
+     "jam": false
+    }
    ]
   },
   {
@@ -293,6 +529,24 @@
     "Usul.Tanaqud.t10",
     "Usul.Tanaqud.t10_clash",
     "Usul.Tanaqud.t10_jam"
+   ],
+   "table": [
+    {
+     "case": [
+      true
+     ],
+     "first": "yamin",
+     "second": "bayyina",
+     "jam": "yamin"
+    },
+    {
+     "case": [
+      false
+     ],
+     "first": "yamin",
+     "second": "bayyina",
+     "jam": "bayyina"
+    }
    ]
   }
  ]

@@ -58,3 +58,19 @@ def test_lean_is_checked_and_complete():
     module = (ROOT / "formal/lean/Usul/Tanaqud.lean").read_text(encoding="utf-8")
     theorems = {f"Usul.Tanaqud.{n}" for n in re.findall(r"^theorem (\S+)", module, re.M)}
     assert theorems <= set(named), theorems - set(named)
+
+
+@pytest.mark.parametrize("p", PAIRS, ids=lambda p: p["id"])
+def test_table_is_a_jam(p):
+    """Each row's jamʿ is one of the two readings, both readings are taken somewhere, and they
+    really disagree on some case (the clash). Lean and the Prolog oracle recompute every row."""
+    rows = p["table"]
+    assert all(r["jam"] in (r["first"], r["second"]) for r in rows)
+    assert any(r["first"] != r["second"] for r in rows)
+    assert {("first" if r["jam"] == r["first"] else "second") for r in rows if r["first"] != r["second"]} == {"first", "second"}
+
+
+def test_table_lean_is_generated():
+    from usul_corpus.__main__ import TANAQUD_LEAN
+    from usul_corpus.tanaqud import table_lean
+    assert TANAQUD_LEAN.read_text(encoding="utf-8") == table_lean(REG)
