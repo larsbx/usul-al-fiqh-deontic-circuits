@@ -47,7 +47,7 @@ Each witness is pinned: the OpenITI ones by commit SHA, the others by Shamela bo
 | 23 classical works on qiyās (8 Ḥanbalī, 13 other madhhabs, Ibn Ḥazm against) | OpenITI, pinned commits | located and fetched; see [`qiyas.md`](qiyas.md#sources) |
 | 49 fatāwā, masāʾil and aḥkām collections cited by Ibn Bāz, Ibn ʿUthaymīn, al-Albānī and al-Saʿdī (52 with three already registered), plus 8 of their own collections as citers (9 with *al-Sharḥ al-Mumtiʿ*) | OpenITI (pinned commits) and Shamela | located and fetched; titles and authors counted; see [`reception.md`](reception.md); mentions labelled for a classifier, see [`mentions.md`](mentions.md) |
 
-**Rights policy.** Full texts are fetched into `.cache/`. The 78 public-domain text witnesses (works with `rights: public_domain_text`, all OpenITI) are also committed under [`corpus/texts`](../../corpus/texts/README.md) via Git LFS, byte-identical to their pinned source; modern texts are never committed. Committed records carry excerpts of at most 400 characters for pre-modern texts and at most 160 characters for modern authors (`records.EXCERPT_LEN`).
+**Rights policy.** Full texts are fetched into `.cache/`. The 89 public-domain text witnesses (works with `rights: public_domain_text`, all OpenITI) are also committed under [`corpus/texts`](../../corpus/texts/README.md) via Git LFS, byte-identical to their pinned source; modern texts are never committed. Committed records carry excerpts of at most 400 characters for pre-modern texts and at most 160 characters for modern authors (`records.EXCERPT_LEN`).
 
 ## 2. Rule counts checked against pinned editions (M0 exit)
 
