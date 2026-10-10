@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "al-Saʿdī's furūq, graded by him: one tranche",
+  "type": "object",
+  "required": ["note", "work", "witness", "module", "asl", "lean", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "note": {"type": "string"},
+    "work": {"const": "sadi.qawaid_jamia"},
+    "witness": {"type": "string"},
+    "module": {"type": "string"},
+    "asl": {"$ref": "#/$defs/quote"},
+    "lean": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "items": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "cases_en", "madhhab", "grade", "basis", "author", "grounds", "note"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^F[0-9]{2,3}$"},
+          "cases_en": {"type": "array", "items": {"type": "string"}, "minItems": 2, "maxItems": 2},
+          "madhhab": {"enum": ["apart", "alike"]},
+          "grade": {"enum": ["sahih", "daif", "jamDaif"]},
+          "basis": {"enum": ["maana", "nass", "qaida", "naqd", "no_proof", "no_sound_hadith", "stated"]},
+          "author": {"$ref": "#/$defs/quote"},
+          "grounds": {"type": "array", "items": {"type": "string"}},
+          "note": {"type": "string"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "quote": {"type": "object", "required": ["ref", "excerpt_ar"], "additionalProperties": false,
+      "properties": {"ref": {"type": "string", "pattern": "^src:[a-z0-9-]+#furuq$"}, "excerpt_ar": {"type": "string", "maxLength": 160}}}
+  }
+}

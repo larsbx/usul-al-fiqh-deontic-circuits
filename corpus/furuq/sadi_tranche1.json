@@ -1,0 +1,368 @@
+{
+ "note": "al-Saʿdī, al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa, part two (al-furūq), tranche 1: the items in order from the opening aṣl, none skipped. madhhab: how the fuqahāʾ he answers rule the two masāʾil (apart or alike). grade: his verdict (sahih: a sound farq; daif: a ṣūrī farq, «الحكم فيهما واحد»; jamDaif: wrongly ruled alike). basis: the kind of reason he gives. grounds: theorems of the bank that carry the reason.",
+ "work": "sadi.qawaid_jamia",
+ "witness": "islamhouse-qj-doc",
+ "module": "Usul.Furuq",
+ "asl": {
+  "ref": "src:islamhouse-qj-doc#furuq",
+  "excerpt_ar": "أن الشارع لا يفرق بين المتشابهات من كل وجه، بل لا بد فيها من فوارق معنوية، وأوصاف متفاوتة أوجبت الفرق"
+ },
+ "lean": [
+  "Usul.Furuq.Grade",
+  "Usul.Furuq.Grade.apart",
+  "Usul.Furuq.alike_unless_farq",
+  "Usul.Furuq.farq_is_maana",
+  "Usul.Furuq.suri_farq_idle"
+ ],
+ "items": [
+  {
+   "id": "F01",
+   "cases_en": [
+    "supererogatory prayer seated by one able to stand",
+    "obligatory prayer"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "أن النفل يصح من الجالس القادر على القيام، بخلاف الفرض"
+   },
+   "grounds": [],
+   "note": "«وذلك يعود إلى سهولة النفل والترغيب في الإكثار منه»"
+  },
+  {
+   "id": "F02",
+   "cases_en": [
+    "supererogatory prayer on a mount when travelling",
+    "obligatory prayer"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وأنه يصح على الراحلة في السفر الطويل والقصير"
+   },
+   "grounds": [],
+   "note": "same reason as F01"
+  },
+  {
+   "id": "F03",
+   "cases_en": [
+    "a little drinking in supererogatory prayer",
+    "in obligatory prayer"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ويجوز فيه الشرب اليسير، والفرض بخلاف ذلك، وذلك يعود إلى سهولة النفل والترغيب في الإكثار منه"
+   },
+   "grounds": [],
+   "note": "the reason is stated here, for F01–F03"
+  },
+  {
+   "id": "F04",
+   "cases_en": [
+    "covering a shoulder in obligatory prayer",
+    "in supererogatory prayer"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "no_proof",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وهذا الفرق ضعيف لعدم ثبوت الفرق بينهما في هذا الموضع شرعاً، فإن الأمر بستر أحد المنكبين يعم الفرض والنفل في حق الرجال"
+   },
+   "grounds": [],
+   "note": "alike; he adds that covering the shoulder is takmīl, not wujūb, in both"
+  },
+  {
+   "id": "F05",
+   "cases_en": [
+    "supererogatory prayer inside the Kaʿba",
+    "obligatory prayer inside it"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومنها: تجويز النفل داخل الكعبة دون الفرض، ولكن فيه نظر"
+   },
+   "grounds": [],
+   "note": "«فإنما ثبت في النفل ثبت في الفرض»; the fuqahāʾ's reason (facing away from part of it) holds in the nafl too"
+  },
+  {
+   "id": "F06",
+   "cases_en": [
+    "the muftariḍ behind the mutanaffil (barred)",
+    "the mutanaffil behind the muftariḍ (allowed)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "naqd",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وتعليلهم باختلاف النية موجود في ائتمام المتنفل بالمفترض، والاختلاف المنهي عنه الاختلاف في الأفعال"
+   },
+   "grounds": [
+    "Usul.Furuq.f06_naqd"
+   ],
+   "note": "their ʿilla is present in the case they allow: a naqḍ. The edition's heading reads «المتنفل بالمفترض» for the barred case too"
+  },
+  {
+   "id": "F07",
+   "cases_en": [
+    "breaking off, starting or making up supererogatory prayers when the obligatory is due",
+    "supererogatory prayers otherwise"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: تجويز قطع النفل لحضور الفرض"
+   },
+   "grounds": [],
+   "note": "«فإن القصد من ذلك واحد وهو الاهتمام بالفرائض»"
+  },
+  {
+   "id": "F08",
+   "cases_en": [
+    "the Friday prayer",
+    "the two ʿĪd prayers"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: ما ذكروه في الفرق بين صلاة الجمعة وصلاة العيدين"
+   },
+   "grounds": [],
+   "note": "detailed in his al-Irshād, not here"
+  },
+  {
+   "id": "F09",
+   "cases_en": [
+    "the obligatory fast (intention from the night)",
+    "the supererogatory fast (intention by day)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة بين صيام الفرض والنفل: أن الفرض لا بد له من نية موجودة في ليل الصيام"
+   },
+   "grounds": [],
+   "note": "the supererogatory fast is valid with a daytime intention if nothing breaking the fast was done"
+  },
+  {
+   "id": "F10",
+   "cases_en": [
+    "a supererogatory fast by one owing an obligatory fast",
+    "by one owing none"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومنها: أنه لا يصح صوم النفل ممن عليه فرض الصيام"
+   },
+   "grounds": [],
+   "note": "listed under the sound furūq of fasting"
+  },
+  {
+   "id": "F11",
+   "cases_en": [
+    "fasting the days of tashrīq for the mutamattiʿ without a sacrifice",
+    "for a make-up fast of Ramaḍān"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأن الله عين الثلاثة أن تكون في الحج فوقتها محصور"
+   },
+   "grounds": [],
+   "note": "the three days are fixed by the verse to the ḥajj"
+  },
+  {
+   "id": "F12",
+   "cases_en": [
+    "breaking off a supererogatory ḥajj or ʿumra",
+    "other supererogatory acts"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "فمتى أحرم بالحج أو العمرة وجب عليه الإتمام"
+   },
+   "grounds": [],
+   "note": "once in iḥrām, completion is obligatory"
+  },
+  {
+   "id": "F13",
+   "cases_en": [
+    "shaving or clipping nails in iḥrām out of ignorance or forgetfulness",
+    "clothing, covering the head or perfume out of ignorance or forgetfulness"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "إنما الإتلاف الذي يستوي فيه الأهل وغيره في حقوق الآدميين كإتلاف النفوس والأموال، وهذه الحق فيها لله متمحض"
+   },
+   "grounds": [
+    "Usul.Furuq.f13_alike",
+    "Usul.Tanaqud.t1_jam"
+   ],
+   "note": "«المقصود من الجميع واحد وهو حصول الترفه»; the madhhab's «إتلاف» is the human-rights qayd of T-01"
+  },
+  {
+   "id": "F14",
+   "cases_en": [
+    "intercourse in iḥrām by the excused",
+    "by one not excused"
+   ],
+   "madhhab": "alike",
+   "grade": "jamDaif",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والتفريق بين المعذور وغيره هو الأولى كما اختاره شيخ الإسلام ابن تيمية"
+   },
+   "grounds": [],
+   "note": "the madhhab treats them alike; he prefers distinguishing them, as in the fast and the ḥajj"
+  },
+  {
+   "id": "F15",
+   "cases_en": [
+    "game killed deliberately in iḥrām",
+    "game killed not deliberately"
+   ],
+   "madhhab": "alike",
+   "grade": "jamDaif",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وبه أيضاً يعرف ضعف عدم التفريق بين المتعمد وغير المتعمد في قتل الصيد"
+   },
+   "grounds": [
+    "Usul.Furuq.f15_apart",
+    "Usul.Tanaqud.t1_jam"
+   ],
+   "note": "«مع أن الآية الكريمة نصت على المتعمد نصاً صريحاً»"
+  },
+  {
+   "id": "F16",
+   "cases_en": [
+    "herders and the water-carriers of Zamzam combining the stoning on the last day",
+    "others"
+   ],
+   "madhhab": "alike",
+   "grade": "jamDaif",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "دليل على أن غيرهم لا يساويهم في ذلك"
+   },
+   "grounds": [],
+   "note": "the later Ḥanbalīs allow it to all, «وفيه نظر»"
+  },
+  {
+   "id": "F17",
+   "cases_en": [
+    "a cow in place of a camel in the compensation for game",
+    "in other obligations"
+   ],
+   "madhhab": "alike",
+   "grade": "jamDaif",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "فالصواب في ذلك القول الآخر: وأن جزاء الصيد يتعين فيه المثل لظاهر النص"
+   },
+   "grounds": [],
+   "note": "«ولأن فيه شائبة عقوبة بخلاف بقية الأحكام»"
+  },
+  {
+   "id": "F18",
+   "cases_en": [
+    "omitting a command by forgetfulness or ignorance",
+    "committing a prohibition by forgetfulness or ignorance"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروض الصحيحة الثابتة شرعاً: الفرق بين من ترك المأمور سهواً أو جهلاً، فلا تبرأ الذمة إلا بفعله"
+   },
+   "grounds": [
+    "Usul.Furuq.f18_sahih",
+    "Usul.Sadi.q27_asymmetry"
+   ],
+   "note": "Q27; the madhhab is inconsistent on it («لم يستقر لهم قرار»). The edition reads «الفروض» for «الفروق»"
+  },
+  {
+   "id": "F19",
+   "cases_en": [
+    "water changed by a pure substance put in on purpose",
+    "by one not put in on purpose (its bed or its course)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأنه تفريق بين متماثلين، فكلها قد غيّرها الطاهر تغييراً ممازجاً"
+   },
+   "grounds": [],
+   "note": "«والصحيح: أن الحكم فيهما واحد، وأن الماء باق على طهوريته حتى تغيره النجاسة»"
+  },
+  {
+   "id": "F20",
+   "cases_en": [
+    "the siwāk for one fasting after midday",
+    "before midday"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "no_sound_hadith",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ولم يصح حديث يدل على الفرق"
+   },
+   "grounds": [
+    "Usul.Seam.daif_not_admitted"
+   ],
+   "note": "recommended both before and after; the only proof for the farq is not ṣaḥīḥ, so it fails the ḥadīth gate (D4)"
+  },
+  {
+   "id": "F21",
+   "cases_en": [
+    "a defect in a sold thing (return or compensation)",
+    "a defect in a hired thing (return only)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والصواب: أن الجميع حكمها واحد في الأرش، وفي الرد"
+   },
+   "grounds": [],
+   "note": "Ibn Naṣr Allāh: «والفرق بينهما عسر، وقد تعبنا في الفرق فلم يحصل»"
+  }
+ ]
+}

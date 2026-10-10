@@ -16,4 +16,5 @@ import Usul.Dalala
 import Usul.CommandSchemata
 import Usul.Refinements
 import Usul.Tanaqud
+import Usul.Furuq
 import Usul.Seam

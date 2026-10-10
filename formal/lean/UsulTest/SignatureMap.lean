@@ -370,6 +370,15 @@ import Usul
 #check @Usul.Tanaqud.t10
 #check @Usul.Tanaqud.t10_clash
 #check @Usul.Tanaqud.t10_jam
+#check @Usul.Furuq.Grade
+#check @Usul.Furuq.Grade.apart
+#check @Usul.Furuq.alike_unless_farq
+#check @Usul.Furuq.farq_is_maana
+#check @Usul.Furuq.suri_farq_idle
+#check @Usul.Furuq.f06_naqd
+#check @Usul.Furuq.f13_alike
+#check @Usul.Furuq.f15_apart
+#check @Usul.Furuq.f18_sahih
 #check @Usul.Schema.Factors.qiyas
 #check @Usul.Qiyas.Argument
 #check @Usul.Qiyas.Agrees
