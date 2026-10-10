@@ -1,0 +1,388 @@
+{
+ "note": "al-Saʿdī, al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa, part two (al-furūq), tranche 5: F76–F96 in order after tranche 4, none skipped; conventions as in tranche 1.",
+ "work": "sadi.qawaid_jamia",
+ "witness": "islamhouse-qj-doc",
+ "module": "Usul.Furuq",
+ "asl": {
+  "ref": "src:islamhouse-qj-doc#furuq",
+  "excerpt_ar": "أن الشارع لا يفرق بين المتشابهات من كل وجه، بل لا بد فيها من فوارق معنوية، وأوصاف متفاوتة أوجبت الفرق"
+ },
+ "lean": [
+  "Usul.Furuq.Grade",
+  "Usul.Furuq.Grade.apart",
+  "Usul.Furuq.alike_unless_farq",
+  "Usul.Furuq.farq_is_maana",
+  "Usul.Furuq.suri_farq_idle"
+ ],
+ "items": [
+  {
+   "id": "F76",
+   "cases_en": [
+    "movement in prayer that invalidates (much, continuous, needless) or is disliked (little, needless)",
+    "movement that is permitted or commanded"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: أن الحركة في الصلاة على أربعة أنواع"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F77",
+   "cases_en": [
+    "the opening takbīr and the funeral takbīrs (pillars)",
+    "the latecomer's takbīr for rukūʿ (recommended); the rest (obligations mended by prostration of forgetfulness)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن ذلك أن التكبير في الصلاة ثلاثة أقسام"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F78",
+   "cases_en": [
+    "a black dog, a woman or a donkey passing before one praying (invalidates)",
+    "others passing (diminishes), passing in the crowd of the Sacred Mosque (no harm)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: أن المار بين يدي المصلي على ثلاثة أقسام"
+   },
+   "grounds": [],
+   "note": "«على الصحيح» for the donkey"
+  },
+  {
+   "id": "F79",
+   "cases_en": [
+    "where a follower stands: obligatory and recommended places",
+    "permitted and barred places"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: قسموا موقف المأموم خلف إمامه إلى أربعة أقسام"
+   },
+   "grounds": [],
+   "note": "standing alone to the imām's left is barred «على المذهب»"
+  },
+  {
+   "id": "F80",
+   "cases_en": [
+    "the eight kinds of livestock (zakāt due)",
+    "horses, mules, donkeys, birds (none, unless trade goods)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لكمالها وكمال منافعها، وكثرتها"
+   },
+   "grounds": [],
+   "note": "the Lawgiver's own distinction"
+  },
+  {
+   "id": "F81",
+   "cases_en": [
+    "stored grains and fruits reaching the niṣāb (zakāt due)",
+    "other vegetables and fruits"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لكمال النعمة فيها دون بقية الخضر والفواكه"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F82",
+   "cases_en": [
+    "goods held for trade (zakāt on their value)",
+    "goods held for use"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "دون الأشياء المعدة للقنية المصروفة عن النماء"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F83",
+   "cases_en": [
+    "debts owed by the solvent and willing (zakāt due)",
+    "debts owed by the insolvent or unrecoverable (none)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأنها مال في الحقيقة، وهي في قوة الموجودة عند الإنسان"
+   },
+   "grounds": [],
+   "note": "«على الصحيح»"
+  },
+  {
+   "id": "F84",
+   "cases_en": [
+    "one given zakāt for his own need (must be poor)",
+    "one given for others' need of him (even if rich)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وكذلك التفريق بين من يعطى من الزكاة لحاجته"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F85",
+   "cases_en": [
+    "dispositions of one coerced without right (void)",
+    "of one coerced with right, to a duty he owes (valid)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: التفريق بين تصرفات المكره بغير حق"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F86",
+   "cases_en": [
+    "acquired property needing measure, weight, count or description (no disposition before delivery; the seller's risk)",
+    "determinate property (disposable before delivery; the buyer's risk)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: الفرق بين الداخل في ملكه الذي يحتاج إلى حق توفية"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F87",
+   "cases_en": [
+    "property with no right of another (no compulsion to maintain)",
+    "property shared or bordering another's (compelled to join in its maintenance)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "فيجبر على مجاراة شريكه فيه كتعمير المشتركات"
+   },
+   "grounds": [
+    "Usul.Muamalat.q30_necessity_compels"
+   ],
+   "note": "Q30"
+  },
+  {
+   "id": "F88",
+   "cases_en": [
+    "guardianship of property (the father alone, then the judge)",
+    "every other guardianship (all agnates)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ما للأقارب من الحنو والشفقة يقتضي أن ولاية المال كغيره من الولايات، بل أولى"
+   },
+   "grounds": [],
+   "note": "their fear for property is met by requiring the guardian to be upright"
+  },
+  {
+   "id": "F89",
+   "cases_en": [
+    "a trustee who took the thing for his own benefit claiming to have returned it (needs proof)",
+    "one who took it for the owner's benefit (believed on oath)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن قبض الشيء لمصلحة صاحبه فهو محسن، وما على المحسنين من سبيل"
+   },
+   "grounds": [
+    "Usul.Muamalat.q26_q43_consistent",
+    "Usul.Muamalat.q26_q43_from_presumption"
+   ],
+   "note": "Q26/Q43; a claim of possible loss is accepted from every trustee"
+  },
+  {
+   "id": "F90",
+   "cases_en": [
+    "paying another's due debt intending to recover it (recovers)",
+    "paying it as a gift (does not)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن ذلك قولهم: من أدى عن غيره ديناً واجباً ناوياً الرجوع، فإنه يرجع"
+   },
+   "grounds": [
+    "Usul.Muamalat.q32_recourse_for_paid",
+    "Usul.Muamalat.q32_gift_no_recourse"
+   ],
+   "note": "Q32"
+  },
+  {
+   "id": "F91",
+   "cases_en": [
+    "hire (binding, a known task, a determinate party)",
+    "a reward contract, juʿāla (revocable, known or unknown task, any party)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: تفريقهم بين الإجارة، والجعالة"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F92",
+   "cases_en": [
+    "pre-emption (lost by any delay after knowing)",
+    "every other right (lost only by word or act of waiver)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "no_sound_hadith",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والأحاديث التي استدلوا بها كلها ضعيفة، لا تقوم بها حجة"
+   },
+   "grounds": [
+    "Usul.Seam.daif_not_admitted"
+   ],
+   "note": "«والصواب: أن الشفعة كغيرها»; «الشفعة لمن واثبها», «الشفعة كحل العقال» fail the ḥadīth gate (D4)"
+  },
+  {
+   "id": "F93",
+   "cases_en": [
+    "finds that may not be picked up (camels and the like), and trifles owned at once",
+    "other property (owned after a year of announcing)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: جعلهم اللقطة ثلاثة أقسام"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F94",
+   "cases_en": [
+    "the child following the father in lineage",
+    "following the mother in freedom, the better parent in religion, the worse in impurity"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "الولد يتبع أباه في النسب"
+   },
+   "grounds": [
+    "Usul.Kulliyyat.q31_each_cause_its_effect"
+   ],
+   "note": "Q31 gives the same example: each cause works its own effect"
+  },
+  {
+   "id": "F95",
+   "cases_en": [
+    "a child before discernment (with the mother)",
+    "after discernment (a boy chooses, a girl with the father)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق: قولهم الطفل قبل التمييز عند أمه"
+   },
+   "grounds": [],
+   "note": "listed without a grade and without objection; «وهذا التقديم إذا كان المقدم أهلاً للحضانة»"
+  },
+  {
+   "id": "F96",
+   "cases_en": [
+    "an agent (uprightness not required)",
+    "a guardian of an orphan or the insane, a waqf administrator (required)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأنها ولاية يجب فيها العمل بالأصلح"
+   },
+   "grounds": [],
+   "note": "likewise in what each may take from the property"
+  }
+ ]
+}
