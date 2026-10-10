@@ -81,8 +81,10 @@
       "excerpt_ar": "\" الحدة تعتري حملة القرآن لعزة القرآن في أجوافهم \". موضوع.",
       "term_ar": "موضوع.",
       "albani": "mawdu",
-      "kernel": "mawdu",
-      "class": "derivable",
+      "kernel": "daifJiddan",
+      "kernel_with_rulings": "mawdu",
+      "args": 3,
+      "class": "qarina",
       "turuq": [
         {
           "madar": "wahb_b_wahb",
@@ -99,7 +101,23 @@
           ]
         }
       ],
-      "note": ""
+      "rulings": [
+        {
+          "arg": 1,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "الذهبي",
+          "said_ar": "ثم سرد له أخبارا ختمها بهذا ثم قال: وهذه أحاديث مكذوبة"
+        },
+        {
+          "arg": 2,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "السيوطي",
+          "said_ar": "ومن الغرائب أن السيوطي أورد حديث معاذ وحديث أنس بلفظيه في \" ذيل الأحاديث الموضوعة \""
+        }
+      ],
+      "note": "al-Dhahabī rules this ḥadīth among Wahb's «أحاديث مكذوبة», and al-Suyūṭī lists it in Dhayl al-Mawḍūʿāt; by the rules alone the waḍḍāʿ route is sāqiṭ (D5)"
     },
     {
       "n": 28,
@@ -107,8 +125,10 @@
       "excerpt_ar": "\" الحدة لا تكون إلا في صالحي أمتي وأبرارها ثم تفيء \". موضوع.",
       "term_ar": "موضوع.",
       "albani": "mawdu",
-      "kernel": "mawdu",
-      "class": "derivable",
+      "kernel": "daifJiddan",
+      "kernel_with_rulings": "mawdu",
+      "args": 3,
+      "class": "qarina",
       "turuq": [
         {
           "madar": "bishr_b_al_husayn",
@@ -129,7 +149,23 @@
           ]
         }
       ],
-      "note": ""
+      "rulings": [
+        {
+          "arg": 1,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "ابن حبان",
+          "said_ar": "وقال ابن حبان: يروي بشر بن الحسين عن نسخة موضوعة"
+        },
+        {
+          "arg": 2,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "السيوطي",
+          "said_ar": "ومن الغرائب أن السيوطي أورد حديث معاذ وحديث أنس بلفظيه في \" ذيل الأحاديث الموضوعة \""
+        }
+      ],
+      "note": "the ḥadīth is in Bishr's forged nuskha («ومنها هذا الحديث كما نقله الذهبي»), and al-Suyūṭī lists it in Dhayl al-Mawḍūʿāt; by the rules alone the kadhdhāb route is sāqiṭ (D5)"
     },
     {
       "n": 29,

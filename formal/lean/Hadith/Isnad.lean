@@ -139,9 +139,10 @@ theorem Isnad.verdict_mono_links {c d : Isnad} (h : Isnad.Weaker p c d) :
   | nil => exact Verdict.le_refl' _
   | cons hx _ ih => exact Verdict.meet_mono hx ih
 
-/-- One kadhdhāb anywhere makes the chain mawḍūʿ. -/
-theorem Isnad.mawdu_of_kadhdhab {c : Isnad} {l : Link} (hl : l ∈ c) (hk : l.rawi = .kadhdhab) :
-    c.verdict p = .mawdu := by
+/-- One kadhdhāb anywhere makes the chain sāqiṭ (the bottom of the scale), not mawḍūʿ: the
+route alone is no finding that the matn is fabricated (decision D5). -/
+theorem Isnad.saqit_of_kadhdhab {c : Isnad} {l : Link} (hl : l ∈ c) (hk : l.rawi = .kadhdhab) :
+    c.verdict p = .daifJiddan := by
   have h := Isnad.verdict_le_link (p := p) hl
   have h' := Link.verdict_le_rawi (p := p) l
   rw [hk] at h'

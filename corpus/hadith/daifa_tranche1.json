@@ -154,8 +154,10 @@
       "excerpt_ar": "(ما ترك عبد شيئا لله لا يتركه إلا لله إلا عوضه منه ما هو خير له فى دينه ودنياه) موضوع بهذا اللفظ.",
       "term_ar": "موضوع بهذا اللفظ.",
       "albani": "mawdu",
-      "kernel": "mawdu",
-      "class": "derivable",
+      "kernel": "daifJiddan",
+      "kernel_with_rulings": "mawdu",
+      "args": 2,
+      "class": "qarina",
       "turuq": [
         {
           "madar": "abd_allah_b_sad_al_raqqi",
@@ -194,7 +196,16 @@
           ]
         }
       ],
-      "note": "weakest link: a waḍḍāʿ. The shorter matn without «في دينه ودنياه» is ṣaḥīḥ, a different claim"
+      "rulings": [
+        {
+          "arg": 1,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "الألباني",
+          "said_ar": "وأقول: أن إسناده موضوع، فإن من دون الزهري لا ذكر لهم في شيء من كتب الحديث غير عبد الله بن سعد الرقي فإنه معروف، ولكن بالكذب"
+        }
+      ],
+      "note": "weakest link: a waḍḍāʿ. The shorter matn without «في دينه ودنياه» is ṣaḥīḥ, a different claim; al-Albānī's own ḥukm bi'l-waḍʿ; its stated ground is the kadhdhāb (al-Raqqī) and the unknowns below al-Zuhrī. By the rules alone the route is sāqiṭ (D5)"
     },
     {
       "n": 6,
@@ -274,8 +285,10 @@
       "excerpt_ar": "\" إن الله يحب أن يرى عبده تعبا في طلب الحلال \". موضوع.",
       "term_ar": "موضوع.",
       "albani": "mawdu",
-      "kernel": "mawdu",
-      "class": "derivable",
+      "kernel": "daifJiddan",
+      "kernel_with_rulings": "mawdu",
+      "args": 2,
+      "class": "qarina",
       "turuq": [
         {
           "madar": "muhammad_b_sahl_al_attar",
@@ -288,7 +301,16 @@
           ]
         }
       ],
-      "note": ""
+      "rulings": [
+        {
+          "arg": 1,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "الألباني",
+          "said_ar": "قلت: وهذا من الأحاديث الموضوعة التي شان بها السيوطي كتابه \" الجامع الصغير \""
+        }
+      ],
+      "note": "al-Albānī's own ḥukm bi'l-waḍʿ; its ground is al-Dāraquṭnī's «يضع الحديث» on Muḥammad b. Sahl. By the rules alone the route is sāqiṭ (D5)"
     },
     {
       "n": 11,
@@ -520,8 +542,10 @@
       "excerpt_ar": "\" صنفان من أمتي إذا صلحا صلح الناس: الأمراء والفقهاء، [وفي رواية: العلماء] \". موضوع.",
       "term_ar": "موضوع.",
       "albani": "mawdu",
-      "kernel": "mawdu",
-      "class": "derivable",
+      "kernel": "daifJiddan",
+      "kernel_with_rulings": "mawdu",
+      "args": 2,
+      "class": "qarina",
       "turuq": [
         {
           "madar": "muhammad_b_ziyad_al_yashkuri",
@@ -542,7 +566,16 @@
           ]
         }
       ],
-      "note": ""
+      "rulings": [
+        {
+          "arg": 1,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "الألباني",
+          "said_ar": "وهذا سند موضوع محمد بن زياد هذا قال أحمد: كذاب أعور يضع الحديث"
+        }
+      ],
+      "note": "al-Albānī's own ḥukm on the isnād; al-ʿIrāqī graded it «سنده ضعيف», and al-Albānī reconciles the two: «إذ أن الموضوع من أنواع الحديث الضعيف». By the rules alone the route is sāqiṭ (D5)"
     }
   ]
 }

@@ -276,8 +276,10 @@
       "excerpt_ar": "\" عليكم بالقرع فإنه يزيد في الدماغ، وعليكم بالعدس فإنه قدس على لسان سبعين نبيا \". موضوع.",
       "term_ar": "موضوع.",
       "albani": "mawdu",
-      "kernel": "mawdu",
-      "class": "derivable",
+      "kernel": "daifJiddan",
+      "kernel_with_rulings": "mawdu",
+      "args": 3,
+      "class": "qarina",
       "turuq": [
         {
           "madar": "amr_b_al_husayn",
@@ -307,7 +309,23 @@
           ]
         }
       ],
-      "note": ""
+      "rulings": [
+        {
+          "arg": 1,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "ابن تيمية",
+          "said_ar": "حديث مكذوب مختلق باتفاق أهل العلم"
+        },
+        {
+          "arg": 2,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "ابن الجوزي",
+          "said_ar": "وذكره ابن الجوزي في \" الموضوعات \" (٢ / ٢٩٤ - ٢٩٥) من عدة طرق وحكم عليه بالوضع"
+        }
+      ],
+      "note": "Ibn Taymiyya («مكذوب مختلق باتفاق أهل العلم») and Ibn al-Jawzī rule it forged; Ibn al-Mubārak's «ولا على لسان نبي واحد» is a matn criterion. By the rules alone the kadhdhāb route is sāqiṭ (D5)"
     },
     {
       "n": 41,
@@ -315,8 +333,8 @@
       "excerpt_ar": "\" من أصاب مالا من نهاوش أذهبه الله في نهابر \". لا يصح.",
       "term_ar": "لا يصح.",
       "albani": "daifJiddan",
-      "kernel": "mawdu",
-      "class": "missing_rule",
+      "kernel": "daifJiddan",
+      "class": "derivable",
       "turuq": [
         {
           "madar": "amr_b_al_husayn",
@@ -339,7 +357,7 @@
           ]
         }
       ],
-      "note": "«لا يصح» bounds the verdict (below ḥasan) without naming a rung; it is mapped by his own gloss «وهذا إسناد ساقط» to the shadīd band. The kernel turns a lone kadhdhāb route into mawḍūʿ (as in #27, #28, #40), but here al-Albānī stops at «ساقط», so the kernel is below his verdict: the first such case. The missing rule is when a kadhdhāb in the isnād makes the matn mawḍūʿ rather than sāqiṭ"
+      "note": "«لا يصح» bounds the verdict below ḥasan; his gloss «وهذا إسناد ساقط» names the bottom of the riwāya scale, which is what the kernel gives a lone kadhdhāb route under D5 (`Isnad.saqit_of_kadhdhab`). Unlike #5, #10, #16, #17, al-Albānī makes no ḥukm bi'l-waḍʿ here, so the matn stays on the narrated branch"
     },
     {
       "n": 42,
