@@ -376,7 +376,12 @@
    "lean": [
     "Usul.Muamalat.firstClaimant",
     "Usul.Muamalat.q24_first_has_priority",
-    "Usul.Muamalat.q24_is_optimal"
+    "Usul.Muamalat.q24_is_optimal",
+    "Usul.Seam.admitted",
+    "Usul.Seam.admitted_iff_yaqin",
+    "Usul.Seam.daif_not_admitted",
+    "Usul.Seam.mursalDaif_admits_only_hasan_up",
+    "Usul.Seam.q24_dalil_not_admitted"
    ],
    "schemata": [
     "S8-optimal"

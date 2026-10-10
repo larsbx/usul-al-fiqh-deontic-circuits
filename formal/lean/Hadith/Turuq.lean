@@ -1,5 +1,6 @@
 import Hadith.Isnad
 import Usul.Grounded
+import Usul.Qawaid
 
 /-!
 # Ṭuruq: aggregation as defeasible evidence (al-Albānī track §2.3, H5)
@@ -118,5 +119,206 @@ example : judge (⟨.daifJiddan, 3⟩ :: ⟨.daifJiddan, 4⟩ :: []) 1 [] = .dai
 theorem judge_not_monotone :
     ∃ ts n att n' att', att ⊆ att' ∧ (judge ts n' att').rank < (judge ts n att).rank :=
   ⟨twoWeak, 1, [], 2, [(1, 0)], List.nil_subset _, by decide⟩
+
+
+/-! ## Rulings: a critic's ḥukm or a matn criterion caps the verdict (decision D2)
+
+The qarīna cases of the H4 tranches all sit above al-Albānī's verdict: what lowers them is a
+critic's ruling («باطل منكر», «هو موضوع») or a criterion on the matn, never a rule over
+grades and routes. Such a ruling is an argument of the same AF, with a ceiling: when it is in
+the grounded extension the verdict is capped at the ceiling, and a jawāb that defeats it removes
+the cap. A ruling only ever lowers (`judgeR_le`), and with no rulings `judgeR` is `judge`. The
+kind (`hukm` / `matn`) is kept for reporting: cases decided this way are counted apart from
+rule-derived ones, so the share that rests on a critic's judgement stays visible. -/
+
+inductive RulingKind where
+  | hukm | matn
+  deriving DecidableEq, Repr
+
+structure Ruling where
+  arg     : Nat          -- its index in the AF
+  kind    : RulingKind
+  ceiling : Verdict
+  deriving DecidableEq, Repr
+
+/-- Apply every ruling that survives (is in the grounded set `g`). -/
+def capWith (g : List Nat) (rs : List Ruling) (v : Verdict) : Verdict :=
+  rs.foldr (fun r acc => if g.contains r.arg then r.ceiling.meet acc else acc) v
+
+def judgeR (ts : List Tariq) (n : Nat) (att : List (Nat × Nat)) (rs : List Ruling) : Verdict :=
+  capWith (Usul.Grounded.grounded n att) rs (judge ts n att)
+
+theorem judgeR_nil (ts : List Tariq) (n : Nat) (att : List (Nat × Nat)) :
+    judgeR ts n att [] = judge ts n att := rfl
+
+theorem capWith_le (g : List Nat) (rs : List Ruling) (v : Verdict) : capWith g rs v ≤ v := by
+  induction rs with
+  | nil => exact Verdict.le_refl' v
+  | cons r rs ih =>
+    simp only [capWith, List.foldr_cons]
+    split
+    · exact Verdict.le_trans' (Verdict.meet_le_right _ _) ih
+    · exact ih
+
+/-- A ruling only lowers: it never raises a verdict the rules gave. -/
+theorem judgeR_le (ts : List Tariq) (n : Nat) (att : List (Nat × Nat)) (rs : List Ruling) :
+    judgeR ts n att rs ≤ judge ts n att :=
+  capWith_le _ _ _
+
+/-- A surviving ruling bounds the verdict by its ceiling. -/
+theorem capWith_le_ceiling {g : List Nat} {rs : List Ruling} {r : Ruling} (hr : r ∈ rs)
+    (hg : g.contains r.arg = true) (v : Verdict) : capWith g rs v ≤ r.ceiling := by
+  induction rs with
+  | nil => cases hr
+  | cons x xs ih =>
+    simp only [capWith, List.foldr_cons]
+    rcases List.mem_cons.1 hr with rfl | h
+    · simp only [hg, ite_true]; exact Verdict.meet_le_left _ _
+    · split
+      · exact Verdict.le_trans' (Verdict.meet_le_right _ _) (ih h)
+      · exact ih h
+
+/-- Worked: a forgery ruling caps two weak routes at mawḍūʿ; a jawāb that defeats it restores
+the rule-derived verdict. -/
+example : judgeR twoWeak 2 [] [⟨1, .hukm, .mawdu⟩] = .mawdu := by decide
+example : judgeR twoWeak 3 [(2, 1)] [⟨1, .hukm, .mawdu⟩] = .hasan := by decide
+
+
+/-! ## Li-dhātihi vs li-ghayrihi
+
+*Nuzha*: the lifted ḥadīth «منحط عن رتبة الحسن لذاته، وربما توقف بعضهم عن إطلاق اسم الحسن عليه».
+The five-valued verdict keeps one ḥasan; `Basis` records how it was reached, and `refinedRank`
+places the lifted grade strictly below the same grade reached by itself. -/
+
+inductive Basis where
+  | dhati | ghayri
+  deriving DecidableEq, Repr
+
+def basis (ts : List Tariq) (liftStands : Bool) : Basis :=
+  if liftStands ∧ Liftable ts then .ghayri else .dhati
+
+theorem bump_ne_of_liftable {ts : List Tariq} (h : Liftable ts) : bump (best ts) ≠ best ts := by
+  rcases h.1 with h | h <;> rw [h] <;> decide
+
+/-- A verdict is li-ghayrihi exactly when aggregation moved it off the best single route. -/
+theorem ghayri_iff (ts : List Tariq) (b : Bool) :
+    basis ts b = .ghayri ↔ aggregate ts b ≠ best ts := by
+  unfold basis aggregate
+  by_cases h : b = true ∧ Liftable ts
+  · simp only [h, and_self, ite_true, ne_eq, true_iff]; exact bump_ne_of_liftable h.2
+  · simp only [h, ite_false, ne_eq, not_true_eq_false, iff_false]; decide
+
+/-- The *Nuzha*'s ordering: same verdict, li-ghayrihi below li-dhātihi. -/
+def refinedRank (v : Verdict) (b : Basis) : Nat := 2 * v.rank + (if b = .dhati then 1 else 0)
+
+theorem ghayri_below_dhati (v : Verdict) : refinedRank v .ghayri < refinedRank v .dhati := by
+  simp [refinedRank]
+
+/-- The refinement never reorders different verdicts. -/
+theorem refinedRank_respects {v w : Verdict} (h : v.rank < w.rank) (b c : Basis) :
+    refinedRank v b < refinedRank w c := by
+  unfold refinedRank; split <;> split <;> omega
+
+example : basis twoWeak true = .ghayri := by decide
+
+
+/-! ## The muʿtabar follower: «فوقه أو مثله لا دونه» (decision D3)
+
+The *Nuzha* requires the follower to be at least as good as the narrator it follows. Two readings:
+* `lax`: any independent supporting route qualifies (the rule as first encoded);
+* `strict`: the strongest route (best verdict, then the best weakest-narrator rank) must have an
+  independent supporter whose weakest narrator is no worse than its own.
+Routes carry their `Isnad.floor` beside them. `strict` never lifts where `lax` does not
+(`strict_le_lax`), and `lax` is exactly `judge` (`judgeI_lax`). -/
+
+inductive Itibar where
+  | lax | strict
+  deriving DecidableEq, Repr
+
+/-- The route a lift would build on: best verdict, then lowest floor (first wins ties). -/
+def baseRoute (rs : List (Tariq × Nat)) : Option (Tariq × Nat) :=
+  let b := best (rs.map Prod.fst)
+  (rs.filter (·.1.verdict == b)).foldl
+    (fun acc r => match acc with
+      | none => some r
+      | some a => if r.2 < a.2 then some r else some a) none
+
+def mutabar : Itibar → List (Tariq × Nat) → Bool
+  | .lax, _ => true
+  | .strict, rs => match baseRoute rs with
+    | none => false
+    | some b => rs.any fun r => r.1.madar != b.1.madar && decide (Verdict.daif ≤ r.1.verdict) && decide (r.2 ≤ b.2)
+
+def judgeI (pol : Itibar) (rs : List (Tariq × Nat)) (n : Nat) (att : List (Nat × Nat)) : Verdict :=
+  let ts := rs.map Prod.fst
+  aggregate ts ((Usul.Grounded.grounded n att).contains 0 && mutabar pol rs)
+
+theorem judgeI_lax (rs : List (Tariq × Nat)) (n : Nat) (att : List (Nat × Nat)) :
+    judgeI .lax rs n att = judge (rs.map Prod.fst) n att := by
+  simp [judgeI, judge, mutabar]
+
+theorem aggregate_mono_flag (ts : List Tariq) : aggregate ts false ≤ aggregate ts true := by
+  unfold aggregate; simp only [Bool.false_eq_true, false_and, ite_false]; split
+  · exact le_bump _
+  · exact Verdict.le_refl' _
+
+/-- The strict reading never lifts where the lax one does not. -/
+theorem strict_le_lax (rs : List (Tariq × Nat)) (n : Nat) (att : List (Nat × Nat)) :
+    judgeI .strict rs n att ≤ judgeI .lax rs n att := by
+  unfold judgeI
+  cases (Usul.Grounded.grounded n att).contains 0 <;> cases mutabar .strict rs <;>
+    simp [mutabar] <;> first | exact Verdict.le_refl' _ | exact aggregate_mono_flag _
+
+/-- Worked: a ṣadūq-yahim route (floor 5) followed only by a majhūl route (floor 9) lifts under
+`lax` but not under `strict`; two majhūl routes lift under both (decision D1 untouched). -/
+example : judgeI .lax [(⟨.daif, 1⟩, 5), (⟨.daif, 2⟩, 9)] 1 [] = .hasan := by decide
+example : judgeI .strict [(⟨.daif, 1⟩, 5), (⟨.daif, 2⟩, 9)] 1 [] = .daif := by decide
+example : judgeI .strict [(⟨.daif, 1⟩, 9), (⟨.daif, 2⟩, 9)] 1 [] = .hasan := by decide
+
+
+/-! ### D3 decided: strict, checked against the dogfooded bank
+
+The uṣūl track's bank decides displacement with `Usul.Qawaid.update` (al-Saʿdī Q11/Q52): a
+challenger displaces the incumbent only at equal or greater strength, and a weaker one never does
+(Ibn Rajab 159, `Usul.Refinements.zahirPrevails`). Here the incumbent is the base route's tawaqquf
+and the challenger is the follower: «فوقه أو مثله لا دونه» is that rule read on the *Taqrīb*
+scale, which is `strict`. On the bank's own four-grade scale every iʿtibār martaba is shakk, so the
+bank cannot separate the readings there (`bank_scale_blind_in_itibar`): it is neutral, and gives
+no support to `lax`. -/
+
+/-- The bank: a weaker challenger leaves the incumbent in place. -/
+theorem bank_weaker_never_displaces {V : Type} (cur ev : Usul.Qawaid.Held V)
+    (h : ¬ cur.strength ≤ ev.strength) : Usul.Qawaid.update cur ev = cur := by
+  simp [Usul.Qawaid.update, h]
+
+/-- The same rule here: a follower weaker than the base does not make the file muʿtabar. -/
+theorem strict_weaker_follower_never_lifts (a b : Nat) (h : a < b) :
+    mutabar .strict [(⟨.daif, 0⟩, a), (⟨.daif, 1⟩, b)] = false := by
+  have hb : ¬ b < a := by omega
+  have hba : ¬ b ≤ a := by omega
+  have d1 : ¬ (Verdict.daif ≤ Verdict.mawdu) := by decide
+  have d2 : Verdict.daif ≤ Verdict.daif := by decide
+  simp [mutabar, baseRoute, best, Verdict.join, hb, hba, d1, d2]
+
+/-- …while `lax` lets it through: the reading the bank rules out. -/
+theorem lax_weaker_follower_lifts (a b : Nat) :
+    mutabar .lax [(⟨.daif, 0⟩, a), (⟨.daif, 1⟩, b)] = true := rfl
+
+/-- The bank's scale is too coarse here: every iʿtibār martaba grades as shakk. -/
+theorem bank_scale_blind_in_itibar (m : Martaba) (h5 : 5 ≤ m.rank) (h9 : m.rank ≤ 9) :
+    m.verdict.grade = .shakk := by
+  cases m <;> simp_all [Martaba.rank, Martaba.verdict, Verdict.grade]
+
+/-- The project default (decision D3, 2026-10-09). -/
+def Itibar.default : Itibar := .strict
+
+/-- Rulings over the strict muʿtabar reading: the kernel as recorded in the H4 tranches. -/
+def judgeRI (pol : Itibar) (rs : List (Tariq × Nat)) (n : Nat) (att : List (Nat × Nat))
+    (rulings : List Ruling) : Verdict :=
+  capWith (Usul.Grounded.grounded n att) rulings (judgeI pol rs n att)
+
+theorem judgeRI_lax (rs : List (Tariq × Nat)) (n : Nat) (att : List (Nat × Nat)) (rulings : List Ruling) :
+    judgeRI .lax rs n att rulings = judgeR (rs.map Prod.fst) n att rulings := by
+  simp [judgeRI, judgeR, judgeI_lax]
 
 end Hadith

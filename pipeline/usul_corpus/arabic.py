@@ -7,7 +7,7 @@ never for the stored text of a record.
 from __future__ import annotations
 
 import re
-from functools import reduce
+from functools import lru_cache, reduce
 
 _DIACRITICS = re.compile("[ؐ-ًؚ-ٰٟۖ-ۭ]")
 _INVISIBLE = re.compile("[ـ​-‏‪-‮⁦-⁩﻿]")
@@ -118,3 +118,48 @@ def parse_ordinal_span(phrase: str, fuzzy: bool = True) -> tuple[tuple[int, int]
     if base is None:
         return None
     return (base[0] + units[0], base[0] + units[1]), base[1] or any(c for _, c in resolved)  # type: ignore[misc]
+
+
+_MARKERS = re.compile(r"ms\d+|PageV\d+P\d+")
+_PAGE = re.compile(r"PageV(\d+)P(\d+)")
+
+
+def letters(s: str) -> str:
+    """Arabic letters only: the comparison key for verbatim excerpts."""
+    return re.sub(r"[^ء-ي]", "", _MARKERS.sub("", s))
+
+
+def revolume(text: str) -> str:
+    """Shamela fetches mark every page `PageV01`; Shamela numbers pages per volume, so a page number
+    that goes back starts the next volume. Texts whose markers already name volumes are unchanged."""
+    if any(m.group(1) != "01" for m in _PAGE.finditer(text)):
+        return text
+    state = {"vol": 1, "prev": -1}
+
+    def mark(m: re.Match) -> str:
+        n = int(m.group(2))
+        state["vol"] += n < state["prev"]
+        state["prev"] = n
+        return f"PageV{state['vol']:02d}P{m.group(2)}"
+
+    return _PAGE.sub(mark, text)
+
+
+@lru_cache(maxsize=4)
+def _indexed(text: str) -> tuple[str, list[int], str]:
+    """The revolumed text, the positions of its letters, and the letters alone."""
+    text = re.sub(r"ms\d+", "", revolume(text))
+    idx = [i for i, ch in enumerate(text) if "ء" <= ch <= "ي"]
+    return text, idx, "".join(text[i] for i in idx)
+
+
+def locate(text: str, excerpt: str) -> str | None:
+    """`v<vol>:p<page>` of the page an excerpt ends on (the next page marker closes it), comparing
+    letters only; None when the excerpt is not in the text."""
+    text, idx, flat = _indexed(text)
+    e = letters(excerpt)
+    k = flat.find(e)
+    if k < 0:
+        return None
+    m = _PAGE.search(text[idx[k + len(e) - 1]:])
+    return f"v{m[1]}:p{m[2]}" if m else None
