@@ -246,7 +246,10 @@ import Usul
 #check @Usul.Muamalat.plead
 #check @Usul.Muamalat.q55_confession_absorbs
 #check @Usul.Muamalat.inherits
-#check @Usul.Muamalat.q56_exceptions_only
+#check @Usul.Muamalat.Q56Reading
+#check @Usul.Muamalat.q56_heir_in_everything
+#check @Usul.Muamalat.q56_mashhur_exceptions
+#check @Usul.Muamalat.q56_readings_differ_iff
 #check @Usul.Kulliyyat.reading
 #check @Usul.Kulliyyat.q57_possible_intent_prevails
 #check @Usul.Kulliyyat.q57_impossible_intent_falls_back

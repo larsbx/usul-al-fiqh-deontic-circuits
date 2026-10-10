@@ -875,7 +875,10 @@
    "domain": "muamalat",
    "lean": [
     "Usul.Muamalat.inherits",
-    "Usul.Muamalat.q56_exceptions_only"
+    "Usul.Muamalat.Q56Reading",
+    "Usul.Muamalat.q56_heir_in_everything",
+    "Usul.Muamalat.q56_mashhur_exceptions",
+    "Usul.Muamalat.q56_readings_differ_iff"
    ]
   },
   {

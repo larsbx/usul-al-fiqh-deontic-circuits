@@ -1,0 +1,360 @@
+{
+ "note": "al-Saʿdī, al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa, part two (al-furūq), tranche 2: F22–F41 in order after tranche 1, none skipped; conventions as in tranche 1.",
+ "work": "sadi.qawaid_jamia",
+ "witness": "islamhouse-qj-doc",
+ "module": "Usul.Furuq",
+ "asl": {
+  "ref": "src:islamhouse-qj-doc#furuq",
+  "excerpt_ar": "أن الشارع لا يفرق بين المتشابهات من كل وجه، بل لا بد فيها من فوارق معنوية، وأوصاف متفاوتة أوجبت الفرق"
+ },
+ "lean": [
+  "Usul.Furuq.Grade",
+  "Usul.Furuq.Grade.apart",
+  "Usul.Furuq.alike_unless_farq",
+  "Usul.Furuq.farq_is_maana",
+  "Usul.Furuq.suri_farq_idle"
+ ],
+ "items": [
+  {
+   "id": "F22",
+   "cases_en": [
+    "a bequest (revocable before death)",
+    "a waqf of a house to take effect after death (held irrevocable)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والصواب: أن الجميع حكمه حكم الوصية، فله الرجوع في كل منهما قبل موته إذا لم يكن مانع"
+   },
+   "grounds": [],
+   "note": "«ونظير هذا»: introduced as a parallel to F21"
+  },
+  {
+   "id": "F23",
+   "cases_en": [
+    "making a contract conditional (barred, except agency and guardianship)",
+    "making a cancellation conditional (allowed)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والصواب: أن العقود كلها كالفسوخ يصح تعليقها، ولا فرق بينها"
+   },
+   "grounds": [
+    "Usul.Sadi.q22_valid_iff_preserves_prohibition"
+   ],
+   "note": "«لأن الأصل أن الشروط المقصودة للمتعاقدين والمتفاسخين معتبرة، ما لم تُدخل أهلها في محذور شرعي»: Q22/Q23"
+  },
+  {
+   "id": "F24",
+   "cases_en": [
+    "a father taking from his son's property (allowed)",
+    "a father releasing his son's debtor, or himself, or divorcing his daughter by khulʿ from her property (barred)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "فالصواب: استواء هذه الأمور، بل إن كثيراً منها أحق من التملك من ماله"
+   },
+   "grounds": [],
+   "note": "e.g. the khulʿ «لمحض مصلحتها»"
+  },
+  {
+   "id": "F25",
+   "cases_en": [
+    "some services owed by a wife by custom",
+    "other services equally customary"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "فإرجاع الجميع إلى المعروف من غير فرق هو اللازم"
+   },
+   "grounds": [
+    "Usul.Kulliyyat.q09_custom_decides"
+   ],
+   "note": "Q9: «والعرف أصل كبير ترجع إليه كثير من الأحكام»; likewise any word or act that signifies a contract concludes it"
+  },
+  {
+   "id": "F26",
+   "cases_en": [
+    "conditions of founders of waqfs and testators that accord with the law (upheld)",
+    "those that contradict it (void)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "فالمسلمون على شروطهم إلا شرطاً أحل حراماً أو حرم حلالاً، وهذا القول مطرد في كل الشروط"
+   },
+   "grounds": [
+    "Usul.Sadi.q22_valid_iff_preserves_prohibition"
+   ],
+   "note": "Q22/Q23; he calls the Ḥanbalī companions' departures from it in some conditions «ضعيف جداً»"
+  },
+  {
+   "id": "F27",
+   "cases_en": [
+    "the grandfather",
+    "the brothers (ruled equal to him in inheritance)"
+   ],
+   "madhhab": "alike",
+   "grade": "jamDaif",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والصواب المقطوع به: تقديم عصوبة الأصول وهم الأب والجد وإن علا على عصوبة فروعهم"
+   },
+   "grounds": [],
+   "note": "«تسوية الجد والأخوة في باب المواريث ضعيف جداً مع تناقضه»; ascendants' agnation precedes descendants' «وهو الأصل المحكم في كل الأبواب»"
+  },
+  {
+   "id": "F28",
+   "cases_en": [
+    "conditions of a thing (its constituents)",
+    "conditions in it (stipulated by a party)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: الفرق بين شروط الأشياء والشروط فيها"
+   },
+   "grounds": [],
+   "note": "the first are «مقوماتها التي لا تتم ولا تصح إلا بها»; the second are external and binding when valid (Q22/Q23)"
+  },
+  {
+   "id": "F29",
+   "cases_en": [
+    "a salam debt (no exchange for it, no security for it)",
+    "other debts"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والصواب: أن دين السلم وغيره في الحكم واحد"
+   },
+   "grounds": [],
+   "note": "every unobjectionable exchange and security is allowed for it as for others"
+  },
+  {
+   "id": "F30",
+   "cases_en": [
+    "a contract voided for a defect found in it (its dependants fall)",
+    "a contract the parties rescind by choice (its dependants stand)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: تفريقهم في العقد إذا انفسخ لظهور مبطل ومفسد، فيتبعه ما تعلق به من وثائق"
+   },
+   "grounds": [
+    "Usul.Muamalat.q53_distinction"
+   ],
+   "note": "Q53"
+  },
+  {
+   "id": "F31",
+   "cases_en": [
+    "testimony (requires «أشهد» in the rights of persons)",
+    "a firm report"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والصواب: أن الإخبار الجازم هو الشهادة بعينها"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F32",
+   "cases_en": [
+    "a confession against oneself (binding)",
+    "a confession against another (not accepted)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأن الأول بينة قوية، والثاني دعوى مجردة"
+   },
+   "grounds": [
+    "Usul.Muamalat.q55_error_claim_irrelevant",
+    "Usul.Muamalat.q10_from_presumption"
+   ],
+   "note": "Q55 and Q10: the first binds, the second is a bare claim needing proof"
+  },
+  {
+   "id": "F33",
+   "cases_en": [
+    "an agent told «collect my due from so-and-so» (not from his heir)",
+    "«collect my due that is on him» (from his heir too)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والظاهر استواء الأمرين؛ لأن العرف لا يكاد يفرّق بين مثل هذه الألفاظ"
+   },
+   "grounds": [
+    "Usul.Kulliyyat.q09_custom_decides",
+    "Usul.Kulliyyat.q57_possible_intent_prevails"
+   ],
+   "note": "graded «من الفروق التي فيها نظر»; speech is read by custom (Q9, Q57)"
+  },
+  {
+   "id": "F34",
+   "cases_en": [
+    "agency as a revocable contract",
+    "the 'circular' agency they allow, which defeats revocation"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والصواب: أن الدور في العقود والفسوخ لا يعتبر، بل يعتبر العقد بذاته"
+   },
+   "grounds": [],
+   "note": "«وتَدوير العقود والفسوخ إذهاب لروحها ومقاصدها»"
+  },
+  {
+   "id": "F35",
+   "cases_en": [
+    "a claimant who said «I have no proof» and then brings it (rejected)",
+    "one who said «I know of no proof» (accepted)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأنه إنما نفى في الحقيقة العلم بها"
+   },
+   "grounds": [],
+   "note": "«أنه إذا أتى بالبينة العادلة الشرعية قبلت سواء نفاها أو لم ينفها»"
+  },
+  {
+   "id": "F36",
+   "cases_en": [
+    "a husband who speaks first in a dispute over the timing of his taking back (believed)",
+    "a wife who speaks first (believed)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ولا يرجح تقديم أحدهما بالكلام قوله، وإنما المرجح الحالة الواقعة"
+   },
+   "grounds": [
+    "Usul.Muamalat.q10_from_presumption"
+   ],
+   "note": "the waiting period ended by agreement; the husband claims the earlier taking back, so the proof is on him (Q10 by presumption)"
+  },
+  {
+   "id": "F37",
+   "cases_en": [
+    "khiyār al-sharṭ and an unclaimed shufʿa (not inherited)",
+    "every other right and option (inherited)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والصواب: أن الوارث يقوم مقام مورثه في كل الأشياء"
+   },
+   "grounds": [
+    "Usul.Muamalat.q56_heir_in_everything",
+    "Usul.Muamalat.q56_readings_differ_iff"
+   ],
+   "note": "graded «من الفروق الضعيفة جداً»; Q56 says the same «والصحيح: أنها مثل غيرها». The bank had encoded Q56 with the exception; it is now a parameter whose al-Saʿdī reading has none"
+  },
+  {
+   "id": "F38",
+   "cases_en": [
+    "a fee for borrowing for someone on one's standing (allowed)",
+    "a fee for guaranteeing him (barred)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والأولى المنع في الصورتين، لما في ذلك من الأخطار، وتفويت مقاصد القرض والوثيقة"
+   },
+   "grounds": [],
+   "note": "ruled alike, both barred"
+  },
+  {
+   "id": "F39",
+   "cases_en": [
+    "a loan of land for crops (rent owed from revocation)",
+    "a loan of land for burial or of a ship for carriage"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والصواب: الذي لا شك فيه أنه ليس له أجرة في الزرع؛ لأنه الذي أذن له وغرّه"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F40",
+   "cases_en": [
+    "freeing a pledged slave (effective)",
+    "selling or endowing a pledged thing (not effective)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والصواب: عدم نفوذ العتق مطلقاً حتى يأذن المرتهن"
+   },
+   "grounds": [],
+   "note": "«لما في ذلك من إبطال حق المسلم، ولأن العتق قربة فلا يتقرب إلى الله بفعل محرم»"
+  },
+  {
+   "id": "F41",
+   "cases_en": [
+    "a case within the fuqahāʾ's fixed limits (minimum and maximum ages, durations, distances)",
+    "the same case just outside them"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "تعليق الأحكام بتحقق وقوعها، وأنه متى وجد الشيء الذي علق الشارع الحكم عليه وجب تحقق الحكم الشرعي"
+   },
+   "grounds": [
+    "Usul.Kulliyyat.q09_custom_decides"
+   ],
+   "note": "«جعل الفقهاء … الأمور الوجودية الأغلبية فرقاً فاصلاً»; what the law left undefined is referred to its occurrence and to custom (Q9)"
+  }
+ ]
+}

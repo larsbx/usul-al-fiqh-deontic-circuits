@@ -399,18 +399,38 @@ theorem q55_confession_absorbs (pre post : List Plea) :
   rw [List.foldl_append, List.foldl_cons]
   exact inert_fold plead (· = true) true rfl post fun e _ s hs => by subst hs; cases e <;> rfl
 
-/-! ## Q56 — the heir stands in the deceased's place for the estate, except the listed rights -/
+/-! ## Q56 — the heir stands in the deceased's place in everything of the estate
+
+The statement goes on «إلا ما استثني من خيار الشرط والشفعة إذا لم يطالب المورث في قول ضعيف».
+The mashhūr from Aḥmad excepts the two; al-Saʿdī: «والصحيح: أنها مثل غيرها؛ لأن المقصود واحد …
+وما قيل فيها من التعليل موجود في غيرها», and again in the furūq (F37): «من الفروق الضعيفة جداً».
+Where the madhhab is divided the position is a parameter; `sahih` is al-Saʿdī's, and the rule as
+he states it. -/
 
 inductive EstateRight where
   | ownership | debtClaim | khiyarShart | shufaUnclaimed
   deriving DecidableEq, Repr
 
-def inherits : EstateRight → Bool
-  | .khiyarShart | .shufaUnclaimed => false
-  | _ => true
+inductive Q56Reading where
+  | sahih | mashhur
+  deriving DecidableEq, Repr
 
-theorem q56_exceptions_only (r : EstateRight) :
-    inherits r = false ↔ r = .khiyarShart ∨ r = .shufaUnclaimed := by
+def inherits : Q56Reading → EstateRight → Bool
+  | .mashhur, .khiyarShart | .mashhur, .shufaUnclaimed => false
+  | _, _ => true
+
+/-- al-Saʿdī: the heir inherits every right of the estate. -/
+theorem q56_heir_in_everything (r : EstateRight) : inherits .sahih r = true := by
+  cases r <;> rfl
+
+/-- The mashhūr, which he calls weak: everything but khiyār al-sharṭ and an unclaimed shufʿa. -/
+theorem q56_mashhur_exceptions (r : EstateRight) :
+    inherits .mashhur r = false ↔ r = .khiyarShart ∨ r = .shufaUnclaimed := by
+  cases r <;> simp [inherits]
+
+/-- The two readings part exactly on the two rights the mashhūr excepts. -/
+theorem q56_readings_differ_iff (r : EstateRight) :
+    inherits .sahih r ≠ inherits .mashhur r ↔ r = .khiyarShart ∨ r = .shufaUnclaimed := by
   cases r <;> simp [inherits]
 
 /-! ## Q30 — a refusing co-owner is compelled to what the common holding necessarily requires -/
