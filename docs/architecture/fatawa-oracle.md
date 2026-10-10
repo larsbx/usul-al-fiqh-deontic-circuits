@@ -56,3 +56,116 @@ Each line is an event `{serial, op, type, data}` with `op ∈ {created, updated,
 - Deltas are not applied by `make fatawa` (the snapshot is pinned for reproducibility); `fold` already handles them.
 
 Training labels: [fatawa-labels.md](fatawa-labels.md).
+
+## Baseline oracle (`make oracle`)
+
+[`oracle.py`](../../pipeline/usul_corpus/oracle.py) predicts a candidate ḥukm from the **question alone** (title + question text). The answer states the verdict, so it is never read. Training uses the `train` split, with each label weighted by `confidence`: basis × bank class × English agreement × act/question match. Rejected and conflicting labels weigh 0. The weighted set is exported for future models as `data/islamqa/train/islamqa-ar.jsonl.gz` (all splits, LFS).
+
+Test split (1,460 answers; dev gives the same picture), accuracy / macro-F1:
+
+| model | all labels | high-confidence labels (weight ≥ 0.7) |
+|---|---:|---:|
+| majority (ḥarām) | 34.5% / 0.10 | 52.5% / 0.14 |
+| retriever, k = 10 | 47.5% / 0.34 | 52.7% / 0.36 |
+| Naive Bayes | 50.0% / 0.34 | 51.0% / 0.35 |
+
+Per-class F1 for Naive Bayes on all labels: wajib 0.51, mandub 0.18, mubah 0.52, makruh 0.00, haram 0.50.
+
+Abstaining when the retriever's best match is weak:
+
+| best cosine | coverage | accuracy |
+|---|---:|---:|
+| ≥ 0.2 | 19% | 54.4% |
+| ≥ 0.3 | 5% | 56.2% |
+| ≥ 0.5 | 1% | 66.7% |
+
+**Reading.** A surface-text oracle is weak:
+- On high-confidence labels its accuracy is no better than always answering ḥarām. Its macro-F1 is higher (≈ 0.35 vs 0.14) only because it spreads its answers over four classes at roughly a coin flip each. It never recovers makrūh.
+- The questions are mostly «هل يجوز X؟», and the ruling turns on facts and principles the wording does not carry («يجوز إذا …، ولا يجوز إذا …»).
+
+These numbers are the floor that any real oracle must clear on this fixed split. The retriever's `evidence` (the nearest answered fatwās, their ids and labels) is still useful as a citation layer for whatever decides.
+
+Two directions can clear the floor:
+- **A model that reads the question in depth.** For example, an LLM fine-tuned or prompted on the weighted set. Its output stays a candidate, checked by the bank.
+- **The kernel itself.** Encode each case's facts (act, addressee, conditions) as the takhrīj encoders do, and let `Usul` derive the ruling. That is the deontic-circuit oracle the project is building, with this corpus as its test bench.
+
+## Kernel oracle: takhrīj over IslamQA (`make fatawa-takhrij`)
+
+The kernel route treats IslamQA as a new takhrīj tranche of *modern* furūʿ: fatwās that fall under the bank's existing encoders.
+- Each case is annotated with the facts the encoder takes and the ruling the answer states, plus the answer's own words for it (`quote`).
+- The kernel computes its own ruling, and the case is classed as in [takhrij.md](takhrij.md).
+- `fatawa_takhrij.check` runs takhrīj's `check_case` and verifies that the answer exists and contains the quote verbatim.
+- [`UsulTest/FatawaTakhrij.lean`](../../formal/lean/UsulTest/FatawaTakhrij.lean) guards every derivable and ikhtilāf case (`==`) and every encoding error (`!=`).
+
+**Tranche 1** ([`corpus/fatawa/takhrij/islamqa_tranche1.json`](../../corpus/fatawa/takhrij/islamqa_tranche1.json)): 123 cases from 53 answers, retrieved by keyword and annotated LLM-assisted, one agent per encoder. Status `candidate`, not human-reviewed. A hand reading of 19 cases found 17 sound. Of the two fixed, one was decided under another encoder (`home`) and one was not a case.
+
+| encoder | derivable | ikhtilāf | encoding error | missing fact | missing rule | coverage |
+|---|---:|---:|---:|---:|---:|---:|
+| `asl_zahir` | 24 | 0 | 0 | 1 | 2 | 24/27 |
+| `trust_loss` | 18 | 0 | 0 | 1 | 2 | 18/21 |
+| `unknown_owner` | 11 | 1 | 0 | 4 | 1 | 12/17 |
+| `luqata` | 10 | 1 | 3 | 12 | 4 | 11/30 |
+| `itlaf` | 0 | 0 | 0 | 11 | 16 | 0/27 |
+
+Overall coverage 0.533; 68 Lean guards.
+
+**What the modern cases say about the bank**
+- **Doubt and certainty (`asl_zahir`) carries over almost whole.** «اليقين لا يزول بالشك», waswās, a felt wetness put down to the water: 24 of 27 are derived.
+  - The rakʿa-count case (islamqa.23424.f002) follows preponderant belief, «ولو بالنظر إلى من بجواره», on equal grades with an external sign. It is derived only through the IQ-20 refinement (ties go to the indicator), so modern evidence now supports that refinement.
+- **Trust liability (`trust_loss`) carries over:** deposits, muḍāraba banks, a seller holding sold goods.
+  - Two gaps: a current account is a *loan*, a hand of guarantee that is not wrongful (`rule:qard_transfers_ownership`), and something without legal value (`fact:mal_mutaqawwam`).
+- **Lost property (`luqata`) has a real encoding error.** For a find in the Ḥaram the text says it is never owned and is announced forever or handed to the authorities. The kernel's not-ownable branch gives charity after the year, a position neither side holds. That happens in 3 cases (4046.f002, 4050.f001, 191459.f001). The encoder needs a "never owned: keep holding" outcome.
+  - The other gaps are modern-practical: trivial finds (`fact:trivial` ×5), animals (`fact:animal_kind`), buried treasure (`rule:rikaz` ×4).
+- **Unknown owner carries over**, with one telling ikhtilāf (104241.f002). A bribe given to get what was not the payer's right goes to the poor *even though the payer is known*: Ibn Taymiyya and Ibn al-Qayyim, adopted by IslamQA. The kernel takes the other reported position (return it to the owner): the deciding fact is the illicit exchange, which the encoder does not see.
+- **Damage (`itlaf`) does not carry over at all.** The bank's rule turns on *purpose*: destroying for one's own benefit versus repelling the thing's harm. Modern cases are accidents with no purpose: car crashes, medical error, breakage. They turn on fault (`fact:negligence` ×10), direct versus indirect causation (`rule:mubashara_tasabbub` ×9), physician liability, and whether a later death follows from the injury (`rule:sirayat_al_jinaya`).
+
+**The gap ledger is the agenda for the next encoders**, ordered by how many modern cases each would open:
+1. negligence + mubāshara/tasabbub (19);
+2. trivial / animal finds (9);
+3. rikāz (4);
+4. the Ḥaram luqaṭa outcome (3 encoding errors).
+
+As in M4, nothing here patches a reading; changing one is a review decision.
+
+## Prolog oracle (`make fatawa-prolog`)
+
+The takhrīj tranche tests the *bank* against the texts. The Prolog oracle asks a further question: which rules would close the gap ledger? It runs as ordered, cited rules over the same cases, with the bank as the last rule of each domain.
+
+**Pieces**
+- [`examples/v40_fatwa_rules.pl`](../../examples/v40_fatwa_rules.pl), hand-written:
+  - `bank/2` mirrors the Lean encoders over the tranche's own facts (`encoder_fact/3`).
+  - `oracle(C, Ruling, Rule)` takes the first applicable `rule/4` of the case's domain (liability, doubt, found property, unknown owner). Specific rules come before general ones; `bank` comes last.
+  - `rule_source/2` names the ḥadīth, maxim or answer that states each rule.
+- [`corpus/fatawa/prolog/tranche1_facts.json`](../../corpus/fatawa/prolog/tranche1_facts.json): each case's further facts and the text's own ruling, read from the answer (LLM-assisted, one agent per encoder, status `candidate`). `null` means the text does not settle the fact. `oracle_gap` records, with its reason, a case the rules knowingly get wrong.
+- `examples/v40_fatwa_cases.pl` is generated from the two JSON files. Each case carries vectors for the fail-closed runner:
+  - `bank(C)`: the Prolog bank equals the Python/Lean kernel (68 cases);
+  - `agrees(C)`: the oracle's ruling is the text's, or `expect_false` for a recorded gap.
+- [`examples/v40_fatwa_oracle_fixtures.pl`](../../examples/v40_fatwa_oracle_fixtures.pl) loads both and adds precedence vectors for the rules that the real cases mask.
+- `tests/run_all.sh` runs it. `tests/mutation_test.sh` disables each rule in turn, and every mutant is killed.
+
+**Result on tranche 1** ([`report.json`](../../corpus/fatawa/prolog/report.json)): 122 cases, segmentation errors excluded.
+
+| encoder | cases | oracle = text | bank answers | bank = text |
+|---|---:|---:|---:|---:|
+| `asl_zahir` | 27 | 27 | 24 | 24 |
+| `itlaf` | 27 | 27 | 0 | 0 |
+| `luqata` | 30 | 29 | 14 | 11 |
+| `trust_loss` | 21 | 21 | 18 | 18 |
+| `unknown_owner` | 17 | 15 | 12 | 11 |
+| **total** | **122** | **119** | **68** | **64** |
+
+**Read this as a fit, not an accuracy.** The rules were written and corrected against these same 122 texts. The first pass agreed on 105. Each of the 14 cases fixed since then rests on a rule that a text states (Majmaʿ al-Fiqh's traffic-accident exemptions as quoted in islamqa.345284, «يضاف الحكم إلى المباشر», «البينة على المدعي»). Only a held-out tranche measures whether the rules generalise.
+
+**The three recorded gaps** are all answers that permit a *choice* between rulings, which a single-valued ruling cannot hold:
+- islamqa.126387.f001: charity or the officials, never keeping it;
+- islamqa.107436.f001: public money spent on the public, with the state as owner;
+- islamqa.287215.f002: hold her share or give it in charity.
+
+The next schema step is a ruling *set* (the permitted options), with agreement meaning the oracle's ruling is a member.
+
+**What the rules add to the bank**, by how often they decide a case:
+- trust and fault: `hand_of_trust` 17, `mubashir_liable` 11, `mutasabbib_by_fault` 5;
+- the Majmaʿ al-Fiqh exemptions: `victim_fault` 3, `quwwa_qahira` 1, `mubashir_first` 2;
+- finds: `trivial_find` 5, `haram_makka` 4 (this rule fixes the 3 encoding errors), `rikaz` 4, and the two animal rules.
+
+The `bank` rule still decides 24 cases, all in `asl_zahir`.
