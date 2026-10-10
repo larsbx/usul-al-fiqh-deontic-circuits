@@ -8,7 +8,7 @@ import jsonschema
 import pytest
 
 from usul_corpus.__main__ import CACHE
-from usul_corpus.arabic import letters
+from usul_corpus.arabic import letters, normalize
 from usul_corpus.records import EXCERPT_LEN
 
 ROOT = Path(__file__).parents[2]
@@ -45,8 +45,9 @@ def test_quotes_are_verbatim(p):
     src = CACHE / f"{REG['witness']}.txt"
     if not src.exists():
         pytest.skip(f"{REG['witness']} not cached")
-    text = letters(src.read_text(encoding="utf-8"))
-    assert all(letters(a["excerpt_ar"]) in text for a in p["author"])
+    key = lambda s: letters(normalize(s))
+    text = key(src.read_text(encoding="utf-8"))
+    assert all(key(a["excerpt_ar"]) in text for a in p["author"])
 
 
 def test_lean_is_checked_and_complete():

@@ -74,13 +74,14 @@
       "required": ["id", "kind"],
       "properties": {
         "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
-        "kind": {"enum": ["openiti", "shamela", "archive"]},
+        "kind": {"enum": ["openiti", "shamela", "archive", "url"]},
         "edition": {"type": "string"},
         "quality": {"enum": ["ocr_unreviewed", "pdf_only"]},
         "fetch": {"enum": ["default", "on_demand"]},
         "segmenter": {"type": "object", "description": "overrides the work's segmenter for this witness"},
         "ocr_note": {"type": "string"},
-        "format": {"enum": ["text", "pdf"]},
+        "format": {"enum": ["text", "pdf", "doc"]},
+        "url": {"type": "string", "pattern": "^https://"},
         "ocr": {
           "type": "object",
           "required": ["engines", "dpi", "psm"],
@@ -109,6 +110,8 @@
          "then": {"required": ["book_id"]}},
         {"if": {"properties": {"kind": {"const": "archive"}}},
          "then": {"required": ["item"]}},
+        {"if": {"properties": {"kind": {"const": "url"}}},
+         "then": {"required": ["url", "format"]}},
         {"if": {"properties": {"format": {"const": "pdf"}}, "required": ["format"]},
          "then": {"required": ["ocr", "file"]}}
       ]

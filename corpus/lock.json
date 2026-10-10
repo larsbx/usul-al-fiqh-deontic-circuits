@@ -33,6 +33,12 @@
       "sha256": "5127a70227a889ac8601d7dc946ba46b03b467525743a752e6daac4a582d59db",
       "ocr_sha256": "b256d18064d5fc52103b3d6c5b5cb925eeb812b88a1afbfa408a3446f3137a30"
     },
+    "islamhouse-qj-doc": {
+      "witness": "islamhouse-qj-doc",
+      "url": "https://www.islamland.com/uploads/books/ar_university_rules_and_assets.doc",
+      "bytes": 1013248,
+      "sha256": "95a99c15fa6c1427060da0cc10db5df3877ead96ff0b25279dae62aff529576f"
+    },
     "openiti-abudawud-masailahmad-shamela21487": {
       "witness": "openiti-abudawud-masailahmad-shamela21487",
       "url": "https://raw.githubusercontent.com/OpenITI/0275AH/44e1c36738a2bf5c14dafa232a6ae1891e6171cd/data/0275AbuDawudSijistani/0275AbuDawudSijistani.MasailImamAhmad/0275AbuDawudSijistani.MasailImamAhmad.Shamela0021487-ara1",

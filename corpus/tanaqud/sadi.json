@@ -1,7 +1,7 @@
 {
  "register": "al-Saʿdī, al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa: apparent contradictions inside the bank, resolved by the bank",
  "method": "Two qawāʿid, each read without its qayd, rule opposite ways on a shared case. The pair is resolved by the bank's own order (Usul.resolve: jamʿ, naskh, tarjīḥ, tawaqquf) and its rules of reading (Q29: a word is read with what is attached to it; Q57: give effect to both wherever possible). The qayd is always the author's own sentence; nothing is imported.",
- "witness": "archive-pdf1995",
+ "witness": "islamhouse-qj-doc",
  "module": "Usul.Tanaqud",
  "lean": [
   "Usul.Tanaqud.Pair",
@@ -52,8 +52,8 @@
    "qayd_en": "Whose right: a human's right follows Q13, God's right follows Q27.",
    "author": [
     {
-     "ref": "src:archive-pdf1995#q013",
-     "excerpt_ar": "والفرق بينه وبين أموال الآدميين : أن الحق في قتل الصيد للمحرم لله» والإأثم مترتب على القصد» فكذلك الجزاءء وهذاالقول أصح"
+     "ref": "src:islamhouse-qj-doc#q013",
+     "excerpt_ar": "والفرق بينه وبين أموال الآدميين: أن الحق في قتل الصيد للمحرم لله، والإثم مترتب على القصد، فكذلك الجزاء"
     }
    ],
    "reading_rules": [
@@ -76,12 +76,12 @@
    "qayd_en": "Known competing claimants follow Q25; an owner nobody can identify follows Q20.",
    "author": [
     {
-     "ref": "src:archive-pdf1995#q020",
-     "excerpt_ar": "يعنى إذا علمنا أن المال ملك للغير» ولكن ذلك الغير تعذر علينا معرفته"
+     "ref": "src:islamhouse-qj-doc#q020",
+     "excerpt_ar": "يعني إذا علمنا أن المال ملك للغير، ولكن ذلك الغير تعذر علينا معرفته، وأيسنا منه جعلناه كالمعدوم"
     },
     {
-     "ref": "src:archive-pdf1995#q025",
-     "excerpt_ar": "فمتى تشاح اثنان فأكثر"
+     "ref": "src:islamhouse-qj-doc#q025",
+     "excerpt_ar": "فمتى تشاح اثنان فأكثر في الأذان أو الإقامة، أو الإمامة ولم يكن لأحدهما مرجح أقرع بينهم"
     }
    ],
    "reading_rules": [
@@ -104,12 +104,12 @@
    "qayd_en": "One shared purpose merges (Q41); distinct purposes stay apart (Q31).",
    "author": [
     {
-     "ref": "src:archive-pdf1995#q041",
-     "excerpt_ar": "واكتفي عنهما بفعل واحد إذا کان مقصودهما واحدا"
+     "ref": "src:islamhouse-qj-doc#q041",
+     "excerpt_ar": "واكتفي عنهما بفعل واحد إذا كان مقصودهما واحد"
     },
     {
-     "ref": "src:archive-pdf1995#q041",
-     "excerpt_ar": "وأما إذا كانت الكفارات متباينة مقاصدها ككفارة ظهار» ويمين بالله"
+     "ref": "src:islamhouse-qj-doc#q041",
+     "excerpt_ar": "وأما إذا كانت الكفارات متباينة مقاصدها ككفارة ظهار، ويمين بالله، أو للوطء في نهار رمضان وحنث في الجميع، وجب عليه كفارات"
     }
    ],
    "reading_rules": [
@@ -132,8 +132,8 @@
    "qayd_en": "When another's right is attached and he demands the wording, the outward governs (Q55); otherwise the intent (Q57).",
    "author": [
     {
-     "ref": "src:archive-pdf1995#q057",
-     "excerpt_ar": "وأما إذا تعلق بكلامه حق للغير فكذلك نعتبر ما نوى إلا أن ذلك الخير إذا طالبه بمقتضى لفظه لم يكن لنا أن نحكم إلا بالظاهر"
+     "ref": "src:islamhouse-qj-doc#q057",
+     "excerpt_ar": "وأما إذا تعلق بكلامه حق للغير فكذلك نعتبر ما نوى إلا أن ذلك الغير إذا طالبه بمقتضى لفظه لم يكن لنا أن نحكم إلا بالظاهر"
     }
    ],
    "reading_rules": [
@@ -156,12 +156,12 @@
    "qayd_en": "Before the cause, Q17; after the cause and before the condition, Q39.",
    "author": [
     {
-     "ref": "src:archive-pdf1995#q017",
-     "excerpt_ar": "فإذا تعجل الأمور التي يترتب عليها حكم شرعي قبل وجود أسبابها الصحيحة» لم يفده شيئ وعوقب بنقيض قصده"
+     "ref": "src:islamhouse-qj-doc#q017",
+     "excerpt_ar": "فإذا تعجل الأمور التي يترتب عليها حكم شرعي قبل وجود أسبابها الصحيحة، لم يفده شيئا"
     },
     {
-     "ref": "src:archive-pdf1995#q039",
-     "excerpt_ar": "ويجوز تقديمها بعد وجود السبب»› وقبل شرط الوجوب وتحققه"
+     "ref": "src:islamhouse-qj-doc#q039",
+     "excerpt_ar": "ويجوز تقديمها بعد وجود السبب، وقبل شرط الوجوب وتحققه"
     }
    ],
    "reading_rules": [
@@ -184,8 +184,8 @@
    "qayd_en": "Inability lifts only the part it reaches, except a part that is a pure means.",
    "author": [
     {
-     "ref": "src:archive-pdf1995#q040",
-     "excerpt_ar": "فإن قدر على بعضه وعجز عن باقيه وجب عليه فعل ما قدر عليه» إلا أن يكون المقدور عليه وسيلة محضة"
+     "ref": "src:islamhouse-qj-doc#q040",
+     "excerpt_ar": "فإن قدر على بعضه وعجز عن باقيه وجب عليه فعل ما قدر عليه، إلا أن يكون المقدور عليه وسيلة محضة"
     }
    ],
    "reading_rules": [
@@ -210,8 +210,8 @@
    "qayd_en": "What follows a known whole is established with it (Q50); what stands alone falls under Q21.",
    "author": [
     {
-     "ref": "src:archive-pdf1995#q050",
-     "excerpt_ar": "وكذلك لا يجوز بيع المجهول الذي لم ير ولم يوصف» لكن إذا بيعت الدار ونحوها دخلت فيها الأساسات"
+     "ref": "src:islamhouse-qj-doc#q050",
+     "excerpt_ar": "وكذلك لا يجوز بيع المجهول الذي لم يرَ ولم يوصف، لكن إذا بيعت الدار ونحوها دخلت فيها الأساسات"
     }
    ],
    "reading_rules": [
@@ -234,8 +234,8 @@
    "qayd_en": "The presumption holds where nothing outweighs it; what is stronger than doubt displaces it.",
    "author": [
     {
-     "ref": "src:archive-pdf1995#q052",
-     "excerpt_ar": "لأننا إنما قدمنا الأصل حيث لا مرجح سواه» فإذا وجد ما هو أقوى منه وجب تقديم الأرجح"
+     "ref": "src:islamhouse-qj-doc#q052",
+     "excerpt_ar": "لأننا إنما قدمنا الأصل حيث لا مرجح سواه، فإذا وجد ما هو أقوى منه وجب تقديم الأرجح"
     }
    ],
    "reading_rules": [
@@ -258,8 +258,8 @@
    "qayd_en": "Concluding an exchange follows Q12; a unilateral right (cancellation under an option, divorce, manumission, pre-emption) follows Q45.",
    "author": [
     {
-     "ref": "src:archive-pdf1995#q045",
-     "excerpt_ar": "فله الفسخ سواء رضي الآخر» أو لم يرضَ» وسواء علم أو لم يعلم"
+     "ref": "src:islamhouse-qj-doc#q045",
+     "excerpt_ar": "فله الفسخ سواء رضي الآخر، أو لم يرضَ، وسواء علم، أو لم يعلم"
     }
    ],
    "reading_rules": [
@@ -282,7 +282,7 @@
    "qayd_en": "The owner's trust makes the trustee's claim the presumption, so he is the denier of liability (Q10 read by presumption).",
    "author": [
     {
-     "ref": "src:archive-pdf1995#q026",
+     "ref": "src:islamhouse-qj-doc#q026",
      "excerpt_ar": "لأن صاحبه ائتمنه ونزله منزلة نفسه"
     }
    ],

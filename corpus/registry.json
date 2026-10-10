@@ -152,6 +152,14 @@
           },
           "edition": "Dār al-Waṭan, ed. Khālid al-Mushayqiḥ (same scan as archive-pdf1995)",
           "quality": "ocr_unreviewed"
+        },
+        {
+          "id": "islamhouse-qj-doc",
+          "kind": "url",
+          "url": "https://www.islamland.com/uploads/books/ar_university_rules_and_assets.doc",
+          "format": "doc",
+          "fetch": "on_demand",
+          "edition": "Dār al-Waṭan, ed. Khālid al-Mushayqiḥ, as typeset by IslamHouse (Maktabat Ibn Saʿdī 4, 2009): the same edition as archive-pdf1995, born-digital"
         }
       ],
       "segmenter": {
