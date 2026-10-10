@@ -16,6 +16,7 @@
     python -m usul_corpus bank-review # review the labels with the deontic-circuits bank; fill the review sample
     python -m usul_corpus oracle      # export the weighted training set; evaluate the baseline oracles
     python -m usul_corpus fatawa-takhrij  # check the IslamQA takhrīj tranches; regenerate their Lean guards and report
+    python -m usul_corpus fatawa-prolog   # write the tranches as Prolog cases; run the oracle and report (needs swipl)
 """
 
 from __future__ import annotations
@@ -523,6 +524,21 @@ def cmd_fatawa_takhrij(_: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_fatawa_prolog(_: argparse.Namespace) -> int:
+    """The takhrīj cases as Prolog facts and fixture vectors; the oracle's agreement with the texts."""
+    from . import fatawa_prolog, fatawa_takhrij
+    cases, facts = fatawa_takhrij.load(CORPUS), fatawa_prolog.load_facts(CORPUS)
+    if errs := fatawa_prolog.check(cases, facts):
+        print("\n".join(errs))
+        return 1
+    records = fatawa_prolog.merge(cases, facts)
+    (ROOT / fatawa_prolog.CASES).write_text(fatawa_prolog.prolog_file(records), encoding="utf-8")
+    rep = fatawa_prolog.report(records, fatawa_prolog.run(ROOT))
+    _dump(CORPUS / "fatawa" / "prolog" / "report.json", rep)
+    print(json.dumps({k: rep[k] for k in ("total", "per_encoder")}, ensure_ascii=False))
+    return 0
+
+
 def cmd_validate(_: argparse.Namespace) -> int:
     import jsonschema  # test-time dependency only
     from . import m5_commands
@@ -580,6 +596,7 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("bank-review").set_defaults(run=cmd_bank_review)
     sub.add_parser("oracle").set_defaults(run=cmd_oracle)
     sub.add_parser("fatawa-takhrij").set_defaults(run=cmd_fatawa_takhrij)
+    sub.add_parser("fatawa-prolog").set_defaults(run=cmd_fatawa_prolog)
     fa = sub.add_parser("fatawa")
     fa.add_argument("--lang")
     fa.add_argument("--refresh", action="store_true")

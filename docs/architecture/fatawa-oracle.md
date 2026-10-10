@@ -126,3 +126,46 @@ Overall coverage 0.533; 68 Lean guards.
 4. the Ḥaram luqaṭa outcome (3 encoding errors).
 
 As in M4, nothing here patches a reading; changing one is a review decision.
+
+## Prolog oracle (`make fatawa-prolog`)
+
+The takhrīj tranche tests the *bank* against the texts. The Prolog oracle asks a further question: which rules would close the gap ledger? It runs as ordered, cited rules over the same cases, with the bank as the last rule of each domain.
+
+**Pieces**
+- [`examples/v40_fatwa_rules.pl`](../../examples/v40_fatwa_rules.pl), hand-written:
+  - `bank/2` mirrors the Lean encoders over the tranche's own facts (`encoder_fact/3`).
+  - `oracle(C, Ruling, Rule)` takes the first applicable `rule/4` of the case's domain (liability, doubt, found property, unknown owner). Specific rules come before general ones; `bank` comes last.
+  - `rule_source/2` names the ḥadīth, maxim or answer that states each rule.
+- [`corpus/fatawa/prolog/tranche1_facts.json`](../../corpus/fatawa/prolog/tranche1_facts.json): each case's further facts and the text's own ruling, read from the answer (LLM-assisted, one agent per encoder, status `candidate`). `null` means the text does not settle the fact. `oracle_gap` records, with its reason, a case the rules knowingly get wrong.
+- `examples/v40_fatwa_cases.pl` is generated from the two JSON files. Each case carries vectors for the fail-closed runner:
+  - `bank(C)`: the Prolog bank equals the Python/Lean kernel (68 cases);
+  - `agrees(C)`: the oracle's ruling is the text's, or `expect_false` for a recorded gap.
+- [`examples/v40_fatwa_oracle_fixtures.pl`](../../examples/v40_fatwa_oracle_fixtures.pl) loads both and adds precedence vectors for the rules that the real cases mask.
+- `tests/run_all.sh` runs it. `tests/mutation_test.sh` disables each rule in turn, and every mutant is killed.
+
+**Result on tranche 1** ([`report.json`](../../corpus/fatawa/prolog/report.json)): 122 cases, segmentation errors excluded.
+
+| encoder | cases | oracle = text | bank answers | bank = text |
+|---|---:|---:|---:|---:|
+| `asl_zahir` | 27 | 27 | 24 | 24 |
+| `itlaf` | 27 | 27 | 0 | 0 |
+| `luqata` | 30 | 29 | 14 | 11 |
+| `trust_loss` | 21 | 21 | 18 | 18 |
+| `unknown_owner` | 17 | 15 | 12 | 11 |
+| **total** | **122** | **119** | **68** | **64** |
+
+**Read this as a fit, not an accuracy.** The rules were written and corrected against these same 122 texts. The first pass agreed on 105. Each of the 14 cases fixed since then rests on a rule that a text states (Majmaʿ al-Fiqh's traffic-accident exemptions as quoted in islamqa.345284, «يضاف الحكم إلى المباشر», «البينة على المدعي»). Only a held-out tranche measures whether the rules generalise.
+
+**The three recorded gaps** are all answers that permit a *choice* between rulings, which a single-valued ruling cannot hold:
+- islamqa.126387.f001: charity or the officials, never keeping it;
+- islamqa.107436.f001: public money spent on the public, with the state as owner;
+- islamqa.287215.f002: hold her share or give it in charity.
+
+The next schema step is a ruling *set* (the permitted options), with agreement meaning the oracle's ruling is a member.
+
+**What the rules add to the bank**, by how often they decide a case:
+- trust and fault: `hand_of_trust` 17, `mubashir_liable` 11, `mutasabbib_by_fault` 5;
+- the Majmaʿ al-Fiqh exemptions: `victim_fault` 3, `quwwa_qahira` 1, `mubashir_first` 2;
+- finds: `trivial_find` 5, `haram_makka` 4 (this rule fixes the 3 encoding errors), `rikaz` 4, and the two animal rules.
+
+The `bank` rule still decides 24 cases, all in `asl_zahir`.
