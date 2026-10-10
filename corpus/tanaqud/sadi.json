@@ -1,0 +1,299 @@
+{
+ "register": "al-Saʿdī, al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa: apparent contradictions inside the bank, resolved by the bank",
+ "method": "Two qawāʿid, each read without its qayd, rule opposite ways on a shared case. The pair is resolved by the bank's own order (Usul.resolve: jamʿ, naskh, tarjīḥ, tawaqquf) and its rules of reading (Q29: a word is read with what is attached to it; Q57: give effect to both wherever possible). The qayd is always the author's own sentence; nothing is imported.",
+ "witness": "archive-pdf1995",
+ "module": "Usul.Tanaqud",
+ "lean": [
+  "Usul.Tanaqud.Pair",
+  "Usul.Tanaqud.Pair.jam",
+  "Usul.Tanaqud.Pair.Clash",
+  "Usul.Tanaqud.Pair.jam_first",
+  "Usul.Tanaqud.Pair.jam_second",
+  "Usul.Tanaqud.resolve_takes_jam"
+ ],
+ "proved_earlier": [
+  {
+   "rules": [
+    13,
+    36
+   ],
+   "lean": [
+    "Usul.Muamalat.q13_q36_consistent"
+   ]
+  },
+  {
+   "rules": [
+    26,
+    43
+   ],
+   "lean": [
+    "Usul.Muamalat.q26_q43_consistent"
+   ]
+  },
+  {
+   "rules": [
+    51,
+    54
+   ],
+   "lean": [
+    "Usul.Muamalat.q51_q54_consistent"
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "id": "T-01",
+   "rules": [
+    13,
+    27
+   ],
+   "case_en": "A muḥrim forgetfully kills game: Q13 makes destruction compensable whatever the mental state; Q27 discharges a prohibited act done in forgetfulness.",
+   "resolution": "jam",
+   "qayd_en": "Whose right: a human's right follows Q13, God's right follows Q27.",
+   "author": [
+    {
+     "ref": "src:archive-pdf1995#q013",
+     "excerpt_ar": "والفرق بينه وبين أموال الآدميين : أن الحق في قتل الصيد للمحرم لله» والإأثم مترتب على القصد» فكذلك الجزاءء وهذاالقول أصح"
+    }
+   ],
+   "reading_rules": [
+    29
+   ],
+   "lean": [
+    "Usul.Tanaqud.t1",
+    "Usul.Tanaqud.t1_clash",
+    "Usul.Tanaqud.t1_jam"
+   ]
+  },
+  {
+   "id": "T-02",
+   "rules": [
+    20,
+    25
+   ],
+   "case_en": "The entitled is unknown and the thing indivisible: Q20 treats the unknown owner as absent; Q25 casts lots.",
+   "resolution": "jam",
+   "qayd_en": "Known competing claimants follow Q25; an owner nobody can identify follows Q20.",
+   "author": [
+    {
+     "ref": "src:archive-pdf1995#q020",
+     "excerpt_ar": "يعنى إذا علمنا أن المال ملك للغير» ولكن ذلك الغير تعذر علينا معرفته"
+    },
+    {
+     "ref": "src:archive-pdf1995#q025",
+     "excerpt_ar": "فمتى تشاح اثنان فأكثر"
+    }
+   ],
+   "reading_rules": [
+    29
+   ],
+   "lean": [
+    "Usul.Tanaqud.t2",
+    "Usul.Tanaqud.t2_clash",
+    "Usul.Tanaqud.t2_jam"
+   ]
+  },
+  {
+   "id": "T-03",
+   "rules": [
+    31,
+    41
+   ],
+   "case_en": "Two expiations owed: Q31 has each cause work its own effect; Q41 merges two acts of worship of one kind.",
+   "resolution": "jam",
+   "qayd_en": "One shared purpose merges (Q41); distinct purposes stay apart (Q31).",
+   "author": [
+    {
+     "ref": "src:archive-pdf1995#q041",
+     "excerpt_ar": "واكتفي عنهما بفعل واحد إذا کان مقصودهما واحدا"
+    },
+    {
+     "ref": "src:archive-pdf1995#q041",
+     "excerpt_ar": "وأما إذا كانت الكفارات متباينة مقاصدها ككفارة ظهار» ويمين بالله"
+    }
+   ],
+   "reading_rules": [
+    29
+   ],
+   "lean": [
+    "Usul.Tanaqud.t3",
+    "Usul.Tanaqud.t3_clash",
+    "Usul.Tanaqud.t3_jam"
+   ]
+  },
+  {
+   "id": "T-04",
+   "rules": [
+    55,
+    57
+   ],
+   "case_en": "A confessor says he meant otherwise: Q57 carries speech on its intent; Q55 binds the confessor even if he claims error.",
+   "resolution": "jam",
+   "qayd_en": "When another's right is attached and he demands the wording, the outward governs (Q55); otherwise the intent (Q57).",
+   "author": [
+    {
+     "ref": "src:archive-pdf1995#q057",
+     "excerpt_ar": "وأما إذا تعلق بكلامه حق للغير فكذلك نعتبر ما نوى إلا أن ذلك الخير إذا طالبه بمقتضى لفظه لم يكن لنا أن نحكم إلا بالظاهر"
+    }
+   ],
+   "reading_rules": [
+    29
+   ],
+   "lean": [
+    "Usul.Tanaqud.t4",
+    "Usul.Tanaqud.t4_clash",
+    "Usul.Tanaqud.t4_jam"
+   ]
+  },
+  {
+   "id": "T-05",
+   "rules": [
+    17,
+    39
+   ],
+   "case_en": "An act done early: Q17 deprives whoever hastens a thing before its time; Q39 allows advancing after the cause, before the condition.",
+   "resolution": "jam",
+   "qayd_en": "Before the cause, Q17; after the cause and before the condition, Q39.",
+   "author": [
+    {
+     "ref": "src:archive-pdf1995#q017",
+     "excerpt_ar": "فإذا تعجل الأمور التي يترتب عليها حكم شرعي قبل وجود أسبابها الصحيحة» لم يفده شيئ وعوقب بنقيض قصده"
+    },
+    {
+     "ref": "src:archive-pdf1995#q039",
+     "excerpt_ar": "ويجوز تقديمها بعد وجود السبب»› وقبل شرط الوجوب وتحققه"
+    }
+   ],
+   "reading_rules": [
+    29
+   ],
+   "lean": [
+    "Usul.Tanaqud.t5",
+    "Usul.Tanaqud.t5_clash",
+    "Usul.Tanaqud.t5_jam"
+   ]
+  },
+  {
+   "id": "T-06",
+   "rules": [
+    4,
+    40
+   ],
+   "case_en": "Someone unable to do the whole of a command: Q4 lifts the obligation with inability; Q40 obliges the part one can do.",
+   "resolution": "jam",
+   "qayd_en": "Inability lifts only the part it reaches, except a part that is a pure means.",
+   "author": [
+    {
+     "ref": "src:archive-pdf1995#q040",
+     "excerpt_ar": "فإن قدر على بعضه وعجز عن باقيه وجب عليه فعل ما قدر عليه» إلا أن يكون المقدور عليه وسيلة محضة"
+    }
+   ],
+   "reading_rules": [
+    29,
+    31
+   ],
+   "lean": [
+    "Usul.Tanaqud.t6",
+    "Usul.Tanaqud.t6_clash",
+    "Usul.Tanaqud.t6_jam",
+    "Usul.Tanaqud.t6_obligedParts"
+   ]
+  },
+  {
+   "id": "T-07",
+   "rules": [
+    21,
+    50
+   ],
+   "case_en": "The unseen foundations of a sold house: Q21 forbids gharar in exchanges; Q50 establishes what follows.",
+   "resolution": "jam",
+   "qayd_en": "What follows a known whole is established with it (Q50); what stands alone falls under Q21.",
+   "author": [
+    {
+     "ref": "src:archive-pdf1995#q050",
+     "excerpt_ar": "وكذلك لا يجوز بيع المجهول الذي لم ير ولم يوصف» لكن إذا بيعت الدار ونحوها دخلت فيها الأساسات"
+    }
+   ],
+   "reading_rules": [
+    29
+   ],
+   "lean": [
+    "Usul.Tanaqud.t7",
+    "Usul.Tanaqud.t7_clash",
+    "Usul.Tanaqud.t7_jam"
+   ]
+  },
+  {
+   "id": "T-08",
+   "rules": [
+    11,
+    52
+   ],
+   "case_en": "A presumption against a contrary indicator: Q11 keeps what was against doubt; Q52 prefers strong indicators over the presumption.",
+   "resolution": "jam",
+   "qayd_en": "The presumption holds where nothing outweighs it; what is stronger than doubt displaces it.",
+   "author": [
+    {
+     "ref": "src:archive-pdf1995#q052",
+     "excerpt_ar": "لأننا إنما قدمنا الأصل حيث لا مرجح سواه» فإذا وجد ما هو أقوى منه وجب تقديم الأرجح"
+    }
+   ],
+   "reading_rules": [
+    29
+   ],
+   "lean": [
+    "Usul.Tanaqud.t8",
+    "Usul.Tanaqud.t8_clash",
+    "Usul.Tanaqud.t8_jam"
+   ]
+  },
+  {
+   "id": "T-09",
+   "rules": [
+    12,
+    45
+   ],
+   "case_en": "Whose consent is needed: Q12 requires mutual consent in exchanges; Q45 needs neither the consent nor the knowledge of one whose consent is not required.",
+   "resolution": "jam",
+   "qayd_en": "Concluding an exchange follows Q12; a unilateral right (cancellation under an option, divorce, manumission, pre-emption) follows Q45.",
+   "author": [
+    {
+     "ref": "src:archive-pdf1995#q045",
+     "excerpt_ar": "فله الفسخ سواء رضي الآخر» أو لم يرضَ» وسواء علم أو لم يعلم"
+    }
+   ],
+   "reading_rules": [
+    29
+   ],
+   "lean": [
+    "Usul.Tanaqud.t9",
+    "Usul.Tanaqud.t9_clash",
+    "Usul.Tanaqud.t9_exchange_side"
+   ]
+  },
+  {
+   "id": "T-10",
+   "rules": [
+    10,
+    26
+   ],
+   "case_en": "A trustee claims the thing perished: Q10 puts proof on the claimant; Q26 accepts the trustee's word.",
+   "resolution": "jam",
+   "qayd_en": "The owner's trust makes the trustee's claim the presumption, so he is the denier of liability (Q10 read by presumption).",
+   "author": [
+    {
+     "ref": "src:archive-pdf1995#q026",
+     "excerpt_ar": "لأن صاحبه ائتمنه ونزله منزلة نفسه"
+    }
+   ],
+   "reading_rules": [
+    11
+   ],
+   "lean": [
+    "Usul.Tanaqud.t10",
+    "Usul.Tanaqud.t10_clash",
+    "Usul.Tanaqud.t10_jam"
+   ]
+  }
+ ]
+}

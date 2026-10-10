@@ -237,12 +237,14 @@ def _lean_names() -> list[str]:
     sigma = [link["lean"] for link in _load(CORPUS / "signature_map.json")["links"]]
     proposals = [n for p in sorted((CORPUS / "proposals").glob("*.json")) for r in _load(p)["rules"] for n in r["lean"]]
     review = [n for p in sorted((CORPUS / "review").glob("*.json")) for n in _review_names(_load(p))]
+    tanaqud = [n for p in sorted((CORPUS / "tanaqud").glob("*.json")) for reg in [_load(p)]
+               for n in [*reg["lean"], *(n for t in reg["pairs"] for n in t["lean"])]]
     citations = [n for p in sorted((CORPUS / "citations").glob("*.json")) for ns in _load(p)["formalises"].values() for n in ns]
     dossier = [n for e in _load(DOSSIER)["entries"] for n in e["lean"]]
     glossary = [n for t in _load(GLOSSARY)["terms"] for n in t.get("lean", [])]
     m8 = [n for p in sorted((CORPUS / "worklists").glob("*_plan.json"))
           for q in _load(p)["selection"] for n in q["reading"]]
-    return sigma + proposals + review + citations + dossier + glossary + m8
+    return sigma + proposals + review + tanaqud + citations + dossier + glossary + m8
 
 
 def _review_names(reg: dict) -> list[str]:
