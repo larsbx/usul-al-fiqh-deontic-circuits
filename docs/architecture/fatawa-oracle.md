@@ -11,8 +11,15 @@ https://files.zadapps.info/m.islamqa.info/dumps/manifest.json
 The pinned snapshot (`dumps/2026-10-04-220000`, all 17 languages, sha256 per file) is in [`corpus/fatawa/sources.json`](../../corpus/fatawa/sources.json).
 
 ```text
-corpus/fatawa/sources.json ──make fatawa──▶ .cache/corpus/fatawa/islamqa-<lang>.ndjson.gz  (sha256-checked)
-                                          └▶ .cache/corpus/fatawa/islamqa-<lang>.jsonl     (answers)
+corpus/fatawa/sources.json ──make fatawa──▶ data/islamqa/raw/islamqa-<lang>.ndjson.gz      (committed; fetched only if absent; sha256-checked)
+                                          └▶ data/islamqa/answers/islamqa-<lang>.jsonl.gz  (committed; byte-deterministic)
+```
+
+Both directories are in Git LFS (`.gitattributes`). After cloning, `git lfs pull --include "data/islamqa/**"` fetches them; CI checkouts skip them. Read the answers with:
+
+```python
+import gzip, json
+answers = [json.loads(l) for l in gzip.open("data/islamqa/answers/islamqa-ar.jsonl.gz", "rt", encoding="utf-8")]
 ```
 
 ## Dump format
@@ -45,5 +52,5 @@ Each line is an event `{serial, op, type, data}` with `op ∈ {created, updated,
 - `source` attributes the answer: mostly the site itself (28.6k ar), al-Munajjid by name (1.5k), and quoted muftīs (Ibn ʿUthaymīn, Ibn Bāz, the Lajna Dāʾima, …). Attribute rulings per answer.
 - `topics` is the site's own taxonomy (ancestor path, top level e.g. الفقه وأصوله: 20,979 ar). 681 ar answers have none.
 - `see_also` (the site's `fatawas`) links related answers: a ready-made citation graph.
-- Text stays in the cache; nothing here is a fatwā issued by this project. Per the harness rule, these answers are **labels to test the kernel against**, not a hidden deontic authority.
+- The text is © IslamQA (all rights reserved) and is committed only because this repository is private: do not make the repository or `data/islamqa` public. Nothing here is a fatwā issued by this project. Per the harness rule, these answers are **labels to test the kernel against**, not a hidden deontic authority.
 - Deltas are not applied by `make fatawa` (the snapshot is pinned for reproducibility); `fold` already handles them.

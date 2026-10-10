@@ -273,6 +273,43 @@ ENCODERS: dict[str, dict] = {
         sadi=[], qawaid=[LAHHAM.format(61)], facts={"in_occasion": B, "general_wording": B},
         out=B, lean="Usul.Dalala.coversBeyondSabab true {in_occasion} {general_wording}",
         py=lambda f: f["in_occasion"] or f["general_wording"]),
+    # Candidate capability fixtures; the six live case gaps are not reclassified.
+    "command_nonverbal_usage": dict(
+        sadi=[], qawaid=[LAHHAM.format(43)],
+        facts={"reading": ("qadiReported", "jamiWriting"), "form": ("writing", "gesture")},
+        out=("literal", "notLiteral", "unsettled"),
+        lean="Usul.CommandSchemata.nonverbalUsage {reading} {form}",
+        py=lambda f: "notLiteral" if f["reading"] == "qadiReported" else
+            "literal" if f["form"] == "writing" else "unsettled"),
+    "command_prophetic_act_usage": dict(
+        sadi=[], qawaid=[LAHHAM.format(43)],
+        facts={"reading": ("abuBarakat", "literalReport", "authorConditional"), "imitation_established": B},
+        out=("literal", "figurative", "unsettled"),
+        lean="Usul.CommandSchemata.propheticActUsage {reading} {imitation_established}",
+        py=lambda f: "figurative" if f["reading"] == "abuBarakat" else
+            "literal" if f["reading"] == "literalReport" or f["imitation_established"] else "unsettled"),
+    "command_obligation_status": dict(
+        sadi=[], qawaid=[LAHHAM.format(43)],
+        facts={"reading": ("qadi", "abuBarakat"),
+               "expression": ("bareCommand", "unqualifiedThreat", "wujubLabel", "fardLabel"),
+               "qarina": ("none",) + HUKM},
+        out=HUKM,
+        lean="Usul.CommandSchemata.obligationStatus {reading} {expression} {qarina}",
+        lits={"qarina": {"none": "none", **{h: f"(some .{h})" for h in HUKM}}},
+        py=lambda f: "wajib" if f["reading"] == "abuBarakat" and f["expression"] != "bareCommand" else
+            "wajib" if f["qarina"] == "none" else f["qarina"]),
+    "command_intended_usage": dict(
+        sadi=[], qawaid=[LAHHAM.format(43)],
+        facts={"reading": ("qadiReport", "karkhiRazi", "abuBarakat", "qadiArgument"),
+               "intended": ("recommendation", "permission")},
+        out=("literal", "figurative", "unsettled"),
+        lean="Usul.CommandSchemata.intendedUsage {reading} {intended}",
+        py=lambda f: {
+            ("qadiReport", "recommendation"): "literal", ("qadiReport", "permission"): "literal",
+            ("karkhiRazi", "recommendation"): "figurative", ("karkhiRazi", "permission"): "unsettled",
+            ("abuBarakat", "recommendation"): "unsettled", ("abuBarakat", "permission"): "figurative",
+            ("qadiArgument", "recommendation"): "literal", ("qadiArgument", "permission"): "figurative",
+        }[(f["reading"], f["intended"])]),
 }
 
 

@@ -5,14 +5,17 @@ the IslamQA app and website download for offline reading, listed in
 ``{base}/dumps/manifest.json``. Each line is an event ``{op, type, data}``; a
 snapshot is all ``created``, later deltas also ``updated``/``deleted``. Folding
 the events gives the current database; answers are then flattened to records.
-Dumps and records live in the cache only (never committed).
+Dumps and records are committed under ``data/islamqa`` (Git LFS; private repo).
 """
 
 from __future__ import annotations
 
+import gzip
 import html
+import json
 import re
 from collections.abc import Iterable, Mapping
+from pathlib import Path
 
 SITE = "https://islamqa.info"
 _BREAK = re.compile(r"</p>|<br\s*/?>|</li>|</h\d>", re.I)
@@ -75,3 +78,10 @@ def answer_record(d: Mapping) -> dict:
 
 def answers(db: Mapping[Key, dict]) -> list[dict]:
     return [answer_record(d) for (t, _), d in sorted(db.items(), key=lambda kv: kv[0][1]) if t == "answer"]
+
+
+def write_jsonl_gz(path: Path, records: Iterable[Mapping]) -> None:
+    """Byte-deterministic gzip (no name, mtime 0): regenerating leaves no diff."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "wb") as raw, gzip.GzipFile(filename="", mode="wb", fileobj=raw, mtime=0) as gz:
+        gz.writelines((json.dumps(r, ensure_ascii=False) + "\n").encode() for r in records)

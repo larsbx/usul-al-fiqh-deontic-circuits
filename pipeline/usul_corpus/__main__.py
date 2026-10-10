@@ -6,9 +6,11 @@
     python -m usul_corpus signature   # regenerate the Lean Σ-coverage check
     python -m usul_corpus takhrij     # regenerate the takhrīj guards and report
     python -m usul_corpus m8-worklist [--check]  # reconcile committed M8 scope
+    python -m usul_corpus m5-commands [--fetch-source]  # replay candidate capability receipts
     python -m usul_corpus docs        # render the dossier and glossary pages from corpus/dossier
+    python -m usul_corpus reception   # count the citers' citations of each cited work (cached citers only)
     python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
-    python -m usul_corpus fatawa [--lang L] [--refresh]   # IslamQA offline dumps → .cache/corpus/fatawa/*.jsonl
+    python -m usul_corpus fatawa [--lang L] [--refresh]   # IslamQA offline dumps → data/islamqa/answers/*.jsonl.gz
 """
 
 from __future__ import annotations
@@ -19,7 +21,7 @@ import json
 import sys
 from pathlib import Path
 
-from .fatawa import answers, fold, snapshot_witnesses
+from .fatawa import answers, fold, snapshot_witnesses, write_jsonl_gz
 from .fetch import fetch
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
@@ -38,6 +40,7 @@ from .verses import link_commentary, segment_verse_block
 ROOT = Path(__file__).resolve().parents[2]
 CORPUS = ROOT / "corpus"
 CACHE = ROOT / ".cache" / "corpus"
+ISLAMQA = ROOT / "data" / "islamqa"
 DOSSIER = CORPUS / "dossier" / "refinements.json"
 GLOSSARY = CORPUS / "dossier" / "glossary.json"
 FETCHABLE = {"located", "located_ocr"}
@@ -278,18 +281,48 @@ def cmd_m8_worklist(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_m5_commands(args: argparse.Namespace) -> int:
+    from . import m5_commands
+    plan = _load(CORPUS / m5_commands.PLAN)
+    try:
+        m5_commands.validate(plan, CORPUS)
+        if args.fetch_source:
+            data = m5_commands.fetch_locked_source(plan, CORPUS, CACHE)
+        else:
+            data = (CACHE / f"{m5_commands.WITNESS}.txt").read_bytes()
+        m5_commands.validate_source(plan, data)
+    except (ValueError, KeyError, OSError) as e:
+        print(f"m5-commands: {e}", file=sys.stderr)
+        return 1
+    print(f"ok: {len(plan['fixtures'])} M5 capability fixtures + full locked source; four original command gaps remain open")
+    return 0
+
+
 def docs_pages() -> dict[Path, str]:
     """The generated documentation pages, keyed by path: the dossier and the glossary."""
     from .dossier import render_dossier, render_glossary
     records = {r["id"]: r for p in (CORPUS / "records").glob("*.jsonl") for r in map(json.loads, p.read_text(encoding="utf-8").splitlines())}
     glossary = _load(GLOSSARY)
+    from .reception import render_counts
+    titles = {w["id"]: (w["title_tr"], w.get("reception", {}).get("genre", "")) for w in _load(CORPUS / "registry.json")["works"]}
     return {ROOT / "docs/architecture/dossier.md": render_dossier(_load(DOSSIER), records, {t["key"]: t for t in glossary["terms"]}),
-            ROOT / "docs/glossary.md": render_glossary(glossary, records)}
+            ROOT / "docs/glossary.md": render_glossary(glossary, records),
+            ROOT / "docs/architecture/reception-counts.md": render_counts(_load(CORPUS / "reception" / "report.json"), titles)}
 
 
 def cmd_docs(_: argparse.Namespace) -> int:
     for path, text in docs_pages().items():
         path.write_text(text, encoding="utf-8")
+    return 0
+
+
+def cmd_reception(_: argparse.Namespace) -> int:
+    from .reception import build
+    rep = build(_load(CORPUS / "registry.json"), CACHE)
+    _dump(CORPUS / "reception" / "report.json", rep)
+    for work, c in sorted(rep["counts"].items(), key=lambda kv: -kv[1]["total"]):
+        print(f"{work:40} {c['total']:>6}  {c['by_scholar']}")
+    print(f"missing citers: {rep['missing'] or 'none'}", file=sys.stderr)
     return 0
 
 
@@ -299,28 +332,28 @@ def cmd_signature(_: argparse.Namespace) -> int:
 
 
 def cmd_fatawa(args: argparse.Namespace) -> int:
-    """Pinned IslamQA snapshot (one dump per language) → answers JSONL, sha256-checked."""
+    """Pinned IslamQA snapshot (committed under data/islamqa/raw, fetched if absent) → answers, sha256-checked."""
     import gzip
 
-    cache = CACHE / "fatawa"
-    dump = _load(CORPUS / "fatawa" / "sources.json")["dump"]
-    for w in snapshot_witnesses(dump):
+    raw = ISLAMQA / "raw"
+    for w in snapshot_witnesses(_load(CORPUS / "fatawa" / "sources.json")["dump"]):
         if args.lang not in (None, w["lang"]):
             continue
-        entry = fetch(w, cache, refresh=args.refresh)
+        entry = fetch(w, raw, refresh=args.refresh)
         if entry["sha256"] != w["sha256"]:
             print(f"{w['id']}: sha256 {entry['sha256']} != pinned {w['sha256']}", file=sys.stderr)
             return 1
-        with gzip.open(cache / f"{w['id']}.ndjson.gz", "rt", encoding="utf-8") as f:
+        with gzip.open(raw / f"{w['id']}.ndjson.gz", "rt", encoding="utf-8") as f:
             records = answers(fold(map(json.loads, f)))
-        out = cache / f"{w['id']}.jsonl"
-        out.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records), encoding="utf-8")
+        out = ISLAMQA / "answers" / f"{w['id']}.jsonl.gz"
+        write_jsonl_gz(out, records)
         print(f"{w['id']:12} {len(records):>6} answers  → {out.relative_to(ROOT)}")
     return 0
 
 
 def cmd_validate(_: argparse.Namespace) -> int:
     import jsonschema  # test-time dependency only
+    from . import m5_commands
 
     schemas = ROOT / "schemas"
     reg = jsonschema.Draft202012Validator(_load(schemas / "corpus_registry.schema.json"))
@@ -340,7 +373,11 @@ def cmd_validate(_: argparse.Namespace) -> int:
     for link in _load(CORPUS / "signature_map.json")["links"]:
         hits = sum(_link_matches(link, r) for r in records)
         errors += [f"signature_map: {link['lean']} resolves to {hits} records (want 1)"] * (hits != 1)
-    print("\n".join(errors) or f"ok: registry + {len(ids)} records + signature map")
+    try:
+        m5_commands.validate(_load(CORPUS / m5_commands.PLAN), CORPUS)
+    except (ValueError, KeyError, OSError) as e:
+        errors.append(f"m5-commands: {e}")
+    print("\n".join(errors) or f"ok: registry + {len(ids)} records + signature map + M5 receipts")
     return 1 if errors else 0
 
 
@@ -359,7 +396,11 @@ def main(argv: list[str] | None = None) -> int:
     m = sub.add_parser("m8-worklist")
     m.add_argument("--check", action="store_true")
     m.set_defaults(run=cmd_m8_worklist)
+    m5 = sub.add_parser("m5-commands", help="check candidate command capabilities and source receipts")
+    m5.add_argument("--fetch-source", action="store_true", help="restore the full pinned witness without repinning")
+    m5.set_defaults(run=cmd_m5_commands)
     sub.add_parser("docs").set_defaults(run=cmd_docs)
+    sub.add_parser("reception").set_defaults(run=cmd_reception)
     fa = sub.add_parser("fatawa")
     fa.add_argument("--lang")
     fa.add_argument("--refresh", action="store_true")

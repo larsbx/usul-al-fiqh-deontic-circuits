@@ -62,6 +62,14 @@ Coverage counts derivability under the candidate encoding. Madhhab coverage uses
 
 Pipeline details: [`architecture/formalization-pipeline.md`](architecture/formalization-pipeline.md).
 
+**M5 command capabilities (2026-10-09).** Four candidate schemata now express the named
+readings in Ibn al-Laḥḥām 43.f001, f003, f004 and f007, with full-source replay, original
+case receipts and explicit open interpretation questions. The four live command gaps
+and the other two gaps remain open; capability fixtures add no annotations to the
+generated aggregate above. Writing is not extended to gesture, conditional imitation is
+preserved, and command naming does not change a given intended ruling. See the
+[source contrasts and replay instructions](architecture/m5-command-schemata-2026-10-09.md).
+
 ---
 
 ## 1. Source → layer map
