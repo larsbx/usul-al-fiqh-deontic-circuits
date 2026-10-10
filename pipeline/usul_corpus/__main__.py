@@ -12,6 +12,7 @@
     python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
     python -m usul_corpus fatawa [--lang L] [--refresh]   # IslamQA offline dumps → data/islamqa/answers/*.jsonl.gz
     python -m usul_corpus labels      # candidate ḥukm labels + splits for the Arabic answers → data/islamqa/labels
+    python -m usul_corpus bank-review # review the labels with the deontic-circuits bank; fill the review sample
 """
 
 from __future__ import annotations
@@ -25,6 +26,7 @@ from pathlib import Path
 from . import hadith
 from .fatawa import answers, fold, snapshot_witnesses, write_jsonl_gz
 from .labels import label, report, review_sample
+from .bank_review import en_vote, lean_guards, review as bank_review
 from .fetch import fetch
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
@@ -387,6 +389,46 @@ def cmd_labels(_: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_bank_review(_: argparse.Namespace) -> int:
+    """Bank verdict per candidate label (LFS), English cross-check report, triage of the review sample (gold stays human)."""
+    import gzip
+    from collections import Counter
+
+    def read(p: Path) -> list[dict]:
+        with gzip.open(p, "rt", encoding="utf-8") as f:
+            return [json.loads(l) for l in f]
+
+    en = {r["id"]: en_vote((r.get("summary") or "") + " " + (r["answer"] or "")) for r in read(ISLAMQA / "answers" / "islamqa-en.jsonl.gz")}
+    labels = read(ISLAMQA / "labels" / "islamqa-ar.labels.jsonl.gz")
+    verdicts = [{"id": l["id"], "candidate": l["hukm"], **bank_review(l, en.get(l["id"]))} for l in labels]
+    write_jsonl_gz(ISLAMQA / "labels" / "islamqa-ar.bank.jsonl.gz", verdicts)
+
+    labelled = [v for v in verdicts if v["candidate"]]
+    voted = [v for v in labelled if v["en"]]
+    classes = ("confirmed", "consistent", "rejected", "conflict", "no_reading")
+    rep = {
+        "labelled": len(labelled),
+        "class": {c: sum(v["class"] == c for v in labelled) for c in classes},
+        "class_by_hukm": {h: dict(Counter(v["class"] for v in labelled if v["candidate"] == h)) for h in ("wajib", "mandub", "mubah", "makruh", "haram")},
+        "english_agreement_by_class": {c: {"agree": sum(v["en"] == v["candidate"] for v in voted if v["class"] == c),
+                                           "voted": sum(v["class"] == c for v in voted)} for c in classes},
+        "priority": dict(Counter(v["priority"] for v in labelled)),
+    }
+    _dump(CORPUS / "fatawa" / "bank_review_report.json", rep)
+
+    by_id = {v["id"]: v for v in verdicts}
+    review = CORPUS / "fatawa" / "review" / "labels-sample.jsonl"
+    sample = [json.loads(l) for l in review.read_text(encoding="utf-8").splitlines()]
+    for x in sample:
+        v = by_id[x["id"]]
+        x |= {"bank": {k: v[k] for k in ("class", "set", "steps", "en")}, "priority": v["priority"]}
+    review.write_text("".join(json.dumps(x, ensure_ascii=False) + "\n" for x in sample), encoding="utf-8")
+    (ROOT / "formal/lean/UsulTest/FatawaBank.lean").write_text(lean_guards(), encoding="utf-8")
+    print(json.dumps({k: rep[k] for k in ("class", "priority")}, ensure_ascii=False))
+    print("review sample priority:", dict(Counter(x["priority"] for x in sample)))
+    return 0
+
+
 def cmd_validate(_: argparse.Namespace) -> int:
     import jsonschema  # test-time dependency only
     from . import m5_commands
@@ -438,6 +480,7 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("docs").set_defaults(run=cmd_docs)
     sub.add_parser("reception").set_defaults(run=cmd_reception)
     sub.add_parser("labels").set_defaults(run=cmd_labels)
+    sub.add_parser("bank-review").set_defaults(run=cmd_bank_review)
     fa = sub.add_parser("fatawa")
     fa.add_argument("--lang")
     fa.add_argument("--refresh", action="store_true")

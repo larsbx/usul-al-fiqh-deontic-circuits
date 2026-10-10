@@ -1,0 +1,64 @@
+{
+  "labelled": 14360,
+  "class": {
+    "confirmed": 8619,
+    "consistent": 4481,
+    "rejected": 139,
+    "conflict": 1120,
+    "no_reading": 1
+  },
+  "class_by_hukm": {
+    "wajib": {
+      "confirmed": 2943,
+      "conflict": 395,
+      "rejected": 13
+    },
+    "mandub": {
+      "confirmed": 560,
+      "conflict": 37
+    },
+    "mubah": {
+      "consistent": 4481,
+      "conflict": 300,
+      "confirmed": 200,
+      "rejected": 118
+    },
+    "makruh": {
+      "confirmed": 98,
+      "conflict": 15
+    },
+    "haram": {
+      "confirmed": 4818,
+      "conflict": 373,
+      "rejected": 8,
+      "no_reading": 1
+    }
+  },
+  "english_agreement_by_class": {
+    "confirmed": {
+      "agree": 2846,
+      "voted": 3457
+    },
+    "consistent": {
+      "agree": 1626,
+      "voted": 1874
+    },
+    "rejected": {
+      "agree": 55,
+      "voted": 77
+    },
+    "conflict": {
+      "agree": 415,
+      "voted": 565
+    },
+    "no_reading": {
+      "agree": 0,
+      "voted": 0
+    }
+  },
+  "priority": {
+    "medium": 9395,
+    "high": 2119,
+    "low": 2846
+  }
+}

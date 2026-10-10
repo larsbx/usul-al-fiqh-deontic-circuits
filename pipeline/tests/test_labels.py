@@ -117,3 +117,7 @@ def test_review_sample_is_stratified_deterministic_and_blank_for_gold():
     assert s == review_sample(list(reversed(_labels())), titles, per_class=2)
     assert [x["candidate"] for x in s].count("haram") == 2 and [x["candidate"] for x in s].count(None) == 2
     assert all(x["gold"] is None and x["title"] == titles[x["id"]] for x in s)
+
+
+def test_plural_status_nouns_are_not_rulings():
+    assert hukms("واجبات الصلاة") == [] and hukms("هذا واجب") == [("wajib", "+")]
