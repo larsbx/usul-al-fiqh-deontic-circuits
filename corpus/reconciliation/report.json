@@ -1,14 +1,14 @@
 {
-  "entries": 146,
+  "entries": 150,
   "stages": {
     "jam": 16,
-    "tarjih": 122,
-    "tawaqquf": 8
+    "tarjih": 123,
+    "tawaqquf": 11
   },
   "standing": {
-    "against_reading": 62,
+    "against_reading": 63,
     "for_reading": 76,
-    "tawaqquf": 8
+    "tawaqquf": 11
   },
   "worklist": {
     "asl_zahir": [
@@ -84,6 +84,9 @@
     ],
     "cause_from_one_of_two": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000"
+    ],
+    "concurrent_condition": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f003"
     ],
     "continuity": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f009"

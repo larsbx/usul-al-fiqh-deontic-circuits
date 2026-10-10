@@ -924,6 +924,34 @@ def ownedBeforePayment (necessity : Bool) : Bool := necessity
 the former owner cut («وقد انقطعت علق البائع منه»); the undetermined needs qabḍ. -/
 def inNewOwnersDaman (determined : Bool) : Bool := determined
 
+/-- Qāʿida 52: disposal before qabḍ is barred only in the undetermined («جادة المذهب وهو أن لا
+ضمان ولا منع من التصرف إلا في المبهم خاصة»), and where the disposer's right is not settled: the
+stipend, «شيء مغيب لا يدرى أيصل إليه أم لا», and the alms, «لا تملك بدون القبض». -/
+def disposeBeforeQabd (mubham settled : Bool) : Bool := !mubham && settled
+
+/-- Qāʿida 54: one may not dispose of a thing so as to extinguish another's right in it without
+his leave, whether the right was taken, demanded, or only established («والصحيح أنه لا يجوز
+أيضا»); a disposal that leaves the right to a substitute is allowed. -/
+def mayDisposeOver (extinguishes : Bool) : Bool := !extinguishes
+
+/-- Qāʿida 56: a contract's condition of capacity suffices when concurrent with it («المنصوص عن
+أحمد الاكتفاء بالمقارنة في الصحة»), against the wajh that it must precede. -/
+def conditionMet (prior concurrent : Bool) : Bool := prior || concurrent
+
+/-- Qāʿida 58: desisting at once from what one is engaged in is not doing the forbidden, unless
+one began knowing the prohibition imminent («لإقدامه على الفعل مع علمه بتحريمه في وقته لا سيما مع
+قرب الوقت»). -/
+def desistIsAct (foresaw : Bool) : Bool := foresaw
+
+/-- Qāʿida 61: a deputy is removed with his principal's removal or death unless his mandate is
+general, a deputy for the Muslims («بخلاف القضاة فإنهم نواب للمسلمين»). -/
+def removedWithPrincipal (general : Bool) : Bool := !general
+
+/-- Qāʿida 62: removal takes effect before it is known (the agent, «المشهور»), except in a public
+office carrying a right of God, «شبيه بنسخ الأحكام لا يثبت قبل بلوغ الناسخ», and the keeper's
+annulment of a deposit, since he holds no disposal but keeping («فلا يصح أن يرفعه مع وجوده»). -/
+def removedBeforeKnowledge (publicOffice keeper : Bool) : Bool := !publicOffice && !keeper
+
 /-! ## Reconciliation refinements (`corpus/reconciliation/ledger.json`)
 
 Each is a jamʿ: a farq the later works cite, conservative over the earlier reading where the farq
