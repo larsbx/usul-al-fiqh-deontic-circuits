@@ -1,5 +1,5 @@
 {
-  "note": "Tranche 4 of al-Ḍaʿīfa (H4): entries 36–45 in order, none skipped. Conventions as in tranche 1; strict muʿtabar (D3); rulings (D2) on qarīna cases. New term: «لا يصح» (#41) bounds the verdict below ḥasan and is mapped by al-Albānī's gloss on the same entry.",
+  "note": "Tranche 4 of al-Ḍaʿīfa (H4): entries 36–45 in order, none skipped. Conventions as in tranche 1; strict muʿtabar (D3); rulings (D2) on qarīna cases. New term: «لا يصح» (#41) is recorded as an upper bound (`albani_bound`), not mapped to a rung.",
   "work": "albani.daifa",
   "cases": [
     {
@@ -314,9 +314,10 @@
       "ref": "src:shamela-12762/v01:p115",
       "excerpt_ar": "\" من أصاب مالا من نهاوش أذهبه الله في نهابر \". لا يصح.",
       "term_ar": "لا يصح.",
-      "albani": "daifJiddan",
+      "albani": "daif",
+      "albani_bound": "upper",
       "kernel": "mawdu",
-      "class": "missing_rule",
+      "class": "derivable",
       "turuq": [
         {
           "madar": "amr_b_al_husayn",
@@ -339,7 +340,7 @@
           ]
         }
       ],
-      "note": "«لا يصح» bounds the verdict (below ḥasan) without naming a rung; it is mapped by his own gloss «وهذا إسناد ساقط» to the shadīd band. The kernel turns a lone kadhdhāb route into mawḍūʿ (as in #27, #28, #40), but here al-Albānī stops at «ساقط», so the kernel is below his verdict: the first such case. The missing rule is when a kadhdhāb in the isnād makes the matn mawḍūʿ rather than sāqiṭ"
+      "note": "«لا يصح» bounds the verdict from above (below ḥasan, so at most ḍaʿīf) without naming a rung (Q11: only the bound is certain). Read as al-Albānī means it (Q57) and with what is attached to it (Q29): «عمرو هذا كذاب كما سبق مرارا», and by his own usage a kadhdhāb's isnād is mawḍūʿ (#16: «الموضوع من أنواع الحديث الضعيف»; #40, the same narrator). The kernel's mawḍūʿ is within the bound, so it agrees with him"
     },
     {
       "n": 42,

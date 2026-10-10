@@ -78,8 +78,9 @@ def test_tranches_are_consecutive():
 
 @pytest.mark.parametrize("c", CASES, ids=lambda c: f"daifa-{c['n']}")
 def test_class_matches_kernel(c):
-    """`derivable` exactly when the kernel (as #guard-ed in Lean) agrees with al-Albānī."""
-    assert (c["class"] == "derivable") == (c["kernel"] == c["albani"])
+    """`derivable` exactly when the kernel (as #guard-ed in Lean) agrees with al-Albānī: equal, or
+    within his verdict where his term is only an upper bound («لا يصح»)."""
+    assert (c["class"] == "derivable") == hadith.agrees(c, c["kernel"])
     assert len(c["excerpt_ar"]) <= DAIFA_RIGHTS
     assert all(len(l.get("said_ar", "")) <= DAIFA_RIGHTS for t in c["turuq"] for l in t["links"])
 
@@ -100,9 +101,9 @@ def test_daifa_lean_is_generated():
 def test_coverage_report():
     """The H4 metric, pinned so a change to the kernel or the data shows up in review."""
     assert hadith.coverage(CASES) == {
-        "cases": 45, "coverage": 0.711, "with_isnad": 31, "coverage_with_isnad": 0.581,
-        "qarina_share": 0.244, "coverage_with_rulings": 0.956,
-        "classes": {"derivable": 32, "missing_rule": 2, "qarina": 11}}
+        "cases": 45, "coverage": 0.733, "with_isnad": 31, "coverage_with_isnad": 0.613,
+        "qarina_share": 0.244, "coverage_with_rulings": 0.978,
+        "classes": {"derivable": 33, "missing_rule": 1, "qarina": 11}}
 
 
 @pytest.mark.parametrize("c", CASES, ids=lambda c: f"daifa-{c['n']}")

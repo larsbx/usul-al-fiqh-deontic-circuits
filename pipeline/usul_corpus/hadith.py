@@ -9,6 +9,16 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+VERDICTS = ("mawdu", "daifJiddan", "daif", "hasan", "sahih")
+
+
+def agrees(c: dict, v: str) -> bool:
+    """`v` matches al-Albānī's verdict: exactly, or at most it where his term only bounds it."""
+    if c.get("albani_bound") == "upper":
+        return VERDICTS.index(v) <= VERDICTS.index(c["albani"])
+    return v == c["albani"]
+
+
 CLASSES = ("derivable", "missing_fact", "missing_rule", "genuine_ikhtilaf", "encoding_error", "qarina")
 
 
@@ -90,7 +100,7 @@ def coverage(cases: list[dict]) -> dict:
     return {"cases": len(cases), "coverage": share(cases, "derivable"),
             "with_isnad": len(with_isnad), "coverage_with_isnad": share(with_isnad, "derivable"),
             "qarina_share": share(cases, "qarina"),
-            "coverage_with_rulings": round(sum(c["class"] == "derivable" or c.get("kernel_with_rulings") == c["albani"]
+            "coverage_with_rulings": round(sum(c["class"] == "derivable" or agrees(c, c.get("kernel_with_rulings", ""))
                                                for c in cases) / len(cases), 3) if cases else None,
             "classes": {k: sum(c["class"] == k for c in cases) for k in CLASSES if any(c["class"] == k for c in cases)}}
 

@@ -24,6 +24,7 @@
           "excerpt_ar": {"type": "string", "minLength": 1},
           "term_ar": {"type": "string"},
           "albani": {"$ref": "#/$defs/verdict"},
+          "albani_bound": {"const": "upper", "description": "the term only bounds the verdict from above (e.g. «لا يصح»: below ḥasan)"},
           "kernel": {"$ref": "#/$defs/verdict"},
           "kernel_undefeated": {"$ref": "#/$defs/verdict"},
           "kernel_with_rulings": {"$ref": "#/$defs/verdict"},
