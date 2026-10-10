@@ -1,5 +1,5 @@
 {
- "note": "al-Saʿdī, al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa, part two (al-furūq), tranche 1: the items in order from the opening aṣl, none skipped. madhhab: how the fuqahāʾ he answers rule the two masāʾil (apart or alike). grade: his verdict (sahih: a sound farq; daif: a ṣūrī farq, «الحكم فيهما واحد»; jamDaif: wrongly ruled alike). basis: the kind of reason he gives. grounds: theorems of the bank that carry the reason.",
+ "note": "al-Saʿdī, al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa, part two (al-furūq), tranche 1: the items in order from the opening aṣl, none skipped. madhhab: how the fuqahāʾ he answers rule the two masāʾil (apart or alike). ruling: his own conclusion (apart or alike). grade: his verdict (sahih: a sound farq; daif: a ṣūrī farq, «الحكم فيهما واحد»; jamDaif: wrongly ruled alike). basis: the kind of reason he gives. grounds: theorems of the bank that carry the reason.",
  "work": "sadi.qawaid_jamia",
  "witness": "islamhouse-qj-doc",
  "module": "Usul.Furuq",
@@ -12,7 +12,9 @@
   "Usul.Furuq.Grade.apart",
   "Usul.Furuq.alike_unless_farq",
   "Usul.Furuq.farq_is_maana",
-  "Usul.Furuq.suri_farq_idle"
+  "Usul.Furuq.suri_farq_idle",
+  "Usul.Furuq.Grade.madhhab",
+  "Usul.Furuq.confirms_iff_sahih"
  ],
  "items": [
   {
@@ -23,6 +25,7 @@
    ],
    "madhhab": "apart",
    "grade": "sahih",
+   "ruling": "apart",
    "basis": "maana",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -39,6 +42,7 @@
    ],
    "madhhab": "apart",
    "grade": "sahih",
+   "ruling": "apart",
    "basis": "maana",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -55,6 +59,7 @@
    ],
    "madhhab": "apart",
    "grade": "sahih",
+   "ruling": "apart",
    "basis": "maana",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -71,6 +76,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "no_proof",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -87,6 +93,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "maana",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -103,6 +110,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "naqd",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -121,6 +129,7 @@
    ],
    "madhhab": "apart",
    "grade": "sahih",
+   "ruling": "apart",
    "basis": "maana",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -137,6 +146,7 @@
    ],
    "madhhab": "apart",
    "grade": "sahih",
+   "ruling": "apart",
    "basis": "stated",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -153,6 +163,7 @@
    ],
    "madhhab": "apart",
    "grade": "sahih",
+   "ruling": "apart",
    "basis": "stated",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -169,6 +180,7 @@
    ],
    "madhhab": "apart",
    "grade": "sahih",
+   "ruling": "apart",
    "basis": "stated",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -185,6 +197,7 @@
    ],
    "madhhab": "apart",
    "grade": "sahih",
+   "ruling": "apart",
    "basis": "nass",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -201,6 +214,7 @@
    ],
    "madhhab": "apart",
    "grade": "sahih",
+   "ruling": "apart",
    "basis": "nass",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -217,6 +231,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "qaida",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -236,6 +251,7 @@
    ],
    "madhhab": "alike",
    "grade": "jamDaif",
+   "ruling": "apart",
    "basis": "qaida",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -252,6 +268,7 @@
    ],
    "madhhab": "alike",
    "grade": "jamDaif",
+   "ruling": "apart",
    "basis": "nass",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -271,6 +288,7 @@
    ],
    "madhhab": "alike",
    "grade": "jamDaif",
+   "ruling": "apart",
    "basis": "nass",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -287,6 +305,7 @@
    ],
    "madhhab": "alike",
    "grade": "jamDaif",
+   "ruling": "apart",
    "basis": "nass",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -303,6 +322,7 @@
    ],
    "madhhab": "apart",
    "grade": "sahih",
+   "ruling": "apart",
    "basis": "qaida",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -322,6 +342,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "maana",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -338,6 +359,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "no_sound_hadith",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -356,6 +378,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "maana",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",

@@ -29,6 +29,7 @@ def test_items_are_consecutive():
 def test_grade_is_coherent(i):
     """A sound or weak farq answers masāʾil ruled apart; a weak non-distinction answers masāʾil ruled alike."""
     assert (i["madhhab"] == "alike") == (i["grade"] == "jamDaif")
+    assert (i["ruling"] == i["madhhab"]) == (i["grade"] == "sahih")   # Usul.Furuq.confirms_iff_sahih
 
 
 def test_quotes_are_verbatim_and_in_order():
@@ -56,3 +57,9 @@ def test_lean_is_checked_and_complete():
 def test_tally_is_pinned():
     from collections import Counter
     assert Counter(i["grade"] for i in ITEMS) == {"sahih": 14, "daif": 22, "jamDaif": 5}
+
+
+def test_table_lean_is_generated():
+    from usul_corpus.__main__ import CORPUS, FURUQ_LEAN
+    from usul_corpus.furuq import table_lean
+    assert FURUQ_LEAN.read_text(encoding="utf-8") == table_lean(CORPUS)

@@ -15,6 +15,7 @@
 %    tanaqud/<T>/<row>/<side>  corpus/tanaqud/*.json: each truth-table value (first, second, jamʿ)
 %    tanaqud/<T>/clash      the two readings really disagree somewhere (oracle's own model)
 %    tanaqud/<T>/resolution the register's resolution is jamʿ, the first stage
+%    furuq/<F>/madhhab, furuq/<F>/ruling  corpus/furuq/*.json: each item's two rulings from its grade
 %
 %  Exit status: 0 all agree; 1 a vector disagrees; 2 nothing could be judged
 %  (no data found, or a load warning or error).
@@ -36,6 +37,7 @@ user:message_hook(Message, Kind, _) :-
 :- use_module(library(filesex)).
 :- use_module(hadith_oracle).
 :- use_module(tanaqud_oracle).
+:- use_module(furuq_oracle).
 
 :- initialization(main, main).
 
@@ -84,7 +86,16 @@ run(Root) :-
     directory_file_path(Root, 'corpus/tanaqud', TDir),
     directory_files(TDir, TFs0), msort(TFs0, TFs),
     forall(( member(F, TFs), file_name_extension(_, json, F) ),
-           ( directory_file_path(TDir, F, P), read_json(P, R), forall(member(Pair, R.pairs), tanaqud_pair(Pair)) )).
+           ( directory_file_path(TDir, F, P), read_json(P, R), forall(member(Pair, R.pairs), tanaqud_pair(Pair)) )),
+    directory_file_path(Root, 'corpus/furuq', FDir),
+    directory_files(FDir, FFs0), msort(FFs0, FFs),
+    forall(( member(F, FFs), file_name_extension(_, json, F) ),
+           ( directory_file_path(FDir, F, P), read_json(P, T), forall(member(I, T.items), furuq_item(I)) )).
+
+furuq_item(I) :-
+    rulings(I.grade, M, A),
+    format(atom(N1), "furuq/~w/madhhab", [I.id]), check(N1, I.madhhab, M),
+    format(atom(N2), "furuq/~w/ruling", [I.id]), check(N2, I.ruling, A).
 
 tanaqud_pair(Pair) :-
     atom_concat('T-', Num, Pair.id), atom_number(Num, N),

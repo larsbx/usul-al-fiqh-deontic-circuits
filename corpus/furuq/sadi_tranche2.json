@@ -23,6 +23,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "stated",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -39,6 +40,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "qaida",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -57,6 +59,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "maana",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -73,6 +76,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "qaida",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -91,6 +95,7 @@
    ],
    "madhhab": "apart",
    "grade": "sahih",
+   "ruling": "apart",
    "basis": "qaida",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -109,6 +114,7 @@
    ],
    "madhhab": "alike",
    "grade": "jamDaif",
+   "ruling": "apart",
    "basis": "qaida",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -125,6 +131,7 @@
    ],
    "madhhab": "apart",
    "grade": "sahih",
+   "ruling": "apart",
    "basis": "maana",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -141,6 +148,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "stated",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -157,6 +165,7 @@
    ],
    "madhhab": "apart",
    "grade": "sahih",
+   "ruling": "apart",
    "basis": "qaida",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -175,6 +184,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "stated",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -191,6 +201,7 @@
    ],
    "madhhab": "apart",
    "grade": "sahih",
+   "ruling": "apart",
    "basis": "qaida",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -210,6 +221,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "qaida",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -229,6 +241,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "stated",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -245,6 +258,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "maana",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -261,6 +275,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "qaida",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -279,6 +294,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "qaida",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -298,6 +314,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "maana",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -314,6 +331,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "maana",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -330,6 +348,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "maana",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
@@ -346,6 +365,7 @@
    ],
    "madhhab": "apart",
    "grade": "daif",
+   "ruling": "alike",
    "basis": "qaida",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",

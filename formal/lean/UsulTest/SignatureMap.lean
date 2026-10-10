@@ -378,6 +378,8 @@ import Usul
 #check @Usul.Furuq.alike_unless_farq
 #check @Usul.Furuq.farq_is_maana
 #check @Usul.Furuq.suri_farq_idle
+#check @Usul.Furuq.Grade.madhhab
+#check @Usul.Furuq.confirms_iff_sahih
 #check @Usul.Furuq.f06_naqd
 #check @Usul.Furuq.f13_alike
 #check @Usul.Furuq.f15_apart

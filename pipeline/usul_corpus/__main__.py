@@ -21,7 +21,7 @@ import json
 import sys
 from pathlib import Path
 
-from . import hadith, tanaqud
+from . import furuq, hadith, tanaqud
 from .fatawa import answers, fold, snapshot_witnesses, write_jsonl_gz
 from .fetch import fetch
 from .hudud import extract_hudud
@@ -215,6 +215,7 @@ SCALE_LEAN = ROOT / "formal" / "lean" / "HadithTest" / "ScaleMap.lean"
 DAIFA_LEAN = ROOT / "formal" / "lean" / "HadithTest" / "Daifa.lean"
 SEAM_LEAN = ROOT / "formal" / "lean" / "HadithTest" / "Seam.lean"
 TANAQUD_LEAN = ROOT / "formal" / "lean" / "UsulTest" / "TanaqudTable.lean"
+FURUQ_LEAN = ROOT / "formal" / "lean" / "UsulTest" / "FuruqTable.lean"
 _SOURCES = {"Usul": "corpus/signature_map.json and\n-- corpus/proposals/*.json", "Hadith": "corpus/hadith/*.json"}
 
 
@@ -352,6 +353,7 @@ def cmd_signature(_: argparse.Namespace) -> int:
     DAIFA_LEAN.write_text(hadith.daifa_lean(CORPUS), encoding="utf-8")
     SEAM_LEAN.write_text(hadith.seam_lean(_load(CORPUS / "hadith" / "irwa_join.json")["links"]), encoding="utf-8")
     TANAQUD_LEAN.write_text(tanaqud.table_lean(_load(CORPUS / "tanaqud" / "sadi.json")), encoding="utf-8")
+    FURUQ_LEAN.write_text(furuq.table_lean(CORPUS), encoding="utf-8")
     return 0
 
 

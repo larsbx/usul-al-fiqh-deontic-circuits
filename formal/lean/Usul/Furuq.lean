@@ -33,6 +33,15 @@ def Grade.apart : Grade → Bool
   | .sahih | .jamDaif => true
   | .daif => false
 
+/-- How the fuqahāʾ he answers rule them: apart, unless he faults them for ruling alike. -/
+def Grade.madhhab : Grade → Bool
+  | .sahih | .daif => true
+  | .jamDaif => false
+
+/-- He confirms the madhhab exactly on the sound furūq; every weak grade overturns it. -/
+theorem confirms_iff_sahih (g : Grade) : g.apart = g.madhhab ↔ g = .sahih := by
+  cases g <;> decide
+
 section Asl
 
 variable {α F G β : Type} {H : α → β} {m : α → F} {a b : α}

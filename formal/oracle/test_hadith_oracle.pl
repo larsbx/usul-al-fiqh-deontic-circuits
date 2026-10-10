@@ -56,3 +56,11 @@ test(t8_doubt_keeps_asl) :- jam(8, [shakk], true).
 test(t8_zann_displaces) :- jam(8, [zann], false).
 test(t10_trustee_on_oath) :- jam(10, [true], yamin).
 :- end_tests(tanaqud).
+
+:- use_module(furuq_oracle).
+
+:- begin_tests(furuq).
+test(sound_confirms) :- rulings(sahih, apart, apart).
+test(weak_farq_alike) :- rulings(daif, apart, alike).
+test(weak_jam_apart) :- rulings(jamDaif, alike, apart).
+:- end_tests(furuq).
