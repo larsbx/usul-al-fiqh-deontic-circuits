@@ -344,9 +344,9 @@ ENCODERS: dict[str, dict] = {
         sadi=[], qawaid=[RAJAB.format(50)], facts={"necessity": B},
         out=B, lean="Usul.Refinements.ownedBeforePayment {necessity}", py=lambda f: f["necessity"]),
     "forced_acquisition_solvent": dict(
-        sadi=[], qawaid=[RAJAB.format(50)], facts={"necessity": B, "solvent": B},
-        out=B, lean="Usul.Refinements.ownedBeforePaymentIn {necessity} {solvent}",
-        py=lambda f: f["necessity"] or f["solvent"]),
+        sadi=[], qawaid=[RAJAB.format(50)], facts={"necessity": B, "shufa": B, "solvent": B},
+        out=B, lean="Usul.Refinements.ownedBeforePaymentIn {necessity} {shufa} {solvent}",
+        py=lambda f: f["necessity"] or (f["shufa"] and f["solvent"])),
     "daman_without_qabd": dict(
         sadi=[], qawaid=[RAJAB.format(51)], facts={"determined": B},
         out=B, lean="Usul.Refinements.inNewOwnersDaman {determined}", py=lambda f: f["determined"]),

@@ -984,13 +984,20 @@ theorem otherTongueValidIn_conservative (m a : Bool) :
     otherTongueValidIn m a false = otherTongueValid m a := by
   cases m <;> cases a <;> rfl
 
-/-- Qāʿida 50 with the madhhab's condition on the shufʿa: the taker owns by the demand «إذا كان مليئا
-بالثمن» (al-Inṣāf: «وهو المذهب»; al-Iqnāʿ), a solvent taker inflicting no harm («والضرر لا يزال
-بالضرر»). -/
-def ownedBeforePaymentIn (necessity solvent : Bool) : Bool := necessity || solvent
+/-- Qāʿida 50 with the madhhab's condition on the shufʿa: the shafīʿ owns by the demand «إذا كان
+مليئا بالثمن» (al-Inṣāf: «وهو المذهب»; al-Iqnāʿ), a solvent taker inflicting no harm («والضرر لا
+يزال بالضرر»). The farq is cited for the shufʿa only: Ibn Rajab keeps the seller's annulment apart
+(«اجتمع له العوض والمعوض»), so the other acquisitions keep the reading. -/
+def ownedBeforePaymentIn (necessity shufa solvent : Bool) : Bool := necessity || (shufa && solvent)
 
-theorem ownedBeforePaymentIn_conservative (n : Bool) :
-    ownedBeforePaymentIn n false = ownedBeforePayment n := by
+/-- Outside the shufʿa the refinement is the earlier reading. -/
+theorem ownedBeforePaymentIn_conservative (n v : Bool) :
+    ownedBeforePaymentIn n false v = ownedBeforePayment n := by
   cases n <;> rfl
+
+/-- And so it is for an insolvent shafīʿ. -/
+theorem ownedBeforePaymentIn_insolvent (n s : Bool) :
+    ownedBeforePaymentIn n s false = ownedBeforePayment n := by
+  cases n <;> cases s <;> rfl
 
 end Usul.Refinements

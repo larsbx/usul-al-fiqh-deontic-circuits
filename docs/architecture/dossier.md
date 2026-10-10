@@ -980,8 +980,8 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Conditions**
 
-1. a forced acquisition legislated to remove a harm (the shufʿa leading)
-2. the taker is solvent for the price
+1. the acquisition is the shufʿa (the farq is cited for it alone; the seller's annulment and the other acquisitions keep the reading)
+2. the shafīʿ is solvent for the price
 
 **Texts**
 
@@ -992,7 +992,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f001`: Ibn Rajab's rationale, «والضرر لا يزال بالضرر», and his farq for the seller's annulment: «اجتمع له العوض والمعوض».
   > ما عدده من التمليكات المشروعة لإزالة ضرر ما كالأخذ بالشفعة وأخذ الغراس والبناء من المستعير والمستأجر والزرع ومن الغاصب وتقويم الشقص من العبد المشترك إذا قيل إنه تملك يقف على التقويم، وكالفسوخ التي يستقل بها البائع بعد قبض الثمن يتخرج ذلك كله على وجهين فإن لأصحابنا في الأخذ بالشفعة وجهين: أحدهما: لا يملك بدون دفع الثمن وهو محكي عن ابن عقيل ويشهد له نص أحمد أنه إذا لم يحضر المال مدة طويلة بطلت شفعته
 
-**Rationale.** The ledger found the reading against al-Inṣāf's «وهو المذهب», Kashshāf and al-Iqnāʿ on the shufʿa: the solvent taker owns by the demand, with the price owed. Solvency is the farq the madhhab states, and it answers Ibn Rajab's own ground: «والضرر لا يزال بالضرر», and a solvent taker inflicts no harm. The necessity case keeps the reading.
+**Rationale.** The ledger found the reading against al-Inṣāf's «وهو المذهب», Kashshāf and al-Iqnāʿ on the shufʿa: the solvent taker owns by the demand, with the price owed. Solvency is the farq the madhhab states, and it answers Ibn Rajab's own ground: «والضرر لا يزال بالضرر», and a solvent taker inflicts no harm. The necessity case keeps the reading, and so does every acquisition other than the shufʿa, for which no farq is cited.
 
-**Lean:** `Usul.Refinements.ownedBeforePaymentIn`, `Usul.Refinements.ownedBeforePaymentIn_conservative`  
+**Lean:** `Usul.Refinements.ownedBeforePaymentIn`, `Usul.Refinements.ownedBeforePaymentIn_conservative`, `Usul.Refinements.ownedBeforePaymentIn_insolvent`  
 **Conservative over the earlier reading:** `Usul.Refinements.ownedBeforePaymentIn_conservative`

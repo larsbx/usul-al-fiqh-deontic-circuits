@@ -390,12 +390,12 @@ Results on the tranche:
 | 43: liability for continued holding | `holderLiable`: only one who withholds («فهو غاصب»; «لتعديه بترك الرد مع إمكانه»); after a contract ends, `liableAfterEnding`: where he caused the ending (al-Mughnī's ẓāhir) |
 | 46: whether a void contract is concluded | `voidConcluded`: only a binding one with a pervasive effect (iḥrām, nikāḥ, kitāba) |
 | 49: qabḍ in contracts | `bindsWithoutQabd`: unless qabḍ completes the contract (salam, ribawī) |
-| 50: forced acquisitions and the price | `ownedBeforePayment`: only under necessity («والضرر لا يزال بالضرر»); reconciled to `ownedBeforePaymentIn`: or by a solvent taker |
+| 50: forced acquisitions and the price | `ownedBeforePayment`: only under necessity («والضرر لا يزال بالضرر»); reconciled to `ownedBeforePaymentIn`: or, on the shufʿa only, by a solvent shafīʿ |
 | 51: ḍamān without qabḍ | `inNewOwnersDaman`: what is determined |
 
 Results on the tranche:
 - **12 derivable, 4 ikhtilāf (3 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 16/16 = 1.000, madhhab coverage 15/16 = 0.938. 43.f001's wujūh turn on who caused the contract's ending, so it gets its own reading on that fact rather than a gap. The bank's gaps stay the six original ones.
-- **Reconciliation:** the two new apparent contradictions entered the ledger. The madhhab on the shufʿa (50.f001), «يملكه بمجرد المطالبة إذا كان مليئا بالثمن، وهو المذهب», became a jamʿ on that solvency farq (`ownedBeforePaymentIn`), and solvency answers Ibn Rajab's own «والضرر لا يزال بالضرر». On 43.f001 the muʿtamad (al-Muntahā, Kashshāf) makes the rescinded sale object a trust in the buyer's hand, against `liableAfterEnding`. That is a residue.
+- **Reconciliation:** the two new apparent contradictions entered the ledger. The madhhab on the shufʿa (50.f001), «يملكه بمجرد المطالبة إذا كان مليئا بالثمن، وهو المذهب», became a jamʿ on that solvency farq (`ownedBeforePaymentIn`), restricted to the shufʿa by a `shufa` fact since the farq is cited for it alone, and solvency answers Ibn Rajab's own «والضرر لا يزال بالضرر». On 43.f001 the muʿtamad (al-Muntahā, Kashshāf) makes the rescinded sale object a trust in the buyer's hand, against `liableAfterEnding`. That is a residue.
 
 **Coverage trend:**
 

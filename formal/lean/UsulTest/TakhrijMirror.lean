@@ -326,10 +326,14 @@ import Usul
 #guard (Usul.Refinements.bindsWithoutQabd true) == false
 #guard (Usul.Refinements.ownedBeforePayment false) == false
 #guard (Usul.Refinements.ownedBeforePayment true) == true
-#guard (Usul.Refinements.ownedBeforePaymentIn false false) == false
-#guard (Usul.Refinements.ownedBeforePaymentIn false true) == true
-#guard (Usul.Refinements.ownedBeforePaymentIn true false) == true
-#guard (Usul.Refinements.ownedBeforePaymentIn true true) == true
+#guard (Usul.Refinements.ownedBeforePaymentIn false false false) == false
+#guard (Usul.Refinements.ownedBeforePaymentIn false false true) == false
+#guard (Usul.Refinements.ownedBeforePaymentIn false true false) == false
+#guard (Usul.Refinements.ownedBeforePaymentIn false true true) == true
+#guard (Usul.Refinements.ownedBeforePaymentIn true false false) == true
+#guard (Usul.Refinements.ownedBeforePaymentIn true false true) == true
+#guard (Usul.Refinements.ownedBeforePaymentIn true true false) == true
+#guard (Usul.Refinements.ownedBeforePaymentIn true true true) == true
 #guard (Usul.Refinements.inNewOwnersDaman false) == false
 #guard (Usul.Refinements.inNewOwnersDaman true) == true
 #guard (Usul.Refinements.excessObligatoryIn false false false) == false

@@ -1261,13 +1261,14 @@
     }
    ],
    "conditions": [
-    "a forced acquisition legislated to remove a harm (the shufʿa leading)",
-    "the taker is solvent for the price"
+    "the acquisition is the shufʿa (the farq is cited for it alone; the seller's annulment and the other acquisitions keep the reading)",
+    "the shafīʿ is solvent for the price"
    ],
-   "rationale": "The ledger found the reading against al-Inṣāf's «وهو المذهب», Kashshāf and al-Iqnāʿ on the shufʿa: the solvent taker owns by the demand, with the price owed. Solvency is the farq the madhhab states, and it answers Ibn Rajab's own ground: «والضرر لا يزال بالضرر», and a solvent taker inflicts no harm. The necessity case keeps the reading.",
+   "rationale": "The ledger found the reading against al-Inṣāf's «وهو المذهب», Kashshāf and al-Iqnāʿ on the shufʿa: the solvent taker owns by the demand, with the price owed. Solvency is the farq the madhhab states, and it answers Ibn Rajab's own ground: «والضرر لا يزال بالضرر», and a solvent taker inflicts no harm. The necessity case keeps the reading, and so does every acquisition other than the shufʿa, for which no farq is cited.",
    "lean": [
     "Usul.Refinements.ownedBeforePaymentIn",
-    "Usul.Refinements.ownedBeforePaymentIn_conservative"
+    "Usul.Refinements.ownedBeforePaymentIn_conservative",
+    "Usul.Refinements.ownedBeforePaymentIn_insolvent"
    ],
    "conservative": "Usul.Refinements.ownedBeforePaymentIn_conservative",
    "closes": [

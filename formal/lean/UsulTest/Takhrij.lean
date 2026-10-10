@@ -442,9 +442,9 @@ import Usul
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q049.f001 (derivable)
 #guard (Usul.Refinements.bindsWithoutQabd true) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f000 (derivable)
-#guard (Usul.Refinements.ownedBeforePaymentIn true false) == true
+#guard (Usul.Refinements.ownedBeforePaymentIn true false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f001 (genuine_ikhtilaf)
-#guard (Usul.Refinements.ownedBeforePaymentIn false true) == true
+#guard (Usul.Refinements.ownedBeforePaymentIn false true true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f000 (derivable)
 #guard (Usul.Refinements.inNewOwnersDaman true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f001 (derivable)

@@ -167,6 +167,7 @@
       "class": "derivable",
       "facts": {
         "necessity": true,
+        "shufa": false,
         "solvent": false
       },
       "expected": true,
@@ -178,6 +179,7 @@
       "class": "genuine_ikhtilaf",
       "facts": {
         "necessity": false,
+        "shufa": true,
         "solvent": true
       },
       "expected": true,
