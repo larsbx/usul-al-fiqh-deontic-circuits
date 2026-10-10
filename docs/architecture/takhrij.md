@@ -167,6 +167,10 @@ After this round: 214 cases, **coverage 0.977**, **madhhab coverage 0.648**, **0
 - four of Ibn al-Laḥḥām's points on qāʿida 43 are about naming or policy, not a ruling: whether writing, gesture or the Prophet's act is *called* a command, ḥaqīqa versus majāz, and whether «فرض»/«واجب» is immune to reinterpretation;
 - 52.f007 has no transmitted ruling to test («هذه المسألة لم أرها منقولة»).
 
+## Apparent contradictions
+
+Every ikhtilāf farʿ off the marked madhhab side is run through the kernel's own taʿāruḍ procedure (jamʿ → naskh → tarjīḥ → tawaqquf): see [reconciliation](taarud-reconciliation.md). The residues it leaves against a reading are that reading's refinement worklist.
+
 ## M8: scale-up, first tranche
 
 **Scope reconciliation.** Counts come from committed record IDs minus all existing annotations, not historical estimates. M4 now annotates 196 Ibn Rajab records under 14 qawāʿid, including nine `.f000` additions. PR #29's 1,129 segmented records minus those 196 and tranche 1's 26 left 907 records in 122 qawāʿid with cases. The old “869 in 146” mixed pre-opening counts with all unannotated qawāʿid, including those with no segmented case. PR #30 then added seven segmented records and annotated tranche 2's 25: 1,136 − 196 − 26 − 25 = 889, in 118 qawāʿid. Merged PR #32 then added the list-and-division segmentation and 21 candidate annotations. The unified tranche 3 below preserves those cases and PR #31's eight existing-record annotations, in one 29-record suite; current totals are generated below. Ibn al-Laḥḥām and the global report's totals are separate scopes.
@@ -179,7 +183,7 @@ The unit is a committed farʿ record, which can contain multiple examples. Annot
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.793 | 0 | 0 |
-| All annotation suites | 375 | 0.984 | 0.642 | 0 | 6 |
+| All annotation suites | 375 | 0.984 | 0.647 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -334,7 +338,7 @@ Results on the tranche:
 - **7 derivable, 17 ikhtilāf (3 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 24/24 = 1.000, madhhab coverage 10/24 = 0.417.
 - **What the cases say about the readings:**
   - **Qāʿida 38's marked madhhab is the wording, not the meaning.** Where a side is marked it is against the reading: the ẓāhir of Aḥmad that salam does not conclude a present sale (38.f004), and Abū al-Khaṭṭāb calling the loan with a countervalue void «المذهب» (38.f000). The meaning prevails only where a naṣṣ rules on validity (38.f003) or no side is marked. The reading is kept, being the qāʿida's stated alternative, and the result is recorded: on this qāʿida the madhhab leans to the word.
-  - **Qāʿida 37 splits the same way.** The later contract governs where it binds (the pledge on usurped goods, the pledge of the sold thing, Abū al-Barakāt's qiyās al-madhhab). Majd al-Dīn reports the ẓāhir of Aḥmad against it where it does not bind: a pledge or deposit used with permission is not liable.
+  - **Qāʿida 37 splits the same way.** The later contract governs where it binds (the pledge on usurped goods, the pledge of the sold thing, Abū al-Barakāt's qiyās al-madhhab). Majd al-Dīn reports the ẓāhir of Aḥmad against it where it does not bind: a pledge or deposit used with permission is not liable. Reconciled afterwards by jamʿ on Abū al-Barakāt's binding farq (`successive_by_binding`; see [reconciliation](taarud-reconciliation.md)).
   - **Qāʿida 35 tracks the madhhab** (the ṣaḥīḥ, al-Qāḍī's Khilāf), and 41's single marked side, the ẓāhir of the aṣḥāb on the pledge's value, is the reading.
   - **39.f002 contains Aḥmad's own exception to 39's exception:** «أجعل عتقك صداقك … كل ذلك جائز إذا كانت له نية», an allusion concluding a marriage. The farʿ is annotated for the rajʿa it opens with.
 - **Segmentation finding:** 39's prelude is its general statement, so it has no `.f000`; its two furūʿ are `.f001` and `.f002`.
@@ -360,6 +364,7 @@ Results on the tranche:
 | All, after tranche 5 | 351 | 0.983 | 0.657 | 0 | 6 |
 | M8 tranche 6 alone | 24 | 1.000 | 0.417 | 0 | 0 |
 | All, after tranche 6 | 375 | 0.984 | 0.642 | 0 | 6 |
+| All, after reconciliation (jamʿ on qāʿida 37) | 375 | 0.984 | 0.647 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 

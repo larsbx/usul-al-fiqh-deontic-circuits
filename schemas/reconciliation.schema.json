@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/reconciliation.schema.json",
+  "title": "Reconciliation ledger: the bank's apparent contradictions, graded and resolved by Usul.Reconcile (candidates)",
+  "type": "object",
+  "required": ["suite", "status", "provenance", "entries"],
+  "additionalProperties": false,
+  "$defs": {
+    "grade": {"enum": ["tashih", "nass", "zahir", "qiyas", "jazm", "ashab", "takhrij", "wajh"]}
+  },
+  "properties": {
+    "suite": {"const": "reconciliation"},
+    "status": {"const": "candidate"},
+    "provenance": {"type": "string", "minLength": 1},
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["far", "grades", "jam", "naskh"],
+        "additionalProperties": false,
+        "properties": {
+          "far": {"type": "string"},
+          "grades": {
+            "type": "array", "minItems": 2,
+            "items": {"oneOf": [{"$ref": "#/$defs/grade"},
+                                {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"$ref": "#/$defs/grade"}}]}
+          },
+          "jam": {"oneOf": [{"type": "null"}, {
+            "type": "object", "required": ["encoder", "from", "farq"], "additionalProperties": false,
+            "properties": {"encoder": {"type": "string"}, "from": {"type": "string"}, "farq": {"type": "string"}}}]},
+          "naskh": {"oneOf": [{"type": "null"}, {
+            "type": "object", "required": ["ruling", "ref", "note"], "additionalProperties": false,
+            "properties": {"ruling": {}, "ref": {"type": "string"}, "note": {"type": "string", "minLength": 1}}}]},
+          "note": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

@@ -274,21 +274,21 @@ import Usul
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035.f002 (derivable)
 #guard (Usul.Refinements.priorContractDissolves false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f000 (genuine_ikhtilaf)
-#guard (Usul.Refinements.laterContractGoverns true) == true
+#guard (Usul.Refinements.laterBindingGoverns true true false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001 (genuine_ikhtilaf)
-#guard (Usul.Refinements.laterContractGoverns true) == true
+#guard (Usul.Refinements.laterBindingGoverns true false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f002 (derivable)
-#guard (Usul.Refinements.laterContractGoverns true) == true
+#guard (Usul.Refinements.laterBindingGoverns true false true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f003 (derivable)
-#guard (Usul.Refinements.laterContractGoverns true) == true
+#guard (Usul.Refinements.laterBindingGoverns true false true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f004 (derivable)
-#guard (Usul.Refinements.laterContractGoverns true) == true
+#guard (Usul.Refinements.laterBindingGoverns true false true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f005 (derivable)
-#guard (Usul.Refinements.laterContractGoverns true) == true
+#guard (Usul.Refinements.laterBindingGoverns true true true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f006 (genuine_ikhtilaf)
-#guard (Usul.Refinements.laterContractGoverns true) == true
+#guard (Usul.Refinements.laterBindingGoverns true true false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f007 (genuine_ikhtilaf)
-#guard (Usul.Refinements.laterContractGoverns true) == true
+#guard (Usul.Refinements.laterBindingGoverns true true true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f000 (genuine_ikhtilaf)
 #guard (Usul.Refinements.asKinayaValid true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f001 (genuine_ikhtilaf)

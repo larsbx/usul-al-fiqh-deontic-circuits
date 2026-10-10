@@ -13,7 +13,7 @@ ocr:       ; cd pipeline && $(PY) -m usul_corpus ocr --jobs $(shell nproc)   # n
 build:     ; cd pipeline && $(PY) -m usul_corpus build
 validate:  ; cd pipeline && $(PY) -m usul_corpus validate
 reception: ; cd pipeline && $(PY) -m usul_corpus reception && $(PY) -m usul_corpus docs   # needs the citers cached
-generated: ; $(PY) formal/fixtures/gen_grounded.py && cd pipeline && $(PY) -m usul_corpus signature && $(PY) -m usul_corpus m8-worklist --check && git diff --exit-code ../formal/fixtures ../formal/lean/UsulTest ../formal/lean/HadithTest
+generated: ; $(PY) formal/fixtures/gen_grounded.py && cd pipeline && $(PY) -m usul_corpus signature && $(PY) -m usul_corpus reconcile && $(PY) -m usul_corpus m8-worklist --check && git diff --exit-code ../formal/fixtures ../corpus/reconciliation ../formal/lean/UsulTest ../formal/lean/HadithTest
 lean:      ; cd formal/lean && lake build
 $(TLA_JAR):; mkdir -p $(@D) && curl -sSL -o $@ $(TLA_URL)
 tla: $(TLA_JAR) ; TLA2TOOLS=$(abspath $(TLA_JAR)) formal/tla/check.sh

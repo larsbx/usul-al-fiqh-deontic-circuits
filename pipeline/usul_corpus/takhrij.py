@@ -277,6 +277,11 @@ ENCODERS: dict[str, dict] = {
         sadi=[], qawaid=[RAJAB.format(37)], facts={"successive": B},
         out=B, lean="Usul.Refinements.laterContractGoverns {successive}",
         py=lambda f: f["successive"]),
+    "successive_by_binding": dict(
+        sadi=[], qawaid=[RAJAB.format(37)],
+        facts={"successive": B, "earlier_binding": B, "later_binding": B}, out=B,
+        lean="Usul.Refinements.laterBindingGoverns {successive} {earlier_binding} {later_binding}",
+        py=lambda f: f["successive"] and (f["later_binding"] or not f["earlier_binding"])),
     "words_out_of_nature": dict(
         sadi=[], qawaid=[RAJAB.format(38)], facts={"other_contract_possible": B},
         out=B, lean="Usul.Refinements.asKinayaValid {other_contract_possible}",

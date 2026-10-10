@@ -272,6 +272,14 @@ import Usul
 #guard (Usul.Refinements.priorContractDissolves true) == true
 #guard (Usul.Refinements.laterContractGoverns false) == false
 #guard (Usul.Refinements.laterContractGoverns true) == true
+#guard (Usul.Refinements.laterBindingGoverns false false false) == false
+#guard (Usul.Refinements.laterBindingGoverns false false true) == false
+#guard (Usul.Refinements.laterBindingGoverns false true false) == false
+#guard (Usul.Refinements.laterBindingGoverns false true true) == false
+#guard (Usul.Refinements.laterBindingGoverns true false false) == true
+#guard (Usul.Refinements.laterBindingGoverns true false true) == true
+#guard (Usul.Refinements.laterBindingGoverns true true false) == false
+#guard (Usul.Refinements.laterBindingGoverns true true true) == true
 #guard (Usul.Refinements.asKinayaValid false) == false
 #guard (Usul.Refinements.asKinayaValid true) == true
 #guard (Usul.Refinements.kinayaConcludes false) == true

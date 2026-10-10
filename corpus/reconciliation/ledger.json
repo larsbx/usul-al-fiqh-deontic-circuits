@@ -1,0 +1,1265 @@
+{
+  "suite": "reconciliation",
+  "status": "candidate",
+  "provenance": "Every apparent contradiction in the takhrīj bank (an ikhtilāf farʿ whose reading does not land on a marked madhhab side), graded position by position from the annotated paragraph and resolved by Usul.Reconcile.reconcile. Grades are candidate readings of the text for human review.",
+  "entries": [
+    {
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f005",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Abū al-Khaṭṭāb gives the Ḥanbalīs two wujūh; the non-Ḥanbalī holders carry no madhhab grade."
+    },
+    {
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f001",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The jumhūr of the scholars is not the aṣḥāb's taṣḥīḥ."
+    },
+    {
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f002",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f005",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f006",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001",
+      "grades": [
+        "jazm",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003",
+      "grades": [
+        "ashab",
+        [
+          "qiyas",
+          "ashab"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "«وقياس المنصوص أنه يحنث», with al-Qāḍī's Jāmiʿ."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f001",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f002",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f003",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f000",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two riwāyas, the state at obligation or at performance."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f001",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f003",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f004",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f005",
+      "grades": [
+        "jazm",
+        "takhrij",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f006",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f003",
+      "grades": [
+        "nass",
+        [
+          "nass",
+          "ashab"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Aḥmad's narrations divide; Taqī al-Dīn's choice joins the second."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f005",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f002",
+      "grades": [
+        "nass",
+        [
+          "nass",
+          "tashih"
+        ]
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f003",
+      "grades": [
+        "tashih",
+        [
+          "nass",
+          "ashab"
+        ]
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f004",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f005",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f006",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f008",
+      "grades": [
+        "nass",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f010",
+      "grades": [
+        "ashab",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Abū Ṭālib and al-Athram report from Aḥmad."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f011",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f014",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f000",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f001",
+      "grades": [
+        "takhrij",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f002",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q021.f001",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "«الأظهر» in the qāʿida is Ibn Rajab's."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q021.f002",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f001",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f006",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Targhīb's jazm against Abū al-Khaṭṭāb's second wajh."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f000",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f003",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f004",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Both sides are Ibn Rajab's buildings of the two wujūh."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f007",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f000",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f002",
+      "grades": [
+        "takhrij",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f005",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The naṣṣ al-Mughnī cites is the ḥadīth, not a naṣṣ of Aḥmad."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f002",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Named companions on both sides; their number is not a grade."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f003",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "«وهو الأظهر» is Ibn Rajab's own preference, an author's tarjīḥ, not a label of the madhhab."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f001",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f002",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f004",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f000",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f001",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f002",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f003",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004",
+      "grades": [
+        "zahir",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f000",
+      "grades": [
+        "ashab",
+        "zahir"
+      ],
+      "jam": {
+        "encoder": "successive_by_binding",
+        "from": "successive_contracts",
+        "farq": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f003"
+      },
+      "naskh": null,
+      "note": "Abū al-Barakāt's farq: a non-binding contract does not displace a binding one."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001",
+      "grades": [
+        "ashab",
+        "zahir"
+      ],
+      "jam": {
+        "encoder": "successive_by_binding",
+        "from": "successive_contracts",
+        "farq": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001"
+      },
+      "naskh": null,
+      "note": "«وفرق صاحب المحرر بينهما»: the later authors' ẓāhir is stated «كالرهن», and the binding farq separates the deposit from the pledge."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f006",
+      "grades": [
+        "ashab",
+        "nass"
+      ],
+      "jam": {
+        "encoder": "successive_by_binding",
+        "from": "successive_contracts",
+        "farq": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f003"
+      },
+      "naskh": null,
+      "note": "«لأن الشرط يفسد فيصير وجوده كعدمه»: the void sale binds nothing."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f007",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The binding refinement leaves this farʿ where it was."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f000",
+      "grades": [
+        "ashab",
+        "tashih"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "«وجعله أبو الخطاب في موضع آخر المذهب»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f001",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f002",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f004",
+      "grades": [
+        "ashab",
+        "zahir"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f005",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f006",
+      "grades": [
+        "takhrij",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "«فيخرج في المسألة وجهان التفاتا إلى اللفظ والمعنى»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q039.f001",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q039.f002",
+      "grades": [
+        [
+          "wajh",
+          "ashab"
+        ],
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "«والأولى ما ذكرناه»: Ibn Rajab's preference joins validity where no witnessing is required."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f001",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f002",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005",
+      "grades": [
+        "takhrij",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f000",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f002",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f003",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f000",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f001",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f002",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "«والأظهر» is Ibn Rajab's preference."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f003",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f005",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f006",
+      "grades": [
+        "takhrij",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f007",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f001",
+      "grades": [
+        "wajh",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f003",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f007",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Kāfī's is a possibility (iḥtimāl) supported from Aḥmad's naṣṣ on another masʾala, not a naṣṣ here."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f009",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f001",
+      "grades": [
+        "jazm",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f005",
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f007",
+      "grades": [
+        "nass",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f009",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f011",
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f012",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f003",
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ibn Manṣūr's report is itself a riwāya."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f009",
+      "grades": [
+        "ashab",
+        "zahir"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f004",
+      "grades": [
+        "tashih",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f006",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f007",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f008",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f010",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f014",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f018",
+      "grades": [
+        "ashab",
+        [
+          "ashab",
+          "qiyas"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ṣāḥib al-Talkhīṣ calls it qiyās al-madhhab."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f019",
+      "grades": [
+        "zahir",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f020",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023",
+      "grades": [
+        [
+          "tashih",
+          "nass"
+        ],
+        [
+          "tashih",
+          "nass"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Each riwāya is made the madhhab by a different author."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025",
+      "grades": [
+        "nass",
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Riwāyas 1 and 2 agree that washing is not required."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026",
+      "grades": [
+        "wajh",
+        "wajh",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027",
+      "grades": [
+        "nass",
+        "nass",
+        "tashih"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032",
+      "grades": [
+        "wajh",
+        [
+          "wajh",
+          "ashab"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ibn Rajab gives the better reason for the second wajh."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f009",
+      "grades": [
+        "ashab",
+        "ashab",
+        "takhrij",
+        "takhrij",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f011",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f013",
+      "grades": [
+        "ashab",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f014",
+      "grades": [
+        "ashab",
+        [
+          "tashih",
+          "ashab"
+        ],
+        "ashab",
+        [
+          "nass",
+          "ashab"
+        ],
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f017",
+      "grades": [
+        "nass",
+        [
+          "nass",
+          "ashab"
+        ],
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ibn Abī Mūsā's «أظهر وأصح» is his own preference."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f019",
+      "grades": [
+        "nass",
+        "nass",
+        "takhrij",
+        "takhrij",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The naṣṣ endorses both lot and the middle one."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f025",
+      "grades": [
+        "jazm",
+        "ashab",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f029",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f031",
+      "grades": [
+        "tashih",
+        "ashab",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f034",
+      "grades": [
+        "nass",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f035",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f036",
+      "grades": [
+        "nass",
+        "nass",
+        "takhrij",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f040",
+      "grades": [
+        "takhrij",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Both are al-Qāḍī's takhrīj from the two-guardians case."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f045",
+      "grades": [
+        "wajh",
+        "zahir"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f046",
+      "grades": [
+        "nass",
+        "nass",
+        "nass",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    }
+  ]
+}

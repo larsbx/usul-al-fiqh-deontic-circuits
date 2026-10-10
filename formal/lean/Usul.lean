@@ -3,6 +3,7 @@ import Usul.Signature
 import Usul.Dung
 import Usul.Grounded
 import Usul.Taarud
+import Usul.Reconcile
 import Usul.Qawaid
 import Usul.Sadi
 import Usul.Schema

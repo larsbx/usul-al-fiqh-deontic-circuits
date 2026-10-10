@@ -57,12 +57,14 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f000",
-      "encoder": "successive_contracts",
+      "encoder": "successive_by_binding",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "successive": true
+        "successive": true,
+        "earlier_binding": true,
+        "later_binding": false
       },
-      "expected": true,
+      "expected": false,
       "positions": [
         {
           "who": "al-Qāḍī, Ibn ʿAqīl, al-Mughnī: liable as a loan",
@@ -73,15 +75,17 @@
           "ruling": false
         }
       ],
-      "matches_madhhab": false,
-      "note": "A pledge, then permission to use it: does it become a loan while used? al-Qāḍī, Ibn ʿAqīl, al-Mughnī, al-Talkhīṣ: liable by use, «لأن ذلك حقيقة العارية»; Majd al-Dīn: «ظاهر كلام أحمد أنه لا يصير مضمونا بحال»."
+      "matches_madhhab": true,
+      "note": "A pledge, then permission to use it: does it become a loan while used? al-Qāḍī, Ibn ʿAqīl, al-Mughnī, al-Talkhīṣ: liable by use, «لأن ذلك حقيقة العارية»; Majd al-Dīn: «ظاهر كلام أحمد أنه لا يصير مضمونا بحال». Reconciled (jamʿ, the binding farq of f003): the pledge binds and the permission does not, so it stays a pledge; the reading now takes Majd's ẓāhir of Aḥmad."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001",
-      "encoder": "successive_contracts",
+      "encoder": "successive_by_binding",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "successive": true
+        "successive": true,
+        "earlier_binding": false,
+        "later_binding": false
       },
       "expected": true,
       "positions": [
@@ -95,56 +99,66 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "A deposit, then permission to use it: al-Qāḍī, Ibn ʿAqīl, al-Talkhīṣ: liable while used, «لمصيره عارية»; some later authors: the ẓāhir of Aḥmad is that it is not, as with the pledge."
+      "note": "A deposit, then permission to use it: al-Qāḍī, Ibn ʿAqīl, al-Talkhīṣ: liable while used, «لمصيره عارية»; some later authors: the ẓāhir of Aḥmad is that it is not, as with the pledge. Reconciled (jamʿ): deposit and loan are alike non-binding («ولا اختلاف هاهنا بين العقدين في الجواز»), so the loan governs; Majd distinguishes this case from the pledge («وفرق صاحب المحرر بينهما»)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f002",
-      "encoder": "successive_contracts",
+      "encoder": "successive_by_binding",
       "class": "derivable",
       "facts": {
-        "successive": true
+        "successive": true,
+        "earlier_binding": false,
+        "later_binding": true
       },
       "expected": true,
       "note": "Lending a thing to be pledged: valid by naṣṣ, with Ibn al-Mundhir's report of agreement; liable on the pledger as borrower, a trust with the pledgee. Whether it binds the owner is disputed (al-Ḥārithī, Abū al-Khaṭṭāb)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f003",
-      "encoder": "successive_contracts",
+      "encoder": "successive_by_binding",
       "class": "derivable",
       "facts": {
-        "successive": true
+        "successive": true,
+        "earlier_binding": false,
+        "later_binding": true
       },
       "expected": true,
       "note": "Lending a thing, then pledging it with the borrower: Abū al-Barakāt, «قياس المذهب صحته ويسقط ضمان العارية», the binding trust displacing the non-binding loan."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f004",
-      "encoder": "successive_contracts",
+      "encoder": "successive_by_binding",
       "class": "derivable",
       "facts": {
-        "successive": true
+        "successive": true,
+        "earlier_binding": false,
+        "later_binding": true
       },
       "expected": true,
       "note": "A pledge contracted on usurped goods: «فيصح عندنا … ويبرأ به الغاصب» (Abū Bakr, al-Qāḍī), and likewise deposit, loan or hire to it (Abū al-Khaṭṭāb); al-Qāḍī gives two wujūh for hire, and for muḍāraba clears him only on spending."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f005",
-      "encoder": "successive_contracts",
+      "encoder": "successive_by_binding",
       "class": "derivable",
       "facts": {
-        "successive": true
+        "successive": true,
+        "earlier_binding": true,
+        "later_binding": true
       },
       "expected": true,
       "note": "Pledging the sold thing, still at the seller's risk, before delivery: if valid, the risk lapses, «لأن يده صارت يد ارتهان»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f006",
-      "encoder": "successive_contracts",
+      "encoder": "successive_by_binding",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "successive": true
+        "successive": true,
+        "earlier_binding": true,
+        "later_binding": false
       },
-      "expected": true,
+      "expected": false,
       "positions": [
         {
           "who": "al-Qāḍī, Ibn ʿAqīl: liable after the time",
@@ -155,15 +169,17 @@
           "ruling": false
         }
       ],
-      "matches_madhhab": false,
-      "note": "«If I bring your due by such a time, else the pledge is yours»: a trust until then, then liable, the hold being by a void contract (al-Qāḍī, Ibn ʿAqīl); a riwāya of Aḥmad: never liable, the void condition counting as absent."
+      "matches_madhhab": true,
+      "note": "«If I bring your due by such a time, else the pledge is yours»: a trust until then, then liable, the hold being by a void contract (al-Qāḍī, Ibn ʿAqīl); a riwāya of Aḥmad: never liable, the void condition counting as absent. Reconciled (jamʿ): the void sale binds nothing and does not displace the binding pledge; the reading now takes the riwāya of Aḥmad."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f007",
-      "encoder": "successive_contracts",
+      "encoder": "successive_by_binding",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "successive": true
+        "successive": true,
+        "earlier_binding": true,
+        "later_binding": true
       },
       "expected": true,
       "positions": [

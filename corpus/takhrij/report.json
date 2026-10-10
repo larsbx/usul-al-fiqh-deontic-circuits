@@ -8,9 +8,9 @@
   "segmentation_error": 1
  },
  "coverage": 0.984,
- "madhhab_coverage": 0.642,
+ "madhhab_coverage": 0.647,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 87,
+ "ikhtilaf_matching_madhhab": 89,
  "gaps_open": 6,
  "revisited": 37,
  "revisit_queue": [],
@@ -220,7 +220,7 @@
    "derivable": 1,
    "genuine_ikhtilaf": 2
   },
-  "successive_contracts": {
+  "successive_by_binding": {
    "derivable": 4,
    "genuine_ikhtilaf": 4
   },

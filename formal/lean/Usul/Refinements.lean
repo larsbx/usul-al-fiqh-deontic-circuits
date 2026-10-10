@@ -746,6 +746,25 @@ hand (the pledge used becomes a loan, the pledge on usurped goods clears the usu
 
 def laterContractGoverns (successive : Bool) : Bool := successive
 
+/-- Jamʿ (`corpus/reconciliation/ledger.json`): the later contract governs where it binds, or where
+the earlier one did not. Abū al-Barakāt's farq, «ويسقط ضمان العارية لأنها ليست لازمة، وعقد هذه الأمانة
+لازم» (37.f003), reconciles the reading with Majd's ẓāhir of Aḥmad: a non-binding permission does not
+turn a binding pledge into a loan (37.f000), and a void condition does not displace it (37.f006). -/
+def laterBindingGoverns (successive earlierBinding laterBinding : Bool) : Bool :=
+  successive && (laterBinding || !earlierBinding)
+
+/-- Conservative: where the later contract binds, the earlier reading is unchanged. -/
+theorem laterBindingGoverns_conservative (s e : Bool) :
+    laterBindingGoverns s e true = laterContractGoverns s := by
+  cases s <;> cases e <;> rfl
+
+/-- And where the earlier did not bind (the deposit, the loan, the usurpation). -/
+theorem laterBindingGoverns_unbound_earlier (s l : Bool) :
+    laterBindingGoverns s false l = laterContractGoverns s := by
+  cases s <;> cases l <;> rfl
+
+theorem binding_pledge_survives : laterBindingGoverns true true false = false := rfl
+
 /-! ### Qāʿida 38: contract words joined with what takes them out of their nature
 
 «فهل يفسد العقد بذلك أو يجعل كناية عما يمكن صحته على ذلك الوجه؟ … يلتفت إلى أن المغلب هل هو اللفظ
