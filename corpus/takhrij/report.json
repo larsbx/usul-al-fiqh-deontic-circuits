@@ -8,9 +8,9 @@
   "segmentation_error": 1
  },
  "coverage": 0.985,
- "madhhab_coverage": 0.658,
+ "madhhab_coverage": 0.668,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 100,
+ "ikhtilaf_matching_madhhab": 104,
  "gaps_open": 6,
  "revisited": 37,
  "revisit_queue": [],
@@ -217,24 +217,24 @@
    "derivable": 4,
    "genuine_ikhtilaf": 4
   },
-  "excess_over_sufficient": {
-   "genuine_ikhtilaf": 4
-  },
-  "advanced_worship": {
-   "derivable": 2,
-   "genuine_ikhtilaf": 4
-  },
   "prohibited_worship": {
    "derivable": 2,
    "genuine_ikhtilaf": 2
   },
-  "wording_in_other_tongue": {
-   "derivable": 2,
-   "genuine_ikhtilaf": 3
-  },
   "combining_forms": {
    "derivable": 3,
    "genuine_ikhtilaf": 2
+  },
+  "excess_in_following": {
+   "genuine_ikhtilaf": 4
+  },
+  "advanced_kaffara_at_obligation": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 4
+  },
+  "wording_need_not_learn": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 3
   },
   "substitute_at_obligation": {
    "derivable": 1,

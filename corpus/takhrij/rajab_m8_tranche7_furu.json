@@ -5,13 +5,14 @@
   "cases": [
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f000",
-      "encoder": "excess_over_sufficient",
+      "encoder": "excess_in_following",
       "class": "genuine_ikhtilaf",
       "facts": {
         "separable": false,
-        "lightened": false
+        "lightened": false,
+        "following": true
       },
-      "expected": false,
+      "expected": true,
       "positions": [
         {
           "who": "the wujūh, as derived by al-Qāḍī and Ibn ʿAqīl: the excess is voluntary",
@@ -22,16 +23,17 @@
           "ruling": true
         }
       ],
-      "matches_madhhab": false,
-      "note": "Joining the imām in rukūʿ after the sufficient part of it has passed: does he catch it in the farḍ? The ẓāhir of al-Qāḍī and Ibn ʿAqīl derives it on the two wujūh (where the obligated may not follow the volunteer); Ibn ʿAqīl's iḥtimāl: in following, the excess counts as the obligatory. No madhhab marked."
+      "matches_madhhab": true,
+      "note": "Joining the imām in rukūʿ after the sufficient part of it has passed: does he catch it in the farḍ? The ẓāhir of al-Qāḍī and Ibn ʿAqīl derives it on the two wujūh (where the obligated may not follow the volunteer); Ibn ʿAqīl's iḥtimāl: in following, the excess counts as the obligatory. No madhhab marked. Reconciled (jamʿ): in following the excess counts (Ibn ʿAqīl, «الاتباع قد يسقط الواجب»); al-Inṣāf: whoever catches the rukūʿ catches the rakʿa, «هذا المذهب مطلقا»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f001",
-      "encoder": "excess_over_sufficient",
+      "encoder": "excess_in_following",
       "class": "genuine_ikhtilaf",
       "facts": {
         "separable": false,
-        "lightened": false
+        "lightened": false,
+        "following": false
       },
       "expected": false,
       "positions": [
@@ -49,11 +51,12 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f002",
-      "encoder": "excess_over_sufficient",
+      "encoder": "excess_in_following",
       "class": "genuine_ikhtilaf",
       "facts": {
         "separable": false,
-        "lightened": false
+        "lightened": false,
+        "following": false
       },
       "expected": false,
       "positions": [
@@ -71,11 +74,12 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f003",
-      "encoder": "excess_over_sufficient",
+      "encoder": "excess_in_following",
       "class": "genuine_ikhtilaf",
       "facts": {
         "separable": false,
-        "lightened": false
+        "lightened": false,
+        "following": false
       },
       "expected": false,
       "positions": [
@@ -93,12 +97,13 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f001",
-      "encoder": "advanced_worship",
+      "encoder": "advanced_kaffara_at_obligation",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "due_at_performance": true
+        "due_at_performance": true,
+        "kaffara_changed": true
       },
-      "expected": true,
+      "expected": false,
       "positions": [
         {
           "who": "the unqualified statements of most aṣḥāb: it suffices",
@@ -109,15 +114,16 @@
           "ruling": false
         }
       ],
-      "matches_madhhab": false,
-      "note": "Expiating by fasting before breaking the oath, then breaking it while well off: al-Mughnī: it does not suffice; «وإطلاق الأكثرين مخالف لذلك لأنه كان فرضه في الظاهر فبرئ به», the expiation having dissolved the oath (Abū Bakr ʿAbd al-ʿAzīz)."
+      "matches_madhhab": true,
+      "note": "Expiating by fasting before breaking the oath, then breaking it while well off: al-Mughnī: it does not suffice; «وإطلاق الأكثرين مخالف لذلك لأنه كان فرضه في الظاهر فبرئ به», the expiation having dissolved the oath (Abū Bakr ʿAbd al-ʿAzīz). Reconciled (jamʿ): a kaffāra is judged at its wujūb, so the advanced fast does not suffice once he breaks the oath well off (al-Iqnāʿ, Kashshāf, with al-Mughnī)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f002",
-      "encoder": "advanced_worship",
+      "encoder": "advanced_kaffara_at_obligation",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "due_at_performance": true
+        "due_at_performance": true,
+        "kaffara_changed": false
       },
       "expected": true,
       "positions": [
@@ -135,10 +141,11 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f003",
-      "encoder": "advanced_worship",
+      "encoder": "advanced_kaffara_at_obligation",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "due_at_performance": true
+        "due_at_performance": true,
+        "kaffara_changed": false
       },
       "expected": true,
       "positions": [
@@ -156,10 +163,11 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f004",
-      "encoder": "advanced_worship",
+      "encoder": "advanced_kaffara_at_obligation",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "due_at_performance": false
+        "due_at_performance": false,
+        "kaffara_changed": false
       },
       "expected": false,
       "positions": [
@@ -177,20 +185,22 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f005",
-      "encoder": "advanced_worship",
+      "encoder": "advanced_kaffara_at_obligation",
       "class": "derivable",
       "facts": {
-        "due_at_performance": true
+        "due_at_performance": true,
+        "kaffara_changed": false
       },
       "expected": true,
       "note": "Joining two prayers in the time of the first by tayammum, then the second's time enters and he has water: the second kind, a defect in a condition, «فالصحيح أنه يجزئه»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f006",
-      "encoder": "advanced_worship",
+      "encoder": "advanced_kaffara_at_obligation",
       "class": "derivable",
       "facts": {
-        "due_at_performance": true
+        "due_at_performance": true,
+        "kaffara_changed": false
       },
       "expected": true,
       "note": "Shortening two prayers on a journey in the time of the first, then arriving home before the second's time: the second kind, it suffices («فالصحيح»)."
@@ -259,22 +269,24 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f001",
-      "encoder": "wording_in_other_tongue",
+      "encoder": "wording_need_not_learn",
       "class": "derivable",
       "facts": {
         "meaning_only": true,
-        "able": true
+        "able": true,
+        "need_not_learn": false
       },
       "expected": true,
       "note": "Contract words and the words of divorce: «ما يعتبر معناه دون لفظه», valid in any tongue."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f002",
-      "encoder": "wording_in_other_tongue",
+      "encoder": "wording_need_not_learn",
       "class": "genuine_ikhtilaf",
       "facts": {
         "meaning_only": false,
-        "able": false
+        "able": false,
+        "need_not_learn": false
       },
       "expected": true,
       "positions": [
@@ -292,24 +304,26 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f003",
-      "encoder": "wording_in_other_tongue",
+      "encoder": "wording_need_not_learn",
       "class": "derivable",
       "facts": {
         "meaning_only": false,
-        "able": true
+        "able": true,
+        "need_not_learn": false
       },
       "expected": false,
       "note": "The Friday khuṭba: not valid in another tongue with ability «على الصحيح», valid when unable."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f004",
-      "encoder": "wording_in_other_tongue",
+      "encoder": "wording_need_not_learn",
       "class": "genuine_ikhtilaf",
       "facts": {
         "meaning_only": false,
-        "able": true
+        "able": true,
+        "need_not_learn": true
       },
-      "expected": false,
+      "expected": true,
       "positions": [
         {
           "who": "wajh: not concluded",
@@ -320,18 +334,19 @@
           "ruling": true
         }
       ],
-      "matches_madhhab": false,
-      "note": "The words of nikāḥ: concluded in another tongue when unable; when he can learn the Arabic, two wujūh. No madhhab marked."
+      "matches_madhhab": true,
+      "note": "The words of nikāḥ: concluded in another tongue when unable; when he can learn the Arabic, two wujūh. No madhhab marked. Reconciled (jamʿ): the act is not itself due, so he need not learn the Arabic, «لأن النكاح غير واجب بأصل الشرع» (Kashshāf); al-Inṣāf: «وهو المذهب»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f005",
-      "encoder": "wording_in_other_tongue",
+      "encoder": "wording_need_not_learn",
       "class": "genuine_ikhtilaf",
       "facts": {
         "meaning_only": false,
-        "able": true
+        "able": true,
+        "need_not_learn": true
       },
-      "expected": false,
+      "expected": true,
       "positions": [
         {
           "who": "wajh: not valid",
@@ -342,8 +357,8 @@
           "ruling": true
         }
       ],
-      "matches_madhhab": false,
-      "note": "The words of liʿān: «وحكمه حكم لفظ النكاح»: two wujūh where he can manage the Arabic. No madhhab marked."
+      "matches_madhhab": true,
+      "note": "The words of liʿān: «وحكمه حكم لفظ النكاح»: two wujūh where he can manage the Arabic. No madhhab marked. Reconciled (jamʿ): the act is not itself due, so he need not learn the Arabic, «لأن النكاح غير واجب بأصل الشرع» (Kashshāf); al-Inṣāf: «وهو المذهب»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f000",

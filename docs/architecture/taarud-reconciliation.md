@@ -73,7 +73,7 @@ Some evidence does not speak to the farʿ itself, and is graded lower:
 
 | Stage | Ibn Rajab's reports alone | With the later taṣḥīḥ | After the refinements (current) |
 |---|---|---|---|
-| jamʿ | 3 | 3 | 11 |
+| jamʿ | 3 | 3 | 11 (15 after tranche 7) |
 | tarjīḥ for the reading | 29 | 52 | 52 |
 | tarjīḥ against the reading (residue) | 25 | 67 | 58 |
 | tawaqquf | 71 | 6 | 7 |
@@ -117,6 +117,16 @@ The residues against each reading (`report.json` → `worklist`) are where the r
 | `unknown_condition_in_fact` (`countsAsMetIn`, qāʿidas 64–65) | «لأن الاعتبار في العقود بما في نفس الأمر» (Kashshāf). In a transaction whose unknown condition is the actor's own authority, the condition counts as it is in fact. | 4 furūʿ move: the disposal under an unknown permission, the khiyār disposal, the sale by an unknowing heir, the release of an unknown debt. ṭalāq, ʿitq, nikāḥ and the runaway's sale (a condition of the object) keep the reading. |
 
 With these and qāʿida 37 there are 11 jamʿ. The residues fall to 58 and madhhab coverage reaches 0.668.
+
+Tranche 7 added 12 contradictions, and its later taṣḥīḥ gave four more jamʿ:
+
+| Refinement | Farq | Furūʿ moved |
+|---|---|---|
+| `excessObligatoryIn` (qāʿida 3) | Ibn ʿAqīl's «الاتباع قد يسقط الواجب» | 3.f000: the rakʿa is caught, «هذا المذهب مطلقا» |
+| `advancedSufficesIn` (qāʿida 5) | «الاعتبار في الكفارات بحالة الوجوب» | 5.f001 |
+| `otherTongueValidIn` (qāʿida 10) | «لأن النكاح غير واجب بأصل الشرع فلم يجب تعلم» | 10.f004, f005 |
+
+Over 140 entries this gives 15 jamʿ, 117 tarjīḥ (58 residues) and 8 tawaqquf.
 
 **Left as residues, for want of a cited farq:**
 

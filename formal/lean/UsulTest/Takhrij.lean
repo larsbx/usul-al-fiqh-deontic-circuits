@@ -316,25 +316,25 @@ import Usul
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f003 (derivable)
 #guard (Usul.Refinements.rightPassesToSubstitute true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f000 (genuine_ikhtilaf)
-#guard (Usul.Refinements.excessObligatory false false) == false
+#guard (Usul.Refinements.excessObligatoryIn false false true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f001 (genuine_ikhtilaf)
-#guard (Usul.Refinements.excessObligatory false false) == false
+#guard (Usul.Refinements.excessObligatoryIn false false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f002 (genuine_ikhtilaf)
-#guard (Usul.Refinements.excessObligatory false false) == false
+#guard (Usul.Refinements.excessObligatoryIn false false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f003 (genuine_ikhtilaf)
-#guard (Usul.Refinements.excessObligatory false false) == false
+#guard (Usul.Refinements.excessObligatoryIn false false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f001 (genuine_ikhtilaf)
-#guard (Usul.Refinements.advancedSuffices true) == true
+#guard (Usul.Refinements.advancedSufficesIn true true) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f002 (genuine_ikhtilaf)
-#guard (Usul.Refinements.advancedSuffices true) == true
+#guard (Usul.Refinements.advancedSufficesIn true false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f003 (genuine_ikhtilaf)
-#guard (Usul.Refinements.advancedSuffices true) == true
+#guard (Usul.Refinements.advancedSufficesIn true false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f004 (genuine_ikhtilaf)
-#guard (Usul.Refinements.advancedSuffices false) == false
+#guard (Usul.Refinements.advancedSufficesIn false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f005 (derivable)
-#guard (Usul.Refinements.advancedSuffices true) == true
+#guard (Usul.Refinements.advancedSufficesIn true false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f006 (derivable)
-#guard (Usul.Refinements.advancedSuffices true) == true
+#guard (Usul.Refinements.advancedSufficesIn true false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f000 (derivable)
 #guard (Usul.Refinements.validDespite .essence) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f001 (derivable)
@@ -344,15 +344,15 @@ import Usul
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f003 (genuine_ikhtilaf)
 #guard (Usul.Refinements.validDespite .outside) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f001 (derivable)
-#guard (Usul.Refinements.otherTongueValid true true) == true
+#guard (Usul.Refinements.otherTongueValidIn true true false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f002 (genuine_ikhtilaf)
-#guard (Usul.Refinements.otherTongueValid false false) == true
+#guard (Usul.Refinements.otherTongueValidIn false false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f003 (derivable)
-#guard (Usul.Refinements.otherTongueValid false true) == false
+#guard (Usul.Refinements.otherTongueValidIn false true false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f004 (genuine_ikhtilaf)
-#guard (Usul.Refinements.otherTongueValid false true) == false
+#guard (Usul.Refinements.otherTongueValidIn false true true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f005 (genuine_ikhtilaf)
-#guard (Usul.Refinements.otherTongueValid false true) == false
+#guard (Usul.Refinements.otherTongueValidIn false true true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f000 (derivable)
 #guard (Usul.Refinements.combineForms true) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f001 (derivable)

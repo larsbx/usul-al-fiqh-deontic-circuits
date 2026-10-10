@@ -434,6 +434,12 @@ import Usul
 #check @Usul.Refinements.countsAsMetIn
 #check @Usul.Refinements.countsAsMetIn_conservative
 #check @Usul.Refinements.authority_in_fact_suffices
+#check @Usul.Refinements.excessObligatoryIn
+#check @Usul.Refinements.excessObligatoryIn_conservative
+#check @Usul.Refinements.advancedSufficesIn
+#check @Usul.Refinements.advancedSufficesIn_conservative
+#check @Usul.Refinements.otherTongueValidIn
+#check @Usul.Refinements.otherTongueValidIn_conservative
 #check @Usul.Hukm.Mode
 #check @Usul.Hukm.mode
 #check @Usul.Hukm.mode_binding_injective

@@ -1102,6 +1102,136 @@
     "rule:unknown_condition_in_fact"
    ],
    "iq": []
+  },
+  {
+   "id": "excess_in_following",
+   "title": "In following, the excess counts as the obligatory",
+   "terms": [
+    "jam",
+    "farq"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003",
+    "note": "Ibn Rajab, qāʿida 3: an undistinguished excess over what suffices; the tranche-7 reading made it obligatory only where the whole was the lightened duty."
+   },
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f000",
+     "note": "Ibn ʿAqīl's iḥtimāl: «ويحتمل أن تجري الزيادة مجرى الواجب في باب الاتباع خاصة إذ الاتباع قد يسقط الواجب»."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v02:p223",
+     "note": "Al-Mardāwī says it is al-madhhab without qualification that whoever catches the rukūʿ catches the rakʿa, whether or not he catches the imam's ṭumaʾnīna, so the imam's rukūʿ beyond the sufficient measure still counts for following (position 1).",
+     "excerpt_ar": "(ومن أدرك الركوع أدرك الركعة) هذا المذهب مطلقا، سواء أدرك معه"
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p460",
+     "note": "Kashshāf/Iqnāʿ rule decisively that he catches the rakʿa even if he did not catch the ṭumaʾnīna with the imam, provided he settles himself.",
+     "excerpt_ar": "في إدراكه) أي الإمام (راكعا ms0522 أدرك الركعة ولو لم يدرك معه الطمأنينة إذا"
+    }
+   ],
+   "conditions": [
+    "an undistinguished excess",
+    "performed in following an imām"
+   ],
+   "rationale": "The ledger found the reading against al-Inṣāf's «هذا المذهب مطلقا» and the muʿtamad on joining the imām in rukūʿ after the sufficient measure. Ibn ʿAqīl's farq of following, quoted by Ibn Rajab himself, separates it from the badana, the head and the older age, which keep the reading.",
+   "lean": [
+    "Usul.Refinements.excessObligatoryIn",
+    "Usul.Refinements.excessObligatoryIn_conservative"
+   ],
+   "conservative": "Usul.Refinements.excessObligatoryIn_conservative",
+   "closes": [
+    "rule:excess_in_following"
+   ],
+   "iq": []
+  },
+  {
+   "id": "advanced_kaffara_at_obligation",
+   "title": "An advanced kaffāra is judged at its wujūb",
+   "terms": [
+    "jam",
+    "farq",
+    "taarud"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005",
+    "note": "Ibn Rajab, qāʿida 5: an act advanced before its time, the state then changing; the tranche-7 reading followed the unqualified statements of most aṣḥāb."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p086",
+     "note": "al-Iqnāʿ: «والاعتبار في الكفارات بحالة الوجوب».",
+     "excerpt_ar": "والاعتبار في الكفارات بحالة الوجوب كالحد1 وإمكان الأداء مبني على زكاة فإن وجبت وهو موسر ثم أعسر لم يجزئه إلا العتق وإن وجبت وهو معسر ثم أيسر أو هو عبد ثم عتق لم يلزمه العتق وله الانتقال إليه إن شاء"
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p244",
+     "note": "Kashshāf/Iqnāʿ rule decisively that one who expiated by fasting before breaking the oath, then broke it while well off, has not been discharged, since the expiation is judged at the time of wujūb; Ibn Rajab's objection is then quoted only as a report.",
+     "excerpt_ar": "(وإذا كفر بالصوم قبل الحنث لفقره) إذ (ثم حنث وهو موسر لم يجزئه) الصوم"
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p338",
+     "note": "The Iqnāʿ matn ends the sentence \"if he expiated by fasting before the ḥinth for poverty, then broke the oath\" (previous line) with \"while well off, it does not suffice\".",
+     "excerpt_ar": "وهو موسر لم يجزئه ومن كرر يمينا موجبها واحد على فعل واحد كقوله: والله لا"
+    }
+   ],
+   "conditions": [
+    "the advanced act is a kaffāra",
+    "the state changed by its wujūb (he broke the oath well off)"
+   ],
+   "rationale": "The muʿtamad (al-Iqnāʿ, Kashshāf) sides with al-Mughnī on the expiation advanced by fasting: a kaffāra is judged at its wujūb, the same farq as qāʿida 16's state at obligation. The hady of tamattuʿ is no kaffāra, and the later works leave it unweighted, so it keeps the reading, as do the zakāt and the second kind (a defect in a condition).",
+   "lean": [
+    "Usul.Refinements.advancedSufficesIn",
+    "Usul.Refinements.advancedSufficesIn_conservative"
+   ],
+   "conservative": "Usul.Refinements.advancedSufficesIn_conservative",
+   "closes": [
+    "rule:advanced_kaffara_at_obligation"
+   ],
+   "iq": []
+  },
+  {
+   "id": "wording_need_not_learn",
+   "title": "No duty to learn the Arabic for an act not itself due",
+   "terms": [
+    "jam",
+    "farq"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010",
+    "note": "Ibn Rajab, qāʿida 10: wordings counted with ability; the tranche-7 reading required the Arabic of one able to learn it."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p039",
+     "note": "Kashshāf/Iqnāʿ rule decisively that one able to learn the Arabic offer and acceptance need not learn them, because nikāḥ is not obligatory in itself and the meaning is what counts.",
+     "excerpt_ar": "يلزمه) تعلمها بالعربية لأن النكاح غير واجب بأصل الشرع فلم يجب تعلم"
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v08:p048",
+     "note": "On one who could learn the Arabic words of nikāḥ, al-Mardāwī says the first wajh, that he need not learn them and the contract is concluded in his tongue with their specific meaning, \"wa-huwa al-madhhab\" (the label starts this line), chosen by al-Qāḍī and Ibn ʿAbdūs and corrected in al-Taṣḥīḥ.",
+     "excerpt_ar": "المذهب. اختاره القاضي، وابن عبدوس في تذكرته. وصححه في التصحيح. وجزم به"
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v09:p238",
+     "note": "On liʿān by one unable in Arabic (where al-Muqniʿ asks whether he must learn it), al-Mardāwī says the wajh that it is valid in his tongue is al-madhhab, chosen by al-Muwaffaq and al-Shāriḥ and decisive in al-Wajīz.",
+     "excerpt_ar": "في المذهب، والمستوعب، والخلاصة، والنظم. أحدهما: يصح بلسانه، وهو المذهب،"
+    }
+   ],
+   "conditions": [
+    "the wording is counted with ability (nikāḥ, liʿān)",
+    "he does not know the Arabic and could only learn it",
+    "the act is not itself due by the Sharīʿa"
+   ],
+   "rationale": "al-Inṣāf labels the first wajh «المذهب» for nikāḥ and liʿān alike, and Kashshāf gives the reason: «لأن النكاح غير واجب بأصل الشرع فلم يجب تعلم». The Friday khuṭba, being due, keeps the reading.",
+   "lean": [
+    "Usul.Refinements.otherTongueValidIn",
+    "Usul.Refinements.otherTongueValidIn_conservative"
+   ],
+   "conservative": "Usul.Refinements.otherTongueValidIn_conservative",
+   "closes": [
+    "rule:wording_need_not_learn"
+   ],
+   "iq": []
   }
  ]
 }

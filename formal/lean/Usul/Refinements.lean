@@ -871,4 +871,34 @@ theorem countsAsMetIn_conservative (k l : Bool) :
 
 theorem authority_in_fact_suffices : countsAsMetIn false false true = true := rfl
 
+/-- Qāʿida 3 with the farq of following: «الاتباع قد يسقط الواجب» (Ibn ʿAqīl), so the imām's
+rukūʿ beyond the sufficient measure counts for the one who joins him; al-Inṣāf: «ومن أدرك الركوع
+أدرك الركعة … هذا المذهب مطلقا». -/
+def excessObligatoryIn (separable lightened following : Bool) : Bool :=
+  !separable && (lightened || following)
+
+theorem excessObligatoryIn_conservative (s l : Bool) :
+    excessObligatoryIn s l false = excessObligatory s l := by
+  cases s <;> cases l <;> rfl
+
+/-- Qāʿida 5 with the state at obligation for kaffārāt: an expiation advanced by fasting does not
+suffice when the oath is broken while well off, «والاعتبار في الكفارات بحالة الوجوب» (al-Iqnāʿ;
+Kashshāf). -/
+def advancedSufficesIn (dueAtPerformance kaffaraChanged : Bool) : Bool :=
+  dueAtPerformance && !kaffaraChanged
+
+theorem advancedSufficesIn_conservative (d : Bool) :
+    advancedSufficesIn d false = advancedSuffices d := by
+  cases d <;> rfl
+
+/-- Qāʿida 10 with the farq of the act not itself due: one who does not know the Arabic need not
+learn it for nikāḥ or liʿān, «لأن النكاح غير واجب بأصل الشرع فلم يجب تعلم» (Kashshāf); the khuṭba,
+being due, keeps the wording. -/
+def otherTongueValidIn (meaningOnly able needNotLearn : Bool) : Bool :=
+  meaningOnly || !able || needNotLearn
+
+theorem otherTongueValidIn_conservative (m a : Bool) :
+    otherTongueValidIn m a false = otherTongueValid m a := by
+  cases m <;> cases a <;> rfl
+
 end Usul.Refinements
