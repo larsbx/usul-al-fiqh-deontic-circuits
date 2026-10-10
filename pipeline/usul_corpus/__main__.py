@@ -10,7 +10,7 @@
     python -m usul_corpus docs        # render the dossier and glossary pages from corpus/dossier
     python -m usul_corpus reception   # count the citers' citations of each cited work (cached citers only)
     python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
-    python -m usul_corpus fatawa [--lang L] [--refresh]   # IslamQA offline dumps → .cache/corpus/fatawa/*.jsonl
+    python -m usul_corpus fatawa [--lang L] [--refresh]   # IslamQA offline dumps → data/islamqa/answers/*.jsonl.gz
 """
 
 from __future__ import annotations
@@ -21,7 +21,7 @@ import json
 import sys
 from pathlib import Path
 
-from .fatawa import answers, fold, snapshot_witnesses
+from .fatawa import answers, fold, snapshot_witnesses, write_jsonl_gz
 from .fetch import fetch
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
@@ -40,6 +40,7 @@ from .verses import link_commentary, segment_verse_block
 ROOT = Path(__file__).resolve().parents[2]
 CORPUS = ROOT / "corpus"
 CACHE = ROOT / ".cache" / "corpus"
+ISLAMQA = ROOT / "data" / "islamqa"
 DOSSIER = CORPUS / "dossier" / "refinements.json"
 GLOSSARY = CORPUS / "dossier" / "glossary.json"
 FETCHABLE = {"located", "located_ocr"}
@@ -331,22 +332,21 @@ def cmd_signature(_: argparse.Namespace) -> int:
 
 
 def cmd_fatawa(args: argparse.Namespace) -> int:
-    """Pinned IslamQA snapshot (one dump per language) → answers JSONL, sha256-checked."""
+    """Pinned IslamQA snapshot (committed under data/islamqa/raw, fetched if absent) → answers, sha256-checked."""
     import gzip
 
-    cache = CACHE / "fatawa"
-    dump = _load(CORPUS / "fatawa" / "sources.json")["dump"]
-    for w in snapshot_witnesses(dump):
+    raw = ISLAMQA / "raw"
+    for w in snapshot_witnesses(_load(CORPUS / "fatawa" / "sources.json")["dump"]):
         if args.lang not in (None, w["lang"]):
             continue
-        entry = fetch(w, cache, refresh=args.refresh)
+        entry = fetch(w, raw, refresh=args.refresh)
         if entry["sha256"] != w["sha256"]:
             print(f"{w['id']}: sha256 {entry['sha256']} != pinned {w['sha256']}", file=sys.stderr)
             return 1
-        with gzip.open(cache / f"{w['id']}.ndjson.gz", "rt", encoding="utf-8") as f:
+        with gzip.open(raw / f"{w['id']}.ndjson.gz", "rt", encoding="utf-8") as f:
             records = answers(fold(map(json.loads, f)))
-        out = cache / f"{w['id']}.jsonl"
-        out.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records), encoding="utf-8")
+        out = ISLAMQA / "answers" / f"{w['id']}.jsonl.gz"
+        write_jsonl_gz(out, records)
         print(f"{w['id']:12} {len(records):>6} answers  → {out.relative_to(ROOT)}")
     return 0
 
