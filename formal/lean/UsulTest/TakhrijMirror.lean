@@ -316,6 +316,8 @@ import Usul
 #guard (Usul.Refinements.returnAtOnce true true) == true
 #guard (Usul.Refinements.holderLiable false) == false
 #guard (Usul.Refinements.holderLiable true) == true
+#guard (Usul.Refinements.liableAfterEnding false) == false
+#guard (Usul.Refinements.liableAfterEnding true) == true
 #guard (Usul.Refinements.voidConcluded false false) == false
 #guard (Usul.Refinements.voidConcluded false true) == false
 #guard (Usul.Refinements.voidConcluded true false) == false
@@ -324,6 +326,10 @@ import Usul
 #guard (Usul.Refinements.bindsWithoutQabd true) == false
 #guard (Usul.Refinements.ownedBeforePayment false) == false
 #guard (Usul.Refinements.ownedBeforePayment true) == true
+#guard (Usul.Refinements.ownedBeforePaymentIn false false) == false
+#guard (Usul.Refinements.ownedBeforePaymentIn false true) == true
+#guard (Usul.Refinements.ownedBeforePaymentIn true false) == true
+#guard (Usul.Refinements.ownedBeforePaymentIn true true) == true
 #guard (Usul.Refinements.inNewOwnersDaman false) == false
 #guard (Usul.Refinements.inNewOwnersDaman true) == true
 #guard (Usul.Refinements.excessObligatoryIn false false false) == false

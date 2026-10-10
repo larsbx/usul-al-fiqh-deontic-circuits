@@ -23,7 +23,7 @@
     "takhrij/rajab_m8_tranche6_furu.json": "5a8d25e322084d1a5804d8c183e81f0700797038d4696c67d37bcd494464ff33",
     "takhrij/rajab_m8_tranche7_furu.json": "6ec71ef5f9103a586005c80adf82a69f5c43b24364c5d1c412e83479d2479081",
     "takhrij/rajab_m8_tranche8_furu.json": "c861f3c4d056dfab8087a4ccf4110a579e39c77602ad8db6b072166c0efb1f27",
-    "takhrij/rajab_m8_tranche9_furu.json": "330d18c9d7f180b748aa601c5eda2b41b62991d0537decd97848543792926a80",
+    "takhrij/rajab_m8_tranche9_furu.json": "0341fb5f3b796602b7c616660c044e538e529f21478c53ab8e8d296a77020d49",
     "takhrij/sadi_furu.json": "f0973c5528a52de64df6759ee63d6fad7619096e2040c5672cae7256a2747a37"
   },
   "summary": {
@@ -153,16 +153,16 @@
     "total": 442,
     "classes": {
       "derivable": 189,
-      "genuine_ikhtilaf": 245,
-      "missing_fact": 2,
+      "genuine_ikhtilaf": 246,
+      "missing_fact": 1,
       "missing_rule": 5,
       "segmentation_error": 1
     },
-    "coverage": 0.984,
-    "madhhab_coverage": 0.687,
+    "coverage": 0.986,
+    "madhhab_coverage": 0.689,
     "encoding_error": 0,
-    "ikhtilaf_matching_madhhab": 114,
-    "gaps_open": 7,
+    "ikhtilaf_matching_madhhab": 115,
+    "gaps_open": 6,
     "revisited": 37
   },
   "tranche3_report": {
@@ -777,7 +777,8 @@
       "annotated_furu": 3,
       "pending_furu": [],
       "home_encoders": [
-        "continued_holding"
+        "continued_holding",
+        "holding_after_contract_end"
       ]
     },
     {
@@ -858,7 +859,8 @@
       "annotated_furu": 2,
       "pending_furu": [],
       "home_encoders": [
-        "forced_acquisition"
+        "forced_acquisition",
+        "forced_acquisition_solvent"
       ]
     },
     {

@@ -79,12 +79,24 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f001",
-      "encoder": "continued_holding",
-      "class": "missing_fact",
-      "note": "The second division, a contract ended or annulled after delivery: three wujūh for commutative contracts, by the earlier guarantee (Abū al-Khaṭṭāb, al-Kāfī), by who caused the ending (al-Mughnī's ẓāhir on the ṣadāq), and others. They turn on a fact the reading lacks.",
-      "needs": [
-        "fact:ended_by_holder"
-      ]
+      "encoder": "holding_after_contract_end",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "ended_by_holder": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "wajh (al-Mughnī's ẓāhir on the ṣadāq): liable where he caused the ending",
+          "ruling": true
+        },
+        {
+          "who": "Abū al-Khaṭṭāb, al-Kāfī: as the earlier guarantee (a distinct sale object not guaranteed «على الصحيح»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The second division, a contract ended or annulled after delivery, led by the sale annulled for a defect or an option: the wujūh for commutative contracts. Abū al-Khaṭṭāb and al-Kāfī: by the earlier guarantee, so a distinct sale object is not guaranteed «على الصحيح». The second wajh, the ẓāhir of al-Mughnī on the ṣadāq: liable where he caused the ending or shared in it («لأنه يسبب إلى جعل ملك غيره في يده»), not where the other ended it alone. The buyer returning for a defect ends it himself. No madhhab marked."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f002",
@@ -151,22 +163,24 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f000",
-      "encoder": "forced_acquisition",
+      "encoder": "forced_acquisition_solvent",
       "class": "derivable",
       "facts": {
-        "necessity": true
+        "necessity": true,
+        "solvent": false
       },
       "expected": true,
       "note": "The starving man refused another's food takes it, guaranteed, whether or not he has its price with him, «لأن ضرره لا يندفع إلا بذلك»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f001",
-      "encoder": "forced_acquisition",
+      "encoder": "forced_acquisition_solvent",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "necessity": false
+        "necessity": false,
+        "solvent": true
       },
-      "expected": false,
+      "expected": true,
       "positions": [
         {
           "who": "Ibn ʿAqīl, with Aḥmad's naṣṣ (Abū Ṭālib), Taqī al-Dīn: not without paying",
@@ -177,8 +191,8 @@
           "ruling": true
         }
       ],
-      "matches_madhhab": false,
-      "note": "The other legislated acquisitions to remove a harm (shufʿa, taking the planting and building of the borrower, lessee or usurper, valuing the share of a joint slave, the seller's annulment after receiving the price): two wujūh: not owned without paying (Ibn ʿAqīl; «ويشهد له نص أحمد» on the shufʿa lapsing when the money is long absent; Aḥmad's naṣṣ on the seller's annulment, Abū Ṭālib, chosen by Taqī al-Dīn), or owned, guaranteed in the dhimma. Ibn Rajab: «والضرر لا يزال بالضرر»."
+      "matches_madhhab": true,
+      "note": "The other legislated acquisitions to remove a harm (shufʿa, taking the planting and building of the borrower, lessee or usurper, valuing the share of a joint slave, the seller's annulment after receiving the price): two wujūh: not owned without paying (Ibn ʿAqīl; «ويشهد له نص أحمد» on the shufʿa lapsing when the money is long absent; Aḥmad's naṣṣ on the seller's annulment, Abū Ṭālib, chosen by Taqī al-Dīn), or owned, guaranteed in the dhimma. Ibn Rajab: «والضرر لا يزال بالضرر». Reconciled (jamʿ, solvency): on the shufʿa, the record's leading example, the madhhab has the solvent taker own the share by the demand, «إذا كان مليئا بالثمن» (al-Inṣāf: «وهو المذهب»; al-Iqnāʿ; Kashshāf). Ibn Rajab's own farq keeps the seller's annulment apart, since there «اجتمع له العوض والمعوض»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f000",

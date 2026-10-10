@@ -902,6 +902,11 @@ def returnAtOnce (heldByConsent guaranteed : Bool) : Bool := !heldByConsent || g
 («فإن كان ممتنعا من تسليمه فهو غاصب»; «لتعديه بترك الرد مع إمكانه»). -/
 def holderLiable (withholds : Bool) : Bool := withholds
 
+/-- Qāʿida 43, the second division: after a commutative contract ends with the thing in his hand,
+he is liable where he caused the ending or shared in it, «لأنه يسبب إلى جعل ملك غيره في يده», and not
+where the other ended it alone (the ẓāhir of al-Mughnī on the ṣadāq). -/
+def liableAfterEnding (endedByHolder : Bool) : Bool := endedByHolder
+
 /-- Qāʿida 46: a void contract is concluded only where it binds and cannot be left by word
 (iḥrām) or carries a pervasive effect (nikāḥ, kitāba); a void sale or lease «فالمعروف من المذهب
 أنه غير منعقد». -/
@@ -978,5 +983,14 @@ def otherTongueValidIn (meaningOnly able needNotLearn : Bool) : Bool :=
 theorem otherTongueValidIn_conservative (m a : Bool) :
     otherTongueValidIn m a false = otherTongueValid m a := by
   cases m <;> cases a <;> rfl
+
+/-- Qāʿida 50 with the madhhab's condition on the shufʿa: the taker owns by the demand «إذا كان مليئا
+بالثمن» (al-Inṣāf: «وهو المذهب»; al-Iqnāʿ), a solvent taker inflicting no harm («والضرر لا يزال
+بالضرر»). -/
+def ownedBeforePaymentIn (necessity solvent : Bool) : Bool := necessity || solvent
+
+theorem ownedBeforePaymentIn_conservative (n : Bool) :
+    ownedBeforePaymentIn n false = ownedBeforePayment n := by
+  cases n <;> rfl
 
 end Usul.Refinements

@@ -2,16 +2,16 @@
  "total": 442,
  "classes": {
   "derivable": 189,
-  "genuine_ikhtilaf": 245,
-  "missing_fact": 2,
+  "genuine_ikhtilaf": 246,
+  "missing_fact": 1,
   "missing_rule": 5,
   "segmentation_error": 1
  },
- "coverage": 0.984,
- "madhhab_coverage": 0.687,
+ "coverage": 0.986,
+ "madhhab_coverage": 0.689,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 114,
- "gaps_open": 7,
+ "ikhtilaf_matching_madhhab": 115,
+ "gaps_open": 6,
  "revisited": 37,
  "revisit_queue": [],
  "per_encoder": {
@@ -251,8 +251,10 @@
   },
   "continued_holding": {
    "derivable": 1,
-   "genuine_ikhtilaf": 1,
-   "missing_fact": 1
+   "genuine_ikhtilaf": 1
+  },
+  "holding_after_contract_end": {
+   "genuine_ikhtilaf": 1
   },
   "void_contract_concluded": {
    "derivable": 2
@@ -260,7 +262,7 @@
   "qabd_in_contracts": {
    "derivable": 2
   },
-  "forced_acquisition": {
+  "forced_acquisition_solvent": {
    "derivable": 1,
    "genuine_ikhtilaf": 1
   },

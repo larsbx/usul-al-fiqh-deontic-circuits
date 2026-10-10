@@ -964,3 +964,35 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Lean:** `Usul.Refinements.otherTongueValidIn`, `Usul.Refinements.otherTongueValidIn_conservative`  
 **Conservative over the earlier reading:** `Usul.Refinements.otherTongueValidIn_conservative`
+
+<a id="forced_acquisition_solvent"></a>
+
+## A solvent taker owns before paying
+
+**Terms:** [al-jamʿ](../glossary.md#jam), [al-farq](../glossary.md#farq)  
+**Closes:** `rule:forced_acquisition_solvent`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050`: Ibn Rajab, qāʿida 50: whether ownership in forced acquisitions waits on paying the price; the tranche-9 reading allowed it only under necessity.
+  > هل يتوقف الملك في العقود القهرية على دفع الثمن أو يقع بدونه مضمونا في الذمة هذا على ضربين: أحدهما: التملك الاضطراري كمن اضطر إلى طعام الغير ومنعه وقدر على أخذه فإنه يأخذه مضمونا سواء كان معه ثمن يدفعه في الحال أو لا لأن ضرره لا يندفع إلا بذلك والثاني: ما عدده من التمليكات المشروعة لإزالة ضرر ما كالأخذ بالشفعة وأخذ الغراس والبناء من المستعير والمستأجر والزرع ومن الغاصب وتقويم الشقص من العبد المشترك
+
+**Conditions**
+
+1. a forced acquisition legislated to remove a harm (the shufʿa leading)
+2. the taker is solvent for the price
+
+**Texts**
+
+- `src:openiti-insaf-shamela21609/v06:p298`: Al-Mardāwī says the view that the shafīʿ owns the share by the mere demand, if he can pay the price, is "huwa al-madhhab" (the previous line reads "wa-qīla: yamlikuhu bi-mujarrad al-muṭālaba idhā kāna malīʾan bi-l-thaman. wa-huwa"). He reports Ibn ʿAqīl's "not owned until he pays the price" only as 
+  > المذهب. اختاره القاضي، وأبو الخطاب، وابن عبدوس في تذكرته. وقدمه في
+- `src:openiti-hajjawi-iqna-shamela7360/v02:p366`: The Iqnāʿ states decisively that the share is owned by the demand, even before he receives it, provided he can pay the price, so ownership comes before the price is paid. On the shufʿa, the record's leading example.
+  > ذلك رضا فإن اشتغل بكلام آخر أو سكت لغير حاجة بطلت ويملك الشقص بالمطالبة
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f001`: Ibn Rajab's rationale, «والضرر لا يزال بالضرر», and his farq for the seller's annulment: «اجتمع له العوض والمعوض».
+  > ما عدده من التمليكات المشروعة لإزالة ضرر ما كالأخذ بالشفعة وأخذ الغراس والبناء من المستعير والمستأجر والزرع ومن الغاصب وتقويم الشقص من العبد المشترك إذا قيل إنه تملك يقف على التقويم، وكالفسوخ التي يستقل بها البائع بعد قبض الثمن يتخرج ذلك كله على وجهين فإن لأصحابنا في الأخذ بالشفعة وجهين: أحدهما: لا يملك بدون دفع الثمن وهو محكي عن ابن عقيل ويشهد له نص أحمد أنه إذا لم يحضر المال مدة طويلة بطلت شفعته
+
+**Rationale.** The ledger found the reading against al-Inṣāf's «وهو المذهب», Kashshāf and al-Iqnāʿ on the shufʿa: the solvent taker owns by the demand, with the price owed. Solvency is the farq the madhhab states, and it answers Ibn Rajab's own ground: «والضرر لا يزال بالضرر», and a solvent taker inflicts no harm. The necessity case keeps the reading.
+
+**Lean:** `Usul.Refinements.ownedBeforePaymentIn`, `Usul.Refinements.ownedBeforePaymentIn_conservative`  
+**Conservative over the earlier reading:** `Usul.Refinements.ownedBeforePaymentIn_conservative`

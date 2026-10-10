@@ -130,6 +130,8 @@ Over 140 entries and 347 evidence items (the first pass's 321 plus tranche 7's 2
 
 Tranche 8 added 4 contradictions and 12 evidence items, and no new jamʿ. Its three new residues follow the later madhhab against Ibn Rajab's own preferences: purification in qāʿida 14, and in qāʿida 19 both tayammum and the conditions of the ḥajj's wujūb. Its raven oaths (14.f001, f002) are not contradictions, because the reading takes Aḥmad's naṣṣ of abstention, which the madhhab confirms. The ledger stands at 144 entries and 359 evidence items, with 15 jamʿ, 121 tarjīḥ (61 residues) and 8 tawaqquf.
 
+Tranche 9 added 2 contradictions and 6 evidence items. On the shufʿa (50.f001) the madhhab's own condition, «إذا كان مليئا بالثمن», is the farq for a jamʿ (`ownedBeforePaymentIn`). On 43.f001 the muʿtamad holds the rescinded object as a trust, which leaves a residue. The ledger stands at 146 entries and 365 evidence items, with 16 jamʿ, 122 tarjīḥ (62 residues) and 8 tawaqquf.
+
 **Left as residues, for want of a cited farq:**
 
 | Encoder | Residues / cases | Why no jamʿ |

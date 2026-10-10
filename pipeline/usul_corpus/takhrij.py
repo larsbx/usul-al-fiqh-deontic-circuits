@@ -330,6 +330,9 @@ ENCODERS: dict[str, dict] = {
     "continued_holding": dict(
         sadi=[], qawaid=[RAJAB.format(43)], facts={"withholds": B},
         out=B, lean="Usul.Refinements.holderLiable {withholds}", py=lambda f: f["withholds"]),
+    "holding_after_contract_end": dict(
+        sadi=[], qawaid=[RAJAB.format(43)], facts={"ended_by_holder": B},
+        out=B, lean="Usul.Refinements.liableAfterEnding {ended_by_holder}", py=lambda f: f["ended_by_holder"]),
     "void_contract_concluded": dict(
         sadi=[], qawaid=[RAJAB.format(46)], facts={"binding": B, "pervasive": B},
         out=B, lean="Usul.Refinements.voidConcluded {binding} {pervasive}",
@@ -340,6 +343,10 @@ ENCODERS: dict[str, dict] = {
     "forced_acquisition": dict(
         sadi=[], qawaid=[RAJAB.format(50)], facts={"necessity": B},
         out=B, lean="Usul.Refinements.ownedBeforePayment {necessity}", py=lambda f: f["necessity"]),
+    "forced_acquisition_solvent": dict(
+        sadi=[], qawaid=[RAJAB.format(50)], facts={"necessity": B, "solvent": B},
+        out=B, lean="Usul.Refinements.ownedBeforePaymentIn {necessity} {solvent}",
+        py=lambda f: f["necessity"] or f["solvent"]),
     "daman_without_qabd": dict(
         sadi=[], qawaid=[RAJAB.format(51)], facts={"determined": B},
         out=B, lean="Usul.Refinements.inNewOwnersDaman {determined}", py=lambda f: f["determined"]),

@@ -183,7 +183,7 @@ The unit is a committed farʿ record, which can contain multiple examples. Annot
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.793 | 0 | 0 |
-| All annotation suites | 442 | 0.984 | 0.687 | 0 | 7 |
+| All annotation suites | 442 | 0.986 | 0.689 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -387,17 +387,15 @@ Results on the tranche:
 |---|---|
 | 36: a lease whose lessor's authority ends | `leaseDissolves`: unless the new holder succeeds the lessor («بل هو منفذ لها») |
 | 42: returning what is held for another | `returnAtOnce`: where held without consent, or guaranteed («فتجب المبادرة إلى الرد بكل حال») |
-| 43: liability for continued holding | `holderLiable`: only one who withholds («فهو غاصب»; «لتعديه بترك الرد مع إمكانه») |
+| 43: liability for continued holding | `holderLiable`: only one who withholds («فهو غاصب»; «لتعديه بترك الرد مع إمكانه»); after a contract ends, `liableAfterEnding`: where he caused the ending (al-Mughnī's ẓāhir) |
 | 46: whether a void contract is concluded | `voidConcluded`: only a binding one with a pervasive effect (iḥrām, nikāḥ, kitāba) |
 | 49: qabḍ in contracts | `bindsWithoutQabd`: unless qabḍ completes the contract (salam, ribawī) |
-| 50: forced acquisitions and the price | `ownedBeforePayment`: only under necessity («والضرر لا يزال بالضرر») |
+| 50: forced acquisitions and the price | `ownedBeforePayment`: only under necessity («والضرر لا يزال بالضرر»); reconciled to `ownedBeforePaymentIn`: or by a solvent taker |
 | 51: ḍamān without qabḍ | `inNewOwnersDaman`: what is determined |
 
 Results on the tranche:
-- **12 derivable, 3 ikhtilāf (2 on the madhhab side), one new gap, 0 encoding errors.**
-  - Coverage is 15/16 = 0.938, and madhhab coverage is 14/16 = 0.875.
-  - The gap is 43.f001: after a contract ends, the wujūh turn on who caused the ending (`fact:ended_by_holder`).
-- **Reconciliation:** the one new apparent contradiction, 50.f001, entered the ledger, with its later taṣḥīḥ imported as before.
+- **12 derivable, 4 ikhtilāf (3 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 16/16 = 1.000, madhhab coverage 15/16 = 0.938. 43.f001's wujūh turn on who caused the contract's ending, so it gets its own reading on that fact rather than a gap. The bank's gaps stay the six original ones.
+- **Reconciliation:** the two new apparent contradictions entered the ledger. The madhhab on the shufʿa (50.f001), «يملكه بمجرد المطالبة إذا كان مليئا بالثمن، وهو المذهب», became a jamʿ on that solvency farq (`ownedBeforePaymentIn`), and solvency answers Ibn Rajab's own «والضرر لا يزال بالضرر». On 43.f001 the muʿtamad (al-Muntahā, Kashshāf) makes the rescinded sale object a trust in the buyer's hand, against `liableAfterEnding`. That is a residue.
 
 **Coverage trend:**
 
@@ -427,8 +425,8 @@ Results on the tranche:
 | All, after tranche 7's reconciliation | 399 | 0.985 | 0.668 | 0 | 6 |
 | M8 tranche 8 alone | 27 | 1.000 | 0.852 | 0 | 0 |
 | All, after tranche 8 | 426 | 0.986 | 0.680 | 0 | 6 |
-| M8 tranche 9 alone | 16 | 0.938 | 0.875 | 0 | 1 |
-| All, after tranche 9 | 442 | 0.984 | 0.687 | 0 | 7 |
+| M8 tranche 9 alone | 16 | 1.000 | 0.938 | 0 | 0 |
+| All, after tranche 9 | 442 | 0.986 | 0.689 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 

@@ -429,6 +429,8 @@ import Usul
 #guard (Usul.Refinements.returnAtOnce true true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f000 (derivable)
 #guard (Usul.Refinements.holderLiable false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f001 (genuine_ikhtilaf)
+#guard (Usul.Refinements.liableAfterEnding true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f002 (genuine_ikhtilaf)
 #guard (Usul.Refinements.holderLiable true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q046.f000 (derivable)
@@ -440,9 +442,9 @@ import Usul
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q049.f001 (derivable)
 #guard (Usul.Refinements.bindsWithoutQabd true) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f000 (derivable)
-#guard (Usul.Refinements.ownedBeforePayment true) == true
+#guard (Usul.Refinements.ownedBeforePaymentIn true false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f001 (genuine_ikhtilaf)
-#guard (Usul.Refinements.ownedBeforePayment false) == false
+#guard (Usul.Refinements.ownedBeforePaymentIn false true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f000 (derivable)
 #guard (Usul.Refinements.inNewOwnersDaman true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f001 (derivable)
