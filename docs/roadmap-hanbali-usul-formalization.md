@@ -259,6 +259,13 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
   - Q11 (F113: a settled duty in doubt versus whether a duty arose);
   - Q38 (F115, stated in Q38's own words).
   Running tally over F01–F115: 71 sound, 30 weak, 6 wrongly treated alike, 8 reported.
+- **Furūq tranche 7 (F116–F136).** 8 sound, 8 reported, 5 weak. The weak ones:
+  - F121: tayammum for bodily impurity, «لاستواء النجاسات في عدم ورود النص بها»;
+  - F128: the madhhab's extra places where prayer is invalid, «أقرب إلى الصواب … أنها تصح فيها»;
+  - F129: the four-day rule for ending travel, «ليس لنا مرتبة ثالثة لا مقيم ولا مسافر»;
+  - F134: zakāt to an heir relative;
+  - F136: the old man who travels, «عليه الكفارة لظاهر النصوص».
+  Running tally over F01–F136: 79 sound, 35 weak, 6 wrongly treated alike, 16 reported.
 - **Exit:** every new rule is classified and linked; the coverage trend is reported. Disagreement with Ibn ʿUthaymīn's tarjīḥ is classified as in M4, never silently patched.
 
 #### M9 · Qiyās metatheory ⟵ M5, M7
