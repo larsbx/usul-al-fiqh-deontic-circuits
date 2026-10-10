@@ -22,7 +22,7 @@
     "takhrij/rajab_m8_tranche5_furu.json": "30c4ff813fb1cce2456eaaaf5220afb8a12b7c740a431d878350101a37aacb49",
     "takhrij/rajab_m8_tranche6_furu.json": "5a8d25e322084d1a5804d8c183e81f0700797038d4696c67d37bcd494464ff33",
     "takhrij/rajab_m8_tranche7_furu.json": "6ec71ef5f9103a586005c80adf82a69f5c43b24364c5d1c412e83479d2479081",
-    "takhrij/rajab_m8_tranche8_furu.json": "36324f3d5b915855bbbc0dfebcf83acb1a082bfc2bba34f3d42b0c7fd4b22263",
+    "takhrij/rajab_m8_tranche8_furu.json": "c861f3c4d056dfab8087a4ccf4110a579e39c77602ad8db6b072166c0efb1f27",
     "takhrij/sadi_furu.json": "f0973c5528a52de64df6759ee63d6fad7619096e2040c5672cae7256a2747a37"
   },
   "summary": {
@@ -146,9 +146,9 @@
       "segmentation_error": 1
     },
     "coverage": 0.986,
-    "madhhab_coverage": 0.675,
+    "madhhab_coverage": 0.68,
     "encoding_error": 0,
-    "ikhtilaf_matching_madhhab": 110,
+    "ikhtilaf_matching_madhhab": 112,
     "gaps_open": 6,
     "revisited": 37
   },

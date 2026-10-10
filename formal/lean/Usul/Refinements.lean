@@ -853,19 +853,25 @@ def advanceAllowed (causePresent : Bool) : Bool := causePresent
 
 «فإن كانت موسعة جاز التنفل قبل أدائها … وإن كانت مضيقة لم تصح على الصحيح». -/
 
-def naflValid (narrow : Bool) : Bool := !narrow
+def naflValid (narrow financial : Bool) : Bool := !narrow || financial
+
+/-- Zakāt is the carve-out: «فقال الأصحاب يصح أن يتنفل بالصدقة قبل أدائها وإن كانت على الفور», with
+Aḥmad's naṣṣ (Muhannā), so narrowness bars only the purely bodily worship of one kind. -/
+theorem zakat_carve_out : naflValid true true = true := rfl
 
 /-! ### Qāʿida 14: a cause from one of two men, not known which
 
 The reading takes Ibn Rajab's own farq: binding both is right where it costs no right («بخلاف إيجاب
 الطهارة عليهما فإنه لا ضرر فيه»), and wrong where it would cut a right («إجبار الإنسان على قطع
-ملكه بغير حق»), each then building on the certainty of what is his. -/
+ملكه بغير حق»). There neither is bound, yet each refrains until certain, «ولنا وجه آخر بوجوب
+اعتزال كل منهما زوجته حتى يتيقن الأمر ونص عليه أحمد», which the slave-women follow by qiyās
+al-manṣūṣ. `abstain` is that composite: no attachment, with abstention. -/
 
 inductive Attach where
   | neither | each | lot | abstain
   deriving DecidableEq, Repr
 
-def attachTo (harmless : Bool) : Attach := if harmless then .each else .neither
+def attachTo (harmless : Bool) : Attach := if harmless then .each else .abstain
 
 /-! ### Qāʿida 15: corollaries of one aṣl against another
 

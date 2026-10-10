@@ -1,12 +1,12 @@
 {
-  "entries": 146,
+  "entries": 144,
   "stages": {
     "jam": 15,
-    "tarjih": 123,
+    "tarjih": 121,
     "tawaqquf": 8
   },
   "standing": {
-    "against_reading": 63,
+    "against_reading": 61,
     "for_reading": 75,
     "tawaqquf": 8
   },
@@ -45,11 +45,6 @@
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f006",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f008"
     ],
-    "cause_from_one_of_two": [
-      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000",
-      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f001",
-      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f002"
-    ],
     "growth_from_substance": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f000",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f001",
@@ -86,6 +81,9 @@
     ],
     "benefit_to_other": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f003"
+    ],
+    "cause_from_one_of_two": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000"
     ],
     "continuity": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f009"

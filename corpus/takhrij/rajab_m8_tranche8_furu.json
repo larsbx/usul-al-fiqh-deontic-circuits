@@ -98,7 +98,8 @@
       "encoder": "nafl_before_fard",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "narrow": true
+        "narrow": true,
+        "financial": false
       },
       "expected": false,
       "positions": [
@@ -119,7 +120,8 @@
       "encoder": "nafl_before_fard",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "narrow": true
+        "narrow": true,
+        "financial": false
       },
       "expected": false,
       "positions": [
@@ -140,7 +142,8 @@
       "encoder": "nafl_before_fard",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "narrow": true
+        "narrow": true,
+        "financial": false
       },
       "expected": false,
       "positions": [
@@ -161,7 +164,8 @@
       "encoder": "nafl_before_fard",
       "class": "derivable",
       "facts": {
-        "narrow": true
+        "narrow": true,
+        "financial": false
       },
       "expected": false,
       "note": "Ramaḍān: no other fast is valid in it; done for something else it is not valid for that, and whether it turns into the farḍ depends on the duty to specify the intention."
@@ -171,7 +175,8 @@
       "encoder": "nafl_before_fard",
       "class": "derivable",
       "facts": {
-        "narrow": true
+        "narrow": true,
+        "financial": false
       },
       "expected": false,
       "note": "A voluntary ḥajj before ḥajjat al-islām does not fall as voluntary, «وانقلبت عن حجة الإسلام على المذهب الصحيح»."
@@ -181,10 +186,11 @@
       "encoder": "nafl_before_fard",
       "class": "derivable",
       "facts": {
-        "narrow": true
+        "narrow": true,
+        "financial": false
       },
       "expected": false,
-      "note": "Ḥajj for a vow or as voluntary while owing the make-up of a spoiled ḥajj falls as the make-up «على المذهب أيضا»; al-Talkhīṣ builds the voluntary ḥajj before the ʿumra on whether the rite is immediate. Zakāt differs: «فقال الأصحاب يصح أن يتنفل بالصدقة قبل أدائها وإن كانت على الفور», with Aḥmad's naṣṣ (Muhannā). Then the second kind, financial dispositions while in debt: «فالمذهب صحة تصرفه», against Taqī al-Dīn."
+      "note": "Ḥajj for a vow or as voluntary while owing the make-up of a spoiled ḥajj falls as the make-up «على المذهب أيضا»; al-Talkhīṣ builds the voluntary ḥajj before the ʿumra on whether the rite is immediate. Zakāt differs: «فقال الأصحاب يصح أن يتنفل بالصدقة قبل أدائها وإن كانت على الفور», with Aḥmad's naṣṣ (Muhannā). Then the second kind, financial dispositions while in debt: «فالمذهب صحة تصرفه», against Taqī al-Dīn. The zakāt clause is the reading's carve-out (`financial`, zakat_carve_out); the record is annotated for its leading ḥajj."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000",
@@ -214,7 +220,7 @@
       "facts": {
         "harmless": false
       },
-      "expected": "neither",
+      "expected": "abstain",
       "positions": [
         {
           "who": "al-Qāḍī (al-Mujarrad), Abū al-Khaṭṭāb: each on certainty",
@@ -233,8 +239,8 @@
           "ruling": "abstain"
         }
       ],
-      "matches_madhhab": false,
-      "note": "«If this bird is a raven my wife is divorced» and the other «if it is not»: al-Qāḍī (al-Mujarrad), Abū al-Khaṭṭāb and others: each builds on the certainty of his marriage; al-Shīrāzī and Ibn ʿAqīl: the divorced one is drawn by lot, al-Qāḍī in al-Jāmiʿ: «هو قياس المذهب»; a possibility that both fall, to which Aḥmad's words in Ṣāliḥ's riwāya point (Taqī al-Dīn), which Ibn Rajab rejects as cutting a right; a wajh, by Aḥmad's naṣṣ (ʿAbd Allāh), that each abstains until certain; and Aḥmad's own tawaqquf (Ḥarb)."
+      "matches_madhhab": true,
+      "note": "«If this bird is a raven my wife is divorced» and the other «if it is not»: al-Qāḍī (al-Mujarrad), Abū al-Khaṭṭāb and others: each builds on the certainty of his marriage; al-Shīrāzī and Ibn ʿAqīl: the divorced one is drawn by lot, al-Qāḍī in al-Jāmiʿ: «هو قياس المذهب»; a possibility that both fall, to which Aḥmad's words in Ṣāliḥ's riwāya point (Taqī al-Dīn), which Ibn Rajab rejects as cutting a right; a wajh, by Aḥmad's naṣṣ (ʿAbd Allāh), that each abstains until certain; and Aḥmad's own tawaqquf (Ḥarb). The reading lands on the abstention: neither is bound, each refraining until certain (Aḥmad's naṣṣ; for the slave-women, qiyās al-manṣūṣ), which the later madhhab confirms («لم تطلقا … وحرم الوطء عليهما»)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f002",
@@ -243,7 +249,7 @@
       "facts": {
         "harmless": false
       },
-      "expected": "neither",
+      "expected": "abstain",
       "positions": [
         {
           "who": "wajh: each on certainty",
@@ -258,8 +264,8 @@
           "ruling": "abstain"
         }
       ],
-      "matches_madhhab": false,
-      "note": "The same with slave-women freed: the two wujūh of divorce, and «وقياس المنصوص ههنا أن يكف كل واحد عن وطء أمته حتى يتيقن»; if one buys the other's, the freed one is drawn by lot «على أصح الوجهين», the two now meeting in one ownership."
+      "matches_madhhab": true,
+      "note": "The same with slave-women freed: the two wujūh of divorce, and «وقياس المنصوص ههنا أن يكف كل واحد عن وطء أمته حتى يتيقن»; if one buys the other's, the freed one is drawn by lot «على أصح الوجهين», the two now meeting in one ownership. The reading lands on the abstention: neither is bound, each refraining until certain (Aḥmad's naṣṣ; for the slave-women, qiyās al-manṣūṣ), which the later madhhab confirms («لم تطلقا … وحرم الوطء عليهما»)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f001",

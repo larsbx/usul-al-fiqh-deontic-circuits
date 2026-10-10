@@ -183,7 +183,7 @@ The unit is a committed farʿ record, which can contain multiple examples. Annot
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.793 | 0 | 0 |
-| All annotation suites | 426 | 0.986 | 0.675 | 0 | 6 |
+| All annotation suites | 426 | 0.986 | 0.680 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -366,19 +366,19 @@ Results on the tranche:
 | Qāʿida | Reading | Link to the bank |
 |---|---|---|
 | 4: advancing worship | `advanceAllowed`: once its cause exists («ويجوز تقديمها بعد سبب الوجوب وقبل الوجوب») | qāʿida 5 (the advanced act's sufficiency) |
-| 11: the voluntary before the obligatory of its kind | `naflValid`: not while the obligatory is narrow («لم تصح على الصحيح») | new |
-| 14: a cause from one of two men, not known which («في المسألة خلاف») | `attachTo`: both where it costs no right («لا ضرر فيه»), else neither | new |
+| 11: the voluntary before the obligatory of its kind | `naflValid`: not while the obligatory is narrow («لم تصح على الصحيح»), except a financial duty (`zakat_carve_out`) | new |
+| 14: a cause from one of two men, not known which («في المسألة خلاف») | `attachTo`: both where it costs no right («لا ضرر فيه»), else neither bound with each abstaining (Aḥmad's naṣṣ) | new |
 | 15: an aṣl's corollary against another aṣl | `eachOnItsAsl` («لم يلتفت إلى ذلك اللازم على الصحيح») | new |
 | 19: ability and the dhimma | `settlesInDhimma`: ability is no condition, except for making up («على ظاهر المذهب») | new |
 
 Results on the tranche:
-- **15 derivable, 12 ikhtilāf (6 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 27/27 = 1.000, madhhab coverage 21/27 = 0.778.
+- **15 derivable, 12 ikhtilāf (8 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 27/27 = 1.000, madhhab coverage 23/27 = 0.852.
 - **What the cases say about the readings:**
   - **Qāʿida 4 is wholly derivable.**
-  - **Qāʿida 11 has a carve-out for zakāt.** A voluntary ṣadaqa is valid before an immediate zakāt («فقال الأصحاب يصح»), so the narrowness test belongs to pure acts of worship of one kind.
-  - **Qāʿida 14's raven oaths repeat Ibn Rajab's qāʿida 160 under another name.** There Aḥmad's naṣṣ of abstention outranks every wajh.
-- **Reconciliation:** the 6 new apparent contradictions entered the ledger, with their later taṣḥīḥ imported as before. Five are residues against the reading, and none of them has a cited farq for a jamʿ:
-  - On qāʿida 14 the later madhhab binds neither man in all three furūʿ. Where a wife or a slave-woman is at stake, both abstain («حرم الوطء عليهما»). The madhhab thus overrides Ibn Rajab's own «لا ضرر فيه» even for purification.
+  - **Qāʿida 11 has a carve-out for zakāt.** A voluntary ṣadaqa is valid before an immediate zakāt («فقال الأصحاب يصح»). The reading therefore carries it as a fact (`financial`), and the narrowness test belongs to pure acts of worship of one kind.
+  - **Qāʿida 14's raven oaths repeat Ibn Rajab's qāʿida 160 under another name.** The reading takes Aḥmad's naṣṣ: neither is bound, and each abstains until certain. The later madhhab confirms this («لم تطلقا … وحرم الوطء عليهما»).
+- **Reconciliation:** the 4 apparent contradictions entered the ledger, with their later taṣḥīḥ imported as before. Three are residues against the reading, and none of them has a cited farq for a jamʿ:
+  - On qāʿida 14 the later madhhab rules for purification as for divorce: neither must wash (14.f000, «على الصحيح من المذهب»), against Ibn Rajab's own «لا ضرر فيه».
   - On qāʿida 19, al-Mardāwī's taṣḥīḥ and the muʿtamad give tayammum to the traveller as the time runs out (19.f001), and make ability a condition of the ḥajj's wujūb (19.f005).
 
 **Coverage trend:**
@@ -407,8 +407,8 @@ Results on the tranche:
 | M8 tranche 7 alone | 24 | 1.000 | 0.500 | 0 | 0 |
 | All, after tranche 7 | 399 | 0.985 | 0.658 | 0 | 6 |
 | All, after tranche 7's reconciliation | 399 | 0.985 | 0.668 | 0 | 6 |
-| M8 tranche 8 alone | 27 | 1.000 | 0.778 | 0 | 0 |
-| All, after tranche 8 | 426 | 0.986 | 0.675 | 0 | 6 |
+| M8 tranche 8 alone | 27 | 1.000 | 0.852 | 0 | 0 |
+| All, after tranche 8 | 426 | 0.986 | 0.680 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 

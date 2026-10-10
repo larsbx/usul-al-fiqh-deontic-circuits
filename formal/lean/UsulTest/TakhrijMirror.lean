@@ -298,9 +298,11 @@ import Usul
 #guard (Usul.Refinements.combineForms true) == false
 #guard (Usul.Refinements.advanceAllowed false) == false
 #guard (Usul.Refinements.advanceAllowed true) == true
-#guard (Usul.Refinements.naflValid false) == true
-#guard (Usul.Refinements.naflValid true) == false
-#guard (Usul.Refinements.attachTo false) == .neither
+#guard (Usul.Refinements.naflValid false false) == true
+#guard (Usul.Refinements.naflValid false true) == true
+#guard (Usul.Refinements.naflValid true false) == false
+#guard (Usul.Refinements.naflValid true true) == true
+#guard (Usul.Refinements.attachTo false) == .abstain
 #guard (Usul.Refinements.attachTo true) == .each
 #guard (Usul.Refinements.eachOnItsAsl false) == false
 #guard (Usul.Refinements.eachOnItsAsl true) == true

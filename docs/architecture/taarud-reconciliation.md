@@ -128,7 +128,7 @@ Tranche 7 added 12 contradictions, and its later taṣḥīḥ gave four more ja
 
 Over 140 entries and 347 evidence items (the first pass's 321 plus tranche 7's 26), this gives 15 jamʿ, 117 tarjīḥ (58 residues) and 8 tawaqquf. In 10.f002 the later works split by the dhikr's status, so only the evidence on the obligatory takbīr, the farʿ's leading example, is graded.
 
-Tranche 8 added 6 contradictions and 21 evidence items, and no new jamʿ. Its five new residues follow the later madhhab against Ibn Rajab's own preferences: neither man is bound in qāʿida 14, and tayammum and the conditions of the ḥajj's wujūb in qāʿida 19. The ledger stands at 146 entries and 368 evidence items, with 15 jamʿ, 123 tarjīḥ (63 residues) and 8 tawaqquf.
+Tranche 8 added 4 contradictions and 12 evidence items, and no new jamʿ. Its three new residues follow the later madhhab against Ibn Rajab's own preferences: purification in qāʿida 14, and in qāʿida 19 both tayammum and the conditions of the ḥajj's wujūb. Its raven oaths (14.f001, f002) are not contradictions, because the reading takes Aḥmad's naṣṣ of abstention, which the madhhab confirms. The ledger stands at 144 entries and 359 evidence items, with 15 jamʿ, 121 tarjīḥ (61 residues) and 8 tawaqquf.
 
 **Left as residues, for want of a cited farq:**
 

@@ -50,10 +50,6 @@ open Usul.Reconcile
 #guard reconcile (P := String) none none [("false", .ashab), ("true", .ashab), ("false", .tashih), ("false", .jazm), ("true", .nass)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000
 #guard reconcile (P := String) none none [("each", .nass), ("neither", .nass), ("neither", .tashih), ("neither", .tashih), ("neither", .jazm)] == (.tarjih "neither")
--- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f001
-#guard reconcile (P := String) none none [("neither", .ashab), ("lot", .ashab), ("lot", .qiyas), ("each", .takhrij), ("each", .zahir), ("abstain", .nass), ("abstain", .tashih), ("abstain", .tashih), ("abstain", .jazm), ("neither", .jazm), ("lot", .ashab)] == (.tarjih "abstain")
--- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f002
-#guard reconcile (P := String) none none [("neither", .wajh), ("lot", .wajh), ("abstain", .qiyas), ("abstain", .jazm), ("abstain", .jazm), ("neither", .jazm), ("neither", .jazm)] == (.tarjih "abstain")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f004
 #guard reconcile (P := String) none none [("true", .ashab), ("false", .takhrij)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f000

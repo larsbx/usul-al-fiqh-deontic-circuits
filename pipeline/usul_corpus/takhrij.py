@@ -307,12 +307,13 @@ ENCODERS: dict[str, dict] = {
         sadi=[], qawaid=[RAJAB.format(4)], facts={"cause_present": B},
         out=B, lean="Usul.Refinements.advanceAllowed {cause_present}", py=lambda f: f["cause_present"]),
     "nafl_before_fard": dict(
-        sadi=[], qawaid=[RAJAB.format(11)], facts={"narrow": B},
-        out=B, lean="Usul.Refinements.naflValid {narrow}", py=lambda f: not f["narrow"]),
+        sadi=[], qawaid=[RAJAB.format(11)], facts={"narrow": B, "financial": B},
+        out=B, lean="Usul.Refinements.naflValid {narrow} {financial}",
+        py=lambda f: not f["narrow"] or f["financial"]),
     "cause_from_one_of_two": dict(
         sadi=[], qawaid=[RAJAB.format(14)], facts={"harmless": B},
         out=("neither", "each", "lot", "abstain"), lean="Usul.Refinements.attachTo {harmless}",
-        py=lambda f: "each" if f["harmless"] else "neither"),
+        py=lambda f: "each" if f["harmless"] else "abstain"),
     "each_on_its_asl": dict(
         sadi=[], qawaid=[RAJAB.format(15)], facts={"separate_matters": B},
         out=B, lean="Usul.Refinements.eachOnItsAsl {separate_matters}", py=lambda f: f["separate_matters"]),
