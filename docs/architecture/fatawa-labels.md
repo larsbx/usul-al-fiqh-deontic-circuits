@@ -85,16 +85,21 @@ Implications for training:
 | obligation label («يجب», «فرض عين») | `CommandSchemata.obligationStatus r e none`, both readings |
 | jawāz («يجوز», «لا حرج», «حلال») | `¬(mode = talabTark ∧ binding)`, i.e. everything but ḥarām |
 | negated status («لا يجب») | everything but that status |
-| ruling on the omission («ترك X حرام», «لا يجوز تركه») | σ applied to the set |
+| ruling on the omission or the opposite act («ترك X حرام», «لا يجوز تركه», «التهاون», «الكف عن», «الحذر من») | σ applied to the set |
+| «مكروه أو محرم», «جائز أم غير جائز» | union |
 
-Cues in one clause are intersected; «إلا إذا / لكن / أما إذا» open a new clause. The Python mirrors of σ, `mode`, `binding`, jawāz and the amr/nahy defaults are guarded exhaustively in [`UsulTest/FatawaBank.lean`](../../formal/lean/UsulTest/FatawaBank.lean). Output: `data/islamqa/labels/islamqa-ar.bank.jsonl.gz`, [`bank_review_report.json`](../../corpus/fatawa/bank_review_report.json), and `bank` + `priority` on each review-sample item.
+Only predications on the act are compared (see *Conflicts* below for what is set aside), and each predication has its own scope. The Python mirrors of σ, `mode`, `binding`, jawāz and the amr/nahy defaults are guarded exhaustively in [`UsulTest/FatawaBank.lean`](../../formal/lean/UsulTest/FatawaBank.lean). Output: `data/islamqa/labels/islamqa-ar.bank.jsonl.gz`, [`bank_review_report.json`](../../corpus/fatawa/bank_review_report.json), and `bank` + `priority` on each review-sample item.
 
 | class | answers | English version agrees |
 |---|---:|---:|
-| confirmed (the clause fixes one status, the candidate's) | 8,619 | 82% (2,846/3,457) |
-| consistent (candidate allowed; clause underdetermines, e.g. jawāz) | 4,481 | 87% (1,626/1,874) |
-| rejected (candidate excluded) | 139 | 71% (55/77) |
-| conflict (the clause's cues are jointly unsatisfiable) | 1,120 | 73% (415/565) |
+| confirmed (the predication fixes one status, the candidate's) | 8,028 | 82% (2,713/3,292) |
+| consistent (candidate allowed; the text underdetermines, e.g. jawāz) | 4,633 | 87% (1,720/1,987) |
+| misread (the candidate's own cue is not a ruling on the act) | 1,678 | 74% (505/679) |
+| rejected (candidate excluded) | 5 | 33% (1/3) |
+| ikhtilāf (reported positions, no preference stated) | 1 | 0% (0/1) |
+| conflict (tawaqquf) | 12 | 67% (6/9) |
+
+80 confirmations are of a label that rules on the *omission* (`act: omission`): «لا يجوز التفريط فيها» is ḥarām of neglect, which is σ of wājib of the act (`RespectsDidd`). They were the bulk of the earlier "rejected" class.
 
 ### Why the bank does not fill `gold`
 
@@ -109,3 +114,36 @@ So the bank's verdict is **triage**, not gold:
 - `gold` stays human-only.
 
 Making the bank a real reviewer needs act-relative readings, i.e. (act, ḥukm, condition) per cue, which is what `hukm_classification` already models. Then cues are intersected only when they rule on the same act, and the verdict is the ruling on the act the question names.
+
+## Conflicts: the bank applied to its own conflicts
+
+A conflict is a predication set the kernel cannot satisfy. `Usul.resolve` ([Taarud.lean](../../formal/lean/Usul/Taarud.lean), after Ibn ʿUthaymīn) orders their resolution: jamʿ ≻ naskh ≻ tarjīḥ ≻ tawaqquf. The reviewer follows that order. Each round adds one principle, and is tested on the corpus sentences that motivated it (`test_bank_review.py`):
+
+| round | principle | conflicts left |
+|---|---|---:|
+| R0 bare reading | every cue is a ruling on one act | 959 |
+| R1 reading | only predications on the act take part: not cues inside another cue's complement, a relative, reason or reported clause («أن يلزم», «التي لا يجوز», «لأن …», «بأنه»); not status words used as ordinary words (after a preposition, attributive «بتجارة مباحة», inside a proof-text); not homographs (مَحْرَم kinsman, مُحْرِم pilgrim); not frames («يجب أن تعلم أن», «لا يلزم منه»), questions or «قد» | 570 |
+| R2 jamʿ via σ | a ruling on the opposite act is the same ruling: H(ḍidd a) = σ(H a) (`Dalala.amr_nahy_didd_of`) | 547 |
+| R3 jamʿ by scope | each predication rules on its own act: «،», «:», «بل», «وإنما», «أما», «ما عدا», «ومنه ما», conditional branches «فإن / وإذا / وإلا», and «و» before a verbal ruling open a new scope; «أو / أم» between statuses is a union | 15 |
+| R4 tarjīḥ | `resolve ⟨none, none, some p⟩ = .tarjih p` when the text prefers p, forward («والصواب أنها …») or backward («… وهو الصحيح»); a reported disagreement without preference is `ikhtilaf` | **13** |
+
+`resolve`'s Python mirror is guarded on all eight stage combinations in `UsulTest/FatawaBank.lean`. Naskh never fires, because fatwa text gives no chronology. `bank_review_report.json` → `conflicts_by_round` reproduces the table.
+
+**Why the conflicts arose.** Almost none were contradictions in the fatwas:
+- R1: about 40% were cues that are not rulings on the act.
+- R3: about 55% were two rulings on two different acts in one clause («الغصب محرم ويجب رد المغصوب»).
+- R2: a few percent were one ruling stated on the act and on its opposite («لا يجوز التهاون … بل يجب المحافظة»).
+
+**The 13 that remain, all read by hand:**
+
+| cause | n | what would resolve it |
+|---|---:|---|
+| genuine ikhtilāf, three positions, no preference stated (Eid prayer) | 1 | correctly `ikhtilaf`: the madhhab or a reviewer decides |
+| a different Sharīʿa: «جائزة في شريعة سليمان … محرمة في شرعنا» | 2 | a scope for *sharʿ man qablanā* |
+| opposites by meaning, not by the word ترك: «يعدل / تفضيل», «تمتنع / تبقى» | 3 | an antonym table for σ, i.e. act identity |
+| different subject or addressee: «على الرجال … عليهن», «والتي زارت جهلاً» | 3 | act-relative readings (subject as part of the act) |
+| proof-texts quoted without delimiters («وسلم في مكة : "…"», an athar) | 2 | quotation segmentation |
+| homograph مُحْرِم without a ḥajj word nearby («اغتسل وهو محرم») | 1 | a lexicon |
+| a bare «إنما» marking contrast | 1 | splitting there without breaking reason clauses |
+
+The bank's verdict stays triage, not gold: it reads the same cues the labeller read. But the conflicts it found were nearly all misreadings, and fixing them is what turned `misread` into a usable signal for flawed labels.

@@ -121,3 +121,7 @@ def test_review_sample_is_stratified_deterministic_and_blank_for_gold():
 
 def test_plural_status_nouns_are_not_rulings():
     assert hukms("واجبات الصلاة") == [] and hukms("هذا واجب") == [("wajib", "+")]
+
+
+def test_ghayr_jaiz_reads_as_prohibition():
+    assert hukms("غير جائز") == [("haram", "+")] and hukms("ليس بجائز") == [("haram", "+")]

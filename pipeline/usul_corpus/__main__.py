@@ -26,7 +26,7 @@ from pathlib import Path
 from . import hadith
 from .fatawa import answers, fold, snapshot_witnesses, write_jsonl_gz
 from .labels import label, report, review_sample
-from .bank_review import en_vote, lean_guards, review as bank_review
+from .bank_review import STAGES, en_vote, lean_guards, review as bank_review
 from .fetch import fetch
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
@@ -401,11 +401,17 @@ def cmd_bank_review(_: argparse.Namespace) -> int:
     en = {r["id"]: en_vote((r.get("summary") or "") + " " + (r["answer"] or "")) for r in read(ISLAMQA / "answers" / "islamqa-en.jsonl.gz")}
     labels = read(ISLAMQA / "labels" / "islamqa-ar.labels.jsonl.gz")
     verdicts = [{"id": l["id"], "candidate": l["hukm"], **bank_review(l, en.get(l["id"]))} for l in labels]
+    # The conflicts of the bare reading, followed round by round (docs/architecture/fatawa-labels.md#conflicts).
+    rounds = [("R0 bare reading", frozenset()), ("R1 reading", frozenset({"roles"})), ("R2 jamʿ σ", frozenset({"roles", "didd"})),
+              ("R3 jamʿ scope", frozenset({"roles", "didd", "scope"})), ("R4 tarjīḥ", STAGES)]
+    clash = lambda v: v["class"] in ("conflict", "ikhtilaf")  # noqa: E731
+    base = [l for l in labels if l["hukm"] and clash(bank_review(l, None, frozenset()))]
+    by_round = {name: sum(clash(bank_review(l, None, st)) for l in base) for name, st in rounds}
     write_jsonl_gz(ISLAMQA / "labels" / "islamqa-ar.bank.jsonl.gz", verdicts)
 
     labelled = [v for v in verdicts if v["candidate"]]
     voted = [v for v in labelled if v["en"]]
-    classes = ("confirmed", "consistent", "rejected", "conflict", "no_reading")
+    classes = ("confirmed", "consistent", "rejected", "misread", "ikhtilaf", "conflict", "no_reading")
     rep = {
         "labelled": len(labelled),
         "class": {c: sum(v["class"] == c for v in labelled) for c in classes},
@@ -413,6 +419,8 @@ def cmd_bank_review(_: argparse.Namespace) -> int:
         "english_agreement_by_class": {c: {"agree": sum(v["en"] == v["candidate"] for v in voted if v["class"] == c),
                                            "voted": sum(v["class"] == c for v in voted)} for c in classes},
         "priority": dict(Counter(v["priority"] for v in labelled)),
+        "omission_perspective": sum(v["act"] == "omission" for v in labelled),
+        "conflicts_by_round": by_round,
     }
     _dump(CORPUS / "fatawa" / "bank_review_report.json", rep)
 
