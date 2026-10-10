@@ -100,9 +100,9 @@ def test_daifa_lean_is_generated():
 def test_coverage_report():
     """The H4 metric, pinned so a change to the kernel or the data shows up in review."""
     assert hadith.coverage(CASES) == {
-        "cases": 35, "coverage": 0.714, "with_isnad": 23, "coverage_with_isnad": 0.565,
-        "qarina_share": 0.257, "coverage_with_rulings": 0.971,
-        "classes": {"derivable": 25, "missing_rule": 1, "qarina": 9}}
+        "cases": 45, "coverage": 0.711, "with_isnad": 31, "coverage_with_isnad": 0.581,
+        "qarina_share": 0.244, "coverage_with_rulings": 0.956,
+        "classes": {"derivable": 32, "missing_rule": 2, "qarina": 11}}
 
 
 @pytest.mark.parametrize("c", CASES, ids=lambda c: f"daifa-{c['n']}")

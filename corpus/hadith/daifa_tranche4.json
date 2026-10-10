@@ -1,0 +1,517 @@
+{
+  "note": "Tranche 4 of al-Ḍaʿīfa (H4): entries 36–45 in order, none skipped. Conventions as in tranche 1; strict muʿtabar (D3); rulings (D2) on qarīna cases. New term: «لا يصح» (#41) bounds the verdict below ḥasan and is mapped by al-Albānī's gloss on the same entry.",
+  "work": "albani.daifa",
+  "cases": [
+    {
+      "n": 36,
+      "ref": "src:shamela-12762/v01:p110",
+      "excerpt_ar": "\" حب الوطن من الإيمان \". موضوع.",
+      "term_ar": "موضوع.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [],
+      "note": "no isnād (al-Ṣaghānī); al-Albānī adds naqd al-matn: love of homeland is innate to believer and kāfir alike, so it is no part of īmān"
+    },
+    {
+      "n": 37,
+      "ref": "src:shamela-12762/v01:p111",
+      "excerpt_ar": "\" يأتي على الناس زمان هم فيه ذئاب، فمن لم يكن ذئبا أكلته الذئاب \". ضعيف جدا.",
+      "term_ar": "ضعيف جدا.",
+      "albani": "daifJiddan",
+      "kernel": "daifJiddan",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "ziyad_al_jassas",
+          "links": [
+            {
+              "rawi": "matruk",
+              "who": "زياد بن أبي زياد الجصاص",
+              "said_ar": "تفرد به زياد وهو متروك"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "أنس بن مالك"
+            }
+          ]
+        }
+      ],
+      "disputes": [
+        {
+          "who": "زياد بن أبي زياد الجصاص",
+          "expected": "majruh",
+          "qarina": "jarh",
+          "qawl": [
+            {
+              "side": "jarh",
+              "strength": "mujmal",
+              "by": "الدارقطني: متروك"
+            },
+            {
+              "side": "tadil",
+              "strength": "mujmal",
+              "by": "ابن حبان في الثقات: ربما يهم"
+            }
+          ]
+        }
+      ],
+      "note": "al-Ṭabarānī's version («فيه من لم أعرفهم», al-Haythamī) is not shown to be a distinct route, so it is not encoded. The dispute goes to tarjīḥ; the qarīna is al-Dhahabī's «مجمع على تضعيفه»"
+    },
+    {
+      "n": 38,
+      "ref": "src:shamela-12762/v01:p111",
+      "excerpt_ar": "\" من أخلص لله أربعين يوما ظهرت ينابيع الحكمة على لسانه \". ضعيف.",
+      "term_ar": "ضعيف.",
+      "albani": "daif",
+      "kernel": "daif",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "hajjaj_b_artat",
+          "links": [
+            {
+              "rawi": "thiqa",
+              "who": "هناد بن السري"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "أبو معاوية"
+            },
+            {
+              "rawi": "saduqYahim",
+              "who": "الحجاج بن أرطاة",
+              "said_ar": "مدلس وقد عنعنه",
+              "tadlis": "t4",
+              "sigha": "anana"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "مكحول",
+              "said_ar": "مرسل",
+              "muttasil": false
+            }
+          ]
+        },
+        {
+          "madar": "hajjaj_b_artat",
+          "links": [
+            {
+              "rawi": "majhul",
+              "who": "محمد بن إسماعيل",
+              "said_ar": "مجهول (ابن الجوزي)"
+            },
+            {
+              "rawi": "saduqYahim",
+              "who": "يزيد بن عبد الرحمن الواسطي",
+              "said_ar": "كثير الخطأ (ابن الجوزي)"
+            },
+            {
+              "rawi": "saduqYahim",
+              "who": "الحجاج بن أرطاة",
+              "tadlis": "t4",
+              "sigha": "anana"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "مكحول",
+              "said_ar": "لا يصح سماع مكحول لأبي أيوب",
+              "muttasil": false
+            },
+            {
+              "rawi": "sahabi",
+              "who": "أبو أيوب الأنصاري"
+            }
+          ]
+        },
+        {
+          "madar": "sawwar_b_musab",
+          "links": [
+            {
+              "rawi": "thiqa",
+              "who": "عامر بن سيار"
+            },
+            {
+              "rawi": "matruk",
+              "who": "سوار بن مصعب",
+              "said_ar": "متروك (النسائي)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "ثابت"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "مقسم"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "ابن عباس"
+            }
+          ]
+        }
+      ],
+      "note": "the mursal and the (mistaken, «ووصله لا يصح») mawṣūl both run through al-Ḥajjāj, so they are one madār and do not lift each other; Sawwār's route is shadīd and inert"
+    },
+    {
+      "n": 39,
+      "ref": "src:shamela-12762/v01:p112",
+      "excerpt_ar": "\" من نام بعد العصر فاختلس عقله فلا يلومن إلا نفسه \". ضعيف.",
+      "term_ar": "ضعيف.",
+      "albani": "daif",
+      "kernel": "daif",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "ibn_lahia",
+          "links": [
+            {
+              "rawi": "saduqYahim",
+              "who": "ابن لهيعة",
+              "said_ar": "ضعيف من قبل حفظه"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "عمرو بن شعيب"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "شعيب"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "عبد الله بن عمرو"
+            }
+          ]
+        },
+        {
+          "madar": "ibn_lahia",
+          "links": [
+            {
+              "rawi": "thiqa",
+              "who": "مروان"
+            },
+            {
+              "rawi": "saduqYahim",
+              "who": "ابن لهيعة"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "عقيل"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "مكحول",
+              "said_ar": "مرفوعا مرسلا",
+              "muttasil": false
+            }
+          ]
+        },
+        {
+          "madar": "khalid_b_al_qasim",
+          "links": [
+            {
+              "rawi": "kadhdhab",
+              "who": "خالد بن القاسم",
+              "said_ar": "خالد كذاب (ابن الجوزي)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "الليث بن سعد"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "عقيل"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "الزهري"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "عروة"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "عائشة"
+            }
+          ]
+        },
+        {
+          "madar": "amr_b_al_husayn",
+          "links": [
+            {
+              "rawi": "kadhdhab",
+              "who": "عمرو بن الحصين",
+              "said_ar": "كذاب (الخطيب)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "ابن علاثة"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "الأوزاعي"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "الزهري"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "عروة"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "عائشة"
+            }
+          ]
+        }
+      ],
+      "note": "Ibn Lahīʿa's wajhs (ʿAmr b. Shuʿayb, Ibn Shihāb–Anas, the Makḥūl mursal) are one madār; Khālid's route is Ibn Lahīʿa's ḥadīth ascribed to al-Layth, and both kadhdhāb routes are inert. al-Albānī cites al-Layth's «لا أدع ما ينفعني بحديث ابن لهيعة» against acting on ḍaʿīf ḥadīth in faḍāʾil"
+    },
+    {
+      "n": 40,
+      "ref": "src:shamela-12762/v01:p114",
+      "excerpt_ar": "\" عليكم بالقرع فإنه يزيد في الدماغ، وعليكم بالعدس فإنه قدس على لسان سبعين نبيا \". موضوع.",
+      "term_ar": "موضوع.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "amr_b_al_husayn",
+          "links": [
+            {
+              "rawi": "kadhdhab",
+              "who": "عمرو بن الحصين",
+              "said_ar": "الكذاب"
+            },
+            {
+              "rawi": "matruk",
+              "who": "ابن علاثة",
+              "said_ar": "وعمرو وشيخه متروكان (السيوطي)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "ثور"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "مكحول"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "واثلة"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "n": 41,
+      "ref": "src:shamela-12762/v01:p115",
+      "excerpt_ar": "\" من أصاب مالا من نهاوش أذهبه الله في نهابر \". لا يصح.",
+      "term_ar": "لا يصح.",
+      "albani": "daifJiddan",
+      "kernel": "mawdu",
+      "class": "missing_rule",
+      "turuq": [
+        {
+          "madar": "amr_b_al_husayn",
+          "links": [
+            {
+              "rawi": "kadhdhab",
+              "who": "عمرو بن الحصين",
+              "said_ar": "عمرو هذا كذاب كما سبق مرارا"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "محمد بن عبد الله بن علاثة"
+            },
+            {
+              "rawi": "majhul",
+              "who": "أبو سلمة الحمصي",
+              "said_ar": "تابعي مجهول (المناوي)؛ لا صحبة له، فهو مع ضعفه مرسل",
+              "muttasil": false
+            }
+          ]
+        }
+      ],
+      "note": "«لا يصح» bounds the verdict (below ḥasan) without naming a rung; it is mapped by his own gloss «وهذا إسناد ساقط» to the shadīd band. The kernel turns a lone kadhdhāb route into mawḍūʿ (as in #27, #28, #40), but here al-Albānī stops at «ساقط», so the kernel is below his verdict: the first such case. The missing rule is when a kadhdhāb in the isnād makes the matn mawḍūʿ rather than sāqiṭ"
+    },
+    {
+      "n": 42,
+      "ref": "src:shamela-12762/v01:p116",
+      "excerpt_ar": "\" الأنبياء قادة، والفقهاء سادة، ومجالسهم زيادة \". موضوع.",
+      "term_ar": "موضوع.",
+      "albani": "mawdu",
+      "kernel": "daifJiddan",
+      "kernel_with_rulings": "mawdu",
+      "args": 3,
+      "class": "qarina",
+      "turuq": [
+        {
+          "madar": "al_harith_al_awar",
+          "links": [
+            {
+              "rawi": "thiqa",
+              "who": "أبو إسحاق",
+              "said_ar": "لم يسمع أبو إسحاق منه إلا أربعة أحاديث (شعبة)",
+              "tadlis": "t3",
+              "sigha": "anana"
+            },
+            {
+              "rawi": "matruk",
+              "who": "الحارث الأعور",
+              "said_ar": "ضعفه الجمهور وقال ابن المديني: كذاب"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "علي بن أبي طالب"
+            }
+          ]
+        }
+      ],
+      "rulings": [
+        {
+          "arg": 1,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "القاري",
+          "said_ar": "قال القاري: هو موضوع كما في \" الخلاصة \""
+        },
+        {
+          "arg": 2,
+          "kind": "matn",
+          "ceiling": "mawdu",
+          "by": "الألباني",
+          "said_ar": "ولوائح الوضع عليه ظاهرة"
+        }
+      ],
+      "note": "al-Albānī grades the isnād «سند ضعيف جدا», which the kernel matches; mawḍūʿ rests on al-Qārī's ḥukm and his own «لوائح الوضع عليه ظاهرة»"
+    },
+    {
+      "n": 43,
+      "ref": "src:shamela-12762/v01:p117",
+      "excerpt_ar": "\" شهر رمضان معلق بين السماء والأرض، ولا يرفع إلى الله إلا بزكاة الفطر \". ضعيف.",
+      "term_ar": "ضعيف.",
+      "albani": "daif",
+      "kernel": "daif",
+      "kernel_undefeated": "hasan",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "muhammad_b_ubayd",
+          "links": [
+            {
+              "rawi": "majhul",
+              "who": "محمد بن عبيد البصري",
+              "said_ar": "مجهول، لا يتابع عليه (ابن الجوزي، وأقره الحافظ)"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "جرير"
+            }
+          ]
+        },
+        {
+          "madar": "abd_al_rahman_b_uthman",
+          "links": [
+            {
+              "rawi": "thiqa",
+              "who": "بقية بن الوليد",
+              "said_ar": "حدثني",
+              "tadlis": "t4"
+            },
+            {
+              "rawi": "majhul",
+              "who": "عبد الرحمن بن عثمان بن عمر",
+              "said_ar": "لم أعرفه والظاهر أنه من شيوخ بقية المجهولين"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "أنس"
+            }
+          ]
+        }
+      ],
+      "args": 2,
+      "attacks": [
+        [
+          1,
+          0
+        ]
+      ],
+      "objections": [
+        "naqd al-matn: read literally, the fast of Ramaḍān is accepted only once zakāt al-fiṭr is paid, «ولا أعلم أحدا من أهل العلم يقول به»; the taʾwīl offered is «فرع التصحيح»"
+      ],
+      "note": "Without the objection the kernel lifts to ḥasan li-ghayrihi: two independent majhūl routes, each a muʿtabar follower of the other under strict D3 (equal floors). This relies on D1 (majhūl al-ʿayn repairable); al-Albānī does not reject the follower for jahāla here, so D1 is not triggered. The lift is defeated by the matn objection. Ibn Shāhīn's «جيد الإسناد» is set aside as tasāhul",
+      "kernel_lax_undefeated": "hasan"
+    },
+    {
+      "n": 44,
+      "ref": "src:shamela-12762/v01:p119",
+      "excerpt_ar": "\" من أحدث ولم يتوضأ فقد جفاني، ومن توضأ ولم يصل فقد جفاني، ومن صلى ولم يَدْعُني فقد جفاني، ومن دعاني فلم أجبه فقد جفيته، ولست برب جاف \". موضوع.",
+      "term_ar": "موضوع.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [],
+      "note": "no isnād (al-Ṣaghānī); al-Albānī adds naqd al-matn: «فقد جفاني» makes recommended acts obligatory"
+    },
+    {
+      "n": 45,
+      "ref": "src:shamela-12762/v01:p119",
+      "excerpt_ar": "\" من حج البيت ولم يزرني فقد جفاني \". موضوع.",
+      "term_ar": "موضوع.",
+      "albani": "mawdu",
+      "kernel": "daifJiddan",
+      "kernel_with_rulings": "mawdu",
+      "args": 3,
+      "class": "qarina",
+      "turuq": [
+        {
+          "madar": "ibn_al_numan_b_shibl",
+          "links": [
+            {
+              "rawi": "muttaham",
+              "who": "محمد بن محمد بن النعمان بن شبل أو جده",
+              "said_ar": "يأتي عن الثقات بالطامات وعن الأثبات بالمقلوبات (ابن حبان)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "مالك"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "نافع"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "ابن عمر"
+            }
+          ]
+        }
+      ],
+      "rulings": [
+        {
+          "arg": 1,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "الذهبي",
+          "said_ar": "موضوع. قاله الحافظ الذهبي في \" الميزان \""
+        },
+        {
+          "arg": 2,
+          "kind": "matn",
+          "ceiling": "mawdu",
+          "by": "الألباني",
+          "said_ar": "ومما يدل على وضعه أن جفاء النبي صلى الله عليه وسلم من الكبائر إن لم يكن كفرا"
+        }
+      ],
+      "note": "the āfa is the grandson or his grandfather (al-Dāraquṭnī names the grandson); one link stands for both. Ibn Ḥibbān's description is tuhma, so the kernel gives ḍaʿīf jiddan (as in #18, #20); mawḍūʿ rests on al-Dhahabī's ḥukm and al-Albānī's naqd al-matn"
+    }
+  ]
+}
