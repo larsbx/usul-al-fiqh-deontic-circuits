@@ -363,6 +363,60 @@ import Usul
 #guard (Usul.Refinements.combineForms false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f004 (genuine_ikhtilaf)
 #guard (Usul.Refinements.combineForms true) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f000 (derivable)
+#guard (Usul.Refinements.advanceAllowed true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f001 (derivable)
+#guard (Usul.Refinements.advanceAllowed true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f002 (derivable)
+#guard (Usul.Refinements.advanceAllowed true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f003 (derivable)
+#guard (Usul.Refinements.advanceAllowed true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f004 (derivable)
+#guard (Usul.Refinements.advanceAllowed true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f005 (derivable)
+#guard (Usul.Refinements.advanceAllowed true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f006 (derivable)
+#guard (Usul.Refinements.advanceAllowed true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f007 (derivable)
+#guard (Usul.Refinements.advanceAllowed true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f008 (derivable)
+#guard (Usul.Refinements.advanceAllowed true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f000 (genuine_ikhtilaf)
+#guard (Usul.Refinements.naflValid true false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f001 (genuine_ikhtilaf)
+#guard (Usul.Refinements.naflValid true false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f002 (genuine_ikhtilaf)
+#guard (Usul.Refinements.naflValid true false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f003 (derivable)
+#guard (Usul.Refinements.naflValid true false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f004 (derivable)
+#guard (Usul.Refinements.naflValid true false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f005 (derivable)
+#guard (Usul.Refinements.naflValid true false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000 (genuine_ikhtilaf)
+#guard (Usul.Refinements.attachTo true) == .each
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f001 (genuine_ikhtilaf)
+#guard (Usul.Refinements.attachTo false) == .abstain
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f002 (genuine_ikhtilaf)
+#guard (Usul.Refinements.attachTo false) == .abstain
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f001 (derivable)
+#guard (Usul.Refinements.eachOnItsAsl true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f002 (derivable)
+#guard (Usul.Refinements.eachOnItsAsl true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f003 (derivable)
+#guard (Usul.Refinements.eachOnItsAsl true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f004 (genuine_ikhtilaf)
+#guard (Usul.Refinements.eachOnItsAsl true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f001 (genuine_ikhtilaf)
+#guard (Usul.Refinements.settlesInDhimma false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f002 (genuine_ikhtilaf)
+#guard (Usul.Refinements.settlesInDhimma false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f003 (genuine_ikhtilaf)
+#guard (Usul.Refinements.settlesInDhimma false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f004 (genuine_ikhtilaf)
+#guard (Usul.Refinements.settlesInDhimma false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f005 (genuine_ikhtilaf)
+#guard (Usul.Refinements.settlesInDhimma false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001 (derivable)
 #guard (Usul.Refinements.zahirPrevails .zann .qat true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002 (derivable)

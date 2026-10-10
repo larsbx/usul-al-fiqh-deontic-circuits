@@ -303,6 +303,23 @@ ENCODERS: dict[str, dict] = {
         sadi=[], qawaid=[RAJAB.format(12)], facts={"substitutes": B},
         out=B, lean="Usul.Refinements.combineForms {substitutes}",
         py=lambda f: not f["substitutes"]),
+    "advance_after_cause": dict(
+        sadi=[], qawaid=[RAJAB.format(4)], facts={"cause_present": B},
+        out=B, lean="Usul.Refinements.advanceAllowed {cause_present}", py=lambda f: f["cause_present"]),
+    "nafl_before_fard": dict(
+        sadi=[], qawaid=[RAJAB.format(11)], facts={"narrow": B, "financial": B},
+        out=B, lean="Usul.Refinements.naflValid {narrow} {financial}",
+        py=lambda f: not f["narrow"] or f["financial"]),
+    "cause_from_one_of_two": dict(
+        sadi=[], qawaid=[RAJAB.format(14)], facts={"harmless": B},
+        out=("neither", "each", "lot", "abstain"), lean="Usul.Refinements.attachTo {harmless}",
+        py=lambda f: "each" if f["harmless"] else "abstain"),
+    "each_on_its_asl": dict(
+        sadi=[], qawaid=[RAJAB.format(15)], facts={"separate_matters": B},
+        out=B, lean="Usul.Refinements.eachOnItsAsl {separate_matters}", py=lambda f: f["separate_matters"]),
+    "settles_without_ability": dict(
+        sadi=[], qawaid=[RAJAB.format(19)], facts={"making_up": B},
+        out=B, lean="Usul.Refinements.settlesInDhimma {making_up}", py=lambda f: not f["making_up"]),
     "excess_in_following": dict(
         sadi=[], qawaid=[RAJAB.format(3)], facts={"separable": B, "lightened": B, "following": B},
         out=B, lean="Usul.Refinements.excessObligatoryIn {separable} {lightened} {following}",

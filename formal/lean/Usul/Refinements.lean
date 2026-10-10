@@ -841,6 +841,51 @@ criterion: forms that are substitutes for each other are not combined, «ولا 
 
 def combineForms (substitutes : Bool) : Bool := !substitutes
 
+/-! ## M8 tranche 8: qawāʿid 4, 11, 14, 15, 19 -/
+
+/-! ### Qāʿida 4: advancing worship
+
+«لا يجوز تقديمها على سبب وجوبها ويجوز تقديمها بعد سبب الوجوب وقبل الوجوب». -/
+
+def advanceAllowed (causePresent : Bool) : Bool := causePresent
+
+/-! ### Qāʿida 11: the voluntary before the obligatory of its kind
+
+«فإن كانت موسعة جاز التنفل قبل أدائها … وإن كانت مضيقة لم تصح على الصحيح». -/
+
+def naflValid (narrow financial : Bool) : Bool := !narrow || financial
+
+/-- Zakāt is the carve-out: «فقال الأصحاب يصح أن يتنفل بالصدقة قبل أدائها وإن كانت على الفور», with
+Aḥmad's naṣṣ (Muhannā), so narrowness bars only the purely bodily worship of one kind. -/
+theorem zakat_carve_out : naflValid true true = true := rfl
+
+/-! ### Qāʿida 14: a cause from one of two men, not known which
+
+The reading takes Ibn Rajab's own farq: binding both is right where it costs no right («بخلاف إيجاب
+الطهارة عليهما فإنه لا ضرر فيه»), and wrong where it would cut a right («إجبار الإنسان على قطع
+ملكه بغير حق»). There neither is bound, yet each refrains until certain, «ولنا وجه آخر بوجوب
+اعتزال كل منهما زوجته حتى يتيقن الأمر ونص عليه أحمد», which the slave-women follow by qiyās
+al-manṣūṣ. `abstain` is that composite: no attachment, with abstention. -/
+
+inductive Attach where
+  | neither | each | lot | abstain
+  deriving DecidableEq, Repr
+
+def attachTo (harmless : Bool) : Attach := if harmless then .each else .abstain
+
+/-! ### Qāʿida 15: corollaries of one aṣl against another
+
+«لم يلتفت إلى ذلك اللازم على الصحيح»: each matter stays on its own aṣl. -/
+
+def eachOnItsAsl (separateMatters : Bool) : Bool := separateMatters
+
+/-! ### Qāʿida 19: ability to perform and the dhimma
+
+«إمكان الأداء ليس بشرط في استقرار الواجبات بالشرع في الذمة على ظاهر المذهب»; for making up
+(qaḍāʾ) «فاعتبر الأصحاب له إمكان الأداء». -/
+
+def settlesInDhimma (makingUp : Bool) : Bool := !makingUp
+
 /-! ## Reconciliation refinements (`corpus/reconciliation/ledger.json`)
 
 Each is a jamʿ: a farq the later works cite, conservative over the earlier reading where the farq
