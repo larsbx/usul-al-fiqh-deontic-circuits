@@ -15,6 +15,7 @@
     python -m usul_corpus labels      # candidate ḥukm labels + splits for the Arabic answers → data/islamqa/labels
     python -m usul_corpus bank-review # review the labels with the deontic-circuits bank; fill the review sample
     python -m usul_corpus oracle      # export the weighted training set; evaluate the baseline oracles
+    python -m usul_corpus fatawa-takhrij  # check the IslamQA takhrīj tranches; regenerate their Lean guards and report
 """
 
 from __future__ import annotations
@@ -504,6 +505,24 @@ def cmd_oracle(_: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_fatawa_takhrij(_: argparse.Namespace) -> int:
+    """IslamQA cases for the bank's encoders: check them against the kernel and their answers, guard them in Lean."""
+    import gzip
+
+    from . import fatawa_takhrij, takhrij
+    with gzip.open(ISLAMQA / "answers" / "islamqa-ar.jsonl.gz", "rt", encoding="utf-8") as f:
+        answers = {r["id"]: r for r in map(json.loads, f)}
+    cases = fatawa_takhrij.load(CORPUS)
+    if bad := fatawa_takhrij.check(cases, answers):
+        print(json.dumps(bad, ensure_ascii=False, indent=1))
+        return 1
+    (SIGNATURE_LEAN.parent / "FatawaTakhrij.lean").write_text(fatawa_takhrij.lean_file(cases), encoding="utf-8")
+    rep = takhrij.report(cases)
+    _dump(CORPUS / "fatawa" / "takhrij" / "report.json", rep)
+    print(json.dumps({k: rep[k] for k in ("total", "coverage", "encoding_error", "classes")}, ensure_ascii=False))
+    return 0
+
+
 def cmd_validate(_: argparse.Namespace) -> int:
     import jsonschema  # test-time dependency only
     from . import m5_commands
@@ -560,6 +579,7 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("labels").set_defaults(run=cmd_labels)
     sub.add_parser("bank-review").set_defaults(run=cmd_bank_review)
     sub.add_parser("oracle").set_defaults(run=cmd_oracle)
+    sub.add_parser("fatawa-takhrij").set_defaults(run=cmd_fatawa_takhrij)
     fa = sub.add_parser("fatawa")
     fa.add_argument("--lang")
     fa.add_argument("--refresh", action="store_true")

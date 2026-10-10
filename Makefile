@@ -3,7 +3,7 @@ PY      ?= python3
 TLA_JAR ?= .cache/tla2tools.jar
 TLA_URL  = https://github.com/tlaplus/tlaplus/releases/download/v1.8.0/tla2tools.jar
 
-.PHONY: all test fetch fatawa labels bank-review oracle ocr build validate generated lean tla reception
+.PHONY: all test fetch fatawa labels bank-review oracle fatawa-takhrij ocr build validate generated lean tla reception
 all: test validate generated lean tla
 
 test:      ; cd pipeline && $(PY) -m pytest -q
@@ -12,6 +12,7 @@ fatawa:    ; cd pipeline && $(PY) -m usul_corpus fatawa
 labels:    ; cd pipeline && $(PY) -m usul_corpus labels
 bank-review: ; cd pipeline && $(PY) -m usul_corpus bank-review
 oracle:    ; cd pipeline && $(PY) -m usul_corpus oracle
+fatawa-takhrij: ; cd pipeline && $(PY) -m usul_corpus fatawa-takhrij
 ocr:       ; cd pipeline && $(PY) -m usul_corpus ocr --jobs $(shell nproc)   # needs tesseract + poppler-utils
 build:     ; cd pipeline && $(PY) -m usul_corpus build
 validate:  ; cd pipeline && $(PY) -m usul_corpus validate
