@@ -32,7 +32,7 @@ Each line is an event `{serial, op, type, data}` with `op ∈ {created, updated,
 
 ```json
 {"id": "islamqa.115097", "lang": "ar", "url": "https://islamqa.info/ar/answers/115097",
- "title": "…", "question": "…", "answer": "…",
+ "title": "…", "question": "…", "answer": "…", "summary": "…or null (the site's ملخص الجواب, 3,387 ar)",
  "source": {"ref": 5, "title": "الإسلام سؤال وجواب"},
  "topics": [{"ref": 150, "path": ["الفقه وأصوله", "الفقه", "معاملات", "البيوع", "الاستثمار"]}],
  "subsites": [], "see_also": ["islamqa.7535"], "langs": ["ar"], "created": "2008-03-26", "updated": "2020-02-11"}
@@ -54,3 +54,5 @@ Each line is an event `{serial, op, type, data}` with `op ∈ {created, updated,
 - `see_also` (the site's `fatawas`) links related answers: a ready-made citation graph.
 - The text is © IslamQA (all rights reserved) and is committed only because this repository is private: do not make the repository or `data/islamqa` public. Nothing here is a fatwā issued by this project. Per the harness rule, these answers are **labels to test the kernel against**, not a hidden deontic authority.
 - Deltas are not applied by `make fatawa` (the snapshot is pinned for reproducibility); `fold` already handles them.
+
+Training labels: [fatawa-labels.md](fatawa-labels.md).

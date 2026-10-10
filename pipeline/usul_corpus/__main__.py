@@ -11,6 +11,7 @@
     python -m usul_corpus reception   # count the citers' citations of each cited work (cached citers only)
     python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
     python -m usul_corpus fatawa [--lang L] [--refresh]   # IslamQA offline dumps → data/islamqa/answers/*.jsonl.gz
+    python -m usul_corpus labels      # candidate ḥukm labels + splits for the Arabic answers → data/islamqa/labels
 """
 
 from __future__ import annotations
@@ -22,6 +23,7 @@ import sys
 from pathlib import Path
 
 from .fatawa import answers, fold, snapshot_witnesses, write_jsonl_gz
+from .labels import label, report, review_sample
 from .fetch import fetch
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
@@ -351,6 +353,24 @@ def cmd_fatawa(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_labels(_: argparse.Namespace) -> int:
+    """Arabic answers → candidate labels (LFS) + counts report and a stratified review sample (committed)."""
+    import gzip
+
+    with gzip.open(ISLAMQA / "answers" / "islamqa-ar.jsonl.gz", "rt", encoding="utf-8") as f:
+        recs = [json.loads(l) for l in f]
+    labels = [label(r) for r in recs]
+    write_jsonl_gz(ISLAMQA / "labels" / "islamqa-ar.labels.jsonl.gz", labels)
+    rep = report(labels)
+    _dump(CORPUS / "fatawa" / "labels_report.json", rep)
+    sample = review_sample(labels, {r["id"]: r["title"] for r in recs})
+    review = CORPUS / "fatawa" / "review" / "labels-sample.jsonl"
+    review.parent.mkdir(parents=True, exist_ok=True)
+    review.write_text("".join(json.dumps(x, ensure_ascii=False) + "\n" for x in sample), encoding="utf-8")
+    print(f"{rep['labelled']}/{rep['total']} labelled  {rep['hukm']}")
+    return 0
+
+
 def cmd_validate(_: argparse.Namespace) -> int:
     import jsonschema  # test-time dependency only
     from . import m5_commands
@@ -401,6 +421,7 @@ def main(argv: list[str] | None = None) -> int:
     m5.set_defaults(run=cmd_m5_commands)
     sub.add_parser("docs").set_defaults(run=cmd_docs)
     sub.add_parser("reception").set_defaults(run=cmd_reception)
+    sub.add_parser("labels").set_defaults(run=cmd_labels)
     fa = sub.add_parser("fatawa")
     fa.add_argument("--lang")
     fa.add_argument("--refresh", action="store_true")

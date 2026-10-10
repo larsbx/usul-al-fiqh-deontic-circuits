@@ -1,0 +1,45 @@
+{
+  "total": 32445,
+  "labelled": 14377,
+  "hukm": {
+    "unlabelled": 18068,
+    "haram": 5196,
+    "mubah": 5099,
+    "wajib": 3374,
+    "mandub": 595,
+    "makruh": 113
+  },
+  "hukm_by_basis": {
+    "summary": {
+      "mubah": 570,
+      "haram": 340,
+      "wajib": 221,
+      "mandub": 99,
+      "makruh": 4
+    },
+    "conclusion": {
+      "mubah": 489,
+      "haram": 434,
+      "wajib": 265,
+      "mandub": 44,
+      "makruh": 13
+    },
+    "lead": {
+      "haram": 4422,
+      "mubah": 4040,
+      "wajib": 2888,
+      "mandub": 452,
+      "makruh": 96
+    }
+  },
+  "conditional": 6518,
+  "wad": {
+    "batil": 331,
+    "sahih": 319
+  },
+  "split": {
+    "train": 25960,
+    "test": 3252,
+    "dev": 3233
+  }
+}
