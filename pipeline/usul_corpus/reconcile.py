@@ -49,8 +49,11 @@ def _grades(g: str | list[str]) -> list[str]:
 
 
 def graded(case: dict, entry: dict) -> list[tuple[object, str]]:
-    """One (ruling, grade) per distinct grade among each position's holders."""
-    return [(p["ruling"], x) for p, g in zip(case["positions"], entry["grades"]) for x in _grades(g)]
+    """One (ruling, grade) per distinct grade among each position's holders, then one per item
+    of evidence imported from a later work (al-Inṣāf's taṣḥīḥ, the muʿtamad's jazm)."""
+    ps = case["positions"]
+    return ([(p["ruling"], x) for p, g in zip(ps, entry["grades"]) for x in _grades(g)]
+            + [(ps[v["position"]]["ruling"], v["grade"]) for v in entry.get("evidence", [])])
 
 
 def resolve(case: dict, entry: dict) -> tuple[str, object | None]:
@@ -88,6 +91,9 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
             continue
         if len(e["grades"]) != len(c["positions"]) or not {x for g in e["grades"] for x in _grades(g)} <= set(GRADES):
             errs.append(f"{f}: one grade per position, from {GRADES}")
+            continue
+        if any(not 0 <= v["position"] < len(c["positions"]) or v["grade"] not in GRADES for v in e.get("evidence", [])):
+            errs.append(f"{f}: evidence must name a listed position and a grade")
             continue
         if j := e.get("jam"):
             if c["encoder"] != j["encoder"] or not conservative.get(j["encoder"]) or j["from"] not in takhrij.ENCODERS:

@@ -5,6 +5,7 @@ import re
 from pathlib import Path
 
 import jsonschema
+import pytest
 
 from usul_corpus import reconcile, takhrij
 
@@ -84,3 +85,36 @@ def test_the_bank_reconciles_itself_and_stays_generated():
 def test_draft_grades_from_the_annotation():
     assert [reconcile.draft_grade(w) for w in ("al-mashhūr", "riwāya: x", "ẓāhir kalām Aḥmad", "wajh: x", "al-Mughnī")] == [
         "tashih", "nass", "zahir", "wajh", "ashab"]
+
+
+def test_imported_evidence_adds_a_graded_holder():
+    c = _ikh("x", True, [True, False])
+    e = _entry("x", ["ashab", "ashab"])
+    assert reconcile.standing(c, e) == "tawaqquf"
+    insaf = {**e, "evidence": [{"position": 1, "grade": "tashih"}]}
+    assert reconcile.resolve(c, insaf) == ("tarjih", False)
+    bad = {**e, "evidence": [{"position": 2, "grade": "tashih"}]}
+    assert reconcile.check([c], {"entries": [bad]}, DOSSIER) == ["x: evidence must name a listed position and a grade"]
+
+
+EVIDENCE = [v for e in LEDGER["entries"] for v in e.get("evidence", [])]
+
+
+def test_evidence_cites_registered_witnesses_within_their_limits():
+    from usul_corpus.records import EXCERPT_LEN
+    works = json.loads((ROOT / "corpus/registry.json").read_text())["works"]
+    rights = {w["id"]: work["rights"] for work in works for w in work["witnesses"]}
+    for v in EVIDENCE:
+        w = v["ref"][4:].split("/")[0]
+        assert w in rights and len(v["excerpt_ar"]) <= EXCERPT_LEN[rights[w]], v["ref"]
+
+
+@pytest.mark.parametrize("v", EVIDENCE, ids=lambda v: v["ref"])
+def test_evidence_is_verbatim(v):
+    """Letters-only comparison against the cached witness; skipped where it is not cached (CI)."""
+    from usul_corpus.arabic import locate
+    w, loc = v["ref"][4:].split("/")
+    src = ROOT / ".cache/corpus" / f"{w}.txt"
+    if not src.exists():
+        pytest.skip(f"{w} not cached")
+    assert locate(src.read_text(encoding="utf-8"), v["excerpt_ar"]) == loc, v["ref"]
