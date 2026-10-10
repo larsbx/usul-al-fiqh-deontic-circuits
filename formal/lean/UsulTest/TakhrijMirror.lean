@@ -280,6 +280,22 @@ import Usul
 #guard (Usul.Refinements.laterBindingGoverns true false true) == true
 #guard (Usul.Refinements.laterBindingGoverns true true false) == false
 #guard (Usul.Refinements.laterBindingGoverns true true true) == true
+#guard (Usul.Refinements.excessObligatory false false) == false
+#guard (Usul.Refinements.excessObligatory false true) == true
+#guard (Usul.Refinements.excessObligatory true false) == false
+#guard (Usul.Refinements.excessObligatory true true) == false
+#guard (Usul.Refinements.advancedSuffices false) == false
+#guard (Usul.Refinements.advancedSuffices true) == true
+#guard (Usul.Refinements.validDespite .essence) == false
+#guard (Usul.Refinements.validDespite .specificCondition) == false
+#guard (Usul.Refinements.validDespite .generalCondition) == false
+#guard (Usul.Refinements.validDespite .outside) == true
+#guard (Usul.Refinements.otherTongueValid false false) == true
+#guard (Usul.Refinements.otherTongueValid false true) == false
+#guard (Usul.Refinements.otherTongueValid true false) == true
+#guard (Usul.Refinements.otherTongueValid true true) == true
+#guard (Usul.Refinements.combineForms false) == true
+#guard (Usul.Refinements.combineForms true) == false
 #guard (Usul.Refinements.useSubstituteAt false false) == true
 #guard (Usul.Refinements.useSubstituteAt false true) == true
 #guard (Usul.Refinements.useSubstituteAt true false) == false

@@ -239,6 +239,72 @@
       ]
     },
     {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f000",
+      "grades": [
+        "takhrij",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Both sides are derivations: al-Qāḍī and Ibn ʿAqīl's takhrīj on the two wujūh, and Ibn ʿAqīl's iḥtimāl."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f001",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f002",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f003",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "«وهو الصواب» is Ibn Rajab's own preference."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f001",
+      "grades": [
+        "jazm",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "«إطلاق الأكثرين»: the unqualified statements of most aṣḥāb."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f002",
+      "grades": [
+        "jazm",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f003",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f001",
       "grades": [
         "nass",
@@ -318,6 +384,51 @@
           "note": "The Muntahā rules that even the muḥdith who finds insufficient water uses it and then performs tayammum."
         }
       ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f002",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f004",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f005",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f002",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f004",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f000",

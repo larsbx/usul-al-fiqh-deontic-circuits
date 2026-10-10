@@ -792,6 +792,55 @@ def rightPassesToSubstitute (boundToThing : Bool) : Bool := boundToThing
 /-- As with transfer (qāʿida 24): a right on the property itself follows it. -/
 theorem substitute_as_transfer : rightPassesToSubstitute true = rightSurvivesTransfer true false := rfl
 
+/-! ## M8 tranche 7: qawāʿid 3, 5, 9, 10, 12 -/
+
+/-! ### Qāʿida 3: an undistinguished excess over what suffices
+
+«هل يوصف الكل بالوجوب أو قدر الإجزاء منه … ففيه وجهان». The reading follows Ibn Rajab's own
+resolution: the whole is obligatory where the whole was the original duty, lightened
+(«وصف الكل بالوجوب على الصحيح», the traveller's four), and otherwise the excess is voluntary
+(al-Qāḍī on the older age in zakāt, «وهو الصواب»). A separable excess is voluntary «فلا إشكال». -/
+
+def excessObligatory (separable lightened : Bool) : Bool := !separable && lightened
+
+/-! ### Qāʿida 5: an act advanced before its time, the state then changing
+
+The act suffices when it was the duty as it stood at performance: «لأنه كان فرضه في الظاهر فبرئ به …
+فصادف … ذمة بريئة»; the boy's prayer before puberty discharged no duty, so the manṣūṣ has it
+repeated. -/
+
+def advancedSuffices (dueAtPerformance : Bool) : Bool := dueAtPerformance
+
+/-! ### Qāʿida 9: worship performed in a prohibited way
+
+Invalid where the prohibition returns to the act itself, to a condition specific to it, or to a
+condition not specific to it («روايتان أشهرهما عدمها»); valid where it returns to what is no
+condition («وخالفه الأكثرون», against Abū Bakr). -/
+
+inductive Prohibited where
+  | essence | specificCondition | generalCondition | outside
+  deriving DecidableEq, Repr
+
+def validDespite : Prohibited → Bool
+  | .outside => true
+  | _ => false
+
+/-! ### Qāʿida 10: wordings in worship and contracts
+
+«ما يعتبر معناه دون لفظه كألفاظ عقد البيع … وألفاظ الطلاق»; «ما يعتبر لفظه مع القدرة عليه دون العجز
+عنه». The reading: a non-Arabic wording counts where only the meaning counts, or where he cannot
+manage the Arabic. -/
+
+def otherTongueValid (meaningOnly able : Bool) : Bool := meaningOnly || !able
+
+/-! ### Qāʿida 12: worship transmitted in several forms
+
+«ظاهر كلام الأصحاب» is to keep to one form; combining is disputed. The reading takes Taqī al-Dīn's
+criterion: forms that are substitutes for each other are not combined, «ولا يصح الجمع بين البدل
+والمبدل»; forms that are not (two prayers) may be, «جمعت فعله وأمره» (Aḥmad). -/
+
+def combineForms (substitutes : Bool) : Bool := !substitutes
+
 /-! ## Reconciliation refinements (`corpus/reconciliation/ledger.json`)
 
 Each is a jamʿ: a farq the later works cite, conservative over the earlier reading where the farq

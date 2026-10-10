@@ -1,14 +1,14 @@
 {
-  "entries": 128,
+  "entries": 140,
   "stages": {
     "jam": 11,
-    "tarjih": 110,
-    "tawaqquf": 7
+    "tarjih": 112,
+    "tawaqquf": 17
   },
   "standing": {
     "against_reading": 58,
-    "for_reading": 63,
-    "tawaqquf": 7
+    "for_reading": 65,
+    "tawaqquf": 17
   },
   "worklist": {
     "asl_zahir": [
@@ -122,6 +122,8 @@
     "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f001",
     "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f006",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f001",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f002",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f001",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f003",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f006",
