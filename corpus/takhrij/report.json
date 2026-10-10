@@ -1,16 +1,16 @@
 {
- "total": 324,
+ "total": 461,
  "classes": {
-  "derivable": 134,
-  "genuine_ikhtilaf": 183,
+  "derivable": 194,
+  "genuine_ikhtilaf": 260,
   "missing_fact": 1,
   "missing_rule": 5,
   "segmentation_error": 1
  },
- "coverage": 0.981,
- "madhhab_coverage": 0.653,
+ "coverage": 0.987,
+ "madhhab_coverage": 0.691,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 77,
+ "ikhtilaf_matching_madhhab": 124,
  "gaps_open": 6,
  "revisited": 37,
  "revisit_queue": [],
@@ -60,10 +60,6 @@
   "partial_capability": {
    "derivable": 3,
    "genuine_ikhtilaf": 2
-  },
-  "substitute": {
-   "derivable": 1,
-   "genuine_ikhtilaf": 6
   },
   "asl_zahir": {
    "derivable": 16,
@@ -135,9 +131,6 @@
   "concurrent_causes": {
    "genuine_ikhtilaf": 6
   },
-  "unknown_condition": {
-   "genuine_ikhtilaf": 11
-  },
   "running_water": {
    "genuine_ikhtilaf": 3
   },
@@ -194,6 +187,138 @@
   "right_after_transfer": {
    "derivable": 4,
    "genuine_ikhtilaf": 4
+  },
+  "follows_proven_ownership": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 4
+  },
+  "tolerance_exceeded": {
+   "genuine_ikhtilaf": 4
+  },
+  "failed_obligation_returns": {
+   "genuine_ikhtilaf": 3
+  },
+  "benefit_exception": {
+   "derivable": 6
+  },
+  "implicit_exception": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 2
+  },
+  "manumission_spread": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 2
+  },
+  "benefit_then_thing": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 2
+  },
+  "successive_by_binding": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 4
+  },
+  "prohibited_worship": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 2
+  },
+  "combining_forms": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 2
+  },
+  "advance_after_cause": {
+   "derivable": 9
+  },
+  "nafl_before_fard": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 3
+  },
+  "cause_from_one_of_two": {
+   "genuine_ikhtilaf": 3
+  },
+  "each_on_its_asl": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 1
+  },
+  "settles_without_ability": {
+   "genuine_ikhtilaf": 5
+  },
+  "lease_after_authority": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "return_of_held_property": {
+   "derivable": 3
+  },
+  "continued_holding": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "holding_after_contract_end": {
+   "genuine_ikhtilaf": 1
+  },
+  "void_contract_concluded": {
+   "derivable": 2
+  },
+  "qabd_in_contracts": {
+   "derivable": 2
+  },
+  "forced_acquisition_solvent": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "daman_without_qabd": {
+   "derivable": 2
+  },
+  "disposal_over_anothers_right": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "disposal_before_qabd_debt": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 2
+  },
+  "concurrent_condition": {
+   "genuine_ikhtilaf": 6
+  },
+  "desisting_at_once": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "deputy_of_qadi": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "removal_before_knowledge": {
+   "genuine_ikhtilaf": 3
+  },
+  "excess_in_following": {
+   "genuine_ikhtilaf": 4
+  },
+  "advanced_kaffara_at_obligation": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 4
+  },
+  "wording_need_not_learn": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 3
+  },
+  "substitute_at_obligation": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 6
+  },
+  "unknown_condition_in_fact": {
+   "genuine_ikhtilaf": 11
+  },
+  "words_out_of_nature": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 6
+  },
+  "contract_by_kinaya": {
+   "genuine_ikhtilaf": 2
+  },
+  "right_to_substitute": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 3
   },
   "umum_lafz": {
    "derivable": 3

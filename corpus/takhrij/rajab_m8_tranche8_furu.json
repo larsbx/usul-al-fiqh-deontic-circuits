@@ -1,0 +1,427 @@
+{
+  "suite": "m8_rajab_tranche_8",
+  "status": "candidate",
+  "provenance": "M8 eighth tranche: every far record of Ibn Rajab's qawāʿid 4, 11, 14, 15 and 19, annotated against readings formalised from each qāʿida's own statement (Usul.Refinements). Annotated by reading the full paragraph in the pinned witness; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f000",
+      "encoder": "advance_after_cause",
+      "class": "derivable",
+      "facts": {
+        "cause_present": true
+      },
+      "expected": true,
+      "note": "Purification: its cause is the ḥadath, the condition of its wujūb the act it is for, so it may be done long before the act, after the ḥadath."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f001",
+      "encoder": "advance_after_cause",
+      "class": "derivable",
+      "facts": {
+        "cause_present": true
+      },
+      "expected": true,
+      "note": "Prayer: ʿaṣr may be brought into the time of ẓuhr and ʿishāʾ into maghrib, the zawāl being the cause of both prayers when there is an excuse; the two times become one, of permission for one and wujūb for the other."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f002",
+      "encoder": "advance_after_cause",
+      "class": "derivable",
+      "facts": {
+        "cause_present": true
+      },
+      "expected": true,
+      "note": "The Friday prayer: its cause is the day, to which it is annexed, so it may be prayed once the forbidden time of the morning has passed, though the zawāl is the time of its wujūb."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f003",
+      "encoder": "advance_after_cause",
+      "class": "derivable",
+      "facts": {
+        "cause_present": true
+      },
+      "expected": true,
+      "note": "Zakāt on wealth may be advanced from the start of the year once the niṣāb is complete."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f004",
+      "encoder": "advance_after_cause",
+      "class": "derivable",
+      "facts": {
+        "cause_present": true
+      },
+      "expected": true,
+      "note": "The expiations of iḥrām, when needed for an excuse: the excuse is their cause, so they may be advanced after it and before the prohibited act."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f005",
+      "encoder": "advance_after_cause",
+      "class": "derivable",
+      "facts": {
+        "cause_present": true
+      },
+      "expected": true,
+      "note": "The fast of tamattuʿ and qirān: its cause is the ʿumra before the ḥajj in its months, so it may be fasted once the ʿumra's iḥrām is entered, though it falls due later. The hady is another matter: Abū al-Khaṭṭāb allowed it, and there is a riwāya for one arriving before the ten, but «وعلى المشهور لا يجوز في غير أيام النحر», the Sharīʿa fixing its days."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f006",
+      "encoder": "advance_after_cause",
+      "class": "derivable",
+      "facts": {
+        "cause_present": true
+      },
+      "expected": true,
+      "note": "The expiation of an oath may be advanced before breaking it, once the oath is made, whether in money or in fasting."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f007",
+      "encoder": "advance_after_cause",
+      "class": "derivable",
+      "facts": {
+        "cause_present": true
+      },
+      "expected": true,
+      "note": "The expiation for killing, or for game, after the wound and before death."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f008",
+      "encoder": "advance_after_cause",
+      "class": "derivable",
+      "facts": {
+        "cause_present": true
+      },
+      "expected": true,
+      "note": "An unconditioned vow («if God heals my sick one…»): he may give the alms at once (Ibn ʿAqīl, al-Funūn). Attached outside worship: releasing the diya between wound and death; for qiṣāṣ two riwāyas; the guaranteed paying the guarantor (two wujūh); waiving shufʿa before the sale (two riwāyas); and the heirs waiving against a bequest in illness, «فالمنصوص عن أحمد أنه لا يصح»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f000",
+      "encoder": "nafl_before_fard",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "narrow": true,
+        "financial": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the ṣaḥīḥ of the qāʿida: not concluded",
+          "ruling": false
+        },
+        {
+          "who": "wajh: concluded",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "When the time of the obligatory prayer has narrowed, is an unrestricted voluntary prayer concluded? Two wujūh, under the qāʿida's «وإن كانت مضيقة لم تصح على الصحيح»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f001",
+      "encoder": "nafl_before_fard",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "narrow": true,
+        "financial": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the ṣaḥīḥ of the qāʿida: not valid",
+          "ruling": false
+        },
+        {
+          "who": "wajh: valid",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "One owing a missed prayer: is an unrestricted voluntary prayer valid before making it up? Two wujūh, «لأن قضاء الفوائت على الفور»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f002",
+      "encoder": "nafl_before_fard",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "narrow": true,
+        "financial": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the ṣaḥīḥ of the qāʿida: not valid",
+          "ruling": false
+        },
+        {
+          "who": "wajh: valid",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Beginning a voluntary prayer after the iqāma of the obligatory: two wujūh, «لأن الجماعة واجبة»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f003",
+      "encoder": "nafl_before_fard",
+      "class": "derivable",
+      "facts": {
+        "narrow": true,
+        "financial": false
+      },
+      "expected": false,
+      "note": "Ramaḍān: no other fast is valid in it; done for something else it is not valid for that, and whether it turns into the farḍ depends on the duty to specify the intention."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f004",
+      "encoder": "nafl_before_fard",
+      "class": "derivable",
+      "facts": {
+        "narrow": true,
+        "financial": false
+      },
+      "expected": false,
+      "note": "A voluntary ḥajj before ḥajjat al-islām does not fall as voluntary, «وانقلبت عن حجة الإسلام على المذهب الصحيح»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f005",
+      "encoder": "nafl_before_fard",
+      "class": "derivable",
+      "facts": {
+        "narrow": true,
+        "financial": false
+      },
+      "expected": false,
+      "note": "Ḥajj for a vow or as voluntary while owing the make-up of a spoiled ḥajj falls as the make-up «على المذهب أيضا»; al-Talkhīṣ builds the voluntary ḥajj before the ʿumra on whether the rite is immediate. Zakāt differs: «فقال الأصحاب يصح أن يتنفل بالصدقة قبل أدائها وإن كانت على الفور», with Aḥmad's naṣṣ (Muhannā). Then the second kind, financial dispositions while in debt: «فالمذهب صحة تصرفه», against Taqī al-Dīn. The zakāt clause is the reading's carve-out (`financial`, zakat_carve_out); the record is annotated for its leading ḥajj."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000",
+      "encoder": "cause_from_one_of_two",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "harmless": true
+      },
+      "expected": "each",
+      "positions": [
+        {
+          "who": "riwāya: both wash and do wuḍūʾ",
+          "ruling": "each"
+        },
+        {
+          "who": "riwāya: neither",
+          "ruling": "neither"
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Two find semen in a garment they sleep in, or hear a sound, not knowing from whom: two riwāyas: neither must wash, each certain of purity and doubting the ḥadath; or both must, the aṣl having certainly lapsed in one. No madhhab marked; Ibn Rajab later contrasts it with divorce, «بخلاف إيجاب الطهارة عليهما فإنه لا ضرر فيه»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f001",
+      "encoder": "cause_from_one_of_two",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "harmless": false
+      },
+      "expected": "abstain",
+      "positions": [
+        {
+          "who": "al-Qāḍī (al-Mujarrad), Abū al-Khaṭṭāb: each on certainty",
+          "ruling": "neither"
+        },
+        {
+          "who": "al-Shīrāzī, Ibn ʿAqīl; al-Qāḍī (al-Jāmiʿ): qiyās al-madhhab: lot",
+          "ruling": "lot"
+        },
+        {
+          "who": "iḥtimāl, Aḥmad's īmāʾ (Ṣāliḥ): both divorced",
+          "ruling": "each"
+        },
+        {
+          "who": "naṣṣ (ʿAbd Allāh): each abstains",
+          "ruling": "abstain"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«If this bird is a raven my wife is divorced» and the other «if it is not»: al-Qāḍī (al-Mujarrad), Abū al-Khaṭṭāb and others: each builds on the certainty of his marriage; al-Shīrāzī and Ibn ʿAqīl: the divorced one is drawn by lot, al-Qāḍī in al-Jāmiʿ: «هو قياس المذهب»; a possibility that both fall, to which Aḥmad's words in Ṣāliḥ's riwāya point (Taqī al-Dīn), which Ibn Rajab rejects as cutting a right; a wajh, by Aḥmad's naṣṣ (ʿAbd Allāh), that each abstains until certain; and Aḥmad's own tawaqquf (Ḥarb). The reading lands on the abstention: neither is bound, each refraining until certain (Aḥmad's naṣṣ; for the slave-women, qiyās al-manṣūṣ), which the later madhhab confirms («لم تطلقا … وحرم الوطء عليهما»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f002",
+      "encoder": "cause_from_one_of_two",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "harmless": false
+      },
+      "expected": "abstain",
+      "positions": [
+        {
+          "who": "wajh: each on certainty",
+          "ruling": "neither"
+        },
+        {
+          "who": "wajh: lot",
+          "ruling": "lot"
+        },
+        {
+          "who": "qiyās al-manṣūṣ: each abstains",
+          "ruling": "abstain"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The same with slave-women freed: the two wujūh of divorce, and «وقياس المنصوص ههنا أن يكف كل واحد عن وطء أمته حتى يتيقن»; if one buys the other's, the freed one is drawn by lot «على أصح الوجهين», the two now meeting in one ownership. The reading lands on the abstention: neither is bound, each refraining until certain (Aḥmad's naṣṣ; for the slave-women, qiyās al-manṣūṣ), which the later madhhab confirms («لم تطلقا … وحرم الوطء عليهما»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f001",
+      "encoder": "each_on_its_asl",
+      "class": "derivable",
+      "facts": {
+        "separate_matters": true
+      },
+      "expected": true,
+      "note": "Waking to wetness in his garment, where we say no ghusl is due: nor must he wash the garment, each staying on its aṣl (Ibn ʿAqīl, al-Funūn, from al-Sharīf Abū Jaʿfar); Ibn Rajab adds that he should not pray in it unwashed, a defect being certain."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f002",
+      "encoder": "each_on_its_asl",
+      "class": "derivable",
+      "facts": {
+        "separate_matters": true
+      },
+      "expected": true,
+      "note": "Doubting whether he wiped the khuff before or after a prayer, the period counting from the wiping: the period is reckoned from before the prayer, and the prayer repeated, each aṣl kept (the feet to be washed, the prayer still owed)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f003",
+      "encoder": "each_on_its_asl",
+      "class": "derivable",
+      "facts": {
+        "separate_matters": true
+      },
+      "expected": true,
+      "note": "Game shot and found dead in little water: not lawful, the water perhaps having helped kill it, yet the water is not thereby impure (Ibn ʿAqīl, al-Fuṣūl)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f004",
+      "encoder": "each_on_its_asl",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "separate_matters": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Ibn ʿAqīl, ʿUmad al-Adilla: the ḥadd too",
+          "ruling": true
+        },
+        {
+          "who": "possibility: no ḥadd",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "«Iʿtaddī» in anger, with signs of an allusion to qadhf: divorce falls as an allusion with anger; is he given the ḥadd too? Ibn ʿAqīl's two possibilities (al-Mufradāt): yes, «وبه جزم في عمد الأدلة», both being rights against him; or no, qadhf and divorce excluding each other. The qāʿida then lists rulings that follow without their doubtful corollaries (inheritance on an acknowledgement of lineage)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f001",
+      "encoder": "settles_without_ability",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "making_up": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Mughnī: purifies and prays after the time",
+          "ruling": true
+        },
+        {
+          "who": "al-Muḥarrar, ẓāhir of Aḥmad: tayammum",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Purification: one without water reaches it as the time runs out: he purifies and prays after the time (al-Mughnī); the author of al-Muḥarrar: he prays by tayammum, «وهو ظاهر كلام أحمد في رواية صالح»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f002",
+      "encoder": "settles_without_ability",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "making_up": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-mashhūr: make-up due",
+          "ruling": true
+        },
+        {
+          "who": "Ibn Baṭṭa, Ibn Abī Mūsā: none",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Prayer: what lifts his capacity after the time enters and before he could act: he makes it up «في المشهور»; Ibn Baṭṭa and Ibn Abī Mūsā: no make-up."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f003",
+      "encoder": "settles_without_ability",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "making_up": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-mashhūr: due",
+          "ruling": true
+        },
+        {
+          "who": "takhrīj (al-Shīrāzī): lapses",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Zakāt: the niṣāb perishes before he could pay: its zakāt is due «على المشهور», except crops destroyed by a heavenly harm; al-Shīrāzī and others derive a wajh that it lapses absolutely."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f004",
+      "encoder": "settles_without_ability",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "making_up": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the aṣaḥḥ riwāya: make-up due",
+          "ruling": true
+        },
+        {
+          "who": "riwāya: none",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Fasting: the boy reaching puberty breaking his fast mid-day in Ramaḍān, the unbeliever converting, the menstruant becoming pure: they make it up «في أصح الروايتين»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f005",
+      "encoder": "settles_without_ability",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "making_up": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the aẓhar riwāya: settles",
+          "ruling": true
+        },
+        {
+          "who": "riwāya: needs ability",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Ḥajj: ability is no condition of its settling in the dhimma «على أظهر الروايتين», only of performing it himself. Making up differs: the aṣḥāb require the possibility of performance (no feeding for one who died still excused), and for vows two wujūh."
+    }
+  ]
+}

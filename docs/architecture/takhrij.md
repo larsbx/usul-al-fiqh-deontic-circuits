@@ -167,19 +167,23 @@ After this round: 214 cases, **coverage 0.977**, **madhhab coverage 0.648**, **0
 - four of Ibn al-Laḥḥām's points on qāʿida 43 are about naming or policy, not a ruling: whether writing, gesture or the Prophet's act is *called* a command, ḥaqīqa versus majāz, and whether «فرض»/«واجب» is immune to reinterpretation;
 - 52.f007 has no transmitted ruling to test («هذه المسألة لم أرها منقولة»).
 
+## Apparent contradictions
+
+Every ikhtilāf farʿ off the marked madhhab side is run through the kernel's own taʿāruḍ procedure (jamʿ → naskh → tarjīḥ → tawaqquf): see [reconciliation](taarud-reconciliation.md). The residues it leaves against a reading are that reading's refinement worklist.
+
 ## M8: scale-up, first tranche
 
 **Scope reconciliation.** Counts come from committed record IDs minus all existing annotations, not historical estimates. M4 now annotates 196 Ibn Rajab records under 14 qawāʿid, including nine `.f000` additions. PR #29's 1,129 segmented records minus those 196 and tranche 1's 26 left 907 records in 122 qawāʿid with cases. The old “869 in 146” mixed pre-opening counts with all unannotated qawāʿid, including those with no segmented case. PR #30 then added seven segmented records and annotated tranche 2's 25: 1,136 − 196 − 26 − 25 = 889, in 118 qawāʿid. Merged PR #32 then added the list-and-division segmentation and 21 candidate annotations. The unified tranche 3 below preserves those cases and PR #31's eight existing-record annotations, in one 29-record suite; current totals are generated below. Ibn al-Laḥḥām and the global report's totals are separate scopes.
 
 <!-- BEGIN GENERATED M8 SCOPE -->
-**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 297 annotated + **882 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 33 are fully annotated and **121 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
+**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 434 annotated + **745 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 67 are fully annotated and **87 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
 
 The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
 
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.793 | 0 | 0 |
-| All annotation suites | 324 | 0.981 | 0.653 | 0 | 6 |
+| All annotation suites | 461 | 0.987 | 0.691 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -301,6 +305,114 @@ Results on the tranche:
   - **Qāʿida 24 separates the punitive from the remedial right.** Burning the thief's goods (24.f000) punishes a past act, so the sale does not end it. Lowering the dhimmī's building (24.f002) removes an ongoing harm, which ends with the transfer, as the text itself contrasts («لا عقوبة للتعلية الماضية»).
 - **Segmentation finding:** qāʿida 21's first example opens mid-line («والأظهر أنه جزء فمن ذلك …»), so it has no `.f000`. Qāʿida 9, whose inline «(ومنها)» joins several cases in one record, is left for the segmenter.
 
+**Tranche 5 (qawāʿid 25, 29, 30, 32, 33, 34; 27 furūʿ).** Read from each qāʿida's own statement (`corpus/takhrij/rajab_m8_tranche5_furu.json`):
+
+| Qāʿida | Reading | Link to the bank |
+|---|---|---|
+| 25: does what is attached to or born of a thing follow ownership proven by evidence or confession? («فيه خلاف») | `followsProven`: Ibn Rajab's recurring measure, what follows in sale follows here | new |
+| 29: a tolerated amount exceeded: does tolerance lapse in all, or in the excess? («فيه وجهان») | `toleranceLapse`: in all when at fault, in the excess otherwise, Ibn Rajab's distinction in 29.f003 | new |
+| 30: what was given out as due and failed to count: does it return? («فيه خلاف») | `returnsToOwner` | new |
+| 32: excepting the benefit of a transferred thing («يصح عندنا … مدة معلومة») | `benefitExceptionValid`: a known period, or a transfer that tolerates uncertainty (waqf, manumission) | `known_period_suffices` |
+| 33: the implicit exception tolerates uncertainty («والصحيح … الصحة، وهو قياس المذهب») | `uncertainExceptionValid` | new |
+| 34: benefits owed under a binding contract are not reached by manumission | `manumissionReachesBenefits` | `binding_is_implicit_exception`: 34 is 33 applied |
+
+Results on the tranche:
+- **12 derivable, 15 ikhtilāf (7 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 27/27 = 1.000, madhhab coverage 19/27 = 0.704.
+- **What the cases say about the readings:**
+  - **Qawāʿid 32–34 form one chain.** An exception of benefit is valid when stated for a known period (32). When it arises by law it is valid even for an unknown period (33: the leased house, the married slave, the muḥrim). A binding contract over the benefits is such an exception, so manumission stops at it (34). Qāʿida 33's madhhab side is «قياس المذهب» against al-Qāḍī, and 34's is the madhhab against Taqī al-Dīn's spreading of manumission.
+  - **Qāʿida 29's dispute resolves by fault.** The ashhar in 29.f003 (impurity beyond its place) limits the lapse to the excess, and Ibn Rajab grounds it in the absence of negligence «بخلاف الوكيل والمضحي». The reading takes that as its parameter, so the agent and the sacrificer land on the whole; no madhhab is marked for them.
+  - **Qāʿidas 25 and 30 are stated as khilāf throughout.** 25 tracks the madhhab where it is marked (the trees, the ashhar on containers); 30 marks none.
+- **Segmentation finding:** 32's first example follows «مسائل منها:» without the colon the opening rule expects, so it has no `.f000`; 29's first case is a «(منها)» paragraph and is `.f001`.
+
+**Tranche 6 (qawāʿid 35, 37, 38, 39, 41; 24 furūʿ).** Read from each qāʿida's own statement (`corpus/takhrij/rajab_m8_tranche6_furu.json`):
+
+| Qāʿida | Reading | Link to the bank |
+|---|---|---|
+| 35: owning the benefit by contract, then the thing | `priorContractDissolves`: only a perpetual commutative contract (nikāḥ); a lease stands («لا ينفسخ وهو الصحيح») | new |
+| 37: successive contracts on one thing | `laterContractGoverns`: the later contract's ruling governs the hand | new |
+| 38: contract words joined with what takes them out of their nature («المغلب هل هو اللفظ أو المعنى») | `asKinayaValid`: the meaning, a kināya for what can be valid | new |
+| 39: contracts by allusion | `kinayaConcludes`: every contract but one that needs witnessing | `witnessed_needs_explicit` |
+| 41: a bound right and the destroyed thing's substitute («فيه خلاف») | `rightPassesToSubstitute` | `substitute_as_transfer`: qāʿida 24's right on the property |
+
+Results on the tranche:
+- **7 derivable, 17 ikhtilāf (3 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 24/24 = 1.000, madhhab coverage 10/24 = 0.417.
+- **What the cases say about the readings:**
+  - **Qāʿida 38's marked madhhab is the wording, not the meaning.** Where a side is marked it is against the reading: the ẓāhir of Aḥmad that salam does not conclude a present sale (38.f004), and Abū al-Khaṭṭāb calling the loan with a countervalue void «المذهب» (38.f000). The meaning prevails only where a naṣṣ rules on validity (38.f003) or no side is marked. The reading is kept, being the qāʿida's stated alternative, and the result is recorded: on this qāʿida the madhhab leans to the word.
+  - **Qāʿida 37 splits the same way.** The later contract governs where it binds (the pledge on usurped goods, the pledge of the sold thing, Abū al-Barakāt's qiyās al-madhhab). Majd al-Dīn reports the ẓāhir of Aḥmad against it where it does not bind: a pledge or deposit used with permission is not liable. Reconciled afterwards by jamʿ on Abū al-Barakāt's binding farq (`successive_by_binding`; see [reconciliation](taarud-reconciliation.md)).
+  - **Qāʿida 35 tracks the madhhab** (the ṣaḥīḥ, al-Qāḍī's Khilāf), and 41's single marked side, the ẓāhir of the aṣḥāb on the pledge's value, is the reading.
+  - **39.f002 contains Aḥmad's own exception to 39's exception:** «أجعل عتقك صداقك … كل ذلك جائز إذا كانت له نية», an allusion concluding a marriage. The farʿ is annotated for the rajʿa it opens with.
+- **Segmentation finding:** 39's prelude is its general statement, so it has no `.f000`; its two furūʿ are `.f001` and `.f002`.
+
+**Tranche 7 (qawāʿid 3, 5, 9, 10, 12; 24 furūʿ).** Read from each qāʿida's own statement (`corpus/takhrij/rajab_m8_tranche7_furu.json`):
+
+| Qāʿida | Reading | Link to the bank |
+|---|---|---|
+| 3: an undistinguished excess over what suffices («ففيه وجهان») | `excessObligatory`: obligatory only where the whole was the duty, lightened («على الصحيح»); otherwise voluntary (al-Qāḍī, «وهو الصواب») | new |
+| 5: an act advanced before its time, the state then changing | `advancedSuffices`: it suffices when it was the duty at performance («كان فرضه في الظاهر فبرئ به») | new |
+| 9: worship performed in a prohibited way | `validDespite`: valid only where the prohibition returns to what is no condition («وخالفه الأكثرون») | new |
+| 10: wordings in worship and contracts | `otherTongueValid`: where only the meaning counts, or he cannot manage the Arabic | new |
+| 12: worship transmitted in several forms | `combineForms`: not where the forms are substitutes («لا يصح الجمع بين البدل والمبدل») | new |
+
+Results on the tranche:
+- **9 derivable, 15 ikhtilāf (3 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 24/24 = 1.000, madhhab coverage 12/24 = 0.500.
+- **What the cases say about the readings:**
+  - **Qāʿidas 3, 10 and 12 are stated as khilāf**, and Ibn Rajab marks no madhhab on their disputed furūʿ. The readings take his own resolutions: the lightened whole (3), the meaning-or-inability rule (10), and Taqī al-Dīn's substitute criterion (12). That criterion also explains why Aḥmad combines the two Friday sunnas («جمعت فعله وأمره»): two prayers are not substitutes for one another.
+  - **Qāʿida 5** follows the unqualified statements of most aṣḥāb against al-Mughnī and Ibn al-Zāghūnī. It also follows the manṣūṣ on the boy's prayer, which discharged no duty.
+- **Reconciliation:** the 12 new apparent contradictions entered the ledger (`corpus/reconciliation/`), with their later taṣḥīḥ imported as for the earlier tranches. Four became jamʿ, each on a farq the later works cite: following (3.f000, `excessObligatoryIn`), the kaffāra at its wujūb (5.f001, `advancedSufficesIn`), and no duty to learn the Arabic for an act not itself due (10.f004, f005, `otherTongueValidIn`). The tranche's madhhab coverage rises to 16/24 = 0.667.
+- **Segmentation finding:** 9.f000 and 9.f001 each run several «(ومنها)» examples together, because the inline examples sit mid-line (the known 9 edge). Each is annotated for its leading example.
+
+**Tranche 8 (qawāʿid 4, 11, 14, 15, 19; 27 furūʿ).** Read from each qāʿida's own statement (`corpus/takhrij/rajab_m8_tranche8_furu.json`):
+
+| Qāʿida | Reading | Link to the bank |
+|---|---|---|
+| 4: advancing worship | `advanceAllowed`: once its cause exists («ويجوز تقديمها بعد سبب الوجوب وقبل الوجوب») | qāʿida 5 (the advanced act's sufficiency) |
+| 11: the voluntary before the obligatory of its kind | `naflValid`: not while the obligatory is narrow («لم تصح على الصحيح»), except a financial duty (`zakat_carve_out`) | new |
+| 14: a cause from one of two men, not known which («في المسألة خلاف») | `attachTo`: both where it costs no right («لا ضرر فيه»), else neither bound with each abstaining (Aḥmad's naṣṣ) | new |
+| 15: an aṣl's corollary against another aṣl | `eachOnItsAsl` («لم يلتفت إلى ذلك اللازم على الصحيح») | new |
+| 19: ability and the dhimma | `settlesInDhimma`: ability is no condition, except for making up («على ظاهر المذهب») | new |
+
+Results on the tranche:
+- **15 derivable, 12 ikhtilāf (8 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 27/27 = 1.000, madhhab coverage 23/27 = 0.852.
+- **What the cases say about the readings:**
+  - **Qāʿida 4 is wholly derivable.**
+  - **Qāʿida 11 has a carve-out for zakāt.** A voluntary ṣadaqa is valid before an immediate zakāt («فقال الأصحاب يصح»). The reading therefore carries it as a fact (`financial`), and the narrowness test belongs to pure acts of worship of one kind.
+  - **Qāʿida 14's raven oaths repeat Ibn Rajab's qāʿida 160 under another name.** The reading takes Aḥmad's naṣṣ: neither is bound, and each abstains until certain. The later madhhab confirms this («لم تطلقا … وحرم الوطء عليهما»).
+- **Reconciliation:** the 4 apparent contradictions entered the ledger, with their later taṣḥīḥ imported as before. Three are residues against the reading, and none of them has a cited farq for a jamʿ:
+  - On qāʿida 14 the later madhhab rules for purification as for divorce: neither must wash (14.f000, «على الصحيح من المذهب»), against Ibn Rajab's own «لا ضرر فيه».
+  - On qāʿida 19, al-Mardāwī's taṣḥīḥ and the muʿtamad give tayammum to the traveller as the time runs out (19.f001), and make ability a condition of the ḥajj's wujūb (19.f005).
+
+**Tranche 9 (qawāʿid 36, 42, 43, 46, 49, 50, 51; 16 furūʿ).** These qawāʿid are typological: each record is a division, annotated for its leading ruling (`corpus/takhrij/rajab_m8_tranche9_furu.json`):
+
+| Qāʿida | Reading |
+|---|---|
+| 36: a lease whose lessor's authority ends | `leaseDissolves`: unless the new holder succeeds the lessor («بل هو منفذ لها») |
+| 42: returning what is held for another | `returnAtOnce`: where held without consent, or guaranteed («فتجب المبادرة إلى الرد بكل حال») |
+| 43: liability for continued holding | `holderLiable`: only one who withholds («فهو غاصب»; «لتعديه بترك الرد مع إمكانه»); after a contract ends, `liableAfterEnding`: where he caused the ending (al-Mughnī's ẓāhir) |
+| 46: whether a void contract is concluded | `voidConcluded`: only a binding one with a pervasive effect (iḥrām, nikāḥ, kitāba) |
+| 49: qabḍ in contracts | `bindsWithoutQabd`: unless qabḍ completes the contract (salam, ribawī) |
+| 50: forced acquisitions and the price | `ownedBeforePayment`: only under necessity («والضرر لا يزال بالضرر»); reconciled to `ownedBeforePaymentIn`: or, on the shufʿa only, by a solvent shafīʿ |
+| 51: ḍamān without qabḍ | `inNewOwnersDaman`: what is determined |
+
+Results on the tranche:
+- **12 derivable, 4 ikhtilāf (3 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 16/16 = 1.000, madhhab coverage 15/16 = 0.938. 43.f001's wujūh turn on who caused the contract's ending, so it gets its own reading on that fact rather than a gap. The bank's gaps stay the six original ones.
+- **Reconciliation:** the two new apparent contradictions entered the ledger. The madhhab on the shufʿa (50.f001), «يملكه بمجرد المطالبة إذا كان مليئا بالثمن، وهو المذهب», became a jamʿ on that solvency farq (`ownedBeforePaymentIn`), restricted to the shufʿa by a `shufa` fact since the farq is cited for it alone, and solvency answers Ibn Rajab's own «والضرر لا يزال بالضرر». On 43.f001 the muʿtamad (al-Muntahā, Kashshāf) makes the rescinded sale object a trust in the buyer's hand, against `liableAfterEnding`. That is a residue.
+
+**Tranche 10 (qawāʿid 52, 54, 56, 58, 61, 62; 19 furūʿ).** Typological records are annotated for their leading ruling (`corpus/takhrij/rajab_m8_tranche10_furu.json`):
+
+| Qāʿida | Reading |
+|---|---|
+| 52: disposal before qabḍ | `disposeBeforeQabd`: barred only in the undetermined («جادة المذهب ... إلا في المبهم خاصة») and where the right is not settled; reconciled to `disposeBeforeQabdIn`: and a debt to any but the debtor |
+| 54: disposing so as to extinguish another's right | `mayDisposeOver`: not without his leave, «والصحيح أنه لا يجوز أيضا» |
+| 56: conditions concurrent with the contract | `conditionMet`: concurrence suffices («المنصوص عن أحمد الاكتفاء بالمقارنة») |
+| 58: desisting from what one is engaged in | `desistIsAct`: only where he began knowing the prohibition imminent |
+| 61: the imām and his deputies | `removedWithPrincipal`: unless the mandate is general; reconciled to `removedWithPrincipalIn`: the qāḍī's deputies are removed with him |
+| 62: removal before it is known | `removedBeforeKnowledge`: at once, except a public office («شبيه بنسخ الأحكام») |
+
+Results on the tranche:
+- **5 derivable, 14 ikhtilāf (9 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 19/19 = 1.000, madhhab coverage 14/19 = 0.737. The bank's gaps stay the six original ones.
+- **Verification:** every ikhtilāf annotated as on the madhhab side was checked against al-Inṣāf and the muʿtamad. Four were not (56.f002, 56.f004, 58.f001, 61.f001) and entered the ledger. 62.f002 was re-read: the keeper's annulment by word dissolves the deposit at once (al-Qāḍī's usual statement and the muʿtamad), so no keeper fact is needed.
+- **Reconciliation:** 7 new apparent contradictions, 23 evidence items. Two are jamʿ on farqs the madhhab states: the deeds (52.f001) fall under «ولا يجوز لغيره», a debt sold only to the debtor (`disposeBeforeQabdIn`), and the qāḍī's general deputies (61.f001) are removed with him, «لأنهم نوابه» (`removedWithPrincipalIn`). Five are residues: on qāʿida 56 the madhhab voids the sale joined to a kitāba (f002) and agency to divorce a woman not yet married (f004), and clears the umm walad by one period (f006), each against concurrence; 56.f003 has no later treatment and leans to al-Qāḍī's «الأشبه»; on 58.f001 the muʿtamad owes the kaffāra «لأن النزع جماع».
+
 **Coverage trend:**
 
 | Stage | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
@@ -318,6 +430,21 @@ Results on the tranche:
 | All, after round 5 (the bank applied to its gaps) | 303 | 0.980 | 0.659 | 0 | 6 |
 | M8 tranche 4 alone | 21 | 1.000 | 0.571 | 0 | 0 |
 | All, after tranche 4 | 324 | 0.981 | 0.653 | 0 | 6 |
+| M8 tranche 5 alone | 27 | 1.000 | 0.704 | 0 | 0 |
+| All, after tranche 5 | 351 | 0.983 | 0.657 | 0 | 6 |
+| M8 tranche 6 alone | 24 | 1.000 | 0.417 | 0 | 0 |
+| All, after tranche 6 | 375 | 0.984 | 0.642 | 0 | 6 |
+| All, after reconciliation (jamʿ on qāʿida 37) | 375 | 0.984 | 0.647 | 0 | 6 |
+| All, after the reconciliation refinements (qāʿidas 16, 64–65) | 375 | 0.984 | 0.668 | 0 | 6 |
+| M8 tranche 7 alone | 24 | 1.000 | 0.500 | 0 | 0 |
+| All, after tranche 7 | 399 | 0.985 | 0.658 | 0 | 6 |
+| All, after tranche 7's reconciliation | 399 | 0.985 | 0.668 | 0 | 6 |
+| M8 tranche 8 alone | 27 | 1.000 | 0.852 | 0 | 0 |
+| All, after tranche 8 | 426 | 0.986 | 0.680 | 0 | 6 |
+| M8 tranche 9 alone | 16 | 1.000 | 0.938 | 0 | 0 |
+| All, after tranche 9 | 442 | 0.986 | 0.689 | 0 | 6 |
+| M8 tranche 10 alone | 19 | 1.000 | 0.737 | 0 | 0 |
+| All, after tranche 10 | 461 | 0.987 | 0.691 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 

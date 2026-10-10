@@ -21,7 +21,7 @@ The guiding constraint is that the LLM may propose, normalize, query, and explai
 - Roadmap: [`docs/roadmap-hanbali-usul-formalization.md`](docs/roadmap-hanbali-usul-formalization.md)
 - Pipeline: [`docs/architecture/formalization-pipeline.md`](docs/architecture/formalization-pipeline.md)
 - Fatāwā corpus: [`docs/architecture/reception.md`](docs/architecture/reception.md): the canonical fatāwā and rulings collections the modern jurists cite, with citation counts from their own texts
-- Citation labels: [`docs/architecture/labels.md`](docs/architecture/labels.md): weakly labelled title and author mentions, a review queue and gold labels, for training a citation classifier
+- Citation labels: [`docs/architecture/mentions.md`](docs/architecture/mentions.md): weakly labelled title and author mentions, a review queue and gold labels, for training a citation classifier
 - `make all` runs the corpus tests, record validation, the generated-file drift check, the Lean build and TLC. `make fetch build` refreshes the corpus cache and records.
 
 ## al-Albānī ḥadīth-methodology track

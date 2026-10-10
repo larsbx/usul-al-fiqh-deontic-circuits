@@ -1,141 +1,185 @@
-"""Labelled mentions for training a citation classifier.
+"""Candidate training labels for IslamQA answers: ḥukm taklīfī, validity, domain, split.
 
-The reception matcher is precise but deliberately narrow (a bare «المغني» needs a cue; «في الأوسط»
-counts for nobody). This module turns it into a weak labeller over a high-recall candidate set:
+Labels are lexical and auditable: every ``hukm`` names the text it was read from
+(``basis``) and the cue span (``evidence``). They are candidates for review, not
+rulings. ``hukm`` values are the constructors of ``Usul.Hukm`` (formal/lean/Usul/Hukm.lean).
 
-* **candidates**: every occurrence of a *head* (a citation form with its cue stripped:
-  «قال في الفروع» → «الفروع») in a citer's page, with its normalised context;
-* **rule labels**: where the precise matcher resolves a span covering the candidate, its work
-  (or ``none`` when a shadowing phrase covers it: الطبراني في الأوسط); otherwise unlabelled;
-* **gold labels** (``corpus/labels/gold.jsonl``, ids and labels only) override rules; the
-  rule-vs-gold agreement on reviewed rows estimates the counts' precision;
-* **splits** are by page hash (80/10/10), so no context crosses train and test.
-
-Two tasks share the machinery: ``work`` (title lexicon) and ``author`` (author lexicon).
-Contexts come from modern texts and stay in ``.cache/labels``; only gold ids and the summary
-are committed.
+Reading order per answer: the site's own summary (ملخص الجواب), else a closing
+«الحاصل / الخلاصة» paragraph, else the opening lines. The first affirmative cue
+there is the label; other statuses in the same passage are kept in ``also``.
 """
 
 from __future__ import annotations
 
 import hashlib
-import json
-from dataclasses import dataclass
-from itertools import chain, zip_longest
-from pathlib import Path
-from typing import Iterable
+import re
+from collections import Counter
+from collections.abc import Mapping
 
-from .arabic import normalize
-from .reception import Cited, _pattern, _spans, _compile, pages, plain, resolve
+from .acts import act_of, stems
 
-NONE = "none"
-WINDOW = 200
-_CUE_HEADS = frozenset(map(normalize, ("صاحب", "كتاب", "كتابه")))
+HUKM = ("wajib", "mandub", "mubah", "makruh", "haram")
 
+_TASHKEEL = re.compile(r"[ً-ْٰـ]")
+_ALEF = str.maketrans("إأآ", "ااا")
+_L = r"ء-ي"
+_PRE = rf"(?:(?<![{_L}])|(?<=(?<![{_L}])[وف]))"  # word start, optionally after و/ف
+_SUF = r"(?:ه|ها|هم|هما|ك|كم|كما|هن)?"            # attached object pronoun
+_END = rf"(?![{_L}])"
+_NEG = r"(?:لا|لم|لن)\s+"
 
-@dataclass(frozen=True)
-class Task:
-    name: str
-    lexicon: tuple[Cited, ...]
-    cue_single: bool
-
-
-def heads(c: Cited) -> tuple[str, ...]:
-    """Each form with its cue stripped: the text after its last «في», or after a leading صاحب/كتاب."""
-    def head(form: str) -> str:
-        toks = normalize(form).split()
-        if normalize("في") in toks[:-1]:
-            toks = toks[len(toks) - toks[::-1].index(normalize("في")):]
-        elif len(toks) > 1 and toks[0] in _CUE_HEADS:
-            toks = toks[1:]
-        return " ".join(toks)
-    return tuple(dict.fromkeys(map(head, c.cite_as)))
-
-
-def split_of(witness: str, locator: str | None) -> str:
-    h = int(hashlib.sha256(f"{witness}/{locator}".encode()).hexdigest(), 16) % 10
-    return "test" if h == 0 else "dev" if h == 1 else "train"
-
-
-def candidates(task: Task, witness: str, text: str, window: int = WINDOW) -> list[dict]:
-    """Every head occurrence in ``text``, rule-labelled where the precise matcher is sure."""
-    head_pats = [(h, _pattern(h, False)) for h in dict.fromkeys(chain.from_iterable(map(heads, task.lexicon)))]
-    precise = _compile(task.lexicon, task.cue_single)
-    rows = []
-    for loc, body in pages(text):
-        t = plain(body)
-        sure = _spans(t, precise)
-        for s, e, _ in resolve((m.start("t"), m.end("t"), h) for h, p in head_pats for m in p.finditer(t)):
-            label = next((w if w is not None else NONE for ks, ke, w in sure if ks <= s and e <= ke), None)
-            rows.append({"id": f"{task.name}:{witness}/{loc}@{s}", "task": task.name, "witness": witness, "locator": loc,
-                         "start": s, "end": e, "surface": t[s:e], "left": t[max(0, s - window):s], "right": t[e:e + window],
-                         "label": label, "label_source": "rule" if label else None, "split": split_of(witness, loc)})
-    return rows
+# (hukm, polarity, pattern) — negated forms first, so they claim their span before
+# the positive form inside them ("لا يجوز" before "يجوز"). Polarity "-" casts no vote.
+LEXICON: tuple[tuple[str, str, str], ...] = (
+    ("haram", "+", r"لا\s+[يت]جوز"), ("haram", "+", r"لم\s+[يت]جز"), ("haram", "+", _NEG + r"[يت]حل"), ("haram", "+", r"لا\s+يباح"),
+    ("haram", "-", _NEG + r"[يت]حرم"), ("haram", "-", r"ليس(?:ت)?\s+(?:بحرام|حراما|بمحرم(?:ة)?|محرما|محرمة)"), ("haram", "-", r"غير\s+محرم(?:ة)?"),
+    ("wajib", "-", _NEG + r"[يت]جب"), ("wajib", "-", r"ليس(?:ت)?\s+(?:بواجب(?:ة)?|واجبا|واجبة)"),
+    ("wajib", "-", _NEG + r"[يت]لزم" + _SUF), ("wajib", "-", r"غير\s+واجب(?:ة)?"),
+    ("makruh", "-", _NEG + r"[يت]كره"), ("makruh", "-", r"غير\s+مكروه(?:ة)?"), ("makruh", "-", r"(?:ليس(?:ت)?|ولا|لا)\s+(?:بمكروه(?:ة)?|مكروها|مكروهة)"),
+    ("mubah", "+", r"لا\s+حرج"), ("mubah", "+", r"لا\s+باس"), ("mubah", "+", r"لا\s+مانع"),
+    ("haram", "+", r"غير\s+جائز(?:ة)?"), ("haram", "+", r"ليس(?:ت)?\s+(?:بجائز(?:ة)?|جائزا|جائزة)"),
+    ("haram", "+", r"[يت]حرم"), ("haram", "+", r"حرام"), ("haram", "+", r"محرم(?:ة|ات)?"),
+    ("haram", "+", r"من\s+الكبائر"), ("haram", "+", r"كراهة\s+تحريم"),
+    ("wajib", "+", r"[يت]جب"), ("wajib", "+", r"وجب"), ("wajib", "+", r"واجب(?:ة)?"),
+    ("wajib", "+", r"[يت]لزم" + _SUF), ("wajib", "+", r"فرض\s+(?:عين|كفاية)"), ("wajib", "+", r"[يت]تعين"),
+    ("mandub", "+", r"[يت]ستحب"), ("mandub", "+", r"مستحب(?:ة|ات)?"), ("mandub", "+", r"[يت]سن"),
+    ("mandub", "+", r"مسنون(?:ة)?"), ("mandub", "+", r"مندوب(?:ة)?"), ("mandub", "+", r"سنة\s+مؤكدة"),
+    ("mandub", "+", r"من\s+السنة\s+ان"), ("mandub", "+", r"الافضل\s+(?:ان|لك|له|لها|لكم)"),
+    ("makruh", "+", r"[يت]كره\s+(?:ان|ذلك|هذا|فعل)"), ("makruh", "+", r"كراهة\s+تنزيه"), ("makruh", "+", r"مكروه(?:ة)?(?!\s+ال)"),
+    ("mubah", "+", r"[يت]جوز"), ("mubah", "+", r"جائز(?:ة)?"), ("mubah", "+", r"مباح(?:ة)?"),
+    ("mubah", "+", r"[يت]باح"), ("mubah", "+", r"حلال"),
+)
+_ACTS = r"(?:صلا|صيام|صوم|حج|عمر|عقد|بيع|نكاح|زواج|طلاق|وضوء|غسل|طهار)"
+WAD: tuple[tuple[str, str], ...] = (
+    ("batil", r"لا\s+[يت]صح\s+(?:ال)?" + _ACTS), ("batil", r"لا\s+[يت]جزئ"),
+    ("batil", _ACTS + rf"[{_L}]*\s+(?:باطل|فاسد)(?:ة)?"), ("batil", r"[يت]بطل"),
+    ("sahih", _ACTS + rf"[{_L}]*\s+صحيح(?:ة)?"), ("sahih", r"[يت]جزئ"),
+)
+_RX = [(h, p, re.compile(_PRE + pat + _END)) for h, p, pat in LEXICON]
+_WRX = [(w, re.compile(_PRE + pat + _END)) for w, pat in WAD]
+_CONCLUSION = re.compile(r"^\s*[وف]?(?:ال)?(?:حاصل|خلاصة)")
+_HAMDALA = re.compile(r"^\s*الحمد لله\.?")
+_COND = re.compile(_PRE + r"(?:الا\s+اذا|الا\s+ان|ان\s+كان|اذا\s+كان|بشرط)")
+_GENERIC = {"الفقه"}
 
 
-def choices(task: Task, surface: str) -> tuple[str, ...]:
-    """The labels a reviewer may give a mention: the entries one of whose heads it is, and none."""
-    return (*(c.work for c in task.lexicon if surface in heads(c)), NONE)
+def normalize_ar(s: str) -> str:
+    return _TASHKEEL.sub("", s).translate(_ALEF)
 
 
-def with_gold(rows: Iterable[dict], gold: dict[str, str]) -> list[dict]:
-    """Gold labels override rule labels; ``rule_label`` keeps the rule's verdict for agreement."""
-    return [{**r, "rule_label": r["label"] if r.get("label_source") == "rule" else None,
-             **({"label": gold[r["id"]], "label_source": "gold"} if r["id"] in gold else {})} for r in rows]
+def _spans(rx: list, text: str) -> list[tuple[int, int, tuple]]:
+    """Non-overlapping matches, earlier patterns claiming first, in text order."""
+    taken: list[tuple[int, int, tuple]] = []
+    for *tag, r in rx:
+        for m in r.finditer(text):
+            if all(m.end() <= s or m.start() >= e for s, e, _ in taken):
+                taken.append((m.start(), m.end(), tuple(tag)))
+    return sorted(taken)
 
 
-def review_queue(rows: Iterable[dict], n: int) -> list[dict]:
-    """``n`` unlabelled rows, round-robin over surfaces so rare titles are not drowned by common ones."""
-    by_surface: dict[str, list[dict]] = {}
-    for r in rows:
-        if r["label"] is None:
-            by_surface.setdefault(r["surface"], []).append(r)
-    return [r for r in chain.from_iterable(zip_longest(*by_surface.values())) if r is not None][:n]
+_QUESTION = re.compile(rf"{_PRE}هل(?:\s+[{_L}]+){{0,3}}\s*$")
 
 
-def merge_gold(gold: dict[str, str], reviewed: Iterable[dict], task: Task) -> dict[str, str]:
-    """Gold with every labelled reviewed row added; a label outside the row's choices is an error."""
-    out = dict(gold)
-    for r in reviewed:
-        if r.get("label") is None:
-            continue
-        if r["label"] not in choices(task, r["surface"]):
-            raise ValueError(f"{r['id']}: {r['label']!r} is not a choice for this surface")
-        out[r["id"]] = r["label"]
+def cues(text: str) -> list[dict]:
+    """Ruling cues in text order; a cue inside a «هل …» question is not a ruling."""
+    t = normalize_ar(text)
+    return [{"hukm": h, "polarity": p, "start": s, "end": e, "text": t[s:e]}
+            for s, e, (h, p) in _spans(_RX, t) if not _QUESTION.search(t[max(0, s - 40):s])]
+
+
+def _lines(text: str | None) -> list[str]:
+    return [l for l in _HAMDALA.sub("", normalize_ar(text or "")).splitlines() if l.strip()]
+
+
+def _passages(rec: Mapping) -> list[tuple[str, str]]:
+    """(basis, text) in reading order: summary, conclusion, lead."""
+    body = _lines(rec.get("answer"))
+    concl = next((i for i, l in enumerate(body) if _CONCLUSION.match(l)), None)
+    found = [("summary", "\n".join(_lines(rec.get("summary")))),
+             ("conclusion", "\n".join(body[concl:concl + 3]) if concl is not None else ""),
+             ("lead", "\n".join(body[:3]))]
+    return [(b, t) for b, t in found if t]
+
+
+def split_of(ref: int) -> str:
+    """80/10/10 by hash of the site-wide answer number: one split for every language."""
+    n = int(hashlib.sha1(str(ref).encode()).hexdigest(), 16) % 100
+    return "train" if n < 80 else "dev" if n < 90 else "test"
+
+
+def _domain(rec: Mapping) -> tuple[str | None, str | None]:
+    path = next((t["path"] for t in rec.get("topics") or []), [])
+    rest = [p for p in path[1:] if p not in _GENERIC]
+    return (path[0] if path else None), (rest[0] if rest else None)
+
+
+def label(rec: Mapping) -> dict:
+    ref = int(str(rec["id"]).rsplit(".", 1)[-1])
+    passages = _passages(rec)
+    hit = next(((b, t, cs) for b, t in passages if (cs := [c for c in cues(t) if c["polarity"] == "+"])), None)
+    domain, chapter = _domain(rec)
+    out = {"id": rec["id"], "split": split_of(ref), "domain": domain, "chapter": chapter,
+           "hukm": None, "basis": None, "conditional": False, "also": [], "evidence": None,
+           "wad": [], "act": None, "matches_question": None, "status": "candidate"}
+    if passages:
+        wad_text = hit[1] if hit else passages[0][1]          # validity from the passage the ruling came from
+        out["wad"] = list(dict.fromkeys(w for _, _, (w,) in _spans(_WRX, wad_text)))
+    if hit:
+        basis, text, cs = hit
+        first = cs[0]
+        also = list(dict.fromkeys(c["hukm"] for c in cs if c["hukm"] != first["hukm"]))
+        act = act_of(normalize_ar(text), first)
+        question = stems(normalize_ar(f"{rec.get('title') or ''} {rec.get('question') or ''}"))
+        out |= {"hukm": first["hukm"], "basis": basis, "also": also, "act": act,
+                "matches_question": bool(set(act["stems"]) & question),
+                "conditional": bool(also) or bool(_COND.search(text)),
+                "evidence": _evidence(text, first)}
     return out
 
 
-def summary(rows_by_task: dict[str, list[dict]]) -> dict[str, dict]:
-    """Counts only (no text): sources, labels, labelled rows per split, rule-vs-gold agreement."""
-    def tally(xs: Iterable[str]) -> dict[str, int]:
-        out: dict[str, int] = {}
-        for x in xs:
-            out[x] = out.get(x, 0) + 1
-        return dict(sorted(out.items()))
-
-    def one(rows: list[dict]) -> dict:
-        labelled = [r for r in rows if r["label"] is not None]
-        reviewed = [r for r in rows if r["label_source"] == "gold" and r.get("rule_label") is not None]
-        return {"candidates": len(rows),
-                "by_source": tally(r["label_source"] or "unlabelled" for r in rows),
-                "labels": tally(r["label"] for r in labelled),
-                "splits": tally(r["split"] for r in labelled),
-                "rule_vs_gold": {"compared": len(reviewed), "agree": sum(r["label"] == r["rule_label"] for r in reviewed)}}
-    return {task: one(rows) for task, rows in sorted(rows_by_task.items())}
+def _evidence(text: str, cue: Mapping) -> dict:
+    """The passage window around the deciding cue, and which occurrence of that cue text in it decided."""
+    w0 = max(0, cue["start"] - 150)
+    passage = text[w0:cue["end"] + 250]
+    nth = sum(c["text"] == cue["text"] and c["start"] < cue["start"] - w0 for c in cues(passage))
+    return {"cue": cue["text"], "passage": passage, "nth": nth}
 
 
-def read_gold(path: Path) -> dict[str, str]:
-    return {r["id"]: r["label"] for r in map(json.loads, path.read_text(encoding="utf-8").splitlines())} if path.exists() else {}
+HUMAN = ("gold", "note")
 
 
-def write_gold(path: Path, gold: dict[str, str]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("".join(json.dumps({"id": i, "label": l}, ensure_ascii=False) + "\n" for i, l in sorted(gold.items())),
-                    encoding="utf-8")
+def merge_review(new: list[dict], old: list[dict]) -> list[dict]:
+    """Regenerated review sample with the reviewers' fields carried over by id; reviewed items are never dropped."""
+    reviewed = {x["id"]: x for x in old if any(x.get(k) is not None for k in HUMAN)}
+    ids = {x["id"] for x in new}
+    return [x | {k: reviewed[x["id"]][k] for k in HUMAN} if x["id"] in reviewed else x for x in new] + [
+        x for i, x in reviewed.items() if i not in ids]
 
 
-def write_jsonl(path: Path, rows: Iterable[dict]) -> int:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    rows = list(rows)
-    path.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows), encoding="utf-8")
-    return len(rows)
+def report(labels: list[Mapping]) -> dict:
+    """Label counts: overall, by basis, by split."""
+    def count(xs) -> dict:
+        return dict(sorted(Counter(xs).items(), key=lambda kv: -kv[1]))
+
+    by_basis = {b: count(l["hukm"] for l in labels if l["basis"] == b) for b in ("summary", "conclusion", "lead")}
+    return {
+        "total": len(labels),
+        "labelled": sum(l["hukm"] is not None for l in labels),
+        "hukm": count(l["hukm"] or "unlabelled" for l in labels),
+        "hukm_by_basis": {b: c for b, c in by_basis.items() if c},
+        "conditional": sum(l["conditional"] for l in labels),
+        "wad": count(w for l in labels for w in l["wad"]),
+        "split": count(l["split"] for l in labels),
+    }
+
+
+def review_sample(labels: list[Mapping], titles: Mapping[str, str], per_class: int = 25) -> list[dict]:
+    """Stratified, order-independent sample per candidate class (plus unlabelled), with an empty gold slot."""
+    key = lambda l: hashlib.sha1(l["id"].encode()).hexdigest()  # noqa: E731
+    out = []
+    for h in (*HUKM, None):
+        for l in sorted((l for l in labels if l["hukm"] == h), key=key)[:per_class]:
+            ev = l["evidence"] or {}
+            out.append({"id": l["id"], "title": titles[l["id"]], "candidate": h, "basis": l["basis"],
+                        "cue": ev.get("cue"), "passage": ev.get("passage"), "gold": None, "note": None})
+    return out

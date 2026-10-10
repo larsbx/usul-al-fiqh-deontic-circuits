@@ -1,0 +1,74 @@
+{
+  "total": {
+    "cases": 122,
+    "oracle": 119,
+    "bank_answers": 68,
+    "bank": 64
+  },
+  "per_encoder": {
+    "asl_zahir": {
+      "cases": 27,
+      "oracle": 27,
+      "bank_answers": 24,
+      "bank": 24
+    },
+    "itlaf": {
+      "cases": 27,
+      "oracle": 27,
+      "bank_answers": 0,
+      "bank": 0
+    },
+    "luqata": {
+      "cases": 30,
+      "oracle": 29,
+      "bank_answers": 14,
+      "bank": 11
+    },
+    "trust_loss": {
+      "cases": 21,
+      "oracle": 21,
+      "bank_answers": 18,
+      "bank": 18
+    },
+    "unknown_owner": {
+      "cases": 17,
+      "oracle": 15,
+      "bank_answers": 12,
+      "bank": 11
+    }
+  },
+  "rules_fired": {
+    "bank": 24,
+    "hand_of_trust": 17,
+    "recipient": 13,
+    "mubashir_liable": 11,
+    "announced_year": 10,
+    "mutasabbib_by_fault": 5,
+    "trivial_find": 5,
+    "haram_makka": 4,
+    "rikaz": 4,
+    "victim_fault": 3,
+    "dallat_al_ibil": 3,
+    "dallat_al_ghanam": 3,
+    "sufra_kudra_after_tuhr": 2,
+    "mubashir_first": 2,
+    "sirayat_al_jinaya": 2,
+    "lawful_authority": 2,
+    "owner_appears_after_charity": 2,
+    "bayyina_in_qada": 1,
+    "physician": 1,
+    "no_causation": 1,
+    "quwwa_qahira": 1,
+    "unattributed_death": 1,
+    "perishable_find": 1,
+    "no_legal_value": 1,
+    "guarantee_by_contract": 1,
+    "illicit_exchange": 1,
+    "family_recipient": 1
+  },
+  "gaps": {
+    "islamqa.126387.f001": "The text permits charity, handing it to the officials, or announcing it, and never says he may keep it, unlike 126502.f001 with the same facts; the facts carry no distinction between the two answers.",
+    "islamqa.107436.f001": "Public money spent on public-interest channels without asking whether the paying body can take it back; with the state as an identifiable owner, the oracle returns it to the owner, as 260724.f001's text does.",
+    "islamqa.287215.f002": "The text permits a choice: hold her share for her or give it in charity on her behalf. A ruling records one option; the oracle gives the charity route (publicInterest)."
+  }
+}

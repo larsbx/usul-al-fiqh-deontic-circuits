@@ -674,4 +674,375 @@ def rightSurvivesTransfer (onProperty reasonCeases : Bool) : Bool := onProperty 
 theorem owner_right_lapses_with_its_reason : rightSurvivesTransfer false true = false := rfl
 theorem property_right_survives (r : Bool) : rightSurvivesTransfer true r = true := rfl
 
+/-! ## M8 tranche 5 -/
+
+/-! ### Qāʿida 25: what follows ownership proven by evidence or confession
+
+«من ثبت له ملك عين ببينة أو إقرار فهل يتبعها ما يتصل بها أو تولد منها أم لا؟ في المسألة خلاف».
+The reading takes Ibn Rajab's recurring measure: what follows in sale follows here. -/
+
+def followsProven (followsInSale : Bool) : Bool := followsInSale
+
+/-! ### Qāʿida 29: a tolerated amount exceeded
+
+«من سومح في مقدار يسير فزاد عليه فهل تنتفي المسامحة في الزيادة وحدها أو في الجميع فيه وجهان».
+The reading takes Ibn Rajab's distinction in 29.f003: the excess alone where he is not at fault,
+«بخلاف الوكيل والمضحي». -/
+
+inductive Lapse where
+  | all | excess
+  deriving DecidableEq, Repr
+
+def toleranceLapse (atFault : Bool) : Lapse := if atFault then .all else .excess
+
+/-! ### Qāʿida 30: what was given out as due and failed to count
+
+«… فهل يعود إلى ملكه أم لا؟ فيه خلاف». The reading: what did not discharge the duty is still his. -/
+
+def returnsToOwner (failedToCount : Bool) : Bool := failedToCount
+
+/-! ### Qāʿida 32: excepting the benefit of a transferred thing
+
+«يصح عندنا استثناء منفعة العين المنتقل ملكها من ناقلها مدة معلومة», and in waqf and manumission
+for his life too, «لأن جهالة المدة هنا لا تؤثر». -/
+
+def benefitExceptionValid (knownPeriod toleratesUncertainty : Bool) : Bool :=
+  knownPeriod || toleratesUncertainty
+
+theorem known_period_suffices (t : Bool) : benefitExceptionValid true t = true := rfl
+
+/-! ### Qāʿida 33: the implicit exception
+
+«الاستثناء الحكمي هل هو كالاستثناء اللفظي أم تغتفر فيه الجهالة … والصحيح عند صاحب المغني الصحة،
+وهو قياس المذهب، خلافا للقاضي». -/
+
+/-- An exception of uncertain extent: valid when it arises by law, not when stated. -/
+def uncertainExceptionValid (implicit : Bool) : Bool := implicit
+
+/-! ### Qāʿida 34: benefits owed under a binding contract
+
+«استحقاق منافع العبد بعقد لازم يمنع من سريان العتق إليها كالاستثناء في العقد وأولى ; لأن الاستثناء
+الحكمي أقوى», against Taqī al-Dīn. -/
+
+def manumissionReachesBenefits (bindingContract : Bool) : Bool := !bindingContract
+
+/-- 34 is 33 applied: the binding contract is an implicit exception, so manumission stops at it. -/
+theorem binding_is_implicit_exception (b : Bool) :
+    manumissionReachesBenefits b = !uncertainExceptionValid b := rfl
+
+/-! ## M8 tranche 6 -/
+
+/-! ### Qāʿida 35: owning the benefit by contract, then the thing
+
+A perpetual commutative contract (nikāḥ) dissolves on owning the person; a lease does not, «لا
+ينفسخ وهو الصحيح وهو اختيار القاضي وابن عقيل والأكثرين». -/
+
+def priorContractDissolves (perpetualCommutative : Bool) : Bool := perpetualCommutative
+
+/-! ### Qāʿida 37: successive contracts on one thing
+
+«في توارد العقود المختلفة بعضها على بعض، وتداخل أحكامها»: the later contract's ruling governs the
+hand (the pledge used becomes a loan, the pledge on usurped goods clears the usurper). -/
+
+def laterContractGoverns (successive : Bool) : Bool := successive
+
+/-- Jamʿ (`corpus/reconciliation/ledger.json`): the later contract governs where it binds, or where
+the earlier one did not. Abū al-Barakāt's farq, «ويسقط ضمان العارية لأنها ليست لازمة، وعقد هذه الأمانة
+لازم» (37.f003), reconciles the reading with Majd's ẓāhir of Aḥmad: a non-binding permission does not
+turn a binding pledge into a loan (37.f000), and a void condition does not displace it (37.f006). -/
+def laterBindingGoverns (successive earlierBinding laterBinding : Bool) : Bool :=
+  successive && (laterBinding || !earlierBinding)
+
+/-- Conservative: where the later contract binds, the earlier reading is unchanged. -/
+theorem laterBindingGoverns_conservative (s e : Bool) :
+    laterBindingGoverns s e true = laterContractGoverns s := by
+  cases s <;> cases e <;> rfl
+
+/-- And where the earlier did not bind (the deposit, the loan, the usurpation). -/
+theorem laterBindingGoverns_unbound_earlier (s l : Bool) :
+    laterBindingGoverns s false l = laterContractGoverns s := by
+  cases s <;> cases l <;> rfl
+
+theorem binding_pledge_survives : laterBindingGoverns true true false = false := rfl
+
+/-! ### Qāʿida 38: contract words joined with what takes them out of their nature
+
+«فهل يفسد العقد بذلك أو يجعل كناية عما يمكن صحته على ذلك الوجه؟ … يلتفت إلى أن المغلب هل هو اللفظ
+أو المعنى». The reading takes the meaning. -/
+
+def asKinayaValid (otherContractPossible : Bool) : Bool := otherContractPossible
+
+/-! ### Qāʿida 39: contracts by allusion
+
+Kināyāt conclude «سائر العقود سوى النكاح لاشتراط الشهادة عليه وهي لا تقع على النية» (Abū al-Khaṭṭāb,
+al-Mughnī, «وكلام كثير من الأصحاب يدل عليه»), against al-Qāḍī's restriction to divorce and
+manumission. -/
+
+def kinayaConcludes (needsWitnessing : Bool) : Bool := !needsWitnessing
+
+theorem witnessed_needs_explicit : kinayaConcludes true = false := rfl
+
+/-! ### Qāʿida 41: a bound right and the destroyed thing's substitute
+
+«إذا تعلق بعين حق تعلقا لازما فأتلفها من يلزمه الضمان فهل يعود الحق إلى البدل المأخوذ من غير عقد
+آخر؟ فيه خلاف». The reading: the right passes to the substitute. -/
+
+def rightPassesToSubstitute (boundToThing : Bool) : Bool := boundToThing
+
+/-- As with transfer (qāʿida 24): a right on the property itself follows it. -/
+theorem substitute_as_transfer : rightPassesToSubstitute true = rightSurvivesTransfer true false := rfl
+
+/-! ## M8 tranche 7: qawāʿid 3, 5, 9, 10, 12 -/
+
+/-! ### Qāʿida 3: an undistinguished excess over what suffices
+
+«هل يوصف الكل بالوجوب أو قدر الإجزاء منه … ففيه وجهان». The reading follows Ibn Rajab's own
+resolution: the whole is obligatory where the whole was the original duty, lightened
+(«وصف الكل بالوجوب على الصحيح», the traveller's four), and otherwise the excess is voluntary
+(al-Qāḍī on the older age in zakāt, «وهو الصواب»). A separable excess is voluntary «فلا إشكال». -/
+
+def excessObligatory (separable lightened : Bool) : Bool := !separable && lightened
+
+/-! ### Qāʿida 5: an act advanced before its time, the state then changing
+
+The act suffices when it was the duty as it stood at performance: «لأنه كان فرضه في الظاهر فبرئ به …
+فصادف … ذمة بريئة»; the boy's prayer before puberty discharged no duty, so the manṣūṣ has it
+repeated. -/
+
+def advancedSuffices (dueAtPerformance : Bool) : Bool := dueAtPerformance
+
+/-! ### Qāʿida 9: worship performed in a prohibited way
+
+Invalid where the prohibition returns to the act itself, to a condition specific to it, or to a
+condition not specific to it («روايتان أشهرهما عدمها»); valid where it returns to what is no
+condition («وخالفه الأكثرون», against Abū Bakr). -/
+
+inductive Prohibited where
+  | essence | specificCondition | generalCondition | outside
+  deriving DecidableEq, Repr
+
+def validDespite : Prohibited → Bool
+  | .outside => true
+  | _ => false
+
+/-! ### Qāʿida 10: wordings in worship and contracts
+
+«ما يعتبر معناه دون لفظه كألفاظ عقد البيع … وألفاظ الطلاق»; «ما يعتبر لفظه مع القدرة عليه دون العجز
+عنه». The reading: a non-Arabic wording counts where only the meaning counts, or where he cannot
+manage the Arabic. -/
+
+def otherTongueValid (meaningOnly able : Bool) : Bool := meaningOnly || !able
+
+/-! ### Qāʿida 12: worship transmitted in several forms
+
+«ظاهر كلام الأصحاب» is to keep to one form; combining is disputed. The reading takes Taqī al-Dīn's
+criterion: forms that are substitutes for each other are not combined, «ولا يصح الجمع بين البدل
+والمبدل»; forms that are not (two prayers) may be, «جمعت فعله وأمره» (Aḥmad). -/
+
+def combineForms (substitutes : Bool) : Bool := !substitutes
+
+/-! ## M8 tranche 8: qawāʿid 4, 11, 14, 15, 19 -/
+
+/-! ### Qāʿida 4: advancing worship
+
+«لا يجوز تقديمها على سبب وجوبها ويجوز تقديمها بعد سبب الوجوب وقبل الوجوب». -/
+
+def advanceAllowed (causePresent : Bool) : Bool := causePresent
+
+/-! ### Qāʿida 11: the voluntary before the obligatory of its kind
+
+«فإن كانت موسعة جاز التنفل قبل أدائها … وإن كانت مضيقة لم تصح على الصحيح». -/
+
+def naflValid (narrow financial : Bool) : Bool := !narrow || financial
+
+/-- Zakāt is the carve-out: «فقال الأصحاب يصح أن يتنفل بالصدقة قبل أدائها وإن كانت على الفور», with
+Aḥmad's naṣṣ (Muhannā), so narrowness bars only the purely bodily worship of one kind. -/
+theorem zakat_carve_out : naflValid true true = true := rfl
+
+/-! ### Qāʿida 14: a cause from one of two men, not known which
+
+The reading takes Ibn Rajab's own farq: binding both is right where it costs no right («بخلاف إيجاب
+الطهارة عليهما فإنه لا ضرر فيه»), and wrong where it would cut a right («إجبار الإنسان على قطع
+ملكه بغير حق»). There neither is bound, yet each refrains until certain, «ولنا وجه آخر بوجوب
+اعتزال كل منهما زوجته حتى يتيقن الأمر ونص عليه أحمد», which the slave-women follow by qiyās
+al-manṣūṣ. `abstain` is that composite: no attachment, with abstention. -/
+
+inductive Attach where
+  | neither | each | lot | abstain
+  deriving DecidableEq, Repr
+
+def attachTo (harmless : Bool) : Attach := if harmless then .each else .abstain
+
+/-! ### Qāʿida 15: corollaries of one aṣl against another
+
+«لم يلتفت إلى ذلك اللازم على الصحيح»: each matter stays on its own aṣl. -/
+
+def eachOnItsAsl (separateMatters : Bool) : Bool := separateMatters
+
+/-! ### Qāʿida 19: ability to perform and the dhimma
+
+«إمكان الأداء ليس بشرط في استقرار الواجبات بالشرع في الذمة على ظاهر المذهب»; for making up
+(qaḍāʾ) «فاعتبر الأصحاب له إمكان الأداء». -/
+
+def settlesInDhimma (makingUp : Bool) : Bool := !makingUp
+
+/-! ## M8 tranche 9: qawāʿid 36, 42, 43, 46, 49, 50, 51 -/
+
+/-- Qāʿida 36: a lease by one whose authority ends dissolves unless the new holder succeeds the
+lessor in what is his («فلا اعتراض له على عقوده بل هو منفذ لها»): the ward who comes of age, the heir,
+the buyer; it dissolves for the conqueror and for the next waqf tier, who take from the wāqif. -/
+def leaseDissolves (succeedsLessor : Bool) : Bool := !succeedsLessor
+
+/-- Qāʿida 42: a property held for another must be returned at once where the owner did not
+consent to its holding, or where it is guaranteed («فتجب المبادرة إلى الرد بكل حال»); a trust held
+by consent waits for the demand. -/
+def returnAtOnce (heldByConsent guaranteed : Bool) : Bool := !heldByConsent || guaranteed
+
+/-- Qāʿida 43: continued holding without permission makes liable only one who withholds it
+(«فإن كان ممتنعا من تسليمه فهو غاصب»; «لتعديه بترك الرد مع إمكانه»). -/
+def holderLiable (withholds : Bool) : Bool := withholds
+
+/-- Qāʿida 43, the second division: after a commutative contract ends with the thing in his hand,
+he is liable where he caused the ending or shared in it, «لأنه يسبب إلى جعل ملك غيره في يده», and not
+where the other ended it alone (the ẓāhir of al-Mughnī on the ṣadāq). -/
+def liableAfterEnding (endedByHolder : Bool) : Bool := endedByHolder
+
+/-- Qāʿida 46: a void contract is concluded only where it binds and cannot be left by word
+(iḥrām) or carries a pervasive effect (nikāḥ, kitāba); a void sale or lease «فالمعروف من المذهب
+أنه غير منعقد». -/
+def voidConcluded (binding pervasive : Bool) : Bool := binding && pervasive
+
+/-- Qāʿida 49: a contract binds without qabḍ unless qabḍ is part of its completion (salam,
+ribawī exchange). -/
+def bindsWithoutQabd (qabdCompletes : Bool) : Bool := !qabdCompletes
+
+/-- Qāʿida 50: a forced acquisition is owned before the price is paid only under necessity
+(«لأن ضرره لا يندفع إلا بذلك»); otherwise «والضرر لا يزال بالضرر». -/
+def ownedBeforePayment (necessity : Bool) : Bool := necessity
+
+/-- Qāʿida 51: what is determined enters the new owner's ḍamān without transport, the bond of
+the former owner cut («وقد انقطعت علق البائع منه»); the undetermined needs qabḍ. -/
+def inNewOwnersDaman (determined : Bool) : Bool := determined
+
+/-- Qāʿida 52: disposal before qabḍ is barred only in the undetermined («جادة المذهب وهو أن لا
+ضمان ولا منع من التصرف إلا في المبهم خاصة»), and where the disposer's right is not settled: the
+stipend, «شيء مغيب لا يدرى أيصل إليه أم لا», and the alms, «لا تملك بدون القبض». -/
+def disposeBeforeQabd (mubham settled : Bool) : Bool := !mubham && settled
+
+/-- Qāʿida 54: one may not dispose of a thing so as to extinguish another's right in it without
+his leave, whether the right was taken, demanded, or only established («والصحيح أنه لا يجوز
+أيضا»); a disposal that leaves the right to a substitute is allowed. -/
+def mayDisposeOver (extinguishes : Bool) : Bool := !extinguishes
+
+/-- Qāʿida 56: a contract's condition of capacity suffices when concurrent with it («المنصوص عن
+أحمد الاكتفاء بالمقارنة في الصحة»), against the wajh that it must precede. -/
+def conditionMet (prior concurrent : Bool) : Bool := prior || concurrent
+
+/-- Qāʿida 58: desisting at once from what one is engaged in is not doing the forbidden, unless
+one began knowing the prohibition imminent («لإقدامه على الفعل مع علمه بتحريمه في وقته لا سيما مع
+قرب الوقت»). -/
+def desistIsAct (foresaw : Bool) : Bool := foresaw
+
+/-- Qāʿida 61: a deputy is removed with his principal's removal or death unless his mandate is
+general, a deputy for the Muslims («بخلاف القضاة فإنهم نواب للمسلمين»). -/
+def removedWithPrincipal (general : Bool) : Bool := !general
+
+/-- Qāʿida 62: removal takes effect before it is known (the agent, «المشهور»), except in a public
+office carrying a right of God, «شبيه بنسخ الأحكام لا يثبت قبل بلوغ الناسخ». -/
+def removedBeforeKnowledge (publicOffice : Bool) : Bool := !publicOffice
+
+/-! ## Reconciliation refinements (`corpus/reconciliation/ledger.json`)
+
+Each is a jamʿ: a farq the later works cite, conservative over the earlier reading where the farq
+is absent, carrying the residues it touches to the prevailing (taṣḥīḥ) side. -/
+
+/-- Qāʿida 16 with the state at obligation: once the substitute is what was due when the obligation
+arose, finding the original later does not move him to it. «والاعتبار في الكفارات بحالة الوجوب»
+(al-Iqnāʿ); «اعتبارا بوقت الوجوب كسائر الكفارات» (Kashshāf); for a right fixed in the value at the
+divorce or the conversion, al-aṣḥāb deny the return to the thing. -/
+def useSubstituteAt (originalPossible settledAtObligation : Bool) : Bool :=
+  !originalPossible || settledAtObligation
+
+theorem useSubstituteAt_conservative (p : Bool) :
+    useSubstituteAt p false = Usul.Sadi.useSubstitute p := by
+  cases p <;> rfl
+
+theorem settled_substitute_stands : useSubstituteAt true true = true := rfl
+
+/-- Qāʿidas 64–65 with the madhhab's farq for transactions: where the unknown condition is the
+actor's own authority over the property (his ownership, or the owner's permission), the transaction
+stands, «لأن الاعتبار في العقود بما في نفس الأمر» (Kashshāf); ṭalāq, ʿitq and nikāḥ keep the reading. -/
+def countsAsMetIn (knew liabilityOnly transactionAuthority : Bool) : Bool :=
+  knew || liabilityOnly || transactionAuthority
+
+theorem countsAsMetIn_conservative (k l : Bool) :
+    countsAsMetIn k l false = countsAsMet k l := by
+  cases k <;> cases l <;> rfl
+
+theorem authority_in_fact_suffices : countsAsMetIn false false true = true := rfl
+
+/-- Qāʿida 3 with the farq of following: «الاتباع قد يسقط الواجب» (Ibn ʿAqīl), so the imām's
+rukūʿ beyond the sufficient measure counts for the one who joins him; al-Inṣāf: «ومن أدرك الركوع
+أدرك الركعة … هذا المذهب مطلقا». -/
+def excessObligatoryIn (separable lightened following : Bool) : Bool :=
+  !separable && (lightened || following)
+
+theorem excessObligatoryIn_conservative (s l : Bool) :
+    excessObligatoryIn s l false = excessObligatory s l := by
+  cases s <;> cases l <;> rfl
+
+/-- Qāʿida 5 with the state at obligation for kaffārāt: an expiation advanced by fasting does not
+suffice when the oath is broken while well off, «والاعتبار في الكفارات بحالة الوجوب» (al-Iqnāʿ;
+Kashshāf). -/
+def advancedSufficesIn (dueAtPerformance kaffaraChanged : Bool) : Bool :=
+  dueAtPerformance && !kaffaraChanged
+
+theorem advancedSufficesIn_conservative (d : Bool) :
+    advancedSufficesIn d false = advancedSuffices d := by
+  cases d <;> rfl
+
+/-- Qāʿida 10 with the farq of the act not itself due: one who does not know the Arabic need not
+learn it for nikāḥ or liʿān, «لأن النكاح غير واجب بأصل الشرع فلم يجب تعلم» (Kashshāf); the khuṭba,
+being due, keeps the wording. -/
+def otherTongueValidIn (meaningOnly able needNotLearn : Bool) : Bool :=
+  meaningOnly || !able || needNotLearn
+
+theorem otherTongueValidIn_conservative (m a : Bool) :
+    otherTongueValidIn m a false = otherTongueValid m a := by
+  cases m <;> cases a <;> rfl
+
+/-- Qāʿida 50 with the madhhab's condition on the shufʿa: the shafīʿ owns by the demand «إذا كان
+مليئا بالثمن» (al-Inṣāf: «وهو المذهب»; al-Iqnāʿ), a solvent taker inflicting no harm («والضرر لا
+يزال بالضرر»). The farq is cited for the shufʿa only: Ibn Rajab keeps the seller's annulment apart
+(«اجتمع له العوض والمعوض»), so the other acquisitions keep the reading. -/
+def ownedBeforePaymentIn (necessity shufa solvent : Bool) : Bool := necessity || (shufa && solvent)
+
+/-- Outside the shufʿa the refinement is the earlier reading. -/
+theorem ownedBeforePaymentIn_conservative (n v : Bool) :
+    ownedBeforePaymentIn n false v = ownedBeforePayment n := by
+  cases n <;> rfl
+
+/-- And so it is for an insolvent shafīʿ. -/
+theorem ownedBeforePaymentIn_insolvent (n s : Bool) :
+    ownedBeforePaymentIn n s false = ownedBeforePayment n := by
+  cases n <;> cases s <;> rfl
+
+/-- Qāʿida 52 with the madhhab's bar on selling a debt to any but the debtor («ولا يجوز لغيره»: al-Inṣāf,
+«وهو الصحيح من المذهب. وعليه الأصحاب»), which covers the deeds. -/
+def disposeBeforeQabdIn (mubham settled debtToThird : Bool) : Bool :=
+  disposeBeforeQabd mubham settled && !debtToThird
+
+theorem disposeBeforeQabdIn_conservative (m s : Bool) :
+    disposeBeforeQabdIn m s false = disposeBeforeQabd m s := by
+  cases m <;> cases s <;> rfl
+
+/-- Qāʿida 61 with the madhhab on the qāḍī's deputies: removed with him even under a general
+mandate, «لأنهم نواب القاضي بخلاف القضاة فإنهم نواب للمسلمين» (al-Inṣāf: «هذا الصحيح من المذهب.
+وعليه أكثر الأصحاب»). -/
+def removedWithPrincipalIn (general ofQadi : Bool) : Bool := removedWithPrincipal general || ofQadi
+
+theorem removedWithPrincipalIn_conservative (g : Bool) :
+    removedWithPrincipalIn g false = removedWithPrincipal g := by
+  cases g <;> rfl
+
 end Usul.Refinements

@@ -254,6 +254,154 @@ import Usul
 #guard (Usul.Refinements.rightSurvivesTransfer false true) == false
 #guard (Usul.Refinements.rightSurvivesTransfer true false) == true
 #guard (Usul.Refinements.rightSurvivesTransfer true true) == true
+#guard (Usul.Refinements.followsProven false) == false
+#guard (Usul.Refinements.followsProven true) == true
+#guard (Usul.Refinements.toleranceLapse false) == .excess
+#guard (Usul.Refinements.toleranceLapse true) == .all
+#guard (Usul.Refinements.returnsToOwner false) == false
+#guard (Usul.Refinements.returnsToOwner true) == true
+#guard (Usul.Refinements.benefitExceptionValid false false) == false
+#guard (Usul.Refinements.benefitExceptionValid false true) == true
+#guard (Usul.Refinements.benefitExceptionValid true false) == true
+#guard (Usul.Refinements.benefitExceptionValid true true) == true
+#guard (Usul.Refinements.uncertainExceptionValid false) == false
+#guard (Usul.Refinements.uncertainExceptionValid true) == true
+#guard (Usul.Refinements.manumissionReachesBenefits false) == true
+#guard (Usul.Refinements.manumissionReachesBenefits true) == false
+#guard (Usul.Refinements.priorContractDissolves false) == false
+#guard (Usul.Refinements.priorContractDissolves true) == true
+#guard (Usul.Refinements.laterContractGoverns false) == false
+#guard (Usul.Refinements.laterContractGoverns true) == true
+#guard (Usul.Refinements.laterBindingGoverns false false false) == false
+#guard (Usul.Refinements.laterBindingGoverns false false true) == false
+#guard (Usul.Refinements.laterBindingGoverns false true false) == false
+#guard (Usul.Refinements.laterBindingGoverns false true true) == false
+#guard (Usul.Refinements.laterBindingGoverns true false false) == true
+#guard (Usul.Refinements.laterBindingGoverns true false true) == true
+#guard (Usul.Refinements.laterBindingGoverns true true false) == false
+#guard (Usul.Refinements.laterBindingGoverns true true true) == true
+#guard (Usul.Refinements.excessObligatory false false) == false
+#guard (Usul.Refinements.excessObligatory false true) == true
+#guard (Usul.Refinements.excessObligatory true false) == false
+#guard (Usul.Refinements.excessObligatory true true) == false
+#guard (Usul.Refinements.advancedSuffices false) == false
+#guard (Usul.Refinements.advancedSuffices true) == true
+#guard (Usul.Refinements.validDespite .essence) == false
+#guard (Usul.Refinements.validDespite .specificCondition) == false
+#guard (Usul.Refinements.validDespite .generalCondition) == false
+#guard (Usul.Refinements.validDespite .outside) == true
+#guard (Usul.Refinements.otherTongueValid false false) == true
+#guard (Usul.Refinements.otherTongueValid false true) == false
+#guard (Usul.Refinements.otherTongueValid true false) == true
+#guard (Usul.Refinements.otherTongueValid true true) == true
+#guard (Usul.Refinements.combineForms false) == true
+#guard (Usul.Refinements.combineForms true) == false
+#guard (Usul.Refinements.advanceAllowed false) == false
+#guard (Usul.Refinements.advanceAllowed true) == true
+#guard (Usul.Refinements.naflValid false false) == true
+#guard (Usul.Refinements.naflValid false true) == true
+#guard (Usul.Refinements.naflValid true false) == false
+#guard (Usul.Refinements.naflValid true true) == true
+#guard (Usul.Refinements.attachTo false) == .abstain
+#guard (Usul.Refinements.attachTo true) == .each
+#guard (Usul.Refinements.eachOnItsAsl false) == false
+#guard (Usul.Refinements.eachOnItsAsl true) == true
+#guard (Usul.Refinements.settlesInDhimma false) == true
+#guard (Usul.Refinements.settlesInDhimma true) == false
+#guard (Usul.Refinements.leaseDissolves false) == true
+#guard (Usul.Refinements.leaseDissolves true) == false
+#guard (Usul.Refinements.returnAtOnce false false) == true
+#guard (Usul.Refinements.returnAtOnce false true) == true
+#guard (Usul.Refinements.returnAtOnce true false) == false
+#guard (Usul.Refinements.returnAtOnce true true) == true
+#guard (Usul.Refinements.holderLiable false) == false
+#guard (Usul.Refinements.holderLiable true) == true
+#guard (Usul.Refinements.liableAfterEnding false) == false
+#guard (Usul.Refinements.liableAfterEnding true) == true
+#guard (Usul.Refinements.voidConcluded false false) == false
+#guard (Usul.Refinements.voidConcluded false true) == false
+#guard (Usul.Refinements.voidConcluded true false) == false
+#guard (Usul.Refinements.voidConcluded true true) == true
+#guard (Usul.Refinements.bindsWithoutQabd false) == true
+#guard (Usul.Refinements.bindsWithoutQabd true) == false
+#guard (Usul.Refinements.ownedBeforePayment false) == false
+#guard (Usul.Refinements.ownedBeforePayment true) == true
+#guard (Usul.Refinements.ownedBeforePaymentIn false false false) == false
+#guard (Usul.Refinements.ownedBeforePaymentIn false false true) == false
+#guard (Usul.Refinements.ownedBeforePaymentIn false true false) == false
+#guard (Usul.Refinements.ownedBeforePaymentIn false true true) == true
+#guard (Usul.Refinements.ownedBeforePaymentIn true false false) == true
+#guard (Usul.Refinements.ownedBeforePaymentIn true false true) == true
+#guard (Usul.Refinements.ownedBeforePaymentIn true true false) == true
+#guard (Usul.Refinements.ownedBeforePaymentIn true true true) == true
+#guard (Usul.Refinements.inNewOwnersDaman false) == false
+#guard (Usul.Refinements.inNewOwnersDaman true) == true
+#guard (Usul.Refinements.disposeBeforeQabd false false) == false
+#guard (Usul.Refinements.disposeBeforeQabd false true) == true
+#guard (Usul.Refinements.disposeBeforeQabd true false) == false
+#guard (Usul.Refinements.disposeBeforeQabd true true) == false
+#guard (Usul.Refinements.mayDisposeOver false) == true
+#guard (Usul.Refinements.mayDisposeOver true) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn false false false) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn false false true) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn false true false) == true
+#guard (Usul.Refinements.disposeBeforeQabdIn false true true) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn true false false) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn true false true) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn true true false) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn true true true) == false
+#guard (Usul.Refinements.conditionMet false false) == false
+#guard (Usul.Refinements.conditionMet false true) == true
+#guard (Usul.Refinements.conditionMet true false) == true
+#guard (Usul.Refinements.conditionMet true true) == true
+#guard (Usul.Refinements.desistIsAct false) == false
+#guard (Usul.Refinements.desistIsAct true) == true
+#guard (Usul.Refinements.removedWithPrincipal false) == true
+#guard (Usul.Refinements.removedWithPrincipal true) == false
+#guard (Usul.Refinements.removedWithPrincipalIn false false) == true
+#guard (Usul.Refinements.removedWithPrincipalIn false true) == true
+#guard (Usul.Refinements.removedWithPrincipalIn true false) == false
+#guard (Usul.Refinements.removedWithPrincipalIn true true) == true
+#guard (Usul.Refinements.removedBeforeKnowledge false) == true
+#guard (Usul.Refinements.removedBeforeKnowledge true) == false
+#guard (Usul.Refinements.excessObligatoryIn false false false) == false
+#guard (Usul.Refinements.excessObligatoryIn false false true) == true
+#guard (Usul.Refinements.excessObligatoryIn false true false) == true
+#guard (Usul.Refinements.excessObligatoryIn false true true) == true
+#guard (Usul.Refinements.excessObligatoryIn true false false) == false
+#guard (Usul.Refinements.excessObligatoryIn true false true) == false
+#guard (Usul.Refinements.excessObligatoryIn true true false) == false
+#guard (Usul.Refinements.excessObligatoryIn true true true) == false
+#guard (Usul.Refinements.advancedSufficesIn false false) == false
+#guard (Usul.Refinements.advancedSufficesIn false true) == false
+#guard (Usul.Refinements.advancedSufficesIn true false) == true
+#guard (Usul.Refinements.advancedSufficesIn true true) == false
+#guard (Usul.Refinements.otherTongueValidIn false false false) == true
+#guard (Usul.Refinements.otherTongueValidIn false false true) == true
+#guard (Usul.Refinements.otherTongueValidIn false true false) == false
+#guard (Usul.Refinements.otherTongueValidIn false true true) == true
+#guard (Usul.Refinements.otherTongueValidIn true false false) == true
+#guard (Usul.Refinements.otherTongueValidIn true false true) == true
+#guard (Usul.Refinements.otherTongueValidIn true true false) == true
+#guard (Usul.Refinements.otherTongueValidIn true true true) == true
+#guard (Usul.Refinements.useSubstituteAt false false) == true
+#guard (Usul.Refinements.useSubstituteAt false true) == true
+#guard (Usul.Refinements.useSubstituteAt true false) == false
+#guard (Usul.Refinements.useSubstituteAt true true) == true
+#guard (Usul.Refinements.countsAsMetIn false false false) == false
+#guard (Usul.Refinements.countsAsMetIn false false true) == true
+#guard (Usul.Refinements.countsAsMetIn false true false) == true
+#guard (Usul.Refinements.countsAsMetIn false true true) == true
+#guard (Usul.Refinements.countsAsMetIn true false false) == true
+#guard (Usul.Refinements.countsAsMetIn true false true) == true
+#guard (Usul.Refinements.countsAsMetIn true true false) == true
+#guard (Usul.Refinements.countsAsMetIn true true true) == true
+#guard (Usul.Refinements.asKinayaValid false) == false
+#guard (Usul.Refinements.asKinayaValid true) == true
+#guard (Usul.Refinements.kinayaConcludes false) == true
+#guard (Usul.Refinements.kinayaConcludes true) == false
+#guard (Usul.Refinements.rightPassesToSubstitute false) == false
+#guard (Usul.Refinements.rightPassesToSubstitute true) == true
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 #guard (Usul.Dalala.coversBeyondSabab true true false) == true

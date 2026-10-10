@@ -65,3 +65,35 @@ def test_parse_ordinal_span_joint_headings():
     assert parse_ordinal_span("الرابعة والخامسة") == ((4, 5), False)
     assert parse_ordinal_span("الحادية عشرة") == ((11, 11), False)
     assert parse_ordinal_span("الأولى والثالثة") is None        # not consecutive
+
+
+def test_revolume_numbers_shamela_volumes_at_page_resets():
+    """Shamela fetches mark every page V01; a page number that goes back starts a new volume."""
+    from usul_corpus.arabic import revolume
+    t = "أ\nPageV01P001\nب\nPageV01P002\nPageV01P002\nج\nPageV01P001\nد\nPageV01P003\n"
+    assert revolume(t) == "أ\nPageV01P001\nب\nPageV01P002\nPageV01P002\nج\nPageV02P001\nد\nPageV02P003\n"
+
+
+def test_revolume_leaves_real_volume_markers_alone():
+    from usul_corpus.arabic import revolume
+    t = "PageV04P721\nPageV04P722\nPageV01P001\n"   # OpenITI: volumes already explicit
+    assert revolume(t) == t
+
+
+def test_locate_reads_the_volume():
+    from usul_corpus.arabic import locate
+    t = "أول\nPageV01P009\nكلمة بعد البداية\nPageV01P001\n"
+    assert locate(t, "كلمة بعد البداية") == "v02:p001"
+
+
+def test_revolume_matches_shamela_on_al_irwa():
+    """Spot check against Shamela's own volume field (fld_part_top) for page ids 1, 500, 2000,
+    2927 of book 22592 (read 2026-10-09): 1, 2, 6, 8. Skipped where the witness is not cached."""
+    import re
+    from pathlib import Path
+    from usul_corpus.arabic import revolume
+    src = Path(__file__).parents[2] / ".cache/corpus/shamela-22592.txt"
+    if not src.exists():
+        pytest.skip("al-Irwāʾ not cached")
+    vols = [int(m.group(1)) for m in re.finditer(r"PageV(\d+)P\d+", revolume(src.read_text(encoding="utf-8")))]
+    assert [vols[i - 1] for i in (1, 500, 2000, 2927)] == [1, 2, 6, 8]

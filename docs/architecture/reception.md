@@ -63,5 +63,5 @@ Each count keeps its first three page locators, so a reviewer can spot-check pre
 What the counts measure, and what they don't:
 - Title counts miss citations by author only; the author pass covers those, but not mentions by honorific alone («قال الشيخ», «الحافظ») or by pronoun. A low count is not evidence that a work is unused; a high count is evidence that it is used.
 - Volume is skewed by genre. *al-Sharḥ al-Mumtiʿ* and *Irwāʾ* cite by title far more often than the fatāwā collections do.
-- The labelled dataset ([`labels.md`](labels.md)) measures the rules' precision against human review and is the route past their recall limits.
+- The labelled dataset ([`mentions.md`](mentions.md)) measures the rules' precision against human review and is the route past their recall limits.
 - Zero rows stay in the report on purpose: they show which forms need widening or which citer is missing. They are not a reason to drop a work.

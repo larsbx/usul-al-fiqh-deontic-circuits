@@ -1,0 +1,452 @@
+{
+  "note": "Each scale's rungs, verbatim from a pinned witness (letters-only match, page = closing marker), linked to the Lean constant that encodes them. Counts here are the H0 check of the roadmap's recalled counts.",
+  "scales": [
+    {
+      "id": "taqrib_maratib",
+      "work": "ibn_hajar.taqrib",
+      "claim": 12,
+      "items": [
+        {
+          "n": 1,
+          "ref": "src:openiti-taqrib-jk121/v01:p074",
+          "excerpt_ar": "فأولها : الصحابة : فأصرح بذلك لشرفهم .",
+          "lean": "Hadith.Martaba.sahabi"
+        },
+        {
+          "n": 2,
+          "ref": "src:openiti-taqrib-jk121/v01:p074",
+          "excerpt_ar": "الثانية : من أكد مدحه : إما : بأفعل : كأوثق الناس ، أو بتكرير الصفة لفظا : كثقة ثقة ، أو معنى : كثقة حافظ .",
+          "lean": "Hadith.Martaba.awthaq"
+        },
+        {
+          "n": 3,
+          "ref": "src:openiti-taqrib-jk121/v01:p074",
+          "excerpt_ar": "الثالثة : من أفرد بصفة ، كثقة ، أو متقن ، أو ثبت ، أو عدل .",
+          "lean": "Hadith.Martaba.thiqa"
+        },
+        {
+          "n": 4,
+          "ref": "src:openiti-taqrib-jk121/v01:p074",
+          "excerpt_ar": "الرابعة : من قصر عن درجة الثالثة قليلا ، وإليه الإشارة : بصدوق ، أو لا بأس به ، أو ليس به بأس .",
+          "lean": "Hadith.Martaba.saduq"
+        },
+        {
+          "n": 5,
+          "ref": "src:openiti-taqrib-jk121/v01:p074",
+          "excerpt_ar": "الخامسة : من قصر عن الرابعة قليلا ، وإليه الإشارة بصدوق سيء الحفظ ، أو صدوق يهم ، أو له أوهام ، أو يخطىء ، أو تغير بأخرة . ويلتحق بذلك من رمي بنوع من البدعة ، كالتشيع والقدر ، والنصب ، والإرجاء ، والتهجم ، مع بيان الداعية من غيره .",
+          "lean": "Hadith.Martaba.saduqYahim"
+        },
+        {
+          "n": 6,
+          "ref": "src:openiti-taqrib-jk121/v01:p074",
+          "excerpt_ar": "السادسة : من ليس له من الحديث إلا القليل ، ولم يثبت فيه ما يترك حديثه من أجله ، وإليه الإشارة بلفظ : مقبول ، حيث يتابع ، وإلا فلين الحديث .",
+          "lean": "Hadith.Martaba.maqbul"
+        },
+        {
+          "n": 7,
+          "ref": "src:openiti-taqrib-jk121/v01:p074",
+          "excerpt_ar": "السابعة : من روى عنه أكثر من واحد ولم يوثق ، وإليه الإشارة بلفظ : مستور ، أو مجهول الحال .",
+          "lean": "Hadith.Martaba.mastur"
+        },
+        {
+          "n": 8,
+          "ref": "src:openiti-taqrib-jk121/v01:p074",
+          "excerpt_ar": "الثامنة : من لم يوجد فيه توثيق لمعتبر ، ووجد فيه إطلاق الضعف ، ولو لم يفسر ، وإليه الإشارة بلفظ : ضعيف .",
+          "lean": "Hadith.Martaba.daif"
+        },
+        {
+          "n": 9,
+          "ref": "src:openiti-taqrib-jk121/v01:p074",
+          "excerpt_ar": "التاسعة : من لم يرو عنه غير واحد ، ولم يوثق ، وإليه الإشارة بلفظ : مجهول .",
+          "lean": "Hadith.Martaba.majhul"
+        },
+        {
+          "n": 10,
+          "ref": "src:openiti-taqrib-jk121/v01:p074",
+          "excerpt_ar": "العاشرة : من لم يوثق البتة ، وضعف مع ذلك بقادح ، وإليه الإشارة : بمتروك ، أو متروك الحديث ، أو واهي الحديث ، أو ساقط .",
+          "lean": "Hadith.Martaba.matruk"
+        },
+        {
+          "n": 11,
+          "ref": "src:openiti-taqrib-jk121/v01:p074",
+          "excerpt_ar": "الحادية عشرة : من اتهم بالكذب .",
+          "lean": "Hadith.Martaba.muttaham"
+        },
+        {
+          "n": 12,
+          "ref": "src:openiti-taqrib-jk121/v01:p075",
+          "excerpt_ar": "الثانية عشرة : من أطلق عليه اسم الكذب ، والوضع .",
+          "lean": "Hadith.Martaba.kadhdhab"
+        }
+      ]
+    },
+    {
+      "id": "tarif_tiers",
+      "work": "ibn_hajar.tarif",
+      "claim": 5,
+      "items": [
+        {
+          "n": 1,
+          "ref": "src:openiti-tarif-shamela1186/v01:p013",
+          "excerpt_ar": "الاولى من لم يوصف بذلك الا نادرا كيحيى بن سعيد الانصاري",
+          "lean": "Hadith.Tier.t1"
+        },
+        {
+          "n": 2,
+          "ref": "src:openiti-tarif-shamela1186/v01:p013",
+          "excerpt_ar": "الثانية من احتمل الائمة تدليسه وأخرجوا له في الصحيح لامامته وقلة تدليسه في جنب ما روى كالثوري أو كان لا يدلس الا عن ثقة كإبن عيينة",
+          "lean": "Hadith.Tier.t2"
+        },
+        {
+          "n": 3,
+          "ref": "src:openiti-tarif-shamela1186/v01:p013",
+          "excerpt_ar": "الثالثة من أكثر من التدليس فلم يحتج الائمة من أحاديثهم الا بما صرحوا فيه بالسماع ومنهم من رد حديثهم مطلقا ومنهم من قبلهم كأبي الزبير المكي",
+          "lean": "Hadith.Tier.t3"
+        },
+        {
+          "n": 4,
+          "ref": "src:openiti-tarif-shamela1186/v01:p014",
+          "excerpt_ar": "الرابعة من اتفق على أنه لا يحتج بشئ من حديثهم الا بما صرحوا فيه بالسماع لكثرة تدليسهم على الضعفاء والمجاهيل كبقية بن الوليد",
+          "lean": "Hadith.Tier.t4"
+        },
+        {
+          "n": 5,
+          "ref": "src:openiti-tarif-shamela1186/v01:p014",
+          "excerpt_ar": "الخامسة من ضعف بأمر آخر سوى التدليس فحديثهم مردود ولو صرحوا بالسماع الا أن يوثق من كان ضعفه يسيرا كابن لهيعة",
+          "lean": "Hadith.Tier.t5"
+        }
+      ]
+    },
+    {
+      "id": "tamam_qawaid",
+      "work": "albani.tamam_minna",
+      "claim": 15,
+      "items": [
+        {
+          "n": 1,
+          "ref": "src:shamela-11122/v01:p015",
+          "excerpt_ar": "القاعدة الأولى رد الحديث الشاذ",
+          "kind": "defeater",
+          "lean": "Hadith.judge",
+          "note": "shudhūdh attacks the lift (and a chain): judged by mukhālafa of the awlā, a qarīna"
+        },
+        {
+          "n": 2,
+          "ref": "src:shamela-11122/v01:p017",
+          "excerpt_ar": "القاعدة الثانية رد الحديث المضطرب",
+          "kind": "defeater",
+          "lean": "Hadith.judge",
+          "note": "iḍṭirāb attacks unless one riwāya is preferred (then the preferred one stands)"
+        },
+        {
+          "n": 3,
+          "ref": "src:shamela-11122/v01:p018",
+          "excerpt_ar": "القاعدة الثالثة رد الحديث المدلس",
+          "kind": "valuation",
+          "lean": "Hadith.acceptsTadlis",
+          "note": "ʿanʿana of a mudallis is not accepted without taṣrīḥ; tier tolerance is the Policy parameter"
+        },
+        {
+          "n": 4,
+          "ref": "src:shamela-11122/v01:p019",
+          "excerpt_ar": "القاعدة الرابعة رد حديث المجهول",
+          "kind": "valuation",
+          "lean": "Hadith.Martaba.majhul",
+          "note": "majhūl al-ʿayn and majhūl al-ḥāl / mastūr: both in the iʿtibār band"
+        },
+        {
+          "n": 5,
+          "ref": "src:shamela-11122/v01:p020",
+          "excerpt_ar": "القاعدة الخامسة عدم الاعتماد على توثيق ابن حبان",
+          "kind": "valuation",
+          "lean": "Hadith.JarhTadil.not_counting_ignored",
+          "note": "a critic's tasāhul discounts his tawthīq: a statement from a critic not relied on for it counts for nothing (Hadith.JarhTadil)"
+        },
+        {
+          "n": 6,
+          "ref": "src:shamela-11122/v01:p026",
+          "excerpt_ar": "القاعدة السادسة قولهم: رجاله رجال الصحيح ليس تصحيحا للحديث",
+          "kind": "guard",
+          "note": "narrator grades give the prima-facie verdict only; ʿilla and shudhūdh remain (roadmap §0.1.2)"
+        },
+        {
+          "n": 7,
+          "ref": "src:shamela-11122/v01:p027",
+          "excerpt_ar": "القاعدة السابعة عدم الاعتماد على سكوت أبي داود",
+          "kind": "guard",
+          "note": "a compiler's silence is not a verdict"
+        },
+        {
+          "n": 8,
+          "ref": "src:shamela-11122/v01:p028",
+          "excerpt_ar": "القاعدة الثامنة رموز السيوطي في \"الجامع الصغير\" لا يوثق بها",
+          "kind": "guard",
+          "note": "a compiler's symbol is not a verdict"
+        },
+        {
+          "n": 9,
+          "ref": "src:shamela-11122/v01:p030",
+          "excerpt_ar": "القاعدة التاسعة سكوت المنذري على الحديث في \"الترغيب\" ليس تقوية له",
+          "kind": "guard",
+          "note": "a compiler's silence is not a verdict"
+        },
+        {
+          "n": 10,
+          "ref": "src:shamela-11122/v01:p031",
+          "excerpt_ar": "القاعدة العاشرة تقوية الحديث بكثرة الطرق ليس على إطلاقه",
+          "kind": "guard",
+          "lean": "Hadith.liftable_cons_shadid",
+          "note": "only weakness from sūʾ al-ḥifẓ is repaired; tuhma in ṣidq or dīn is not (the shadīd band)"
+        },
+        {
+          "n": 11,
+          "ref": "src:shamela-11122/v01:p032",
+          "excerpt_ar": "القاعدة الحادية عشرة لا يجوز ذكر الحديث الضعيف إلا مع بيان ضعفه",
+          "kind": "presentation",
+          "note": "a duty on citing, outside the calculus"
+        },
+        {
+          "n": 12,
+          "ref": "src:shamela-11122/v01:p034",
+          "excerpt_ar": "القاعدة الثانية عشرة ترك العمل بالحديث الضعيف في فضائل الأعمال",
+          "kind": "seam",
+          "lean": "Hadith.Verdict.hujja_iff_yaqin",
+          "note": "one gate for aḥkām and faḍāʾil: only ḥujja verdicts become dalīl"
+        },
+        {
+          "n": 13,
+          "ref": "src:shamela-11122/v01:p039",
+          "excerpt_ar": "القاعدة الثالثة عشرة لا يقال في الحديث الضعيف: قال صلى الله عليه وسلم أو: ورد عنه ونحو ذلك",
+          "kind": "presentation",
+          "note": "ṣīghat al-jazm is reserved for what is established"
+        },
+        {
+          "n": 14,
+          "ref": "src:shamela-11122/v01:p040",
+          "excerpt_ar": "القاعدة الرابعة عشرة وجوب العمل بالحديث الصحيح وإن لم يعمل به أحد",
+          "kind": "seam",
+          "note": "ḥujja does not depend on ʿamal; no ʿamal-based defeater at the seam (H7)"
+        },
+        {
+          "n": 15,
+          "ref": "src:shamela-11122/v01:p041",
+          "excerpt_ar": "القاعدة الخامسة عشرة أمر الشارع للواحد أمر لجميع أفراد الأمة",
+          "kind": "seam",
+          "note": "ʿumūm al-khiṭāb: an uṣūl rule, handed to the Ḥanbalī kernel (Usul.Dalala)"
+        }
+      ]
+    },
+    {
+      "id": "nukhba_khabar",
+      "work": "ibn_hajar.nukhba",
+      "claim": 4,
+      "items": [
+        {
+          "n": 1,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p721",
+          "excerpt_ar": "فالأول: المتواتر المفيد للعلم اليقيني بشروطه",
+          "lean": "Hadith.Nukhba.Kathra.mutawatir"
+        },
+        {
+          "n": 2,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p721",
+          "excerpt_ar": "والثاني: المشهور وهو المستفيض على رأي",
+          "lean": "Hadith.Nukhba.Kathra.mashhur"
+        },
+        {
+          "n": 3,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p721",
+          "excerpt_ar": "والثالث: العزيز، وليس شرطا للصحيح خلافا لمن زعمه",
+          "lean": "Hadith.Nukhba.Kathra.aziz"
+        },
+        {
+          "n": 4,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p721",
+          "excerpt_ar": "والرابع: الغريب",
+          "lean": "Hadith.Nukhba.Kathra.gharib"
+        }
+      ]
+    },
+    {
+      "id": "nukhba_saqt",
+      "work": "ibn_hajar.nukhba",
+      "claim": 4,
+      "items": [
+        {
+          "n": 1,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p722",
+          "excerpt_ar": "فالأول: المعلق",
+          "lean": "Hadith.Nukhba.SaqtName.muallaq"
+        },
+        {
+          "n": 2,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p722",
+          "excerpt_ar": "والثاني: هو المرسل",
+          "lean": "Hadith.Nukhba.SaqtName.mursal"
+        },
+        {
+          "n": 3,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p722",
+          "excerpt_ar": "والثالث: إن كان باثنين فصاعدا مع التوالي فهو المعضل",
+          "lean": "Hadith.Nukhba.SaqtName.muadal"
+        },
+        {
+          "n": 4,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p722",
+          "excerpt_ar": "وإلا فالمنقطع",
+          "lean": "Hadith.Nukhba.SaqtName.munqati"
+        }
+      ]
+    },
+    {
+      "id": "nukhba_taan",
+      "work": "ibn_hajar.nukhba",
+      "claim": 10,
+      "items": [
+        {
+          "n": 1,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "إما أن يكون لكذب الراوي",
+          "lean": "Hadith.Nukhba.Taan.kadhib"
+        },
+        {
+          "n": 2,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو تهمته بذلك",
+          "lean": "Hadith.Nukhba.Taan.tuhma"
+        },
+        {
+          "n": 3,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو فحش غلطه",
+          "lean": "Hadith.Nukhba.Taan.fuhshGhalat"
+        },
+        {
+          "n": 4,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو غفلته",
+          "lean": "Hadith.Nukhba.Taan.ghafla"
+        },
+        {
+          "n": 5,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو فسقه",
+          "lean": "Hadith.Nukhba.Taan.fisq"
+        },
+        {
+          "n": 6,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو وهمه",
+          "lean": "Hadith.Nukhba.Taan.wahm"
+        },
+        {
+          "n": 7,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو مخالفته",
+          "lean": "Hadith.Nukhba.Taan.mukhalafa"
+        },
+        {
+          "n": 8,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو جهالته",
+          "lean": "Hadith.Nukhba.Taan.jahala"
+        },
+        {
+          "n": 9,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو بدعته",
+          "lean": "Hadith.Nukhba.Taan.bida"
+        },
+        {
+          "n": 10,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p723",
+          "excerpt_ar": "أو سوء حفظه",
+          "lean": "Hadith.Nukhba.Taan.suHifz"
+        }
+      ]
+    },
+    {
+      "id": "nukhba_jabr",
+      "work": "ibn_hajar.nukhba",
+      "claim": 2,
+      "items": [
+        {
+          "n": 1,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p724",
+          "excerpt_ar": "ومتى توبع سيئ الحفظ بمعتبر",
+          "lean": "Hadith.Nukhba.liftable"
+        },
+        {
+          "n": 2,
+          "ref": "src:openiti-nukhba-shamela5940/v04:p724",
+          "excerpt_ar": "وكذا المستور والمرسل، والمدلس: صار حديثهم حسنا لا لذاته، بل ب",
+          "lean": "Hadith.Nukhba.liftable_in_itibar"
+        }
+      ]
+    },
+    {
+      "id": "tankil_qawaid",
+      "work": "mualimi.tankil",
+      "claim": 9,
+      "items": [
+        {
+          "n": 1,
+          "ref": "src:shamela-12767/v01:p217",
+          "excerpt_ar": "١- رمي الراوي بالكذب في غير الحديث النبوي تقدم في الفصل الثالث قول مالك «لا تأخذ العلم من أربعة وخذ ممن سوى ذلك، لا تأخذ عن معلن بالسفه وإن كان أروى"
+        },
+        {
+          "n": 2,
+          "ref": "src:shamela-12767/v01:p221",
+          "excerpt_ar": "٢- التهمة بالكذب تقدم أن أشد موجبات ردُّ الراوي كذبه في الحديث النبوي، ثم تهمته بذلك، وفي درجتها كذبة في غير الحديث النبوي، فإذا كان في الرواية"
+        },
+        {
+          "n": 3,
+          "ref": "src:shamela-12767/v01:p228",
+          "excerpt_ar": "٣ - رواية المبتدع لا شبهة أن المبتدع إن خرج ببدعته عن الإسلام لم تقبل روايته لأن من شرط قبول الرواية"
+        },
+        {
+          "n": 4,
+          "ref": "src:shamela-12767/v01:p239",
+          "excerpt_ar": "٤- قدح الساخط ومدح المحب ونحو ذلك كلام العالم في غيره على",
+          "kind": "defeater",
+          "lean": "Hadith.JarhTadil.qarina_only_in_tarjih",
+          "note": "bias (sukhṭ, friendship) is a qarīna inside tarjīḥ only; words said in anger or as advice do not count"
+        },
+        {
+          "n": 5,
+          "ref": "src:shamela-12767/v01:p247",
+          "excerpt_ar": "٥- هل يشترط تفسير الجرح؟ إعلم أن الجرح على درجات الأولى المجمل وهو ما لم يبين فيه السبب كقول الجارح «ليس بعدل» «فاسق» ومنه على ذكره الخطيب في",
+          "kind": "valuation",
+          "lean": "Hadith.JarhTadil.jarh_alone_wounds",
+          "note": "an unexplained jarḥ wounds whoever has no taʿdīl, and forces tawaqquf against one who has"
+        },
+        {
+          "n": 6,
+          "ref": "src:shamela-12767/v01:p250",
+          "excerpt_ar": "٦- كيف البحث عن أحوال الرواة من أحب أن ينظر في كتب الجرح والتعديل عن حال رجل وقع في سند، فعليه أن يراعي"
+        },
+        {
+          "n": 7,
+          "ref": "src:shamela-12767/v01:p262",
+          "excerpt_ar": "٧- إذا اجتمع جرح وتعديل فبأيهما يعمل؟ قد ينقل في راو جرح وتعديل ولكننا إذا بحثنا بمقتضى القاعدة السابقة سقط أحدهما أو تبين أنه إنما أريد به ما لا",
+          "kind": "valuation",
+          "lean": "Hadith.JarhTadil.qati_jarh_wins",
+          "note": "taʿdīl does not win by default; the side with the more remote error does; an established jarḥ wins «وإن كثر المعدلون»"
+        },
+        {
+          "n": 8,
+          "ref": "src:shamela-12767/v01:p265",
+          "excerpt_ar": "٨- قولهم: من ثبتت عدالته لم يقبل فيه الجرح إلا ... قال البخاري في (جزء القراءة) : «والذي يذكر عن مالك في ابن إسحاق لا يكاد يبين.. ولو صح.. فلربما",
+          "kind": "valuation",
+          "lean": "Hadith.JarhTadil.qati_tadil_wins",
+          "note": "«من ثبتت عدالته»: established ʿadāla yields only to jarḥ that cannot be dismissed without imputing falsehood (against al-Subkī's blanket immunity)"
+        },
+        {
+          "n": 9,
+          "ref": "src:shamela-12767/v01:p268",
+          "excerpt_ar": "٩- مباحث في الاتصال والانقطاع المبحث الأول: في رواية الرجل بصيغة محتملة للسماع عمن عاصره ولم يثبت لقاؤه"
+        }
+      ]
+    }
+  ]
+}

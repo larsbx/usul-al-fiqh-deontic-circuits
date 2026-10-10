@@ -1,5 +1,5 @@
 {
-  "policy": "IslamQA.info (founded and supervised by Muḥammad Ṣāliḥ al-Munajjid). The site's own offline dumps — the files its app and website download for offline reading — fetched into .cache/corpus/fatawa and never committed. Answers are oracle labels for evaluation, not deontic authority.",
+  "policy": "IslamQA.info (founded and supervised by Muḥammad Ṣāliḥ al-Munajjid). The site's own offline dumps — the files its app and website download for offline reading — committed under data/islamqa via Git LFS because this repository is private; © IslamQA, all rights reserved, so it must not be made public. Answers are oracle labels for evaluation, not deontic authority.",
   "dump": {
     "base": "https://files.zadapps.info/m.islamqa.info",
     "manifest": "dumps/manifest.json",

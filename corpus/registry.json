@@ -3135,7 +3135,7 @@
     {
       "id": "albani.irwa",
       "title_ar": "إرواء الغليل في تخريج أحاديث منار السبيل",
-      "title_tr": "Irwāʾ al-Ghalīl",
+      "title_tr": "Irwāʾ al-Ghalīl fī Takhrīj Aḥādīth Manār al-Sabīl",
       "author": {
         "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
         "death_ah": 1420
@@ -3145,6 +3145,8 @@
       ],
       "kernel": false,
       "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "note": "base text is Ibn Ḍūyān's Ḥanbalī Manār al-Sabīl: the join with the uṣūl track (H8)",
       "witnesses": [
         {
           "id": "shamela-22592",
@@ -3164,22 +3166,25 @@
     {
       "id": "albani.tamam_minna",
       "title_ar": "تمام المنة في التعليق على فقه السنة",
-      "title_tr": "Tamām al-Minna",
+      "title_tr": "Tamām al-Minna fī al-Taʿlīq ʿalā Fiqh al-Sunna",
       "author": {
         "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
         "death_ah": 1420
       },
       "layers": [
+        "axioms",
         "tests"
       ],
-      "kernel": false,
+      "kernel": true,
       "rights": "modern_cache_only",
+      "track": "albani_hadith",
       "witnesses": [
         {
           "id": "shamela-11122",
           "kind": "shamela",
           "book_id": 11122,
-          "edition": "Shamela 11122"
+          "edition": "Shamela 11122; the 15 qawāʿid of the muqaddima are pp. 15–41",
+          "fetch": "on_demand"
         }
       ],
       "status": "located",
@@ -3244,6 +3249,543 @@
         "genre": "ahkam_hadith",
         "scholar": "sadi"
       }
+    },
+    {
+      "id": "ibn_hajar.nuzha",
+      "title_ar": "نزهة النظر في توضيح نخبة الفكر",
+      "title_tr": "Nuzhat al-Naẓar fī Tawḍīḥ Nukhbat al-Fikar",
+      "author": {
+        "name_tr": "Ibn Ḥajar al-ʿAsqalānī",
+        "death_ah": 852
+      },
+      "layers": [
+        "signature"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "openiti-nuzha-shamela1565",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.NuzhatNazar/0852IbnHajarCasqalani.NuzhatNazar.Shamela0001565-ara1",
+          "edition": "Shamela 1565, Maṭbaʿat al-Ṣabāḥ, Damascus, 3rd ed., 1421/2000"
+        },
+        {
+          "id": "openiti-nuzha-shamela12115",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.NuzhatNazar/0852IbnHajarCasqalani.NuzhatNazar.Shamela0012115-ara1",
+          "edition": "Shamela 12115, ed. ʿAbd Allāh al-Ruḥaylī, Riyadh, 1422"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_hajar.nukhba",
+      "title_ar": "نخبة الفكر في مصطلح أهل الأثر",
+      "title_tr": "Nukhbat al-Fikar",
+      "author": {
+        "name_tr": "Ibn Ḥajar al-ʿAsqalānī",
+        "death_ah": 852
+      },
+      "layers": [
+        "signature"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "openiti-nukhba-shamela5940",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.NukhbatFikar/0852IbnHajarCasqalani.NukhbatFikar.Shamela0005940-ara1",
+          "edition": "Shamela 5940, printed with Subul al-Salām, Dār al-Ḥadīth, 5th ed., 1418/1997"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_hajar.nukat",
+      "title_ar": "النكت على كتاب ابن الصلاح",
+      "title_tr": "al-Nukat ʿalā Kitāb Ibn al-Ṣalāḥ",
+      "author": {
+        "name_tr": "Ibn Ḥajar al-ʿAsqalānī",
+        "death_ah": 852
+      },
+      "layers": [
+        "signature"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "openiti-nukat-shamela8316",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.NukatCalaIbnSalah/0852IbnHajarCasqalani.NukatCalaIbnSalah.Shamela0008316-ara1",
+          "edition": "Shamela 8316, ed. Rabīʿ al-Madkhalī, Islamic University of Madina, 1404/1984"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_salah.muqaddima",
+      "title_ar": "معرفة أنواع علوم الحديث (مقدمة ابن الصلاح)",
+      "title_tr": "Maʿrifat Anwāʿ ʿUlūm al-Ḥadīth (al-Muqaddima)",
+      "author": {
+        "name_tr": "Ibn al-Ṣalāḥ al-Shahrazūrī",
+        "death_ah": 643
+      },
+      "layers": [
+        "signature"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "openiti-ibn-salah-shamela22870",
+          "kind": "openiti",
+          "repo": "0650AH",
+          "commit": "287c0cc31845e7f63afb4c0e3c776fc13b45f00f",
+          "path": "data/0643IbnSalahShahrazuri/0643IbnSalahShahrazuri.MuqaddimatCulumHadith/0643IbnSalahShahrazuri.MuqaddimatCulumHadith.Shamela0022870-ara1",
+          "edition": "Shamela 22870, ed. Nūr al-Dīn ʿItr, Dār al-Fikr"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "dhahabi.muqiza",
+      "title_ar": "الموقظة في علم مصطلح الحديث",
+      "title_tr": "al-Mūqiẓa fī ʿIlm Muṣṭalaḥ al-Ḥadīth",
+      "author": {
+        "name_tr": "Shams al-Dīn al-Dhahabī",
+        "death_ah": 748
+      },
+      "layers": [
+        "signature"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "openiti-muqiza-shamela8195",
+          "kind": "openiti",
+          "repo": "0750AH",
+          "commit": "7c9c84d9f98581470aa2b7f8bee00ae285c5c707",
+          "path": "data/0748Dhahabi/0748Dhahabi.MuqizaFiCilmMustalahHadith/0748Dhahabi.MuqizaFiCilmMustalahHadith.Shamela0008195-ara1",
+          "edition": "Shamela 8195, ed. Abū Ghudda, Maktab al-Maṭbūʿāt al-Islāmiyya, Aleppo, 2nd ed., 1412"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "shakir.baith",
+      "title_ar": "الباعث الحثيث شرح اختصار علوم الحديث",
+      "title_tr": "al-Bāʿith al-Ḥathīth (Ibn Kathīr, Ikhtiṣār ʿUlūm al-Ḥadīth)",
+      "author": {
+        "name_tr": "Aḥmad Muḥammad Shākir",
+        "death_ah": 1377
+      },
+      "layers": [
+        "signature"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "note": "Ibn Kathīr's Ikhtiṣār with Shākir's sharḥ; the edition carrying al-Albānī's taʿlīqāt is not yet located",
+      "witnesses": [
+        {
+          "id": "openiti-baith-shamela21571",
+          "kind": "openiti",
+          "repo": "1400AH",
+          "commit": "6b4084ba42c8e0bd7c888a8c4b37c43ca771c322",
+          "path": "data/1377AhmadMuhammadShakir/1377AhmadMuhammadShakir.BacithHathith/1377AhmadMuhammadShakir.BacithHathith.Shamela0021571-ara1",
+          "edition": "Shamela 21571, Dār al-Kutub al-ʿIlmiyya, 2nd ed."
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_hajar.taqrib",
+      "title_ar": "تقريب التهذيب",
+      "title_tr": "Taqrīb al-Tahdhīb",
+      "author": {
+        "name_tr": "Ibn Ḥajar al-ʿAsqalānī",
+        "death_ah": 852
+      },
+      "layers": [
+        "axioms"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "note": "the 12 marātib are Ibn Ḥajar's default narrator valuation (Hadith.Grade)",
+      "witnesses": [
+        {
+          "id": "openiti-taqrib-jk121",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.TaqribTahdhib/0852IbnHajarCasqalani.TaqribTahdhib.JK000121-ara1.completed",
+          "edition": "JK 121, ed. Muḥammad ʿAwwāma, Dār al-Rashīd; carries the muqaddima with the 12 marātib (v01:p074–p075)",
+          "fetch": "on_demand"
+        },
+        {
+          "id": "openiti-taqrib-shamela8609",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.TaqribTahdhib/0852IbnHajarCasqalani.TaqribTahdhib.Shamela0008609-ara1",
+          "edition": "Shamela 8609, ed. ʿAwwāma, Dār al-Rashīd, 1406/1986; lacks the muqaddima before the ṭabaqāt",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_hajar.tarif",
+      "title_ar": "تعريف أهل التقديس بمراتب الموصوفين بالتدليس (طبقات المدلسين)",
+      "title_tr": "Taʿrīf Ahl al-Taqdīs bi-Marātib al-Mawṣūfīn bi'l-Tadlīs",
+      "author": {
+        "name_tr": "Ibn Ḥajar al-ʿAsqalānī",
+        "death_ah": 852
+      },
+      "layers": [
+        "axioms"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "openiti-tarif-shamela1186",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.TacrifAhlTaqdis/0852IbnHajarCasqalani.TacrifAhlTaqdis.Shamela0001186BK1-ara1",
+          "edition": "Shamela 1186, ed. ʿĀṣim al-Qaryūtī, Maktabat al-Manār, Amman, 1403/1983"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "mualimi.tankil",
+      "title_ar": "التنكيل بما في تأنيب الكوثري من الأباطيل",
+      "title_tr": "al-Tankīl bi-mā fī Taʾnīb al-Kawtharī min al-Abāṭīl",
+      "author": {
+        "name_tr": "ʿAbd al-Raḥmān al-Muʿallimī",
+        "death_ah": 1386
+      },
+      "layers": [
+        "axioms"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-12767",
+          "kind": "shamela",
+          "book_id": 12767,
+          "edition": "Shamela 12767, al-Maktab al-Islāmī (with al-Albānī)",
+          "fetch": "on_demand"
+        },
+        {
+          "id": "shamela-337",
+          "kind": "shamela",
+          "book_id": 337,
+          "edition": "Shamela 337, within Āthār al-Muʿallimī",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.daifa",
+      "title_ar": "سلسلة الأحاديث الضعيفة والموضوعة وأثرها السيئ في الأمة",
+      "title_tr": "Silsilat al-Aḥādīth al-Ḍaʿīfa wa'l-Mawḍūʿa",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": true,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-12762",
+          "kind": "shamela",
+          "book_id": 12762,
+          "edition": "Shamela 12762",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.sahiha",
+      "title_ar": "سلسلة الأحاديث الصحيحة وشيء من فقهها وفوائدها",
+      "title_tr": "Silsilat al-Aḥādīth al-Ṣaḥīḥa",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-9442",
+          "kind": "shamela",
+          "book_id": 9442,
+          "edition": "Shamela 9442",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.sahih_abi_dawud",
+      "title_ar": "صحيح سنن أبي داود (الأم)",
+      "title_tr": "Ṣaḥīḥ Abī Dāwūd (al-Umm)",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-25881",
+          "kind": "shamela",
+          "book_id": 25881,
+          "edition": "Shamela 25881, Ghirās ed.",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.daif_abi_dawud",
+      "title_ar": "ضعيف أبي داود (الأم)",
+      "title_tr": "Ḍaʿīf Abī Dāwūd (al-Umm)",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-5914",
+          "kind": "shamela",
+          "book_id": 5914,
+          "edition": "Shamela 5914",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.hadith_hujja",
+      "title_ar": "الحديث حجة بنفسه في العقائد والأحكام",
+      "title_tr": "al-Ḥadīth Ḥujja bi-Nafsihi fī al-ʿAqāʾid wa'l-Aḥkām",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "inference"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-7607",
+          "kind": "shamela",
+          "book_id": 7607,
+          "edition": "Shamela 7607"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.manzila",
+      "title_ar": "منزلة السنة في الإسلام",
+      "title_tr": "Manzilat al-Sunna fī al-Islām",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "inference"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-705",
+          "kind": "shamela",
+          "book_id": 705,
+          "edition": "Shamela 705"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.sifat_salat",
+      "title_ar": "صفة صلاة النبي صلى الله عليه وسلم",
+      "title_tr": "Ṣifat Ṣalāt al-Nabī",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "inference"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-657",
+          "kind": "shamela",
+          "book_id": 657,
+          "edition": "Shamela 657 (the muqaddima is the method text)",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "shawkani.irshad",
+      "title_ar": "إرشاد الفحول إلى تحقيق الحق من علم الأصول",
+      "title_tr": "Irshād al-Fuḥūl",
+      "author": {
+        "name_tr": "Muḥammad b. ʿAlī al-Shawkānī",
+        "death_ah": 1250
+      },
+      "layers": [
+        "inference"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "openiti-irshad-shamela11437",
+          "kind": "openiti",
+          "repo": "1275AH",
+          "commit": "d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8",
+          "path": "data/1255Shawkani/1255Shawkani.IrshadFuhul/1255Shawkani.IrshadFuhul.Shamela0011437-ara1",
+          "edition": "Shamela 11437, ed. Aḥmad ʿAzw ʿInāya, Dār al-Kitāb al-ʿArabī, 1419/1999",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "siddiq_hasan.rawda_nadiyya",
+      "title_ar": "الدرر البهية والروضة الندية والتعليقات الرضية",
+      "title_tr": "al-Rawḍa al-Nadiyya (with al-Albānī's al-Taʿlīqāt al-Raḍiyya)",
+      "author": {
+        "name_tr": "Ṣiddīq Ḥasan Khān",
+        "death_ah": 1307
+      },
+      "layers": [
+        "inference"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-9293",
+          "kind": "shamela",
+          "book_id": 9293,
+          "edition": "Shamela 9293: al-Shawkānī's matn, Ṣiddīq Ḥasan Khān's sharḥ, al-Albānī's taʿlīqāt",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_rajab.sharh_ilal",
+      "title_ar": "شرح علل الترمذي",
+      "title_tr": "Sharḥ ʿIlal al-Tirmidhī",
+      "author": {
+        "name_tr": "Ibn Rajab al-Ḥanbalī",
+        "death_ah": 795
+      },
+      "layers": [
+        "inference"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "note": "proof theory: fixes which rules are defeasible (al-Albānī roadmap §0.1)",
+      "witnesses": [
+        {
+          "id": "openiti-sharh-ilal-shamela9552",
+          "kind": "openiti",
+          "repo": "0800AH",
+          "commit": "7b745ec7b83d6d4971f937364dbdec2fe0ba2a40",
+          "path": "data/0795IbnRajabHanbali/0795IbnRajabHanbali.SharhCilalTirmidhi/0795IbnRajabHanbali.SharhCilalTirmidhi.Shamela0009552-ara1",
+          "edition": "Shamela 9552, ed. Hammām Saʿīd, Maktabat al-Manār, Zarqāʾ, 1407/1987"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.mukhtasar_uluww",
+      "title_ar": "مختصر العلو للعلي العظيم",
+      "title_tr": "Mukhtaṣar al-ʿUluww",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "aqida"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-7318",
+          "kind": "shamela",
+          "book_id": 7318,
+          "edition": "Shamela 7318",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
     }
   ]
 }

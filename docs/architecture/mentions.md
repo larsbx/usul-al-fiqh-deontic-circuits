@@ -1,12 +1,12 @@
 # Citation-mention labels
 
-A dataset for training a small classifier that decides, for a mention of a title or author in a modern fatwā or sharḥ, **which registered work or author it names, or none**. The [reception](reception.md) matcher is the weak labeller; human review supplies gold labels. Code: `pipeline/usul_corpus/labels.py`. Row format: [`schemas/citation_mention.schema.json`](../../schemas/citation_mention.schema.json).
+A dataset for training a small classifier that decides, for a mention of a title or author in a modern fatwā or sharḥ, **which registered work or author it names, or none**. The [reception](reception.md) matcher is the weak labeller; human review supplies gold labels. Code: `pipeline/usul_corpus/mentions.py`. Row format: [`schemas/citation_mention.schema.json`](../../schemas/citation_mention.schema.json).
 
 ```text
-registry (cite_as, not) ─┐                      ┌─▶ .cache/labels/<task>.jsonl              all candidates
-authors.json ────────────┼─ labels ─ candidates ─┼─▶ .cache/labels/<task>.{train,dev,test}.jsonl  labelled rows + text
-cached citer witnesses ──┘     ▲   + rule labels └─▶ .cache/labels/review-<task>.jsonl       queue with choices
-corpus/labels/gold.jsonl ──────┘   + gold labels ──▶ corpus/labels/summary.json             counts only (committed)
+registry (cite_as, not) ─┐                      ┌─▶ .cache/mentions/<task>.jsonl              all candidates
+authors.json ────────────┼─ mentions ─ candidates ─┼─▶ .cache/mentions/<task>.{train,dev,test}.jsonl  labelled rows + text
+cached citer witnesses ──┘     ▲   + rule labels └─▶ .cache/mentions/review-<task>.jsonl       queue with choices
+corpus/mentions/gold.jsonl ──────┘   + gold labels ──▶ corpus/mentions/summary.json             counts only (committed)
 ```
 
 ## Tasks
@@ -39,14 +39,14 @@ The unlabelled `work` rows are mostly heads that are also ordinary words or othe
 ## Reviewing
 
 ```sh
-make labels                                    # or: python -m usul_corpus labels [--review N]
-# edit .cache/labels/review-<task>.jsonl: set "label" to one of the row's "choices"
-python -m usul_corpus labels --import .cache/labels/review-work.jsonl
+make mentions                                  # or: python -m usul_corpus mentions [--review N]
+# edit .cache/mentions/review-<task>.jsonl: set "label" to one of the row's "choices"
+python -m usul_corpus mentions --import .cache/mentions/review-work.jsonl
 ```
 
 - The review queue is unlabelled rows taken round-robin over surfaces (default 300 per task), so a rare title is not buried under 471 «الإجماع».
 - Each row lists its `choices`: the entries one of whose heads it is, plus `none`. `--import` rejects any other label and leaves rows with `label: null` alone.
-- Gold labels go to `corpus/labels/gold.jsonl` as `{id, label}` only, with no text. `summary.json` lists `gold_unmatched` ids if a lexicon or witness change orphans one.
+- Gold labels go to `corpus/mentions/gold.jsonl` as `{id, label}` only, with no text. `summary.json` lists `gold_unmatched` ids if a lexicon or witness change orphans one.
 
 Ids are `task:witness/locator@offset`, and the offset is into the page's normalised text. They stay stable while the witness is pinned (`lock.json`) and the normaliser is unchanged.
 
@@ -59,4 +59,4 @@ Ids are `task:witness/locator@offset`, and the offset is into the page's normali
 
 ## Rights
 
-The contexts come from modern texts (`modern_cache_only`), so they live in `.cache/labels` and are never committed, like the witnesses themselves. Gold labels and the summary carry ids and counts only.
+The contexts come from modern texts (`modern_cache_only`), so they live in `.cache/mentions` and are never committed, like the witnesses themselves. Gold labels and the summary carry ids and counts only.

@@ -29,6 +29,7 @@
           "items": {"enum": ["signature", "axioms", "inference", "tests", "dialectic", "aqida"]}
         },
         "kernel": {"type": "boolean"},
+        "track": {"enum": ["hanbali_usul", "albani_hadith"], "description": "formalization track; absent = hanbali_usul"},
         "rights": {"enum": ["public_domain_text", "modern_cache_only"]},
         "note": {"type": "string"},
         "witnesses": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/witness"}},

@@ -1,0 +1,220 @@
+{
+  "suite": "m8_rajab_tranche_9",
+  "status": "candidate",
+  "provenance": "M8 ninth tranche: every far record of Ibn Rajab's qawāʿid 36, 42, 43, 46, 49, 50 and 51, annotated against readings formalised from each qāʿida's own statement (Usul.Refinements). These qawāʿid are typological: each record is a division and is annotated for its leading ruling. Annotated by reading the full paragraph in the pinned witness; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q036.f000",
+      "encoder": "lease_after_authority",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "succeeds_lessor": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "ashhar, al-Qāḍī and his companions: stands",
+          "ruling": false
+        },
+        {
+          "who": "al-Mughnī's wajh: dissolved",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The first division, a lease by pure authority. If the authority passes to another, the lease stands, the second guardian taking the first's place. If it lapses entirely, as with the boy who comes of age while the term runs, two wujūh: «أشهرهما عدمه، وهو قول القاضي وأصحابه», since the guardian disposed for him bindingly, as in marrying him off or selling his land. al-Mughnī's wajh: dissolved, like the first waqf tier dying out."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q036.f001",
+      "encoder": "lease_after_authority",
+      "class": "derivable",
+      "facts": {
+        "succeeds_lessor": false
+      },
+      "expected": true,
+      "note": "The second division, a lease by ownership which then passes, led by the conqueror who takes by force: «فتنفسخ الإجارة لملكه المنافع الباقية منها» (unless the lessee is protected). Then the successor (heir, buyer, donee), who carries out the contracts; and the next waqf tier, where dissolution is «المذهب الصحيح» (al-Qāḍī's Khilāf, Ibn ʿAqīl), the tier taking from the wāqif."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q042.f000",
+      "encoder": "return_of_held_property",
+      "class": "derivable",
+      "facts": {
+        "held_by_consent": true,
+        "guaranteed": false
+      },
+      "expected": false,
+      "note": "Trusts held with the owner's consent (deposit, partnership, muḍāraba, agency while their contracts last): not due until he demands them."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q042.f001",
+      "encoder": "return_of_held_property",
+      "class": "derivable",
+      "facts": {
+        "held_by_consent": false,
+        "guaranteed": false
+      },
+      "expected": true,
+      "note": "Trusts held without the owners' consent (a found thing whose owner is known, the deposit passing to the depositee's heir, the cloth blown into his house): «فيجب المبادرة إلى ردها مع العلم بمستحقها والتمكن منه»; many aṣḥāb make the duty one of returning or informing (al-Mughnī, al-Muḥarrar)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q042.f002",
+      "encoder": "return_of_held_property",
+      "class": "derivable",
+      "facts": {
+        "held_by_consent": true,
+        "guaranteed": true
+      },
+      "expected": true,
+      "note": "Guaranteed things «فتجب المبادرة إلى الرد بكل حال»: the loan for use once its purpose is met (held by consent, yet guaranteed), the usurped, the thing taken under a void contract, and zakāt where it attaches to the property."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f000",
+      "encoder": "continued_holding",
+      "class": "derivable",
+      "facts": {
+        "withholds": false
+      },
+      "expected": false,
+      "note": "The first division, a binding contract transferring ownership not yet taken by its new owner: one who refuses delivery is a usurper; one offering it «فلا ضمان عليه على ظاهر المذهب», except for an undetermined thing such as a qafīz from a heap."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f001",
+      "encoder": "holding_after_contract_end",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "ended_by_holder": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "wajh (al-Mughnī's ẓāhir on the ṣadāq): liable where he caused the ending",
+          "ruling": true
+        },
+        {
+          "who": "Abū al-Khaṭṭāb, al-Kāfī: as the earlier guarantee (a distinct sale object not guaranteed «على الصحيح»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The second division, a contract ended or annulled after delivery, led by the sale annulled for a defect or an option: the wujūh for commutative contracts. Abū al-Khaṭṭāb and al-Kāfī: by the earlier guarantee, so a distinct sale object is not guaranteed «على الصحيح». The second wajh, the ẓāhir of al-Mughnī on the ṣadāq: liable where he caused the ending or shared in it («لأنه يسبب إلى جعل ملك غيره في يده»), not where the other ended it alone. The buyer returning for a defect ends it himself. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f002",
+      "encoder": "continued_holding",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "withholds": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-mashhūr: liable",
+          "ruling": true
+        },
+        {
+          "who": "wajh (al-Muqniʿ, al-Talkhīṣ): a trust",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The third division, coming to hand without his act (an heir holding the deceased's deposit): he may not keep it without informing the owner. Lost before he could return it: no liability. Lost after: «فالمشهور الضمان لتعديه بترك الرد مع إمكانه»; al-Muqniʿ's wajh, pointed to in al-Talkhīṣ: a trust, as with the leased thing after its term, which Ibn Rajab distinguishes."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q046.f000",
+      "encoder": "void_contract_concluded",
+      "class": "derivable",
+      "facts": {
+        "binding": false,
+        "pervasive": false
+      },
+      "expected": false,
+      "note": "Non-binding contracts (partnership, muḍāraba, agency): voiding them does not stop dispositions under the permission, but the contract lapses and is not named by its sound name except as void; al-Qāḍī's oath on a void partnership is the noted difficulty."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q046.f001",
+      "encoder": "void_contract_concluded",
+      "class": "derivable",
+      "facts": {
+        "binding": true,
+        "pervasive": true
+      },
+      "expected": true,
+      "note": "Binding contracts. One he cannot leave by word, iḥrām, is concluded; of those he can leave, those carrying a pervasive effect (nikāḥ and kitāba, with divorce and manumission) are concluded; the sale and the lease, «فالمعروف من المذهب أنه غير منعقد», with Abū al-Khaṭṭāb's takhrīj from nikāḥ. Annotated for its leading iḥrām."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q049.f000",
+      "encoder": "qabd_in_contracts",
+      "class": "derivable",
+      "facts": {
+        "qabd_completes": false
+      },
+      "expected": true,
+      "note": "Qabḍ as an effect of the contract (the binding sale, pledge, gift, ṣadāq, the khulʿ compensation): «فهذه العقود تلزم من غير قبض»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q049.f001",
+      "encoder": "qabd_in_contracts",
+      "class": "derivable",
+      "facts": {
+        "qabd_completes": true
+      },
+      "expected": false,
+      "note": "Qabḍ as part of the contract's completion: in salam, «فمتى تفرقا قبل قبض رأس ماله بطل», and so the ribawī exchange; the pledge, gift and waqf by riwāyas, the bequest by a wajh."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f000",
+      "encoder": "forced_acquisition_solvent",
+      "class": "derivable",
+      "facts": {
+        "necessity": true,
+        "shufa": false,
+        "solvent": false
+      },
+      "expected": true,
+      "note": "The starving man refused another's food takes it, guaranteed, whether or not he has its price with him, «لأن ضرره لا يندفع إلا بذلك»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f001",
+      "encoder": "forced_acquisition_solvent",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "necessity": false,
+        "shufa": true,
+        "solvent": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Ibn ʿAqīl, with Aḥmad's naṣṣ (Abū Ṭālib), Taqī al-Dīn: not without paying",
+          "ruling": false
+        },
+        {
+          "who": "wajh: owned, guaranteed in the dhimma",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The other legislated acquisitions to remove a harm (shufʿa, taking the planting and building of the borrower, lessee or usurper, valuing the share of a joint slave, the seller's annulment after receiving the price): two wujūh: not owned without paying (Ibn ʿAqīl; «ويشهد له نص أحمد» on the shufʿa lapsing when the money is long absent; Aḥmad's naṣṣ on the seller's annulment, Abū Ṭālib, chosen by Taqī al-Dīn), or owned, guaranteed in the dhimma. Ibn Rajab: «والضرر لا يزال بالضرر». Reconciled (jamʿ, solvency): on the shufʿa, the record's leading example, the madhhab has the solvent taker own the share by the demand, «إذا كان مليئا بالثمن» (al-Inṣāf: «وهو المذهب»; al-Iqnāʿ; Kashshāf). Ibn Rajab's own farq keeps the seller's annulment apart, since there «اجتمع له العوض والمعوض»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f000",
+      "encoder": "daman_without_qabd",
+      "class": "derivable",
+      "facts": {
+        "determined": true
+      },
+      "expected": true,
+      "note": "Pure commutative contracts: ḍamān passes with ownership once full possession is possible and the object is determined; an undetermined thing (a qafīz from a heap) needs qabḍ, with riwāyas on measuring or transport. Determined things enter the buyer's ḍamān «بالعقد في ظاهر المذهب», except fruit on the tree and what cannot be moved at once."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f001",
+      "encoder": "daman_without_qabd",
+      "class": "derivable",
+      "facts": {
+        "determined": true
+      },
+      "expected": true,
+      "note": "Contracts without exchange (ṣadaqa, gift, bequest): where ownership comes by the contract, a thing lost in the giver's hand without refusal is not on him, «وكلام الأصحاب يشهد لذلك»; the bequest after acceptance is the legatee's «من غير خلاف نعلمه» when he can take it, and before it two wujūh, the ẓāhir of Aḥmad and al-Khiraqī with the legatee."
+    }
+  ]
+}

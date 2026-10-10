@@ -1,0 +1,342 @@
+{
+  "note": "H8: al-Irwāʾ's verdicts on ḥadīths cited as dalīl in the uṣūl track's records. Candidates come from hadith.join_candidates (the quoted matn's prefix, or a shared run of content words); each is accepted or rejected in irwa_join_review.json. HadithTest/Seam.lean checks each verdict against the seam (Verdict.Hujja; decision D4) and that each cited qāʿida's Lean constants exist.",
+  "links": [
+    {
+      "matn_ar": "أأتوضأ من لحوم الغنم؟ قال إن شئت توضأ وإن شئت لا تتوضأ , قال أأتوضأ (١) من لحوم الإبل؟ قال: نعم توضأ من لحوم الإبل",
+      "irwa": [
+        [
+          118,
+          "صحيح"
+        ]
+      ],
+      "verdict": "sahih",
+      "hujja": true,
+      "records": [
+        "ibn_lahham.qawaid_fawaid.openiti_lahham_shamay34193.q045"
+      ],
+      "sadi_qawaid": [],
+      "lean": []
+    },
+    {
+      "matn_ar": "فى النفس المؤمنة مائة من الإبل",
+      "irwa": [
+        [
+          2248,
+          "صحيح"
+        ]
+      ],
+      "verdict": "sahih",
+      "hujja": true,
+      "records": [
+        "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q036"
+      ],
+      "sadi_qawaid": [],
+      "lean": []
+    },
+    {
+      "matn_ar": "أن النبى صلى الله عليه وسلم أعتق صفية وجعل عتقها صداقها",
+      "irwa": [
+        [
+          1856,
+          "صحيح"
+        ]
+      ],
+      "verdict": "sahih",
+      "hujja": true,
+      "records": [
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056"
+      ],
+      "sadi_qawaid": [],
+      "lean": []
+    },
+    {
+      "matn_ar": "عن الغلام شاتان مكافئتان , وعن الجارية شاة",
+      "irwa": [
+        [
+          1166,
+          "صحيح"
+        ]
+      ],
+      "verdict": "sahih",
+      "hujja": true,
+      "records": [
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147"
+      ],
+      "sadi_qawaid": [],
+      "lean": []
+    },
+    {
+      "matn_ar": "رأى رجلاً يصلى خلف الصف وحده فأمر أن يعيد",
+      "irwa": [
+        [
+          541,
+          "صحيح"
+        ]
+      ],
+      "verdict": "sahih",
+      "hujja": true,
+      "records": [
+        "ibn_uthaymin.manzuma.archive_manzuma_djvu.q071"
+      ],
+      "sadi_qawaid": [],
+      "lean": []
+    },
+    {
+      "matn_ar": "المسلمون على شروطهم",
+      "irwa": [
+        [
+          1303,
+          "صحيح"
+        ],
+        [
+          1313,
+          "صحيح"
+        ],
+        [
+          1391,
+          "صحيح"
+        ],
+        [
+          1890,
+          "صحيح"
+        ]
+      ],
+      "verdict": "sahih",
+      "hujja": true,
+      "records": [
+        "sadi.qawaid_jamia.archive_pdf1995.q022",
+        "sadi.qawaid_jamia.archive_pdf1995_tess.q022",
+        "sadi.tariq_wusul.archive_tariq_tess.q871"
+      ],
+      "sadi_qawaid": [
+        22
+      ],
+      "lean": [
+        "Usul.Sadi.Voids",
+        "Usul.Sadi.q22_valid_iff_preserves_prohibition"
+      ]
+    },
+    {
+      "matn_ar": "الصلح جائز بين المسلمين",
+      "irwa": [
+        [
+          1425,
+          "حسن"
+        ]
+      ],
+      "verdict": "hasan",
+      "hujja": true,
+      "records": [
+        "sadi.qawaid_jamia.archive_pdf1995.q022",
+        "sadi.qawaid_jamia.archive_pdf1995_tess.q022"
+      ],
+      "sadi_qawaid": [
+        22
+      ],
+      "lean": [
+        "Usul.Sadi.Voids",
+        "Usul.Sadi.q22_valid_iff_preserves_prohibition"
+      ]
+    },
+    {
+      "matn_ar": "من سبق إلى ما لم يسبق إليه أحد فهو له",
+      "irwa": [
+        [
+          1553,
+          "ضعيف"
+        ]
+      ],
+      "verdict": "daif",
+      "hujja": false,
+      "records": [
+        "sadi.qawaid_jamia.archive_pdf1995.q024",
+        "sadi.qawaid_jamia.archive_pdf1995_tess.q024"
+      ],
+      "sadi_qawaid": [
+        24
+      ],
+      "lean": [
+        "Usul.Muamalat.firstClaimant",
+        "Usul.Muamalat.q24_first_has_priority",
+        "Usul.Muamalat.q24_is_optimal",
+        "Usul.Seam.admitted",
+        "Usul.Seam.admitted_iff_yaqin",
+        "Usul.Seam.daif_not_admitted",
+        "Usul.Seam.mursalDaif_admits_only_hasan_up",
+        "Usul.Seam.q24_dalil_not_admitted"
+      ]
+    },
+    {
+      "matn_ar": "من سبق إلى ما لم يسبق إليه مسلم فهو أحق به",
+      "irwa": [
+        [
+          1555,
+          "ضعيف"
+        ]
+      ],
+      "verdict": "daif",
+      "hujja": false,
+      "records": [
+        "sadi.qawaid_jamia.archive_pdf1995.q024",
+        "sadi.qawaid_jamia.archive_pdf1995_tess.q024"
+      ],
+      "sadi_qawaid": [
+        24
+      ],
+      "lean": [
+        "Usul.Muamalat.firstClaimant",
+        "Usul.Muamalat.q24_first_has_priority",
+        "Usul.Muamalat.q24_is_optimal",
+        "Usul.Seam.admitted",
+        "Usul.Seam.admitted_iff_yaqin",
+        "Usul.Seam.daif_not_admitted",
+        "Usul.Seam.mursalDaif_admits_only_hasan_up",
+        "Usul.Seam.q24_dalil_not_admitted"
+      ]
+    },
+    {
+      "matn_ar": "من نذر أن يطيع الله فليطعه",
+      "irwa": [
+        [
+          967,
+          "صحيح"
+        ],
+        [
+          1140,
+          "صحيح"
+        ],
+        [
+          2596,
+          "صحيح"
+        ]
+      ],
+      "verdict": "sahih",
+      "hujja": true,
+      "records": [
+        "sadi.qawaid_jamia.archive_pdf1995.q047",
+        "sadi.qawaid_jamia.archive_pdf1995_tess.q047"
+      ],
+      "sadi_qawaid": [
+        47
+      ],
+      "lean": [
+        "Usul.Muamalat.obligationStatus",
+        "Usul.Muamalat.q47_vow_as_law",
+        "Usul.Muamalat.q47_ignores_source",
+        "Usul.Muamalat.q47_consequences"
+      ]
+    },
+    {
+      "matn_ar": "لا ضرر ولا ضرار",
+      "irwa": [
+        [
+          896,
+          "صحيح"
+        ],
+        [
+          1250,
+          null
+        ],
+        [
+          1404,
+          "صحيح"
+        ],
+        [
+          1432,
+          "صحيح"
+        ],
+        [
+          2653,
+          "صحيح"
+        ]
+      ],
+      "verdict": "sahih",
+      "hujja": true,
+      "records": [
+        "sadi.qawaid_jamia.archive_pdf1995_tess.i015"
+      ],
+      "sadi_qawaid": [],
+      "lean": []
+    },
+    {
+      "matn_ar": "إنما الأعمال بالنيات",
+      "irwa": [
+        [
+          22,
+          "صحيح , مشهور"
+        ],
+        [
+          87,
+          "صحيح"
+        ],
+        [
+          159,
+          "صحيح"
+        ],
+        [
+          216,
+          "صحيح"
+        ],
+        [
+          585,
+          "صحيح"
+        ],
+        [
+          606,
+          "صحيح"
+        ],
+        [
+          854,
+          "صحيح"
+        ],
+        [
+          975,
+          "صحيح"
+        ],
+        [
+          1063,
+          "صحيح"
+        ],
+        [
+          1087,
+          "صحيح"
+        ],
+        [
+          2572,
+          "صحيح"
+        ]
+      ],
+      "verdict": "sahih",
+      "hujja": true,
+      "records": [
+        "sadi.qawaid_jamia.archive_pdf1995_tess.q057"
+      ],
+      "sadi_qawaid": [
+        57
+      ],
+      "lean": [
+        "Usul.Kulliyyat.reading",
+        "Usul.Kulliyyat.q57_possible_intent_prevails",
+        "Usul.Kulliyyat.q57_impossible_intent_falls_back",
+        "Usul.Kulliyyat.q57_unknown_intent_literal",
+        "Usul.Kulliyyat.q57_is_priority"
+      ]
+    },
+    {
+      "matn_ar": "من عمل عملا ليس عليه أمرنا فهو رد",
+      "irwa": [
+        [
+          276,
+          "صحيح"
+        ]
+      ],
+      "verdict": "sahih",
+      "hujja": true,
+      "records": [
+        "sadi.tariq_wusul.archive_tariq_tess.q636"
+      ],
+      "sadi_qawaid": [],
+      "lean": []
+    }
+  ]
+}
