@@ -176,14 +176,14 @@ Every ikhtilāf farʿ off the marked madhhab side is run through the kernel's ow
 **Scope reconciliation.** Counts come from committed record IDs minus all existing annotations, not historical estimates. M4 now annotates 196 Ibn Rajab records under 14 qawāʿid, including nine `.f000` additions. PR #29's 1,129 segmented records minus those 196 and tranche 1's 26 left 907 records in 122 qawāʿid with cases. The old “869 in 146” mixed pre-opening counts with all unannotated qawāʿid, including those with no segmented case. PR #30 then added seven segmented records and annotated tranche 2's 25: 1,136 − 196 − 26 − 25 = 889, in 118 qawāʿid. Merged PR #32 then added the list-and-division segmentation and 21 candidate annotations. The unified tranche 3 below preserves those cases and PR #31's eight existing-record annotations, in one 29-record suite; current totals are generated below. Ibn al-Laḥḥām and the global report's totals are separate scopes.
 
 <!-- BEGIN GENERATED M8 SCOPE -->
-**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 372 annotated + **807 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 49 are fully annotated and **105 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
+**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 399 annotated + **780 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 54 are fully annotated and **100 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
 
 The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
 
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.793 | 0 | 0 |
-| All annotation suites | 399 | 0.985 | 0.668 | 0 | 6 |
+| All annotation suites | 426 | 0.986 | 0.675 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -361,6 +361,24 @@ Results on the tranche:
 - **Reconciliation:** the 12 new apparent contradictions entered the ledger (`corpus/reconciliation/`), with their later taṣḥīḥ imported as for the earlier tranches. Four became jamʿ, each on a farq the later works cite: following (3.f000, `excessObligatoryIn`), the kaffāra at its wujūb (5.f001, `advancedSufficesIn`), and no duty to learn the Arabic for an act not itself due (10.f004, f005, `otherTongueValidIn`). The tranche's madhhab coverage rises to 16/24 = 0.667.
 - **Segmentation finding:** 9.f000 and 9.f001 each run several «(ومنها)» examples together, because the inline examples sit mid-line (the known 9 edge). Each is annotated for its leading example.
 
+**Tranche 8 (qawāʿid 4, 11, 14, 15, 19; 27 furūʿ).** Read from each qāʿida's own statement (`corpus/takhrij/rajab_m8_tranche8_furu.json`):
+
+| Qāʿida | Reading | Link to the bank |
+|---|---|---|
+| 4: advancing worship | `advanceAllowed`: once its cause exists («ويجوز تقديمها بعد سبب الوجوب وقبل الوجوب») | qāʿida 5 (the advanced act's sufficiency) |
+| 11: the voluntary before the obligatory of its kind | `naflValid`: not while the obligatory is narrow («لم تصح على الصحيح») | new |
+| 14: a cause from one of two men, not known which («في المسألة خلاف») | `attachTo`: both where it costs no right («لا ضرر فيه»), else neither | new |
+| 15: an aṣl's corollary against another aṣl | `eachOnItsAsl` («لم يلتفت إلى ذلك اللازم على الصحيح») | new |
+| 19: ability and the dhimma | `settlesInDhimma`: ability is no condition, except for making up («على ظاهر المذهب») | new |
+
+Results on the tranche:
+- **15 derivable, 12 ikhtilāf (6 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 27/27 = 1.000, madhhab coverage 21/27 = 0.778.
+- **What the cases say about the readings:**
+  - **Qāʿida 4 is wholly derivable.**
+  - **Qāʿida 11 has a carve-out for zakāt.** A voluntary ṣadaqa is valid before an immediate zakāt («فقال الأصحاب يصح»), so the narrowness test belongs to pure acts of worship of one kind.
+  - **Qāʿida 14's raven oaths repeat Ibn Rajab's qāʿida 160 under another name.** There Aḥmad's naṣṣ of abstention outranks every wajh.
+- **Reconciliation:** the 6 new apparent contradictions entered the ledger, with their later taṣḥīḥ imported as before.
+
 **Coverage trend:**
 
 | Stage | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
@@ -387,6 +405,8 @@ Results on the tranche:
 | M8 tranche 7 alone | 24 | 1.000 | 0.500 | 0 | 0 |
 | All, after tranche 7 | 399 | 0.985 | 0.658 | 0 | 6 |
 | All, after tranche 7's reconciliation | 399 | 0.985 | 0.668 | 0 | 6 |
+| M8 tranche 8 alone | 27 | 1.000 | 0.778 | 0 | 0 |
+| All, after tranche 8 | 426 | 0.986 | 0.675 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 

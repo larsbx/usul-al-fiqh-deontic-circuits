@@ -676,6 +676,53 @@
       ]
     },
     {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f001",
+      "grades": [
+        "ashab",
+        [
+          "ashab",
+          "qiyas"
+        ],
+        [
+          "takhrij",
+          "zahir"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Qāḍī in al-Jāmiʿ calls the lot qiyās al-madhhab; Taqī al-Dīn reads Aḥmad's words (Ṣāliḥ) as pointing to both falling; abstention is by Aḥmad's naṣṣ (ʿAbd Allāh)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f002",
+      "grades": [
+        "wajh",
+        "wajh",
+        "qiyas"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "«وقياس المنصوص ههنا أن يكف كل واحد عن وطء أمته»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f004",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null
+    },
+    {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f000",
       "grades": [
         "nass",
@@ -1236,6 +1283,32 @@
           "note": "Sharḥ al-Muntahā confirms the mutual sufficiency (position 0)."
         }
       ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f001",
+      "grades": [
+        "ashab",
+        [
+          "ashab",
+          "zahir"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Majd reports the ẓāhir of Aḥmad's words (Ṣāliḥ)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f005",
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two riwāyas; «أظهر» is Ibn Rajab's."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f000",

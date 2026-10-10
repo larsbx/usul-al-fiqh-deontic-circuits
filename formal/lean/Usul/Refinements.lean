@@ -841,6 +841,45 @@ criterion: forms that are substitutes for each other are not combined, «ولا 
 
 def combineForms (substitutes : Bool) : Bool := !substitutes
 
+/-! ## M8 tranche 8: qawāʿid 4, 11, 14, 15, 19 -/
+
+/-! ### Qāʿida 4: advancing worship
+
+«لا يجوز تقديمها على سبب وجوبها ويجوز تقديمها بعد سبب الوجوب وقبل الوجوب». -/
+
+def advanceAllowed (causePresent : Bool) : Bool := causePresent
+
+/-! ### Qāʿida 11: the voluntary before the obligatory of its kind
+
+«فإن كانت موسعة جاز التنفل قبل أدائها … وإن كانت مضيقة لم تصح على الصحيح». -/
+
+def naflValid (narrow : Bool) : Bool := !narrow
+
+/-! ### Qāʿida 14: a cause from one of two men, not known which
+
+The reading takes Ibn Rajab's own farq: binding both is right where it costs no right («بخلاف إيجاب
+الطهارة عليهما فإنه لا ضرر فيه»), and wrong where it would cut a right («إجبار الإنسان على قطع
+ملكه بغير حق»), each then building on the certainty of what is his. -/
+
+inductive Attach where
+  | neither | each | lot | abstain
+  deriving DecidableEq, Repr
+
+def attachTo (harmless : Bool) : Attach := if harmless then .each else .neither
+
+/-! ### Qāʿida 15: corollaries of one aṣl against another
+
+«لم يلتفت إلى ذلك اللازم على الصحيح»: each matter stays on its own aṣl. -/
+
+def eachOnItsAsl (separateMatters : Bool) : Bool := separateMatters
+
+/-! ### Qāʿida 19: ability to perform and the dhimma
+
+«إمكان الأداء ليس بشرط في استقرار الواجبات بالشرع في الذمة على ظاهر المذهب»; for making up
+(qaḍāʾ) «فاعتبر الأصحاب له إمكان الأداء». -/
+
+def settlesInDhimma (makingUp : Bool) : Bool := !makingUp
+
 /-! ## Reconciliation refinements (`corpus/reconciliation/ledger.json`)
 
 Each is a jamʿ: a farq the later works cite, conservative over the earlier reading where the farq

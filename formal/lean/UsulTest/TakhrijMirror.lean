@@ -296,6 +296,16 @@ import Usul
 #guard (Usul.Refinements.otherTongueValid true true) == true
 #guard (Usul.Refinements.combineForms false) == true
 #guard (Usul.Refinements.combineForms true) == false
+#guard (Usul.Refinements.advanceAllowed false) == false
+#guard (Usul.Refinements.advanceAllowed true) == true
+#guard (Usul.Refinements.naflValid false) == true
+#guard (Usul.Refinements.naflValid true) == false
+#guard (Usul.Refinements.attachTo false) == .neither
+#guard (Usul.Refinements.attachTo true) == .each
+#guard (Usul.Refinements.eachOnItsAsl false) == false
+#guard (Usul.Refinements.eachOnItsAsl true) == true
+#guard (Usul.Refinements.settlesInDhimma false) == true
+#guard (Usul.Refinements.settlesInDhimma true) == false
 #guard (Usul.Refinements.excessObligatoryIn false false false) == false
 #guard (Usul.Refinements.excessObligatoryIn false false true) == true
 #guard (Usul.Refinements.excessObligatoryIn false true false) == true
