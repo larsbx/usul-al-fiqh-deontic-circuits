@@ -38,6 +38,7 @@ mutants=(
   "jam_side|tanaqud_oracle.pl|s/( qayd(P, C) -> first(P, C, V0) ; second(P, C, V0) )/( qayd(P, C) -> second(P, C, V0) ; first(P, C, V0) )/"
   "furuq_daif_alike|furuq_oracle.pl|s/^grade(daif,    apart, alike)\./grade(daif,    apart, apart)./"
   "furuq_jam_daif|furuq_oracle.pl|s/^grade(jamDaif, alike, apart)\./grade(jamDaif, apart, apart)./"
+  "furuq_reported|furuq_oracle.pl|s/^grade(reported, apart, apart)\./grade(reported, apart, alike)./"
 )
 
 fail=0

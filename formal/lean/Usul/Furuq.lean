@@ -14,7 +14,9 @@ al-Saʿdī then grades the furūq of the fuqahāʾ, item by item
 
 * `sahih`: they are ruled apart, and a meaningful feature separates them;
 * `daif`: they are ruled apart, but nothing meaningful separates them, so «الحكم فيهما واحد»;
-* `jamDaif`: they are ruled alike, but a naṣṣ or a meaning separates them (e.g. «ضعف عدم التفريق»).
+* `jamDaif`: they are ruled alike, but a naṣṣ or a meaning separates them (e.g. «ضعف عدم التفريق»);
+* `reported`: he reports the fuqahāʾ's farq («وفرّقوا», «ومن الفروق عند الأصحاب») without grading it,
+  so his ruling is recorded as theirs; nothing is attributed to him beyond the report.
 
 This module states the aṣl and works out the items whose reason is already a theorem of the bank.
 -/
@@ -25,21 +27,22 @@ open Usul.Schema Usul.Qiyas
 
 /-- al-Saʿdī's grade of a farq. -/
 inductive Grade where
-  | sahih | daif | jamDaif
+  | sahih | daif | jamDaif | reported
   deriving DecidableEq, Repr
 
 /-- What his grade says about the two masāʾil: ruled apart, or alike. -/
 def Grade.apart : Grade → Bool
-  | .sahih | .jamDaif => true
+  | .sahih | .jamDaif | .reported => true
   | .daif => false
 
 /-- How the fuqahāʾ he answers rule them: apart, unless he faults them for ruling alike. -/
 def Grade.madhhab : Grade → Bool
-  | .sahih | .daif => true
+  | .sahih | .daif | .reported => true
   | .jamDaif => false
 
-/-- He confirms the madhhab exactly on the sound furūq; every weak grade overturns it. -/
-theorem confirms_iff_sahih (g : Grade) : g.apart = g.madhhab ↔ g = .sahih := by
+/-- His ruling matches the madhhab's exactly on the sound and the merely reported furūq; every
+weak grade overturns it. -/
+theorem confirms_iff_sahih (g : Grade) : g.apart = g.madhhab ↔ g = .sahih ∨ g = .reported := by
   cases g <;> decide
 
 section Asl

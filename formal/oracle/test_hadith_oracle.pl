@@ -63,4 +63,5 @@ test(t10_trustee_on_oath) :- jam(10, [true], yamin).
 test(sound_confirms) :- rulings(sahih, apart, apart).
 test(weak_farq_alike) :- rulings(daif, apart, alike).
 test(weak_jam_apart) :- rulings(jamDaif, alike, apart).
+test(reported_as_theirs) :- rulings(reported, apart, apart).
 :- end_tests(furuq).

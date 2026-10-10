@@ -21,7 +21,7 @@
           "id": {"type": "string", "pattern": "^F[0-9]{2,3}$"},
           "cases_en": {"type": "array", "items": {"type": "string"}, "minItems": 2, "maxItems": 2},
           "madhhab": {"enum": ["apart", "alike"]},
-          "grade": {"enum": ["sahih", "daif", "jamDaif"]},
+          "grade": {"enum": ["sahih", "daif", "jamDaif", "reported"]},
           "ruling": {"enum": ["apart", "alike"], "description": "al-Saʿdī's conclusion: the two masāʾil ruled apart or alike"},
           "basis": {"enum": ["maana", "nass", "qaida", "naqd", "no_proof", "no_sound_hadith", "stated"]},
           "author": {"$ref": "#/$defs/quote"},

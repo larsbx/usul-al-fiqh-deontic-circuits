@@ -283,9 +283,66 @@ import Usul
 -- F94: sahih
 #guard Usul.Furuq.Grade.apart .sahih == true
 #guard Usul.Furuq.Grade.madhhab .sahih == true
--- F95: sahih
+-- F95: reported
+#guard Usul.Furuq.Grade.apart .reported == true
+#guard Usul.Furuq.Grade.madhhab .reported == true
+-- F96: sahih
 #guard Usul.Furuq.Grade.apart .sahih == true
 #guard Usul.Furuq.Grade.madhhab .sahih == true
--- F96: sahih
+-- F97: reported
+#guard Usul.Furuq.Grade.apart .reported == true
+#guard Usul.Furuq.Grade.madhhab .reported == true
+-- F98: reported
+#guard Usul.Furuq.Grade.apart .reported == true
+#guard Usul.Furuq.Grade.madhhab .reported == true
+-- F99: reported
+#guard Usul.Furuq.Grade.apart .reported == true
+#guard Usul.Furuq.Grade.madhhab .reported == true
+-- F100: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F101: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F102: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F103: reported
+#guard Usul.Furuq.Grade.apart .reported == true
+#guard Usul.Furuq.Grade.madhhab .reported == true
+-- F104: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F105: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F106: reported
+#guard Usul.Furuq.Grade.apart .reported == true
+#guard Usul.Furuq.Grade.madhhab .reported == true
+-- F107: reported
+#guard Usul.Furuq.Grade.apart .reported == true
+#guard Usul.Furuq.Grade.madhhab .reported == true
+-- F108: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F109: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F110: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F111: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F112: reported
+#guard Usul.Furuq.Grade.apart .reported == true
+#guard Usul.Furuq.Grade.madhhab .reported == true
+-- F113: sahih
+#guard Usul.Furuq.Grade.apart .sahih == true
+#guard Usul.Furuq.Grade.madhhab .sahih == true
+-- F114: jamDaif
+#guard Usul.Furuq.Grade.apart .jamDaif == true
+#guard Usul.Furuq.Grade.madhhab .jamDaif == false
+-- F115: sahih
 #guard Usul.Furuq.Grade.apart .sahih == true
 #guard Usul.Furuq.Grade.madhhab .sahih == true

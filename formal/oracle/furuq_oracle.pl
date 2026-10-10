@@ -7,6 +7,7 @@
 %    sahih    the fuqahāʾ rule them apart, and a meaning separates them: apart
 %    daif     they rule them apart, but nothing meaningful does: alike
 %    jamDaif  they rule them alike, but a naṣṣ or a meaning separates them: apart
+%    reported he reports their farq without grading it: as they rule, apart
 % =========================================================================
 
 :- module(furuq_oracle, [rulings/3]).
@@ -17,3 +18,4 @@ rulings(G, M, A) :- grade(G, M0, A0), M = M0, A = A0.
 grade(sahih,   apart, apart).
 grade(daif,    apart, alike).
 grade(jamDaif, alike, apart).
+grade(reported, apart, apart).

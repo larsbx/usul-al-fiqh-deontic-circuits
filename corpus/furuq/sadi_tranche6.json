@@ -1,0 +1,354 @@
+{
+ "note": "al-Saʿdī, al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa, part two (al-furūq), tranche 6: F97–F115 in order after tranche 5, none skipped; conventions as in tranche 1. Furūq he reports without grading are `reported`.",
+ "work": "sadi.qawaid_jamia",
+ "witness": "islamhouse-qj-doc",
+ "module": "Usul.Furuq",
+ "asl": {
+  "ref": "src:islamhouse-qj-doc#furuq",
+  "excerpt_ar": "أن الشارع لا يفرق بين المتشابهات من كل وجه، بل لا بد فيها من فوارق معنوية، وأوصاف متفاوتة أوجبت الفرق"
+ },
+ "lean": [
+  "Usul.Furuq.Grade",
+  "Usul.Furuq.Grade.apart",
+  "Usul.Furuq.alike_unless_farq",
+  "Usul.Furuq.farq_is_maana",
+  "Usul.Furuq.suri_farq_idle"
+ ],
+ "items": [
+  {
+   "id": "F97",
+   "cases_en": [
+    "maintaining endowed animals (always owed)",
+    "maintaining endowed real estate (only if stipulated)"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وفرّقوا في النفقة على الوقف بين الحيوان فتجب نفقته على كل حال"
+   },
+   "grounds": [],
+   "note": "reported without a grade; he adds Ibn Taymiyya's «تجب عمارة الوقف على حسب البطون»"
+  },
+  {
+   "id": "F98",
+   "cases_en": [
+    "void and defective contracts in the ḥajj and in marriage (distinguished)",
+    "void and defective contracts elsewhere (one)"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وفرّقوا بين العقود الباطلة والفاسدة في بابين"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F99",
+   "cases_en": [
+    "cancellations agreed on (no judge needed)",
+    "cancellations disputed (a judge needed)"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وكذلك فرّقوا في الفسوخ المتفق على إثباتها، فلا تحتاج إلى حاكم"
+   },
+   "grounds": [],
+   "note": "«ليزول النزاع والاشتباه»"
+  },
+  {
+   "id": "F100",
+   "cases_en": [
+    "accusing of zinā (the ḥadd of eighty)",
+    "accusing of disbelief or worse (discretionary punishment)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لكون المقذوف معروفة حاله ويتمكن من تكذيب من رماه"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F101",
+   "cases_en": [
+    "a husband accusing his wife (mutual imprecation lifts the ḥadd)",
+    "accusing anyone else (it does not)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأن ذلك دعوى مشوبة بإقرار على نفسه"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F102",
+   "cases_en": [
+    "game (lawful by a wound anywhere, by trained animals)",
+    "slaughtered livestock (only at the throat); and either when it turns wild or tame"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "رعاية للقدرة وعدمها"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F103",
+   "cases_en": [
+    "the qāḍī (binds, only to settle a dispute, ends the disagreement)",
+    "the muftī (explains only, on any question, ends nothing)"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق بين المفتي والقاضي"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F104",
+   "cases_en": [
+    "division by consent",
+    "compulsory division (where there is no harm and no return of value)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: الفرق بين قسمة التراضي"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F105",
+   "cases_en": [
+    "sale (of things with their uses; ribā applies)",
+    "hire (of uses; ribā does not)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة بين البيع والإجارة"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F106",
+   "cases_en": [
+    "several divorces of a consummated marriage (all fall)",
+    "of an unconsummated one, not said at once (only the first falls)"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق عند الأصحاب رحمهم"
+   },
+   "grounds": [],
+   "note": "the companions' farq, with its ḍābiṭ"
+  },
+  {
+   "id": "F107",
+   "cases_en": [
+    "an equivocation in an oath by the wronged or one in need (avails)",
+    "by a wrongdoer (does not)"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق المهمة: نفع التأويلات في الأيمان"
+   },
+   "grounds": [],
+   "note": "for one neither wronged nor in need he reports both the mashhūr (it avails) and Ibn Taymiyya (it does not), without choosing"
+  },
+  {
+   "id": "F108",
+   "cases_en": [
+    "one owed by an evident cause (a guest, a wife's maintenance) taking from the debtor's property",
+    "one owed by a hidden cause (may not)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأنه لا ينسب إلى خيانة"
+   },
+   "grounds": [
+    "Usul.Muamalat.q46_hidden_cause_forbids"
+   ],
+   "note": "Q46"
+  },
+  {
+   "id": "F109",
+   "cases_en": [
+    "prayer, fasting and ḥajj for the child and the insane (dropped)",
+    "zakāt, expiations and compensation for destruction (due)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأنها من الحقوق المالية التي يستوي فيها من له قدرة مالية من مكلف وغيره"
+   },
+   "grounds": [
+    "Usul.Muamalat.q13_intent_irrelevant"
+   ],
+   "note": "compensation follows its cause «لربط الحكم بسببه الموجب للضمان» (Q13)"
+  },
+  {
+   "id": "F110",
+   "cases_en": [
+    "the ability to earn as wealth for zakāt, debts and maintenance (counts)",
+    "as wealth that obliges the ḥajj (does not)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأنه مما لا يتم الوجوب إلا به، والأول مما لا يتم الواجب إلا به"
+   },
+   "grounds": [
+    "Usul.Sadi.q02_means_of_wajib"
+   ],
+   "note": "Q2: means of a settled duty are due; means of becoming obliged are not"
+  },
+  {
+   "id": "F111",
+   "cases_en": [
+    "a slave held for trade (zakāt al-fiṭr and zakāt on wealth)",
+    "a slave not for trade (zakāt al-fiṭr only)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وهكذا كل حكم له سببان فأكثر مستقلان إذا وجدا ترتب عليهما مقتضاهما"
+   },
+   "grounds": [
+    "Usul.Kulliyyat.q31_each_cause_its_effect"
+   ],
+   "note": "Q31"
+  },
+  {
+   "id": "F112",
+   "cases_en": [
+    "doubts where all must be avoided (pure and impure water for wuḍūʾ)",
+    "doubts where one investigates (the same for drinking, the qibla) or takes precautions (garments)"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق عند الأصحاب في مسائل الاشتباه"
+   },
+   "grounds": [],
+   "note": "he notes Ibn Taymiyya's choice of investigation for the garments"
+  },
+  {
+   "id": "F113",
+   "cases_en": [
+    "doubt about how much of a settled duty remains (precaution: certainty of discharge)",
+    "doubt whether a duty arose at all (the presumption of none)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "فالأصل: عدم الوجوب، ولو سلك العبد طريق الاحتياط كان حسناً"
+   },
+   "grounds": [
+    "Usul.Sadi.q11_yaqin"
+   ],
+   "note": "Q11: «الأصل بقاء ما كان على ما كان، وأنه لا يرفع الشك واليقين», applied to divorce and its number as well"
+  },
+  {
+   "id": "F114",
+   "cases_en": [
+    "lawful money mixed with unlawful (avoid it all, a view)",
+    "a carcass mixed with slaughtered meat (avoid it all)"
+   ],
+   "madhhab": "alike",
+   "grade": "jamDaif",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "فإن هذا النوع خبثه لمكسبه، واشتباه الميتة بالمذكاة الحرام خبثه لذاته، وبين الأمرين فرقٌ ظاهر"
+   },
+   "grounds": [],
+   "note": "«فقيل: يجتنب الجميع وهو ضعيف»: remove the amount of the unlawful and the rest is good"
+  },
+  {
+   "id": "F115",
+   "cases_en": [
+    "praying in a silk garment, washing with usurped water (invalid)",
+    "praying in a silk turban, washing from a forbidden vessel (valid, sinful)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وهذه المسائل مرجعها إلى أن التحريم إذا عاد إلى نفس العبادة أو شرطها أخل بها وفسدت"
+   },
+   "grounds": [
+    "Usul.Sadi.q38_voids_iff_intrinsic"
+   ],
+   "note": "Q38, in its own words; the ishtibāh passage before it applies Q25 (division when all are entitled, lots when one is)"
+  }
+ ]
+}
