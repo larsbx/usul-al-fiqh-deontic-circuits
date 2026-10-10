@@ -14,6 +14,7 @@
     python -m usul_corpus fatawa [--lang L] [--refresh]   # IslamQA offline dumps → data/islamqa/answers/*.jsonl.gz
     python -m usul_corpus labels      # candidate ḥukm labels + splits for the Arabic answers → data/islamqa/labels
     python -m usul_corpus bank-review # review the labels with the deontic-circuits bank; fill the review sample
+    python -m usul_corpus oracle      # export the weighted training set; evaluate the baseline oracles
 """
 
 from __future__ import annotations
@@ -28,6 +29,7 @@ from . import hadith
 from .fatawa import answers, fold, snapshot_witnesses, write_jsonl_gz
 from .labels import label, merge_review, report, review_sample
 from .bank_review import STAGES, en_vote, lean_guards, review as bank_review
+from .oracle import NaiveBayes, Retriever, confidence, evaluate, features
 from .fetch import fetch
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
@@ -460,6 +462,48 @@ def cmd_bank_review(_: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_oracle(_: argparse.Namespace) -> int:
+    """Weighted training set (LFS) and baseline oracle report on dev and test (question text only)."""
+    import gzip
+    from collections import Counter
+
+    def read(p: Path) -> list[dict]:
+        with gzip.open(p, "rt", encoding="utf-8") as f:
+            return [json.loads(l) for l in f]
+
+    answers = {r["id"]: r for r in read(ISLAMQA / "answers" / "islamqa-ar.jsonl.gz")}
+    verdicts = {v["id"]: v for v in read(ISLAMQA / "labels" / "islamqa-ar.bank.jsonl.gz")}
+    rows = [{"id": l["id"], "split": l["split"], "title": answers[l["id"]]["title"], "question": answers[l["id"]].get("question"),
+             "hukm": l["hukm"], "weight": round(confidence(l, verdicts[l["id"]]), 4), "basis": l["basis"],
+             "bank": verdicts[l["id"]]["class"], "matches_question": l["matches_question"]}
+            for l in read(ISLAMQA / "labels" / "islamqa-ar.labels.jsonl.gz") if l["hukm"]]
+    write_jsonl_gz(ISLAMQA / "train" / "islamqa-ar.jsonl.gz", rows)
+
+    docs = lambda split: [(r["id"], r["hukm"], r["weight"], features(r)) for r in rows if r["split"] == split]  # noqa: E731
+    train = [d for d in docs("train") if d[2] > 0]
+    retriever, bayes = Retriever(train), NaiveBayes(train)
+    majority = Counter(h for _, h, *_ in train).most_common(1)[0][0]
+    report: dict = {"train": len(train), "majority": majority, "splits": {}}
+    for split in ("dev", "test"):
+        ev = docs(split)
+        hits = [retriever.predict(f) for *_, f in ev]
+        predictions = {"majority": [majority] * len(ev), "retriever": [h["hukm"] for h in hits],
+                       "naive_bayes": [bayes.predict(f) for *_, f in ev]}
+        subsets = {"all": [True] * len(ev), "high_confidence": [w >= 0.7 for _, _, w, _ in ev]}
+        report["splits"][split] = {
+            sub: {name: evaluate([p for p, m in zip(ps, mask) if m], [d[1] for d, m in zip(ev, mask) if m])
+                  for name, ps in predictions.items()}
+            for sub, mask in subsets.items()}
+        report["splits"][split]["retriever_abstaining"] = {
+            str(tau): evaluate([h["hukm"] if h["score"] >= tau else None for h in hits], [d[1] for d in ev])
+            for tau in (0.2, 0.3, 0.5)}
+    _dump(CORPUS / "fatawa" / "oracle_report.json", report)
+    for split, r in report["splits"].items():
+        print(split, {k: round(v["accuracy"], 3) for k, v in r["all"].items()}, "| high:",
+              {k: round(v["accuracy"], 3) for k, v in r["high_confidence"].items()})
+    return 0
+
+
 def cmd_validate(_: argparse.Namespace) -> int:
     import jsonschema  # test-time dependency only
     from . import m5_commands
@@ -515,6 +559,7 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("reception").set_defaults(run=cmd_reception)
     sub.add_parser("labels").set_defaults(run=cmd_labels)
     sub.add_parser("bank-review").set_defaults(run=cmd_bank_review)
+    sub.add_parser("oracle").set_defaults(run=cmd_oracle)
     fa = sub.add_parser("fatawa")
     fa.add_argument("--lang")
     fa.add_argument("--refresh", action="store_true")
