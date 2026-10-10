@@ -2555,8 +2555,99 @@
         "nass",
         "nass"
       ],
+      "jam": {
+        "encoder": "disposal_before_qabd_debt",
+        "from": "disposal_before_qabd",
+        "farq": "src:openiti-insaf-shamela21609/v05:p112"
+      },
+      "naskh": null,
+      "note": "Two riwāyas on the deeds; the later madhhab bars selling a debt to any but the debtor, which covers them.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p112",
+          "excerpt_ar": "ذمته. وهو الصحيح من المذهب. وعليه الأصحاب. وعنه يصح. قاله الشيخ تقي",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: a settled debt may not be sold to any but the debtor, «وهو الصحيح من المذهب. وعليه الأصحاب», which al-Mardāwī applies to the sale of the deeds."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v06:p331",
+          "excerpt_ar": "فصل: يصح بيع الدين المستقر من الغريم لا من غيره",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn Mufliḥ, al-Furūʿ",
+          "note": "al-Furūʿ gives as its lead view that a settled debt may be sold to the debtor and not to anyone else. The allowing riwāya is added only after it as «وعنه: يصح منهما»."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p072",
+          "excerpt_ar": "(ولا) بيع دين لغير من هو عليه مطلقا ولا بيعه (بمؤجل لمن هو عليه) ;",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-irādāt",
+          "note": "The Muntahā and its sharḥ state flatly that a debt may not be sold to anyone but the debtor, «muṭlaqan». This covers sale for goods taken in the session."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p144",
+          "excerpt_ar": "به نسيئة أو بموصوف في الذمة وإلا فلا ولا يصح بيعه لغيره ولا بيع دين",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ allows the sale of a settled debt to the debtor and then rules decisively «ولا يصح بيعه لغيره»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f002",
+      "grades": [
+        "jazm",
+        "ashab"
+      ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "note": "The later madhhab voids the sale joined to the kitāba («باع ماله لماله»), against concurrence.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p322",
+          "excerpt_ar": "البيع) . هذا الصحيح من المذهب. جزم به في المغني، والمحرر، والشرح،",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf on the Muqniʿ 'وإن جمع بين كتابة وبيع ... بطل البيع': 'هذا الصحيح من المذهب', with jazm in al-Mughnī, al-Muḥarrar, al-Sharḥ, al-Wajīz etc.; 'Qīla yaṣiḥḥ, wa-qīla al-ṣiḥḥa manṣūṣ Aḥmad' (position 0) is reported as the weaker view."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v06:p162",
+          "excerpt_ar": "وجهان \"م 28\" وبين كتابة وبيع يبطل البيع, في الأصح, وفي الكتابة وجهان \"م",
+          "position": 1,
+          "grade": "tashih",
+          "who": "Ibn Mufliḥ, al-Furūʿ",
+          "note": "al-Furūʿ: combining kitāba and sale voids the sale 'في الأصح'; it notes 'وقيل: نصه: صحتها'."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p180",
+          "excerpt_ar": "لعبده (بعتك عبدي هذا وكاتبتك بمائة كل شهر عشرة بطل البيع) ؛ لأنه باع",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf/Iqnāʿ: the sale is void (he sold his property to his own slave), the kitāba valid for its share."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p021",
+          "excerpt_ar": "مثلا (بطل) البيع ; لأنه باع ماله لماله، أشبه ما لو باعه قبل الكتابة",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā/Muntahā: the sale is void, as if sold before the kitāba."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p074",
+          "excerpt_ar": "مثل أن يقول بعتك عبدي هذا وكاتبتك بمائة كل شهر عشرة بطل البيع وصحت",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "Iqnāʿ matn: the sale is void and the kitāba valid by its share."
+        }
+      ]
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f003",
@@ -2565,7 +2656,54 @@
         "ashab"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "note": "No later source treats the masʾala; al-Mughnī's cognate ruling on the agent's claim joins al-Qāḍī's «الأشبه».",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p107",
+          "excerpt_ar": "هاهنا. والدليل على أن الدعوى لا تسمع قبل ثبوت الوكالة أنها لا تسمع إلا",
+          "position": 1,
+          "grade": "takhrij",
+          "who": "Ibn Qudāma, al-Mughnī",
+          "note": "al-Mughnī: the self-styled agent's claim for his principal is not heard before his agency is proven; a cognate ruling for position 1, not the same masʾala."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f004",
+      "grades": [
+        "qiyas",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The muʿtamad voids agency to divorce a woman not yet married, against al-Talkhīṣ's qiyās.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p355",
+          "excerpt_ar": "المذهب. من حيث الجملة. فعلى هذا: لو وكله في بيع ما سيملكه، أو في طلاق من",
+          "position": 1,
+          "grade": "qiyas",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: that agency is only from one able to dispose is «المذهب من حيث الجملة», and «فعلى هذا» agency in divorcing a woman he will marry is invalid; a taṣḥīḥ of the general rule."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p463",
+          "excerpt_ar": "(ولا يصح) أن يوكل (في بيع ما سيملكه، ولا) في (طلاق من يتزوجها) لأن",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf decisively: agency to divorce a woman he will marry is invalid, and it continues that 'إن تزوجت فلانة فقد وكلتك في طلاقها' is 'لم يصح', unlike the conditional agency for manumission."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p186",
+          "excerpt_ar": "(ولا تصح) وكالة (في بيع ما سيملكه أو) في (طلاق من يتزوجها) ; لأن",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā/Muntahā: agency in divorcing a woman he will marry is invalid, explicitly contrasting 'إن تزوجت فلانة فقد وكلتك في طلاقها' with the valid conditional manumission agency."
+        }
+      ]
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f006",
@@ -2574,16 +2712,118 @@
         "nass"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "note": "The madhhab clears the umm walad by one period, giving no weight to the concurrent freedom.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p326",
+          "excerpt_ar": "وقوله (أو بحيضة إن كانت ممن تحيض) . هو المذهب، سواء كانت أم ولد أو",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: the umm walad, like other slave women, is cleared by one menstrual period, «هو المذهب»; neither a free woman's ʿidda nor the slave wife's two months and five days, so it rejects position 1 and is mapped to position 0, the ʿidda of a slave woman."
+        },
+        {
+          "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p140",
+          "excerpt_ar": "كاملة) هذا المشهور عن أحمد. وهو قول ابن عمر. وروي ذلك عن عثمان، وعائشة،",
+          "position": 0,
+          "grade": "tashih",
+          "who": "Ibn Qudāma, al-Mughnī",
+          "note": "On al-Khiraqī's «وأم الولد إذا مات سيدها، فلا تنكح حتى تحيض حيضة كاملة», al-Mughnī calls one full period «al-mashhūr ʿan Aḥmad». The free woman's ʿidda of four months and ten days is the other riwāya."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p123",
+          "excerpt_ar": "التي كان يصيبها قبل استبرائها أو مات عنها لزمها استبراء نفسها لكن لو",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ rules decisively that when the master of an umm walad dies, she must observe istibrāʾ (one period, by the following faṣl), not a free woman's ʿidda."
+        }
+      ]
     },
     {
-      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f002",
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q058.f001",
       "grades": [
-        "ashab",
+        "takhrij",
         "ashab"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "note": "The muʿtamad makes withdrawal intercourse («لأن النزع جماع») and owes the kaffāra however the menses came.",
+      "evidence": [
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p201",
+          "excerpt_ar": "طاهرة فحاضت في أثناء وطئه، ولو لم يستدم) الوطء بل نزع في الحال (لأن",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf: if she was pure and her menses began during intercourse, the kaffāra is due even if he did not continue but withdrew at once, 'because withdrawal is intercourse' - the kaffāra side (position 0), with no exception for lack of expectation."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p064",
+          "excerpt_ar": "أثناء وطئه ولو لم يستدم لأن النزع جماع فعليه دينار زنته مثقال خاليا من",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ matn decisively: even without continuing, withdrawal is intercourse, so he owes a dinar (or half) - position 0."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p113",
+          "excerpt_ar": "طاهرة فحاضت، فنزع في الحال لأن النزع جماع (ولو) كان",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā likewise: menses beginning during intercourse with immediate withdrawal still entails the kaffāra, since withdrawal is intercourse - position 0."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f001",
+      "grades": [
+        "ashab",
+        "jazm"
+      ],
+      "jam": {
+        "encoder": "deputy_of_qadi",
+        "from": "deputy_of_principal",
+        "farq": "src:openiti-insaf-shamela21609/v11:p172"
+      },
+      "naskh": null,
+      "note": "al-Inṣāf: «هذا الصحيح من المذهب. وعليه أكثر الأصحاب»: the qāḍī's deputies are removed with him, against al-Targhīb.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p172",
+          "excerpt_ar": "هذا الصحيح من المذهب. وعليه أكثر الأصحاب. وصححه في النظم، وغيره. وجزم به",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf, fāʾida 2 under the judge's removal: if the delegating party is a qāḍī whose authority lapses by death, dismissal etc., 'انعزل نائبه وإن لم ينعزل في المسائل التي قبلها' - this is the ṣaḥīḥ of the madhhab and the view of most aṣḥāb: deputies are removed (position 1)."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p293",
+          "excerpt_ar": "زالت ولايته بموت أو عزل أو غيره كما لو اختل فيه بعض شروطه انعزلوا) لأنهم",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf: if the delegator is a qāḍī and his authority lapses by death or otherwise, his deputies are removed, because they are his deputies like agents - position 1."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p491",
+          "excerpt_ar": "قاضيا فعزل نوابه أو زالت ولايته بموت أو غيره انعزلوا) لأنهم نوابه",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā (on the Muntahā matn): the qāḍī's deputies are removed on his death 'because they are his deputies, like his agents' - position 1."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p368",
+          "excerpt_ar": "فإن كان المستتيب قاضيا فعزل نوابه أو زالت ولايته بموت أو عزل أو غيره:",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ matn: if the delegator is a qāḍī whose authority lapses by death etc., they (his deputies) are removed - position 1."
+        }
+      ]
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f000",

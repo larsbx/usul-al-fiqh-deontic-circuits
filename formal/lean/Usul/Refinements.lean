@@ -948,9 +948,8 @@ general, a deputy for the Muslims («بخلاف القضاة فإنهم نواب
 def removedWithPrincipal (general : Bool) : Bool := !general
 
 /-- Qāʿida 62: removal takes effect before it is known (the agent, «المشهور»), except in a public
-office carrying a right of God, «شبيه بنسخ الأحكام لا يثبت قبل بلوغ الناسخ», and the keeper's
-annulment of a deposit, since he holds no disposal but keeping («فلا يصح أن يرفعه مع وجوده»). -/
-def removedBeforeKnowledge (publicOffice keeper : Bool) : Bool := !publicOffice && !keeper
+office carrying a right of God, «شبيه بنسخ الأحكام لا يثبت قبل بلوغ الناسخ». -/
+def removedBeforeKnowledge (publicOffice : Bool) : Bool := !publicOffice
 
 /-! ## Reconciliation refinements (`corpus/reconciliation/ledger.json`)
 
@@ -1027,5 +1026,23 @@ theorem ownedBeforePaymentIn_conservative (n v : Bool) :
 theorem ownedBeforePaymentIn_insolvent (n s : Bool) :
     ownedBeforePaymentIn n s false = ownedBeforePayment n := by
   cases n <;> cases s <;> rfl
+
+/-- Qāʿida 52 with the madhhab's bar on selling a debt to any but the debtor («ولا يجوز لغيره»: al-Inṣāf,
+«وهو الصحيح من المذهب. وعليه الأصحاب»), which covers the deeds. -/
+def disposeBeforeQabdIn (mubham settled debtToThird : Bool) : Bool :=
+  disposeBeforeQabd mubham settled && !debtToThird
+
+theorem disposeBeforeQabdIn_conservative (m s : Bool) :
+    disposeBeforeQabdIn m s false = disposeBeforeQabd m s := by
+  cases m <;> cases s <;> rfl
+
+/-- Qāʿida 61 with the madhhab on the qāḍī's deputies: removed with him even under a general
+mandate, «لأنهم نواب القاضي بخلاف القضاة فإنهم نواب للمسلمين» (al-Inṣāf: «هذا الصحيح من المذهب.
+وعليه أكثر الأصحاب»). -/
+def removedWithPrincipalIn (general ofQadi : Bool) : Bool := removedWithPrincipal general || ofQadi
+
+theorem removedWithPrincipalIn_conservative (g : Bool) :
+    removedWithPrincipalIn g false = removedWithPrincipal g := by
+  cases g <;> rfl
 
 end Usul.Refinements

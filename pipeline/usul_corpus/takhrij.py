@@ -357,6 +357,10 @@ ENCODERS: dict[str, dict] = {
     "disposal_over_anothers_right": dict(
         sadi=[], qawaid=[RAJAB.format(54)], facts={"extinguishes": B},
         out=B, lean="Usul.Refinements.mayDisposeOver {extinguishes}", py=lambda f: not f["extinguishes"]),
+    "disposal_before_qabd_debt": dict(
+        sadi=[], qawaid=[RAJAB.format(52)], facts={"mubham": B, "settled": B, "debt_to_third": B},
+        out=B, lean="Usul.Refinements.disposeBeforeQabdIn {mubham} {settled} {debt_to_third}",
+        py=lambda f: not f["mubham"] and f["settled"] and not f["debt_to_third"]),
     "concurrent_condition": dict(
         sadi=[], qawaid=[RAJAB.format(56)], facts={"prior": B, "concurrent": B},
         out=B, lean="Usul.Refinements.conditionMet {prior} {concurrent}",
@@ -367,10 +371,13 @@ ENCODERS: dict[str, dict] = {
     "deputy_of_principal": dict(
         sadi=[], qawaid=[RAJAB.format(61)], facts={"general": B},
         out=B, lean="Usul.Refinements.removedWithPrincipal {general}", py=lambda f: not f["general"]),
+    "deputy_of_qadi": dict(
+        sadi=[], qawaid=[RAJAB.format(61)], facts={"general": B, "of_qadi": B},
+        out=B, lean="Usul.Refinements.removedWithPrincipalIn {general} {of_qadi}",
+        py=lambda f: not f["general"] or f["of_qadi"]),
     "removal_before_knowledge": dict(
-        sadi=[], qawaid=[RAJAB.format(62)], facts={"public_office": B, "keeper": B},
-        out=B, lean="Usul.Refinements.removedBeforeKnowledge {public_office} {keeper}",
-        py=lambda f: not f["public_office"] and not f["keeper"]),
+        sadi=[], qawaid=[RAJAB.format(62)], facts={"public_office": B},
+        out=B, lean="Usul.Refinements.removedBeforeKnowledge {public_office}", py=lambda f: not f["public_office"]),
     "excess_in_following": dict(
         sadi=[], qawaid=[RAJAB.format(3)], facts={"separable": B, "lightened": B, "following": B},
         out=B, lean="Usul.Refinements.excessObligatoryIn {separable} {lightened} {following}",

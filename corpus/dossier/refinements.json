@@ -1275,6 +1275,100 @@
     "rule:forced_acquisition_solvent"
    ],
    "iq": []
+  },
+  {
+   "id": "disposal_before_qabd_debt",
+   "title": "A debt is sold only to the debtor",
+   "terms": [
+    "jam",
+    "farq"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052",
+    "note": "Ibn Rajab, qāʿida 52: disposal before qabḍ; the tranche-10 reading barred it only in the undetermined and where the right is not settled."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p112",
+     "note": "al-Inṣāf: a settled debt may not be sold to any but the debtor, «وهو الصحيح من المذهب. وعليه الأصحاب», which al-Mardāwī applies to the sale of the deeds.",
+     "excerpt_ar": "ذمته. وهو الصحيح من المذهب. وعليه الأصحاب. وعنه يصح. قاله الشيخ تقي"
+    },
+    {
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p072",
+     "note": "The Muntahā and its sharḥ state flatly that a debt may not be sold to anyone but the debtor, «muṭlaqan». This covers sale for goods taken in the session.",
+     "excerpt_ar": "(ولا) بيع دين لغير من هو عليه مطلقا ولا بيعه (بمؤجل لمن هو عليه) ;"
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p144",
+     "note": "The Iqnāʿ allows the sale of a settled debt to the debtor and then rules decisively «ولا يصح بيعه لغيره».",
+     "excerpt_ar": "به نسيئة أو بموصوف في الذمة وإلا فلا ولا يصح بيعه لغيره ولا بيع دين"
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f001",
+     "note": "Ibn Rajab: «حاصل هذا يرجع إلى جواز بيع الدين من غير الغريم», the riwāya the reading followed."
+    }
+   ],
+   "conditions": [
+    "the thing disposed of is a settled debt in another's dhimma",
+    "it is sold to one other than the debtor"
+   ],
+   "rationale": "The ledger found the reading against al-Inṣāf's «وهو الصحيح من المذهب. وعليه الأصحاب», al-Iqnāʿ and al-Muntahā on the deeds: a settled debt is sold to the debtor and to no one else. That is the farq the madhhab states; the determined and the settled otherwise keep the reading.",
+   "lean": [
+    "Usul.Refinements.disposeBeforeQabdIn",
+    "Usul.Refinements.disposeBeforeQabdIn_conservative"
+   ],
+   "conservative": "Usul.Refinements.disposeBeforeQabdIn_conservative",
+   "closes": [
+    "rule:disposal_before_qabd_debt"
+   ],
+   "iq": []
+  },
+  {
+   "id": "deputy_of_qadi",
+   "title": "The qāḍī's deputies are removed with him",
+   "terms": [
+    "jam",
+    "farq"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061",
+    "note": "Ibn Rajab, qāʿida 61: whether one who acts generally does so by agency or by authority; the tranche-10 reading kept any deputy of general mandate in office."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v11:p172",
+     "note": "al-Inṣāf, fāʾida 2 under the judge's removal: if the delegating party is a qāḍī whose authority lapses by death, dismissal etc., 'انعزل نائبه وإن لم ينعزل في المسائل التي قبلها' - this is the ṣaḥīḥ of the madhhab and the view of most aṣḥāb: deputies are removed (position 1).",
+     "excerpt_ar": "هذا الصحيح من المذهب. وعليه أكثر الأصحاب. وصححه في النظم، وغيره. وجزم به"
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p293",
+     "note": "Kashshāf: if the delegator is a qāḍī and his authority lapses by death or otherwise, his deputies are removed, because they are his deputies like agents - position 1.",
+     "excerpt_ar": "زالت ولايته بموت أو عزل أو غيره كما لو اختل فيه بعض شروطه انعزلوا) لأنهم"
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p368",
+     "note": "The Iqnāʿ matn: if the delegator is a qāḍī whose authority lapses by death etc., they (his deputies) are removed - position 1.",
+     "excerpt_ar": "فإن كان المستتيب قاضيا فعزل نوابه أو زالت ولايته بموت أو عزل أو غيره:"
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f001",
+     "note": "Ibn ʿAqīl from the aṣḥāb: «لأنهم نواب القاضي بخلاف القضاة فإنهم نواب للمسلمين»."
+    }
+   ],
+   "conditions": [
+    "the deputy holds a general mandate",
+    "he was appointed by a qāḍī, not by the imām"
+   ],
+   "rationale": "The ledger found the reading against al-Inṣāf's «هذا الصحيح من المذهب. وعليه أكثر الأصحاب», al-Iqnāʿ and Kashshāf: the qāḍī's deputies are removed with him, being his deputies like agents. The farq is the one Ibn ʿAqīl reports from the aṣḥāb, the qāḍīs themselves deputies of the Muslims; deputies of the imām keep the reading.",
+   "lean": [
+    "Usul.Refinements.removedWithPrincipalIn",
+    "Usul.Refinements.removedWithPrincipalIn_conservative"
+   ],
+   "conservative": "Usul.Refinements.removedWithPrincipalIn_conservative",
+   "closes": [
+    "rule:deputy_of_qadi"
+   ],
+   "iq": []
   }
  ]
 }

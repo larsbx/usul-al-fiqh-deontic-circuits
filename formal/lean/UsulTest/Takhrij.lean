@@ -64,13 +64,13 @@ import Usul
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f000 (derivable)
 #guard (Usul.Refinements.validUnderDoubt true false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f000 (genuine_ikhtilaf)
-#guard (Usul.Refinements.disposeBeforeQabd false false) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn false false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f001 (genuine_ikhtilaf)
-#guard (Usul.Refinements.disposeBeforeQabd false true) == true
+#guard (Usul.Refinements.disposeBeforeQabdIn false true true) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f002 (derivable)
-#guard (Usul.Refinements.disposeBeforeQabd true true) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn true true false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f003 (derivable)
-#guard (Usul.Refinements.disposeBeforeQabd false false) == false
+#guard (Usul.Refinements.disposeBeforeQabdIn false false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q054.f000 (genuine_ikhtilaf)
 #guard (Usul.Refinements.mayDisposeOver true) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q054.f001 (derivable)
@@ -92,15 +92,15 @@ import Usul
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q058.f001 (genuine_ikhtilaf)
 #guard (Usul.Refinements.desistIsAct false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f000 (derivable)
-#guard (Usul.Refinements.removedWithPrincipal false) == true
+#guard (Usul.Refinements.removedWithPrincipalIn false true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f001 (genuine_ikhtilaf)
-#guard (Usul.Refinements.removedWithPrincipal true) == false
+#guard (Usul.Refinements.removedWithPrincipalIn true true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f000 (genuine_ikhtilaf)
-#guard (Usul.Refinements.removedBeforeKnowledge true false) == false
+#guard (Usul.Refinements.removedBeforeKnowledge true) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f001 (genuine_ikhtilaf)
-#guard (Usul.Refinements.removedBeforeKnowledge false false) == true
+#guard (Usul.Refinements.removedBeforeKnowledge false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f002 (genuine_ikhtilaf)
-#guard (Usul.Refinements.removedBeforeKnowledge false true) == false
+#guard (Usul.Refinements.removedBeforeKnowledge false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f000 (genuine_ikhtilaf)
 #guard (Usul.Refinements.mustSwitch false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f001 (genuine_ikhtilaf)

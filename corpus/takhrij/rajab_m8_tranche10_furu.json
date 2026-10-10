@@ -5,11 +5,12 @@
   "cases": [
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f000",
-      "encoder": "disposal_before_qabd",
+      "encoder": "disposal_before_qabd_debt",
       "class": "genuine_ikhtilaf",
       "facts": {
         "mubham": false,
-        "settled": false
+        "settled": false,
+        "debt_to_third": false
       },
       "expected": false,
       "positions": [
@@ -27,13 +28,14 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f001",
-      "encoder": "disposal_before_qabd",
+      "encoder": "disposal_before_qabd_debt",
       "class": "genuine_ikhtilaf",
       "facts": {
         "mubham": false,
-        "settled": true
+        "settled": true,
+        "debt_to_third": true
       },
-      "expected": true,
+      "expected": false,
       "positions": [
         {
           "who": "Aḥmad (Ibn Manṣūr «هو غرر»; Abū Ṭālib): not",
@@ -44,27 +46,29 @@
           "ruling": true
         }
       ],
-      "matches_madhhab": false,
-      "note": "Selling the deeds, debts settled on others, before they are received. For cash against cash it is void without khilāf (a deferred ṣarf). For goods taken in the session, two riwāyas: not (Ibn Manṣūr «هو غرر»; Abū Ṭālib, which Ibn Rajab takes as the dīwān's deed), or allowed (Ḥarb, Ḥanbal, Muḥammad b. al-Ḥakam), Aḥmad separating it from the stipend: «الصك إنما يحتال على رجل وهو يقر بدين عليه». Ibn Rajab: «حاصل هذا يرجع إلى جواز بيع الدين من غير الغريم». No madhhab marked."
+      "matches_madhhab": true,
+      "note": "Selling the deeds, debts settled on others, before they are received. For cash against cash it is void without khilāf (a deferred ṣarf). For goods taken in the session, two riwāyas: not (Ibn Manṣūr «هو غرر»; Abū Ṭālib, which Ibn Rajab takes as the dīwān's deed), or allowed (Ḥarb, Ḥanbal, Muḥammad b. al-Ḥakam), Aḥmad separating it from the stipend: «الصك إنما يحتال على رجل وهو يقر بدين عليه». Ibn Rajab: «حاصل هذا يرجع إلى جواز بيع الدين من غير الغريم». No madhhab marked. Reconciled (jamʿ): the madhhab bars selling a settled debt to any but the debtor, «ولا يجوز لغيره» (al-Inṣāf: «وهو الصحيح من المذهب. وعليه الأصحاب»; al-Furūʿ; al-Iqnāʿ; al-Muntahā), and the deeds are such debts."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f002",
-      "encoder": "disposal_before_qabd",
+      "encoder": "disposal_before_qabd_debt",
       "class": "derivable",
       "facts": {
         "mubham": true,
-        "settled": true
+        "settled": true,
+        "debt_to_third": false
       },
       "expected": false,
       "note": "Selling the spoils before division: Aḥmad's naṣṣ is karāha, «لا يدري ما يصيبه», unknown in amount and object though owned, with the ḥadīth «نهى عن بيع المغانم حتى تقسم». For a single soldier it is barred before or after receipt; the imām may sell for the common good."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f003",
-      "encoder": "disposal_before_qabd",
+      "encoder": "disposal_before_qabd_debt",
       "class": "derivable",
       "facts": {
         "mubham": false,
-        "settled": false
+        "settled": false,
+        "debt_to_third": false
       },
       "expected": false,
       "note": "Selling the alms before they are received: «ومأخذه أن الصدقة لا تملك بدون القبض», with the mursal «نهى عن بيع الصدقات حتى تقبض». Set aside by its owner they do not leave his property without the recipient's qabḍ."
@@ -141,7 +145,7 @@
           "ruling": false
         }
       ],
-      "matches_madhhab": true,
+      "matches_madhhab": false,
       "note": "Contracting kitāba with a slave and selling him something in one transaction: two wujūh. Valid, «وقيل إنه المنصوص», given by al-Qāḍī and Ibn ʿAqīl in nikāḥ, Abū al-Khaṭṭāb and most, the sale being concurrent with its condition that the buyer be a mukātab; or not, «لأن الكتابة لم تسبق عقد البيع»."
     },
     {
@@ -185,7 +189,7 @@
           "ruling": false
         }
       ],
-      "matches_madhhab": true,
+      "matches_madhhab": false,
       "note": "«If I marry so-and-so, I have appointed you to divorce her»: al-Talkhīṣ, «قياس المذهب صحته»; a wajh by takhrīj that it is void, since the condition of agency, the principal owning what he delegates, arises with the nikāḥ and is concurrent with the agency."
     },
     {
@@ -260,27 +264,29 @@
           "ruling": false
         }
       ],
-      "matches_madhhab": true,
+      "matches_madhhab": false,
       "note": "Intercourse during which the wife's menses begin, and he withdraws: kaffāra, where the excused owes it? The aṣḥāb derive it from whether withdrawal is intercourse, or from the fast. «والأظهر أنه إن كان يعلم بمقتضى العادة قرب وقت حيضها ... هو شبيه بمسألة الصوم وإلا فلا كفارة لأنه إنما تعلق به المنع بعد وجود الحيض»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f000",
-      "encoder": "deputy_of_principal",
+      "encoder": "deputy_of_qadi",
       "class": "derivable",
       "facts": {
-        "general": false
+        "general": false,
+        "of_qadi": true
       },
       "expected": true,
       "note": "The qāḍī's deputies of a particular mandate, to hear a given testimony or summon a defendant: «فهم كالوكلاء ينعزلون بعزله وموته»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f001",
-      "encoder": "deputy_of_principal",
+      "encoder": "deputy_of_qadi",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "general": true
+        "general": true,
+        "of_qadi": true
       },
-      "expected": false,
+      "expected": true,
       "positions": [
         {
           "who": "ṣāḥib al-Targhīb: not removed («وصحح صاحب الترغيب عدم الانعزال»)",
@@ -292,15 +298,14 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "The qāḍī's deputies of a general mandate, his successors, guardians of orphans and deputies over the villages: agents of his, or deputies of the Muslims not removed by his death? Two wujūh (al-Āmidī). ṣāḥib al-Targhīb holds them not removed; Ibn ʿAqīl reports from the aṣḥāb that they are, «لأنهم نواب القاضي بخلاف القضاة فإنهم نواب للمسلمين», which Ibn Rajab answers."
+      "note": "The qāḍī's deputies of a general mandate, his successors, guardians of orphans and deputies over the villages: agents of his, or deputies of the Muslims not removed by his death? Two wujūh (al-Āmidī). ṣāḥib al-Targhīb holds them not removed; Ibn ʿAqīl reports from the aṣḥāb that they are, «لأنهم نواب القاضي بخلاف القضاة فإنهم نواب للمسلمين», which Ibn Rajab answers. Reconciled (jamʿ): the madhhab removes the qāḍī's deputies with him, «لأنهم نوابه» (al-Inṣāf: «هذا الصحيح من المذهب. وعليه أكثر الأصحاب»; al-Iqnāʿ; Kashshāf), the farq Ibn ʿAqīl reports: deputies of the qāḍī, not of the Muslims."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f000",
       "encoder": "removal_before_knowledge",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "public_office": true,
-        "keeper": false
+        "public_office": true
       },
       "expected": false,
       "positions": [
@@ -314,15 +319,14 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "The judge, where he is removable: al-Qāḍī and Abū al-Khaṭṭāb, the khilāf of the agent; al-Talkhīṣ, not removed before he knows, «بغير خلاف», preferred by Taqī al-Dīn, «لأن في ولايته حقا لله ... فهو شبيه بنسخ الأحكام لا يثبت قبل بلوغ الناسخ», «هذا هو المنصوص عن أحمد»."
+      "note": "The judge, where he is removable: al-Qāḍī and Abū al-Khaṭṭāb, the khilāf of the agent; al-Talkhīṣ, not removed before he knows, «بغير خلاف», preferred by Taqī al-Dīn, «لأن في ولايته حقا لله ... فهو شبيه بنسخ الأحكام لا يثبت قبل بلوغ الناسخ», «هذا هو المنصوص عن أحمد». al-Inṣāf records removal as «المذهب على المصطلح عليه في الخطبة», but al-Mardāwī's own «وهذا الصواب» and the muʿtamad (al-Iqnāʿ, al-Muntahā, Kashshāf) hold the judge not removed before he knows."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f001",
       "encoder": "removal_before_knowledge",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "public_office": false,
-        "keeper": false
+        "public_office": false
       },
       "expected": true,
       "positions": [
@@ -343,22 +347,21 @@
       "encoder": "removal_before_knowledge",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "public_office": false,
-        "keeper": true
+        "public_office": false
       },
-      "expected": false,
+      "expected": true,
       "positions": [
         {
-          "who": "al-Qāḍī (in many places): the keeper may annul by word in the owner's absence; dissolved before he knows, a trust",
+          "who": "al-Qāḍī (in many places): the keeper may annul by word in the owner's absence; dissolved before he knows, a trust like the windblown garment",
           "ruling": true
         },
         {
-          "who": "al-Qāḍī (on agency): not by word, only by return or transgression",
+          "who": "al-Qāḍī (on agency): not by word, only by return to the owner or transgression",
           "ruling": false
         }
       ],
-      "matches_madhhab": false,
-      "note": "The deposit: al-Qāḍī in many places, the keeper may annul it by word in the owner's absence, dissolved before he knows and a trust in his hand; on agency, «الوديعة لا يلحقها الفسخ بالقول وإنما تنفسخ بالرد إلى صاحبها أو بأن يتعدى المودع». Ibn Rajab: a farq between the two annulments, «والأول أشبه»: the depositor's annulment takes the keeping from the keeper, which he owns, while the keeper holds no disposal but keeping, «فلا يصح أن يرفعه مع وجوده»."
+      "matches_madhhab": true,
+      "note": "The deposit: al-Qāḍī in many places, the keeper may annul it by word in the owner's absence, and it is dissolved before he knows, a trust in the keeper's hand «كمن أطارت الريح إلى بيته ثوبا لغيره»; on agency, «الوديعة لا يلحقها الفسخ بالقول وإنما تنفسخ بالرد إلى صاحبها أو بأن يتعدى المودع». Ibn Rajab: either a farq between the two parties' annulments or a second view, «والأول أشبه». The muʿtamad (al-Iqnāʿ, Sharḥ al-Muntahā, Kashshāf) gives the keeper's self-dismissal effect at once, the deposit a trust in his hand."
     }
   ]
 }

@@ -996,3 +996,71 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Lean:** `Usul.Refinements.ownedBeforePaymentIn`, `Usul.Refinements.ownedBeforePaymentIn_conservative`, `Usul.Refinements.ownedBeforePaymentIn_insolvent`  
 **Conservative over the earlier reading:** `Usul.Refinements.ownedBeforePaymentIn_conservative`
+
+<a id="disposal_before_qabd_debt"></a>
+
+## A debt is sold only to the debtor
+
+**Terms:** [al-jamʿ](../glossary.md#jam), [al-farq](../glossary.md#farq)  
+**Closes:** `rule:disposal_before_qabd_debt`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052`: Ibn Rajab, qāʿida 52: disposal before qabḍ; the tranche-10 reading barred it only in the undetermined and where the right is not settled.
+  > في التصرف في المملوكات قبل قبضها: وهي منقسمة إلى عقود وغيرها فالعقود نوعان: أحدهما: عقود المعاوضات وتنقسم إلى بيع وغيره، فأما المبيع فقالت طائفة من الأصحاب التصرف قبل القبض والضمان متلازمان فإن كان البيع مضمونا على البائع لم يجز التصرف فيه للمشتري حتى يقبضه وإن كان قبل القبض من ضمان المشتري جار له التصرف فيه، وصرح بذلك القاضي في الجامع الصغير وغيره. وجعلوا العلة المانعة من التصرف توالي الضمانات. و
+
+**Conditions**
+
+1. the thing disposed of is a settled debt in another's dhimma
+2. it is sold to one other than the debtor
+
+**Texts**
+
+- `src:openiti-insaf-shamela21609/v05:p112`: al-Inṣāf: a settled debt may not be sold to any but the debtor, «وهو الصحيح من المذهب. وعليه الأصحاب», which al-Mardāwī applies to the sale of the deeds.
+  > ذمته. وهو الصحيح من المذهب. وعليه الأصحاب. وعنه يصح. قاله الشيخ تقي
+- `src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p072`: The Muntahā and its sharḥ state flatly that a debt may not be sold to anyone but the debtor, «muṭlaqan». This covers sale for goods taken in the session.
+  > (ولا) بيع دين لغير من هو عليه مطلقا ولا بيعه (بمؤجل لمن هو عليه) ;
+- `src:openiti-hajjawi-iqna-shamela7360/v02:p144`: The Iqnāʿ allows the sale of a settled debt to the debtor and then rules decisively «ولا يصح بيعه لغيره».
+  > به نسيئة أو بموصوف في الذمة وإلا فلا ولا يصح بيعه لغيره ولا بيع دين
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f001`: Ibn Rajab: «حاصل هذا يرجع إلى جواز بيع الدين من غير الغريم», the riwāya the reading followed.
+  > بيع الصكاك قبل قبضها وهي الديون الثابتة على الناس وتسمى صكاكا لأنها تكتب في صكاك وهي ما يكتب فيه من الرق ونحوه فيباع ما في الصك فإن كان الدين نقدا وبيع بنقد لم يجز بلا خلاف لأنه صرف بنسيئة وإن بيع بعرض وقبضه في المجلس ففيه روايتان إحداهما: لا يجوز قال أحمد في رواية ابن منصور في بيع الصك هو غرر، ونقل أبو طالب عنه أنه كرهه وقال: الصك لا يدرى أيخرج أو لا، وهذا يدل على أن مراده الصك من عطاء ms102 الدي
+
+**Rationale.** The ledger found the reading against al-Inṣāf's «وهو الصحيح من المذهب. وعليه الأصحاب», al-Iqnāʿ and al-Muntahā on the deeds: a settled debt is sold to the debtor and to no one else. That is the farq the madhhab states; the determined and the settled otherwise keep the reading.
+
+**Lean:** `Usul.Refinements.disposeBeforeQabdIn`, `Usul.Refinements.disposeBeforeQabdIn_conservative`  
+**Conservative over the earlier reading:** `Usul.Refinements.disposeBeforeQabdIn_conservative`
+
+<a id="deputy_of_qadi"></a>
+
+## The qāḍī's deputies are removed with him
+
+**Terms:** [al-jamʿ](../glossary.md#jam), [al-farq](../glossary.md#farq)  
+**Closes:** `rule:deputy_of_qadi`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061`: Ibn Rajab, qāʿida 61: whether one who acts generally does so by agency or by authority; the tranche-10 reading kept any deputy of general mandate in office.
+  > المتصرف تصرفا عاما على الناس كلهم من غير ولاية أحد معين وهو الإمام، هل يكون تصرفه عليهم بطريق الوكالة لهم أو بطريق الولاية؟ في ذلك وجهان وخرج الآمدي روايتين بناء على أن خطأه هل هو على عاقلته أو في بيت المال ; لأنا إن جعلناه على عاقلته فهو متصرف بنفسه وإن جعلناه في بيت المال فهو متصرف بوكالتهم لهم وعليهم فلا يضمن لهم ولا يهدر خطاءه فيجب في بيت المال واختيار القاضي في خلافه أنه متصرف بالوكالة لعمومه
+
+**Conditions**
+
+1. the deputy holds a general mandate
+2. he was appointed by a qāḍī, not by the imām
+
+**Texts**
+
+- `src:openiti-insaf-shamela21609/v11:p172`: al-Inṣāf, fāʾida 2 under the judge's removal: if the delegating party is a qāḍī whose authority lapses by death, dismissal etc., 'انعزل نائبه وإن لم ينعزل في المسائل التي قبلها' - this is the ṣaḥīḥ of the madhhab and the view of most aṣḥāb: deputies are removed (position 1).
+  > هذا الصحيح من المذهب. وعليه أكثر الأصحاب. وصححه في النظم، وغيره. وجزم به
+- `src:openiti-buhuti-kashshaf-shamela21642/v06:p293`: Kashshāf: if the delegator is a qāḍī and his authority lapses by death or otherwise, his deputies are removed, because they are his deputies like agents - position 1.
+  > زالت ولايته بموت أو عزل أو غيره كما لو اختل فيه بعض شروطه انعزلوا) لأنهم
+- `src:openiti-hajjawi-iqna-shamela7360/v04:p368`: The Iqnāʿ matn: if the delegator is a qāḍī whose authority lapses by death etc., they (his deputies) are removed - position 1.
+  > فإن كان المستتيب قاضيا فعزل نوابه أو زالت ولايته بموت أو عزل أو غيره:
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f001`: Ibn ʿAqīl from the aṣḥāb: «لأنهم نواب القاضي بخلاف القضاة فإنهم نواب للمسلمين».
+  > من ولايته عامة كخلفائه وأمنائه على الأطفال ونوابه على القرى فهل هم بمنزلة وكلائه أو نواب المسلمين فلا ينعزلون بموته؟ على وجهين ذكرهما الآمدي، وصحح صاحب الترغيب عدم الانعزال، وحكى ابن عقيل عن الأصحاب أنهم ينعزلون لأنهم نواب القاضي بخلاف القضاة فإنهم نواب للمسلمين، ولهذا يجب على الإمام نصب القضاة ولا يجب على القضاة الاستنابة، ويجاب عنه بأن القضاء ليس بفرض كفاية على رواية ولا يجب نصب قاض بالكلية وبأن
+
+**Rationale.** The ledger found the reading against al-Inṣāf's «هذا الصحيح من المذهب. وعليه أكثر الأصحاب», al-Iqnāʿ and Kashshāf: the qāḍī's deputies are removed with him, being his deputies like agents. The farq is the one Ibn ʿAqīl reports from the aṣḥāb, the qāḍīs themselves deputies of the Muslims; deputies of the imām keep the reading.
+
+**Lean:** `Usul.Refinements.removedWithPrincipalIn`, `Usul.Refinements.removedWithPrincipalIn_conservative`  
+**Conservative over the earlier reading:** `Usul.Refinements.removedWithPrincipalIn_conservative`

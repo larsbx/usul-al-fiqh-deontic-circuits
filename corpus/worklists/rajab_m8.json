@@ -16,7 +16,7 @@
     "records/openiti-rajab-shamela21730.jsonl": "f9cf2452d9cc5b3d9c064eb020b4cd0c6ee00e0dbd06eed8e5f1d821cd06b44c",
     "takhrij/dalala_furu.json": "fe691a7fe3ea277505aa97a3af440a48e88397584164804c11aa13a06808c96f",
     "takhrij/rajab_m8_furu.json": "ebfc6b6b2caa38a0b205f729323591b7e314bf836856ebd56045209fa581ceed",
-    "takhrij/rajab_m8_tranche10_furu.json": "52d314a5549dd6d6cb536c15d5ab53b1cab500dbdf17c1fdf89ff4a63f224baa",
+    "takhrij/rajab_m8_tranche10_furu.json": "be24a708c2407b7b6e113c39c64eb9b27eb63924acb18b2623b839e6e14d0c98",
     "takhrij/rajab_m8_tranche2_furu.json": "bbc536f5080f1eb241975ea373d81140d85c7fd2bdc726f306726b225846447f",
     "takhrij/rajab_m8_tranche3_furu.json": "2cc423038118df38951e81217479363acf9c7aee6b3dc9be4614e4796e825ad1",
     "takhrij/rajab_m8_tranche4_furu.json": "5ace8ad622bac680d06d128516e7cb78c5861c0d95296e920fe5f60ce58faa01",
@@ -171,9 +171,9 @@
       "segmentation_error": 1
     },
     "coverage": 0.987,
-    "madhhab_coverage": 0.693,
+    "madhhab_coverage": 0.691,
     "encoding_error": 0,
-    "ikhtilaf_matching_madhhab": 125,
+    "ikhtilaf_matching_madhhab": 124,
     "gaps_open": 6,
     "revisited": 37
   },
@@ -896,7 +896,8 @@
       "annotated_furu": 4,
       "pending_furu": [],
       "home_encoders": [
-        "disposal_before_qabd"
+        "disposal_before_qabd",
+        "disposal_before_qabd_debt"
       ]
     },
     {
@@ -1040,7 +1041,8 @@
       "annotated_furu": 2,
       "pending_furu": [],
       "home_encoders": [
-        "deputy_of_principal"
+        "deputy_of_principal",
+        "deputy_of_qadi"
       ]
     },
     {
