@@ -5,25 +5,25 @@ import Usul
 open Hadith
 
 -- أأتوضأ من لحوم الغنم؟ قال إن شئت توضأ وإن شئت لا تتوضأ , قال أأتوضأ (١) من لحوم الإبل؟ قال: نعم توضأ من لحوم الإبل → al-Irwāʾ 118; cited in ibn_lahham.qawaid_fawaid.openiti_lahham_shamay34193.q045
-#guard decide (Hukm.Hujja (.marwi .sahih)) == true  -- grade ẓann: passes the seam
+#guard decide (Verdict.Hujja .sahih) == true  -- grade ẓann: passes the seam
 -- فى النفس المؤمنة مائة من الإبل → al-Irwāʾ 2248; cited in ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q036
-#guard decide (Hukm.Hujja (.marwi .sahih)) == true  -- grade ẓann: passes the seam
+#guard decide (Verdict.Hujja .sahih) == true  -- grade ẓann: passes the seam
 -- أن النبى صلى الله عليه وسلم أعتق صفية وجعل عتقها صداقها → al-Irwāʾ 1856; cited in ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056
-#guard decide (Hukm.Hujja (.marwi .sahih)) == true  -- grade ẓann: passes the seam
+#guard decide (Verdict.Hujja .sahih) == true  -- grade ẓann: passes the seam
 -- عن الغلام شاتان مكافئتان , وعن الجارية شاة → al-Irwāʾ 1166; cited in ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147
-#guard decide (Hukm.Hujja (.marwi .sahih)) == true  -- grade ẓann: passes the seam
+#guard decide (Verdict.Hujja .sahih) == true  -- grade ẓann: passes the seam
 -- رأى رجلاً يصلى خلف الصف وحده فأمر أن يعيد → al-Irwāʾ 541; cited in ibn_uthaymin.manzuma.archive_manzuma_djvu.q071
-#guard decide (Hukm.Hujja (.marwi .sahih)) == true  -- grade ẓann: passes the seam
+#guard decide (Verdict.Hujja .sahih) == true  -- grade ẓann: passes the seam
 -- المسلمون على شروطهم → al-Irwāʾ 1303, 1313, 1391, 1890; cited in al-Saʿdī Q22
-#guard decide (Hukm.Hujja (.marwi .sahih)) == true  -- grade ẓann: passes the seam
+#guard decide (Verdict.Hujja .sahih) == true  -- grade ẓann: passes the seam
 #check @Usul.Sadi.Voids
 #check @Usul.Sadi.q22_valid_iff_preserves_prohibition
 -- الصلح جائز بين المسلمين → al-Irwāʾ 1425; cited in al-Saʿdī Q22
-#guard decide (Hukm.Hujja (.marwi .hasan)) == true  -- grade ẓann: passes the seam
+#guard decide (Verdict.Hujja .hasan) == true  -- grade ẓann: passes the seam
 #check @Usul.Sadi.Voids
 #check @Usul.Sadi.q22_valid_iff_preserves_prohibition
 -- من سبق إلى ما لم يسبق إليه أحد فهو له → al-Irwāʾ 1553; cited in al-Saʿdī Q24
-#guard decide (Hukm.Hujja (.marwi .daif)) == false  -- grade below ẓann: does not pass the seam
+#guard decide (Verdict.Hujja .daif) == false  -- grade below ẓann: does not pass the seam
 #check @Usul.Muamalat.firstClaimant
 #check @Usul.Muamalat.q24_first_has_priority
 #check @Usul.Muamalat.q24_is_optimal
@@ -33,7 +33,7 @@ open Hadith
 #check @Usul.Seam.mursalDaif_admits_only_hasan_up
 #check @Usul.Seam.q24_dalil_not_admitted
 -- من سبق إلى ما لم يسبق إليه مسلم فهو أحق به → al-Irwāʾ 1555; cited in al-Saʿdī Q24
-#guard decide (Hukm.Hujja (.marwi .daif)) == false  -- grade below ẓann: does not pass the seam
+#guard decide (Verdict.Hujja .daif) == false  -- grade below ẓann: does not pass the seam
 #check @Usul.Muamalat.firstClaimant
 #check @Usul.Muamalat.q24_first_has_priority
 #check @Usul.Muamalat.q24_is_optimal
@@ -43,19 +43,19 @@ open Hadith
 #check @Usul.Seam.mursalDaif_admits_only_hasan_up
 #check @Usul.Seam.q24_dalil_not_admitted
 -- من نذر أن يطيع الله فليطعه → al-Irwāʾ 967, 1140, 2596; cited in al-Saʿdī Q47
-#guard decide (Hukm.Hujja (.marwi .sahih)) == true  -- grade ẓann: passes the seam
+#guard decide (Verdict.Hujja .sahih) == true  -- grade ẓann: passes the seam
 #check @Usul.Muamalat.obligationStatus
 #check @Usul.Muamalat.q47_vow_as_law
 #check @Usul.Muamalat.q47_ignores_source
 #check @Usul.Muamalat.q47_consequences
 -- لا ضرر ولا ضرار → al-Irwāʾ 896, 1250, 1404, 1432, 2653; cited in sadi.qawaid_jamia.archive_pdf1995_tess.i015
-#guard decide (Hukm.Hujja (.marwi .sahih)) == true  -- grade ẓann: passes the seam
+#guard decide (Verdict.Hujja .sahih) == true  -- grade ẓann: passes the seam
 -- إنما الأعمال بالنيات → al-Irwāʾ 22, 87, 159, 216, 585, 606, 854, 975, 1063, 1087, 2572; cited in al-Saʿdī Q57
-#guard decide (Hukm.Hujja (.marwi .sahih)) == true  -- grade ẓann: passes the seam
+#guard decide (Verdict.Hujja .sahih) == true  -- grade ẓann: passes the seam
 #check @Usul.Kulliyyat.reading
 #check @Usul.Kulliyyat.q57_possible_intent_prevails
 #check @Usul.Kulliyyat.q57_impossible_intent_falls_back
 #check @Usul.Kulliyyat.q57_unknown_intent_literal
 #check @Usul.Kulliyyat.q57_is_priority
 -- من عمل عملا ليس عليه أمرنا فهو رد → al-Irwāʾ 276; cited in sadi.tariq_wusul.archive_tariq_tess.q636
-#guard decide (Hukm.Hujja (.marwi .sahih)) == true  -- grade ẓann: passes the seam
+#guard decide (Verdict.Hujja .sahih) == true  -- grade ẓann: passes the seam

@@ -8,10 +8,8 @@
       "excerpt_ar": "\" من أذنب وهو يضحك دخل النار وهو يبكي \". موضوع.",
       "term_ar": "موضوع.",
       "albani": "mawdu",
-      "kernel": "daifJiddan",
-      "kernel_with_rulings": "mawdu",
-      "args": 2,
-      "class": "qarina",
+      "kernel": "mawdu",
+      "class": "derivable",
       "turuq": [
         {
           "madar": "al_yashkuri",
@@ -41,16 +39,7 @@
           ]
         }
       ],
-      "rulings": [
-        {
-          "arg": 1,
-          "kind": "hukm",
-          "ceiling": "mawdu",
-          "by": "الألباني",
-          "said_ar": "وهذا سند موضوع"
-        }
-      ],
-      "note": "the same forger as #16 («فالحمل في الحديث على اليشكري أولى»); the mawqūf on Bakr al-Muzanī is «الأشبه», a different claim; the same isnād as #16 («بإسناده المتقدم»), which al-Albānī ruled «سند موضوع» there; «فالحمل في الحديث على اليشكري أولى». The mawqūf on Bakr al-Muzanī is «الأشبه», a different claim. By the rules alone the route is sāqiṭ (D5)"
+      "note": "the same forger as #16 («فالحمل في الحديث على اليشكري أولى»); the mawqūf on Bakr al-Muzanī is «الأشبه», a different claim"
     },
     {
       "n": 18,
@@ -117,10 +106,8 @@
       "excerpt_ar": "\" زينوا مجالس نسائكم بالمغزل \". موضوع.",
       "term_ar": "موضوع.",
       "albani": "mawdu",
-      "kernel": "daifJiddan",
-      "kernel_with_rulings": "mawdu",
-      "args": 2,
-      "class": "qarina",
+      "kernel": "mawdu",
+      "class": "derivable",
       "turuq": [
         {
           "madar": "al_yashkuri",
@@ -141,16 +128,7 @@
           ]
         }
       ],
-      "rulings": [
-        {
-          "arg": 1,
-          "kind": "hukm",
-          "ceiling": "mawdu",
-          "by": "ابن الجوزي",
-          "said_ar": "ومن طريق الخطيب أورده ابن الجوزي في \" الموضوعات \" (٢ / ٢٧٧) وأقره السيوطي"
-        }
-      ],
-      "note": "Ibn al-Jawzī's ḥukm (in al-Mawḍūʿāt), endorsed by al-Suyūṭī; by the rules alone the kadhdhāb route is sāqiṭ (D5)"
+      "note": ""
     },
     {
       "n": 20,

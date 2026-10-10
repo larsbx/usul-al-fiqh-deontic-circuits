@@ -29,9 +29,8 @@ structure Tariq where
   madar   : Nat
   deriving DecidableEq, Repr
 
-/-- Best ṭarīq. The unit is the bottom of the scale; a file with no ṭarīq at all is not on the
-scale, and `judgeH` sends it to the mawḍūʿ branch. -/
-def best (ts : List Tariq) : Verdict := ts.foldr (fun t v => t.verdict.join v) .daifJiddan
+/-- Best ṭarīq (the unit is mawḍūʿ: no ṭarīq, no ḥadīth). -/
+def best (ts : List Tariq) : Verdict := ts.foldr (fun t v => t.verdict.join v) .mawdu
 
 /-- Independent supporting madār: ṭuruq at least ḍaʿīf, counted once per madār. -/
 def supports (ts : List Tariq) : List Nat :=
@@ -122,14 +121,13 @@ theorem judge_not_monotone :
   ⟨twoWeak, 1, [], 2, [(1, 0)], List.nil_subset _, by decide⟩
 
 
-/-! ## Rulings: a critic's ḥukm or a matn criterion caps the judgement (decisions D2, D5)
+/-! ## Rulings: a critic's ḥukm or a matn criterion caps the verdict (decision D2)
 
-Every qarīna case of the H4 tranches is a crossing into the mawḍūʿ branch: what moves it is a
+The qarīna cases of the H4 tranches all sit above al-Albānī's verdict: what lowers them is a
 critic's ruling («باطل منكر», «هو موضوع») or a criterion on the matn, never a rule over
-grades and routes. Such a ruling is an argument of the same AF, with a ceiling (a `Hukm`): when
-it is in the grounded extension the judgement is capped at the ceiling, and a jawāb that defeats
-it removes the cap. A ruling only ever lowers (`judgeR_le`), and with no rulings `judgeR` is
-`judge` on the riwāya branch. The
+grades and routes. Such a ruling is an argument of the same AF, with a ceiling: when it is in
+the grounded extension the verdict is capped at the ceiling, and a jawāb that defeats it removes
+the cap. A ruling only ever lowers (`judgeR_le`), and with no rulings `judgeR` is `judge`. The
 kind (`hukm` / `matn`) is kept for reporting: cases decided this way are counted apart from
 rule-derived ones, so the share that rests on a critic's judgement stays visible. -/
 
@@ -140,77 +138,56 @@ inductive RulingKind where
 structure Ruling where
   arg     : Nat          -- its index in the AF
   kind    : RulingKind
-  ceiling : Hukm
+  ceiling : Verdict
   deriving DecidableEq, Repr
 
 /-- Apply every ruling that survives (is in the grounded set `g`). -/
-def capWith (g : List Nat) (rs : List Ruling) (h : Hukm) : Hukm :=
-  rs.foldr (fun r acc => if g.contains r.arg then r.ceiling.meet acc else acc) h
+def capWith (g : List Nat) (rs : List Ruling) (v : Verdict) : Verdict :=
+  rs.foldr (fun r acc => if g.contains r.arg then r.ceiling.meet acc else acc) v
 
-def judgeR (ts : List Tariq) (n : Nat) (att : List (Nat × Nat)) (rs : List Ruling) : Hukm :=
-  capWith (Usul.Grounded.grounded n att) rs (.marwi (judge ts n att))
+def judgeR (ts : List Tariq) (n : Nat) (att : List (Nat × Nat)) (rs : List Ruling) : Verdict :=
+  capWith (Usul.Grounded.grounded n att) rs (judge ts n att)
 
 theorem judgeR_nil (ts : List Tariq) (n : Nat) (att : List (Nat × Nat)) :
-    judgeR ts n att [] = .marwi (judge ts n att) := rfl
+    judgeR ts n att [] = judge ts n att := rfl
 
-theorem capWith_le (g : List Nat) (rs : List Ruling) (h : Hukm) : capWith g rs h ≤ h := by
+theorem capWith_le (g : List Nat) (rs : List Ruling) (v : Verdict) : capWith g rs v ≤ v := by
   induction rs with
-  | nil => exact Hukm.le_refl' h
+  | nil => exact Verdict.le_refl' v
   | cons r rs ih =>
     simp only [capWith, List.foldr_cons]
     split
-    · exact Hukm.le_trans' (Hukm.meet_le_right _ _) ih
+    · exact Verdict.le_trans' (Verdict.meet_le_right _ _) ih
     · exact ih
 
 /-- A ruling only lowers: it never raises a verdict the rules gave. -/
 theorem judgeR_le (ts : List Tariq) (n : Nat) (att : List (Nat × Nat)) (rs : List Ruling) :
-    judgeR ts n att rs ≤ .marwi (judge ts n att) :=
+    judgeR ts n att rs ≤ judge ts n att :=
   capWith_le _ _ _
 
-/-- A surviving ruling bounds the judgement by its ceiling. -/
+/-- A surviving ruling bounds the verdict by its ceiling. -/
 theorem capWith_le_ceiling {g : List Nat} {rs : List Ruling} {r : Ruling} (hr : r ∈ rs)
-    (hg : g.contains r.arg = true) (h : Hukm) : capWith g rs h ≤ r.ceiling := by
+    (hg : g.contains r.arg = true) (v : Verdict) : capWith g rs v ≤ r.ceiling := by
   induction rs with
   | nil => cases hr
   | cons x xs ih =>
     simp only [capWith, List.foldr_cons]
-    rcases List.mem_cons.1 hr with rfl | hm
-    · simp only [hg, ite_true]; exact Hukm.meet_le_left _ _
+    rcases List.mem_cons.1 hr with rfl | h
+    · simp only [hg, ite_true]; exact Verdict.meet_le_left _ _
     · split
-      · exact Hukm.le_trans' (Hukm.meet_le_right _ _) (ih hm)
-      · exact ih hm
+      · exact Verdict.le_trans' (Verdict.meet_le_right _ _) (ih h)
+      · exact ih h
 
-theorem Hukm.meet_eq_or (a b : Hukm) : a.meet b = a ∨ a.meet b = b := by
-  unfold Hukm.meet; split <;> simp
-
-/-- The mawḍūʿ branch is reached only through the start value or a surviving ruling whose
-ceiling is mawḍūʿ. -/
-theorem capWith_eq_mawdu {g : List Nat} {rs : List Ruling} {h : Hukm} (e : capWith g rs h = .mawdu) :
-    h = .mawdu ∨ ∃ r ∈ rs, g.contains r.arg = true ∧ r.ceiling = .mawdu := by
-  induction rs with
-  | nil => exact .inl e
-  | cons x xs ih =>
-    simp only [capWith, List.foldr_cons] at e
-    split at e
-    · rcases Hukm.meet_eq_or x.ceiling _ with m | m <;> rw [m] at e
-      · exact .inr ⟨x, List.mem_cons_self .., ‹_›, e⟩
-      · rcases ih e with h0 | ⟨r, hr, hg, hc⟩
-        · exact .inl h0
-        · exact .inr ⟨r, List.mem_cons_of_mem _ hr, hg, hc⟩
-    · rcases ih e with h0 | ⟨r, hr, hg, hc⟩
-      · exact .inl h0
-      · exact .inr ⟨r, List.mem_cons_of_mem _ hr, hg, hc⟩
-
-/-- Worked: a forgery ruling sends two weak routes to the mawḍūʿ branch; a jawāb that defeats it
-restores the rule-derived verdict. -/
+/-- Worked: a forgery ruling caps two weak routes at mawḍūʿ; a jawāb that defeats it restores
+the rule-derived verdict. -/
 example : judgeR twoWeak 2 [] [⟨1, .hukm, .mawdu⟩] = .mawdu := by decide
-example : judgeR twoWeak 3 [(2, 1)] [⟨1, .hukm, .mawdu⟩] = .marwi .hasan := by decide
+example : judgeR twoWeak 3 [(2, 1)] [⟨1, .hukm, .mawdu⟩] = .hasan := by decide
 
 
 /-! ## Li-dhātihi vs li-ghayrihi
 
 *Nuzha*: the lifted ḥadīth «منحط عن رتبة الحسن لذاته، وربما توقف بعضهم عن إطلاق اسم الحسن عليه».
-The four-valued verdict keeps one ḥasan; `Basis` records how it was reached, and `refinedRank`
+The five-valued verdict keeps one ḥasan; `Basis` records how it was reached, and `refinedRank`
 places the lifted grade strictly below the same grade reached by itself. -/
 
 inductive Basis where
@@ -319,7 +296,7 @@ theorem strict_weaker_follower_never_lifts (a b : Nat) (h : a < b) :
     mutabar .strict [(⟨.daif, 0⟩, a), (⟨.daif, 1⟩, b)] = false := by
   have hb : ¬ b < a := by omega
   have hba : ¬ b ≤ a := by omega
-  have d1 : ¬ (Verdict.daif ≤ Verdict.daifJiddan) := by decide
+  have d1 : ¬ (Verdict.daif ≤ Verdict.mawdu) := by decide
   have d2 : Verdict.daif ≤ Verdict.daif := by decide
   simp [mutabar, baseRoute, best, Verdict.join, hb, hba, d1, d2]
 
@@ -335,38 +312,13 @@ theorem bank_scale_blind_in_itibar (m : Martaba) (h5 : 5 ≤ m.rank) (h9 : m.ran
 /-- The project default (decision D3, 2026-10-09). -/
 def Itibar.default : Itibar := .strict
 
-/-! ## The judgement on a matn (decision D5)
-
-A file with no isnād at all (لا أصل له) is on the mawḍūʿ branch; any route puts it on the riwāya
-branch, at the verdict the rules give. Only a surviving ruling moves a narrated matn across. -/
-
-/-- The kernel as recorded in the H4 tranches, without rulings. -/
-def judgeH (pol : Itibar) (rs : List (Tariq × Nat)) (n : Nat) (att : List (Nat × Nat)) : Hukm :=
-  if rs.isEmpty then .mawdu else .marwi (judgeI pol rs n att)
-
-/-- …and with them (D2). -/
+/-- Rulings over the strict muʿtabar reading: the kernel as recorded in the H4 tranches. -/
 def judgeRI (pol : Itibar) (rs : List (Tariq × Nat)) (n : Nat) (att : List (Nat × Nat))
-    (rulings : List Ruling) : Hukm :=
-  capWith (Usul.Grounded.grounded n att) rulings (judgeH pol rs n att)
+    (rulings : List Ruling) : Verdict :=
+  capWith (Usul.Grounded.grounded n att) rulings (judgeI pol rs n att)
 
-/-- Rules alone fabricate nothing: without rulings, mawḍūʿ means there is no route. -/
-theorem judgeH_mawdu_iff (pol : Itibar) (rs : List (Tariq × Nat)) (n : Nat) (att : List (Nat × Nat)) :
-    judgeH pol rs n att = .mawdu ↔ rs = [] := by
-  unfold judgeH; cases rs <;> simp
-
-/-- **D5.** A matn reaches the mawḍūʿ branch only by a finding: no isnād at all, or a surviving
-ruling (a critic's ḥukm bi'l-waḍʿ, naqd al-matn) whose ceiling is mawḍūʿ. A kadhdhāb route alone
-is sāqiṭ (`Isnad.saqit_of_kadhdhab`). -/
-theorem mawdu_only_by_finding {pol : Itibar} {rs : List (Tariq × Nat)} {n : Nat}
-    {att : List (Nat × Nat)} {rulings : List Ruling} (e : judgeRI pol rs n att rulings = .mawdu) :
-    rs = [] ∨ ∃ r ∈ rulings, (Usul.Grounded.grounded n att).contains r.arg = true ∧ r.ceiling = .mawdu :=
-  (capWith_eq_mawdu e).imp_left (judgeH_mawdu_iff pol rs n att).1
-
-theorem judgeRI_lax {rs : List (Tariq × Nat)} (h : rs ≠ []) (n : Nat) (att : List (Nat × Nat))
-    (rulings : List Ruling) :
+theorem judgeRI_lax (rs : List (Tariq × Nat)) (n : Nat) (att : List (Nat × Nat)) (rulings : List Ruling) :
     judgeRI .lax rs n att rulings = judgeR (rs.map Prod.fst) n att rulings := by
-  cases rs with
-  | nil => exact absurd rfl h
-  | cons _ _ => simp [judgeRI, judgeR, judgeH, judgeI_lax]
+  simp [judgeRI, judgeR, judgeI_lax]
 
 end Hadith
