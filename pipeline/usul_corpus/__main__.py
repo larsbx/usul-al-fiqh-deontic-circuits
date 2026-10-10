@@ -422,7 +422,7 @@ def cmd_bank_review(_: argparse.Namespace) -> int:
     verdicts = [{"id": l["id"], "candidate": l["hukm"], **bank_review(l, en.get(l["id"]))} for l in labels]
     # The conflicts of the bare reading, followed round by round (docs/architecture/fatawa-labels.md#conflicts).
     rounds = [("R0 bare reading", frozenset()), ("R1 reading", frozenset({"roles"})), ("R2 jamʿ σ", frozenset({"roles", "didd"})),
-              ("R3 jamʿ scope", frozenset({"roles", "didd", "scope"})), ("R4 tarjīḥ", STAGES)]
+              ("R3 jamʿ scope", frozenset({"roles", "didd", "scope"})), ("R4 tarjīḥ", STAGES - {"act"}), ("R5 act", STAGES)]
     clash = lambda v: v["class"] in ("conflict", "ikhtilaf")  # noqa: E731
     base = [l for l in labels if l["hukm"] and clash(bank_review(l, None, frozenset()))]
     by_round = {name: sum(clash(bank_review(l, None, st)) for l in base) for name, st in rounds}
@@ -439,6 +439,10 @@ def cmd_bank_review(_: argparse.Namespace) -> int:
                                            "voted": sum(v["class"] == c for v in voted)} for c in classes},
         "priority": dict(Counter(v["priority"] for v in labelled)),
         "omission_perspective": sum(v["act"] == "omission" for v in labelled),
+        "english_agreement_by_matches_question": {
+            str(flag): {"agree": sum(en.get(l["id"]) == l["hukm"] for l in labels if l["hukm"] and en.get(l["id"]) and l["matches_question"] is flag),
+                        "voted": sum(1 for l in labels if l["hukm"] and en.get(l["id"]) and l["matches_question"] is flag)}
+            for flag in (True, False)},
         "conflicts_by_round": by_round,
     }
     _dump(CORPUS / "fatawa" / "bank_review_report.json", rep)

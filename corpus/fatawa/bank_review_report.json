@@ -1,33 +1,33 @@
 {
-  "labelled": 14359,
+  "labelled": 14352,
   "class": {
-    "confirmed": 7956,
-    "consistent": 4617,
-    "rejected": 5,
-    "misread": 1766,
+    "confirmed": 7958,
+    "consistent": 4624,
+    "rejected": 3,
+    "misread": 1760,
     "ikhtilaf": 1,
-    "conflict": 12,
+    "conflict": 4,
     "no_reading": 2
   },
   "class_by_hukm": {
     "wajib": {
       "confirmed": 2778,
-      "misread": 568,
-      "conflict": 5
+      "misread": 560,
+      "conflict": 1
     },
     "mandub": {
-      "confirmed": 512,
+      "confirmed": 516,
       "misread": 82,
       "ikhtilaf": 1,
       "rejected": 1,
       "consistent": 1
     },
     "mubah": {
-      "misread": 353,
-      "consistent": 4612,
-      "conflict": 5,
-      "confirmed": 97,
-      "rejected": 4
+      "misread": 355,
+      "consistent": 4619,
+      "confirmed": 94,
+      "conflict": 2,
+      "rejected": 2
     },
     "makruh": {
       "misread": 37,
@@ -35,37 +35,37 @@
       "consistent": 2
     },
     "haram": {
-      "confirmed": 4496,
+      "confirmed": 4497,
       "misread": 726,
-      "conflict": 2,
+      "conflict": 1,
       "no_reading": 2,
       "consistent": 2
     }
   },
   "english_agreement_by_class": {
     "confirmed": {
-      "agree": 2723,
-      "voted": 3369
+      "agree": 2724,
+      "voted": 3371
     },
     "consistent": {
-      "agree": 1663,
-      "voted": 2044
+      "agree": 1666,
+      "voted": 2048
     },
     "rejected": {
-      "agree": 1,
-      "voted": 3
+      "agree": 0,
+      "voted": 1
     },
     "misread": {
-      "agree": 533,
-      "voted": 747
+      "agree": 532,
+      "voted": 746
     },
     "ikhtilaf": {
       "agree": 0,
       "voted": 1
     },
     "conflict": {
-      "agree": 6,
-      "voted": 10
+      "agree": 3,
+      "voted": 4
     },
     "no_reading": {
       "agree": 1,
@@ -73,16 +73,27 @@
     }
   },
   "priority": {
-    "medium": 8823,
-    "high": 2813,
-    "low": 2723
+    "medium": 8829,
+    "high": 2799,
+    "low": 2724
   },
   "omission_perspective": 80,
+  "english_agreement_by_matches_question": {
+    "True": {
+      "agree": 3238,
+      "voted": 3943
+    },
+    "False": {
+      "agree": 1688,
+      "voted": 2229
+    }
+  },
   "conflicts_by_round": {
-    "R0 bare reading": 959,
-    "R1 reading": 566,
-    "R2 jamʿ σ": 543,
-    "R3 jamʿ scope": 15,
-    "R4 tarjīḥ": 13
+    "R0 bare reading": 951,
+    "R1 reading": 565,
+    "R2 jamʿ σ": 542,
+    "R3 jamʿ scope": 13,
+    "R4 tarjīḥ": 11,
+    "R5 act": 5
   }
 }
