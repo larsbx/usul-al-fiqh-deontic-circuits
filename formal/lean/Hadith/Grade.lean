@@ -3,10 +3,10 @@ import Usul.Signature
 /-!
 # Narrator grades and ḥadīth verdicts (al-Albānī track §2.1, H2)
 
-Ibn Ḥajar, *Taqrīb al-Tahdhīb*, muqaddima: twelve *marātib* for narrators, best first. The
-*Taqrīb* is al-Albānī's default valuation; individual verdicts may override it, and those
-overrides are data (H4), not changes to this scale. Wording of each rung is from recall and
-is checked against the pinned edition in H0.
+Ibn Ḥajar, *Taqrīb al-Tahdhīb*, muqaddima: twelve *marātib* for narrators, best first
+(`src:openiti-taqrib-jk121/v01:p074`–`p075`; each rung is quoted and linked to its constructor
+in `corpus/hadith/kernel_scales.json`). The *Taqrīb* is al-Albānī's default valuation;
+individual verdicts may override it, and those overrides are data (H4), not changes to this scale.
 
 The verdict scale is the *Nuzha*'s partition of the *maqbūl* / *mardūd*, coarsened to the
 five values al-Albānī's *Silsilatān* actually emit. `grade` bridges into the uṣūl kernel's
@@ -21,7 +21,7 @@ inductive Martaba where
   | awthaq      --  2 emphasised praise: awthaq al-nās, thiqa thiqa
   | thiqa       --  3 thiqa, mutqin, thabt, ʿadl
   | saduq       --  4 ṣadūq, lā baʾs bihi
-  | saduqYahim  --  5 ṣadūq yahim / sayyiʾ al-ḥifẓ / lahu awhām / ikhtilāṭ
+  | saduqYahim  --  5 ṣadūq yahim / sayyiʾ al-ḥifẓ / lahu awhām / taghayyar; also one accused of bidʿa
   | maqbul      --  6 maqbūl where followed, else layyin
   | mastur      --  7 mastūr, majhūl al-ḥāl
   | daif        --  8 ḍaʿīf

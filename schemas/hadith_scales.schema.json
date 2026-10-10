@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/hadith_scales.schema.json",
+  "title": "Ḥadīth kernel scales (al-Albānī track, H0/H3)",
+  "type": "object",
+  "required": ["scales"],
+  "additionalProperties": false,
+  "properties": {
+    "note": {"type": "string"},
+    "scales": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "work", "claim", "items"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z_]+$"},
+          "work": {"type": "string"},
+          "claim": {"type": "integer", "minimum": 1, "description": "the count the roadmap recalled"},
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["n", "ref", "excerpt_ar"],
+              "additionalProperties": false,
+              "properties": {
+                "n": {"type": "integer", "minimum": 1},
+                "ref": {"type": "string", "pattern": "^src:[a-z0-9-]+/v\\d+:p\\d+$"},
+                "excerpt_ar": {"type": "string", "minLength": 1},
+                "kind": {"enum": ["valuation", "guard", "defeater", "seam", "presentation"]},
+                "lean": {"type": "string", "pattern": "^Hadith\\."},
+                "note": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

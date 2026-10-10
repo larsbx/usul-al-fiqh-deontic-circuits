@@ -1,0 +1,343 @@
+{
+  "note": "Tranche 3 of al-Ḍaʿīfa (H4): entries 26–35 in order, none skipped. Conventions as in tranche 1; rulings (D2) on qarīna cases as in tranches 1–2.",
+  "work": "albani.daifa",
+  "cases": [
+    {
+      "n": 26,
+      "ref": "src:shamela-12762/v01:p100",
+      "excerpt_ar": "\" الحدة تعتري خيار أمتي \". ضعيف.",
+      "term_ar": "ضعيف.",
+      "albani": "daif",
+      "kernel": "daif",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "sallam_al_tawil",
+          "links": [
+            {
+              "rawi": "muttaham",
+              "who": "سلام الطويل",
+              "said_ar": "اتهمه غير واحد بالكذب والوضع"
+            },
+            {
+              "rawi": "daif",
+              "who": "الفضل بن عطية",
+              "said_ar": "ضعيف لم يتهم"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "عطاء"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "ابن عباس"
+            }
+          ]
+        },
+        {
+          "madar": "muhammad_b_al_fadl",
+          "links": [
+            {
+              "rawi": "kadhdhab",
+              "who": "محمد بن الفضل",
+              "said_ar": "كذاب، كذبه ابن معين والفلاس"
+            },
+            {
+              "rawi": "daif",
+              "who": "الفضل بن عطية"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "عطاء"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "ابن عباس"
+            }
+          ]
+        },
+        {
+          "madar": "abu_mansur_al_farisi",
+          "links": [
+            {
+              "rawi": "saduq",
+              "who": "دريد بن نافع",
+              "said_ar": "شيخ (أبو حاتم)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "أبو منصور الفارسي",
+              "said_ar": "مختلف في صحبته؛ قال البخاري: حديث مرسل",
+              "muttasil": false
+            }
+          ]
+        }
+      ],
+      "note": "«ضعيف لإرساله»: the only usable route is the mursal of Abū Manṣūr. The other two run through a muttaham and a kadhdhāb («فلا يفرح بمتابعته»), so they neither lift nor support (liftable_cons_shadid). Durayd's «شيخ» is encoded ṣadūq; the gap caps the route at ḍaʿīf either way"
+    },
+    {
+      "n": 27,
+      "ref": "src:shamela-12762/v01:p101",
+      "excerpt_ar": "\" الحدة تعتري حملة القرآن لعزة القرآن في أجوافهم \". موضوع.",
+      "term_ar": "موضوع.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "wahb_b_wahb",
+          "links": [
+            {
+              "rawi": "kadhdhab",
+              "who": "وهب بن وهب",
+              "said_ar": "يضع الحديث (ابن عدي)؛ يكذب (ابن معين)"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "معاذ بن جبل"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "n": 28,
+      "ref": "src:shamela-12762/v01:p102",
+      "excerpt_ar": "\" الحدة لا تكون إلا في صالحي أمتي وأبرارها ثم تفيء \". موضوع.",
+      "term_ar": "موضوع.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [
+        {
+          "madar": "bishr_b_al_husayn",
+          "links": [
+            {
+              "rawi": "kadhdhab",
+              "who": "بشر بن الحسين",
+              "said_ar": "كذاب"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "الزبير بن عدي"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "أنس بن مالك"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "n": 29,
+      "ref": "src:shamela-12762/v01:p103",
+      "excerpt_ar": "\" خيار أمتي أحداؤهم الذين إذا غضبوا رجعوا \". باطل.",
+      "term_ar": "باطل.",
+      "albani": "mawdu",
+      "kernel": "daifJiddan",
+      "kernel_with_rulings": "mawdu",
+      "args": 2,
+      "class": "qarina",
+      "turuq": [
+        {
+          "madar": "abd_allah_b_qanbar",
+          "links": [
+            {
+              "rawi": "matruk",
+              "who": "عبد الله بن قنبر",
+              "said_ar": "تركوه (الأزدي)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "قنبر"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "علي"
+            }
+          ]
+        },
+        {
+          "madar": "yaghnam_b_salim",
+          "links": [
+            {
+              "rawi": "kadhdhab",
+              "who": "يغنم بن سالم بن قنبر",
+              "said_ar": "كذاب (الهيثمي)"
+            }
+          ]
+        }
+      ],
+      "rulings": [
+        {
+          "arg": 1,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "الذهبي",
+          "said_ar": "وساق له الذهبي في ترجمته هذا الحديث وقال: خبر باطل"
+        }
+      ],
+      "note": "the best route is through a matrūk, so the kernel gives ḍaʿīf jiddan; bāṭil follows al-Dhahabī's «خبر باطل», which Ibn Ḥajar endorsed"
+    },
+    {
+      "n": 30,
+      "ref": "src:shamela-12762/v01:p104",
+      "excerpt_ar": "\" الخير في وفي أمتي إلى يوم القيامة \". لا أصل له.",
+      "term_ar": "لا أصل له.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [],
+      "note": "no isnād («لا أعرفه», Ibn Ḥajar)"
+    },
+    {
+      "n": 31,
+      "ref": "src:shamela-12762/v01:p104",
+      "excerpt_ar": "\" الدنيا خطوة رجل مؤمن \". لا أصل له.",
+      "term_ar": "لا أصل له.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [],
+      "note": "no isnād (Ibn Taymiyya)"
+    },
+    {
+      "n": 32,
+      "ref": "src:shamela-12762/v01:p105",
+      "excerpt_ar": "\" الدنيا حرام على أهل الآخرة، والآخرة حرام على أهل الدنيا، والدنيا والآخرة حرام على أهل الله \". موضوع.",
+      "term_ar": "موضوع.",
+      "albani": "mawdu",
+      "kernel": "daif",
+      "kernel_with_rulings": "mawdu",
+      "args": 2,
+      "class": "qarina",
+      "turuq": [
+        {
+          "madar": "jabala_b_sulayman",
+          "links": [
+            {
+              "rawi": "majhul",
+              "who": "جعفر بن محمد الأبهري",
+              "said_ar": "لم أعرفهم"
+            },
+            {
+              "rawi": "majhul",
+              "who": "القاسم بن علقمة الأبهري"
+            },
+            {
+              "rawi": "majhul",
+              "who": "الحسن بن علي بن نصر الطوسي"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "محمد بن حرب"
+            },
+            {
+              "rawi": "daif",
+              "who": "جبلة بن سليمان",
+              "said_ar": "ليس بثقة (ابن معين)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "ابن جريج",
+              "said_ar": "عنعنة ابن جريج",
+              "tadlis": "t3",
+              "sigha": "anana"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "عطاء"
+            },
+            {
+              "rawi": "sahabi",
+              "who": "ابن عباس"
+            }
+          ]
+        }
+      ],
+      "rulings": [
+        {
+          "arg": 1,
+          "kind": "matn",
+          "ceiling": "mawdu",
+          "by": "الألباني",
+          "said_ar": "فإنه خبر باطل لا يشك في ذلك مؤمن عاقل"
+        }
+      ],
+      "note": "by the rules the chain is ḍaʿīf (unknowns, a weak link, a tier-3 ʿanʿana). Mawḍūʿ rests on naqd al-matn: the matn forbids what the Qurʾān permits («خبر باطل لا يشك في ذلك مؤمن عاقل»). The three unknowns are listed in order «الثلاثة الذين دون الطوسي»; al-Albānī says he does not know them"
+    },
+    {
+      "n": 33,
+      "ref": "src:shamela-12762/v01:p106",
+      "excerpt_ar": "\" الدنيا ضرة الآخرة \". لا أصل له.",
+      "term_ar": "لا أصل له.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [],
+      "note": "no marfūʿ isnād; reported from ʿĪsā"
+    },
+    {
+      "n": 34,
+      "ref": "src:shamela-12762/v01:p106",
+      "excerpt_ar": "\" احذروا الدنيا فإنها أسحر من هاروت وماروت \". منكر لا أصل له.",
+      "term_ar": "منكر لا أصل له.",
+      "albani": "mawdu",
+      "kernel": "daif",
+      "kernel_with_rulings": "mawdu",
+      "args": 2,
+      "class": "qarina",
+      "turuq": [
+        {
+          "madar": "abu_al_darda_al_rahawi",
+          "links": [
+            {
+              "rawi": "saduqYahim",
+              "who": "هشام بن عمار",
+              "said_ar": "صدوق وقد تغير (أبو حاتم)"
+            },
+            {
+              "rawi": "thiqa",
+              "who": "صدقة بن خالد"
+            },
+            {
+              "rawi": "saduqYahim",
+              "who": "عتبة بن أبي حكيم",
+              "said_ar": "صدوق يخطئ كثيرا (ابن حجر)"
+            },
+            {
+              "rawi": "majhul",
+              "who": "أبو الدرداء الرهاوي",
+              "said_ar": "لا يدرى من هو",
+              "muttasil": false
+            }
+          ]
+        }
+      ],
+      "rulings": [
+        {
+          "arg": 1,
+          "kind": "hukm",
+          "ceiling": "mawdu",
+          "by": "الذهبي",
+          "said_ar": "لا يدرى من ذا، والخبر منكر لا أصل له"
+        }
+      ],
+      "note": "one route (al-Albānī shows Ibn Ḥajar's «second route» is the same one), mursal through an unknown, so the kernel gives ḍaʿīf. «منكر لا أصل له» is al-Dhahabī's ḥukm, endorsed by Ibn Ḥajar and adopted; like #8, a weak route exists yet the verdict is «لا أصل له»"
+    },
+    {
+      "n": 35,
+      "ref": "src:shamela-12762/v01:p108",
+      "excerpt_ar": "\" من أذن فليقم \". لا أصل له بهذا اللفظ.",
+      "term_ar": "لا أصل له بهذا اللفظ.",
+      "albani": "mawdu",
+      "kernel": "mawdu",
+      "class": "derivable",
+      "turuq": [],
+      "note": "no route for this lafẓ; the weak route (al-Ifrīqī) carries «من أذن فهو يقيم», a different claim"
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "note": "Review of the H8 join candidates (hadith.join_candidates): every candidate is accepted or rejected here with a reason; a candidate without an entry fails the tests, so nothing is dropped silently.",
+  "by": "Claude (candidate classification; not an adoption)",
+  "date": "2026-10-10",
+  "review": {
+    "1063|sadi.qawaid_jamia.archive_pdf1995_tess.q057": {
+      "accept": true,
+      "why": "al-Saʿdī: «فتدخل في قوله ﷺ: إنما الأعمال بالنيات» (Q57)."
+    },
+    "1087|sadi.qawaid_jamia.archive_pdf1995_tess.q057": {
+      "accept": true,
+      "why": "al-Saʿdī: «فتدخل في قوله ﷺ: إنما الأعمال بالنيات» (Q57)."
+    },
+    "1132|ibn_lahham.qawaid_fawaid.openiti_lahham_shamay34193.q040": {
+      "accept": false,
+      "why": "Qirāʾa, not the ḥadīth: Ibn Masʿūd's reading «فصيام ثلاثة أيام متتابعات», on whether a shādhdh reading is ḥujja."
+    },
+    "1132|ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q040": {
+      "accept": false,
+      "why": "Qirāʾa, not the ḥadīth: Ibn Masʿūd's reading «فصيام ثلاثة أيام متتابعات», on whether a shādhdh reading is ḥujja."
+    },
+    "1140|sadi.qawaid_jamia.archive_pdf1995.q047": {
+      "accept": true,
+      "why": "al-Saʿdī: «لأن قوله ﷺ: من نذر أن يطيع الله فليطعه» (Q47)."
+    },
+    "1140|sadi.qawaid_jamia.archive_pdf1995_tess.q047": {
+      "accept": true,
+      "why": "al-Saʿdī: «لأن قوله ﷺ: من نذر أن يطيع الله فليطعه» (Q47)."
+    },
+    "1166|ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147": {
+      "accept": true,
+      "why": "Ibn Rajab cites «عن الغلام شاتان وعن الجارية شاة» (ʿaqīqa)."
+    },
+    "118|ibn_lahham.qawaid_fawaid.openiti_lahham_shamay34193.q045": {
+      "accept": true,
+      "why": "Ibn al-Laḥḥām cites Muslim's ḥadīth on wuḍūʾ from camel meat («لما سئل عن التوضي من لحوم الإبل فقال نعم»)."
+    },
+    "1219|ibn_uthaymin.manzuma.archive_manzuma_tess.q052.sharh": {
+      "accept": false,
+      "why": "Names only («عمر بن الخطاب رضي»)."
+    },
+    "1250|sadi.qawaid_jamia.archive_pdf1995_tess.i015": {
+      "accept": true,
+      "why": "al-Saʿdī's index quotes «لا ضرر ولا ضرار»."
+    },
+    "1303|sadi.qawaid_jamia.archive_pdf1995.q022": {
+      "accept": true,
+      "why": "al-Saʿdī: «هذان الأصلان هما لفظ الحديث» (Q22)."
+    },
+    "1303|sadi.qawaid_jamia.archive_pdf1995_tess.q022": {
+      "accept": true,
+      "why": "al-Saʿdī: «هذان الأصلان هما لفظ الحديث» (Q22)."
+    },
+    "1303|sadi.tariq_wusul.archive_tariq_tess.q871": {
+      "accept": true,
+      "why": "al-Saʿdī, Ṭarīq al-Wuṣūl, cites «المسلمون على شروطهم»."
+    },
+    "1313|sadi.qawaid_jamia.archive_pdf1995.q022": {
+      "accept": true,
+      "why": "al-Saʿdī: «هذان الأصلان هما لفظ الحديث» (Q22)."
+    },
+    "1313|sadi.qawaid_jamia.archive_pdf1995_tess.q022": {
+      "accept": true,
+      "why": "al-Saʿdī: «هذان الأصلان هما لفظ الحديث» (Q22)."
+    },
+    "1313|sadi.tariq_wusul.archive_tariq_tess.q871": {
+      "accept": true,
+      "why": "al-Saʿdī, Ṭarīq al-Wuṣūl, cites «المسلمون على شروطهم»."
+    },
+    "1391|sadi.qawaid_jamia.archive_pdf1995.q022": {
+      "accept": true,
+      "why": "al-Saʿdī: «هذان الأصلان هما لفظ الحديث» (Q22)."
+    },
+    "1391|sadi.qawaid_jamia.archive_pdf1995_tess.q022": {
+      "accept": true,
+      "why": "al-Saʿdī: «هذان الأصلان هما لفظ الحديث» (Q22)."
+    },
+    "1391|sadi.tariq_wusul.archive_tariq_tess.q871": {
+      "accept": true,
+      "why": "al-Saʿdī, Ṭarīq al-Wuṣūl, cites «المسلمون على شروطهم»."
+    },
+    "1404|sadi.qawaid_jamia.archive_pdf1995_tess.i015": {
+      "accept": true,
+      "why": "al-Saʿdī's index quotes «لا ضرر ولا ضرار»."
+    },
+    "1425|sadi.qawaid_jamia.archive_pdf1995.q022": {
+      "accept": true,
+      "why": "al-Saʿdī: «هذان الأصلان هما لفظ الحديث» (Q22)."
+    },
+    "1425|sadi.qawaid_jamia.archive_pdf1995_tess.q022": {
+      "accept": true,
+      "why": "al-Saʿdī: «هذان الأصلان هما لفظ الحديث» (Q22)."
+    },
+    "1432|sadi.qawaid_jamia.archive_pdf1995_tess.i015": {
+      "accept": true,
+      "why": "al-Saʿdī's index quotes «لا ضرر ولا ضرار»."
+    },
+    "1548|ibn_uthaymin.manzuma.archive_manzuma_tess.q052.sharh": {
+      "accept": false,
+      "why": "Names only («عمر بن الخطاب رضي»)."
+    },
+    "1553|sadi.qawaid_jamia.archive_pdf1995.q024": {
+      "accept": true,
+      "why": "al-Saʿdī cites it as Q24's dalīl («لقوله ﷺ»); 1553 is the same ḥadīth in another wording."
+    },
+    "1553|sadi.qawaid_jamia.archive_pdf1995_tess.q024": {
+      "accept": true,
+      "why": "al-Saʿdī cites it as Q24's dalīl («لقوله ﷺ»); 1553 is the same ḥadīth in another wording."
+    },
+    "1555|sadi.qawaid_jamia.archive_pdf1995.q024": {
+      "accept": true,
+      "why": "al-Saʿdī cites it as Q24's dalīl («لقوله ﷺ»); 1553 is the same ḥadīth in another wording."
+    },
+    "1555|sadi.qawaid_jamia.archive_pdf1995_tess.q024": {
+      "accept": true,
+      "why": "al-Saʿdī cites it as Q24's dalīl («لقوله ﷺ»); 1553 is the same ḥadīth in another wording."
+    },
+    "159|sadi.qawaid_jamia.archive_pdf1995_tess.q057": {
+      "accept": true,
+      "why": "al-Saʿdī: «فتدخل في قوله ﷺ: إنما الأعمال بالنيات» (Q57)."
+    },
+    "1856|ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056": {
+      "accept": true,
+      "why": "Ibn Rajab's farʿ «إذا أعتق أمته وجعل عتقها صداقها» rests on the Ṣafiyya ḥadīth."
+    },
+    "1890|sadi.qawaid_jamia.archive_pdf1995.q022": {
+      "accept": true,
+      "why": "al-Saʿdī: «هذان الأصلان هما لفظ الحديث» (Q22)."
+    },
+    "1890|sadi.qawaid_jamia.archive_pdf1995_tess.q022": {
+      "accept": true,
+      "why": "al-Saʿdī: «هذان الأصلان هما لفظ الحديث» (Q22)."
+    },
+    "1890|sadi.tariq_wusul.archive_tariq_tess.q871": {
+      "accept": true,
+      "why": "al-Saʿdī, Ṭarīq al-Wuṣūl, cites «المسلمون على شروطهم»."
+    },
+    "1896|ibn_uthaymin.manzuma.archive_manzuma_tess.q004.sharh": {
+      "accept": false,
+      "why": "Names only («بن عبد ... بن»)."
+    },
+    "2080|ibn_lahham.qawaid_fawaid.openiti_lahham_shamay34193.q034": {
+      "accept": false,
+      "why": "Qurʾān, not the ḥadīth: the excerpt quotes «حتى تنكح زوجا غيره» (al-Baqara 230)."
+    },
+    "2080|ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q034": {
+      "accept": false,
+      "why": "Qurʾān, not the ḥadīth: the excerpt quotes «حتى تنكح زوجا غيره» (al-Baqara 230)."
+    },
+    "216|sadi.qawaid_jamia.archive_pdf1995_tess.q057": {
+      "accept": true,
+      "why": "al-Saʿdī: «فتدخل في قوله ﷺ: إنما الأعمال بالنيات» (Q57)."
+    },
+    "2248|ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q036": {
+      "accept": true,
+      "why": "Ibn al-Laḥḥām cites «في النفس المؤمنة مائة من الإبل» for «في» of causation."
+    },
+    "22|sadi.qawaid_jamia.archive_pdf1995_tess.q057": {
+      "accept": true,
+      "why": "al-Saʿdī: «فتدخل في قوله ﷺ: إنما الأعمال بالنيات» (Q57)."
+    },
+    "2454|sadi.tariq_wusul.archive_tariq_tess.q459": {
+      "accept": false,
+      "why": "A quotation of Ibn Taymiyya's remark, not a ḥadīth matn; al-Irwāʾ gives no grade line."
+    },
+    "2572|sadi.qawaid_jamia.archive_pdf1995_tess.q057": {
+      "accept": true,
+      "why": "al-Saʿdī: «فتدخل في قوله ﷺ: إنما الأعمال بالنيات» (Q57)."
+    },
+    "2596|sadi.qawaid_jamia.archive_pdf1995.q047": {
+      "accept": true,
+      "why": "al-Saʿdī: «لأن قوله ﷺ: من نذر أن يطيع الله فليطعه» (Q47)."
+    },
+    "2596|sadi.qawaid_jamia.archive_pdf1995_tess.q047": {
+      "accept": true,
+      "why": "al-Saʿdī: «لأن قوله ﷺ: من نذر أن يطيع الله فليطعه» (Q47)."
+    },
+    "2637|ibn_uthaymin.manzuma.archive_manzuma_tess.q052.sharh": {
+      "accept": false,
+      "why": "Names only («عمر بن الخطاب رضي»); the bayt's ḥadīth is «إنما الأعمال بالنيات», not this report."
+    },
+    "2653|sadi.qawaid_jamia.archive_pdf1995_tess.i015": {
+      "accept": true,
+      "why": "al-Saʿdī's index quotes «لا ضرر ولا ضرار»."
+    },
+    "276|sadi.tariq_wusul.archive_tariq_tess.q636": {
+      "accept": true,
+      "why": "al-Saʿdī, Ṭarīq al-Wuṣūl, cites «من عمل عملا ليس عليه أمرنا فهو رد»."
+    },
+    "541|ibn_uthaymin.manzuma.archive_manzuma_djvu.q071": {
+      "accept": true,
+      "why": "The sharḥ cites Wābiṣa's ḥadīth on praying alone behind the row."
+    },
+    "585|sadi.qawaid_jamia.archive_pdf1995_tess.q057": {
+      "accept": true,
+      "why": "al-Saʿdī: «فتدخل في قوله ﷺ: إنما الأعمال بالنيات» (Q57)."
+    },
+    "606|sadi.qawaid_jamia.archive_pdf1995_tess.q057": {
+      "accept": true,
+      "why": "al-Saʿdī: «فتدخل في قوله ﷺ: إنما الأعمال بالنيات» (Q57)."
+    },
+    "721|sadi.tariq_wusul.archive_tariq_tess.q238": {
+      "accept": false,
+      "why": "A name only («أبو بكر الصديق»)."
+    },
+    "781|sadi.tariq_wusul.archive_tariq_tess.q780": {
+      "accept": false,
+      "why": "Creedal and Qurʾānic formulae (shahāda, «إقام الصلاة وإيتاء الزكاة») listed as mutawātir matters, not the ḥadīth «بني الإسلام على خمس»."
+    },
+    "781|sadi.tariq_wusul.archive_tariq_tess.q836": {
+      "accept": false,
+      "why": "The shahāda formula, not the ḥadīth «بني الإسلام على خمس»."
+    },
+    "854|sadi.qawaid_jamia.archive_pdf1995_tess.q057": {
+      "accept": true,
+      "why": "al-Saʿdī: «فتدخل في قوله ﷺ: إنما الأعمال بالنيات» (Q57)."
+    },
+    "87|sadi.qawaid_jamia.archive_pdf1995_tess.q057": {
+      "accept": true,
+      "why": "al-Saʿdī: «فتدخل في قوله ﷺ: إنما الأعمال بالنيات» (Q57)."
+    },
+    "88|sadi.tariq_wusul.archive_tariq_tess.q636": {
+      "accept": false,
+      "why": "al-Irwāʾ 88 is a different ḥadīth sharing the phrase; the cited one is 276 «من عمل عملا ليس عليه أمرنا فهو رد»."
+    },
+    "896|sadi.qawaid_jamia.archive_pdf1995_tess.i015": {
+      "accept": true,
+      "why": "al-Saʿdī's index quotes «لا ضرر ولا ضرار»."
+    },
+    "967|sadi.qawaid_jamia.archive_pdf1995.q047": {
+      "accept": true,
+      "why": "al-Saʿdī: «لأن قوله ﷺ: من نذر أن يطيع الله فليطعه» (Q47)."
+    },
+    "967|sadi.qawaid_jamia.archive_pdf1995_tess.q047": {
+      "accept": true,
+      "why": "al-Saʿdī: «لأن قوله ﷺ: من نذر أن يطيع الله فليطعه» (Q47)."
+    },
+    "975|sadi.qawaid_jamia.archive_pdf1995_tess.q057": {
+      "accept": true,
+      "why": "al-Saʿdī: «فتدخل في قوله ﷺ: إنما الأعمال بالنيات» (Q57)."
+    },
+    "980|ibn_lahham.qawaid_fawaid.openiti_lahham_shamay34193.q058": {
+      "accept": false,
+      "why": "Generic address «يا أيها الناس», discussed as a form of general speech."
+    },
+    "980|ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q058": {
+      "accept": false,
+      "why": "Generic address «يا أيها الناس», discussed as a form of general speech."
+    }
+  }
+}

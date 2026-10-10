@@ -245,6 +245,30 @@ ENCODERS: dict[str, dict] = {
         sadi=[], qawaid=[RAJAB.format(24)], facts={"on_property": B, "reason_ceases": B},
         out=B, lean="Usul.Refinements.rightSurvivesTransfer {on_property} {reason_ceases}",
         py=lambda f: f["on_property"] or not f["reason_ceases"]),
+    "follows_proven_ownership": dict(
+        sadi=[], qawaid=[RAJAB.format(25)], facts={"follows_in_sale": B},
+        out=B, lean="Usul.Refinements.followsProven {follows_in_sale}",
+        py=lambda f: f["follows_in_sale"]),
+    "tolerance_exceeded": dict(
+        sadi=[], qawaid=[RAJAB.format(29)], facts={"at_fault": B},
+        out=("all", "excess"), lean="Usul.Refinements.toleranceLapse {at_fault}",
+        py=lambda f: "all" if f["at_fault"] else "excess"),
+    "failed_obligation_returns": dict(
+        sadi=[], qawaid=[RAJAB.format(30)], facts={"failed_to_count": B},
+        out=B, lean="Usul.Refinements.returnsToOwner {failed_to_count}",
+        py=lambda f: f["failed_to_count"]),
+    "benefit_exception": dict(
+        sadi=[], qawaid=[RAJAB.format(32)], facts={"known_period": B, "tolerates_uncertainty": B},
+        out=B, lean="Usul.Refinements.benefitExceptionValid {known_period} {tolerates_uncertainty}",
+        py=lambda f: f["known_period"] or f["tolerates_uncertainty"]),
+    "implicit_exception": dict(
+        sadi=[], qawaid=[RAJAB.format(33)], facts={"implicit": B},
+        out=B, lean="Usul.Refinements.uncertainExceptionValid {implicit}",
+        py=lambda f: f["implicit"]),
+    "manumission_spread": dict(
+        sadi=[], qawaid=[RAJAB.format(34)], facts={"binding_contract": B},
+        out=B, lean="Usul.Refinements.manumissionReachesBenefits {binding_contract}",
+        py=lambda f: not f["binding_contract"]),
     "umum_lafz": dict(
         sadi=[], qawaid=[LAHHAM.format(61)], facts={"in_occasion": B, "general_wording": B},
         out=B, lean="Usul.Dalala.coversBeyondSabab true {in_occasion} {general_wording}",

@@ -45,6 +45,12 @@
       "bytes": 2866676,
       "sha256": "41b8ecf1abd9f7737d0cbbfdbe513c92650492898befa53b298d92ff2c0cfd0a"
     },
+    "openiti-baith-shamela21571": {
+      "witness": "openiti-baith-shamela21571",
+      "url": "https://raw.githubusercontent.com/OpenITI/1400AH/6b4084ba42c8e0bd7c888a8c4b37c43ca771c322/data/1377AhmadMuhammadShakir/1377AhmadMuhammadShakir.BacithHathith/1377AhmadMuhammadShakir.BacithHathith.Shamela0021571-ara1",
+      "bytes": 227469,
+      "sha256": "b052c283e529ff025a2c9acca7e80a3fb8a62d8ed3e09972da4c5ab6c552680d"
+    },
     "openiti-bali-ikhtiyarat-jk380": {
       "witness": "openiti-bali-ikhtiyarat-jk380",
       "url": "https://raw.githubusercontent.com/OpenITI/0750AH/7c9c84d9f98581470aa2b7f8bee00ae285c5c707/data/0728IbnTaymiyya/0728IbnTaymiyya.IkhtiyaratFiqhiyya/0728IbnTaymiyya.IkhtiyaratFiqhiyya.JK000380-ara1",
@@ -104,6 +110,12 @@
       "url": "https://raw.githubusercontent.com/OpenITI/0300AH/01a1544130e0236850ef2698923ad01575c5bd7c/data/0280IbnIsmacilKirmani/0280IbnIsmacilKirmani.MasailHarb/0280IbnIsmacilKirmani.MasailHarb.Shamela0012527-ara1",
       "bytes": 885217,
       "sha256": "148f34773a2038c1d64924a34cbd56709ad12d4bb289d28d2c3f005e84dc4d4b"
+    },
+    "openiti-ibn-salah-shamela22870": {
+      "witness": "openiti-ibn-salah-shamela22870",
+      "url": "https://raw.githubusercontent.com/OpenITI/0650AH/287c0cc31845e7f63afb4c0e3c776fc13b45f00f/data/0643IbnSalahShahrazuri/0643IbnSalahShahrazuri.MuqaddimatCulumHadith/0643IbnSalahShahrazuri.MuqaddimatCulumHadith.Shamela0022870-ara1",
+      "bytes": 567854,
+      "sha256": "cf88abe8d45583d9fa49121afa25c07cea3c1caa0df7fc0f23a7a71ecd91181f"
     },
     "openiti-ibnabdalbarr-istidhkar-shamela1722": {
       "witness": "openiti-ibnabdalbarr-istidhkar-shamela1722",
@@ -303,6 +315,12 @@
       "bytes": 11376275,
       "sha256": "2092ed927f4145a4dbae35dbc9fddcd1cc64e08601ed643998f9ae70984dbe80"
     },
+    "openiti-irshad-shamela11437": {
+      "witness": "openiti-irshad-shamela11437",
+      "url": "https://raw.githubusercontent.com/OpenITI/1275AH/d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8/data/1255Shawkani/1255Shawkani.IrshadFuhul/1255Shawkani.IrshadFuhul.Shamela0011437-ara1",
+      "bytes": 1767897,
+      "sha256": "ae192d2722fab030e230625ca7e29b9b08dabb0f23d1bb1f7fe1d993dc3dcc5d"
+    },
     "openiti-ishara-sham19y17871": {
       "witness": "openiti-ishara-sham19y17871",
       "url": "https://raw.githubusercontent.com/OpenITI/0475AH/cc9beb0d9645e8cdce892556423b9926a127054f/data/0474IbnKhalafBaji/0474IbnKhalafBaji.IsharaFiUsulFiqh/0474IbnKhalafBaji.IsharaFiUsulFiqh.Sham19Y0017871-ara1",
@@ -387,6 +405,12 @@
       "bytes": 8015263,
       "sha256": "8603fe6b1f4ee94f6f4130974cb49ec6655efbcc7d2f95d8a247987519e41074"
     },
+    "openiti-muqiza-shamela8195": {
+      "witness": "openiti-muqiza-shamela8195",
+      "url": "https://raw.githubusercontent.com/OpenITI/0750AH/7c9c84d9f98581470aa2b7f8bee00ae285c5c707/data/0748Dhahabi/0748Dhahabi.MuqizaFiCilmMustalahHadith/0748Dhahabi.MuqizaFiCilmMustalahHadith.Shamela0008195-ara1",
+      "bytes": 54383,
+      "sha256": "863980cfdc2e27aca8c02cb180c35f8695fb50d97fca50e79526018a17e95094"
+    },
     "openiti-musawwada-shamela11814": {
       "witness": "openiti-musawwada-shamela11814",
       "url": "https://raw.githubusercontent.com/OpenITI/0750AH/7c9c84d9f98581470aa2b7f8bee00ae285c5c707/data/0728IbnTaymiyya/0728IbnTaymiyya.MusawwadaFiUsulFiqh/0728IbnTaymiyya.MusawwadaFiUsulFiqh.Shamela0011814-ara1",
@@ -423,11 +447,35 @@
       "bytes": 123375,
       "sha256": "779751e97018df3c0d9e2a3f9dafff166bf60f8e992fe582f5c7c4683ab0e3ce"
     },
+    "openiti-nukat-shamela8316": {
+      "witness": "openiti-nukat-shamela8316",
+      "url": "https://raw.githubusercontent.com/OpenITI/0875AH/5835c183b8bbf4ea454d5c1be2b168b669403771/data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.NukatCalaIbnSalah/0852IbnHajarCasqalani.NukatCalaIbnSalah.Shamela0008316-ara1",
+      "bytes": 1218215,
+      "sha256": "6ef4c9731a0424dc8c11c09218e8c245cd6f666dda8782e3c6355003b05aebb6"
+    },
+    "openiti-nukhba-shamela5940": {
+      "witness": "openiti-nukhba-shamela5940",
+      "url": "https://raw.githubusercontent.com/OpenITI/0875AH/5835c183b8bbf4ea454d5c1be2b168b669403771/data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.NukhbatFikar/0852IbnHajarCasqalani.NukhbatFikar.Shamela0005940-ara1",
+      "bytes": 23490,
+      "sha256": "3fefd43af9b40f14920edcff0750fc4686da93e727fdeba433a6e63f119050fc"
+    },
     "openiti-nuraniyya-shamela21729": {
       "witness": "openiti-nuraniyya-shamela21729",
       "url": "https://raw.githubusercontent.com/OpenITI/0750AH/7c9c84d9f98581470aa2b7f8bee00ae285c5c707/data/0728IbnTaymiyya/0728IbnTaymiyya.QawacidNuraniyya/0728IbnTaymiyya.QawacidNuraniyya.Shamela0021729-ara1.completed",
       "bytes": 734654,
       "sha256": "5018f4e36ad0f8ed06ed52e71be7894cc0e290f5c9055c7d2288e9cdcdda247b"
+    },
+    "openiti-nuzha-shamela12115": {
+      "witness": "openiti-nuzha-shamela12115",
+      "url": "https://raw.githubusercontent.com/OpenITI/0875AH/5835c183b8bbf4ea454d5c1be2b168b669403771/data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.NuzhatNazar/0852IbnHajarCasqalani.NuzhatNazar.Shamela0012115-ara1",
+      "bytes": 404247,
+      "sha256": "f22e8ddfa6f186637c6513e36613e2d165d985ee1bdb488724852fdce8885145"
+    },
+    "openiti-nuzha-shamela1565": {
+      "witness": "openiti-nuzha-shamela1565",
+      "url": "https://raw.githubusercontent.com/OpenITI/0875AH/5835c183b8bbf4ea454d5c1be2b168b669403771/data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.NuzhatNazar/0852IbnHajarCasqalani.NuzhatNazar.Shamela0001565-ara1",
+      "bytes": 177401,
+      "sha256": "da62876331dd47fcc70c0112d118a4b0a33901c4e7027316dcf4772867796475"
     },
     "openiti-qannawji-rawdanadiyya-shamela9293": {
       "witness": "openiti-qannawji-rawdanadiyya-shamela9293",
@@ -477,6 +525,12 @@
       "bytes": 15619874,
       "sha256": "deacb7ff4741e4bfdacba9325d6124ae013a23ff723f2a8f627afd2f970af2a1"
     },
+    "openiti-sharh-ilal-shamela9552": {
+      "witness": "openiti-sharh-ilal-shamela9552",
+      "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0795IbnRajabHanbali/0795IbnRajabHanbali.SharhCilalTirmidhi/0795IbnRajabHanbali.SharhCilalTirmidhi.Shamela0009552-ara1",
+      "bytes": 772457,
+      "sha256": "1c1f7d80090bb330f1c3c572c3230549252c307df0124eb61fdf7cd0aaf16af2"
+    },
     "openiti-shawkani-fathrabbani-shamela36543": {
       "witness": "openiti-shawkani-fathrabbani-shamela36543",
       "url": "https://raw.githubusercontent.com/OpenITI/1275AH/d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8/data/1255Shawkani/1255Shawkani.FathRabbaniMinFatawa/1255Shawkani.FathRabbaniMinFatawa.Shamela0036543-ara1",
@@ -525,6 +579,24 @@
       "bytes": 1970724,
       "sha256": "bde81b42fd49be3cd1d07f1eb5289d49d8accebb27fba2bd1ae44c73999bc40a"
     },
+    "openiti-taqrib-jk121": {
+      "witness": "openiti-taqrib-jk121",
+      "url": "https://raw.githubusercontent.com/OpenITI/0875AH/5835c183b8bbf4ea454d5c1be2b168b669403771/data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.TaqribTahdhib/0852IbnHajarCasqalani.TaqribTahdhib.JK000121-ara1.completed",
+      "bytes": 1899042,
+      "sha256": "178d493bd150032bc64a81ed4397d7e4a828209ee690deed283c1e63cada4637"
+    },
+    "openiti-taqrib-shamela8609": {
+      "witness": "openiti-taqrib-shamela8609",
+      "url": "https://raw.githubusercontent.com/OpenITI/0875AH/5835c183b8bbf4ea454d5c1be2b168b669403771/data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.TaqribTahdhib/0852IbnHajarCasqalani.TaqribTahdhib.Shamela0008609-ara1",
+      "bytes": 2001636,
+      "sha256": "7102f3744db853cfb18635cc6cb8399b81129c229e3f0b51239a005de74f9f43"
+    },
+    "openiti-tarif-shamela1186": {
+      "witness": "openiti-tarif-shamela1186",
+      "url": "https://raw.githubusercontent.com/OpenITI/0875AH/5835c183b8bbf4ea454d5c1be2b168b669403771/data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.TacrifAhlTaqdis/0852IbnHajarCasqalani.TacrifAhlTaqdis.Shamela0001186BK1-ara1",
+      "bytes": 59552,
+      "sha256": "3d21b14c5ae3bc3aaccb9cf362fc8bb84870affef321c1ebe947836dbd096088"
+    },
     "openiti-tufi-shamela10781": {
       "witness": "openiti-tufi-shamela10781",
       "url": "https://raw.githubusercontent.com/OpenITI/0725AH/056df249d6619b428a78f1d69a8ab2851b97b0a6/data/0716NajmDinTufi/0716NajmDinTufi.SharhMukhtasarRawda/0716NajmDinTufi.SharhMukhtasarRawda.Shamela0010781-ara1",
@@ -567,6 +639,18 @@
       "bytes": 832240,
       "sha256": "38c8158ec7222b650e99db50b0d185fd75663af7d15edbe75a255e9a3ac4f2c9"
     },
+    "shamela-12762": {
+      "witness": "shamela-12762",
+      "url": "https://shamela.ws/book/12762/1",
+      "bytes": 18852167,
+      "sha256": "4e026654ef4aa58a2c667c922f22330ceff62f6fa733fe1ba348601dcbda0108"
+    },
+    "shamela-12767": {
+      "witness": "shamela-12767",
+      "url": "https://shamela.ws/book/12767/1",
+      "bytes": 2345035,
+      "sha256": "e89c93cf598bc57d2c8dd252693fb9dc18d2239176631e79ccba4ec7a984f216"
+    },
     "shamela-1602": {
       "witness": "shamela-1602",
       "url": "https://shamela.ws/book/1602/1",
@@ -578,6 +662,12 @@
       "url": "https://shamela.ws/book/22592/1",
       "bytes": 5128848,
       "sha256": "c95f3c6e3000991365556b3d8ee9878808da1207b74812584f69083953be23f7"
+    },
+    "shamela-25881": {
+      "witness": "shamela-25881",
+      "url": "https://shamela.ws/book/25881/1",
+      "bytes": 5998123,
+      "sha256": "dce0e2cc1bc8ef184de12862b8fd6944c574780746445462bd1061dd9bf03bdd"
     },
     "shamela-266": {
       "witness": "shamela-266",
@@ -591,11 +681,59 @@
       "bytes": 898601,
       "sha256": "b9f0f61cb04f5174a50b07bb26002290991a409868c2b95ab033b8d2989e22d6"
     },
+    "shamela-337": {
+      "witness": "shamela-337",
+      "url": "https://shamela.ws/book/337/1",
+      "bytes": 2653020,
+      "sha256": "5296e70d35bf1f084aaaa4225c6180adc308f05c16e4769cba4869a4f0a6b321"
+    },
+    "shamela-5914": {
+      "witness": "shamela-5914",
+      "url": "https://shamela.ws/book/5914/1",
+      "bytes": 1480683,
+      "sha256": "3aeddf4cf9a3e3cfa1387c5adfca22d63124a91c74a1930c4f8fa7c41b047f5a"
+    },
+    "shamela-657": {
+      "witness": "shamela-657",
+      "url": "https://shamela.ws/book/657/1",
+      "bytes": 201043,
+      "sha256": "0949b37b0cec5e754cfc1a5372be28f9730df05acba0b7c160ea0a7811b6400f"
+    },
+    "shamela-705": {
+      "witness": "shamela-705",
+      "url": "https://shamela.ws/book/705/1",
+      "bytes": 28534,
+      "sha256": "a1068e41cb44d60f2e2c15124d2c3e8105da97d216283a221f58eb8c7cdb15c2"
+    },
+    "shamela-7318": {
+      "witness": "shamela-7318",
+      "url": "https://shamela.ws/book/7318/1",
+      "bytes": 722102,
+      "sha256": "91926e6f5dd10fa340326a4cdbee443aaa0e43b11a4b6dec7f7d823a0cb41a4c"
+    },
+    "shamela-7607": {
+      "witness": "shamela-7607",
+      "url": "https://shamela.ws/book/7607/1",
+      "bytes": 143536,
+      "sha256": "a242f00750e452f2c3f545f3089d8c2084cf806bec39505871e91caaae0d3590"
+    },
     "shamela-8874": {
       "witness": "shamela-8874",
       "url": "https://shamela.ws/book/8874/1",
       "bytes": 203918,
       "sha256": "b58b808206089804adf976ba92e8a46202a1774fb8290e997806f24ce86da8ad"
+    },
+    "shamela-9293": {
+      "witness": "shamela-9293",
+      "url": "https://shamela.ws/book/9293/1",
+      "bytes": 2321804,
+      "sha256": "294d29ce44da72f5c97144429bdde8aa1aa9185cea2dfe44517278e46f1351fc"
+    },
+    "shamela-9442": {
+      "witness": "shamela-9442",
+      "url": "https://shamela.ws/book/9442/1",
+      "bytes": 12749777,
+      "sha256": "9076613d147f873e5f21f330bcabdd8d275b14929e0a5c8ea64956be00fe12a7"
     },
     "shamela-9527": {
       "witness": "shamela-9527",

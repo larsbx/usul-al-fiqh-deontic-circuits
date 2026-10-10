@@ -13,9 +13,9 @@ How often each cited work is named in the citers' own texts; method in [`recepti
 | Majmūʿ Fatāwā wa-Rasāʾil Ibn ʿUthaymīn | `openiti-ibnuthaymin-majmufatawa-shamela12293` | Ibn ʿUthaymīn | 10899 |
 | Fatāwā Nūr ʿalā al-Darb (Ibn ʿUthaymīn) | `openiti-ibnuthaymin-nuraladarb-shamela2300` | Ibn ʿUthaymīn | 7468 |
 | al-Sharḥ al-Mumtiʿ ʿalā Zād al-Mustaqniʿ | `shamela-10649` | Ibn ʿUthaymīn | 6753 |
-| Tamām al-Minna | `shamela-11122` | al-Albānī | 464 |
+| Tamām al-Minna fī al-Taʿlīq ʿalā Fiqh al-Sunna | `shamela-11122` | al-Albānī | 464 |
 | Irshād Ulī al-Baṣāʾir wa'l-Albāb | `shamela-1602` | al-Saʿdī | 147 |
-| Irwāʾ al-Ghalīl | `shamela-22592` | al-Albānī | 2504 |
+| Irwāʾ al-Ghalīl fī Takhrīj Aḥādīth Manār al-Sabīl | `shamela-22592` | al-Albānī | 2504 |
 | Bahjat Qulūb al-Abrār | `shamela-9945` | al-Saʿdī | 212 |
 
 ## Cited works
