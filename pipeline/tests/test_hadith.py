@@ -149,14 +149,31 @@ from usul_corpus.__main__ import SEAM_LEAN  # noqa: E402
 JOIN = json.loads((ROOT / "corpus/hadith/irwa_join.json").read_text(encoding="utf-8"))["links"]
 
 
-def test_join_is_reproducible():
+REVIEW = json.loads((ROOT / "corpus/hadith/irwa_join_review.json").read_text(encoding="utf-8"))["review"]
+
+
+def _join_inputs():
     src = CACHE / "shamela-22592.txt"
     if not src.exists():
         pytest.skip("al-Irwāʾ not cached")
     records = [json.loads(l) for p in sorted((ROOT / "corpus/records").glob("*.jsonl"))
                for l in p.read_text(encoding="utf-8").splitlines()]
     proposals = json.loads((ROOT / "corpus/proposals/sadi_qawaid.json").read_text(encoding="utf-8"))
-    assert hadith.irwa_join(src.read_text(encoding="utf-8"), records, proposals) == JOIN
+    return src.read_text(encoding="utf-8"), records, proposals
+
+
+def test_every_candidate_is_reviewed():
+    """Candidates are proposals: each is accepted or rejected with a reason, none dropped silently,
+    and the review holds no entry for a candidate that no longer arises."""
+    text, records, _ = _join_inputs()
+    keys = {f"{c['irwa']}|{c['record']}" for c in hadith.join_candidates(text, records)}
+    assert keys == set(REVIEW)
+    assert all(r["why"] for r in REVIEW.values())
+
+
+def test_join_is_reproducible():
+    text, records, proposals = _join_inputs()
+    assert hadith.irwa_join(text, records, proposals, REVIEW) == JOIN
 
 
 def test_seam_lean_is_generated():
@@ -174,3 +191,14 @@ def test_seam_findings():
     failing = {q for l in JOIN if l["hujja"] is False for q in l["sadi_qawaid"]}
     passing = {q for l in JOIN if l["hujja"] for q in l["sadi_qawaid"]}
     assert (failing, passing) == ({24}, {22, 47, 57})
+    assert not [l["matn_ar"] for l in JOIN if l["hujja"] is False and not l["sadi_qawaid"]]
+
+
+def test_seam_is_the_only_import_edge():
+    """H7: the uṣūl track sees the ḥadīth track only through `Usul.Seam`, and Seam sees only
+    `Hadith.Grade` (verdicts and their `grade`), never isnād or turuq internals."""
+    lean = ROOT / "formal/lean"
+    edges = {(f.relative_to(lean).with_suffix("").as_posix(), line.split()[1])
+             for f in [lean / "Usul.lean", *(lean / "Usul").rglob("*.lean")]
+             for line in f.read_text(encoding="utf-8").splitlines() if line.startswith("import Hadith")}
+    assert edges == {("Usul/Seam", "Hadith.Grade")}

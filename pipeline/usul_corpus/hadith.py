@@ -185,35 +185,70 @@ def irwa_matns(text: str) -> dict[int, str]:
     return out
 
 
-def irwa_join(text: str, records: list[dict], proposals: dict) -> list[dict]:
-    """Every qāʿida record whose excerpt quotes a ḥadīth that al-Irwāʾ grades, with al-Albānī's
-    verdicts (all entries citing that matn) and the Lean constants that formalise the qāʿida."""
+SHINGLE = 3      # consecutive content words shared by matn and excerpt
+STOPWORDS = 40   # the most frequent words of matns and excerpts together (formulae, particles)
+GENERIC = 3      # a shingle found in more matns than this is a formula, not evidence
+
+
+def _words(s: str) -> list[str]:
+    from .arabic import letters
+    return [w for w in (letters(x) for x in normalize(s).split()) if w]
+
+
+def join_candidates(text: str, records: list[dict]) -> list[dict]:
+    """Candidate (al-Irwāʾ entry, record) pairs: the quoted matn's prefix inside the excerpt, or a
+    shared run of content words. Candidates are proposals; `corpus/hadith/irwa_join_review.json`
+    accepts or rejects each one with a reason."""
     from .arabic import letters
     verdicts = dict(irwa_entries(text))
+    matns = {n: m for n, m in irwa_matns(text).items() if n in verdicts}
+    freq = Counter(w for m in matns.values() for w in _words(m))
+    freq.update(w for r in records for w in _words(r.get("excerpt_ar", "")))
+    stop = {w for w, _ in freq.most_common(STOPWORDS)}
+
+    def shingles(s: str) -> list[tuple[str, ...]]:
+        c = [w for w in _words(s) if w not in stop]
+        return [tuple(c[i:i + SHINGLE]) for i in range(len(c) - SHINGLE + 1)]
+
+    in_matns: dict[tuple[str, ...], set[int]] = {}
+    for n, m in matns.items():
+        for g in shingles(m):
+            in_matns.setdefault(g, set()).add(n)
+    keys = {n: k for n, m in matns.items() if len(k := letters(normalize(m))[:JOIN_KEY]) >= JOIN_MIN}
+    found: dict[tuple[int, str], str] = {}
+    for r in records:
+        ex = r.get("excerpt_ar", "")
+        flat = letters(normalize(ex))
+        found.update({(n, r["id"]): "prefix" for n, k in keys.items() if k in flat})
+        for g in set(shingles(ex)):
+            for n in in_matns.get(g, ()):
+                if len(in_matns[g]) <= GENERIC:
+                    found.setdefault((n, r["id"]), "shingle:" + " ".join(g))
+    return [{"irwa": n, "record": rid, "via": via, "matn_ar": matns[n], "verdict_term": verdicts[n]}
+            for (n, rid), via in sorted(found.items(), key=lambda x: (x[0][1], x[0][0]))]
+
+
+def irwa_join(text: str, records: list[dict], proposals: dict, review: dict) -> list[dict]:
+    """The accepted candidates, grouped by matn, with al-Albānī's verdict (entries without a grade
+    line abstain; disagreement gives none) and the Lean constants of any al-Saʿdī qāʿida cited."""
     lean = {r["number"]: r["lean"] for r in proposals["rules"]}
-    excerpts = [(r, letters(normalize(r.get("excerpt_ar", "")))) for r in records if r["record_type"] == "qaida"]
     by_matn: dict[str, dict] = {}
-    for n, matn in sorted(irwa_matns(text).items()):
-        key = letters(normalize(matn))[:JOIN_KEY]
-        if n not in verdicts or len(key) < JOIN_MIN:
-            continue
-        for r, ex in excerpts:
-            if key in ex:
-                link = by_matn.setdefault(matn, {"matn_ar": matn, "irwa": [], "records": set()})
-                link["irwa"].append([n, verdicts[n]])
-                link["records"].add(r["id"])
+    for c in join_candidates(text, records):
+        if review[f"{c['irwa']}|{c['record']}"]["accept"]:
+            link = by_matn.setdefault(c["matn_ar"], {"irwa": set(), "records": set()})
+            link["irwa"].add((c["irwa"], c["verdict_term"]))
+            link["records"].add(c["record"])
     out = []
-    for link in by_matn.values():
-        vs = {v for _, t in link["irwa"] if (v := irwa_verdict(t))}   # entries without a grade line abstain
-        verdict = vs.pop() if len(vs) == 1 else None                  # disagreement: no verdict
+    for matn, link in by_matn.items():
+        vs = {v for _, t in link["irwa"] if (v := irwa_verdict(t))}
+        verdict = vs.pop() if len(vs) == 1 else None
         recs = sorted(link["records"])
         sadi = sorted({int(m.group(1)) for r in recs
                        if r.startswith("sadi.qawaid_jamia.") and (m := re.search(r"\.q(\d+)$", r))})
-        out.append({"matn_ar": link["matn_ar"], "irwa": sorted({tuple(x) for x in link["irwa"]}, key=lambda x: x[0]),
+        out.append({"matn_ar": matn, "irwa": [list(x) for x in sorted(link["irwa"], key=lambda x: x[0])],
                     "verdict": verdict, "hujja": verdict in ("hasan", "sahih") if verdict else None,
-                    "records": recs, "sadi_qawaid": sadi,
-                    "lean": [c for q in sadi for c in lean.get(q, [])]})
-    return [{**l, "irwa": [list(x) for x in l["irwa"]]} for l in sorted(out, key=lambda l: l["records"][0])]
+                    "records": recs, "sadi_qawaid": sadi, "lean": [c for q in sadi for c in lean.get(q, [])]})
+    return sorted(out, key=lambda l: (l["records"][0], l["irwa"][0][0]))
 
 
 def seam_lean(join: list[dict]) -> str:

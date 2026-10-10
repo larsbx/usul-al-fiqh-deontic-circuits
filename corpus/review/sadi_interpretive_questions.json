@@ -1191,7 +1191,7 @@
    ],
    "if_changed": "Nothing proved changes: q24_first_has_priority and q24_is_optimal do not take the ḥadīth as a hypothesis. What changes is Q24's recorded support: the Ḥanbalī fourth aṣl (alternative 1), the ibāḥa aṣliyya and S8 (alternative 3), or no textual dalīl. The question also fixes how the seam is read across tracks: whether Hadith.Verdict.Hujja is the gate for the uṣūl track's ḥadīth dalīls, or only the ḥadīth track's.",
    "route": "halaqa:shared/usul-k/evidence-order.md",
-   "status": "referenced",
+   "status": "adopted",
    "established": [
     {
      "ref": "src:shamela-22592/v06:p011",
@@ -1217,7 +1217,25 @@
      "note": "al-Albānī, Tamām al-Minna Q12: no acting on a ḍaʿīf ḥadīth, even in faḍāʾil."
     }
    ],
-   "analogies": []
+   "analogies": [],
+   "decision": {
+    "by": "human",
+    "date": "2026-10-10",
+    "instruction": "yes the gate does apply to the usul Hadith issues",
+    "adopted": "The ḥadīth gate (Hadith.Verdict.Hujja) applies to every ḥadīth offered as dalīl in the uṣūl track, in whatever slot of Aḥmad's order it is offered. Aḥmad's fourth aṣl keeps its place, read with Ibn al-Qayyim's gloss (his ḍaʿīf is «قسم من أقسام الحسن»): it admits ḥasan and above, nothing the gate rejects. Q24's cited ḥadīth (al-Irwāʾ 1555, ḍaʿīf) is therefore not a dalīl.",
+    "lean": [
+     "Usul.Seam.admitted",
+     "Usul.Seam.admitted_iff_yaqin",
+     "Usul.Seam.daif_not_admitted",
+     "Usul.Seam.mursalDaif_admits_only_hasan_up",
+     "Usul.Seam.q24_dalil_not_admitted"
+    ],
+    "scope": "Encoding E of this repository: Usul.Seam is the one import edge from the ḥadīth track into the uṣūl kernel. No proved theorem changes: q24_first_has_priority and q24_is_optimal never took the ḥadīth as a hypothesis. The seam check over joined dalīls is HadithTest/Seam.lean.",
+    "follow_up": [
+     "Q24's remaining support is not decided here: alternative 3 (al-ibāḥa al-aṣliyya for what has no protected owner, with S8) is the candidate, for review.",
+     "Every further ḥadīth dalīl the H8 join finds is subject to the same gate; a failing one is surfaced, not silently dropped."
+    ]
+   }
   }
  ]
 }

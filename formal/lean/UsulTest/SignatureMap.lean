@@ -111,6 +111,11 @@ import Usul
 #check @Usul.Muamalat.firstClaimant
 #check @Usul.Muamalat.q24_first_has_priority
 #check @Usul.Muamalat.q24_is_optimal
+#check @Usul.Seam.admitted
+#check @Usul.Seam.admitted_iff_yaqin
+#check @Usul.Seam.daif_not_admitted
+#check @Usul.Seam.mursalDaif_admits_only_hasan_up
+#check @Usul.Seam.q24_dalil_not_admitted
 #check @Usul.Muamalat.lotPrescribed
 #check @Usul.Muamalat.q25_lot_iff
 #check @Usul.Muamalat.Allocation

@@ -7,7 +7,7 @@ never for the stored text of a record.
 from __future__ import annotations
 
 import re
-from functools import reduce
+from functools import lru_cache, reduce
 
 _DIACRITICS = re.compile("[ؐ-ًؚ-ٰٟۖ-ۭ]")
 _INVISIBLE = re.compile("[ـ​-‏‪-‮⁦-⁩﻿]")
@@ -145,13 +145,20 @@ def revolume(text: str) -> str:
     return _PAGE.sub(mark, text)
 
 
+@lru_cache(maxsize=4)
+def _indexed(text: str) -> tuple[str, list[int], str]:
+    """The revolumed text, the positions of its letters, and the letters alone."""
+    text = re.sub(r"ms\d+", "", revolume(text))
+    idx = [i for i, ch in enumerate(text) if "ء" <= ch <= "ي"]
+    return text, idx, "".join(text[i] for i in idx)
+
+
 def locate(text: str, excerpt: str) -> str | None:
     """`v<vol>:p<page>` of the page an excerpt ends on (the next page marker closes it), comparing
     letters only; None when the excerpt is not in the text."""
-    text = re.sub(r"ms\d+", "", revolume(text))
-    idx = [i for i, ch in enumerate(text) if "ء" <= ch <= "ي"]
+    text, idx, flat = _indexed(text)
     e = letters(excerpt)
-    k = "".join(text[i] for i in idx).find(e)
+    k = flat.find(e)
     if k < 0:
         return None
     m = _PAGE.search(text[idx[k + len(e) - 1]:])
