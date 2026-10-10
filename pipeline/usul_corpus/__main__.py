@@ -25,7 +25,7 @@ from pathlib import Path
 
 from . import hadith
 from .fatawa import answers, fold, snapshot_witnesses, write_jsonl_gz
-from .labels import label, report, review_sample
+from .labels import label, merge_review, report, review_sample
 from .bank_review import STAGES, en_vote, lean_guards, review as bank_review
 from .fetch import fetch
 from .hudud import extract_hudud
@@ -381,8 +381,9 @@ def cmd_labels(_: argparse.Namespace) -> int:
     write_jsonl_gz(ISLAMQA / "labels" / "islamqa-ar.labels.jsonl.gz", labels)
     rep = report(labels)
     _dump(CORPUS / "fatawa" / "labels_report.json", rep)
-    sample = review_sample(labels, {r["id"]: r["title"] for r in recs})
     review = CORPUS / "fatawa" / "review" / "labels-sample.jsonl"
+    old = [json.loads(l) for l in review.read_text(encoding="utf-8").splitlines()] if review.exists() else []
+    sample = merge_review(review_sample(labels, {r["id"]: r["title"] for r in recs}), old)
     review.parent.mkdir(parents=True, exist_ok=True)
     review.write_text("".join(json.dumps(x, ensure_ascii=False) + "\n" for x in sample), encoding="utf-8")
     print(f"{rep['labelled']}/{rep['total']} labelled  {rep['hukm']}")

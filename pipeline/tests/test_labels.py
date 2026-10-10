@@ -125,3 +125,27 @@ def test_plural_status_nouns_are_not_rulings():
 
 def test_ghayr_jaiz_reads_as_prohibition():
     assert hukms("غير جائز") == [("haram", "+")] and hukms("ليس بجائز") == [("haram", "+")]
+
+
+def test_rerunning_labels_keeps_human_review_fields():
+    from usul_corpus.labels import merge_review
+    old = [{"id": "islamqa.1", "candidate": "haram", "gold": "mubah", "note": "side issue"},
+           {"id": "islamqa.2", "candidate": "wajib", "gold": None, "note": None},
+           {"id": "islamqa.3", "candidate": "mandub", "gold": "mandub", "note": None}]
+    new = [{"id": "islamqa.1", "candidate": "wajib", "gold": None, "note": None},
+           {"id": "islamqa.2", "candidate": "wajib", "gold": None, "note": None}]
+    merged = merge_review(new, old)
+    assert merged[0] == {"id": "islamqa.1", "candidate": "wajib", "gold": "mubah", "note": "side issue"}
+    assert merged[1]["gold"] is None
+    assert merged[2] == old[2]                      # a reviewed item is never dropped
+
+
+def test_wad_comes_from_the_passage_the_ruling_came_from():
+    rec = {"id": "islamqa.8", "topics": [], "summary": "صلاتك صحيحة .", "answer": "الحمد لله.\nيحرم البيع ."}
+    l = label(rec)
+    assert (l["hukm"], l["basis"], l["wad"]) == ("haram", "lead", [])
+
+
+def test_evidence_records_which_occurrence_of_the_cue_decided():
+    rec = {"id": "islamqa.10", "topics": [], "answer": "الحمد لله.\nالتي تجب عليها النفقة ، تجب عليها الصلاة ."}
+    assert label(rec)["evidence"]["nth"] == 0

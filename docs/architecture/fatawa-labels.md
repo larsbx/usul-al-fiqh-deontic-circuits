@@ -92,18 +92,20 @@ Only predications on the act are compared (see *Conflicts* below for what is set
 
 | class | answers | English version agrees |
 |---|---:|---:|
-| confirmed (the predication fixes one status, the candidate's) | 8,028 | 82% (2,713/3,292) |
-| consistent (candidate allowed; the text underdetermines, e.g. jawāz) | 4,633 | 87% (1,720/1,987) |
-| misread (the candidate's own cue is not a ruling on the act) | 1,678 | 74% (505/679) |
+| confirmed (the predication fixes one status, the candidate's) | 7,956 | 81% (2,723/3,369) |
+| consistent (candidate allowed; the text underdetermines, e.g. jawāz) | 4,617 | 81% (1,663/2,044) |
+| misread (the candidate's own cue is not a ruling on the act) | 1,766 | 71% (533/747) |
 | rejected (candidate excluded) | 5 | 33% (1/3) |
 | ikhtilāf (reported positions, no preference stated) | 1 | 0% (0/1) |
-| conflict (tawaqquf) | 12 | 67% (6/9) |
+| conflict (tawaqquf) | 12 | 60% (6/10) |
 
 80 confirmations are of a label that rules on the *omission* (`act: omission`): «لا يجوز التفريط فيها» is ḥarām of neglect, which is σ of wājib of the act (`RespectsDidd`). They were the bulk of the earlier "rejected" class.
 
+The English column is a relative signal, not an accuracy. `en_vote` takes the earliest English ruling cue, after claiming negations («must not», «not obligatory»), so it shares the labeller's bias towards the opening ruling. Compare classes with each other, not with 100%.
+
 ### Why the bank does not fill `gold`
 
-Confirmed labels are no more accurate than the rest. Their English agreement is no higher than for consistent ones. Of 12 would-be auto-gold items read by hand, 9 were right, and of 14 low-priority sample items about 10 were: the base rate. The reasons:
+Confirmed labels are no more accurate than consistent ones: their English agreement is about the same. Of 12 would-be auto-gold items read by hand, 9 were right, and of 14 low-priority sample items about 10 were: the base rate. The reasons:
 
 - **The bank reads the same cue the labeller read.** It can show the clause is deontically coherent, but not that it rules on the act the question asks about. That relevance error is the dominant one.
 - **Its intersection assumes one act per clause.** Fatwa clauses often rule on several: «يجوز أن يقسم … ويلزمه العدل», «محرم، يلزمك التوبة». Most rejections and many conflicts come from this, not from a wrong label.
@@ -122,8 +124,8 @@ A conflict is a predication set the kernel cannot satisfy. `Usul.resolve` ([Taar
 | round | principle | conflicts left |
 |---|---|---:|
 | R0 bare reading | every cue is a ruling on one act | 959 |
-| R1 reading | only predications on the act take part: not cues inside another cue's complement, a relative, reason or reported clause («أن يلزم», «التي لا يجوز», «لأن …», «بأنه»); not status words used as ordinary words (after a preposition, attributive «بتجارة مباحة», inside a proof-text); not homographs (مَحْرَم kinsman, مُحْرِم pilgrim); not frames («يجب أن تعلم أن», «لا يلزم منه»), questions or «قد» | 570 |
-| R2 jamʿ via σ | a ruling on the opposite act is the same ruling: H(ḍidd a) = σ(H a) (`Dalala.amr_nahy_didd_of`) | 547 |
+| R1 reading | only predications on the act take part: not cues inside another cue's complement, a relative, reason or reported clause («أن يلزم», «التي لا يجوز», «لأن …», «بأنه»); not status words used as ordinary words (after a preposition, attributive «بتجارة مباحة», inside a proof-text); not homographs (مَحْرَم kinsman, مُحْرِم pilgrim); not frames («يجب أن تعلم أن», «لا يلزم منه»), questions or «قد» | 566 |
+| R2 jamʿ via σ | a ruling on the opposite act is the same ruling: H(ḍidd a) = σ(H a) (`Dalala.amr_nahy_didd_of`) | 543 |
 | R3 jamʿ by scope | each predication rules on its own act: «،», «:», «بل», «وإنما», «أما», «ما عدا», «ومنه ما», conditional branches «فإن / وإذا / وإلا», and «و» before a verbal ruling open a new scope; «أو / أم» between statuses is a union | 15 |
 | R4 tarjīḥ | `resolve ⟨none, none, some p⟩ = .tarjih p` when the text prefers p, forward («والصواب أنها …») or backward («… وهو الصحيح»); a reported disagreement without preference is `ikhtilaf` | **13** |
 

@@ -120,15 +120,35 @@ def label(rec: Mapping) -> dict:
            "hukm": None, "basis": None, "conditional": False, "also": [], "evidence": None,
            "wad": [], "status": "candidate"}
     if passages:
-        out["wad"] = list(dict.fromkeys(w for _, _, (w,) in _spans(_WRX, passages[0][1])))
+        wad_text = hit[1] if hit else passages[0][1]          # validity from the passage the ruling came from
+        out["wad"] = list(dict.fromkeys(w for _, _, (w,) in _spans(_WRX, wad_text)))
     if hit:
         basis, text, cs = hit
         first = cs[0]
         also = list(dict.fromkeys(c["hukm"] for c in cs if c["hukm"] != first["hukm"]))
         out |= {"hukm": first["hukm"], "basis": basis, "also": also,
                 "conditional": bool(also) or bool(_COND.search(text)),
-                "evidence": {"cue": first["text"], "passage": text[max(0, first["start"] - 150):first["end"] + 250]}}
+                "evidence": _evidence(text, first)}
     return out
+
+
+def _evidence(text: str, cue: Mapping) -> dict:
+    """The passage window around the deciding cue, and which occurrence of that cue text in it decided."""
+    w0 = max(0, cue["start"] - 150)
+    passage = text[w0:cue["end"] + 250]
+    nth = sum(c["text"] == cue["text"] and c["start"] < cue["start"] - w0 for c in cues(passage))
+    return {"cue": cue["text"], "passage": passage, "nth": nth}
+
+
+HUMAN = ("gold", "note")
+
+
+def merge_review(new: list[dict], old: list[dict]) -> list[dict]:
+    """Regenerated review sample with the reviewers' fields carried over by id; reviewed items are never dropped."""
+    reviewed = {x["id"]: x for x in old if any(x.get(k) is not None for k in HUMAN)}
+    ids = {x["id"] for x in new}
+    return [x | {k: reviewed[x["id"]][k] for k in HUMAN} if x["id"] in reviewed else x for x in new] + [
+        x for i, x in reviewed.items() if i not in ids]
 
 
 def report(labels: list[Mapping]) -> dict:

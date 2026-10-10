@@ -1,42 +1,42 @@
 {
   "labelled": 14359,
   "class": {
-    "confirmed": 8028,
-    "consistent": 4633,
+    "confirmed": 7956,
+    "consistent": 4617,
     "rejected": 5,
-    "misread": 1678,
+    "misread": 1766,
     "ikhtilaf": 1,
     "conflict": 12,
     "no_reading": 2
   },
   "class_by_hukm": {
     "wajib": {
-      "confirmed": 2803,
-      "misread": 543,
+      "confirmed": 2778,
+      "misread": 568,
       "conflict": 5
     },
     "mandub": {
-      "confirmed": 514,
-      "misread": 80,
+      "confirmed": 512,
+      "misread": 82,
       "ikhtilaf": 1,
       "rejected": 1,
       "consistent": 1
     },
     "mubah": {
-      "misread": 332,
-      "consistent": 4628,
+      "misread": 353,
+      "consistent": 4612,
       "conflict": 5,
-      "confirmed": 102,
+      "confirmed": 97,
       "rejected": 4
     },
     "makruh": {
-      "confirmed": 75,
-      "misread": 35,
+      "misread": 37,
+      "confirmed": 73,
       "consistent": 2
     },
     "haram": {
-      "confirmed": 4534,
-      "misread": 688,
+      "confirmed": 4496,
+      "misread": 726,
       "conflict": 2,
       "no_reading": 2,
       "consistent": 2
@@ -44,20 +44,20 @@
   },
   "english_agreement_by_class": {
     "confirmed": {
-      "agree": 2713,
-      "voted": 3292
+      "agree": 2723,
+      "voted": 3369
     },
     "consistent": {
-      "agree": 1720,
-      "voted": 1987
+      "agree": 1663,
+      "voted": 2044
     },
     "rejected": {
       "agree": 1,
       "voted": 3
     },
     "misread": {
-      "agree": 505,
-      "voted": 679
+      "agree": 533,
+      "voted": 747
     },
     "ikhtilaf": {
       "agree": 0,
@@ -65,7 +65,7 @@
     },
     "conflict": {
       "agree": 6,
-      "voted": 9
+      "voted": 10
     },
     "no_reading": {
       "agree": 1,
@@ -73,15 +73,15 @@
     }
   },
   "priority": {
-    "medium": 9102,
-    "high": 2544,
-    "low": 2713
+    "medium": 8823,
+    "high": 2813,
+    "low": 2723
   },
   "omission_perspective": 80,
   "conflicts_by_round": {
     "R0 bare reading": 959,
-    "R1 reading": 570,
-    "R2 jamʿ σ": 547,
+    "R1 reading": 566,
+    "R2 jamʿ σ": 543,
     "R3 jamʿ scope": 15,
     "R4 tarjīḥ": 13
   }

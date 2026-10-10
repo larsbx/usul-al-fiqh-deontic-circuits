@@ -216,3 +216,17 @@ def test_r6_backward_tarjih_and_genuine_ikhtilaf():
 def test_r6_a_ruling_on_the_omission_is_the_same_ruling_through_sigma():
     r = review(lab("haram", "فلا يجوز التفريط فيها .", "لا يجوز"))
     assert (r["class"], r["act"], r["set"]) == ("confirmed", "omission", ["wajib"])
+
+
+def test_review_binds_to_the_labels_own_occurrence():
+    l = {"id": "islamqa.1", "hukm": "wajib",
+         "evidence": {"cue": "تجب", "passage": "التي تجب عليها النفقة ، تجب عليها الصلاة .", "nth": 0}}
+    assert review(l)["class"] == "misread"
+    assert review(l | {"evidence": l["evidence"] | {"nth": 1}})["class"] == "confirmed"
+
+
+def test_english_vote_claims_negations_first():
+    from usul_corpus.bank_review import en_vote
+    assert en_vote("You must not sell it.") == "haram"
+    assert en_vote("It is not obligatory to repeat it.") is None
+    assert en_vote("It is not recommended, but it is permissible.") == "mubah"

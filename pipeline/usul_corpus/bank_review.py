@@ -238,7 +238,7 @@ def review(label: Mapping, en: str | None = None, stages: frozenset = STAGES) ->
     clauses = [c for c in bank_clauses(ev["passage"], stages) if c["cues"]]
     cue = normalize_ar(ev["cue"])
     hits = [(cl, x) for cl in clauses for x in cl["cues"] if cue in x["cue"].split(" او ")]
-    cl, own = next(((cl, x) for cl, x in hits if x["role"] == "predication"), hits[0] if hits else (None, None))
+    cl, own = hits[min(ev.get("nth", 0), len(hits) - 1)] if hits else (None, None)  # the label's own occurrence
     if cl is None:
         return out
     steps = [{"cue": x["cue"], "reading": x["reading"], "set": _ordered(x["set"]), "role": x["role"]} for x in cl["cues"]]
@@ -263,19 +263,29 @@ def review(label: Mapping, en: str | None = None, stages: frozenset = STAGES) ->
 
 
 # An independent vote from the English version of the same answer (not a bank reading).
-_EN = (("haram", r"not permissible|impermissible|haraam|haram|forbidden|prohibited|not allowed"),
+# Negations claim their span first; a negated non-prohibition («not obligatory») casts no vote.
+_EN_NEG = (("haram", r"must not|should not|may not|cannot|can not|not permissible|impermissible|not allowed|not permitted"
+                     r"|not halal|not lawful"),
+           (None, r"not obligatory|not compulsory|not wajib|not waajib|not required|no need to|not necessary"
+                  r"|not recommended|not mustahabb|not sunnah|not makrooh|not makruh|not disliked"
+                  r"|not haram|not haraam|not forbidden|not prohibited"))
+_EN = (("haram", r"haraam|haram|forbidden|prohibited"),
        ("wajib", r"obligatory|must|waajib|wajib|compulsory|required to"),
        ("mandub", r"mustahabb|recommended|sunnah to|it is sunnah"),
        ("makruh", r"makrooh|makruh|disliked"),
        ("mubah", r"no problem|no harm|permissible|allowed|halaal|halal|nothing wrong"))
 _EN_RX = [(h, re.compile(rf"\b(?:{p})\b")) for h, p in _EN]
+_EN_NEG_RX = [(h, re.compile(rf"\b(?:{p})\b")) for h, p in _EN_NEG]
 
 
 def en_vote(text: str | None, window: int = 600) -> str | None:
     """Status of the earliest English ruling cue in the opening of the answer."""
     t = (text or "").lower()[:window]
-    hits = [(m.start(), -len(m.group()), h) for h, rx in _EN_RX for m in rx.finditer(t)]
-    return min(hits)[2] if hits else None
+    claimed = [(m.start(), m.end(), h) for h, rx in _EN_NEG_RX for m in rx.finditer(t)]
+    free = [(m.start(), m.end(), h) for h, rx in _EN_RX for m in rx.finditer(t)
+            if all(m.end() <= s or m.start() >= e for s, e, _ in claimed)]
+    votes = sorted((s, s - e, h) for s, e, h in claimed + free if h)
+    return votes[0][2] if votes else None
 
 
 def lean_guards() -> str:

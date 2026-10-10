@@ -34,8 +34,8 @@
   },
   "conditional": 6497,
   "wad": {
-    "batil": 331,
-    "sahih": 319
+    "batil": 329,
+    "sahih": 317
   },
   "split": {
     "train": 25960,
