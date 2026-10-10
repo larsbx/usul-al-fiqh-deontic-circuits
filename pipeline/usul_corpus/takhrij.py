@@ -320,6 +320,36 @@ ENCODERS: dict[str, dict] = {
     "settles_without_ability": dict(
         sadi=[], qawaid=[RAJAB.format(19)], facts={"making_up": B},
         out=B, lean="Usul.Refinements.settlesInDhimma {making_up}", py=lambda f: not f["making_up"]),
+    "lease_after_authority": dict(
+        sadi=[], qawaid=[RAJAB.format(36)], facts={"succeeds_lessor": B},
+        out=B, lean="Usul.Refinements.leaseDissolves {succeeds_lessor}", py=lambda f: not f["succeeds_lessor"]),
+    "return_of_held_property": dict(
+        sadi=[], qawaid=[RAJAB.format(42)], facts={"held_by_consent": B, "guaranteed": B},
+        out=B, lean="Usul.Refinements.returnAtOnce {held_by_consent} {guaranteed}",
+        py=lambda f: not f["held_by_consent"] or f["guaranteed"]),
+    "continued_holding": dict(
+        sadi=[], qawaid=[RAJAB.format(43)], facts={"withholds": B},
+        out=B, lean="Usul.Refinements.holderLiable {withholds}", py=lambda f: f["withholds"]),
+    "holding_after_contract_end": dict(
+        sadi=[], qawaid=[RAJAB.format(43)], facts={"ended_by_holder": B},
+        out=B, lean="Usul.Refinements.liableAfterEnding {ended_by_holder}", py=lambda f: f["ended_by_holder"]),
+    "void_contract_concluded": dict(
+        sadi=[], qawaid=[RAJAB.format(46)], facts={"binding": B, "pervasive": B},
+        out=B, lean="Usul.Refinements.voidConcluded {binding} {pervasive}",
+        py=lambda f: f["binding"] and f["pervasive"]),
+    "qabd_in_contracts": dict(
+        sadi=[], qawaid=[RAJAB.format(49)], facts={"qabd_completes": B},
+        out=B, lean="Usul.Refinements.bindsWithoutQabd {qabd_completes}", py=lambda f: not f["qabd_completes"]),
+    "forced_acquisition": dict(
+        sadi=[], qawaid=[RAJAB.format(50)], facts={"necessity": B},
+        out=B, lean="Usul.Refinements.ownedBeforePayment {necessity}", py=lambda f: f["necessity"]),
+    "forced_acquisition_solvent": dict(
+        sadi=[], qawaid=[RAJAB.format(50)], facts={"necessity": B, "shufa": B, "solvent": B},
+        out=B, lean="Usul.Refinements.ownedBeforePaymentIn {necessity} {shufa} {solvent}",
+        py=lambda f: f["necessity"] or (f["shufa"] and f["solvent"])),
+    "daman_without_qabd": dict(
+        sadi=[], qawaid=[RAJAB.format(51)], facts={"determined": B},
+        out=B, lean="Usul.Refinements.inNewOwnersDaman {determined}", py=lambda f: f["determined"]),
     "excess_in_following": dict(
         sadi=[], qawaid=[RAJAB.format(3)], facts={"separable": B, "lightened": B, "following": B},
         out=B, lean="Usul.Refinements.excessObligatoryIn {separable} {lightened} {following}",

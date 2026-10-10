@@ -1,13 +1,13 @@
 {
-  "entries": 144,
+  "entries": 146,
   "stages": {
-    "jam": 15,
-    "tarjih": 121,
+    "jam": 16,
+    "tarjih": 122,
     "tawaqquf": 8
   },
   "standing": {
-    "against_reading": 61,
-    "for_reading": 75,
+    "against_reading": 62,
+    "for_reading": 76,
     "tawaqquf": 8
   },
   "worklist": {
@@ -93,6 +93,9 @@
     ],
     "follows_proven_ownership": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f002"
+    ],
+    "holding_after_contract_end": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f001"
     ],
     "hukm_against_own_ijtihad": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f009"
