@@ -133,6 +133,8 @@ import Usul
 #check @Usul.Sadi.useSubstitute
 #check @Usul.Sadi.q28_substitute_only_when_needed
 #check @Usul.Schema.substitute_is_priority
+#check @Usul.Sadi.permits
+#check @Usul.Sadi.q28_stands_in_everything
 #check @Usul.Kulliyyat.Utterance.meaning
 #check @Usul.Kulliyyat.q29_unqualified
 #check @Usul.Kulliyyat.q29_qualifiers_narrow

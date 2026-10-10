@@ -153,6 +153,19 @@ def useSubstitute (originalPossible : Bool) : Bool := !originalPossible
 theorem q28_substitute_only_when_needed (p : Bool) : useSubstitute p = true ↔ p = false := by
   cases p <;> simp [useSubstitute]
 
+/-- The original and the substitute that stands in for it. -/
+inductive Means where
+  | original | substitute
+  deriving DecidableEq, Repr
+
+/-- What a means permits: whatever the original permits, by either means. -/
+def permits {Act : Type} (byOriginal : Act → Bool) : Means → Act → Bool := fun _ => byOriginal
+
+/-- Q28's first half: «يستباح به ما يستباح بالماء من العبادات وغيرها، وأنه يقوم مقامه في كل شيء».
+Once in use, the substitute permits exactly what the original permits (tayammum and water: furūq F51). -/
+theorem q28_stands_in_everything {Act : Type} (byOriginal : Act → Bool) (a : Act) :
+    permits byOriginal .substitute a = permits byOriginal .original a := rfl
+
 /-! ## Q33 — when benefits crowd, the higher is preferred; when harms crowd and one must be
 done, the lighter -/
 

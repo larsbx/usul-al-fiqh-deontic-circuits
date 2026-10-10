@@ -182,8 +182,10 @@
     "ref": "src:islamhouse-qj-doc#furuq",
     "excerpt_ar": "والصواب: أن طهارة التيمم قائمة مقام طهارة الماء في كل شيء كما أقامها الشارع"
    },
-   "grounds": [],
-   "note": "Q28 «يقوم البدل مقام المبدل»; «كما هو مقتضى القياس كما قاله الإمام أحمد». The bank's Q28 encodes only when the substitute is used, not this"
+   "grounds": [
+    "Usul.Sadi.q28_stands_in_everything"
+   ],
+   "note": "Q28 «يقوم البدل مقام المبدل», which al-Saʿdī glosses «وأنه يقوم مقامه في كل شيء»; «كما هو مقتضى القياس كما قاله الإمام أحمد»"
   },
   {
    "id": "F52",

@@ -443,7 +443,9 @@
    "lean": [
     "Usul.Sadi.useSubstitute",
     "Usul.Sadi.q28_substitute_only_when_needed",
-    "Usul.Schema.substitute_is_priority"
+    "Usul.Schema.substitute_is_priority",
+    "Usul.Sadi.permits",
+    "Usul.Sadi.q28_stands_in_everything"
    ],
    "schemata": [
     "S2-priority"

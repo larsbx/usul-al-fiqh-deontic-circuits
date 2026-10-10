@@ -1,0 +1,288 @@
+{
+ "note": "al-Saʿdī, al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa, part two (al-furūq), tranche 4: F61–F75 in order after tranche 3, none skipped; conventions as in tranche 1.",
+ "work": "sadi.qawaid_jamia",
+ "witness": "islamhouse-qj-doc",
+ "module": "Usul.Furuq",
+ "asl": {
+  "ref": "src:islamhouse-qj-doc#furuq",
+  "excerpt_ar": "أن الشارع لا يفرق بين المتشابهات من كل وجه، بل لا بد فيها من فوارق معنوية، وأوصاف متفاوتة أوجبت الفرق"
+ },
+ "lean": [
+  "Usul.Furuq.Grade",
+  "Usul.Furuq.Grade.apart",
+  "Usul.Furuq.alike_unless_farq",
+  "Usul.Furuq.farq_is_maana",
+  "Usul.Furuq.suri_farq_idle"
+ ],
+ "items": [
+  {
+   "id": "F61",
+   "cases_en": [
+    "a vow that runs as an oath (out of obstinacy or anger): expiation",
+    "a vow proper, made for obedience: fulfilment"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وبهذا الفرق بعينه فرّق الأصحاب"
+   },
+   "grounds": [
+    "Usul.Muamalat.q47_vow_as_law"
+   ],
+   "note": "the ground of F59; «من نذر أن يطيع الله فليطعه»"
+  },
+  {
+   "id": "F62",
+   "cases_en": [
+    "declaring one's wife unlawful (expiation of ẓihār)",
+    "declaring anything else unlawful (expiation of an oath)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأن معناه معنى اليمين، بل هو يمين بغير لفظ الحلف"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F63",
+   "cases_en": [
+    "an unintended oath, or one on a past matter believed true (no expiation)",
+    "a binding oath on a future matter (expiation when broken)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة الثابتة بالنص"
+   },
+   "grounds": [],
+   "note": "and the text's command, prohibition or option to break an oath by what is better"
+  },
+  {
+   "id": "F64",
+   "cases_en": [
+    "breaking a divorce or manumission oath out of ignorance or forgetfulness (broken)",
+    "breaking an oath by God the same way (not broken)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والصواب: التسوية وأنه لا يحنث في الجميع"
+   },
+   "grounds": [
+    "Usul.Tanaqud.t1_jam",
+    "Usul.Sadi.q27_asymmetry"
+   ],
+   "note": "«فإن الحق لله، وأيضاً ليس في ذلك إتلاف لمال»: T-01's qayd and Q27"
+  },
+  {
+   "id": "F65",
+   "cases_en": [
+    "explicit words of divorce and words with only a remote other meaning (not believed in court)",
+    "words with an evident other meaning (believed in court)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والألفاظ التي تحتمل خلاف المفهوم احتمالاً مرجوحاً لا يقبل صاحبها حكماً، ولكنه يدين"
+   },
+   "grounds": [
+    "Usul.Tanaqud.t4_jam",
+    "Usul.Kulliyyat.q57_possible_intent_prevails"
+   ],
+   "note": "graded «من الفروق اللطيفة»; court by the outward, conscience by intent (T-04: Q55/Q57); the wife acts by Q2 «لأن الوسائل لها أحكام المقاصد»"
+  },
+  {
+   "id": "F66",
+   "cases_en": [
+    "a choice made for others' welfare (guardians, trustees: follow the welfare)",
+    "a choice given for one's own ease (expiations, blood-money: the easiest)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأن القصد من ذلك التخفيف"
+   },
+   "grounds": [
+    "Usul.Kulliyyat.q34_other_iff_optimal"
+   ],
+   "note": "Q34"
+  },
+  {
+   "id": "F67",
+   "cases_en": [
+    "wiping over a splint (both ḥadaths, until removed, an obligation)",
+    "wiping over khuffs, turban or veil (minor ḥadath, a fixed period, a concession)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة بين مسح الجبيرة"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F68",
+   "cases_en": [
+    "removing impurity, paying maintenance or debts (valid without intention)",
+    "lifting ḥadath, zakāt, expiations, vows (intention required)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأنها من أقسام التروك التي القصد منها تركها وإزالتها"
+   },
+   "grounds": [],
+   "note": "the reward still follows the intention"
+  },
+  {
+   "id": "F69",
+   "cases_en": [
+    "acts of worship (only what the law prescribes; judged by intention)",
+    "customs and transactions (permitted unless forbidden; judged by what is the case)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والعادات: الأصل فيها الإباحة، فلا يحرم منها إلا ما حرمه الله ورسوله"
+   },
+   "grounds": [
+    "Usul.Sadi.q06_no_worship_without_dalil",
+    "Usul.Sadi.q06_customs_permitted_by_default",
+    "Usul.Muamalat.q54_belief_irrelevant"
+   ],
+   "note": "Q6 and Q54"
+  },
+  {
+   "id": "F70",
+   "cases_en": [
+    "heavy impurity (dog, pig: seven washings, one with earth) and light impurity (sprinkling)",
+    "intermediate impurity"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: أن النجاسة ثلاثة أقسام"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F71",
+   "cases_en": [
+    "intermediate impurity elsewhere (seven washings, the mashhūr)",
+    "intermediate impurity on the ground (one washing)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومتوسطة: وهي باقي النجاسات يكفي فيها على الصحيح أن تزول بأي شيء، وبأي عدد"
+   },
+   "grounds": [],
+   "note": "against «المشهور من المذهب» of seven washings except on the ground: removal suffices in both"
+  },
+  {
+   "id": "F72",
+   "cases_en": [
+    "the blood of impure animals (no amount excused), and blood left in slaughtered meat (pure)",
+    "other blood (impure, a little excused)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وكذلك من الفروق الصحيحة: تفريقهم في الدماء وأنها ثلاثة أقسام"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F73",
+   "cases_en": [
+    "the ḥajj and ʿumra of a child below discernment (valid)",
+    "his other acts of worship (invalid)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأن نية وليه تقوم مقام نيته"
+   },
+   "grounds": [],
+   "note": "«كما دل عليه النص»; the rest rests on intention"
+  },
+  {
+   "id": "F74",
+   "cases_en": [
+    "the ʿawra in prayer of a free adult woman, of a boy under ten",
+    "everyone else's (navel to knee)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: أن عورة الصلاة ثلاثة أقسام"
+   },
+   "grounds": [],
+   "note": "and likewise the ʿawra of the gaze"
+  },
+  {
+   "id": "F75",
+   "cases_en": [
+    "clothing lawful to all, and forbidden to all (usurped, imitation)",
+    "silk, gold and silver (forbidden to men only)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: أن اللباس ثلاثة أقسام"
+   },
+   "grounds": [],
+   "note": ""
+  }
+ ]
+}
