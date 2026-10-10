@@ -176,14 +176,14 @@ Every ikhtilāf farʿ off the marked madhhab side is run through the kernel's ow
 **Scope reconciliation.** Counts come from committed record IDs minus all existing annotations, not historical estimates. M4 now annotates 196 Ibn Rajab records under 14 qawāʿid, including nine `.f000` additions. PR #29's 1,129 segmented records minus those 196 and tranche 1's 26 left 907 records in 122 qawāʿid with cases. The old “869 in 146” mixed pre-opening counts with all unannotated qawāʿid, including those with no segmented case. PR #30 then added seven segmented records and annotated tranche 2's 25: 1,136 − 196 − 26 − 25 = 889, in 118 qawāʿid. Merged PR #32 then added the list-and-division segmentation and 21 candidate annotations. The unified tranche 3 below preserves those cases and PR #31's eight existing-record annotations, in one 29-record suite; current totals are generated below. Ibn al-Laḥḥām and the global report's totals are separate scopes.
 
 <!-- BEGIN GENERATED M8 SCOPE -->
-**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 399 annotated + **780 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 54 are fully annotated and **100 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
+**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 415 annotated + **764 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 61 are fully annotated and **93 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
 
 The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
 
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.793 | 0 | 0 |
-| All annotation suites | 426 | 0.986 | 0.680 | 0 | 6 |
+| All annotation suites | 442 | 0.986 | 0.689 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -381,6 +381,22 @@ Results on the tranche:
   - On qāʿida 14 the later madhhab rules for purification as for divorce: neither must wash (14.f000, «على الصحيح من المذهب»), against Ibn Rajab's own «لا ضرر فيه».
   - On qāʿida 19, al-Mardāwī's taṣḥīḥ and the muʿtamad give tayammum to the traveller as the time runs out (19.f001), and make ability a condition of the ḥajj's wujūb (19.f005).
 
+**Tranche 9 (qawāʿid 36, 42, 43, 46, 49, 50, 51; 16 furūʿ).** These qawāʿid are typological: each record is a division, annotated for its leading ruling (`corpus/takhrij/rajab_m8_tranche9_furu.json`):
+
+| Qāʿida | Reading |
+|---|---|
+| 36: a lease whose lessor's authority ends | `leaseDissolves`: unless the new holder succeeds the lessor («بل هو منفذ لها») |
+| 42: returning what is held for another | `returnAtOnce`: where held without consent, or guaranteed («فتجب المبادرة إلى الرد بكل حال») |
+| 43: liability for continued holding | `holderLiable`: only one who withholds («فهو غاصب»; «لتعديه بترك الرد مع إمكانه»); after a contract ends, `liableAfterEnding`: where he caused the ending (al-Mughnī's ẓāhir) |
+| 46: whether a void contract is concluded | `voidConcluded`: only a binding one with a pervasive effect (iḥrām, nikāḥ, kitāba) |
+| 49: qabḍ in contracts | `bindsWithoutQabd`: unless qabḍ completes the contract (salam, ribawī) |
+| 50: forced acquisitions and the price | `ownedBeforePayment`: only under necessity («والضرر لا يزال بالضرر»); reconciled to `ownedBeforePaymentIn`: or, on the shufʿa only, by a solvent shafīʿ |
+| 51: ḍamān without qabḍ | `inNewOwnersDaman`: what is determined |
+
+Results on the tranche:
+- **12 derivable, 4 ikhtilāf (3 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 16/16 = 1.000, madhhab coverage 15/16 = 0.938. 43.f001's wujūh turn on who caused the contract's ending, so it gets its own reading on that fact rather than a gap. The bank's gaps stay the six original ones.
+- **Reconciliation:** the two new apparent contradictions entered the ledger. The madhhab on the shufʿa (50.f001), «يملكه بمجرد المطالبة إذا كان مليئا بالثمن، وهو المذهب», became a jamʿ on that solvency farq (`ownedBeforePaymentIn`), restricted to the shufʿa by a `shufa` fact since the farq is cited for it alone, and solvency answers Ibn Rajab's own «والضرر لا يزال بالضرر». On 43.f001 the muʿtamad (al-Muntahā, Kashshāf) makes the rescinded sale object a trust in the buyer's hand, against `liableAfterEnding`. That is a residue.
+
 **Coverage trend:**
 
 | Stage | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
@@ -409,6 +425,8 @@ Results on the tranche:
 | All, after tranche 7's reconciliation | 399 | 0.985 | 0.668 | 0 | 6 |
 | M8 tranche 8 alone | 27 | 1.000 | 0.852 | 0 | 0 |
 | All, after tranche 8 | 426 | 0.986 | 0.680 | 0 | 6 |
+| M8 tranche 9 alone | 16 | 1.000 | 0.938 | 0 | 0 |
+| All, after tranche 9 | 442 | 0.986 | 0.689 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 

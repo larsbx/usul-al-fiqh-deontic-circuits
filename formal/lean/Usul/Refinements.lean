@@ -886,6 +886,44 @@ def eachOnItsAsl (separateMatters : Bool) : Bool := separateMatters
 
 def settlesInDhimma (makingUp : Bool) : Bool := !makingUp
 
+/-! ## M8 tranche 9: qawāʿid 36, 42, 43, 46, 49, 50, 51 -/
+
+/-- Qāʿida 36: a lease by one whose authority ends dissolves unless the new holder succeeds the
+lessor in what is his («فلا اعتراض له على عقوده بل هو منفذ لها»): the ward who comes of age, the heir,
+the buyer; it dissolves for the conqueror and for the next waqf tier, who take from the wāqif. -/
+def leaseDissolves (succeedsLessor : Bool) : Bool := !succeedsLessor
+
+/-- Qāʿida 42: a property held for another must be returned at once where the owner did not
+consent to its holding, or where it is guaranteed («فتجب المبادرة إلى الرد بكل حال»); a trust held
+by consent waits for the demand. -/
+def returnAtOnce (heldByConsent guaranteed : Bool) : Bool := !heldByConsent || guaranteed
+
+/-- Qāʿida 43: continued holding without permission makes liable only one who withholds it
+(«فإن كان ممتنعا من تسليمه فهو غاصب»; «لتعديه بترك الرد مع إمكانه»). -/
+def holderLiable (withholds : Bool) : Bool := withholds
+
+/-- Qāʿida 43, the second division: after a commutative contract ends with the thing in his hand,
+he is liable where he caused the ending or shared in it, «لأنه يسبب إلى جعل ملك غيره في يده», and not
+where the other ended it alone (the ẓāhir of al-Mughnī on the ṣadāq). -/
+def liableAfterEnding (endedByHolder : Bool) : Bool := endedByHolder
+
+/-- Qāʿida 46: a void contract is concluded only where it binds and cannot be left by word
+(iḥrām) or carries a pervasive effect (nikāḥ, kitāba); a void sale or lease «فالمعروف من المذهب
+أنه غير منعقد». -/
+def voidConcluded (binding pervasive : Bool) : Bool := binding && pervasive
+
+/-- Qāʿida 49: a contract binds without qabḍ unless qabḍ is part of its completion (salam,
+ribawī exchange). -/
+def bindsWithoutQabd (qabdCompletes : Bool) : Bool := !qabdCompletes
+
+/-- Qāʿida 50: a forced acquisition is owned before the price is paid only under necessity
+(«لأن ضرره لا يندفع إلا بذلك»); otherwise «والضرر لا يزال بالضرر». -/
+def ownedBeforePayment (necessity : Bool) : Bool := necessity
+
+/-- Qāʿida 51: what is determined enters the new owner's ḍamān without transport, the bond of
+the former owner cut («وقد انقطعت علق البائع منه»); the undetermined needs qabḍ. -/
+def inNewOwnersDaman (determined : Bool) : Bool := determined
+
 /-! ## Reconciliation refinements (`corpus/reconciliation/ledger.json`)
 
 Each is a jamʿ: a farq the later works cite, conservative over the earlier reading where the farq
@@ -945,5 +983,21 @@ def otherTongueValidIn (meaningOnly able needNotLearn : Bool) : Bool :=
 theorem otherTongueValidIn_conservative (m a : Bool) :
     otherTongueValidIn m a false = otherTongueValid m a := by
   cases m <;> cases a <;> rfl
+
+/-- Qāʿida 50 with the madhhab's condition on the shufʿa: the shafīʿ owns by the demand «إذا كان
+مليئا بالثمن» (al-Inṣāf: «وهو المذهب»; al-Iqnāʿ), a solvent taker inflicting no harm («والضرر لا
+يزال بالضرر»). The farq is cited for the shufʿa only: Ibn Rajab keeps the seller's annulment apart
+(«اجتمع له العوض والمعوض»), so the other acquisitions keep the reading. -/
+def ownedBeforePaymentIn (necessity shufa solvent : Bool) : Bool := necessity || (shufa && solvent)
+
+/-- Outside the shufʿa the refinement is the earlier reading. -/
+theorem ownedBeforePaymentIn_conservative (n v : Bool) :
+    ownedBeforePaymentIn n false v = ownedBeforePayment n := by
+  cases n <;> rfl
+
+/-- And so it is for an insolvent shafīʿ. -/
+theorem ownedBeforePaymentIn_insolvent (n s : Bool) :
+    ownedBeforePaymentIn n s false = ownedBeforePayment n := by
+  cases n <;> cases s <;> rfl
 
 end Usul.Refinements

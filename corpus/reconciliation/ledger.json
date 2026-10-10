@@ -2462,6 +2462,42 @@
       ]
     },
     {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f001",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Named authors on both sides; neither is a taṣḥīḥ.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p319",
+          "excerpt_ar": "وقيمة الولد لمولاه والمبيع بعد فسخ أمانة بيد مشتر",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The Muntahā states decisively that the sale object after rescission is a trust (amāna) in the buyer's hand, so not guaranteed, matching position 1's outcome (no liability) though on the ground of the fourth wajh (pure amāna) rather than Abū al-Khaṭṭāb's carry-over of the prior guarantee. The muʿtamad's ground is the trust of the hand, Ibn Rajab's fourth wajh, but its ruling is position 1's."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p049",
+          "excerpt_ar": "بعد فسخ) بيع العيب أو غيره (أمانة بيد مشتر) لحصوله في يده بلا تعد، لكن",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Al-Buhūtī explains that after rescission for defect or otherwise the object is an amāna with the buyer because it reached him without transgression (liable only for negligence in returning), i.e. no ḍamān, matching position 1's ruling. The muʿtamad's ground is the trust of the hand, Ibn Rajab's fourth wajh, but its ruling is position 1's."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p225",
+          "excerpt_ar": "فيرده عليه ويصح الفسخ في غيبته، كما تقدم والمبيع بعد فسخ أمانة كما في",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf adopts the Muntahā ruling that the sale object after faskh is an amāna (not guaranteed), matching position 1's outcome. The muʿtamad's ground is the trust of the hand, Ibn Rajab's fourth wajh, but its ruling is position 1's."
+        }
+      ]
+    },
+    {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005",
       "grades": [
         "takhrij",
@@ -2469,6 +2505,49 @@
       ],
       "jam": null,
       "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f001",
+      "grades": [
+        [
+          "ashab",
+          "nass"
+        ],
+        "wajh"
+      ],
+      "jam": {
+        "encoder": "forced_acquisition_solvent",
+        "from": "forced_acquisition",
+        "farq": "src:openiti-insaf-shamela21609/v06:p298"
+      },
+      "naskh": null,
+      "note": "Aḥmad's naṣṣ is on the seller's annulment and the shufʿa lapsing, cited by Ibn Rajab in support.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p298",
+          "excerpt_ar": "المذهب. اختاره القاضي، وأبو الخطاب، وابن عبدوس في تذكرته. وقدمه في",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Al-Mardāwī says the view that the shafīʿ owns the share by the mere demand, if he can pay the price, is \"huwa al-madhhab\" (the previous line reads \"wa-qīla: yamlikuhu bi-mujarrad al-muṭālaba idhā kāna malīʾan bi-l-thaman. wa-huwa\"). He reports Ibn ʿAqīl's \"not owned until he pays the price\" only as a qīl, so position 1 holds. On the shufʿa, the record's leading example."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p158",
+          "excerpt_ar": "البعض وترك البعض إضرارا بالمشتري، لكن على المذهب من أن الشفيع يملك الشقص",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf calls it \"ʿalā al-madhhab\" that the shafīʿ owns the share by the demand (bi-l-ṭalab), before any payment. On the shufʿa, the record's leading example."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p366",
+          "excerpt_ar": "ذلك رضا فإن اشتغل بكلام آخر أو سكت لغير حاجة بطلت ويملك الشقص بالمطالبة",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ states decisively that the share is owned by the demand, even before he receives it, provided he can pay the price, so ownership comes before the price is paid. On the shufʿa, the record's leading example."
+        }
+      ]
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f000",

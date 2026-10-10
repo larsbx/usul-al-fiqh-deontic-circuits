@@ -440,6 +440,9 @@ import Usul
 #check @Usul.Refinements.advancedSufficesIn_conservative
 #check @Usul.Refinements.otherTongueValidIn
 #check @Usul.Refinements.otherTongueValidIn_conservative
+#check @Usul.Refinements.ownedBeforePaymentIn
+#check @Usul.Refinements.ownedBeforePaymentIn_conservative
+#check @Usul.Refinements.ownedBeforePaymentIn_insolvent
 #check @Usul.Hukm.Mode
 #check @Usul.Hukm.mode
 #check @Usul.Hukm.mode_binding_injective
