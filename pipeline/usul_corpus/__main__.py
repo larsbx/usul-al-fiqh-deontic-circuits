@@ -9,6 +9,7 @@
     python -m usul_corpus m5-commands [--fetch-source]  # replay candidate capability receipts
     python -m usul_corpus docs        # render the dossier and glossary pages from corpus/dossier
     python -m usul_corpus reception   # count the citers' citations of each cited work (cached citers only)
+    python -m usul_corpus labels [--review N] [--import FILE]   # citation-mention dataset → .cache/labels
     python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
     python -m usul_corpus fatawa [--lang L] [--refresh]   # IslamQA offline dumps → .cache/corpus/fatawa/*.jsonl
 """
@@ -304,6 +305,7 @@ def docs_pages() -> dict[Path, str]:
     glossary = _load(GLOSSARY)
     from .reception import render_counts
     titles = {w["id"]: (w["title_tr"], w.get("reception", {}).get("genre", "")) for w in _load(CORPUS / "registry.json")["works"]}
+    titles |= {a["id"]: (a["name_tr"], "") for a in _load(CORPUS / "reception" / "authors.json")["authors"]}
     return {ROOT / "docs/architecture/dossier.md": render_dossier(_load(DOSSIER), records, {t["key"]: t for t in glossary["terms"]}),
             ROOT / "docs/glossary.md": render_glossary(glossary, records),
             ROOT / "docs/architecture/reception-counts.md": render_counts(_load(CORPUS / "reception" / "report.json"), titles)}
@@ -316,12 +318,55 @@ def cmd_docs(_: argparse.Namespace) -> int:
 
 
 def cmd_reception(_: argparse.Namespace) -> int:
-    from .reception import build
-    rep = build(_load(CORPUS / "registry.json"), CACHE)
+    from .reception import authors, build
+    rep = build(_load(CORPUS / "registry.json"), CACHE, authors(CORPUS / "reception" / "authors.json"))
     _dump(CORPUS / "reception" / "report.json", rep)
-    for work, c in sorted(rep["counts"].items(), key=lambda kv: -kv[1]["total"]):
+    for work, c in sorted({**rep["counts"], **rep["authors"]}.items(), key=lambda kv: -kv[1]["total"]):
         print(f"{work:40} {c['total']:>6}  {c['by_scholar']}")
     print(f"missing citers: {rep['missing'] or 'none'}", file=sys.stderr)
+    return 0
+
+
+LABELS = ROOT / ".cache" / "labels"
+GOLD = CORPUS / "labels" / "gold.jsonl"
+
+
+def _label_tasks() -> tuple:
+    from .labels import Task
+    from .reception import authors, lexicon
+    return (Task("work", lexicon(_load(CORPUS / "registry.json")["works"]), cue_single=True),
+            Task("author", authors(CORPUS / "reception" / "authors.json"), cue_single=False))
+
+
+def cmd_labels(args: argparse.Namespace) -> int:
+    """Candidates + rule/gold labels per task → .cache/labels; review queue; committed summary."""
+    from .labels import candidates, choices, merge_gold, read_gold, review_queue, summary, with_gold, write_gold, write_jsonl
+    tasks = {t.name: t for t in _label_tasks()}
+    gold = read_gold(GOLD)
+    if args.import_:
+        reviewed = [json.loads(l) for l in Path(args.import_).read_text(encoding="utf-8").splitlines() if l.strip()]
+        for name, task in tasks.items():
+            gold = merge_gold(gold, (r for r in reviewed if r["id"].startswith(f"{name}:")), task)
+        write_gold(GOLD, gold)
+    citers = [x["id"] for w in _load(CORPUS / "registry.json")["works"]
+              if w.get("reception", {}).get("role") == "citer" for x in w["witnesses"]]
+    texts = {wid: (CACHE / f"{wid}.txt").read_text(encoding="utf-8") for wid in citers if (CACHE / f"{wid}.txt").exists()}
+    rows = {name: with_gold([r for wid, text in sorted(texts.items()) for r in candidates(task, wid, text)], gold)
+            for name, task in tasks.items()}
+    for name, rs in rows.items():
+        write_jsonl(LABELS / f"{name}.jsonl", rs)
+        for split in ("train", "dev", "test"):
+            write_jsonl(LABELS / f"{name}.{split}.jsonl",
+                        ({**r, "text": f"{r['left']} [[{r['surface']}]] {r['right']}"}
+                         for r in rs if r["split"] == split and r["label"] is not None))
+        write_jsonl(LABELS / f"review-{name}.jsonl",
+                    ({**r, "choices": list(choices(tasks[name], r["surface"]))} for r in review_queue(rs, args.review)))
+    seen = {r["id"] for rs in rows.values() for r in rs}
+    rep = {"citers": sorted(texts), "missing": sorted(set(citers) - set(texts)),
+           "gold": len(gold), "gold_unmatched": sorted(set(gold) - seen), **summary(rows)}
+    _dump(CORPUS / "labels" / "summary.json", rep)
+    print(json.dumps({k: {x: v[x] for x in ("candidates", "by_source")} for k, v in rep.items() if k in tasks}, ensure_ascii=False))
+    print(f"dataset and review queues → {LABELS.relative_to(ROOT)}", file=sys.stderr)
     return 0
 
 
@@ -401,6 +446,10 @@ def main(argv: list[str] | None = None) -> int:
     m5.set_defaults(run=cmd_m5_commands)
     sub.add_parser("docs").set_defaults(run=cmd_docs)
     sub.add_parser("reception").set_defaults(run=cmd_reception)
+    lb = sub.add_parser("labels")
+    lb.add_argument("--review", type=int, default=300, help="rows per task in the review queue")
+    lb.add_argument("--import", dest="import_", metavar="FILE", help="reviewed JSONL rows to merge into the gold labels")
+    lb.set_defaults(run=cmd_labels)
     fa = sub.add_parser("fatawa")
     fa.add_argument("--lang")
     fa.add_argument("--refresh", action="store_true")

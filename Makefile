@@ -3,7 +3,7 @@ PY      ?= python3
 TLA_JAR ?= .cache/tla2tools.jar
 TLA_URL  = https://github.com/tlaplus/tlaplus/releases/download/v1.8.0/tla2tools.jar
 
-.PHONY: all test fetch fatawa ocr build validate generated lean tla reception
+.PHONY: all test fetch fatawa ocr build validate generated lean tla reception labels
 all: test validate generated lean tla
 
 test:      ; cd pipeline && $(PY) -m pytest -q
@@ -13,6 +13,7 @@ ocr:       ; cd pipeline && $(PY) -m usul_corpus ocr --jobs $(shell nproc)   # n
 build:     ; cd pipeline && $(PY) -m usul_corpus build
 validate:  ; cd pipeline && $(PY) -m usul_corpus validate
 reception: ; cd pipeline && $(PY) -m usul_corpus reception && $(PY) -m usul_corpus docs   # needs the citers cached
+labels:    ; cd pipeline && $(PY) -m usul_corpus labels                                  # needs the citers cached
 generated: ; $(PY) formal/fixtures/gen_grounded.py && cd pipeline && $(PY) -m usul_corpus signature && $(PY) -m usul_corpus m8-worklist --check && git diff --exit-code ../formal/fixtures ../formal/lean/UsulTest
 lean:      ; cd formal/lean && lake build
 $(TLA_JAR):; mkdir -p $(@D) && curl -sSL -o $@ $(TLA_URL)
