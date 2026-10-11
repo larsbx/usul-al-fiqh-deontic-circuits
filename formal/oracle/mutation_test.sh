@@ -38,6 +38,7 @@ mutants=(
   "t12_necessity|tanaqud_oracle.pl|s/^qayd(12, \[N\]) :- N == true\./qayd(12, [N]) :- N == false./"
   "t13_tolerates|tanaqud_oracle.pl|s/^qayd(13, \[_, T\]) :- T == true\./qayd(13, [_, T]) :- T == false./"
   "t14_oath|tanaqud_oracle.pl|s/^qayd(14, \[O\]) :- O == false\./qayd(14, [O]) :- O == true./"
+  "t15_together|tanaqud_oracle.pl|s/^qayd(15, \[T\]) :- T == true\./qayd(15, [T]) :- T == false./"
   "t10_burden|tanaqud_oracle.pl|s/^first(10, \[_\], yamin)\./first(10, [_], bayyina)./"
   "jam_side|tanaqud_oracle.pl|s/( qayd(P, C) -> first(P, C, V0) ; second(P, C, V0) )/( qayd(P, C) -> second(P, C, V0) ; first(P, C, V0) )/"
   "furuq_daif_alike|furuq_oracle.pl|s/^grade(daif,    apart, alike)\./grade(daif,    apart, apart)./"

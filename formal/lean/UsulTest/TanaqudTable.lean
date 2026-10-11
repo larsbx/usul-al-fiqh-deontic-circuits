@@ -147,3 +147,10 @@ import Usul
 #guard Usul.Tanaqud.t14.first false == .perJirya
 #guard Usul.Tanaqud.t14.second false == .whole
 #guard Usul.Tanaqud.t14.jam false == .perJirya
+-- T-15: Q14 ⟂ Q15
+#guard Usul.Tanaqud.t15.first true == true
+#guard Usul.Tanaqud.t15.second true == false
+#guard Usul.Tanaqud.t15.jam true == true
+#guard Usul.Tanaqud.t15.first false == true
+#guard Usul.Tanaqud.t15.second false == false
+#guard Usul.Tanaqud.t15.jam false == false

@@ -730,4 +730,61 @@ def manumissionReachesBenefits (bindingContract : Bool) : Bool := !bindingContra
 theorem binding_is_implicit_exception (b : Bool) :
     manumissionReachesBenefits b = !uncertainExceptionValid b := rfl
 
+/-! ## M8 tranche 6 -/
+
+/-! ### Qāʿida 3: doing more than suffices
+
+«إن كانت الزيادة متميزة منفصلة فلا إشكال في أنها نفل بانفرادها … وأما إن لم تكن متميزة ففيه
+وجهان». On an excess over the due (an older animal in zakāt) al-Qāḍī: «بعضه تطوع وهو الصواب»;
+«فأما ما كان الأصل فرضيته ووجوبه ثم سقط بعضه تخفيفا فإذا فعل الأصل وصف الكل بالوجوب على
+الصحيح» (the traveller who prays four). -/
+
+/-- The whole is described as obligatory only when the excess cannot be told apart and the whole
+was the original duty, lightened. -/
+def wholeObligatory (separable originallyDue : Bool) : Bool := !separable && originallyDue
+
+theorem separable_excess_is_nafl (o : Bool) : wholeObligatory true o = false := rfl
+
+/-! ### Qāʿida 9: worship done in a prohibited way
+
+«إن كان التحريم عائدا إلى ذات العبادة … لم يصح، وإن كان عائدا إلى شرطها فإن كان على وجه يختص
+بها فكذلك أيضا، وإن كان لا يختص بها ففي الصحة روايتان أشهرهما عدمها، وإن عاد إلى ما ليس بشرط
+فيها ففي الصحة وجهان واختار أبو بكر عدم الصحة وخالفه الأكثرون». -/
+
+inductive ProhibitionSite where
+  | essence | specificCondition | generalCondition | external
+  deriving DecidableEq, Repr
+
+/-- The reading takes «أشهرهما» on the general condition and «الأكثرون» on what is not a condition. -/
+def worshipValidDespite : ProhibitionSite → Bool
+  | .external => true
+  | _ => false
+
+/-- al-Saʿdī's three sites (Q38): Ibn Rajab's two kinds of condition are one. -/
+def ProhibitionSite.toSadi : ProhibitionSite → Sadi.ProhibitionTarget
+  | .essence => .essence
+  | .specificCondition | .generalCondition => .condition
+  | .external => .external
+
+/-- Ibn Rajab 9 refines al-Saʿdī Q38 and agrees with it on every site: no clash. -/
+theorem q9_refines_q38 (s : ProhibitionSite) :
+    worshipValidDespite s = Sadi.validDespiteProhibition s.toSadi := by
+  cases s <;> rfl
+
+/-! ### Qāʿida 14: a cause from one of two, unknown which
+
+«فهل يلحق الحكم بكل منهما أو لا يلحق بواحد منهما شيء في المسألة خلاف». Each alone builds on his
+certainty («كل واحد منهما متيقن للطهارة شاك في الحدث»); taken together the certain occurrence
+counts: «فينظر إليهما مجتمعين في حكم يتعلق باجتماعهما» (one may not lead the other in prayer; the
+two slave-women in one ownership go to lots, «على أصح الوجهين»). -/
+
+def oneOfTwoAttaches (together : Bool) : Bool := together
+
+/-! ### Qāʿida 15: a presumption does not carry its consequence into another
+
+«وكان لازم ذلك تغير أصل آخر يجب استصحابه أو ترك العمل بظاهر آخر يجب إعماله لم يلتفت إلى ذلك
+اللازم على الصحيح». -/
+
+def consequenceCarries (altersAnotherAsl : Bool) : Bool := !altersAnotherAsl
+
 end Usul.Refinements

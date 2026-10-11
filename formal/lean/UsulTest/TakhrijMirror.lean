@@ -268,6 +268,18 @@ import Usul
 #guard (Usul.Refinements.uncertainExceptionValid true) == true
 #guard (Usul.Refinements.manumissionReachesBenefits false) == true
 #guard (Usul.Refinements.manumissionReachesBenefits true) == false
+#guard (Usul.Refinements.wholeObligatory false false) == false
+#guard (Usul.Refinements.wholeObligatory false true) == true
+#guard (Usul.Refinements.wholeObligatory true false) == false
+#guard (Usul.Refinements.wholeObligatory true true) == false
+#guard (Usul.Refinements.worshipValidDespite .essence) == false
+#guard (Usul.Refinements.worshipValidDespite .specificCondition) == false
+#guard (Usul.Refinements.worshipValidDespite .generalCondition) == false
+#guard (Usul.Refinements.worshipValidDespite .external) == true
+#guard (Usul.Refinements.oneOfTwoAttaches false) == false
+#guard (Usul.Refinements.oneOfTwoAttaches true) == true
+#guard (Usul.Refinements.consequenceCarries false) == true
+#guard (Usul.Refinements.consequenceCarries true) == false
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 #guard (Usul.Dalala.coversBeyondSabab true true false) == true

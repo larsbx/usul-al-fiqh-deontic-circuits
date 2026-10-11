@@ -172,14 +172,14 @@ After this round: 214 cases, **coverage 0.977**, **madhhab coverage 0.648**, **0
 **Scope reconciliation.** Counts come from committed record IDs minus all existing annotations, not historical estimates. M4 now annotates 196 Ibn Rajab records under 14 qawāʿid, including nine `.f000` additions. PR #29's 1,129 segmented records minus those 196 and tranche 1's 26 left 907 records in 122 qawāʿid with cases. The old “869 in 146” mixed pre-opening counts with all unannotated qawāʿid, including those with no segmented case. PR #30 then added seven segmented records and annotated tranche 2's 25: 1,136 − 196 − 26 − 25 = 889, in 118 qawāʿid. Merged PR #32 then added the list-and-division segmentation and 21 candidate annotations. The unified tranche 3 below preserves those cases and PR #31's eight existing-record annotations, in one 29-record suite; current totals are generated below. Ibn al-Laḥḥām and the global report's totals are separate scopes.
 
 <!-- BEGIN GENERATED M8 SCOPE -->
-**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 324 annotated + **855 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 39 are fully annotated and **115 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
+**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 339 annotated + **840 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 43 are fully annotated and **111 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
 
 The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
 
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.793 | 0 | 0 |
-| All annotation suites | 351 | 0.983 | 0.657 | 0 | 6 |
+| All annotation suites | 366 | 0.984 | 0.652 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -301,6 +301,17 @@ Results on the tranche:
   - **Qāʿida 24 separates the punitive from the remedial right.** Burning the thief's goods (24.f000) punishes a past act, so the sale does not end it. Lowering the dhimmī's building (24.f002) removes an ongoing harm, which ends with the transfer, as the text itself contrasts («لا عقوبة للتعلية الماضية»).
 - **Segmentation finding:** qāʿida 21's first example opens mid-line («والأظهر أنه جزء فمن ذلك …»), so it has no `.f000`. Qāʿida 9, whose inline «(ومنها)» joins several cases in one record, is left for the segmenter.
 
+**Tranche 6 (qawāʿid 3, 9, 14, 15; 15 furūʿ).** Read from each qāʿida's own statement (`corpus/takhrij/rajab_m8_tranche6_furu.json`):
+
+| Qāʿida | Reading | Link to the bank |
+|---|---|---|
+| 3: doing more than suffices: is the whole obligatory? («ففيه وجهان») | `wholeObligatory`: only when the excess cannot be told apart and the whole was the original duty, lightened («وصف الكل بالوجوب على الصحيح»); an excess over the due is taṭawwuʿ (al-Qāḍī, «وهو الصواب») | `separable_excess_is_nafl` |
+| 9: worship done in a prohibited way | `worshipValidDespite` over four sites; the general condition takes «أشهرهما عدمها», the non-condition «الأكثرون» | `q9_refines_q38`: agrees with al-Saʿdī Q38 on every site |
+| 14: a cause from one of two, unknown which («فيه خلاف») | `oneOfTwoAttaches`: only when the two are taken together, «فينظر إليهما مجتمعين في حكم يتعلق باجتماعهما» | T-15 |
+| 15: a presumption does not carry its consequence into another («على الصحيح») | `consequenceCarries` | T-15 |
+
+Tranche 6: 5 derivable, 10 ikhtilāf (3 matching the madhhab); coverage 1.000, madhhab coverage 0.533, no new gaps. Q14 with Q15 is the register's pair T-15.
+
 **Tranche 5 (qawāʿid 25, 29, 30, 32, 33, 34; 27 furūʿ).** Read from each qāʿida's own statement (`corpus/takhrij/rajab_m8_tranche5_furu.json`):
 
 | Qāʿida | Reading | Link to the bank |
@@ -339,6 +350,8 @@ Results on the tranche:
 | All, after tranche 4 | 324 | 0.981 | 0.653 | 0 | 6 |
 | M8 tranche 5 alone | 27 | 1.000 | 0.704 | 0 | 0 |
 | All, after tranche 5 | 351 | 0.983 | 0.657 | 0 | 6 |
+| M8 tranche 6 alone | 15 | 1.000 | 0.533 | 0 | 0 |
+| All, after tranche 6 | 366 | 0.984 | 0.652 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 

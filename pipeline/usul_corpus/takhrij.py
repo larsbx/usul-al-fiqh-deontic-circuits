@@ -269,6 +269,23 @@ ENCODERS: dict[str, dict] = {
         sadi=[], qawaid=[RAJAB.format(34)], facts={"binding_contract": B},
         out=B, lean="Usul.Refinements.manumissionReachesBenefits {binding_contract}",
         py=lambda f: not f["binding_contract"]),
+    "excess_obligatory": dict(
+        sadi=[], qawaid=[RAJAB.format(3)], facts={"separable": B, "originally_due": B},
+        out=B, lean="Usul.Refinements.wholeObligatory {separable} {originally_due}",
+        py=lambda f: not f["separable"] and f["originally_due"]),
+    "prohibited_worship": dict(
+        sadi=[38], qawaid=[RAJAB.format(9)],
+        facts={"site": ("essence", "specificCondition", "generalCondition", "external")},
+        out=B, lean="Usul.Refinements.worshipValidDespite {site}",
+        py=lambda f: f["site"] == "external"),
+    "one_of_two": dict(
+        sadi=[], qawaid=[RAJAB.format(14)], facts={"together": B},
+        out=B, lean="Usul.Refinements.oneOfTwoAttaches {together}",
+        py=lambda f: f["together"]),
+    "separate_presumptions": dict(
+        sadi=[], qawaid=[RAJAB.format(15)], facts={"alters_another_asl": B},
+        out=B, lean="Usul.Refinements.consequenceCarries {alters_another_asl}",
+        py=lambda f: not f["alters_another_asl"]),
     "umum_lafz": dict(
         sadi=[], qawaid=[LAHHAM.format(61)], facts={"in_occasion": B, "general_wording": B},
         out=B, lean="Usul.Dalala.coversBeyondSabab true {in_occasion} {general_wording}",

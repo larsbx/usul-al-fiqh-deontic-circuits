@@ -103,3 +103,9 @@ qayd(13, [_, T]) :- T == true.
 first(14, [_], perJirya).
 second(14, [_], whole).
 qayd(14, [O]) :- O == false.
+
+% T-15 Ibn Rajab 14 ⟂ 15: does the breach certain in one of two attach?, case [Together].
+% «فينظر إليهما مجتمعين في حكم يتعلق باجتماعهما»
+first(15, [_], true).
+second(15, [_], false).
+qayd(15, [T]) :- T == true.

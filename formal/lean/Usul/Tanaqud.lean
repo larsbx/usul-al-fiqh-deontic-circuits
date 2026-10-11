@@ -26,7 +26,7 @@ For each pair, three things are proved:
 Earlier pairs proved in place: Q13/Q36 (`Muamalat.q13_q36_consistent`), Q26/Q43
 (`Muamalat.q26_q43_consistent`), Q51/Q54 (`Muamalat.q51_q54_consistent`).
 
-T11–T14 carry the pass to Ibn Rajab's *Taqrīr al-Qawāʿid* (`corpus/tanaqud/rajab.json`): two pairs
+T11–T15 carry the pass to Ibn Rajab's *Taqrīr al-Qawāʿid* (`corpus/tanaqud/rajab.json`): three pairs
 inside his book, two across the bank against al-Saʿdī. The qayd is again his own sentence.
 -/
 
@@ -357,6 +357,28 @@ theorem t14_clash : t14.Clash := ⟨true, by decide⟩
 theorem t14_jam (oath : Bool) :
     t14.jam oath = if oath then Refinements.oathBody true else Refinements.runningBody true := by
   cases oath <;> rfl
+
+/-! ## T15 · Ibn Rajab 14 ⟂ Ibn Rajab 15: a breach certain in one of two
+
+Q14 (its second riwāya): when the cause is certainly in one of two, «الأصل زال يقينا في أحدهما
+فتعذر البقاء عليه», so the ruling attaches. Q15: a presumption is kept, and its consequence for
+another presumption «لم يلتفت إلى ذلك اللازم». Two who find semen in a shared garment: by Q14 the
+breach attaches, by Q15 each keeps his certain purity. Ibn Rajab (14.f002): «فينظر إليهما مجتمعين
+في حكم يتعلق باجتماعهما». Taken together (one leading the other, both slave-women in one
+ownership) Q14 governs; each alone keeps his aṣl (Q15). -/
+
+/-- The case: the two are taken together in one ruling. The result: whether the certain
+breach attaches. -/
+def t15 : Pair Bool Bool where
+  first  := fun _ => true
+  second := fun _ => Refinements.consequenceCarries true
+  qayd   := id
+
+theorem t15_clash : t15.Clash := ⟨true, by decide⟩
+
+/-- The jamʿ is Q14's reading, `Refinements.oneOfTwoAttaches`. -/
+theorem t15_jam (together : Bool) : t15.jam together = Refinements.oneOfTwoAttaches together := by
+  cases together <;> rfl
 
 /-! ## Ibn Rajab 93 with Ibn Rajab 75: no clash
 

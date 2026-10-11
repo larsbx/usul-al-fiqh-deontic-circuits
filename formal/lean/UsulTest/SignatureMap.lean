@@ -355,9 +355,15 @@ import Usul
 #check @Usul.Tanaqud.t14_clash
 #check @Usul.Tanaqud.t14_jam
 #check @Usul.Refinements.oath_follows_custom
+#check @Usul.Tanaqud.t15
+#check @Usul.Tanaqud.t15_clash
+#check @Usul.Tanaqud.t15_jam
+#check @Usul.Refinements.oneOfTwoAttaches
+#check @Usul.Refinements.consequenceCarries
 #check @Usul.Refinements.q65_is_the_unbelieved_basis
 #check @Usul.Tanaqud.rajab_q93_q75_consistent
 #check @Usul.Refinements.binding_is_implicit_exception
+#check @Usul.Refinements.q9_refines_q38
 #check @Usul.Tanaqud.Pair.Clash
 #check @Usul.Tanaqud.Pair.jam_first
 #check @Usul.Tanaqud.Pair.jam_second

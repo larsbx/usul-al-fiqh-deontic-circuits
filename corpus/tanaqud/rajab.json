@@ -35,6 +35,15 @@
    "lean": [
     "Usul.Refinements.binding_is_implicit_exception"
    ]
+  },
+  {
+   "rules": [
+    9,
+    "sadi.qawaid_jamia:38"
+   ],
+   "lean": [
+    "Usul.Refinements.q9_refines_q38"
+   ]
   }
  ],
  "pairs": [
@@ -293,6 +302,50 @@
      "first": "perJirya",
      "second": "whole",
      "jam": "perJirya"
+    }
+   ]
+  },
+  {
+   "id": "T-15",
+   "rules": [
+    14,
+    15
+   ],
+   "case_en": "Two find semen in a garment they share, not knowing whose: Q14 (its second riwāya) attaches the certain breach, the aṣl having ended in one of them; Q15 keeps each presumption and ignores its consequence for another.",
+   "resolution": "jam",
+   "qayd_en": "Taken together in one ruling (one leading the other in prayer, both slave-women in one ownership), Q14; each alone, Q15.",
+   "author": [
+    {
+     "ref": "src:openiti-rajab-shamela21730#q014",
+     "excerpt_ar": "فينظر إليهما مجتمعين في حكم يتعلق باجتماعهما"
+    }
+   ],
+   "reading_rules": [
+    "sadi.qawaid_jamia:29"
+   ],
+   "lean": [
+    "Usul.Tanaqud.t15",
+    "Usul.Tanaqud.t15_clash",
+    "Usul.Tanaqud.t15_jam",
+    "Usul.Refinements.oneOfTwoAttaches",
+    "Usul.Refinements.consequenceCarries"
+   ],
+   "table": [
+    {
+     "case": [
+      true
+     ],
+     "first": true,
+     "second": false,
+     "jam": true
+    },
+    {
+     "case": [
+      false
+     ],
+     "first": true,
+     "second": false,
+     "jam": false
     }
    ]
   }
