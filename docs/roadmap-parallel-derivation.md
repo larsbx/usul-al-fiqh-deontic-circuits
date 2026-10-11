@@ -66,6 +66,28 @@ Precedents:
   - joining al-Irwāʾ to the `masala`, `fatwa` and `bab` records. `hadith.JOIN_TYPES` holds the join to the reviewed types; widening it proposes 1,351 masāʾil candidates, which are a review tranche of their own;
   - P0.6's transfer gap: routing modern questions (below) is far weaker than routing classical furūʿ; profiles need modern evidence, i.e. lane B's first annotated fatāwā;
   - validating the encoder → bāb assignments, which nothing measures yet.
+- **Routing by type, not by wording (human instruction, 2026-10-11): the type system is Lean.** Encoders are typed, so whether a text falls under an encoder is a typing question: does the situation it describes inhabit the encoder's fact signature? The wording, classical or modern, then stops being the limit. The types, signatures and laws are declared and proved in Lean (`formal/lean/Usul/Typing.lean`); Python only mirrors them. The lexical index is the baseline to beat.
+  - **Where it started.** The 104 encoders read 167 facts under 144 local names: 147 are bare `Bool` propositions, and only `Usul.Grade` and `Option Usul.Hukm` are read by more than one fact. There was no common type.
+  - **T1, done: the framework and a first slice.**
+    - `Usul.Typing.Typed S O` is an encoder typed over situations `S`, ruling in `O`. It has `proj : S → Option Local`, `embed`, the law `proj_embed`, and `run`, which is the existing kernel function, so typing changes no ruling.
+    - `applies` is the typing judgement and `judge` the ruling. `judge_embed`, `applies_embed` and `applies_iff_judge` are proved once for every encoder.
+    - **The qawāʿid define the types (human instruction, 2026-10-11).** Each qāʿida's statement ranges over certain facts, and `Usul.Typing.Qaida` holds a structure per qāʿida with exactly those facts, each `Option` until a text settles it:
+      - `Yaqin` (al-Saʿdī Q11), and `Qarain` (Q52), which extends it;
+      - `ItlafHal` (Q13) and `ItlafQasd` (Q36);
+      - `Amana` (Q14);
+      - `ZannError` (Ibn Rajab Q6).
+
+      `Usul.Typing.Situation` is their join. A field is shared only where qawāʿid state the same notion, and Lean checks that a field merged through `extends` has one type.
+    - Five encoders are typed so far: `itlaf` (Q13 ⊔ Q36), `trust_loss` and `trust_voidance` (Q14), `excused_error` (Ibn Rajab Q6), and `asl_zahir` (Q52 ⊒ Q11).
+    - The theorems:
+      - `transgression_is_shared`: Q14 types both trust encoders;
+      - `negligence_is_qualified`: Q14's «يفرط» (in safekeeping) is not Ibn Rajab Q6's «فرط بترك البحث» (in inquiry);
+      - `itlaf_reads_two_qawaid`: the purpose alone leaves a missing fact;
+      - `qarain_extends_yaqin`.
+    - `python -m usul_corpus typing` generates `formal/lean/UsulTest/TypedMirror.lean`, which guards that each typed encoder agrees with `takhrij.ENCODERS` on every combination of fact values.
+  - **T2:** type the other 99 encoders: each fact goes into the type of the qāʿida it is stated by (the encoder's `sadi` and `qawaid` already name them; 73 encoders cite only Ibn Rajab or Ibn al-Laḥḥām). Identifying two facts as one field is a modelling decision: it is proposed as `candidate`, and the mirror guards prove the encoder unchanged.
+  - **T3:** typing as routing. A unit is typed once into a partial `Situation`; the encoders whose `applies` holds take it. One lacking a field yields `missing_fact` naming it. Two that apply and disagree go to taʿāruḍ.
+  - **T4:** typed routing measured against the lexical baseline on the same held-out cases and IslamQA set.
 - **P0.6 done, as a ranker:** `python -m usul_corpus routing` writes `corpus/routing/index.json`. Profiles are derived from the bank's evidence, never written: each of the 100 encoders gets the TF-IDF centroid of the records its annotated cases rest on plus its own qawāʿid, with words found in over 10 % of the evidence dropped. Per encoder the index gives its case support, its lexicon (the heaviest profile words) and its nearest matn units.
   - **Held-out cases** (5 folds by record-id hash, 461 cases): the true encoder is in the top 1 / 5 / 10 for 0.61 / 0.86 / 0.91 of cases, against 0.08 / 0.29 / 0.37 for ranking encoders by frequency.
   - **Out-of-domain** (`corpus/routing/ood.json`, the 123 IslamQA tranche cases, title and question): 0.09 / 0.29 / 0.37. The stopword share was chosen on the held-out folds, not on this set.

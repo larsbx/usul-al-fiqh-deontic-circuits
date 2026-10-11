@@ -28,7 +28,7 @@ The method is specified in `docs/architecture/derivation-method.md`; this is how
 Follow `docs/architecture/derivation-method.md` §5.3 for one round:
 - verify each contribution against its claim and base commit;
 - merge in a fixed order;
-- regenerate with `python -m usul_corpus takhrij`, `reconcile`, `m8-worklist`, `docs` and `signature`;
+- regenerate with `python -m usul_corpus takhrij`, `reconcile`, `worklist`, `routing`, `typing`, `docs` and `signature`;
 - self-apply: the revisit queue must end empty;
 - reconcile over the union;
 - run `make all`;

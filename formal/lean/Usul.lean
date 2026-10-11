@@ -18,3 +18,4 @@ import Usul.CommandSchemata
 import Usul.Refinements
 import Usul.Readings
 import Usul.Seam
+import Usul.Typing
