@@ -22,6 +22,7 @@ The guiding constraint is that the LLM may propose, normalize, query, and explai
 - Pipeline: [`docs/architecture/formalization-pipeline.md`](docs/architecture/formalization-pipeline.md)
 - Fatāwā corpus: [`docs/architecture/reception.md`](docs/architecture/reception.md): the canonical fatāwā and rulings collections the modern jurists cite, with citation counts from their own texts
 - Citation labels: [`docs/architecture/mentions.md`](docs/architecture/mentions.md): weakly labelled title and author mentions, a review queue and gold labels, for training a citation classifier
+- Derivation method and parallel plan: [`docs/roadmap-parallel-derivation.md`](docs/roadmap-parallel-derivation.md): the bank's tranche procedure as an explicit method (S0–S9, invariants), the source texts by role, and the lanes for running it in parallel
 - `make all` runs the corpus tests, record validation, the generated-file drift check, the Lean build and TLC. `make fetch build` refreshes the corpus cache and records.
 
 ## al-Albānī ḥadīth-methodology track
