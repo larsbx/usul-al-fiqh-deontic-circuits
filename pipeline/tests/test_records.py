@@ -218,7 +218,8 @@ def test_research_questions_are_grounded():
             wid, vol, page = _re.fullmatch(r"src:([a-z0-9-]+)/v(\d+):p(\d+)", s["ref"]).groups()
             assert wid in witnesses, s["ref"]
             cached = root / ".cache/corpus" / f"{wid}.txt"
-            if "excerpt_ar" in s and cached.exists():
+            assert s["excerpt_ar"].strip(), s["ref"]  # an empty excerpt would match every page
+            if cached.exists():
                 from usul_corpus.reception import pages
                 marker = f"PageV{int(vol):02d}P{int(page):03d}"
                 body = next((b for loc, b in pages(cached.read_text(encoding="utf-8")) if loc == marker), "")

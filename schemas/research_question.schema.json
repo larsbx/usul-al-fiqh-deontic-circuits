@@ -24,8 +24,8 @@
         "policy_in_force": {"type": "string", "minLength": 1, "description": "what the pipeline does until a decision; set by a human"},
         "pins": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^Usul\\."}},
         "sources": {"type": "array", "minItems": 1, "items": {
-          "type": "object", "required": ["ref", "note"], "additionalProperties": false,
-          "properties": {"ref": {"type": "string", "pattern": "^src:[a-z0-9-]+/v[0-9]+:p[0-9]+$"}, "excerpt_ar": {"type": "string", "maxLength": 400}, "note": {"type": "string", "minLength": 1}}}},
+          "type": "object", "required": ["ref", "excerpt_ar", "note"], "additionalProperties": false,
+          "properties": {"ref": {"type": "string", "pattern": "^src:[a-z0-9-]+/v[0-9]+:p[0-9]+$"}, "excerpt_ar": {"type": "string", "minLength": 1, "maxLength": 400}, "note": {"type": "string", "minLength": 1}}}},
         "alternatives": {"type": "array", "minItems": 2, "items": {"type": "string"}},
         "research": {"type": "array", "minItems": 1, "items": {"type": "string"}, "description": "concrete next steps"},
         "status": {"enum": ["open-research", "ready-for-decision", "decided", "withdrawn"]},
