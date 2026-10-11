@@ -27,6 +27,7 @@ import argparse
 import hashlib
 import json
 import sys
+from collections import Counter
 from pathlib import Path
 
 from . import hadith
@@ -39,8 +40,9 @@ from .texts import publishable, restore, stage
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
 from .openiti import parse_markdown
+from .abwab import segment_abwab
 from .qa import segment_entries, segment_qa
-from .records import fatwa_record, hadd_record, masala_record, qaida_records, sharh_record, unit_tags
+from .records import bab_record, fatwa_record, hadd_record, masala_record, qaida_records, sharh_record, unit_tags
 from .segment import (
     audit_numbering,
     consensus_numbering,
@@ -161,15 +163,20 @@ SEGMENTERS = {
 }
 
 
+# Line-segmented kinds: one record per unit, numbered in order, each with its sha256 receipt.
+UNIT_SEGMENTERS = {
+    "qa": (lambda text, seg: segment_qa(text, seg["question"], seg["answer"]), fatwa_record),
+    "masail": (lambda text, seg: segment_entries(text, seg["start"]), masala_record),
+    "abwab": (lambda text, seg: segment_abwab(text, seg.get("end")), bab_record),
+}
+
+
 def _segment(work: dict, w: dict, text: str) -> tuple[list[dict], tuple | None]:
     """Records for one witness, plus the numbered units when the segmenter yields any."""
     seg, witness = w.get("segmenter", work["segmenter"]), w["id"]
-    if seg["kind"] == "qa":
-        units = segment_qa(text, seg["question"], seg["answer"])
-        return [fatwa_record(work, witness, i, u) for i, u in enumerate(units, 1)], None
-    if seg["kind"] == "masail":
-        entries = segment_entries(text, seg["start"])
-        return [masala_record(work, witness, i, u) for i, u in enumerate(entries, 1)], None
+    if seg["kind"] in UNIT_SEGMENTERS:
+        cut, record = UNIT_SEGMENTERS[seg["kind"]]
+        return [record(work, witness, i, u) for i, u in enumerate(cut(text, seg), 1)], None
     if seg["kind"] == "hudud_brackets":
         hudud = extract_hudud(parse_markdown(text))
         return [hadd_record(work, witness, i, h) for i, h in enumerate(hudud, 1)], None
@@ -198,9 +205,11 @@ def _commentary(work: dict, witness: str, text: str, units: tuple) -> tuple[list
 
 
 def unit_audit(records: list[dict]) -> dict:
-    """Audit fields for fatwā and masʾala records: the answered share, and the printed numbering."""
-    if not records or records[0]["record_type"] not in ("fatwa", "masala"):
+    """Audit fields for unit records: the answered share, the printed numbering, the ranks."""
+    if not records or records[0]["record_type"] not in ("fatwa", "masala", "bab"):
         return {}
+    if records[0]["record_type"] == "bab":
+        return {"ranks": dict(sorted(Counter(r["rank"] for r in records).items()))}
     out = {"answered": sum(r["answer_ar"] is not None for r in records)} if records[0]["record_type"] == "fatwa" else {}
     nums = [r["number"] for r in records if r.get("number")]
     if nums:
@@ -524,7 +533,6 @@ def cmd_labels(_: argparse.Namespace) -> int:
 def cmd_bank_review(_: argparse.Namespace) -> int:
     """Bank verdict per candidate label (LFS), English cross-check report, triage of the review sample (gold stays human)."""
     import gzip
-    from collections import Counter
 
     def read(p: Path) -> list[dict]:
         with gzip.open(p, "rt", encoding="utf-8") as f:

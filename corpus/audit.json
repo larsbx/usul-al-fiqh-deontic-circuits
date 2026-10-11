@@ -1517,6 +1517,24 @@
     "work": "abu_dawud.masail_ahmad",
     "found": 1585
   },
+  "openiti-hajjawi-iqna-shamela7360": {
+    "work": "hajjawi.iqna",
+    "found": 894,
+    "ranks": {
+      "bab": 125,
+      "fasl": 742,
+      "kitab": 27
+    }
+  },
+  "openiti-hajjawi-zadmustaqni-shamela11230": {
+    "work": "hajjawi.zad_mustaqni",
+    "found": 286,
+    "ranks": {
+      "bab": 129,
+      "fasl": 130,
+      "kitab": 27
+    }
+  },
   "openiti-harb-masail-shamela12527": {
     "work": "harb.masail",
     "found": 540
@@ -1551,6 +1569,33 @@
         248,
         266
       ]
+    }
+  },
+  "openiti-ibnnajjar-muntaha-sham19y13664": {
+    "work": "ibn_najjar.muntaha",
+    "found": 383,
+    "ranks": {
+      "bab": 151,
+      "fasl": 195,
+      "kitab": 37
+    }
+  },
+  "openiti-ibnqudama-muqni-sham19y19233": {
+    "work": "ibn_qudama.muqni",
+    "found": 631,
+    "ranks": {
+      "bab": 151,
+      "fasl": 444,
+      "kitab": 36
+    }
+  },
+  "openiti-ibnqudama-umda-shamela11315": {
+    "work": "ibn_qudama.umda",
+    "found": 207,
+    "ranks": {
+      "bab": 136,
+      "fasl": 46,
+      "kitab": 25
     }
   },
   "openiti-ibntaymiyya-fatawakubra-shamela9690": {
@@ -1661,6 +1706,15 @@
         37,
         41
       ]
+    }
+  },
+  "openiti-majd-muharrar-shamela7460": {
+    "work": "majd.muharrar",
+    "found": 212,
+    "ranks": {
+      "bab": 174,
+      "fasl": 14,
+      "kitab": 24
     }
   },
   "openiti-majmufatawa-shamela7289": {

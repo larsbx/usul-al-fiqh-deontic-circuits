@@ -14,6 +14,11 @@ def _loc(witness: str, page: tuple[int, int] | None, anchor: str) -> str:
     return f"src:{witness}{where}#{anchor}"
 
 
+def _span(u) -> list[int] | None:
+    """The first and last page of a line-segmented unit; none when it sits on no numbered page."""
+    return [p[1] for p in (u.page, u.end_page) if p] or None
+
+
 def unit_tags(units: tuple[Unit, ...], prefix: str = "q") -> list[str]:
     """Stable per-witness tags: q015 for qāʿida 15, q015_2 for a repeated heading
     (OCR or table of contents), u007 for the 7th unit when its number is unparsed."""
@@ -113,7 +118,7 @@ def fatwa_record(work: dict, witness: str, idx: int, u) -> dict:
         "record_type": "fatwa",
         "number": u.number,
         "locator": _loc(witness, u.page, tag),
-        "page_span": [p[1] for p in (u.page, u.end_page) if p] or None,
+        "page_span": _span(u),
         "question_ar": u.question[:cap],
         "answer_ar": u.answer[:cap] if u.answer else None,
         "sha256": u.sha256,
@@ -133,9 +138,30 @@ def masala_record(work: dict, witness: str, idx: int, u) -> dict:
         "record_type": "masala",
         "number": u.number,
         "locator": _loc(witness, u.page, tag),
-        "page_span": [p[1] for p in (u.page, u.end_page) if p] or None,
+        "page_span": _span(u),
         "excerpt_ar": u.text[:EXCERPT_LEN[work["rights"]]],
         "sha256": u.sha256,
         "status": "candidate",
         "extraction": {"pipeline": PIPELINE, "method": "masail"},
+    }
+
+
+def bab_record(work: dict, witness: str, idx: int, u) -> dict:
+    """One unit (``abwab.Bab``) of a matn: its heading, rank, path, excerpt within the work's rights,
+    page span and the sha256 receipt of the whole unit."""
+    tag = f"b{idx:05d}"
+    return {
+        "id": f"{work['id']}.{witness.replace('-', '_')}.{tag}",
+        "work": work["id"],
+        "witness": witness,
+        "record_type": "bab",
+        "rank": u.rank,
+        "heading_ar": u.heading[:EXCERPT_LEN[work["rights"]]],
+        "path_ar": list(u.path),
+        "locator": _loc(witness, u.page, tag),
+        "page_span": _span(u),
+        "excerpt_ar": u.text[:EXCERPT_LEN[work["rights"]]],
+        "sha256": u.sha256,
+        "status": "candidate",
+        "extraction": {"pipeline": PIPELINE, "method": "abwab"},
     }
