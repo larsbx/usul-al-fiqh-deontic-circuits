@@ -891,8 +891,32 @@
      "ruling": 1
     }
    ],
-   "matches_madhhab": true,
-   "note": "Theft from outside a hirz (amputation lapses) doubles the compensation by Ahmad's nass; a qila restricts doubling to fruit; the nass is taken as the madhhab mark."
+   "matches_madhhab": false,
+   "note": "Theft from outside a hirz (amputation lapses) doubles the compensation by Ahmad's nass; a qila restricts doubling to fruit; the nass is taken as the madhhab mark.",
+   "side_check": {
+    "from_matches": true,
+    "refs": [
+     "src:openiti-buhuti-kashshaf-shamela21642/v06:p140",
+     "src:openiti-insaf-shamela21609/v10:p277"
+    ],
+    "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side.",
+    "contradictions": [
+     {
+      "evidence_index": 0,
+      "case_facts": {
+       "lapsed": true
+      },
+      "rationale": "The source note asserts doubling for all theft outside hirz. Al-Insaf and Kashshaf expressly give single compensation for goods other than the listed fruit/palm/livestock exceptions. This refutes that universal reading, not doubling within the exceptions; lapsed alone is insufficient for a concrete theft decision."
+     },
+     {
+      "evidence_index": 2,
+      "case_facts": {
+       "lapsed": true
+      },
+      "rationale": "The source note asserts doubling for all theft outside hirz. Al-Insaf and Kashshaf expressly give single compensation for goods other than the listed fruit/palm/livestock exceptions. This refutes that universal reading, not doubling within the exceptions; lapsed alone is insufficient for a concrete theft decision."
+     }
+    ]
+   }
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f002",
@@ -1432,8 +1456,36 @@
      "ruling": "divide"
     }
    ],
-   "matches_madhhab": true,
-   "note": "His slave confused with another's slave: al-Qāḍī gives lot, agreement, or (marked 'ajwad') selling both and dividing the price by value like mixed oil; as co-ownable property divisible=true so the kernel yields divide, the position al-Qāḍī prefers (no madhhab label as such)."
+   "matches_madhhab": false,
+   "note": "His slave confused with another's slave: al-Qāḍī gives lot, agreement, or (marked 'ajwad') selling both and dividing the price by value like mixed oil; as co-ownable property divisible=true so the kernel yields divide, the position al-Qāḍī prefers (no madhhab label as such).",
+   "side_check": {
+    "from_matches": true,
+    "refs": [
+     "src:openiti-buhuti-kashshaf-shamela21642/v03:p179",
+     "src:openiti-hajjawi-iqna-shamela7360/v02:p073"
+    ],
+    "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side.",
+    "contradictions": [
+     {
+      "evidence_index": 1,
+      "case_facts": {
+       "entitled_known": false,
+       "divisible": true,
+       "confusion_category": false
+      },
+      "rationale": "The case note specifies confused ownership of two slaves. Iqna and Kashshaf prohibit selling either before lots, adopting lot rather than the suggested joint sale/division. The annotation of divide as al-Qadi's preferred position is preserved."
+     },
+     {
+      "evidence_index": 2,
+      "case_facts": {
+       "entitled_known": false,
+       "divisible": true,
+       "confusion_category": false
+      },
+      "rationale": "The case note specifies confused ownership of two slaves. Iqna and Kashshaf prohibit selling either before lots, adopting lot rather than the suggested joint sale/division. The annotation of divide as al-Qadi's preferred position is preserved."
+     }
+    ]
+   }
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f007",
@@ -1575,7 +1627,55 @@
      "ruling": "lot"
     }
    ],
-   "matches_madhhab": true
+   "matches_madhhab": false,
+   "side_check": {
+    "from_matches": true,
+    "refs": [
+     "src:openiti-buhuti-kashshaf-shamela21642/v04:p358",
+     "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p471",
+     "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p461",
+     "src:openiti-insaf-shamela21609/v07:p231"
+    ],
+    "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side.",
+    "contradictions": [
+     {
+      "evidence_index": 0,
+      "case_facts": {
+       "entitled_known": false,
+       "divisible": true,
+       "confusion_category": true
+      },
+      "rationale": "The case note gives an unqualified shared-name bequest. Al-Insaf and Muntaha invalidate that unqualified bequest; validity and lots where a qarina identifies an intended beneficiary are a distinct conditional case. The facts do not encode qarina, so this candidate rejects the unqualified reading only."
+     },
+     {
+      "evidence_index": 2,
+      "case_facts": {
+       "entitled_known": false,
+       "divisible": true,
+       "confusion_category": true
+      },
+      "rationale": "The case note gives an unqualified shared-name bequest. Al-Insaf and Muntaha invalidate that unqualified bequest; validity and lots where a qarina identifies an intended beneficiary are a distinct conditional case. The facts do not encode qarina, so this candidate rejects the unqualified reading only."
+     },
+     {
+      "evidence_index": 3,
+      "case_facts": {
+       "entitled_known": false,
+       "divisible": true,
+       "confusion_category": true
+      },
+      "rationale": "The case note gives an unqualified shared-name bequest. Al-Insaf and Muntaha invalidate that unqualified bequest; validity and lots where a qarina identifies an intended beneficiary are a distinct conditional case. The facts do not encode qarina, so this candidate rejects the unqualified reading only."
+     },
+     {
+      "evidence_index": 4,
+      "case_facts": {
+       "entitled_known": false,
+       "divisible": true,
+       "confusion_category": true
+      },
+      "rationale": "The case note gives an unqualified shared-name bequest. Al-Insaf and Muntaha invalidate that unqualified bequest; validity and lots where a qarina identifies an intended beneficiary are a distinct conditional case. The facts do not encode qarina, so this candidate rejects the unqualified reading only."
+     }
+    ]
+   }
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f013",
