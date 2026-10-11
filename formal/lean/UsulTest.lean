@@ -8,4 +8,3 @@ import UsulTest.CommandSchemata
 import UsulTest.Reconcile
 import UsulTest.FatawaBank
 import UsulTest.FatawaTakhrij
-import UsulTest.TypedMirror

@@ -267,7 +267,7 @@ def switchToOriginal : Typed Situation Bool where
   proj_embed := fun _ => rfl
 
 /-- `abstention_under_possible_condition` reads Ibn Rajab 160's type. -/
-def abstention : Typed Situation Bool where
+def abstentionUnderPossibleCondition : Typed Situation Bool where
   Local := Bool × Bool × Bool
   proj s := do pure (← s.suspended, ← s.possible, ← s.absenceKnown)
   embed | (u, p, a) => { suspended := some u, possible := some p, absenceKnown := some a }

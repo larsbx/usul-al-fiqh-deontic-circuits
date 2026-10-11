@@ -66,7 +66,7 @@ Precedents:
   - joining al-Irwāʾ to the `masala`, `fatwa` and `bab` records. `hadith.JOIN_TYPES` holds the join to the reviewed types; widening it proposes 1,351 masāʾil candidates, which are a review tranche of their own;
   - P0.6's transfer gap: routing modern questions (below) is far weaker than routing classical furūʿ; profiles need modern evidence, i.e. lane B's first annotated fatāwā;
   - validating the encoder → bāb assignments, which nothing measures yet.
-- **Routing by type, not by wording (human instruction, 2026-10-11): the type system is Lean.** Encoders are typed, so whether a text falls under an encoder is a typing question: does the situation it describes inhabit the encoder's fact signature? The wording, classical or modern, then stops being the limit. The types, signatures and laws are declared and proved in Lean (`formal/lean/Usul/Typing.lean`); Python only mirrors them. The lexical index is the baseline to beat.
+- **Routing by type, not by wording (human instruction, 2026-10-11): the type system is Lean.** Encoders are typed, so whether a text falls under an encoder is a typing question: does the situation it describes inhabit the encoder's fact signature? The wording, classical or modern, then stops being the limit. The types, signatures and laws are declared and proved in Lean (`formal/lean/Usul/Typing.lean`). The executable mirror is Prolog, generated from the kernel, with no Python in between (human instruction, 2026-10-11). The lexical index is the baseline to beat.
   - **Where it started.** The 104 encoders read 167 facts under 144 local names: 147 are bare `Bool` propositions, and only `Usul.Grade` and `Option Usul.Hukm` are read by more than one fact. There was no common type.
   - **T1, done: the framework and a first slice.**
     - `Usul.Typing.Typed S O` is an encoder typed over situations `S`, ruling in `O`. It has `proj : S → Option Local`, `embed`, the law `proj_embed`, and `run`, which is the existing kernel function, so typing changes no ruling.
@@ -84,13 +84,17 @@ Precedents:
       - `negligence_is_qualified`: Q14's «يفرط» (in safekeeping) is not Ibn Rajab Q6's «فرط بترك البحث» (in inquiry);
       - `itlaf_reads_two_qawaid`: the purpose alone leaves a missing fact;
       - `qarain_extends_yaqin`.
-    - `python -m usul_corpus typing` generates `formal/lean/UsulTest/TypedMirror.lean`, which guards that each typed encoder agrees with `takhrij.ENCODERS` on every combination of fact values.
+    - **The Prolog mirror.** `formal/lean/scripts/ExportTypes.lean` reads the type system from the kernel's own declarations. It writes `examples/v41_types.pl`, containing:
+      - the qāʿida types with their statements, `extends` parents and fields;
+      - each typed encoder's output type, and the fields its elaborated `proj` reads, in order.
+
+      `make lean` regenerates it and fails if it is stale. `examples/v41_typing.pl` runs the typing judgement on situations stated as `sit/3`: `applies`, `missing_fact`, `route`, `shares`, `field_of` and `ill_typed`. `examples/v41_typing_fixtures.pl` restates the Lean theorems as fixture vectors (`tests/run_all.sh`), and `tests/mutation_test.sh` kills a mutant of each typing guard. A typed encoder's ruling is its existing kernel function (`run`), so typing changes no ruling by construction.
   - **T2, in progress (16 of 104 encoders typed):** each fact goes into the type of the qāʿida that states it. Where a Lean doc says one qāʿida is an instance of another, the type extends it. Done: al-Saʿdī Q11, Q20 and Q28, with the Ibn Rajab qawāʿid under them:
     - Q20 and the unknown: `MajhulHaqq` (Q20); `MajhulMadum` (Ibn Rajab 106), extended by `Luqata` (106.f002) and `Istihlak` (22);
     - Q28 and the substitute: `Badal` (Q28), extended by `BadalWujub` (16) and `Intiqal` (7);
     - Q11 and certainty: `Itizal` (160) and `NiyyaMansiyya` (forgotten iḥrām intention), both extending `Yaqin`; `ShakkShart` (68), extending `Qarain`, and `Rukhsa` (68.f001), extending `ShakkShart`.
 
-    `original_possibility_is_shared` proves that Q28 types both substitute encoders over one field. 100 mirror guards tie the 16 typed encoders to `takhrij.ENCODERS`.
+    `original_possibility_is_shared` proves that Q28 types both substitute encoders over one field. The Prolog export carries all 16 typed encoders.
   - **Candidate identifications, left for review.** These pairs look like one notion stated at two levels. They are kept as separate fields because merging them is a modelling decision:
     - `ghalaba` (68) and a ẓāhir graded ẓann (Q11 / Q52);
     - `rukhsaNeedsCertainty` (68.f001) and `needsFirm` (68);
@@ -98,7 +102,7 @@ Precedents:
     - `ownerIdentifiable` (Q20) and ¬(`unknown` ∧ `despair`) (106);
     - `consumed` (22) and `unknown` (106).
 
-    Accepting one turns it into a Lean equation between the fields, with the affected encoders' guards as the conservativity check.
+    Accepting one turns it into a Lean equation between the fields, with `run` unchanged as the conservativity check.
   - **T3:** typing as routing. A unit is typed once into a partial `Situation`; the encoders whose `applies` holds take it. One lacking a field yields `missing_fact` naming it. Two that apply and disagree go to taʿāruḍ.
   - **T4:** typed routing measured against the lexical baseline on the same held-out cases and IslamQA set.
 - **P0.6 done, as a ranker:** `python -m usul_corpus routing` writes `corpus/routing/index.json`. Profiles are derived from the bank's evidence, never written: each of the 100 encoders gets the TF-IDF centroid of the records its annotated cases rest on plus its own qawāʿid, with words found in over 10 % of the evidence dropped. Per encoder the index gives its case support, its lexicon (the heaviest profile words) and its nearest matn units.

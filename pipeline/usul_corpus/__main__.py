@@ -397,21 +397,6 @@ def cmd_routing(args: argparse.Namespace) -> int:
     return 0
 
 
-def cmd_typing(args: argparse.Namespace) -> int:
-    """Regenerate (or ``--check``) the mirror guards tying ``takhrij.ENCODERS`` to the Lean typed
-    encoders (``Usul.Typing``)."""
-    from . import typing as typed
-    path, text = ROOT / typed.LEAN, typed.lean()
-    if args.check:
-        if not path.exists() or path.read_text(encoding="utf-8") != text:
-            print(f"typing stale ({typed.LEAN}): run python -m usul_corpus typing", file=sys.stderr)
-            return 1
-    else:
-        path.write_text(text, encoding="utf-8")
-    print(json.dumps(typed.coverage()))
-    return 0
-
-
 def cmd_m5_commands(args: argparse.Namespace) -> int:
     from . import m5_commands
     plan = _load(CORPUS / m5_commands.PLAN)
@@ -736,9 +721,6 @@ def parser() -> argparse.ArgumentParser:
         m = sub.add_parser(name, help="regenerate or --check the obligation inventories")
         m.add_argument("--check", action="store_true")
         m.set_defaults(run=cmd_worklist)
-    t = sub.add_parser("typing", help="regenerate or --check the guards tying the encoders to Usul.Typing")
-    t.add_argument("--check", action="store_true")
-    t.set_defaults(run=cmd_typing)
     r = sub.add_parser("routing", help="regenerate or --check the encoder routing index (P0.6)")
     r.add_argument("--check", action="store_true")
     r.set_defaults(run=cmd_routing)
