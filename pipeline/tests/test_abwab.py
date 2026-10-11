@@ -2,8 +2,6 @@ import json
 from pathlib import Path
 
 import jsonschema
-import pytest
-
 from usul_corpus.abwab import segment_abwab
 from usul_corpus.records import bab_record
 
@@ -85,18 +83,3 @@ def test_the_end_heading_closes_the_matn():
     """The editor's closing matter and bibliography after the matn are not part of its last faṣl."""
     text = MUQNI + "### | CHECK خاتمة الكتاب والتحقيق\n# والحمد لله\n### | AUTO مصادر ومراجع التحقيق\n# 1 - المغني\nPageV01P005\n"
     assert _shape(segment_abwab(text, end="خاتمة الكتاب")) == _shape(segment_abwab(MUQNI))
-
-def _abwab_witnesses():
-    reg = json.loads((ROOT / "corpus/registry.json").read_text(encoding="utf-8"))
-    return [(w, x) for w in reg["works"] if w.get("segmenter", {}).get("kind") == "abwab" for x in w["witnesses"]]
-
-
-@pytest.mark.parametrize("work,witness", _abwab_witnesses(), ids=lambda v: v["id"] if isinstance(v, dict) else v)
-def test_committed_bab_records_replay_from_the_pinned_witness(work, witness):
-    cached = ROOT / ".cache/corpus" / f"{witness['id']}.txt"
-    if not cached.exists():
-        pytest.skip("witness not cached")
-    units = segment_abwab(cached.read_text(encoding="utf-8"), witness.get("segmenter", work["segmenter"]).get("end"))
-    replay = [(bab_record(work, witness["id"], i, u)["id"], u.sha256) for i, u in enumerate(units, 1)]
-    committed = [(r["id"], r["sha256"]) for r in map(json.loads, (ROOT / "corpus/records" / f"{witness['id']}.jsonl").read_text(encoding="utf-8").splitlines())]
-    assert replay == committed

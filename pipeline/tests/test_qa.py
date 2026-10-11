@@ -5,6 +5,7 @@ from pathlib import Path
 import jsonschema
 import pytest
 
+from usul_corpus.__main__ import UNIT_SEGMENTERS
 from usul_corpus.qa import segment_entries, segment_qa
 from usul_corpus.records import fatwa_record, masala_record
 
@@ -87,23 +88,20 @@ def test_an_unanswered_unit_keeps_only_its_question_header():
     assert first.answer is None and first.question.count("سطر سرد") == 3  # the header's lines, no more
 
 
-def _fatwa_witnesses():
+def _unit_witnesses():
     reg = json.loads((ROOT / "corpus/registry.json").read_text(encoding="utf-8"))
-    return [(w, x) for w in reg["works"] if w.get("segmenter", {}).get("kind") in ("qa", "masail") for x in w["witnesses"]]
+    return [(w, x) for w in reg["works"] if w.get("segmenter", {}).get("kind") in UNIT_SEGMENTERS for x in w["witnesses"]]
 
 
-@pytest.mark.parametrize("work,witness", _fatwa_witnesses(), ids=lambda v: v["id"] if isinstance(v, dict) else v)
+@pytest.mark.parametrize("work,witness", _unit_witnesses(), ids=lambda v: v["id"] if isinstance(v, dict) else v)
 def test_committed_unit_records_replay_from_the_pinned_witness(work, witness):
     """Stability replay: re-segmenting the cached witness reproduces every committed id and receipt."""
     cached = ROOT / ".cache/corpus" / f"{witness['id']}.txt"
     if not cached.exists():
         pytest.skip("witness not cached")
-    seg, text = witness.get("segmenter", work["segmenter"]), cached.read_text(encoding="utf-8")
-    if seg["kind"] == "qa":
-        units, record = segment_qa(text, seg["question"], seg["answer"]), fatwa_record
-    else:
-        units, record = segment_entries(text, seg["start"]), masala_record
-    replay = [(record(work, witness["id"], i, u)["id"], u.sha256) for i, u in enumerate(units, 1)]
+    seg = witness.get("segmenter", work["segmenter"])
+    cut, record = UNIT_SEGMENTERS[seg["kind"]]
+    replay = [(record(work, witness["id"], i, u)["id"], u.sha256) for i, u in enumerate(cut(cached.read_text(encoding="utf-8"), seg), 1)]
     committed = [(r["id"], r["sha256"]) for r in map(json.loads, (ROOT / "corpus/records" / f"{witness['id']}.jsonl").read_text(encoding="utf-8").splitlines())]
     assert replay == committed
 
@@ -158,3 +156,13 @@ def test_the_placeholder_page_marker_closes_no_page():
     first, second = segment_entries(text, r"(?:قلت لأحمد)")
     assert (first.page, first.end_page, second.page) == (None, None, (1, 7))
     assert masala_record({"id": "a.b", "rights": "public_domain_text"}, "w-x", 1, first)["page_span"] is None
+
+
+def test_a_heading_can_be_the_question():
+    """Nūr ʿalā al-Darb (Ibn ʿUthaymīn): the question is the section heading, with no marker word."""
+    text = ("#META#Header#End#\n# ***\n### | السائل أحمد يقول: ما حكم كذا؟\n# فأجاب رحمه الله تعالى: لا يجوز.\n# ***\nPageV04P002\n"
+            "### | وهذه سائلة تقول: وما حكم كذا؟\n# فأجاب رحمه الله تعالى: يجوز.\nPageV04P003\n")
+    units = segment_qa(text, None, r"(?:فأجاب)", question_heading=True)
+    assert [(u.question, u.answer) for u in units] == [
+        ("السائل أحمد يقول: ما حكم كذا؟", "فأجاب رحمه الله تعالى: لا يجوز. ***"),
+        ("وهذه سائلة تقول: وما حكم كذا؟", "فأجاب رحمه الله تعالى: يجوز.")]

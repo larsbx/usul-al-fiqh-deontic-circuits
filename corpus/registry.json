@@ -3129,6 +3129,11 @@
         "role": "citer",
         "genre": "fatawa",
         "scholar": "ibn_baz"
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "(?:س\\s*\\d*\\s*:)",
+        "answer": "(?:ج\\s*\\d*\\s*:)"
       }
     },
     {
@@ -3196,6 +3201,12 @@
         "role": "citer",
         "genre": "fatawa",
         "scholar": "ibn_uthaymin"
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "(?:فضيلة الشيخ\\s*:)",
+        "question_heading": true,
+        "answer": "(?:فأجاب)"
       }
     },
     {

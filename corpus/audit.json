@@ -1571,6 +1571,18 @@
       ]
     }
   },
+  "openiti-ibnbaz-nuraladarb-shamela107": {
+    "work": "ibn_baz.nur_ala_darb",
+    "found": 7607,
+    "answered": 7582,
+    "numbering": {
+      "numbered": 3,
+      "first": 1,
+      "last": 3,
+      "duplicates": 0,
+      "missing": []
+    }
+  },
   "openiti-ibnnajjar-muntaha-sham19y13664": {
     "work": "ibn_najjar.muntaha",
     "found": 383,
@@ -1612,6 +1624,11 @@
     "work": "ibn_uthaymin.majmu_fatawa",
     "found": 1543,
     "answered": 1543
+  },
+  "openiti-ibnuthaymin-nuraladarb-shamela2300": {
+    "work": "ibn_uthaymin.nur_ala_darb",
+    "found": 7448,
+    "answered": 7428
   },
   "openiti-kawsaj-masailahmad-shamela3125": {
     "work": "kawsaj.masail_ahmad",

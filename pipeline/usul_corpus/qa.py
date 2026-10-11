@@ -1,6 +1,7 @@
 """The ``qa`` segmenter: question-and-answer units in fatāwā collections.
 
-A unit starts at a line whose text begins with the witness's question marker and runs to the next
+A unit starts at a line whose text begins with the witness's question marker (or, where the witness
+prints questions as headings, at a section heading) and runs to the next
 unit's start; it splits into question and answer at its first line beginning with the answer marker.
 A question line opens a new unit only once the current unit has an answer, or once the current
 unit's question has outgrown a short header (``HEADER_LINES``). So a heading that repeats the marker
@@ -64,16 +65,17 @@ def _lines(text: str) -> list[tuple[str, Page | None, bool]]:
     return [(line, pages[i], head) for line, i, head in out]
 
 
-def segment_qa(text: str, question: str, answer: str) -> tuple[QA, ...]:
-    """Every question-and-answer unit; text before the first question is front matter."""
-    q_at, a_at = re.compile(question), re.compile(answer)
+def segment_qa(text: str, question: str | None, answer: str, question_heading: bool = False) -> tuple[QA, ...]:
+    """Every question-and-answer unit; text before the first question is front matter. With
+    ``question_heading``, a section heading is a question line too (*Nūr ʿalā al-Darb*)."""
+    q_at, a_at = re.compile(question) if question else None, re.compile(answer)
     lines = _lines(text)
     starts: list[int] = []
     answered = False
-    for i, (line, _, _) in enumerate(lines):
+    for i, (line, _, head) in enumerate(lines):
         if starts and not answered and a_at.match(line) and i > starts[-1]:
             answered = True
-        elif q_at.match(line) and (not starts or answered or i - starts[-1] > HEADER_LINES):
+        elif ((q_at and q_at.match(line)) or (question_heading and head)) and (not starts or answered or i - starts[-1] > HEADER_LINES):
             starts.append(i)
             answered = False
     units = []
