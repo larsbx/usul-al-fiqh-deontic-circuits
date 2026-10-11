@@ -23,6 +23,17 @@ TYPED = {
     "trust_voidance": ("Usul.Typing.trustVoidance", ("pure_trust", "transgressed")),
     "excused_error": ("Usul.Typing.excusedError", ("others_right", "negligent")),
     "asl_zahir": ("Usul.Typing.aslZahir", ("asl_grade", "zahir_grade", "amara")),
+    "unknown_owner": ("Usul.Typing.unknownOwner", ("owner_identifiable",)),
+    "unknown_as_nonexistent": ("Usul.Typing.unknownAsNonexistent", ("unknown", "despair", "hardship")),
+    "luqata": ("Usul.Typing.luqata", ("year_passed", "ownable")),
+    "istihlak": ("Usul.Typing.istihlak", ("consumed",)),
+    "substitute": ("Usul.Typing.substitute", ("original_possible",)),
+    "substitute_at_obligation": ("Usul.Typing.substituteAtObligation", ("original_possible", "settled_at_obligation")),
+    "switch_to_original": ("Usul.Typing.switchToOriginal", ("necessity",)),
+    "abstention_under_possible_condition": ("Usul.Typing.abstention", ("suspended", "possible", "absence_known")),
+    "doubt_in_condition": ("Usul.Typing.doubtInCondition", ("needs_firm_intention", "ghalaba", "asl_mustashab")),
+    "rukhsa_under_doubt": ("Usul.Typing.rukhsaUnderDoubt", ("rukhsa_needs_certainty", "permission_established")),
+    "ihram_specification": ("Usul.Typing.ihramSpecification", ("component",)),
 }
 
 

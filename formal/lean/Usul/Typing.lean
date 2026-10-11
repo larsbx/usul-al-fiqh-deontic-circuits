@@ -98,10 +98,75 @@ structure ZannError where
   othersRight : Option Bool := none
   negligentInquiry : Option Bool := none
 
+/-! ### The unknown as non-existent: al-Saʿdī Q20, Ibn Rajab 106 and its instances -/
+
+/-- al-Saʿdī Q20 «إذا تعذر معرفة من له الحق جعل كالمعدوم»: whether the right-holder can be known. -/
+structure MajhulHaqq where
+  ownerIdentifiable : Option Bool := none
+
+/-- Ibn Rajab 106 «ينزل المجهول منزلة المعدوم وإن كان الأصل بقاءه إذا يئس من الوقوف عليه أو شق
+اعتباره»: the unknown, despair of learning it, the hardship of taking it into account. -/
+structure MajhulMadum where
+  unknown : Option Bool := none
+  despair : Option Bool := none
+  hardship : Option Bool := none
+
+/-- Ibn Rajab 106.f002 «اللقطة بعد الحول فإنها تتملك لجهالة ربها وما لا يتملك منها يتصدق به»:
+106's type, with the year of announcement and whether the find is ownable. -/
+structure Luqata extends MajhulMadum where
+  yearPassed : Option Bool := none
+  ownable : Option Bool := none
+
+/-- Ibn Rajab 22 «العين المنغمرة في غيرها إذا لم يظهر أثرها …», read as an instance of 106. -/
+structure Istihlak extends MajhulMadum where
+  consumed : Option Bool := none
+
+/-! ### The substitute: al-Saʿdī Q28 and Ibn Rajab 7, 16 -/
+
+/-- al-Saʿdī Q28 «يقوم البدل مقام المبدل، ولكن لا يصار إليه إلا إذا تعذر الأصل»: whether the
+original is possible. -/
+structure Badal where
+  originalPossible : Option Bool := none
+
+/-- Ibn Rajab 16, judged at the time of obligation («والاعتبار في الكفارات بحالة الوجوب»). -/
+structure BadalWujub extends Badal where
+  settledAtObligation : Option Bool := none
+
+/-- Ibn Rajab 7: the substitute was legislated out of necessity, not as a general concession. -/
+structure Intiqal extends Badal where
+  necessity : Option Bool := none
+
+/-! ### Certainty and doubt: instances of al-Saʿdī Q11 and Q52 -/
+
+/-- Ibn Rajab 160 (Taqī al-Dīn): «متى علق الطلاق بشرط وأمكن وجوده فإنه يعتزل امرأته حتى يعلم
+انتفاؤه»; the certain marriage stands (Q11), abstention is a rule of conduct. -/
+structure Itizal extends Yaqin where
+  suspended : Option Bool := none
+  possible : Option Bool := none
+  absenceKnown : Option Bool := none
+
+/-- Ibn Rajab 68: acting while doubting a condition of validity, firm intention needed or not,
+ghalabat al-ẓann, a presumption that has not been shown to cease (Q11, Q52). -/
+structure ShakkShart extends Qarain where
+  needsFirm : Option Bool := none
+  ghalaba : Option Bool := none
+  aslMustashab : Option Bool := none
+
+/-- Ibn Rajab 68.f001 «لأن المسح رخصة ولم تتحقق إباحتها فلم يصح»: a concession is 68's first type. -/
+structure Rukhsa extends ShakkShart where
+  rukhsaNeedsCertainty : Option Bool := none
+  permissionEstablished : Option Bool := none
+
+/-- A forgotten iḥrām intention (Q11): what is valid on every possible rite suffices. -/
+structure NiyyaMansiyya extends Yaqin where
+  component : Option (Refinements.Nusuk → Bool) := none
+
 end Qaida
 
 /-- A situation: the join of the qāʿida types. -/
-structure Situation extends Qaida.Qarain, Qaida.ItlafHal, Qaida.ItlafQasd, Qaida.Amana, Qaida.ZannError
+structure Situation extends Qaida.Qarain, Qaida.ItlafHal, Qaida.ItlafQasd, Qaida.Amana, Qaida.ZannError,
+    Qaida.MajhulHaqq, Qaida.Luqata, Qaida.Istihlak, Qaida.BadalWujub, Qaida.Intiqal, Qaida.Itizal,
+    Qaida.Rukhsa, Qaida.NiyyaMansiyya
 
 /-! ## Encoders typed over `Situation` (names as in `takhrij.ENCODERS`) -/
 
@@ -144,6 +209,105 @@ def aslZahir : Typed Situation Bool where
   embed | (a, z, m) => { asl := some a, zahir := some z, amara := some m }
   run | (a, z, m) => Refinements.zahirPrevails a z m
   proj_embed := fun _ => rfl
+
+/-- `unknown_owner` reads Q20. -/
+def unknownOwner : Typed Situation Muamalat.Recipient where
+  Local := Bool
+  proj s := s.ownerIdentifiable
+  embed o := { ownerIdentifiable := some o }
+  run := recipient
+  proj_embed := fun _ => rfl
+
+/-- `unknown_as_nonexistent` reads Ibn Rajab 106. -/
+def unknownAsNonexistent : Typed Situation Bool where
+  Local := Bool × Bool × Bool
+  proj s := do pure (← s.unknown, ← s.despair, ← s.hardship)
+  embed | (u, d, h) => { unknown := some u, despair := some d, hardship := some h }
+  run | (u, d, h) => Refinements.treatedAsAbsent u d h
+  proj_embed := fun _ => rfl
+
+/-- `luqata` reads 106.f002's type. -/
+def luqata : Typed Situation Refinements.LuqataOutcome where
+  Local := Bool × Bool
+  proj s := do pure (← s.yearPassed, ← s.ownable)
+  embed | (y, o) => { yearPassed := some y, ownable := some o }
+  run | (y, o) => Refinements.luqata y o
+  proj_embed := fun _ => rfl
+
+/-- `istihlak` reads Ibn Rajab 22's type. -/
+def istihlak : Typed Situation Bool where
+  Local := Bool
+  proj s := s.consumed
+  embed c := { consumed := some c }
+  run := Refinements.istihlak
+  proj_embed := fun _ => rfl
+
+/-- `substitute` reads Q28. -/
+def substitute : Typed Situation Bool where
+  Local := Bool
+  proj s := s.originalPossible
+  embed p := { originalPossible := some p }
+  run := Sadi.useSubstitute
+  proj_embed := fun _ => rfl
+
+/-- `substitute_at_obligation` reads Ibn Rajab 16's type, which extends Q28's. -/
+def substituteAtObligation : Typed Situation Bool where
+  Local := Bool × Bool
+  proj s := do pure (← s.originalPossible, ← s.settledAtObligation)
+  embed | (p, t) => { originalPossible := some p, settledAtObligation := some t }
+  run | (p, t) => Refinements.useSubstituteAt p t
+  proj_embed := fun _ => rfl
+
+/-- `switch_to_original` reads Ibn Rajab 7's type. -/
+def switchToOriginal : Typed Situation Bool where
+  Local := Bool
+  proj s := s.necessity
+  embed n := { necessity := some n }
+  run := Refinements.mustSwitch
+  proj_embed := fun _ => rfl
+
+/-- `abstention_under_possible_condition` reads Ibn Rajab 160's type. -/
+def abstention : Typed Situation Bool where
+  Local := Bool × Bool × Bool
+  proj s := do pure (← s.suspended, ← s.possible, ← s.absenceKnown)
+  embed | (u, p, a) => { suspended := some u, possible := some p, absenceKnown := some a }
+  run | (u, p, a) => Refinements.abstains u p a
+  proj_embed := fun _ => rfl
+
+/-- `doubt_in_condition` reads Ibn Rajab 68's type. -/
+def doubtInCondition : Typed Situation Bool where
+  Local := Bool × Bool × Bool
+  proj s := do pure (← s.needsFirm, ← s.ghalaba, ← s.aslMustashab)
+  embed | (n, g, a) => { needsFirm := some n, ghalaba := some g, aslMustashab := some a }
+  run | (n, g, a) => Refinements.validUnderDoubt n g a
+  proj_embed := fun _ => rfl
+
+/-- `rukhsa_under_doubt` reads 68.f001's type. -/
+def rukhsaUnderDoubt : Typed Situation Bool where
+  Local := Bool × Bool
+  proj s := do pure (← s.rukhsaNeedsCertainty, ← s.permissionEstablished)
+  embed | (n, p) => { rukhsaNeedsCertainty := some n, permissionEstablished := some p }
+  run | (n, p) => Refinements.rukhsaValid n p
+  proj_embed := fun _ => rfl
+
+/-- `ihram_specification` reads the forgotten intention's type. -/
+def ihramSpecification : Typed Situation Bool where
+  Local := Refinements.Nusuk → Bool
+  proj s := s.component
+  embed c := { component := some c }
+  run c := Refinements.validOnEvery c Refinements.Nusuk.all
+  proj_embed := fun _ => rfl
+
+/-- Q28 types both substitute encoders: whether the original is possible is settled once. -/
+theorem original_possibility_is_shared (p t : Bool) :
+    let s : Situation := { originalPossible := some p, settledAtObligation := some t }
+    substitute.judge s = some (Sadi.useSubstitute p) ∧
+      substituteAtObligation.judge s = some (Refinements.useSubstituteAt p t) :=
+  ⟨rfl, rfl⟩
+
+/-- A type that extends its qāʿida's carries its fields: luqaṭa's situation is a 106 situation. -/
+theorem luqata_extends_majhul (s : Situation) :
+    s.toLuqata.toMajhulMadum.unknown = s.unknown := rfl
 
 /-! ## What typing by qāʿida buys -/
 

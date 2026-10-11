@@ -85,7 +85,20 @@ Precedents:
       - `itlaf_reads_two_qawaid`: the purpose alone leaves a missing fact;
       - `qarain_extends_yaqin`.
     - `python -m usul_corpus typing` generates `formal/lean/UsulTest/TypedMirror.lean`, which guards that each typed encoder agrees with `takhrij.ENCODERS` on every combination of fact values.
-  - **T2:** type the other 99 encoders: each fact goes into the type of the qāʿida it is stated by (the encoder's `sadi` and `qawaid` already name them; 73 encoders cite only Ibn Rajab or Ibn al-Laḥḥām). Identifying two facts as one field is a modelling decision: it is proposed as `candidate`, and the mirror guards prove the encoder unchanged.
+  - **T2, in progress (16 of 104 encoders typed):** each fact goes into the type of the qāʿida that states it. Where a Lean doc says one qāʿida is an instance of another, the type extends it. Done: al-Saʿdī Q11, Q20 and Q28, with the Ibn Rajab qawāʿid under them:
+    - Q20 and the unknown: `MajhulHaqq` (Q20); `MajhulMadum` (Ibn Rajab 106), extended by `Luqata` (106.f002) and `Istihlak` (22);
+    - Q28 and the substitute: `Badal` (Q28), extended by `BadalWujub` (16) and `Intiqal` (7);
+    - Q11 and certainty: `Itizal` (160) and `NiyyaMansiyya` (forgotten iḥrām intention), both extending `Yaqin`; `ShakkShart` (68), extending `Qarain`, and `Rukhsa` (68.f001), extending `ShakkShart`.
+
+    `original_possibility_is_shared` proves that Q28 types both substitute encoders over one field. 100 mirror guards tie the 16 typed encoders to `takhrij.ENCODERS`.
+  - **Candidate identifications, left for review.** These pairs look like one notion stated at two levels. They are kept as separate fields because merging them is a modelling decision:
+    - `ghalaba` (68) and a ẓāhir graded ẓann (Q11 / Q52);
+    - `rukhsaNeedsCertainty` (68.f001) and `needsFirm` (68);
+    - `yearPassed` (luqaṭa) and `despair` (106);
+    - `ownerIdentifiable` (Q20) and ¬(`unknown` ∧ `despair`) (106);
+    - `consumed` (22) and `unknown` (106).
+
+    Accepting one turns it into a Lean equation between the fields, with the affected encoders' guards as the conservativity check.
   - **T3:** typing as routing. A unit is typed once into a partial `Situation`; the encoders whose `applies` holds take it. One lacking a field yields `missing_fact` naming it. Two that apply and disagree go to taʿāruḍ.
   - **T4:** typed routing measured against the lexical baseline on the same held-out cases and IslamQA set.
 - **P0.6 done, as a ranker:** `python -m usul_corpus routing` writes `corpus/routing/index.json`. Profiles are derived from the bank's evidence, never written: each of the 100 encoders gets the TF-IDF centroid of the records its annotated cases rest on plus its own qawāʿid, with words found in over 10 % of the evidence dropped. Per encoder the index gives its case support, its lexicon (the heaviest profile words) and its nearest matn units.

@@ -2,6 +2,15 @@
 -- Each typed encoder (Usul.Typing) judges the embedded situation as the encoder registry does.
 import Usul.Typing
 
+-- abstention_under_possible_condition
+#guard Usul.Typing.abstention.judge (Usul.Typing.abstention.embed (false, false, false)) == some (Usul.Refinements.abstains false false false)
+#guard Usul.Typing.abstention.judge (Usul.Typing.abstention.embed (false, false, true)) == some (Usul.Refinements.abstains false false true)
+#guard Usul.Typing.abstention.judge (Usul.Typing.abstention.embed (false, true, false)) == some (Usul.Refinements.abstains false true false)
+#guard Usul.Typing.abstention.judge (Usul.Typing.abstention.embed (false, true, true)) == some (Usul.Refinements.abstains false true true)
+#guard Usul.Typing.abstention.judge (Usul.Typing.abstention.embed (true, false, false)) == some (Usul.Refinements.abstains true false false)
+#guard Usul.Typing.abstention.judge (Usul.Typing.abstention.embed (true, false, true)) == some (Usul.Refinements.abstains true false true)
+#guard Usul.Typing.abstention.judge (Usul.Typing.abstention.embed (true, true, false)) == some (Usul.Refinements.abstains true true false)
+#guard Usul.Typing.abstention.judge (Usul.Typing.abstention.embed (true, true, true)) == some (Usul.Refinements.abstains true true true)
 -- asl_zahir
 #guard Usul.Typing.aslZahir.judge (Usul.Typing.aslZahir.embed (.wahm, .wahm, false)) == some (Usul.Refinements.zahirPrevails .wahm .wahm false)
 #guard Usul.Typing.aslZahir.judge (Usul.Typing.aslZahir.embed (.wahm, .wahm, true)) == some (Usul.Refinements.zahirPrevails .wahm .wahm true)
@@ -35,11 +44,26 @@ import Usul.Typing
 #guard Usul.Typing.aslZahir.judge (Usul.Typing.aslZahir.embed (.qat, .zann, true)) == some (Usul.Refinements.zahirPrevails .qat .zann true)
 #guard Usul.Typing.aslZahir.judge (Usul.Typing.aslZahir.embed (.qat, .qat, false)) == some (Usul.Refinements.zahirPrevails .qat .qat false)
 #guard Usul.Typing.aslZahir.judge (Usul.Typing.aslZahir.embed (.qat, .qat, true)) == some (Usul.Refinements.zahirPrevails .qat .qat true)
+-- doubt_in_condition
+#guard Usul.Typing.doubtInCondition.judge (Usul.Typing.doubtInCondition.embed (false, false, false)) == some (Usul.Refinements.validUnderDoubt false false false)
+#guard Usul.Typing.doubtInCondition.judge (Usul.Typing.doubtInCondition.embed (false, false, true)) == some (Usul.Refinements.validUnderDoubt false false true)
+#guard Usul.Typing.doubtInCondition.judge (Usul.Typing.doubtInCondition.embed (false, true, false)) == some (Usul.Refinements.validUnderDoubt false true false)
+#guard Usul.Typing.doubtInCondition.judge (Usul.Typing.doubtInCondition.embed (false, true, true)) == some (Usul.Refinements.validUnderDoubt false true true)
+#guard Usul.Typing.doubtInCondition.judge (Usul.Typing.doubtInCondition.embed (true, false, false)) == some (Usul.Refinements.validUnderDoubt true false false)
+#guard Usul.Typing.doubtInCondition.judge (Usul.Typing.doubtInCondition.embed (true, false, true)) == some (Usul.Refinements.validUnderDoubt true false true)
+#guard Usul.Typing.doubtInCondition.judge (Usul.Typing.doubtInCondition.embed (true, true, false)) == some (Usul.Refinements.validUnderDoubt true true false)
+#guard Usul.Typing.doubtInCondition.judge (Usul.Typing.doubtInCondition.embed (true, true, true)) == some (Usul.Refinements.validUnderDoubt true true true)
 -- excused_error
 #guard Usul.Typing.excusedError.judge (Usul.Typing.excusedError.embed (false, false)) == some (Usul.Refinements.errorExcused false false)
 #guard Usul.Typing.excusedError.judge (Usul.Typing.excusedError.embed (false, true)) == some (Usul.Refinements.errorExcused false true)
 #guard Usul.Typing.excusedError.judge (Usul.Typing.excusedError.embed (true, false)) == some (Usul.Refinements.errorExcused true false)
 #guard Usul.Typing.excusedError.judge (Usul.Typing.excusedError.embed (true, true)) == some (Usul.Refinements.errorExcused true true)
+-- ihram_specification
+#guard Usul.Typing.ihramSpecification.judge (Usul.Typing.ihramSpecification.embed (Usul.Refinements.hajjValid)) == some (Usul.Refinements.validOnEvery Usul.Refinements.hajjValid Usul.Refinements.Nusuk.all)
+#guard Usul.Typing.ihramSpecification.judge (Usul.Typing.ihramSpecification.embed (Usul.Refinements.umraValid)) == some (Usul.Refinements.validOnEvery Usul.Refinements.umraValid Usul.Refinements.Nusuk.all)
+-- istihlak
+#guard Usul.Typing.istihlak.judge (Usul.Typing.istihlak.embed (false)) == some (Usul.Refinements.istihlak false)
+#guard Usul.Typing.istihlak.judge (Usul.Typing.istihlak.embed (true)) == some (Usul.Refinements.istihlak true)
 -- itlaf
 #guard Usul.Typing.itlaf.judge (Usul.Typing.itlaf.embed (.benefit, .deliberate)) == some (Usul.Muamalat.itlafLiable (Usul.Muamalat.withRight .benefit) .deliberate)
 #guard Usul.Typing.itlaf.judge (Usul.Typing.itlaf.embed (.benefit, .ignorant)) == some (Usul.Muamalat.itlafLiable (Usul.Muamalat.withRight .benefit) .ignorant)
@@ -47,6 +71,27 @@ import Usul.Typing
 #guard Usul.Typing.itlaf.judge (Usul.Typing.itlaf.embed (.repelHarm, .deliberate)) == some (Usul.Muamalat.itlafLiable (Usul.Muamalat.withRight .repelHarm) .deliberate)
 #guard Usul.Typing.itlaf.judge (Usul.Typing.itlaf.embed (.repelHarm, .ignorant)) == some (Usul.Muamalat.itlafLiable (Usul.Muamalat.withRight .repelHarm) .ignorant)
 #guard Usul.Typing.itlaf.judge (Usul.Typing.itlaf.embed (.repelHarm, .forgetful)) == some (Usul.Muamalat.itlafLiable (Usul.Muamalat.withRight .repelHarm) .forgetful)
+-- luqata
+#guard Usul.Typing.luqata.judge (Usul.Typing.luqata.embed (false, false)) == some (Usul.Refinements.luqata false false)
+#guard Usul.Typing.luqata.judge (Usul.Typing.luqata.embed (false, true)) == some (Usul.Refinements.luqata false true)
+#guard Usul.Typing.luqata.judge (Usul.Typing.luqata.embed (true, false)) == some (Usul.Refinements.luqata true false)
+#guard Usul.Typing.luqata.judge (Usul.Typing.luqata.embed (true, true)) == some (Usul.Refinements.luqata true true)
+-- rukhsa_under_doubt
+#guard Usul.Typing.rukhsaUnderDoubt.judge (Usul.Typing.rukhsaUnderDoubt.embed (false, false)) == some (Usul.Refinements.rukhsaValid false false)
+#guard Usul.Typing.rukhsaUnderDoubt.judge (Usul.Typing.rukhsaUnderDoubt.embed (false, true)) == some (Usul.Refinements.rukhsaValid false true)
+#guard Usul.Typing.rukhsaUnderDoubt.judge (Usul.Typing.rukhsaUnderDoubt.embed (true, false)) == some (Usul.Refinements.rukhsaValid true false)
+#guard Usul.Typing.rukhsaUnderDoubt.judge (Usul.Typing.rukhsaUnderDoubt.embed (true, true)) == some (Usul.Refinements.rukhsaValid true true)
+-- substitute
+#guard Usul.Typing.substitute.judge (Usul.Typing.substitute.embed (false)) == some (Usul.Sadi.useSubstitute false)
+#guard Usul.Typing.substitute.judge (Usul.Typing.substitute.embed (true)) == some (Usul.Sadi.useSubstitute true)
+-- substitute_at_obligation
+#guard Usul.Typing.substituteAtObligation.judge (Usul.Typing.substituteAtObligation.embed (false, false)) == some (Usul.Refinements.useSubstituteAt false false)
+#guard Usul.Typing.substituteAtObligation.judge (Usul.Typing.substituteAtObligation.embed (false, true)) == some (Usul.Refinements.useSubstituteAt false true)
+#guard Usul.Typing.substituteAtObligation.judge (Usul.Typing.substituteAtObligation.embed (true, false)) == some (Usul.Refinements.useSubstituteAt true false)
+#guard Usul.Typing.substituteAtObligation.judge (Usul.Typing.substituteAtObligation.embed (true, true)) == some (Usul.Refinements.useSubstituteAt true true)
+-- switch_to_original
+#guard Usul.Typing.switchToOriginal.judge (Usul.Typing.switchToOriginal.embed (false)) == some (Usul.Refinements.mustSwitch false)
+#guard Usul.Typing.switchToOriginal.judge (Usul.Typing.switchToOriginal.embed (true)) == some (Usul.Refinements.mustSwitch true)
 -- trust_loss
 #guard Usul.Typing.trustLoss.judge (Usul.Typing.trustLoss.embed (.trustee, false, false)) == some (Usul.Muamalat.lossLiable .trustee false false)
 #guard Usul.Typing.trustLoss.judge (Usul.Typing.trustLoss.embed (.trustee, false, true)) == some (Usul.Muamalat.lossLiable .trustee false true)
@@ -61,3 +106,15 @@ import Usul.Typing
 #guard Usul.Typing.trustVoidance.judge (Usul.Typing.trustVoidance.embed (false, true)) == some (Usul.Refinements.trustVoided false true)
 #guard Usul.Typing.trustVoidance.judge (Usul.Typing.trustVoidance.embed (true, false)) == some (Usul.Refinements.trustVoided true false)
 #guard Usul.Typing.trustVoidance.judge (Usul.Typing.trustVoidance.embed (true, true)) == some (Usul.Refinements.trustVoided true true)
+-- unknown_as_nonexistent
+#guard Usul.Typing.unknownAsNonexistent.judge (Usul.Typing.unknownAsNonexistent.embed (false, false, false)) == some (Usul.Refinements.treatedAsAbsent false false false)
+#guard Usul.Typing.unknownAsNonexistent.judge (Usul.Typing.unknownAsNonexistent.embed (false, false, true)) == some (Usul.Refinements.treatedAsAbsent false false true)
+#guard Usul.Typing.unknownAsNonexistent.judge (Usul.Typing.unknownAsNonexistent.embed (false, true, false)) == some (Usul.Refinements.treatedAsAbsent false true false)
+#guard Usul.Typing.unknownAsNonexistent.judge (Usul.Typing.unknownAsNonexistent.embed (false, true, true)) == some (Usul.Refinements.treatedAsAbsent false true true)
+#guard Usul.Typing.unknownAsNonexistent.judge (Usul.Typing.unknownAsNonexistent.embed (true, false, false)) == some (Usul.Refinements.treatedAsAbsent true false false)
+#guard Usul.Typing.unknownAsNonexistent.judge (Usul.Typing.unknownAsNonexistent.embed (true, false, true)) == some (Usul.Refinements.treatedAsAbsent true false true)
+#guard Usul.Typing.unknownAsNonexistent.judge (Usul.Typing.unknownAsNonexistent.embed (true, true, false)) == some (Usul.Refinements.treatedAsAbsent true true false)
+#guard Usul.Typing.unknownAsNonexistent.judge (Usul.Typing.unknownAsNonexistent.embed (true, true, true)) == some (Usul.Refinements.treatedAsAbsent true true true)
+-- unknown_owner
+#guard Usul.Typing.unknownOwner.judge (Usul.Typing.unknownOwner.embed (false)) == some (Usul.Muamalat.recipient false)
+#guard Usul.Typing.unknownOwner.judge (Usul.Typing.unknownOwner.embed (true)) == some (Usul.Muamalat.recipient true)
