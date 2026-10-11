@@ -951,6 +951,22 @@ def removedWithPrincipal (general : Bool) : Bool := !general
 office carrying a right of God, «شبيه بنسخ الأحكام لا يثبت قبل بلوغ الناسخ». -/
 def removedBeforeKnowledge (publicOffice : Bool) : Bool := !publicOffice
 
+/-- Qāʿida 55: one with a right to own by annulment or contract does not take by disposing, nor
+does his disposal take effect («المذهب المشهور أنه لا يكون تملكا، ولا ينفذ»), unless the cause of
+his ownership is complete past the other's power to defeat it (the legatee after the death:
+«لأن سبب الملك قد استقر له»), or his own tie never wholly lapsed (the rajʿiyya: «لم يزل النكاح
+عنها بالكلية»). -/
+def disposalTakes (causeComplete tieRemains : Bool) : Bool := causeComplete || tieRemains
+
+/-- Qāʿida 57: a ruling that coincides with what bars it does not hold («المذهب المشهور أنه لا
+يثبت»), against Ibn Ḥāmid; nor one that follows a bar already in place. One that coincides only
+with the bar's cause precedes the bar and holds. -/
+def holdsAgainstBar (withBar barFirst : Bool) : Bool := !withBar && !barFirst
+
+/-- Qāʿida 59: contracts fall only on what exists, «وأما الفسوخ فترد على المعدوم حكما واختيارا على
+الصحيح», as in the muṣarrāt. -/
+def annulsNonexistent (annulment : Bool) : Bool := annulment
+
 /-! ## Reconciliation refinements (`corpus/reconciliation/ledger.json`)
 
 Each is a jamʿ: a farq the later works cite, conservative over the earlier reading where the farq
