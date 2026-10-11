@@ -263,7 +263,7 @@ def _lean_names() -> list[str]:
     """Lean constants named by the Σ map and by every catalogue proposal, in order."""
     sigma = [link["lean"] for link in _load(CORPUS / "signature_map.json")["links"]]
     proposals = [n for p in sorted((CORPUS / "proposals").glob("*.json")) for r in _load(p)["rules"] for n in r["lean"]]
-    review = [n for p in sorted((CORPUS / "review").glob("*.json")) for n in _review_names(_load(p))]
+    review = [n for p in sorted((CORPUS / "review").glob("*.json")) for n in _review_names(_load(p))]  # IQ and research registers
     citations = [n for p in sorted((CORPUS / "citations").glob("*.json")) for ns in _load(p)["formalises"].values() for n in ns]
     dossier = [n for e in load_dossier()["entries"] for n in e["lean"]]
     glossary = [n for t in _load(GLOSSARY)["terms"] for n in t.get("lean", [])]
@@ -273,7 +273,10 @@ def _lean_names() -> list[str]:
 
 
 def _review_names(reg: dict) -> list[str]:
-    """Lean constants a review register relies on: its process, its pins, its transported laws."""
+    """Lean constants a review register relies on: its process, its pins, its transported laws.
+    The research register has no process: only its pins."""
+    if reg.get("register") == "research":
+        return [n for q in reg["questions"] for n in q["pins"]]
     return [*reg["process"]["lean"],
             *(n for q in reg["questions"] for n in q["pins"]),
             *(n for q in reg["questions"] for n in q.get("decision", {}).get("lean", [])),

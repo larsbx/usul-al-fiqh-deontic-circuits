@@ -308,6 +308,9 @@ import Usul
 #check @Usul.Dalala.isGeneralIn_no_ahd
 #check @Usul.Dalala.ahd_blocks
 #check @Usul.Sadi.q60_markers_general
+#check @Usul.DalilKind.resort
+#check @Usul.Jadal.RespectsSources
+#check @Usul.Reconcile.Grade
 #check @Usul.Process.status
 #check @Usul.Process.analogy_never_outranks_text
 #check @Usul.Process.order_is_resort
@@ -359,7 +362,6 @@ import Usul
 #check @Usul.Jadal.qiyas_awla
 #check @Usul.Jadal.qiyas_musawi
 #check @Usul.Jadal.preferred_optimal
-#check @Usul.Jadal.RespectsSources
 #check @Usul.Jadal.exampleRank_respects
 #check @Usul.Jadal.sabr_beats_shabah
 #check @Usul.QiyasLimits.qiyas_against_text_unsound
@@ -471,7 +473,6 @@ import Usul
 #check @Usul.Qawaid.daruraPermits
 #check @Usul.QiyasLimits.Domain.rukhas
 #check @Usul.DalilKind
-#check @Usul.DalilKind.resort
 #check @Usul.DalilKind.qiyas_after_athar
 #check @Usul.Jadal.Maslak.ijma
 #check @Usul.Qiyas.Argument.asl
