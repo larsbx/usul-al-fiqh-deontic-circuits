@@ -16,4 +16,5 @@ import Usul.QiyasLimits
 import Usul.Dalala
 import Usul.CommandSchemata
 import Usul.Refinements
+import Usul.Readings
 import Usul.Seam

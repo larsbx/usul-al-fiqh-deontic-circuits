@@ -18,6 +18,8 @@ import re
 from collections import Counter
 from pathlib import Path
 
+from .shards import with_fragments
+
 from . import takhrij
 
 LEDGER = Path("reconciliation") / "ledger.json"
@@ -190,5 +192,7 @@ def draft(cases: list[dict], ledger: dict) -> list[dict]:
 
 
 def load(corpus: Path) -> dict:
+    """The committed ledger plus every shard's entries (``reconciliation/entries/*.json``)."""
     p = corpus / LEDGER
-    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {"entries": []}
+    base = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {"entries": []}
+    return with_fragments(base, p.parent / "entries", key="far")

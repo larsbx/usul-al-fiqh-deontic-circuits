@@ -199,3 +199,28 @@ def test_citation_maps_are_grounded():
     for mod in ("Qiyas", "Jadal", "QiyasLimits"):
         names = re.findall(r"^theorem (\S+)", (root / f"formal/lean/Usul/{mod}.lean").read_text(), re.M)
         assert names and all(f"Usul.{mod}.{n}" in grounded_all for n in names), mod
+
+
+def test_research_questions_are_grounded():
+    """The research register: schema-valid; every source is a verbatim excerpt from a registered witness
+    on the cited page (checked where cached); every pin is a Lean constant; nothing is decided by an agent."""
+    import re as _re
+    root = Path(__file__).parents[2]
+    reg = json.loads((root / "corpus/review/research_questions.json").read_text(encoding="utf-8"))
+    jsonschema.validate(reg, json.loads((root / "schemas/research_question.schema.json").read_text()))
+    witnesses = {w["id"] for work in json.loads((root / "corpus/registry.json").read_text())["works"] for w in work["witnesses"]}
+    lean_defs = {m.split(".")[-1] for p in (root / "formal/lean").rglob("*.lean") if ".lake" not in p.parts
+                 for m in _re.findall(r"^\s*(?:def|theorem|abbrev|inductive|structure)\s+([\w.']+)", p.read_text(encoding="utf-8"), _re.M)}
+    for q in reg["questions"]:
+        assert all(pin.split(".")[-1] in lean_defs for pin in q["pins"]), q["id"]
+        assert q["status"] != "decided" or q["decision"]["by"] == "human", q["id"]
+        for s in q["sources"]:
+            wid, vol, page = _re.fullmatch(r"src:([a-z0-9-]+)/v(\d+):p(\d+)", s["ref"]).groups()
+            assert wid in witnesses, s["ref"]
+            cached = root / ".cache/corpus" / f"{wid}.txt"
+            assert s["excerpt_ar"].strip(), s["ref"]  # an empty excerpt would match every page
+            if cached.exists():
+                from usul_corpus.reception import pages
+                marker = f"PageV{int(vol):02d}P{int(page):03d}"
+                body = next((b for loc, b in pages(cached.read_text(encoding="utf-8")) if loc == marker), "")
+                assert s["excerpt_ar"] in body, s["ref"]

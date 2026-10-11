@@ -55,6 +55,12 @@ CORPUS = ROOT / "corpus"
 CACHE = ROOT / ".cache" / "corpus"
 ISLAMQA = ROOT / "data" / "islamqa"
 DOSSIER = CORPUS / "dossier" / "refinements.json"
+
+
+def load_dossier() -> dict:
+    """The committed dossier plus every shard's entries (``corpus/dossier/entries/*.json``)."""
+    from .shards import with_fragments
+    return with_fragments(_load(DOSSIER), DOSSIER.parent / "entries", key="id")
 GLOSSARY = CORPUS / "dossier" / "glossary.json"
 TEXTS = CORPUS / "texts"
 FETCHABLE = {"located", "located_ocr"}
@@ -257,9 +263,9 @@ def _lean_names() -> list[str]:
     """Lean constants named by the Σ map and by every catalogue proposal, in order."""
     sigma = [link["lean"] for link in _load(CORPUS / "signature_map.json")["links"]]
     proposals = [n for p in sorted((CORPUS / "proposals").glob("*.json")) for r in _load(p)["rules"] for n in r["lean"]]
-    review = [n for p in sorted((CORPUS / "review").glob("*.json")) for n in _review_names(_load(p))]
+    review = [n for p in sorted((CORPUS / "review").glob("*.json")) for n in _review_names(_load(p))]  # IQ and research registers
     citations = [n for p in sorted((CORPUS / "citations").glob("*.json")) for ns in _load(p)["formalises"].values() for n in ns]
-    dossier = [n for e in _load(DOSSIER)["entries"] for n in e["lean"]]
+    dossier = [n for e in load_dossier()["entries"] for n in e["lean"]]
     glossary = [n for t in _load(GLOSSARY)["terms"] for n in t.get("lean", [])]
     m8 = [n for p in sorted((CORPUS / "worklists").glob("*_plan.json"))
           for q in _load(p)["selection"] for n in q["reading"]]
@@ -267,7 +273,10 @@ def _lean_names() -> list[str]:
 
 
 def _review_names(reg: dict) -> list[str]:
-    """Lean constants a review register relies on: its process, its pins, its transported laws."""
+    """Lean constants a review register relies on: its process, its pins, its transported laws.
+    The research register has no process: only its pins."""
+    if reg.get("register") == "research":
+        return [n for q in reg["questions"] for n in q["pins"]]
     return [*reg["process"]["lean"],
             *(n for q in reg["questions"] for n in q["pins"]),
             *(n for q in reg["questions"] for n in q.get("decision", {}).get("lean", [])),
@@ -299,7 +308,7 @@ def cmd_reconcile(args: argparse.Namespace) -> int:
     if args.draft:
         print(json.dumps(reconcile.draft(cases, ledger), ensure_ascii=False, indent=1))
         return 0
-    if errs := reconcile.check(cases, ledger, _load(DOSSIER)):
+    if errs := reconcile.check(cases, ledger, load_dossier()):
         print("\n".join(errs), file=sys.stderr)
         return 1
     (SIGNATURE_LEAN.parent / "Reconcile.lean").write_text(reconcile.lean_file(cases, ledger), encoding="utf-8")
@@ -357,7 +366,7 @@ def docs_pages() -> dict[Path, str]:
     from .reception import render_counts
     titles = {w["id"]: (w["title_tr"], w.get("reception", {}).get("genre", "")) for w in _load(CORPUS / "registry.json")["works"]}
     titles |= {a["id"]: (a["name_tr"], "") for a in _load(CORPUS / "reception" / "authors.json")["authors"]}
-    return {ROOT / "docs/architecture/dossier.md": render_dossier(_load(DOSSIER), records, {t["key"]: t for t in glossary["terms"]}),
+    return {ROOT / "docs/architecture/dossier.md": render_dossier(load_dossier(), records, {t["key"]: t for t in glossary["terms"]}),
             ROOT / "docs/glossary.md": render_glossary(glossary, records),
             ROOT / "docs/architecture/reception-counts.md": render_counts(_load(CORPUS / "reception" / "report.json"), titles)}
 
@@ -432,6 +441,9 @@ def cmd_texts(_: argparse.Namespace) -> int:
 
 
 def cmd_signature(_: argparse.Namespace) -> int:
+    from .shards import readings_index
+    readings = ROOT / "formal" / "lean" / "Usul" / "Readings"
+    (readings.parent / "Readings.lean").write_text(readings_index(readings), encoding="utf-8")
     SIGNATURE_LEAN.write_text(signature_lean(_lean_names()), encoding="utf-8")
     SCALE_LEAN.write_text(signature_lean(hadith_lean_names(), "Hadith"), encoding="utf-8")
     DAIFA_LEAN.write_text(hadith.daifa_lean(CORPUS), encoding="utf-8")

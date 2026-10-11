@@ -8,11 +8,12 @@ import jsonschema
 import pytest
 
 from usul_corpus import reconcile, takhrij
+from usul_corpus.__main__ import load_dossier
 
 ROOT = Path(__file__).parents[2]
 CASES = takhrij.load(ROOT / "corpus")
 LEDGER = reconcile.load(ROOT / "corpus")
-DOSSIER = json.loads((ROOT / "corpus/dossier/refinements.json").read_text())
+DOSSIER = load_dossier()  # shard entries included
 
 
 def test_grade_order_mirrors_the_kernel():
