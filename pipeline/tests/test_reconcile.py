@@ -136,3 +136,13 @@ def test_every_jam_lands_on_the_prevailing_side():
     kept = _ikh("y", True, [True, False], False, "successive_by_binding", f(False, False))
     ledger = {"entries": [_entry("x", ["ashab", "zahir"], jam), _entry("y", ["ashab", "zahir"], jam)]}
     assert reconcile.check([moved, kept], ledger, DOSSIER) == ["y: a jamʿ must land on the prevailing side"]
+
+
+def test_a_failed_side_check_enters_the_ledger_with_its_evidence():
+    case = {**_ikh("x", False, [True, False]), "side_check": {"from_matches": True, "refs": ["src:w/v01:p001"]}}
+    ev = [{"ref": "src:w/v01:p001", "excerpt_ar": "", "position": 1, "grade": "tashih", "who": "", "note": ""}]
+    assert reconcile.check([case], {"entries": []}, DOSSIER) == [
+        "x: apparent contradiction not in the ledger", "x: a failed side check must enter the ledger"]
+    assert reconcile.check([case], {"entries": [{**_entry("x", ["ashab", "ashab"]), "evidence": ev}]}, DOSSIER) == []
+    assert reconcile.check([case], {"entries": [_entry("x", ["ashab", "ashab"])]}, DOSSIER) == [
+        "x: a side check cites only the ledger's own evidence"]

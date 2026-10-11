@@ -108,6 +108,13 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
                 errs.append(f"{f}: a jamʿ must land on the prevailing side")
         if c.get("matches_madhhab") and not e.get("jam"):
             errs.append(f"{f}: matches the madhhab without a jamʿ; nothing to reconcile")
+    for c in cases:
+        if sc := c.get("side_check"):
+            e = entries.get(c["far"])
+            if e is None:
+                errs.append(f"{c['far']}: a failed side check must enter the ledger")
+            elif not set(sc["refs"]) <= {v["ref"] for v in e.get("evidence", [])}:
+                errs.append(f"{c['far']}: a side check cites only the ledger's own evidence")
     for enc, cs in jams.items():
         frm = {entries[c["far"]]["jam"]["from"] for c in cs}
         if len(frm) != 1:
