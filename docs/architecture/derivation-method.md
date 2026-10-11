@@ -85,6 +85,16 @@ These are the rules the history enforced, each after a failure it fixed:
 9. **Apply the bank before asking the owner** (D3 `d21241e`, D5 `5cfbe02`). A question reaches a human only after the bank's own procedure leaves it open.
 10. **Rights.** Pre-modern excerpts may run to 400 characters; modern ones are capped at 160 characters and their contexts stay in `.cache`.
 
+### Research questions
+
+A question the method surfaces that is neither a reading of one of al-Saʿdī's rules (those go to the IQ register, `corpus/review/sadi_interpretive_questions.json`) nor decidable by the bank's own procedure is recorded in the research register, `corpus/review/research_questions.json` (`schemas/research_question.schema.json`). Each entry:
+- states the **policy in force** until a human decides;
+- pins the Lean constants it bears on;
+- cites verbatim sources;
+- lists alternatives and concrete research steps.
+
+`test_research_questions_are_grounded` checks every excerpt against its cited page in the pinned witness, and checks that no entry is decided except by a human. RQ-01 is the first: a reported ijmāʿ that contradicts the kernel's ruling. Its policy is to record such reports as evidence that changes no class.
+
 ## 5. Parallel runs
 
 The method parallelises because a tranche only *adds* to the bank (§6). Shards can do the annotation steps S0–S3 and S5 independently. The steps where shards interact, self-application (S4) and reconciliation (S6–S7), run once over their union. Two failures shaped the protocol:

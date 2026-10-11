@@ -33,7 +33,7 @@ Profiled from the cached witnesses: size, headings, numbered masāʾil, Q/A mark
 | **R5 Dalīl** | *Bulūgh*, *Nayl al-Awṭār*, *Subul al-Salām*, *Fatḥ al-Bārī*, *al-Talkhīṣ al-Ḥabīr*, *Zād al-Maʿād*, *Maʿālim al-Sunan*, *Sharḥ Muslim*; al-Albānī's *Irwāʾ*, *Tamām al-Minna* | a ḥadīth with its grading | the naṣṣ grade in 𝔏; the al-Albānī track (H-milestones) |
 | **R6 Inference and dialectic** | the 23 qiyās works, *Rawḍa*, *Sharḥ al-Kawkab*, *al-Musawwada*, al-Shawkānī *Irshād* … | uṣūl doctrine | M5 schemata (not takhrīj) |
 
-**Ijmāʿ is a policy point.** A reported ijmāʿ that contradicts κ<sub>ρ</sub>(φ) could be read as an encoding error, or graded as evidence above taṣḥīḥ. Ijmāʿ reports are themselves disputed (Ibn Taymiyya's *Naqd Marātib al-Ijmāʿ*). Until the register decides, ijmāʿ items enter 𝔏 as evidence and change no class (IQ, invariant 8).
+**Ijmāʿ is recorded as a research question: [RQ-01](../corpus/review/research_questions.json).** A reported ijmāʿ that contradicts κ<sub>ρ</sub>(φ) could be an encoding error, or evidence graded above taṣḥīḥ. The kernel already places ijmāʿ three ways: with naṣṣ in `Usul.DalilKind.resort`, above naṣṣ among the masālik in `Usul.Jadal.RespectsSources`, and not at all in `Usul.Reconcile.Grade`. The reports themselves are disputed: Aḥmad's «من ادعى الإجماع فهو كاذب» (*Iʿlām* v1 p24), and Ibn Taymiyya's *Naqd Marātib al-Ijmāʿ*. **Policy in force (human instruction, 2026-10-11): as is.** Ijmāʿ reports enter 𝔏 as evidence and change no class. RQ-01 lists the alternatives and the research steps.
 
 ---
 
