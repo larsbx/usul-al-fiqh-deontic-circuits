@@ -25,6 +25,9 @@ For each pair, three things are proved:
 
 Earlier pairs proved in place: Q13/Q36 (`Muamalat.q13_q36_consistent`), Q26/Q43
 (`Muamalat.q26_q43_consistent`), Q51/Q54 (`Muamalat.q51_q54_consistent`).
+
+T11–T12 carry the pass to Ibn Rajab's *Taqrīr al-Qawāʿid* (`corpus/tanaqud/rajab.json`): one pair
+inside his book, one across the bank against al-Saʿdī. The qayd is again his own sentence.
 -/
 
 namespace Usul.Tanaqud
@@ -264,5 +267,59 @@ theorem t10_clash : t10.Clash := ⟨true, by decide⟩
 theorem t10_jam (trust : Bool) :
     t10.jam trust = Schema.burdenOf (returnPresumption (if trust then .owner else .self) false) true := by
   cases trust <;> rfl
+
+/-! ## T11 · Ibn Rajab 66 ⟂ Ibn Rajab 6: an act on a mistaken belief
+
+Q66 (reading `Refinements.validWithBasis`): a disposition stands when a valid basis exists in
+fact. Q6 (`Refinements.errorExcused`): an act done on a belief later shown wrong stands, unless
+another's right attaches or he was negligent. Read without their qayd, with no valid basis in
+fact Q66 voids what Q6 lets stand, and with another's right attached Q6 undoes what Q66 upholds.
+Ibn Rajab (Q66): «ثم تبين خطؤه فيه وأن السبب المعتمد غيره وهو موجود». Q66 governs only where
+the true basis exists; elsewhere Q6. -/
+
+/-- The case: a valid basis exists in fact, another's right is attached, he was negligent. The
+act was done on a belief later shown wrong. -/
+def t11 : Pair (Bool × Bool × Bool) Bool where
+  first  := fun c => Refinements.validWithBasis true c.1
+  second := fun c => Refinements.errorExcused c.2.1 c.2.2
+  qayd   := fun c => c.1
+
+theorem t11_clash : t11.Clash := ⟨(false, false, false), by decide⟩
+
+/-- The jamʿ: the act stands if a valid basis exists in fact, or else if Q6 excuses it. -/
+theorem t11_jam (basis others negligent : Bool) :
+    t11.jam (basis, others, negligent) =
+      (Refinements.validWithBasis true basis || Refinements.errorExcused others negligent) := by
+  cases basis <;> cases others <;> cases negligent <;> rfl
+
+/-! ## T12 · al-Saʿdī Q28 ⟂ Ibn Rajab 7: the original found during the substitute
+
+al-Saʿdī Q28 (`Sadi.useSubstitute`): the substitute only when the original is impossible, so
+once it is found he switches. Ibn Rajab 7: whoever began a general concession «لا يجب عليه
+الانتقال منه بوجود الأصل». Ibn Rajab's qayd (Q7): «الضرب الثاني: أن يكون المتلبس به إنما شرع
+ضرورة للعجز عن الأصل وتعذره». Q28 governs the necessity substitute, the concession stands. -/
+
+/-- The case: the substitute begun was a necessity (not a general concession). The result:
+whether he must switch to the original now found. -/
+def t12 : Pair Bool Bool where
+  first  := fun _ => !Sadi.useSubstitute true
+  second := fun _ => false
+  qayd   := id
+
+theorem t12_clash : t12.Clash := ⟨true, by decide⟩
+
+/-- The jamʿ is Ibn Rajab 7's reading, `Refinements.mustSwitch`. -/
+theorem t12_jam (necessity : Bool) : t12.jam necessity = Refinements.mustSwitch necessity := by
+  cases necessity <;> rfl
+
+/-! ## Ibn Rajab 93 with Ibn Rajab 75: no clash
+
+Q93: whoever took from a usurper unaware has recourse against him «ما لم يدخل على ضمانه». Q75
+(`Refinements.recourseFull`): recourse for paying what another owed. What he entered on
+liability for was his own due, not the usurper's, so Q75 gives no recourse there either. -/
+
+theorem rajab_q93_q75_consistent (entered : Bool) :
+    Refinements.takerRecourse entered = Refinements.recourseFull false (!entered) false := by
+  cases entered <;> rfl
 
 end Usul.Tanaqud

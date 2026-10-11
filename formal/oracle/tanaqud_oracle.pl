@@ -3,7 +3,8 @@
 %  Oracle: an independent Prolog model of the tanāquḍ pairs (Usul.Tanaqud).
 %
 %  For each pair of al-Saʿdī's qawāʿid: the first and the second read without
-%  their qayd, and the qayd in his own words (corpus/tanaqud/sadi.json). The
+%  their qayd, and the qayd in his own words (corpus/tanaqud/sadi.json; T-11
+%  onward Ibn Rajab's, corpus/tanaqud/rajab.json). The
 %  jamʿ is the first on the qayd's side and the second elsewhere. Cases are
 %  lists of JSON scalars as the register writes them. Outputs are bound after
 %  the choice, so a bound caller never selects a clause.
@@ -79,3 +80,15 @@ qayd(9, [E]) :- E == true.
 first(10, [_], yamin).
 second(10, [_], bayyina).
 qayd(10, [T]) :- T == true.
+
+% T-11 Ibn Rajab 66 ⟂ 6: does the act on a mistaken belief stand?, case [BasisExists, OthersRight, Negligent].
+% «ثم تبين خطؤه فيه وأن السبب المعتمد غيره وهو موجود»
+first(11, [B, _, _], V) :- ( B == true -> V = true ; V = false ).
+second(11, [_, O, N], V) :- ( O == false, N == false -> V = true ; V = false ).
+qayd(11, [B, _, _]) :- B == true.
+
+% T-12 al-Saʿdī Q28 ⟂ Ibn Rajab 7: must he switch to the original now found?, case [Necessity].
+% «الضرب الثاني: أن يكون المتلبس به إنما شرع ضرورة للعجز عن الأصل وتعذره»
+first(12, [_], true).
+second(12, [_], false).
+qayd(12, [N]) :- N == true.

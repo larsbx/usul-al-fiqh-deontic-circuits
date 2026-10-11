@@ -95,3 +95,35 @@ import Usul
 #guard Usul.Tanaqud.t10.first false == .yamin
 #guard Usul.Tanaqud.t10.second false == .bayyina
 #guard Usul.Tanaqud.t10.jam false == .bayyina
+-- T-11: Q66 ⟂ Q6
+#guard Usul.Tanaqud.t11.first (true, true, true) == true
+#guard Usul.Tanaqud.t11.second (true, true, true) == false
+#guard Usul.Tanaqud.t11.jam (true, true, true) == true
+#guard Usul.Tanaqud.t11.first (true, true, false) == true
+#guard Usul.Tanaqud.t11.second (true, true, false) == false
+#guard Usul.Tanaqud.t11.jam (true, true, false) == true
+#guard Usul.Tanaqud.t11.first (true, false, true) == true
+#guard Usul.Tanaqud.t11.second (true, false, true) == false
+#guard Usul.Tanaqud.t11.jam (true, false, true) == true
+#guard Usul.Tanaqud.t11.first (true, false, false) == true
+#guard Usul.Tanaqud.t11.second (true, false, false) == true
+#guard Usul.Tanaqud.t11.jam (true, false, false) == true
+#guard Usul.Tanaqud.t11.first (false, true, true) == false
+#guard Usul.Tanaqud.t11.second (false, true, true) == false
+#guard Usul.Tanaqud.t11.jam (false, true, true) == false
+#guard Usul.Tanaqud.t11.first (false, true, false) == false
+#guard Usul.Tanaqud.t11.second (false, true, false) == false
+#guard Usul.Tanaqud.t11.jam (false, true, false) == false
+#guard Usul.Tanaqud.t11.first (false, false, true) == false
+#guard Usul.Tanaqud.t11.second (false, false, true) == false
+#guard Usul.Tanaqud.t11.jam (false, false, true) == false
+#guard Usul.Tanaqud.t11.first (false, false, false) == false
+#guard Usul.Tanaqud.t11.second (false, false, false) == true
+#guard Usul.Tanaqud.t11.jam (false, false, false) == true
+-- T-12: sadi.qawaid_jamia:28 ⟂ Q7
+#guard Usul.Tanaqud.t12.first true == true
+#guard Usul.Tanaqud.t12.second true == false
+#guard Usul.Tanaqud.t12.jam true == true
+#guard Usul.Tanaqud.t12.first false == true
+#guard Usul.Tanaqud.t12.second false == false
+#guard Usul.Tanaqud.t12.jam false == false

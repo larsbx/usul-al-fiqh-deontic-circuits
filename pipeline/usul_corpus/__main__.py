@@ -250,7 +250,8 @@ def _lean_names() -> list[str]:
 
 def _bank_names(reg: dict) -> list[str]:
     """Lean constants a register of the bank applied to itself names: its module's, and each entry's."""
-    return [*reg["lean"], *(n for e in reg.get("pairs", []) + reg.get("items", []) for n in e.get("lean", []) + e.get("grounds", []))]
+    return [*reg["lean"], *(n for e in reg.get("pairs", []) + reg.get("proved_earlier", []) + reg.get("items", [])
+                             for n in e.get("lean", []) + e.get("grounds", []))]
 
 
 def _review_names(reg: dict) -> list[str]:
@@ -352,7 +353,7 @@ def cmd_signature(_: argparse.Namespace) -> int:
     SCALE_LEAN.write_text(signature_lean(hadith_lean_names(), "Hadith"), encoding="utf-8")
     DAIFA_LEAN.write_text(hadith.daifa_lean(CORPUS), encoding="utf-8")
     SEAM_LEAN.write_text(hadith.seam_lean(_load(CORPUS / "hadith" / "irwa_join.json")["links"]), encoding="utf-8")
-    TANAQUD_LEAN.write_text(tanaqud.table_lean(_load(CORPUS / "tanaqud" / "sadi.json")), encoding="utf-8")
+    TANAQUD_LEAN.write_text(tanaqud.table_lean(tanaqud.registers(CORPUS)), encoding="utf-8")
     FURUQ_LEAN.write_text(furuq.table_lean(CORPUS), encoding="utf-8")
     return 0
 

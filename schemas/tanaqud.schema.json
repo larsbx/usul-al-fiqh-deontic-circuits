@@ -181,9 +181,19 @@
   },
   "$defs": {
     "rule": {
-      "type": "integer",
-      "minimum": 1,
-      "maximum": 60
+      "oneOf": [
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 160,
+          "description": "a qāʿida of the register's own work"
+        },
+        {
+          "type": "string",
+          "pattern": "^[a-z_]+\\.[a-z_]+:[0-9]+$",
+          "description": "a qāʿida of another work in the bank, work:number"
+        }
+      ]
     },
     "pair": {
       "type": "array",
