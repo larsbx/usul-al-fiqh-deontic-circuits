@@ -72,6 +72,8 @@ mutants=(
   "typing_extends_closure|v41_typing.pl|s/^field_of(T, F) :- type_extends(T, P), field_of(P, F)\./field_of(T, F) :- type_extends(T, P), field_of(P, F), fail./|v41_typing_fixtures.pl"
   "typing_ill_typed|v41_typing.pl|s/^ill_typed(E, F) :- reads(E, F), \\\\+ typed_field(F)\./ill_typed(E, F) :- reads(E, F), \\\\+ typed_field(F), fail./|v41_typing_fixtures.pl"
   "typing_unrelated_shared|v41_typing.pl|s/^    type_field(T1, F, _), type_field(T2, F, _), T1 @< T2, \\\\+ related(T1, T2)\./    type_field(T1, F, _), type_field(T2, F, _), T1 @< T2, \\\\+ related(T1, T2), fail./|v41_typing_fixtures.pl"
+  "typing_stated_kept|v41_typing.pl|s/^    \\\\+ sit(S, F, _),$/    true,/|v41_typing_fixtures.pl"
+  "typing_premise|v41_typing.pl|s/^    all_hold(S, Premises)\./    Premises = Premises./|v41_typing_fixtures.pl"
 )
 
 survivors=0

@@ -76,3 +76,31 @@ fixture_expectation(no_silent_identification,
     query(\+ (unrelated_shared_field(_, T1, T2), \+ sub_atom(T1, 0, _, _, fx_), \+ sub_atom(T2, 0, _, _, fx_))), expect_true).
 fixture_expectation(silent_identification_caught,
     query(unrelated_shared_field(fx_field, fx_left, fx_right)), expect_true).
+
+% Relations (Usul.Typing.Relations), as the Lean theorems state them.
+sit(s_luqata, year_passed, true).
+sit(s_luqata, unknown, true).
+sit(s_luqata, hardship, false).
+fixture_expectation(year_settles_despair, query(holds(s_luqata, despair, true)), expect_true).
+fixture_expectation(luqata_routes_to_majhul, query(route(s_luqata, unknown_as_nonexistent)), expect_true).
+
+sit(s_hoped, year_passed, true).
+sit(s_hoped, despair, false).
+fixture_expectation(stated_fact_kept, query(holds(s_hoped, despair, true)), expect_false).
+fixture_premise(stated_fact_kept, query(sit(s_hoped, despair, false))).
+
+sit(s_within_year, year_passed, false).
+fixture_expectation(premise_required, query(holds(s_within_year, despair, true)), expect_false).
+fixture_premise(premise_required, query(sit(s_within_year, year_passed, false))).
+
+sit(s_consumed, consumed, true).
+fixture_expectation(consumed_is_unidentified, query(holds(s_consumed, owner_identifiable, false)), expect_true).
+
+sit(s_rukhsa, rukhsa_needs_certainty, true).
+fixture_expectation(rukhsa_settles_firmness, query(holds(s_rukhsa, needs_firm, true)), expect_true).
+
+% Identified: doubt_in_condition's ghalaba is the ẓāhir reaching ẓann.
+sit(s_doubt, needs_firm, true).
+sit(s_doubt, zahir, zann).
+sit(s_doubt, asl_mustashab, false).
+fixture_expectation(ghalaba_is_zahir, query(applies(doubt_in_condition, s_doubt)), expect_true).

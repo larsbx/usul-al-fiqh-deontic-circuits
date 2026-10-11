@@ -101,14 +101,15 @@ Precedents:
       `unrelated_shared_field` in `examples/v41_typing.pl` flags any field two types declare when neither extends the other, and a fixture requires there be none.
     - `test_every_encoder_is_typed_with_its_arity` checks the Lean export against the registry: a new encoder lands typed or not at all.
     - Theorems: `original_possibility_is_shared` (Q28 types both substitute encoders over one field), `luqata_extends_majhul`.
-  - **Candidate identifications, left for review.** These pairs look like one notion stated at two levels. They are kept as separate fields because merging them is a modelling decision:
-    - `ghalaba` (68) and a ẓāhir graded ẓann (Q11 / Q52);
-    - `rukhsaNeedsCertainty` (68.f001) and `needsFirm` (68);
-    - `yearPassed` (luqaṭa) and `despair` (106);
-    - `ownerIdentifiable` (Q20) and ¬(`unknown` ∧ `despair`) (106);
-    - `consumed` (22) and `unknown` (106).
+  - **Identifications and relations (human decision, 2026-10-11).** Five pairs of facts stated at two levels were decided as follows:
+    - **Identified:** Ibn Rajab 68's «غلبة ظن» is Q11's ẓāhir graded at least ẓann (`Grade.IsYaqin`). `ShakkShart` has no `ghalaba` field, and `doubt_in_condition` reads `zahir` (`proj_embed` by cases).
+    - **Related**, by `Implication`s in `Usul.Typing.Relations`, in the direction the texts give:
+      - 68.f001 ⇒ 68 (`rukhsaNeedsFirm`);
+      - the luqaṭa year ⇒ 106's despair (`yearDespair`);
+      - Q20 ⇔ 106's unknown ∧ despaired (`unidentifiedIsMajhul`, `majhulIsUnidentified`, `knownIsIdentified`, `hopedIsIdentified`);
+      - consumed (22) ⇒ 106 (`consumedIsMajhul`).
 
-    Accepting one turns it into a Lean equation between the fields, with `run` unchanged as the conservativity check.
+      `saturate` fills an implied field only where a situation leaves it open; a stated fact is never overridden (`stated_fact_kept`). Chains settle (`consumed_is_unidentified`). The fifth relation is what the kernel already assumed: `istihlak_agrees` proves 106's encoder on the saturated situation rules as `istihlak` does. The export carries the relations as `implies/3`; Prolog's tabled `holds/3` mirrors `saturate`, with fixture vectors and two mutants killed.
   - **T3:** typing as routing. A unit is typed once into a partial `Situation`; the encoders whose `applies` holds take it. One lacking a field yields `missing_fact` naming it. Two that apply and disagree go to taʿāruḍ.
   - **T4:** typed routing measured against the lexical baseline on the same held-out cases and IslamQA set.
 - **P0.6 done, as a ranker:** `python -m usul_corpus routing` writes `corpus/routing/index.json`. Profiles are derived from the bank's evidence, never written: each of the 100 encoders gets the TF-IDF centroid of the records its annotated cases rest on plus its own qawāʿid, with words found in over 10 % of the evidence dropped. Per encoder the index gives its case support, its lexicon (the heaviest profile words) and its nearest matn units.

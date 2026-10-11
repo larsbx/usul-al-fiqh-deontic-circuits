@@ -183,13 +183,13 @@ def abstentionUnderPossibleCondition : Typed Situation Bool where
   run | (u, p, a) => Refinements.abstains u p a
   proj_embed := fun _ => rfl
 
-/-- `doubt_in_condition` reads Ibn Rajab 68's type. -/
+/-- `doubt_in_condition` reads Ibn Rajab 68's type; its ghalaba is the ẓāhir reaching ẓann. -/
 def doubtInCondition : Typed Situation Bool where
   Local := Bool × Bool × Bool
-  proj s := do pure (← s.needsFirm, ← s.ghalaba, ← s.aslMustashab)
-  embed | (n, g, a) => { needsFirm := some n, ghalaba := some g, aslMustashab := some a }
+  proj s := do pure (← s.needsFirm, decide (← s.zahir).IsYaqin, ← s.aslMustashab)
+  embed | (n, g, a) => { needsFirm := some n, zahir := some (if g then .zann else .shakk), aslMustashab := some a }
   run | (n, g, a) => Refinements.validUnderDoubt n g a
-  proj_embed := fun _ => rfl
+  proj_embed := fun ⟨_, g, _⟩ => by cases g <;> rfl
 
 /-- `rukhsa_under_doubt` reads 68.f001's type. -/
 def rukhsaUnderDoubt : Typed Situation Bool where

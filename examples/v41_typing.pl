@@ -8,6 +8,8 @@
 %  kernel's declarations (formal/lean/scripts/ExportTypes.lean); these rules
 %  run the typing judgement on situations stated as sit(Situation, Field, Value).
 %
+%    holds(S, F, V)         S states F = V, or it follows by a relation
+%                           (implies/3, Usul.Typing.Relations) where S leaves F open
 %    applies(E, S)          S settles every field E reads: S inhabits E's type
 %    missing_fact(E, S, F)  E reads F and S leaves it open
 %    route(S, E)            the encoders a situation is routed to
@@ -30,7 +32,20 @@ field_of(T, F) :- type_field(T, F, _).
 field_of(T, F) :- type_extends(T, P), field_of(P, F).
 
 situation(S) :- setof(S0, F^V^sit(S0, F, V), Ss), member(S, Ss).
-known(S, F) :- sit(S, F, _).
+
+% Lean's saturate: a relation fills a field the situation leaves open, when
+% its premise holds; a stated fact is never overridden. Tabled, since the
+% Q20 / 106 relations run both ways.
+:- table holds/3.
+holds(S, F, V) :- sit(S, F, V).
+holds(S, F, V) :-
+    situation(S), implies(_, Premises, Consequents), member(F-V, Consequents),
+    \+ sit(S, F, _),
+    all_hold(S, Premises).
+all_hold(_, []).
+all_hold(S, [F-V|Rest]) :- holds(S, F, V), all_hold(S, Rest).
+
+known(S, F) :- holds(S, F, _).
 
 applies(E, S) :-
     encoder_type(E, _), situation(S),

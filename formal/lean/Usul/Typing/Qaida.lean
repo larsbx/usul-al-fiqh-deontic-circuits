@@ -103,10 +103,10 @@ structure Itizal extends Yaqin where
   absenceKnown : Option Bool := none
 
 /-- Ibn Rajab 68: acting while doubting a condition of validity, firm intention needed or not,
-ghalabat al-ẓann, a presumption that has not been shown to cease (Q11, Q52). -/
+ghalabat al-ẓann, a presumption that has not been shown to cease (Q11, Q52). Its «غلبة ظن» is not a field of its own: it is Q11's
+ẓāhir graded at least ẓann (`Grade.IsYaqin`), read through `Qarain` (identified, 2026-10-11). -/
 structure ShakkShart extends Qarain where
   needsFirm : Option Bool := none
-  ghalaba : Option Bool := none
   aslMustashab : Option Bool := none
 
 /-- Ibn Rajab 68.f001 «لأن المسح رخصة ولم تتحقق إباحتها فلم يصح»: a concession is 68's first type. -/
