@@ -27,6 +27,7 @@ import argparse
 import hashlib
 import json
 import sys
+from collections import Counter
 from pathlib import Path
 
 from . import hadith
@@ -39,7 +40,9 @@ from .texts import publishable, restore, stage
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
 from .openiti import parse_markdown
-from .records import hadd_record, qaida_records, sharh_record, unit_tags
+from .abwab import segment_abwab
+from .qa import segment_entries, segment_qa
+from .records import bab_record, fatwa_record, hadd_record, masala_record, qaida_records, sharh_record, unit_tags
 from .segment import (
     audit_numbering,
     consensus_numbering,
@@ -160,9 +163,20 @@ SEGMENTERS = {
 }
 
 
+# Line-segmented kinds: one record per unit, numbered in order, each with its sha256 receipt.
+UNIT_SEGMENTERS = {
+    "qa": (lambda text, seg: segment_qa(text, seg.get("question"), seg["answer"], seg.get("question_heading", False)), fatwa_record),
+    "masail": (lambda text, seg: segment_entries(text, seg["start"], seg.get("ordered", False)), masala_record),
+    "abwab": (lambda text, seg: segment_abwab(text, seg.get("end")), bab_record),
+}
+
+
 def _segment(work: dict, w: dict, text: str) -> tuple[list[dict], tuple | None]:
     """Records for one witness, plus the numbered units when the segmenter yields any."""
     seg, witness = w.get("segmenter", work["segmenter"]), w["id"]
+    if seg["kind"] in UNIT_SEGMENTERS:
+        cut, record = UNIT_SEGMENTERS[seg["kind"]]
+        return [record(work, witness, i, u) for i, u in enumerate(cut(text, seg), 1)], None
     if seg["kind"] == "hudud_brackets":
         hudud = extract_hudud(parse_markdown(text))
         return [hadd_record(work, witness, i, h) for i, h in enumerate(hudud, 1)], None
@@ -190,16 +204,42 @@ def _commentary(work: dict, witness: str, text: str, units: tuple) -> tuple[list
     }
 
 
+def unit_audit(records: list[dict]) -> dict:
+    """Audit fields for unit records: the answered share, the printed numbering, the ranks."""
+    if not records or records[0]["record_type"] not in ("fatwa", "masala", "bab"):
+        return {}
+    if records[0]["record_type"] == "bab":
+        return {"ranks": dict(sorted(Counter(r["rank"] for r in records).items()))}
+    out = {"answered": sum(r["answer_ar"] is not None for r in records)} if records[0]["record_type"] == "fatwa" else {}
+    nums = [r["number"] for r in records if r.get("number")]
+    if nums:
+        have = set(nums)
+        out["numbering"] = {"numbered": len(nums), "first": min(nums), "last": max(nums), "duplicates": len(nums) - len(have),
+                            "missing": [n for n in range(min(nums), max(nums) + 1) if n not in have]}
+    return out
+
+
+def merge_audit(previous: dict[str, dict], fresh: dict[str, dict], skipped: dict[str, str]) -> dict[str, dict]:
+    """The new audit: fresh entries, except that a skipped witness (id → work) keeps its previous
+    entries and a work with a skipped witness keeps its previous consensus."""
+    works = set(skipped.values())
+    kept = {k: v for k, v in previous.items()
+            if k.split("#")[0] in skipped or (k.startswith("consensus:") and k[len("consensus:"):] in works)}
+    return dict(sorted(({k: v for k, v in fresh.items() if k not in kept} | kept).items()))
+
+
 def cmd_build(_: argparse.Namespace) -> int:
     audit: dict[str, dict] = {}
+    skipped: dict[str, str] = {}
     for work in (w for w in _works(None) if "segmenter" in w):
         expected = work.get("expected_units", {}).get("count")
         numbered: dict[str, tuple] = {}
         for w in work["witnesses"]:
             src = CACHE / f"{w['id']}.txt"
             if not src.exists():
-                print(f"skip {w['id']}: not fetched{' or not OCR-ed' if w.get('format') == 'pdf' else ''}",
+                print(f"skip {w['id']}: not fetched{' or not OCR-ed' if w.get('format') == 'pdf' else ''}; previous audit kept",
                       file=sys.stderr)
+                skipped[w["id"]] = work["id"]
                 continue
             text = src.read_text(encoding="utf-8")
             records, units = _segment(work, w, text)
@@ -209,7 +249,7 @@ def cmd_build(_: argparse.Namespace) -> int:
                 audit[f"{w['id']}#index"] = {"work": work["id"], **audit_numbering(index_units, expected)}
                 numbered[f"{w['id']}#index"] = index_units
             if units is None:
-                audit[w["id"]] = {"work": work["id"], "found": len(records)}
+                audit[w["id"]] = {"work": work["id"], "found": len(records), **unit_audit(records)}
             else:
                 audit[w["id"]] = {"work": work["id"], **audit_numbering(units, expected)}
                 if w.get("segmenter", work["segmenter"])["kind"] == "verse_block":
@@ -223,7 +263,7 @@ def cmd_build(_: argparse.Namespace) -> int:
             print(f"{w['id']:40} {len(records):>4} records")
         if len(numbered) > 1:
             audit[f"consensus:{work['id']}"] = consensus_numbering(numbered, expected)
-    _dump(CORPUS / "audit.json", dict(sorted(audit.items())))
+    _dump(CORPUS / "audit.json", merge_audit(_load(CORPUS / "audit.json"), audit, skipped))
     return 0
 
 
@@ -493,7 +533,6 @@ def cmd_labels(_: argparse.Namespace) -> int:
 def cmd_bank_review(_: argparse.Namespace) -> int:
     """Bank verdict per candidate label (LFS), English cross-check report, triage of the review sample (gold stays human)."""
     import gzip
-    from collections import Counter
 
     def read(p: Path) -> list[dict]:
         with gzip.open(p, "rt", encoding="utf-8") as f:

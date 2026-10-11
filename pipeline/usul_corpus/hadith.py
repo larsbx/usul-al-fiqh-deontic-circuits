@@ -198,6 +198,9 @@ def irwa_matns(text: str) -> dict[int, str]:
 SHINGLE = 3      # consecutive content words shared by matn and excerpt
 STOPWORDS = 40   # the most frequent words of matns and excerpts together (formulae, particles)
 GENERIC = 3      # a shingle found in more matns than this is a formula, not evidence
+# The record types the review covers. Stopwords are drawn from the joined excerpts, so widening this
+# re-proposes candidates everywhere: masāʾil and fatāwā enter as their own reviewed tranche.
+JOIN_TYPES = ("qaida", "far", "sharh", "hadd")
 
 
 def _words(s: str) -> list[str]:
@@ -207,9 +210,10 @@ def _words(s: str) -> list[str]:
 
 def join_candidates(text: str, records: list[dict]) -> list[dict]:
     """Candidate (al-Irwāʾ entry, record) pairs: the quoted matn's prefix inside the excerpt, or a
-    shared run of content words. Candidates are proposals; `corpus/hadith/irwa_join_review.json`
+    shared run of content words, over the `JOIN_TYPES` records. Candidates are proposals; `corpus/hadith/irwa_join_review.json`
     accepts or rejects each one with a reason."""
     from .arabic import letters
+    records = [r for r in records if r["record_type"] in JOIN_TYPES]
     verdicts = dict(irwa_entries(text))
     matns = {n: m for n, m in irwa_matns(text).items() if n in verdicts}
     freq = Counter(w for m in matns.values() for w in _words(m))
