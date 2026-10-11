@@ -166,3 +166,17 @@ def test_a_heading_can_be_the_question():
     assert [(u.question, u.answer) for u in units] == [
         ("السائل أحمد يقول: ما حكم كذا؟", "فأجاب رحمه الله تعالى: لا يجوز. ***"),
         ("وهذه سائلة تقول: وما حكم كذا؟", "فأجاب رحمه الله تعالى: يجوز.")]
+
+
+MBI = r"(?:\((?=\d)|(?=\d+\s*-\s*$))(?P<n>\d+)\s*[-_]?\s*(?:$|(?=[^\W\d_]|\())"  # as in corpus/registry.json
+
+
+def test_ordered_entries_keep_only_the_increasing_run_of_numbers():
+    """Fatāwā Muḥammad b. Ibrāhīm: a letter's own enumeration «(1- …)» and references «(20547 وتاريخ …)»
+    look like openings; only the collection's increasing numbering opens entries."""
+    text = ("#META#Header#End#\n# (1002 كذا) نص\n# (1003- كذا) نص\n# (1004- أخذ الزكاة) من محمد بن إبراهيم إلى فلان\n# (1- أولا كذا)\n### | 2- \n# ثانيا كذا\n"
+            "# (20547 وتاريخ 3-4-1375ه)\n### | 1005 - \n# ما يفعله بعض القبائل\n# (1006 الثالثة) والجواب: لا.\nPageV01P001\n")
+    units = segment_entries(text, MBI, ordered=True)
+    assert [u.number for u in units] == [1002, 1003, 1004, 1005, 1006]
+    assert "2- ثانيا كذا (20547 وتاريخ" in units[2].text and units[3].text == "1005 - ما يفعله بعض القبائل"
+    assert [u.number for u in segment_entries(text, MBI)] == [1002, 1003, 1004, 1, 2, 20547, 1005, 1006]

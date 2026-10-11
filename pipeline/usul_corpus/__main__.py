@@ -166,7 +166,7 @@ SEGMENTERS = {
 # Line-segmented kinds: one record per unit, numbered in order, each with its sha256 receipt.
 UNIT_SEGMENTERS = {
     "qa": (lambda text, seg: segment_qa(text, seg.get("question"), seg["answer"], seg.get("question_heading", False)), fatwa_record),
-    "masail": (lambda text, seg: segment_entries(text, seg["start"]), masala_record),
+    "masail": (lambda text, seg: segment_entries(text, seg["start"], seg.get("ordered", False)), masala_record),
     "abwab": (lambda text, seg: segment_abwab(text, seg.get("end")), bab_record),
 }
 

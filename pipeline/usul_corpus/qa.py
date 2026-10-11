@@ -106,21 +106,28 @@ class Entry:
         return hashlib.sha256(self.text.encode()).hexdigest()
 
 
-def segment_entries(text: str, start: str) -> tuple[Entry, ...]:
+def segment_entries(text: str, start: str, ordered: bool = False) -> tuple[Entry, ...]:
     """The ``masail`` segmenter: an entry starts at a line beginning with the work's opening formula
     («قلت لأحمد», «سمعت أحمد», al-Kawsaj's «[1100-]» …) and runs to the next one, or to a section
     heading that is not itself an opening. A named group ``n`` in ``start`` is the printed number.
-    Answers are inline («… قال: …»), so an entry is not split into question and answer."""
+    Answers are inline («… قال: …»), so an entry is not split into question and answer.
+    With ``ordered``, only the longest increasing run of printed numbers opens entries; any other
+    match (a letter's own enumeration, a reference number) stays in the text of its entry, even
+    when printed as a heading."""
+    from .hadith import _longest_increasing
     at = re.compile(start)
     lines = _lines(text)
+    found = [(i, m) for i, (line, _, _) in enumerate(lines) if (m := at.match(line))]
+    number = {i: int(m["n"]) if "n" in m.groupdict() and m["n"] else None for i, m in found}
+    opens = ({i for i, _ in _longest_increasing([(i, n) for i, n in number.items() if n is not None])}
+             if ordered else set(number))
     units, cur = [], None
-    for line, page, heading in lines + [("", None, True)]:
-        m = at.match(line)
-        if cur and (m or heading):
-            units.append(Entry(" ".join(l for l, _ in cur), cur[0][1], cur[-1][1], number))
+    for i, (line, page, heading) in enumerate(lines + [("", None, True)]):
+        if cur and (i in opens or (heading and i not in number)):
+            units.append(Entry(" ".join(l for l, _ in cur), cur[0][1], cur[-1][1], number[first]))
             cur = None
-        if m:
-            cur, number = [], int(m["n"]) if "n" in m.groupdict() and m["n"] else None
+        if i in opens:
+            cur, first = [], i
         if cur is not None:
             cur.append((line, page))
     return tuple(units)

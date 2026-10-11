@@ -41,6 +41,7 @@
                          "question_heading": {"type": "boolean", "description": "qa: a section heading is a question line too"},
                          "start": {"type": "string", "description": "masail: regex an entry's opening line starts with; a named group n is the printed number"},
                          "end": {"type": "string", "description": "abwab: regex for the heading that closes the matn (closing matter, bibliography)"},
+                         "ordered": {"type": "boolean", "description": "masail: only the longest increasing run of printed numbers opens entries"},
                          "anchor_step": {"type": "integer", "minimum": 1, "description": "numbered: full-length reads may bridge gaps up to this size"},
                          "index": {"type": "boolean", "description": "also read the closing index «marker <ordinal>: statement»"}}
         },
