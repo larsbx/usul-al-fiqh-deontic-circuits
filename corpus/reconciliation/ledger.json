@@ -2744,36 +2744,20 @@
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f002",
       "grades": [
-        "wajh",
-        "wajh"
+        "ashab",
+        "ashab"
       ],
       "jam": null,
       "naskh": null,
-      "note": "The later madhhab validates both where the free wife does not suffice him; the record leaves open whether she does, so no farq is cited for the reading's side.",
+      "note": "Annotated for the branch where the free woman would suffice him, the only one with a bar; there al-Inṣāf quotes Ibn Rajab's fāʾida for the slave woman's voidness, a single author against al-Qāḍī and Abū al-Khaṭṭāb. The madhhab's «صح» is for the other branch and is not evidence here.",
       "evidence": [
         {
-          "ref": "src:openiti-insaf-shamela21609/v08:p143",
-          "excerpt_ar": "والرواية الثانية: لا يجوز. قطع به ابن أبي موسى، وغيره. فعلى المذهب: لو جمع بينهما في عقد واحد: صح.",
-          "position": 0,
-          "grade": "tashih",
-          "who": "al-Mardāwī, al-Inṣāf",
-          "note": "On the madhhab (that one whom a free wife does not suffice may marry a slave woman on her), if he combines a free woman and a slave woman in one contract it is valid."
-        },
-        {
-          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p087",
-          "excerpt_ar": "(ولو جمع بينهما) أي بين حرة لا تعفه وأمة بشرطه (في عقد واحد) صح كما لو كانا في عقدين",
-          "position": 0,
-          "grade": "jazm",
-          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
-          "note": "Kashshāf (on the Iqnāʿ) states decisively that combining a free woman who does not suffice him and a slave woman (the two conditions met) in one contract is valid, as in two contracts."
-        },
-        {
-          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p188",
-          "excerpt_ar": "وأن تزوج حرة فلم تعفه ولم يجد طولا لحرة أخرى جاز له نكاح أمة ولو جمع بينهما في عقد واحد",
-          "position": 0,
-          "grade": "jazm",
-          "who": "al-Ḥajjāwī, al-Iqnāʿ",
-          "note": "The Iqnāʿ matn decisively permits marrying the slave woman even when combined with the free woman in one contract."
+          "ref": "src:openiti-insaf-shamela21609/v08:p144",
+          "excerpt_ar": "لو تزوج حر خائف العنت غير واجد للطول حرة تعفه بانفرادها، وأمة في عقد واحد: صح نكاح الحرة وحدها. وهو ظاهر كلام القاضي في المجرد. وهو أصح.",
+          "position": 1,
+          "grade": "ashab",
+          "who": "Ibn Rajab's fāʾida, quoted in al-Inṣāf",
+          "note": "Where the free woman alone would suffice him: only her marriage valid, «وهو ظاهر كلام القاضي في المجرد. وهو أصح», a single author's preference."
         }
       ]
     },

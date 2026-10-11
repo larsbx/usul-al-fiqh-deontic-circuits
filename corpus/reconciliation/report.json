@@ -2,13 +2,13 @@
   "entries": 156,
   "stages": {
     "jam": 19,
-    "tarjih": 129,
-    "tawaqquf": 8
+    "tarjih": 128,
+    "tawaqquf": 9
   },
   "standing": {
-    "against_reading": 68,
+    "against_reading": 67,
     "for_reading": 80,
-    "tawaqquf": 8
+    "tawaqquf": 9
   },
   "worklist": {
     "asl_zahir": [
@@ -126,9 +126,6 @@
     ],
     "rukhsa_under_doubt": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f001"
-    ],
-    "ruling_with_bar": [
-      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f002"
     ],
     "running_water": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001"

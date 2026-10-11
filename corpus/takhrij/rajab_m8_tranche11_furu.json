@@ -187,16 +187,16 @@
       "expected": false,
       "positions": [
         {
-          "who": "wajh: valid",
+          "who": "al-Qāḍī, Abū al-Khaṭṭāb (their Khilāfs): both valid",
           "ruling": true
         },
         {
-          "who": "wajh: not",
+          "who": "wajh: the slave woman's void, the free woman's marriage coinciding with it (ẓāhir of al-Qāḍī in al-Mujarrad; Ibn Rajab: «وهو أصح»)",
           "ruling": false
         }
       ],
       "matches_madhhab": false,
-      "note": "One without the means for a free woman and fearing sin who marries a free woman and a slave woman in one contract: is the slave woman's marriage valid with the free woman's? «على وجهين». The record goes on to the husband of his father's slave woman: «when my father dies you are divorced». The later madhhab validates both where the free wife does not suffice him («فعلى المذهب: لو جمع بينهما في عقد واحد: صح»; al-Iqnāʿ, Kashshāf), the free woman then no bar; Ibn Rajab's fāʾida, quoted in al-Inṣāf, voids the slave's where the free woman alone would suffice. The record does not say which."
+      "note": "One without the means for a free woman and fearing sin who marries a free woman and a slave woman in one contract: is the slave woman's marriage valid with the free woman's? «على وجهين». The khilāf arises only where the free woman would suffice him, for only then is her marriage a bar to coincide with the slave woman's; that is the branch annotated (the bar present). Where she would not suffice there is no bar, and the madhhab validates both («فعلى المذهب: لو جمع بينهما في عقد واحد: صح»; al-Iqnāʿ, Kashshāf), as the reading gives with no bar. On the annotated branch Ibn Rajab's fāʾida, quoted in al-Inṣāf, holds only the free woman's valid, «وهو ظاهر كلام القاضي في المجرد. وهو أصح», against al-Qāḍī and Abū al-Khaṭṭāb in their Khilāfs. The record goes on to the husband of his father's slave woman: «when my father dies you are divorced»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f003",
@@ -224,21 +224,21 @@
       "encoder": "ruling_with_bar",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "with_bar": true
+        "with_bar": false
       },
-      "expected": false,
+      "expected": true,
       "positions": [
         {
-          "who": "al-Qāḍī (al-Jāmiʿ, al-Khilāf), al-Qāḍī Yaʿqūb, Ibn ʿAqīl, «قياس قول صاحب المغني»: the second oath not concluded",
-          "ruling": false
+          "who": "«في المشهور عند الأصحاب»: divorced by the repetition, it being speech",
+          "ruling": true
         },
         {
-          "who": "al-Muḥarrar: concluded, the oath preceding the divorce",
-          "ruling": true
+          "who": "Ibn ʿAqīl (ʿUmad al-adilla), «قياس المذهب عندي»; Ibn Rajab: «وهذا أقوى»: not, the repetition confirming the first oath",
+          "ruling": false
         }
       ],
       "matches_madhhab": true,
-      "note": "The unconsummated wife: «if I speak to you, you are divorced», repeated: divorced by the repetition «في المشهور عند الأصحاب» (Ibn ʿAqīl: «قياس المذهب عندي أنه لا يحنث»). Is a second oath concluded by it? Not (al-Qāḍī and his followers; al-Mughnī's reason: «فيقع انعقاد اليمين مع البينونة ... والأصح عنده عدمه»), or concluded (al-Muḥarrar)."
+      "note": "The unconsummated wife: «if I speak to you, you are divorced», then repeated: divorced by the repetition «لأنه كلام في المشهور عند الأصحاب»; Ibn ʿAqīl, «قياس المذهب عندي أنه لا يحنث», the repetition of the oath's own kind and confirming it, «وهذا أقوى». The later madhhab: divorced once (al-Inṣāf, «طلقت واحدة ... على الصحيح من المذهب»; Kashshāf). The record's follow-on question, whether a second oath is concluded by the repetition, is where the bar coincides: not concluded (al-Qāḍī and his followers; al-Mughnī: «فيقع انعقاد اليمين مع البينونة ... والأصح عنده عدمه»; al-Inṣāf, «على الصحيح من المذهب»), against al-Muḥarrar."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f005",

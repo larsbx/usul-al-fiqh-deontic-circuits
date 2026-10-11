@@ -124,7 +124,7 @@ import Usul
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f003 (genuine_ikhtilaf)
 #guard (Usul.Refinements.holdsAgainstBar false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f004 (genuine_ikhtilaf)
-#guard (Usul.Refinements.holdsAgainstBar true) == false
+#guard (Usul.Refinements.holdsAgainstBar false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f005 (genuine_ikhtilaf)
 #guard (Usul.Refinements.holdsAgainstBar false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f006 (genuine_ikhtilaf)
