@@ -1,0 +1,48 @@
+{
+  "register": "research",
+  "status": "candidate",
+  "questions": [
+    {
+      "id": "RQ-01",
+      "title": "A reported ijmāʿ that contradicts the kernel's ruling",
+      "raised_by": "docs/roadmap-parallel-derivation.md Part II (lane E, position inventories)",
+      "question": "When an ijmāʿ report (Ibn al-Mundhir, Ibn Ḥazm, Ibn ʿAbd al-Barr, al-Nawawī …) states a ruling that the kernel's reading contradicts, is the case an encoding error against the reading, or is the report graded evidence, and if so where in the reconciliation grade order?",
+      "policy_in_force": "As is (human instruction, 2026-10-11): an ijmāʿ report enters the reconciliation ledger as evidence and changes no case's class; it is not an encoding error and has no grade of its own yet. Lane E records reports with their source; nothing is decided from them.",
+      "pins": [
+        "Usul.DalilKind.resort",
+        "Usul.Jadal.RespectsSources",
+        "Usul.Reconcile.Grade"
+      ],
+      "sources": [
+        {
+          "ref": "src:openiti-ilam-shamela11496/v01:p024",
+          "excerpt_ar": "وقال عبد الله بن أحمد بن حنبل: سمعت أبي يقول: ما يدعي فيه الرجل الإجماع فهو كذب، من ادعى الإجماع فهو كاذب، لعل الناس اختلفوا، ما يدريه، ولم ينته إليه؟ فليقل: لا نعلم الناس اختلفوا",
+          "note": "Aḥmad's naṣṣ, cited by Ibn al-Qayyim: a claimed ijmāʿ is at most «we know of no disagreement»."
+        },
+        {
+          "ref": "src:openiti-majmufatawa-shamela7289/v03:p157",
+          "excerpt_ar": "والإجماع الذي ينضبط: هو ما كان عليه السلف الصالح؛ إذ بعدهم كثر الاختلاف وانتشرت الأمة.",
+          "note": "Ibn Taymiyya: the ijmāʿ that can be ascertained is that of the salaf."
+        },
+        {
+          "ref": "src:openiti-ibnhazm-maratibijma-shamela12446/v01:p012",
+          "excerpt_ar": "وصفة الإجماع هو ما تيقن أنه لا خلاف فيه بين أحد من علماء الإسلام",
+          "note": "Ibn Ḥazm's criterion for the reports in Marātib al-Ijmāʿ: certainty that no scholar disagrees; Ibn Taymiyya's Naqd Marātib al-Ijmāʿ (not yet registered) disputes many of them."
+        }
+      ],
+      "alternatives": [
+        "Encoding error: a sound ijmāʿ binds, so a reading that contradicts a reported ijmāʿ is wrong (`#guard expr != r`), as for a text.",
+        "Graded evidence above taṣḥīḥ: ijmāʿ prevails within the reconciliation order but is defeasible when the report is shown unsound (a disagreement is found).",
+        "Graded by kind: a report of the salaf's agreement (Ibn Taymiyya's «الإجماع الذي ينضبط») outranks a later «لا نعلم فيه خلافا», which Aḥmad's naṣṣ treats as a claim of no known disagreement, not ijmāʿ.",
+        "No grade: ijmāʿ reports are context for the position inventory only, and the reconciliation order stays within the madhhab."
+      ],
+      "research": [
+        "Register and fetch Ibn Taymiyya's Naqd Marātib al-Ijmāʿ (OpenITI 0750AH, Shamela 8630) and align its objections with Ibn Ḥazm's Marātib entries.",
+        "Classify the ijmāʿ reports lane E collects: «أجمعوا» vs «لا نعلم فيه خلافا» vs «بلا خلاف», and who reports them; measure how often a later source records a disagreement.",
+        "Reconcile the kernel's three placements: DalilKind.resort puts ijmāʿ with naṣṣ (Aḥmad's order of resort); Jadal.RespectsSources puts it above naṣṣ among masālik al-ʿilla (al-Ṭūfī); Reconcile.Grade has no ijmāʿ.",
+        "Collect the Ḥanbalī uṣūl positions on the authority of a claimed ijmāʿ and on ijmāʿ sukūtī (al-ʿUdda, al-Tamhīd, al-Wāḍiḥ, al-Musawwada, Sharḥ al-Kawkab: all registered)."
+      ],
+      "status": "open-research"
+    }
+  ]
+}

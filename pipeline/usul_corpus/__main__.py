@@ -10,6 +10,8 @@
     python -m usul_corpus m5-commands [--fetch-source]  # replay candidate capability receipts
     python -m usul_corpus docs        # render the dossier and glossary pages from corpus/dossier
     python -m usul_corpus reception   # count the citers' citations of each cited work (cached citers only)
+    python -m usul_corpus mentions [--review N] [--import FILE] # citation-mention dataset → .cache/mentions
+    python -m usul_corpus texts       # stage verified public-domain witness texts into corpus/texts (Git LFS)
     python -m usul_corpus ocr [--work ID] [--pages A-B] [--jobs N]
     python -m usul_corpus fatawa [--lang L] [--refresh]   # IslamQA offline dumps → data/islamqa/answers/*.jsonl.gz
     python -m usul_corpus labels      # candidate ḥukm labels + splits for the Arabic answers → data/islamqa/labels
@@ -32,7 +34,8 @@ from .fatawa import answers, fold, snapshot_witnesses, write_jsonl_gz
 from .labels import label, merge_review, report, review_sample
 from .bank_review import STAGES, en_vote, lean_guards, review as bank_review
 from .oracle import NaiveBayes, Retriever, confidence, evaluate, features
-from .fetch import fetch
+from .fetch import fetch, merge_lock
+from .texts import publishable, restore, stage
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
 from .openiti import parse_markdown
@@ -52,7 +55,14 @@ CORPUS = ROOT / "corpus"
 CACHE = ROOT / ".cache" / "corpus"
 ISLAMQA = ROOT / "data" / "islamqa"
 DOSSIER = CORPUS / "dossier" / "refinements.json"
+
+
+def load_dossier() -> dict:
+    """The committed dossier plus every shard's entries (``corpus/dossier/entries/*.json``)."""
+    from .shards import with_fragments
+    return with_fragments(_load(DOSSIER), DOSSIER.parent / "entries", key="id")
 GLOSSARY = CORPUS / "dossier" / "glossary.json"
+TEXTS = CORPUS / "texts"
 FETCHABLE = {"located", "located_ocr"}
 
 
@@ -71,15 +81,23 @@ def _works(only: str | None) -> list[dict]:
 
 
 def cmd_fetch(args: argparse.Namespace) -> int:
-    lock = _load(CORPUS / "lock.json").get("witnesses", {})
+    changed = []
     for work in _works(args.work):
         for w in work["witnesses"]:
             if w.get("quality") == "pdf_only" or (w.get("fetch") == "on_demand" and not args.work):
                 continue
-            lock[w["id"]] = entry = fetch(w, CACHE, args.max_pages, args.refresh)
-            _dump(CORPUS / "lock.json", {"witnesses": dict(sorted(lock.items()))})
-            print(f"{w['id']:40} {entry['bytes']:>10} B  {entry['sha256'][:12]}")
-    return 0
+            lock = _load(CORPUS / "lock.json").get("witnesses", {})
+            if not args.refresh and not (CACHE / f"{w['id']}.txt").exists():
+                restore(w["id"], lock, TEXTS, CACHE)  # a committed public-domain text saves the download
+            entry, drift = merge_lock(lock.get(w["id"]), fetch(w, CACHE, args.max_pages, args.refresh))
+            changed += [w["id"]] * drift
+            # read-modify-write per witness: a fetch that runs for hours never writes back a stale lock
+            lock = _load(CORPUS / "lock.json").get("witnesses", {})
+            _dump(CORPUS / "lock.json", {"witnesses": dict(sorted({**lock, w["id"]: entry}.items()))})
+            print(f"{w['id']:40} {entry['bytes']:>10} B  {entry['sha256'][:12]}{'  CHANGED since pinned' if drift else ''}")
+    if changed:
+        print(f"content changed since pinned (see git diff corpus/lock.json): {', '.join(changed)}", file=sys.stderr)
+    return 1 if changed else 0
 
 
 def _pdf_witnesses(only: str | None) -> list[tuple[dict, dict]]:
@@ -245,9 +263,9 @@ def _lean_names() -> list[str]:
     """Lean constants named by the Σ map and by every catalogue proposal, in order."""
     sigma = [link["lean"] for link in _load(CORPUS / "signature_map.json")["links"]]
     proposals = [n for p in sorted((CORPUS / "proposals").glob("*.json")) for r in _load(p)["rules"] for n in r["lean"]]
-    review = [n for p in sorted((CORPUS / "review").glob("*.json")) for n in _review_names(_load(p))]
+    review = [n for p in sorted((CORPUS / "review").glob("*.json")) for n in _review_names(_load(p))]  # IQ and research registers
     citations = [n for p in sorted((CORPUS / "citations").glob("*.json")) for ns in _load(p)["formalises"].values() for n in ns]
-    dossier = [n for e in _load(DOSSIER)["entries"] for n in e["lean"]]
+    dossier = [n for e in load_dossier()["entries"] for n in e["lean"]]
     glossary = [n for t in _load(GLOSSARY)["terms"] for n in t.get("lean", [])]
     m8 = [n for p in sorted((CORPUS / "worklists").glob("*_plan.json"))
           for q in _load(p)["selection"] for n in q["reading"]]
@@ -255,7 +273,10 @@ def _lean_names() -> list[str]:
 
 
 def _review_names(reg: dict) -> list[str]:
-    """Lean constants a review register relies on: its process, its pins, its transported laws."""
+    """Lean constants a review register relies on: its process, its pins, its transported laws.
+    The research register has no process: only its pins."""
+    if reg.get("register") == "research":
+        return [n for q in reg["questions"] for n in q["pins"]]
     return [*reg["process"]["lean"],
             *(n for q in reg["questions"] for n in q["pins"]),
             *(n for q in reg["questions"] for n in q.get("decision", {}).get("lean", [])),
@@ -287,7 +308,7 @@ def cmd_reconcile(args: argparse.Namespace) -> int:
     if args.draft:
         print(json.dumps(reconcile.draft(cases, ledger), ensure_ascii=False, indent=1))
         return 0
-    if errs := reconcile.check(cases, ledger, _load(DOSSIER)):
+    if errs := reconcile.check(cases, ledger, load_dossier()):
         print("\n".join(errs), file=sys.stderr)
         return 1
     (SIGNATURE_LEAN.parent / "Reconcile.lean").write_text(reconcile.lean_file(cases, ledger), encoding="utf-8")
@@ -344,7 +365,8 @@ def docs_pages() -> dict[Path, str]:
     glossary = _load(GLOSSARY)
     from .reception import render_counts
     titles = {w["id"]: (w["title_tr"], w.get("reception", {}).get("genre", "")) for w in _load(CORPUS / "registry.json")["works"]}
-    return {ROOT / "docs/architecture/dossier.md": render_dossier(_load(DOSSIER), records, {t["key"]: t for t in glossary["terms"]}),
+    titles |= {a["id"]: (a["name_tr"], "") for a in _load(CORPUS / "reception" / "authors.json")["authors"]}
+    return {ROOT / "docs/architecture/dossier.md": render_dossier(load_dossier(), records, {t["key"]: t for t in glossary["terms"]}),
             ROOT / "docs/glossary.md": render_glossary(glossary, records),
             ROOT / "docs/architecture/reception-counts.md": render_counts(_load(CORPUS / "reception" / "report.json"), titles)}
 
@@ -356,16 +378,72 @@ def cmd_docs(_: argparse.Namespace) -> int:
 
 
 def cmd_reception(_: argparse.Namespace) -> int:
-    from .reception import build
-    rep = build(_load(CORPUS / "registry.json"), CACHE)
+    from .reception import authors, build
+    rep = build(_load(CORPUS / "registry.json"), CACHE, authors(CORPUS / "reception" / "authors.json"))
     _dump(CORPUS / "reception" / "report.json", rep)
-    for work, c in sorted(rep["counts"].items(), key=lambda kv: -kv[1]["total"]):
+    for work, c in sorted({**rep["counts"], **rep["authors"]}.items(), key=lambda kv: -kv[1]["total"]):
         print(f"{work:40} {c['total']:>6}  {c['by_scholar']}")
     print(f"missing citers: {rep['missing'] or 'none'}", file=sys.stderr)
     return 0
 
 
+MENTIONS = ROOT / ".cache" / "mentions"
+GOLD = CORPUS / "mentions" / "gold.jsonl"
+
+
+def _mention_tasks() -> tuple:
+    from .mentions import Task
+    from .reception import authors, lexicon
+    return (Task("work", lexicon(_load(CORPUS / "registry.json")["works"]), cue_single=True),
+            Task("author", authors(CORPUS / "reception" / "authors.json"), cue_single=False))
+
+
+def cmd_mentions(args: argparse.Namespace) -> int:
+    """Candidates + rule/gold labels per task → .cache/mentions; review queue; committed summary."""
+    from .mentions import candidates, choices, merge_gold, read_gold, review_queue, summary, with_gold, write_gold, write_jsonl
+    tasks = {t.name: t for t in _mention_tasks()}
+    gold = read_gold(GOLD)
+    if args.import_:
+        reviewed = [json.loads(l) for l in Path(args.import_).read_text(encoding="utf-8").splitlines() if l.strip()]
+        for name, task in tasks.items():
+            gold = merge_gold(gold, (r for r in reviewed if r["id"].startswith(f"{name}:")), task)
+        write_gold(GOLD, gold)
+    citers = [x["id"] for w in _load(CORPUS / "registry.json")["works"]
+              if w.get("reception", {}).get("role") == "citer" for x in w["witnesses"]]
+    texts = {wid: (CACHE / f"{wid}.txt").read_text(encoding="utf-8") for wid in citers if (CACHE / f"{wid}.txt").exists()}
+    rows = {name: with_gold([r for wid, text in sorted(texts.items()) for r in candidates(task, wid, text)], gold)
+            for name, task in tasks.items()}
+    for name, rs in rows.items():
+        write_jsonl(MENTIONS / f"{name}.jsonl", rs)
+        for split in ("train", "dev", "test"):
+            write_jsonl(MENTIONS / f"{name}.{split}.jsonl",
+                        ({**r, "text": f"{r['left']} [[{r['surface']}]] {r['right']}"}
+                         for r in rs if r["split"] == split and r["label"] is not None))
+        write_jsonl(MENTIONS / f"review-{name}.jsonl",
+                    ({**r, "choices": list(choices(tasks[name], r["surface"]))} for r in review_queue(rs, args.review)))
+    seen = {r["id"] for rs in rows.values() for r in rs}
+    rep = {"citers": sorted(texts), "missing": sorted(set(citers) - set(texts)),
+           "gold": len(gold), "gold_unmatched": sorted(set(gold) - seen), **summary(rows)}
+    _dump(CORPUS / "mentions" / "summary.json", rep)
+    print(json.dumps({k: {x: v[x] for x in ("candidates", "by_source")} for k, v in rep.items() if k in tasks}, ensure_ascii=False))
+    print(f"dataset and review queues → {MENTIONS.relative_to(ROOT)}", file=sys.stderr)
+    return 0
+
+
+def cmd_texts(_: argparse.Namespace) -> int:
+    """Copy every verified, cached public-domain witness text into corpus/texts."""
+    rep = stage(publishable(_load(CORPUS / "registry.json")), _load(CORPUS / "lock.json")["witnesses"], CACHE, TEXTS)
+    print(json.dumps({k: len(v) for k, v in rep.items()}))
+    for k in ("missing", "mismatch"):
+        if rep[k]:
+            print(f"{k}: {', '.join(rep[k])}", file=sys.stderr)
+    return 1 if rep["mismatch"] else 0
+
+
 def cmd_signature(_: argparse.Namespace) -> int:
+    from .shards import readings_index
+    readings = ROOT / "formal" / "lean" / "Usul" / "Readings"
+    (readings.parent / "Readings.lean").write_text(readings_index(readings), encoding="utf-8")
     SIGNATURE_LEAN.write_text(signature_lean(_lean_names()), encoding="utf-8")
     SCALE_LEAN.write_text(signature_lean(hadith_lean_names(), "Hadith"), encoding="utf-8")
     DAIFA_LEAN.write_text(hadith.daifa_lean(CORPUS), encoding="utf-8")
@@ -593,6 +671,11 @@ def main(argv: list[str] | None = None) -> int:
     m5.set_defaults(run=cmd_m5_commands)
     sub.add_parser("docs").set_defaults(run=cmd_docs)
     sub.add_parser("reception").set_defaults(run=cmd_reception)
+    sub.add_parser("texts").set_defaults(run=cmd_texts)
+    mn = sub.add_parser("mentions")
+    mn.add_argument("--review", type=int, default=300, help="rows per task in the review queue")
+    mn.add_argument("--import", dest="import_", metavar="FILE", help="reviewed JSONL rows to merge into the gold labels")
+    mn.set_defaults(run=cmd_mentions)
     sub.add_parser("labels").set_defaults(run=cmd_labels)
     sub.add_parser("bank-review").set_defaults(run=cmd_bank_review)
     sub.add_parser("oracle").set_defaults(run=cmd_oracle)

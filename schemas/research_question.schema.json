@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/research_question.schema.json",
+  "title": "Research register",
+  "description": "Questions the method surfaces that are neither a reading of one of al-Saʿdī's rules (those go to the IQ register) nor decidable by the bank's own procedure. Each records the policy in force until it is researched and decided. Nothing here adopts anything.",
+  "type": "object",
+  "required": ["register", "status", "questions"],
+  "additionalProperties": false,
+  "properties": {
+    "register": {"const": "research"},
+    "status": {"const": "candidate"},
+    "questions": {"type": "array", "items": {"$ref": "#/$defs/question"}}
+  },
+  "$defs": {
+    "question": {
+      "type": "object",
+      "required": ["id", "title", "raised_by", "question", "policy_in_force", "pins", "sources", "alternatives", "research", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "pattern": "^RQ-[0-9]{2}$"},
+        "title": {"type": "string", "minLength": 1},
+        "raised_by": {"type": "string", "description": "the document or commit that surfaced it"},
+        "question": {"type": "string", "minLength": 1},
+        "policy_in_force": {"type": "string", "minLength": 1, "description": "what the pipeline does until a decision; set by a human"},
+        "pins": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^Usul\\."}},
+        "sources": {"type": "array", "minItems": 1, "items": {
+          "type": "object", "required": ["ref", "excerpt_ar", "note"], "additionalProperties": false,
+          "properties": {"ref": {"type": "string", "pattern": "^src:[a-z0-9-]+/v[0-9]+:p[0-9]+$"}, "excerpt_ar": {"type": "string", "minLength": 1, "maxLength": 400}, "note": {"type": "string", "minLength": 1}}}},
+        "alternatives": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+        "research": {"type": "array", "minItems": 1, "items": {"type": "string"}, "description": "concrete next steps"},
+        "status": {"enum": ["open-research", "ready-for-decision", "decided", "withdrawn"]},
+        "decision": {"type": "object", "required": ["by", "date", "adopted"], "properties": {"by": {"const": "human"}, "date": {"type": "string"}, "adopted": {"type": "string"}}}
+      }
+    }
+  }
+}

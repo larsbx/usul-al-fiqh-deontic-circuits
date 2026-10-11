@@ -1,0 +1,120 @@
+{
+  "citers": [
+    "openiti-ibnbaz-majmufatawa-shamela21537",
+    "openiti-ibnbaz-nuraladarb-shamela107",
+    "openiti-ibnuthaymin-majmufatawa-shamela12293",
+    "openiti-ibnuthaymin-nuraladarb-shamela2300",
+    "shamela-10649",
+    "shamela-11122",
+    "shamela-1602",
+    "shamela-22592",
+    "shamela-9945"
+  ],
+  "missing": [],
+  "gold": 0,
+  "gold_unmatched": [],
+  "author": {
+    "candidates": 4783,
+    "by_source": {
+      "rule": 4273,
+      "unlabelled": 510
+    },
+    "labels": {
+      "buhuti": 31,
+      "hajjawi": 14,
+      "harb": 4,
+      "ibn_abd_al_barr": 142,
+      "ibn_hajar": 352,
+      "ibn_hazm": 249,
+      "ibn_muflih": 18,
+      "ibn_mundhir": 100,
+      "ibn_najjar": 8,
+      "ibn_qayyim": 709,
+      "ibn_qudama": 75,
+      "ibn_rajab": 69,
+      "ibn_rushd": 4,
+      "ibn_taymiyya": 1837,
+      "kawsaj": 6,
+      "khattabi": 70,
+      "majd": 21,
+      "mardawi": 11,
+      "muhammad_ibn_ibrahim": 17,
+      "nawawi": 297,
+      "none": 23,
+      "qannawji": 5,
+      "sanani": 46,
+      "shams_ibn_qudama": 4,
+      "shawkani": 161
+    },
+    "splits": {
+      "dev": 434,
+      "test": 407,
+      "train": 3432
+    },
+    "rule_vs_gold": {
+      "compared": 0,
+      "agree": 0
+    }
+  },
+  "work": {
+    "candidates": 2863,
+    "by_source": {
+      "rule": 1300,
+      "unlabelled": 1563
+    },
+    "labels": {
+      "abu_dawud.masail_ahmad": 2,
+      "bali.ikhtiyarat": 20,
+      "buhuti.rawd_murbi": 21,
+      "buhuti.sharh_muntaha": 4,
+      "burhan_ibn_muflih.mubdi": 3,
+      "hajjawi.iqna": 24,
+      "hajjawi.zad_mustaqni": 40,
+      "ibn_abd_al_barr.istidhkar": 2,
+      "ibn_abd_al_barr.tamhid": 10,
+      "ibn_hajar.bulugh": 150,
+      "ibn_hajar.fath_bari": 77,
+      "ibn_hajar.talkhis_habir": 3,
+      "ibn_hazm.maratib_ijma": 2,
+      "ibn_hazm.muhalla": 59,
+      "ibn_muflih.furu": 75,
+      "ibn_mundhir.awsat": 2,
+      "ibn_najjar.muntaha": 10,
+      "ibn_qayyim.ahkam_ahl_dhimma": 16,
+      "ibn_qayyim.badai_fawaid": 7,
+      "ibn_qayyim.ighatha": 17,
+      "ibn_qayyim.ilam": 34,
+      "ibn_qayyim.turuq_hukmiyya": 11,
+      "ibn_qayyim.zad_maad": 155,
+      "ibn_qudama.kafi": 10,
+      "ibn_qudama.mughni": 144,
+      "ibn_qudama.muqni": 13,
+      "ibn_qudama.umda": 4,
+      "ibn_rajab.taqrir_qawaid": 5,
+      "ibn_rushd.bidaya": 6,
+      "ibn_taymiyya.fatawa_kubra": 4,
+      "ibn_taymiyya.majmu_fatawa": 71,
+      "khattabi.maalim_sunan": 4,
+      "majd.muharrar": 11,
+      "mardawi.insaf": 32,
+      "nawawi.majmu": 66,
+      "nawawi.sharh_muslim": 10,
+      "none": 15,
+      "qannawji.rawda_nadiyya": 11,
+      "sanani.subul_salam": 34,
+      "shams_ibn_qudama.sharh_kabir": 11,
+      "shawkani.nayl_awtar": 61,
+      "shawkani.sayl_jarrar": 25,
+      "ulama_najd.durar_saniyya": 19
+    },
+    "splits": {
+      "dev": 138,
+      "test": 103,
+      "train": 1059
+    },
+    "rule_vs_gold": {
+      "compared": 0,
+      "agree": 0
+    }
+  }
+}
