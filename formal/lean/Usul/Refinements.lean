@@ -951,6 +951,21 @@ def removedWithPrincipal (general : Bool) : Bool := !general
 office carrying a right of God, «شبيه بنسخ الأحكام لا يثبت قبل بلوغ الناسخ». -/
 def removedBeforeKnowledge (publicOffice : Bool) : Bool := !publicOffice
 
+/-- Qāʿida 55: one with a right to own by annulment or contract does not take by disposing, nor
+does his disposal take effect («المذهب المشهور أنه لا يكون تملكا، ولا ينفذ»), unless the cause of
+his ownership is complete past the other's power to defeat it (the legatee after the death:
+«لأن سبب الملك قد استقر له»), or his own tie never wholly lapsed (the rajʿiyya: «لم يزل النكاح
+عنها بالكلية»). -/
+def disposalTakes (causeComplete tieRemains : Bool) : Bool := causeComplete || tieRemains
+
+/-- Qāʿida 57: a ruling that coincides with what bars it does not hold («المذهب المشهور أنه لا
+يثبت»), against Ibn Ḥāmid. One that coincides only with the bar's cause precedes the bar and holds. -/
+def holdsAgainstBar (withBar : Bool) : Bool := !withBar
+
+/-- Qāʿida 59: contracts fall only on what exists, «وأما الفسوخ فترد على المعدوم حكما واختيارا على
+الصحيح», as in the muṣarrāt. -/
+def annulsNonexistent (annulment : Bool) : Bool := annulment
+
 /-! ## Reconciliation refinements (`corpus/reconciliation/ledger.json`)
 
 Each is a jamʿ: a farq the later works cite, conservative over the earlier reading where the farq
@@ -1044,5 +1059,14 @@ def removedWithPrincipalIn (general ofQadi : Bool) : Bool := removedWithPrincipa
 theorem removedWithPrincipalIn_conservative (g : Bool) :
     removedWithPrincipalIn g false = removedWithPrincipal g := by
   cases g <;> rfl
+
+/-- Qāʿida 59 with the madhhab on the defective thing that perishes: no return, the arsh fixed
+(al-Inṣāf: «وهذا المذهب. وعليه أكثر الأصحاب»), «وسقط الرد لتعذره» (Kashshāf). -/
+def annulsNonexistentIn (annulment defectReturn : Bool) : Bool :=
+  annulsNonexistent annulment && !defectReturn
+
+theorem annulsNonexistentIn_conservative (a : Bool) :
+    annulsNonexistentIn a false = annulsNonexistent a := by
+  cases a <;> rfl
 
 end Usul.Refinements

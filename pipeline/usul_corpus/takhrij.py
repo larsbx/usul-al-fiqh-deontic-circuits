@@ -363,13 +363,27 @@ CORE: dict[str, dict] = {
         sadi=[], qawaid=[RAJAB.format(52)], facts={"mubham": B, "settled": B, "debt_to_third": B},
         out=B, lean="Usul.Refinements.disposeBeforeQabdIn {mubham} {settled} {debt_to_third}",
         py=lambda f: not f["mubham"] and f["settled"] and not f["debt_to_third"]),
+    "right_to_own_disposal": dict(
+        sadi=[], qawaid=[RAJAB.format(55)], facts={"cause_complete": B, "tie_remains": B},
+        out=B, lean="Usul.Refinements.disposalTakes {cause_complete} {tie_remains}",
+        py=lambda f: f["cause_complete"] or f["tie_remains"]),
     "concurrent_condition": dict(
         sadi=[], qawaid=[RAJAB.format(56)], facts={"prior": B, "concurrent": B},
         out=B, lean="Usul.Refinements.conditionMet {prior} {concurrent}",
         py=lambda f: f["prior"] or f["concurrent"]),
+    "ruling_with_bar": dict(
+        sadi=[], qawaid=[RAJAB.format(57)], facts={"with_bar": B},
+        out=B, lean="Usul.Refinements.holdsAgainstBar {with_bar}", py=lambda f: not f["with_bar"]),
     "desisting_at_once": dict(
         sadi=[], qawaid=[RAJAB.format(58)], facts={"foresaw": B},
         out=B, lean="Usul.Refinements.desistIsAct {foresaw}", py=lambda f: f["foresaw"]),
+    "annulment_on_nonexistent": dict(
+        sadi=[], qawaid=[RAJAB.format(59)], facts={"annulment": B},
+        out=B, lean="Usul.Refinements.annulsNonexistent {annulment}", py=lambda f: f["annulment"]),
+    "annulment_without_return": dict(
+        sadi=[], qawaid=[RAJAB.format(59)], facts={"annulment": B, "defect_return": B},
+        out=B, lean="Usul.Refinements.annulsNonexistentIn {annulment} {defect_return}",
+        py=lambda f: f["annulment"] and not f["defect_return"]),
     "deputy_of_principal": dict(
         sadi=[], qawaid=[RAJAB.format(61)], facts={"general": B},
         out=B, lean="Usul.Refinements.removedWithPrincipal {general}", py=lambda f: not f["general"]),

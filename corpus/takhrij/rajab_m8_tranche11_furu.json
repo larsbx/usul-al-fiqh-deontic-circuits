@@ -1,0 +1,428 @@
+{
+  "suite": "m8_rajab_tranche_11",
+  "status": "candidate",
+  "provenance": "M8 eleventh tranche: every far record of Ibn Rajab's qawāʿid 55, 57 and 59, annotated against readings formalised from each qāʿida's own statement (Usul.Refinements). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each on-the-madhhab annotation then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f001",
+      "encoder": "right_to_own_disposal",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "cause_complete": false,
+        "tie_remains": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī (al-Khilāf): neither annulment nor effective",
+          "ruling": false
+        },
+        {
+          "who": "iḥtimāl (al-Mujarrad; Ibn ʿAqīl, al-Fuṣūl): his intercourse is retrieval, as with the rajʿiyya",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "One who sold a slave woman for a slave and finds the slave defective may annul and retrieve her, but may not dispose of what he gave, «لأن ملك الآخر عليه تام مستقر»: his manumission or intercourse is no annulment and does not take effect (al-Qāḍī, al-Khilāf). The iḥtimāl of al-Mujarrad and al-Fuṣūl, intercourse as retrieval like the rajʿiyya's, Ibn Rajab rejects: «وهذا واه جدا فإن الملك عن الرجعية ومن أسلم عليهن لم يزل وهذا قد زال»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f002",
+      "encoder": "right_to_own_disposal",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "cause_complete": false,
+        "tie_remains": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī (al-Khilāf): not effective, not retrieval, the bankrupt's ownership being complete",
+          "ruling": false
+        },
+        {
+          "who": "al-Mujarrad, al-Fuṣūl: intercourse is retrieval",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The seller whose buyer goes bankrupt before paying, the slave woman still there, retrieves her by word «على أصح الوجهين»; a disposal of her first neither takes effect nor retrieves, nor does intercourse (al-Qāḍī, al-Khilāf), «لتمام ملك المفلس». al-Mujarrad and al-Fuṣūl make intercourse retrieval; Ibn Rajab derives the khilāf for all disposals from the bankrupt's restricted ownership."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f003",
+      "encoder": "right_to_own_disposal",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "cause_complete": false,
+        "tie_remains": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the qāʿida's «المذهب المشهور»: no taking",
+          "ruling": false
+        },
+        {
+          "who": "Ibn Rajab's takhrīj: taking, the more so after the demand, «لأن حقه استقر وثبت»",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The shafīʿ's disposal of the share before he owns it: does it stand for his word of taking, the demand, or the taking by hand? Ibn Rajab: «يمكن تخريجه على الخلاف في المسألة قبلها، ولا سيما بعد المطالبة لأن حقه استقر وثبت وانقطع تصرف المشتري». Before any demand the cause is not complete."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f004",
+      "encoder": "right_to_own_disposal",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "cause_complete": false,
+        "tie_remains": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "Aḥmad's naṣṣ (Abū Ṭālib, Ibn Hāniʾ): not a revocation, «وأعتق الأب ما ليس له»",
+          "ruling": false
+        },
+        {
+          "who": "Abū Ḥafṣ al-Barmakī's takhrīj: the manumission valid and a revocation",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The father who gave his son a thing and the son took it, then disposes of it: «المنصوص أن لا»: «لم يجز للأب عتقها حتى يرجع فيها». Abū Ḥafṣ derives a riwāya that the manumission is valid and a revocation; al-Talkhīṣ, intercourse no revocation, and two wujūh on sale and manumission, effective on neither."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f005",
+      "encoder": "right_to_own_disposal",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "cause_complete": false,
+        "tie_remains": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "«على المعروف من المذهب», Aḥmad's naṣṣ in several places: not effective, ownership only by taking",
+          "ruling": false
+        },
+        {
+          "who": "Abū Ḥafṣ's takhrīj (al-Marrūdhī); Abū Bakr, al-Tanbīh: effective",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The father's disposal of his son's property before taking it: not effective «ولم يكن تملكا على المعروف من المذهب», ownership needing the qabḍ «كالاصطياد والاحتشاش». Abū Ḥafṣ derives the manumission's validity from al-Marrūdhī's riwāya; Abū Bakr in al-Tanbīh allows the father's sale, manumission and intercourse."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f006",
+      "encoder": "right_to_own_disposal",
+      "class": "derivable",
+      "facts": {
+        "cause_complete": true,
+        "tie_remains": false
+      },
+      "expected": true,
+      "note": "The legatee's disposal after the death stands for acceptance: «الأظهر قيامه مقامه لأن سبب الملك قد استقر له ... لا يمكن إبطاله ... وهو منصوص عن أحمد»; so the waqf on a named person where acceptance is required. Agency is accepted by the act."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f007",
+      "encoder": "right_to_own_disposal",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "cause_complete": false,
+        "tie_remains": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "riwāya: intercourse is a return, intended or not (the madhhab at al-Qāḍī and his followers)",
+          "ruling": true
+        },
+        {
+          "who": "riwāya: not, built on requiring witnesses («وهو البناء المنصوص»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Whether intercourse takes back a rajʿiyya: two riwāyas, rightly built on whether witnesses are required. Intention: Ibn Manṣūr's riwāya requires it, chosen by Ibn Abī Mūsā; «والمذهب عند القاضي ومن اتبعه خلاف ذلك». «ولكن الرجعية لم يزل النكاح عنها بالكلية»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f000",
+      "encoder": "ruling_with_bar",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "with_bar": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "«هذا المذهب المشهور»: Abū Bakr, Abū Ḥafṣ, al-Qāḍī and his companions: not divorced",
+          "ruling": false
+        },
+        {
+          "who": "Ibn Ḥāmid alone: divorced",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«You are divorced with the end of your ʿidda», or «whenever you bear a child you are divorced» and she bears two in succession: divorced by the first, the ʿidda ending with the second, by which she is not divorced, «هذا المذهب المشهور». With «with my death» she is not divorced (Aḥmad, Muhannā)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f001",
+      "encoder": "ruling_with_bar",
+      "class": "derivable",
+      "facts": {
+        "with_bar": true
+      },
+      "expected": false,
+      "note": "The slave woman's husband: «if I own you, you are divorced», then owns her: not divorced, «قال الأصحاب وجها واحدا», the divorce coinciding with the annulment."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f002",
+      "encoder": "ruling_with_bar",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "with_bar": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī, Abū al-Khaṭṭāb (their Khilāfs): both valid",
+          "ruling": true
+        },
+        {
+          "who": "wajh: the slave woman's void, the free woman's marriage coinciding with it (ẓāhir of al-Qāḍī in al-Mujarrad; Ibn Rajab: «وهو أصح»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "One without the means for a free woman and fearing sin who marries a free woman and a slave woman in one contract: is the slave woman's marriage valid with the free woman's? «على وجهين». The khilāf arises only where the free woman would suffice him, for only then is her marriage a bar to coincide with the slave woman's; that is the branch annotated (the bar present). Where she would not suffice there is no bar, and the madhhab validates both («فعلى المذهب: لو جمع بينهما في عقد واحد: صح»; al-Iqnāʿ, Kashshāf), as the reading gives with no bar. On the annotated branch Ibn Rajab's fāʾida, quoted in al-Inṣāf, holds only the free woman's valid, «وهو ظاهر كلام القاضي في المجرد. وهو أصح», against al-Qāḍī and Abū al-Khaṭṭāb in their Khilāfs. The record goes on to the husband of his father's slave woman: «when my father dies you are divorced»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f003",
+      "encoder": "ruling_with_bar",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "with_bar": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Qāḍī (al-Jāmiʿ, al-Khilāf), Ibn ʿAqīl (al-ʿUmad), Abū al-Khaṭṭāb: divorced, the divorce preceding the annulment",
+          "ruling": true
+        },
+        {
+          "who": "al-Qāḍī (al-Mujarrad), Ibn ʿAqīl (al-Fuṣūl): not, coinciding with the bar",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Married to a slave woman: «if I buy you, you are divorced»: «وفيه الوجهان إن قلنا ينتقل الملك مع الخيار وهو الصحيح», the two wujūh of «when my father dies» (the divorce coinciding with the cause of the annulment, the ownership); if ownership does not pass, divorced «وجها واحدا» (Abū al-Khaṭṭāb). The later madhhab: divorced (al-Inṣāf, ṭalāq: «ويحتمل أن تطلق، وهو المذهب»; al-Furūʿ, al-Muntahā, Kashshāf)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f004",
+      "encoder": "ruling_with_bar",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "with_bar": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "«في المشهور عند الأصحاب»: divorced by the repetition, it being speech",
+          "ruling": true
+        },
+        {
+          "who": "Ibn ʿAqīl (ʿUmad al-adilla), «قياس المذهب عندي»; Ibn Rajab: «وهذا أقوى»: not, the repetition confirming the first oath",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The unconsummated wife: «if I speak to you, you are divorced», then repeated: divorced by the repetition «لأنه كلام في المشهور عند الأصحاب»; Ibn ʿAqīl, «قياس المذهب عندي أنه لا يحنث», the repetition of the oath's own kind and confirming it, «وهذا أقوى». The later madhhab: divorced once (al-Inṣāf, «طلقت واحدة ... على الصحيح من المذهب»; Kashshāf). The record's follow-on question, whether a second oath is concluded by the repetition, is where the bar coincides: not concluded (al-Qāḍī and his followers; al-Mughnī: «فيقع انعقاد اليمين مع البينونة ... والأصح عنده عدمه»; al-Inṣāf, «على الصحيح من المذهب»), against al-Muḥarrar."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f005",
+      "encoder": "ruling_with_bar",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "with_bar": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Qāḍī, Ibn ʿAqīl (al-Fuṣūl): they share, the two gifts coinciding",
+          "ruling": true
+        },
+        {
+          "who": "al-Muḥarrar: the favour executes and the father is not freed, «فقد قارنت المحاباة شرط عتق الأب لا عتقه فنفذت كسبقها»",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A sick man buys his father for nine dinars, all he owns, the father worth six: two gifts, the favour to the seller and the father's manumission (from the third). They share (al-Qāḍī, Ibn ʿAqīl), or the favour precedes and the father is not freed (al-Muḥarrar). The two gifts coincide and neither is barred: the muʿtamad has them share, «فيتحاصان لتقارنهما» (al-Muntahā, Sharḥ al-Muntahā, Kashshāf)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f006",
+      "encoder": "ruling_with_bar",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "with_bar": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "wajh: he takes the whole dower, owning the fifty before the halving",
+          "ruling": true
+        },
+        {
+          "who": "wajh: three quarters, the dower halved and shared",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A dower of a hundred, then khulʿ before consummation for fifty of it: does the husband take it all or three quarters? «ومن نصر الوجه الأول قال تنصف المهر يترتب على الخلع لا يفارقه فقد ملك الخمسين كلها قبل التنصيف، لكن ملكه لها قارن سبب التنصيف». The muʿtamad gives him the whole (al-Iqnāʿ, Kashshāf); al-Inṣāf does not treat it."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f007",
+      "encoder": "ruling_with_bar",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "with_bar": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "riwāya: stopped on the heirs' consent, a gift to an heir",
+          "ruling": false
+        },
+        {
+          "who": "riwāya (al-Marrūdhī, al-Athram, Ṣāliḥ, Ibn Manṣūr, al-Faḍl): from the third",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Marriage in the final illness with more than the fair dower: the favour is stopped on the heirs' consent, or executes from the third (five narrators), perhaps «أن الإرث المقارن للعطية لا يمنع نفوذها». That a gift to one who becomes an heir counts from the third «هو خلاف المذهب المعروف»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f000",
+      "encoder": "annulment_without_return",
+      "class": "derivable",
+      "facts": {
+        "annulment": true,
+        "defect_return": false
+      },
+      "expected": true,
+      "note": "The undetermined thing sold perishes before qabḍ: the contract is annulled in it and in its counter-value."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f001",
+      "encoder": "annulment_without_return",
+      "class": "derivable",
+      "facts": {
+        "annulment": true,
+        "defect_return": false
+      },
+      "expected": true,
+      "note": "Fruit bought on the palm destroyed by a blight before cutting: the contract is annulled in it."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f002",
+      "encoder": "annulment_without_return",
+      "class": "derivable",
+      "facts": {
+        "annulment": true,
+        "defect_return": false
+      },
+      "expected": true,
+      "note": "The leased thing perishes before the term ends: the contract is annulled for what remains. Elective annulment after loss: the seller with an option, when the thing perishes, two riwāyas."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f003",
+      "encoder": "annulment_without_return",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "annulment": true,
+        "defect_return": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "riwāya: they swear and the sale is annulled, the buyer owing the value",
+          "ruling": true
+        },
+        {
+          "who": "riwāya, chosen by Abū Bakr: the buyer's word on oath, no annulment",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The two disagree on the price after the thing sold has perished: they swear and annul, the buyer owing the value, or the buyer's word with no annulment (Abū Bakr). One who finds a defect in what he took for goods that have perished returns his and takes the value, «نص عليه أحمد ... ولم يذكر الأصحاب فيه خلافا»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f004",
+      "encoder": "annulment_without_return",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "annulment": true,
+        "defect_return": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī's takhrīj, «قياس المذهب», followed by Abū al-Khaṭṭāb; Ibn ʿAqīl's jazm: may annul and return a substitute",
+          "ruling": true
+        },
+        {
+          "who": "«الذي عليه الأكثرون», which Aḥmad indicated (Ibn Manṣūr): may not, the arsh his remedy",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The defective thing wholly perishes: may the buyer annul and return its substitute? «الذي عليه الأكثرون أنه لا يملك ذلك وأشار إليه أحمد», «لأن الرد يستدعي مردودا»; Ibn Rajab: «وهو ضعيف لأن البدل يقوم مقام العين». A ribawī bought for its kind, defective then lost, is annulled with its substitute returned. Reconciled (jamʿ): the arsh is fixed once the defective thing perishes, «وهذا المذهب. وعليه أكثر الأصحاب» (al-Inṣāf; al-Iqnāʿ; Kashshāf), the return being impossible."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f005",
+      "encoder": "annulment_without_return",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "annulment": true,
+        "defect_return": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Qāḍī, «قياس المذهب صحتها بعد التلف إذا قلنا هي فسخ», Abū al-Khaṭṭāb, Ibn ʿAqīl: valid",
+          "ruling": true
+        },
+        {
+          "who": "al-Qāḍī once: not, as a sale",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Iqāla after the thing perishes: al-Qāḍī once, not valid, a contract on both parties' consent like sale; elsewhere, «قياس المذهب صحتها بعد التلف إذا قلنا هي فسخ», with Abū al-Khaṭṭāb and Ibn ʿAqīl; al-Talkhīṣ, two wujūh. The muʿtamad voids it once the thing sold perishes, «لتعذر الرد فيه» (Kashshāf; al-Muntahā; Sharḥ al-Muntahā); al-Inṣāf is undecided, adding al-Mughnī for that side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f006",
+      "encoder": "annulment_without_return",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "annulment": true,
+        "defect_return": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Aḥmad's naṣṣ in many riwāyas, Ibn Abī Mūsā: valid, the loss on the buyer by an annulment deemed at the end of ownership",
+          "ruling": true
+        },
+        {
+          "who": "al-Shīrāzī's wajh: the loss on both, as the profit",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Partnership in a purchase, «I share you in half of it»: profit shared, and on loss or deficit the sharing is annulled, «فيقدر انفساخ الشركة حكما في آخر زمن الملك قبل بيعه بخسارة أو تلفه». Aḥmad allows it in many riwāyas; al-Qāḍī reads him far afield; al-Shīrāzī derives the loss on both."
+    }
+  ]
+}

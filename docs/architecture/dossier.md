@@ -1064,3 +1064,37 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Lean:** `Usul.Refinements.removedWithPrincipalIn`, `Usul.Refinements.removedWithPrincipalIn_conservative`  
 **Conservative over the earlier reading:** `Usul.Refinements.removedWithPrincipalIn_conservative`
+
+<a id="annulment_without_return"></a>
+
+## No return for a defect once the thing perishes
+
+**Terms:** [al-jamʿ](../glossary.md#jam), [al-farq](../glossary.md#farq)  
+**Closes:** `rule:annulment_without_return`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059`: Ibn Rajab, qāʿida 59: annulments fall on what no longer exists; the tranche-11 reading let every annulment survive the thing's loss.
+  > العقود لا ترد إلا على موجود بالفعل أو بالقوة، وأما الفسوخ فترد على المعدوم حكما واختيارا على الصحيح وقد دل عليه حديث المصراة حيث أوجب الشارع رد صاع التمر عوضا عن اللبن بعد تلفه وهو مما ورد العقد عليه فدل على أنه حكم بفسخ العقد فيه ورد عوضه مع أصله والرجوع بالثمن كاملا فأما الانفساخ الحكمي بالتلف ففي مواضع : منها إذا تلف المبيع المبهم قبل قبضه انفسخ العقد فيه وفي عوضه سواء كان ثمنا أو مثمنا. ومنها 
+
+**Conditions**
+
+1. the buyer would annul for a defect by returning the thing sold
+2. the thing sold has perished
+
+**Texts**
+
+- `src:openiti-insaf-shamela21609/v04:p419`: If the defective item perishes the buyer is limited to the arsh, «وهذا المذهب. وعليه أكثر الأصحاب»; annulment returning the substitute is only al-Qāḍī's takhrīj.
+  > قوله (أو تلف المبيع: رجع بأرشه) يعني يتعين له الأرش. وهذا المذهب. وعليه أكثر الأصحاب. ويتخرج أن يفسخ ويغرم القيمة.
+- `src:openiti-buhuti-kashshaf-shamela21642/v03:p222`: Kashshāf: in the list that begins with perishing of the item («أو تلف المبيع ولو بفعله»), the arsh is fixed and return lapses because it is impossible.
+  > أو باعه) أي باع المشتري المبيع (أو وهبه أو رهنه، أو وقفه غير عالم بعيبه) ثم علم (تعين الأرش) لما تقدم وسقط الرد لتعذره
+- `src:openiti-hajjawi-iqna-shamela7360/v02:p098`: The Iqnāʿ matn lists perishing among the cases where the arsh is fixed («تعين الأرش»).
+  > أو قتل أو استولد الأمة أو تلف المبيع ولو بفعله: كأكله ونحوه أو باعه أو وهبه أو رهنه أو وقفه غير عالم بعيبه - تعين الأرش
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f004`: Ibn Rajab against the akthar: «وهو ضعيف لأن البدل يقوم مقام العين»; the reading followed him.
+  > إذا تلفت العين المعيبة كلها فهل يملك المشتري الفسخ ورد بدلها أم لا؟ الذي عليه الأكثرون أنه لا يملك ذلك وأشار إليه أحمد في رواية ابن منصور قالوا: لأن الرد يستدعي مردودا ولا مردود إلا مع بقاء العين وظلامته تستدرك بالأرش وهو ضعيف لأن البدل يقوم مقام العين وخرج القاضي في خلافه جواز ذلك من رد المشتري أرش العيب الحادث عنده كما تقدم وذكر في أنه قياس المذهب وتابعه عليه أبو الخطاب في انتصاره، وجزم به ابن ع
+
+**Rationale.** The ledger found the reading against al-Inṣāf's «وهذا المذهب. وعليه أكثر الأصحاب», al-Iqnāʿ and Kashshāf: once the defective thing perishes the arsh is fixed, the return impossible («وسقط الرد لتعذره»). Annulments by operation of law (the undetermined thing, the blighted fruit, the lease) and after the parties' oaths keep the reading; iqāla after loss is left to tarjīḥ, where al-Qāḍī's «قياس المذهب» keeps it with the reading for review.
+
+**Lean:** `Usul.Refinements.annulsNonexistentIn`, `Usul.Refinements.annulsNonexistentIn_conservative`  
+**Conservative over the earlier reading:** `Usul.Refinements.annulsNonexistentIn_conservative`
