@@ -134,6 +134,8 @@ Tranche 9 added 2 contradictions and 6 evidence items. On the shufʿa (50.f001) 
 
 Tranche 10 added 7 contradictions and 23 evidence items, after checking each of its on-the-madhhab annotations against al-Inṣāf and the muʿtamad. Two are jamʿ on farqs the madhhab states: `disposeBeforeQabdIn` (52.f001: a settled debt is sold only to the debtor, «وهو الصحيح من المذهب. وعليه الأصحاب») and `removedWithPrincipalIn` (61.f001: the qāḍī's deputies are his, «لأنهم نوابه»). Five are residues, four of them on qāʿida 56, where the madhhab does not take concurrence as sufficient in the kitāba with a sale, agency before the nikāḥ or the umm walad's ʿidda, and none cites one farq for all three. The ledger stands at 153 entries and 388 evidence items, with 18 jamʿ, 127 tarjīḥ (67 residues) and 8 tawaqquf.
 
+Tranche 11 added 3 contradictions and 10 evidence items, again after checking every on-the-madhhab annotation. `annulsNonexistentIn` (59.f004) is a jamʿ: the arsh is fixed once the defective thing perishes, «وهذا المذهب. وعليه أكثر الأصحاب». The same farq is cited for iqāla after loss (59.f005), but only in the muʿtamad's jazm, which al-Qāḍī's «قياس المذهب» outranks; the jamʿ check therefore keeps iqāla out of the refinement, and tarjīḥ leaves it with the reading, listed for review. 57.f002 is a residue. The ledger stands at 156 entries and 398 evidence items, with 19 jamʿ, 129 tarjīḥ (68 residues) and 8 tawaqquf.
+
 **Left as residues, for want of a cited farq:**
 
 | Encoder | Residues / cases | Why no jamʿ |

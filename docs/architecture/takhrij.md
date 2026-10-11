@@ -183,7 +183,7 @@ The unit is a committed farʿ record, which can contain multiple examples. Annot
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.793 | 0 | 0 |
-| All annotation suites | 483 | 0.988 | 0.695 | 0 | 6 |
+| All annotation suites | 483 | 0.988 | 0.701 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -413,6 +413,19 @@ Results on the tranche:
 - **Verification:** every ikhtilāf annotated as on the madhhab side was checked against al-Inṣāf and the muʿtamad. Four were not (56.f002, 56.f004, 58.f001, 61.f001) and entered the ledger. 62.f002 was re-read: the keeper's annulment by word dissolves the deposit at once (al-Qāḍī's usual statement and the muʿtamad), so no keeper fact is needed.
 - **Reconciliation:** 7 new apparent contradictions, 23 evidence items. Two are jamʿ on farqs the madhhab states: the deeds (52.f001) fall under «ولا يجوز لغيره», a debt sold only to the debtor (`disposeBeforeQabdIn`), and the qāḍī's general deputies (61.f001) are removed with him, «لأنهم نوابه» (`removedWithPrincipalIn`). Five are residues: on qāʿida 56 the madhhab voids the sale joined to a kitāba (f002) and agency to divorce a woman not yet married (f004), and clears the umm walad by one period (f006), each against concurrence; 56.f003 has no later treatment and leans to al-Qāḍī's «الأشبه»; on 58.f001 the muʿtamad owes the kaffāra «لأن النزع جماع».
 
+**Tranche 11 (qawāʿid 55, 57, 59; 22 furūʿ).** Typological records are annotated for their leading ruling (`corpus/takhrij/rajab_m8_tranche11_furu.json`):
+
+| Qāʿida | Reading |
+|---|---|
+| 55: disposal by one with a right to own | `disposalTakes`: not a taking and not effective («المذهب المشهور»), unless the cause of ownership is complete (the legatee after the death) or his own tie never lapsed (the rajʿiyya) |
+| 57: a ruling coinciding with its bar | `holdsAgainstBar`: does not hold («المذهب المشهور أنه لا يثبت»); coinciding only with the bar's cause, it holds |
+| 59: annulment of what no longer exists | `annulsNonexistent`: annulments fall on the non-existent («على الصحيح»); reconciled to `annulsNonexistentIn`: no return for a defect once the thing perishes |
+
+Results on the tranche:
+- **5 derivable, 17 ikhtilāf (15 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 22/22 = 1.000, madhhab coverage 20/22 = 0.909. The bank's gaps stay the six original ones.
+- **Verification:** every ikhtilāf was checked against al-Inṣāf and the muʿtamad before the ledger. Three annotated off the madhhab were on it (57.f003, f005, f006); for 57.f005 the muʿtamad has the two coinciding gifts share («فيتحاصان لتقارنهما»), so the reading needs no separate «bar first» fact. Two annotated on it were not (59.f004, f005). 55.f003 and 59.f006 have no later treatment and keep their annotation.
+- **Reconciliation:** 3 contradictions, 10 evidence items. 59.f004 is a jamʿ on the madhhab's farq, the return impossible once the defective thing perishes («وهذا المذهب. وعليه أكثر الأصحاب»; `annulsNonexistentIn`). 59.f005 (iqāla after loss) stays with the reading by tarjīḥ, al-Qāḍī's «قياس المذهب» outranking the muʿtamad's jazm while al-Inṣāf is undecided, and is listed for review. 57.f002 is a residue: the madhhab validates the free woman and the slave woman in one contract where the free wife does not suffice him, and the record does not say whether she does.
+
 **Coverage trend:**
 
 | Stage | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
@@ -445,6 +458,8 @@ Results on the tranche:
 | All, after tranche 9 | 442 | 0.986 | 0.689 | 0 | 6 |
 | M8 tranche 10 alone | 19 | 1.000 | 0.737 | 0 | 0 |
 | All, after tranche 10 | 461 | 0.987 | 0.691 | 0 | 6 |
+| M8 tranche 11 alone | 22 | 1.000 | 0.909 | 0 | 0 |
+| All, after tranche 11 | 483 | 0.988 | 0.701 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 

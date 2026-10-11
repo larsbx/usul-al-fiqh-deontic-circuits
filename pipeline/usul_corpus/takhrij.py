@@ -370,15 +370,18 @@ ENCODERS: dict[str, dict] = {
         out=B, lean="Usul.Refinements.conditionMet {prior} {concurrent}",
         py=lambda f: f["prior"] or f["concurrent"]),
     "ruling_with_bar": dict(
-        sadi=[], qawaid=[RAJAB.format(57)], facts={"with_bar": B, "bar_first": B},
-        out=B, lean="Usul.Refinements.holdsAgainstBar {with_bar} {bar_first}",
-        py=lambda f: not f["with_bar"] and not f["bar_first"]),
+        sadi=[], qawaid=[RAJAB.format(57)], facts={"with_bar": B},
+        out=B, lean="Usul.Refinements.holdsAgainstBar {with_bar}", py=lambda f: not f["with_bar"]),
     "desisting_at_once": dict(
         sadi=[], qawaid=[RAJAB.format(58)], facts={"foresaw": B},
         out=B, lean="Usul.Refinements.desistIsAct {foresaw}", py=lambda f: f["foresaw"]),
     "annulment_on_nonexistent": dict(
         sadi=[], qawaid=[RAJAB.format(59)], facts={"annulment": B},
         out=B, lean="Usul.Refinements.annulsNonexistent {annulment}", py=lambda f: f["annulment"]),
+    "annulment_without_return": dict(
+        sadi=[], qawaid=[RAJAB.format(59)], facts={"annulment": B, "defect_return": B},
+        out=B, lean="Usul.Refinements.annulsNonexistentIn {annulment} {defect_return}",
+        py=lambda f: f["annulment"] and not f["defect_return"]),
     "deputy_of_principal": dict(
         sadi=[], qawaid=[RAJAB.format(61)], facts={"general": B},
         out=B, lean="Usul.Refinements.removedWithPrincipal {general}", py=lambda f: not f["general"]),

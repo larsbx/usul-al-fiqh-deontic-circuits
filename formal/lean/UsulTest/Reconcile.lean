@@ -183,17 +183,13 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f006
 #guard reconcile (P := String) none none [("false", .nass), ("true", .nass), ("false", .tashih), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f002
-#guard reconcile (P := String) none none [("true", .wajh), ("false", .wajh)] == .tawaqquf
--- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f003
-#guard reconcile (P := String) none none [("true", .ashab), ("false", .ashab)] == .tawaqquf
--- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f005
-#guard reconcile (P := String) none none [("true", .ashab), ("false", .ashab)] == .tawaqquf
--- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f006
-#guard reconcile (P := String) none none [("true", .wajh), ("false", .wajh)] == .tawaqquf
+#guard reconcile (P := String) none none [("true", .wajh), ("false", .wajh), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q058.f001
 #guard reconcile (P := String) none none [("true", .takhrij), ("false", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f004
-#guard reconcile (P := String) none none [("true", .qiyas), ("true", .ashab), ("false", .jazm), ("false", .zahir)] == (.tarjih "false")
+#guard reconcile (P := String) (some "false") none [("true", .qiyas), ("true", .ashab), ("false", .jazm), ("false", .zahir), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.jam "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f005
+#guard reconcile (P := String) none none [("true", .qiyas), ("true", .ashab), ("false", .ashab), ("false", .ashab), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f001
 #guard reconcile (P := String) (some "true") none [("false", .ashab), ("true", .jazm), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.jam "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f000

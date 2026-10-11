@@ -959,9 +959,8 @@ his ownership is complete past the other's power to defeat it (the legatee after
 def disposalTakes (causeComplete tieRemains : Bool) : Bool := causeComplete || tieRemains
 
 /-- Qāʿida 57: a ruling that coincides with what bars it does not hold («المذهب المشهور أنه لا
-يثبت»), against Ibn Ḥāmid; nor one that follows a bar already in place. One that coincides only
-with the bar's cause precedes the bar and holds. -/
-def holdsAgainstBar (withBar barFirst : Bool) : Bool := !withBar && !barFirst
+يثبت»), against Ibn Ḥāmid. One that coincides only with the bar's cause precedes the bar and holds. -/
+def holdsAgainstBar (withBar : Bool) : Bool := !withBar
 
 /-- Qāʿida 59: contracts fall only on what exists, «وأما الفسوخ فترد على المعدوم حكما واختيارا على
 الصحيح», as in the muṣarrāt. -/
@@ -1060,5 +1059,14 @@ def removedWithPrincipalIn (general ofQadi : Bool) : Bool := removedWithPrincipa
 theorem removedWithPrincipalIn_conservative (g : Bool) :
     removedWithPrincipalIn g false = removedWithPrincipal g := by
   cases g <;> rfl
+
+/-- Qāʿida 59 with the madhhab on the defective thing that perishes: no return, the arsh fixed
+(al-Inṣāf: «وهذا المذهب. وعليه أكثر الأصحاب»), «وسقط الرد لتعذره» (Kashshāf). -/
+def annulsNonexistentIn (annulment defectReturn : Bool) : Bool :=
+  annulsNonexistent annulment && !defectReturn
+
+theorem annulsNonexistentIn_conservative (a : Bool) :
+    annulsNonexistentIn a false = annulsNonexistent a := by
+  cases a <;> rfl
 
 end Usul.Refinements

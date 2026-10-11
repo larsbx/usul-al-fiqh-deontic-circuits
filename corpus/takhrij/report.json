@@ -8,9 +8,9 @@
   "segmentation_error": 1
  },
  "coverage": 0.988,
- "madhhab_coverage": 0.695,
+ "madhhab_coverage": 0.701,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 136,
+ "ikhtilaf_matching_madhhab": 139,
  "gaps_open": 6,
  "revisited": 37,
  "revisit_queue": [],
@@ -292,7 +292,7 @@
    "derivable": 1,
    "genuine_ikhtilaf": 1
   },
-  "annulment_on_nonexistent": {
+  "annulment_without_return": {
    "derivable": 3,
    "genuine_ikhtilaf": 4
   },

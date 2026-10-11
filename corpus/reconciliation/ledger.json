@@ -2748,34 +2748,34 @@
         "wajh"
       ],
       "jam": null,
-      "naskh": null
-    },
-    {
-      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f003",
-      "grades": [
-        "ashab",
-        "ashab"
-      ],
-      "jam": null,
-      "naskh": null
-    },
-    {
-      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f005",
-      "grades": [
-        "ashab",
-        "ashab"
-      ],
-      "jam": null,
-      "naskh": null
-    },
-    {
-      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f006",
-      "grades": [
-        "wajh",
-        "wajh"
-      ],
-      "jam": null,
-      "naskh": null
+      "naskh": null,
+      "note": "The later madhhab validates both where the free wife does not suffice him; the record leaves open whether she does, so no farq is cited for the reading's side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p143",
+          "excerpt_ar": "والرواية الثانية: لا يجوز. قطع به ابن أبي موسى، وغيره. فعلى المذهب: لو جمع بينهما في عقد واحد: صح.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On the madhhab (that one whom a free wife does not suffice may marry a slave woman on her), if he combines a free woman and a slave woman in one contract it is valid."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p087",
+          "excerpt_ar": "(ولو جمع بينهما) أي بين حرة لا تعفه وأمة بشرطه (في عقد واحد) صح كما لو كانا في عقدين",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf (on the Iqnāʿ) states decisively that combining a free woman who does not suffice him and a slave woman (the two conditions met) in one contract is valid, as in two contracts."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p188",
+          "excerpt_ar": "وأن تزوج حرة فلم تعفه ولم يجد طولا لحرة أخرى جاز له نكاح أمة ولو جمع بينهما في عقد واحد",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ matn decisively permits marrying the slave woman even when combined with the free woman in one contract."
+        }
+      ]
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q058.f001",
@@ -2825,8 +2825,86 @@
           "zahir"
         ]
       ],
+      "jam": {
+        "encoder": "annulment_without_return",
+        "from": "annulment_on_nonexistent",
+        "farq": "src:openiti-insaf-shamela21609/v04:p419"
+      },
+      "naskh": null,
+      "note": "The madhhab fixes the arsh once the defective thing perishes, the return impossible.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p419",
+          "excerpt_ar": "قوله (أو تلف المبيع: رجع بأرشه) يعني يتعين له الأرش. وهذا المذهب. وعليه أكثر الأصحاب. ويتخرج أن يفسخ ويغرم القيمة.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "If the defective item perishes the buyer is limited to the arsh, «وهذا المذهب. وعليه أكثر الأصحاب»; annulment returning the substitute is only al-Qāḍī's takhrīj."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p222",
+          "excerpt_ar": "أو باعه) أي باع المشتري المبيع (أو وهبه أو رهنه، أو وقفه غير عالم بعيبه) ثم علم (تعين الأرش) لما تقدم وسقط الرد لتعذره",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf: in the list that begins with perishing of the item («أو تلف المبيع ولو بفعله»), the arsh is fixed and return lapses because it is impossible."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p098",
+          "excerpt_ar": "أو قتل أو استولد الأمة أو تلف المبيع ولو بفعله: كأكله ونحوه أو باعه أو وهبه أو رهنه أو وقفه غير عالم بعيبه - تعين الأرش",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ matn lists perishing among the cases where the arsh is fixed («تعين الأرش»)."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f005",
+      "grades": [
+        [
+          "qiyas",
+          "ashab"
+        ],
+        "ashab"
+      ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "note": "al-Inṣāf is undecided and the muʿtamad voids iqāla once the thing sold perishes; al-Qāḍī's «قياس المذهب» still outranks its jazm under the bank's grades, so tarjīḥ keeps the reading, for review.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p477",
+          "excerpt_ar": "القاضي في موضع من خلافه، والمصنف في المغني.",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: 'if the goods perished, it is said the iqāla is not valid on either riwāya - the way of al-Qāḍī in one place of his Khilāf and of the author in al-Mughnī', adding Ibn Qudāma (al-Mughnī) as a holder of position 1; al-Inṣāf gives no taṣḥīḥ (both views 'قيل', al-Furūʿ left them unresolved)."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p250",
+          "excerpt_ar": "(وتصح) الإقالة (مع تلف ثمن لا مع تلف مبيع) ، لتعذر الرد فيه.",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf (on the Iqnāʿ): iqāla is valid when the price has perished but not when the sold thing has, since its return is impossible - position 1."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p346",
+          "excerpt_ar": "ولا تصح مع تلف مثمن وموت عاقد ولا بزيادة على ثمن أو نقصه أو بغير جنسه",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The Muntahā matn, right after defining iqāla as faskh: it is not valid when the thing sold has perished - position 1."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p064",
+          "excerpt_ar": "مثمن) مطلقا لفوات محل الفسخ وتصح مع تلف ثمن (و) لا مع (موت عاقد) بائع أو",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā: not valid with the perishing of the thing sold 'absolutely' (i.e. even though iqāla is faskh), because the object of annulment is gone - position 1."
+        }
+      ]
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f001",

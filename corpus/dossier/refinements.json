@@ -1369,6 +1369,53 @@
     "rule:deputy_of_qadi"
    ],
    "iq": []
+  },
+  {
+   "id": "annulment_without_return",
+   "title": "No return for a defect once the thing perishes",
+   "terms": [
+    "jam",
+    "farq"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059",
+    "note": "Ibn Rajab, qāʿida 59: annulments fall on what no longer exists; the tranche-11 reading let every annulment survive the thing's loss."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v04:p419",
+     "note": "If the defective item perishes the buyer is limited to the arsh, «وهذا المذهب. وعليه أكثر الأصحاب»; annulment returning the substitute is only al-Qāḍī's takhrīj.",
+     "excerpt_ar": "قوله (أو تلف المبيع: رجع بأرشه) يعني يتعين له الأرش. وهذا المذهب. وعليه أكثر الأصحاب. ويتخرج أن يفسخ ويغرم القيمة."
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p222",
+     "note": "Kashshāf: in the list that begins with perishing of the item («أو تلف المبيع ولو بفعله»), the arsh is fixed and return lapses because it is impossible.",
+     "excerpt_ar": "أو باعه) أي باع المشتري المبيع (أو وهبه أو رهنه، أو وقفه غير عالم بعيبه) ثم علم (تعين الأرش) لما تقدم وسقط الرد لتعذره"
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p098",
+     "note": "The Iqnāʿ matn lists perishing among the cases where the arsh is fixed («تعين الأرش»).",
+     "excerpt_ar": "أو قتل أو استولد الأمة أو تلف المبيع ولو بفعله: كأكله ونحوه أو باعه أو وهبه أو رهنه أو وقفه غير عالم بعيبه - تعين الأرش"
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f004",
+     "note": "Ibn Rajab against the akthar: «وهو ضعيف لأن البدل يقوم مقام العين»; the reading followed him."
+    }
+   ],
+   "conditions": [
+    "the buyer would annul for a defect by returning the thing sold",
+    "the thing sold has perished"
+   ],
+   "rationale": "The ledger found the reading against al-Inṣāf's «وهذا المذهب. وعليه أكثر الأصحاب», al-Iqnāʿ and Kashshāf: once the defective thing perishes the arsh is fixed, the return impossible («وسقط الرد لتعذره»). Annulments by operation of law (the undetermined thing, the blighted fruit, the lease) and after the parties' oaths keep the reading; iqāla after loss is left to tarjīḥ, where al-Qāḍī's «قياس المذهب» keeps it with the reading for review.",
+   "lean": [
+    "Usul.Refinements.annulsNonexistentIn",
+    "Usul.Refinements.annulsNonexistentIn_conservative"
+   ],
+   "conservative": "Usul.Refinements.annulsNonexistentIn_conservative",
+   "closes": [
+    "rule:annulment_without_return"
+   ],
+   "iq": []
   }
  ]
 }

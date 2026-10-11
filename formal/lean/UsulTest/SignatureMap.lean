@@ -447,6 +447,8 @@ import Usul
 #check @Usul.Refinements.disposeBeforeQabdIn_conservative
 #check @Usul.Refinements.removedWithPrincipalIn
 #check @Usul.Refinements.removedWithPrincipalIn_conservative
+#check @Usul.Refinements.annulsNonexistentIn
+#check @Usul.Refinements.annulsNonexistentIn_conservative
 #check @Usul.Hukm.Mode
 #check @Usul.Hukm.mode
 #check @Usul.Hukm.mode_binding_injective

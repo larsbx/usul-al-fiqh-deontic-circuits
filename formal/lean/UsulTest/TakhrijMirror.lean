@@ -358,14 +358,16 @@ import Usul
 #guard (Usul.Refinements.conditionMet false true) == true
 #guard (Usul.Refinements.conditionMet true false) == true
 #guard (Usul.Refinements.conditionMet true true) == true
-#guard (Usul.Refinements.holdsAgainstBar false false) == true
-#guard (Usul.Refinements.holdsAgainstBar false true) == false
-#guard (Usul.Refinements.holdsAgainstBar true false) == false
-#guard (Usul.Refinements.holdsAgainstBar true true) == false
+#guard (Usul.Refinements.holdsAgainstBar false) == true
+#guard (Usul.Refinements.holdsAgainstBar true) == false
 #guard (Usul.Refinements.desistIsAct false) == false
 #guard (Usul.Refinements.desistIsAct true) == true
 #guard (Usul.Refinements.annulsNonexistent false) == false
 #guard (Usul.Refinements.annulsNonexistent true) == true
+#guard (Usul.Refinements.annulsNonexistentIn false false) == false
+#guard (Usul.Refinements.annulsNonexistentIn false true) == false
+#guard (Usul.Refinements.annulsNonexistentIn true false) == true
+#guard (Usul.Refinements.annulsNonexistentIn true true) == false
 #guard (Usul.Refinements.removedWithPrincipal false) == true
 #guard (Usul.Refinements.removedWithPrincipal true) == false
 #guard (Usul.Refinements.removedWithPrincipalIn false false) == true

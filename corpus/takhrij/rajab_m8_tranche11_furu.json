@@ -151,8 +151,7 @@
       "encoder": "ruling_with_bar",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "with_bar": true,
-        "bar_first": false
+        "with_bar": true
       },
       "expected": false,
       "positions": [
@@ -173,8 +172,7 @@
       "encoder": "ruling_with_bar",
       "class": "derivable",
       "facts": {
-        "with_bar": true,
-        "bar_first": false
+        "with_bar": true
       },
       "expected": false,
       "note": "The slave woman's husband: «if I own you, you are divorced», then owns her: not divorced, «قال الأصحاب وجها واحدا», the divorce coinciding with the annulment."
@@ -184,8 +182,7 @@
       "encoder": "ruling_with_bar",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "with_bar": true,
-        "bar_first": false
+        "with_bar": true
       },
       "expected": false,
       "positions": [
@@ -199,15 +196,14 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "One without the means for a free woman and fearing sin who marries a free woman and a slave woman in one contract: is the slave woman's marriage valid with the free woman's? «على وجهين». The record goes on to the husband of his father's slave woman: «when my father dies you are divorced»."
+      "note": "One without the means for a free woman and fearing sin who marries a free woman and a slave woman in one contract: is the slave woman's marriage valid with the free woman's? «على وجهين». The record goes on to the husband of his father's slave woman: «when my father dies you are divorced». The later madhhab validates both where the free wife does not suffice him («فعلى المذهب: لو جمع بينهما في عقد واحد: صح»; al-Iqnāʿ, Kashshāf), the free woman then no bar; Ibn Rajab's fāʾida, quoted in al-Inṣāf, voids the slave's where the free woman alone would suffice. The record does not say which."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f003",
       "encoder": "ruling_with_bar",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "with_bar": false,
-        "bar_first": false
+        "with_bar": false
       },
       "expected": true,
       "positions": [
@@ -220,16 +216,15 @@
           "ruling": false
         }
       ],
-      "matches_madhhab": false,
-      "note": "Married to a slave woman: «if I buy you, you are divorced»: «وفيه الوجهان إن قلنا ينتقل الملك مع الخيار وهو الصحيح», the two wujūh of «when my father dies» (the divorce coinciding with the cause of the annulment, the ownership); if ownership does not pass, divorced «وجها واحدا» (Abū al-Khaṭṭāb)."
+      "matches_madhhab": true,
+      "note": "Married to a slave woman: «if I buy you, you are divorced»: «وفيه الوجهان إن قلنا ينتقل الملك مع الخيار وهو الصحيح», the two wujūh of «when my father dies» (the divorce coinciding with the cause of the annulment, the ownership); if ownership does not pass, divorced «وجها واحدا» (Abū al-Khaṭṭāb). The later madhhab: divorced (al-Inṣāf, ṭalāq: «ويحتمل أن تطلق، وهو المذهب»; al-Furūʿ, al-Muntahā, Kashshāf)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f004",
       "encoder": "ruling_with_bar",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "with_bar": true,
-        "bar_first": false
+        "with_bar": true
       },
       "expected": false,
       "positions": [
@@ -250,10 +245,9 @@
       "encoder": "ruling_with_bar",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "with_bar": false,
-        "bar_first": true
+        "with_bar": false
       },
-      "expected": false,
+      "expected": true,
       "positions": [
         {
           "who": "al-Qāḍī, Ibn ʿAqīl (al-Fuṣūl): they share, the two gifts coinciding",
@@ -264,16 +258,15 @@
           "ruling": false
         }
       ],
-      "matches_madhhab": false,
-      "note": "A sick man buys his father for nine dinars, all he owns, the father worth six: two gifts, the favour to the seller and the father's manumission (from the third). They share (al-Qāḍī, Ibn ʿAqīl), or the favour precedes and the father is not freed (al-Muḥarrar)."
+      "matches_madhhab": true,
+      "note": "A sick man buys his father for nine dinars, all he owns, the father worth six: two gifts, the favour to the seller and the father's manumission (from the third). They share (al-Qāḍī, Ibn ʿAqīl), or the favour precedes and the father is not freed (al-Muḥarrar). The two gifts coincide and neither is barred: the muʿtamad has them share, «فيتحاصان لتقارنهما» (al-Muntahā, Sharḥ al-Muntahā, Kashshāf)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f006",
       "encoder": "ruling_with_bar",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "with_bar": false,
-        "bar_first": false
+        "with_bar": false
       },
       "expected": true,
       "positions": [
@@ -286,16 +279,15 @@
           "ruling": false
         }
       ],
-      "matches_madhhab": false,
-      "note": "A dower of a hundred, then khulʿ before consummation for fifty of it: does the husband take it all or three quarters? «ومن نصر الوجه الأول قال تنصف المهر يترتب على الخلع لا يفارقه فقد ملك الخمسين كلها قبل التنصيف، لكن ملكه لها قارن سبب التنصيف»."
+      "matches_madhhab": true,
+      "note": "A dower of a hundred, then khulʿ before consummation for fifty of it: does the husband take it all or three quarters? «ومن نصر الوجه الأول قال تنصف المهر يترتب على الخلع لا يفارقه فقد ملك الخمسين كلها قبل التنصيف، لكن ملكه لها قارن سبب التنصيف». The muʿtamad gives him the whole (al-Iqnāʿ, Kashshāf); al-Inṣāf does not treat it."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f007",
       "encoder": "ruling_with_bar",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "with_bar": true,
-        "bar_first": false
+        "with_bar": true
       },
       "expected": false,
       "positions": [
@@ -313,40 +305,44 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f000",
-      "encoder": "annulment_on_nonexistent",
+      "encoder": "annulment_without_return",
       "class": "derivable",
       "facts": {
-        "annulment": true
+        "annulment": true,
+        "defect_return": false
       },
       "expected": true,
       "note": "The undetermined thing sold perishes before qabḍ: the contract is annulled in it and in its counter-value."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f001",
-      "encoder": "annulment_on_nonexistent",
+      "encoder": "annulment_without_return",
       "class": "derivable",
       "facts": {
-        "annulment": true
+        "annulment": true,
+        "defect_return": false
       },
       "expected": true,
       "note": "Fruit bought on the palm destroyed by a blight before cutting: the contract is annulled in it."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f002",
-      "encoder": "annulment_on_nonexistent",
+      "encoder": "annulment_without_return",
       "class": "derivable",
       "facts": {
-        "annulment": true
+        "annulment": true,
+        "defect_return": false
       },
       "expected": true,
       "note": "The leased thing perishes before the term ends: the contract is annulled for what remains. Elective annulment after loss: the seller with an option, when the thing perishes, two riwāyas."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f003",
-      "encoder": "annulment_on_nonexistent",
+      "encoder": "annulment_without_return",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "annulment": true
+        "annulment": true,
+        "defect_return": false
       },
       "expected": true,
       "positions": [
@@ -364,12 +360,13 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f004",
-      "encoder": "annulment_on_nonexistent",
+      "encoder": "annulment_without_return",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "annulment": true
+        "annulment": true,
+        "defect_return": true
       },
-      "expected": true,
+      "expected": false,
       "positions": [
         {
           "who": "al-Qāḍī's takhrīj, «قياس المذهب», followed by Abū al-Khaṭṭāb; Ibn ʿAqīl's jazm: may annul and return a substitute",
@@ -380,15 +377,16 @@
           "ruling": false
         }
       ],
-      "matches_madhhab": false,
-      "note": "The defective thing wholly perishes: may the buyer annul and return its substitute? «الذي عليه الأكثرون أنه لا يملك ذلك وأشار إليه أحمد», «لأن الرد يستدعي مردودا»; Ibn Rajab: «وهو ضعيف لأن البدل يقوم مقام العين». A ribawī bought for its kind, defective then lost, is annulled with its substitute returned."
+      "matches_madhhab": true,
+      "note": "The defective thing wholly perishes: may the buyer annul and return its substitute? «الذي عليه الأكثرون أنه لا يملك ذلك وأشار إليه أحمد», «لأن الرد يستدعي مردودا»; Ibn Rajab: «وهو ضعيف لأن البدل يقوم مقام العين». A ribawī bought for its kind, defective then lost, is annulled with its substitute returned. Reconciled (jamʿ): the arsh is fixed once the defective thing perishes, «وهذا المذهب. وعليه أكثر الأصحاب» (al-Inṣāf; al-Iqnāʿ; Kashshāf), the return being impossible."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f005",
-      "encoder": "annulment_on_nonexistent",
+      "encoder": "annulment_without_return",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "annulment": true
+        "annulment": true,
+        "defect_return": false
       },
       "expected": true,
       "positions": [
@@ -401,15 +399,16 @@
           "ruling": false
         }
       ],
-      "matches_madhhab": true,
-      "note": "Iqāla after the thing perishes: al-Qāḍī once, not valid, a contract on both parties' consent like sale; elsewhere, «قياس المذهب صحتها بعد التلف إذا قلنا هي فسخ», with Abū al-Khaṭṭāb and Ibn ʿAqīl; al-Talkhīṣ, two wujūh."
+      "matches_madhhab": false,
+      "note": "Iqāla after the thing perishes: al-Qāḍī once, not valid, a contract on both parties' consent like sale; elsewhere, «قياس المذهب صحتها بعد التلف إذا قلنا هي فسخ», with Abū al-Khaṭṭāb and Ibn ʿAqīl; al-Talkhīṣ, two wujūh. The muʿtamad voids it once the thing sold perishes, «لتعذر الرد فيه» (Kashshāf; al-Muntahā; Sharḥ al-Muntahā); al-Inṣāf is undecided, adding al-Mughnī for that side."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f006",
-      "encoder": "annulment_on_nonexistent",
+      "encoder": "annulment_without_return",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "annulment": true
+        "annulment": true,
+        "defect_return": false
       },
       "expected": true,
       "positions": [
