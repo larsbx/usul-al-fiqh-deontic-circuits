@@ -16,8 +16,8 @@
   "author": {
     "candidates": 4783,
     "by_source": {
-      "rule": 4268,
-      "unlabelled": 515
+      "rule": 4273,
+      "unlabelled": 510
     },
     "labels": {
       "buhuti": 31,
@@ -36,7 +36,7 @@
       "ibn_taymiyya": 1837,
       "kawsaj": 6,
       "khattabi": 70,
-      "majd": 16,
+      "majd": 21,
       "mardawi": 11,
       "muhammad_ibn_ibrahim": 17,
       "nawawi": 297,
@@ -49,7 +49,7 @@
     "splits": {
       "dev": 434,
       "test": 407,
-      "train": 3427
+      "train": 3432
     },
     "rule_vs_gold": {
       "compared": 0,
@@ -59,8 +59,8 @@
   "work": {
     "candidates": 2863,
     "by_source": {
-      "rule": 1298,
-      "unlabelled": 1565
+      "rule": 1300,
+      "unlabelled": 1563
     },
     "labels": {
       "abu_dawud.masail_ahmad": 2,
@@ -97,7 +97,7 @@
       "khattabi.maalim_sunan": 4,
       "majd.muharrar": 11,
       "mardawi.insaf": 32,
-      "nawawi.majmu": 64,
+      "nawawi.majmu": 66,
       "nawawi.sharh_muslim": 10,
       "none": 15,
       "qannawji.rawda_nadiyya": 11,
@@ -110,7 +110,7 @@
     "splits": {
       "dev": 138,
       "test": 103,
-      "train": 1057
+      "train": 1059
     },
     "rule_vs_gold": {
       "compared": 0,

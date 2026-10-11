@@ -5,8 +5,9 @@ counts for nobody). This module turns it into a weak labeller over a high-recall
 
 * **candidates**: every occurrence of a *head* (a citation form with its cue stripped:
   «قال في الفروع» → «الفروع») in a citer's page, with its normalised context;
-* **rule labels**: where the precise matcher resolves a span covering the candidate, its work
-  (or ``none`` when a shadowing phrase covers it: الطبراني في الأوسط); otherwise unlabelled;
+* **rule labels**: where the candidate overlaps a span the precise matcher resolves, that span's
+  work (or ``none`` for a shadowing phrase: الطبراني في الأوسط); unlabelled where it overlaps none,
+  or two that disagree;
 * **gold labels** (``corpus/mentions/gold.jsonl``, ids and labels only) override rules; the
   rule-vs-gold agreement on reviewed rows estimates the counts' precision;
 * **splits** are by page hash (80/10/10), so no context crosses train and test.
@@ -66,7 +67,9 @@ def candidates(task: Task, witness: str, text: str, window: int = WINDOW) -> lis
         t = plain(body)
         sure = _spans(t, precise)
         for s, e, _ in resolve((m.start("t"), m.end("t"), h) for h, p in head_pats for m in p.finditer(t)):
-            label = next((w if w is not None else NONE for ks, ke, w in sure if ks <= s and e <= ke), None)
+            # precise spans never overlap each other: one overlapping verdict labels the candidate, two disagreeing ones do not
+            verdicts = {w if w is not None else NONE for ks, ke, w in sure if ks < e and s < ke}
+            label = verdicts.pop() if len(verdicts) == 1 else None
             rows.append({"id": f"{task.name}:{witness}/{loc}@{s}", "task": task.name, "witness": witness, "locator": loc,
                          "start": s, "end": e, "surface": t[s:e], "left": t[max(0, s - window):s], "right": t[e:e + window],
                          "label": label, "label_source": "rule" if label else None, "split": split_of(witness, loc)})

@@ -96,3 +96,19 @@ def test_rows_conform_to_the_published_schema():
     rows = with_gold(candidates(WORKS, "w", PAGE), {})
     for r in rows:
         jsonschema.validate({**r, "text": "", "choices": list(choices(WORKS, r["surface"]))}, schema)
+
+
+def test_a_candidate_overlapping_one_precise_span_takes_its_label():
+    """Regression (Codex on #55): the precise matcher resolves «النووي في المجموع» while candidate
+    resolution keeps the longer head «المجموع شرح المهذب»; containment lost the label, overlap keeps it."""
+    majmu = Cited("nawawi.majmu", ("المجموع شرح المهذب", "النووي في المجموع"))
+    rows = candidates(Task("work", (majmu,), cue_single=True), "w", "#META#Header#End#\n# قال النووي في المجموع شرح المهذب\nPageV01P001\n")
+    assert [(r["surface"], r["label"]) for r in rows] == [("المجموع شرح المهذب", "nawawi.majmu")]
+
+
+def test_a_candidate_spanning_two_disagreeing_precise_spans_stays_unlabelled():
+    a, b = Cited("x.a", ("قال في الف",)), Cited("x.b", ("باء جيم",), )
+    both = Cited("x.c", ("الف باء",))
+    task = Task("work", (a, b, both), cue_single=True)
+    rows = candidates(task, "w", "#META#Header#End#\n# قال في الف باء جيم\nPageV01P001\n")
+    assert [r["label"] for r in rows if r["surface"] == "الف باء"] == [None]

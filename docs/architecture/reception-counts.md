@@ -81,7 +81,7 @@ Mentions by name (قال النووي, شيخ الإسلام ابن تيمية),
 
 | Author | Id | | Total | Ibn Bāz | Ibn ʿUthaymīn | al-Albānī | al-Saʿdī | Sample hits |
 |---|---|---|---:|---:|---:|---:|---:|---|
-| Taqī al-Dīn Ibn Taymiyya | `ibn_taymiyya` |  | 1842 | 327 | 1423 | 84 | 8 | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P018` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P063` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P073` |
+| Taqī al-Dīn Ibn Taymiyya | `ibn_taymiyya` |  | 1837 | 327 | 1418 | 84 | 8 | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P018` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P063` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P073` |
 | Ibn Qayyim al-Jawziyya | `ibn_qayyim` |  | 709 | 207 | 396 | 105 | 1 | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P134` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P143` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P255` |
 | Ibn Ḥajar al-ʿAsqalānī | `ibn_hajar` |  | 352 | 118 | 75 | 159 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P072` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P072` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P072` |
 | Muḥyī al-Dīn al-Nawawī | `nawawi` |  | 297 | 67 | 75 | 155 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P061` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P062` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P077` |
@@ -94,9 +94,9 @@ Mentions by name (قال النووي, شيخ الإسلام ابن تيمية),
 | Ibn Rajab al-Ḥanbalī | `ibn_rajab` |  | 69 | 32 | 31 | 6 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P187` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P188` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P189` |
 | Muḥammad b. Ismāʿīl al-Ṣanʿānī | `sanani` |  | 46 | 7 | 1 | 38 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P355` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV05P233` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P187` |
 | Manṣūr al-Buhūtī | `buhuti` |  | 31 |  | 29 | 2 |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV26P191` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV26P344` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV26P372` |
+| Majd al-Dīn Ibn Taymiyya | `majd` |  | 21 | 3 | 9 | 9 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P186` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV10P223` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV18P265` |
 | Shams al-Dīn Ibn Mufliḥ | `ibn_muflih` |  | 18 | 4 | 14 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV05P401` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV21P258` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV25P347` |
 | Muḥammad b. Ibrāhīm Āl al-Shaykh | `muhammad_ibn_ibrahim` |  | 17 | 13 | 4 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P009` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P010` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P381` |
-| Majd al-Dīn Ibn Taymiyya | `majd` |  | 16 | 3 | 4 | 9 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P186` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV10P223` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV18P265` |
 | Sharaf al-Dīn al-Ḥajjāwī | `hajjawi` |  | 14 | 1 | 12 | 1 |  | `src:openiti-ibnbaz-nuraladarb-shamela107/PageV20P271` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV23P378` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV26P372` |
 | ʿAlāʾ al-Dīn al-Mardāwī | `mardawi` |  | 11 | 2 | 7 | 2 |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV19P317` `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV25P375` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV26P209` |
 | Ibn al-Najjār al-Futūḥī | `ibn_najjar` |  | 8 |  | 4 | 4 |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV10P977` `src:shamela-10649/PageV01P160` `src:shamela-10649/PageV01P154` |

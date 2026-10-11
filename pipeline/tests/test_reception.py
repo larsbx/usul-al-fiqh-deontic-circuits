@@ -129,3 +129,10 @@ def test_exclusions_apply_when_the_lexicon_is_a_one_shot_iterator():
     match = matcher(c for c in (MUGHNI,))
     assert match("وقال الذهبي في المغني") == ()
     assert match("وقال في المغني") == ("ibn_qudama.mughni",)
+
+
+def test_the_grandfather_of_shaykh_al_islam_is_the_majd():
+    """«جد شيخ الإسلام ابن تيمية» names Majd al-Dīn; the trailing «ابن تيمية» must not count for the grandson."""
+    match = matcher(authors(ROOT / "corpus/reception/authors.json"), cue_single=False)
+    assert match("وصرح به المجد جد شيخ الإسلام ابن تيمية") == ("majd",)
+    assert match("ومنهم جد شيخ الإسلام ابن تيمية، وهو مجد الدين") == ("majd",)  # bare «مجد الدين» is not a form
