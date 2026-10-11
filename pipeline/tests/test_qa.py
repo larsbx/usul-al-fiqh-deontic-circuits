@@ -5,9 +5,9 @@ from pathlib import Path
 import jsonschema
 import pytest
 
-from usul_corpus.__main__ import UNIT_SEGMENTERS
 from usul_corpus.qa import segment_entries, segment_qa
 from usul_corpus.records import fatwa_record, masala_record
+from usul_corpus.units import UNIT_SEGMENTERS
 
 ROOT = Path(__file__).resolve().parents[2]
 
