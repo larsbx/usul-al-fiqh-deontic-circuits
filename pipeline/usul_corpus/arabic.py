@@ -129,6 +129,11 @@ def letters(s: str) -> str:
     return re.sub(r"[^ء-ي]", "", _MARKERS.sub("", s))
 
 
+def words(s: str) -> list[str]:
+    """The normalized words of ``s``, letters only, empty ones dropped."""
+    return [w for w in (letters(x) for x in normalize(s).split()) if w]
+
+
 def revolume(text: str) -> str:
     """Shamela fetches mark every page `PageV01`; Shamela numbers pages per volume, so a page number
     that goes back starts the next volume. Texts whose markers already name volumes are unchanged."""

@@ -111,7 +111,7 @@ import bisect
 import re
 from collections import Counter
 
-from .arabic import normalize
+from .arabic import normalize, words
 
 _IRWA_HEAD = re.compile(r"^# \[?\(([٠-٩]+)\)\s*[-ـ–]?\s*[\[\(\"“]")
 _IRWA_VERDICT = re.compile(r"^# \*\s*(.{1,30}?)[\.\s]*$")
@@ -203,11 +203,6 @@ GENERIC = 3      # a shingle found in more matns than this is a formula, not evi
 JOIN_TYPES = ("qaida", "far", "sharh", "hadd")
 
 
-def _words(s: str) -> list[str]:
-    from .arabic import letters
-    return [w for w in (letters(x) for x in normalize(s).split()) if w]
-
-
 def join_candidates(text: str, records: list[dict]) -> list[dict]:
     """Candidate (al-Irwāʾ entry, record) pairs: the quoted matn's prefix inside the excerpt, or a
     shared run of content words, over the `JOIN_TYPES` records. Candidates are proposals; `corpus/hadith/irwa_join_review.json`
@@ -216,12 +211,12 @@ def join_candidates(text: str, records: list[dict]) -> list[dict]:
     records = [r for r in records if r["record_type"] in JOIN_TYPES]
     verdicts = dict(irwa_entries(text))
     matns = {n: m for n, m in irwa_matns(text).items() if n in verdicts}
-    freq = Counter(w for m in matns.values() for w in _words(m))
-    freq.update(w for r in records for w in _words(r.get("excerpt_ar", "")))
+    freq = Counter(w for m in matns.values() for w in words(m))
+    freq.update(w for r in records for w in words(r.get("excerpt_ar", "")))
     stop = {w for w, _ in freq.most_common(STOPWORDS)}
 
     def shingles(s: str) -> list[tuple[str, ...]]:
-        c = [w for w in _words(s) if w not in stop]
+        c = [w for w in words(s) if w not in stop]
         return [tuple(c[i:i + SHINGLE]) for i in range(len(c) - SHINGLE + 1)]
 
     in_matns: dict[tuple[str, ...], set[int]] = {}

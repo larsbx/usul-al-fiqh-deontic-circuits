@@ -570,6 +570,26 @@ def report(cases: list[dict]) -> dict:
             "per_encoder": {e: dict(sorted(v.items())) for e, v in per.items() if v}}
 
 
+UNIT_TYPES = ("fatwa", "masala", "bab")
+
+
+def annotation_errors(cases: list[dict], records: list[dict]) -> list[str]:
+    """Every case annotates one committed record, once. A farʿ also belongs to a qāʿida of its home
+    encoder, and an encoder's annotated qawāʿid have every farʿ annotated (method §4, invariant 5).
+    A fatwā, masʾala or bāb unit has no qāʿida: routing assigns its encoder, so only the first
+    two checks apply to it."""
+    far = {r["id"]: r["qaida"] for r in records if r["record_type"] == "far"}
+    units = {r["id"] for r in records if r["record_type"] in UNIT_TYPES}
+    ids = [c["far"] for c in cases]
+    errs = [f"{i}: annotated twice" for i, n in sorted(Counter(ids).items()) if n > 1]
+    errs += [f"{i}: not a committed farʿ or unit record" for i in sorted(set(ids) - set(far) - units)]
+    home = {c["far"]: c.get("home") or c.get("revisit", {}).get("from_encoder", c["encoder"]) for c in cases if c["far"] in far}
+    errs += [f"{i}: its qāʿida is not its home encoder's" for i, e in sorted(home.items()) if far[i] not in ENCODERS[e]["qawaid"]]
+    expected = {i for e in set(home.values()) for i, q in far.items() if q in ENCODERS[e]["qawaid"]}
+    errs += [f"{i}: unannotated farʿ of an annotated encoder's qāʿida" for i in sorted(expected - set(home))]
+    return errs
+
+
 def load_dir(d: Path) -> list[dict]:
     return [c for f in sorted(d.glob("*.json")) if f.name != "report.json" for c in json.loads(f.read_text())["cases"]]
 

@@ -6,7 +6,7 @@
     python -m usul_corpus signature   # regenerate the Lean Σ-coverage check
     python -m usul_corpus takhrij     # regenerate the takhrīj guards and report
     python -m usul_corpus reconcile   # resolve apparent contradictions (ledger → Lean guards, report)
-    python -m usul_corpus m8-worklist [--check]  # reconcile committed M8 scope
+    python -m usul_corpus worklist [--check]     # obligation inventories (M8 and units)
     python -m usul_corpus m5-commands [--fetch-source]  # replay candidate capability receipts
     python -m usul_corpus docs        # render the dossier and glossary pages from corpus/dossier
     python -m usul_corpus reception   # count the citers' citations of each cited work (cached citers only)
@@ -40,9 +40,8 @@ from .texts import publishable, restore, stage
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
 from .openiti import parse_markdown
-from .abwab import segment_abwab
-from .qa import segment_entries, segment_qa
-from .records import bab_record, fatwa_record, hadd_record, masala_record, qaida_records, sharh_record, unit_tags
+from .records import hadd_record, qaida_records, sharh_record, unit_tags
+from .units import UNIT_SEGMENTERS
 from .segment import (
     audit_numbering,
     consensus_numbering,
@@ -160,14 +159,6 @@ SEGMENTERS = {
     "lines": lambda text, seg: segment_lines(text, seg["marker"]),
     "numbered": lambda text, seg: segment_numbered(text, seg.get("anchor_step")),
     "verse_block": lambda text, seg: segment_verse_block(text),
-}
-
-
-# Line-segmented kinds: one record per unit, numbered in order, each with its sha256 receipt.
-UNIT_SEGMENTERS = {
-    "qa": (lambda text, seg: segment_qa(text, seg.get("question"), seg["answer"], seg.get("question_heading", False)), fatwa_record),
-    "masail": (lambda text, seg: segment_entries(text, seg["start"], seg.get("ordered", False)), masala_record),
-    "abwab": (lambda text, seg: segment_abwab(text, seg.get("end")), bab_record),
 }
 
 
@@ -358,26 +349,51 @@ def cmd_reconcile(args: argparse.Namespace) -> int:
     return 0
 
 
-def cmd_m8_worklist(args: argparse.Namespace) -> int:
+def cmd_worklist(args: argparse.Namespace) -> int:
+    """Regenerate (or ``--check``) every obligation inventory: Ibn Rajab's M8 worklist with its scope
+    paragraphs, and the unit inventory of the line-segmented witnesses."""
+    from . import takhrij, units
     from .m8_worklist import OUTPUT, render, scoped_documents
-    path = CORPUS / OUTPUT
     try:
         text = render(CORPUS)
-        documents = scoped_documents(ROOT, json.loads(text))
+        files = {CORPUS / OUTPUT: text, **scoped_documents(ROOT, json.loads(text)),
+                 CORPUS / units.INVENTORY: units.render(CORPUS, {c["far"] for c in takhrij.load(CORPUS)})}
     except ValueError as e:
-        print(f"m8-worklist: {e}", file=sys.stderr)
+        print(f"worklist: {e}", file=sys.stderr)
         return 1
     if args.check:
-        if (not path.exists() or path.read_text(encoding="utf-8") != text
-                or any(p.read_text(encoding="utf-8") != content for p, content in documents.items())):
-            print("M8 worklist stale: run python -m usul_corpus m8-worklist", file=sys.stderr)
+        stale = [str(p.relative_to(ROOT)) for p, content in files.items()
+                 if not p.exists() or p.read_text(encoding="utf-8") != content]
+        if stale:
+            print(f"worklists stale ({', '.join(stale)}): run python -m usul_corpus worklist", file=sys.stderr)
             return 1
     else:
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(text, encoding="utf-8")
-        for p, content in documents.items():
+        for p, content in files.items():
+            p.parent.mkdir(parents=True, exist_ok=True)
             p.write_text(content, encoding="utf-8")
     print(json.dumps(json.loads(text)["summary"]))
+    print(json.dumps(json.loads(files[CORPUS / units.INVENTORY])["summary"]))
+    return 0
+
+
+def cmd_routing(args: argparse.Namespace) -> int:
+    """Regenerate (or ``--check``) the routing index, and its out-of-domain report where the IslamQA
+    answers are fetched (Git LFS)."""
+    from . import routing
+    files = {CORPUS / routing.INDEX: routing.render(CORPUS)}
+    answers = ROOT / routing.ANSWERS
+    if answers.exists() and answers.stat().st_size > 1000:
+        files[CORPUS / routing.OOD] = routing.render_ood(ROOT)
+    if args.check:
+        stale = [str(p.relative_to(ROOT)) for p, c in files.items() if not p.exists() or p.read_text(encoding="utf-8") != c]
+        if stale:
+            print(f"routing stale ({', '.join(stale)}): run python -m usul_corpus routing", file=sys.stderr)
+            return 1
+    else:
+        for p, c in files.items():
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(c, encoding="utf-8")
+    print(json.dumps(json.loads(files[CORPUS / routing.INDEX])["recall"]))
     return 0
 
 
@@ -686,7 +702,7 @@ def cmd_validate(_: argparse.Namespace) -> int:
     return 1 if errors else 0
 
 
-def main(argv: list[str] | None = None) -> int:
+def parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="usul_corpus")
     sub = p.add_subparsers(required=True)
     f = sub.add_parser("fetch")
@@ -701,9 +717,13 @@ def main(argv: list[str] | None = None) -> int:
     rc = sub.add_parser("reconcile", help="resolve the bank's apparent contradictions by its own taʿāruḍ procedure")
     rc.add_argument("--draft", action="store_true", help="print draft ledger entries for unledgered contradictions")
     rc.set_defaults(run=cmd_reconcile)
-    m = sub.add_parser("m8-worklist")
-    m.add_argument("--check", action="store_true")
-    m.set_defaults(run=cmd_m8_worklist)
+    for name in ("worklist", "m8-worklist"):  # m8-worklist: the name before the unit inventory
+        m = sub.add_parser(name, help="regenerate or --check the obligation inventories")
+        m.add_argument("--check", action="store_true")
+        m.set_defaults(run=cmd_worklist)
+    r = sub.add_parser("routing", help="regenerate or --check the encoder routing index (P0.6)")
+    r.add_argument("--check", action="store_true")
+    r.set_defaults(run=cmd_routing)
     m5 = sub.add_parser("m5-commands", help="check candidate command capabilities and source receipts")
     m5.add_argument("--fetch-source", action="store_true", help="restore the full pinned witness without repinning")
     m5.set_defaults(run=cmd_m5_commands)
@@ -728,7 +748,11 @@ def main(argv: list[str] | None = None) -> int:
     o.add_argument("--pages", help="PDF page range A-B (default: all)")
     o.add_argument("--jobs", type=int, default=4)
     o.set_defaults(run=cmd_ocr)
-    args = p.parse_args(argv)
+    return p
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = parser().parse_args(argv)
     return args.run(args)
 
 
