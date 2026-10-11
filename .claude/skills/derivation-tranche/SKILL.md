@@ -14,6 +14,7 @@ The method is specified in `docs/architecture/derivation-method.md`; this is how
 3. **Read (lane A).** Formalise each qāʿida from its own wording.
    - The reading goes in a new module `formal/lean/Usul/Readings/<Shard>.lean`. It imports the specific `Usul.*` modules it needs, never `Usul`.
    - Add link theorems to existing principles where the text draws the link.
+   - Type the encoder in Lean (`formal/lean/Usul/Typing/`): its facts go into the type of the qāʿida that states them, extending an existing qāʿida type where the text builds on it, then `make lean` regenerates the Prolog export.
    - Register the encoder in `pipeline/usul_corpus/encoders/<shard>.py`: `ENCODERS = {name: dict(facts=…, out=…, lean=…, py=…, qawaid=[…], sadi=[…])}`, shaped like `takhrij.CORE`. Never edit `takhrij.CORE` or `Usul/Refinements.lean`, unless you are making a conservative refinement of an encoder they already hold, with its `*_conservative` theorem.
 4. **Annotate.** One case per obligation, in your own suite file `corpus/takhrij/<suite>.json`. Each case records: facts within the encoder's domains, the ruling the text states, positions with their attributions, the class, `matches_madhhab`, and `needs` on gaps.
    - Do not force a case. If no reading fits, it is `missing_rule` or `missing_fact` with the need named.

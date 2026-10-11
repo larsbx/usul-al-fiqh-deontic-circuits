@@ -89,12 +89,18 @@ Precedents:
       - each typed encoder's output type, and the fields its elaborated `proj` reads, in order.
 
       `make lean` regenerates it and fails if it is stale. `examples/v41_typing.pl` runs the typing judgement on situations stated as `sit/3`: `applies`, `missing_fact`, `route`, `shares`, `field_of` and `ill_typed`. `examples/v41_typing_fixtures.pl` restates the Lean theorems as fixture vectors (`tests/run_all.sh`), and `tests/mutation_test.sh` kills a mutant of each typing guard. A typed encoder's ruling is its existing kernel function (`run`), so typing changes no ruling by construction.
-  - **T2, in progress (16 of 104 encoders typed):** each fact goes into the type of the qāʿida that states it. Where a Lean doc says one qāʿida is an instance of another, the type extends it. Done: al-Saʿdī Q11, Q20 and Q28, with the Ibn Rajab qawāʿid under them:
-    - Q20 and the unknown: `MajhulHaqq` (Q20); `MajhulMadum` (Ibn Rajab 106), extended by `Luqata` (106.f002) and `Istihlak` (22);
-    - Q28 and the substitute: `Badal` (Q28), extended by `BadalWujub` (16) and `Intiqal` (7);
-    - Q11 and certainty: `Itizal` (160) and `NiyyaMansiyya` (forgotten iḥrām intention), both extending `Yaqin`; `ShakkShart` (68), extending `Qarain`, and `Rukhsa` (68.f001), extending `ShakkShart`.
+  - **T2, done: all 104 encoders are typed.** Each fact goes into the type of the qāʿida that states it (`Usul.Typing.Qaida`, `formal/lean/Usul/Typing/Qaida.lean`): 85 types. Where a Lean doc says one qāʿida is an instance of another, the type extends it.
+    - The first slice covered al-Saʿdī Q11, Q20 and Q28 with their Ibn Rajab qawāʿid: `MajhulHaqq`, `MajhulMadum` and its extensions `Luqata` and `Istihlak`, `Badal` and its extensions `BadalWujub` and `Intiqal`, `Itizal`, `NiyyaMansiyya`, `ShakkShart` and `Rukhsa`.
+    - The other 88 encoders (`formal/lean/Usul/Typing/Encoders.lean`) read types named by their qāʿida (`Sadi35`, `Rajab64`, `Lahham43`, …), each documented with the qāʿida's statement quoted from the committed records. Ibn Rajab 22's and 68's new encoders read `Khalt` (extending `Istihlak`) and `ShakkShartFuru` (extending `ShakkShart`).
+    - Unrelated qawāʿid that use one word get qualified fields, because Lean merges same-named parent fields:
+      - `mixedSameKind` (Ibn Rajab 22) / `actsSameKind` (Q41);
+      - `commandForm` (Ibn al-Laḥḥām 43) / `nounForm` (Q59);
+      - `acquisitionNecessity` (Ibn Rajab 50) / `necessity` (Ibn Rajab 7);
+      - each command schema's `…Reading`.
 
-    `original_possibility_is_shared` proves that Q28 types both substitute encoders over one field. The Prolog export carries all 16 typed encoders.
+      `unrelated_shared_field` in `examples/v41_typing.pl` flags any field two types declare when neither extends the other, and a fixture requires there be none.
+    - `test_every_encoder_is_typed_with_its_arity` checks the Lean export against the registry: a new encoder lands typed or not at all.
+    - Theorems: `original_possibility_is_shared` (Q28 types both substitute encoders over one field), `luqata_extends_majhul`.
   - **Candidate identifications, left for review.** These pairs look like one notion stated at two levels. They are kept as separate fields because merging them is a modelling decision:
     - `ghalaba` (68) and a ẓāhir graded ẓann (Q11 / Q52);
     - `rukhsaNeedsCertainty` (68.f001) and `needsFirm` (68);

@@ -10,8 +10,8 @@
 
 :- ensure_loaded(v41_typing).
 
-:- multifile([sit/3, encoder_reads/3, fixture_expectation/3, fixture_premise/2]).
-:- discontiguous([sit/3, encoder_reads/3, fixture_expectation/3, fixture_premise/2]).
+:- multifile([sit/3, encoder_reads/3, type_field/3, fixture_expectation/3, fixture_premise/2]).
+:- discontiguous([sit/3, encoder_reads/3, type_field/3, fixture_expectation/3, fixture_premise/2]).
 
 % A trustee who did not transgress but was negligent in safekeeping, in a
 % matter touching another's right; nothing said of inquiry.
@@ -66,3 +66,13 @@ fixture_premise(amana_is_not_yaqin, query(qaida_type(amana, _))).
 fixture_expectation(known_field_not_missing,
     query(missing_fact(trust_loss, s_trustee, hand)), expect_false).
 fixture_premise(known_field_not_missing, query(sit(s_trustee, hand, trustee))).
+
+% No field is shared by two qāʿida types unless one extends the other: an
+% identification across qawāʿid is a decision, never a name collision. The
+% planted pair (fx_left, fx_right) shows the rule catches one.
+type_field(fx_left, fx_field, 'Option Bool').
+type_field(fx_right, fx_field, 'Option Bool').
+fixture_expectation(no_silent_identification,
+    query(\+ (unrelated_shared_field(_, T1, T2), \+ sub_atom(T1, 0, _, _, fx_), \+ sub_atom(T2, 0, _, _, fx_))), expect_true).
+fixture_expectation(silent_identification_caught,
+    query(unrelated_shared_field(fx_field, fx_left, fx_right)), expect_true).

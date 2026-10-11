@@ -14,6 +14,9 @@
 %    shares(F, E1, E2)      two encoders read one field (one qāʿida's notion)
 %    field_of(T, F)         F belongs to qāʿida type T, through `extends`
 %    ill_typed(E, F)        E reads a field no qāʿida type declares
+%    unrelated_shared_field(F, T1, T2)  two types declare F though neither
+%                           extends the other: a silent identification (Lean
+%                           merges same-named parent fields)
 % =========================================================================
 
 :- ensure_loaded(v41_types).
@@ -39,3 +42,9 @@ route(S, E) :- applies(E, S).
 shares(F, E1, E2) :- reads(E1, F), reads(E2, F), E1 @< E2.
 
 ill_typed(E, F) :- reads(E, F), \+ typed_field(F).
+
+type_below(T, T).
+type_below(T, A) :- type_extends(T, P), type_below(P, A).
+related(T1, T2) :- type_below(T1, T2) ; type_below(T2, T1).
+unrelated_shared_field(F, T1, T2) :-
+    type_field(T1, F, _), type_field(T2, F, _), T1 @< T2, \+ related(T1, T2).

@@ -19,3 +19,4 @@ import Usul.Refinements
 import Usul.Readings
 import Usul.Seam
 import Usul.Typing
+import Usul.Typing.Encoders

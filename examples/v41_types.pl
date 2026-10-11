@@ -2,7 +2,7 @@
 % The type system's declarations, read from the Lean kernel; the typing rules are in v41_typing.pl.
 :- encoding(utf8).
 :- discontiguous([qaida_type/2, type_extends/2, type_field/3, encoder_type/2, encoder_reads/3]).
-:- multifile(encoder_reads/3).
+:- multifile([encoder_reads/3, type_field/3]).
 
 qaida_type(amana, 'al-Saʿdī Q14 «التلف في يد الأمين غير مضمون إذا لم يتعد أو يفرط، وفي يد الظالم مضمون مطلقاً»: the hand, and the trustee\'s transgression («يتعد») and negligence in safekeeping («يفرط»); with `pureTrust`, the pure trust (amāna maḥḍa) that transgression voids.').
 type_field(amana, hand, 'Option Usul.Muamalat.Hand').
@@ -29,6 +29,28 @@ qaida_type(itlaf_hal, 'al-Saʿdī Q13 «الإتلاف يستوي فيه الم�
 type_field(itlaf_hal, mental, 'Option Usul.Muamalat.MentalState').
 qaida_type(itlaf_qasd, 'al-Saʿdī Q36 «من أتلف شيئاً لينتفع به ضمنه، ومن أتلفه دفعاً لمضرته فلا ضمان عليه»: the purpose of the destruction.').
 type_field(itlaf_qasd, purpose, 'Option Usul.Muamalat.Purpose').
+qaida_type(khalt, 'Ibn Rajab 22 «العين المنغمرة في غيرها إذا لم يظهر أثرها فهل هي كالمعدومة حكما أو لا؟». Read by `khalt_as_shirka`, `mixed_haram_by_proportion`.').
+type_extends(khalt, istihlak).
+type_field(khalt, mixed_same_kind, 'Option Bool').
+type_field(khalt, indistinct, 'Option Bool').
+type_field(khalt, lawful_many, 'Option Bool').
+qaida_type(lahham43, 'Ibn al-Laḥḥām 43 «الأمر المجرد عن قرينة هل يقتضى الوجوب أم لا؟». Read by `amr`, `amr_mixed`, `command_intended_usage`, `command_nonverbal_usage`, `command_obligation_status`, `command_prophetic_act_usage`.').
+type_field(lahham43, qarina, 'Option (Option Usul.Hukm)').
+type_field(lahham43, per_item_status, 'Option Usul.Hukm').
+type_field(lahham43, intended_reading, 'Option Usul.CommandSchemata.IntendedUseReading').
+type_field(lahham43, intended, 'Option Usul.CommandSchemata.IntendedRuling').
+type_field(lahham43, nonverbal_reading, 'Option Usul.CommandSchemata.NonverbalReading').
+type_field(lahham43, command_form, 'Option Usul.CommandSchemata.NonverbalForm').
+type_field(lahham43, obligation_reading, 'Option Usul.CommandSchemata.ObligationReading').
+type_field(lahham43, expression, 'Option Usul.CommandSchemata.ObligationExpression').
+type_field(lahham43, prophetic_act_reading, 'Option Usul.CommandSchemata.PropheticActReading').
+type_field(lahham43, imitation_established, 'Option Bool').
+qaida_type(lahham52, 'Ibn al-Laḥḥām 52 «المفرد المحلى بالألف واللام يقتضى العموم إذا لم تكن هناك قرينة عهد.». Read by `haml_ala_adna`.').
+type_field(lahham52, unspecified, 'Option Bool').
+type_field(lahham52, ranked, 'Option Bool').
+qaida_type(lahham61, 'Ibn al-Laḥḥām 61 «إذا ورد دليل بلفظ عام مستقبل ولكن على سبب خاص فهل العبرة بعموم اللفظ أم بخصوص السبب؟». Read by `umum_lafz`.').
+type_field(lahham61, in_occasion, 'Option Bool').
+type_field(lahham61, general_wording, 'Option Bool').
 qaida_type(luqata, 'Ibn Rajab 106.f002 «اللقطة بعد الحول فإنها تتملك لجهالة ربها وما لا يتملك منها يتصدق به»: 106\'s type, with the year of announcement and whether the find is ownable.').
 type_extends(luqata, majhul_madum).
 type_field(luqata, year_passed, 'Option Bool').
@@ -45,15 +67,184 @@ type_field(niyya_mansiyya, component, 'Option (Usul.Refinements.Nusuk → Bool)'
 qaida_type(qarain, 'al-Saʿdī Q52 «إذا قويت القرائن قدمت على الأصل»: Q11\'s type, with the indicator (qarīna).').
 type_extends(qarain, yaqin).
 type_field(qarain, amara, 'Option Bool').
+qaida_type(rajab1, 'Ibn Rajab 1 «الماء الجاري هل هو كالراكد أو كل جرية منه لها حكم الماء المنفرد.». Read by `running_water`.').
+type_field(rajab1, running, 'Option Bool').
+qaida_type(rajab10, 'Ibn Rajab 10 «الألفاظ المعتبرة في العبادات والمعاملات (منها) ما يعتبر لفظه ومعناه وهو ms012 القرآن لإعجازه بلفظه ومعناه، فلا تجوز الترجمة عنه بلغة أخرى.». Read by `wording_in_other_tongue`, `wording_need_not_learn`.').
+type_field(rajab10, meaning_only, 'Option Bool').
+type_field(rajab10, able, 'Option Bool').
+type_field(rajab10, need_not_learn, 'Option Bool').
+qaida_type(rajab11, 'Ibn Rajab 11 «من عليه فرض هل له أن يتنفل قبل أدائه بجنسه أم لا.». Read by `nafl_before_fard`.').
+type_field(rajab11, narrow, 'Option Bool').
+type_field(rajab11, financial, 'Option Bool').
+qaida_type(rajab12, 'Ibn Rajab 12 «المذهب أن العبادات الواردة على وجوه متعددة يجوز فعلها على جميع تلك الوجوه الواردة فيها من غير كراهة لبعضها وإن كان بعضها أفضل من بعض، لكن هل الأفضل المداومة على نوع منها أو فعل جميع الأنواع في أوقات شتى، ظاهر كلام …». Read by `combining_forms`.').
+type_field(rajab12, substitutes, 'Option Bool').
+qaida_type(rajab14, 'Ibn Rajab 14 «(القاعدة الرابعة عشر) : إذا وجد سبب إيجاب أو تحريم من أحد رجلين لا يعلم عينه منهما، فهل يلحق الحكم بكل منهما أو لا يلحق بواحد منهما شيء في المسألة خلاف ولها صور: (إحداها) إذا وجد اثنان منيا في ثوب ينامان فيه أو سمعا …». Read by `cause_from_one_of_two`.').
+type_field(rajab14, harmless, 'Option Bool').
+qaida_type(rajab15, 'Ibn Rajab 15 «إذا استصحبنا أصلا وأعملنا ظاهرا في طهارة شيء أو حله أو حرمته وكان لازم ذلك تغير أصل آخر يجب استصحابه أو ترك العمل بظاهر آخر ms020 يجب إعماله لم يلتفت إلى ذلك اللازم على الصحيح، ولذلك صور: منها) إذا استيقظ من نومه فوجد …». Read by `each_on_its_asl`.').
+type_field(rajab15, separate_matters, 'Option Bool').
+qaida_type(rajab17, 'Ibn Rajab 17 «إذا تقابل عملان أحدهما ذو شرف في نفسه ورفعة وهو واحد، والآخر ذو تعدد في نفسه وكثرة، فأيهما يرجح.». Read by `many_over_noble`.').
+type_field(rajab17, same_cost, 'Option Bool').
+qaida_type(rajab19, 'Ibn Rajab 19 «إمكان الأداء ليس بشرط في استقرار الواجبات بالشرع في الذمة على ظاهر المذهب ويندرج تحت ذلك صور: (منها) الطهارة فإذا وصل عادم الماء إلى الماء وقد ضاق الوقت فعليه أن يتطهر ويصلي بعد الوقت ذكره صاحب المغني.». Read by `settles_without_ability`.').
+type_field(rajab19, making_up, 'Option Bool').
+qaida_type(rajab2, 'Ibn Rajab 2 «شعر الحيوان في حكم المنفصل عنه لا في حكم المتصل، وكذلك الظفر.». Read by `hair_detached`.').
+type_field(rajab2, hair_or_nail, 'Option Bool').
+qaida_type(rajab20, 'Ibn Rajab 20 «النماء المتولد من العين حكمه حكم الجزء، والمتولد من الكسب بخلافه على الصحيح.»; Ibn Rajab 21 «وقد يختص الولد من بين سائر النماء المتولد من العين بأحكام ويعبر عن ذلك بأن الولد هل هو كالجزء أو كالكسب؟». Read by `growth_from_substance`.').
+type_field(rajab20, from_substance, 'Option Bool').
+qaida_type(rajab24, 'Ibn Rajab 24 «من تعلق بماله حق واجب عليه فبادر إلى نقل الملك عنه صح، ثم إن كان الحق متعلقا بالمال نفسه لم يسقط وإن كان متعلقا بمالكه لمعنى زال بانتقاله عنه سقط، وإن كان لا يزول بانتقاله لم يسقط على الأصح، ويدخل تحت ذلك صور: (منها) لو …». Read by `right_after_transfer`.').
+type_field(rajab24, on_property, 'Option Bool').
+type_field(rajab24, reason_ceases, 'Option Bool').
+qaida_type(rajab25, 'Ibn Rajab 25 «من ثبت له ملك عين ببينة أو إقرار فهل يتبعها ما يتصل بها أو تولد منها أم لا؟». Read by `follows_proven_ownership`.').
+type_field(rajab25, follows_in_sale, 'Option Bool').
+qaida_type(rajab27, 'Ibn Rajab 27 «: من أتلف نفسا أو أفسد عبادة لنفع يعود إلى نفسه فلا ضمان عليه، وإن كان النفع يعود إلى غيره فعليه الضمان.». Read by `benefit_to_other`.').
+type_field(rajab27, benefits_other, 'Option Bool').
+qaida_type(rajab28, 'Ibn Rajab 28 «إذا حصل التلف من فعلين أحدهما مأذون فيه والآخر غير مأذون فيه وجب الضمان كاملا على الصحيح، وإن كان من فعلين غير مأذون فيهما فالضمان بينهما نصفين حتى لو كان أحدهما من فعل من لا يجب الضمان عليه لم يجب على الآخر أكثر من …». Read by `concurrent_causes`.').
+type_field(rajab28, other_act_permitted, 'Option Bool').
+qaida_type(rajab29, 'Ibn Rajab 29 «من سومح في مقدار يسير فزاد عليه فهل تنتفي المسامحة في الزيادة وحدها أو في الجميع فيه وجهان وللمسألة صور: (منها) : الوكيل في البيع مع الإطلاق يملك البيع بثمن المثل وبدونه بما يتغابن بمثله عادة فإذا باع بما لا يتغابن …». Read by `tolerance_exceeded`.').
+type_field(rajab29, at_fault, 'Option Bool').
+qaida_type(rajab3, 'Ibn Rajab 3 «من وجبت عليه عبادة فأتى بما لو اقتصر على ما دونه لأجزأه هل يوصف الكل بالوجوب أو قدر الإجزاء منه.». Read by `excess_in_following`, `excess_over_sufficient`.').
+type_field(rajab3, separable, 'Option Bool').
+type_field(rajab3, lightened, 'Option Bool').
+type_field(rajab3, following, 'Option Bool').
+qaida_type(rajab30, 'Ibn Rajab 30 «والوجوب فهل يعود إلى ملكه أم لا؟». Read by `failed_obligation_returns`.').
+type_field(rajab30, failed_to_count, 'Option Bool').
+qaida_type(rajab31, 'Ibn Rajab 31 «من شرع في عبادة تلزم بالشروع ثم فسدت فعليه قضاؤها على صفة التي أفسدها سواء كانت واجبة في الذمة على تلك الصفة أو دونها ويتخرج على ذلك مسائل: (منها) إذا صلى المسافر خلف مقيم وفسدت صلاته فإنه يجب عليه قضاؤها تامة (ومنها) …». Read by `makeup_after_failure`.').
+type_field(rajab31, failure, 'Option Usul.Refinements.MakeupFailure').
+qaida_type(rajab32, 'Ibn Rajab 32 «يصح عندنا استثناء منفعة العين المنتقل ملكها من ناقلها مدة معلومة، ويتخرج على ذلك مسائل منها: المبيع إذا استثنى البائع منفعته مدة معلومة صح، وحكي فيه رواية أخرى بعدم الصحة.». Read by `benefit_exception`.').
+type_field(rajab32, known_period, 'Option Bool').
+type_field(rajab32, tolerates_uncertainty, 'Option Bool').
+qaida_type(rajab33, 'Ibn Rajab 33 «الاستثناء الحكمي هل هو كالاستثناء اللفظي أم تغتفر فيه الجهالة بخلاف اللفظي فيه وجهان، والصحيح عند صاحب المغني الصحة، وهو قياس المذهب، خلافا للقاضي، ويخرج على ذلك مسائل: منها: لو باعه أمة حاملا بحر وقلنا يصح استثناء …». Read by `implicit_exception`.').
+type_field(rajab33, implicit, 'Option Bool').
+qaida_type(rajab34, 'Ibn Rajab 34 «استحقاق منافع العبد بعقد لازم يمنع من سريان العتق إليها كالاستثناء في العقد وأولى ; لأن الاستثناء الحكمي أقوى، ولهذا يصح بيع العين المؤجرة والأمة المزوجة عند من لا يرى استثناء المنافع في العقد خلافا للشيخ تقي الدين في …». Read by `manumission_spread`.').
+type_field(rajab34, binding_contract, 'Option Bool').
+qaida_type(rajab35, 'Ibn Rajab 35 «من ملك منفعة عين بعقد ثم ملك العين بسبب آخر هل ينفسخ العقد الأول أم لا؟». Read by `benefit_then_thing`.').
+type_field(rajab35, perpetual_commutative, 'Option Bool').
+qaida_type(rajab36, 'Ibn Rajab 36 «من استأجر عينا ممن له ولاية الإيجار ثم زالت ولايته قبل انقضاء المدة فهل تنفسخ الإجارة؟». Read by `lease_after_authority`.').
+type_field(rajab36, succeeds_lessor, 'Option Bool').
+qaida_type(rajab37, 'Ibn Rajab 37 «في توارد العقود المختلفة بعضها على بعض، وتداخل أحكامها وتندرج تحتها صور: منها: إذا رهنه شيئا ثم أذن له في الانتفاع به، فهل يصير عارية حالة الانتفاع أم لا؟». Read by `successive_by_binding`, `successive_contracts`.').
+type_field(rajab37, successive, 'Option Bool').
+type_field(rajab37, earlier_binding, 'Option Bool').
+type_field(rajab37, later_binding, 'Option Bool').
+qaida_type(rajab38, 'Ibn Rajab 38 «فيما إذا وصل بألفاظ العقود ما يخرجها عن موضوعها فهل يفسد العقد بذلك أو يجعل كناية عما يمكن صحته على ذلك الوجه؟». Read by `words_out_of_nature`.').
+type_field(rajab38, other_contract_possible, 'Option Bool').
+qaida_type(rajab39, 'Ibn Rajab 39 «في انعقاد العقود بالكنايات واختلاف الأصحاب في ذلك.». Read by `contract_by_kinaya`.').
+type_field(rajab39, needs_witnessing, 'Option Bool').
+qaida_type(rajab4, 'Ibn Rajab 4 «العبادات كلها سواء كانت بدنية أو مالية أو مركبة منهما لا يجوز تقديمها على سبب وجوبها ويجوز تقديمها بعد سبب الوجوب وقبل الوجوب أو قبل شرط الوجوب ويتفرع على ذلك مسائل كثيرة: (منها) الطهارة سبب وجوبها الحدث وشرط الوجوب فعل …». Read by `advance_after_cause`.').
+type_field(rajab4, cause_present, 'Option Bool').
+qaida_type(rajab41, 'Ibn Rajab 41 «إذا تعلق بعين حق تعلقا لازما فأتلفها من يلزمه الضمان] فهل يعود الحق إلى البدل المأخوذ من غير عقد آخر؟». Read by `right_to_substitute`.').
+type_field(rajab41, bound_to_thing, 'Option Bool').
+qaida_type(rajab42, 'Ibn Rajab 42 «في أداء الواجبات المالية وهي منقسمة إلى دين وعين فأما الدين فلا يجب أداؤه بدون مطالبة المستحق إذا كان آدميا حتى ذكر ابن عقيل في جواز السفر قبل المطالبة وجهين، وهذا ما لم يكن قراخاني له وقتا للوفاء فأما إن عين وقتا كيوم …». Read by `return_of_held_property`.').
+type_field(rajab42, held_by_consent, 'Option Bool').
+type_field(rajab42, guaranteed, 'Option Bool').
+qaida_type(rajab43, 'Ibn Rajab 43 «فيما يضمن من الأعيان بالعقد أو باليد القابض لمال غيره، لا يخلو إما يقبضه بإذنه أو بغير إذنه فإن قبضه بغير إذنه فإن استند إلى إذن شرعي كاللقطة لم يضمن وكذا إن استند إلى إذن عرفي كالمنقذ لمال غيره من التلف ونحوه وحكى في …». Read by `continued_holding`, `holding_after_contract_end`.').
+type_field(rajab43, withholds, 'Option Bool').
+type_field(rajab43, ended_by_holder, 'Option Bool').
+qaida_type(rajab46, 'Ibn Rajab 46 «في العقود الفاسدة هل هي منعقدة أو لا؟». Read by `void_contract_concluded`.').
+type_field(rajab46, binding, 'Option Bool').
+type_field(rajab46, pervasive, 'Option Bool').
+qaida_type(rajab47, 'Ibn Rajab 47 «في ضمان المقبوض بالعقد الفاسد] ، كل عقد يجب الضمان في صحيحه يجب الضمان في فاسده وكل عقد لا يجب الضمان في صحيحه لا يجب الضمان في فاسده.». Read by `defective_compensation`.').
+type_field(rajab47, contract_liability, 'Option Bool').
+qaida_type(rajab49, 'Ibn Rajab 49 «القبض في العقود على قسمين: أحدهما: أن يكون من موجب العقد ومقتضاه كالبيع ms084 اللازم والرهن اللازم والهبة اللازمة والصداق وعوض الخلع فهذه العقود تلزم من غير قبض، وإنما القبض فيها من موجبات عقودها.». Read by `qabd_in_contracts`.').
+type_field(rajab49, qabd_completes, 'Option Bool').
+qaida_type(rajab5, 'Ibn Rajab 5 «من عجل عبادة قبل وقت الوجوب ثم جاء وقت الوجوب وقد تغير الحال بحيث لو فعل المعجل في وقت الوجوب لم يجزئه فهل تجزئه أم لا؟». Read by `advanced_kaffara_at_obligation`, `advanced_worship`.').
+type_field(rajab5, due_at_performance, 'Option Bool').
+type_field(rajab5, kaffara_changed, 'Option Bool').
+qaida_type(rajab50, 'Ibn Rajab 50 «هل يتوقف الملك في العقود القهرية على دفع الثمن أو يقع بدونه مضمونا في الذمة هذا على ضربين: أحدهما: التملك الاضطراري كمن اضطر إلى طعام الغير ومنعه وقدر على أخذه فإنه يأخذه مضمونا سواء كان معه ثمن يدفعه في الحال أو لا لأن …». Read by `forced_acquisition`, `forced_acquisition_solvent`.').
+type_field(rajab50, acquisition_necessity, 'Option Bool').
+type_field(rajab50, shufa, 'Option Bool').
+type_field(rajab50, solvent, 'Option Bool').
+qaida_type(rajab51, 'Ibn Rajab 51 «فيما يعتبر القبض لدخوله في ضمان مالكه وما لا يعتبر] له الملك يقع تارة بعقد وتارة بغير عقد والعقود نوعان: أحدهما عقود المعاوضات المحضة فينتقل الضمان فيها إلى من ينتقل الملك إليه بمجرد التمكن من القبض التام والحيازة إذا …». Read by `daman_without_qabd`.').
+type_field(rajab51, determined, 'Option Bool').
+qaida_type(rajab52, 'Ibn Rajab 52 «في التصرف في المملوكات قبل قبضها: وهي منقسمة إلى عقود وغيرها فالعقود نوعان: أحدهما: عقود المعاوضات وتنقسم إلى بيع وغيره، فأما المبيع فقالت طائفة من الأصحاب التصرف قبل القبض والضمان متلازمان فإن كان البيع مضمونا على …». Read by `disposal_before_qabd`, `disposal_before_qabd_debt`.').
+type_field(rajab52, mubham, 'Option Bool').
+type_field(rajab52, settled, 'Option Bool').
+type_field(rajab52, debt_to_third, 'Option Bool').
+qaida_type(rajab54, 'Ibn Rajab 54 «من ثبت له حق في عين وسقط بتصرف غيره فيها، فهل يجوز للمتصرف فيها الإقدام على التصرف المسقط لحق غيره قبل استئذانه أم لا؟». Read by `disposal_over_anothers_right`.').
+type_field(rajab54, extinguishes, 'Option Bool').
+qaida_type(rajab55, 'Ibn Rajab 55 «من ثبت له حق التملك بفسخ أو عقد هل يكون تصرفه فسخا أم لا وهل ينفذ تصرفه أم لا؟». Read by `right_to_own_disposal`.').
+type_field(rajab55, cause_complete, 'Option Bool').
+type_field(rajab55, tie_remains, 'Option Bool').
+qaida_type(rajab56, 'Ibn Rajab 56 «شروط العقود من أهلية العاقد أو المعقود له أو عليه إذا وجدت مقترنة بها ولم يتقدم عليها هل يكتفى بها في صحتها أم لا بد من سبقها؟». Read by `concurrent_condition`.').
+type_field(rajab56, prior, 'Option Bool').
+type_field(rajab56, concurrent, 'Option Bool').
+qaida_type(rajab57, 'Ibn Rajab 57 «إذا تقارن الحكم ووجود المنع منه، فهل يثبت الحكم أم لا؟». Read by `ruling_with_bar`.').
+type_field(rajab57, with_bar, 'Option Bool').
+qaida_type(rajab58, 'Ibn Rajab 58 «من تعلق به الامتناع من فعل هو متلبس به فبادر إلى الإقلاع عنه، هل ms127 يكون إقلاعه فعلا للممنوع منه أو تركا له فلا يترتب عليه شيء من أحكامه؟». Read by `desisting_at_once`.').
+type_field(rajab58, foresaw, 'Option Bool').
+qaida_type(rajab59, 'Ibn Rajab 59 «العقود لا ترد إلا على موجود بالفعل أو بالقوة، وأما الفسوخ فترد على المعدوم حكما واختيارا على الصحيح وقد دل عليه حديث المصراة حيث أوجب الشارع رد صاع التمر عوضا عن اللبن بعد تلفه وهو مما ورد العقد عليه فدل على أنه حكم …». Read by `annulment_on_nonexistent`, `annulment_without_return`.').
+type_field(rajab59, annulment, 'Option Bool').
+type_field(rajab59, defect_return, 'Option Bool').
+qaida_type(rajab61, 'Ibn Rajab 61 «المتصرف تصرفا عاما على الناس كلهم من غير ولاية أحد معين وهو الإمام، هل يكون تصرفه عليهم بطريق الوكالة لهم أو بطريق الولاية؟». Read by `deputy_of_principal`, `deputy_of_qadi`.').
+type_field(rajab61, general, 'Option Bool').
+type_field(rajab61, of_qadi, 'Option Bool').
+qaida_type(rajab62, 'Ibn Rajab 62 «فيما ينعزل قبل العلم بالعزل، المشهور أن كل من ينعزل بموت أو عزل هل ينعزل بمجرد ذلك أم يقف عزله على علمه؟». Read by `removal_before_knowledge`.').
+type_field(rajab62, public_office, 'Option Bool').
+qaida_type(rajab64, 'Ibn Rajab 64 «من توقف نفوذ تصرفه أو سقوط الضمان أو الحنث عنه على الإذن فتصرف قبل العلم به ثم تبين أن الإذن كان موجودا هل يكون كتصرف المأذون له أو لا؟»; Ibn Rajab 65 «وهي من تصرف في شيء يظن أنه لا يملكه فتبين أنه كان يملكه، وفيها خلاف أيضا ويندرج تحتها صور: منها لو باع ملك أبيه بغير إذنه ثم تبين أن أباه كان قد مات ولا وارث له وفي صحة تصرفه وجهان ويقال روايتان.». Read by `unknown_condition`, `unknown_condition_in_fact`.').
+type_field(rajab64, knew, 'Option Bool').
+type_field(rajab64, liability_only, 'Option Bool').
+type_field(rajab64, transaction_authority, 'Option Bool').
+qaida_type(rajab65, 'Ibn Rajab 65 «وهي من تصرف في شيء يظن أنه لا يملكه فتبين أنه كان يملكه، وفيها خلاف أيضا ويندرج تحتها صور: منها لو باع ملك أبيه بغير إذنه ثم تبين أن أباه كان قد مات ولا وارث له وفي صحة تصرفه وجهان ويقال روايتان.». Read by `qisas_belongs_to_whom`.').
+type_field(rajab65, right_is_victims, 'Option Bool').
+qaida_type(rajab66, 'Ibn Rajab 66 «ولو تصرف مستندا إلى سبب ثم تبين خطؤه فيه وأن السبب المعتمد غيره وهو موجود فهو نوعان: أحدهما: أن يكون الاستناد إلى ما ظنه صحيحا أيضا فالتصرف صحيح مثل أن يستدل على القبلة بنجم يظنه الجدي ثم تبين أنه نجم آخر مسامته.». Read by `mistaken_basis`.').
+type_field(rajab66, believed_basis, 'Option Bool').
+type_field(rajab66, actual_basis, 'Option Bool').
+qaida_type(rajab9, 'Ibn Rajab 9 «في العبادات الواقعة على وجه محرم، إن كان التحريم عائدا إلى ذات العبادة على وجه يختص بها لم يصح، وإن كان عائدا إلى شرطها فإن كان على وجه يختص بها فكذلك أيضا، وإن كان لا يختص بها ففي الصحة روايتان أشهرهما عدمها، وإن عاد …». Read by `prohibited_worship`.').
+type_field(rajab9, target, 'Option Usul.Refinements.Prohibited').
+qaida_type(rajab91, 'Ibn Rajab 91 «يضمن بالعقد وباليد الأموال المحضة المنقولة إذا وجد فيها النقل.». Read by `hand_liability`.').
+type_field(rajab91, property_like, 'Option Bool').
+qaida_type(rajab93, 'Ibn Rajab 93 «من قبض مغصوبا من غاصبه ولم يعلم أنه مغصوب فالمشهور عن الأصحاب أنه بمنزلة الغاصب في جواز تضمينه ما كان الغاصب يضمنه من عين ومنفعة ثم إن كان القابض قد دخل على ضمان عين أو منفعة استقر ضمانها عليه ولم يرجع ms272 على الغاصب …». Read by `taker_from_usurper`.').
+type_field(rajab93, entered_on_liability, 'Option Bool').
 qaida_type(rukhsa, 'Ibn Rajab 68.f001 «لأن المسح رخصة ولم تتحقق إباحتها فلم يصح»: a concession is 68\'s first type.').
 type_extends(rukhsa, shakk_shart).
 type_field(rukhsa, rukhsa_needs_certainty, 'Option Bool').
 type_field(rukhsa, permission_established, 'Option Bool').
+qaida_type(sadi25, 'al-Saʿdī Q25 «تشرع القرعة إذا جهل المستحق وتعذرت القسمة»; Ibn Rajab 160 «تستعمل القرعة في تميز المستحق إذا ثبت الاستحقاق ابتداء لمبهم غير معين عند تساوي أهل الاستحقاق.». Read by `fay_tie_break`, `lots`.').
+type_field(sadi25, tie_break_criteria, 'Option Bool').
+type_field(sadi25, entitled_known, 'Option Bool').
+type_field(sadi25, divisible, 'Option Bool').
+type_field(sadi25, confusion_category, 'Option Bool').
+qaida_type(sadi30, 'al-Saʿdī Q30 «الشركاء في الأملاك والحقوق والمنافع يلزم الممتنع منهم بما يعود على المشترك من الأمور الضرورية»; Ibn Rajab 76 «الشريكان في عين مال أو منفعة إذا كانا محتاجين إلى رفع مضرة أو إبقاء منفعة أجبر أحدهما على موافقة الآخر في الصحيح من المذهب وفي رواية أخرى إن أمكن أحدهما أن يستقل بدفع الضرر فعله ولم يجبر الآخر معه لكن إن أراد الآخر …». Read by `partners`.').
+type_field(sadi30, necessary, 'Option Bool').
+type_field(sadi30, consents, 'Option Bool').
+qaida_type(sadi32, 'al-Saʿdī Q32 «من أدى عن غيره واجباً رجع عليه»; Ibn Rajab 75 «فيمن يرجع بما أنفق على مال غيره بغير إذنه وهو نوعان: أحدهما: من أدى واجبا عن غيره والثاني: من أنفق على ما تعلق به حقه من مال غيره.». Read by `recourse`.').
+type_field(sadi32, gift, 'Option Bool').
+type_field(sadi32, owed_by_other, 'Option Bool').
+type_field(sadi32, permission, 'Option Bool').
+type_field(sadi32, permission_unobtainable, 'Option Bool').
+qaida_type(sadi35, 'al-Saʿdī Q35 «من سقطت عنه العقوبة لموجب ضوعف عليه الضمان»; Ibn Rajab 140 «من سقطت عنه العقوبة بإتلاف نفس أو طرف مع قيام المقتضى له لمانع فإنه يتضاعف عليه الغرم، ويتخرج على ذلك مسائل: منها: إذا قتل مسلم ذميا عمدا ضمنه بدية مسلم.». Read by `doubled`, `ghulul_forfeiture`.').
+type_field(sadi35, lapsed, 'Option Bool').
+type_field(sadi35, as_ghulul, 'Option Bool').
+qaida_type(sadi40, 'al-Saʿdī Q40 «يجب فعل المأمور به كله، فإن قدر على بعضه وعجز عن باقيه وجب عليه فعل ما قدر عليه»; Ibn Rajab 8 «من قدر على بعض العبادة وعجز عن باقيها هل يلزمه الإتيان بما قدر عليه منها أم لا؟». Read by `partial_capability`.').
+type_field(sadi40, capable_of_part, 'Option Bool').
+type_field(sadi40, pure_means, 'Option Bool').
+qaida_type(sadi41, 'al-Saʿdī Q41 «إذا اجتمعت عبادتان من جنس واحد تداخلت أفعالهما واكتفي عنهما بفعل واحد إذا كان مقصودهما واحداً»; Ibn Rajab 18 «إذا اجتمعت عبادتان من جنس في وقت واحد ليست إحداهما مفعولة على جهة القضاء ولا على طريق التبعية للأخرى في الوقت تداخلت أفعالهما، واكتفى فيهما بفعل واحد وهو على ضربين: (أحدهما) : أن يحصل له بالفعل الواحد العبادتان [جميعا] …». Read by `tadakhul`.').
+type_field(sadi41, acts_same_kind, 'Option Bool').
+type_field(sadi41, same_purpose, 'Option Bool').
+qaida_type(sadi45, 'al-Saʿdī Q45 «من لا يعتبر رضاه في عقد أو فسخ لا يعتبر علمه»; Ibn Rajab 63 «وهي أن من لا يعتبر رضاه لفسخ عقد أو حله لا يعتبر علمه به ويندرج تحت ذلك مسائل: منها الطلاق ومنها الخلع فإنه يصح مع ms143 الأجنبي على المذهب سواء قيل هو فسخ أو طلاق ولنا وجه آخر أنه لا يصح مع الأجنبي إذا قلنا إنه فسخ …». Read by `knowledge`.').
+type_field(sadi45, consent_required, 'Option Bool').
+qaida_type(sadi48, 'al-Saʿdī Q48 «الفعل الواحد ينبني بعضه على بعض مع الاتصال المعتاد»; Ibn Rajab 103 «الفعل الواحد يبنى بعضه على بعض مع الاتصال المعتاد ولا ينقطع بالتفرق اليسير ولذلك صور: (منها) مكاثرة الماء النجس القليل بالماء الكثير يعتبر له الاتصال المعتاد دون صب القلتين دفعة واحدة.». Read by `continuity`.').
+type_field(sadi48, customary_continuity, 'Option Bool').
+qaida_type(sadi50, 'al-Saʿdī Q50 «يثبت تبعاً ما لا يثبت استقلالاً»; Ibn al-Laḥḥām 43 «الأمر المجرد عن قرينة هل يقتضى الوجوب أم لا؟»; Ibn Rajab 133 «يثبت تبعا ما لا يثبت استقلالا في مسائل: (منها) شهادة النساء بالولادة يثبت بها النسب ولا يثبت النسب بشهادتهن به استقلالا ومنها: شهادة النساء على إسقاط الجنين بالضربة يوجب الغرة إن سقط ميتا والدية إن سقط حيا.». Read by `residual_jawaz_after_sarf`, `tabaa`.').
+type_field(sadi50, sarf, 'Option Bool').
+type_field(sadi50, independent_proof, 'Option Bool').
+type_field(sadi50, follows_established, 'Option Bool').
+qaida_type(sadi55, 'al-Saʿdī Q55 «لا عذر لمن أقر ولو ادعى غلطاً»; Ibn al-Laḥḥām 54 «النكرة في سياق النفي تعم سواء باشرها النافي نحو ما أحد قائم أو باشرها عاملها نحو ما قام أحد وسواء كان النافي نحو ما أو لم أو لن أو ليس أو غيرها.». Read by `right_for_or_against_self`.').
+type_field(sadi55, for_himself, 'Option Bool').
+qaida_type(sadi59, 'al-Saʿdī Q59 «النكرة في سياق النفي أو النهي أو الشرط تفيد العموم»; al-Saʿdī Q60 «من وما وأل وأي ومتى يدل كل واحد منها على العموم، وكذلك المفرد المضاف»; Ibn al-Laḥḥām 52 «المفرد المحلى بالألف واللام يقتضى العموم إذا لم تكن هناك قرينة عهد.»; Ibn al-Laḥḥām 53 «المفرد المضاف يعم هذا مذهبنا ونص عليه إمامنا تبعا لابن عباس وعلى رضى الله عنهما قاله صاحب المحصول ومختصر كلامه.»; Ibn al-Laḥḥām 54 «النكرة في سياق النفي تعم سواء باشرها النافي نحو ما أحد قائم أو باشرها عاملها نحو ما قام أحد وسواء كان النافي نحو ما أو لم أو لن أو ليس أو غيرها.». Read by `generality`.').
+type_field(sadi59, noun_form, 'Option Usul.Sadi.NounForm').
+type_field(sadi59, context, 'Option Usul.Sadi.Context').
+type_field(sadi59, ahd, 'Option Bool').
+qaida_type(sadi9, 'al-Saʿdī Q9 «العرف والعادة يرجع إليه في كل حكم حكم به الشارع ولم يحده بحد»; Ibn Rajab 1 «الماء الجاري هل هو كالراكد أو كل جرية منه لها حكم الماء المنفرد.». Read by `ayman_by_urf`.').
+type_field(sadi9, custom_one_body, 'Option Bool').
 qaida_type(shakk_shart, 'Ibn Rajab 68: acting while doubting a condition of validity, firm intention needed or not, ghalabat al-ẓann, a presumption that has not been shown to cease (Q11, Q52).').
 type_extends(shakk_shart, qarain).
 type_field(shakk_shart, needs_firm, 'Option Bool').
 type_field(shakk_shart, ghalaba, 'Option Bool').
 type_field(shakk_shart, asl_mustashab, 'Option Bool').
+qaida_type(shakk_shart_furu, 'Ibn Rajab 68 «إيقاع العبادات أو العقود أو غيرهما مع الشك في شرط صحتها هل يجعلها كالمعلقة على تحقيق ذلك الشرط أم لا؟». Read by `hukm_against_own_ijtihad`, `taliq_al_bay`.').
+type_extends(shakk_shart_furu, shakk_shart).
+type_field(shakk_shart_furu, contradicts_nass, 'Option Bool').
+type_field(shakk_shart_furu, conditional, 'Option Bool').
+type_field(shakk_shart_furu, known_to_hold, 'Option Bool').
 qaida_type(yaqin, 'al-Saʿdī Q11 «الأصل بقاء ما كان على ما كان، واليقين لا يزول بالشك»: the presumption and the apparent that would displace it, each with its epistemic grade.').
 type_field(yaqin, asl, 'Option Usul.Grade').
 type_field(yaqin, zahir, 'Option Usul.Grade').
@@ -65,37 +256,238 @@ encoder_type(abstention_under_possible_condition, 'Bool').
 encoder_reads(abstention_under_possible_condition, 1, suspended).
 encoder_reads(abstention_under_possible_condition, 2, possible).
 encoder_reads(abstention_under_possible_condition, 3, absence_known).
+encoder_type(advance_after_cause, 'Bool').
+encoder_reads(advance_after_cause, 1, cause_present).
+encoder_type(advanced_kaffara_at_obligation, 'Bool').
+encoder_reads(advanced_kaffara_at_obligation, 1, due_at_performance).
+encoder_reads(advanced_kaffara_at_obligation, 2, kaffara_changed).
+encoder_type(advanced_worship, 'Bool').
+encoder_reads(advanced_worship, 1, due_at_performance).
+encoder_type(amr, 'Usul.Hukm').
+encoder_reads(amr, 1, qarina).
+encoder_type(amr_mixed, 'Usul.Hukm').
+encoder_reads(amr_mixed, 1, per_item_status).
+encoder_type(annulment_on_nonexistent, 'Bool').
+encoder_reads(annulment_on_nonexistent, 1, annulment).
+encoder_type(annulment_without_return, 'Bool').
+encoder_reads(annulment_without_return, 1, annulment).
+encoder_reads(annulment_without_return, 2, defect_return).
 encoder_type(asl_zahir, 'Bool').
 encoder_reads(asl_zahir, 1, asl).
 encoder_reads(asl_zahir, 2, zahir).
 encoder_reads(asl_zahir, 3, amara).
+encoder_type(ayman_by_urf, 'Usul.Refinements.Body').
+encoder_reads(ayman_by_urf, 1, custom_one_body).
+encoder_type(benefit_exception, 'Bool').
+encoder_reads(benefit_exception, 1, known_period).
+encoder_reads(benefit_exception, 2, tolerates_uncertainty).
+encoder_type(benefit_then_thing, 'Bool').
+encoder_reads(benefit_then_thing, 1, perpetual_commutative).
+encoder_type(benefit_to_other, 'Bool').
+encoder_reads(benefit_to_other, 1, benefits_other).
+encoder_type(cause_from_one_of_two, 'Usul.Refinements.Attach').
+encoder_reads(cause_from_one_of_two, 1, harmless).
+encoder_type(combining_forms, 'Bool').
+encoder_reads(combining_forms, 1, substitutes).
+encoder_type(command_intended_usage, 'Usul.CommandSchemata.CommandUsage').
+encoder_reads(command_intended_usage, 1, intended_reading).
+encoder_reads(command_intended_usage, 2, intended).
+encoder_type(command_nonverbal_usage, 'Usul.CommandSchemata.CommandUsage').
+encoder_reads(command_nonverbal_usage, 1, nonverbal_reading).
+encoder_reads(command_nonverbal_usage, 2, command_form).
+encoder_type(command_obligation_status, 'Usul.Hukm').
+encoder_reads(command_obligation_status, 1, obligation_reading).
+encoder_reads(command_obligation_status, 2, expression).
+encoder_reads(command_obligation_status, 3, qarina).
+encoder_type(command_prophetic_act_usage, 'Usul.CommandSchemata.CommandUsage').
+encoder_reads(command_prophetic_act_usage, 1, prophetic_act_reading).
+encoder_reads(command_prophetic_act_usage, 2, imitation_established).
+encoder_type(concurrent_causes, 'Usul.Refinements.Share').
+encoder_reads(concurrent_causes, 1, other_act_permitted).
+encoder_type(concurrent_condition, 'Bool').
+encoder_reads(concurrent_condition, 1, prior).
+encoder_reads(concurrent_condition, 2, concurrent).
+encoder_type(continued_holding, 'Bool').
+encoder_reads(continued_holding, 1, withholds).
+encoder_type(continuity, 'Bool').
+encoder_reads(continuity, 1, customary_continuity).
+encoder_type(contract_by_kinaya, 'Bool').
+encoder_reads(contract_by_kinaya, 1, needs_witnessing).
+encoder_type(daman_without_qabd, 'Bool').
+encoder_reads(daman_without_qabd, 1, determined).
+encoder_type(defective_compensation, 'Usul.Refinements.CompensationBasis').
+encoder_reads(defective_compensation, 1, contract_liability).
+encoder_type(deputy_of_principal, 'Bool').
+encoder_reads(deputy_of_principal, 1, general).
+encoder_type(deputy_of_qadi, 'Bool').
+encoder_reads(deputy_of_qadi, 1, general).
+encoder_reads(deputy_of_qadi, 2, of_qadi).
+encoder_type(desisting_at_once, 'Bool').
+encoder_reads(desisting_at_once, 1, foresaw).
+encoder_type(disposal_before_qabd, 'Bool').
+encoder_reads(disposal_before_qabd, 1, mubham).
+encoder_reads(disposal_before_qabd, 2, settled).
+encoder_type(disposal_before_qabd_debt, 'Bool').
+encoder_reads(disposal_before_qabd_debt, 1, mubham).
+encoder_reads(disposal_before_qabd_debt, 2, settled).
+encoder_reads(disposal_before_qabd_debt, 3, debt_to_third).
+encoder_type(disposal_over_anothers_right, 'Bool').
+encoder_reads(disposal_over_anothers_right, 1, extinguishes).
+encoder_type(doubled, 'Nat').
+encoder_reads(doubled, 1, lapsed).
 encoder_type(doubt_in_condition, 'Bool').
 encoder_reads(doubt_in_condition, 1, needs_firm).
 encoder_reads(doubt_in_condition, 2, ghalaba).
 encoder_reads(doubt_in_condition, 3, asl_mustashab).
+encoder_type(each_on_its_asl, 'Bool').
+encoder_reads(each_on_its_asl, 1, separate_matters).
+encoder_type(excess_in_following, 'Bool').
+encoder_reads(excess_in_following, 1, separable).
+encoder_reads(excess_in_following, 2, lightened).
+encoder_reads(excess_in_following, 3, following).
+encoder_type(excess_over_sufficient, 'Bool').
+encoder_reads(excess_over_sufficient, 1, separable).
+encoder_reads(excess_over_sufficient, 2, lightened).
 encoder_type(excused_error, 'Bool').
 encoder_reads(excused_error, 1, others_right).
 encoder_reads(excused_error, 2, negligent_inquiry).
+encoder_type(failed_obligation_returns, 'Bool').
+encoder_reads(failed_obligation_returns, 1, failed_to_count).
+encoder_type(fay_tie_break, 'Usul.Refinements.TieBreak').
+encoder_reads(fay_tie_break, 1, tie_break_criteria).
+encoder_type(follows_proven_ownership, 'Bool').
+encoder_reads(follows_proven_ownership, 1, follows_in_sale).
+encoder_type(forced_acquisition, 'Bool').
+encoder_reads(forced_acquisition, 1, acquisition_necessity).
+encoder_type(forced_acquisition_solvent, 'Bool').
+encoder_reads(forced_acquisition_solvent, 1, acquisition_necessity).
+encoder_reads(forced_acquisition_solvent, 2, shufa).
+encoder_reads(forced_acquisition_solvent, 3, solvent).
+encoder_type(generality, 'Bool').
+encoder_reads(generality, 1, noun_form).
+encoder_reads(generality, 2, context).
+encoder_reads(generality, 3, ahd).
+encoder_type(ghulul_forfeiture, 'Bool').
+encoder_reads(ghulul_forfeiture, 1, as_ghulul).
+encoder_type(growth_from_substance, 'Usul.Refinements.Growth').
+encoder_reads(growth_from_substance, 1, from_substance).
+encoder_type(hair_detached, 'Usul.Refinements.Attachment').
+encoder_reads(hair_detached, 1, hair_or_nail).
+encoder_type(haml_ala_adna, 'Bool').
+encoder_reads(haml_ala_adna, 1, unspecified).
+encoder_reads(haml_ala_adna, 2, ranked).
+encoder_type(hand_liability, 'Bool').
+encoder_reads(hand_liability, 1, property_like).
+encoder_type(holding_after_contract_end, 'Bool').
+encoder_reads(holding_after_contract_end, 1, ended_by_holder).
+encoder_type(hukm_against_own_ijtihad, 'Bool').
+encoder_reads(hukm_against_own_ijtihad, 1, contradicts_nass).
 encoder_type(ihram_specification, 'Bool').
 encoder_reads(ihram_specification, 1, component).
+encoder_type(implicit_exception, 'Bool').
+encoder_reads(implicit_exception, 1, implicit).
 encoder_type(istihlak, 'Bool').
 encoder_reads(istihlak, 1, consumed).
 encoder_type(itlaf, 'Bool').
 encoder_reads(itlaf, 1, purpose).
 encoder_reads(itlaf, 2, mental).
+encoder_type(khalt_as_shirka, 'Usul.Refinements.Mixed').
+encoder_reads(khalt_as_shirka, 1, mixed_same_kind).
+encoder_reads(khalt_as_shirka, 2, indistinct).
+encoder_type(knowledge, 'Bool').
+encoder_reads(knowledge, 1, consent_required).
+encoder_type(lease_after_authority, 'Bool').
+encoder_reads(lease_after_authority, 1, succeeds_lessor).
+encoder_type(lots, 'Usul.Muamalat.Allocation').
+encoder_reads(lots, 1, entitled_known).
+encoder_reads(lots, 2, divisible).
+encoder_reads(lots, 3, confusion_category).
 encoder_type(luqata, 'Usul.Refinements.LuqataOutcome').
 encoder_reads(luqata, 1, year_passed).
 encoder_reads(luqata, 2, ownable).
+encoder_type(makeup_after_failure, 'Usul.Refinements.MakeupExtent').
+encoder_reads(makeup_after_failure, 1, failure).
+encoder_type(manumission_spread, 'Bool').
+encoder_reads(manumission_spread, 1, binding_contract).
+encoder_type(many_over_noble, 'Bool').
+encoder_reads(many_over_noble, 1, same_cost).
+encoder_type(mistaken_basis, 'Bool').
+encoder_reads(mistaken_basis, 1, believed_basis).
+encoder_reads(mistaken_basis, 2, actual_basis).
+encoder_type(mixed_haram_by_proportion, 'Usul.Refinements.MixedHaram').
+encoder_reads(mixed_haram_by_proportion, 1, lawful_many).
+encoder_type(nafl_before_fard, 'Bool').
+encoder_reads(nafl_before_fard, 1, narrow).
+encoder_reads(nafl_before_fard, 2, financial).
+encoder_type(partial_capability, 'Bool').
+encoder_reads(partial_capability, 1, capable_of_part).
+encoder_reads(partial_capability, 2, pure_means).
+encoder_type(partners, 'Bool').
+encoder_reads(partners, 1, necessary).
+encoder_reads(partners, 2, consents).
+encoder_type(prohibited_worship, 'Bool').
+encoder_reads(prohibited_worship, 1, target).
+encoder_type(qabd_in_contracts, 'Bool').
+encoder_reads(qabd_in_contracts, 1, qabd_completes).
+encoder_type(qisas_belongs_to_whom, 'Bool').
+encoder_reads(qisas_belongs_to_whom, 1, right_is_victims).
+encoder_type(recourse, 'Bool').
+encoder_reads(recourse, 1, gift).
+encoder_reads(recourse, 2, owed_by_other).
+encoder_reads(recourse, 3, permission).
+encoder_reads(recourse, 4, permission_unobtainable).
+encoder_type(removal_before_knowledge, 'Bool').
+encoder_reads(removal_before_knowledge, 1, public_office).
+encoder_type(residual_jawaz_after_sarf, 'Bool').
+encoder_reads(residual_jawaz_after_sarf, 1, sarf).
+encoder_type(return_of_held_property, 'Bool').
+encoder_reads(return_of_held_property, 1, held_by_consent).
+encoder_reads(return_of_held_property, 2, guaranteed).
+encoder_type(right_after_transfer, 'Bool').
+encoder_reads(right_after_transfer, 1, on_property).
+encoder_reads(right_after_transfer, 2, reason_ceases).
+encoder_type(right_for_or_against_self, 'Bool').
+encoder_reads(right_for_or_against_self, 1, for_himself).
+encoder_type(right_to_own_disposal, 'Bool').
+encoder_reads(right_to_own_disposal, 1, cause_complete).
+encoder_reads(right_to_own_disposal, 2, tie_remains).
+encoder_type(right_to_substitute, 'Bool').
+encoder_reads(right_to_substitute, 1, bound_to_thing).
 encoder_type(rukhsa_under_doubt, 'Bool').
 encoder_reads(rukhsa_under_doubt, 1, rukhsa_needs_certainty).
 encoder_reads(rukhsa_under_doubt, 2, permission_established).
+encoder_type(ruling_with_bar, 'Bool').
+encoder_reads(ruling_with_bar, 1, with_bar).
+encoder_type(running_water, 'Usul.Refinements.Body').
+encoder_reads(running_water, 1, running).
+encoder_type(settles_without_ability, 'Bool').
+encoder_reads(settles_without_ability, 1, making_up).
 encoder_type(substitute, 'Bool').
 encoder_reads(substitute, 1, original_possible).
 encoder_type(substitute_at_obligation, 'Bool').
 encoder_reads(substitute_at_obligation, 1, original_possible).
 encoder_reads(substitute_at_obligation, 2, settled_at_obligation).
+encoder_type(successive_by_binding, 'Bool').
+encoder_reads(successive_by_binding, 1, successive).
+encoder_reads(successive_by_binding, 2, earlier_binding).
+encoder_reads(successive_by_binding, 3, later_binding).
+encoder_type(successive_contracts, 'Bool').
+encoder_reads(successive_contracts, 1, successive).
 encoder_type(switch_to_original, 'Bool').
 encoder_reads(switch_to_original, 1, necessity).
+encoder_type(tabaa, 'Bool').
+encoder_reads(tabaa, 1, independent_proof).
+encoder_reads(tabaa, 2, follows_established).
+encoder_type(tadakhul, 'Bool').
+encoder_reads(tadakhul, 1, acts_same_kind).
+encoder_reads(tadakhul, 2, same_purpose).
+encoder_type(taker_from_usurper, 'Bool').
+encoder_reads(taker_from_usurper, 1, entered_on_liability).
+encoder_type(taliq_al_bay, 'Bool').
+encoder_reads(taliq_al_bay, 1, conditional).
+encoder_reads(taliq_al_bay, 2, known_to_hold).
+encoder_type(tolerance_exceeded, 'Usul.Refinements.Lapse').
+encoder_reads(tolerance_exceeded, 1, at_fault).
 encoder_type(trust_loss, 'Bool').
 encoder_reads(trust_loss, 1, hand).
 encoder_reads(trust_loss, 2, transgressed).
@@ -103,9 +495,31 @@ encoder_reads(trust_loss, 3, negligent).
 encoder_type(trust_voidance, 'Bool').
 encoder_reads(trust_voidance, 1, pure_trust).
 encoder_reads(trust_voidance, 2, transgressed).
+encoder_type(umum_lafz, 'Bool').
+encoder_reads(umum_lafz, 1, in_occasion).
+encoder_reads(umum_lafz, 2, general_wording).
 encoder_type(unknown_as_nonexistent, 'Bool').
 encoder_reads(unknown_as_nonexistent, 1, unknown).
 encoder_reads(unknown_as_nonexistent, 2, despair).
 encoder_reads(unknown_as_nonexistent, 3, hardship).
+encoder_type(unknown_condition, 'Bool').
+encoder_reads(unknown_condition, 1, knew).
+encoder_reads(unknown_condition, 2, liability_only).
+encoder_type(unknown_condition_in_fact, 'Bool').
+encoder_reads(unknown_condition_in_fact, 1, knew).
+encoder_reads(unknown_condition_in_fact, 2, liability_only).
+encoder_reads(unknown_condition_in_fact, 3, transaction_authority).
 encoder_type(unknown_owner, 'Usul.Muamalat.Recipient').
 encoder_reads(unknown_owner, 1, owner_identifiable).
+encoder_type(void_contract_concluded, 'Bool').
+encoder_reads(void_contract_concluded, 1, binding).
+encoder_reads(void_contract_concluded, 2, pervasive).
+encoder_type(wording_in_other_tongue, 'Bool').
+encoder_reads(wording_in_other_tongue, 1, meaning_only).
+encoder_reads(wording_in_other_tongue, 2, able).
+encoder_type(wording_need_not_learn, 'Bool').
+encoder_reads(wording_need_not_learn, 1, meaning_only).
+encoder_reads(wording_need_not_learn, 2, able).
+encoder_reads(wording_need_not_learn, 3, need_not_learn).
+encoder_type(words_out_of_nature, 'Bool').
+encoder_reads(words_out_of_nature, 1, other_contract_possible).

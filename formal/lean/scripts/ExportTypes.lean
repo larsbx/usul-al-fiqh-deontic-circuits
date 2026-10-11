@@ -1,5 +1,5 @@
 import Lean
-import Usul.Typing
+import Usul.Typing.Encoders
 
 /-!
 # Export the type system to Prolog
@@ -31,12 +31,15 @@ def atom (n : Name) : String := snake n.componentsRev.head!.toString
 def quoted (s : String) : String :=
   "'" ++ (s.replace "\\" "\\\\" |>.replace "'" "\\'" |>.replace "\n" " ") ++ "'"
 
+/-- `f` is the projection to a parent structure (`toYaqin`), not a fact. -/
+def isParent (env : Environment) (s f : Name) : Bool := (isSubobjectField? env s f).isSome
+
 partial def reads (env : Environment) (e : Expr) : StateM (Array Name) Unit := do
   match e with
   | .const c _ =>
     if (env.getProjectionFnInfo? c).isSome then
       let f := c.componentsRev.head!
-      if !f.toString.startsWith "to" && (qaidaNs.isPrefixOf c || (`Usul.Typing.Situation).isPrefixOf c) then
+      if !isParent env c.getPrefix f && (qaidaNs.isPrefixOf c || (`Usul.Typing.Situation).isPrefixOf c) then
         unless (← get).contains f do modify (·.push f)
   | .app f a => do reads env f; reads env a
   | .lam _ t b _ | .forallE _ t b _ => do reads env t; reads env b
@@ -51,7 +54,7 @@ run_meta do
     "% The type system's declarations, read from the Lean kernel; the typing rules are in v41_typing.pl.",
     ":- encoding(utf8).",
     ":- discontiguous([qaida_type/2, type_extends/2, type_field/3, encoder_type/2, encoder_reads/3]).",
-    ":- multifile(encoder_reads/3).", ""]
+    ":- multifile([encoder_reads/3, type_field/3]).", ""]
   let types := sorted <| env.constants.toList.filterMap fun (n, _) =>
     if qaidaNs.isPrefixOf n && isStructure env n && n != qaidaNs then some n else none
   for t in types do
@@ -60,7 +63,7 @@ run_meta do
     for p in getStructureParentInfo env t do
       out := out.push s!"type_extends({atom t}, {atom p.structName})."
     for f in getStructureFields env t do
-      if f.toString.startsWith "to" then continue
+      if isParent env t f then continue
       let some pf := getProjFnForField? env t f | continue
       let ty ← forallTelescope (← inferType (mkConst pf)) fun _ b => pure b
       out := out.push s!"type_field({atom t}, {snake f.toString}, {quoted (toString (← ppExpr ty))})."

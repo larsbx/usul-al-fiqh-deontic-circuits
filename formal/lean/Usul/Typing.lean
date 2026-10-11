@@ -1,6 +1,4 @@
-import Usul.Signature
-import Usul.Muamalat
-import Usul.Refinements
+import Usul.Typing.Qaida
 
 /-!
 # The type system: situations, and encoders typed over them
@@ -60,113 +58,24 @@ theorem applies_iff_judge (s : S) : E.applies s = true ↔ (E.judge s).isSome = 
 
 end Typed
 
-/-! ## The types the qawāʿid define -/
+/-! The types the qawāʿid define are in `Usul.Typing.Qaida` (`Usul/Typing/Qaida.lean`). -/
 
-namespace Qaida
-
-/-- al-Saʿdī Q11 «الأصل بقاء ما كان على ما كان، واليقين لا يزول بالشك»: the presumption and the
-apparent that would displace it, each with its epistemic grade. -/
-structure Yaqin where
-  asl : Option Grade := none
-  zahir : Option Grade := none
-
-/-- al-Saʿdī Q52 «إذا قويت القرائن قدمت على الأصل»: Q11's type, with the indicator (qarīna). -/
-structure Qarain extends Yaqin where
-  amara : Option Bool := none
-
-/-- al-Saʿdī Q13 «الإتلاف يستوي فيه المتعمد والجاهل والناسي»: the destroyer's state of mind. -/
-structure ItlafHal where
-  mental : Option MentalState := none
-
-/-- al-Saʿdī Q36 «من أتلف شيئاً لينتفع به ضمنه، ومن أتلفه دفعاً لمضرته فلا ضمان عليه»: the purpose
-of the destruction. -/
-structure ItlafQasd where
-  purpose : Option Purpose := none
-
-/-- al-Saʿdī Q14 «التلف في يد الأمين غير مضمون إذا لم يتعد أو يفرط، وفي يد الظالم مضمون مطلقاً»: the
-hand, and the trustee's transgression («يتعد») and negligence in safekeeping («يفرط»); with
-`pureTrust`, the pure trust (amāna maḥḍa) that transgression voids. -/
-structure Amana where
-  hand : Option Hand := none
-  pureTrust : Option Bool := none
-  transgressed : Option Bool := none
-  negligent : Option Bool := none
-
-/-- Ibn Rajab Q6: an act done on a presumption later shown wrong stands, save «لتعلق حق الغير به»
-and for one who «فرط بترك البحث والتحقيق» (negligence in inquiry, not in safekeeping). -/
-structure ZannError where
-  othersRight : Option Bool := none
-  negligentInquiry : Option Bool := none
-
-/-! ### The unknown as non-existent: al-Saʿdī Q20, Ibn Rajab 106 and its instances -/
-
-/-- al-Saʿdī Q20 «إذا تعذر معرفة من له الحق جعل كالمعدوم»: whether the right-holder can be known. -/
-structure MajhulHaqq where
-  ownerIdentifiable : Option Bool := none
-
-/-- Ibn Rajab 106 «ينزل المجهول منزلة المعدوم وإن كان الأصل بقاءه إذا يئس من الوقوف عليه أو شق
-اعتباره»: the unknown, despair of learning it, the hardship of taking it into account. -/
-structure MajhulMadum where
-  unknown : Option Bool := none
-  despair : Option Bool := none
-  hardship : Option Bool := none
-
-/-- Ibn Rajab 106.f002 «اللقطة بعد الحول فإنها تتملك لجهالة ربها وما لا يتملك منها يتصدق به»:
-106's type, with the year of announcement and whether the find is ownable. -/
-structure Luqata extends MajhulMadum where
-  yearPassed : Option Bool := none
-  ownable : Option Bool := none
-
-/-- Ibn Rajab 22 «العين المنغمرة في غيرها إذا لم يظهر أثرها …», read as an instance of 106. -/
-structure Istihlak extends MajhulMadum where
-  consumed : Option Bool := none
-
-/-! ### The substitute: al-Saʿdī Q28 and Ibn Rajab 7, 16 -/
-
-/-- al-Saʿdī Q28 «يقوم البدل مقام المبدل، ولكن لا يصار إليه إلا إذا تعذر الأصل»: whether the
-original is possible. -/
-structure Badal where
-  originalPossible : Option Bool := none
-
-/-- Ibn Rajab 16, judged at the time of obligation («والاعتبار في الكفارات بحالة الوجوب»). -/
-structure BadalWujub extends Badal where
-  settledAtObligation : Option Bool := none
-
-/-- Ibn Rajab 7: the substitute was legislated out of necessity, not as a general concession. -/
-structure Intiqal extends Badal where
-  necessity : Option Bool := none
-
-/-! ### Certainty and doubt: instances of al-Saʿdī Q11 and Q52 -/
-
-/-- Ibn Rajab 160 (Taqī al-Dīn): «متى علق الطلاق بشرط وأمكن وجوده فإنه يعتزل امرأته حتى يعلم
-انتفاؤه»; the certain marriage stands (Q11), abstention is a rule of conduct. -/
-structure Itizal extends Yaqin where
-  suspended : Option Bool := none
-  possible : Option Bool := none
-  absenceKnown : Option Bool := none
-
-/-- Ibn Rajab 68: acting while doubting a condition of validity, firm intention needed or not,
-ghalabat al-ẓann, a presumption that has not been shown to cease (Q11, Q52). -/
-structure ShakkShart extends Qarain where
-  needsFirm : Option Bool := none
-  ghalaba : Option Bool := none
-  aslMustashab : Option Bool := none
-
-/-- Ibn Rajab 68.f001 «لأن المسح رخصة ولم تتحقق إباحتها فلم يصح»: a concession is 68's first type. -/
-structure Rukhsa extends ShakkShart where
-  rukhsaNeedsCertainty : Option Bool := none
-  permissionEstablished : Option Bool := none
-
-/-- A forgotten iḥrām intention (Q11): what is valid on every possible rite suffices. -/
-structure NiyyaMansiyya extends Yaqin where
-  component : Option (Refinements.Nusuk → Bool) := none
-
-end Qaida
 
 /-- A situation: the join of the qāʿida types. -/
 structure Situation extends Qaida.Qarain, Qaida.ItlafHal, Qaida.ItlafQasd, Qaida.Amana, Qaida.ZannError,
     Qaida.MajhulHaqq, Qaida.Luqata, Qaida.Istihlak, Qaida.BadalWujub, Qaida.Intiqal, Qaida.Itizal,
-    Qaida.Rukhsa, Qaida.NiyyaMansiyya
+    Qaida.Rukhsa, Qaida.NiyyaMansiyya, Qaida.Rajab4, Qaida.Rajab5, Qaida.Lahham43, Qaida.Rajab59,
+    Qaida.Sadi9, Qaida.Rajab32, Qaida.Rajab35, Qaida.Rajab27, Qaida.Rajab14, Qaida.Rajab12,
+    Qaida.Rajab28, Qaida.Rajab56, Qaida.Rajab43, Qaida.Sadi48, Qaida.Rajab39, Qaida.Rajab51,
+    Qaida.Rajab47, Qaida.Rajab61, Qaida.Rajab58, Qaida.Rajab52, Qaida.Rajab54, Qaida.Sadi35,
+    Qaida.Rajab15, Qaida.Rajab3, Qaida.Rajab30, Qaida.Sadi25, Qaida.Rajab25, Qaida.Rajab50,
+    Qaida.Sadi59, Qaida.Rajab20, Qaida.Rajab2, Qaida.Lahham52, Qaida.Rajab91, Qaida.ShakkShartFuru,
+    Qaida.Rajab33, Qaida.Khalt, Qaida.Sadi45, Qaida.Rajab36, Qaida.Rajab31, Qaida.Rajab34,
+    Qaida.Rajab17, Qaida.Rajab66, Qaida.Rajab11, Qaida.Sadi40, Qaida.Sadi30, Qaida.Rajab9,
+    Qaida.Rajab49, Qaida.Rajab65, Qaida.Sadi32, Qaida.Rajab62, Qaida.Sadi50, Qaida.Rajab42,
+    Qaida.Rajab24, Qaida.Sadi55, Qaida.Rajab55, Qaida.Rajab41, Qaida.Rajab57, Qaida.Rajab1,
+    Qaida.Rajab19, Qaida.Rajab37, Qaida.Sadi41, Qaida.Rajab93, Qaida.Rajab29, Qaida.Lahham61,
+    Qaida.Rajab64, Qaida.Rajab46, Qaida.Rajab10, Qaida.Rajab38
 
 /-! ## Encoders typed over `Situation` (names as in `takhrij.ENCODERS`) -/
 
