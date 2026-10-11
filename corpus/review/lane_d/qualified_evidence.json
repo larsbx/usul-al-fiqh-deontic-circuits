@@ -1,0 +1,30 @@
+{
+  "status": "candidate",
+  "provenance": "Independent source-context review of PR 62 on 2026-10-11; original ledger items retained verbatim here, excluded from graded reconciliation.",
+  "items": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f007",
+      "evidence": {
+        "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p094",
+        "excerpt_ar": "قدر ما خالطه هذا إن عرف ربه وإلا تصدق به عن ربه وما بقي حلال.",
+        "position": 1,
+        "grade": "jazm",
+        "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+        "note": "Kashshāf (ghaṣb mixture): when the owner is known the mixture is a partnership and he may not divide it unilaterally; when unknown he gives the share in charity and the rest is lawful - no suspension by proportion (position 1, with the known-owner proviso)."
+      },
+      "reason": "Owner-knownness is absent from case facts. Kashshaf distinguishes permission of the known owner from charity for an unknown owner; it cannot unconditionally instantiate takeOut."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f001",
+      "evidence": {
+        "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p375",
+        "excerpt_ar": "(وضعفت) على سارقه (قيمته) أي: المسروق من ثمر أو طلع أو جمار أو ماشية",
+        "position": 1,
+        "grade": "jazm",
+        "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+        "note": "Sharḥ al-Muntahā: the doubled value is limited to fruit, spathe, palm-pith or livestock taken from outside a ḥirz - position 1 (with livestock added)."
+      },
+      "reason": "This excerpt affirms doubling for specified goods, not single compensation for other goods. Preserve the passage without assigning it to the opposite ruling."
+    }
+  ]
+}

@@ -49,7 +49,23 @@
           "src:openiti-buhuti-kashshaf-shamela21642/v01:p154",
           "src:openiti-insaf-shamela21609/v01:p255"
         ],
-        "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side."
+        "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side.",
+        "contradictions": [
+          {
+            "evidence_index": 0,
+            "case_facts": {
+              "hair_or_nail": true
+            },
+            "rationale": "The case note specifies washing hair in janaba, not detached physical hair or minor hadath. The source expressly requires washing hair including hanging hair; attached/detached are the encoder labels for obligation, not an assertion about cut hair."
+          },
+          {
+            "evidence_index": 1,
+            "case_facts": {
+              "hair_or_nail": true
+            },
+            "rationale": "The case note specifies washing hair in janaba, not detached physical hair or minor hadath. The source expressly requires washing hair including hanging hair; attached/detached are the encoder labels for obligation, not an assertion about cut hair."
+          }
+        ]
       }
     },
     {

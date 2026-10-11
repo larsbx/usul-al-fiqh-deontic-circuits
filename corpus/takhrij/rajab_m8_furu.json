@@ -245,10 +245,18 @@
       "side_check": {
         "from_matches": true,
         "refs": [
-          "src:openiti-buhuti-kashshaf-shamela21642/v04:p094",
           "src:openiti-ibnmuflih-furu-shamela12052/v04:p396"
         ],
-        "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side."
+        "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side.",
+        "contradictions": [
+          {
+            "evidence_index": 0,
+            "case_facts": {
+              "lawful_many": false
+            },
+            "rationale": "Tashih al-Furu masala 3 explicitly rejects Ahmad's numerical threshold and adopts extraction of the unlawful share. This contradicts the proportion-dependent suspend reading for lawful_many=false. Owner-knownness remains a missing scope distinction; Kashshaf is supplemental only."
+          }
+        ]
       }
     },
     {

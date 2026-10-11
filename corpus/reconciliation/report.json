@@ -1,5 +1,14 @@
 {
   "entries": 162,
+  "evidence_items": 414,
+  "side_checks": [
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f007",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f001",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f006",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f012"
+  ],
   "stages": {
     "jam": 19,
     "tarjih": 134,
