@@ -69,7 +69,8 @@ def report(root: Path, cov: dict[str, dict[str, tuple[int, int]]]) -> dict:
             hits[k] += rank is not None and rank <= k
         rows.append({"case": c["far"], "encoder": c["encoder"], "settled": round(s, 4), "rank": rank})
     n = len(cases)
-    routed = [sum(v == 1.0 for v in cov.get(a, {}).values()) for a in sorted(typed)]
+    applying = [sum(k == n for k, n in cov.get(a, {}).values()) for a in sorted(typed)]
+    touched = [len(cov.get(a, {})) for a in sorted(typed)]
     lexical = json.loads((root / "corpus/routing/ood.json").read_text(encoding="utf-8"))
     return {"schema_version": 1, "status": "candidate",
             "method": "blind typing into Usul.Typing situations; Prolog routing by coverage of each encoder's fields",
@@ -78,8 +79,22 @@ def report(root: Path, cov: dict[str, dict[str, tuple[int, int]]]) -> dict:
             "cases": n, "applies": round(applied / n, 4),
             "recall": {str(k): round(hits[k] / n, 4) for k in KS},
             "lexical_recall": lexical["recall"], "lexical_prior": lexical["prior"],
-            "encoders_applying_per_answer": round(sum(routed) / len(routed), 2) if routed else 0,
+            "encoders_applying_per_answer": round(sum(applying) / len(applying), 2),
+            "encoders_touched_per_answer": round(sum(touched) / len(touched), 2),
+            "by_encoder": by_encoder(rows),
             "cases_detail": rows}
+
+
+def by_encoder(rows: list[dict]) -> dict[str, dict]:
+    """Per true encoder: cases, how many it applies to, ranks in the top 5, and leaves unrouted."""
+    out: dict[str, dict] = {}
+    for r in rows:
+        e = out.setdefault(r["encoder"], {"cases": 0, "applies": 0, "top5": 0, "unrouted": 0})
+        e["cases"] += 1
+        e["applies"] += r["settled"] == 1.0
+        e["top5"] += r["rank"] is not None and r["rank"] <= 5
+        e["unrouted"] += r["rank"] is None
+    return dict(sorted(out.items()))
 
 
 def render(root: Path) -> tuple[str, str]:

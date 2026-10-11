@@ -1,0 +1,799 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "method": "blind typing into Usul.Typing situations; Prolog routing by coverage of each encoder's fields",
+  "answers": 53,
+  "situations": 138,
+  "fields_stated": 179,
+  "cases": 123,
+  "applies": 0.3577,
+  "recall": {
+    "1": 0.3008,
+    "5": 0.6911,
+    "10": 0.6911
+  },
+  "lexical_recall": {
+    "1": 0.0894,
+    "5": 0.2927,
+    "10": 0.3496
+  },
+  "lexical_prior": {
+    "1": 0.0,
+    "5": 0.2195,
+    "10": 0.2195
+  },
+  "encoders_applying_per_answer": 0.51,
+  "encoders_touched_per_answer": 2.11,
+  "by_encoder": {
+    "asl_zahir": {
+      "cases": 27,
+      "applies": 6,
+      "top5": 23,
+      "unrouted": 4
+    },
+    "itlaf": {
+      "cases": 27,
+      "applies": 0,
+      "top5": 2,
+      "unrouted": 25
+    },
+    "luqata": {
+      "cases": 30,
+      "applies": 16,
+      "top5": 28,
+      "unrouted": 2
+    },
+    "trust_loss": {
+      "cases": 22,
+      "applies": 8,
+      "top5": 18,
+      "unrouted": 4
+    },
+    "unknown_owner": {
+      "cases": 17,
+      "applies": 14,
+      "top5": 14,
+      "unrouted": 3
+    }
+  },
+  "cases_detail": [
+    {
+      "case": "islamqa.23424.f001",
+      "encoder": "asl_zahir",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.23424.f002",
+      "encoder": "asl_zahir",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.83025.f001",
+      "encoder": "asl_zahir",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.103846.f001",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.103846.f002",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.103846.f003",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.103846.f004",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.108549.f001",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.110860.f001",
+      "encoder": "asl_zahir",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.110860.f002",
+      "encoder": "asl_zahir",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.110860.f003",
+      "encoder": "asl_zahir",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.110860.f004",
+      "encoder": "asl_zahir",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.114793.f001",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.114793.f002",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.114793.f003",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.114793.f004",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.128887.f001",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.170478.f001",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.170478.f002",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.170478.f003",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.176193.f001",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.176193.f002",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.187157.f001",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.187157.f002",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.198294.f001",
+      "encoder": "asl_zahir",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.198294.f002",
+      "encoder": "asl_zahir",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.198294.f003",
+      "encoder": "asl_zahir",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.164604.f002",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.223512.f001",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.223512.f002",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.242731.f001",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.266167.f001",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.266167.f002",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.272160.f001",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.286486.f001",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.305083.f001",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.305083.f002",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.305083.f003",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.315435.f001",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.315435.f002",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.315435.f003",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.317604.f001",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.317604.f002",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.328808.f001",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.344230.f001",
+      "encoder": "itlaf",
+      "settled": 0.5,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.344230.f002",
+      "encoder": "itlaf",
+      "settled": 0.5,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.345284.f001",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.345284.f002",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.348122.f001",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.348122.f002",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.348122.f003",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.363963.f001",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.363963.f002",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.363963.f003",
+      "encoder": "itlaf",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.4046.f001",
+      "encoder": "luqata",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.4046.f002",
+      "encoder": "luqata",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.4046.f003",
+      "encoder": "luqata",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.4046.f004",
+      "encoder": "luqata",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.4050.f001",
+      "encoder": "luqata",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.4588.f001",
+      "encoder": "luqata",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.5049.f001",
+      "encoder": "luqata",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.5049.f002",
+      "encoder": "luqata",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.5049.f003",
+      "encoder": "luqata",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.5049.f004",
+      "encoder": "luqata",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.5049.f005",
+      "encoder": "luqata",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.5049.f006",
+      "encoder": "luqata",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.5049.f007",
+      "encoder": "luqata",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.10284.f001",
+      "encoder": "luqata",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.10284.f002",
+      "encoder": "luqata",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.126387.f001",
+      "encoder": "luqata",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.126502.f001",
+      "encoder": "luqata",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.128510.f001",
+      "encoder": "luqata",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.128510.f002",
+      "encoder": "luqata",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.131070.f001",
+      "encoder": "luqata",
+      "settled": 0.5,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.131070.f002",
+      "encoder": "luqata",
+      "settled": 0.5,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.131070.f003",
+      "encoder": "luqata",
+      "settled": 0.5,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.146191.f001",
+      "encoder": "luqata",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.146191.f002",
+      "encoder": "luqata",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.146191.f003",
+      "encoder": "luqata",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.191459.f001",
+      "encoder": "luqata",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.191459.f002",
+      "encoder": "luqata",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.191459.f003",
+      "encoder": "luqata",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.209303.f001",
+      "encoder": "luqata",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.209303.f002",
+      "encoder": "luqata",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.4652.f001",
+      "encoder": "trust_loss",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.13717.f001",
+      "encoder": "trust_loss",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.13717.f002",
+      "encoder": "trust_loss",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.13717.f003",
+      "encoder": "trust_loss",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.13717.f004",
+      "encoder": "trust_loss",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.13717.f005",
+      "encoder": "trust_loss",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.22830.f001",
+      "encoder": "trust_loss",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.22830.f002",
+      "encoder": "trust_loss",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.22830.f003",
+      "encoder": "trust_loss",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.83827.f001",
+      "encoder": "trust_loss",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.140833.f001",
+      "encoder": "trust_loss",
+      "settled": 0.6667,
+      "rank": 3
+    },
+    {
+      "case": "islamqa.140833.f002",
+      "encoder": "trust_loss",
+      "settled": 0.6667,
+      "rank": 3
+    },
+    {
+      "case": "islamqa.152192.f001",
+      "encoder": "trust_loss",
+      "settled": 0.3333,
+      "rank": 3
+    },
+    {
+      "case": "islamqa.164604.f001",
+      "encoder": "trust_loss",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.165409.f001",
+      "encoder": "trust_loss",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.165409.f002",
+      "encoder": "trust_loss",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.252463.f001",
+      "encoder": "trust_loss",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.252463.f002",
+      "encoder": "trust_loss",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.253293.f001",
+      "encoder": "trust_loss",
+      "settled": 0.3333,
+      "rank": 4
+    },
+    {
+      "case": "islamqa.253293.f002",
+      "encoder": "trust_loss",
+      "settled": 0.3333,
+      "rank": 4
+    },
+    {
+      "case": "islamqa.253293.f003",
+      "encoder": "trust_loss",
+      "settled": 0.3333,
+      "rank": 4
+    },
+    {
+      "case": "islamqa.253293.f004",
+      "encoder": "trust_loss",
+      "settled": 0.3333,
+      "rank": 4
+    },
+    {
+      "case": "islamqa.104241.f001",
+      "encoder": "unknown_owner",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.104241.f002",
+      "encoder": "unknown_owner",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.104241.f003",
+      "encoder": "unknown_owner",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.107436.f001",
+      "encoder": "unknown_owner",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.179911.f001",
+      "encoder": "unknown_owner",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.179911.f002",
+      "encoder": "unknown_owner",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.179911.f003",
+      "encoder": "unknown_owner",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.196584.f001",
+      "encoder": "unknown_owner",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.196584.f002",
+      "encoder": "unknown_owner",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.196584.f003",
+      "encoder": "unknown_owner",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.260724.f001",
+      "encoder": "unknown_owner",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.260724.f002",
+      "encoder": "unknown_owner",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "islamqa.287215.f001",
+      "encoder": "unknown_owner",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.287215.f002",
+      "encoder": "unknown_owner",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.287215.f003",
+      "encoder": "unknown_owner",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "islamqa.304828.f001",
+      "encoder": "unknown_owner",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "islamqa.304828.f002",
+      "encoder": "unknown_owner",
+      "settled": 1.0,
+      "rank": 1
+    }
+  ]
+}

@@ -1,0 +1,1498 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "provenance": "Each answer of corpus/fatawa/takhrij/islamqa_tranche1.json typed into Usul.Typing situations (the qāʿida-type fields its text settles), LLM-assisted by four agents working blind: they saw only the answer texts and a field catalogue generated from the Lean export, never the tranche's encoder labels. A first pass had a wrong grade scale for yaqin.asl/zahir (a catalogue bug); those fields were revisited with the kernel's constructors. Quotes are verbatim, at most 160 characters (modern text, cache-only rights). Not human-reviewed.",
+  "answers": [
+    {
+      "answer": "islamqa.10284",
+      "situations": [
+        {
+          "label": "Stray sheep found; owner does not come after announcement",
+          "facts": {
+            "unknown": true,
+            "ownable": true
+          },
+          "evidence": {
+            "unknown": "ربما لا أجد صاحبه",
+            "ownable": "وإن لم يأت فهي لمن وجدها"
+          }
+        },
+        {
+          "label": "Stray sheep; owner comes",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.103846",
+      "situations": [
+        {
+          "label": "Urinating standing while safe from splashes",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Certain that urine hit the garment",
+          "facts": {
+            "zahir": "qat"
+          },
+          "evidence": {
+            "zahir": "ثم تحقق أنه قد أصاب ثوبه شيء من البول"
+          }
+        },
+        {
+          "label": "Doubt whether urine hit the garment",
+          "facts": {
+            "asl_mustashab": true,
+            "asl": "qat",
+            "zahir": "shakk"
+          },
+          "evidence": {
+            "asl_mustashab": "لأن الأصل طهارة الثوب حتى يتيقن الإنسان أن النجاسة قد أصابته",
+            "asl": "لأن الأصل طهارة الثوب حتى يتيقن الإنسان أن النجاسة قد أصابته",
+            "zahir": "إذا شك الإنسان هل أصاب ثوبه شيء من البول أو لا ؟"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.104241",
+      "situations": [
+        {
+          "label": "Bribe paid to obtain the payer's own right",
+          "facts": {
+            "hand": "wrongdoer"
+          },
+          "evidence": {
+            "hand": "لأنه مال مأخوذ بالباطل والظلم والتعدي"
+          }
+        },
+        {
+          "label": "Bribe paid to obtain what is not the payer's right, and obtained",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Return required but payer cannot be reached after searching",
+          "facts": {
+            "hand": "wrongdoer",
+            "owner_identifiable": false,
+            "unknown": true,
+            "despair": true
+          },
+          "evidence": {
+            "hand": "لأنه مال مأخوذ بالباطل والظلم والتعدي",
+            "owner_identifiable": "وتعذر الوصول إليه ، لعدم العلم بمكانه ، أو لوفاته وعدم العلم بورثته",
+            "unknown": "لعدم العلم بمكانه ، أو لوفاته وعدم العلم بورثته",
+            "despair": "بعد البحث والتحري ، فإنك تتصدق بالمال على نية صاحبه"
+          }
+        },
+        {
+          "label": "In-kind bribes: keep and give their value",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.107436",
+      "situations": [
+        {
+          "label": "Family stayed in employees-only rest house, consumed water and electricity",
+          "facts": {
+            "purpose": "benefit"
+          },
+          "evidence": {
+            "purpose": "قمنا باستهلاك الماء والكهرباء في تلك الفترة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.108549",
+      "situations": [
+        {
+          "label": "Unsure whether menstruation ended before fajr",
+          "facts": {
+            "asl_mustashab": true,
+            "asl": "qat",
+            "zahir": "shakk"
+          },
+          "evidence": {
+            "asl_mustashab": "فالأصل بقاء هذا الحيض حتى تتيقن زواله",
+            "asl": "إذا حاضت المرأة فالأصل بقاء هذا الحيض حتى تتيقن زواله",
+            "zahir": "ولا يجوز لها أن تصوم أو تصلي وهي تشك : هل انتهى الحيض أما لا ؟"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.110860",
+      "situations": [
+        {
+          "label": "Bathed after complete dryness, then saw yellowish/brownish discharge",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Bathed and fasted before complete dryness and did not repeat ghusl",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.114793",
+      "situations": [
+        {
+          "label": "Doubts whether wind passed after wudu",
+          "facts": {
+            "asl_mustashab": true,
+            "asl": "qat",
+            "zahir": "shakk"
+          },
+          "evidence": {
+            "asl_mustashab": "إذا توضأ الإنسان ثم شك في انتقاض وضوئه، فلا يلتفت للشك؛ لأن اليقين لا يزول بالشك.",
+            "asl": "إذا توضأ الإنسان ثم شك في انتقاض وضوئه، فلا يلتفت للشك؛ لأن اليقين لا يزول بالشك.",
+            "zahir": "إذا توضأ الإنسان ثم شك في انتقاض وضوئه"
+          }
+        },
+        {
+          "label": "Certain that wind passed",
+          "facts": {
+            "zahir": "qat"
+          },
+          "evidence": {
+            "zahir": "فإذا حصل اليقين بخروج ريح فقد انتقض الوضوء"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.126387",
+      "situations": [
+        {
+          "label": "Found 50 riyals during stoning in Hajj",
+          "facts": {
+            "unknown": true,
+            "hardship": true
+          },
+          "evidence": {
+            "unknown": "لعله يأتيك أحد يصفها",
+            "hardship": "هذا مبلغ قليل لا يتحمل التعريف ، ولا يتحمل التكلف والتعريف"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.126502",
+      "situations": [
+        {
+          "label": "Found 10-15 riyals in Makkah",
+          "facts": {
+            "hardship": true
+          },
+          "evidence": {
+            "hardship": "لأنها حقيرة ما تتحمل التعريف"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.128510",
+      "situations": [
+        {
+          "label": "Pen on desk likely belonging to a colleague or visitor",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Nobody claims it and it is of small value",
+          "facts": {
+            "unknown": true
+          },
+          "evidence": {
+            "unknown": "فإن لم يتعرف عليها أحد"
+          }
+        },
+        {
+          "label": "Nobody claims it and it is of considerable value",
+          "facts": {
+            "unknown": true,
+            "ownable": true
+          },
+          "evidence": {
+            "unknown": "فإن لم يتعرف عليها أحد",
+            "ownable": "لزم تعريفها سنة قبل تملكها"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.128887",
+      "situations": [
+        {
+          "label": "Doubt about janaba after sleeping in a state of purity, then tawaf",
+          "facts": {
+            "asl_mustashab": true,
+            "asl": "qat",
+            "zahir": "shakk"
+          },
+          "evidence": {
+            "asl_mustashab": "والأصل الطهارة وعدم الحدث حتى يوجد ما يثبت خلاف ذلك",
+            "asl": "ومن أيقن بالطهارة وشك في الحدث فهو على الطهارة",
+            "zahir": "ما حصل لك من شك في وجود الجنابة وعدمها ، لا تأثير له ، لأنك لم تجزم بخروج المني"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.131070",
+      "situations": [
+        {
+          "label": "Treasure with pre-Islamic marks (rikaz)",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Treasure of Muslims: lost property announced for a year",
+          "facts": {
+            "unknown": true,
+            "ownable": true
+          },
+          "evidence": {
+            "unknown": "فإن لم يجد صاحبها ملكها من وجدها",
+            "ownable": "فإن لم يجد صاحبها ملكها من وجدها"
+          }
+        },
+        {
+          "label": "Treasure found in land bought or gifted",
+          "facts": {
+            "follows_in_sale": false
+          },
+          "evidence": {
+            "follows_in_sale": "وذلك لأنه منفصل عن الأرض فلا يدخل في ملكها ، فيكون ملكاً لواجده"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.13717",
+      "situations": [
+        {
+          "label": "Deposit lost with the depositary without transgression or negligence",
+          "facts": {
+            "hand": "trustee",
+            "pure_trust": true,
+            "transgressed": false,
+            "negligent": false
+          },
+          "evidence": {
+            "hand": "لأنها أمانة ؛ والأمين لا يضمن إذا لم يتعد",
+            "pure_trust": "اسم للمال المودع عند من يحفظه بلا عوض",
+            "transgressed": "والأمين لا يضمن إذا لم يتعد",
+            "negligent": "إذا تلفت عند المودع ولم يفرط ؛ فإنه لا يضمنها"
+          }
+        },
+        {
+          "label": "Depositary transgresses against the deposit and it is lost",
+          "facts": {
+            "hand": "trustee",
+            "transgressed": true
+          },
+          "evidence": {
+            "hand": "أما المعتدي على الوديعة أو المفرط في حفظها ؛ فإنه يضمنها إذا تلفت",
+            "transgressed": "أما المعتدي على الوديعة أو المفرط في حفظها ؛ فإنه يضمنها إذا تلفت"
+          }
+        },
+        {
+          "label": "Depositary negligent in safekeeping (e.g. stops feeding a deposited animal) and it is lost",
+          "facts": {
+            "hand": "trustee",
+            "negligent": true
+          },
+          "evidence": {
+            "hand": "أما المعتدي على الوديعة أو المفرط في حفظها ؛ فإنه يضمنها إذا تلفت",
+            "negligent": "فلو قطع العلف عنها بغير أمر صاحبها , فتلفت : ضمنها"
+          }
+        },
+        {
+          "label": "Deposit handed to wife/servant etc. and lost without transgression or negligence",
+          "facts": {
+            "hand": "trustee",
+            "transgressed": false,
+            "negligent": false
+          },
+          "evidence": {
+            "hand": "لأن له أن\nيتولى حفظها بنفسه أو من يقوم مقامه",
+            "transgressed": "من غير تعد ولا تفريط لم يضمن",
+            "negligent": "من غير تعد ولا تفريط لم يضمن"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.140833",
+      "situations": [
+        {
+          "label": "Confiscating and destroying obstructing goods after warning",
+          "facts": {
+            "purpose": "repelHarm"
+          },
+          "evidence": {
+            "purpose": "أو باحتمال تسببها بأذى ، أو ضرر ، وكان قد أُنذر صاحبها"
+          }
+        },
+        {
+          "label": "Took the marble for a relative instead of destroying it",
+          "facts": {
+            "hand": "wrongdoer",
+            "transgressed": true,
+            "purpose": "benefit"
+          },
+          "evidence": {
+            "hand": "وهذا اعتداء وغصب ، فتكون ضامنا لهذا الرخام لصاحبه",
+            "transgressed": "وهذا اعتداء وغصب",
+            "purpose": "أن أعطيه لقريبي ليستفيد منه"
+          }
+        },
+        {
+          "label": "Owner of the marble cannot be found",
+          "facts": {
+            "hand": "wrongdoer",
+            "unknown": true,
+            "despair": true,
+            "owner_identifiable": false
+          },
+          "evidence": {
+            "hand": "وهذا اعتداء وغصب ، فتكون ضامنا لهذا الرخام لصاحبه",
+            "unknown": "فصاحب المنزل والله لا أعرف من هو",
+            "despair": "وإذا يئست من الوصول إليه فإنك تتصدق بقيمة هذا الرخام عنه",
+            "owner_identifiable": "وإذا يئست من الوصول إليه فإنك تتصدق بقيمة هذا الرخام عنه"
+          }
+        },
+        {
+          "label": "Doubt over number of boxes",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.146191",
+      "situations": [
+        {
+          "label": "Buried treasure with pre-Islamic (jahiliyya) marks: rikaz, khums due",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Buried treasure of Muslims (or unmarked): luqata, announce a year then finder owns",
+          "facts": {
+            "unknown": true,
+            "ownable": true
+          },
+          "evidence": {
+            "unknown": "فهو لقطة ، يجب تعريفها والبحث عن أصحابها عاما كاملا",
+            "ownable": "فإن لم يجد صاحبها ملكها من وجدها"
+          }
+        },
+        {
+          "label": "Treasure found in bought/gifted land: whether it belongs to former owner or finder",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.152192",
+      "situations": [
+        {
+          "label": "Magic book held in trust, owner's widow asks for it back: must destroy, no liability",
+          "facts": {
+            "hand": "trustee",
+            "held_by_consent": true,
+            "purpose": "repelHarm"
+          },
+          "evidence": {
+            "hand": "وأعطتني زوجته هذا الكتاب أمانة",
+            "held_by_consent": "وأعطتني زوجته هذا الكتاب أمانة",
+            "purpose": "وأخاف إن أرجعته أن يعمل به احد عملاً ويلحق الضرر بالآخرين"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.164604",
+      "situations": [
+        {
+          "label": "Guest took/held the furniture with host's permission and it broke without fault: no liability",
+          "facts": {
+            "hand": "trustee",
+            "held_by_consent": true
+          },
+          "evidence": {
+            "hand": "إن كان قد أخذها أو أمسكها بإذنك ثم انكسرت في يده فلا ضمان عليه",
+            "held_by_consent": "إن كان قد أخذها أو أمسكها بإذنك ثم انكسرت في يده فلا ضمان عليه"
+          }
+        },
+        {
+          "label": "Guest held it with permission but erred or fell short in keeping it: liable",
+          "facts": {
+            "hand": "trustee",
+            "held_by_consent": true,
+            "negligent": true
+          },
+          "evidence": {
+            "hand": "إن كان قد أخذها أو أمسكها بإذنك",
+            "held_by_consent": "إن كان قد أخذها أو أمسكها بإذنك",
+            "negligent": "إلا إذا كان قد أخطأ أو قصر في حفظها"
+          }
+        },
+        {
+          "label": "Guest took it without permission or bumped into it and broke it: liable",
+          "facts": {
+            "held_by_consent": false
+          },
+          "evidence": {
+            "held_by_consent": "أما إن كان قد أخذها بدون إذنك أو اصطدم بها فانكسرت ، فعليه الضمان"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.165409",
+      "situations": [
+        {
+          "label": "Current account deposit treated as loan: gifts on it are forbidden",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Bank runs a valid mudaraba: profits may be taken",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Mudaraba invalid or doubtful: take profits and give them away; deposit excused by necessity",
+          "facts": {
+            "necessity": true
+          },
+          "evidence": {
+            "necessity": "وأنتم معذورون حينئذ في الإيداع في البنك لضرورة حفظ المال"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.170478",
+      "situations": [
+        {
+          "label": "Doubt whether madhy/mani came out with arousal (waswasa): ignore, purity remains",
+          "facts": {
+            "asl": "qat",
+            "zahir": "shakk"
+          },
+          "evidence": {
+            "asl": "وأنا متوضئة",
+            "zahir": "فأنا أشك في نزول المذي بمجرد الكلام مع شخص"
+          }
+        },
+        {
+          "label": "Certainty that something came out: it is madhy",
+          "facts": {
+            "zahir": "qat"
+          },
+          "evidence": {
+            "zahir": "فإذا تيقنت خروج شيء فهو مذي"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.176193",
+      "situations": [
+        {
+          "label": "Yellowish discharge seen after certain purity, ghusl and tawaf: tawaf valid",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Doubt of breaking wudu during/after tawaf without certainty: purity presumed, tawaf and prayers valid",
+          "facts": {
+            "asl": "qat",
+            "zahir": "shakk"
+          },
+          "evidence": {
+            "asl": "في طواف الإفاضة جددت الوضوء قبل الطواف مباشرة",
+            "zahir": "إذا حصل للمرأة شك في انتقاض طهارتها بعد الطواف ولم تتيقن ذلك"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.179911",
+      "situations": [
+        {
+          "label": "Money donated for burial no longer needed, donors known: return to donors",
+          "facts": {
+            "original_possible": false,
+            "owner_identifiable": true
+          },
+          "evidence": {
+            "original_possible": "لتعذر إنفاقه فيما خصص له",
+            "owner_identifiable": "رد المال لأصحابه إذا كانوا معروفين"
+          }
+        },
+        {
+          "label": "Donors unknown or unreachable: spend in a similar purpose, else neediest",
+          "facts": {
+            "original_possible": false,
+            "owner_identifiable": false,
+            "unknown": true
+          },
+          "evidence": {
+            "original_possible": "لتعذر إنفاقه فيما خصص له",
+            "owner_identifiable": "فإذا لم يكن أصحاب هذه الصدقات معروفين ، أو جهل بعضهم ، وتعذر إذنه",
+            "unknown": "صرف إليه المال الذي جهل صاحبه ، أو تعذر الوصول إليه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.187157",
+      "situations": [
+        {
+          "label": "First divorce during pregnancy, taken back in idda: valid",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Divorce oath conditional on not sending clothes; clothes were sent: nothing occurs",
+          "facts": {
+            "suspended": true,
+            "absence_known": true
+          },
+          "evidence": {
+            "suspended": "عليَّ اليمين الطلاق بالثلاثة إن ما بعثتِ الملابس",
+            "absence_known": "لأنك بعثت إليه ملابسه ، ولم يتحقق شرط الطلاق"
+          }
+        },
+        {
+          "label": "Third divorce in a purity in which intercourse occurred: counts per majority",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Allusive (kinaya) words with intention unknown: presumption of no intention, no divorce",
+          "facts": {
+            "unknown": true,
+            "asl": "qat",
+            "zahir": "shakk"
+          },
+          "evidence": {
+            "unknown": "وإن كان لا يدري ما نيته فالأصل هو عدم نية الطلاق فلا يقع به طلاق",
+            "asl": "أنا متزوجة مند 7 سنوات",
+            "zahir": "ولكن هذا منذ سنوات ولا أتذكر الكلام ولا نيته حينها"
+          }
+        },
+        {
+          "label": "Not verified that any allusive words were said: marriage presumed to continue",
+          "facts": {
+            "asl": "qat",
+            "zahir": "shakk"
+          },
+          "evidence": {
+            "asl": "أنا متزوجة مند 7 سنوات",
+            "zahir": "وإما إذا كنت لم تحققي أنت ولا زوجك شيئا من ذلك"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.191459",
+      "situations": [
+        {
+          "label": "Lost money found in Medina haram, held 3 days: must announce a full year before owning, or hand to authorities",
+          "facts": {
+            "year_passed": false,
+            "ownable": true,
+            "unknown": true
+          },
+          "evidence": {
+            "year_passed": "وثلاثة أيام مدة ليست كافية في هذا",
+            "ownable": "يلزم من وجد لقطة في حرم المدينة : أن يعرفها سنة ، قبل أن يتملكها",
+            "unknown": "وقد مرت ثلاثة أيام ولم يأت أحد يسأل عنها"
+          }
+        },
+        {
+          "label": "Lost property in the Mecca haram: announce forever, never owned",
+          "facts": {
+            "ownable": false
+          },
+          "evidence": {
+            "ownable": "بَلْ لَا تَحِلّ إِلَّا لِمَنْ يُعَرِّفهَا أَبَدًا . وَلَا يَتَمَلَّكهَا"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.196584",
+      "situations": [
+        {
+          "label": "Repentant taker of others' money cannot find the owners: give it in charity on their behalf",
+          "facts": {
+            "hand": "wrongdoer",
+            "owner_identifiable": false,
+            "unknown": true,
+            "despair": true
+          },
+          "evidence": {
+            "hand": "وأخذت أموالا من بعض الناس ، وقد صرفت الأموال ولم أردها إلى أصحابها",
+            "owner_identifiable": "فتعذر علي إيجادهم ، وحاولت بكل الطرق ، لكن من المستحيل إيجادهم",
+            "unknown": "فتعذر علي إيجادهم",
+            "despair": "لكن من المستحيل إيجادهم ، أو العثور عليهم"
+          }
+        },
+        {
+          "label": "Giving that charity to her poor family whose maintenance she does not owe: allowed",
+          "facts": {
+            "owner_identifiable": false
+          },
+          "evidence": {
+            "owner_identifiable": "فتعذر علي إيجادهم"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.198294",
+      "situations": [
+        {
+          "label": "Husband swore she becomes haram to him if he returns to drugs; she believes he did: depends on his intention (talaq, zihar or oath)",
+          "facts": {
+            "suspended": true,
+            "amara": true,
+            "asl": "qat",
+            "zahir": "zann"
+          },
+          "evidence": {
+            "suspended": "وأنه إذا عاد : أَحْرُم عليه",
+            "amara": "ولكن تصرفاته وأفعاله وشكله يؤكد لي إحساسي",
+            "asl": "فنحن متزوجان من تسع سنين",
+            "zahir": "علما بأني متأكدة ٩٩٪"
+          }
+        },
+        {
+          "label": "Wife certain of the breach while husband denies: his word in outward ruling, she acts on her certainty",
+          "facts": {
+            "suspended": true,
+            "asl": "qat",
+            "zahir": "qat"
+          },
+          "evidence": {
+            "suspended": "وأنه إذا عاد : أَحْرُم عليه",
+            "asl": "فنحن متزوجان من تسع سنين",
+            "zahir": "إذا كنت على يقين من حال زوجك"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.209303",
+      "situations": [
+        {
+          "label": "Finder of an iPod during the announcement year wants to use it: not allowed, it is a trust",
+          "facts": {
+            "hand": "trustee",
+            "year_passed": false,
+            "ownable": true,
+            "unknown": true
+          },
+          "evidence": {
+            "hand": "لأنها أمانة عنده ، وليست ملكا له",
+            "year_passed": "وقد مر شهران حتى الآن ولم يأت أحد",
+            "ownable": "وإلا فهي له بعد السنة",
+            "unknown": "وقد مر شهران حتى الآن ولم يأت أحد"
+          }
+        },
+        {
+          "label": "Find lost or diminished during the year without negligence: no liability",
+          "facts": {
+            "hand": "trustee",
+            "negligent": false,
+            "year_passed": false
+          },
+          "evidence": {
+            "hand": "يَدَ الْمُلْتَقِطِ أَثْنَاءَ الْحَوْل : يَدُ أَمَانَةٍ",
+            "negligent": "وَإِنْ تَلَفَتْ عِنْدَ الْمُلْتَقِطِ أَثْنَاءَ الْحَوْل بِغَيْرِ تَفْرِيطِهِ",
+            "year_passed": "أَثْنَاءَ الْحَوْل"
+          }
+        },
+        {
+          "label": "Finder takes the find for himself during the year: liable",
+          "facts": {
+            "transgressed": true,
+            "year_passed": false
+          },
+          "evidence": {
+            "transgressed": "وَإِنْ أَخَذَهَا لِنَفْسِهِ : ضَمِنَ",
+            "year_passed": "أَثْنَاءَ الْحَوْل"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.223512",
+      "situations": [
+        {
+          "label": "Family who brought the folk healer: sinful but no blood-money or expiation",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Death unrelated to the healer's act: no liability",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Death caused by the healer through lack of skill, transgression or shortcoming: healer liable",
+          "facts": {
+            "transgressed": true
+          },
+          "evidence": {
+            "transgressed": "لكونه غير حاذق في عمله أو لوجود تعدٍ منه أو تقصير : فيكون الضمان عليه"
+          }
+        },
+        {
+          "label": "Skilled practitioner who did not exceed what is required: no liability",
+          "facts": {
+            "transgressed": false
+          },
+          "evidence": {
+            "transgressed": "أن لا تجني أيديهم ، فيتجاوزوا ما ينبغي أن يقطع"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.22830",
+      "situations": [
+        {
+          "label": "Trustee carrying deposit kept it in safe custody, no transgression or negligence; lost by theft: not liable",
+          "facts": {
+            "hand": "trustee",
+            "transgressed": false,
+            "negligent": false
+          },
+          "evidence": {
+            "hand": "بالنسبة لهذه الأمانة الإنسان مؤتمن عليها",
+            "transgressed": "فإن حفظها في حرزها التي تحرز فيه وتحفظ فيه ولم يتعدّ ولم يفرط",
+            "negligent": "فإن حفظها في حرزها التي تحرز فيه وتحفظ فيه ولم يتعدّ ولم يفرط"
+          }
+        },
+        {
+          "label": "Trustee was negligent, not keeping it in its safe place, then it was stolen: liable",
+          "facts": {
+            "hand": "trustee",
+            "negligent": true
+          },
+          "evidence": {
+            "hand": "بالنسبة لهذه الأمانة الإنسان مؤتمن عليها",
+            "negligent": "أما إذا فرط ولم يحفظها في حرزها"
+          }
+        },
+        {
+          "label": "Trustee transgressed (unsafe place despite ability, used or disposed of it), then stolen: liable",
+          "facts": {
+            "hand": "trustee",
+            "transgressed": true
+          },
+          "evidence": {
+            "hand": "بالنسبة لهذه الأمانة الإنسان مؤتمن عليها",
+            "transgressed": "أو تعدى ووضعها في مكان لا يؤمن عليها مع قدرته أن يضعها في مكان يؤمن عليها فيه ، أو تصرف فيها ؛ أو استعملها"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.23424",
+      "situations": [
+        {
+          "label": "Latecomer doubting count of rak'as builds on certainty (the lesser number)",
+          "facts": {
+            "asl": "qat",
+            "zahir": "shakk"
+          },
+          "evidence": {
+            "asl": "في حال الشك في عدد الركعات يبني الإنسان على اليقين ، فيعتمد الأقل من عدد الركعات",
+            "zahir": "في حال الشك في عدد الركعات يبني الإنسان على اليقين"
+          }
+        },
+        {
+          "label": "Latecomer builds on predominant belief, aided by looking at those beside him",
+          "facts": {
+            "amara": true,
+            "asl": "qat",
+            "zahir": "zann"
+          },
+          "evidence": {
+            "amara": "وإن بنى على غالب الظن ، أي بما يترجح لديه ولو بالنظر إلى من بجواره فلا بأس",
+            "asl": "في حال الشك في عدد الركعات يبني الإنسان على اليقين ، فيعتمد الأقل من عدد الركعات",
+            "zahir": "وإن بنى على غالب الظن ، أي بما يترجح لديه ولو بالنظر إلى من بجواره فلا بأس"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.242731",
+      "situations": [
+        {
+          "label": "Dentist whose drilling/filling erred and damaged the teeth: liability for damage and treatment, per expert assessment",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Skilled physician whose hand errs: liable but not sinful",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Unskilled physician: sinful and liable",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Dentist's fee where she ruined rather than treated the teeth: no fee due",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.252463",
+      "situations": [
+        {
+          "label": "Bank buys the car genuinely, takes possession, sells by murabaha without usurious clause: permitted",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Deposit as security with an Islamic bank in an investment account: permitted",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Deposit as security with an Islamic bank kept in a current account (loan with sale): not permitted",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Deposit with a usurious bank: not permitted",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.253293",
+      "situations": [
+        {
+          "label": "Seller holding sold machine with buyer's consent, not preventing him from taking it: buyer bears risk; seller liable only for transgression/negligence",
+          "facts": {
+            "hand": "trustee",
+            "held_by_consent": true,
+            "guaranteed": false
+          },
+          "evidence": {
+            "hand": "ولا يضمنها البائع إلا بالتعدي أو بالتفريط",
+            "held_by_consent": "والظاهر أن هذه الآلة أبقيت عندك حتى يسدد الباقي، فهي مرهونة على ما بقي من ثمنها",
+            "guaranteed": "ولم يمنعه البائع من أخذها، فلم يأخذها، كانت من ضمان المشتري، ولا يضمنها البائع إلا بالتعدي أو بالتفريط"
+          }
+        },
+        {
+          "label": "Buyer reachable but neither comes nor permits sale; seller despairs of his coming: may sell (via ruler if useful), take his due, keep rest for owner",
+          "facts": {
+            "owner_identifiable": true
+          },
+          "evidence": {
+            "owner_identifiable": "والاحتفاظ بالباقي لصاحبه"
+          }
+        },
+        {
+          "label": "Buyer's news cut off and he cannot be reached: sell, take due, give remainder in charity on his behalf",
+          "facts": {
+            "unknown": true,
+            "despair": true
+          },
+          "evidence": {
+            "unknown": "وإن انقطعت أخباره ولم يمكن الوصول إليه، بعت الآلة، وأخذت ما لك، وتصدقت بالباقي عنه",
+            "despair": "وإن انقطعت أخباره ولم يمكن الوصول إليه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.260724",
+      "situations": [
+        {
+          "label": "Employee absent awaiting transfer: salary for the absent days not lawful; return it or give in charity",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Employee obtaining a sick-leave certificate when not sick, under threat of dismissal for unjustified absence: permitted",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.266167",
+      "situations": [
+        {
+          "label": "Employee given employer's car causes an accident damaging another's property by his fault: he is liable, not the employer",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Employer voluntarily pays the damages owed by the employee: no harm",
+          "facts": {
+            "gift": true,
+            "owed_by_other": true
+          },
+          "evidence": {
+            "gift": "لكن لو تبرع صاحب العمل بذلك، فلا حرج",
+            "owed_by_other": "أن ضمان ما أتلفت عليك، لكن لو تبرع صاحب العمل بذلك"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.272160",
+      "situations": [
+        {
+          "label": "Owner of parked car struck by speeding driver takes expert-assessed compensation for depreciation: permitted, whether he keeps or scraps the car",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.286486",
+      "situations": [
+        {
+          "label": "Accident victim claims compensation from the at-fault driver's insurer: permitted",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Court-awarded interest on the compensation: usury, must be returned to the insurer",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Customary litigation and lawyer costs: may be recovered from the award",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Award exceeding the lawful due: excess returned to insurer, not given to others unless the company allows",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.287215",
+      "situations": [
+        {
+          "label": "Father gifted apartments to children during a mortal (fatal) illness: treated as bequest to heirs, needs other heirs' consent",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Gift during non-fatal illness taken into possession: valid gift",
+          "facts": {
+            "qabd_completes": true
+          },
+          "evidence": {
+            "qabd_completes": "فهي هبة صحيحة إن تم قبضها"
+          }
+        },
+        {
+          "label": "Gift not taken into possession: gift incomplete; apartments enter the estate",
+          "facts": {
+            "qabd_completes": true
+          },
+          "evidence": {
+            "qabd_completes": "وأما إذا لم يحصل القبض، فإن الهبة لم تتم، وتدخل تلك الشقق في التركة"
+          }
+        },
+        {
+          "label": "Second wife without proof of marriage, known to be wife: gets her share of the eighth",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Second wife cannot be reached: keep her share or give it in charity on her behalf, with option if she appears",
+          "facts": {
+            "owner_identifiable": true,
+            "despair": true
+          },
+          "evidence": {
+            "owner_identifiable": "يلزم البحث عن هذه الزوجة لإعطائها نصيبها، أو إعطائه لورثتها في حال موتها",
+            "despair": "فإن تعذر الوصول إليها، احتفظتم به لها، أو تصدقتم به عنها"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.304828",
+      "situations": [
+        {
+          "label": "Repentant thief who cannot identify the victims: may give the stolen property or its value in charity on their behalf",
+          "facts": {
+            "hand": "wrongdoer",
+            "owner_identifiable": false,
+            "unknown": true,
+            "despair": true
+          },
+          "evidence": {
+            "hand": "اعتدت السرقة منذ فترة طويلة",
+            "owner_identifiable": "فإذا جهلت الشخص الذي سرقت أمواله كما قلت، واجتهدت في تذكره فلم تتذكريه",
+            "unknown": "فإذا جهلت الشخص الذي سرقت أمواله كما قلت",
+            "despair": "واجتهدت في تذكره فلم تتذكريه ، فيجوز أن تتصدقي عنه بما سرق منه"
+          }
+        },
+        {
+          "label": "Earlier charity given on her own behalf cannot be re-intended for the victims",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.305083",
+      "situations": [
+        {
+          "label": "Questioner driving within permitted speed and place, only caused the woman to step back: not liable",
+          "facts": {
+            "transgressed": false
+          },
+          "evidence": {
+            "transgressed": "فإنك لم تكن متعديا"
+          }
+        },
+        {
+          "label": "Other driver who directly struck the woman: liable, unless he could not avoid her",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Questioner was transgressing (e.g. speeding) while the other driver was not: questioner liable as transgressing cause",
+          "facts": {
+            "transgressed": true
+          },
+          "evidence": {
+            "transgressed": "إذا كنت متعديا بسيرك"
+          }
+        },
+        {
+          "label": "Expiation (fasting) only if the woman's death from the accident is established",
+          "facts": {
+            "zahir": "wahm"
+          },
+          "evidence": {
+            "zahir": "ولكن لا يلزمك الكفارة إلا إذا ثبت موت المرأة بسبب الحادث، وهذا مستبعد، والأصل براءة الذمة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.315435",
+      "situations": [
+        {
+          "label": "Driver at permitted speed who could not avoid the suddenly crossing pedestrian: excused, no blood money or expiation",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Driver could have avoided collision or was speeding: liable, blood money and expiation if death",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Driver and pedestrian share fault: full expiation on driver, blood money by share of fault",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Victim died hours after the accident: spread of injury is liable; cause of death may be verified medically",
+          "facts": {
+            "zahir": "zann"
+          },
+          "evidence": {
+            "zahir": "لأن موته عقب الحادث بساعات الظاهر والغالب أنه كان من أثر الحادث"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.317604",
+      "situations": [
+        {
+          "label": "Questioner slowed down; following car swerved and a third car overturned",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "The tailgating driver who swerved, judged transgressor and negligent",
+          "facts": {
+            "transgressed": true,
+            "negligent": true
+          },
+          "evidence": {
+            "transgressed": "لكنه معتد ومفرط، فالضمان يكون عليه",
+            "negligent": "لكنه معتد ومفرط، فالضمان يكون عليه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.328808",
+      "situations": [
+        {
+          "label": "Airline (common hireling) broke the lent suitcase; compensation owed",
+          "facts": {
+            "pure_trust": false
+          },
+          "evidence": {
+            "pure_trust": "والأجير المشترك يضمن مطلقا ولو لم يحصل منه تعد أو تفريط"
+          }
+        },
+        {
+          "label": "Airline fixed a compensation amount itself and the owner accepted it",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.344230",
+      "situations": [
+        {
+          "label": "Driver who drove a friend's work car at his request caused a collision; who bears the cost",
+          "facts": {
+            "negligent": false,
+            "mental": "ignorant",
+            "benefits_other": true
+          },
+          "evidence": {
+            "negligent": "ما دمت قد سقت لمصلحته ولم تكن مفرطا",
+            "mental": "وكونك لا تعلم بذلك وأنك لو علمت ما قدت السيارة، كل ذلك لا يرفع عنك الضمان",
+            "benefits_other": "ما دمت قد سقت لمصلحته"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.345284",
+      "situations": [
+        {
+          "label": "Questioner hit and killed an animal its owner leaves on the road",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Driver hit the animal through negligence: liable",
+          "facts": {
+            "negligent": true
+          },
+          "evidence": {
+            "negligent": "فإن كان بتفريط من السائق، فإنه يضمن ما أتلفه"
+          }
+        },
+        {
+          "label": "Driver hit it without negligence (e.g. sudden failure despite care): not liable",
+          "facts": {
+            "transgressed": false,
+            "negligent": false
+          },
+          "evidence": {
+            "transgressed": "لعدم تعديه وتفريطه",
+            "negligent": "وإن كان بغير تفريط، لم يضمن"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.348122",
+      "situations": [
+        {
+          "label": "Stroller placed in a rarely-used corner; grandmother tripped, broke her thigh, died later",
+          "facts": {
+            "transgressed": false
+          },
+          "evidence": {
+            "transgressed": "فأنت غير معتدية، ولا يلزمك ضمان من عثر بهذه العربة"
+          }
+        },
+        {
+          "label": "Assuming she was a transgressor (stroller in their path): liable for the fracture, and for death only if from its complications",
+          "facts": {
+            "transgressed": true
+          },
+          "evidence": {
+            "transgressed": "على فرض أنك معتدية بفعلك فإنك تضمنين الكسر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.363963",
+      "situations": [
+        {
+          "label": "Driver at reasonable speed warned the pedestrian, who stepped back suddenly: no liability",
+          "facts": {
+            "negligent": false
+          },
+          "evidence": {
+            "negligent": "إذا كنت تسيرين بالسرعة المعقولة التي يمكنك معها التحكم في السيارة"
+          }
+        },
+        {
+          "label": "Assuming she sped or failed to try to avoid him: liable for the fracture and wound, not the death",
+          "facts": {
+            "negligent": true
+          },
+          "evidence": {
+            "negligent": "أو بالتقصير في محاولة تفادي الحادث عند عودة الرجل، فإنك تضمنين كسره وجرحه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.4046",
+      "situations": [
+        {
+          "label": "Questioner found gold in a large city, sold it and gave the price in charity; owner unknown",
+          "facts": {
+            "unknown": true
+          },
+          "evidence": {
+            "unknown": "وأنوي إن وجدت صاحبها"
+          }
+        },
+        {
+          "label": "Valuable find announced for a full year without the owner being found: becomes the finder's",
+          "facts": {
+            "year_passed": true,
+            "ownable": true,
+            "unknown": true
+          },
+          "evidence": {
+            "year_passed": "وإن لم تعرف فهي له بعد السنة",
+            "ownable": "وإن لم تعرف فهي له بعد السنة",
+            "unknown": "وإن لم تعرف فهي له بعد السنة"
+          }
+        },
+        {
+          "label": "Find in the two Harams: never owned, announce forever or hand to authorities",
+          "facts": {
+            "ownable": false
+          },
+          "evidence": {
+            "ownable": "إلا أن تكون في الحرمين فليس له تملكها"
+          }
+        },
+        {
+          "label": "Trivial find (rope, sandal strap, little money): no announcement needed",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Stray camel and animals that fend off small predators: may not be picked up",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.4050",
+      "situations": [
+        {
+          "label": "Wallet with money found in the Haram during Hajj",
+          "facts": {
+            "unknown": true,
+            "ownable": false
+          },
+          "evidence": {
+            "unknown": "عثرت على محفظة نقود وبها مبلغ لا بأس به من المال",
+            "ownable": "ولا تملك بحال ، للنهي عنها ، ويجب تعريفها أبداً"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.4588",
+      "situations": [
+        {
+          "label": "Watch picked up in the Meccan Haram and kept four years",
+          "facts": {
+            "ownable": false
+          },
+          "evidence": {
+            "ownable": "والواجب على المذكور أن يرد القطعة المذكورة إلى المحكمة الكبرى بمكة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.4652",
+      "situations": [
+        {
+          "label": "Money entrusted for delivery confiscated by airport authorities",
+          "facts": {
+            "hand": "trustee",
+            "pure_trust": true,
+            "transgressed": false
+          },
+          "evidence": {
+            "hand": "المودع أمين",
+            "pure_trust": "المودع أمين وإذا هلك ما في يده بدون تعد فلا ضمان عليه",
+            "transgressed": "وإذا هلك ما في يده بدون تعد فلا ضمان عليه فإذا كان الأمر كما ذكرت"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.5049",
+      "situations": [
+        {
+          "label": "Questioner: money found on the road",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Trivial item (whip, loaf, stick): owned by the taker without announcement",
+          "facts": {
+            "ownable": true
+          },
+          "evidence": {
+            "ownable": "فهذا يملكه آخذه وينتفع به بلا تعريف"
+          }
+        },
+        {
+          "label": "Animals that fend off small predators, and large fixed objects: may not be taken, never owned",
+          "facts": {
+            "ownable": false
+          },
+          "evidence": {
+            "ownable": "فهذا القسم بأنواعه يحرم التقاطه ، ولا يملكه آخذه بتعريفه"
+          }
+        },
+        {
+          "label": "Edible animal picked up: eat and owe value, sell and keep price, or keep and feed",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Perishable find: eat and pay value, or sell and keep the price",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "Other property (money, vessels) during the year of announcement: held as a trust",
+          "facts": {
+            "hand": "trustee"
+          },
+          "evidence": {
+            "hand": "فيلزمه حفظ الجميع أمانة بيده"
+          }
+        },
+        {
+          "label": "Other property after a full year of announcement with no owner: becomes the finder's",
+          "facts": {
+            "year_passed": true,
+            "ownable": true,
+            "unknown": true
+          },
+          "evidence": {
+            "year_passed": "إذا لم يأت صاحبها بعد تعريفها حولاً كاملاً ، تكون ملكاً لواجدها",
+            "ownable": "إذا لم يأت صاحبها بعد تعريفها حولاً كاملاً ، تكون ملكاً لواجدها",
+            "unknown": "إذا لم يأت صاحبها بعد تعريفها حولاً كاملاً"
+          }
+        },
+        {
+          "label": "Finder who does not trust himself takes it anyway: like a usurper",
+          "facts": {
+            "hand": "wrongdoer"
+          },
+          "evidence": {
+            "hand": "فإن أخَذَها ، فهو كغاصب"
+          }
+        },
+        {
+          "label": "Claimant comes and describes it accurately: must be handed over",
+          "facts": {
+            "owner_identifiable": true
+          },
+          "evidence": {
+            "owner_identifiable": "إذا جاء طالبها ، فوصفها بما يطابق وصفها ، وجب دفعها إليه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.83025",
+      "situations": [
+        {
+          "label": "Woman doubted a wet dream and performed Tawaf al-Ifada with that doubt",
+          "facts": {
+            "amara": false,
+            "asl_mustashab": true,
+            "asl": "qat",
+            "zahir": "shakk"
+          },
+          "evidence": {
+            "amara": "ما دمت لم تتيقني من الاحتلام برؤية المني",
+            "asl_mustashab": "لأن الأصل الطهارة",
+            "asl": "لأن الأصل الطهارة",
+            "zahir": "شكيت بأني احتلمت ولكنى لم أكن متأكدة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "islamqa.83827",
+      "situations": [
+        {
+          "label": "Depositary used the deposit without permission and part of it was lost",
+          "facts": {
+            "hand": "wrongdoer",
+            "transgressed": true,
+            "owner_identifiable": true
+          },
+          "evidence": {
+            "hand": "ومن فعل ذلك كان في حكم الغاصب",
+            "transgressed": "لأنه هو الذي اعتدى في بادئ الأمر وتصرف في الوديعة تصرفاً محرماً",
+            "owner_identifiable": "وأن يتحلل من صاحب الوديعة ، وأن يرد إليه وديعته"
+          }
+        },
+        {
+          "label": "Part of the deposit possibly entered the brothers' joint project; profit on it",
+          "facts": {
+            "indistinct": true,
+            "owner_identifiable": true
+          },
+          "evidence": {
+            "indistinct": "وقد تداخلت الديون في بعضها فلا نعلم إن كان شيء منها قد دخل في المشروع المشترك بيننا",
+            "owner_identifiable": "ويعطي ربح هذا المال لصاحب الوديعة"
+          }
+        }
+      ]
+    }
+  ]
+}
