@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "status": "frozen_protocol_source_bytes_unavailable",
+  "base_commit": "008ba7f5254616b69d7a44700ba3d23b9b572cf9",
+  "seed": "usul-fatawa-heldout-v1-2026-10-11",
+  "answers_per_encoder": 20,
+  "answers_sha256": "621fcd30c854a45407a5c303de8656c402eab4c59abde884a06038348ffbb205",
+  "frozen_sha256": {
+    "examples/v40_fatwa_rules.pl": "f96d2a50bd83d6c5ed2cc19114459244a3beb162d64724f2e49d32ca7fcdcc4d",
+    "pipeline/usul_corpus/fatawa_prolog.py": "f935c7f082e0a42fdbc242347d8b0fed6e1f3733744b6c9e86a92c67d31df7df",
+    "pipeline/usul_corpus/takhrij.py": "e9e5456748ec852dd9fd4840e4e6c4223705de2fb820c9966b8885a4bae8a89e",
+    "corpus/fatawa/takhrij/islamqa_tranche1.json": "2e1bce1bf3cacd32fa4a28f013f6dd0ced299b250da4c67561a5c671a19c2a00",
+    "corpus/fatawa/prolog/tranche1_facts.json": "9b48e338865d78e8688c36f15df0e085457a65ad7f4f07017cea0051d0907e5e",
+    "scripts/fatawa_heldout_sample.py": "69e2ac01a63e1c54f79ca2318f2fd7bb31c6eb6ca6deed62edd8089bb9a09089"
+  },
+  "excluded_answer_ids": [
+    "islamqa.10284",
+    "islamqa.103846",
+    "islamqa.104241",
+    "islamqa.107436",
+    "islamqa.108549",
+    "islamqa.110860",
+    "islamqa.114793",
+    "islamqa.126387",
+    "islamqa.126502",
+    "islamqa.128510",
+    "islamqa.128887",
+    "islamqa.131070",
+    "islamqa.13717",
+    "islamqa.140833",
+    "islamqa.146191",
+    "islamqa.152192",
+    "islamqa.164604",
+    "islamqa.165409",
+    "islamqa.170478",
+    "islamqa.176193",
+    "islamqa.179911",
+    "islamqa.187157",
+    "islamqa.191459",
+    "islamqa.196584",
+    "islamqa.198294",
+    "islamqa.209303",
+    "islamqa.223512",
+    "islamqa.22830",
+    "islamqa.23424",
+    "islamqa.242731",
+    "islamqa.252463",
+    "islamqa.253293",
+    "islamqa.260724",
+    "islamqa.266167",
+    "islamqa.272160",
+    "islamqa.286486",
+    "islamqa.287215",
+    "islamqa.304828",
+    "islamqa.305083",
+    "islamqa.315435",
+    "islamqa.317604",
+    "islamqa.328808",
+    "islamqa.344230",
+    "islamqa.345284",
+    "islamqa.348122",
+    "islamqa.363963",
+    "islamqa.4046",
+    "islamqa.4050",
+    "islamqa.4588",
+    "islamqa.4652",
+    "islamqa.5049",
+    "islamqa.83025",
+    "islamqa.83827"
+  ],
+  "question_keywords": {
+    "asl_zahir": [
+      "شك",
+      "يقين",
+      "وسواس"
+    ],
+    "trust_loss": [
+      "أمانة",
+      "وديعة",
+      "مضاربة"
+    ],
+    "itlaf": [
+      "حادث",
+      "أتلف",
+      "إتلاف",
+      "تعويض"
+    ],
+    "luqata": [
+      "لقطة",
+      "لقيط",
+      "عثرت",
+      "وجدت مال"
+    ],
+    "unknown_owner": [
+      "مجهول",
+      "صاحب المال",
+      "أموال عامة"
+    ]
+  },
+  "annotation_status": "candidate_auto_only_until_actual_human_review",
+  "evaluation_status": "not_run",
+  "original_report": "corpus/fatawa/prolog/report.json"
+}
