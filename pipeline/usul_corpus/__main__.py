@@ -376,6 +376,27 @@ def cmd_worklist(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_routing(args: argparse.Namespace) -> int:
+    """Regenerate (or ``--check``) the routing index, and its out-of-domain report where the IslamQA
+    answers are fetched (Git LFS)."""
+    from . import routing
+    files = {CORPUS / routing.INDEX: routing.render(CORPUS)}
+    answers = ROOT / routing.ANSWERS
+    if answers.exists() and answers.stat().st_size > 1000:
+        files[CORPUS / routing.OOD] = routing.render_ood(ROOT)
+    if args.check:
+        stale = [str(p.relative_to(ROOT)) for p, c in files.items() if not p.exists() or p.read_text(encoding="utf-8") != c]
+        if stale:
+            print(f"routing stale ({', '.join(stale)}): run python -m usul_corpus routing", file=sys.stderr)
+            return 1
+    else:
+        for p, c in files.items():
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(c, encoding="utf-8")
+    print(json.dumps(json.loads(files[CORPUS / routing.INDEX])["recall"]))
+    return 0
+
+
 def cmd_m5_commands(args: argparse.Namespace) -> int:
     from . import m5_commands
     plan = _load(CORPUS / m5_commands.PLAN)
@@ -700,6 +721,9 @@ def parser() -> argparse.ArgumentParser:
         m = sub.add_parser(name, help="regenerate or --check the obligation inventories")
         m.add_argument("--check", action="store_true")
         m.set_defaults(run=cmd_worklist)
+    r = sub.add_parser("routing", help="regenerate or --check the encoder routing index (P0.6)")
+    r.add_argument("--check", action="store_true")
+    r.set_defaults(run=cmd_routing)
     m5 = sub.add_parser("m5-commands", help="check candidate command capabilities and source receipts")
     m5.add_argument("--fetch-source", action="store_true", help="restore the full pinned witness without repinning")
     m5.set_defaults(run=cmd_m5_commands)
