@@ -5,8 +5,8 @@ from pathlib import Path
 import jsonschema
 import pytest
 
-from usul_corpus.qa import segment_qa
-from usul_corpus.records import fatwa_record
+from usul_corpus.qa import segment_entries, segment_qa
+from usul_corpus.records import fatwa_record, masala_record
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -89,17 +89,72 @@ def test_an_unanswered_unit_keeps_only_its_question_header():
 
 def _fatwa_witnesses():
     reg = json.loads((ROOT / "corpus/registry.json").read_text(encoding="utf-8"))
-    return [(w, x) for w in reg["works"] if w.get("segmenter", {}).get("kind") == "qa" for x in w["witnesses"]]
+    return [(w, x) for w in reg["works"] if w.get("segmenter", {}).get("kind") in ("qa", "masail") for x in w["witnesses"]]
 
 
 @pytest.mark.parametrize("work,witness", _fatwa_witnesses(), ids=lambda v: v["id"] if isinstance(v, dict) else v)
-def test_committed_fatwa_records_replay_from_the_pinned_witness(work, witness):
+def test_committed_unit_records_replay_from_the_pinned_witness(work, witness):
     """Stability replay: re-segmenting the cached witness reproduces every committed id and receipt."""
     cached = ROOT / ".cache/corpus" / f"{witness['id']}.txt"
     if not cached.exists():
         pytest.skip("witness not cached")
-    seg = witness.get("segmenter", work["segmenter"])
-    units = segment_qa(cached.read_text(encoding="utf-8"), seg["question"], seg["answer"])
-    replay = [(fatwa_record(work, witness["id"], i, u)["id"], u.sha256) for i, u in enumerate(units, 1)]
+    seg, text = witness.get("segmenter", work["segmenter"]), cached.read_text(encoding="utf-8")
+    if seg["kind"] == "qa":
+        units, record = segment_qa(text, seg["question"], seg["answer"]), fatwa_record
+    else:
+        units, record = segment_entries(text, seg["start"]), masala_record
+    replay = [(record(work, witness["id"], i, u)["id"], u.sha256) for i, u in enumerate(units, 1)]
     committed = [(r["id"], r["sha256"]) for r in map(json.loads, (ROOT / "corpus/records" / f"{witness['id']}.jsonl").read_text(encoding="utf-8").splitlines())]
     assert replay == committed
+
+
+KAWSAJ = """#META#Header#End#
+# مقدمة المحقق
+### | [1103-1] قلت: إذا أمر الرجل ابنه أن يطلق امرأته؟
+# قال: يطيع أباه إذا كان الأب رجلا صالحا. PageV04P1728
+### | [1104-] قلت: فأمه؟
+# قال: لا يطيعها في هذا.
+# قال إسحاق: إن فعل ما قال أبوه وأمه كان قد أخذ بالفضيلة.
+PageV04P1729
+"""
+
+HARB = """#META#Header#End#
+### $ 19- باب: النظر إلى المرأة التي يريد أن يتزوجها.
+# قلت لأحمد: الرجل يريد أن يتزوج المرأة, هل ينظر إليها؟
+# قال: إذا خاف ريبة.
+# حدثنا يحيى بن عبد الحميد، قال: حدثنا شريك
+PageV01P215
+### $ 20- باب: من فجر بأخت امرأته.
+# سألت أحمد, قلت: رجل تزوج أخت امرأته؟
+PageV01P218
+"""
+
+
+def test_entries_run_from_one_opening_formula_to_the_next_and_take_the_printed_number():
+    units = segment_entries(KAWSAJ, r"\[\s*(?P<n>\d+)\s*-")
+    assert [u.number for u in units] == [1103, 1104]
+    assert units[0].text == "[1103-1] قلت: إذا أمر الرجل ابنه أن يطلق امرأته؟ قال: يطيع أباه إذا كان الأب رجلا صالحا."
+    assert "قال إسحاق" in units[1].text and units[1].page == (4, 1729)
+
+
+def test_a_section_heading_that_is_not_an_opening_ends_the_entry():
+    units = segment_entries(HARB, r"(?:قلت لأحمد|و?سألت أحمد)")
+    assert len(units) == 2
+    assert units[0].text.endswith("حدثنا شريك") and "باب" not in units[0].text
+    assert units[1].text.startswith("سألت أحمد") and units[0].number is None
+
+
+def test_masala_records_conform_to_the_schema():
+    schema = json.loads((ROOT / "schemas/usul_rule.schema.json").read_text())
+    u = segment_entries(KAWSAJ, r"\[\s*(?P<n>\d+)\s*-")[0]
+    r = masala_record({"id": "a.b", "rights": "public_domain_text"}, "w-x", 1, u)
+    jsonschema.validate(r, schema)
+    assert (r["id"], r["record_type"], r["number"], r["sha256"]) == ("a.b.w_x.m00001", "masala", 1103, u.sha256)
+
+
+def test_the_placeholder_page_marker_closes_no_page():
+    """OpenITI's PageV00P000 marks a page the source did not number: its lines are on no known page."""
+    text = "#META#Header#End#\n# قلت لأحمد: كذا؟ قال: لا.\nPageV00P000\n# قلت لأحمد: آخر؟ قال: نعم.\nPageV01P007\n"
+    first, second = segment_entries(text, r"(?:قلت لأحمد)")
+    assert (first.page, first.end_page, second.page) == (None, None, (1, 7))
+    assert masala_record({"id": "a.b", "rights": "public_domain_text"}, "w-x", 1, first)["page_span"] is None

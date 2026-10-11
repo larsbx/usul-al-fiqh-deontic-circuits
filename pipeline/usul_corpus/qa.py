@@ -7,8 +7,9 @@ unit's question has outgrown a short header (``HEADER_LINES``). So a heading tha
 («[مسألة …]» before «مسألة:», «السؤال الثالث … من الفتوى رقم» before «س3:») stays with its question,
 and an unanswered question cannot absorb the rest of the book.
 Markers are anchored to the start of a line, so a quotation such as «وسئل مالك …» inside an
-answer does not start a unit. Lines are cleaned of mARkdown prefixes, continuation marks and HTML
-tags, and joined; page markers close the page they follow (OpenITI). A section heading (``### |``)
+answer does not start a unit. Lines are cleaned of mARkdown prefixes, continuation marks, HTML
+tags and milestones, and joined; page markers, on their own line or inline, close the page they follow (OpenITI); the placeholder
+``PageV00P000`` closes a page the source did not number, so its lines are on no known page. A section heading (``### |``)
 after the answer has begun ends the unit, so a treatise placed between fatāwā is not absorbed by
 the last answer before it. A unit with no answer keeps only its question header. Each unit carries the sha256 of
 its text as a receipt for stability replays (docs/architecture/derivation-method.md §3, S0).
@@ -25,6 +26,7 @@ Page = tuple[int, int]
 _PAGE = re.compile(r"PageV(\d+)P(\d+)")
 _PREFIX = re.compile(r"^(?:#+\s*\|*\s*|~~)")
 _TAG = re.compile(r"<[^>]+>")
+_MILESTONE = re.compile(r"\bms\d+\b")
 _NUM = re.compile(r"^(?:س|ج)\s*(\d+)\s*:")
 HEADER_LINES = 3
 
@@ -53,12 +55,11 @@ def _lines(text: str) -> list[tuple[str, Page | None, bool]]:
     out: list[tuple[str, int, bool]] = []
     pages: list[Page | None] = []
     for raw in body:
-        if m := _PAGE.fullmatch(_PREFIX.sub("", raw).strip()):
-            pages.append((int(m[1]), int(m[2])))
-            continue
-        line = " ".join(_TAG.sub("", _PREFIX.sub("", raw)).split())
-        if line:
+        parts = _PAGE.split(_PREFIX.sub("", raw))  # text, (vol, page), text, …: markers may be inline
+        line = " ".join(_MILESTONE.sub("", _TAG.sub("", " ".join(parts[0::3]))).split())
+        if line:  # the line is on the page its next marker closes, inline or later
             out.append((line, len(pages), raw.startswith("### ")))
+        pages += [(int(v), int(p)) if int(p) else None for v, p in zip(parts[1::3], parts[2::3])]  # P000: unnumbered
     pages.append(None)  # text after the last marker is on no closed page
     return [(line, pages[i], head) for line, i, head in out]
 
@@ -87,4 +88,37 @@ def segment_qa(text: str, question: str, answer: str) -> tuple[QA, ...]:
         number = next((int(m[1]) for line, _, _ in block if (m := _NUM.match(line))), None)
         units.append(QA(" ".join(line for line, _, _ in q), " ".join(line for line, _, _ in a) or None,
                         block[0][1], block[-1][1], number))
+    return tuple(units)
+
+
+@dataclass(frozen=True)
+class Entry:
+    """One masʾala of a *Masāʾil* collection: the whole entry, with its printed number if any."""
+    text: str
+    page: Page | None
+    end_page: Page | None
+    number: int | None
+
+    @property
+    def sha256(self) -> str:
+        return hashlib.sha256(self.text.encode()).hexdigest()
+
+
+def segment_entries(text: str, start: str) -> tuple[Entry, ...]:
+    """The ``masail`` segmenter: an entry starts at a line beginning with the work's opening formula
+    («قلت لأحمد», «سمعت أحمد», al-Kawsaj's «[1100-]» …) and runs to the next one, or to a section
+    heading that is not itself an opening. A named group ``n`` in ``start`` is the printed number.
+    Answers are inline («… قال: …»), so an entry is not split into question and answer."""
+    at = re.compile(start)
+    lines = _lines(text)
+    units, cur = [], None
+    for line, page, heading in lines + [("", None, True)]:
+        m = at.match(line)
+        if cur and (m or heading):
+            units.append(Entry(" ".join(l for l, _ in cur), cur[0][1], cur[-1][1], number))
+            cur = None
+        if m:
+            cur, number = [], int(m["n"]) if "n" in m.groupdict() and m["n"] else None
+        if cur is not None:
+            cur.append((line, page))
     return tuple(units)

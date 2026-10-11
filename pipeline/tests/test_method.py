@@ -46,7 +46,7 @@ def test_method_names_resolve(doc):
         if re.fullmatch(r"Usul(?:\.\w+)+", t):
             module = ROOT / "formal/lean" / (t.replace(".", "/") + ".lean")
             missing += [t] * (not module.exists() and t.split(".")[-1] not in lean)
-        if m := re.fullmatch(r"(takhrij|shards|reconcile|m8_worklist|reception|mentions)\.(\w+)", t):
+        if m := re.fullmatch(r"(takhrij|shards|reconcile|m8_worklist|reception|mentions|qa|hadith)\.(\w+)", t):
             missing += [t] * (not hasattr(importlib.import_module(f"usul_corpus.{m[1]}"), m[2]))
         if _PATH.match(t) and not any(c in t for c in "<*…"):
             missing += [t] * (not (ROOT / t).exists())

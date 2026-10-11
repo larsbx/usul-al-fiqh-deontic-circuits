@@ -55,14 +55,15 @@ Precedents:
 
 **Status.**
 - **Done:** P0.1, P0.2 and P0.3 (`pipeline/usul_corpus/shards.py`, method §5.2). Of P0.4, claims with disjoint ownership over the generated worklists (method §5.1).
-- **P0.5, first segmenter done:** `qa` (`pipeline/usul_corpus/qa.py`), configured per work in the registry by two line-start patterns. It emits `fatwa` records: question and answer excerpts within rights, the page span, and the `sha256` receipt of the whole unit. `test_committed_fatwa_records_replay_from_the_pinned_witness` replays them.
-  - Seven collections are segmented, totalling 21,153 units (answered share in brackets): *Majmūʿ al-Fatāwā* 1,842 (0.99), *al-Fatāwā al-Kubrā* 971 (0.80), *Jāmiʿ al-Masāʾil* 122 (0.73), *al-Durar al-Saniyya* 1,649 (0.99), the Lajna 10,437 (0.97), Ibn Bāz 4,594 (0.98), Ibn ʿUthaymīn 1,538 (1.00).
+- **P0.5, two segmenters done.** `qa` (`pipeline/usul_corpus/qa.py`), configured per work in the registry by two line-start patterns. It emits `fatwa` records: question and answer excerpts within rights, the page span, and the `sha256` receipt of the whole unit. `test_committed_unit_records_replay_from_the_pinned_witness` replays them.
+  - Seven collections are segmented, totalling 21,168 units (answered share in brackets): *Majmūʿ al-Fatāwā* 1,847 (0.99), *al-Fatāwā al-Kubrā* 971 (0.80), *Jāmiʿ al-Masāʾil* 122 (0.73), *al-Durar al-Saniyya* 1,651 (0.99), the Lajna 10,437 (0.97), Ibn Bāz 4,597 (0.98), Ibn ʿUthaymīn 1,543 (1.00). Page markers and milestones are stripped wherever they fall in a line.
+  - `masail` (`qa.segment_entries`) cuts a *Masāʾil* collection at a line-start opening formula; a named group `n` captures the printed number. It emits `masala` records with the same receipt and replay. Three collections give 5,700 entries: al-Kawsaj 3,575 (numbered 1–3,609: 6 duplicates, 40 numbers missing, listed in `corpus/audit.json`), Abū Dāwūd 1,585 (699 on pages the witness leaves unnumbered, `PageV00P000`), Ḥarb 540.
   - In *al-Kubrā* and *Jāmiʿ*, many answers begin without a «الجواب» marker. Their unanswered units keep only the question header, so they wait for review rather than absorbing text.
 - **Open:**
-  - the `masail` segmenter for the *Masāʾil* of Aḥmad («قلت لأحمد», «سألت أحمد», «سمعت أحمد» … «قال»);
   - the `abwab` segmenter for the mutūn;
   - *Nūr ʿalā al-Darb* (Ibn Bāz, Ibn ʿUthaymīn) and Fatāwā Muḥammad b. Ibrāhīm, which is letters, not Q/A;
   - extending the worklist inventory to the new record types;
+  - joining al-Irwāʾ to the `masala` and `fatwa` records. `hadith.JOIN_TYPES` holds the join to the reviewed types; widening it proposes 1,351 masāʾil candidates, which are a review tranche of their own;
   - P0.6.
 
 | # | Change | Gate |

@@ -120,3 +120,22 @@ def fatwa_record(work: dict, witness: str, idx: int, u) -> dict:
         "status": "candidate",
         "extraction": {"pipeline": PIPELINE, "method": "qa"},
     }
+
+
+def masala_record(work: dict, witness: str, idx: int, u) -> dict:
+    """One entry (``qa.Entry``) of a *Masāʾil* collection: its excerpt within the work's rights,
+    printed number, page span and the sha256 receipt of the whole entry."""
+    tag = f"m{idx:05d}"
+    return {
+        "id": f"{work['id']}.{witness.replace('-', '_')}.{tag}",
+        "work": work["id"],
+        "witness": witness,
+        "record_type": "masala",
+        "number": u.number,
+        "locator": _loc(witness, u.page, tag),
+        "page_span": [p[1] for p in (u.page, u.end_page) if p] or None,
+        "excerpt_ar": u.text[:EXCERPT_LEN[work["rights"]]],
+        "sha256": u.sha256,
+        "status": "candidate",
+        "extraction": {"pipeline": PIPELINE, "method": "masail"},
+    }

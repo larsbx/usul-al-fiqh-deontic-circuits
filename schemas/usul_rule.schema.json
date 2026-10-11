@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/schemas/usul_rule.schema.json",
-  "title": "Uṣūl Record (qāʿida or bayt, farʿ test case, ḥadd, sharḥ link, or fatwā unit)",
+  "title": "Uṣūl Record (qāʿida or bayt, farʿ test case, ḥadd, sharḥ link, fatwā unit, or masʾala)",
   "type": "object",
   "required": ["id", "work", "witness", "record_type", "locator", "status", "extraction"],
   "additionalProperties": false,
@@ -9,7 +9,7 @@
     "id": {"type": "string", "pattern": "^[a-z][a-z0-9_.]*$"},
     "work": {"type": "string"},
     "witness": {"type": "string"},
-    "record_type": {"enum": ["qaida", "far", "hadd", "sharh", "fatwa"]},
+    "record_type": {"enum": ["qaida", "far", "hadd", "sharh", "fatwa", "masala"]},
     "number": {"type": ["integer", "null"], "minimum": 1},
     "locator": {"type": "string", "pattern": "^src:[a-z0-9-]+(/v\\d+:p\\d+)?#.+$"},
     "heading_ar": {"type": "string"},
@@ -45,6 +45,7 @@
      "then": {"required": ["bayt", "number", "page_span", "quoted_ar", "excerpt_ar", "similarity"]}},
     {"if": {"properties": {"record_type": {"const": "hadd"}}},
      "then": {"required": ["term_ar", "istilahan_ar"]}},
-    {"if": {"properties": {"record_type": {"const": "fatwa"}}}, "then": {"required": ["question_ar", "answer_ar", "sha256", "page_span"]}}
+    {"if": {"properties": {"record_type": {"const": "fatwa"}}}, "then": {"required": ["question_ar", "answer_ar", "sha256", "page_span"]}},
+    {"if": {"properties": {"record_type": {"const": "masala"}}}, "then": {"required": ["excerpt_ar", "sha256", "page_span"]}}
   ]
 }

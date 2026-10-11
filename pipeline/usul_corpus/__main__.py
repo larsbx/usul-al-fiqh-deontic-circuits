@@ -39,8 +39,8 @@ from .texts import publishable, restore, stage
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
 from .openiti import parse_markdown
-from .qa import segment_qa
-from .records import fatwa_record, hadd_record, qaida_records, sharh_record, unit_tags
+from .qa import segment_entries, segment_qa
+from .records import fatwa_record, hadd_record, masala_record, qaida_records, sharh_record, unit_tags
 from .segment import (
     audit_numbering,
     consensus_numbering,
@@ -167,6 +167,9 @@ def _segment(work: dict, w: dict, text: str) -> tuple[list[dict], tuple | None]:
     if seg["kind"] == "qa":
         units = segment_qa(text, seg["question"], seg["answer"])
         return [fatwa_record(work, witness, i, u) for i, u in enumerate(units, 1)], None
+    if seg["kind"] == "masail":
+        entries = segment_entries(text, seg["start"])
+        return [masala_record(work, witness, i, u) for i, u in enumerate(entries, 1)], None
     if seg["kind"] == "hudud_brackets":
         hudud = extract_hudud(parse_markdown(text))
         return [hadd_record(work, witness, i, h) for i, h in enumerate(hudud, 1)], None
@@ -192,6 +195,19 @@ def _commentary(work: dict, witness: str, text: str, units: tuple) -> tuple[list
         "commentary_unlinked": [u.number for u in units if u.number not in linked],
         "commentary_min_similarity": min((l.similarity for l in links), default=None),
     }
+
+
+def unit_audit(records: list[dict]) -> dict:
+    """Audit fields for fatwā and masʾala records: the answered share, and the printed numbering."""
+    if not records or records[0]["record_type"] not in ("fatwa", "masala"):
+        return {}
+    out = {"answered": sum(r["answer_ar"] is not None for r in records)} if records[0]["record_type"] == "fatwa" else {}
+    nums = [r["number"] for r in records if r.get("number")]
+    if nums:
+        have = set(nums)
+        out["numbering"] = {"numbered": len(nums), "first": min(nums), "last": max(nums), "duplicates": len(nums) - len(have),
+                            "missing": [n for n in range(min(nums), max(nums) + 1) if n not in have]}
+    return out
 
 
 def merge_audit(previous: dict[str, dict], fresh: dict[str, dict], skipped: dict[str, str]) -> dict[str, dict]:
@@ -224,9 +240,7 @@ def cmd_build(_: argparse.Namespace) -> int:
                 audit[f"{w['id']}#index"] = {"work": work["id"], **audit_numbering(index_units, expected)}
                 numbered[f"{w['id']}#index"] = index_units
             if units is None:
-                audit[w["id"]] = {"work": work["id"], "found": len(records),
-                                  **({"answered": sum(r["answer_ar"] is not None for r in records)}
-                                     if records and records[0]["record_type"] == "fatwa" else {})}
+                audit[w["id"]] = {"work": work["id"], "found": len(records), **unit_audit(records)}
             else:
                 audit[w["id"]] = {"work": work["id"], **audit_numbering(units, expected)}
                 if w.get("segmenter", work["segmenter"])["kind"] == "verse_block":
