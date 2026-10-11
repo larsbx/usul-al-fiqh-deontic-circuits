@@ -41,6 +41,14 @@ def test_report_coverage_excludes_segmentation_errors():
     assert rep["coverage"] == 0.5 and rep["total"] == 3
 
 
+def test_report_scores_decided_cases_only_and_counts_disputes_apart():
+    two = [{"who": "a", "ruling": True}, {"who": "b", "ruling": False}]
+    cases = [_case("derivable", {}, None), _case("missing_rule", None, None),
+             _case("genuine_ikhtilaf", {}, None, positions=two, matches_madhhab=False)]
+    rep = takhrij.report(cases)
+    assert rep["decided_coverage"] == 0.5 and rep["disputed"] == 1 and "madhhab_coverage" not in rep
+
+
 def test_annotated_cases_cover_their_qawaid_exactly_once_and_stay_generated():
     files = sorted(f for f in (ROOT / "corpus/takhrij").glob("*.json") if f.name != "report.json")
     if not files:

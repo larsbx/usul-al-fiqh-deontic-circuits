@@ -99,7 +99,7 @@ The protocol's pre-emptions are in the method's [§5.4](architecture/derivation-
 ### III.7 Metrics per round
 
 The figures:
-- coverage and madhhab coverage, overall and per lane (regenerated);
+- coverage, decided coverage and the disputed count, overall and per lane (regenerated);
 - encoding errors, which must be 0;
 - open gaps, each naming its need;
 - revisits made in the round;

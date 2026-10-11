@@ -8,9 +8,9 @@
   "segmentation_error": 1
  },
  "coverage": 0.987,
- "madhhab_coverage": 0.691,
+ "decided_coverage": 0.97,
+ "disputed": 260,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 124,
  "gaps_open": 6,
  "revisited": 37,
  "revisit_queue": [],
