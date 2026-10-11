@@ -1,7 +1,8 @@
 """A Prolog oracle over the IslamQA takhrīj cases.
 
 The tranche (``corpus/fatawa/takhrij``) gives each case its encoder and the
-encoder's facts; ``corpus/fatawa/prolog/*_facts.json`` adds the other facts its
+encoder's facts; the classical takhrīj cases (``corpus/takhrij``) of the same
+encoders join as a held-out set the rules were not written against; ``corpus/fatawa/prolog/*_facts.json`` adds the other facts its
 text states and the text's own ruling. This module writes both out as Prolog
 (``examples/v40_fatwa_cases.pl``) for the rules in ``examples/v40_fatwa_rules.pl``,
 with two kinds of fixture vector per case:
@@ -23,7 +24,7 @@ import subprocess
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from . import takhrij
+from . import fatawa_takhrij, takhrij
 
 RULES = "examples/v40_fatwa_rules.pl"
 CASES = "examples/v40_fatwa_cases.pl"
@@ -34,6 +35,15 @@ SKIP = {"segmentation_error"}  # not a case of its encoder
 def load_facts(corpus: Path) -> dict[str, dict]:
     return {c["far"]: c for f in sorted((corpus / "fatawa" / "prolog").glob("*_facts.json"))
             for c in json.loads(f.read_text(encoding="utf-8"))["cases"]}
+
+
+def load_cases(corpus: Path, facts: dict[str, dict]) -> list[dict]:
+    """The IslamQA tranche, and the classical cases the facts files bring in."""
+    return fatawa_takhrij.load(corpus) + [c for c in takhrij.load(corpus) if c["far"] in facts]
+
+
+def source(far: str) -> str:
+    return "islamqa" if far.startswith("islamqa.") else "classical"
 
 
 def merge(cases: list[dict], facts: dict[str, dict]) -> list[dict]:
@@ -111,19 +121,16 @@ def _same(a, b) -> bool:
 
 def report(records: list[dict], answers: dict[str, dict]) -> dict:
     """Agreement with the text per encoder, for the oracle and for the bank alone."""
-    per: dict[str, Counter] = defaultdict(Counter)
-    rules: Counter = Counter()
+    per: dict[str, dict[str, Counter]] = defaultdict(lambda: defaultdict(Counter))
+    rules: dict[str, Counter] = defaultdict(Counter)
     for r in records:
-        a = answers[r["far"]]
-        k = per[r["encoder"]]
-        k["cases"] += 1
-        k["oracle"] += _same(a["ruling"], r["ruling"])
-        k["bank_answers"] += r["kernel"] is not None
-        k["bank"] += r["kernel"] is not None and _same(r["kernel"], r["ruling"])
-        rules[a["rule"]] += 1
-    total = Counter()
-    for k in per.values():
-        total.update(k)
-    return {"total": dict(total), "per_encoder": {e: dict(k) for e, k in sorted(per.items())},
-            "rules_fired": dict(rules.most_common()),
+        a, s = answers[r["far"]], source(r["far"])
+        for k in (per[s][r["encoder"]], per[s]["total"]):
+            k["cases"] += 1
+            k["oracle"] += _same(a["ruling"], r["ruling"])
+            k["bank_answers"] += r["kernel"] is not None
+            k["bank"] += r["kernel"] is not None and _same(r["kernel"], r["ruling"])
+        rules[s][a["rule"]] += 1
+    return {s: {"total": dict(p.pop("total")), "per_encoder": {e: dict(k) for e, k in sorted(p.items())},
+                "rules_fired": dict(rules[s].most_common())} for s, p in sorted(per.items())} | {
             "gaps": {r["far"]: r["gap"] for r in records if r["gap"]}}

@@ -1320,3 +1320,612 @@ fact('islamqa.304828.f002', recipient_is_own_family, false).
 text_ruling('islamqa.304828.f002', publicInterest).
 fixture_expectation(bank('islamqa.304828.f002'), query(bank('islamqa.304828.f002', publicInterest)), expect_true).
 fixture_expectation(agrees('islamqa.304828.f002'), query(agrees('islamqa.304828.f002')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008', trust_loss).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008', hand, trustee).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008', negligent, false).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008', transgressed, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008', hand, trustee).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008', negligent, false).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008', transgressed, true).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001', zahir_grade, qat).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001', zahir_grade, qat).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002', zahir_grade, qat).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002', zahir_grade, qat).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003', zahir_grade, qat).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003', zahir_grade, qat).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004', zahir_grade, qat).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004', zahir_grade, qat).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005', zahir_grade, qat).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005', zahir_grade, qat).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f006', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f006', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f006', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f006', zahir_grade, qat).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f006', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f006', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f006', zahir_grade, qat).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f006', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f006'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f006', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f006'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f006')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007', amara, false).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007', amara, false).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007', false)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008', amara, false).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008', amara, false).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008', false)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009', zahir_grade, shakk).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009', zahir_grade, shakk).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009', false)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f010', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f010', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f010', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f010', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f010', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f010', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f010', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f010', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f010'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f010', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f010'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f010')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f018', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f018', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f018', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f018', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f018', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f018', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f018', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f018', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f018'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f018', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f018'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f018')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f019', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f019', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f019', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f019', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f019', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f019', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f019', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f019', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f019'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f019', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f019'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f019')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021', true)), expect_true).
+% oracle gap: The madhhab takes another reported position (wajh 2: pure, by the asl); the kernel gives true on these facts.
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021')), expect_false).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021'), query(text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021', _))).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021'), query(oracle('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021', _, _))).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022', true)), expect_true).
+% oracle gap: The madhhab takes another reported position (wajh 2 (via Ibn Tamim): pure unless seen coming from the latrine); the kernel gives true on these facts.
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022')), expect_false).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022'), query(text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022', _))).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022'), query(oracle('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022', _, _))).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023', true)), expect_true).
+% oracle gap: The madhhab takes another reported position (riwaya 1, mansus, made the madhhab by Abu al-Barakat: pure (asl)); the kernel gives true on these facts.
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023')), expect_false).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023'), query(text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023', _))).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023'), query(oracle('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023', _, _))).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024', true)), expect_true).
+% oracle gap: The madhhab takes another reported position (wajh 2: pure, asl of non-exhumation); the kernel gives true on these facts.
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024')), expect_false).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024'), query(text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024', _))).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024'), query(oracle('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024', _, _))).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025', true)), expect_true).
+% oracle gap: The madhhab takes another reported position (riwaya 1: permitted (asl of purity)); the kernel gives true on these facts.
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025')), expect_false).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025'), query(text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025', _))).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025'), query(oracle('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025', _, _))).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026', true)), expect_true).
+% oracle gap: The madhhab takes another reported position (wajh: disliked); the kernel gives true on these facts.
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026')), expect_false).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026'), query(text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026', _))).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026'), query(oracle('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026', _, _))).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027', true)), expect_true).
+% oracle gap: The madhhab takes another reported position (riwaya 1: build on the fewer (certain)); the kernel gives true on these facts.
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027')), expect_false).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027'), query(text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027', _))).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027'), query(oracle('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027', _, _))).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028', true)), expect_true).
+% oracle gap: The madhhab takes another reported position (riwaya 1: revert to the asl (the certain count)); the kernel gives true on these facts.
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028')), expect_false).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028'), query(text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028', _))).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028'), query(oracle('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028', _, _))).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030', true)), expect_true).
+% oracle gap: The madhhab takes another reported position (riwaya 1: husband's word (asl of freedom from the excess)); the kernel gives true on these facts.
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030')), expect_false).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030'), query(text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030', _))).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030'), query(oracle('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030', _, _))).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031', true)), expect_true).
+% oracle gap: The madhhab takes another reported position (wajh 1: husband's word (asl)); the kernel gives true on these facts.
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031')), expect_false).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031'), query(text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031', _))).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031'), query(oracle('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031', _, _))).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032', true)), expect_true).
+% oracle gap: The madhhab takes another reported position (wajh 2: not settled, asl of no intercourse); the kernel gives true on these facts.
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032')), expect_false).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032'), query(text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032', _))).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032'), query(oracle('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032', _, _))).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033', true)), expect_true).
+% oracle gap: The madhhab takes another reported position (wajh 1 (al-Mughni): guardian believed (asl) unless insanity and acquaintance); the kernel gives true on these facts.
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033')), expect_false).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033'), query(text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033', _))).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033'), query(oracle('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033', _, _))).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034', true)), expect_true).
+% oracle gap: The madhhab takes another reported position (wajh: permitted (asl of permissibility)); the kernel gives true on these facts.
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034')), expect_false).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034'), query(text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034', _))).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034'), query(oracle('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034', _, _))).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035', true)), expect_true).
+% oracle gap: The madhhab takes another reported position (riwaya: no hadd (asl of no liability)); the kernel gives true on these facts.
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035')), expect_false).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035'), query(text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035', _))).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035'), query(oracle('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035', _, _))).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037', true)), expect_true).
+% oracle gap: The madhhab takes another reported position (riwaya: one (the certain; asl of the marriage continuing)); the kernel gives true on these facts.
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037')), expect_false).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037'), query(text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037', _))).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037'), query(oracle('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037', _, _))).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039', zahir_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039', zahir_grade, zann).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039', true)), expect_true).
+% oracle gap: The madhhab takes another reported position (wajh: two dirhams (the certain)); the kernel gives true on these facts.
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039')), expect_false).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039'), query(text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039', _))).
+fixture_premise(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039'), query(oracle('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039', _, _))).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001', itlaf).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001', mental, deliberate).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001', purpose, repelHarm).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001', causation, direct).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001', mental, deliberate).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001', purpose, repelHarm).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001', false)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002', itlaf).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002', mental, deliberate).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002', purpose, benefit).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002', causation, direct).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002', mental, deliberate).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002', purpose, benefit).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f003', itlaf).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f003', mental, deliberate).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f003', purpose, benefit).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f003', causation, direct).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f003', mental, deliberate).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f003', purpose, benefit).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f003', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f003'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f003', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f003'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f003')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004', itlaf).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004', mental, deliberate).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004', purpose, repelHarm).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004', causation, direct).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004', mental, deliberate).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004', purpose, repelHarm).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004', false)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001', trust_loss).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001', hand, trustee).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001', negligent, false).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001', transgressed, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001', hand, trustee).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001', negligent, false).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001', transgressed, true).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002', trust_loss).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002', hand, trustee).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002', negligent, false).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002', transgressed, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002', hand, trustee).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002', negligent, false).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002', transgressed, true).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003', trust_loss).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003', hand, trustee).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003', negligent, false).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003', transgressed, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003', hand, trustee).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003', negligent, false).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003', transgressed, true).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004', trust_loss).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004', hand, trustee).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004', negligent, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004', transgressed, false).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004', hand, trustee).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004', negligent, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004', transgressed, false).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002', luqata).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002', ownable, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002', year_passed, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002', ownable, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002', year_passed, true).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002', finderOwns).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002', finderOwns)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003', unknown_owner).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003', owner_identifiable, false).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003', owner_identifiable, false).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003', publicInterest).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003', publicInterest)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000', itlaf).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000', mental, deliberate).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000', purpose, repelHarm).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000', causation, direct).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000', mental, deliberate).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000', purpose, repelHarm).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000', false).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000', false)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000')), expect_true).
+
+encoder('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000', asl_zahir).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000', amara, true).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000', asl_grade, zann).
+encoder_fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000', zahir_grade, qat).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000', amara, true).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000', asl_grade, zann).
+fact('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000', zahir_grade, qat).
+text_ruling('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000', true).
+fixture_expectation(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000'), query(bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000', true)), expect_true).
+fixture_expectation(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000'), query(agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000')), expect_true).

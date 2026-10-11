@@ -43,6 +43,7 @@ mutants=(
   "fatwa_lawful_authority|v40_fatwa_rules.pl|s/^rule(liability, lawful_authority, C, \\([^)]*\\)) :-$/rule(liability, lawful_authority, C, \\1) :- fail,/|v40_fatwa_oracle_fixtures.pl"
   "fatwa_sirayat_al_jinaya|v40_fatwa_rules.pl|s/^rule(liability, sirayat_al_jinaya, C, \\([^)]*\\)) :-$/rule(liability, sirayat_al_jinaya, C, \\1) :- fail,/|v40_fatwa_oracle_fixtures.pl"
   "fatwa_unattributed_death|v40_fatwa_rules.pl|s/^rule(liability, unattributed_death, C, \\([^)]*\\)) :-$/rule(liability, unattributed_death, C, \\1) :- fail,/|v40_fatwa_oracle_fixtures.pl"
+  "fatwa_itlaf_bi_haqq|v40_fatwa_rules.pl|s/^rule(liability, itlaf_bi_haqq, C, \\([^)]*\\)) :-$/rule(liability, itlaf_bi_haqq, C, \\1) :- fail,/|v40_fatwa_oracle_fixtures.pl"
   "fatwa_physician|v40_fatwa_rules.pl|s/^rule(liability, physician, C, \\([^)]*\\)) :-$/rule(liability, physician, C, \\1) :- fail,/|v40_fatwa_oracle_fixtures.pl"
   "fatwa_guarantee_by_contract|v40_fatwa_rules.pl|s/^rule(liability, guarantee_by_contract, C, \\([^)]*\\)) :-$/rule(liability, guarantee_by_contract, C, \\1) :- fail,/|v40_fatwa_oracle_fixtures.pl"
   "fatwa_hand_of_trust|v40_fatwa_rules.pl|s/^rule(liability, hand_of_trust, C, \\([^)]*\\)) :-$/rule(liability, hand_of_trust, C, \\1) :- fail,/|v40_fatwa_oracle_fixtures.pl"

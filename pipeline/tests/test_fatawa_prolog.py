@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from usul_corpus import fatawa_prolog, fatawa_takhrij
+from usul_corpus import fatawa_prolog
 
 ROOT = Path(__file__).parents[2]
 CASE = {"far": "islamqa.4652.f001", "encoder": "trust_loss", "class": "derivable",
@@ -50,7 +50,8 @@ def test_vectors_bank_agreement_and_recorded_gaps():
 
 
 def test_committed_cases_are_generated():
-    cases, facts = fatawa_takhrij.load(ROOT / "corpus"), fatawa_prolog.load_facts(ROOT / "corpus")
+    facts = fatawa_prolog.load_facts(ROOT / "corpus")
+    cases = fatawa_prolog.load_cases(ROOT / "corpus", facts)
     assert fatawa_prolog.check(cases, facts) == []
     records = fatawa_prolog.merge(cases, facts)
     assert (ROOT / fatawa_prolog.CASES).read_text(encoding="utf-8") == fatawa_prolog.prolog_file(records)

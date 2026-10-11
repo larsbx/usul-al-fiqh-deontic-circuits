@@ -1,0 +1,345 @@
+{
+ "suite": "classical_shared_encoders",
+ "status": "candidate",
+ "provenance": "Held-out cases for the Prolog oracle: the classical takhrīj cases (corpus/takhrij) of the five encoders the IslamQA tranche uses. The ruling is the madhhab's: the case's own for derivable cases, the position matches_madhhab marks for ikhtilāf (rajab q026.f005 is left out: no position is marked madhhab). The q026 itlāf cases are destructions by the agent's own hand, so causation is direct.",
+ "cases": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008",
+   "facts": {},
+   "ruling": true,
+   "note": "madhhab position"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004",
+   "facts": {},
+   "ruling": true,
+   "note": "madhhab position"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f006",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007",
+   "facts": {},
+   "ruling": false,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008",
+   "facts": {},
+   "ruling": false,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009",
+   "facts": {},
+   "ruling": false,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f010",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011",
+   "facts": {},
+   "ruling": true,
+   "note": "madhhab position"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012",
+   "facts": {},
+   "ruling": true,
+   "note": "madhhab position"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013",
+   "facts": {},
+   "ruling": true,
+   "note": "madhhab position"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f018",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f019",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020",
+   "facts": {},
+   "ruling": true,
+   "note": "madhhab position"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021",
+   "facts": {},
+   "ruling": false,
+   "note": "madhhab position",
+   "oracle_gap": "The madhhab takes another reported position (wajh 2: pure, by the asl); the kernel gives true on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022",
+   "facts": {},
+   "ruling": false,
+   "note": "madhhab position",
+   "oracle_gap": "The madhhab takes another reported position (wajh 2 (via Ibn Tamim): pure unless seen coming from the latrine); the kernel gives true on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023",
+   "facts": {},
+   "ruling": false,
+   "note": "madhhab position",
+   "oracle_gap": "The madhhab takes another reported position (riwaya 1, mansus, made the madhhab by Abu al-Barakat: pure (asl)); the kernel gives true on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024",
+   "facts": {},
+   "ruling": false,
+   "note": "madhhab position",
+   "oracle_gap": "The madhhab takes another reported position (wajh 2: pure, asl of non-exhumation); the kernel gives true on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025",
+   "facts": {},
+   "ruling": false,
+   "note": "madhhab position",
+   "oracle_gap": "The madhhab takes another reported position (riwaya 1: permitted (asl of purity)); the kernel gives true on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026",
+   "facts": {},
+   "ruling": false,
+   "note": "madhhab position",
+   "oracle_gap": "The madhhab takes another reported position (wajh: disliked); the kernel gives true on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027",
+   "facts": {},
+   "ruling": false,
+   "note": "madhhab position",
+   "oracle_gap": "The madhhab takes another reported position (riwaya 1: build on the fewer (certain)); the kernel gives true on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028",
+   "facts": {},
+   "ruling": false,
+   "note": "madhhab position",
+   "oracle_gap": "The madhhab takes another reported position (riwaya 1: revert to the asl (the certain count)); the kernel gives true on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029",
+   "facts": {},
+   "ruling": true,
+   "note": "madhhab position"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030",
+   "facts": {},
+   "ruling": false,
+   "note": "madhhab position",
+   "oracle_gap": "The madhhab takes another reported position (riwaya 1: husband's word (asl of freedom from the excess)); the kernel gives true on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031",
+   "facts": {},
+   "ruling": false,
+   "note": "madhhab position",
+   "oracle_gap": "The madhhab takes another reported position (wajh 1: husband's word (asl)); the kernel gives true on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032",
+   "facts": {},
+   "ruling": false,
+   "note": "madhhab position",
+   "oracle_gap": "The madhhab takes another reported position (wajh 2: not settled, asl of no intercourse); the kernel gives true on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033",
+   "facts": {},
+   "ruling": false,
+   "note": "madhhab position",
+   "oracle_gap": "The madhhab takes another reported position (wajh 1 (al-Mughni): guardian believed (asl) unless insanity and acquaintance); the kernel gives true on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034",
+   "facts": {},
+   "ruling": false,
+   "note": "madhhab position",
+   "oracle_gap": "The madhhab takes another reported position (wajh: permitted (asl of permissibility)); the kernel gives true on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035",
+   "facts": {},
+   "ruling": false,
+   "note": "madhhab position",
+   "oracle_gap": "The madhhab takes another reported position (riwaya: no hadd (asl of no liability)); the kernel gives true on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036",
+   "facts": {},
+   "ruling": true,
+   "note": "madhhab position"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037",
+   "facts": {},
+   "ruling": false,
+   "note": "madhhab position",
+   "oracle_gap": "The madhhab takes another reported position (riwaya: one (the certain; asl of the marriage continuing)); the kernel gives true on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038",
+   "facts": {},
+   "ruling": true,
+   "note": "madhhab position"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039",
+   "facts": {},
+   "ruling": false,
+   "note": "madhhab position",
+   "oracle_gap": "The madhhab takes another reported position (wajh: two dirhams (the certain)); the kernel gives true on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001",
+   "facts": {
+    "causation": "direct"
+   },
+   "ruling": false,
+   "note": "madhhab position: deliberate destruction by his own hand (mubāshara)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002",
+   "facts": {
+    "causation": "direct"
+   },
+   "ruling": true,
+   "note": "derivable: deliberate destruction by his own hand (mubāshara)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f003",
+   "facts": {
+    "causation": "direct"
+   },
+   "ruling": true,
+   "note": "derivable: deliberate destruction by his own hand (mubāshara)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004",
+   "facts": {
+    "causation": "direct"
+   },
+   "ruling": false,
+   "note": "derivable: deliberate destruction by his own hand (mubāshara)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002",
+   "facts": {},
+   "ruling": "finderOwns",
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003",
+   "facts": {},
+   "ruling": "publicInterest",
+   "note": "derivable"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000",
+   "facts": {
+    "causation": "direct"
+   },
+   "ruling": false,
+   "note": "derivable: deliberate destruction by his own hand (mubāshara)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000",
+   "facts": {},
+   "ruling": true,
+   "note": "derivable"
+  }
+ ]
+}

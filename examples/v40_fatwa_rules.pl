@@ -29,6 +29,9 @@ grade_rank(shakk, 1).
 grade_rank(zann, 2).
 grade_rank(qat, 3).
 
+itlaf_liable(benefit, true).
+itlaf_liable(repelHarm, false).
+
 % Muamalat.lossLiable
 bank(C, true) :-
     encoder(C, trust_loss),
@@ -36,10 +39,8 @@ bank(C, true) :-
 bank(C, false) :-
     encoder(C, trust_loss), encoder_fact(C, hand, _), !.
 % Muamalat.itlafLiable (withRight purpose) mental
-bank(C, true) :-
-    encoder(C, itlaf), encoder_fact(C, purpose, benefit), !.
-bank(C, false) :-
-    encoder(C, itlaf), encoder_fact(C, purpose, repelHarm), !.
+bank(C, V) :-
+    encoder(C, itlaf), encoder_fact(C, purpose, P), itlaf_liable(P, V), !.
 % Refinements.zahirPrevails: a < z ∨ (a = z ∧ amara)
 bank(C, Prevails) :-
     encoder(C, asl_zahir),
@@ -91,6 +92,9 @@ rule(liability, sirayat_al_jinaya, C, Death) :-
 rule(liability, unattributed_death, C, false) :-
     fact(C, later_death, true),
     \+ fact(C, death_from_injury, _).
+rule(liability, itlaf_bi_haqq, C, V) :-
+    fact(C, purpose, P),
+    itlaf_liable(P, V).
 rule(liability, physician, C, Fault) :-
     fact(C, physician, true),
     fact(C, permitted, true),
@@ -182,6 +186,7 @@ rule_source(no_legal_value, 'ما لا قيمة له شرعًا لا يُضمن:
 rule_source(lawful_authority, 'a lawful confiscation or destruction by the authority (taʿzīr bi\'l-māl), islamqa.140833').
 rule_source(sirayat_al_jinaya, 'sirāyat al-jināya: a later death follows the injury that caused it').
 rule_source(unattributed_death, 'al-aṣl barāʾat al-dhimma: a later death is not his until it is attributed to the injury, islamqa.348122').
+rule_source(itlaf_bi_haqq, 'Ibn Rajab, qāʿida 26: destroying to repel the thing\'s own harm is not compensable, for one\'s own benefit it is; before «المباشر ضامن»').
 rule_source(physician, '«من تطبب ولا يُعلم منه طب فهو ضامن»: the qualified, permitted physician is liable only for fault').
 rule_source(guarantee_by_contract, 'a loan is a hand of guarantee by contract: a current account, islamqa.252463').
 rule_source(hand_of_trust, 'Saʿdī 14: a trustee is liable only by transgression or negligence; a wrongdoer always').

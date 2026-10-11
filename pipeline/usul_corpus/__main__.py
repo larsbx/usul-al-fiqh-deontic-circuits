@@ -518,7 +518,7 @@ def cmd_fatawa_takhrij(_: argparse.Namespace) -> int:
         print(json.dumps(bad, ensure_ascii=False, indent=1))
         return 1
     (SIGNATURE_LEAN.parent / "FatawaTakhrij.lean").write_text(fatawa_takhrij.lean_file(cases), encoding="utf-8")
-    rep = takhrij.report(cases)
+    rep = takhrij.report(cases) | {"banks": fatawa_takhrij.compare(CORPUS)}
     _dump(CORPUS / "fatawa" / "takhrij" / "report.json", rep)
     print(json.dumps({k: rep[k] for k in ("total", "coverage", "encoding_error", "classes")}, ensure_ascii=False))
     return 0
@@ -526,8 +526,9 @@ def cmd_fatawa_takhrij(_: argparse.Namespace) -> int:
 
 def cmd_fatawa_prolog(_: argparse.Namespace) -> int:
     """The takhrīj cases as Prolog facts and fixture vectors; the oracle's agreement with the texts."""
-    from . import fatawa_prolog, fatawa_takhrij
-    cases, facts = fatawa_takhrij.load(CORPUS), fatawa_prolog.load_facts(CORPUS)
+    from . import fatawa_prolog
+    facts = fatawa_prolog.load_facts(CORPUS)
+    cases = fatawa_prolog.load_cases(CORPUS, facts)
     if errs := fatawa_prolog.check(cases, facts):
         print("\n".join(errs))
         return 1
@@ -535,7 +536,7 @@ def cmd_fatawa_prolog(_: argparse.Namespace) -> int:
     (ROOT / fatawa_prolog.CASES).write_text(fatawa_prolog.prolog_file(records), encoding="utf-8")
     rep = fatawa_prolog.report(records, fatawa_prolog.run(ROOT))
     _dump(CORPUS / "fatawa" / "prolog" / "report.json", rep)
-    print(json.dumps({k: rep[k] for k in ("total", "per_encoder")}, ensure_ascii=False))
+    print(json.dumps({s: rep[s]["total"] for s in ("islamqa", "classical")}, ensure_ascii=False))
     return 0
 
 
