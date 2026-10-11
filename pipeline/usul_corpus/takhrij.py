@@ -13,6 +13,8 @@ import json
 from collections import Counter
 from pathlib import Path
 
+from .shards import encoder_shards, merge_encoders
+
 B = (False, True)
 GRADES = ("wahm", "shakk", "zann", "qat")
 FORMS = ("nakira", "particle", "definiteAl", "singularAnnexed")
@@ -28,7 +30,7 @@ def _b(x: bool) -> str:
 
 
 # name → sadi rules, qawāʿid tested, fact domains, output domain, Lean template, Python mirror
-ENCODERS: dict[str, dict] = {
+CORE: dict[str, dict] = {
     "itlaf": dict(
         sadi=[36], qawaid=[RAJAB.format(26)],
         facts={"purpose": ("benefit", "repelHarm"), "mental": ("deliberate", "ignorant", "forgetful")},
@@ -453,6 +455,9 @@ ENCODERS: dict[str, dict] = {
             ("qadiArgument", "recommendation"): "literal", ("qadiArgument", "permission"): "figurative",
         }[(f["reading"], f["intended"])]),
 }
+
+# The live registry: the core plus every shard's encoders (shards.py; no name defined twice).
+ENCODERS: dict[str, dict] = merge_encoders(CORE, encoder_shards())
 
 
 def provides() -> set[str]:

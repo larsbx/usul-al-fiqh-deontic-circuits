@@ -9,7 +9,7 @@ import pytest
 
 from usul_corpus import takhrij
 from usul_corpus.arabic import locate
-from usul_corpus.__main__ import CACHE, DOSSIER, GLOSSARY, docs_pages
+from usul_corpus.__main__ import CACHE, DOSSIER, GLOSSARY, docs_pages, load_dossier
 from usul_corpus.records import EXCERPT_LEN
 
 ROOT = Path(__file__).parents[2]
@@ -19,7 +19,7 @@ def _json(p):
     return json.loads(p.read_text(encoding="utf-8"))
 
 
-DOSS, GLOSS = _json(DOSSIER), _json(GLOSSARY)
+DOSS, GLOSS = load_dossier(), _json(GLOSSARY)  # shard entries included
 RECORDS = {r["id"] for f in (ROOT / "corpus/records").glob("*.jsonl") for r in map(json.loads, f.read_text().splitlines())}
 RIGHTS = {w["id"]: work["rights"] for work in _json(ROOT / "corpus/registry.json")["works"] for w in work["witnesses"]}
 REFS = [r for e in DOSS["entries"] for r in (e["statement"], *e["refs"])] + [r for t in GLOSS["terms"] for r in t["refs"]]

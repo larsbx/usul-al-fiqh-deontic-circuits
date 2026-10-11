@@ -1,5 +1,7 @@
 # M4: the takhrīj suite
 
+*The procedure this suite grew into is specified as one method in [derivation-method.md](derivation-method.md).*
+
 A formal reading is tested the way the jurists tested a qāʿida: against its furūʿ. Each case paragraph (`far` record) listed under a qāʿida is annotated with the facts the reading takes and the ruling the text states. The formal kernel then computes its own ruling, and the two are compared.
 
 ## Which furūʿ test which reading
