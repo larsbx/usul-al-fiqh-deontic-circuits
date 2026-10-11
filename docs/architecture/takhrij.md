@@ -184,8 +184,8 @@ The unit is a committed farʿ record, which can contain multiple examples. Annot
 
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
-| Combined M8 tranche 3 | 29 | 1.000 | 0.793 | 0 | 0 |
-| All annotation suites | 483 | 0.988 | 0.701 | 0 | 6 |
+| Combined M8 tranche 3 | 29 | 1.000 | 0.759 | 0 | 0 |
+| All annotation suites | 483 | 0.988 | 0.689 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -462,6 +462,7 @@ Results on the tranche:
 | All, after tranche 10 | 461 | 0.987 | 0.691 | 0 | 6 |
 | M8 tranche 11 alone | 22 | 1.000 | 0.909 | 0 | 0 |
 | All, after tranche 11 | 483 | 0.988 | 0.701 | 0 | 6 |
+| All, after lane D (sides verified) | 483 | 0.988 | 0.689 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 

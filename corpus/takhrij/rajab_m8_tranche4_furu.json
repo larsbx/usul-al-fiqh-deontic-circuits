@@ -41,8 +41,16 @@
           "ruling": "attached"
         }
       ],
-      "matches_madhhab": true,
-      "note": "Washing the hair in janāba: two wujūh; al-Mughnī prefers no obligation «طردا للقاعدة» and gives it as the ẓāhir of al-Khiraqī; the other: obligatory as worship. For the minor ḥadath, the hanging hair is washed «على الصحيح», against the qāʿida."
+      "matches_madhhab": false,
+      "note": "Washing the hair in janāba: two wujūh; al-Mughnī prefers no obligation «طردا للقاعدة» and gives it as the ẓāhir of al-Khiraqī; the other: obligatory as worship. For the minor ḥadath, the hanging hair is washed «على الصحيح», against the qāʿida.",
+      "side_check": {
+        "from_matches": true,
+        "refs": [
+          "src:openiti-buhuti-kashshaf-shamela21642/v01:p154",
+          "src:openiti-insaf-shamela21609/v01:p255"
+        ],
+        "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side."
+      }
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f003",

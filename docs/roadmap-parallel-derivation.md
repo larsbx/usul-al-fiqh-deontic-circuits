@@ -88,8 +88,8 @@ Every shard works on its own branch or worktree off **one pinned base commit**, 
 |---|---|---|---|
 | **A Readings × Ibn Rajab** | ≈5 qawāʿid per shard | S0–S5 on the remaining qawāʿid, exactly as tranches 1–10 | 745 furūʿ / 87 qawāʿid → ≈18 shards; 6 qawāʿid first need segmentation review |
 | **B Encoder-routed takhrīj** | one shard per encoder (× source group) | retrieve R2 units by the routing index; S2–S3 against that encoder; a case no encoder fits is recorded as `missing_rule` with its `needs` and not forced | 100 encoders; start with the 20 with the most ikhtilāf, so the cases feed lanes C and E |
-| **C Taṣḥīḥ import** | one shard per ledger entry group | S7: verbatim taṣḥīḥ from R3 for the open residues: the 67 tarjīḥ outcomes that go against their reading (across 29 encoders) and the 8 tawaqquf; graded evidence only | 75 entries → ≈8 shards by encoder group |
-| **D Side verification** | one shard per tranche file | S7: check every on-madhhab annotation against al-Inṣāf and the muʿtamad; a failure enters 𝔏 | 12 suite files |
+| **C Taṣḥīḥ import** | one shard per ledger entry group | S7: verbatim taṣḥīḥ from R3 for the open residues: the 73 tarjīḥ outcomes that go against their reading (across 32 encoders) and the 9 tawaqquf; graded evidence only | 82 entries → ≈8 shards by encoder group |
+| **D Side verification** | one shard per tranche file | S7: check every on-madhhab annotation against al-Inṣāf and the muʿtamad; a failure enters 𝔏 with a `side_check` | **done** for all 12 suites (tranches 10–11 in their own PRs; tranches 1–9 and al-Saʿdī's: 100 cases, 6 failed) |
 | **E Position inventories** | one shard per bāb | R4: attributed positions and ijmāʿ reports for the 260 ikhtilāf cases; additions go to *P* as `revisions`, never edits | ≈10 shards by bāb |
 | **F Segmentation** | one shard per R2/R3 text | P0.5 applied per text, with receipts; prerequisite for B, C and E on that text | ≈30 texts |
 

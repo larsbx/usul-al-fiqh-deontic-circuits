@@ -181,6 +181,53 @@
       ]
     },
     {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The later madhhab counts the whole of running water like still water («وهي المذهب»; Sharḥ al-Muntahā: «والمذهب: أن الجاري كالراكد»); al-Furūʿ's «أشهر» for the jirya is outweighed.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p057",
+          "excerpt_ar": "لم تغيره، وإلا فلا. وهي المذهب. وهي ظاهر كلام المصنف هنا وغيره. قال في",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On running water al-Inṣāf gives the riwāya that it is like still water, so the whole body counts (two qullas of the whole repel najāsa unless it changes), and calls it «wa-hiya al-madhhab». That is position 1."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p057",
+          "excerpt_ar": "واختارها في المستوعب. قال في الفروع: وهي أشهر. قال في الحاوي الكبير: هذا",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "For the riwāya that each jirya counts by itself, al-Inṣāf reports that al-Furūʿ calls it «ashhar» and al-Ḥāwī al-Kabīr «ẓāhir al-madhhab». This is a minority labelling for position 0, which al-Mardāwī does not adopt."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p039",
+          "excerpt_ar": "لعموم ما سبق (فلا اعتبار بالجرية) وهي ما أحاط بالنجاسة فوقها وتحتها",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-qināʿ",
+          "note": "Kashshāf, glossing the Iqnāʿ text «running water is like still if its whole reaches two qullas», rules «no account is taken of the jirya». It later calls the per-jirya riwāya «ẓāhir al-fasād»."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p021",
+          "excerpt_ar": "كلامه في الإنصاف، والمذهب: أن الجاري كالراكد، ويعتبر مجموعه، فإن بلغ",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-irādāt",
+          "note": "Sharḥ al-Muntahā says the Muntahā mentions the per-jirya riwāya only because it is strong and well known, and that «the madhhab is that running water is like still and its whole is counted»."
+        }
+      ]
+    },
+    {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001",
       "grades": [
         "jazm",
@@ -235,6 +282,34 @@
           "grade": "jazm",
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf glosses the Iqnāʿ ruling (ḥinth) and names al-Qawāʿid al-fiqhiyya (Ibn Rajab) as its source."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Inṣāf: the hair is washed in the janāba ghusl, «وهو المذهب. وعليه جماهير الأصحاب»; Kashshāf, «مسترسلا كان أو غيره».",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p255",
+          "excerpt_ar": "البشرة وغيره، وهو المذهب. وعليه جماهير الأصحاب. قال في المغني: وهو ظاهر",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «ويعم بدنه بالغسل», al-Inṣāf says the general washing includes the hair and the skin beneath it and that this is the madhhab, held by the great majority. That is the obligation to wash the hair (position 1)."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p154",
+          "excerpt_ar": "(و) حتى (ظاهر شعره وباطنه) من ذكر أو أنثى، مسترسلا كان أو غيره.",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf: in ghusl the outside and inside of the hair must be washed, man or woman, hanging (mustarsil) or not, citing «تحت كل شعرة جنابة»."
         }
       ]
     },
@@ -1619,6 +1694,35 @@
           "grade": "jazm",
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā matn rules he does not break the oath unless the taste of the sworn-off thing shows (position 1)."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f007",
+      "grades": [
+        "nass",
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Taṣḥīḥ al-Furūʿ: the unlawful share is taken out whatever the proportion, «هو الصواب، وهو المذهب», Aḥmad's numbers not a limit.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v04:p396",
+          "excerpt_ar": "هو الصواب، وهو المذهب، فإذا فعل ذلك وتصرف خرج من الإثم وجاز له التصرف،",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+          "note": "Taṣḥīḥ al-Furūʿ masʾala 3: of the reports (forbidden unless the lawful is much; only one unlawful in two; ten or fewer), al-Mardāwī declares correct al-Qāḍī's other view, the aṣḥāb's and al-Shaykh's, that Aḥmad's words set no limit and the share must be taken out - «هو الصواب، وهو المذهب» - position 1."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p094",
+          "excerpt_ar": "قدر ما خالطه هذا إن عرف ربه وإلا تصدق به عن ربه وما بقي حلال.",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf (ghaṣb mixture): when the owner is known the mixture is a partnership and he may not divide it unilaterally; when unknown he gives the share in charity and the rest is lawful - no suspension by proportion (position 1, with the known-owner proviso)."
         }
       ]
     },
@@ -3990,6 +4094,50 @@
       "naskh": null
     },
     {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f001",
+      "grades": [
+        "nass",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Inṣāf: doubling is for fruit, palm-pith and livestock only, other goods compensated once «على الصحيح من المذهب»; the general riwāya is chosen by Abū Bakr and Taqī al-Dīn.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p277",
+          "excerpt_ar": "إلا مرة واحدة. على الصحيح من المذهب. قال المصنف، والشارح: هذا قول",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "... «على الصحيح من المذهب», al-Mughnī and al-Sharḥ calling it the view of the aṣḥāb except Abū Bakr - i.e. doubling is restricted (to fruit/palm and livestock), position 1."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p277",
+          "excerpt_ar": "وعنه: أن ذلك كالثمر والماشية، اختاره أبو بكر، والشيخ تقي الدين - رحمه",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: the riwāya that all non-ḥirz theft is like fruit and livestock (doubled) was chosen by Abū Bakr and Shaykh Taqī al-Dīn (and others say it is naṣṣ) - added holders of position 0, but it is the marjūḥ side."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p140",
+          "excerpt_ar": "إليها فجاز أن تغلظ قيمتها على سارقها ردعا له وزجرا بخلاف غيرها وقوله -",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf: the value of fruit is made heavier on its thief as deterrence, «بخلاف غيرها» - doubling is specific to fruit, position 1."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p375",
+          "excerpt_ar": "(وضعفت) على سارقه (قيمته) أي: المسروق من ثمر أو طلع أو جمار أو ماشية",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā: the doubled value is limited to fruit, spathe, palm-pith or livestock taken from outside a ḥirz - position 1 (with livestock added)."
+        }
+      ]
+    },
+    {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021",
       "grades": [
         "ashab",
@@ -4531,6 +4679,43 @@
       ]
     },
     {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f006",
+      "grades": [
+        "takhrij",
+        "takhrij",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The muʿtamad casts lots and bars selling either before them (al-Iqnāʿ, Kashshāf; al-Inṣāf fronting it from al-Riʿāya); the joint sale is only «وقيل».",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p320",
+          "excerpt_ar": "عبده بعبد غيره أقرع بينهما. ولم يصح بيع أحدهما قبل القرعة. قدمه في",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: if his slave is confused with another's, lots are cast and neither may be sold before the lot - fronted in al-Riʿāya al-Ṣughrā and al-Kubrā (Ibn Ḥamdān), and al-Qāḍī's iḥtimāl; selling both and dividing the price (al-Qāḍī's 'ajwad') follows as a qīla - position 0."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p073",
+          "excerpt_ar": "واحد ومثله الإجارة ولو اشتبه عبده بعيد غيره لم يصح بيع أحدهما قبل القرعة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ matn decisively: neither may be sold before the lot - position 0 (lot)."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p179",
+          "excerpt_ar": "(ولو اشتبه عبده بعبد غيره لم يصح بيع أحدهما قبل القرعة) قدمه في",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf on the Iqnāʿ: the lot view, fronted in al-Riʿāya al-Kubrā; the joint sale with division by value is cited only as «وقيل» with al-Qāḍī's «أجود ما يقال فيه» - position 0."
+        }
+      ]
+    },
+    {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f009",
       "grades": [
         "ashab",
@@ -4592,6 +4777,61 @@
           "grade": "jazm",
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ rules decisively that when two describe it together (or the second before handover) lots are drawn and the winner swears and takes it."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f012",
+      "grades": [
+        "wajh",
+        [
+          "nass",
+          "qiyas"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Inṣāf: the bequest with a shared name is void «على الصحيح من المذهب. وعليه الأصحاب», with the Muntahā and al-Buhūtī; valid with a lot only where a qarīna shows one was meant.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p231",
+          "excerpt_ar": "لم تصح الوصية. على الصحيح من المذهب. وعليه الأصحاب. وعنه: تصح. كقوله",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: a bequest «to my neighbour / relative so-and-so» with a shared name (or «to one of these two») is not valid «على الصحيح من المذهب», with the aṣḥāb; validity is only «وعنه» - position 0 (void)."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p231",
+          "excerpt_ar": "تصح، للإبهام. واختار الصحة في غير الأولى: القاضي، وأبو بكر في الشافي،",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: validity in the shared-name case was chosen by al-Qāḍī, Abū Bakr in al-Shāfī and Ibn Rajab; on validity the lot is 'الصواب' (al-Qawāʿid al-Fiqhiyya) against the heirs' choice - named holders of position 1, the marjūḥ side."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p461",
+          "excerpt_ar": "وصى بثلثه لأحد هذين أو قال لجاري أو قريبي فلان باسم مشترك لم",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The Muntahā matn: a bequest to «my neighbour so-and-so» with a shared name is not valid (continues «يصح») - position 0."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p471",
+          "excerpt_ar": "قريبي فلان باسم مشترك لم يصح) لإبهام الموصى له. وتعيينه شرط. فإن كان ثم",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā: invalid for the vagueness of the beneficiary, specification being a condition; only if a qarīna shows he meant a specific one is it valid, with the lot per Ibn Rajab's qiyās al-madhhab - position 0 for the unqualified case."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p358",
+          "excerpt_ar": "ل (قريبي فلان باسم مشترك) لأن تعيين الموصى له شرط فإذا قال لأحد هذين",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf: invalid, since specifying the beneficiary is a condition, unless a qarīna shows a specific one was meant - position 0."
         }
       ]
     },

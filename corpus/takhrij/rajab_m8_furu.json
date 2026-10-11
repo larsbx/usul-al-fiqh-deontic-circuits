@@ -233,7 +233,7 @@
           "ruling": "suspend"
         }
       ],
-      "matches_madhhab": true,
+      "matches_madhhab": false,
       "note": "Own dirhams mixed with usurped ones: Aḥmad (al-Marrūdhī): few (one in three) — suspend until known; many (one in thirty) — take one out and use the rest; al-Qāḍī: taking out the amount is due in all; Ibn ʿAqīl (al-Funūn): all forbidden. The ruling turns on the proportion, which consumption-as-absence does not express. Round 5: annotated for the disputed few (three with one unlawful); for the many (thirty with one) the naṣṣ takes one out and uses the rest, and al-Qāḍī agrees.",
       "revisit": {
         "from_class": "missing_rule",
@@ -241,6 +241,14 @@
         "closed_by": [
           "rule:mixed_haram_by_proportion"
         ]
+      },
+      "side_check": {
+        "from_matches": true,
+        "refs": [
+          "src:openiti-buhuti-kashshaf-shamela21642/v04:p094",
+          "src:openiti-ibnmuflih-furu-shamela12052/v04:p396"
+        ],
+        "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side."
       }
     },
     {

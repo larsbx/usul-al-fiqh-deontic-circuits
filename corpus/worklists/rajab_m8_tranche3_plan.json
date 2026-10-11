@@ -906,6 +906,21 @@
       "closed_by": [
         "rule:ayman_by_urf"
       ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
+      "round": "lane D: the madhhab side verified against al-Inṣāf and the muʿtamad",
+      "from_case_sha256": "07ad9ea909d40aa6dcf2cb6e1bf14c77a848e5c36d41c19dd69de066e4a8df35",
+      "case_sha256": "92ad2bd9c3dc816064107aee78f14d03f0cec329e9510a4bca0aba082a282795",
+      "side_check": {
+        "from_matches": true,
+        "refs": [
+          "src:openiti-buhuti-kashshaf-shamela21642/v01:p039",
+          "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p021",
+          "src:openiti-insaf-shamela21609/v01:p057"
+        ],
+        "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side."
+      }
     }
   ]
 }

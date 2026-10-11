@@ -15,18 +15,18 @@
     "lock.json": "537ea7c7953915706464de801e272bcc60aee93b72898dcead585a68f7020931",
     "records/openiti-rajab-shamela21730.jsonl": "f9cf2452d9cc5b3d9c064eb020b4cd0c6ee00e0dbd06eed8e5f1d821cd06b44c",
     "takhrij/dalala_furu.json": "fe691a7fe3ea277505aa97a3af440a48e88397584164804c11aa13a06808c96f",
-    "takhrij/rajab_m8_furu.json": "ebfc6b6b2caa38a0b205f729323591b7e314bf836856ebd56045209fa581ceed",
+    "takhrij/rajab_m8_furu.json": "78d7c99a03f776744324b0a35f20bea23c7a62fc472de26b1b28d38e6b33ae60",
     "takhrij/rajab_m8_tranche10_furu.json": "be24a708c2407b7b6e113c39c64eb9b27eb63924acb18b2623b839e6e14d0c98",
     "takhrij/rajab_m8_tranche11_furu.json": "b3416492b31a4eec07d3d3bebd7bd08d84680be0dfdfc0b60bc88173da91f7eb",
     "takhrij/rajab_m8_tranche2_furu.json": "bbc536f5080f1eb241975ea373d81140d85c7fd2bdc726f306726b225846447f",
-    "takhrij/rajab_m8_tranche3_furu.json": "2cc423038118df38951e81217479363acf9c7aee6b3dc9be4614e4796e825ad1",
-    "takhrij/rajab_m8_tranche4_furu.json": "5ace8ad622bac680d06d128516e7cb78c5861c0d95296e920fe5f60ce58faa01",
+    "takhrij/rajab_m8_tranche3_furu.json": "7c63a2d146423010c69ce4fac2eb7358699ed785538e3c08dbbc4f3c564c9aac",
+    "takhrij/rajab_m8_tranche4_furu.json": "dbb086d211d2f8453181949642980312ff6599ef4c24ba3979cf2e85cc1eaa05",
     "takhrij/rajab_m8_tranche5_furu.json": "30c4ff813fb1cce2456eaaaf5220afb8a12b7c740a431d878350101a37aacb49",
     "takhrij/rajab_m8_tranche6_furu.json": "5a8d25e322084d1a5804d8c183e81f0700797038d4696c67d37bcd494464ff33",
     "takhrij/rajab_m8_tranche7_furu.json": "6ec71ef5f9103a586005c80adf82a69f5c43b24364c5d1c412e83479d2479081",
     "takhrij/rajab_m8_tranche8_furu.json": "c861f3c4d056dfab8087a4ccf4110a579e39c77602ad8db6b072166c0efb1f27",
     "takhrij/rajab_m8_tranche9_furu.json": "cf4d2ddbaefe15e4933949e8b971b3c2cb62cf9fff1d8b9442b24622d25b7b5c",
-    "takhrij/sadi_furu.json": "f0973c5528a52de64df6759ee63d6fad7619096e2040c5672cae7256a2747a37"
+    "takhrij/sadi_furu.json": "f731fa852a51edef34273480827a1bfa5fe8f044cae15ff58beab83e6a846b1e"
   },
   "summary": {
     "qawaid": 160,
@@ -180,9 +180,9 @@
       "segmentation_error": 1
     },
     "coverage": 0.988,
-    "madhhab_coverage": 0.701,
+    "madhhab_coverage": 0.689,
     "encoding_error": 0,
-    "ikhtilaf_matching_madhhab": 139,
+    "ikhtilaf_matching_madhhab": 133,
     "gaps_open": 6,
     "revisited": 37
   },
@@ -193,9 +193,9 @@
       "genuine_ikhtilaf": 21
     },
     "coverage": 1.0,
-    "madhhab_coverage": 0.793,
+    "madhhab_coverage": 0.759,
     "encoding_error": 0,
-    "ikhtilaf_matching_madhhab": 15,
+    "ikhtilaf_matching_madhhab": 14,
     "gaps_open": 0,
     "revisited": 1,
     "revisit_queue": [],

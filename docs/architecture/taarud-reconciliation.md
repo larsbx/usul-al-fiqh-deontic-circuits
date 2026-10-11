@@ -136,6 +136,19 @@ Tranche 10 added 7 contradictions and 23 evidence items, after checking each of 
 
 Tranche 11 added 3 contradictions and 8 evidence items, again after checking every on-the-madhhab annotation. `annulsNonexistentIn` (59.f004) is a jamʿ: the arsh is fixed once the defective thing perishes, «وهذا المذهب. وعليه أكثر الأصحاب». The same farq is cited for iqāla after loss (59.f005), but only in the muʿtamad's jazm, which al-Qāḍī's «قياس المذهب» outranks; the jamʿ check therefore keeps iqāla out of the refinement, and tarjīḥ leaves it with the reading, listed for review. 57.f002 rests in tawaqquf: on the branch where the free woman would suffice him, only Ibn Rajab's own fāʾida is found against al-Qāḍī and Abū al-Khaṭṭāb. The ledger stands at 156 entries and 396 evidence items, with 19 jamʿ, 128 tarjīḥ (67 residues) and 9 tawaqquf.
 
+**Lane D: the madhhab sides of tranches 1–9 verified.** Every ikhtilāf case annotated on the madhhab side before tranche 10 (100 cases, the jamʿ entries excepted) was checked against al-Inṣāf and the muʿtamad. 90 agree, 4 have no later treatment (28.f001, 93.f006, 159.f029, 17.f004) and 6 do not agree. Each of the six keeps its annotated value in a `side_check` (`from_matches`, the refs of the evidence that overturned it) and enters the ledger, where `reconcile.check` requires the side check's refs to be the entry's own evidence:
+
+| Farʿ | Later madhhab |
+|---|---|
+| 1.f000 | running water counted whole like still water, «وهي المذهب» |
+| 2.f002 | the hair washed in the janāba ghusl, «وهو المذهب. وعليه جماهير الأصحاب» |
+| 22.f007 | the unlawful share taken out whatever the proportion (Taṣḥīḥ al-Furūʿ, «هو الصواب، وهو المذهب») |
+| 140.f001 | doubling for fruit, palm-pith and livestock only, «على الصحيح من المذهب» |
+| 160.f006 | lots cast, neither slave sold before them (al-Iqnāʿ, Kashshāf) |
+| 160.f012 | the bequest with a shared name void, «على الصحيح من المذهب. وعليه الأصحاب» |
+
+All six resolve by tarjīḥ against their readings and join the worklist. 1.f002 is recorded as agreeing (al-Inṣāf, «الصحيح من المذهب») though the muʿtamad holds the other side («نصا»); 75.f008's facts may misstate «مع تعذره». The ledger stands at 162 entries and 416 evidence items, with 19 jamʿ, 134 tarjīḥ (73 residues) and 9 tawaqquf.
+
 **Left as residues, for want of a cited farq:**
 
 | Encoder | Residues / cases | Why no jamʿ |
