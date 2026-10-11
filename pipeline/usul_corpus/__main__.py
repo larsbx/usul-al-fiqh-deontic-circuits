@@ -397,6 +397,28 @@ def cmd_routing(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_typed_routing(args: argparse.Namespace) -> int:
+    """Write the typed IslamQA situations as Prolog, route them by type, and report (needs swipl)."""
+    from . import typed_routing as tr
+    pl = tr.prolog_file(json.loads((ROOT / tr.SITUATIONS).read_text(encoding="utf-8")))
+    if args.check:
+        if (ROOT / tr.PROLOG).read_text(encoding="utf-8") != pl:
+            print(f"typed routing stale ({tr.PROLOG}): run python -m usul_corpus typed-routing", file=sys.stderr)
+            return 1
+    else:
+        (ROOT / tr.PROLOG).write_text(pl, encoding="utf-8")
+    rep = json.dumps(tr.report(ROOT, tr.coverage(ROOT)), ensure_ascii=False, indent=2) + "\n"
+    if args.check:
+        if (ROOT / tr.REPORT).read_text(encoding="utf-8") != rep:
+            print(f"typed routing stale ({tr.REPORT}): run python -m usul_corpus typed-routing", file=sys.stderr)
+            return 1
+    else:
+        (ROOT / tr.REPORT).write_text(rep, encoding="utf-8")
+    r = json.loads(rep)
+    print(json.dumps({k: r[k] for k in ("cases", "applies", "recall", "lexical_recall")}))
+    return 0
+
+
 def cmd_m5_commands(args: argparse.Namespace) -> int:
     from . import m5_commands
     plan = _load(CORPUS / m5_commands.PLAN)
@@ -721,6 +743,9 @@ def parser() -> argparse.ArgumentParser:
         m = sub.add_parser(name, help="regenerate or --check the obligation inventories")
         m.add_argument("--check", action="store_true")
         m.set_defaults(run=cmd_worklist)
+    tr = sub.add_parser("typed-routing", help="route the typed IslamQA situations by type and report (needs swipl)")
+    tr.add_argument("--check", action="store_true")
+    tr.set_defaults(run=cmd_typed_routing)
     r = sub.add_parser("routing", help="regenerate or --check the encoder routing index (P0.6)")
     r.add_argument("--check", action="store_true")
     r.set_defaults(run=cmd_routing)

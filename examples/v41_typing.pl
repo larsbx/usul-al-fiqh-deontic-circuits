@@ -13,6 +13,7 @@
 %    applies(E, S)          S settles every field E reads: S inhabits E's type
 %    missing_fact(E, S, F)  E reads F and S leaves it open
 %    route(S, E)            the encoders a situation is routed to
+%    coverage(E, S, K, N)   S settles K of the N fields E reads (routing rank)
 %    shares(F, E1, E2)      two encoders read one field (one qāʿida's notion)
 %    field_of(T, F)         F belongs to qāʿida type T, through `extends`
 %    ill_typed(E, F)        E reads a field no qāʿida type declares
@@ -63,3 +64,8 @@ type_below(T, A) :- type_extends(T, P), type_below(P, A).
 related(T1, T2) :- type_below(T1, T2) ; type_below(T2, T1).
 unrelated_shared_field(F, T1, T2) :-
     type_field(T1, F, _), type_field(T2, F, _), T1 @< T2, \+ related(T1, T2).
+
+coverage(E, S, K, N) :-
+    encoder_type(E, _), situation(S),
+    aggregate_all(count, reads(E, _), N),
+    aggregate_all(count, (reads(E, F), known(S, F)), K).

@@ -104,3 +104,6 @@ sit(s_doubt, needs_firm, true).
 sit(s_doubt, zahir, zann).
 sit(s_doubt, asl_mustashab, false).
 fixture_expectation(ghalaba_is_zahir, query(applies(doubt_in_condition, s_doubt)), expect_true).
+
+% Coverage ranks a partly typed situation: s_purpose settles one of itlaf's two fields.
+fixture_expectation(coverage_counts_known_fields, query(coverage(itlaf, s_purpose, 1, 2)), expect_true).
