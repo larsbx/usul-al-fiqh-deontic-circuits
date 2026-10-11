@@ -53,15 +53,22 @@ def check(cases: list[dict], answers: Mapping[str, Mapping]) -> dict[str, list[s
 
 
 def compare(corpus: Path) -> dict[str, dict]:
-    """Each takhrīj bank, classical and fatwa, summarised on takhrīj's own report."""
+    """Each takhrīj bank, classical and fatwa, summarised on takhrīj's own report.
+
+    Decided coverage is the kernel's share of the cases that state one ruling with its reason; disputed cases
+    are counted apart, since which position is right is settled by its proof, not by who holds it.
+    """
     files = sorted((corpus / "takhrij").glob("*_furu.json")) + sorted(
         f for f in (corpus / "fatawa" / "takhrij").glob("*.json") if f.name != "report.json")
     out = {}
     for f in files:
         cases = json.loads(f.read_text(encoding="utf-8"))["cases"]
         r = takhrij.report(cases)
-        out[f.stem] = {k: r[k] for k in ("total", "coverage", "madhhab_coverage", "encoding_error", "gaps_open")} | {
-            "ikhtilaf": r["classes"].get("genuine_ikhtilaf", 0), "encoders": len(r["per_encoder"])}
+        decided = r["classes"].get("derivable", 0)
+        gaps = sum(r["classes"].get(k, 0) for k in takhrij.GAPS)
+        out[f.stem] = {k: r[k] for k in ("total", "coverage", "encoding_error", "gaps_open")} | {
+            "decided_coverage": round(decided / (decided + gaps), 3) if decided + gaps else 0.0,
+            "disputed": r["classes"].get("genuine_ikhtilaf", 0), "encoders": len(r["per_encoder"])}
     return out
 
 

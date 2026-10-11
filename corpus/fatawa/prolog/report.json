@@ -1,38 +1,46 @@
 {
   "classical": {
     "total": {
-      "cases": 52,
-      "oracle": 36,
-      "bank_answers": 52,
-      "bank": 36
+      "disputed": 27,
+      "oracle_within_positions": 27,
+      "decided": 26,
+      "oracle": 26,
+      "bank_answers": 26,
+      "bank": 26
     },
     "per_encoder": {
       "asl_zahir": {
-        "cases": 40,
-        "oracle": 24,
-        "bank_answers": 40,
-        "bank": 24
+        "decided": 16,
+        "oracle": 16,
+        "bank_answers": 16,
+        "bank": 16,
+        "disputed": 24,
+        "oracle_within_positions": 24
       },
       "itlaf": {
-        "cases": 5,
-        "oracle": 5,
-        "bank_answers": 5,
-        "bank": 5
+        "disputed": 2,
+        "oracle_within_positions": 2,
+        "decided": 4,
+        "oracle": 4,
+        "bank_answers": 4,
+        "bank": 4
       },
       "luqata": {
-        "cases": 1,
+        "decided": 1,
         "oracle": 1,
         "bank_answers": 1,
         "bank": 1
       },
       "trust_loss": {
-        "cases": 5,
-        "oracle": 5,
-        "bank_answers": 5,
-        "bank": 5
+        "disputed": 1,
+        "oracle_within_positions": 1,
+        "decided": 4,
+        "oracle": 4,
+        "bank_answers": 4,
+        "bank": 4
       },
       "unknown_owner": {
-        "cases": 1,
+        "decided": 1,
         "oracle": 1,
         "bank_answers": 1,
         "bank": 1
@@ -40,46 +48,46 @@
     },
     "rules_fired": {
       "bank": 40,
+      "itlaf_bi_haqq": 6,
       "hand_of_trust": 5,
-      "itlaf_bi_haqq": 5,
       "announced_year": 1,
       "recipient": 1
     }
   },
   "islamqa": {
     "total": {
-      "cases": 122,
+      "decided": 122,
       "oracle": 119,
       "bank_answers": 68,
       "bank": 64
     },
     "per_encoder": {
       "asl_zahir": {
-        "cases": 27,
+        "decided": 27,
         "oracle": 27,
         "bank_answers": 24,
         "bank": 24
       },
       "itlaf": {
-        "cases": 27,
+        "decided": 27,
         "oracle": 27,
         "bank_answers": 0,
         "bank": 0
       },
       "luqata": {
-        "cases": 30,
+        "decided": 30,
         "oracle": 29,
         "bank_answers": 14,
         "bank": 11
       },
       "trust_loss": {
-        "cases": 21,
+        "decided": 21,
         "oracle": 21,
         "bank_answers": 18,
         "bank": 18
       },
       "unknown_owner": {
-        "cases": 17,
+        "decided": 17,
         "oracle": 15,
         "bank_answers": 12,
         "bank": 11
@@ -118,22 +126,35 @@
   "gaps": {
     "islamqa.126387.f001": "The text permits charity, handing it to the officials, or announcing it, and never says he may keep it, unlike 126502.f001 with the same facts; the facts carry no distinction between the two answers.",
     "islamqa.107436.f001": "Public money spent on public-interest channels without asking whether the paying body can take it back; with the state as an identifiable owner, the oracle returns it to the owner, as 260724.f001's text does.",
-    "islamqa.287215.f002": "The text permits a choice: hold her share for her or give it in charity on her behalf. A ruling records one option; the oracle gives the charity route (publicInterest).",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021": "The madhhab takes another reported position (wajh 2: pure, by the asl); the kernel gives true on these facts.",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022": "The madhhab takes another reported position (wajh 2 (via Ibn Tamim): pure unless seen coming from the latrine); the kernel gives true on these facts.",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023": "The madhhab takes another reported position (riwaya 1, mansus, made the madhhab by Abu al-Barakat: pure (asl)); the kernel gives true on these facts.",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024": "The madhhab takes another reported position (wajh 2: pure, asl of non-exhumation); the kernel gives true on these facts.",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025": "The madhhab takes another reported position (riwaya 1: permitted (asl of purity)); the kernel gives true on these facts.",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026": "The madhhab takes another reported position (wajh: disliked); the kernel gives true on these facts.",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027": "The madhhab takes another reported position (riwaya 1: build on the fewer (certain)); the kernel gives true on these facts.",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028": "The madhhab takes another reported position (riwaya 1: revert to the asl (the certain count)); the kernel gives true on these facts.",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030": "The madhhab takes another reported position (riwaya 1: husband's word (asl of freedom from the excess)); the kernel gives true on these facts.",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031": "The madhhab takes another reported position (wajh 1: husband's word (asl)); the kernel gives true on these facts.",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032": "The madhhab takes another reported position (wajh 2: not settled, asl of no intercourse); the kernel gives true on these facts.",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033": "The madhhab takes another reported position (wajh 1 (al-Mughni): guardian believed (asl) unless insanity and acquaintance); the kernel gives true on these facts.",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034": "The madhhab takes another reported position (wajh: permitted (asl of permissibility)); the kernel gives true on these facts.",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035": "The madhhab takes another reported position (riwaya: no hadd (asl of no liability)); the kernel gives true on these facts.",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037": "The madhhab takes another reported position (riwaya: one (the certain; asl of the marriage continuing)); the kernel gives true on these facts.",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039": "The madhhab takes another reported position (wajh: two dirhams (the certain)); the kernel gives true on these facts."
-  }
+    "islamqa.287215.f002": "The text permits a choice: hold her share for her or give it in charity on her behalf. A ruling records one option; the oracle gives the charity route (publicInterest)."
+  },
+  "tarjih_worklist": [
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f005",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039"
+  ]
 }

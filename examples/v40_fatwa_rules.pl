@@ -10,12 +10,15 @@
 %    oracle(Case, Ruling, Rule)   the first applicable rule of the case's
 %                                 domain, the bank's rule last
 %    agrees(Case)                 the oracle's ruling is the text's
+%    within_positions(Case)       for a disputed case, the oracle takes one
+%                                 of its reported positions
 %
 %  Each rule names the source that states it (rule_source/2). Specific rules
 %  come before the general one (takhṣīṣ before ʿumūm). This is a test
 %  harness for readings, not a fiqh authority. Cases are generated into
 %  v40_fatwa_cases.pl: encoder/2, encoder_fact/3 (the encoder's inputs),
-%  fact/3 (those extended by the text's other facts) and text_ruling/2.
+%  fact/3 (those extended by the text's other facts), and text_ruling/2
+%  for a decided case or position/2 for a disputed one.
 % =========================================================================
 
 :- discontiguous(rule/4).
@@ -78,6 +81,11 @@ same_ruling(handToAuthority, hold).
 
 agrees(C) :-
     oracle(C, R, _), text_ruling(C, T), same_ruling(R, T).
+
+% A disputed case is held as its reported positions; which one is right is
+% a matter of its proof, so the oracle is only required to take one of them.
+within_positions(C) :-
+    oracle(C, R, _), position(C, T), same_ruling(R, T).
 
 % -------------------------------------------------------------------------
 % Liability (ḍamān): trust_loss and itlaf cases

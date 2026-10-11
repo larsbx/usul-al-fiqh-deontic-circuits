@@ -51,118 +51,118 @@
     "dalala_furu": {
       "total": 10,
       "coverage": 0.556,
-      "madhhab_coverage": 0.444,
       "encoding_error": 0,
       "gaps_open": 4,
-      "ikhtilaf": 1,
+      "decided_coverage": 0.5,
+      "disputed": 1,
       "encoders": 4
     },
     "rajab_m8_furu": {
       "total": 26,
       "coverage": 0.962,
-      "madhhab_coverage": 0.731,
       "encoding_error": 0,
       "gaps_open": 1,
-      "ikhtilaf": 17,
+      "decided_coverage": 0.889,
+      "disputed": 17,
       "encoders": 9
     },
     "rajab_m8_tranche10_furu": {
       "total": 19,
       "coverage": 1.0,
-      "madhhab_coverage": 0.737,
       "encoding_error": 0,
       "gaps_open": 0,
-      "ikhtilaf": 14,
+      "decided_coverage": 1.0,
+      "disputed": 14,
       "encoders": 6
     },
     "rajab_m8_tranche2_furu": {
       "total": 25,
       "coverage": 1.0,
-      "madhhab_coverage": 0.6,
       "encoding_error": 0,
       "gaps_open": 0,
-      "ikhtilaf": 23,
+      "decided_coverage": 1.0,
+      "disputed": 23,
       "encoders": 5
     },
     "rajab_m8_tranche3_furu": {
       "total": 29,
       "coverage": 1.0,
-      "madhhab_coverage": 0.793,
       "encoding_error": 0,
       "gaps_open": 0,
-      "ikhtilaf": 21,
+      "decided_coverage": 1.0,
+      "disputed": 21,
       "encoders": 8
     },
     "rajab_m8_tranche4_furu": {
       "total": 21,
       "coverage": 1.0,
-      "madhhab_coverage": 0.571,
       "encoding_error": 0,
       "gaps_open": 0,
-      "ikhtilaf": 14,
+      "decided_coverage": 1.0,
+      "disputed": 14,
       "encoders": 3
     },
     "rajab_m8_tranche5_furu": {
       "total": 27,
       "coverage": 1.0,
-      "madhhab_coverage": 0.704,
       "encoding_error": 0,
       "gaps_open": 0,
-      "ikhtilaf": 15,
+      "decided_coverage": 1.0,
+      "disputed": 15,
       "encoders": 6
     },
     "rajab_m8_tranche6_furu": {
       "total": 24,
       "coverage": 1.0,
-      "madhhab_coverage": 0.5,
       "encoding_error": 0,
       "gaps_open": 0,
-      "ikhtilaf": 17,
+      "decided_coverage": 1.0,
+      "disputed": 17,
       "encoders": 5
     },
     "rajab_m8_tranche7_furu": {
       "total": 24,
       "coverage": 1.0,
-      "madhhab_coverage": 0.667,
       "encoding_error": 0,
       "gaps_open": 0,
-      "ikhtilaf": 15,
+      "decided_coverage": 1.0,
+      "disputed": 15,
       "encoders": 5
     },
     "rajab_m8_tranche8_furu": {
       "total": 27,
       "coverage": 1.0,
-      "madhhab_coverage": 0.852,
       "encoding_error": 0,
       "gaps_open": 0,
-      "ikhtilaf": 12,
+      "decided_coverage": 1.0,
+      "disputed": 12,
       "encoders": 5
     },
     "rajab_m8_tranche9_furu": {
       "total": 16,
       "coverage": 1.0,
-      "madhhab_coverage": 0.938,
       "encoding_error": 0,
       "gaps_open": 0,
-      "ikhtilaf": 4,
+      "decided_coverage": 1.0,
+      "disputed": 4,
       "encoders": 8
     },
     "sadi_furu": {
       "total": 213,
       "coverage": 0.995,
-      "madhhab_coverage": 0.685,
       "encoding_error": 0,
       "gaps_open": 1,
-      "ikhtilaf": 107,
+      "decided_coverage": 0.991,
+      "disputed": 107,
       "encoders": 24
     },
     "islamqa_tranche1": {
       "total": 123,
       "coverage": 0.533,
-      "madhhab_coverage": 0.525,
       "encoding_error": 3,
       "gaps_open": 54,
-      "ikhtilaf": 2,
+      "decided_coverage": 0.525,
+      "disputed": 2,
       "encoders": 5
     }
   }

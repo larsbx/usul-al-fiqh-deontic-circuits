@@ -29,7 +29,22 @@ def test_check_pairs_cases_with_facts_and_gaps_with_reasons():
     assert fatawa_prolog.check([CASE], FACTS) == []
     assert fatawa_prolog.check([CASE], {}) == ["islamqa.4652.f001: no extended facts"]
     bad = {k: v | {"ruling": None, "oracle_gap": " "} for k, v in FACTS.items()}
-    assert fatawa_prolog.check([CASE], bad) == ["islamqa.4652.f001: no ruling", "islamqa.4652.f001: oracle_gap without a reason"]
+    assert fatawa_prolog.check([CASE], bad) == ["islamqa.4652.f001: neither one ruling nor two positions",
+                                                 "islamqa.4652.f001: oracle_gap without a reason"]
+
+
+def test_a_disputed_case_is_held_as_its_positions_not_scored_for_agreement():
+    disputed = {k: {"far": k, "facts": {}, "positions": [{"ruling": True, "evidence": "a"}, {"ruling": False, "evidence": "b"}]}
+                for k in FACTS}
+    assert fatawa_prolog.check([CASE], disputed) == []
+    [r] = fatawa_prolog.merge([CASE], disputed)
+    pl = fatawa_prolog.prolog_file([r])
+    c = "'islamqa.4652.f001'"
+    assert f"position({c}, true)." in pl and f"position({c}, false)." in pl
+    assert f"fixture_expectation(within_positions({c}), query(within_positions({c})), expect_true)." in pl
+    assert "text_ruling" not in pl.split("Do not edit.")[1].replace("text_ruling/2", "") and "agrees(" not in pl
+    one = {k: v | {"positions": v["positions"][:1]} for k, v in disputed.items()}
+    assert fatawa_prolog.check([CASE], one) == ["islamqa.4652.f001: neither one ruling nor two positions"]
 
 
 def test_atoms_are_quoted_unless_plain():

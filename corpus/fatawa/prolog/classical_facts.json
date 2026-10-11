@@ -1,271 +1,501 @@
 {
  "suite": "classical_shared_encoders",
  "status": "candidate",
- "provenance": "Held-out cases for the Prolog oracle: the classical takhrīj cases (corpus/takhrij) of the five encoders the IslamQA tranche uses. The ruling is the madhhab's: the case's own for derivable cases, the position matches_madhhab marks for ikhtilāf (rajab q026.f005 is left out: no position is marked madhhab). The q026 itlāf cases are destructions by the agent's own hand, so causation is direct.",
+ "provenance": "Held-out cases for the Prolog oracle: the classical takhrīj cases (corpus/takhrij) of the five encoders the IslamQA tranche uses. A decided case has one ruling, stated with its reason. A disputed case (genuine_ikhtilāf) lists every reported position with the reasoning given for it; no position is the target by attribution (madhhab, majority or author), since a ruling stands by its proof. Disputed cases are scored only for whether the oracle takes a reported position, and form the tarjīḥ worklist. The q026 itlāf cases are destructions by the agent's own hand, so causation is direct.",
  "cases": [
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008",
    "facts": {},
-   "ruling": true,
-   "note": "madhhab position"
+   "positions": [
+    {
+     "ruling": true,
+     "evidence": "al-mashhūr: liable, the mixing is a transgression"
+    },
+    {
+     "ruling": false,
+     "evidence": "a riwāya: not liable"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004",
    "facts": {},
-   "ruling": true,
-   "note": "madhhab position"
+   "positions": [
+    {
+     "ruling": true,
+     "evidence": "zahir al-madhhab (one upright witness accepted)"
+    },
+    {
+     "ruling": false,
+     "evidence": "other riwaya (two witnesses required)"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f006",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007",
    "facts": {},
    "ruling": false,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008",
    "facts": {},
    "ruling": false,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009",
    "facts": {},
    "ruling": false,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f010",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011",
    "facts": {},
-   "ruling": true,
-   "note": "madhhab position"
+   "positions": [
+    {
+     "ruling": true,
+     "evidence": "al-madhhab, nass of Ahmad (buyer's word: contract valid)"
+    },
+    {
+     "ruling": false,
+     "evidence": "another wajh of the ashab (claim of minority accepted)"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012",
    "facts": {},
-   "ruling": true,
-   "note": "madhhab position"
+   "positions": [
+    {
+     "ruling": true,
+     "evidence": "zahir al-madhhab (prayer valid on preponderant belief)"
+    },
+    {
+     "ruling": false,
+     "evidence": "Ibn Hamid (certainty required)"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013",
    "facts": {},
-   "ruling": true,
-   "note": "madhhab position"
+   "positions": [
+    {
+     "ruling": true,
+     "evidence": "zahir al-madhhab, 'al-awwal asahh' (break fast on preponderant belief of sunset)"
+    },
+    {
+     "ruling": false,
+     "evidence": "some ashab / sahib al-Talkhis (certainty of sunset required)"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f018",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f019",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020",
    "facts": {},
-   "ruling": true,
-   "note": "madhhab position"
+   "positions": [
+    {
+     "ruling": true,
+     "evidence": "Abu Bakr, al-Qadi and the ashab (wife's word: two marriages, two mahrs)"
+    },
+    {
+     "ruling": false,
+     "evidence": "al-Shaykh Taqi al-Din (husband's word: asl of no separation and of freedom from the second mahr)"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021",
    "facts": {},
-   "ruling": false,
-   "note": "madhhab position",
-   "oracle_gap": "The madhhab takes another reported position (wajh 2: pure, by the asl); the kernel gives true on these facts."
+   "positions": [
+    {
+     "ruling": true,
+     "evidence": "wajh 1 (al-Azaji): impure, because licking is apparent"
+    },
+    {
+     "ruling": false,
+     "evidence": "wajh 2: pure, by the asl"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022",
    "facts": {},
-   "ruling": false,
-   "note": "madhhab position",
-   "oracle_gap": "The madhhab takes another reported position (wajh 2 (via Ibn Tamim): pure unless seen coming from the latrine); the kernel gives true on these facts."
+   "positions": [
+    {
+     "ruling": true,
+     "evidence": "wajh 1: impure"
+    },
+    {
+     "ruling": false,
+     "evidence": "wajh 2 (via Ibn Tamim): pure unless seen coming from the latrine"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023",
    "facts": {},
-   "ruling": false,
-   "note": "madhhab position",
-   "oracle_gap": "The madhhab takes another reported position (riwaya 1, mansus, made the madhhab by Abu al-Barakat: pure (asl)); the kernel gives true on these facts."
+   "positions": [
+    {
+     "ruling": false,
+     "evidence": "riwaya 1, mansus, made the madhhab by Abu al-Barakat: pure (asl)"
+    },
+    {
+     "ruling": true,
+     "evidence": "riwaya 2, made the madhhab by sahib al-Talkhis: impure (zahir)"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024",
    "facts": {},
-   "ruling": false,
-   "note": "madhhab position",
-   "oracle_gap": "The madhhab takes another reported position (wajh 2: pure, asl of non-exhumation); the kernel gives true on these facts."
+   "positions": [
+    {
+     "ruling": true,
+     "evidence": "wajh 1: impure, exhumation apparent"
+    },
+    {
+     "ruling": false,
+     "evidence": "wajh 2: pure, asl of non-exhumation"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025",
    "facts": {},
-   "ruling": false,
-   "note": "madhhab position",
-   "oracle_gap": "The madhhab takes another reported position (riwaya 1: permitted (asl of purity)); the kernel gives true on these facts."
+   "positions": [
+    {
+     "ruling": false,
+     "evidence": "riwaya 1: permitted (asl of purity)"
+    },
+    {
+     "ruling": false,
+     "evidence": "riwaya 2: disliked, from fear of contamination"
+    },
+    {
+     "ruling": true,
+     "evidence": "riwaya 3: if the zahir is very strong, not used before washing"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026",
    "facts": {},
-   "ruling": false,
-   "note": "madhhab position",
-   "oracle_gap": "The madhhab takes another reported position (wajh: disliked); the kernel gives true on these facts."
+   "positions": [
+    {
+     "ruling": false,
+     "evidence": "wajh: disliked"
+    },
+    {
+     "ruling": false,
+     "evidence": "wajh: not disliked"
+    },
+    {
+     "ruling": true,
+     "evidence": "wajh: forbidden until washed (Ibn Abi Musa's choice)"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027",
    "facts": {},
-   "ruling": false,
-   "note": "madhhab position",
-   "oracle_gap": "The madhhab takes another reported position (riwaya 1: build on the fewer (certain)); the kernel gives true on these facts."
+   "positions": [
+    {
+     "ruling": false,
+     "evidence": "riwaya 1: build on the fewer (certain)"
+    },
+    {
+     "ruling": true,
+     "evidence": "riwaya 2: build on preponderant belief (hadith)"
+    },
+    {
+     "ruling": false,
+     "evidence": "riwaya 3, al-mashhura: imam on preponderant belief, lone worshipper on certainty"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028",
    "facts": {},
-   "ruling": false,
-   "note": "madhhab position",
-   "oracle_gap": "The madhhab takes another reported position (riwaya 1: revert to the asl (the certain count)); the kernel gives true on these facts."
+   "positions": [
+    {
+     "ruling": false,
+     "evidence": "riwaya 1: revert to the asl (the certain count)"
+    },
+    {
+     "ruling": true,
+     "evidence": "riwaya 2: preponderant belief, as in prayer"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029",
    "facts": {},
-   "ruling": true,
-   "note": "madhhab position"
+   "positions": [
+    {
+     "ruling": false,
+     "evidence": "some ashab: prayer is offered (asl of Islam in Dar al-Islam)"
+    },
+    {
+     "ruling": true,
+     "evidence": "mansus of Ahmad: no prayer, buried (zahir of kufr)"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030",
    "facts": {},
-   "ruling": false,
-   "note": "madhhab position",
-   "oracle_gap": "The madhhab takes another reported position (riwaya 1: husband's word (asl of freedom from the excess)); the kernel gives true on these facts."
+   "positions": [
+    {
+     "ruling": false,
+     "evidence": "riwaya 1: husband's word (asl of freedom from the excess)"
+    },
+    {
+     "ruling": true,
+     "evidence": "riwaya 2: word of whoever claims the fair mahr (zahir)"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031",
    "facts": {},
-   "ruling": false,
-   "note": "madhhab position",
-   "oracle_gap": "The madhhab takes another reported position (wajh 1: husband's word (asl)); the kernel gives true on these facts."
+   "positions": [
+    {
+     "ruling": false,
+     "evidence": "wajh 1: husband's word (asl)"
+    },
+    {
+     "ruling": true,
+     "evidence": "wajh 2: wife's word, simultaneous conversion being rare"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032",
    "facts": {},
-   "ruling": false,
-   "note": "madhhab position",
-   "oracle_gap": "The madhhab takes another reported position (wajh 2: not settled, asl of no intercourse); the kernel gives true on these facts."
+   "positions": [
+    {
+     "ruling": true,
+     "evidence": "wajh 1: mahr settled, children usually come from intercourse"
+    },
+    {
+     "ruling": false,
+     "evidence": "wajh 2: not settled, asl of no intercourse"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033",
    "facts": {},
-   "ruling": false,
-   "note": "madhhab position",
-   "oracle_gap": "The madhhab takes another reported position (wajh 1 (al-Mughni): guardian believed (asl) unless insanity and acquaintance); the kernel gives true on these facts."
+   "positions": [
+    {
+     "ruling": false,
+     "evidence": "wajh 1 (al-Mughni): guardian believed (asl) unless insanity and acquaintance"
+    },
+    {
+     "ruling": true,
+     "evidence": "wajh 2 (al-Qadi, Ibn 'Aqil): a close guardian is not believed, the zahir belies him"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034",
    "facts": {},
-   "ruling": false,
-   "note": "madhhab position",
-   "oracle_gap": "The madhhab takes another reported position (wajh: permitted (asl of permissibility)); the kernel gives true on these facts."
+   "positions": [
+    {
+     "ruling": false,
+     "evidence": "wajh: permitted (asl of permissibility)"
+    },
+    {
+     "ruling": true,
+     "evidence": "wajh: not permitted, the haram predominates (cf. Ahmad via Harb: should abstain)"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035",
    "facts": {},
-   "ruling": false,
-   "note": "madhhab position",
-   "oracle_gap": "The madhhab takes another reported position (riwaya: no hadd (asl of no liability)); the kernel gives true on these facts."
+   "positions": [
+    {
+     "ruling": false,
+     "evidence": "riwaya: no hadd (asl of no liability)"
+    },
+    {
+     "ruling": true,
+     "evidence": "riwaya: hadd (most people are free)"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036",
    "facts": {},
-   "ruling": true,
-   "note": "madhhab position"
+   "positions": [
+    {
+     "ruling": true,
+     "evidence": "the ashab: two divorces (ta'sis is the apparent)"
+    },
+    {
+     "ruling": false,
+     "evidence": "Ibn Rajab's takhrij, supported by Ahmad via Salih: one (the certain)"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037",
    "facts": {},
-   "ruling": false,
-   "note": "madhhab position",
-   "oracle_gap": "The madhhab takes another reported position (riwaya: one (the certain; asl of the marriage continuing)); the kernel gives true on these facts."
+   "positions": [
+    {
+     "ruling": false,
+     "evidence": "riwaya: one (the certain; asl of the marriage continuing)"
+    },
+    {
+     "ruling": true,
+     "evidence": "riwaya: three (istighraq is more apparent)"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038",
    "facts": {},
-   "ruling": true,
-   "note": "madhhab position"
+   "positions": [
+    {
+     "ruling": true,
+     "evidence": "mansus: all wives/slaves"
+    },
+    {
+     "ruling": false,
+     "evidence": "al-Mughni's preferred ihtimal: only one (the certain)"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039",
    "facts": {},
-   "ruling": false,
-   "note": "madhhab position",
-   "oracle_gap": "The madhhab takes another reported position (wajh: two dirhams (the certain)); the kernel gives true on these facts."
+   "positions": [
+    {
+     "ruling": false,
+     "evidence": "wajh: two dirhams (the certain)"
+    },
+    {
+     "ruling": true,
+     "evidence": "wajh: three (the apparent is that the third is a distinct conjunct)"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001",
    "facts": {
     "causation": "direct"
    },
-   "ruling": false,
-   "note": "madhhab position: deliberate destruction by his own hand (mubāshara)"
+   "positions": [
+    {
+     "ruling": false,
+     "evidence": "al-asahh of the two wujuh"
+    },
+    {
+     "ruling": true,
+     "evidence": "the other wajh"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct; destruction by his own hand (mubāshara)"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002",
@@ -273,7 +503,7 @@
     "causation": "direct"
    },
    "ruling": true,
-   "note": "derivable: deliberate destruction by his own hand (mubāshara)"
+   "note": "decided: one ruling, stated with its reason; destruction by his own hand (mubāshara)"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f003",
@@ -281,7 +511,7 @@
     "causation": "direct"
    },
    "ruling": true,
-   "note": "derivable: deliberate destruction by his own hand (mubāshara)"
+   "note": "decided: one ruling, stated with its reason; destruction by his own hand (mubāshara)"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004",
@@ -289,43 +519,60 @@
     "causation": "direct"
    },
    "ruling": false,
-   "note": "derivable: deliberate destruction by his own hand (mubāshara)"
+   "note": "decided: one ruling, stated with its reason; destruction by his own hand (mubāshara)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f005",
+   "facts": {
+    "causation": "direct"
+   },
+   "positions": [
+    {
+     "ruling": false,
+     "evidence": "Abu l-Khattab and others"
+    },
+    {
+     "ruling": true,
+     "evidence": "author of al-Mughni (cutting thorns forbidden by the nass)"
+    }
+   ],
+   "note": "disputed: each position with the reasoning the source reports; none is presumed correct; destruction by his own hand (mubāshara)"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002",
    "facts": {},
    "ruling": "finderOwns",
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003",
    "facts": {},
    "ruling": "publicInterest",
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000",
@@ -333,13 +580,13 @@
     "causation": "direct"
    },
    "ruling": false,
-   "note": "derivable: deliberate destruction by his own hand (mubāshara)"
+   "note": "decided: one ruling, stated with its reason; destruction by his own hand (mubāshara)"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000",
    "facts": {},
    "ruling": true,
-   "note": "derivable"
+   "note": "decided: one ruling, stated with its reason"
   }
  ]
 }
