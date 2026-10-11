@@ -1513,6 +1513,26 @@
     },
     "complete": true
   },
+  "openiti-ibnbaz-majmufatawa-shamela21537": {
+    "work": "ibn_baz.majmu_fatawa",
+    "found": 4594,
+    "answered": 4517
+  },
+  "openiti-ibntaymiyya-fatawakubra-shamela9690": {
+    "work": "ibn_taymiyya.fatawa_kubra",
+    "found": 971,
+    "answered": 776
+  },
+  "openiti-ibntaymiyya-jamimasail-shamela22797": {
+    "work": "ibn_taymiyya.jami_masail",
+    "found": 122,
+    "answered": 89
+  },
+  "openiti-ibnuthaymin-majmufatawa-shamela12293": {
+    "work": "ibn_uthaymin.majmu_fatawa",
+    "found": 1538,
+    "answered": 1538
+  },
   "openiti-lahham-shamay34193": {
     "work": "ibn_lahham.qawaid_fawaid",
     "found": 64,
@@ -1539,6 +1559,16 @@
     "unparsed": 0,
     "matches_expected": true
   },
+  "openiti-lajnadaima-fatawa-shamela8381": {
+    "work": "lajna_daima.fatawa",
+    "found": 10437,
+    "answered": 10122
+  },
+  "openiti-majmufatawa-shamela7289": {
+    "work": "ibn_taymiyya.majmu_fatawa",
+    "found": 1842,
+    "answered": 1821
+  },
   "openiti-rajab-shamela21730": {
     "work": "ibn_rajab.taqrir_qawaid",
     "found": 160,
@@ -1549,6 +1579,11 @@
     "duplicates": [],
     "unparsed": 0,
     "matches_expected": true
+  },
+  "openiti-ulamanajd-durarsaniyya-shamela3055": {
+    "work": "ulama_najd.durar_saniyya",
+    "found": 1649,
+    "answered": 1627
   },
   "shamela-9942": {
     "work": "ibn_uthaymin.usul",

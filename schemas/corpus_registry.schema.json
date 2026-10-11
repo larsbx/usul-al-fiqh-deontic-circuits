@@ -36,7 +36,8 @@
         "segmenter": {
           "type": "object",
           "required": ["kind"],
-          "properties": {"kind": {"enum": ["headed", "lines", "numbered", "verse_block", "hudud_brackets"]}, "marker": {"type": "string"},
+          "properties": {"kind": {"enum": ["headed", "lines", "numbered", "verse_block", "hudud_brackets", "qa"]}, "marker": {"type": "string"},
+                         "question": {"type": "string", "description": "qa: regex a question line starts with"}, "answer": {"type": "string", "description": "qa: regex an answer line starts with"},
                          "anchor_step": {"type": "integer", "minimum": 1, "description": "numbered: full-length reads may bridge gaps up to this size"},
                          "index": {"type": "boolean", "description": "also read the closing index «marker <ordinal>: statement»"}}
         },

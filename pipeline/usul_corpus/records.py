@@ -99,3 +99,24 @@ def sharh_record(work: dict, witness: str, link) -> dict:
         "status": "candidate",
         "extraction": {"pipeline": PIPELINE, "method": "verse_trigram_chain"},
     }
+
+
+def fatwa_record(work: dict, witness: str, idx: int, u) -> dict:
+    """One question-and-answer unit (``qa.QA``) of a fatāwā collection: excerpts within the
+    work's rights, the page span, and the sha256 receipt of the full unit text."""
+    cap = EXCERPT_LEN[work["rights"]]
+    tag = f"qa{idx:05d}"
+    return {
+        "id": f"{work['id']}.{witness.replace('-', '_')}.{tag}",
+        "work": work["id"],
+        "witness": witness,
+        "record_type": "fatwa",
+        "number": u.number,
+        "locator": _loc(witness, u.page, tag),
+        "page_span": [p[1] for p in (u.page, u.end_page) if p] or None,
+        "question_ar": u.question[:cap],
+        "answer_ar": u.answer[:cap] if u.answer else None,
+        "sha256": u.sha256,
+        "status": "candidate",
+        "extraction": {"pipeline": PIPELINE, "method": "qa"},
+    }

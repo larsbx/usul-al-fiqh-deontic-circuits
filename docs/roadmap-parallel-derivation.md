@@ -55,7 +55,15 @@ Precedents:
 
 **Status.**
 - **Done:** P0.1, P0.2 and P0.3 (`pipeline/usul_corpus/shards.py`, method §5.2). Of P0.4, claims with disjoint ownership over the generated worklists (method §5.1).
-- **Open:** extending the worklist inventory beyond Ibn Rajab waits for P0.5's segmenters. P0.5 and P0.6 are not started.
+- **P0.5, first segmenter done:** `qa` (`pipeline/usul_corpus/qa.py`), configured per work in the registry by two line-start patterns. It emits `fatwa` records: question and answer excerpts within rights, the page span, and the `sha256` receipt of the whole unit. `test_committed_fatwa_records_replay_from_the_pinned_witness` replays them.
+  - Seven collections are segmented, totalling 21,153 units (answered share in brackets): *Majmūʿ al-Fatāwā* 1,842 (0.99), *al-Fatāwā al-Kubrā* 971 (0.80), *Jāmiʿ al-Masāʾil* 122 (0.73), *al-Durar al-Saniyya* 1,649 (0.99), the Lajna 10,437 (0.97), Ibn Bāz 4,594 (0.98), Ibn ʿUthaymīn 1,538 (1.00).
+  - In *al-Kubrā* and *Jāmiʿ*, many answers begin without a «الجواب» marker. Their unanswered units keep only the question header, so they wait for review rather than absorbing text.
+- **Open:**
+  - the `masail` segmenter for the *Masāʾil* of Aḥmad («قلت لأحمد», «سألت أحمد», «سمعت أحمد» … «قال»);
+  - the `abwab` segmenter for the mutūn;
+  - *Nūr ʿalā al-Darb* (Ibn Bāz, Ibn ʿUthaymīn) and Fatāwā Muḥammad b. Ibrāhīm, which is letters, not Q/A;
+  - extending the worklist inventory to the new record types;
+  - P0.6.
 
 | # | Change | Gate |
 |---|---|---|

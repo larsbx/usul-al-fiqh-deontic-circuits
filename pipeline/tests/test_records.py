@@ -224,3 +224,15 @@ def test_research_questions_are_grounded():
                 marker = f"PageV{int(vol):02d}P{int(page):03d}"
                 body = next((b for loc, b in pages(cached.read_text(encoding="utf-8")) if loc == marker), "")
                 assert s["excerpt_ar"] in body, s["ref"]
+
+
+def test_a_build_that_skips_a_witness_keeps_its_previous_audit():
+    """Rebuilding where a witness is not cached (e.g. no OCR output) must not drop its audit entries,
+    nor recompute its work's consensus from the remaining witnesses."""
+    from usul_corpus.__main__ import merge_audit
+    previous = {"a": {"work": "w1", "found": 5}, "a#index": {"work": "w1"}, "b": {"work": "w1", "found": 4},
+                "consensus:w1": {"from": "a+b"}, "c": {"work": "w2", "found": 1}}
+    fresh = {"b": {"work": "w1", "found": 6}, "consensus:w1": {"from": "b alone"}, "c": {"work": "w2", "found": 2}}
+    merged = merge_audit(previous, fresh, skipped={"a": "w1"})
+    assert merged == {"a": {"work": "w1", "found": 5}, "a#index": {"work": "w1"}, "b": {"work": "w1", "found": 6},
+                      "c": {"work": "w2", "found": 2}, "consensus:w1": {"from": "a+b"}}
