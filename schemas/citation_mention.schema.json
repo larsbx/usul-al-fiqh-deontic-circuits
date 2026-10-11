@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/citation_mention.schema.json",
+  "title": "Citation mention (labels dataset row)",
+  "description": "One candidate mention of a cited work (task `work`) or author (task `author`) in a citer's page, as written to .cache/mentions/<task>.jsonl. Split files add `text`. See docs/architecture/mentions.md.",
+  "type": "object",
+  "required": ["id", "task", "witness", "locator", "start", "end", "surface", "left", "right", "label", "label_source", "split"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^(work|author):[a-z0-9-]+/(PageV\\d+P\\d+|None)@\\d+$",
+           "description": "task:witness/locator@offset; stable while the witness is pinned (lock.json sha256)"},
+    "task": {"enum": ["work", "author"]},
+    "witness": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "locator": {"type": ["string", "null"], "pattern": "^PageV\\d+P\\d+$", "description": "the page marker closing the page"},
+    "start": {"type": "integer", "minimum": 0, "description": "offset into the page's normalised text (reception.plain)"},
+    "end": {"type": "integer", "minimum": 1},
+    "surface": {"type": "string", "minLength": 2, "description": "the head as matched, normalised"},
+    "left": {"type": "string", "description": "up to mentions.WINDOW normalised characters before the mention"},
+    "right": {"type": "string", "description": "up to mentions.WINDOW normalised characters after the mention"},
+    "label": {"type": ["string", "null"], "description": "a cited work id (task work), an author id (task author), `none`, or null (unlabelled)"},
+    "label_source": {"enum": ["rule", "gold", null]},
+    "rule_label": {"type": ["string", "null"], "description": "the rule's verdict, kept when gold overrides it"},
+    "split": {"enum": ["train", "dev", "test"], "description": "by sha256 of witness/locator: 0 → test, 1 → dev, else train"},
+    "text": {"type": "string", "description": "split files only: left [[surface]] right"},
+    "choices": {"type": "array", "items": {"type": "string"}, "description": "review queues only: the labels a reviewer may give"}
+  }
+}

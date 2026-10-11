@@ -135,12 +135,12 @@
       ]
     },
     "hajjawi.iqna": {
-      "total": 25,
+      "total": 24,
       "by_scholar": {
-        "ibn_uthaymin": 25
+        "ibn_uthaymin": 24
       },
       "by_witness": {
-        "openiti-ibnuthaymin-majmufatawa-shamela12293": 11,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 10,
         "openiti-ibnuthaymin-nuraladarb-shamela2300": 1,
         "shamela-10649": 13
       },
@@ -491,9 +491,9 @@
       ]
     },
     "ibn_qudama.mughni": {
-      "total": 145,
+      "total": 144,
       "by_scholar": {
-        "albani": 32,
+        "albani": 31,
         "ibn_baz": 43,
         "ibn_uthaymin": 70
       },
@@ -504,7 +504,7 @@
         "openiti-ibnuthaymin-nuraladarb-shamela2300": 5,
         "shamela-10649": 17,
         "shamela-11122": 3,
-        "shamela-22592": 29
+        "shamela-22592": 28
       },
       "sample": [
         "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV02P357",
@@ -654,15 +654,15 @@
       "sample": []
     },
     "majd.muharrar": {
-      "total": 12,
+      "total": 11,
       "by_scholar": {
         "albani": 1,
         "ibn_baz": 5,
-        "ibn_uthaymin": 6
+        "ibn_uthaymin": 5
       },
       "by_witness": {
         "openiti-ibnbaz-majmufatawa-shamela21537": 5,
-        "openiti-ibnuthaymin-majmufatawa-shamela12293": 6,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 5,
         "shamela-22592": 1
       },
       "sample": [
@@ -777,16 +777,14 @@
       ]
     },
     "shams_ibn_qudama.sharh_kabir": {
-      "total": 12,
+      "total": 11,
       "by_scholar": {
-        "albani": 1,
         "ibn_baz": 6,
         "ibn_uthaymin": 5
       },
       "by_witness": {
         "openiti-ibnbaz-majmufatawa-shamela21537": 6,
-        "openiti-ibnuthaymin-majmufatawa-shamela12293": 5,
-        "shamela-22592": 1
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 5
       },
       "sample": [
         "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV19P127",
@@ -853,6 +851,488 @@
         "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV04P077",
         "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV07P063",
         "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV07P073"
+      ]
+    }
+  },
+  "authors": {
+    "bali": {
+      "total": 0,
+      "by_scholar": {},
+      "by_witness": {},
+      "sample": []
+    },
+    "buhuti": {
+      "total": 31,
+      "by_scholar": {
+        "albani": 2,
+        "ibn_uthaymin": 29
+      },
+      "by_witness": {
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 3,
+        "openiti-ibnuthaymin-nuraladarb-shamela2300": 2,
+        "shamela-10649": 24,
+        "shamela-22592": 2
+      },
+      "sample": [
+        "src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV26P191",
+        "src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV26P344",
+        "src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV26P372"
+      ]
+    },
+    "burhan_ibn_muflih": {
+      "total": 0,
+      "by_scholar": {},
+      "by_witness": {},
+      "sample": []
+    },
+    "hajjawi": {
+      "total": 14,
+      "by_scholar": {
+        "albani": 1,
+        "ibn_baz": 1,
+        "ibn_uthaymin": 12
+      },
+      "by_witness": {
+        "openiti-ibnbaz-nuraladarb-shamela107": 1,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 2,
+        "openiti-ibnuthaymin-nuraladarb-shamela2300": 2,
+        "shamela-10649": 8,
+        "shamela-22592": 1
+      },
+      "sample": [
+        "src:openiti-ibnbaz-nuraladarb-shamela107/PageV20P271",
+        "src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV23P378",
+        "src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV26P372"
+      ]
+    },
+    "harb": {
+      "total": 4,
+      "by_scholar": {
+        "albani": 2,
+        "ibn_baz": 1,
+        "ibn_uthaymin": 1
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 1,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 1,
+        "shamela-11122": 1,
+        "shamela-22592": 1
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P188",
+        "src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV07P170",
+        "src:shamela-11122/PageV01P061"
+      ]
+    },
+    "ibn_abd_al_barr": {
+      "total": 142,
+      "by_scholar": {
+        "albani": 54,
+        "ibn_baz": 31,
+        "ibn_uthaymin": 57
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 26,
+        "openiti-ibnbaz-nuraladarb-shamela107": 5,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 38,
+        "openiti-ibnuthaymin-nuraladarb-shamela2300": 12,
+        "shamela-10649": 7,
+        "shamela-11122": 4,
+        "shamela-22592": 50
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P144",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P143",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P144"
+      ]
+    },
+    "ibn_hajar": {
+      "total": 352,
+      "by_scholar": {
+        "albani": 159,
+        "ibn_baz": 118,
+        "ibn_uthaymin": 75
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 107,
+        "openiti-ibnbaz-nuraladarb-shamela107": 11,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 55,
+        "openiti-ibnuthaymin-nuraladarb-shamela2300": 11,
+        "shamela-10649": 9,
+        "shamela-11122": 47,
+        "shamela-22592": 112
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P072",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P072",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P072"
+      ]
+    },
+    "ibn_hazm": {
+      "total": 249,
+      "by_scholar": {
+        "albani": 134,
+        "ibn_baz": 52,
+        "ibn_uthaymin": 63
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 50,
+        "openiti-ibnbaz-nuraladarb-shamela107": 2,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 38,
+        "openiti-ibnuthaymin-nuraladarb-shamela2300": 7,
+        "shamela-10649": 18,
+        "shamela-11122": 50,
+        "shamela-22592": 84
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P362",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P362",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P391"
+      ]
+    },
+    "ibn_muflih": {
+      "total": 18,
+      "by_scholar": {
+        "ibn_baz": 4,
+        "ibn_uthaymin": 14
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 4,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 6,
+        "shamela-10649": 8
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV05P401",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV21P258",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV25P347"
+      ]
+    },
+    "ibn_mundhir": {
+      "total": 100,
+      "by_scholar": {
+        "albani": 41,
+        "ibn_baz": 20,
+        "ibn_uthaymin": 39
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 19,
+        "openiti-ibnbaz-nuraladarb-shamela107": 1,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 30,
+        "shamela-10649": 9,
+        "shamela-11122": 5,
+        "shamela-22592": 36
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV04P272",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P186",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P187"
+      ]
+    },
+    "ibn_najjar": {
+      "total": 8,
+      "by_scholar": {
+        "albani": 4,
+        "ibn_uthaymin": 4
+      },
+      "by_witness": {
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 1,
+        "shamela-10649": 3,
+        "shamela-22592": 4
+      },
+      "sample": [
+        "src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV10P977",
+        "src:shamela-10649/PageV01P160",
+        "src:shamela-10649/PageV01P154"
+      ]
+    },
+    "ibn_qayyim": {
+      "total": 709,
+      "by_scholar": {
+        "albani": 105,
+        "ibn_baz": 207,
+        "ibn_uthaymin": 396,
+        "sadi": 1
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 165,
+        "openiti-ibnbaz-nuraladarb-shamela107": 42,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 262,
+        "openiti-ibnuthaymin-nuraladarb-shamela2300": 45,
+        "shamela-10649": 89,
+        "shamela-11122": 68,
+        "shamela-22592": 37,
+        "shamela-9945": 1
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P134",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P143",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P255"
+      ]
+    },
+    "ibn_qudama": {
+      "total": 75,
+      "by_scholar": {
+        "albani": 33,
+        "ibn_baz": 33,
+        "ibn_uthaymin": 9
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 33,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 3,
+        "openiti-ibnuthaymin-nuraladarb-shamela2300": 1,
+        "shamela-10649": 5,
+        "shamela-11122": 3,
+        "shamela-22592": 30
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P220",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P220",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV03P359"
+      ]
+    },
+    "ibn_rajab": {
+      "total": 69,
+      "by_scholar": {
+        "albani": 6,
+        "ibn_baz": 32,
+        "ibn_uthaymin": 31
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 26,
+        "openiti-ibnbaz-nuraladarb-shamela107": 6,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 15,
+        "shamela-10649": 16,
+        "shamela-22592": 6
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P187",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P188",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P189"
+      ]
+    },
+    "ibn_rushd": {
+      "total": 4,
+      "by_scholar": {
+        "albani": 1,
+        "ibn_baz": 1,
+        "ibn_uthaymin": 2
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 1,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 2,
+        "shamela-11122": 1
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV05P232",
+        "src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P261",
+        "src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P261"
+      ]
+    },
+    "ibn_taymiyya": {
+      "total": 1837,
+      "by_scholar": {
+        "albani": 84,
+        "ibn_baz": 327,
+        "ibn_uthaymin": 1418,
+        "sadi": 8
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 261,
+        "openiti-ibnbaz-nuraladarb-shamela107": 66,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 668,
+        "openiti-ibnuthaymin-nuraladarb-shamela2300": 199,
+        "shamela-10649": 551,
+        "shamela-11122": 43,
+        "shamela-1602": 5,
+        "shamela-22592": 41,
+        "shamela-9945": 3
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P018",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P063",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P073"
+      ]
+    },
+    "kawsaj": {
+      "total": 6,
+      "by_scholar": {
+        "albani": 6
+      },
+      "by_witness": {
+        "shamela-22592": 6
+      },
+      "sample": [
+        "src:shamela-22592/PageV01P054",
+        "src:shamela-22592/PageV01P055",
+        "src:shamela-22592/PageV01P347"
+      ]
+    },
+    "khattabi": {
+      "total": 70,
+      "by_scholar": {
+        "albani": 32,
+        "ibn_baz": 30,
+        "ibn_uthaymin": 8
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 30,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 5,
+        "shamela-10649": 3,
+        "shamela-11122": 9,
+        "shamela-22592": 23
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P062",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P062",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P093"
+      ]
+    },
+    "majd": {
+      "total": 21,
+      "by_scholar": {
+        "albani": 9,
+        "ibn_baz": 3,
+        "ibn_uthaymin": 9
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 3,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 2,
+        "openiti-ibnuthaymin-nuraladarb-shamela2300": 2,
+        "shamela-10649": 5,
+        "shamela-11122": 2,
+        "shamela-22592": 7
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P186",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV10P223",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV18P265"
+      ]
+    },
+    "mardawi": {
+      "total": 11,
+      "by_scholar": {
+        "albani": 2,
+        "ibn_baz": 2,
+        "ibn_uthaymin": 7
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 2,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 1,
+        "shamela-10649": 6,
+        "shamela-22592": 2
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV19P317",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV25P375",
+        "src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV26P209"
+      ]
+    },
+    "muhammad_ibn_ibrahim": {
+      "total": 17,
+      "by_scholar": {
+        "ibn_baz": 13,
+        "ibn_uthaymin": 4
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 13,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 4
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P009",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P010",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P381"
+      ]
+    },
+    "nawawi": {
+      "total": 297,
+      "by_scholar": {
+        "albani": 155,
+        "ibn_baz": 67,
+        "ibn_uthaymin": 75
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 62,
+        "openiti-ibnbaz-nuraladarb-shamela107": 5,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 62,
+        "openiti-ibnuthaymin-nuraladarb-shamela2300": 9,
+        "shamela-10649": 4,
+        "shamela-11122": 75,
+        "shamela-22592": 80
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P061",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P062",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P077"
+      ]
+    },
+    "qannawji": {
+      "total": 5,
+      "by_scholar": {
+        "albani": 5
+      },
+      "by_witness": {
+        "shamela-11122": 4,
+        "shamela-22592": 1
+      },
+      "sample": [
+        "src:shamela-11122/PageV01P142",
+        "src:shamela-11122/PageV01P366",
+        "src:shamela-11122/PageV01P382"
+      ]
+    },
+    "sanani": {
+      "total": 46,
+      "by_scholar": {
+        "albani": 38,
+        "ibn_baz": 7,
+        "ibn_uthaymin": 1
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 7,
+        "shamela-10649": 1,
+        "shamela-11122": 15,
+        "shamela-22592": 23
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P355",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV05P233",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV06P187"
+      ]
+    },
+    "shams_ibn_qudama": {
+      "total": 4,
+      "by_scholar": {
+        "albani": 4
+      },
+      "by_witness": {
+        "shamela-22592": 4
+      },
+      "sample": [
+        "src:shamela-22592/PageV01P011",
+        "src:shamela-22592/PageV01P330",
+        "src:shamela-22592/PageV01P330"
+      ]
+    },
+    "shawkani": {
+      "total": 161,
+      "by_scholar": {
+        "albani": 118,
+        "ibn_baz": 25,
+        "ibn_uthaymin": 18
+      },
+      "by_witness": {
+        "openiti-ibnbaz-majmufatawa-shamela21537": 24,
+        "openiti-ibnbaz-nuraladarb-shamela107": 1,
+        "openiti-ibnuthaymin-majmufatawa-shamela12293": 6,
+        "openiti-ibnuthaymin-nuraladarb-shamela2300": 2,
+        "shamela-10649": 10,
+        "shamela-11122": 99,
+        "shamela-22592": 19
+      },
+      "sample": [
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P190",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P336",
+        "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV01P355"
       ]
     }
   }

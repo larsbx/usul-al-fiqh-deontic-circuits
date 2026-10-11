@@ -6,7 +6,10 @@ them (``reception.not``). Matching runs on normalised text, page by page:
 * a single-word form («المغني») counts only after a citation cue (في, صاحب, كتاب, انظر …);
 * a multi-word form («زاد المعاد») counts as written;
 * overlapping hits resolve leftmost-longest, so each span counts once and an exclusion that covers
-  a title (الذهبي في المغني) silences it.
+  a title (الذهبي في المغني) silences it; on an identical span a named work beats an exclusion.
+
+A second pass counts author mentions from ``corpus/reception/authors.json`` the same way, except that
+a single-word form (النووي) needs no cue.
 
 The counts are evidence for the corpus selection, not a bibliometric truth: forms are heuristic,
 and each work keeps a few page locators so a reviewer can spot-check its hits.
@@ -14,6 +17,7 @@ and each work keeps a few page locators so a reviewer can spot-check its hits.
 
 from __future__ import annotations
 
+import json
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -51,22 +55,55 @@ def _pattern(form: str, cue: bool) -> re.Pattern[str]:
     return re.compile(rf"(?<!\w){lead}(?P<t>{title})(?!\w)")
 
 
-def matcher(cited: Iterable[Cited]) -> Callable[[str], tuple[str, ...]]:
-    """text → the cited works it names, in reading order."""
-    pats = [(c.work, _pattern(f, len(f.split()) == 1)) for c in cited for f in c.cite_as]
-    pats += [(None, _pattern(f, False)) for c in cited for f in c.shadowed_by]
+Span = tuple[int, int, "str | None"]  # [start, end) in normalised text; None = a shadowing phrase
 
-    def match(text: str) -> tuple[str, ...]:
-        t = normalize(_QUOTES.sub(" ", text))
-        spans = sorted(((m.start("t"), -m.end("t"), w) for w, p in pats for m in p.finditer(t)))
-        kept, end = [], -1
-        for start, neg_end, w in spans:
-            if start >= end:
-                kept.append(w)
-                end = -neg_end
-        return tuple(w for w in kept if w is not None)
 
-    return match
+def plain(text: str) -> str:
+    """The normalised text that matching runs on (and that span offsets index)."""
+    return normalize(_QUOTES.sub(" ", text))
+
+
+def _compile(cited: Iterable[Cited], cue_single: bool) -> list[tuple[str | None, re.Pattern[str]]]:
+    cited = tuple(cited)
+    return ([(c.work, _pattern(f, cue_single and len(f.split()) == 1)) for c in cited for f in c.cite_as]
+            + [(None, _pattern(f, False)) for c in cited for f in c.shadowed_by])
+
+
+def resolve(found: Iterable[Span]) -> tuple[Span, ...]:
+    """Leftmost-longest; on an identical span a named work beats a shadowing phrase."""
+    kept: list[Span] = []
+    for s, e, w in sorted(found, key=lambda x: (x[0], -x[1], x[2] is None, x[2] or "")):
+        if not kept or s >= kept[-1][1]:
+            kept.append((s, e, w))
+    return tuple(kept)
+
+
+def _spans(t: str, pats: list[tuple[str | None, re.Pattern[str]]]) -> tuple[Span, ...]:
+    return resolve((m.start("t"), m.end("t"), w) for w, p in pats for m in p.finditer(t))
+
+
+def spans(text: str, cited: Iterable[Cited], cue_single: bool = True) -> tuple[Span, ...]:
+    """Resolved spans over ``plain(text)``, shadowing phrases included."""
+    return _spans(plain(text), _compile(cited, cue_single))
+
+
+def matcher(cited: Iterable[Cited], cue_single: bool = True) -> Callable[[str], tuple[str, ...]]:
+    """text → the works (or authors) it names, in reading order. With ``cue_single=False`` a
+    single-word form counts as written (author nisbas: النووي)."""
+    pats = _compile(cited, cue_single)
+    return lambda text: tuple(w for _, _, w in _spans(plain(text), pats) if w is not None)
+
+
+def lexicon(works: Iterable[dict]) -> tuple[Cited, ...]:
+    """The title lexicon of the registry's cited works."""
+    return tuple(Cited(w["id"], tuple(w["reception"]["cite_as"]), tuple(w["reception"].get("not", ())))
+                 for w in works if w.get("reception", {}).get("role") == "cited")
+
+
+def authors(path: Path) -> tuple[Cited, ...]:
+    """The author lexicon (``corpus/reception/authors.json``)."""
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return tuple(Cited(a["id"], tuple(a["cite_as"]), tuple(a.get("not", ()))) for a in data["authors"])
 
 
 def citations(text: str, match: Callable[[str], tuple[str, ...]]) -> tuple[Hit, ...]:
@@ -91,21 +128,26 @@ def _role(works: list[dict], role: str) -> list[dict]:
     return [w for w in works if w.get("reception", {}).get("role") == role]
 
 
-def build(registry: dict, cache: Path) -> dict:
-    """The committed reception report: counts for every cited work over every cached citer witness."""
-    cited = _role(registry["works"], "cited")
-    match = matcher(Cited(w["id"], tuple(w["reception"]["cite_as"]), tuple(w["reception"].get("not", ()))) for w in cited)
+def build(registry: dict, cache: Path, author_lexicon: tuple[Cited, ...]) -> dict:
+    """The committed reception report: title and author counts over every cached citer witness."""
+    titles = lexicon(registry["works"])
     citers = {x["id"]: (w, cache / f"{x['id']}.txt") for w in _role(registry["works"], "citer") for x in w["witnesses"]}
     present = {wid: (w, p.read_text(encoding="utf-8")) for wid, (w, p) in citers.items() if p.exists()}
-    hits = {wid: citations(text, match) for wid, (_, text) in present.items()}
-    counts = report(hits, {wid: w["reception"]["scholar"] for wid, (w, _) in present.items()})
+    scholar = {wid: w["reception"]["scholar"] for wid, (w, _) in present.items()}
     zero = {"total": 0, "by_scholar": {}, "by_witness": {}, "sample": []}
+
+    def count(lex: tuple[Cited, ...], cue_single: bool) -> dict[str, dict]:
+        match = matcher(lex, cue_single)
+        counts = report({wid: citations(text, match) for wid, (_, text) in present.items()}, scholar)
+        return {c.work: counts.get(c.work, zero) for c in sorted(lex, key=lambda c: c.work)}
+
     return {
         "method": __doc__.strip().split("\n\n")[1],
         "citers": {wid: {"work": w["id"], "scholar": w["reception"]["scholar"], "pages": len(pages(text))}
                    for wid, (w, text) in sorted(present.items())},
         "missing": sorted(set(citers) - set(present)),
-        "counts": {w["id"]: counts.get(w["id"], zero) for w in sorted(cited, key=lambda w: w["id"])},
+        "counts": count(titles, True),
+        "authors": count(author_lexicon, False),
     }
 
 
@@ -118,7 +160,7 @@ def render_counts(rep: dict, titles: dict[str, tuple[str, str]]) -> str:
     row = lambda w, c: (f"| {titles[w][0]} | `{w}` | {titles[w][1]} | {c['total']} | "
                         + " | ".join(str(c["by_scholar"].get(s, "")) for s in SCHOLARS)
                         + f" | {' '.join(f'`{x}`' for x in c['sample'])} |")
-    ranked = sorted(rep["counts"].items(), key=lambda kv: (-kv[1]["total"], kv[0]))
+    ranked = lambda counts: sorted(counts.items(), key=lambda kv: (-kv[1]["total"], kv[0]))
     citers = [f"| {titles[c['work']][0]} | `{w}` | {SCHOLARS[c['scholar']]} | {c['pages']} |" for w, c in rep["citers"].items()]
     return "\n".join([
         "<!-- GENERATED by `python -m usul_corpus docs` from corpus/reception/report.json. Do not edit. -->", "",
@@ -127,5 +169,8 @@ def render_counts(rep: dict, titles: dict[str, tuple[str, str]]) -> str:
         "## Citer witnesses", "", "| Work | Witness | Scholar | Pages |", "|---|---|---|---|", *citers, "",
         *([f"Not cached when the report was built: {', '.join(f'`{m}`' for m in rep['missing'])}.", ""] if rep["missing"] else []),
         "## Cited works", "", f"| Work | Id | Genre | Total | {cols} | Sample hits |",
-        "|---|---|---|---:|" + "---:|" * len(SCHOLARS) + "---|", *(row(w, c) for w, c in ranked), "",
+        "|---|---|---|---:|" + "---:|" * len(SCHOLARS) + "---|", *(row(w, c) for w, c in ranked(rep["counts"])), "",
+        "## Cited authors", "", "Mentions by name (قال النووي, شيخ الإسلام ابن تيمية), counted separately from titles.", "",
+        f"| Author | Id | | Total | {cols} | Sample hits |",
+        "|---|---|---|---:|" + "---:|" * len(SCHOLARS) + "---|", *(row(w, c) for w, c in ranked(rep.get("authors", {}))), "",
     ])
