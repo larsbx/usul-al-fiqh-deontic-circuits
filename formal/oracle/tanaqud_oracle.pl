@@ -92,3 +92,14 @@ qayd(11, [B, _, _]) :- B == true.
 first(12, [_], true).
 second(12, [_], false).
 qayd(12, [N]) :- N == true.
+
+% T-13 Ibn Rajab 32 ⟂ 33: is the excepted benefit of unknown period valid?, case [Implicit, Tolerates].
+% «لأن جهالة المدة هنا لا تؤثر»
+first(13, [_, T], V) :- ( T == true -> V = true ; V = false ).
+second(13, [I, _], V) :- ( I == true -> V = true ; V = false ).
+qayd(13, [_, T]) :- T == true.
+
+% T-14 Ibn Rajab 1 ⟂ al-Saʿdī Q9: how is running water reckoned?, case [InAnOath]. «والأيمان مرجعها إلى العرف»
+first(14, [_], perJirya).
+second(14, [_], whole).
+qayd(14, [O]) :- O == false.

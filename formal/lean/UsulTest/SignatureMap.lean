@@ -348,8 +348,16 @@ import Usul
 #check @Usul.Tanaqud.t12_clash
 #check @Usul.Tanaqud.t12_jam
 #check @Usul.Refinements.necessity_is_q28
+#check @Usul.Tanaqud.t13
+#check @Usul.Tanaqud.t13_clash
+#check @Usul.Tanaqud.t13_jam
+#check @Usul.Tanaqud.t14
+#check @Usul.Tanaqud.t14_clash
+#check @Usul.Tanaqud.t14_jam
+#check @Usul.Refinements.oath_follows_custom
 #check @Usul.Refinements.q65_is_the_unbelieved_basis
 #check @Usul.Tanaqud.rajab_q93_q75_consistent
+#check @Usul.Refinements.binding_is_implicit_exception
 #check @Usul.Tanaqud.Pair.Clash
 #check @Usul.Tanaqud.Pair.jam_first
 #check @Usul.Tanaqud.Pair.jam_second
@@ -477,7 +485,6 @@ import Usul
 #check @Usul.Refinements.clear_text_undoes
 #check @Usul.Refinements.ijtihad_not_overturned_by_ijtihad
 #check @Usul.Refinements.oathBody
-#check @Usul.Refinements.oath_follows_custom
 #check @Usul.Refinements.mixedOutcome
 #check @Usul.Refinements.other_kind_is_consumed
 #check @Usul.Refinements.distinct_stays_separate

@@ -26,8 +26,8 @@ For each pair, three things are proved:
 Earlier pairs proved in place: Q13/Q36 (`Muamalat.q13_q36_consistent`), Q26/Q43
 (`Muamalat.q26_q43_consistent`), Q51/Q54 (`Muamalat.q51_q54_consistent`).
 
-T11–T12 carry the pass to Ibn Rajab's *Taqrīr al-Qawāʿid* (`corpus/tanaqud/rajab.json`): one pair
-inside his book, one across the bank against al-Saʿdī. The qayd is again his own sentence.
+T11–T14 carry the pass to Ibn Rajab's *Taqrīr al-Qawāʿid* (`corpus/tanaqud/rajab.json`): two pairs
+inside his book, two across the bank against al-Saʿdī. The qayd is again his own sentence.
 -/
 
 namespace Usul.Tanaqud
@@ -311,6 +311,52 @@ theorem t12_clash : t12.Clash := ⟨true, by decide⟩
 /-- The jamʿ is Ibn Rajab 7's reading, `Refinements.mustSwitch`. -/
 theorem t12_jam (necessity : Bool) : t12.jam necessity = Refinements.mustSwitch necessity := by
   cases necessity <;> rfl
+
+/-! ## T13 · Ibn Rajab 32 ⟂ Ibn Rajab 33: an excepted benefit of uncertain extent
+
+Q32 (`Refinements.benefitExceptionValid`): excepting the benefit of what one transfers is valid for
+a known period, and in waqf and manumission for his life too. Q33 (as read,
+`Refinements.uncertainExceptionValid`): an exception of uncertain extent is valid when the law
+makes it, not when it is stated. A waqf excepting its benefit for the founder's life is a stated
+exception of uncertain extent: Q32 upholds it, Q33 voids it. Ibn Rajab (Q32): «لأن جهالة المدة
+هنا لا تؤثر فإنها لا تزيد على جهالة مدة كل بطن بالنسبة إلى من بعده». Where the transfer already
+bears that uncertainty Q32 governs; elsewhere Q33. -/
+
+/-- The case, the period being unknown: the exception arises by law, the transfer tolerates
+an uncertain period. The result: whether the exception is valid. -/
+def t13 : Pair (Bool × Bool) Bool where
+  first  := fun c => Refinements.benefitExceptionValid false c.2
+  second := fun c => Refinements.uncertainExceptionValid c.1
+  qayd   := fun c => c.2
+
+theorem t13_clash : t13.Clash := ⟨(false, true), by decide⟩
+
+/-- The jamʿ: valid where the transfer tolerates the uncertainty, or the law makes the exception. -/
+theorem t13_jam (implicit tolerates : Bool) :
+    t13.jam (implicit, tolerates) =
+      (Refinements.benefitExceptionValid false tolerates || Refinements.uncertainExceptionValid implicit) := by
+  cases implicit <;> cases tolerates <;> rfl
+
+/-! ## T14 · Ibn Rajab 1 ⟂ al-Saʿdī Q9: an oath about running water
+
+Ibn Rajab 1 (as read, `Refinements.runningBody`): running water is judged jirya by jirya.
+al-Saʿdī Q9 (`Kulliyyat.measure`): what the law leaves undefined is measured by custom, and
+custom counts the running river as one body. One who swore not to stand in this water while
+it runs: by Q1 he cannot stand in what keeps changing, by Q9 he has stood in it. Ibn Rajab
+(1.f003): «والأيمان مرجعها إلى العرف». Oaths follow Q9; purity follows Q1. -/
+
+/-- The case: the question is an oath. The result: how the running water is reckoned. -/
+def t14 : Pair Bool Refinements.Body where
+  first  := fun _ => Refinements.runningBody true
+  second := fun _ => Refinements.oathBody true
+  qayd   := not
+
+theorem t14_clash : t14.Clash := ⟨true, by decide⟩
+
+/-- The jamʿ: in an oath custom's one body (`Refinements.oath_follows_custom`), elsewhere the jirya. -/
+theorem t14_jam (oath : Bool) :
+    t14.jam oath = if oath then Refinements.oathBody true else Refinements.runningBody true := by
+  cases oath <;> rfl
 
 /-! ## Ibn Rajab 93 with Ibn Rajab 75: no clash
 

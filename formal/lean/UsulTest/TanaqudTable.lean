@@ -127,3 +127,23 @@ import Usul
 #guard Usul.Tanaqud.t12.first false == true
 #guard Usul.Tanaqud.t12.second false == false
 #guard Usul.Tanaqud.t12.jam false == false
+-- T-13: Q32 ⟂ Q33
+#guard Usul.Tanaqud.t13.first (true, true) == true
+#guard Usul.Tanaqud.t13.second (true, true) == true
+#guard Usul.Tanaqud.t13.jam (true, true) == true
+#guard Usul.Tanaqud.t13.first (true, false) == false
+#guard Usul.Tanaqud.t13.second (true, false) == true
+#guard Usul.Tanaqud.t13.jam (true, false) == true
+#guard Usul.Tanaqud.t13.first (false, true) == true
+#guard Usul.Tanaqud.t13.second (false, true) == false
+#guard Usul.Tanaqud.t13.jam (false, true) == true
+#guard Usul.Tanaqud.t13.first (false, false) == false
+#guard Usul.Tanaqud.t13.second (false, false) == false
+#guard Usul.Tanaqud.t13.jam (false, false) == false
+-- T-14: Q1 ⟂ sadi.qawaid_jamia:9
+#guard Usul.Tanaqud.t14.first true == .perJirya
+#guard Usul.Tanaqud.t14.second true == .whole
+#guard Usul.Tanaqud.t14.jam true == .whole
+#guard Usul.Tanaqud.t14.first false == .perJirya
+#guard Usul.Tanaqud.t14.second false == .whole
+#guard Usul.Tanaqud.t14.jam false == .perJirya

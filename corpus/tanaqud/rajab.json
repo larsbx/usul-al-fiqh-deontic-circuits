@@ -26,6 +26,15 @@
    "lean": [
     "Usul.Tanaqud.rajab_q93_q75_consistent"
    ]
+  },
+  {
+   "rules": [
+    33,
+    34
+   ],
+   "lean": [
+    "Usul.Refinements.binding_is_implicit_exception"
+   ]
   }
  ],
  "pairs": [
@@ -179,6 +188,111 @@
      "first": true,
      "second": false,
      "jam": false
+    }
+   ]
+  },
+  {
+   "id": "T-13",
+   "rules": [
+    32,
+    33
+   ],
+   "case_en": "An excepted benefit of uncertain extent, e.g. a waqf excepting its benefit for the founder's life: Q32 upholds it; Q33, as read, voids an exception of uncertain extent unless the law makes it.",
+   "resolution": "jam",
+   "qayd_en": "Where the transfer already bears an uncertain period (waqf, manumission), Q32 governs; elsewhere Q33.",
+   "author": [
+    {
+     "ref": "src:openiti-rajab-shamela21730#q032",
+     "excerpt_ar": "لأن جهالة المدة هنا لا تؤثر فإنها لا تزيد على جهالة مدة كل بطن بالنسبة إلى من بعده"
+    }
+   ],
+   "reading_rules": [
+    "sadi.qawaid_jamia:29"
+   ],
+   "lean": [
+    "Usul.Tanaqud.t13",
+    "Usul.Tanaqud.t13_clash",
+    "Usul.Tanaqud.t13_jam"
+   ],
+   "table": [
+    {
+     "case": [
+      true,
+      true
+     ],
+     "first": true,
+     "second": true,
+     "jam": true
+    },
+    {
+     "case": [
+      true,
+      false
+     ],
+     "first": false,
+     "second": true,
+     "jam": true
+    },
+    {
+     "case": [
+      false,
+      true
+     ],
+     "first": true,
+     "second": false,
+     "jam": true
+    },
+    {
+     "case": [
+      false,
+      false
+     ],
+     "first": false,
+     "second": false,
+     "jam": false
+    }
+   ]
+  },
+  {
+   "id": "T-14",
+   "rules": [
+    1,
+    "sadi.qawaid_jamia:9"
+   ],
+   "case_en": "An oath not to stand in this water while it runs: Q1, as read, reckons running water jirya by jirya, so he cannot stand in it; al-Saʿdī's Q9 measures by custom, which counts the river one body.",
+   "resolution": "jam",
+   "qayd_en": "Oaths are measured by custom (Q9); outside oaths, Q1's jirya.",
+   "author": [
+    {
+     "ref": "src:openiti-rajab-shamela21730#q001",
+     "excerpt_ar": "والأيمان مرجعها إلى العرف"
+    }
+   ],
+   "reading_rules": [
+    "sadi.qawaid_jamia:29"
+   ],
+   "lean": [
+    "Usul.Tanaqud.t14",
+    "Usul.Tanaqud.t14_clash",
+    "Usul.Tanaqud.t14_jam",
+    "Usul.Refinements.oath_follows_custom"
+   ],
+   "table": [
+    {
+     "case": [
+      true
+     ],
+     "first": "perJirya",
+     "second": "whole",
+     "jam": "whole"
+    },
+    {
+     "case": [
+      false
+     ],
+     "first": "perJirya",
+     "second": "whole",
+     "jam": "perJirya"
     }
    ]
   }
