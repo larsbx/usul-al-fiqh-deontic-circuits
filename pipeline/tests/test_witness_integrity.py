@@ -53,3 +53,9 @@ def test_no_sourced_excerpt_stops_before_its_qualifier():
         if texts[w] is not None and cut_before_qualifier(texts[w], ex):
             bad.append((f, w, ex[:40]))
     assert not bad, bad
+
+
+def test_every_cached_witness_is_pinned():
+    """A registered witness present in the cache has a pin: a lost pin (PR-20) fails here."""
+    cached = [w for w in FORMAT if (CACHE / f"{w}.txt").exists()]
+    assert [w for w in cached if w not in LOCK] == []

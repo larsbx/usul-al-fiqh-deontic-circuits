@@ -51,6 +51,12 @@
       "bytes": 3398133,
       "sha256": "f153a439d58e7fbeded321cd6ba9cba3b5402c5d3b3286ca3dde9b620d6feef6"
     },
+    "openiti-albani-sdtirmidhi-shamela782": {
+      "witness": "openiti-albani-sdtirmidhi-shamela782",
+      "url": "https://raw.githubusercontent.com/OpenITI/1425AH/6d71d2af1be5a49f1db3b52cdda15ea11da569de/data/1420MuhammadNasirDinAlbani/1420MuhammadNasirDinAlbani.SahihWaDacifSunanTirmidhi/1420MuhammadNasirDinAlbani.SahihWaDacifSunanTirmidhi.Shamela0000782-ara1",
+      "bytes": 3742868,
+      "sha256": "934238d8dda11cea27442885614481f884f0c207b31c003c57099880d0bd2bfe"
+    },
     "openiti-amidi-shamela10801": {
       "witness": "openiti-amidi-shamela10801",
       "url": "https://raw.githubusercontent.com/OpenITI/0650AH/287c0cc31845e7f63afb4c0e3c776fc13b45f00f/data/0631SayfDinAmidi/0631SayfDinAmidi.IhkamFiUsulAhkam/0631SayfDinAmidi.IhkamFiUsulAhkam.Shamela0010801-ara1",

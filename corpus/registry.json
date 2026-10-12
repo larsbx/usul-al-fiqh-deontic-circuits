@@ -3417,6 +3417,32 @@
       }
     },
     {
+      "id": "albani.sahih_daif_tirmidhi",
+      "title_ar": "صحيح وضعيف سنن الترمذي",
+      "title_tr": "Ṣaḥīḥ wa-Ḍaʿīf Sunan al-Tirmidhī",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": false,
+      "track": "albani_hadith",
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "openiti-albani-sdtirmidhi-shamela782",
+          "kind": "openiti",
+          "repo": "1425AH",
+          "commit": "6d71d2af1be5a49f1db3b52cdda15ea11da569de",
+          "path": "data/1420MuhammadNasirDinAlbani/1420MuhammadNasirDinAlbani.SahihWaDacifSunanTirmidhi/1420MuhammadNasirDinAlbani.SahihWaDacifSunanTirmidhi.Shamela0000782-ara1",
+          "edition": "Shamela 782: al-Albānī's verdict on every ḥadīth of al-Tirmidhī, in al-Tirmidhī's numbering"
+        }
+      ],
+      "status": "located"
+    },
+    {
       "id": "albani.tamam_minna",
       "title_ar": "تمام المنة في التعليق على فقه السنة",
       "title_tr": "Tamām al-Minna fī al-Taʿlīq ʿalā Fiqh al-Sunna",

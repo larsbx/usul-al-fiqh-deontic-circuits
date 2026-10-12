@@ -63,10 +63,15 @@
    "basis": "nass",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
-    "excerpt_ar": "ومن الفروق الصحيحة الثابتة بالنص"
+    "excerpt_ar": "ومن الفروق الصحيحة الثابتة بالنص (1): الفرق بين لغو اليمين، وهي: اليمين التي لم يقصدها الحالف"
    },
    "grounds": [],
-   "note": "and the text's command, prohibition or option to break an oath by what is better"
+   "note": "and the text's command, prohibition or option to break an oath by what is better",
+   "nusus": [
+    "Q002:224",
+    "H-halaf-khayr"
+   ],
+   "nass_cited": "quoted"
   },
   {
    "id": "F64",
@@ -248,7 +253,11 @@
     "excerpt_ar": "لأن نية وليه تقوم مقام نيته"
    },
    "grounds": [],
-   "note": "«كما دل عليه النص»; the rest rests on intention"
+   "note": "«كما دل عليه النص»; the rest rests on intention",
+   "nusus": [
+    "H-hajj-sabi"
+   ],
+   "nass_cited": "identified"
   },
   {
    "id": "F74",

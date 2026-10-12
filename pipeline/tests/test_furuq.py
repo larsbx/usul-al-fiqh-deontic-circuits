@@ -93,3 +93,33 @@ def test_no_quote_stops_before_its_qualifier():
         pytest.skip("witness not cached")
     text = src.read_text(encoding="utf-8")
     assert [i["id"] for i in ITEMS if cut_before_qualifier(text, i["author"]["excerpt_ar"])] == []
+
+
+def test_quotes_are_unique_in_the_witness():
+    """A furūq quote carries no page, so it must occur once: a prefix of another passage (F63 in
+    F49's «… الثابتة بالنص والإجماع») would be found at the wrong place (problem register PR-17)."""
+    src = CACHE / f"{TRANCHES[0]['witness']}.txt"
+    if not src.exists():
+        pytest.skip("witness not cached")
+    text = key(src.read_text(encoding="utf-8"))
+    assert [i["id"] for i in ITEMS if text.count(key(i["author"]["excerpt_ar"])) != 1] == []
+
+
+def test_nass_basis_rests_on_the_foundation():
+    """An item whose basis is a naṣṣ cites it from the foundation, unless al-Saʿdī leaves it
+    unspecified; every ḥadīth it rests on passes the gate. Where he says no sound ḥadīth exists
+    («لم يصح حديث», «كلها ضعيفة»), al-Albānī's verdict on the ḥadīth cited agrees (PR-04)."""
+    from usul_corpus.nusus import load
+    from usul_corpus.__main__ import CORPUS
+    f = load(CORPUS)
+    ids = {x["id"]: x for k in ("ayat", "ahadith", "athar") for x in f[k]}
+    hujja = lambda i: ids[i]["albani"]["verdict"] in ("sahih", "hasan")
+    for i in ITEMS:
+        cited = i.get("nusus", [])
+        assert set(cited) <= set(ids), i["id"]
+        if i["basis"] == "nass":
+            assert i["nass_cited"] == "unspecified" or cited, i["id"]
+            assert all(hujja(c) for c in cited if c.startswith("H-")), i["id"]
+        if i["basis"] == "no_sound_hadith":
+            assert any(c.startswith("H-") for c in cited) and not any(hujja(c) for c in cited if c.startswith("H-")), i["id"]
+        assert ("nass_cited" in i) == (i["basis"] in ("nass", "no_sound_hadith")), i["id"]

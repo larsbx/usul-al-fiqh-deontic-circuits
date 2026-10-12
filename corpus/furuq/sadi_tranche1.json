@@ -204,7 +204,11 @@
     "excerpt_ar": "لأن الله عين الثلاثة أن تكون في الحج فوقتها محصور"
    },
    "grounds": [],
-   "note": "the three days are fixed by the verse to the ḥajj"
+   "note": "the three days are fixed by the verse to the ḥajj",
+   "nusus": [
+    "Q002:196b"
+   ],
+   "nass_cited": "named"
   },
   {
    "id": "F12",
@@ -221,7 +225,11 @@
     "excerpt_ar": "فمتى أحرم بالحج أو العمرة وجب عليه الإتمام"
    },
    "grounds": [],
-   "note": "once in iḥrām, completion is obligatory"
+   "note": "once in iḥrām, completion is obligatory",
+   "nusus": [
+    "Q002:196a"
+   ],
+   "nass_cited": "identified"
   },
   {
    "id": "F13",
@@ -281,7 +289,11 @@
     "Usul.Furuq.f15_apart",
     "Usul.Tanaqud.t1_jam"
    ],
-   "note": "«مع أن الآية الكريمة نصت على المتعمد نصاً صريحاً»"
+   "note": "«مع أن الآية الكريمة نصت على المتعمد نصاً صريحاً»",
+   "nusus": [
+    "Q005:095"
+   ],
+   "nass_cited": "quoted"
   },
   {
    "id": "F16",
@@ -298,7 +310,11 @@
     "excerpt_ar": "دليل على أن غيرهم لا يساويهم في ذلك"
    },
    "grounds": [],
-   "note": "the later Ḥanbalīs allow it to all, «وفيه نظر»"
+   "note": "the later Ḥanbalīs allow it to all, «وفيه نظر»",
+   "nusus": [
+    "H-ruat-ibil"
+   ],
+   "nass_cited": "named"
   },
   {
    "id": "F17",
@@ -315,7 +331,11 @@
     "excerpt_ar": "فالصواب في ذلك القول الآخر: وأن جزاء الصيد يتعين فيه المثل لظاهر النص"
    },
    "grounds": [],
-   "note": "«ولأن فيه شائبة عقوبة بخلاف بقية الأحكام»"
+   "note": "«ولأن فيه شائبة عقوبة بخلاف بقية الأحكام»",
+   "nusus": [
+    "Q005:095"
+   ],
+   "nass_cited": "identified"
   },
   {
    "id": "F18",
@@ -371,7 +391,11 @@
    "grounds": [
     "Usul.Seam.daif_not_admitted"
    ],
-   "note": "recommended both before and after; the only proof for the farq is not ṣaḥīḥ, so it fails the ḥadīth gate (D4)"
+   "note": "recommended both before and after; the only proof for the farq is not ṣaḥīḥ, so it fails the ḥadīth gate (D4)",
+   "nusus": [
+    "H-siwak-ashi"
+   ],
+   "nass_cited": "identified"
   },
   {
    "id": "F21",

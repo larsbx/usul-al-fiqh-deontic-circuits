@@ -95,3 +95,14 @@ def test_qayd_does_not_stop_before_a_qualifier(p):
         pytest.skip(f"{p['_reg']['witness']} not cached")
     text = src.read_text(encoding="utf-8")
     assert not any(cut_before_qualifier(text, a["excerpt_ar"]) for a in p["author"])
+
+
+@pytest.mark.parametrize("p", PAIRS, ids=lambda p: p["id"])
+def test_qayd_is_unique_in_its_witness(p):
+    """A qayd quote is located by its qāʿida, not by page: it must occur once (PR-17)."""
+    src = CACHE / f"{p['_reg']['witness']}.txt"
+    if not src.exists():
+        pytest.skip(f"{p['_reg']['witness']} not cached")
+    key = lambda s: letters(normalize(s))
+    text = key(src.read_text(encoding="utf-8"))
+    assert all(text.count(key(a["excerpt_ar"])) == 1 for a in p["author"])

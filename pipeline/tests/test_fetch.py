@@ -110,3 +110,18 @@ def test_shamela_fetch_resumes_after_a_crash(monkeypatch, tmp_path):
     assert not list(tmp_path.glob("*.part"))
     clean = tmp_path / "clean"
     assert fetch_mod.fetch(w, clean)["sha256"] == resumed["sha256"]
+
+
+def test_concurrent_pins_are_not_lost(tmp_path, monkeypatch):
+    """Two fetches pinning at once both land in lock.json (problem register PR-20)."""
+    import json
+    import threading
+    from usul_corpus import __main__ as cli
+    monkeypatch.setattr(cli, "CORPUS", tmp_path)
+    (tmp_path / "lock.json").write_text('{"witnesses": {}}')
+    ts = [threading.Thread(target=cli._pin, args=(f"w{i}", {"sha256": str(i)})) for i in range(8)]
+    for t in ts:
+        t.start()
+    for t in ts:
+        t.join()
+    assert set(json.loads((tmp_path / "lock.json").read_text())["witnesses"]) == {f"w{i}" for i in range(8)}

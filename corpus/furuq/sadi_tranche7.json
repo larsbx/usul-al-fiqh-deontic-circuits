@@ -183,7 +183,9 @@
     "excerpt_ar": "وذلك بحسب الآثار الواردة في هذا الباب"
    },
    "grounds": [],
-   "note": "«وبحسب الحكم المترتبة على ذلك التحديد»"
+   "note": "«وبحسب الحكم المترتبة على ذلك التحديد»",
+   "nusus": [],
+   "nass_cited": "unspecified"
   },
   {
    "id": "F126",
@@ -234,7 +236,9 @@
     "excerpt_ar": "والقول الآخر أقرب إلى الصواب وهو الذي تدل عليه الأدلة الصحيحة أنها تصح فيها"
    },
    "grounds": [],
-   "note": "cf. F05"
+   "note": "cf. F05",
+   "nusus": [],
+   "nass_cited": "unspecified"
   },
   {
    "id": "F129",
@@ -372,7 +376,9 @@
    },
    "grounds": [],
    "note": "",
-   "overturns": "F135"
+   "overturns": "F135",
+   "nusus": [],
+   "nass_cited": "unspecified"
   }
  ]
 }

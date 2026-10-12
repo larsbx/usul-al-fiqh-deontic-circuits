@@ -39,23 +39,42 @@ def test_schema():
 def test_aya_is_verbatim_at_its_place(a):
     line = nusus.aya(_text(a["witness"]), a["sura"], a["aya"])
     assert line and nusus.key(a["excerpt_ar"]) in nusus.key(line)
-    assert a["id"] == f"Q{a['sura']:03d}:{a['aya']:03d}"
+    assert a["id"].startswith(f"Q{a['sura']:03d}:{a['aya']:03d}")
 
 
 @pytest.mark.parametrize("s", [dict(s, _h=h) for h in F["ahadith"] for s in h["sources"]],
                          ids=lambda s: f"{s['_h']['id']}@{s['work']}")
 def test_hadith_is_verbatim_under_its_number(s):
     text = _text(s["witness"])
-    pos = nusus.find(text, s["_h"]["matn_ar"])
-    assert pos is not None, "matn not in the collection"
-    assert nusus.number_at(text, pos) == s["number"]
+    matn = s.get("matn_ar", s["_h"]["matn_ar"])
+    sp = nusus.span(text, matn)
+    assert sp is not None, "matn not in the collection"
+    assert not nusus.in_heading(text, sp[0]), "matched a bāb heading, not the ḥadīth"
+    assert nusus.number_at(text, sp[0]) == s["number"]
 
 
 @pytest.mark.parametrize("h", F["ahadith"], ids=lambda h: h["id"])
 def test_albani_verdict_is_his(h):
-    verdict, entry = nusus.irwa_entry(_text(h["albani"]["witness"]), h["albani"]["number"])
+    """The verdict is the one al-Albānī gives in the cited entry, and the entry is this ḥadīth (a run
+    of 15 letters of the matn appears in it)."""
+    verdict, entry = nusus.albani_verdict(h["albani"]["work"], _text(h["albani"]["witness"]), h["albani"]["number"])
     assert verdict == h["albani"]["verdict"]
-    assert nusus.key(h["matn_ar"])[:20] in nusus.key(entry), "not the ḥadīth of that entry"
+    m, e = nusus.key(h["matn_ar"]), nusus.key(entry)
+    assert any(m[i:i + 15] in e for i in range(max(1, len(m) - 14))), "not the ḥadīth of that entry"
+
+
+def test_a_hadith_outside_the_collections_is_one_the_gate_rejects():
+    assert all(h["albani"]["verdict"] not in HUJJA for h in F["ahadith"] if not h["sources"])
+
+
+def test_irwa_coverage_is_pinned():
+    """The pinned al-Irwāʾ lacks the entries on pages blank on Shamela (PR-16); the gap is pinned
+    so that it can only shrink by a deliberate re-pin."""
+    pinned = json.loads((CORPUS / "hadith/irwa_coverage.json").read_text(encoding="utf-8"))
+    cov = nusus.irwa_coverage(_text(pinned["witness"]))
+    assert {k: cov[k] for k in ("entries_found", "last", "missing")} == {k: pinned[k] for k in ("entries_found", "last", "missing")}
+    cited = [h["albani"]["number"] for h in F["ahadith"] if h["albani"]["work"] == "albani.irwa"]
+    assert not set(cited) & set(pinned["missing"])
 
 
 @pytest.mark.parametrize("a", F["athar"], ids=lambda a: a["id"])
@@ -125,4 +144,5 @@ def test_no_english_gloss_stands_alone():
 
 def test_table_lean_is_generated():
     from usul_corpus.__main__ import NUSUS_LEAN
-    assert NUSUS_LEAN.read_text(encoding="utf-8") == nusus.table_lean(F, GLOSS)
+    from usul_corpus import furuq
+    assert NUSUS_LEAN.read_text(encoding="utf-8") == nusus.table_lean(F, GLOSS, [i for t in furuq.tranches(CORPUS) for i in t["items"]])

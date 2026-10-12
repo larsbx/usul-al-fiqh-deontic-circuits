@@ -30,7 +30,9 @@
     "excerpt_ar": "فظاهر النصوص وعمومها يقتضي مساواة العبد للحر في الأحكام البدنية"
    },
    "grounds": [],
-   "note": "the majority do not oblige him and do not count his ḥajj; «وبهذا قال طائفة من العلماء»"
+   "note": "the majority do not oblige him and do not count his ḥajj; «وبهذا قال طائفة من العلماء»",
+   "nusus": [],
+   "nass_cited": "unspecified"
   },
   {
    "id": "F43",
@@ -132,7 +134,11 @@
     "excerpt_ar": "فإن هذا القول هو عين الوصية للوارث الذي نص الشارع على بطلانه"
    },
    "grounds": [],
-   "note": "graded «من الفروق الضعيفة جداً بل الخارقة للإجماع»"
+   "note": "graded «من الفروق الضعيفة جداً بل الخارقة للإجماع»",
+   "nusus": [
+    "H-wasiyya-warith"
+   ],
+   "nass_cited": "identified"
   },
   {
    "id": "F49",
@@ -149,7 +155,11 @@
     "excerpt_ar": "ومن الفروق الصحيحة الثابتة بالنص والإجماع"
    },
    "grounds": [],
-   "note": "«وهذا موافق غاية الموافقة للحكمة والمصلحة»; likewise in limbs, unless equivalence is impossible"
+   "note": "«وهذا موافق غاية الموافقة للحكمة والمصلحة»; likewise in limbs, unless equivalence is impossible",
+   "nusus": [
+    "Q002:179"
+   ],
+   "nass_cited": "quoted"
   },
   {
    "id": "F50",

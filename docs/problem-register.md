@@ -15,7 +15,7 @@ Severity:
 | PR-01 | A | English «semen» conflates al-manī, al-madhy and al-wadī; «impurity» conflates al-najāsa and al-ḥadath | 30 fields | closed `021d1d8`: term guards, `Usul.Tahara` |
 | PR-02 | A | Other English glosses conflate terms whose rulings differ (families below) | 278 fields across 10 families | open |
 | PR-03 | A | One Arabic word, several technical senses, one key: ṣaḥīḥ (valid act / ḥadīth grade / sound farq), ḍaʿīf, ʿilla (ratio legis / ḥadīth defect), ḥukm (ruling / judge's verdict), sharṭ (condition / stipulation, F28); and the transliteration homograph ghusl / ghasl | 6 senses | open |
-| PR-04 | A | Furūq resting on a naṣṣ (basis `nass`) do not cite it from the foundation | 17 items (F11 … F165), plus the 2 ḍaʿīf ḥadīth of F20, F92 | open |
+| PR-04 | A | Furūq resting on a naṣṣ (basis `nass`) do not cite it from the foundation | 17 items (F11 … F165), plus the 2 ḍaʿīf ḥadīth of F20, F92 | closed: 12 items cite 5 āyāt, 8 ḥadīth and 1 athar; 6 recorded as «unspecified» by his own wording; al-Saʿdī's «لم يصح» agrees with al-Albānī on both rejected ḥadīth |
 | PR-05 | A | The ḥadīth dalīls of the uṣūl records (`irwa_join.json`) are graded but not pinned to a primary collection | 13 links | open |
 | PR-06 | B | CI never runs the verbatim checks: every one skips when the witness is not cached, so textual fidelity is enforced only locally | all verbatim tests | open |
 | PR-07 | B | Excerpts that stop just before a qualifier («إلا», «لكن», «بخلاف» …), so the quote reads as unqualified | F126, F127; found by its guard: glossary `amana`, dossier `abstention_possible_condition`, and Ibn Taymiyya's «اعتقاد الرجحان» (glossary, dossier, IQ-21) | closed: quotes extended; guard over furūq, tanāquḍ, glossary and dossier |
@@ -26,6 +26,11 @@ Severity:
 | PR-12 | C | Tanzil's terms ask derived files to name the source and link tanzil.net | docs | open |
 | PR-13 | B | Glossary definitions are drafted English paraphrases; a term whose refs carry no Arabic excerpt has nothing verbatim behind it | to be measured | open |
 | PR-15 | B | Witnesses cited by the dossier and glossary are not cached locally, so their excerpt checks skip even on a developer machine (found while closing PR-07) | 172 skipped checks over 11 witnesses | in progress: 7 OpenITI and 1 Shamela fetched, all matching their pins; the OCR witnesses (archive-*-tess) need the OCR run |
+| PR-16 | A | The pinned al-Irwāʾ (Shamela 22592) is incomplete: its pages are blank on Shamela itself through much of vol. 6 onward (found while closing PR-04: «لا وصية لوارث» had no entry) | 707 of 2683 entries | mitigated: the gap is pinned (`corpus/hadith/irwa_coverage.json`); verdicts on missing entries come from al-Albānī's Ṣaḥīḥ wa-Ḍaʿīf Sunan al-Tirmidhī (OpenITI, pinned), which cites the Irwāʾ number; a complete witness of al-Irwāʾ is still wanted |
+| PR-17 | B | Quotes that occur more than once in their witness do not fix their own place (F63's «… الثابتة بالنص» is the head of F49's «… بالنص والإجماع») | 10 excerpts | closed for unpaged quotes (furūq, tanāquḍ): unique by test; paged refs are fixed by their page |
+| PR-18 | A | Matching a matn by its words can land on a false friend: a bāb heading («باب ما جاء لا وصية لوارث»), or another ḥadīth with the same words (al-Bukhārī 50, «رعاة الإبل» in Jibrīl's ḥadīth) | found while closing PR-04 | closed: a matn must fall under its number and never on a heading line (tested); each source may carry its own riwāya wording |
+| PR-19 | B | Slicing a Qurʾānic excerpt by letters dropped the last letter's vowel (لِلَّه for لِلَّهِ): the muṣḥaf's text altered | found while closing PR-04 | closed: `span` keeps the final marks |
+| PR-20 | A | Two fetches running at once each rewrote `lock.json` from their own copy, so one pin was silently lost (al-Albānī's Ṣaḥīḥ wa-Ḍaʿīf al-Tirmidhī; found while closing PR-04) | 1 pin | closed: `_pin` merges under a file lock and writes atomically; concurrent pins and "cached but unpinned" are tested |
 | PR-14 | A | The bulk «impurity → najāsa» replacement could mislabel ḥadath | 27 fields | closed `021d1d8`: each reviewed; 18.f015 and 159.f007 corrected from source |
 
 ## PR-02 families (English gloss → terms it conflates)
@@ -52,3 +57,15 @@ Each item, when worked, gets a paragraph here: what was found, what changed, and
 **PR-08.** Every ḥadīth source in the foundation names whose numbering it follows. The tests already check the number under that edition's own markers.
 
 **PR-10.** `test_witness_integrity.py` hashes every cached witness against `lock.json` before any excerpt test can lean on it. All 49 cached witnesses match.
+
+**PR-04.** Of the 19 items resting on a naṣṣ, al-Saʿdī cites 12 so that the text can be fixed, and the foundation now holds each one, verified in its pinned witness:
+* quoted: al-Māʾida 95 (F15), al-Baqara 179 (F49), al-Baqara 224 with «من حلف على يمين فرأى غيرها خيرا منها» (F63, Muslim 1650), «ليس لعرق ظالم حق» (F148, Abū Dāwūd 3073), and «الشفعة كحل العقال» with Shurayḥ's «إنما الشفعة لمن واثبها» (F92);
+* named: al-Baqara 196 (F11), the herders' concession (F16, Abū Dāwūd 1975);
+* identified from his allusion: al-Baqara 196 «وأتموا» (F12), al-Māʾida 95 (F17), «لا وصية لوارث» (F48, Abū Dāwūd 2870, al-Tirmidhī 2120), the child's ḥajj (F73, Muslim 1336), the iḥdād ḥadīth (F163, al-Bukhārī 1280), the siwāk ḥadīth (F20, al-Irwāʾ 67).
+Six say only «ظاهر النصوص», «الأدلة», «الآثار» or «العموم» (F42, F125, F128, F136, F140, F165); they are recorded as `unspecified`, and nothing is supplied for him. Where he says no sound ḥadīth exists, al-Albānī agrees: al-Irwāʾ 67 «ضعيف», 1542 «ضعيف جدا». Each naṣṣ item's ḥadīth passes the gate and each rejected one fails it, in pytest and in the generated `NususTable.lean`. F16's water-carriers of Zamzam rest on a separate report not yet entered; the note says so.
+
+**PR-16.** Shamela's al-Irwāʾ has blank pages: the page HTML carries only its anchor. The pinned text holds 1976 of the 2683 entries it reaches; the missing numbers are pinned, and no verdict is taken from a missing entry. Where the verdict is needed, al-Albānī's Ṣaḥīḥ wa-Ḍaʿīf Sunan al-Tirmidhī supplies it under al-Tirmidhī's number and names the Irwāʾ entry («صحيح، الإرواء (2114)»). The parser also learnt al-Irwāʾ's three header forms («# (٦) - حديث», «# [(٢٠) - (», «# (١٤٣) (»), read in sequence so that a cross-reference is never taken for a header.
+
+**PR-17.** F63 and F94 now quote enough to be unique; furūq and tanāquḍ quotes must occur exactly once in their witness.
+
+**PR-18, PR-19.** Found while entering the PR-04 texts; see the table.

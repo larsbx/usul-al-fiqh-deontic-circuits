@@ -34,7 +34,7 @@
     "properties": {
      "id": {
       "type": "string",
-      "pattern": "^Q[0-9]{3}:[0-9]{3}$"
+      "pattern": "^Q[0-9]{3}:[0-9]{3}[a-z]?$"
      },
      "sura": {
       "type": "integer",
@@ -88,7 +88,7 @@
      },
      "sources": {
       "type": "array",
-      "minItems": 1,
+      "minItems": 0,
       "items": {
        "type": "object",
        "required": [
@@ -113,9 +113,15 @@
          "type": "string",
          "minLength": 1,
          "description": "whose numbering `number` follows (PR-08)"
+        },
+        "matn_ar": {
+         "type": "string",
+         "minLength": 1,
+         "description": "this collection's wording, where its riwāya differs"
         }
        }
-      }
+      },
+      "description": "the pinned collections that carry it; empty only for a ḥadīth the gate rejects and none of them carries (tested)"
      },
      "albani": {
       "type": "object",
@@ -129,7 +135,10 @@
       "additionalProperties": false,
       "properties": {
        "work": {
-        "const": "albani.irwa"
+        "enum": [
+         "albani.irwa",
+         "albani.sahih_daif_tirmidhi"
+        ]
        },
        "witness": {
         "type": "string"

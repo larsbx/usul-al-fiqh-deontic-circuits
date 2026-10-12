@@ -10,6 +10,22 @@ import Usul
 #guard Usul.Seam.admitted ⟨.nass, .sahih⟩ == true
 -- H-aisha-fark: abu_dawud.sunan 372; Irwāʾ 180
 #guard Usul.Seam.admitted ⟨.nass, .sahih⟩ == true
+-- H-ruat-ibil: abu_dawud.sunan 1975; Irwāʾ 1080
+#guard Usul.Seam.admitted ⟨.nass, .sahih⟩ == true
+-- H-hajj-sabi: muslim.sahih 1336; Irwāʾ 985
+#guard Usul.Seam.admitted ⟨.nass, .sahih⟩ == true
+-- H-irq-zalim: abu_dawud.sunan 3073; Irwāʾ 1520
+#guard Usul.Seam.admitted ⟨.nass, .sahih⟩ == true
+-- H-wasiyya-warith: abu_dawud.sunan 2870, tirmidhi.jami 2120; Irwāʾ 2120
+#guard Usul.Seam.admitted ⟨.nass, .sahih⟩ == true
+-- H-ihdad: bukhari.sahih 1280; Irwāʾ 1195
+#guard Usul.Seam.admitted ⟨.nass, .sahih⟩ == true
+-- H-halaf-khayr: muslim.sahih 1650; Irwāʾ 1530
+#guard Usul.Seam.admitted ⟨.nass, .sahih⟩ == true
+-- H-shufa-iqal: named not sound by al-Saʿdī; albani.irwa 1542
+#guard Usul.Seam.admitted ⟨.nass, .daifJiddan⟩ == false
+-- H-siwak-ashi: named not sound by al-Saʿdī; albani.irwa 67
+#guard Usul.Seam.admitted ⟨.nass, .daif⟩ == false
 -- maniyy (المني): najis
 #guard Usul.Tahara.Kharij.maniyy.najis == false
 -- maniyy (المني): obliges

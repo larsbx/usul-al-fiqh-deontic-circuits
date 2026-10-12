@@ -17,6 +17,46 @@
    "witness": "tanzil-quran-simple",
    "excerpt_ar": "وَلَا جُنُبًا إِلَّا عَابِرِي سَبِيلٍ حَتَّىٰ تَغْتَسِلُوا",
    "en": "«nor junub, except passing through, until you have washed (ghusl)»"
+  },
+  {
+   "id": "Q002:196a",
+   "sura": 2,
+   "aya": 196,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَأَتِمُّوا الْحَجَّ وَالْعُمْرَةَ لِلَّهِ",
+   "en": "«complete the ḥajj and the ʿumra for God»: once in iḥrām, completion is due (F12)"
+  },
+  {
+   "id": "Q002:196b",
+   "sura": 2,
+   "aya": 196,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَمَن لَّمْ يَجِدْ فَصِيَامُ ثَلَاثَةِ أَيَّامٍ فِي الْحَجِّ",
+   "en": "«whoever finds no sacrifice: a fast of three days in the ḥajj» (F11: «لأن الله عين الثلاثة أن تكون في الحج»)"
+  },
+  {
+   "id": "Q005:095",
+   "sura": 5,
+   "aya": 95,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَمَن قَتَلَهُ مِنكُم مُّتَعَمِّدًا فَجَزَاءٌ مِّثْلُ مَا قَتَلَ مِنَ النَّعَمِ",
+   "en": "«whoever of you kills it deliberately, the jazāʾ is the like of what he killed, from the livestock» (F15 quotes it; F17: «لظاهر النص»)"
+  },
+  {
+   "id": "Q002:179",
+   "sura": 2,
+   "aya": 179,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَلَكُمْ فِي الْقِصَاصِ حَيَاةٌ",
+   "en": "«in qiṣāṣ there is life for you» (F49 quotes it)"
+  },
+  {
+   "id": "Q002:224",
+   "sura": 2,
+   "aya": 224,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَلَا تَجْعَلُوا اللَّهَ عُرْضَةً لِّأَيْمَانِكُمْ",
+   "en": "«do not make God, by your oaths (aymān), a barrier» (F63 quotes it)"
   }
  ],
  "ahadith": [
@@ -103,6 +143,174 @@
     "verdict": "sahih",
     "numbering": "al-Irwāʾ's own entry numbers"
    }
+  },
+  {
+   "id": "H-ruat-ibil",
+   "narrator": "ʿĀṣim b. ʿAdī",
+   "matn_ar": "رخص لرعاء الإبل في البيتوتة يرمون يوم النحر",
+   "en": "the herders' concession to stone on later days (F16)",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 1975,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 1080,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-hajj-sabi",
+   "narrator": "Ibn ʿAbbās",
+   "matn_ar": "فرفعت إليه امرأة صبيا، فقالت: ألهذا حج؟ قال: «نعم، ولك أجر»",
+   "en": "the ḥajj of a child below discernment (F73: «كما دل عليه النص»)",
+   "sources": [
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "number": 1336,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 985,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-irq-zalim",
+   "narrator": "Saʿīd b. Zayd",
+   "matn_ar": "من أحيا أرضا ميتة فهي له، وليس لعرق ظالم حق",
+   "en": "«a wrongdoer's root has no right» (F148 quotes it)",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 3073,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 1520,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-wasiyya-warith",
+   "narrator": "Abū Umāma",
+   "matn_ar": "إن الله قد أعطى كل ذي حق حقه فلا وصية لوارث",
+   "en": "no bequest to an heir (F48: «الوصية للوارث الذي نص الشارع على بطلانه»)",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 2870,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    },
+    {
+     "work": "tirmidhi.jami",
+     "witness": "openiti-tirmidhi-shamela7895",
+     "number": 2120,
+     "numbering": "Aḥmad Shākir et al. (Shamela 7895)",
+     "matn_ar": "إن الله تبارك وتعالى قد أعطى لكل ذي حق حقه فلا وصية لوارث"
+    }
+   ],
+   "albani": {
+    "work": "albani.sahih_daif_tirmidhi",
+    "witness": "openiti-albani-sdtirmidhi-shamela782",
+    "number": 2120,
+    "verdict": "sahih",
+    "numbering": "al-Tirmidhī's numbers; al-Irwāʾ's own entry is on a page blank on Shamela (PR-16)"
+   }
+  },
+  {
+   "id": "H-ihdad",
+   "narrator": "Umm Ḥabība, Zaynab bt. Jaḥsh",
+   "matn_ar": "لا يحل لامرأة تؤمن بالله واليوم الآخر، أن تحد على ميت فوق ثلاث، إلا على زوج، فإنها تحد عليه أربعة أشهر وعشرا",
+   "en": "mourning: over a husband four months and ten, over anyone else no more than three (F163: «كما دلت على ذلك نصوص السنّة»)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 1280,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    }
+   ],
+   "albani": {
+    "work": "albani.sahih_daif_tirmidhi",
+    "witness": "openiti-albani-sdtirmidhi-shamela782",
+    "number": 1195,
+    "verdict": "sahih",
+    "numbering": "al-Tirmidhī's numbers; it cites «الإرواء (2114)», blank on Shamela (PR-16)"
+   }
+  },
+  {
+   "id": "H-halaf-khayr",
+   "narrator": "Abū Hurayra",
+   "matn_ar": "من حلف على يمين فرأى غيرها خيرا منها فليكفر عن يمينه وليفعل",
+   "en": "breaking an oath for what is better, with expiation (F63 quotes its sense)",
+   "sources": [
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "number": 1650,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)"
+    }
+   ],
+   "albani": {
+    "work": "albani.sahih_daif_tirmidhi",
+    "witness": "openiti-albani-sdtirmidhi-shamela782",
+    "number": 1530,
+    "verdict": "sahih",
+    "numbering": "al-Tirmidhī's numbers; it cites «الإرواء (2084)»"
+   }
+  },
+  {
+   "id": "H-shufa-iqal",
+   "narrator": "Ibn ʿUmar",
+   "matn_ar": "الشفعة كحل العقال",
+   "en": "pre-emption lapses like an untied rope (F92: one of «الأحاديث التي استدلوا بها كلها ضعيفة»)",
+   "sources": [
+    {
+     "work": "ibn_maja.sunan",
+     "witness": "openiti-ibnmaja-shamela1198",
+     "number": 2500,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1198)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 1542,
+    "verdict": "daifJiddan",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-siwak-ashi",
+   "narrator": "ʿAlī (marfūʿ, as al-Bayhaqī gives it)",
+   "matn_ar": "إذا صمتم فاستاكوا بالغداة ولا تستاكوا بالعشى",
+   "en": "the ḥadīth against the fasting man's siwāk after midday (F20: «ولم يصح حديث يدل على الفرق»); in none of the pinned collections",
+   "sources": [],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 67,
+    "verdict": "daif",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
   }
  ],
  "athar": [
@@ -115,6 +323,16 @@
    "witness": "shamela-11122",
    "status": "mawquf",
    "albani_ar": "هذا موقوف والاستدلال به وحده - مع أنه مختلف في صلاحيته للاحتجاج به"
+  },
+  {
+   "id": "A-shurayh-shufa",
+   "by": "Shurayḥ (al-qāḍī)",
+   "excerpt_ar": "وأخرج عبد الرزاق من قول شريح: إنما الشفعة لمن واثبها",
+   "en": "«pre-emption belongs to whoever jumps at it»: Shurayḥ's saying, not the Prophet's ﷺ (F92 cites it among «الأحاديث التي استدلوا بها»)",
+   "work": "albani.irwa",
+   "witness": "shamela-22592",
+   "status": "maqtu",
+   "albani_ar": "وأخرج عبد الرزاق من قول شريح"
   }
  ]
 }

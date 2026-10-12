@@ -61,14 +61,27 @@ def _works(only: str | None) -> list[dict]:
     return [w for w in works if w["status"] in FETCHABLE and (only is None or w["id"] == only)]
 
 
+def _pin(wid: str, entry: dict) -> None:
+    """Merge one witness's pin into lock.json, re-reading it under an exclusive lock so that a
+    concurrent fetch cannot overwrite another's pin (problem register PR-20)."""
+    import fcntl
+    path = CORPUS / "lock.json"
+    with open(path.with_suffix(".json.lk"), "w") as guard:
+        fcntl.flock(guard, fcntl.LOCK_EX)
+        lock = _load(path).get("witnesses", {})
+        lock[wid] = entry
+        tmp = path.with_suffix(".json.tmp")
+        tmp.write_text(json.dumps({"witnesses": dict(sorted(lock.items()))}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        tmp.replace(path)
+
+
 def cmd_fetch(args: argparse.Namespace) -> int:
-    lock = _load(CORPUS / "lock.json").get("witnesses", {})
     for work in _works(args.work):
         for w in work["witnesses"]:
             if w.get("quality") == "pdf_only" or (w.get("fetch") == "on_demand" and not args.work):
                 continue
-            lock[w["id"]] = entry = fetch(w, CACHE, args.max_pages, args.refresh)
-            _dump(CORPUS / "lock.json", {"witnesses": dict(sorted(lock.items()))})
+            entry = fetch(w, CACHE, args.max_pages, args.refresh)
+            _pin(w["id"], entry)
             print(f"{w['id']:40} {entry['bytes']:>10} B  {entry['sha256'][:12]}")
     return 0
 
@@ -356,7 +369,7 @@ def cmd_signature(_: argparse.Namespace) -> int:
     SEAM_LEAN.write_text(hadith.seam_lean(_load(CORPUS / "hadith" / "irwa_join.json")["links"]), encoding="utf-8")
     TANAQUD_LEAN.write_text(tanaqud.table_lean(tanaqud.registers(CORPUS)), encoding="utf-8")
     FURUQ_LEAN.write_text(furuq.table_lean(CORPUS), encoding="utf-8")
-    NUSUS_LEAN.write_text(nusus.table_lean(nusus.load(CORPUS), _load(GLOSSARY)), encoding="utf-8")
+    NUSUS_LEAN.write_text(nusus.table_lean(nusus.load(CORPUS), _load(GLOSSARY), [i for t in furuq.tranches(CORPUS) for i in t["items"]]), encoding="utf-8")
     return 0
 
 

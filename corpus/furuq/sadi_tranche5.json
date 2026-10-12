@@ -312,7 +312,12 @@
    "grounds": [
     "Usul.Seam.daif_not_admitted"
    ],
-   "note": "«والصواب: أن الشفعة كغيرها»; «الشفعة لمن واثبها», «الشفعة كحل العقال» fail the ḥadīth gate (D4)"
+   "note": "«والصواب: أن الشفعة كغيرها»; «الشفعة لمن واثبها», «الشفعة كحل العقال» fail the ḥadīth gate (D4)",
+   "nusus": [
+    "H-shufa-iqal",
+    "A-shurayh-shufa"
+   ],
+   "nass_cited": "quoted"
   },
   {
    "id": "F93",
@@ -343,7 +348,7 @@
    "basis": "qaida",
    "author": {
     "ref": "src:islamhouse-qj-doc#furuq",
-    "excerpt_ar": "الولد يتبع أباه في النسب"
+    "excerpt_ar": "ومن الفروق الصحيحة: قولهم: الولد يتبع أباه في النسب، وأمه في الحرية أو الرق، وفي الدين خيرهما"
    },
    "grounds": [
     "Usul.Kulliyyat.q31_each_cause_its_effect"
