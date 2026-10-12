@@ -147,7 +147,7 @@
   {
    "number": 10,
    "statement_ar": "البينة على المدعي، واليمين على من أنكر",
-   "gloss_en": "Proof is on the claimant, the oath on the one who denies.",
+   "gloss_en": "Proof is on the claimant, the oath (the yamīn of a claim) on the one who denies.",
    "kind": "procedure",
    "domain": "muamalat",
    "lean": [
@@ -729,7 +729,7 @@
   {
    "number": 47,
    "statement_ar": "الواجب بالنذر يلحق بالواجب بالشرع",
-   "gloss_en": "What is obligatory by vow is assimilated to what is obligatory by the law.",
+   "gloss_en": "What is obligatory by vow (nadhr) is assimilated to what is obligatory by the law.",
    "kind": "rule",
    "domain": "ibadat",
    "lean": [

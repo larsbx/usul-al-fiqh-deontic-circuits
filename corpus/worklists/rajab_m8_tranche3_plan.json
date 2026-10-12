@@ -959,6 +959,12 @@
       "reason": "English-only fields name the Arabic term (problem register PR-02); class, facts, rulings and expected unchanged",
       "from_note": "Defective nikah after consummation: the selected well-known Ahmad transmission, identified as the madhhab by Abu Bakr and Ibn Abi Musa and chosen by al-Qadi, fixes the named mahr. Another transmission, chosen by al-Khiraqi and the author of al-Mughni, fixes equivalent mahr. The full source explains the selected branch as contract compensation; no blanket rule about validity, all nikah, or all relations is inferred.",
       "case_sha256": "94eb6b524d2f83f788d3cd1ad87a24459f0ad520329600987220cc2b06e6def5"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004",
+      "from_note": "A vowed Ramadan retreat was corrupted. The selected position is the apparent text of Ahmad and Ibn Abi Musa: make it up in corresponding days. The full paragraph extends the reasoning to the last ten days of the following Ramadan. Two wujuh are reported; apparent Ahmad text is not silently promoted to an independently accepted madhhab classification.",
+      "case_sha256": "6b431a2b9472e8601a6e41b23728f70835dceea35c1965bd4b19938e2d331920",
+      "reason": "English note names the Arabic term (PR-02 «oath/vow»: yamīn, nadhr, taʿlīq); class, facts and expected unchanged"
     }
   ]
 }

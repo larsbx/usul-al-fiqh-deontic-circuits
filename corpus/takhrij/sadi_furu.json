@@ -840,7 +840,7 @@
     "customary_continuity": true
    },
    "expected": true,
-   "note": "Oath to eat only one meal today: eating continuously or with customary breaks is one meal and does not break the oath; resuming after a long gap does."
+   "note": "Oath (ḥalaf: «لو حلف لا أكلت إلا أكلة واحدة») to eat only one meal today: eating continuously or with customary breaks is one meal and does not break the oath; resuming after a long gap does."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f008",
@@ -1089,7 +1089,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Oath to report every wrong to al-wali: two wujuh, whether only the present governor is meant ('ahd) or any later one (genus); none marked."
+   "note": "Oath (ḥalaf: «لو حلف الحالف لا أرى منكرا إلا رفعته إلى الوالى») to report every wrong to al-wali: two wujuh, whether only the present governor is meant ('ahd) or any later one (genus); none marked."
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f007",
@@ -1153,7 +1153,7 @@
     "ahd": false
    },
    "expected": true,
-   "note": "A vow to slaughter 'my child' (a ram due) with several children requires a ram for each, per Ibn Qudama citing Ahmad and built on the rule."
+   "note": "A vow (nadhr: «إذا نذر ذبح ولده») to slaughter 'my child' (a ram due) with several children requires a ram for each, per Ibn Qudama citing Ahmad and built on the rule."
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f002",
@@ -1445,7 +1445,7 @@
     "confusion_category": true
    },
    "expected": "lot",
-   "note": "Deposit claimed by two, the depositary not knowing whose: lot, and the winner swears and takes (naṣṣ of Aḥmad); a specific entitlement lost in confusion, Ibn Rajab's second category, goes to lots although the deposit is divisible.",
+   "note": "Deposit claimed by two, the depositary not knowing whose: lot, and the winner swears and takes («حلف وأخذها»: the yamīn of a claim; naṣṣ of Aḥmad); a specific entitlement lost in confusion, Ibn Rajab's second category, goes to lots although the deposit is divisible.",
    "revisit": {
     "from_class": "encoding_error",
     "closed_by": [
@@ -1633,7 +1633,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Two mutual heirs died with order forgotten or disputed: the madhhab treats it as unknown (mutual inheritance), other wujūh are lot, oaths, or halving the disputed estate; estate is divisible so kernel gives divide = Abū Bakr's wajh, not the madhhab."
+   "note": "Two mutual heirs died with order forgotten or disputed: the madhhab treats it as unknown (mutual inheritance), other wujūh are lot, the claimants' oaths (yamīn of a claim), or halving the disputed estate; estate is divisible so kernel gives divide = Abū Bakr's wajh, not the madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f015",
@@ -1866,7 +1866,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Two men's opposite raven oaths: wujūh no-divorce vs lot (naṣṣ: both abstain); the decisive fact (two different husbands, each certain of his own marriage) is not an encoder field; kernel matches the lot wajh, not marked as madhhab."
+   "note": "Two men's opposite raven taʿlīqs («إن كان غرابا فامرأتي طالق ثلاثا»): wujūh no-divorce vs lot (naṣṣ: both abstain); the decisive fact (two different husbands, each certain of his own marriage) is not an encoder field; kernel matches the lot wajh, not marked as madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f026",
@@ -2108,7 +2108,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Oath sworn but its kind forgotten: manṣūṣ nothing is due; al-Qāḍī's qiyās lots among oath-types; kernel lot matches only that (Ibn Rajab's introduction excludes lots for unspecified obligations, which the reading lacks)."
+   "note": "Oath sworn but its kind forgotten («لو حلف بيمين ولم يدر أي الأيمان هي»): manṣūṣ nothing is due; al-Qāḍī's qiyās lots among oath-types; kernel lot matches only that (Ibn Rajab's introduction excludes lots for unspecified obligations, which the reading lacks)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f037",
@@ -2231,7 +2231,7 @@
     "confusion_category": true
    },
    "expected": "lot",
-   "note": "A thing held by a third party who acknowledges it for one of two claimants without knowing which: lot (the two wujūh concern only the oath); a confused specific entitlement.",
+   "note": "A thing held by a third party who acknowledges it for one of two claimants without knowing which: lot (the two wujūh concern only the yamīn of the claim: «وهل يحلف؟»); a confused specific entitlement.",
    "revisit": {
     "from_class": "encoding_error",
     "closed_by": [
@@ -2833,7 +2833,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Kaffarat of zihar and oaths follow the hady al-mut'a case: if the original becomes available before the fast, one riwaya (state at performance) requires moving to it, the other (state at obligation) fixes the substitute; the text marks neither here."
+   "note": "Kaffarat of zihar and oaths («كفارة الظهار واليمين») follow the hady al-mut'a case: if the original becomes available before the fast, one riwaya (state at performance) requires moving to it, the other (state at obligation) fixes the substitute; the text marks neither here."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f002",
@@ -3041,7 +3041,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "An oath of divorce that the Prophet did not say a hadith: one narrator establishes the hadith and divorce follows (Ibn ʿAqīl), while non-occurrence is derivable (yatakharraj) from the next case; neither is marked."
+   "note": "An oath of divorce (ḥalif bi-l-ṭalāq: «لو حلف بالطلاق») that the Prophet did not say a hadith: one narrator establishes the hadith and divorce follows (Ibn ʿAqīl), while non-occurrence is derivable (yatakharraj) from the next case; neither is marked."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f008",
@@ -3063,7 +3063,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "An oath of divorce that he usurped nothing, followed by usurpation proven by witness and oath or a man and two women: al-Qāḍī (Mujarrad), Ibn ʿAqīl and al-Mughnī deny divorce, al-Sāmarrī affirms it; no position is marked madhhab and the kernel matches only al-Sāmarrī."
+   "note": "An oath of divorce (ḥalif bi-l-ṭalāq) that he usurped nothing, followed by usurpation proven by a witness and the claimant's oath (shāhid wa-yamīn) or a man and two women: al-Qāḍī (Mujarrad), Ibn ʿAqīl and al-Mughnī deny divorce, al-Sāmarrī affirms it; no position is marked madhhab and the kernel matches only al-Sāmarrī."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f009",
@@ -3107,7 +3107,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "A mukātab who proves payment of his instalments by witness and oath or a man and two women is freed per al-Khiraqī (al-Mughnī reports no dispute), but al-Targhīb reports two wajhs; none is marked madhhab."
+   "note": "A mukātab who proves payment of his instalments by a witness and his oath (shāhid wa-yamīn) or a man and two women is freed per al-Khiraqī (al-Mughnī reports no dispute), but al-Targhīb reports two wajhs; none is marked madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f011",
@@ -3316,7 +3316,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "One who vowed ḥajj while still owing the obligatory ḥajj then performs ḥajjat al-islām: it suffices for both per Abū Ṭālib's riwāya, but al-mashhūra says it does not, and the text gives no sharṭ-based reason, so the kernel matches only the non-madhhab riwāya."
+   "note": "One who vowed (nadhr) ḥajj while still owing the obligatory ḥajj then performs ḥajjat al-islām: it suffices for both per Abū Ṭālib's riwāya, but al-mashhūra says it does not, and the text gives no sharṭ-based reason, so the kernel matches only the non-madhhab riwāya."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f003",
@@ -3338,7 +3338,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "A vowed month's fast that coincides with Ramaḍān: the better-known riwāya among the aṣḥāb says Ramaḍān does not satisfy both, the riwāya of al-Marrūdhī and al-Khiraqī says it does; the kernel matches the non-madhhab one."
+   "note": "A vowed (nadhr) month's fast that coincides with Ramaḍān: the better-known riwāya among the aṣḥāb says Ramaḍān does not satisfy both, the riwāya of al-Marrūdhī and al-Khiraqī says it does; the kernel matches the non-madhhab one."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f004",
@@ -3360,7 +3360,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "A vowed ṣadaqa («نذر الصدقة») of a niṣāb at the end of the ḥawl, intended as both vow and zakāt: al-Mughnī says it suffices, Ṣāḥib Sharḥ al-Hidāya says it does not; neither is marked."
+   "note": "A vowed ṣadaqa (nadhr: «نذر الصدقة») of a niṣāb at the end of the ḥawl, intended as both vow and zakāt: al-Mughnī says it suffices, Ṣāḥib Sharḥ al-Hidāya says it does not; neither is marked."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f005",
@@ -3558,7 +3558,7 @@
     "same_purpose": true
    },
    "expected": true,
-   "note": "Causes of expiation (al-asbāb: «اجتماع الأسباب التي يجب بها الكفارات») of one kind (oaths, iḥrām, fasting, ẓihār) merge and one kaffāra makes the rest lapse; the reported wajhs concern only unspecified intention, and for aḥdāth (al-ḥadath, «الأحداث الموجبة للطهارة», not najāsa) intending one lifts all on al-mashhūr."
+   "note": "Causes of expiation (al-asbāb: «اجتماع الأسباب التي يجب بها الكفارات») of one kind (aymān, iḥrām, fasting, ẓihār) merge and one kaffāra makes the rest lapse; the reported wajhs concern only unspecified intention, and for aḥdāth (al-ḥadath, «الأحداث الموجبة للطهارة», not najāsa) intending one lifts all on al-mashhūr."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001",

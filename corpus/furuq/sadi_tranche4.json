@@ -32,7 +32,7 @@
    "grounds": [
     "Usul.Muamalat.q47_vow_as_law"
    ],
-   "note": "the ground of F59; «من نذر أن يطيع الله فليطعه»"
+   "note": "nadhr al-lajāj wa-l-ghaḍab; the ground of F59; «من نذر أن يطيع الله فليطعه»"
   },
   {
    "id": "F62",
@@ -49,7 +49,7 @@
     "excerpt_ar": "لأن معناه معنى اليمين، بل هو يمين بغير لفظ الحلف"
    },
    "grounds": [],
-   "note": ""
+   "note": "«لأن معناه معنى اليمين، بل هو يمين بغير لفظ الحلف»: a yamīn without the word of ḥalif"
   },
   {
    "id": "F63",
@@ -66,7 +66,7 @@
     "excerpt_ar": "ومن الفروق الصحيحة الثابتة بالنص (1): الفرق بين لغو اليمين، وهي: اليمين التي لم يقصدها الحالف"
    },
    "grounds": [],
-   "note": "and the text's command, prohibition or option to break an oath by what is better",
+   "note": "laghw al-yamīn («اليمين التي لم يقصدها الحالف»); and the text's command, prohibition or option to break an oath by what is better",
    "nusus": [
     "Q002:224",
     "H-halaf-khayr"
@@ -91,7 +91,7 @@
     "Usul.Tanaqud.t1_jam",
     "Usul.Sadi.q27_asymmetry"
    ],
-   "note": "«فإن الحق لله، وأيضاً ليس في ذلك إتلاف لمال»: T-01's qayd and Q27"
+   "note": "ḥinth: «يحنث في طلاق وعتاق، دون اليمين بالله»; «فإن الحق لله، وأيضاً ليس في ذلك إتلاف لمال»: T-01's qayd and Q27"
   },
   {
    "id": "F65",
@@ -153,7 +153,7 @@
    "id": "F68",
    "cases_en": [
     "removing najāsa, paying maintenance or debts (valid without intention)",
-    "lifting ḥadath, zakāt, kaffārāt, vows (intention required)"
+    "lifting ḥadath, zakāt, kaffārāt, vows (nudhūr: intention required)"
    ],
    "madhhab": "apart",
    "grade": "sahih",

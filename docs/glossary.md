@@ -770,7 +770,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-iḥtiyāṭ / al-iʿtizāl (الاحتياط / الاعتزال)
 
-*precaution; abstention.* Abstaining from one's wife when a divorce may have taken effect. Ibn Rajab reports Aḥmad's text that two men whose oaths make one wife divorced abstain until certain, and Ibn Taymiyya's reading of Aḥmad: whenever divorce is suspended (taʿlīq) on an event that may have occurred, the husband abstains until he knows it has not. Al-Saʿdī instead says that on doubt whether the taʿlīq's event occurred one builds on its non-occurrence (the marriage stands), precaution being commendable. Not formalised in the Lean modules.
+*precaution; abstention.* Abstaining from one's wife when a divorce may have taken effect. Ibn Rajab reports Aḥmad's text that two men whose taʿlīqs make one wife divorced abstain until certain, and Ibn Taymiyya's reading of Aḥmad: whenever divorce is suspended (taʿlīq) on an event that may have occurred, the husband abstains until he knows it has not. Al-Saʿdī instead says that on doubt whether the taʿlīq's event occurred one builds on its non-occurrence (the marriage stands), precaution being commendable. Not formalised in the Lean modules.
 
 **Related:** [yaqin](#yaqin), [shakk](#shakk), [asl](#asl), [tawaqquf](#tawaqquf)
 
@@ -950,7 +950,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-kaffāra (الكفارة)
 
-*al-kaffāra: the expiation fixed for a breach (an oath, ẓihār, killing, intercourse in Ramaḍān).* The expiation the law fixes for a breach: «فَكَفَّارَتُهُ إِطْعَامُ عَشَرَةِ مَسَاكِينَ» (al-Māʾida 89); in an oath, «ففيه الكفارة إذا حنث» (F63). al-Saʿdī also calls the feeding of the old man who cannot fast «الكفارة» (F135), where the āya says «فدية» (al-Baqara 184); the register keeps his word and notes the āya's.
+*al-kaffāra: the expiation fixed for a breach (a yamīn, ẓihār, killing, intercourse in Ramaḍān).* The expiation the law fixes for a breach: «فَكَفَّارَتُهُ إِطْعَامُ عَشَرَةِ مَسَاكِينَ» (al-Māʾida 89); in an oath, «ففيه الكفارة إذا حنث» (F63). al-Saʿdī also calls the feeding of the old man who cannot fast «الكفارة» (F135), where the āya says «فدية» (al-Baqara 184); the register keeps his word and notes the āya's.
 
 **Related:** [fidya](#fidya), [jaza](#jaza), [daman](#daman), [diya](#diya)
 
@@ -1322,6 +1322,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q064`: Ibn al-Laḥḥām's definition and the carrying rule.
   > المطلق ما يتأول واحدا غير معين باعتبار حقيقة شاملة لجنسه نحو تحرير رقبة والمقيد ما يتأول معينا أو موصوفا بزائد على حقيقة جنسه نحو تحرير رقبة مؤمنة. إذا تقرر هذا فإن ورد مطلق ومقيد فإن اختلف حكمهما لم يحمل أحدهما على الآخر ms222 قاله أصحابنا القاضي وابن عقيل وأبو الخطاب والمقدسي وغيرهم ولم يحكوا فيه خلافا وصرح بنفي الخلاف الآمدي وتبعه ابن الحاجب قالا إلا في صورة مثل إن ظاهرت فأعتق رقبة كافرة أو لا 
 
+<a id="nadhr"></a>
+
+## al-nadhr (النذر)
+
+*al-nadhr: a vow, binding oneself to an act of obedience; to be fulfilled, not expiated (except the vow that runs as an oath).* al-Saʿdī F59: «النذر الذي يتعين الوفاء به الذي هو إلزام المكلف نفسه طاعة لله»; «فالطاعة فيه مقصودة، بخلاف اليمين». What it obliges joins what the law obliges (Q47). The vow of obstinacy or anger (nadhr al-lajāj wa-l-ghaḍab) runs as an oath and is expiated (F61).
+
+**Related:** [yamin](#yamin), [kaffara](#kaffara)
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F59`: F59.
+  > فالطاعة فيه مقصودة، بخلاف اليمين
+
 <a id="nahy"></a>
 
 ## al-nahy (النهي)
@@ -1605,7 +1618,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-ṣadaqa (الصدقة)
 
-*al-ṣadaqa: giving for God's sake, voluntary or vowed or owed as a fidya; not the zakāt.* The general word: the muḥrim's fidya is «فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ» (al-Baqara 196); the unclaimed luqaṭa that cannot be owned «يتصدق به عنه على الصحيح» (Ibn Rajab Q106); a vowed ṣadaqa becomes owed by the vow (Q18). The zakāt is the fixed due on a niṣāb (zakat).
+*al-ṣadaqa: giving for God's sake, voluntary or vowed or owed as a fidya; not the zakāt.* The general word: the muḥrim's fidya is «فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ» (al-Baqara 196); the unclaimed luqaṭa that cannot be owned «يتصدق به عنه على الصحيح» (Ibn Rajab Q106); a vowed ṣadaqa becomes owed by the vow (nadhr, Q18). The zakāt is the fixed due on a niṣāb (zakat).
 
 **Related:** [zakat](#zakat), [fidya](#fidya)
 
@@ -2115,6 +2128,32 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `src:openiti-kawkab-shamela12019/v04:p142`: Sabr operates on the descriptions of the aṣl.
   > وهو: حصر الأوصاف" في الأصل المقيس عليه "وإبطال ما لا يصلح
 
+<a id="yamin"></a>
+
+## al-yamīn (اليمين)
+
+*al-yamīn: a binding oath by God (or by divorce or manumission), broken by ḥinth and released by kaffāra; not the oath of a claim.* al-Saʿdī F63 separates «لغو اليمين، وهي: اليمين التي لم يقصدها الحالف» from the binding oath on a future matter, which carries kaffāra when broken (al-Māʾida 89; «من حلف على يمين فرأى غيرها خيرا منها فليكفر عن يمينه»). It is not a vow (al-nadhr): in the vow the obedience is the aim, «فالطاعة فيه مقصودة، بخلاف اليمين» (F59). An oath «by divorce» is often a taʿlīq; Ibn Taymiyya treats one made to urge or deter as a yamīn «لوجود روح اليمين فيه ومعناه» (F60).
+
+**Related:** [kaffara](#kaffara), [nadhr](#nadhr), [taliq](#taliq)
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F63`: F63.
+  > الفرق بين لغو اليمين، وهي: اليمين التي لم يقصدها الحالف
+
+<a id="yamin_daawa"></a>
+
+## al-yamīn (اليمين)
+
+*al-yamīn (of a claim): the oath that settles a dispute, «واليمين على من أنكر»; not a binding oath.* Al-Saʿdī Q10: «البينة على المدعي، واليمين على من أنكر»; with one witness it completes the proof («بشاهد ويمين», Ibn Rajab Q133). Ibn Rajab Q160 on a thing held for one of two: «وهل يحلف؟ على وجهين … والمنصوص عن أحمد أن عليه اليمين». It establishes a right; it is not broken and carries no kaffāra.
+
+**Related:** [yamin](#yamin)
+
+**Texts**
+
+- `src:openiti-rajab-shamela21730/v01:p363`: Ibn Rajab Q160.f044.
+  > وهل يحلف؟ على وجهين، ذكرهما أبو بكر. والمنصوص عن أحمد أن عليه اليمين
+
 <a id="yaqin"></a>
 
 ## al-yaqīn (اليقين)
@@ -2154,7 +2193,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-zakāt (الزكاة)
 
-*al-zakāt: the obligatory alms on wealth of a niṣāb after the ḥawl; not any charity (al-ṣadaqa).* The fixed due on wealth reaching the niṣāb at the end of the ḥawl. Ibn Rajab Q18 sets it against a vowed ṣadaqa of the same niṣāb: «لو نذر الصدقة بنصاب من المال وقت حلول الحول، فهل تجب فيه الزكاة؟ على وجهين», and whether one payment discharges both is a second pair of wujūh.
+*al-zakāt: the obligatory alms on wealth of a niṣāb after the ḥawl; not any charity (al-ṣadaqa).* The fixed due on wealth reaching the niṣāb at the end of the ḥawl. Ibn Rajab Q18 sets it against a vowed (nadhr) ṣadaqa of the same niṣāb: «لو نذر الصدقة بنصاب من المال وقت حلول الحول، فهل تجب فيه الزكاة؟ على وجهين», and whether one payment discharges both is a second pair of wujūh.
 
 **Related:** [sadaqa](#sadaqa)
 

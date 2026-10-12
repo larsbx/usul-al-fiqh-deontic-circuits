@@ -150,6 +150,20 @@
     "registers",
     "glossary"
    ]
+  },
+  {
+   "gloss_en": "\\b(oaths?|vows?|vowed|vowing|swear\\w*|swore|sworn)\\b",
+   "terms": [
+    "yamin",
+    "yamin_daawa",
+    "nadhr",
+    "taliq"
+   ],
+   "why": "English «oath» covers al-yamīn (a binding oath, broken by ḥinth, released by kaffāra), the yamīn of a claim (a means of proof: «واليمين على من أنكر», «بشاهد ويمين») and the «divorce oath», which is a taʿlīq; «vow» is al-nadhr, fulfilled not expiated (F59). q014.f001's «إن كان هذا الطائر غرابا فامرأتي طالق» is a taʿlīq, not an oath.",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
   }
  ],
  "note": "Every English text field of the corpus registers, and every Lean doc comment, that uses one of these glosses must also name the term it means, by its transliteration or its Arabic (tests/test_nusus.py). The English never feeds a derivation; this keeps it from hiding which term a case is about."

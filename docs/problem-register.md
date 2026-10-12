@@ -46,7 +46,7 @@ Severity:
 | expiation, compensation, blood-money | kaffāra, fidya, ḍamān, diya, arsh, jazāʾ, fidāʾ | 26: closed (6 terms, 4 āyāt added, 38 sites) |
 | strong, stronger | aqwā, ākad, qawiyy, rājiḥ (of a proof, a ẓann, the qarāʾin) | 15: closed (guard; «أقوى/أرجح/قويت/آكد» as forms of al-tarjīḥ; farḍ «آكد» is emphasis, not a stronger proof) |
 | condition, conditional, stipulation | sharṭ, al-shurūṭ fīhā, taʿlīq | 50: closed (2 terms, guard, 50 sites; 6 Lean docs) |
-| oath, vow | yamīn, nadhr | 30 |
+| oath, vow | yamīn (binding), yamīn of a claim, nadhr, taʿlīq | 45: closed (3 terms, two senses of al-yamīn; q014.f001 and the raven cases are taʿlīq, not oaths) |
 | divorce, separation | ṭalāq, khulʿ, faskh | 45 |
 | obligatory, recommended, duty | wājib, farḍ, mandūb, sunna | 45 |
 | weak, sound | ḍaʿīf, ṣaḥīḥ (whose: a farq, a ḥadīth, a view), al-aṣaḥḥ | 11: closed (8 sense-keyed terms, guard over registers and glossary, 20 sites) |
@@ -135,4 +135,6 @@ Q19's «المسمى» had been rendered «the stipulated price» in the proposa
 **PR-03, ḥukm.** Beside a judge, English «ruling» is either the sharʿī ḥukm he applies or his verdict, ḥukm al-ḥākim. Only the verdict is «undone»: Ibn Rajab Q68, «ولم ينقض حكمه إلا أن يكون مخالفا لنص صريح». q068.f009 and its refinement now say «verdict (ḥukm al-ḥākim)». The angry-judge example of a ruling's ʿilla (qiyās citation 143) is the sharʿī ḥukm. PR-03 is closed: every polyseme found has a term per sense, and terms sharing an Arabic word must say which sense they are.
 
 **PR-02, «charity», «strong», «cause».** al-Zakāt and al-ṣadaqa are terms; Ibn Rajab Q18 is where they meet, a vowed ṣadaqa of a niṣāb at the ḥawl. «Strong» was always a weight, in tarjīḥ, of a ẓann, or of the qarāʾin, except wājib's ref note, where farḍ is «آكد» (more emphatic), and Ibn Qudāma's «بدليل آكد منه» for the weightier proof in muʿāraḍa. «Cause» is three terms: the ʿilla (the manāṭ extended by qiyās), the sabab (what a ruling attaches to: Q31, Q39, Q46, dhawāt al-asbāb in F126) and the ḥikma. Three English words had stood for other terms: Q7's «reason» is ʿaql, Q35's «for a reason» is «لموجب», and Q51's «causes and motives» are «الأسباب والدواعي», the motives of a contract. The Lean docs' «cause» (31) and «strong» (15) are mostly logical usage and stay out of scope.
+
+**PR-02, «oath / vow».** «Oath» was three things. One is the binding yamīn, broken by ḥinth and released by kaffāra, with laghw al-yamīn outside it (F63). Another is the yamīn of a claim, a means of proof («واليمين على من أنكر», «بشاهد ويمين»), which is never broken and owes no kaffāra. The third is the «divorce oath», which in the raven cases (q014.f001, q160.f025) is a plain taʿlīq: «إن كان هذا الطائر غرابا فامرأتي طالق». Al-yamīn now has two sense-keyed terms on one Arabic word, under the polysemy test. «Vow» is al-nadhr, fulfilled and not expiated, «فالطاعة فيه مقصودة، بخلاف اليمين» (F59), except the vow that runs as an oath (F61). The regex had also caught «vowel»; it now matches the words only.
 

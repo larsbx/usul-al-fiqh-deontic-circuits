@@ -602,7 +602,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 <a id="ayman_by_urf"></a>
 
-## An oath's object is measured by custom
+## An oath's (yamīn's) object is measured by custom
 
 **Terms:** [al-ʿurf](../glossary.md#urf)  
 **Closes:** `rule:ayman_by_urf`  
