@@ -9,6 +9,7 @@ that carry rulings cite these ids; `table_lean` emits guards tying those rulings
 
 from __future__ import annotations
 
+import bisect
 import json
 import re
 from functools import lru_cache
@@ -81,15 +82,22 @@ _IRWA_HEAD = re.compile(r"^# \[?\(([٠-٩]+)\)\]?\s*(?:[-ـ]\s*)?", re.M)   # «
 
 
 def irwa_heads(irwa: str) -> list[tuple[int, int]]:
-    """(entry number, offset) of every al-Irwāʾ entry header. Headers run in order, so a line that
-    merely starts with a parenthesised number (a cross-reference) is kept only if it continues the
-    sequence: above the last header kept and within a gap of blank pages."""
-    out: list[tuple[int, int]] = []
-    for m in _IRWA_HEAD.finditer(irwa):
-        n = int(m.group(1).translate(str.maketrans("٠١٢٣٤٥٦٧٨٩", "0123456789")))
-        if (out[-1][0] if out else 0) < n <= (out[-1][0] if out else 0) + 150:
-            out.append((n, m.start()))
-    return out
+    """(entry number, offset) of every al-Irwāʾ entry header. Headers run in order, so the entries are
+    the longest strictly increasing run of candidate headers (by offset): a cross-reference or a
+    misnumbered header (Shamela prints «(٣٣٨)» for 238) is one outlier, not a reset (PR-26)."""
+    cands = [(int(m.group(1).translate(str.maketrans("٠١٢٣٤٥٦٧٨٩", "0123456789"))), m.start())
+             for m in _IRWA_HEAD.finditer(irwa)]
+    tails: list[int] = []          # tails[k]: the candidate ending the best run of length k+1
+    ends: list[int] = []           # its entry number, kept sorted for bisection
+    prev = [-1] * len(cands)
+    for i, (n, _) in enumerate(cands):
+        k = bisect.bisect_left(ends, n)
+        prev[i] = tails[k - 1] if k else -1
+        tails[k:k + 1], ends[k:k + 1] = [i], [n]
+    out, i = [], tails[-1] if tails else -1
+    while i >= 0:
+        out.append(cands[i]); i = prev[i]
+    return out[::-1]
 
 
 def irwa_entry(irwa: str, n: int) -> tuple[str | None, str]:

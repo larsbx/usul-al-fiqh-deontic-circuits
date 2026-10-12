@@ -138,6 +138,13 @@
       },
       "description": "the pinned collections that carry it; empty only for a ḥadīth the gate rejects and none of them carries (tested)"
      },
+     "cited_by": {
+      "type": "array",
+      "description": "the uṣūl records citing it as a dalīl (corpus/hadith/irwa_join.json; problem register PR-05)",
+      "items": {
+       "type": "string"
+      }
+     },
      "albani": {
       "type": "object",
       "required": [

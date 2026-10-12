@@ -183,3 +183,16 @@ def test_tanzil_is_attributed():
         notice = src.read_text(encoding="utf-8")
         assert all(x in notice and x in a for x in ("Tanzil Quran Text (Simple, Version 1.1)", "Copyright (C) 2007-2026 Tanzil Project"))
     assert a in (ROOT / "docs/glossary.md").read_text(encoding="utf-8")
+
+
+def test_every_usul_hadith_dalil_rests_on_the_foundation():
+    """Each ḥadīth the uṣūl records cite (irwa_join) is a foundation ḥadīth: pinned in a primary
+    collection under its number, al-Albānī's entry among the link's, the same verdict, and the
+    citing records listed (problem register PR-05)."""
+    join = json.loads((CORPUS / "hadith/irwa_join.json").read_text(encoding="utf-8"))["links"]
+    for link in join:
+        nums = {n for n, _ in link["irwa"]}
+        h = [h for h in F["ahadith"] if h["albani"]["work"] == "albani.irwa" and h["albani"]["number"] in nums]
+        assert h, link["matn_ar"]
+        assert all(x["albani"]["verdict"] == link["verdict"] and set(link["records"]) <= set(x.get("cited_by", [])) for x in h), link["matn_ar"]
+        assert all(x["sources"] or x["albani"]["verdict"] not in HUJJA for x in h)
