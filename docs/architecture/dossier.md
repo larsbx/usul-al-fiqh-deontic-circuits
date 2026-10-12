@@ -19,7 +19,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Conditions**
 
-1. a marker of generality (al- of genus, an annexed singular, a particle, or an indefinite in negation, prohibition or condition)
+1. a marker of generality (al- of genus, an annexed singular, a particle, or an indefinite in negation, prohibition or a conditional clause, al-sharṭ)
 2. no indication of ʿahd and no proper name pinning the referent
 
 **Texts**
@@ -29,7 +29,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f003`: «تنزهوا من البول»: the companions read al- as ʿahd (human urine) «بقرينة».
   > دعوى أن الأصل في الأبوال كلها النجاسة استدلالا بقوله عليه السلام: "تنزهوا من البول فإن عامة عذاب القبر منه" 1 ولكن أصحابنا حملوا الألف واللام هنا على العهد وهو بول الآدمى بقرينة.
 
-**Rationale.** The generality of al- is the default reading of the marker, and the qāʿida states its own blocking condition. Five of the six generality ikhtilāf cases split exactly on whether al- is ʿahd or genus, so the blocking fact must be an input: without it the kernel always took genus and landed on the minority side.
+**Rationale.** The generality of al- is the default reading of the marker, and the qāʿida states its own blocking qayd. Five of the six generality ikhtilāf cases split exactly on whether al- is ʿahd or genus, so the blocking fact must be an input: without it the kernel always took genus and landed on the minority side.
 
 **Lean:** `Usul.Dalala.IsGeneralIn`, `Usul.Dalala.isGeneralIn_no_ahd`, `Usul.Dalala.ahd_blocks`, `Usul.Dalala.isGeneralIn_is_gate`  
 **Conservative over the earlier reading:** `Usul.Dalala.isGeneralIn_no_ahd`
@@ -147,7 +147,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008`: Doubting dawn: «ولا عبرة في ذلك بغلبة الظن وبالقرائن» unless a reliable report.
   > إذا شك في طلوع الفجر في رمضان فإنه يباح له الأكل حتى يتيقن طلوعه نص عليه، أحمد، ولا عبرة في ذلك بغلبة الظن وبالقرائن ونحوها ما لم يكن مستندا إلى إخبار ثقة بالطلع.
 
-**Rationale.** Equal grades produced opposite rulings in the cases (purity and dawn keep the aṣl; sunset follows the ẓāhir), so the grade cannot be the deciding input. Ibn Rajab names the deciding fact himself: whether the matter has indicators.
+**Rationale.** Equal grades produced opposite rulings in the cases (ṭahāra and dawn keep the aṣl; sunset follows the ẓāhir), so the grade cannot be the deciding input. Ibn Rajab names the deciding fact himself: whether the matter has indicators.
 
 **Lean:** `Usul.Refinements.zahirPrevails`, `Usul.Refinements.zahirPrevails_conservative`, `Usul.Refinements.tie_without_amara_keeps_asl`, `Usul.Refinements.stronger_prevails`  
 **Conservative over the earlier reading:** `Usul.Refinements.zahirPrevails_conservative`
@@ -213,7 +213,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 <a id="trust_voidance"></a>
 
-## A pure trust is voided by transgression; a compound trust is not
+## A pure trust is voided by transgression («تبطل بالتعدي»); a compound trust is not
 
 **Terms:** [al-amāna (al-maḥḍa wa'l-mutaḍammina)](../glossary.md#amana), [al-ḍamān](../glossary.md#daman)  
 **Closes:** `rule:trust_voidance`  
@@ -241,7 +241,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 <a id="abstention_possible_condition"></a>
 
-## Abstain while a divorce condition may have occurred
+## Abstain while the event a divorce is suspended on (taʿlīq) may have occurred
 
 **Terms:** [al-yaqīn](../glossary.md#yaqin), [al-shakk](../glossary.md#shakk), [al-iḥtiyāṭ / al-iʿtizāl](../glossary.md#ihtiyat)  
 **Closes:** `rule:abstention_under_possible_condition`  
@@ -254,7 +254,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Conditions**
 
-1. divorce suspended on a condition
+1. divorce suspended on an event (taʿlīq)
 2. its occurrence is possible
 3. its absence is not known
 
@@ -265,7 +265,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f027`: «You are divorced on Laylat al-Qadr»: abstain from the last ten «لإمكان أن يكون أول ليلة».
   > إذا قال أنت طالق ليلة القدر يعتزلها إذا دخل العشر الأواخر ms469 لإمكان أن يكون أول ليلة.
 
-**Rationale.** Abstention is a rule of conduct, not of status. The doubtful condition does not displace the certain marriage (Q11), so the theorem abstention_keeps_status proves both at once: the held judgement is unchanged, and abstention is due. Whether abstention is obligatory (al-Qāḍī) or scrupulous (Ibn ʿAqīl) is a further question the reading does not decide.
+**Rationale.** Abstention is a rule of conduct, not of status. The doubtful event does not displace the certain marriage (Q11), so the theorem abstention_keeps_status proves both at once: the held judgement is unchanged, and abstention is due. Whether abstention is obligatory (al-Qāḍī) or scrupulous (Ibn ʿAqīl) is a further question the reading does not decide.
 
 **Lean:** `Usul.Refinements.abstains`, `Usul.Refinements.abstention_keeps_status`, `Usul.Refinements.known_absence_ends_abstention`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
@@ -323,7 +323,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `sadi.qawaid_jamia.archive_pdf1995_tess.q035`: Al-Saʿdī Q35, the doubling of compensation where a punishment lapses: the reading this case was filed under.
   > من سقطت عنه العقوبة لموجب ضوعف عليه الضمان وذلك إذا كان فعله سبباً ناهضاً لوجوب العقوبة عليه ولكن سقطت عنه لسبب من الأسباب، فإنه يضاعف عليه ضمان الشيء؛ (؟) سورة
 
-**Rationale.** The case sits under the qāʿida of aggravated compensation but is not a doubling: the restitution is owed once and the aggravation is a forfeiture whose size is the share, not the theft. ghulul_is_not_doubling proves the burden can be below, at or above twice the theft, which is exactly the text's «قدر السرقة وأقل وأكثر».
+**Rationale.** The case sits under the qāʿida of aggravated ḍamān («ضوعف عليه الضمان») but is not a doubling: the restitution is owed once and the aggravation is a forfeiture whose size is the share, not the theft. ghulul_is_not_doubling proves the burden can be below, at or above twice the theft, which is exactly the text's «قدر السرقة وأقل وأكثر».
 
 **Lean:** `Usul.Refinements.bootyTheftBurden`, `Usul.Refinements.ghululForfeits`, `Usul.Refinements.ghulul_is_not_doubling`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
@@ -541,7 +541,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 <a id="defective_compensation"></a>
 
-## Named versus equivalent compensation in defective contracts
+## Named (al-musammā) versus equivalent ḍamān in fāsid contracts
 
 **Terms:** [al-ḍamān](../glossary.md#daman), [al-fāsid](../glossary.md#fasid), [al-itlāf](../glossary.md#itlaf)  
 **Closes:** `rule:defective_compensation`  
@@ -555,7 +555,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 **Conditions**
 
 1. the source identifies whether the selected position treats compensation as contract or loss liability
-2. lawful consideration; the void/prohibited-consideration branch is outside this encoding
+2. lawful consideration; the bāṭil/prohibited-consideration branch is outside this encoding
 
 **Texts**
 
@@ -700,21 +700,21 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 **Conditions**
 
 1. the act is a concession
-2. its permitting condition is in doubt
+2. its permitting sharṭ is in doubt
 
 **Texts**
 
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068`: Qāʿida 68's first type: what needs a firm intention is not valid with doubt unless ghalabat al-ẓann or an aṣl supports it.
   > إيقاع العبادات أو العقود أو غيرهما مع الشك في شرط صحتها هل يجعلها كالمعلقة على تحقيق ذلك الشرط أم لا؟ هي نوعان: أحدهما ما يشترط فيه النية الجازمة فلا يصح إيقاعه بهذا التردد ما لم يكن الشك غلبة ظن تكفي مثله في إيقاع العبادة أو العقد كغلبة الظن بدخول الوقت وطهارة الماء والثوب ونحو ذلك. ومن أمثلة ذلك إذا صلى يظن نفسه محدثا فتبين متطهرا. ومنها لو شك هل ابتدأ [مدة] مسح الخفين في السفر أو الحضر فمسح يوم
 
-**Rationale.** A concession is qāʿida 68's first type, a condition that needs a firm basis. Its aṣl is the ʿazīma, so no aṣl supports it (rukhsa_is_firm_condition). Al-Mughnī's view, that wuḍūʾ is valid with doubt in its cause, is the other position.
+**Rationale.** A concession is qāʿida 68's first type, a sharṭ that needs a firm basis. Its aṣl is the ʿazīma, so no aṣl supports it (rukhsa_is_firm_condition). Al-Mughnī's view, that wuḍūʾ is valid with doubt in its cause, is the other position.
 
 **Lean:** `Usul.Refinements.rukhsaValid`, `Usul.Refinements.rukhsa_is_firm_condition`, `Usul.Refinements.validUnderDoubt`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
 
 <a id="taliq_al_bay"></a>
 
-## A sale conditioned on a fact both know to hold is as if unconditioned
+## A sale suspended (taʿlīq) on a fact both know to hold is as if unsuspended
 
 **Terms:** [al-sharṭ](../glossary.md#shart), [al-ṣaḥīḥ](../glossary.md#sahih)  
 **Closes:** `rule:taliq_al_bay`  
@@ -727,7 +727,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Conditions**
 
-1. the condition is a present fact
+1. the taʿlīq's event is a present fact
 2. both parties know it holds
 
 **Texts**
@@ -735,7 +735,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068`: Qāʿida 68: acting while doubting a condition of validity, «هل يجعلها كالمعلقة على تحقيق ذلك الشرط».
   > إيقاع العبادات أو العقود أو غيرهما مع الشك في شرط صحتها هل يجعلها كالمعلقة على تحقيق ذلك الشرط أم لا؟ هي نوعان: أحدهما ما يشترط فيه النية الجازمة فلا يصح إيقاعه بهذا التردد ما لم يكن الشك غلبة ظن تكفي مثله في إيقاع العبادة أو العقد كغلبة الظن بدخول الوقت وطهارة الماء والثوب ونحو ذلك. ومن أمثلة ذلك إذا صلى يظن نفسه محدثا فتبين متطهرا. ومنها لو شك هل ابتدأ [مدة] مسح الخفين في السفر أو الحضر فمسح يوم
 
-**Rationale.** The bar on conditioned sale (al-Qāḍī, Ibn ʿAqīl) is against uncertainty in the contract. A condition both know to hold adds none, as with «بعتك هذه إن كانت جارية» and Aḥmad's naṣṣ on selling the absent thing «إن كان سالما».
+**Rationale.** The bar on suspended sale («البيع لا يصح تعليقه») (al-Qāḍī, Ibn ʿAqīl) is against uncertainty in the contract. A taʿlīq on what both know to hold adds none, as with «بعتك هذه إن كانت جارية» and Aḥmad's naṣṣ on selling the absent thing «إن كان سالما».
 
 **Lean:** `Usul.Refinements.conditionedSaleValid`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
@@ -764,7 +764,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065`: Qāʿida 65: one who disposed of what he thought not his.
   > وهي من تصرف في شيء يظن أنه لا يملكه فتبين أنه كان يملكه، وفيها خلاف أيضا ويندرج تحتها صور: منها لو باع ملك أبيه بغير إذنه ثم تبين أن أباه كان قد مات ولا وارث له وفي صحة تصرفه وجهان ويقال روايتان. ومنها لو طلق امرأة يظنها أجنبية فتبينت زوجته ففي وقوع الطلاق روايتان، وبناهما أبو بكر على أن الصريح هل يحتاج إلى نية أم لا؟ قال القاضي إنما هذا الخلاف في صورة الجهل بأهلية المحل ولا يطرد مع العلم به ومنها
 
-**Rationale.** If qiṣāṣ for the life is the heirs', the victim pardoned a right he did not know to be his to pardon. That is qāʿida 65's unknown condition (heirs_right_is_q65), so the pardon is void, as al-Qāḍī and others hold.
+**Rationale.** If qiṣāṣ for the life is the heirs', the victim pardoned a right he did not know to be his to pardon. That is qāʿida 65's case, acting on what one thought not one's own («من تصرف في شيء يظن أنه لا يملكه») (heirs_right_is_q65), so the pardon is not ṣaḥīḥ, «وجزم القاضي وغيره بأنه لا يصح العفو».
 
 **Lean:** `Usul.Refinements.pardonOfSpreadValid`, `Usul.Refinements.heirs_right_is_q65`, `Usul.Refinements.countsAsMet`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)

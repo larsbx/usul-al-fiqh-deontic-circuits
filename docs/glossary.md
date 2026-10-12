@@ -497,7 +497,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 **Conditions**
 
-- a missing condition or present impediment (Ibn ʿUthaymīn)
+- a missing sharṭ or present impediment (Ibn ʿUthaymīn)
 
 **Related:** [sahih](#sahih), [nahy](#nahy), [daman](#daman)
 
@@ -689,7 +689,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `ibn_uthaymin.usul.shamela_9942.h002`: Definition: what the Lawgiver's address requires by ṭalab, takhyīr or waḍʿ.
 - `src:shamela-9942/v01:p010`: Ibn ʿUthaymīn: ṭalab covers command and prohibition, binding (ilzām) or preferential (afḍaliyya).
   > والمراد بقولنا: «من طلب»؛ الأمر والنهي سواء على سبيل الإلزام، أو الأفضلية.
-- `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q002`: Condition of taklīf is ʿaql and understanding the address; distinguishes khiṭāb al-waḍʿ from khiṭāb al-taklīf.
+- `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q002`: The sharṭ of taklīf is ʿaql and understanding the address; distinguishes khiṭāb al-waḍʿ from khiṭāb al-taklīf.
   > شرط التكليف العقل وفهم الخطاب. ذكره الآمدي ms010 اتفاق العقلاء فلا تكليف على صبي ولا مجنون لا عقل له وقال أبو البركات في المسودة1 واختار قوم تكليفهما. قلت: من اختار تكليفهما إن أراد أنه يترتب على أفعالهما ما هو من خطاب الوضع2 فلا نزاع في ترتبه وان أراد خطاب التكليف3 فإنه لا يلزمهما بلا نزاع وان اختلف في مسائل هل هي من خطاب الوضع أم من خطاب التكليف أو بعض مسائل من مسائل التكليف وقد حكى حنبل4 عن أحم
 
 <a id="hukm_taklifi"></a>
@@ -737,6 +737,21 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > وعكس الشرط: المانع: وهو: ما يلزم من وجوده عدم الحكم
 - `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q002`: Khiṭāb al-waḍʿ attaches to the acts of those not under taklīf.
   > شرط التكليف العقل وفهم الخطاب. ذكره الآمدي ms010 اتفاق العقلاء فلا تكليف على صبي ولا مجنون لا عقل له وقال أبو البركات في المسودة1 واختار قوم تكليفهما. قلت: من اختار تكليفهما إن أراد أنه يترتب على أفعالهما ما هو من خطاب الوضع2 فلا نزاع في ترتبه وان أراد خطاب التكليف3 فإنه لا يلزمهما بلا نزاع وان اختلف في مسائل هل هي من خطاب الوضع أم من خطاب التكليف أو بعض مسائل من مسائل التكليف وقد حكى حنبل4 عن أحم
+
+<a id="ibtal"></a>
+
+## al-ibṭāl (الإبطال)
+
+*al-ibṭāl: refuting an ʿilla or an argument (its buṭlān); not the voidness of an act or contract (al-bāṭil).* The dialectical sense of «void»: al-Ṭūfī's sabr is «إبطال كل علة علل بها الحكم المعلل إجماعا، إلا واحدة فتعين», and whether naqḍ voids an ʿilla is «بطلان العلة». The sources also say ifsād («إفساد علة خصمه») and qadḥ (qadh). It ranks arguments; whether an act is bāṭil is the other term.
+
+**Related:** [qadh](#qadh), [naqd](#naqd), [sabr_wal_taqsim](#sabr_wal_taqsim)
+
+**Texts**
+
+- `src:openiti-tufi-shamela10781/v03:p404`: al-Ṭūfī: sabr is ibṭāl.
+  > النوع الثاني السبر: وهو إبطال كل علة علل بها الحكم المعلل إجماعا، إلا واحدة فتعين
+- `src:openiti-tufi-shamela10781/v03:p498`: al-Ṭūfī: naqḍ, and whether it voids the ʿilla.
+  > وهو إبداء العلة بدون الحكم، وفي بطلان العلة به خلاف
 
 <a id="ihtiyat"></a>
 
@@ -902,7 +917,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 - `src:shamela-9942/v01:p082`: Jamʿ is obligatory if possible.
   > وإن تعارضت، وأمكن الجمع وجب الجمع، وإن لم يمكن الجمع عمل بالنسخ إن تمت شروطه.
-- `src:shamela-9942/v01:p053`: Naskh conditional on impossibility of jamʿ.
+- `src:shamela-9942/v01:p053`: Naskh has the sharṭ that jamʿ be impossible.
   > تعذر الجمع بين الدليلين، فإن أمكن الجمع فلا نسخ لإمكان العمل بكل منهما.
 
 <a id="jaza"></a>
@@ -1368,6 +1383,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `src:shamela-9942/v01:p053`: First condition of naskh.
   > تعذر الجمع بين الدليلين، فإن أمكن الجمع فلا نسخ لإمكان العمل بكل منهما.
 
+<a id="qadh"></a>
+
+## al-qadḥ (القدح)
+
+*al-qadḥ: impairing an ʿilla (an objection that tells against it); «naqḍ impairs» is qadḥ.* al-Kawkab on naqḍ: «والقول الثاني: يقدح. اختاره من أصحابنا: ابن حامد وقاله القاضي أيضا», against takhṣīṣ al-ʿilla, where the ʿilla stays ḥujja in the rest. The objections are «القوادح».
+
+**Related:** [ibtal](#ibtal), [naqd](#naqd), [takhsis_al_illa](#takhsis_al_illa)
+
+**Texts**
+
+- `src:openiti-kawkab-shamela12019/v04:p058`: al-Kawkab: the second view on naqḍ.
+  > والقول الثاني: يقدح. اختاره من أصحابنا: ابن حامد وقاله القاضي أيضا
+
 <a id="qalb"></a>
 
 ## al-qalb (القلب)
@@ -1456,6 +1484,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `src:openiti-ilam-shamela11496/v01:p290`: Ibn Taymiyya: sound vs unsound qiyās.
   > والصحيح هو الذي وردت به الشريعة، وهو الجمع بين المتماثلين والفرق بين المختلفين، فالأول قياس الطرد، والثاني قياس العكس
 
+<a id="qiyas_sahih"></a>
+
+## al-qiyās al-ṣaḥīḥ (القياس الصحيح)
+
+*al-qiyās al-ṣaḥīḥ: the sound qiyās, which never contradicts a ṣaḥīḥ text; against al-qiyās al-fāsid.* Ibn al-Qayyim: «والقياس الصحيح هو الميزان»; Ibn Taymiyya: the ṣaḥīḥ is joining like cases and separating unlike ones, and «ليس في الشريعة شيء على خلاف القياس الصحيح بل على خلاف القياس الفاسد». A qiyās is ṣaḥīḥ as an argument; whether the act it rules on is ṣaḥīḥ is the other term (sahih).
+
+**Related:** [qiyas](#qiyas), [sahih](#sahih)
+
+**Texts**
+
+- `src:openiti-ilam-shamela11496/v01:p103`: Ibn al-Qayyim.
+  > والقياس الصحيح هو الميزان؛ فالأولى تسميته بالاسم الذي سماه الله به
+
 <a id="qurah"></a>
 
 ## al-qurʿa (القرعة)
@@ -1542,7 +1583,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > وهو: حصر الأوصاف" في الأصل المقيس عليه "وإبطال ما لا يصلح
 - `src:openiti-rawda-shamela12010/v02:p221`: Ibn Qudāma's structure.
   > فنقول: الحكم معلل، ولا علة إلا كذا أو كذا، وقد بطل أحدهما فيتعين الآخر
-- `src:openiti-rawda-shamela12010/v02:p222`: Exhaustiveness condition.
+- `src:openiti-rawda-shamela12010/v02:p222`: Exhaustiveness sharṭ.
   > الأمر الثاني: أن يكون سبره حاصرا لجميع ما يعلل به
 - `src:openiti-rawda-shamela12010/v02:p224`: Naqḍ alone does not cancel a description.
   > ولا يكفيه في إفساد علة خصمه: النقض
@@ -1592,7 +1633,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 **Texts**
 
-- `src:openiti-nukhba-shamela5940/v04:p722`: al-Nukhba: the five conditions of the ṣaḥīḥ li-dhātih.
+- `src:openiti-nukhba-shamela5940/v04:p722`: al-Nukhba: the five shurūṭ (sharṭ) of the ṣaḥīḥ li-dhātih.
   > بنقل عدل تام الضبط، متصل السند، غير معلل ولا شاذ: هو الصحيح لذاته
 
 <a id="sahih_qawl"></a>

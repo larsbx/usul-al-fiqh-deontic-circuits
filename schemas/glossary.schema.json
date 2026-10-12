@@ -52,6 +52,14 @@
             "type": "string",
             "minLength": 1
           },
+          "forms": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "description": "derived forms (Arabic or transliterated) that name the term in a field a term guard reads, e.g. «بطل» for al-bāṭil"
+          },
           "sense": {
             "type": "string",
             "minLength": 1,

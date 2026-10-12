@@ -44,7 +44,7 @@
     },
     {
      "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q002",
-     "note": "Condition of taklīf is ʿaql and understanding the address; distinguishes khiṭāb al-waḍʿ from khiṭāb al-taklīf."
+     "note": "The sharṭ of taklīf is ʿaql and understanding the address; distinguishes khiṭāb al-waḍʿ from khiṭāb al-taklīf."
     }
    ]
   },
@@ -341,9 +341,15 @@
     "fasid",
     "batil",
     "sahih_hadith",
-    "sahih_qawl"
+    "sahih_qawl",
+    "qiyas_sahih"
    ],
-   "sense": "of an act or contract"
+   "sense": "of an act or contract",
+   "forms": [
+    "ṣiḥḥa",
+    "صحة",
+    "يصح"
+   ]
   },
   {
    "key": "fasid",
@@ -352,7 +358,7 @@
    "gloss": "al-fāsid: not ṣaḥīḥ; in the madhhab one with al-bāṭil, except in ḥajj and nikāḥ (F98)",
    "definition": "Ibn ʿUthaymīn: what the effects of performing it do not follow from, whether worship or contract. Ibn al-Laḥḥām: for the Ḥanbalīs and Shāfiʿīs fāsid and bāṭil are synonyms, whereas Abū Ḥanīfa distinguishes the bāṭil (not legislated at all) from the fāsid (legislated in origin but forbidden for a prohibited attribute); Ibn ʿUthaymīn notes the Ḥanbalīs still distinguish them in ḥajj and marriage. Ibn Rajab: a contract whose sound form entails liability entails it when fāsid too.",
    "conditions": [
-    "a missing condition or present impediment (Ibn ʿUthaymīn)"
+    "a missing sharṭ or present impediment (Ibn ʿUthaymīn)"
    ],
    "related": [
     "sahih",
@@ -390,6 +396,12 @@
    ],
    "furuq": [
     "F98"
+   ],
+   "forms": [
+    "فسد",
+    "فساد",
+    "fasād",
+    "ifsād"
    ]
   },
   {
@@ -1058,7 +1070,7 @@
     {
      "ref": "src:openiti-rawda-shamela12010/v02:p222",
      "excerpt_ar": "الأمر الثاني: أن يكون سبره حاصرا لجميع ما يعلل به",
-     "note": "Exhaustiveness condition."
+     "note": "Exhaustiveness sharṭ."
     },
     {
      "ref": "src:openiti-rawda-shamela12010/v02:p224",
@@ -2086,7 +2098,7 @@
     {
      "ref": "src:shamela-9942/v01:p053",
      "excerpt_ar": "تعذر الجمع بين الدليلين، فإن أمكن الجمع فلا نسخ لإمكان العمل بكل منهما.",
-     "note": "Naskh conditional on impossibility of jamʿ."
+     "note": "Naskh has the sharṭ that jamʿ be impossible."
     }
    ]
   },
@@ -3470,7 +3482,8 @@
    ],
    "distinct_from": [
     "fasid",
-    "ayb"
+    "ayb",
+    "ibtal"
    ],
    "furuq": [
     "F98"
@@ -3481,6 +3494,10 @@
      "excerpt_ar": "وأما بقية الأبواب فجعلوا الباطل والفاسد واحداً، الكل لا يصح ولا يفيد الملك والتصرف",
      "note": "F98: outside ḥajj and nikāḥ the bāṭil and the fāsid are one."
     }
+   ],
+   "forms": [
+    "بطل",
+    "buṭlān"
    ]
   },
   {
@@ -3715,7 +3732,7 @@
     {
      "ref": "src:openiti-nukhba-shamela5940/v04:p722",
      "excerpt_ar": "بنقل عدل تام الضبط، متصل السند، غير معلل ولا شاذ: هو الصحيح لذاته",
-     "note": "al-Nukhba: the five conditions of the ṣaḥīḥ li-dhātih."
+     "note": "al-Nukhba: the five shurūṭ (sharṭ) of the ṣaḥīḥ li-dhātih."
     }
    ]
   },
@@ -3942,6 +3959,88 @@
      "ref": "src:openiti-rajab-shamela21730/v01:p298",
      "excerpt_ar": "لو علق الطلاق بالولادة فشهد بها النساء",
      "note": "Q133."
+    }
+   ]
+  },
+  {
+   "key": "ibtal",
+   "ar": "الإبطال",
+   "tr": "al-ibṭāl",
+   "sense": "of an ʿilla or argument",
+   "gloss": "al-ibṭāl: refuting an ʿilla or an argument (its buṭlān); not the voidness of an act or contract (al-bāṭil)",
+   "definition": "The dialectical sense of «void»: al-Ṭūfī's sabr is «إبطال كل علة علل بها الحكم المعلل إجماعا، إلا واحدة فتعين», and whether naqḍ voids an ʿilla is «بطلان العلة». The sources also say ifsād («إفساد علة خصمه») and qadḥ (qadh). It ranks arguments; whether an act is bāṭil is the other term.",
+   "related": [
+    "qadh",
+    "naqd",
+    "sabr_wal_taqsim"
+   ],
+   "distinct_from": [
+    "batil"
+   ],
+   "forms": [
+    "إبطال",
+    "مبطل",
+    "بطلان",
+    "إفساد",
+    "ifsād"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p404",
+     "excerpt_ar": "النوع الثاني السبر: وهو إبطال كل علة علل بها الحكم المعلل إجماعا، إلا واحدة فتعين",
+     "note": "al-Ṭūfī: sabr is ibṭāl."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p498",
+     "excerpt_ar": "وهو إبداء العلة بدون الحكم، وفي بطلان العلة به خلاف",
+     "note": "al-Ṭūfī: naqḍ, and whether it voids the ʿilla."
+    }
+   ]
+  },
+  {
+   "key": "qadh",
+   "ar": "القدح",
+   "tr": "al-qadḥ",
+   "sense": "of an ʿilla",
+   "gloss": "al-qadḥ: impairing an ʿilla (an objection that tells against it); «naqḍ impairs» is qadḥ",
+   "definition": "al-Kawkab on naqḍ: «والقول الثاني: يقدح. اختاره من أصحابنا: ابن حامد وقاله القاضي أيضا», against takhṣīṣ al-ʿilla, where the ʿilla stays ḥujja in the rest. The objections are «القوادح».",
+   "related": [
+    "ibtal",
+    "naqd",
+    "takhsis_al_illa"
+   ],
+   "forms": [
+    "يقدح",
+    "قادح",
+    "قوادح"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p058",
+     "excerpt_ar": "والقول الثاني: يقدح. اختاره من أصحابنا: ابن حامد وقاله القاضي أيضا",
+     "note": "al-Kawkab: the second view on naqḍ."
+    }
+   ]
+  },
+  {
+   "key": "qiyas_sahih",
+   "ar": "القياس الصحيح",
+   "tr": "al-qiyās al-ṣaḥīḥ",
+   "sense": "of a qiyās",
+   "gloss": "al-qiyās al-ṣaḥīḥ: the sound qiyās, which never contradicts a ṣaḥīḥ text; against al-qiyās al-fāsid",
+   "definition": "Ibn al-Qayyim: «والقياس الصحيح هو الميزان»; Ibn Taymiyya: the ṣaḥīḥ is joining like cases and separating unlike ones, and «ليس في الشريعة شيء على خلاف القياس الصحيح بل على خلاف القياس الفاسد». A qiyās is ṣaḥīḥ as an argument; whether the act it rules on is ṣaḥīḥ is the other term (sahih).",
+   "related": [
+    "qiyas",
+    "sahih"
+   ],
+   "distinct_from": [
+    "sahih"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-ilam-shamela11496/v01:p103",
+     "excerpt_ar": "والقياس الصحيح هو الميزان؛ فالأولى تسميته بالاسم الذي سماه الله به",
+     "note": "Ibn al-Qayyim."
     }
    ]
   }

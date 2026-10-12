@@ -100,7 +100,7 @@
   {
    "number": 7,
    "statement_ar": "التكليف وهو البلوغ والعقل شرط لوجوب العبادات، والتمييز شرط لصحتها إلا الحج والعمرة",
-   "gloss_en": "Legal responsibility (maturity and reason) conditions the obligation of worship; discernment conditions its validity, except ḥajj and ʿumra.",
+   "gloss_en": "Legal responsibility (maturity and reason) is a sharṭ of the obligation of worship; discernment is a sharṭ of its validity, except ḥajj and ʿumra.",
    "kind": "rule",
    "domain": "ibadat",
    "lean": [
@@ -111,7 +111,7 @@
   {
    "number": 8,
    "statement_ar": "الأحكام الأصولية والفروعية لا تتم إلا بأمرين: وجود شروطها وأركانها، وانتفاء موانعها",
-   "gloss_en": "Rulings, in principles and branches, hold only when their conditions and pillars are present and their impediments absent.",
+   "gloss_en": "Rulings, in principles and branches, hold only when their shurūṭ (sharṭ) and pillars are present and their impediments absent.",
    "kind": "meta",
    "domain": "general",
    "lean": [
@@ -287,7 +287,7 @@
   {
    "number": 18,
    "statement_ar": "تضمن المثليات بمثلها، والمتقومات بقيمتها",
-   "gloss_en": "Fungibles are compensated with their like, non-fungibles with their value.",
+   "gloss_en": "Fungibles are made good (ḍamān: «تضمن») with their like, non-fungibles with their value.",
    "kind": "taqsim",
    "domain": "muamalat",
    "lean": [
@@ -359,7 +359,7 @@
   {
    "number": 23,
    "statement_ar": "والمسلمون على شروطهم إلا شرطاً أحل حراماً أو حرم حلالاً",
-   "gloss_en": "Muslims are bound by their stipulations, except a stipulation that permits the forbidden or forbids the permitted (printed under one heading with Q22).",
+   "gloss_en": "Muslims are bound by their stipulations (al-shurūṭ fīhā), except a stipulation that permits the forbidden or forbids the permitted (printed under one heading with Q22).",
    "kind": "rule",
    "domain": "muamalat",
    "lean": [
@@ -454,7 +454,7 @@
   {
    "number": 29,
    "statement_ar": "يجب تقييد اللفظ بملحقاته من وصف أو شرط أو استثناء أو غيرها",
-   "gloss_en": "An utterance must be qualified by its attachments: description, condition, exception and the like.",
+   "gloss_en": "An utterance must be qualified by its attachments: description, sharṭ (the linguistic one), exception and the like.",
    "kind": "interpretation",
    "domain": "lafz",
    "lean": [
@@ -556,7 +556,7 @@
   {
    "number": 35,
    "statement_ar": "من سقطت عنه العقوبة لموجب ضوعف عليه الضمان",
-   "gloss_en": "Whoever escapes punishment for a reason bears doubled compensation.",
+   "gloss_en": "Whoever escapes punishment for a reason bears doubled ḍamān («ضوعف عليه الضمان»).",
    "kind": "rule",
    "domain": "muamalat",
    "lean": [
@@ -600,7 +600,7 @@
   {
    "number": 38,
    "statement_ar": "إذا عاد التحريم إلى نفس العبادة أو شرطها فسدت، وإذا عاد إلى أمر خارج لم تفسد",
-   "gloss_en": "If the prohibition attaches to the act of worship itself or its condition, it is void; if to something external, it is not.",
+   "gloss_en": "If the prohibition attaches to the act of worship itself or its sharṭ, it is fāsid («فسدت»); if to something external, it is not.",
    "kind": "farq",
    "domain": "ibadat",
    "lean": [
@@ -611,7 +611,7 @@
   {
    "number": 39,
    "statement_ar": "لا يجوز تقديم العبادات أو الكفارات على سبب الوجوب، ويجوز تقديمها بعد وجود السبب وقبل شرط الوجوب",
-   "gloss_en": "Acts of worship and expiations may not precede the cause of obligation, but may precede its condition once the cause exists.",
+   "gloss_en": "Acts of worship and kaffārāt may not precede the cause of obligation, but may precede its sharṭ once the cause exists.",
    "kind": "rule",
    "domain": "ibadat",
    "lean": [
@@ -823,7 +823,7 @@
   {
    "number": 53,
    "statement_ar": "إذا تبين فساد العقد بطل ما بني عليه، وإن فسخ فسخاً اختيارياً لم تبطل العقود الطارئة قبل الفسخ",
-   "gloss_en": "If a contract proves void, what was built on it is void; if it is rescinded by choice, contracts concluded before the rescission stand.",
+   "gloss_en": "If a contract proves fāsid, what was built on it is bāṭil («إذا تبين فساد العقد بطل ما بني عليه»); if it is rescinded by choice, contracts concluded before the rescission stand.",
    "kind": "farq",
    "domain": "muamalat",
    "lean": [
@@ -966,7 +966,7 @@
   {
    "number": 59,
    "statement_ar": "النكرة في سياق النفي أو النهي أو الشرط تفيد العموم",
-   "gloss_en": "An indefinite noun in the context of negation, prohibition or condition is general.",
+   "gloss_en": "An indefinite noun in the context of negation, prohibition or a conditional clause (al-sharṭ) is general.",
    "kind": "interpretation",
    "domain": "lafz",
    "lean": [

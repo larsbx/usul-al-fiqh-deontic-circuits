@@ -135,8 +135,19 @@ def _english_fields():
     for p in sorted((CORPUS / "tanaqud").glob("*.json")):
         for x in json.loads(p.read_text())["pairs"]:
             yield "registers", x["id"], x["case_en"] + " " + x["qayd_en"]
+    for kind in ("ayat", "ahadith", "athar"):
+        for x in F[kind]:
+            yield "registers", x["id"], x.get("en", "")
+    for p in sorted((CORPUS / "proposals").glob("*.json")):
+        for q in json.loads(p.read_text())["rules"]:
+            yield "registers", f"{p.stem}#{q['number']}", q["gloss_en"]
+    for p in sorted((CORPUS / "citations").glob("*.json")):
+        for k, c in enumerate(json.loads(p.read_text())["principles"]):
+            yield "registers", f"{p.stem}#{k}", " ".join(filter(None, [c["claim_en"], c.get("hanbali_position")]))
+    for e in json.loads((CORPUS / "dossier/refinements.json").read_text())["entries"]:
+        yield "registers", e["id"], " ".join([e["title"], e["rationale"], *e["conditions"]])
     for t in GLOSS["terms"]:
-        yield "glossary", t["key"], t["gloss"] + " " + t["definition"]
+        yield "glossary", t["key"], " ".join([t["gloss"], t["definition"], *t.get("conditions", []), *(r.get("note", "") for r in t["refs"])])
     for p in sorted((ROOT / "formal/lean").rglob("*.lean")):
         if ".lake" not in p.parts:
             for k, m in enumerate(re.finditer(r"/-[-!].*?-/", p.read_text(encoding="utf-8"), re.S)):
@@ -144,10 +155,11 @@ def _english_fields():
 
 
 def test_no_english_gloss_stands_alone():
-    """Where an English gloss could mean several terms, the same field names the term it means."""
+    """Where an English gloss could mean several terms, the same field names the term it means: its
+    transliteration, its Arabic, or one of its `forms` (a quoted source word such as «فسدت»)."""
     bad = []
     for g in GUARDS["guards"]:
-        names = [n for k in g["terms"] for n in (TERMS[k]["tr"].removeprefix("al-"), TERMS[k]["ar"].removeprefix("ال"))]
+        names = [n for k in g["terms"] for n in (TERMS[k]["tr"].removeprefix("al-"), TERMS[k]["ar"].removeprefix("ال"), *TERMS[k].get("forms", []))]
         scope = set(g.get("scope", ["registers", "glossary", "lean"]))
         for sc, where, s in _english_fields():
             if sc in scope and re.search(g["gloss_en"], s, re.I) and not any(n in s for n in names):

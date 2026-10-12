@@ -42,9 +42,11 @@
     "batil",
     "fasid",
     "sahih",
-    "ayb"
+    "ayb",
+    "ibtal",
+    "qadh"
    ],
-   "why": "English «void», «invalid», «defective» cover al-bāṭil, al-fāsid (one in the madhhab except in ḥajj and nikāḥ, F98), «لا يصح» (not ṣaḥīḥ) and al-ʿayb (a defect in the thing, which leaves the contract ṣaḥīḥ: F138, Ibn Rajab 30). The glossary's «void» of an argument or ʿilla (buṭlān of a dalīl) is another sense, tracked under PR-03.",
+   "why": "English «void», «invalid», «defective» cover al-bāṭil, al-fāsid (one in the madhhab except in ḥajj and nikāḥ, F98), «لا يصح» (not ṣaḥīḥ) and al-ʿayb (a defect in the thing, which leaves the contract ṣaḥīḥ: F138, Ibn Rajab 30). The «void» of an argument or ʿilla is al-ibṭāl or al-qadḥ (PR-03, PR-23).",
    "scope": [
     "registers",
     "lean"
@@ -77,7 +79,8 @@
     "daif_hadith",
     "daif_qawl",
     "farq_sahih",
-    "farq_daif"
+    "farq_daif",
+    "qiyas_sahih"
    ],
    "why": "English «sound» and «weak» cover al-ṣaḥīḥ of an act (valid), of a ḥadīth (a grade: ḥujja), of a view (tarjīḥ: al-ṣaḥīḥ, al-aṣaḥḥ), of a farq (al-Saʿdī's grade), and al-ḍaʿīf of a ḥadīth, a view or a farq: a weak wajh is not a weak ḥadīth (PR-03). The Lean docs' «sound» of an inference is another sense, out of scope.",
    "scope": [

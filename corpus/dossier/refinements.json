@@ -26,10 +26,10 @@
     }
    ],
    "conditions": [
-    "a marker of generality (al- of genus, an annexed singular, a particle, or an indefinite in negation, prohibition or condition)",
+    "a marker of generality (al- of genus, an annexed singular, a particle, or an indefinite in negation, prohibition or a conditional clause, al-sharṭ)",
     "no indication of ʿahd and no proper name pinning the referent"
    ],
-   "rationale": "The generality of al- is the default reading of the marker, and the qāʿida states its own blocking condition. Five of the six generality ikhtilāf cases split exactly on whether al- is ʿahd or genus, so the blocking fact must be an input: without it the kernel always took genus and landed on the minority side.",
+   "rationale": "The generality of al- is the default reading of the marker, and the qāʿida states its own blocking qayd. Five of the six generality ikhtilāf cases split exactly on whether al- is ʿahd or genus, so the blocking fact must be an input: without it the kernel always took genus and landed on the minority side.",
    "lean": [
     "Usul.Dalala.IsGeneralIn",
     "Usul.Dalala.isGeneralIn_no_ahd",
@@ -184,7 +184,7 @@
     "a ẓāhir strictly stronger than the aṣl always prevails (a sharʿī proof)",
     "on equal grades the ẓāhir prevails only where the matter has indicators by which it is known"
    ],
-   "rationale": "Equal grades produced opposite rulings in the cases (purity and dawn keep the aṣl; sunset follows the ẓāhir), so the grade cannot be the deciding input. Ibn Rajab names the deciding fact himself: whether the matter has indicators.",
+   "rationale": "Equal grades produced opposite rulings in the cases (ṭahāra and dawn keep the aṣl; sunset follows the ẓāhir), so the grade cannot be the deciding input. Ibn Rajab names the deciding fact himself: whether the matter has indicators.",
    "lean": [
     "Usul.Refinements.zahirPrevails",
     "Usul.Refinements.zahirPrevails_conservative",
@@ -273,7 +273,7 @@
   },
   {
    "id": "trust_voidance",
-   "title": "A pure trust is voided by transgression; a compound trust is not",
+   "title": "A pure trust is voided by transgression («تبطل بالتعدي»); a compound trust is not",
    "terms": [
     "amana",
     "daman"
@@ -306,7 +306,7 @@
   },
   {
    "id": "abstention_possible_condition",
-   "title": "Abstain while a divorce condition may have occurred",
+   "title": "Abstain while the event a divorce is suspended on (taʿlīq) may have occurred",
    "terms": [
     "yaqin",
     "shakk",
@@ -329,11 +329,11 @@
     }
    ],
    "conditions": [
-    "divorce suspended on a condition",
+    "divorce suspended on an event (taʿlīq)",
     "its occurrence is possible",
     "its absence is not known"
    ],
-   "rationale": "Abstention is a rule of conduct, not of status. The doubtful condition does not displace the certain marriage (Q11), so the theorem abstention_keeps_status proves both at once: the held judgement is unchanged, and abstention is due. Whether abstention is obligatory (al-Qāḍī) or scrupulous (Ibn ʿAqīl) is a further question the reading does not decide.",
+   "rationale": "Abstention is a rule of conduct, not of status. The doubtful event does not displace the certain marriage (Q11), so the theorem abstention_keeps_status proves both at once: the held judgement is unchanged, and abstention is due. Whether abstention is obligatory (al-Qāḍī) or scrupulous (Ibn ʿAqīl) is a further question the reading does not decide.",
    "lean": [
     "Usul.Refinements.abstains",
     "Usul.Refinements.abstention_keeps_status",
@@ -402,7 +402,7 @@
     "it is treated as ghulūl (a riwāya)",
     "the ghāll forfeits his share (a riwāya)"
    ],
-   "rationale": "The case sits under the qāʿida of aggravated compensation but is not a doubling: the restitution is owed once and the aggravation is a forfeiture whose size is the share, not the theft. ghulul_is_not_doubling proves the burden can be below, at or above twice the theft, which is exactly the text's «قدر السرقة وأقل وأكثر».",
+   "rationale": "The case sits under the qāʿida of aggravated ḍamān («ضوعف عليه الضمان») but is not a doubling: the restitution is owed once and the aggravation is a forfeiture whose size is the share, not the theft. ghulul_is_not_doubling proves the burden can be below, at or above twice the theft, which is exactly the text's «قدر السرقة وأقل وأكثر».",
    "lean": [
     "Usul.Refinements.bootyTheftBurden",
     "Usul.Refinements.ghululForfeits",
@@ -688,7 +688,7 @@
   },
   {
    "id": "defective_compensation",
-   "title": "Named versus equivalent compensation in defective contracts",
+   "title": "Named (al-musammā) versus equivalent ḍamān in fāsid contracts",
    "terms": [
     "daman",
     "fasid",
@@ -717,7 +717,7 @@
    ],
    "conditions": [
     "the source identifies whether the selected position treats compensation as contract or loss liability",
-    "lawful consideration; the void/prohibited-consideration branch is outside this encoding"
+    "lawful consideration; the bāṭil/prohibited-consideration branch is outside this encoding"
    ],
    "rationale": "The source explicitly contrasts contract compensation in the selected nikah position with loss compensation for defective sale. The suite records the competing named/value positions. Muamalat.priceDue is reused after fixing that source fact, not as evidence for the fact itself. All readings and attributions await human review.",
    "lean": [
@@ -886,9 +886,9 @@
    ],
    "conditions": [
     "the act is a concession",
-    "its permitting condition is in doubt"
+    "its permitting sharṭ is in doubt"
    ],
-   "rationale": "A concession is qāʿida 68's first type, a condition that needs a firm basis. Its aṣl is the ʿazīma, so no aṣl supports it (rukhsa_is_firm_condition). Al-Mughnī's view, that wuḍūʾ is valid with doubt in its cause, is the other position.",
+   "rationale": "A concession is qāʿida 68's first type, a sharṭ that needs a firm basis. Its aṣl is the ʿazīma, so no aṣl supports it (rukhsa_is_firm_condition). Al-Mughnī's view, that wuḍūʾ is valid with doubt in its cause, is the other position.",
    "lean": [
     "Usul.Refinements.rukhsaValid",
     "Usul.Refinements.rukhsa_is_firm_condition",
@@ -902,7 +902,7 @@
    "conservative": null,
    "iq": [],
    "id": "taliq_al_bay",
-   "title": "A sale conditioned on a fact both know to hold is as if unconditioned",
+   "title": "A sale suspended (taʿlīq) on a fact both know to hold is as if unsuspended",
    "terms": [
     "shart",
     "sahih"
@@ -918,10 +918,10 @@
     }
    ],
    "conditions": [
-    "the condition is a present fact",
+    "the taʿlīq's event is a present fact",
     "both parties know it holds"
    ],
-   "rationale": "The bar on conditioned sale (al-Qāḍī, Ibn ʿAqīl) is against uncertainty in the contract. A condition both know to hold adds none, as with «بعتك هذه إن كانت جارية» and Aḥmad's naṣṣ on selling the absent thing «إن كان سالما».",
+   "rationale": "The bar on suspended sale («البيع لا يصح تعليقه») (al-Qāḍī, Ibn ʿAqīl) is against uncertainty in the contract. A taʿlīq on what both know to hold adds none, as with «بعتك هذه إن كانت جارية» and Aḥmad's naṣṣ on selling the absent thing «إن كان سالما».",
    "lean": [
     "Usul.Refinements.conditionedSaleValid"
    ],
@@ -952,7 +952,7 @@
     "he pardoned qiṣāṣ and its spread",
     "the spread reached the life"
    ],
-   "rationale": "If qiṣāṣ for the life is the heirs', the victim pardoned a right he did not know to be his to pardon. That is qāʿida 65's unknown condition (heirs_right_is_q65), so the pardon is void, as al-Qāḍī and others hold.",
+   "rationale": "If qiṣāṣ for the life is the heirs', the victim pardoned a right he did not know to be his to pardon. That is qāʿida 65's case, acting on what one thought not one's own («من تصرف في شيء يظن أنه لا يملكه») (heirs_right_is_q65), so the pardon is not ṣaḥīḥ, «وجزم القاضي وغيره بأنه لا يصح العفو».",
    "lean": [
     "Usul.Refinements.pardonOfSpreadValid",
     "Usul.Refinements.heirs_right_is_q65",
