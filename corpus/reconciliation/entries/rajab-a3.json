@@ -1,0 +1,91 @@
+{
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f009",
+   "grades": [
+    "wajh",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "al-Targhīb leaves two iḥtimālāt; Taṣḥīḥ al-Furūʿ corrects Ibn Mufliḥ's lead that on this premise she does not dispose. Against the reading's undemanded output.",
+   "evidence": [
+    {
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p339",
+     "excerpt_ar": "المصنف قد قدم حكما وهو أنه يصح ولا يتصرف، وهذا الصحيح من المذهب.",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+     "note": "On the view that the half does not enter the husband's ownership by force, al-Mardāwī says Ibn Mufliḥ put forward a ruling, «يصح ولا يتصرف», and that it is the correct view of the madhhab, against al-Targhīb's two wujūh; read as barring the wife's disposal."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f010",
+   "grades": [
+    "ashab",
+    "ashab"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "al-Qāḍī alone against Taqī al-Dīn; al-Buhūtī transmits Taqī al-Dīn's weakening without demur, so the support leans against the reading.",
+   "evidence": [
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p329",
+     "excerpt_ar": "والذي ينبغي أن تسليم الموهوب إلى الموهوب له يذهب حيث يشاء، وإرسال",
+     "position": 1,
+     "grade": "takhrij",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ (transmitting al-Ikhtiyārāt)",
+     "note": "Under the matn's rule that ownership in the sick man's gift is held in suspense («مراعى»), al-Buhūtī quotes al-Ikhtiyārāt: al-Qāḍī's view that the donee takes and disposes is weak; the gift should not be handed over to go where he wills, but held so the heir can reject it after the death."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f009",
+   "grades": [
+    "takhrij",
+    [
+     "ashab",
+     "jazm"
+    ]
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "al-Inṣāf and Ibn Mufliḥ correct non-liability and al-Iqnāʿ is decisive for it; the reading's liability side (ẓāhir al-Khiraqī) is marjūḥ. Residue: candidate farq, the buyer's planting by right in his own property.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v06:p294",
+     "excerpt_ar": "الصحيح من المذهب. اختاره القاضي وغيره. قال في الفروع: لا يضمن نقص الأرض",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "If the buyer, owner of the plants, uproots them, he does not make good the land's loss on the correct view of the madhhab, chosen by al-Qāḍī; al-Kāfī is decisive, reasoning that he committed no transgression."
+    },
+    {
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v07:p288",
+     "excerpt_ar": "ولا يضمن نقصها بالقلع، في الأصح، فإن أبي أخذه الشفيع بقيمته حين تقويمه،",
+     "position": 1,
+     "grade": "tashih",
+     "who": "Ibn Mufliḥ, al-Furūʿ",
+     "note": "The buyer who planted before the shafīʿ learnt of his right may take his plants and does not make good the land's loss by uprooting, on the sounder view."
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p374",
+     "excerpt_ar": "ذلك ولو مع ضرر ولا يضمن نقص الأرض ولا يلزمه تسوية حفرها",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "If the shafīʿ chooses to take and the buyer wants to uproot, he may, even with harm, and neither makes good the land's loss nor levels its holes."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v06:p295",
+     "excerpt_ar": "وقيل: يلزمه. وهو ظاهر كلام الخرقي. ومال إليه الحارثي.",
+     "position": 0,
+     "grade": "ashab",
+     "who": "al-Ḥārithī (via al-Inṣāf)",
+     "note": "The contrary wajh, liability, is the apparent sense of al-Khiraqī and al-Ḥārithī inclines to it, saying the levelling of the holes goes with the arsh."
+    }
+   ]
+  }
+ ]
+}
