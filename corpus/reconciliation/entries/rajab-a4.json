@@ -1,0 +1,175 @@
+{
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f006",
+   "grades": [
+    [
+     "nass",
+     "tashih"
+    ],
+    "jazm"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Aḥmad's naṣṣ with Ibn Rajab's «والصحيح الأول» against the jazm of Ibn Abī Mūsā, al-Mujarrad and the later ones, which al-Inṣāf makes the madhhab.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v06:p184",
+     "excerpt_ar": "والبناء. هذا المذهب مطلقا. أعني من غير ضمان النقص، ولا الأخذ بالقيمة.",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "On the buyer whose land proves another's: the owner uproots the planting and building, «هذا المذهب مطلقا», without making good the loss or taking it at value, «وعليه جماهير الأصحاب»."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f001",
+   "grades": [
+    [
+     "jazm",
+     "takhrij"
+    ],
+    [
+     "ashab",
+     "nass"
+    ],
+    "takhrij"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "al-Qāḍī's school against al-Khiraqī's bar, which al-Inṣāf corrects and the Muntahā states.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p292",
+     "excerpt_ar": "صنعة، كالكتابة والقرآن ونحوهما امتنع الرجوع، على الصحيح من المذهب.",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Among the seller's conditions for taking back from the bankrupt: an attached increase bars the return «على الصحيح من المذهب», al-Khiraqī's choice."
+    },
+    {
+     "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p481",
+     "excerpt_ar": "ورهن وإن أسقطه ربه فكما لو لم يتعلق ولم تزد زيادة متصلة كسمن وتعلم",
+     "position": 1,
+     "grade": "jazm",
+     "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+     "note": "The Muntahā lists among the conditions of the seller's return that the goods have not increased with an attached increase."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f002",
+   "grades": [
+    "nass",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Two riwāyāt; al-Inṣāf makes the bar (Ibn Manṣūr) the madhhab and al-Iqnāʿ states it.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p151",
+     "excerpt_ar": "الله - في رواية ابن منصور امتناع الرجوع. وهو المذهب على ما اصطلحناه في",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "On whether an attached increase bars the father's return: the bar, manṣūṣ in Ibn Manṣūr's riwāya, «وهو المذهب على ما اصطلحناه في الخطبة», corrected in al-Taṣḥīḥ."
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p037",
+     "excerpt_ar": "الثالث: ألا يزيد زيادة متصلة تزيد في قيمتها كالسمن والكبر والحمل وتعلم",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "The third condition of the father's return: no attached increase that raises its value; the next line, «منع الرجوع»."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f003",
+   "grades": [
+    "jazm",
+    "takhrij",
+    "takhrij"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "al-Khiraqī's ruling, undisputed among the aṣḥāb, against two takhrījs.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v08:p264",
+     "excerpt_ar": "يوم العقد) . اعلم أن الزيادة المتصلة: للزوجة، على الصحيح من المذهب. وليس",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The attached increase of the dower is the wife's «على الصحيح من المذهب», the husband having no return in it, «وعليه الأصحاب»."
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p216",
+     "excerpt_ar": "وثمر شجر وحرث أرض فهي لها أيضا فإن كانت غير محجور عليها خيرت بين دفع",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "An attached increase of the dower «فهي لها أيضا»; she chooses between giving the half increased or half its value."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f002",
+   "grades": [
+    "tashih",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Ibn Rajab's aṣaḥḥ (no liability) against al-Inṣāf and the Muntahā, which establish the value in the father's dhimma though the son cannot demand it.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p160",
+     "excerpt_ar": "به. وهو أحد الوجهين. والمذهب منهما قدمه في المغني. وهو ظاهر كلامه في",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "On the son's debt, the value of what the father destroyed and the like: it is established in the father's dhimma though not demanded; «والمذهب منهما», against the manṣūṣ that nothing is established."
+    },
+    {
+     "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p415",
+     "excerpt_ar": "ويثبت له في ذمته الدين ونحوه وإن وجد عين ماله الذي أقرضه أو باعه ونحوه",
+     "position": 1,
+     "grade": "jazm",
+     "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+     "note": "After barring the son's claim for a debt or «قيمة متلف»: it is established for him in the father's dhimma."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f002",
+   "grades": [
+    "ashab",
+    "ashab"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "al-Mujarrad against al-Talkhīṣ; al-Inṣāf and the Muntahā hold full liability even with the mount in its owner's hand.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v06:p054",
+     "excerpt_ar": "أحدهما: يضمن قيمتها كلها. وهو المذهب. وهو ظاهر كلام الخرقي،",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "On the hirer who exceeds the load or distance while the mount is in its owner's hand: he is liable for its whole value, «وهو المذهب», against half the value (and al-Talkhīṣ's no liability by an act of God)."
+    },
+    {
+     "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p098",
+     "excerpt_ar": "أو إلى موضع فجاوزه فالمسمى ولزائد أجرة مثله وإن تلفت فقيمتها كلها، ولو",
+     "position": 0,
+     "grade": "jazm",
+     "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+     "note": "If it perishes, its whole value, «ولو أنها بيد صاحبها» (the next line)."
+    }
+   ]
+  }
+ ]
+}
