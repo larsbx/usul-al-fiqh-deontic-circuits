@@ -1,16 +1,16 @@
 {
- "total": 549,
+ "total": 574,
  "classes": {
-  "derivable": 224,
-  "genuine_ikhtilaf": 318,
+  "derivable": 236,
+  "genuine_ikhtilaf": 331,
   "missing_fact": 1,
   "missing_rule": 5,
   "segmentation_error": 1
  },
- "coverage": 0.989,
- "madhhab_coverage": 0.706,
+ "coverage": 0.99,
+ "madhhab_coverage": 0.709,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 163,
+ "ikhtilaf_matching_madhhab": 170,
  "gaps_open": 6,
  "revisited": 37,
  "revisit_queue": [],
@@ -379,6 +379,24 @@
   "rescue_loss_liability": {
    "derivable": 8,
    "genuine_ikhtilaf": 1
+  },
+  "attached_takeover_at_value": {
+   "derivable": 7,
+   "genuine_ikhtilaf": 3
+  },
+  "attached_growth_follows": {
+   "genuine_ikhtilaf": 4
+  },
+  "cut_sale_left_to_ripen": {
+   "genuine_ikhtilaf": 1
+  },
+  "seizing_hand_liable": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 2
+  },
+  "hand_with_owner_liable": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 3
   }
  }
 }

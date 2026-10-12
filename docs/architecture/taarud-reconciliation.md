@@ -149,6 +149,20 @@ Tranche 11 added 3 contradictions and 8 evidence items, again after checking eve
 
 All six resolve by tarjīḥ against their readings and join the worklist. 1.f002 is recorded as agreeing (al-Inṣāf, «الصحيح من المذهب») though the muʿtamad holds the other side («نصا»); 75.f008's facts may misstate «مع تعذره». The ledger stands at 162 entries and 414 evidence items, with 19 jamʿ, 134 tarjīḥ (73 residues) and 9 tawaqquf.
 
+**Lane A, round 1** added 17 contradictions and 35 evidence items, every one a residue; the shards named candidate farqs but cited none decisive, so no jamʿ was attempted. The ledger stands at 179 entries and 449 active evidence items, with 19 jamʿ, 151 tarjīḥ (90 residues) and 9 tawaqquf. Candidate farqs and register questions from the round:
+
+| Farʿ / qāʿida | Candidate farq or question |
+|---|---|
+| 71.f001 | Kashshāf: the ḥākim «يستغنيان بمالهما في بيت المال», the reading's own `compensatedOtherwise` fact, which Ibn Rajab's text does not state |
+| 81.f001, f003 | al-Qāḍī's annulment-from-the-root vs divorce-from-now (Ibn Rajab rejects it); the returner's consent to return with the increase |
+| 78.f009 | the shufʿa buyer planted by right in his own property, no ʿudwān (al-Kāfī, al-Qāḍī) |
+| 80 | the roots as trees for sale and blight but as crops for usurpation and musāqāh: a per-masʾala farq (lasting years vs. no woody stem) |
+| 67 (register) | the reading follows Ibn Rajab's gift/release takhrīj, which the madhhab rejects for release; or plain recourse with the takhrīj as residue |
+| 80 (register) | the qāʿida states only «فيه وجهان»; the reading takes the wajh whose ground is stated |
+| 90.f002 (register) | Ibn Rajab's «المذهب عند صاحب المحرر» against al-Inṣāf's reading of al-Muḥarrar |
+| 53.f009 (register) | in al-Furūʿ's «ولا يتصرف», who does not dispose, wife or husband |
+| 78 (register) | the qāʿida's «فوجهان» for a bare permission to occupy stays open |
+
 **Left as residues, for want of a cited farq:**
 
 | Encoder | Residues / cases | Why no jamʿ |

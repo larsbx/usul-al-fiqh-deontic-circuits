@@ -5,13 +5,13 @@
    "grades": [
     [
      "nass",
-     "tashih"
+     "ashab"
     ],
     "jazm"
    ],
    "jam": null,
    "naskh": null,
-   "note": "Aḥmad's naṣṣ with Ibn Rajab's «والصحيح الأول» against the jazm of Ibn Abī Mūsā, al-Mujarrad and the later ones, which al-Inṣāf makes the madhhab.",
+   "note": "Aḥmad's naṣṣ with Ibn Rajab's own «والصحيح الأول» (an author's preference, graded ashab) against the jazm of Ibn Abī Mūsā, al-Mujarrad and the later ones, which al-Inṣāf makes the madhhab («هذا المذهب مطلقا … وعليه جماهير الأصحاب»).",
    "evidence": [
     {
      "ref": "src:openiti-insaf-shamela21609/v06:p184",

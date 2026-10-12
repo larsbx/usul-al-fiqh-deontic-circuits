@@ -544,3 +544,19 @@ import Usul
 #guard (Usul.Readings.RajabA3.lossLiable true false true) == false
 #guard (Usul.Readings.RajabA3.lossLiable true true false) == false
 #guard (Usul.Readings.RajabA3.lossLiable true true true) == false
+#guard (Usul.Readings.RajabA4.takenOverAtValue false false) == true
+#guard (Usul.Readings.RajabA4.takenOverAtValue false true) == false
+#guard (Usul.Readings.RajabA4.takenOverAtValue true false) == false
+#guard (Usul.Readings.RajabA4.takenOverAtValue true true) == false
+#guard (Usul.Readings.RajabA4.attachedGrowthFollows false false) == false
+#guard (Usul.Readings.RajabA4.attachedGrowthFollows false true) == true
+#guard (Usul.Readings.RajabA4.attachedGrowthFollows true false) == true
+#guard (Usul.Readings.RajabA4.attachedGrowthFollows true true) == true
+#guard (Usul.Readings.RajabA4.cutSaleVoid false) == false
+#guard (Usul.Readings.RajabA4.cutSaleVoid true) == true
+#guard (Usul.Readings.RajabA4.seizingHandLiable false false) == false
+#guard (Usul.Readings.RajabA4.seizingHandLiable false true) == true
+#guard (Usul.Readings.RajabA4.seizingHandLiable true false) == false
+#guard (Usul.Readings.RajabA4.seizingHandLiable true true) == false
+#guard (Usul.Readings.RajabA4.liableWithOwnerHand false) == false
+#guard (Usul.Readings.RajabA4.liableWithOwnerHand true) == true
