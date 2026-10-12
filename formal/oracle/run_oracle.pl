@@ -17,6 +17,7 @@
 %    tanaqud/<T>/resolution the register's resolution is jamʿ, the first stage
 %    furuq/<F>/madhhab, furuq/<F>/ruling  corpus/furuq/*.json: each item's two rulings from its grade
 %    furuq/<F>/overturns    an item that overturns an earlier one: a bare report, overturned by his own grade
+%    term/<key>/<ruling>    corpus/dossier/glossary.json: each ruled term's rulings (al-manī, al-madhy, al-wadī)
 %
 %  Exit status: 0 all agree; 1 a vector disagrees; 2 nothing could be judged
 %  (no data found, or a load warning or error).
@@ -39,6 +40,7 @@ user:message_hook(Message, Kind, _) :-
 :- use_module(hadith_oracle).
 :- use_module(tanaqud_oracle).
 :- use_module(furuq_oracle).
+:- use_module(tahara_oracle).
 
 :- initialization(main, main).
 
@@ -93,7 +95,16 @@ run(Root) :-
     findall(I, ( member(F, FFs), file_name_extension(_, json, F),
                  directory_file_path(FDir, F, P), read_json(P, T), member(I, T.items) ), Items),
     forall(member(I, Items), furuq_item(I)),
-    forall(( member(I, Items), get_dict(overturns, I, PId) ), furuq_overturn(Items, I, PId)).
+    forall(( member(I, Items), get_dict(overturns, I, PId) ), furuq_overturn(Items, I, PId)),
+    directory_file_path(Root, 'corpus/dossier/glossary.json', GlFile),
+    read_json(GlFile, Gl),
+    forall(( member(T, Gl.terms), get_dict(rulings, T, Rs), atom_string(K, T.key) ),
+           forall(get_dict(N, Rs, Exp), term_ruling(K, N, Exp))).
+
+term_ruling(K, N, Exp) :-
+    format(atom(Name), "term/~w/~w", [K, N]),
+    ( ruling(K, N, Got) -> true ; Got = none ),
+    check(Name, Exp, Got).
 
 furuq_item(I) :-
     rulings(I.grade, M, A),

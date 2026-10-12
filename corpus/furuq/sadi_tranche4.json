@@ -147,7 +147,7 @@
   {
    "id": "F68",
    "cases_en": [
-    "removing impurity, paying maintenance or debts (valid without intention)",
+    "removing najāsa, paying maintenance or debts (valid without intention)",
     "lifting ḥadath, zakāt, expiations, vows (intention required)"
    ],
    "madhhab": "apart",
@@ -185,8 +185,8 @@
   {
    "id": "F70",
    "cases_en": [
-    "heavy impurity (dog, pig: seven washings, one with earth) and light impurity (sprinkling)",
-    "intermediate impurity"
+    "heavy najāsa (dog, pig: seven washings, one with earth) and light najāsa (sprinkling)",
+    "intermediate najāsa"
    ],
    "madhhab": "apart",
    "grade": "sahih",
@@ -202,8 +202,8 @@
   {
    "id": "F71",
    "cases_en": [
-    "intermediate impurity elsewhere (seven washings, the mashhūr)",
-    "intermediate impurity on the ground (one washing)"
+    "intermediate najāsa elsewhere (seven washings, the mashhūr)",
+    "intermediate najāsa on the ground (one washing)"
    ],
    "madhhab": "apart",
    "grade": "daif",
@@ -219,8 +219,8 @@
   {
    "id": "F72",
    "cases_en": [
-    "the blood of impure animals (no amount excused), and blood left in slaughtered meat (pure)",
-    "other blood (impure, a little excused)"
+    "the blood of najis animals (no amount excused), and blood left in slaughtered meat (pure)",
+    "other blood (najis, a little excused)"
    ],
    "madhhab": "apart",
    "grade": "sahih",

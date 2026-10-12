@@ -1,0 +1,198 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://example.invalid/schemas/nusus.schema.json",
+ "title": "The textual foundation: āyāt and ḥadīth the bank rests on, each pinned and verified",
+ "type": "object",
+ "required": [
+  "status",
+  "note",
+  "ayat",
+  "ahadith",
+  "athar"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "status": {
+   "const": "candidate"
+  },
+  "note": {
+   "type": "string"
+  },
+  "ayat": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "sura",
+     "aya",
+     "witness",
+     "excerpt_ar",
+     "en"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^Q[0-9]{3}:[0-9]{3}$"
+     },
+     "sura": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 114
+     },
+     "aya": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "witness": {
+      "const": "tanzil-quran-simple"
+     },
+     "excerpt_ar": {
+      "type": "string",
+      "minLength": 1
+     },
+     "en": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "ahadith": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "narrator",
+     "matn_ar",
+     "en",
+     "sources",
+     "albani"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^H-[a-z0-9-]+$"
+     },
+     "narrator": {
+      "type": "string"
+     },
+     "matn_ar": {
+      "type": "string",
+      "minLength": 1
+     },
+     "en": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+       "type": "object",
+       "required": [
+        "work",
+        "witness",
+        "number"
+       ],
+       "additionalProperties": false,
+       "properties": {
+        "work": {
+         "type": "string"
+        },
+        "witness": {
+         "type": "string"
+        },
+        "number": {
+         "type": "integer",
+         "minimum": 1
+        }
+       }
+      }
+     },
+     "albani": {
+      "type": "object",
+      "required": [
+       "work",
+       "witness",
+       "number",
+       "verdict"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "work": {
+        "const": "albani.irwa"
+       },
+       "witness": {
+        "type": "string"
+       },
+       "number": {
+        "type": "integer",
+        "minimum": 1
+       },
+       "verdict": {
+        "enum": [
+         "sahih",
+         "hasan",
+         "daif",
+         "daifJiddan",
+         "mawdu"
+        ]
+       }
+      }
+     }
+    }
+   }
+  },
+  "athar": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "by",
+     "excerpt_ar",
+     "en",
+     "work",
+     "witness",
+     "status",
+     "albani_ar"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^A-[a-z0-9-]+$"
+     },
+     "by": {
+      "type": "string"
+     },
+     "excerpt_ar": {
+      "type": "string",
+      "maxLength": 160
+     },
+     "en": {
+      "type": "string"
+     },
+     "work": {
+      "type": "string"
+     },
+     "witness": {
+      "type": "string"
+     },
+     "status": {
+      "enum": [
+       "mawquf",
+       "maqtu"
+      ]
+     },
+     "albani_ar": {
+      "type": "string",
+      "maxLength": 160
+     }
+    }
+   }
+  }
+ }
+}

@@ -439,6 +439,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f006`: Ibn Rajab under qāʿida 140.
   > السرقة من الغنيمة إذا قلنا هي كالغلول وإن الغال يحرم سهمه منها على رواية، فيجتمع عليه غرم ما سرقه مع حرمان سهمه المستحق منها، وقد يكون قدر السرقة وأقل وأكثر. وليس من هذه القاعدة تغليظ الدية بقتل ذي الرحم عمدا ; لأن القصاص فيه قد يكون واجبا في غير الابن، وإنما هو لزيادة حرمة الجناية فهو كالتضعيف بالقتل في الحرم والإحرام.
 
+<a id="hadath"></a>
+
+## al-ḥadath (الحدث)
+
+*al-ḥadath: the state lifted (rafʿ) by wuḍūʾ or ghusl; not najāsa.* The state that bars prayer and is lifted (rafʿ) by wuḍūʾ (minor) or ghusl (major, janāba), with intention (F68); tayammum is made for it alone (F121). Ibn al-Qayyim: «ما فرق الله بينه من إزالة النجاسة ورفع الحدث».
+
+**Related:** [najasa](#najasa), [maniyy](#maniyy), [madhy](#madhy)
+
+**Texts**
+
+- `src:openiti-ilam-shamela11496/v01:p222`: Iʿlām: najāsa is removed and ḥadath lifted.
+  > وجمعتم بين ما فرق الله بينه من إزالة النجاسة ورفع الحدث
+
 <a id="haram"></a>
 
 ## al-muḥarram / al-ḥarām (المحرم)
@@ -757,6 +770,26 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002`: Ibn Rajab under qāʿida 106.
   > اللقطة بعد ms309 الحول فإنها تتملك لجهالة ربها وما لا يتملك منها يتصدق به عنه على الصحيح وكذلك الودائع والغصوب ونحوها.
 
+<a id="madhy"></a>
+
+## al-madhy (المذي)
+
+*al-madhy: the fluid that obliges washing and wuḍūʾ, not ghusl.* Of what exits from the front passage, the one that is najis and obliges washing the private part and wuḍūʾ, not ghusl (F120: «ومنه نجس ينقض الوضوء ويوجب غسله، وغسل الذكر والأنثيين منه وهو المذي»). It rests on ʿAlī's ḥadīth «يغسل ذكره ويتوضأ» (Muslim 303) and «إذا رأيت المذي فاغسل ذكرك، وتوضأ وضوءك للصلاة» (Abū Dāwūd 206), ṣaḥīḥ in al-Albānī's verdict (al-Irwāʾ 108, 125).
+
+**Conditions**
+
+- najis
+- obliges wuḍūʾ, not ghusl
+
+**Related:** [maniyy](#maniyy), [wady](#wady), [najasa](#najasa)
+
+**Lean:** `Usul.Tahara.Kharij`, `Usul.Tahara.madhy_wady_alike`
+
+**Texts**
+
+- `src:shamela-22592/v01:p145`: al-Irwāʾ 108, «* صحيح»: al-madhy obliges washing and wuḍūʾ.
+  > قوله فى المذى: " يغسل ذكره ويتوضأ ". متفق عليه
+
 <a id="mafhum_al_mukhalafa"></a>
 
 ## mafhūm al-mukhālafa (مفهوم المخالفة)
@@ -883,6 +916,28 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > ومن أجل كون العلة لا بد من اشتمالها على حكمة تدعو إلى الامتثال، كان مانعها وصفا وجوديا يخل بحكمتها، ويسمى مانع السبب، فإن لم يخل بحكمتها، بل بالحكم فقط، والحكمة باقية، سمي مانع الحكم.
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057`: Ibn Rajab: when a ruling and its impediment coincide, the well-known madhhab is that the ruling does not arise (Ibn Ḥāmid disagrees).
   > إذا تقارن الحكم ووجود المنع منه، فهل يثبت الحكم أم لا؟ المذهب المشهور أنه لا يثبت. وقال ابن حامد يثبت وإن تقارن الحكم بالدي المانع منه فهل يثبت الحكم معه فيه وجهان، واختار القاضي في المجرد وابن عقيل في الفصول وصاحب المغني أنه لا يثبت واختار القاضي ms118 في خلافه وفي الجامع الكبير أنه يثبت وكذلك ابن عقيل في عمد الأدلة وأبو الخطاب فأما اقتران الحكم والمنع منه فيندرج تحته مسائل : منها لو قال الزوج لا
+
+<a id="maniyy"></a>
+
+## al-manī (المني)
+
+*al-manī: the fluid of janāba (not «semen» at large, which also covers al-madhy and al-wadī).* Of what exits from the front passage, the one that obliges ghusl and is ṭāhir, as al-Saʿdī reports the division (F120: «ومنه طاهر يوجب الغسل وهو المني»). Its ghusl rests on al-Māʾida 6 and al-Nisāʾ 43, on ʿAlī's «فإذا فضخت الماء فاغتسل» (Abū Dāwūd 206) and Umm Salama's «نعم إذا رأت الماء» (al-Bukhārī 282); its ṭahāra on ʿĀʾisha's «كنت أفرك المني من ثوب رسول الله ﷺ فيصلي فيه» (Abū Dāwūd 372). al-Albānī grades all three ṣaḥīḥ (al-Irwāʾ 125, 126, 180).
+
+**Conditions**
+
+- ṭāhir: not washed as a najāsa
+- obliges ghusl (rafʿ al-ḥadath al-akbar), not wuḍūʾ only
+
+**Related:** [madhy](#madhy), [wady](#wady), [najasa](#najasa), [hadath](#hadath)
+
+**Lean:** `Usul.Tahara.Kharij`, `Usul.Tahara.semen_conflates`, `Usul.Tahara.q15_f001_turns_on_the_name`
+
+**Texts**
+
+- `src:shamela-22592/v01:p196`: al-Irwāʾ 180, «* صحيح»: al-manī is rubbed off and prayed in.
+  > كنت أفرك المنى من ثوب رسول الله صلى الله عليه وسلم ثم يذهب فيصلى به
+- `src:shamela-22592/v01:p162`: al-Irwāʾ 125, «* صحيح»: al-madhy obliges washing and wuḍūʾ, al-manī ghusl.
+  > إذا رأيت المذى فاغسل ذكرك وتوضأ وضوءك للصلاة , فإذا فضخت الماء فاغتسل
 
 <a id="masalik_al_illa"></a>
 
@@ -1030,6 +1085,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > النهى صيغة لا تفعل من الأعلى للأدنى إذا تجردت عن قرينة فهى نهى. وقد تقدم في الأمر هل يشترط العلو والاستعلاء أو لا يشترطان فالنهى مثله. وإطلاق النهى ماذا يقتضى؟ في المسألة مذاهب. أحدها: الأصل في إطلاقه التحريم ثم هذا مذهبنا ونص عليه الشافعى في الرسالة في باب العلل في الأحاديث واختاره أصحابه وهو الحق. والثانى: كراهة التنزيه وبالغ ms149 الشافعى في إنكار ذلك ذكره الجوينى في مسألة مفردة في التأويلات. و
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009`: When the prohibition voids worship.
   > في العبادات الواقعة على وجه محرم، إن كان التحريم عائدا إلى ذات العبادة على وجه يختص بها لم يصح، وإن كان عائدا إلى شرطها فإن كان على وجه يختص بها فكذلك أيضا، وإن كان لا يختص بها ففي الصحة روايتان أشهرهما عدمها، وإن عاد إلى ما ليس بشرط فيها ففي الصحة وجهان واختار أبو بكر عدم الصحة وخالفه الأكثرون فللأول أمثلة كثيرة: (منها) صوم يوم العيد فلا يصح بحال على المذهب (ومنها) الصلاة في أوقات النهي. (ومنها) 
+
+<a id="najasa"></a>
+
+## al-najāsa (النجاسة)
+
+*al-najāsa: a physical impurity, removed (izāla); not ḥadath.* A physical impurity, which is removed (izāla), not lifted; removing it is valid without intention (F68), and tayammum is not made for it (F121: «النجاسات كلها لا تيمم عنها، وإنما يتيمم عن الأحداث»). Ibn al-Qayyim: «ما فرق الله بينه من إزالة النجاسة ورفع الحدث». The English «impurity» does not distinguish it from ḥadath; the register names it.
+
+**Related:** [hadath](#hadath), [maniyy](#maniyy), [madhy](#madhy), [wady](#wady)
+
+**Texts**
+
+- `src:openiti-ilam-shamela11496/v01:p222`: Iʿlām: najāsa is removed and ḥadath lifted, two things God separated.
+  > وجمعتم بين ما فرق الله بينه من إزالة النجاسة ورفع الحدث
 
 <a id="naqd"></a>
 
@@ -1580,6 +1648,27 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > يخص العموم بالعادة على المنصوص، وذلك في مسائل ; منها: لو وصى لأقربائه أو أهل بيته، قال أحمد في رواية ابن القاسم: إذا قال لأهل بيتي أو قرابتي فهو على ما يعرف من مذهب الرجل، إن كان يصل عمته وخالته، ونقل سندي نحوه. وقال في رواية صالح في الوصية لأهل بيته: ينظر من كان يصل من أهل بيته من قبل أبيه وأمه، فإن كان لا يصل قرابته من قبل أمه فأهل بيته من قبل أبيه. واختلف الأصحاب في حكاية هذه الرواية على طريقين
 - `src:shamela-9942/v01:p020`: Ibn ʿUthaymīn: ḥaqīqa ʿurfiyya.
   > والحقيقة العرفية هي: اللفظ المستعمل فيما وضع له في العرف.
+
+<a id="wady"></a>
+
+## al-wadī (الودي)
+
+*al-wadī: ruled as al-madhy, on an athar.* Ruled as al-madhy: washing and wuḍūʾ, not ghusl. Its support is the athar of Ibn ʿAbbās only («وأما المذي والودي فقال: اغسل ذكرك أو مذاكيرك وتوضأ وضوءك للصلاة»), which al-Albānī marks «هذا موقوف» and whose standing as ḥujja alone he calls disputed (Tamām al-Minna). The register records it as an athar, below a marfūʿ naṣṣ.
+
+**Conditions**
+
+- support: athar mawqūf (Ibn ʿAbbās), not a marfūʿ naṣṣ
+
+**Related:** [madhy](#madhy), [maniyy](#maniyy)
+
+**Lean:** `Usul.Tahara.Kharij`, `Usul.Tahara.madhy_wady_alike`
+
+**Texts**
+
+- `src:shamela-11122/v01:p099`: Tamām al-Minna: the athar of Ibn ʿAbbās (al-Bayhaqī), as quoted.
+  > أما المني فهو الذي منه الغسل وأما المذي والودي فقال: اغسل ذكرك أو مذاكيرك وتوضأ وضوءك للصلاة
+- `src:shamela-11122/v01:p099`: al-Albānī on it: mawqūf, disputed as a sole ḥujja.
+  > هذا موقوف والاستدلال به وحده - مع أنه مختلف في صلاحيته للاحتجاج به
 
 <a id="wajib"></a>
 

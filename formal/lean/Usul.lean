@@ -18,3 +18,4 @@ import Usul.Refinements
 import Usul.Tanaqud
 import Usul.Furuq
 import Usul.Seam
+import Usul.Tahara

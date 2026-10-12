@@ -507,7 +507,7 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f000",
       "encoder": "istihlak",
       "class": "missing_fact",
-      "note": "Water in which impurity is consumed: if the water is much, the impurity's ruling falls «بغير خلاف»; if little, two riwāyas. The ruling turns on the quantity of water, which the reading (consumed as non-existent) does not express, so the record is not derivable as a whole. (Opening example, segmented as f000.)",
+      "note": "Water in which najāsa is consumed: if the water is much, the najāsa's ruling falls «بغير خلاف»; if little, two riwāyas. The ruling turns on the quantity of water, which the reading (consumed as non-existent) does not express, so the record is not derivable as a whole. (Opening example, segmented as f000.)",
       "needs": [
         "fact:water_quantity"
       ]

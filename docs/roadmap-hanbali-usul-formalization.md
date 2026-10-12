@@ -302,6 +302,27 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
   - **T-15, Ibn Rajab 14 ⟂ 15: a breach certain in one of two.** Q14's second riwāya attaches the breach because «الأصل زال يقينا في أحدهما». Q15 keeps each presumption and ignores its consequence for another. Ibn Rajab's qayd is «فينظر إليهما مجتمعين في حكم يتعلق باجتماعهما»: taken together Q14 governs, each alone Q15 (`t15_jam`).
   - **Ibn Rajab 9 with al-Saʿdī Q38: no clash.** Ibn Rajab's four sites map onto al-Saʿdī's three, the two kinds of condition becoming one, and the rulings agree on every site (`q9_refines_q38`).
   The register holds 15 pairs. The oracle checks 633 vectors and kills 32 mutants.
+- **The textual foundation, pinned (layer `nusus`), and guards on terms.** The Qurʾān and the ḥadīth collections are now registered witnesses, fetched and pinned by sha256 in `corpus/lock.json`. They are the foundation every other layer rests on. Full texts stay in `.cache`.
+  - **The texts.**
+    - The Qurʾān: Tanzil's verbatim text (`tanzil-quran-simple`), with its licence footer.
+    - The ḥadīth, from OpenITI at fixed commits:
+      - al-Bukhārī (Shamela 1681), Muslim (1727), Abū Dāwūd (1726);
+      - al-Tirmidhī (7895), al-Nasāʾī's al-Mujtabā (829), Ibn Māja (1198);
+      - the Muwaṭṭaʾ (1699), Musnad Aḥmad (25794), al-Dārimī (21795).
+  - **`corpus/nusus/foundation.json`.** Each āya is quoted and checked letters-only against the pinned muṣḥaf at its sūra and āya. Each marfūʿ ḥadīth is checked in each cited collection, under its number. Each also carries al-Albānī's verdict from al-Irwāʾ, checked against the «* صحيح» line of that entry, and is admitted only through the D4 gate (`Seam.admitted`). An athar is recorded as an athar, with al-Albānī's word on it, never as a marfūʿ naṣṣ.
+  - **Terms resting on it.** The glossary gains al-manī (`maniyy`), al-madhy and al-wadī (`wady`), with rulings that cite foundation ids. The generated `UsulTest/NususTable.lean` checks those rulings against `Usul.Tahara`, and the oracle checks them against `tahara_oracle.pl`.
+    - al-manī is ṭāhir and obliges ghusl: al-Māʾida 6, al-Nisāʾ 43; Abū Dāwūd 206 and 372, al-Bukhārī 282; al-Irwāʾ 125, 126, 180.
+    - al-madhy is najis and obliges wuḍūʾ: Muslim 303; al-Irwāʾ 108.
+    - al-wadī follows the athar of Ibn ʿAbbās, which al-Albānī marks «موقوف».
+    - The division itself is al-Saʿdī's F120. `Usul.Tahara.semen_conflates` proves that the English «semen» covers terms whose rulings differ on both counts.
+    - al-najāsa and al-ḥadath are entered as distinct, on Ibn al-Qayyim's «ما فرق الله بينه من إزالة النجاسة ورفع الحدث».
+    - «إنما الماء من الماء» (Muslim 343) is deliberately not cited: it bears on the naskh question of intercourse without emission.
+  - **Guards (`corpus/dossier/term_guards.json`, `tests/test_nusus.py`).** Any English field of the registers, or Lean doc comment, that says «semen» or «impurity» must name the Arabic term it means.
+    - The guard found 30 such fields.
+    - Two of them were mislabelled by a mechanical replacement and were corrected from the source. Ibn Rajab 18.f015 «الأحداث الموجبة للطهارة» is ḥadath, not najāsa. 159.f007 «لو تيقن حدثا أو نجاسة» names both.
+    - The glossary key `mani` is al-māniʿ (المانع). Its ASCII fold collides with al-manī, so homographs must now declare each other in `distinct_from`, and the new term is keyed `maniyy`.
+    - One frozen gap case (Ibn Rajab 22.f000) was re-pinned because its English note changed (impurity → najāsa). Its class, facts and needs are unchanged.
+  Next, by the same method: give the cited dalīl of the bank's existing terms and qawāʿid their place in the foundation, starting with the qawāʿid that already quote a naṣṣ.
 - **Exit:** every new rule is classified and linked; the coverage trend is reported. Disagreement with Ibn ʿUthaymīn's tarjīḥ is classified as in M4, never silently patched.
 
 #### M9 · Qiyās metatheory ⟵ M5, M7

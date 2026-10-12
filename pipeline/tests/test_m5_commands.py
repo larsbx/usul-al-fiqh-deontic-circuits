@@ -23,7 +23,8 @@ ORIGINAL_GAP_CASE_SHA256 = {
     takhrij.LAHHAM.format(43) + ".f004": "6c67447789d873d8dc6778ef86c92bc705baf672195282ba6782e4ef2ba8ce65",
     takhrij.LAHHAM.format(43) + ".f007": "6541542f5cd5909107f61ba24243afa448e298b15e9744ba3952d11e3abeb15c",
     takhrij.LAHHAM.format(52) + ".f007": "0ba95f474f71653933db2a1bb78fe2483a9ddac3e918abd07e98c499453b9543",
-    takhrij.RAJAB.format(22) + ".f000": "ba72663774a7a84972999b44d0291ed0f05f3a5db176c740042be8d68353ec0a",
+    # Re-pinned 2026-10-12: its English note now names al-najāsa for «impurity» (term guards); class, facts and needs unchanged.
+    takhrij.RAJAB.format(22) + ".f000": "6315af35db2d10d33e1eb3096200236c1a99d586edda495c19949fe031f64a46",
 }
 
 

@@ -493,6 +493,9 @@
      "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057",
      "note": "Ibn Rajab: when a ruling and its impediment coincide, the well-known madhhab is that the ruling does not arise (Ibn Ḥāmid disagrees)."
     }
+   ],
+   "distinct_from": [
+    "maniyy"
    ]
   },
   {
@@ -3049,6 +3052,198 @@
      "ref": "src:openiti-lahham-shamela8526/v01:p276",
      "excerpt_ar": "والفرق بين النصين أن الشهادة حق عليه فتسمع بعد النفي كما لو أقر بالحق بعد جحوده والبينة حق له فلا تسمع كما لو ادعى الخق بعد أن نفاه",
      "note": "The farq: bayyina is a right for him."
+    }
+   ]
+  },
+  {
+   "key": "maniyy",
+   "ar": "المني",
+   "tr": "al-manī",
+   "gloss": "al-manī: the fluid of janāba (not «semen» at large, which also covers al-madhy and al-wadī)",
+   "definition": "Of what exits from the front passage, the one that obliges ghusl and is ṭāhir, as al-Saʿdī reports the division (F120: «ومنه طاهر يوجب الغسل وهو المني»). Its ghusl rests on al-Māʾida 6 and al-Nisāʾ 43, on ʿAlī's «فإذا فضخت الماء فاغتسل» (Abū Dāwūd 206) and Umm Salama's «نعم إذا رأت الماء» (al-Bukhārī 282); its ṭahāra on ʿĀʾisha's «كنت أفرك المني من ثوب رسول الله ﷺ فيصلي فيه» (Abū Dāwūd 372). al-Albānī grades all three ṣaḥīḥ (al-Irwāʾ 125, 126, 180).",
+   "conditions": [
+    "ṭāhir: not washed as a najāsa",
+    "obliges ghusl (rafʿ al-ḥadath al-akbar), not wuḍūʾ only"
+   ],
+   "related": [
+    "madhy",
+    "wady",
+    "najasa",
+    "hadath"
+   ],
+   "distinct_from": [
+    "madhy",
+    "wady",
+    "mani"
+   ],
+   "lean": [
+    "Usul.Tahara.Kharij",
+    "Usul.Tahara.semen_conflates",
+    "Usul.Tahara.q15_f001_turns_on_the_name"
+   ],
+   "lean_value": "Usul.Tahara.Kharij.maniyy",
+   "rulings": {
+    "najis": false,
+    "obliges": "ghusl"
+   },
+   "nusus": [
+    "Q005:006",
+    "Q004:043",
+    "H-ali-fadakh",
+    "H-umm-salama",
+    "H-aisha-fark"
+   ],
+   "furuq": [
+    "F120"
+   ],
+   "refs": [
+    {
+     "ref": "src:shamela-22592/v01:p196",
+     "excerpt_ar": "كنت أفرك المنى من ثوب رسول الله صلى الله عليه وسلم ثم يذهب فيصلى به",
+     "note": "al-Irwāʾ 180, «* صحيح»: al-manī is rubbed off and prayed in."
+    },
+    {
+     "ref": "src:shamela-22592/v01:p162",
+     "excerpt_ar": "إذا رأيت المذى فاغسل ذكرك وتوضأ وضوءك للصلاة , فإذا فضخت الماء فاغتسل",
+     "note": "al-Irwāʾ 125, «* صحيح»: al-madhy obliges washing and wuḍūʾ, al-manī ghusl."
+    }
+   ]
+  },
+  {
+   "key": "madhy",
+   "ar": "المذي",
+   "tr": "al-madhy",
+   "gloss": "al-madhy: the fluid that obliges washing and wuḍūʾ, not ghusl",
+   "definition": "Of what exits from the front passage, the one that is najis and obliges washing the private part and wuḍūʾ, not ghusl (F120: «ومنه نجس ينقض الوضوء ويوجب غسله، وغسل الذكر والأنثيين منه وهو المذي»). It rests on ʿAlī's ḥadīth «يغسل ذكره ويتوضأ» (Muslim 303) and «إذا رأيت المذي فاغسل ذكرك، وتوضأ وضوءك للصلاة» (Abū Dāwūd 206), ṣaḥīḥ in al-Albānī's verdict (al-Irwāʾ 108, 125).",
+   "conditions": [
+    "najis",
+    "obliges wuḍūʾ, not ghusl"
+   ],
+   "related": [
+    "maniyy",
+    "wady",
+    "najasa"
+   ],
+   "distinct_from": [
+    "maniyy",
+    "wady"
+   ],
+   "lean": [
+    "Usul.Tahara.Kharij",
+    "Usul.Tahara.madhy_wady_alike"
+   ],
+   "lean_value": "Usul.Tahara.Kharij.madhy",
+   "rulings": {
+    "najis": true,
+    "obliges": "wudu"
+   },
+   "nusus": [
+    "H-ali-madhy",
+    "H-ali-fadakh"
+   ],
+   "furuq": [
+    "F120"
+   ],
+   "refs": [
+    {
+     "ref": "src:shamela-22592/v01:p145",
+     "excerpt_ar": "قوله فى المذى: \" يغسل ذكره ويتوضأ \". متفق عليه",
+     "note": "al-Irwāʾ 108, «* صحيح»: al-madhy obliges washing and wuḍūʾ."
+    }
+   ]
+  },
+  {
+   "key": "wady",
+   "ar": "الودي",
+   "tr": "al-wadī",
+   "gloss": "al-wadī: ruled as al-madhy, on an athar",
+   "definition": "Ruled as al-madhy: washing and wuḍūʾ, not ghusl. Its support is the athar of Ibn ʿAbbās only («وأما المذي والودي فقال: اغسل ذكرك أو مذاكيرك وتوضأ وضوءك للصلاة»), which al-Albānī marks «هذا موقوف» and whose standing as ḥujja alone he calls disputed (Tamām al-Minna). The register records it as an athar, below a marfūʿ naṣṣ.",
+   "conditions": [
+    "support: athar mawqūf (Ibn ʿAbbās), not a marfūʿ naṣṣ"
+   ],
+   "related": [
+    "madhy",
+    "maniyy"
+   ],
+   "distinct_from": [
+    "maniyy",
+    "madhy"
+   ],
+   "lean": [
+    "Usul.Tahara.Kharij",
+    "Usul.Tahara.madhy_wady_alike"
+   ],
+   "lean_value": "Usul.Tahara.Kharij.wady",
+   "rulings": {
+    "najis": true,
+    "obliges": "wudu"
+   },
+   "nusus": [
+    "A-ibn-abbas-wady"
+   ],
+   "refs": [
+    {
+     "ref": "src:shamela-11122/v01:p099",
+     "excerpt_ar": "أما المني فهو الذي منه الغسل وأما المذي والودي فقال: اغسل ذكرك أو مذاكيرك وتوضأ وضوءك للصلاة",
+     "note": "Tamām al-Minna: the athar of Ibn ʿAbbās (al-Bayhaqī), as quoted."
+    },
+    {
+     "ref": "src:shamela-11122/v01:p099",
+     "excerpt_ar": "هذا موقوف والاستدلال به وحده - مع أنه مختلف في صلاحيته للاحتجاج به",
+     "note": "al-Albānī on it: mawqūf, disputed as a sole ḥujja."
+    }
+   ]
+  },
+  {
+   "key": "najasa",
+   "ar": "النجاسة",
+   "tr": "al-najāsa",
+   "gloss": "al-najāsa: a physical impurity, removed (izāla); not ḥadath",
+   "definition": "A physical impurity, which is removed (izāla), not lifted; removing it is valid without intention (F68), and tayammum is not made for it (F121: «النجاسات كلها لا تيمم عنها، وإنما يتيمم عن الأحداث»). Ibn al-Qayyim: «ما فرق الله بينه من إزالة النجاسة ورفع الحدث». The English «impurity» does not distinguish it from ḥadath; the register names it.",
+   "related": [
+    "hadath",
+    "maniyy",
+    "madhy",
+    "wady"
+   ],
+   "distinct_from": [
+    "hadath"
+   ],
+   "furuq": [
+    "F68",
+    "F121"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-ilam-shamela11496/v01:p222",
+     "excerpt_ar": "وجمعتم بين ما فرق الله بينه من إزالة النجاسة ورفع الحدث",
+     "note": "Iʿlām: najāsa is removed and ḥadath lifted, two things God separated."
+    }
+   ]
+  },
+  {
+   "key": "hadath",
+   "ar": "الحدث",
+   "tr": "al-ḥadath",
+   "gloss": "al-ḥadath: the state lifted (rafʿ) by wuḍūʾ or ghusl; not najāsa",
+   "definition": "The state that bars prayer and is lifted (rafʿ) by wuḍūʾ (minor) or ghusl (major, janāba), with intention (F68); tayammum is made for it alone (F121). Ibn al-Qayyim: «ما فرق الله بينه من إزالة النجاسة ورفع الحدث».",
+   "related": [
+    "najasa",
+    "maniyy",
+    "madhy"
+   ],
+   "distinct_from": [
+    "najasa"
+   ],
+   "furuq": [
+    "F68",
+    "F121"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-ilam-shamela11496/v01:p222",
+     "excerpt_ar": "وجمعتم بين ما فرق الله بينه من إزالة النجاسة ورفع الحدث",
+     "note": "Iʿlām: najāsa is removed and ḥadath lifted."
     }
    ]
   }

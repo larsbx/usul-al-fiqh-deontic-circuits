@@ -1,0 +1,112 @@
+{
+ "status": "candidate",
+ "note": "The textual foundation (al-nuṣūṣ): the Qurʾān and the Sunna, on which every term's ruling, qāʿida and farq of the bank rests. Āyāt are quoted from the pinned muṣḥaf (tanzil-quran-simple) at their sūra and āya; marfūʿ ḥadīth from the pinned primary collections at their number, each with al-Albānī's verdict from al-Irwāʾ, and admitted only through the ḥujja gate (decision D4, `Usul.Seam.admitted`). An athar is recorded as an athar, with al-Albānī's word on it, and never stands as a marfūʿ naṣṣ.",
+ "ayat": [
+  {
+   "id": "Q005:006",
+   "sura": 5,
+   "aya": 6,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَإِن كُنتُمْ جُنُبًا فَاطَّهَّرُوا",
+   "en": "«and if you are junub (in janāba), purify yourselves»: ghusl"
+  },
+  {
+   "id": "Q004:043",
+   "sura": 4,
+   "aya": 43,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَلَا جُنُبًا إِلَّا عَابِرِي سَبِيلٍ حَتَّىٰ تَغْتَسِلُوا",
+   "en": "«nor junub, except passing through, until you have washed (ghusl)»"
+  }
+ ],
+ "ahadith": [
+  {
+   "id": "H-ali-madhy",
+   "narrator": "ʿAlī b. Abī Ṭālib",
+   "matn_ar": "يغسل ذكره ويتوضأ",
+   "en": "al-madhy: he washes his private part and makes wuḍūʾ",
+   "sources": [
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "number": 303
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 108,
+    "verdict": "sahih"
+   }
+  },
+  {
+   "id": "H-ali-fadakh",
+   "narrator": "ʿAlī b. Abī Ṭālib",
+   "matn_ar": "إذا رأيت المذي فاغسل ذكرك، وتوضأ وضوءك للصلاة، فإذا فضخت الماء فاغتسل",
+   "en": "al-madhy: wash and wuḍūʾ; al-manī (faḍkh al-māʾ): ghusl",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 206
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 125,
+    "verdict": "sahih"
+   }
+  },
+  {
+   "id": "H-umm-salama",
+   "narrator": "Umm Salama",
+   "matn_ar": "نعم إذا رأت الماء",
+   "en": "ghusl on the woman who has a wet dream, when she sees al-māʾ (al-manī)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 282
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 126,
+    "verdict": "sahih"
+   }
+  },
+  {
+   "id": "H-aisha-fark",
+   "narrator": "ʿĀʾisha",
+   "matn_ar": "كنت أفرك المني من ثوب رسول الله صلى الله عليه وسلم فيصلي فيه",
+   "en": "al-manī rubbed off the garment and prayed in: ṭāhir",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 372
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 180,
+    "verdict": "sahih"
+   }
+  }
+ ],
+ "athar": [
+  {
+   "id": "A-ibn-abbas-wady",
+   "by": "Ibn ʿAbbās",
+   "excerpt_ar": "أما المني فهو الذي منه الغسل وأما المذي والودي فقال: اغسل ذكرك أو مذاكيرك وتوضأ وضوءك للصلاة",
+   "en": "al-manī: ghusl; al-madhy and al-wadī: wash and wuḍūʾ",
+   "work": "albani.tamam_minna",
+   "witness": "shamela-11122",
+   "status": "mawquf",
+   "albani_ar": "هذا موقوف والاستدلال به وحده - مع أنه مختلف في صلاحيته للاحتجاج به"
+  }
+ ]
+}

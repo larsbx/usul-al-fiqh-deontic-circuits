@@ -615,6 +615,10 @@ import Usul
 #check @Usul.Refinements.basis_is_first
 #check @Usul.Refinements.attainable_yaqin_excludes_ghalaba
 #check @Usul.Refinements.evident_error_sets_aside
+#check @Usul.Tahara.Kharij
+#check @Usul.Tahara.semen_conflates
+#check @Usul.Tahara.q15_f001_turns_on_the_name
+#check @Usul.Tahara.madhy_wady_alike
 #check @Usul.CommandSchemata.CommandUsage
 #check @Usul.CommandSchemata.NonverbalForm
 #check @Usul.CommandSchemata.NonverbalReading

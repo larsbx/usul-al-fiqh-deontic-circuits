@@ -1,0 +1,22 @@
+{
+ "guards": [
+  {
+   "gloss_en": "\\b(semen|sperm|seminal|ejaculat\\w*)\\b",
+   "terms": [
+    "maniyy",
+    "madhy",
+    "wady"
+   ],
+   "why": "English «semen» covers al-manī (ṭāhir, ghusl), al-madhy and al-wadī (najis, wuḍūʾ): the rulings differ (Usul.Tahara.semen_conflates)."
+  },
+  {
+   "gloss_en": "\\b(impur\\w*|unclean)\\b",
+   "terms": [
+    "najasa",
+    "hadath"
+   ],
+   "why": "English «impurity» covers al-najāsa (removed, no tayammum) and al-ḥadath (lifted, with intention, tayammum for it): F68, F121."
+  }
+ ],
+ "note": "Every English text field of the corpus registers, and every Lean doc comment, that uses one of these glosses must also name the term it means, by its transliteration or its Arabic (tests/test_nusus.py). The English never feeds a derivation; this keeps it from hiding which term a case is about."
+}

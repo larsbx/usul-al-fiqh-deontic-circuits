@@ -362,7 +362,7 @@ theorem t14_jam (oath : Bool) :
 
 Q14 (its second riwāya): when the cause is certainly in one of two, «الأصل زال يقينا في أحدهما
 فتعذر البقاء عليه», so the ruling attaches. Q15: a presumption is kept, and its consequence for
-another presumption «لم يلتفت إلى ذلك اللازم». Two who find semen in a shared garment: by Q14 the
+another presumption «لم يلتفت إلى ذلك اللازم». Two who find al-manī (المني) in a shared garment: by Q14 the
 breach attaches, by Q15 each keeps his certain purity. Ibn Rajab (14.f002): «فينظر إليهما مجتمعين
 في حكم يتعلق باجتماعهما». Taken together (one leading the other, both slave-women in one
 ownership) Q14 governs; each alone keeps his aṣl (Q15). -/

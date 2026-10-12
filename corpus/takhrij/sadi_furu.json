@@ -25,7 +25,7 @@
     "amara": true
    },
    "expected": true,
-   "note": "Cat. 1: a reliable report that a dog licked this vessel is a shar'i proof (zahir=qat) overriding the presumption of purity (asl=zann); impurity is ruled."
+   "note": "Cat. 1: a reliable report that a dog licked this vessel is a shar'i proof (zahir=qat) overriding the presumption of purity (asl=zann); najāsa is ruled."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003",
@@ -96,7 +96,7 @@
     "amara": false
    },
    "expected": false,
-   "note": "Known purity or impurity with preponderant belief of its removal: build on the aṣl, preponderant belief does not suffice; purity and ḥadath are matters «لا أمارة عليه» (Ibn Rajab at f013), so on equal grades the aṣl stands.",
+   "note": "Known ṭahāra or najāsa (of water, garment, ground or body), or a known ḥadath or najāsa, with preponderant belief of its removal («لو تيقن حدثا أو نجاسة»): build on the aṣl, preponderant belief does not suffice; purity and ḥadath are matters «لا أمارة عليه» (Ibn Rajab at f013), so on equal grades the aṣl stands.",
    "revisit": {
     "from_class": "encoding_error",
     "closed_by": [
@@ -146,7 +146,7 @@
     "amara": true
    },
    "expected": true,
-   "note": "Cat. 3: impurity found after prayer, possibly incurred before or after: prayer valid since the apparent is the soundness of the mukallaf's acts (zahir=zann, custom) against the asl of non-discharge (zann), reinforced by a second asl."
+   "note": "Cat. 3: najāsa found after prayer, possibly incurred before or after: prayer valid since the apparent is the soundness of the mukallaf's acts (zahir=zann, custom) against the asl of non-discharge (zann), reinforced by a second asl."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011",
@@ -333,7 +333,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4 (khilaf 'when zahir and asl are equal'): a dog with a wet mouth put its head in a vessel: zahir of licking=zann vs asl of purity=zann; kernel gives impurity; no position is marked as the madhhab."
+   "note": "Cat. 4 (khilaf 'when zahir and asl are equal'): a dog with a wet mouth put its head in a vessel: zahir of licking=zann vs asl of purity=zann; kernel gives najāsa; no position is marked as the madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022",
@@ -356,7 +356,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4: a non-blood creature in little water, nearer the latrine than the well: zahir of impure origin=zann vs asl of purity=zann; kernel gives impure; no preferred wajh stated (if nearer the well or equidistant it is pure, no conflict)."
+   "note": "Cat. 4: a non-blood creature in little water, nearer the latrine than the well: zahir of najis origin=zann vs asl of purity=zann; kernel gives najis; no preferred wajh stated (if nearer the well or equidistant it is pure, no conflict)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023",
@@ -379,7 +379,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4: street mud: zahir of impurity (custom)=zann vs asl of purity=zann; kernel gives impurity, which al-Talkhis calls the madhhab but the mansus/Majd position is purity, so matches_madhhab is set false (disputed)."
+   "note": "Cat. 4: street mud: zahir of najāsa (custom)=zann vs asl of purity=zann; kernel gives najāsa, which al-Talkhis calls the madhhab but the mansus/Majd position is purity, so matches_madhhab is set false (disputed)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024",
@@ -402,7 +402,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4: an old cemetery of doubtful exhumation: zahir=zann vs asl=zann; kernel gives impurity; no preferred wajh stated."
+   "note": "Cat. 4: an old cemetery of doubtful exhumation: zahir=zann vs asl=zann; kernel gives najāsa; no preferred wajh stated."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025",
@@ -456,7 +456,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4: clothes of children and the careless: zahir of impurity=zann vs asl of purity=zann; kernel matches the prohibition (Ibn Abi Musa's ikhtiyar), not marked the madhhab."
+   "note": "Cat. 4: clothes of children and the careless: zahir of najāsa=zann vs asl of purity=zann; kernel matches the prohibition (Ibn Abi Musa's ikhtiyar), not marked the madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027",
@@ -769,7 +769,7 @@
     "customary_continuity": true
    },
    "expected": true,
-   "note": "Purifying a little impure water by adding much water requires only customary continuity, not pouring two qullas at once."
+   "note": "Purifying a little najis water by adding much water requires only customary continuity, not pouring two qullas at once."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f002",
@@ -3558,7 +3558,7 @@
     "same_purpose": true
    },
    "expected": true,
-   "note": "Causes of expiation of one kind (oaths, iḥrām, fasting, ẓihār) merge and one kaffāra makes the rest lapse; the reported wajhs concern only unspecified intention, and for ritual impurities intending one lifts all on al-mashhūr."
+   "note": "Causes of expiation of one kind (oaths, iḥrām, fasting, ẓihār) merge and one kaffāra makes the rest lapse; the reported wajhs concern only unspecified intention, and for aḥdāth (al-ḥadath, «الأحداث الموجبة للطهارة», not najāsa) intending one lifts all on al-mashhūr."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001",
@@ -3724,7 +3724,7 @@
     "hardship": true
    },
    "expected": true,
-   "note": "Street mud is ruled pure «على الصحيح المنصوص»: its unknown impurity is set aside because taking it into account is a hardship.",
+   "note": "Street mud is ruled pure «على الصحيح المنصوص»: its unknown najāsa is set aside because taking it into account is a hardship.",
    "revisit": {
     "from_class": "missing_rule",
     "closed_by": [

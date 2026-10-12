@@ -68,3 +68,11 @@ test(report_overturned_by_weak) :- overturn_ok(reported, daif).
 test(own_grade_never_overturned, [fail]) :- overturn_ok(sahih, daif).
 test(report_not_overturned_by_sound, [fail]) :- overturn_ok(reported, sahih).
 :- end_tests(furuq).
+
+:- use_module(tahara_oracle).
+
+:- begin_tests(tahara).
+test(mani_tahir_ghusl) :- ruling(maniyy, najis, false), ruling(maniyy, obliges, ghusl).
+test(madhy_najis_wudu) :- ruling(madhy, najis, true), ruling(madhy, obliges, wudu).
+test(semen_conflates, [fail]) :- ruling(maniyy, najis, V), ruling(madhy, najis, V).
+:- end_tests(tahara).
