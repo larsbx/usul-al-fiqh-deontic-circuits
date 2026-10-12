@@ -59,9 +59,9 @@ Concretely, ikhtilāf is not an error class. The takhrīj bank records `genuine_
 
 | Roadmap M1 result | Status |
 |---|---|
-| Grounded extension is conflict-free | `approx_conflictFree` for every stage of the chain |
-| Grounded is admissible | `approx_admissible` |
-| Grounded is the least complete extension (uniqueness) | `approx_sub_complete` gives every stage inside every complete extension. **Open:** existence of the limit as a complete extension, finitary or finite AFs, stated as one `grounded` constant with its uniqueness theorem |
+| Grounded extension is conflict-free | `approx_conflictFree` for every stage; `grounded_conflictFree` for their union `grounded` |
+| Grounded is admissible | `approx_admissible`, `grounded_admissible` |
+| Grounded exists, is the least complete extension, and is unique | **proved** for finitary AFs (finitely many attackers per argument, every AF the bank builds): `grounded_complete`, `grounded_sub_complete`, `grounded_unique` |
 | Admissible ⊆ preferred (Dung's fundamental lemma) | **open**: needs `Preferred` (a maximal admissible set) and, for finite AFs, a maximality argument by cardinality |
 
-Until those two land, M1 stays "kernel proved", with the ADR as its other exit criterion.
+Until the fundamental lemma lands, M1 stays "kernel proved", with the ADR as its other exit criterion.
