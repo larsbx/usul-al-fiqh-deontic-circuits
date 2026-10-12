@@ -406,7 +406,7 @@
   },
   {
    "topic": "type:nafy_al_fariq",
-   "claim_en": "The equal case relies on knowing that the difference has no effect; its criterion is that no common cause need be cited, only negation of an effective difference; whether this is called qiyās is disputed.",
+   "claim_en": "The equal case relies on knowing that the difference has no effect; its criterion is that no uniting ʿilla need be cited («التعرض للعلة الجامعة»), only negation of an effective difference; whether this is called qiyās is disputed.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p188",
    "excerpt_ar": "وضابط هذا الجنس: أن لا يحتاج فيه إلى التعرض للعلة الجامعة، بل بنفي الفارق المؤثر",
@@ -422,7 +422,7 @@
   },
   {
    "topic": "masalik:nass_sarih",
-   "claim_en": "First textual mode: explicit (ṣarīḥ) — a word of causation appears (kay lā, li-kay lā, dhālika bi-annahum, min ajli dhālika).",
+   "claim_en": "First textual mode: explicit (ṣarīḥ) — a word of causation (taʿlīl) appears (kay lā, li-kay lā, dhālika bi-annahum, min ajli dhālika).",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p192",
    "excerpt_ar": "الأول- الصريح: وذلك أن يرد فيه لفظ التعليل",
@@ -470,7 +470,7 @@
   },
   {
    "topic": "masalik:sabr_taqsim",
-   "claim_en": "Sabr: Abū al-Khaṭṭāb says it is valid only where the umma agrees the aṣl is caused, differs over the cause, and all but one candidate is refuted; structure: the ruling is caused, the cause is X or Y, X is void (buṭlān: «وقد بطل أحدهما»), so Y.",
+   "claim_en": "Sabr: Abū al-Khaṭṭāb says it is valid only where the umma agrees the aṣl is muʿallal, differs over the ʿilla, and all but one candidate is refuted; structure: the ruling is muʿallal, the ʿilla is X or Y, X is void (buṭlān: «وقد بطل أحدهما»), so Y.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p221",
    "excerpt_ar": "فنقول: الحكم معلل، ولا علة إلا كذا أو كذا، وقد بطل أحدهما فيتعين الآخر",
@@ -822,7 +822,7 @@
   },
   {
    "topic": "qadih:muarada",
-   "claim_en": "Muʿāraḍa in the farʿ: citing in the farʿ what prevents the ruling, either a stronger proof (text/ijmāʿ) or a description.",
+   "claim_en": "Muʿāraḍa in the farʿ: citing in the farʿ what prevents the ruling, either a stronger proof (text/ijmāʿ: «بدليل آكد منه») or a description.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p323",
    "excerpt_ar": "وهو: أن يذكر في الفرع ما يمتنع معه ثبوت الحكم",
@@ -902,7 +902,7 @@
   },
   {
    "topic": "definition",
-   "claim_en": "Matn: qiyās is technically carrying a farʿ onto an aṣl in a ruling by a common factor; alternatives: establishing the like of a ruling outside its locus for a shared cause, or extending the text's ruling; defining it as ijtihād is wrong.",
+   "claim_en": "Matn: qiyās is technically carrying a farʿ onto an aṣl in a ruling by a common factor; alternatives: establishing the like of a ruling outside its locus for a shared muqtaḍī («لمقتض مشترك»), or extending the text's ruling; defining it as ijtihād is wrong.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p218",
    "excerpt_ar": "وشرعا: حمل فرع على أصل في حكم بجامع بينهما، وقيل: إثبات مثل الحكم في غير محله لمقتض مشترك",
@@ -1094,7 +1094,7 @@
   },
   {
    "topic": "masalik:dawaran",
-   "claim_en": "Matn: dawarān—existence of the ruling with the description and absence with its absence; it yields ẓann of causality; al-Qāḍī and some Shāfiʿīs accept \"testimony of the uṣūl\".",
+   "claim_en": "Matn: dawarān—existence of the ruling with the description and absence with its absence; it yields ẓann of causality (ʿilliyya); al-Qāḍī and some Shāfiʿīs accept \"testimony of the uṣūl\".",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p412",
    "excerpt_ar": "النوع الثالث الدوران: وهو وجود الحكم بوجود الوصف، وعدمه بعدمه وخالف قوم",
@@ -1198,7 +1198,7 @@
   },
   {
    "topic": "qadih:mutalaba",
-   "claim_en": "Matn: muṭālaba—demanding the proof of causality; concedes the ruling and the description in aṣl and farʿ; it is the third of the denials.",
+   "claim_en": "Matn: muṭālaba—demanding the proof of causality (ʿilliyya); concedes the ruling and the description in aṣl and farʿ; it is the third of the denials.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p498",
    "excerpt_ar": "وهي طلب دليل علية الوصف من المستدل",
@@ -1230,7 +1230,7 @@
   },
   {
    "topic": "qadih:muarada",
-   "claim_en": "Matn: muʿāraḍa in the aṣl shows another cause for the ruling there; al-aṣaḥḥ («على الأصح») obliges the mustadill to exclude it in his proof.",
+   "claim_en": "Matn: muʿāraḍa in the aṣl shows another cause for the ruling there (a muqtaḍī: «وجود مقتض للحكم فيه»); al-aṣaḥḥ («على الأصح») obliges the mustadill to exclude it in his proof.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p527",
    "excerpt_ar": "المعارضة، وهي إما في الأصل ببيان وجود مقتض للحكم فيه",
@@ -1470,7 +1470,7 @@
   },
   {
    "topic": "masalik:ima",
-   "claim_en": "Text divides into ṣarīḥ, ẓāhir and īmāʾ/tanbīh; īmāʾ is coupling a description to a ruling such that, were it not causal, the coupling would be odd.",
+   "claim_en": "Text divides into ṣarīḥ, ẓāhir and īmāʾ/tanbīh; īmāʾ is coupling a description to a ruling such that, were it not the ʿilla, the coupling would be odd.",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p125",
    "excerpt_ar": "والإيماء: هو اقتران الوصف بحكم لو لم يكن الوصف",
@@ -1582,7 +1582,7 @@
   },
   {
    "topic": "scope:asbab",
-   "claim_en": "Some deny qiyās in cause, sharṭ and impediment (zinā as cause of ḥadd not extended to sodomy), as did al-Āmidī and Ibn al-Ḥājib; al-Āmidī reports most Shāfiʿīs allow it.",
+   "claim_en": "Some deny qiyās in sabab, sharṭ and impediment («في سبب وشرط ومانع»; zinā as sabab of ḥadd not extended to sodomy), as did al-Āmidī and Ibn al-Ḥājib; al-Āmidī reports most Shāfiʿīs allow it.",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p220",
    "excerpt_ar": "ومنعه جمع في سبب وشرط ومانع",
@@ -1814,7 +1814,7 @@
   },
   {
    "topic": "ibn_qayyim:errors",
-   "claim_en": "The qiyāsīs' five errors include believing many rulings are against the mīzān/qiyās, considering causes the Lawgiver did not consider and disregarding ones he did, and contradicting themselves.",
+   "claim_en": "The qiyāsīs' five errors include believing many rulings are against the mīzān/qiyās, considering ʿilal the Lawgiver did not consider and disregarding ones he did («اعتبارهم عللا وأوصافا لم يعلم اعتبار الشارع لها»), and contradicting themselves.",
    "witness": "openiti-ilam-shamela11496",
    "locator": "src:openiti-ilam-shamela11496/v01:p263",
    "excerpt_ar": "الرابع: اعتبارهم عللا وأوصافا لم يعلم اعتبار الشارع لها وإلغاؤهم عللا وأوصافا اعتبرها الشارع",
@@ -2134,7 +2134,7 @@
   },
   {
    "topic": "rukn:general",
-   "claim_en": "Ibn ʿUthaymīn, sharṭ 1: the qiyās must not clash with a stronger proof (text, ijmāʿ, Companion's view if ḥujja)—else fāsid al-iʿtibār.",
+   "claim_en": "Ibn ʿUthaymīn, sharṭ 1: the qiyās must not clash with a stronger proof («دليلاً أقوى منه») (text, ijmāʿ, Companion's view if ḥujja)—else fāsid al-iʿtibār.",
    "witness": "shamela-9942",
    "locator": "src:shamela-9942/v01:p070",
    "excerpt_ar": "أن لا يصادم دليلاً أقوى منه",
@@ -2206,7 +2206,7 @@
   },
   {
    "topic": "ibn_taymiyya:no_contra_qiyas",
-   "claim_en": "Al-Saʿdī (from Ibn Taymiyya): qiyās is blameworthy (lacking equality in manāṭ, or opposed by a text) or ṣaḥīḥ (aṣl and farʿ equal in manāṭ, unopposed by stronger proof).",
+   "claim_en": "Al-Saʿdī (from Ibn Taymiyya): qiyās is blameworthy (lacking equality in manāṭ, or opposed by a text) or ṣaḥīḥ (aṣl and farʿ equal in manāṭ, unopposed by stronger proof: «ما هو أرجح منه»).",
    "witness": "archive-tariq-tess",
    "locator": "src:archive-tariq-tess/v01:p064",
    "excerpt_ar": "وهو الذي يستوي فيه الأصل والفرع في مناط الحكم؛ ولم يعارضه ما هو أرجح منه",

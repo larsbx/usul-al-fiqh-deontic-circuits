@@ -137,7 +137,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Conditions**
 
-1. a ẓāhir strictly stronger than the aṣl always prevails (a sharʿī proof)
+1. a ẓāhir strictly stronger than the aṣl (a higher grade of ẓann: the sharʿī ḥujja, «فإن كان الظاهر حجة يجب قبولها شرعا») always prevails
 2. on equal grades the ẓāhir prevails only where the matter has indicators by which it is known
 
 **Texts**
@@ -389,7 +389,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 <a id="luqata"></a>
 
-## Luqaṭa after its year: owned, or given in charity, because the owner is unknown
+## Luqaṭa after its year: owned, or given as ṣadaqa, because the owner is unknown
 
 **Terms:** [al-luqaṭa](../glossary.md#luqata), [al-majhūl](../glossary.md#majhul)  
 **Closes:** `rule:luqata`  
@@ -707,7 +707,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068`: Qāʿida 68's first type: what needs a firm intention is not valid with doubt unless ghalabat al-ẓann or an aṣl supports it.
   > إيقاع العبادات أو العقود أو غيرهما مع الشك في شرط صحتها هل يجعلها كالمعلقة على تحقيق ذلك الشرط أم لا؟ هي نوعان: أحدهما ما يشترط فيه النية الجازمة فلا يصح إيقاعه بهذا التردد ما لم يكن الشك غلبة ظن تكفي مثله في إيقاع العبادة أو العقد كغلبة الظن بدخول الوقت وطهارة الماء والثوب ونحو ذلك. ومن أمثلة ذلك إذا صلى يظن نفسه محدثا فتبين متطهرا. ومنها لو شك هل ابتدأ [مدة] مسح الخفين في السفر أو الحضر فمسح يوم
 
-**Rationale.** A concession is qāʿida 68's first type, a sharṭ that needs a firm basis. Its aṣl is the ʿazīma, so no aṣl supports it (rukhsa_is_firm_condition). Al-Mughnī's view, that wuḍūʾ is valid with doubt in its cause, is the other position.
+**Rationale.** A concession is qāʿida 68's first type, a sharṭ that needs a firm basis. Its aṣl is the ʿazīma, so no aṣl supports it (rukhsa_is_firm_condition). Al-Mughnī's view, that wuḍūʾ is valid with doubt in its sabab, is the other position.
 
 **Lean:** `Usul.Refinements.rukhsaValid`, `Usul.Refinements.rukhsa_is_firm_condition`, `Usul.Refinements.validUnderDoubt`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)

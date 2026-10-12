@@ -424,7 +424,7 @@
      "ruling": false
     },
     {
-     "who": "riwaya 3: if the zahir is very strong, not used before ghasl",
+     "who": "riwaya 3: if the zahir is very strong («إن قوي الظاهر جدا»), not used before ghasl",
      "ruling": true
     }
    ],
@@ -3360,7 +3360,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "A vowed charity of a niṣāb at the end of the ḥawl, intended as both vow and zakāt: al-Mughnī says it suffices, Ṣāḥib Sharḥ al-Hidāya says it does not; neither is marked."
+   "note": "A vowed ṣadaqa («نذر الصدقة») of a niṣāb at the end of the ḥawl, intended as both vow and zakāt: al-Mughnī says it suffices, Ṣāḥib Sharḥ al-Hidāya says it does not; neither is marked."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f005",
@@ -3558,7 +3558,7 @@
     "same_purpose": true
    },
    "expected": true,
-   "note": "Causes of expiation of one kind (oaths, iḥrām, fasting, ẓihār) merge and one kaffāra makes the rest lapse; the reported wajhs concern only unspecified intention, and for aḥdāth (al-ḥadath, «الأحداث الموجبة للطهارة», not najāsa) intending one lifts all on al-mashhūr."
+   "note": "Causes of expiation (al-asbāb: «اجتماع الأسباب التي يجب بها الكفارات») of one kind (oaths, iḥrām, fasting, ẓihār) merge and one kaffāra makes the rest lapse; the reported wajhs concern only unspecified intention, and for aḥdāth (al-ḥadath, «الأحداث الموجبة للطهارة», not najāsa) intending one lifts all on al-mashhūr."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001",
@@ -3665,7 +3665,7 @@
     "ownable": true
    },
    "expected": "finderOwns",
-   "note": "After the year of announcement the luqaṭa is owned «لجهالة ربها»; what is not ownable is given in charity for him (al-ṣaḥīḥ). An instance of qāʿida 106: the owner, still unknown, is treated as absent (luqata_is_instance).",
+   "note": "After the year of announcement the luqaṭa is owned «لجهالة ربها»; what is not ownable is given as ṣadaqa for him («يتصدق به عنه», al-ṣaḥīḥ). An instance of qāʿida 106: the owner, still unknown, is treated as absent (luqata_is_instance).",
    "revisit": {
     "from_class": "missing_rule",
     "from_encoder": "unknown_owner",

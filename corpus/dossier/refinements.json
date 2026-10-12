@@ -181,7 +181,7 @@
     }
    ],
    "conditions": [
-    "a ẓāhir strictly stronger than the aṣl always prevails (a sharʿī proof)",
+    "a ẓāhir strictly stronger than the aṣl (a higher grade of ẓann: the sharʿī ḥujja, «فإن كان الظاهر حجة يجب قبولها شرعا») always prevails",
     "on equal grades the ẓāhir prevails only where the matter has indicators by which it is known"
    ],
    "rationale": "Equal grades produced opposite rulings in the cases (ṭahāra and dawn keep the aṣl; sunset follows the ẓāhir), so the grade cannot be the deciding input. Ibn Rajab names the deciding fact himself: whether the matter has indicators.",
@@ -490,7 +490,7 @@
   },
   {
    "id": "luqata",
-   "title": "Luqaṭa after its year: owned, or given in charity, because the owner is unknown",
+   "title": "Luqaṭa after its year: owned, or given as ṣadaqa, because the owner is unknown",
    "terms": [
     "luqata",
     "majhul"
@@ -888,7 +888,7 @@
     "the act is a concession",
     "its permitting sharṭ is in doubt"
    ],
-   "rationale": "A concession is qāʿida 68's first type, a sharṭ that needs a firm basis. Its aṣl is the ʿazīma, so no aṣl supports it (rukhsa_is_firm_condition). Al-Mughnī's view, that wuḍūʾ is valid with doubt in its cause, is the other position.",
+   "rationale": "A concession is qāʿida 68's first type, a sharṭ that needs a firm basis. Its aṣl is the ʿazīma, so no aṣl supports it (rukhsa_is_firm_condition). Al-Mughnī's view, that wuḍūʾ is valid with doubt in its sabab, is the other position.",
    "lean": [
     "Usul.Refinements.rukhsaValid",
     "Usul.Refinements.rukhsa_is_firm_condition",

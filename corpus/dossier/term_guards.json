@@ -112,6 +112,44 @@
     "registers",
     "glossary"
    ]
+  },
+  {
+   "gloss_en": "\\b(charit\\w*|alms\\w*)\\b",
+   "terms": [
+    "zakat",
+    "sadaqa"
+   ],
+   "why": "English «charity» covers al-zakāt (the fixed due on a niṣāb) and al-ṣadaqa (voluntary, vowed, or a fidya): whether one payment discharges both is a khilāf (Ibn Rajab Q18).",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
+  },
+  {
+   "gloss_en": "\\b(strong\\w*)\\b",
+   "terms": [
+    "tarjih",
+    "zann",
+    "qarina"
+   ],
+   "why": "English «strong» says which weight: a proof's in tarjīḥ («أقوى», «أرجح», «آكد»), a ẓann's degree, or the qarāʾin's («إذا قويت القرائن»). Farḍ being «آكد» than wājib is emphasis, not a stronger proof.",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
+  },
+  {
+   "gloss_en": "\\b(cause|causes|causal\\w*|causation|causality)\\b",
+   "terms": [
+    "illa",
+    "sabab",
+    "hikma"
+   ],
+   "why": "English «cause» covers al-ʿilla (the anchor, manāṭ, of a ruling extended by qiyās), al-sabab (what the ruling attaches to: «الأحكام تتبعض بحسب تباين أسبابها», Q31; «بعد وجود السبب», Q39) and al-ḥikma (the wisdom, which kasr shows without the ruling). Al-Kawkab: a linguistic «condition» is really a sabab.",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
   }
  ],
  "note": "Every English text field of the corpus registers, and every Lean doc comment, that uses one of these glosses must also name the term it means, by its transliteration or its Arabic (tests/test_nusus.py). The English never feeds a derivation; this keeps it from hiding which term a case is about."

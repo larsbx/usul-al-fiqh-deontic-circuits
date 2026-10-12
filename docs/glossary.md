@@ -173,7 +173,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-aṣl / al-istiṣḥāb (الأصل / الاستصحاب)
 
-*presumption of continuity.* Ibn Qudāma: istiṣḥāb is holding to a rational or sharʿī proof (original non-liability, a general term until specified, a text until abrogated, a ruling the law shows to continue), resting on a presumptive proof with no changer known. Al-Saʿdī Q11: the presumption is that what was remains, and certainty is not removed by doubt. Ibn Rajab: when two presumptions conflict the stronger is followed; al-Saʿdī Q6: the default in ʿādāt is permission and in ʿibādāt prohibition.
+*presumption of continuity.* Ibn Qudāma: istiṣḥāb is holding to a rational or sharʿī proof (original non-liability, a general term until specified, a text until abrogated, a ruling the law shows to continue), resting on a presumptive proof with no changer known. Al-Saʿdī Q11: the presumption is that what was remains, and certainty is not removed by doubt. Ibn Rajab: when two presumptions conflict the weightier is followed («عمل بالأرجح منهما»); al-Saʿdī Q6: the default in ʿādāt is permission and in ʿibādāt prohibition.
 
 **Related:** [yaqin](#yaqin), [shakk](#shakk), [zahir](#zahir), [qarina](#qarina), [dalil](#dalil)
 
@@ -326,7 +326,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-ḍamān (الضمان)
 
-*liability.* Ibn Rajab: the causes of liability are three: contract, hand (possession) and destruction (itlāf). A contract whose valid form entails liability entails it when invalid too. Al-Saʿdī Q14: loss in a trustee's hand is not compensable without transgression or negligence, in a wrongdoer's hand it is; Q18: fungibles are compensated in kind, others by value.
+*liability.* Ibn Rajab: the asbāb of liability are three: contract, hand (possession) and destruction (itlāf). A contract whose valid form entails liability entails it when invalid too. Al-Saʿdī Q14: loss in a trustee's hand is not compensable without transgression or negligence, in a wrongdoer's hand it is; Q18: fungibles are compensated in kind, others by value.
 
 **Conditions**
 
@@ -349,7 +349,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-dawarān (الدوران)
 
-*co-variation.* The ruling exists with the description and ceases with its absence (prohibition with the intoxicating strength of wine). It yields presumption (ẓann) of causality according to most Ḥanbalīs (al-Kawkab, al-Ṭūfī); Ibn Qudāma reports that some require it to be combined with something else. Al-Āmidī and Ibn al-Ḥājib call it ṭard wa-ʿaks.
+*co-variation.* The ruling exists with the description and ceases with its absence (prohibition with the intoxicating strength of wine). It yields presumption (ẓann) of causality (ʿilliyya) according to most Ḥanbalīs (al-Kawkab, al-Ṭūfī); Ibn Qudāma reports that some require it to be combined with something else. Al-Āmidī and Ibn al-Ḥājib call it ṭard wa-ʿaks.
 
 **Conditions**
 
@@ -455,7 +455,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## fasād al-iʿtibār (فساد الاعتبار)
 
-*invalid consideration.* The objection that the qiyās contradicts a text (Ibn Qudāma, al-Ṭūfī) or a text or ijmāʿ (al-Kawkab), so it is void. Ibn ʿUthaymīn makes non-collision with a stronger proof the first sharṭ of qiyās.
+*invalid consideration.* The objection that the qiyās contradicts a text (Ibn Qudāma, al-Ṭūfī) or a text or ijmāʿ (al-Kawkab), so it is void. Ibn ʿUthaymīn makes non-collision with a stronger proof («دليلاً أقوى منه») the first sharṭ of qiyās.
 
 **Related:** [qawadih](#qawadih), [fasad_al_wad](#fasad_al_wad)
 
@@ -543,12 +543,12 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## ghalabat al-ẓann (غلبة الظن)
 
-*preponderant belief (also al-ẓann al-ghālib, ghālib al-ẓann; the verb: ghalaba ʿalā ẓannih).* The higher degree of ẓann. Ibn ʿUthaymīn, bayt 90: «وإن تعذر اليقين فارجعا لغالب الظن تكن متبعا», i.e. «إذا تعذر اليقين رجعنا إلى غلبة الظن»; with no preponderant belief one returns to the aṣl. It suffices to perform worship or a contract (Ibn Rajab 68) and is put before the aṣl where strong indications support it (al-Saʿdī Q52), but not against an aṣl that certainty can still reach, nor where Aḥmad's naṣṣ requires certainty (dawn in Ramaḍān, Ibn Rajab 159). Al-Saʿdī: management (taṣarruf) rests on it, rulings have fixed routes.
+*preponderant belief (also al-ẓann al-ghālib, ghālib al-ẓann; the verb: ghalaba ʿalā ẓannih).* The higher degree of ẓann. Ibn ʿUthaymīn, bayt 90: «وإن تعذر اليقين فارجعا لغالب الظن تكن متبعا», i.e. «إذا تعذر اليقين رجعنا إلى غلبة الظن»; with no preponderant belief one returns to the aṣl. It suffices to perform worship or a contract (Ibn Rajab 68) and is put before the aṣl where strong qarāʾin support it (al-Saʿdī Q52, «إذا قويت القرائن»), but not against an aṣl that certainty can still reach, nor where Aḥmad's naṣṣ requires certainty (dawn in Ramaḍān, Ibn Rajab 159). Al-Saʿdī: management (taṣarruf) rests on it, rulings have fixed routes.
 
 **Conditions**
 
 - certainty is unattainable
-- the belief rests on a cause (amāra), not mere inclination
+- the belief rests on a sabab (amāra), not mere inclination
 - no aṣl that certainty can reach is displaced by it
 - its error has not become evident
 
@@ -899,7 +899,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-itlāf (الإتلاف)
 
-*destruction.* Directly destroying by an act that requires it, or wrongfully setting up a cause that leads to destruction (Ibn Rajab). Al-Saʿdī Q13: the deliberate, the ignorant and the forgetful are equal in it. Destroying a thing to repel its harm is not compensable; destroying it to benefit from it is (Ibn Rajab q26, al-Saʿdī Q36).
+*destruction.* Directly destroying by an act that requires it, or wrongfully setting up a cause that leads to destruction (tasabbub, Ibn Rajab). Al-Saʿdī Q13: the deliberate, the ignorant and the forgetful are equal in it. Destroying a thing to repel its harm is not compensable; destroying it to benefit from it is (Ibn Rajab q26, al-Saʿdī Q36).
 
 **Related:** [daman](#daman)
 
@@ -998,7 +998,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-luqaṭa (اللقطة)
 
-*a lost thing found.* A lost item picked up by a finder. After the year of announcement it is owned «لجهالة ربها», and what is not ownable is given in charity on the owner's behalf (al-ṣaḥīḥ): an instance of treating the unknown owner as non-existent (qāʿida 106). Whether ownership comes automatically or by the finder's choice is two wujūh (Ibn Rajab elsewhere), not modelled.
+*a lost thing found.* A lost item picked up by a finder. After the year of announcement it is owned «لجهالة ربها», and what is not ownable is given as ṣadaqa on the owner's behalf (al-ṣaḥīḥ): an instance of treating the unknown owner as non-existent (qāʿida 106). Whether ownership comes automatically or by the finder's choice is two wujūh (Ibn Rajab elsewhere), not modelled.
 
 **Conditions**
 
@@ -1236,7 +1236,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-muʿāraḍa (المعارضة)
 
-*counter-argument.* Either in the aṣl, showing another cause for its ruling (better, needs no aṣl of its own), or in the farʿ, citing what prevents the ruling there, a stronger proof or a description; Ibn Qudāma and al-Kawkab accept it. With manʿ, it is one of the two kinds to which all objections reduce.
+*counter-argument.* Either in the aṣl, showing another ʿilla for its ruling (better, needs no aṣl of its own), or in the farʿ, citing what prevents the ruling there, a stronger proof («بدليل آكد منه») or a description; Ibn Qudāma and al-Kawkab accept it. With manʿ, it is one of the two kinds to which all objections reduce.
 
 **Related:** [man](#man), [farq](#farq), [qalb](#qalb), [qawadih](#qawadih), [taarud](#taarud)
 
@@ -1432,7 +1432,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-qarīna (القرينة)
 
-*contextual indication.* An accompanying indication that changes how a text or presumption is taken. The bare command implies obligation unless a qarīna turns it to something else (Ibn al-Laḥḥām, Aḥmad's text). Al-Saʿdī Q52: when qarāʾin are strong they are put before the aṣl. Ibn Rajab: a ẓāhir resting on qarāʾin sometimes prevails over the aṣl and sometimes not; the circumstances (dalālat al-aḥwāl) change the meaning of words.
+*contextual indication.* An accompanying indication that changes how a text or presumption is taken. The bare command implies obligation unless a qarīna turns it to something else (Ibn al-Laḥḥām, Aḥmad's text). Al-Saʿdī Q52: when qarāʾin are strong («إذا قويت القرائن») they are put before the aṣl. Ibn Rajab: a ẓāhir resting on qarāʾin sometimes prevails over the aṣl and sometimes not; the circumstances (dalālat al-aḥwāl) change the meaning of words.
 
 **Related:** [amr](#amr), [zahir](#zahir), [amara](#amara), [asl](#asl)
 
@@ -1477,7 +1477,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 **Conditions**
 
 - four arkān: aṣl, farʿ, ʿilla, ḥukm
-- not against a stronger proof (Ibn ʿUthaymīn cond. 1)
+- not against a stronger proof («دليلاً أقوى منه», Ibn ʿUthaymīn cond. 1)
 - aṣl ruling by text or ijmāʿ
 - ʿilla present in the farʿ
 
@@ -1600,6 +1600,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > الأمر الثاني: أن يكون سبره حاصرا لجميع ما يعلل به
 - `src:openiti-rawda-shamela12010/v02:p224`: Naqḍ alone does not cancel a description.
   > ولا يكفيه في إفساد علة خصمه: النقض
+
+<a id="sadaqa"></a>
+
+## al-ṣadaqa (الصدقة)
+
+*al-ṣadaqa: giving for God's sake, voluntary or vowed or owed as a fidya; not the zakāt.* The general word: the muḥrim's fidya is «فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ» (al-Baqara 196); the unclaimed luqaṭa that cannot be owned «يتصدق به عنه على الصحيح» (Ibn Rajab Q106); a vowed ṣadaqa becomes owed by the vow (Q18). The zakāt is the fixed due on a niṣāb (zakat).
+
+**Related:** [zakat](#zakat), [fidya](#fidya)
+
+**Texts**
+
+- `src:openiti-rajab-shamela21730/v01:p238`: Ibn Rajab Q106.f002.
+  > وما لا يتملك منها يتصدق به عنه على الصحيح
 
 <a id="sahih"></a>
 
@@ -1946,7 +1959,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## tanqīḥ al-manāṭ (تنقيح المناط)
 
-*refining the anchor.* The Lawgiver attaches a ruling to its cause together with descriptions that play no part, which must be set aside so that the ruling extends (the Bedouin who had intercourse in Ramaḍān). Al-Ṭūfī says most deniers of qiyās accept it.
+*refining the anchor.* The Lawgiver attaches a ruling to its cause (manāṭ) together with descriptions that play no part, which must be set aside so that the ruling extends (the Bedouin who had intercourse in Ramaḍān). Al-Ṭūfī says most deniers of qiyās accept it.
 
 **Related:** [takhrij_al_manat](#takhrij_al_manat), [tahqiq_al_manat](#tahqiq_al_manat), [illa](#illa)
 
@@ -2078,7 +2091,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 **Texts**
 
 - `ibn_uthaymin.usul.shamela_9942.h003`: Definition.
-- `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q010`: Farḍ and wājib synonymous in the soundest narration; the other narration makes farḍ stronger.
+- `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q010`: Farḍ and wājib synonymous in the soundest narration; the other narration makes farḍ more emphatic («الفرض آكد»).
   > الفرض والواجب مترادفان شرعا في أصح الروايتين عن أحمد. اختارها جماعة منهم ابن عقيل وقاله الشافعية. وعن الإمام أحمد الفرض آكد اختارها جماعة منهم ابن إسحاق بن شاقلا1 والحلوانى2 وذكره ابن عقيل عن أصحابنا وقاله الحنفية وابن الباقلانى واختلف اختيار القاضى. فعلى هذه الرواية الفرض ما ثبت بدليل مقطوع به وذكره ابن عقيل عن أحمد وقيل ما لا يسقط في عمد ولا سهو وحكى ابن عقيل عن أحمد رواية أن الفرض ما لزم بالقرآ
 - `src:archive-pdf1995-tess/v01:p038`: Al-Saʿdī Q4: no obligation with inability (formalised as Sadi.operative).
   > الوجوب يتعلق بالاستطاعة؛ فلا واجب مع العجزء ولا محرم مع الضرورة
@@ -2137,11 +2150,24 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159`: Conflict of aṣl and ẓāhir, four kinds.
   > إذا تعارض الأصل والظاهر فإن كان الظاهر حجة يجب قبولها شرعا كالشهادة والرواية والإخبار فهو مقدم على الأصل بغير خلاف، وإن لم يكن كذلك بل كان مستنده العرف أو العادة الغالبة أو القرائن أو غلبة الظن ونحو ذلك، فتارة يعمل بالأصل ولا يلتفت إلى الظاهر، وتارة يعمل بالظاهر ولا يلتفت إلى الأصل، وتارة يخرج في المسألة خلاف، فهذه أربعة أقسام. القسم الأول. ما ترك العمل فيه بالأصل للحجة الشرعية وهي قول من يجب العم
 
+<a id="zakat"></a>
+
+## al-zakāt (الزكاة)
+
+*al-zakāt: the obligatory alms on wealth of a niṣāb after the ḥawl; not any charity (al-ṣadaqa).* The fixed due on wealth reaching the niṣāb at the end of the ḥawl. Ibn Rajab Q18 sets it against a vowed ṣadaqa of the same niṣāb: «لو نذر الصدقة بنصاب من المال وقت حلول الحول، فهل تجب فيه الزكاة؟ على وجهين», and whether one payment discharges both is a second pair of wujūh.
+
+**Related:** [sadaqa](#sadaqa)
+
+**Texts**
+
+- `src:openiti-rajab-shamela21730/v01:p024`: Ibn Rajab Q18.f004.
+  > لو نذر الصدقة بنصاب من المال وقت حلول الحول، فهل تجب فيه الزكاة؟ على وجهين
+
 <a id="zann"></a>
 
 ## al-ẓann (الظن)
 
-*presumption, probable belief.* Perceiving a thing with an outweighed (marjūḥ) possibility of its opposite (Ibn ʿUthaymīn: «مع احتمال ضد مرجوح»); the outweighed side is wahm, equal sides shakk. Ẓann has degrees, the higher called ghalabat al-ẓann (al-Kawkab), and leans on a cause, unlike wahm (al-Rawḍa). Usage: «ʿilm» is said figuratively of presumptive assent («فإن علمتموهن مؤمنات») and «ẓann» of knowledge («الذين يظنون أنهم ملاقو ربهم»), but neither collapses the grades. Whether fiqh, mostly ẓann, is ʿilm is answered several ways: the ruling is known and the ẓann lies on its way (al-Rāzī; al-Ṭūfī finds it contrived and would define fiqh as ẓann); fiqh is maʿrifa covering both (Ibn ʿUthaymīn); Ibn Taymiyya: belief that a view preponderates is ʿilm, the preponderance of one belief over another is ẓann, and fiqh is the former (IQ-21).
+*presumption, probable belief.* Perceiving a thing with an outweighed (marjūḥ) possibility of its opposite (Ibn ʿUthaymīn: «مع احتمال ضد مرجوح»); the outweighed side is wahm, equal sides shakk. Ẓann has degrees, the higher called ghalabat al-ẓann (al-Kawkab), and leans on a sabab, unlike wahm (al-Rawḍa: «والظن: ميلها بسبب»). Usage: «ʿilm» is said figuratively of presumptive assent («فإن علمتموهن مؤمنات») and «ẓann» of knowledge («الذين يظنون أنهم ملاقو ربهم»), but neither collapses the grades. Whether fiqh, mostly ẓann, is ʿilm is answered several ways: the ruling is known and the ẓann lies on its way (al-Rāzī; al-Ṭūfī finds it contrived and would define fiqh as ẓann); fiqh is maʿrifa covering both (Ibn ʿUthaymīn); Ibn Taymiyya: belief that a view preponderates is ʿilm, the preponderance of one belief over another is ẓann, and fiqh is the former (IQ-21).
 
 **Related:** [ghalabat_al_zann](#ghalabat_al_zann), [ilm](#ilm), [shakk](#shakk), [yaqin](#yaqin), [zahir](#zahir), [zann_bayyin_khatauh](#zann_bayyin_khatauh)
 

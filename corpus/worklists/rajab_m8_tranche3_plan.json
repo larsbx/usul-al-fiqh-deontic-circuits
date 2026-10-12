@@ -930,8 +930,8 @@
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f001",
       "from_note": "He disposed of what he had bought, the sale being void, and he had in fact inherited it: «والمذهب هنا الصحة بلا ريب», since he relied on a permitting cause and had another in fact (Taqī al-Dīn); Ibn Rajab adds the usurper's gift to the owner as support.",
-      "case_sha256": "581e78a3414ea408d39ff6c5c70f26da5fabac5856271ea46150715c1f336f25",
-      "reason": "English note names the Arabic term (problem register PR-02: «void»/«defective» is fāsid here); class, facts and expected unchanged"
+      "case_sha256": "7725b1db48c8db77549005665ab7eacffa67a0b1fb5c6c2cc53e9159940d4a1f",
+      "reason": "English note names the Arabic term (problem register PR-02: «void»/«defective» is fāsid here); then PR-02 «cause»: sabab; class, facts and expected unchanged"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f000",

@@ -44,14 +44,14 @@ Severity:
 | wash, bath | ghusl, ghasl | 11: closed (terms vowelled الغُسل / الغَسل, guard, 14 sites) |
 | void, invalid, defective | bāṭil, fāsid (the madhhab distinguishes them only in ḥajj and nikāḥ, F98), «لا يصح», ʿayb | 58: closed for the registers and Lean docs (76 sites); the glossary's «void» of an argument moves to PR-03 |
 | expiation, compensation, blood-money | kaffāra, fidya, ḍamān, diya, arsh, jazāʾ, fidāʾ | 26: closed (6 terms, 4 āyāt added, 38 sites) |
-| strong, stronger | aqwā, ākad, qawiyy, rājiḥ (of a proof, a ẓāhir, a qarīna) | to measure |
+| strong, stronger | aqwā, ākad, qawiyy, rājiḥ (of a proof, a ẓann, the qarāʾin) | 15: closed (guard; «أقوى/أرجح/قويت/آكد» as forms of al-tarjīḥ; farḍ «آكد» is emphasis, not a stronger proof) |
 | condition, conditional, stipulation | sharṭ, al-shurūṭ fīhā, taʿlīq | 50: closed (2 terms, guard, 50 sites; 6 Lean docs) |
 | oath, vow | yamīn, nadhr | 30 |
 | divorce, separation | ṭalāq, khulʿ, faskh | 45 |
 | obligatory, recommended, duty | wājib, farḍ, mandūb, sunna | 45 |
 | weak, sound | ḍaʿīf, ṣaḥīḥ (whose: a farq, a ḥadīth, a view), al-aṣaḥḥ | 11: closed (8 sense-keyed terms, guard over registers and glossary, 20 sites) |
-| cause, reason | ʿilla, sabab | 24 |
-| charity, alms | zakāt, ṣadaqa | 2 |
+| cause | ʿilla (manāṭ), sabab, ḥikma | 48: closed (guard with forms; Q51's «الأسباب والدواعي» are motives; #74's «لمقتض مشترك» a muqtaḍī; Q7's «reason» is ʿaql) |
+| charity, alms | zakāt, ṣadaqa | 5: closed (2 terms; Q18 is the clash: a vowed ṣadaqa of a niṣāb against its zakāt) |
 
 ## Log
 
@@ -133,4 +133,6 @@ Q19's «المسمى» had been rendered «the stipulated price» in the proposa
 **PR-23, the unguarded fields.** The guards now read every English field that states a ruling or a claim: the foundation's translations, the qāʿida glosses, the citation claims, glossary conditions and ref notes, and the refinement titles, rationales and conditions. In the qiyās citations, «void» was three different words in the sources: «بطل / إبطال / بطلان» (al-ibṭāl, refuting an ʿilla), «يقدح» (al-qadḥ, impairing it) and «إفساد / فاسد». Each is now a term or a listed form of one. «Sound qiyās» is al-qiyās al-ṣaḥīḥ, after Ibn al-Qayyim's «والقياس الصحيح هو الميزان». Two glosses had changed the ruling (PR-22): al-Saʿdī's Q38 «فسدت» read «it is void», though the madhhab separates bāṭil from fāsid in ḥajj and nikāḥ (F98); and Ibn Rajab Q65's «لا يصح العفو» read «the pardon is void». Q53 now carries both of its terms, «إذا تبين فساد العقد بطل ما بني عليه». One «void» was English for «devoid» (#182).
 
 **PR-03, ḥukm.** Beside a judge, English «ruling» is either the sharʿī ḥukm he applies or his verdict, ḥukm al-ḥākim. Only the verdict is «undone»: Ibn Rajab Q68, «ولم ينقض حكمه إلا أن يكون مخالفا لنص صريح». q068.f009 and its refinement now say «verdict (ḥukm al-ḥākim)». The angry-judge example of a ruling's ʿilla (qiyās citation 143) is the sharʿī ḥukm. PR-03 is closed: every polyseme found has a term per sense, and terms sharing an Arabic word must say which sense they are.
+
+**PR-02, «charity», «strong», «cause».** al-Zakāt and al-ṣadaqa are terms; Ibn Rajab Q18 is where they meet, a vowed ṣadaqa of a niṣāb at the ḥawl. «Strong» was always a weight, in tarjīḥ, of a ẓann, or of the qarāʾin, except wājib's ref note, where farḍ is «آكد» (more emphatic), and Ibn Qudāma's «بدليل آكد منه» for the weightier proof in muʿāraḍa. «Cause» is three terms: the ʿilla (the manāṭ extended by qiyās), the sabab (what a ruling attaches to: Q31, Q39, Q46, dhawāt al-asbāb in F126) and the ḥikma. Three English words had stood for other terms: Q7's «reason» is ʿaql, Q35's «for a reason» is «لموجب», and Q51's «causes and motives» are «الأسباب والدواعي», the motives of a contract. The Lean docs' «cause» (31) and «strong» (15) are mostly logical usage and stay out of scope.
 
