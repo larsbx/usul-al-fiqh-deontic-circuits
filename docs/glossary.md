@@ -141,6 +141,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q048`: Al-amr bi'l-shayʾ nahy ʿan aḍdādih.
   > الأمر بالشيء نهى عن أضداده والنهي عنه أمر بأحد أضداده من طريق المعنى دون اللفظ في قول أصحابنا وأصحاب أبي حنيفة والشافعي ومالك. وقال الأشعرية من طريق اللفظ قال أبو البركات بناء على أصلهم أن الأمر والنهي لا صيغة لهما. وزيف الجويني قول أصحابه1 بأن المعنى القائم في النفس المعبر عنه ب "أفعل" مغاير المعنى القائم في ms144 النفس المعبر عنه ب لا تفعل قال ومن أنكر هذا فقد باهت وسقطت مكالمته. وقال طوائف من ا
 
+<a id="arsh"></a>
+
+## al-arsh (الأرش)
+
+*al-arsh: the difference in value a defect makes (in a sale), or a wound's indemnity.* In a sale with a defect (ʿayb): the buyer chooses return or arsh, the difference the defect makes («موجب للرد أو الأرش», F21; F138).
+
+**Related:** [ayb](#ayb), [daman](#daman), [diya](#diya)
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F21`: F21: a defect in a sold thing gives return or arsh.
+  > موجب للرد أو الأرش
+
 <a id="asl"></a>
 
 ## al-aṣl / al-istiṣḥāb (الأصل / الاستصحاب)
@@ -311,6 +324,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `src:openiti-kawkab-shamela12019/v04:p193`: Al-Kawkab: yields ẓann per most aṣḥāb.
   > ويفيد" الدوران "العلة ظنا" عند الأكثر من أصحابنا
 
+<a id="diya"></a>
+
+## al-diya (الدية)
+
+*al-diya: the blood-money for a life or a limb.* «وَدِيَةٌ مُّسَلَّمَةٌ إِلَىٰ أَهْلِهِ» (al-Nisāʾ 92). Deliberate aggression gives the heir qiṣāṣ or diya; error and quasi-deliberate killing «الذي يوجب الدية فقط، إلا إن عفي له عنها» (F49).
+
+**Related:** [daman](#daman), [kaffara](#kaffara)
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F49`: F49: error and quasi-deliberate killing owe diya only, unless it is forgiven.
+  > الذي يوجب الدية فقط، إلا إن عفي له عنها
+
 <a id="far"></a>
 
 ## al-farʿ (الفرع)
@@ -413,6 +439,32 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > فرقوا بينهما بأن الفاسد ما اختلف العلماء في فساده كالنكاح بلا ولي، والباطل ما أجمعوا على بطلانه كنكاح المعتدة.
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047`: Liability under a fāsid contract follows its ṣaḥīḥ counterpart.
   > في ضمان المقبوض بالعقد الفاسد] ، كل عقد يجب الضمان في صحيحه يجب الضمان في فاسده وكل عقد لا يجب الضمان في صحيحه لا يجب الضمان في فاسده. ونعني بذلك أن العقد الصحيح إذا كان موجبا للضمان فالفاسد كذلك وإذا لم يكن الصحيح موجبا للضمان فالفاسد كذلك، فالبيع والإجارة والنكاح موجبة للضمان مع الصحة فكذلك مع الفساد. والأمانات كالمضاربة والشركة والوكالة الوديعة وعقود التبرعات كالهبة لا يجب الضمان فيها مع الصحة.
+
+<a id="fida"></a>
+
+## al-fidāʾ (الفداء)
+
+*al-fidāʾ: ransoming (a slave from his crime, a captive); not fidya.* Paying to free someone or something from a claim: the master of a slave who committed a crime «فيخيّر سيده بين فدائه» (F145) by the lesser of his value and the arsh, or delivers him. Not fidya, the expiatory offering.
+
+**Related:** [fidya](#fidya), [arsh](#arsh)
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F145`: F145: the master may ransom the slave from his crime.
+  > فيخيّر سيده بين فدائه
+
+<a id="fidya"></a>
+
+## al-fidya (الفدية)
+
+*al-fidya: the ransom-offering for a prohibited act of iḥrām, or for a fast not kept.* «فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ» (al-Baqara 196) for the muḥrim; «فِدْيَةٌ طَعَامُ مِسْكِينٍ» (al-Baqara 184) for the fast. In F13 the madhhab owes it for shaving «مطلقاً». Not fidāʾ (ransoming a slave or a captive).
+
+**Related:** [kaffara](#kaffara), [jaza](#jaza), [fida](#fida)
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F13`: F13: the madhhab owes fidya for shaving and clipping whatever the state.
+  > تجب عليه فيه الفدية مطلقاً
 
 <a id="ghalabat_al_zann"></a>
 
@@ -766,6 +818,32 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > وإن تعارضت، وأمكن الجمع وجب الجمع، وإن لم يمكن الجمع عمل بالنسخ إن تمت شروطه.
 - `src:shamela-9942/v01:p053`: Naskh conditional on impossibility of jamʿ.
   > تعذر الجمع بين الدليلين، فإن أمكن الجمع فلا نسخ لإمكان العمل بكل منهما.
+
+<a id="jaza"></a>
+
+## al-jazāʾ (الجزاء)
+
+*al-jazāʾ: the like of game killed in iḥrām or the ḥaram.* «فَجَزَاءٌ مِّثْلُ مَا قَتَلَ مِنَ النَّعَمِ» (al-Māʾida 95). al-Saʿdī: «وأن جزاء الصيد يتعين فيه المثل لظاهر النص» (F17), and it is owed by the deliberate («نصت على المتعمد», F15).
+
+**Related:** [fidya](#fidya), [kaffara](#kaffara), [daman](#daman)
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F17`: F17: the like is fixed in the jazāʾ of game, by the apparent text.
+  > وأن جزاء الصيد يتعين فيه المثل لظاهر النص
+
+<a id="kaffara"></a>
+
+## al-kaffāra (الكفارة)
+
+*al-kaffāra: the expiation fixed for a breach (an oath, ẓihār, killing, intercourse in Ramaḍān).* The expiation the law fixes for a breach: «فَكَفَّارَتُهُ إِطْعَامُ عَشَرَةِ مَسَاكِينَ» (al-Māʾida 89); in an oath, «ففيه الكفارة إذا حنث» (F63). al-Saʿdī also calls the feeding of the old man who cannot fast «الكفارة» (F135), where the āya says «فدية» (al-Baqara 184); the register keeps his word and notes the āya's.
+
+**Related:** [fidya](#fidya), [jaza](#jaza), [daman](#daman), [diya](#diya)
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F63`: F63: the binding oath on a future matter carries kaffāra when broken.
+  > ففيه الكفارة إذا حنث
 
 <a id="kasr"></a>
 

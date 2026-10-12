@@ -918,7 +918,7 @@
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f000",
       "from_note": "A thing received under a defective sale: the known madhhab position requires equivalent/value, not the named price, because compensation comes from loss under the hand, not this defective contract. Abu Bakr, followed here by Taqi al-Din, is reported as selecting the named consideration. Full paragraph read beyond the 400-character record cap.",
-      "case_sha256": "5e83e04f4d32887578e651e5605b82ecb2cf6df3647a2809794ef2e2d20c3438",
+      "case_sha256": "d140ae9f3c3cec32869e8157ffadd98fbd235449d6435ac30eb4381621f07ceb",
       "reason": "English note names the Arabic term (problem register PR-02: «void»/«defective» is fāsid here); class, facts and expected unchanged"
     },
     {
@@ -952,13 +952,13 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f001",
       "reason": "English-only fields name the Arabic term (problem register PR-02); class, facts, rulings and expected unchanged",
       "from_note": "Defective lease: the known madhhab requires equivalent rent. A named-rent alternative is derived from Abu Bakr's sale position. The source says its discussion is the same as sale; the Boolean fact denotes this explicit compensation basis, not a general classification of all leases.",
-      "case_sha256": "ff7065ab1ef7f25a48e0d2ef1af3b03686ecf89be6f5aa1522f7496d2536327e"
+      "case_sha256": "7665ecdff91208ea7fb53ea1dd2ff174d21c5c2af81f4ce552d4081195aba798"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f003",
       "reason": "English-only fields name the Arabic term (problem register PR-02); class, facts, rulings and expected unchanged",
       "from_note": "Defective nikah after consummation: the selected well-known Ahmad transmission, identified as the madhhab by Abu Bakr and Ibn Abi Musa and chosen by al-Qadi, fixes the named mahr. Another transmission, chosen by al-Khiraqi and the author of al-Mughni, fixes equivalent mahr. The full source explains the selected branch as contract compensation; no blanket rule about validity, all nikah, or all relations is inferred.",
-      "case_sha256": "bd0e503a9fa4c6d50939f34a403e8378e632546b816cdb234922238191a83afa"
+      "case_sha256": "94eb6b524d2f83f788d3cd1ad87a24459f0ad520329600987220cc2b06e6def5"
     }
   ]
 }

@@ -109,7 +109,7 @@ theorem f13_alike (m : Muamalat.MentalState) (hm : m ≠ .deliberate) :
 
 /-! ## F15 · game killed deliberately or not: ruled apart
 
-The majority require the compensation for game either way. al-Saʿdī: «ضعف عدم التفريق بين
+The majority require the jazāʾ for game either way. al-Saʿdī: «ضعف عدم التفريق بين
 المتعمد وغير المتعمد في قتل الصيد … مع أن الآية الكريمة نصت على المتعمد». Under T-01 the two
 fall on different sides. -/
 

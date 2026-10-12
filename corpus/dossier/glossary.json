@@ -2525,6 +2525,12 @@
      "excerpt_ar": "التلف في يد الأمين غير مضمون إذا لم يتعد؛ أو يفرط؛",
      "note": "Al-Saʿdī Q14."
     }
+   ],
+   "distinct_from": [
+    "arsh",
+    "diya",
+    "jaza",
+    "kaffara"
    ]
   },
   {
@@ -3488,6 +3494,183 @@
      "ref": "src:islamhouse-qj-doc#F138",
      "excerpt_ar": "وقسّموا البيع المعيب إلى خمسة أقسام",
      "note": "F138: the sale of defective goods, in five divisions."
+    }
+   ]
+  },
+  {
+   "key": "kaffara",
+   "ar": "الكفارة",
+   "tr": "al-kaffāra",
+   "gloss": "al-kaffāra: the expiation fixed for a breach (an oath, ẓihār, killing, intercourse in Ramaḍān)",
+   "definition": "The expiation the law fixes for a breach: «فَكَفَّارَتُهُ إِطْعَامُ عَشَرَةِ مَسَاكِينَ» (al-Māʾida 89); in an oath, «ففيه الكفارة إذا حنث» (F63). al-Saʿdī also calls the feeding of the old man who cannot fast «الكفارة» (F135), where the āya says «فدية» (al-Baqara 184); the register keeps his word and notes the āya's.",
+   "related": [
+    "fidya",
+    "jaza",
+    "daman",
+    "diya"
+   ],
+   "distinct_from": [
+    "fidya",
+    "jaza",
+    "daman",
+    "diya",
+    "arsh"
+   ],
+   "nusus": [
+    "Q005:089"
+   ],
+   "furuq": [
+    "F63",
+    "F135"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F63",
+     "excerpt_ar": "ففيه الكفارة إذا حنث",
+     "note": "F63: the binding oath on a future matter carries kaffāra when broken."
+    }
+   ]
+  },
+  {
+   "key": "fidya",
+   "ar": "الفدية",
+   "tr": "al-fidya",
+   "gloss": "al-fidya: the ransom-offering for a prohibited act of iḥrām, or for a fast not kept",
+   "definition": "«فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ» (al-Baqara 196) for the muḥrim; «فِدْيَةٌ طَعَامُ مِسْكِينٍ» (al-Baqara 184) for the fast. In F13 the madhhab owes it for shaving «مطلقاً». Not fidāʾ (ransoming a slave or a captive).",
+   "related": [
+    "kaffara",
+    "jaza",
+    "fida"
+   ],
+   "distinct_from": [
+    "kaffara",
+    "jaza",
+    "fida"
+   ],
+   "nusus": [
+    "Q002:196c",
+    "Q002:184"
+   ],
+   "furuq": [
+    "F13"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F13",
+     "excerpt_ar": "تجب عليه فيه الفدية مطلقاً",
+     "note": "F13: the madhhab owes fidya for shaving and clipping whatever the state."
+    }
+   ]
+  },
+  {
+   "key": "jaza",
+   "ar": "الجزاء",
+   "tr": "al-jazāʾ",
+   "gloss": "al-jazāʾ: the like of game killed in iḥrām or the ḥaram",
+   "definition": "«فَجَزَاءٌ مِّثْلُ مَا قَتَلَ مِنَ النَّعَمِ» (al-Māʾida 95). al-Saʿdī: «وأن جزاء الصيد يتعين فيه المثل لظاهر النص» (F17), and it is owed by the deliberate («نصت على المتعمد», F15).",
+   "related": [
+    "fidya",
+    "kaffara",
+    "daman"
+   ],
+   "distinct_from": [
+    "fidya",
+    "kaffara",
+    "daman"
+   ],
+   "nusus": [
+    "Q005:095"
+   ],
+   "furuq": [
+    "F15",
+    "F17"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F17",
+     "excerpt_ar": "وأن جزاء الصيد يتعين فيه المثل لظاهر النص",
+     "note": "F17: the like is fixed in the jazāʾ of game, by the apparent text."
+    }
+   ]
+  },
+  {
+   "key": "diya",
+   "ar": "الدية",
+   "tr": "al-diya",
+   "gloss": "al-diya: the blood-money for a life or a limb",
+   "definition": "«وَدِيَةٌ مُّسَلَّمَةٌ إِلَىٰ أَهْلِهِ» (al-Nisāʾ 92). Deliberate aggression gives the heir qiṣāṣ or diya; error and quasi-deliberate killing «الذي يوجب الدية فقط، إلا إن عفي له عنها» (F49).",
+   "related": [
+    "daman",
+    "kaffara"
+   ],
+   "distinct_from": [
+    "daman",
+    "kaffara",
+    "arsh"
+   ],
+   "nusus": [
+    "Q004:092",
+    "Q002:179"
+   ],
+   "furuq": [
+    "F49"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F49",
+     "excerpt_ar": "الذي يوجب الدية فقط، إلا إن عفي له عنها",
+     "note": "F49: error and quasi-deliberate killing owe diya only, unless it is forgiven."
+    }
+   ]
+  },
+  {
+   "key": "arsh",
+   "ar": "الأرش",
+   "tr": "al-arsh",
+   "gloss": "al-arsh: the difference in value a defect makes (in a sale), or a wound's indemnity",
+   "definition": "In a sale with a defect (ʿayb): the buyer chooses return or arsh, the difference the defect makes («موجب للرد أو الأرش», F21; F138).",
+   "related": [
+    "ayb",
+    "daman",
+    "diya"
+   ],
+   "distinct_from": [
+    "daman",
+    "diya"
+   ],
+   "furuq": [
+    "F21",
+    "F138"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F21",
+     "excerpt_ar": "موجب للرد أو الأرش",
+     "note": "F21: a defect in a sold thing gives return or arsh."
+    }
+   ]
+  },
+  {
+   "key": "fida",
+   "ar": "الفداء",
+   "tr": "al-fidāʾ",
+   "gloss": "al-fidāʾ: ransoming (a slave from his crime, a captive); not fidya",
+   "definition": "Paying to free someone or something from a claim: the master of a slave who committed a crime «فيخيّر سيده بين فدائه» (F145) by the lesser of his value and the arsh, or delivers him. Not fidya, the expiatory offering.",
+   "related": [
+    "fidya",
+    "arsh"
+   ],
+   "distinct_from": [
+    "fidya"
+   ],
+   "furuq": [
+    "F145"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F145",
+     "excerpt_ar": "فيخيّر سيده بين فدائه",
+     "note": "F145: the master may ransom the slave from his crime."
     }
    ]
   }

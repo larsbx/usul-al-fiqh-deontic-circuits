@@ -49,6 +49,23 @@
     "registers",
     "lean"
    ]
+  },
+  {
+   "gloss_en": "\\b(expiat\\w*|compensat\\w*|ransom\\w*|blood-money|indemn\\w*)\\b",
+   "terms": [
+    "kaffara",
+    "fidya",
+    "jaza",
+    "diya",
+    "arsh",
+    "daman",
+    "fida"
+   ],
+   "scope": [
+    "registers",
+    "lean"
+   ],
+   "why": "English «expiation» and «compensation» cover al-kaffāra, al-fidya, al-jazāʾ, al-diya, al-arsh, al-ḍamān and al-fidāʾ, each with its own cause and measure (al-Māʾida 89 and 95, al-Baqara 196, al-Nisāʾ 92; F13, F17, F21, F49, F63)."
   }
  ],
  "note": "Every English text field of the corpus registers, and every Lean doc comment, that uses one of these glosses must also name the term it means, by its transliteration or its Arabic (tests/test_nusus.py). The English never feeds a derivation; this keeps it from hiding which term a case is about."

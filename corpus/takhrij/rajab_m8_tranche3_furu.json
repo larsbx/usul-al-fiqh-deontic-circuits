@@ -273,7 +273,7 @@
         "contract_liability": false
       },
       "expected": "equivalent",
-      "note": "A thing received under a fāsid sale: the known madhhab position requires equivalent/value, not the named price, because compensation comes from loss under the hand, not this fāsid contract. Abu Bakr, followed here by Taqi al-Din, is reported as selecting the named consideration. Full paragraph read beyond the 400-character record cap.",
+      "note": "A thing received under a fāsid sale: the known madhhab position requires equivalent/value, not the named price, because the ḍamān comes from loss under the hand, not this fāsid contract. Abu Bakr, followed here by Taqi al-Din, is reported as selecting the named consideration. Full paragraph read beyond the 400-character record cap.",
       "positions": [
         {
           "who": "known madhhab; Ahmad in the cited transmissions: equivalent/value",
@@ -294,7 +294,7 @@
         "contract_liability": false
       },
       "expected": "equivalent",
-      "note": "Fāsid lease: the known madhhab requires equivalent rent. A named-rent alternative is derived from Abu Bakr's sale position. The source says its discussion is the same as sale; the Boolean fact denotes this explicit compensation basis, not a general classification of all leases.",
+      "note": "Fāsid lease: the known madhhab requires equivalent rent. A named-rent alternative is derived from Abu Bakr's sale position. The source says its discussion is the same as sale; the Boolean fact denotes this explicit ḍamān basis, not a general classification of all leases.",
       "positions": [
         {
           "who": "known madhhab: equivalent rent",
@@ -325,7 +325,7 @@
         "contract_liability": true
       },
       "expected": "agreed",
-      "note": "Fāsid nikāḥ after consummation: the selected well-known Ahmad transmission, identified as the madhhab by Abu Bakr and Ibn Abi Musa and chosen by al-Qadi, fixes the named mahr. Another transmission, chosen by al-Khiraqi and the author of al-Mughni, fixes equivalent mahr. The full source explains the selected branch as contract compensation; no blanket rule about validity, all nikah, or all relations is inferred.",
+      "note": "Fāsid nikāḥ after consummation: the selected well-known Ahmad transmission, identified as the madhhab by Abu Bakr and Ibn Abi Musa and chosen by al-Qadi, fixes the named mahr. Another transmission, chosen by al-Khiraqi and the author of al-Mughni, fixes equivalent mahr. The full source explains the selected branch as ḍamān under the contract; no blanket rule about validity, all nikah, or all relations is inferred.",
       "positions": [
         {
           "who": "well-known Ahmad transmission; madhhab as identified by Abu Bakr and Ibn Abi Musa: named mahr",

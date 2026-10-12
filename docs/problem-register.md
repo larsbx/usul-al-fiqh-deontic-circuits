@@ -41,7 +41,7 @@ Severity:
 | pure, purity, purify | ṭāhir, ṭahūr, ṭahāra, maḥḍ | 26: closed (glossary, guard, 31 sites) |
 | wash, bath | ghusl, ghasl | 11: closed (terms vowelled الغُسل / الغَسل, guard, 14 sites) |
 | void, invalid, defective | bāṭil, fāsid (the madhhab distinguishes them only in ḥajj and nikāḥ, F98), «لا يصح», ʿayb | 58: closed for the registers and Lean docs (76 sites); the glossary's «void» of an argument moves to PR-03 |
-| expiation, compensation, blood-money | kaffāra, fidya, ḍamān, diya, arsh, jazāʾ | 26 |
+| expiation, compensation, blood-money | kaffāra, fidya, ḍamān, diya, arsh, jazāʾ, fidāʾ | 26: closed (6 terms, 4 āyāt added, 38 sites) |
 | oath, vow | yamīn, nadhr | 30 |
 | divorce, separation | ṭalāq, khulʿ, faskh | 45 |
 | obligatory, recommended, duty | wājib, farḍ, mandūb, sunna | 45 |
@@ -95,3 +95,19 @@ The guard then found 31 sites in the registers and the Lean doc comments. Each w
 * F30's «contract voided» is a contract undone (infisākh) for a defect, not one bāṭil from its start.
 
 al-Saʿdī's Q53 («إذا تبين فساد العقد، بطل ما بني عليه») holds both terms in one sentence, and its Lean doc had flattened them into «void voids». The guard now also reads the `who` labels of positions, which found 9 more sites across the families already closed. The glossary's «void» of a ʿilla or an argument is the buṭlān of a dalīl, a different sense, and is left to PR-03.
+
+**PR-02, «expiation / compensation».** Six terms are defined from the texts. Four āyāt are added to the foundation: al-Māʾida 89, al-Baqara 184 and the fidya clause of 196, and al-Nisāʾ 92.
+* al-kaffāra: al-Māʾida 89; F63 «ففيه الكفارة إذا حنث».
+* al-fidya: al-Baqara 196 and 184; F13.
+* al-jazāʾ: al-Māʾida 95; F17 «وأن جزاء الصيد يتعين فيه المثل لظاهر النص».
+* al-diya: al-Nisāʾ 92; F49 «الذي يوجب الدية فقط».
+* al-arsh: F21 «موجب للرد أو الأرش».
+* al-fidāʾ, ransoming, not fidya: F145.
+
+Each of the 38 sites names its term from its source:
+* game is jazāʾ (F15, F17); a defect in goods is arsh (F21); killing is diya (F44, F49, F66);
+* oaths and ẓihār are kaffāra (F59 … F63); what the slave destroys is ḍamān (F43, «قيمة متلف»);
+* doubling under Q35 and Ibn Rajab 140 is of ḍamān, in al-Saʿdī's words «ضوعف عليه الضمان»;
+* ransoming a slave or a captive is fidāʾ.
+
+Where al-Saʿdī calls the old man's feeding «الكفارة» (F135), the āya says «فدية» (al-Baqara 184). The register keeps his word and notes the āya's.

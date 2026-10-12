@@ -502,8 +502,8 @@ theorem undertaken_settles : takerRecourse true = false := rfl
 These are candidate readings of the named source positions, not adopted rulings.
 Q31 distinguishes corruption after a binding start from prevention, and faulty from
 non-faulty loss. The non-faulty-loss branch follows the author of al-Mughnī; another
-position remains recorded in the annotation. Q47 distinguishes compensation under
-the contract from compensation for loss. It does not identify every fāsid contract
+position remains recorded in the annotation. Q47 distinguishes ḍamān under
+the contract from ḍamān for loss. It does not identify every fāsid contract
 with a bāṭil one, or decide which contracts are binding. -/
 
 inductive MakeupFailure where
@@ -533,8 +533,8 @@ inductive CompensationBasis where
   | agreed | equivalent
   deriving DecidableEq, Repr
 
-/-- Q47's explanatory distinction: contract compensation uses the named consideration;
-loss compensation uses the equivalent. The annotation must establish which applies. -/
+/-- Q47's explanatory distinction: ḍamān under the contract uses the named consideration;
+ḍamān for loss uses the equivalent. The annotation must establish which applies. -/
 def defectiveCompensationBasis (contractLiability : Bool) : CompensationBasis :=
   if contractLiability then .agreed else .equivalent
 

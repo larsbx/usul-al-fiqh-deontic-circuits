@@ -37,7 +37,7 @@
   {
    "id": "F43",
    "cases_en": [
-    "a slave's financial duties (zakāt, expiation, compensation)",
+    "a slave's financial duties (zakāt, kaffāra, the value of what he destroys: ḍamān)",
     "a free man's"
    ],
    "madhhab": "apart",
@@ -54,7 +54,7 @@
   {
    "id": "F44",
    "cases_en": [
-    "men (Friday, congregation, bodily jihād, full inheritance, blood-money, testimony, offices)",
+    "men (Friday, congregation, bodily jihād, full inheritance, diya, testimony, offices)",
     "women"
    ],
    "madhhab": "apart",
@@ -143,8 +143,8 @@
   {
    "id": "F49",
    "cases_en": [
-    "deliberate aggressive killing (retaliation or blood-money, as the heir chooses)",
-    "error and quasi-deliberate killing (blood-money only)"
+    "deliberate aggressive killing (qiṣāṣ or diya, as the heir chooses)",
+    "error and quasi-deliberate killing (diya only)"
    ],
    "madhhab": "apart",
    "grade": "sahih",
@@ -319,7 +319,7 @@
   {
    "id": "F59",
    "cases_en": [
-    "an oath (released by expiation)",
+    "an oath (released by kaffāra)",
     "a vow (must be fulfilled)"
    ],
    "madhhab": "apart",

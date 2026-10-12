@@ -137,7 +137,7 @@ theorem q14_fault_makes_trustee_liable (t n : Bool) (h : t = true ∨ n = true) 
     lossLiable .trustee t n = true := by
   rcases h with h | h <;> simp [lossLiable, h]
 
-/-! ## Q18 / Q19 — fungibles are compensated in kind, others by value; an unattainable
+/-! ## Q18 / Q19 — ḍamān: fungibles by their like, others by value; an unattainable
 stipulated price reverts to value -/
 
 inductive Good where
@@ -261,7 +261,7 @@ theorem q26_q43_from_presumption (h : HeldFor) (c : Bool) :
     returnClaimAccepted h c = (burdenOf (returnPresumption h c) true == .yamin) := by
   cases h <;> cases c <;> rfl
 
-/-! ## Q35 — whoever escapes punishment for a reason owes doubled compensation -/
+/-! ## Q35 — whoever escapes punishment for a reason owes doubled ḍamān («ضوعف عليه الضمان») -/
 
 def compensationOwed (value : Nat) (punishmentLapsed : Bool) : Nat :=
   if punishmentLapsed then 2 * value else value
@@ -315,7 +315,7 @@ theorem q47_vow_as_law : obligationStatus .vow = obligationStatus .sharia := rfl
 theorem q47_ignores_source : Factors obligationStatus (fun _ => ()) :=
   Factors.of_eq (fun _ => .wajib) fun _ => rfl
 
-/-- … so every ruling computed from the status (making up, expiation, sin of omission, …)
+/-- … so every ruling computed from the status (making up, kaffāra, sin of omission, …)
 is the same for a vow as for the law. -/
 theorem q47_consequences {β : Type} (g : Hukm → β) :
     g (obligationStatus .vow) = g (obligationStatus .sharia) :=

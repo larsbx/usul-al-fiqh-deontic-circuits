@@ -108,7 +108,7 @@ theorem t2_jam (claimants : Bool) :
 /-! ## T3 · Q31 ⟂ Q41: two acts of worship of one kind
 
 Q31: each cause works its own effect. Q41: two acts of worship of one kind merge into one. On
-two expiations owed they disagree. al-Saʿdī (Q41) restricts the merger to «إذا كان مقصودهما
+two kaffārāt owed they disagree. al-Saʿdī (Q41) restricts the merger to «إذا كان مقصودهما
 واحدا» and adds «وأما إذا كانت الكفارات متباينة مقاصدها»: then each is owed. -/
 
 /-- The case: whether the two owed acts share their purpose. The result is how many
