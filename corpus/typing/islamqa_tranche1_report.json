@@ -12,6 +12,11 @@
     "5": 0.6911,
     "10": 0.6911
   },
+  "recall_with_named_rules": {
+    "1": 0.3008,
+    "5": 0.6911,
+    "10": 0.6911
+  },
   "lexical_recall": {
     "1": 0.0894,
     "5": 0.2927,
@@ -229,7 +234,11 @@
       "case": "islamqa.223512.f001",
       "encoder": "itlaf",
       "settled": 0.0,
-      "rank": null
+      "rank": null,
+      "named_rules": [
+        "mubashara_tasabbub"
+      ],
+      "best_rank_with_named": null
     },
     {
       "case": "islamqa.223512.f002",
@@ -271,19 +280,31 @@
       "case": "islamqa.305083.f001",
       "encoder": "itlaf",
       "settled": 0.0,
-      "rank": null
+      "rank": null,
+      "named_rules": [
+        "mubashara_tasabbub"
+      ],
+      "best_rank_with_named": null
     },
     {
       "case": "islamqa.305083.f002",
       "encoder": "itlaf",
       "settled": 0.0,
-      "rank": null
+      "rank": null,
+      "named_rules": [
+        "mubashara_tasabbub"
+      ],
+      "best_rank_with_named": null
     },
     {
       "case": "islamqa.305083.f003",
       "encoder": "itlaf",
       "settled": 0.0,
-      "rank": null
+      "rank": null,
+      "named_rules": [
+        "mubashara_tasabbub"
+      ],
+      "best_rank_with_named": null
     },
     {
       "case": "islamqa.315435.f001",
@@ -307,13 +328,21 @@
       "case": "islamqa.317604.f001",
       "encoder": "itlaf",
       "settled": 0.0,
-      "rank": null
+      "rank": null,
+      "named_rules": [
+        "mubashara_tasabbub"
+      ],
+      "best_rank_with_named": null
     },
     {
       "case": "islamqa.317604.f002",
       "encoder": "itlaf",
       "settled": 0.0,
-      "rank": null
+      "rank": null,
+      "named_rules": [
+        "mubashara_tasabbub"
+      ],
+      "best_rank_with_named": null
     },
     {
       "case": "islamqa.328808.f001",
@@ -331,7 +360,11 @@
       "case": "islamqa.344230.f002",
       "encoder": "itlaf",
       "settled": 0.5,
-      "rank": 2
+      "rank": 2,
+      "named_rules": [
+        "mubashara_tasabbub"
+      ],
+      "best_rank_with_named": 2
     },
     {
       "case": "islamqa.345284.f001",
@@ -349,13 +382,21 @@
       "case": "islamqa.348122.f001",
       "encoder": "itlaf",
       "settled": 0.0,
-      "rank": null
+      "rank": null,
+      "named_rules": [
+        "mubashara_tasabbub"
+      ],
+      "best_rank_with_named": null
     },
     {
       "case": "islamqa.348122.f002",
       "encoder": "itlaf",
       "settled": 0.0,
-      "rank": null
+      "rank": null,
+      "named_rules": [
+        "mubashara_tasabbub"
+      ],
+      "best_rank_with_named": null
     },
     {
       "case": "islamqa.348122.f003",

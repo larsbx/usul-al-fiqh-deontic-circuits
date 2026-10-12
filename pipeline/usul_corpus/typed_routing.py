@@ -55,19 +55,29 @@ def coverage(root: Path) -> dict[str, dict[str, tuple[int, int]]]:
 
 
 def report(root: Path, cov: dict[str, dict[str, tuple[int, int]]]) -> dict:
+    """Recall against each case's labelled encoder; beside it, recall where routing to a rule the case
+    itself named as missing (``needs: rule:E``, E now an encoder) also counts. Labels are not rewritten."""
+    from .takhrij import ENCODERS as encoders
     data = json.loads((root / SITUATIONS).read_text(encoding="utf-8"))
     cases = json.loads((root / TRANCHE).read_text(encoding="utf-8"))["cases"]
     typed = {a["answer"] for a in data["answers"]}
-    hits, applied, rows = defaultdict(int), 0, []
+    hits, named_hits, applied, rows = defaultdict(int), defaultdict(int), 0, []
     for c in cases:
         a = c["far"].rsplit(".", 1)[0]
         scores = {e: k / n for e, (k, n) in cov.get(a, {}).items()}
-        s = scores.get(c["encoder"], 0.0)
-        rank = sum(v >= s for v in scores.values()) if s > 0 else None
+        def rank_of(e: str) -> int | None:
+            s = scores.get(e, 0.0)
+            return sum(v >= s for v in scores.values()) if s > 0 else None
+        rank, s = rank_of(c["encoder"]), scores.get(c["encoder"], 0.0)
+        # the rules the tranche itself named as missing, now in the bank
+        named = sorted({n[5:] for n in c.get("needs", []) if n.startswith("rule:") and n[5:] in encoders})
+        best = min((r for r in [rank, *map(rank_of, named)] if r is not None), default=None)
         applied += s == 1.0
         for k in KS:
             hits[k] += rank is not None and rank <= k
-        rows.append({"case": c["far"], "encoder": c["encoder"], "settled": round(s, 4), "rank": rank})
+            named_hits[k] += best is not None and best <= k
+        rows.append({"case": c["far"], "encoder": c["encoder"], "settled": round(s, 4), "rank": rank,
+                     **({"named_rules": named, "best_rank_with_named": best} if named else {})})
     n = len(cases)
     applying = [sum(k == n for k, n in cov.get(a, {}).values()) for a in sorted(typed)]
     touched = [len(cov.get(a, {})) for a in sorted(typed)]
@@ -78,6 +88,7 @@ def report(root: Path, cov: dict[str, dict[str, tuple[int, int]]]) -> dict:
             "fields_stated": sum(len(s["facts"]) for a in data["answers"] for s in a["situations"]),
             "cases": n, "applies": round(applied / n, 4),
             "recall": {str(k): round(hits[k] / n, 4) for k in KS},
+            "recall_with_named_rules": {str(k): round(named_hits[k] / n, 4) for k in KS},
             "lexical_recall": lexical["recall"], "lexical_prior": lexical["prior"],
             "encoders_applying_per_answer": round(sum(applying) / len(applying), 2),
             "encoders_touched_per_answer": round(sum(touched) / len(touched), 2),
