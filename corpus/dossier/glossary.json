@@ -298,7 +298,7 @@
    "key": "sahih",
    "ar": "الصحيح",
    "tr": "al-ṣaḥīḥ",
-   "gloss": "valid",
+   "gloss": "al-ṣaḥīḥ (of an act or contract): valid, its effects follow; not the ḥadīth grade, nor a sound farq",
    "definition": "Ibn ʿUthaymīn: what the effects of performing it follow from, whether an act of worship or a contract; it requires its conditions complete and its impediments absent. Ibn Qudāma defines ṣiḥḥa as the Lawgiver's taking the thing into account with respect to its ruling. Ibn Rajab and al-Saʿdī: a prohibition directed at the act of worship itself or its condition voids it, one directed at something external does not (Ibn Rajab reports two narrations where the prohibition of a condition is not specific to it).",
    "conditions": [
     "conditions present",
@@ -336,13 +336,17 @@
      "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009",
      "note": "Prohibition returning to the essence or a specific condition of worship voids it; otherwise two narrations or two wajhs."
     }
+   ],
+   "distinct_from": [
+    "fasid",
+    "batil"
    ]
   },
   {
    "key": "fasid",
    "ar": "الفاسد",
    "tr": "al-fāsid",
-   "gloss": "invalid",
+   "gloss": "al-fāsid: not ṣaḥīḥ; in the madhhab one with al-bāṭil, except in ḥajj and nikāḥ (F98)",
    "definition": "Ibn ʿUthaymīn: what the effects of performing it do not follow from, whether worship or contract. Ibn al-Laḥḥām: for the Ḥanbalīs and Shāfiʿīs fāsid and bāṭil are synonyms, whereas Abū Ḥanīfa distinguishes the bāṭil (not legislated at all) from the fāsid (legislated in origin but forbidden for a prohibited attribute); Ibn ʿUthaymīn notes the Ḥanbalīs still distinguish them in ḥajj and marriage. Ibn Rajab: a contract whose sound form entails liability entails it when fāsid too.",
    "conditions": [
     "a missing condition or present impediment (Ibn ʿUthaymīn)"
@@ -376,6 +380,13 @@
      "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047",
      "note": "Liability under a fāsid contract follows its ṣaḥīḥ counterpart."
     }
+   ],
+   "distinct_from": [
+    "batil",
+    "ayb"
+   ],
+   "furuq": [
+    "F98"
    ]
   },
   {
@@ -3427,6 +3438,56 @@
      "ref": "src:islamhouse-qj-doc#F70",
      "excerpt_ar": "التي لا بد فيها من سبع غسلات إحداها بتراب ونحوه",
      "note": "F70: seven washings (ghasalāt) for the heavy najāsa."
+    }
+   ]
+  },
+  {
+   "key": "batil",
+   "ar": "الباطل",
+   "tr": "al-bāṭil",
+   "gloss": "al-bāṭil: void, no effect follows; in the madhhab one with al-fāsid except in ḥajj and nikāḥ",
+   "definition": "What has no effect. al-Saʿdī reports the madhhab: the aṣḥāb distinguish the bāṭil from the fāsid in two chapters only, the ḥajj and ʿumra (one goes on in the fāsid and makes it up) and nikāḥ (a fāsid nikāḥ needs ṭalāq or faskh, «للاختلاف فيه»); «وأما بقية الأبواب فجعلوا الباطل والفاسد واحداً، الكل لا يصح ولا يفيد الملك والتصرف» (F98). So «void» and «defective» must say which, above all in those two chapters.",
+   "related": [
+    "fasid",
+    "sahih"
+   ],
+   "distinct_from": [
+    "fasid",
+    "ayb"
+   ],
+   "furuq": [
+    "F98"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F98",
+     "excerpt_ar": "وأما بقية الأبواب فجعلوا الباطل والفاسد واحداً، الكل لا يصح ولا يفيد الملك والتصرف",
+     "note": "F98: outside ḥajj and nikāḥ the bāṭil and the fāsid are one."
+    }
+   ]
+  },
+  {
+   "key": "ayb",
+   "ar": "العيب",
+   "tr": "al-ʿayb",
+   "gloss": "al-ʿayb: a defect or blemish in a thing (goods, a sacrificial animal); not fasād of a contract",
+   "definition": "A defect in the thing itself: goods sold with a defect («البيع المعيب», F138: return or arsh), a sacrificial animal that becomes blemished («ثم تعيبت فإنها لا تجزيه», Ibn Rajab 30). It says nothing of the contract's validity: a sale of defective goods is ṣaḥīḥ, with an option. English «defective» must say which.",
+   "related": [
+    "fasid",
+    "batil"
+   ],
+   "distinct_from": [
+    "fasid",
+    "batil"
+   ],
+   "furuq": [
+    "F138"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F138",
+     "excerpt_ar": "وقسّموا البيع المعيب إلى خمسة أقسام",
+     "note": "F138: the sale of defective goods, in five divisions."
     }
    ]
   }

@@ -347,7 +347,7 @@
    "expected": true,
    "positions": [
     {
-     "who": "wajh 1: impure",
+     "who": "wajh 1: najis",
      "ruling": true
     },
     {
@@ -424,7 +424,7 @@
      "ruling": false
     },
     {
-     "who": "riwaya 3: if the zahir is very strong, not used before washing",
+     "who": "riwaya 3: if the zahir is very strong, not used before ghasl",
      "ruling": true
     }
    ],
@@ -451,7 +451,7 @@
      "ruling": false
     },
     {
-     "who": "wajh: forbidden until washed (Ibn Abi Musa's choice)",
+     "who": "wajh: forbidden until washed, ghasl (Ibn Abi Musa's choice)",
      "ruling": true
     }
    ],
@@ -789,7 +789,7 @@
     "customary_continuity": true
    },
    "expected": true,
-   "note": "A prayer may be resumed after a forgetful salam if the gap is short, and is not invalidated."
+   "note": "A prayer may be resumed after a forgetful salam if the gap is short, and does not become bāṭil."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f004",
@@ -1213,7 +1213,7 @@
     "ahd": true
    },
    "expected": false,
-   "note": "'I bequeath to my neighbour Muḥammad' with two neighbours so named: the proper name pins the annexed singular (taʿyīn), so it is not general; both positions (invalid, al-aṣaḥḥ; or valid for one chosen by the heirs) agree on that, and their dispute about validity lies beyond this reading.",
+   "note": "'I bequeath to my neighbour Muḥammad' with two neighbours so named: the proper name pins the annexed singular (taʿyīn), so it is not general; both positions (not ṣaḥīḥ, al-aṣaḥḥ; or ṣaḥīḥ for one chosen by the heirs) agree on that, and their dispute about validity lies beyond this reading.",
    "revisit": {
     "from_class": "encoding_error",
     "closed_by": [
@@ -1557,7 +1557,7 @@
     "confusion_category": true
    },
    "expected": "lot",
-   "note": "Bequest to 'my neighbour Muḥammad' with two neighbours so named: void, or valid with one picked by lot; the earlier fuller treatment gives validity as the naṣṣ and lot for the confused entitled per qiyās al-madhhab, which the refined reading derives.",
+   "note": "Bequest to 'my neighbour Muḥammad' with two neighbours so named: bāṭil, or ṣaḥīḥ with one picked by lot; the earlier fuller treatment gives validity as the naṣṣ and lot for the confused entitled per qiyās al-madhhab, which the refined reading derives.",
    "revisit": {
     "from_class": "encoding_error",
     "closed_by": [
@@ -1645,7 +1645,7 @@
     "confusion_category": true
    },
    "expected": "lot",
-   "note": "A deceased's wife irrevocably divorced (or invalidly married) and unknown among his wives is identified by lot and the inheritance goes to the rest (naṣṣ of Aḥmad): a confused specific entitlement, lots though the share is divisible.",
+   "note": "A deceased's wife irrevocably divorced (or married by a fāsid nikāḥ) and unknown among his wives is identified by lot and the inheritance goes to the rest (naṣṣ of Aḥmad): a confused specific entitlement, lots though the share is divisible.",
    "revisit": {
     "from_class": "encoding_error",
     "closed_by": [
@@ -1691,7 +1691,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Two guardians marry her to two men with the earlier unknown: riwāyatān lot vs annulment/voidness; Ibn Abī Mūsā marks voidness as more correct, so the kernel's lot matches the non-preferred riwāya; the reading has no field for the inner validity of a marriage (abḍāʿ)."
+   "note": "Two guardians marry her to two men with the earlier unknown: riwāyatān lot vs annulment (faskh), or both bāṭil; Ibn Abī Mūsā marks both bāṭil as more correct, so the kernel's lot matches the non-preferred riwāya; the reading has no field for the inner validity of a marriage (abḍāʿ)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f018",
@@ -2120,7 +2120,7 @@
     "confusion_category": false
    },
    "expected": "lot",
-   "note": "Two archery teams dispute which picks first: lot; appended dispute on who shoots first has positions (lot per al-Āmidī, prize-giver first then lot per al-Qāḍī, contract invalid per al-Targhīb)."
+   "note": "Two archery teams dispute which picks first: lot; appended dispute on who shoots first has positions (lot per al-Āmidī, prize-giver first then lot per al-Qāḍī, contract not ṣaḥīḥ per al-Targhīb)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f038",
@@ -2172,7 +2172,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Imamate contracted to two in succession, earlier unknown: takhrīj on the two-guardians case (void vs lot); Ibn Rajab says the mashhūr there is annulment, so lot is the non-mashhūr."
+   "note": "Imamate contracted to two in succession, earlier unknown: takhrīj on the two-guardians case (bāṭil vs lot); Ibn Rajab says the mashhūr there is annulment, so lot is the non-mashhūr."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f041",
@@ -3129,7 +3129,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "A waqf made conditional on the founder's death is valid on al-manṣūṣ, called the sounder, because it counts as a bequest and bequests accept conditions, while al-Qāḍī invalidates it."
+   "note": "A waqf made conditional on the founder's death is valid on al-manṣūṣ, called the sounder, because it counts as a bequest and bequests accept conditions, while al-Qāḍī holds it not ṣaḥīḥ."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f012",
@@ -3173,7 +3173,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "A convert with more than four wives says 'whenever one of you converts she is divorced': one wajh invalidates it (choice cannot be conditioned), the other validates it because choice follows the divorce; neither is marked."
+   "note": "A convert with more than four wives says 'whenever one of you converts she is divorced': one wajh: not ṣaḥīḥ (choice cannot be conditioned), the other validates it because choice follows the divorce; neither is marked."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f015",
@@ -3570,7 +3570,7 @@
     "negligent": false
    },
    "expected": true,
-   "note": "An agent who transgresses becomes liable for what he transgressed in (al-mashhur), while the agency itself survives; only the liability side is encoded, the voidance question is outside the encoder."
+   "note": "An agent who transgresses becomes liable for what he transgressed in (al-mashhur), while the agency itself survives; only the liability side is encoded, the question whether the agency becomes bāṭil is outside the encoder."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002",
@@ -3582,7 +3582,7 @@
     "negligent": false
    },
    "expected": true,
-   "note": "A partner or mudarib who transgresses becomes liable and his dealings remain valid (min al-madhhab); liability is encoded, voidance is not."
+   "note": "A partner or mudarib who transgresses becomes liable and his dealings remain valid (min al-madhhab); liability is encoded, buṭlān (becoming bāṭil) is not."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003",
@@ -3606,7 +3606,7 @@
     "negligent": true
    },
    "expected": true,
-   "note": "A hired guardian who stops guarding partway becomes liable (the sounder wajh, the lease not voided); the two wujuh concern voidance, not liability."
+   "note": "A hired guardian who stops guarding partway becomes liable (the sounder wajh, the lease not made bāṭil); the two wujuh concern buṭlān (bāṭil or not), not liability."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005",
@@ -3627,11 +3627,11 @@
    },
    "positions": [
     {
-     "who": "first possibility (Ibn ʿAqīl, al-Mufradāt): voided",
+     "who": "first possibility (Ibn ʿAqīl, al-Mufradāt): bāṭil",
      "ruling": true
     },
     {
-     "who": "second possibility: not voided",
+     "who": "second possibility: not bāṭil",
      "ruling": false
     }
    ],
@@ -3834,16 +3834,16 @@
    "expected": true,
    "positions": [
     {
-     "who": "al-mashhūr: void, a trust outright (amāna maḥḍa)",
+     "who": "al-mashhūr: bāṭil, a trust outright (amāna maḥḍa)",
      "ruling": true
     },
     {
-     "who": "Ibn al-Zāghūnī: not void once he resumes keeping it",
+     "who": "Ibn al-Zāghūnī: not bāṭil once he resumes keeping it",
      "ruling": false
     }
    ],
    "matches_madhhab": true,
-   "note": "Transgression in a deposit voids it, the duty is to return it at once, «لأنها أمانة محضة… هذا هو المشهور»; Ibn al-Zāghūnī: once the transgression ends and he resumes keeping it, it is not void. (Opening example, segmented as f000.)"
+   "note": "Transgression in a deposit makes the trust bāṭil («بطلت»), the duty is to return it at once, «لأنها أمانة محضة… هذا هو المشهور»; Ibn al-Zāghūnī: once the transgression ends and he resumes keeping it, it is not bāṭil. (Opening example, segmented as f000.)"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063.f000",

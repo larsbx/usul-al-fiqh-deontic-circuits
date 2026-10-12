@@ -35,6 +35,20 @@
     "ghasl"
    ],
    "why": "English «wash» covers al-ghusl (the full bath that lifts the major ḥadath) and al-ghasl (washing a limb or a najāsa); unvowelled Arabic الغسل is both (Ibn Rajab 14.f000 «غسل ولا وضوء» is ghusl; 8.f003 «غسل بعض أعضاء المحدث» is ghasl)."
+  },
+  {
+   "gloss_en": "\\b(void\\w*|invalid\\w*|defective|null)\\b",
+   "terms": [
+    "batil",
+    "fasid",
+    "sahih",
+    "ayb"
+   ],
+   "why": "English «void», «invalid», «defective» cover al-bāṭil, al-fāsid (one in the madhhab except in ḥajj and nikāḥ, F98), «لا يصح» (not ṣaḥīḥ) and al-ʿayb (a defect in the thing, which leaves the contract ṣaḥīḥ: F138, Ibn Rajab 30). The glossary's «void» of an argument or ʿilla (buṭlān of a dalīl) is another sense, tracked under PR-03.",
+   "scope": [
+    "registers",
+    "lean"
+   ]
   }
  ],
  "note": "Every English text field of the corpus registers, and every Lean doc comment, that uses one of these glosses must also name the term it means, by its transliteration or its Arabic (tests/test_nusus.py). The English never feeds a derivation; this keeps it from hiding which term a case is about."

@@ -273,7 +273,7 @@ theorem t10_jam (trust : Bool) :
 Q66 (reading `Refinements.validWithBasis`): a disposition stands when a valid basis exists in
 fact. Q6 (`Refinements.errorExcused`): an act done on a belief later shown wrong stands, unless
 another's right attaches or he was negligent. Read without their qayd, with no valid basis in
-fact Q66 voids what Q6 lets stand, and with another's right attached Q6 undoes what Q66 upholds.
+fact Q66 holds not ṣaḥīḥ what Q6 lets stand, and with another's right attached Q6 undoes what Q66 upholds.
 Ibn Rajab (Q66): «ثم تبين خطؤه فيه وأن السبب المعتمد غيره وهو موجود». Q66 governs only where
 the true basis exists; elsewhere Q6. -/
 
@@ -318,7 +318,7 @@ Q32 (`Refinements.benefitExceptionValid`): excepting the benefit of what one tra
 a known period, and in waqf and manumission for his life too. Q33 (as read,
 `Refinements.uncertainExceptionValid`): an exception of uncertain extent is valid when the law
 makes it, not when it is stated. A waqf excepting its benefit for the founder's life is a stated
-exception of uncertain extent: Q32 upholds it, Q33 voids it. Ibn Rajab (Q32): «لأن جهالة المدة
+exception of uncertain extent: Q32 upholds it, Q33 holds it not ṣaḥīḥ. Ibn Rajab (Q32): «لأن جهالة المدة
 هنا لا تؤثر فإنها لا تزيد على جهالة مدة كل بطن بالنسبة إلى من بعده». Where the transfer already
 bears that uncertainty Q32 governs; elsewhere Q33. -/
 

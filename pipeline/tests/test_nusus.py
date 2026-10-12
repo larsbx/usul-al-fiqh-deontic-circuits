@@ -113,22 +113,23 @@ def test_homographs_are_declared_distinct():
 
 
 def _english_fields():
+    """(scope, where, text) for every English field a guard may read."""
     for p in sorted((CORPUS / "furuq").glob("*.json")):
         for i in json.loads(p.read_text())["items"]:
-            yield i["id"], " ".join(i["cases_en"] + [i["note"]])
+            yield "registers", i["id"], " ".join(i["cases_en"] + [i["note"]])
     for p in sorted((CORPUS / "takhrij").glob("*.json")):
         if p.name != "report.json":
             for c in json.loads(p.read_text())["cases"]:
-                yield c["far"], c.get("note", "")
+                yield "registers", c["far"], " ".join([c.get("note", "")] + [x["who"] for x in c.get("positions") or []])
     for p in sorted((CORPUS / "tanaqud").glob("*.json")):
         for x in json.loads(p.read_text())["pairs"]:
-            yield x["id"], x["case_en"] + " " + x["qayd_en"]
+            yield "registers", x["id"], x["case_en"] + " " + x["qayd_en"]
     for t in GLOSS["terms"]:
-        yield t["key"], t["gloss"] + " " + t["definition"]
+        yield "glossary", t["key"], t["gloss"] + " " + t["definition"]
     for p in sorted((ROOT / "formal/lean").rglob("*.lean")):
         if ".lake" not in p.parts:
             for k, m in enumerate(re.finditer(r"/-[-!].*?-/", p.read_text(encoding="utf-8"), re.S)):
-                yield f"{p.name}#{k}", m.group(0)
+                yield "lean", f"{p.name}#{k}", m.group(0)
 
 
 def test_no_english_gloss_stands_alone():
@@ -136,8 +137,9 @@ def test_no_english_gloss_stands_alone():
     bad = []
     for g in GUARDS["guards"]:
         names = [n for k in g["terms"] for n in (TERMS[k]["tr"].removeprefix("al-"), TERMS[k]["ar"].removeprefix("ال"))]
-        for where, s in _english_fields():
-            if re.search(g["gloss_en"], s, re.I) and not any(n in s for n in names):
+        scope = set(g.get("scope", ["registers", "glossary", "lean"]))
+        for sc, where, s in _english_fields():
+            if sc in scope and re.search(g["gloss_en"], s, re.I) and not any(n in s for n in names):
                 bad.append((where, re.search(g["gloss_en"], s, re.I).group(0)))
     assert not bad, bad
 

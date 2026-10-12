@@ -53,7 +53,7 @@
     66,
     6
    ],
-   "case_en": "An act done on a belief later shown wrong: Q66 (as read) upholds it only where a valid basis exists in fact; Q6 upholds it unless another's right attaches or he was negligent. With no valid basis, Q66 voids what Q6 upholds; with another's right attached, Q6 undoes what Q66 upholds.",
+   "case_en": "An act done on a belief later shown wrong: Q66 (as read) upholds it only where a valid basis exists in fact; Q6 upholds it unless another's right attaches or he was negligent. With no valid basis, Q66 holds not ṣaḥīḥ what Q6 upholds; with another's right attached, Q6 undoes what Q66 upholds.",
    "resolution": "jam",
    "qayd_en": "Q66 speaks only where the true basis exists; elsewhere Q6.",
    "author": [
@@ -206,7 +206,7 @@
     32,
     33
    ],
-   "case_en": "An excepted benefit of uncertain extent, e.g. a waqf excepting its benefit for the founder's life: Q32 upholds it; Q33, as read, voids an exception of uncertain extent unless the law makes it.",
+   "case_en": "An excepted benefit of uncertain extent, e.g. a waqf excepting its benefit for the founder's life: Q32 upholds it; Q33, as read, holds not ṣaḥīḥ an exception of uncertain extent unless the law makes it.",
    "resolution": "jam",
    "qayd_en": "Where the transfer already bears an uncertain period (waqf, manumission), Q32 governs; elsewhere Q33.",
    "author": [

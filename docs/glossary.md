@@ -187,6 +187,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `src:openiti-rawda-shamela12010/v02:p256`: Ruling must be rationally intelligible.
   > أن يكون الحكم معقول المعنى، إذ القياس إنما هو: تعدية الحكم من محل إلى محل بواسطة تعدي المقتضى
 
+<a id="ayb"></a>
+
+## al-ʿayb (العيب)
+
+*al-ʿayb: a defect or blemish in a thing (goods, a sacrificial animal); not fasād of a contract.* A defect in the thing itself: goods sold with a defect («البيع المعيب», F138: return or arsh), a sacrificial animal that becomes blemished («ثم تعيبت فإنها لا تجزيه», Ibn Rajab 30). It says nothing of the contract's validity: a sale of defective goods is ṣaḥīḥ, with an option. English «defective» must say which.
+
+**Related:** [fasid](#fasid), [batil](#batil)
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F138`: F138: the sale of defective goods, in five divisions.
+  > وقسّموا البيع المعيب إلى خمسة أقسام
+
 <a id="azima"></a>
 
 ## al-ʿazīma (العزيمة)
@@ -201,6 +214,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > فالعزيمة: الحكم الثابت من غير مخالفة دليل شرعي
 - `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q022`: Ibn al-Laḥḥām / al-Ṭūfī's definition and its scope.
   > العزيمة لغة القصد المؤكد وشرعا الحكم الثابت بدليل شرعى خلا عن معارض. قال الطوفي وقولنا بدليل شرعى يتناول الواجب وتحريم الحرام وكراهة المكروه ولهذا قال أصحابنا إن سجدة ص هل هى من عزائم السجود أولا مع أن سجدات القرآن كلها عندهم ندب. قلت: فظاهر كلامه أن سجدة ص اختلفوا في أنها هل هى مندوبة أم لا فمن قال هى مندوبة تكون من العزائم ومن قال ليست مندوبة فليست من العزائم وليس الأمر كذلك بل يستحب سجودها خارج
+
+<a id="batil"></a>
+
+## al-bāṭil (الباطل)
+
+*al-bāṭil: void, no effect follows; in the madhhab one with al-fāsid except in ḥajj and nikāḥ.* What has no effect. al-Saʿdī reports the madhhab: the aṣḥāb distinguish the bāṭil from the fāsid in two chapters only, the ḥajj and ʿumra (one goes on in the fāsid and makes it up) and nikāḥ (a fāsid nikāḥ needs ṭalāq or faskh, «للاختلاف فيه»); «وأما بقية الأبواب فجعلوا الباطل والفاسد واحداً، الكل لا يصح ولا يفيد الملك والتصرف» (F98). So «void» and «defective» must say which, above all in those two chapters.
+
+**Related:** [fasid](#fasid), [sahih](#sahih)
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F98`: F98: outside ḥajj and nikāḥ the bāṭil and the fāsid are one.
+  > وأما بقية الأبواب فجعلوا الباطل والفاسد واحداً، الكل لا يصح ولا يفيد الملك والتصرف
 
 <a id="bayyina"></a>
 
@@ -368,7 +394,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-fāsid (الفاسد)
 
-*invalid.* Ibn ʿUthaymīn: what the effects of performing it do not follow from, whether worship or contract. Ibn al-Laḥḥām: for the Ḥanbalīs and Shāfiʿīs fāsid and bāṭil are synonyms, whereas Abū Ḥanīfa distinguishes the bāṭil (not legislated at all) from the fāsid (legislated in origin but forbidden for a prohibited attribute); Ibn ʿUthaymīn notes the Ḥanbalīs still distinguish them in ḥajj and marriage. Ibn Rajab: a contract whose sound form entails liability entails it when fāsid too.
+*al-fāsid: not ṣaḥīḥ; in the madhhab one with al-bāṭil, except in ḥajj and nikāḥ (F98).* Ibn ʿUthaymīn: what the effects of performing it do not follow from, whether worship or contract. Ibn al-Laḥḥām: for the Ḥanbalīs and Shāfiʿīs fāsid and bāṭil are synonyms, whereas Abū Ḥanīfa distinguishes the bāṭil (not legislated at all) from the fāsid (legislated in origin but forbidden for a prohibited attribute); Ibn ʿUthaymīn notes the Ḥanbalīs still distinguish them in ḥajj and marriage. Ibn Rajab: a contract whose sound form entails liability entails it when fāsid too.
 
 **Conditions**
 
@@ -1361,7 +1387,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-ṣaḥīḥ (الصحيح)
 
-*valid.* Ibn ʿUthaymīn: what the effects of performing it follow from, whether an act of worship or a contract; it requires its conditions complete and its impediments absent. Ibn Qudāma defines ṣiḥḥa as the Lawgiver's taking the thing into account with respect to its ruling. Ibn Rajab and al-Saʿdī: a prohibition directed at the act of worship itself or its condition voids it, one directed at something external does not (Ibn Rajab reports two narrations where the prohibition of a condition is not specific to it).
+*al-ṣaḥīḥ (of an act or contract): valid, its effects follow; not the ḥadīth grade, nor a sound farq.* Ibn ʿUthaymīn: what the effects of performing it follow from, whether an act of worship or a contract; it requires its conditions complete and its impediments absent. Ibn Qudāma defines ṣiḥḥa as the Lawgiver's taking the thing into account with respect to its ruling. Ibn Rajab and al-Saʿdī: a prohibition directed at the act of worship itself or its condition voids it, one directed at something external does not (Ibn Rajab reports two narrations where the prohibition of a condition is not specific to it).
 
 **Conditions**
 

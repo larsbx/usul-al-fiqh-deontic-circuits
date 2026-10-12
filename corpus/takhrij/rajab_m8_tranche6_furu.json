@@ -109,7 +109,7 @@
     "site": "essence"
    },
    "expected": false,
-   "note": "Prayer in the places of prohibition: invalid on the view that the prohibition is taḥrīm, «هذه طريقة المحققين»; the tashrīq days not valid as a voluntary fast. The second type (a specific condition: prayer with najāsa, without a covering) is likewise invalid."
+   "note": "Prayer in the places of prohibition: not ṣaḥīḥ on the view that the prohibition is taḥrīm, «هذه طريقة المحققين»; the tashrīq days not valid as a voluntary fast. The second type (a specific condition: prayer with najāsa, without a covering) is likewise not ṣaḥīḥ."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f002",
@@ -121,7 +121,7 @@
    "expected": false,
    "positions": [
     {
-     "who": "invalid (the ashhar of the two riwāyas)",
+     "who": "not ṣaḥīḥ (the ashhar of the two riwāyas)",
      "ruling": false
     },
     {
@@ -130,7 +130,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Prayer on usurped ground: the third type, «وفيها الخلاف», with two maʾkhadh for invalidity; the reading takes the qāʿida's «أشهرهما عدمها»."
+   "note": "Prayer on usurped ground: the third type, «وفيها الخلاف», with two maʾkhadh for buṭlān (its being bāṭil); the reading takes the qāʿida's «أشهرهما عدمها»."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f003",
@@ -146,12 +146,12 @@
      "ruling": true
     },
     {
-     "who": "Abū Bakr: invalid",
+     "who": "Abū Bakr: not ṣaḥīḥ",
      "ruling": false
     }
    ],
    "matches_madhhab": true,
-   "note": "Prayer in a usurped or silk turban, or with a gold ring: the fourth type, two wujūh; Abū Bakr: invalid; «وخالفه الأكثرون». Ḥajj with usurped wealth: two riwāyas; Ibn ʿAqīl counts it of the fourth type."
+   "note": "Prayer in a usurped or silk turban, or with a gold ring: the fourth type, two wujūh; Abū Bakr: not ṣaḥīḥ; «وخالفه الأكثرون». Ḥajj with usurped wealth: two riwāyas; Ibn ʿAqīl counts it of the fourth type."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000",

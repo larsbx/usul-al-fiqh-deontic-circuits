@@ -31,7 +31,7 @@ Severity:
 | PR-18 | A | Matching a matn by its words can land on a false friend: a bāb heading («باب ما جاء لا وصية لوارث»), or another ḥadīth with the same words (al-Bukhārī 50, «رعاة الإبل» in Jibrīl's ḥadīth) | found while closing PR-04 | closed: a matn must fall under its number and never on a heading line (tested); each source may carry its own riwāya wording |
 | PR-19 | B | Slicing a Qurʾānic excerpt by letters dropped the last letter's vowel (لِلَّه for لِلَّهِ): the muṣḥaf's text altered | found while closing PR-04 | closed: `span` keeps the final marks |
 | PR-20 | A | Two fetches running at once each rewrote `lock.json` from their own copy, so one pin was silently lost (al-Albānī's Ṣaḥīḥ wa-Ḍaʿīf al-Tirmidhī; found while closing PR-04) | 1 pin | closed: `_pin` merges under a file lock and writes atomically; concurrent pins and "cached but unpinned" are tested |
-| PR-21 | B | Hash-pinned contribution receipts (M8 tranche 3) could record a revisit but not an English-only note correction, so fixing a gloss broke provenance | 1 case | closed: a `note_revisions` ledger keeps the old note; the test restores it and must get the receipt back, so nothing else can have changed |
+| PR-21 | B | Hash-pinned contribution receipts (M8 tranche 3) could record a revisit but not an English-only note correction, so fixing a gloss broke provenance | 1 case | closed: a `note_revisions` ledger keeps the old English note and position labels; the test restores them and must get the receipt back, so no ruling, class or fact can have changed |
 | PR-14 | A | The bulk «impurity → najāsa» replacement could mislabel ḥadath | 27 fields | closed `021d1d8`: each reviewed; 18.f015 and 159.f007 corrected from source |
 
 ## PR-02 families (English gloss → terms it conflates)
@@ -40,7 +40,7 @@ Severity:
 |---|---|---|
 | pure, purity, purify | ṭāhir, ṭahūr, ṭahāra, maḥḍ | 26: closed (glossary, guard, 31 sites) |
 | wash, bath | ghusl, ghasl | 11: closed (terms vowelled الغُسل / الغَسل, guard, 14 sites) |
-| void, invalid, defective | bāṭil, fāsid (the madhhab distinguishes them only in ḥajj and nikāḥ, F98) | 58 |
+| void, invalid, defective | bāṭil, fāsid (the madhhab distinguishes them only in ḥajj and nikāḥ, F98), «لا يصح», ʿayb | 58: closed for the registers and Lean docs (76 sites); the glossary's «void» of an argument moves to PR-03 |
 | expiation, compensation, blood-money | kaffāra, fidya, ḍamān, diya, arsh, jazāʾ | 26 |
 | oath, vow | yamīn, nadhr | 30 |
 | divorce, separation | ṭalāq, khulʿ, faskh | 45 |
@@ -88,3 +88,10 @@ The guard then found 31 sites in the registers and the Lean doc comments. Each w
   * F52's «major ritual washing» is, in al-Saʿdī's words, «طهارة الحدث الأكبر», that is, ghusl against wuḍūʾ.
   * F115's «washing with usurped water» is «من توضأ بماء مغصوب», wuḍūʾ.
   * Ibn Rajab 14.f000's «neither must wash» was «لا يلزم واحدا منهما غسل ولا وضوء», ghusl and wuḍūʾ; the note now says so.
+
+**PR-02, «void / invalid / defective».** New terms: al-bāṭil, from F98's «وأما بقية الأبواب فجعلوا الباطل والفاسد واحداً، الكل لا يصح», and al-ʿayb (F138, Ibn Rajab 30). al-fāsid and al-ṣaḥīḥ have their one-word glosses replaced by their senses. Each site was rewritten from its source word: «لا يصح» as not ṣaḥīḥ, «بطل/بطلان» as bāṭil, «فاسد» as fāsid. Three sites were not about validity at all:
+* F138's «defective sale» is «البيع المعيب», goods with a defect. The sale is ṣaḥīḥ, with an option.
+* Ibn Rajab 30.f000's sacrifice that «becomes defective» is «ثم تعيبت», a blemish.
+* F30's «contract voided» is a contract undone (infisākh) for a defect, not one bāṭil from its start.
+
+al-Saʿdī's Q53 («إذا تبين فساد العقد، بطل ما بني عليه») holds both terms in one sentence, and its Lean doc had flattened them into «void voids». The guard now also reads the `who` labels of positions, which found 9 more sites across the families already closed. The glossary's «void» of a ʿilla or an argument is the buṭlān of a dalīl, a different sense, and is left to PR-03.

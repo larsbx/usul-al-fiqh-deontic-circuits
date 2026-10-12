@@ -147,9 +147,12 @@ def test_both_pr_contributions_are_preserved_without_case_reinterpretation():
                 rev = revised[far]
                 assert (rev["from_case_sha256"], rev["case_sha256"]) == (expected_hash, current), far
                 assert cases[far]["revisit"]["closed_by"] == rev["closed_by"], far
-            elif far in renoted:  # only the English note changed: restoring it gives the receipt back
+            elif far in renoted:  # only English fields changed: restoring them gives the receipt back
                 rn = renoted[far]
-                was = json.dumps(dict(cases[far], note=rn["from_note"]), ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+                old = dict(cases[far], note=rn.get("from_note", cases[far].get("note")))
+                if "from_who" in rn:
+                    old["positions"] = [dict(p, who=w) for p, w in zip(cases[far]["positions"], rn["from_who"], strict=True)]
+                was = json.dumps(old, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
                 assert hashlib.sha256(was.encode()).hexdigest() == expected_hash and current == rn["case_sha256"], far
             else:
                 assert current == expected_hash, far

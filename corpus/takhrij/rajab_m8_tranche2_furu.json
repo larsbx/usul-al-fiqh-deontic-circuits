@@ -34,7 +34,7 @@
       "expected": true,
       "positions": [
         {
-          "who": "riwāya: the prayer is void",
+          "who": "riwāya: the prayer is bāṭil",
           "ruling": true
         },
         {
@@ -43,7 +43,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "Tayammum, water found during the prayer: two riwāyas on invalidity; Ibn Rajab: tayammum is between the two kinds (a general concession, and a necessity-ṭahāra). Read as necessity; the riwāya against invalidity reads it as concession."
+      "note": "Tayammum, water found during the prayer: two riwāyas on its buṭlān («بطلانها»: whether it is bāṭil); Ibn Rajab: tayammum is between the two kinds (a general concession, and a necessity-ṭahāra). Read as necessity; the riwāya against its being bāṭil reads it as concession."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f002",
@@ -353,7 +353,7 @@
       "expected": false,
       "positions": [
         {
-          "who": "wajh: invalid",
+          "who": "wajh: not ṣaḥīḥ",
           "ruling": false
         },
         {
@@ -362,7 +362,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "Sells his father's property without permission, then the father had already died, he being the sole heir: two wujūh (or riwāyas); Ibn Rajab's analogy to the jester leans toward invalidity. No madhhab marked."
+      "note": "Sells his father's property without permission, then the father had already died, he being the sole heir: two wujūh (or riwāyas); Ibn Rajab's analogy to the jester leans toward its not being ṣaḥīḥ. No madhhab marked."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f001",
@@ -469,7 +469,7 @@
       "expected": false,
       "positions": [
         {
-          "who": "al-Mughnī: invalid",
+          "who": "al-Mughnī: not ṣaḥīḥ",
           "ruling": false
         },
         {
@@ -478,7 +478,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "The missing man's wife remarries before the required period, then he had died (or divorced her) long enough before: al-Mughnī: invalid. No madhhab marked."
+      "note": "The missing man's wife remarries before the required period, then he had died (or divorced her) long enough before: al-Mughnī: not ṣaḥīḥ. No madhhab marked."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f006",
@@ -513,7 +513,7 @@
       "expected": false,
       "positions": [
         {
-          "who": "wajh: invalid",
+          "who": "wajh: not ṣaḥīḥ",
           "ruling": false
         },
         {

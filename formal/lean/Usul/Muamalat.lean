@@ -328,7 +328,7 @@ def surplus (assets basicNeeds : Nat) : Nat := assets - basicNeeds
 theorem q49_needs_excluded (a n : Nat) : surplus a n + min a n = a := by
   unfold surplus; omega
 
-/-! ## Q53 — a contract that proves void voids what was built on it; a voluntary rescission
+/-! ## Q53 — when a contract proves fāsid, what was built on it is bāṭil («إذا تبين فساد العقد، بطل ما بني عليه»); a voluntary rescission
 leaves earlier dependent contracts standing -/
 
 inductive Ending where
@@ -346,7 +346,7 @@ section Voiding
 
 variable {C : Type}
 
-/-- Q53 is S4: the void contracts are the closure of those proved void under "built on". -/
+/-- Q53 is S4: the bāṭil contracts are the closure of those proved fāsid under "built on". -/
 def Voided (builtOn : C → C → Prop) (ending : C → Option Ending) : C → Prop :=
   Closure builtOn (fun c => ending c = some .provedVoid)
 
@@ -354,7 +354,7 @@ theorem q53_void_propagates {builtOn : C → C → Prop} {ending : C → Option 
     (ha : Voided builtOn ending a) (h : builtOn a b) : Voided builtOn ending b :=
   .step ha h
 
-/-- Rescinding a contract (that was not proved void) voids nothing: the closure is unchanged. -/
+/-- Rescinding a contract (not proved fāsid) makes nothing bāṭil: the closure is unchanged. -/
 theorem q53_rescission_inert [DecidableEq C] (builtOn : C → C → Prop) (ending : C → Option Ending)
     (c₀ : C) (h₀ : ending c₀ ≠ some .provedVoid) (c : C) :
     Voided builtOn (fun c => if c = c₀ then some .rescinded else ending c) c ↔ Voided builtOn ending c := by

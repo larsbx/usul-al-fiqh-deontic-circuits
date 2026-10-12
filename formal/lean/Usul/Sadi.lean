@@ -229,7 +229,7 @@ theorem q33_lighter_harm {α : Type} (harm : α → Nat) {xs : List α} {b : α}
     (h : best (fun x => -(harm x : Int)) xs = some b) : ∀ y ∈ xs, harm b ≤ harm y :=
   fun y hy => Int.ofNat_le.mp (Int.neg_le_neg_iff.mp (best_max _ h y hy))
 
-/-! ## Q38 — a prohibition aimed at the act of worship itself or at its condition voids it;
+/-! ## Q38 — a prohibition aimed at the act of worship itself or at its condition makes it fāsid («أخل بها وفسدت»);
 one aimed at something external does not (the act is valid, the transgression sinful) -/
 
 inductive ProhibitionTarget where

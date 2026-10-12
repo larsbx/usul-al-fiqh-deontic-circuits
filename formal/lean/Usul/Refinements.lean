@@ -19,7 +19,7 @@ register question; it makes the alternatives expressible.
 * **The unknown as non-existent** (gap `rule:unknown_as_nonexistent`; Ibn Rajab 106).
 * **Reading toward the lowest** (gap `rule:haml_ala_adna`; Ibn al-Laḥḥām 52.f008, grounded in
   Aḥmad's naṣṣ that the least the name covers is due «because it is the certain»).
-* **Voidance of trust** (gap `rule:trust_voidance`; Ibn Rajab 45).
+* **Voidance of trust**, its becoming bāṭil (gap `rule:trust_voidance`; Ibn Rajab 45).
 * **Recourse when permission cannot be sought** (gap `fact:permission_unobtainable`; Ibn Rajab 75).
 * **Abstention while a divorce condition may have occurred** (gap
   `rule:abstention_under_possible_condition`; Taqī al-Dīn on Aḥmad's texts, cited by Ibn Rajab).
@@ -119,7 +119,7 @@ theorem adna_is_certain (covers : Nat → Nat → Bool)
     (hlo : ∀ l ∈ levels, lo ≤ l) : ∀ l ∈ levels, covers l lo = true :=
   fun l hl => mono l lo (hlo l hl)
 
-/-! ## Voidance of trust (Ibn Rajab 45)
+/-! ## Voidance of trust: when a trust becomes bāṭil (Ibn Rajab 45)
 
 «المذهب أن الأمانة المحضة تبطل بالتعدي والأمانة المتضمنة لأمر آخر لا تبطل على الصحيح»: a pure
 trust is voided by transgression; a trust that includes something else is not. -/
@@ -128,7 +128,7 @@ def trustVoided (pure transgressed : Bool) : Bool := pure && transgressed
 
 theorem compound_trust_survives (t : Bool) : trustVoided false t = false := by cases t <;> rfl
 
-/-- Voidance is about the contract; liability for loss (Q14) follows transgression either way. -/
+/-- Buṭlān (becoming bāṭil) is about the contract; liability for loss (Q14) follows transgression either way. -/
 theorem liability_independent_of_voidance (pure : Bool) :
     lossLiable .trustee true false = true ∧ trustVoided pure true = pure := by
   cases pure <;> exact ⟨rfl, rfl⟩
@@ -503,8 +503,8 @@ These are candidate readings of the named source positions, not adopted rulings.
 Q31 distinguishes corruption after a binding start from prevention, and faulty from
 non-faulty loss. The non-faulty-loss branch follows the author of al-Mughnī; another
 position remains recorded in the annotation. Q47 distinguishes compensation under
-the contract from compensation for loss. It does not identify every defective contract
-with a void contract, or decide which contracts are binding. -/
+the contract from compensation for loss. It does not identify every fāsid contract
+with a bāṭil one, or decide which contracts are binding. -/
 
 inductive MakeupFailure where
   | corruption | prevention | lossWithFault | lossWithoutFault

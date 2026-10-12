@@ -914,6 +914,51 @@
       "from_note": "A najis vessel dipped in running water as seven jiryas pass: one washing or seven? Two wujūh; the ẓāhir of the aṣḥāb is one washing, and al-Qāḍī's Sharḥ says Aḥmad's words point to it. Here the madhhab side is the whole.",
       "case_sha256": "9d39f3a5390f9cbb4440d3cf4d314239097be790e080e848fc33064a80a199cb",
       "reason": "English note names the Arabic term (problem register PR-02: «wash» is ghasl here); class, facts and expected unchanged"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f000",
+      "from_note": "A thing received under a defective sale: the known madhhab position requires equivalent/value, not the named price, because compensation comes from loss under the hand, not this defective contract. Abu Bakr, followed here by Taqi al-Din, is reported as selecting the named consideration. Full paragraph read beyond the 400-character record cap.",
+      "case_sha256": "5e83e04f4d32887578e651e5605b82ecb2cf6df3647a2809794ef2e2d20c3438",
+      "reason": "English note names the Arabic term (problem register PR-02: «void»/«defective» is fāsid here); class, facts and expected unchanged"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f002",
+      "from_note": "Defective kitabah with a lawful named consideration: the source expressly says the named amount, not the slave's value, and reports agreement on that outcome. The full paragraph distinguishes a void undertaking with prohibited consideration, which is outside this encoding. The competing explanations (contract versus condition) are retained for human review; the guard tests the stated amount basis only.",
+      "case_sha256": "3f3e1a24be562e9e93d6e0edcf9eeb41d48092b7c7c51075af0457bb350aed05",
+      "reason": "English note names the Arabic term (problem register PR-02: «void»/«defective» is fāsid here); class, facts and expected unchanged"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f001",
+      "from_note": "He disposed of what he had bought, the sale being void, and he had in fact inherited it: «والمذهب هنا الصحة بلا ريب», since he relied on a permitting cause and had another in fact (Taqī al-Dīn); Ibn Rajab adds the usurper's gift to the owner as support.",
+      "case_sha256": "581e78a3414ea408d39ff6c5c70f26da5fabac5856271ea46150715c1f336f25",
+      "reason": "English note names the Arabic term (problem register PR-02: «void»/«defective» is fāsid here); class, facts and expected unchanged"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f000",
+      "from_note": "Umm al-walad, the mukātab and the mudabbar, which have a share of freedom's rulings but not its reality: «فيضمن باليد على ما ذكره القاضي والأصحاب», and by a void contract in qiyās al-madhhab (Abū al-Barakāt).",
+      "case_sha256": "7a8170721ee5a8a620917262ef88770bd627fdc10f85b742805412d790d8f64d",
+      "reason": "English note names the Arabic term (problem register PR-02: «void»/«defective» is fāsid here); class, facts and expected unchanged"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f002",
+      "reason": "English-only fields name the Arabic term (problem register PR-02); class, facts, rulings and expected unchanged",
+      "from_who": [
+        "ashhar: lifted (each jirya a washing)",
+        "Abū al-Khaṭṭāb; Aḥmad's naṣṣ per Ibn Rajab: not lifted"
+      ],
+      "case_sha256": "0ca07ba37f9b73e411f5f8658aa2043bd38ba53f58598201920f0b33890453b6"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f001",
+      "reason": "English-only fields name the Arabic term (problem register PR-02); class, facts, rulings and expected unchanged",
+      "from_note": "Defective lease: the known madhhab requires equivalent rent. A named-rent alternative is derived from Abu Bakr's sale position. The source says its discussion is the same as sale; the Boolean fact denotes this explicit compensation basis, not a general classification of all leases.",
+      "case_sha256": "ff7065ab1ef7f25a48e0d2ef1af3b03686ecf89be6f5aa1522f7496d2536327e"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f003",
+      "reason": "English-only fields name the Arabic term (problem register PR-02); class, facts, rulings and expected unchanged",
+      "from_note": "Defective nikah after consummation: the selected well-known Ahmad transmission, identified as the madhhab by Abu Bakr and Ibn Abi Musa and chosen by al-Qadi, fixes the named mahr. Another transmission, chosen by al-Khiraqi and the author of al-Mughni, fixes equivalent mahr. The full source explains the selected branch as contract compensation; no blanket rule about validity, all nikah, or all relations is inferred.",
+      "case_sha256": "bd0e503a9fa4c6d50939f34a403e8378e632546b816cdb234922238191a83afa"
     }
   ]
 }
