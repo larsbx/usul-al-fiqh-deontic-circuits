@@ -39,6 +39,23 @@ def find(text: str, excerpt: str) -> int | None:
     return idx[k] if k >= 0 else None
 
 
+def span(text: str, excerpt: str) -> tuple[int, int] | None:
+    """Raw [start, end) of the first verbatim (letters-only) occurrence."""
+    idx, flat = _flat(text)
+    e = key(excerpt)
+    k = flat.find(e)
+    return (idx[k], idx[k + len(e) - 1] + 1) if k >= 0 and e else None
+
+
+QUALIFIER = re.compile(r"^[\s،,:؛.()0-9٠-٩]*(إلا|ما لم|بشرط|لكن|إن لم|بخلاف|غير أن|إذا لم)")
+
+
+def cut_before_qualifier(text: str, excerpt: str) -> bool:
+    """The excerpt stops where its witness goes on with an exception or condition."""
+    sp = span(text, excerpt)
+    return bool(sp and QUALIFIER.match(text[sp[1]:sp[1] + 40]))
+
+
 def aya(quran: str, sura: int, n: int) -> str | None:
     m = re.search(rf"^{sura}\|{n}\|(.*)$", quran, re.M)
     return m.group(1) if m else None

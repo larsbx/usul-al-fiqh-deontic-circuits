@@ -80,8 +80,8 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > في قبول قول الأمناء في الرد والتلف أما التلف فيقبل فيه قول كل أمين إذ لا معنى للأمانة إلا انتفاء الضمان، ومن لوازمه قبول قوله في التلف وإلا للزم الضمان باحتمال التلف وهو لا يلزمه الضمان مع تحققه ويستثنى من ذلك الوديعة إذا هلكت مال المودع على طريقة من يحكي الخلاف فيها في قبول [قول] المودع في التلف لا في أصل ضمانه وكذلك العين المستأجرة والمستأجر على عمل [فيها] حكي فيها رواية بالضمان فمن الأصحاب من ج
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045`: Maḥḍa voided by taʿaddī; mutaḍammina not.
   > عقود الأمانات هل تنفسخ بمجرد التعدي فيها أم لا؟ المذهب أن الأمانة المحضة تبطل بالتعدي والأمانة المتضمنة لأمر آخر لا تبطل على الصحيح. ويتخرج على هذا مسائل: منها: إذا تعدى في الوديعة بطلت ولم يجز له الإمساك ووجب الرد على الفور لأنها أمانة محضة وقد زالت بالتعدي فلا تعود بدون عقد متجدد هذا هو المشهور، ولو كانت عينين فتعدى في إحداهما فهل يصير ضامنا لهما أو لما وجد فيه التعدي خاصة فيه تردد وذكره القاضي 
-- `src:openiti-rajab-shamela21730/v01:p059`: Ibn Rajab: what he took solely for the owner's benefit (the depositee) is a pure trustee.
-  > ما أخذه لمصلحة مالكه خاصة كالمودع فهو أمين محض
+- `src:openiti-rajab-shamela21730/v01:p059`: Ibn Rajab: what he took solely for the owner's benefit (the depositee) is a pure trustee, «لكن» if the deposit perishes from among his own property his liability is disputed.
+  > ما أخذه لمصلحة مالكه خاصة كالمودع فهو أمين محض لكن إذا تلفت الوديعة من بين ماله ففي ضمانه خلاف
 - `src:archive-pdf1995-tess/v01:p095`: Al-Saʿdī Q43.
   > من قبض العين لحظ نفسه لم يقبل قوله في الرد، فإن قبضه لحظ مالكه قبل
 
@@ -646,8 +646,8 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 **Texts**
 
-- `src:openiti-majmufatawa-shamela7289/v13:p117`: Ibn Taymiyya: belief in preponderance is ʿilm; preponderance of a belief is ẓann.
-  > فرق بين اعتقاد الرجحان ورجحان الاعتقاد أما اعتقاد الرجحان فهو علم والمجتهد ما عمل إلا بذلك العلم وهو اعتقاد رجحان هذا على هذا وأما رجحان هذا الاعتقاد على هذا الاعتقاد فهو الظن
+- `src:openiti-majmufatawa-shamela7289/v13:p117`: Ibn Taymiyya: belief in preponderance is ʿilm; preponderance of a belief is ẓann; «لكن» this ẓann is not the blamed ẓann of {إن يتبعون إلا الظن}: «هذا الظن هو الراجح ورجحانه معلوم».
+  > فرق بين اعتقاد الرجحان ورجحان الاعتقاد أما اعتقاد الرجحان فهو علم والمجتهد ما عمل إلا بذلك العلم وهو اعتقاد رجحان هذا على هذا وأما رجحان هذا الاعتقاد على هذا الاعتقاد فهو الظن؛ لكن لم يكن ممن قال الله فيه: {إن يتبعون إلا الظن} بل هنا ظن رجحان هذا وظن رجحان ذاك وهذا الظن هو الراجح ورجحانه معلوم
 - `src:openiti-majmufatawa-shamela7289/v13:p119`: Fiqh is the jurist's knowledge that this proof and this ẓann preponderate.
   > فالفقه هو علمه برجحان هذا الدليل وهذا الظن
 - `src:openiti-majmufatawa-shamela7289/v13:p120`: Where preponderance is not known: suspension, no view.

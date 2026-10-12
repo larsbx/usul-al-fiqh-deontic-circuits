@@ -29,14 +29,16 @@
     {
      "work": "muslim.sahih",
      "witness": "openiti-muslim-shamela1727",
-     "number": 303
+     "number": 303,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)"
     }
    ],
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
     "number": 108,
-    "verdict": "sahih"
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
    }
   },
   {
@@ -48,14 +50,16 @@
     {
      "work": "abu_dawud.sunan",
      "witness": "openiti-abudawud-shamela1726",
-     "number": 206
+     "number": 206,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
     }
    ],
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
     "number": 125,
-    "verdict": "sahih"
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
    }
   },
   {
@@ -67,14 +71,16 @@
     {
      "work": "bukhari.sahih",
      "witness": "openiti-bukhari-shamela1681",
-     "number": 282
+     "number": 282,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
     }
    ],
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
     "number": 126,
-    "verdict": "sahih"
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
    }
   },
   {
@@ -86,14 +92,16 @@
     {
      "work": "abu_dawud.sunan",
      "witness": "openiti-abudawud-shamela1726",
-     "number": 372
+     "number": 372,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
     }
    ],
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
     "number": 180,
-    "verdict": "sahih"
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
    }
   }
  ],

@@ -260,8 +260,8 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Texts**
 
-- `src:openiti-rajab-shamela21730/v01:p356`: The marriage is not judged dissolved: he is certain of her lawfulness and doubts her prohibition.
-  > متيقن لحل زوجته شاك في تحريمها
+- `src:openiti-rajab-shamela21730/v01:p356`: The marriage is not judged dissolved: he is certain of her lawfulness and doubts her prohibition, «بخلاف» one man with two wives, where the end of one marriage is certain (the qayd of T-15).
+  > متيقن لحل زوجته شاك في تحريمها، بخلاف ما إذا كانت الزوجتان لرجل واحد فإنه تيقن زوال النكاح في إحدى زوجتيه
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f027`: «You are divorced on Laylat al-Qadr»: abstain from the last ten «لإمكان أن يكون أول ليلة».
   > إذا قال أنت طالق ليلة القدر يعتزلها إذا دخل العشر الأواخر ms469 لإمكان أن يكون أول ليلة.
 

@@ -82,3 +82,14 @@ def test_qaida_basis_is_grounded():
     """An item whose reason is a qāʿida names a theorem, unless the aṣl lies outside the sixty."""
     outside = {"F27", "F47"}                              # «الأصل المحكم في كل الأبواب», «الأصول الشرعية»
     assert {i["id"] for i in ITEMS if i["basis"] == "qaida" and not i["grounds"]} == outside
+
+
+def test_no_quote_stops_before_its_qualifier():
+    """No excerpt ends where the text goes on with «إلا», «ما لم», «بشرط» …: a quote cut there
+    reads as unqualified (problem register PR-07)."""
+    from usul_corpus.nusus import cut_before_qualifier
+    src = CACHE / f"{TRANCHES[0]['witness']}.txt"
+    if not src.exists():
+        pytest.skip("witness not cached")
+    text = src.read_text(encoding="utf-8")
+    assert [i["id"] for i in ITEMS if cut_before_qualifier(text, i["author"]["excerpt_ar"])] == []

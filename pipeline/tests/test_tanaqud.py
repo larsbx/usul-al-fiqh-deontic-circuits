@@ -85,3 +85,13 @@ def test_table_lean_is_generated():
     from usul_corpus.__main__ import TANAQUD_LEAN
     from usul_corpus.tanaqud import table_lean
     assert TANAQUD_LEAN.read_text(encoding="utf-8") == table_lean(REGS)
+
+
+@pytest.mark.parametrize("p", PAIRS, ids=lambda p: p["id"])
+def test_qayd_does_not_stop_before_a_qualifier(p):
+    from usul_corpus.nusus import cut_before_qualifier
+    src = CACHE / f"{p['_reg']['witness']}.txt"
+    if not src.exists():
+        pytest.skip(f"{p['_reg']['witness']} not cached")
+    text = src.read_text(encoding="utf-8")
+    assert not any(cut_before_qualifier(text, a["excerpt_ar"]) for a in p["author"])

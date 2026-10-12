@@ -94,3 +94,14 @@ def test_refinement_closures_are_conservative():
 def test_docs_are_generated():
     for path, text in docs_pages().items():
         assert path.read_text(encoding="utf-8") == text, f"{path} stale: run `python -m usul_corpus docs`"
+
+
+@pytest.mark.parametrize("ref", [r for r in REFS if "excerpt_ar" in r and r["ref"].startswith("src:")], ids=lambda r: r["ref"])
+def test_excerpts_do_not_stop_before_a_qualifier(ref):
+    """An excerpt that ends where its witness goes on with «إلا», «لكن», «ما لم» … reads as
+    unqualified (problem register PR-07)."""
+    from usul_corpus.nusus import cut_before_qualifier
+    src = CACHE / f"{ref['ref'][4:].split('/')[0]}.txt"
+    if not src.exists():
+        pytest.skip("witness not cached")
+    assert not cut_before_qualifier(src.read_text(encoding="utf-8"), ref["excerpt_ar"])
