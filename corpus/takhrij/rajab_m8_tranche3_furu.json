@@ -315,7 +315,7 @@
         "contract_liability": true
       },
       "expected": "agreed",
-      "note": "Fāsid kitāba with a lawful named consideration: the source expressly says the named amount, not the slave's value, and reports agreement on that outcome. The full paragraph distinguishes a fāsid undertaking with prohibited consideration, which is outside this encoding. The competing explanations (contract versus condition) are retained for human review; the guard tests the stated amount basis only."
+      "note": "Fāsid kitāba with a lawful named consideration: the source expressly says the named amount, not the slave's value, and reports agreement on that outcome. The full paragraph distinguishes a fāsid undertaking with prohibited consideration, which is outside this encoding. The competing explanations (an exchange contract versus a taʿlīq bi-ṣifa, «تعليق بصفة») are retained for human review; the guard tests the stated amount basis only."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f003",

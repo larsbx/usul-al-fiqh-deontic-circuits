@@ -298,7 +298,7 @@
   {
    "number": 19,
    "statement_ar": "إذا تعذر المسمى رجع إلى القيمة",
-   "gloss_en": "When the stipulated price is unattainable, one reverts to the value.",
+   "gloss_en": "When the named price (al-musammā) is unattainable, one reverts to the value.",
    "kind": "default",
    "domain": "muamalat",
    "lean": [

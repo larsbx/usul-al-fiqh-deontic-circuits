@@ -169,7 +169,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Cat. 3: post-contract dispute over a validity condition (seller claims he was a minor): zahir of contracts' validity (zann, custom) vs asl of non-majority (zann); kernel gives the buyer's word, which is al-madhhab."
+   "note": "Cat. 3: post-contract dispute over a validity sharṭ («بعض شرائط صحة العقد») (seller claims he was a minor): zahir of contracts' validity (zann, custom) vs asl of non-majority (zann); kernel gives the buyer's word, which is al-madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012",
@@ -830,7 +830,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "A tawaf interrupted by an obligatory or funeral prayer is built upon whether muwalat is sunna or a condition, on the better-known of two turuq; the other turuq (implied) makes it depend on muwalat's status."
+   "note": "A tawaf interrupted by an obligatory or funeral prayer is built upon whether muwalat is sunna or a sharṭ, on the better-known of two turuq; the other turuq (implied) makes it depend on muwalat's status."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f007",
@@ -1916,7 +1916,7 @@
     "absence_known": false
    },
    "expected": true,
-   "note": "«You are divorced a month before my death»: he abstains absolutely (Muhannā from Aḥmad), since the condition may already obtain and its absence cannot be known in his lifetime.",
+   "note": "«You are divorced a month before my death»: he abstains absolutely (Muhannā from Aḥmad), since the taʿlīq's event may already obtain and its absence cannot be known in his lifetime.",
    "revisit": {
     "from_class": "missing_rule",
     "closed_by": [
@@ -2304,7 +2304,7 @@
     "confusion_category": false
    },
    "expected": "lot",
-   "note": "Emancipating slaves in final illness beyond the third: lot frees a third's worth (naṣṣ); the listed exceptions (conditional ʿitq, intended halves, pregnant slave) would encode with other facts, and Ibn Abī Mūsā's restriction is noted."
+   "note": "Emancipating slaves in final illness beyond the third: lot frees a third's worth (naṣṣ); the listed exceptions (ʿitq suspended on another's, taʿlīq: «إن أعتقت سالما فغانم حر»; intended halves, pregnant slave) would encode with other facts, and Ibn Abī Mūsā's restriction is noted."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f048",
@@ -3085,7 +3085,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Divorce made conditional on a birth to which women testify: al-mashhūr is that it occurs as a dependent, al-Majd derived a wajh that it does not."
+   "note": "Divorce suspended (taʿlīq) on a birth to which women testify: al-mashhūr is that it occurs as a dependent, al-Majd derived a wajh that it does not."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f010",
@@ -3129,7 +3129,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "A waqf made conditional on the founder's death is valid on al-manṣūṣ, called aṣaḥḥ («والأول أصح»), because it counts as a bequest and bequests accept conditions, while al-Qāḍī holds it not ṣaḥīḥ."
+   "note": "A waqf suspended (taʿlīq) on the founder's death is valid on al-manṣūṣ, called aṣaḥḥ («والأول أصح»), because it counts as a bequest and bequests accept taʿlīq («والوصايا تقبل التعليق»), while al-Qāḍī holds it not ṣaḥīḥ."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f012",
@@ -3140,7 +3140,7 @@
     "follows_established": true
    },
    "expected": true,
-   "note": "A release made conditional on the releaser's death is valid because it enters within the bequest (naṣṣ, al-Qāḍī and the aṣḥāb); whether the wounded man's release counts as a bequest to the killer is a separate question."
+   "note": "A release suspended (taʿlīq) on the releaser's death is valid because it enters within the bequest (naṣṣ, al-Qāḍī and the aṣḥāb); whether the wounded man's release counts as a bequest to the killer is a separate question."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f013",
@@ -3151,7 +3151,7 @@
     "follows_established": true
    },
    "expected": true,
-   "note": "'At the start of the month you are divorced for a thousand' is valid: the exchange enters as a dependent of the conditional divorce once she accepts."
+   "note": "'At the start of the month you are divorced for a thousand' is valid: the exchange enters as a dependent of the divorce suspended on the month (taʿlīq) once she accepts."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f014",
@@ -3173,7 +3173,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "A convert with more than four wives says 'whenever one of you converts she is divorced': one wajh: not ṣaḥīḥ (choice cannot be conditioned), the other validates it because choice follows the divorce; neither is marked."
+   "note": "A convert with more than four wives says 'whenever one of you converts she is divorced': one wajh: not ṣaḥīḥ (choice cannot be suspended on a sharṭ: «والاختيار لا يتعلق بالشرط»; divorce accepts taʿlīq), the other validates it because choice follows the divorce; neither is marked."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f015",
@@ -3294,7 +3294,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "The qārin who intends both ḥajj and ʿumra needs one ṭawāf and one saʿy on al-madhhab al-ṣaḥīḥ, but a riwāya requires two of each; al-Qāḍī's version of that riwāya denies the embedded ʿumra counts, which is the dependency condition."
+   "note": "The qārin who intends both ḥajj and ʿumra needs one ṭawāf and one saʿy on al-madhhab al-ṣaḥīḥ, but a riwāya requires two of each; al-Qāḍī's version of that riwāya denies the embedded ʿumra counts, which is the dependency (tabaʿiyya) the reading tests."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f002",
@@ -3316,7 +3316,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "One who vowed ḥajj while still owing the obligatory ḥajj then performs ḥajjat al-islām: it suffices for both per Abū Ṭālib's riwāya, but al-mashhūra says it does not, and the text gives no condition-based reason, so the kernel matches only the non-madhhab riwāya."
+   "note": "One who vowed ḥajj while still owing the obligatory ḥajj then performs ḥajjat al-islām: it suffices for both per Abū Ṭālib's riwāya, but al-mashhūra says it does not, and the text gives no sharṭ-based reason, so the kernel matches only the non-madhhab riwāya."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f003",
@@ -3404,7 +3404,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "One takbīr intended as both the opening takbīr and the rukūʿ takbīr: al-Qāḍī denies it for combining a pillar with a non-pillar (a rank condition the reading lacks), Ibn Shāqlā accepts it; neither is marked."
+   "note": "One takbīr intended as both the opening takbīr and the rukūʿ takbīr: al-Qāḍī denies it for combining a pillar with a non-pillar (a rank distinction, rukn against non-rukn, the reading lacks), Ibn Shāqlā accepts it; neither is marked."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f007",
@@ -3437,7 +3437,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Two prostrations of recitation heard together: al-manṣūṣ (al-Barzāṭī) requires two, a takhrīj lets one suffice; the kernel matches only the non-madhhab takhrīj, and the text gives no condition-based reason."
+   "note": "Two prostrations of recitation heard together: al-manṣūṣ (al-Barzāṭī) requires two, a takhrīj lets one suffice; the kernel matches only the non-madhhab takhrīj, and the text gives no sharṭ-based reason."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f009",
@@ -3877,7 +3877,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Paying another's due debt without his permission: recourse «في أصح الروايتين وهي المذهب»; al-Qāḍī adds conditions (intending recourse, the debtor refusing), which the authors of al-Mughnī and al-Muḥarrar reject. (Opening example, segmented as f000.)"
+   "note": "Paying another's due debt without his permission: recourse «في أصح الروايتين وهي المذهب»; al-Qāḍī adds shurūṭ («واشترط القاضي», sharṭ: intending recourse, the debtor refusing), which the authors of al-Mughnī and al-Muḥarrar reject. (Opening example, segmented as f000.)"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f000",

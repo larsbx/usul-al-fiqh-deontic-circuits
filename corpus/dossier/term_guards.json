@@ -84,6 +84,19 @@
     "registers",
     "glossary"
    ]
+  },
+  {
+   "gloss_en": "\\b(condition\\w*|stipulat\\w*)\\b",
+   "terms": [
+    "shart",
+    "shart_fiha",
+    "taliq"
+   ],
+   "why": "English «condition» covers al-sharṭ (a condition of the thing: «مقوماتها التي لا تتم ولا تصح إلا بها»), al-shurūṭ fīhā (a party's stipulation, binding when ṣaḥīḥ: F28) and al-taʿlīq (suspending a contract or divorce on an event: F23, F60). Whether a sale «cannot be made conditional» is a taʿlīq question, not a sharṭ one.",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
   }
  ],
  "note": "Every English text field of the corpus registers, and every Lean doc comment, that uses one of these glosses must also name the term it means, by its transliteration or its Arabic (tests/test_nusus.py). The English never feeds a derivation; this keeps it from hiding which term a case is about."

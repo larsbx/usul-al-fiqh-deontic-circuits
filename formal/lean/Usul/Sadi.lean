@@ -117,7 +117,7 @@ def Conduct.status : Conduct → Hukm
 theorem q16_adl_binding_fadl_not : Conduct.adl.status.binding = true ∧ Conduct.fadl.status.binding = false :=
   ⟨rfl, rfl⟩
 
-/-! ## Q22 / Q23 — settlement and stipulations are valid unless they make the forbidden
+/-! ## Q22 / Q23 — settlement and stipulations (al-shurūṭ fīhā, «الشروط») are valid unless they make the forbidden
 permitted or the permitted forbidden -/
 
 /-- A settlement or stipulation that turns `before` into `after` for some act. -/

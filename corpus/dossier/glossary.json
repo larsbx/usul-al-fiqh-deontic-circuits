@@ -299,7 +299,7 @@
    "ar": "الصحيح",
    "tr": "al-ṣaḥīḥ",
    "gloss": "al-ṣaḥīḥ (of an act or contract): valid, its effects follow; not the ḥadīth grade, nor a sound farq",
-   "definition": "Ibn ʿUthaymīn: what the effects of performing it follow from, whether an act of worship or a contract; it requires its conditions complete and its impediments absent. Ibn Qudāma defines ṣiḥḥa as the Lawgiver's taking the thing into account with respect to its ruling. Ibn Rajab and al-Saʿdī: a prohibition directed at the act of worship itself or its condition voids it, one directed at something external does not (Ibn Rajab reports two narrations where the prohibition of a condition is not specific to it).",
+   "definition": "Ibn ʿUthaymīn: what the effects of performing it follow from, whether an act of worship or a contract; it requires its conditions (sharṭ) complete and its impediments absent. Ibn Qudāma defines ṣiḥḥa as the Lawgiver's taking the thing into account with respect to its ruling. Ibn Rajab and al-Saʿdī: a prohibition directed at the act of worship itself or its condition voids it, one directed at something external does not (Ibn Rajab reports two narrations where the prohibition of a condition is not specific to it).",
    "conditions": [
     "conditions present",
     "impediments absent"
@@ -397,7 +397,7 @@
    "ar": "السبب",
    "tr": "al-sabab",
    "gloss": "cause",
-   "definition": "Al-Kawkab (after al-Qarāfī, also quoted by al-Ṭūfī): what by its existence entails the existence (of the ruling) and by its absence its absence, in itself; 'in itself' excludes cases where a condition is missing or an impediment present (e.g. the niṣāb before the year is complete). Al-Ṭūfī notes that a sharʿī cause, unlike a rational one, need not always produce its effect. Al-Saʿdī Q39 and Ibn Rajab q4: worship and expiations may not precede the cause of obligation but may precede its condition.",
+   "definition": "Al-Kawkab (after al-Qarāfī, also quoted by al-Ṭūfī): what by its existence entails the existence (of the ruling) and by its absence its absence, in itself; 'in itself' excludes cases where a sharṭ is missing or an impediment present (e.g. the niṣāb before the year is complete). Al-Ṭūfī notes that a sharʿī cause, unlike a rational one, need not always produce its effect. Al-Saʿdī Q39 and Ibn Rajab q4: worship and expiations may not precede the cause of obligation but may precede its condition.",
    "conditions": [
     "existence entails the ruling, absence its absence, li-dhātihi"
    ],
@@ -435,8 +435,8 @@
    "key": "shart",
    "ar": "الشرط",
    "tr": "al-sharṭ",
-   "gloss": "condition",
-   "definition": "Ibn Qudāma: what entails, by its absence, the absence of the ruling (iḥṣān for stoning, the year for zakāt); the conditioned does not exist without it, but need not exist when it exists. Al-Kawkab: what by its absence entails absence and by its existence neither existence nor absence, in itself. Conditions are rational, linguistic or sharʿī; al-Kawkab (after al-Qarāfī) says the linguistic 'condition' (if you enter the house you are divorced) is really a sabab.",
+   "gloss": "al-sharṭ: a condition of a thing or a ruling (waḍʿī); not a stipulation in a contract (al-shurūṭ fīhā), nor a taʿlīq",
+   "definition": "Ibn Qudāma: what entails, by its absence, the absence of the ruling (iḥṣān for stoning, the year for zakāt); the conditioned does not exist without it, but need not exist when it exists. Al-Kawkab: what by its absence entails absence and by its existence neither existence nor absence, in itself. The sharṭ is rational, linguistic or sharʿī; al-Kawkab (after al-Qarāfī) says the linguistic 'condition' (if you enter the house you are divorced) is really a sabab.",
    "conditions": [
     "absence entails absence of the ruling",
     "existence does not entail the ruling"
@@ -470,6 +470,10 @@
      "excerpt_ar": "لابد لذلك من أحد أمرين : إما لفقد لازم من لوازمهاء أو لوجود مانع خاص يبطلها",
      "note": "Al-Saʿdī Q8: a failed act lacks a required element or has a voiding impediment."
     }
+   ],
+   "distinct_from": [
+    "shart_fiha",
+    "taliq"
    ]
   },
   {
@@ -701,7 +705,7 @@
    "ar": "الأصل (ركن القياس)",
    "tr": "al-aṣl (rukn al-qiyās)",
    "gloss": "base case",
-   "definition": "The case compared to. Al-Kawkab: for the jurists it is the locus of the ruling compared to; others say it is the proof of the ruling or the ruling itself, a verbal dispute; al-Ṭūfī likewise reports text (the ribā ḥadīth) or its locus (the six commodities). Conditions: its ruling is established by text or agreement of the disputants (Ibn Qudāma) or by text or ijmāʿ, not by qiyās (Ibn ʿUthaymīn), and is rationally intelligible.",
+   "definition": "The case compared to. Al-Kawkab: for the jurists it is the locus of the ruling compared to; others say it is the proof of the ruling or the ruling itself, a verbal dispute; al-Ṭūfī likewise reports text (the ribā ḥadīth) or its locus (the six commodities). Its shurūṭ (sharṭ): its ruling is established by text or agreement of the disputants (Ibn Qudāma) or by text or ijmāʿ, not by qiyās (Ibn ʿUthaymīn), and is rationally intelligible.",
    "conditions": [
     "ruling established by naṣṣ or agreement/ijmāʿ",
     "ruling maʿqūl al-maʿnā",
@@ -745,7 +749,7 @@
    "ar": "الفرع",
    "tr": "al-farʿ",
    "gloss": "new case",
-   "definition": "The case to which the aṣl's ruling is extended. Its condition is that the ʿilla of the aṣl exist in it as it does in the aṣl (Ibn ʿUthaymīn); al-Ṭūfī accepts presumptive presence. Al-Kawkab: there must be no text on the farʿ's ruling.",
+   "definition": "The case to which the aṣl's ruling is extended. Its sharṭ is that the ʿilla of the aṣl exist in it as it does in the aṣl (Ibn ʿUthaymīn); al-Ṭūfī accepts presumptive presence. Al-Kawkab: there must be no text on the farʿ's ruling.",
    "conditions": [
     "the aṣl's ʿilla present in it",
     "no text already rules it"
@@ -1409,7 +1413,7 @@
    "ar": "تخصيص العلة",
    "tr": "takhṣīṣ al-ʿilla",
    "gloss": "specifying the ʿilla",
-   "definition": "Whether the ʿilla survives a naqḍ as a proof in the remaining cases, like a specified general term. Sources differ: al-Qāḍī and Abū al-Khaṭṭāb (al-Kawkab) hold naqḍ does not impair it; Ibn Ḥāmid holds it does; Ibn Qudāma distinguishes, voiding the extracted ʿilla but not the textual one when a condition is missing or an impediment present; al-Shinqīṭī prefers the reverse attribution; Ibn al-Qayyim says takhṣīṣ for a missing condition or present impediment is not impossible.",
+   "definition": "Whether the ʿilla survives a naqḍ as a proof in the remaining cases, like a specified general term. Sources differ: al-Qāḍī and Abū al-Khaṭṭāb (al-Kawkab) hold naqḍ does not impair it; Ibn Ḥāmid holds it does; Ibn Qudāma distinguishes, voiding the extracted ʿilla but not the textual one when a sharṭ is missing or an impediment present; al-Shinqīṭī prefers the reverse attribution; Ibn al-Qayyim says takhṣīṣ for a missing condition or present impediment is not impossible.",
    "conditions": [],
    "related": [
     "naqd",
@@ -1601,7 +1605,7 @@
    "ar": "فساد الاعتبار",
    "tr": "fasād al-iʿtibār",
    "gloss": "invalid consideration",
-   "definition": "The objection that the qiyās contradicts a text (Ibn Qudāma, al-Ṭūfī) or a text or ijmāʿ (al-Kawkab), so it is void. Ibn ʿUthaymīn makes non-collision with a stronger proof the first condition of qiyās.",
+   "definition": "The objection that the qiyās contradicts a text (Ibn Qudāma, al-Ṭūfī) or a text or ijmāʿ (al-Kawkab), so it is void. Ibn ʿUthaymīn makes non-collision with a stronger proof the first sharṭ of qiyās.",
    "conditions": [],
    "related": [
     "qawadih",
@@ -2019,7 +2023,7 @@
    "ar": "التعارض",
    "tr": "al-taʿāruḍ",
    "gloss": "conflict of proofs",
-   "definition": "Two proofs facing each other so that one contradicts the other (Ibn ʿUthaymīn). Resolution order: reconcile (jamʿ) if possible, else abrogation if its conditions are met, else preference (tarjīḥ); where none applies, suspension (tawaqquf). Ibn ʿUthaymīn holds such an unresolvable conflict cannot exist in the texts themselves, only in the mujtahid's view.",
+   "definition": "Two proofs facing each other so that one contradicts the other (Ibn ʿUthaymīn). Resolution order: reconcile (jamʿ) if possible, else abrogation if its shurūṭ (sharṭ) are met, else preference (tarjīḥ); where none applies, suspension (tawaqquf). Ibn ʿUthaymīn holds such an unresolvable conflict cannot exist in the texts themselves, only in the mujtahid's view.",
    "conditions": [
     "jamʿ",
     "then naskh",
@@ -2091,7 +2095,7 @@
    "ar": "النسخ",
    "tr": "al-naskh",
    "gloss": "abrogation",
-   "definition": "Lifting the ruling of a sharʿī proof, or its wording, by a proof from the Book and Sunna. Conditions include that reconciliation be impossible and the later date of the abrogating text be known.",
+   "definition": "Lifting the ruling of a sharʿī proof, or its wording, by a proof from the Book and Sunna. Its shurūṭ (sharṭ) include that reconciliation be impossible and the later date of the abrogating text be known.",
    "conditions": [
     "jamʿ impossible",
     "the abrogating proof known to be later"
@@ -2208,7 +2212,7 @@
    "ar": "العام",
    "tr": "al-ʿāmm",
    "gloss": "general term",
-   "definition": "A term encompassing all its individuals without limit. Al-Saʿdī Q59–60: an indefinite after negation, prohibition or condition, the particles man, mā, ayy, matā, generic al- and the annexed singular are general. Ibn al-Laḥḥām: the singular with al- is general unless there is a qarīna of ʿahd. The generality of the wording, not the specific occasion, counts (Ibn ʿUthaymīn; Ibn al-Laḥḥām q61, with a second view reported).",
+   "definition": "A term encompassing all its individuals without limit. Al-Saʿdī Q59–60: an indefinite after negation, prohibition or a conditional clause (the linguistic sharṭ), the particles man, mā, ayy, matā, generic al- and the annexed singular are general. Ibn al-Laḥḥām: the singular with al- is general unless there is a qarīna of ʿahd. The generality of the wording, not the specific occasion, counts (Ibn ʿUthaymīn; Ibn al-Laḥḥām q61, with a second view reported).",
    "conditions": [],
    "related": [
     "khass",
@@ -2352,7 +2356,7 @@
    "ar": "المقيد",
    "tr": "al-muqayyad",
    "gloss": "restricted",
-   "definition": "Ibn ʿUthaymīn: what indicates the reality with a restriction ('a believing slave'). Ibn al-Laḥḥām: what applies to a specified individual or one described by something added to its genus. Al-Saʿdī Q29: an utterance must be restricted by its attachments (description, condition, exception).",
+   "definition": "Ibn ʿUthaymīn: what indicates the reality with a restriction ('a believing slave'). Ibn al-Laḥḥām: what applies to a specified individual or one described by something added to its genus. Al-Saʿdī Q29: an utterance must be restricted by its attachments (description, the linguistic sharṭ, exception).",
    "conditions": [],
    "related": [
     "mutlaq"
@@ -2462,7 +2466,7 @@
    "ar": "النهي",
    "tr": "al-nahy",
    "gloss": "prohibition",
-   "definition": "Speech containing a demand to refrain by way of superiority, in the form lā tafʿal (Ibn ʿUthaymīn). Unqualified it requires prohibition (Ibn al-Laḥḥām) and, per Ibn ʿUthaymīn, also the invalidity of what is prohibited; whether a prohibition voids worship depends on whether it returns to the act, its condition or something external (Ibn Rajab q9, al-Saʿdī Q38).",
+   "definition": "Speech containing a demand to refrain by way of superiority, in the form lā tafʿal (Ibn ʿUthaymīn). Unqualified it requires prohibition (Ibn al-Laḥḥām) and, per Ibn ʿUthaymīn, also the invalidity of what is prohibited; whether a prohibition voids worship depends on whether it returns to the act, its sharṭ or something external (Ibn Rajab q9, al-Saʿdī Q38).",
    "conditions": [],
    "related": [
     "amr",
@@ -2763,7 +2767,7 @@
    "ar": "الاحتياط / الاعتزال",
    "tr": "al-iḥtiyāṭ / al-iʿtizāl",
    "gloss": "precaution; abstention",
-   "definition": "Abstaining from one's wife when a divorce may have taken effect. Ibn Rajab reports Aḥmad's text that two men whose oaths make one wife divorced abstain until certain, and Ibn Taymiyya's reading of Aḥmad: whenever divorce is tied to a condition that may have occurred, the husband abstains until he knows it has not. Al-Saʿdī instead says that on doubt whether the condition occurred one builds on its non-occurrence (the marriage stands), precaution being commendable. Not formalised in the Lean modules.",
+   "definition": "Abstaining from one's wife when a divorce may have taken effect. Ibn Rajab reports Aḥmad's text that two men whose oaths make one wife divorced abstain until certain, and Ibn Taymiyya's reading of Aḥmad: whenever divorce is suspended (taʿlīq) on an event that may have occurred, the husband abstains until he knows it has not. Al-Saʿdī instead says that on doubt whether the taʿlīq's event occurred one builds on its non-occurrence (the marriage stands), precaution being commendable. Not formalised in the Lean modules.",
    "conditions": [],
    "related": [
     "yaqin",
@@ -3747,7 +3751,7 @@
    "tr": "al-ʿilla",
    "sense": "of a ḥadīth",
    "gloss": "al-ʿilla (of a ḥadīth): a hidden defect that impairs it; not the ratio legis of qiyās",
-   "definition": "al-Nukhba: «والمعلل ما فيه علة خفية قادحة»; its absence is a condition of the ṣaḥīḥ. The qiyās ʿilla (illa) is the anchor of a ruling, a different term on the same word.",
+   "definition": "al-Nukhba: «والمعلل ما فيه علة خفية قادحة»; its absence is a sharṭ of the ṣaḥīḥ. The qiyās ʿilla (illa) is the anchor of a ruling, a different term on the same word.",
    "related": [
     "sahih_hadith",
     "daif_hadith"
@@ -3792,7 +3796,7 @@
    "tr": "al-aṣaḥḥ",
    "sense": "of two wujūh or riwāyas (tarjīḥ)",
    "gloss": "al-aṣaḥḥ: the sounder of two wujūh or riwāyas, a tarjīḥ inside the madhhab; English «sounder» must say so",
-   "definition": "Ibn Rajab: the muḥrim who kills attacking game «لم يضمنه على أصح الوجهين» (Q26); al-Manṣūṣ on the waqf conditional on death, «وقال القاضي لا يصح والأول أصح» (Q133). It ranks wujūh; it is not a ḥadīth grade.",
+   "definition": "Ibn Rajab: the muḥrim who kills attacking game «لم يضمنه على أصح الوجهين» (Q26); al-Manṣūṣ on the waqf suspended (taʿlīq) on death, «وقال القاضي لا يصح والأول أصح» (Q133). It ranks wujūh; it is not a ḥadīth grade.",
    "related": [
     "sahih_qawl",
     "daif_qawl"
@@ -3879,6 +3883,65 @@
      "ref": "src:islamhouse-qj-doc#F04",
      "excerpt_ar": "وهذا الفرق ضعيف لعدم ثبوت الفرق بينهما في هذا الموضع شرعاً",
      "note": "F04."
+    }
+   ]
+  },
+  {
+   "key": "shart_fiha",
+   "ar": "الشروط فيها",
+   "tr": "al-shurūṭ fīhā",
+   "gloss": "al-shurūṭ fīhā: a stipulation a party makes in a contract (F28); not a condition of the contract itself (al-sharṭ)",
+   "definition": "al-Saʿdī F28: «وأما الشروط فيها فهي أمور خارجة عن نفس العقود، وإنما يشرطها أحد المتعاقدين لغرض له خاص»; they bind when ṣaḥīḥ, «وهي الشروط التي لا تدخل في محرم، ولا تخرح عن واجب»: «فالمسلمون على شروطهم». Against them stand the shurūṭ of the things, «مقوماتها التي لا تتم ولا تصح إلا بها» (al-sharṭ). He counts the taʿlīqāt among the stipulations (F23).",
+   "related": [
+    "shart",
+    "taliq",
+    "sahih"
+   ],
+   "distinct_from": [
+    "shart",
+    "taliq"
+   ],
+   "furuq": [
+    "F28",
+    "F26"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F28",
+     "excerpt_ar": "وأما الشروط فيها فهي أمور خارجة عن نفس العقود، وإنما يشرطها أحد المتعاقدين لغرض له خاص",
+     "note": "F28: the stipulations, external to the contract."
+    }
+   ]
+  },
+  {
+   "key": "taliq",
+   "ar": "التعليق",
+   "tr": "al-taʿlīq",
+   "gloss": "al-taʿlīq: suspending a contract, a divorce or a manumission on an event («إن…»); English «conditional» must say so",
+   "definition": "Tying the effect of a disposition to a future event or a description: «لو علق الطلاق بالولادة» (Ibn Rajab Q133), «ومُعلَّقٌ عتقه على صفة» (al-Saʿdī). The madhhab bars it in contracts except agency and guardianships and allows it in cancellations; al-Saʿdī grades that farq ḍaʿīf, «والصواب: أن العقود كلها كالفسوخ يصح تعليقها», and counts it a stipulation, «ومن أهم الشروط التعليقات» (F23). Ibn Taymiyya treats a divorce suspended to urge or deter as an oath (F60).",
+   "related": [
+    "shart_fiha",
+    "shart"
+   ],
+   "distinct_from": [
+    "shart",
+    "shart_fiha"
+   ],
+   "furuq": [
+    "F23",
+    "F60",
+    "F156"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F23",
+     "excerpt_ar": "والصواب: أن العقود كلها كالفسوخ يصح تعليقها، ولا فرق بينها",
+     "note": "F23."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p298",
+     "excerpt_ar": "لو علق الطلاق بالولادة فشهد بها النساء",
+     "note": "Q133."
     }
    ]
   }

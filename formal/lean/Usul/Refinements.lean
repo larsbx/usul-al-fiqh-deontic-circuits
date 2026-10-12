@@ -21,7 +21,7 @@ register question; it makes the alternatives expressible.
   Aḥmad's naṣṣ that the least the name covers is due «because it is the certain»).
 * **Voidance of trust**, its becoming bāṭil (gap `rule:trust_voidance`; Ibn Rajab 45).
 * **Recourse when permission cannot be sought** (gap `fact:permission_unobtainable`; Ibn Rajab 75).
-* **Abstention while a divorce condition may have occurred** (gap
+* **Abstention while the event a divorce is suspended on (taʿlīq) may have occurred** (gap
   `rule:abstention_under_possible_condition`; Taqī al-Dīn on Aḥmad's texts, cited by Ibn Rajab).
 * **Round 4** (the open gaps' own texts): ghulūl forfeiture (Ibn Rajab 140.f006), the right for
   and against oneself after denial (Ibn al-Laḥḥām 54.f002), tie-breaks among fayʾ recipients (Ibn
@@ -144,7 +144,7 @@ def recourseNec (gift owedByOther permission unobtainable : Bool) : Bool :=
 theorem recourseNec_conservative (g o p : Bool) : recourseNec g o p false = recourseFull g o p := by
   cases p <;> simp [recourseNec]
 
-/-! ## Abstention while a divorce condition may have occurred
+/-! ## Abstention while the event a divorce is suspended on (taʿlīq) may have occurred
 
 Taqī al-Dīn on Aḥmad's texts (Ibn Rajab, on qāʿida 160): «وحاصله أنه متى علق الطلاق بشرط وأمكن
 وجوده فإنه يعتزل امرأته حتى يعلم انتفاؤه». The marriage is not judged dissolved: the husband «is
@@ -619,7 +619,7 @@ lean on (the aṣl is the ʿazīma). -/
 theorem rukhsa_is_firm_condition (r p : Bool) : rukhsaValid r p = validUnderDoubt r p false := by
   cases r <;> cases p <;> rfl
 
-/-! ### A sale conditioned on a known fact (Ibn Rajab 68.f007)
+/-! ### A sale suspended (taʿlīq) on a known fact (Ibn Rajab 68.f007)
 
 al-Kāfī: «لأنه تعليق على شرط واقع يعلمانه فلا يؤثر ذكره في العقد», with Aḥmad's naṣṣ (Ibn Manṣūr)
 on selling the absent thing «إن كان سالما». -/

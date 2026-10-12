@@ -138,7 +138,7 @@ theorem q14_fault_makes_trustee_liable (t n : Bool) (h : t = true ∨ n = true) 
   rcases h with h | h <;> simp [lossLiable, h]
 
 /-! ## Q18 / Q19 — ḍamān: fungibles by their like, others by value; an unattainable
-stipulated price reverts to value -/
+named price (al-musammā, «إذا تعذر المسمى رجع إلى القيمة») reverts to value -/
 
 inductive Good where
   | fungible | valued
@@ -160,7 +160,7 @@ def priceDue (stipulated : Option Nat) (value : Nat) : Nat := stipulated.getD va
 theorem q19_unattainable_reverts_to_value (v : Nat) : priceDue none v = v := rfl
 theorem q19_stipulated_binds (p v : Nat) : priceDue (some p) v = p := rfl
 
-/-- Q19 is S2: the stipulated price, falling back to value. -/
+/-- Q19 is S2: the named price (al-musammā), falling back to value. -/
 theorem q19_is_priority (s : Option Nat) (v : Nat) : priceDue s v = resolveD [s] v := by
   cases s <;> rfl
 

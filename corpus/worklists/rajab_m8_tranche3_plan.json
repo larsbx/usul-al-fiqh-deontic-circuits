@@ -924,8 +924,8 @@
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f002",
       "from_note": "Defective kitabah with a lawful named consideration: the source expressly says the named amount, not the slave's value, and reports agreement on that outcome. The full paragraph distinguishes a void undertaking with prohibited consideration, which is outside this encoding. The competing explanations (contract versus condition) are retained for human review; the guard tests the stated amount basis only.",
-      "case_sha256": "3f3e1a24be562e9e93d6e0edcf9eeb41d48092b7c7c51075af0457bb350aed05",
-      "reason": "English note names the Arabic term (problem register PR-02: «void»/«defective» is fāsid here); class, facts and expected unchanged"
+      "case_sha256": "632487395b519cfd95bf478768aea7385746dd57ac778682db0ec63a8d7dbb8c",
+      "reason": "English note names the Arabic term (problem register PR-02: «void»/«defective» is fāsid here); then PR-03: «condition» is taʿlīq bi-ṣifa; class, facts and expected unchanged"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f001",
