@@ -907,5 +907,13 @@
         "rule:ayman_by_urf"
       ]
     }
+  ],
+  "note_revisions": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001",
+      "from_note": "A najis vessel dipped in running water as seven jiryas pass: one washing or seven? Two wujūh; the ẓāhir of the aṣḥāb is one washing, and al-Qāḍī's Sharḥ says Aḥmad's words point to it. Here the madhhab side is the whole.",
+      "case_sha256": "9d39f3a5390f9cbb4440d3cf4d314239097be790e080e848fc33064a80a199cb",
+      "reason": "English note names the Arabic term (problem register PR-02: «wash» is ghasl here); class, facts and expected unchanged"
+    }
   ]
 }

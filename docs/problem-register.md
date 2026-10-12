@@ -31,6 +31,7 @@ Severity:
 | PR-18 | A | Matching a matn by its words can land on a false friend: a bāb heading («باب ما جاء لا وصية لوارث»), or another ḥadīth with the same words (al-Bukhārī 50, «رعاة الإبل» in Jibrīl's ḥadīth) | found while closing PR-04 | closed: a matn must fall under its number and never on a heading line (tested); each source may carry its own riwāya wording |
 | PR-19 | B | Slicing a Qurʾānic excerpt by letters dropped the last letter's vowel (لِلَّه for لِلَّهِ): the muṣḥaf's text altered | found while closing PR-04 | closed: `span` keeps the final marks |
 | PR-20 | A | Two fetches running at once each rewrote `lock.json` from their own copy, so one pin was silently lost (al-Albānī's Ṣaḥīḥ wa-Ḍaʿīf al-Tirmidhī; found while closing PR-04) | 1 pin | closed: `_pin` merges under a file lock and writes atomically; concurrent pins and "cached but unpinned" are tested |
+| PR-21 | B | Hash-pinned contribution receipts (M8 tranche 3) could record a revisit but not an English-only note correction, so fixing a gloss broke provenance | 1 case | closed: a `note_revisions` ledger keeps the old note; the test restores it and must get the receipt back, so nothing else can have changed |
 | PR-14 | A | The bulk «impurity → najāsa» replacement could mislabel ḥadath | 27 fields | closed `021d1d8`: each reviewed; 18.f015 and 159.f007 corrected from source |
 
 ## PR-02 families (English gloss → terms it conflates)
@@ -38,7 +39,7 @@ Severity:
 | Family | Terms | Fields using the gloss without the term |
 |---|---|---|
 | pure, purity, purify | ṭāhir, ṭahūr, ṭahāra, maḥḍ | 26: closed (glossary, guard, 31 sites) |
-| wash, bath | ghusl, ghasl | 11 |
+| wash, bath | ghusl, ghasl | 11: closed (terms vowelled الغُسل / الغَسل, guard, 14 sites) |
 | void, invalid, defective | bāṭil, fāsid (the madhhab distinguishes them only in ḥajj and nikāḥ, F98) | 58 |
 | expiation, compensation, blood-money | kaffāra, fidya, ḍamān, diya, arsh, jazāʾ | 26 |
 | oath, vow | yamīn, nadhr | 30 |
@@ -79,3 +80,11 @@ Six say only «ظاهر النصوص», «الأدلة», «الآثار» or «
 * al-maḥḍ: Q40, F13. «Pure» in the sense of «sheer» is not a purity term.
 
 The guard then found 31 sites in the registers and the Lean doc comments. Each was rewritten from its context. Some are ṭāhir (an undeclared carcass's hair; manī; street mud), some ṭahūr (water for wuḍūʾ; making najis water ṭahūr), some ṭahāra (the aṣl of ṭahāra of a person or thing), and some maḥḍ (a pure means, rights purely God's, a trust outright). One was qinn («the pure slave» is the slave outright). The ẓāhir/aṣl notes of Ibn Rajab 159 now say «asl of ṭahāra» against «zahir of najāsa».
+
+**PR-02, «wash».** Unvowelled, الغسل is both al-ghusl and al-ghasl, so the glossary now vowels its Arabic keys (الغُسل, الغَسل) as well as naming them.
+* al-ghusl rests on al-Māʾida 6 «فَاطَّهَّرُوا», al-Nisāʾ 43 «حَتَّىٰ تَغْتَسِلُوا», Abū Dāwūd 206 and F52.
+* al-ghasl rests on al-Māʾida 6 «فَاغْسِلُوا وُجُوهَكُمْ» (now in the foundation), Muslim 303 and F70.
+* The guard found 14 sites. Three of them show why it matters:
+  * F52's «major ritual washing» is, in al-Saʿdī's words, «طهارة الحدث الأكبر», that is, ghusl against wuḍūʾ.
+  * F115's «washing with usurped water» is «من توضأ بماء مغصوب», wuḍūʾ.
+  * Ibn Rajab 14.f000's «neither must wash» was «لا يلزم واحدا منهما غسل ولا وضوء», ghusl and wuḍūʾ; the note now says so.

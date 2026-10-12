@@ -27,6 +27,14 @@
     "najasa"
    ],
    "why": "English «pure» covers al-ṭāhir (not najis), al-ṭahūr (purifying; the madhhab's ṭāhir water is not), al-ṭahāra (of a person: from ḥadath and from najāsa) and al-maḥḍ (sheer, not a purity term): F19, F68."
+  },
+  {
+   "gloss_en": "\\b(wash\\w*|bath(?!-house)\\w*)\\b",
+   "terms": [
+    "ghusl",
+    "ghasl"
+   ],
+   "why": "English «wash» covers al-ghusl (the full bath that lifts the major ḥadath) and al-ghasl (washing a limb or a najāsa); unvowelled Arabic الغسل is both (Ibn Rajab 14.f000 «غسل ولا وضوء» is ghusl; 8.f003 «غسل بعض أعضاء المحدث» is ghasl)."
   }
  ],
  "note": "Every English text field of the corpus registers, and every Lean doc comment, that uses one of these glosses must also name the term it means, by its transliteration or its Arabic (tests/test_nusus.py). The English never feeds a derivation; this keeps it from hiding which term a case is about."

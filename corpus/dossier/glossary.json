@@ -3369,6 +3369,66 @@
      "note": "F13: here the right is purely God's."
     }
    ]
+  },
+  {
+   "key": "ghusl",
+   "ar": "الغُسل",
+   "tr": "al-ghusl",
+   "gloss": "al-ghusl: the full ritual bath that lifts the major ḥadath (janāba, ḥayḍ); not ghasl",
+   "definition": "Washing the whole body with intention to lift the major ḥadath: «وَإِن كُنتُمْ جُنُبًا فَاطَّهَّرُوا» (al-Māʾida 6), «حَتَّىٰ تَغْتَسِلُوا» (al-Nisāʾ 43), «فإذا فضخت الماء فاغتسل» (Abū Dāwūd 206). al-Saʿdī: «طهارة الحدث الأكبر» against «طهارة الحدث الأصغر» (F52). Unvowelled, الغسل is also al-ghasl; the register vowels it and names which.",
+   "related": [
+    "ghasl",
+    "hadath",
+    "maniyy",
+    "tahara"
+   ],
+   "distinct_from": [
+    "ghasl"
+   ],
+   "nusus": [
+    "Q005:006",
+    "Q004:043",
+    "H-ali-fadakh"
+   ],
+   "furuq": [
+    "F52"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F52",
+     "excerpt_ar": "التفريق في طهارة الحدث الأكبر، وطهارة الحدث الأصغر",
+     "note": "F52: the ṭahāra of the major ḥadath (ghusl) and of the minor (wuḍūʾ)."
+    }
+   ]
+  },
+  {
+   "key": "ghasl",
+   "ar": "الغَسل",
+   "tr": "al-ghasl",
+   "gloss": "al-ghasl: washing a limb or a thing (in wuḍūʾ, or of najāsa); not ghusl",
+   "definition": "Washing a limb or a thing: the limbs in wuḍūʾ («فَاغْسِلُوا وُجُوهَكُمْ», al-Māʾida 6), or a najāsa away («سبع غسلات إحداها بتراب», F70; «يغسل ذكره ويتوضأ», Muslim 303). Unvowelled, الغسل is also al-ghusl; the register vowels it and names which.",
+   "related": [
+    "ghusl",
+    "najasa",
+    "tahara"
+   ],
+   "distinct_from": [
+    "ghusl"
+   ],
+   "nusus": [
+    "Q005:006b",
+    "H-ali-madhy"
+   ],
+   "furuq": [
+    "F70"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F70",
+     "excerpt_ar": "التي لا بد فيها من سبع غسلات إحداها بتراب ونحوه",
+     "note": "F70: seven washings (ghasalāt) for the heavy najāsa."
+    }
+   ]
   }
  ]
 }

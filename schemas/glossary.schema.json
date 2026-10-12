@@ -84,7 +84,7 @@
             "type": "array",
             "items": {
               "type": "string",
-              "pattern": "^(Q[0-9]{3}:[0-9]{3}|H-[a-z0-9-]+|A-[a-z0-9-]+)$"
+              "pattern": "^(Q[0-9]{3}:[0-9]{3}[a-z]?|H-[a-z0-9-]+|A-[a-z0-9-]+)$"
             },
             "description": "ids in corpus/nusus/foundation.json: the āyāt, ḥadīth and athar the term's rulings rest on"
           },

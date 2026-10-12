@@ -419,6 +419,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `src:archive-pdf1995-tess/v01:p102`: Al-Saʿdī Q52: preponderant belief put before the aṣl in its places.
   > منها: تقديم غلبة الظن في المواضع التي يقدم فيها على  الأصل
 
+<a id="ghasl"></a>
+
+## al-ghasl (الغَسل)
+
+*al-ghasl: washing a limb or a thing (in wuḍūʾ, or of najāsa); not ghusl.* Washing a limb or a thing: the limbs in wuḍūʾ («فَاغْسِلُوا وُجُوهَكُمْ», al-Māʾida 6), or a najāsa away («سبع غسلات إحداها بتراب», F70; «يغسل ذكره ويتوضأ», Muslim 303). Unvowelled, الغسل is also al-ghusl; the register vowels it and names which.
+
+**Related:** [ghusl](#ghusl), [najasa](#najasa), [tahara](#tahara)
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F70`: F70: seven washings (ghasalāt) for the heavy najāsa.
+  > التي لا بد فيها من سبع غسلات إحداها بتراب ونحوه
+
 <a id="ghulul"></a>
 
 ## al-ghulūl (الغلول)
@@ -438,6 +451,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f006`: Ibn Rajab under qāʿida 140.
   > السرقة من الغنيمة إذا قلنا هي كالغلول وإن الغال يحرم سهمه منها على رواية، فيجتمع عليه غرم ما سرقه مع حرمان سهمه المستحق منها، وقد يكون قدر السرقة وأقل وأكثر. وليس من هذه القاعدة تغليظ الدية بقتل ذي الرحم عمدا ; لأن القصاص فيه قد يكون واجبا في غير الابن، وإنما هو لزيادة حرمة الجناية فهو كالتضعيف بالقتل في الحرم والإحرام.
+
+<a id="ghusl"></a>
+
+## al-ghusl (الغُسل)
+
+*al-ghusl: the full ritual bath that lifts the major ḥadath (janāba, ḥayḍ); not ghasl.* Washing the whole body with intention to lift the major ḥadath: «وَإِن كُنتُمْ جُنُبًا فَاطَّهَّرُوا» (al-Māʾida 6), «حَتَّىٰ تَغْتَسِلُوا» (al-Nisāʾ 43), «فإذا فضخت الماء فاغتسل» (Abū Dāwūd 206). al-Saʿdī: «طهارة الحدث الأكبر» against «طهارة الحدث الأصغر» (F52). Unvowelled, الغسل is also al-ghasl; the register vowels it and names which.
+
+**Related:** [ghasl](#ghasl), [hadath](#hadath), [maniyy](#maniyy), [tahara](#tahara)
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F52`: F52: the ṭahāra of the major ḥadath (ghusl) and of the minor (wuḍūʾ).
+  > التفريق في طهارة الحدث الأكبر، وطهارة الحدث الأصغر
 
 <a id="hadath"></a>
 
