@@ -4,7 +4,7 @@
   "method": "blind typing into Usul.Typing situations; Prolog routing by coverage of each encoder's fields",
   "answers": 53,
   "situations": 138,
-  "fields_stated": 179,
+  "fields_stated": 187,
   "cases": 123,
   "applies": 0.3577,
   "recall": {
@@ -14,8 +14,8 @@
   },
   "recall_with_named_rules": {
     "1": 0.3008,
-    "5": 0.6911,
-    "10": 0.6911
+    "5": 0.7398,
+    "10": 0.7398
   },
   "lexical_recall": {
     "1": 0.0894,
@@ -28,7 +28,7 @@
     "10": 0.2195
   },
   "encoders_applying_per_answer": 0.51,
-  "encoders_touched_per_answer": 2.11,
+  "encoders_touched_per_answer": 2.23,
   "by_encoder": {
     "asl_zahir": {
       "cases": 27,
@@ -238,7 +238,7 @@
       "named_rules": [
         "mubashara_tasabbub"
       ],
-      "best_rank_with_named": null
+      "best_rank_with_named": 2
     },
     {
       "case": "islamqa.223512.f002",
@@ -284,7 +284,7 @@
       "named_rules": [
         "mubashara_tasabbub"
       ],
-      "best_rank_with_named": null
+      "best_rank_with_named": 2
     },
     {
       "case": "islamqa.305083.f002",
@@ -294,7 +294,7 @@
       "named_rules": [
         "mubashara_tasabbub"
       ],
-      "best_rank_with_named": null
+      "best_rank_with_named": 2
     },
     {
       "case": "islamqa.305083.f003",
@@ -304,7 +304,7 @@
       "named_rules": [
         "mubashara_tasabbub"
       ],
-      "best_rank_with_named": null
+      "best_rank_with_named": 2
     },
     {
       "case": "islamqa.315435.f001",
@@ -332,7 +332,7 @@
       "named_rules": [
         "mubashara_tasabbub"
       ],
-      "best_rank_with_named": null
+      "best_rank_with_named": 3
     },
     {
       "case": "islamqa.317604.f002",
@@ -342,7 +342,7 @@
       "named_rules": [
         "mubashara_tasabbub"
       ],
-      "best_rank_with_named": null
+      "best_rank_with_named": 3
     },
     {
       "case": "islamqa.328808.f001",
@@ -354,17 +354,17 @@
       "case": "islamqa.344230.f001",
       "encoder": "itlaf",
       "settled": 0.5,
-      "rank": 2
+      "rank": 3
     },
     {
       "case": "islamqa.344230.f002",
       "encoder": "itlaf",
       "settled": 0.5,
-      "rank": 2,
+      "rank": 3,
       "named_rules": [
         "mubashara_tasabbub"
       ],
-      "best_rank_with_named": 2
+      "best_rank_with_named": 3
     },
     {
       "case": "islamqa.345284.f001",

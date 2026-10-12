@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "candidate",
-  "provenance": "Each answer of corpus/fatawa/takhrij/islamqa_tranche1.json typed into Usul.Typing situations (the qāʿida-type fields its text settles), LLM-assisted by four agents working blind: they saw only the answer texts and a field catalogue generated from the Lean export, never the tranche's encoder labels. A first pass had a wrong grade scale for yaqin.asl/zahir (a catalogue bug); those fields were revisited with the kernel's constructors. Quotes are verbatim, at most 160 characters (modern text, cache-only rights). Not human-reviewed.",
+  "provenance": "Each answer of corpus/fatawa/takhrij/islamqa_tranche1.json typed into Usul.Typing situations (the qāʿida-type fields its text settles), LLM-assisted by four agents working blind: they saw only the answer texts and a field catalogue generated from the Lean export, never the tranche's encoder labels. A first pass had a wrong grade scale for yaqin.asl/zahir (a catalogue bug); those fields were revisited with the kernel's constructors. Quotes are verbatim, at most 160 characters (modern text, cache-only rights). A third pass, after Ibn Rajab Q127 was typed (Usul.Typing.Qaida.Mubashara), revisited only its two fields across all answers, still blind. Not human-reviewed.",
   "answers": [
     {
       "answer": "islamqa.10284",
@@ -299,11 +299,13 @@
           "label": "Depositary transgresses against the deposit and it is lost",
           "facts": {
             "hand": "trustee",
-            "transgressed": true
+            "transgressed": true,
+            "udwan_in_mubashara": true
           },
           "evidence": {
             "hand": "أما المعتدي على الوديعة أو المفرط في حفظها ؛ فإنه يضمنها إذا تلفت",
-            "transgressed": "أما المعتدي على الوديعة أو المفرط في حفظها ؛ فإنه يضمنها إذا تلفت"
+            "transgressed": "أما المعتدي على الوديعة أو المفرط في حفظها ؛ فإنه يضمنها إذا تلفت",
+            "udwan_in_mubashara": "أما المعتدي على الوديعة أو المفرط في حفظها ؛ فإنه يضمنها إذا تلفت ؛ لأنه متلف لمال غيره"
           }
         },
         {
@@ -338,10 +340,12 @@
         {
           "label": "Confiscating and destroying obstructing goods after warning",
           "facts": {
-            "purpose": "repelHarm"
+            "purpose": "repelHarm",
+            "udwan_in_mubashara": false
           },
           "evidence": {
-            "purpose": "أو باحتمال تسببها بأذى ، أو ضرر ، وكان قد أُنذر صاحبها"
+            "purpose": "أو باحتمال تسببها بأذى ، أو ضرر ، وكان قد أُنذر صاحبها",
+            "udwan_in_mubashara": "فلو صادرت هذه الصناديق وأتلفتها لم يكن عليك حرج"
           }
         },
         {
@@ -349,12 +353,14 @@
           "facts": {
             "hand": "wrongdoer",
             "transgressed": true,
-            "purpose": "benefit"
+            "purpose": "benefit",
+            "udwan_in_mubashara": true
           },
           "evidence": {
             "hand": "وهذا اعتداء وغصب ، فتكون ضامنا لهذا الرخام لصاحبه",
             "transgressed": "وهذا اعتداء وغصب",
-            "purpose": "أن أعطيه لقريبي ليستفيد منه"
+            "purpose": "أن أعطيه لقريبي ليستفيد منه",
+            "udwan_in_mubashara": "ولكنك أخذتها لنفسك ، ولم تتلفها ، وهذا اعتداء وغصب"
           }
         },
         {
@@ -759,19 +765,23 @@
         {
           "label": "Death caused by the healer through lack of skill, transgression or shortcoming: healer liable",
           "facts": {
-            "transgressed": true
+            "transgressed": true,
+            "udwan_in_mubashara": true
           },
           "evidence": {
-            "transgressed": "لكونه غير حاذق في عمله أو لوجود تعدٍ منه أو تقصير : فيكون الضمان عليه"
+            "transgressed": "لكونه غير حاذق في عمله أو لوجود تعدٍ منه أو تقصير : فيكون الضمان عليه",
+            "udwan_in_mubashara": "لكونه غير حاذق في عمله أو لوجود تعدٍ منه أو تقصير : فيكون الضمان عليه"
           }
         },
         {
           "label": "Skilled practitioner who did not exceed what is required: no liability",
           "facts": {
-            "transgressed": false
+            "transgressed": false,
+            "udwan_in_mubashara": false
           },
           "evidence": {
-            "transgressed": "أن لا تجني أيديهم ، فيتجاوزوا ما ينبغي أن يقطع"
+            "transgressed": "أن لا تجني أيديهم ، فيتجاوزوا ما ينبغي أن يقطع",
+            "udwan_in_mubashara": "أن لا تجني أيديهم ، فيتجاوزوا ما ينبغي أن يقطع"
           }
         }
       ]
@@ -1093,10 +1103,12 @@
         {
           "label": "Questioner was transgressing (e.g. speeding) while the other driver was not: questioner liable as transgressing cause",
           "facts": {
-            "transgressed": true
+            "transgressed": true,
+            "udwan_in_mubashara": false
           },
           "evidence": {
-            "transgressed": "إذا كنت متعديا بسيرك"
+            "transgressed": "إذا كنت متعديا بسيرك",
+            "udwan_in_mubashara": "إذا كنت متعديا بسيرك، والسائق الآخر لم يتعدَّ"
           }
         },
         {
@@ -1151,11 +1163,13 @@
           "label": "The tailgating driver who swerved, judged transgressor and negligent",
           "facts": {
             "transgressed": true,
-            "negligent": true
+            "negligent": true,
+            "arising_from_sabab": true
           },
           "evidence": {
             "transgressed": "لكنه معتد ومفرط، فالضمان يكون عليه",
-            "negligent": "لكنه معتد ومفرط، فالضمان يكون عليه"
+            "negligent": "لكنه معتد ومفرط، فالضمان يكون عليه",
+            "arising_from_sabab": "وتفاجأ بانتقال السيارة التي خلفي، ثم انقلبت تلك السيارة"
           }
         }
       ]
@@ -1187,12 +1201,14 @@
           "facts": {
             "negligent": false,
             "mental": "ignorant",
-            "benefits_other": true
+            "benefits_other": true,
+            "arising_from_sabab": false
           },
           "evidence": {
             "negligent": "ما دمت قد سقت لمصلحته ولم تكن مفرطا",
             "mental": "وكونك لا تعلم بذلك وأنك لو علمت ما قدت السيارة، كل ذلك لا يرفع عنك الضمان",
-            "benefits_other": "ما دمت قد سقت لمصلحته"
+            "benefits_other": "ما دمت قد سقت لمصلحته",
+            "arising_from_sabab": "لأنك مكلف مختار، فعلت ذلك باختيارك"
           }
         }
       ]

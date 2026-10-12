@@ -115,7 +115,17 @@ Precedents:
     - `python -m usul_corpus typed-routing` writes the situations as `sit/3` (`examples/v41_islamqa_situations.pl`) and routes them through the Prolog typing rules, relations included. Encoders are ranked by `coverage/4`, the share of their fields a situation settles, with ties counted against the true encoder.
   - **T4, measured** (`corpus/typing/islamqa_tranche1_report.json`, 123 cases). Recall@1/5/10 by type is 0.30 / 0.69 / 0.69, against 0.09 / 0.29 / 0.35 lexical on the same cases. The true encoder applies outright (every field settled) in 0.36 of cases. Routing is selective: an answer touches 2.1 of the 104 encoders on average, and 0.51 apply in full.
     - **The finding is itlāf:** 25 of its 27 cases are unrouted. Its type is Q13 ⊔ Q36 (state of mind, purpose), but these answers (accidents, damage) turn on causation and fault: the mubāshir and the mutasabbib, the facts the v4.0 oracle reads. The type system lacks the qāʿida type those texts inhabit. Outside itlāf, the true encoder ranks in the top 5 for 83 of 96 cases.
-    - **Next:** type causation from its qāʿida (al-mubāshir wa-l-mutasabbib) and re-measure. Then repeat T3 on classical units (mutūn bābs, Masāʾil entries), where the routing index's lexical profiles were strong.
+    - **Causation, decided from the sources and the method (2026-10-12).** None of the 27 itlāf cases is derivable: the tranche left them as gaps, 9 of them `rule:mubashara_tasabbub`. Ibn Rajab's qāʿida 127 states that rule over itlāf itself: «إذا استند إتلاف … إلى مباشرة وسبب تعلق الضمان بالمباشرة دون السبب إلا إذا كانت المباشرة مبنية على السبب وناشئة عنه». The v4.0 oracle's causation rules cite the Majalla and unattributed maxims, not the corpus. So:
+      - itlāf's type and reading are unchanged;
+      - Q127 gets its own reading (`Usul.Readings.Mubashara.damanOn`, three divisions instanced by its furūʿ f000, f003, f005, linked to Q13) and encoder (`mubashara_tasabbub`);
+      - its type extends itlāf's (`Usul.Typing.Qaida.Mubashara`);
+      - a dossier entry closes the named need;
+      - a cause with no direct act is outside its statement and stays a gap.
+    - **Re-measured.** All answers were re-typed blind for Q127's two fields; labels are not rewritten.
+      - Of the 9 cases that named the rule, 7 now rank it in the top 3 (6 were unrouted before); 348122's two cases settle none of its fields.
+      - With tranche-named rules counted, recall@5 is 0.74 (from 0.69).
+      - Modern texts rarely settle whether a direct act arose from another's cause: `arising_from_sabab` was stated twice in 53 answers.
+    - **Next:** repeat T3 on classical units (mutūn bābs, Masāʾil entries), where the routing index's lexical profiles were strong. Then repeat T3 on classical units (mutūn bābs, Masāʾil entries), where the routing index's lexical profiles were strong.
 - **P0.6 done, as a ranker:** `python -m usul_corpus routing` writes `corpus/routing/index.json`. Profiles are derived from the bank's evidence, never written: each of the 100 encoders gets the TF-IDF centroid of the records its annotated cases rest on plus its own qawāʿid, with words found in over 10 % of the evidence dropped. Per encoder the index gives its case support, its lexicon (the heaviest profile words) and its nearest matn units.
   - **Held-out cases** (5 folds by record-id hash, 461 cases): the true encoder is in the top 1 / 5 / 10 for 0.61 / 0.86 / 0.91 of cases, against 0.08 / 0.29 / 0.37 for ranking encoders by frequency.
   - **Out-of-domain** (`corpus/routing/ood.json`, the 123 IslamQA tranche cases, title and question): 0.09 / 0.29 / 0.37. The stopword share was chosen on the held-out folds, not on this set.

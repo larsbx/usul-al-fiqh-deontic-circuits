@@ -66,6 +66,7 @@ sit(s_islamqa_13717_1, transgressed, false).
 situation_of(s_islamqa_13717_2, 'islamqa.13717').
 sit(s_islamqa_13717_2, hand, trustee).
 sit(s_islamqa_13717_2, transgressed, true).
+sit(s_islamqa_13717_2, udwan_in_mubashara, true).
 situation_of(s_islamqa_13717_3, 'islamqa.13717').
 sit(s_islamqa_13717_3, hand, trustee).
 sit(s_islamqa_13717_3, negligent, true).
@@ -75,10 +76,12 @@ sit(s_islamqa_13717_4, negligent, false).
 sit(s_islamqa_13717_4, transgressed, false).
 situation_of(s_islamqa_140833_1, 'islamqa.140833').
 sit(s_islamqa_140833_1, purpose, repelHarm).
+sit(s_islamqa_140833_1, udwan_in_mubashara, false).
 situation_of(s_islamqa_140833_2, 'islamqa.140833').
 sit(s_islamqa_140833_2, hand, wrongdoer).
 sit(s_islamqa_140833_2, purpose, benefit).
 sit(s_islamqa_140833_2, transgressed, true).
+sit(s_islamqa_140833_2, udwan_in_mubashara, true).
 situation_of(s_islamqa_140833_3, 'islamqa.140833').
 sit(s_islamqa_140833_3, despair, true).
 sit(s_islamqa_140833_3, hand, wrongdoer).
@@ -173,8 +176,10 @@ situation_of(s_islamqa_223512_1, 'islamqa.223512').
 situation_of(s_islamqa_223512_2, 'islamqa.223512').
 situation_of(s_islamqa_223512_3, 'islamqa.223512').
 sit(s_islamqa_223512_3, transgressed, true).
+sit(s_islamqa_223512_3, udwan_in_mubashara, true).
 situation_of(s_islamqa_223512_4, 'islamqa.223512').
 sit(s_islamqa_223512_4, transgressed, false).
+sit(s_islamqa_223512_4, udwan_in_mubashara, false).
 situation_of(s_islamqa_22830_1, 'islamqa.22830').
 sit(s_islamqa_22830_1, hand, trustee).
 sit(s_islamqa_22830_1, negligent, false).
@@ -240,6 +245,7 @@ sit(s_islamqa_305083_1, transgressed, false).
 situation_of(s_islamqa_305083_2, 'islamqa.305083').
 situation_of(s_islamqa_305083_3, 'islamqa.305083').
 sit(s_islamqa_305083_3, transgressed, true).
+sit(s_islamqa_305083_3, udwan_in_mubashara, false).
 situation_of(s_islamqa_305083_4, 'islamqa.305083').
 sit(s_islamqa_305083_4, zahir, wahm).
 situation_of(s_islamqa_315435_1, 'islamqa.315435').
@@ -249,12 +255,14 @@ situation_of(s_islamqa_315435_4, 'islamqa.315435').
 sit(s_islamqa_315435_4, zahir, zann).
 situation_of(s_islamqa_317604_1, 'islamqa.317604').
 situation_of(s_islamqa_317604_2, 'islamqa.317604').
+sit(s_islamqa_317604_2, arising_from_sabab, true).
 sit(s_islamqa_317604_2, negligent, true).
 sit(s_islamqa_317604_2, transgressed, true).
 situation_of(s_islamqa_328808_1, 'islamqa.328808').
 sit(s_islamqa_328808_1, pure_trust, false).
 situation_of(s_islamqa_328808_2, 'islamqa.328808').
 situation_of(s_islamqa_344230_1, 'islamqa.344230').
+sit(s_islamqa_344230_1, arising_from_sabab, false).
 sit(s_islamqa_344230_1, benefits_other, true).
 sit(s_islamqa_344230_1, mental, ignorant).
 sit(s_islamqa_344230_1, negligent, false).
