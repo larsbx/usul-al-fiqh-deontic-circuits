@@ -1,0 +1,313 @@
+{
+ "suite": "m8_rajab_rajab_a6",
+ "status": "candidate",
+ "provenance": "M8 lane-A shard rajab-a6: every far record of Ibn Rajab's qawāʿid 96, 98 and 99, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA6). Typological records are annotated for their leading ruling, follow-on sub-questions in the note. Annotated by reading the full paragraph in the pinned witness; each madhhab side checked against al-Inṣāf and the muʿtamad (al-Furūʿ, the Muntahā and Iqnāʿ with al-Buhūtī); candidate, awaiting human review.",
+ "cases": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f000",
+   "encoder": "performed_without_leave_owned",
+   "class": "derivable",
+   "facts": {
+    "wilaya": true,
+    "distinct": false
+   },
+   "expected": true,
+   "note": "The debtor refuses to pay though he has property; the ḥākim sells it and pays: «صح وبرئ منه ولا ضمان». The property is the debtor's own and the ḥākim has wilāya over the one who refuses; what is owed is a debt, not a distinct thing («ولو كان الواجب دينا»), so wilāya alone makes it fall in place."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f001",
+   "encoder": "performed_without_leave_owned",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "wilaya": true,
+    "distinct": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "the aṣaḥḥ wajh (Ibn Rajab), ẓāhir of Aḥmad and al-Khiraqī: it suffices outwardly and inwardly",
+     "ruling": true
+    },
+    {
+     "who": "the other wajh (al-Inṣāf names Abū al-Khaṭṭāb and Ibn ʿAqīl): it suffices outwardly, not inwardly",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The one who refuses zakāt: the imām takes it by force. Zakāt is due from his own property and is not distinct from the rest of it; the imām has wilāya over the one who refuses («لأن للإمام ولاية على الممتنع وهذا حق تدخله النيابة»), so the reading makes it fall in place outwardly and inwardly, Ibn Rajab's «أصح الوجهين». The other wajh makes it suffice outwardly only. Al-Inṣāf holds the reading's side: «أجزأت عن ربها. على الصحيح من المذهب» (quoting this qāʿida's «هذا أصح الوجهين»), «فعلى [المذهب] الأول: تجزئ ظاهرا، وباطنا، وعلى الثاني تجزئ ظاهرا لا باطنا» (v03:p195–196)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f002",
+   "encoder": "performed_without_leave_owned",
+   "class": "derivable",
+   "facts": {
+    "wilaya": true,
+    "distinct": false
+   },
+   "expected": true,
+   "note": "The owner is absent or imprisoned so his leave cannot be sought; the sāʿī takes zakāt from his property and it lapses. The sāʿī has wilāya to take it; al-Inṣāf: «أجزأ ظاهرا وباطنا، وجها واحدا؛ لأن له ولاية أخذها إذن» (v03:p196)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f003",
+   "encoder": "performed_without_leave_owned",
+   "class": "derivable",
+   "facts": {
+    "wilaya": true,
+    "distinct": false
+   },
+   "expected": true,
+   "note": "The guardian of the child and the insane pays their zakāt and it suffices, as he pays their other financial dues (maintenance, indemnities). He has wilāya over their property; zakāt is not a distinct thing in it."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f004",
+   "encoder": "performed_without_leave_owned",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "wilaya": false,
+    "distinct": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "Aḥmad (naṣṣ) and most aṣḥāb («ولا فرق عند الأكثرين»): it suffices and he is not liable, whether designated from the outset or for a dhimma obligation",
+     "ruling": true
+    },
+    {
+     "who": "Ṣāḥib al-Talkhīṣ: the one designated for a dhimma obligation needs the owner's intention, so another's slaughter does not suffice and he is liable",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "A designated uḍḥiya slaughtered by another without the owner's leave suffices for the owner and the slaughterer owes nothing, «نص عليه»: it is the owner's, fixed for slaughter, so distinct («لأنها متعينة للذبح»), and the slaughterer has no wilāya. The leading ruling is undisputed for the animal designated from the outset; the khilāf the record reports arises for one designated in place of an obligation in the dhimma, which most do not distinguish and Ṣāḥib al-Talkhīṣ does (it needs the owner's intention at slaughter, so another's slaughter does not suffice and he is liable). That branch is annotated; the reading has no fact for it and gives the majority's side. Al-Inṣāf holds it without that distinction: «(وإن ذبحها ذابح في وقتها بغير إذن أجزأت ولا ضمان على ذابحها) … هذا المذهب وعليه الأصحاب» (v04:p093). Follow-ons: the slaughterer who intends it for himself knowing it is another's (no iǧzāʾ, liable; Ibn Rajab's reconciliation of al-Qāḍī's two riwāyāt as two states) and a stranger who distributes the meat (the aṣḥāb: it does not suffice; Ibn ʿAqīl's iḥtimāl)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f005",
+   "encoder": "performed_without_leave_owned",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "wilaya": false,
+    "distinct": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "al-Qāḍī and most aṣḥāb: the releaser is not liable, he did what was due from the owner",
+     "ruling": true
+    },
+    {
+     "who": "al-Mubhij (al-Shīrāzī): he is liable, the owner's ownership has not ceased and the release is a destruction, unless the releaser is a ḥākim or a child's guardian",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "He enters iḥrām with game in his visible hand, his own, and another releases it. The game is his and distinct, and releasing it is what is due from him («لأنه فعل الواجب عليه»), so the reading gives no liability, al-Qāḍī's and most aṣḥāb's side. Al-Mubhij makes the releaser liable (his ownership has not ceased, so the release is a destruction) unless he is a ḥākim or a child's guardian; the printed «أنه لا يضمن» there is contradicted by its own reason and by al-Inṣāf's report of al-Mubhij («لزمه ضمانه»). Al-Inṣāf holds the reading's side: «(وإن أرسله إنسان من يده قهرا، فلا ضمان على المرسل) هذا المذهب، وعليه الأصحاب» (v03:p483). Ibn Rajab notes all this assumes release is due (al-manṣūṣ); on al-Qāḍī's view in al-Mujarrad that he may pass it into another's hand, the releaser is liable."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f006",
+   "encoder": "performed_without_leave_owned",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "wilaya": false,
+    "distinct": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "Abū al-Khaṭṭāb (al-Intiṣār), preferred by Ibn Rajab: no liability, as with the uḍḥiya",
+     "ruling": true
+    },
+    {
+     "who": "al-Qāḍī and Ibn ʿAqīl: he is liable",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "He vowed to give a specified property in charity and another gave it for him. The property is his and fixed by the vow, so the reading gives no liability, Abū al-Khaṭṭāb's wajh (al-Intiṣār), which Ibn Rajab argues for («بل نقول في نذر الصدقة بالمعين ما نقول في الأضحية المعينة»). Al-Qāḍī and Ibn ʿAqīl make him liable; al-Qāḍī's farq is that the vow's discharge needs intention like zakāt. No later work in the cache treats this masʾala and Ibn Rajab marks no madhhab label, so the side is not verified and the case enters the ledger. Follow-on: another who pays one's zakāt, a vow in the dhimma or an expiation from the owner's property without wilāya is liable «في المشهور» (the owner's intention is missing), with the aṣḥāb's takhrīj of effect on ratification; there the thing is not distinct, which is the reading's own branch."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f007",
+   "encoder": "performed_without_leave_not_owned",
+   "class": "derivable",
+   "facts": {
+    "recipient_determined": true
+   },
+   "expected": true,
+   "note": "Usurped property and deposits that a stranger hands to their owner: «أجزأت ولا ضمان». What is to be rendered is not the holder's own (the second kind) and its recipient, the owner, is determined. (The record's paragraph runs on into f008 and f009, annotated there.)"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f008",
+   "encoder": "performed_without_leave_not_owned",
+   "class": "derivable",
+   "facts": {
+    "recipient_determined": true
+   },
+   "expected": true,
+   "note": "Game the muḥrim hunted in his iḥrām, released from his hand by another: no liability. It is not his own (the second kind), and what is due is its release to the wild, with nothing left to the holder's choice, so its destination is determined."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f009",
+   "encoder": "performed_without_leave_not_owned",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "recipient_determined": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "Ibn Rajab and the aṣḥāb («وصرح الأصحاب» on the bequeathed debt): no liability, it fell in its place",
+     "ruling": true
+    },
+    {
+     "who": "Aḥmad in Ḥanbal's riwāya («أخاف») and in Muhannā's riwāya: liable for handing it to the legatee alone",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "A stranger hands a bequeathed thing to its determined beneficiary: «لم يضمن ووقعت موقعها», and so for a bequest of a quantified amount; for an undetermined beneficiary there are two wujūh on liability (the reading's false branch, left to its khilāf). Against the leading ruling Ibn Rajab reports Aḥmad's «أخاف» in Ḥanbal's riwāya (the depositary who hands a bequeathed deposit to the legatee rather than to legatee and heirs) and Muhannā's riwāya of liability, which he takes as the case where the bequest is not outwardly established; the aṣḥāb state that a debtor may pay a debt bequeathed to a determined person to him or to the heirs. Al-Inṣāf and the Muntahā hold the reading's side: «وإن صرف أجنبي الموصى به لمعين … في جهته: لم يضمنه» (al-Inṣāf v07:p298; Muntahā v03:p499). Ibn Rajab extends it to handing waqf revenue to its determined beneficiary while a nāẓir exists."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q098.f001",
+   "encoder": "handover_by_description",
+   "class": "derivable",
+   "facts": {
+    "described": true,
+    "owner_unknown": true,
+    "owner_hand": false
+   },
+   "expected": true,
+   "note": "The luqaṭa must be handed to the one who describes it, «نص عليه»: its owner is unknown and no hand from the owner's side is on it. Follow-ons: two describers share it (or a lot is drawn, «وقيل»); where one gives every attribute and the other the minimum, two wujūh from the preference by nitāj, in Ibn ʿAqīl's Mufradāt."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q098.f002",
+   "encoder": "handover_by_description",
+   "class": "derivable",
+   "facts": {
+    "described": true,
+    "owner_unknown": true,
+    "owner_hand": false
+   },
+   "expected": true,
+   "note": "Usurped, plundered and stolen property, as found with thieves and highwaymen: description suffices. The owner is unknown and the hand over it is the thieves', not the owner's side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q098.f003",
+   "encoder": "handover_by_description",
+   "class": "derivable",
+   "facts": {
+    "described": true,
+    "owner_unknown": true,
+    "owner_hand": false
+   },
+   "expected": true,
+   "note": "Lessor and lessee dispute treasure buried in the house: it is for whichever of them describes it, Aḥmad's naṣṣ in al-Faḍl b. Ziyād's riwāya. Its owner is unknown and no hand from its owner's side is established over it."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q098.f004",
+   "encoder": "handover_by_description",
+   "class": "derivable",
+   "facts": {
+    "described": true,
+    "owner_unknown": true,
+    "owner_hand": false
+   },
+   "expected": true,
+   "note": "Two dispute which of them picked up a foundling that is in neither's hand: whichever describes it has the better right. No hand from either side is established over it."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q098.f005",
+   "encoder": "handover_by_description",
+   "class": "derivable",
+   "facts": {
+    "described": true,
+    "owner_unknown": true,
+    "owner_hand": false
+   },
+   "expected": true,
+   "note": "One finds his property in the spoils before division: he is entitled to it by description and like indications, ẓāhir of Aḥmad in Ḥanbal's riwāya («لا بد من بيان يدل على أنه له»), and Saʿd b. Abī Waqqāṣ judged by the sign alone. No hand from the owner's side is on it once taken as spoil."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f000",
+   "encoder": "free_bestowal_of_needed_ayn",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "needed": true,
+    "harmless": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "riwāya, «أصح الروايتين» for Ibn Rajab, with Muslim's ḥadīth: it may not be sold, it is to be given freely",
+     "ruling": true
+    },
+    {
+     "who": "the other riwāya: its sale is valid",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "The cat may not be sold «على أصح الروايتين», with Muslim's ḥadīth of the prohibition; Ibn Rajab gives the qāʿida as its maʾkhadh («ومأخذ المنع ما ذكرنا»): it is needed and abundant, so it is to be given without compensation. The reading gives that. The madhhab is the other riwāya: al-Inṣāf on «ويجوز بيع الهر … في إحدى الروايتين»: «هذا المذهب» (quoting this qāʿida's «لا يجوز بيع الهر. في أصح الروايتين» under the other), and Sharḥ al-Muntahā «(وكهر) فيصح بيعه». Off the madhhab; enters the ledger."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f001",
+   "encoder": "free_bestowal_of_needed_ayn",
+   "class": "derivable",
+   "facts": {
+    "needed": true,
+    "harmless": true
+   },
+   "expected": true,
+   "note": "Running water and pasture: the surplus must be given to one who needs it to drink and water his animals. It is surplus, so giving it does no harm. Al-Inṣāf: «(وما فضل من مائه: لزمه بذله لبهائم غيره) هذا الصحيح». Follow-ons: for his crops too «على الصحيح» (al-Inṣāf: «إحداهما: يلزمه. وهو المذهب»), with a second riwāya against; and Ibn Rajab's point that the maʾkhadh is this qāʿida, not the water's being unowned."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f002",
+   "encoder": "free_bestowal_of_needed_benefit",
+   "class": "derivable",
+   "facts": {
+    "needed": true
+   },
+   "expected": true,
+   "note": "Placing beams on a neighbour's wall where it does no harm: the benefit is to be given without compensation; the record lists it as an instance of the qāʿida's needed benefits. Follow-on: running water over his land likewise, «في إحدى الروايتين»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f003",
+   "encoder": "free_bestowal_of_needed_benefit",
+   "class": "derivable",
+   "facts": {
+    "needed": true
+   },
+   "expected": true,
+   "note": "Lending jewellery: ẓāhir of Aḥmad and a group of aṣḥāb make it obligatory, and some later authors state it; no contrary position is reported for it. A needed benefit, given without compensation. Follow-on: some chose the obligation to lend the māʿūn (bucket, axe, pot, sieve) and the stud for covering, al-Ḥārithī's choice, inclined to by Taqī al-Dīn."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f004",
+   "encoder": "free_bestowal_of_needed_benefit",
+   "class": "derivable",
+   "facts": {
+    "needed": true
+   },
+   "expected": true,
+   "note": "A muṣḥaf must be lent to one who needs to read in it and finds no other, transmitted by al-Qāḍī in al-Jāmiʿ al-Kabīr; Ibn ʿAqīl reports the aṣḥāb's reason for not cutting its thief (his right to look in it), extending to books of sunan that judges and muftīs need."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f005",
+   "encoder": "free_bestowal_of_needed_ayn",
+   "class": "derivable",
+   "facts": {
+    "needed": true,
+    "harmless": true
+   },
+   "expected": true,
+   "note": "Hospitality to travellers passing by: «المذهب وجوبها», given without compensation; the record lists it under the qāʿida, whose condition it meets as the customary measure. Follow-ons, each a further branch: feeding one in dire need is obligatory but for compensation, not free (a thing whose free giving the qāʿida does not make due); benefits one is in dire need of (riding for the stranded, lending what he needs) have two wujūh on free giving; Taqī al-Dīn's distinction of the poor in dire need (free) from the rich (for compensation); al-Āmidī's riwāya that the one in dire need does not owe for food taken by force."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f006",
+   "encoder": "free_bestowal_of_needed_benefit",
+   "class": "derivable",
+   "facts": {
+    "needed": true
+   },
+   "expected": true,
+   "note": "The dwellings of Mecca may be neither sold nor rented «على المذهب المنصوص» (al-Inṣāf: «هذا هو المذهب المنصوص»). On the maʾkhadh this record gives with Ibn ʿAqīl, al-Qāḍī and Taqī al-Dīn, the ḥaram is the people's in common for the general need of it, so whoever does not need what is in his hand must give its surplus to one who needs it: a needed benefit, given without compensation; and «فلا يجب الإسكان في دور مكة إلا في الفاضل عن حاجة الساكن نص عليه». The other maʾkhadh (conquest by force, so waqf or fayʾ) reaches the same ruling on rent. Follow-on: the sale, where Ibn Manṣūr's report permits sale without rent and Taqī al-Dīn's word wavers; no reported position permits the rent."
+  }
+ ]
+}
