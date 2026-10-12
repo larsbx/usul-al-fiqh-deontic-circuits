@@ -120,7 +120,7 @@
   {
    "id": "F103",
    "cases_en": [
-    "the qāḍī (binds, only to settle a dispute, ends the disagreement)",
+    "the qāḍī (binds: «ويلزم بها»; only to settle a dispute, ends the disagreement)",
     "the muftī (explains only, on any question, ends nothing)"
    ],
    "madhhab": "apart",
@@ -259,7 +259,7 @@
    "grounds": [
     "Usul.Sadi.q02_means_of_wajib"
    ],
-   "note": "Q2: means of a settled duty are due; means of becoming obliged are not"
+   "note": "Q2: means of a settled wājib are due («مما لا يتم الواجب إلا به»); means of becoming obliged are not"
   },
   {
    "id": "F111",
@@ -300,7 +300,7 @@
   {
    "id": "F113",
    "cases_en": [
-    "doubt about how much of a settled duty remains (precaution: certainty of discharge)",
+    "doubt about how much of a settled wājib remains (precaution: certainty of discharge)",
     "doubt whether a duty arose at all (the presumption of none)"
    ],
    "madhhab": "apart",

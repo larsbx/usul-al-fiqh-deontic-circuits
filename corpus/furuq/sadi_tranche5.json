@@ -36,7 +36,7 @@
    "id": "F77",
    "cases_en": [
     "the opening takbīr and the funeral takbīrs (pillars)",
-    "the latecomer's takbīr for rukūʿ (recommended); the rest (obligations mended by prostration of forgetfulness)"
+    "the latecomer's takbīr for rukūʿ (mustaḥabb); the rest (wājibāt mended by prostration of forgetfulness)"
    ],
    "madhhab": "apart",
    "grade": "sahih",
@@ -69,7 +69,7 @@
   {
    "id": "F79",
    "cases_en": [
-    "where a follower stands: obligatory and recommended places",
+    "where a follower stands: wājib and mustaḥabb places",
     "permitted and barred places"
    ],
    "madhhab": "apart",
@@ -172,7 +172,7 @@
    "id": "F85",
    "cases_en": [
     "dispositions of one coerced without right (not ṣaḥīḥ)",
-    "of one coerced with right, to a duty he owes (valid)"
+    "of one coerced with right, to a wājib he owes (valid: «كالذي يكره على الواجب عليه»)"
    ],
    "madhhab": "apart",
    "grade": "sahih",
@@ -281,8 +281,8 @@
   {
    "id": "F91",
    "cases_en": [
-    "hire (binding, a known task, a determinate party)",
-    "a reward contract, juʿāla (revocable, known or unknown task, any party)"
+    "hire (lāzim, binding, a known task, a determinate party)",
+    "a reward contract, juʿāla (jāʾiz: «لأن الجعالة عقد جائز»; revocable, known or unknown task, any party)"
    ],
    "madhhab": "apart",
    "grade": "sahih",

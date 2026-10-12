@@ -80,7 +80,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 **Conditions**
 
 1. not given as a gift (al-Qāḍī: the payer intends recourse)
-2. either the payment discharged an obligation owed by the other party, or the spending was by the owner's or the judge's permission
+2. either the payment discharged a wājib owed by the other party, or the spending was by the owner's or the judge's permission
 
 **Texts**
 
@@ -265,7 +265,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f027`: «You are divorced on Laylat al-Qadr»: abstain from the last ten «لإمكان أن يكون أول ليلة».
   > إذا قال أنت طالق ليلة القدر يعتزلها إذا دخل العشر الأواخر ms469 لإمكان أن يكون أول ليلة.
 
-**Rationale.** Abstention is a rule of conduct, not of status. The doubtful event does not displace the certain marriage (Q11), so the theorem abstention_keeps_status proves both at once: the held judgement is unchanged, and abstention is due. Whether abstention is obligatory (al-Qāḍī) or scrupulous (Ibn ʿAqīl) is a further question the reading does not decide.
+**Rationale.** Abstention is a rule of conduct, not of status. The doubtful event does not displace the certain marriage (Q11), so the theorem abstention_keeps_status proves both at once: the held judgement is unchanged, and abstention is due. Whether abstention is wājib (al-Qāḍī) or scrupulous, waraʿ (Ibn ʿAqīl) is a further question the reading does not decide.
 
 **Lean:** `Usul.Refinements.abstains`, `Usul.Refinements.abstention_keeps_status`, `Usul.Refinements.known_absence_ends_abstention`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
@@ -500,14 +500,14 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f006`: «وافعلوا الخير», «دع ما يريبك»: the dilemma that either reading drops some items.
   > إذا كان المأمور به بعضه واجبا وبعضه مستحبا كقوله تعالى: {وافعلوا الخير} [الحج: 77] وقوله صلى الله عليه وسلم: "دع ما يريبك إلى ما لا يريبك" 1 ونحو ذلك وهو كثير في الكتابة والسنة. قال بعض الأصوليين إن حمل الأمر على الوجوب خرجت منه المستحبات وإن حمل على الندب خرجت منه الواجبات مع أنه يحكم وإن حمل عليهما لزم حمل اللفظ على حقيقته ومجازه أو على حقيقته. قال ms128 ابن عبد السلام في قواعده والحمل على الوجو
 
-**Rationale.** The dilemma assumes one status for the whole command. Both answers give each item its own status, one by takhṣīṣ of a general obligation, the other by the meaning of the command; mixed_readings_agree proves they rule alike on every item, so the case is derivable whichever is taken. They remain different claims about the word's meaning (ḥaqīqa and majāz), which the kernel does not model.
+**Rationale.** The dilemma assumes one status for the whole command. Both answers give each item its own status, one by takhṣīṣ of a general wujūb, the other by the meaning of the command; mixed_readings_agree proves they rule alike on every item, so the case is derivable whichever is taken. They remain different claims about the word's meaning (ḥaqīqa and majāz), which the kernel does not model.
 
 **Lean:** `Usul.Refinements.amrPerItem`, `Usul.Refinements.amrByTakhsis`, `Usul.Refinements.mixed_readings_agree`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
 
 <a id="makeup_after_failure"></a>
 
-## Make-up description after a binding undertaking
+## Make-up description after an undertaking made wājib
 
 **Terms:** [al-wājib](../glossary.md#wajib), [al-fāsid](../glossary.md#fasid), [al-rukhṣa](../glossary.md#rukhsa)  
 **Closes:** `rule:makeup_after_failure`  
@@ -679,7 +679,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022`: Qāʿida 22: is what is lost in another as non-existent? The mixed dirhams are among its furūʿ.
   > العين المنغمرة في غيرها إذا لم يظهر أثرها فهل هي كالمعدومة حكما أو لا؟ . فيه خلاف وينبني عليه مسائل: (ومنها) الماء الذي استهلكت فيه النجاسة فإن كان كثيرا سقط حكمها بغير خلاف، وإن كان يسيرا فروايتان ثم من الأصحاب من يقول إنما سقط حكمها وإلا فهي موجودة ومنهم من يقول بل الماء أحالها لأن له قوة الإحالة فلم يبق لها وجود بل الموجود غيرها فهو عين طاهرة وهي طريقة أبي الخطاب. (ومنها) اللبن المشوب بالماء ال
 
-**Rationale.** Aḥmad's ground is that taking out the share from much «يجحف بماله», while the little can be left without loss. Al-Qāḍī reads the suspension as recommendation and requires taking out the share in all; Ibn ʿAqīl in al-Funūn forbids the whole. Both are kept as positions.
+**Rationale.** Aḥmad's ground is that taking out the share from much «يجحف بماله», while the little can be left without loss. Al-Qāḍī reads the suspension as istiḥbāb (recommendation) and requires taking out the share in all; Ibn ʿAqīl in al-Funūn forbids the whole. Both are kept as positions.
 
 **Lean:** `Usul.Refinements.mixedHaram`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)

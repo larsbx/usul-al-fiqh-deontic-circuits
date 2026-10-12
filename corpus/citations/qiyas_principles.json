@@ -790,7 +790,7 @@
   },
   {
    "topic": "qadih:kasr",
-   "claim_en": "Kasr—showing the ḥikma without the ruling—is not binding, since the ḥikma cannot be measured by opinion.",
+   "claim_en": "Kasr—showing the ḥikma without the ruling—is not binding («فغير لازم»), since the ḥikma cannot be measured by opinion.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p312",
    "excerpt_ar": "وهو إبداء الحكمة بدون الحكم: فغير لازم",
@@ -950,7 +950,7 @@
   },
   {
    "topic": "hujjiyya",
-   "claim_en": "Al-Ṭūfī maps eight positions (rational/legal × permissible/obligatory/impossible/occurring); among those denying its actual occurrence: Dāwūd b. ʿAlī al-Iṣbahānī, al-Qāshānī and al-Nahrawānī.",
+   "claim_en": "Al-Ṭūfī maps eight positions (rational/legal × permissible/wājib/impossible/occurring); among those denying its actual occurrence: Dāwūd b. ʿAlī al-Iṣbahānī, al-Qāshānī and al-Nahrawānī.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p246",
    "excerpt_ar": "ومنعه داود بن علي الأصبهاني والقاشاني والنهرواني",
@@ -958,7 +958,7 @@
   },
   {
    "topic": "hujjiyya",
-   "claim_en": "Matn argument: qiyās involves warding off a presumed harm, which is rationally obligatory, so qiyās is rationally obligatory, and obligation entails permissibility.",
+   "claim_en": "Matn argument: qiyās involves warding off a presumed harm, which is rationally wājib («وهو واجب عقلا»), so qiyās is rationally obligatory, and obligation entails permissibility.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p247",
    "excerpt_ar": "القياس يتضمن دفع ضرر مظنون، وهو واجب عقلا، فالقياس واجب عقلا",
@@ -1214,7 +1214,7 @@
   },
   {
    "topic": "qadih:kasr",
-   "claim_en": "Matn: kasr (the ḥikma without the ruling) is not binding since ḥikmas are not measurable by opinion; adding a non-effective description to avoid naqḍ fails; adding a sharṭ in the ruling works per Abū al-Khaṭṭāb.",
+   "claim_en": "Matn: kasr (the ḥikma without the ruling) is not binding («غير لازم») since ḥikmas are not measurable by opinion; adding a non-effective description to avoid naqḍ fails; adding a sharṭ in the ruling works per Abū al-Khaṭṭāb.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p510",
    "excerpt_ar": "والكسر: وهو إبداء الحكمة بدون الحكم، غير لازم",
@@ -1262,7 +1262,7 @@
   },
   {
    "topic": "qadih:order",
-   "claim_en": "Matn: all objections reduce to manʿ or muʿāraḍa; some count 25; ordering them is agreed to be better, its obligatoriness is disputed.",
+   "claim_en": "Matn: all objections reduce to manʿ or muʿāraḍa; some count 25; ordering them is agreed to be better, its wujūb is disputed.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p565",
    "excerpt_ar": "والأسئلة راجعة إلى منع، أو معارضة، وإلا لم يسمع",
@@ -1366,7 +1366,7 @@
   },
   {
    "topic": "takhsis_illa",
-   "claim_en": "Matn: naqḍ, called takhṣīṣ al-ʿilla, is non-constancy—the ʿilla found without the ruling (fast without pre-dawn intention, contradicted by voluntary fasting).",
+   "claim_en": "Matn: naqḍ, called takhṣīṣ al-ʿilla, is non-constancy—the ʿilla found without the ruling (fast without pre-dawn intention, contradicted by voluntary (nafl) fasting).",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p056",
    "excerpt_ar": "والنقض، ويسمى تخصيص العلة\" هو \"عدم اطرادها",
@@ -1486,7 +1486,7 @@
   },
   {
    "topic": "masalik:sabr_taqsim",
-   "claim_en": "Al-Qāḍī: causation is the norm (taʿlīl al-aṣl) and acting on ẓann in ʿilal is obligatory by consensus.",
+   "claim_en": "Al-Qāḍī: causation is the norm (taʿlīl al-aṣl) and acting on ẓann in ʿilal is wājib by consensus («ويجب العمل بالظن فيها»).",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p152",
    "excerpt_ar": "ويجب العمل بالظن فيها\" أي في علل الأحكام \"إجماعا",
@@ -1558,7 +1558,7 @@
   },
   {
    "topic": "hujjiyya",
-   "claim_en": "Matn: worship by qiyās is rationally permissible per the four imams (al-Qāḍī, Abū al-Khaṭṭāb, al-Qaffāl and Abū al-Ḥusayn even held it rationally obligatory); it occurred legally per most aṣḥāb; denied by Dāwūd, his son, al-Qāshānī, al-Nahrawānī and some aṣḥāb—a riwāya from Aḥmad, interpreted by al-Qāḍī and Ibn ʿAqīl as qiyās against a text, and by Ibn Rajab as for one who did not search the proof.",
+   "claim_en": "Matn: worship by qiyās is rationally permissible per the four imams (al-Qāḍī, Abū al-Khaṭṭāb, al-Qaffāl and Abū al-Ḥusayn even held it rationally wājib); it occurred legally per most aṣḥāb; denied by Dāwūd, his son, al-Qāshānī, al-Nahrawānī and some aṣḥāb—a riwāya from Aḥmad, interpreted by al-Qāḍī and Ibn ʿAqīl as qiyās against a text, and by Ibn Rajab as for one who did not search the proof.",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p213",
    "excerpt_ar": "ومنعه داود وابنه والقاشاني والنهرواني وبعض أصحابنا وجمع، وهو رواية عن أحمد",
@@ -1958,7 +1958,7 @@
   },
   {
    "topic": "qadih:kasr",
-   "claim_en": "Al-Shinqīṭī disputes Ibn Qudāma's claim that kasr is not binding: it is like naqḍ, so it impairs where naqḍ does.",
+   "claim_en": "Al-Shinqīṭī disputes Ibn Qudāma's claim that kasr is not binding (lāzim): it is like naqḍ, so it impairs where naqḍ does.",
    "witness": "shamela-282",
    "locator": "src:shamela-282/v01:p459",
    "excerpt_ar": "فالظاهرُ أنَّ الكسر كالنقض، فعلى أنَّ النقضَ قادحٌ فالكسرُ كذلك",

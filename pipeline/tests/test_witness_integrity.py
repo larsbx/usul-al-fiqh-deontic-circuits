@@ -90,3 +90,13 @@ def test_a_note_claims_no_tarjih_its_source_lacks():
             if not re.search(TARJIH_AR, para):
                 bad.append(c["far"])
     assert not bad, bad
+
+
+def test_no_annotation_is_doubled():
+    """A quote or parenthetical repeated back to back is an edit applied twice, not the source
+    (PR-25: a re-run substitution whose new text contained its old one)."""
+    import re
+    twice = re.compile(r"(«[^»]{4,}»|\([^()]{6,}\))[ ,;:]*\1")
+    bad = [(p.name, m.group(0)) for p in sorted((ROOT / "corpus").rglob("*.json")) if p.name != "lock.json"
+           for m in twice.finditer(p.read_text(encoding="utf-8"))]
+    assert not bad, bad

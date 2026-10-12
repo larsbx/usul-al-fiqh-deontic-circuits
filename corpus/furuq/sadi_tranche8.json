@@ -143,7 +143,7 @@
   {
    "id": "F144",
    "cases_en": [
-    "a pledge before it is taken into possession (not binding, the aṣḥāb)",
+    "a pledge before it is taken into possession (not lāzim, the aṣḥāb: «لا يلزم عند الأصحاب إلا بالقبض»)",
     "a pledge after possession (binding)"
    ],
    "madhhab": "apart",
@@ -371,7 +371,7 @@
    "id": "F157",
    "cases_en": [
     "the named dower (slight ignorance pardoned), the dower of the like",
-    "the obligatory and the recommended mutʿa"
+    "the obligatory mutʿa («المتعة الواجبة») and the recommended"
    ],
    "madhhab": "apart",
    "grade": "sahih",
@@ -404,8 +404,8 @@
   {
    "id": "F159",
    "cases_en": [
-    "the wedding feast (answering obligatory), the funeral feast (disliked)",
-    "other invitations (recommended)"
+    "the wedding feast (answering wājib: «تجب الإجابة إليها»), the funeral feast (disliked)",
+    "other invitations (mustaḥabb)"
    ],
    "madhhab": "apart",
    "grade": "sahih",
@@ -422,7 +422,7 @@
    "id": "F160",
    "cases_en": [
     "ṭalāq without need (disliked, the aṣl: «أن الطلاق يكره من غير حاجة»), in menses, in a touched ṭuhr, or triple (forbidden)",
-    "obligatory, recommended, permitted (by need)"
+    "obligatory, recommended, permitted (by need): «ويجب … ويسن … ويباح»"
    ],
    "madhhab": "apart",
    "grade": "sahih",
@@ -472,7 +472,7 @@
   {
    "id": "F163",
    "cases_en": [
-    "mourning the husband (obligatory for the ʿidda), any dead three days or less (permitted)",
+    "mourning the husband (wājib for the ʿidda), any dead three days or less (permitted)",
     "beyond that (forbidden)"
    ],
    "madhhab": "apart",

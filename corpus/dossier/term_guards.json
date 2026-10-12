@@ -179,6 +179,33 @@
     "registers",
     "glossary"
    ]
+  },
+  {
+   "gloss_en": "\\b(obligat\\w*|recommend\\w*|commendable|duty|duties|mandatory|supererogatory|voluntary)\\b",
+   "terms": [
+    "wajib",
+    "fard",
+    "mandub"
+   ],
+   "why": "English «obligatory» and «recommended» say which of the five: al-wājib (one with al-farḍ in the sounder riwāya; farḍ «آكد» in the other) or al-mandūb (mustaḥabb, sunna; nafl against the farḍ). A «duty» or «obligation» that is a contractual debt or a right of another is named as such.",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
+  },
+  {
+   "gloss_en": "\\b(binding|non-binding|binds?)\\b",
+   "terms": [
+    "wajib",
+    "luzum",
+    "yamin",
+    "nadhr"
+   ],
+   "why": "English «binding» covers ilzām (the wājib and the ḥarām bind the mukallaf), the luzūm of a contract (lāzim against jāʾiz: hire against juʿāla, F91; a pledge after possession, F144), the inʿiqād of an oath, and the «not binding» (غير لازم) of an objection such as kasr.",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
   }
  ],
  "note": "Every English text field of the corpus registers, and every Lean doc comment, that uses one of these glosses must also name the term it means, by its transliteration or its Arabic (tests/test_nusus.py). The English never feeds a derivation; this keeps it from hiding which term a case is about."

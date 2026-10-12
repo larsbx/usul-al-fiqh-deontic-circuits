@@ -995,7 +995,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "'Al-talaq is binding on me' without intention: two riwayat, three (generality of al-) or one (customary/sunni 'ahd); none marked, and the deciding question is the presence of 'ahd, which the encoder lacks."
+   "note": "'Al-talaq is binding on me' («الطلاق يلزمنى») without intention: two riwayat, three (generality of al-) or one (customary/sunni 'ahd); none marked, and the deciding question is the presence of 'ahd, which the encoder lacks."
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f003",
@@ -1111,7 +1111,7 @@
     "ranked": true
    },
    "expected": true,
-   "note": "Tayammum intended for «al-ṣalāt» without specifying obligatory or supererogatory: by the rule of generality it covers both, or «تنزيلا له على الأدنى» only the supererogatory; the latter is «أشهرهما عند الأصحاب», which the lowest-reading derives (the lowest is the certain).",
+   "note": "Tayammum intended for «al-ṣalāt» without specifying obligatory or supererogatory («ولم ينو فرضا ولا نافلة»): by the rule of generality it covers both, or «تنزيلا له على الأدنى» only the supererogatory; the latter is «أشهرهما عند الأصحاب», which the lowest-reading derives (the lowest is the certain).",
    "revisit": {
     "from_class": "genuine_ikhtilaf",
     "closed_by": [
@@ -1346,7 +1346,7 @@
     "consent_required": false
    },
    "expected": false,
-   "note": "Manumission (even for payment), the freed wife's faskh under a slave husband («فسخ المعتقة تحت عبد»), faskh for defect or deception, of ijara and of non-binding contracts all proceed without the other party's knowledge because his consent is not required."
+   "note": "Manumission (even for payment), the freed wife's faskh under a slave husband («فسخ المعتقة تحت عبد»), faskh for defect or deception, of ijara and of non-binding (jāʾiz) contracts («العقود الجائزة») all proceed without the other party's knowledge because his consent is not required."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f001",
@@ -1645,7 +1645,7 @@
     "confusion_category": true
    },
    "expected": "lot",
-   "note": "A deceased's wife irrevocably divorced («طلاقا يقطع الإرث») («طلاقا يقطع الإرث») (or married by a fāsid nikāḥ) and unknown among his wives is identified by lot and the inheritance goes to the rest (naṣṣ of Aḥmad): a confused specific entitlement, lots though the share is divisible.",
+   "note": "A deceased's wife irrevocably divorced («طلاقا يقطع الإرث») (or married by a fāsid nikāḥ) and unknown among his wives is identified by lot and the inheritance goes to the rest (naṣṣ of Aḥmad): a confused specific entitlement, lots though the share is divisible.",
    "revisit": {
     "from_class": "encoding_error",
     "closed_by": [
@@ -1816,7 +1816,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Record excerpt is cut at the page break; the full case (p355) is an unspecified divorce 'one of you is divorced' («إحداكما طالق») («إحداكما طالق»): lot in ẓāhir al-madhhab, a riwāya lets him designate; kernel lot matches the madhhab."
+   "note": "Record excerpt is cut at the page break; the full case (p355) is an unspecified divorce 'one of you is divorced' («إحداكما طالق»): lot in ẓāhir al-madhhab, a riwāya lets him designate; kernel lot matches the madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f024",
@@ -2108,7 +2108,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Oath sworn but its kind forgotten («لو حلف بيمين ولم يدر أي الأيمان هي»): manṣūṣ nothing is due; al-Qāḍī's qiyās lots among oath-types; kernel lot matches only that (Ibn Rajab's introduction excludes lots for unspecified obligations, which the reading lacks)."
+   "note": "Oath sworn but its kind forgotten («لو حلف بيمين ولم يدر أي الأيمان هي»): manṣūṣ nothing is due; al-Qāḍī's qiyās lots among oath-types; kernel lot matches only that (Ibn Rajab's introduction excludes lots for unspecified wājibāt, which the reading lacks)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f037",
@@ -2496,7 +2496,7 @@
    "expected": false,
    "positions": [
     {
-     "who": "al-mashhur (no obligation)",
+     "who": "al-mashhur (no wujūb)",
      "ruling": false
     },
     {
@@ -2833,7 +2833,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Kaffarat of zihar and oaths («كفارة الظهار واليمين») follow the hady al-mut'a case: if the original becomes available before the fast, one riwaya (state at performance) requires moving to it, the other (state at obligation) fixes the substitute; the text marks neither here."
+   "note": "Kaffarat of zihar and oaths («كفارة الظهار واليمين») follow the hady al-mut'a case: if the original becomes available before the fast, one riwaya (state at performance) requires moving to it, the other (state at wujūb) fixes the substitute; the text marks neither here."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f002",
@@ -3316,7 +3316,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "One who vowed (nadhr) ḥajj while still owing the obligatory ḥajj then performs ḥajjat al-islām: it suffices for both per Abū Ṭālib's riwāya, but al-mashhūra says it does not, and the text gives no sharṭ-based reason, so the kernel matches only the non-madhhab riwāya."
+   "note": "One who vowed (nadhr) ḥajj while still owing the farḍ ḥajj («حج الفرض») then performs ḥajjat al-islām: it suffices for both per Abū Ṭālib's riwāya, but al-mashhūra says it does not, and the text gives no sharṭ-based reason, so the kernel matches only the non-madhhab riwāya."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f003",
@@ -3470,7 +3470,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "An obligatory prayer straight after ṭawāf: does it replace the two ṭawāf rakʿas? Abū Bakr says no (al-aqyas), Abū Ṭālib and al-Athram report yes; no madhhab marker."
+   "note": "An obligatory prayer (maktūba, a farḍ) straight after ṭawāf: does it replace the two ṭawāf rakʿas? Abū Bakr says no (al-aqyas), Abū Ṭālib and al-Athram report yes; no madhhab marker."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f011",
@@ -3810,7 +3810,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Hady al-mutʿa lacking, fasting became due, then the hady is found before fasting began: whether he must move to it rests on two riwāyas, the state at obligation or at performance. The reading (the original is possible again, so the substitute is not used) takes the state at performance; no madhhab is marked between them. (Opening example, segmented as f000.)"
+   "note": "Hady al-mutʿa lacking, fasting became due, then the hady is found before fasting began: whether he must move to it rests on two riwāyas, the state at wujūb or at performance. The reading (the original is possible again, so the substitute is not used) takes the state at performance; no madhhab is marked between them. (Opening example, segmented as f000.)"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000",
@@ -3843,7 +3843,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Transgression in a deposit makes the trust bāṭil («بطلت»), the duty is to return it at once, «لأنها أمانة محضة… هذا هو المشهور»; Ibn al-Zāghūnī: once the transgression ends and he resumes keeping it, it is not bāṭil. (Opening example, segmented as f000.)"
+   "note": "Transgression in a deposit makes the trust bāṭil («بطلت»), return is wājib at once («ووجب الرد على الفور»), «لأنها أمانة محضة… هذا هو المشهور»; Ibn al-Zāghūnī: once the transgression ends and he resumes keeping it, it is not bāṭil. (Opening example, segmented as f000.)"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063.f000",

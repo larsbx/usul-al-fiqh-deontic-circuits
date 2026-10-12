@@ -18,7 +18,7 @@
   {
    "id": "F42",
    "cases_en": [
-    "a slave's bodily duties (Friday, congregation, the ḥajj of Islam)",
+    "a slave's bodily duties (wājibāt, «الأحكام البدنية»: Friday, congregation, the ḥajj of Islam)",
     "a free man's"
    ],
    "madhhab": "apart",
@@ -37,7 +37,7 @@
   {
    "id": "F43",
    "cases_en": [
-    "a slave's financial duties (zakāt, kaffāra, the value of what he destroys: ḍamān)",
+    "a slave's financial duties (wājibāt, «الأحكام المالية»: zakāt, kaffāra, the value of what he destroys: ḍamān)",
     "a free man's"
    ],
    "madhhab": "apart",
@@ -117,7 +117,7 @@
     "excerpt_ar": "فهذه ثابتة مبنية على الأصول الشرعية كما هو معروف مفصل"
    },
    "grounds": [],
-   "note": "the third, the time of binding, revocation and priority"
+   "note": "the third, the time it becomes lāzim, revocation and priority"
   },
   {
    "id": "F48",
@@ -181,7 +181,7 @@
   {
    "id": "F51",
    "cases_en": [
-    "ṭahāra by tayammum (tied to the time, one obligatory prayer per tayammum)",
+    "ṭahāra by tayammum (tied to the time, one farḍ prayer per tayammum)",
     "ṭahāra by water"
    ],
    "madhhab": "apart",
@@ -252,7 +252,7 @@
    "id": "F55",
    "cases_en": [
     "sacrificial and ritual blood offerings (eaten from, gifted, given)",
-    "those incurred by a prohibited act or an omitted duty (given wholly)"
+    "those incurred by a prohibited act or an omitted wājib (given wholly)"
    ],
    "madhhab": "apart",
    "grade": "sahih",

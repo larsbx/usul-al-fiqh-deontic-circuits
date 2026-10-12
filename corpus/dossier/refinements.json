@@ -104,7 +104,7 @@
    ],
    "conditions": [
     "not given as a gift (al-Qāḍī: the payer intends recourse)",
-    "either the payment discharged an obligation owed by the other party, or the spending was by the owner's or the judge's permission"
+    "either the payment discharged a wājib owed by the other party, or the spending was by the owner's or the judge's permission"
    ],
    "rationale": "Al-Saʿdī's Q32 covers the first type only. The furūʿ under qāʿida 75 turn on whether the expense was owed by the other party and on permission, so both become inputs. With owed-by-other true the reading is Q32's.",
    "lean": [
@@ -333,7 +333,7 @@
     "its occurrence is possible",
     "its absence is not known"
    ],
-   "rationale": "Abstention is a rule of conduct, not of status. The doubtful event does not displace the certain marriage (Q11), so the theorem abstention_keeps_status proves both at once: the held judgement is unchanged, and abstention is due. Whether abstention is obligatory (al-Qāḍī) or scrupulous (Ibn ʿAqīl) is a further question the reading does not decide.",
+   "rationale": "Abstention is a rule of conduct, not of status. The doubtful event does not displace the certain marriage (Q11), so the theorem abstention_keeps_status proves both at once: the held judgement is unchanged, and abstention is due. Whether abstention is wājib (al-Qāḍī) or scrupulous, waraʿ (Ibn ʿAqīl) is a further question the reading does not decide.",
    "lean": [
     "Usul.Refinements.abstains",
     "Usul.Refinements.abstention_keeps_status",
@@ -624,7 +624,7 @@
     "one command covers items of different status",
     "each item's status is fixed by its own proof"
    ],
-   "rationale": "The dilemma assumes one status for the whole command. Both answers give each item its own status, one by takhṣīṣ of a general obligation, the other by the meaning of the command; mixed_readings_agree proves they rule alike on every item, so the case is derivable whichever is taken. They remain different claims about the word's meaning (ḥaqīqa and majāz), which the kernel does not model.",
+   "rationale": "The dilemma assumes one status for the whole command. Both answers give each item its own status, one by takhṣīṣ of a general wujūb, the other by the meaning of the command; mixed_readings_agree proves they rule alike on every item, so the case is derivable whichever is taken. They remain different claims about the word's meaning (ḥaqīqa and majāz), which the kernel does not model.",
    "lean": [
     "Usul.Refinements.amrPerItem",
     "Usul.Refinements.amrByTakhsis",
@@ -638,7 +638,7 @@
   },
   {
    "id": "makeup_after_failure",
-   "title": "Make-up description after a binding undertaking",
+   "title": "Make-up description after an undertaking made wājib",
    "terms": [
     "wajib",
     "fasid",
@@ -856,7 +856,7 @@
     "one's own money mixed with usurped money",
     "the proportion is known"
    ],
-   "rationale": "Aḥmad's ground is that taking out the share from much «يجحف بماله», while the little can be left without loss. Al-Qāḍī reads the suspension as recommendation and requires taking out the share in all; Ibn ʿAqīl in al-Funūn forbids the whole. Both are kept as positions.",
+   "rationale": "Aḥmad's ground is that taking out the share from much «يجحف بماله», while the little can be left without loss. Al-Qāḍī reads the suspension as istiḥbāb (recommendation) and requires taking out the share in all; Ibn ʿAqīl in al-Funūn forbids the whole. Both are kept as positions.",
    "lean": [
     "Usul.Refinements.mixedHaram"
    ],

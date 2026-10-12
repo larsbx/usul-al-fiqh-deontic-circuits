@@ -37,7 +37,7 @@
   {
    "id": "F02",
    "cases_en": [
-    "supererogatory prayer on a mount when travelling",
+    "supererogatory (nafl) prayer on a mount when travelling",
     "obligatory prayer"
    ],
    "madhhab": "apart",
@@ -54,7 +54,7 @@
   {
    "id": "F03",
    "cases_en": [
-    "a little drinking in supererogatory prayer",
+    "a little drinking in supererogatory (nafl) prayer",
     "in obligatory prayer"
    ],
    "madhhab": "apart",
@@ -124,7 +124,7 @@
   {
    "id": "F07",
    "cases_en": [
-    "breaking off, starting or making up supererogatory prayers when the obligatory is due",
+    "breaking off, starting or making up supererogatory (nafl) prayers when the obligatory (farḍ) is due",
     "supererogatory prayers otherwise"
    ],
    "madhhab": "apart",
@@ -158,7 +158,7 @@
   {
    "id": "F09",
    "cases_en": [
-    "the obligatory fast (intention from the night)",
+    "the obligatory (farḍ) fast (intention from the night)",
     "the supererogatory fast (intention by day)"
    ],
    "madhhab": "apart",
@@ -175,7 +175,7 @@
   {
    "id": "F10",
    "cases_en": [
-    "a supererogatory fast by one owing an obligatory fast",
+    "a supererogatory (nafl) fast by one owing an obligatory (farḍ) fast",
     "by one owing none"
    ],
    "madhhab": "apart",
@@ -213,7 +213,7 @@
   {
    "id": "F12",
    "cases_en": [
-    "breaking off a supererogatory ḥajj or ʿumra",
+    "breaking off a supererogatory ḥajj or ʿumra (completion wājib: «وجب عليه الإتمام»)",
     "other supererogatory acts"
    ],
    "madhhab": "apart",
@@ -320,7 +320,7 @@
    "id": "F17",
    "cases_en": [
     "a cow in place of a camel in the jazāʾ for game",
-    "in other obligations"
+    "in other wājibāt"
    ],
    "madhhab": "alike",
    "grade": "jamDaif",
@@ -391,7 +391,7 @@
    "grounds": [
     "Usul.Seam.daif_not_admitted"
    ],
-   "note": "recommended both before and after; the only proof for the farq is not ṣaḥīḥ, so it fails the ḥadīth gate (D4)",
+   "note": "recommended (mustaḥabb) both before and after; the only proof for the farq is not ṣaḥīḥ, so it fails the ḥadīth gate (D4)",
    "nusus": [
     "H-siwak-ashi"
    ],

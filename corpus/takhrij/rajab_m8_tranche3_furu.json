@@ -211,7 +211,7 @@
         "failure": "corruption"
       },
       "expected": "asBegun",
-      "note": "A traveller began behind a resident and the prayer was corrupted: make it up in full. Q31 explicitly requires the description of the binding undertaking, rather than the lesser baseline."
+      "note": "A traveller began behind a resident and the prayer was corrupted: make it up in full. Q31 explicitly requires the description of the undertaking made wājib («فإنه يجب عليه قضاؤها تامة»), rather than the lesser baseline."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f002",
@@ -221,7 +221,7 @@
         "failure": "corruption"
       },
       "expected": "asBegun",
-      "note": "A pilgrimage begun with ihram at the home place was corrupted by intercourse: its make-up starts there, by Ahmad's text. The same paragraph contrasts prevention (ihsar), where a subsequent make-up starts only at the miqat because completion did not become binding. The prevention contrast has a separate Lean guard; baseline describes form, not an independently inferred duty to make up."
+      "note": "A pilgrimage begun with ihram at the home place was corrupted by intercourse: its make-up starts there, by Ahmad's text. The same paragraph contrasts prevention (ihsar), where a subsequent make-up starts only at the miqat because completion did not become binding («لم يلزمه إتمامه»). The prevention contrast has a separate Lean guard; baseline describes form, not an independently inferred wujūb to make up."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f003",

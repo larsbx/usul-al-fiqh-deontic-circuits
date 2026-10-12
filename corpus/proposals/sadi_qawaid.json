@@ -52,7 +52,7 @@
   {
    "number": 4,
    "statement_ar": "الوجوب يتعلق بالاستطاعة؛ فلا واجب مع العجز، ولا محرم مع الضرورة",
-   "gloss_en": "Obligation depends on capacity: no obligation with inability, no prohibition with necessity.",
+   "gloss_en": "Obligation (wujūb) depends on capacity: no obligation with inability, no prohibition with necessity.",
    "kind": "default",
    "domain": "general",
    "lean": [
@@ -100,7 +100,7 @@
   {
    "number": 7,
    "statement_ar": "التكليف وهو البلوغ والعقل شرط لوجوب العبادات، والتمييز شرط لصحتها إلا الحج والعمرة",
-   "gloss_en": "Legal responsibility (maturity and ʿaql) is a sharṭ of the obligation of worship; discernment is a sharṭ of its validity, except ḥajj and ʿumra.",
+   "gloss_en": "Legal responsibility (maturity and ʿaql) is a sharṭ of the wujūb of worship; discernment is a sharṭ of its validity, except ḥajj and ʿumra.",
    "kind": "rule",
    "domain": "ibadat",
    "lean": [
@@ -260,7 +260,7 @@
   {
    "number": 16,
    "statement_ar": "العدل واجب في كل شيء، والفضل مسنون",
-   "gloss_en": "Justice is obligatory in everything; generosity is recommended.",
+   "gloss_en": "Justice is wājib in everything; generosity is masnūn («والفضل مسنون»).",
    "kind": "taqsim",
    "domain": "general",
    "lean": [
@@ -497,7 +497,7 @@
   {
    "number": 32,
    "statement_ar": "من أدى عن غيره واجباً رجع عليه",
-   "gloss_en": "Whoever pays another's obligation has recourse against him (reading from the index stub; body heading lost to OCR).",
+   "gloss_en": "Whoever pays another's wājib («من أدى عن غيره واجباً») has recourse against him (reading from the index stub; body heading lost to OCR).",
    "kind": "rule",
    "domain": "muamalat",
    "lean": [
@@ -611,7 +611,7 @@
   {
    "number": 39,
    "statement_ar": "لا يجوز تقديم العبادات أو الكفارات على سبب الوجوب، ويجوز تقديمها بعد وجود السبب وقبل شرط الوجوب",
-   "gloss_en": "Acts of worship and kaffārāt may not precede the sabab of obligation, but may precede its sharṭ once the sabab exists.",
+   "gloss_en": "Acts of worship and kaffārāt may not precede the sabab of wujūb, but may precede its sharṭ once the sabab exists.",
    "kind": "rule",
    "domain": "ibadat",
    "lean": [
@@ -729,7 +729,7 @@
   {
    "number": 47,
    "statement_ar": "الواجب بالنذر يلحق بالواجب بالشرع",
-   "gloss_en": "What is obligatory by vow (nadhr) is assimilated to what is obligatory by the law.",
+   "gloss_en": "What is wājib by vow (nadhr) is assimilated to what is obligatory by the law.",
    "kind": "rule",
    "domain": "ibadat",
    "lean": [

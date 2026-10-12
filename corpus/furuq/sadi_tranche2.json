@@ -138,7 +138,7 @@
     "excerpt_ar": "ومن الفروق الصحيحة: الفرق بين شروط الأشياء والشروط فيها"
    },
    "grounds": [],
-   "note": "the first (sharṭ) are «مقوماتها التي لا تتم ولا تصح إلا بها»; the second (al-shurūṭ fīhā) are external and binding when valid (Q22/Q23)"
+   "note": "the first (sharṭ) are «مقوماتها التي لا تتم ولا تصح إلا بها»; the second (al-shurūṭ fīhā) are external and binding when valid («ويجب اعتبارها») (Q22/Q23)"
   },
   {
    "id": "F29",
@@ -196,7 +196,7 @@
   {
    "id": "F32",
    "cases_en": [
-    "a confession against oneself (binding)",
+    "a confession against oneself (binding on him: lāzim)",
     "a confession against another (not accepted)"
    ],
    "madhhab": "apart",
