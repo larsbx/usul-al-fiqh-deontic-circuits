@@ -513,6 +513,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047`: Liability under a fāsid contract follows its ṣaḥīḥ counterpart.
   > في ضمان المقبوض بالعقد الفاسد] ، كل عقد يجب الضمان في صحيحه يجب الضمان في فاسده وكل عقد لا يجب الضمان في صحيحه لا يجب الضمان في فاسده. ونعني بذلك أن العقد الصحيح إذا كان موجبا للضمان فالفاسد كذلك وإذا لم يكن الصحيح موجبا للضمان فالفاسد كذلك، فالبيع والإجارة والنكاح موجبة للضمان مع الصحة فكذلك مع الفساد. والأمانات كالمضاربة والشركة والوكالة الوديعة وعقود التبرعات كالهبة لا يجب الضمان فيها مع الصحة.
 
+<a id="faskh"></a>
+
+## al-faskh (الفسخ)
+
+*al-faskh: undoing a contract by a party's (or a judge's) act, for a defect, an option or a right; not ṭalāq, nor the contract's dissolving of itself (infisākh).* A party with the right undoes the contract: «فسخ المعتقة تحت عبد، ومنها فسخ البيع المعيب والمدلس» (Ibn Rajab Q63); the agreed faskh needs no judge, the disputed one does (F99). Contracts made before a faskh by choice stand, unlike those built on a contract that proves fāsid (Q53, F30).
+
+**Related:** [infisakh](#infisakh), [talaq](#talaq), [khul](#khul)
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F99`: F99.
+  > وكذلك فرّقوا في الفسوخ المتفق على إثباتها، فلا تحتاج إلى حاكم
+
 <a id="fida"></a>
 
 ## al-fidāʾ (الفداء)
@@ -873,6 +886,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `src:openiti-majmufatawa-shamela7289/v13:p118`: Most fiqh people need is established by text or consensus.
   > جمهور مسائل الفقه التي يحتاج إليها الناس ويفتون بها هي ثابتة بالنص أو الإجماع
 
+<a id="infisakh"></a>
+
+## al-infisākh (الانفساخ)
+
+*al-infisākh: a contract's dissolving of itself when its ground lapses (suckling proven, a sharṭ gone); no one's act, unlike faskh.* Ibn Rajab Q133: «شهادة امرأة على الرضاع يقبل على المذهب ويترتب على ذلك انفساخ النكاح»; Q7: «ثم زال أحد الشرطين، فهل ينفسخ نكاحه»; Q34: «لم تنفسخ الإجارة على المذهب». al-Saʿdī F30: «إذا انفسخ لظهور مبطل ومفسد». No party annuls; the contract ends.
+
+**Related:** [faskh](#faskh), [talaq](#talaq)
+
+**Texts**
+
+- `src:openiti-rajab-shamela21730/v01:p298`: Ibn Rajab Q133.f003.
+  > شهادة امرأة على الرضاع يقبل على المذهب ويترتب على ذلك انفساخ النكاح
+
 <a id="iqrar"></a>
 
 ## al-iqrār (الإقرار)
@@ -993,6 +1019,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 **Texts**
 
 - `ibn_uthaymin.usul.shamela_9942.h012`: Definition.
+
+<a id="khul"></a>
+
+## al-khulʿ (الخلع)
+
+*al-khulʿ: the wife's release from the marriage for a price; disputed between ṭalāq and faskh.* Ibn Rajab Q63: «ومنها الخلع فإنه يصح مع الأجنبي على المذهب سواء قيل هو فسخ أو طلاق», with a wajh barring it through a stranger if it is faskh. al-Saʿdī holds the farq between khulʿ and ṭalāq of a part of the wife weak (F46).
+
+**Related:** [talaq](#talaq), [faskh](#faskh)
+
+**Texts**
+
+- `src:openiti-rajab-shamela21730/v01:p115`: Ibn Rajab Q63.f000.
+  > ومنها الخلع فإنه يصح مع الأجنبي على المذهب سواء قيل هو فسخ أو طلاق
 
 <a id="luqata"></a>
 
@@ -1953,6 +1992,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `src:openiti-ilam-shamela11496/v03:p027`: Ibn al-Qayyim.
   > وبالجملة فلا يمتنع تخصيص العلة لفوات شرط أو لقيام مانع
 
+<a id="talaq"></a>
+
+## al-ṭalāq (الطلاق)
+
+*al-ṭalāq: the husband's dissolving of the marriage by his word; not faskh, nor its dissolving of itself (infisākh).* The husband ends the marriage by his own word, without her knowledge or consent (Q45; Ibn Rajab Q63: «فإن الزوج يستقل بإزالته بالطلاق»). It is revocable (rajʿī) within the ʿidda or irrevocable (bāʾin): «وتبين المرأة من الزوج إذا كمل الطلاق» (F161). Khulʿ is disputed between ṭalāq and faskh («سواء قيل هو فسخ أو طلاق»), and the ruling of a khulʿ through a stranger is the same on both.
+
+**Related:** [khul](#khul), [faskh](#faskh), [infisakh](#infisakh), [taliq](#taliq)
+
+**Texts**
+
+- `src:openiti-rajab-shamela21730/v01:p115`: Ibn Rajab Q63.
+  > فإن الزوج يستقل بإزالته بالطلاق
+
 <a id="taliq"></a>
 
 ## al-taʿlīq (التعليق)
@@ -2029,7 +2081,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-tawaqquf (التوقف)
 
-*suspension of judgement.* Ibn ʿUthaymīn: where two general texts conflict and nothing specifies one by the other, each is acted on where they do not conflict and judgement is suspended where they do. Ibn Rajab reports that Aḥmad suspended judgement on the two-men 'raven' divorce case. Ibn Taymiyya extends it to the single jurist: «وحيث لا يعلم الرجحان فهو متوقف لا قول له». Adopted in the kernel (IQ-21, human review): a ẓann of unknown preponderance is suspended in Qawaid.update, inert as a challenger and counted as shakk as the incumbent.
+*suspension of judgement.* Ibn ʿUthaymīn: where two general texts conflict and nothing specifies one by the other, each is acted on where they do not conflict and judgement is suspended where they do. Ibn Rajab reports that Aḥmad suspended judgement on the two-men 'raven' taʿlīq case. Ibn Taymiyya extends it to the single jurist: «وحيث لا يعلم الرجحان فهو متوقف لا قول له». Adopted in the kernel (IQ-21, human review): a ẓann of unknown preponderance is suspended in Qawaid.update, inert as a challenger and counted as shakk as the incumbent.
 
 **Related:** [ihtiyat](#ihtiyat), [ilm](#ilm), [taarud](#taarud), [tarjih](#tarjih), [zann](#zann)
 

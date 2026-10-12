@@ -2218,7 +2218,7 @@
    "ar": "التوقف",
    "tr": "al-tawaqquf",
    "gloss": "suspension of judgement",
-   "definition": "Ibn ʿUthaymīn: where two general texts conflict and nothing specifies one by the other, each is acted on where they do not conflict and judgement is suspended where they do. Ibn Rajab reports that Aḥmad suspended judgement on the two-men 'raven' divorce case. Ibn Taymiyya extends it to the single jurist: «وحيث لا يعلم الرجحان فهو متوقف لا قول له». Adopted in the kernel (IQ-21, human review): a ẓann of unknown preponderance is suspended in Qawaid.update, inert as a challenger and counted as shakk as the incumbent.",
+   "definition": "Ibn ʿUthaymīn: where two general texts conflict and nothing specifies one by the other, each is acted on where they do not conflict and judgement is suspended where they do. Ibn Rajab reports that Aḥmad suspended judgement on the two-men 'raven' taʿlīq case. Ibn Taymiyya extends it to the single jurist: «وحيث لا يعلم الرجحان فهو متوقف لا قول له». Adopted in the kernel (IQ-21, human review): a ẓann of unknown preponderance is suspended in Qawaid.update, inert as a challenger and counted as shakk as the incumbent.",
    "conditions": [],
    "related": [
     "ihtiyat",
@@ -4245,6 +4245,133 @@
      "ref": "src:islamhouse-qj-doc#F59",
      "excerpt_ar": "فالطاعة فيه مقصودة، بخلاف اليمين",
      "note": "F59."
+    }
+   ]
+  },
+  {
+   "key": "talaq",
+   "ar": "الطلاق",
+   "tr": "al-ṭalāq",
+   "gloss": "al-ṭalāq: the husband's dissolving of the marriage by his word; not faskh, nor its dissolving of itself (infisākh)",
+   "definition": "The husband ends the marriage by his own word, without her knowledge or consent (Q45; Ibn Rajab Q63: «فإن الزوج يستقل بإزالته بالطلاق»). It is revocable (rajʿī) within the ʿidda or irrevocable (bāʾin): «وتبين المرأة من الزوج إذا كمل الطلاق» (F161). Khulʿ is disputed between ṭalāq and faskh («سواء قيل هو فسخ أو طلاق»), and the ruling of a khulʿ through a stranger is the same on both.",
+   "related": [
+    "khul",
+    "faskh",
+    "infisakh",
+    "taliq"
+   ],
+   "distinct_from": [
+    "faskh",
+    "infisakh",
+    "khul"
+   ],
+   "forms": [
+    "طلق",
+    "طالق",
+    "طلاق",
+    "ṭallaqa",
+    "muṭallaqa",
+    "rajʿiyya",
+    "رجعية",
+    "bāʾin",
+    "بائن"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p115",
+     "excerpt_ar": "فإن الزوج يستقل بإزالته بالطلاق",
+     "note": "Ibn Rajab Q63."
+    }
+   ]
+  },
+  {
+   "key": "faskh",
+   "ar": "الفسخ",
+   "tr": "al-faskh",
+   "gloss": "al-faskh: undoing a contract by a party's (or a judge's) act, for a defect, an option or a right; not ṭalāq, nor the contract's dissolving of itself (infisākh)",
+   "definition": "A party with the right undoes the contract: «فسخ المعتقة تحت عبد، ومنها فسخ البيع المعيب والمدلس» (Ibn Rajab Q63); the agreed faskh needs no judge, the disputed one does (F99). Contracts made before a faskh by choice stand, unlike those built on a contract that proves fāsid (Q53, F30).",
+   "related": [
+    "infisakh",
+    "talaq",
+    "khul"
+   ],
+   "distinct_from": [
+    "infisakh",
+    "talaq"
+   ],
+   "furuq": [
+    "F30",
+    "F99"
+   ],
+   "forms": [
+    "فسخ",
+    "الفسوخ",
+    "fusūkh",
+    "fasakha"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F99",
+     "excerpt_ar": "وكذلك فرّقوا في الفسوخ المتفق على إثباتها، فلا تحتاج إلى حاكم",
+     "note": "F99."
+    }
+   ]
+  },
+  {
+   "key": "infisakh",
+   "ar": "الانفساخ",
+   "tr": "al-infisākh",
+   "gloss": "al-infisākh: a contract's dissolving of itself when its ground lapses (suckling proven, a sharṭ gone); no one's act, unlike faskh",
+   "definition": "Ibn Rajab Q133: «شهادة امرأة على الرضاع يقبل على المذهب ويترتب على ذلك انفساخ النكاح»; Q7: «ثم زال أحد الشرطين، فهل ينفسخ نكاحه»; Q34: «لم تنفسخ الإجارة على المذهب». al-Saʿdī F30: «إذا انفسخ لظهور مبطل ومفسد». No party annuls; the contract ends.",
+   "related": [
+    "faskh",
+    "talaq"
+   ],
+   "distinct_from": [
+    "faskh",
+    "talaq"
+   ],
+   "forms": [
+    "ينفسخ",
+    "انفسخ",
+    "انفساخ",
+    "تنفسخ",
+    "infasakha"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p298",
+     "excerpt_ar": "شهادة امرأة على الرضاع يقبل على المذهب ويترتب على ذلك انفساخ النكاح",
+     "note": "Ibn Rajab Q133.f003."
+    }
+   ]
+  },
+  {
+   "key": "khul",
+   "ar": "الخلع",
+   "tr": "al-khulʿ",
+   "gloss": "al-khulʿ: the wife's release from the marriage for a price; disputed between ṭalāq and faskh",
+   "definition": "Ibn Rajab Q63: «ومنها الخلع فإنه يصح مع الأجنبي على المذهب سواء قيل هو فسخ أو طلاق», with a wajh barring it through a stranger if it is faskh. al-Saʿdī holds the farq between khulʿ and ṭalāq of a part of the wife weak (F46).",
+   "related": [
+    "talaq",
+    "faskh"
+   ],
+   "distinct_from": [
+    "talaq",
+    "faskh"
+   ],
+   "furuq": [
+    "F46"
+   ],
+   "forms": [
+    "خلع",
+    "khulʿ"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p115",
+     "excerpt_ar": "ومنها الخلع فإنه يصح مع الأجنبي على المذهب سواء قيل هو فسخ أو طلاق",
+     "note": "Ibn Rajab Q63.f000."
     }
    ]
   }

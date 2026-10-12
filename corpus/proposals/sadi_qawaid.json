@@ -703,7 +703,7 @@
   {
    "number": 45,
    "statement_ar": "من لا يعتبر رضاه في عقد أو فسخ لا يعتبر علمه",
-   "gloss_en": "Whose consent is not required for a contract or its rescission, his knowledge is not required either.",
+   "gloss_en": "Whose consent is not required for a contract or its faskh («في عقد أو فسخ»), his knowledge is not required either.",
    "kind": "rule",
    "domain": "muamalat",
    "lean": [
@@ -823,7 +823,7 @@
   {
    "number": 53,
    "statement_ar": "إذا تبين فساد العقد بطل ما بني عليه، وإن فسخ فسخاً اختيارياً لم تبطل العقود الطارئة قبل الفسخ",
-   "gloss_en": "If a contract proves fāsid, what was built on it is bāṭil («إذا تبين فساد العقد بطل ما بني عليه»); if it is rescinded by choice, contracts concluded before the rescission stand.",
+   "gloss_en": "If a contract proves fāsid, what was built on it is bāṭil («إذا تبين فساد العقد بطل ما بني عليه»); if it is undone by a faskh by choice («وإن فسخ فسخاً اختيارياً»), contracts concluded before the faskh stand.",
    "kind": "farq",
    "domain": "muamalat",
    "lean": [

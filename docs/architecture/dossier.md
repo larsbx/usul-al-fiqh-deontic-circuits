@@ -272,7 +272,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 <a id="lots_for_forgotten_wife"></a>
 
-## Lots decide which wife was divorced when she is forgotten
+## Lots decide which wife was divorced (ṭalāq) when she is forgotten
 
 **Terms:** [al-qurʿa](../glossary.md#qurah), [al-majhūl](../glossary.md#majhul)  
 **Closes:** `rule:lots`  

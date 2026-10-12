@@ -23,8 +23,13 @@ ORIGINAL_GAP_CASE_SHA256 = {
     takhrij.LAHHAM.format(43) + ".f004": "6c67447789d873d8dc6778ef86c92bc705baf672195282ba6782e4ef2ba8ce65",
     takhrij.LAHHAM.format(43) + ".f007": "6541542f5cd5909107f61ba24243afa448e298b15e9744ba3952d11e3abeb15c",
     takhrij.LAHHAM.format(52) + ".f007": "0ba95f474f71653933db2a1bb78fe2483a9ddac3e918abd07e98c499453b9543",
-    # Re-pinned 2026-10-12: its English note now names al-najāsa for «impurity» (term guards); class, facts and needs unchanged.
-    takhrij.RAJAB.format(22) + ".f000": "6315af35db2d10d33e1eb3096200236c1a99d586edda495c19949fe031f64a46",
+    takhrij.RAJAB.format(22) + ".f000": "ba72663774a7a84972999b44d0291ed0f05f3a5db176c740042be8d68353ec0a",
+}
+# English-only revisions (term guards, problem register PR-02): the note each gap case had when
+# pinned. Restoring it must give the pinned hash back, so no class, fact or need has changed.
+GAP_NOTE_REVISIONS = {
+    takhrij.LAHHAM.format(52) + ".f007": "A qadi saying 'the qadi's wife is divorced' has no transmitted ruling; Ibn al-Lahham offers it as possibly resting on al- generality or on whether a speaker is included in his own general speech, so no ruling to test.",
+    takhrij.RAJAB.format(22) + ".f000": "Water in which impurity is consumed: if the water is much, the impurity's ruling falls «بغير خلاف»; if little, two riwāyas. The ruling turns on the quantity of water, which the reading (consumed as non-existent) does not express, so the record is not derivable as a whole. (Opening example, segmented as f000.)",
 }
 
 
@@ -56,7 +61,9 @@ def test_candidate_receipts_preserve_the_four_live_gaps():
 def test_all_six_original_gaps_are_unchanged_and_the_report_counts_live_annotations():
     cases = takhrij.load(CORPUS)
     report = takhrij.report(cases)
-    gaps = {c["far"]: m5.case_sha256(c) for c in cases if c["class"] in takhrij.GAPS}
+    gaps = {c["far"]: m5.case_sha256(dict(c, note=GAP_NOTE_REVISIONS.get(c["far"], c.get("note"))))
+            for c in cases if c["class"] in takhrij.GAPS}
+    assert all(c["note"] != GAP_NOTE_REVISIONS[c["far"]] for c in cases if c["far"] in GAP_NOTE_REVISIONS)
     assert gaps == ORIGINAL_GAP_CASE_SHA256
     assert report["gaps_open"] == len(ORIGINAL_GAP_CASE_SHA256) == 6
     assert report["total"] == len(cases)

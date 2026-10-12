@@ -690,7 +690,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Cat. 4: 'you are divorced, you are divorced' with no stated intent: zahir of a fresh pronouncement=zann vs asl of the marriage continuing=zann; kernel matches the ashab's two divorces."
+   "note": "Cat. 4: 'you are divorced, you are divorced' («أنت طالق أنت طالق») with no stated intent: zahir of a fresh pronouncement=zann vs asl of the marriage continuing=zann; kernel matches the ashab's two divorces."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037",
@@ -713,7 +713,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4: 'divorce is binding on me' -- one or three: zahir of istighraq=zann vs asl=zann; kernel gives three; the text marks neither as the madhhab."
+   "note": "Cat. 4: 'divorce is binding on me' («الطلاق يلزمني») -- one or three: zahir of istighraq=zann vs asl=zann; kernel gives three; the text marks neither as the madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038",
@@ -736,7 +736,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Cat. 4: 'my wife is divorced / my slave is free' with several: zahir of generality=zann vs asl=zann; kernel matches the mansus; the Mughni's view expressly prefers the asl 'even if the plural is more apparent', which no >= grading can produce."
+   "note": "Cat. 4: 'my wife is divorced / my slave is free' («زوجتي طالق أو عبدي حر») with several: zahir of generality=zann vs asl=zann; kernel matches the mansus; the Mughni's view expressly prefers the asl 'even if the plural is more apparent', which no >= grading can produce."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039",
@@ -986,7 +986,7 @@
    "expected": true,
    "positions": [
     {
-     "who": "riwaya: three divorces (generality)",
+     "who": "riwaya: three ṭalāqs (generality)",
      "ruling": true
     },
     {
@@ -1097,7 +1097,7 @@
    "class": "missing_rule",
    "facts": null,
    "expected": null,
-   "note": "A qadi saying 'the qadi's wife is divorced' has no transmitted ruling; Ibn al-Lahham offers it as possibly resting on al- generality or on whether a speaker is included in his own general speech, so no ruling to test.",
+   "note": "A qadi saying 'the qadi's wife is divorced' («امرأة القاضى طالق») has no transmitted ruling; Ibn al-Lahham offers it as possibly resting on al- generality or on whether a speaker is included in his own general speech, so no ruling to test.",
    "needs": [
     "rule:speaker_in_own_speech"
    ]
@@ -1189,7 +1189,7 @@
     "ahd": false
    },
    "expected": true,
-   "note": "'If your pregnancy is a male... if female...' and she bears twins of both sexes: no divorce, since 'your pregnancy' as a whole is neither, consistent with the annexed noun being general."
+   "note": "'If your pregnancy is a male... if female...' and she bears twins of both sexes: no ṭalāq («قال الأصحاب لا تطلق»), since 'your pregnancy' as a whole is neither, consistent with the annexed noun being general."
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f005",
@@ -1346,7 +1346,7 @@
     "consent_required": false
    },
    "expected": false,
-   "note": "Manumission (even for payment), the freed wife's annulment under a slave husband, annulment for defect or deception, of ijara and of non-binding contracts all proceed without the other party's knowledge because his consent is not required."
+   "note": "Manumission (even for payment), the freed wife's faskh under a slave husband («فسخ المعتقة تحت عبد»), faskh for defect or deception, of ijara and of non-binding contracts all proceed without the other party's knowledge because his consent is not required."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f001",
@@ -1645,7 +1645,7 @@
     "confusion_category": true
    },
    "expected": "lot",
-   "note": "A deceased's wife irrevocably divorced (or married by a fāsid nikāḥ) and unknown among his wives is identified by lot and the inheritance goes to the rest (naṣṣ of Aḥmad): a confused specific entitlement, lots though the share is divisible.",
+   "note": "A deceased's wife irrevocably divorced («طلاقا يقطع الإرث») («طلاقا يقطع الإرث») (or married by a fāsid nikāḥ) and unknown among his wives is identified by lot and the inheritance goes to the rest (naṣṣ of Aḥmad): a confused specific entitlement, lots though the share is divisible.",
    "revisit": {
     "from_class": "encoding_error",
     "closed_by": [
@@ -1718,7 +1718,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Convert with more than four wives divorces all thrice: the mashhūr extracts four by lot as the chosen; kernel lot matches the mashhūr."
+   "note": "Convert with more than four wives divorces (ṭalāq) all thrice: the mashhūr extracts four by lot as the chosen; kernel lot matches the mashhūr."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f019",
@@ -1816,7 +1816,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Record excerpt is cut at the page break; the full case (p355) is an unspecified divorce 'one of you is divorced': lot in ẓāhir al-madhhab, a riwāya lets him designate; kernel lot matches the madhhab."
+   "note": "Record excerpt is cut at the page break; the full case (p355) is an unspecified divorce 'one of you is divorced' («إحداكما طالق») («إحداكما طالق»): lot in ẓāhir al-madhhab, a riwāya lets him designate; kernel lot matches the madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f024",
@@ -1839,7 +1839,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "A specific wife divorced then forgotten (or the raven case): the madhhab identifies her by lot and the others are permitted, against the riwāya of suspension; kernel lot matches."
+   "note": "A specific wife divorced (ṭalāq) then forgotten (or the raven case): the madhhab identifies her by lot and the others are permitted, against the riwāya of suspension; kernel lot matches."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f025",
@@ -1878,7 +1878,7 @@
     "absence_known": false
    },
    "expected": true,
-   "note": "Having appointed an agent to divorce his wife, he abstains from her «حتى يدري ما يفعل»: the divorce depends on what may already have happened, so by Taqī al-Dīn's summary of Aḥmad's texts he abstains until its absence is known.",
+   "note": "Having appointed an agent to divorce his wife («إذا وكل وكيلا في طلاق امرأته»), he abstains from her «حتى يدري ما يفعل»: the divorce depends on what may already have happened, so by Taqī al-Dīn's summary of Aḥmad's texts he abstains until its absence is known.",
    "revisit": {
     "from_class": "missing_rule",
     "closed_by": [
@@ -1897,7 +1897,7 @@
     "absence_known": false
    },
    "expected": true,
-   "note": "«You are divorced on Laylat al-Qadr»: he abstains once the last ten nights begin «لإمكان أن يكون أول ليلة» (since it may be the first night).",
+   "note": "«You are divorced on Laylat al-Qadr» («أنت طالق ليلة القدر»): he abstains once the last ten nights begin «لإمكان أن يكون أول ليلة» (since it may be the first night).",
    "revisit": {
     "from_class": "missing_rule",
     "closed_by": [
@@ -2172,7 +2172,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Imamate contracted to two in succession, earlier unknown: takhrīj on the two-guardians case (bāṭil vs lot); Ibn Rajab says the mashhūr there is annulment, so lot is the non-mashhūr."
+   "note": "Imamate contracted to two in succession, earlier unknown: takhrīj on the two-guardians case (bāṭil vs lot); Ibn Rajab says the mashhūr there is faskh of both («أنه يفسخ النكاحان»), so lot is the non-mashhūr."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f041",
@@ -2322,7 +2322,7 @@
      "ruling": "lot"
     },
     {
-     "who": "takhrīj from the divorce riwāya",
+     "who": "takhrīj from the ṭalāq riwāya",
      "ruling": "his designation"
     }
    ],
@@ -2773,7 +2773,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "A musāqī who flees: whoever is hired to finish the work is treated like the cameleer's case (the same two riwāyas), and the owner may also rescind; no marker."
+   "note": "A musāqī who flees: whoever is hired to finish the work is treated like the cameleer's case (the same two riwāyas), and the owner may also rescind (faskh: «إلا أن للمالك الفسخ»); no marker."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f013",
@@ -2885,7 +2885,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Fruiting trees given as dower, divorce before consummation, value fixed after she refuses; if he offers to take half the trees leaving the fruit, two wujuh: she is not compelled (Ibn 'Aqil) or she is; none marked."
+   "note": "Fruiting trees given as dower, ṭalāq before consummation, value fixed after she refuses; if he offers to take half the trees leaving the fruit, two wujuh: she is not compelled (Ibn 'Aqil) or she is; none marked."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f005",
@@ -2910,7 +2910,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Divorced before consummation after she sold the dower, the sale rescinded before he took half its value: al-ashab deny return to the thing; the kernel matches only Ibn Rajab's takhrij of a return."
+   "note": "Divorced (ṭalāq) before consummation after she sold the dower, the sale rescinded before he took half its value: al-ashab deny return to the thing; the kernel matches only Ibn Rajab's takhrij of a return."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f006",
@@ -2964,7 +2964,7 @@
     "follows_established": true
    },
    "expected": true,
-   "note": "One woman's testimony to suckling is accepted (on the madhhab) and annulment of the marriage follows from it as a dependent."
+   "note": "One woman's testimony to suckling is accepted (on the madhhab) and the marriage's dissolving of itself (infisākh: «ويترتب على ذلك انفساخ النكاح») follows from it as a dependent."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f004",
@@ -3250,7 +3250,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "After one unknown wife was divorced and the husband died, the lot picks her and her divorce ʿidda follows as a dependent (ẓāhir kalām Aḥmad); al-Qāḍī makes all observe the longer term. This is not an explicit madhhab marker."
+   "note": "After one unknown wife was divorced (ṭalāq) and the husband died, the lot picks her and her divorce ʿidda follows as a dependent (ẓāhir kalām Aḥmad); al-Qāḍī makes all observe the longer term. This is not an explicit madhhab marker."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f020",
@@ -3743,7 +3743,7 @@
     "confusion_category": false
    },
    "expected": "lot",
-   "note": "One wife divorced and forgotten is identified by lot and the others are lawful (al-madhhab al-ṣaḥīḥ al-mashhūr); retested under the lots reading, which the bank now has.",
+   "note": "One wife divorced (ṭalāq) and forgotten is identified by lot and the others are lawful (al-madhhab al-ṣaḥīḥ al-mashhūr); retested under the lots reading, which the bank now has.",
    "revisit": {
     "from_class": "missing_rule",
     "from_encoder": "unknown_owner",

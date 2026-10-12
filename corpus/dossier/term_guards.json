@@ -164,6 +164,21 @@
     "registers",
     "glossary"
    ]
+  },
+  {
+   "gloss_en": "\\b(divorc\\w*|annul\\w*|dissol\\w*|rescind\\w*|rescission)\\b",
+   "terms": [
+    "talaq",
+    "faskh",
+    "infisakh",
+    "khul",
+    "taliq"
+   ],
+   "why": "English «divorce», «annul», «dissolve» cover al-ṭalāq (the husband's word), al-faskh (a party's or judge's undoing: F99, Q63), al-infisākh (the contract ending of itself: «ويترتب على ذلك انفساخ النكاح», Q133) and al-khulʿ (disputed between ṭalāq and faskh). Q133.f003 read «annulment follows» for «انفساخ».",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
   }
  ],
  "note": "Every English text field of the corpus registers, and every Lean doc comment, that uses one of these glosses must also name the term it means, by its transliteration or its Arabic (tests/test_nusus.py). The English never feeds a derivation; this keeps it from hiding which term a case is about."
