@@ -619,6 +619,10 @@ import Usul
 #check @Usul.Tahara.semen_conflates
 #check @Usul.Tahara.q15_f001_turns_on_the_name
 #check @Usul.Tahara.madhy_wady_alike
+#check @Hadith.Verdict.sahih
+#check @Hadith.Verdict.daif
+#check @Usul.Furuq.Grade.sahih
+#check @Usul.Furuq.Grade.daif
 #check @Usul.CommandSchemata.CommandUsage
 #check @Usul.CommandSchemata.NonverbalForm
 #check @Usul.CommandSchemata.NonverbalReading

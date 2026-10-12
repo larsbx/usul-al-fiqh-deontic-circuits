@@ -112,6 +112,17 @@ def test_homographs_are_declared_distinct():
                 assert b["key"] in a.get("distinct_from", []) and a["key"] in b.get("distinct_from", []), (a["key"], b["key"])
 
 
+def test_polysemes_declare_their_senses():
+    """Terms on one Arabic word (al-ṣaḥīḥ of an act, of a ḥadīth, of a view) each say which sense
+    they are, the senses differ, and each names the others in `distinct_from` (PR-03)."""
+    by_ar = {}
+    for t in GLOSS["terms"]:
+        by_ar.setdefault(t["ar"], []).append(t)
+    for ts in (ts for ts in by_ar.values() if len(ts) > 1):
+        assert all("sense" in t for t in ts) and len({t["sense"] for t in ts}) == len(ts), [t["key"] for t in ts]
+        assert all(b["key"] in a.get("distinct_from", []) for a in ts for b in ts if a is not b), [t["key"] for t in ts]
+
+
 def _english_fields():
     """(scope, where, text) for every English field a guard may read."""
     for p in sorted((CORPUS / "furuq").glob("*.json")):

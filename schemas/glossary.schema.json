@@ -52,6 +52,11 @@
             "type": "string",
             "minLength": 1
           },
+          "sense": {
+            "type": "string",
+            "minLength": 1,
+            "description": "which sense of a polyseme this entry is; required of every term sharing its `ar` with another (PR-03)"
+          },
           "conditions": {
             "type": "array",
             "items": {
@@ -70,7 +75,7 @@
             "type": "array",
             "items": {
               "type": "string",
-              "pattern": "^Usul\\."
+              "pattern": "^(Usul|Hadith)\\."
             }
           },
           "refs": {

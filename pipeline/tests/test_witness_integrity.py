@@ -59,3 +59,34 @@ def test_every_cached_witness_is_pinned():
     """A registered witness present in the cache has a pin: a lost pin (PR-20) fails here."""
     cached = [w for w in FORMAT if (CACHE / f"{w}.txt").exists()]
     assert [w for w in cached if w not in LOCK] == []
+
+
+TARJIH_EN = r"\b(stronger|strongest|sounder|soundest|prefer\w*|more correct|aṣaḥḥ|al-ṣaḥīḥ|rājiḥ)\b"
+TARJIH_AR = "أصح|الصحيح|أقوى|أظهر|الأشهر|المشهور|الراجح|المختار|أولى|الصواب|أجود|ضعيف|المنصوص|اختار|رجح|قوي|أشبه"
+
+
+def test_a_note_claims_no_tarjih_its_source_lacks():
+    """An English note that says a view is sounder, stronger or preferred answers to a tarjīḥ word in
+    its source paragraph (up to the next «ومنها»): «على وجهين» alone ranks nothing (PR-22, q068.f007).
+    A sentence saying none is preferred makes no claim."""
+    import re
+    from usul_corpus import nusus
+    recs = {r["id"]: r for p in (ROOT / "corpus/records").glob("*.jsonl")
+            for r in map(json.loads, p.read_text(encoding="utf-8").splitlines())}
+    bad = []
+    for p in sorted((ROOT / "corpus/takhrij").glob("*_furu.json")):
+        for c in json.loads(p.read_text(encoding="utf-8"))["cases"]:
+            s = " ".join([c.get("note", "")] + [x["who"] for x in c.get("positions") or []])
+            r = recs.get(c["far"])
+            claims = [x for x in re.split(r"[.;]", s) if re.search(TARJIH_EN, x, re.I) and not re.search(r"\b(neither|no|none|not)\b", x)]
+            if not (r and claims):
+                continue
+            w = CACHE / f"{r['locator'][4:].split('/')[0]}.txt"
+            if not w.exists():
+                continue
+            text = w.read_text(encoding="utf-8")
+            k = nusus.find(text, r["case_ar"][:60])
+            para = re.split(r"#\s*\(?ومنها", text[k + 1:k + 2000])[0] if k is not None else ""
+            if not re.search(TARJIH_AR, para):
+                bad.append(c["far"])
+    assert not bad, bad

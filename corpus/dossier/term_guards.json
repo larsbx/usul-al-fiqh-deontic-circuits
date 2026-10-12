@@ -66,6 +66,24 @@
     "lean"
    ],
    "why": "English «expiation» and «compensation» cover al-kaffāra, al-fidya, al-jazāʾ, al-diya, al-arsh, al-ḍamān and al-fidāʾ, each with its own cause and measure (al-Māʾida 89 and 95, al-Baqara 196, al-Nisāʾ 92; F13, F17, F21, F49, F63)."
+  },
+  {
+   "gloss_en": "\\b(weak(?:er|est|ness|ly)?|sound(?:er|est|ness|ly)?|authentic\\w*)\\b",
+   "terms": [
+    "sahih",
+    "sahih_hadith",
+    "sahih_qawl",
+    "asahh",
+    "daif_hadith",
+    "daif_qawl",
+    "farq_sahih",
+    "farq_daif"
+   ],
+   "why": "English «sound» and «weak» cover al-ṣaḥīḥ of an act (valid), of a ḥadīth (a grade: ḥujja), of a view (tarjīḥ: al-ṣaḥīḥ, al-aṣaḥḥ), of a farq (al-Saʿdī's grade), and al-ḍaʿīf of a ḥadīth, a view or a farq: a weak wajh is not a weak ḥadīth (PR-03). The Lean docs' «sound» of an inference is another sense, out of scope.",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
   }
  ],
  "note": "Every English text field of the corpus registers, and every Lean doc comment, that uses one of these glosses must also name the term it means, by its transliteration or its Arabic (tests/test_nusus.py). The English never feeds a derivation; this keeps it from hiding which term a case is about."

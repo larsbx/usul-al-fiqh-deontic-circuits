@@ -61,7 +61,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-amāna (al-maḥḍa wa'l-mutaḍammina) (الأمانة (المحضة والمتضمنة))
 
-*trust.* Al-Saʿdī: the trustee (amīn) holds another's property with the owner's or the law's consent; loss with him is not compensable unless he transgresses or is negligent. Ibn Rajab: the very meaning of amāna is absence of liability, so a trustee's word on loss is accepted; a pure trust (maḥḍa), held only for the owner's benefit like a deposit, is voided by transgression, while a trust that includes another matter (mutaḍammina) is not, on the sound view. Al-Saʿdī Q43: one who took the thing for his own benefit is not believed on its return; for the owner's benefit he is. Lean encodes Q43's distinction, not Ibn Rajab's voiding rule.
+*trust.* Al-Saʿdī: the trustee (amīn) holds another's property with the owner's or the law's consent; loss with him is not compensable unless he transgresses or is negligent. Ibn Rajab: the very meaning of amāna is absence of liability, so a trustee's word on loss is accepted; a pure trust (maḥḍa), held only for the owner's benefit like a deposit, is voided by transgression, while a trust that includes another matter (mutaḍammina) is not, on al-ṣaḥīḥ («لا تبطل على الصحيح»). Al-Saʿdī Q43: one who took the thing for his own benefit is not believed on its return; for the owner's benefit he is. Lean encodes Q43's distinction, not Ibn Rajab's voiding rule.
 
 **Conditions**
 
@@ -153,6 +153,21 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 - `src:islamhouse-qj-doc#F21`: F21: a defect in a sold thing gives return or arsh.
   > موجب للرد أو الأرش
+
+<a id="asahh"></a>
+
+## al-aṣaḥḥ (الأصح)
+
+*al-aṣaḥḥ: the sounder of two wujūh or riwāyas, a tarjīḥ inside the madhhab; English «sounder» must say so.* Ibn Rajab: the muḥrim who kills attacking game «لم يضمنه على أصح الوجهين» (Q26); al-Manṣūṣ on the waqf conditional on death, «وقال القاضي لا يصح والأول أصح» (Q133). It ranks wujūh; it is not a ḥadīth grade.
+
+**Related:** [sahih_qawl](#sahih_qawl), [daif_qawl](#daif_qawl)
+
+**Texts**
+
+- `src:openiti-rajab-shamela21730/v01:p036`: Q26.
+  > لو صال عليه صيد في إحرامه فقتله دفعا عن نفسه لم يضمنه على أصح الوجهين
+- `src:openiti-rajab-shamela21730/v01:p299`: Q133.
+  > وقال القاضي لا يصح والأول أصح
 
 <a id="asl"></a>
 
@@ -261,6 +276,34 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > إا قال المدعى لا بينة لى ثم أتى ببينة فالمذهب المنصوص أنها لا تسمع بينته ولنا قول آخر أنها تسمع واختاره ابن عقيل وغيره واستشكل على المنصوص إذا قال الشاهد لست متحملا عليك شهادة ثم أداها بعد ذلك فإن المنصوص عن أحمد أنها تسمع. والفرق بين النصين أن الشهادة حق عليه فتسمع بعد النفي كما لو أقر بالحق بعد جحوده والبينة حق له فلا تسمع كما لو ادعى الخق بعد أن نفاه والله أعلم.
 - `src:openiti-lahham-shamela8526/v01:p276`: The farq: bayyina is a right for him.
   > والفرق بين النصين أن الشهادة حق عليه فتسمع بعد النفي كما لو أقر بالحق بعد جحوده والبينة حق له فلا تسمع كما لو ادعى الخق بعد أن نفاه
+
+<a id="daif_hadith"></a>
+
+## al-ḍaʿīf (الضعيف)
+
+*al-ḍaʿīf (of a ḥadīth): below ḥasan, not ḥujja; not a weak view, nor a weak farq.* Ibn al-Ṣalāḥ: «كل حديث لم يجتمع فيه صفات الحديث الصحيح، ولا صفات الحديث الحسن … فهو حديث ضعيف». The ḥadīth gate rejects it (Usul.Seam.daif_not_admitted); al-Albānī's ḍaʿīf jiddan and mawḍūʿ lie below it.
+
+**Related:** [sahih_hadith](#sahih_hadith), [illa_hadith](#illa_hadith)
+
+**Lean:** `Hadith.Verdict.daif`, `Usul.Seam.daif_not_admitted`
+
+**Texts**
+
+- `src:openiti-ibn-salah-shamela22870/v01:p041`: Ibn al-Ṣalāḥ, the third type.
+  > كل حديث لم يجتمع فيه صفات الحديث الصحيح، ولا صفات الحديث الحسن المذكورات فيما تقدم، فهو حديث ضعيف
+
+<a id="daif_qawl"></a>
+
+## al-ḍaʿīf (الضعيف)
+
+*al-ḍaʿīf (of a view): a wajh or derivation the author holds weak; not a ḥadīth grade.* Ibn Rajab on the derived wajh that a lease of a freed slave lapses: «وهذا ضعيف فإن الولي تنقطع ولايته بالكلية عن الصبي ببلوغه رشيدا، بخلاف السيد» (Q34). It weighs a view, not a report.
+
+**Related:** [sahih_qawl](#sahih_qawl), [asahh](#asahh)
+
+**Texts**
+
+- `src:openiti-rajab-shamela21730/v01:p042`: Q34.
+  > وهذا ضعيف فإن الولي تنقطع ولايته بالكلية عن الصبي ببلوغه رشيدا، بخلاف السيد فإن استثناء منافعه بالشرط
 
 <a id="dalil"></a>
 
@@ -377,6 +420,36 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > وهو إبداء المعترض معنى يحصل به الفرق بين الأصل والفرع حتى لا يلحق به في حكمه
 - `src:openiti-ilam-shamela11496/v02:p006`: Ibn al-Qayyim.
   > وأما التسوية بينهما في الحكم مع افتراقهما فيما يقتضي الحكم أو يمنعه فهذا هو القياس الفاسد
+
+<a id="farq_daif"></a>
+
+## al-furūq al-ḍaʿīfa (الفروق الضعيفة)
+
+*a weak farq: al-Saʿdī's grade for a distinction he rejects (Grade.daif): the masāʾil are alike.* al-Saʿdī: «وهذا الفرق ضعيف لعدم ثبوت الفرق بينهما في هذا الموضع شرعاً» (F04); he lists others under «ومن الفروق الضعيفة». A weak farq overturns a reported one (Usul.Furuq.overturn_iff_daif).
+
+**Related:** [farq_sahih](#farq_sahih)
+
+**Lean:** `Usul.Furuq.Grade.daif`, `Usul.Furuq.overturn_iff_daif`
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F04`: F04.
+  > وهذا الفرق ضعيف لعدم ثبوت الفرق بينهما في هذا الموضع شرعاً
+
+<a id="farq_sahih"></a>
+
+## al-furūq al-ṣaḥīḥa (الفروق الصحيحة)
+
+*a sound farq: al-Saʿdī's grade for a distinction he upholds (Grade.sahih).* al-Saʿdī lists furūq under «ومن الفروق الصحيحة» (e.g. F28, «الفرق بين شروط الأشياء والشروط فيها»): the two masāʾil are rightly ruled apart.
+
+**Related:** [farq_daif](#farq_daif)
+
+**Lean:** `Usul.Furuq.Grade.sahih`, `Usul.Furuq.Grade.apart`
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F28`: F28.
+  > ومن الفروق الصحيحة: الفرق بين شروط الأشياء والشروط فيها
 
 <a id="fasad_al_itibar"></a>
 
@@ -738,6 +811,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `src:archive-pdf1995-tess/v01:p107`: Al-Saʿdī Q58: ʿilla identified with the ḥikma.
   > وعلة الحكم هي الحكمة في الأمر به، أو النهي عنه؛ أو إباحته
 
+<a id="illa_hadith"></a>
+
+## al-ʿilla (العلة)
+
+*al-ʿilla (of a ḥadīth): a hidden defect that impairs it; not the ratio legis of qiyās.* al-Nukhba: «والمعلل ما فيه علة خفية قادحة»; its absence is a condition of the ṣaḥīḥ. The qiyās ʿilla (illa) is the anchor of a ruling, a different term on the same word.
+
+**Related:** [sahih_hadith](#sahih_hadith), [daif_hadith](#daif_hadith)
+
+**Texts**
+
+- `src:openiti-nukhba-shamela5940/v04:p722`: al-Nukhba, commentary on the ṣaḥīḥ.
+  > والمعلل ما فيه علة خفية قادحة
+
 <a id="ilm"></a>
 
 ## al-ʿilm (العلم)
@@ -849,7 +935,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-kasr (الكسر)
 
-*breaking (the ḥikma).* Showing the ḥikma without the ruling. Ibn Qudāma and al-Ṭūfī: not binding, since the ḥikma cannot be measured by opinion; al-Kawkab: the sound view among the aṣḥāb is that kasr does not void the ʿilla, while Ibn Mufliḥ calls it 'naqḍ of the meaning', treated like naqḍ; al-Shinqīṭī holds it impairs wherever naqḍ does.
+*breaking (the ḥikma).* Showing the ḥikma without the ruling. Ibn Qudāma and al-Ṭūfī: not binding, since the ḥikma cannot be measured by opinion; al-Kawkab: al-ṣaḥīḥ among the aṣḥāb («الصحيح عند أصحابنا») is that kasr does not void the ʿilla, while Ibn Mufliḥ calls it 'naqḍ of the meaning', treated like naqḍ; al-Shinqīṭī holds it impairs wherever naqḍ does.
 
 **Related:** [naqd](#naqd), [hikma](#hikma), [qawadih](#qawadih)
 
@@ -1003,7 +1089,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-manʿ (المنع)
 
-*denial.* Denial, by the objector, of the aṣl's ruling, of the ʿilla's existence in the aṣl, of its causality, or of its existence in the farʿ; the soundest view is that the arguer is not cut off by denial of the aṣl ruling (Ibn Qudāma, al-Ṭūfī). Muṭālaba (demanding proof of causality) is the third of these denials.
+*denial.* Denial, by the objector, of the aṣl's ruling, of the ʿilla's existence in the aṣl, of its causality, or of its existence in the farʿ; al-ṣaḥīḥ (Ibn Qudāma «والصحيح», al-Ṭūfī «على الأصح») is that the arguer is not cut off by denial of the aṣl ruling (Ibn Qudāma, al-Ṭūfī). Muṭālaba (demanding proof of causality) is the third of these denials.
 
 **Related:** [qawadih](#qawadih), [muarada](#muarada)
 
@@ -1345,7 +1431,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-qiyās (القياس)
 
-*analogy.* Ibn ʿUthaymīn: equating a farʿ with an aṣl in a ruling for an ʿilla uniting them. Ibn Qudāma and al-Ṭūfī: carrying (ḥaml) a farʿ onto an aṣl in a ruling by a common factor; al-Kawkab: returning (radd) a farʿ to an aṣl by a uniting ʿilla. Its pillars are aṣl, farʿ, ʿilla and ḥukm. Ibn Taymiyya (via Ibn al-Qayyim) distinguishes sound qiyās (joining like cases, separating unlike ones), which never contradicts a text, from unsound qiyās.
+*analogy.* Ibn ʿUthaymīn: equating a farʿ with an aṣl in a ruling for an ʿilla uniting them. Ibn Qudāma and al-Ṭūfī: carrying (ḥaml) a farʿ onto an aṣl in a ruling by a common factor; al-Kawkab: returning (radd) a farʿ to an aṣl by a uniting ʿilla. Its pillars are aṣl, farʿ, ʿilla and ḥukm. Ibn Taymiyya (via Ibn al-Qayyim) distinguishes ṣaḥīḥ (sound) qiyās («والصحيح هو الذي وردت به الشريعة»; joining like cases, separating unlike ones), which never contradicts a text, from unsound qiyās.
 
 **Conditions**
 
@@ -1486,11 +1572,47 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009`: Prohibition returning to the essence or a specific condition of worship voids it; otherwise two narrations or two wajhs.
   > في العبادات الواقعة على وجه محرم، إن كان التحريم عائدا إلى ذات العبادة على وجه يختص بها لم يصح، وإن كان عائدا إلى شرطها فإن كان على وجه يختص بها فكذلك أيضا، وإن كان لا يختص بها ففي الصحة روايتان أشهرهما عدمها، وإن عاد إلى ما ليس بشرط فيها ففي الصحة وجهان واختار أبو بكر عدم الصحة وخالفه الأكثرون فللأول أمثلة كثيرة: (منها) صوم يوم العيد فلا يصح بحال على المذهب (ومنها) الصلاة في أوقات النهي. (ومنها) 
 
+<a id="sahih_hadith"></a>
+
+## al-ṣaḥīḥ (الصحيح)
+
+*al-ṣaḥīḥ (of a ḥadīth): the grade that makes it ḥujja; not the validity of an act, nor a view the madhhab prefers.* Ibn Ḥajar, al-Nukhba: the āḥād report «بنقل عدل تام الضبط، متصل السند، غير معلل ولا شاذ» is «الصحيح لذاته»: an upright narrator of complete precision, a connected isnād, no ʿilla and no shudhūdh. It is the top of al-Albānī's verdicts and, with al-ḥasan, what the ḥadīth gate admits (D4, Usul.Seam.admitted).
+
+**Conditions**
+
+- ʿadl narrators
+- complete ḍabṭ
+- connected isnād
+- no ʿilla (illa_hadith)
+- no shudhūdh
+
+**Related:** [daif_hadith](#daif_hadith), [illa_hadith](#illa_hadith)
+
+**Lean:** `Hadith.Verdict.sahih`, `Usul.Seam.admitted`
+
+**Texts**
+
+- `src:openiti-nukhba-shamela5940/v04:p722`: al-Nukhba: the five conditions of the ṣaḥīḥ li-dhātih.
+  > بنقل عدل تام الضبط، متصل السند، غير معلل ولا شاذ: هو الصحيح لذاته
+
+<a id="sahih_qawl"></a>
+
+## al-ṣaḥīḥ (الصحيح)
+
+*al-ṣaḥīḥ (of a view): the view the author or the madhhab prefers (al-ṣaḥīḥ min al-madhhab); not the validity of an act, nor a ḥadīth grade.* A tarjīḥ inside the khilāf: Ibn Rajab, of the riwāyas on the unborn child, «والصحيح من المذهب أن له حكما» (Q84). It weighs views; whether the act it rules on is ṣaḥīḥ is the other term (sahih).
+
+**Related:** [asahh](#asahh), [daif_qawl](#daif_qawl)
+
+**Texts**
+
+- `src:openiti-rajab-shamela21730/v01:p178`: Ibn Rajab Q84.
+  > قالوا والصحيح من المذهب أن له حكما
+
 <a id="shabah"></a>
 
 ## al-shabah (الشبه)
 
-*resemblance.* Al-Qāḍī: the farʿ oscillates between a permitting and a prohibiting aṣl and is joined to the one it resembles more (the slave between the free man and the beast). Sources differ on its authority: two reports from Aḥmad (al-Ṭūfī: the more apparent is that it is valid); al-Kawkab: a proof only where qiyās al-ʿilla is impossible; Ibn ʿUthaymīn calls it weak; Ibn al-Qayyim says God reports it only from the people of falsehood.
+*resemblance.* Al-Qāḍī: the farʿ oscillates between a permitting and a prohibiting aṣl and is joined to the one it resembles more (the slave between the free man and the beast). Sources differ on its authority: two reports from Aḥmad (al-Ṭūfī: the more apparent is that it is valid); al-Kawkab: a proof only where qiyās al-ʿilla is impossible; Ibn ʿUthaymīn calls it ḍaʿīf («وهذا القسم من القياس ضعيف»); Ibn al-Qayyim says God reports it only from the people of falsehood.
 
 **Related:** [masalik_al_illa](#masalik_al_illa), [tarjih](#tarjih)
 
@@ -1630,7 +1752,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-ṭāhir (الطاهر)
 
-*al-ṭāhir: not najis; of water in the madhhab, also a middle class (ṭāhir, not purifying).* What is not najis (al-manī is ṭāhir: F120 «ومنه طاهر يوجب الغسل وهو المني»). In the madhhab's division of water it is also a middle class between ṭahūr and najis: water a ṭāhir substance has changed loses its ṭahūriyya («وأنه يسلبه الطهورية في الأول دون الثاني»). al-Saʿdī grades that farq weak and holds the water ṭahūr (F19). So «pure water» must say which: ṭahūr (purifying) or ṭāhir (not najis, and in the madhhab not purifying).
+*al-ṭāhir: not najis; of water in the madhhab, also a middle class (ṭāhir, not purifying).* What is not najis (al-manī is ṭāhir: F120 «ومنه طاهر يوجب الغسل وهو المني»). In the madhhab's division of water it is also a middle class between ṭahūr and najis: water a ṭāhir substance has changed loses its ṭahūriyya («وأنه يسلبه الطهورية في الأول دون الثاني»). al-Saʿdī grades that farq ḍaʿīf and holds the water ṭahūr (F19). So «pure water» must say which: ṭahūr (purifying) or ṭāhir (not najis, and in the madhhab not purifying).
 
 **Related:** [tahur](#tahur), [tahara](#tahara), [najasa](#najasa), [maniyy](#maniyy)
 
@@ -1860,7 +1982,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-wājib (الواجب)
 
-*obligatory.* What the Lawgiver commanded by way of binding (ʿalā wajh al-ilzām), e.g. the five prayers. Ibn al-Laḥḥām reports two narrations from Aḥmad on farḍ and wājib: in the soundest they are synonyms; in the other farḍ is stronger (e.g. established by a decisive proof).
+*obligatory.* What the Lawgiver commanded by way of binding (ʿalā wajh al-ilzām), e.g. the five prayers. Ibn al-Laḥḥām reports two narrations from Aḥmad on farḍ and wājib: in the sounder (aṣaḥḥ, «في أصح الروايتين») they are synonyms; in the other farḍ is more emphatic (ākad) (e.g. established by a decisive proof).
 
 **Conditions**
 
@@ -1937,7 +2059,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-ẓann (الظن)
 
-*presumption, probable belief.* Perceiving a thing with a weaker possibility of its opposite (Ibn ʿUthaymīn); the weaker side is wahm, equal sides shakk. Ẓann has degrees, the higher called ghalabat al-ẓann (al-Kawkab), and leans on a cause, unlike wahm (al-Rawḍa). Usage: «ʿilm» is said figuratively of presumptive assent («فإن علمتموهن مؤمنات») and «ẓann» of knowledge («الذين يظنون أنهم ملاقو ربهم»), but neither collapses the grades. Whether fiqh, mostly ẓann, is ʿilm is answered several ways: the ruling is known and the ẓann lies on its way (al-Rāzī; al-Ṭūfī finds it contrived and would define fiqh as ẓann); fiqh is maʿrifa covering both (Ibn ʿUthaymīn); Ibn Taymiyya: belief that a view preponderates is ʿilm, the preponderance of one belief over another is ẓann, and fiqh is the former (IQ-21).
+*presumption, probable belief.* Perceiving a thing with an outweighed (marjūḥ) possibility of its opposite (Ibn ʿUthaymīn: «مع احتمال ضد مرجوح»); the outweighed side is wahm, equal sides shakk. Ẓann has degrees, the higher called ghalabat al-ẓann (al-Kawkab), and leans on a cause, unlike wahm (al-Rawḍa). Usage: «ʿilm» is said figuratively of presumptive assent («فإن علمتموهن مؤمنات») and «ẓann» of knowledge («الذين يظنون أنهم ملاقو ربهم»), but neither collapses the grades. Whether fiqh, mostly ẓann, is ʿilm is answered several ways: the ruling is known and the ẓann lies on its way (al-Rāzī; al-Ṭūfī finds it contrived and would define fiqh as ẓann); fiqh is maʿrifa covering both (Ibn ʿUthaymīn); Ibn Taymiyya: belief that a view preponderates is ʿilm, the preponderance of one belief over another is ẓann, and fiqh is the former (IQ-21).
 
 **Related:** [ghalabat_al_zann](#ghalabat_al_zann), [ilm](#ilm), [shakk](#shakk), [yaqin](#yaqin), [zahir](#zahir), [zann_bayyin_khatauh](#zann_bayyin_khatauh)
 
