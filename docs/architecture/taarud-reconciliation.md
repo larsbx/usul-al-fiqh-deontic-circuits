@@ -163,6 +163,22 @@ All six resolve by tarjīḥ against their readings and join the worklist. 1.f00
 | 53.f009 (register) | in al-Furūʿ's «ولا يتصرف», who does not dispose, wife or husband |
 | 78 (register) | the qāʿida's «فوجهان» for a bare permission to occupy stays open |
 
+**Lane A, round 2** added 10 contradictions and 23 evidence items: 7 residues, 2 resolved for the reading and 1 tawaqquf (96.f006). No jamʿ was attempted. The ledger stands at 189 entries and 472 active evidence items, with 19 jamʿ, 160 tarjīḥ (97 residues) and 10 tawaqquf. Candidate farqs and register questions from the round:
+
+| Farʿ / qāʿida | Candidate farq or question |
+|---|---|
+| 104.f010 | Kashshāf: release «إسقاط حق فينفذ مع العلم والجهل»; a refinement must still keep 104.f011 (release from a sale's defects) apart |
+| 95.f006 | the agent within his mandate vs beyond it: the madhhab makes the muḍārib's purchase a breach whatever he knew |
+| 95.f007 | the loss on whoever directly used and destroyed part, even when misled, against Ibn Rajab's cutting/wearing harmonisation |
+| 100.f001 | the vowed uḍḥiya (eaten from, like the uḍḥiya) vs the vowed hady |
+| 96.f004, f006 | the owner's intention needed for discharge (al-Qāḍī; Ṣāḥib al-Talkhīṣ): one fact could refine `ownedDischarge` for both |
+| 95 (register) | the bare-ijtihād branch is «قولان»; the split by acting as owner or negligence is the shard's reading |
+| 100.f003 (register) | al-Zarkashī: Aḥmad's last riwāya bars any obligatory fast in tashrīq; whether that is naskh of the vowed-fast riwāya (`naskh` left null) |
+| 104.f012 (register) | no label on ratifying an unknown bequest; annotated off the madhhab pending a decision |
+| 105.f009 (register) | whether Ibn Rajab's general qiyās al-madhhab for the lot counts as evidence on the ambiguous waqf deed |
+| 99.f002, f003 (register) | derivable for want of a reported counter-position, though the madhhab holds lending recommended: side-check candidates |
+| 102.f003 (register) | the child's or madman's killing taken as «on a forbidden manner» |
+
 **Left as residues, for want of a cited farq:**
 
 | Encoder | Residues / cases | Why no jamʿ |
