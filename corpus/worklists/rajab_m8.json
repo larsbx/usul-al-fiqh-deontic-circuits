@@ -2222,7 +2222,9 @@
         "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f007",
         "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f008"
       ],
-      "home_encoders": []
+      "home_encoders": [
+        "mubashara_tasabbub"
+      ]
     },
     {
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128",

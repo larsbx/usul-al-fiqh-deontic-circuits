@@ -92,6 +92,11 @@ qaida_type(majhul_madum, 'Ibn Rajab 106 «ينزل المجهول منزلة ا�
 type_field(majhul_madum, unknown, 'Option Bool').
 type_field(majhul_madum, despair, 'Option Bool').
 type_field(majhul_madum, hardship, 'Option Bool').
+qaida_type(mubashara, 'Ibn Rajab 127 «إذا استند إتلاف أموال الآدميين ونفوسهم إلى مباشرة وسبب تعلق الضمان بالمباشرة دون السبب إلا إذا كانت المباشرة مبنية على السبب وناشئة عنه»: an itlāf (Q13 ⊔ Q36) resting on a direct act and a cause; whether the direct act arises from the cause, and whether it has transgression.').
+type_extends(mubashara, itlaf_hal).
+type_extends(mubashara, itlaf_qasd).
+type_field(mubashara, arising_from_sabab, 'Option Bool').
+type_field(mubashara, udwan_in_mubashara, 'Option Bool').
 qaida_type(niyya_mansiyya, 'A forgotten iḥrām intention (Q11): what is valid on every possible rite suffices.').
 type_extends(niyya_mansiyya, yaqin).
 type_field(niyya_mansiyya, component, 'Option (Usul.Refinements.Nusuk → Bool)').
@@ -467,6 +472,9 @@ encoder_reads(mistaken_basis, 1, believed_basis).
 encoder_reads(mistaken_basis, 2, actual_basis).
 encoder_type(mixed_haram_by_proportion, 'Usul.Refinements.MixedHaram').
 encoder_reads(mixed_haram_by_proportion, 1, lawful_many).
+encoder_type(mubashara_tasabbub, 'Usul.Readings.Mubashara.Daman').
+encoder_reads(mubashara_tasabbub, 1, arising_from_sabab).
+encoder_reads(mubashara_tasabbub, 2, udwan_in_mubashara).
 encoder_type(nafl_before_fard, 'Bool').
 encoder_reads(nafl_before_fard, 1, narrow).
 encoder_reads(nafl_before_fard, 2, financial).

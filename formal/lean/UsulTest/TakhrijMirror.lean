@@ -484,3 +484,7 @@ import Usul
 #guard (Usul.CommandSchemata.intendedUsage .abuBarakat .permission) == .figurative
 #guard (Usul.CommandSchemata.intendedUsage .qadiArgument .recommendation) == .literal
 #guard (Usul.CommandSchemata.intendedUsage .qadiArgument .permission) == .figurative
+#guard (Usul.Readings.Mubashara.damanOn false false) == .mubashir
+#guard (Usul.Readings.Mubashara.damanOn false true) == .mubashir
+#guard (Usul.Readings.Mubashara.damanOn true false) == .sabab
+#guard (Usul.Readings.Mubashara.damanOn true true) == .shared

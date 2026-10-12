@@ -1,4 +1,5 @@
 import Usul.Typing
+import Usul.Readings.Mubashara
 
 /-!
 # The remaining encoders, typed
@@ -713,6 +714,14 @@ def generality : Typed Situation (Bool) where
   proj s := do pure (← s.nounForm, ← s.context, ← s.ahd)
   embed | (x1, x2, x3) => { nounForm := some x1, context := some x2, ahd := some x3 }
   run | (x1, x2, x3) => Usul.Dalala.IsGeneralIn x1 x2 x3
+  proj_embed := fun _ => rfl
+
+/-- `mubashara_tasabbub` reads Ibn Rajab 127's type, which extends itlāf's. -/
+def mubasharaTasabbub : Typed Situation Usul.Readings.Mubashara.Daman where
+  Local := Bool × Bool
+  proj s := do pure (← s.arisingFromSabab, ← s.udwanInMubashara)
+  embed | (a, u) => { arisingFromSabab := some a, udwanInMubashara := some u }
+  run | (a, u) => Usul.Readings.Mubashara.damanOn a u
   proj_embed := fun _ => rfl
 
 end Usul.Typing

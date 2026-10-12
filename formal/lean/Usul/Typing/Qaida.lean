@@ -118,6 +118,13 @@ structure Rukhsa extends ShakkShart where
 structure NiyyaMansiyya extends Yaqin where
   component : Option (Refinements.Nusuk → Bool) := none
 
+/-- Ibn Rajab 127 «إذا استند إتلاف أموال الآدميين ونفوسهم إلى مباشرة وسبب تعلق الضمان بالمباشرة دون
+السبب إلا إذا كانت المباشرة مبنية على السبب وناشئة عنه»: an itlāf (Q13 ⊔ Q36) resting on a direct
+act and a cause; whether the direct act arises from the cause, and whether it has transgression. -/
+structure Mubashara extends ItlafHal, ItlafQasd where
+  arisingFromSabab : Option Bool := none
+  udwanInMubashara : Option Bool := none
+
 /-! ## The remaining encoders' qawāʿid -/
 
 /-- Ibn al-Laḥḥām 43 «الأمر المجرد عن قرينة هل يقتضى الوجوب أم لا؟». Read by `amr`, `amr_mixed`, `command_intended_usage`, `command_nonverbal_usage`, `command_obligation_status`, `command_prophetic_act_usage`. -/

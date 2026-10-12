@@ -64,7 +64,7 @@ end Typed
 /-- A situation: the join of the qāʿida types. -/
 structure Situation extends Qaida.Qarain, Qaida.ItlafHal, Qaida.ItlafQasd, Qaida.Amana, Qaida.ZannError,
     Qaida.MajhulHaqq, Qaida.Luqata, Qaida.Istihlak, Qaida.BadalWujub, Qaida.Intiqal, Qaida.Itizal,
-    Qaida.Rukhsa, Qaida.NiyyaMansiyya, Qaida.Rajab4, Qaida.Rajab5, Qaida.Lahham43, Qaida.Rajab59,
+    Qaida.Rukhsa, Qaida.NiyyaMansiyya, Qaida.Mubashara, Qaida.Rajab4, Qaida.Rajab5, Qaida.Lahham43, Qaida.Rajab59,
     Qaida.Sadi9, Qaida.Rajab32, Qaida.Rajab35, Qaida.Rajab27, Qaida.Rajab14, Qaida.Rajab12,
     Qaida.Rajab28, Qaida.Rajab56, Qaida.Rajab43, Qaida.Sadi48, Qaida.Rajab39, Qaida.Rajab51,
     Qaida.Rajab47, Qaida.Rajab61, Qaida.Rajab58, Qaida.Rajab52, Qaida.Rajab54, Qaida.Sadi35,

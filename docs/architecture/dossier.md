@@ -1098,3 +1098,36 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Lean:** `Usul.Refinements.annulsNonexistentIn`, `Usul.Refinements.annulsNonexistentIn_conservative`  
 **Conservative over the earlier reading:** `Usul.Refinements.annulsNonexistentIn_conservative`
+
+<a id="mubashara_tasabbub"></a>
+
+## The direct act and the cause: on whom the ḍamān of an itlāf falls
+
+**Terms:** [al-ḍamān](../glossary.md#daman), [al-itlāf](../glossary.md#itlaf), [al-sabab](../glossary.md#sabab)  
+**Closes:** `rule:mubashara_tasabbub`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127`: Ibn Rajab, qāʿida 127: an itlāf resting on a direct act and a cause makes the direct act liable, «إلا إذا كانت المباشرة مبنية على السبب وناشئة عنه»; then the cause alone bears it where the direct act has no transgression, and shares it where it has some. «فالأقسام ثلاثة».
+  > إذا استند إتلاف ms372 أموال الآدميين ونفوسهم إلى مباشرة وسبب تعلق الضمان بالمباشرة دون السبب إلا إذا كانت المباشرة مبنية على السبب وناشئة عنه، سواء كانت ملجئة، ثم إن كانت المباشرة والحالة هذه لا عدوان فيها بالكلية استقل السبب وحده بالضمان، وإن كان فيها عدوان شاركت السبب في الضمان. فالأقسام ثلاثة: ومن صور القسم الأول مسائل: منها: إذا حفر واحد بئرا عدوانا ثم دفع غيره فيها آدميا معصوما أو مالا لمعصوم
+
+**Conditions**
+
+1. an itlāf of persons or property resting on both a direct act (mubāshara) and a cause (sabab)
+2. whether the direct act is built on the cause and arises from it
+3. whether the direct act has any transgression
+
+**Texts**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f000`: Division one: pushing someone into a well another dug in transgression, «فالضمان على الدافع وحده».
+  > إذا حفر واحد بئرا عدوانا ثم دفع غيره فيها آدميا معصوما أو مالا لمعصوم فسقط فتلف فالضمان على الدافع وحده.
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f003`: Division two: the judge's execution arises from false testimony without transgression in him, «فالضمان والقود عليهم دون الحاكم».
+  > لو قتل الحاكم حدا أو قصاصا بشهادة ثم أقر الشهود أنهم تعمدوا الكذب فالضمان والقود عليهم دون الحاكم. ونقل أبو النصر العجلي عن أحمد إذا رجم الحاكم بشهادة أربعة ثم تبين أن المرجوم مجبوب فالضمان على الحاكم وهو مشكل ; لأنه قد تبين كذبهم بالعيان فهو كإقرارهم بتعمد الكذب، وقد يفرق بأن المجبوب لا يخفى أمره غالبا فالإقدام على رجمه لا يخلو من تفريط، وبأن الشهود قد يشتبه عليهم فلا يتحقق تعمدهم للكذب وأما إن ت
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f005`: Division three, on one riwāya: «الممسك مع القاتل فإنهما يشتركان في الضمان والقود على إحدى الروايتين»; the other riwāya gives it to the direct actor alone.
+  > الممسك مع القاتل فإنهما يشتركان في الضمان والقود على إحدى الروايتين، وفي الأخرى يختص المباشر بهما ويحبس الماسك حتى يموت.
+
+**Rationale.** The IslamQA tranche left 9 of its 27 itlāf cases as missing_rule with need rule:mubashara_tasabbub: these answers turn on causation, which the itlāf encoder (al-Saʿdī Q13 ⊔ Q36) does not read. Ibn Rajab's qāʿida 127 states that rule over itlāf itself, with three divisions its own furūʿ instance. It is formalised as a new encoder beside itlāf, which is unchanged; its type extends itlāf's types (Usul.Typing.Qaida.Mubashara). A cause with no direct act is not covered by the statement and stays a gap.
+
+**Lean:** `Usul.Readings.Mubashara.damanOn`, `Usul.Readings.Mubashara.q127_direct_unless_arising`, `Usul.Readings.Mubashara.q127_cause_alone_without_udwan`, `Usul.Readings.Mubashara.q127_shared_with_udwan`, `Usul.Readings.Mubashara.q127_three_divisions`, `Usul.Readings.Mubashara.q127_agrees_with_q13`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
