@@ -178,14 +178,14 @@ Every ikhtilāf farʿ off the marked madhhab side is run through the kernel's ow
 **Scope reconciliation.** Counts come from committed record IDs minus all existing annotations, not historical estimates. M4 now annotates 196 Ibn Rajab records under 14 qawāʿid, including nine `.f000` additions. PR #29's 1,129 segmented records minus those 196 and tranche 1's 26 left 907 records in 122 qawāʿid with cases. The old “869 in 146” mixed pre-opening counts with all unannotated qawāʿid, including those with no segmented case. PR #30 then added seven segmented records and annotated tranche 2's 25: 1,136 − 196 − 26 − 25 = 889, in 118 qawāʿid. Merged PR #32 then added the list-and-division segmentation and 21 candidate annotations. The unified tranche 3 below preserves those cases and PR #31's eight existing-record annotations, in one 29-record suite; current totals are generated below. Ibn al-Laḥḥām and the global report's totals are separate scopes.
 
 <!-- BEGIN GENERATED M8 SCOPE -->
-**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 456 annotated + **723 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 70 are fully annotated and **84 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
+**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 547 annotated + **632 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 85 are fully annotated and **69 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
 
 The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
 
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.759 | 0 | 0 |
-| All annotation suites | 483 | 0.988 | 0.689 | 0 | 6 |
+| All annotation suites | 574 | 0.990 | 0.709 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -428,6 +428,20 @@ Results on the tranche:
 - **Verification:** every ikhtilāf was checked against al-Inṣāf and the muʿtamad before the ledger. Three annotated off the madhhab were on it (57.f003, f005, f006); for 57.f005 the muʿtamad has the two coinciding gifts share («فيتحاصان لتقارنهما»), so the reading needs no separate «bar first» fact. Two annotated on it were not (59.f004, f005). 55.f003 and 59.f006 have no later treatment and keep their annotation.
 - **Reconciliation:** 3 contradictions, 8 evidence items. 59.f004 is a jamʿ on the madhhab's farq, the return impossible once the defective thing perishes («وهذا المذهب. وعليه أكثر الأصحاب»; `annulsNonexistentIn`). 59.f005 (iqāla after loss) stays with the reading by tarjīḥ, al-Qāḍī's «قياس المذهب» outranking the muʿtamad's jazm while al-Inṣāf is undecided, and is listed for review. 57.f002 is annotated for the branch where the free woman would suffice him, the only one with a bar to coincide (where she would not, the madhhab validates both, as the reading gives); there only Ibn Rajab's own fāʾida, quoted in al-Inṣāf, is found against al-Qāḍī and Abū al-Khaṭṭāb, so it rests in tawaqquf. 57.f004 is annotated for its leading ruling, divorced by the repetition («المشهور عند الأصحاب»; al-Inṣāf, «على الصحيح من المذهب»).
 
+**Lane A, round 1 (parallel; qawāʿid 53, 60, 67, 69, 71, 72, 73, 74, 77, 78, 79, 80, 81, 90, 92; 91 furūʿ).** The first parallel run of the [method](derivation-method.md#5-parallel-runs): four shards (`rajab-a1` … `rajab-a4`) each worked from the pinned base `8cd49f8` in an isolated worktree, writing only their own claim, Lean module (`Usul/Readings/RajabA1` … `A4`), encoder fragment, suite and ledger fragment, and verified every madhhab side against al-Inṣāf and the muʿtamad before setting it. One integrator merged them in order and regenerated once. Readings, by shard:
+
+| Shard | Qāʿida: reading |
+|---|---|
+| a1 | 60 `rescission` (barred, with remedy, free); 67 `recourseAfterReturn` (gift founds recourse, release not); 69 `mayDelegate`; 71 `mayEat` |
+| a2 | 72 `nafaqaStipulable`, `nafaqaOwned`; 73 `benefitConditionValid`; 74 `wageWithoutStipulation`; 79 `ownerTakesCrop`; 80 `asTree` |
+| a3 | 53 `disposalStands` (fails only where the right is demanded and fixed in the thing); 78 `lossLiable` |
+| a4 | 77 `takenOverAtValue`; 81 `attachedGrowthFollows`, `cutSaleVoid`; 90 `seizingHandLiable`; 92 `liableWithOwnerHand` |
+
+Results on the round:
+- **37 derivable, 54 ikhtilāf (37 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 91/91 = 1.000, madhhab coverage 74/91 = 0.813. Facts a reading lacked were added to it rather than recorded as gaps (71's `compensatedOtherwise`, 81's second reading for the cut sale).
+- **Reconciliation:** 17 contradictions with 35 evidence items, all residues against their readings. At integration 77.f006's grades were corrected: Ibn Rajab's own «والصحيح الأول» is an author's preference (`ashab`), not a taṣḥīḥ, so al-Inṣāf's «هذا المذهب مطلقا» prevails.
+- **Register questions** raised by the shards are listed in [`taarud-reconciliation.md`](taarud-reconciliation.md).
+
 **Coverage trend:**
 
 | Stage | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
@@ -463,6 +477,8 @@ Results on the tranche:
 | M8 tranche 11 alone | 22 | 1.000 | 0.909 | 0 | 0 |
 | All, after tranche 11 | 483 | 0.988 | 0.701 | 0 | 6 |
 | All, after lane D (sides verified) | 483 | 0.988 | 0.689 | 0 | 6 |
+| Lane A round 1 alone | 91 | 1.000 | 0.813 | 0 | 0 |
+| All, after lane A round 1 | 574 | 0.990 | 0.709 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 

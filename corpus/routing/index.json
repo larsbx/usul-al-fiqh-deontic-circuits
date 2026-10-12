@@ -3,17 +3,17 @@
   "status": "candidate",
   "method": "TF-IDF centroid of each encoder's evidence (its annotated cases' records and its qawāʿid); see pipeline/usul_corpus/routing.py",
   "recall": {
-    "cases": 483,
+    "cases": 574,
     "folds": 5,
     "held_out": {
-      "1": 0.6149,
-      "5": 0.853,
-      "10": 0.9068
+      "1": 0.601,
+      "5": 0.8519,
+      "10": 0.9007
     },
     "prior": {
-      "1": 0.0807,
-      "5": 0.2754,
-      "10": 0.3499
+      "1": 0.0679,
+      "5": 0.2317,
+      "10": 0.3066
     }
   },
   "encoders": {
@@ -24,9 +24,9 @@
         "ليله",
         "طالق",
         "امراته",
-        "انت",
         "وكيلا",
         "يفعل",
+        "انت",
         "وكل",
         "يدري",
         "طلاق",
@@ -40,7 +40,7 @@
           "path": [
             "كتاب الطلاق"
           ],
-          "score": 0.2635
+          "score": 0.267
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00398",
@@ -49,7 +49,7 @@
             "كتاب الطلاق",
             "باب ما يختلف به عدد الطلاق"
           ],
-          "score": 0.2353
+          "score": 0.2371
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00635",
@@ -58,16 +58,7 @@
             "كتاب الطلاق",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.2162
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00151",
-          "heading": "فصل",
-          "path": [
-            "كتاب الصيام",
-            "باب صوم التطوع وما يكره منه وذكر ليلة القدر"
-          ],
-          "score": 0.2049
+          "score": 0.2207
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00408",
@@ -76,7 +67,16 @@
             "كتاب الطلاق",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.2008
+          "score": 0.2052
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00151",
+          "heading": "فصل",
+          "path": [
+            "كتاب الصيام",
+            "باب صوم التطوع وما يكره منه وذكر ليلة القدر"
+          ],
+          "score": 0.2048
         }
       ]
     },
@@ -103,7 +103,7 @@
           "path": [
             "كتاب الأيمان"
           ],
-          "score": 0.2105
+          "score": 0.2127
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00014",
@@ -111,7 +111,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1905
+          "score": 0.1966
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00016",
@@ -119,7 +119,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1763
+          "score": 0.1826
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00034",
@@ -127,7 +127,7 @@
           "path": [
             "كتاب الزكاة"
           ],
-          "score": 0.1744
+          "score": 0.1726
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00013",
@@ -135,7 +135,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1683
+          "score": 0.1724
         }
       ]
     },
@@ -143,8 +143,8 @@
       "cases": 6,
       "lexicon": [
         "وقت",
-        "اولاهما",
         "يجزيه",
+        "اولاهما",
         "الصلاتين",
         "الوجوب",
         "الواجب",
@@ -162,7 +162,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.2883
+          "score": 0.2899
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00016",
@@ -170,7 +170,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.2318
+          "score": 0.2395
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00050",
@@ -179,7 +179,7 @@
             "كتاب الصلاة",
             "باب صلاة أهل الأعذار"
           ],
-          "score": 0.1894
+          "score": 0.1901
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00013",
@@ -187,23 +187,23 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1788
+          "score": 0.1825
         },
         {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00025",
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00014",
           "heading": "باب شروط الصلاة",
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1703
+          "score": 0.1741
         }
       ]
     },
     "advanced_worship": {
       "cases": 0,
       "lexicon": [
-        "الوجوب",
         "وقت",
+        "الوجوب",
         "المعجل",
         "الواجب",
         "يجزيه",
@@ -222,7 +222,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1758
+          "score": 0.1826
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00031",
@@ -230,7 +230,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1338
+          "score": 0.1385
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00013",
@@ -238,7 +238,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.13
+          "score": 0.1334
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00034",
@@ -246,7 +246,7 @@
           "path": [
             "كتاب الزكاة"
           ],
-          "score": 0.115
+          "score": 0.1191
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00014",
@@ -254,7 +254,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1089
+          "score": 0.1134
         }
       ]
     },
@@ -262,14 +262,14 @@
       "cases": 5,
       "lexicon": [
         "امرا",
-        "الوجوب",
         "حقيقه",
+        "الوجوب",
         "الامر",
         "اطلاق",
         "يقتضي",
         "يسمي",
-        "البركات",
         "يعلي",
+        "البركات",
         "الاستفهام",
         "منعا",
         "وتسليما"
@@ -279,7 +279,7 @@
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00547",
           "heading": "كتاب النكاح",
           "path": [],
-          "score": 0.1676
+          "score": 0.1581
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00103",
@@ -288,13 +288,7 @@
             "كتاب الحج",
             "باب الهدي والأضاحي"
           ],
-          "score": 0.1186
-        },
-        {
-          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00227",
-          "heading": "كتاب النكاح",
-          "path": [],
-          "score": 0.1083
+          "score": 0.1165
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00549",
@@ -302,13 +296,22 @@
           "path": [
             "كتاب النكاح"
           ],
-          "score": 0.1024
+          "score": 0.1011
         },
         {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00187",
-          "heading": "كتاب الجهاد",
+          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00227",
+          "heading": "كتاب النكاح",
           "path": [],
-          "score": 0.0926
+          "score": 0.0982
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00805",
+          "heading": "فصل: - ويحرم تعلم السحر",
+          "path": [
+            "كتاب الحدود",
+            "باب حكم المرتد"
+          ],
+          "score": 0.0807
         }
       ]
     },
@@ -317,16 +320,16 @@
       "lexicon": [
         "حمل",
         "الوجوب",
-        "قرينه",
         "حقيقته",
         "يريبك",
+        "قرينه",
         "يقتضي",
         "الامر",
         "خرجت",
         "الله",
-        "اسحاق",
         "الاشعري",
-        "البرهان"
+        "البرهان",
+        "الحرمين"
       ],
       "babs": [
         {
@@ -335,7 +338,7 @@
           "path": [
             "كتاب الجنائز"
           ],
-          "score": 0.1979
+          "score": 0.1762
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00064",
@@ -343,7 +346,7 @@
           "path": [
             "كتاب الجنائز"
           ],
-          "score": 0.1678
+          "score": 0.145
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00287",
@@ -351,13 +354,13 @@
           "path": [
             "كتاب العدد"
           ],
-          "score": 0.1436
+          "score": 0.1261
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00289",
           "heading": "كتاب الرضاع",
           "path": [],
-          "score": 0.1349
+          "score": 0.1129
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00019",
@@ -365,7 +368,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1259
+          "score": 0.1116
         }
       ]
     },
@@ -377,13 +380,13 @@
         "ورد",
         "المصراه",
         "ترد",
-        "دل",
         "فترد",
         "فدل",
         "واختيارا",
         "والرجوع",
         "الانفساخ",
-        "التمر"
+        "التمر",
+        "الفسوخ"
       ],
       "babs": [
         {
@@ -392,7 +395,7 @@
           "path": [
             "كتاب البيوع"
           ],
-          "score": 0.1672
+          "score": 0.1582
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00160",
@@ -401,7 +404,7 @@
             "كتاب البيع",
             "باب الخيار في البيع"
           ],
-          "score": 0.1512
+          "score": 0.1536
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00074",
@@ -409,7 +412,7 @@
           "path": [
             "كتاب البيوع"
           ],
-          "score": 0.125
+          "score": 0.1281
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00168",
@@ -418,7 +421,7 @@
             "كتاب البيع",
             "باب الربا والصرف"
           ],
-          "score": 0.1062
+          "score": 0.105
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00170",
@@ -427,7 +430,7 @@
             "كتاب الحج وشروطه",
             "باب محظورات الإحرام"
           ],
-          "score": 0.1021
+          "score": 0.1016
         }
       ]
     },
@@ -437,11 +440,11 @@
         "تلف",
         "العقد",
         "المشتري",
-        "المبيع",
         "عوضه",
+        "المبيع",
+        "انفسخ",
         "العين",
         "الرد",
-        "انفسخ",
         "الفسخ",
         "تلفت",
         "مثمنا",
@@ -455,7 +458,7 @@
             "كتاب البيع",
             "باب الخيار في البيع"
           ],
-          "score": 0.2465
+          "score": 0.2454
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00072",
@@ -463,7 +466,7 @@
           "path": [
             "كتاب البيوع"
           ],
-          "score": 0.2328
+          "score": 0.2209
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00377",
@@ -471,7 +474,7 @@
           "path": [
             "كتاب الشركة"
           ],
-          "score": 0.2171
+          "score": 0.2192
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00085",
@@ -480,7 +483,7 @@
             "كتاب البيع",
             "باب الخيار"
           ],
-          "score": 0.2123
+          "score": 0.2111
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00162",
@@ -489,7 +492,7 @@
             "كتاب البيع",
             "باب الخيار في البيع"
           ],
-          "score": 0.1977
+          "score": 0.1953
         }
       ]
     },
@@ -517,7 +520,7 @@
             "كتاب الصلاة",
             "باب سجود السهو"
           ],
-          "score": 0.1519
+          "score": 0.152
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00855",
@@ -526,7 +529,7 @@
             "كتاب القضاء والفتيا",
             "باب طريق الحكم وصفته"
           ],
-          "score": 0.1452
+          "score": 0.1459
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00282",
@@ -535,15 +538,15 @@
             "كتاب الشهادات",
             "باب موانع الشهادة وعدد الشهود"
           ],
-          "score": 0.139
+          "score": 0.1383
         },
         {
-          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00147",
-          "heading": "باب جامع الأيمان",
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00057",
+          "heading": "باب صلاة العيدين",
           "path": [
-            "كتاب الطلاق"
+            "كتاب الصلاة"
           ],
-          "score": 0.1326
+          "score": 0.1325
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00202",
@@ -551,7 +554,194 @@
           "path": [
             "كتاب الشهادات"
           ],
-          "score": 0.1324
+          "score": 0.1325
+        }
+      ]
+    },
+    "attached_growth_follows": {
+      "cases": 4,
+      "lexicon": [
+        "زياده",
+        "زاد",
+        "متصله",
+        "الرجوع",
+        "الزياده",
+        "الاب",
+        "البايع",
+        "المردود",
+        "صناعه",
+        "كالسمن",
+        "وتعلم",
+        "للعقد"
+      ],
+      "babs": [
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00194",
+          "heading": "فصل",
+          "path": [
+            "كتاب الحجر"
+          ],
+          "score": 0.2545
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00035",
+          "heading": "باب سجود السهو",
+          "path": [
+            "كتاب الصلاة"
+          ],
+          "score": 0.1829
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00418",
+          "heading": "فصل:- وإن زاد المغصوب لزمه رده بزيادته",
+          "path": [
+            "كتاب الشركة",
+            "باب الغصب وجنابة البهائم"
+          ],
+          "score": 0.1601
+        },
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00076",
+          "heading": "باب الغصب",
+          "path": [
+            "كتاب الإجارة"
+          ],
+          "score": 0.1546
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00236",
+          "heading": "فصل",
+          "path": [
+            "كتاب الغصب"
+          ],
+          "score": 0.1416
+        }
+      ]
+    },
+    "attached_right_disposal": {
+      "cases": 11,
+      "lexicon": [
+        "التصرف",
+        "تصرف",
+        "بحقه",
+        "الحق",
+        "الشفيع",
+        "المشتري",
+        "الجاني",
+        "حقه",
+        "يطالب",
+        "ينفذ",
+        "بمعني",
+        "خيار"
+      ],
+      "babs": [
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00438",
+          "heading": "فصل:- وإن تصرف المشتري في المبيع قبل الطلب",
+          "path": [
+            "كتاب الشركة",
+            "باب الشفعة"
+          ],
+          "score": 0.2036
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00440",
+          "heading": "فصل: ولا شفعة في بيع فيه خيار مجلس",
+          "path": [
+            "كتاب الشركة",
+            "باب الشفعة"
+          ],
+          "score": 0.1829
+        },
+        {
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00093",
+          "heading": "باب الرهن",
+          "path": [
+            "كتاب البيع"
+          ],
+          "score": 0.1681
+        },
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00085",
+          "heading": "فصل [في الإذن للعبد في التصرف]",
+          "path": [
+            "كتاب الوصايا",
+            "باب الموصى إليه"
+          ],
+          "score": 0.1668
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00158",
+          "heading": "فصل",
+          "path": [
+            "كتاب البيع",
+            "باب الخيار في البيع"
+          ],
+          "score": 0.1633
+        }
+      ]
+    },
+    "attached_takeover_at_value": {
+      "cases": 10,
+      "lexicon": [
+        "بالقيمه",
+        "الارض",
+        "غراس",
+        "وبناوه",
+        "ضرر",
+        "الغراس",
+        "يقلع",
+        "يقلعه",
+        "يتملك",
+        "تملكه",
+        "القلع",
+        "المالك"
+      ],
+      "babs": [
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00227",
+          "heading": "فصل",
+          "path": [
+            "كتاب الشركة",
+            "باب الإجارة"
+          ],
+          "score": 0.2012
+        },
+        {
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00120",
+          "heading": "فصل",
+          "path": [
+            "كتاب البيع",
+            "باب الشفعة"
+          ],
+          "score": 0.1189
+        },
+        {
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00117",
+          "heading": "فصل",
+          "path": [
+            "كتاب البيع",
+            "باب الغصب"
+          ],
+          "score": 0.1132
+        },
+        {
+          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00164",
+          "heading": "فصل",
+          "path": [
+            "كتاب الشركة",
+            "باب الإجارة"
+          ],
+          "score": 0.1088
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00445",
+          "heading": "فصل: وإحياء الأرض أن يحوز بحائط منيع يمنع ما وراءه",
+          "path": [
+            "كتاب الشركة",
+            "باب إحياء الموات"
+          ],
+          "score": 0.1056
         }
       ]
     },
@@ -579,7 +769,7 @@
             "كتاب الطهارة",
             "باب المياه"
           ],
-          "score": 0.237
+          "score": 0.2392
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00574",
@@ -588,7 +778,7 @@
             "كتاب الأيمان",
             "باب جامع الأيمان"
           ],
-          "score": 0.2177
+          "score": 0.2156
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00004",
@@ -596,7 +786,7 @@
           "path": [
             "كتاب الطهارة"
           ],
-          "score": 0.1713
+          "score": 0.1746
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00572",
@@ -605,15 +795,76 @@
             "كتاب الأيمان",
             "باب جامع الأيمان"
           ],
-          "score": 0.167
+          "score": 0.1724
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00005",
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00149",
           "heading": "فصل",
           "path": [
-            "كتاب الطهارة"
+            "كتاب الطلاق",
+            "باب جامع الأيمان"
           ],
-          "score": 0.1582
+          "score": 0.1599
+        }
+      ]
+    },
+    "benefit_condition_against_compensation": {
+      "cases": 3,
+      "lexicon": [
+        "العقد",
+        "الزرع",
+        "اشتراط",
+        "الشروط",
+        "حصاد",
+        "القايم",
+        "حصاده",
+        "مشتري",
+        "ويفسد",
+        "البايع",
+        "فساده",
+        "المتعاقدين"
+      ],
+      "babs": [
+        {
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00083",
+          "heading": "باب الشروط في البيع",
+          "path": [
+            "كتاب البيع"
+          ],
+          "score": 0.1929
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00566",
+          "heading": "باب الشروط في النكاح",
+          "path": [
+            "كتاب النكاح"
+          ],
+          "score": 0.1902
+        },
+        {
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00129",
+          "heading": "باب حكم الشروط والعيوب في النكاح",
+          "path": [
+            "كتاب النكاح"
+          ],
+          "score": 0.1863
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00311",
+          "heading": "فصل",
+          "path": [
+            "كتاب البيع",
+            "باب السلم والتصرف في الدين وما يتعلق به"
+          ],
+          "score": 0.1649
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00153",
+          "heading": "باب الشروط في البيع",
+          "path": [
+            "كتاب البيع"
+          ],
+          "score": 0.1592
         }
       ]
     },
@@ -627,8 +878,8 @@
         "نفعه",
         "حياته",
         "منفعته",
-        "استثني",
         "امته",
+        "استثني",
         "استثناء",
         "يعتق",
         "عوض"
@@ -641,22 +892,21 @@
             "كتاب الشركة",
             "باب الإجارة"
           ],
-          "score": 0.2826
+          "score": 0.283
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00244",
           "heading": "كتاب الصداق",
           "path": [],
-          "score": 0.2734
+          "score": 0.2819
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00224",
-          "heading": "تعريفها وشروطها",
+          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00155",
+          "heading": "باب الإجارة",
           "path": [
-            "كتاب الجهاد",
-            "باب الهدنة"
+            "كتاب الشركة"
           ],
-          "score": 0.2209
+          "score": 0.2151
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00221",
@@ -665,15 +915,13 @@
             "كتاب الشركة",
             "باب الإجارة"
           ],
-          "score": 0.2185
+          "score": 0.214
         },
         {
-          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00155",
-          "heading": "باب الإجارة",
-          "path": [
-            "كتاب الشركة"
-          ],
-          "score": 0.2135
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00367",
+          "heading": "كتاب الصداق",
+          "path": [],
+          "score": 0.2134
         }
       ]
     },
@@ -685,13 +933,13 @@
         "اشتري",
         "العين",
         "الاجاره",
-        "المستاجره",
         "المنفعه",
+        "المستاجره",
         "المنافع",
         "الموصي",
         "انفساخ",
-        "الموجر",
-        "عقد"
+        "عقد",
+        "الموجر"
       ],
       "babs": [
         {
@@ -701,7 +949,7 @@
             "كتاب الشركة",
             "باب الإجارة"
           ],
-          "score": 0.1828
+          "score": 0.1704
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00243",
@@ -709,7 +957,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1805
+          "score": 0.1689
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00147",
@@ -717,16 +965,13 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1774
+          "score": 0.1686
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00274",
-          "heading": "حكم ما لو اشترى معيبا لم يعلمه",
-          "path": [
-            "كتاب البيع",
-            "باب الخيار في البيع والتصرف في المبيع وقبضه والإقالة"
-          ],
-          "score": 0.1686
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00075",
+          "heading": "كتاب الإجارة",
+          "path": [],
+          "score": 0.155
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00444",
@@ -735,7 +980,7 @@
             "كتاب الشركة",
             "باب إحياء الموات"
           ],
-          "score": 0.1641
+          "score": 0.1473
         }
       ]
     },
@@ -762,7 +1007,7 @@
           "path": [
             "كتاب الصيام"
           ],
-          "score": 0.2238
+          "score": 0.2284
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00090",
@@ -770,7 +1015,7 @@
           "path": [
             "كتاب الحج"
           ],
-          "score": 0.1846
+          "score": 0.1896
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00103",
@@ -779,7 +1024,7 @@
             "كتاب المناسك",
             "باب محظورات الإحرام"
           ],
-          "score": 0.1691
+          "score": 0.1551
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00176",
@@ -787,7 +1032,7 @@
           "path": [
             "كتاب الحج وشروطه"
           ],
-          "score": 0.1391
+          "score": 0.1436
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00429",
@@ -795,7 +1040,7 @@
           "path": [
             "كتاب الظهار"
           ],
-          "score": 0.1329
+          "score": 0.1315
         }
       ]
     },
@@ -804,15 +1049,15 @@
       "lexicon": [
         "منهما",
         "غرابا",
-        "يعلم",
         "كل",
+        "يعلم",
         "واحد",
         "يقينا",
         "وجد",
         "فامراتي",
         "فامتي",
-        "الاخر",
         "بالقرعه",
+        "الاخر",
         "خارجا"
       ],
       "babs": [
@@ -823,7 +1068,7 @@
             "كتاب النكاح",
             "باب المحرمات في النكاح"
           ],
-          "score": 0.2635
+          "score": 0.275
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00651",
@@ -832,7 +1077,7 @@
             "كتاب الطلاق",
             "باب الشك في الطلاق"
           ],
-          "score": 0.2598
+          "score": 0.2604
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00737",
@@ -840,7 +1085,7 @@
           "path": [
             "كتاب الديات"
           ],
-          "score": 0.2182
+          "score": 0.2195
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00115",
@@ -848,7 +1093,7 @@
           "path": [
             "كتاب الفرائض"
           ],
-          "score": 0.1933
+          "score": 0.1993
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00252",
@@ -856,7 +1101,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1713
+          "score": 0.1783
         }
       ]
     },
@@ -864,17 +1109,17 @@
       "cases": 5,
       "lexicon": [
         "الجمع",
-        "الله",
         "الافضل",
+        "الله",
         "بينهما",
         "الاستفتاح",
         "رحمه",
         "صليت",
         "ابراهيم",
-        "بين",
         "اجابه",
         "التثويب",
-        "الحيعله"
+        "الحيعله",
+        "الموذن"
       ],
       "babs": [
         {
@@ -883,7 +1128,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.2757
+          "score": 0.2765
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00050",
@@ -892,7 +1137,7 @@
             "كتاب الصلاة",
             "باب صلاة أهل الأعذار"
           ],
-          "score": 0.2725
+          "score": 0.2732
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00116",
@@ -901,7 +1146,7 @@
             "كتاب النكاح",
             "باب المحرمات في النكاح"
           ],
-          "score": 0.2632
+          "score": 0.2607
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00094",
@@ -910,7 +1155,7 @@
             "كتاب الصلاة",
             "باب صلاة أهل الأعذار"
           ],
-          "score": 0.2547
+          "score": 0.2512
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00018",
@@ -918,7 +1163,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.2298
+          "score": 0.2309
         }
       ]
     },
@@ -928,7 +1173,6 @@
         "الوجوب",
         "قرينه",
         "يقتضي",
-        "اسحاق",
         "الاشعري",
         "البرهان",
         "الحرمين",
@@ -936,7 +1180,8 @@
         "اللمع",
         "امام",
         "بوضع",
-        "تقم"
+        "تقم",
+        "مذاهب"
       ],
       "babs": [
         {
@@ -946,21 +1191,7 @@
             "كتاب الطلاق",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.0987
-        },
-        {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00011",
-          "heading": "كتاب الصلاة",
-          "path": [],
-          "score": 0.0711
-        },
-        {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00018",
-          "heading": "باب صلاة التطوع",
-          "path": [
-            "كتاب الصلاة"
-          ],
-          "score": 0.0699
+          "score": 0.0926
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00029",
@@ -969,15 +1200,33 @@
             "كتاب الصلاة",
             "باب النية"
           ],
-          "score": 0.0686
+          "score": 0.0696
         },
         {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00176",
-          "heading": "فصل [في وسائل إقامة الحد وكيفيته]",
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00018",
+          "heading": "باب صلاة التطوع",
           "path": [
-            "كتاب الحدود"
+            "كتاب الصلاة"
           ],
-          "score": 0.0683
+          "score": 0.0637
+        },
+        {
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00141",
+          "heading": "فصل",
+          "path": [
+            "كتاب الطلاق",
+            "باب تعليق الطلاق بالشروط"
+          ],
+          "score": 0.0637
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00312",
+          "heading": "تعريفه وشروطه",
+          "path": [
+            "كتاب البيع",
+            "باب القرض"
+          ],
+          "score": 0.0633
         }
       ]
     },
@@ -987,7 +1236,6 @@
         "الوجوب",
         "قرينه",
         "يقتضي",
-        "اسحاق",
         "الاشعري",
         "البرهان",
         "الحرمين",
@@ -995,7 +1243,8 @@
         "اللمع",
         "امام",
         "بوضع",
-        "تقم"
+        "تقم",
+        "مذاهب"
       ],
       "babs": [
         {
@@ -1005,21 +1254,7 @@
             "كتاب الطلاق",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.0987
-        },
-        {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00011",
-          "heading": "كتاب الصلاة",
-          "path": [],
-          "score": 0.0711
-        },
-        {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00018",
-          "heading": "باب صلاة التطوع",
-          "path": [
-            "كتاب الصلاة"
-          ],
-          "score": 0.0699
+          "score": 0.0926
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00029",
@@ -1028,15 +1263,33 @@
             "كتاب الصلاة",
             "باب النية"
           ],
-          "score": 0.0686
+          "score": 0.0696
         },
         {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00176",
-          "heading": "فصل [في وسائل إقامة الحد وكيفيته]",
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00018",
+          "heading": "باب صلاة التطوع",
           "path": [
-            "كتاب الحدود"
+            "كتاب الصلاة"
           ],
-          "score": 0.0683
+          "score": 0.0637
+        },
+        {
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00141",
+          "heading": "فصل",
+          "path": [
+            "كتاب الطلاق",
+            "باب تعليق الطلاق بالشروط"
+          ],
+          "score": 0.0637
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00312",
+          "heading": "تعريفه وشروطه",
+          "path": [
+            "كتاب البيع",
+            "باب القرض"
+          ],
+          "score": 0.0633
         }
       ]
     },
@@ -1046,7 +1299,6 @@
         "الوجوب",
         "قرينه",
         "يقتضي",
-        "اسحاق",
         "الاشعري",
         "البرهان",
         "الحرمين",
@@ -1054,7 +1306,8 @@
         "اللمع",
         "امام",
         "بوضع",
-        "تقم"
+        "تقم",
+        "مذاهب"
       ],
       "babs": [
         {
@@ -1064,21 +1317,7 @@
             "كتاب الطلاق",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.0987
-        },
-        {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00011",
-          "heading": "كتاب الصلاة",
-          "path": [],
-          "score": 0.0711
-        },
-        {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00018",
-          "heading": "باب صلاة التطوع",
-          "path": [
-            "كتاب الصلاة"
-          ],
-          "score": 0.0699
+          "score": 0.0926
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00029",
@@ -1087,15 +1326,33 @@
             "كتاب الصلاة",
             "باب النية"
           ],
-          "score": 0.0686
+          "score": 0.0696
         },
         {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00176",
-          "heading": "فصل [في وسائل إقامة الحد وكيفيته]",
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00018",
+          "heading": "باب صلاة التطوع",
           "path": [
-            "كتاب الحدود"
+            "كتاب الصلاة"
           ],
-          "score": 0.0683
+          "score": 0.0637
+        },
+        {
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00141",
+          "heading": "فصل",
+          "path": [
+            "كتاب الطلاق",
+            "باب تعليق الطلاق بالشروط"
+          ],
+          "score": 0.0637
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00312",
+          "heading": "تعريفه وشروطه",
+          "path": [
+            "كتاب البيع",
+            "باب القرض"
+          ],
+          "score": 0.0633
         }
       ]
     },
@@ -1105,7 +1362,6 @@
         "الوجوب",
         "قرينه",
         "يقتضي",
-        "اسحاق",
         "الاشعري",
         "البرهان",
         "الحرمين",
@@ -1113,7 +1369,8 @@
         "اللمع",
         "امام",
         "بوضع",
-        "تقم"
+        "تقم",
+        "مذاهب"
       ],
       "babs": [
         {
@@ -1123,21 +1380,7 @@
             "كتاب الطلاق",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.0987
-        },
-        {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00011",
-          "heading": "كتاب الصلاة",
-          "path": [],
-          "score": 0.0711
-        },
-        {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00018",
-          "heading": "باب صلاة التطوع",
-          "path": [
-            "كتاب الصلاة"
-          ],
-          "score": 0.0699
+          "score": 0.0926
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00029",
@@ -1146,15 +1389,33 @@
             "كتاب الصلاة",
             "باب النية"
           ],
-          "score": 0.0686
+          "score": 0.0696
         },
         {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00176",
-          "heading": "فصل [في وسائل إقامة الحد وكيفيته]",
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00018",
+          "heading": "باب صلاة التطوع",
           "path": [
-            "كتاب الحدود"
+            "كتاب الصلاة"
           ],
-          "score": 0.0683
+          "score": 0.0637
+        },
+        {
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00141",
+          "heading": "فصل",
+          "path": [
+            "كتاب الطلاق",
+            "باب تعليق الطلاق بالشروط"
+          ],
+          "score": 0.0637
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00312",
+          "heading": "تعريفه وشروطه",
+          "path": [
+            "كتاب البيع",
+            "باب القرض"
+          ],
+          "score": 0.0633
         }
       ]
     },
@@ -1167,10 +1428,10 @@
         "وجب",
         "الديه",
         "ماذون",
-        "زاد",
         "اخر",
-        "الضمان",
         "الحد",
+        "زاد",
+        "الضمان",
         "نصف",
         "غير"
       ],
@@ -1182,16 +1443,7 @@
             "كتاب الديات",
             "باب العاقلة وما تحمله"
           ],
-          "score": 0.1952
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00754",
-          "heading": "فصل: - وفي الجائفة ثلث الدية",
-          "path": [
-            "كتاب الديات",
-            "باب الشجاج وكسر العظام"
-          ],
-          "score": 0.1659
+          "score": 0.1971
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00508",
@@ -1200,7 +1452,7 @@
             "كتاب الديات",
             "باب ديات الأعضاء ومنافعها"
           ],
-          "score": 0.1595
+          "score": 0.1646
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00377",
@@ -1208,7 +1460,7 @@
           "path": [
             "كتاب الصداق"
           ],
-          "score": 0.1507
+          "score": 0.1453
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00062",
@@ -1216,7 +1468,16 @@
           "path": [
             "كتاب المناسك"
           ],
-          "score": 0.1456
+          "score": 0.1423
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00754",
+          "heading": "فصل: - وفي الجائفة ثلث الدية",
+          "path": [
+            "كتاب الديات",
+            "باب الشجاج وكسر العظام"
+          ],
+          "score": 0.1404
         }
       ]
     },
@@ -1234,7 +1495,7 @@
         "باقتران",
         "للرهن",
         "يرهنه",
-        "ويتخرج"
+        "بد"
       ],
       "babs": [
         {
@@ -1244,15 +1505,7 @@
             "كتاب البيع",
             "باب الوكالة"
           ],
-          "score": 0.1882
-        },
-        {
-          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00129",
-          "heading": "باب حكم الشروط والعيوب في النكاح",
-          "path": [
-            "كتاب النكاح"
-          ],
-          "score": 0.1765
+          "score": 0.1756
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00343",
@@ -1260,7 +1513,15 @@
           "path": [
             "كتاب النكاح"
           ],
-          "score": 0.1701
+          "score": 0.1729
+        },
+        {
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00129",
+          "heading": "باب حكم الشروط والعيوب في النكاح",
+          "path": [
+            "كتاب النكاح"
+          ],
+          "score": 0.1649
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00355",
@@ -1269,7 +1530,7 @@
             "كتاب النكاح",
             "باب الشروط في النكاح"
           ],
-          "score": 0.1662
+          "score": 0.1638
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00551",
@@ -1277,7 +1538,7 @@
           "path": [
             "كتاب النكاح"
           ],
-          "score": 0.1578
+          "score": 0.1584
         }
       ]
     },
@@ -1286,16 +1547,16 @@
       "lexicon": [
         "يده",
         "المالك",
-        "التسليم",
         "ممتنعا",
+        "التسليم",
         "ضمان",
-        "اذن",
+        "استند",
         "شرعي",
         "لمال",
         "يقبضه",
-        "استند",
+        "اذن",
         "ضمانه",
-        "اخذ"
+        "تلفت"
       ],
       "babs": [
         {
@@ -1305,7 +1566,7 @@
             "كتاب الشركة",
             "باب الإجارة"
           ],
-          "score": 0.1922
+          "score": 0.1751
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00085",
@@ -1314,7 +1575,7 @@
             "كتاب البيع",
             "باب الخيار"
           ],
-          "score": 0.1509
+          "score": 0.1518
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00147",
@@ -1322,7 +1583,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1505
+          "score": 0.1394
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00184",
@@ -1331,7 +1592,7 @@
             "كتاب الحدود",
             "باب حد المحاربين"
           ],
-          "score": 0.139
+          "score": 0.1319
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00319",
@@ -1340,7 +1601,7 @@
             "كتاب البيع",
             "باب الرهن"
           ],
-          "score": 0.1351
+          "score": 0.1269
         }
       ]
     },
@@ -1353,8 +1614,8 @@
         "الموالاه",
         "عاد",
         "اليسير",
-        "الاتصال",
         "التفرق",
+        "الاتصال",
         "قطع",
         "بعض",
         "ساهيا",
@@ -1367,7 +1628,7 @@
           "path": [
             "كتاب الرضاع"
           ],
-          "score": 0.1568
+          "score": 0.1593
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00659",
@@ -1376,7 +1637,7 @@
             "كتاب الطلاق",
             "باب الإيلاء"
           ],
-          "score": 0.1317
+          "score": 0.1302
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00036",
@@ -1385,15 +1646,15 @@
             "كتاب الصلاة",
             "باب سجود السهو"
           ],
-          "score": 0.1174
+          "score": 0.1153
         },
         {
-          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00264",
-          "heading": "باب الاستثناء في الطلاق",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00666",
+          "heading": "فصل. ولا يجزى في جميع الكفارات ونذر العتق المطلق إلا رقبة مؤمنة سليمة من العيوب المضرة بالعمل",
           "path": [
-            "كتاب الطلاق"
+            "كتاب الظهار"
           ],
-          "score": 0.1102
+          "score": 0.1091
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00030",
@@ -1401,7 +1662,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1072
+          "score": 0.1088
         }
       ]
     },
@@ -1414,12 +1675,12 @@
         "البيع",
         "اضافتها",
         "والوجهان",
-        "صاحب",
         "اضاف",
-        "وكلام",
+        "صاحب",
         "بلفظ",
+        "وكلام",
         "النكاح",
-        "اجره"
+        "صريح"
       ],
       "babs": [
         {
@@ -1428,7 +1689,7 @@
           "path": [
             "كتاب النكاح"
           ],
-          "score": 0.176
+          "score": 0.1779
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00253",
@@ -1436,7 +1697,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1557
+          "score": 0.1543
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00551",
@@ -1444,7 +1705,7 @@
           "path": [
             "كتاب النكاح"
           ],
-          "score": 0.1454
+          "score": 0.1464
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00559",
@@ -1453,7 +1714,7 @@
             "كتاب النكاح",
             "باب اركان النكاح وشروطه"
           ],
-          "score": 0.1434
+          "score": 0.1431
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00343",
@@ -1461,7 +1722,132 @@
           "path": [
             "كتاب النكاح"
           ],
-          "score": 0.1255
+          "score": 0.128
+        }
+      ]
+    },
+    "crop_without_valid_permission": {
+      "cases": 2,
+      "lexicon": [
+        "الغاصب",
+        "زرع",
+        "الزرع",
+        "الارض",
+        "محترم",
+        "كغرس",
+        "وبناءه",
+        "ادركه",
+        "مستند",
+        "يزرع",
+        "الشفيع",
+        "الاجره"
+      ],
+      "babs": [
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00249",
+          "heading": "فصل",
+          "path": [
+            "كتاب الغصب",
+            "باب الشفعة"
+          ],
+          "score": 0.1577
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00235",
+          "heading": "فصل",
+          "path": [
+            "كتاب الغصب"
+          ],
+          "score": 0.152
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00404",
+          "heading": "فصل",
+          "path": [
+            "كتاب الشركة",
+            "باب الإجارة"
+          ],
+          "score": 0.1336
+        },
+        {
+          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00170",
+          "heading": "فصل",
+          "path": [
+            "كتاب الغصب"
+          ],
+          "score": 0.1223
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00233",
+          "heading": "فصل",
+          "path": [
+            "كتاب العارية"
+          ],
+          "score": 0.1208
+        }
+      ]
+    },
+    "cut_sale_left_to_ripen": {
+      "cases": 1,
+      "lexicon": [
+        "فتركه",
+        "صلاحه",
+        "الاعيان",
+        "محرم",
+        "يبطل",
+        "القطع",
+        "اختيار",
+        "بشرط",
+        "عند",
+        "التوثقه",
+        "العايده",
+        "المبهج"
+      ],
+      "babs": [
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00172",
+          "heading": "فصل",
+          "path": [
+            "كتاب البيع",
+            "باب بيع الأصول والثمار"
+          ],
+          "score": 0.2083
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00294",
+          "heading": "بيع الثمرة قبل بدو صلاحها",
+          "path": [
+            "كتاب البيع",
+            "باب بيع الأصول والثمار"
+          ],
+          "score": 0.1653
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00295",
+          "heading": "بيع الثمرة بعد بدو صلاحها",
+          "path": [
+            "كتاب البيع",
+            "باب بيع الأصول والثمار"
+          ],
+          "score": 0.164
+        },
+        {
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00090",
+          "heading": "فصل",
+          "path": [
+            "كتاب البيع",
+            "باب بيع الأصول والثمار"
+          ],
+          "score": 0.1398
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00287",
+          "heading": "ربا الفضل",
+          "path": [
+            "كتاب البيع",
+            "باب الربا والصرف والحيل"
+          ],
+          "score": 0.1235
         }
       ]
     },
@@ -1474,10 +1860,10 @@
         "الملك",
         "يكفي",
         "والهبه",
-        "نقله",
         "حكي",
-        "بدون",
+        "نقله",
         "عقود",
+        "بدون",
         "المتعين",
         "فينتقل"
       ],
@@ -1489,7 +1875,7 @@
             "كتاب البيع",
             "باب الربا والصرف"
           ],
-          "score": 0.1497
+          "score": 0.1521
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00305",
@@ -1498,7 +1884,7 @@
             "كتاب البيع",
             "باب السلم والتصرف في الدين وما يتعلق به"
           ],
-          "score": 0.1143
+          "score": 0.1135
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00478",
@@ -1506,7 +1892,7 @@
           "path": [
             "كتاب الوصايا"
           ],
-          "score": 0.1083
+          "score": 0.1085
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00167",
@@ -1515,7 +1901,7 @@
             "كتاب البيع",
             "باب الربا والصرف"
           ],
-          "score": 0.1037
+          "score": 0.1054
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00309",
@@ -1524,7 +1910,7 @@
             "كتاب البيع",
             "باب السلم والتصرف في الدين وما يتعلق به"
           ],
-          "score": 0.1019
+          "score": 0.1003
         }
       ]
     },
@@ -1536,12 +1922,12 @@
         "للضمان",
         "الضمان",
         "بكر",
-        "والمعروف",
         "المثل",
+        "والمعروف",
         "تضمن",
         "الكتابه",
-        "ضمان",
         "المهر",
+        "ضمان",
         "يجب"
       ],
       "babs": [
@@ -1551,7 +1937,7 @@
           "path": [
             "كتاب الصداق"
           ],
-          "score": 0.2016
+          "score": 0.1955
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00377",
@@ -1559,7 +1945,7 @@
           "path": [
             "كتاب الصداق"
           ],
-          "score": 0.1796
+          "score": 0.1783
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00594",
@@ -1567,7 +1953,7 @@
           "path": [
             "كتاب الصداق"
           ],
-          "score": 0.1556
+          "score": 0.1548
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00389",
@@ -1575,16 +1961,71 @@
           "path": [
             "كتاب الخلع"
           ],
-          "score": 0.1471
+          "score": 0.1436
         },
         {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00227",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00544",
           "heading": "فصل",
           "path": [
-            "كتاب الشركة",
-            "باب الإجارة"
+            "كتاب العتق",
+            "باب الكتابة"
           ],
-          "score": 0.1467
+          "score": 0.1311
+        }
+      ]
+    },
+    "delegating_work": {
+      "cases": 6,
+      "lexicon": [
+        "كالوكيل",
+        "الاستنابه",
+        "الماذون",
+        "اذن",
+        "الكافي",
+        "الصبي",
+        "بدون",
+        "العمل",
+        "طريقان",
+        "التوكيل",
+        "قرينه",
+        "التصرف"
+      ],
+      "babs": [
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00620",
+          "heading": "كتاب الإقرار",
+          "path": [],
+          "score": 0.1999
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00201",
+          "heading": "فصل",
+          "path": [
+            "كتاب الحجر"
+          ],
+          "score": 0.1432
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00145",
+          "heading": "فصل",
+          "path": [
+            "كتاب البيع"
+          ],
+          "score": 0.128
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00094",
+          "heading": "كتاب الاعتكاف",
+          "path": [],
+          "score": 0.1226
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00585",
+          "heading": "فصل",
+          "path": [
+            "كتاب الصداق"
+          ],
+          "score": 0.1221
         }
       ]
     },
@@ -1599,10 +2040,10 @@
         "عاقلته",
         "المال",
         "فهو",
-        "المتصرف",
         "بوكالتهم",
         "خطاءه",
-        "خطاه"
+        "خطاه",
+        "عاما"
       ],
       "babs": [
         {
@@ -1611,7 +2052,7 @@
           "path": [
             "كتاب الوصايا"
           ],
-          "score": 0.2385
+          "score": 0.2242
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00288",
@@ -1620,7 +2061,7 @@
             "كتاب الوصايا",
             "باب الوصية بالأنصباء والأجزاء"
           ],
-          "score": 0.1776
+          "score": 0.1729
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00185",
@@ -1628,24 +2069,23 @@
           "path": [
             "كتاب الحدود"
           ],
-          "score": 0.1567
+          "score": 0.1527
         },
         {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00132",
-          "heading": "باب ما يلزم الإمام والجيش",
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00514",
+          "heading": "باب العاقلة وما تحمله",
           "path": [
-            "كتاب الجهاد"
+            "كتاب الديات"
           ],
-          "score": 0.1496
+          "score": 0.1481
         },
         {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00191",
-          "heading": "فصل [في الفيء]",
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00623",
+          "heading": "فصل",
           "path": [
-            "كتاب الجهاد",
-            "باب الغنائم وقسمتها"
+            "كتاب الإقرار"
           ],
-          "score": 0.1478
+          "score": 0.1456
         }
       ]
     },
@@ -1656,21 +2096,21 @@
         "القضاه",
         "نواب",
         "متصرف",
-        "ولايته",
         "بيت",
+        "ولايته",
         "لهم",
         "احضار",
         "المستعدي",
-        "بعزله",
         "سماع",
-        "فهم"
+        "فهم",
+        "فوض"
       ],
       "babs": [
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00199",
           "heading": "كتاب القضاء",
           "path": [],
-          "score": 0.1828
+          "score": 0.1803
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00083",
@@ -1678,7 +2118,7 @@
           "path": [
             "كتاب الوصايا"
           ],
-          "score": 0.1799
+          "score": 0.1678
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00132",
@@ -1686,7 +2126,7 @@
           "path": [
             "كتاب الجهاد"
           ],
-          "score": 0.1093
+          "score": 0.1012
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00183",
@@ -1694,7 +2134,7 @@
           "path": [
             "كتاب الحدود"
           ],
-          "score": 0.1042
+          "score": 0.1006
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00288",
@@ -1703,7 +2143,7 @@
             "كتاب الوصايا",
             "باب الوصية بالأنصباء والأجزاء"
           ],
-          "score": 0.1036
+          "score": 0.1005
         }
       ]
     },
@@ -1731,7 +2171,7 @@
             "كتاب الأيمان",
             "باب جامع الأيمان"
           ],
-          "score": 0.1926
+          "score": 0.1871
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00204",
@@ -1740,7 +2180,7 @@
             "كتاب النكاح",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.185
+          "score": 0.1804
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00345",
@@ -1749,13 +2189,13 @@
             "كتاب الأيمان",
             "باب جامع الأيمان"
           ],
-          "score": 0.1799
+          "score": 0.1759
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00419",
           "heading": "كتاب الإيلاء",
           "path": [],
-          "score": 0.1674
+          "score": 0.1696
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00833",
@@ -1764,7 +2204,7 @@
             "كتاب الأيمان وكفاراتها",
             "باب جامع الأيمان"
           ],
-          "score": 0.146
+          "score": 0.1456
         }
       ]
     },
@@ -1781,8 +2221,8 @@
         "توالي",
         "فالعقود",
         "متلازمان",
-        "والضمان",
-        "وتنقسم"
+        "وتنقسم",
+        "وجعلوا"
       ],
       "babs": [
         {
@@ -1792,7 +2232,7 @@
             "كتاب البيع",
             "باب الخيار في البيع"
           ],
-          "score": 0.1995
+          "score": 0.1947
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00450",
@@ -1801,7 +2241,7 @@
             "كتاب الشركة",
             "باب اللقطة"
           ],
-          "score": 0.187
+          "score": 0.1729
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00080",
@@ -1809,7 +2249,7 @@
           "path": [
             "كتاب البيوع"
           ],
-          "score": 0.1649
+          "score": 0.1528
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00085",
@@ -1818,7 +2258,7 @@
             "كتاب الوصايا",
             "باب الموصى إليه"
           ],
-          "score": 0.1617
+          "score": 0.1422
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00158",
@@ -1827,7 +2267,7 @@
             "كتاب البيع",
             "باب الخيار في البيع"
           ],
-          "score": 0.1514
+          "score": 0.1358
         }
       ]
     },
@@ -1842,8 +2282,8 @@
         "العطاء",
         "محمد",
         "القبض",
-        "طالب",
         "ابي",
+        "طالب",
         "وغيره",
         "كراهته"
       ],
@@ -1854,16 +2294,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.3396
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00295",
-          "heading": "بيع الثمرة بعد بدو صلاحها",
-          "path": [
-            "كتاب البيع",
-            "باب بيع الأصول والثمار"
-          ],
-          "score": 0.2729
+          "score": 0.329
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00292",
@@ -1872,7 +2303,7 @@
             "كتاب البيع",
             "باب بيع الأصول والثمار"
           ],
-          "score": 0.2611
+          "score": 0.2387
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00058",
@@ -1881,7 +2312,15 @@
             "كتاب البيوع",
             "باب بيع الأصول والثمار"
           ],
-          "score": 0.2522
+          "score": 0.2212
+        },
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00174",
+          "heading": "باب القسامة",
+          "path": [
+            "كتاب الديات"
+          ],
+          "score": 0.2201
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00152",
@@ -1889,7 +2328,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.2287
+          "score": 0.2194
         }
       ]
     },
@@ -1899,15 +2338,15 @@
         "يجوز",
         "بيده",
         "الاخر",
-        "تصرف",
         "خشيه",
+        "تصرف",
         "المتبايعين",
-        "استحق",
         "رد",
+        "استحق",
         "الحق",
         "التصرف",
-        "حق",
-        "الذي"
+        "الذي",
+        "حق"
       ],
       "babs": [
         {
@@ -1916,7 +2355,7 @@
           "path": [
             "كتاب البيوع"
           ],
-          "score": 0.1851
+          "score": 0.174
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00266",
@@ -1925,15 +2364,7 @@
             "كتاب البيع",
             "باب الخيار في البيع والتصرف في المبيع وقبضه والإقالة"
           ],
-          "score": 0.1653
-        },
-        {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00266",
-          "heading": "فصل",
-          "path": [
-            "كتاب الوقف"
-          ],
-          "score": 0.1325
+          "score": 0.1673
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00203",
@@ -1941,16 +2372,23 @@
           "path": [
             "كتاب القضاء"
           ],
-          "score": 0.1293
+          "score": 0.1239
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00450",
-          "heading": "فصل: ولا يجوز له التصرف فيها حتى يعرف وعاءها وهو ظرفها",
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00266",
+          "heading": "فصل",
           "path": [
-            "كتاب الشركة",
-            "باب اللقطة"
+            "كتاب الوقف"
           ],
-          "score": 0.1263
+          "score": 0.1226
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00737",
+          "heading": "فصل: - وإن اصطدم حران مكلفان بصيران أو ضريران أو أحدهما وهما ماشيان أو راكبان أو راكب وماش - فماتا",
+          "path": [
+            "كتاب الديات"
+          ],
+          "score": 0.1157
         }
       ]
     },
@@ -1978,16 +2416,7 @@
             "كتاب الديات",
             "باب ديات الأعضاء ومنافعها"
           ],
-          "score": 0.2552
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00749",
-          "heading": "فصل: - وتغلظ دية النفس: لا الطرف - في قتل الخطأ فقط في ثلاثة مواضع",
-          "path": [
-            "كتاب الديات",
-            "باب مقادير دية النفس"
-          ],
-          "score": 0.2447
+          "score": 0.2566
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00246",
@@ -1996,7 +2425,16 @@
             "كتاب الديات",
             "باب ديات الأعضاء ومنافعها"
           ],
-          "score": 0.2318
+          "score": 0.2315
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00749",
+          "heading": "فصل: - وتغلظ دية النفس: لا الطرف - في قتل الخطأ فقط في ثلاثة مواضع",
+          "path": [
+            "كتاب الديات",
+            "باب مقادير دية النفس"
+          ],
+          "score": 0.23
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00757",
@@ -2005,7 +2443,7 @@
             "كتاب الديات",
             "باب العاقلة وما تحمله"
           ],
-          "score": 0.2115
+          "score": 0.2126
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00540",
@@ -2032,7 +2470,7 @@
         "بدخول",
         "غلبه",
         "نفسه",
-        "والا"
+        "يجزيه"
       ],
       "babs": [
         {
@@ -2041,7 +2479,7 @@
           "path": [
             "كتاب الطلاق"
           ],
-          "score": 0.1576
+          "score": 0.1572
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00139",
@@ -2049,7 +2487,7 @@
           "path": [
             "كتاب الطلاق"
           ],
-          "score": 0.1493
+          "score": 0.1506
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00274",
@@ -2057,7 +2495,7 @@
           "path": [
             "كتاب الطلاق"
           ],
-          "score": 0.139
+          "score": 0.1409
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00087",
@@ -2065,7 +2503,7 @@
           "path": [
             "كتاب الصيام"
           ],
-          "score": 0.1376
+          "score": 0.1392
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00049",
@@ -2074,7 +2512,7 @@
             "كتاب الصلاة",
             "باب شروط الصلاة"
           ],
-          "score": 0.1221
+          "score": 0.123
         }
       ]
     },
@@ -2086,9 +2524,9 @@
         "الصلاه",
         "نقول",
         "والاصل",
-        "يلزمه",
         "لحكمنا",
         "بالشك",
+        "يلزمه",
         "يحد",
         "غسل",
         "الماء",
@@ -2101,15 +2539,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1956
-        },
-        {
-          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00009",
-          "heading": "باب موجبات الغسل",
-          "path": [
-            "كتاب الطهارة"
-          ],
-          "score": 0.1861
+          "score": 0.1937
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00012",
@@ -2117,7 +2547,15 @@
           "path": [
             "كتاب الطهارة"
           ],
-          "score": 0.1815
+          "score": 0.1865
+        },
+        {
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00009",
+          "heading": "باب موجبات الغسل",
+          "path": [
+            "كتاب الطهارة"
+          ],
+          "score": 0.185
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008",
@@ -2125,15 +2563,76 @@
           "path": [
             "كتاب الطهارة"
           ],
-          "score": 0.1747
+          "score": 0.1745
         },
         {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00013",
-          "heading": "باب الغسل",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00027",
+          "heading": "باب ما يوجب الغسل وما يسن له وصفته",
           "path": [
             "كتاب الطهارة"
           ],
-          "score": 0.1626
+          "score": 0.1616
+        }
+      ]
+    },
+    "eating_without_permission": {
+      "cases": 5,
+      "lexicon": [
+        "الاكل",
+        "ياكل",
+        "الحاكم",
+        "الحاجه",
+        "اليتيم",
+        "منه",
+        "والاجير",
+        "باس",
+        "بالمعروف",
+        "الوقف",
+        "بقدر",
+        "مال"
+      ],
+      "babs": [
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00599",
+          "heading": "فصل: في آداب الأكل",
+          "path": [
+            "كتاب الصداق",
+            "باب الوليمة وآداب الأكل والشرب"
+          ],
+          "score": 0.2186
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00810",
+          "heading": "فصل: - من مر بثمر على شجر أو ساقط تحته لا حائط عليه ولا ناظر",
+          "path": [
+            "كتاب الأطعمة"
+          ],
+          "score": 0.2079
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00357",
+          "heading": "فصل",
+          "path": [
+            "كتاب البيع",
+            "باب الحجر"
+          ],
+          "score": 0.1989
+        },
+        {
+          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00335",
+          "heading": "فصل",
+          "path": [
+            "كتاب الأطعمة"
+          ],
+          "score": 0.1978
+        },
+        {
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00262",
+          "heading": "فصل",
+          "path": [
+            "كتاب الأطعمة"
+          ],
+          "score": 0.1667
         }
       ]
     },
@@ -2142,15 +2641,15 @@
       "lexicon": [
         "قدر",
         "الناصيه",
-        "منه",
         "الواجب",
         "الكل",
+        "منه",
         "فرض",
         "كله",
-        "الزياده",
-        "وقلنا",
         "الاجزاء",
         "راسه",
+        "وقلنا",
+        "الزياده",
         "الاتباع"
       ],
       "babs": [
@@ -2160,7 +2659,7 @@
           "path": [
             "كتاب الصداق"
           ],
-          "score": 0.1707
+          "score": 0.1568
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00322",
@@ -2169,24 +2668,7 @@
             "كتاب البيع",
             "باب الرهن"
           ],
-          "score": 0.1358
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00420",
-          "heading": "فصل:- وإن خلط المغصوب بماله على وجه لا يتميز:",
-          "path": [
-            "كتاب الشركة",
-            "باب الغصب وجنابة البهائم"
-          ],
-          "score": 0.1314
-        },
-        {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00076",
-          "heading": "باب زكاة الأثمان",
-          "path": [
-            "كتاب الزكاة"
-          ],
-          "score": 0.1297
+          "score": 0.1402
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00857",
@@ -2195,7 +2677,24 @@
             "كتاب القضاء والفتيا",
             "باب طريق الحكم وصفته"
           ],
-          "score": 0.1296
+          "score": 0.132
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00076",
+          "heading": "باب زكاة الأثمان",
+          "path": [
+            "كتاب الزكاة"
+          ],
+          "score": 0.1303
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00085",
+          "heading": "فصل ومن كبر قبل سلام الإمام التسليمة الأولى أدرك الجماعة",
+          "path": [
+            "كتاب الصلاة",
+            "باب صلاة الجماعة"
+          ],
+          "score": 0.1276
         }
       ]
     },
@@ -2206,14 +2705,14 @@
         "الاجزاء",
         "قدر",
         "منه",
-        "اشكال",
-        "اصول",
         "اقتصر",
         "صاعين",
         "لاجزاه",
-        "منفردين",
         "يوصف",
-        "الفريضه"
+        "اصول",
+        "الفريضه",
+        "تخريجها",
+        "فاتي"
       ],
       "babs": [
         {
@@ -2223,7 +2722,7 @@
             "كتاب الصلاة",
             "باب صلاة الجماعة"
           ],
-          "score": 0.13
+          "score": 0.1323
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00247",
@@ -2231,7 +2730,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1066
+          "score": 0.1101
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00174",
@@ -2239,7 +2738,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1028
+          "score": 0.1057
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00322",
@@ -2248,16 +2747,16 @@
             "كتاب البيع",
             "باب الرهن"
           ],
-          "score": 0.0916
+          "score": 0.0959
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00420",
-          "heading": "فصل:- وإن خلط المغصوب بماله على وجه لا يتميز:",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00790",
+          "heading": "فصل: - وإذا سرق المسروق مال السارق أو المغصوب منه مال الغاصب",
           "path": [
-            "كتاب الشركة",
-            "باب الغصب وجنابة البهائم"
+            "كتاب الحدود",
+            "باب القطع في السرقة"
           ],
-          "score": 0.0905
+          "score": 0.0906
         }
       ]
     },
@@ -2284,7 +2783,7 @@
           "path": [
             "كتاب العدد"
           ],
-          "score": 0.1821
+          "score": 0.1824
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00445",
@@ -2301,7 +2800,7 @@
             "كتاب العدد",
             "باب الاستبراء"
           ],
-          "score": 0.1421
+          "score": 0.1442
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00391",
@@ -2309,16 +2808,16 @@
           "path": [
             "كتاب الطلاق"
           ],
-          "score": 0.1358
+          "score": 0.1294
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00166",
-          "heading": "فصل والتلبية سنة",
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00031",
+          "heading": "فصل",
           "path": [
-            "كتاب الحج وشروطه",
-            "باب الإحرام والتلبية"
+            "كتاب الصلاة",
+            "باب صلاة الجمعة"
           ],
-          "score": 0.1263
+          "score": 0.1232
         }
       ]
     },
@@ -2346,7 +2845,7 @@
             "كتاب الزكاة",
             "باب إخراج الزكاة"
           ],
-          "score": 0.2352
+          "score": 0.2313
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00066",
@@ -2355,7 +2854,7 @@
             "كتاب الزكاة",
             "باب إخراج الزكاة"
           ],
-          "score": 0.1826
+          "score": 0.1773
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00068",
@@ -2364,7 +2863,7 @@
             "كتاب الزكاة",
             "باب زكاة بهيمة الأنعام"
           ],
-          "score": 0.1576
+          "score": 0.1563
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00119",
@@ -2373,7 +2872,7 @@
             "كتاب الزكاة",
             "باب زكاة بهيمة الأنعام"
           ],
-          "score": 0.1538
+          "score": 0.1523
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00136",
@@ -2382,7 +2881,7 @@
             "كتاب الزكاة",
             "باب إخراج الزكاة"
           ],
-          "score": 0.1417
+          "score": 0.1399
         }
       ]
     },
@@ -2392,8 +2891,8 @@
         "شاء",
         "يقدم",
         "ويستعمل",
-        "اهل",
         "المعين",
+        "اهل",
         "الاستحقاق",
         "المستحق",
         "الامر",
@@ -2409,7 +2908,7 @@
           "path": [
             "كتاب الحدود"
           ],
-          "score": 0.1195
+          "score": 0.1108
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00203",
@@ -2418,7 +2917,7 @@
             "كتاب النكاح",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.103
+          "score": 0.1041
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00849",
@@ -2427,7 +2926,7 @@
             "كتاب القضاء والفتيا",
             "باب آداب القاضي"
           ],
-          "score": 0.0973
+          "score": 0.1004
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00115",
@@ -2435,15 +2934,16 @@
           "path": [
             "كتاب المناسك"
           ],
-          "score": 0.0938
+          "score": 0.0896
         },
         {
-          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00183",
-          "heading": "باب قتال أهل البغي",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00222",
+          "heading": "تعريف الفيء وفيما يصرف",
           "path": [
-            "كتاب الحدود"
+            "كتاب الجهاد",
+            "باب الفيء"
           ],
-          "score": 0.0885
+          "score": 0.0857
         }
       ]
     },
@@ -2454,16 +2954,24 @@
         "ثبت",
         "يد",
         "العبد",
-        "غيره",
         "يتبع",
         "اليد",
         "ملك",
         "الشجر",
-        "الارض",
         "عاده",
-        "امه"
+        "امه",
+        "للموجر",
+        "الارض"
       ],
       "babs": [
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00885",
+          "heading": "فصل: - وإن أقر بنسب صغير أو مجنون مجهول النسب أنه ابنه،",
+          "path": [
+            "كتاب الإقرار"
+          ],
+          "score": 0.1385
+        },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00170",
           "heading": "فصل [في جناية العبد والبهائم]",
@@ -2471,7 +2979,16 @@
             "كتاب الديات",
             "باب العاقلة وما تحمله"
           ],
-          "score": 0.1523
+          "score": 0.1237
+        },
+        {
+          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00372",
+          "heading": "فصل",
+          "path": [
+            "كتاب الشهادات",
+            "باب أقسام المشهود به"
+          ],
+          "score": 0.1134
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00385",
@@ -2480,33 +2997,16 @@
             "كتاب الشركة",
             "باب المساقاة والمناصبة والمزارعة"
           ],
-          "score": 0.1386
+          "score": 0.1127
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00427",
-          "heading": "فصل:- وإن أجج نارا في موات أو في ملكه أو سقى أرضه",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00747",
+          "heading": "فصل: - وإن ادعت أن ضربها فأسقطت جنينها فأنكر فالقول قوله",
           "path": [
-            "كتاب الشركة",
-            "باب الغصب وجنابة البهائم"
+            "كتاب الديات",
+            "باب مقادير دية النفس"
           ],
-          "score": 0.1353
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00885",
-          "heading": "فصل: - وإن أقر بنسب صغير أو مجنون مجهول النسب أنه ابنه،",
-          "path": [
-            "كتاب الإقرار"
-          ],
-          "score": 0.1338
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00291",
-          "heading": "تعريف الأصول",
-          "path": [
-            "كتاب البيع",
-            "باب بيع الأصول والثمار"
-          ],
-          "score": 0.1309
+          "score": 0.1115
         }
       ]
     },
@@ -2518,13 +3018,13 @@
         "القهريه",
         "بدونه",
         "الاضطراري",
-        "الغراس",
-        "المستعير",
         "المشروعه",
-        "ضرره",
         "عدده",
         "كالاخذ",
-        "والبناء"
+        "وتقويم",
+        "وقدر",
+        "يندفع",
+        "التمليكات"
       ],
       "babs": [
         {
@@ -2533,15 +3033,7 @@
           "path": [
             "كتاب الصيد"
           ],
-          "score": 0.121
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00740",
-          "heading": "فصل",
-          "path": [
-            "كتاب الديات"
-          ],
-          "score": 0.1174
+          "score": 0.1166
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00184",
@@ -2550,51 +3042,7 @@
             "كتاب الحدود",
             "باب حد المحاربين"
           ],
-          "score": 0.1141
-        },
-        {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00047",
-          "heading": "فصل",
-          "path": [
-            "كتاب الصلاة",
-            "باب صلاة الجماعة"
-          ],
-          "score": 0.1113
-        },
-        {
-          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00147",
-          "heading": "فصل",
-          "path": [
-            "كتاب الحجر"
-          ],
-          "score": 0.1091
-        }
-      ]
-    },
-    "forced_acquisition_solvent": {
-      "cases": 2,
-      "lexicon": [
-        "مضمونا",
-        "بالشفعه",
-        "الاضطراري",
-        "ضرره",
-        "وقدر",
-        "ياخذه",
-        "يندفع",
-        "اخذه",
-        "طعام",
-        "ومنعه",
-        "يدفعه",
-        "اضطر"
-      ],
-      "babs": [
-        {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00156",
-          "heading": "باب المضطر",
-          "path": [
-            "كتاب الصيد"
-          ],
-          "score": 0.1372
+          "score": 0.116
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00740",
@@ -2602,16 +3050,7 @@
           "path": [
             "كتاب الديات"
           ],
-          "score": 0.1353
-        },
-        {
-          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00120",
-          "heading": "فصل",
-          "path": [
-            "كتاب البيع",
-            "باب الشفعة"
-          ],
-          "score": 0.1218
+          "score": 0.1145
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00739",
@@ -2619,15 +3058,77 @@
           "path": [
             "كتاب الديات"
           ],
-          "score": 0.1206
+          "score": 0.109
         },
         {
-          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00262",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00857",
+          "heading": "فصل: - ومن له على إنسان حق لم يمكن أخذه منه بحاكم وقدر له على مال",
+          "path": [
+            "كتاب القضاء والفتيا",
+            "باب طريق الحكم وصفته"
+          ],
+          "score": 0.1077
+        }
+      ]
+    },
+    "forced_acquisition_solvent": {
+      "cases": 2,
+      "lexicon": [
+        "مضمونا",
+        "الاضطراري",
+        "وقدر",
+        "يندفع",
+        "بالشفعه",
+        "ضرره",
+        "ومنعه",
+        "اضطر",
+        "طعام",
+        "ياخذه",
+        "يدفعه",
+        "اخذه"
+      ],
+      "babs": [
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00740",
           "heading": "فصل",
           "path": [
-            "كتاب الأطعمة"
+            "كتاب الديات"
           ],
-          "score": 0.1195
+          "score": 0.1321
+        },
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00156",
+          "heading": "باب المضطر",
+          "path": [
+            "كتاب الصيد"
+          ],
+          "score": 0.1319
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00739",
+          "heading": "فصل: - ومن أخذ طعام إنسان أو شرابه في برية أو مكان لايقدر فيه على طعام ولا شراب أو أخذ دابته فمات بذلك",
+          "path": [
+            "كتاب الديات"
+          ],
+          "score": 0.1224
+        },
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00184",
+          "heading": "فصل [في دفع الصائل]",
+          "path": [
+            "كتاب الحدود",
+            "باب حد المحاربين"
+          ],
+          "score": 0.1174
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00857",
+          "heading": "فصل: - ومن له على إنسان حق لم يمكن أخذه منه بحاكم وقدر له على مال",
+          "path": [
+            "كتاب القضاء والفتيا",
+            "باب طريق الحكم وصفته"
+          ],
+          "score": 0.1152
         }
       ]
     },
@@ -2652,7 +3153,7 @@
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00011",
           "heading": "كتاب الصلاة",
           "path": [],
-          "score": 0.1877
+          "score": 0.181
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00407",
@@ -2661,7 +3162,7 @@
             "كتاب الطلاق",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.1556
+          "score": 0.1538
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00070",
@@ -2670,7 +3171,7 @@
             "كتاب الصلاة",
             "باب صفة الصلاة"
           ],
-          "score": 0.1514
+          "score": 0.1507
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00560",
@@ -2678,7 +3179,7 @@
           "path": [
             "كتاب الأيمان"
           ],
-          "score": 0.1391
+          "score": 0.1374
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00176",
@@ -2686,7 +3187,7 @@
           "path": [
             "كتاب الحدود"
           ],
-          "score": 0.1383
+          "score": 0.1282
         }
       ]
     },
@@ -2701,10 +3202,10 @@
         "مسلم",
         "ومنها",
         "الرحم",
-        "الغنيمه",
         "بقتل",
         "تغليظ",
-        "حرمان"
+        "حرمان",
+        "سرقه"
       ],
       "babs": [
         {
@@ -2713,7 +3214,7 @@
           "path": [
             "كتاب الحدود"
           ],
-          "score": 0.1833
+          "score": 0.1825
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00532",
@@ -2721,7 +3222,7 @@
           "path": [
             "كتاب الحدود"
           ],
-          "score": 0.1777
+          "score": 0.1793
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00177",
@@ -2738,7 +3239,7 @@
             "كتاب الحدود",
             "باب القطع في السرقة"
           ],
-          "score": 0.1661
+          "score": 0.1648
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00791",
@@ -2747,7 +3248,7 @@
             "كتاب الحدود",
             "باب القطع في السرقة"
           ],
-          "score": 0.1628
+          "score": 0.1634
         }
       ]
     },
@@ -2761,9 +3262,9 @@
         "كسب",
         "الامهات",
         "النتاج",
-        "النماء",
         "كمل",
         "دون",
+        "النماء",
         "ولدت",
         "ففيه"
       ],
@@ -2772,24 +3273,7 @@
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00042",
           "heading": "كتاب الزكاة",
           "path": [],
-          "score": 0.1595
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00477",
-          "heading": "فصل",
-          "path": [
-            "كتاب الوصايا"
-          ],
-          "score": 0.1432
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00385",
-          "heading": "فصل: في المزارعة",
-          "path": [
-            "كتاب الشركة",
-            "باب المساقاة والمناصبة والمزارعة"
-          ],
-          "score": 0.1388
+          "score": 0.1576
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00137",
@@ -2798,16 +3282,33 @@
             "كتاب الزكاة",
             "باب إخراج الزكاة"
           ],
-          "score": 0.1339
+          "score": 0.1331
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00384",
-          "heading": "فصل:- ويلزم العامل ما فيه صلاح الثمرة",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00477",
+          "heading": "فصل",
+          "path": [
+            "كتاب الوصايا"
+          ],
+          "score": 0.1329
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00385",
+          "heading": "فصل: في المزارعة",
           "path": [
             "كتاب الشركة",
             "باب المساقاة والمناصبة والمزارعة"
           ],
-          "score": 0.1219
+          "score": 0.1309
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00289",
+          "heading": "فصل",
+          "path": [
+            "كتاب الوصايا",
+            "باب الوصية بالأنصباء والأجزاء"
+          ],
+          "score": 0.1192
         }
       ]
     },
@@ -2823,9 +3324,9 @@
         "ستر",
         "الستر",
         "الجنابه",
+        "الصلاه",
         "تري",
-        "تستره",
-        "جيبه"
+        "تستره"
       ],
       "babs": [
         {
@@ -2835,7 +3336,7 @@
             "كتاب الطهارة",
             "باب الوضوء"
           ],
-          "score": 0.2065
+          "score": 0.1914
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00107",
@@ -2843,7 +3344,7 @@
           "path": [
             "كتاب الجنائز"
           ],
-          "score": 0.1795
+          "score": 0.1765
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00046",
@@ -2851,7 +3352,7 @@
           "path": [
             "كتاب الحج والعمرة"
           ],
-          "score": 0.1521
+          "score": 0.1507
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00005",
@@ -2860,7 +3361,7 @@
             "كتاب الطهارة",
             "باب المياه"
           ],
-          "score": 0.1473
+          "score": 0.1489
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00018",
@@ -2868,7 +3369,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1455
+          "score": 0.1477
         }
       ]
     },
@@ -2878,8 +3379,8 @@
         "ونقله",
         "العموم",
         "هناك",
-        "الشافعي",
         "الصلاه",
+        "الشافعي",
         "يقتضي",
         "الادني",
         "بالمذهب",
@@ -2893,7 +3394,7 @@
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00011",
           "heading": "كتاب الصلاة",
           "path": [],
-          "score": 0.1393
+          "score": 0.1379
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00017",
@@ -2902,7 +3403,7 @@
             "كتاب الطهارة",
             "باب التيمم"
           ],
-          "score": 0.1269
+          "score": 0.1274
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00021",
@@ -2910,7 +3411,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1249
+          "score": 0.1274
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009",
@@ -2918,15 +3419,15 @@
           "path": [
             "كتاب الطهارة"
           ],
-          "score": 0.1186
+          "score": 0.116
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00064",
-          "heading": "باب صفة الصلاة",
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00014",
+          "heading": "باب آداب المشي إلى الصلاة",
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.112
+          "score": 0.1141
         }
       ]
     },
@@ -2936,15 +3437,15 @@
         "يضمن",
         "اليد",
         "بالعقد",
-        "تثبت",
         "الحر",
+        "تثبت",
         "المنقول",
         "وباليد",
         "النقل",
         "حقيقتها",
         "شايبه",
         "فيضمن",
-        "لثبوت"
+        "والمدبر"
       ],
       "babs": [
         {
@@ -2953,19 +3454,19 @@
           "path": [
             "كتاب الغصب"
           ],
-          "score": 0.1819
-        },
-        {
-          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00169",
-          "heading": "كتاب الغصب",
-          "path": [],
-          "score": 0.1694
+          "score": 0.1699
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00234",
           "heading": "كتاب الغصب",
           "path": [],
-          "score": 0.1682
+          "score": 0.1599
+        },
+        {
+          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00169",
+          "heading": "كتاب الغصب",
+          "path": [],
+          "score": 0.1568
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00643",
@@ -2974,7 +3475,7 @@
             "كتاب الطلاق",
             "باب التأويل في الحلف"
           ],
-          "score": 0.1514
+          "score": 0.1427
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00477",
@@ -2982,7 +3483,64 @@
           "path": [
             "كتاب الوصايا"
           ],
-          "score": 0.1228
+          "score": 0.1134
+        }
+      ]
+    },
+    "hand_with_owner_liable": {
+      "cases": 5,
+      "lexicon": [
+        "يد",
+        "المالك",
+        "يده",
+        "يضمن",
+        "دابه",
+        "الضمان",
+        "ففي",
+        "عليها",
+        "الكبير",
+        "ثيابه",
+        "غصب",
+        "الغاصب"
+      ],
+      "babs": [
+        {
+          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00169",
+          "heading": "كتاب الغصب",
+          "path": [],
+          "score": 0.1971
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00252",
+          "heading": "باب الوديعة",
+          "path": [
+            "كتاب الغصب"
+          ],
+          "score": 0.1666
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00428",
+          "heading": "فصل:- وما أتلفته البهيمة",
+          "path": [
+            "كتاب الشركة",
+            "باب الغصب وجنابة البهائم"
+          ],
+          "score": 0.1604
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00853",
+          "heading": "فصل: - وإن ادعى عليه عينا في يده فأقر بها لحاضر مكلف سئل المقر له عن ذلك",
+          "path": [
+            "كتاب القضاء والفتيا",
+            "باب طريق الحكم وصفته"
+          ],
+          "score": 0.1598
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00234",
+          "heading": "كتاب الغصب",
+          "path": [],
+          "score": 0.1596
         }
       ]
     },
@@ -2990,13 +3548,13 @@
       "cases": 1,
       "lexicon": [
         "معاوضه",
-        "اذن",
+        "استند",
         "شرعي",
         "لمال",
-        "استند",
-        "اخذ",
+        "اذن",
         "قبضه",
         "اذنه",
+        "اخذ",
         "يضمن",
         "العقد",
         "انتهت",
@@ -3004,27 +3562,26 @@
       ],
       "babs": [
         {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00094",
-          "heading": "كتاب الاعتكاف",
-          "path": [],
-          "score": 0.1311
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00315",
-          "heading": "فصل",
-          "path": [
-            "كتاب البيع",
-            "باب الرهن"
-          ],
-          "score": 0.1293
-        },
-        {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00243",
           "heading": "فصل",
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1282
+          "score": 0.1205
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00094",
+          "heading": "كتاب الاعتكاف",
+          "path": [],
+          "score": 0.1191
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00368",
+          "heading": "فصل",
+          "path": [
+            "كتاب الصداق"
+          ],
+          "score": 0.119
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00185",
@@ -3033,15 +3590,16 @@
             "كتاب البيع",
             "باب الرهن"
           ],
-          "score": 0.1234
+          "score": 0.1157
         },
         {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00368",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00319",
           "heading": "فصل",
           "path": [
-            "كتاب الصداق"
+            "كتاب البيع",
+            "باب الرهن"
           ],
-          "score": 0.1229
+          "score": 0.1144
         }
       ]
     },
@@ -3068,7 +3626,7 @@
           "path": [
             "كتاب القضاء والفتيا"
           ],
-          "score": 0.1978
+          "score": 0.1849
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00012",
@@ -3076,24 +3634,7 @@
           "path": [
             "كتاب الطهارة"
           ],
-          "score": 0.1824
-        },
-        {
-          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00351",
-          "heading": "فصل",
-          "path": [
-            "كتاب القضاء والفتيا"
-          ],
-          "score": 0.1442
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00553",
-          "heading": "فصل",
-          "path": [
-            "كتاب النكاح",
-            "باب اركان النكاح وشروطه"
-          ],
-          "score": 0.1411
+          "score": 0.1828
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00342",
@@ -3102,7 +3643,24 @@
             "كتاب البيع",
             "باب الصلح وحكم الجوار"
           ],
-          "score": 0.1403
+          "score": 0.1418
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00553",
+          "heading": "فصل",
+          "path": [
+            "كتاب النكاح",
+            "باب اركان النكاح وشروطه"
+          ],
+          "score": 0.1397
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00248",
+          "heading": "حكم ما لو باع قفيزا من الصبرة",
+          "path": [
+            "كتاب البيع"
+          ],
+          "score": 0.1373
         }
       ]
     },
@@ -3130,7 +3688,7 @@
             "كتاب الحج وشروطه",
             "باب الإحرام والتلبية"
           ],
-          "score": 0.2153
+          "score": 0.2002
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00196",
@@ -3139,7 +3697,7 @@
             "كتاب الحج وشروطه",
             "باب صفة الحج والعمرة"
           ],
-          "score": 0.1796
+          "score": 0.1739
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00059",
@@ -3147,15 +3705,7 @@
           "path": [
             "كتاب المناسك"
           ],
-          "score": 0.1566
-        },
-        {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00051",
-          "heading": "باب أركان الحج والعمرة",
-          "path": [
-            "كتاب الحج والعمرة"
-          ],
-          "score": 0.1514
+          "score": 0.1527
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00195",
@@ -3164,7 +3714,15 @@
             "كتاب الحج وشروطه",
             "باب صفة الحج والعمرة"
           ],
-          "score": 0.1441
+          "score": 0.1419
+        },
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00051",
+          "heading": "باب أركان الحج والعمرة",
+          "path": [
+            "كتاب الحج والعمرة"
+          ],
+          "score": 0.1418
         }
       ]
     },
@@ -3172,15 +3730,15 @@
       "cases": 6,
       "lexicon": [
         "الحمل",
-        "مده",
         "لفظا",
+        "مده",
         "باعه",
         "امه",
         "علم",
         "بحر",
         "حاملا",
-        "اشتري",
         "استثناء",
+        "اشتري",
         "صح",
         "يعلم"
       ],
@@ -3191,7 +3749,15 @@
           "path": [
             "كتاب الفرائض"
           ],
-          "score": 0.1738
+          "score": 0.1745
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00512",
+          "heading": "باب ميراث الحمل",
+          "path": [
+            "كتاب الفرائض"
+          ],
+          "score": 0.1644
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00262",
@@ -3200,15 +3766,7 @@
             "كتاب البيع",
             "باب الشروط في البيع وأقسامها"
           ],
-          "score": 0.1703
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00512",
-          "heading": "باب ميراث الحمل",
-          "path": [
-            "كتاب الفرائض"
-          ],
-          "score": 0.1595
+          "score": 0.161
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00152",
@@ -3216,29 +3774,30 @@
           "path": [
             "كتاب الشركة"
           ],
-          "score": 0.1558
+          "score": 0.1486
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00243",
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00157",
           "heading": "فصل",
           "path": [
-            "كتاب البيع"
+            "كتاب البيع",
+            "باب الخيار في البيع"
           ],
-          "score": 0.1514
+          "score": 0.1465
         }
       ]
     },
     "istihlak": {
       "cases": 5,
       "lexicon": [
-        "حكمها",
         "الماء",
+        "حكمها",
         "يستهلك",
         "يقول",
         "سقط",
         "يحنث",
-        "بل",
         "حنطه",
+        "بل",
         "خلاف",
         "الخطاب",
         "غيرها",
@@ -3252,7 +3811,7 @@
             "كتاب الأيمان",
             "باب جامع الأيمان"
           ],
-          "score": 0.2195
+          "score": 0.2131
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00569",
@@ -3261,7 +3820,7 @@
             "كتاب الأيمان",
             "باب جامع الأيمان"
           ],
-          "score": 0.1934
+          "score": 0.1867
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00149",
@@ -3270,7 +3829,7 @@
             "كتاب الطلاق",
             "باب جامع الأيمان"
           ],
-          "score": 0.1842
+          "score": 0.1799
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00574",
@@ -3279,7 +3838,7 @@
             "كتاب الأيمان",
             "باب جامع الأيمان"
           ],
-          "score": 0.1741
+          "score": 0.1724
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00572",
@@ -3288,21 +3847,21 @@
             "كتاب الأيمان",
             "باب جامع الأيمان"
           ],
-          "score": 0.1683
+          "score": 0.165
         }
       ]
     },
     "itlaf": {
       "cases": 6,
       "lexicon": [
-        "يضمنه",
         "ضمنه",
+        "يضمنه",
         "نفسه",
         "فقتله",
         "صال",
         "ليحيي",
-        "ولو",
         "فدفعه",
+        "ولو",
         "احتاج",
         "شجره",
         "متاع",
@@ -3315,7 +3874,7 @@
           "path": [
             "كتاب المناسك"
           ],
-          "score": 0.2563
+          "score": 0.2579
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00243",
@@ -3323,7 +3882,7 @@
           "path": [
             "كتاب الديات"
           ],
-          "score": 0.2211
+          "score": 0.2218
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00118",
@@ -3332,7 +3891,7 @@
             "كتاب المناسك",
             "باب صيد الحرم ونباته"
           ],
-          "score": 0.2169
+          "score": 0.2131
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00795",
@@ -3341,7 +3900,7 @@
             "كتاب الحدود",
             "باب حد المحاربين"
           ],
-          "score": 0.2035
+          "score": 0.1985
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00426",
@@ -3350,7 +3909,7 @@
             "كتاب الشركة",
             "باب الغصب وجنابة البهائم"
           ],
-          "score": 0.1931
+          "score": 0.1913
         }
       ]
     },
@@ -3365,10 +3924,10 @@
         "خلطه",
         "زيت",
         "وصي",
-        "حكمها",
         "بطلت",
+        "حكمها",
         "يقول",
-        "الوصيه"
+        "غيرها"
       ],
       "babs": [
         {
@@ -3378,7 +3937,7 @@
             "كتاب الشركة",
             "باب الغصب وجنابة البهائم"
           ],
-          "score": 0.1973
+          "score": 0.2024
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00082",
@@ -3386,7 +3945,7 @@
           "path": [
             "كتاب الوصايا"
           ],
-          "score": 0.1684
+          "score": 0.1583
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00279",
@@ -3394,7 +3953,7 @@
           "path": [
             "كتاب الوصايا"
           ],
-          "score": 0.1515
+          "score": 0.1452
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00286",
@@ -3402,7 +3961,7 @@
           "path": [
             "كتاب الوصايا"
           ],
-          "score": 0.1391
+          "score": 0.1326
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00036",
@@ -3411,7 +3970,7 @@
             "كتاب الصلاة",
             "باب سجود السهو"
           ],
-          "score": 0.1271
+          "score": 0.1251
         }
       ]
     },
@@ -3425,9 +3984,9 @@
         "بازالته",
         "كالاقاله",
         "المتبايعين",
-        "احد",
         "الخلع",
         "اللازم",
+        "احد",
         "والصحيح",
         "طلاق"
       ],
@@ -3439,7 +3998,7 @@
             "كتاب النكاح",
             "باب العيوب في النكاح"
           ],
-          "score": 0.1977
+          "score": 0.1784
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00114",
@@ -3448,7 +4007,7 @@
             "كتاب النكاح",
             "باب ولاية النكاح"
           ],
-          "score": 0.1811
+          "score": 0.1728
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00239",
@@ -3457,7 +4016,7 @@
             "كتاب النكاح",
             "باب حكم العيوب في النكاح"
           ],
-          "score": 0.1804
+          "score": 0.1724
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00127",
@@ -3466,7 +4025,7 @@
             "كتاب البيع",
             "باب الخيار"
           ],
-          "score": 0.1774
+          "score": 0.1555
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00594",
@@ -3474,7 +4033,7 @@
           "path": [
             "كتاب الصداق"
           ],
-          "score": 0.1503
+          "score": 0.1466
         }
       ]
     },
@@ -3486,12 +4045,12 @@
         "تنفسخ",
         "مقام",
         "الاجاره",
+        "اجارته",
         "الثاني",
         "الاول",
-        "استولي",
-        "اجارته",
         "زالت",
         "اجر",
+        "استولي",
         "تكون"
       ],
       "babs": [
@@ -3502,13 +4061,13 @@
             "كتاب الشركة",
             "باب الإجارة"
           ],
-          "score": 0.1457
+          "score": 0.1451
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00075",
           "heading": "كتاب الإجارة",
           "path": [],
-          "score": 0.1358
+          "score": 0.1348
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00392",
@@ -3517,16 +4076,7 @@
             "كتاب الشركة",
             "باب الإجارة"
           ],
-          "score": 0.1295
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00653",
-          "heading": "فصل. وإذا تزوجت الرجعية في عدتها وحملت من الزوج الثاني انقطعت عدة الأول بوطء الثاني",
-          "path": [
-            "كتاب الطلاق",
-            "باب الرجعة"
-          ],
-          "score": 0.1286
+          "score": 0.131
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00219",
@@ -3535,7 +4085,16 @@
             "كتاب الشركة",
             "باب الإجارة"
           ],
-          "score": 0.1188
+          "score": 0.1206
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00653",
+          "heading": "فصل. وإذا تزوجت الرجعية في عدتها وحملت من الزوج الثاني انقطعت عدة الأول بوطء الثاني",
+          "path": [
+            "كتاب الطلاق",
+            "باب الرجعة"
+          ],
+          "score": 0.1183
         }
       ]
     },
@@ -3551,8 +4110,8 @@
         "بينهم",
         "منهما",
         "واحد",
-        "فمن",
         "يقدم",
+        "فمن",
         "البواقي"
       ],
       "babs": [
@@ -3563,7 +4122,7 @@
             "كتاب القضاء",
             "باب الدعاوى والبينات"
           ],
-          "score": 0.258
+          "score": 0.2607
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00328",
@@ -3571,7 +4130,7 @@
           "path": [
             "كتاب العتق"
           ],
-          "score": 0.2312
+          "score": 0.2329
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00205",
@@ -3579,7 +4138,7 @@
           "path": [
             "كتاب القضاء"
           ],
-          "score": 0.2066
+          "score": 0.2084
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00558",
@@ -3588,7 +4147,7 @@
             "كتاب النكاح",
             "باب اركان النكاح وشروطه"
           ],
-          "score": 0.2004
+          "score": 0.2007
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00379",
@@ -3596,7 +4155,7 @@
           "path": [
             "كتاب الشركة"
           ],
-          "score": 0.1837
+          "score": 0.187
         }
       ]
     },
@@ -3609,31 +4168,14 @@
         "لجهاله",
         "والغصوب",
         "يتصدق",
-        "يتملك",
         "اللقطه",
         "الزايد",
         "المعدوم",
         "الحول",
-        "وما"
+        "يتملك",
+        "حيث"
       ],
       "babs": [
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00030",
-          "heading": "فصل ويسن أن يتوضأ بمد",
-          "path": [
-            "كتاب الطهارة",
-            "باب ما يوجب الغسل وما يسن له وصفته"
-          ],
-          "score": 0.1373
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00007",
-          "heading": "فصل",
-          "path": [
-            "كتاب الطهارة"
-          ],
-          "score": 0.1313
-        },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00449",
           "heading": "تعريفها وأقسامها",
@@ -3641,13 +4183,7 @@
             "كتاب الشركة",
             "باب اللقطة"
           ],
-          "score": 0.1226
-        },
-        {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00547",
-          "heading": "كتاب الأطمعة",
-          "path": [],
-          "score": 0.122
+          "score": 0.1187
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00043",
@@ -3656,7 +4192,30 @@
             "كتاب الطهارة",
             "باب الحيض والاستحاضة والنفاس"
           ],
-          "score": 0.1135
+          "score": 0.1126
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00547",
+          "heading": "كتاب الأطمعة",
+          "path": [],
+          "score": 0.112
+        },
+        {
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00014",
+          "heading": "باب حكم المستحاضة",
+          "path": [
+            "كتاب الطهارة"
+          ],
+          "score": 0.1117
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00516",
+          "heading": "فصل",
+          "path": [
+            "كتاب الديات",
+            "باب العاقلة وما تحمله"
+          ],
+          "score": 0.1091
         }
       ]
     },
@@ -3691,15 +4250,7 @@
           "path": [
             "كتاب الصيد"
           ],
-          "score": 0.1487
-        },
-        {
-          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00030",
-          "heading": "باب صلاة المسافر",
-          "path": [
-            "كتاب الصلاة"
-          ],
-          "score": 0.139
+          "score": 0.1513
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00838",
@@ -3708,7 +4259,7 @@
             "كتاب الأيمان وكفاراتها",
             "باب النذر"
           ],
-          "score": 0.1384
+          "score": 0.1404
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00152",
@@ -3716,7 +4267,15 @@
           "path": [
             "كتاب الصيام"
           ],
-          "score": 0.1378
+          "score": 0.1403
+        },
+        {
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00030",
+          "heading": "باب صلاة المسافر",
+          "path": [
+            "كتاب الصلاة"
+          ],
+          "score": 0.1403
         }
       ]
     },
@@ -3733,15 +4292,15 @@
         "تحت",
         "صح",
         "الورثه",
-        "الموصي",
-        "تملك"
+        "منفعه",
+        "الموصي"
       ],
       "babs": [
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00122",
           "heading": "كتاب العتق",
           "path": [],
-          "score": 0.1551
+          "score": 0.1557
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00621",
@@ -3749,7 +4308,7 @@
           "path": [
             "كتاب الإقرار"
           ],
-          "score": 0.1543
+          "score": 0.148
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00329",
@@ -3757,15 +4316,7 @@
           "path": [
             "كتاب العتق"
           ],
-          "score": 0.1385
-        },
-        {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00331",
-          "heading": "باب الكتابة",
-          "path": [
-            "كتاب العتق"
-          ],
-          "score": 0.133
+          "score": 0.1403
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00106",
@@ -3773,7 +4324,16 @@
           "path": [
             "كتاب الفرائض"
           ],
-          "score": 0.1324
+          "score": 0.134
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00276",
+          "heading": "حكم ما لو أعتق العبد المعيب بعد شرائها وقبل علمه بالعيب",
+          "path": [
+            "كتاب البيع",
+            "باب الخيار في البيع والتصرف في المبيع وقبضه والإقالة"
+          ],
+          "score": 0.1329
         }
       ]
     },
@@ -3785,8 +4345,8 @@
         "الكثره",
         "بن",
         "وحكي",
-        "نفسه",
         "تعارض",
+        "نفسه",
         "بالتسويه",
         "ثالثه",
         "طويلتين",
@@ -3801,7 +4361,7 @@
             "كتاب الصلاة",
             "باب صلاة التطوع"
           ],
-          "score": 0.1999
+          "score": 0.2045
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00036",
@@ -3809,7 +4369,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1992
+          "score": 0.2035
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00018",
@@ -3817,15 +4377,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1769
-        },
-        {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00174",
-          "heading": "باب القسامة",
-          "path": [
-            "كتاب الديات"
-          ],
-          "score": 0.1715
+          "score": 0.1736
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00076",
@@ -3833,7 +4385,15 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1648
+          "score": 0.1684
+        },
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00174",
+          "heading": "باب القسامة",
+          "path": [
+            "كتاب الديات"
+          ],
+          "score": 0.1657
         }
       ]
     },
@@ -3860,7 +4420,7 @@
           "path": [
             "كتاب الأيمان"
           ],
-          "score": 0.1169
+          "score": 0.1112
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00058",
@@ -3869,15 +4429,7 @@
             "كتاب الصلاة",
             "باب استقبال القبلة وأدلتها"
           ],
-          "score": 0.1088
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00523",
-          "heading": "باب ميراث القاتل",
-          "path": [
-            "كتاب الفرائض"
-          ],
-          "score": 0.1018
+          "score": 0.1105
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00030",
@@ -3885,7 +4437,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1014
+          "score": 0.1021
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00057",
@@ -3893,7 +4445,15 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.0981
+          "score": 0.0992
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00523",
+          "heading": "باب ميراث القاتل",
+          "path": [
+            "كتاب الفرائض"
+          ],
+          "score": 0.0962
         }
       ]
     },
@@ -3904,11 +4464,11 @@
         "درهم",
         "حكمها",
         "يقول",
-        "كثيره",
         "غيرها",
+        "كثيره",
         "سقط",
-        "يخرج",
         "الماء",
+        "يخرج",
         "بل",
         "خلاف",
         "كانت"
@@ -3921,7 +4481,7 @@
             "كتاب الإقرار",
             "باب الإقرار بالمجمل"
           ],
-          "score": 0.188
+          "score": 0.1889
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00631",
@@ -3930,7 +4490,7 @@
             "كتاب الإقرار",
             "باب الإقرار بالمجمل"
           ],
-          "score": 0.1868
+          "score": 0.1884
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00894",
@@ -3939,7 +4499,7 @@
             "كتاب الإقرار",
             "باب الإقرار بالمجمل"
           ],
-          "score": 0.1513
+          "score": 0.1522
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00060",
@@ -3947,15 +4507,134 @@
           "path": [
             "كتاب الزكاة"
           ],
-          "score": 0.1371
+          "score": 0.138
         },
         {
-          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00110",
-          "heading": "باب الأرضون المغنومة",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00006",
+          "heading": "فصل في ضابط الماء الكثير",
           "path": [
-            "كتاب الجهاد"
+            "كتاب الطهارة"
           ],
-          "score": 0.105
+          "score": 0.1075
+        }
+      ]
+    },
+    "nafaqa_stipulated_in_contract": {
+      "cases": 4,
+      "lexicon": [
+        "والكسوه",
+        "النفقه",
+        "الظير",
+        "استيجار",
+        "بنفقه",
+        "المعاوضه",
+        "شهرا",
+        "صح",
+        "العقود",
+        "المضاربه",
+        "الاجراء",
+        "بالطعام"
+      ],
+      "babs": [
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00705",
+          "heading": "فصل",
+          "path": [
+            "كتاب النفقات"
+          ],
+          "score": 0.169
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00325",
+          "heading": "فصل",
+          "path": [
+            "كتاب البيع",
+            "باب الرهن"
+          ],
+          "score": 0.1585
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00465",
+          "heading": "فصل",
+          "path": [
+            "كتاب النفقات"
+          ],
+          "score": 0.1286
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00376",
+          "heading": "فصل",
+          "path": [
+            "كتاب الشركة"
+          ],
+          "score": 0.1275
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00709",
+          "heading": "فصل:- وإن أعسر الزوج بنفقتها أو ببعضها",
+          "path": [
+            "كتاب النفقات"
+          ],
+          "score": 0.1256
+        }
+      ]
+    },
+    "nafaqa_taken_owned": {
+      "cases": 3,
+      "lexicon": [
+        "النفقه",
+        "نفقه",
+        "اخذ",
+        "يحج",
+        "وكسوتها",
+        "يسترد",
+        "فضلت",
+        "فضله",
+        "ليحج",
+        "الكسوه",
+        "الغازي",
+        "اعانه"
+      ],
+      "babs": [
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00705",
+          "heading": "فصل",
+          "path": [
+            "كتاب النفقات"
+          ],
+          "score": 0.157
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00098",
+          "heading": "فصل",
+          "path": [
+            "كتاب المناسك"
+          ],
+          "score": 0.1491
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00466",
+          "heading": "باب نفقة الأقارب والمماليك",
+          "path": [
+            "كتاب النفقات"
+          ],
+          "score": 0.1471
+        },
+        {
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00163",
+          "heading": "باب نفقة الأقارب",
+          "path": [
+            "كتاب النفقات"
+          ],
+          "score": 0.143
+        },
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00142",
+          "heading": "باب نفقة المعتدات",
+          "path": [
+            "كتاب الطلاق"
+          ],
+          "score": 0.1405
         }
       ]
     },
@@ -3983,13 +4662,13 @@
             "كتاب الصلاة",
             "باب صلاة التطوع"
           ],
-          "score": 0.1571
+          "score": 0.1548
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00155",
           "heading": "كتاب الحج وشروطه",
           "path": [],
-          "score": 0.1409
+          "score": 0.1393
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00050",
@@ -3998,7 +4677,7 @@
             "كتاب الصلاة",
             "باب شروط الصلاة"
           ],
-          "score": 0.1351
+          "score": 0.136
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00039",
@@ -4006,7 +4685,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1335
+          "score": 0.1352
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00084",
@@ -4014,7 +4693,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1296
+          "score": 0.1299
         }
       ]
     },
@@ -4041,7 +4720,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1476
+          "score": 0.1503
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00048",
@@ -4049,7 +4728,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1268
+          "score": 0.1285
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00663",
@@ -4057,7 +4736,7 @@
           "path": [
             "كتاب الظهار"
           ],
-          "score": 0.1184
+          "score": 0.1193
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00235",
@@ -4065,15 +4744,16 @@
           "path": [
             "كتاب الغصب"
           ],
-          "score": 0.1125
+          "score": 0.1143
         },
         {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00065",
-          "heading": "باب الصلح",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00079",
+          "heading": "فصل يستحب حفظ القرآن إجماعا",
           "path": [
-            "كتاب البيوع"
+            "كتاب الصلاة",
+            "باب صلاة التطوع"
           ],
-          "score": 0.1114
+          "score": 0.1072
         }
       ]
     },
@@ -4087,11 +4767,11 @@
         "القسمه",
         "انهدم",
         "المشترك",
-        "يجبر",
         "الانتفاع",
         "قسمته",
-        "طلب",
-        "الشريكين"
+        "يجبر",
+        "اجبار",
+        "اجبر"
       ],
       "babs": [
         {
@@ -4100,7 +4780,7 @@
           "path": [
             "كتاب القضاء"
           ],
-          "score": 0.2767
+          "score": 0.27
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00592",
@@ -4109,7 +4789,7 @@
             "كتاب القضاء",
             "باب القسمة"
           ],
-          "score": 0.2578
+          "score": 0.2599
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00591",
@@ -4117,7 +4797,7 @@
           "path": [
             "كتاب القضاء"
           ],
-          "score": 0.2023
+          "score": 0.2002
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00861",
@@ -4126,16 +4806,16 @@
             "كتاب القضاء والفتيا",
             "باب القسمة"
           ],
-          "score": 0.1981
+          "score": 0.1974
         },
         {
-          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00360",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00867",
           "heading": "فصل",
           "path": [
             "كتاب القضاء والفتيا",
-            "باب القسمة"
+            "باب الدعاوى والبينات"
           ],
-          "score": 0.1853
+          "score": 0.1827
         }
       ]
     },
@@ -4146,9 +4826,9 @@
         "الصلاه",
         "الصحه",
         "العيد",
-        "بحال",
         "اوقات",
         "صوم",
+        "بحال",
         "يختص",
         "ومنها",
         "امثله",
@@ -4162,15 +4842,7 @@
           "path": [
             "كتاب الصيام"
           ],
-          "score": 0.2034
-        },
-        {
-          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00075",
-          "heading": "باب صوم التطوع",
-          "path": [
-            "كتاب الصيام"
-          ],
-          "score": 0.1834
+          "score": 0.1991
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00083",
@@ -4179,7 +4851,15 @@
             "كتاب الصلاة",
             "باب صلاة التطوع"
           ],
-          "score": 0.183
+          "score": 0.1815
+        },
+        {
+          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00075",
+          "heading": "باب صوم التطوع",
+          "path": [
+            "كتاب الصيام"
+          ],
+          "score": 0.1798
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00081",
@@ -4188,15 +4868,15 @@
             "كتاب الصلاة",
             "باب صلاة التطوع"
           ],
-          "score": 0.1609
+          "score": 0.1647
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00149",
-          "heading": "باب صوم التطوع وما يكره منه وذكر ليلة القدر",
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00037",
+          "heading": "باب صلاة الاستسقاء",
           "path": [
-            "كتاب الصيام"
+            "كتاب الصلاة"
           ],
-          "score": 0.1537
+          "score": 0.1567
         }
       ]
     },
@@ -4213,8 +4893,8 @@
         "العقد",
         "والصداق",
         "ومقتضاه",
-        "اللازمه",
-        "عقودها"
+        "عقودها",
+        "فهذه"
       ],
       "babs": [
         {
@@ -4224,7 +4904,7 @@
             "كتاب البيع",
             "باب الربا والصرف"
           ],
-          "score": 0.2127
+          "score": 0.2101
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00290",
@@ -4233,7 +4913,7 @@
             "كتاب البيع",
             "باب الربا والصرف والحيل"
           ],
-          "score": 0.2017
+          "score": 0.1964
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00309",
@@ -4242,7 +4922,7 @@
             "كتاب البيع",
             "باب السلم والتصرف في الدين وما يتعلق به"
           ],
-          "score": 0.198
+          "score": 0.1961
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00318",
@@ -4251,7 +4931,7 @@
             "كتاب البيع",
             "باب الرهن"
           ],
-          "score": 0.1708
+          "score": 0.1682
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00174",
@@ -4259,7 +4939,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1611
+          "score": 0.1587
         }
       ]
     },
@@ -4276,8 +4956,8 @@
         "كالديه",
         "للميت",
         "لورثته",
-        "وسرايته",
-        "ومنها"
+        "ومنها",
+        "العفو"
       ],
       "babs": [
         {
@@ -4287,7 +4967,15 @@
             "كتاب الجنايات",
             "باب ما يوجب القصاص فيما دون النفس"
           ],
-          "score": 0.2937
+          "score": 0.2759
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00487",
+          "heading": "باب العفو عن القصاص",
+          "path": [
+            "كتاب الجنايات"
+          ],
+          "score": 0.2674
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00477",
@@ -4296,15 +4984,7 @@
             "كتاب الجنايات",
             "باب شروط القصاص"
           ],
-          "score": 0.2812
-        },
-        {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00487",
-          "heading": "باب العفو عن القصاص",
-          "path": [
-            "كتاب الجنايات"
-          ],
-          "score": 0.2748
+          "score": 0.2666
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00479",
@@ -4313,16 +4993,15 @@
             "كتاب الجنايات",
             "باب شروط القصاص"
           ],
-          "score": 0.2086
+          "score": 0.2025
         },
         {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00163",
-          "heading": "فصل [في شروط جواز استيفاء القصاص]",
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00476",
+          "heading": "باب شروط القصاص",
           "path": [
-            "كتاب الجنايات",
-            "باب شروط وجوب القصاص واستيفائه"
+            "كتاب الجنايات"
           ],
-          "score": 0.19
+          "score": 0.1846
         }
       ]
     },
@@ -4335,12 +5014,12 @@
         "نفقه",
         "اذنه",
         "الدين",
-        "الدار",
-        "بما",
         "واشترط",
+        "بما",
+        "الدار",
         "قولا",
         "الرهن",
-        "غيره"
+        "واجبا"
       ],
       "babs": [
         {
@@ -4350,16 +5029,7 @@
             "كتاب البيع",
             "باب الضمان والكفالة وما يتعلق بهما"
           ],
-          "score": 0.312
-        },
-        {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00272",
-          "heading": "فصل",
-          "path": [
-            "كتاب الوقف",
-            "باب الهبة والعطية"
-          ],
-          "score": 0.2709
+          "score": 0.2715
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00185",
@@ -4368,7 +5038,16 @@
             "كتاب البيع",
             "باب الرهن"
           ],
-          "score": 0.2555
+          "score": 0.2434
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00272",
+          "heading": "فصل",
+          "path": [
+            "كتاب الوقف",
+            "باب الهبة والعطية"
+          ],
+          "score": 0.2368
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00095",
@@ -4377,7 +5056,60 @@
             "كتاب البيع",
             "باب الرهن"
           ],
-          "score": 0.2016
+          "score": 0.1942
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00325",
+          "heading": "فصل",
+          "path": [
+            "كتاب البيع",
+            "باب الرهن"
+          ],
+          "score": 0.1902
+        }
+      ]
+    },
+    "recourse_after_return": {
+      "cases": 6,
+      "lexicon": [
+        "ابراه",
+        "منه",
+        "يرجع",
+        "ثمنها",
+        "الابراء",
+        "قضي",
+        "تقايلا",
+        "هبه",
+        "عينا",
+        "وهبه",
+        "الرجوع",
+        "العين"
+      ],
+      "babs": [
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00331",
+          "heading": "فصل",
+          "path": [
+            "كتاب البيع",
+            "باب الضمان والكفالة وما يتعلق بهما"
+          ],
+          "score": 0.228
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00587",
+          "heading": "فصل",
+          "path": [
+            "كتاب الصداق"
+          ],
+          "score": 0.1976
+        },
+        {
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00082",
+          "heading": "باب الصلح",
+          "path": [
+            "كتاب البيوع"
+          ],
+          "score": 0.1733
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00141",
@@ -4386,15 +5118,24 @@
             "كتاب البيع",
             "باب الضمان"
           ],
-          "score": 0.2001
+          "score": 0.1713
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00467",
+          "heading": "فصل",
+          "path": [
+            "كتاب الوقف",
+            "باب الهبة والعطية"
+          ],
+          "score": 0.1694
         }
       ]
     },
     "removal_before_knowledge": {
       "cases": 3,
       "lexicon": [
-        "ينعزل",
         "تنفسخ",
+        "ينعزل",
         "العلم",
         "الوكيل",
         "المودع",
@@ -4413,7 +5154,7 @@
           "path": [
             "كتاب التفليس"
           ],
-          "score": 0.2509
+          "score": 0.244
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00361",
@@ -4422,7 +5163,7 @@
             "كتاب البيع",
             "باب الوكالة"
           ],
-          "score": 0.2153
+          "score": 0.2016
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00441",
@@ -4431,7 +5172,7 @@
             "كتاب الشركة",
             "باب الوديعة"
           ],
-          "score": 0.1947
+          "score": 0.1921
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00362",
@@ -4440,16 +5181,202 @@
             "كتاب البيع",
             "باب الوكالة"
           ],
-          "score": 0.1581
+          "score": 0.1563
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00366",
-          "heading": "الوكيل أمين",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00367",
+          "heading": "حكم من ادعى أنه وكيل في قبض الوديعة",
           "path": [
             "كتاب البيع",
             "باب الوكالة"
           ],
-          "score": 0.1387
+          "score": 0.1404
+        }
+      ]
+    },
+    "repeat_bearing_roots_as_trees": {
+      "cases": 5,
+      "lexicon": [
+        "كالزرع",
+        "قيل",
+        "الاصول",
+        "هي",
+        "كالشجر",
+        "الشجر",
+        "الارض",
+        "هذه",
+        "يتباقي",
+        "القطع",
+        "الا",
+        "فللمالك"
+      ],
+      "babs": [
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00291",
+          "heading": "تعريف الأصول",
+          "path": [
+            "كتاب البيع",
+            "باب بيع الأصول والثمار"
+          ],
+          "score": 0.2485
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00172",
+          "heading": "فصل",
+          "path": [
+            "كتاب البيع",
+            "باب بيع الأصول والثمار"
+          ],
+          "score": 0.2152
+        },
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00057",
+          "heading": "باب بيع الأصول والثمار",
+          "path": [
+            "كتاب البيوع"
+          ],
+          "score": 0.196
+        },
+        {
+          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00131",
+          "heading": "باب بيع الأصول والثمار",
+          "path": [
+            "كتاب البيع"
+          ],
+          "score": 0.183
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00169",
+          "heading": "باب بيع الأصول والثمار",
+          "path": [
+            "كتاب البيع"
+          ],
+          "score": 0.182
+        }
+      ]
+    },
+    "rescission_harm": {
+      "cases": 8,
+      "lexicon": [
+        "عزله",
+        "ينعزل",
+        "الرد",
+        "فسخ",
+        "العامل",
+        "الموصي",
+        "عمل",
+        "حاكما",
+        "المسمي",
+        "المال",
+        "الضرر",
+        "الوصيه"
+      ],
+      "babs": [
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00488",
+          "heading": "فصل",
+          "path": [
+            "كتاب الوصايا",
+            "باب الموصى به"
+          ],
+          "score": 0.1524
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00215",
+          "heading": "فصل",
+          "path": [
+            "كتاب الشركة",
+            "باب المساقاة"
+          ],
+          "score": 0.1503
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00494",
+          "heading": "باب الموصى اليه",
+          "path": [
+            "كتاب الوصايا"
+          ],
+          "score": 0.1483
+        },
+        {
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00109",
+          "heading": "باب المساقاة",
+          "path": [
+            "كتاب البيع"
+          ],
+          "score": 0.1439
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00285",
+          "heading": "فصل",
+          "path": [
+            "كتاب الوصايا",
+            "باب الموصى به"
+          ],
+          "score": 0.1385
+        }
+      ]
+    },
+    "rescue_loss_liability": {
+      "cases": 9,
+      "lexicon": [
+        "النقص",
+        "قلع",
+        "الحفر",
+        "تسويه",
+        "ملك",
+        "القلع",
+        "غرس",
+        "غرسه",
+        "ارضا",
+        "فعليه",
+        "غصب",
+        "حفره"
+      ],
+      "babs": [
+        {
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00117",
+          "heading": "فصل",
+          "path": [
+            "كتاب البيع",
+            "باب الغصب"
+          ],
+          "score": 0.1382
+        },
+        {
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00116",
+          "heading": "باب الغصب",
+          "path": [
+            "كتاب البيع"
+          ],
+          "score": 0.1377
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00507",
+          "heading": "فصل",
+          "path": [
+            "كتاب الديات",
+            "باب ديات الأعضاء ومنافعها"
+          ],
+          "score": 0.1258
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00427",
+          "heading": "فصل:- وإن أجج نارا في موات أو في ملكه أو سقى أرضه",
+          "path": [
+            "كتاب الشركة",
+            "باب الغصب وجنابة البهائم"
+          ],
+          "score": 0.1243
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00444",
+          "heading": "تعريف الموات",
+          "path": [
+            "كتاب الشركة",
+            "باب إحياء الموات"
+          ],
+          "score": 0.1091
         }
       ]
     },
@@ -4461,13 +5388,13 @@
         "الامر",
         "قرينه",
         "ولفظه",
-        "الجواز",
         "يقتضي",
+        "الجواز",
         "صرف",
         "اختاره",
-        "وكذلك",
-        "اسحاق",
-        "الاشعري"
+        "الاشعري",
+        "البرهان",
+        "الحرمين"
       ],
       "babs": [
         {
@@ -4476,16 +5403,7 @@
           "path": [
             "كتاب النكاح"
           ],
-          "score": 0.073
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00632",
-          "heading": "فصل وأدوات الشرط المستعملة في طلاق وعتق غالبا ست:",
-          "path": [
-            "كتاب الطلاق",
-            "باب تعليق الطلاق بالشروط"
-          ],
-          "score": 0.0668
+          "score": 0.0662
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00013",
@@ -4496,13 +5414,13 @@
           "score": 0.0652
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00260",
-          "heading": "فصل",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00632",
+          "heading": "فصل وأدوات الشرط المستعملة في طلاق وعتق غالبا ست:",
           "path": [
-            "كتاب البيع",
-            "باب الشروط في البيع وأقسامها"
+            "كتاب الطلاق",
+            "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.0604
+          "score": 0.0626
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00272",
@@ -4510,7 +5428,15 @@
           "path": [
             "كتاب القضاء"
           ],
-          "score": 0.059
+          "score": 0.056
+        },
+        {
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00235",
+          "heading": "فصل",
+          "path": [
+            "كتاب الجنايات"
+          ],
+          "score": 0.0545
         }
       ]
     },
@@ -4519,16 +5445,16 @@
       "lexicon": [
         "يجب",
         "الموتمن",
-        "يجوز",
         "الامانات",
-        "صاحبها",
         "ودخل",
-        "بدون",
+        "صاحبها",
+        "يجوز",
         "والمضاربه",
-        "المطالبه",
+        "بدون",
         "الوديعه",
+        "المطالبه",
         "المبادره",
-        "ردها"
+        "اداوه"
       ],
       "babs": [
         {
@@ -4537,7 +5463,7 @@
           "path": [
             "كتاب البيوع"
           ],
-          "score": 0.138
+          "score": 0.1288
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00095",
@@ -4545,15 +5471,7 @@
           "path": [
             "كتاب التفليس"
           ],
-          "score": 0.1236
-        },
-        {
-          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00081",
-          "heading": "باب الضمان والكفالة",
-          "path": [
-            "كتاب البيوع"
-          ],
-          "score": 0.1199
+          "score": 0.119
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00142",
@@ -4561,15 +5479,23 @@
           "path": [
             "كتاب الصيام"
           ],
-          "score": 0.1194
+          "score": 0.1168
         },
         {
-          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00068",
-          "heading": "باب ما يجوز بيعه وما يشترط لصحته",
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00081",
+          "heading": "باب الضمان والكفالة",
           "path": [
             "كتاب البيوع"
           ],
-          "score": 0.1159
+          "score": 0.1147
+        },
+        {
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00121",
+          "heading": "باب الوديعة",
+          "path": [
+            "كتاب البيع"
+          ],
+          "score": 0.1125
         }
       ]
     },
@@ -4579,15 +5505,15 @@
         "البيع",
         "باع",
         "يسقط",
+        "التحريق",
         "ملكه",
         "فسخ",
-        "التحريق",
         "الهدم",
-        "الزكاه",
         "يفسخ",
-        "عنه",
         "بادر",
-        "بانتقاله"
+        "الزكاه",
+        "بانتقاله",
+        "حكاهما"
       ],
       "babs": [
         {
@@ -4596,7 +5522,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.251
+          "score": 0.2453
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00253",
@@ -4604,24 +5530,15 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.2088
+          "score": 0.2083
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00298",
-          "heading": "فصل",
-          "path": [
-            "كتاب البيع",
-            "باب بيع الأصول والثمار"
-          ],
-          "score": 0.1847
-        },
-        {
-          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00089",
-          "heading": "باب بيع الأصول والثمار",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00238",
+          "heading": "الشرط الثاني",
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.178
+          "score": 0.1772
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00279",
@@ -4630,7 +5547,16 @@
             "كتاب البيع",
             "باب الخيار في البيع والتصرف في المبيع وقبضه والإقالة"
           ],
-          "score": 0.1774
+          "score": 0.1746
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00298",
+          "heading": "فصل",
+          "path": [
+            "كتاب البيع",
+            "باب بيع الأصول والثمار"
+          ],
+          "score": 0.1666
         }
       ]
     },
@@ -4646,8 +5572,8 @@
         "النكره",
         "باشرها",
         "احد",
-        "حق",
         "بد",
+        "حق",
         "اا"
       ],
       "babs": [
@@ -4658,7 +5584,7 @@
             "كتاب الطلاق",
             "باب سنة الطلاق وبدعته"
           ],
-          "score": 0.1518
+          "score": 0.1531
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00189",
@@ -4667,7 +5593,7 @@
             "كتاب النكاح",
             "باب الخلع"
           ],
-          "score": 0.137
+          "score": 0.1379
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00588",
@@ -4676,7 +5602,7 @@
             "كتاب القضاء",
             "باب طريق الحكم وصفته"
           ],
-          "score": 0.1368
+          "score": 0.1378
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00393",
@@ -4685,7 +5611,7 @@
             "كتاب الطلاق",
             "باب صريح الطلاق وكنايته"
           ],
-          "score": 0.1352
+          "score": 0.1366
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00281",
@@ -4694,7 +5620,7 @@
             "كتاب البيع",
             "باب الخيار في البيع والتصرف في المبيع وقبضه والإقالة"
           ],
-          "score": 0.1291
+          "score": 0.1226
         }
       ]
     },
@@ -4702,17 +5628,17 @@
       "cases": 7,
       "lexicon": [
         "ينفذ",
-        "تصرف",
         "مقام",
-        "تملكه",
+        "تصرف",
         "التملك",
+        "تملكه",
         "فسخا",
         "وطيها",
-        "تصرفه",
         "تملكا",
+        "تصرفه",
         "الخلاف",
         "يكون",
-        "القبول"
+        "الوطء"
       ],
       "babs": [
         {
@@ -4722,7 +5648,7 @@
             "كتاب البيع",
             "باب الخيار في البيع"
           ],
-          "score": 0.1996
+          "score": 0.1843
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00273",
@@ -4731,7 +5657,7 @@
             "كتاب الوقف",
             "باب الهبة والعطية"
           ],
-          "score": 0.1583
+          "score": 0.1488
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00478",
@@ -4739,7 +5665,7 @@
           "path": [
             "كتاب الوصايا"
           ],
-          "score": 0.1488
+          "score": 0.1443
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00086",
@@ -4747,7 +5673,7 @@
           "path": [
             "كتاب التفليس"
           ],
-          "score": 0.1372
+          "score": 0.1292
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00470",
@@ -4756,7 +5682,7 @@
             "كتاب الوقف",
             "باب الهبة والعطية"
           ],
-          "score": 0.1328
+          "score": 0.1277
         }
       ]
     },
@@ -4771,10 +5697,10 @@
         "اتلف",
         "الماخوذ",
         "الوقف",
-        "بيع",
         "يصير",
-        "بعين",
-        "بمجرد"
+        "بمجرد",
+        "بيع",
+        "بعين"
       ],
       "babs": [
         {
@@ -4784,7 +5710,7 @@
             "كتاب البيع",
             "باب الرهن"
           ],
-          "score": 0.1818
+          "score": 0.1736
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00184",
@@ -4793,7 +5719,7 @@
             "كتاب البيع",
             "باب الرهن"
           ],
-          "score": 0.1657
+          "score": 0.1642
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00267",
@@ -4801,7 +5727,7 @@
           "path": [
             "كتاب الوقف"
           ],
-          "score": 0.1428
+          "score": 0.1359
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00315",
@@ -4810,7 +5736,7 @@
             "كتاب البيع",
             "باب الرهن"
           ],
-          "score": 0.134
+          "score": 0.1263
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00186",
@@ -4819,7 +5745,7 @@
             "كتاب البيع",
             "باب الرهن"
           ],
-          "score": 0.1279
+          "score": 0.1253
         }
       ]
     },
@@ -4832,29 +5758,29 @@
         "شك",
         "ايقاع",
         "مده",
-        "يلزمه",
         "الخفين",
         "فمسح",
+        "يلزمه",
         "ابتدا",
         "محدثا",
         "اعاده"
       ],
       "babs": [
         {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00005",
-          "heading": "باب المسح على الخفين",
-          "path": [
-            "كتاب الطهارة"
-          ],
-          "score": 0.2115
-        },
-        {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00011",
           "heading": "باب مسح الخفين",
           "path": [
             "كتاب الطهارة"
           ],
-          "score": 0.2085
+          "score": 0.2118
+        },
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00005",
+          "heading": "باب المسح على الخفين",
+          "path": [
+            "كتاب الطهارة"
+          ],
+          "score": 0.2116
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00007",
@@ -4862,7 +5788,7 @@
           "path": [
             "كتاب الطهارة"
           ],
-          "score": 0.2017
+          "score": 0.2046
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006",
@@ -4870,7 +5796,7 @@
           "path": [
             "كتاب الطهارة"
           ],
-          "score": 0.1911
+          "score": 0.1946
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00646",
@@ -4878,7 +5804,7 @@
           "path": [
             "كتاب الطلاق"
           ],
-          "score": 0.183
+          "score": 0.1832
         }
       ]
     },
@@ -4892,8 +5818,8 @@
         "تطلق",
         "الخيار",
         "فانت",
-        "الاب",
         "يحنث",
+        "الاب",
         "حامد",
         "يقع",
         "تزوج"
@@ -4905,7 +5831,7 @@
           "path": [
             "كتاب الطلاق"
           ],
-          "score": 0.2517
+          "score": 0.2576
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00635",
@@ -4914,7 +5840,7 @@
             "كتاب الطلاق",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.2375
+          "score": 0.2435
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00403",
@@ -4922,7 +5848,7 @@
           "path": [
             "كتاب الطلاق"
           ],
-          "score": 0.2375
+          "score": 0.2435
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00138",
@@ -4930,7 +5856,7 @@
           "path": [
             "كتاب الطلاق"
           ],
-          "score": 0.2343
+          "score": 0.2377
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00408",
@@ -4939,7 +5865,7 @@
             "كتاب الطلاق",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.2184
+          "score": 0.2221
         }
       ]
     },
@@ -4956,8 +5882,8 @@
         "النجس",
         "يرتفع",
         "والا",
-        "سبع",
-        "كل"
+        "كل",
+        "سبع"
       ],
       "babs": [
         {
@@ -4967,7 +5893,7 @@
             "كتاب الطهارة",
             "باب المياه"
           ],
-          "score": 0.2925
+          "score": 0.2945
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00015",
@@ -4975,7 +5901,7 @@
           "path": [
             "كتاب الطهارة"
           ],
-          "score": 0.1757
+          "score": 0.1779
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00266",
@@ -4984,7 +5910,7 @@
             "كتاب الطلاق",
             "باب الطلاق في الماضي والمستقبل"
           ],
-          "score": 0.1726
+          "score": 0.1753
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00008",
@@ -4992,16 +5918,77 @@
           "path": [
             "كتاب الطهارة"
           ],
-          "score": 0.1628
+          "score": 0.1642
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00021",
-          "heading": "فصل والترتيب والموالاة فرضان",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00005",
+          "heading": "فصل",
           "path": [
-            "كتاب الطهارة",
-            "باب الوضوء"
+            "كتاب الطهارة"
           ],
-          "score": 0.1575
+          "score": 0.1551
+        }
+      ]
+    },
+    "seizing_hand_liable": {
+      "cases": 5,
+      "lexicon": [
+        "استيلاء",
+        "الحرب",
+        "المسلمين",
+        "اموال",
+        "الضمان",
+        "اهل",
+        "الملك",
+        "يملكون",
+        "يثبت",
+        "اليد",
+        "وما",
+        "فيدخل"
+      ],
+      "babs": [
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00185",
+          "heading": "باب قتال أهل البغي",
+          "path": [
+            "كتاب الحدود"
+          ],
+          "score": 0.2342
+        },
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00193",
+          "heading": "فصل [في الهدنة]",
+          "path": [
+            "كتاب الجهاد",
+            "باب الأمان"
+          ],
+          "score": 0.2036
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00235",
+          "heading": "فصل",
+          "path": [
+            "كتاب الجهاد",
+            "باب أحكام الذمة"
+          ],
+          "score": 0.191
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00796",
+          "heading": "باب قتال أهل البغي",
+          "path": [
+            "كتاب الحدود"
+          ],
+          "score": 0.1758
+        },
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00191",
+          "heading": "فصل [في الفيء]",
+          "path": [
+            "كتاب الجهاد",
+            "باب الغنائم وقسمتها"
+          ],
+          "score": 0.1611
         }
       ]
     },
@@ -5009,9 +5996,9 @@
       "cases": 5,
       "lexicon": [
         "الوقت",
-        "فعليه",
         "فاذا",
         "التمكن",
+        "فعليه",
         "القضاء",
         "الاداء",
         "قضاء",
@@ -5019,7 +6006,7 @@
         "بطه",
         "تكليفه",
         "طرا",
-        "صاحب"
+        "المكلف"
       ],
       "babs": [
         {
@@ -5029,7 +6016,7 @@
             "كتاب الصيام",
             "باب ما يكره وما يستحب وحكم القضاء"
           ],
-          "score": 0.2046
+          "score": 0.1936
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00049",
@@ -5038,7 +6025,7 @@
             "كتاب الصلاة",
             "باب شروط الصلاة"
           ],
-          "score": 0.1845
+          "score": 0.1878
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00055",
@@ -5046,13 +6033,13 @@
           "path": [
             "كتاب الصوم"
           ],
-          "score": 0.1832
+          "score": 0.1747
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00053",
           "heading": "كتاب الصوم",
           "path": [],
-          "score": 0.1733
+          "score": 0.1718
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00148",
@@ -5061,7 +6048,7 @@
             "كتاب الصيام",
             "باب ما يكره وما يستحب في الصوم وحكم القضاء"
           ],
-          "score": 0.1405
+          "score": 0.1406
         }
       ]
     },
@@ -5074,11 +6061,11 @@
         "الاصل",
         "الهدي",
         "الوصول",
-        "مستقرا",
         "تعلقا",
         "عديده",
         "فتعذر",
         "للمساله",
+        "مستقرا",
         "اصلا"
       ],
       "babs": [
@@ -5089,7 +6076,15 @@
             "كتاب الحج وشروطه",
             "باب الهدي والأضاحي والعقيقة"
           ],
-          "score": 0.1289
+          "score": 0.1299
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00198",
+          "heading": "باب الهدي والأضاحي والعقيقة",
+          "path": [
+            "كتاب الحج وشروطه"
+          ],
+          "score": 0.1227
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00177",
@@ -5098,15 +6093,7 @@
             "كتاب الحج وشروطه",
             "باب الفدية"
           ],
-          "score": 0.1201
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00198",
-          "heading": "باب الهدي والأضاحي والعقيقة",
-          "path": [
-            "كتاب الحج وشروطه"
-          ],
-          "score": 0.1193
+          "score": 0.1215
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00119",
@@ -5114,7 +6101,7 @@
           "path": [
             "كتاب الفرائض"
           ],
-          "score": 0.1119
+          "score": 0.1083
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00127",
@@ -5123,7 +6110,7 @@
             "كتاب المناسك",
             "باب الهدي والأضاحي"
           ],
-          "score": 0.104
+          "score": 0.1041
         }
       ]
     },
@@ -5137,9 +6124,9 @@
         "الاصل",
         "القيمه",
         "الهدي",
-        "وجد",
-        "المثل",
         "اليها",
+        "المثل",
+        "وجد",
         "عدمه",
         "بدلا"
       ],
@@ -5150,7 +6137,7 @@
           "path": [
             "كتاب الظهار"
           ],
-          "score": 0.1529
+          "score": 0.1542
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00664",
@@ -5158,7 +6145,7 @@
           "path": [
             "كتاب الظهار"
           ],
-          "score": 0.1427
+          "score": 0.1426
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00589",
@@ -5167,15 +6154,7 @@
             "كتاب القضاء",
             "باب حكم كتاب القاضي إلى القاضي"
           ],
-          "score": 0.134
-        },
-        {
-          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00212",
-          "heading": "فصل",
-          "path": [
-            "كتاب الظهار"
-          ],
-          "score": 0.1096
+          "score": 0.1243
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00201",
@@ -5184,7 +6163,15 @@
             "كتاب الحج وشروطه",
             "باب الهدي والأضاحي والعقيقة"
           ],
-          "score": 0.1075
+          "score": 0.1086
+        },
+        {
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00212",
+          "heading": "فصل",
+          "path": [
+            "كتاب الظهار"
+          ],
+          "score": 0.1074
         }
       ]
     },
@@ -5199,9 +6186,9 @@
         "الراهن",
         "قبضه",
         "العاريه",
+        "اعاره",
         "رهنه",
         "وابن",
-        "اعاره",
         "عنده"
       ],
       "babs": [
@@ -5211,7 +6198,7 @@
           "path": [
             "كتاب العارية"
           ],
-          "score": 0.1717
+          "score": 0.1751
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00093",
@@ -5219,7 +6206,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1383
+          "score": 0.1341
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00182",
@@ -5227,7 +6214,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.125
+          "score": 0.1192
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00093",
@@ -5235,16 +6222,16 @@
           "path": [
             "كتاب التفليس"
           ],
-          "score": 0.1196
+          "score": 0.1169
         },
         {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00184",
-          "heading": "فصل",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00314",
+          "heading": "حكم تصرف الراهن في الرهن",
           "path": [
             "كتاب البيع",
             "باب الرهن"
           ],
-          "score": 0.1157
+          "score": 0.1147
         }
       ]
     },
@@ -5262,7 +6249,7 @@
         "احكامها",
         "بالانتفاع",
         "واورد",
-        "رهنه"
+        "بعضها"
       ],
       "babs": [
         {
@@ -5271,7 +6258,7 @@
           "path": [
             "كتاب العارية"
           ],
-          "score": 0.1726
+          "score": 0.1756
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00045",
@@ -5279,7 +6266,7 @@
           "path": [
             "كتاب الزكاة"
           ],
-          "score": 0.1163
+          "score": 0.1193
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00025",
@@ -5287,7 +6274,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1128
+          "score": 0.1159
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00304",
@@ -5295,7 +6282,7 @@
           "path": [
             "كتاب الفرائض"
           ],
-          "score": 0.1067
+          "score": 0.1121
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00016",
@@ -5303,7 +6290,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.0914
+          "score": 0.0951
         }
       ]
     },
@@ -5317,11 +6304,11 @@
         "كونه",
         "كصيام",
         "تلبس",
-        "وجد",
         "الشرطين",
         "المعسر",
         "شوب",
-        "نكح"
+        "نكح",
+        "المتمتع"
       ],
       "babs": [
         {
@@ -5330,7 +6317,7 @@
           "path": [
             "كتاب الظهار"
           ],
-          "score": 0.1269
+          "score": 0.1258
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009",
@@ -5338,15 +6325,7 @@
           "path": [
             "كتاب الطهارة"
           ],
-          "score": 0.1223
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00665",
-          "heading": "فصل. فمن ملك رقبة أو أمكنه تحصيلها بما هو فاضل عن كفايته وكفاية من يمونه على الدوام",
-          "path": [
-            "كتاب الظهار"
-          ],
-          "score": 0.1142
+          "score": 0.1195
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00428",
@@ -5354,7 +6333,7 @@
           "path": [
             "كتاب الظهار"
           ],
-          "score": 0.1141
+          "score": 0.1117
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00279",
@@ -5362,15 +6341,23 @@
           "path": [
             "كتاب الظهار"
           ],
-          "score": 0.1125
+          "score": 0.108
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00665",
+          "heading": "فصل. فمن ملك رقبة أو أمكنه تحصيلها بما هو فاضل عن كفايته وكفاية من يمونه على الدوام",
+          "path": [
+            "كتاب الظهار"
+          ],
+          "score": 0.1076
         }
       ]
     },
     "tabaa": {
       "cases": 20,
       "lexicon": [
-        "يثبت",
         "الطلاق",
+        "يثبت",
         "شهاده",
         "النساء",
         "تبعا",
@@ -5380,7 +6367,7 @@
         "استقلالا",
         "النسب",
         "وصيه",
-        "يفطرون"
+        "ثبت"
       ],
       "babs": [
         {
@@ -5389,7 +6376,15 @@
           "path": [
             "كتاب الإقرار"
           ],
-          "score": 0.1982
+          "score": 0.2
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00392",
+          "heading": "باب صريح الطلاق وكنايته",
+          "path": [
+            "كتاب الطلاق"
+          ],
+          "score": 0.1958
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00608",
@@ -5398,15 +6393,7 @@
             "كتاب الشهادات",
             "باب شروط من تقبل شهادته"
           ],
-          "score": 0.1927
-        },
-        {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00392",
-          "heading": "باب صريح الطلاق وكنايته",
-          "path": [
-            "كتاب الطلاق"
-          ],
-          "score": 0.1902
+          "score": 0.1947
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00372",
@@ -5415,7 +6402,7 @@
             "كتاب الشهادات",
             "باب أقسام المشهود به"
           ],
-          "score": 0.1758
+          "score": 0.1751
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00609",
@@ -5423,7 +6410,7 @@
           "path": [
             "كتاب الشهادات"
           ],
-          "score": 0.1712
+          "score": 0.1713
         }
       ]
     },
@@ -5432,15 +6419,15 @@
       "lexicon": [
         "يجزيه",
         "طواف",
-        "عنه",
         "تكبيره",
-        "روايتين",
         "ينوي",
+        "روايتين",
         "الزياره",
-        "صاحب",
-        "اجتمع",
-        "واحد",
         "الصلاه",
+        "واحد",
+        "اجتمع",
+        "صاحب",
+        "مكه",
         "عنهما"
       ],
       "babs": [
@@ -5451,21 +6438,7 @@
             "كتاب الأيمان وكفاراتها",
             "باب النذر"
           ],
-          "score": 0.1709
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00155",
-          "heading": "كتاب الحج وشروطه",
-          "path": [],
-          "score": 0.1693
-        },
-        {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00025",
-          "heading": "باب صلاة العيدين",
-          "path": [
-            "كتاب الصلاة"
-          ],
-          "score": 0.1675
+          "score": 0.1757
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00072",
@@ -5474,7 +6447,21 @@
             "كتاب المناسك",
             "باب صفة الحج والعمرة"
           ],
-          "score": 0.1658
+          "score": 0.1717
+        },
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00025",
+          "heading": "باب صلاة العيدين",
+          "path": [
+            "كتاب الصلاة"
+          ],
+          "score": 0.1705
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00155",
+          "heading": "كتاب الحج وشروطه",
+          "path": [],
+          "score": 0.1686
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00085",
@@ -5483,7 +6470,7 @@
             "كتاب الصلاة",
             "باب صلاة الجماعة"
           ],
-          "score": 0.1642
+          "score": 0.1666
         }
       ]
     },
@@ -5497,20 +6484,20 @@
         "القابضه",
         "بما",
         "الضمان",
-        "قيمه",
         "تضمينها",
+        "قيمه",
         "يرجع",
         "ضمانها",
         "ويستقر"
       ],
       "babs": [
         {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00237",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00586",
           "heading": "فصل",
           "path": [
-            "كتاب الغصب"
+            "كتاب الصداق"
           ],
-          "score": 0.1607
+          "score": 0.129
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00331",
@@ -5519,32 +6506,33 @@
             "كتاب البيع",
             "باب الضمان والكفالة وما يتعلق بهما"
           ],
-          "score": 0.1431
+          "score": 0.1276
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00586",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00399",
           "heading": "فصل",
           "path": [
-            "كتاب الصداق"
+            "كتاب الشركة",
+            "باب الإجارة"
           ],
-          "score": 0.1344
+          "score": 0.121
         },
         {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00242",
-          "heading": "فصل",
-          "path": [
-            "كتاب الغصب"
-          ],
-          "score": 0.1312
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00328",
-          "heading": "تعريفه",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00332",
+          "heading": "الكفالة",
           "path": [
             "كتاب البيع",
             "باب الضمان والكفالة وما يتعلق بهما"
           ],
-          "score": 0.1308
+          "score": 0.1204
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00237",
+          "heading": "فصل",
+          "path": [
+            "كتاب الغصب"
+          ],
+          "score": 0.1203
         }
       ]
     },
@@ -5556,13 +6544,13 @@
         "الشك",
         "شرط",
         "العقد",
-        "ذكره",
         "اذنت",
         "بعتك",
         "بعتكها",
         "جحد",
         "شرايها",
-        "فاراد"
+        "فاراد",
+        "فاشتراها"
       ],
       "babs": [
         {
@@ -5572,7 +6560,7 @@
             "كتاب البيع",
             "باب الوكالة"
           ],
-          "score": 0.1381
+          "score": 0.1378
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00646",
@@ -5580,16 +6568,7 @@
           "path": [
             "كتاب الطلاق"
           ],
-          "score": 0.1334
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00258",
-          "heading": "فصل",
-          "path": [
-            "كتاب البيع",
-            "باب الشروط في البيع وأقسامها"
-          ],
-          "score": 0.1291
+          "score": 0.1335
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00107",
@@ -5598,16 +6577,24 @@
             "كتاب الفرائض",
             "باب العتق"
           ],
-          "score": 0.1187
+          "score": 0.119
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00364",
-          "heading": "حكم ما لو وكله في معين ثم وجد معيبا",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00258",
+          "heading": "فصل",
           "path": [
             "كتاب البيع",
-            "باب الوكالة"
+            "باب الشروط في البيع وأقسامها"
           ],
-          "score": 0.1088
+          "score": 0.1124
+        },
+        {
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006",
+          "heading": "باب مسح الخفين",
+          "path": [
+            "كتاب الطهارة"
+          ],
+          "score": 0.1043
         }
       ]
     },
@@ -5621,11 +6608,11 @@
         "المثل",
         "كله",
         "بقيه",
-        "بما",
         "بمثله",
         "يجب",
-        "يضمن",
-        "القدر"
+        "بما",
+        "القدر",
+        "يضمن"
       ],
       "babs": [
         {
@@ -5635,16 +6622,7 @@
             "كتاب الجنايات",
             "باب: ما يوجب قصاصا فيما دون النفس من الأطراف والجراح"
           ],
-          "score": 0.1368
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00366",
-          "heading": "الوكيل أمين",
-          "path": [
-            "كتاب البيع",
-            "باب الوكالة"
-          ],
-          "score": 0.1172
+          "score": 0.1372
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00508",
@@ -5653,13 +6631,7 @@
             "كتاب الفرائض",
             "باب تصحيح المسائل"
           ],
-          "score": 0.1167
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00703",
-          "heading": "كتاب النفقات",
-          "path": [],
-          "score": 0.1118
+          "score": 0.1194
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00377",
@@ -5667,7 +6639,21 @@
           "path": [
             "كتاب الصداق"
           ],
-          "score": 0.1103
+          "score": 0.1089
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00703",
+          "heading": "كتاب النفقات",
+          "path": [],
+          "score": 0.1074
+        },
+        {
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00135",
+          "heading": "باب الموصى به",
+          "path": [
+            "كتاب الوصايا"
+          ],
+          "score": 0.1042
         }
       ]
     },
@@ -5694,7 +6680,7 @@
           "path": [
             "كتاب التفليس"
           ],
-          "score": 0.1704
+          "score": 0.1647
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00361",
@@ -5703,7 +6689,7 @@
             "كتاب البيع",
             "باب الوكالة"
           ],
-          "score": 0.1528
+          "score": 0.1448
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00036",
@@ -5712,15 +6698,7 @@
             "كتاب الصلاة",
             "باب سجود السهو"
           ],
-          "score": 0.1358
-        },
-        {
-          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00096",
-          "heading": "باب الضمان",
-          "path": [
-            "كتاب البيع"
-          ],
-          "score": 0.1289
+          "score": 0.1354
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00093",
@@ -5728,7 +6706,15 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1256
+          "score": 0.1236
+        },
+        {
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00095",
+          "heading": "باب الوديعة",
+          "path": [
+            "كتاب التفليس"
+          ],
+          "score": 0.1227
         }
       ]
     },
@@ -5740,8 +6726,8 @@
         "تبطل",
         "بالتعدي",
         "ضامنا",
-        "وذكره",
         "تعدي",
+        "وذكره",
         "بدون",
         "الحفظ",
         "تعود",
@@ -5756,7 +6742,7 @@
             "كتاب الصلاة",
             "باب سجود السهو"
           ],
-          "score": 0.1516
+          "score": 0.1509
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00441",
@@ -5765,7 +6751,7 @@
             "كتاب الشركة",
             "باب الوديعة"
           ],
-          "score": 0.1215
+          "score": 0.1184
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00237",
@@ -5773,16 +6759,15 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.0903
+          "score": 0.0887
         },
         {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00168",
-          "heading": "فصل",
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00095",
+          "heading": "باب الوديعة",
           "path": [
-            "كتاب البيع",
-            "باب الربا والصرف"
+            "كتاب التفليس"
           ],
-          "score": 0.087
+          "score": 0.0833
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00034",
@@ -5791,7 +6776,7 @@
             "كتاب الصلاة",
             "باب سجود السهو"
           ],
-          "score": 0.0864
+          "score": 0.0829
         }
       ]
     },
@@ -5802,12 +6787,12 @@
         "اخذا",
         "العرايا",
         "العبره",
-        "التسميه",
         "والترجيح",
-        "مما",
+        "التسميه",
         "قوله",
-        "الله",
         "اللفظ",
+        "الله",
+        "مما",
         "السفر",
         "وسلم"
       ],
@@ -5818,7 +6803,7 @@
           "path": [
             "كتاب الديات"
           ],
-          "score": 0.2036
+          "score": 0.1976
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00829",
@@ -5827,7 +6812,7 @@
             "كتاب الأيمان وكفاراتها",
             "باب جامع الأيمان"
           ],
-          "score": 0.19
+          "score": 0.1893
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00150",
@@ -5835,7 +6820,7 @@
           "path": [
             "كتاب اللعان"
           ],
-          "score": 0.1851
+          "score": 0.1823
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00188",
@@ -5843,16 +6828,15 @@
           "path": [
             "كتاب الجهاد"
           ],
-          "score": 0.1821
+          "score": 0.17
         },
         {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00058",
-          "heading": "فصل [في بيع الثمار وصلاحها]",
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00549",
+          "heading": "فصل: خص النبي صلى الله عليه وسلم بواجبات ومحضورات ومباحات وكراهات",
           "path": [
-            "كتاب البيوع",
-            "باب بيع الأصول والثمار"
+            "كتاب النكاح"
           ],
-          "score": 0.1658
+          "score": 0.1615
         }
       ]
     },
@@ -5861,10 +6845,10 @@
       "lexicon": [
         "الزايد",
         "محكوم",
-        "حيث",
         "الشوارع",
         "بطهارته",
         "طين",
+        "حيث",
         "بالتكرار",
         "تقضي",
         "المعدوم",
@@ -5880,7 +6864,7 @@
             "كتاب الطهارة",
             "باب الحيض والاستحاضة والنفاس"
           ],
-          "score": 0.1395
+          "score": 0.1382
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00014",
@@ -5888,7 +6872,7 @@
           "path": [
             "كتاب الطهارة"
           ],
-          "score": 0.1349
+          "score": 0.1369
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00044",
@@ -5897,16 +6881,7 @@
             "كتاب الطهارة",
             "باب الحيض والاستحاضة والنفاس"
           ],
-          "score": 0.1201
-        },
-        {
-          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00017",
-          "heading": "فصل",
-          "path": [
-            "كتاب الطهارة",
-            "باب الحيض"
-          ],
-          "score": 0.0954
+          "score": 0.1203
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00041",
@@ -5915,7 +6890,16 @@
             "كتاب الطهارة",
             "باب الحيض والاستحاضة والنفاس"
           ],
-          "score": 0.0942
+          "score": 0.0954
+        },
+        {
+          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00017",
+          "heading": "فصل",
+          "path": [
+            "كتاب الطهارة",
+            "باب الحيض"
+          ],
+          "score": 0.0949
         }
       ]
     },
@@ -5937,22 +6921,22 @@
       ],
       "babs": [
         {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00411",
-          "heading": "فصل في تعليقه بالإذن",
-          "path": [
-            "كتاب الطلاق",
-            "باب تعليق الطلاق بالشروط"
-          ],
-          "score": 0.2573
-        },
-        {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00638",
           "heading": "فصل. في تعليقه بالأذن -",
           "path": [
             "كتاب الطلاق",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.2523
+          "score": 0.2556
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00411",
+          "heading": "فصل في تعليقه بالإذن",
+          "path": [
+            "كتاب الطلاق",
+            "باب تعليق الطلاق بالشروط"
+          ],
+          "score": 0.2544
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00202",
@@ -5961,7 +6945,7 @@
             "كتاب النكاح",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.2407
+          "score": 0.2355
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00085",
@@ -5970,7 +6954,7 @@
             "كتاب الوصايا",
             "باب الموصى إليه"
           ],
-          "score": 0.1551
+          "score": 0.1428
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00147",
@@ -5978,7 +6962,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1333
+          "score": 0.1217
         }
       ]
     },
@@ -5987,27 +6971,18 @@
       "lexicon": [
         "تبين",
         "اذن",
-        "غيره",
         "الاذن",
         "امراه",
-        "العلم",
         "التصرف",
-        "صحه",
+        "العلم",
         "تصرف",
+        "صحه",
+        "بعقد",
         "ففي",
         "روايتان",
-        "بغير"
+        "زوجته"
       ],
       "babs": [
-        {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00411",
-          "heading": "فصل في تعليقه بالإذن",
-          "path": [
-            "كتاب الطلاق",
-            "باب تعليق الطلاق بالشروط"
-          ],
-          "score": 0.2157
-        },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00638",
           "heading": "فصل. في تعليقه بالأذن -",
@@ -6015,7 +6990,16 @@
             "كتاب الطلاق",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.2099
+          "score": 0.2115
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00411",
+          "heading": "فصل في تعليقه بالإذن",
+          "path": [
+            "كتاب الطلاق",
+            "باب تعليق الطلاق بالشروط"
+          ],
+          "score": 0.2073
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00202",
@@ -6024,7 +7008,7 @@
             "كتاب النكاح",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.1992
+          "score": 0.1885
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00085",
@@ -6033,7 +7017,7 @@
             "كتاب الوصايا",
             "باب الموصى إليه"
           ],
-          "score": 0.1776
+          "score": 0.1674
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00243",
@@ -6041,7 +7025,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1576
+          "score": 0.1401
         }
       ]
     },
@@ -6068,7 +7052,7 @@
           "path": [
             "كتاب الفرائض"
           ],
-          "score": 0.1395
+          "score": 0.1396
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00144",
@@ -6076,7 +7060,7 @@
           "path": [
             "كتاب الفرائض"
           ],
-          "score": 0.1318
+          "score": 0.1338
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00202",
@@ -6084,7 +7068,7 @@
           "path": [
             "كتاب الفرائض"
           ],
-          "score": 0.131
+          "score": 0.1328
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00043",
@@ -6093,7 +7077,7 @@
             "كتاب الطهارة",
             "باب الحيض والاستحاضة والنفاس"
           ],
-          "score": 0.1237
+          "score": 0.1221
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00014",
@@ -6101,7 +7085,7 @@
           "path": [
             "كتاب الطهارة"
           ],
-          "score": 0.119
+          "score": 0.1205
         }
       ]
     },
@@ -6118,8 +7102,8 @@
         "افسادها",
         "الصحيحه",
         "انفا",
-        "بالفساد",
-        "بفسادها"
+        "بفسادها",
+        "مشكل"
       ],
       "babs": [
         {
@@ -6128,7 +7112,7 @@
           "path": [
             "كتاب الشركة"
           ],
-          "score": 0.179
+          "score": 0.1688
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00085",
@@ -6137,7 +7121,7 @@
             "كتاب الوصايا",
             "باب الموصى إليه"
           ],
-          "score": 0.1363
+          "score": 0.1207
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00372",
@@ -6145,22 +7129,85 @@
           "path": [
             "كتاب الصداق"
           ],
-          "score": 0.128
+          "score": 0.1177
         },
         {
-          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00150",
-          "heading": "كتاب الشركة",
-          "path": [],
-          "score": 0.1215
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00450",
-          "heading": "فصل: ولا يجوز له التصرف فيها حتى يعرف وعاءها وهو ظرفها",
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00573",
+          "heading": "فصل",
           "path": [
-            "كتاب الشركة",
-            "باب اللقطة"
+            "كتاب الأيمان",
+            "باب جامع الأيمان"
           ],
-          "score": 0.1195
+          "score": 0.1133
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00213",
+          "heading": "فصل",
+          "path": [
+            "كتاب الشركة"
+          ],
+          "score": 0.1095
+        }
+      ]
+    },
+    "wage_without_stipulation": {
+      "cases": 4,
+      "lexicon": [
+        "بالشرع",
+        "يستحق",
+        "الحرب",
+        "بنفسه",
+        "سلبه",
+        "مشركا",
+        "مغررا",
+        "برد",
+        "قتله",
+        "الزكاه",
+        "خلص",
+        "هلاكه"
+      ],
+      "babs": [
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00188",
+          "heading": "باب الأنفال",
+          "path": [
+            "كتاب الجهاد"
+          ],
+          "score": 0.1622
+        },
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00185",
+          "heading": "باب قتال أهل البغي",
+          "path": [
+            "كتاب الحدود"
+          ],
+          "score": 0.1581
+        },
+        {
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00124",
+          "heading": "باب الجعالة",
+          "path": [
+            "كتاب البيع"
+          ],
+          "score": 0.1351
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00133",
+          "heading": "فصل",
+          "path": [
+            "كتاب الجهاد",
+            "باب ما يلزم الإمام والجيش"
+          ],
+          "score": 0.1349
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00486",
+          "heading": "فصل",
+          "path": [
+            "كتاب الجنايات",
+            "باب استيفاء القصاص"
+          ],
+          "score": 0.1336
         }
       ]
     },
@@ -6169,16 +7216,16 @@
       "lexicon": [
         "لفظه",
         "يعتبر",
-        "عنه",
-        "ومعناه",
         "الترجمه",
+        "ومعناه",
         "تجوز",
         "العجز",
         "القدره",
         "دون",
         "ومنها",
         "الالفاظ",
-        "الاو"
+        "الاو",
+        "العاشره"
       ],
       "babs": [
         {
@@ -6187,7 +7234,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1483
+          "score": 0.1308
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00190",
@@ -6195,15 +7242,24 @@
           "path": [
             "كتاب الجهاد"
           ],
-          "score": 0.1259
+          "score": 0.1235
         },
         {
-          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00158",
-          "heading": "باب ما يلحق من النسب وما لا يلحق",
+          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00342",
+          "heading": "باب جامع الأيمان",
           "path": [
-            "كتاب القذف واللعان"
+            "كتاب الأيمان"
           ],
-          "score": 0.1141
+          "score": 0.1059
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00608",
+          "heading": "فصل",
+          "path": [
+            "كتاب الشهادات",
+            "باب شروط من تقبل شهادته"
+          ],
+          "score": 0.0964
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00046",
@@ -6211,16 +7267,7 @@
           "path": [
             "كتاب الزكاة"
           ],
-          "score": 0.1037
-        },
-        {
-          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00017",
-          "heading": "فصل",
-          "path": [
-            "كتاب الصلاة",
-            "باب صفة الصلاة"
-          ],
-          "score": 0.1015
+          "score": 0.0888
         }
       ]
     },
@@ -6234,11 +7281,11 @@
         "العربيه",
         "يعتبر",
         "ومع",
-        "عنه",
         "دون",
         "كالفاظ",
         "والفاظ",
-        "النكاح"
+        "النكاح",
+        "معناه"
       ],
       "babs": [
         {
@@ -6247,7 +7294,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1357
+          "score": 0.1253
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00162",
@@ -6255,7 +7302,7 @@
           "path": [
             "كتاب النكاح"
           ],
-          "score": 0.1182
+          "score": 0.1186
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00236",
@@ -6263,7 +7310,13 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1169
+          "score": 0.1134
+        },
+        {
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00111",
+          "heading": "كتاب النكاح",
+          "path": [],
+          "score": 0.1074
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00253",
@@ -6271,13 +7324,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.108
-        },
-        {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00111",
-          "heading": "كتاب النكاح",
-          "path": [],
-          "score": 0.1071
+          "score": 0.1056
         }
       ]
     },
@@ -6293,9 +7340,9 @@
         "اللفظ",
         "الخطاب",
         "بيعا",
-        "قرضا",
         "كنايه",
-        "الهبه"
+        "قرضا",
+        "فقال"
       ],
       "babs": [
         {
@@ -6305,7 +7352,7 @@
             "كتاب البيع",
             "باب السلم والتصرف في الدين وما يتعلق به"
           ],
-          "score": 0.1821
+          "score": 0.1802
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00311",
@@ -6314,7 +7361,7 @@
             "كتاب البيع",
             "باب السلم والتصرف في الدين وما يتعلق به"
           ],
-          "score": 0.1808
+          "score": 0.1789
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00214",
@@ -6322,7 +7369,7 @@
           "path": [
             "كتاب الشركة"
           ],
-          "score": 0.1645
+          "score": 0.165
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00303",
@@ -6331,7 +7378,7 @@
             "كتاب البيع",
             "باب السلم والتصرف في الدين وما يتعلق به"
           ],
-          "score": 0.1551
+          "score": 0.1499
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00180",
@@ -6340,7 +7387,7 @@
             "كتاب البيع",
             "باب السلم"
           ],
-          "score": 0.1525
+          "score": 0.1457
         }
       ]
     }

@@ -1,16 +1,16 @@
 {
- "total": 483,
+ "total": 574,
  "classes": {
-  "derivable": 199,
-  "genuine_ikhtilaf": 277,
+  "derivable": 236,
+  "genuine_ikhtilaf": 331,
   "missing_fact": 1,
   "missing_rule": 5,
   "segmentation_error": 1
  },
- "coverage": 0.988,
- "madhhab_coverage": 0.689,
+ "coverage": 0.99,
+ "madhhab_coverage": 0.709,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 133,
+ "ikhtilaf_matching_madhhab": 170,
  "gaps_open": 6,
  "revisited": 37,
  "revisit_queue": [],
@@ -334,6 +334,69 @@
   },
   "umum_lafz": {
    "derivable": 3
+  },
+  "rescission_harm": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 5
+  },
+  "recourse_after_return": {
+   "genuine_ikhtilaf": 6
+  },
+  "delegating_work": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 4
+  },
+  "eating_without_permission": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 4
+  },
+  "nafaqa_stipulated_in_contract": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 1
+  },
+  "nafaqa_taken_owned": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 1
+  },
+  "benefit_condition_against_compensation": {
+   "genuine_ikhtilaf": 3
+  },
+  "wage_without_stipulation": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 3
+  },
+  "crop_without_valid_permission": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "repeat_bearing_roots_as_trees": {
+   "genuine_ikhtilaf": 5
+  },
+  "attached_right_disposal": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 7
+  },
+  "rescue_loss_liability": {
+   "derivable": 8,
+   "genuine_ikhtilaf": 1
+  },
+  "attached_takeover_at_value": {
+   "derivable": 7,
+   "genuine_ikhtilaf": 3
+  },
+  "attached_growth_follows": {
+   "genuine_ikhtilaf": 4
+  },
+  "cut_sale_left_to_ripen": {
+   "genuine_ikhtilaf": 1
+  },
+  "seizing_hand_liable": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 2
+  },
+  "hand_with_owner_liable": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 3
   }
  }
 }

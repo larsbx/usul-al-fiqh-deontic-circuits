@@ -1,0 +1,427 @@
+{
+ "suite": "m8_rajab_rajab_a4",
+ "status": "candidate",
+ "provenance": "Shard rajab-a4 (lane A): every far record of Ibn Rajab's qawāʿid 77, 81, 90 and 92, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA4). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+ "cases": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f000",
+   "encoder": "attached_takeover_at_value",
+   "class": "derivable",
+   "facts": {
+    "wrongful": false,
+    "separable_without_harm": false
+   },
+   "expected": true,
+   "note": "The lessee's planting and building after the term, which he does not uproot: the lessor takes them over at value, «لأنه لا يملك قلعه بدون ضمان نقصه، وفيه ضرر عليه» (al-Qāḍī, Ibn ʿAqīl, the majority). Abū al-Khaṭṭāb drops the condition that the lessee not uproot, «فلعله جعل الخيرة لمالك الأرض»: a difference on the condition, not on the takeover."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f001",
+   "encoder": "attached_takeover_at_value",
+   "class": "derivable",
+   "facts": {
+    "wrongful": false,
+    "separable_without_harm": false
+   },
+   "expected": true,
+   "note": "The borrower's planting and building when the lender recalls the loan (or a binding term ends): «فالمنصوص عن أحمد أنه يتملك بالقيمة» (Muhannā, Ibn Manṣūr, Jaʿfar b. Muḥammad); the riwāya «يتملك بالنفقة» differs only on the measure. Follow-on: the owner may uproot at the outset «بغير خلاف», and is not compelled where uprooting harms him; where it does not, «فتردد فيه كلام الأصحاب»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f002",
+   "encoder": "attached_takeover_at_value",
+   "class": "derivable",
+   "facts": {
+    "wrongful": false,
+    "separable_without_harm": false
+   },
+   "expected": true,
+   "note": "The buyer's planting and building in land taken by pre-emption: the pre-emptor «يأخذه مع الأرض بقيمته نص عليه»; its owner may also uproot, and is not compelled to unless his loss is made good. Ibn Rajab counts it under the qāʿida because the buyer planted while the pre-emptor's right was attached."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f003",
+   "encoder": "attached_takeover_at_value",
+   "class": "derivable",
+   "facts": {
+    "wrongful": false,
+    "separable_without_harm": false
+   },
+   "expected": true,
+   "note": "The bankrupt's planting and building when the land's seller reclaims it: the bankrupt and creditors may uproot; «فإن أبوه وطلب البائع التملك بالقيمة ملكه», and likewise if he asks for uprooting with the loss made good."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f004",
+   "encoder": "attached_takeover_at_value",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "wrongful": false,
+    "separable_without_harm": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "al-Khiraqī: she is compelled to accept, he takes it over at value",
+     "ruling": true
+    },
+    {
+     "who": "al-Qāḍī: his right falls to the value; no takeover",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "Land given as dower in which the wife planted or built, then divorce before consummation; the husband asks for half and offers half the value of the planting: «قال الخرقي يجبر على القبول». al-Qāḍī: his right falls to the value, so it is not of this qāʿida; Ibn Rajab answers that it is, the wife's ownership of the half not being settled before consummation. al-Inṣāf (v08:p270) on the dowered land she built on: «فله ذلك على الصحيح من المذهب. اختاره المصنف، والشارح، والخرقي»; on the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f005",
+   "encoder": "attached_takeover_at_value",
+   "class": "derivable",
+   "facts": {
+    "wrongful": false,
+    "separable_without_harm": false
+   },
+   "expected": true,
+   "note": "One who received by an invalid contract from the owner and planted or built: the owner takes it over at value «كغراس المستعير», and it is not uprooted except with compensation, «بالاستناد إلى الإذن» (al-Qāḍī, Ibn ʿAqīl)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f006",
+   "encoder": "attached_takeover_at_value",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "wrongful": false,
+    "separable_without_harm": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "naṣṣ (Ḥarb, Yaʿqūb b. Bukhtān, al-Jurjānī); Ibn Rajab: «والصحيح الأول»: taken over at value, not uprooted free",
+     "ruling": true
+    },
+    {
+     "who": "Ibn Abī Mūsā; al-Qāḍī (al-Mujarrad) and the later ones: the owner uproots free, the buyer has recourse on his deceiver",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "The planting of one who bought from a usurper unknowingly, the land then claimed by its owner: «والمنصوص عن أحمد أنه يتملك بالقيمة ولا يقلع مجانا» (Ḥarb, Yaʿqūb b. Bukhtān, Muḥammad b. Abī Ḥarb al-Jurjānī), the buyer not being a transgressor; Ibn Rajab: «والصحيح الأول ولا يثبت عن أحمد سواه». Against it Ibn Abī Mūsā, al-Qāḍī in al-Mujarrad «وتبعه عليه المتأخرون»: the owner uproots free and the buyer recovers from the one who deceived him. al-Inṣāf (v06:p184) makes uprooting free the madhhab «وعليه جماهير الأصحاب»: off the madhhab side, so a ledger entry."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f007",
+   "encoder": "attached_takeover_at_value",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "wrongful": true,
+    "separable_without_harm": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "al-mashhūr, the aṣḥāb: the owner uproots it free",
+     "ruling": false
+    },
+    {
+     "who": "riwāya (al-Qāḍī, Ibn ʿAqīl; Bakr b. Muḥammad): not uprooted, taken over at value",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The usurper's planting and building: «والمشهور عن أحمد أن للمالك قلعه مجانا وعليه الأصحاب». A second riwāya, «لا يقلع بل يتملك بالقيمة أيضا», reported by al-Qāḍī and Ibn ʿAqīl (al-Riwāyatayn), drawn by them from the dye case, and stated by Aḥmad in Bakr b. Muḥammad's riwāya («يعجبني أن يغرم البناء»). al-Inṣāf (v06:p134) gives the mashhūr «وعليه الأصحاب»: on the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f008",
+   "encoder": "attached_takeover_at_value",
+   "class": "derivable",
+   "facts": {
+    "wrongful": false,
+    "separable_without_harm": false
+   },
+   "expected": true,
+   "note": "The heir who built in land bequeathed to another, not knowing of the bequest: «فهو محترم يتملك بقيمته غير مقلوع وجها واحدا» (Ibn Abī Mūsā). The knowing heir he treats alike, «ويتوجه أن يقلع بناءه»; Ibn Rajab: if the legatee owns from the death, building with knowledge «تفريط وعدوان», as the usurper's. Annotated for the leading (unknowing) branch."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f009",
+   "encoder": "attached_takeover_at_value",
+   "class": "derivable",
+   "facts": {
+    "wrongful": false,
+    "separable_without_harm": false
+   },
+   "expected": true,
+   "note": "Another's palm in one's land whose owner's entry harms him: after the ḥadīth (sell, exchange, give, then «اذهب فاقلع نخله»), Aḥmad: «كلما كان على هذه الجهة وفيه ضرر يمنع من ذلك فإن أجاب وإلا جبره السلطان»; the uprooting, Ibn Rajab explains, came only on insisting on harm and refusing what removes it. Follow-ons in the record: the excepted head of a slaughter animal (the buyer who will not slaughter owes its value, naṣṣ); dye in a returned cloth (taken over by the bankrupt's seller; on return for a defect «فالمشهور أنه لا يملك تملكه قهرا», Ibn ʿAqīl's takhrīj otherwise); the usurper's dye (two wujūh); works such as nails (naṣṣ: the owner pays the increase)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f000",
+   "encoder": "attached_growth_follows",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "reverts_to_transferor": true,
+    "security_or_liability": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "al-mashhūr among the aṣḥāb: the increase goes to the seller with its principal, nothing owed",
+     "ruling": true
+    },
+    {
+     "who": "Ibn ʿAqīl (takhrīj), al-Shīrāzī, Shaykh Taqī al-Dīn; naṣṣ (Ibn Manṣūr): it is the buyer's, he recovers its value",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The thing returned for a defect after an attached increase (fattening, a learned craft): «فالمشهور عند الأصحاب أن الزيادة للبائع تبعا لأصلها ولا يستحق المشتري عليه شيئا». Ibn ʿAqīl's takhrīj gives it to the buyer; al-Shīrāzī adds that he recovers its value, as does Shaykh Taqī al-Dīn from the generality of Aḥmad's word; Ibn Rajab: Aḥmad stated recourse for its value expressly (Ibn Manṣūr). al-Iqnāʿ (v02:p096) is decisive: «والنماء المتصل للبائع كالسمن والكبر وتعلم صنعة»; on the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f001",
+   "encoder": "attached_growth_follows",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "reverts_to_transferor": true,
+    "security_or_liability": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "al-Qāḍī and his companions, Ibn Abī Mūsā: he reclaims it with the increase, nothing for the bankrupt",
+     "ruling": true
+    },
+    {
+     "who": "al-Khiraqī; manṣūṣ per al-Qāḍī: no reclaiming, he is one of the creditors",
+     "ruling": false
+    },
+    {
+     "who": "Ibn Rajab's takhrīj from Ibn Manṣūr's riwāya: he reclaims and pays the increase's value",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "The goods whose buyer goes bankrupt before paying, found by the seller with an attached increase: «قال القاضي وأصحابه يرجع به ولا شيء للمفلس», as Ibn Abī Mūsā, taken from al-Maymūnī's and Isḥāq's riwāya «هو أحق به زاد أو نقص». «وقال الخرقي ليس له الرجوع», which al-Qāḍī (K. al-Hiba of his Khilāf) calls manṣūṣ; Ibn Rajab adds a takhrīj: he reclaims and pays the increase's value. al-Inṣāf (v05:p292): «امتنع الرجوع، على الصحيح من المذهب»: off the madhhab side, so a ledger entry."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f002",
+   "encoder": "attached_growth_follows",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "reverts_to_transferor": true,
+    "security_or_liability": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "naṣṣ (Ibn Manṣūr): the increase bars the return",
+     "ruling": false
+    },
+    {
+     "who": "the other riwāya: he returns, nothing owed for the increase",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "A father's gift to his son that increased with an attached increase: does it bar his return? «على روايتين معروفتين. والمنصوص عن أحمد في رواية ابن منصور امتناع الرجوع»; on the other, he returns and owes nothing for the increase, «لأنها تابعة لما يباح له من مال ولده». The reading (growth follows the reverting property) gives the second; al-Inṣāf (v07:p151) makes the bar the madhhab: off the madhhab side, so a ledger entry."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f003",
+   "encoder": "attached_growth_follows",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "reverts_to_transferor": true,
+    "security_or_liability": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "al-Khiraqī, no known dissent among the aṣḥāb (al-Qāḍī: a single riwāya): no return, his right falls to half its value",
+     "ruling": false
+    },
+    {
+     "who": "Ṣāḥib al-Muḥarrar's takhrīj: he returns to the half with its increase",
+     "ruling": true
+    },
+    {
+     "who": "Ibn Rajab's wajh: he returns to the half and repays the increase's value",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "A dower that increased with an attached increase, then divorce before consummation: «لم يكن له الرجوع في نصفه وسقط حقه منه إلى قيمة النصف ذكره الخرقي ولم نعلم عن أحد من الأصحاب خلافه». al-Qāḍī distinguishes the bankrupt's seller (annulment from the root, divorce from now); Ibn Rajab rejects the farq. Ṣāḥib al-Muḥarrar draws the return to the half with the increase from the riwāya on detached increase; Ibn Rajab draws a further wajh, return with the increase's value repaid. al-Inṣāf (v08:p264): «للزوجة، على الصحيح من المذهب»: off the madhhab side, so a ledger entry."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f004",
+   "encoder": "cut_sale_left_to_ripen",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "left_until_ripe": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "ashhar al-riwāyatayn (al-Khiraqī, Abū Bakr, Ibn Abī Mūsā, al-Qāḍī, most): the sale is void",
+     "ruling": true
+    },
+    {
+     "who": "the other riwāya: the sale stands",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "A green crop or unripe fruit bought on condition of cutting and left until it ears and hardens or ripens: «فهل يبطل البيع بذلك أم لا؟ فيه روايتان: أشهرهما أنه يبطل» (al-Khiraqī, Abū Bakr, Ibn Abī Mūsā, al-Qāḍī, the majority), on one of two maʾkhadhs (a delay forbidden for God's right; or the mixing of the two properties). Follow-on: on annulment the increase is the seller's (Ibn Abī Mūsā, al-Qāḍī; Abū Ṭālib), or they give it in charity, or they share it; on validity, three riwāyāt (share, charity, all to the seller). al-Inṣāf (v05:p069): «فالصحيح من المذهب: بطلان البيع»; on the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f000",
+   "encoder": "seizing_hand_liable",
+   "class": "derivable",
+   "facts": {
+    "can_own_by_seizure": true,
+    "transgressing": false
+   },
+   "expected": false,
+   "note": "The Muslims' seizure of the property of the people of war: a hand by which ownership is established, so no liability (the qāʿida's first example of the first hand). The record is not located as a separate paragraph; the example stands in the qāʿida's opening."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f001",
+   "encoder": "seizing_hand_liable",
+   "class": "derivable",
+   "facts": {
+    "can_own_by_seizure": true,
+    "transgressing": true
+   },
+   "expected": false,
+   "note": "The people of war seizing the Muslims' property: «لأنهم يملكون علينا بالاستيلاء وهو المشهور عند الأصحاب», and liability is excluded even for what they do not own, «كأم الولد وما لم يحوزوه إلى دارهم». The hand's capacity to own decides, whatever the seizure's character; no dispute on the liability is reported."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f002",
+   "encoder": "seizing_hand_liable",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "can_own_by_seizure": true,
+    "transgressing": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "aṣaḥḥ al-wajhayn, al-madhhab per Ṣāḥib al-Muḥarrar: no liability even if he destroys it",
+     "ruling": false
+    },
+    {
+     "who": "the other wajh: liability is established",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "The father seizing his son's property: where ownership results, «فلا إشكال في انتفاء الضمان»; where not by way of taking ownership, «فلا يثبت به الضمان ولو أتلفه على أصح الوجهين وهو المذهب عند صاحب المحرر». The other wajh establishes liability. al-Inṣāf (v07:p160) on the son's claim: the value of what the father destroyed is established in his dhimma but cannot be demanded, «والمذهب منهما»; the Muntahā: «ويثبت له في ذمته الدين ونحوه». Off the madhhab side, so a ledger entry. `transgressing` is set false (the father's taking of his son's property is permitted); the reading turns on the hand's capacity to own."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f003",
+   "encoder": "seizing_hand_liable",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "can_own_by_seizure": false,
+    "transgressing": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "naṣṣ (the runaway slave), the aṣḥāb: no liability",
+     "ruling": false
+    },
+    {
+     "who": "wajh in al-Talkhīṣ: liable for what is rescued from the usurper, lacking wilāya",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "One who takes property to keep it for its owner: «فإنه لا يضمنه», Aḥmad stating it of one who took a runaway slave to return him and he fled; «وفي التلخيص وجه آخر بالضمان في المستنقذ من الغاصب للرد لعدم الولاية وهو ضعيف». al-Inṣāf (v06:p335) reports al-Talkhīṣ's correction of non-liability, «وهو الأصح», put first in al-Riʿāya and decided in al-Kāfī: on the madhhab side. Follow-on: the ḥākim is more clearly not liable; whether he may take the absent owner's property needs a wilāya over it."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f004",
+   "encoder": "seizing_hand_liable",
+   "class": "derivable",
+   "facts": {
+    "can_own_by_seizure": false,
+    "transgressing": false
+   },
+   "expected": false,
+   "note": "A party refusing the imam's rule, like rebels: «لا يضمن الإمام وطائفته وما أتلفوه عليهم حال الحرب». Annotated for this leading ruling. Follow-ons: whether the rebels owe what they destroyed of the imam's party, «روايتان أصحهما نفي الضمان إلحاقا لهم بأهل الحرب»; apostates with manaʿa, two riwāyāt, Abū Bakr chose none; the third hand is «اليد العادية» (printed «العارية»), which is liable."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f001",
+   "encoder": "hand_with_owner_liable",
+   "class": "derivable",
+   "facts": {
+    "owner_control_removed": false
+   },
+   "expected": false,
+   "note": "Usurping a mount with its owner and his goods on it: «ففي الخلاف الكبير لا يضمن»; likewise the aṣḥāb: one who seizes a free adult does not become liable for his clothes, «لأنها في يد المالك». Follow-on: a free child's clothes, two wujūh, «نظرا إلى [أن] يده لا قوة لها على المنع»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f002",
+   "encoder": "hand_with_owner_liable",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "owner_control_removed": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "al-Mujarrad (al-Qāḍī): liable for transgressing by the excess",
+     "ruling": true
+    },
+    {
+     "who": "al-Talkhīṣ: not liable where it perished by an act of God",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "Hiring a mount for a distance or load and exceeding it while the mount is in the lessor's hand, and it perishes: al-Mujarrad: liable «لتعديه بالزيادة، وسكوت المالك لا يمنع الضمان»; al-Talkhīṣ: not liable if it perished by an act of God (by the load: full or half, two wujūh). The owner's hand stands, so the reading gives al-Talkhīṣ's side; Ibn Rajab's tawajjuh, liability where the owner could not refuse, is the reading's own removal of control. The khilāf is annotated on the branch where it arises (perishing not by the load). al-Inṣāf (v06:p054) on the mount in its owner's hand: «يضمن قيمتها كلها. وهو المذهب»: off the madhhab side, so a ledger entry."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f003",
+   "encoder": "hand_with_owner_liable",
+   "class": "derivable",
+   "facts": {
+    "owner_control_removed": false
+   },
+   "expected": false,
+   "note": "The common hireling whose hand damages the hired object while its owner's hand is on it: «فلا ضمان قاله القاضي في المجرد», «لأنه ليس بأكثر من الغاصب والغاصب لا يضمن ما دام يد صاحبه ثابتة عليه». Ibn Rajab glosses the owner's hand as his authority and disposal: a usurper returning the thing to its owner as a pledge or for hire «لم يبرأ بذلك على الصحيح»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f004",
+   "encoder": "hand_with_owner_liable",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "owner_control_removed": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "al-Khilāf al-Kabīr (al-Qāḍī): no liability, no ḥaylūla",
+     "ruling": false
+    },
+    {
+     "who": "al-Talkhīṣ (with intent and strength); some aṣḥāb in his Khilāf (the sitter): liable",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "Entering another's house or sitting on his carpet without permission while the owner is there: «ففي الخلاف الكبير لا ضمان وعلل بانتفاء الحيلولة ورفع اليد». al-Talkhīṣ: one entering with intent to usurp, strong enough to overpower, usurps half; some of the aṣḥāb in his Khilāf: the sitter is liable for what he sat on. al-Iqnāʿ (v02:p338) is decisive: «فلو دخل أرض إنسان أو داره صاحبها فيها أولا بأذنه أو بغر أذنه لم يضمنها بدخوله»; on the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f005",
+   "encoder": "hand_with_owner_liable",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "owner_control_removed": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "al-Talkhīṣ, corrected: not liable, the owner's hand being on it",
+     "ruling": false
+    },
+    {
+     "who": "iḥtimāl in al-Talkhīṣ: half the value, as a borrower",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The owner seats someone behind him on the mount and it perishes: does the rider owe half the value as a borrower, or nothing «لثبوت يد المالك عليها»? al-Talkhīṣ gives two iḥtimāls and corrects the second. al-Inṣāf (v06:p116): «لم يضمن شيئا. على الصحيح من المذهب»; on the madhhab side. The record's tanbīh (the usurper who displaces one of two co-owners) follows."
+  }
+ ]
+}
