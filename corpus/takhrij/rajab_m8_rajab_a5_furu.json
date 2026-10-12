@@ -1,0 +1,485 @@
+{
+  "suite": "m8_rajab_rajab_a5",
+  "status": "candidate",
+  "provenance": "Shard rajab-a5 (lane A): every far record of Ibn Rajab's qawāʿid 94, 95 and 97, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA5). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q094.f001",
+      "encoder": "second_receiver_liable",
+      "class": "derivable",
+      "facts": {
+        "handover_permitted": true,
+        "first_trustee": true
+      },
+      "expected": false,
+      "note": "The depositee's depositee: «فإن كان حيث يجوز الإيداع فلا ضمان على واحد منهما». Follow-on: where depositing is not permitted «فالضمان على الأول وفي الثاني وجهان سبق ذكرهما»; the leading ruling is the permitted branch."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q094.f002",
+      "encoder": "second_receiver_liable",
+      "class": "derivable",
+      "facts": {
+        "handover_permitted": true,
+        "first_trustee": true
+      },
+      "expected": false,
+      "note": "The lessee's lessee where leasing on is permitted (to one who stands in his place in the use): «فلا ضمان». Follow-on: otherwise liability on both, settling on the first, «ويتخرج وجه آخر أنه لا ضمان على الثاني بحال»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q094.f003",
+      "encoder": "second_receiver_liable",
+      "class": "derivable",
+      "facts": {
+        "handover_permitted": true,
+        "first_trustee": true
+      },
+      "expected": false,
+      "note": "The muḍārib's muḍārib where it is permitted: «فهو أمين». Follow-ons: whether the second is the owner's muḍārib or the first's (two wujūh, al-Qāḍī in al-Mujarrad); where giving it on is barred «فللمالك تضمين أيهما شاء», the second having recourse if he did not know, with a wajh against recourse and Ibn Rajab's takhrīj that the second is never liable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q094.f004",
+      "encoder": "second_receiver_liable",
+      "class": "derivable",
+      "facts": {
+        "handover_permitted": false,
+        "first_trustee": true
+      },
+      "expected": true,
+      "note": "The agent's agent where delegating is not permitted: «فهو كالمضارب في الضمان», i.e. the owner may hold either liable. The takhrīj that the second is not liable (stated under the muḍārib) is Ibn Rajab's own wajh and is not restated here."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q094.f005",
+      "encoder": "second_receiver_liable",
+      "class": "derivable",
+      "facts": {
+        "handover_permitted": true,
+        "first_trustee": false
+      },
+      "expected": true,
+      "note": "The borrower's borrower, on the branch the record leads with: «فإن قلنا بجوازه فكل منهما ضامن للعين دون المنفعة»; the first borrower is not an amīn, so the second is not either. On «المنع وهو المشهور» both are also liable, for the thing and its use, the second bearing it if he knew; Ibn Rajab's takhrīj «أنه لا يضمن الثاني إذا لم يعلم بالحال» is a follow-on."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q094.f006",
+      "encoder": "second_receiver_liable",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "handover_permitted": true,
+        "first_trustee": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Talkhīṣ «على الصحيح», al-Inṣāf: the lessee's borrower is an amīn, not liable",
+          "ruling": false
+        },
+        {
+          "who": "the wajh al-Inṣāf records («وقيل: يضمنها»): he is liable as a borrower",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The borrower from a lessee: «قال في التلخيص هو أمين على الصحيح لقبضه من يد أمين فلا يكون ضامنا». al-Inṣāf (v06:p049): «لم يضمنها على الصحيح من المذهب … وقيل: يضمنها. وأطلقهما في الفروع»; on the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q094.f007",
+      "encoder": "second_receiver_liable",
+      "class": "derivable",
+      "facts": {
+        "handover_permitted": false,
+        "first_trustee": true
+      },
+      "expected": true,
+      "note": "The buyer from an agent whose departure from his mandate voids the sale, the goods perishing with the buyer: «فللموكل تضمين القيمة من شاء منهما من الوكيل والمشتري على المشهور»; the agent, if made to pay, has recourse on the buyer «لتلفه في يده». No contrary position is named."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f001",
+      "encoder": "error_actor_liable",
+      "class": "derivable",
+      "facts": {
+        "external_cause": true,
+        "basis_void": false,
+        "ruling_overturned": false,
+        "as_owner": false,
+        "negligent": false
+      },
+      "expected": false,
+      "note": "The witnesses retract after the ruling, admitting error or perjury: «فإن الضمان يختص بهم لاعترافهم ولا ينتقض حكم الحاكم بمجرد ذلك ولا يرجع على المحكوم له بشيء». The party ruled for is not liable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f002",
+      "encoder": "error_actor_liable",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "external_cause": false,
+        "basis_void": true,
+        "ruling_overturned": true,
+        "as_owner": true,
+        "negligent": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Khiraqī and al-Qāḍī («المذهب وجوبه»): the ruling is overturned and the party ruled for bears the property",
+          "ruling": true
+        },
+        {
+          "who": "the riwāya al-Qāḍī and others report: the ruling stands and the witnesses are liable",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The witnesses prove sinners or unbelievers after the ruling and its execution: «ثم يجب ضمان المال على المحكوم له لإتلافه له مباشرة». The khilāf arises on whether the ruling is overturned; Ibn Rajab calls the riwāya «ضعيف جدا … ولا أصل لذلك في كلام أحمد», holding that on non-overturning no one is liable. al-Inṣāf (v12:p105): overturned for sinners «على الصحيح من المذهب. وعليه جماهير الأصحاب», «ويرجع بالمال أو ببدله على المحكوم له»; on the madhhab side. Follow-on: a ruling for a life or limb, two ṭuruq (like property, al-Muḥarrar; on the judge, al-Qāḍī in al-Mujarrad)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f003",
+      "encoder": "error_actor_liable",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "external_cause": false,
+        "basis_void": false,
+        "ruling_overturned": false,
+        "as_owner": false,
+        "negligent": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the riwāya of no liability (al-Inṣāf: the madhhab)",
+          "ruling": false
+        },
+        {
+          "who": "the riwāya that he is liable",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The executor who distributed the third, then an estate-consuming debt appears: «ففي ضمانه روايتان». He acted by an authority (wilāya) over it, not as owner, and no shortfall is stated. Taqī al-Dīn extends the khilāf to «كل من تصرف بولاية في مال ثم تبين أنه مستحق». al-Inṣāf (v07:p296): «لو ظهر دين يستغرق التركة … لم يضمن. على الصحيح من المذهب … وعنه يضمن»; on the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f004",
+      "encoder": "error_actor_liable",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "external_cause": false,
+        "basis_void": false,
+        "ruling_overturned": false,
+        "as_owner": false,
+        "negligent": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "Ibn Abī Mūsā: «أظهرهما لا ضمان عليه»",
+          "ruling": false
+        },
+        {
+          "who": "the other riwāya: the distributor is liable",
+          "ruling": true
+        },
+        {
+          "who": "Abū Bakr: liable only if the executor acted without the judge's permission",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A bequest to an unidentified legatee, spent by the executor or the judge on works of piety, then the legatee appears and proves it: «فهل يضمن المفرق ما فرقه على روايتين». Annotated for the distributor acting by authority, without a stated shortfall. al-Inṣāf (v07:p296): «أو جهل موصى له. فتصدق بجميع الثلث هو أو حاكم، ثم ثبت ذلك: لم يضمن. على الصحيح من المذهب»; on the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f005",
+      "encoder": "error_actor_liable",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "external_cause": false,
+        "basis_void": false,
+        "ruling_overturned": false,
+        "as_owner": true,
+        "negligent": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Qāḍī and Ibn ʿAqīl: the heirs are liable to the creditors",
+          "ruling": true
+        },
+        {
+          "who": "Ibn Rajab's takhrīj from the executor's case: no liability",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The heirs bought a slave out of the estate and freed him to carry out their testator's bequest, then an estate-consuming debt appears: «فإنهم يضمنون للغرماء ذكره القاضي وابن عقيل ويتخرج فيه وجه آخر بانتفاء الضمان من مسألة الوصي». The heirs dispose of the estate as its owners (Ibn Rajab: «لا يملك الورثة التصرف فيها إلا بشرط الضمان», 95.f003), unlike the executor. No later treatment was found in al-Inṣāf, al-Furūʿ, the Iqnāʿ, the Muntahā or al-Buhūtī; the stated ruling is al-Qāḍī's and Ibn ʿAqīl's, the other only a takhrīj, so the reading is taken as on the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f006",
+      "encoder": "error_actor_liable",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "external_cause": false,
+        "basis_void": false,
+        "ruling_overturned": false,
+        "as_owner": false,
+        "negligent": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī in al-Mujarrad and Abū al-Khaṭṭāb: the worker is liable whether he knew or not",
+          "ruling": true
+        },
+        {
+          "who": "Abū Bakr in al-Tanbīh and al-Qāḍī in his Khilāf: not liable if he did not know",
+          "ruling": false
+        },
+        {
+          "who": "the wajh Abū Bakr reports: no liability in any case",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The muḍārib buys, without the owner's permission, one who is freed upon the owner: «وهل يضمنه العامل؟ فيه ثلاثة أوجه». The record does not say whether he knew; the khilāf arises where he did not (the first wajh against the other two), annotated there: he acted by authority, without a stated shortfall. al-Inṣāf (v05:p434): «فعلى المذهب: يضمنه العامل مطلقا. أعني سواء علم أو لم يعلم. وهو الصحيح من المذهب»; off the madhhab side, in the ledger."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f007",
+      "encoder": "error_actor_liable",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "external_cause": true,
+        "basis_void": false,
+        "ruling_overturned": false,
+        "as_owner": true,
+        "negligent": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "Ḥanbal's riwāya as Ibn Rajab reads it («وظاهر كلامه أن لا شيء على القاطع ; لأنه مغرور»): the fuller bears the cutting, the cutter nothing",
+          "ruling": false
+        },
+        {
+          "who": "Muḥammad b. al-Ḥakam's riwāya as the aṣḥāb who make the two differ read it: the one who took and used it bears the loss",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The fuller gives a man's cloth to another by mistake, who cuts it thinking it his: «على القصار إذا أبدل». Under the qāʿida the cutter relied on an apparent cause from another (the fuller) whose error is shown. Ibn Rajab harmonises the two riwāyāt (cutting vs. wearing); «ومن الأصحاب من جعلهما مختلفتين». Follow-on: dirhams spent by the one they were given to are on the spender. al-Inṣāf (v06:p078): «فإن لم يعلم المدفوع إليه حتى قطعه: غرم أرش القطع، على الصحيح من المذهب»; off the madhhab side, in the ledger."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f008",
+      "encoder": "error_actor_liable",
+      "class": "derivable",
+      "facts": {
+        "external_cause": true,
+        "basis_void": false,
+        "ruling_overturned": false,
+        "as_owner": false,
+        "negligent": false
+      },
+      "expected": false,
+      "note": "The finder gives the find to one who describes it, then another proves it his: «فإن كان الدفع بحكم حاكم فلا ضمان على الدافع». Follow-ons: without a ruling two wujūh (none; liable, al-Qāḍī, with recourse on the describer); a deposit given to the wrong person is a liability «لتفريطه»; killing a lookalike taken for one's father's killer brings retaliation «لتفريطه في اجتهاده» (Ibn ʿAqīl), with a takhrīj of blood-money only."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f009",
+      "encoder": "error_actor_liable",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "external_cause": false,
+        "basis_void": false,
+        "ruling_overturned": false,
+        "as_owner": true,
+        "negligent": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the riwāya of liability Abū Bakr reports (al-Inṣāf: the madhhab, naṣṣ in ʿAbd Allāh's riwāya)",
+          "ruling": true
+        },
+        {
+          "who": "the manṣūṣ in the riwāyāt of al-Maymūnī, Ibn Manṣūr and Abū Dāwūd, Abū Bakr in al-Tanbīh: no liability",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The missing person's property divided after the lawful period, then he returns: «حكى في ضمان ما تلف في أيدي الورثة منه روايتين». The heirs took it as their own. Ibn Rajab argues for the manṣūṣ of no liability. al-Inṣāf (v07:p339): «أخذ ما وجده بعينه، ويرجع على من أخذ الباقي. على الصحيح من المذهب … وعنه: لا يرجع على من أخذ»; on the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f010",
+      "encoder": "error_actor_liable",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "external_cause": false,
+        "basis_void": false,
+        "ruling_overturned": false,
+        "as_owner": true,
+        "negligent": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the riwāya of recourse on her",
+          "ruling": true
+        },
+        {
+          "who": "the riwāya of no recourse",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The irrevocably divorced woman took maintenance thought due for a pregnancy, then proved not pregnant (the text's «ثم بانت حاملا» is read as حائلا, as the case requires): «ففي الرجوع عليها روايتان». She took it as her own. al-Inṣāf (v09:p362): «إحداهما: يرجع عليها. وهو المذهب»; on the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f011",
+      "encoder": "error_actor_liable",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "external_cause": false,
+        "basis_void": false,
+        "ruling_overturned": false,
+        "as_owner": true,
+        "negligent": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the riwāya of recourse on her for what she spent after the death",
+          "ruling": true
+        },
+        {
+          "who": "the riwāya of no recourse",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The wife of an absent husband spent from his property, then his death is shown: «فهل يرجع عليها بما أنفقته بعد الموت على روايتين». She spent it as her due. al-Inṣāf (v09:p375): «لو أنفقت في غيبته من ماله، فبان ميتا: رجع عليها الوارث. على الصحيح من المذهب … وعنه: لا يرجع عليها»; on the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f012",
+      "encoder": "error_actor_liable",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "external_cause": false,
+        "basis_void": false,
+        "ruling_overturned": false,
+        "as_owner": false,
+        "negligent": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "«أصحهما أن لا ضمان»",
+          "ruling": false
+        },
+        {
+          "who": "the other riwāya: he is liable",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Zakāt or expiation paid to one thought poor who proves rich: «ففي وجوب الضمان عليه روايتان أصحهما أن لا ضمان», the same for the collector; the imam is not liable «بغير خلاف». He paid by a supposed entitlement, without a stated shortfall. Follow-ons: a slave, unbeliever or Hāshimī recipient is either the same khilāf or «لا يجزئه رواية واحدة لظهور التفريط في الاجتهاد». al-Inṣāf (v03:p264) on the one thought poor who proves rich: «إحداهما: يجزئه، وهو المذهب، نص عليه، وعليه أكثر الأصحاب»; on the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f001",
+      "encoder": "dispose_without_judge",
+      "class": "derivable",
+      "facts": {
+        "owner_known": false,
+        "trivial": false,
+        "despaired": false
+      },
+      "expected": true,
+      "note": "The find that is not owned, or one that would spoil, which he wants to give in charity: «فالمنصوص جواز الصدقة بها من غير حاكم». Abū al-Khaṭṭāb's riwāya from Muhannā (the large to the sultan) is, as al-Majd shows and Ibn Rajab accepts, about a known owner who died, «فليست المسألة»; no contrary position on this masʾala remains."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f002",
+      "encoder": "dispose_without_judge",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "owner_known": false,
+        "trivial": false,
+        "despaired": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Ibn Ḥāmid (al-Inṣāf: the madhhab): he spends on him from it without the judge",
+          "ruling": true
+        },
+        {
+          "who": "the riwāya of Abū al-Ḥārith Abū al-Khaṭṭāb cites: only with the judge's permission",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Property found with a foundling: «فإنه ينفق عليه منه بدون إذن حاكم ذكره ابن حامد». The one with authority over him is unknown; al-Majd answers the riwāya (a depositee spending on the absent depositor's family) «لأن الولاية هنا على معروف», so owner_known is false here. al-Inṣāf (v06:p437): «هذا المذهب. وعليه الأصحاب … وعنه: ما يدل على أنه لا ينفق إلا بإذنه»; on the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f003",
+      "encoder": "dispose_without_judge",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "owner_known": false,
+        "trivial": false,
+        "despaired": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Aḥmad's naṣṣ (Abū Ṭālib, Abū al-Ḥārith), al-Majd and others: charity without the judge",
+          "ruling": true
+        },
+        {
+          "who": "al-Qāḍī in al-Mujarrad and Ibn ʿAqīl: only where the judge's permission cannot be had",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Pledges whose owners are not known: «نص أحمد على جواز الصدقة بها». al-Inṣāf (v05:p187): «ويجوز له الصدقة بها، بشرط ضمانها. نص عليه»; on the madhhab side. Follow-on: a known but absent owner goes to the sultan; one despaired of is given in charity for him."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f004",
+      "encoder": "dispose_without_judge",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "owner_known": false,
+        "trivial": false,
+        "despaired": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Aḥmad's naṣṣ, Ibn Rajab «والصحيح الإطلاق»: charity without the judge",
+          "ruling": true
+        },
+        {
+          "who": "al-Qāḍī's second iḥtimāl in al-Mujarrad: only where the judge's permission cannot be had",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Deposits whose owner is unknown: «يجوز التصرف فيها بدون حاكم نص عليه». al-Inṣāf (v06:p328) states the naṣṣ, «ولم يعتبر حاكما», and records al-Qāḍī's iḥtimāl; on the madhhab side. Follow-ons: the charity is given in the owner's town; the poor may take charity from one whose wealth is unlawful."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f005",
+      "encoder": "dispose_without_judge",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "owner_known": false,
+        "trivial": false,
+        "despaired": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Aḥmad's naṣṣ in the riwāya of a group, most aṣḥāb: he gives it in charity",
+          "ruling": true
+        },
+        {
+          "who": "al-Qāḍī in Kitāb al-Riwāyatayn, extending the khilāf (it belongs to the treasury): the judge's permission is needed",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Usurped goods whose owner is unknown: «فيتصدق بها أيضا وقد نص على ذلك في رواية جماعة ولم يذكر أكثر الأصحاب فيه خلافا». al-Inṣāf (v06:p212): «ويجوز له التصدق بها عنهم بشرط ضمانها … على الصحيح من المذهب. وعليه الأصحاب»; on the madhhab side. Follow-ons (the two tanbīhāt): debts are like goods; taking it over and giving its value in charity."
+    }
+  ]
+}

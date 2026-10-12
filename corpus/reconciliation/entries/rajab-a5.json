@@ -1,0 +1,88 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f006",
+      "grades": [
+        [
+          "tashih",
+          "zahir",
+          "jazm"
+        ],
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The worker who buys one freed upon the owner, not knowing: al-Inṣāf makes his liability «مطلقا» the madhhab, from the ẓāhir of Aḥmad in Ibn Manṣūr's riwāya, and the Iqnāʿ states it; Abū Bakr's distinction by knowledge and the bare wajh of no liability stand against it.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p434",
+          "excerpt_ar": "وهو الصحيح من المذهب. قال في الفروع: ويضمن في الأصح. قال القاضي وغيره:",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Following «فعلى المذهب: يضمنه العامل مطلقا. أعني سواء علم أو لم يعلم.»: this is «الصحيح من المذهب», and al-Qāḍī gives it as the ẓāhir of Aḥmad in Ibn Manṣūr's riwāya."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p263",
+          "excerpt_ar": "فإن فعل صح وعتق وضمن ثمنه: علم أو لم يعلم وإن اشتراه بأذنه صح أيضا",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ states that the worker who buys one freed upon the owner without his permission is liable for the price, whether he knew or not."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p434",
+          "excerpt_ar": "لم يعلم لم يضمن. وجزم به في عيون المسائل. وقال: لأن الأصول قد فرقت بين",
+          "position": 1,
+          "grade": "ashab",
+          "who": "Abū Bakr in al-Tanbīh, per al-Inṣāf",
+          "note": "Continuing «وقال أبو بكر في التنبيه: إن»: if he did not know he is not liable, stated decisively in ʿUyūn al-Masāʾil."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f007",
+      "grades": [
+        [
+          "zahir",
+          "nass",
+          "ashab"
+        ],
+        [
+          "tashih",
+          "jazm"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The one handed another's cloth by the fuller's mistake who cuts it unknowing: Ibn Rajab reads Ḥanbal's riwāya as putting the cutting on the fuller alone (a riwāya al-Inṣāf records, «وعنه: لا يضمن»), against al-Inṣāf's madhhab and the Iqnāʿ, which make the cutter pay the loss from the cutting.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p078",
+          "excerpt_ar": "والسامري، وغيرهم. وقدمه في الفروع. وعنه: لا يضمن. وقدمه في القاعدة",
+          "position": 0,
+          "grade": "nass",
+          "who": "the riwāya al-Inṣāf records, preferred in Ibn Rajab's Qawāʿid",
+          "note": "On the recipient who cut the cloth before knowing: «وعنه: لا يضمن», which Ibn Rajab put first and leaned to."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p078",
+          "excerpt_ar": "أرش القطع، على الصحيح من المذهب. وجزم به المصنف، والشارح، وابن حمدان،",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Continuing «فإن لم يعلم المدفوع إليه حتى قطعه: غرم»: he pays the loss from the cutting «على الصحيح من المذهب»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p314",
+          "excerpt_ar": "إلى غير ربه ولا يحل لقابضه لبسه ولا الانتفاع به وإن قطعه قبل علمه غرم",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The fuller's handing the cloth to another than its owner: if the recipient cut it before knowing he pays («غرم أرش نقصه ولبسه») and has recourse on the fuller."
+        }
+      ]
+    }
+  ]
+}
