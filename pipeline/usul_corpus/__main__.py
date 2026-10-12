@@ -342,7 +342,7 @@ def docs_pages() -> dict[Path, str]:
     from .reception import render_counts
     titles = {w["id"]: (w["title_tr"], w.get("reception", {}).get("genre", "")) for w in _load(CORPUS / "registry.json")["works"]}
     return {ROOT / "docs/architecture/dossier.md": render_dossier(_load(DOSSIER), records, {t["key"]: t for t in glossary["terms"]}),
-            ROOT / "docs/glossary.md": render_glossary(glossary, records),
+            ROOT / "docs/glossary.md": render_glossary(glossary, records, "Qurʾān: " + _load(CORPUS / "nusus/foundation.json")["attribution"]["quran"]),
             ROOT / "docs/architecture/reception-counts.md": render_counts(_load(CORPUS / "reception" / "report.json"), titles)}
 
 

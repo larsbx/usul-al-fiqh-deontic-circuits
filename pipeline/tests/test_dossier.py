@@ -117,3 +117,13 @@ def test_excerpts_do_not_stop_before_a_qualifier(ref):
     if not src.exists():
         pytest.skip("witness not cached")
     assert not cut_before_qualifier(src.read_text(encoding="utf-8"), ref["excerpt_ar"])
+
+
+def test_every_term_rests_on_a_verbatim_text():
+    """A definition is a drafted paraphrase; each term must also carry its source's own words, inline
+    or in the record it cites (problem register PR-13)."""
+    recs = {r["id"]: r for p in (ROOT / "corpus/records").glob("*.jsonl") for r in map(json.loads, p.read_text(encoding="utf-8").splitlines())}
+    def verbatim(r):
+        x = r if "excerpt_ar" in r else recs.get(r["ref"], {})
+        return any((x.get(k) or "").strip() for k in ("excerpt_ar", "case_ar", "statement_ar"))
+    assert not [t["key"] for t in GLOSS["terms"] if not any(verbatim(r) for r in t["refs"])]

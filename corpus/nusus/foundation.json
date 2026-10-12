@@ -1,6 +1,9 @@
 {
  "status": "candidate",
  "note": "The textual foundation (al-nuṣūṣ): the Qurʾān and the Sunna, on which every term's ruling, qāʿida and farq of the bank rests. Āyāt are quoted from the pinned muṣḥaf (tanzil-quran-simple) at their sūra and āya; marfūʿ ḥadīth from the pinned primary collections at their number, each with al-Albānī's verdict from al-Irwāʾ, and admitted only through the ḥujja gate (decision D4, `Usul.Seam.admitted`). An athar is recorded as an athar, with al-Albānī's word on it, and never stands as a marfūʿ naṣṣ.",
+ "attribution": {
+  "quran": "Tanzil Quran Text (Simple, Version 1.1), Copyright (C) 2007-2026 Tanzil Project, License: Creative Commons Attribution 3.0. Quoted verbatim and unchanged; source and updates: https://tanzil.net"
+ },
  "ayat": [
   {
    "id": "Q005:006",

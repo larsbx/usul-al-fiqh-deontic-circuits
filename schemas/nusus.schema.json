@@ -6,6 +6,7 @@
  "required": [
   "status",
   "note",
+  "attribution",
   "ayat",
   "ahadith",
   "athar"
@@ -17,6 +18,20 @@
   },
   "note": {
    "type": "string"
+  },
+  "attribution": {
+   "type": "object",
+   "required": [
+    "quran"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "quran": {
+     "type": "string",
+     "minLength": 1,
+     "description": "Tanzil's terms: name the source, link tanzil.net, quote verbatim (problem register PR-12)"
+    }
+   }
   },
   "ayat": {
    "type": "array",

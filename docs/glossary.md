@@ -1032,6 +1032,8 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 **Texts**
 
 - `ibn_uthaymin.usul.shamela_9942.h012`: Definition.
+- `src:shamela-9942/v01:p038`: Ibn ʿUthaymīn's definition, verbatim (PR-13).
+  > واصطلاحاً: اللفظ الدال على محصور بشخص أو عدد، كأسماء الأعلام والإشارة والعدد
 
 <a id="khul"></a>
 
@@ -1177,6 +1179,8 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 **Texts**
 
 - `ibn_uthaymin.usul.shamela_9942.h006`: Definition.
+- `src:shamela-9942/v01:p012`: Ibn ʿUthaymīn's definition, verbatim (PR-13).
+  > واصطلاحاً: ما نهى عنه الشارع لا على وجه الإلزام بالترك؛ كالأخذ بالشمال والإعطاء بها
 
 <a id="man"></a>
 
@@ -1215,6 +1219,8 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 **Texts**
 
 - `ibn_uthaymin.usul.shamela_9942.h004`: Definition.
+- `src:shamela-9942/v01:p011`: Ibn ʿUthaymīn's definition, verbatim (PR-13).
+  > واصطلاحاً: ما أمر به الشارع لا على وجه الإلزام؛ كالرواتب
 
 <a id="mani"></a>
 
@@ -1333,6 +1339,8 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 **Texts**
 
 - `ibn_uthaymin.usul.shamela_9942.h007`: Definition.
+- `src:shamela-9942/v01:p012`: Ibn ʿUthaymīn's definition, verbatim (PR-13).
+  > واصطلاحاً: ما لا يتعلق به أمر، ولا نهي لذاته؛ كالأكل في رمضان ليلاً
 
 <a id="munasaba"></a>
 
@@ -2338,3 +2346,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > كمن صلى صلاتين باجتهادين إلى جهتين في وقتين، ولم يتبين أنه أخطأ؛ ولأن الاجتهاد لا ينقض بالاجتهاد
 - `src:openiti-insaf-shamela21609/v02:p017`: Qibla: no repetition even after a certain error.
   > هذا المذهب، وعليه الأصحاب، سواء كان خطؤه يقينا أو عن اجتهاد
+
+---
+
+Qurʾān: Tanzil Quran Text (Simple, Version 1.1), Copyright (C) 2007-2026 Tanzil Project, License: Creative Commons Attribution 3.0. Quoted verbatim and unchanged; source and updates: https://tanzil.net

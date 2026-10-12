@@ -171,3 +171,15 @@ def test_table_lean_is_generated():
     from usul_corpus.__main__ import NUSUS_LEAN
     from usul_corpus import furuq
     assert NUSUS_LEAN.read_text(encoding="utf-8") == nusus.table_lean(F, GLOSS, [i for t in furuq.tranches(CORPUS) for i in t["items"]])
+
+
+def test_tanzil_is_attributed():
+    """Tanzil's terms (PR-12): name the source, link tanzil.net, quote verbatim. The attribution is
+    the pinned witness's own notice, and every page that quotes āyāt carries it."""
+    a = F["attribution"]["quran"]
+    assert all(x in a for x in ("Tanzil Project", "Creative Commons Attribution 3.0", "https://tanzil.net"))
+    src = CACHE / "tanzil-quran-simple.txt"
+    if src.exists():
+        notice = src.read_text(encoding="utf-8")
+        assert all(x in notice and x in a for x in ("Tanzil Quran Text (Simple, Version 1.1)", "Copyright (C) 2007-2026 Tanzil Project"))
+    assert a in (ROOT / "docs/glossary.md").read_text(encoding="utf-8")
