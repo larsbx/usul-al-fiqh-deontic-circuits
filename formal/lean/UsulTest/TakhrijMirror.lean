@@ -484,3 +484,63 @@ import Usul
 #guard (Usul.CommandSchemata.intendedUsage .abuBarakat .permission) == .figurative
 #guard (Usul.CommandSchemata.intendedUsage .qadiArgument .recommendation) == .literal
 #guard (Usul.CommandSchemata.intendedUsage .qadiArgument .permission) == .figurative
+#guard (Usul.Readings.RajabA1.rescission false false) == .free
+#guard (Usul.Readings.RajabA1.rescission false true) == .free
+#guard (Usul.Readings.RajabA1.rescission true false) == .barred
+#guard (Usul.Readings.RajabA1.rescission true true) == .withRemedy
+#guard (Usul.Readings.RajabA1.recourseAfterReturn false) == false
+#guard (Usul.Readings.RajabA1.recourseAfterReturn true) == true
+#guard (Usul.Readings.RajabA1.mayDelegate false false false) == false
+#guard (Usul.Readings.RajabA1.mayDelegate false false true) == true
+#guard (Usul.Readings.RajabA1.mayDelegate false true false) == false
+#guard (Usul.Readings.RajabA1.mayDelegate false true true) == true
+#guard (Usul.Readings.RajabA1.mayDelegate true false false) == true
+#guard (Usul.Readings.RajabA1.mayDelegate true false true) == true
+#guard (Usul.Readings.RajabA1.mayDelegate true true false) == false
+#guard (Usul.Readings.RajabA1.mayDelegate true true true) == false
+#guard (Usul.Readings.RajabA1.mayEat false false false false) == false
+#guard (Usul.Readings.RajabA1.mayEat false false false true) == true
+#guard (Usul.Readings.RajabA1.mayEat false false true false) == false
+#guard (Usul.Readings.RajabA1.mayEat false false true true) == true
+#guard (Usul.Readings.RajabA1.mayEat false true false false) == true
+#guard (Usul.Readings.RajabA1.mayEat false true false true) == true
+#guard (Usul.Readings.RajabA1.mayEat false true true false) == false
+#guard (Usul.Readings.RajabA1.mayEat false true true true) == true
+#guard (Usul.Readings.RajabA1.mayEat true false false false) == true
+#guard (Usul.Readings.RajabA1.mayEat true false false true) == true
+#guard (Usul.Readings.RajabA1.mayEat true false true false) == true
+#guard (Usul.Readings.RajabA1.mayEat true false true true) == true
+#guard (Usul.Readings.RajabA1.mayEat true true false false) == true
+#guard (Usul.Readings.RajabA1.mayEat true true false true) == true
+#guard (Usul.Readings.RajabA1.mayEat true true true false) == true
+#guard (Usul.Readings.RajabA1.mayEat true true true true) == true
+#guard (Usul.Readings.RajabA2.nafaqaStipulable false false) == true
+#guard (Usul.Readings.RajabA2.nafaqaStipulable false true) == true
+#guard (Usul.Readings.RajabA2.nafaqaStipulable true false) == false
+#guard (Usul.Readings.RajabA2.nafaqaStipulable true true) == true
+#guard (Usul.Readings.RajabA2.nafaqaOwned false false) == false
+#guard (Usul.Readings.RajabA2.nafaqaOwned false true) == true
+#guard (Usul.Readings.RajabA2.nafaqaOwned true false) == true
+#guard (Usul.Readings.RajabA2.nafaqaOwned true true) == true
+#guard (Usul.Readings.RajabA2.benefitConditionValid false) == false
+#guard (Usul.Readings.RajabA2.benefitConditionValid true) == true
+#guard (Usul.Readings.RajabA2.wageWithoutStipulation false false) == false
+#guard (Usul.Readings.RajabA2.wageWithoutStipulation false true) == true
+#guard (Usul.Readings.RajabA2.wageWithoutStipulation true false) == true
+#guard (Usul.Readings.RajabA2.wageWithoutStipulation true true) == true
+#guard (Usul.Readings.RajabA2.ownerTakesCrop false) == true
+#guard (Usul.Readings.RajabA2.ownerTakesCrop true) == false
+#guard (Usul.Readings.RajabA2.asTree false) == false
+#guard (Usul.Readings.RajabA2.asTree true) == true
+#guard (Usul.Readings.RajabA3.disposalStands false false) == true
+#guard (Usul.Readings.RajabA3.disposalStands false true) == true
+#guard (Usul.Readings.RajabA3.disposalStands true false) == true
+#guard (Usul.Readings.RajabA3.disposalStands true true) == false
+#guard (Usul.Readings.RajabA3.lossLiable false false false) == false
+#guard (Usul.Readings.RajabA3.lossLiable false false true) == false
+#guard (Usul.Readings.RajabA3.lossLiable false true false) == false
+#guard (Usul.Readings.RajabA3.lossLiable false true true) == false
+#guard (Usul.Readings.RajabA3.lossLiable true false false) == true
+#guard (Usul.Readings.RajabA3.lossLiable true false true) == false
+#guard (Usul.Readings.RajabA3.lossLiable true true false) == false
+#guard (Usul.Readings.RajabA3.lossLiable true true true) == false

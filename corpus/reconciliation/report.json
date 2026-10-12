@@ -1,6 +1,6 @@
 {
-  "entries": 162,
-  "evidence_items": 414,
+  "entries": 173,
+  "evidence_items": 438,
   "side_checks": [
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002",
@@ -11,11 +11,11 @@
   ],
   "stages": {
     "jam": 19,
-    "tarjih": 134,
+    "tarjih": 145,
     "tawaqquf": 9
   },
   "standing": {
-    "against_reading": 73,
+    "against_reading": 84,
     "for_reading": 80,
     "tawaqquf": 9
   },
@@ -67,10 +67,23 @@
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f001",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f002"
     ],
+    "repeat_bearing_roots_as_trees": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f002",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f004"
+    ],
     "words_out_of_nature": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f000",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f001",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f004"
+    ],
+    "attached_right_disposal": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f009",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f010"
+    ],
+    "benefit_condition_against_compensation": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f000",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f002"
     ],
     "failed_obligation_returns": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f000",
@@ -118,6 +131,9 @@
     "doubled": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f001"
     ],
+    "eating_without_permission": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f001"
+    ],
     "follows_proven_ownership": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f002"
     ],
@@ -141,6 +157,15 @@
     ],
     "mixed_haram_by_proportion": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f007"
+    ],
+    "recourse_after_return": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f003"
+    ],
+    "rescission_harm": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f000"
+    ],
+    "rescue_loss_liability": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f009"
     ],
     "residual_jawaz_after_sarf": [
       "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f005"
