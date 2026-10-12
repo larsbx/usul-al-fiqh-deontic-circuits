@@ -171,7 +171,7 @@ someone unable to do the whole they disagree. al-Saʿdī (Q40): «فإن قدر 
 وجب عليه فعل ما قدر عليه، إلا أن يكون المقدور عليه وسيلة محضة». Inability lifts what it
 reaches, part by part. -/
 
-/-- The case: whether the part can be done, and whether it is a pure means. The result is
+/-- The case: whether the part can be done, and whether it is a pure means (wasīla maḥḍa). The result is
 whether the part is obligatory. -/
 def t6 : Pair (Bool × Bool) Bool where
   first  := fun c => !c.2
@@ -343,7 +343,7 @@ Ibn Rajab 1 (as read, `Refinements.runningBody`): running water is judged jirya 
 al-Saʿdī Q9 (`Kulliyyat.measure`): what the law leaves undefined is measured by custom, and
 custom counts the running river as one body. One who swore not to stand in this water while
 it runs: by Q1 he cannot stand in what keeps changing, by Q9 he has stood in it. Ibn Rajab
-(1.f003): «والأيمان مرجعها إلى العرف». Oaths follow Q9; purity follows Q1. -/
+(1.f003): «والأيمان مرجعها إلى العرف». Oaths follow Q9; ṭahāra follows Q1. -/
 
 /-- The case: the question is an oath. The result: how the running water is reckoned. -/
 def t14 : Pair Bool Refinements.Body where
@@ -363,7 +363,7 @@ theorem t14_jam (oath : Bool) :
 Q14 (its second riwāya): when the cause is certainly in one of two, «الأصل زال يقينا في أحدهما
 فتعذر البقاء عليه», so the ruling attaches. Q15: a presumption is kept, and its consequence for
 another presumption «لم يلتفت إلى ذلك اللازم». Two who find al-manī (المني) in a shared garment: by Q14 the
-breach attaches, by Q15 each keeps his certain purity. Ibn Rajab (14.f002): «فينظر إليهما مجتمعين
+breach attaches, by Q15 each keeps his certain ṭahāra. Ibn Rajab (14.f002): «فينظر إليهما مجتمعين
 في حكم يتعلق باجتماعهما». Taken together (one leading the other, both slave-women in one
 ownership) Q14 governs; each alone keeps his aṣl (Q15). -/
 

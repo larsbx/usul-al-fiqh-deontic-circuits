@@ -181,8 +181,8 @@
   {
    "id": "F51",
    "cases_en": [
-    "purity by tayammum (tied to the time, one obligatory prayer per tayammum)",
-    "purity by water"
+    "ṭahāra by tayammum (tied to the time, one obligatory prayer per tayammum)",
+    "ṭahāra by water"
    ],
    "madhhab": "apart",
    "grade": "daif",
@@ -234,8 +234,8 @@
   {
    "id": "F54",
    "cases_en": [
-    "the hair, wool and feathers of an undeclared carcass (pure)",
-    "its flesh, fat and bones (najis); its hide is purified by tanning"
+    "the hair, wool and feathers of an undeclared carcass (ṭāhir)",
+    "its flesh, fat and bones (najis); its hide is made ṭāhir by tanning"
    ],
    "madhhab": "apart",
    "grade": "sahih",
@@ -302,7 +302,7 @@
   {
    "id": "F58",
    "cases_en": [
-    "agency in pure rights of God and in a person's right where he himself is meant (invalid)",
+    "agency in rights purely God's (maḥḍ) and in a person's right where he himself is meant (invalid)",
     "in other rights (valid)"
    ],
    "madhhab": "apart",

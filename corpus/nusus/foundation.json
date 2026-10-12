@@ -57,6 +57,14 @@
    "witness": "tanzil-quran-simple",
    "excerpt_ar": "وَلَا تَجْعَلُوا اللَّهَ عُرْضَةً لِّأَيْمَانِكُمْ",
    "en": "«do not make God, by your oaths (aymān), a barrier» (F63 quotes it)"
+  },
+  {
+   "id": "Q025:048",
+   "sura": 25,
+   "aya": 48,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَأَنزَلْنَا مِنَ السَّمَاءِ مَاءً طَهُورًا",
+   "en": "«and We sent down from the sky water ṭahūr»"
   }
  ],
  "ahadith": [
@@ -309,6 +317,27 @@
     "witness": "shamela-22592",
     "number": 67,
     "verdict": "daif",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-bahr-tahur",
+   "narrator": "Abū Hurayra",
+   "matn_ar": "هو الطهور ماؤه الحل ميتته",
+   "en": "the sea: «its water is ṭahūr, its dead lawful»",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 83,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 9,
+    "verdict": "sahih",
     "numbering": "al-Irwāʾ's own entry numbers"
    }
   }

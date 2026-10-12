@@ -25,7 +25,7 @@
     "amara": true
    },
    "expected": true,
-   "note": "Cat. 1: a reliable report that a dog licked this vessel is a shar'i proof (zahir=qat) overriding the presumption of purity (asl=zann); najāsa is ruled."
+   "note": "Cat. 1: a reliable report that a dog licked this vessel is a shar'i proof (zahir=qat) overriding the presumption of ṭahāra (asl=zann); najāsa is ruled."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003",
@@ -96,7 +96,7 @@
     "amara": false
    },
    "expected": false,
-   "note": "Known ṭahāra or najāsa (of water, garment, ground or body), or a known ḥadath or najāsa, with preponderant belief of its removal («لو تيقن حدثا أو نجاسة»): build on the aṣl, preponderant belief does not suffice; purity and ḥadath are matters «لا أمارة عليه» (Ibn Rajab at f013), so on equal grades the aṣl stands.",
+   "note": "Known ṭahāra or najāsa (of water, garment, ground or body), or a known ḥadath or najāsa, with preponderant belief of its removal («لو تيقن حدثا أو نجاسة»): build on the aṣl, preponderant belief does not suffice; ṭahāra and ḥadath are matters «لا أمارة عليه» (Ibn Rajab at f013), so on equal grades the aṣl stands.",
    "revisit": {
     "from_class": "encoding_error",
     "closed_by": [
@@ -251,7 +251,7 @@
     "amara": true
    },
    "expected": true,
-   "note": "Cat. 3: deep sleep nullifies wudu' as the presumptive locus (mazinna) of hadath (zahir=zann) against the asl of continuing purity (zann)."
+   "note": "Cat. 3: deep sleep nullifies wudu' as the presumptive locus (mazinna) of hadath (zahir=zann) against the asl of continuing ṭahāra (zann)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017",
@@ -328,12 +328,12 @@
      "ruling": true
     },
     {
-     "who": "wajh 2: pure, by the asl",
+     "who": "wajh 2: ṭāhir, by the asl",
      "ruling": false
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4 (khilaf 'when zahir and asl are equal'): a dog with a wet mouth put its head in a vessel: zahir of licking=zann vs asl of purity=zann; kernel gives najāsa; no position is marked as the madhhab."
+   "note": "Cat. 4 (khilaf 'when zahir and asl are equal'): a dog with a wet mouth put its head in a vessel: zahir of licking=zann vs asl of ṭahāra=zann; kernel gives najāsa; no position is marked as the madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022",
@@ -351,12 +351,12 @@
      "ruling": true
     },
     {
-     "who": "wajh 2 (via Ibn Tamim): pure unless seen coming from the latrine",
+     "who": "wajh 2 (via Ibn Tamim): ṭāhir unless seen coming from the latrine",
      "ruling": false
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4: a non-blood creature in little water, nearer the latrine than the well: zahir of najis origin=zann vs asl of purity=zann; kernel gives najis; no preferred wajh stated (if nearer the well or equidistant it is pure, no conflict)."
+   "note": "Cat. 4: a non-blood creature in little water, nearer the latrine than the well: zahir of najis origin=zann vs asl of ṭahāra=zann; kernel gives najis; no preferred wajh stated (if nearer the well or equidistant it is ṭāhir, no conflict)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023",
@@ -370,7 +370,7 @@
    "expected": true,
    "positions": [
     {
-     "who": "riwaya 1, mansus, made the madhhab by Abu al-Barakat: pure (asl)",
+     "who": "riwaya 1, mansus, made the madhhab by Abu al-Barakat: ṭāhir (asl)",
      "ruling": false
     },
     {
@@ -379,7 +379,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4: street mud: zahir of najāsa (custom)=zann vs asl of purity=zann; kernel gives najāsa, which al-Talkhis calls the madhhab but the mansus/Majd position is purity, so matches_madhhab is set false (disputed)."
+   "note": "Cat. 4: street mud: zahir of najāsa (custom)=zann vs asl of ṭahāra=zann; kernel gives najāsa, which al-Talkhis calls the madhhab but the mansus/Majd position is ṭahāra, so matches_madhhab is set false (disputed)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024",
@@ -397,7 +397,7 @@
      "ruling": true
     },
     {
-     "who": "wajh 2: pure, asl of non-exhumation",
+     "who": "wajh 2: ṭāhir, asl of non-exhumation",
      "ruling": false
     }
    ],
@@ -416,7 +416,7 @@
    "expected": true,
    "positions": [
     {
-     "who": "riwaya 1: permitted (asl of purity)",
+     "who": "riwaya 1: permitted (asl of ṭahāra)",
      "ruling": false
     },
     {
@@ -429,7 +429,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4: clothes and vessels of unbelievers: zahir of contamination=zann vs asl of purity=zann; kernel's true matches only riwaya 3 (which itself makes the outcome depend on the zahir's strength); no riwaya is marked the madhhab here."
+   "note": "Cat. 4: clothes and vessels of unbelievers: zahir of najāsa=zann vs asl of ṭahāra=zann; kernel's true matches only riwaya 3 (which itself makes the outcome depend on the zahir's strength); no riwaya is marked the madhhab here."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026",
@@ -456,7 +456,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4: clothes of children and the careless: zahir of najāsa=zann vs asl of purity=zann; kernel matches the prohibition (Ibn Abi Musa's ikhtiyar), not marked the madhhab."
+   "note": "Cat. 4: clothes of children and the careless: zahir of najāsa=zann vs asl of ṭahāra=zann; kernel matches the prohibition (Ibn Abi Musa's ikhtiyar), not marked the madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027",
@@ -769,7 +769,7 @@
     "customary_continuity": true
    },
    "expected": true,
-   "note": "Purifying a little najis water by adding much water requires only customary continuity, not pouring two qullas at once."
+   "note": "Making a little najis water ṭahūr (taṭhīr) by adding much water requires only customary continuity, not pouring two qullas at once."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f002",
@@ -3647,7 +3647,7 @@
     "hardship": false
    },
    "expected": true,
-   "note": "The days of the mustaḥāḍa beyond her customary sitting are treated as non-existent (she takes the rulings of the pure), «فإن مدة الاستحاضة تطول ولا غاية لها تنتظر»: one despairs of learning them, unlike the beginner's doubtful days, which become known by repetition soon.",
+   "note": "The days of the mustaḥāḍa beyond her customary sitting are treated as non-existent (she takes the rulings of the ṭāhira, the woman not in ḥayḍ), «فإن مدة الاستحاضة تطول ولا غاية لها تنتظر»: one despairs of learning them, unlike the beginner's doubtful days, which become known by repetition soon.",
    "revisit": {
     "from_class": "missing_rule",
     "closed_by": [
@@ -3724,7 +3724,7 @@
     "hardship": true
    },
    "expected": true,
-   "note": "Street mud is ruled pure «على الصحيح المنصوص»: its unknown najāsa is set aside because taking it into account is a hardship.",
+   "note": "Street mud is ruled ṭāhir «على الصحيح المنصوص»: its unknown najāsa is set aside because taking it into account is a hardship.",
    "revisit": {
     "from_class": "missing_rule",
     "closed_by": [
@@ -3789,7 +3789,7 @@
     "pure_means": false
    },
    "expected": true,
-   "note": "One unable to recite must still stand: standing is «مقصود في نفسه وهو عبادة منفردة», not a pure means to the recitation. (Opening example, segmented as f000.)"
+   "note": "One unable to recite must still stand: standing is «مقصود في نفسه وهو عبادة منفردة», not a pure means (wasīla maḥḍa) to the recitation. (Opening example, segmented as f000.)"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f000",
@@ -3834,7 +3834,7 @@
    "expected": true,
    "positions": [
     {
-     "who": "al-mashhūr: void, a pure trust",
+     "who": "al-mashhūr: void, a trust outright (amāna maḥḍa)",
      "ruling": true
     },
     {

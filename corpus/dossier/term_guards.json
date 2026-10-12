@@ -16,6 +16,17 @@
     "hadath"
    ],
    "why": "English «impurity» covers al-najāsa (removed, no tayammum) and al-ḥadath (lifted, with intention, tayammum for it): F68, F121."
+  },
+  {
+   "gloss_en": "\\b(pure|purity|purif\\w*)\\b",
+   "terms": [
+    "tahir",
+    "tahur",
+    "tahara",
+    "mahd",
+    "najasa"
+   ],
+   "why": "English «pure» covers al-ṭāhir (not najis), al-ṭahūr (purifying; the madhhab's ṭāhir water is not), al-ṭahāra (of a person: from ḥadath and from najāsa) and al-maḥḍ (sheer, not a purity term): F19, F68."
   }
  ],
  "note": "Every English text field of the corpus registers, and every Lean doc comment, that uses one of these glosses must also name the term it means, by its transliteration or its Arabic (tests/test_nusus.py). The English never feeds a derivation; this keeps it from hiding which term a case is about."

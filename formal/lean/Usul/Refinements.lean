@@ -32,7 +32,7 @@ register question; it makes the alternatives expressible.
   bayt 90 of Ibn ʿUthaymīn's manẓūma, «وإن تعذر اليقين فارجعا لغالب الظن»; and «لا عبرة بالظن البين
   خطؤه» limited by «الاجتهاد لا ينقض بالاجتهاد».
 * **Aṣl and ẓāhir** (gap `fact:amara`; Ibn Rajab 159, «because time has indicators by which it
-  is known, unlike what has no indicator: completing prayer, purity, ḥadath»): on equal grades
+  is known, unlike what has no indicator: completing prayer, ṭahāra, ḥadath»): on equal grades
   the ẓāhir prevails only where the matter has indicators. Related: IQ-20.
 -/
 
@@ -196,7 +196,7 @@ def basis (yaqinAttainable ghalaba : Bool) : Basis :=
   if yaqinAttainable then .yaqin else if ghalaba then .ghalabatZann else .asl
 
 /-- Where certainty is attainable, a preponderant belief is not consulted (the manẓūma's
-example: certain of purity, believing a ḥadath, he stays on purity). -/
+example: certain of ṭahāra, believing a ḥadath, he stays on ṭahāra). -/
 theorem attainable_yaqin_excludes_ghalaba (g : Bool) : basis true g = .yaqin := by cases g <;> rfl
 
 /-- The order is S2's: `basis` is `resolveD` over [yaqīn, ghalaba] with the aṣl as default. -/
@@ -483,7 +483,7 @@ theorem q65_is_the_unbelieved_basis : validWithBasis false true = countsAsMet fa
 
 /-! ### Qāʿida 91: what the hand takes in
 
-«يضمن بالعقد وباليد الأموال المحضة»; of what is not pure property, what has a share of it (umm
+«يضمن بالعقد وباليد الأموال المحضة»; of what is not property outright (maḥḍ), what has a share of it (umm
 al-walad, the mukātab, the mudabbar) «فيضمن باليد», while «الحر لا تثبت عليه اليد». -/
 
 def handLiable (propertyLike : Bool) : Bool := propertyLike

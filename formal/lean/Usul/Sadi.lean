@@ -13,7 +13,7 @@ namespace Usul.Sadi
 
 open Usul
 
-/-! ## Q1 — the Lawgiver commands only pure or preponderant benefit, forbids only pure or
+/-! ## Q1 — the Lawgiver commands only sheer (maḥḍ) or preponderant benefit, forbids only sheer or
 preponderant harm -/
 
 /-- Benefit and harm of an act, on a common scale. -/
@@ -245,7 +245,7 @@ theorem q38_voids_iff_intrinsic (t : ProhibitionTarget) :
   cases t <;> simp [validDespiteProhibition]
 
 /-! ## Q40 — the whole command is due; whoever can do part must do that part, unless the
-part is a pure means or not worship by itself -/
+part is a pure means (wasīla maḥḍa) or not worship by itself -/
 
 def obligedParts {P : Type} (parts : List P) (can pureMeans : P → Bool) : List P :=
   parts.filter (fun p => can p && !pureMeans p)

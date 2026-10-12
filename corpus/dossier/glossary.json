@@ -1966,7 +1966,7 @@
    "ar": "الأمارة",
    "tr": "al-amāra",
    "gloss": "indicator, sign",
-   "definition": "A sign that is not necessarily always accompanied by what it indicates. Ibn ʿUthaymīn defines the waḍʿī rulings as amārāt posited by the Lawgiver; those who admit takhṣīṣ al-ʿilla argue that sharʿī ʿilal are amārāt, which suffice if their ruling is mostly with them (reported by Ibn Qudāma, who answers it). Ibn Rajab allows acting on preponderant belief about time because time has amārāt, unlike completing prayer, purity or ḥadath.",
+   "definition": "A sign that is not necessarily always accompanied by what it indicates. Ibn ʿUthaymīn defines the waḍʿī rulings as amārāt posited by the Lawgiver; those who admit takhṣīṣ al-ʿilla argue that sharʿī ʿilal are amārāt, which suffice if their ruling is mostly with them (reported by Ibn Qudāma, who answers it). Ibn Rajab allows acting on preponderant belief about time because time has amārāt, unlike completing prayer, ṭahāra or ḥadath.",
    "conditions": [],
    "related": [
     "hukm_wadi",
@@ -2556,7 +2556,7 @@
     {
      "ref": "src:openiti-rajab-shamela21730/v01:p059",
      "excerpt_ar": "ما أخذه لمصلحة مالكه خاصة كالمودع فهو أمين محض لكن إذا تلفت الوديعة من بين ماله ففي ضمانه خلاف",
-     "note": "Ibn Rajab: what he took solely for the owner's benefit (the depositee) is a pure trustee, «لكن» if the deposit perishes from among his own property his liability is disputed."
+     "note": "Ibn Rajab: what he took solely for the owner's benefit (the depositee) is a trustee outright (amīn maḥḍ), «لكن» if the deposit perishes from among his own property his liability is disputed."
     },
     {
      "ref": "src:archive-pdf1995-tess/v01:p095",
@@ -3244,6 +3244,129 @@
      "ref": "src:openiti-ilam-shamela11496/v01:p222",
      "excerpt_ar": "وجمعتم بين ما فرق الله بينه من إزالة النجاسة ورفع الحدث",
      "note": "Iʿlām: najāsa is removed and ḥadath lifted."
+    }
+   ]
+  },
+  {
+   "key": "tahur",
+   "ar": "الطهور",
+   "tr": "al-ṭahūr",
+   "gloss": "al-ṭahūr: water ṭāhir in itself that also purifies (lifts ḥadath, removes najāsa)",
+   "definition": "Water that is ṭāhir and purifies: «وَأَنزَلْنَا مِنَ السَّمَاءِ مَاءً طَهُورًا» (al-Furqān 48); of the sea, «هو الطهور ماؤه الحل ميتته» (Abū Dāwūd 83; al-Irwāʾ 9, ṣaḥīḥ). al-Saʿdī holds that water stays ṭahūr until najāsa changes it (F19: «وأن الماء باق على طهوريته حتى تغيره النجاسة»).",
+   "related": [
+    "tahir",
+    "tahara",
+    "najasa"
+   ],
+   "distinct_from": [
+    "tahir",
+    "tahara"
+   ],
+   "nusus": [
+    "Q025:048",
+    "H-bahr-tahur"
+   ],
+   "furuq": [
+    "F19"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F19",
+     "excerpt_ar": "وأن الماء باق على طهوريته حتى تغيره النجاسة",
+     "note": "al-Saʿdī: water stays ṭahūr until najāsa changes it."
+    },
+    {
+     "ref": "src:shamela-22592/v01:p042",
+     "excerpt_ar": "قوله فى البحر: \" هو الطهور ماؤه , الحل ميتته \"",
+     "note": "al-Irwāʾ 9, «* صحيح»."
+    }
+   ]
+  },
+  {
+   "key": "tahir",
+   "ar": "الطاهر",
+   "tr": "al-ṭāhir",
+   "gloss": "al-ṭāhir: not najis; of water in the madhhab, also a middle class (ṭāhir, not purifying)",
+   "definition": "What is not najis (al-manī is ṭāhir: F120 «ومنه طاهر يوجب الغسل وهو المني»). In the madhhab's division of water it is also a middle class between ṭahūr and najis: water a ṭāhir substance has changed loses its ṭahūriyya («وأنه يسلبه الطهورية في الأول دون الثاني»). al-Saʿdī grades that farq weak and holds the water ṭahūr (F19). So «pure water» must say which: ṭahūr (purifying) or ṭāhir (not najis, and in the madhhab not purifying).",
+   "related": [
+    "tahur",
+    "tahara",
+    "najasa",
+    "maniyy"
+   ],
+   "distinct_from": [
+    "tahur",
+    "tahara"
+   ],
+   "furuq": [
+    "F19",
+    "F120"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F19",
+     "excerpt_ar": "وأنه يسلبه الطهورية في الأول دون الثاني",
+     "note": "The madhhab's middle class: water a ṭāhir substance changed on purpose loses its ṭahūriyya."
+    },
+    {
+     "ref": "src:islamhouse-qj-doc#F120",
+     "excerpt_ar": "ومنه طاهر يوجب الغسل وهو المني",
+     "note": "al-manī is ṭāhir."
+    }
+   ]
+  },
+  {
+   "key": "tahara",
+   "ar": "الطهارة",
+   "tr": "al-ṭahāra",
+   "gloss": "al-ṭahāra: being ṭāhir; of a person, free of ḥadath (lifted) and of najāsa (removed)",
+   "definition": "The state of being ṭāhir. Of a person it has two parts the law keeps apart: freedom from ḥadath, lifted by wuḍūʾ or ghusl with intention, and freedom from najāsa, removed without it (F68; Ibn al-Qayyim: «ما فرق الله بينه من إزالة النجاسة ورفع الحدث»). Of a thing: freedom from najāsa.",
+   "related": [
+    "hadath",
+    "najasa",
+    "tahur",
+    "tahir"
+   ],
+   "distinct_from": [
+    "tahur",
+    "tahir"
+   ],
+   "furuq": [
+    "F68",
+    "F121"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-ilam-shamela11496/v01:p222",
+     "excerpt_ar": "وجمعتم بين ما فرق الله بينه من إزالة النجاسة ورفع الحدث",
+     "note": "Iʿlām: removing najāsa and lifting ḥadath are two things."
+    }
+   ]
+  },
+  {
+   "key": "mahd",
+   "ar": "المحض",
+   "tr": "al-maḥḍ",
+   "gloss": "al-maḥḍ: sheer, unmixed (a «pure means», a «purely God's» right); not a purity term",
+   "definition": "Sheer, unmixed: a «pure means» (wasīla maḥḍa, Q40) or a right that is God's alone («الحق فيها لله متمحض», F13). The English «pure» in this sense says nothing of ṭahāra.",
+   "related": [],
+   "distinct_from": [
+    "tahir",
+    "tahur"
+   ],
+   "furuq": [
+    "F13"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#q040",
+     "excerpt_ar": "إلا أن يكون المقدور عليه وسيلة محضة",
+     "note": "Q40: a part that is a pure means (wasīla maḥḍa) is not due by itself."
+    },
+    {
+     "ref": "src:islamhouse-qj-doc#F13",
+     "excerpt_ar": "وهذه الحق فيها لله متمحض",
+     "note": "F13: here the right is purely God's."
     }
    ]
   }

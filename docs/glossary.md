@@ -80,7 +80,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > في قبول قول الأمناء في الرد والتلف أما التلف فيقبل فيه قول كل أمين إذ لا معنى للأمانة إلا انتفاء الضمان، ومن لوازمه قبول قوله في التلف وإلا للزم الضمان باحتمال التلف وهو لا يلزمه الضمان مع تحققه ويستثنى من ذلك الوديعة إذا هلكت مال المودع على طريقة من يحكي الخلاف فيها في قبول [قول] المودع في التلف لا في أصل ضمانه وكذلك العين المستأجرة والمستأجر على عمل [فيها] حكي فيها رواية بالضمان فمن الأصحاب من ج
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045`: Maḥḍa voided by taʿaddī; mutaḍammina not.
   > عقود الأمانات هل تنفسخ بمجرد التعدي فيها أم لا؟ المذهب أن الأمانة المحضة تبطل بالتعدي والأمانة المتضمنة لأمر آخر لا تبطل على الصحيح. ويتخرج على هذا مسائل: منها: إذا تعدى في الوديعة بطلت ولم يجز له الإمساك ووجب الرد على الفور لأنها أمانة محضة وقد زالت بالتعدي فلا تعود بدون عقد متجدد هذا هو المشهور، ولو كانت عينين فتعدى في إحداهما فهل يصير ضامنا لهما أو لما وجد فيه التعدي خاصة فيه تردد وذكره القاضي 
-- `src:openiti-rajab-shamela21730/v01:p059`: Ibn Rajab: what he took solely for the owner's benefit (the depositee) is a pure trustee, «لكن» if the deposit perishes from among his own property his liability is disputed.
+- `src:openiti-rajab-shamela21730/v01:p059`: Ibn Rajab: what he took solely for the owner's benefit (the depositee) is a trustee outright (amīn maḥḍ), «لكن» if the deposit perishes from among his own property his liability is disputed.
   > ما أخذه لمصلحة مالكه خاصة كالمودع فهو أمين محض لكن إذا تلفت الوديعة من بين ماله ففي ضمانه خلاف
 - `src:archive-pdf1995-tess/v01:p095`: Al-Saʿdī Q43.
   > من قبض العين لحظ نفسه لم يقبل قوله في الرد، فإن قبضه لحظ مالكه قبل
@@ -89,7 +89,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-amāra (الأمارة)
 
-*indicator, sign.* A sign that is not necessarily always accompanied by what it indicates. Ibn ʿUthaymīn defines the waḍʿī rulings as amārāt posited by the Lawgiver; those who admit takhṣīṣ al-ʿilla argue that sharʿī ʿilal are amārāt, which suffice if their ruling is mostly with them (reported by Ibn Qudāma, who answers it). Ibn Rajab allows acting on preponderant belief about time because time has amārāt, unlike completing prayer, purity or ḥadath.
+*indicator, sign.* A sign that is not necessarily always accompanied by what it indicates. Ibn ʿUthaymīn defines the waḍʿī rulings as amārāt posited by the Lawgiver; those who admit takhṣīṣ al-ʿilla argue that sharʿī ʿilal are amārāt, which suffice if their ruling is mostly with them (reported by Ibn Qudāma, who answers it). Ibn Rajab allows acting on preponderant belief about time because time has amārāt, unlike completing prayer, ṭahāra or ḥadath.
 
 **Related:** [hukm_wadi](#hukm_wadi), [illa](#illa), [zahir](#zahir), [qarina](#qarina)
 
@@ -816,6 +816,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q065`: The two kinds of mafhūm.
   > المفهوم على قسمين مفهوم موافقة ومفهوم مخالفة. فأما مفهوم الموافقة فهو أن يكون المسكوت عنه موافقا في الحكم للمنطوق وأولى منه. مثال ذلك قوله تعالى: {فمن يعمل مثقال ذرة خيرا يره} [الزلزلة:7} وكفاية ما دون القنطار من قوله: {يؤده إليك} [آل عمران: 75] وهذا تنبيه بالأعلى على الأدنى وما قبله بالأدنى على الأعلى وهو حجة ذكره بعضهم إجماعا لتبادر فهم العقلاء إليه واختلف النقل عن داود1. واختلف في دلالته فقال ا
 
+<a id="mahd"></a>
+
+## al-maḥḍ (المحض)
+
+*al-maḥḍ: sheer, unmixed (a «pure means», a «purely God's» right); not a purity term.* Sheer, unmixed: a «pure means» (wasīla maḥḍa, Q40) or a right that is God's alone («الحق فيها لله متمحض», F13). The English «pure» in this sense says nothing of ṭahāra.
+
+**Texts**
+
+- `src:islamhouse-qj-doc#q040`: Q40: a part that is a pure means (wasīla maḥḍa) is not due by itself.
+  > إلا أن يكون المقدور عليه وسيلة محضة
+- `src:islamhouse-qj-doc#F13`: F13: here the right is purely God's.
+  > وهذه الحق فيها لله متمحض
+
 <a id="majhul"></a>
 
 ## al-majhūl (المجهول)
@@ -1470,6 +1483,34 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `src:archive-pdf1995-tess/v01:p093`: Al-Saʿdī Q41.
   > إذا اجتمعت عبادتان من جنس واحد تداخلت أفعالهماء واكتفي عنهما بفعل واحد إذا كان مقصودهما واحدا
 
+<a id="tahara"></a>
+
+## al-ṭahāra (الطهارة)
+
+*al-ṭahāra: being ṭāhir; of a person, free of ḥadath (lifted) and of najāsa (removed).* The state of being ṭāhir. Of a person it has two parts the law keeps apart: freedom from ḥadath, lifted by wuḍūʾ or ghusl with intention, and freedom from najāsa, removed without it (F68; Ibn al-Qayyim: «ما فرق الله بينه من إزالة النجاسة ورفع الحدث»). Of a thing: freedom from najāsa.
+
+**Related:** [hadath](#hadath), [najasa](#najasa), [tahur](#tahur), [tahir](#tahir)
+
+**Texts**
+
+- `src:openiti-ilam-shamela11496/v01:p222`: Iʿlām: removing najāsa and lifting ḥadath are two things.
+  > وجمعتم بين ما فرق الله بينه من إزالة النجاسة ورفع الحدث
+
+<a id="tahir"></a>
+
+## al-ṭāhir (الطاهر)
+
+*al-ṭāhir: not najis; of water in the madhhab, also a middle class (ṭāhir, not purifying).* What is not najis (al-manī is ṭāhir: F120 «ومنه طاهر يوجب الغسل وهو المني»). In the madhhab's division of water it is also a middle class between ṭahūr and najis: water a ṭāhir substance has changed loses its ṭahūriyya («وأنه يسلبه الطهورية في الأول دون الثاني»). al-Saʿdī grades that farq weak and holds the water ṭahūr (F19). So «pure water» must say which: ṭahūr (purifying) or ṭāhir (not najis, and in the madhhab not purifying).
+
+**Related:** [tahur](#tahur), [tahara](#tahara), [najasa](#najasa), [maniyy](#maniyy)
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F19`: The madhhab's middle class: water a ṭāhir substance changed on purpose loses its ṭahūriyya.
+  > وأنه يسلبه الطهورية في الأول دون الثاني
+- `src:islamhouse-qj-doc#F120`: al-manī is ṭāhir.
+  > ومنه طاهر يوجب الغسل وهو المني
+
 <a id="tahqiq_al_manat"></a>
 
 ## taḥqīq al-manāṭ (تحقيق المناط)
@@ -1492,6 +1533,21 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > وتحقيقه": أي تحقيق المناط "إثبات العلة في آحاد صورها
 - `src:shamela-282/v01:p380`: Al-Shinqīṭī's remark.
   > والمناطُ هنا ليس بمعناه الاصطلاحي
+
+<a id="tahur"></a>
+
+## al-ṭahūr (الطهور)
+
+*al-ṭahūr: water ṭāhir in itself that also purifies (lifts ḥadath, removes najāsa).* Water that is ṭāhir and purifies: «وَأَنزَلْنَا مِنَ السَّمَاءِ مَاءً طَهُورًا» (al-Furqān 48); of the sea, «هو الطهور ماؤه الحل ميتته» (Abū Dāwūd 83; al-Irwāʾ 9, ṣaḥīḥ). al-Saʿdī holds that water stays ṭahūr until najāsa changes it (F19: «وأن الماء باق على طهوريته حتى تغيره النجاسة»).
+
+**Related:** [tahir](#tahir), [tahara](#tahara), [najasa](#najasa)
+
+**Texts**
+
+- `src:islamhouse-qj-doc#F19`: al-Saʿdī: water stays ṭahūr until najāsa changes it.
+  > وأن الماء باق على طهوريته حتى تغيره النجاسة
+- `src:shamela-22592/v01:p042`: al-Irwāʾ 9, «* صحيح».
+  > قوله فى البحر: " هو الطهور ماؤه , الحل ميتته "
 
 <a id="takhrij_al_manat"></a>
 

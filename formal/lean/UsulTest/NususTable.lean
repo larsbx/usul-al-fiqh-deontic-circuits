@@ -26,6 +26,8 @@ import Usul
 #guard Usul.Seam.admitted ⟨.nass, .daifJiddan⟩ == false
 -- H-siwak-ashi: named not sound by al-Saʿdī; albani.irwa 67
 #guard Usul.Seam.admitted ⟨.nass, .daif⟩ == false
+-- H-bahr-tahur: abu_dawud.sunan 83; Irwāʾ 9
+#guard Usul.Seam.admitted ⟨.nass, .sahih⟩ == true
 -- maniyy (المني): najis
 #guard Usul.Tahara.Kharij.maniyy.najis == false
 -- maniyy (المني): obliges

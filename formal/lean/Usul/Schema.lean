@@ -429,7 +429,7 @@ theorem substitute_is_priority (p : Bool) :
     Sadi.useSubstitute p = resolveD [if p then some false else none] true := by
   cases p <;> rfl
 
-/-- Q40 is S3 per part: capability is the condition, being a pure means the impediment. -/
+/-- Q40 is S3 per part: capability is the condition, being a pure means (wasīla maḥḍa) the impediment. -/
 theorem obligedParts_is_gate {P : Type} (parts : List P) (can pureMeans : P → Bool) (p : P) :
     p ∈ Sadi.obligedParts parts can pureMeans ↔ p ∈ parts ∧ (Sadi.Gate.ofBools [can] [pureMeans]).Holds p := by
   rw [Sadi.Gate.holds_ofBools]

@@ -22,7 +22,7 @@ Severity:
 | PR-08 | B | Ḥadīth numbers are given without their numbering scheme (Abū Dāwūd 206 in Muḥyī al-Dīn's edition; al-Irwāʾ cites «رقم ٢٠٠ من الصحيح», al-Albānī's own) | 4 sources | closed: `numbering` required on every source and on al-Albānī's entry |
 | PR-09 | B | Lean inductives name fiqh concepts in English with no Arabic anchor in their doc comment | 52 of 71 | open |
 | PR-10 | B | Cached witnesses are used by tests without checking them against the sha256 pinned in `lock.json` | every verbatim test | closed: `test_witness_integrity.py` |
-| PR-11 | C | al-Saʿdī's born-digital witness has no page markers, so glossary refs cannot be located in it (worked around with the `furuq` field) | 1 witness | open |
+| PR-11 | B | al-Saʿdī's born-digital witness has no page markers, so glossary refs could not be located in it (raised from C: it blocked defining terms from his own words in PR-02) | 1 witness | closed: refs may anchor to a furūq item or qāʿida (`src:islamhouse-qj-doc#F19`, `#q040`) when the excerpt is unique in the witness (tested) |
 | PR-12 | C | Tanzil's terms ask derived files to name the source and link tanzil.net | docs | open |
 | PR-13 | B | Glossary definitions are drafted English paraphrases; a term whose refs carry no Arabic excerpt has nothing verbatim behind it | to be measured | open |
 | PR-15 | B | Witnesses cited by the dossier and glossary are not cached locally, so their excerpt checks skip even on a developer machine (found while closing PR-07) | 172 skipped checks over 11 witnesses | in progress: 7 OpenITI and 1 Shamela fetched, all matching their pins; the OCR witnesses (archive-*-tess) need the OCR run |
@@ -37,7 +37,7 @@ Severity:
 
 | Family | Terms | Fields using the gloss without the term |
 |---|---|---|
-| pure, purity, purify | ṭāhir, ṭahūr, ṭahāra | 26 |
+| pure, purity, purify | ṭāhir, ṭahūr, ṭahāra, maḥḍ | 26: closed (glossary, guard, 31 sites) |
 | wash, bath | ghusl, ghasl | 11 |
 | void, invalid, defective | bāṭil, fāsid (the madhhab distinguishes them only in ḥajj and nikāḥ, F98) | 58 |
 | expiation, compensation, blood-money | kaffāra, fidya, ḍamān, diya, arsh, jazāʾ | 26 |
@@ -69,3 +69,13 @@ Six say only «ظاهر النصوص», «الأدلة», «الآثار» or «
 **PR-17.** F63 and F94 now quote enough to be unique; furūq and tanāquḍ quotes must occur exactly once in their witness.
 
 **PR-18, PR-19.** Found while entering the PR-04 texts; see the table.
+
+**PR-11.** A glossary or dossier ref into an unpaged witness may name a furūq item or qāʿida instead of a page; it is valid only if the excerpt occurs exactly once in the witness.
+
+**PR-02, «pure».** Four terms are now defined from the canonical texts.
+* al-ṭahūr: al-Furqān 48; «هو الطهور ماؤه» (Abū Dāwūd 83; al-Irwāʾ 9, ṣaḥīḥ); F19.
+* al-ṭāhir: F19, F120. It records that the madhhab's division of water has a middle class, ṭāhir but not purifying («يسلبه الطهورية»), which al-Saʿdī grades weak.
+* al-ṭahāra: F68, F121, Iʿlām.
+* al-maḥḍ: Q40, F13. «Pure» in the sense of «sheer» is not a purity term.
+
+The guard then found 31 sites in the registers and the Lean doc comments. Each was rewritten from its context. Some are ṭāhir (an undeclared carcass's hair; manī; street mud), some ṭahūr (water for wuḍūʾ; making najis water ṭahūr), some ṭahāra (the aṣl of ṭahāra of a person or thing), and some maḥḍ (a pure means, rights purely God's, a trust outright). One was qinn («the pure slave» is the slave outright). The ẓāhir/aṣl notes of Ibn Rajab 159 now say «asl of ṭahāra» against «zahir of najāsa».

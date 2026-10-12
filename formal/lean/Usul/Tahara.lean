@@ -29,7 +29,7 @@ inductive Kharij where
   | bawl | madhy | wady | maniyy
   deriving DecidableEq, Repr
 
-/-- The purification it obliges. -/
+/-- The ṭahāra it obliges: wuḍūʾ or ghusl. -/
 inductive Purification where
   | wudu | ghusl
   deriving DecidableEq, Repr
