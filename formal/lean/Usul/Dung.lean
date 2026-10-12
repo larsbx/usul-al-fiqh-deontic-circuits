@@ -5,7 +5,8 @@ Dung-style semantics over an arbitrary attack relation, with sets as predicates.
 Results: the characteristic function is monotone; it preserves admissibility; the
 grounded approximants `F^[n] ∅` form an increasing chain of admissible sets; and
 every complete extension contains every approximant (grounded ⊆ complete); for finitary
-frameworks their union, `grounded`, is the unique least complete extension.
+frameworks their union, `grounded`, is the unique least complete extension; and over finite
+frameworks every admissible set extends to a preferred one (the fundamental lemma).
 -/
 
 namespace Usul.Dung
@@ -141,5 +142,64 @@ theorem grounded_sub_complete {E : ASet α} (hE : Complete att E) : grounded att
 theorem grounded_unique (fin : Finitary att) {G : ASet α} (hG : Complete att G)
     (least : ∀ E, Complete att E → G ⊆ₐ E) : G ⊆ₐ grounded att ∧ grounded att ⊆ₐ G :=
   ⟨least _ (grounded_complete fin), grounded_sub_complete hG⟩
+
+/-! ## Preferred extensions and the fundamental lemma
+
+A preferred extension is a maximal admissible set. Over a finite framework (one whose arguments are
+all listed by some `U`) every admissible set is contained in a preferred one (Dung's fundamental
+lemma; roadmap M1): enlarge it while it is not maximal, each step leaving fewer of `U` outside. -/
+
+variable (att) in
+def Preferred (S : ASet α) : Prop :=
+  Admissible att S ∧ ∀ T, Admissible att T → S ⊆ₐ T → T ⊆ₐ S
+
+/-- Counting the strictly larger: if `q` implies `p` everywhere and some member satisfies `p` but
+not `q`, fewer members satisfy `q`. -/
+theorem countP_lt_of_strict {p q : α → Bool} (hpq : ∀ x, q x = true → p x = true) {a : α}
+    (hpa : p a = true) (hqa : q a = false) : ∀ {l : List α}, a ∈ l → l.countP q < l.countP p
+  | x :: l, ha => by
+    have mono : l.countP q ≤ l.countP p := List.countP_mono_left (fun x _ h => hpq x h)
+    rw [List.countP_cons, List.countP_cons]
+    rcases List.mem_cons.mp ha with rfl | ha
+    · simp [hpa, hqa]; omega
+    · have ih := countP_lt_of_strict hpq hpa hqa ha
+      cases hq : q x
+      · cases hp : p x <;> simp <;> omega
+      · simp [hpq x hq]; omega
+
+open Classical in
+theorem admissible_sub_preferred (U : List α) (hU : ∀ a, a ∈ U) :
+    ∀ (n : Nat) (S : ASet α), U.countP (fun a => !decide (S a)) = n → Admissible att S →
+      ∃ P, Preferred att P ∧ S ⊆ₐ P := by
+  intro n
+  induction n using Nat.strongRecOn with
+  | _ n ih =>
+    intro S hn hS
+    by_cases hmax : ∀ T, Admissible att T → S ⊆ₐ T → T ⊆ₐ S
+    · exact ⟨S, ⟨hS, hmax⟩, fun _ h => h⟩
+    · obtain ⟨T, hT⟩ := Classical.not_forall.mp hmax
+      obtain ⟨hTadm, hST⟩ := Classical.not_imp.mp hT |>.imp_right Classical.not_imp.mp
+        |> fun ⟨h1, h2⟩ => (⟨h1, h2.1⟩ : Admissible att T ∧ S ⊆ₐ T)
+      have hTS : ¬ T ⊆ₐ S := (Classical.not_imp.mp (Classical.not_imp.mp hT).2).2
+      obtain ⟨a, ha⟩ := Classical.not_forall.mp hTS
+      obtain ⟨hTa, hSa⟩ := Classical.not_imp.mp ha
+      have lt : U.countP (fun a => !decide (T a)) < U.countP (fun a => !decide (S a)) :=
+        countP_lt_of_strict (p := fun a => !decide (S a)) (q := fun a => !decide (T a))
+          (fun x hx => by
+            simp only [Bool.not_eq_true', decide_eq_false_iff_not] at hx ⊢
+            exact fun h => hx (hST x h))
+          (by simpa using hSa) (by simpa using hTa) (hU a)
+      obtain ⟨P, hP, hTP⟩ := ih _ (hn ▸ lt) T rfl hTadm
+      exact ⟨P, hP, fun x hx => hTP x (hST x hx)⟩
+
+/-- Dung's fundamental lemma over a finite framework: every admissible set extends to a preferred one;
+in particular (from `∅`) a preferred extension exists. -/
+theorem exists_preferred_superset (U : List α) (hU : ∀ a, a ∈ U) {S : ASet α}
+    (hS : Admissible att S) : ∃ P, Preferred att P ∧ S ⊆ₐ P :=
+  admissible_sub_preferred U hU _ S rfl hS
+
+/-- A finite framework has a preferred extension (two riwāyas in mutual attack: one per side). -/
+theorem exists_preferred (U : List α) (hU : ∀ a, a ∈ U) : ∃ P, Preferred att P :=
+  (exists_preferred_superset U hU admissible_empty).imp fun _ h => h.1
 
 end Usul.Dung

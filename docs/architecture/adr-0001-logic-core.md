@@ -1,6 +1,6 @@
 # ADR 0001: the logic core
 
-Status: **proposed** (roadmap M1 exit: merged after review). Date 2026-10-12.
+Status: **proposed** (roadmap M1 exit: merged after review; the Lean half of the exit is proved). Date 2026-10-12.
 
 ## Context
 
@@ -62,6 +62,6 @@ Concretely, ikhtilāf is not an error class. The takhrīj bank records `genuine_
 | Grounded extension is conflict-free | `approx_conflictFree` for every stage; `grounded_conflictFree` for their union `grounded` |
 | Grounded is admissible | `approx_admissible`, `grounded_admissible` |
 | Grounded exists, is the least complete extension, and is unique | **proved** for finitary AFs (finitely many attackers per argument, every AF the bank builds): `grounded_complete`, `grounded_sub_complete`, `grounded_unique` |
-| Admissible ⊆ preferred (Dung's fundamental lemma) | **open**: needs `Preferred` (a maximal admissible set) and, for finite AFs, a maximality argument by cardinality |
+| Admissible ⊆ preferred (Dung's fundamental lemma) | **proved** for finite AFs (arguments listed by some `U`): `Preferred`, `exists_preferred_superset`, `exists_preferred` (by strong induction on the arguments left outside) |
 
-Until the fundamental lemma lands, M1 stays "kernel proved", with the ADR as its other exit criterion.
+With these, M1's Lean exit is met; its other exit criterion is this ADR's review.
