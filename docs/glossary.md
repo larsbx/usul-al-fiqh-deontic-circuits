@@ -692,6 +692,19 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q002`: The sharṭ of taklīf is ʿaql and understanding the address; distinguishes khiṭāb al-waḍʿ from khiṭāb al-taklīf.
   > شرط التكليف العقل وفهم الخطاب. ذكره الآمدي ms010 اتفاق العقلاء فلا تكليف على صبي ولا مجنون لا عقل له وقال أبو البركات في المسودة1 واختار قوم تكليفهما. قلت: من اختار تكليفهما إن أراد أنه يترتب على أفعالهما ما هو من خطاب الوضع2 فلا نزاع في ترتبه وان أراد خطاب التكليف3 فإنه لا يلزمهما بلا نزاع وان اختلف في مسائل هل هي من خطاب الوضع أم من خطاب التكليف أو بعض مسائل من مسائل التكليف وقد حكى حنبل4 عن أحم
 
+<a id="hukm_hakim"></a>
+
+## ḥukm al-ḥākim (حكم الحاكم)
+
+*ḥukm al-ḥākim: a judge's verdict in a dispute; not the sharʿī ruling (al-ḥukm) it applies.* Ibn Rajab Q68: «لو حكم حاكم في مسألة مختلف فيها بما يرى أن الحق في غيره أثم وعصى بذلك ولم ينقض حكمه إلا أن يكون مخالفا لنص صريح» (Ibn Abī Mūsā); al-Sāmirī undoes it, «لأن شرط صحة الحكم موافقة الاعتقاد». A verdict is undone (naqḍ al-ḥukm) by a clear text, not by another ijtihād: «الاجتهاد لا ينقض بالاجتهاد». The sharʿī ḥukm is the Lawgiver's address; the verdict binds the parties in one case.
+
+**Related:** [hukm](#hukm)
+
+**Texts**
+
+- `src:openiti-rajab-shamela21730/v01:p122`: Ibn Rajab Q68.f009.
+  > لو حكم حاكم في مسألة مختلف فيها بما يرى أن الحق في غيره أثم وعصى بذلك ولم ينقض حكمه إلا أن يكون مخالفا لنص صريح
+
 <a id="hukm_taklifi"></a>
 
 ## al-ḥukm al-taklīfī (الحكم التكليفي)

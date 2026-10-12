@@ -573,7 +573,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 <a id="hukm_against_own_ijtihad"></a>
 
-## A ruling against the judge's own ijtihād stands unless a clear text contradicts it
+## A judge's verdict (ḥukm al-ḥākim) against his own ijtihād stands unless a clear text contradicts it
 
 **Terms:** [al-ẓann al-bayyin khaṭaʾuh](../glossary.md#zann_bayyin_khatauh), [ghalabat al-ẓann](../glossary.md#ghalabat_al_zann)  
 **Closes:** `rule:hukm_against_own_ijtihad`  

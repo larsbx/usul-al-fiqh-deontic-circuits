@@ -46,6 +46,10 @@
      "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q002",
      "note": "The sharṭ of taklīf is ʿaql and understanding the address; distinguishes khiṭāb al-waḍʿ from khiṭāb al-taklīf."
     }
+   ],
+   "sense": "of the Lawgiver (sharʿī)",
+   "distinct_from": [
+    "hukm_hakim"
    ]
   },
   {
@@ -4041,6 +4045,27 @@
      "ref": "src:openiti-ilam-shamela11496/v01:p103",
      "excerpt_ar": "والقياس الصحيح هو الميزان؛ فالأولى تسميته بالاسم الذي سماه الله به",
      "note": "Ibn al-Qayyim."
+    }
+   ]
+  },
+  {
+   "key": "hukm_hakim",
+   "ar": "حكم الحاكم",
+   "tr": "ḥukm al-ḥākim",
+   "sense": "of a judge",
+   "gloss": "ḥukm al-ḥākim: a judge's verdict in a dispute; not the sharʿī ruling (al-ḥukm) it applies",
+   "definition": "Ibn Rajab Q68: «لو حكم حاكم في مسألة مختلف فيها بما يرى أن الحق في غيره أثم وعصى بذلك ولم ينقض حكمه إلا أن يكون مخالفا لنص صريح» (Ibn Abī Mūsā); al-Sāmirī undoes it, «لأن شرط صحة الحكم موافقة الاعتقاد». A verdict is undone (naqḍ al-ḥukm) by a clear text, not by another ijtihād: «الاجتهاد لا ينقض بالاجتهاد». The sharʿī ḥukm is the Lawgiver's address; the verdict binds the parties in one case.",
+   "related": [
+    "hukm"
+   ],
+   "distinct_from": [
+    "hukm"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p122",
+     "excerpt_ar": "لو حكم حاكم في مسألة مختلف فيها بما يرى أن الحق في غيره أثم وعصى بذلك ولم ينقض حكمه إلا أن يكون مخالفا لنص صريح",
+     "note": "Ibn Rajab Q68.f009."
     }
    ]
   }

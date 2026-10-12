@@ -100,6 +100,18 @@
     "registers",
     "glossary"
    ]
+  },
+  {
+   "gloss_en": "\\bjudge(?:s|'s)?\\b[^.]{0,60}\\brul\\w*|\\brul\\w*\\b[^.]{0,60}\\bjudge(?:s|'s)?\\b",
+   "terms": [
+    "hukm",
+    "hukm_hakim"
+   ],
+   "why": "English «ruling» beside a judge is either the sharʿī ḥukm the judge applies or his verdict, ḥukm al-ḥākim; only the verdict is «undone» (naqḍ al-ḥukm), and «الاجتهاد لا ينقض بالاجتهاد» is said of it (Ibn Rajab Q68).",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
   }
  ],
  "note": "Every English text field of the corpus registers, and every Lean doc comment, that uses one of these glosses must also name the term it means, by its transliteration or its Arabic (tests/test_nusus.py). The English never feeds a derivation; this keeps it from hiding which term a case is about."

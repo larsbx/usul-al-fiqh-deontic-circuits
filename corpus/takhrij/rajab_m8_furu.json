@@ -471,7 +471,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "A judge ruling against what he believes right: he sins, and the ruling is not undone unless it contradicts an explicit text (Ibn Abī Mūsā); al-Sāmirī: undone. Not a doubt about a sharṭ (al-Sāmirī's «شرط صحة الحكم موافقة الاعتقاد» is his reason, not the case); it turns on whether ijtihād undoes a ruling. Round 5: IQ-21's principle, «الاجتهاد لا ينقض بالاجتهاد» with «لا عبرة بالظن البين خطؤه» (rulingUndone); no madhhab marked.",
+      "note": "A judge ruling against what he believes right: he sins, and his verdict (ḥukm al-ḥākim, «ولم ينقض حكمه») is not undone unless it contradicts an explicit text (Ibn Abī Mūsā); al-Sāmirī: undone. Not a doubt about a sharṭ (al-Sāmirī's «شرط صحة الحكم موافقة الاعتقاد» is his reason, not the case); it turns on whether ijtihād undoes a ruling. Round 5: IQ-21's principle, «الاجتهاد لا ينقض بالاجتهاد» with «لا عبرة بالظن البين خطؤه» (rulingUndone); no madhhab marked.",
       "revisit": {
         "from_class": "missing_rule",
         "from_encoder": "doubt_in_condition",
