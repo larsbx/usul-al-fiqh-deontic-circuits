@@ -1,0 +1,405 @@
+{
+  "suite": "m8_rajab_rajab_a7",
+  "status": "candidate",
+  "provenance": "Shard rajab-a7 (lane A): every far record of Ibn Rajab's qawāʿid 100, 101 and 102, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA7). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad (Taṣḥīḥ al-Furūʿ, the Muntahā, the Iqnāʿ); candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f001",
+      "encoder": "vowed_as_shar_obligation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "shar_ruling": false,
+        "mandub_ruling": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the wajh that takes the vowed sacrifice as an obligation of the sharʿ: no eating from it (jumhūr al-aṣḥāb per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "Abū Bakr: eating permitted, as from the voluntary udhiya (with al-Qāḍī and al-Muwaffaq per al-Inṣāf)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Eating from a vowed udhiya: «وفيه وجهان اختار أبو بكر الجواز». The question is whether eating is permitted; a sacrifice owed by the sharʿ (the wājib hady) is not eaten from, the voluntary udhiya is. The reading (the sharʿ side) forbids it. al-Inṣāf (v04:p104) reports Abū Bakr's, al-Qāḍī's and al-Muwaffaq's permission «لكن جمهور الأصحاب على خلاف ذلك»; but the Muntahā (v02:p196) «وسن أن يأكل منها ويهدي ويتصدق أثلاثا حتى من واجبة», after «وتجب بنذر», and the Iqnāʿ (v01:p408) «والصدقة بثلثها ولو كانت منذورة أو معينة» make eating the muʿtamad: off the madhhab side, so a ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f002",
+      "encoder": "vowed_as_shar_obligation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "shar_ruling": true,
+        "mandub_ruling": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "«أشهرهما الجواز»: the vowed prayer is performed in the time of prohibition, as obligatory prayers are made up in it",
+          "ruling": true
+        },
+        {
+          "who": "the other wajh (a riwāya per al-Inṣāf, reported by Abū al-Ḥusayn): not performed in it, as voluntary prayer is not",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Performing a vowed prayer in a time of prohibition: «وفيه وجهان أشهرهما الجواز». Obligations of the sharʿ (missed farāʾiḍ) are made up in those times, voluntary prayer is barred; the reading permits it. al-Inṣāf (v02:p204): «يجوز صلاة النذر في هذه الأوقات على الصحيح من المذهب», citing Ibn Rajab's «الأشهر الجواز»; the Muntahā (v01:p281): «ويجوز فعل منذورة ونذرها فيها». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f003",
+      "encoder": "vowed_as_shar_obligation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "shar_ruling": true,
+        "mandub_ruling": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the wajh that takes the vow as a sharʿ obligation: the vow holds and is fulfilled in those days (Aḥmad's riwāya permitting the vowed fast in the days of tashrīq, cited by al-Qāḍī per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "Ibn ʿAqīl: «أنه كنذر المعصية ; لأن الملزم بالنذر هو التطوع المطلق»",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Leading ruling: a vow to fast the days of tashrīq (the record joins to it the vow of prayer in a time of prohibition): «وفيه وجهان أيضا واختار ابن عقيل أنه كنذر المعصية». A sharʿ obligation (the tamattuʿ fast) may be fasted in them, the voluntary fast may not; the reading holds the vow and its fulfilment in them. The Muntahā (v05:p253) lists «صوم يوم عيد أو حيض أو أيام التشريق» among vows of sin, «فيحرم الوفاء به», and the Iqnāʿ (v04:p358) likewise: Ibn ʿAqīl's side is the muʿtamad, so off the madhhab side and a ledger entry. al-Inṣāf (v11:p124) makes it turn on whether tashrīq may be fasted for a farḍ, which it leaves as two riwāyas (v03:p351). Follow-on: the vow of prayer in a time of prohibition holds and is performed in it «فالصحيح من المذهب» (al-Inṣāf v02:p204), the reading's side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f004",
+      "encoder": "vowed_as_shar_obligation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "shar_ruling": false,
+        "mandub_ruling": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the riwāya that two rakʿas are due, the least prayer the sharʿ obliges",
+          "ruling": false
+        },
+        {
+          "who": "the riwāya that one rakʿa suffices, the least voluntary prayer",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "One who vows a prayer without number: «فهل يجزئه ركعة أم لا بد من ركعتين؟ على روايتين». The sharʿ obliges no prayer of fewer than two rakʿas; the reading denies that one suffices. al-Inṣāf (v11:p151): «ولو نذر صلاة: لم يجزئه أقل من ركعتين. على الصحيح من المذهب». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f005",
+      "encoder": "vowed_as_shar_obligation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "shar_ruling": false,
+        "mandub_ruling": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī: only a sound slave suffices, «حملا له على واجب الشرع»",
+          "ruling": false
+        },
+        {
+          "who": "Ibn Rajab's iḥtimāl: whatever the name covers suffices, as in a bequest",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "One who vows to free a slave: «لم يجزئه إلا سليمة ذكره القاضي حملا له على واجب الشرع ويحتمل أن يجزئه ما يقع عليه الاسم كالوصية», Ibn Rajab adding that al-Qāḍī conceded the bequest though Aḥmad's naṣṣ there too requires a sound slave. The reading is al-Qāḍī's. al-Inṣāf (v11:p150): «فإن نذر رقبة: فهي التي تجزئ، عن الواجب»; the Muntahā (v05:p260): «وإن نذر رقبة فما يجزي عن واجب». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f001",
+      "encoder": "split_halves_suffice",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "common_unit": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the wajh that the two halves suffice (al-Khiraqī; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "the wajh that they do not (Abū Bakr, Ibn Ḥāmid per al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Freeing in a kaffāra the halves of two slaves: «وفيها وجهان وقيل إن كان باقيهما حرا أجزأ وجها واحدا لتكميل الحرية». Two halves of slaves are measured in one unit, the raqaba; the reading has them suffice. al-Inṣāf (v09:p222) on freeing a second half: «أجزأه عند الخرقي ... وهو المذهب», and «وكذا الحكم لو أعتق نصفي عبدين ... بل هذه هي الأصل في الخلاف» (v09:p223). On the madhhab side. Follow-ons: the aṣḥāb extended the two wujūh to the halves of two sheep in zakat, where al-Inṣāf (v03:p050) has «لم يجزه أيضا على الصحيح من المذهب» (a residue of the reading outside this record's leading ruling); the hady of two half-sheep, where Ibn Rajab: «وفيه نظر إذ المقصود من الهدي اللحم», with a report from Aḥmad of its sufficing."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f002",
+      "encoder": "split_halves_suffice",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "common_unit": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the wajh that it suffices (al-Qāḍī; Taṣḥīḥ al-Furūʿ)",
+          "ruling": true
+        },
+        {
+          "who": "the wajh that it does not (an iḥtimāl in al-Kāfī and al-Mughnī, put first by Ibn Tamīm per al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Paying the jubrān in camel zakat with a sheep and ten dirhams: «فهل يجزئه على وجهين». The jubrān is two sheep or twenty dirhams, so a sheep and ten dirhams are its two halves in one measure; the reading has it suffice. Taṣḥīḥ al-Furūʿ (v04:p021): «أحدهما يصح، ويجزئه، وهو الصحيح، اختاره القاضي»; al-Inṣāf (v03:p055): «وقيل: يجزئه، وهو الصحيح». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f003",
+      "encoder": "split_halves_suffice",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "common_unit": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "«فإنه يجزئ على المشهور»",
+          "ruling": true
+        },
+        {
+          "who": "the wajh mentioned in Sharḥ al-Hidāya (in zakāt al-fiṭr)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Expiating an oath by feeding five poor and clothing five: «فإنه يجزئ على المشهور وفيه وجه مذكور في شرح الهداية في زكاة الفطر». Both halves are counted in the ten poor of the kaffāra; the reading has it suffice. al-Inṣāf (v11:p040): «لو أطعم خمسة، وكسا خمسة: أجزأه. على الصحيح من المذهب. وعليه الأصحاب», adding that half a slave with the feeding of five does not suffice (no common unit, as the reading has it). On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f004",
+      "encoder": "split_halves_suffice",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "common_unit": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "«والمذهب الإجزاء»",
+          "ruling": true
+        },
+        {
+          "who": "the wajh that «ويتخرج فيه» (Ibn Rajab's takhrīj)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Paying zakāt al-fiṭr as a ṣāʿ of two kinds: «والمذهب الإجزاء ويتخرج فيه وجه». Both are parts of the one ṣāʿ; the reading has it suffice. al-Inṣāf (v03:p183): «ويجزئ إخراج صاع من أجناس) هذا المذهب، نص عليه. وعليه الأصحاب», and «وخرج في القواعد وجها بعدم الإجزاء». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f005",
+      "encoder": "split_halves_suffice",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "common_unit": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "Ibn Rajab: «فالأظهر منعه»",
+          "ruling": false
+        },
+        {
+          "who": "al-Qāḍī in Aḥkām al-Qurʾān: «يحتمل الجواز ; لأنها على التخيير بخلاف كفارة اليمين»",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Expiating a prohibition of the ḥajj by fasting a day and feeding four poor: «فالأظهر منعه». A day of the three-day fast and four of the six poor have no common measure; the reading denies it suffices. No later treatment of this fidya found; on the cognate jazāʾ al-ṣayd, al-Furūʿ (v05:p504): «ولا يجوز أن يصوم عن بعض الجزاء ويطعم عن بعضه ... كبقية الكفارات», and al-Inṣāf (v11:p040) denies half a slave with the feeding of five in the oath kaffāra: the reading's side, by the madhhab's general rule. Ibn Rajab's «وعلى قياس هذا لو أعتق في كفارة اليمين ثلث رقبة وأطعم أربعة مساكين وكسا أربعة أنه يجزئه وفيه بعد» is a follow-on on al-Qāḍī's iḥtimāl."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f006",
+      "encoder": "split_halves_suffice",
+      "class": "derivable",
+      "facts": {
+        "common_unit": true
+      },
+      "expected": true,
+      "note": "Paying for four hundred camels four ḥiqqas and five bint labūns: «أجزأ بغير خلاف عندنا ; لأنه عمل بمقتضى قوله في كل أربعين بنت لبون وفي كل خمسين حقة ولأن هذه واجبات متعددة». Each animal is a whole unit of its own share; the reading has it suffice. Follow-on: a split animal (two ḥiqqas, two bint labūns and a half for two hundred) «فهو كإخراج نصفي شاتين على ما سبق»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f001",
+      "encoder": "forbidden_cause_voided",
+      "class": "derivable",
+      "facts": {
+        "forbidden_manner": true,
+        "souls_drawn": true
+      },
+      "expected": true,
+      "note": "One who flees zakat before the year is out by reducing the niṣāb or taking it out of his ownership: «تجب عليه الزكاة». The reduction is a forbidden evasion of an obligation, of what souls are drawn to; the reading voids it. Follow-on: one who spends most of his wealth on what bears no zakat (land, ornaments), «فهل ينزل منزلة الفار على وجهين؟»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f002",
+      "encoder": "forbidden_cause_voided",
+      "class": "derivable",
+      "facts": {
+        "forbidden_manner": true,
+        "souls_drawn": true
+      },
+      "expected": true,
+      "note": "One who divorces in his last illness: «لا يقطع طلاقه حق الزوجة من إرثها منه»; the reading voids the divorce's effect on her inheritance. Follow-on: «إلا أن تنتفي التهم بسؤال الزوجة ونحوه ففيه روايتان»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f003",
+      "encoder": "forbidden_cause_voided",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "forbidden_manner": true,
+        "souls_drawn": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "most of the aṣḥāb: the killer does not inherit, «سواء كان متهما أو غير متهم»",
+          "ruling": true
+        },
+        {
+          "who": "Ibn ʿAqīl's wajh (Mufradāt, ʿUmad al-adilla): where the suspicion is absent, as the child's and the madman's killing, inheritance is not barred, «وهو أصح عندي»",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "One who kills the one he inherits from does not inherit. The khilāf arises where the suspicion is absent (the child, the madman), and the case is annotated on that branch: the killing is still without right, the forbidden manner the qāʿida names, and Ibn Rajab sets it under the qāʿida «عند أكثر الأصحاب»; Ibn ʿAqīl's ground is the absent suspicion, which the reading does not take as a fact. al-Inṣāf (v07:p368): «صغيرا كان القاتل أو كبيرا) . هذا المذهب. نص عليه. وعليه الأصحاب», reporting Ibn ʿAqīl's wajh after it. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f004",
+      "encoder": "forbidden_cause_voided",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "forbidden_manner": true,
+        "souls_drawn": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "«فإنه تبطل الوصية رواية واحدة على أصح الطريقين» (Abū Bakr, al-Qāḍī, Ibn Abī Mūsā per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "the other ṭarīq's riwāya that it does not lapse (Ibn Ḥāmid per al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The legatee who kills the testator after the bequest: «فإنه تبطل الوصية رواية واحدة على أصح الطريقين», the other ṭarīq carrying two riwāyas. The reading voids the killing's effect. al-Inṣāf (v07:p232): «وإن قتل الوصي الموصي: بطلت الوصية) هذا المذهب ... وعنه لا تبطل. اختاره ابن حامد»; the Muntahā (v03:p452): «وإن قتل وصي موصيا بطلت». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f005",
+      "encoder": "forbidden_cause_voided",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "forbidden_manner": true,
+        "souls_drawn": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "«في المشهور من المذهب»: like one sober in his words and deeds against him",
+          "ruling": true
+        },
+        {
+          "who": "the riwāya that he is like the madman (Abū Bakr ʿAbd al-ʿAzīz, Ibn ʿAqīl, Taqī al-Dīn per al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "One drunk on wine by choice «يجعل كالصاحي في أقواله وأفعاله فيما عليه في المشهور من المذهب بخلاف من سكر ببنج أو نحوه». The drunkenness that would drop his liabilities is voided. al-Inṣāf (v08:p434): «إحداهن: أنه مؤاخذ بها، فهو كالصاحي فيها. وهو المذهب», quoting this qāʿida; on his divorce (v08:p433) «إحداهما: يقع. وهو المذهب». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f006",
+      "encoder": "forbidden_cause_voided",
+      "class": "derivable",
+      "facts": {
+        "forbidden_manner": true,
+        "souls_drawn": false
+      },
+      "expected": false,
+      "note": "One who strikes his head and goes mad: «فإنه لا يقع طلاقه على المنصوص ; لأن ذلك مما لا تدعو النفوس إليه بل في الطبع وازع عنه». The cause is forbidden but not of what souls are drawn to, so it is not voided and the madness has its effect. «على المنصوص» names the naṣṣ without stating a contrary position, so no ikhtilāf is recorded. Follow-on: «وكذلك لا يجب عليه قضاء الصلاة إذا جن في هذه الحالة على الصحيح», cited in al-Inṣāf (v01:p394)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f007",
+      "encoder": "forbidden_cause_voided",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "forbidden_manner": true,
+        "souls_drawn": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "«على المذهب الصحيح»: making wine into vinegar gives neither lawfulness nor purity",
+          "ruling": true
+        },
+        {
+          "who": "the wajh that it purifies, and the riwāya in al-Wasīla that it becomes lawful (per al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Turning wine into vinegar: «لا يفيد حله ولا طهارته على المذهب الصحيح». The reading voids it. al-Inṣāf (v01:p319): «فعلى المذهب: لو خالف وفعل: لم تطهر على الصحيح من المذهب. وعليه جماهير الأصحاب، ونص عليه. وقيل: تطهر. وفي الوسيلة ... رواية: أنها تحل». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f008",
+      "encoder": "forbidden_cause_voided",
+      "class": "derivable",
+      "facts": {
+        "forbidden_manner": true,
+        "souls_drawn": true
+      },
+      "expected": true,
+      "note": "The muḥrim's slaughter of game «لا يبيحه بالكلية», and the slaughter by one not in iḥrām for a muḥrim does not make it lawful to that muḥrim. The reading voids it. Follow-ons: its lawfulness to other muḥrims, «وجهان»; the usurper's and thief's slaughter is no counter-case (it gives them no permission, the animal remaining the owner's), though «أبا بكر التزم تحريمه مطلقا وحكاه رواية». The record then opens the attached qāʿida («من تعجل حقه أو ما أبيح له قبل وقته على وجه محرم عوقب بحرمانه») and its farʿ of the one who steals from the spoils, «يحرم أسهمه منها على إحدى الروايتين» (a farʿ of hastened_right_forfeited, carried in this record but not its leading ruling)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f009",
+      "encoder": "hastened_right_forfeited",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "hastened_forbidden": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the riwāya that she becomes forbidden to him forever",
+          "ruling": true
+        },
+        {
+          "who": "the madhhab: he may marry her after both ʿiddas (al-Khiraqī; al-Inṣāf, the Muntahā)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "One who marries a woman in her ʿidda: «حرمت عليه على التأبيد على رواية», under the attached qāʿida: he hastened, in a forbidden way, what would be permitted to him later. The reading is that riwāya. al-Inṣāf (v09:p299): «وللثاني أن ينكحها بعد انقضاء العدتين) . هذا المذهب ... وقطع به الخرقي ... وعنه: أنها تحرم عليه على التأبيد»; the Muntahā (v04:p408): «وللثاني أن ينكحها بعد العدتين». Off the madhhab side, so a ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f010",
+      "encoder": "hastened_right_forfeited",
+      "class": "derivable",
+      "facts": {
+        "hastened_forbidden": true
+      },
+      "expected": true,
+      "note": "A woman who marries her slave becomes forbidden to him forever, «كما روي عن عمر نص عليه أحمد في رواية عبد الله ذكره الخلال في أحكام العبيد عن الخضر بن المثنى الكندي عنه». Only that naṣṣ is reported; Ibn Rajab questions its transmission («والخضر مجهول تفرد عن عبد الله برواية المناكير التي لا يتابع عليها»), a doubt about the attribution, not a counter-position. No later treatment of the perpetual prohibition was found (al-Inṣāf v03:p414 holds the slave no maḥram of his mistress «لأنها لا تحرم عليه على التأبيد» in the ordinary case, without the marriage): a register question whether that general statement counts against the naṣṣ."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f011",
+      "encoder": "hastened_right_forfeited",
+      "class": "derivable",
+      "facts": {
+        "hastened_forbidden": true
+      },
+      "expected": true,
+      "note": "One who took game before leaving iḥrām: «لم يحل له وإن تحلل حتى يرسله ويطلقه». The reading deprives him of it. Follow-on: the creditor who kills his debtor makes the debt fall due «كما لو مات صرح به جماعة من الأصحاب. ويتخرج فيه وجه آخر أنه لا يحل طردا للقاعدة»."
+    }
+  ]
+}
