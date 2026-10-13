@@ -202,9 +202,9 @@ theorem exists_preferred_superset (U : List α) (hU : ∀ a, a ∈ U) {S : ASet 
 theorem exists_preferred (U : List α) (hU : ∀ a, a ∈ U) : ∃ P, Preferred att P :=
   (exists_preferred_superset U hU admissible_empty).imp fun _ h => h.1
 
+variable (att) in
 /-- Stable extensions attack every argument outside the conflict-free set.
 They need not exist, even on finite frameworks. -/
-variable (att) in
 def Stable (S : ASet α) : Prop :=
   ConflictFree att S ∧ ∀ a, ¬ S a → ∃ b, S b ∧ att b a
 
