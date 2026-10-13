@@ -202,4 +202,26 @@ theorem exists_preferred_superset (U : List α) (hU : ∀ a, a ∈ U) {S : ASet 
 theorem exists_preferred (U : List α) (hU : ∀ a, a ∈ U) : ∃ P, Preferred att P :=
   (exists_preferred_superset U hU admissible_empty).imp fun _ h => h.1
 
+variable (att) in
+/-- Stable extensions attack every argument outside the conflict-free set.
+They need not exist, even on finite frameworks. -/
+def Stable (S : ASet α) : Prop :=
+  ConflictFree att S ∧ ∀ a, ¬ S a → ∃ b, S b ∧ att b a
+
+theorem stable_admissible {S : ASet α} (h : Stable att S) : Admissible att S := by
+  refine ⟨h.1, ?_⟩
+  intro a ha b hba
+  have hb : ¬ S b := fun hb => h.1 b a hb ha hba
+  exact h.2 b hb
+
+/-- Stability implies preferredness, not conversely; no existence assumption is hidden. -/
+theorem stable_preferred {S : ASet α} (h : Stable att S) : Preferred att S := by
+  refine ⟨stable_admissible h, ?_⟩
+  intro T hT hST a ha
+  by_cases hSa : S a
+  · exact hSa
+  · obtain ⟨b, hb, hba⟩ := h.2 a hSa
+    exact False.elim (hT.1 b a (hST b hb) ha hba)
+
 end Usul.Dung
+
