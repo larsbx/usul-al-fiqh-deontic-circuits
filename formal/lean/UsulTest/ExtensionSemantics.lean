@@ -31,6 +31,21 @@ theorem cycle_no_stable (S : ASet Node) : ¬ Stable cycle S := by
   obtain ⟨x, hx, hxb⟩ := h.2 .b noB
   cases x <;> simp_all [cycle]
 
+/-- Mutual attack preserves both singleton alternatives under both semantics. -/
+theorem mutual_singleton_stable (a : Bool) :
+    Stable (fun x y : Bool => x ≠ y) (fun x => x = a) := by
+  refine ⟨?_, ?_⟩
+  · intro x y hx hy
+    subst x
+    subst y
+    exact fun h => h rfl
+  · intro x hx
+    exact ⟨a, rfl, fun h => hx h.symm⟩
+
+theorem mutual_singleton_preferred (a : Bool) :
+    Preferred (fun x y : Bool => x ≠ y) (fun x => x = a) :=
+  stable_preferred (mutual_singleton_stable a)
+
 -- Grounded iteration tests include an externally attacked odd cycle.
 #guard Usul.Grounded.grounded 3 [(0,1), (1,2), (2,0)] == []
 #guard Usul.Grounded.grounded 2 [(0,1), (1,0)] == []
