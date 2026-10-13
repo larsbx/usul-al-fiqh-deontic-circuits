@@ -409,7 +409,7 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f001
 #guard reconcile (P := String) none none [("false", .wajh), ("true", .ashab), ("false", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f003
-#guard reconcile (P := String) none none [("true", .wajh), ("false", .ashab), ("true", .nass), ("false", .nass), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
+#guard reconcile (P := String) none (some "false") [("true", .wajh), ("false", .ashab), ("true", .nass), ("false", .nass), ("false", .jazm), ("false", .jazm)] == (.naskh "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f009
 #guard reconcile (P := String) none none [("true", .nass), ("false", .jazm), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f010

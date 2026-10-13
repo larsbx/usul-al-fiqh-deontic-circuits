@@ -43,8 +43,12 @@
         "ashab"
       ],
       "jam": null,
-      "naskh": null,
-      "note": "An unnamed wajh (the reading's sharʿ side, resting on Aḥmad's riwāya permitting the vowed fast in tashrīq) against Ibn ʿAqīl's «كنذر المعصية», which the Muntahā and the Iqnāʿ state; Aḥmad's other riwāya, barring any farḍ fast in tashrīq, is reported by al-Zarkashī as his last.",
+      "naskh": {
+        "ruling": false,
+        "ref": "src:openiti-insaf-shamela21609/v03:p352",
+        "note": "On fasting the days of tashrīq for an obligation, al-Inṣāf reports al-Zarkashī: «وهي التي ذهب إليها أحمد أخيرا» of the riwāya barring it, a reported chronology. al-Inṣāf (v11:p124) ties the vowed fast to that question, so the later riwāya covers it: naskh by the bank's rule (a later riwāya with reported chronology), ahead of tarjīḥ. The outcome is unchanged (against the reading)."
+      },
+      "note": "An unnamed wajh (the reading's sharʿ side, resting on Aḥmad's riwāya permitting the vowed fast in tashrīq) against Ibn ʿAqīl's «كنذر المعصية», which the Muntahā and the Iqnāʿ state; Aḥmad's other riwāya, barring any farḍ fast in tashrīq, is reported by al-Zarkashī as his last. Register sweep: resolved by naskh (al-Zarkashī's chronology), not tarjīḥ.",
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v02:p204",

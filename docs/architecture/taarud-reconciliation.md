@@ -105,7 +105,7 @@ The later works settle 65 of the 71 suspended cases. They mostly settle them aga
   - `asl_zahir` (3) and `tadakhul` (3): the mashhūra riwāya against the reading.
   - `words_out_of_nature` (2): qāʿida 38, where the madhhab follows the wording. No farq is cited there, so no jamʿ is possible, and the residue stands as the record.
 - **Nine reviews** (`review`): tarjīḥ gives the reading a marked side while the annotation says no madhhab matches. Examples are the naṣṣ of Aḥmad against a takhrīj (75.f005, 75.f007) and al-Talkhīṣ's qiyās al-madhhab (133.f018). These are questions for the human reviewer. Annotations are never rewritten from here.
-- **No naskh yet.** None of the annotated paragraphs reports the chronology of a retraction.
+- **One naskh.** 100.f003 (the register sweep below): al-Zarkashī reports the riwāya barring an obligatory fast in tashrīq as «التي ذهب إليها أحمد أخيرا». No other annotated paragraph reports the chronology of a retraction.
 
 ### Refinements from the worklist
 
@@ -179,7 +179,7 @@ All six resolve by tarjīḥ against their readings and join the worklist. 1.f00
 | 99.f002, f003 (register) | derivable for want of a reported counter-position, though the madhhab holds lending recommended: side-check candidates |
 | 102.f003 (register) | the child's or madman's killing taken as «on a forbidden manner» |
 
-**Lane A, round 3** added 21 contradictions and 55 evidence items: 19 residues, 1 resolved for the reading (114.f003) and 1 tawaqquf (109.f018). No jamʿ was attempted. The ledger stands at 210 entries and 527 active evidence items, with 19 jamʿ, 180 tarjīḥ (116 residues) and 11 tawaqquf. Candidate farqs and register questions from the round:
+**Lane A, round 3** added 21 contradictions and 55 evidence items: 19 residues, 1 resolved for the reading (114.f003) and 1 tawaqquf (109.f018). No jamʿ was attempted. At integration the ledger stood at 210 entries and 527 active evidence items, with 19 jamʿ, 180 tarjīḥ (116 residues) and 11 tawaqquf; after the register sweep, 19 jamʿ, 1 naskh, 179 tarjīḥ and 11 tawaqquf, with the same 116 residues. Candidate farqs and register questions from the round:
 
 | Farʿ / qāʿida | Candidate farq or question |
 |---|---|
@@ -199,6 +199,32 @@ All six resolve by tarjīḥ against their readings and join the worklist. 1.f00
 | 113.f006 (register) | a typological record annotated for its stated instance, two wives and two houses |
 | 114.f003 (register) | which cognate governs the count, the sale's inshāʾ (halves) or the iqrār's vagueness |
 | 118.f004 (register) | `legitimate_purpose = false` rests on Taqī al-Dīn's own statement of the purpose |
+
+**The register applied to the bank (sweep after round 3).** Following invariant 9 (apply the bank before asking the owner), every register question of lane A rounds 1–3, and those left from tranche 11 and lane D, was put through the bank's own procedure: the annotation convention (readings from the qāʿida's own statement; leading ruling; positions under the same facts; al-Inṣāf first, then the muʿtamad), the grade table, and `Usul.resolve` (jamʿ → naskh → tarjīḥ → tawaqquf). Everything stays `candidate`; what the procedure leaves open goes to the research register, `corpus/review/research_questions.json`.
+
+| Question | Procedure | Outcome |
+|---|---|---|
+| 100.f003 | naskh: a later riwāya with reported chronology (al-Inṣāf v03:p352, al-Zarkashī «وهي التي ذهب إليها أحمد أخيرا»), which al-Inṣāf v11:p124 ties to the vow | **naskh**, ahead of tarjīḥ; outcome unchanged (against the reading) |
+| 104.f012 | tarjīḥ: the Muntahā's cognate ruling (qiyās) over two aṣḥāb ways | for the reading, as the ledger has it; `matches_madhhab` stays false (no later label) |
+| 105.f009 | grade table: Ibn Rajab's «على قياس المذهب» is qiyās al-madhhab | counts; for the reading |
+| 107.f005 | tarjīḥ over the split muʿtamad: al-Inṣāf's taṣḥīḥ with the Muntahā's jazm against the Iqnāʿ's and Kashshāf's jazm | the annotation (al-Inṣāf's side) stands |
+| 108.f004 | al-Inṣāf first («وهو المذهب», v08:p212), with the Muntahā (v04:p122) and the Iqnāʿ (v03:p204) «فقولها»; Taṣḥīḥ al-Muḥarrar and al-Wajīz are reported in al-Inṣāf only | stands, on the madhhab side |
+| 90.f002 | al-Inṣāf first: Ibn Rajab's attribution to al-Muḥarrar is one author's report against al-Inṣāf's taṣḥīḥ | the residue stands |
+| 1.f002 | tarjīḥ: al-Inṣāf's taṣḥīḥ above the muʿtamad's «نصا» (naṣṣ) | agreeing, as recorded |
+| 67 | readings come from the qāʿida's own statement, which includes the gift/release takhrīj | the reading stands; the madhhab's rejection for release is a residue |
+| 78 | two bare wujūh: a tie | tawaqquf at the qāʿida level; nothing for the owner |
+| 99.f002 | side check: al-Inṣāf v05:p263, Aḥmad's naṣṣ «على عدم اعتبار إذنه في الوضع» | confirmed, derivable |
+| 99.f003 | side check: only the general «(وهي) أي الإعارة (مندوب إليها)» (Kashshāf v04:p062; a general rule, qiyās) and al-Qāḍī's and al-Majd's answer in al-Furūʿ v04:p140; no farʿ-level taṣḥīḥ or jazm | no side check applies; stays derivable |
+| 102.f003, 118.f004 | facts the text states: Ibn Rajab places the child's killing under Q102; in 118.f004 the positions do not dispute the purpose (al-Talkhīṣ validates on another ground) | stand |
+| 109.f019 | «على الأصح» presupposes a contrary wajh, graded `wajh` | the ikhtilāf stands |
+| 112.f002 | positions under the same facts: the dispute is over which forbidden thing is lighter | derivable stands |
+| 113.f006 | leading ruling: the answer to the record's opening question; the three ṭuruq are its premise | stands |
+| 114.f003 | the reading's own split: ṭalāq is an inshāʾ (`isIqrar = false`) | for the reading stands |
+| 75.f008 | the recourse output is `true` whether or not seeking permission was impossible | no decision turns on the fact; recorded |
+| 109 (precedence clause) | not an obligation (a follow-on of f015); no case exercises it | a refinement candidate, not a question |
+| 80, 95 | wajh against wajh is a tie, and choosing a qāʿida's side is a policy point (invariant 8) | **open: RQ-02** |
+| 59.f005 | the question is the grade order itself (qiyās above jazm) | **open: RQ-03** |
+| 53.f009 | the subject of al-Furūʿ's «ولا يتصرف» | **open: RQ-04** |
 
 **Left as residues, for want of a cited farq:**
 
