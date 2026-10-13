@@ -363,13 +363,27 @@ CORE: dict[str, dict] = {
         sadi=[], qawaid=[RAJAB.format(52)], facts={"mubham": B, "settled": B, "debt_to_third": B},
         out=B, lean="Usul.Refinements.disposeBeforeQabdIn {mubham} {settled} {debt_to_third}",
         py=lambda f: not f["mubham"] and f["settled"] and not f["debt_to_third"]),
+    "right_to_own_disposal": dict(
+        sadi=[], qawaid=[RAJAB.format(55)], facts={"cause_complete": B, "tie_remains": B},
+        out=B, lean="Usul.Refinements.disposalTakes {cause_complete} {tie_remains}",
+        py=lambda f: f["cause_complete"] or f["tie_remains"]),
     "concurrent_condition": dict(
         sadi=[], qawaid=[RAJAB.format(56)], facts={"prior": B, "concurrent": B},
         out=B, lean="Usul.Refinements.conditionMet {prior} {concurrent}",
         py=lambda f: f["prior"] or f["concurrent"]),
+    "ruling_with_bar": dict(
+        sadi=[], qawaid=[RAJAB.format(57)], facts={"with_bar": B},
+        out=B, lean="Usul.Refinements.holdsAgainstBar {with_bar}", py=lambda f: not f["with_bar"]),
     "desisting_at_once": dict(
         sadi=[], qawaid=[RAJAB.format(58)], facts={"foresaw": B},
         out=B, lean="Usul.Refinements.desistIsAct {foresaw}", py=lambda f: f["foresaw"]),
+    "annulment_on_nonexistent": dict(
+        sadi=[], qawaid=[RAJAB.format(59)], facts={"annulment": B},
+        out=B, lean="Usul.Refinements.annulsNonexistent {annulment}", py=lambda f: f["annulment"]),
+    "annulment_without_return": dict(
+        sadi=[], qawaid=[RAJAB.format(59)], facts={"annulment": B, "defect_return": B},
+        out=B, lean="Usul.Refinements.annulsNonexistentIn {annulment} {defect_return}",
+        py=lambda f: f["annulment"] and not f["defect_return"]),
     "deputy_of_principal": dict(
         sadi=[], qawaid=[RAJAB.format(61)], facts={"general": B},
         out=B, lean="Usul.Refinements.removedWithPrincipal {general}", py=lambda f: not f["general"]),
@@ -556,6 +570,26 @@ def report(cases: list[dict]) -> dict:
             "revisited": sum(1 for c in cases if c.get("revisit")),
             "revisit_queue": revisit_queue(cases),
             "per_encoder": {e: dict(sorted(v.items())) for e, v in per.items() if v}}
+
+
+UNIT_TYPES = ("fatwa", "masala", "bab")
+
+
+def annotation_errors(cases: list[dict], records: list[dict]) -> list[str]:
+    """Every case annotates one committed record, once. A farʿ also belongs to a qāʿida of its home
+    encoder, and an encoder's annotated qawāʿid have every farʿ annotated (method §4, invariant 5).
+    A fatwā, masʾala or bāb unit has no qāʿida: routing assigns its encoder, so only the first
+    two checks apply to it."""
+    far = {r["id"]: r["qaida"] for r in records if r["record_type"] == "far"}
+    units = {r["id"] for r in records if r["record_type"] in UNIT_TYPES}
+    ids = [c["far"] for c in cases]
+    errs = [f"{i}: annotated twice" for i, n in sorted(Counter(ids).items()) if n > 1]
+    errs += [f"{i}: not a committed farʿ or unit record" for i in sorted(set(ids) - set(far) - units)]
+    home = {c["far"]: c.get("home") or c.get("revisit", {}).get("from_encoder", c["encoder"]) for c in cases if c["far"] in far}
+    errs += [f"{i}: its qāʿida is not its home encoder's" for i, e in sorted(home.items()) if far[i] not in ENCODERS[e]["qawaid"]]
+    expected = {i for e in set(home.values()) for i, q in far.items() if q in ENCODERS[e]["qawaid"]}
+    errs += [f"{i}: unannotated farʿ of an annotated encoder's qāʿida" for i in sorted(expected - set(home))]
+    return errs
 
 
 def load_dir(d: Path) -> list[dict]:

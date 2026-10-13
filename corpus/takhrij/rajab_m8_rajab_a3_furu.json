@@ -1,0 +1,324 @@
+{
+ "suite": "m8_rajab_rajab_a3",
+ "status": "candidate",
+ "provenance": "M8 lane-A shard rajab-a3: every pending far record of Ibn Rajab's qawāʿid 53 and 78, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA3). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness; each ikhtilāf side checked against al-Inṣāf and the muʿtamad. Candidate, awaiting human review.",
+ "cases": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f000",
+   "encoder": "attached_right_disposal",
+   "class": "derivable",
+   "facts": {
+    "demanded": true,
+    "fixed_in_ayn": true
+   },
+   "expected": false,
+   "note": "The pledgor's sale or other non-penetrating disposal of the pledge is invalid, «لأن المرتهن أخذ بحقه في الرهن من التوثيق والحبس وقبضه»: the right is taken and fixed in the thing, as with the bankrupt's creditors after the ḥajr. Manumission takes effect «لقوته وسرايته», like the ihram of the wife or slave without permission (whom they may not release «على إحدى الروايتين»); that is the follow-on, not the leading ruling."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f001",
+   "encoder": "attached_right_disposal",
+   "class": "derivable",
+   "facts": {
+    "demanded": true,
+    "fixed_in_ayn": true
+   },
+   "expected": false,
+   "note": "Once the shafīʿ demands, the buyer's disposal is invalid «لأن حقه تقرر وثبت»: the demand is either taking (al-Qāḍī's view) or announces it and bars the buyer. If the shafīʿ only forbids the buyer without demanding, the buyer is not barred and the shufʿa lapses on its being immediate (al-Qāḍī, al-Khilāf): a follow-on."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f002",
+   "encoder": "attached_right_disposal",
+   "class": "derivable",
+   "facts": {
+    "demanded": true,
+    "fixed_in_ayn": true
+   },
+   "expected": false,
+   "note": "Leading ruling: when the debt falls due and the creditor forbids the debtor's travel, travel is not permitted and he sins by it, «لأنه حبسه وله ولاية حبسه لاستيفاء حقه كالمرتهن في الرهن». Without a forbidding Ibn ʿAqīl gives two wujūh (permitted, the ḥabs needing a demand; not, for the delay of a due right); that branch is a follow-on, and the reading's undemanded output (permitted) is the first wajh."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f003",
+   "encoder": "attached_right_disposal",
+   "class": "derivable",
+   "facts": {
+    "demanded": true,
+    "fixed_in_ayn": true
+   },
+   "expected": false,
+   "note": "The bankrupt's disposal of goods bought before the ḥajr does not take effect after the seller demands them (naṣṣ, Ismāʿīl b. Saʿīd: «فلا يجوز بيعه ولا هبته ولا صدقته بعد الطلب»), and is valid before the demand («فهو جائز ما لم يطالب البائع»). Further narrations make the ḥākim's taflīs or the bankruptcy's notoriety stand for the demand."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f004",
+   "encoder": "attached_right_disposal",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "demanded": true,
+    "fixed_in_ayn": true
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "Abū al-Khaṭṭāb (al-Intiṣār, on pledge): valid, the starving man taking it from the pledgee or buyer, with no distinction before and after the demand",
+     "ruling": true
+    },
+    {
+     "who": "Ibn Rajab «والأظهر»: invalid after the demand, «لوجوب الدفع»; even invalid absolutely when he knows of the need «لم يبعد»",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "One with surplus food who hastens to sell or pledge it when a starving man is present. The record leaves the demand unstated; the khilāf arises on the after-demand branch, which is annotated (Abū al-Khaṭṭāb «لم يفرق بين ما قبل الطلب وبعده»). The reading lands on Ibn Rajab's «الأظهر»; al-Inṣāf (v10:p375) only relays both sides, so the side rests on Ibn Rajab's label. He names a possible farq: the shafīʿ's right is fixed in the share's own ʿayn, the starving man's in staving off death, so it passes to whoever takes the food."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f005",
+   "encoder": "attached_right_disposal",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "demanded": false,
+    "fixed_in_ayn": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "naṣṣ of Aḥmad: the sale of the niṣāb after the year is valid",
+     "ruling": true
+    },
+    {
+     "who": "Abū Bakr (al-Shāfī, as the qāʿida reports): not valid in the zakat's amount, on the zakat being in the ʿayn",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The zakat's right is not fixed in the niṣāb: «ولا تجوز المطالبة بالإخراج منها عينا مع وجود غيرها، فلا يتوجه انحصار الاستحقاق فيها بحال», so no demand on the thing occurs. al-Inṣāf (v03:p043): «والصحيح من المذهب: صحته، ونص عليه الإمام أحمد», reporting Abū Bakr's contrary from al-Shāfī."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f006",
+   "encoder": "attached_right_disposal",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "demanded": true,
+    "fixed_in_ayn": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "naṣṣ, most of the aṣḥāb: the sale of the jānī is valid, whether or not the victim demands",
+     "ruling": true
+    },
+    {
+     "who": "Abū al-Khaṭṭāb (al-Intiṣār, as the qāʿida reports): not valid, the right attaching to the jānī's ʿayn",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The victim's right is the arsh, satisfied from the slave's neck but not owning it: the owner may pay the lesser of value or arsh, «فلا يتوجه المنع من التصرف فيه لأن تسليمه إليه لم يتعين». Annotated on the demand branch the record states («سواء طالب المجني عليه بحقه أم لا»). al-Inṣāf (v04:p276): «أحدهما: يصح. وهو المذهب. نص عليه. وعليه أكثر الأصحاب»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f007",
+   "encoder": "attached_right_disposal",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "demanded": true,
+    "fixed_in_ayn": true
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "Abū al-Khaṭṭāb (al-Intiṣār): the captor's sale or pledge before the master takes it is valid, with no distinction for a demand; the master takes it from the second holder",
+     "ruling": true
+    },
+    {
+     "who": "Ibn Rajab «والأظهر»: the demand bars the disposal, as with the shufʿa",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "A slave from the spoils whose original master appears, his right being in it at its value. Before any demand both agree it is valid; the khilāf arises on the demand branch, which is annotated (the record: «ولم يفرق بين أن يطالب بأخذه أو لا»). al-Inṣāf (v04:p158) relays Ibn Rajab's «الأظهر» without a taṣḥīḥ of its own, so the side rests on Ibn Rajab's label."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f008",
+   "encoder": "attached_right_disposal",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "demanded": false,
+    "fixed_in_ayn": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "Ibn Rajab «أصحهما»: the heirs' disposal of the estate encumbered by creditors' rights is valid",
+     "ruling": true
+    },
+    {
+     "who": "the other wajh: invalid (on it, manumission alone takes effect, as in the pledge)",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The creditors' right is a bare attachment for satisfaction (the section «وأما ما تعلق به حق مجرد»), not demanded and not fixed in the thing. Ibn ʿAqīl (Naẓariyyāt) has it take effect only when the heirs are solvent, their disposal following the deceased's in his illness. al-Iqnāʿ with al-Kashshāf (v03:p439): «ويصح تصرف الورثة في التركة ببيع أو غيره»; al-Inṣāf (v05:p310) relays the two wujūh and Ibn Rajab's «أصح الوجهين»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f009",
+   "encoder": "attached_right_disposal",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "demanded": false,
+    "fixed_in_ayn": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "iḥtimāl (al-Targhīb): valid, as the son's disposal of what his father gave him (the giver's option)",
+     "ruling": true
+    },
+    {
+     "who": "iḥtimāl (al-Targhīb): not valid, as a disposal within the sale's option",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "The wife's disposal of half the dowry after divorce, on the premise that it does not enter the husband's ownership by force. His right is a right to take that half itself, unclaimed; the reading gives the undemanded output (valid). Taṣḥīḥ al-Furūʿ (v08:p339) corrects Ibn Mufliḥ's lead on that premise, «يصح ولا يتصرف، وهذا الصحيح من المذهب», which reads as barring her disposal; so the reading is off the later madhhab and the case enters the ledger. The premise itself is not the madhhab (the half enters his ownership by ḥukm, naṣṣ)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f010",
+   "encoder": "attached_right_disposal",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "demanded": false,
+    "fixed_in_ayn": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "al-Qāḍī alone (al-Khilāf): the donee of a sick man's whole property may dispose of it before the death, even have intercourse with a slave woman",
+     "ruling": true
+    },
+    {
+     "who": "Taqī al-Dīn: unlikely, as it depends on the heirs' permission",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "The heirs' right is not yet demanded: «وانتقال الحق إلى الورثة مظنون فلا يمنع التصرف» (Ibn Rajab's «وقد يقال», for al-Qāḍī). The later works give no taṣḥīḥ; al-Kashshāf (v04:p329) transmits al-Ikhtiyārāt calling al-Qāḍī's view weak and requiring the gift be held so the heir can reject it, so the reading's side is not shown to be the madhhab and the case enters the ledger. Follow-ons: the buyer's disposal in a two-sided option is suspended on the sale's completion (naṣṣ; Abū Bakr, al-Tanbīh; al-Qāḍī); the son's disposal of the father's gift is not suspended; the sick man's disposal beyond the third, the mukātab's manumission, the pledgor's disposal (al-Intiṣār) and the buyer's of the pre-empted share suspend on permission."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f001",
+   "encoder": "rescue_loss_liability",
+   "class": "derivable",
+   "facts": {
+    "causes_loss": false,
+    "sufferer_negligent": false,
+    "emptying_permitted": false
+   },
+   "expected": false,
+   "note": "Leading ruling: land bought with the seller's crop, which he harvests; if no roots remain or they do no harm, he need not remove them. If the roots harm the land (cotton, maize) he must remove them and level the holes (al-Qāḍī, Ibn ʿAqīl): the reading with causes_loss true gives that follow-on."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f002",
+   "encoder": "rescue_loss_liability",
+   "class": "derivable",
+   "facts": {
+    "causes_loss": true,
+    "sufferer_negligent": false,
+    "emptying_permitted": false
+   },
+   "expected": true,
+   "note": "Another's animal in one's house, a beast's head in one's pot, a dinar in one's inkwell, freed only by breaking, with no one's negligence: «فالضمان على صاحب الحيوان والدينار», the one whose property is freed."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f003",
+   "encoder": "rescue_loss_liability",
+   "class": "derivable",
+   "facts": {
+    "causes_loss": true,
+    "sufferer_negligent": false,
+    "emptying_permitted": false
+   },
+   "expected": true,
+   "note": "A flood carries another's saplings into one's land and they grow; if their owner uproots them he must level the holes."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f004",
+   "encoder": "rescue_loss_liability",
+   "class": "derivable",
+   "facts": {
+    "causes_loss": true,
+    "sufferer_negligent": false,
+    "emptying_permitted": false
+   },
+   "expected": true,
+   "note": "The bankrupt and creditors who choose to uproot the planting from land the seller retrieved must level the holes and pay the arsh, «لأنه نقص حصل بفعلهم في ملك البائع ليخلص ملكهم منه»; al-Kashshāf (v03:p431) holds the same."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f005",
+   "encoder": "rescue_loss_liability",
+   "class": "derivable",
+   "facts": {
+    "causes_loss": true,
+    "sufferer_negligent": true,
+    "emptying_permitted": false
+   },
+   "expected": false,
+   "note": "The usurper who brings a calf into his own house, where it grows and cannot leave without demolition: the house is demolished «من غير ضمان لتفريطه»; likewise usurped saplings planted in his own land are uprooted without liability for the holes."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f006",
+   "encoder": "rescue_loss_liability",
+   "class": "derivable",
+   "facts": {
+    "causes_loss": true,
+    "sufferer_negligent": false,
+    "emptying_permitted": false
+   },
+   "expected": true,
+   "note": "The usurper who dyed a garment and asks to remove the dye (on the view that he owns it) bears the garment's loss, as one who uprooted his planting from usurped land."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f007",
+   "encoder": "rescue_loss_liability",
+   "class": "derivable",
+   "facts": {
+    "causes_loss": true,
+    "sufferer_negligent": false,
+    "emptying_permitted": true
+   },
+   "expected": false,
+   "note": "Leading ruling: land lent for planting with uprooting stipulated; the borrower who takes his plants owes neither the loss nor the levelling, «لأن المالك رضي بذلك باشتراطه». Without the stipulation two wujūh: not liable (al-Qāḍī, Ibn ʿAqīl: lending with knowledge of uprooting is consent) and liable (al-Kāfī: he uprooted by choice); that is the qāʿida's own «فوجهان» for a permission to occupy, left open by the reading. Ibn Rajab adds that if the lender asks for uprooting and offers the arsh, no levelling should be due; and for lent land sown with harmful roots, two possibilities."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f008",
+   "encoder": "rescue_loss_liability",
+   "class": "derivable",
+   "facts": {
+    "causes_loss": true,
+    "sufferer_negligent": false,
+    "emptying_permitted": true
+   },
+   "expected": false,
+   "note": "Leading ruling: land leased for planting with uprooting stipulated at the term's end: no liability. Without the stipulation the same two wujūh; al-Kāfī reports no dispute on liability (ẓāhir of al-Qāḍī's al-Mujarrad), al-Talkhīṣ is decisive for none, «بأن المالك دخل على ذلك»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f009",
+   "encoder": "rescue_loss_liability",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "causes_loss": true,
+    "sufferer_negligent": false,
+    "emptying_permitted": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "first wajh, ẓāhir of al-Khiraqī: the buyer who uproots after the shafīʿ takes must level the holes and make good the loss, «لأن قلعه في ملك غيره لتخليص ملكه»",
+     "ruling": true
+    },
+    {
+     "who": "second wajh, al-Qāḍī, decisive in al-Kāfī: not liable, his act being no transgression",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "The buyer planted, the shafīʿ took the land, and the buyer uprooted his plants. The reading (no negligence in the shafīʿ, no permission) lands on the first wajh. Ibn Rajab: al-Kāfī is decisive the other way in ʿāriyya, and al-Qāḍī's reason («ملك نفسه من ملك نفسه») holds only for uprooting before the shafīʿ's taking. al-Inṣāf (v06:p294) makes non-liability «الصحيح من المذهب», and al-Iqnāʿ is decisive for it; so the case enters the ledger. Candidate farq: the buyer planted by right in his own property (no ʿudwān), unlike the borrower's and the bankrupt's uprooting."
+  }
+ ]
+}

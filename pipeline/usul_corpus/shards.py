@@ -71,8 +71,9 @@ def load_claims(corpus: Path) -> list[dict]:
 
 def pending_obligations(corpus: Path) -> set[str]:
     """Unit ids still awaiting annotation, from every generated worklist inventory."""
+    from .units import pending
     return {f for p in sorted((corpus / "worklists").glob("*_m8.json"))
-            for q in json.loads(p.read_text(encoding="utf-8"))["qawaid"] for f in q["pending_furu"]}
+            for q in json.loads(p.read_text(encoding="utf-8"))["qawaid"] for f in q["pending_furu"]} | pending(corpus)
 
 
 def check_claims(claims: list[dict], pending: set[str]) -> list[str]:

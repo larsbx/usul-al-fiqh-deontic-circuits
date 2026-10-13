@@ -20,7 +20,9 @@ def _ticked(doc: str) -> list[str]:
 
 
 def _subcommands() -> set[str]:
-    return set(re.findall(r'add_parser\("([\w-]+)"', (ROOT / "pipeline/usul_corpus/__main__.py").read_text(encoding="utf-8")))
+    import argparse
+    from usul_corpus.__main__ import parser
+    return {n for a in parser()._actions if isinstance(a, argparse._SubParsersAction) for n in a.choices}
 
 
 def _tests() -> set[str]:
@@ -46,7 +48,7 @@ def test_method_names_resolve(doc):
         if re.fullmatch(r"Usul(?:\.\w+)+", t):
             module = ROOT / "formal/lean" / (t.replace(".", "/") + ".lean")
             missing += [t] * (not module.exists() and t.split(".")[-1] not in lean)
-        if m := re.fullmatch(r"(takhrij|shards|reconcile|m8_worklist|reception|mentions)\.(\w+)", t):
+        if m := re.fullmatch(r"(takhrij|shards|reconcile|m8_worklist|reception|mentions|qa|hadith|abwab|units|routing)\.(\w+)", t):
             missing += [t] * (not hasattr(importlib.import_module(f"usul_corpus.{m[1]}"), m[2]))
         if _PATH.match(t) and not any(c in t for c in "<*…"):
             missing += [t] * (not (ROOT / t).exists())

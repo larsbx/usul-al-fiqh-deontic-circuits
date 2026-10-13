@@ -54,8 +54,22 @@ Precedents:
 ### III.2 Phase 0: prerequisites (serial, small)
 
 **Status.**
-- **Done:** P0.1, P0.2 and P0.3 (`pipeline/usul_corpus/shards.py`, method §5.2). Of P0.4, claims with disjoint ownership over the generated worklists (method §5.1).
-- **Open:** extending the worklist inventory beyond Ibn Rajab waits for P0.5's segmenters. P0.5 and P0.6 are not started.
+- **Done:** P0.1, P0.2 and P0.3 (`pipeline/usul_corpus/shards.py`, method §5.2), and P0.4. Claims have disjoint ownership over the generated worklists (method §5.1). `python -m usul_corpus worklist` (alias `m8-worklist`) regenerates both inventories and `--check` verifies them. The Ibn Rajab inventory is unchanged. The unit inventory `corpus/worklists/units.json` pins each line-segmented witness's records file by sha256 and lists only the annotated ids; pending ids are derived from the pinned file (`units.pending`), and a drifted file is refused. Unit records are therefore claimable obligations (`test_unit_records_are_pending_obligations_a_shard_can_claim`).
+- **P0.5, three segmenters done.** `qa` (`pipeline/usul_corpus/qa.py`), configured per work in the registry by two line-start patterns. It emits `fatwa` records: question and answer excerpts within rights, the page span, and the `sha256` receipt of the whole unit. `test_committed_unit_records_replay_from_the_pinned_witness` replays them.
+  - Seven collections are segmented, totalling 21,168 units (answered share in brackets): *Majmūʿ al-Fatāwā* 1,847 (0.99), *al-Fatāwā al-Kubrā* 971 (0.80), *Jāmiʿ al-Masāʾil* 122 (0.73), *al-Durar al-Saniyya* 1,651 (0.99), the Lajna 10,437 (0.97), Ibn Bāz 4,597 (0.98), Ibn ʿUthaymīn 1,543 (1.00). Page markers and milestones are stripped wherever they fall in a line.
+  - `masail` (`qa.segment_entries`) cuts a *Masāʾil* collection at a line-start opening formula; a named group `n` captures the printed number. It emits `masala` records with the same receipt and replay. Three collections give 5,700 entries: al-Kawsaj 3,575 (numbered 1–3,609: 6 duplicates, 40 numbers missing, listed in `corpus/audit.json`), Abū Dāwūd 1,585 (699 on pages the witness leaves unnumbered, `PageV00P000`), Ḥarb 540.
+  - `abwab` (`pipeline/usul_corpus/abwab.py`) cuts a matn into kitāb › bāb › faṣl units, ranking each heading by its first word, not its mARkdown level. It emits `bab` records carrying the rank, the heading, the enclosing kitāb and bāb titles (`path_ar`), the excerpt and the receipt, replayed like the others. Six mutūn give 2,613 units: *Zād* 286, *ʿUmda* 207, *al-Muqniʿ* 631, *al-Muḥarrar* 212, *Muntahā* 383, *al-Iqnāʿ* 894 (ranks per witness in `corpus/audit.json`). A unit routes a masʾala to its bāb; splitting units into masāʾil is the next step for R2.
+  - *Nūr ʿalā al-Darb*: Ibn Bāz 7,607 units by «س:/ج:» (0.997), Ibn ʿUthaymīn 7,448 (0.997). Ibn ʿUthaymīn's witness prints each question as a section heading with no marker word, so `qa` takes `question_heading`; follow-ups inside an episode open with «فضيلة الشيخ:».
+  - Fatāwā Muḥammad b. Ibrāhīm is letters, not Q/A, but the collection numbers them: `masail` with `ordered` opens entries only at the longest increasing run of printed numbers, so a letter's own enumeration and reference numbers stay in its text. 3,974 entries numbered 1–4,575, no duplicates; of the 601 missing numbers, most never occur at a line start in the witness.
+  - In *al-Kubrā* and *Jāmiʿ*, many answers begin without a «الجواب» marker. Their unanswered units keep only the question header, so they wait for review rather than absorbing text.
+- **Open:**
+  - joining al-Irwāʾ to the `masala`, `fatwa` and `bab` records. `hadith.JOIN_TYPES` holds the join to the reviewed types; widening it proposes 1,351 masāʾil candidates, which are a review tranche of their own;
+  - P0.6's transfer gap: routing modern questions (below) is far weaker than routing classical furūʿ; profiles need modern evidence, i.e. lane B's first annotated fatāwā;
+  - validating the encoder → bāb assignments, which nothing measures yet.
+- **P0.6 done, as a ranker:** `python -m usul_corpus routing` writes `corpus/routing/index.json`. Profiles are derived from the bank's evidence, never written: each of the 100 encoders gets the TF-IDF centroid of the records its annotated cases rest on plus its own qawāʿid, with words found in over 10 % of the evidence dropped. Per encoder the index gives its case support, its lexicon (the heaviest profile words) and its nearest matn units.
+  - **Held-out cases** (5 folds by record-id hash, 461 cases): the true encoder is in the top 1 / 5 / 10 for 0.61 / 0.86 / 0.91 of cases, against 0.08 / 0.29 / 0.37 for ranking encoders by frequency.
+  - **Out-of-domain** (`corpus/routing/ood.json`, the 123 IslamQA tranche cases, title and question): 0.09 / 0.29 / 0.37. The stopword share was chosen on the held-out folds, not on this set.
+  - 13 encoders have no annotated case and route by their qawāʿid alone.
 
 | # | Change | Gate |
 |---|---|---|
@@ -72,10 +86,10 @@ Every shard works on its own branch or worktree off **one pinned base commit**, 
 
 | Lane | Shard key | Does (steps) | Size |
 |---|---|---|---|
-| **A Readings × Ibn Rajab** | ≈5 qawāʿid per shard | S0–S5 on the remaining qawāʿid, exactly as tranches 1–10 | 745 furūʿ / 87 qawāʿid → ≈18 shards; 6 qawāʿid first need segmentation review |
+| **A Readings × Ibn Rajab** | ≈5 qawāʿid per shard | S0–S5 on the remaining qawāʿid, exactly as tranches 1–10 | 745 furūʿ / 87 qawāʿid → ≈18 shards; 6 qawāʿid first need segmentation review (round 1 done: 4 shards, 15 qawāʿid, 91 furūʿ) |
 | **B Encoder-routed takhrīj** | one shard per encoder (× source group) | retrieve R2 units by the routing index; S2–S3 against that encoder; a case no encoder fits is recorded as `missing_rule` with its `needs` and not forced | 100 encoders; start with the 20 with the most ikhtilāf, so the cases feed lanes C and E |
-| **C Taṣḥīḥ import** | one shard per ledger entry group | S7: verbatim taṣḥīḥ from R3 for the open residues: the 67 tarjīḥ outcomes that go against their reading (across 29 encoders) and the 8 tawaqquf; graded evidence only | 75 entries → ≈8 shards by encoder group |
-| **D Side verification** | one shard per tranche file | S7: check every on-madhhab annotation against al-Inṣāf and the muʿtamad; a failure enters 𝔏 | 12 suite files |
+| **C Taṣḥīḥ import** | one shard per ledger entry group | S7: verbatim taṣḥīḥ from R3 for the open residues: the 73 tarjīḥ outcomes that go against their reading (across 32 encoders) and the 9 tawaqquf; graded evidence only | 82 entries → ≈8 shards by encoder group |
+| **D Side verification** | one shard per tranche file | S7: check every on-madhhab annotation against al-Inṣāf and the muʿtamad; a failure enters 𝔏 with a `side_check` | **done** for all 12 suites (tranches 10–11 in their own PRs; tranches 1–9 and al-Saʿdī's: 100 cases, 6 failed) |
 | **E Position inventories** | one shard per bāb | R4: attributed positions and ijmāʿ reports for the 260 ikhtilāf cases; additions go to *P* as `revisions`, never edits | ≈10 shards by bāb |
 | **F Segmentation** | one shard per R2/R3 text | P0.5 applied per text, with receipts; prerequisite for B, C and E on that text | ≈30 texts |
 

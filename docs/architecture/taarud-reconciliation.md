@@ -134,6 +134,35 @@ Tranche 9 added 2 contradictions and 6 evidence items. On the shufʿa (50.f001) 
 
 Tranche 10 added 7 contradictions and 23 evidence items, after checking each of its on-the-madhhab annotations against al-Inṣāf and the muʿtamad. Two are jamʿ on farqs the madhhab states: `disposeBeforeQabdIn` (52.f001: a settled debt is sold only to the debtor, «وهو الصحيح من المذهب. وعليه الأصحاب») and `removedWithPrincipalIn` (61.f001: the qāḍī's deputies are his, «لأنهم نوابه»). Five are residues, four of them on qāʿida 56, where the madhhab does not take concurrence as sufficient in the kitāba with a sale, agency before the nikāḥ or the umm walad's ʿidda, and none cites one farq for all three. The ledger stands at 153 entries and 388 evidence items, with 18 jamʿ, 127 tarjīḥ (67 residues) and 8 tawaqquf.
 
+Tranche 11 added 3 contradictions and 8 evidence items, again after checking every on-the-madhhab annotation. `annulsNonexistentIn` (59.f004) is a jamʿ: the arsh is fixed once the defective thing perishes, «وهذا المذهب. وعليه أكثر الأصحاب». The same farq is cited for iqāla after loss (59.f005), but only in the muʿtamad's jazm, which al-Qāḍī's «قياس المذهب» outranks; the jamʿ check therefore keeps iqāla out of the refinement, and tarjīḥ leaves it with the reading, listed for review. 57.f002 rests in tawaqquf: on the branch where the free woman would suffice him, only Ibn Rajab's own fāʾida is found against al-Qāḍī and Abū al-Khaṭṭāb. The ledger stands at 156 entries and 396 evidence items, with 19 jamʿ, 128 tarjīḥ (67 residues) and 9 tawaqquf.
+
+**Lane D: the madhhab sides of tranches 1–9 verified.** Every ikhtilāf case annotated on the madhhab side before tranche 10 (100 cases, the jamʿ entries excepted) was checked against al-Inṣāf and the muʿtamad. 90 agree, 4 have no later treatment (28.f001, 93.f006, 159.f029, 17.f004) and 6 do not agree. Each of the six keeps its annotated value in a `side_check` (`from_matches`, the refs of the evidence that overturned it) and enters the ledger, where `reconcile.check` requires a true original annotation, exact evidence-item indices, case-fact bindings and applicability rationales, and an unambiguous later taṣḥīḥ/jazm ruling against the original side confirmed by the full ledger. Page membership alone is insufficient:
+
+| Farʿ | Later madhhab |
+|---|---|
+| 1.f000 | running water counted whole like still water, «وهي المذهب» |
+| 2.f002 | the hair washed in the janāba ghusl, «وهو المذهب. وعليه جماهير الأصحاب» |
+| 22.f007 | the unlawful share taken out whatever the proportion (Taṣḥīḥ al-Furūʿ, «هو الصواب، وهو المذهب») |
+| 140.f001 | doubling for fruit, palm-pith and livestock only, «على الصحيح من المذهب» |
+| 160.f006 | lots cast, neither slave sold before them (al-Iqnāʿ, Kashshāf) |
+| 160.f012 | the bequest with a shared name void, «على الصحيح من المذهب. وعليه الأصحاب» |
+
+All six resolve by tarjīḥ against their readings and join the worklist. 1.f002 is recorded as agreeing (al-Inṣāf, «الصحيح من المذهب») though the muʿtamad holds the other side («نصا»); 75.f008's facts may misstate «مع تعذره». The ledger stands at 162 entries and 414 evidence items, with 19 jamʿ, 134 tarjīḥ (73 residues) and 9 tawaqquf.
+
+**Lane A, round 1** added 17 contradictions and 35 evidence items, every one a residue; the shards named candidate farqs but cited none decisive, so no jamʿ was attempted. The ledger stands at 179 entries and 449 active evidence items, with 19 jamʿ, 151 tarjīḥ (90 residues) and 9 tawaqquf. Candidate farqs and register questions from the round:
+
+| Farʿ / qāʿida | Candidate farq or question |
+|---|---|
+| 71.f001 | Kashshāf: the ḥākim «يستغنيان بمالهما في بيت المال», the reading's own `compensatedOtherwise` fact, which Ibn Rajab's text does not state |
+| 81.f001, f003 | al-Qāḍī's annulment-from-the-root vs divorce-from-now (Ibn Rajab rejects it); the returner's consent to return with the increase |
+| 78.f009 | the shufʿa buyer planted by right in his own property, no ʿudwān (al-Kāfī, al-Qāḍī) |
+| 80 | the roots as trees for sale and blight but as crops for usurpation and musāqāh: a per-masʾala farq (lasting years vs. no woody stem) |
+| 67 (register) | the reading follows Ibn Rajab's gift/release takhrīj, which the madhhab rejects for release; or plain recourse with the takhrīj as residue |
+| 80 (register) | the qāʿida states only «فيه وجهان»; the reading takes the wajh whose ground is stated |
+| 90.f002 (register) | Ibn Rajab's «المذهب عند صاحب المحرر» against al-Inṣāf's reading of al-Muḥarrar |
+| 53.f009 (register) | in al-Furūʿ's «ولا يتصرف», who does not dispose, wife or husband |
+| 78 (register) | the qāʿida's «فوجهان» for a bare permission to occupy stays open |
+
 **Left as residues, for want of a cited farq:**
 
 | Encoder | Residues / cases | Why no jamʿ |
@@ -146,3 +175,5 @@ Tranche 10 added 7 contradictions and 23 evidence items, after checking each of 
 `review` lists the cases where the reading holds the prevailing marked side while the annotation says no madhhab matches. These are for the human reviewer to re-annotate. Nothing is rewritten here.
 
 Everything here has status `candidate`. The grades are a reading of the annotated paragraph. A resolution is "derivable under the encoding", never a fatwā.
+
+The independent [lane-D acceptance audit](lane-d-acceptance-audit-2026-10-11.md) records the scope of all six discrepancies. Two qualified passages are preserved in `corpus/review/lane_d/qualified_evidence.json` outside graded reconciliation. The six outcomes remain candidates; textual applicability rationales require human review and are not proved by Lean.

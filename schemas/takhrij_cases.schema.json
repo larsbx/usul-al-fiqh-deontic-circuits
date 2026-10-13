@@ -35,7 +35,7 @@
         "properties": {
           "far": {
             "type": "string",
-            "pattern": "\\.f[0-9]{3}$"
+            "pattern": "\\.(?:f[0-9]{3}|qa[0-9]{5}|m[0-9]{5}|b[0-9]{5})$"
           },
           "encoder": {
             "type": "string"
@@ -120,6 +120,59 @@
           "home": {
             "type": "string",
             "description": "The encoder whose qāʿida this farʿ belongs to, when the case is decided under another encoder (a fresh annotation, not a revisit)."
+          },
+          "side_check": {
+            "type": "object",
+            "required": [
+              "from_matches",
+              "refs",
+              "contradictions"
+            ],
+            "additionalProperties": false,
+            "description": "Lane D: the annotated madhhab side failed verification against al-Inṣāf and the muʿtamad. Keeps the annotated value; the evidence is in the ledger.",
+            "properties": {
+              "from_matches": {
+                "const": true
+              },
+              "refs": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "pattern": "^src:"
+                },
+                "uniqueItems": true
+              },
+              "note": {
+                "type": "string"
+              },
+              "contradictions": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "evidence_index",
+                    "case_facts",
+                    "rationale"
+                  ],
+                  "properties": {
+                    "evidence_index": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "case_facts": {
+                      "type": "object"
+                    },
+                    "rationale": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
