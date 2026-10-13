@@ -4,3 +4,7 @@ import Usul.Readings.RajabA1
 import Usul.Readings.RajabA2
 import Usul.Readings.RajabA3
 import Usul.Readings.RajabA4
+import Usul.Readings.RajabA5
+import Usul.Readings.RajabA6
+import Usul.Readings.RajabA7
+import Usul.Readings.RajabA8
