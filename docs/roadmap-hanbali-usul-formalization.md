@@ -116,6 +116,8 @@ Judgement form (proof-relevant):
 
 `Derivation : Type` is used, not `Prop`. Tarjīḥ compares derivations, so proof irrelevance would erase the object of study.
 
+Formalised as `Usul.Judgement` (question, answer typed by the question, subject, domain, grade, dalīl kinds): see [judgement.md](architecture/judgement.md).
+
 Sort-indexed defaults: one qāʿida with two domains.
 
 ```text

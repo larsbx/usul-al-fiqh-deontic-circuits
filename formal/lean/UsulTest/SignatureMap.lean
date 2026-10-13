@@ -14,6 +14,11 @@ import Usul
 #check @Usul.Conflict
 #check @Usul.Resolution.naskh
 #check @Usul.Subject.IsMukallaf
+#check @Usul.Khitab
+#check @Usul.Validity.sahih
+#check @Usul.Validity.fasid
+#check @Usul.Judgement.WellTyped
+#check @Usul.Judgement.wadi_without_taklif
 #check @Usul.Sadi.Q01
 #check @Usul.Sadi.q01_balanced_is_mubah
 #check @Usul.Sadi.q02_means_of_wajib
