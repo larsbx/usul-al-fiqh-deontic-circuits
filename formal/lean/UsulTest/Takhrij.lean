@@ -63,6 +63,142 @@ import Usul
 #guard (Usul.Refinements.errorExcused false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f000 (derivable)
 #guard (Usul.Refinements.validUnderDoubt true false false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f001 (derivable)
+#guard (Usul.Readings.RajabA10.vagueOneBarsAll true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f002 (derivable)
+#guard (Usul.Readings.RajabA10.vagueOneBarsAll true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f003 (derivable)
+#guard (Usul.Readings.RajabA10.vagueOneBarsAll true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f004 (derivable)
+#guard (Usul.Readings.RajabA10.vagueOneBarsAll true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f005 (derivable)
+#guard (Usul.Readings.RajabA10.vagueOneBarsAll true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f006 (derivable)
+#guard (Usul.Readings.RajabA10.vagueOneBarsAll true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f007 (derivable)
+#guard (Usul.Readings.RajabA10.vagueOneBarsAll true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f008 (derivable)
+#guard (Usul.Readings.RajabA10.vagueOneBarsAll true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f009 (derivable)
+#guard (Usul.Readings.RajabA10.vagueOneBarsAll true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f010 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA10.combinationBarsItsAmount false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f011 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA10.combinationBarsItsAmount false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f012 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA10.combinationBarsItsAmount false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f013 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA10.combinationBarsItsAmount false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f014 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA10.combinationBarsItsAmount false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f015 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA10.simultaneousCombinationVoids false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f016 (derivable)
+#guard (Usul.Readings.RajabA10.simultaneousCombinationVoids false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f017 (derivable)
+#guard (Usul.Readings.RajabA10.simultaneousCombinationVoids false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f018 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA10.simultaneousCombinationVoids false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f019 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA10.simultaneousCombinationVoids true) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f020 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA10.commonAmountGeneral true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f000 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA10.alternativeProvenAlone false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f001 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA10.alternativeProvenAlone false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f002 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA10.alternativeProvenAlone false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f001 (derivable)
+#guard (Usul.Readings.RajabA11.necessityPermits false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f002 (derivable)
+#guard (Usul.Readings.RajabA11.necessityPermits false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f003 (derivable)
+#guard (Usul.Readings.RajabA11.necessityPermits false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f004 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA11.necessityPermits false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f001 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA11.eachOverWhole false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f002 (derivable)
+#guard (Usul.Readings.RajabA11.eachOverWhole false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f003 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA11.eachOverWhole false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f004 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA11.eachOverWhole false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f005 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA11.eachOverWhole false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f006 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA11.eachOverWhole false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f007 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA11.eachOverWhole false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f001 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA11.sharikaHalves false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f002 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA11.sharikaHalves true) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f003 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA11.sharikaHalves false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f000 (derivable)
+#guard (Usul.Readings.RajabA11.accruesToRest true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f001 (derivable)
+#guard (Usul.Readings.RajabA11.accruesToRest true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f002 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA11.accruesToRest true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f003 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA11.accruesToRest true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f004 (derivable)
+#guard (Usul.Readings.RajabA11.accruesToRest true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f005 (derivable)
+#guard (Usul.Readings.RajabA11.accruesToRest true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f006 (derivable)
+#guard (Usul.Readings.RajabA11.accruesToRest true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f007 (derivable)
+#guard (Usul.Readings.RajabA11.accruesToRest false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f008 (derivable)
+#guard (Usul.Readings.RajabA11.accruesToRest false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f001 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.ruledFromCause true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f002 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.ruledFromCause true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f003 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.ruledFromCause true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f004 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.ruledFromCause true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f005 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.ruledFromCause true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f006 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.ruledFromCause true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f007 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.worshipFromStart true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f008 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.worshipFromStart true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f001 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.occurrenceGoverns true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f002 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.occurrenceGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f003 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.occurrenceGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f004 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.occurrenceGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f005 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.occurrenceGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f006 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.occurrenceGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f007 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.occurrenceGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f008 (derivable)
+#guard (Usul.Readings.RajabA12.occurrenceGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f001 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.cancelOnExistenceValid false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f002 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.cancelOnExistenceValid true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f003 (derivable)
+#guard (Usul.Readings.RajabA12.cancelOnExistenceValid true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f004 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA12.cancelOnExistenceValid false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f005 (derivable)
+#guard (Usul.Readings.RajabA12.cancelOnExistenceValid false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f006 (derivable)
+#guard (Usul.Readings.RajabA12.cancelOnExistenceValid false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f000 (genuine_ikhtilaf)
 #guard (Usul.Readings.RajabA1.rescission true false) == .barred
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f001 (genuine_ikhtilaf)
@@ -423,6 +559,48 @@ import Usul
 #guard (Usul.Readings.RajabA8.lotDistinguishes true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f009 (genuine_ikhtilaf)
 #guard (Usul.Readings.RajabA8.lotDistinguishes true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f001 (derivable)
+#guard (Usul.Readings.RajabA9.maadumGrantValid false true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f002 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA9.maadumGrantValid true true false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f003 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA9.maadumGrantValid true true false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f004 (derivable)
+#guard (Usul.Readings.RajabA9.maadumGrantValid false true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f005 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA9.maadumGrantValid false false false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f006 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA9.maadumGrantValid false false false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f001 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA9.judgedSequential false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f002 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA9.judgedSequential false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f003 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA9.judgedSequential false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f004 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA9.judgedSequential false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f005 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA9.judgedSequential false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f001 (derivable)
+#guard (Usul.Readings.RajabA9.otherOptionStands false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f002 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA9.otherOptionStands false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f003 (derivable)
+#guard (Usul.Readings.RajabA9.refusalExactedForHim true true true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f004 (derivable)
+#guard (Usul.Readings.RajabA9.refusalRightFalls true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f005 (derivable)
+#guard (Usul.Readings.RajabA9.refusalRightFalls true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f006 (derivable)
+#guard (Usul.Readings.RajabA9.refusalCompelledToChoose true false true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f007 (derivable)
+#guard (Usul.Readings.RajabA9.refusalCompelledToChoose true false true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f008 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA9.refusalCompelledToChoose true false true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f009 (derivable)
+#guard (Usul.Readings.RajabA9.substituteRefusalJudgedByOriginal true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f010 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA9.rightOnRefuserExacted true true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f000 (genuine_ikhtilaf)
 #guard (Usul.Refinements.disposeBeforeQabdIn false false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f001 (genuine_ikhtilaf)

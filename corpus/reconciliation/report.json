@@ -1,6 +1,6 @@
 {
-  "entries": 189,
-  "evidence_items": 472,
+  "entries": 210,
+  "evidence_items": 527,
   "side_checks": [
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002",
@@ -11,13 +11,13 @@
   ],
   "stages": {
     "jam": 19,
-    "tarjih": 160,
-    "tawaqquf": 10
+    "tarjih": 180,
+    "tawaqquf": 11
   },
   "standing": {
-    "against_reading": 97,
-    "for_reading": 82,
-    "tawaqquf": 10
+    "against_reading": 116,
+    "for_reading": 83,
+    "tawaqquf": 11
   },
   "worklist": {
     "lots": [
@@ -56,6 +56,18 @@
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f004",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f006"
     ],
+    "distribution_each_over_whole": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f003",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f005",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f006",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f007"
+    ],
+    "occurrence_state_governs": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f003",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f004",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f005",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f006"
+    ],
     "tadakhul": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f002",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f003",
@@ -71,6 +83,11 @@
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f000",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f001",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f002"
+    ],
+    "ownership_relates_back": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f002",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f006"
     ],
     "repeat_bearing_roots_as_trees": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f001",
@@ -126,14 +143,23 @@
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f001",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f003"
     ],
+    "alternative_proven_alone": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f000"
+    ],
     "attached_takeover_at_value": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f006"
     ],
     "benefit_to_other": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f003"
     ],
+    "cancel_on_existence_valid": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f004"
+    ],
     "cause_from_one_of_two": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000"
+    ],
+    "combination_bars_its_amount": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f011"
     ],
     "continuity": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f009"
@@ -177,14 +203,23 @@
     "itlaf": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f005"
     ],
+    "maadum_grant_valid": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f006"
+    ],
     "many_over_noble": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f003"
     ],
     "mixed_haram_by_proportion": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f007"
     ],
+    "other_option_stands": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f002"
+    ],
     "recourse_after_return": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f003"
+    ],
+    "refusal_compelled_to_choose": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f008"
     ],
     "rescission_harm": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f000"
@@ -204,6 +239,9 @@
     "seizing_hand_liable": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f002"
     ],
+    "shared_right_accrues_to_rest": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f002"
+    ],
     "switch_to_original": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f002"
     ],
@@ -212,6 +250,9 @@
     ],
     "unknown_consent_binds": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f010"
+    ],
+    "worship_ruled_from_start": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f007"
     ]
   },
   "review": [
@@ -270,6 +311,7 @@
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f009",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f019",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f003",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f012",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f009"
   ]

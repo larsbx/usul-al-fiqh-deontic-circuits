@@ -179,6 +179,27 @@ All six resolve by tarjīḥ against their readings and join the worklist. 1.f00
 | 99.f002, f003 (register) | derivable for want of a reported counter-position, though the madhhab holds lending recommended: side-check candidates |
 | 102.f003 (register) | the child's or madman's killing taken as «on a forbidden manner» |
 
+**Lane A, round 3** added 21 contradictions and 55 evidence items: 19 residues, 1 resolved for the reading (114.f003) and 1 tawaqquf (109.f018). No jamʿ was attempted. The ledger stands at 210 entries and 527 active evidence items, with 19 jamʿ, 180 tarjīḥ (116 residues) and 11 tawaqquf. Candidate farqs and register questions from the round:
+
+| Farʿ / qāʿida | Candidate farq or question |
+|---|---|
+| 113.f003, f005 | several pledgors or guarantors as several contracts (Kashshāf «لأن الراهن متعدد»; al-Qāḍī «تتعدد الصفقة بتعدد الضامنين»): a `contracts_multiply` qarīna for one-to-one |
+| 113.f007 | al-Mughnī: equal units (coins, ṭalāqs) are divided by heads, not parts |
+| 115.f002 | «لئلا تستوي حال حريتهما الكاملة والمبعضة»: partial freedom limits the claim to the whole |
+| 116 | the later madhhab relates back where the cause was complete in the owner's lifetime (f003–f005), not where the acquirer's own act was awaited (f001 taking, f002 acceptance, f007 intention); f006's walāʾ «لا يوقف» is a separate ground |
+| 117 | the state at suspension where the question is the suspender's own eligibility then (f004, f006, f005), at occurrence where the effect is measured when it happens (f002, f007, f008); f007 and f003 (tuhma) break the pattern |
+| 107.f006 | Ibn Rajab's own farq: a waqf on children may regard those existing, «بخلاف الدرجة والطبقة»; Sharḥ al-Muntahā «لوجود الوصف فيه» |
+| 109.f011 | Kashshāf: «لأن الثانية صارت فراشا له»; a firāsh fact would bar both |
+| 111.f000 | declining the qasāma oaths is a judgment by nukūl, not proof of one alternative |
+| 107.f005 (register) | the muʿtamad split: Tanqīḥ and Muntahā with al-Inṣāf, Iqnāʿ and Kashshāf «خلافا لما في التنقيح»; annotated with al-Inṣāf |
+| 108.f004 (register) | al-Inṣāf's madhhab (her word) against Taṣḥīḥ al-Muḥarrar and al-Wajīz (his) |
+| 109 (register) | the precedence clause («على الصحيح») against al-Inṣāf v08:p152 voiding both marriages, mother and daughter in one contract |
+| 109.f019 (register) | the second position is inferred from «على الأصح», no holder named |
+| 112.f002 (register) | derivable: the dispute is over which forbidden thing is lighter, an input judgment |
+| 113.f006 (register) | a typological record annotated for its stated instance, two wives and two houses |
+| 114.f003 (register) | which cognate governs the count, the sale's inshāʾ (halves) or the iqrār's vagueness |
+| 118.f004 (register) | `legitimate_purpose = false` rests on Taqī al-Dīn's own statement of the purpose |
+
 **Left as residues, for want of a cited farq:**
 
 | Encoder | Residues / cases | Why no jamʿ |
