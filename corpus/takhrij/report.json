@@ -1,16 +1,16 @@
 {
- "total": 663,
+ "total": 752,
  "classes": {
-  "derivable": 281,
-  "genuine_ikhtilaf": 375,
+  "derivable": 316,
+  "genuine_ikhtilaf": 429,
   "missing_fact": 1,
   "missing_rule": 5,
   "segmentation_error": 1
  },
- "coverage": 0.991,
- "madhhab_coverage": 0.733,
+ "coverage": 0.992,
+ "madhhab_coverage": 0.736,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 204,
+ "ikhtilaf_matching_madhhab": 237,
  "gaps_open": 6,
  "revisited": 37,
  "revisit_queue": [],
@@ -350,6 +350,51 @@
    "derivable": 1,
    "genuine_ikhtilaf": 4
   },
+  "vague_one_bars_all": {
+   "derivable": 9
+  },
+  "combination_bars_its_amount": {
+   "genuine_ikhtilaf": 5
+  },
+  "simultaneous_combination_voids": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 3
+  },
+  "common_amount_general": {
+   "genuine_ikhtilaf": 1
+  },
+  "alternative_proven_alone": {
+   "genuine_ikhtilaf": 3
+  },
+  "necessity_spares_lighter": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 1
+  },
+  "distribution_each_over_whole": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 6
+  },
+  "unqualified_sharika_halves": {
+   "genuine_ikhtilaf": 3
+  },
+  "shared_right_accrues_to_rest": {
+   "derivable": 7,
+   "genuine_ikhtilaf": 2
+  },
+  "ownership_relates_back": {
+   "genuine_ikhtilaf": 6
+  },
+  "worship_ruled_from_start": {
+   "genuine_ikhtilaf": 2
+  },
+  "occurrence_state_governs": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 7
+  },
+  "cancel_on_existence_valid": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 3
+  },
   "nafaqa_stipulated_in_contract": {
    "derivable": 3,
    "genuine_ikhtilaf": 1
@@ -459,6 +504,33 @@
   "lot_distinguishes_hidden_entitled": {
    "derivable": 1,
    "genuine_ikhtilaf": 1
+  },
+  "maadum_grant_valid": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 4
+  },
+  "unknown_order_judged_sequential": {
+   "genuine_ikhtilaf": 5
+  },
+  "other_option_stands": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "refusal_exacted_for_him": {
+   "derivable": 1
+  },
+  "refusal_right_falls": {
+   "derivable": 2
+  },
+  "refusal_compelled_to_choose": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 1
+  },
+  "right_on_refuser_exacted": {
+   "genuine_ikhtilaf": 1
+  },
+  "substitute_refusal_judged_by_original": {
+   "derivable": 1
   }
  }
 }

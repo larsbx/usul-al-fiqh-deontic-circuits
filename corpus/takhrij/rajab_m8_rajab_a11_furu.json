@@ -1,0 +1,252 @@
+{
+  "suite": "m8_rajab_rajab_a11",
+  "status": "candidate",
+  "provenance": "Shard rajab-a11 (lane A): every farʿ record of Ibn Rajab's qawāʿid 112, 113, 114 and 115, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA11). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f001",
+      "encoder": "necessity_spares_lighter",
+      "class": "derivable",
+      "facts": {"heavier": false},
+      "expected": true,
+      "note": "The muḥrim in necessity who finds game and carrion: «فإنه يأكل الميتة نص عليه أحمد ; لأن في أكل الصيد ثلاث جنايات صيده وذبحه وأكله، وأكل الميتة فيها جناية واحدة». The option annotated is the carrion, the lighter of the two, so it is permitted to him (and the game, the heavier, is not), with no dispute reported. Follow-ons in the note only: game already slaughtered by a muḥrim against carrion (al-Qāḍī in his Khilāf: the game; Ibn Rajab «وفي هذا نظر», Abū al-Khaṭṭāb in al-Intiṣār: the carrion), and game eggs (ẓāhir of al-Qāḍī: the carrion), each turning on which of the two is the lighter."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f002",
+      "encoder": "necessity_spares_lighter",
+      "class": "derivable",
+      "facts": {"heavier": false},
+      "expected": true,
+      "note": "Marrying slave-women and istimnāʾ, each permitted only for necessity: «ويقدم نكاح الإماء كما نص عليه ابن عباس ; لأنه مباح بنص والآخر متردد فيه». The option annotated is the marriage of slave-women, not the heavier on Ibn Rajab's stated ground, so it is permitted and preferred. The khilāf reported is antecedent, over which is the lighter: Ibn ʿAqīl in his Mufradāt «الاستمناء أحب إلي من نكاح الأمة» (Ibn Rajab: «وفيه نظر»); on his assessment the reading gives his side, so the case is derivable with that dispute recorded here rather than as an input fact. Follow-on: marriage of slave-women before intercourse with a mustaḥāḍa (ẓāhir of Ibn ʿAqīl, endorsed by Ibn Rajab)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f003",
+      "encoder": "necessity_spares_lighter",
+      "class": "derivable",
+      "facts": {"heavier": false},
+      "expected": true,
+      "note": "One allowed to break his fast for lust who cannot do istimnāʾ, with a fasting wife and a menstruating one: two iḥtimālāt in al-Mughnī, «أحدهما وطء الصائمة أولى … والثاني: مخير لتعارض مفسدة وطء الحائض … وإفساد صوم الطاهرة والأول هو الصحيح». The option annotated is the fasting wife; neither iḥtimāl makes her the heavier (the second holds the two equal), so both permit her, and the reading's output is not in dispute. The dispute is over the menstruating wife only: heavier on the first (Ibn Rajab «الصحيح», an author's preference), equal and so also permitted on the second."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f004",
+      "encoder": "necessity_spares_lighter",
+      "class": "genuine_ikhtilaf",
+      "facts": {"heavier": false},
+      "expected": true,
+      "positions": [
+        {"who": "riwāyat Abū Dāwūd: «يصنع كيف شاء», throwing themselves into the water is permitted (with Aḥmad's tawaqquf where there is no hope of escape)", "ruling": true},
+        {"who": "riwāyat Muhannā «أكره طرح نفوسهم في البحر»; Ibn ʿAqīl and others: staying is obligatory where perishing is certain, «لئلا يكون قاتلا لنفسه»", "ruling": false}
+      ],
+      "matches_madhhab": true,
+      "note": "Fire cast into a ship where the two perils are equal, «واستوى الأمران في الهلاك أعني المقام في النار وإلقاء النفوس في الماء … على روايتين». The text fixes the two as equal, so throwing is not the heavier and the reading permits it. al-Inṣāf (v04:p126), on al-Muqniʿ's ship set on fire: «فإن شكوا فعلوا ما شاءوا، من المقام أو إلقاء نفوسهم في الماء. هذا المذهب», with «وعنه: يلزمهم المقام. نصره القاضي وأصحابه» and Ibn ʿAqīl's taḥrīm as the other side; on the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f001",
+      "encoder": "distribution_each_over_whole",
+      "class": "genuine_ikhtilaf",
+      "facts": {"qarina_one_to_one": false},
+      "expected": true,
+      "positions": [
+        {"who": "the first riwāya, «أشهرهما بطلان العقد» (al-Qāḍī and his companions; the sadd al-dharīʿa maʾkhadh with Aḥmad's īmāʾ): of the distribution of individuals over the whole", "ruling": true},
+        {"who": "the second riwāya, naṣṣ in the riwāya of a group: valid where non-genus goods are on both sides or the single item exceeds its counterpart, unless a ḥīla: «يكون التوزيع هاهنا للأفراد على الأفراد»", "ruling": false}
+      ],
+      "matches_madhhab": true,
+      "note": "Mudd ʿajwa: a ribawī sold for its genus with something of another genus on one or both sides: «ففيه روايتان أشهرهما بطلان العقد». Ibn Rajab maps the two riwāyas onto the qāʿida: «وعلى هذه الرواية [the second] يكون التوزيع هاهنا للأفراد على الأفراد وعلى الرواية الأولى هو من باب توزيع الأفراد على الجمل أو توزيع الجمل على الجمل». No qarīna fixes one-to-one, so the reading gives the first riwāya (output: each over the whole, the contract void). al-Inṣāf (v05:p033) on al-Muqniʿ's prohibition: «وهو المذهب بلا ريب. وعليه جماهير الأصحاب»; on the madhhab side. The long follow-ons (the ṭarīqa of the adorned item, two species of one genus, the subordinate ribawī) are left to the note."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f002",
+      "encoder": "distribution_each_over_whole",
+      "class": "derivable",
+      "facts": {"qarina_one_to_one": false},
+      "expected": true,
+      "note": "Two slaves sold to two men for one price: «فإن المبيع يقع شائعا بينهما فيكون لكل واحد منهما نصف كل عبد، ولا يتخرج هنا وجه آخر أن يكون لكل واحد عبد ; لأنه يلزم من ذلك عدم تعيين المبيع فيفسد البيع». Each slave is spread over both buyers, each over the whole, with no other wajh. Follow-ons: a contract valid when vague (waṣiyya, mahr, khulʿ) where the one-to-one takhrīj would be open; the iqrār of half of two slaves; the bequest of a third of three slaves two of which are claimed (two wujūh, turning on compulsory division of slaves)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f003",
+      "encoder": "distribution_each_over_whole",
+      "class": "genuine_ikhtilaf",
+      "facts": {"qarina_one_to_one": false},
+      "expected": true,
+      "positions": [
+        {"who": "naṣṣ of Aḥmad (riwāyat Muhannā) «أن الدار رهن على ما بقي»; Abū Bakr in al-Tanbīh, Ibn Abī Mūsā and Abū al-Khaṭṭāb by jazm; «المذهب عند صاحب التلخيص»: each share pledged for the whole debt", "ruling": true},
+        {"who": "al-Qāḍī, on «المذهب الصحيح» that it is two contracts: each share pledged for half the debt; al-Qāḍī in al-Mujarrad, Ibn ʿAqīl and al-Mughnī read the naṣṣ as barring division only, the share released", "ruling": false}
+      ],
+      "matches_madhhab": false,
+      "note": "Two men pledge one house of theirs in one transaction for a debt they owe him, and one pays his share: «فظاهر هذا أنه جعل نصيب كل واحد [رهنا] بجميع الحق توزيعا للمفرد على الجملة لا على المفرد». No qarīna, so the reading gives each over the whole (the house stays pledged). al-Inṣāf (v05:p161): «وإن رهنه رجلان شيئا، فوفاه أحدهما: انفك في نصيبه … هذا المذهب أيضا. وعليه أكثر الأصحاب», «وقيل: لا ينفك. ونقله مهنا»; al-Iqnāʿ and Kashshāf state the release decisively. Against the reading; entered in the ledger."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f004",
+      "encoder": "distribution_each_over_whole",
+      "class": "genuine_ikhtilaf",
+      "facts": {"qarina_one_to_one": false},
+      "expected": true,
+      "positions": [
+        {"who": "al-Qāḍī in his Khilāf, Ibn ʿAqīl, al-Mughnī and al-Talkhīṣ: they may not divide it, both keeping the whole together, «لأن المتراهنين إنما رضيا بحفظهما جميعا»", "ruling": true},
+        {"who": "al-Qāḍī in al-Mujarrad: they may divide it, «توزيعا للمفرد على المفرد», each trustee of his half", "ruling": false}
+      ],
+      "matches_madhhab": true,
+      "note": "A pledge put in the hands of two ʿadls, of two separate items or of something divisible: may each keep his half alone? «على وجهين». Without a qarīna the reading gives each trustee over the whole. al-Inṣāf has no entry on it; the muʿtamad states it decisively: al-Iqnāʿ (v02:p164) «وإن شرط جعله في يد اثنين لم يكن لأحدهما الانفراد بحفظه», al-Muntahā (v02:p414) «وإن شرط بيد أكثر لم ينفرد واحد بحفظه», Kashshāf likewise. On the madhhab side. Follow-ons (liability on handing the divided half over; the two waṣīs, two agents, two deposit-keepers; Aḥmad's naṣṣ on the two told to give alms) in the note."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f005",
+      "encoder": "distribution_each_over_whole",
+      "class": "genuine_ikhtilaf",
+      "facts": {"qarina_one_to_one": false},
+      "expected": true,
+      "positions": [
+        {"who": "naṣṣ of Aḥmad (riwāyat Muhannā) «كل واحد منهما كفيل ضامن فأيهما شاء أخذ جميع حقه منه»; Abū Bakr in al-Tanbīh: each guarantor liable for the whole", "ruling": true},
+        {"who": "al-Qāḍī in al-Mujarrad and al-Khilāf, al-Mughnī (Ibn ʿAqīl giving two iḥtimālāt): by share, unless they state otherwise", "ruling": false}
+      ],
+      "matches_madhhab": false,
+      "note": "Two men guarantee a man's debt to his creditor without qualification: «فهل كل واحد منهما ضامن لجميع الدين أو بالحصة على وجهين». The reading gives each over the whole debt. al-Inṣāf (v05:p218): «وإن أطلقا الضمان، بأن قالا ضمنا لك الألف فهو بينهما بالحصص … وهذا الصحيح من المذهب», the whole-liability view under «وقيل … نص عليه الإمام أحمد … في رواية مهنا»; al-Iqnāʿ and al-Muntahā state the shares decisively. Against the reading; entered in the ledger. Follow-on: two kafīls of a person, one surrendering him (the ashhar: the other is not released)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f006",
+      "encoder": "distribution_each_over_whole",
+      "class": "genuine_ikhtilaf",
+      "facts": {"qarina_one_to_one": false},
+      "expected": true,
+      "positions": [
+        {"who": "the takhrīj Abū al-Khaṭṭāb records: no divorce until each has entered both houses (or spoken to both men)", "ruling": true},
+        {"who": "Abū al-Khaṭṭāb, «وجعل أبو الخطاب المذهب الوقوع», and those after him: each is divorced once each has entered one house, individual over individual", "ruling": false}
+      ],
+      "matches_madhhab": false,
+      "note": "Divorce or manumission hung on several conditions met partly by one and partly by another, the record's own instance being «إن دخلتما هاتين الدارين أو كلمتما زيدا وعمرا فأنتما طالقتان فكلمت إحداهما زيدا والأخرى عمرا أو دخلت كل واحدة منهما دارا، وقلنا لا يكتفي ببعض الصفة … فيه وجهان». Annotated for that instance; no qarīna is stated, so the reading gives each over the whole (no divorce yet). al-Inṣāf (v09:p094) on «إن كلمتما هذين … وكلمت كل واحدة واحدا منهما: طلقتا»: «هذا المذهب، وعليه أكثر الأصحاب», the other «تخريج لأبي الخطاب», adding «لكن المذهب هنا خلاف ما قاله في القواعد». Against the reading; entered in the ledger. The three ṭuruq on sufficiency of part of the condition, al-Qāḍī's «إذا أديتم إلي ألفا» and the naṣṣ on the jointly owned slave told «إذا متنا فأنت حر» (Ibn Rajab: one-to-one) stay in the note."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f007",
+      "encoder": "distribution_each_over_whole",
+      "class": "genuine_ikhtilaf",
+      "facts": {"qarina_one_to_one": false},
+      "expected": true,
+      "positions": [
+        {"who": "the first riwāya, the choice of Abū Bakr and al-Qāḍī: each ṭalqa divided over the four, so all three fall on each", "ruling": true},
+        {"who": "the second riwāya, the choice of Abū al-Khaṭṭāb and al-Mughnī: the three over the four, three-quarters each, completed to one", "ruling": false}
+      ],
+      "matches_madhhab": false,
+      "note": "«إذا قال لزوجاته الأربع: أوقعت بينكن أو عليكن ثلاث تطليقات … على روايتين». The reading, without a qarīna, distributes each ṭalqa over the whole. al-Inṣāf (v09:p016): «وقع بكل واحدة طلقة) هذا المذهب، وعليه أكثر الأصحاب», «وعنه: إذا قال أوقعت بينكن ثلاثا ما أرى إلا قد بن منه، واختاره أبو بكر، والقاضي»; al-Iqnāʿ decisively one each. Against the reading; entered in the ledger. Follow-ons: «أنتن طوالق ثلاثا» (naṣṣ: three each), the zakāt categories and the ẓihār verse."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f001",
+      "encoder": "unqualified_sharika_halves",
+      "class": "genuine_ikhtilaf",
+      "facts": {"is_iqrar": false},
+      "expected": true,
+      "positions": [
+        {"who": "«والمجزوم به في المحرر الصحة تنزيلا على المناصفة», one of the two wujūh in al-Talkhīṣ", "ruling": true},
+        {"who": "the other wajh in al-Talkhīṣ: invalid «للجهالة»", "ruling": false}
+      ],
+      "matches_madhhab": true,
+      "note": "«لو قال لمشتري سلعة أشركني في هذه السلعة فهل يصح وينزل على المناصفة أم لا للجهالة؟ على وجهين». A sale, not an admission, so the reading gives halves. al-Inṣāf (v04:p436): «لكن لو قال أشركتك وسكت: صح. على الصحيح من المذهب. وينصرف إلى النصف. وقيل: لا يصح»; on the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f002",
+      "encoder": "unqualified_sharika_halves",
+      "class": "genuine_ikhtilaf",
+      "facts": {"is_iqrar": true},
+      "expected": false,
+      "positions": [
+        {"who": "«المجزوم في الإقرار الإبهام ويرجع في تفسيره إليه وهو اختيار ابن عقيل»", "ruling": false},
+        {"who": "al-Qāḍī in his Khilāf: «هو بينهما نصفين»", "ruling": true}
+      ],
+      "matches_madhhab": true,
+      "note": "«لو قال هذا العبد شركة بيني وبين فلان أو هو شريكي، وفيه وجهان». An admission, so the reading does not take it as halves. al-Inṣāf (v12:p218): «رجع في تفسير نصيب الشريك إليه … وهذا المذهب في ذلك كله لا أعلم فيه خلافا» (al-Mardāwī's «قلت: لو قيل: هو بينهما نصفان، كان له وجه» an author's preference); al-Muntahā likewise. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f003",
+      "encoder": "unqualified_sharika_halves",
+      "class": "genuine_ikhtilaf",
+      "facts": {"is_iqrar": false},
+      "expected": true,
+      "positions": [
+        {"who": "on the wajh that the unqualified partnership is halves: «اقتضى وقوع اثنتين»", "ruling": true},
+        {"who": "on the wajh that it is vague: «لم يقع أكثر من واحدة ; لأنها اليقين إلا أن يفسره بأكثر من ذلك»", "ruling": false},
+        {"who": "Ibn Rajab's iḥtimāl: three, «بناء على [أن] الشركة تقتضي الاستحقاق من كل جزء»", "ruling": false}
+      ],
+      "matches_madhhab": false,
+      "note": "Three ṭalāqs on one wife, then to the other «شركتك معها». Divorce is an inshāʾ, not an admission, so the reading gives halves: two. No later work treats the count, and Ibn Rajab marks none of the three; recorded as off the madhhab and entered in the ledger, where al-Inṣāf's taṣḥīḥ on the cognate inshāʾ «أشركتك» in sale («على الصحيح من المذهب. وينصرف إلى النصف», v04:p436) is graded qiyās. Follow-ons: several partners (half of theirs or the like of one), the fourth wife joined to «أوقعت بينكن طلقة»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f000",
+      "encoder": "shared_right_accrues_to_rest",
+      "class": "derivable",
+      "facts": {"each_entitled_whole": true},
+      "expected": true,
+      "note": "The opening example of the first kind: «الشفعاء المجتمعون كل منهم يستحق الشفعة بكمالها فإذا عفى أحدهم عن حقه توفر على الباقين». Each is entitled to the whole, so what one waives accrues to the rest; no dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f001",
+      "encoder": "shared_right_accrues_to_rest",
+      "class": "derivable",
+      "facts": {"each_entitled_whole": true},
+      "expected": true,
+      "note": "«غرماء المفلس الذي لا يفي ماله بدين كل واحد على انفراده وهم كالشفعاء»: each is entitled to his whole debt from the estate and takes less only for the crowding, so what one gives up accrues to the rest. The inline further example, «الأولياء المتساوون في النكاح», is of the same kind; no dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f002",
+      "encoder": "shared_right_accrues_to_rest",
+      "class": "genuine_ikhtilaf",
+      "facts": {"each_entitled_whole": true},
+      "expected": true,
+      "positions": [
+        {"who": "«أحدهما يستحقان جميع المال رجحه القاضي والسامري وطائفة من الأصحاب» (maʾkhadh of Abū al-Khaṭṭāb, or that each's right is in the whole, halved by crowding)", "ruling": true},
+        {"who": "«والوجه الثاني: لا يستحقان المال كله لئلا تستوي [حال] حريتهما الكاملة والمبعضة» (then a half or three-quarters)", "ruling": false}
+      ],
+      "matches_madhhab": false,
+      "note": "Agnates crowding in inheritance, of the first kind, the record's own question being two sons each half free: «فهل يستحقان المال كله أم لا على وجهين». The reading, on the second maʾkhadh, gives the whole. al-Inṣāf (v07:p372): «أحدهما: لا تكمل. وهو المذهب. صححه في التصحيح», then three-quarters «بالأحوال والخطاب»; al-Muntahā and Kashshāf decisively the same. Against the reading; entered in the ledger. Follow-on: a half-free son with a mother (half the whole, half the residue, or a quarter of the sixth)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f003",
+      "encoder": "shared_right_accrues_to_rest",
+      "class": "genuine_ikhtilaf",
+      "facts": {"each_entitled_whole": true},
+      "expected": true,
+      "positions": [
+        {"who": "«أصحهما أنها تستحق السدس كله لزوال المزاحمة مع قيام الاستحقاق لجميعه»", "ruling": true},
+        {"who": "the second wajh: half the sixth (by the father's mother counting against her, or by the father taking what his mother was excluded from)", "ruling": false}
+      ],
+      "matches_madhhab": true,
+      "note": "Sharers crowding in one farḍ (wives, grandmothers); the record's question: the mother's mother with the father's mother and the father, on the riwāya that he excludes his mother. Each grandmother is entitled to the whole sixth, so the reading gives the whole to the mother's mother. al-Inṣāf (v07:p311): «فعليها: لأم الأم مع الأب وأمه: السدس كاملا. على الصحيح», quoting this qāʿida's «لزوال المزاحمة»; on the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f004",
+      "encoder": "shared_right_accrues_to_rest",
+      "class": "derivable",
+      "facts": {"each_entitled_whole": true},
+      "expected": true,
+      "note": "Bequests crowding in one item or amount: «فإن حق كل واحد منهم في مجموع وصيته وإنما يأخذ دون ذلك للمزاحمة فإذا رد بعضهم توفر على الباقين». The leading ruling, with no dispute reported. Follow-on in the note: where the heirs allow some bequests and not others, two wujūh (al-Muḥarrar corrects completing the named share; the other gives what he would take had all been allowed), with the bequest of a slave worth a third alongside a third; and the ghānimūn, an inline example of the same kind."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f005",
+      "encoder": "shared_right_accrues_to_rest",
+      "class": "derivable",
+      "facts": {"each_entitled_whole": true},
+      "expected": true,
+      "note": "«الموقوف عليهم إذا رد بعضهم توفر على الباقين كما لو مات بعضهم وقد سبقت» (qāʿida 113, the first ṭabaqa each entitled to the whole of the waqf). No dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f006",
+      "encoder": "shared_right_accrues_to_rest",
+      "class": "derivable",
+      "facts": {"each_entitled_whole": true},
+      "expected": true,
+      "note": "«حد القذف الموروث لجماعة يستحق كل واحد بانفراده فإذا أسقطه بعضهم فللباقين استيفاؤه». Of the first kind; no dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f007",
+      "encoder": "shared_right_accrues_to_rest",
+      "class": "derivable",
+      "facts": {"each_entitled_whole": false},
+      "expected": false,
+      "note": "The second kind: «عقود التمليكات المضافة إلى عدد فيملك كل واحد منهم بحصته لاستحالة أن يكون كل واحد منهم مالكا لجميع العين». Each owns his share only. Follow-ons in the note: two owners selling their two slaves to two men for one price (the aṣaḥḥ and manṣūṣ: valid, the price split by value; al-Qāḍī and Ibn ʿAqīl's takhrīj: by heads); gratuitous transfers and the kaffāra food set before ten poor men (three wujūh in al-Mughnī); whether «بينهما» unqualified means equal shares (two wujūh)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f008",
+      "encoder": "shared_right_accrues_to_rest",
+      "class": "derivable",
+      "facts": {"each_entitled_whole": false},
+      "expected": false,
+      "note": "«القصاص المستحق لجماعة بقتل موروثهم يستحق كل واحد منهم بالحصة فمن عفى منهم سقط حقه وسقط الباقي ; لأنه لا يتبعض». Of the second kind: what one pardons does not accrue to the rest, the remainder falling with it; no dispute reported. The disputed borderline cases Ibn Rajab names after it (joint liability for diya, jazāʾ and kaffāra; rahn, ḍamān and kafāla) are not annotated here."
+    }
+  ]
+}

@@ -43,6 +43,105 @@
         "Collect the Ḥanbalī uṣūl positions on the authority of a claimed ijmāʿ and on ijmāʿ sukūtī (al-ʿUdda, al-Tamhīd, al-Wāḍiḥ, al-Musawwada, Sharḥ al-Kawkab: all registered)."
       ],
       "status": "open-research"
+    },
+    {
+      "id": "RQ-02",
+      "title": "A qāʿida that itself leaves two unmarked sides: which one the reading takes",
+      "raised_by": "docs/architecture/taarud-reconciliation.md, lane A register sweep (Q80, Q95)",
+      "question": "Where Ibn Rajab's qāʿida states its own question as «فيه وجهان» or «قولان» without marking either, the reading must still return one side. Is the choice the annotator's (the side whose ground the text states, or a split that fits the furūʿ), or should such a qāʿida get two readings, one per side, with each farʿ annotated under both?",
+      "policy_in_force": "As is (bank applied, 2026-10-13): the reading takes the side the shard chose and says so in its docstring; Q80 `asTree` takes the wajh whose ground is stated, Q95 `errorActorLiable` splits the bare-ijtihād branch by acting as owner or negligence. The other side is a recorded position, and each farʿ where the later madhhab follows it is a residue in the ledger. The bank's tarjīḥ cannot rank two unmarked sides (wajh against wajh is a tie), and choosing one is a policy point (derivation-method §4, invariant 8).",
+      "pins": [
+        "Usul.Readings.RajabA2.asTree",
+        "Usul.Readings.RajabA5.errorActorLiable",
+        "Usul.Reconcile.prevail"
+      ],
+      "sources": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p157",
+          "excerpt_ar": "ما تكرر حمله من أصول البقول والخضراوات هل هو ملحق بالزرع أو بالشجر]",
+          "note": "Q80's own question, answered «فيه وجهان» on the next line."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p218",
+          "excerpt_ar": "إخراجه لحق الله إلى من يظنه مستحقا ثم تبين الخطأ، ففي ضمانه قولان، وإن",
+          "note": "Q95: the bare-ijtihād branch is left at «قولان»."
+        }
+      ],
+      "alternatives": [
+        "The annotator's choice, documented (the policy in force).",
+        "Two readings per such qāʿida, one per side, with the bank reporting each farʿ under both; madhhab coverage counts the side the later madhhab takes per farʿ.",
+        "The side the later madhhab takes on the majority of the qāʿida's furūʿ (an empirical choice from the ledger)."
+      ],
+      "research": [
+        "List every qāʿida whose statement leaves its own question at «وجهان»/«قولان»/«روايتان» unmarked (the readings' docstrings name them).",
+        "For Q80 and Q95, tabulate per farʿ which side al-Inṣāf and the muʿtamad take.",
+        "Check whether al-Mardāwī or Ibn Qāḍī al-Jabal (in his own qawāʿid) marks the qāʿida-level question."
+      ],
+      "status": "open-research"
+    },
+    {
+      "id": "RQ-03",
+      "title": "Qiyās al-madhhab on the farʿ against the muʿtamad's decisive statements",
+      "raised_by": "docs/architecture/taarud-reconciliation.md, tranche 11 (59.f005) and the lane A register sweep",
+      "question": "The bank's grade order puts qiyās al-madhhab (4) above the jazm of the aṣḥāb or a muʿtamad matn (5), and tarjīḥ is lexicographic, so one «قياس المذهب» of al-Qāḍī outweighs the decisive statements of al-Muntahā, Sharḥ al-Muntahā and Kashshāf (59.f005, iqāla after the thing sold perishes). Is that order right where the qiyās is on the farʿ itself and al-Inṣāf is undecided?",
+      "policy_in_force": "As is: `Usul.Reconcile.Grade` and its mirror order taṣḥīḥ > naṣṣ > ẓāhir > qiyās > jazm > aṣḥāb > takhrīj > wajh; 59.f005 resolves for the reading and is listed for review. The bank cannot decide this: the question is its own grade order.",
+      "pins": [
+        "Usul.Reconcile.Grade",
+        "Usul.Reconcile.prevail"
+      ],
+      "sources": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p109",
+          "excerpt_ar": "آخر قياس المذهب صحتها بعد التلف إذا قلنا هي فسخ وتابعه أبو الخطاب في",
+          "note": "al-Qāḍī's qiyās al-madhhab on 59.f005, followed by Abū al-Khaṭṭāb and Ibn ʿAqīl."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p250",
+          "excerpt_ar": "(وتصح) الإقالة (مع تلف ثمن لا مع تلف مبيع) ، لتعذر الرد فيه.",
+          "note": "The muʿtamad's jazm against it (al-Iqnāʿ in Kashshāf; al-Muntahā and its sharḥ likewise)."
+        }
+      ],
+      "alternatives": [
+        "Keep the order (the policy in force): a stated qiyās al-madhhab is a marked madhhab side, the muʿtamad's jazm only the aṣḥāb's.",
+        "Put jazm of a muʿtamad matn above qiyās: the later madhhab's settled statement outranks an earlier inference from it.",
+        "Split jazm: the muʿtamad's own jazm above qiyās, the aṣḥāb's at large below it."
+      ],
+      "research": [
+        "Collect every ledger entry where a qiyās-graded side beats only jazm-graded evidence (the report's `stages` and the evidence grades identify them).",
+        "Read al-Mardāwī's muqaddima to al-Inṣāf and Ibn Badrān's al-Madkhal on how «قياس المذهب» ranks against what later authors state decisively."
+      ],
+      "status": "open-research"
+    },
+    {
+      "id": "RQ-04",
+      "title": "Who «لا يتصرف» bars in al-Furūʿ's ruling on the halved dowry",
+      "raised_by": "docs/architecture/taarud-reconciliation.md, lane A round 1 (53.f009)",
+      "question": "In al-Furūʿ, «لو طلقها ثم عفا ففي صحته وجهان ويصح على الثاني، ولا يتصرف», corrected in Taṣḥīḥ al-Furūʿ as «يصح ولا يتصرف، وهذا الصحيح من المذهب»: is the one who does not dispose the husband (whose half is not yet his on the second view) or the wife (whose disposal of that half is the question of 53.f009)? The masculine verb points to the husband; al-Targhīb's two wujūh that follow, between the sale's option and the donor's option, concern the wife's disposal.",
+      "policy_in_force": "As is: 53.f009 reads it as barring the wife's disposal, so the reading (valid) is off the later madhhab and the ledger rests in its tarjīḥ. The bank cannot decide a pronoun.",
+      "pins": [
+        "Usul.Readings.RajabA3.disposalStands"
+      ],
+      "sources": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p338",
+          "excerpt_ar": "وعليه لو طلقها ثم عفا ففي صحته وجهان ويصح على الثاني، ولا يتصرف. وفي",
+          "note": "al-Furūʿ's wording."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p339",
+          "excerpt_ar": "المصنف قد قدم حكما وهو أنه يصح ولا يتصرف، وهذا الصحيح من المذهب.",
+          "note": "Taṣḥīḥ al-Furūʿ's taṣḥīḥ of it."
+        }
+      ],
+      "alternatives": [
+        "The wife does not dispose (the policy in force): 53.f009 off the madhhab, a residue.",
+        "The husband does not dispose: Taṣḥīḥ al-Furūʿ does not speak to the wife's disposal, the evidence is dropped and 53.f009 has no later treatment."
+      ],
+      "research": [
+        "Read the passage in al-Targhīb (or al-Inṣāf's report of it) for the subject of the two wujūh.",
+        "Check al-Mubdiʿ and Kashshāf on «إذا طلق ثم عفا» for the husband's disposal before he chooses."
+      ],
+      "status": "open-research"
     }
   ]
 }

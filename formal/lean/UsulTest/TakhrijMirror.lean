@@ -514,6 +514,36 @@ import Usul
 #guard (Usul.Readings.RajabA1.mayEat true true false true) == true
 #guard (Usul.Readings.RajabA1.mayEat true true true false) == true
 #guard (Usul.Readings.RajabA1.mayEat true true true true) == true
+#guard (Usul.Readings.RajabA10.vagueOneBarsAll false false) == false
+#guard (Usul.Readings.RajabA10.vagueOneBarsAll false true) == false
+#guard (Usul.Readings.RajabA10.vagueOneBarsAll true false) == true
+#guard (Usul.Readings.RajabA10.vagueOneBarsAll true true) == false
+#guard (Usul.Readings.RajabA10.combinationBarsItsAmount false) == false
+#guard (Usul.Readings.RajabA10.combinationBarsItsAmount true) == true
+#guard (Usul.Readings.RajabA10.simultaneousCombinationVoids false) == true
+#guard (Usul.Readings.RajabA10.simultaneousCombinationVoids true) == false
+#guard (Usul.Readings.RajabA10.commonAmountGeneral false) == false
+#guard (Usul.Readings.RajabA10.commonAmountGeneral true) == true
+#guard (Usul.Readings.RajabA10.alternativeProvenAlone false) == false
+#guard (Usul.Readings.RajabA10.alternativeProvenAlone true) == true
+#guard (Usul.Readings.RajabA11.necessityPermits false) == true
+#guard (Usul.Readings.RajabA11.necessityPermits true) == false
+#guard (Usul.Readings.RajabA11.eachOverWhole false) == true
+#guard (Usul.Readings.RajabA11.eachOverWhole true) == false
+#guard (Usul.Readings.RajabA11.sharikaHalves false) == true
+#guard (Usul.Readings.RajabA11.sharikaHalves true) == false
+#guard (Usul.Readings.RajabA11.accruesToRest false) == false
+#guard (Usul.Readings.RajabA11.accruesToRest true) == true
+#guard (Usul.Readings.RajabA12.ruledFromCause false) == false
+#guard (Usul.Readings.RajabA12.ruledFromCause true) == true
+#guard (Usul.Readings.RajabA12.worshipFromStart false) == false
+#guard (Usul.Readings.RajabA12.worshipFromStart true) == true
+#guard (Usul.Readings.RajabA12.occurrenceGoverns false false) == true
+#guard (Usul.Readings.RajabA12.occurrenceGoverns false true) == false
+#guard (Usul.Readings.RajabA12.occurrenceGoverns true false) == true
+#guard (Usul.Readings.RajabA12.occurrenceGoverns true true) == false
+#guard (Usul.Readings.RajabA12.cancelOnExistenceValid false) == false
+#guard (Usul.Readings.RajabA12.cancelOnExistenceValid true) == true
 #guard (Usul.Readings.RajabA2.nafaqaStipulable false false) == true
 #guard (Usul.Readings.RajabA2.nafaqaStipulable false true) == true
 #guard (Usul.Readings.RajabA2.nafaqaStipulable true false) == false
@@ -654,3 +684,43 @@ import Usul
 #guard (Usul.Readings.RajabA8.sharedNameValid true true true) == false
 #guard (Usul.Readings.RajabA8.lotDistinguishes false) == false
 #guard (Usul.Readings.RajabA8.lotDistinguishes true) == true
+#guard (Usul.Readings.RajabA9.maadumGrantValid false false false) == false
+#guard (Usul.Readings.RajabA9.maadumGrantValid false false true) == true
+#guard (Usul.Readings.RajabA9.maadumGrantValid false true false) == true
+#guard (Usul.Readings.RajabA9.maadumGrantValid false true true) == true
+#guard (Usul.Readings.RajabA9.maadumGrantValid true false false) == false
+#guard (Usul.Readings.RajabA9.maadumGrantValid true false true) == false
+#guard (Usul.Readings.RajabA9.maadumGrantValid true true false) == false
+#guard (Usul.Readings.RajabA9.maadumGrantValid true true true) == false
+#guard (Usul.Readings.RajabA9.judgedSequential false false) == true
+#guard (Usul.Readings.RajabA9.judgedSequential false true) == true
+#guard (Usul.Readings.RajabA9.judgedSequential true false) == false
+#guard (Usul.Readings.RajabA9.judgedSequential true true) == true
+#guard (Usul.Readings.RajabA9.otherOptionStands false) == true
+#guard (Usul.Readings.RajabA9.otherOptionStands true) == false
+#guard (Usul.Readings.RajabA9.refusalExactedForHim false false false) == false
+#guard (Usul.Readings.RajabA9.refusalExactedForHim false false true) == false
+#guard (Usul.Readings.RajabA9.refusalExactedForHim false true false) == false
+#guard (Usul.Readings.RajabA9.refusalExactedForHim false true true) == false
+#guard (Usul.Readings.RajabA9.refusalExactedForHim true false false) == false
+#guard (Usul.Readings.RajabA9.refusalExactedForHim true false true) == false
+#guard (Usul.Readings.RajabA9.refusalExactedForHim true true false) == false
+#guard (Usul.Readings.RajabA9.refusalExactedForHim true true true) == true
+#guard (Usul.Readings.RajabA9.refusalRightFalls false false) == false
+#guard (Usul.Readings.RajabA9.refusalRightFalls false true) == false
+#guard (Usul.Readings.RajabA9.refusalRightFalls true false) == true
+#guard (Usul.Readings.RajabA9.refusalRightFalls true true) == false
+#guard (Usul.Readings.RajabA9.refusalCompelledToChoose false false false) == false
+#guard (Usul.Readings.RajabA9.refusalCompelledToChoose false false true) == false
+#guard (Usul.Readings.RajabA9.refusalCompelledToChoose false true false) == false
+#guard (Usul.Readings.RajabA9.refusalCompelledToChoose false true true) == false
+#guard (Usul.Readings.RajabA9.refusalCompelledToChoose true false false) == false
+#guard (Usul.Readings.RajabA9.refusalCompelledToChoose true false true) == true
+#guard (Usul.Readings.RajabA9.refusalCompelledToChoose true true false) == false
+#guard (Usul.Readings.RajabA9.refusalCompelledToChoose true true true) == false
+#guard (Usul.Readings.RajabA9.rightOnRefuserExacted false false) == false
+#guard (Usul.Readings.RajabA9.rightOnRefuserExacted false true) == false
+#guard (Usul.Readings.RajabA9.rightOnRefuserExacted true false) == false
+#guard (Usul.Readings.RajabA9.rightOnRefuserExacted true true) == true
+#guard (Usul.Readings.RajabA9.substituteRefusalJudgedByOriginal false) == false
+#guard (Usul.Readings.RajabA9.substituteRefusalJudgedByOriginal true) == true

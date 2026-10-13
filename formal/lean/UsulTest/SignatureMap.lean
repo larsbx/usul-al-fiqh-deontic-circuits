@@ -311,6 +311,10 @@ import Usul
 #check @Usul.DalilKind.resort
 #check @Usul.Jadal.RespectsSources
 #check @Usul.Reconcile.Grade
+#check @Usul.Readings.RajabA2.asTree
+#check @Usul.Readings.RajabA5.errorActorLiable
+#check @Usul.Reconcile.prevail
+#check @Usul.Readings.RajabA3.disposalStands
 #check @Usul.Process.status
 #check @Usul.Process.analogy_never_outranks_text
 #check @Usul.Process.order_is_resort
