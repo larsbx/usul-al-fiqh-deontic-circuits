@@ -204,6 +204,7 @@ theorem exists_preferred (U : List α) (hU : ∀ a, a ∈ U) : ∃ P, Preferred 
 
 /-- Stable extensions attack every argument outside the conflict-free set.
 They need not exist, even on finite frameworks. -/
+variable (att) in
 def Stable (S : ASet α) : Prop :=
   ConflictFree att S ∧ ∀ a, ¬ S a → ∃ b, S b ∧ att b a
 
