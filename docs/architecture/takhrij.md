@@ -452,7 +452,7 @@ Results on the round:
 | a8 | 104 `unknownConsentBinds`; 105 `vagueInshaValid`, `vagueReportAccepted`, `sharedNameValid`, `lotDistinguishes` |
 
 Results on the round:
-- **43 derivable, 46 ikhtilāf (36 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 89/89 = 1.000, madhhab coverage 79/89 = 0.888.
+- **45 derivable, 44 ikhtilāf (34 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 89/89 = 1.000, madhhab coverage 79/89 = 0.888. In review two cases moved to derivable because their positions differed on the facts, not on the reading: 96.f004 is annotated for its leading ruling (the uḍḥiya designated from the outset; the dhimma branch, where Ṣāḥib al-Talkhīṣ requires the owner's intention, needs a fact the reading lacks), and in 95.f002 the khilāf is antecedent, over whether the ruling is overturned, and each side's ruling is the reading's output on its own facts.
 - **Reconciliation:** 10 contradictions with 23 evidence items: 7 residues against their readings, 2 with them (104.f012, 105.f009, both register questions) and 1 tawaqquf. At integration 96.f006's grades were corrected: al-Qāḍī with Ibn ʿAqīl are two named companions (`ashab`), not the aṣḥāb at large (`jazm`), so against Abū al-Khaṭṭāb with Ibn Rajab's preference the entry rests in tawaqquf.
 - **Register questions** are listed in [`taarud-reconciliation.md`](taarud-reconciliation.md).
 

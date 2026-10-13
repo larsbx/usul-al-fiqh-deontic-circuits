@@ -61,24 +61,13 @@
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f004",
    "encoder": "performed_without_leave_owned",
-   "class": "genuine_ikhtilaf",
+   "class": "derivable",
    "facts": {
     "wilaya": false,
     "distinct": true
    },
    "expected": true,
-   "positions": [
-    {
-     "who": "Aḥmad (naṣṣ) and most aṣḥāb («ولا فرق عند الأكثرين»): it suffices and he is not liable, whether designated from the outset or for a dhimma obligation",
-     "ruling": true
-    },
-    {
-     "who": "Ṣāḥib al-Talkhīṣ: the one designated for a dhimma obligation needs the owner's intention, so another's slaughter does not suffice and he is liable",
-     "ruling": false
-    }
-   ],
-   "matches_madhhab": true,
-   "note": "A designated uḍḥiya slaughtered by another without the owner's leave suffices for the owner and the slaughterer owes nothing, «نص عليه»: it is the owner's, fixed for slaughter, so distinct («لأنها متعينة للذبح»), and the slaughterer has no wilāya. The leading ruling is undisputed for the animal designated from the outset; the khilāf the record reports arises for one designated in place of an obligation in the dhimma, which most do not distinguish and Ṣāḥib al-Talkhīṣ does (it needs the owner's intention at slaughter, so another's slaughter does not suffice and he is liable). That branch is annotated; the reading has no fact for it and gives the majority's side. Al-Inṣāf holds it without that distinction: «(وإن ذبحها ذابح في وقتها بغير إذن أجزأت ولا ضمان على ذابحها) … هذا المذهب وعليه الأصحاب» (v04:p093). Follow-ons: the slaughterer who intends it for himself knowing it is another's (no iǧzāʾ, liable; Ibn Rajab's reconciliation of al-Qāḍī's two riwāyāt as two states) and a stranger who distributes the meat (the aṣḥāb: it does not suffice; Ibn ʿAqīl's iḥtimāl)."
+   "note": "A designated uḍḥiya slaughtered by another without the owner's leave suffices for the owner and the slaughterer owes nothing, «نص عليه»: it is the owner's, fixed for slaughter, so distinct («لأنها متعينة للذبح»), and the slaughterer has no wilāya. Annotated for the leading ruling, the animal designated from the outset, on which no dispute is reported; al-Inṣāf: «(وإن ذبحها ذابح في وقتها بغير إذن أجزأت ولا ضمان على ذابحها) … هذا المذهب وعليه الأصحاب» (v04:p093). Follow-ons, not annotated: the animal designated in place of an obligation in the dhimma, which most do not distinguish («ولا فرق عند الأكثرين») and Ṣāḥib al-Talkhīṣ does (it needs the owner's intention at slaughter, a fact the reading lacks: candidate refinement); the slaughterer who intends it for himself knowing it is another's (no iǧzāʾ, liable; Ibn Rajab's reconciliation of al-Qāḍī's two riwāyāt as two states); a stranger who distributes the meat (the aṣḥāb: it does not suffice; Ibn ʿAqīl's iḥtimāl)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f005",

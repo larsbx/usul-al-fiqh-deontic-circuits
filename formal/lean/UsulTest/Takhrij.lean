@@ -261,7 +261,7 @@ import Usul
 #guard (Usul.Readings.RajabA5.secondReceiverLiable false true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f001 (derivable)
 #guard (Usul.Readings.RajabA5.errorActorLiable true false false false false) == false
--- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f002 (genuine_ikhtilaf)
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f002 (derivable)
 #guard (Usul.Readings.RajabA5.errorActorLiable false true true true false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f003 (genuine_ikhtilaf)
 #guard (Usul.Readings.RajabA5.errorActorLiable false false false false false) == false
@@ -301,7 +301,7 @@ import Usul
 #guard (Usul.Readings.RajabA6.ownedDischarge true false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f003 (derivable)
 #guard (Usul.Readings.RajabA6.ownedDischarge true false) == true
--- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f004 (genuine_ikhtilaf)
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f004 (derivable)
 #guard (Usul.Readings.RajabA6.ownedDischarge false true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f005 (genuine_ikhtilaf)
 #guard (Usul.Readings.RajabA6.ownedDischarge false true) == true

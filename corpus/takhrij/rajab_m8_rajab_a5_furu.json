@@ -108,7 +108,7 @@
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f002",
       "encoder": "error_actor_liable",
-      "class": "genuine_ikhtilaf",
+      "class": "derivable",
       "facts": {
         "external_cause": false,
         "basis_void": true,
@@ -117,18 +117,7 @@
         "negligent": false
       },
       "expected": true,
-      "positions": [
-        {
-          "who": "al-Khiraqī and al-Qāḍī («المذهب وجوبه»): the ruling is overturned and the party ruled for bears the property",
-          "ruling": true
-        },
-        {
-          "who": "the riwāya al-Qāḍī and others report: the ruling stands and the witnesses are liable",
-          "ruling": false
-        }
-      ],
-      "matches_madhhab": true,
-      "note": "The witnesses prove sinners or unbelievers after the ruling and its execution: «ثم يجب ضمان المال على المحكوم له لإتلافه له مباشرة». The khilāf arises on whether the ruling is overturned; Ibn Rajab calls the riwāya «ضعيف جدا … ولا أصل لذلك في كلام أحمد», holding that on non-overturning no one is liable. al-Inṣāf (v12:p105): overturned for sinners «على الصحيح من المذهب. وعليه جماهير الأصحاب», «ويرجع بالمال أو ببدله على المحكوم له»; on the madhhab side. Follow-on: a ruling for a life or limb, two ṭuruq (like property, al-Muḥarrar; on the judge, al-Qāḍī in al-Mujarrad)."
+      "note": "The witnesses prove sinners or unbelievers after the ruling and its execution: «ثم يجب ضمان المال على المحكوم له لإتلافه له مباشرة». Annotated on the madhhab's facts, the ruling overturned (al-Khiraqī and al-Qāḍī, «المذهب وجوبه»; al-Inṣāf v12:p105, overturned for sinners «على الصحيح من المذهب. وعليه جماهير الأصحاب», «ويرجع بالمال أو ببدله على المحكوم له»): the party ruled for bears it. The khilāf is antecedent to the reading, on whether the ruling is overturned at all; the riwāya al-Qāḍī and others report (the ruling stands, the witnesses are liable) is the reading's own output on `ruling_overturned = false`, so no position disputes the reading under its own facts. Ibn Rajab calls that riwāya «ضعيف جدا … ولا أصل لذلك في كلام أحمد». Follow-on: a ruling for a life or limb, two ṭuruq (like property, al-Muḥarrar; on the judge, al-Qāḍī in al-Mujarrad)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f003",
