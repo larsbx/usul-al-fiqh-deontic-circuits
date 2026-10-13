@@ -541,7 +541,7 @@ import Usul
 #guard (Usul.Readings.RajabA12.occurrenceGoverns false false) == true
 #guard (Usul.Readings.RajabA12.occurrenceGoverns false true) == false
 #guard (Usul.Readings.RajabA12.occurrenceGoverns true false) == true
-#guard (Usul.Readings.RajabA12.occurrenceGoverns true true) == true
+#guard (Usul.Readings.RajabA12.occurrenceGoverns true true) == false
 #guard (Usul.Readings.RajabA12.cancelOnExistenceValid false) == false
 #guard (Usul.Readings.RajabA12.cancelOnExistenceValid true) == true
 #guard (Usul.Readings.RajabA2.nafaqaStipulable false false) == true

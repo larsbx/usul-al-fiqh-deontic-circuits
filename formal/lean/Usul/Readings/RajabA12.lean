@@ -41,8 +41,8 @@ the aṣḥāb report without dispute («فإنه يقع الطلاق بدعيا
 drops whichever side the sharʿ bars. `suspensionBarred`: taking the state of suspension leads
 to what is sharʿan impossible; `occurrenceBarred`: taking the state of occurrence does. The
 output is that the state of occurrence governs. -/
-def occurrenceGoverns (suspensionBarred occurrenceBarred : Bool) : Bool :=
-  suspensionBarred || !occurrenceBarred
+def occurrenceGoverns (_suspensionBarred occurrenceBarred : Bool) : Bool :=
+  !occurrenceBarred
 
 /-- With neither side barred, the reading's side: the state of occurrence. -/
 theorem occurrence_by_default : occurrenceGoverns false false = true := rfl
@@ -51,6 +51,10 @@ theorem occurrence_by_default : occurrenceGoverns false false = true := rfl
 theorem barred_side_dropped :
     occurrenceGoverns true false = true ∧ occurrenceGoverns false true = false :=
   ⟨rfl, rfl⟩
+
+/-- A barred state of occurrence never governs, whatever the state of suspension: the default
+side already is occurrence, so barring suspension only confirms it. -/
+theorem occurrence_barred_never_governs (s : Bool) : occurrenceGoverns s true = false := rfl
 
 /-- Qāʿida 118: «تعليق فسخ العقد وإبطاله لوجوده إن كان فيه مقصود معتبر شرعا صح وإلا لم يصح إذ
 لو صح لصار العقد غير مقصود في نفسه». `legitimatePurpose`: the suspension serves a purpose the

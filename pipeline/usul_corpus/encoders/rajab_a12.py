@@ -16,7 +16,7 @@ ENCODERS: dict[str, dict] = {
     "occurrence_state_governs": dict(
         sadi=[], qawaid=[RAJAB.format(117)], facts={"suspension_barred": B, "occurrence_barred": B},
         out=B, lean=f"{_NS}.occurrenceGoverns {{suspension_barred}} {{occurrence_barred}}",
-        py=lambda f: f["suspension_barred"] or not f["occurrence_barred"]),
+        py=lambda f: not f["occurrence_barred"]),
     "cancel_on_existence_valid": dict(
         sadi=[], qawaid=[RAJAB.format(118)], facts={"legitimate_purpose": B},
         out=B, lean=f"{_NS}.cancelOnExistenceValid {{legitimate_purpose}}",
