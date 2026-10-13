@@ -118,10 +118,10 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f003",
-      "grades": ["takhrij", "takhrij", "wajh"],
+      "grades": ["takhrij", "takhrij", "takhrij"],
       "jam": null,
       "naskh": null,
-      "note": "Joining a co-wife to three ṭalāqs: two on halving, one on vagueness, three as an iḥtimāl; no later work treats the count. al-Inṣāf's taṣḥīḥ of halving for the unqualified «أشركتك» in sale, the cognate inshāʾ, is graded qiyās for two; Kashshāf's ground that the joining makes «الحكم فيهما واحدا … كما لو أعاده عليها» implies three, graded takhrīj. Tarjīḥ for the reading, from a cognate only.",
+      "note": "Joining a co-wife to three ṭalāqs: two on halving, one on vagueness, three as an iḥtimāl; no later work treats the count. al-Inṣāf's taṣḥīḥ of halving for the unqualified «أشركتك» in sale, the cognate inshāʾ, is graded qiyās for two; Kashshāf's ground that the joining makes «الحكم فيهما واحدا … كما لو أعاده عليها» implies three, graded takhrīj. Tarjīḥ for the reading, from a cognate only. Integrator: Ibn Rajab's iḥtimāl grades takhrīj, not a bare wajh.",
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v04:p436",
