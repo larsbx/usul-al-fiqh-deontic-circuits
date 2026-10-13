@@ -1,0 +1,30 @@
+{
+  "shard": "rajab-a10",
+  "lane": "A",
+  "base_commit": "3cd93a8817ffa4edf10a944b63c50e991cc6da04",
+  "obligations": [
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f001",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f002",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f003",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f004",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f005",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f006",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f007",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f008",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f009",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f010",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f011",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f012",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f013",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f014",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f015",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f016",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f017",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f018",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f019",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f020",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f000",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f001",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f002"
+  ]
+}
