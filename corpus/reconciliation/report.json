@@ -10,14 +10,14 @@
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f012"
   ],
   "stages": {
-    "jam": 19,
+    "jam": 20,
     "naskh": 1,
-    "tarjih": 200,
+    "tarjih": 199,
     "tawaqquf": 14
   },
   "standing": {
-    "against_reading": 135,
-    "for_reading": 85,
+    "against_reading": 134,
+    "for_reading": 86,
     "tawaqquf": 14
   },
   "worklist": {
@@ -180,9 +180,6 @@
     ],
     "cancel_on_existence_valid": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f004"
-    ],
-    "cause_from_one_of_two": [
-      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000"
     ],
     "cause_restricts_general": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f003"

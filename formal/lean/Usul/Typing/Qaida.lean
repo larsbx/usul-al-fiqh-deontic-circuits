@@ -196,6 +196,12 @@ structure Rajab12 where
 structure Rajab14 where
   harmless : Option (Bool) := none
 
+/-- Ibn Rajab 14 on the first riwāya's own ground, «نظرا إلى أن كل واحد منهما متيقن للطهارة شاك في
+الحدث»: each man is certain of his own prior state and doubts only the breach (Q15: each on his
+aṣl). Read by `cause_on_certainty` (`Usul.Readings.Concordance`). -/
+structure Rajab14Certainty extends Rajab14 where
+  eachCertain : Option Bool := none
+
 /-- Ibn Rajab 15 «إذا استصحبنا أصلا وأعملنا ظاهرا في طهارة شيء أو حله أو حرمته وكان لازم ذلك تغير أصل آخر يجب استصحابه أو ترك العمل بظاهر آخر يجب إعماله لم يلتفت إلى ذلك اللازم على الصحيح، ولذلك صور: منها) إذا استيقظ من نومه فوجد …». Read by `each_on_its_asl`. -/
 structure Rajab15 where
   separateMatters : Option (Bool) := none

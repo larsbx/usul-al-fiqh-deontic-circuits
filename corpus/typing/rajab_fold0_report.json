@@ -7,7 +7,7 @@
   "situations": 205,
   "fields_stated": 225,
   "cases": 156,
-  "encoders": 176,
+  "encoders": 177,
   "applies": 0.4359,
   "recall": {
     "1": 0.5641,
@@ -110,7 +110,7 @@
       "top5": 1,
       "unrouted": 0
     },
-    "cause_from_one_of_two": {
+    "cause_on_certainty": {
       "cases": 1,
       "applies": 0,
       "top5": 0,
@@ -708,7 +708,7 @@
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000",
-      "encoder": "cause_from_one_of_two",
+      "encoder": "cause_on_certainty",
       "settled": 0.0,
       "rank": null
     },

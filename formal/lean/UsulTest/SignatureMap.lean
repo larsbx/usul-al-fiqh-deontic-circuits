@@ -371,6 +371,8 @@ import Usul
 #check @Usul.Tanaqud.t15_jam
 #check @Usul.Refinements.oneOfTwoAttaches
 #check @Usul.Refinements.consequenceCarries
+#check @Usul.Readings.Concordance.q14_alone_is_q15
+#check @Usul.Readings.Concordance.q14_together_attaches_alone_not
 #check @Usul.Refinements.q65_is_the_unbelieved_basis
 #check @Usul.Tanaqud.rajab_q93_q75_consistent
 #check @Usul.Refinements.binding_is_implicit_exception
@@ -537,6 +539,14 @@ import Usul
 #check @Usul.Refinements.removedWithPrincipalIn_conservative
 #check @Usul.Refinements.annulsNonexistentIn
 #check @Usul.Refinements.annulsNonexistentIn_conservative
+#check @Usul.Readings.Concordance.attachOnCertainty
+#check @Usul.Readings.Concordance.attachOnCertainty_conservative
+#check @Usul.Readings.Concordance.attachOnCertainty_departs
+#check @Usul.Readings.Concordance.attachOnCertainty_abstains
+#check @Usul.Readings.Concordance.q3_readings_agree
+#check @Usul.Readings.Concordance.q9_readings_agree
+#check @Usul.Readings.Concordance.validDespite_refines_q38
+#check @Usul.Readings.Concordance.q15_readings_agree
 #check @Usul.Readings.Mubashara.damanOn
 #check @Usul.Readings.Mubashara.q127_direct_unless_arising
 #check @Usul.Readings.Mubashara.q127_cause_alone_without_udwan

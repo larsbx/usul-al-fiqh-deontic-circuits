@@ -345,7 +345,7 @@
             1,
             1
           ],
-          "lexical_rank": 60
+          "lexical_rank": 61
         },
         {
           "encoder": "annulment_without_return",
@@ -385,12 +385,12 @@
           "lexical_rank": 2
         },
         {
-          "encoder": "alternative_proven_alone",
+          "encoder": "asl_zahir",
           "settled": null,
           "lexical_rank": 3
         },
         {
-          "encoder": "asl_zahir",
+          "encoder": "alternative_proven_alone",
           "settled": null,
           "lexical_rank": 4
         },
@@ -452,7 +452,7 @@
             1,
             3
           ],
-          "lexical_rank": 38
+          "lexical_rank": 39
         },
         {
           "encoder": "cause_from_one_of_two",
@@ -482,7 +482,7 @@
             1,
             2
           ],
-          "lexical_rank": 94
+          "lexical_rank": 95
         },
         {
           "encoder": "abstention_under_possible_condition",
@@ -712,7 +712,7 @@
             1,
             1
           ],
-          "lexical_rank": 145
+          "lexical_rank": 146
         },
         {
           "encoder": "substitute_at_obligation",
@@ -750,7 +750,7 @@
             1,
             1
           ],
-          "lexical_rank": 148
+          "lexical_rank": 149
         },
         {
           "encoder": "substitute_at_obligation",
@@ -835,7 +835,7 @@
           "lexical_rank": 4
         },
         {
-          "encoder": "cause_from_one_of_two",
+          "encoder": "performed_without_leave_owned",
           "settled": null,
           "lexical_rank": 5
         }
@@ -1052,7 +1052,7 @@
             1,
             2
           ],
-          "lexical_rank": 57
+          "lexical_rank": 58
         },
         {
           "encoder": "wage_without_stipulation",
@@ -1060,7 +1060,7 @@
             1,
             2
           ],
-          "lexical_rank": 71
+          "lexical_rank": 72
         },
         {
           "encoder": "benefit_then_thing",
@@ -1221,7 +1221,7 @@
             1,
             1
           ],
-          "lexical_rank": 153
+          "lexical_rank": 154
         },
         {
           "encoder": "successive_by_binding",
@@ -1289,7 +1289,7 @@
             1,
             1
           ],
-          "lexical_rank": 149
+          "lexical_rank": 150
         },
         {
           "encoder": "substitute_at_obligation",
