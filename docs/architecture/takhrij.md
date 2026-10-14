@@ -185,7 +185,7 @@ The unit is a committed farʿ record, which can contain multiple examples. Annot
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.759 | 0 | 0 |
-| All annotation suites | 841 | 0.993 | 0.738 | 0 | 6 |
+| All annotation suites | 841 | 0.993 | 0.737 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -480,9 +480,9 @@ Results on the round:
 | a16 | 127 `directLiable`, `causeLiable`; 129 `hitStateGoverns`, `aqilaBears`; 130 `countsAsSurplus`; 131 `countsAsRich` |
 
 Results on the round:
-- **39 derivable, 50 ikhtilāf (28 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 89/89 = 1.000, madhhab coverage 67/89 = 0.753. Q121 (custom specialising the general) carries eight of the residues: its reading takes specialisation for the qāʿida's unmarked third class (RQ-02).
-- **At integration**, four cases moved to derivable under round 2's rule, their positions differing on an antecedent fact, not on the reading: 127.f004 (whether compulsion excuses), 127.f006 (the record's own «جعلا له كالدافع أو … كالممسك»), 127.f008 (whether the holder is a cause the killing is built on), and 125.f007 (the only contrary a Shāfiʿī's «مقتضى مذهبكم», not a position within the madhhab). Two ledger entries went with them.
-- **Reconciliation:** 22 contradictions with 41 evidence items: 18 residues, 2 for the reading, 2 tawaqquf.
+- **36 derivable, 53 ikhtilāf (30 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 89/89 = 1.000, madhhab coverage 66/89 = 0.742. Q121 (custom specialising the general) carries eight of the residues: its reading takes specialisation for the qāʿida's unmarked third class (RQ-02).
+- **At integration** 125.f007 moved to derivable (the only contrary is a Shāfiʿī's «مقتضى مذهبكم», not a position within the madhhab), with its ledger entry. Moving 127.f004, f006 and f008 too was reverted in review: there the positions dispute the *legal characterization* of one concrete scenario (is the stone-placer a pusher or a holder; does compulsion excuse), not a fact of the case, and Ibn Rajab's own placement of each in the qāʿida's classes fixes the reading's facts. Unlike 95.f002 (round 2), where the dispute is over a separate antecedent ruling, these stay `genuine_ikhtilaf`.
+- **Reconciliation:** 23 contradictions with 44 evidence items: 19 residues, 2 for the reading, 2 tawaqquf.
 - **Register questions** are listed in [`taarud-reconciliation.md`](taarud-reconciliation.md).
 
 **Coverage trend:**
@@ -526,8 +526,8 @@ Results on the round:
 | All, after lane A round 2 | 663 | 0.991 | 0.733 | 0 | 6 |
 | Lane A round 3 alone | 89 | 1.000 | 0.764 | 0 | 0 |
 | All, after lane A round 3 | 752 | 0.992 | 0.736 | 0 | 6 |
-| Lane A round 4 alone | 89 | 1.000 | 0.753 | 0 | 0 |
-| All, after lane A round 4 | 841 | 0.993 | 0.738 | 0 | 6 |
+| Lane A round 4 alone | 89 | 1.000 | 0.742 | 0 | 0 |
+| All, after lane A round 4 | 841 | 0.993 | 0.737 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 

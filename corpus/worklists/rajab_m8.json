@@ -22,7 +22,7 @@
     "takhrij/rajab_m8_rajab_a13_furu.json": "1292efd657b5ebc521b4b433c05b7f91cd345cd6c84b4784a9bbe5b478be4a72",
     "takhrij/rajab_m8_rajab_a14_furu.json": "a999112ccfc6f5512ff099ca74ed249c93559970ce5022aa4a85585510fdbd70",
     "takhrij/rajab_m8_rajab_a15_furu.json": "c8271dc8dbb311a9c29bba68af7c1a2d9f022e77d0ed0a19fa71dacdf3fd5249",
-    "takhrij/rajab_m8_rajab_a16_furu.json": "1e8c19ef6d120af968932ab23cd539f4937a357c958db5479ef2df44d4b7456d",
+    "takhrij/rajab_m8_rajab_a16_furu.json": "b44efa94ab8294636c157909b8859ad58e170cb99f4c3ab566f0e4a6f7398f38",
     "takhrij/rajab_m8_rajab_a1_furu.json": "4f33b40ae4f9d181e5ba918637ce4776f851447daa4f6db0408679998319afad",
     "takhrij/rajab_m8_rajab_a2_furu.json": "0b20ad801714e4c6389ea474ea5d56e7586be60c215ebd6c13669efb608d1c93",
     "takhrij/rajab_m8_rajab_a3_furu.json": "11fccbacbf9cf3db31fbe5955bfcc759b379c7fed33b2e17bff7348748af5896",
@@ -320,16 +320,16 @@
   "aggregate_report": {
     "total": 841,
     "classes": {
-      "derivable": 355,
-      "genuine_ikhtilaf": 479,
+      "derivable": 352,
+      "genuine_ikhtilaf": 482,
       "missing_fact": 1,
       "missing_rule": 5,
       "segmentation_error": 1
     },
     "coverage": 0.993,
-    "madhhab_coverage": 0.738,
+    "madhhab_coverage": 0.737,
     "encoding_error": 0,
-    "ikhtilaf_matching_madhhab": 265,
+    "ikhtilaf_matching_madhhab": 267,
     "gaps_open": 6,
     "revisited": 37
   },

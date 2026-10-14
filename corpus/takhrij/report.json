@@ -1,16 +1,16 @@
 {
  "total": 841,
  "classes": {
-  "derivable": 355,
-  "genuine_ikhtilaf": 479,
+  "derivable": 352,
+  "genuine_ikhtilaf": 482,
   "missing_fact": 1,
   "missing_rule": 5,
   "segmentation_error": 1
  },
  "coverage": 0.993,
- "madhhab_coverage": 0.738,
+ "madhhab_coverage": 0.737,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 265,
+ "ikhtilaf_matching_madhhab": 267,
  "gaps_open": 6,
  "revisited": 37,
  "revisit_queue": [],
@@ -441,11 +441,11 @@
    "genuine_ikhtilaf": 2
   },
   "direct_agent_liable": {
-   "derivable": 1
+   "genuine_ikhtilaf": 1
   },
   "cause_agent_liable": {
-   "derivable": 7,
-   "genuine_ikhtilaf": 1
+   "derivable": 5,
+   "genuine_ikhtilaf": 3
   },
   "hit_state_governs": {
    "derivable": 1,

@@ -35,6 +35,42 @@
      "note": "The other riwāya: the holder is killed too, chosen by Abū Muḥammad al-Jawzī and put first in al-Riʿāyatayn and al-Ḥāwī al-ṣaghīr."
     }
    ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f006",
+   "grades": [
+    "nass",
+    "tashih"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Ibn Rajab's two riwāyas; al-Inṣāf puts the liability on the stone-placer alone «وهذا المذهب المشهور», al-Muntahā states it decisively (the placer as a pusher where both are aggressors). Against the reading.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v10:p034",
+     "excerpt_ar": "اجتمع سببان مختلفان. (فالضمان على واضع الحجر) . وهذا المذهب المشهور.",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "«وقال في الفروع: وهو أشهر», with the jazm of al-Hidāya, al-Mustawʿib, al-Mughnī, al-Sharḥ and al-Wajīz."
+    },
+    {
+     "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v05:p056",
+     "excerpt_ar": "أو وضع آخر حجرا أو نحوه ككيس دراهم فعثر به إنسان فوقع في البئر ضمن واضع",
+     "position": 1,
+     "grade": "jazm",
+     "who": "Ibn al-Najjār, al-Muntahā",
+     "note": "«ضمن واضع كدافع مع حافر إذا تعديا وإلا فعلى متعد منهما»."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v10:p034",
+     "excerpt_ar": "والرعايتين، والحاوي الصغير، والفروع، وغيرهم. وعنه: الضمان عليهما. قال في",
+     "position": 0,
+     "grade": "nass",
+     "who": "a riwāya of Aḥmad, as al-Inṣāf reports it",
+     "note": "«وعنه: الضمان عليهما. قال في الفروع: فيتخرج منه ضمان المتسبب، اختاره ابن عقيل، وغيره»."
+    }
+   ]
   }
  ]
 }

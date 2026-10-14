@@ -226,12 +226,12 @@ All six resolve by tarjīḥ against their readings and join the worklist. 1.f00
 | 59.f005 | the question is the grade order itself (qiyās above jazm) | **open: RQ-03** |
 | 53.f009 | the subject of al-Furūʿ's «ولا يتصرف» | **open: RQ-04** |
 
-**Lane A, round 4** added 22 contradictions and 41 evidence items: 18 residues, 2 resolved for the reading and 2 tawaqquf. No jamʿ was attempted. The ledger stands at 232 entries and 568 active evidence items, with 19 jamʿ, 1 naskh, 199 tarjīḥ (134 residues) and 13 tawaqquf. The round's register questions went through the bank's procedure first (invariant 9):
+**Lane A, round 4** added 23 contradictions and 44 evidence items: 19 residues, 2 resolved for the reading and 2 tawaqquf. No jamʿ was attempted. The ledger stands at 233 entries and 571 active evidence items, with 19 jamʿ, 1 naskh, 200 tarjīḥ (135 residues) and 13 tawaqquf. The round's register questions went through the bank's procedure first (invariant 9):
 
 | Farʿ / qāʿida | Candidate farq, or the procedure applied | Outcome |
 |---|---|---|
-| 127.f004, f006, f008; 125.f007 | positions under the same facts | derivable (see takhrij.md) |
-| 127.f005 | the two riwāyas disagree on the same facts (holding and killing, both ʿudwān) | ikhtilāf stands; candidate farq: the madhhab keeps qawad for the killer and makes the holder's share a separate punishment |
+| 125.f007 | the only contrary is not a position within the madhhab | derivable |
+| 127.f004, f005, f006, f008 | the positions dispute the legal characterization of one scenario, which Ibn Rajab's placement fixes for the reading | ikhtilāf stands; candidate farqs: the placer as the pusher (f006, the record's own «جعلا له كالدافع»); qawad for the killer alone, the holder's share a separate punishment (f005) |
 | 121 | the madhhab includes the instance where the sharʿ or the language names it, «تقديما للشرع واللغة»; the reading's side of the third class is an unmarked choice | farq candidate; **RQ-02** |
 | 124.f003 | Sharḥ al-Muntahā v03:p103, «ولأنها سبب الطلاق وسبب الحكم لا يجوز إخراجه من العموم بالتخصيص» (a cognate) | farq candidate (`addressee_is_occasion`) |
 | 126.f004, f005 | the text's own farq: an instance absent from intent against one present but unknown | farq candidate |
