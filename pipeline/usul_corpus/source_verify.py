@@ -14,7 +14,7 @@ import re
 from collections import Counter
 from pathlib import Path
 
-from . import arabic, fetch, nusus, texts
+from . import arabic, fetch, nusus, reconcile, texts
 
 REF = re.compile(r"src:([a-z0-9-]+)/(v\d+:p\d+)\Z")
 WID = re.compile(r"src:([a-z0-9-]+)(?:/|#|$)")
@@ -67,7 +67,7 @@ def check_quote(text: str, excerpt: str, locator: str) -> str | None:
 
 
 def required_witnesses(corpus: Path) -> set[str]:
-    ledger = json.loads((corpus / "reconciliation/ledger.json").read_text(encoding="utf-8"))
+    ledger = reconcile.load(corpus)  # same base-plus-shards view as tests and generators
     ids = set()
     for entry in ledger["entries"]:
         for item in entry.get("evidence", []):

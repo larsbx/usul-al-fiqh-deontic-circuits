@@ -196,11 +196,11 @@ bytes fail. The locked-source pattern follows the still-open PR #51's
 grading changes.
 
 On the implementation base `2224f2e58a5c08fe9878fa55569f30755b9878f4`, the subset
-contains **13 witnesses and all 414 active reconciliation evidence items**. All
+contains **14 witnesses and all 531 active reconciliation evidence items**. All
 paged `ref`/`excerpt_ar` pairs in corpus JSON using those same witnesses are also
-checked: **612 field occurrences verified**, including copies in contribution
+checked: **698 field occurrences verified**, including copies in contribution
 shards. These are counts of fields, not distinct scholarly arguments. The report
-lists **650 excluded field occurrences** individually. Non-page anchors and
+lists **565 excluded field occurrences** individually. Non-page anchors and
 other witnesses are outside this subset even if a developer happens to cache
 them. JSONL records, other quotation field shapes and the separate foundation
 āya/ḥadīth-number/verdict tests remain outside this report's coverage. PR-06 is
@@ -236,3 +236,24 @@ missing sources/pins, altered bytes, LFS pointers, wrong URLs, bad quotes/pages,
 empty evidence, truncated qualifiers, network failure and lock immutability.
 Source fidelity, Lean/formal correctness, and independent scholarly validation
 remain separate; this gate promotes no candidate reading or legal ruling.
+
+
+Cold-cache CI exposed a selector omission: the base ledger alone omitted the
+Ibn Rajab witness introduced by a contribution shard. Selection now uses
+`reconcile.load`, the same base-plus-shards loader as the tests and generators;
+a shard-only missing-witness regression prevents this omission. The original
+13-witness count described the base ledger, not the complete active ledger.
+
+The enlarged replay also corrected IQ-09's second established source from
+`openiti-rajab-shamela21730/v01:p348` to **v01:p350**, and IQ-20's first established
+source from `v01:p338` to **v01:p340**, with their quotations unchanged. Q47's
+kitāba excerpt in `dossier/refinements.json` (`defective_compensation`) and
+`worklists/rajab_m8_tranche3_plan.json` stopped at «واتفق الأصحاب على ذلك», before
+«لكن المتأخرون زعموا…». That original excerpt has SHA-256
+`6a68c869a88198a2e1645ac7df34c61db37dac5130033aba941ed07fbf5c2fb9` on the base
+commit above. Both source bundles now include the full continuation through
+«بل هو عنده باطل», as two contiguous excerpts (277 and 154 characters), each
+within the existing 400-character policy. Competing characterizations remain
+unadjudicated. The case annotations, contribution hashes, record hashes,
+encoders and legal outcomes are unchanged; no frozen case receipt is re-pinned.
+The generated dossier page is refreshed from these source fields.

@@ -21,7 +21,7 @@ def fixture(tmp_path):
     lock = {"witnesses": {"test-source": {"url": gate.fetch.witness_url(witness),
             "bytes": len(TEXT.encode()), "sha256": hashlib.sha256(TEXT.encode()).hexdigest()}}}
     evidence = {"ref": "src:test-source/v01:p002", "excerpt_ar": QUOTE}
-    ledger = {"entries": [{"evidence": [evidence]}]}
+    ledger = {"entries": [{"far": "base-case", "evidence": [evidence]}]}
     for name, data in (("registry.json", registry), ("lock.json", lock), ("reconciliation/ledger.json", ledger)):
         (corpus / name).write_text(json.dumps(data), encoding="utf-8")
     (cache / "test-source.txt").write_text(TEXT, encoding="utf-8")
@@ -129,3 +129,23 @@ def test_empty_required_set_is_not_success(fixture):
     corpus, cache = fixture
     (corpus / "reconciliation/ledger.json").write_text('{"entries": []}')
     assert gate.verify(corpus, cache)["status"] == "failed"
+
+
+def test_shard_only_witness_is_required_and_cannot_hide_in_exclusions(fixture):
+    corpus, cache = fixture
+    registry = json.loads((corpus / "registry.json").read_text())
+    witness = {**registry["works"][0]["witnesses"][0], "id": "shard-source"}
+    registry["works"][0]["witnesses"].append(witness)
+    (corpus / "registry.json").write_text(json.dumps(registry))
+    locks = json.loads((corpus / "lock.json").read_text())
+    locks["witnesses"]["shard-source"] = locks["witnesses"]["test-source"].copy()
+    (corpus / "lock.json").write_text(json.dumps(locks))
+    fragments = corpus / "reconciliation/entries"
+    fragments.mkdir()
+    (fragments / "new.json").write_text(json.dumps({"entries": [{"far": "shard-case", "evidence": [
+        {"ref": "src:shard-source/v01:p002", "excerpt_ar": QUOTE}]}]}))
+    assert gate.required_witnesses(corpus) == {"test-source", "shard-source"}
+    report = gate.verify(corpus, cache)
+    assert report["status"] == "failed" and report["counts"] == {"failed": 1, "verified": 1}
+    (cache / "shard-source.txt").write_text(TEXT)
+    assert gate.verify(corpus, cache)["counts"] == {"verified": 2}
