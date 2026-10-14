@@ -56,7 +56,7 @@
     "distinct": false
    },
    "expected": true,
-   "note": "The guardian of the child and the insane pays their zakāt and it suffices, as he pays their other financial dues (maintenance, indemnities). He has wilāya over their property; zakāt is not a distinct thing in it."
+   "note": "The guardian of the child and the insane pays their zakāt and it suffices, as he pays their other financial dues (maintenance, indemnities: «الغرامات», what he owes in ḍamān). He has wilāya over their property; zakāt is not a distinct thing in it."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f004",
@@ -67,7 +67,7 @@
     "distinct": true
    },
    "expected": true,
-   "note": "A designated uḍḥiya slaughtered by another without the owner's leave suffices for the owner and the slaughterer owes nothing, «نص عليه»: it is the owner's, fixed for slaughter, so distinct («لأنها متعينة للذبح»), and the slaughterer has no wilāya. Annotated for the leading ruling, the animal designated from the outset, on which no dispute is reported; al-Inṣāf: «(وإن ذبحها ذابح في وقتها بغير إذن أجزأت ولا ضمان على ذابحها) … هذا المذهب وعليه الأصحاب» (v04:p093). Follow-ons, not annotated: the animal designated in place of an obligation in the dhimma, which most do not distinguish («ولا فرق عند الأكثرين») and Ṣāḥib al-Talkhīṣ does (it needs the owner's intention at slaughter, a fact the reading lacks: candidate refinement); the slaughterer who intends it for himself knowing it is another's (no iǧzāʾ, liable; Ibn Rajab's reconciliation of al-Qāḍī's two riwāyāt as two states); a stranger who distributes the meat (the aṣḥāb: it does not suffice; Ibn ʿAqīl's iḥtimāl)."
+   "note": "A designated uḍḥiya slaughtered by another without the owner's leave suffices for the owner and the slaughterer owes nothing, «نص عليه»: it is the owner's, fixed for slaughter, so distinct («لأنها متعينة للذبح»), and the slaughterer has no wilāya. Annotated for the leading ruling, the animal designated from the outset, on which no dispute is reported; al-Inṣāf: «(وإن ذبحها ذابح في وقتها بغير إذن أجزأت ولا ضمان على ذابحها) … هذا المذهب وعليه الأصحاب» (v04:p093). Follow-ons, not annotated: the animal designated in place of an obligation (wājib) in the dhimma, which most do not distinguish («ولا فرق عند الأكثرين») and Ṣāḥib al-Talkhīṣ does (it needs the owner's intention at slaughter, a fact the reading lacks: candidate refinement); the slaughterer who intends it for himself knowing it is another's (no iǧzāʾ, liable; Ibn Rajab's reconciliation of al-Qāḍī's two riwāyāt as two states); a stranger who distributes the meat (the aṣḥāb: it does not suffice; Ibn ʿAqīl's iḥtimāl)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f005",
@@ -111,7 +111,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "He vowed to give a specified property in charity and another gave it for him. The property is his and fixed by the vow, so the reading gives no liability, Abū al-Khaṭṭāb's wajh (al-Intiṣār), which Ibn Rajab argues for («بل نقول في نذر الصدقة بالمعين ما نقول في الأضحية المعينة»). Al-Qāḍī and Ibn ʿAqīl make him liable; al-Qāḍī's farq is that the vow's discharge needs intention like zakāt. No later work in the cache treats this masʾala and Ibn Rajab marks no madhhab label, so the side is not verified and the case enters the ledger. Follow-on: another who pays one's zakāt, a vow in the dhimma or an expiation from the owner's property without wilāya is liable «في المشهور» (the owner's intention is missing), with the aṣḥāb's takhrīj of effect on ratification; there the thing is not distinct, which is the reading's own branch."
+   "note": "He vowed to give a specified property in charity and another gave it for him. The property is his and fixed by the vow, so the reading gives no liability, Abū al-Khaṭṭāb's wajh (al-Intiṣār), which Ibn Rajab argues for («بل نقول في نذر الصدقة بالمعين ما نقول في الأضحية المعينة»). Al-Qāḍī and Ibn ʿAqīl make him liable; al-Qāḍī's farq is that the vow's discharge needs intention like zakāt. No later work in the cache treats this masʾala and Ibn Rajab marks no madhhab label, so the side is not verified and the case enters the ledger. Follow-on: another who pays one's zakāt, a vow in the dhimma or an expiation (kaffāra) from the owner's property without wilāya is liable «في المشهور» (the owner's intention is missing), with the aṣḥāb's takhrīj of effect on ratification; there the thing is not distinct, which is the reading's own branch."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f007",
@@ -234,7 +234,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "The cat may not be sold «على أصح الروايتين», with Muslim's ḥadīth of the prohibition; Ibn Rajab gives the qāʿida as its maʾkhadh («ومأخذ المنع ما ذكرنا»): it is needed and abundant, so it is to be given without compensation. The reading gives that. The madhhab is the other riwāya: al-Inṣāf on «ويجوز بيع الهر … في إحدى الروايتين»: «هذا المذهب» (quoting this qāʿida's «لا يجوز بيع الهر. في أصح الروايتين» under the other), and Sharḥ al-Muntahā «(وكهر) فيصح بيعه». Off the madhhab; enters the ledger."
+   "note": "The cat may not be sold «على أصح الروايتين», with Muslim's ḥadīth of the prohibition; Ibn Rajab gives the qāʿida as its maʾkhadh («ومأخذ المنع ما ذكرنا»): it is needed and abundant, so it is to be given without ʿiwaḍ («مجانا بغير عوض»). The reading gives that. The madhhab is the other riwāya: al-Inṣāf on «ويجوز بيع الهر … في إحدى الروايتين»: «هذا المذهب» (quoting this qāʿida's «لا يجوز بيع الهر. في أصح الروايتين» under the other), and Sharḥ al-Muntahā «(وكهر) فيصح بيعه». Off the madhhab; enters the ledger."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f001",
@@ -255,7 +255,7 @@
     "needed": true
    },
    "expected": true,
-   "note": "Placing beams on a neighbour's wall where it does no harm: the benefit is to be given without compensation; the record lists it as an instance of the qāʿida's needed benefits. Follow-on: running water over his land likewise, «في إحدى الروايتين»."
+   "note": "Placing beams on a neighbour's wall where it does no harm: the benefit is to be given without ʿiwaḍ; the record lists it as an instance of the qāʿida's needed benefits. Follow-on: running water over his land likewise, «في إحدى الروايتين»."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f003",
@@ -265,7 +265,7 @@
     "needed": true
    },
    "expected": true,
-   "note": "Lending jewellery: ẓāhir of Aḥmad and a group of aṣḥāb make it obligatory, and some later authors state it; no contrary position is reported for it. A needed benefit, given without compensation. Follow-on: some chose the obligation to lend the māʿūn (bucket, axe, pot, sieve) and the stud for covering, al-Ḥārithī's choice, inclined to by Taqī al-Dīn."
+   "note": "Lending jewellery: ẓāhir of Aḥmad and a group of aṣḥāb make it obligatory («وجوبه»), and some later authors state it; no contrary position is reported for it. A needed benefit, given without ʿiwaḍ. Follow-on: some chose the obligation to lend the māʿūn (bucket, axe, pot, sieve) and the stud for covering, al-Ḥārithī's choice, inclined to by Taqī al-Dīn."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f004",
@@ -286,7 +286,7 @@
     "harmless": true
    },
    "expected": true,
-   "note": "Hospitality to travellers passing by: «المذهب وجوبها», given without compensation; the record lists it under the qāʿida, whose condition it meets as the customary measure. Follow-ons, each a further branch: feeding one in dire need is obligatory but for compensation, not free (a thing whose free giving the qāʿida does not make due); benefits one is in dire need of (riding for the stranded, lending what he needs) have two wujūh on free giving; Taqī al-Dīn's distinction of the poor in dire need (free) from the rich (for compensation); al-Āmidī's riwāya that the one in dire need does not owe for food taken by force."
+   "note": "Hospitality to travellers passing by: «المذهب وجوبها», given without ʿiwaḍ; the record lists it under the qāʿida, whose condition (sharṭ) it meets as the customary measure. Follow-ons, each a further branch: feeding one in dire need is obligatory but for a countervalue («بالعوض»), not free (a thing whose free giving the qāʿida does not make due); benefits one is in dire need of (riding for the stranded, lending what he needs) have two wujūh on free giving; Taqī al-Dīn's distinction of the poor in dire need (free) from the rich (for ʿiwaḍ); al-Āmidī's riwāya that the one in dire need does not owe for food taken by force."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f006",
@@ -296,7 +296,7 @@
     "needed": true
    },
    "expected": true,
-   "note": "The dwellings of Mecca may be neither sold nor rented «على المذهب المنصوص» (al-Inṣāf: «هذا هو المذهب المنصوص»). On the maʾkhadh this record gives with Ibn ʿAqīl, al-Qāḍī and Taqī al-Dīn, the ḥaram is the people's in common for the general need of it, so whoever does not need what is in his hand must give its surplus to one who needs it: a needed benefit, given without compensation; and «فلا يجب الإسكان في دور مكة إلا في الفاضل عن حاجة الساكن نص عليه». The other maʾkhadh (conquest by force, so waqf or fayʾ) reaches the same ruling on rent. Follow-on: the sale, where Ibn Manṣūr's report permits sale without rent and Taqī al-Dīn's word wavers; no reported position permits the rent."
+   "note": "The dwellings of Mecca may be neither sold nor rented «على المذهب المنصوص» (al-Inṣāf: «هذا هو المذهب المنصوص»). On the maʾkhadh this record gives with Ibn ʿAqīl, al-Qāḍī and Taqī al-Dīn, the ḥaram is the people's in common for the general need of it, so whoever does not need what is in his hand must give its surplus to one who needs it: a needed benefit, given without ʿiwaḍ; and «فلا يجب الإسكان في دور مكة إلا في الفاضل عن حاجة الساكن نص عليه». The other maʾkhadh (conquest by force, so waqf or fayʾ) reaches the same ruling on rent. Follow-on: the sale, where Ibn Manṣūr's report permits sale without rent and Taqī al-Dīn's word wavers; no reported position permits the rent."
   }
  ]
 }

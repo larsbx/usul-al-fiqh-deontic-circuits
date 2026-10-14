@@ -34,10 +34,10 @@ def splitSuffices (commonUnit : Bool) : Bool := commonUnit
 النفوس إليه ألغى ذلك السبب وصار وجوده كالعدم ولم يترتب عليه أحكامه». `forbiddenManner`: the
 cause was brought about in a forbidden way; `soulsDrawn`: it is of what souls are drawn to (not
 what «في الطبع وازع عنه», as one who strikes his own head till he is mad). The output is that
-the cause is voided and its effects do not follow. -/
+the cause is cancelled («ألغى») and its effects do not follow. -/
 def causeVoided (forbiddenManner soulsDrawn : Bool) : Bool := forbiddenManner && soulsDrawn
 
-/-- A cause the nature itself deters from is not voided, however it was brought about. -/
+/-- A cause the nature itself deters from is not cancelled (ilghāʾ), however it was brought about. -/
 theorem deterred_cause_stands (f : Bool) : causeVoided f false = false := by
   cases f <;> rfl
 
@@ -47,7 +47,7 @@ its time in a forbidden way. The output is that he is deprived of it. -/
 def hastenedForfeited (hastenedForbidden : Bool) : Bool := hastenedForbidden
 
 /-- The text joins the two: «ويدخل فيها من مسائل: الأولى مسألة قتل الموروث والموصى له». A
-forbidden hastening of what souls are drawn to is voided by qāʿida 102 and forfeited by the
+forbidden hastening of what souls are drawn to is cancelled (ilghāʾ) by qāʿida 102 and forfeited by the
 attached qāʿida alike. -/
 theorem killing_heir_under_both : causeVoided true true = hastenedForfeited true := rfl
 

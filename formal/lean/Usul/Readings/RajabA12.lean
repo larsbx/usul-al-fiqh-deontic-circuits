@@ -19,7 +19,7 @@ he marks the walāʾ of a mukātab who paid the heirs, «والمذهب أن ا�
 ruling of the ownership is reckoned from the time the cause was concluded. -/
 def ruledFromCause (settledCause : Bool) : Bool := settledCause
 
-/-- The qāʿida's own exception: a cause that can still be voided (the fuḍūlī's contract before
+/-- The qāʿida's own exception: a cause that can still be voided («يمكن إبطاله»: the fuḍūlī's contract before
 ratification) does not carry the ruling back. -/
 theorem unsettled_cause_not_retroactive : ruledFromCause false = false := rfl
 

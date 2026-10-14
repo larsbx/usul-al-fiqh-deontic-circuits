@@ -185,7 +185,7 @@ The unit is a committed farʿ record, which can contain multiple examples. Annot
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.759 | 0 | 0 |
-| All annotation suites | 841 | 0.993 | 0.737 | 0 | 6 |
+| All annotation suites | 881 | 0.951 | 0.706 | 0 | 43 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -306,6 +306,17 @@ Results on the tranche:
   - **Qāʿidas 20 and 21 mark a madhhab only where the aṣḥāb take the yield as a part** (20.f003, the ashhar; 20.f005, many aṣḥāb). Elsewhere two riwāyas stand, and the qāʿida's «على الصحيح» decides only between substance and earnings, not each farʿ.
   - **Qāʿida 24 separates the punitive from the remedial right.** Burning the thief's goods (24.f000) punishes a past act, so the sale does not end it. Lowering the dhimmī's building (24.f002) removes an ongoing harm, which ends with the transfer, as the text itself contrasts («لا عقوبة للتعلية الماضية»).
 - **Segmentation finding:** qāʿida 21's first example opens mid-line («والأظهر أنه جزء فمن ذلك …»), so it has no `.f000`. Qāʿida 9, whose inline «(ومنها)» joins several cases in one record, is left for the segmenter.
+
+**Tranche 6 (qawāʿid 3, 9, 14, 15; 15 furūʿ).** Read from each qāʿida's own statement (`corpus/takhrij/rajab_m8_tranche6_furu.json`):
+
+| Qāʿida | Reading | Link to the bank |
+|---|---|---|
+| 3: doing more than suffices: is the whole obligatory? («ففيه وجهان») | `wholeObligatory`: only when the excess cannot be told apart and the whole was the original duty, lightened («وصف الكل بالوجوب على الصحيح»); an excess over the due is taṭawwuʿ (al-Qāḍī, «وهو الصواب») | `separable_excess_is_nafl` |
+| 9: worship done in a prohibited way | `worshipValidDespite` over four sites; the general condition takes «أشهرهما عدمها», the non-condition «الأكثرون» | `q9_refines_q38`: agrees with al-Saʿdī Q38 on every site |
+| 14: a cause from one of two, unknown which («فيه خلاف») | `oneOfTwoAttaches`: only when the two are taken together, «فينظر إليهما مجتمعين في حكم يتعلق باجتماعهما» | T-15 |
+| 15: a presumption does not carry its consequence into another («على الصحيح») | `consequenceCarries` | T-15 |
+
+Tranche 6: 5 derivable, 10 ikhtilāf (3 matching the madhhab); coverage 1.000, madhhab coverage 0.533, no new gaps. Q14 with Q15 is the register's pair T-15.
 
 **Tranche 5 (qawāʿid 25, 29, 30, 32, 33, 34; 27 furūʿ).** Read from each qāʿida's own statement (`corpus/takhrij/rajab_m8_tranche5_furu.json`):
 

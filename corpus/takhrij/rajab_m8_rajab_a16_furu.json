@@ -1,151 +1,8 @@
 {
  "suite": "m8_rajab_rajab_a16",
  "status": "candidate",
- "provenance": "Shard rajab-a16 (lane A): every farʿ record of Ibn Rajab's qawāʿid 127, 129, 130 and 131, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA16). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+ "provenance": "Shard rajab-a16 (lane A): every farʿ record of Ibn Rajab's qawāʿid 129, 130 and 131, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA16). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
  "cases": [
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f000",
-   "encoder": "cause_agent_liable",
-   "class": "derivable",
-   "facts": {
-    "arises_from_cause": false,
-    "direct_aggressive": true
-   },
-   "expected": false,
-   "note": "The qāʿida's first example of its first class: «إذا حفر واحد بئرا عدوانا ثم دفع غيره فيها آدميا معصوما أو مالا لمعصوم فسقط فتلف فالضمان على الدافع وحده». The push is not built on the digging, so the digger, though an aggressor, is free and the pusher alone is liable, with no dispute reported."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f001",
-   "encoder": "cause_agent_liable",
-   "class": "derivable",
-   "facts": {
-    "arises_from_cause": false,
-    "direct_aggressive": true
-   },
-   "expected": false,
-   "note": "«لو فتح قفصا عن طائر فاستقر بعد فتحه فجاء آخر فنفره فالضمان على المنفر وحده». The bird settled after the opening, so the scaring does not arise from it: the opener is free, the scarer alone liable. No dispute reported for this case (the khilāf over a bird that flies off at once is not this one)."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f002",
-   "encoder": "cause_agent_liable",
-   "class": "derivable",
-   "facts": {
-    "arises_from_cause": false,
-    "direct_aggressive": true
-   },
-   "expected": false,
-   "note": "Leading ruling: «لو رمى معصوما من شاهق فتلقاه آخر بسيف فقده به فالقاتل هو الثاني دون الأول». The sword-blow is a new direct act not built on the throw, so the thrower is not the killer. Follow-ons in the same record: the fetus born with settled life struck by another (Ibn Rajab names the first striker as killer, liable for the ghurra, the second given taʿzīr, «لأن الضارب ليس بمتسبب بل هو مباشر»); game struck in its mortal spot then shot by another, the first is the killer and the game lawful, the second liable for what he tore «هذا قول القاضي والأكثرين», with a takhrīj by a group on the khilāf over game falling after slaughter and «ظاهر كلام الخرقي تحريمه هاهنا»; and the first example of the second class, poisoned food served knowingly to one who does not know: «فالقاتل هو المقدم»."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f003",
-   "encoder": "cause_agent_liable",
-   "class": "derivable",
-   "facts": {
-    "arises_from_cause": true,
-    "direct_aggressive": false
-   },
-   "expected": true,
-   "note": "Second class: «لو قتل الحاكم حدا أو قصاصا بشهادة ثم أقر الشهود أنهم تعمدوا الكذب فالضمان والقود عليهم دون الحاكم». The judge's ruling is built on the testimony and has no ʿudwān in it (he did what was due), so the witnesses, the cause, bear it alone; no dispute reported. Follow-ons: Abū al-Naṣr al-ʿIjlī's report from Aḥmad that the judge is liable where the stoned man proves to be majbūb («وهو مشكل», with two candidate farqs); witnesses shown to be fāsiqs or unbelievers in a right of God, with tazkiya: three awjuh (on the muzakkūn, Abū al-Khaṭṭāb, «وصححه صاحب الكافي والترغيب»; on the judge alone, al-Qāḍī and Ibn ʿAqīl in al-Shahādāt; the claimant chooses, settling on the muzakkūn, al-Qāḍī and Ibn ʿAqīl in al-Ḥudūd), a fourth wajh on the witnesses rejected; without tazkiya, on the judge alone «ذكره الخرقي والأصحاب»."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f004",
-   "encoder": "direct_agent_liable",
-   "class": "genuine_ikhtilaf",
-   "facts": {
-    "arises_from_cause": true,
-    "direct_aggressive": false
-   },
-   "expected": false,
-   "positions": [
-    {
-     "who": "on the compeller alone, the claimant may demand of the destroyer, who has recourse (al-Qāḍī in al-Amr bi-l-maʿrūf, Ibn ʿAqīl in ʿUmad al-adilla, jazm; al-Iqnāʿ «وإن أكره على إتلافه ضمنه مكرهه», Kashshāf)",
-     "ruling": false
-    },
-    {
-     "who": "on both, as with the diya (al-Talkhīṣ; an iḥtimāl of al-Qāḍī in some taʿālīq; al-Ḥārithī per al-Inṣāf)",
-     "ruling": true
-    }
-   ],
-   "matches_madhhab": true,
-   "note": "One compelled to destroy another's property: «وفي الضمان وجهان». Ibn Rajab places it in the second class: the destruction arises from the compulsion and the compelled is excused, «لأنه معذور في ذلك الفعل»; on the reading the direct destroyer bears nothing (the claimant's demand of him is a route, not a settled liability). The second wajh rests on a different antecedent, that compulsion does not license destroying another's property («وهذا تصريح بأن الإكراه لا يبيح إتلاف مال الغير»). al-Inṣāf (v06:p216) reports both «وأطلقهما في الفروع، والقواعد» with no taṣḥīḥ; al-Iqnāʿ (v02:p354) and Kashshāf (v04:p116, «وأما المكره فهو كالآلة») state the compeller's liability decisively: on the madhhab side. Follow-ons: a further iḥtimāl on the destroyer alone («وهذا ضعيف جدا»); compulsion to hand over a deposit (al-Qāḍī no liability, «وفي شرح الهداية لأبي البركات المذهب أنه لا يضمن»; Abū al-Khaṭṭāb and Ibn ʿAqīl liable; Ibn al-Zāghūnī's split); the woman compelled to intercourse in ḥajj or fasting (three riwāyas on her kaffāra); one compelled to have his head shaved in iḥrām (the fidya on the shaver «في أشهر الوجهين»)."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f005",
-   "encoder": "cause_agent_liable",
-   "class": "genuine_ikhtilaf",
-   "facts": {
-    "arises_from_cause": true,
-    "direct_aggressive": true
-   },
-   "expected": true,
-   "positions": [
-    {
-     "who": "the holder shares liability and qawad with the killer (the riwāya chosen by Abū Muḥammad al-Jawzī, put first in al-Riʿāyatayn and al-Ḥāwī al-ṣaghīr per al-Inṣāf)",
-     "ruling": true
-    },
-    {
-     "who": "the killer alone is killed and the holder imprisoned till he dies (the madhhab per al-Inṣāf; al-Khiraqī)",
-     "ruling": false
-    }
-   ],
-   "matches_madhhab": false,
-   "note": "Third class: «الممسك مع القاتل فإنهما يشتركان في الضمان والقود على إحدى الروايتين، وفي الأخرى يختص المباشر بهما ويحبس الماسك حتى يموت». The killing is built on the holding and is ʿudwān; the reading has them share. al-Inṣāf (v09:p456): «قتل القاتل وحبس الممسك حتى يموت في إحدى الروايتين) وهو المذهب»: off the madhhab side, so a ledger entry."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f006",
-   "encoder": "cause_agent_liable",
-   "class": "genuine_ikhtilaf",
-   "facts": {
-    "arises_from_cause": true,
-    "direct_aggressive": true
-   },
-   "expected": true,
-   "positions": [
-    {
-     "who": "both share, as the holder with the killer (a riwāya, «وعنه: الضمان عليهما» per al-Inṣāf; Ibn ʿAqīl's choice for the causer)",
-     "ruling": true
-    },
-    {
-     "who": "the stone-placer alone, made like the pusher (the madhhab per al-Inṣāf; al-Muntahā, al-Iqnāʿ)",
-     "ruling": false
-    }
-   ],
-   "matches_madhhab": false,
-   "note": "«لو حفر بئرا عدوانا في الطريق فوضع آخر حجرا إلى جانبها فهل يختص بالضمان الواضع جعلا له كالدافع أو يشتركان فيه كالممسك والقاتل؟ على روايتين». Ibn Rajab lists it under the third class; on its facts (both aggressors, the stone working through the well) the reading has the digger share. al-Inṣāf (v10:p034): «فالضمان على واضع الحجر) . وهذا المذهب المشهور»: off the madhhab side, so a ledger entry. The farq the madhhab draws is the one the record's own question names (the placer as the pusher, a direct act not built on the digging). Follow-on: «ولو كان الحافر غير متعد فالضمان على الواضع وحده، وهي من صور القسم الثاني»."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f007",
-   "encoder": "cause_agent_liable",
-   "class": "derivable",
-   "facts": {
-    "arises_from_cause": true,
-    "direct_aggressive": true
-   },
-   "expected": true,
-   "note": "«لو دل المودع لصا على الوديعة فسرقها بالضمان عليهما، ذكرهما القاضي وغيره، كما لو دل المحرم محرما آخر على صيد فقتله». The theft is built on the depositee's guidance and is ʿudwān: both liable, no dispute reported. Follow-on: «ولو دل حلالا فالضمان على المحرم وحده، وهي من صور القسم الثاني»."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f008",
-   "encoder": "cause_agent_liable",
-   "class": "genuine_ikhtilaf",
-   "facts": {
-    "arises_from_cause": true,
-    "direct_aggressive": true
-   },
-   "expected": true,
-   "positions": [
-    {
-     "who": "the holder by his hand and the killer by his direct act are both liable (al-Qāḍī's second iḥtimāl in al-Mujarrad; his two full jazāʾs in Kitāb al-takhrīj, the holder having recourse on the killer)",
-     "ruling": true
-    },
-    {
-     "who": "the killer alone, the holder being a non-compelling causer (al-Qāḍī's first iḥtimāl in al-Mujarrad)",
-     "ruling": false
-    }
-   ],
-   "matches_madhhab": true,
-   "note": "A muḥrim with game in his visible hand who could release it and did not, until another muḥrim killed it: «ففيه احتمالان ذكرهما القاضي في المجرد». Ibn Rajab lists it under the third class; the reading has the holder share. No later treatment of this exact case was found; al-Inṣāf's cognate masʾalas both hold the holder liable: the muḥrim causer with a muḥrim killer, «فيكون جزاؤه بينهما ... وهو المذهب» with «وقيل: لا جزاء على محرم ممسك مع محرم قاتل» only a qīla (v03:p476), and one who entered iḥrām holding game and could release it, «إن أمكنه إرساله فلم يرسله حتى تلف ضمنه ... وهذا المذهب» (v03:p482). On the madhhab side by those cognates. Follow-on: the same two wujūh extend to anyone who destroys a thing in the hand of one liable for it by his hand (the usurper's owner may claim from either)."
-  },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f001",
    "encoder": "hit_state_governs",
@@ -260,7 +117,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "«هل الاعتبار بحال الصيد بأهلية الرامي وسائر الشروط حال الرمي أو الإصابة؟ فيه وجهان». The question is the lawfulness of the game, not a liability; the reading reckons such conditions at the shot (as qawad), so a shooter who dies or apostatises before the hit leaves the game lawful. al-Inṣāf (v03:p549) gives both wujūh without taṣḥīḥ; al-Muntahā (v05:p196) «أو ارتد أو مات بين رميه وإصابته حل» and Kashshāf (v06:p219) «والاعتبار بأهلية الرامي ... حال الرمي» state it decisively. On the madhhab side. Follow-ons: two shooters, the first disabling it, the second killing it (lawful, the second having shot before it was disabled); the tasmiya is required at the release (Aḥmad in al-Maymūnī's riwāya), with al-Qāḍī's remark that implies it would suffice at the hit."
+   "note": "«هل الاعتبار بحال الصيد بأهلية الرامي وسائر الشروط حال الرمي أو الإصابة؟ فيه وجهان». The question is the lawfulness of the game, not a liability; the reading reckons such conditions (sharṭ) at the shot (as qawad), so a shooter who dies or apostatises before the hit leaves the game lawful. al-Inṣāf (v03:p549) gives both wujūh without taṣḥīḥ; al-Muntahā (v05:p196) «أو ارتد أو مات بين رميه وإصابته حل» and Kashshāf (v06:p219) «والاعتبار بأهلية الرامي ... حال الرمي» state it decisively. On the madhhab side. Follow-ons: two shooters, the first disabling it, the second killing it (lawful, the second having shot before it was disabled); the tasmiya is required at the release (Aḥmad in al-Maymūnī's riwāya), with al-Qāḍī's remark that implies it would suffice at the hit."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q130.f001",
@@ -280,7 +137,7 @@
     "needed": true
    },
    "expected": false,
-   "note": "Ḥajj: Aḥmad in al-Maymūnī's riwāya, «إذا كان المسكن ... والخادم ... فلا يباع إذا كان كفاية لأهله ... فإذا خرج عن كفايته ومؤنته ومؤنة عياله باع». What he needs is not sold to make the ḥajj obligatory; no dispute reported. Follow-on: the estate likewise, sold where it exceeds his provision."
+   "note": "Ḥajj: Aḥmad in al-Maymūnī's riwāya, «إذا كان المسكن ... والخادم ... فلا يباع إذا كان كفاية لأهله ... فإذا خرج عن كفايته ومؤنته ومؤنة عياله باع». What he needs is not sold to make the ḥajj obligatory (wājib); no dispute reported. Follow-on: the estate likewise, sold where it exceeds his provision."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q130.f003",
@@ -310,7 +167,7 @@
     "needed": true
    },
    "expected": false,
-   "note": "Expiation by wealth: «لا يباع فيه المسكن والخادم ذكره القاضي والأصحاب», though the surplus is sold (a precious slave worth two is exchanged so one serves and one is freed). No dispute reported. Follow-on: one with an unneeded servant when the expiation fell due who comes to need it before expiating: «فمن الأصحاب من جزم هنا بلزوم العتق», the state at the obligation governing."
+   "note": "Expiation (kaffāra) by wealth: «لا يباع فيه المسكن والخادم ذكره القاضي والأصحاب», though the surplus is sold (a precious slave worth two is exchanged so one serves and one is freed). No dispute reported. Follow-on: one with an unneeded servant when the expiation fell due who comes to need it before expiating: «فمن الأصحاب من جزم هنا بلزوم العتق», the state at the obligation (wujūb) governing."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q130.f006",

@@ -35,7 +35,7 @@
       "expected": true,
       "positions": [
         {"who": "riwāyat Abū Dāwūd: «يصنع كيف شاء», throwing themselves into the water is permitted (with Aḥmad's tawaqquf where there is no hope of escape)", "ruling": true},
-        {"who": "riwāyat Muhannā «أكره طرح نفوسهم في البحر»; Ibn ʿAqīl and others: staying is obligatory where perishing is certain, «لئلا يكون قاتلا لنفسه»", "ruling": false}
+        {"who": "riwāyat Muhannā «أكره طرح نفوسهم في البحر»; Ibn ʿAqīl and others: staying is obligatory (wujūb al-maqām) where perishing is certain, «لئلا يكون قاتلا لنفسه»", "ruling": false}
       ],
       "matches_madhhab": true,
       "note": "Fire cast into a ship where the two perils are equal, «واستوى الأمران في الهلاك أعني المقام في النار وإلقاء النفوس في الماء … على روايتين». The text fixes the two as equal, so throwing is not the heavier and the reading permits it. al-Inṣāf (v04:p126), on al-Muqniʿ's ship set on fire: «فإن شكوا فعلوا ما شاءوا، من المقام أو إلقاء نفوسهم في الماء. هذا المذهب», with «وعنه: يلزمهم المقام. نصره القاضي وأصحابه» and Ibn ʿAqīl's taḥrīm as the other side; on the madhhab side."
@@ -85,7 +85,7 @@
         {"who": "al-Qāḍī in al-Mujarrad: they may divide it, «توزيعا للمفرد على المفرد», each trustee of his half", "ruling": false}
       ],
       "matches_madhhab": true,
-      "note": "A pledge put in the hands of two ʿadls, of two separate items or of something divisible: may each keep his half alone? «على وجهين». Without a qarīna the reading gives each trustee over the whole. al-Inṣāf has no entry on it; the muʿtamad states it decisively: al-Iqnāʿ (v02:p164) «وإن شرط جعله في يد اثنين لم يكن لأحدهما الانفراد بحفظه», al-Muntahā (v02:p414) «وإن شرط بيد أكثر لم ينفرد واحد بحفظه», Kashshāf likewise. On the madhhab side. Follow-ons (liability on handing the divided half over; the two waṣīs, two agents, two deposit-keepers; Aḥmad's naṣṣ on the two told to give alms) in the note."
+      "note": "A pledge put in the hands of two ʿadls, of two separate items or of something divisible: may each keep his half alone? «على وجهين». Without a qarīna the reading gives each trustee over the whole. al-Inṣāf has no entry on it; the muʿtamad states it decisively: al-Iqnāʿ (v02:p164) «وإن شرط جعله في يد اثنين لم يكن لأحدهما الانفراد بحفظه», al-Muntahā (v02:p414) «وإن شرط بيد أكثر لم ينفرد واحد بحفظه», Kashshāf likewise. On the madhhab side. Follow-ons (liability on handing the divided half over; the two waṣīs, two agents, two deposit-keepers; Aḥmad's naṣṣ on the two told to give alms, «تصدقا عني») in the note."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f005",
@@ -111,7 +111,7 @@
         {"who": "Abū al-Khaṭṭāb, «وجعل أبو الخطاب المذهب الوقوع», and those after him: each is divorced once each has entered one house, individual over individual", "ruling": false}
       ],
       "matches_madhhab": false,
-      "note": "Divorce or manumission hung on several conditions met partly by one and partly by another, the record's own instance being «إن دخلتما هاتين الدارين أو كلمتما زيدا وعمرا فأنتما طالقتان فكلمت إحداهما زيدا والأخرى عمرا أو دخلت كل واحدة منهما دارا، وقلنا لا يكتفي ببعض الصفة … فيه وجهان». Annotated for that instance; no qarīna is stated, so the reading gives each over the whole (no divorce yet). al-Inṣāf (v09:p094) on «إن كلمتما هذين … وكلمت كل واحدة واحدا منهما: طلقتا»: «هذا المذهب، وعليه أكثر الأصحاب», the other «تخريج لأبي الخطاب», adding «لكن المذهب هنا خلاف ما قاله في القواعد». Against the reading; entered in the ledger. The three ṭuruq on sufficiency of part of the condition, al-Qāḍī's «إذا أديتم إلي ألفا» and the naṣṣ on the jointly owned slave told «إذا متنا فأنت حر» (Ibn Rajab: one-to-one) stay in the note."
+      "note": "Divorce or manumission hung (taʿlīq) on several conditions («صفات متعددة») met partly by one and partly by another, the record's own instance being «إن دخلتما هاتين الدارين أو كلمتما زيدا وعمرا فأنتما طالقتان فكلمت إحداهما زيدا والأخرى عمرا أو دخلت كل واحدة منهما دارا، وقلنا لا يكتفي ببعض الصفة … فيه وجهان». Annotated for that instance; no qarīna is stated, so the reading gives each over the whole (no divorce yet). al-Inṣāf (v09:p094) on «إن كلمتما هذين … وكلمت كل واحدة واحدا منهما: طلقتا»: «هذا المذهب، وعليه أكثر الأصحاب», the other «تخريج لأبي الخطاب», adding «لكن المذهب هنا خلاف ما قاله في القواعد». Against the reading; entered in the ledger. The three ṭuruq on sufficiency of part of the condition, al-Qāḍī's «إذا أديتم إلي ألفا» and the naṣṣ on the jointly owned slave told «إذا متنا فأنت حر» (Ibn Rajab: one-to-one) stay in the note."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f007",
@@ -150,7 +150,7 @@
         {"who": "al-Qāḍī in his Khilāf: «هو بينهما نصفين»", "ruling": true}
       ],
       "matches_madhhab": true,
-      "note": "«لو قال هذا العبد شركة بيني وبين فلان أو هو شريكي، وفيه وجهان». An admission, so the reading does not take it as halves. al-Inṣāf (v12:p218): «رجع في تفسير نصيب الشريك إليه … وهذا المذهب في ذلك كله لا أعلم فيه خلافا» (al-Mardāwī's «قلت: لو قيل: هو بينهما نصفان، كان له وجه» an author's preference); al-Muntahā likewise. On the madhhab side."
+      "note": "«لو قال هذا العبد شركة بيني وبين فلان أو هو شريكي، وفيه وجهان». An admission, so the reading does not take it as halves. al-Inṣāf (v12:p218): «رجع في تفسير نصيب الشريك إليه … وهذا المذهب في ذلك كله لا أعلم فيه خلافا» (al-Mardāwī's «قلت: لو قيل: هو بينهما نصفان، كان له وجه» is an author's own view); al-Muntahā likewise. On the madhhab side."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f003",

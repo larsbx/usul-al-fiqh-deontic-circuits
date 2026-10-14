@@ -51,11 +51,11 @@ theorem owner_hand_bars (d u : Bool) : byDescription d u true = false := by
 
 /-- Q99 for things, «ما تدعوا الحاجة إلى الانتفاع به من الأعيان ولا ضرر في بذله لتيسيره وكثرة
 وجوده … يجب بذله مجانا بغير عوض في الأظهر»: a thing needed whose giving does no harm, being easy
-and abundant, must be given without compensation. -/
+and abundant, must be given without ʿiwaḍ. -/
 def freeAyn (needed harmless : Bool) : Bool := needed && harmless
 
 /-- Q99 for benefits, «أو المنافع المحتاج إليها يجب بذله مجانا بغير عوض في الأظهر»: a needed
-benefit must be given without compensation, with no further condition stated. -/
+benefit must be given without ʿiwaḍ, with no further condition stated. -/
 def freeBenefit (needed : Bool) : Bool := needed
 
 /-- The benefit kind is the weaker condition: whatever need makes a thing's giving free makes a

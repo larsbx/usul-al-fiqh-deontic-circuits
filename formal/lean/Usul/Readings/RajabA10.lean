@@ -29,7 +29,7 @@ question has that precedence over the other; with equality no item has it. The o
 the item's contract is void. -/
 def simultaneousCombinationVoids (hasPrecedence : Bool) : Bool := !hasPrecedence
 
-/-- With equality every item is void: «منع من الجميع مع التساوي». -/
+/-- With equality every item is void (fāsid, the qāʿida's «الفساد»): «منع من الجميع مع التساوي». -/
 theorem simultaneous_equal_voids_all : simultaneousCombinationVoids false = true := rfl
 
 /-- Qāʿida 109, its third kind: «والمنع من القدر المشترك كالمنع من الجميع يقتضي العموم».

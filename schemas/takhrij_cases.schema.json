@@ -70,6 +70,10 @@
           "matches_madhhab": {
             "type": "boolean"
           },
+          "routing_label": {
+            "type": "boolean",
+            "description": "False for proposal triage or scoped component guards that do not establish the correct whole-unit encoder; excluded from routing training and recall labels. Defaults to true for legacy cases."
+          },
           "note": {
             "type": "string",
             "minLength": 1

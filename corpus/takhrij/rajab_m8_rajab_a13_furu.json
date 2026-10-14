@@ -151,7 +151,7 @@
         "single_jiha": false
       },
       "expected": true,
-      "note": "«الأخذ من الخمس بأوصاف متعددة. (ومنها) الأخذ من الصدقات المنذورة والفيء والوقوف». Several attributes, each its own head of the khums (or of a vowed charity, the fayʾ, a waqf), meet in one person: the entitlement multiplies, «المشهور في المذهب أنها كالأعيان في تعدد الاستحقاق». No dispute is reported in the record."
+      "note": "«الأخذ من الخمس بأوصاف متعددة. (ومنها) الأخذ من الصدقات المنذورة والفيء والوقوف». Several attributes, each its own head of the khums (or of a vowed charity (ṣadaqa of a nadhr), the fayʾ, a waqf), meet in one person: the entitlement multiplies, «المشهور في المذهب أنها كالأعيان في تعدد الاستحقاق». No dispute is reported in the record."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f010",
@@ -179,7 +179,7 @@
           "ruling": true
         },
         {
-          "who": "al-Shaykh Taqī al-Dīn: one divorce only, absent an intention otherwise, the swearer's evident meaning being one divorce whichever attribute is met",
+          "who": "al-Shaykh Taqī al-Dīn: one divorce only, absent an intention otherwise, the swearer's evident meaning in the taʿlīq being one divorce whichever attribute is met",
           "ruling": false
         }
       ],
@@ -196,7 +196,7 @@
       "expected": true,
       "positions": [
         {
-          "who": "«رواية واحدة»: the full brother is preferred to the paternal brother in inheriting by walāʾ (al-Inṣāf «على الصحيح من المذهب. وعليه الأصحاب قاطبة»)",
+          "who": "«رواية واحدة»: the full brother takes precedence over the paternal brother in inheriting by walāʾ (al-Inṣāf «على الصحيح من المذهب. وعليه الأصحاب قاطبة»)",
           "ruling": true
         },
         {
@@ -205,7 +205,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "«في الأخ للأبوين على الأخ للأب في الميراث بالولاء رواية واحدة، وخرج ابن الزاغوني ... رواية أخرى باشتراكه». The full brother's maternal kinship has no role in walāʾ, yet he is preferred. al-Inṣāf (v07:p314): «فيقدم الأخ من الأبوين على الأخ من الأب. على الصحيح من المذهب. وعليه الأصحاب قاطبة», then reporting the takhrīj. On the madhhab side."
+      "note": "«في الأخ للأبوين على الأخ للأب في الميراث بالولاء رواية واحدة، وخرج ابن الزاغوني ... رواية أخرى باشتراكه». The full brother's maternal kinship has no role in walāʾ, yet he is given precedence. al-Inṣāf (v07:p314): «فيقدم الأخ من الأبوين على الأخ من الأب. على الصحيح من المذهب. وعليه الأصحاب قاطبة», then reporting the takhrīj. On the madhhab side."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f001",
@@ -238,7 +238,7 @@
       "expected": true,
       "positions": [
         {
-          "who": "the riwāya preferring the full brother in leading the funeral prayer (al-Inṣāf «على الصحيح من المذهب»)",
+          "who": "the riwāya giving the full brother precedence in leading the funeral prayer (al-Inṣāf «على الصحيح من المذهب»)",
           "ruling": true
         },
         {
@@ -352,16 +352,16 @@
       "expected": true,
       "positions": [
         {
-          "who": "the oath dissolves with the dismissal, being confined to his office (al-Taṣḥīḥ and al-Wajīz per al-Inṣāf; al-Muntahā «والعبرة بخصوص السبب»)",
+          "who": "the oath lapses with the dismissal, being confined to his office (al-Taṣḥīḥ and al-Wajīz per al-Inṣāf; al-Muntahā «والعبرة بخصوص السبب»)",
           "ruling": true
         },
         {
-          "who": "it does not dissolve («قال القاضي: قياس المذهب لا تنحل»; al-Furūʿ: «ونصه يحنث»)",
+          "who": "it does not lapse («قال القاضي: قياس المذهب لا تنحل»; al-Furūʿ: «ونصه يحنث»)",
           "ruling": false
         }
       ],
       "matches_madhhab": true,
-      "note": "«لو حلف لا رأيت منكرا إلا رفعته إلى فلان القاضي، فعزل فهل تنحل يمينه؟ على وجهين». The office, the evident occasion of reporting a wrong to a qāḍī, prompted the oath: the reading confines it to his tenure, so it dissolves. al-Tarhīb, which Ibn Rajab quotes, puts the two wujūh only where no cause or indication exists and confines the oath to the office where the cause indicates it («ومع دلالة الحال والسبب يختص الرفع بحالة الولاية وجها واحدا»), the same output. al-Muntahā (v05:p227): «والعبرة بخصوص السبب لا بعموم اللفظ ... أو حلف لوال لا رأى منكرا إلا رفعه إليه ... فعزل ... لم يحنث بذلك بعد ولو لم يرد ما دام كذلك»; al-Inṣāf (v11:p056) on the case without intention: «أحدهما: تنحل يمينه. صححه التصحيح». On the madhhab side. Follow-ons from al-Tarhīb: whether he is quit by reporting after dismissal, the undesignated walī («لتردد الألف واللام بين تعريف العهد والجنس»), and knowing of the wrong after the walī knew."
+      "note": "«لو حلف لا رأيت منكرا إلا رفعته إلى فلان القاضي، فعزل فهل تنحل يمينه؟ على وجهين». The office, the evident occasion of reporting a wrong to a qāḍī, prompted the oath: the reading confines it to his tenure, so it lapses («تنحل»). al-Tarhīb, which Ibn Rajab quotes, puts the two wujūh only where no cause or indication exists and confines the oath to the office where the cause indicates it («ومع دلالة الحال والسبب يختص الرفع بحالة الولاية وجها واحدا»), the same output. al-Muntahā (v05:p227): «والعبرة بخصوص السبب لا بعموم اللفظ ... أو حلف لوال لا رأى منكرا إلا رفعه إليه ... فعزل ... لم يحنث بذلك بعد ولو لم يرد ما دام كذلك»; al-Inṣāf (v11:p056) on the case without intention: «أحدهما: تنحل يمينه. صححه التصحيح». On the madhhab side. Follow-ons from al-Tarhīb: whether he is quit by reporting after dismissal, the undesignated walī («لتردد الألف واللام بين تعريف العهد والجنس»), and knowing of the wrong after the walī knew."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f002",

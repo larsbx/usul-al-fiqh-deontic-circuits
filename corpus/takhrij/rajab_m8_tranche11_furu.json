@@ -23,7 +23,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "One who sold a slave woman for a slave and finds the slave defective may annul and retrieve her, but may not dispose of what he gave, «لأن ملك الآخر عليه تام مستقر»: his manumission or intercourse is no annulment and does not take effect (al-Qāḍī, al-Khilāf). The iḥtimāl of al-Mujarrad and al-Fuṣūl, intercourse as retrieval like the rajʿiyya's, Ibn Rajab rejects: «وهذا واه جدا فإن الملك عن الرجعية ومن أسلم عليهن لم يزل وهذا قد زال»."
+      "note": "One who sold a slave woman for a slave and finds a defect (ʿayb) in the slave may annul and retrieve her, but may not dispose of what he gave, «لأن ملك الآخر عليه تام مستقر»: his manumission or intercourse is no annulment and does not take effect (al-Qāḍī, al-Khilāf). The iḥtimāl of al-Mujarrad and al-Fuṣūl, intercourse as retrieval like the rajʿiyya's, Ibn Rajab rejects: «وهذا واه جدا فإن الملك عن الرجعية ومن أسلم عليهن لم يزل وهذا قد زال»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f002",
@@ -67,7 +67,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "The shafīʿ's disposal of the share before he owns it: does it stand for his word of taking, the demand, or the taking by hand? Ibn Rajab: «يمكن تخريجه على الخلاف في المسألة قبلها، ولا سيما بعد المطالبة لأن حقه استقر وثبت وانقطع تصرف المشتري». Before any demand the cause is not complete."
+      "note": "The shafīʿ's disposal of the share before he owns it: does it stand for his word of taking, the demand, or the taking by hand? Ibn Rajab: «يمكن تخريجه على الخلاف في المسألة قبلها، ولا سيما بعد المطالبة لأن حقه استقر وثبت وانقطع تصرف المشتري». Before any demand the cause (sabab) is not complete."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f004",
@@ -165,7 +165,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "«You are divorced with the end of your ʿidda», or «whenever you bear a child you are divorced» and she bears two in succession: divorced by the first, the ʿidda ending with the second, by which she is not divorced, «هذا المذهب المشهور». With «with my death» she is not divorced (Aḥmad, Muhannā)."
+      "note": "«You are divorced with the end of your ʿidda», or «whenever you bear a child you are divorced» and she bears two in succession: divorced by the first («تطلق بالأول»), the ʿidda ending with the second, by which she is not divorced, «هذا المذهب المشهور». With «with my death» she is not divorced (Aḥmad, Muhannā)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f001",
@@ -175,7 +175,7 @@
         "with_bar": true
       },
       "expected": false,
-      "note": "The slave woman's husband: «if I own you, you are divorced», then owns her: not divorced, «قال الأصحاب وجها واحدا», the divorce coinciding with the annulment."
+      "note": "The slave woman's husband: «if I own you, you are divorced», then owns her: not divorced, «قال الأصحاب وجها واحدا», the divorce coinciding with the annulment (infisākh, «لاقترانه بالانفساخ»)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f002",
@@ -191,12 +191,12 @@
           "ruling": true
         },
         {
-          "who": "wajh: the slave woman's void, the free woman's marriage coinciding with it (ẓāhir of al-Qāḍī in al-Mujarrad; Ibn Rajab: «وهو أصح»)",
+          "who": "wajh: the slave woman's not ṣaḥīḥ, the free woman's marriage coinciding with it (ẓāhir of al-Qāḍī in al-Mujarrad; Ibn Rajab: «وهو أصح»)",
           "ruling": false
         }
       ],
       "matches_madhhab": false,
-      "note": "One without the means for a free woman and fearing sin who marries a free woman and a slave woman in one contract: is the slave woman's marriage valid with the free woman's? «على وجهين». The khilāf arises only where the free woman would suffice him, for only then is her marriage a bar to coincide with the slave woman's; that is the branch annotated (the bar present). Where she would not suffice there is no bar, and the madhhab validates both («فعلى المذهب: لو جمع بينهما في عقد واحد: صح»; al-Iqnāʿ, Kashshāf), as the reading gives with no bar. On the annotated branch Ibn Rajab's fāʾida, quoted in al-Inṣāf, holds only the free woman's valid, «وهو ظاهر كلام القاضي في المجرد. وهو أصح», against al-Qāḍī and Abū al-Khaṭṭāb in their Khilāfs. The record goes on to the husband of his father's slave woman: «when my father dies you are divorced»."
+      "note": "One without the means for a free woman and fearing sin who marries a free woman and a slave woman in one contract: is the slave woman's marriage valid with the free woman's? «على وجهين». The khilāf arises only where the free woman would suffice him, for only then is her marriage a bar to coincide with the slave woman's; that is the branch annotated (the bar present). Where she would not suffice there is no bar, and the madhhab validates both («فعلى المذهب: لو جمع بينهما في عقد واحد: صح»; al-Iqnāʿ, Kashshāf), as the reading gives with no bar. On the annotated branch Ibn Rajab's fāʾida, quoted in al-Inṣāf, holds only the free woman's valid, «وهو ظاهر كلام القاضي في المجرد. وهو أصح», against al-Qāḍī and Abū al-Khaṭṭāb in their Khilāfs. The record goes on to the husband of his father's slave woman: «when my father dies you are divorced» (a taʿlīq: «إذا مات أبي فأنت طالق»)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f003",
@@ -217,7 +217,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "Married to a slave woman: «if I buy you, you are divorced»: «وفيه الوجهان إن قلنا ينتقل الملك مع الخيار وهو الصحيح», the two wujūh of «when my father dies» (the divorce coinciding with the cause of the annulment, the ownership); if ownership does not pass, divorced «وجها واحدا» (Abū al-Khaṭṭāb). The later madhhab: divorced (al-Inṣāf, ṭalāq: «ويحتمل أن تطلق، وهو المذهب»; al-Furūʿ, al-Muntahā, Kashshāf)."
+      "note": "Married to a slave woman: «if I buy you, you are divorced»: «وفيه الوجهان إن قلنا ينتقل الملك مع الخيار وهو الصحيح», the two wujūh of «when my father dies» (the divorce coinciding with the cause (sabab) of the annulment, the ownership); if ownership does not pass, divorced «وجها واحدا» (Abū al-Khaṭṭāb). The later madhhab: divorced (al-Inṣāf, ṭalāq: «ويحتمل أن تطلق، وهو المذهب»; al-Furūʿ, al-Muntahā, Kashshāf)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f004",
@@ -312,7 +312,7 @@
         "defect_return": false
       },
       "expected": true,
-      "note": "The undetermined thing sold perishes before qabḍ: the contract is annulled in it and in its counter-value."
+      "note": "The undetermined thing sold perishes before qabḍ: the contract is annulled (infisākh, «انفسخ العقد») in it and in its counter-value."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f001",
@@ -323,7 +323,7 @@
         "defect_return": false
       },
       "expected": true,
-      "note": "Fruit bought on the palm destroyed by a blight before cutting: the contract is annulled in it."
+      "note": "Fruit bought on the palm destroyed by a blight before cutting: the contract is annulled (infisākh, «ينفسخ») in it."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f002",
@@ -334,7 +334,7 @@
         "defect_return": false
       },
       "expected": true,
-      "note": "The leased thing perishes before the term ends: the contract is annulled for what remains. Elective annulment after loss: the seller with an option, when the thing perishes, two riwāyas."
+      "note": "The leased thing perishes before the term ends: the contract is annulled (infisākh) for what remains. Elective annulment (faskh, «الفسخ الاختياري») after loss: the seller with an option, when the thing perishes, two riwāyas."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f003",
@@ -356,7 +356,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "The two disagree on the price after the thing sold has perished: they swear and annul, the buyer owing the value, or the buyer's word with no annulment (Abū Bakr). One who finds a defect in what he took for goods that have perished returns his and takes the value, «نص عليه أحمد ... ولم يذكر الأصحاب فيه خلافا»."
+      "note": "The two disagree on the price after the thing sold has perished: they swear (the yamīn of a claim, «يتخالفان») and annul (faskh, «ويفسخ البيع»), the buyer owing the value, or the buyer's word with no annulment (Abū Bakr). One who finds a defect in what he took for goods that have perished returns his and takes the value, «نص عليه أحمد ... ولم يذكر الأصحاب فيه خلافا»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f004",
@@ -378,7 +378,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "The defective thing wholly perishes: may the buyer annul and return its substitute? «الذي عليه الأكثرون أنه لا يملك ذلك وأشار إليه أحمد», «لأن الرد يستدعي مردودا»; Ibn Rajab: «وهو ضعيف لأن البدل يقوم مقام العين». A ribawī bought for its kind, defective then lost, is annulled with its substitute returned. Reconciled (jamʿ): the arsh is fixed once the defective thing perishes, «وهذا المذهب. وعليه أكثر الأصحاب» (al-Inṣāf; al-Iqnāʿ; Kashshāf), the return being impossible."
+      "note": "The defective thing (with an ʿayb) wholly perishes: may the buyer annul (faskh) and return its substitute? «الذي عليه الأكثرون أنه لا يملك ذلك وأشار إليه أحمد», «لأن الرد يستدعي مردودا»; Ibn Rajab: «وهو ضعيف لأن البدل يقوم مقام العين». A ribawī bought for its kind, defective then lost, is annulled with its substitute returned. Reconciled (jamʿ): the arsh is fixed once the defective thing perishes, «وهذا المذهب. وعليه أكثر الأصحاب» (al-Inṣāf; al-Iqnāʿ; Kashshāf), the return being impossible."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f005",
@@ -400,7 +400,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "Iqāla after the thing perishes: al-Qāḍī once, not valid, a contract on both parties' consent like sale; elsewhere, «قياس المذهب صحتها بعد التلف إذا قلنا هي فسخ», with Abū al-Khaṭṭāb and Ibn ʿAqīl; al-Talkhīṣ, two wujūh. The muʿtamad voids it once the thing sold perishes, «لتعذر الرد فيه» (Kashshāf; al-Muntahā; Sharḥ al-Muntahā); al-Inṣāf is undecided, adding al-Mughnī for that side."
+      "note": "Iqāla after the thing perishes: al-Qāḍī once, not valid, a contract on both parties' consent like sale; elsewhere, «قياس المذهب صحتها بعد التلف إذا قلنا هي فسخ», with Abū al-Khaṭṭāb and Ibn ʿAqīl; al-Talkhīṣ, two wujūh. The muʿtamad holds it not ṣaḥīḥ once the thing sold perishes, «لتعذر الرد فيه» (Kashshāf; al-Muntahā; Sharḥ al-Muntahā); al-Inṣāf is undecided, adding al-Mughnī for that side."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f006",

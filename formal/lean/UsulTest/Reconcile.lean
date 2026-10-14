@@ -412,10 +412,6 @@ open Usul.Reconcile
 #guard reconcile (P := String) none none [("false", .wajh), ("false", .takhrij), ("true", .wajh), ("true", .ashab), ("true", .qiyas)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f007
 #guard reconcile (P := String) none none [("true", .ashab), ("false", .takhrij)] == (.tarjih "true")
--- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f005
-#guard reconcile (P := String) none none [("true", .nass), ("false", .tashih), ("false", .tashih), ("false", .jazm), ("true", .nass)] == (.tarjih "false")
--- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f006
-#guard reconcile (P := String) none none [("true", .nass), ("false", .tashih), ("false", .tashih), ("false", .jazm), ("true", .nass)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f000
 #guard reconcile (P := String) none none [("false", .ashab), ("true", .takhrij), ("true", .tashih), ("true", .tashih)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f002
@@ -470,3 +466,9 @@ open Usul.Reconcile
 #guard reconcile (P := String) none none [("true", .ashab), ("false", .ashab), ("false", .tashih), ("true", .qiyas), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f008
 #guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f005
+#guard reconcile (P := String) none none [("shared", .nass), ("mubashir", .nass), ("mubashir", .tashih), ("mubashir", .jazm)] == (.tarjih "mubashir")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f006
+#guard reconcile (P := String) none none [("shared", .nass), ("sabab", .nass), ("sabab", .tashih), ("sabab", .jazm)] == (.tarjih "sabab")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f008
+#guard reconcile (P := String) none none [("mubashir", .wajh), ("shared", .wajh)] == .tawaqquf

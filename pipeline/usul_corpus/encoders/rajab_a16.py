@@ -1,20 +1,10 @@
-"""Shard rajab-a16: readings of Ibn Rajab's qawāʿid 127, 129, 130 and 131 (Usul.Readings.RajabA16)."""
+"""Shard rajab-a16: readings of Ibn Rajab's qawāʿid 129, 130 and 131 (Usul.Readings.RajabA16)."""
 
 from usul_corpus.takhrij import RAJAB, B
 
 _NS = "Usul.Readings.RajabA16"
 
 ENCODERS: dict[str, dict] = {
-    "direct_agent_liable": dict(
-        sadi=[], qawaid=[RAJAB.format(127)],
-        facts={"arises_from_cause": B, "direct_aggressive": B},
-        out=B, lean=f"{_NS}.directLiable {{arises_from_cause}} {{direct_aggressive}}",
-        py=lambda f: (not f["arises_from_cause"]) or f["direct_aggressive"]),
-    "cause_agent_liable": dict(
-        sadi=[], qawaid=[RAJAB.format(127)],
-        facts={"arises_from_cause": B, "direct_aggressive": B},
-        out=B, lean=f"{_NS}.causeLiable {{arises_from_cause}} {{direct_aggressive}}",
-        py=lambda f: f["arises_from_cause"]),
     "hit_state_governs": dict(
         sadi=[], qawaid=[RAJAB.format(129)], facts={"liability_ruling": B},
         out=B, lean=f"{_NS}.hitStateGoverns {{liability_ruling}}",

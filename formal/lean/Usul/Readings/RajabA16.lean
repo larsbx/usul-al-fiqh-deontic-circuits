@@ -1,5 +1,8 @@
 /-!
-# Shard rajab-a16: readings of Ibn Rajab's qawāʿid 127, 129, 130 and 131
+# Shard rajab-a16: readings of Ibn Rajab's qawāʿid 129, 130 and 131
+
+Qāʿida 127 is read on main as `Usul.Readings.Mubashara.damanOn` (shard rajab-q127); this shard's
+duplicate reading and annotations of it were dropped at integration.
 
 Each reading is formalised from the qāʿida's own statement in the pinned witness
 (`openiti-rajab-shamela21730`), status `candidate`. Where the statement poses a question
@@ -8,39 +11,6 @@ stay recorded positions in the takhrīj suite `corpus/takhrij/rajab_m8_rajab_a16
 -/
 
 namespace Usul.Readings.RajabA16
-
-/-- Qāʿida 127, the direct agent: «إذا استند إتلاف أموال الآدميين ونفوسهم إلى مباشرة وسبب تعلق
-الضمان بالمباشرة دون السبب إلا إذا كانت المباشرة مبنية على السبب وناشئة عنه ... ثم إن كانت
-المباشرة والحالة هذه لا عدوان فيها بالكلية استقل السبب وحده بالضمان، وإن كان فيها عدوان شاركت
-السبب في الضمان». `arisesFromCause`: the direct act is built on the cause and arises from it;
-`directAggressive`: the direct act has ʿudwān in it. The output is that the direct agent bears
-liability: always in the first class (an act not arising from the cause), never in the second
-(arising from it, with no ʿudwān), and with the causer in the third. -/
-def directLiable (arisesFromCause directAggressive : Bool) : Bool :=
-  !arisesFromCause || directAggressive
-
-/-- Qāʿida 127, the causer: liability attaches to the cause only where the direct act is built on
-it («إلا إذا كانت المباشرة مبنية على السبب وناشئة عنه»), alone where the direct act has no
-ʿudwān («استقل السبب وحده بالضمان») and shared where it has («شاركت السبب في الضمان»). The
-output is that the causer bears liability. -/
-def causeLiable (arisesFromCause _directAggressive : Bool) : Bool :=
-  arisesFromCause
-
-/-- «تعلق الضمان بالمباشرة دون السبب»: a direct act that does not arise from the cause leaves the
-causer free, whatever the direct act's ʿudwān. -/
-theorem independent_direct_frees_cause (a : Bool) : causeLiable false a = false := rfl
-
-/-- «استقل السبب وحده بالضمان»: a direct act arising from the cause with no ʿudwān in it frees the
-direct agent. -/
-theorem excused_direct_not_liable : directLiable true false = false := rfl
-
-/-- «شاركت السبب في الضمان»: with ʿudwān in a direct act built on the cause, both are liable. -/
-theorem aggressive_direct_shares :
-    directLiable true true = true ∧ causeLiable true true = true := ⟨rfl, rfl⟩
-
-/-- The three classes leave no loss unanswered: on every input one of the two is liable. -/
-theorem someone_liable (b a : Bool) : (directLiable b a || causeLiable b a) = true := by
-  cases b <;> cases a <;> rfl
 
 /-- Qāʿida 129: «إذا تعينت حال المرمي تجيئ بين الرمي والإصابة، فهل الاعتبار بحال الإصابة أم بحالة
 الرمي، أم يفرق بين القود والضمان ...؟ فيه للأصحاب أوجه». The reading takes the qāʿida's third
@@ -71,7 +41,7 @@ theorem changed_affiliation_bars_aqila (h : Bool) :
 /-- Qāʿida 130: «المسكن والخادم والمركب المحتاج إليه ليس بمال فاضل يمنع أخذ الزكوات ولا يجب فيه
 الحج والكفارات ولا يوفي منه الديون والنفقات نص على ذلك أحمد». `needed`: the house, servant or
 mount is needed by him. The output is that it counts as surplus wealth (barring zakāt, obliging
-ḥajj and expiation, sold for debts and maintenance). -/
+ḥajj and expiation (kaffāra), sold for debts and maintenance). -/
 def countsAsSurplus (needed : Bool) : Bool := !needed
 
 /-- What he needs never counts as surplus. -/

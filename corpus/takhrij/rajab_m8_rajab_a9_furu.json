@@ -35,7 +35,7 @@
         {"who": "al-Majd: the ẓāhir of Aḥmad (riwāyat Ṣāliḥ) gives its validity from the outset", "ruling": true}
       ],
       "matches_madhhab": true,
-      "note": "A waqf on whoever will be born to him: «فصرح القاضي في خلافه بأنه لا يصح». al-Majd reads Aḥmad's «أو من يكون من أقاربه» as validity (he himself calls it a waqf suspended on a condition); Ibn Rajab construes «يكون» as kāna nāqiṣa, «من يكون [موجودا] من أقاربه». al-Inṣāf (v07:p023): «لو قال \" وقفت على من سيولد لي \" أو \" من سيولد لفلان \" لم يصح. على الصحيح من المذهب. وعليه جماهير الأصحاب»; al-Iqnāʿ «ولا يصح على معدوم أصلا كمن سيولد»; on the madhhab side."
+      "note": "A waqf on whoever will be born to him: «فصرح القاضي في خلافه بأنه لا يصح». al-Majd reads Aḥmad's «أو من يكون من أقاربه» as validity (he himself calls it a waqf suspended on a condition, «وقف معلق بشرط»); Ibn Rajab construes «يكون» as kāna nāqiṣa, «من يكون [موجودا] من أقاربه». al-Inṣāf (v07:p023): «لو قال \" وقفت على من سيولد لي \" أو \" من سيولد لفلان \" لم يصح. على الصحيح من المذهب. وعليه جماهير الأصحاب»; al-Iqnāʿ «ولا يصح على معدوم أصلا كمن سيولد»; on the madhhab side."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f004",
@@ -69,7 +69,7 @@
         {"who": "the other wajh; Ibn Rajab «والدخول هنا أولى»; Shams al-Dīn b. Abī ʿUmar's fatwā: he shares", "ruling": true}
       ],
       "matches_madhhab": false,
-      "note": "A waqf passing to those in the degree of one who died childless; two take his share, then a third is born: «فهل يشاركهم يخرج فيه وجهان من التي قبلها». The qāʿida puts it in the khilāf branch: «وكذا لو انتقل الوقف إلى قوم فحدث من يشاركهم», so the reading does not establish inclusion. Ibn Rajab's farq: the waqf on children may regard the individuals existing at the waqf, whereas the degree regards only the general direction. The later madhhab holds he shares (al-Muntahā, al-Inṣāf), against the reading: ledger. Follow-on in the record: the bequest to the non-existent by origin is invalid (al-Qāḍī, Ibn ʿAqīl), with two riwāyas on one arising between the bequest and death, and Aḥmad's farq between the sikka and the kūra."
+      "note": "A waqf passing to those in the degree of one who died childless; two take his share, then a third is born: «فهل يشاركهم يخرج فيه وجهان من التي قبلها». The qāʿida puts it in the khilāf branch: «وكذا لو انتقل الوقف إلى قوم فحدث من يشاركهم», so the reading does not establish inclusion. Ibn Rajab's farq: the waqf on children may regard the individuals existing at the waqf, whereas the degree regards only the general direction. The later madhhab holds he shares (al-Muntahā, al-Inṣāf), against the reading: ledger. Follow-on in the record: the bequest to the non-existent by origin is invalid, not ṣaḥīḥ (al-Qāḍī, Ibn ʿAqīl), with two riwāyas on one arising between the bequest and death, and Aḥmad's farq between the sikka and the kūra."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f001",
@@ -79,7 +79,7 @@
       "expected": true,
       "positions": [
         {"who": "the madhhab al-mashhūr: judged sequential; each inherits from the other's old wealth", "ruling": true},
-        {"who": "Abū al-Khaṭṭāb's takhrīj of a riwāya: no mutual inheritance, the condition being in doubt", "ruling": false}
+        {"who": "Abū al-Khaṭṭāb's takhrīj of a riwāya: no mutual inheritance, the condition being in doubt («للشك في شرطه»)", "ruling": false}
       ],
       "matches_madhhab": true,
       "note": "Mutual heirs dying together by collapse, drowning or plague, simultaneity unknown: «حكمنا بتعاقبه على المذهب المشهور، وورثنا كل واحد منهما من الآخر من تلاد ماله». al-Inṣāf (v07:p345): «فالصحيح من المذهب: أن كل واحد من الموتى يرث صاحبه من تلاد ماله»; on the madhhab side. Follow-on: likewise where one is known to have died first but which is unknown or forgotten, resting on certainty of life not being required."
@@ -117,7 +117,7 @@
       "facts": {"known_simultaneous": false, "known_sequential": false},
       "expected": true,
       "positions": [
-        {"who": "the wajh siding with the claimant of sequence, the ẓāhir being with him: the marriage is annulled", "ruling": true},
+        {"who": "the wajh siding with the claimant of sequence, the ẓāhir being with him: the marriage is annulled (infisākh, «ينفسخ النكاح»)", "ruling": true},
         {"who": "the wajh siding with the claimant of simultaneity, the aṣl being continuance: no annulment", "ruling": false}
       ],
       "matches_madhhab": true,
@@ -208,7 +208,7 @@
         {"who": "the second riwāya: the ḥākim separates them", "ruling": false}
       ],
       "matches_madhhab": false,
-      "note": "The one who swore īlāʾ refuses, after the term, both to return and to divorce: «فروايتان إحداهما يحبس حتى يفيء أو يطلق. والثانية: يفرق الحاكم بينهما». The reading compels the choice; al-Inṣāf (v09:p190) «وفي الأخرى: يطلق الحاكم عليه، وهو المذهب», with al-Muntahā and al-Iqnāʿ: against the reading; ledger. Follow-on in the record (a further «ومنها»): the pledgor who refuses payment when the debt falls due, with no agent to sell, has the pledge sold by the ḥākim, of the qāʿida's branch «وإن كان حقا عليه وأمكن استيفاؤه منه استوفي»."
+      "note": "The one who swore īlāʾ (a yamīn not to approach his wife; «المولى») refuses, after the term, both to return and to divorce: «فروايتان إحداهما يحبس حتى يفيء أو يطلق. والثانية: يفرق الحاكم بينهما». The reading compels the choice; al-Inṣāf (v09:p190) «وفي الأخرى: يطلق الحاكم عليه، وهو المذهب», with al-Muntahā and al-Iqnāʿ: against the reading; ledger. Follow-on in the record (a further «ومنها»): the pledgor who refuses payment when the debt falls due, with no agent to sell, has the pledge sold by the ḥākim, of the qāʿida's branch «وإن كان حقا عليه وأمكن استيفاؤه منه استوفي»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f009",

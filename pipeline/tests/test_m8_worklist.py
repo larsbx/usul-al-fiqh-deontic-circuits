@@ -113,6 +113,7 @@ def test_selected_tranche_has_exact_obligations_and_open_human_review():
     for q in plan["selection"]:
         assert all(f"#check @{n}\n" in checked for n in q["reading"])
     revised = {r["far"]: r for r in plan.get("revisions", []) if "closed_by" in r}
+    renoted = {r["far"]: r for r in plan.get("note_revisions", [])}
     for o in plan["obligations"]:
         record, case = records[o["far"]], cases[o["far"]]
         assert o["record_locator"] == record["locator"]
@@ -137,6 +138,7 @@ def test_both_pr_contributions_are_preserved_without_case_reinterpretation():
     assert not receipts[31].keys() & receipts[32].keys()
     assert receipts[31].keys() | receipts[32].keys() == cases.keys()
     revised = {r["far"]: r for r in plan.get("revisions", [])}
+    renoted = {r["far"]: r for r in plan.get("note_revisions", [])}
     for receipt in receipts.values():
         for far, expected_hash in receipt.items():
             encoded = json.dumps(cases[far], ensure_ascii=False, sort_keys=True, separators=(",", ":"))
@@ -148,6 +150,13 @@ def test_both_pr_contributions_are_preserved_without_case_reinterpretation():
                     assert cases[far]["side_check"] == rev["side_check"], far
                 else:
                     assert cases[far]["revisit"]["closed_by"] == rev["closed_by"], far
+            elif far in renoted:  # only English fields changed: restoring them gives the receipt back
+                rn = renoted[far]
+                old = dict(cases[far], note=rn.get("from_note", cases[far].get("note")))
+                if "from_who" in rn:
+                    old["positions"] = [dict(p, who=w) for p, w in zip(cases[far]["positions"], rn["from_who"], strict=True)]
+                was = json.dumps(old, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+                assert hashlib.sha256(was.encode()).hexdigest() == expected_hash and current == rn["case_sha256"], far
             else:
                 assert current == expected_hash, far
 

@@ -12,7 +12,7 @@
     "separable_without_harm": false
    },
    "expected": true,
-   "note": "The lessee's planting and building after the term, which he does not uproot: the lessor takes them over at value, «لأنه لا يملك قلعه بدون ضمان نقصه، وفيه ضرر عليه» (al-Qāḍī, Ibn ʿAqīl, the majority). Abū al-Khaṭṭāb drops the condition that the lessee not uproot, «فلعله جعل الخيرة لمالك الأرض»: a difference on the condition, not on the takeover."
+   "note": "The lessee's planting and building after the term, which he does not uproot: the lessor takes them over at value, «لأنه لا يملك قلعه بدون ضمان نقصه، وفيه ضرر عليه» (al-Qāḍī, Ibn ʿAqīl, the majority). Abū al-Khaṭṭāb drops the condition (sharṭ) that the lessee not uproot, «فلعله جعل الخيرة لمالك الأرض»: a difference on the condition, not on the takeover."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f001",
@@ -23,7 +23,7 @@
     "separable_without_harm": false
    },
    "expected": true,
-   "note": "The borrower's planting and building when the lender recalls the loan (or a binding term ends): «فالمنصوص عن أحمد أنه يتملك بالقيمة» (Muhannā, Ibn Manṣūr, Jaʿfar b. Muḥammad); the riwāya «يتملك بالنفقة» differs only on the measure. Follow-on: the owner may uproot at the outset «بغير خلاف», and is not compelled where uprooting harms him; where it does not, «فتردد فيه كلام الأصحاب»."
+   "note": "The borrower's planting and building when the lender recalls the loan (or a binding term ends, «وقلنا يلزم بالتوقيت»): «فالمنصوص عن أحمد أنه يتملك بالقيمة» (Muhannā, Ibn Manṣūr, Jaʿfar b. Muḥammad); the riwāya «يتملك بالنفقة» differs only on the measure. Follow-on: the owner may uproot at the outset «بغير خلاف», and is not compelled where uprooting harms him; where it does not, «فتردد فيه كلام الأصحاب»."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f002",
@@ -67,7 +67,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Land given as dower in which the wife planted or built, then divorce before consummation; the husband asks for half and offers half the value of the planting: «قال الخرقي يجبر على القبول». al-Qāḍī: his right falls to the value, so it is not of this qāʿida; Ibn Rajab answers that it is, the wife's ownership of the half not being settled before consummation. al-Inṣāf (v08:p270) on the dowered land she built on: «فله ذلك على الصحيح من المذهب. اختاره المصنف، والشارح، والخرقي»; on the madhhab side."
+   "note": "Land given as dower in which the wife planted or built, then divorce («ثم طلقها») before consummation; the husband asks for half and offers half the value of the planting: «قال الخرقي يجبر على القبول». al-Qāḍī: his right falls to the value, so it is not of this qāʿida; Ibn Rajab answers that it is, the wife's ownership of the half not being settled before consummation. al-Inṣāf (v08:p270) on the dowered land she built on: «فله ذلك على الصحيح من المذهب. اختاره المصنف، والشارح، والخرقي»; on the madhhab side."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f005",
@@ -78,7 +78,7 @@
     "separable_without_harm": false
    },
    "expected": true,
-   "note": "One who received by an invalid contract from the owner and planted or built: the owner takes it over at value «كغراس المستعير», and it is not uprooted except with compensation, «بالاستناد إلى الإذن» (al-Qāḍī, Ibn ʿAqīl)."
+   "note": "One who received by a fāsid contract from the owner and planted or built: the owner takes it over at value «كغراس المستعير», and it is not uprooted except with compensation (ḍamān), «بالاستناد إلى الإذن» (al-Qāḍī, Ibn ʿAqīl)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f006",
@@ -240,7 +240,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "A dower that increased with an attached increase, then divorce before consummation: «لم يكن له الرجوع في نصفه وسقط حقه منه إلى قيمة النصف ذكره الخرقي ولم نعلم عن أحد من الأصحاب خلافه». al-Qāḍī distinguishes the bankrupt's seller (annulment from the root, divorce from now); Ibn Rajab rejects the farq. Ṣāḥib al-Muḥarrar draws the return to the half with the increase from the riwāya on detached increase; Ibn Rajab draws a further wajh, return with the increase's value repaid. al-Inṣāf (v08:p264): «للزوجة، على الصحيح من المذهب»: off the madhhab side, so a ledger entry."
+   "note": "A dower that increased with an attached increase, then divorce before consummation: «لم يكن له الرجوع في نصفه وسقط حقه منه إلى قيمة النصف ذكره الخرقي ولم نعلم عن أحد من الأصحاب خلافه». al-Qāḍī distinguishes the bankrupt's seller (annulment, faskh, from the root; divorce, ṭalāq, from now); Ibn Rajab rejects the farq. Ṣāḥib al-Muḥarrar draws the return to the half with the increase from the riwāya on detached increase; Ibn Rajab draws a further wajh, return with the increase's value repaid. al-Inṣāf (v08:p264): «للزوجة، على الصحيح من المذهب»: off the madhhab side, so a ledger entry."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f004",
@@ -261,7 +261,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "A green crop or unripe fruit bought on condition of cutting and left until it ears and hardens or ripens: «فهل يبطل البيع بذلك أم لا؟ فيه روايتان: أشهرهما أنه يبطل» (al-Khiraqī, Abū Bakr, Ibn Abī Mūsā, al-Qāḍī, the majority), on one of two maʾkhadhs (a delay forbidden for God's right; or the mixing of the two properties). Follow-on: on annulment the increase is the seller's (Ibn Abī Mūsā, al-Qāḍī; Abū Ṭālib), or they give it in charity, or they share it; on validity, three riwāyāt (share, charity, all to the seller). al-Inṣāf (v05:p069): «فالصحيح من المذهب: بطلان البيع»; on the madhhab side."
+   "note": "A green crop or unripe fruit bought on condition of cutting («بشرط القطع») and left until it ears and hardens or ripens: «فهل يبطل البيع بذلك أم لا؟ فيه روايتان: أشهرهما أنه يبطل» (al-Khiraqī, Abū Bakr, Ibn Abī Mūsā, al-Qāḍī, the majority), on one of two maʾkhadhs (a delay forbidden for God's right; or the mixing of the two properties). Follow-on: on annulment (infisākh, «رواية الانفساخ») the increase is the seller's (Ibn Abī Mūsā, al-Qāḍī; Abū Ṭālib), or they give it in charity («يتصدقان بها»), or they share it; on validity, three riwāyāt (share, charity, all to the seller). al-Inṣāf (v05:p069): «فالصحيح من المذهب: بطلان البيع»; on the madhhab side."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f000",
@@ -400,7 +400,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Entering another's house or sitting on his carpet without permission while the owner is there: «ففي الخلاف الكبير لا ضمان وعلل بانتفاء الحيلولة ورفع اليد». al-Talkhīṣ: one entering with intent to usurp, strong enough to overpower, usurps half; some of the aṣḥāb in his Khilāf: the sitter is liable for what he sat on. al-Iqnāʿ (v02:p338) is decisive: «فلو دخل أرض إنسان أو داره صاحبها فيها أولا بأذنه أو بغر أذنه لم يضمنها بدخوله»; on the madhhab side."
+   "note": "Entering another's house or sitting on his carpet without permission while the owner is there: «ففي الخلاف الكبير لا ضمان وعلل بانتفاء الحيلولة ورفع اليد». al-Talkhīṣ: one entering with intent to usurp, with the strength to overpower («بشرط قوة الداخل وتمكنه من القهر»), usurps half; some of the aṣḥāb in his Khilāf: the sitter is liable for what he sat on. al-Iqnāʿ (v02:p338) is decisive: «فلو دخل أرض إنسان أو داره صاحبها فيها أولا بأذنه أو بغر أذنه لم يضمنها بدخوله»; on the madhhab side."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f005",

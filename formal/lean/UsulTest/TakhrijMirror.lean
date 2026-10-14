@@ -484,6 +484,10 @@ import Usul
 #guard (Usul.CommandSchemata.intendedUsage .abuBarakat .permission) == .figurative
 #guard (Usul.CommandSchemata.intendedUsage .qadiArgument .recommendation) == .literal
 #guard (Usul.CommandSchemata.intendedUsage .qadiArgument .permission) == .figurative
+#guard (Usul.Readings.Mubashara.damanOn false false) == .mubashir
+#guard (Usul.Readings.Mubashara.damanOn false true) == .mubashir
+#guard (Usul.Readings.Mubashara.damanOn true false) == .sabab
+#guard (Usul.Readings.Mubashara.damanOn true true) == .shared
 #guard (Usul.Readings.RajabA1.rescission false false) == .free
 #guard (Usul.Readings.RajabA1.rescission false true) == .free
 #guard (Usul.Readings.RajabA1.rescission true false) == .barred
@@ -586,14 +590,6 @@ import Usul
 #guard (Usul.Readings.RajabA15.measuredAtInjury false true) == false
 #guard (Usul.Readings.RajabA15.measuredAtInjury true false) == false
 #guard (Usul.Readings.RajabA15.measuredAtInjury true true) == true
-#guard (Usul.Readings.RajabA16.directLiable false false) == true
-#guard (Usul.Readings.RajabA16.directLiable false true) == true
-#guard (Usul.Readings.RajabA16.directLiable true false) == false
-#guard (Usul.Readings.RajabA16.directLiable true true) == true
-#guard (Usul.Readings.RajabA16.causeLiable false false) == false
-#guard (Usul.Readings.RajabA16.causeLiable false true) == false
-#guard (Usul.Readings.RajabA16.causeLiable true false) == true
-#guard (Usul.Readings.RajabA16.causeLiable true true) == true
 #guard (Usul.Readings.RajabA16.hitStateGoverns false) == false
 #guard (Usul.Readings.RajabA16.hitStateGoverns true) == true
 #guard (Usul.Readings.RajabA16.aqilaBears false false) == false

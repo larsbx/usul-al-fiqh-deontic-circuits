@@ -151,7 +151,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "An oath by, or an immediate manumission of, «عبيده»: al-Khiraqī and Abū Bakr include the qinn, the mudabbar, the mukātab, the umm walad and his part-shares (al-Qāḍī adds his trading slave's slaves), and Aḥmad has it in the mukātab (Ibn Manṣūr). al-Qāḍī extracts a riwāya that the mukātabs do not enter without intention, from Muhannā's on part-shares, «ومأخذه أنهم خارجون من مسمى الرقيق والمملوك عرفا». The reading, specialising by custom, takes the extracted riwāya. al-Inṣāf (v07:p426): mudabbars, mukātabs and umm walads are freed «بلا نزاع في ذلك», part-shares «على الصحيح من المذهب»: off the madhhab side, so a ledger entry. Follow-on: Ibn Rajab's iḥtimāl that the umm walad is likewise outside, «ولو قيل إن أم الولد كذلك لم يبعد»."
+      "note": "An oath (yamīn) by, or an immediate manumission of, «عبيده»: al-Khiraqī and Abū Bakr include the qinn, the mudabbar, the mukātab, the umm walad and his part-shares (al-Qāḍī adds his trading slave's slaves), and Aḥmad has it in the mukātab (Ibn Manṣūr). al-Qāḍī extracts a riwāya that the mukātabs do not enter without intention, from Muhannā's on part-shares, «ومأخذه أنهم خارجون من مسمى الرقيق والمملوك عرفا». The reading, specialising by custom, takes the extracted riwāya. al-Inṣāf (v07:p426): mudabbars, mukātabs and umm walads are freed «بلا نزاع في ذلك», part-shares «على الصحيح من المذهب»: off the madhhab side, so a ledger entry. Follow-on: Ibn Rajab's iḥtimāl that the umm walad is likewise outside, «ولو قيل إن أم الولد كذلك لم يبعد»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f008",
@@ -213,7 +213,7 @@
           "ruling": false
         },
         {
-          "who": "the other riwāya: they enter it, so he makes up and expiates",
+          "who": "the other riwāya: they enter it, so he makes up and expiates (kaffāra)",
           "ruling": true
         }
       ],
@@ -302,7 +302,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "The vow of a month's continuous iʿtikāf: he may keep it outside the Friday mosque and go out to the Friday prayer «لاستثنائها بالشرع», «وفيه وجه لا يجوز الاعتكاف في غير الجامع، والأول المذهب». The sharʿ excepts the Friday prayer from the vowed continuity; the reading has the continuity not reach it. al-Inṣāf (v03:p366): «ولا يلزم فيه، وهذا المذهب، وعليه الأصحاب، وذكر في الانتصار وجها بلزوم الاعتكاف فيه، فإن اعتكف في غيره بطل لخروجه إليها». On the madhhab side. Follow-on: neither Ramaḍān nor the days of prohibition break a continuous fast."
+      "note": "The vow (nadhr) of a month's continuous iʿtikāf: he may keep it outside the Friday mosque and go out to the Friday prayer «لاستثنائها بالشرع», «وفيه وجه لا يجوز الاعتكاف في غير الجامع، والأول المذهب». The sharʿ excepts the Friday prayer from the vowed continuity; the reading has the continuity not reach it. al-Inṣāf (v03:p366): «ولا يلزم فيه، وهذا المذهب، وعليه الأصحاب، وذكر في الانتصار وجها بلزوم الاعتكاف فيه، فإن اعتكف في غيره بطل لخروجه إليها». On the madhhab side. Follow-on: neither Ramaḍān nor the days of prohibition break a continuous fast."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f001",
@@ -368,7 +368,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "Saying «عصيت الله فيما أمرني به»: is it an oath? al-Qāḍī: no, «لأن المشهور تخصيص المعاصي بالذنوب دون الكفر»; al-Majd: an oath, «لدخول التوحيد فيه». Disobedience in tawḥīd is the instance not ordinarily meant by the words; the reading has it outside, so no oath. al-Inṣāf (v11:p033): «فلا كفارة فيه) . هذا المذهب», al-Majd's view reported as his choice; Kashshāf has no expiation. On the madhhab side."
+      "note": "Saying «عصيت الله فيما أمرني به»: is it an oath (yamīn)? al-Qāḍī: no, «لأن المشهور تخصيص المعاصي بالذنوب دون الكفر»; al-Majd: an oath, «لدخول التوحيد فيه». Disobedience in tawḥīd is the instance not ordinarily meant by the words; the reading has it outside, so no oath. al-Inṣāf (v11:p033): «فلا كفارة فيه) . هذا المذهب», al-Majd's view reported as his choice; Kashshāf has no expiation. On the madhhab side."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f004",
@@ -390,7 +390,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "He tells his slaves «أنتم أحرار», his umm walad among them unknown to him, and he did not mean her: «على روايتين حكاهما أبي بكر وابن أبي موسى», Aḥmad's naṣṣ (Ibn Hāniʾ) being that she is freed; Ibn Rajab adds that the majority's view in the case of the wife who answers for another «فيتعين تخريج رواية في أم الولد أنها لا تعتق». The reading has her outside. al-Inṣāf (v07:p427) and al-Furūʿ carry the naṣṣ that she is freed, and Kashshāf states it: off the madhhab side, so a ledger entry. Follow-on: the wife called who is answered by another (two riwāyas, and whether the answerer is divorced only outwardly), and al-Majd's farq from divorcing one he takes for a stranger."
+      "note": "He tells his slaves «أنتم أحرار», his umm walad among them unknown to him, and he did not mean her: «على روايتين حكاهما أبي بكر وابن أبي موسى», Aḥmad's naṣṣ (Ibn Hāniʾ) being that she is freed; Ibn Rajab adds that the majority's view in the case of the wife who answers for another «فيتعين تخريج رواية في أم الولد أنها لا تعتق». The reading has her outside. al-Inṣāf (v07:p427) and al-Furūʿ carry the naṣṣ that she is freed, and Kashshāf states it: off the madhhab side, so a ledger entry. Follow-on: the wife called who is answered by another (two riwāyas, and whether the answerer is divorced (ṭalāq) only outwardly), and al-Majd's farq from divorcing one he takes for a stranger."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f005",
@@ -456,7 +456,7 @@
         "intended": false
       },
       "expected": true,
-      "note": "«ما أحل الله علي حرام», with a wife and property, and «لم أرد زوجتي»: «فهو مظاهر، عليه كفارة الظهار نص عليه في رواية ابن منصور ; لأن الزوجة أشهر أفراد الحلال الذي يقصد تحريمه ... فلا يصح إخراجه من العموم بعدم إرادة دخوله، وإنما يصح إخراجه بإرادة عدم دخوله». The wife is the instance ordinarily meant, not a rare one, so his disavowal does not take her out. Follow-ons: without a wife it is an oath like any forbidding of the permitted; with wife and property, only the ẓihār expiation by the naṣṣ, Ibn ʿAqīl adding an oath's expiation for the property; Ibn Rajab's two takhrījs of the naṣṣ (property not ordinarily meant by forbidding, «فتكون المسألة حينئذ في صورة القاعدة»; or the merging of expiations)."
+      "note": "«ما أحل الله علي حرام», with a wife and property, and «لم أرد زوجتي»: «فهو مظاهر، عليه كفارة الظهار نص عليه في رواية ابن منصور ; لأن الزوجة أشهر أفراد الحلال الذي يقصد تحريمه ... فلا يصح إخراجه من العموم بعدم إرادة دخوله، وإنما يصح إخراجه بإرادة عدم دخوله». The wife is the instance ordinarily meant, not a rare one, so his disavowal does not take her out. Follow-ons: without a wife it is an oath (yamīn) like any forbidding of the permitted; with wife and property, only the ẓihār expiation by the naṣṣ, Ibn ʿAqīl adding an oath's expiation for the property; Ibn Rajab's two takhrījs of the naṣṣ (property not ordinarily meant by forbidding, «فتكون المسألة حينئذ في صورة القاعدة»; or the merging of expiations)."
     }
   ]
 }
