@@ -1,0 +1,304 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f001",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ibn Rajab's two wujūh; al-Inṣāf gives the fruit pollinated in the buyer's hand to him «على الصحيح من المذهب», the shafīʿ's a bare wajh. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p292",
+          "excerpt_ar": "فائدة: لو تأبر الطلع المشمول بالبيع في يد المشتري: كانت التمرة له. على",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "«كانت التمرة له. على الصحيح من المذهب. قطع به في المغني، والشرح»; «وفيه وجه: هي للشفيع»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p061",
+          "excerpt_ar": "والرهن، والشفعة، إلا أن في الأخذ بالشفعة وجها آخر: أنه يتبع فيه المؤبر،",
+          "position": 0,
+          "grade": "wajh",
+          "who": "a wajh, as al-Inṣāf reports it",
+          "note": "In pre-emption the pollinated fruit follows where it was unpollinated at the sale."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f002",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Muqniʿ's iḥtimāl of ownership from the death, put first by several named works, against ownership from acceptance, «وهو المذهب» per al-Inṣāf. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p206",
+          "excerpt_ar": "قوله (وإن قبلها بعد الموت: ثبت الملك حين القبول. في الصحيح) وهو",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Ownership from the acceptance «في الصحيح» (al-Muqniʿ), «وهو المذهب»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p206",
+          "excerpt_ar": "الصحيح من المذهب. ونصره الشارح. ويحتمل أن يثبت الملك حين الموت. وقدمه في",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Muqniʿ's iḥtimāl, put first in al-Riʿāyatayn, al-Ḥāwī al-Ṣaghīr, al-Khulāṣa, al-Muḥarrar and al-Fāʾiq",
+          "note": "«ويحتمل أن يثبت الملك حين الموت»"
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f006",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Qāḍī's suspension in al-Mujarrad against Abū Bakr's walāʾ for the master (preferred by al-Qāḍī in al-Khilāf); al-Iqnāʿ and Kashshāf state the master's decisively. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p375",
+          "excerpt_ar": "بمال. وقلنا: له ذلك. فظاهر كلام المصنف: أن ولاءه للمكاتب. وهو قول القاضي",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Qāḍī (al-Mujarrad); the ẓāhir of al-Muqniʿ, as al-Inṣāf reports it",
+          "note": "«فظاهر كلام المصنف: أن ولاءه للمكاتب. وهو قول القاضي في المجرد»"
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p147",
+          "excerpt_ar": "بالمال لم يلزمه وكذا تبرعه ونحوه وولاء من يعتقه أو يكاتبه لسيده ولو مع",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The walāʾ of whom the mukātab frees or writes a kitāba for is his master's «ولو مع عدم عجزه ورجوعه إلى الرق», unless he pays first."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p548",
+          "excerpt_ar": "(وولاء من يعتقه) المكاتب لسيده (أو) ولاء من (يكاتبه) إذا أدى الثاني ما",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The same, «لأن العتق لا ينفك عن الولاء، والولاء لا يوقف»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f007",
+      "grades": [
+        "ashab",
+        "zahir"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Qāḍī (al-Mujarrad), Abū al-Khaṭṭāb and al-Majd rule the fast from the day's beginning; Ibn Rajab gives the other wajh as «ظاهر كلام أحمد», and al-Inṣāf makes it the madhhab, «نقله أبو طالب». Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p298",
+          "excerpt_ar": "فائدة: يحكم بالصوم الشرعي المثاب عليه من وقت النية. على الصحيح من",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The fast rewarded from the time of the intention «على الصحيح من المذهب. نقله أبو طالب»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p298",
+          "excerpt_ar": "يحكم بالصوم من أول النهار، اختاره القاضي في المجرد، وأبو الخطاب في",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Qāḍī (al-Mujarrad), Abū al-Khaṭṭāb (al-Hidāya), al-Majd, as al-Inṣāf reports them",
+          "note": "«وقيل: يحكم بالصوم من أول النهار»"
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f003",
+      "grades": [
+        "nass",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Aḥmad's naṣṣ (riwāyat Ṣāliḥ and Muhannā) that she inherits, against the riwāya Ibn Rajab calls mukharraja; al-Inṣāf makes the latter the madhhab, the divorce like a healthy man's. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p355",
+          "excerpt_ar": "شرط، فوجد في المرض، فالصحيح من المذهب: أنه كطلاق الصحيح. صححه المصنف،",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Suspended in health, met in illness: «فالصحيح من المذهب: أنه كطلاق الصحيح»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p355",
+          "excerpt_ar": "الكافي، والمغني، والمحرر، وغيرهم. وعنه: أنه كمتهم فيه. وأطلقهما في",
+          "position": 0,
+          "grade": "nass",
+          "who": "a riwāya of Aḥmad, as al-Inṣāf reports it",
+          "note": "«وعنه: أنه كمتهم فيه», so she inherits."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f004",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ibn Rajab's two wujūh; al-Inṣāf makes the qualities required at the appointment and the death the madhhab, as do al-Iqnāʿ and Sharḥ al-Muntahā; the sufficiency at death was corrected in al-Taṣḥīḥ. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p289",
+          "excerpt_ar": "والثاني: يكفي وجودها عند الموت فقط. وهو أحد وجهي المصنف. صححه في",
+          "position": 0,
+          "grade": "ashab",
+          "who": "one of al-Muwaffaq's two wujūh, corrected in al-Taṣḥīḥ, stated in al-Wajīz and al-Munawwar, as al-Inṣāf reports them",
+          "note": "«يكفي وجودها عند الموت فقط»"
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p289",
+          "excerpt_ar": "والثالث: يعتبر وجودها عند الموت والوصية فقط. وهو المذهب. وهو ظاهر كلام",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "«يعتبر وجودها عند الموت والوصية فقط. وهو المذهب»"
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p077",
+          "excerpt_ar": "الصفات عند الوصية إليه وعند موت الموصي فأن تغيرت بعد الوصية ثم عادت قبل",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The qualities are required at the appointment and at the testator's death."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p494",
+          "excerpt_ar": "بالنسب فيلي بالوصية كالمسلم (وتعتبر الصفات) المذكورة أي وجودها (حين موت)",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ al-Muntahā",
+          "note": "«(وتعتبر الصفات) ... (حين موت) موص (ووصية)», «لأنها شروط للعقد»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f005",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ibn Rajab's two wujūh, left open in al-Inṣāf; al-Iqnāʿ and Kashshāf give the rubble to the legatee, as of the house bequeathed. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p055",
+          "excerpt_ar": "الموصى له العمارة وتكون للوارث لا المنهدم منها لأن الأنقاض منها وأن أوصى",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The added building is the heir's, «لا المنهدم منها لأن الأنقاض منها»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p351",
+          "excerpt_ar": "المنفصل (منها) أي: من الدار قبل قبول الوصية فإنه يكون للموصى له عند",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "What fell from the house before acceptance is the legatee's, «لأن الأنقاض منها» so it enters the bequest."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p217",
+          "excerpt_ar": "في الرعاية الكبرى، وقلت: الأنقاض له، والعمارة إرث. وقيل: إن صارت فضاء في",
+          "position": 1,
+          "grade": "ashab",
+          "who": "Ibn Ḥamdān (al-Riʿāya al-Kubrā), as al-Inṣāf reports him",
+          "note": "«وقلت: الأنقاض له، والعمارة إرث»"
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f006",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ibn Rajab's two wujūh; al-Inṣāf makes the slave's suspension void «وهذا المذهب», the other wajh left unresolved by several. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p418",
+          "excerpt_ar": "بصحته من الحر. وهذا المذهب جزم به في الوجيز. وصححه في الشرح، وشرح ابن",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The slave's «إن ملكت فلانا فهو حر», then freed and owning: not valid, «وهذا المذهب»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p418",
+          "excerpt_ar": "والوجه الثاني: يصح. وأطلقهما في الهداية، والمذهب، والمستوعب، والمحرر،",
+          "position": 0,
+          "grade": "wajh",
+          "who": "the second wajh, as al-Inṣāf reports it",
+          "note": "«والوجه الثاني: يصح»"
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f004",
+      "grades": [
+        "qiyas",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The Talkhīṣ's qiyās al-madhhab of validity against Taqī al-Dīn's denial; al-Inṣāf makes validity the madhhab, and al-Muntahā and Kashshāf make the revocation suspended on the agency effective. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p368",
+          "excerpt_ar": "والصحيح من المذهب: صحتها. وجزم به في الرعايتين، والفائق. قال في التلخيص:",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The dawriyya, «فسخ معلق بشرط»: «والصحيح من المذهب: صحتها»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p368",
+          "excerpt_ar": "يؤدي إلى أن تصير العقود الجائزة لازمة. وذلك تغيير لقاعدة الشرع. وليس",
+          "position": 1,
+          "grade": "ashab",
+          "who": "Taqī al-Dīn, as al-Inṣāf reports him",
+          "note": "Not valid, as it would make revocable contracts binding."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p530",
+          "excerpt_ar": "موكل وعزل في دورية وهي وكلتك وكلما عزلتك فقد وكلتك بعزلتك وكلما وكلتك",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, al-Muntahā",
+          "note": "The agent is revoked in the dawriyya by «كلما وكلتك فقد عزلتك», «فسخ معلق بشرط»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p468",
+          "excerpt_ar": "والفسخ المعلق صحيح كما تقدم وعلى هذا: فلا يصير وكيلا إذا وكله بعد العزل",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "«والفسخ المعلق صحيح كما تقدم»."
+        }
+      ]
+    }
+  ]
+}

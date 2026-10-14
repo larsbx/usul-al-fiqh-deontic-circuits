@@ -17,7 +17,7 @@
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f002",
    "encoder": "amr",
-   "note": "Whether it is proper to ask of a bare command 'is it obligatory?' is a dialectical point on which Abu Ya'la reports only refusal and concession; it is one of the text's 'fawa'id usuliyya', not a case whose ruling could be tested.",
+   "note": "Whether it is proper to ask of a bare command 'is it obligatory?' («هل هو واجب») is a dialectical point on which Abu Ya'la reports only refusal and concession; it is one of the text's 'fawa'id usuliyya', not a case whose ruling could be tested.",
    "class": "segmentation_error",
    "facts": null,
    "expected": null
@@ -39,7 +39,7 @@
    "needs": [
     "rule:nass_immune_to_tawil"
    ],
-   "note": "Whether an unqualified threat, or the words 'obligatory'/'fard', are a text (nass) for obligation that admits no reinterpretation (al-Qadi: no; Abu al-Barakat, preferred: yes) asks whether an indication may override the default at all, whereas the kernel lets any qarina override every command.",
+   "note": "Whether an unqualified threat, or the words 'obligatory'/'fard' («إطلاق الوجوب أو الفرض»), are a text (nass) for obligation that admits no reinterpretation (al-Qadi: no; Abu al-Barakat, preferred: yes) asks whether an indication may override the default at all, whereas the kernel lets any qarina override every command.",
    "class": "missing_rule",
    "facts": null,
    "expected": null
@@ -75,7 +75,7 @@
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f006",
    "encoder": "amr_mixed",
-   "note": "A command over items partly obligatory, partly recommended («وافعلوا الخير»): Ibn ʿAbd al-Salām reads obligation with takhṣīṣ, Abū al-ʿAbbās the obligatory in the obligatory items and the recommended in the recommended; the two give the same ruling on every item (mixed_readings_agree), so the case is derivable whichever is taken.",
+   "note": "A command over items partly obligatory, partly recommended («بعضه واجبا وبعضه مستحبا») («وافعلوا الخير»): Ibn ʿAbd al-Salām reads obligation with takhṣīṣ, Abū al-ʿAbbās the obligatory in the obligatory items and the recommended in the recommended; the two give the same ruling on every item (mixed_readings_agree), so the case is derivable whichever is taken.",
    "class": "derivable",
    "facts": {
     "per_item_status": "mandub"
