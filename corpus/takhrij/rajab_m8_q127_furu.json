@@ -1,0 +1,154 @@
+{
+ "suite": "m8_rajab_q127",
+ "status": "candidate",
+ "provenance": "Ibn Rajab's qāʿida 127 (lane A): every far record annotated against the reading formalised from the qāʿida's own statement (Usul.Readings.Mubashara.damanOn). Each was annotated by reading the full paragraph in the pinned witness, and each ikhtilāf side checked against al-Inṣāf and al-Iqnāʿ. Candidate, awaiting human review.",
+ "cases": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f000",
+   "encoder": "mubashara_tasabbub",
+   "class": "derivable",
+   "facts": {
+    "arising_from_sabab": false,
+    "udwan_in_mubashara": true
+   },
+   "expected": "mubashir",
+   "note": "The first division: «إذا حفر واحد بئرا عدوانا ثم دفع غيره فيها … فالضمان على الدافع وحده». The push does not arise from the digging, so the direct actor bears it, though the digging was a transgression."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f001",
+   "encoder": "mubashara_tasabbub",
+   "class": "derivable",
+   "facts": {
+    "arising_from_sabab": false,
+    "udwan_in_mubashara": true
+   },
+   "expected": "mubashir",
+   "note": "«لو فتح قفصا عن طائر فاستقر بعد فتحه فجاء آخر فنفره فالضمان على المنفر وحده»: the bird settled after the opening, so the scaring does not arise from it."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f002",
+   "encoder": "mubashara_tasabbub",
+   "class": "derivable",
+   "facts": {
+    "arising_from_sabab": false,
+    "udwan_in_mubashara": true
+   },
+   "expected": "mubashir",
+   "note": "«لو رمى معصوما من شاهق فتلقاه آخر بسيف فقده به فالقاتل هو الثاني دون الأول». Follow-ons: the struck foetus and the shot game, where «الضارب ليس بمتسبب بل هو مباشر» and the first is the killer; on the game «وخرجه طائفة على الخلاف». The paragraph also carries the second division's first farʿ, the poisoned food («فالقاتل هو المقدم»), which is not segmented as its own record."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f003",
+   "encoder": "mubashara_tasabbub",
+   "class": "derivable",
+   "facts": {
+    "arising_from_sabab": true,
+    "udwan_in_mubashara": false
+   },
+   "expected": "sabab",
+   "note": "The second division: «لو قتل الحاكم حدا أو قصاصا بشهادة ثم أقر الشهود أنهم تعمدوا الكذب فالضمان والقود عليهم دون الحاكم». The judge's act is built on the testimony and has no transgression. Follow-ons: the majbūb, where the judge bears it «لا يخلو من تفريط», and the fāsiq witnesses with the three wujūh on the muzakkūn; the leading ruling is the confessed witnesses."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f004",
+   "encoder": "mubashara_tasabbub",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "arising_from_sabab": true,
+    "udwan_in_mubashara": false
+   },
+   "expected": "sabab",
+   "positions": [
+    {
+     "who": "the first wajh: al-Qāḍī (al-Amr bi-l-Maʿrūf), Ibn ʿAqīl (ʿUmad al-Adilla); the coerced «معذور في ذلك الفعل»",
+     "ruling": "sabab"
+    },
+    {
+     "who": "the second wajh: al-Talkhīṣ, al-Qāḍī as an iḥtimāl, «لاشتراكهما في الإثم»",
+     "ruling": "shared"
+    },
+    {
+     "who": "an iḥtimāl al-Talkhīṣ reports: the destroyer alone, «وهذا ضعيف جدا»",
+     "ruling": "mubashir"
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "One coerced to destroy another's property, placed by Ibn Rajab in the second division: the coerced act arises from the coercion and, on the first wajh, carries no transgression. al-Iqnāʿ (v02:p354): «وإن أكره على إتلافه ضمنه مكرهه»; on the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f005",
+   "encoder": "mubashara_tasabbub",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "arising_from_sabab": true,
+    "udwan_in_mubashara": true
+   },
+   "expected": "shared",
+   "positions": [
+    {
+     "who": "the riwāya Ibn Rajab cites for the third division: «يشتركان في الضمان والقود»",
+     "ruling": "shared"
+    },
+    {
+     "who": "the other riwāya: «يختص المباشر بهما ويحبس الماسك حتى يموت»",
+     "ruling": "mubashir"
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "The holder with the killer, placed by Ibn Rajab in the third division. al-Inṣāf (v09:p456) makes the killer's alone the madhhab and the Iqnāʿ states it, so the reading lands off the madhhab's side; entered in the ledger."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f006",
+   "encoder": "mubashara_tasabbub",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "arising_from_sabab": true,
+    "udwan_in_mubashara": true
+   },
+   "expected": "shared",
+   "positions": [
+    {
+     "who": "the riwāya «يشتركان فيه كالممسك والقاتل»",
+     "ruling": "shared"
+    },
+    {
+     "who": "the riwāya «يختص بالضمان الواضع جعلا له كالدافع»",
+     "ruling": "sabab"
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "A well dug in transgression in the road, a stone set beside it by another. The roles follow Ibn Rajab's own classing of the companion case, «ولو كان الحافر غير متعد فالضمان على الواضع وحده، وهي من صور القسم الثاني»: the well is the direct act, built on the stone, and the placer is the cause. With a transgressing digger the reading gives the shared division. al-Inṣāf (v10:p034) makes the placer's alone the madhhab and the Iqnāʿ states it; entered in the ledger. The companion case is derivable (cause alone)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f007",
+   "encoder": "mubashara_tasabbub",
+   "class": "derivable",
+   "facts": {
+    "arising_from_sabab": true,
+    "udwan_in_mubashara": true
+   },
+   "expected": "shared",
+   "note": "«لو دل المودع لصا على الوديعة فسرقها بالضمان عليهما»: the theft is built on the pointing and is a transgression. Follow-on: pointing a non-muḥrim to game, «فالضمان على المحرم وحده، وهي من صور القسم الثاني»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f008",
+   "encoder": "mubashara_tasabbub",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "arising_from_sabab": false,
+    "udwan_in_mubashara": true
+   },
+   "expected": "mubashir",
+   "positions": [
+    {
+     "who": "al-Qāḍī's first iḥtimāl (al-Mujarrad): «لأنه مباشر والأول متسبب غير ملجئ»",
+     "ruling": "mubashir"
+    },
+    {
+     "who": "al-Qāḍī's second iḥtimāl: «على الأول باليد وعلى الثاني بالمباشرة»",
+     "ruling": "shared"
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "A muḥrim holding game who could release it and did not, until another muḥrim killed it. On the first iḥtimāl the holding is a cause the killing does not arise from. The second adds liability by the hand, a ground outside Q127's statement, and Ibn Rajab extends it to «كل من أتلف عينا في يد من هي مضمونة عليه باليد». No later work states this case's side; entered in the ledger."
+  }
+ ]
+}

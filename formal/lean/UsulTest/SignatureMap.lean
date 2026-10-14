@@ -455,6 +455,12 @@ import Usul
 #check @Usul.Refinements.removedWithPrincipalIn_conservative
 #check @Usul.Refinements.annulsNonexistentIn
 #check @Usul.Refinements.annulsNonexistentIn_conservative
+#check @Usul.Readings.Mubashara.damanOn
+#check @Usul.Readings.Mubashara.q127_direct_unless_arising
+#check @Usul.Readings.Mubashara.q127_cause_alone_without_udwan
+#check @Usul.Readings.Mubashara.q127_shared_with_udwan
+#check @Usul.Readings.Mubashara.q127_three_divisions
+#check @Usul.Readings.Mubashara.q127_agrees_with_q13
 #check @Usul.Hukm.Mode
 #check @Usul.Hukm.mode
 #check @Usul.Hukm.mode_binding_injective

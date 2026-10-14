@@ -1,8 +1,8 @@
 {
- "total": 752,
+ "total": 761,
  "classes": {
-  "derivable": 316,
-  "genuine_ikhtilaf": 429,
+  "derivable": 321,
+  "genuine_ikhtilaf": 433,
   "missing_fact": 1,
   "missing_rule": 5,
   "segmentation_error": 1
@@ -10,7 +10,7 @@
  "coverage": 0.992,
  "madhhab_coverage": 0.736,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 237,
+ "ikhtilaf_matching_madhhab": 238,
  "gaps_open": 6,
  "revisited": 37,
  "revisit_queue": [],
@@ -334,6 +334,10 @@
   },
   "umum_lafz": {
    "derivable": 3
+  },
+  "mubashara_tasabbub": {
+   "derivable": 5,
+   "genuine_ikhtilaf": 4
   },
   "rescission_harm": {
    "derivable": 3,

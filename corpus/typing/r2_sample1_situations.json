@@ -1,0 +1,339 @@
+{
+ "schema_version": 1,
+ "status": "candidate",
+ "provenance": "R2 sample 1: per witness, the records whose ids hash lowest (typed_routing.PROPOSALS), from three Masāʾil of Aḥmad and two mutūn. Typed blind by two LLM agents under opaque ids, seeing only the unit texts and the field catalogue generated from the Lean export; every quote re-verified verbatim against the unit text. Candidate.",
+ "answers": [
+  {
+   "answer": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00052",
+   "situations": []
+  },
+  {
+   "answer": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00196",
+   "situations": []
+  },
+  {
+   "answer": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00355",
+   "situations": []
+  },
+  {
+   "answer": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00529",
+   "situations": []
+  },
+  {
+   "answer": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00649",
+   "situations": []
+  },
+  {
+   "answer": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00683",
+   "situations": []
+  },
+  {
+   "answer": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01051",
+   "situations": []
+  },
+  {
+   "answer": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01087",
+   "situations": []
+  },
+  {
+   "answer": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01254",
+   "situations": []
+  },
+  {
+   "answer": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01272",
+   "situations": []
+  },
+  {
+   "answer": "harb.masail.openiti_harb_masail_shamela12527.m00014",
+   "situations": [
+    {
+     "label": "Woman married to two men by grandfather and brother; the earlier marriage stands",
+     "facts": {
+      "has_precedence": true
+     },
+     "evidence": {
+      "has_precedence": "أيهما كان قبل, فهي امرأته"
+     }
+    }
+   ]
+  },
+  {
+   "answer": "harb.masail.openiti_harb_masail_shamela12527.m00100",
+   "situations": []
+  },
+  {
+   "answer": "harb.masail.openiti_harb_masail_shamela12527.m00102",
+   "situations": []
+  },
+  {
+   "answer": "harb.masail.openiti_harb_masail_shamela12527.m00196",
+   "situations": [
+    {
+     "label": "Vague divorce of one of two wives with no intention; one dies before lots are drawn",
+     "facts": {
+      "intended_specific": false,
+      "entitled_known": false
+     },
+     "evidence": {
+      "intended_specific": "ولم ينو واحدة منهما",
+      "entitled_known": "فإن كان لا يدري لم يرثها شيئا"
+     }
+    }
+   ]
+  },
+  {
+   "answer": "harb.masail.openiti_harb_masail_shamela12527.m00245",
+   "situations": [
+    {
+     "label": "Divorce conditioned on bearing a boy and a girl; order of births unknown",
+     "facts": {
+      "known_simultaneous": false
+     },
+     "evidence": {
+      "known_simultaneous": "فولدت غلاما وجارية لا يدري أيهما قبل"
+     }
+    },
+    {
+     "label": "Second birth during the waiting period after the first divorce fell",
+     "facts": {},
+     "evidence": {}
+    },
+    {
+     "label": "'Whenever you go out of the door' divorce, including evasion via the roof",
+     "facts": {},
+     "evidence": {}
+    }
+   ]
+  },
+  {
+   "answer": "harb.masail.openiti_harb_masail_shamela12527.m00283",
+   "situations": []
+  },
+  {
+   "answer": "harb.masail.openiti_harb_masail_shamela12527.m00323",
+   "situations": []
+  },
+  {
+   "answer": "harb.masail.openiti_harb_masail_shamela12527.m00390",
+   "situations": [
+    {
+     "label": "Manumitted Barira married to a slave chooses herself",
+     "facts": {
+      "chose_one": true
+     },
+     "evidence": {
+      "chose_one": "فاختارت نفسها"
+     }
+    },
+    {
+     "label": "Freed woman whose slave husband has intercourse with her after manumission loses the option",
+     "facts": {},
+     "evidence": {}
+    },
+    {
+     "label": "Freed mawla of Banu Adi separates from her slave husband",
+     "facts": {
+      "chose_one": true
+     },
+     "evidence": {
+      "chose_one": "أشهدكم أني فارقته"
+     }
+    }
+   ]
+  },
+  {
+   "answer": "harb.masail.openiti_harb_masail_shamela12527.m00435",
+   "situations": []
+  },
+  {
+   "answer": "harb.masail.openiti_harb_masail_shamela12527.m00465",
+   "situations": []
+  },
+  {
+   "answer": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00029",
+   "situations": []
+  },
+  {
+   "answer": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00425",
+   "situations": [
+    {
+     "label": "Tayammum between villages a farsakh apart when fearing the time will lapse",
+     "facts": {
+      "original_possible": false
+     },
+     "evidence": {
+      "original_possible": "إذا خاف الفوت"
+     }
+    }
+   ]
+  },
+  {
+   "answer": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00518",
+   "situations": [
+    {
+     "label": "Crowded at Jumuʿa, unable to bow and prostrate: prostrates on another man's back",
+     "facts": {
+      "original_possible": false
+     },
+     "evidence": {
+      "original_possible": "فلم يقدر على الركوع والسجود"
+     }
+    }
+   ]
+  },
+  {
+   "answer": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00549",
+   "situations": []
+  },
+  {
+   "answer": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00642",
+   "situations": []
+  },
+  {
+   "answer": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00653",
+   "situations": []
+  },
+  {
+   "answer": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00887",
+   "situations": []
+  },
+  {
+   "answer": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00945",
+   "situations": []
+  },
+  {
+   "answer": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m01212",
+   "situations": []
+  },
+  {
+   "answer": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m03427",
+   "situations": []
+  },
+  {
+   "answer": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00060",
+   "situations": []
+  },
+  {
+   "answer": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00111",
+   "situations": [
+    {
+     "label": "Hiring a worker or wet-nurse for food and clothing",
+     "facts": {
+      "muawada": true
+     },
+     "evidence": {
+      "muawada": "وتصح في الأجير والظئر بطعامهما وكسوتهما"
+     }
+    },
+    {
+     "label": "Using a bath, ship, fuller or tailor without a contract: customary wage",
+     "facts": {
+      "professional": true
+     },
+     "evidence": {
+      "professional": "أو أعطى ثوبه قصارا أو خياطا بلا عقد صح بأجرة العادة"
+     }
+    }
+   ]
+  },
+  {
+   "answer": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00179",
+   "situations": []
+  },
+  {
+   "answer": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00236",
+   "situations": []
+  },
+  {
+   "answer": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00259",
+   "situations": []
+  },
+  {
+   "answer": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00098",
+   "situations": []
+  },
+  {
+   "answer": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00108",
+   "situations": [
+    {
+     "label": "Child of a mudabbara, mukātaba or umm walad by another takes her status",
+     "facts": {
+      "from_substance": true
+     },
+     "evidence": {
+      "from_substance": "وما ولدت المدبرة والمكاتبة وأم الولد من غير سيدها فله حكمها"
+     }
+    },
+    {
+     "label": "Tadbīr of a mukātab and kitāba of a mudabbar",
+     "facts": {
+      "successive": true
+     },
+     "evidence": {
+      "successive": "ويجوز تدبير المكاتب وكتابة المدبر"
+     }
+    }
+   ]
+  },
+  {
+   "answer": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00151",
+   "situations": [
+    {
+     "label": "Wine that turns to vinegar by itself",
+     "facts": {
+      "forbidden_manner": false
+     },
+     "evidence": {
+      "forbidden_manner": "وإذا تخللت الخمر طهرت وحلت"
+     }
+    },
+    {
+     "label": "Wine deliberately made into vinegar",
+     "facts": {
+      "forbidden_manner": true
+     },
+     "evidence": {
+      "forbidden_manner": "وإن خللت لم تطهر"
+     }
+    }
+   ]
+  },
+  {
+   "answer": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00176",
+   "situations": [
+    {
+     "label": "Sick offender whose recovery is hoped for: flogging deferred",
+     "facts": {
+      "original_possible": true
+     },
+     "evidence": {
+      "original_possible": "ومن كان مريضا يرجى برؤه أخر حتى يبرأ"
+     }
+    },
+    {
+     "label": "Sick offender with no hope of recovery: struck once with a bundle of twigs",
+     "facts": {
+      "original_possible": false
+     },
+     "evidence": {
+      "original_possible": "فإن لم يرج برؤه وخشي عليه من السوط جلد بضغث"
+     }
+    }
+   ]
+  },
+  {
+   "answer": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00196",
+   "situations": [
+    {
+     "label": "Property held by a third party who does not know which claimant owns it, both with proof: lots for the oath",
+     "facts": {
+      "entitled_known": false
+     },
+     "evidence": {
+      "entitled_known": "وإن قال لا أعرف صاحبها منهما"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 {
-  "entries": 210,
-  "evidence_items": 527,
+  "entries": 213,
+  "evidence_items": 531,
   "side_checks": [
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002",
@@ -12,13 +12,13 @@
   "stages": {
     "jam": 19,
     "naskh": 1,
-    "tarjih": 179,
-    "tawaqquf": 11
+    "tarjih": 181,
+    "tawaqquf": 12
   },
   "standing": {
-    "against_reading": 116,
+    "against_reading": 118,
     "for_reading": 83,
-    "tawaqquf": 11
+    "tawaqquf": 12
   },
   "worklist": {
     "lots": [
@@ -119,6 +119,10 @@
     "generality": [
       "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f002",
       "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f005"
+    ],
+    "mubashara_tasabbub": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f005",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f006"
     ],
     "running_water": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",

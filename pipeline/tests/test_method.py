@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DOCS = ("docs/architecture/derivation-method.md", ".claude/skills/derivation-tranche/SKILL.md", "docs/roadmap-parallel-derivation.md")
 _TICK = re.compile(r"`([^`\n]+)`")
 _PATH = re.compile(r"^(?:corpus|pipeline|formal|docs|schemas|\.claude)/[\w./-]+$")
-_LEAN_DEF = re.compile(r"^\s*(?:@\[[^\]]*\]\s*)?(?:private\s+|protected\s+|noncomputable\s+)*(?:def|theorem|lemma|abbrev|structure|inductive|instance|class)\s+([\w.']+)", re.M)
+_LEAN_DEF = re.compile(r"^\s*(?:@\[[^\]]*\]\s*)?(?:private\s+|protected\s+|noncomputable\s+)*(?:def|theorem|lemma|abbrev|structure|inductive|instance|class|namespace)\s+([\w.']+)", re.M)
 
 
 def _ticked(doc: str) -> list[str]:

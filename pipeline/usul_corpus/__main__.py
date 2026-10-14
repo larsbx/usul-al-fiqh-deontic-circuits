@@ -397,6 +397,38 @@ def cmd_routing(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_typed_routing(args: argparse.Namespace) -> int:
+    """For each set with committed situations: write them as Prolog, route by type, and write its
+    report (a test set) or its lane-B proposals (a proposal set) (needs swipl)."""
+    from . import typed_routing as tr
+    stale = []
+
+    def emit(path: str, text: str) -> bool:
+        if args.check:
+            current = (ROOT / path).read_text(encoding="utf-8") if (ROOT / path).exists() else None
+            stale.extend([path] if current != text else [])
+        else:
+            (ROOT / path).write_text(text, encoding="utf-8")
+        return path not in stale
+
+    for ts in [*tr.present(ROOT), *tr.present(ROOT, tr.PROPOSALS)]:
+        if not emit(ts.prolog, tr.prolog_file(ts, json.loads((ROOT / ts.situations).read_text(encoding="utf-8")))):
+            continue
+        cov = tr.coverage(ROOT, ts)
+        if isinstance(ts, tr.TestSet):
+            r = tr.report(ROOT, ts, cov)
+            emit(ts.report, json.dumps(r, ensure_ascii=False, indent=2) + "\n")
+            print(json.dumps({"set": ts.name, **{k: r[k] for k in ("cases", "recall", "lexical_recall", "hybrid_recall")}}))
+        else:
+            r = tr.proposals(ROOT, ts, cov)
+            emit(ts.proposals, json.dumps(r, ensure_ascii=False, indent=2) + "\n")
+            print(json.dumps({"set": ts.name, **{k: r[k] for k in ("units", "typed", "encoders_proposed_by_type")}}))
+    if stale:
+        print(f"typed routing stale ({', '.join(stale)}): run python -m usul_corpus typed-routing", file=sys.stderr)
+        return 1
+    return 0
+
+
 def cmd_m5_commands(args: argparse.Namespace) -> int:
     from . import m5_commands
     plan = _load(CORPUS / m5_commands.PLAN)
@@ -721,6 +753,9 @@ def parser() -> argparse.ArgumentParser:
         m = sub.add_parser(name, help="regenerate or --check the obligation inventories")
         m.add_argument("--check", action="store_true")
         m.set_defaults(run=cmd_worklist)
+    tr = sub.add_parser("typed-routing", help="route the blind-typed sets by type: reports and lane-B proposals (needs swipl)")
+    tr.add_argument("--check", action="store_true")
+    tr.set_defaults(run=cmd_typed_routing)
     r = sub.add_parser("routing", help="regenerate or --check the encoder routing index (P0.6)")
     r.add_argument("--check", action="store_true")
     r.set_defaults(run=cmd_routing)
