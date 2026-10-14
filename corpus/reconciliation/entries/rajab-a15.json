@@ -1,0 +1,137 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f007",
+      "grades": ["ashab", "takhrij"],
+      "jam": null,
+      "naskh": null,
+      "note": "Ibn Rajab's own jazm («والصواب الجزم بالحنث»), grounded in Aḥmad's naṣṣ in the first two masāʾil, against a Shāfiʿī's inference of what the madhhab implies; al-Qāḍī withheld judgement. No later treatment found. For the reading.",
+      "evidence": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f011",
+      "grades": ["nass", "nass"],
+      "jam": null,
+      "naskh": null,
+      "note": "Two riwāyas; al-Inṣāf gives the three «وهو المذهب على ما اصطلحناه» and al-Muntahā states it decisively; the one is «المذهب عند أكثر المتقدمين». Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p008",
+          "excerpt_ar": "إحداهما: تطلق ثلاثا، وهو المذهب على ما اصطلحناه، صححه في الشرح،",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of «أنت طالق» with three intended: the three, the madhhab by al-Inṣāf's convention."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p008",
+          "excerpt_ar": "واحدة، وهو المذهب عند أكثر المتقدمين، وهي اختيار الخرقي، والقاضي، وقال:",
+          "position": 0,
+          "grade": "jazm",
+          "who": "most of the early aṣḥāb, as al-Inṣāf reports them",
+          "note": "«وقال: عليها الأصحاب»; al-Khiraqī, al-Qāḍī, al-Sharīf, Abū al-Khaṭṭāb, Ibn ʿAqīl and others."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p255",
+          "excerpt_ar": "طالق، ونوى ثلاثا فثلاث كنيتها بأنت طالق طلاقا وأنت طالق واحدة بائنة أو",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "«وأنت طالق، ونوى ثلاثا فثلاث», stated decisively in the muʿtamad matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f012",
+      "grades": ["wajh", "wajh"],
+      "jam": null,
+      "naskh": null,
+      "note": "Two wujūh in Ibn Rajab; al-Inṣāf names a companion or two for each and gives no taṣḥīḥ. Tawaqquf.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p051",
+          "excerpt_ar": "أبو الخطاب، والقاضي أيضا في موضع آخر البطلان؛ ومأخذه: أن النكاح يشترط له",
+          "position": 0,
+          "grade": "ashab",
+          "who": "Abū al-Khaṭṭāb, and al-Qāḍī in another place, as al-Inṣāf reports them",
+          "note": "Of the two parties intending one daughter in the bāṭin under «بنتي»: invalid, the witnessing being impossible on an intention."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p051",
+          "excerpt_ar": "الباطن غير مسماة. ففي الصحة وجهان. اختار القاضي في موضع: الصحة. واختار",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Qāḍī in one place, as al-Inṣāf reports him",
+          "note": "The same masʾala: valid."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f001",
+      "grades": [["nass", "ashab"], ["nass", "ashab"]],
+      "jam": null,
+      "naskh": null,
+      "note": "A riwāya and companions on each side; al-Inṣāf makes the free Muslim's diya the madhhab (Ibn Ḥāmid's saying). Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p470",
+          "excerpt_ar": "وعليه دية حر مسلم في قول ابن حامد) وهو المذهب اختاره المصنف والشارح وذكر",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of the dhimmī or slave wounded who becomes Muslim or is freed and dies: «وهو المذهب ... وجزم به في الوجيز وغيره وقدمه في الفروع»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f002",
+      "grades": ["wajh", "wajh"],
+      "jam": null,
+      "naskh": null,
+      "note": "Two wujūh in Ibn Rajab; al-Inṣāf gives the ghurra as the madhhab, the slave's foetus as another riwāya. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p072",
+          "excerpt_ar": "الجنين: ففيه غرة) . هذا المذهب وإحدى الروايات، اختاره ابن حامد، والقاضي،",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of the slave-woman struck who is freed and then miscarries."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p072",
+          "excerpt_ar": "والنظم. وعنه: حكمه حكم الجنين المملوك، اختاره أبو بكر، وأبو الخطاب. قال",
+          "position": 0,
+          "grade": "nass",
+          "who": "a riwāya of Aḥmad, as al-Inṣāf reports it (Abū Bakr's and Abū al-Khaṭṭāb's choice)",
+          "note": "«قال في الهداية: هو أصح في المذهب»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f006",
+      "grades": [["wajh", "takhrij"], ["wajh", "ashab"]],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Targhīb's two wujūh; no ḍamān follows on Abū Bakr's view, ḍamān is the ẓāhir of al-Qāḍī; al-Inṣāf refers the ḍamān to the preceding khilāf, decided for the free man's diya. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p471",
+          "excerpt_ar": "الثانية: لو جرح عبد نفسه ثم أعتقه قبل موته ثم مات: فلا قود عليه وفي",
+          "position": 1,
+          "grade": "qiyas",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "«وفي ضمانه الخلاف المتقدم»: the taṣḥīḥ of the cognate masʾala (the slave wounded, freed and dead: a free man's diya, «وهو المذهب»)."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f007",
+      "grades": ["ashab", "takhrij"],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Qāḍī and Abū al-Khaṭṭāb state the full ḍamān; Ibn Rajab's tawajjuh of the arsh alone is an iḥtimāl. No later treatment found. For the reading.",
+      "evidence": []
+    }
+  ]
+}
