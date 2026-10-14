@@ -221,3 +221,7 @@ For lane B, the share of retrieved units that are real cases, which measures how
 5. **Integration round 1**, then a review batch.
 
 Lanes D, E and F open in round 2. F starts with the fatāwā Q/A segmenter, since lane B's later shards depend on it.
+
+### R2 sample 1 lane B semantic triage (2026-10-14)
+
+The 40-unit candidate tranche has source/segmentation receipts and individual proposal audits; see [r2-sample1-lane-b](architecture/r2-sample1-lane-b.md) and the generated `corpus/routing/r2_sample1_lane_b_report.json`. Scoped component guards do not establish whole-unit routing labels. Harb chronological precedence does not fill the simultaneous-combination encoder's structural priority field. Named rule/fact gaps, five incomplete page locators, three finer-boundary reviews, pending disagreements, and later al-Insaf/mutamad verification remain explicit. Continue lane A/F/C work on these needs; do not describe this triage as completed S0–S9 closure.

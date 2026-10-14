@@ -1,0 +1,622 @@
+{
+  "suite": "r2_sample1_lane_b",
+  "status": "candidate",
+  "provenance": "Full pinned-witness replay at 9862c8d3f8ef2603209c8faa4b074631f285ab92; source-grounded candidate annotation. Scoped guards are explicitly weaker than whole-unit derivation; see corpus/routing/r2_sample1_semantic_audit.json. Original blind annotations unchanged.",
+  "cases": [
+    {
+      "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00029",
+      "encoder": "hair_detached",
+      "class": "missing_rule",
+      "note": "Hair attachment, concession certainty and consumption transformation cannot enumerate nullifiers. Ishaq agrees, with a stronger expression of certainty.",
+      "quote": "من مس الفرج3 الوضوء",
+      "facts": {},
+      "needs": [
+        "rule:wudu_nullifiers"
+      ],
+      "positions": [
+        {
+          "who": "Ahmad",
+          "ruling": "The listed positive nullifiers; hopes the other acts do not require wudu."
+        },
+        {
+          "who": "Ishaq",
+          "ruling": "Agrees with all, without the qualification of hope."
+        }
+      ],
+      "routing_label": false,
+      "expected": "Ahmad requires wudu for genital touch, camel meat and a kiss with desire; not for the other listed acts."
+    },
+    {
+      "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00425",
+      "encoder": "substitute",
+      "class": "missing_fact",
+      "note": "Fear of missing time is not categorical inability to obtain water. Keep the original_possible=false blind annotation intact, but reject that entailment for this case; a timed capability fact is needed.",
+      "quote": "إذا خاف الفوت",
+      "facts": {},
+      "needs": [
+        "fact:water_access_before_deadline",
+        "rule:tayammum_time_fear"
+      ],
+      "routing_label": false,
+      "expected": "Ahmad allows tayammum when fearing the prayer time will be missed; the Ibn Umar report says no repeat."
+    },
+    {
+      "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00518",
+      "encoder": "substitute",
+      "class": "derivable",
+      "note": "SCOPED guard: inability permits a substitute. It does not choose the back, decide imam-following, or determine restart; these remain rule:crowded_jumua_procedure.",
+      "quote": "فلم يقدر على الركوع والسجود",
+      "facts": {
+        "original_possible": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Ahmad",
+          "ruling": "Follow imam or prostrate on a man's back, with the stated restart condition."
+        },
+        {
+          "who": "Ishaq",
+          "ruling": "Agrees with Ahmad."
+        }
+      ],
+      "routing_label": false
+    },
+    {
+      "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00549",
+      "encoder": "failed_obligation_returns",
+      "class": "missing_rule",
+      "note": "No failed discharge or split halves is stated. Ahmad and Ishaq agree with the quoted report; zakat intention and year-start vocabulary are absent.",
+      "quote": "حتى يحول على ثمنها الحول",
+      "facts": {},
+      "needs": [
+        "rule:zakat_sale_hawl"
+      ],
+      "routing_label": false,
+      "expected": "Nontrade sale proceeds require a new year from sale; trade property follows the earlier commercial cycle."
+    },
+    {
+      "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00642",
+      "encoder": "shared_right_accrues_to_rest",
+      "class": "missing_rule",
+      "note": "This is proportionate liability, not each party entitled to the whole, nor distribution of a plural over all. Ahmad and Ishaq agree.",
+      "quote": "يؤدي كل واحد بحصته",
+      "facts": {},
+      "needs": [
+        "rule:fitr_coownership_shares"
+      ],
+      "routing_label": false,
+      "expected": "Each co-owner pays fitr in proportion to his share."
+    },
+    {
+      "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00653",
+      "encoder": "command_intended_usage",
+      "class": "missing_rule",
+      "note": "The commandUsage output is literal/figurative by an usul reading, not a hukm of authorized self-distribution. Do not select an usul position merely to force permission.",
+      "quote": "وهذا من علي6، إذن له",
+      "facts": {},
+      "needs": [
+        "rule:zakat_distribution_authorization"
+      ],
+      "routing_label": false,
+      "expected": "Ishaq reads Ali's direction to distribute as permission."
+    },
+    {
+      "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00887",
+      "encoder": "manumission_spread",
+      "class": "missing_rule",
+      "note": "Not manumission spreading to benefits. The encoder vocabulary lacks these separate status-indexed measures.",
+      "quote": "الطلاق4 بالرجال والعدة بالنساء",
+      "facts": {},
+      "needs": [
+        "rule:divorce_and_idda_status"
+      ],
+      "routing_label": false,
+      "expected": "Divorce count follows the man's status; idda follows the woman's."
+    },
+    {
+      "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00945",
+      "encoder": "combination_bars_its_amount",
+      "class": "missing_rule",
+      "note": "Combining_amount is too coarse to state idda persistence and the death exception. Ahmad and Ishaq agree; no simultaneous contracts are stated.",
+      "quote": "لا يتزوج الخامسة حتى تنقضي عدة التي طلق",
+      "facts": {},
+      "needs": [
+        "rule:fifth_marriage_idda_bar"
+      ],
+      "routing_label": false,
+      "expected": "A fifth marriage waits until the divorced wife's idda ends; death permits marriage."
+    },
+    {
+      "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m01212",
+      "encoder": "ayman_by_urf",
+      "class": "missing_rule",
+      "note": "OathBody models flows, not persistence across divorce. Sufyan's reported triple-divorce cancellation must remain attributed.",
+      "quote": "ما لم يحنث فإن الحنث عليه قائم",
+      "facts": {},
+      "needs": [
+        "rule:oath_condition_survives_divorce"
+      ],
+      "positions": [
+        {
+          "who": "Sufyan (reported)",
+          "ruling": "A triple divorce removes the stated breach condition."
+        },
+        {
+          "who": "Ahmad; Ishaq agrees",
+          "ruling": "Triple and single are alike: the condition persists until breach."
+        }
+      ],
+      "routing_label": false,
+      "expected": "Ahmad says the condition persists until breached, whether triple or single divorce."
+    },
+    {
+      "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m03427",
+      "encoder": "ihram_specification",
+      "class": "missing_rule",
+      "note": "ihram_specification tests the component of an unspecified nusuk; it cannot output the place Mecca.",
+      "quote": "كان ميقاته مكة",
+      "facts": {},
+      "needs": [
+        "rule:hajj_miqat_after_umra"
+      ],
+      "routing_label": false,
+      "expected": "The stated hajj miqat after umra was Mecca."
+    },
+    {
+      "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00052",
+      "encoder": "hair_detached",
+      "class": "missing_rule",
+      "note": "Hair/nail attachment does not decide ablution. Two questions and an embedded heading share this stable unit; preserve both, flag the boundary for lane F.",
+      "quote": "لا يرى من الضحك في الصلاة وضوءا",
+      "facts": {},
+      "needs": [
+        "rule:wudu_nullifiers"
+      ],
+      "routing_label": false,
+      "expected": "Laughing in prayer does not require renewed ablution; touching the armpit also does not."
+    },
+    {
+      "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00196",
+      "encoder": "prohibited_worship",
+      "class": "missing_rule",
+      "note": "The unit does not state current intoxication, ability to pray, or a prohibition targeting the prayer; do not infer these facts.",
+      "quote": "أصلي خلفه؟ قال: نعم",
+      "facts": {},
+      "needs": [
+        "rule:prayer_behind_intoxicant_drinker"
+      ],
+      "routing_label": false,
+      "expected": "Ahmad permits praying behind the described drinker."
+    },
+    {
+      "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00355",
+      "encoder": "delegating_work",
+      "class": "missing_rule",
+      "note": "No delegation, ownership or deputy is involved; the missing vocabulary is the witr cutoff, not a missing permission fact.",
+      "quote": "يوتر ما لم يصل الغداة",
+      "facts": {},
+      "needs": [
+        "rule:witr_before_fajr_prayer"
+      ],
+      "routing_label": false,
+      "expected": "Perform witr until the morning prayer has been performed."
+    },
+    {
+      "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00529",
+      "encoder": "many_over_noble",
+      "class": "missing_rule",
+      "note": "The unit bundles residency-dependent answers and hesitation about distant ihram. No same-cost quantity comparison is stated; retain the compound boundary for lane F.",
+      "quote": "يوم التروية، وهو آخر فعل ابن عمر",
+      "facts": {},
+      "needs": [
+        "rule:ihram_time_by_residency"
+      ],
+      "routing_label": false,
+      "expected": "The arriving mutamatti enters hajj ihram on Tarwiya; the Meccan report is tied to seeing the crescent."
+    },
+    {
+      "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00649",
+      "encoder": "many_over_noble",
+      "class": "missing_rule",
+      "note": "The number three is not a preference for more at equal cost. The cited prophetic report is recorded as a citation, not admitted without a hadith grade.",
+      "quote": "يعجبني ثلاثة أثواب، يدرج فيها إدراجا",
+      "facts": {},
+      "needs": [
+        "rule:shroud_three_cloths"
+      ],
+      "routing_label": false,
+      "expected": "Ahmad prefers three wrapping cloths."
+    },
+    {
+      "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00683",
+      "encoder": "many_over_noble",
+      "class": "missing_rule",
+      "note": "No equal-cost comparison, debt possession or property handover is stated. Observation that Ahmad often followed without carrying is preserved, not turned into prohibition.",
+      "quote": "حمل الجنازة يدور عليها؟ قال: إن شاء",
+      "facts": {},
+      "needs": [
+        "rule:funeral_carrying_sequence"
+      ],
+      "routing_label": false,
+      "expected": "Circling the bier is permitted; a particular right/left carrying sequence is preferred."
+    },
+    {
+      "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01051",
+      "encoder": "ayman_by_urf",
+      "class": "missing_fact",
+      "note": "The current oathBody output concerns one body versus each flow, not milk/butter reference. Context and intention remain unknown. The witness supplies no numbered page for this unit.",
+      "quote": "ينظر ما كان بينه حيث حلف",
+      "facts": {},
+      "needs": [
+        "fact:oath_intention_context",
+        "rule:oath_context_intention"
+      ],
+      "routing_label": false,
+      "expected": "Interpret the milk oath in its original context; the butter outcome is not settled here."
+    },
+    {
+      "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01087",
+      "encoder": "qisas_belongs_to_whom",
+      "class": "missing_rule",
+      "note": "The existing qisas encoder concerns whose right can be pardoned, not status equivalence. Historical source attribution only; no present-day operational ruling. Numbered page unavailable.",
+      "quote": "لا يقاد حر بعبد",
+      "facts": {},
+      "needs": [
+        "rule:qisas_status_equivalence"
+      ],
+      "routing_label": false,
+      "expected": "The quoted position bars retaliation against a free person for a slave."
+    },
+    {
+      "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01254",
+      "encoder": "mixed_haram_by_proportion",
+      "class": "missing_rule",
+      "note": "This is not mixing lawful and unlawful property in proportions. The intoxicating threshold rule is absent; numbered page unavailable.",
+      "quote": "ما أسكر كثيره، فقليله حرام؟ قال: نعم",
+      "facts": {},
+      "needs": [
+        "rule:intoxicant_small_quantity"
+      ],
+      "routing_label": false,
+      "expected": "A small quantity of that whose large quantity intoxicates is forbidden."
+    },
+    {
+      "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01272",
+      "encoder": "eating_without_permission",
+      "class": "missing_rule",
+      "note": "Permission to consume another person's food does not model this report. Preserve the tentative wording; numbered page unavailable.",
+      "quote": "أرجو أن لا يكون به بأس",
+      "facts": {},
+      "needs": [
+        "rule:quran_wash_drink"
+      ],
+      "routing_label": false,
+      "expected": "Ahmad expresses hope that drinking the washing of written Quran is unobjectionable."
+    },
+    {
+      "far": "harb.masail.openiti_harb_masail_shamela12527.m00014",
+      "encoder": "simultaneous_combination_voids",
+      "class": "missing_rule",
+      "note": "Semantic control: Harb states temporal precedence (whichever contract was earlier). RajabA10.simultaneousCombinationVoids requires structural priority of an item within a simultaneous combination (one can validly be superimposed on the other, not conversely). Chronology does not establish has_precedence in that sense. Preserve the blind annotation; no claim of source-derived nonvoidness from this encoder. Guardian priority also remains unencoded.",
+      "quote": "أيهما كان قبل, فهي امرأته",
+      "facts": {},
+      "needs": [
+        "rule:chronological_marriage_priority"
+      ],
+      "routing_label": false,
+      "expected": "The earlier marriage stands; Ahmad says the grandfather is slightly closer."
+    },
+    {
+      "far": "harb.masail.openiti_harb_masail_shamela12527.m00100",
+      "encoder": "concurrent_causes",
+      "class": "missing_rule",
+      "note": "Half/full outputs in concurrentShare concern concurrent causes, not khalwa. Preserve reported Ibn Masud and Ibn Abbas distinctions; do not collapse the evidence into a single mahr rule.",
+      "quote": "إنما يجب نصف المهر",
+      "facts": {},
+      "needs": [
+        "rule:mahr_khalwa_conditions"
+      ],
+      "positions": [
+        {
+          "who": "Ishaq",
+          "ruling": "Valid seclusion entails full mahr, subject to stated impediments."
+        },
+        {
+          "who": "Ibn Masud (reported)",
+          "ruling": "Half mahr until intercourse, even if seated between her legs."
+        },
+        {
+          "who": "Ibn Abbas (reported)",
+          "ruling": "Half mahr until seclusion."
+        }
+      ],
+      "routing_label": false,
+      "expected": "Ishaq requires half the mahr without khalwa; valid seclusion can require all, with stated impediment exceptions."
+    },
+    {
+      "far": "harb.masail.openiti_harb_masail_shamela12527.m00102",
+      "encoder": "dispose_without_judge",
+      "class": "missing_rule",
+      "note": "Property disposal without a judge is unrelated. The reports distinguish minor husband, slave permission and wali; no marriage-validity vocabulary exists.",
+      "quote": "هذا ليس بنكاح، ولا تحل للزوج",
+      "facts": {},
+      "needs": [
+        "rule:intervening_marriage_validity"
+      ],
+      "positions": [
+        {
+          "who": "Ishaq",
+          "ruling": "The listed marriages do not restore eligibility for the former husband."
+        },
+        {
+          "who": "al-Hasan (reported)",
+          "ruling": "The slave is not a qualifying husband even in the reported permission variant."
+        }
+      ],
+      "routing_label": false,
+      "expected": "Ishaq rejects the listed intervening marriages for restoration to the former husband."
+    },
+    {
+      "far": "harb.masail.openiti_harb_masail_shamela12527.m00196",
+      "encoder": "lots",
+      "class": "missing_rule",
+      "note": "The proposed lots allocator cannot output denial of inheritance after death; mentioning prior lots is not a command to draw them now. Vague-insha validity also cannot decide inheritance.",
+      "quote": "فإن كان لا يدري لم يرثها شيئا",
+      "facts": {
+        "entitled_known": false
+      },
+      "needs": [
+        "rule:inheritance_after_unidentified_divorce"
+      ],
+      "routing_label": false,
+      "expected": "Ishaq suspends determination and denies inheritance if the divorced wife is unknown."
+    },
+    {
+      "far": "harb.masail.openiti_harb_masail_shamela12527.m00245",
+      "encoder": "unknown_order_judged_sequential",
+      "class": "missing_rule",
+      "note": "Unknown birth order alone does not entail this result. The unit also bundles repeated door exits and roof evasion. Preserve these cases; a sequential Boolean cannot output their counts.",
+      "quote": "وقعت ثلاثا بالذكر واحدة وبالأنثى ثنتين",
+      "facts": {
+        "known_simultaneous": false
+      },
+      "needs": [
+        "rule:conditional_divorce_intention_and_idda"
+      ],
+      "routing_label": false,
+      "expected": "Ishaq assigns three divorces under the stated joint intention; further divorce can occur during idda."
+    },
+    {
+      "far": "harb.masail.openiti_harb_masail_shamela12527.m00283",
+      "encoder": "recourse",
+      "class": "missing_rule",
+      "note": "Recourse concerns expenditure or return of property, not revocation of delegated divorce.",
+      "quote": "هذا لا يضبط، لأن الغائب لعله يرجع، عن قوله في سفره",
+      "facts": {},
+      "needs": [
+        "rule:revocable_delegation_of_divorce"
+      ],
+      "routing_label": false,
+      "expected": "Ahmad finds the absent husband's delegation uncontrolled because he may retract."
+    },
+    {
+      "far": "harb.masail.openiti_harb_masail_shamela12527.m00323",
+      "encoder": "excused_error",
+      "class": "missing_rule",
+      "note": "Excused mistakes do not calculate idda. Preserve the unattributed contrary indefinite-waiting position without inventing its school.",
+      "quote": "من يوم ارتفع حيضها",
+      "facts": {},
+      "needs": [
+        "rule:amenorrhea_idda"
+      ],
+      "positions": [
+        {
+          "who": "Ahmad",
+          "ruling": "Without illness or other cause, a year from cessation: nine months plus three."
+        },
+        {
+          "who": "Unspecified people (قوم)",
+          "ruling": "Wait indefinitely until menstruation returns."
+        }
+      ],
+      "routing_label": false,
+      "expected": "Ahmad counts a year from cessation when no cause is known; illness/lactation requires waiting for return."
+    },
+    {
+      "far": "harb.masail.openiti_harb_masail_shamela12527.m00390",
+      "encoder": "other_option_stands",
+      "class": "missing_rule",
+      "note": "Choosing one option is only a partial Boolean cue. The source requires husband status, intercourse and knowledge, and records a real disagreement; do not declare this fully expressible.",
+      "quote": "فليس لها خيار علمت أن لها الخيار أو لم تعلم",
+      "facts": {
+        "chose_one": true
+      },
+      "needs": [
+        "rule:manumission_marital_option"
+      ],
+      "positions": [
+        {
+          "who": "Ahmad",
+          "ruling": "After intercourse following manumission, no option whether informed or uninformed."
+        },
+        {
+          "who": "Sufyan",
+          "ruling": "If uninformed she may swear and obtain the option; if informed she has no option."
+        }
+      ],
+      "routing_label": false,
+      "expected": "Ahmad denies the freed woman an option after intercourse whether or not she knew of it."
+    },
+    {
+      "far": "harb.masail.openiti_harb_masail_shamela12527.m00435",
+      "encoder": "attached_takeover_at_value",
+      "class": "missing_rule",
+      "note": "No wrongful attachment or takeover at value is involved. Medicinal reports are not authenticated by inclusion; preserve hesitation and Ibrahim's reported dislike without treating unlike substances as one contradiction.",
+      "quote": "وكأنه سهل فيه قليلا",
+      "facts": {},
+      "needs": [
+        "rule:medicinal_substance_permission"
+      ],
+      "routing_label": false,
+      "expected": "The narrator reports limited easing by Ahmad concerning the stated purgative/iron substance."
+    },
+    {
+      "far": "harb.masail.openiti_harb_masail_shamela12527.m00465",
+      "encoder": "umum_lafz",
+      "class": "missing_rule",
+      "note": "General-wording scope does not resolve this attributed disagreement. Visiting, handshaking and condolences are separate contexts within the unit.",
+      "quote": "أهل الذمة يكنون؟ قال: نعم لا بأس به",
+      "facts": {},
+      "needs": [
+        "rule:kunya_for_dhimmi"
+      ],
+      "positions": [
+        {
+          "who": "Ahmad",
+          "ruling": "A dhimmi may be addressed with a kunya."
+        },
+        {
+          "who": "al-Awzai",
+          "ruling": "Do not give the Christian a kunya."
+        }
+      ],
+      "routing_label": false,
+      "expected": "Ahmad permits a kunya for a dhimmi and a child; al-Awzai disallows the dhimmi kunya."
+    },
+    {
+      "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00098",
+      "encoder": "split_halves_suffice",
+      "class": "missing_rule",
+      "note": "A halves-suffice Boolean cannot calculate estate denominators. This is a rule exposition, not a concrete estate: outside current vocabulary, not a corrupt or missing segment.",
+      "quote": "فهذه الأربعة لا عول فيها",
+      "facts": {},
+      "needs": [
+        "rule:inheritance_base_and_awl"
+      ],
+      "routing_label": false,
+      "expected": "The text lists estate denominator bases and their possible awl increases."
+    },
+    {
+      "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00108",
+      "encoder": "successive_contracts",
+      "class": "missing_rule",
+      "note": "Successive contracts do not establish displacement here, and growthKind returns part/separate rather than the inherited legal status. Do not promote full field coverage to a valid legal transfer.",
+      "quote": "ويجوز تدبير المكاتب وكتابة المدبر",
+      "facts": {
+        "successive": true
+      },
+      "needs": [
+        "rule:tadbir_kitaba_compatibility"
+      ],
+      "routing_label": false,
+      "expected": "Tadbir and kitaba may coexist with stated payment/death/one-third consequences; offspring take the mother's status."
+    },
+    {
+      "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00151",
+      "encoder": "forbidden_cause_voided",
+      "class": "missing_rule",
+      "note": "The words establish conversion agency and outcome, but not the souls_drawn premise of causeVoided. Do not manufacture it; the specific purity rule and broader food exceptions are absent.",
+      "quote": "وإذا تخللت الخمر طهرت وحلت وإن خللت لم تطهر",
+      "facts": {},
+      "needs": [
+        "rule:wine_vinegar_purity"
+      ],
+      "routing_label": false,
+      "expected": "Spontaneous vinegar is pure/permitted; deliberate conversion does not purify."
+    },
+    {
+      "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00176",
+      "encoder": "substitute",
+      "class": "derivable",
+      "note": "SCOPED guard: the unsafe ordinary method is unavailable and substitution is permitted. It does not derive the count, method or recovery-delay branch; these remain rule:hadd_illness_procedure. Historical formalization only.",
+      "quote": "فإن لم يرج برؤه وخشي عليه من السوط جلد بضغث",
+      "facts": {
+        "original_possible": false
+      },
+      "expected": true,
+      "routing_label": false
+    },
+    {
+      "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00196",
+      "encoder": "lots",
+      "class": "missing_rule",
+      "note": "Lots is a supported component: owner unknown and two competing proofs; allocationFull returns lot for either divisibility value. Divisibility is not stated and is not annotated. The source awards only after the drawn claimant swears, a condition not in this encoder. Full judicial-lot-oath procedure remains missing.",
+      "quote": "أو لكل منهما بينة إستهما على اليمين",
+      "facts": {
+        "entitled_known": false,
+        "confusion_category": true
+      },
+      "needs": [
+        "rule:judicial_lot_oath"
+      ],
+      "routing_label": false,
+      "expected": "With unknown ownership and two proofs, draw lots for the oath; the winner swears and takes."
+    },
+    {
+      "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00060",
+      "encoder": "vowed_as_shar_obligation",
+      "class": "missing_rule",
+      "note": "The existing vowedRuling concerns the treatment of a vowed act like a shar obligation, not conjunction of fasting/itikaf and mosque constraints. The blind empty situation is an annotation omission, not absence of legal facts.",
+      "quote": "ويصح بلا صوم ويلزمان بالنذر",
+      "facts": {},
+      "needs": [
+        "rule:itikaf_vow_conditions"
+      ],
+      "routing_label": false,
+      "expected": "Itikaf is recommended, valid without fasting, and both become binding through a vow."
+    },
+    {
+      "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00111",
+      "encoder": "wage_without_stipulation",
+      "class": "derivable",
+      "note": "SCOPED guard: a professional private service earns a wage; this does not formalize the wage amount, wet-nurse food/clothing bargain, all lease conditions, or spousal permission. These remain rule:ijara_conditions.",
+      "quote": "أو أعطى ثوبه قصارا أو خياطا بلا عقد صح بأجرة العادة",
+      "facts": {
+        "professional": true,
+        "public_or_rescue": false
+      },
+      "expected": true,
+      "routing_label": false
+    },
+    {
+      "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00179",
+      "encoder": "eating_without_permission",
+      "class": "missing_rule",
+      "note": "The proposed permission-exception encoder addresses eating without permission; it does not express ordinary explicit/implied permission. The empty typing misses stated facts; do not negate permission because its exception type lacks a field.",
+      "quote": "وإباحته تتوقف1 على \"صريح\" إذن \"أو قرينة\"",
+      "facts": {},
+      "needs": [
+        "rule:walima_explicit_or_implied_permission"
+      ],
+      "routing_label": false,
+      "expected": "Eating requires explicit permission or an indicating circumstance; accepting invitation has separate conditions."
+    },
+    {
+      "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00236",
+      "encoder": "qisas_belongs_to_whom",
+      "class": "missing_rule",
+      "note": "Its existing qisas encoder decides pardon ownership, not eligibility conditions. Historical formalization only; no enacted ruling or enforcement is claimed.",
+      "quote": "فلا يقتل مسلم بكافر ولا حر بعبد",
+      "facts": {},
+      "needs": [
+        "rule:qisas_status_equivalence"
+      ],
+      "routing_label": false,
+      "expected": "The matn states immunity, capacity, equivalence and nonparenthood conditions for qisas."
+    },
+    {
+      "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00259",
+      "encoder": "excused_error",
+      "class": "missing_rule",
+      "note": "The errorExcused encoder concerns negligence and others' rights, not epistemic notice or apostasy classification. Do not issue a person-level verdict from this historical general statement.",
+      "quote": "بجهل عرف ذلك وإن كان مثله لا يجهله كفر",
+      "facts": {},
+      "needs": [
+        "rule:ignorance_notice_apparent_prohibition"
+      ],
+      "routing_label": false,
+      "expected": "The text distinguishes ignorance requiring instruction from an asserted absence of such ignorance."
+    }
+  ]
+}

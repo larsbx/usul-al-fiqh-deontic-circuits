@@ -5,8 +5,8 @@
   "summary": {
     "witnesses": 19,
     "units": 48510,
-    "annotated": 0,
-    "pending": 48510
+    "annotated": 40,
+    "pending": 48470
   },
   "witnesses": [
     {
@@ -17,9 +17,20 @@
       "records": "records/openiti-abudawud-masailahmad-shamela21487.jsonl",
       "records_sha256": "b8b7aa9706ef75b3e4cd485549aab8d98e7285b2349b0fd2fe6cf5e12686a3dd",
       "units": 1585,
-      "annotated": 0,
-      "pending": 1585,
-      "annotated_ids": []
+      "annotated": 10,
+      "pending": 1575,
+      "annotated_ids": [
+        "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00052",
+        "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00196",
+        "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00355",
+        "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00529",
+        "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00649",
+        "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00683",
+        "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01051",
+        "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01087",
+        "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01254",
+        "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01272"
+      ]
     },
     {
       "work": "hajjawi.iqna",
@@ -41,9 +52,15 @@
       "records": "records/openiti-hajjawi-zadmustaqni-shamela11230.jsonl",
       "records_sha256": "5bf0d9527a7e69c62718c9696c6485d039b212648d63b58d118a21e96dea5003",
       "units": 286,
-      "annotated": 0,
-      "pending": 286,
-      "annotated_ids": []
+      "annotated": 5,
+      "pending": 281,
+      "annotated_ids": [
+        "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00060",
+        "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00111",
+        "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00179",
+        "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00236",
+        "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00259"
+      ]
     },
     {
       "work": "harb.masail",
@@ -53,9 +70,20 @@
       "records": "records/openiti-harb-masail-shamela12527.jsonl",
       "records_sha256": "7cc1af01e595c1c303f7f14aed38adbb5179c02448c475607160341a137cf97f",
       "units": 540,
-      "annotated": 0,
-      "pending": 540,
-      "annotated_ids": []
+      "annotated": 10,
+      "pending": 530,
+      "annotated_ids": [
+        "harb.masail.openiti_harb_masail_shamela12527.m00014",
+        "harb.masail.openiti_harb_masail_shamela12527.m00100",
+        "harb.masail.openiti_harb_masail_shamela12527.m00102",
+        "harb.masail.openiti_harb_masail_shamela12527.m00196",
+        "harb.masail.openiti_harb_masail_shamela12527.m00245",
+        "harb.masail.openiti_harb_masail_shamela12527.m00283",
+        "harb.masail.openiti_harb_masail_shamela12527.m00323",
+        "harb.masail.openiti_harb_masail_shamela12527.m00390",
+        "harb.masail.openiti_harb_masail_shamela12527.m00435",
+        "harb.masail.openiti_harb_masail_shamela12527.m00465"
+      ]
     },
     {
       "work": "ibn_baz.majmu_fatawa",
@@ -113,9 +141,15 @@
       "records": "records/openiti-ibnqudama-umda-shamela11315.jsonl",
       "records_sha256": "8b797eafb616fc735be27486333f541d049463505653d1192a519acea65a12eb",
       "units": 207,
-      "annotated": 0,
-      "pending": 207,
-      "annotated_ids": []
+      "annotated": 5,
+      "pending": 202,
+      "annotated_ids": [
+        "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00098",
+        "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00108",
+        "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00151",
+        "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00176",
+        "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00196"
+      ]
     },
     {
       "work": "ibn_taymiyya.fatawa_kubra",
@@ -173,9 +207,20 @@
       "records": "records/openiti-kawsaj-masailahmad-shamela3125.jsonl",
       "records_sha256": "280fc872bbd04d674374f86778de5dd926b6b4fb7db1c50b19206487d2fd4164",
       "units": 3575,
-      "annotated": 0,
-      "pending": 3575,
-      "annotated_ids": []
+      "annotated": 10,
+      "pending": 3565,
+      "annotated_ids": [
+        "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00029",
+        "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00425",
+        "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00518",
+        "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00549",
+        "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00642",
+        "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00653",
+        "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00887",
+        "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00945",
+        "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m01212",
+        "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m03427"
+      ]
     },
     {
       "work": "lajna_daima.fatawa",
