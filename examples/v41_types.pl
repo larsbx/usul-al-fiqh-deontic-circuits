@@ -4,7 +4,7 @@
 :- discontiguous([qaida_type/2, type_extends/2, type_field/3, encoder_type/2, encoder_reads/3, implies/3, type_value/2]).
 :- multifile([encoder_reads/3, type_field/3]).
 
-qaida_type(amana, 'al-Saʿdī Q14 «التلف في يد الأمين غير مضمون إذا لم يتعد أو يفرط، وفي يد الظالم مضمون مطلقاً»: the hand, and the trustee\'s transgression («يتعد») and negligence in safekeeping («يفرط»); with `pureTrust`, the pure trust (amāna maḥḍa) that transgression voids.').
+qaida_type(amana, 'al-Saʿdī Q14 «التلف في يد الأمين غير مضمون إذا لم يتعد أو يفرط، وفي يد الظالم مضمون مطلقاً»: the hand, and the trustee\'s transgression («يتعد») and negligence in safekeeping («يفرط»); with `pureTrust`, the pure trust (amāna maḥḍa) that transgression voids («تبطل بالتعدي», Ibn Rajab 45).').
 type_field(amana, hand, 'Option Usul.Muamalat.Hand').
 type_value('Usul.Muamalat.Hand', trustee).
 type_value('Usul.Muamalat.Hand', wrongdoer).
