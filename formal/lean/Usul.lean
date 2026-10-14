@@ -16,8 +16,11 @@ import Usul.QiyasLimits
 import Usul.Dalala
 import Usul.CommandSchemata
 import Usul.Refinements
-import Usul.Readings
+import Usul.Tanaqud
+import Usul.Furuq
 import Usul.Seam
+import Usul.Tahara
+import Usul.Readings
 import Usul.Typing
 import Usul.Typing.Encoders
 import Usul.Typing.Relations

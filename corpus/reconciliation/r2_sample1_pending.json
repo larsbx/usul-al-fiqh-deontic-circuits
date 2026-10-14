@@ -18,7 +18,7 @@
         }
       ],
       "resolution": "pending_vocabulary",
-      "note": "Attributed source positions retained. Their legal outputs are not in the selected encoder domain; no formal tarjih or madhhab choice is asserted. OathBody models flows, not persistence across divorce. Sufyan's reported triple-divorce cancellation must remain attributed.",
+      "note": "Attributed source positions retained. Their legal outputs are not in the selected encoder domain; no formal tarjih or madhhab choice is asserted. OathBody models flows, not persistence across divorce (ṭalāq). Sufyan's reported triple-divorce cancellation must remain attributed.",
       "evidence": [
         {
           "position": 0,
@@ -56,7 +56,7 @@
         }
       ],
       "resolution": "pending_vocabulary",
-      "note": "Attributed source positions retained. Their legal outputs are not in the selected encoder domain; no formal tarjih or madhhab choice is asserted. Half/full outputs in concurrentShare concern concurrent causes, not khalwa. Preserve reported Ibn Masud and Ibn Abbas distinctions; do not collapse the evidence into a single mahr rule.",
+      "note": "Attributed source positions retained. Their legal outputs are not in the selected encoder domain; no formal tarjih or madhhab choice is asserted. Half/full outputs in concurrentShare concern concurrent causes (asbāb), not khalwa. Preserve reported Ibn Masud and Ibn Abbas distinctions; do not collapse the evidence into a single mahr rule.",
       "evidence": [
         {
           "position": 0,

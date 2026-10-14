@@ -1,0 +1,353 @@
+{
+ "register": "Ibn Rajab, Taqrīr al-Qawāʿid: apparent contradictions inside his book and across the bank, resolved by the bank",
+ "method": "As in sadi.json: two qawāʿid, each read without its qayd, rule opposite ways on a shared case, and the pair is resolved by Usul.resolve and al-Saʿdī's rules of reading (Q29, Q57). The qayd is always Ibn Rajab's own sentence in the pinned witness. A rule of another work in the bank is named work:number.",
+ "witness": "openiti-rajab-shamela21730",
+ "module": "Usul.Tanaqud",
+ "lean": [
+  "Usul.Tanaqud.Pair",
+  "Usul.Tanaqud.Pair.jam",
+  "Usul.Tanaqud.resolve_takes_jam"
+ ],
+ "proved_earlier": [
+  {
+   "rules": [
+    65,
+    66
+   ],
+   "lean": [
+    "Usul.Refinements.q65_is_the_unbelieved_basis"
+   ]
+  },
+  {
+   "rules": [
+    93,
+    75
+   ],
+   "lean": [
+    "Usul.Tanaqud.rajab_q93_q75_consistent"
+   ]
+  },
+  {
+   "rules": [
+    33,
+    34
+   ],
+   "lean": [
+    "Usul.Refinements.binding_is_implicit_exception"
+   ]
+  },
+  {
+   "rules": [
+    9,
+    "sadi.qawaid_jamia:38"
+   ],
+   "lean": [
+    "Usul.Refinements.q9_refines_q38"
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "id": "T-11",
+   "rules": [
+    66,
+    6
+   ],
+   "case_en": "An act done on a belief later shown wrong: Q66 (as read) upholds it only where a valid basis exists in fact; Q6 upholds it unless another's right attaches or he was negligent. With no valid basis, Q66 holds not ṣaḥīḥ what Q6 upholds; with another's right attached, Q6 undoes what Q66 upholds.",
+   "resolution": "jam",
+   "qayd_en": "Q66 speaks only where the true basis exists; elsewhere Q6.",
+   "author": [
+    {
+     "ref": "src:openiti-rajab-shamela21730#q066",
+     "excerpt_ar": "ثم تبين خطؤه فيه وأن السبب المعتمد غيره وهو موجود"
+    }
+   ],
+   "reading_rules": [
+    "sadi.qawaid_jamia:29"
+   ],
+   "lean": [
+    "Usul.Tanaqud.t11",
+    "Usul.Tanaqud.t11_clash",
+    "Usul.Tanaqud.t11_jam"
+   ],
+   "table": [
+    {
+     "case": [
+      true,
+      true,
+      true
+     ],
+     "first": true,
+     "second": false,
+     "jam": true
+    },
+    {
+     "case": [
+      true,
+      true,
+      false
+     ],
+     "first": true,
+     "second": false,
+     "jam": true
+    },
+    {
+     "case": [
+      true,
+      false,
+      true
+     ],
+     "first": true,
+     "second": false,
+     "jam": true
+    },
+    {
+     "case": [
+      true,
+      false,
+      false
+     ],
+     "first": true,
+     "second": true,
+     "jam": true
+    },
+    {
+     "case": [
+      false,
+      true,
+      true
+     ],
+     "first": false,
+     "second": false,
+     "jam": false
+    },
+    {
+     "case": [
+      false,
+      true,
+      false
+     ],
+     "first": false,
+     "second": false,
+     "jam": false
+    },
+    {
+     "case": [
+      false,
+      false,
+      true
+     ],
+     "first": false,
+     "second": false,
+     "jam": false
+    },
+    {
+     "case": [
+      false,
+      false,
+      false
+     ],
+     "first": false,
+     "second": true,
+     "jam": true
+    }
+   ]
+  },
+  {
+   "id": "T-12",
+   "rules": [
+    "sadi.qawaid_jamia:28",
+    7
+   ],
+   "case_en": "The original found while performing the substitute: al-Saʿdī's Q28 allows the substitute only when the original is impossible, so he switches; Ibn Rajab's Q7 lets one who began a general concession continue.",
+   "resolution": "jam",
+   "qayd_en": "Q28 governs the substitute instituted from necessity; the general concession stands (Q7's first type).",
+   "author": [
+    {
+     "ref": "src:openiti-rajab-shamela21730#q007",
+     "excerpt_ar": "الضرب الثاني: أن يكون المتلبس به إنما شرع ضرورة للعجز عن الأصل وتعذره"
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730#q007",
+     "excerpt_ar": "فهذا يلزمه الانتقال إلى الأصل عند القدرة عليه"
+    }
+   ],
+   "reading_rules": [
+    "sadi.qawaid_jamia:29"
+   ],
+   "lean": [
+    "Usul.Tanaqud.t12",
+    "Usul.Tanaqud.t12_clash",
+    "Usul.Tanaqud.t12_jam",
+    "Usul.Refinements.necessity_is_q28"
+   ],
+   "table": [
+    {
+     "case": [
+      true
+     ],
+     "first": true,
+     "second": false,
+     "jam": true
+    },
+    {
+     "case": [
+      false
+     ],
+     "first": true,
+     "second": false,
+     "jam": false
+    }
+   ]
+  },
+  {
+   "id": "T-13",
+   "rules": [
+    32,
+    33
+   ],
+   "case_en": "An excepted benefit of uncertain extent, e.g. a waqf excepting its benefit for the founder's life: Q32 upholds it; Q33, as read, holds not ṣaḥīḥ an exception of uncertain extent unless the law makes it.",
+   "resolution": "jam",
+   "qayd_en": "Where the transfer already bears an uncertain period (waqf, manumission), Q32 governs; elsewhere Q33.",
+   "author": [
+    {
+     "ref": "src:openiti-rajab-shamela21730#q032",
+     "excerpt_ar": "لأن جهالة المدة هنا لا تؤثر فإنها لا تزيد على جهالة مدة كل بطن بالنسبة إلى من بعده"
+    }
+   ],
+   "reading_rules": [
+    "sadi.qawaid_jamia:29"
+   ],
+   "lean": [
+    "Usul.Tanaqud.t13",
+    "Usul.Tanaqud.t13_clash",
+    "Usul.Tanaqud.t13_jam"
+   ],
+   "table": [
+    {
+     "case": [
+      true,
+      true
+     ],
+     "first": true,
+     "second": true,
+     "jam": true
+    },
+    {
+     "case": [
+      true,
+      false
+     ],
+     "first": false,
+     "second": true,
+     "jam": true
+    },
+    {
+     "case": [
+      false,
+      true
+     ],
+     "first": true,
+     "second": false,
+     "jam": true
+    },
+    {
+     "case": [
+      false,
+      false
+     ],
+     "first": false,
+     "second": false,
+     "jam": false
+    }
+   ]
+  },
+  {
+   "id": "T-14",
+   "rules": [
+    1,
+    "sadi.qawaid_jamia:9"
+   ],
+   "case_en": "An oath (ḥalaf: «لو حلف لا يقف في هذا الماء») not to stand in this water while it runs: Q1, as read, reckons running water jirya by jirya, so he cannot stand in it; al-Saʿdī's Q9 measures by custom, which counts the river one body.",
+   "resolution": "jam",
+   "qayd_en": "Oaths are measured by custom (Q9); outside oaths, Q1's jirya.",
+   "author": [
+    {
+     "ref": "src:openiti-rajab-shamela21730#q001",
+     "excerpt_ar": "والأيمان مرجعها إلى العرف"
+    }
+   ],
+   "reading_rules": [
+    "sadi.qawaid_jamia:29"
+   ],
+   "lean": [
+    "Usul.Tanaqud.t14",
+    "Usul.Tanaqud.t14_clash",
+    "Usul.Tanaqud.t14_jam",
+    "Usul.Refinements.oath_follows_custom"
+   ],
+   "table": [
+    {
+     "case": [
+      true
+     ],
+     "first": "perJirya",
+     "second": "whole",
+     "jam": "whole"
+    },
+    {
+     "case": [
+      false
+     ],
+     "first": "perJirya",
+     "second": "whole",
+     "jam": "perJirya"
+    }
+   ]
+  },
+  {
+   "id": "T-15",
+   "rules": [
+    14,
+    15
+   ],
+   "case_en": "Two find al-manī in a garment they share, not knowing whose: Q14 (its second riwāya) attaches the certain breach, the aṣl having ended in one of them; Q15 keeps each presumption and ignores its consequence for another.",
+   "resolution": "jam",
+   "qayd_en": "Taken together in one ruling (one leading the other in prayer, both slave-women in one ownership), Q14; each alone, Q15.",
+   "author": [
+    {
+     "ref": "src:openiti-rajab-shamela21730#q014",
+     "excerpt_ar": "فينظر إليهما مجتمعين في حكم يتعلق باجتماعهما"
+    }
+   ],
+   "reading_rules": [
+    "sadi.qawaid_jamia:29"
+   ],
+   "lean": [
+    "Usul.Tanaqud.t15",
+    "Usul.Tanaqud.t15_clash",
+    "Usul.Tanaqud.t15_jam",
+    "Usul.Refinements.oneOfTwoAttaches",
+    "Usul.Refinements.consequenceCarries"
+   ],
+   "table": [
+    {
+     "case": [
+      true
+     ],
+     "first": true,
+     "second": false,
+     "jam": true
+    },
+    {
+     "case": [
+      false
+     ],
+     "first": true,
+     "second": false,
+     "jam": false
+    }
+   ]
+  }
+ ]
+}

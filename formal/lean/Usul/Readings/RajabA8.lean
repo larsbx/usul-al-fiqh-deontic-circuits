@@ -15,7 +15,7 @@ committed to is a contract or annulment that admits vagueness: «إن كان ا�
 commitment is of the first kind. The output is whether the consent binds. -/
 def unknownConsentBinds (vaguenessAdmitted : Bool) : Bool := vaguenessAdmitted
 
-/-- Qāʿida 105, the inshāʾāt: pure transfers of ownership, securities and gifts binding by
+/-- Qāʿida 105, the inshāʾāt: pure (maḥḍ) transfers of ownership, securities and gifts binding by
 contract or delivery «فلا يصح في مبهم من أعيان متفاوتة», but «ويصح في مبهم من أعيان متساوية
 مختلطة كقفيز صبرة»; a gift tied to death «فيصح في المبهم بغير خلاف», as do revocable gifts,
 partnerships and trusts, and annulments «ما وضع منها على التغليب والسراية صح في المبهم كالطلاق

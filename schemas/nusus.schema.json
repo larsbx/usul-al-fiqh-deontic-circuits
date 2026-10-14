@@ -1,0 +1,240 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://example.invalid/schemas/nusus.schema.json",
+ "title": "The textual foundation: āyāt and ḥadīth the bank rests on, each pinned and verified",
+ "type": "object",
+ "required": [
+  "status",
+  "note",
+  "attribution",
+  "ayat",
+  "ahadith",
+  "athar"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "status": {
+   "const": "candidate"
+  },
+  "note": {
+   "type": "string"
+  },
+  "attribution": {
+   "type": "object",
+   "required": [
+    "quran"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "quran": {
+     "type": "string",
+     "minLength": 1,
+     "description": "Tanzil's terms: name the source, link tanzil.net, quote verbatim (problem register PR-12)"
+    }
+   }
+  },
+  "ayat": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "sura",
+     "aya",
+     "witness",
+     "excerpt_ar",
+     "en"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^Q[0-9]{3}:[0-9]{3}[a-z]?$"
+     },
+     "sura": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 114
+     },
+     "aya": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "witness": {
+      "const": "tanzil-quran-simple"
+     },
+     "excerpt_ar": {
+      "type": "string",
+      "minLength": 1
+     },
+     "en": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "ahadith": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "narrator",
+     "matn_ar",
+     "en",
+     "sources",
+     "albani"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^H-[a-z0-9-]+$"
+     },
+     "narrator": {
+      "type": "string"
+     },
+     "matn_ar": {
+      "type": "string",
+      "minLength": 1
+     },
+     "en": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+       "type": "object",
+       "required": [
+        "work",
+        "witness",
+        "number",
+        "numbering"
+       ],
+       "additionalProperties": false,
+       "properties": {
+        "work": {
+         "type": "string"
+        },
+        "witness": {
+         "type": "string"
+        },
+        "number": {
+         "type": "integer",
+         "minimum": 1
+        },
+        "numbering": {
+         "type": "string",
+         "minLength": 1,
+         "description": "whose numbering `number` follows (PR-08)"
+        },
+        "matn_ar": {
+         "type": "string",
+         "minLength": 1,
+         "description": "this collection's wording, where its riwāya differs"
+        }
+       }
+      },
+      "description": "the pinned collections that carry it; empty only for a ḥadīth the gate rejects and none of them carries (tested)"
+     },
+     "cited_by": {
+      "type": "array",
+      "description": "the uṣūl records citing it as a dalīl (corpus/hadith/irwa_join.json; problem register PR-05)",
+      "items": {
+       "type": "string"
+      }
+     },
+     "albani": {
+      "type": "object",
+      "required": [
+       "work",
+       "witness",
+       "number",
+       "verdict",
+       "numbering"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "work": {
+        "enum": [
+         "albani.irwa",
+         "albani.sahih_daif_tirmidhi"
+        ]
+       },
+       "witness": {
+        "type": "string"
+       },
+       "number": {
+        "type": "integer",
+        "minimum": 1
+       },
+       "verdict": {
+        "enum": [
+         "sahih",
+         "hasan",
+         "daif",
+         "daifJiddan",
+         "mawdu"
+        ]
+       },
+       "numbering": {
+        "type": "string",
+        "minLength": 1
+       }
+      }
+     }
+    }
+   }
+  },
+  "athar": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "by",
+     "excerpt_ar",
+     "en",
+     "work",
+     "witness",
+     "status",
+     "albani_ar"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^A-[a-z0-9-]+$"
+     },
+     "by": {
+      "type": "string"
+     },
+     "excerpt_ar": {
+      "type": "string",
+      "maxLength": 160
+     },
+     "en": {
+      "type": "string"
+     },
+     "work": {
+      "type": "string"
+     },
+     "witness": {
+      "type": "string"
+     },
+     "status": {
+      "enum": [
+       "mawquf",
+       "maqtu"
+      ]
+     },
+     "albani_ar": {
+      "type": "string",
+      "maxLength": 160
+     }
+    }
+   }
+  }
+ }
+}

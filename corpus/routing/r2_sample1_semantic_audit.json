@@ -32,7 +32,7 @@
         {
           "encoder": "hair_detached",
           "disposition": "insufficient",
-          "reason": "Hair attachment, concession certainty and consumption transformation cannot enumerate nullifiers. Ishaq agrees, with a stronger expression of certainty."
+          "reason": "Hair attachment, concession certainty and consumption transformation cannot enumerate nullifiers. Ishaq agrees, with a stronger expression of certainty («بلا رجاء»: dropping Aḥmad's hedge «أرجو», which marks a ẓann; not a tarjīḥ)."
         },
         {
           "encoder": "rukhsa_under_doubt",
@@ -56,7 +56,7 @@
         }
       ],
       "classification": "missing_rule",
-      "scope": "Hair attachment, concession certainty and consumption transformation cannot enumerate nullifiers. Ishaq agrees, with a stronger expression of certainty.",
+      "scope": "Hair attachment, concession certainty and consumption transformation cannot enumerate nullifiers. Ishaq agrees, with a stronger expression of certainty («بلا رجاء»: dropping Aḥmad's hedge «أرجو», which marks a ẓann; not a tarjīḥ).",
       "gap_diagnosis": "vocabulary_gap",
       "page_evidence": "numbered",
       "segmentation": "replay_stable"
@@ -463,7 +463,7 @@
         {
           "encoder": "ayman_by_urf",
           "disposition": "insufficient",
-          "reason": "OathBody models flows, not persistence across divorce. Sufyan's reported triple-divorce cancellation must remain attributed."
+          "reason": "OathBody models flows, not persistence across divorce (ṭalāq). Sufyan's reported triple-divorce cancellation must remain attributed."
         },
         {
           "encoder": "advanced_worship",
@@ -482,7 +482,7 @@
         }
       ],
       "classification": "missing_rule",
-      "scope": "OathBody models flows, not persistence across divorce. Sufyan's reported triple-divorce cancellation must remain attributed.",
+      "scope": "OathBody models flows, not persistence across divorce (ṭalāq). Sufyan's reported triple-divorce cancellation must remain attributed.",
       "gap_diagnosis": "vocabulary_gap",
       "page_evidence": "numbered",
       "segmentation": "replay_stable"
@@ -1092,7 +1092,7 @@
         {
           "encoder": "concurrent_causes",
           "disposition": "insufficient",
-          "reason": "Half/full outputs in concurrentShare concern concurrent causes, not khalwa. Preserve reported Ibn Masud and Ibn Abbas distinctions; do not collapse the evidence into a single mahr rule."
+          "reason": "Half/full outputs in concurrentShare concern concurrent causes (asbāb), not khalwa. Preserve reported Ibn Masud and Ibn Abbas distinctions; do not collapse the evidence into a single mahr rule."
         },
         {
           "encoder": "defective_compensation",
@@ -1116,7 +1116,7 @@
         }
       ],
       "classification": "missing_rule",
-      "scope": "Half/full outputs in concurrentShare concern concurrent causes, not khalwa. Preserve reported Ibn Masud and Ibn Abbas distinctions; do not collapse the evidence into a single mahr rule.",
+      "scope": "Half/full outputs in concurrentShare concern concurrent causes (asbāb), not khalwa. Preserve reported Ibn Masud and Ibn Abbas distinctions; do not collapse the evidence into a single mahr rule.",
       "gap_diagnosis": "vocabulary_gap",
       "page_evidence": "numbered",
       "segmentation": "replay_stable"
@@ -1330,7 +1330,7 @@
         {
           "encoder": "recourse",
           "disposition": "insufficient",
-          "reason": "Recourse concerns expenditure or return of property, not revocation of delegated divorce."
+          "reason": "Recourse concerns expenditure or return of property, not revocation of delegated divorce (ṭalāq, «فأمرك بيدك»)."
         },
         {
           "encoder": "many_over_noble",
@@ -1354,7 +1354,7 @@
         }
       ],
       "classification": "missing_rule",
-      "scope": "Recourse concerns expenditure or return of property, not revocation of delegated divorce.",
+      "scope": "Recourse concerns expenditure or return of property, not revocation of delegated divorce (ṭalāq, «فأمرك بيدك»).",
       "gap_diagnosis": "vocabulary_gap",
       "page_evidence": "numbered",
       "segmentation": "replay_stable"
@@ -1538,11 +1538,11 @@
         {
           "encoder": "attached_takeover_at_value",
           "disposition": "insufficient",
-          "reason": "No wrongful attachment or takeover at value is involved. Medicinal reports are not authenticated by inclusion; preserve hesitation and Ibrahim's reported dislike without treating unlike substances as one contradiction."
+          "reason": "No wrongful attachment or takeover at value is involved. Medicinal reports are not authenticated (graded ṣaḥīḥ) by inclusion; preserve hesitation and Ibrahim's reported dislike without treating unlike substances as one contradiction."
         }
       ],
       "classification": "missing_rule",
-      "scope": "No wrongful attachment or takeover at value is involved. Medicinal reports are not authenticated by inclusion; preserve hesitation and Ibrahim's reported dislike without treating unlike substances as one contradiction.",
+      "scope": "No wrongful attachment or takeover at value is involved. Medicinal reports are not authenticated (graded ṣaḥīḥ) by inclusion; preserve hesitation and Ibrahim's reported dislike without treating unlike substances as one contradiction.",
       "gap_diagnosis": "vocabulary_gap",
       "page_evidence": "numbered",
       "segmentation": "replay_stable"
@@ -1762,7 +1762,7 @@
         {
           "encoder": "forbidden_cause_voided",
           "disposition": "insufficient",
-          "reason": "The words establish conversion agency and outcome, but not the souls_drawn premise of causeVoided. Do not manufacture it; the specific purity rule and broader food exceptions are absent."
+          "reason": "The words establish conversion agency and outcome, but not the souls_drawn premise of causeVoided. Do not manufacture it; the specific purity rule (wine turning to vinegar of itself becomes ṭāhir, «طهرت») and broader food exceptions are absent."
         },
         {
           "encoder": "generality",
@@ -1786,7 +1786,7 @@
         }
       ],
       "classification": "missing_rule",
-      "scope": "The words establish conversion agency and outcome, but not the souls_drawn premise of causeVoided. Do not manufacture it; the specific purity rule and broader food exceptions are absent.",
+      "scope": "The words establish conversion agency and outcome, but not the souls_drawn premise of causeVoided. Do not manufacture it; the specific purity rule (wine turning to vinegar of itself becomes ṭāhir, «طهرت») and broader food exceptions are absent.",
       "gap_diagnosis": "vocabulary_gap",
       "page_evidence": "numbered",
       "segmentation": "replay_stable"
@@ -1892,7 +1892,7 @@
         {
           "encoder": "lots",
           "disposition": "partial_support",
-          "reason": "Lots is a supported component: owner unknown and two competing proofs; allocationFull returns lot for either divisibility value. Divisibility is not stated and is not annotated. The source awards only after the drawn claimant swears, a condition not in this encoder. Full judicial-lot-oath procedure remains missing."
+          "reason": "Lots is a supported component: owner unknown and two competing proofs; allocationFull returns lot for either divisibility value. Divisibility is not stated and is not annotated. The source awards only after the drawn claimant swears (the yamīn of the claim), a sharṭ of the award not in this encoder. Full judicial-lot-oath procedure remains missing."
         },
         {
           "encoder": "right_for_or_against_self",
@@ -1916,7 +1916,7 @@
         }
       ],
       "classification": "missing_rule",
-      "scope": "Lots is a supported component: owner unknown and two competing proofs; allocationFull returns lot for either divisibility value. Divisibility is not stated and is not annotated. The source awards only after the drawn claimant swears, a condition not in this encoder. Full judicial-lot-oath procedure remains missing.",
+      "scope": "Lots is a supported component: owner unknown and two competing proofs; allocationFull returns lot for either divisibility value. Divisibility is not stated and is not annotated. The source awards only after the drawn claimant swears (the yamīn of the claim), a sharṭ of the award not in this encoder. Full judicial-lot-oath procedure remains missing.",
       "gap_diagnosis": "partial_rule",
       "page_evidence": "numbered",
       "segmentation": "replay_stable"
@@ -1940,7 +1940,7 @@
         {
           "encoder": "vowed_as_shar_obligation",
           "disposition": "insufficient",
-          "reason": "The existing vowedRuling concerns the treatment of a vowed act like a shar obligation, not conjunction of fasting/itikaf and mosque constraints. The blind empty situation is an annotation omission, not absence of legal facts."
+          "reason": "The existing vowedRuling concerns the treatment of a vowed act («بالنذر», nadhr) like a sharʿ obligation (wājib), not conjunction of fasting/itikaf and mosque constraints. The blind empty situation is an annotation omission, not absence of legal facts."
         },
         {
           "encoder": "makeup_after_failure",
@@ -1964,7 +1964,7 @@
         }
       ],
       "classification": "missing_rule",
-      "scope": "The existing vowedRuling concerns the treatment of a vowed act like a shar obligation, not conjunction of fasting/itikaf and mosque constraints. The blind empty situation is an annotation omission, not absence of legal facts.",
+      "scope": "The existing vowedRuling concerns the treatment of a vowed act («بالنذر», nadhr) like a sharʿ obligation (wājib), not conjunction of fasting/itikaf and mosque constraints. The blind empty situation is an annotation omission, not absence of legal facts.",
       "gap_diagnosis": "blind_fact_omission_and_vocabulary_gap",
       "page_evidence": "numbered",
       "segmentation": "replay_stable"
@@ -2020,7 +2020,7 @@
         {
           "encoder": "wage_without_stipulation",
           "disposition": "accepted_scoped",
-          "reason": "SCOPED guard: a professional private service earns a wage; this does not formalize the wage amount, wet-nurse food/clothing bargain, all lease conditions, or spousal permission. These remain rule:ijara_conditions."
+          "reason": "SCOPED guard: a professional private service earns a wage; this does not formalize the wage amount, wet-nurse food/clothing bargain, all lease conditions (sharṭ: «تصح بثلاثة شروط»), or spousal permission. These remain rule:ijara_conditions."
         },
         {
           "encoder": "benefit_then_thing",
@@ -2034,7 +2034,7 @@
         }
       ],
       "classification": "derivable",
-      "scope": "SCOPED guard: a professional private service earns a wage; this does not formalize the wage amount, wet-nurse food/clothing bargain, all lease conditions, or spousal permission. These remain rule:ijara_conditions.",
+      "scope": "SCOPED guard: a professional private service earns a wage; this does not formalize the wage amount, wet-nurse food/clothing bargain, all lease conditions (sharṭ: «تصح بثلاثة شروط»), or spousal permission. These remain rule:ijara_conditions.",
       "gap_diagnosis": "scoped_support",
       "page_evidence": "numbered",
       "segmentation": "replay_stable"
@@ -2106,7 +2106,7 @@
         {
           "encoder": "qisas_belongs_to_whom",
           "disposition": "insufficient",
-          "reason": "Its existing qisas encoder decides pardon ownership, not eligibility conditions. Historical formalization only; no enacted ruling or enforcement is claimed."
+          "reason": "Its existing qisas encoder decides pardon ownership, not eligibility conditions (sharṭ: «باب شروط القصاص»). Historical formalization only; no enacted ruling or enforcement is claimed."
         },
         {
           "encoder": "doubled",
@@ -2130,7 +2130,7 @@
         }
       ],
       "classification": "missing_rule",
-      "scope": "Its existing qisas encoder decides pardon ownership, not eligibility conditions. Historical formalization only; no enacted ruling or enforcement is claimed.",
+      "scope": "Its existing qisas encoder decides pardon ownership, not eligibility conditions (sharṭ: «باب شروط القصاص»). Historical formalization only; no enacted ruling or enforcement is claimed.",
       "gap_diagnosis": "vocabulary_gap",
       "page_evidence": "numbered",
       "segmentation": "replay_stable"

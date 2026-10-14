@@ -7,7 +7,7 @@
       "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00029",
       "encoder": "hair_detached",
       "class": "missing_rule",
-      "note": "Hair attachment, concession certainty and consumption transformation cannot enumerate nullifiers. Ishaq agrees, with a stronger expression of certainty.",
+      "note": "Hair attachment, concession certainty and consumption transformation cannot enumerate nullifiers. Ishaq agrees, with a stronger expression of certainty («بلا رجاء»: dropping Aḥmad's hedge «أرجو», which marks a ẓann; not a tarjīḥ).",
       "quote": "من مس الفرج3 الوضوء",
       "facts": {},
       "needs": [
@@ -131,7 +131,7 @@
       "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m01212",
       "encoder": "ayman_by_urf",
       "class": "missing_rule",
-      "note": "OathBody models flows, not persistence across divorce. Sufyan's reported triple-divorce cancellation must remain attributed.",
+      "note": "OathBody models flows, not persistence across divorce (ṭalāq). Sufyan's reported triple-divorce cancellation must remain attributed.",
       "quote": "ما لم يحنث فإن الحنث عليه قائم",
       "facts": {},
       "needs": [
@@ -311,7 +311,7 @@
       "far": "harb.masail.openiti_harb_masail_shamela12527.m00100",
       "encoder": "concurrent_causes",
       "class": "missing_rule",
-      "note": "Half/full outputs in concurrentShare concern concurrent causes, not khalwa. Preserve reported Ibn Masud and Ibn Abbas distinctions; do not collapse the evidence into a single mahr rule.",
+      "note": "Half/full outputs in concurrentShare concern concurrent causes (asbāb), not khalwa. Preserve reported Ibn Masud and Ibn Abbas distinctions; do not collapse the evidence into a single mahr rule.",
       "quote": "إنما يجب نصف المهر",
       "facts": {},
       "needs": [
@@ -391,7 +391,7 @@
       "far": "harb.masail.openiti_harb_masail_shamela12527.m00283",
       "encoder": "recourse",
       "class": "missing_rule",
-      "note": "Recourse concerns expenditure or return of property, not revocation of delegated divorce.",
+      "note": "Recourse concerns expenditure or return of property, not revocation of delegated divorce (ṭalāq, «فأمرك بيدك»).",
       "quote": "هذا لا يضبط، لأن الغائب لعله يرجع، عن قوله في سفره",
       "facts": {},
       "needs": [
@@ -452,7 +452,7 @@
       "far": "harb.masail.openiti_harb_masail_shamela12527.m00435",
       "encoder": "attached_takeover_at_value",
       "class": "missing_rule",
-      "note": "No wrongful attachment or takeover at value is involved. Medicinal reports are not authenticated by inclusion; preserve hesitation and Ibrahim's reported dislike without treating unlike substances as one contradiction.",
+      "note": "No wrongful attachment or takeover at value is involved. Medicinal reports are not authenticated (graded ṣaḥīḥ) by inclusion; preserve hesitation and Ibrahim's reported dislike without treating unlike substances as one contradiction.",
       "quote": "وكأنه سهل فيه قليلا",
       "facts": {},
       "needs": [
@@ -516,7 +516,7 @@
       "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00151",
       "encoder": "forbidden_cause_voided",
       "class": "missing_rule",
-      "note": "The words establish conversion agency and outcome, but not the souls_drawn premise of causeVoided. Do not manufacture it; the specific purity rule and broader food exceptions are absent.",
+      "note": "The words establish conversion agency and outcome, but not the souls_drawn premise of causeVoided. Do not manufacture it; the specific purity rule (wine turning to vinegar of itself becomes ṭāhir, «طهرت») and broader food exceptions are absent.",
       "quote": "وإذا تخللت الخمر طهرت وحلت وإن خللت لم تطهر",
       "facts": {},
       "needs": [
@@ -541,7 +541,7 @@
       "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00196",
       "encoder": "lots",
       "class": "missing_rule",
-      "note": "Lots is a supported component: owner unknown and two competing proofs; allocationFull returns lot for either divisibility value. Divisibility is not stated and is not annotated. The source awards only after the drawn claimant swears, a condition not in this encoder. Full judicial-lot-oath procedure remains missing.",
+      "note": "Lots is a supported component: owner unknown and two competing proofs; allocationFull returns lot for either divisibility value. Divisibility is not stated and is not annotated. The source awards only after the drawn claimant swears (the yamīn of the claim), a sharṭ of the award not in this encoder. Full judicial-lot-oath procedure remains missing.",
       "quote": "أو لكل منهما بينة إستهما على اليمين",
       "facts": {
         "entitled_known": false,
@@ -557,7 +557,7 @@
       "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00060",
       "encoder": "vowed_as_shar_obligation",
       "class": "missing_rule",
-      "note": "The existing vowedRuling concerns the treatment of a vowed act like a shar obligation, not conjunction of fasting/itikaf and mosque constraints. The blind empty situation is an annotation omission, not absence of legal facts.",
+      "note": "The existing vowedRuling concerns the treatment of a vowed act («بالنذر», nadhr) like a sharʿ obligation (wājib), not conjunction of fasting/itikaf and mosque constraints. The blind empty situation is an annotation omission, not absence of legal facts.",
       "quote": "ويصح بلا صوم ويلزمان بالنذر",
       "facts": {},
       "needs": [
@@ -570,7 +570,7 @@
       "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00111",
       "encoder": "wage_without_stipulation",
       "class": "derivable",
-      "note": "SCOPED guard: a professional private service earns a wage; this does not formalize the wage amount, wet-nurse food/clothing bargain, all lease conditions, or spousal permission. These remain rule:ijara_conditions.",
+      "note": "SCOPED guard: a professional private service earns a wage; this does not formalize the wage amount, wet-nurse food/clothing bargain, all lease conditions (sharṭ: «تصح بثلاثة شروط»), or spousal permission. These remain rule:ijara_conditions.",
       "quote": "أو أعطى ثوبه قصارا أو خياطا بلا عقد صح بأجرة العادة",
       "facts": {
         "professional": true,
@@ -596,7 +596,7 @@
       "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00236",
       "encoder": "qisas_belongs_to_whom",
       "class": "missing_rule",
-      "note": "Its existing qisas encoder decides pardon ownership, not eligibility conditions. Historical formalization only; no enacted ruling or enforcement is claimed.",
+      "note": "Its existing qisas encoder decides pardon ownership, not eligibility conditions (sharṭ: «باب شروط القصاص»). Historical formalization only; no enacted ruling or enforcement is claimed.",
       "quote": "فلا يقتل مسلم بكافر ولا حر بعبد",
       "facts": {},
       "needs": [

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "al-Saʿdī's furūq, graded by him: one tranche",
+  "type": "object",
+  "required": ["note", "work", "witness", "module", "asl", "lean", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "note": {"type": "string"},
+    "work": {"const": "sadi.qawaid_jamia"},
+    "witness": {"type": "string"},
+    "module": {"type": "string"},
+    "asl": {"$ref": "#/$defs/quote"},
+    "lean": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "items": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "cases_en", "madhhab", "grade", "ruling", "basis", "author", "grounds", "note"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^F[0-9]{2,3}$"},
+          "cases_en": {"type": "array", "items": {"type": "string"}, "minItems": 2, "maxItems": 2},
+          "madhhab": {"enum": ["apart", "alike"]},
+          "grade": {"enum": ["sahih", "daif", "jamDaif", "reported"]},
+          "ruling": {"enum": ["apart", "alike"], "description": "al-Saʿdī's conclusion: the two masāʾil ruled apart or alike; for a bare report, the madhhab's ruling as he reports it"},
+          "basis": {"enum": ["maana", "nass", "qaida", "naqd", "no_proof", "no_sound_hadith", "stated"]},
+          "author": {"$ref": "#/$defs/quote"},
+          "grounds": {"type": "array", "items": {"type": "string"}},
+          "note": {"type": "string"},
+          "nusus": {"type": "array", "items": {"type": "string", "pattern": "^(Q[0-9]{3}:[0-9]{3}[a-z]?|H-[a-z0-9-]+|A-[a-z0-9-]+)$"}, "description": "ids in corpus/nusus/foundation.json: the naṣṣ the item rests on"},
+          "nass_cited": {"enum": ["quoted", "named", "identified", "unspecified"], "description": "how al-Saʿdī cites it: quotes it, names it, alludes so that it is identified, or says only «ظاهر النصوص» (then nothing is supplied for him)"},
+          "overturns": {"type": "string", "pattern": "^F[0-9]{2,3}$", "description": "an earlier item, a bare report, whose report this item's own grade overturns on a shared case"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "quote": {"type": "object", "required": ["ref", "excerpt_ar"], "additionalProperties": false,
+      "properties": {"ref": {"type": "string", "pattern": "^src:[a-z0-9-]+#furuq$"}, "excerpt_ar": {"type": "string", "maxLength": 160}}}
+  }
+}

@@ -7,12 +7,12 @@ candidate, awaiting human review.
 namespace Usul.Readings.RajabA2
 
 /-- Qāʿida 72: «اشتراط النفقة والكسوة في العقود يقع على وجهين معاوضة وغير معاوضة»; the
-compensation «تقع في العقود اللازمة», the non-compensation «إباحة النفقة للعامل ما دام متلبسا
+muʿāwaḍa «تقع في العقود اللازمة», the non-muʿāwaḍa «إباحة النفقة للعامل ما دام متلبسا
 بالعمل ويقع ذلك في العقود الجائزة». A stipulation of maintenance and clothing holds as a
-compensation in a binding contract, and as a licence (ibāḥa) in any contract. -/
+muʿāwaḍa (countervalue) in a binding contract, and as a licence (ibāḥa) in any contract. -/
 def nafaqaStipulable (muawada binding : Bool) : Bool := !muawada || binding
 
-/-- Qāʿida 72: in the compensation «ويملك فيها الطعام والكسوة كما يملك غيرهما من الأموال
+/-- Qāʿida 72: in the muʿāwaḍa «ويملك فيها الطعام والكسوة كما يملك غيرهما من الأموال
 المعاوض بها»; the other is «إباحة النفقة للعامل», so what is left over is returned, save what has
 been spent in its purpose, the farq the qāʿida itself draws: «لأن الدابة قد صرفت في سبيل الله
 واستعملت فيه وكذلك الكسوة يحصل المقصود بها بخلاف ما فضل من النفقة». -/

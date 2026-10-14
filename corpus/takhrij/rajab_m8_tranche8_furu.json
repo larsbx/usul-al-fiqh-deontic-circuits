@@ -11,7 +11,7 @@
         "cause_present": true
       },
       "expected": true,
-      "note": "Purification: its cause is the ḥadath, the condition of its wujūb the act it is for, so it may be done long before the act, after the ḥadath."
+      "note": "Purification (ṭahāra): its cause (sabab) is the ḥadath, the condition (sharṭ) of its wujūb the act it is for, so it may be done long before the act, after the ḥadath."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f001",
@@ -21,7 +21,7 @@
         "cause_present": true
       },
       "expected": true,
-      "note": "Prayer: ʿaṣr may be brought into the time of ẓuhr and ʿishāʾ into maghrib, the zawāl being the cause of both prayers when there is an excuse; the two times become one, of permission for one and wujūb for the other."
+      "note": "Prayer: ʿaṣr may be brought into the time of ẓuhr and ʿishāʾ into maghrib, the zawāl being the cause (sabab) of both prayers when there is an excuse; the two times become one, of permission for one and wujūb for the other."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f002",
@@ -31,7 +31,7 @@
         "cause_present": true
       },
       "expected": true,
-      "note": "The Friday prayer: its cause is the day, to which it is annexed, so it may be prayed once the forbidden time of the morning has passed, though the zawāl is the time of its wujūb."
+      "note": "The Friday prayer: its cause (sabab) is the day, to which it is annexed, so it may be prayed once the forbidden time of the morning has passed, though the zawāl is the time of its wujūb."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f003",
@@ -51,7 +51,7 @@
         "cause_present": true
       },
       "expected": true,
-      "note": "The expiations of iḥrām, when needed for an excuse: the excuse is their cause, so they may be advanced after it and before the prohibited act."
+      "note": "The expiations of iḥrām (kaffāra, «كفارات الإحرام»), when needed for an excuse: the excuse is their cause (sabab), so they may be advanced after it and before the prohibited act."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f005",
@@ -61,7 +61,7 @@
         "cause_present": true
       },
       "expected": true,
-      "note": "The fast of tamattuʿ and qirān: its cause is the ʿumra before the ḥajj in its months, so it may be fasted once the ʿumra's iḥrām is entered, though it falls due later. The hady is another matter: Abū al-Khaṭṭāb allowed it, and there is a riwāya for one arriving before the ten, but «وعلى المشهور لا يجوز في غير أيام النحر», the Sharīʿa fixing its days."
+      "note": "The fast of tamattuʿ and qirān: its cause (sabab) is the ʿumra before the ḥajj in its months, so it may be fasted once the ʿumra's iḥrām is entered, though it falls due later. The hady is another matter: Abū al-Khaṭṭāb allowed it, and there is a riwāya for one arriving before the ten, but «وعلى المشهور لا يجوز في غير أيام النحر», the Sharīʿa fixing its days."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f006",
@@ -71,7 +71,7 @@
         "cause_present": true
       },
       "expected": true,
-      "note": "The expiation of an oath may be advanced before breaking it, once the oath is made, whether in money or in fasting."
+      "note": "The expiation of an oath (kaffārat al-yamīn) may be advanced before breaking it, once the oath is made, whether in money or in fasting."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f007",
@@ -81,7 +81,7 @@
         "cause_present": true
       },
       "expected": true,
-      "note": "The expiation for killing, or for game, after the wound and before death."
+      "note": "The expiation (kaffāra) for killing, or for game, after the wound and before death."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f008",
@@ -91,7 +91,7 @@
         "cause_present": true
       },
       "expected": true,
-      "note": "An unconditioned vow («if God heals my sick one…»): he may give the alms at once (Ibn ʿAqīl, al-Funūn). Attached outside worship: releasing the diya between wound and death; for qiṣāṣ two riwāyas; the guaranteed paying the guarantor (two wujūh); waiving shufʿa before the sale (two riwāyas); and the heirs waiving against a bequest in illness, «فالمنصوص عن أحمد أنه لا يصح»."
+      "note": "An unconditioned vow (nadhr, «النذر المطلق») («if God heals my sick one…»): he may give the alms («يتصدق») at once (Ibn ʿAqīl, al-Funūn). Attached outside worship: releasing the diya between wound and death; for qiṣāṣ two riwāyas; the guaranteed paying the guarantor (two wujūh); waiving shufʿa before the sale (two riwāyas); and the heirs waiving against a bequest in illness, «فالمنصوص عن أحمد أنه لا يصح»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f000",
@@ -113,7 +113,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "When the time of the obligatory prayer has narrowed, is an unrestricted voluntary prayer concluded? Two wujūh, under the qāʿida's «وإن كانت مضيقة لم تصح على الصحيح»."
+      "note": "When the time of the obligatory prayer has narrowed, is an unrestricted voluntary prayer («التنفل المطلق») concluded? Two wujūh, under the qāʿida's «وإن كانت مضيقة لم تصح على الصحيح»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f001",
@@ -135,7 +135,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "One owing a missed prayer: is an unrestricted voluntary prayer valid before making it up? Two wujūh, «لأن قضاء الفوائت على الفور»."
+      "note": "One owing a missed prayer: is an unrestricted voluntary prayer («التنفل المطلق») valid before making it up? Two wujūh, «لأن قضاء الفوائت على الفور»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f002",
@@ -179,7 +179,7 @@
         "financial": false
       },
       "expected": false,
-      "note": "A voluntary ḥajj before ḥajjat al-islām does not fall as voluntary, «وانقلبت عن حجة الإسلام على المذهب الصحيح»."
+      "note": "A voluntary (taṭawwuʿ) ḥajj before ḥajjat al-islām does not fall as voluntary, «وانقلبت عن حجة الإسلام على المذهب الصحيح»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f005",
@@ -190,7 +190,7 @@
         "financial": false
       },
       "expected": false,
-      "note": "Ḥajj for a vow or as voluntary while owing the make-up of a spoiled ḥajj falls as the make-up «على المذهب أيضا»; al-Talkhīṣ builds the voluntary ḥajj before the ʿumra on whether the rite is immediate. Zakāt differs: «فقال الأصحاب يصح أن يتنفل بالصدقة قبل أدائها وإن كانت على الفور», with Aḥmad's naṣṣ (Muhannā). Then the second kind, financial dispositions while in debt: «فالمذهب صحة تصرفه», against Taqī al-Dīn. The zakāt clause is the reading's carve-out (`financial`, zakat_carve_out); the record is annotated for its leading ḥajj."
+      "note": "Ḥajj for a vow (nadhr) or as voluntary while owing the make-up of a spoiled ḥajj falls as the make-up «على المذهب أيضا»; al-Talkhīṣ builds the voluntary ḥajj before the ʿumra on whether the rite is immediate. Zakāt differs: «فقال الأصحاب يصح أن يتنفل بالصدقة قبل أدائها وإن كانت على الفور», with Aḥmad's naṣṣ (Muhannā). Then the second kind, financial dispositions while in debt: «فالمذهب صحة تصرفه», against Taqī al-Dīn. The zakāt clause is the reading's carve-out (`financial`, zakat_carve_out); the record is annotated for its leading ḥajj."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000",
@@ -211,7 +211,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "Two find semen in a garment they sleep in, or hear a sound, not knowing from whom: two riwāyas: neither must wash, each certain of purity and doubting the ḥadath; or both must, the aṣl having certainly lapsed in one. No madhhab marked; Ibn Rajab later contrasts it with divorce, «بخلاف إيجاب الطهارة عليهما فإنه لا ضرر فيه»."
+      "note": "Two find semen (al-manī, «منيا») in a garment they sleep in, or hear a noise («صوتا»), not knowing from whom: two riwāyas: neither must wash (ghusl) or do wuḍūʾ, each certain of purity and doubting the ḥadath; or both must, the aṣl having certainly lapsed in one. No madhhab marked; Ibn Rajab later contrasts it with divorce (making both ṭalāqs fall in the crow taʿlīq, «إيقاع طلاقهما»), «بخلاف إيجاب الطهارة عليهما فإنه لا ضرر فيه»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f001",
@@ -285,7 +285,7 @@
         "separate_matters": true
       },
       "expected": true,
-      "note": "Doubting whether he wiped the khuff before or after a prayer, the period counting from the wiping: the period is reckoned from before the prayer, and the prayer repeated, each aṣl kept (the feet to be washed, the prayer still owed)."
+      "note": "Doubting whether he wiped the khuff before or after a prayer, the period counting from the wiping: the period is reckoned from before the prayer, and the prayer repeated, each aṣl kept (the feet to be washed (ghasl), the prayer still owed)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f003",
@@ -295,7 +295,7 @@
         "separate_matters": true
       },
       "expected": true,
-      "note": "Game shot and found dead in little water: not lawful, the water perhaps having helped kill it, yet the water is not thereby impure (Ibn ʿAqīl, al-Fuṣūl)."
+      "note": "Game shot and found dead in little water: not lawful, the water perhaps having helped kill it, yet the water is not thereby impure (no najāsa of the water follows) (Ibn ʿAqīl, al-Fuṣūl)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f004",
@@ -316,7 +316,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "«Iʿtaddī» in anger, with signs of an allusion to qadhf: divorce falls as an allusion with anger; is he given the ḥadd too? Ibn ʿAqīl's two possibilities (al-Mufradāt): yes, «وبه جزم في عمد الأدلة», both being rights against him; or no, qadhf and divorce excluding each other. The qāʿida then lists rulings that follow without their doubtful corollaries (inheritance on an acknowledgement of lineage)."
+      "note": "«Iʿtaddī» in anger, with signs of an allusion to qadhf: divorce (ṭalāq) falls as an allusion with anger; is he given the ḥadd too? Ibn ʿAqīl's two possibilities (al-Mufradāt): yes, «وبه جزم في عمد الأدلة», both being rights against him; or no, qadhf and divorce excluding each other. The qāʿida then lists rulings that follow without their doubtful corollaries (inheritance on an acknowledgement of lineage)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f001",
@@ -337,7 +337,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "Purification: one without water reaches it as the time runs out: he purifies and prays after the time (al-Mughnī); the author of al-Muḥarrar: he prays by tayammum, «وهو ظاهر كلام أحمد في رواية صالح»."
+      "note": "Purification (al-ṭahāra): one without water reaches it as the time runs out: he purifies and prays after the time (al-Mughnī); the author of al-Muḥarrar: he prays by tayammum, «وهو ظاهر كلام أحمد في رواية صالح»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f002",
@@ -400,7 +400,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "Fasting: the boy reaching puberty breaking his fast mid-day in Ramaḍān, the unbeliever converting, the menstruant becoming pure: they make it up «في أصح الروايتين»."
+      "note": "Fasting: the boy reaching puberty breaking his fast mid-day in Ramaḍān, the unbeliever converting, the menstruant becoming pure (ṭāhir, «طهرت حائض»): they make it up «في أصح الروايتين»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f005",
@@ -421,7 +421,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "Ḥajj: ability is no condition of its settling in the dhimma «على أظهر الروايتين», only of performing it himself. Making up differs: the aṣḥāb require the possibility of performance (no feeding for one who died still excused), and for vows two wujūh."
+      "note": "Ḥajj: ability is no condition (sharṭ) of its settling in the dhimma «على أظهر الروايتين», only of performing it himself. Making up differs: the aṣḥāb require the possibility of performance (no feeding for one who died still excused), and for vows (nadhr, «المنذورات») two wujūh."
     }
   ]
 }

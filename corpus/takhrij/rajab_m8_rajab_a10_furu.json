@@ -12,7 +12,7 @@
     "distinguished": false
    },
    "expected": true,
-   "note": "Divorcing one of his wives unspecified: «منع من وطء زوجاته حتى يميز بالقرعة على الصحيح». The barred one is unspecified, so he is barred from all until she is singled out. How she is singled out (by lot «على الصحيح», or by his designation in another riwāya) is a follow-on, not a dispute on the bar."
+   "note": "Divorcing («طلق») one of his wives unspecified: «منع من وطء زوجاته حتى يميز بالقرعة على الصحيح». The barred one is unspecified, so he is barred from all until she is singled out. How she is singled out (by lot «على الصحيح», or by his designation in another riwāya) is a follow-on, not a dispute on the bar."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f002",
@@ -67,7 +67,7 @@
     "distinguished": false
    },
    "expected": true,
-   "note": "Impure vessels confused with pure ones: «يمنع من الطهارة بواحدة منها حتى يتبين على الظاهر», with no dispute reported."
+   "note": "Impure vessels (najis, carrying najāsa) confused with pure ones: «يمنع من الطهارة بواحدة منها حتى يتبين على الظاهر», with no dispute reported."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f007",
@@ -78,7 +78,7 @@
     "distinguished": false
    },
    "expected": true,
-   "note": "Swearing by divorce not to eat a date that then got mixed into dates: «فإنه يمنع من أكل تمرة منه حتى يعلم عين التمرة». That he is not judged to have broken the oath by eating one («وإن كنا لا نحكم عليه بالحنث بأكل واحدة») is a separate question; the bar is the leading ruling."
+   "note": "Swearing by divorce («حلف بالطلاق») not to eat a date that then got mixed into dates: «فإنه يمنع من أكل تمرة منه حتى يعلم عين التمرة». That he is not judged to have broken the oath by eating one («وإن كنا لا نحكم عليه بالحنث بأكل واحدة») is a separate question; the bar is the leading ruling."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f008",
@@ -89,7 +89,7 @@
     "distinguished": false
    },
    "expected": true,
-   "note": "Swearing by the divorce of his wives not to have intercourse with one of them, intending one unspecified: «فإنه يمنع من الوطء حتى يميزها بالقرعة وقيل بتعيينه». The dispute is only over how she is singled out."
+   "note": "Swearing by the divorce of his wives («حلف بطلاق زوجاته») not to have intercourse with one of them, intending one unspecified: «فإنه يمنع من الوطء حتى يميزها بالقرعة وقيل بتعيينه». The dispute is only over how she is singled out."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f009",
@@ -184,7 +184,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Swearing to his four wives «والله لا وطئتكن», on the view that part of the act does not break the oath: the oath bars only the act that completes the combination, so before three the intercourse of each is not barred and he is not yet an ʾīlāʾ-swearer. al-Inṣāf (v09:p180): «لم يصر موليا حتى يطأ ثلاثا، فحينئذ يصير موليا من الرابعة، على الصحيح من المذهب»; on the madhhab side."
+   "note": "Swearing (yamīn) to his four wives «والله لا وطئتكن», on the view that part of the act does not break the oath: the oath bars only the act that completes the combination, so before three the intercourse of each is not barred and he is not yet an ʾīlāʾ-swearer. al-Inṣāf (v09:p180): «لم يصر موليا حتى يطأ ثلاثا، فحينئذ يصير موليا من الرابعة، على الصحيح من المذهب»; on the madhhab side."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f014",
@@ -236,7 +236,7 @@
     "has_precedence": false
    },
    "expected": true,
-   "note": "A convert with a mother and daughter, neither consummated: «فالمذهب أنه ينفسخ نكاح الأم وحدها … ويثبت نكاح البنت نص عليه … واتفق الأصحاب عليه». The item annotated is the mother's marriage, over which the daughter's has precedence. al-Qāḍī's «ولو لم يكن صحيحا فيها كان له أن يختار» is conditional on another premise. The riwāya of Abū Ṭālib (both forbidden) is carried on consummation. Neither is a dispute on these facts."
+   "note": "A convert with a mother and daughter, neither consummated: «فالمذهب أنه ينفسخ نكاح الأم وحدها … ويثبت نكاح البنت نص عليه … واتفق الأصحاب عليه». The item annotated is the mother's marriage, over which the daughter's has precedence. al-Qāḍī's «ولو لم يكن صحيحا فيها كان له أن يختار» rests on another premise. The riwāya of Abū Ṭālib (both forbidden) is carried on consummation. Neither is a dispute on these facts."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f017",
@@ -288,7 +288,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Marrying a free woman and a slave-woman in one contract while lacking the condition for marrying slave-women: «فإنه يبطل نكاح الأمة وحدها على الأصح ; لأن الحرة تمتاز عليهما بصفة ورود نكاحها عليها مثل هذه الحال ولا عكس». The item annotated is the free woman's marriage, which has precedence. No later treatment of this exact case found: al-Inṣāf and Kashshāf treat the combination only where the conditions hold (valid). The madhhab side is taken from Ibn Rajab's own «على الأصح». The record goes on to the qāʿida's third kind («لا وطئت إحداكن»; «لا وطئت واحدة منكن فالمذهب الصحيح أنه يعم … وهو قول القاضي والأصحاب», against Abū Bakr's reported ʾīlāʾ from one unspecified). That is the common-amount reading's output, kept in this note."
+   "note": "Marrying a free woman and a slave-woman in one contract while lacking the condition (sharṭ) for marrying slave-women: «فإنه يبطل نكاح الأمة وحدها على الأصح ; لأن الحرة تمتاز عليهما بصفة ورود نكاحها عليها مثل هذه الحال ولا عكس». The item annotated is the free woman's marriage, which has precedence. No later treatment of this exact case found: al-Inṣāf and Kashshāf treat the combination only where the conditions hold (valid). The madhhab side is taken from Ibn Rajab's own «على الأصح». The record goes on to the qāʿida's third kind («لا وطئت إحداكن»; «لا وطئت واحدة منكن فالمذهب الصحيح أنه يعم … وهو قول القاضي والأصحاب», against Abū Bakr's reported ʾīlāʾ from one unspecified). That is the common-amount reading's output, kept in this note."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f020",
@@ -309,7 +309,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "«إن خرجتي من الدار مرة بغير إذني فأنت طالق»: what is barred is one going out without leave, an indefinite under the condition, the amount common to every going out. «وإن أطلق فقال القاضي في خلافه تتقيد يمينه بمرة واحدة … وخالفه أبو الخطاب وابن عقيل في خلافهما وهو الحق». al-Inṣāf (v09:p098) on the cognate «إذا خرجت بغير إذني … ثم أذن لها فخرجت، ثم خرجت بغير إذنه: طلقت»: «هذا المذهب»; on the madhhab side."
+   "note": "«إن خرجتي من الدار مرة بغير إذني فأنت طالق»: what is barred is one going out without leave, an indefinite under the condition («النكرة في الشرط»), the amount common to every going out. «وإن أطلق فقال القاضي في خلافه تتقيد يمينه بمرة واحدة … وخالفه أبو الخطاب وابن عقيل في خلافهما وهو الحق». al-Inṣāf (v09:p098) on the cognate «إذا خرجت بغير إذني … ثم أذن لها فخرجت، ثم خرجت بغير إذنه: طلقت»: «هذا المذهب»; on the madhhab side."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f000",
@@ -330,7 +330,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "On the view that deliberate killing obliges one of two things: the heirs claim in qasāma and the one claimed against declines the oaths: «فهل يلزمه الدية على روايتين». Declining establishes the diya but not retaliation, so the statement does not establish the diya. al-Inṣāf (v10:p149): «إحداهما: تلزمهم الدية. وهو المذهب», and Taṣḥīḥ al-Furūʿ: «وهو الصحيح». Off the madhhab; ledger entry. Candidate farq: declining is a judgment by default against the one who declines, not a proof of one alternative."
+   "note": "On the view that deliberate killing obliges one of two things: the heirs claim in qasāma and the one claimed against declines the oaths (nukūl, «فنكل», from the yamīn of the claim): «فهل يلزمه الدية على روايتين». Declining establishes the diya but not retaliation, so the statement does not establish the diya. al-Inṣāf (v10:p149): «إحداهما: تلزمهم الدية. وهو المذهب», and Taṣḥīḥ al-Furūʿ: «وهو الصحيح». Off the madhhab; ledger entry. Candidate farq: declining is a judgment by default against the one who declines, not a proof of one alternative."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f001",
@@ -351,7 +351,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Claiming a deliberate wound and bringing one man and two women: «فهل تلزمه ديتها على روايتين والصحيح فيها عدم وجوب الدية لئلا يلزم أن يجب بالقتل الدية عينا». That proof does not establish retaliation, the cause. al-Inṣāf (v12:p087), on the cognate of deliberate killing: «وإذا شهد بقتل العمد رجل وامرأتان: لم يثبت قصاص ولا دية، هذا المذهب مطلقا، وعليه الأصحاب»; on the madhhab side."
+   "note": "Claiming a deliberate wound and bringing one man and two women: «فهل تلزمه ديتها على روايتين والصحيح فيها عدم وجوب الدية لئلا يلزم أن يجب بالقتل الدية عينا». That proof does not establish retaliation, the original of which the diya is the substitute: «إن قلنا أن موجب القتل القصاص عينا فالدية بدل». al-Inṣāf (v12:p087), on the cognate of deliberate killing: «وإذا شهد بقتل العمد رجل وامرأتان: لم يثبت قصاص ولا دية، هذا المذهب مطلقا، وعليه الأصحاب»; on the madhhab side."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f002",

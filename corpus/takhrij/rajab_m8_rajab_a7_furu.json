@@ -84,7 +84,7 @@
           "ruling": false
         },
         {
-          "who": "the riwāya that one rakʿa suffices, the least voluntary prayer",
+          "who": "the riwāya that one rakʿa suffices, the least voluntary (taṭawwuʿ) prayer",
           "ruling": true
         }
       ],
@@ -102,7 +102,7 @@
       "expected": false,
       "positions": [
         {
-          "who": "al-Qāḍī: only a sound slave suffices, «حملا له على واجب الشرع»",
+          "who": "al-Qāḍī: only a slave free of defects suffices, «حملا له على واجب الشرع»",
           "ruling": false
         },
         {
@@ -111,7 +111,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "One who vows to free a slave: «لم يجزئه إلا سليمة ذكره القاضي حملا له على واجب الشرع ويحتمل أن يجزئه ما يقع عليه الاسم كالوصية», Ibn Rajab adding that al-Qāḍī conceded the bequest though Aḥmad's naṣṣ there too requires a sound slave. The reading is al-Qāḍī's. al-Inṣāf (v11:p150): «فإن نذر رقبة: فهي التي تجزئ، عن الواجب»; the Muntahā (v05:p260): «وإن نذر رقبة فما يجزي عن واجب». On the madhhab side."
+      "note": "One who vows to free a slave: «لم يجزئه إلا سليمة ذكره القاضي حملا له على واجب الشرع ويحتمل أن يجزئه ما يقع عليه الاسم كالوصية», Ibn Rajab adding that al-Qāḍī conceded the bequest though Aḥmad's naṣṣ there too requires a slave free of defects («سليمة»). The reading is al-Qāḍī's. al-Inṣāf (v11:p150): «فإن نذر رقبة: فهي التي تجزئ، عن الواجب»; the Muntahā (v05:p260): «وإن نذر رقبة فما يجزي عن واجب». On the madhhab side."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f001",
@@ -174,7 +174,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "Expiating an oath by feeding five poor and clothing five: «فإنه يجزئ على المشهور وفيه وجه مذكور في شرح الهداية في زكاة الفطر». Both halves are counted in the ten poor of the kaffāra; the reading has it suffice. al-Inṣāf (v11:p040): «لو أطعم خمسة، وكسا خمسة: أجزأه. على الصحيح من المذهب. وعليه الأصحاب», adding that half a slave with the feeding of five does not suffice (no common unit, as the reading has it). On the madhhab side."
+      "note": "Expiating an oath (yamīn, «كفر يمينه») by feeding five poor and clothing five: «فإنه يجزئ على المشهور وفيه وجه مذكور في شرح الهداية في زكاة الفطر». Both halves are counted in the ten poor of the kaffāra; the reading has it suffice. al-Inṣāf (v11:p040): «لو أطعم خمسة، وكسا خمسة: أجزأه. على الصحيح من المذهب. وعليه الأصحاب», adding that half a slave with the feeding of five does not suffice (no common unit, as the reading has it). On the madhhab side."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f004",
@@ -237,7 +237,7 @@
         "souls_drawn": true
       },
       "expected": true,
-      "note": "One who flees zakat before the year is out by reducing the niṣāb or taking it out of his ownership: «تجب عليه الزكاة». The reduction is a forbidden evasion of an obligation, of what souls are drawn to; the reading voids it. Follow-on: one who spends most of his wealth on what bears no zakat (land, ornaments), «فهل ينزل منزلة الفار على وجهين؟»."
+      "note": "One who flees zakat before the year is out by reducing the niṣāb or taking it out of his ownership: «تجب عليه الزكاة». The reduction is a forbidden evasion of an obligation (wujūb of the zakāt), of what souls are drawn to; the reading cancels it (ilghāʾ, «ألغى ذلك السبب»). Follow-on: one who spends most of his wealth on what bears no zakat (land, ornaments), «فهل ينزل منزلة الفار على وجهين؟»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f002",
@@ -248,7 +248,7 @@
         "souls_drawn": true
       },
       "expected": true,
-      "note": "One who divorces in his last illness: «لا يقطع طلاقه حق الزوجة من إرثها منه»; the reading voids the divorce's effect on her inheritance. Follow-on: «إلا أن تنتفي التهم بسؤال الزوجة ونحوه ففيه روايتان»."
+      "note": "One who divorces in his last illness: «لا يقطع طلاقه حق الزوجة من إرثها منه»; the reading cancels (ilghāʾ) the divorce's effect on her inheritance. Follow-on: «إلا أن تنتفي التهم بسؤال الزوجة ونحوه ففيه روايتان»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f003",
@@ -314,7 +314,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "One drunk on wine by choice «يجعل كالصاحي في أقواله وأفعاله فيما عليه في المشهور من المذهب بخلاف من سكر ببنج أو نحوه». The drunkenness that would drop his liabilities is voided. al-Inṣāf (v08:p434): «إحداهن: أنه مؤاخذ بها، فهو كالصاحي فيها. وهو المذهب», quoting this qāʿida; on his divorce (v08:p433) «إحداهما: يقع. وهو المذهب». On the madhhab side."
+      "note": "One drunk on wine by choice «يجعل كالصاحي في أقواله وأفعاله فيما عليه في المشهور من المذهب بخلاف من سكر ببنج أو نحوه». The drunkenness that would drop his liabilities is cancelled (ilghāʾ). al-Inṣāf (v08:p434): «إحداهن: أنه مؤاخذ بها، فهو كالصاحي فيها. وهو المذهب», quoting this qāʿida; on his divorce (ṭalāq; v08:p433) «إحداهما: يقع. وهو المذهب». On the madhhab side."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f006",
@@ -325,7 +325,7 @@
         "souls_drawn": false
       },
       "expected": false,
-      "note": "One who strikes his head and goes mad: «فإنه لا يقع طلاقه على المنصوص ; لأن ذلك مما لا تدعو النفوس إليه بل في الطبع وازع عنه». The cause is forbidden but not of what souls are drawn to, so it is not voided and the madness has its effect. «على المنصوص» names the naṣṣ without stating a contrary position, so no ikhtilāf is recorded. Follow-on: «وكذلك لا يجب عليه قضاء الصلاة إذا جن في هذه الحالة على الصحيح», cited in al-Inṣāf (v01:p394)."
+      "note": "One who strikes his head and goes mad: «فإنه لا يقع طلاقه على المنصوص ; لأن ذلك مما لا تدعو النفوس إليه بل في الطبع وازع عنه». The cause (sabab) is forbidden but not of what souls are drawn to, so it is not voided and the madness has its effect. «على المنصوص» names the naṣṣ without stating a contrary position, so no ikhtilāf is recorded. Follow-on: «وكذلك لا يجب عليه قضاء الصلاة إذا جن في هذه الحالة على الصحيح», cited in al-Inṣāf (v01:p394)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f007",
@@ -338,7 +338,7 @@
       "expected": true,
       "positions": [
         {
-          "who": "«على المذهب الصحيح»: making wine into vinegar gives neither lawfulness nor purity",
+          "who": "«على المذهب الصحيح»: making wine into vinegar gives neither lawfulness nor purity (ṭahāra)",
           "ruling": true
         },
         {
@@ -358,7 +358,7 @@
         "souls_drawn": true
       },
       "expected": true,
-      "note": "The muḥrim's slaughter of game «لا يبيحه بالكلية», and the slaughter by one not in iḥrām for a muḥrim does not make it lawful to that muḥrim. The reading voids it. Follow-ons: its lawfulness to other muḥrims, «وجهان»; the usurper's and thief's slaughter is no counter-case (it gives them no permission, the animal remaining the owner's), though «أبا بكر التزم تحريمه مطلقا وحكاه رواية». The record then opens the attached qāʿida («من تعجل حقه أو ما أبيح له قبل وقته على وجه محرم عوقب بحرمانه») and its farʿ of the one who steals from the spoils, «يحرم أسهمه منها على إحدى الروايتين» (a farʿ of hastened_right_forfeited, carried in this record but not its leading ruling)."
+      "note": "The muḥrim's slaughter of game «لا يبيحه بالكلية», and the slaughter by one not in iḥrām for a muḥrim does not make it lawful to that muḥrim. The reading cancels it (ilghāʾ). Follow-ons: its lawfulness to other muḥrims, «وجهان»; the usurper's and thief's slaughter is no counter-case (it gives them no permission, the animal remaining the owner's), though «أبا بكر التزم تحريمه مطلقا وحكاه رواية». The record then opens the attached qāʿida («من تعجل حقه أو ما أبيح له قبل وقته على وجه محرم عوقب بحرمانه») and its farʿ of the one who steals from the spoils, «يحرم أسهمه منها على إحدى الروايتين» (a farʿ of hastened_right_forfeited, carried in this record but not its leading ruling)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f009",

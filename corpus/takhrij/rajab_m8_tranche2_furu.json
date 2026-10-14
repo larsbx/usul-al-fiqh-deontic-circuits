@@ -22,7 +22,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "Expiation fast begun, then a slave found: the madhhab does not oblige the switch, «لأن ذلك رخصة»; a wajh obliges it, since expiations carry an aggravation that excludes an absolute concession."
+      "note": "Kaffāra fast begun, then a slave found: the madhhab does not oblige the switch, «لأن ذلك رخصة»; a wajh obliges it, since kaffārāt carry an aggravation that excludes an absolute concession."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f001",
@@ -34,7 +34,7 @@
       "expected": true,
       "positions": [
         {
-          "who": "riwāya: the prayer is void",
+          "who": "riwāya: the prayer is bāṭil",
           "ruling": true
         },
         {
@@ -43,7 +43,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "Tayammum, water found during the prayer: two riwāyas on invalidity; Ibn Rajab: tayammum is between the two kinds (a general concession, and a necessity-purification). Read as necessity; the riwāya against invalidity reads it as concession."
+      "note": "Tayammum, water found during the prayer: two riwāyas on its buṭlān («بطلانها»: whether it is bāṭil); Ibn Rajab: tayammum is between the two kinds (a general concession, and a necessity-ṭahāra). Read as necessity; the riwāya against its being bāṭil reads it as concession."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f002",
@@ -64,7 +64,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "Marriage to a slave woman by one fearing ʿanat without means, then one condition lapses: is the marriage dissolved? Two riwāyas; marriage has a tinge of worship. No madhhab marked."
+      "note": "Marriage to a slave woman by one fearing ʿanat without means, then one of the two shurūṭ lapses («زال أحد الشرطين», sharṭ of the permission): is the marriage dissolved of itself (infisākh: «فهل ينفسخ نكاحه»)? Two riwāyas; marriage has a tinge of worship. No madhhab marked."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f000",
@@ -126,7 +126,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "Oath forced to repel wrong from another: binding (al-Qāḍī, Sharḥ al-Madhhab); not binding (Abū al-Khaṭṭāb), «وهو الأظهر». Ibn Rajab prefers the view against his own qāʿida here."
+      "note": "Oath forced to repel wrong from another (yamīn: «انعقدت يمينه»): binding (al-Qāḍī, Sharḥ al-Madhhab); not binding (Abū al-Khaṭṭāb), «وهو الأظهر». Ibn Rajab prefers the view against his own qāʿida here."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f000",
@@ -252,7 +252,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "Husband and a stranger push the wife and take her virginity, then divorce before consummation: Aḥmad (Muhannā) — the stranger owes half the arsh, since that taking was «غير مأذون فيه»; al-Mughnī derives another wajh."
+      "note": "Husband and a stranger push the wife and take her virginity, then divorce (ṭalāq: «ثم طلقها») before consummation: Aḥmad (Muhannā) — the stranger owes half the arsh, since that taking was «غير مأذون فيه»; al-Mughnī derives another wajh."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f000",
@@ -275,7 +275,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "Acting in another's property, then it appears he had permitted it: valid or not? Two wujūh. No madhhab marked. Reconciled (jamʿ, the condition in fact): the unknown condition is the owner's permission, which held, so the disposal stands (al-Inṣāf: «على الصحيح»; Taṣḥīḥ al-Furūʿ)."
+      "note": "Acting in another's property, then it appears he had permitted it: valid or not? Two wujūh. No madhhab marked. Reconciled (jamʿ, the condition in fact): the unknown condition (sharṭ) is the owner's permission, which held, so the disposal stands (al-Inṣāf: «على الصحيح»; Taṣḥīḥ al-Furūʿ)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f001",
@@ -298,7 +298,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "«If you go out without my permission you are divorced»; he permits, she goes out not knowing: divorced, per the ashhar and the manṣūṣ: the unknown permission does not count."
+      "note": "«If you go out without my permission you are divorced» («فأنت طالق»); he permits, she goes out not knowing: divorced, per the ashhar and the manṣūṣ: the unknown permission does not count."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f002",
@@ -321,7 +321,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "Seller permits the buyer to act within the option period; he acts after the permission, before learning of it: derived from the wujūh on agency; al-Qāḍī: not effective. No madhhab marked. Reconciled (jamʿ, the condition in fact): the permission held, as with the agent who acts before learning of his agency (Kashshāf, al-Iqnāʿ)."
+      "note": "Seller permits the buyer to act within the option period; he acts after the permission, before learning of it: derived from the wujūh on agency; al-Qāḍī: not effective. No madhhab marked. Reconciled (jamʿ, the condition (sharṭ) in fact): the permission held, as with the agent who acts before learning of his agency (Kashshāf, al-Iqnāʿ)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f003",
@@ -358,7 +358,7 @@
       "expected": true,
       "positions": [
         {
-          "who": "wajh: invalid",
+          "who": "wajh: not ṣaḥīḥ",
           "ruling": false
         },
         {
@@ -367,7 +367,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "Sells his father's property without permission, then the father had already died, he being the sole heir: two wujūh (or riwāyas); Ibn Rajab's analogy to the jester leans toward invalidity. No madhhab marked. Reconciled (jamʿ, the condition in fact): his ownership by inheritance held, so the sale stands (al-Inṣāf: «على الصحيح»; al-Iqnāʿ; Kashshāf)."
+      "note": "Sells his father's property without permission, then the father had already died, he being the sole heir: two wujūh (or riwāyas); Ibn Rajab's analogy to the jester leans toward invalidity. No madhhab marked. Reconciled (jamʿ, the condition (sharṭ) in fact): his ownership by inheritance held, so the sale stands (al-Inṣāf: «على الصحيح»; al-Iqnāʿ; Kashshāf)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f001",
@@ -390,7 +390,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "Divorces a woman he takes for a stranger, and she is his wife: two riwāyas (Abū Bakr builds them on whether explicit words need intention). No madhhab marked."
+      "note": "Divorces (ṭalāq) a woman he takes for a stranger, and she is his wife: two riwāyas (Abū Bakr builds them on whether explicit words need intention). No madhhab marked."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f002",
@@ -436,7 +436,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "Releases a debt he believes is not owed, and it was: the two wujūh. No madhhab marked. Reconciled (jamʿ, the condition in fact): the debt was his, so the release stands (al-Muntahā, al-Iqnāʿ; al-Inṣāf: «فكذا هنا»)."
+      "note": "Releases a debt he believes is not owed, and it was: the two wujūh. No madhhab marked. Reconciled (jamʿ, the condition (sharṭ) in fact): the debt was his, so the release stands (al-Muntahā, al-Iqnāʿ; al-Inṣāf: «فكذا هنا»)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f004",
@@ -478,7 +478,7 @@
       "expected": false,
       "positions": [
         {
-          "who": "al-Mughnī: invalid",
+          "who": "al-Mughnī: not ṣaḥīḥ",
           "ruling": false
         },
         {
@@ -487,7 +487,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "The missing man's wife remarries before the required period, then he had died (or divorced her) long enough before: al-Mughnī: invalid. No madhhab marked."
+      "note": "The missing man's wife remarries before the required period, then he had died (or divorced her: «أو أنه كان طلقها») long enough before: al-Mughnī: not ṣaḥīḥ. No madhhab marked."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f006",
@@ -524,7 +524,7 @@
       "expected": false,
       "positions": [
         {
-          "who": "wajh: invalid",
+          "who": "wajh: not ṣaḥīḥ",
           "ruling": false
         },
         {
@@ -533,7 +533,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "Buys a runaway believing it unobtainable, and it was obtainable: two wujūh (he believed the validity condition absent), and al-Mughnī's third. No madhhab marked. The transaction farq does not reach this farʿ: the unknown condition is deliverability, not his authority, and the muʿtamad voids the runaway's sale outright."
+      "note": "Buys a runaway believing it unobtainable, and it was obtainable: two wujūh (he believed the validity sharṭ absent: «لاعتقاده فقد شرط الصحة»), and al-Mughnī's third. No madhhab marked. The transaction farq does not reach this farʿ: the unknown condition is deliverability, not his authority, and the muʿtamad voids the runaway's sale outright."
     }
   ]
 }
