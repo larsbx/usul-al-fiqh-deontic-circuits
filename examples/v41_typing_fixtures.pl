@@ -110,6 +110,7 @@ sit(s_q97, owner_known, true).
 sit(s_q97, despaired, true).
 fixture_expectation(q97_despair_is_106, query(holds(s_q97, despair, true)), expect_true).
 fixture_expectation(q97_known_owner_not_majhul, query(holds(s_q97, unknown, _)), expect_false).
+fixture_premise(q97_known_owner_not_majhul, query(holds(s_q97, despair, true))).
 
 % 97's unknown owner, despaired of, chains through 98 and 106 to Q20.
 sit(s_q97_unknown, owner_known, false).
@@ -120,6 +121,7 @@ fixture_expectation(q97_unknown_owner_is_unidentified, query(holds(s_q97_unknown
 sit(s_q98, owner_unknown, true).
 fixture_expectation(q98_owner_is_106_unknown, query(holds(s_q98, unknown, true)), expect_true).
 fixture_expectation(q106_unknown_not_q98, query(holds(s_luqata, owner_unknown, _)), expect_false).
+fixture_premise(q106_unknown_not_q98, query(sit(s_luqata, unknown, true))).
 
 % Identified: doubt_in_condition's ghalaba is the ẓāhir reaching ẓann.
 sit(s_doubt, needs_firm, true).
