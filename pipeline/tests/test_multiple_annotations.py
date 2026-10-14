@@ -162,3 +162,75 @@ def test_typed_coverage_is_per_unit_and_shared_by_its_cases():
     for r in rep["cases_detail"]:
         k, n = cov.get(r["case"], {}).get(r["encoder"], (0, 1))
         assert r["settled"] == round(k / n, 4)
+
+
+# --- invariant 5 under scrutiny: home annotations exactly once, co-annotations beside them ---
+#
+# A farʿ keeps exactly one home annotation (method §4, invariant 5). A co-annotation records that
+# a second encoder derives the same stated ruling, on the farʿ's own words (``basis``). It lives
+# apart (``corpus/takhrij/co``), so every far-keyed consumer still sees one case per farʿ.
+
+FAR = "w.r.openiti_w.q001.f000"
+TEXT = "إذا أقر الشهود أنهم تعمدوا الكذب فالضمان عليهم دون الحاكم"
+RECORDS = [{"id": FAR, "record_type": "far", "qaida": "w.r.openiti_w.q001", "case_ar": TEXT}]
+OTHER = "luqata"
+
+
+def _co(**kw) -> dict:
+    facts = dict(zip(takhrij.ENCODERS[OTHER]["facts"], (v[0] for v in takhrij.ENCODERS[OTHER]["facts"].values())))
+    return {"far": FAR, "encoder": OTHER, "class": "derivable", "facts": facts,
+            "expected": takhrij.ENCODERS[OTHER]["py"](facts), "basis": "أقر الشهود أنهم تعمدوا الكذب", **kw}
+
+
+HOME = [_case(FAR, _facts())]
+
+
+def test_a_well_founded_co_annotation_passes():
+    assert takhrij.co_errors([_co()], HOME, RECORDS) == []
+    milestoned = [{**RECORDS[0], "case_ar": TEXT.replace("أنهم ", "أنهم ms283 ")}]
+    assert takhrij.co_errors([_co()], HOME, milestoned) == []
+
+
+@pytest.mark.parametrize("co, home, err", [
+    (_co(), [], "no home annotation"),
+    (_co(encoder=ENC, facts=_facts(), expected=takhrij.ENCODERS[ENC]["py"](_facts())), HOME, "repeats its home encoder"),
+    (_co(basis="نص ليس في الفرع"), HOME, "basis is not the farʿ's own words"),
+    (_co(basis=None), HOME, "basis is not the farʿ's own words"),
+    (_co(**{"class": "missing_rule"}, needs=["rule:x"]), HOME, "a co-annotation records a derivation"),
+    (_co(), [_case(FAR, _facts(), "missing_rule", needs=["rule:x"])], "its home is a gap"),
+])
+def test_an_unfounded_co_annotation_is_refused(co, home, err):
+    assert any(err in e for e in takhrij.co_errors([co], home, RECORDS)), takhrij.co_errors([co], home, RECORDS)
+
+
+def test_a_co_annotation_is_once_per_encoder_and_checked_by_the_kernel():
+    assert any("annotated twice" in e for e in takhrij.co_errors([_co(), _co()], HOME, RECORDS))
+    wrong = _co(expected=next(o for o in takhrij.ENCODERS[OTHER]["out"] if o != _co()["expected"]))
+    assert any("class contradicts the kernel" in e for e in takhrij.co_errors([wrong], HOME, RECORDS))
+
+
+def test_co_annotations_never_enter_the_home_bank(tmp_path):
+    """Invariant 5 is counted on home annotations: loading the bank does not read co/."""
+    (tmp_path / "takhrij" / "co").mkdir(parents=True)
+    suite = lambda cs: json.dumps({"suite": "s", "status": "candidate", "provenance": "p", "cases": cs})
+    (tmp_path / "takhrij" / "a.json").write_text(suite(HOME))
+    (tmp_path / "takhrij" / "co" / "b.json").write_text(suite([_co()]))
+    assert [c["far"] for c in takhrij.load(tmp_path)] == [FAR]
+    assert [c["encoder"] for c in takhrij.load_co(tmp_path)] == [OTHER]
+    assert takhrij.annotation_errors(takhrij.load(tmp_path) * 2, RECORDS)[0] == f"{FAR}: annotated twice"
+
+
+def test_co_annotations_are_guarded_apart_and_leave_coverage_alone():
+    lean = takhrij.lean_file(takhrij.keyed(co := [_co()]), source=str(takhrij.CO))
+    assert _guards(lean) == [f"{FAR}@{OTHER}"]
+    plain, with_co = takhrij.report(HOME), takhrij.report(HOME, co)
+    assert {k: v for k, v in with_co.items() if k != "co_annotations"} == plain
+    assert with_co["co_annotations"] == {"total": 1, "per_encoder": {OTHER: 1}}
+
+
+def test_committed_co_annotations_are_founded_and_generated():
+    co, cases = takhrij.load_co(CORPUS), takhrij.load(CORPUS)
+    records = [json.loads(line) for f in (CORPUS / "records").glob("*.jsonl") for line in f.read_text().splitlines()]
+    assert takhrij.co_errors(co, cases, records) == []
+    assert (LEAN / "TakhrijCo.lean").read_text() == takhrij.lean_file(takhrij.keyed(co), source=str(takhrij.CO))
+    assert json.loads((CORPUS / "takhrij/report.json").read_text())["co_annotations"]["total"] == len(co)

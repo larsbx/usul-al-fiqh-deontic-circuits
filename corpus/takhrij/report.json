@@ -573,5 +573,12 @@
   "substitute_refusal_judged_by_original": {
    "derivable": 1
   }
+ },
+ "co_annotations": {
+  "total": 2,
+  "per_encoder": {
+   "error_actor_liable": 1,
+   "mubashara_tasabbub": 1
+  }
  }
 }
