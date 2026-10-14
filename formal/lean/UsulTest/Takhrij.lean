@@ -1038,7 +1038,7 @@ import Usul
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f005 (derivable)
 #guard (Usul.Refinements.naflValid true false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000 (genuine_ikhtilaf)
-#guard (Usul.Refinements.attachTo true) == .each
+#guard (Usul.Readings.Concordance.attachOnCertainty true true) == .neither
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f001 (genuine_ikhtilaf)
 #guard (Usul.Refinements.attachTo false) == .abstain
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f002 (genuine_ikhtilaf)

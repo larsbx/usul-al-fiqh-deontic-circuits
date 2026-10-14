@@ -1166,4 +1166,14 @@ def cancelOnExistenceValid : Typed Situation (Bool) where
   run x1 := Usul.Readings.RajabA12.cancelOnExistenceValid x1
   proj_embed := fun _ => rfl
 
+/-! ## Integration: the jamʿ of Ibn Rajab 14's two readings -/
+
+/-- `cause_on_certainty` reads `Qaida.Rajab14Certainty`, which extends Ibn Rajab 14's type. -/
+def causeOnCertainty : Typed Situation (Usul.Refinements.Attach) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.harmless, ← s.eachCertain)
+  embed | (x1, x2) => { harmless := some x1, eachCertain := some x2 }
+  run | (x1, x2) => Usul.Readings.Concordance.attachOnCertainty x1 x2
+  proj_embed := fun _ => rfl
+
 end Usul.Typing

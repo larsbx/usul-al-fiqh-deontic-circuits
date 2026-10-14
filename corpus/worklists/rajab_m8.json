@@ -38,7 +38,7 @@
     "takhrij/rajab_m8_tranche5_furu.json": "86fb9cb8bb333c3471549026a83e4ea2518f74e9fedcd1f29791c17aec341d49",
     "takhrij/rajab_m8_tranche6_furu.json": "5d96085ee1eac50dbb03a8bd88f9c3caa85aba239a89227b3ff3857abd8b691f",
     "takhrij/rajab_m8_tranche7_furu.json": "1a11a26a6765c2e4abd93daf2bc7cb45f84aeeea5e79c6a8b6e1b3da83c6ec76",
-    "takhrij/rajab_m8_tranche8_furu.json": "d2aa66661999fbab58ac908d9a8dcd63882c40738e964fbba60421c19ab0c76e",
+    "takhrij/rajab_m8_tranche8_furu.json": "3931bd2b0415488c1f33f27da28d1f164c8355cbd2029d084eac7d374e8f05ee",
     "takhrij/rajab_m8_tranche9_furu.json": "65d72a6ad2b11ccfee124b7f7ea6449a412ceb430322e62567395335abb6c8e0",
     "takhrij/sadi_furu.json": "56908d9b18679ddcef3dacd3d059781e5ac3478b9f8911d7d1b2a9a3eff42d47"
   },
@@ -298,11 +298,11 @@
       "segmentation_error": 1
     },
     "coverage": 0.946,
-    "madhhab_coverage": 0.703,
+    "madhhab_coverage": 0.704,
     "encoding_error": 0,
-    "ikhtilaf_matching_madhhab": 238,
+    "ikhtilaf_matching_madhhab": 239,
     "gaps_open": 43,
-    "revisited": 37
+    "revisited": 38
   },
   "tranche3_report": {
     "total": 29,
@@ -534,7 +534,8 @@
       "annotated_furu": 3,
       "pending_furu": [],
       "home_encoders": [
-        "cause_from_one_of_two"
+        "cause_from_one_of_two",
+        "cause_on_certainty"
       ]
     },
     {
@@ -546,6 +547,7 @@
       "annotated_furu": 4,
       "pending_furu": [],
       "home_encoders": [
+        "cause_on_certainty",
         "each_on_its_asl"
       ]
     },
