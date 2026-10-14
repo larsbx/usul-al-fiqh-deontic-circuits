@@ -127,10 +127,12 @@ Precedents:
       - Modern texts rarely settle whether a direct act arose from another's cause: `arising_from_sabab` was stated twice in 53 answers.
     - **The shards' encoders typed (2026-10-14).** The parallel shards RajabA1–A12 added 55 encoders on Ibn Rajab 53–118, typed the same way: 38 new qāʿida types, Lean-inferred fact types, statements quoted from the records. That makes 160 encoders over 124 types.
       - Six names collide with unrelated qawāʿid's fields and are qualified by qāʿida number: `bindingQ69`, `necessityQ71`, `bindingContractQ72`, `negligentQ95`, `harmlessQ99`, `financialQ110`.
-      - Three look like notions already typed and await review, like the five decided earlier:
-        - Ibn Rajab 95's negligence against 6's negligence in inquiry;
-        - 97's `despaired` against 106's `despair`;
-        - 98's `owner_unknown` against 106's `unknown`.
+      - Three looked like notions already typed. They were decided from the texts (2026-10-14), by the rule of the five before: identify only where one type builds on the other, otherwise relate in the texts' direction.
+        - **95's negligence is 6's, both ways.** 95 explains its «لتفريطه» as «تركه الفحص عن حاله تفريط»; 6 has «فرط بترك البحث والتحقيق». Both concern one who acted on a presumption later shown wrong. Neither qāʿida builds on the other, so the fields stay apart, related at both values (`q95IsInquiry…`, `inquiryIsQ95…`).
+        - **97 ⇒ 106 on despair.** 97 rests its despair of the absent owner's return on the mafqūd, whose life is presumed (106: «وإن كان الأصل بقاءه»), and its furūʿ say «وأيس من الاطلاع عليه». 106's despair is wider (the mustaḥāḍa's blood), so the relation runs one way, at both values (`despairedIsDespair`, `hopedIsNotDespair`).
+        - **97's known owner is 98's owner not unknown, and 98 ⇒ 106 on the unknown.** 97 says «وإن لم يعرف مالكه بل جهل», 98 «إذا جهل ربه», so the two are related both ways, negated. 98's unknown owner is an instance of 106's unknown, as 106.f002 «لجهالة ربها» is. 106's unknown is wider, so the relation is one-way and only when unknown (`unknownOwnerIsMajhul`). 97's despaired-of owner is known, so 106's unknown stays open (`q97_despair_is_106`).
+
+        Theorems `q95_negligence_is_inquiry`, `q97_despair_is_106`, `q97_unknown_owner_is_unidentified` and `q98_owner_is_106_unknown` are proved by `decide`; the Prolog fixtures mirror them. Recall on both sets is unchanged.
       - Typed routing on the IslamQA set is unchanged. The lexical baseline, refitted over 160 encoders, falls to 0.00 / 0.24 / 0.33.
     - **Classical units (2026-10-14).** Fold 0 of the routing index's held-out split (139 Ibn Rajab and Ibn al-Laḥḥām furūʿ) was typed blind under opaque ids, because record ids name the qāʿida: 187 situations, 210 fields (`corpus/typing/rajab_fold0_situations.json`). The lexical baseline is the index refitted without that fold. `typed_routing.TestSet` carries both sets; each report gives typed, lexical, prior and hybrid recall on the same cases.
 
@@ -140,7 +142,7 @@ Precedents:
       | modern fatāwā (123) | 0.30 / 0.69 / 0.69 | 0.00 / 0.24 / 0.33 | **0.52 / 0.69 / 0.74** |
 
       Types and words fail on different cases. On classical text, words alone are strong in-domain (the profiles were fitted on the same book) but types decide where a farʿ settles its qāʿida's facts. On modern text, words carry nothing and types carry the routing. The routing rule for lane B is therefore the hybrid: encoders by the share of their fields a situation settles, then lexical rank. It beats either alone on both sets.
-    - **Next:** route the unsegmented R2 units (mutūn bābs, Masāʾil entries) by the hybrid to feed lane B; type the three look-alikes once decided. Then repeat T3 on classical units (mutūn bābs, Masāʾil entries), where the routing index's lexical profiles were strong.
+    - **Next:** route the unsegmented R2 units (mutūn bābs, Masāʾil entries) by the hybrid to feed lane B; Then repeat T3 on classical units (mutūn bābs, Masāʾil entries), where the routing index's lexical profiles were strong.
 - **P0.6 done, as a ranker:** `python -m usul_corpus routing` writes `corpus/routing/index.json`. Profiles are derived from the bank's evidence, never written: each of the 100 encoders gets the TF-IDF centroid of the records its annotated cases rest on plus its own qawāʿid, with words found in over 10 % of the evidence dropped. Per encoder the index gives its case support, its lexicon (the heaviest profile words) and its nearest matn units.
   - **Held-out cases** (5 folds by record-id hash, 461 cases): the true encoder is in the top 1 / 5 / 10 for 0.61 / 0.86 / 0.91 of cases, against 0.08 / 0.29 / 0.37 for ranking encoders by frequency.
   - **Out-of-domain** (`corpus/routing/ood.json`, the 123 IslamQA tranche cases, title and question): 0.09 / 0.29 / 0.37. The stopword share was chosen on the held-out folds, not on this set.

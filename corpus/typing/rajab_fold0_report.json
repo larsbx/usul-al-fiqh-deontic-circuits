@@ -36,7 +36,7 @@
     "10": 0.3165
   },
   "encoders_applying_per_answer": 0.58,
-  "encoders_touched_per_answer": 1.18,
+  "encoders_touched_per_answer": 1.19,
   "by_encoder": {
     "advance_after_cause": {
       "cases": 1,
@@ -1082,7 +1082,7 @@
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f008",
       "encoder": "error_actor_liable",
       "settled": 0.2,
-      "rank": 2
+      "rank": 3
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f010",

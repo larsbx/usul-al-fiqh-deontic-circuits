@@ -18,8 +18,24 @@ follows from it.
 | `majhulIsUnidentified` | 106: unknown and despaired of | Q20 |
 | `knownIsIdentified`, `hopedIsIdentified` | 106: not unknown, or not despaired of | Q20 |
 | `consumedIsMajhul` | Ibn Rajab 22 «العين المنغمرة … إذا لم يظهر أثرها» | 106: unknown and despaired of |
+| `q95IsInquiry…`, `inquiryIsQ95…` | 95 «تركه الفحص عن حاله تفريط» | 6 «فرط بترك البحث والتحقيق», and back |
+| `despairedIsDespair`, `hopedIsNotDespair` | 97 «آيس من قدومه» / «يرجى قدومه» | 106 «إذا يئس من الوقوف عليه» |
+| `knownOwner…`, `unknownOwner…` | 97 «يعرف مالكه» / «لم يعرف مالكه بل جهل» | 98 «إذا جهل ربه», and back |
+| `unknownOwnerIsMajhul` | 98 «إذا جهل ربه» | 106: unknown |
 
 The fifth is what the kernel already assumes in `Refinements.istihlak` (`istihlak_agrees`).
+
+The shards' three look-alikes (2026-10-14), decided from the texts:
+* 95's negligence is 6's: 95 explains its «لتفريطه» as «تركه الفحص عن حاله تفريط», and 6 as «فرط بترك
+  البحث والتحقيق», each of one who acted on a presumption later shown wrong. Neither qāʿida builds
+  on the other, so the fields stay apart and are related both ways, at both values.
+* 97's despair of the absent owner's return is 106's despair: 97 rests it on the mafqūd, whose
+  life is presumed («وإن كان الأصل بقاءه»), and its furūʿ say «وأيس من الاطلاع عليه», 106's
+  «يئس من الوقوف عليه». 106's despair is wider (the mustaḥāḍa's blood), so only 97 ⇒ 106.
+* 97's known owner is 98's owner not unknown: 97 says «وإن لم يعرف مالكه بل جهل», 98 «إذا جهل ربه»;
+  both ways, negated. 98's unknown owner is an instance of 106's unknown, as 106.f002 «لجهالة ربها»
+  is; 106's unknown is wider (an heir, a time), so only 98 ⇒ 106, and only when unknown. 97 does not
+  settle 106's unknown: its despaired-of owner is known.
 -/
 
 namespace Usul.Typing
@@ -39,6 +55,11 @@ def unknown : BoolField := ⟨(·.unknown), fun s v => { s with unknown := v }�
 def despair : BoolField := ⟨(·.despair), fun s v => { s with despair := v }⟩
 def ownerIdentifiable : BoolField := ⟨(·.ownerIdentifiable), fun s v => { s with ownerIdentifiable := v }⟩
 def consumed : BoolField := ⟨(·.consumed), fun s v => { s with consumed := v }⟩
+def negligentQ95 : BoolField := ⟨(·.negligentQ95), fun s v => { s with negligentQ95 := v }⟩
+def negligentInquiry : BoolField := ⟨(·.negligentInquiry), fun s v => { s with negligentInquiry := v }⟩
+def despaired : BoolField := ⟨(·.despaired), fun s v => { s with despaired := v }⟩
+def ownerKnown : BoolField := ⟨(·.ownerKnown), fun s v => { s with ownerKnown := v }⟩
+def ownerUnknown : BoolField := ⟨(·.ownerUnknown), fun s v => { s with ownerUnknown := v }⟩
 end Field
 
 /-- When every premise holds, each consequent follows. -/
@@ -67,9 +88,35 @@ def hopedIsIdentified : Implication := ⟨[(despair, false)], [(ownerIdentifiabl
 open Field in
 def consumedIsMajhul : Implication := ⟨[(consumed, true)], [(unknown, true), (despair, true)]⟩
 
+open Field in
+def q95IsInquiryNegligent : Implication := ⟨[(negligentQ95, true)], [(negligentInquiry, true)]⟩
+open Field in
+def q95IsInquiryDiligent : Implication := ⟨[(negligentQ95, false)], [(negligentInquiry, false)]⟩
+open Field in
+def inquiryIsQ95Negligent : Implication := ⟨[(negligentInquiry, true)], [(negligentQ95, true)]⟩
+open Field in
+def inquiryIsQ95Diligent : Implication := ⟨[(negligentInquiry, false)], [(negligentQ95, false)]⟩
+open Field in
+def despairedIsDespair : Implication := ⟨[(despaired, true)], [(despair, true)]⟩
+open Field in
+def hopedIsNotDespair : Implication := ⟨[(despaired, false)], [(despair, false)]⟩
+open Field in
+def knownOwnerNotUnknown : Implication := ⟨[(ownerKnown, true)], [(ownerUnknown, false)]⟩
+open Field in
+def knownOwnerDenied : Implication := ⟨[(ownerKnown, false)], [(ownerUnknown, true)]⟩
+open Field in
+def unknownOwnerNotKnown : Implication := ⟨[(ownerUnknown, true)], [(ownerKnown, false)]⟩
+open Field in
+def unknownOwnerDenied : Implication := ⟨[(ownerUnknown, false)], [(ownerKnown, true)]⟩
+open Field in
+def unknownOwnerIsMajhul : Implication := ⟨[(ownerUnknown, true)], [(unknown, true)]⟩
+
 def implications : List Implication :=
   [rukhsaNeedsFirm, yearDespair, unidentifiedIsMajhul, majhulIsUnidentified, knownIsIdentified,
-   hopedIsIdentified, consumedIsMajhul]
+   hopedIsIdentified, consumedIsMajhul, q95IsInquiryNegligent, q95IsInquiryDiligent,
+   inquiryIsQ95Negligent, inquiryIsQ95Diligent, despairedIsDespair, hopedIsNotDespair,
+   knownOwnerNotUnknown, knownOwnerDenied, unknownOwnerNotKnown, unknownOwnerDenied,
+   unknownOwnerIsMajhul]
 
 /-- Every relation, repeated until chains settle (one round per relation suffices). -/
 def saturate (s : Situation) : Situation :=
@@ -104,5 +151,31 @@ theorem istihlak_agrees (h : Bool) :
     unknownAsNonexistent.judge (saturate { consumed := some true, hardship := some h }) =
       istihlak.judge { consumed := some true } := by
   cases h <;> decide
+
+/-! ## The shards' look-alikes, at work -/
+
+/-- 95.f008 «يضمن لتفريطه» settles 6's negligence in inquiry; 6.f004's diligent qibla-seeker
+settles 95's. -/
+theorem q95_negligence_is_inquiry :
+    (saturate { negligentQ95 := some true }).negligentInquiry = some true ∧
+      (saturate { negligentInquiry := some false }).negligentQ95 = some false := by decide
+
+/-- 97's absent owner despaired of, with his identity known, is 106's despair and nothing more:
+106's unknown stays open. -/
+theorem q97_despair_is_106 :
+    (saturate { ownerKnown := some true, despaired := some true }).despair = some true ∧
+      (saturate { ownerKnown := some true, despaired := some true }).unknown = none := by decide
+
+/-- 97's unknown owner, despaired of, chains through 98 and 106 to Q20: the right-holder cannot
+be identified. -/
+theorem q97_unknown_owner_is_unidentified :
+    (saturate { ownerKnown := some false, despaired := some true }).ownerIdentifiable = some false := by
+  decide
+
+/-- 98's handover by description and 106 meet on one situation: an unknown owner settles 106's
+unknown, never the converse. -/
+theorem q98_owner_is_106_unknown :
+    (saturate { ownerUnknown := some true }).unknown = some true ∧
+      (saturate { unknown := some true }).ownerUnknown = none := by decide
 
 end Usul.Typing

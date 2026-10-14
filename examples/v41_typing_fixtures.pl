@@ -99,6 +99,28 @@ fixture_expectation(consumed_is_unidentified, query(holds(s_consumed, owner_iden
 sit(s_rukhsa, rukhsa_needs_certainty, true).
 fixture_expectation(rukhsa_settles_firmness, query(holds(s_rukhsa, needs_firm, true)), expect_true).
 
+% The shards' look-alikes: 95's negligence is 6's, both ways.
+sit(s_q95, negligent_q95, true).
+fixture_expectation(q95_negligence_is_inquiry, query(holds(s_q95, negligent_inquiry, true)), expect_true).
+sit(s_q6, negligent_inquiry, false).
+fixture_expectation(q6_diligence_is_q95, query(holds(s_q6, negligent_q95, false)), expect_true).
+
+% 97's despair is 106's; its known owner leaves 106's unknown open.
+sit(s_q97, owner_known, true).
+sit(s_q97, despaired, true).
+fixture_expectation(q97_despair_is_106, query(holds(s_q97, despair, true)), expect_true).
+fixture_expectation(q97_known_owner_not_majhul, query(holds(s_q97, unknown, _)), expect_false).
+
+% 97's unknown owner, despaired of, chains through 98 and 106 to Q20.
+sit(s_q97_unknown, owner_known, false).
+sit(s_q97_unknown, despaired, true).
+fixture_expectation(q97_unknown_owner_is_unidentified, query(holds(s_q97_unknown, owner_identifiable, false)), expect_true).
+
+% 98's unknown owner is 106's unknown, never the converse.
+sit(s_q98, owner_unknown, true).
+fixture_expectation(q98_owner_is_106_unknown, query(holds(s_q98, unknown, true)), expect_true).
+fixture_expectation(q106_unknown_not_q98, query(holds(s_luqata, owner_unknown, _)), expect_false).
+
 % Identified: doubt_in_condition's ghalaba is the ẓāhir reaching ẓann.
 sit(s_doubt, needs_firm, true).
 sit(s_doubt, zahir, zann).

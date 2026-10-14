@@ -864,9 +864,20 @@ encoder_type(worship_ruled_from_start, 'Bool').
 encoder_reads(worship_ruled_from_start, 1, condition_within_time).
 
 implies(consumed_is_majhul, [consumed-true], [unknown-true, despair-true]).
+implies(despaired_is_despair, [despaired-true], [despair-true]).
 implies(hoped_is_identified, [despair-false], [owner_identifiable-true]).
+implies(hoped_is_not_despair, [despaired-false], [despair-false]).
+implies(inquiry_is_q95_diligent, [negligent_inquiry-false], [negligent_q95-false]).
+implies(inquiry_is_q95_negligent, [negligent_inquiry-true], [negligent_q95-true]).
 implies(known_is_identified, [unknown-false], [owner_identifiable-true]).
+implies(known_owner_denied, [owner_known-false], [owner_unknown-true]).
+implies(known_owner_not_unknown, [owner_known-true], [owner_unknown-false]).
 implies(majhul_is_unidentified, [unknown-true, despair-true], [owner_identifiable-false]).
+implies(q95_is_inquiry_diligent, [negligent_q95-false], [negligent_inquiry-false]).
+implies(q95_is_inquiry_negligent, [negligent_q95-true], [negligent_inquiry-true]).
 implies(rukhsa_needs_firm, [rukhsa_needs_certainty-true], [needs_firm-true]).
 implies(unidentified_is_majhul, [owner_identifiable-false], [unknown-true, despair-true]).
+implies(unknown_owner_denied, [owner_unknown-false], [owner_known-true]).
+implies(unknown_owner_is_majhul, [owner_unknown-true], [unknown-true]).
+implies(unknown_owner_not_known, [owner_unknown-true], [owner_known-false]).
 implies(year_despair, [year_passed-true], [despair-true]).
