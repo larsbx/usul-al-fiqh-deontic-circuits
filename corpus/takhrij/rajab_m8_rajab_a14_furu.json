@@ -1,0 +1,462 @@
+{
+  "suite": "m8_rajab_rajab_a14",
+  "status": "candidate",
+  "provenance": "Shard rajab-a14 (lane A): every farʿ record of Ibn Rajab's qawāʿid 121, 123 and 126, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA14). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f001",
+      "encoder": "urf_specialises_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "urfi_haqiqa": false,
+        "only_qualified": false,
+        "mostly_qualified": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "Abū al-Khaṭṭāb: he breaks it only by an egg that leaves its layer in its life (chosen in eggs by al-Muwaffaq and al-Shāriḥ per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "al-Qāḍī: he breaks it by fish eggs and the rest (the madhhab per al-Inṣāf; al-Muntahā)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The oath not to eat eggs, «فهو على الوجهين أيضا»: eggs other than the hen's are named «بيض» but are hardly meant by it unqualified, the qāʿida's third class. The reading specialises the oath by custom, with Abū al-Khaṭṭāb. al-Inṣāf (v11:p092) puts al-Qāḍī's ḥinth by fish and locust eggs «وهو المذهب», and al-Muntahā states it: off the madhhab side, so a ledger entry. Follow-on: Ṣāḥib al-Kāfī's account that the specialisation comes from attaching eating to heads and eggs, so that any ruling other than eating would be general «بغير خلاف», which Ibn Rajab answers «وفيه نظر»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f002",
+      "encoder": "urf_specialises_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "urfi_haqiqa": false,
+        "only_qualified": false,
+        "mostly_qualified": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "Ibn Abī Mūsā: no ḥinth with an unqualified oath, only by bringing fish in by intention",
+          "ruling": false
+        },
+        {
+          "who": "al-Khiraqī, as al-Qāḍī reads Aḥmad's «هو على نيته»: ḥinth (the madhhab per al-Inṣāf; al-Muntahā)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The oath not to eat meat, then fish: «ففيه وجهان أيضا». Fish is meat in name, but hardly meant by it unqualified; the reading has no ḥinth without intention, with Ibn Abī Mūsā («ولعله ظاهر كلام أحمد»). Aḥmad's «هو على نيته» is read by al-Qāḍī as ḥinth with an unqualified oath, al-Khiraqī's view. al-Inṣāf (v11:p091): «حنث عند الخرقي) . وهو المذهب، تقديما للشرع واللغة»; al-Muntahā states it: off the madhhab side, so a ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f003",
+      "encoder": "urf_specialises_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "urfi_haqiqa": false,
+        "only_qualified": false,
+        "mostly_qualified": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the wajh the aṣḥāb extracted (and al-Majd from the naṣṣ on the vow of one's property): no ḥinth",
+          "ruling": false
+        },
+        {
+          "who": "Aḥmad's naṣṣ in Muhannā's riwāya: ḥinth, not referred to intention (the madhhab per al-Inṣāf)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The oath not to enter a house, then a mosque or a bath-house: the name reaches them («يسمى بيتا بالكتاب والسنة») but hardly unqualified. The reading specialises by custom: no ḥinth, the wajh the aṣḥāb extracted (and al-Majd from the naṣṣ on the vow of one's property). Aḥmad's naṣṣ (Muhannā) is ḥinth, not referred to intention; al-Inṣāf (v11:p093): «حنث عند أصحابنا) . وهو المذهب. نص عليه»: off the madhhab side, so a ledger entry. Follow-ons: Ibn Rajab sets this naṣṣ against Ṣāliḥ's in fish meat, so two riwāyas by takhrīj; the same khilāf in the oath not to ride, then riding a ship."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f004",
+      "encoder": "urf_specialises_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "urfi_haqiqa": false,
+        "only_qualified": false,
+        "mostly_qualified": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī: only the Persian rayḥān, the one custom names so (with al-Muwaffaq and al-Shāriḥ per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "Abū al-Khaṭṭāb and others: ḥinth by every plant with a sweet smell (the madhhab per al-Inṣāf)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The oath not to smell rayḥān, then smelling another sweet-smelling plant (the rose and violet, as al-Inṣāf frames it): al-Qāḍī confines it to the Persian, «لأنه المسمى بالريحان عرفا»; Abū al-Khaṭṭāb has ḥinth by every fragrant plant, «لأنه ريحان حقيقة», each reversing his view on heads and eggs. The reading specialises by custom, with al-Qāḍī. al-Inṣāf (v11:p091): «وقال بعض أصحابنا: يحنث. وهو المذهب»; al-Furūʿ «حنث في الأصح»: off the madhhab side, so a ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f005",
+      "encoder": "urf_specialises_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "urfi_haqiqa": false,
+        "only_qualified": false,
+        "mostly_qualified": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "a wajh in al-Targhīb: no ḥinth by wild cattle",
+          "ruling": false
+        },
+        {
+          "who": "a wajh in al-Targhīb: ḥinth by wild cattle",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The oath not to eat beef, then the meat of wild cattle: «على وجهين» in al-Targhīb, extracted from the two wujūh on riding a wild donkey. The reading specialises by custom: no ḥinth. No later work treats the oath; Ibn Rajab ties it to zakāt in wild cattle («يقرب أخذه من مسألة وجوب الزكاة في بقر الوحش»), which al-Inṣāf makes due «وهي المذهب» (wild cattle within «البقر»), while in the cognate of the donkey before one praying al-Inṣāf takes the domestic only «وهو الصحيح». No madhhab side is marked for the oath, so matches_madhhab is false and the case enters the ledger. Follow-on: ḥinth in the riding question is weaker, «لأن الركوب إنما يراد به الحمار الأهلي»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f006",
+      "encoder": "urf_specialises_general",
+      "class": "derivable",
+      "facts": {
+        "urfi_haqiqa": false,
+        "only_qualified": false,
+        "mostly_qualified": true
+      },
+      "expected": false,
+      "note": "The oath not to speak, then reciting or glorifying: «المشهور أنه لا يحنث، وتوقف أحمد في رواية». The reading specialises by custom: recitation and dhikr are not what speech means unqualified. al-Inṣāf (v11:p093): «لم يحنث) . هذا المذهب. وعليه الأصحاب»; Kashshāf: «لأن الكلام في العرف لا يطلق إلا على كلام الآدميين». Aḥmad's tawaqquf is no ruling, so no second position."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f007",
+      "encoder": "urf_specialises_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "urfi_haqiqa": false,
+        "only_qualified": false,
+        "mostly_qualified": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī's extracted riwāya (from Muhannā's on part-shares): the mukātabs are not included without intention",
+          "ruling": false
+        },
+        {
+          "who": "al-Khiraqī, Abū Bakr, and Aḥmad's naṣṣ on the mukātab (Ibn Manṣūr): all are included (al-Inṣāf «بلا نزاع»)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "An oath (yamīn) by, or an immediate manumission of, «عبيده»: al-Khiraqī and Abū Bakr include the qinn, the mudabbar, the mukātab, the umm walad and his part-shares (al-Qāḍī adds his trading slave's slaves), and Aḥmad has it in the mukātab (Ibn Manṣūr). al-Qāḍī extracts a riwāya that the mukātabs do not enter without intention, from Muhannā's on part-shares, «ومأخذه أنهم خارجون من مسمى الرقيق والمملوك عرفا». The reading, specialising by custom, takes the extracted riwāya. al-Inṣāf (v07:p426): mudabbars, mukātabs and umm walads are freed «بلا نزاع في ذلك», part-shares «على الصحيح من المذهب»: off the madhhab side, so a ledger entry. Follow-on: Ibn Rajab's iḥtimāl that the umm walad is likewise outside, «ولو قيل إن أم الولد كذلك لم يبعد»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f008",
+      "encoder": "urf_specialises_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "urfi_haqiqa": false,
+        "only_qualified": false,
+        "mostly_qualified": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "Aḥmad's naṣṣ (al-Athram): by his intention and the outlet of his oath, the property his custom names; al-Qāḍī: the vower's custom",
+          "ruling": false
+        },
+        {
+          "who": "the aṣḥāb: a third of all his property (al-Qāḍī «والمذهب التعميم»; al-Zarkashī per al-Inṣāf: the majority)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "An oath by, or a vow of piety of, the alms of one's property: «فإنه يتصدق بثلث جميع ماله عند الأصحاب». Asked whether the third is of coin or of all he owns, Aḥmad (al-Athram): «ذلك على قدر ما نوى وعلى قدر مخرج يمينه، والأموال عند الناس تختلف», the bedouin calling camels and sheep property; al-Qāḍī: without intention, the vower's custom. The leading ruling here is the reach of «ماله» with no intention; the reading, specialising by custom, takes Aḥmad's naṣṣ. al-Qāḍī calls the generality «المذهب», and al-Inṣāf (v11:p128) gives al-Zarkashī «ظاهر كلام الأكثر: أنه يعم كل مال إن لم يكن له نية»: off the madhhab side, so a ledger entry. Follow-on: Ṣāliḥ's riwāya that his slave-girl is not in «مالي في المساكين», which al-Qāḍī takes as the slave-woman outside «المال»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f009",
+      "encoder": "urf_specialises_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "urfi_haqiqa": false,
+        "only_qualified": false,
+        "mostly_qualified": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the ẓāhir of Aḥmad (Ibn al-Zāghūnī, from al-Ḥarbī's riwāya): no ḥinth",
+          "ruling": false
+        },
+        {
+          "who": "the aṣḥāb: ḥinth (the madhhab per al-Inṣāf)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The oath that he has no property, while he has property that bears no zakāt: «فقال الأصحاب يحنث وأخذوه من المسألة التي قبلها»; Ibn al-Zāghūnī: «وظاهر كلام أحمد أنه لا يحنث», from al-Ḥarbī's «نحن لا نعد الدار والثياب والخادم مالا». The reading, specialising by custom, takes no ḥinth. al-Inṣāf (v11:p088): «حنث) . هذا المذهب», with a riwāya that he breaks it only by coin: off the madhhab side, so a ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f000",
+      "encoder": "shar_specialises_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "shar_excludes": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the sounder riwāya: forbidden days and Ramaḍān are outside the vow (the madhhab per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "the other riwāya: they enter it, so he makes up and expiates (kaffāra)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The vow to fast all time: «لم يدخل في ذلك ما يحرم صومه من أيام السنة أو وما يجب صومه شرعا كرمضان على أصح الروايتين». The sharʿ sets those days apart; the reading has them outside the vow. al-Inṣāf (v11:p131, v11:p133): the vow of all time takes the ruling of a specified year, in which Ramaḍān does not enter «على الصحيح من المذهب. وعليه الأصحاب», nor the two ʿĪds, «وعنه: يدخل في نذره. فيقضي، ويكفر». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f001",
+      "encoder": "shar_specialises_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "shar_excludes": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "one wajh: forbidden meat is outside the oath (al-Mardāwī «وهو قوي», reported from Ibn Abī Mūsā)",
+          "ruling": false
+        },
+        {
+          "who": "the other wajh: it is within it, ḥinth (Taṣḥīḥ al-Furūʿ «وهو الصحيح»; al-Muntahā; Kashshāf)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The oath not to eat meat, then forbidden meat: «لم يتناول يمينه اللحم المحرم على أحد الوجهين». The sharʿ sets forbidden meat apart; the reading has it outside the oath. Taṣḥīḥ al-Furūʿ (v11:p032): «أحدهما: يحنث وهو الصحيح», with al-Kāfī, al-Mughnī and al-Sharḥ; al-Muntahā: «حنث بأكل سمك ولحم محرم»; Kashshāf: «ولو كان محرما ك) لحم (خنزير وميتة»: off the madhhab side, so a ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f002",
+      "encoder": "shar_specialises_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "shar_excludes": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the ẓāhir of Ibn Abī Mūsā and Ibn ʿAqīl (and al-Mustawʿib per al-Furūʿ): the heirs are outside",
+          "ruling": false
+        },
+        {
+          "who": "the ẓāhir of al-Targhīb: they are within it (al-Furūʿ «والأصح»; Kashshāf)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A bequest to his relatives: «لم يدخل فيهم الوارثون في أحد الوجهين. حكاهما في الترغيب وظاهر كلامه الدخول، وظاهر كلام ابن أبي موسى وابن عقيل خلافه». The sharʿ sets the heir apart from bequests; the reading has the heirs outside. al-Furūʿ (v07:p383): «والأصح دخول وارثه في وصيته لقرابته، خلافا للمستوعب», carried in Kashshāf: off the madhhab side, so a ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f003",
+      "encoder": "shar_specialises_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "shar_excludes": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "one wajh: the agency does not reach it, so it does not take effect (al-Nāẓim's taṣḥīḥ)",
+          "ruling": false
+        },
+        {
+          "who": "the other wajh: it reaches it, forbidden but effective (al-Iqnāʿ, Kashshāf; the ẓāhir of many aṣḥāb per Taṣḥīḥ al-Furūʿ)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Deputing another to divorce his wife: «فهل يدخل فيه الطلاق المحرم؟ على وجهين ذكرهما ابن عقيل وصاحب المحرر». The sharʿ sets the forbidden divorce apart; the reading has it outside the agency, so his divorce at a time of bidʿa does not take effect. Taṣḥīḥ al-Furūʿ (v09:p026): «أحدهما: يحرم ويقع ... وهو ظاهر كلام كثير من الأصحاب», the other «صححه الناظم، وهو قوي، لأنه ليس وكيلا فيه»; al-Iqnāʿ: «فإن فعل وقع كالموكل»: off the madhhab side, so a ledger entry. The prohibition itself is common ground: the khilāf is whether the agency reaches it."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f004",
+      "encoder": "shar_specialises_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "shar_excludes": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the madhhab (Ibn Rajab «والأول المذهب»; al-Inṣāf): the Friday outing is outside the vowed continuity, so any mosque will do",
+          "ruling": false
+        },
+        {
+          "who": "the wajh in al-Intiṣār: the continuity reaches it, so the iʿtikāf must be in the Friday mosque",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The vow (nadhr) of a month's continuous iʿtikāf: he may keep it outside the Friday mosque and go out to the Friday prayer «لاستثنائها بالشرع», «وفيه وجه لا يجوز الاعتكاف في غير الجامع، والأول المذهب». The sharʿ excepts the Friday prayer from the vowed continuity; the reading has the continuity not reach it. al-Inṣāf (v03:p366): «ولا يلزم فيه، وهذا المذهب، وعليه الأصحاب، وذكر في الانتصار وجها بلزوم الاعتكاف فيه، فإن اعتكف في غيره بطل لخروجه إليها». On the madhhab side. Follow-on: neither Ramaḍān nor the days of prohibition break a continuous fast."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f001",
+      "encoder": "unintended_instance_covered",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "rare_or_barred": true,
+        "intended": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the riwāya Ibn ʿAqīl extracts (from Aḥmad's tawaqquf): she is not divorced",
+          "ruling": false
+        },
+        {
+          "who": "Aḥmad's naṣṣ: she is divorced (al-Inṣāf: «على نصه. وقطع به جماعة»)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Told «تزوجت على امرأتك», he says «كل امرأة طالق» and then «لم أردها»: the addressed wife is the instance his answer is not ordinarily made to reach, and he disavows her. «وقد سبق أن أحمد نص تارة على أنها تطلق وتوقف فيها أخرى. وخرجها ابن عقيل على روايتين». The reading has her outside, the extracted riwāya. al-Inṣāf (v11:p058): «تطلق على نصه. وقطع به جماعة، أخذا بالأعم من لفظ وسبب»: off the madhhab side, so a ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f002",
+      "encoder": "unintended_instance_covered",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "rare_or_barred": true,
+        "intended": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "Aḥmad's naṣṣ (Ḥarb): one ḥadd, not apostasy (carried in al-Furūʿ and Kashshāf)",
+          "ruling": false
+        },
+        {
+          "who": "Shaykh al-Islām Ibn Taymiyya's extracted wajh: apostasy",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Slandering his forefathers up to Adam and Eve: «فنص أحمد في رواية حرب أن عليه حدا واحدا ولم يجعله ردة عن الإسلام ; لأنه لم يقصد دخول الأنبياء في ذلك ولا يقصد ذلك مسلم», and Shaykh al-Islām extracts a wajh that it is apostasy. The prophets are the instance no Muslim means; the reading has them outside, so one ḥadd and no apostasy. al-Furūʿ (v10:p090) and Kashshāf (v06:p114) carry Ḥarb's riwāya of a single ḥadd and record no apostasy; with no taṣḥīḥ of the wajh, the naṣṣ is the madhhab side, and the reading is on it."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f003",
+      "encoder": "unintended_instance_covered",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "rare_or_barred": true,
+        "intended": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī: not an oath (the madhhab per al-Inṣāf; Kashshāf)",
+          "ruling": false
+        },
+        {
+          "who": "al-Majd: an oath, since tawḥīd is within it",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Saying «عصيت الله فيما أمرني به»: is it an oath (yamīn)? al-Qāḍī: no, «لأن المشهور تخصيص المعاصي بالذنوب دون الكفر»; al-Majd: an oath, «لدخول التوحيد فيه». Disobedience in tawḥīd is the instance not ordinarily meant by the words; the reading has it outside, so no oath. al-Inṣāf (v11:p033): «فلا كفارة فيه) . هذا المذهب», al-Majd's view reported as his choice; Kashshāf has no expiation. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f004",
+      "encoder": "unintended_instance_covered",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "rare_or_barred": true,
+        "intended": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the riwāya Abū Bakr and Ibn Abī Mūsā report, which Ibn Rajab finds must be extracted: she is not freed",
+          "ruling": false
+        },
+        {
+          "who": "Aḥmad's naṣṣ (Ibn Hāniʾ and others): she is freed (carried in al-Inṣāf and al-Furūʿ; Kashshāf)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "He tells his slaves «أنتم أحرار», his umm walad among them unknown to him, and he did not mean her: «على روايتين حكاهما أبي بكر وابن أبي موسى», Aḥmad's naṣṣ (Ibn Hāniʾ) being that she is freed; Ibn Rajab adds that the majority's view in the case of the wife who answers for another «فيتعين تخريج رواية في أم الولد أنها لا تعتق». The reading has her outside. al-Inṣāf (v07:p427) and al-Furūʿ carry the naṣṣ that she is freed, and Kashshāf states it: off the madhhab side, so a ledger entry. Follow-on: the wife called who is answered by another (two riwāyas, and whether the answerer is divorced (ṭalāq) only outwardly), and al-Majd's farq from divorcing one he takes for a stranger."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f005",
+      "encoder": "unintended_instance_covered",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "rare_or_barred": true,
+        "intended": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "Abū Ṭālib's riwāya: no ḥinth (al-Furūʿ «على الأصح», carried in al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "Muhannā's riwāya: ḥinth, even with the man screened among them",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The oath not to greet someone, then greeting a group he is in, unaware of him and not meaning him: «فحكى الأصحاب في حنثه الروايتين»; Muhannā's riwāya ḥinth, Abū Ṭālib's: «وإن كان بين جماعة وهو لم يعلم به لم يحنث ; لأنه أراد الجماعة». The reading has him outside the greeting: no ḥinth. al-Inṣāf (v09:p115), from al-Muḥarrar and al-Furūʿ: «على روايتين، أصحهما لا يحنث»; al-Furūʿ: «لم يحنث هنا على الأصح». On the madhhab side. Follow-on: al-Qāḍī's reading of Abū Ṭālib's riwāya as exclusion by intention, which Ibn Rajab rejects."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f006",
+      "encoder": "unintended_instance_covered",
+      "class": "derivable",
+      "facts": {
+        "rare_or_barred": true,
+        "intended": false
+      },
+      "expected": false,
+      "note": "A Muslim's waqf or bequest to his kin or the people of his village, Muslims and kuffār among them: «لم يتناول الكفار حتى يصرح بدخولهم نص عليه في رواية حرب وأبي طالب». The kuffār are the instance a Muslim's gift is barred from meaning; not declared, they are outside. Follow-on, outside the leading ruling: with a single Muslim and the rest kuffār, «ففي الاقتصار عليه وجهان ; لأن حمل اللفظ العام على واحد بعيد جدا»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f007",
+      "encoder": "unintended_instance_covered",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "rare_or_barred": true,
+        "intended": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "one wajh: rare earnings are outside the turns, shared by the two (the madhhab per al-Inṣāf; al-Muntahā)",
+          "ruling": false
+        },
+        {
+          "who": "the other wajh: they enter the turns, his in whose turn they fall (al-Wajīz)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The part-free slave and his master divide his benefits and earnings by turns: «فهل يدخل فيها الأكساب النادرة كالركاز والهدية واللقطة أم لا؟ على وجهين». Rare earnings are the instance the turn-taking is not made to reach; the reading has them outside. al-Inṣāf (v06:p428): «لا تدخل في المهايأة، بل تكون بينه وبين سيده. وهو المذهب. صححه في التصحيح», «وكذا الحكم في النادر: من كسب المعتق بعضه، كالهبة، والهدية»; al-Muntahā: «وكذا كل نادر من كسب ... ولو أن بينهما مهايأة». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f008",
+      "encoder": "unintended_instance_covered",
+      "class": "derivable",
+      "facts": {
+        "rare_or_barred": false,
+        "intended": false
+      },
+      "expected": true,
+      "note": "«ما أحل الله علي حرام», with a wife and property, and «لم أرد زوجتي»: «فهو مظاهر، عليه كفارة الظهار نص عليه في رواية ابن منصور ; لأن الزوجة أشهر أفراد الحلال الذي يقصد تحريمه ... فلا يصح إخراجه من العموم بعدم إرادة دخوله، وإنما يصح إخراجه بإرادة عدم دخوله». The wife is the instance ordinarily meant, not a rare one, so his disavowal does not take her out. Follow-ons: without a wife it is an oath (yamīn) like any forbidding of the permitted; with wife and property, only the ẓihār expiation by the naṣṣ, Ibn ʿAqīl adding an oath's expiation for the property; Ibn Rajab's two takhrījs of the naṣṣ (property not ordinarily meant by forbidding, «فتكون المسألة حينئذ في صورة القاعدة»; or the merging of expiations)."
+    }
+  ]
+}

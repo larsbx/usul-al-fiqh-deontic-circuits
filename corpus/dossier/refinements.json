@@ -711,8 +711,13 @@
     },
     {
      "ref": "src:openiti-rajab-shamela21730/v01:p068",
-     "excerpt_ar": "الكتابة الفاسدة تضمن بالمسمى فإذا أدى ما سمى فيها حصل العتق ولم يلزمه ضمان قيمته ذكره أبو بكر وهو ظاهر كلام أحمد، واتفق الأصحاب على ذلك",
+     "excerpt_ar": "الكتابة الفاسدة تضمن بالمسمى فإذا أدى ما سمى فيها حصل العتق ولم يلزمه ضمان قيمته ذكره أبو بكر وهو ظاهر كلام أحمد، واتفق الأصحاب على ذلك لكن المتأخرون زعموا أن الكتابة الفاسدة تعليق بصفة فلا يؤثر فسادها ولا تحريمها كما لو قال لعبده إن أعطيتني خمرا فأنت حر فأعطاه عتق لوجود الصفة",
      "note": "The common outcome; no claim to resolve competing explanations."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p068",
+     "excerpt_ar": "وأما أبو بكر فعنده أن الكتابة عقد معاوضة أبدا وهو اختيار ابن عقيل وهو الأظهر ولا يقع العتق عنده بأداء المحرم لأن العقد لا ينعقد بعوض محرم بل هو عنده باطل.",
+     "note": "The following competing characterization and excluded prohibited-consideration branch; no adjudication added."
     }
    ],
    "conditions": [

@@ -564,7 +564,9 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `src:openiti-rajab-shamela21730/v01:p067`: Known madhhab amount basis.
   > المبيع والمعروف في المذهب ضمانه بالقيمة لا بالثمن المسمى
 - `src:openiti-rajab-shamela21730/v01:p068`: The common outcome; no claim to resolve competing explanations.
-  > الكتابة الفاسدة تضمن بالمسمى فإذا أدى ما سمى فيها حصل العتق ولم يلزمه ضمان قيمته ذكره أبو بكر وهو ظاهر كلام أحمد، واتفق الأصحاب على ذلك
+  > الكتابة الفاسدة تضمن بالمسمى فإذا أدى ما سمى فيها حصل العتق ولم يلزمه ضمان قيمته ذكره أبو بكر وهو ظاهر كلام أحمد، واتفق الأصحاب على ذلك لكن المتأخرون زعموا أن الكتابة الفاسدة تعليق بصفة فلا يؤثر فسادها ولا تحريمها كما لو قال لعبده إن أعطيتني خمرا فأنت حر فأعطاه عتق لوجود الصفة
+- `src:openiti-rajab-shamela21730/v01:p068`: The following competing characterization and excluded prohibited-consideration branch; no adjudication added.
+  > وأما أبو بكر فعنده أن الكتابة عقد معاوضة أبدا وهو اختيار ابن عقيل وهو الأظهر ولا يقع العتق عنده بأداء المحرم لأن العقد لا ينعقد بعوض محرم بل هو عنده باطل.
 
 **Rationale.** The source explicitly contrasts contract compensation in the selected nikah position with loss compensation for defective sale. The suite records the competing named/value positions. Muamalat.priceDue is reused after fixing that source fact, not as evidence for the fact itself. All readings and attributions await human review.
 
@@ -1098,6 +1100,40 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Lean:** `Usul.Refinements.annulsNonexistentIn`, `Usul.Refinements.annulsNonexistentIn_conservative`  
 **Conservative over the earlier reading:** `Usul.Refinements.annulsNonexistentIn_conservative`
+
+<a id="cause_on_certainty"></a>
+
+## A cause from one of two men: each alone is bound to nothing harmless when certain of his own state
+
+**Terms:** [al-sabab](../glossary.md#sabab), [al-yaqīn](../glossary.md#yaqin), [al-shakk](../glossary.md#shakk)  
+**Closes:** `rule:cause_on_certainty`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014`: Ibn Rajab, qāʿida 14: «فهل يلحق الحكم بكل منهما أو لا يلحق بواحد منهما شيء». The first riwāya on the two who find al-manī rests on each one's certainty: «لا يلزم واحدا منهما غسل ولا وضوء نظرا إلى أن كل واحد منهما متيقن للطهارة شاك في الحدث»; taken together, «فينظر إليهما مجتمعين في حكم يتعلق باجتماعهما».
+  > (القاعدة الرابعة عشر) : إذا وجد سبب إيجاب أو تحريم من أحد رجلين لا يعلم عينه منهما، فهل يلحق الحكم بكل منهما أو لا يلحق بواحد منهما شيء في المسألة خلاف ولها صور: (إحداها) إذا وجد اثنان منيا في ثوب ينامان فيه أو سمعا صوتا خارجا ولم يعلم من أيهما هو ففي المسألة روايتان (إحداهما) لا يلزم واحدا منهما غسل ولا وضوء نظرا إلى أن كل واحد منهما متيقن للطهارة شاك في الحدث. (والثانية) : يلزمهما الغسل والوضوء 
+
+**Conditions**
+
+1. a cause of obligation or prohibition from one of two, not known which
+2. each is certain of his own prior state and doubts only the breach
+3. the ruling is harmless (ṭahāra), not one that would cut a right (divorce, manumission)
+4. each is taken alone, not together in one ruling
+
+**Texts**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000`: The two riwāyas on the shared garment; the first on each one's certainty.
+  > إذا وجد اثنان منيا في ثوب ينامان فيه أو سمعا صوتا خارجا ولم يعلم من أيهما هو ففي المسألة روايتان (إحداهما) لا يلزم واحدا منهما غسل ولا وضوء نظرا إلى أن كل واحد منهما متيقن للطهارة شاك في الحدث. (والثانية) : يلزمهما الغسل والوضوء لأن الأصل زال يقينا في أحدهما فتعذر البقاء عليه وتعين الاحتياط ولم يلتفت إلى النظر في كل واحد بمفرده كثوبين أو إناءين نجس أحدهما.
+- `src:openiti-insaf-shamela21609/v01:p229`: al-Inṣāf: no ghusl, «على الصحيح من المذهب».
+  > ينام فيه هو وغيره، وكانا من أهل الاحتلام على الصحيح من المذهب، وعنه يجب.
+- `src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p080`: Sharḥ al-Muntahā, decisively: neither owes the ghusl (and neither follows the other in prayer: the joint ruling).
+  > إذا كان الثوب لا ينام فيه غيره ممن يحتلم. فإن كان كذلك فلا غسل على واحد
+
+**Rationale.** Two contributions read qāʿida 14 differently. The M8 reading (attachTo) takes Ibn Rajab's farq: binding both is harmless in ṭahāra, cuts a right in divorce. It therefore binds each in the shared-garment case, which the madhhab rejects: al-Inṣāf, al-Furūʿ and Sharḥ al-Muntahā give no ghusl to either, as the ledger's graded evidence for 14.f000 records. The other reading (oneOfTwoAttaches, tanāquḍ T-15) separates the two taken together from each alone, and puts each alone on his own aṣl (Q15). The jamʿ keeps both: each alone and certain of his own state is bound to nothing harmless, which is Q15 (q14_alone_is_q15); where a right would be cut each still abstains (Aḥmad's naṣṣ); taken together the certain cause attaches. The refinement is conservative over attachTo and departs only on the harmless case, to neither.
+
+**Lean:** `Usul.Readings.Concordance.attachOnCertainty`, `Usul.Readings.Concordance.attachOnCertainty_conservative`, `Usul.Readings.Concordance.attachOnCertainty_departs`, `Usul.Readings.Concordance.attachOnCertainty_abstains`, `Usul.Readings.Concordance.q14_alone_is_q15`, `Usul.Readings.Concordance.q14_together_attaches_alone_not`, `Usul.Readings.Concordance.q3_readings_agree`, `Usul.Readings.Concordance.q9_readings_agree`, `Usul.Readings.Concordance.validDespite_refines_q38`, `Usul.Readings.Concordance.q15_readings_agree`  
+**Conservative over the earlier reading:** `Usul.Readings.Concordance.attachOnCertainty_conservative`
 
 <a id="mubashara_tasabbub"></a>
 

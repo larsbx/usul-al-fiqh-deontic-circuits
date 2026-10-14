@@ -1,18 +1,18 @@
 {
- "total": 801,
+ "total": 881,
  "classes": {
-  "derivable": 324,
-  "genuine_ikhtilaf": 433,
+  "derivable": 355,
+  "genuine_ikhtilaf": 482,
   "missing_fact": 3,
   "missing_rule": 40,
   "segmentation_error": 1
  },
- "coverage": 0.946,
- "madhhab_coverage": 0.703,
+ "coverage": 0.951,
+ "madhhab_coverage": 0.707,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 238,
+ "ikhtilaf_matching_madhhab": 267,
  "gaps_open": 43,
- "revisited": 37,
+ "revisited": 38,
  "revisit_queue": [],
  "per_encoder": {
   "itlaf": {
@@ -254,7 +254,7 @@
    "genuine_ikhtilaf": 3
   },
   "cause_from_one_of_two": {
-   "genuine_ikhtilaf": 3
+   "genuine_ikhtilaf": 2
   },
   "each_on_its_asl": {
    "derivable": 3,
@@ -360,6 +360,9 @@
   "command_intended_usage": {
    "missing_rule": 1
   },
+  "cause_on_certainty": {
+   "genuine_ikhtilaf": 1
+  },
   "mubashara_tasabbub": {
    "derivable": 5,
    "genuine_ikhtilaf": 4
@@ -428,6 +431,64 @@
   "cancel_on_existence_valid": {
    "derivable": 3,
    "genuine_ikhtilaf": 3
+  },
+  "specific_singled_out": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 3
+  },
+  "takes_only_by_special": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 2
+  },
+  "entitlement_multiplies": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 1
+  },
+  "double_kinship_preferred": {
+   "genuine_ikhtilaf": 4
+  },
+  "custom_restricts_general": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 1
+  },
+  "cause_restricts_general": {
+   "genuine_ikhtilaf": 4
+  },
+  "urf_specialises_general": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 8
+  },
+  "shar_specialises_general": {
+   "genuine_ikhtilaf": 5
+  },
+  "unintended_instance_covered": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 6
+  },
+  "intention_shapes_wording": {
+   "derivable": 10,
+   "genuine_ikhtilaf": 5
+  },
+  "spread_follows_injury": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 3
+  },
+  "injury_state_measures": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 2
+  },
+  "hit_state_governs": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 4
+  },
+  "aqila_bears_across_change": {
+   "genuine_ikhtilaf": 1
+  },
+  "needed_item_is_surplus": {
+   "derivable": 6
+  },
+  "budh_capacity_is_wealth": {
+   "derivable": 1
   },
   "nafaqa_stipulated_in_contract": {
    "derivable": 3,

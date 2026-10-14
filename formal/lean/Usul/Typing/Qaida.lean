@@ -196,6 +196,12 @@ structure Rajab12 where
 structure Rajab14 where
   harmless : Option (Bool) := none
 
+/-- Ibn Rajab 14 on the first riwāya's own ground, «نظرا إلى أن كل واحد منهما متيقن للطهارة شاك في
+الحدث»: each man is certain of his own prior state and doubts only the breach (Q15: each on his
+aṣl). Read by `cause_on_certainty` (`Usul.Readings.Concordance`). -/
+structure Rajab14Certainty extends Rajab14 where
+  eachCertain : Option Bool := none
+
 /-- Ibn Rajab 15 «إذا استصحبنا أصلا وأعملنا ظاهرا في طهارة شيء أو حله أو حرمته وكان لازم ذلك تغير أصل آخر يجب استصحابه أو ترك العمل بظاهر آخر يجب إعماله لم يلتفت إلى ذلك اللازم على الصحيح، ولذلك صور: منها) إذا استيقظ من نومه فوجد …». Read by `each_on_its_asl`. -/
 structure Rajab15 where
   separateMatters : Option (Bool) := none
@@ -452,7 +458,7 @@ structure Sadi59 where
   context : Option (Usul.Sadi.Context) := none
   ahd : Option (Bool) := none
 
-/-! ## Ibn Rajab's qawāʿid read by the parallel shards (RajabA1–A12) -/
+/-! ## Ibn Rajab's qawāʿid read by the parallel shards (RajabA1–A16) -/
 
 /-- Ibn Rajab 53 «من تصرف في عين تعلق بها حق لله تعالى أو لآدمي معين إن كان الحق مستقرا فيها بمطالبة من له الحق بحقه أو يأخذه بحقه لم ينفذ التصرف ولم يوجد سوى تعلق الحق لاستيفائه منها صح التصرف على ظاهر المذهب، وقياس قول أبي بكر لا يصح …». Read by `attached_right_disposal`. -/
 structure Rajab53 where
@@ -657,5 +663,65 @@ structure Rajab117 where
 /-- Ibn Rajab 118 «تعليق فسخ العقد وإبطاله لوجوده إن كان فيه مقصود معتبر شرعا صح وإلا لم يصح إذ لو صح لصار العقد غير مقصود في نفسه هذا مقتضى قواعد المذهب، ويتخرج على ذلك مسائل: (منها) إذا علق الطلاق بالنكاح فالمذهب المنصوص عن أحمد …». Read by `cancel_on_existence_valid`. -/
 structure Rajab118 where
   legitimatePurpose : Option (Bool) := none
+
+/-- Ibn Rajab 119 «إذا وجدنا لفظا عاما قد خص بعض أفراده بحكم موافق للأول أو مخالف له فهل يقضي بخروج الخاص من العام وانفراده بحكمه المختص به أو يقضي بدخوله فيه فيتعارضان مع اختلاف الحكم ويتعدد سبب الاستحقاق مع إبقائه هذا على قسمين: أحدهما: …». Read by `entitlement_multiplies`, `specific_singled_out`, `takes_only_by_special`. -/
+structure Rajab119 where
+  combinedAttributes : Option (Bool) := none
+  singleJiha : Option (Bool) := none
+  connected : Option (Bool) := none
+  revocable : Option (Bool) := none
+  specialTitle : Option (Bool) := none
+
+/-- Ibn Rajab 120 «يرجح ذو القرابتين على ذي القرابة الواحدة، وإن لم تكن إحداهما لها مدخل في الاستحقاق في مسائل: منها: في الأخ للأبوين على الأخ للأب في الميراث بالولاء رواية واحدة، وخرج ابن الزاغوني في كتابه التلخيص في الفرائض رواية أخرى …». Read by `double_kinship_preferred`. -/
+structure Rajab120 where
+  doubleKinship : Option (Bool) := none
+
+/-- Ibn Rajab 121 «في تخصيص العموم بالعرف وله صورتان: إحداهما أن يكون قد غلب استعمال الاسم العام في بعض أفراده حتى صار حقيقة عرفية، فهذا يختص به العموم بغير خلاف.». Read by `urf_specialises_general`. -/
+structure Rajab121 where
+  urfiHaqiqa : Option (Bool) := none
+  onlyQualified : Option (Bool) := none
+  mostlyQualified : Option (Bool) := none
+
+/-- Ibn Rajab 122 «يخص العموم بالعادة على المنصوص، وذلك في مسائل ; منها: لو وصى لأقربائه أو أهل بيته، قال أحمد في رواية ابن القاسم: إذا قال لأهل بيتي أو قرابتي فهو على ما يعرف من مذهب الرجل، إن كان يصل عمته وخالته، ونقل سندي نحوه.». Read by `custom_restricts_general`. -/
+structure Rajab122 where
+  customaryUsage : Option (Bool) := none
+
+/-- Ibn Rajab 123 «ويخص العموم بالشرع أيضا على الصحيح في مسائل: منها: إذا نذر صوم الدهر لم يدخل في ذلك ما يحرم صومه من أيام السنة أو وما يجب صومه شرعا كرمضان على أصح الروايتين.». Read by `shar_specialises_general`. -/
+structure Rajab123 where
+  sharExcludes : Option (Bool) := none
+
+/-- Ibn Rajab 124 «هل نخص اللفظ العام بسببه الخاص إذا كان السبب هو المقتضي له؟». Read by `cause_restricts_general`. -/
+structure Rajab124 where
+  promptingCause : Option (Bool) := none
+
+/-- Ibn Rajab 125 «النية تعم الخاص وتخصص العام بغير خلاف فيها، وهل تقيد المطلق أو تكون استثناء من النص؟». Read by `intention_shapes_wording`. -/
+structure Rajab125 where
+  restrictsAbsolute : Option (Bool) := none
+  exceptsFromText : Option (Bool) := none
+
+/-- Ibn Rajab 126 «الصور التي لا تقصد من العموم عادة إما لندورها أو لاختصاصها بمانع لكن يشملها اللفظ مع اعتراف المتكلم بأنه لم يرد إدخالها فيه هل يحكم بدخولها أم لا؟». Read by `unintended_instance_covered`. -/
+structure Rajab126 where
+  rareOrBarred : Option (Bool) := none
+  intendedQ126 : Option (Bool) := none
+
+/-- Ibn Rajab 128 «إذا اختلف حال المضمون في حالي الجناية والسراية.». Read by `injury_state_measures`, `spread_follows_injury`. -/
+structure Rajab128 where
+  guaranteedAtInjury : Option (Bool) := none
+  guaranteedAtSpread : Option (Bool) := none
+
+/-- Ibn Rajab 129 «إذا تعينت حال المرمي تجيئ بين الرمي والإصابة، فهل الاعتبار بحال الإصابة أم بحالة الرمي، أم يفرق بين القود والضمان، أم بين أن يكون بين الرمي مباحا أو محظورا؟». Read by `aqila_bears_across_change`, `hit_state_governs`. -/
+structure Rajab129 where
+  memberAtShot : Option (Bool) := none
+  memberAtHit : Option (Bool) := none
+  liabilityRuling : Option (Bool) := none
+
+/-- Ibn Rajab 130 «المسكن والخادم والمركب المحتاج إليه ليس بمال فاضل يمنع أخذ الزكوات ولا يجب فيه الحج والكفارات ولا يوفي منه الديون والنفقات نص على ذلك أحمد في مسائل: (منها) الزكاة قال أبو داود سئل أحمد عن رجل له دار يقبل من الزكاة قال …». Read by `needed_item_is_surplus`. -/
+structure Rajab130 where
+  neededQ130 : Option (Bool) := none
+
+/-- Ibn Rajab 131 «القدرة على اكتساب المال بالبضع ليس بغنى معتبر، صرح به القاضي في خلافه وفرع عليه مسائل: (منها) إذا أفلست المرأة وهي ممن يرغب في نكاحها لم تجبر على النكاح لأخذ المهر بغير خلاف ومنها: أنه لا يجب عليها نفقة الأقارب بقدرتها …». Read by `budh_capacity_is_wealth`. -/
+structure Rajab131 where
+  hasWealth : Option (Bool) := none
+  canEarnByBudh : Option (Bool) := none
 
 end Usul.Typing.Qaida

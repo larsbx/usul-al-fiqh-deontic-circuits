@@ -71,7 +71,7 @@ structure Situation extends Qaida.Qarain, Qaida.ItlafHal, Qaida.ItlafQasd, Qaida
     Qaida.Rajab117, Qaida.Rajab110, Qaida.Rajab116, Qaida.Rajab96, Qaida.Rajab67, Qaida.Rajab80,
     Qaida.Rajab60, Qaida.Rajab78, Qaida.Rajab94, Qaida.Rajab90, Qaida.Rajab115, Qaida.Rajab101,
     Qaida.Rajab104, Qaida.Rajab108, Qaida.Rajab114, Qaida.Rajab100, Qaida.Rajab74, Qaida.Rajab4, Qaida.Rajab5, Qaida.Lahham43, Qaida.Rajab59,
-    Qaida.Sadi9, Qaida.Rajab32, Qaida.Rajab35, Qaida.Rajab27, Qaida.Rajab14, Qaida.Rajab12,
+    Qaida.Sadi9, Qaida.Rajab32, Qaida.Rajab35, Qaida.Rajab27, Qaida.Rajab14, Qaida.Rajab14Certainty, Qaida.Rajab12,
     Qaida.Rajab28, Qaida.Rajab56, Qaida.Rajab43, Qaida.Sadi48, Qaida.Rajab39, Qaida.Rajab51,
     Qaida.Rajab47, Qaida.Rajab61, Qaida.Rajab58, Qaida.Rajab52, Qaida.Rajab54, Qaida.Sadi35,
     Qaida.Rajab15, Qaida.Rajab3, Qaida.Rajab30, Qaida.Sadi25, Qaida.Rajab25, Qaida.Rajab50,
@@ -81,7 +81,9 @@ structure Situation extends Qaida.Qarain, Qaida.ItlafHal, Qaida.ItlafQasd, Qaida
     Qaida.Rajab49, Qaida.Rajab65, Qaida.Sadi32, Qaida.Rajab62, Qaida.Sadi50, Qaida.Rajab42,
     Qaida.Rajab24, Qaida.Sadi55, Qaida.Rajab55, Qaida.Rajab41, Qaida.Rajab57, Qaida.Rajab1,
     Qaida.Rajab19, Qaida.Rajab37, Qaida.Sadi41, Qaida.Rajab93, Qaida.Rajab29, Qaida.Lahham61,
-    Qaida.Rajab64, Qaida.Rajab46, Qaida.Rajab10, Qaida.Rajab38
+    Qaida.Rajab64, Qaida.Rajab46, Qaida.Rajab10, Qaida.Rajab38, Qaida.Rajab119, Qaida.Rajab120,
+    Qaida.Rajab121, Qaida.Rajab122, Qaida.Rajab123, Qaida.Rajab124, Qaida.Rajab125, Qaida.Rajab126,
+    Qaida.Rajab128, Qaida.Rajab129, Qaida.Rajab130, Qaida.Rajab131
 
 /-! ## Encoders typed over `Situation` (names as in `takhrij.ENCODERS`) -/
 

@@ -7,7 +7,7 @@
   "situations": 138,
   "fields_stated": 187,
   "cases": 123,
-  "encoders": 160,
+  "encoders": 177,
   "applies": 0.3577,
   "recall": {
     "1": 0.3008,
@@ -21,8 +21,8 @@
   },
   "lexical_recall": {
     "1": 0.0,
-    "5": 0.2439,
-    "10": 0.3252
+    "5": 0.2195,
+    "10": 0.3171
   },
   "hybrid_recall": {
     "1": 0.5203,
