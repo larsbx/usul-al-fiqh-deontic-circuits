@@ -1,4 +1,4 @@
-"""T3/T4: the blind-typed IslamQA situations, routed by type (Prolog over the Lean export)."""
+"""T3/T4: blind-typed test sets, routed by type (Prolog over the Lean export)."""
 
 import json
 import re
@@ -10,10 +10,9 @@ import pytest
 from usul_corpus import typed_routing as tr
 
 ROOT = Path(__file__).resolve().parents[2]
-if not (ROOT / tr.SITUATIONS).exists():
-    pytest.skip("the blind-typed situations are not committed yet", allow_module_level=True)
-DATA = json.loads((ROOT / tr.SITUATIONS).read_text(encoding="utf-8"))
 EXPORT = (ROOT / "examples/v41_types.pl").read_text(encoding="utf-8")
+SETS = tr.present(ROOT)
+ids = [ts.name for ts in SETS]
 
 
 def allowed(lean_type: str) -> set:
@@ -27,14 +26,19 @@ def allowed(lean_type: str) -> set:
     return ctors | ({"none"} if nested > 1 else set())
 
 
+def _data(ts):
+    return json.loads((ROOT / ts.situations).read_text(encoding="utf-8"))
+
+
 def test_allowed_values_come_from_the_kernel():
     assert allowed("Option Usul.Grade") == {"wahm", "shakk", "zann", "qat"}
     assert "none" in allowed("Option (Option Usul.Hukm)") and "wajib" in allowed("Option (Option Usul.Hukm)")
 
 
-def test_situations_use_only_exported_fields_and_rights_capped_quotes():
+@pytest.mark.parametrize("ts", SETS, ids=ids)
+def test_situations_use_only_exported_fields_and_rights_capped_quotes(ts):
     fields = dict(re.findall(r"^type_field\(\w+, (\w+), '([^']*)'\)\.", EXPORT, re.M))
-    for a in DATA["answers"]:
+    for a in _data(ts)["answers"]:
         for s in a["situations"]:
             assert set(s["facts"]) <= set(fields), (a["answer"], set(s["facts"]) - set(fields))
             assert set(s["evidence"]) == set(s["facts"]), a["answer"]
@@ -42,16 +46,18 @@ def test_situations_use_only_exported_fields_and_rights_capped_quotes():
             assert all(0 < len(q) <= 160 for q in s["evidence"].values()), a["answer"]
 
 
-def test_every_tranche_answer_is_typed():
-    cases = json.loads((ROOT / tr.TRANCHE).read_text(encoding="utf-8"))["cases"]
-    assert {c["far"].rsplit(".", 1)[0] for c in cases} == {a["answer"] for a in DATA["answers"]}
+@pytest.mark.parametrize("ts", SETS, ids=ids)
+def test_every_case_unit_is_typed(ts):
+    assert {u for u, _, _ in ts.cases(ROOT)} == {a["answer"] for a in _data(ts)["answers"]}
 
 
-def test_the_prolog_situations_are_current():
-    assert tr.prolog_file(DATA) == (ROOT / tr.PROLOG).read_text(encoding="utf-8")
+@pytest.mark.parametrize("ts", SETS, ids=ids)
+def test_the_prolog_situations_are_current(ts):
+    assert tr.prolog_file(ts, _data(ts)) == (ROOT / ts.prolog).read_text(encoding="utf-8")
 
 
 @pytest.mark.skipif(shutil.which("swipl") is None, reason="swipl not installed")
-def test_the_report_is_current():
-    assert json.dumps(tr.report(ROOT, tr.coverage(ROOT)), ensure_ascii=False, indent=2) + "\n" == \
-        (ROOT / tr.REPORT).read_text(encoding="utf-8")
+@pytest.mark.parametrize("ts", SETS, ids=ids)
+def test_the_report_is_current(ts):
+    assert json.dumps(tr.report(ROOT, ts, tr.coverage(ROOT, ts)), ensure_ascii=False, indent=2) + "\n" == \
+        (ROOT / ts.report).read_text(encoding="utf-8")

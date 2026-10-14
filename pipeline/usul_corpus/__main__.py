@@ -398,24 +398,26 @@ def cmd_routing(args: argparse.Namespace) -> int:
 
 
 def cmd_typed_routing(args: argparse.Namespace) -> int:
-    """Write the typed IslamQA situations as Prolog, route them by type, and report (needs swipl)."""
+    """For each test set with committed situations: write them as Prolog, route by type, report (needs swipl)."""
     from . import typed_routing as tr
-    pl = tr.prolog_file(json.loads((ROOT / tr.SITUATIONS).read_text(encoding="utf-8")))
-    if args.check:
-        if (ROOT / tr.PROLOG).read_text(encoding="utf-8") != pl:
-            print(f"typed routing stale ({tr.PROLOG}): run python -m usul_corpus typed-routing", file=sys.stderr)
-            return 1
-    else:
-        (ROOT / tr.PROLOG).write_text(pl, encoding="utf-8")
-    rep = json.dumps(tr.report(ROOT, tr.coverage(ROOT)), ensure_ascii=False, indent=2) + "\n"
-    if args.check:
-        if (ROOT / tr.REPORT).read_text(encoding="utf-8") != rep:
-            print(f"typed routing stale ({tr.REPORT}): run python -m usul_corpus typed-routing", file=sys.stderr)
-            return 1
-    else:
-        (ROOT / tr.REPORT).write_text(rep, encoding="utf-8")
-    r = json.loads(rep)
-    print(json.dumps({k: r[k] for k in ("cases", "applies", "recall", "lexical_recall")}))
+    stale = []
+    for ts in tr.present(ROOT):
+        pl = tr.prolog_file(ts, json.loads((ROOT / ts.situations).read_text(encoding="utf-8")))
+        if args.check and (ROOT / ts.prolog).read_text(encoding="utf-8") != pl:
+            stale.append(ts.prolog)
+            continue
+        (ROOT / ts.prolog).write_text(pl, encoding="utf-8")
+        rep = json.dumps(tr.report(ROOT, ts, tr.coverage(ROOT, ts)), ensure_ascii=False, indent=2) + "\n"
+        if args.check:
+            if (ROOT / ts.report).read_text(encoding="utf-8") != rep:
+                stale.append(ts.report)
+        else:
+            (ROOT / ts.report).write_text(rep, encoding="utf-8")
+        r = json.loads(rep)
+        print(json.dumps({"set": ts.name, **{k: r[k] for k in ("cases", "applies", "recall", "lexical_recall")}}))
+    if stale:
+        print(f"typed routing stale ({', '.join(stale)}): run python -m usul_corpus typed-routing", file=sys.stderr)
+        return 1
     return 0
 
 
