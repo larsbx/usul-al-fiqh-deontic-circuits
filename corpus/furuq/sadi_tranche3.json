@@ -1,0 +1,356 @@
+{
+ "note": "al-Saʿdī, al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa, part two (al-furūq), tranche 3: F42–F60 in order after tranche 2, none skipped; conventions as in tranche 1.",
+ "work": "sadi.qawaid_jamia",
+ "witness": "islamhouse-qj-doc",
+ "module": "Usul.Furuq",
+ "asl": {
+  "ref": "src:islamhouse-qj-doc#furuq",
+  "excerpt_ar": "أن الشارع لا يفرق بين المتشابهات من كل وجه، بل لا بد فيها من فوارق معنوية، وأوصاف متفاوتة أوجبت الفرق"
+ },
+ "lean": [
+  "Usul.Furuq.Grade",
+  "Usul.Furuq.Grade.apart",
+  "Usul.Furuq.alike_unless_farq",
+  "Usul.Furuq.farq_is_maana",
+  "Usul.Furuq.suri_farq_idle"
+ ],
+ "items": [
+  {
+   "id": "F42",
+   "cases_en": [
+    "a slave's bodily duties (wājibāt, «الأحكام البدنية»: Friday, congregation, the ḥajj of Islam)",
+    "a free man's"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "فظاهر النصوص وعمومها يقتضي مساواة العبد للحر في الأحكام البدنية"
+   },
+   "grounds": [],
+   "note": "the majority do not oblige him and do not count his ḥajj; «وبهذا قال طائفة من العلماء»",
+   "nusus": [],
+   "nass_cited": "unspecified"
+  },
+  {
+   "id": "F43",
+   "cases_en": [
+    "a slave's financial duties (wājibāt, «الأحكام المالية»: zakāt, kaffāra, the value of what he destroys: ḍamān)",
+    "a free man's"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "أما الأحكام المالية فالفرق بين العبد والحر ظاهر؛ لأن العبد لا مال له"
+   },
+   "grounds": [],
+   "note": "the same pair as F42, a sound farq in this respect («فالفرق بين العبد والحر ظاهر»; graded ṣaḥīḥ)"
+  },
+  {
+   "id": "F44",
+   "cases_en": [
+    "men (Friday, congregation, bodily jihād, full inheritance, diya, testimony, offices)",
+    "women"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "فهذه الفروق تابعة للحكمة، وتعليق الأحكام بحسب أهلية المحكوم عليهم وكفائتهم وحاجتهم"
+   },
+   "grounds": [],
+   "note": "and equal in taklīf, dispositions and ownership «لتساويهما في الأسباب والمسببات»"
+  },
+  {
+   "id": "F45",
+   "cases_en": [
+    "ṭalāq or manumission attached to a detachable part (hair, nail): not ṣaḥīḥ",
+    "attached to a connected part: it falls on the whole"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: تفريقهم بين إضافة الطلاق أو العتاق ونحوها إلى جزء ينفصل كالشعر، والظفر فلا يثبت"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F46",
+   "cases_en": [
+    "khulʿ of a part of the wife (not ṣaḥīḥ)",
+    "divorce of a part (valid)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "فإن التفريق في هذا بين الخلع والطلاق ضعيف"
+   },
+   "grounds": [],
+   "note": "other dispositions (sale, hire, waqf, gift) may fall on part of a thing"
+  },
+  {
+   "id": "F47",
+   "cases_en": [
+    "a gift in health, a gift in the final illness",
+    "a bequest"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "فهذه ثابتة مبنية على الأصول الشرعية كما هو معروف مفصل"
+   },
+   "grounds": [],
+   "note": "the third, the time it becomes lāzim, revocation and priority"
+  },
+  {
+   "id": "F48",
+   "cases_en": [
+    "a waqf in the final illness for some heirs (allowed)",
+    "a bequest to an heir (bāṭil: «نص الشارع على بطلانه»)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "فإن هذا القول هو عين الوصية للوارث الذي نص الشارع على بطلانه"
+   },
+   "grounds": [],
+   "note": "graded «من الفروق الضعيفة جداً بل الخارقة للإجماع»",
+   "nusus": [
+    "H-wasiyya-warith"
+   ],
+   "nass_cited": "identified"
+  },
+  {
+   "id": "F49",
+   "cases_en": [
+    "deliberate aggressive killing (qiṣāṣ or diya, as the heir chooses)",
+    "error and quasi-deliberate killing (diya only)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة الثابتة بالنص والإجماع"
+   },
+   "grounds": [],
+   "note": "«وهذا موافق غاية الموافقة للحكمة والمصلحة»; likewise in limbs, unless equivalence is impossible",
+   "nusus": [
+    "Q002:179"
+   ],
+   "nass_cited": "quoted"
+  },
+  {
+   "id": "F50",
+   "cases_en": [
+    "limbs washed (ghasl) in wuḍūʾ (repeated)",
+    "wiped ones: head, khuffs, veil, turban (not repeated)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لبناء الممسوحات على السهولة"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F51",
+   "cases_en": [
+    "ṭahāra by tayammum (tied to the time, one farḍ prayer per tayammum)",
+    "ṭahāra by water"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والصواب: أن طهارة التيمم قائمة مقام طهارة الماء في كل شيء كما أقامها الشارع"
+   },
+   "grounds": [
+    "Usul.Sadi.q28_stands_in_everything"
+   ],
+   "note": "Q28 «يقوم البدل مقام المبدل», which al-Saʿdī glosses «وأنه يقوم مقامه في كل شيء»; «كما هو مقتضى القياس كما قاله الإمام أحمد»"
+  },
+  {
+   "id": "F52",
+   "cases_en": [
+    "the ṭahāra of the major ḥadath, ghusl (water to the skin under all hair)",
+    "of the minor ḥadath, wuḍūʾ (under thin hair only)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: التفريق في طهارة الحدث الأكبر، وطهارة الحدث الأصغر"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F53",
+   "cases_en": [
+    "prostrating on one's own limbs (not sufficing, not ṣaḥīḥ), on what is attached to one's clothing (disliked)",
+    "on a detached barrier (not disliked)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: الفرق بين السجود على حائل من أعضاء السجود، فلا يجزئ"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F54",
+   "cases_en": [
+    "the hair, wool and feathers of an undeclared carcass (ṭāhir)",
+    "its flesh, fat and bones (najis); its hide is made ṭāhir by tanning"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأنها منفصلات لا فضلات فيها، ولا يحلها الموت"
+   },
+   "grounds": [],
+   "note": "a threefold division; followed by the Lawgiver's own threefold division of animals by permissibility"
+  },
+  {
+   "id": "F55",
+   "cases_en": [
+    "sacrificial and ritual blood offerings (eaten from, gifted, given)",
+    "those incurred by a prohibited act or an omitted wājib (given wholly)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأنها تجري مجرى الكفارات، وتلك مجراها مجرى العبادات المحضة"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F56",
+   "cases_en": [
+    "contests never lawful (backgammon, chess), contests always lawful (horses, camels, arrows)",
+    "the rest, lawful only without a stake"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأنها تعين على الجهاد، وقوام الدين"
+   },
+   "grounds": [],
+   "note": "«لأن الحكمة في ذلك بينة واضحة»"
+  },
+  {
+   "id": "F57",
+   "cases_en": [
+    "pre-emption in undivided real estate",
+    "in other shared property (none)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لكثرة ضرر المشاركة فيها ودوامه"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F58",
+   "cases_en": [
+    "agency in rights purely God's (maḥḍ) and in a person's right where he himself is meant (not ṣaḥīḥ)",
+    "in other rights (valid)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "التي القصد الأعظم منها حصولها بقطع النظر عن الفاعل والمباشر"
+   },
+   "grounds": [],
+   "note": "«وهذه حكمة بيّنة واضحة»"
+  },
+  {
+   "id": "F59",
+   "cases_en": [
+    "an oath (released by kaffāra)",
+    "a vow (must be fulfilled)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "qaida",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "فالطاعة فيه مقصودة، بخلاف اليمين"
+   },
+   "grounds": [
+    "Usul.Muamalat.q47_vow_as_law"
+   ],
+   "note": "yamīn against nadhr: «فالطاعة فيه مقصودة، بخلاف اليمين»; Q47: what a vow obliges joins what the law obliges"
+  },
+  {
+   "id": "F60",
+   "cases_en": [
+    "a purely conditional divorce (falls when the condition occurs)",
+    "a divorce made conditional to urge or deter (treated as an oath)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وبهذا الفرق فرّق شيخ الإسلام"
+   },
+   "grounds": [],
+   "note": "taʿlīq: «التعاليق المحضة في الطلاق» against «الطلاق المعلق على أمر يقصد المنع منه أو الحثّ عليه»; Ibn Taymiyya's farq, on the same ground as F59: «لوجود روح اليمين فيه ومعناه»"
+  }
+ ]
+}

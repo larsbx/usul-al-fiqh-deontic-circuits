@@ -1,88 +1,91 @@
-"""Regressions for candidate-only field routing and separated evaluation."""
+"""T3/T4: blind-typed test sets, routed by type (Prolog over the Lean export)."""
+
 import json
+import re
+import shutil
 from pathlib import Path
 
 import pytest
 
-from usul_corpus import routing, takhrij, typed_routing as typed
+from usul_corpus import typed_routing as tr
 
 ROOT = Path(__file__).resolve().parents[2]
+EXPORT = (ROOT / "examples/v41_types.pl").read_text(encoding="utf-8")
+SETS = tr.present(ROOT)
+ids = [ts.name for ts in SETS]
+TYPED = [*SETS, *tr.present(ROOT, tr.PROPOSALS)]
+typed_ids = [ts.name for ts in TYPED]
 
 
-def test_partial_observations_are_strictly_typed_and_do_not_fill_unknowns():
-    schema = {"necessary": [False, True], "count": [1, 2]}
-    assert typed.compatible({}, schema)
-    assert typed.compatible({"necessary": False}, schema)
-    assert not typed.compatible({"necessary": 1}, schema)
-    assert not typed.compatible({"count": True}, schema)
-    assert not typed.compatible({"unknown": True}, schema)
-    assert not typed.compatible({"count": 3}, schema)
+def allowed(lean_type: str) -> set:
+    """The values a field of this Lean type takes: Bool, or the kernel's constructors (type_value/2)."""
+    inner, nested = lean_type, 0
+    while inner.startswith("Option "):
+        inner, nested = inner[len("Option "):].strip("()"), nested + 1
+    if inner == "Bool":
+        return {True, False}
+    ctors = set(re.findall(rf"^type_value\('{re.escape(inner)}', (\w+)\)\.", EXPORT, re.M))
+    return ctors | ({"none"} if nested > 1 else set())
 
 
-def test_schemas_preserve_the_registry_domains():
-    for name, schema in typed.signatures().items():
-        assert schema == {k: list(v) for k, v in takhrij.ENCODERS[name]["facts"].items()}
+def _data(ts):
+    return json.loads((ROOT / ts.situations).read_text(encoding="utf-8"))
 
 
-def test_training_fields_use_only_passed_classical_records(monkeypatch):
-    monkeypatch.setattr(typed, "signatures", lambda: {"a": {"first": [True]}, "b": {"second": [True]}})
-    monkeypatch.setattr(takhrij, "load", lambda _: [
-        {"far": "train", "encoder": "a", "facts": {"first": True}},
-        {"far": "heldout", "encoder": "b", "facts": {"second": False}},
-    ])
-    monkeypatch.setattr(routing, "qawaid", lambda _: [("b", "وديعة")])
-    model = typed.Model.fit(Path("unused"), [("train", "a", "صلاة مسجد")])
-    assert set(model.fields.profiles) == {"first"}
-    assert model.rank("صلاة", 1)[0] == "a"
-    assert model.rank("لا توجد إشارة", 1) == ["a", "b"]
-    # Neither the rule mirror nor any annotation fact value participates in ranking.
-    assert typed.compatible({"second": False}, model.schemas["b"]) is False
+def test_allowed_values_come_from_the_kernel():
+    assert allowed("Option Usul.Grade") == {"wahm", "shakk", "zann", "qat"}
+    assert "none" in allowed("Option (Option Usul.Hukm)") and "wajib" in allowed("Option (Option Usul.Hukm)")
 
 
-def test_lexical_zero_weight_matches_original_model():
-    corpus = ROOT / "corpus"
-    cases = routing.cases(corpus)
-    train = [c for c in cases if routing._fold(c[0]) != 0]
-    model = typed.Model.fit(corpus, train)
-    for _, _, text in cases[:10]:
-        assert model.rank(text, 0) == model.lexical.rank(text)
+@pytest.mark.parametrize("ts", TYPED, ids=typed_ids)
+def test_situations_use_only_exported_fields_and_rights_capped_quotes(ts):
+    fields = dict(re.findall(r"^type_field\(\w+, (\w+), '([^']*)'\)\.", EXPORT, re.M))
+    for a in _data(ts)["answers"]:
+        for s in a["situations"]:
+            assert set(s["facts"]) <= set(fields), (a["answer"], set(s["facts"]) - set(fields))
+            assert set(s["evidence"]) == set(s["facts"]), a["answer"]
+            assert all(v in allowed(fields[f]) for f, v in s["facts"].items()), a["answer"]
+            assert all(0 < len(q) <= 160 for q in s["evidence"].values()), a["answer"]
 
 
-def test_generated_classical_report_replays():
-    assert typed.render(ROOT, classical_only=True) == (ROOT / typed.OUTPUT).read_text()
+@pytest.mark.parametrize("ts", SETS, ids=ids)
+def test_every_case_unit_is_typed(ts):
+    assert {u for u, _, _ in ts.cases(ROOT)} == {a["answer"] for a in _data(ts)["answers"]}
 
 
-def test_partial_report_preserves_original_ood_and_has_no_modern_metrics():
-    report = json.loads((ROOT / typed.OUTPUT).read_text())
-    assert report["status"] == "candidate"
-    assert report["ood"]["evaluation_status"] == "blocked_missing_questions"
-    assert report["ood"]["original_lexical"] == json.loads((ROOT / "corpus" / routing.OOD).read_text())
-    assert report["ood"]["rows"] == []
-    assert all(v == {} for v in report["ood"]["recall"].values())
-    assert report["bab"]["accuracy"] is None
-    assert report["classical"]["recall"]["lexical"] == json.loads(
-        (ROOT / "corpus" / routing.INDEX).read_text())["recall"]["held_out"]
+@pytest.mark.parametrize("ts", TYPED, ids=typed_ids)
+def test_the_prolog_situations_are_current(ts):
+    assert tr.prolog_file(ts, _data(ts)) == (ROOT / ts.prolog).read_text(encoding="utf-8")
 
 
-def test_inner_selection_prefers_less_structure_on_ties(monkeypatch):
-    class Same:
-        def rank(self, text, weight):
-            return ["a"]
-    monkeypatch.setattr(typed.Model, "fit", lambda *args: Same())
-    assert typed.select_weight(Path("unused"), [("record", "a", "text")]) == 0
+@pytest.mark.skipif(shutil.which("swipl") is None, reason="swipl not installed")
+@pytest.mark.parametrize("ts", SETS, ids=ids)
+def test_the_report_is_current(ts):
+    answers = ROOT / tr.routing.ANSWERS
+    if ts.name == "islamqa_tranche1" and (not answers.exists() or answers.stat().st_size < 1000):
+        pytest.skip("IslamQA answers not fetched (git lfs pull)")
+    assert json.dumps(tr.report(ROOT, ts, tr.coverage(ROOT, ts)), ensure_ascii=False, indent=2) + "\n" == \
+        (ROOT / ts.report).read_text(encoding="utf-8")
 
 
-def test_original_questions_require_pinned_source_and_exact_membership(tmp_path, monkeypatch):
-    import gzip
-    import hashlib
-    path = tmp_path / routing.ANSWERS
-    path.parent.mkdir(parents=True)
-    path.write_text("version https://git-lfs.github.com/spec/v1\n")
-    with pytest.raises(ValueError, match="pinned SHA-256"):
-        typed.questions(tmp_path, {"q1"})
-    with gzip.open(path, "wt", encoding="utf-8") as fh:
-        fh.write(json.dumps({"id": "q1", "title": "title", "question": "question"}) + "\n")
-    monkeypatch.setattr(typed, "ANSWERS_SHA256", hashlib.sha256(path.read_bytes()).hexdigest())
-    assert typed.questions(tmp_path, {"q1"}) == {"q1": "title question"}
-    with pytest.raises(ValueError, match="Missing or duplicated"):
-        typed.questions(tmp_path, {"q1", "q2"})
+def test_hybrid_puts_types_first_and_words_break_ties():
+    assert tr.hybrid({"b": 1.0, "c": 0.5, "d": 1.0}, ["a", "b", "c", "d"]) == ["b", "d", "c", "a"]
+    assert tr.hybrid({}, ["a", "b"]) == ["a", "b"]
+
+
+@pytest.mark.parametrize("ps", tr.present(ROOT, tr.PROPOSALS), ids=lambda ps: ps.name)
+def test_a_proposal_set_is_its_deterministic_sample_of_r2_units(ps):
+    """The draw is fixed: a sampled unit later annotated in lane B stays in it, its proposal consumed."""
+    from usul_corpus import units
+    inv = json.loads((ROOT / "corpus" / units.INVENTORY).read_text(encoding="utf-8"))
+    inventoried = units.pending(ROOT / "corpus") | {i for r in inv["witnesses"] for i in r["annotated_ids"]}
+    sample = ps.units(ROOT)
+    assert [a["answer"] for a in _data(ps)["answers"]] == sample
+    assert set(sample) <= inventoried
+
+
+@pytest.mark.skipif(shutil.which("swipl") is None, reason="swipl not installed")
+@pytest.mark.parametrize("ps", tr.present(ROOT, tr.PROPOSALS), ids=lambda ps: ps.name)
+def test_the_proposals_are_current(ps):
+    assert json.dumps(tr.proposals(ROOT, ps, tr.coverage(ROOT, ps)), ensure_ascii=False, indent=2) + "\n" == \
+        (ROOT / ps.proposals).read_text(encoding="utf-8")

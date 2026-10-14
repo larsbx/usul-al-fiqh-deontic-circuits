@@ -1,0 +1,35 @@
+{
+  "entries": [
+    {
+      "id": "mubashara_tasabbub",
+      "title": "The direct act and the cause: on whom the ḍamān of an itlāf falls",
+      "terms": ["daman", "itlaf", "sabab"],
+      "statement": {
+        "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127",
+        "note": "Ibn Rajab, qāʿida 127: an itlāf resting on a direct act and a cause makes the direct act liable, «إلا إذا كانت المباشرة مبنية على السبب وناشئة عنه»; then the cause alone bears it where the direct act has no transgression, and shares it where it has some. «فالأقسام ثلاثة»."
+      },
+      "refs": [
+        {"ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f000", "note": "Division one: pushing someone into a well another dug in transgression, «فالضمان على الدافع وحده»."},
+        {"ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f003", "note": "Division two: the judge's execution arises from false testimony without transgression in him, «فالضمان والقود عليهم دون الحاكم»."},
+        {"ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f005", "note": "Division three, on one riwāya: «الممسك مع القاتل فإنهما يشتركان في الضمان والقود على إحدى الروايتين»; the other riwāya gives it to the direct actor alone."}
+      ],
+      "conditions": [
+        "an itlāf of persons or property resting on both a direct act (mubāshara) and a cause (sabab)",
+        "whether the direct act is built on the cause and arises from it",
+        "whether the direct act has any transgression"
+      ],
+      "rationale": "The IslamQA tranche left 9 of its 27 itlāf cases as missing_rule with need rule:mubashara_tasabbub: these answers turn on causation, which the itlāf encoder (al-Saʿdī Q13 ⊔ Q36) does not read. Ibn Rajab's qāʿida 127 states that rule over itlāf itself, with three divisions its own furūʿ instance. It is formalised as a new encoder beside itlāf, which is unchanged; its type extends itlāf's types (Usul.Typing.Qaida.Mubashara). A cause with no direct act is not covered by the statement and stays a gap.",
+      "lean": [
+        "Usul.Readings.Mubashara.damanOn",
+        "Usul.Readings.Mubashara.q127_direct_unless_arising",
+        "Usul.Readings.Mubashara.q127_cause_alone_without_udwan",
+        "Usul.Readings.Mubashara.q127_shared_with_udwan",
+        "Usul.Readings.Mubashara.q127_three_divisions",
+        "Usul.Readings.Mubashara.q127_agrees_with_q13"
+      ],
+      "conservative": null,
+      "closes": ["rule:mubashara_tasabbub"],
+      "iq": []
+    }
+  ]
+}

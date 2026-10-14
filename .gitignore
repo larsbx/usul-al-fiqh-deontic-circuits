@@ -5,3 +5,4 @@ formal/lean/.lake/
 *.class
 states/
 *_TTrace_*
+corpus/lock.json.lk

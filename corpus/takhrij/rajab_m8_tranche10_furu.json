@@ -92,7 +92,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "The third division, a right established by the sharʿ but neither taken nor demanded: «ففيه خلاف، والصحيح أنه لا يجوز أيضا», so the option of the session may not be extinguished. Its leading case, leaving the session without the other's leave lest he annul: two riwāyas, allowed by Ibn ʿUmar's act, or not, by the ḥadīth, «وهو صريح في التحريم», chosen by Abū Bakr and al-Mughnī."
+      "note": "The third division, a right established by the sharʿ but neither taken nor demanded: «ففيه خلاف، والصحيح أنه لا يجوز أيضا», so the option of the session may not be extinguished. Its leading case, leaving the session without the other's leave lest he annul (faskh, «خشية أن يفسخ الآخر»): two riwāyas, allowed by Ibn ʿUmar's act, or not, by the ḥadīth, «وهو صريح في التحريم», chosen by Abū Bakr and al-Mughnī."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q054.f001",
@@ -102,7 +102,7 @@
         "extinguishes": true
       },
       "expected": false,
-      "note": "The wife's disposal of half the dower when divorced before consummation, «وقلنا لم يملكه [مهرا]»: not allowed (al-Muḥarrar). A party's disposal of the counter-value he holds while the other may return his for a defect is allowed, «لأن تصرفه لا يمنع حق الآخر من رد ما بيده», the other taking a substitute."
+      "note": "The wife's disposal of half the dower when divorced («طلق الزوج») before consummation, «وقلنا لم يملكه [مهرا]»: not allowed (al-Muḥarrar). A party's disposal of the counter-value he holds while the other may return his for a defect is allowed, «لأن تصرفه لا يمنع حق الآخر من رد ما بيده», the other taking a substitute."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f001",
@@ -124,7 +124,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "Selling a thing on condition that the buyer pledge it for its price: «صح نص عليه». al-Qāḍī and Ibn Ḥāmid: not valid, «لانتفاء الملك للرهن ولا تكفي المقارنة»."
+      "note": "Selling a thing on condition («بشرط») that the buyer pledge it for its price: «صح نص عليه». al-Qāḍī and Ibn Ḥāmid: not valid, «لانتفاء الملك للرهن ولا تكفي المقارنة»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f002",
@@ -146,7 +146,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "Contracting kitāba with a slave and selling him something in one transaction: two wujūh. Valid, «وقيل إنه المنصوص», given by al-Qāḍī and Ibn ʿAqīl in nikāḥ, Abū al-Khaṭṭāb and most, the sale being concurrent with its condition that the buyer be a mukātab; or not, «لأن الكتابة لم تسبق عقد البيع»."
+      "note": "Contracting kitāba with a slave and selling him something in one transaction: two wujūh. Valid, «وقيل إنه المنصوص», given by al-Qāḍī and Ibn ʿAqīl in nikāḥ, Abū al-Khaṭṭāb and most, the sale being concurrent with its condition (sharṭ) that the buyer be a mukātab; or not, «لأن الكتابة لم تسبق عقد البيع»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f003",
@@ -190,7 +190,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "«If I marry so-and-so, I have appointed you to divorce her»: al-Talkhīṣ, «قياس المذهب صحته»; a wajh by takhrīj that it is void, since the condition of agency, the principal owning what he delegates, arises with the nikāḥ and is concurrent with the agency."
+      "note": "«If I marry so-and-so, I have appointed you to divorce her» («وكلتك في طلاقها»): al-Talkhīṣ, «قياس المذهب صحته»; a wajh by takhrīj that it is void («لا يصح»), since the condition (sharṭ) of agency, the principal owning what he delegates, arises with the nikāḥ and is concurrent with the agency."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f005",

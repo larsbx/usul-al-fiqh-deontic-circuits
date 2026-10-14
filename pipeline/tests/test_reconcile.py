@@ -113,12 +113,12 @@ def test_evidence_cites_registered_witnesses_within_their_limits():
 
 @pytest.mark.parametrize("v", EVIDENCE, ids=lambda v: v["ref"])
 def test_evidence_is_verbatim(v):
-    """Letters-only comparison against the cached witness; skipped where it is not cached (CI)."""
+    """Required reconciliation evidence: a missing witness is a failure, including offline."""
     from usul_corpus.arabic import locate
     w, loc = v["ref"][4:].split("/")
     src = ROOT / ".cache/corpus" / f"{w}.txt"
     if not src.exists():
-        pytest.skip(f"{w} not cached")
+        pytest.fail(f"required witness {w} not cached; run make source-verify-fetch")
     assert locate(src.read_text(encoding="utf-8"), v["excerpt_ar"]) == loc, v["ref"]
 
 
@@ -136,3 +136,77 @@ def test_every_jam_lands_on_the_prevailing_side():
     kept = _ikh("y", True, [True, False], False, "successive_by_binding", f(False, False))
     ledger = {"entries": [_entry("x", ["ashab", "zahir"], jam), _entry("y", ["ashab", "zahir"], jam)]}
     assert reconcile.check([moved, kept], ledger, DOSSIER) == ["y: a jamʿ must land on the prevailing side"]
+
+
+def _side_fixture():
+    case = {**_ikh("x", True, [True, False]), "side_check": {
+        "from_matches": True, "refs": ["src:w/v01:p001"], "contradictions": [{
+            "evidence_index": 0, "case_facts": {"successive": True},
+            "rationale": "The later explicit ruling concerns this successive-contract case."}]}}
+    ev = [{"ref": "src:w/v01:p001", "excerpt_ar": "source passage", "position": 1,
+           "grade": "tashih", "who": "later work", "note": "case-specific"}]
+    return case, {"entries": [{**_entry("x", ["ashab", "ashab"]), "evidence": ev}]}
+
+
+def test_a_failed_side_check_enters_the_ledger_with_its_evidence():
+    case, ledger = _side_fixture()
+    assert reconcile.check([case], {"entries": []}, DOSSIER) == [
+        "x: apparent contradiction not in the ledger", "x: a failed side check must enter the ledger"]
+    assert reconcile.check([case], ledger, DOSSIER) == []
+    assert reconcile.check([case], {"entries": [_entry("x", ["ashab", "ashab"])]}, DOSSIER) == [
+        "x: a side check cites only the ledger's own evidence"]
+
+
+@pytest.mark.parametrize("original", [False, None, 1, "true"])
+def test_failed_side_check_requires_original_true(original):
+    case, ledger = _side_fixture()
+    case["side_check"]["from_matches"] = original
+    assert any("true original annotation" in e for e in reconcile.check([case], ledger, DOSSIER))
+
+
+@pytest.mark.parametrize("mutation", ["outside_ref", "wrong_case_facts", "agreeing", "identical_positions",
+    "unmarked", "ambiguous", "full_ledger_tie", "missing_items", "bad_index", "duplicate_index",
+    "unselected_ref", "missing_rationale", "current_true", "original_not_listed"])
+def test_failed_side_check_rejects_adversarial_evidence(mutation):
+    from copy import deepcopy
+    case, ledger = _side_fixture()
+    sc = case["side_check"]
+    entry = ledger["entries"][0]
+    if mutation == "outside_ref": sc["refs"] = ["src:other/v01:p001"]
+    elif mutation == "wrong_case_facts": sc["contradictions"][0]["case_facts"] = {"successive": False}
+    elif mutation == "agreeing": entry["evidence"][0]["position"] = 0
+    elif mutation == "identical_positions": case["positions"][1]["ruling"] = True
+    elif mutation == "unmarked": entry["evidence"][0]["grade"] = "ashab"
+    elif mutation == "ambiguous":
+        case["positions"].append({"who": "third", "ruling": "other"})
+        entry["grades"].append("ashab")
+        entry["evidence"].append({**entry["evidence"][0], "position": 2})
+        sc["contradictions"].append({**sc["contradictions"][0], "evidence_index": 1})
+    elif mutation == "full_ledger_tie": entry["evidence"].append({**entry["evidence"][0], "position": 0})
+    elif mutation == "missing_items": sc["contradictions"] = []
+    elif mutation == "bad_index": sc["contradictions"][0]["evidence_index"] = True
+    elif mutation == "duplicate_index": sc["contradictions"].append(deepcopy(sc["contradictions"][0]))
+    elif mutation == "unselected_ref":
+        entry["evidence"].append({**entry["evidence"][0], "ref": "src:w/v01:p002"})
+        sc["refs"].append("src:w/v01:p002")
+    elif mutation == "missing_rationale": sc["contradictions"][0]["rationale"] = " "
+    elif mutation == "current_true": case["matches_madhhab"] = True
+    elif mutation == "original_not_listed": case["expected"] = "not a position"
+    assert reconcile.check([case], ledger, DOSSIER), mutation
+
+
+def test_same_page_opposing_evidence_requires_exact_item_selection():
+    case, ledger = _side_fixture()
+    entry = ledger["entries"][0]
+    entry["evidence"].append({**entry["evidence"][0], "position": 0, "grade": "ashab"})
+    assert reconcile.check([case], ledger, DOSSIER) == []
+    case["side_check"]["contradictions"][0]["evidence_index"] = 1
+    assert reconcile.check([case], ledger, DOSSIER)
+
+
+def test_six_reviewed_disagreements_preserve_their_original_annotations():
+    checked = [c for c in CASES if "side_check" in c]
+    assert len(checked) == 6
+    assert reconcile.check(CASES, LEDGER, DOSSIER) == []
+    assert all(c["side_check"]["from_matches"] is True and c["matches_madhhab"] is False for c in checked)
+    assert all(reconcile.standing(c, next(e for e in LEDGER["entries"] if e["far"] == c["far"])) == "against_reading" for c in checked)

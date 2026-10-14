@@ -132,13 +132,18 @@ def validate(plan: dict, corpus: Path) -> None:
     cases = {c["far"]: c for c in takhrij.load(corpus)}
     receipts = plan["case_receipts"]
     _require(len(receipts) == len(FARS) and {r["far"] for r in receipts} == FARS, "case receipt set changed")
+    notes = {r["far"]: r for r in plan.get("note_revisions", [])}
+    _require(set(notes) <= FARS, "note revision for a case outside the receipts")
     for receipt in receipts:
         far = receipt["far"]
         origin = receipt["original_case"]
         _require(origin["far"] == far and origin["class"] == "missing_rule", "wrong original case")
         _require(case_sha256(origin) == receipt["original_case_sha256"], "original case hash changed")
         _require(receipt["original_case_sha256"] == ORIGINAL_CASE_SHA256[far], "original case differs from base anchor")
-        _require(cases[far] == origin, "live case changed without an explicit revisit")
+        renote = notes.get(far)  # an English-only note revision (term guards); the case is otherwise as received
+        _require(renote is None or cases[far].get("note") == renote["note"], "note revision differs from its ledger")
+        live = dict(cases[far], note=origin.get("note")) if renote else cases[far]
+        _require(live == origin, "live case changed without an explicit revisit")
         _require(receipt["gap_status"] == "open" and receipt["needs"] == origin["needs"], "gap was promoted")
         _require(receipt["record_locator"] == records[far]["locator"], "record locator changed")
         _require(receipt["case_ar_sha256"] == sha256(records[far]["case_ar"].encode()), "case excerpt changed")

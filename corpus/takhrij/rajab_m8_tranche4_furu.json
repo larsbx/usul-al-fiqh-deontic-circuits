@@ -21,7 +21,7 @@
         "hair_or_nail": true
       },
       "expected": "detached",
-      "note": "Hair does not become impure by death or separation «على المذهب»; a long nail likewise on one iḥtimāl, while on the mashhūr a nail separated from a non-human is impure, life having left it."
+      "note": "Hair does not become najis by death or separation «على المذهب»; a long nail likewise on one iḥtimāl, while on the mashhūr a nail separated from a non-human is najis, life having left it."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002",
@@ -41,8 +41,32 @@
           "ruling": "attached"
         }
       ],
-      "matches_madhhab": true,
-      "note": "Washing the hair in janāba: two wujūh; al-Mughnī prefers no obligation «طردا للقاعدة» and gives it as the ẓāhir of al-Khiraqī; the other: obligatory as worship. For the minor ḥadath, the hanging hair is washed «على الصحيح», against the qāʿida."
+      "matches_madhhab": false,
+      "note": "Washing (ghasl) the hair in janāba: two wujūh; al-Mughnī prefers no wujūb («عدم الوجوب») «طردا للقاعدة» and gives it as the ẓāhir of al-Khiraqī; the other: obligatory as worship. For the minor ḥadath, the hanging hair is washed «على الصحيح», against the qāʿida.",
+      "side_check": {
+        "from_matches": true,
+        "refs": [
+          "src:openiti-buhuti-kashshaf-shamela21642/v01:p154",
+          "src:openiti-insaf-shamela21609/v01:p255"
+        ],
+        "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side.",
+        "contradictions": [
+          {
+            "evidence_index": 0,
+            "case_facts": {
+              "hair_or_nail": true
+            },
+            "rationale": "The case note specifies washing hair in janaba, not detached physical hair or minor hadath. The source expressly requires washing hair including hanging hair; attached/detached are the encoder labels for obligation, not an assertion about cut hair."
+          },
+          {
+            "evidence_index": 1,
+            "case_facts": {
+              "hair_or_nail": true
+            },
+            "rationale": "The case note specifies washing hair in janaba, not detached physical hair or minor hadath. The source expressly requires washing hair including hanging hair; attached/detached are the encoder labels for obligation, not an assertion about cut hair."
+          }
+        ]
+      }
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f003",
@@ -63,7 +87,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "Attaching divorce, manumission or ẓihār to the hair or nail: none of them follows «على الأصح»."
+      "note": "Attaching ṭalāq, manumission or ẓihār to the hair or nail: none of them follows «على الأصح»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f004",
@@ -241,7 +265,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "Does the child follow its mother in a void kitāba as in a valid one? On part it follows; on earnings two wujūh, on whether earnings are kept in a void kitāba. No madhhab marked."
+      "note": "Does the child follow its mother in a fāsid kitāba as in a ṣaḥīḥ one? On part it follows; on earnings two wujūh, on whether earnings are kept in a fāsid kitāba. No madhhab marked."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f000",
@@ -274,7 +298,7 @@
         "reason_ceases": false
       },
       "expected": true,
-      "note": "The buyer sells the pre-empted share before the demand: the shafīʿ takes it from the second buyer or undoes the sale («لسبق حقه»), on both wujūh. On the validity of the sale, the mashhūr (al-Khiraqī) agrees with the qāʿida's «صح»; Abū Bakr: void."
+      "note": "The buyer sells the pre-empted share before the demand: the shafīʿ takes it from the second buyer or undoes the sale («لسبق حقه»), on both wujūh. On the validity of the sale, the mashhūr (al-Khiraqī) agrees with the qāʿida's «صح»; Abū Bakr: bāṭil."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f002",
@@ -307,7 +331,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "A leaning wall, demanded to be demolished, then the house sold: does liability for its fall lapse? al-Qāḍī: it lapses; Ibn ʿAqīl: not if he sold to escape the demand, its cause having arisen in his ownership. No madhhab marked; the reading follows al-Qāḍī."
+      "note": "A leaning wall, demanded to be demolished, then the house sold: does liability for its fall lapse? al-Qāḍī: it lapses; Ibn ʿAqīl: not if he sold to escape the demand, its cause having arisen in his ownership («لانعقاد سببه في ملكه»). No madhhab marked; the reading follows al-Qāḍī."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f004",
@@ -329,7 +353,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "A slave bought on condition of manumission, then sold on the same condition: two wujūh (al-Azajī: not valid). Ibn Rajab builds it on whose right the manumission is: God's, as with the vowed slave, so it survives; or the seller's, which lapses with the arsh. The reading takes the right as on the slave. No madhhab marked."
+      "note": "A slave bought on condition of manumission (bi-sharṭ al-ʿitq, a stipulation: al-shurūṭ fīhā), then sold on the same condition: two wujūh (al-Azajī: not valid). Ibn Rajab builds it on whose right the manumission is: God's, as with the vowed slave («كما لو نذر عتق عبد»), so it survives; or the seller's, which lapses with the arsh. The reading takes the right as on the slave. No madhhab marked."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f005",
@@ -340,7 +364,7 @@
         "reason_ceases": false
       },
       "expected": true,
-      "note": "Selling a slave who committed a crime: he must ransom him; if insolvent, the sale is undone «تقديما لحق المجني عليه لسبقه»."
+      "note": "Selling a slave who committed a crime: he must ransom him (fidāʾ); if insolvent, the sale is undone «تقديما لحق المجني عليه لسبقه»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f006",

@@ -22,7 +22,7 @@ epistemic grade cannot reliably be inferred merely because a question mentions a
 related word. No factual truth values are inferred here. No encoder mirror or Lean
 ruling computation is called by routing.
 
-`typed_routing.Model` learns field relevance from the classical annotated cases:
+`signature_routing.Model` learns field relevance from the classical annotated cases:
 each fact key receives a TF-IDF centroid of texts carrying that key. A query yields
 a soft vector of field relevance; cosine similarity against each encoder's declared
 field signature supplies the structural score. Field weights downweight keys shared
@@ -68,6 +68,24 @@ lexical, structural and selected hybrid methods, enabling failure inspection.
 The safe conclusion is to retain lexical retrieval while developing better,
 reviewed structural extraction rather than increase this proxy's weight.
 
+## Replay on the merged main (2026-10-14)
+
+On merging into main the module became `usul_corpus.signature_routing`, since main had
+grown its own, unrelated `typed_routing` (blind-typed situations routed by the Prolog
+typing rules). The artifact was regenerated over main's 177 encoders, 841 classical
+cases and 253 declared field names, of which 249 are learned:
+
+| Method / structural weight | Top-1 | Top-5 | Top-10 |
+|---|---:|---:|---:|
+| Original lexical / 0 | 54.46% | 81.21% | 86.44% |
+| Fixed hybrid / .25 | 53.98% | 79.90% | 85.26% |
+| Fixed hybrid / .5 | 49.58% | 75.86% | 82.52% |
+| Signature relevance alone / 1 | 42.33% | 68.25% | 76.34% |
+| Nested-selected hybrid | 54.46% | 81.21% | 86.44% |
+
+Every fold again selects weight zero. The conclusion stands: the signature proxy
+loses 12.96 points at top-5, and lexical retrieval is retained.
+
 ## Original OOD remains blocked
 
 The original 123-case IslamQA evaluation is preserved, with committed lexical
@@ -102,9 +120,9 @@ status or legal evidence attribution changes.
 From the repository root:
 
 ```sh
-PYTHONPATH=pipeline python -m usul_corpus.typed_routing . --classical-only
-PYTHONPATH=pipeline python -m usul_corpus.typed_routing . --classical-only --check
-PYTHONPATH=pipeline python -m pytest pipeline/tests/test_typed_routing.py pipeline/tests/test_routing.py -q
+PYTHONPATH=pipeline python -m usul_corpus.signature_routing . --classical-only
+PYTHONPATH=pipeline python -m usul_corpus.signature_routing . --classical-only --check
+PYTHONPATH=pipeline python -m pytest pipeline/tests/test_signature_routing.py pipeline/tests/test_routing.py -q
 ```
 
 For the full original OOD comparison, materialize the pinned Arabic answers at

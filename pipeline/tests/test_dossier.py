@@ -37,7 +37,7 @@ def test_refs_resolve_within_their_limits():
     witness, with an inline excerpt no longer than that witness's rights allow."""
     for r in REFS:
         if r["ref"].startswith("src:"):
-            w = r["ref"][4:].split("/")[0]
+            w = r["ref"][4:].split("/")[0].split("#")[0]
             assert w in RIGHTS and "excerpt_ar" in r, r["ref"]
             assert len(r["excerpt_ar"]) <= EXCERPT_LEN[RIGHTS[w]], r["ref"]
         else:
@@ -47,7 +47,19 @@ def test_refs_resolve_within_their_limits():
 @pytest.mark.parametrize("ref", [r for r in REFS if "excerpt_ar" in r], ids=lambda r: r["ref"])
 def test_excerpts_are_verbatim(ref):
     """Letters-only comparison against the cached witness, and the page is the one the excerpt
-    ends on (the next page marker). Skipped where the witness is not cached (CI)."""
+    ends on (the next page marker). A witness without page markers (al-Saʿdī's born-digital edition)
+    is anchored instead by a furūq item or qāʿida (`src:<witness>#F019`, `#q013`): the excerpt must
+    then occur exactly once in it (PR-11). Skipped where the witness is not cached (CI)."""
+    if "#" in ref["ref"] and "/" not in ref["ref"]:
+        from usul_corpus.nusus import key
+        w, anchor = ref["ref"][4:].split("#")
+        src = CACHE / f"{w}.txt"
+        if not src.exists():
+            pytest.skip(f"{w} not cached")
+        assert key(src.read_text(encoding="utf-8")).count(key(ref["excerpt_ar"])) == 1, ref["ref"]
+        items = {i["id"] for p in (ROOT / "corpus/furuq").glob("*.json") for i in _json(p)["items"]}
+        assert anchor in items or (anchor[0] == "q" and anchor[1:].isdigit()), ref["ref"]
+        return
     w, loc = ref["ref"][4:].split("/")
     src = CACHE / f"{w}.txt"
     if not src.exists():
@@ -94,3 +106,24 @@ def test_refinement_closures_are_conservative():
 def test_docs_are_generated():
     for path, text in docs_pages().items():
         assert path.read_text(encoding="utf-8") == text, f"{path} stale: run `python -m usul_corpus docs`"
+
+
+@pytest.mark.parametrize("ref", [r for r in REFS if "excerpt_ar" in r and r["ref"].startswith("src:")], ids=lambda r: r["ref"])
+def test_excerpts_do_not_stop_before_a_qualifier(ref):
+    """An excerpt that ends where its witness goes on with «إلا», «لكن», «ما لم» … reads as
+    unqualified (problem register PR-07)."""
+    from usul_corpus.nusus import cut_before_qualifier
+    src = CACHE / f"{ref['ref'][4:].split('/')[0].split('#')[0]}.txt"
+    if not src.exists():
+        pytest.skip("witness not cached")
+    assert not cut_before_qualifier(src.read_text(encoding="utf-8"), ref["excerpt_ar"])
+
+
+def test_every_term_rests_on_a_verbatim_text():
+    """A definition is a drafted paraphrase; each term must also carry its source's own words, inline
+    or in the record it cites (problem register PR-13)."""
+    recs = {r["id"]: r for p in (ROOT / "corpus/records").glob("*.jsonl") for r in map(json.loads, p.read_text(encoding="utf-8").splitlines())}
+    def verbatim(r):
+        x = r if "excerpt_ar" in r else recs.get(r["ref"], {})
+        return any((x.get(k) or "").strip() for k in ("excerpt_ar", "case_ar", "statement_ar"))
+    assert not [t["key"] for t in GLOSS["terms"] if not any(verbatim(r) for r in t["refs"])]

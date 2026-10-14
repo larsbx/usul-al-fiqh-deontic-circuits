@@ -6,6 +6,251 @@
   },
   "works": [
     {
+      "id": "quran",
+      "title_ar": "القرآن الكريم",
+      "title_tr": "al-Qurʾān al-Karīm",
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "cc_by_verbatim",
+      "witnesses": [
+        {
+          "id": "tanzil-quran-simple",
+          "kind": "url",
+          "url": "https://tanzil.net/pub/download/index.php?quranType=simple&outType=txt-2&agree=true",
+          "format": "text",
+          "edition": "Tanzil Quran Text (Simple), v1.1: the ʿUthmānic muṣḥaf in standard orthography; verbatim, distributed with its licence footer"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "bukhari.sahih",
+      "title_ar": "الجامع المسند الصحيح",
+      "title_tr": "Ṣaḥīḥ al-Bukhārī",
+      "author": {
+        "name_tr": "Muḥammad b. Ismāʿīl al-Bukhārī",
+        "death_ah": 256
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-bukhari-shamela1681",
+          "kind": "openiti",
+          "repo": "0275AH",
+          "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "edition": "Shamela 1681, Dār Ṭawq al-Najāh, ed. al-Nāṣir (numbering of Fuʾād ʿAbd al-Bāqī)"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "muslim.sahih",
+      "title_ar": "المسند الصحيح المختصر",
+      "title_tr": "Ṣaḥīḥ Muslim",
+      "author": {
+        "name_tr": "Muslim b. al-Ḥajjāj",
+        "death_ah": 261
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-muslim-shamela1727",
+          "kind": "openiti",
+          "repo": "0275AH",
+          "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "edition": "Shamela 1727, ed. Muḥammad Fuʾād ʿAbd al-Bāqī"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "abu_dawud.sunan",
+      "title_ar": "سنن أبي داود",
+      "title_tr": "Sunan Abī Dāwūd",
+      "author": {
+        "name_tr": "Abū Dāwūd al-Sijistānī",
+        "death_ah": 275
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-abudawud-shamela1726",
+          "kind": "openiti",
+          "repo": "0275AH",
+          "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+          "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.Shamela0001726-ara1",
+          "edition": "Shamela 1726, ed. Muḥyī al-Dīn ʿAbd al-Ḥamīd"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "tirmidhi.jami",
+      "title_ar": "الجامع الكبير (سنن الترمذي)",
+      "title_tr": "Jāmiʿ al-Tirmidhī",
+      "author": {
+        "name_tr": "Muḥammad b. ʿĪsā al-Tirmidhī",
+        "death_ah": 279
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-tirmidhi-shamela7895",
+          "kind": "openiti",
+          "repo": "0300AH",
+          "commit": "01a1544130e0236850ef2698923ad01575c5bd7c",
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "edition": "Shamela 7895, ed. Aḥmad Shākir et al."
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "nasai.sunan_sughra",
+      "title_ar": "السنن الصغرى (المجتبى)",
+      "title_tr": "Sunan al-Nasāʾī (al-Mujtabā)",
+      "author": {
+        "name_tr": "Aḥmad b. Shuʿayb al-Nasāʾī",
+        "death_ah": 303
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-nasai-shamela829",
+          "kind": "openiti",
+          "repo": "0325AH",
+          "commit": "089e665b4958e0f145a46941987fb81cf3dda1b8",
+          "path": "data/0303Nasai/0303Nasai.SunanSughra/0303Nasai.SunanSughra.Shamela0000829-ara1",
+          "edition": "Shamela 829, ed. ʿAbd al-Fattāḥ Abū Ghudda"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_maja.sunan",
+      "title_ar": "سنن ابن ماجه",
+      "title_tr": "Sunan Ibn Māja",
+      "author": {
+        "name_tr": "Muḥammad b. Yazīd Ibn Māja",
+        "death_ah": 273
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnmaja-shamela1198",
+          "kind": "openiti",
+          "repo": "0275AH",
+          "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+          "path": "data/0273IbnMaja/0273IbnMaja.Sunan/0273IbnMaja.Sunan.Shamela0001198-ara1",
+          "edition": "Shamela 1198, ed. Muḥammad Fuʾād ʿAbd al-Bāqī"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "malik.muwatta",
+      "title_ar": "الموطأ",
+      "title_tr": "al-Muwaṭṭaʾ",
+      "author": {
+        "name_tr": "Mālik b. Anas",
+        "death_ah": 179
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-muwatta-shamela1699",
+          "kind": "openiti",
+          "repo": "0200AH",
+          "commit": "599f22fe249871f602efe2e0ddc801d3742960a3",
+          "path": "data/0179MalikIbnAnas/0179MalikIbnAnas.Muwatta/0179MalikIbnAnas.Muwatta.Shamela0001699-ara1.completed",
+          "edition": "Shamela 1699, ed. Muḥammad Fuʾād ʿAbd al-Bāqī"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ahmad.musnad",
+      "title_ar": "المسند",
+      "title_tr": "Musnad Aḥmad",
+      "author": {
+        "name_tr": "Aḥmad b. Ḥanbal",
+        "death_ah": 241
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-musnad-shamela25794",
+          "kind": "openiti",
+          "repo": "0250AH",
+          "commit": "0cc00c0646c81988c75a3815fe6d9a5fa65ce592",
+          "path": "data/0241IbnHanbal/0241IbnHanbal.Musnad/0241IbnHanbal.Musnad.Shamela0025794-ara1.mARkdown",
+          "edition": "Shamela 25794, Muʾassasat al-Risāla, ed. al-Arnaʾūṭ et al."
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "darimi.sunan",
+      "title_ar": "سنن الدارمي",
+      "title_tr": "Sunan al-Dārimī",
+      "author": {
+        "name_tr": "ʿAbd Allāh b. ʿAbd al-Raḥmān al-Dārimī",
+        "death_ah": 255
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-darimi-shamela21795",
+          "kind": "openiti",
+          "repo": "0275AH",
+          "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+          "path": "data/0255CabdAllahDarimi/0255CabdAllahDarimi.Sunan/0255CabdAllahDarimi.Sunan.Shamela0021795-ara3",
+          "edition": "Shamela 21795"
+        }
+      ],
+      "status": "located"
+    },
+    {
       "id": "ibn_uthaymin.usul",
       "title_ar": "الأصول من علم الأصول",
       "title_tr": "al-Uṣūl min ʿIlm al-Uṣūl",
@@ -152,6 +397,14 @@
           },
           "edition": "Dār al-Waṭan, ed. Khālid al-Mushayqiḥ (same scan as archive-pdf1995)",
           "quality": "ocr_unreviewed"
+        },
+        {
+          "id": "islamhouse-qj-doc",
+          "kind": "url",
+          "url": "https://www.islamland.com/uploads/books/ar_university_rules_and_assets.doc",
+          "format": "doc",
+          "fetch": "on_demand",
+          "edition": "Dār al-Waṭan, ed. Khālid al-Mushayqiḥ, as typeset by IslamHouse (Maktabat Ibn Saʿdī 4, 2009): the same edition as archive-pdf1995, born-digital"
         }
       ],
       "segmenter": {
@@ -3244,6 +3497,32 @@
         "genre": "takhrij",
         "scholar": "albani"
       }
+    },
+    {
+      "id": "albani.sahih_daif_tirmidhi",
+      "title_ar": "صحيح وضعيف سنن الترمذي",
+      "title_tr": "Ṣaḥīḥ wa-Ḍaʿīf Sunan al-Tirmidhī",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": false,
+      "track": "albani_hadith",
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "openiti-albani-sdtirmidhi-shamela782",
+          "kind": "openiti",
+          "repo": "1425AH",
+          "commit": "6d71d2af1be5a49f1db3b52cdda15ea11da569de",
+          "path": "data/1420MuhammadNasirDinAlbani/1420MuhammadNasirDinAlbani.SahihWaDacifSunanTirmidhi/1420MuhammadNasirDinAlbani.SahihWaDacifSunanTirmidhi.Shamela0000782-ara1",
+          "edition": "Shamela 782: al-Albānī's verdict on every ḥadīth of al-Tirmidhī, in al-Tirmidhī's numbering"
+        }
+      ],
+      "status": "located"
     },
     {
       "id": "albani.tamam_minna",

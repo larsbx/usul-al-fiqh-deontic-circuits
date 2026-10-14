@@ -182,7 +182,7 @@
    "status": "referenced",
    "established": [
     {
-     "ref": "src:openiti-insaf-shamela21609/v12:p008",
+     "ref": "src:openiti-insaf-shamela21609/v12:p009",
      "relation": "refines",
      "note": "The judge may invite one who confessed to a ḥadd to retract; al-Intiṣār: prompting the retraction is lawful. So in the ḥudūd a retraction is not inert.",
      "excerpt_ar": "للحاكم أن يعرض للمقر بحد أن يرجع عن إقراره، وقال في الانتصار: تلقينه الرجوع مشروع"
@@ -320,10 +320,10 @@
    "status": "referenced",
    "established": [
     {
-     "ref": "src:openiti-kawkab-shamela12019/v04:p442",
+     "ref": "src:openiti-kawkab-shamela12019/v04:p443",
      "relation": "agrees",
      "note": "'No harm and no reciprocal harm' is a principle our companions reasoned with in many matters; rulings are either for securing benefits or for repelling harms.",
-     "excerpt_ar": "لا ضرر ولا ضرار ... وقد علل أصحابنا بذلك في مسائل كثيرة"
+     "excerpt_ar": "لا ضرر ولا ضرار\" 4 وفي رواية \"ولا إضرار\" 5 بزيادة همزة في أوله، وألف بين الراءين6. وقد علل أصحابنا بذلك في مسائل كثيرة"
     }
    ],
    "analogies": [
@@ -453,7 +453,7 @@
      "note": "Lots distinguish the entitled when entitlement attaches to an unspecified one among equals, or to recover a specific entitled person lost in confusion; not used for lineage. The reading lacks the equality condition and the lineage exclusion."
     },
     {
-     "ref": "src:openiti-rajab-shamela21730/v01:p348",
+     "ref": "src:openiti-rajab-shamela21730/v01:p350",
      "relation": "contradicts",
      "note": "Takhrīj evidence (corpus/takhrij, cases q160.f007, f012, f015, f044): where a specific entitled person is lost in confusion, Ibn Rajab prescribes lots even though the property could be divided between the claimants; the reading's order (division before lots) holds only for an unspecified entitlement among equals.",
      "excerpt_ar": "إذا ادعى الوديعة اثنان فقال المودع: لا أعلم لمن هي منكما. فإنه يقرع بينهما، فمن قرع فصاحبه ، حلف وأخذها نص عليه أحمد، وهي من فروع مسألة تداعي عين بيد ثالث يعترف بأنها لأحدهما وسنذكرها إن شاء الله."
@@ -1027,7 +1027,7 @@
    "status": "referenced",
    "established": [
     {
-     "ref": "src:openiti-rajab-shamela21730/v01:p338",
+     "ref": "src:openiti-rajab-shamela21730/v01:p340",
      "relation": "contradicts",
      "note": "Takhrīj evidence (cases q159.f007, f008): with a known state and preponderant belief of its removal, Ibn Rajab holds to the aṣl and says preponderant belief does not suffice; at f013 he allows breaking the fast on preponderant belief of sunset «because time has indicators by which it is known». Equal grades, opposite rulings: the deciding fact is the indicator, not the grade.",
      "excerpt_ar": "إذا شك في طلوع الفجر في رمضان فإنه يباح له الأكل حتى يتيقن طلوعه نص عليه، أحمد، ولا عبرة في ذلك بغلبة الظن وبالقرائن ونحوها ما لم يكن مستندا إلى إخبار ثقة بالطلع."
@@ -1093,7 +1093,7 @@
     {
      "ref": "src:openiti-majmufatawa-shamela7289/v13:p117",
      "relation": "refines",
-     "excerpt_ar": "فرق بين اعتقاد الرجحان ورجحان الاعتقاد أما اعتقاد الرجحان فهو علم والمجتهد ما عمل إلا بذلك العلم وهو اعتقاد رجحان هذا على هذا وأما رجحان هذا الاعتقاد على هذا الاعتقاد فهو الظن",
+     "excerpt_ar": "فرق بين اعتقاد الرجحان ورجحان الاعتقاد أما اعتقاد الرجحان فهو علم والمجتهد ما عمل إلا بذلك العلم وهو اعتقاد رجحان هذا على هذا وأما رجحان هذا الاعتقاد على هذا الاعتقاد فهو الظن؛ لكن لم يكن ممن قال الله فيه: {إن يتبعون إلا الظن} بل هنا ظن رجحان هذا وظن رجحان ذاك وهذا الظن هو الراجح ورجحانه معلوم",
      "note": "Ibn Taymiyya: the jurist acts on knowledge of preponderance; only the preponderance of one belief over another is ẓann."
     },
     {

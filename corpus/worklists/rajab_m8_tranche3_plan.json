@@ -500,12 +500,12 @@
       "source_evidence": [
         {
           "ref": "src:openiti-rajab-shamela21730/v01:p068",
-          "excerpt_ar": "الكتابة الفاسدة تضمن بالمسمى فإذا أدى ما سمى فيها حصل العتق ولم يلزمه ضمان قيمته ذكره أبو بكر وهو ظاهر كلام أحمد، واتفق الأصحاب على ذلك",
+          "excerpt_ar": "الكتابة الفاسدة تضمن بالمسمى فإذا أدى ما سمى فيها حصل العتق ولم يلزمه ضمان قيمته ذكره أبو بكر وهو ظاهر كلام أحمد، واتفق الأصحاب على ذلك لكن المتأخرون زعموا أن الكتابة الفاسدة تعليق بصفة فلا يؤثر فسادها ولا تحريمها كما لو قال لعبده إن أعطيتني خمرا فأنت حر فأعطاه عتق لوجود الصفة",
           "note": "The common outcome; no claim to resolve competing explanations."
         },
         {
           "ref": "src:openiti-rajab-shamela21730/v01:p068",
-          "excerpt_ar": "ولا يقع العتق عنده بأداء المحرم لأن العقد لا ينعقد بعوض محرم بل هو عنده باطل",
+          "excerpt_ar": "وأما أبو بكر فعنده أن الكتابة عقد معاوضة أبدا وهو اختيار ابن عقيل وهو الأظهر ولا يقع العتق عنده بأداء المحرم لأن العقد لا ينعقد بعوض محرم بل هو عنده باطل.",
           "note": "Excluded prohibited-consideration branch."
         }
       ],
@@ -906,6 +906,115 @@
       "closed_by": [
         "rule:ayman_by_urf"
       ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
+      "round": "lane D: the madhhab side verified against al-Inṣāf and the muʿtamad",
+      "from_case_sha256": "07ad9ea909d40aa6dcf2cb6e1bf14c77a848e5c36d41c19dd69de066e4a8df35",
+      "case_sha256": "8149b82ee6c11df7f97bca352429c1f1fe6379a618c2551395ed5529be84adfa",
+      "side_check": {
+        "from_matches": true,
+        "refs": [
+          "src:openiti-buhuti-kashshaf-shamela21642/v01:p039",
+          "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p021",
+          "src:openiti-insaf-shamela21609/v01:p057"
+        ],
+        "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side.",
+        "contradictions": [
+          {
+            "evidence_index": 0,
+            "case_facts": {
+              "running": true
+            },
+            "rationale": "Running water: al-Insaf marks whole-body accounting as the madhhab; Sharh al-Muntaha expressly contrasts the per-jirya report with the adopted whole-body rule. The opposing per-jirya tashih is retained in the full ledger, not selected as contradiction evidence."
+          },
+          {
+            "evidence_index": 2,
+            "case_facts": {
+              "running": true
+            },
+            "rationale": "Running water: al-Insaf marks whole-body accounting as the madhhab; Sharh al-Muntaha expressly contrasts the per-jirya report with the adopted whole-body rule. The opposing per-jirya tashih is retained in the full ledger, not selected as contradiction evidence."
+          },
+          {
+            "evidence_index": 3,
+            "case_facts": {
+              "running": true
+            },
+            "rationale": "Running water: al-Insaf marks whole-body accounting as the madhhab; Sharh al-Muntaha expressly contrasts the per-jirya report with the adopted whole-body rule. The opposing per-jirya tashih is retained in the full ledger, not selected as contradiction evidence."
+          }
+        ]
+      }
+    }
+  ],
+  "note_revisions": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001",
+      "from_note": "A najis vessel dipped in running water as seven jiryas pass: one washing or seven? Two wujūh; the ẓāhir of the aṣḥāb is one washing, and al-Qāḍī's Sharḥ says Aḥmad's words point to it. Here the madhhab side is the whole.",
+      "case_sha256": "9d39f3a5390f9cbb4440d3cf4d314239097be790e080e848fc33064a80a199cb",
+      "reason": "English note names the Arabic term (problem register PR-02: «wash» is ghasl here); class, facts and expected unchanged"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f000",
+      "from_note": "A thing received under a defective sale: the known madhhab position requires equivalent/value, not the named price, because compensation comes from loss under the hand, not this defective contract. Abu Bakr, followed here by Taqi al-Din, is reported as selecting the named consideration. Full paragraph read beyond the 400-character record cap.",
+      "case_sha256": "d140ae9f3c3cec32869e8157ffadd98fbd235449d6435ac30eb4381621f07ceb",
+      "reason": "English note names the Arabic term (problem register PR-02: «void»/«defective» is fāsid here); class, facts and expected unchanged"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f002",
+      "from_note": "Defective kitabah with a lawful named consideration: the source expressly says the named amount, not the slave's value, and reports agreement on that outcome. The full paragraph distinguishes a void undertaking with prohibited consideration, which is outside this encoding. The competing explanations (contract versus condition) are retained for human review; the guard tests the stated amount basis only.",
+      "case_sha256": "632487395b519cfd95bf478768aea7385746dd57ac778682db0ec63a8d7dbb8c",
+      "reason": "English note names the Arabic term (problem register PR-02: «void»/«defective» is fāsid here); then PR-03: «condition» is taʿlīq bi-ṣifa; class, facts and expected unchanged"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f001",
+      "from_note": "He disposed of what he had bought, the sale being void, and he had in fact inherited it: «والمذهب هنا الصحة بلا ريب», since he relied on a permitting cause and had another in fact (Taqī al-Dīn); Ibn Rajab adds the usurper's gift to the owner as support.",
+      "case_sha256": "7725b1db48c8db77549005665ab7eacffa67a0b1fb5c6c2cc53e9159940d4a1f",
+      "reason": "English note names the Arabic term (problem register PR-02: «void»/«defective» is fāsid here); then PR-02 «cause»: sabab; class, facts and expected unchanged"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f000",
+      "from_note": "Umm al-walad, the mukātab and the mudabbar, which have a share of freedom's rulings but not its reality: «فيضمن باليد على ما ذكره القاضي والأصحاب», and by a void contract in qiyās al-madhhab (Abū al-Barakāt).",
+      "case_sha256": "7a8170721ee5a8a620917262ef88770bd627fdc10f85b742805412d790d8f64d",
+      "reason": "English note names the Arabic term (problem register PR-02: «void»/«defective» is fāsid here); class, facts and expected unchanged"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f002",
+      "reason": "English-only fields name the Arabic term (problem register PR-02); class, facts, rulings and expected unchanged",
+      "from_who": [
+        "ashhar: lifted (each jirya a washing)",
+        "Abū al-Khaṭṭāb; Aḥmad's naṣṣ per Ibn Rajab: not lifted"
+      ],
+      "case_sha256": "0ca07ba37f9b73e411f5f8658aa2043bd38ba53f58598201920f0b33890453b6"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f001",
+      "reason": "English-only fields name the Arabic term (problem register PR-02); class, facts, rulings and expected unchanged",
+      "from_note": "Defective lease: the known madhhab requires equivalent rent. A named-rent alternative is derived from Abu Bakr's sale position. The source says its discussion is the same as sale; the Boolean fact denotes this explicit compensation basis, not a general classification of all leases.",
+      "case_sha256": "7665ecdff91208ea7fb53ea1dd2ff174d21c5c2af81f4ce552d4081195aba798"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f003",
+      "reason": "English-only fields name the Arabic term (problem register PR-02); class, facts, rulings and expected unchanged",
+      "from_note": "Defective nikah after consummation: the selected well-known Ahmad transmission, identified as the madhhab by Abu Bakr and Ibn Abi Musa and chosen by al-Qadi, fixes the named mahr. Another transmission, chosen by al-Khiraqi and the author of al-Mughni, fixes equivalent mahr. The full source explains the selected branch as contract compensation; no blanket rule about validity, all nikah, or all relations is inferred.",
+      "case_sha256": "94eb6b524d2f83f788d3cd1ad87a24459f0ad520329600987220cc2b06e6def5"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004",
+      "from_note": "A vowed Ramadan retreat was corrupted. The selected position is the apparent text of Ahmad and Ibn Abi Musa: make it up in corresponding days. The full paragraph extends the reasoning to the last ten days of the following Ramadan. Two wujuh are reported; apparent Ahmad text is not silently promoted to an independently accepted madhhab classification.",
+      "case_sha256": "6b431a2b9472e8601a6e41b23728f70835dceea35c1965bd4b19938e2d331920",
+      "reason": "English note names the Arabic term (PR-02 «oath/vow»: yamīn, nadhr, taʿlīq); class, facts and expected unchanged"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f001",
+      "from_note": "A traveller began behind a resident and the prayer was corrupted: make it up in full. Q31 explicitly requires the description of the binding undertaking, rather than the lesser baseline.",
+      "case_sha256": "ecc7ee23ee4252c4395a46c93baa8faec900e66fd3d734d6613dc365f06e74c4",
+      "reason": "English note names the Arabic term (PR-02 «obligatory/binding»: wājib, farḍ, mandūb, luzūm); class, facts and expected unchanged"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f002",
+      "from_note": "A pilgrimage begun with ihram at the home place was corrupted by intercourse: its make-up starts there, by Ahmad's text. The same paragraph contrasts prevention (ihsar), where a subsequent make-up starts only at the miqat because completion did not become binding. The prevention contrast has a separate Lean guard; baseline describes form, not an independently inferred duty to make up.",
+      "case_sha256": "728aaa13fa38c39c46f24ca32df27bab8ea31e7b49b4a298b4654404ab30dab0",
+      "reason": "English note names the Arabic term (PR-02 «obligatory/binding»: wājib, farḍ, mandūb, luzūm); class, facts and expected unchanged"
     }
   ]
 }
