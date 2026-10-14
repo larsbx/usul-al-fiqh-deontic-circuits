@@ -174,6 +174,9 @@ qaida_type(rajab12, 'Ibn Rajab 12 «المذهب أن العبادات الوا�
 type_field(rajab12, substitutes, 'Option Bool').
 qaida_type(rajab14, 'Ibn Rajab 14 «(القاعدة الرابعة عشر) : إذا وجد سبب إيجاب أو تحريم من أحد رجلين لا يعلم عينه منهما، فهل يلحق الحكم بكل منهما أو لا يلحق بواحد منهما شيء في المسألة خلاف ولها صور: (إحداها) إذا وجد اثنان منيا في ثوب ينامان فيه أو سمعا …». Read by `cause_from_one_of_two`.').
 type_field(rajab14, harmless, 'Option Bool').
+qaida_type(rajab14_certainty, 'Ibn Rajab 14 on the first riwāya\'s own ground, «نظرا إلى أن كل واحد منهما متيقن للطهارة شاك في الحدث»: each man is certain of his own prior state and doubts only the breach (Q15: each on his aṣl). Read by `cause_on_certainty` (`Usul.Readings.Concordance`).').
+type_extends(rajab14_certainty, rajab14).
+type_field(rajab14_certainty, each_certain, 'Option Bool').
 qaida_type(rajab15, 'Ibn Rajab 15 «إذا استصحبنا أصلا وأعملنا ظاهرا في طهارة شيء أو حله أو حرمته وكان لازم ذلك تغير أصل آخر يجب استصحابه أو ترك العمل بظاهر آخر يجب إعماله لم يلتفت إلى ذلك اللازم على الصحيح، ولذلك صور: منها) إذا استيقظ من نومه فوجد …». Read by `each_on_its_asl`.').
 type_field(rajab15, separate_matters, 'Option Bool').
 qaida_type(rajab17, 'Ibn Rajab 17 «إذا تقابل عملان أحدهما ذو شرف في نفسه ورفعة وهو واحد، والآخر ذو تعدد في نفسه وكثرة، فأيهما يرجح.». Read by `many_over_noble`.').
@@ -486,6 +489,9 @@ encoder_type(cancel_on_existence_valid, 'Bool').
 encoder_reads(cancel_on_existence_valid, 1, legitimate_purpose).
 encoder_type(cause_from_one_of_two, 'Usul.Refinements.Attach').
 encoder_reads(cause_from_one_of_two, 1, harmless).
+encoder_type(cause_on_certainty, 'Usul.Refinements.Attach').
+encoder_reads(cause_on_certainty, 1, harmless).
+encoder_reads(cause_on_certainty, 2, each_certain).
 encoder_type(combination_bars_its_amount, 'Bool').
 encoder_reads(combination_bars_its_amount, 1, combining_amount).
 encoder_type(combining_forms, 'Bool').

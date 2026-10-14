@@ -756,7 +756,11 @@
         "nass",
         "nass"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "cause_on_certainty",
+        "from": "cause_from_one_of_two",
+        "farq": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000"
+      },
       "naskh": null,
       "evidence": [
         {

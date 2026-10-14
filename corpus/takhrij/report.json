@@ -8,11 +8,11 @@
   "segmentation_error": 1
  },
  "coverage": 0.946,
- "madhhab_coverage": 0.703,
+ "madhhab_coverage": 0.704,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 238,
+ "ikhtilaf_matching_madhhab": 239,
  "gaps_open": 43,
- "revisited": 37,
+ "revisited": 38,
  "revisit_queue": [],
  "per_encoder": {
   "itlaf": {
@@ -254,7 +254,7 @@
    "genuine_ikhtilaf": 3
   },
   "cause_from_one_of_two": {
-   "genuine_ikhtilaf": 3
+   "genuine_ikhtilaf": 2
   },
   "each_on_its_asl": {
    "derivable": 3,
@@ -359,6 +359,9 @@
   },
   "command_intended_usage": {
    "missing_rule": 1
+  },
+  "cause_on_certainty": {
+   "genuine_ikhtilaf": 1
   },
   "mubashara_tasabbub": {
    "derivable": 5,

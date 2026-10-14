@@ -38,6 +38,7 @@ Severity:
 | PR-25 | B | A substitution re-run after a partial failure doubled its own insertion wherever the new text contained the old (e.g. «إطلاق الوجوب أو الفرض» twice); 9 sites, 2 already committed | 9 fields | closed: repaired; a test rejects any quote or parenthetical repeated back to back, and the edit helper skips an edit already applied |
 | PR-26 | A | The al-Irwāʾ reader kept a header only if it continued the run greedily, so one misnumbered header («(٣٣٨)» printed for 238) made it drop every entry from 238 to 338, and al-Albānī's verdicts there (e.g. 276, «من عمل عملا ليس عليه أمرنا فهو رد») read as absent. Found while closing PR-05 | 145 entries | closed: the reader takes the longest increasing run of headers; coverage re-pinned (2121 found, 562 missing, of which only 238 and 2555 are present but unread) |
 | PR-27 | A | Merging main brought ~400 new annotations written before the term guards existed; 246 English sites named no term, and some mistranslated | 246 fields | closed: each named from its source word (four parallel passes, applied centrally, every guard green); main's independent readings of Ibn Rajab 3, 9, 14, 15 (tranches 7–8) supersede this branch's tranche 6 |
+| PR-28 | A | Two readings of Ibn Rajab 3, 9, 14 and 15 coexisted after the merge, and on 14.f000 the M8 reading bound each man to the ghusl where the madhhab binds neither | 4 qawāʿid, 1 farʿ | closed: Q3, Q9, Q15 proved equivalent; Q14 joined (jamʿ) by Ibn Rajab's own ground «متيقن للطهارة شاك في الحدث» (`attachOnCertainty`, conservative), 14.f000 revisited onto the madhhab the ledger's taṣḥīḥ and jazm already held |
 | PR-14 | A | The bulk «impurity → najāsa» replacement could mislabel ḥadath | 27 fields | closed `021d1d8`: each reviewed; 18.f015 and 159.f007 corrected from source |
 
 ## PR-02 families (English gloss → terms it conflates)
@@ -173,4 +174,13 @@ Two entries were absent only because the Irwāʾ reader had dropped them (PR-26)
 * **q046.f000:** the note had al-Qāḍī himself swearing. In fact he rules on one who swears.
 
 The tarjīḥ test also learned «ترجيح». This branch's tranche 6 is dropped in favour of main's independent readings of the same qawāʿid. Its Lean readings stay where the tanāquḍ pairs cite them, and reconciling the two readings is left open.
+
+**PR-28, the bank applied to its two readings.** Following the integrator's rule for a duplicate principle, each pair of readings was either proved equivalent or joined.
+
+* **Qāʿida 3:** `wholeObligatory = excessObligatory`.
+* **Qāʿida 9:** `worshipValidDespite` is `validDespite` under the bijection of the four sites. The M8 reading thereby inherits the proof that Ibn Rajab 9 refines al-Saʿdī Q38.
+* **Qāʿida 15:** `consequenceCarries` is the negation of `eachOnItsAsl`.
+* **Qāʿida 14:** the two readings answer different moves of the text. One is each man alone («فهل يلحق الحكم بكل منهما», with the farq «بخلاف إيجاب الطهارة عليهما فإنه لا ضرر فيه»); the other is the two taken together («فينظر إليهما مجتمعين في حكم يتعلق باجتماعهما»).
+
+The ledger already held, for 14.f000, al-Inṣāf «على الصحيح من المذهب», al-Furūʿ «عن الأصح» and Sharḥ al-Muntahā «فلا غسل على واحد». All three give neither man the ghusl, and Sharḥ al-Muntahā adds that neither follows the other in prayer, which is the joint ruling. Yet the entry had no jamʿ, and the M8 reading bound each. The jamʿ `attachOnCertainty` takes the first riwāya's own ground, «كل واحد منهما متيقن للطهارة شاك في الحدث», which is Q15. It is conservative over `attachTo` and departs only on the harmless case, only to «neither» (proved). `reconcile.check` confirms it lands on the prevailing side. The divorce and slave-women cases keep their abstention.
 

@@ -328,7 +328,9 @@
     "Usul.Tanaqud.t15_clash",
     "Usul.Tanaqud.t15_jam",
     "Usul.Refinements.oneOfTwoAttaches",
-    "Usul.Refinements.consequenceCarries"
+    "Usul.Refinements.consequenceCarries",
+    "Usul.Readings.Concordance.q14_alone_is_q15",
+    "Usul.Readings.Concordance.q14_together_attaches_alone_not"
    ],
    "table": [
     {
