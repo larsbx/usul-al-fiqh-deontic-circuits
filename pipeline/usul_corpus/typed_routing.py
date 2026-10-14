@@ -28,10 +28,11 @@ KS = (1, 5, 10)
 
 @dataclass(frozen=True)
 class TestSet:
-    """A labelled test set: its cases as (unit, encoder, needs), and its lexical baseline."""
+    """A labelled test set: its cases as (unit, encoder, needs), and the routing index's ranking of
+    the encoders for each unit (the lexical baseline, held out where the index was fitted on the set)."""
     name: str
     cases: Callable[[Path], list[tuple[str, str, list[str]]]]
-    lexical: Callable[[Path], dict]
+    ranker: Callable[[Path], dict[str, list[str]]]
 
     @property
     def situations(self) -> str:
@@ -51,9 +52,13 @@ def _islamqa_cases(root: Path) -> list[tuple[str, str, list[str]]]:
     return [(c["far"].rsplit(".", 1)[0], c["encoder"], c.get("needs", [])) for c in cases]
 
 
-def _islamqa_lexical(root: Path) -> dict:
-    ood = json.loads((root / "corpus" / routing.OOD).read_text(encoding="utf-8"))
-    return {"recall": ood["recall"], "prior": ood["prior"]}
+def _islamqa_ranker(root: Path) -> dict[str, list[str]]:
+    """The full index ranks each answer's title and question, as in ``corpus/routing/ood.json``."""
+    import gzip
+    corpus, need = root / "corpus", {u for u, _, _ in _islamqa_cases(root)}
+    model = routing.Model.fit(routing.evidence(corpus))
+    with gzip.open(root / routing.ANSWERS, "rt", encoding="utf-8") as fh:
+        return {r["id"]: model.rank(f"{r['title']} {r['question']}") for r in map(json.loads, fh) if r["id"] in need}
 
 
 FOLD = 0
@@ -65,22 +70,16 @@ def _classical_cases(root: Path) -> list[tuple[str, str, list[str]]]:
     return [(far, enc, needs.get(far, [])) for far, enc, _ in routing.cases(root / "corpus") if routing._fold(far) == FOLD]
 
 
-def _classical_lexical(root: Path) -> dict:
-    """The routing index's held-out recall on exactly this fold: fitted without it, qawāʿid kept."""
+def _classical_ranker(root: Path) -> dict[str, list[str]]:
+    """The index refitted without this fold (qawāʿid kept) ranks each farʿ's text."""
     corpus = root / "corpus"
     cs, qs = routing.cases(corpus), routing.qawaid(corpus)
-    train = [(e, t) for i, e, t in cs if routing._fold(i) != FOLD]
-    model = routing.Model.fit(qs + train)
-    freq = [e for e, _ in sorted(Counter(e for e, _ in train).items(), key=lambda x: (-x[1], x[0]))]
-    test = [(e, t) for i, e, t in cs if routing._fold(i) == FOLD]
-    hits = {k: sum(e in model.rank(t)[:k] for e, t in test) for k in KS}
-    prior = {k: sum(e in freq[:k] for e, _ in test) for k in KS}
-    return {"recall": {str(k): round(hits[k] / len(test), 4) for k in KS},
-            "prior": {str(k): round(prior[k] / len(test), 4) for k in KS}}
+    model = routing.Model.fit(qs + [(e, t) for i, e, t in cs if routing._fold(i) != FOLD])
+    return {i: model.rank(t) for i, _, t in cs if routing._fold(i) == FOLD}
 
 
-SETS = (TestSet("islamqa_tranche1", _islamqa_cases, _islamqa_lexical),
-        TestSet("rajab_fold0", _classical_cases, _classical_lexical))
+SETS = (TestSet("islamqa_tranche1", _islamqa_cases, _islamqa_ranker),
+        TestSet("rajab_fold0", _classical_cases, _classical_ranker))
 
 
 def sid(answer: str, i: int) -> str:
@@ -129,9 +128,15 @@ def report(root: Path, ts: TestSet, cov: dict[str, dict[str, tuple[int, int]]]) 
     data = json.loads((root / ts.situations).read_text(encoding="utf-8"))
     cases = ts.cases(root)
     typed = {a["answer"] for a in data["answers"]}
-    hits, named_hits, applied, rows = defaultdict(int), defaultdict(int), 0, []
+    lexical = ts.ranker(root)
+    hits, named_hits, lex_hits, hyb_hits, applied, rows = (defaultdict(int), defaultdict(int), defaultdict(int),
+                                                          defaultdict(int), 0, [])
     for unit, encoder, needs in cases:
         scores = {e: k / n for e, (k, n) in cov.get(unit, {}).items()}
+        words = lexical[unit]
+        position = {e: i for i, e in enumerate(words)}
+        # types first, words break ties and order the rest
+        hybrid = sorted(words, key=lambda e: (-scores.get(e, 0.0), position[e]))
 
         def rank_of(e: str) -> int | None:
             s = scores.get(e, 0.0)
@@ -143,12 +148,14 @@ def report(root: Path, ts: TestSet, cov: dict[str, dict[str, tuple[int, int]]]) 
         for k in KS:
             hits[k] += rank is not None and rank <= k
             named_hits[k] += best is not None and best <= k
+            lex_hits[k] += encoder in words[:k]
+            hyb_hits[k] += encoder in hybrid[:k]
         rows.append({"case": unit, "encoder": encoder, "settled": round(s, 4), "rank": rank,
                      **({"named_rules": named, "best_rank_with_named": best} if named else {})})
     n = len(cases)
     applying = [sum(k == m for k, m in cov.get(a, {}).values()) for a in sorted(typed)]
     touched = [len(cov.get(a, {})) for a in sorted(typed)]
-    lexical = ts.lexical(root)
+    prior_order = [e for e, _ in sorted(Counter(e for _, e, _ in routing.cases(root / "corpus")).items(), key=lambda x: (-x[1], x[0]))]
     return {"schema_version": 1, "status": "candidate", "set": ts.name,
             "method": "blind typing into Usul.Typing situations; Prolog routing by coverage of each encoder's fields",
             "answers": len(typed), "situations": sum(len(a["situations"]) for a in data["answers"]),
@@ -156,7 +163,10 @@ def report(root: Path, ts: TestSet, cov: dict[str, dict[str, tuple[int, int]]]) 
             "cases": n, "encoders": len(encoders), "applies": round(applied / n, 4),
             "recall": {str(k): round(hits[k] / n, 4) for k in KS},
             "recall_with_named_rules": {str(k): round(named_hits[k] / n, 4) for k in KS},
-            "lexical_recall": lexical["recall"], "lexical_prior": lexical["prior"],
+            "lexical_recall": {str(k): round(lex_hits[k] / n, 4) for k in KS},
+            "hybrid_recall": {str(k): round(hyb_hits[k] / n, 4) for k in KS},
+            "hybrid": "types first: encoders by the share of their fields the situation settles, lexical rank breaking ties and ordering the rest",
+            "prior_recall": {str(k): round(sum(e in prior_order[:k] for _, e, _ in cases) / n, 4) for k in KS},
             "encoders_applying_per_answer": round(sum(applying) / len(applying), 2),
             "encoders_touched_per_answer": round(sum(touched) / len(touched), 2),
             "by_encoder": by_encoder(rows), "cases_detail": rows}

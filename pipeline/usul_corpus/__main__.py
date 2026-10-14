@@ -414,7 +414,7 @@ def cmd_typed_routing(args: argparse.Namespace) -> int:
         else:
             (ROOT / ts.report).write_text(rep, encoding="utf-8")
         r = json.loads(rep)
-        print(json.dumps({"set": ts.name, **{k: r[k] for k in ("cases", "applies", "recall", "lexical_recall")}}))
+        print(json.dumps({"set": ts.name, **{k: r[k] for k in ("cases", "recall", "lexical_recall", "hybrid_recall")}}))
     if stale:
         print(f"typed routing stale ({', '.join(stale)}): run python -m usul_corpus typed-routing", file=sys.stderr)
         return 1

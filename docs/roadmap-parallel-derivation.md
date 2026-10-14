@@ -132,7 +132,15 @@ Precedents:
         - 97's `despaired` against 106's `despair`;
         - 98's `owner_unknown` against 106's `unknown`.
       - Typed routing on the IslamQA set is unchanged. The lexical baseline, refitted over 160 encoders, falls to 0.00 / 0.24 / 0.33.
-    - **Next:** repeat T3 on classical units (mutūn bābs, Masāʾil entries), where the routing index's lexical profiles were strong. Then repeat T3 on classical units (mutūn bābs, Masāʾil entries), where the routing index's lexical profiles were strong.
+    - **Classical units (2026-10-14).** Fold 0 of the routing index's held-out split (139 Ibn Rajab and Ibn al-Laḥḥām furūʿ) was typed blind under opaque ids, because record ids name the qāʿida: 187 situations, 210 fields (`corpus/typing/rajab_fold0_situations.json`). The lexical baseline is the index refitted without that fold. `typed_routing.TestSet` carries both sets; each report gives typed, lexical, prior and hybrid recall on the same cases.
+
+      | Recall@1 / 5 / 10 | typed | lexical | **types first, words breaking ties** |
+      |---|---|---|---|
+      | classical furūʿ (139) | 0.55 / 0.73 / 0.73 | 0.61 / 0.86 / 0.88 | **0.70 / 0.94 / 0.96** |
+      | modern fatāwā (123) | 0.30 / 0.69 / 0.69 | 0.00 / 0.24 / 0.33 | **0.52 / 0.69 / 0.74** |
+
+      Types and words fail on different cases. On classical text, words alone are strong in-domain (the profiles were fitted on the same book) but types decide where a farʿ settles its qāʿida's facts. On modern text, words carry nothing and types carry the routing. The routing rule for lane B is therefore the hybrid: encoders by the share of their fields a situation settles, then lexical rank. It beats either alone on both sets.
+    - **Next:** route the unsegmented R2 units (mutūn bābs, Masāʾil entries) by the hybrid to feed lane B; type the three look-alikes once decided. Then repeat T3 on classical units (mutūn bābs, Masāʾil entries), where the routing index's lexical profiles were strong.
 - **P0.6 done, as a ranker:** `python -m usul_corpus routing` writes `corpus/routing/index.json`. Profiles are derived from the bank's evidence, never written: each of the 100 encoders gets the TF-IDF centroid of the records its annotated cases rest on plus its own qawāʿid, with words found in over 10 % of the evidence dropped. Per encoder the index gives its case support, its lexicon (the heaviest profile words) and its nearest matn units.
   - **Held-out cases** (5 folds by record-id hash, 461 cases): the true encoder is in the top 1 / 5 / 10 for 0.61 / 0.86 / 0.91 of cases, against 0.08 / 0.29 / 0.37 for ranking encoders by frequency.
   - **Out-of-domain** (`corpus/routing/ood.json`, the 123 IslamQA tranche cases, title and question): 0.09 / 0.29 / 0.37. The stopword share was chosen on the held-out folds, not on this set.
