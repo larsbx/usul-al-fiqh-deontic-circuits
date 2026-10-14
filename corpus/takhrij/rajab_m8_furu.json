@@ -233,13 +233,29 @@
           "ruling": "suspend"
         }
       ],
-      "matches_madhhab": true,
+      "matches_madhhab": false,
       "note": "Own dirhams mixed with usurped ones: Aḥmad (al-Marrūdhī): few (one in three) — suspend until known; many (one in thirty) — take one out and use the rest; al-Qāḍī: taking out the amount is due in all; Ibn ʿAqīl (al-Funūn): all forbidden. The ruling turns on the proportion, which consumption-as-absence does not express. Round 5: annotated for the disputed few (three with one unlawful); for the many (thirty with one) the naṣṣ takes one out and uses the rest, and al-Qāḍī agrees.",
       "revisit": {
         "from_class": "missing_rule",
         "from_encoder": "istihlak",
         "closed_by": [
           "rule:mixed_haram_by_proportion"
+        ]
+      },
+      "side_check": {
+        "from_matches": true,
+        "refs": [
+          "src:openiti-ibnmuflih-furu-shamela12052/v04:p396"
+        ],
+        "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side.",
+        "contradictions": [
+          {
+            "evidence_index": 0,
+            "case_facts": {
+              "lawful_many": false
+            },
+            "rationale": "Tashih al-Furu masala 3 explicitly rejects Ahmad's numerical threshold and adopts extraction of the unlawful share. This contradicts the proportion-dependent suspend reading for lawful_many=false. Owner-knownness remains a missing scope distinction; Kashshaf is supplemental only."
+          }
         ]
       }
     },

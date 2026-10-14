@@ -37,6 +37,7 @@ Severity:
 | PR-24 | B | The six frozen M5 gap cases were re-pinned by hand when an English note changed (q022.f000 for «impurity», then lahham 52.f007 for «divorced»), so the pin no longer proved the case was the original | 2 re-pins | closed: the original hashes are restored and a `GAP_NOTE_REVISIONS` ledger keeps each old note; the test restores it and must get the original hash, as PR-21 does for tranche 3 |
 | PR-25 | B | A substitution re-run after a partial failure doubled its own insertion wherever the new text contained the old (e.g. «إطلاق الوجوب أو الفرض» twice); 9 sites, 2 already committed | 9 fields | closed: repaired; a test rejects any quote or parenthetical repeated back to back, and the edit helper skips an edit already applied |
 | PR-26 | A | The al-Irwāʾ reader kept a header only if it continued the run greedily, so one misnumbered header («(٣٣٨)» printed for 238) made it drop every entry from 238 to 338, and al-Albānī's verdicts there (e.g. 276, «من عمل عملا ليس عليه أمرنا فهو رد») read as absent. Found while closing PR-05 | 145 entries | closed: the reader takes the longest increasing run of headers; coverage re-pinned (2121 found, 562 missing, of which only 238 and 2555 are present but unread) |
+| PR-27 | A | Merging main brought ~400 new annotations written before the term guards existed; 246 English sites named no term, and some mistranslated | 246 fields | closed: each named from its source word (four parallel passes, applied centrally, every guard green); main's independent readings of Ibn Rajab 3, 9, 14, 15 (tranches 7–8) supersede this branch's tranche 6 |
 | PR-14 | A | The bulk «impurity → najāsa» replacement could mislabel ḥadath | 27 fields | closed `021d1d8`: each reviewed; 18.f015 and 159.f007 corrected from source |
 
 ## PR-02 families (English gloss → terms it conflates)
@@ -161,4 +162,15 @@ Q55's «لا عذر لمن أقر» had been «binds the confessor». One M5 rec
 * Abū Dāwūd 3071 reads «من سبق إلى ماء» (water) where the uṣūl texts quote «ما». al-Irwāʾ 1555 itself notes «ما وقع للمؤلف هنا وهناك من الوهم».
 
 Two entries were absent only because the Irwāʾ reader had dropped them (PR-26).
+
+**PR-27, merging main.** Main's lane-A rounds and tranches 7–11 had annotated about 400 furūʿ before the guards existed, and 246 English sites named no term. Each was named from its source word, and several were mistranslations:
+
+* **Ibn Rajab 72, 73, 99, and q049's khulʿ:** «عوض / معاوضة / مجانا بغير عوض» had been rendered «compensation», which is no expiation or ḍamān. It is a countervalue, ʿiwaḍ.
+* **Qāʿida 102:** «ألغى ذلك السبب وصار وجوده كالعدم» had been rendered «voids». It is ilghāʾ.
+* **q038.f005:** «يلغو» had been rendered «void».
+* **q100.f005:** «سليمة» had been rendered «sound». It means free of defects.
+* **q111.f001:** «موجب القتل القصاص عينا فالدية بدل» had been rendered «the cause».
+* **q046.f000:** the note had al-Qāḍī himself swearing. In fact he rules on one who swears.
+
+The tarjīḥ test also learned «ترجيح». This branch's tranche 6 is dropped in favour of main's independent readings of the same qawāʿid. Its Lean readings stay where the tanāquḍ pairs cite them, and reconciling the two readings is left open.
 

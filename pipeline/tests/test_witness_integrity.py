@@ -62,7 +62,7 @@ def test_every_cached_witness_is_pinned():
 
 
 TARJIH_EN = r"\b(stronger|strongest|sounder|soundest|prefer\w*|more correct|aṣaḥḥ|al-ṣaḥīḥ|rājiḥ)\b"
-TARJIH_AR = "أصح|الصحيح|أقوى|أظهر|الأشهر|المشهور|الراجح|المختار|أولى|الصواب|أجود|ضعيف|المنصوص|اختار|رجح|قوي|أشبه"
+TARJIH_AR = "ترجيح|أصح|الصحيح|أقوى|أظهر|الأشهر|المشهور|الراجح|المختار|أولى|الصواب|أجود|ضعيف|المنصوص|اختار|رجح|قوي|أشبه"
 
 
 def test_a_note_claims_no_tarjih_its_source_lacks():

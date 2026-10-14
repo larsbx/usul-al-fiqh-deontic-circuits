@@ -3,7 +3,7 @@ import urllib.error
 import pytest
 
 from usul_corpus import fetch as fetch_mod
-from usul_corpus.fetch import next_page_id, shamela_page_to_markdown, witness_url
+from usul_corpus.fetch import merge_lock, next_page_id, shamela_page_to_markdown, witness_url
 from usul_corpus.openiti import parse_markdown
 
 PAGE = (
@@ -110,6 +110,14 @@ def test_shamela_fetch_resumes_after_a_crash(monkeypatch, tmp_path):
     assert not list(tmp_path.glob("*.part"))
     clean = tmp_path / "clean"
     assert fetch_mod.fetch(w, clean)["sha256"] == resumed["sha256"]
+
+
+def test_merge_lock_keeps_derived_hashes_while_the_content_is_unchanged():
+    old = {"witness": "w", "url": "u", "bytes": 3, "sha256": "aa", "ocr_sha256": "oo"}
+    assert merge_lock(old, {"witness": "w", "url": "u", "bytes": 3, "sha256": "aa"}) == (old, False)
+    new = {"witness": "w", "url": "u", "bytes": 4, "sha256": "bb"}
+    assert merge_lock(old, new) == (new, True)  # derived hashes describe the old bytes: dropped
+    assert merge_lock(None, new) == (new, False)
 
 
 def test_concurrent_pins_are_not_lost(tmp_path, monkeypatch):

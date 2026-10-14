@@ -112,7 +112,7 @@ def test_selected_tranche_has_exact_obligations_and_open_human_review():
     checked = (ROOT / "formal/lean/UsulTest/SignatureMap.lean").read_text()
     for q in plan["selection"]:
         assert all(f"#check @{n}\n" in checked for n in q["reading"])
-    revised = {r["far"]: r for r in plan.get("revisions", [])}
+    revised = {r["far"]: r for r in plan.get("revisions", []) if "closed_by" in r}
     renoted = {r["far"]: r for r in plan.get("note_revisions", [])}
     for o in plan["obligations"]:
         record, case = records[o["far"]], cases[o["far"]]
@@ -146,7 +146,10 @@ def test_both_pr_contributions_are_preserved_without_case_reinterpretation():
             if far in revised:  # a revisit leaves a ledger entry from the receipt to the current case
                 rev = revised[far]
                 assert (rev["from_case_sha256"], rev["case_sha256"]) == (expected_hash, current), far
-                assert cases[far]["revisit"]["closed_by"] == rev["closed_by"], far
+                if "side_check" in rev:  # lane D: the side failed verification; the case keeps its annotation
+                    assert cases[far]["side_check"] == rev["side_check"], far
+                else:
+                    assert cases[far]["revisit"]["closed_by"] == rev["closed_by"], far
             elif far in renoted:  # only English fields changed: restoring them gives the receipt back
                 rn = renoted[far]
                 old = dict(cases[far], note=rn.get("from_note", cases[far].get("note")))

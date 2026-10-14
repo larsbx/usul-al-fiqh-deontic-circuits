@@ -1,271 +1,450 @@
 {
- "suite": "m8_rajab_tranche_6",
- "status": "candidate",
- "provenance": "M8 sixth tranche: every far record of Ibn Rajab's qawāʿid 3, 9, 14 and 15, annotated against readings formalised from each qāʿida's own statement (Usul.Refinements). Annotated by reading the full paragraph in the pinned witness; every claim of agreement is guarded by Lean (UsulTest/Takhrij.lean); classes and facts await human review (Review.tla).",
- "cases": [
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f000",
-   "encoder": "excess_obligatory",
-   "class": "genuine_ikhtilaf",
-   "facts": {
-    "separable": false,
-    "originally_due": false
-   },
-   "expected": false,
-   "positions": [
+  "suite": "m8_rajab_tranche_6",
+  "status": "candidate",
+  "provenance": "M8 sixth tranche: every far record of Ibn Rajab's qawāʿid 35, 37, 38, 39 and 41, annotated against readings formalised from each qāʿida's own statement (Usul.Refinements). Annotated by reading the full paragraph in the pinned witness; every claim of agreement is guarded by Lean (UsulTest/Takhrij.lean); classes and facts await human review (Review.tla).",
+  "cases": [
     {
-     "who": "the excess is not obligatory: not caught",
-     "ruling": false
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035.f000",
+      "encoder": "benefit_then_thing",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "perpetual_commutative": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the ṣaḥīḥ (al-Qāḍī, Ibn ʿAqīl, most): the lease stands",
+          "ruling": false
+        },
+        {
+          "who": "wajh: dissolved, as with buying the wife",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The lessee buys the leased thing from its lessor: two wujūh (or riwāyas); «والثاني: لا ينفسخ وهو الصحيح وهو اختيار القاضي وابن عقيل والأكثرين», the benefits having left the lessor first. A marriage, by contrast, dissolves on buying the wife."
     },
     {
-     "who": "the whole is obligatory, or due in following (Ibn ʿAqīl's iḥtimāl): caught",
-     "ruling": true
-    }
-   ],
-   "matches_madhhab": false,
-   "note": "Joining the imam in rukūʿ after the minimum has passed: is he counted as catching it in the farḍ? al-Qāḍī and Ibn ʿAqīl build it on the two wujūh; Ibn ʿAqīl's iḥtimāl: the excess counts as due in following alone."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f001",
-   "encoder": "excess_obligatory",
-   "class": "genuine_ikhtilaf",
-   "facts": {
-    "separable": false,
-    "originally_due": false
-   },
-   "expected": false,
-   "positions": [
-    {
-     "who": "a seventh is the due",
-     "ruling": false
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035.f001",
+      "encoder": "benefit_then_thing",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "perpetual_commutative": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī's Khilāf, the madhhab: not dissolved",
+          "ruling": false
+        },
+        {
+          "who": "al-Mujarrad: dissolved",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Renting a house from his father, then inheriting it: two wujūh (al-Talkhīṣ derives them from the previous farʿ); «والمذهب عند القاضي في الخلاف أنه لا ينفسخ»; al-Mujarrad: dissolved, inheritance being compulsory."
     },
     {
-     "who": "all is due",
-     "ruling": true
-    }
-   ],
-   "matches_madhhab": false,
-   "note": "A camel slaughtered where a sheep is due: all wājib or a seventh («فهل كلها واجبة أو سبعها؟»)? «على وجهين»; likewise a camel for five camels (al-Qāḍī Abū Yaʿlā al-Ṣaghīr, two wujūh). No madhhab marked."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f002",
-   "encoder": "excess_obligatory",
-   "class": "genuine_ikhtilaf",
-   "facts": {
-    "separable": false,
-    "originally_due": false
-   },
-   "expected": false,
-   "positions": [
-    {
-     "who": "the measure due is farḍ, the rest nafl",
-     "ruling": false
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035.f002",
+      "encoder": "benefit_then_thing",
+      "class": "derivable",
+      "facts": {
+        "perpetual_commutative": false
+      },
+      "expected": false,
+      "note": "Buying an unpollinated spathe on condition of cutting («بشرط قطعه»), then its palm: «والمجزوم به في الكافي أنه لا ينفسخ بغير خلاف», though Ibn Rajab notes hesitation since it follows in sale."
     },
     {
-     "who": "the whole is farḍ",
-     "ruling": true
-    }
-   ],
-   "matches_madhhab": false,
-   "note": "Wiping the whole head at once where the farḍ is the forelock's measure: all farḍ, or the forelock's measure? The qāʿida's two wujūh; no ruling stated."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f003",
-   "encoder": "excess_obligatory",
-   "class": "genuine_ikhtilaf",
-   "facts": {
-    "separable": false,
-    "originally_due": false
-   },
-   "expected": false,
-   "positions": [
-    {
-     "who": "al-Qāḍī: part is taṭawwuʿ (al-ṣawāb)",
-     "ruling": false
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f000",
+      "encoder": "successive_by_binding",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "successive": true,
+        "earlier_binding": true,
+        "later_binding": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī, Ibn ʿAqīl, al-Mughnī: liable as a loan",
+          "ruling": true
+        },
+        {
+          "who": "Majd al-Dīn, ẓāhir of Aḥmad: never liable",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A pledge, then permission to use it: does it become a loan while used? al-Qāḍī, Ibn ʿAqīl, al-Mughnī, al-Talkhīṣ: liable by use, «لأن ذلك حقيقة العارية»; Majd al-Dīn: «ظاهر كلام أحمد أنه لا يصير مضمونا بحال». Reconciled (jamʿ, the binding farq of f003): the pledge binds (lāzim) and the permission does not, so it stays a pledge; the reading now takes Majd's ẓāhir of Aḥmad."
     },
     {
-     "who": "Abū al-Khaṭṭāb: all farḍ",
-     "ruling": true
-    }
-   ],
-   "matches_madhhab": false,
-   "note": "An older animal than due in zakāt: Abū al-Khaṭṭāb all farḍ; al-Qāḍī part taṭawwuʿ «وهو الصواب ; لأن الشارع أعطاه جبرانا عن الزيادة». The traveller praying four, the whole being originally due, is the other branch («والمذهب الأول»)."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f000",
-   "encoder": "prohibited_worship",
-   "class": "derivable",
-   "facts": {
-    "site": "essence"
-   },
-   "expected": false,
-   "note": "Fasting the day of ʿĪd: «فلا يصح بحال على المذهب»; and prayer in the forbidden times."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f001",
-   "encoder": "prohibited_worship",
-   "class": "derivable",
-   "facts": {
-    "site": "essence"
-   },
-   "expected": false,
-   "note": "Prayer in the places of prohibition: not ṣaḥīḥ on the view that the prohibition is taḥrīm, «هذه طريقة المحققين»; the tashrīq days not valid as a voluntary fast («فلا يصح تطوعا»). The second type (a prohibition specific to a sharṭ of the worship: prayer with najāsa, without a covering) is likewise not ṣaḥīḥ."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f002",
-   "encoder": "prohibited_worship",
-   "class": "genuine_ikhtilaf",
-   "facts": {
-    "site": "generalCondition"
-   },
-   "expected": false,
-   "positions": [
-    {
-     "who": "not ṣaḥīḥ (the ashhar of the two riwāyas)",
-     "ruling": false
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001",
+      "encoder": "successive_by_binding",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "successive": true,
+        "earlier_binding": false,
+        "later_binding": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Qāḍī, Ibn ʿAqīl: liable while used",
+          "ruling": true
+        },
+        {
+          "who": "later authors, ẓāhir of Aḥmad: not liable",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A deposit, then permission to use it: al-Qāḍī, Ibn ʿAqīl, al-Talkhīṣ: liable while used, «لمصيره عارية»; some later authors: the ẓāhir of Aḥmad is that it is not, as with the pledge. Under the binding refinement it stays liable (deposit and loan are alike non-binding (jāʾiz), «ولا اختلاف هاهنا بين العقدين في الجواز»; Majd distinguishes it from the pledge), which leaves it a residue against the later authors' ẓāhir."
     },
     {
-     "who": "valid",
-     "ruling": true
-    }
-   ],
-   "matches_madhhab": true,
-   "note": "Prayer on usurped ground: the third type, «وفيها الخلاف», with two maʾkhadh for buṭlān (its being bāṭil); the reading takes the qāʿida's «أشهرهما عدمها»."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f003",
-   "encoder": "prohibited_worship",
-   "class": "genuine_ikhtilaf",
-   "facts": {
-    "site": "external"
-   },
-   "expected": true,
-   "positions": [
-    {
-     "who": "the majority: valid",
-     "ruling": true
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f002",
+      "encoder": "successive_by_binding",
+      "class": "derivable",
+      "facts": {
+        "successive": true,
+        "earlier_binding": false,
+        "later_binding": true
+      },
+      "expected": true,
+      "note": "Lending a thing to be pledged: valid by naṣṣ, with Ibn al-Mundhir's report of agreement; liable on the pledger as borrower, a trust with the pledgee. Whether it binds the owner (its luzūm) is disputed (al-Ḥārithī, Abū al-Khaṭṭāb)."
     },
     {
-     "who": "Abū Bakr: not ṣaḥīḥ",
-     "ruling": false
-    }
-   ],
-   "matches_madhhab": true,
-   "note": "Prayer in a usurped or silk turban, or with a gold ring: the fourth type, two wujūh; Abū Bakr: not ṣaḥīḥ; «وخالفه الأكثرون». Ḥajj with usurped wealth: two riwāyas; Ibn ʿAqīl counts it of the fourth type."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000",
-   "encoder": "one_of_two",
-   "class": "genuine_ikhtilaf",
-   "facts": {
-    "together": false
-   },
-   "expected": false,
-   "positions": [
-    {
-     "who": "riwāya: neither, each on his certainty",
-     "ruling": false
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f003",
+      "encoder": "successive_by_binding",
+      "class": "derivable",
+      "facts": {
+        "successive": true,
+        "earlier_binding": false,
+        "later_binding": true
+      },
+      "expected": true,
+      "note": "Lending a thing, then pledging it with the borrower: Abū al-Barakāt, «قياس المذهب صحته ويسقط ضمان العارية», the binding (lāzim) trust displacing the non-binding loan."
     },
     {
-     "who": "riwāya: both, the aṣl having ended in one",
-     "ruling": true
-    }
-   ],
-   "matches_madhhab": false,
-   "note": "Two find al-manī in a garment they sleep in, or hear a ṣawt exit («سمعا صوتا خارجا»: wind breaking, a ḥadath), not knowing from which of them: two riwāyas; neither owes ghusl or wuḍūʾ («لا يلزم واحدا منهما غسل ولا وضوء», «متيقن للطهارة شاك في الحدث»), or both owe them. Together, one may not lead the other (14.f002)."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f001",
-   "encoder": "one_of_two",
-   "class": "genuine_ikhtilaf",
-   "facts": {
-    "together": false
-   },
-   "expected": false,
-   "positions": [
-    {
-     "who": "each on the certainty of his marriage",
-     "ruling": false
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f004",
+      "encoder": "successive_by_binding",
+      "class": "derivable",
+      "facts": {
+        "successive": true,
+        "earlier_binding": false,
+        "later_binding": true
+      },
+      "expected": true,
+      "note": "A pledge contracted on usurped goods: «فيصح عندنا … ويبرأ به الغاصب» (Abū Bakr, al-Qāḍī), and likewise deposit, loan or hire to it (Abū al-Khaṭṭāb); al-Qāḍī gives two wujūh for hire, and for muḍāraba clears him only on spending."
     },
     {
-     "who": "a lot between the two",
-     "ruling": true
-    }
-   ],
-   "matches_madhhab": false,
-   "note": "One suspends his divorce (taʿlīq) on the bird being a crow, the other on its not being one («إن كان هذا الطائر غرابا فامرأتي طالق»), and it flew off: each builds on the certainty of his marriage (al-Qāḍī in al-Mujarrad, Abū al-Khaṭṭāb), or a lot (al-Shīrāzī, Ibn ʿAqīl; al-Qāḍī in al-Jāmiʿ: «هو قياس المذهب»)."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f002",
-   "encoder": "one_of_two",
-   "class": "genuine_ikhtilaf",
-   "facts": {
-    "together": true
-   },
-   "expected": true,
-   "positions": [
-    {
-     "who": "a lot, the two now together (aṣaḥḥ al-wajhayn)",
-     "ruling": true
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f005",
+      "encoder": "successive_by_binding",
+      "class": "derivable",
+      "facts": {
+        "successive": true,
+        "earlier_binding": true,
+        "later_binding": true
+      },
+      "expected": true,
+      "note": "Pledging the sold thing, still at the seller's risk, before delivery: if valid, the risk lapses, «لأن يده صارت يد ارتهان»."
     },
     {
-     "who": "each on his certainty",
-     "ruling": false
-    }
-   ],
-   "matches_madhhab": true,
-   "note": "The same with two slave-women freed: «قياس المنصوص» that each abstains until certain; if one buys the other's, the freed one is fixed by lot «على أصح الوجهين لاجتماعهما في ملكه», «فينظر إليهما مجتمعين في حكم يتعلق باجتماعهما»."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f001",
-   "encoder": "separate_presumptions",
-   "class": "derivable",
-   "facts": {
-    "alters_another_asl": true
-   },
-   "expected": false,
-   "note": "Wetness found on waking, no ghusl (taken as madhy): the garment need not be washed; each keeps its aṣl, «الأصل طهارته فلا ينجس بالشك» (Ibn ʿAqīl from al-Sharīf Abū Jaʿfar)."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f002",
-   "encoder": "separate_presumptions",
-   "class": "derivable",
-   "facts": {
-    "alters_another_asl": true
-   },
-   "expected": false,
-   "note": "Doubt whether he wiped the khuff before or after the prayer: the period starts before it and the prayer is repeated, «لأن الأصل وجوب غسل الرجلين والأصل بقاء الصلاة في الذمة»."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f003",
-   "encoder": "separate_presumptions",
-   "class": "derivable",
-   "facts": {
-    "alters_another_asl": true
-   },
-   "expected": false,
-   "note": "Game shot and found dead in a little water: not lawful, and the water is not made najis, «بل يستصحب في الماء أصل الطهارة فلا ينجسه بالشك» (Ibn ʿAqīl, al-Fuṣūl)."
-  },
-  {
-   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f004",
-   "encoder": "separate_presumptions",
-   "class": "genuine_ikhtilaf",
-   "facts": {
-    "alters_another_asl": true
-   },
-   "expected": false,
-   "positions": [
-    {
-     "who": "the ḥadd too: the incompatibility is not carried",
-     "ruling": false
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f006",
+      "encoder": "successive_by_binding",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "successive": true,
+        "earlier_binding": true,
+        "later_binding": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī, Ibn ʿAqīl: liable after the time",
+          "ruling": true
+        },
+        {
+          "who": "Aḥmad (Muḥammad b. al-Ḥasan b. Hārūn): never liable",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«If I bring your due by such a time, else the pledge is yours»: a trust until then, then liable, the hold being by a fāsid contract (al-Qāḍī, Ibn ʿAqīl); a riwāya of Aḥmad: never liable, the void condition («الشرط يفسد») counting as absent. Reconciled (jamʿ): the void sale binds nothing and does not displace the binding (lāzim) pledge; the reading now takes the riwāya of Aḥmad."
     },
     {
-     "who": "no ḥadd: the two are incompatible",
-     "ruling": true
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f007",
+      "encoder": "successive_by_binding",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "successive": true,
+        "earlier_binding": true,
+        "later_binding": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "wajh: his, under the kitāba",
+          "ruling": true
+        },
+        {
+          "who": "wajh: the heirs', under the tadbīr",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Kitāba of a mudabbar, or tadbīr of a mukātab: valid by naṣṣ; if the master dies before any payment he is freed by tadbīr from the third, and his earnings are his (as a mukātab) or the heirs' on two wujūh; Ibn al-Ḥakam's narration has kitāba voiding the tadbīr («بطلان التدبير بالكتابة»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f000",
+      "encoder": "words_out_of_nature",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "other_contract_possible": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Abū al-Khaṭṭāb, al-Qāḍī: valid, read by its meaning",
+          "ruling": true
+        },
+        {
+          "who": "Abū al-Khaṭṭāb elsewhere, as the madhhab: void",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A loan of use with a countervalue stipulated («وشرط عليه العوض»): valid as a kināya for qarḍ (Abū al-Khaṭṭāb, al-Qāḍī; the countervalue as in a gift); or fāsid, «وجعله أبو الخطاب في موضع آخر المذهب»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f001",
+      "encoder": "words_out_of_nature",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "other_contract_possible": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Mughnī: valid by its meaning",
+          "ruling": true
+        },
+        {
+          "who": "al-Qāḍī, Ibn ʿAqīl: void muḍāraba",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "«Take this as muḍāraba, all the profit yours (or mine)»: al-Qāḍī, Ibn ʿAqīl: a fāsid muḍāraba with the usual wage; al-Mughnī elsewhere: a valid ibḍāʿ, «فراعى الحكم دون اللفظ», and a loan in the first form. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f002",
+      "encoder": "words_out_of_nature",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "other_contract_possible": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Qāḍī: valid as a loan",
+          "ruling": true
+        },
+        {
+          "who": "wajh: not valid",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Hiring measured goods or money without stating a use: al-Qāḍī: valid, as a loan; another wajh: not valid. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f003",
+      "encoder": "words_out_of_nature",
+      "class": "derivable",
+      "facts": {
+        "other_contract_possible": true
+      },
+      "expected": true,
+      "note": "Leasing land for a third of its crop: valid by Aḥmad's naṣṣ; the aṣḥāb dispute its meaning (al-Qāḍī: a lease like muzāraʿa; Abū al-Khaṭṭāb, Ibn ʿAqīl, al-Mughnī: muzāraʿa under the word of lease)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f004",
+      "encoder": "words_out_of_nature",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "other_contract_possible": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Qāḍī: valid, read as sale",
+          "ruling": true
+        },
+        {
+          "who": "ẓāhir of Aḥmad (al-Marrūdhī): not valid",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Salam in something present: valid as a sale, or not? «وهو ظاهر كلام أحمد في رواية المروذي لا يصح البيع بلفظ السلم»; al-Qāḍī in one place: valid."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f005",
+      "encoder": "words_out_of_nature",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "other_contract_possible": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "riwāya: divorce (ṭalāq, «أعني به الطلاق»), as he meant",
+          "ruling": true
+        },
+        {
+          "who": "riwāya: ẓihār, by the word",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "«You are ḥarām to me, I mean divorce», ḥarām being explicit for ẓihār: is the explanation set aside («يلغو») and it ẓihār, or valid («يصح») and divorce? Two riwāyas. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f006",
+      "encoder": "words_out_of_nature",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "other_contract_possible": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Qāḍī: valid as iqāla",
+          "ruling": true
+        },
+        {
+          "who": "by the word: not allowed",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "«Settle the salam debt with me for the like of the price»: al-Qāḍī: valid as iqāla; he and Ibn ʿAqīl: selling the debt to the debtor for its like is not allowed, «فيخرج في المسألة وجهان التفاتا إلى اللفظ والمعنى»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q039.f001",
+      "encoder": "contract_by_kinaya",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "needs_witnessing": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "wajh: valid as a lease",
+          "ruling": true
+        },
+        {
+          "who": "wajh: not valid",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Leasing a thing with the word «sale»: two wujūh; al-Talkhīṣ: not valid if the sale is added to the thing, the two wujūh being where it is added to the benefit. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q039.f002",
+      "encoder": "contract_by_kinaya",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "needs_witnessing": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "wajh: valid where no witnessing is required",
+          "ruling": true
+        },
+        {
+          "who": "wajh: not valid",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Taking back a wife (rajʿa) by allusion: not valid if witnessing is required, otherwise two wujūh (al-Targhīb), «والأولى ما ذكرناه». In the same paragraph, «I free you and make your freedom your ṣadāq»: Ibn Ḥāmid: an allusion that does not conclude a marriage; al-Qāḍī: explicit; and Aḥmad's own words make it an allusion valid with intention, against the nikāḥ exception."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f000",
+      "encoder": "right_to_substitute",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "bound_to_thing": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "ẓāhir of the aṣḥāb, al-Qāḍī: a pledge on taking",
+          "ruling": true
+        },
+        {
+          "who": "al-Kāfī, al-Talkhīṣ, Abū al-Khaṭṭāb: needs the pledger",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A pledge destroyed and its value taken: «فظاهر كلامهم أنها تكون رهنا بمجرد الأخذ», so al-Qāḍī lets the agent sell the substitute without new permission; al-Kāfī and al-Talkhīṣ disagree, and Abū al-Khaṭṭāb's ẓāhir needs the pledger to make it a pledge."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f001",
+      "encoder": "right_to_substitute",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "bound_to_thing": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "wajh: waqf by the purchase",
+          "ruling": true
+        },
+        {
+          "who": "wajh: needs a new waqf",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A waqf destroyed, its value used to buy a replacement: is it waqf without the administrator making it so? Two wujūh. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f002",
+      "encoder": "right_to_substitute",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "bound_to_thing": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "wajh: designated by the purchase",
+          "ruling": true
+        },
+        {
+          "who": "wajh: needs designation",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A designated sacrifice destroyed (or sold by its designator), its like bought with the value: designated by the purchase itself? Derived on two wujūh. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f003",
+      "encoder": "right_to_substitute",
+      "class": "derivable",
+      "facts": {
+        "bound_to_thing": true
+      },
+      "expected": true,
+      "note": "A bequeathed thing destroyed after the death and before acceptance: «فحقه باق في بدلها»."
     }
-   ],
-   "matches_madhhab": false,
-   "note": "«اعتدي» in anger with signs of accusing her: divorce falls («فإنه يقع به الطلاق»); the ḥadd too? Ibn ʿAqīl's two iḥtimāls: the ḥadd, «لأنهما حقان عليه» (asserted in ʿUmad al-Adilla), or none, «لتنافيهما». The qāʿida's side does not carry the incompatibility."
-  }
- ]
+  ]
 }

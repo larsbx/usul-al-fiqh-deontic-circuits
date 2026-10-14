@@ -41,8 +41,32 @@
           "ruling": "attached"
         }
       ],
-      "matches_madhhab": true,
-      "note": "Washing (ghasl) the hair in the ghusl of janāba: two wujūh; al-Mughnī prefers no wujūb («عدم الوجوب») «طردا للقاعدة» and gives it as the ẓāhir of al-Khiraqī; the other: obligatory as worship. For the minor ḥadath, the hanging hair is washed «على الصحيح», against the qāʿida."
+      "matches_madhhab": false,
+      "note": "Washing (ghasl) the hair in janāba: two wujūh; al-Mughnī prefers no wujūb («عدم الوجوب») «طردا للقاعدة» and gives it as the ẓāhir of al-Khiraqī; the other: obligatory as worship. For the minor ḥadath, the hanging hair is washed «على الصحيح», against the qāʿida.",
+      "side_check": {
+        "from_matches": true,
+        "refs": [
+          "src:openiti-buhuti-kashshaf-shamela21642/v01:p154",
+          "src:openiti-insaf-shamela21609/v01:p255"
+        ],
+        "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side.",
+        "contradictions": [
+          {
+            "evidence_index": 0,
+            "case_facts": {
+              "hair_or_nail": true
+            },
+            "rationale": "The case note specifies washing hair in janaba, not detached physical hair or minor hadath. The source expressly requires washing hair including hanging hair; attached/detached are the encoder labels for obligation, not an assertion about cut hair."
+          },
+          {
+            "evidence_index": 1,
+            "case_facts": {
+              "hair_or_nail": true
+            },
+            "rationale": "The case note specifies washing hair in janaba, not detached physical hair or minor hadath. The source expressly requires washing hair including hanging hair; attached/detached are the encoder labels for obligation, not an assertion about cut hair."
+          }
+        ]
+      }
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f003",

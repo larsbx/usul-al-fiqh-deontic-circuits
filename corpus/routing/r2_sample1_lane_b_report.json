@@ -1,0 +1,38 @@
+{
+  "status": "candidate",
+  "base_commit": "9862c8d3f8ef2603209c8faa4b074631f285ab92",
+  "units": 40,
+  "source_replayed": 40,
+  "missing_witnesses": [],
+  "classes": {
+    "derivable": 3,
+    "missing_fact": 2,
+    "missing_rule": 35
+  },
+  "initially_untyped": 29,
+  "gap_diagnoses": {
+    "blind_fact_omission_and_vocabulary_gap": 2,
+    "insufficient_context_and_vocabulary": 1,
+    "partial_rule": 1,
+    "scoped_support": 3,
+    "semantic_field_mismatch": 1,
+    "timed_capability_not_categorical_inability": 1,
+    "vocabulary_gap": 31
+  },
+  "incomplete_page_numbering": [
+    "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00529",
+    "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01051",
+    "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01087",
+    "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01254",
+    "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01272"
+  ],
+  "boundary_reviews": [
+    "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00052",
+    "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00529",
+    "harb.masail.openiti_harb_masail_shamela12527.m00245"
+  ],
+  "guard_scope": "Three component guards; not complete derivations of the chapters or procedural branches.",
+  "lean_verification": "Requires make lean; report generation is not Lean verification.",
+  "reconciliation": "Attributed disagreements retained as pending evidence; no unexpressible position is forced into the typed ledger.",
+  "later_side_verification": "Pending al-Insaf/mutamad audit; no matches_madhhab assertion added."
+}

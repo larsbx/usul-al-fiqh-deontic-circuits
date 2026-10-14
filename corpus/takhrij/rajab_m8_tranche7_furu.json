@@ -1,0 +1,436 @@
+{
+  "suite": "m8_rajab_tranche_7",
+  "status": "candidate",
+  "provenance": "M8 seventh tranche: every far record of Ibn Rajab's qawāʿid 3, 5, 9, 10 and 12, annotated against readings formalised from each qāʿida's own statement (Usul.Refinements). Annotated by reading the full paragraph in the pinned witness; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f000",
+      "encoder": "excess_in_following",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "separable": false,
+        "lightened": false,
+        "following": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the wujūh, as derived by al-Qāḍī and Ibn ʿAqīl: the excess is voluntary",
+          "ruling": false
+        },
+        {
+          "who": "Ibn ʿAqīl's iḥtimāl: obligatory in following",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Joining the imām in rukūʿ after the sufficient part of it has passed: does he catch it in the farḍ? The ẓāhir of al-Qāḍī and Ibn ʿAqīl derives it on the two wujūh (where the obligated may not follow the volunteer); Ibn ʿAqīl's iḥtimāl: in following, the excess counts as the obligatory. No madhhab marked. Reconciled (jamʿ): in following the excess counts (Ibn ʿAqīl, «الاتباع قد يسقط الواجب»); al-Inṣāf: whoever catches the rukūʿ catches the rakʿa, «هذا المذهب مطلقا»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f001",
+      "encoder": "excess_in_following",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "separable": false,
+        "lightened": false,
+        "following": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "wajh: only the seventh",
+          "ruling": false
+        },
+        {
+          "who": "wajh: all of it",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A sheep was due and he slaughtered a badana: is all of it obligatory («واجبة»), or a seventh? Two wujūh; likewise a camel for five camels (Abū Yaʿlā the younger), on which it would or would not also suffice for twenty. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f002",
+      "encoder": "excess_in_following",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "separable": false,
+        "lightened": false,
+        "following": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "wajh: the measure of the nāṣiya",
+          "ruling": false
+        },
+        {
+          "who": "wajh: all of it",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Wiping the whole head at once, the farḍ being the nāṣiya's measure: is all of it farḍ, or the nāṣiya's measure? Posed on the qāʿida's two wujūh; no madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f003",
+      "encoder": "excess_in_following",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "separable": false,
+        "lightened": false,
+        "following": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī (Ibn Rajab: al-ṣawāb): part voluntary",
+          "ruling": false
+        },
+        {
+          "who": "Abū al-Khaṭṭāb: all farḍ",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Paying in zakāt an older age than due: Abū al-Khaṭṭāb: all farḍ; al-Qāḍī: part voluntary, «وهو الصواب», the Lawgiver granting a jubrān for the excess. Then the contrast: what was wholly due and lightened is wholly obligatory «على الصحيح» (the traveller praying four, against Abū Bakr; the dinār for intercourse in menses)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f001",
+      "encoder": "advanced_kaffara_at_obligation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "due_at_performance": true,
+        "kaffara_changed": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the unqualified statements of most aṣḥāb: it suffices",
+          "ruling": true
+        },
+        {
+          "who": "al-Mughnī: it does not",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Expiating by fasting before breaking the oath (ḥinth), then breaking it while well off: al-Mughnī: it does not suffice; «وإطلاق الأكثرين مخالف لذلك لأنه كان فرضه في الظاهر فبرئ به», the expiation having dissolved the oath (Abū Bakr ʿAbd al-ʿAzīz). Reconciled (jamʿ): a kaffāra is judged at its wujūb, so the advanced fast does not suffice once he breaks the oath well off (al-Iqnāʿ, Kashshāf, with al-Mughnī)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f002",
+      "encoder": "advanced_kaffara_at_obligation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "due_at_performance": true,
+        "kaffara_changed": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "most aṣḥāb, perhaps Aḥmad's words: it suffices",
+          "ruling": true
+        },
+        {
+          "who": "Ibn al-Zāghūnī: it does not",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The tamattuʿ pilgrim fasts, then can afford the hady when it falls due: Ibn al-Zāghūnī: the fast does not suffice; the unqualified statements of most aṣḥāb, some explicitly, and perhaps Aḥmad's words: it does, the dhimma being already clear."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f003",
+      "encoder": "advanced_kaffara_at_obligation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "due_at_performance": true,
+        "kaffara_changed": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "wajh: suffices for twenty",
+          "ruling": true
+        },
+        {
+          "who": "wajh: does not suffice",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Four sheep advanced for twenty-four camels, then one is born before the year: two wujūh: it does not suffice and a bint makhāḍ is due; or it suffices for twenty and a fifth of a bint makhāḍ is paid for the rest. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f004",
+      "encoder": "advanced_kaffara_at_obligation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "due_at_performance": false,
+        "kaffara_changed": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-manṣūṣ: he repeats",
+          "ruling": false
+        },
+        {
+          "who": "al-Qāḍī: it suffices",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The boy prays early in the time, then reaches puberty: «المنصوص أنه يجب» to repeat; al-Qāḍī in Sharḥ al-Madhhab: not, he did what was commanded. Unlike ḥajj, which was not commanded of him. (The paragraph then opens the second kind: a defect in a condition (sharṭ), «فالصحيح أنه يجزئه», e.g. zakāt advanced to a poor man who dies.)"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f005",
+      "encoder": "advanced_kaffara_at_obligation",
+      "class": "derivable",
+      "facts": {
+        "due_at_performance": true,
+        "kaffara_changed": false
+      },
+      "expected": true,
+      "note": "Joining two prayers in the time of the first by tayammum, then the second's time enters and he has water: the second kind, a defect in a condition (sharṭ), «فالصحيح أنه يجزئه»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f006",
+      "encoder": "advanced_kaffara_at_obligation",
+      "class": "derivable",
+      "facts": {
+        "due_at_performance": true,
+        "kaffara_changed": false
+      },
+      "expected": true,
+      "note": "Shortening two prayers on a journey in the time of the first, then arriving home before the second's time: the second kind, it suffices («فالصحيح»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f000",
+      "encoder": "prohibited_worship",
+      "class": "derivable",
+      "facts": {
+        "target": "essence"
+      },
+      "expected": false,
+      "note": "Fasting the day of ʿĪd «فلا يصح بحال على المذهب»; likewise prayer in the forbidden times, joined in this record. The prohibition returns to the act itself."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f001",
+      "encoder": "prohibited_worship",
+      "class": "derivable",
+      "facts": {
+        "target": "essence"
+      },
+      "expected": false,
+      "note": "Prayer in the places of prohibition: invalid («فلا يصح») on the view that the prohibition is taḥrīm, «هذه طريقة المحققين». The record runs on through the other categories (tashrīq fasts; prayer with najāsa; the usurped water and garment, two riwāyas; the only garment usurped or silk)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f002",
+      "encoder": "prohibited_worship",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "target": "generalCondition"
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the ashhar riwāya: invalid (bāṭil)",
+          "ruling": false
+        },
+        {
+          "who": "riwāya: valid",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Prayer on usurped land: «وفيها الخلاف», the third category (a condition not specific to the act), where the statement gives «روايتان أشهرهما عدمها»; the place is a condition («البقعة شرط للصلاة»), and the movements in it are the prohibited act itself."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f003",
+      "encoder": "prohibited_worship",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "target": "outside"
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the majority (the qāʿida's statement): valid",
+          "ruling": true
+        },
+        {
+          "who": "Abū Bakr: invalid",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Praying in a usurped turban, silk, or with a gold ring: two wujūh, «واختيار أبي بكر عدم الصحة», the fourth category, where the majority oppose him («وخالفه الأكثرون»); two garments one usurped: derived on them, or as if only the usurped; ḥajj with usurped wealth: two riwāyas, Ibn ʿAqīl preferring validity."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f001",
+      "encoder": "wording_need_not_learn",
+      "class": "derivable",
+      "facts": {
+        "meaning_only": true,
+        "able": true,
+        "need_not_learn": false
+      },
+      "expected": true,
+      "note": "Contract words and the words of divorce (alfāẓ al-ṭalāq): «ما يعتبر معناه دون لفظه», valid in any tongue."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f002",
+      "encoder": "wording_need_not_learn",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "meaning_only": false,
+        "able": false,
+        "need_not_learn": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "wajh: said in his tongue",
+          "ruling": true
+        },
+        {
+          "who": "wajh: lapses, like the Qurʾān",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Takbīr, tasbīḥ and duʿāʾ in prayer: no translation with ability; when unable, two wujūh: like the Qurʾān (it lapses) or like the meaning (said in his tongue). No madhhab marked. Annotated for the takbīr, an obligatory dhikr («ذكر واجب»); the later works keep the recommended dhikr and duʿāʾ untranslated by naṣṣ, which this fact bundle does not cover."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f003",
+      "encoder": "wording_need_not_learn",
+      "class": "derivable",
+      "facts": {
+        "meaning_only": false,
+        "able": true,
+        "need_not_learn": false
+      },
+      "expected": false,
+      "note": "The Friday khuṭba: not valid in another tongue with ability «على الصحيح», valid when unable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f004",
+      "encoder": "wording_need_not_learn",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "meaning_only": false,
+        "able": true,
+        "need_not_learn": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "wajh: not concluded",
+          "ruling": false
+        },
+        {
+          "who": "wajh: concluded",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The words of nikāḥ: concluded in another tongue when unable; when he can learn the Arabic, two wujūh. No madhhab marked. Reconciled (jamʿ): the act is not itself due, so he need not learn the Arabic, «لأن النكاح غير واجب بأصل الشرع» (Kashshāf); al-Inṣāf: «وهو المذهب»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f005",
+      "encoder": "wording_need_not_learn",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "meaning_only": false,
+        "able": true,
+        "need_not_learn": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "wajh: not valid",
+          "ruling": false
+        },
+        {
+          "who": "wajh: valid",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The words of liʿān: «وحكمه حكم لفظ النكاح»: two wujūh where he can manage the Arabic. No madhhab marked. Reconciled (jamʿ): the act is not itself due, so he need not learn the Arabic, «لأن النكاح غير واجب بأصل الشرع» (Kashshāf); al-Inṣāf: «وهو المذهب»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f000",
+      "encoder": "combining_forms",
+      "class": "derivable",
+      "facts": {
+        "substitutes": true
+      },
+      "expected": false,
+      "note": "Wiping the ears: «المذهب» once, with the head or with new water, not both; al-Qāḍī ʿAbd al-Wahhāb of Ḥarrān's report of combining is the dissent."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f001",
+      "encoder": "combining_forms",
+      "class": "derivable",
+      "facts": {
+        "substitutes": true
+      },
+      "expected": false,
+      "note": "The opening supplication: «فالمذهب» subḥānaka allāhumma alone; Ibn Hubayra and Taqī al-Dīn combine, but the reports of combining are weak (ḍaʿīf: «وفيها ضعف»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f002",
+      "encoder": "combining_forms",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "substitutes": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "wajh: not combined",
+          "ruling": false
+        },
+        {
+          "who": "wajh: combined",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Answering the muʾadhdhin: combining the ḥayʿala with the ḥawqala, and likewise at the tathwīb of fajr: two wujūh. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f003",
+      "encoder": "combining_forms",
+      "class": "derivable",
+      "facts": {
+        "substitutes": false
+      },
+      "expected": true,
+      "note": "The sunna after Friday: Aḥmad (Ibrāhīm al-Ḥarbī): «فأيهما فعلت فحسن وإن أردت أن تحتاط صليت ركعتين وأربعا جمعت فعله وأمره»; the aṣḥāb rest on the Companions' six. Two prayers are not substitutes for one another."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f004",
+      "encoder": "combining_forms",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "substitutes": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "Taqī al-Dīn: not combined",
+          "ruling": false
+        },
+        {
+          "who": "some aṣḥāb: combined",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The ṣalāt on the Prophet in the tashahhud, «كما صليت على آل إبراهيم» or «على إبراهيم»: some aṣḥāb combine them; Taqī al-Dīn: «لا يصح الجمع بين البدل والمبدل»; Ibn Rajab cites al-Bukhārī's combining (Kaʿb b. ʿUjra). No madhhab marked."
+    }
+  ]
+}

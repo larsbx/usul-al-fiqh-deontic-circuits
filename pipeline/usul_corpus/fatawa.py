@@ -66,6 +66,7 @@ def answer_record(d: Mapping) -> dict:
         "title": d["title"],
         "question": html_text(d.get("question")),
         "answer": html_text(d.get("body")),
+        "summary": html_text(d.get("description")),
         "source": src and {"ref": src["reference"], "title": src["title"]},
         "topics": [_path(t) for t in d.get("topics") or []],
         "subsites": [_path(t) for t in d.get("subsites") or []],

@@ -128,3 +128,13 @@ def fetch(w: dict, cache: Path, max_pages: int | None = None, refresh: bool = Fa
         "bytes": len(data),
         "sha256": hashlib.sha256(data).hexdigest(),
     }
+
+
+def merge_lock(old: dict | None, new: dict) -> tuple[dict, bool]:
+    """The lock entry after a fetch, and whether the content changed. Unchanged bytes keep the old
+    entry whole (derived hashes such as ``ocr_sha256`` included); changed bytes drop them."""
+    if old is None:
+        return new, False
+    if old["sha256"] == new["sha256"]:
+        return old, False
+    return new, True

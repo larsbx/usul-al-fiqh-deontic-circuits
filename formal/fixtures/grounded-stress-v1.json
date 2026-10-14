@@ -1,0 +1,22 @@
+{
+ "contract": "usul.grounded-extension",
+ "version": 1,
+ "generator": {
+  "kind": "mmix-lcg",
+  "a": 6364136223846793005,
+  "c": 1442695040888963407,
+  "modulus": 18446744073709551616,
+  "output": "state >> 33",
+  "seed": 1421,
+  "count": 10000,
+  "n_max": 7,
+  "num": 1,
+  "den": 4
+ },
+ "digest": {
+  "hash": "h' = (h * 1000003 + mask + 1) mod (2^61 - 1)",
+  "fingerprint": 2254257084300117683,
+  "nonempty": 7428,
+  "members": 12783
+ }
+}

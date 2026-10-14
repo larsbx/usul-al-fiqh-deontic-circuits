@@ -1,0 +1,259 @@
+{
+  "note": "Author-mention lexicon for reception counts and labels. Each id is the work-id prefix of that author's cited works. Forms count as written (no cue needed); `not` lists namesakes that must not count.",
+  "authors": [
+    {
+      "id": "ibn_taymiyya",
+      "name_tr": "Taqī al-Dīn Ibn Taymiyya",
+      "cite_as": [
+        "ابن تيمية",
+        "شيخ الإسلام ابن تيمية",
+        "شيخ الإسلام",
+        "الشيخ تقي الدين",
+        "تقي الدين ابن تيمية",
+        "أبو العباس ابن تيمية"
+      ],
+      "not": [
+        "شيخ الإسلام محمد بن عبد الوهاب",
+        "شيخ الإسلام ابن عبد الوهاب",
+        "المجد ابن تيمية",
+        "مجد الدين ابن تيمية",
+        "أبو البركات ابن تيمية"
+      ]
+    },
+    {
+      "id": "majd",
+      "name_tr": "Majd al-Dīn Ibn Taymiyya",
+      "cite_as": [
+        "المجد ابن تيمية",
+        "مجد الدين ابن تيمية",
+        "أبو البركات ابن تيمية",
+        "قال المجد",
+        "الشيخ المجد",
+        "جد شيخ الإسلام ابن تيمية",
+        "جد شيخ الإسلام"
+      ]
+    },
+    {
+      "id": "ibn_qayyim",
+      "name_tr": "Ibn Qayyim al-Jawziyya",
+      "cite_as": [
+        "ابن القيم",
+        "ابن قيم الجوزية",
+        "العلامة ابن القيم"
+      ]
+    },
+    {
+      "id": "ibn_qudama",
+      "name_tr": "Muwaffaq al-Dīn Ibn Qudāma",
+      "cite_as": [
+        "ابن قدامة",
+        "موفق الدين",
+        "الموفق ابن قدامة",
+        "الشيخ الموفق",
+        "قال الموفق"
+      ],
+      "not": [
+        "شمس الدين ابن قدامة",
+        "أبو الفرج ابن قدامة",
+        "عبد الرحمن بن قدامة",
+        "ابن أبي عمر"
+      ]
+    },
+    {
+      "id": "shams_ibn_qudama",
+      "name_tr": "Shams al-Dīn Ibn Qudāma",
+      "cite_as": [
+        "شمس الدين ابن قدامة",
+        "أبو الفرج ابن قدامة",
+        "عبد الرحمن بن قدامة",
+        "ابن أبي عمر"
+      ]
+    },
+    {
+      "id": "ibn_muflih",
+      "name_tr": "Shams al-Dīn Ibn Mufliḥ",
+      "cite_as": [
+        "ابن مفلح",
+        "شمس الدين ابن مفلح"
+      ],
+      "not": [
+        "برهان الدين ابن مفلح",
+        "أبو إسحاق ابن مفلح",
+        "ابن مفلح في المبدع",
+        "ابن مفلح الحفيد"
+      ]
+    },
+    {
+      "id": "burhan_ibn_muflih",
+      "name_tr": "Burhān al-Dīn Ibn Mufliḥ",
+      "cite_as": [
+        "برهان الدين ابن مفلح",
+        "أبو إسحاق ابن مفلح",
+        "ابن مفلح في المبدع",
+        "ابن مفلح الحفيد",
+        "صاحب المبدع"
+      ]
+    },
+    {
+      "id": "mardawi",
+      "name_tr": "ʿAlāʾ al-Dīn al-Mardāwī",
+      "cite_as": [
+        "المرداوي",
+        "صاحب الإنصاف"
+      ]
+    },
+    {
+      "id": "ibn_rajab",
+      "name_tr": "Ibn Rajab al-Ḥanbalī",
+      "cite_as": [
+        "ابن رجب"
+      ]
+    },
+    {
+      "id": "hajjawi",
+      "name_tr": "Sharaf al-Dīn al-Ḥajjāwī",
+      "cite_as": [
+        "الحجاوي",
+        "صاحب الزاد",
+        "صاحب الإقناع"
+      ]
+    },
+    {
+      "id": "ibn_najjar",
+      "name_tr": "Ibn al-Najjār al-Futūḥī",
+      "cite_as": [
+        "ابن النجار",
+        "الفتوحي",
+        "صاحب المنتهى"
+      ]
+    },
+    {
+      "id": "buhuti",
+      "name_tr": "Manṣūr al-Buhūtī",
+      "cite_as": [
+        "البهوتي",
+        "منصور البهوتي",
+        "صاحب الروض",
+        "صاحب الكشاف"
+      ]
+    },
+    {
+      "id": "bali",
+      "name_tr": "ʿAlāʾ al-Dīn al-Baʿlī",
+      "cite_as": [
+        "البعلي"
+      ]
+    },
+    {
+      "id": "nawawi",
+      "name_tr": "Muḥyī al-Dīn al-Nawawī",
+      "cite_as": [
+        "النووي",
+        "الإمام النووي"
+      ]
+    },
+    {
+      "id": "ibn_hajar",
+      "name_tr": "Ibn Ḥajar al-ʿAsqalānī",
+      "cite_as": [
+        "ابن حجر",
+        "الحافظ ابن حجر",
+        "العسقلاني"
+      ],
+      "not": [
+        "ابن حجر الهيتمي",
+        "ابن حجر المكي",
+        "ابن حجر الهيثمي"
+      ]
+    },
+    {
+      "id": "ibn_hazm",
+      "name_tr": "Ibn Ḥazm al-Andalusī",
+      "cite_as": [
+        "ابن حزم"
+      ]
+    },
+    {
+      "id": "ibn_abd_al_barr",
+      "name_tr": "Ibn ʿAbd al-Barr",
+      "cite_as": [
+        "ابن عبد البر"
+      ]
+    },
+    {
+      "id": "ibn_rushd",
+      "name_tr": "Ibn Rushd al-Ḥafīd",
+      "cite_as": [
+        "ابن رشد"
+      ],
+      "not": [
+        "ابن رشد الجد"
+      ]
+    },
+    {
+      "id": "ibn_mundhir",
+      "name_tr": "Ibn al-Mundhir al-Naysābūrī",
+      "cite_as": [
+        "ابن المنذر"
+      ]
+    },
+    {
+      "id": "khattabi",
+      "name_tr": "Abū Sulaymān al-Khaṭṭābī",
+      "cite_as": [
+        "الخطابي"
+      ]
+    },
+    {
+      "id": "sanani",
+      "name_tr": "Muḥammad b. Ismāʿīl al-Ṣanʿānī",
+      "cite_as": [
+        "الصنعاني",
+        "الأمير الصنعاني"
+      ],
+      "not": [
+        "عبد الرزاق الصنعاني"
+      ]
+    },
+    {
+      "id": "shawkani",
+      "name_tr": "Muḥammad b. ʿAlī al-Shawkānī",
+      "cite_as": [
+        "الشوكاني"
+      ]
+    },
+    {
+      "id": "qannawji",
+      "name_tr": "Ṣiddīq Ḥasan Khān al-Qannawjī",
+      "cite_as": [
+        "صديق حسن خان",
+        "القنوجي"
+      ]
+    },
+    {
+      "id": "kawsaj",
+      "name_tr": "Isḥāq b. Manṣūr al-Kawsaj",
+      "cite_as": [
+        "الكوسج",
+        "إسحاق بن منصور"
+      ]
+    },
+    {
+      "id": "harb",
+      "name_tr": "Ḥarb al-Kirmānī",
+      "cite_as": [
+        "حرب الكرماني",
+        "حرب بن إسماعيل"
+      ]
+    },
+    {
+      "id": "muhammad_ibn_ibrahim",
+      "name_tr": "Muḥammad b. Ibrāhīm Āl al-Shaykh",
+      "cite_as": [
+        "الشيخ محمد بن إبراهيم",
+        "محمد بن إبراهيم آل الشيخ",
+        "سماحة الشيخ محمد بن إبراهيم"
+      ]
+    }
+  ]
+}

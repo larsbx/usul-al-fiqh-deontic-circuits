@@ -21,8 +21,40 @@
           "ruling": "whole"
         }
       ],
-      "matches_madhhab": true,
-      "note": "Najāsa falls into running water: is the whole reckoned, or each jirya by itself (two qullas or not)? Two riwāyas; «(والثانية) : المذهب عند القاضي»."
+      "matches_madhhab": false,
+      "note": "Najāsa falls into running water: is the whole reckoned, or each jirya by itself (two qullas or not)? Two riwāyas; «(والثانية) : المذهب عند القاضي».",
+      "side_check": {
+        "from_matches": true,
+        "refs": [
+          "src:openiti-buhuti-kashshaf-shamela21642/v01:p039",
+          "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p021",
+          "src:openiti-insaf-shamela21609/v01:p057"
+        ],
+        "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side.",
+        "contradictions": [
+          {
+            "evidence_index": 0,
+            "case_facts": {
+              "running": true
+            },
+            "rationale": "Running water: al-Insaf marks whole-body accounting as the madhhab; Sharh al-Muntaha expressly contrasts the per-jirya report with the adopted whole-body rule. The opposing per-jirya tashih is retained in the full ledger, not selected as contradiction evidence."
+          },
+          {
+            "evidence_index": 2,
+            "case_facts": {
+              "running": true
+            },
+            "rationale": "Running water: al-Insaf marks whole-body accounting as the madhhab; Sharh al-Muntaha expressly contrasts the per-jirya report with the adopted whole-body rule. The opposing per-jirya tashih is retained in the full ledger, not selected as contradiction evidence."
+          },
+          {
+            "evidence_index": 3,
+            "case_facts": {
+              "running": true
+            },
+            "rationale": "Running water: al-Insaf marks whole-body accounting as the madhhab; Sharh al-Muntaha expressly contrasts the per-jirya report with the adopted whole-body rule. The opposing per-jirya tashih is retained in the full ledger, not selected as contradiction evidence."
+          }
+        ]
+      }
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001",

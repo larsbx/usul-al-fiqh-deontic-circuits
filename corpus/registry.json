@@ -1,7 +1,7 @@
 {
   "registry_version": "1",
   "policy": {
-    "full_text": "Full texts are fetched into .cache/corpus and never committed. Committed records carry short excerpts with edition-qualified locators.",
+    "full_text": "Full texts are fetched into .cache/corpus. Public-domain text witnesses (works with rights public_domain_text) are also committed, byte-identical to their pinned source, under corpus/texts via Git LFS; modern texts are never committed. Committed records carry short excerpts with edition-qualified locators.",
     "authority": "Records are candidates until reviewed. Nothing here is a fatwā."
   },
   "works": [
@@ -1593,6 +1593,10 @@
           "مسائل الكوسج",
           "مسائل اسحاق بن منصور"
         ]
+      },
+      "segmenter": {
+        "kind": "masail",
+        "start": "\\[\\s*(?P<n>\\d+)\\s*-"
       }
     },
     {
@@ -1628,6 +1632,10 @@
           "رواية ابي داود عن احمد",
           "مسائل الامام احمد لابي داود"
         ]
+      },
+      "segmenter": {
+        "kind": "masail",
+        "start": "(?:و?سمعت أحمد|و?قلت لأحمد|و?سئل أحمد|و?قيل لأحمد|و?سألت أحمد)"
       }
     },
     {
@@ -1662,6 +1670,10 @@
           "مسائل حرب",
           "رواية حرب"
         ]
+      },
+      "segmenter": {
+        "kind": "masail",
+        "start": "(?:و?قلت لأحمد|و?سألت أحمد|و?سمعت أحمد|و?قيل لأحمد|و?قلت لإسحاق|و?سألت إسحاق|و?سمعت إسحاق)"
       }
     },
     {
@@ -2421,6 +2433,10 @@
         "cite_as": [
           "المقنع"
         ]
+      },
+      "segmenter": {
+        "kind": "abwab",
+        "end": "خاتمة الكتاب"
       }
     },
     {
@@ -2454,6 +2470,9 @@
         "cite_as": [
           "عمدة الفقه"
         ]
+      },
+      "segmenter": {
+        "kind": "abwab"
       }
     },
     {
@@ -2493,6 +2512,9 @@
           "المحرر لابن عبد الهادي",
           "المحرر للرافعي"
         ]
+      },
+      "segmenter": {
+        "kind": "abwab"
       }
     },
     {
@@ -2639,6 +2661,9 @@
         "cite_as": [
           "زاد المستقنع"
         ]
+      },
+      "segmenter": {
+        "kind": "abwab"
       }
     },
     {
@@ -2677,6 +2702,9 @@
           "الاقناع في حل الفاظ ابي شجاع",
           "الاقناع للشربيني"
         ]
+      },
+      "segmenter": {
+        "kind": "abwab"
       }
     },
     {
@@ -2716,6 +2744,9 @@
         "not": [
           "سدرة المنتهى"
         ]
+      },
+      "segmenter": {
+        "kind": "abwab"
       }
     },
     {
@@ -2852,6 +2883,11 @@
         "cite_as": [
           "مجموع الفتاوى"
         ]
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "و?سئل\\s*(?:[-–:]|(?:شيخ|رحمه|أيضا|قدس))",
+        "answer": "(?:فأجاب)"
       }
     },
     {
@@ -2886,6 +2922,11 @@
         "cite_as": [
           "الفتاوى الكبرى"
         ]
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "(?:\\[?مسألة)",
+        "answer": "(?:الجواب)"
       }
     },
     {
@@ -2953,6 +2994,11 @@
         "cite_as": [
           "جامع المسائل"
         ]
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "(?:\\[?مسألة)",
+        "answer": "(?:الجواب)"
       }
     },
     {
@@ -3188,6 +3234,11 @@
         "cite_as": [
           "الدرر السنية"
         ]
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "و?سئل\\s*(?:[-–:]|(?:الشيخ|أيضا|ابن|عن))",
+        "answer": "(?:فأجاب|و?أجاب)"
       }
     },
     {
@@ -3224,6 +3275,11 @@
           "فتاوى ورسائل الشيخ محمد بن ابراهيم",
           "فتاوى محمد بن ابراهيم"
         ]
+      },
+      "segmenter": {
+        "kind": "masail",
+        "start": "(?:\\((?=\\d)|(?=\\d+\\s*-\\s*$))(?P<n>\\d+)\\s*[-_]?\\s*(?:$|(?=[^\\W\\d_]|\\())",
+        "ordered": true
       }
     },
     {
@@ -3259,6 +3315,11 @@
         "cite_as": [
           "فتاوى اللجنة الدائمة"
         ]
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "(?:السؤال|س\\s*\\d*\\s*:)",
+        "answer": "(?:ج\\s*\\d*\\s*:)"
       }
     },
     {
@@ -3290,6 +3351,11 @@
         "role": "citer",
         "genre": "fatawa",
         "scholar": "ibn_baz"
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "(?:س\\s*\\d*\\s*:)",
+        "answer": "(?:ج\\s*\\d*\\s*:)"
       }
     },
     {
@@ -3321,6 +3387,11 @@
         "role": "citer",
         "genre": "fatawa",
         "scholar": "ibn_baz"
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "(?:س\\s*\\d*\\s*:)",
+        "answer": "(?:ج\\s*\\d*\\s*:)"
       }
     },
     {
@@ -3352,6 +3423,11 @@
         "role": "citer",
         "genre": "fatawa",
         "scholar": "ibn_uthaymin"
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "و?سئل\\s+(?:فضيلة|الشيخ)",
+        "answer": "(?:فأجاب)"
       }
     },
     {
@@ -3383,6 +3459,12 @@
         "role": "citer",
         "genre": "fatawa",
         "scholar": "ibn_uthaymin"
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "(?:فضيلة الشيخ\\s*:)",
+        "question_heading": true,
+        "answer": "(?:فأجاب)"
       }
     },
     {

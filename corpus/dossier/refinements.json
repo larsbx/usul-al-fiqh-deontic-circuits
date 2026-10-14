@@ -961,6 +961,461 @@
    "closes": [
     "rule:qisas_belongs_to_whom"
    ]
+  },
+  {
+   "id": "successive_by_binding",
+   "title": "The later contract governs where it binds",
+   "terms": [
+    "jam",
+    "farq",
+    "taarud",
+    "daman",
+    "amana"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037",
+    "note": "Ibn Rajab, qāʿida 37: successive contracts on one thing and how their rulings interlock; the tranche-6 reading let the later contract always govern."
+   },
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f003",
+     "note": "Abū al-Barakāt: «قياس المذهب صحته ويسقط ضمان العارية لأنها ليست لازمة، وعقد هذه الأمانة لازم»: the binding later contract displaces the non-binding earlier one."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001",
+     "note": "The deposit used with permission: «وفرق صاحب المحرر بينهما», deposit and loan being alike non-binding («ولا اختلاف هاهنا بين العقدين في الجواز»)."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f006",
+     "note": "Aḥmad's riwāya: the void condition «يصير وجوده كعدمه», so the binding pledge stands."
+    }
+   ],
+   "conditions": [
+    "two contracts (or a hand and a contract) succeed one another on one thing",
+    "the later binds, or the earlier did not"
+   ],
+   "rationale": "The reconciliation ledger found the reading against Majd's ẓāhir of Aḥmad on the pledge used with permission (37.f000) and against Aḥmad's riwāya on the pledge with a void condition, «الشرط يفسد» (37.f006). Abū al-Barakāt's own farq in 37.f003 is the jamʿ: a non-binding permission cannot undo a binding (lāzim) pledge. The refinement is the old reading wherever the later contract binds or the earlier did not, so every derivable farʿ of the qāʿida keeps its ruling, and the two contradictions resolve to the higher-graded side.",
+   "lean": [
+    "Usul.Refinements.laterBindingGoverns",
+    "Usul.Refinements.laterBindingGoverns_conservative",
+    "Usul.Refinements.laterBindingGoverns_unbound_earlier",
+    "Usul.Refinements.binding_pledge_survives"
+   ],
+   "conservative": "Usul.Refinements.laterBindingGoverns_conservative",
+   "closes": [
+    "rule:successive_by_binding"
+   ],
+   "iq": []
+  },
+  {
+   "id": "substitute_at_obligation",
+   "title": "The substitute stands once it was what fell due",
+   "terms": [
+    "jam",
+    "farq",
+    "taarud"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016",
+    "note": "Ibn Rajab, qāʿida 16: one unable to perform the original, who then becomes able after the substitute is due; al-Saʿdī's Q28 reading moved him to the original whenever it became possible."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p086",
+     "note": "The Iqnāʿ makes the state at obligation decisive in kaffārāt: he is not obliged to move to the original, but may.",
+     "excerpt_ar": "والاعتبار في الكفارات بحالة الوجوب كالحد1 وإمكان الأداء مبني على زكاة فإن وجبت وهو موسر ثم أعسر لم يجزئه إلا العتق وإن وجبت وهو معسر ثم أيسر أو هو عبد ثم عتق لم يلزمه العتق وله الانتقال إليه إن شاء"
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p454",
+     "note": "Kashshāf grounds the same ruling in 'regard for the time of obligation, as in the other kaffārāt', i.e. position 1.",
+     "excerpt_ar": "(أو لم يشرع) فيه (ثم قدر على الهدي لم يلزمه الانتقال إليه) اعتبارا بوقت الوجوب كسائر الكفارات. (وإن شاء انتقل)"
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v09:p209",
+     "note": "In the ẓihār kaffāra, al-Inṣāf says that one who became wealthy after it fell due as a poor man need not manumit 'according to the correct view of the madhhab' (time of obligation governs), so the substitute stands.",
+     "excerpt_ar": "وإن وجبت وهو معسر، ثم أيسر: لم يلزمه العتق، وله الانتقال إليه إن شاء، مطلقا على الصحيح من المذهب،"
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v04:p145",
+     "note": "al-Mardāwī reads the apparent sense of al-Muqniʿ, al-Hidāya, al-Mudhhab, al-Mustawʿib and others as 'she is not returned to him', since they give only her value. This is position 0 (his right stays settled in the value).",
+     "excerpt_ar": "لكن لو أسلم بعد ذلك: ففي جواز ردها إليه احتمالان وأطلقهما في الرعاية الكبرى، والفروع، والقواعد الفقهية. قلت: ظاهر كلام المصنف هنا، وصاحب الهداية، والمذهب، والمستوعب، وغيرهم: أنها لا ترد إليه، لاقتصارهم على إعطاء قيمتها."
+    }
+   ],
+   "conditions": [
+    "the original became possible after the obligation arose",
+    "the substitute was what fell due when it arose (the fast once due, the value once the right was fixed in it)"
+   ],
+   "rationale": "The reconciliation ledger found the reading against the later taṣḥīḥ on five of the qāʿida's seven furūʿ: al-Inṣāf, al-Iqnāʿ and Kashshāf judge kaffārāt by the state at obligation («بحالة الوجوب»), and the books give the value where the right was fixed in it. The refinement is the earlier reading wherever the substitute was not yet settled (the fungible destroyed and its like found before payment, the bankrupt's purchase freed of the competing right), so those keep their rulings.",
+   "lean": [
+    "Usul.Refinements.useSubstituteAt",
+    "Usul.Refinements.useSubstituteAt_conservative",
+    "Usul.Refinements.settled_substitute_stands"
+   ],
+   "conservative": "Usul.Refinements.useSubstituteAt_conservative",
+   "closes": [
+    "rule:substitute_at_obligation"
+   ],
+   "iq": []
+  },
+  {
+   "id": "unknown_condition_in_fact",
+   "title": "In transactions the condition (sharṭ) counts as it is in fact",
+   "terms": [
+    "jam",
+    "farq",
+    "shart"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065",
+    "note": "Ibn Rajab, qāʿidas 64–65: one who acts not knowing a condition of his act holds, or believing it absent; the tranche-2 reading required knowledge."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p462",
+     "note": "Kashshāf: an agent who sells not knowing he was appointed — his sale is effective, since in contracts what counts is the actual state of affairs.",
+     "excerpt_ar": "يعلم الوكيل فباعها نفذ بيعه لأن الاعتبار في العقود بما في نفس الأمر"
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v04:p286",
+     "note": "al-Inṣāf (after the fuḍūlī sale) marks validity as «على الصحيح» for selling what one thinks another's and it turns out his by inheritance, i.e. the 'valid' wajh.",
+     "excerpt_ar": "لو باع ما يظنه لغيره، فظهر له كالإرث والوكالة صح البيع، على الصحيح. قال في التلخيص: صح على الأظهر. وقدمه في المغني في باب الرهن. وقيل: لا يصح. وجزم به في المنور."
+    },
+    {
+     "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p399",
+     "note": "The Muntahā rules the release valid even if the creditor believed the debt did not exist.",
+     "excerpt_ar": "أو تركه، أو ملكه له، أو تصدق به عليه، أو عفا عنه، صح ولو قبل حلوله، أو اعتقد عدمه. لا إن علقه."
+    }
+   ],
+   "conditions": [
+    "a transaction over property",
+    "the unknown condition is the actor's own authority: his ownership, or the owner's permission",
+    "ṭalāq, ʿitq, nikāḥ and conditions of the object (deliverability) are outside it"
+   ],
+   "rationale": "The ledger found the reading against al-Inṣāf's «على الصحيح», Taṣḥīḥ al-Furūʿ and the muʿtamad on the sale of what he thought another's, the release of what he thought not owed and the disposal under an unknown permission. Kashshāf gives the farq: «الاعتبار في العقود بما في نفس الأمر». Outside it the reading stands (the divorce on an unknown permission, al-manṣūṣ; the remarriage of the missing man's wife; the runaway's sale, voided on deliverability).",
+   "lean": [
+    "Usul.Refinements.countsAsMetIn",
+    "Usul.Refinements.countsAsMetIn_conservative",
+    "Usul.Refinements.authority_in_fact_suffices"
+   ],
+   "conservative": "Usul.Refinements.countsAsMetIn_conservative",
+   "closes": [
+    "rule:unknown_condition_in_fact"
+   ],
+   "iq": []
+  },
+  {
+   "id": "excess_in_following",
+   "title": "In following, the excess counts as the obligatory (wājib)",
+   "terms": [
+    "jam",
+    "farq"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003",
+    "note": "Ibn Rajab, qāʿida 3: an undistinguished excess over what suffices; the tranche-7 reading made it obligatory only where the whole was the lightened duty."
+   },
+   "refs": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f000",
+     "note": "Ibn ʿAqīl's iḥtimāl: «ويحتمل أن تجري الزيادة مجرى الواجب في باب الاتباع خاصة إذ الاتباع قد يسقط الواجب»."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v02:p223",
+     "note": "Al-Mardāwī says it is al-madhhab without qualification that whoever catches the rukūʿ catches the rakʿa, whether or not he catches the imam's ṭumaʾnīna, so the imam's rukūʿ beyond the sufficient measure still counts for following (position 1).",
+     "excerpt_ar": "(ومن أدرك الركوع أدرك الركعة) هذا المذهب مطلقا، سواء أدرك معه"
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p460",
+     "note": "Kashshāf/Iqnāʿ rule decisively that he catches the rakʿa even if he did not catch the ṭumaʾnīna with the imam, provided he settles himself.",
+     "excerpt_ar": "في إدراكه) أي الإمام (راكعا ms0522 أدرك الركعة ولو لم يدرك معه الطمأنينة إذا"
+    }
+   ],
+   "conditions": [
+    "an undistinguished excess",
+    "performed in following an imām"
+   ],
+   "rationale": "The ledger found the reading against al-Inṣāf's «هذا المذهب مطلقا» and the muʿtamad on joining the imām in rukūʿ after the sufficient measure. Ibn ʿAqīl's farq of following, quoted by Ibn Rajab himself, separates it from the badana, the head and the older age, which keep the reading.",
+   "lean": [
+    "Usul.Refinements.excessObligatoryIn",
+    "Usul.Refinements.excessObligatoryIn_conservative"
+   ],
+   "conservative": "Usul.Refinements.excessObligatoryIn_conservative",
+   "closes": [
+    "rule:excess_in_following"
+   ],
+   "iq": []
+  },
+  {
+   "id": "advanced_kaffara_at_obligation",
+   "title": "An advanced kaffāra is judged at its wujūb",
+   "terms": [
+    "jam",
+    "farq",
+    "taarud"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005",
+    "note": "Ibn Rajab, qāʿida 5: an act advanced before its time, the state then changing; the tranche-7 reading followed the unqualified statements of most aṣḥāb."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p086",
+     "note": "al-Iqnāʿ: «والاعتبار في الكفارات بحالة الوجوب».",
+     "excerpt_ar": "والاعتبار في الكفارات بحالة الوجوب كالحد1 وإمكان الأداء مبني على زكاة فإن وجبت وهو موسر ثم أعسر لم يجزئه إلا العتق وإن وجبت وهو معسر ثم أيسر أو هو عبد ثم عتق لم يلزمه العتق وله الانتقال إليه إن شاء"
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p244",
+     "note": "Kashshāf/Iqnāʿ rule decisively that one who expiated by fasting before breaking the oath, then broke it while well off, has not been discharged, since the expiation is judged at the time of wujūb; Ibn Rajab's objection is then quoted only as a report.",
+     "excerpt_ar": "(وإذا كفر بالصوم قبل الحنث لفقره) إذ (ثم حنث وهو موسر لم يجزئه) الصوم"
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p338",
+     "note": "The Iqnāʿ matn ends the sentence \"if he expiated by fasting before the ḥinth for poverty, then broke the oath\" (previous line) with \"while well off, it does not suffice\".",
+     "excerpt_ar": "وهو موسر لم يجزئه ومن كرر يمينا موجبها واحد على فعل واحد كقوله: والله لا"
+    }
+   ],
+   "conditions": [
+    "the advanced act is a kaffāra",
+    "the state changed by its wujūb (he broke the oath well off: «حنث وهو موسر»)"
+   ],
+   "rationale": "The muʿtamad (al-Iqnāʿ, Kashshāf) sides with al-Mughnī on the expiation advanced by fasting: a kaffāra is judged at its wujūb, the same farq as qāʿida 16's state at obligation. The hady of tamattuʿ is no kaffāra, and the later works leave it unweighted, so it keeps the reading, as do the zakāt and the second kind (a defect in a condition, sharṭ).",
+   "lean": [
+    "Usul.Refinements.advancedSufficesIn",
+    "Usul.Refinements.advancedSufficesIn_conservative"
+   ],
+   "conservative": "Usul.Refinements.advancedSufficesIn_conservative",
+   "closes": [
+    "rule:advanced_kaffara_at_obligation"
+   ],
+   "iq": []
+  },
+  {
+   "id": "wording_need_not_learn",
+   "title": "No duty to learn the Arabic for an act not itself due",
+   "terms": [
+    "jam",
+    "farq"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010",
+    "note": "Ibn Rajab, qāʿida 10: wordings counted with ability; the tranche-7 reading required the Arabic of one able to learn it."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p039",
+     "note": "Kashshāf/Iqnāʿ rule decisively that one able to learn the Arabic offer and acceptance need not learn them, because nikāḥ is not obligatory in itself and the meaning is what counts.",
+     "excerpt_ar": "يلزمه) تعلمها بالعربية لأن النكاح غير واجب بأصل الشرع فلم يجب تعلم"
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v08:p048",
+     "note": "On one who could learn the Arabic words of nikāḥ, al-Mardāwī says the first wajh, that he need not learn them and the contract is concluded in his tongue with their specific meaning, \"wa-huwa al-madhhab\" (the label starts this line), chosen by al-Qāḍī and Ibn ʿAbdūs and corrected in al-Taṣḥīḥ.",
+     "excerpt_ar": "المذهب. اختاره القاضي، وابن عبدوس في تذكرته. وصححه في التصحيح. وجزم به"
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v09:p238",
+     "note": "On liʿān by one unable in Arabic (where al-Muqniʿ asks whether he must learn it), al-Mardāwī says the wajh that it is valid in his tongue is al-madhhab, chosen by al-Muwaffaq and al-Shāriḥ and decisive in al-Wajīz.",
+     "excerpt_ar": "في المذهب، والمستوعب، والخلاصة، والنظم. أحدهما: يصح بلسانه، وهو المذهب،"
+    }
+   ],
+   "conditions": [
+    "the wording is counted with ability (nikāḥ, liʿān)",
+    "he does not know the Arabic and could only learn it",
+    "the act is not itself due by the Sharīʿa"
+   ],
+   "rationale": "al-Inṣāf labels the first wajh «المذهب» for nikāḥ and liʿān alike, and Kashshāf gives the reason: «لأن النكاح غير واجب بأصل الشرع فلم يجب تعلم». The Friday khuṭba, being due, keeps the reading.",
+   "lean": [
+    "Usul.Refinements.otherTongueValidIn",
+    "Usul.Refinements.otherTongueValidIn_conservative"
+   ],
+   "conservative": "Usul.Refinements.otherTongueValidIn_conservative",
+   "closes": [
+    "rule:wording_need_not_learn"
+   ],
+   "iq": []
+  },
+  {
+   "id": "forced_acquisition_solvent",
+   "title": "A solvent taker owns before paying",
+   "terms": [
+    "jam",
+    "farq"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050",
+    "note": "Ibn Rajab, qāʿida 50: whether ownership in forced acquisitions waits on paying the price; the tranche-9 reading allowed it only under necessity."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v06:p298",
+     "note": "Al-Mardāwī says the view that the shafīʿ owns the share by the mere demand, if he can pay the price, is \"huwa al-madhhab\" (the previous line reads \"wa-qīla: yamlikuhu bi-mujarrad al-muṭālaba idhā kāna malīʾan bi-l-thaman. wa-huwa\"). He reports Ibn ʿAqīl's \"not owned until he pays the price\" only as ",
+     "excerpt_ar": "المذهب. اختاره القاضي، وأبو الخطاب، وابن عبدوس في تذكرته. وقدمه في"
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p366",
+     "note": "The Iqnāʿ states decisively that the share is owned by the demand, even before he receives it, provided he can pay the price, so ownership comes before the price is paid. On the shufʿa, the record's leading example.",
+     "excerpt_ar": "ذلك رضا فإن اشتغل بكلام آخر أو سكت لغير حاجة بطلت ويملك الشقص بالمطالبة"
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f001",
+     "note": "Ibn Rajab's rationale, «والضرر لا يزال بالضرر», and his farq for the seller's annulment: «اجتمع له العوض والمعوض»."
+    }
+   ],
+   "conditions": [
+    "the acquisition is the shufʿa (the farq is cited for it alone; the seller's annulment (faskh) and the other acquisitions keep the reading)",
+    "the shafīʿ is solvent for the price"
+   ],
+   "rationale": "The ledger found the reading against al-Inṣāf's «وهو المذهب», Kashshāf and al-Iqnāʿ on the shufʿa: the solvent taker owns by the demand, with the price owed. Solvency is the farq the madhhab states, and it answers Ibn Rajab's own ground: «والضرر لا يزال بالضرر», and a solvent taker inflicts no harm. The necessity case keeps the reading, and so does every acquisition other than the shufʿa, for which no farq is cited.",
+   "lean": [
+    "Usul.Refinements.ownedBeforePaymentIn",
+    "Usul.Refinements.ownedBeforePaymentIn_conservative",
+    "Usul.Refinements.ownedBeforePaymentIn_insolvent"
+   ],
+   "conservative": "Usul.Refinements.ownedBeforePaymentIn_conservative",
+   "closes": [
+    "rule:forced_acquisition_solvent"
+   ],
+   "iq": []
+  },
+  {
+   "id": "disposal_before_qabd_debt",
+   "title": "A debt is sold only to the debtor",
+   "terms": [
+    "jam",
+    "farq"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052",
+    "note": "Ibn Rajab, qāʿida 52: disposal before qabḍ; the tranche-10 reading barred it only in the undetermined and where the right is not settled."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p112",
+     "note": "al-Inṣāf: a settled debt may not be sold to any but the debtor, «وهو الصحيح من المذهب. وعليه الأصحاب», which al-Mardāwī applies to the sale of the deeds.",
+     "excerpt_ar": "ذمته. وهو الصحيح من المذهب. وعليه الأصحاب. وعنه يصح. قاله الشيخ تقي"
+    },
+    {
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p072",
+     "note": "The Muntahā and its sharḥ state flatly that a debt may not be sold to anyone but the debtor, «muṭlaqan». This covers sale for goods taken in the session.",
+     "excerpt_ar": "(ولا) بيع دين لغير من هو عليه مطلقا ولا بيعه (بمؤجل لمن هو عليه) ;"
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p144",
+     "note": "The Iqnāʿ allows the sale of a settled debt to the debtor and then rules decisively «ولا يصح بيعه لغيره».",
+     "excerpt_ar": "به نسيئة أو بموصوف في الذمة وإلا فلا ولا يصح بيعه لغيره ولا بيع دين"
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f001",
+     "note": "Ibn Rajab: «حاصل هذا يرجع إلى جواز بيع الدين من غير الغريم», the riwāya the reading followed."
+    }
+   ],
+   "conditions": [
+    "the thing disposed of is a settled debt in another's dhimma",
+    "it is sold to one other than the debtor"
+   ],
+   "rationale": "The ledger found the reading against al-Inṣāf's «وهو الصحيح من المذهب. وعليه الأصحاب», al-Iqnāʿ and al-Muntahā on the deeds: a settled debt is sold to the debtor and to no one else. That is the farq the madhhab states; the determined and the settled otherwise keep the reading.",
+   "lean": [
+    "Usul.Refinements.disposeBeforeQabdIn",
+    "Usul.Refinements.disposeBeforeQabdIn_conservative"
+   ],
+   "conservative": "Usul.Refinements.disposeBeforeQabdIn_conservative",
+   "closes": [
+    "rule:disposal_before_qabd_debt"
+   ],
+   "iq": []
+  },
+  {
+   "id": "deputy_of_qadi",
+   "title": "The qāḍī's deputies are removed with him",
+   "terms": [
+    "jam",
+    "farq"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061",
+    "note": "Ibn Rajab, qāʿida 61: whether one who acts generally does so by agency or by authority; the tranche-10 reading kept any deputy of general mandate in office."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v11:p172",
+     "note": "al-Inṣāf, fāʾida 2 under the judge's removal: if the delegating party is a qāḍī whose authority lapses by death, dismissal etc., 'انعزل نائبه وإن لم ينعزل في المسائل التي قبلها' - this is the ṣaḥīḥ of the madhhab and the view of most aṣḥāb: deputies are removed (position 1).",
+     "excerpt_ar": "هذا الصحيح من المذهب. وعليه أكثر الأصحاب. وصححه في النظم، وغيره. وجزم به"
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p293",
+     "note": "Kashshāf: if the delegator is a qāḍī and his authority lapses by death or otherwise, his deputies are removed, because they are his deputies like agents - position 1.",
+     "excerpt_ar": "زالت ولايته بموت أو عزل أو غيره كما لو اختل فيه بعض شروطه انعزلوا) لأنهم"
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p368",
+     "note": "The Iqnāʿ matn: if the delegator is a qāḍī whose authority lapses by death etc., they (his deputies) are removed - position 1.",
+     "excerpt_ar": "فإن كان المستتيب قاضيا فعزل نوابه أو زالت ولايته بموت أو عزل أو غيره:"
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f001",
+     "note": "Ibn ʿAqīl from the aṣḥāb: «لأنهم نواب القاضي بخلاف القضاة فإنهم نواب للمسلمين»."
+    }
+   ],
+   "conditions": [
+    "the deputy holds a general mandate",
+    "he was appointed by a qāḍī, not by the imām"
+   ],
+   "rationale": "The ledger found the reading against al-Inṣāf's «هذا الصحيح من المذهب. وعليه أكثر الأصحاب», al-Iqnāʿ and Kashshāf: the qāḍī's deputies are removed with him, being his deputies like agents. The farq is the one Ibn ʿAqīl reports from the aṣḥāb, the qāḍīs themselves deputies of the Muslims; deputies of the imām keep the reading.",
+   "lean": [
+    "Usul.Refinements.removedWithPrincipalIn",
+    "Usul.Refinements.removedWithPrincipalIn_conservative"
+   ],
+   "conservative": "Usul.Refinements.removedWithPrincipalIn_conservative",
+   "closes": [
+    "rule:deputy_of_qadi"
+   ],
+   "iq": []
+  },
+  {
+   "id": "annulment_without_return",
+   "title": "No return for a defect once the thing perishes",
+   "terms": [
+    "jam",
+    "farq"
+   ],
+   "statement": {
+    "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059",
+    "note": "Ibn Rajab, qāʿida 59: annulments fall on what no longer exists; the tranche-11 reading let every annulment survive the thing's loss."
+   },
+   "refs": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v04:p419",
+     "note": "If the defective item perishes the buyer is limited to the arsh, «وهذا المذهب. وعليه أكثر الأصحاب»; annulment returning the substitute is only al-Qāḍī's takhrīj.",
+     "excerpt_ar": "قوله (أو تلف المبيع: رجع بأرشه) يعني يتعين له الأرش. وهذا المذهب. وعليه أكثر الأصحاب. ويتخرج أن يفسخ ويغرم القيمة."
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p222",
+     "note": "Kashshāf: in the list that begins with perishing of the item («أو تلف المبيع ولو بفعله»), the arsh is fixed and return lapses because it is impossible.",
+     "excerpt_ar": "أو باعه) أي باع المشتري المبيع (أو وهبه أو رهنه، أو وقفه غير عالم بعيبه) ثم علم (تعين الأرش) لما تقدم وسقط الرد لتعذره"
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p098",
+     "note": "The Iqnāʿ matn lists perishing among the cases where the arsh is fixed («تعين الأرش»).",
+     "excerpt_ar": "أو قتل أو استولد الأمة أو تلف المبيع ولو بفعله: كأكله ونحوه أو باعه أو وهبه أو رهنه أو وقفه غير عالم بعيبه - تعين الأرش"
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f004",
+     "note": "Ibn Rajab against the akthar: «وهو ضعيف لأن البدل يقوم مقام العين»; the reading followed him."
+    }
+   ],
+   "conditions": [
+    "the buyer would annul for a defect by returning the thing sold",
+    "the thing sold has perished"
+   ],
+   "rationale": "The ledger found the reading against al-Inṣāf's «وهذا المذهب. وعليه أكثر الأصحاب», al-Iqnāʿ and Kashshāf: once the thing with an ʿayb perishes the arsh is fixed, the return impossible («وسقط الرد لتعذره»). Annulments by operation of law (infisākh: the undetermined thing, the blighted fruit, the lease) and after the parties' oaths (the yamīn of a claim, then faskh) keep the reading; iqāla after loss is left to tarjīḥ, where al-Qāḍī's «قياس المذهب» keeps it with the reading for review.",
+   "lean": [
+    "Usul.Refinements.annulsNonexistentIn",
+    "Usul.Refinements.annulsNonexistentIn_conservative"
+   ],
+   "conservative": "Usul.Refinements.annulsNonexistentIn_conservative",
+   "closes": [
+    "rule:annulment_without_return"
+   ],
+   "iq": []
   }
  ]
 }

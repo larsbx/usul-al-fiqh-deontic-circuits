@@ -13,6 +13,8 @@ import json
 from collections import Counter
 from pathlib import Path
 
+from .shards import encoder_shards, merge_encoders
+
 B = (False, True)
 GRADES = ("wahm", "shakk", "zann", "qat")
 FORMS = ("nakira", "particle", "definiteAl", "singularAnnexed")
@@ -28,7 +30,7 @@ def _b(x: bool) -> str:
 
 
 # name → sadi rules, qawāʿid tested, fact domains, output domain, Lean template, Python mirror
-ENCODERS: dict[str, dict] = {
+CORE: dict[str, dict] = {
     "itlaf": dict(
         sadi=[36], qawaid=[RAJAB.format(26)],
         facts={"purpose": ("benefit", "repelHarm"), "mental": ("deliberate", "ignorant", "forgetful")},
@@ -269,23 +271,162 @@ ENCODERS: dict[str, dict] = {
         sadi=[], qawaid=[RAJAB.format(34)], facts={"binding_contract": B},
         out=B, lean="Usul.Refinements.manumissionReachesBenefits {binding_contract}",
         py=lambda f: not f["binding_contract"]),
-    "excess_obligatory": dict(
-        sadi=[], qawaid=[RAJAB.format(3)], facts={"separable": B, "originally_due": B},
-        out=B, lean="Usul.Refinements.wholeObligatory {separable} {originally_due}",
-        py=lambda f: not f["separable"] and f["originally_due"]),
+    "benefit_then_thing": dict(
+        sadi=[], qawaid=[RAJAB.format(35)], facts={"perpetual_commutative": B},
+        out=B, lean="Usul.Refinements.priorContractDissolves {perpetual_commutative}",
+        py=lambda f: f["perpetual_commutative"]),
+    "successive_contracts": dict(
+        sadi=[], qawaid=[RAJAB.format(37)], facts={"successive": B},
+        out=B, lean="Usul.Refinements.laterContractGoverns {successive}",
+        py=lambda f: f["successive"]),
+    "successive_by_binding": dict(
+        sadi=[], qawaid=[RAJAB.format(37)],
+        facts={"successive": B, "earlier_binding": B, "later_binding": B}, out=B,
+        lean="Usul.Refinements.laterBindingGoverns {successive} {earlier_binding} {later_binding}",
+        py=lambda f: f["successive"] and (f["later_binding"] or not f["earlier_binding"])),
+    "excess_over_sufficient": dict(
+        sadi=[], qawaid=[RAJAB.format(3)], facts={"separable": B, "lightened": B},
+        out=B, lean="Usul.Refinements.excessObligatory {separable} {lightened}",
+        py=lambda f: not f["separable"] and f["lightened"]),
+    "advanced_worship": dict(
+        sadi=[], qawaid=[RAJAB.format(5)], facts={"due_at_performance": B},
+        out=B, lean="Usul.Refinements.advancedSuffices {due_at_performance}",
+        py=lambda f: f["due_at_performance"]),
     "prohibited_worship": dict(
-        sadi=[38], qawaid=[RAJAB.format(9)],
-        facts={"site": ("essence", "specificCondition", "generalCondition", "external")},
-        out=B, lean="Usul.Refinements.worshipValidDespite {site}",
-        py=lambda f: f["site"] == "external"),
-    "one_of_two": dict(
-        sadi=[], qawaid=[RAJAB.format(14)], facts={"together": B},
-        out=B, lean="Usul.Refinements.oneOfTwoAttaches {together}",
-        py=lambda f: f["together"]),
-    "separate_presumptions": dict(
-        sadi=[], qawaid=[RAJAB.format(15)], facts={"alters_another_asl": B},
-        out=B, lean="Usul.Refinements.consequenceCarries {alters_another_asl}",
-        py=lambda f: not f["alters_another_asl"]),
+        sadi=[], qawaid=[RAJAB.format(9)],
+        facts={"target": ("essence", "specificCondition", "generalCondition", "outside")},
+        out=B, lean="Usul.Refinements.validDespite {target}",
+        py=lambda f: f["target"] == "outside"),
+    "wording_in_other_tongue": dict(
+        sadi=[], qawaid=[RAJAB.format(10)], facts={"meaning_only": B, "able": B},
+        out=B, lean="Usul.Refinements.otherTongueValid {meaning_only} {able}",
+        py=lambda f: f["meaning_only"] or not f["able"]),
+    "combining_forms": dict(
+        sadi=[], qawaid=[RAJAB.format(12)], facts={"substitutes": B},
+        out=B, lean="Usul.Refinements.combineForms {substitutes}",
+        py=lambda f: not f["substitutes"]),
+    "advance_after_cause": dict(
+        sadi=[], qawaid=[RAJAB.format(4)], facts={"cause_present": B},
+        out=B, lean="Usul.Refinements.advanceAllowed {cause_present}", py=lambda f: f["cause_present"]),
+    "nafl_before_fard": dict(
+        sadi=[], qawaid=[RAJAB.format(11)], facts={"narrow": B, "financial": B},
+        out=B, lean="Usul.Refinements.naflValid {narrow} {financial}",
+        py=lambda f: not f["narrow"] or f["financial"]),
+    "cause_from_one_of_two": dict(
+        sadi=[], qawaid=[RAJAB.format(14)], facts={"harmless": B},
+        out=("neither", "each", "lot", "abstain"), lean="Usul.Refinements.attachTo {harmless}",
+        py=lambda f: "each" if f["harmless"] else "abstain"),
+    "each_on_its_asl": dict(
+        sadi=[], qawaid=[RAJAB.format(15)], facts={"separate_matters": B},
+        out=B, lean="Usul.Refinements.eachOnItsAsl {separate_matters}", py=lambda f: f["separate_matters"]),
+    "settles_without_ability": dict(
+        sadi=[], qawaid=[RAJAB.format(19)], facts={"making_up": B},
+        out=B, lean="Usul.Refinements.settlesInDhimma {making_up}", py=lambda f: not f["making_up"]),
+    "lease_after_authority": dict(
+        sadi=[], qawaid=[RAJAB.format(36)], facts={"succeeds_lessor": B},
+        out=B, lean="Usul.Refinements.leaseDissolves {succeeds_lessor}", py=lambda f: not f["succeeds_lessor"]),
+    "return_of_held_property": dict(
+        sadi=[], qawaid=[RAJAB.format(42)], facts={"held_by_consent": B, "guaranteed": B},
+        out=B, lean="Usul.Refinements.returnAtOnce {held_by_consent} {guaranteed}",
+        py=lambda f: not f["held_by_consent"] or f["guaranteed"]),
+    "continued_holding": dict(
+        sadi=[], qawaid=[RAJAB.format(43)], facts={"withholds": B},
+        out=B, lean="Usul.Refinements.holderLiable {withholds}", py=lambda f: f["withholds"]),
+    "holding_after_contract_end": dict(
+        sadi=[], qawaid=[RAJAB.format(43)], facts={"ended_by_holder": B},
+        out=B, lean="Usul.Refinements.liableAfterEnding {ended_by_holder}", py=lambda f: f["ended_by_holder"]),
+    "void_contract_concluded": dict(
+        sadi=[], qawaid=[RAJAB.format(46)], facts={"binding": B, "pervasive": B},
+        out=B, lean="Usul.Refinements.voidConcluded {binding} {pervasive}",
+        py=lambda f: f["binding"] and f["pervasive"]),
+    "qabd_in_contracts": dict(
+        sadi=[], qawaid=[RAJAB.format(49)], facts={"qabd_completes": B},
+        out=B, lean="Usul.Refinements.bindsWithoutQabd {qabd_completes}", py=lambda f: not f["qabd_completes"]),
+    "forced_acquisition": dict(
+        sadi=[], qawaid=[RAJAB.format(50)], facts={"necessity": B},
+        out=B, lean="Usul.Refinements.ownedBeforePayment {necessity}", py=lambda f: f["necessity"]),
+    "forced_acquisition_solvent": dict(
+        sadi=[], qawaid=[RAJAB.format(50)], facts={"necessity": B, "shufa": B, "solvent": B},
+        out=B, lean="Usul.Refinements.ownedBeforePaymentIn {necessity} {shufa} {solvent}",
+        py=lambda f: f["necessity"] or (f["shufa"] and f["solvent"])),
+    "daman_without_qabd": dict(
+        sadi=[], qawaid=[RAJAB.format(51)], facts={"determined": B},
+        out=B, lean="Usul.Refinements.inNewOwnersDaman {determined}", py=lambda f: f["determined"]),
+    "disposal_before_qabd": dict(
+        sadi=[], qawaid=[RAJAB.format(52)], facts={"mubham": B, "settled": B},
+        out=B, lean="Usul.Refinements.disposeBeforeQabd {mubham} {settled}",
+        py=lambda f: not f["mubham"] and f["settled"]),
+    "disposal_over_anothers_right": dict(
+        sadi=[], qawaid=[RAJAB.format(54)], facts={"extinguishes": B},
+        out=B, lean="Usul.Refinements.mayDisposeOver {extinguishes}", py=lambda f: not f["extinguishes"]),
+    "disposal_before_qabd_debt": dict(
+        sadi=[], qawaid=[RAJAB.format(52)], facts={"mubham": B, "settled": B, "debt_to_third": B},
+        out=B, lean="Usul.Refinements.disposeBeforeQabdIn {mubham} {settled} {debt_to_third}",
+        py=lambda f: not f["mubham"] and f["settled"] and not f["debt_to_third"]),
+    "right_to_own_disposal": dict(
+        sadi=[], qawaid=[RAJAB.format(55)], facts={"cause_complete": B, "tie_remains": B},
+        out=B, lean="Usul.Refinements.disposalTakes {cause_complete} {tie_remains}",
+        py=lambda f: f["cause_complete"] or f["tie_remains"]),
+    "concurrent_condition": dict(
+        sadi=[], qawaid=[RAJAB.format(56)], facts={"prior": B, "concurrent": B},
+        out=B, lean="Usul.Refinements.conditionMet {prior} {concurrent}",
+        py=lambda f: f["prior"] or f["concurrent"]),
+    "ruling_with_bar": dict(
+        sadi=[], qawaid=[RAJAB.format(57)], facts={"with_bar": B},
+        out=B, lean="Usul.Refinements.holdsAgainstBar {with_bar}", py=lambda f: not f["with_bar"]),
+    "desisting_at_once": dict(
+        sadi=[], qawaid=[RAJAB.format(58)], facts={"foresaw": B},
+        out=B, lean="Usul.Refinements.desistIsAct {foresaw}", py=lambda f: f["foresaw"]),
+    "annulment_on_nonexistent": dict(
+        sadi=[], qawaid=[RAJAB.format(59)], facts={"annulment": B},
+        out=B, lean="Usul.Refinements.annulsNonexistent {annulment}", py=lambda f: f["annulment"]),
+    "annulment_without_return": dict(
+        sadi=[], qawaid=[RAJAB.format(59)], facts={"annulment": B, "defect_return": B},
+        out=B, lean="Usul.Refinements.annulsNonexistentIn {annulment} {defect_return}",
+        py=lambda f: f["annulment"] and not f["defect_return"]),
+    "deputy_of_principal": dict(
+        sadi=[], qawaid=[RAJAB.format(61)], facts={"general": B},
+        out=B, lean="Usul.Refinements.removedWithPrincipal {general}", py=lambda f: not f["general"]),
+    "deputy_of_qadi": dict(
+        sadi=[], qawaid=[RAJAB.format(61)], facts={"general": B, "of_qadi": B},
+        out=B, lean="Usul.Refinements.removedWithPrincipalIn {general} {of_qadi}",
+        py=lambda f: not f["general"] or f["of_qadi"]),
+    "removal_before_knowledge": dict(
+        sadi=[], qawaid=[RAJAB.format(62)], facts={"public_office": B},
+        out=B, lean="Usul.Refinements.removedBeforeKnowledge {public_office}", py=lambda f: not f["public_office"]),
+    "excess_in_following": dict(
+        sadi=[], qawaid=[RAJAB.format(3)], facts={"separable": B, "lightened": B, "following": B},
+        out=B, lean="Usul.Refinements.excessObligatoryIn {separable} {lightened} {following}",
+        py=lambda f: not f["separable"] and (f["lightened"] or f["following"])),
+    "advanced_kaffara_at_obligation": dict(
+        sadi=[], qawaid=[RAJAB.format(5)], facts={"due_at_performance": B, "kaffara_changed": B},
+        out=B, lean="Usul.Refinements.advancedSufficesIn {due_at_performance} {kaffara_changed}",
+        py=lambda f: f["due_at_performance"] and not f["kaffara_changed"]),
+    "wording_need_not_learn": dict(
+        sadi=[], qawaid=[RAJAB.format(10)], facts={"meaning_only": B, "able": B, "need_not_learn": B},
+        out=B, lean="Usul.Refinements.otherTongueValidIn {meaning_only} {able} {need_not_learn}",
+        py=lambda f: f["meaning_only"] or not f["able"] or f["need_not_learn"]),
+    "substitute_at_obligation": dict(
+        sadi=[28], qawaid=[RAJAB.format(16)], facts={"original_possible": B, "settled_at_obligation": B},
+        out=B, lean="Usul.Refinements.useSubstituteAt {original_possible} {settled_at_obligation}",
+        py=lambda f: not f["original_possible"] or f["settled_at_obligation"]),
+    "unknown_condition_in_fact": dict(
+        sadi=[], qawaid=[RAJAB.format(64), RAJAB.format(65)],
+        facts={"knew": B, "liability_only": B, "transaction_authority": B},
+        out=B, lean="Usul.Refinements.countsAsMetIn {knew} {liability_only} {transaction_authority}",
+        py=lambda f: f["knew"] or f["liability_only"] or f["transaction_authority"]),
+    "words_out_of_nature": dict(
+        sadi=[], qawaid=[RAJAB.format(38)], facts={"other_contract_possible": B},
+        out=B, lean="Usul.Refinements.asKinayaValid {other_contract_possible}",
+        py=lambda f: f["other_contract_possible"]),
+    "contract_by_kinaya": dict(
+        sadi=[], qawaid=[RAJAB.format(39)], facts={"needs_witnessing": B},
+        out=B, lean="Usul.Refinements.kinayaConcludes {needs_witnessing}",
+        py=lambda f: not f["needs_witnessing"]),
+    "right_to_substitute": dict(
+        sadi=[], qawaid=[RAJAB.format(41)], facts={"bound_to_thing": B},
+        out=B, lean="Usul.Refinements.rightPassesToSubstitute {bound_to_thing}",
+        py=lambda f: f["bound_to_thing"]),
     "umum_lafz": dict(
         sadi=[], qawaid=[LAHHAM.format(61)], facts={"in_occasion": B, "general_wording": B},
         out=B, lean="Usul.Dalala.coversBeyondSabab true {in_occasion} {general_wording}",
@@ -329,6 +470,9 @@ ENCODERS: dict[str, dict] = {
         }[(f["reading"], f["intended"])]),
 }
 
+# The live registry: the core plus every shard's encoders (shards.py; no name defined twice).
+ENCODERS: dict[str, dict] = merge_encoders(CORE, encoder_shards())
+
 
 def provides() -> set[str]:
     """What the bank can now express: one rule per encoder and every fact field."""
@@ -353,9 +497,14 @@ def _lit(v) -> str:
     return f".{v}"
 
 
-def lean_expr(encoder: str, facts: dict) -> str:
+def literal(encoder: str, fact: str, value) -> str:
+    """The Lean literal an encoder emits for one fact value."""
     lits = ENCODERS[encoder].get("lits", {})
-    return ENCODERS[encoder]["lean"].format(**{k: lits[k][v] if k in lits else _lit(v) for k, v in facts.items()})
+    return lits[fact][value] if fact in lits else _lit(value)
+
+
+def lean_expr(encoder: str, facts: dict) -> str:
+    return ENCODERS[encoder]["lean"].format(**{k: literal(encoder, k, v) for k, v in facts.items()})
 
 
 def check_case(case: dict) -> list[str]:
@@ -384,8 +533,8 @@ def check_case(case: dict) -> list[str]:
     return errs
 
 
-def lean_file(cases: list[dict]) -> str:
-    lines = ["-- GENERATED by `python -m usul_corpus takhrij` from corpus/takhrij/*.json. Do not edit.",
+def lean_file(cases: list[dict], command: str = "takhrij", source: str = "corpus/takhrij/*.json") -> str:
+    lines = [f"-- GENERATED by `python -m usul_corpus {command}` from {source}. Do not edit.",
              "-- Each guard checks one annotated farʿ against the formal reading: == for derivable and",
              "-- ikhtilāf cases (the madhhab position), != for recorded encoding errors.",
              "import Usul", ""]
@@ -426,6 +575,29 @@ def report(cases: list[dict]) -> dict:
             "per_encoder": {e: dict(sorted(v.items())) for e, v in per.items() if v}}
 
 
+UNIT_TYPES = ("fatwa", "masala", "bab")
+
+
+def annotation_errors(cases: list[dict], records: list[dict]) -> list[str]:
+    """Every case annotates one committed record, once. A farʿ also belongs to a qāʿida of its home
+    encoder, and an encoder's annotated qawāʿid have every farʿ annotated (method §4, invariant 5).
+    A fatwā, masʾala or bāb unit has no qāʿida: routing assigns its encoder, so only the first
+    two checks apply to it."""
+    far = {r["id"]: r["qaida"] for r in records if r["record_type"] == "far"}
+    units = {r["id"] for r in records if r["record_type"] in UNIT_TYPES}
+    ids = [c["far"] for c in cases]
+    errs = [f"{i}: annotated twice" for i, n in sorted(Counter(ids).items()) if n > 1]
+    errs += [f"{i}: not a committed farʿ or unit record" for i in sorted(set(ids) - set(far) - units)]
+    home = {c["far"]: c.get("home") or c.get("revisit", {}).get("from_encoder", c["encoder"]) for c in cases if c["far"] in far}
+    errs += [f"{i}: its qāʿida is not its home encoder's" for i, e in sorted(home.items()) if far[i] not in ENCODERS[e]["qawaid"]]
+    expected = {i for e in set(home.values()) for i, q in far.items() if q in ENCODERS[e]["qawaid"]}
+    errs += [f"{i}: unannotated farʿ of an annotated encoder's qāʿida" for i in sorted(expected - set(home))]
+    return errs
+
+
+def load_dir(d: Path) -> list[dict]:
+    return [c for f in sorted(d.glob("*.json")) if f.name != "report.json" for c in json.loads(f.read_text())["cases"]]
+
+
 def load(root: Path) -> list[dict]:
-    return [c for f in sorted((root / "takhrij").glob("*.json")) if f.name != "report.json"
-            for c in json.loads(f.read_text())["cases"]]
+    return load_dir(root / "takhrij")

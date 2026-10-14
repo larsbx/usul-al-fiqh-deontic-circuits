@@ -906,6 +906,44 @@
       "closed_by": [
         "rule:ayman_by_urf"
       ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
+      "round": "lane D: the madhhab side verified against al-Inṣāf and the muʿtamad",
+      "from_case_sha256": "07ad9ea909d40aa6dcf2cb6e1bf14c77a848e5c36d41c19dd69de066e4a8df35",
+      "case_sha256": "8149b82ee6c11df7f97bca352429c1f1fe6379a618c2551395ed5529be84adfa",
+      "side_check": {
+        "from_matches": true,
+        "refs": [
+          "src:openiti-buhuti-kashshaf-shamela21642/v01:p039",
+          "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p021",
+          "src:openiti-insaf-shamela21609/v01:p057"
+        ],
+        "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side.",
+        "contradictions": [
+          {
+            "evidence_index": 0,
+            "case_facts": {
+              "running": true
+            },
+            "rationale": "Running water: al-Insaf marks whole-body accounting as the madhhab; Sharh al-Muntaha expressly contrasts the per-jirya report with the adopted whole-body rule. The opposing per-jirya tashih is retained in the full ledger, not selected as contradiction evidence."
+          },
+          {
+            "evidence_index": 2,
+            "case_facts": {
+              "running": true
+            },
+            "rationale": "Running water: al-Insaf marks whole-body accounting as the madhhab; Sharh al-Muntaha expressly contrasts the per-jirya report with the adopted whole-body rule. The opposing per-jirya tashih is retained in the full ledger, not selected as contradiction evidence."
+          },
+          {
+            "evidence_index": 3,
+            "case_facts": {
+              "running": true
+            },
+            "rationale": "Running water: al-Insaf marks whole-body accounting as the madhhab; Sharh al-Muntaha expressly contrasts the per-jirya report with the adopted whole-body rule. The opposing per-jirya tashih is retained in the full ledger, not selected as contradiction evidence."
+          }
+        ]
+      }
     }
   ],
   "note_revisions": [

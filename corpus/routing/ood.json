@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "set": "corpus/fatawa/takhrij/islamqa_tranche1.json",
+  "text": "title and question",
+  "cases": 123,
+  "recall": {
+    "1": 0.0,
+    "5": 0.2439,
+    "10": 0.3252
+  },
+  "prior": {
+    "1": 0.0,
+    "5": 0.2195,
+    "10": 0.2195
+  }
+}

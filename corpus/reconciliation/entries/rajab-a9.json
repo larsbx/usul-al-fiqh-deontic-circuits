@@ -1,0 +1,111 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f006",
+      "grades": ["takhrij", "ashab"],
+      "jam": null,
+      "naskh": null,
+      "note": "The one born into the degree after the share passed to those in it: the wajh takhrīj-ed from the later-born child (not sharing) against Ibn Rajab's «والدخول هنا أولى» and Shams al-Dīn's fatwā (sharing). al-Muntahā and Sharḥ al-Muntahā state the sharing decisively, al-Inṣāf «في أصح الاحتمالين». Against the reading, which leaves the qāʿida's khilāf branch unestablished.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p051",
+          "excerpt_ar": "المتوفى عند عدم ولده: استحقه أهل الدرجة حالة وفاته. وكذا من سيوجد منهم",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf (with al-Fāʾiq)",
+          "note": "The degree takes the share at the death, «وكذا من سيوجد منهم في أصح الاحتمالين»; a preference between two iḥtimālāt, not a madhhab label."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p377",
+          "excerpt_ar": "الدرجة بعد موت الآيل نصيبه إليهم. كالموجودين حينه فيشاركهم",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The one arising in the degree after the death of the one whose share passes to them is like those existing then, and shares."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p420",
+          "excerpt_ar": "نصيبه إليهم. كالموجودين حينه) أي الموت (فيشاركهم) لوجود الوصف فيه",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "He shares «لوجود الوصف فيه», the farq Ibn Rajab gives: the degree regards only the description, not the individuals."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f002",
+      "grades": ["ashab", "ashab"],
+      "jam": null,
+      "naskh": null,
+      "note": "Use of the defective thing after knowing the defect: Ibn ʿAqīl keeps the arsh (one of two things), Ibn Abī Mūsā and al-Qāḍī drop it. al-Inṣāf, citing this qāʿida, labels the dropping the madhhab, with al-Iqnāʿ and Sharḥ al-Muntahā deciding it; al-Muwaffaq's qiyās al-madhhab is for the arsh. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p420",
+          "excerpt_ar": "وكذا لو تصرف فيه بما يدل على الرضا، أو عرضه للبيع، أو استغله. وهو المذهب",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "No arsh where he dealt with it in a way showing contentment, «وهو المذهب في ذلك كله. وعليه جماهير الأصحاب»; he cites this qāʿida for Ibn ʿAqīl's contrary view."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p420",
+          "excerpt_ar": "القول الأول: فيه بعد. قال المصنف: وقياس المذهب: أن له الأرش بكل حال.",
+          "position": 0,
+          "grade": "qiyas",
+          "who": "al-Muwaffaq (reported in al-Inṣāf)",
+          "note": "al-Muwaffaq: qiyās al-madhhab is that he has the arsh in every case; al-Mardāwī adds «قلت: وهو الصواب»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p098",
+          "excerpt_ar": "فلا أرش له كرد وعنه له الأرش: كإمساك - قال في الرعاية الكبرى والفروع وهو",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "After use showing contentment «فلا أرش له كرد», the arsh-keeping view given only as «وعنه»."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p048",
+          "excerpt_ar": "تجربة) كوطء وحمل على دابة (فيسقط أرش كرد) لقيام دليل الرضا مقام التصريح",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Use other than for trial drops the arsh as it drops the return."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f008",
+      "grades": ["nass", "nass"],
+      "jam": null,
+      "naskh": null,
+      "note": "The one who swore īlāʾ refuses both return and divorce: a riwāya imprisons him until he chooses (the reading's compulsion), the other has the ḥākim separate them. al-Inṣāf labels the second the madhhab; al-Muntahā and al-Iqnāʿ state it. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p190",
+          "excerpt_ar": "الصغير، وفي الأخرى: يطلق الحاكم عليه، وهو المذهب، قال الشارح: هذا أصح،",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The ḥākim divorces on his behalf, «وهو المذهب»."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p353",
+          "excerpt_ar": "وإلا أمر أن يطلق ولا تبين زوجة برجعي فإن أبى طلق حاكم عليه طلقة أو",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "If he refuses, the ḥākim divorces him once or thrice, or annuls."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p079",
+          "excerpt_ar": "بالفيئة وهي الجماع فإن أبى أمره الحاكم بالطلاق فإن لم يطلق طلق الحاكم",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "Ordered to return, then to divorce; if he does not, the ḥākim divorces."
+        }
+      ]
+    }
+  ]
+}

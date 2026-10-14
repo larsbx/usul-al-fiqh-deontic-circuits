@@ -1,0 +1,1533 @@
+{
+ "suite": "M4 takhrīj over IslamQA fatāwā, tranche 1: trust_loss, itlaf, asl_zahir, luqata, unknown_owner",
+ "status": "candidate",
+ "provenance": "Candidates retrieved by keyword from the 2026-10-04 IslamQA snapshot (data/islamqa); annotated LLM-assisted, one agent per encoder, with verbatim quotes checked against the answers and every class checked against the kernel. Not human-reviewed.",
+ "cases": [
+  {
+   "far": "islamqa.23424.f001",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false
+   },
+   "expected": false,
+   "quote": "في حال الشك في عدد الركعات يبني الإنسان على اليقين ، فيعتمد الأقل من عدد الركعات",
+   "note": "Doubt (shakk) about the number of rakʿas against the presumed lesser count (zann): he builds on certainty. Kernel false = text."
+  },
+  {
+   "far": "islamqa.23424.f002",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "zann",
+    "amara": true
+   },
+   "expected": true,
+   "quote": "وإن بنى على غالب الظن ، أي بما يترجح لديه ولو بالنظر إلى من بجواره فلا بأس",
+   "note": "Preponderant belief about the count (ghalabat al-ẓann = zann) against the presumed lesser count (zann), with the external sign of the people beside him (amara): the text lets the ẓāhir prevail. Derived by Refinements.zahirPrevails, where equal grades are decided by the indicator (IQ-20, as Ibn Rajab 159.f013)."
+  },
+  {
+   "far": "islamqa.83025.f001",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false
+   },
+   "expected": false,
+   "quote": "من شك في كونه جنبا ولم يتقين من ذلك ، فإنه لا يلزمه الغسل ؛ لأن الأصل الطهارة ، وعليه فطوافك صحيح ما دمت لم تتيقني من الاحتلام",
+   "note": "Presumed purity (zann) vs mere doubt of a wet dream (shakk), no sign seen: no ghusl, ṭawāf valid. Kernel false = text."
+  },
+  {
+   "far": "islamqa.103846.f001",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true
+   },
+   "expected": true,
+   "quote": "ثم تحقق أنه قد أصاب ثوبه شيء من البول ، فإنه يجب عليه أن يغسل الموضع الذي أصابته النجاسة",
+   "note": "Presumed purity of the garment (zann) vs verified urine on it (qat): washing is obligatory. Kernel true = text."
+  },
+  {
+   "far": "islamqa.103846.f002",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false
+   },
+   "expected": false,
+   "quote": "إذا شك الإنسان هل أصاب ثوبه شيء من البول أو لا ؟ فلا يلزمه غسل الثوب ، لأن الأصل طهارة الثوب حتى يتيقن الإنسان أن النجاسة قد أصابته",
+   "note": "Presumed purity of the garment (zann) vs doubt whether urine splashed (shakk): no washing. Kernel false = text."
+  },
+  {
+   "far": "islamqa.103846.f003",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true
+   },
+   "expected": true,
+   "quote": "إذا كنت قد تحققت من نزول القطرة وجب عليك الاستنجاء والوضوء منه لكل صلاة",
+   "note": "Quoted Permanent Committee: presumed wuḍūʾ (zann) vs verified emission of a drop (qat): istinjāʾ and wuḍūʾ required. Kernel true = text."
+  },
+  {
+   "far": "islamqa.103846.f004",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false
+   },
+   "expected": false,
+   "quote": "أما مع الشك فلا شيء عليك في ذلك ، وينبغي أن تُعرض عن الشكوك حتى لا تصاب بالوسوسة",
+   "note": "Quoted Permanent Committee: presumed wuḍūʾ and purity (zann) vs doubt of a drop (shakk): nothing required. Kernel false = text."
+  },
+  {
+   "far": "islamqa.108549.f001",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false
+   },
+   "expected": false,
+   "quote": "إذا حاضت المرأة فالأصل بقاء هذا الحيض حتى تتيقن زواله ، ولا يجوز لها أن تصوم أو تصلي وهي تشك : هل انتهى الحيض أما لا ؟",
+   "note": "Presumed continuing menstruation (zann) vs doubt whether it ended before fajr (shakk): she counts as menstruating, so no fajr make-up and the fast is invalid. Kernel false = text."
+  },
+  {
+   "far": "islamqa.110860.f001",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "wahm",
+    "amara": false
+   },
+   "expected": false,
+   "quote": "الإعراض عن الوسوسة ، والتشاغل عنها ، وعدم الالتفات إليها",
+   "note": "Waswās in purity (wahm) against the established state (zann): it is to be ignored. Kernel false = text."
+  },
+  {
+   "far": "islamqa.110860.f002",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true
+   },
+   "expected": true,
+   "quote": "فإن كنت رأيت الجفاف التام فاغتسالك صحيح ، وصومك صحيح",
+   "note": "Presumed continuing menstruation (zann) vs complete dryness, one of the two sharʿī signs of purity (qat, amara): ghusl and fast valid. Kernel true = text."
+  },
+  {
+   "far": "islamqa.110860.f003",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false
+   },
+   "expected": false,
+   "quote": "وإن كنت تعجلت واغتسلت وصمت قبل حصول الجفاف التام فعليك قضاء صوم اليومين الأول والثاني",
+   "note": "Presumed menstruation (zann) vs bare dryness without the full sign, i.e. no certainty of purity (shakk): the first two fasts must be made up. Kernel false = text."
+  },
+  {
+   "far": "islamqa.110860.f004",
+   "encoder": "asl_zahir",
+   "class": "missing_rule",
+   "quote": "إذا رأيت الجفاف التام ، واغتسلت ، ثم نزلت كدرة أو صفرة ، فلا يضرك ذلك ؛ لأن الصفرة أو الكدرة بعد الطهر ليست حيضا",
+   "note": "Yellowish or brownish discharge after established purity is not menstruation, by the ḥadīth of Umm ʿAṭiyya: a specific naṣṣ that classifies the discharge, not a weighing of grades.",
+   "needs": [
+    "rule:sufra_kudra_after_tuhr_not_hayd"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.114793.f001",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false
+   },
+   "expected": false,
+   "quote": "إذا توضأ الإنسان ثم شك في انتقاض وضوئه، فلا يلتفت للشك؛ لأن اليقين لا يزول بالشك.",
+   "note": "Presumed wuḍūʾ (zann) vs doubt of breaking wind (shakk): ignore the doubt. Kernel false = text."
+  },
+  {
+   "far": "islamqa.114793.f002",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true
+   },
+   "expected": true,
+   "quote": "فإذا حصل اليقين بخروج ريح فقد انتقض الوضوء",
+   "note": "Presumed wuḍūʾ (zann) vs certainty of wind (qat): wuḍūʾ is broken even without sound or smell. Kernel true = text."
+  },
+  {
+   "far": "islamqa.114793.f003",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": true
+   },
+   "expected": false,
+   "quote": "إذا كان الشخص متوضئاً وسمع بداخل جوفه صوت رياح فإنه لا ينتقض وضوؤه بذلك إذا لم يخرج شيء",
+   "note": "Presumed wuḍūʾ (zann) vs gas sounds inside the belly, an external sign (amara) that gives no knowledge of an exit (shakk): wuḍūʾ intact. Kernel false = text."
+  },
+  {
+   "far": "islamqa.114793.f004",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "wahm",
+    "amara": true
+   },
+   "expected": false,
+   "quote": "الأصل: بقاء الطهارة، والواجب عليك إكمال الصلاة، وعدم الالتفات إلى الوسوسة، حتى تعلم يقينا أنه خرج منك شيء",
+   "note": "Ibn Bāz: presumed purity (zann) vs waswās about smells that may come from elsewhere (wahm): complete the prayer. Kernel false = text."
+  },
+  {
+   "far": "islamqa.128887.f001",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": true
+   },
+   "expected": false,
+   "quote": "ما حصل لك من شك في وجود الجنابة وعدمها ، لا تأثير له ، لأنك لم تجزم بخروج المني ، والأصل الطهارة وعدم الحدث حتى يوجد ما يثبت خلاف ذلك.",
+   "note": "Presumed purity (zann) vs doubt of janāba (shakk), with a possible trace on the clothes that may be old (amara): no ghusl, ṭawāf valid. Kernel false = text."
+  },
+  {
+   "far": "islamqa.170478.f001",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false
+   },
+   "expected": false,
+   "quote": "وإذا لم تيقني خروج شيء فلا تلتفتي لذلك ، ولا يلزمك النظر والتفتيش ، لأن الأصل عدم الخارج ، وبقاء الطهارة",
+   "note": "Presumed purity and no discharge (zann) vs doubt of madhy or manī (shakk; the text calls it waswās): ignore it, no checking needed. Kernel false = text."
+  },
+  {
+   "far": "islamqa.170478.f002",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true
+   },
+   "expected": true,
+   "quote": "فإذا تيقنت خروج شيء فهو مذي",
+   "note": "Presumed no discharge (zann) vs certainty that something came out (qat): it is madhy, so purity is lifted. Kernel true = text."
+  },
+  {
+   "far": "islamqa.170478.f003",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": true
+   },
+   "expected": false,
+   "quote": "فإن شعر ببلل علم أنه أثر ذلك الماء",
+   "note": "Presumed purity (zann) vs felt wetness (an indicator, amara) of doubtful origin (shakk) after sprinkling water: attribute it to the water. Kernel false = text. Arguably it is decided by attribution to a known cause."
+  },
+  {
+   "far": "islamqa.176193.f001",
+   "encoder": "asl_zahir",
+   "class": "missing_rule",
+   "quote": "إذا تيقنت المرأة طهرها فاغتسلت ثم طافت ثم رأت شيئاً كدرة أو صفرة فطوافها صحيح ؛ لأن الكدرة والصفرة بعد الطهر ليستا بحيض.",
+   "note": "Discharge after certain purity is ruled not menstruation by a specific naṣṣ classification, not by weighing grades.",
+   "needs": [
+    "rule:sufra_kudra_after_tuhr_not_hayd"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.176193.f002",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false
+   },
+   "expected": false,
+   "quote": "إذا حصل للمرأة شك في انتقاض طهارتها بعد الطواف ولم تتيقن ذلك، فالأصل بقاء الطهارة وحصول الشك أثناء العبادة أو بعدها لا يرفع الأصل.",
+   "note": "Presumed purity (zann) vs doubt of nullification during or after ṭawāf (shakk): ṭawāf and prayer valid. Kernel false = text."
+  },
+  {
+   "far": "islamqa.187157.f001",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false
+   },
+   "expected": false,
+   "quote": "وإن كان لا يدري ما نيته فالأصل هو عدم نية الطلاق فلا يقع به طلاق",
+   "note": "Presumed absence of divorce intent (zann) vs doubt about forgotten intent behind kināya words (shakk): no divorce. Kernel false = text."
+  },
+  {
+   "far": "islamqa.187157.f002",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false
+   },
+   "expected": false,
+   "quote": "والأصل بقاء الزوجية بينكما ، وحل كل منكما للآخر ، حتى يقع ما يمنع ذلك",
+   "note": "Presumed continuation of the marriage (zann) vs an unverified recollection that kināya words were used (shakk): they may resume. Kernel false = text."
+  },
+  {
+   "far": "islamqa.198294.f001",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true
+   },
+   "expected": true,
+   "quote": "لكن فيما بينك وبين ربك : يجب عليك أن تعملي بما تتيقنين",
+   "note": "Before God: presumed marriage and no relapse (zann) vs the wife's own certainty that he relapsed (qat, signs in his conduct): she must act on it. Kernel true = text."
+  },
+  {
+   "far": "islamqa.198294.f002",
+   "encoder": "asl_zahir",
+   "class": "missing_fact",
+   "quote": "إذا كنت على يقين من حال زوجك ، كما تقولين ، وأنكر هو ذلك ، فالقول قوله في ظاهر الحكم",
+   "note": "The same certainty does not override the presumption in the court ruling, where his denial prevails. The outcome turns on the forum (qaḍāʾ vs diyāna), which the encoder cannot express.",
+   "needs": [
+    "fact:forum_qada_vs_diyana"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.198294.f003",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true
+   },
+   "expected": true,
+   "quote": "أَوْ ثَبَتَ ذَلِكَ عِنْدَهَا بِقَوْلِ عَدْلَيْنِ : لَمْ يَحِلَّ لَهَا تَمْكِينُهُ مِنْ نَفْسِهَا",
+   "note": "Ibn Qudāma, quoted: presumed marriage (zann) vs a triple divorce established by two upright witnesses (qat): she may not let him approach her. Kernel true = text."
+  },
+  {
+   "far": "islamqa.164604.f002",
+   "encoder": "itlaf",
+   "class": "missing_fact",
+   "quote": "أما إن كان قد أخذها بدون إذنك أو اصطدم بها فانكسرت ، فعليه الضمان",
+   "note": "The guest took the furniture without permission or bumped into it, and it broke: he is liable. He had no purpose in breaking it (neither benefit nor repelling harm), so the encoder cannot state the accidental breakage.",
+   "needs": [
+    "fact:accidental"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.223512.f001",
+   "encoder": "itlaf",
+   "class": "missing_rule",
+   "quote": "ولكن لا تلزمكم الدية والكفارة ؛ لأن المباشر لهذا العمل والذي قد يكون تسبب في الوفاة هو المعالج الشعبي وليس أنتم.",
+   "note": "The family brought a folk healer whose bandaging may have killed the grandmother: they owe no diya because the healer was the direct actor. This is decided by direct versus indirect causation (mubāshara/tasabbub).",
+   "needs": [
+    "rule:mubashara_tasabbub"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.223512.f002",
+   "encoder": "itlaf",
+   "class": "missing_rule",
+   "quote": "وإن كانت الوفاة بسببه إما لكونه غير حاذق في عمله أو لوجود تعدٍ منه أو تقصير : فيكون الضمان عليه .",
+   "note": "The healer is liable if the death was caused by him through lack of skill, transgression or negligence, and not liable otherwise. This is the physician-liability rule (skill and not exceeding the procedure), which does not depend on purpose.",
+   "needs": [
+    "rule:physician_liability"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.242731.f001",
+   "encoder": "itlaf",
+   "class": "missing_rule",
+   "quote": "الطبيب إذا جنت يده : ضمن ، ولو كان ماهرا، لكن لا إثم عليه حينئذ ، فإن كان غير ماهر: أثم ، وضمن.",
+   "note": "The dentist drilled too far and damaged the nerve: a physician whose hand errs is liable, skilled or not. The treatment was for the patient, not for the dentist's own benefit or against a harm, so the physician-liability rule decides it.",
+   "needs": [
+    "rule:physician_liability"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.266167.f001",
+   "encoder": "itlaf",
+   "class": "missing_fact",
+   "quote": "فإنك تتحمل ذلك ما دام الخطأ منك، ولا علاقة لمؤسستك بخطئك.",
+   "note": "An employee in a car accident damaged another's car: he is liable as long as the fault was his. The ruling depends on fault in an accident, which has no purpose, so the encoder's fields do not apply.",
+   "needs": [
+    "fact:negligence"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.266167.f002",
+   "encoder": "itlaf",
+   "class": "missing_rule",
+   "quote": "ولا وجه لتحمل صاحب العمل غرامة ما أتلفت؛ فإن الضمان على المتلِف.",
+   "note": "The employer who lent the car is not liable, because liability falls on the one who destroyed. Deciding which party bears liability is a different rule from the encoder's purpose test.",
+   "needs": [
+    "rule:daman_on_mutlif"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.272160.f001",
+   "encoder": "itlaf",
+   "class": "missing_fact",
+   "quote": "والأصل أن من أتلف سيارة لغيره لزمه ضمان ما أتلف، إضافة إلى ما نقص من قيمة السيارة بسبب الحادث.",
+   "note": "A speeding driver who was 100% at fault hit the questioner's parked car: he is liable for the damage and the loss in value. This is a fault-based accident with no purpose, so the encoder cannot state it.",
+   "needs": [
+    "fact:negligence"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.286486.f001",
+   "encoder": "itlaf",
+   "class": "missing_fact",
+   "quote": "من تعرض لحادث سيارة، فأصيب في نفسه أو ماله، نتيجة لخطأ الغير، فالأصل أن يأخذ التعويض ممن أصابه",
+   "note": "A car accident caused by another driver's fault harmed the questioner's body or property: the at-fault party owes compensation. Liability turns on fault in an accident, not on purpose.",
+   "needs": [
+    "fact:negligence"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.305083.f001",
+   "encoder": "itlaf",
+   "class": "missing_rule",
+   "quote": "إذا كنت تسير بسيارتك السير المسموح به من جهة السرعة، ومكان السير، فلا شيء عليك",
+   "note": "The questioner drove lawfully; the old woman stepped back in fear and another car struck her. He is not liable because he was not the direct actor and did not transgress, which the mubāshir/mutasabbib rule decides.",
+   "needs": [
+    "rule:mubashara_tasabbub"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.305083.f002",
+   "encoder": "itlaf",
+   "class": "missing_rule",
+   "quote": "وعليه: فضمان ما أصاب هذه المرأة على السائق الآخر، إلا إذا كان لا يمكنه تفادي إصابتها لقربه منها، فلا شيء عليه؛ لأن الخطأ من المرأة.",
+   "note": "The other driver, who touched her, is liable as the direct actor unless he could not avoid her, in which case the fault is hers. This is decided by the direct-causation rule and its avoidability exception.",
+   "needs": [
+    "rule:mubashara_tasabbub"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.305083.f003",
+   "encoder": "itlaf",
+   "class": "missing_rule",
+   "quote": "إذا كنت متعديا بسيرك، والسائق الآخر لم يتعدَّ ، كما لو جاوزت السرعة المسموح بها، فإنك تضمن ما أصاب المرأة، لأنك متسبب متعدٍّ، فتقدم على المباشر في الضمان.",
+   "note": "If the questioner had been speeding (a transgressing indirect cause) and the other driver had not transgressed, the questioner would be liable. This is the transgressing-mutasabbib exception to the mubāshara rule.",
+   "needs": [
+    "rule:mubashara_tasabbub"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.315435.f001",
+   "encoder": "itlaf",
+   "class": "missing_fact",
+   "quote": "إذا كنت تسير بالسرعة المسموح بها، ولم يمكنك تفادي الرجل، لأنه لا يفصلك عنه سوى متر أو مترين، فأنت معذور، ولا شيء عليك، لا دية ولا كفارة.",
+   "note": "A pedestrian crossed suddenly about a metre ahead of a driver going at the permitted speed: no diya and no kaffāra. The ruling turns on whether the driver could have avoided the collision, which the encoder cannot state.",
+   "needs": [
+    "fact:negligence"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.315435.f002",
+   "encoder": "itlaf",
+   "class": "missing_fact",
+   "quote": "وإن كان يمكنك تلافي الصدام، أو كنت تسير بسرعة زائدة منعتك من التفادي فأنت ضامن .",
+   "note": "If the driver could have avoided the collision, or was speeding, he is liable. The deciding fact is negligence or avoidability, not purpose.",
+   "needs": [
+    "fact:negligence"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.315435.f003",
+   "encoder": "itlaf",
+   "class": "missing_rule",
+   "quote": "فعليه الكفارة، وعليه من الدية بقدر نسبة خطئه.",
+   "note": "When the driver and the pedestrian share the fault, the driver owes the full kaffāra and a share of the diya proportional to his fault. Apportioning by share of fault is a separate rule.",
+   "needs": [
+    "rule:shared_fault_apportionment"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.317604.f001",
+   "encoder": "itlaf",
+   "class": "missing_rule",
+   "quote": "إذا كان الأمر كما ذكرت فلا ضمان عليك",
+   "note": "The questioner slowed down, the tailgater swerved, and a third car overturned. The questioner is not liable because slowing down was not a direct cause and liability falls on the direct actor, which the mubāshara rule decides.",
+   "needs": [
+    "rule:mubashara_tasabbub"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.317604.f002",
+   "encoder": "itlaf",
+   "class": "missing_rule",
+   "quote": "مع أن الشخص المعاند يعتبر متسببا أيضا، لا مباشرا، لكنه معتد ومفرط، فالضمان يكون عليه، لا على سائق السيارة المنقلبة إذا لم يمكنه تفادي الحادث.",
+   "note": "The tailgater is liable as an indirect cause who transgressed and was negligent, and the overturned driver is not liable if he could not avoid the crash. This is the transgressing-mutasabbib exception.",
+   "needs": [
+    "rule:mubashara_tasabbub"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.328808.f001",
+   "encoder": "itlaf",
+   "class": "missing_rule",
+   "quote": "والأجير المشترك يضمن مطلقا ولو لم يحصل منه تعد أو تفريط، وهذا مذهب جمهور أهل العلم.",
+   "note": "The airline broke a suitcase while carrying it: as a common hired worker (ajīr mushtarak) it is liable even without transgression or negligence. This is the hired-worker liability rule, not the purpose test.",
+   "needs": [
+    "rule:ajir_mushtarak_liability"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.344230.f001",
+   "encoder": "itlaf",
+   "class": "missing_fact",
+   "quote": "إذا أخطأ قائد السيارة، وترتب على ذلك غرم، فالغرم عليه، لا على من أمره، أو طلب منه أن يسوق السيارة مجانا أو بأجرة، ولا على من ركب معه، سواء كان السائق يعلم بذلك أم لا.",
+   "note": "A driver ignored right of way, caused a collision and was unaware he would bear the cost: he is fully liable, since ignorance of liability is no excuse. The deciding fact is his driving error in an accident with no purpose, so the encoder cannot state it.",
+   "needs": [
+    "fact:negligence"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.344230.f002",
+   "encoder": "itlaf",
+   "class": "missing_rule",
+   "quote": "فالجناية تتربت آثارها على الجاني المباشر لها، سواء جنى على نفسه أو على غيره.",
+   "note": "The friend who asked him to drive and rode with him is not liable, because liability falls on the direct actor. This is the mubāshara rule.",
+   "needs": [
+    "rule:mubashara_tasabbub"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.345284.f001",
+   "encoder": "itlaf",
+   "class": "missing_fact",
+   "quote": "وعليه ؛ فإذا لم يكن منك تفريط ، ولم يمكنك تفادي الحادث، فلا شيء عليك",
+   "note": "A driver hit an animal left in the road: he is not liable if he was not negligent and could not avoid it. The ruling turns on negligence (tafrīṭ), which the encoder cannot state.",
+   "needs": [
+    "fact:negligence"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.345284.f002",
+   "encoder": "itlaf",
+   "class": "missing_fact",
+   "quote": "وإلا لزمك ضمان ما أتلفت.",
+   "note": "If the driver was negligent or could have avoided the animal, he is liable for it. The deciding fact is again negligence, not purpose.",
+   "needs": [
+    "fact:negligence"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.348122.f001",
+   "encoder": "itlaf",
+   "class": "missing_rule",
+   "quote": "إذا كنت قد وضعت العربة في جانب من البيت لا يأتيه أهل البيت كثيرا، فأنت غير معتدية، ولا يلزمك ضمان من عثر بهذه العربة",
+   "note": "She left a folded pram in a rarely used part of the house, and her grandmother tripped on it. She is not liable because an indirect cause is liable only if it transgresses, and placing it there was not a transgression.",
+   "needs": [
+    "rule:mubashara_tasabbub"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.348122.f002",
+   "encoder": "itlaf",
+   "class": "missing_rule",
+   "quote": "على فرض أنك معتدية بفعلك فإنك تضمنين الكسر",
+   "note": "If she had transgressed, for example by leaving it in the walkway, she would be liable for the fractured thigh. This is the transgressing-mutasabbib rule.",
+   "needs": [
+    "rule:mubashara_tasabbub"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.348122.f003",
+   "encoder": "itlaf",
+   "class": "missing_rule",
+   "quote": "ولا تضمنين النفس، إلا إذا ثبت أن جدتك ماتت من مضاعفات الكسر، وهو ما يعبر عنه الفقهاء بسراية الجرح.",
+   "note": "Even if she transgressed, she is liable for the death only if it is proven to be a complication of the fracture. This is the rule on liability for consequences of an injury (sirāyat al-jināya).",
+   "needs": [
+    "rule:sirayat_al_jinaya"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.363963.f001",
+   "encoder": "itlaf",
+   "class": "missing_fact",
+   "quote": "إذا كنت تسيرين بالسرعة المعقولة التي يمكنك معها التحكم في السيارة، وكان الأمر ما ذكرت من تنبيهك للرجل، وأنه تجاوز حارتك ثم عاد فجأة، فلا يلزمك ضمان شيء مما أصابه من كسر ونحوه.",
+   "note": "The driver went at a controllable speed, warned the hesitant pedestrian, and he suddenly stepped back into her lane: she is not liable for his injuries. The ruling turns on negligence and the victim's own fault.",
+   "needs": [
+    "fact:negligence"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.363963.f002",
+   "encoder": "itlaf",
+   "class": "missing_fact",
+   "quote": "على فرض أنك أخطأت بتجاوز السرعة مثلا، أو بالتقصير في محاولة تفادي الحادث عند عودة الرجل، فإنك تضمنين كسره وجرحه",
+   "note": "If she had been speeding or had failed to try to avoid him, she would be liable for the fracture and the wound. The deciding fact is negligence.",
+   "needs": [
+    "fact:negligence"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.363963.f003",
+   "encoder": "itlaf",
+   "class": "missing_rule",
+   "quote": "ولا ضمان عليك في موته؛ لأن الكسر المذكور لا يؤدي للموت، ولأن سبب الموت ظاهر وهو نقص الأكسجين الذي يلحق المصاب بكورونا",
+   "note": "Even if she had been negligent, she is not liable for his death, because the fracture does not lead to death and the evident cause was COVID-related hypoxia. This is decided by causation and sirāya, not by purpose.",
+   "needs": [
+    "rule:sirayat_al_jinaya"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.4046.f001",
+   "encoder": "luqata",
+   "class": "derivable",
+   "facts": {
+    "year_passed": true,
+    "ownable": true
+   },
+   "expected": "finderOwns",
+   "quote": "وإن لم تعرف فهي له بعد السنة",
+   "note": "A valuable find (ذات أهمية) outside the Haramayn, announced for a full year with no owner appearing: the text makes it the finder's. Facts year_passed=true, ownable=true give finderOwns."
+  },
+  {
+   "far": "islamqa.4046.f002",
+   "encoder": "luqata",
+   "class": "encoding_error",
+   "facts": {
+    "year_passed": true,
+    "ownable": false
+   },
+   "expected": "hold",
+   "quote": "إلا أن تكون في الحرمين فليس له تملكها بل يجب تعريفها دائما حتى يعرف ربها أو يسلمها للجهات المسؤولة في الحرمين",
+   "note": "A find in the Haramayn may never be owned (ownable=false) and must be announced forever or handed to the authorities, even after the year (year_passed=true). The kernel sends a non-ownable find to charity after the year; the text keeps it held for the owner, so the kernel contradicts the only stated position."
+  },
+  {
+   "far": "islamqa.4046.f003",
+   "encoder": "luqata",
+   "class": "missing_fact",
+   "quote": "لكن إذا كانت اللقطة حقيرة لا يهتم بها صاحبها كالحبل وشسع النعل والنقود القليلة فإنه لا يجب تعريفها",
+   "note": "A trivial find (rope, sandal strap, small money) needs no announcement and may be used or given in charity; the ruling turns on triviality, which the encoder lacks.",
+   "needs": [
+    "fact:trivial"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.4046.f004",
+   "encoder": "luqata",
+   "class": "missing_fact",
+   "quote": "ويستثنى من ذلك ضالة الإبل ونحوها من الحيوانات التي تمتنع من صغار السباع كالذئب ونحوه ، فإنه لا يجوز التقاطها",
+   "note": "A stray camel or similar animal that can fend off small predators may not be picked up at all; the ruling turns on the animal's kind.",
+   "needs": [
+    "fact:animal_kind"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.4050.f001",
+   "encoder": "luqata",
+   "class": "encoding_error",
+   "facts": {
+    "year_passed": true,
+    "ownable": false
+   },
+   "expected": "hold",
+   "quote": "ولا تملك بحال ، للنهي عنها ، ويجب تعريفها أبداً",
+   "note": "The Haram find after the year: some hold it is owned like any other find, others (Ibn Taymiyya, al-Fawzan's source, Ibn ʿUthaymin) that it is never owned and must be announced forever or handed to the authorities; IslamQA follows the latter. With ownable=false the kernel yields charity, which is neither reported position. Reclassified: the kernel gives charity, which neither reported position holds; expected is the position IslamQA adopts."
+  },
+  {
+   "far": "islamqa.4588.f001",
+   "encoder": "luqata",
+   "class": "missing_fact",
+   "quote": "والواجب على المذكور أن يرد القطعة المذكورة إلى المحكمة الكبرى بمكة حتى تسلمها للجنة المكلفة بلقط الحرم",
+   "note": "A watch picked up in the Meccan Haram and kept four years without announcing: he must hand it to the Great Court of Mecca for the Haram lost-property committee rather than give it in charity. The ruling turns on the Haram location and the duty to deliver to the authorities, which the encoder cannot express.",
+   "needs": [
+    "fact:haram_location"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.5049.f001",
+   "encoder": "luqata",
+   "class": "missing_fact",
+   "quote": "فهذا يملكه آخذه وينتفع به بلا تعريف",
+   "note": "Property that ordinary people do not pursue (whip, loaf, date, stick) is owned by the finder without any announcement; the ruling turns on triviality.",
+   "needs": [
+    "fact:trivial"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.5049.f002",
+   "encoder": "luqata",
+   "class": "missing_fact",
+   "quote": "فهذا القسم بأنواعه يحرم التقاطه ، ولا يملكه آخذه بتعريفه",
+   "note": "Animals that protect themselves from small predators (camels, horses, birds, gazelles) may not be picked up and are not owned by announcing; the ruling turns on the animal's kind.",
+   "needs": [
+    "fact:animal_kind"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.5049.f003",
+   "encoder": "luqata",
+   "class": "missing_fact",
+   "quote": "ويلحق بذلك الأدوات الكبيرة ، كالقدر الضخمة والخشب والحديد وما يحتفظ بنفسه ولا يكاد يضيع ولا ينتقل عن مكانه ، فيحرم أخذه كالضوال",
+   "note": "Large items that keep themselves and do not get lost (huge pots, timber, iron) may not be taken; the ruling turns on the item being self-preserving.",
+   "needs": [
+    "fact:self_preserving_item"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.5049.f004",
+   "encoder": "luqata",
+   "class": "missing_fact",
+   "quote": "فهذا يلزم واجده إذا أخذه الأحظّ لمالكه من أمور ثلاثة",
+   "note": "An edible stray animal (young camel, sheep, chicken): the finder must do what is best for the owner among eating it at its value, selling it and keeping the price, or keeping and feeding it; the ruling turns on the animal's kind.",
+   "needs": [
+    "fact:animal_kind"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.5049.f005",
+   "encoder": "luqata",
+   "class": "missing_fact",
+   "quote": "النوع الثاني : ما يخشى فساده ؛ كبطيخ وفاكهة ، فيفعل الملتقط الأحظّ لمالكه من أكله ودفع قيمته لمالكه ، وبيعه وحفظ ثمنه حتى يأتي مالكه",
+   "note": "Perishable finds (melons, fruit): eat it and owe its value, or sell it and keep the price for the owner; the ruling turns on perishability.",
+   "needs": [
+    "fact:perishable"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.5049.f006",
+   "encoder": "luqata",
+   "class": "derivable",
+   "facts": {
+    "year_passed": false,
+    "ownable": true
+   },
+   "expected": "hold",
+   "quote": "فيلزمه حفظ الجميع أمانة بيده ، والتعريف عليه في مجامع الناس",
+   "note": "Ordinary property (money, vessels) during the announcement period: keep it in trust and announce it where people gather. year_passed=false gives hold."
+  },
+  {
+   "far": "islamqa.5049.f007",
+   "encoder": "luqata",
+   "class": "derivable",
+   "facts": {
+    "year_passed": true,
+    "ownable": true
+   },
+   "expected": "finderOwns",
+   "quote": "ثم عرفها سنة ، فإن لم تعرف ، فاستنفقها",
+   "note": "Gold or silver announced for a year with no owner identified: the hadith the answer adopts lets the finder spend it (ownership, liable if the owner ever comes). year_passed=true, ownable=true give finderOwns."
+  },
+  {
+   "far": "islamqa.10284.f001",
+   "encoder": "luqata",
+   "class": "missing_fact",
+   "quote": "فإن الأحسن بعد أخذها أن يعمل فيها الأصلح من أكلها مُقِّدراً قيمتها ، أو بيعها وحفظ ثمنها ، أو إبقائها مدة التعريف",
+   "note": "A stray sheep: the finder does what is best, eating it at an assessed value, selling it and keeping the price, or keeping it through the announcement; the options turn on the animal's kind.",
+   "needs": [
+    "fact:animal_kind"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.10284.f002",
+   "encoder": "luqata",
+   "class": "derivable",
+   "facts": {
+    "year_passed": true,
+    "ownable": true
+   },
+   "expected": "finderOwns",
+   "quote": "وإن لم يأت فهي لمن وجدها",
+   "note": "After the announcement period of a stray sheep with no owner coming, it belongs to the finder. year_passed=true, ownable=true give finderOwns."
+  },
+  {
+   "far": "islamqa.126387.f001",
+   "encoder": "luqata",
+   "class": "missing_fact",
+   "quote": "هذا مبلغ قليل لا يتحمل التعريف",
+   "note": "Fifty riyals found at the Jamarat: a small sum needing no announcement, which may be given in charity for the owner or handed to the officials; the ruling turns on triviality (even in Mecca).",
+   "needs": [
+    "fact:trivial"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.126502.f001",
+   "encoder": "luqata",
+   "class": "missing_fact",
+   "quote": "اللقطة الحقيرة لا قيمة لها، إن عرفها فلا بأس ، وإن أكلها فلا بأس ، وإن تصدق بها فلا بأس",
+   "note": "Ten to fifteen riyals found in Mecca: a trivial find may be announced, used, or given in charity; the ruling turns on triviality.",
+   "needs": [
+    "fact:trivial"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.128510.f001",
+   "encoder": "luqata",
+   "class": "missing_fact",
+   "quote": "فإن كانت يسيرة جاز أخذها والانتفاع بها ولم يلزم تعريفها",
+   "note": "A pen found on a desk worth up to about fifty riyals may be taken and used without announcement; the ruling turns on triviality.",
+   "needs": [
+    "fact:trivial"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.128510.f002",
+   "encoder": "luqata",
+   "class": "derivable",
+   "facts": {
+    "year_passed": false,
+    "ownable": true
+   },
+   "expected": "hold",
+   "quote": "وإن كانت اللقطة ذات قيمة معتبرة عند الناس لزم تعريفها سنة قبل تملكها",
+   "note": "A find of real value must be announced for a year before it is owned; before the year (year_passed=false) the kernel gives hold."
+  },
+  {
+   "far": "islamqa.131070.f001",
+   "encoder": "luqata",
+   "class": "missing_rule",
+   "quote": "إذا كان هذا المال أو الكنز عليه علامات تدل على أنه من دفين الجاهلية ، مما قبل الإسلام ، سواء كان من أموال الروم أو الفرس أو غيرهما ، ففي هذه الحال يلزم التصدق بخمسه",
+   "note": "Buried treasure with pre-Islamic marks is rikaz: a fifth is due and the rest goes to the finder; this is the rikaz rule, not luqata.",
+   "needs": [
+    "rule:rikaz"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.131070.f002",
+   "encoder": "luqata",
+   "class": "derivable",
+   "facts": {
+    "year_passed": true,
+    "ownable": true
+   },
+   "expected": "finderOwns",
+   "quote": "فإن لم يجد صاحبها ملكها من وجدها",
+   "note": "Treasure buried by Muslims is luqata: announce it a full year, and if the owner is not found the finder owns it. year_passed=true, ownable=true give finderOwns."
+  },
+  {
+   "far": "islamqa.131070.f003",
+   "encoder": "luqata",
+   "class": "missing_rule",
+   "quote": "إذا عَثر على الكنز في بيت ، أو أرض قد اشتراها ، أو وُهبت له ، فاختلف العلماء فيمن يملك الكنز",
+   "note": "Treasure found in bought or gifted land: the dispute is whether it belongs to the land's first owner or the finder (Ibn Qudama and Ibn ʿUthaymin: the finder); this is decided by the rikaz rules, not luqata.",
+   "needs": [
+    "rule:rikaz"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.146191.f001",
+   "encoder": "luqata",
+   "class": "missing_rule",
+   "quote": "إذا كان هذا المال أو الكنز عليه علامات تدل على أنه من دفين الجاهلية ، مما قبل الإسلام ، سواء كان من أموال الروم أو الفرس أو غيرهما ، ففي هذه الحال يلزم التصدق بخمسه",
+   "note": "Buried treasure with pre-Islamic marks is rikaz: a fifth is due and the rest goes to the finder; this is the rikaz rule, not luqata.",
+   "needs": [
+    "rule:rikaz"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.146191.f002",
+   "encoder": "luqata",
+   "class": "derivable",
+   "facts": {
+    "year_passed": true,
+    "ownable": true
+   },
+   "expected": "finderOwns",
+   "quote": "فإن لم يجد صاحبها ملكها من وجدها",
+   "note": "Treasure buried by Muslims is luqata: announce it a full year, and if the owner is not found the finder owns it. year_passed=true, ownable=true give finderOwns."
+  },
+  {
+   "far": "islamqa.146191.f003",
+   "encoder": "luqata",
+   "class": "missing_rule",
+   "quote": "إذا عَثر على الكنز في بيت ، أو أرض قد اشتراها ، أو وُهبت له ، فاختلف العلماء فيمن يملك الكنز",
+   "note": "Treasure found in bought or gifted land: the dispute is whether it belongs to the land's first owner or the finder (Ibn Qudama and Ibn ʿUthaymin: the finder); this is decided by the rikaz rules, not luqata.",
+   "needs": [
+    "rule:rikaz"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.191459.f001",
+   "encoder": "luqata",
+   "class": "encoding_error",
+   "facts": {
+    "year_passed": true,
+    "ownable": false
+   },
+   "expected": "hold",
+   "quote": "والراجح أن لقطة الحرم لا تحل إلا لمُعرّفها للخبر المتقدم",
+   "note": "The Meccan Haram find after the year: Hanafis, Malikis, Hanbalis and one Shafiʿi report treat it like any find (owned after a year); Ahmad's apparent view and the other Shafiʿi report require announcing it forever. IslamQA prefers the latter (hold); with ownable=false the kernel yields charity, neither reported position. Reclassified: the kernel gives charity, which neither reported position holds; expected is the position IslamQA adopts."
+  },
+  {
+   "far": "islamqa.191459.f002",
+   "encoder": "luqata",
+   "class": "derivable",
+   "facts": {
+    "year_passed": false,
+    "ownable": true
+   },
+   "expected": "hold",
+   "quote": "وثلاثة أيام مدة ليست كافية في هذا ؛ بل إما أن يحفظها ، ويعرفها مدة سنة كاملة",
+   "note": "Money found in the Medina Haram, held three days: Medina is like other lands, so he may not give it in charity yet but must keep and announce it a full year (or hand it to the authorities). year_passed=false, ownable=true give hold."
+  },
+  {
+   "far": "islamqa.191459.f003",
+   "encoder": "luqata",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "year_passed": true,
+    "ownable": true
+   },
+   "expected": "finderOwns",
+   "positions": [
+    {
+     "who": "majority of Shafiʿis, Ibn ʿUthaymin, al-Fawzan: like other lands, owned after a year",
+     "ruling": "finderOwns"
+    },
+    {
+     "who": "author of al-Intisar, al-Bulqini, some scholars: like the Meccan Haram, never owned even after a year",
+     "ruling": "hold"
+    }
+   ],
+   "matches_madhhab": true,
+   "quote": "يلزم من وجد لقطة في حرم المدينة : أن يعرفها سنة ، قبل أن يتملكها",
+   "note": "A Medina Haram find after a year: the Shafiʿi majority, Ibn ʿUthaymin and al-Fawzan treat it like other lands (owned after a year), while al-Bulqini and others hold it may never be owned. IslamQA adopts the first; year_passed=true, ownable=true give finderOwns."
+  },
+  {
+   "far": "islamqa.209303.f001",
+   "encoder": "luqata",
+   "class": "derivable",
+   "facts": {
+    "year_passed": false,
+    "ownable": true
+   },
+   "expected": "hold",
+   "quote": "أن الواجب عليك تعريف هذا الجهاز سنة كاملة ، وهو عندك أمانة ؛ فلا يجوز لك استخدامه خلال هذه السنة",
+   "note": "An iPod announced for two months: it is a trust that must be announced a full year and may not be used meanwhile. year_passed=false, ownable=true give hold."
+  },
+  {
+   "far": "islamqa.209303.f002",
+   "encoder": "luqata",
+   "class": "derivable",
+   "facts": {
+    "year_passed": true,
+    "ownable": true
+   },
+   "expected": "finderOwns",
+   "quote": "فإن جاء صاحبها دفعها إليه ، وإلا فهي له بعد السنة",
+   "note": "A valuable find announced for a year with no owner appearing becomes the finder's. year_passed=true, ownable=true give finderOwns."
+  },
+  {
+   "far": "islamqa.4652.f001",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": false
+   },
+   "expected": false,
+   "quote": "المودع أمين وإذا هلك ما في يده بدون تعد فلا ضمان عليه",
+   "note": "Carrier of money entrusted for delivery (trustee); airport authorities seized it with no transgression or negligence stated; text: no liability."
+  },
+  {
+   "far": "islamqa.13717.f001",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": false
+   },
+   "expected": false,
+   "quote": "ومن أحكام الوديعة أنها إذا تلفت عند المودع ولم يفرط ؛ فإنه لا يضمنها",
+   "note": "Depositee, deposit perishes without transgression or negligence; not liable."
+  },
+  {
+   "far": "islamqa.13717.f002",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": true,
+    "negligent": false
+   },
+   "expected": true,
+   "quote": "أما المعتدي على الوديعة أو المفرط في حفظها ؛ فإنه يضمنها إذا تلفت",
+   "note": "Depositee who transgresses against the deposit is liable if it perishes."
+  },
+  {
+   "far": "islamqa.13717.f003",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": true
+   },
+   "expected": true,
+   "quote": "أما المعتدي على الوديعة أو المفرط في حفظها ؛ فإنه يضمنها إذا تلفت",
+   "note": "Depositee negligent in guarding the deposit is liable if it perishes."
+  },
+  {
+   "far": "islamqa.13717.f004",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": true
+   },
+   "expected": true,
+   "quote": "فلو قطع العلف عنها بغير أمر صاحبها , فتلفت : ضمنها",
+   "note": "Deposited animal dies after the depositee stops feeding it, an omission of a duty (tafrit); liable."
+  },
+  {
+   "far": "islamqa.13717.f005",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": false
+   },
+   "expected": false,
+   "quote": "وإن تلفت عند أحد من هؤلاء من غير تعد ولا تفريط لم يضمن",
+   "note": "Depositee hands the deposit to his wife/servant/treasurer, as permitted; it perishes without transgression or negligence; not liable."
+  },
+  {
+   "far": "islamqa.22830.f001",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": false
+   },
+   "expected": false,
+   "quote": "فإذا لم يتعدّ ولم يفرط لم يضمن",
+   "note": "Entrusted carrier kept the item in a proper hirz, no transgression or negligence, then it was stolen; not liable."
+  },
+  {
+   "far": "islamqa.22830.f002",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": true
+   },
+   "expected": true,
+   "quote": "أما إذا فرط ولم يحفظها في حرزها ، أو تعدى ووضعها في مكان لا يؤمن عليها مع قدرته أن يضعها في مكان يؤمن عليها فيه ، أو تصرف فيها ؛ أو استعملها ونحو ذلك ، ثم بعد ذلك سرقت منه ؛ فإنه يضمن",
+   "note": "Trustee neglected to keep it in its hirz, then it was stolen; liable."
+  },
+  {
+   "far": "islamqa.22830.f003",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": true,
+    "negligent": false
+   },
+   "expected": true,
+   "quote": "أما إذا فرط ولم يحفظها في حرزها ، أو تعدى ووضعها في مكان لا يؤمن عليها مع قدرته أن يضعها في مكان يؤمن عليها فيه ، أو تصرف فيها ؛ أو استعملها ونحو ذلك ، ثم بعد ذلك سرقت منه ؛ فإنه يضمن",
+   "note": "Trustee transgressed (placed it in an unsafe place, disposed of it or used it), then it was stolen; liable."
+  },
+  {
+   "far": "islamqa.83827.f001",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": true,
+    "negligent": false
+   },
+   "expected": true,
+   "quote": "وضياع جزء من الوديعة يجب على أخيك أن يتحمله لصاحب الوديعة ، لأنه هو الذي اعتدى في بادئ الأمر وتصرف في الوديعة تصرفاً محرماً",
+   "note": "Depositee disposed of the deposit without the owner's permission (transgression; text says he is 'in the ruling of the usurper'); part was lost in transfers; liable. hand=wrongdoer would also give true."
+  },
+  {
+   "far": "islamqa.140833.f001",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "wrongdoer",
+    "transgressed": true,
+    "negligent": false
+   },
+   "expected": true,
+   "quote": "ولكنك أخذتها لنفسك ، ولم تتلفها ، وهذا اعتداء وغصب ، فتكون ضامنا لهذا الرخام لصاحبه",
+   "note": "Employee confiscated marble to be destroyed but took it for a relative; text calls it aggression and usurpation; liable."
+  },
+  {
+   "far": "islamqa.140833.f002",
+   "encoder": "trust_loss",
+   "class": "missing_rule",
+   "quote": "فلو صادرت هذه الصناديق وأتلفتها لم يكن عليك حرج",
+   "note": "Had he confiscated and destroyed the boxes as a lawful financial ta'zir, there would be no blame; decided by the legitimacy of ta'zir bil-mal, not by hand/transgression/negligence.",
+   "needs": [
+    "rule:tazir_bil_mal_confiscation"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.152192.f001",
+   "encoder": "trust_loss",
+   "class": "missing_fact",
+   "quote": "وإذا أتلفت هذه الكتب فلا يلزمك أن تدفع ثمنها ولا أن ترد بدلها شيئاً ، لأن كتب الكفر والسحر لا قيمة لها",
+   "note": "Trustee of a deposited sorcery book destroys it (normally a transgression); no liability because such property has no legal value. The encoder has no fact for the property's legal value (mal mutaqawwam).",
+   "needs": [
+    "fact:mal_mutaqawwam"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.164604.f001",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "home": "itlaf",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": false
+   },
+   "expected": false,
+   "quote": "إن كان قد أخذها أو أمسكها بإذنك ثم انكسرت في يده فلا ضمان عليه إلا إذا كان قد أخطأ أو قصر في حفظها",
+   "note": "Filed under itlaf, decided by the hand of trust: he held it with permission and it broke without fault or shortcoming, so he is not liable (the text adds the exception for error or shortcoming)."
+  },
+  {
+   "far": "islamqa.165409.f001",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": false
+   },
+   "expected": false,
+   "quote": "فلا يلتزم البنك برد رأس المال في حال خسارة البنك",
+   "note": "Bank as mudarib in an investment account; capital lost without fault; not bound to return it."
+  },
+  {
+   "far": "islamqa.165409.f002",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": true
+   },
+   "expected": true,
+   "quote": "ما لم يحصل من البنك تقصير ويكون هو السبب في الخسارة",
+   "note": "Bank as mudarib whose shortcoming (taqsir) caused the loss; liable for capital."
+  },
+  {
+   "far": "islamqa.252463.f001",
+   "encoder": "trust_loss",
+   "class": "missing_rule",
+   "quote": "يده يد ضمان لها ، وهو ملزم شرعاً بالرد عند الطلب",
+   "note": "Bank holding current-account deposits: they are loans, so its hand is a hand of guarantee, not by wrong; liability follows from qard (ownership passes to the borrower), outside the encoder's hand domain.",
+   "needs": [
+    "rule:qard_transfers_ownership"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.252463.f002",
+   "encoder": "trust_loss",
+   "class": "segmentation_error",
+   "facts": null,
+   "expected": null,
+   "quote": "لزم نقل المبالغ إلى حساب استثماري، بحيث ينتفي الضمان",
+   "note": "Not a case: advice to move the money to an investment account so that the guarantee ceases, with no loss ruled on."
+  },
+  {
+   "far": "islamqa.253293.f001",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": false
+   },
+   "expected": false,
+   "quote": "ولا يضمنها البائع إلا بالتعدي أو بالتفريط",
+   "note": "Seller keeps sold goods the buyer has not collected (not prevented); without transgression or negligence he is not liable."
+  },
+  {
+   "far": "islamqa.253293.f002",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": true,
+    "negligent": false
+   },
+   "expected": true,
+   "quote": "ولا يضمنها البائع إلا بالتعدي أو بالتفريط",
+   "note": "Same seller-custodian, with transgression; liable."
+  },
+  {
+   "far": "islamqa.253293.f003",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": true
+   },
+   "expected": true,
+   "quote": "ولا يضمنها البائع إلا بالتعدي أو بالتفريط",
+   "note": "Same seller-custodian, with negligence; liable."
+  },
+  {
+   "far": "islamqa.253293.f004",
+   "encoder": "trust_loss",
+   "class": "derivable",
+   "facts": {
+    "hand": "wrongdoer",
+    "transgressed": false,
+    "negligent": false
+   },
+   "expected": true,
+   "quote": "فإن منعه بائع كان من ضمانه؛ لأنه كالغاصب",
+   "note": "Seller who prevents the buyer from taking delivery bears the loss 'because he is like the usurper'; hand=wrongdoer."
+  },
+  {
+   "far": "islamqa.104241.f001",
+   "encoder": "unknown_owner",
+   "class": "derivable",
+   "facts": {
+    "owner_identifiable": true
+   },
+   "expected": "owner",
+   "quote": "إن كان دافع الرشوة إنما دفعها ليتوصل بها إلى حق له ، فيلزم رد ماله إليه",
+   "note": "The bribe-payer is known and paid only to obtain his own right; the text requires returning his money to him, which the kernel gives for an identifiable owner."
+  },
+  {
+   "far": "islamqa.104241.f002",
+   "encoder": "unknown_owner",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "owner_identifiable": true
+   },
+   "expected": "owner",
+   "positions": [
+    {
+     "who": "طائفة (reported by Ibn al-Qayyim)",
+     "ruling": "owner"
+    },
+    {
+     "who": "Ibn Taymiyya, Ibn al-Qayyim (أصوب القولين), adopted by IslamQA",
+     "ruling": "publicInterest"
+    }
+   ],
+   "matches_madhhab": false,
+   "quote": "ويلزم التائب حينئذ أن يتخلص من الرشاوى التي لا تزال بيده ، بإنفاقها على الفقراء والمساكين أو في المصالح العامة",
+   "note": "The payer is known but bribed to obtain what was not his right and got it; IslamQA, following Ibn Taymiyya via Ibn al-Qayyim, sends the money to the poor and public interests so he does not combine both counter-values, while another group says return it to the owner. The kernel, seeing an identifiable owner, takes the rejected position; the deciding fact is the illicit exchange, not the owner's identifiability."
+  },
+  {
+   "far": "islamqa.104241.f003",
+   "encoder": "unknown_owner",
+   "class": "derivable",
+   "facts": {
+    "owner_identifiable": false
+   },
+   "expected": "publicInterest",
+   "quote": "وفي حال وجوب رد الرشوة إلى صاحبها ، وتعذر الوصول إليه ، لعدم العلم بمكانه ، أو لوفاته وعدم العلم بورثته ، بعد البحث والتحري ، فإنك تتصدق بالمال على نية صاحبه",
+   "note": "Return is owed but the payer cannot be found and his heirs are unknown after searching; the text says give it in charity on his behalf, matching the kernel for an unidentifiable owner."
+  },
+  {
+   "far": "islamqa.107436.f001",
+   "encoder": "unknown_owner",
+   "class": "missing_rule",
+   "quote": "ولا حرج في صرف هذا المال في كل ما يعود بالنفع على الصالح العام",
+   "note": "The value of government rest-house services used without entitlement goes to any public-interest channel (mosques, schools, the poor) because it is public money (مصارف المال العام), not because an owner is unknown; a different principle decides it.",
+   "needs": [
+    "rule:public_property_to_public_interest"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.179911.f001",
+   "encoder": "unknown_owner",
+   "class": "derivable",
+   "facts": {
+    "owner_identifiable": true
+   },
+   "expected": "owner",
+   "quote": "فإن استغني المعين بنفقة غيره ، رد المال لأصحابه إذا كانوا معروفين",
+   "note": "Donations earmarked for a burial that was paid by others are returned to the donors when they are known (who may then give it to the widow); identifiable owner gives owner."
+  },
+  {
+   "far": "islamqa.179911.f002",
+   "encoder": "unknown_owner",
+   "class": "derivable",
+   "facts": {
+    "owner_identifiable": true
+   },
+   "expected": "owner",
+   "quote": "فينبغي له أن يرد المبلغ المذكور إلى الجهة التي سلمته إياه؛ لتعذر إنفاقه فيما خصص له",
+   "note": "Quoted Permanent Committee fatwa: money given for a patient's treatment abroad, the patient died; it goes back to the known party that gave it, matching the kernel."
+  },
+  {
+   "far": "islamqa.179911.f003",
+   "encoder": "unknown_owner",
+   "class": "derivable",
+   "facts": {
+    "owner_identifiable": false
+   },
+   "expected": "publicInterest",
+   "quote": "فإذا لم يكن أصحاب هذه الصدقات معروفين ، أو جهل بعضهم ، وتعذر إذنه ، أو رد المال إليه : صرف في مصرف مشابه لما عينه له ، إذا أمكن",
+   "note": "When the donors are unknown or cannot be reached, the money is spent on a charitable channel similar to the designated one (or a needier one); that is charity/public interest, as the kernel gives for an unidentifiable owner."
+  },
+  {
+   "far": "islamqa.196584.f001",
+   "encoder": "unknown_owner",
+   "class": "derivable",
+   "facts": {
+    "owner_identifiable": false
+   },
+   "expected": "publicInterest",
+   "quote": "فإن عجز الإنسان عن الوصول إلى أصحاب الحق ، فإنه يتصدق بذلك الحق عن أصحابه ، ناويا الأجر والثواب لهم",
+   "note": "The repentant woman tried every means and cannot find the people whose money she took; the text says give it in charity on their behalf, matching the kernel."
+  },
+  {
+   "far": "islamqa.196584.f002",
+   "encoder": "unknown_owner",
+   "class": "missing_fact",
+   "quote": "فإن جاء إليك يوما يطلب حقه ، فأخبره بما عملت ، فإن أقره ، وإلا فادفع إليه حقه",
+   "note": "Quoted Permanent Committee: if the owner turns up after the charity, the charity stands if he ratifies it, otherwise he is paid; the outcome turns on his ratification, which the encoder cannot express.",
+   "needs": [
+    "fact:owner_ratifies_charity"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.196584.f003",
+   "encoder": "unknown_owner",
+   "class": "missing_fact",
+   "quote": "ففي هذه الحال يجوز لك إعطاؤهم من ذلك المال بنية التصدق عن أصحاب ذلك المال",
+   "note": "Whether the charity on the unknown owners' behalf may go to her own poor family (whose maintenance she does not owe) is decided by facts about the recipient, outside the encoder.",
+   "needs": [
+    "fact:recipient_is_own_family"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.260724.f001",
+   "encoder": "unknown_owner",
+   "class": "derivable",
+   "facts": {
+    "owner_identifiable": true
+   },
+   "expected": "owner",
+   "quote": "وعليه أن يرده إلى جهته إن أمكن",
+   "note": "Salary drawn for days not worked must be returned to the paying employer where possible; reachable owner gives owner."
+  },
+  {
+   "far": "islamqa.260724.f002",
+   "encoder": "unknown_owner",
+   "class": "derivable",
+   "facts": {
+    "owner_identifiable": false
+   },
+   "expected": "publicInterest",
+   "quote": "وإلا تصدق به أو وضعه في المصالح العامة التي تنفق عليها الدولة",
+   "note": "If return to the employer is not possible he gives it in charity or puts it into state-funded public interests; unreachable owner gives publicInterest."
+  },
+  {
+   "far": "islamqa.287215.f001",
+   "encoder": "unknown_owner",
+   "class": "derivable",
+   "facts": {
+    "owner_identifiable": true
+   },
+   "expected": "owner",
+   "quote": "يلزم البحث عن هذه الزوجة لإعطائها نصيبها، أو إعطائه لورثتها في حال موتها",
+   "note": "The widow's inheritance share must be delivered to her, or to her heirs if she has died; the duty to search presupposes she can be reached, and the kernel gives owner."
+  },
+  {
+   "far": "islamqa.287215.f002",
+   "encoder": "unknown_owner",
+   "class": "missing_fact",
+   "quote": "فإن تعذر الوصول إليها، احتفظتم به لها، أو تصدقتم به عنها، صدقة مراعاة",
+   "note": "If she cannot be reached the heirs may either hold her share for her or give it in charity on her behalf; the encoder has no 'hold' outcome, and the quoted Ibn Taymiyya ties charity to having despaired of the owner (قد يئس), which the encoder does not take as input.",
+   "needs": [
+    "fact:despair"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.287215.f003",
+   "encoder": "unknown_owner",
+   "class": "missing_fact",
+   "quote": "فإن جاءت يوما من الدهر خيرتموها بين إمضاء الصدقة، أو أن تعطوها نصيبها وتكون الصدقة لكم",
+   "note": "If she reappears after the charity she chooses between ratifying it or taking her share; the outcome turns on her ratification.",
+   "needs": [
+    "fact:owner_ratifies_charity"
+   ],
+   "facts": null,
+   "expected": null
+  },
+  {
+   "far": "islamqa.304828.f001",
+   "encoder": "unknown_owner",
+   "class": "derivable",
+   "facts": {
+    "owner_identifiable": true
+   },
+   "expected": "owner",
+   "quote": "الأصل أنه يجب إرجاع المسروق إلى صاحبه أو ورثته إن كان قد مات",
+   "note": "The default for stolen property is return to the owner or his heirs when known; identifiable owner gives owner."
+  },
+  {
+   "far": "islamqa.304828.f002",
+   "encoder": "unknown_owner",
+   "class": "derivable",
+   "facts": {
+    "owner_identifiable": false
+   },
+   "expected": "publicInterest",
+   "quote": "فإذا جهلت الشخص الذي سرقت أمواله كما قلت، واجتهدت في تذكره فلم تتذكريه ، فيجوز أن تتصدقي عنه بما سرق منه",
+   "note": "The repentant thief does not know her victims despite trying to recall them; she gives charity on their behalf, matching the kernel."
+  }
+ ]
+}
