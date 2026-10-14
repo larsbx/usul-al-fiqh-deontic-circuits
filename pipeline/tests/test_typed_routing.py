@@ -13,6 +13,8 @@ ROOT = Path(__file__).resolve().parents[2]
 EXPORT = (ROOT / "examples/v41_types.pl").read_text(encoding="utf-8")
 SETS = tr.present(ROOT)
 ids = [ts.name for ts in SETS]
+TYPED = [*SETS, *tr.present(ROOT, tr.PROPOSALS)]
+typed_ids = [ts.name for ts in TYPED]
 
 
 def allowed(lean_type: str) -> set:
@@ -35,7 +37,7 @@ def test_allowed_values_come_from_the_kernel():
     assert "none" in allowed("Option (Option Usul.Hukm)") and "wajib" in allowed("Option (Option Usul.Hukm)")
 
 
-@pytest.mark.parametrize("ts", SETS, ids=ids)
+@pytest.mark.parametrize("ts", TYPED, ids=typed_ids)
 def test_situations_use_only_exported_fields_and_rights_capped_quotes(ts):
     fields = dict(re.findall(r"^type_field\(\w+, (\w+), '([^']*)'\)\.", EXPORT, re.M))
     for a in _data(ts)["answers"]:
@@ -51,7 +53,7 @@ def test_every_case_unit_is_typed(ts):
     assert {u for u, _, _ in ts.cases(ROOT)} == {a["answer"] for a in _data(ts)["answers"]}
 
 
-@pytest.mark.parametrize("ts", SETS, ids=ids)
+@pytest.mark.parametrize("ts", TYPED, ids=typed_ids)
 def test_the_prolog_situations_are_current(ts):
     assert tr.prolog_file(ts, _data(ts)) == (ROOT / ts.prolog).read_text(encoding="utf-8")
 
@@ -61,3 +63,23 @@ def test_the_prolog_situations_are_current(ts):
 def test_the_report_is_current(ts):
     assert json.dumps(tr.report(ROOT, ts, tr.coverage(ROOT, ts)), ensure_ascii=False, indent=2) + "\n" == \
         (ROOT / ts.report).read_text(encoding="utf-8")
+
+
+def test_hybrid_puts_types_first_and_words_break_ties():
+    assert tr.hybrid({"b": 1.0, "c": 0.5, "d": 1.0}, ["a", "b", "c", "d"]) == ["b", "d", "c", "a"]
+    assert tr.hybrid({}, ["a", "b"]) == ["a", "b"]
+
+
+@pytest.mark.parametrize("ps", tr.present(ROOT, tr.PROPOSALS), ids=lambda ps: ps.name)
+def test_a_proposal_set_is_its_deterministic_sample_of_pending_units(ps):
+    from usul_corpus import units
+    sample = ps.units(ROOT)
+    assert [a["answer"] for a in _data(ps)["answers"]] == sample
+    assert set(sample) <= units.pending(ROOT / "corpus")
+
+
+@pytest.mark.skipif(shutil.which("swipl") is None, reason="swipl not installed")
+@pytest.mark.parametrize("ps", tr.present(ROOT, tr.PROPOSALS), ids=lambda ps: ps.name)
+def test_the_proposals_are_current(ps):
+    assert json.dumps(tr.proposals(ROOT, ps, tr.coverage(ROOT, ps)), ensure_ascii=False, indent=2) + "\n" == \
+        (ROOT / ps.proposals).read_text(encoding="utf-8")
