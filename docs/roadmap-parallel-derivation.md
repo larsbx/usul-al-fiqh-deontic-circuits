@@ -140,6 +140,10 @@ Precedents:
 
         Theorems `q95_negligence_is_inquiry`, `q97_despair_is_106`, `q97_unknown_owner_is_unidentified` and `q98_owner_is_106_unknown` are proved by `decide`; the Prolog fixtures mirror them. Recall on both sets is unchanged.
       - Typed routing on the IslamQA set is unchanged. The lexical baseline, refitted over 160 encoders, falls to 0.00 / 0.24 / 0.33.
+    - **Shards RajabA13–A16 typed (2026-10-14, at the merge of main).** Their 16 encoders on Ibn Rajab 119–131 are typed the same way: 12 new qāʿida types, statements quoted from the records. That makes 176 encoders over 136 types.
+      - Two names collide with unrelated qawāʿid's fields and are qualified: `intendedQ126` (Lahham 43's `intended` is a ruling) and `neededQ130` (99's `needed` is the community's need for the thing).
+      - No relation was added. Three look-alikes are left for review: 124's prompting cause and Lahham 61's `inOccasion`; 121's ʿurf classes and 122's `customaryUsage`; 130's need and 99's.
+      - Fold 0 gains these shards' 17 cases (156 in all). They were typed by an agent that had seen their annotations, so not blind. Recall@1 / 5 / 10 on the classical set: typed 0.56 / 0.72 / 0.72, lexical 0.61 / 0.85 / 0.88, hybrid 0.73 / 0.95 / 0.96. On IslamQA the lexical baseline over 176 encoders is 0.00 / 0.22 / 0.31 and the hybrid 0.52 / 0.69 / 0.76.
     - **Classical units (2026-10-14).** Fold 0 of the routing index's held-out split (139 Ibn Rajab and Ibn al-Laḥḥām furūʿ) was typed blind under opaque ids, because record ids name the qāʿida: 187 situations, 210 fields (`corpus/typing/rajab_fold0_situations.json`). The lexical baseline is the index refitted without that fold. `typed_routing.TestSet` carries both sets; each report gives typed, lexical, prior and hybrid recall on the same cases.
 
       | Recall@1 / 5 / 10 | typed | lexical | **types first, words breaking ties** |
@@ -173,7 +177,7 @@ Every shard works on its own branch or worktree off **one pinned base commit**, 
 
 | Lane | Shard key | Does (steps) | Size |
 |---|---|---|---|
-| **A Readings × Ibn Rajab** | ≈5 qawāʿid per shard | S0–S5 on the remaining qawāʿid, exactly as tranches 1–10 | 745 furūʿ / 87 qawāʿid → ≈18 shards; 6 qawāʿid first need segmentation review (rounds 1–3 done: 12 shards, 38 qawāʿid, 269 furūʿ) |
+| **A Readings × Ibn Rajab** | ≈5 qawāʿid per shard | S0–S5 on the remaining qawāʿid, exactly as tranches 1–10 | 745 furūʿ / 87 qawāʿid → ≈18 shards; 6 qawāʿid first need segmentation review (rounds 1–4 done: 16 shards, 50 qawāʿid, 349 furūʿ; Q127 by rajab-q127) |
 | **B Encoder-routed takhrīj** | one shard per encoder (× source group) | retrieve R2 units by the routing index; S2–S3 against that encoder; a case no encoder fits is recorded as `missing_rule` with its `needs` and not forced | 100 encoders; start with the 20 with the most ikhtilāf, so the cases feed lanes C and E |
 | **C Taṣḥīḥ import** | one shard per ledger entry group | S7: verbatim taṣḥīḥ from R3 for the open residues: the 73 tarjīḥ outcomes that go against their reading (across 32 encoders) and the 9 tawaqquf; graded evidence only | 82 entries → ≈8 shards by encoder group |
 | **D Side verification** | one shard per tranche file | S7: check every on-madhhab annotation against al-Inṣāf and the muʿtamad; a failure enters 𝔏 with a `side_check` | **done** for all 12 suites (tranches 10–11 in their own PRs; tranches 1–9 and al-Saʿdī's: 100 cases, 6 failed) |

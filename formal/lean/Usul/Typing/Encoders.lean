@@ -724,7 +724,7 @@ def mubasharaTasabbub : Typed Situation Usul.Readings.Mubashara.Daman where
   run | (a, u) => Usul.Readings.Mubashara.damanOn a u
   proj_embed := fun _ => rfl
 
-/-! ## Encoders of the parallel shards (RajabA1–A12) -/
+/-! ## Encoders of the parallel shards (RajabA1–A16) -/
 
 /-- `attached_right_disposal` reads `Qaida.Rajab53`. -/
 def attachedRightDisposal : Typed Situation (Bool) where
@@ -1164,6 +1164,134 @@ def cancelOnExistenceValid : Typed Situation (Bool) where
   proj s := s.legitimatePurpose
   embed x1 := { legitimatePurpose := some x1 }
   run x1 := Usul.Readings.RajabA12.cancelOnExistenceValid x1
+  proj_embed := fun _ => rfl
+
+/-- `entitlement_multiplies` reads `Qaida.Rajab119`. -/
+def entitlementMultiplies : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.combinedAttributes, ← s.singleJiha)
+  embed | (x1, x2) => { combinedAttributes := some x1, singleJiha := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA13.entitlementMultiplies x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `specific_singled_out` reads `Qaida.Rajab119`. -/
+def specificSingledOut : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.connected, ← s.revocable)
+  embed | (x1, x2) => { connected := some x1, revocable := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA13.specificSingledOut x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `takes_only_by_special` reads `Qaida.Rajab119`. -/
+def takesOnlyBySpecial : Typed Situation (Bool) where
+  Local := (Bool)
+  proj s := s.specialTitle
+  embed x1 := { specialTitle := some x1 }
+  run x1 := Usul.Readings.RajabA13.takesOnlyBySpecial x1
+  proj_embed := fun _ => rfl
+
+/-- `double_kinship_preferred` reads `Qaida.Rajab120`. -/
+def doubleKinshipPreferred : Typed Situation (Bool) where
+  Local := (Bool)
+  proj s := s.doubleKinship
+  embed x1 := { doubleKinship := some x1 }
+  run x1 := Usul.Readings.RajabA13.doubleKinshipPreferred x1
+  proj_embed := fun _ => rfl
+
+/-- `urf_specialises_general` reads `Qaida.Rajab121`. -/
+def urfSpecialisesGeneral : Typed Situation (Bool) where
+  Local := (Bool) × (Bool) × (Bool)
+  proj s := do pure (← s.urfiHaqiqa, ← s.onlyQualified, ← s.mostlyQualified)
+  embed | (x1, x2, x3) => { urfiHaqiqa := some x1, onlyQualified := some x2, mostlyQualified := some x3 }
+  run | (x1, x2, x3) => Usul.Readings.RajabA14.urfGeneralCovers x1 x2 x3
+  proj_embed := fun _ => rfl
+
+/-- `custom_restricts_general` reads `Qaida.Rajab122`. -/
+def customRestrictsGeneral : Typed Situation (Bool) where
+  Local := (Bool)
+  proj s := s.customaryUsage
+  embed x1 := { customaryUsage := some x1 }
+  run x1 := Usul.Readings.RajabA13.customRestricts x1
+  proj_embed := fun _ => rfl
+
+/-- `shar_specialises_general` reads `Qaida.Rajab123`. -/
+def sharSpecialisesGeneral : Typed Situation (Bool) where
+  Local := (Bool)
+  proj s := s.sharExcludes
+  embed x1 := { sharExcludes := some x1 }
+  run x1 := Usul.Readings.RajabA14.sharGeneralCovers x1
+  proj_embed := fun _ => rfl
+
+/-- `cause_restricts_general` reads `Qaida.Rajab124`. -/
+def causeRestrictsGeneral : Typed Situation (Bool) where
+  Local := (Bool)
+  proj s := s.promptingCause
+  embed x1 := { promptingCause := some x1 }
+  run x1 := Usul.Readings.RajabA13.causeRestricts x1
+  proj_embed := fun _ => rfl
+
+/-- `intention_shapes_wording` reads `Qaida.Rajab125`. -/
+def intentionShapesWording : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.restrictsAbsolute, ← s.exceptsFromText)
+  embed | (x1, x2) => { restrictsAbsolute := some x1, exceptsFromText := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA15.intentionGoverns x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `unintended_instance_covered` reads `Qaida.Rajab126`. -/
+def unintendedInstanceCovered : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.rareOrBarred, ← s.intendedQ126)
+  embed | (x1, x2) => { rareOrBarred := some x1, intendedQ126 := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA14.unintendedCovered x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `injury_state_measures` reads `Qaida.Rajab128`. -/
+def injuryStateMeasures : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.guaranteedAtInjury, ← s.guaranteedAtSpread)
+  embed | (x1, x2) => { guaranteedAtInjury := some x1, guaranteedAtSpread := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA15.measuredAtInjury x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `spread_follows_injury` reads `Qaida.Rajab128`. -/
+def spreadFollowsInjury : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.guaranteedAtInjury, ← s.guaranteedAtSpread)
+  embed | (x1, x2) => { guaranteedAtInjury := some x1, guaranteedAtSpread := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA15.spreadFollowsInjury x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `aqila_bears_across_change` reads `Qaida.Rajab129`. -/
+def aqilaBearsAcrossChange : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.memberAtShot, ← s.memberAtHit)
+  embed | (x1, x2) => { memberAtShot := some x1, memberAtHit := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA16.aqilaBears x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `hit_state_governs` reads `Qaida.Rajab129`. -/
+def hitStateGoverns : Typed Situation (Bool) where
+  Local := (Bool)
+  proj s := s.liabilityRuling
+  embed x1 := { liabilityRuling := some x1 }
+  run x1 := Usul.Readings.RajabA16.hitStateGoverns x1
+  proj_embed := fun _ => rfl
+
+/-- `needed_item_is_surplus` reads `Qaida.Rajab130`. -/
+def neededItemIsSurplus : Typed Situation (Bool) where
+  Local := (Bool)
+  proj s := s.neededQ130
+  embed x1 := { neededQ130 := some x1 }
+  run x1 := Usul.Readings.RajabA16.countsAsSurplus x1
+  proj_embed := fun _ => rfl
+
+/-- `budh_capacity_is_wealth` reads `Qaida.Rajab131`. -/
+def budhCapacityIsWealth : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.hasWealth, ← s.canEarnByBudh)
+  embed | (x1, x2) => { hasWealth := some x1, canEarnByBudh := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA16.countsAsRich x1 x2
   proj_embed := fun _ => rfl
 
 /-! ## Integration: the jamʿ of Ibn Rajab 14's two readings -/

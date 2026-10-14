@@ -39,6 +39,7 @@ Severity:
 | PR-26 | A | The al-Irwāʾ reader kept a header only if it continued the run greedily, so one misnumbered header («(٣٣٨)» printed for 238) made it drop every entry from 238 to 338, and al-Albānī's verdicts there (e.g. 276, «من عمل عملا ليس عليه أمرنا فهو رد») read as absent. Found while closing PR-05 | 145 entries | closed: the reader takes the longest increasing run of headers; coverage re-pinned (2121 found, 562 missing, of which only 238 and 2555 are present but unread) |
 | PR-27 | A | Merging main brought ~400 new annotations written before the term guards existed; 246 English sites named no term, and some mistranslated | 246 fields | closed: each named from its source word (four parallel passes, applied centrally, every guard green); main's independent readings of Ibn Rajab 3, 9, 14, 15 (tranches 7–8) supersede this branch's tranche 6 |
 | PR-28 | A | Two readings of Ibn Rajab 3, 9, 14 and 15 coexisted after the merge, and on 14.f000 the M8 reading bound each man to the ghusl where the madhhab binds neither | 4 qawāʿid, 1 farʿ | closed: Q3, Q9, Q15 proved equivalent; Q14 joined (jamʿ) by Ibn Rajab's own ground «متيقن للطهارة شاك في الحدث» (`attachOnCertainty`, conservative), 14.f000 revisited onto the madhhab the ledger's taṣḥīḥ and jazm already held |
+| PR-29 | B | Merging Lane A round 4 (PR #71) added its encoders to the routing index, which displaced 40 lexical proposals across 24 R2 sample units, each needing a semantic review | 24 units, 40 proposals | closed: each new proposal reviewed `not_established` (the source states none of the encoder's facts), the displaced reviews retired with the proposal |
 | PR-14 | A | The bulk «impurity → najāsa» replacement could mislabel ḥadath | 27 fields | closed `021d1d8`: each reviewed; 18.f015 and 159.f007 corrected from source |
 
 ## PR-02 families (English gloss → terms it conflates)
@@ -257,3 +258,5 @@ within the existing 400-character policy. Competing characterizations remain
 unadjudicated. The case annotations, contribution hashes, record hashes,
 encoders and legal outcomes are unchanged; no frozen case receipt is re-pinned.
 The generated dossier page is refreshed from these source fields.
+
+**PR-29, the round-4 merge.** Round 4's encoders entered the lexical routing index, so `typed-routing` now draws a different first five for 24 of the R2 sample's units. Every proposal still has a review. The 40 new ones are `not_established`: the bank holds none of their facts in those units, and none is filled from silence. On m01051, «ينظر ما كان بينه حيث حلف» points to the oath's occasion, which is Ibn Rajab 124's question, but the occasion itself is not stated.

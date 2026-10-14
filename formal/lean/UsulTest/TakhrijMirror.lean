@@ -552,6 +552,60 @@ import Usul
 #guard (Usul.Readings.RajabA12.occurrenceGoverns true true) == false
 #guard (Usul.Readings.RajabA12.cancelOnExistenceValid false) == false
 #guard (Usul.Readings.RajabA12.cancelOnExistenceValid true) == true
+#guard (Usul.Readings.RajabA13.specificSingledOut false false) == false
+#guard (Usul.Readings.RajabA13.specificSingledOut false true) == true
+#guard (Usul.Readings.RajabA13.specificSingledOut true false) == true
+#guard (Usul.Readings.RajabA13.specificSingledOut true true) == true
+#guard (Usul.Readings.RajabA13.takesOnlyBySpecial false) == false
+#guard (Usul.Readings.RajabA13.takesOnlyBySpecial true) == true
+#guard (Usul.Readings.RajabA13.entitlementMultiplies false false) == false
+#guard (Usul.Readings.RajabA13.entitlementMultiplies false true) == false
+#guard (Usul.Readings.RajabA13.entitlementMultiplies true false) == true
+#guard (Usul.Readings.RajabA13.entitlementMultiplies true true) == false
+#guard (Usul.Readings.RajabA13.doubleKinshipPreferred false) == false
+#guard (Usul.Readings.RajabA13.doubleKinshipPreferred true) == true
+#guard (Usul.Readings.RajabA13.customRestricts false) == false
+#guard (Usul.Readings.RajabA13.customRestricts true) == true
+#guard (Usul.Readings.RajabA13.causeRestricts false) == false
+#guard (Usul.Readings.RajabA13.causeRestricts true) == true
+#guard (Usul.Readings.RajabA14.urfGeneralCovers false false false) == true
+#guard (Usul.Readings.RajabA14.urfGeneralCovers false false true) == false
+#guard (Usul.Readings.RajabA14.urfGeneralCovers false true false) == false
+#guard (Usul.Readings.RajabA14.urfGeneralCovers false true true) == false
+#guard (Usul.Readings.RajabA14.urfGeneralCovers true false false) == false
+#guard (Usul.Readings.RajabA14.urfGeneralCovers true false true) == false
+#guard (Usul.Readings.RajabA14.urfGeneralCovers true true false) == false
+#guard (Usul.Readings.RajabA14.urfGeneralCovers true true true) == false
+#guard (Usul.Readings.RajabA14.sharGeneralCovers false) == true
+#guard (Usul.Readings.RajabA14.sharGeneralCovers true) == false
+#guard (Usul.Readings.RajabA14.unintendedCovered false false) == true
+#guard (Usul.Readings.RajabA14.unintendedCovered false true) == true
+#guard (Usul.Readings.RajabA14.unintendedCovered true false) == false
+#guard (Usul.Readings.RajabA14.unintendedCovered true true) == true
+#guard (Usul.Readings.RajabA15.intentionGoverns false false) == true
+#guard (Usul.Readings.RajabA15.intentionGoverns false true) == false
+#guard (Usul.Readings.RajabA15.intentionGoverns true false) == false
+#guard (Usul.Readings.RajabA15.intentionGoverns true true) == false
+#guard (Usul.Readings.RajabA15.spreadFollowsInjury false false) == false
+#guard (Usul.Readings.RajabA15.spreadFollowsInjury false true) == false
+#guard (Usul.Readings.RajabA15.spreadFollowsInjury true false) == true
+#guard (Usul.Readings.RajabA15.spreadFollowsInjury true true) == true
+#guard (Usul.Readings.RajabA15.measuredAtInjury false false) == false
+#guard (Usul.Readings.RajabA15.measuredAtInjury false true) == false
+#guard (Usul.Readings.RajabA15.measuredAtInjury true false) == false
+#guard (Usul.Readings.RajabA15.measuredAtInjury true true) == true
+#guard (Usul.Readings.RajabA16.hitStateGoverns false) == false
+#guard (Usul.Readings.RajabA16.hitStateGoverns true) == true
+#guard (Usul.Readings.RajabA16.aqilaBears false false) == false
+#guard (Usul.Readings.RajabA16.aqilaBears false true) == false
+#guard (Usul.Readings.RajabA16.aqilaBears true false) == false
+#guard (Usul.Readings.RajabA16.aqilaBears true true) == true
+#guard (Usul.Readings.RajabA16.countsAsSurplus false) == true
+#guard (Usul.Readings.RajabA16.countsAsSurplus true) == false
+#guard (Usul.Readings.RajabA16.countsAsRich false false) == false
+#guard (Usul.Readings.RajabA16.countsAsRich false true) == false
+#guard (Usul.Readings.RajabA16.countsAsRich true false) == true
+#guard (Usul.Readings.RajabA16.countsAsRich true true) == true
 #guard (Usul.Readings.RajabA2.nafaqaStipulable false false) == true
 #guard (Usul.Readings.RajabA2.nafaqaStipulable false true) == true
 #guard (Usul.Readings.RajabA2.nafaqaStipulable true false) == false
