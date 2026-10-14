@@ -113,12 +113,12 @@ def test_evidence_cites_registered_witnesses_within_their_limits():
 
 @pytest.mark.parametrize("v", EVIDENCE, ids=lambda v: v["ref"])
 def test_evidence_is_verbatim(v):
-    """Letters-only comparison against the cached witness; skipped where it is not cached (CI)."""
+    """Required reconciliation evidence: a missing witness is a failure, including offline."""
     from usul_corpus.arabic import locate
     w, loc = v["ref"][4:].split("/")
     src = ROOT / ".cache/corpus" / f"{w}.txt"
     if not src.exists():
-        pytest.skip(f"{w} not cached")
+        pytest.fail(f"required witness {w} not cached; run make source-verify-fetch")
     assert locate(src.read_text(encoding="utf-8"), v["excerpt_ar"]) == loc, v["ref"]
 
 
