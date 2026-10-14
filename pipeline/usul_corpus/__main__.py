@@ -405,7 +405,8 @@ def cmd_typed_routing(args: argparse.Namespace) -> int:
 
     def emit(path: str, text: str) -> bool:
         if args.check:
-            stale.extend([path] if (ROOT / path).read_text(encoding="utf-8") != text else [])
+            current = (ROOT / path).read_text(encoding="utf-8") if (ROOT / path).exists() else None
+            stale.extend([path] if current != text else [])
         else:
             (ROOT / path).write_text(text, encoding="utf-8")
         return path not in stale

@@ -59,7 +59,8 @@ class TestSet(Typed):
 
 @dataclass(frozen=True)
 class ProposalSet(Typed):
-    """An unlabelled sample: per witness, the k records whose ids hash lowest (sha256)."""
+    """An unlabelled sample: per witness, the k records whose ids hash lowest (sha256). The draw is
+    fixed over the witness's records, so annotating a sampled unit later does not move the sample."""
     plan: tuple[tuple[str, int], ...]
 
     def units(self, root: Path) -> list[str]:

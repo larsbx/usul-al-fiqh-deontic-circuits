@@ -61,6 +61,9 @@ def test_the_prolog_situations_are_current(ts):
 @pytest.mark.skipif(shutil.which("swipl") is None, reason="swipl not installed")
 @pytest.mark.parametrize("ts", SETS, ids=ids)
 def test_the_report_is_current(ts):
+    answers = ROOT / tr.routing.ANSWERS
+    if ts.name == "islamqa_tranche1" and (not answers.exists() or answers.stat().st_size < 1000):
+        pytest.skip("IslamQA answers not fetched (git lfs pull)")
     assert json.dumps(tr.report(ROOT, ts, tr.coverage(ROOT, ts)), ensure_ascii=False, indent=2) + "\n" == \
         (ROOT / ts.report).read_text(encoding="utf-8")
 
@@ -71,11 +74,14 @@ def test_hybrid_puts_types_first_and_words_break_ties():
 
 
 @pytest.mark.parametrize("ps", tr.present(ROOT, tr.PROPOSALS), ids=lambda ps: ps.name)
-def test_a_proposal_set_is_its_deterministic_sample_of_pending_units(ps):
+def test_a_proposal_set_is_its_deterministic_sample_of_r2_units(ps):
+    """The draw is fixed: a sampled unit later annotated in lane B stays in it, its proposal consumed."""
     from usul_corpus import units
+    inv = json.loads((ROOT / "corpus" / units.INVENTORY).read_text(encoding="utf-8"))
+    inventoried = units.pending(ROOT / "corpus") | {i for r in inv["witnesses"] for i in r["annotated_ids"]}
     sample = ps.units(ROOT)
     assert [a["answer"] for a in _data(ps)["answers"]] == sample
-    assert set(sample) <= units.pending(ROOT / "corpus")
+    assert set(sample) <= inventoried
 
 
 @pytest.mark.skipif(shutil.which("swipl") is None, reason="swipl not installed")
