@@ -22,7 +22,20 @@ jobs:
       - run: pip install pytest jsonschema numpy pillow
       - name: Replay locked M5 command-schema evidence
         run: cd pipeline && python -m usul_corpus m5-commands --fetch-source
-      - run: make test validate generated
+      - name: Verify required locked sources (fail closed)
+        run: make source-verify-fetch
+      - name: Corpus tests with explicit exclusion report
+        run: cd pipeline && python -m pytest -q -rs --junitxml=../.cache/corpus-tests.xml
+      - run: make validate generated
+      - name: Retain source coverage and test exclusions
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-verification
+          path: |
+            .cache/source-verification.json
+            .cache/corpus-tests.xml
+          if-no-files-found: error
 
   lean:
     name: Lean 4 kernel (no sorry)

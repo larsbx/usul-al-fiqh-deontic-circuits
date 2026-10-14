@@ -182,7 +182,7 @@
    "status": "referenced",
    "established": [
     {
-     "ref": "src:openiti-insaf-shamela21609/v12:p008",
+     "ref": "src:openiti-insaf-shamela21609/v12:p009",
      "relation": "refines",
      "note": "The judge may invite one who confessed to a ḥadd to retract; al-Intiṣār: prompting the retraction is lawful. So in the ḥudūd a retraction is not inert.",
      "excerpt_ar": "للحاكم أن يعرض للمقر بحد أن يرجع عن إقراره، وقال في الانتصار: تلقينه الرجوع مشروع"
@@ -320,10 +320,10 @@
    "status": "referenced",
    "established": [
     {
-     "ref": "src:openiti-kawkab-shamela12019/v04:p442",
+     "ref": "src:openiti-kawkab-shamela12019/v04:p443",
      "relation": "agrees",
      "note": "'No harm and no reciprocal harm' is a principle our companions reasoned with in many matters; rulings are either for securing benefits or for repelling harms.",
-     "excerpt_ar": "لا ضرر ولا ضرار ... وقد علل أصحابنا بذلك في مسائل كثيرة"
+     "excerpt_ar": "لا ضرر ولا ضرار\" 4 وفي رواية \"ولا إضرار\" 5 بزيادة همزة في أوله، وألف بين الراءين6. وقد علل أصحابنا بذلك في مسائل كثيرة"
     }
    ],
    "analogies": [
