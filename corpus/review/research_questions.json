@@ -47,13 +47,15 @@
     {
       "id": "RQ-02",
       "title": "A qāʿida that itself leaves two unmarked sides: which one the reading takes",
-      "raised_by": "docs/architecture/taarud-reconciliation.md, lane A register sweep (Q80, Q95)",
+      "raised_by": "docs/architecture/taarud-reconciliation.md, lane A register sweep (Q80, Q95); lane A round 4 (Q121, Q128)",
       "question": "Where Ibn Rajab's qāʿida states its own question as «فيه وجهان» or «قولان» without marking either, the reading must still return one side. Is the choice the annotator's (the side whose ground the text states, or a split that fits the furūʿ), or should such a qāʿida get two readings, one per side, with each farʿ annotated under both?",
-      "policy_in_force": "As is (bank applied, 2026-10-13): the reading takes the side the shard chose and says so in its docstring; Q80 `asTree` takes the wajh whose ground is stated, Q95 `errorActorLiable` splits the bare-ijtihād branch by acting as owner or negligence. The other side is a recorded position, and each farʿ where the later madhhab follows it is a residue in the ledger. The bank's tarjīḥ cannot rank two unmarked sides (wajh against wajh is a tie), and choosing one is a policy point (derivation-method §4, invariant 8).",
+      "policy_in_force": "As is (bank applied, 2026-10-13): the reading takes the side the shard chose and says so in its docstring; Q80 `asTree` takes the wajh whose ground is stated, Q95 `errorActorLiable` splits the bare-ijtihād branch by acting as owner or negligence. The other side is a recorded position, and each farʿ where the later madhhab follows it is a residue in the ledger. The bank's tarjīḥ cannot rank two unmarked sides (wajh against wajh is a tie), and choosing one is a policy point (derivation-method §4, invariant 8). Round 4 adds two: Q121 `urfGeneralCovers` takes specialisation for the qāʿida's third class («ففيه وجهان»), which keeps 121.f006 derivable and leaves eight furūʿ off the later madhhab; Q128 `measuredAtInjury` takes the state at the injury, on «السراية ... تابعة للجناية», where Ibn Rajab names no side.",
       "pins": [
         "Usul.Readings.RajabA2.asTree",
         "Usul.Readings.RajabA5.errorActorLiable",
-        "Usul.Reconcile.prevail"
+        "Usul.Reconcile.prevail",
+        "Usul.Readings.RajabA14.urfGeneralCovers",
+        "Usul.Readings.RajabA15.measuredAtInjury"
       ],
       "sources": [
         {
@@ -65,6 +67,11 @@
           "ref": "src:openiti-rajab-shamela21730/v01:p218",
           "excerpt_ar": "إخراجه لحق الله إلى من يظنه مستحقا ثم تبين الخطأ، ففي ضمانه قولان، وإن",
           "note": "Q95: the bare-ijtihād branch is left at «قولان»."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p274",
+          "excerpt_ar": "بقيد أو قرينة، ولا يكاد يفهم عند الإطلاق دخوله فيه، ففيه وجهان",
+          "note": "Q121's third class: a name mostly used with a qualifier, left at «وجهان»."
         }
       ],
       "alternatives": [
@@ -140,6 +147,65 @@
       "research": [
         "Read the passage in al-Targhīb (or al-Inṣāf's report of it) for the subject of the two wujūh.",
         "Check al-Mubdiʿ and Kashshāf on «إذا طلق ثم عفا» for the husband's disposal before he chooses."
+      ],
+      "status": "open-research"
+    },
+    {
+      "id": "RQ-05",
+      "title": "The witness's «لا» in 128.f003",
+      "raised_by": "docs/architecture/taarud-reconciliation.md, lane A round 4 (128.f003)",
+      "question": "The pinned witness reads al-Qāḍī as «قياس المذهب أنه لا يضمنه بألفين», but the same sentence continues «وقد قلنا يضمن بألفين إذا عتق، كذلك هاهنا، وهذا موضع مجمع عليه» because the slave was worth two thousand at the cutting: the argument concludes liability at two thousand. Is «لا» the reading of the text, or a scribal or editorial slip?",
+      "policy_in_force": "As is: 128.f003 is annotated by the argument (liable at two thousand, derivable under `measuredAtInjury`) and its note flags the «لا». The bank cannot decide a reading of the witness.",
+      "pins": [
+        "Usul.Readings.RajabA15.measuredAtInjury"
+      ],
+      "sources": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p289",
+          "excerpt_ar": "فقال القاضي في خلافه: قياس المذهب أنه لا يضمنه بألفين ; لأن نقصان القيمة",
+          "note": "The witness's wording."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p289",
+          "excerpt_ar": "كنقصان بدله بالحرية، وقد قلنا يضمن بألفين إذا عتق، كذلك هاهنا",
+          "note": "The argument that follows, concluding liability at two thousand."
+        }
+      ],
+      "alternatives": [
+        "«لا» is a slip; the annotation (liable at two thousand) stands (the policy in force).",
+        "«لا» is the text: al-Qāḍī's qiyās gives liability at the value at death, the record's «مجمع عليه» refers to another branch, and the case is re-annotated."
+      ],
+      "research": [
+        "Collate another edition or manuscript of Taqrīr al-Qawāʿid at this record.",
+        "Check al-Qāḍī's al-Khilāf, or al-Inṣāf and al-Furūʿ, on the slave whose value falls between the cutting and the death."
+      ],
+      "status": "open-research"
+    },
+    {
+      "id": "RQ-06",
+      "title": "A reading's scope beyond the qāʿida's own words",
+      "raised_by": "docs/architecture/taarud-reconciliation.md, lane A round 4 (Q129)",
+      "question": "Q129 asks whether the state at the shot or at the hit governs, «أم يفرق بين القود والضمان، أم بين أن يكون الرمي مباحا أو محظورا». The reading takes the qawad/ḍamān split and extends «القود» to every condition of the act that is not a liability (the lawfulness of game, 129.f006); and `aqilaBears` rests on al-Āmidī's ground quoted inside a farʿ, not on the qāʿida's heading. May a reading extend a qāʿida's terms, or add a reading grounded only inside one farʿ, to avoid a gap?",
+      "policy_in_force": "As is: both stand (invariant 7: a case a reading should cover gets a reading, not a gap), each docstring quotes its ground, and every case they decide is annotated `candidate`. No case's class depends on the extension being wrong.",
+      "pins": [
+        "Usul.Readings.RajabA16.hitStateGoverns",
+        "Usul.Readings.RajabA16.aqilaBears"
+      ],
+      "sources": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p290",
+          "excerpt_ar": "القود والضمان، أم بين أن يكون بين الرمي مباحا أو محظورا؟ فيه للأصحاب",
+          "note": "Q129's options: the split the reading takes, and the fourth it does not."
+        }
+      ],
+      "alternatives": [
+        "Extensions and farʿ-grounded readings stand, documented (the policy in force).",
+        "Only the qāʿida's own terms: 129.f006 becomes a gap (`rule:` the lawfulness of game), which invariant 7 forbids unless the text names another principle.",
+        "Take Q129's fourth option (a permitted or forbidden shot) as a second reading, and annotate each farʿ under both."
+      ],
+      "research": [
+        "Check al-Inṣāf and the muʿtamad on game shot by one who leaves iḥrām before it is hit, for the ground they give.",
+        "List readings in the bank whose docstring quotes a farʿ rather than the qāʿida's statement."
       ],
       "status": "open-research"
     }

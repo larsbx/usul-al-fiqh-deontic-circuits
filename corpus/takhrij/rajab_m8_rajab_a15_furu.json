@@ -7,7 +7,10 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f000",
       "encoder": "intention_shapes_wording",
       "class": "derivable",
-      "facts": {"restricts_absolute": false, "excepts_from_text": false},
+      "facts": {
+        "restricts_absolute": false,
+        "excepts_from_text": false
+      },
       "expected": true,
       "note": "First qism (the intention generalises the specific). He swears of his wife «لا تركت هذا الصبي يخرج» and the boy goes out without her choice: «فنص أحمد في رواية مهنا أنه إن نوى أن لا يخرج من الباب فخرج فقد حنث وإن كان نوى أن لا تدعه لم يحنث ; لأنها لم تدعه». The intention governs the wording either way: intending that he not go out at all, he breaks the oath by the going out. No dispute reported."
     },
@@ -15,7 +18,10 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f001",
       "encoder": "intention_shapes_wording",
       "class": "derivable",
-      "facts": {"restricts_absolute": false, "excepts_from_text": false},
+      "facts": {
+        "restricts_absolute": false,
+        "excepts_from_text": false
+      },
       "expected": true,
       "note": "«إن رأيتك تدخلين هذه الدار فأنت طالق»: «فنص أحمد في رواية مهنا أنه وإن أراد أن لا تدخلها بالكلية فدخلت ولم يرها حنث، وإن كان نوى إذا رآها فلا يحنث حتى يراها تدخلها». The intention generalises the specific (seeing) to entering at all. Follow-on: al-Qāḍī in one place and Ibn ʿAqīl hold that such wording is in ʿurf for the general abstention, so no intention of generality is needed; the same ruling, by another route."
     },
@@ -23,7 +29,10 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f002",
       "encoder": "intention_shapes_wording",
       "class": "derivable",
-      "facts": {"restricts_absolute": false, "excepts_from_text": false},
+      "facts": {
+        "restricts_absolute": false,
+        "excepts_from_text": false
+      },
       "expected": true,
       "note": "«لو حلف لا يدخل هذا البيت يريد هجران قوم فدخل عليهم بيتا آخر حنث نص عليه في رواية أحمد بن يحيى الكحال». The intention generalises the specific house to every house of theirs. No dispute reported."
     },
@@ -31,7 +40,10 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f003",
       "encoder": "intention_shapes_wording",
       "class": "derivable",
-      "facts": {"restricts_absolute": false, "excepts_from_text": false},
+      "facts": {
+        "restricts_absolute": false,
+        "excepts_from_text": false
+      },
       "expected": true,
       "note": "«فلو حلف لا يشرب له الماء ونوى الامتناع من جميع ماله حنث بتناول كل ما يملكه». The intention generalises the water to all his property. No dispute reported."
     },
@@ -39,7 +51,10 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f004",
       "encoder": "intention_shapes_wording",
       "class": "derivable",
-      "facts": {"restricts_absolute": false, "excepts_from_text": false},
+      "facts": {
+        "restricts_absolute": false,
+        "excepts_from_text": false
+      },
       "expected": true,
       "note": "«لو حلف أن لا يضربه ونوى أن لا يؤلمه حنث بكل ما يؤلمه من خنق وعض وغيرهما نص عليه». The intention generalises striking to every hurt. Naṣṣ, no dispute reported."
     },
@@ -47,7 +62,10 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f005",
       "encoder": "intention_shapes_wording",
       "class": "derivable",
-      "facts": {"restricts_absolute": false, "excepts_from_text": false},
+      "facts": {
+        "restricts_absolute": false,
+        "excepts_from_text": false
+      },
       "expected": true,
       "note": "«لو حلف لا يكلم امرأته يقصد هجرانها بذلك حنث بوطئها ، أومأ إليه أحمد». The intention generalises speaking to every approach. An īmāʾ of Aḥmad, no dispute reported."
     },
@@ -55,28 +73,32 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f006",
       "encoder": "intention_shapes_wording",
       "class": "derivable",
-      "facts": {"restricts_absolute": false, "excepts_from_text": false},
+      "facts": {
+        "restricts_absolute": false,
+        "excepts_from_text": false
+      },
       "expected": true,
       "note": "He divorces revocably and swears «لا راجعتها», meaning that she never return to him: «حنث بتزوجها بنكاح جديد بعد البينونة نص عليه أحمد في رواية ابن منصور». The intention generalises the rajʿa to every return. Naṣṣ, no dispute reported."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f007",
       "encoder": "intention_shapes_wording",
-      "class": "genuine_ikhtilaf",
-      "facts": {"restricts_absolute": false, "excepts_from_text": false},
+      "class": "derivable",
+      "facts": {
+        "restricts_absolute": false,
+        "excepts_from_text": false
+      },
       "expected": true,
-      "positions": [
-        {"who": "Ibn Rajab: «قلت: والصواب الجزم بالحنث هاهنا مطلقا، وعليه يدل نص أحمد في المسألتين الأولتين»", "ruling": true},
-        {"who": "al-Qāḍī Abū al-Ṭayyib al-Ṭabarī (a Shāfiʿī), as the implication of the madhhab, as al-Qāḍī reports him: «مقتضى مذهبكم أنه لا يحنث»", "ruling": false}
-      ],
-      "matches_madhhab": false,
-      "note": "He swears of his wife «لا خرجت من بيته لتهنئة ولا تعزية», intending that she not go out at all; does she break it going out for another purpose? al-Qāḍī reports that he himself withheld judgement («أنه توقف فيها») and that Abū al-Ṭayyib told him the madhhab implies no breach, the purpose differing between outings. Ibn Rajab holds the breach decisively (the intention generalises, as in Aḥmad's naṣṣ in f000/f001), and distinguishes the oath against her spinning taken to cut off obligation («لأن العموم هناك يستفاد من السبب، وهنا يستفاد من النية فهو أبلغ»). The reading has the intention govern: breach. No later treatment found in al-Inṣāf, al-Furūʿ or the muʿtamad, and no madhhab label in Ibn Rajab beyond his own «الصواب»: entered in the ledger."
+      "note": "He swears of his wife «لا خرجت من بيته لتهنئة ولا تعزية», intending that she not go out at all; does she break it going out for another purpose? al-Qāḍī reports that he himself withheld judgement («أنه توقف فيها») and that Abū al-Ṭayyib told him the madhhab implies no breach, the purpose differing between outings. Ibn Rajab holds the breach decisively (the intention generalises, as in Aḥmad's naṣṣ in f000/f001), and distinguishes the oath against her spinning taken to cut off obligation («لأن العموم هناك يستفاد من السبب، وهنا يستفاد من النية فهو أبلغ»). The reading has the intention govern: breach. No later treatment found in al-Inṣāf, al-Furūʿ or the muʿtamad, and no madhhab label in Ibn Rajab beyond his own «الصواب»: entered in the ledger. Integrator: the only contrary is a Shāfiʿī's inference of what the madhhab implies («مقتضى مذهبكم»), not a position within the madhhab, and al-Qāḍī withheld judgement; derivable, with Ibn Rajab's «والصواب الجزم بالحنث». Positions reported: Ibn Rajab: «قلت: والصواب الجزم بالحنث هاهنا مطلقا، وعليه يدل نص أحمد في المسألتين الأولتين» (yes); al-Qāḍī Abū al-Ṭayyib al-Ṭabarī (a Shāfiʿī), as the implication of the madhhab, as al-Qāḍī reports him: «مقتضى مذهبكم أنه لا يحنث» (no)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f008",
       "encoder": "intention_shapes_wording",
       "class": "derivable",
-      "facts": {"restricts_absolute": false, "excepts_from_text": false},
+      "facts": {
+        "restricts_absolute": false,
+        "excepts_from_text": false
+      },
       "expected": true,
       "note": "Second qism (the intention specifies the general). «أن يقول نسائي طوالق ويستثني بقلبه واحدة، أو يحلف لا يسلم على زيد فسلم على جماعة هو فيهم ويستثنيه بقلبه»: the intention specifies, so the excepted one is not divorced and he does not break the oath, between him and God. al-Inṣāf (v09:p034) has the first «فيقبل فيما بينه وبين الله تعالى، قولا واحدا». What reads as two riwāyas in al-Qāḍī and Ibn ʿAqīl on the salām al-Majd reads as whether his claim is accepted in the ḥukm («هل يقبل منه دعوى إرادة ذلك أم لا»), not as a dispute in the bāṭin. Follow-on: entering a house where the man is with a group, intending the others: al-Qāḍī, Ibn ʿAqīl and Abū al-Khaṭṭāb derive it on two wujūh from the salām; al-Majd: «وعندي فيه نظر ; لأن الدخول فعل حسي لا يتميز بخلاف السلام»."
     },
@@ -84,7 +106,10 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f009",
       "encoder": "intention_shapes_wording",
       "class": "derivable",
-      "facts": {"restricts_absolute": false, "excepts_from_text": false},
+      "facts": {
+        "restricts_absolute": false,
+        "excepts_from_text": false
+      },
       "expected": true,
       "note": "«إن لبست ثوبا فأنت طالق، وقال أردت أحمر»: «فالجمهور من الأصحاب على أنه يدين في ذلك في قبوله الحكم روايتان». Annotated for the leading wording (the garment named, the intention specifying it): he is held to his intention between him and God; the two riwāyas are over acceptance in the ḥukm. Those who reported the khilāf in the bāṭin itself (al-Ḥalwānī and his son, a place in Ibn ʿAqīl's Mufradāt, al-Qāḍī in al-Mujarrad) al-Majd calls an oversight («وهو سهو»). Follow-ons: «إن لبست» with the garment unspoken, and «إن دخلت الدار» meaning this year; al-Qāḍī in al-Ḥiyal: «إنه إن كان المخصص بالنية ملفوظا صح تخصيصه وإلا فلا»; Ḥanbal reads Aḥmad's differing answers as two states, not two sayings; al-Sāmarrī: an intention that lifts the ruling entirely (the istithnāʾ of al-mashīʾa) needs an excuse such as being wronged, «بخلاف شروط الطلاق ونحوها، فإنها تصح بالنية مطلقا ; لأنها مخصصة لا رافعة»."
     },
@@ -92,11 +117,20 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f010",
       "encoder": "intention_shapes_wording",
       "class": "genuine_ikhtilaf",
-      "facts": {"restricts_absolute": true, "excepts_from_text": false},
+      "facts": {
+        "restricts_absolute": true,
+        "excepts_from_text": false
+      },
       "expected": false,
       "positions": [
-        {"who": "Aḥmad's naṣṣ in the riwāya of Abū Dāwūd: «أنه لا يلزمه ما نواه»", "ruling": false},
-        {"who": "al-Majd's takhrīj in his taʿlīq on al-Hidāya (from Aḥmad's naṣṣ on the vow of fasting or prayer), Ibn ʿAqīl's tarjīḥ «اللزوم فيما نوى في الجميع»", "ruling": true}
+        {
+          "who": "Aḥmad's naṣṣ in the riwāya of Abū Dāwūd: «أنه لا يلزمه ما نواه»",
+          "ruling": false
+        },
+        {
+          "who": "al-Majd's takhrīj in his taʿlīq on al-Hidāya (from Aḥmad's naṣṣ on the vow of fasting or prayer), Ibn ʿAqīl's tarjīḥ «اللزوم فيما نوى في الجميع»",
+          "ruling": true
+        }
       ],
       "matches_madhhab": true,
       "note": "Third qism (the intention restricting the absolute). He vows alms of property and intends in himself a fixed amount. The reading: a restriction of the absolute does not take effect by bare intention, so what he intended is not binding, as Aḥmad's naṣṣ. No later treatment of this masʾala found in al-Inṣāf, al-Furūʿ or the muʿtamad; on Ibn Rajab's own marked labels the naṣṣ is with the reading. Follow-on: Ibn Qudāma in al-Kāfī has the oath to eat meat or fruit, or speak to a man, with a specific one intended, attach to it alone «ولم يذكر فيه خلافا»."
@@ -105,11 +139,20 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f011",
       "encoder": "intention_shapes_wording",
       "class": "genuine_ikhtilaf",
-      "facts": {"restricts_absolute": true, "excepts_from_text": false},
+      "facts": {
+        "restricts_absolute": true,
+        "excepts_from_text": false
+      },
       "expected": false,
       "positions": [
-        {"who": "the riwāya that no more than one falls", "ruling": false},
-        {"who": "the riwāya that the three bind him («وجه القول بلزوم الثلاث: إن طالقا اسم فاعل ... فيكون محتملا للكثرة فينصرف إليها بالنية»)", "ruling": true}
+        {
+          "who": "the riwāya that no more than one falls",
+          "ruling": false
+        },
+        {
+          "who": "the riwāya that the three bind him («وجه القول بلزوم الثلاث: إن طالقا اسم فاعل ... فيكون محتملا للكثرة فينصرف إليها بالنية»)",
+          "ruling": true
+        }
       ],
       "matches_madhhab": false,
       "note": "«لو قال أنت طالق ونوى ثلاثا فهل يلزمه الثلاث أم لا يقع به أكثر من واحدة؟ على روايتين». Ibn Rajab places it in the third qism; the reading has the intention not restrict the absolute, so one. al-Inṣāf (v09:p008): «إحداهما: تطلق ثلاثا، وهو المذهب على ما اصطلحناه»; the other, one, «وهو المذهب عند أكثر المتقدمين»; al-Muntahā: «وأنت طالق، ونوى ثلاثا فثلاث». Off the madhhab side, so a ledger entry. Follow-ons: «أنت طالق ثلاثا» (three, by the masdar or as a kināya) and whether the three fall if she dies while he says «ثلاثا» (two wujūh in al-Targhīb)."
@@ -118,11 +161,20 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f012",
       "encoder": "intention_shapes_wording",
       "class": "genuine_ikhtilaf",
-      "facts": {"restricts_absolute": true, "excepts_from_text": false},
+      "facts": {
+        "restricts_absolute": true,
+        "excepts_from_text": false
+      },
       "expected": false,
       "positions": [
-        {"who": "the wajh of invalidity, its ground «اشتراط الشهادة على النكاح»", "ruling": false},
-        {"who": "the wajh of validity", "ruling": true}
+        {
+          "who": "the wajh of invalidity, its ground «اشتراط الشهادة على النكاح»",
+          "ruling": false
+        },
+        {
+          "who": "the wajh of validity",
+          "ruling": true
+        }
       ],
       "matches_madhhab": false,
       "note": "«إذا وقع العقد على اسم مطلق ونوى تعيينه قبل العقد فهل يصح أم لا؟»: annotated for its leading instance, «زوجتك بنتي وله بنات ونويا واحدة معينة», where «في صحة النكاح وجهين». The reading: the intention does not restrict the absolute, so the contract does not attach to the one intended. al-Inṣāf (v08:p051) gives both wujūh without a taṣḥīḥ («ففي الصحة وجهان. اختار القاضي في موضع: الصحة. واختار أبو الخطاب، والقاضي أيضا في موضع آخر البطلان»); the Muntahā's and Iqnāʿ's «لا يصح ... حتى يميزها» speaks of the unintended case and is not taken as evidence. No madhhab label: a ledger entry. Follow-ons: Ibn Rajab infers validity for contracts that need no witnesses; al-Majd's two riwāyas on a purchase at a price in the dhimma intended to be paid from usurped money; Ibn Rajab's farq between takhṣīṣ (a narrowing, which is the intention's own work) and taqyīd («زيادة على مدلوله فلا تثبت الزيادة بالنية المجردة»). Also in this record, the fourth qism's opening example, «أنت طالق ثلاثا واستثنى بقلبه إلا واحدة»: two wujūh, not binding in the bāṭin per Abū al-Khaṭṭāb and al-Ḥalwānī's companion, binding per al-Sāmarrī's jazm, al-Mughnī and al-Majd («النية فيما خفي ليس فيما ظهر»); al-Inṣāf (v09:p033): «فالصحيح من المذهب: أنه لا يدين» — the reading's side there (an exception from a text)."
@@ -131,11 +183,20 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f013",
       "encoder": "intention_shapes_wording",
       "class": "genuine_ikhtilaf",
-      "facts": {"restricts_absolute": false, "excepts_from_text": true},
+      "facts": {
+        "restricts_absolute": false,
+        "excepts_from_text": true
+      },
       "expected": false,
       "positions": [
-        {"who": "the wajh that all four are divorced in the bāṭin too (al-Sāmarrī, al-Mughnī, al-Majd in the parallel; «وهو الصحيح من المذهب، قدمه في الفروع» per al-Inṣāf)", "ruling": false},
-        {"who": "the wajh that the excepted one is not divorced in the bāṭin (Abū al-Khaṭṭāb and al-Ḥalwānī's companion in the parallel)", "ruling": true}
+        {
+          "who": "the wajh that all four are divorced in the bāṭin too (al-Sāmarrī, al-Mughnī, al-Majd in the parallel; «وهو الصحيح من المذهب، قدمه في الفروع» per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "the wajh that the excepted one is not divorced in the bāṭin (Abū al-Khaṭṭāb and al-Ḥalwānī's companion in the parallel)",
+          "ruling": true
+        }
       ],
       "matches_madhhab": true,
       "note": "«لو قال نسائي الأربع طوالق واستثنى بقوله فلانة فهي كالتي قبلها»: the number makes the wording an explicit text, so the exception by intention is from a naṣṣ, as «ثلاثا إلا واحدة» before it. The reading: it does not take effect. al-Inṣāf (v09:p034): «طلقت في الحكم على الصحيح من المذهب ... ولم تطلق في الباطن، وقدمه في الرعايتين ... وقيل: تطلق أيضا، وهو الصحيح من المذهب، قدمه في الفروع»: al-Inṣāf's own taṣḥīḥ is with the reading."
@@ -144,11 +205,20 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f014",
       "encoder": "intention_shapes_wording",
       "class": "genuine_ikhtilaf",
-      "facts": {"restricts_absolute": false, "excepts_from_text": false},
+      "facts": {
+        "restricts_absolute": false,
+        "excepts_from_text": false
+      },
       "expected": true,
       "positions": [
-        {"who": "the riwāya of validity (Ibn Abī Mūsā's report; Ibn Rajab: «ولكن صحة الاستثناء هنا أظهر، وفي كلام أحمد في مسألة الأشقاص ما يدل عليه»)", "ruling": true},
-        {"who": "the riwāya of invalidity (Ibn Abī Mūsā's report)", "ruling": false}
+        {
+          "who": "the riwāya of validity (Ibn Abī Mūsā's report; Ibn Rajab: «ولكن صحة الاستثناء هنا أظهر، وفي كلام أحمد في مسألة الأشقاص ما يدل عليه»)",
+          "ruling": true
+        },
+        {
+          "who": "the riwāya of invalidity (Ibn Abī Mūsā's report)",
+          "ruling": false
+        }
       ],
       "matches_madhhab": true,
       "note": "«لو قال كل عبد لي حر واستثنى بقلبه بعض عبيده، فذكر ابن أبي موسى في صحته روايتين». «كل» is a general, not an explicit text: «لأن كلا وإن كانت موضوعة لاستغراق ما يضاف إليه، إلا أنها من صيغ العموم القابلة في الجملة», so the intention specifies a general and governs. No later treatment found; on Ibn Rajab's own label («أظهر», with Aḥmad's words in the ashqāṣ) the reading's side; cognate: al-Inṣāf on «نسائي طوالق» excepting one in his heart, «فيقبل فيما بينه وبين الله تعالى، قولا واحدا». Follow-on (the tanbīh): the aṣḥāb distinguish affirmation from negation in oaths; Shaykh Taqī al-Dīn takes it that the oath generalises in negation and not in affirmation, «وهذا قياس المذهب»."
@@ -157,11 +227,20 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f001",
       "encoder": "injury_state_measures",
       "class": "genuine_ikhtilaf",
-      "facts": {"guaranteed_at_injury": true, "guaranteed_at_spread": true},
+      "facts": {
+        "guaranteed_at_injury": true,
+        "guaranteed_at_spread": true
+      },
       "expected": true,
       "positions": [
-        {"who": "the riwāya of Ḥanbal, by his value not the diya; Abū Bakr in his Khilāf; al-Qāḍī's naṣr in al-Khilāf", "ruling": true},
-        {"who": "the riwāya of Ibn Manṣūr, the diya of a free man; Ibn Ḥāmid's choice", "ruling": false}
+        {
+          "who": "the riwāya of Ḥanbal, by his value not the diya; Abū Bakr in his Khilāf; al-Qāḍī's naṣr in al-Khilāf",
+          "ruling": true
+        },
+        {
+          "who": "the riwāya of Ibn Manṣūr, the diya of a free man; Ibn Ḥāmid's choice",
+          "ruling": false
+        }
       ],
       "matches_madhhab": false,
       "note": "First qism. «لو جرح عبدا ثم أعتق ثم مات من الجرح، فهل يضمن بقيمته أو بديته؟ على روايتين». Guaranteed in both states; the reading measures by the injury's state: his value. Ibn Rajab's tanbīh: what al-Qāḍī ascribed to Ḥarb is in fact Ibn Manṣūr's naql of a free man's full diya. al-Inṣāf (v09:p470): «فلا قود وعليه دية حر مسلم في قول ابن حامد) وهو المذهب»: off the madhhab side, so a ledger entry. Follow-ons: the value is the master's on the first (Abū Bakr, al-Qāḍī and the aṣḥāb, «لأن السراية لا تثبت منفردة وإنما تجب تابعة للجناية»), and the variants ascribed to Ibn Ḥāmid (the lesser of the two, its division) and al-Qāḍī's iḥtimāl of the greater; Ibn al-Zāghūnī's two iḥtimāls for dividing the value; no qiṣāṣ on the free Muslim «لانتفاء المكافأة حال الجناية»."
@@ -170,11 +249,20 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f002",
       "encoder": "injury_state_measures",
       "class": "genuine_ikhtilaf",
-      "facts": {"guaranteed_at_injury": true, "guaranteed_at_spread": true},
+      "facts": {
+        "guaranteed_at_injury": true,
+        "guaranteed_at_spread": true
+      },
       "expected": true,
       "positions": [
-        {"who": "the wajh that he owes the value of a slave-woman's foetus", "ruling": true},
-        {"who": "the wajh that he owes the ghurra of a free foetus", "ruling": false}
+        {
+          "who": "the wajh that he owes the value of a slave-woman's foetus",
+          "ruling": true
+        },
+        {
+          "who": "the wajh that he owes the ghurra of a free foetus",
+          "ruling": false
+        }
       ],
       "matches_madhhab": false,
       "note": "«لو ضرب بطن أمة حامل فأعتقت أو جنينها ثم ألقته ميتا، فهل يضمنه بغرة جنين حر أو بقيمة جنين أمة؟ على وجهين». First qism; the reading measures by the injury's state, the slave-woman's foetus. al-Inṣāf (v10:p072): «ففيه غرة) . هذا المذهب وإحدى الروايات، اختاره ابن حامد، والقاضي»; the other «وعنه: حكمه حكم الجنين المملوك، اختاره أبو بكر، وأبو الخطاب». Off the madhhab side, so a ledger entry. Follow-on: the Christian woman pregnant by a Christian who becomes Muslim before she miscarries, a Muslim or a dhimmī foetus, «على وجهين»."
@@ -183,7 +271,10 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f003",
       "encoder": "injury_state_measures",
       "class": "derivable",
-      "facts": {"guaranteed_at_injury": true, "guaranteed_at_spread": true},
+      "facts": {
+        "guaranteed_at_injury": true,
+        "guaranteed_at_spread": true
+      },
       "expected": true,
       "note": "He cuts off both hands of a slave worth two thousand, it spreads and he dies worth one thousand: al-Qāḍī, «قياس المذهب» ... «وهذا موضع مجمع عليه ; لأن موته حصل بقطع يده وقيمته في تلك الحال ألفان»: the ḍamān is at two thousand, the injury's measure. The witness reads «أنه لا يضمنه بألفين», which the reasoning that follows («وقد قلنا يضمن بألفين إذا عتق»; the consensus that his death came from the cutting at two thousand) does not bear; annotated for the ruling the reasoning states, the «لا» noted as a textual question. Follow-on: a dhimmī who wounds by mistake, then becomes Muslim, and the wound spreads: three wujūh in al-Mughnī and al-Muḥarrar, the first (the whole diya on his ʿāqila at the time of the wound) «وبه جزم في الكافي والمحرر اعتبارا بحال الجناية»; second qism (a ḥarbī or apostate slave wounded, then freed, then dead: no ḍamān) and third qism's first example (a ḥarbī wounded who becomes Muslim: no ḍamān)."
     },
@@ -191,11 +282,20 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f004",
       "encoder": "spread_follows_injury",
       "class": "genuine_ikhtilaf",
-      "facts": {"guaranteed_at_injury": false, "guaranteed_at_spread": true},
+      "facts": {
+        "guaranteed_at_injury": false,
+        "guaranteed_at_spread": true
+      },
       "expected": false,
       "positions": [
-        {"who": "Ibn Rajab, in the third qism «بالاتفاق»: «فلا ضمان أيضا»", "ruling": false},
-        {"who": "the takhrīj of al-Targhīb on the case of Islam supervening between the shot and the hit, where a wajh makes the diya due", "ruling": true}
+        {
+          "who": "Ibn Rajab, in the third qism «بالاتفاق»: «فلا ضمان أيضا»",
+          "ruling": false
+        },
+        {
+          "who": "the takhrīj of al-Targhīb on the case of Islam supervening between the shot and the hit, where a wajh makes the diya due",
+          "ruling": true
+        }
       ],
       "matches_madhhab": true,
       "note": "Third qism. «لو جرح مرتدا ثم أسلم ثم مات فلا ضمان أيضا. وذكر صاحب الترغيب أن الضمان هنا مخرج على الضمان فيما إذا طرأ الإسلام بعد الرمي وقبل الإصابة». The injury unguaranteed, the spread follows it. al-Inṣāf (v09:p463), of the apostate or ḥarbī whose hand is cut and who becomes Muslim and dies: «فلا شيء عليه) هذا المذهب مطلقا وعليه جماهير الأصحاب ... لأن الاعتبار في التضمين بحال ابتداء الجناية ... وجعله في الترغيب كمن أسلم قبل أن يقع به السهم»: on the madhhab side."
@@ -204,7 +304,10 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f005",
       "encoder": "spread_follows_injury",
       "class": "derivable",
-      "facts": {"guaranteed_at_injury": false, "guaranteed_at_spread": true},
+      "facts": {
+        "guaranteed_at_injury": false,
+        "guaranteed_at_spread": true
+      },
       "expected": false,
       "note": "Third qism. «لو جرح صيدا في الحل ثم دخل الحرم فمات فيه فلا ضمان ويحل أكله»: al-Qāḍī, and Aḥmad's naṣṣ in the riwāya of Ibn Manṣūr on Sufyān's answer («ليس عليه كفارة ويكره أكله ; لأنه مات في الحرم»; «ما أحسن ما قال»), the karāha one of tanzīh. The injury unguaranteed, the spread follows it. al-Inṣāf (v03:p552) has the same: «ولو جرح الصيد في الحل، فتحامل فدخل الحرم، ومات فيه: حل أكله، ولم يضمن». No dispute reported."
     },
@@ -212,11 +315,20 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f006",
       "encoder": "spread_follows_injury",
       "class": "genuine_ikhtilaf",
-      "facts": {"guaranteed_at_injury": false, "guaranteed_at_spread": true},
+      "facts": {
+        "guaranteed_at_injury": false,
+        "guaranteed_at_spread": true
+      },
       "expected": false,
       "positions": [
-        {"who": "the wajh of no ḍamān (al-Targhīb), which follows on Abū Bakr's view that the ḍamān is by value («فلا إشكال في عدم ضمانه»)", "ruling": false},
-        {"who": "the wajh of ḍamān (al-Targhīb), the ẓāhir of al-Qāḍī's words: by a free man's diya", "ruling": true}
+        {
+          "who": "the wajh of no ḍamān (al-Targhīb), which follows on Abū Bakr's view that the ḍamān is by value («فلا إشكال في عدم ضمانه»)",
+          "ruling": false
+        },
+        {
+          "who": "the wajh of ḍamān (al-Targhīb), the ẓāhir of al-Qāḍī's words: by a free man's diya",
+          "ruling": true
+        }
       ],
       "matches_madhhab": false,
       "note": "«لو جرح عبد نفسه ثم عتق ثم مات فهل يضمنه أم لا على وجهين، ذكرهما في الترغيب». The master's own slave is unguaranteed on him at the injury («إنما يهدر ضمانه على السيد دون غيره»), though guaranteed in general, so the reading has the spread follow the injury: no ḍamān. al-Kāfī derives it on the two wujūh of the injury's or the spread's state. al-Inṣāf (v09:p471): «لو جرح عبد نفسه ثم أعتقه قبل موته ثم مات: فلا قود عليه وفي ضمانه الخلاف المتقدم», the khilāf before it being decided for the free man's diya («وهو المذهب»): by that taṣḥīḥ of the cognate masʾala the madhhab is ḍamān, off the reading's side, so a ledger entry. Follow-on, fourth qism: a Muslim wounded or his hand cut deliberately, who then apostatises and dies: qawad in the limb, «على وجهين، المرجح منهما عدمه»; its ḍamān, two wujūh, and if owed, the lesser of the soul's or the limb's diya, «المرجح منهما الأول»; who exacts the qawad (the imām or the Muslim walī), two wujūh."
@@ -225,11 +337,20 @@
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f007",
       "encoder": "spread_follows_injury",
       "class": "genuine_ikhtilaf",
-      "facts": {"guaranteed_at_injury": true, "guaranteed_at_spread": false},
+      "facts": {
+        "guaranteed_at_injury": true,
+        "guaranteed_at_spread": false
+      },
       "expected": true,
       "positions": [
-        {"who": "al-Qāḍī and Abū al-Khaṭṭāb in their Khilāfs: «لزمه كمال ضمانه» («تغليبا لضمان الصيد»)", "ruling": true},
-        {"who": "Ibn Rajab's tawajjuh from the masʾala before it: «ويتوجه أن يضمن أرش جرحه خاصة»", "ruling": false}
+        {
+          "who": "al-Qāḍī and Abū al-Khaṭṭāb in their Khilāfs: «لزمه كمال ضمانه» («تغليبا لضمان الصيد»)",
+          "ruling": true
+        },
+        {
+          "who": "Ibn Rajab's tawajjuh from the masʾala before it: «ويتوجه أن يضمن أرش جرحه خاصة»",
+          "ruling": false
+        }
       ],
       "matches_madhhab": false,
       "note": "Fourth qism. Game wounded in the ḥaram that goes out to the ḥill and dies there. The injury guaranteed, the spread in a state of hadr; on the reading's side the ḍamān does not fall: its full ḍamān. Ibn Rajab's own iḥtimāl is the arsh of the wound alone. No later treatment found in al-Inṣāf, al-Furūʿ or the muʿtamad, and no madhhab label: a ledger entry."

@@ -178,14 +178,14 @@ Every ikhtilāf farʿ off the marked madhhab side is run through the kernel's ow
 **Scope reconciliation.** Counts come from committed record IDs minus all existing annotations, not historical estimates. M4 now annotates 196 Ibn Rajab records under 14 qawāʿid, including nine `.f000` additions. PR #29's 1,129 segmented records minus those 196 and tranche 1's 26 left 907 records in 122 qawāʿid with cases. The old “869 in 146” mixed pre-opening counts with all unannotated qawāʿid, including those with no segmented case. PR #30 then added seven segmented records and annotated tranche 2's 25: 1,136 − 196 − 26 − 25 = 889, in 118 qawāʿid. Merged PR #32 then added the list-and-division segmentation and 21 candidate annotations. The unified tranche 3 below preserves those cases and PR #31's eight existing-record annotations, in one 29-record suite; current totals are generated below. Ibn al-Laḥḥām and the global report's totals are separate scopes.
 
 <!-- BEGIN GENERATED M8 SCOPE -->
-**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 725 annotated + **454 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 108 are fully annotated and **46 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
+**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 814 annotated + **365 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 121 are fully annotated and **33 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
 
 The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
 
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.759 | 0 | 0 |
-| All annotation suites | 752 | 0.992 | 0.736 | 0 | 6 |
+| All annotation suites | 841 | 0.993 | 0.738 | 0 | 6 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -470,6 +470,21 @@ Results on the round:
 - **Reconciliation:** 21 contradictions with 55 evidence items: 19 residues, 1 for the reading (114.f003, on cognate rulings only) and 1 tawaqquf (109.f018). At integration two iḥtimālāt graded as bare wujūh were regraded `takhrij` (109.f018, 114.f003); neither outcome changed.
 - **Register questions** are listed in [`taarud-reconciliation.md`](taarud-reconciliation.md).
 
+**Lane A, round 4 (parallel; qawāʿid 119–131; 89 furūʿ).** Four shards (`rajab-a13` … `rajab-a16`) from the pinned base `50f04fc`; the brief added round 3's review lessons (an iḥtimāl grades takhrīj; every reading total over its facts, a bar forcing the output false whatever else holds, with a theorem). Readings, by shard:
+
+| Shard | Qāʿida: reading |
+|---|---|
+| a13 | 119 `specificSingledOut`, with its attached qawāʿid `takesOnlyBySpecial` and `entitlementMultiplies`; 120 `doubleKinshipPreferred`; 122 `customRestricts`; 124 `causeRestricts` |
+| a14 | 121 `urfGeneralCovers`; 123 `sharGeneralCovers`; 126 `unintendedCovered` |
+| a15 | 125 `intentionGoverns`; 128 `spreadFollowsInjury`, `measuredAtInjury` |
+| a16 | 127 `directLiable`, `causeLiable`; 129 `hitStateGoverns`, `aqilaBears`; 130 `countsAsSurplus`; 131 `countsAsRich` |
+
+Results on the round:
+- **39 derivable, 50 ikhtilāf (28 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 89/89 = 1.000, madhhab coverage 67/89 = 0.753. Q121 (custom specialising the general) carries eight of the residues: its reading takes specialisation for the qāʿida's unmarked third class (RQ-02).
+- **At integration**, four cases moved to derivable under round 2's rule, their positions differing on an antecedent fact, not on the reading: 127.f004 (whether compulsion excuses), 127.f006 (the record's own «جعلا له كالدافع أو … كالممسك»), 127.f008 (whether the holder is a cause the killing is built on), and 125.f007 (the only contrary a Shāfiʿī's «مقتضى مذهبكم», not a position within the madhhab). Two ledger entries went with them.
+- **Reconciliation:** 22 contradictions with 41 evidence items: 18 residues, 2 for the reading, 2 tawaqquf.
+- **Register questions** are listed in [`taarud-reconciliation.md`](taarud-reconciliation.md).
+
 **Coverage trend:**
 
 | Stage | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
@@ -511,6 +526,8 @@ Results on the round:
 | All, after lane A round 2 | 663 | 0.991 | 0.733 | 0 | 6 |
 | Lane A round 3 alone | 89 | 1.000 | 0.764 | 0 | 0 |
 | All, after lane A round 3 | 752 | 0.992 | 0.736 | 0 | 6 |
+| Lane A round 4 alone | 89 | 1.000 | 0.753 | 0 | 0 |
+| All, after lane A round 4 | 841 | 0.993 | 0.738 | 0 | 6 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 

@@ -226,6 +226,25 @@ All six resolve by tarjīḥ against their readings and join the worklist. 1.f00
 | 59.f005 | the question is the grade order itself (qiyās above jazm) | **open: RQ-03** |
 | 53.f009 | the subject of al-Furūʿ's «ولا يتصرف» | **open: RQ-04** |
 
+**Lane A, round 4** added 22 contradictions and 41 evidence items: 18 residues, 2 resolved for the reading and 2 tawaqquf. No jamʿ was attempted. The ledger stands at 232 entries and 568 active evidence items, with 19 jamʿ, 1 naskh, 199 tarjīḥ (134 residues) and 13 tawaqquf. The round's register questions went through the bank's procedure first (invariant 9):
+
+| Farʿ / qāʿida | Candidate farq, or the procedure applied | Outcome |
+|---|---|---|
+| 127.f004, f006, f008; 125.f007 | positions under the same facts | derivable (see takhrij.md) |
+| 127.f005 | the two riwāyas disagree on the same facts (holding and killing, both ʿudwān) | ikhtilāf stands; candidate farq: the madhhab keeps qawad for the killer and makes the holder's share a separate punishment |
+| 121 | the madhhab includes the instance where the sharʿ or the language names it, «تقديما للشرع واللغة»; the reading's side of the third class is an unmarked choice | farq candidate; **RQ-02** |
+| 124.f003 | Sharḥ al-Muntahā v03:p103, «ولأنها سبب الطلاق وسبب الحكم لا يجوز إخراجه من العموم بالتخصيص» (a cognate) | farq candidate (`addressee_is_occasion`) |
+| 126.f004, f005 | the text's own farq: an instance absent from intent against one present but unknown | farq candidate |
+| 128 | the state at the spread where the victim's status rises, at the injury where only the value falls; Ibn Rajab names no side | farq candidate; **RQ-02** |
+| 128.f003 | the witness's «لا» against the argument it opens | **RQ-05** |
+| 129 | «القود» extended to every non-liability condition (game, f006); `aqilaBears` grounded in al-Āmidī inside a farʿ | **RQ-06** |
+| 120.f001 | «المذهب عند المتأخرين» against «عند المتقدمين»: tashih against tashih, the Iqnāʿ's jazm breaks the tie | the later madhhab, as annotated |
+| 119.f001 | Ibn Rajab's takhrīj from Ibn ʿAqīl's ground is a position (`takhrij`) against al-Inṣāf's «بلا نزاع» | ikhtilāf stands, on the madhhab side |
+| 121.f007 | «بلا نزاع» is the aṣḥāb at large | `jazm`, as graded |
+| 121.f005, 128.f006 | a cognate or a reference back («الخلاف المتقدم») grades `qiyas` | as graded |
+| 128.f004 | al-Targhīb's derivation is a Ḥanbalī position against Ibn Rajab's «بالاتفاق» | ikhtilāf stands |
+| 119.f003, 124.f001 | the output is the same on either value of the unstated fact | nothing turns on it |
+
 **Left as residues, for want of a cited farq:**
 
 | Encoder | Residues / cases | Why no jamʿ |
