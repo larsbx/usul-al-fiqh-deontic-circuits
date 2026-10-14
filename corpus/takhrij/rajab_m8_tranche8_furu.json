@@ -194,12 +194,13 @@
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000",
-      "encoder": "cause_from_one_of_two",
+      "encoder": "cause_on_certainty",
       "class": "genuine_ikhtilaf",
       "facts": {
-        "harmless": true
+        "harmless": true,
+        "each_certain": true
       },
-      "expected": "each",
+      "expected": "neither",
       "positions": [
         {
           "who": "riwāya: both wash and do wuḍūʾ",
@@ -210,8 +211,16 @@
           "ruling": "neither"
         }
       ],
-      "matches_madhhab": false,
-      "note": "Two find semen (al-manī, «منيا») in a garment they sleep in, or hear a noise («صوتا»), not knowing from whom: two riwāyas: neither must wash (ghusl) or do wuḍūʾ, each certain of purity and doubting the ḥadath; or both must, the aṣl having certainly lapsed in one. No madhhab marked; Ibn Rajab later contrasts it with divorce (making both ṭalāqs fall in the crow taʿlīq, «إيقاع طلاقهما»), «بخلاف إيجاب الطهارة عليهما فإنه لا ضرر فيه»."
+      "matches_madhhab": true,
+      "note": "Two find semen (al-manī, «منيا») in a garment they sleep in, or hear a noise («صوتا»), not knowing from whom: two riwāyas: neither must wash (ghusl) or do wuḍūʾ, each certain of purity and doubting the ḥadath; or both must, the aṣl having certainly lapsed in one. No madhhab marked; Ibn Rajab later contrasts it with divorce (making both ṭalāqs fall in the crow taʿlīq, «إيقاع طلاقهما»), «بخلاف إيجاب الطهارة عليهما فإنه لا ضرر فيه».",
+      "revisit": {
+        "from_class": "genuine_ikhtilaf",
+        "from_encoder": "cause_from_one_of_two",
+        "closed_by": [
+          "rule:cause_on_certainty"
+        ],
+        "note": "Reconciled (jamʿ): each is certain of his own state and doubts only the breach, «متيقن للطهارة شاك في الحدث»; on that ground the first riwāya binds neither, the madhhab of al-Inṣāf, al-Furūʿ and Sharḥ al-Muntahā («فلا غسل على واحد»)."
+      }
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f001",

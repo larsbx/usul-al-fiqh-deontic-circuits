@@ -275,9 +275,9 @@
           "reason": "Source decision: Each co-owner pays fitr in proportion to his share. Encoder requires same_cost and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
-          "encoder": "cause_from_one_of_two",
+          "encoder": "performed_without_leave_owned",
           "disposition": "not_established",
-          "reason": "Source decision: Each co-owner pays fitr in proportion to his share. Encoder requires harmless and returns ['neither', 'each', 'lot', 'abstain']; the source does not establish this mapping to that decision. No facts are filled from silence."
+          "reason": "Source decision: Each co-owner pays fitr in proportion to his share («يؤدي كل واحد بحصته»). Encoder requires wilaya and distinct and returns [False, True] (Ibn Rajab 96, ownedDischarge); the source states neither, so the mapping is not established. No facts are filled from silence. Proposed after the routing index changed (problem register PR-28), in place of cause_from_one_of_two, which this unit no longer receives and whose review was likewise not_established."
         }
       ],
       "classification": "missing_rule",
