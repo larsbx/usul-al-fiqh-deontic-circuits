@@ -177,7 +177,7 @@ structure Rajab5 where
 structure Rajab9 where
   target : Option (Usul.Refinements.Prohibited) := none
 
-/-- Ibn Rajab 10 «الألفاظ المعتبرة في العبادات والمعاملات (منها) ما يعتبر لفظه ومعناه وهو ms012 القرآن لإعجازه بلفظه ومعناه، فلا تجوز الترجمة عنه بلغة أخرى.». Read by `wording_in_other_tongue`, `wording_need_not_learn`. -/
+/-- Ibn Rajab 10 «الألفاظ المعتبرة في العبادات والمعاملات (منها) ما يعتبر لفظه ومعناه وهو القرآن لإعجازه بلفظه ومعناه، فلا تجوز الترجمة عنه بلغة أخرى.». Read by `wording_in_other_tongue`, `wording_need_not_learn`. -/
 structure Rajab10 where
   meaningOnly : Option (Bool) := none
   able : Option (Bool) := none
@@ -196,7 +196,7 @@ structure Rajab12 where
 structure Rajab14 where
   harmless : Option (Bool) := none
 
-/-- Ibn Rajab 15 «إذا استصحبنا أصلا وأعملنا ظاهرا في طهارة شيء أو حله أو حرمته وكان لازم ذلك تغير أصل آخر يجب استصحابه أو ترك العمل بظاهر آخر ms020 يجب إعماله لم يلتفت إلى ذلك اللازم على الصحيح، ولذلك صور: منها) إذا استيقظ من نومه فوجد …». Read by `each_on_its_asl`. -/
+/-- Ibn Rajab 15 «إذا استصحبنا أصلا وأعملنا ظاهرا في طهارة شيء أو حله أو حرمته وكان لازم ذلك تغير أصل آخر يجب استصحابه أو ترك العمل بظاهر آخر يجب إعماله لم يلتفت إلى ذلك اللازم على الصحيح، ولذلك صور: منها) إذا استيقظ من نومه فوجد …». Read by `each_on_its_asl`. -/
 structure Rajab15 where
   separateMatters : Option (Bool) := none
 
@@ -305,7 +305,7 @@ structure Rajab46 where
 structure Rajab47 where
   contractLiability : Option (Bool) := none
 
-/-- Ibn Rajab 49 «القبض في العقود على قسمين: أحدهما: أن يكون من موجب العقد ومقتضاه كالبيع ms084 اللازم والرهن اللازم والهبة اللازمة والصداق وعوض الخلع فهذه العقود تلزم من غير قبض، وإنما القبض فيها من موجبات عقودها.». Read by `qabd_in_contracts`. -/
+/-- Ibn Rajab 49 «القبض في العقود على قسمين: أحدهما: أن يكون من موجب العقد ومقتضاه كالبيع اللازم والرهن اللازم والهبة اللازمة والصداق وعوض الخلع فهذه العقود تلزم من غير قبض، وإنما القبض فيها من موجبات عقودها.». Read by `qabd_in_contracts`. -/
 structure Rajab49 where
   qabdCompletes : Option (Bool) := none
 
@@ -343,7 +343,7 @@ structure Rajab56 where
 structure Rajab57 where
   withBar : Option (Bool) := none
 
-/-- Ibn Rajab 58 «من تعلق به الامتناع من فعل هو متلبس به فبادر إلى الإقلاع عنه، هل ms127 يكون إقلاعه فعلا للممنوع منه أو تركا له فلا يترتب عليه شيء من أحكامه؟». Read by `desisting_at_once`. -/
+/-- Ibn Rajab 58 «من تعلق به الامتناع من فعل هو متلبس به فبادر إلى الإقلاع عنه، هل يكون إقلاعه فعلا للممنوع منه أو تركا له فلا يترتب عليه شيء من أحكامه؟». Read by `desisting_at_once`. -/
 structure Rajab58 where
   foresaw : Option (Bool) := none
 
@@ -386,7 +386,7 @@ structure ShakkShartFuru extends ShakkShart where
 structure Rajab91 where
   propertyLike : Option (Bool) := none
 
-/-- Ibn Rajab 93 «من قبض مغصوبا من غاصبه ولم يعلم أنه مغصوب فالمشهور عن الأصحاب أنه بمنزلة الغاصب في جواز تضمينه ما كان الغاصب يضمنه من عين ومنفعة ثم إن كان القابض قد دخل على ضمان عين أو منفعة استقر ضمانها عليه ولم يرجع ms272 على الغاصب …». Read by `taker_from_usurper`. -/
+/-- Ibn Rajab 93 «من قبض مغصوبا من غاصبه ولم يعلم أنه مغصوب فالمشهور عن الأصحاب أنه بمنزلة الغاصب في جواز تضمينه ما كان الغاصب يضمنه من عين ومنفعة ثم إن كان القابض قد دخل على ضمان عين أو منفعة استقر ضمانها عليه ولم يرجع على الغاصب …». Read by `taker_from_usurper`. -/
 structure Rajab93 where
   enteredOnLiability : Option (Bool) := none
 
@@ -428,7 +428,7 @@ structure Sadi41 where
   actsSameKind : Option (Bool) := none
   samePurpose : Option (Bool) := none
 
-/-- al-Saʿdī Q45 «من لا يعتبر رضاه في عقد أو فسخ لا يعتبر علمه»; Ibn Rajab 63 «وهي أن من لا يعتبر رضاه لفسخ عقد أو حله لا يعتبر علمه به ويندرج تحت ذلك مسائل: منها الطلاق ومنها الخلع فإنه يصح مع ms143 الأجنبي على المذهب سواء قيل هو فسخ أو طلاق ولنا وجه آخر أنه لا يصح مع الأجنبي إذا قلنا إنه فسخ …». Read by `knowledge`. -/
+/-- al-Saʿdī Q45 «من لا يعتبر رضاه في عقد أو فسخ لا يعتبر علمه»; Ibn Rajab 63 «وهي أن من لا يعتبر رضاه لفسخ عقد أو حله لا يعتبر علمه به ويندرج تحت ذلك مسائل: منها الطلاق ومنها الخلع فإنه يصح مع الأجنبي على المذهب سواء قيل هو فسخ أو طلاق ولنا وجه آخر أنه لا يصح مع الأجنبي إذا قلنا إنه فسخ …». Read by `knowledge`. -/
 structure Sadi45 where
   consentRequired : Option (Bool) := none
 
@@ -451,5 +451,211 @@ structure Sadi59 where
   nounForm : Option (Usul.Sadi.NounForm) := none
   context : Option (Usul.Sadi.Context) := none
   ahd : Option (Bool) := none
+
+/-! ## Ibn Rajab's qawāʿid read by the parallel shards (RajabA1–A12) -/
+
+/-- Ibn Rajab 53 «من تصرف في عين تعلق بها حق لله تعالى أو لآدمي معين إن كان الحق مستقرا فيها بمطالبة من له الحق بحقه أو يأخذه بحقه لم ينفذ التصرف ولم يوجد سوى تعلق الحق لاستيفائه منها صح التصرف على ظاهر المذهب، وقياس قول أبي بكر لا يصح …». Read by `attached_right_disposal`. -/
+structure Rajab53 where
+  demanded : Option (Bool) := none
+  fixedInAyn : Option (Bool) := none
+
+/-- Ibn Rajab 60 «التفاسخ في العقود الجائزة متى تضمن ضررا على أحد المتعاقدين أو غيرهما ممن له تعلق بالعقد لم يجز ولم ينفذ إلا أن يمكن استدراك الضرر بضمان أو نحوه فيجوز على ذلك الوجه.». Read by `rescission_harm`. -/
+structure Rajab60 where
+  harm : Option (Bool) := none
+  remediable : Option (Bool) := none
+
+/-- Ibn Rajab 67 «من استحق الرجوع بعين أو دين بفسخ أو غيره وكان قد رجع إليه ذلك الحق بهبة أو إبراء ممن يستحق عليه الرجوع فهل يستحق الرجوع ببدله أم لا؟». Read by `recourse_after_return`. -/
+structure Rajab67 where
+  returnedByGift : Option (Bool) := none
+
+/-- Ibn Rajab 69 «العقد الوارد على عمل معين إما أن يكون لازما ثابتا في الذمة بعوض كالإجارة فالواجب تحصيل ذلك العمل ولا يتعين أن يعمله المعقود معه إلا بشرط أو قرينة تدل عليه وإما أن يكون غير لازم وإنما يستفاد التصرف فيه بمجرد الإذن …». Read by `delegating_work`. -/
+structure Rajab69 where
+  bindingQ69 : Option (Bool) := none
+  personalRequired : Option (Bool) := none
+  permissionIndicated : Option (Bool) := none
+
+/-- Ibn Rajab 71 «فيما يجوز الأكل من الأموال بغير إذن مستحقيها وهي نوعان: مملوك تعلق به حق الغير ومملوك للغير.». Read by `eating_without_permission`. -/
+structure Rajab71 where
+  necessityQ71 : Option (Bool) := none
+  wardWilaya : Option (Bool) := none
+  compensatedOtherwise : Option (Bool) := none
+  unguardedCraved : Option (Bool) := none
+
+/-- Ibn Rajab 72 «اشتراط النفقة والكسوة في العقود يقع على وجهين معاوضة وغير معاوضة فأما المعاوضة فتقع في العقود اللازمة ويملك فيها الطعام والكسوة كما يملك غيرهما من الأموال المعاوض بها فإن وقع التفاسخ قبل انقضاء المدة رجع بما عجل منها …». Read by `nafaqa_stipulated_in_contract`, `nafaqa_taken_owned`. -/
+structure Rajab72 where
+  muawada : Option (Bool) := none
+  bindingContractQ72 : Option (Bool) := none
+  spentInPurpose : Option (Bool) := none
+
+/-- Ibn Rajab 73 «اشتراط نفع أحد المتعاقدين في العقد على ضربين: أحدهما: أن يكون استئجارا له مقابلا بعوض فيصح على ظاهر المذهب كاشتراط المشتري على البائع خياطة الثوب أو قصارته أو حمل الحطب ونحوه، ولذلك يزداد به الثمن.». Read by `benefit_condition_against_compensation`. -/
+structure Rajab73 where
+  againstCompensation : Option (Bool) := none
+
+/-- Ibn Rajab 74 «فيمن يستحق العوض عن عمل بغير شرط وهو نوعان: أحدهما: أن يعمل العمل ودلالة حاله تقتضي المطالبة بالعوض.». Read by `wage_without_stipulation`. -/
+structure Rajab74 where
+  professional : Option (Bool) := none
+  publicOrRescue : Option (Bool) := none
+
+/-- Ibn Rajab 77 «من اتصل ملكه بملك غيره متميزا عنه وهو تابع له ولم يمكن فصله منه بدون ضرر يلحقه وفي إبقائه على الشركة ضرر لم يفصله مالكه فلمالك الأصل أن يتملكه بالقيمة من مالكه ويجبر المالك على القبول.». Read by `attached_takeover_at_value`. -/
+structure Rajab77 where
+  wrongful : Option (Bool) := none
+  separableWithoutHarm : Option (Bool) := none
+
+/-- Ibn Rajab 78 «من أدخل النقص على ملك غيره لاستصلاح تملكه وتخلصه من ملك غيره فإن لم يكن ممن دخل النقص عليه بتفريط باشتغال ملكه بملك غيره فالضمان على من أدخل النقص، وإن كان منه تفريط فلا ضمان على من أدخل النقص وكذا إن وجد ممن دخل النقص …». Read by `rescue_loss_liability`. -/
+structure Rajab78 where
+  causesLoss : Option (Bool) := none
+  suffererNegligent : Option (Bool) := none
+  emptyingPermitted : Option (Bool) := none
+
+/-- Ibn Rajab 79 «الزرع النابت في أرض الغير بغير إذن صحيح أقسام] [القسم الأول أن يزرع عدوانا محضا غير مستند إلى إذن بالكلية] : القسم الأول أن يزرع عدوانا محضا غير مستند إلى إذن بالكلية، وهو زرع الغاصب فالمذهب أن المالك إن أدركه …». Read by `crop_without_valid_permission`. -/
+structure Rajab79 where
+  validPermission : Option (Bool) := none
+
+/-- Ibn Rajab 80 «ما تكرر حمله من أصول البقول والخضراوات هل هو ملحق بالزرع أو بالشجر] ؟». Read by `repeat_bearing_roots_as_trees`. -/
+structure Rajab80 where
+  repeatedBearing : Option (Bool) := none
+
+/-- Ibn Rajab 81 «النماء المتصل في الأعيان المملوكة العائدة إلى من انتقل الملك عنه بالمفسوخ تتبع الأعيان على ظاهر المذهب عند أصحابنا والمنصوص عن أحمد أنه لا يتبع وهو الذي ذكره الشيرازي في المبهج، ولم يحك فيه خلافا وهو اختيار ابن عقيل صرح …». Read by `attached_growth_follows`, `cut_sale_left_to_ripen`. -/
+structure Rajab81 where
+  revertsToTransferor : Option (Bool) := none
+  securityOrLiability : Option (Bool) := none
+  leftUntilRipe : Option (Bool) := none
+
+/-- Ibn Rajab 90 «الأيدي المستولية على مال الغير بغير إذنه ثلاثة يد يمكن أن يثبت باستيلائها الملك فينتفي الضمان عما يستولي عليه سواء حصل الملك به أو لم يحصل ويد لا يثبت لها الملك وينتفي عنها الضمان ويد لا يثبت لها الملك ويثبت عليها …». Read by `seizing_hand_liable`. -/
+structure Rajab90 where
+  canOwnBySeizure : Option (Bool) := none
+  transgressing : Option (Bool) := none
+
+/-- Ibn Rajab 92 «هل تثبت يد الضمان مع ثبوت يد المالك أم لا؟». Read by `hand_with_owner_liable`. -/
+structure Rajab92 where
+  ownerControlRemoved : Option (Bool) := none
+
+/-- Ibn Rajab 94 «قبض مال الغير من يد قابضه بحق بغير إذن مالكه إن كان يجوز له إقباضه فهو أمانة عند الثاني إن كان الأول أمينا وإلا فلا، وإن لم يك إقباضه جائزا فالضمان عليهما، ويتخرج وجه آخر ألا يضمن غير الأول ويندرج تحت ذلك صور: …». Read by `second_receiver_liable`. -/
+structure Rajab94 where
+  handoverPermitted : Option (Bool) := none
+  firstTrustee : Option (Bool) := none
+
+/-- Ibn Rajab 95 «من أتلف مال غيره وهو يظن أنه له أو تصرف فيه يظن لنفسه ولاية عليه ثم يتبين خطأ ظنه فإن كان مستندا إلى سبب ظاهر من غيره ثم تبين خطأ المتسبب أو أقر بتعمده للجناية ضمن المتسبب وإن كان مستندا إلى اجتهاد مجرد كمن دفع مالا تحت …». Read by `error_actor_liable`. -/
+structure Rajab95 where
+  externalCause : Option (Bool) := none
+  basisVoid : Option (Bool) := none
+  rulingOverturned : Option (Bool) := none
+  asOwner : Option (Bool) := none
+  negligentQ95 : Option (Bool) := none
+
+/-- Ibn Rajab 96 «من وجب عليه أداء عين مال فأداه عنه بغير إذنه هل تقع موقعه وينتفي الضمان عن المؤدي؟». Read by `performed_without_leave_not_owned`, `performed_without_leave_owned`. -/
+structure Rajab96 where
+  recipientDetermined : Option (Bool) := none
+  wilaya : Option (Bool) := none
+  distinct : Option (Bool) := none
+
+/-- Ibn Rajab 97 «من بيده مال أو في ذمته دين يعرف مالكه ولكنه غائب يرجى قدومه، فليس له التصرف فيه بدون إذن الحاكم إلا أن يكون تافها فله الصدقة به عنه، نص عليه في مواضع، وإن كان قد آيس من قدومه بأن مضت مدة يجوز فيها أن تزوج امرأته ويقسم …». Read by `dispose_without_judge`. -/
+structure Rajab97 where
+  ownerKnown : Option (Bool) := none
+  trivial : Option (Bool) := none
+  despaired : Option (Bool) := none
+
+/-- Ibn Rajab 98 «من ادعى شيئا ووصفه دفع إليه بالصفة إذا جهل ربه ولم يثبت عليه يد من جهة مالكه وإلا فلا.». Read by `handover_by_description`. -/
+structure Rajab98 where
+  described : Option (Bool) := none
+  ownerUnknown : Option (Bool) := none
+  ownerHand : Option (Bool) := none
+
+/-- Ibn Rajab 99 «ما تدعوا الحاجة إلى الانتفاع به من الأعيان ولا ضرر في بذله لتيسيره وكثرة وجوده أو المنافع المحتاج إليها يجب بذله مجانا بغير عوض في الأظهر ويندرج تحت ذلك مسائل: (منها) الهر لا يجوز بيعه على أصح الروايتين وثبت في صحيح …». Read by `free_bestowal_of_needed_ayn`, `free_bestowal_of_needed_benefit`. -/
+structure Rajab99 where
+  needed : Option (Bool) := none
+  harmlessQ99 : Option (Bool) := none
+
+/-- Ibn Rajab 100 «الواجب بالنذر.». Read by `vowed_as_shar_obligation`. -/
+structure Rajab100 where
+  sharRuling : Option (Bool) := none
+  mandubRuling : Option (Bool) := none
+
+/-- Ibn Rajab 101 «من خير بين شيئين وأمكنه الإتيان بنصفيهما معا فهل يجزئه أم لا؟». Read by `split_halves_suffice`. -/
+structure Rajab101 where
+  commonUnit : Option (Bool) := none
+
+/-- Ibn Rajab 102 «من أتى بسبب يفيد الملك أو الحل أو يسقط الواجبات على وجه محرم وكان مما تدعو النفوس إليه ألغى ذلك السبب وصار وجوده كالعدم ولم يترتب عليه أحكامه ويتخرج على ذلك مسائل كثيرة: منها) الفار من الزكاة قبل تمام الحول بتنقيص …». Read by `forbidden_cause_voided`, `hastened_right_forfeited`. -/
+structure Rajab102 where
+  forbiddenManner : Option (Bool) := none
+  soulsDrawn : Option (Bool) := none
+  hastenedForbidden : Option (Bool) := none
+
+/-- Ibn Rajab 104 «الرضا بالمجهول قدرا أو جنسا أو وصفا هل هو رضا معتبر لازم؟». Read by `unknown_consent_binds`. -/
+structure Rajab104 where
+  vaguenessAdmitted : Option (Bool) := none
+
+/-- Ibn Rajab 105 «في إضافة الإنشاءات والإخبارات إلى المبهمات: أما الإنشاءات فمنها العقود وهي أنواع: أحدها، عقود التمليكات المحضة كالبيع والصلح بمعناه وعقود التوثقات كالرهن والكفالة والتبرعات اللازمة بالعقد أو بالقبض بعده كالهبة والصدقة.». Read by `lot_distinguishes_hidden_entitled`, `shared_name_insha_valid`, `vague_insha_valid`, `vague_report_accepted`. -/
+structure Rajab105 where
+  specificInFact : Option (Bool) := none
+  vagueValid : Option (Bool) := none
+  intendedSpecific : Option (Bool) := none
+  witnessingRequired : Option (Bool) := none
+  bindingTransfer : Option (Bool) := none
+  equalMixed : Option (Bool) := none
+  religiousOrAgainstSelf : Option (Bool) := none
+
+/-- Ibn Rajab 107 «تمليك المعدوم، والإباحة له نوعان: أحدهما: أن يكون بطريق الأصالة فالمشهور أنه لا يصح.». Read by `maadum_grant_valid`. -/
+structure Rajab107 where
+  byOrigin : Option (Bool) := none
+  explicitInclusion : Option (Bool) := none
+  objectEntails : Option (Bool) := none
+
+/-- Ibn Rajab 108 «ما جهل وقوعه مترتبا أو متقارنا هل يحكم عليه بالتقارن أو بالتعاقب؟». Read by `unknown_order_judged_sequential`. -/
+structure Rajab108 where
+  knownSimultaneous : Option (Bool) := none
+  knownSequential : Option (Bool) := none
+
+/-- Ibn Rajab 109 «المنع من واحد مبهم من أعيان أو معين مشتبهة بأعيان يؤثر الاشتباه فيها المنع بمنع التصرف في تلك الأعيان قبل تمييزه، والمنع من الجمع يمنع من التصرف في القدر الذي يحصل به الجمع خاصة، فإن حصل الجمع دفعة واحدة منع من …». Read by `combination_bars_its_amount`, `common_amount_general`, `simultaneous_combination_voids`, `vague_one_bars_all`. -/
+structure Rajab109 where
+  combiningAmount : Option (Bool) := none
+  barsCommonAmount : Option (Bool) := none
+  hasPrecedence : Option (Bool) := none
+  confusionEffective : Option (Bool) := none
+  distinguished : Option (Bool) := none
+
+/-- Ibn Rajab 110 «من ثبت له أحد أمرين فإن اختار أحدهما سقط الآخر، وإن أسقط أحدهما أثبت الآخر، وإن امتنع منهما فإن كان امتناعه ضررا على غيره استوفى له الحق الأصلي الثابت له إذا كان ماليا، وإن لم يكن حقا ثابتا سقط وإن كان الحق غير مالي …». Read by `other_option_stands`, `refusal_compelled_to_choose`, `refusal_exacted_for_him`, `refusal_right_falls`, `right_on_refuser_exacted`, `substitute_refusal_judged_by_original`. -/
+structure Rajab110 where
+  choseOne : Option (Bool) := none
+  harmsOther : Option (Bool) := none
+  financialQ110 : Option (Bool) := none
+  established : Option (Bool) := none
+  rightOnHim : Option (Bool) := none
+  exactable : Option (Bool) := none
+  refusedSubstitute : Option (Bool) := none
+
+/-- Ibn Rajab 111 «إذا كان الواجب بسبب واحد أحد شيئين فقامت حجة بها أحدهما دون الآخر فهل يثبت أم لا؟». Read by `alternative_proven_alone`. -/
+structure Rajab111 where
+  proofEstablishesCause : Option (Bool) := none
+
+/-- Ibn Rajab 112 «إذا اجتمع للمضطر محرمان كل منهما لا يباح بدون الضرورة وجب تقديم أخفهما مفسدة وأقلهما ضررا ; لأن الزيادة لا ضرورة إليها فلا يباح، ويتخرج على ذلك مسائل: (منها) إذا وجد المحرم صيدا وميتة فإنه يأكل الميتة نص عليه أحمد ; لأن …». Read by `necessity_spares_lighter`. -/
+structure Rajab112 where
+  heavier : Option (Bool) := none
+
+/-- Ibn Rajab 113 «إذا وجدنا جملة ذات أعداد موزعة على جملة أخرى، فهل يتوزع أفراد الجمل الموزعة على أفراد الأخرى أو كل فرد على مجموع الجملة الأخرى، هذه على قسمين: الأول أن توجد قرينة تدل على تعيين أحد الأمرين فلا خلاف في ذلك.». Read by `distribution_each_over_whole`. -/
+structure Rajab113 where
+  qarinaOneToOne : Option (Bool) := none
+
+/-- Ibn Rajab 114 «إطلاق الشركة هل يتنزل على المناصفة أو هو مبهم يفتقر إلى تفسير؟». Read by `unqualified_sharika_halves`. -/
+structure Rajab114 where
+  isIqrar : Option (Bool) := none
+
+/-- Ibn Rajab 115 «الحقوق المشتركة بين اثنين فصاعدا نوعان: أحدهما: ما يقع استحقاق كل واحد بانفراده لجميع الحق ويتزاحمون فيه عند الاجتماع.». Read by `shared_right_accrues_to_rest`. -/
+structure Rajab115 where
+  eachEntitledWhole : Option (Bool) := none
+
+/-- Ibn Rajab 116 «من استند تملكه إلى سبب مستقر لا يمكن إبطاله وتأخر حصول الملك عنه فهل ينعطف إحكام ملكه إلى أول وقت انعقاد السبب ويثبت إحكامه من حينئذ أم لا يثبت إلا من حين ثبوت الملك؟». Read by `ownership_relates_back`, `worship_ruled_from_start`. -/
+structure Rajab116 where
+  settledCause : Option (Bool) := none
+  conditionWithinTime : Option (Bool) := none
+
+/-- Ibn Rajab 117 «كل عقد معلق يختلف باختلاف حالين إذا وجد تعليقه في أحدهما ووقوعه في الآخر فهل يغلب عليه جانب التعليق أو جانب الوقوع في المسألة قولان إلا أن يقتضي اعتبار أحدهما إلى ما هو ممتنع شرعا فيلغي ويتفرع على ذلك مسائل: (منها) …». Read by `occurrence_state_governs`. -/
+structure Rajab117 where
+  suspensionBarred : Option (Bool) := none
+  occurrenceBarred : Option (Bool) := none
+
+/-- Ibn Rajab 118 «تعليق فسخ العقد وإبطاله لوجوده إن كان فيه مقصود معتبر شرعا صح وإلا لم يصح إذ لو صح لصار العقد غير مقصود في نفسه هذا مقتضى قواعد المذهب، ويتخرج على ذلك مسائل: (منها) إذا علق الطلاق بالنكاح فالمذهب المنصوص عن أحمد …». Read by `cancel_on_existence_valid`. -/
+structure Rajab118 where
+  legitimatePurpose : Option (Bool) := none
 
 end Usul.Typing.Qaida

@@ -125,6 +125,13 @@ Precedents:
       - Of the 9 cases that named the rule, 7 now rank it in the top 3 (6 were unrouted before); 348122's two cases settle none of its fields.
       - With tranche-named rules counted, recall@5 is 0.74 (from 0.69).
       - Modern texts rarely settle whether a direct act arose from another's cause: `arising_from_sabab` was stated twice in 53 answers.
+    - **The shards' encoders typed (2026-10-14).** The parallel shards RajabA1–A12 added 55 encoders on Ibn Rajab 53–118, typed the same way: 38 new qāʿida types, Lean-inferred fact types, statements quoted from the records. That makes 160 encoders over 124 types.
+      - Six names collide with unrelated qawāʿid's fields and are qualified by qāʿida number: `bindingQ69`, `necessityQ71`, `bindingContractQ72`, `negligentQ95`, `harmlessQ99`, `financialQ110`.
+      - Three look like notions already typed and await review, like the five decided earlier:
+        - Ibn Rajab 95's negligence against 6's negligence in inquiry;
+        - 97's `despaired` against 106's `despair`;
+        - 98's `owner_unknown` against 106's `unknown`.
+      - Typed routing on the IslamQA set is unchanged. The lexical baseline, refitted over 160 encoders, falls to 0.00 / 0.24 / 0.33.
     - **Next:** repeat T3 on classical units (mutūn bābs, Masāʾil entries), where the routing index's lexical profiles were strong. Then repeat T3 on classical units (mutūn bābs, Masāʾil entries), where the routing index's lexical profiles were strong.
 - **P0.6 done, as a ranker:** `python -m usul_corpus routing` writes `corpus/routing/index.json`. Profiles are derived from the bank's evidence, never written: each of the 100 encoders gets the TF-IDF centroid of the records its annotated cases rest on plus its own qawāʿid, with words found in over 10 % of the evidence dropped. Per encoder the index gives its case support, its lexicon (the heaviest profile words) and its nearest matn units.
   - **Held-out cases** (5 folds by record-id hash, 461 cases): the true encoder is in the top 1 / 5 / 10 for 0.61 / 0.86 / 0.91 of cases, against 0.08 / 0.29 / 0.37 for ranking encoders by frequency.
@@ -146,10 +153,10 @@ Every shard works on its own branch or worktree off **one pinned base commit**, 
 
 | Lane | Shard key | Does (steps) | Size |
 |---|---|---|---|
-| **A Readings × Ibn Rajab** | ≈5 qawāʿid per shard | S0–S5 on the remaining qawāʿid, exactly as tranches 1–10 | 745 furūʿ / 87 qawāʿid → ≈18 shards; 6 qawāʿid first need segmentation review |
+| **A Readings × Ibn Rajab** | ≈5 qawāʿid per shard | S0–S5 on the remaining qawāʿid, exactly as tranches 1–10 | 745 furūʿ / 87 qawāʿid → ≈18 shards; 6 qawāʿid first need segmentation review (rounds 1–3 done: 12 shards, 38 qawāʿid, 269 furūʿ) |
 | **B Encoder-routed takhrīj** | one shard per encoder (× source group) | retrieve R2 units by the routing index; S2–S3 against that encoder; a case no encoder fits is recorded as `missing_rule` with its `needs` and not forced | 100 encoders; start with the 20 with the most ikhtilāf, so the cases feed lanes C and E |
-| **C Taṣḥīḥ import** | one shard per ledger entry group | S7: verbatim taṣḥīḥ from R3 for the open residues: the 67 tarjīḥ outcomes that go against their reading (across 29 encoders) and the 8 tawaqquf; graded evidence only | 75 entries → ≈8 shards by encoder group |
-| **D Side verification** | one shard per tranche file | S7: check every on-madhhab annotation against al-Inṣāf and the muʿtamad; a failure enters 𝔏 | 12 suite files |
+| **C Taṣḥīḥ import** | one shard per ledger entry group | S7: verbatim taṣḥīḥ from R3 for the open residues: the 73 tarjīḥ outcomes that go against their reading (across 32 encoders) and the 9 tawaqquf; graded evidence only | 82 entries → ≈8 shards by encoder group |
+| **D Side verification** | one shard per tranche file | S7: check every on-madhhab annotation against al-Inṣāf and the muʿtamad; a failure enters 𝔏 with a `side_check` | **done** for all 12 suites (tranches 10–11 in their own PRs; tranches 1–9 and al-Saʿdī's: 100 cases, 6 failed) |
 | **E Position inventories** | one shard per bāb | R4: attributed positions and ijmāʿ reports for the 260 ikhtilāf cases; additions go to *P* as `revisions`, never edits | ≈10 shards by bāb |
 | **F Segmentation** | one shard per R2/R3 text | P0.5 applied per text, with receipts; prerequisite for B, C and E on that text | ≈30 texts |
 

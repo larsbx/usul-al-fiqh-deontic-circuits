@@ -21,3 +21,4 @@ import Usul.Seam
 import Usul.Typing
 import Usul.Typing.Encoders
 import Usul.Typing.Relations
+import Usul.DerivedTypes
