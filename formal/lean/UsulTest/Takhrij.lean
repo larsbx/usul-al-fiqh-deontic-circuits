@@ -13,6 +13,12 @@ import Usul
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061.f003 (derivable)
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
+-- kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00518 (derivable)
+#guard (Usul.Sadi.useSubstitute false) == true
+-- ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00176 (derivable)
+#guard (Usul.Sadi.useSubstitute false) == true
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00111 (derivable)
+#guard (Usul.Readings.RajabA2.wageWithoutStipulation true false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f001 (derivable)
 #guard (Usul.Refinements.errorExcused false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f002 (derivable)

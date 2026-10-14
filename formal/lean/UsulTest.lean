@@ -11,3 +11,5 @@ import UsulTest.Reconcile
 import UsulTest.FatawaBank
 import UsulTest.FatawaTakhrij
 
+
+import UsulTest.R2Sample1Semantic

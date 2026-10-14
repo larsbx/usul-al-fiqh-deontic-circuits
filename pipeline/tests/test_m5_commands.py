@@ -56,8 +56,10 @@ def test_all_six_original_gaps_are_unchanged_and_the_report_counts_live_annotati
     cases = takhrij.load(CORPUS)
     report = takhrij.report(cases)
     gaps = {c["far"]: m5.case_sha256(c) for c in cases if c["class"] in takhrij.GAPS}
-    assert gaps == ORIGINAL_GAP_CASE_SHA256
-    assert report["gaps_open"] == len(ORIGINAL_GAP_CASE_SHA256) == 6
+    # Pin the original M5 obligations; later source-grounded tranches may add distinct gaps.
+    assert {uid: gaps[uid] for uid in ORIGINAL_GAP_CASE_SHA256} == ORIGINAL_GAP_CASE_SHA256
+    assert len(ORIGINAL_GAP_CASE_SHA256) == 6
+    assert report["gaps_open"] == sum(bool(c.get("needs")) for c in cases)
     assert report["total"] == len(cases)
     assert report["classes"].get("encoding_error", 0) == 0
     assert not {f["id"] for f in _plan()["fixtures"]} & {c["far"] for c in cases}

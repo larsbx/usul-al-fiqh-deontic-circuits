@@ -15,6 +15,7 @@
     "lock.json": "537ea7c7953915706464de801e272bcc60aee93b72898dcead585a68f7020931",
     "records/openiti-rajab-shamela21730.jsonl": "f9cf2452d9cc5b3d9c064eb020b4cd0c6ee00e0dbd06eed8e5f1d821cd06b44c",
     "takhrij/dalala_furu.json": "fe691a7fe3ea277505aa97a3af440a48e88397584164804c11aa13a06808c96f",
+    "takhrij/r2_sample1_lane_b.json": "54c6127cfd4db79bafb81e9d1798f708fe067c474bf778e06c76c771bc7b7c85",
     "takhrij/rajab_m8_furu.json": "e8f5610f227db40d88cc8648fc721f2d3ee65d280425f2c138f4bcd23a592539",
     "takhrij/rajab_m8_q127_furu.json": "9368dd6f954e8b6b40c1b4d9da5a9604298f40dcf0fde51f54eecde890a827b9",
     "takhrij/rajab_m8_rajab_a10_furu.json": "d9a85400d4bff7bb8ceb4987478ec9f4614c44dd43f282d08d6d376d3d4a9838",
@@ -288,19 +289,19 @@
     }
   },
   "aggregate_report": {
-    "total": 761,
+    "total": 801,
     "classes": {
-      "derivable": 321,
+      "derivable": 324,
       "genuine_ikhtilaf": 433,
-      "missing_fact": 1,
-      "missing_rule": 5,
+      "missing_fact": 3,
+      "missing_rule": 40,
       "segmentation_error": 1
     },
-    "coverage": 0.992,
-    "madhhab_coverage": 0.736,
+    "coverage": 0.946,
+    "madhhab_coverage": 0.703,
     "encoding_error": 0,
     "ikhtilaf_matching_madhhab": 238,
-    "gaps_open": 6,
+    "gaps_open": 43,
     "revisited": 37
   },
   "tranche3_report": {

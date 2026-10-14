@@ -1,0 +1,187 @@
+{
+  "status": "candidate",
+  "provenance": "Source-grounded lane B evidence queue; deliberately not entries/ because reconcile.check requires an expressible genuine_ikhtilaf case.",
+  "entries": [
+    {
+      "unit": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m01212",
+      "locator": "src:openiti-kawsaj-masailahmad-shamela3125/v04:p1857#m01212",
+      "unit_sha256": "61d76c39ffd91509a7d2aa561ccd8144b1a8d61ee5b9b1051593d6c1d2265f76",
+      "source_sha256": "057fd68b59ab11f7b6fc13c16aaa41773d49ebe8a86ddc3275586af94b7ee267",
+      "positions": [
+        {
+          "who": "Sufyan (reported)",
+          "ruling": "A triple divorce removes the stated breach condition."
+        },
+        {
+          "who": "Ahmad; Ishaq agrees",
+          "ruling": "Triple and single are alike: the condition persists until breach."
+        }
+      ],
+      "resolution": "pending_vocabulary",
+      "note": "Attributed source positions retained. Their legal outputs are not in the selected encoder domain; no formal tarjih or madhhab choice is asserted. OathBody models flows, not persistence across divorce. Sufyan's reported triple-divorce cancellation must remain attributed.",
+      "evidence": [
+        {
+          "position": 0,
+          "who": "Sufyan (reported)",
+          "excerpt_ar": "وإن1 سمى ثلاثا يهدم ذاك",
+          "ref": "src:openiti-kawsaj-masailahmad-shamela3125/v04:p1857",
+          "admission": "attribution_only_no_hadith_grade_or_later_tashih_asserted"
+        },
+        {
+          "position": 1,
+          "who": "Ahmad; Ishaq agrees",
+          "excerpt_ar": "ما لم يحنث فإن الحنث عليه قائم2",
+          "ref": "src:openiti-kawsaj-masailahmad-shamela3125/v04:p1857",
+          "admission": "attribution_only_no_hadith_grade_or_later_tashih_asserted"
+        }
+      ]
+    },
+    {
+      "unit": "harb.masail.openiti_harb_masail_shamela12527.m00100",
+      "locator": "src:openiti-harb-masail-shamela12527/v01:p314#m00100",
+      "unit_sha256": "f3994d2cf40e635c1552f8a354528118d2e92359df31d957d3a5318fba0dc16e",
+      "source_sha256": "148f34773a2038c1d64924a34cbd56709ad12d4bb289d28d2c3f005e84dc4d4b",
+      "positions": [
+        {
+          "who": "Ishaq",
+          "ruling": "Valid seclusion entails full mahr, subject to stated impediments."
+        },
+        {
+          "who": "Ibn Masud (reported)",
+          "ruling": "Half mahr until intercourse, even if seated between her legs."
+        },
+        {
+          "who": "Ibn Abbas (reported)",
+          "ruling": "Half mahr until seclusion."
+        }
+      ],
+      "resolution": "pending_vocabulary",
+      "note": "Attributed source positions retained. Their legal outputs are not in the selected encoder domain; no formal tarjih or madhhab choice is asserted. Half/full outputs in concurrentShare concern concurrent causes, not khalwa. Preserve reported Ibn Masud and Ibn Abbas distinctions; do not collapse the evidence into a single mahr rule.",
+      "evidence": [
+        {
+          "position": 0,
+          "who": "Ishaq",
+          "excerpt_ar": "لأن الخلوة توجب المهر بالسنة",
+          "ref": "src:openiti-harb-masail-shamela12527/v01:p314",
+          "admission": "attribution_only_no_hadith_grade_or_later_tashih_asserted"
+        },
+        {
+          "position": 1,
+          "who": "Ibn Masud (reported)",
+          "excerpt_ar": "لها نصف الصداق ما لم يجامعها، ولو جلس بين رجليها",
+          "ref": "src:openiti-harb-masail-shamela12527/v01:p315",
+          "admission": "attribution_only_no_hadith_grade_or_later_tashih_asserted"
+        },
+        {
+          "position": 2,
+          "who": "Ibn Abbas (reported)",
+          "excerpt_ar": "لها نصف الصداق ما لم يخل معها",
+          "ref": "src:openiti-harb-masail-shamela12527/v01:p316",
+          "admission": "attribution_only_no_hadith_grade_or_later_tashih_asserted"
+        }
+      ]
+    },
+    {
+      "unit": "harb.masail.openiti_harb_masail_shamela12527.m00323",
+      "locator": "src:openiti-harb-masail-shamela12527/v02:p618#m00323",
+      "unit_sha256": "7fcb1e252b8ff1e5a8a0e237767415facee39058737dff66cede5655e82f69ba",
+      "source_sha256": "148f34773a2038c1d64924a34cbd56709ad12d4bb289d28d2c3f005e84dc4d4b",
+      "positions": [
+        {
+          "who": "Ahmad",
+          "ruling": "Without illness or other cause, a year from cessation: nine months plus three."
+        },
+        {
+          "who": "Unspecified people (قوم)",
+          "ruling": "Wait indefinitely until menstruation returns."
+        }
+      ],
+      "resolution": "pending_vocabulary",
+      "note": "Attributed source positions retained. Their legal outputs are not in the selected encoder domain; no formal tarjih or madhhab choice is asserted. Excused mistakes do not calculate idda. Preserve the unattributed contrary indefinite-waiting position without inventing its school.",
+      "evidence": [
+        {
+          "position": 0,
+          "who": "Ahmad",
+          "excerpt_ar": "فإن كان ارتفع حيضها من غير علة ولا مرض فإنها تعتد سنة",
+          "ref": "src:openiti-harb-masail-shamela12527/v02:p618",
+          "admission": "attribution_only_no_hadith_grade_or_later_tashih_asserted"
+        },
+        {
+          "position": 1,
+          "who": "Unspecified people (قوم)",
+          "excerpt_ar": "تجلس أبدا حتى يعاودها الدم",
+          "ref": "src:openiti-harb-masail-shamela12527/v02:p618",
+          "admission": "attribution_only_no_hadith_grade_or_later_tashih_asserted"
+        }
+      ]
+    },
+    {
+      "unit": "harb.masail.openiti_harb_masail_shamela12527.m00390",
+      "locator": "src:openiti-harb-masail-shamela12527/v02:p747#m00390",
+      "unit_sha256": "917ac75d2f2c5803cdf08886e589f9689b06719ebb3cb6cf0bda3b3e3cbd50a1",
+      "source_sha256": "148f34773a2038c1d64924a34cbd56709ad12d4bb289d28d2c3f005e84dc4d4b",
+      "positions": [
+        {
+          "who": "Ahmad",
+          "ruling": "After intercourse following manumission, no option whether informed or uninformed."
+        },
+        {
+          "who": "Sufyan",
+          "ruling": "If uninformed she may swear and obtain the option; if informed she has no option."
+        }
+      ],
+      "resolution": "pending_vocabulary",
+      "note": "Attributed source positions retained. Their legal outputs are not in the selected encoder domain; no formal tarjih or madhhab choice is asserted. Choosing one option is only a partial Boolean cue. The source requires husband status, intercourse and knowledge, and records a real disagreement; do not declare this fully expressible.",
+      "evidence": [
+        {
+          "position": 0,
+          "who": "Ahmad",
+          "excerpt_ar": "فليس لها خيار علمت أن لها الخيار أو لم تعلم",
+          "ref": "src:openiti-harb-masail-shamela12527/v02:p750",
+          "admission": "attribution_only_no_hadith_grade_or_later_tashih_asserted"
+        },
+        {
+          "position": 1,
+          "who": "Sufyan",
+          "excerpt_ar": "إن وقع عليها وهي لا تعلم أن لها الخيار فإن حلفت خيرت، وإن كانت تعلم فلا خيار لها",
+          "ref": "src:openiti-harb-masail-shamela12527/v02:p751",
+          "admission": "attribution_only_no_hadith_grade_or_later_tashih_asserted"
+        }
+      ]
+    },
+    {
+      "unit": "harb.masail.openiti_harb_masail_shamela12527.m00465",
+      "locator": "src:openiti-harb-masail-shamela12527/v02:p877#m00465",
+      "unit_sha256": "fd1613f29ecd4a8885899015204140fe2082ec7405f80dacf371676c19136cce",
+      "source_sha256": "148f34773a2038c1d64924a34cbd56709ad12d4bb289d28d2c3f005e84dc4d4b",
+      "positions": [
+        {
+          "who": "Ahmad",
+          "ruling": "A dhimmi may be addressed with a kunya."
+        },
+        {
+          "who": "al-Awzai",
+          "ruling": "Do not give the Christian a kunya."
+        }
+      ],
+      "resolution": "pending_vocabulary",
+      "note": "Attributed source positions retained. Their legal outputs are not in the selected encoder domain; no formal tarjih or madhhab choice is asserted. General-wording scope does not resolve this attributed disagreement. Visiting, handshaking and condolences are separate contexts within the unit.",
+      "evidence": [
+        {
+          "position": 0,
+          "who": "Ahmad",
+          "excerpt_ar": "أهل الذمة يكنون؟ قال: نعم لا بأس به",
+          "ref": "src:openiti-harb-masail-shamela12527/v02:p877",
+          "admission": "attribution_only_no_hadith_grade_or_later_tashih_asserted"
+        },
+        {
+          "position": 1,
+          "who": "al-Awzai",
+          "excerpt_ar": "ولا يصافحه، ولا يكنيه",
+          "ref": "src:openiti-harb-masail-shamela12527/v02:p878",
+          "admission": "attribution_only_no_hadith_grade_or_later_tashih_asserted"
+        }
+      ]
+    }
+  ]
+}
