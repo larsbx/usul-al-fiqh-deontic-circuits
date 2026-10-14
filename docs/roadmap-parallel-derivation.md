@@ -121,6 +121,12 @@ Precedents:
       - its type extends itlāf's (`Usul.Typing.Qaida.Mubashara`);
       - a dossier entry closes the named need;
       - a cause with no direct act is outside its statement and stays a gap.
+    - **Q127's own furūʿ, annotated (2026-10-14, shard rajab-q127).** The bank was applied to its nine furūʿ: five are derivable (f000–f002 direct, f003 cause alone, f007 shared). Four are ikhtilāf:
+      - f004 (the coerced destroyer) is on the madhhab side, per al-Iqnāʿ «وإن أكره على إتلافه ضمنه مكرهه».
+      - f005 (the holder with the killer) and f006 (the stone beside the well) land against it. al-Inṣāf makes the direct actor's, and the placer's, alone the madhhab, and al-Iqnāʿ states both. Both enter the ledger with that evidence.
+      - f008 (game held in iḥrām, killed by another) has al-Qāḍī's two iḥtimālāt and no stated side. It enters the ledger at tawaqquf.
+
+      f006's roles follow Ibn Rajab's own classing of its companion case («وهي من صور القسم الثاني»).
     - **Re-measured.** All answers were re-typed blind for Q127's two fields; labels are not rewritten.
       - Of the 9 cases that named the rule, 7 now rank it in the top 3 (6 were unrouted before); 348122's two cases settle none of its fields.
       - With tranche-named rules counted, recall@5 is 0.74 (from 0.69).

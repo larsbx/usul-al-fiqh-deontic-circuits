@@ -63,6 +63,24 @@ import Usul
 #guard (Usul.Refinements.errorExcused false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f000 (derivable)
 #guard (Usul.Refinements.validUnderDoubt true false false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f000 (derivable)
+#guard (Usul.Readings.Mubashara.damanOn false true) == .mubashir
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f001 (derivable)
+#guard (Usul.Readings.Mubashara.damanOn false true) == .mubashir
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f002 (derivable)
+#guard (Usul.Readings.Mubashara.damanOn false true) == .mubashir
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f003 (derivable)
+#guard (Usul.Readings.Mubashara.damanOn true false) == .sabab
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f004 (genuine_ikhtilaf)
+#guard (Usul.Readings.Mubashara.damanOn true false) == .sabab
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f005 (genuine_ikhtilaf)
+#guard (Usul.Readings.Mubashara.damanOn true true) == .shared
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f006 (genuine_ikhtilaf)
+#guard (Usul.Readings.Mubashara.damanOn true true) == .shared
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f007 (derivable)
+#guard (Usul.Readings.Mubashara.damanOn true true) == .shared
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f008 (genuine_ikhtilaf)
+#guard (Usul.Readings.Mubashara.damanOn false true) == .mubashir
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f001 (derivable)
 #guard (Usul.Readings.RajabA10.vagueOneBarsAll true false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f002 (derivable)
