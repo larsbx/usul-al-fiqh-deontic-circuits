@@ -4,7 +4,7 @@ TLA_JAR ?= .cache/tla2tools.jar
 TLA_URL  = https://github.com/tlaplus/tlaplus/releases/download/v1.8.0/tla2tools.jar
 
 .PHONY: all test fetch fatawa labels bank-review oracle prolog-oracle fatawa-takhrij fatawa-prolog ocr build validate generated lean tla reception mentions
-all: test validate generated lean tla
+all: source-verify test validate generated lean tla
 
 test:      ; cd pipeline && $(PY) -m pytest -q
 fetch:     ; cd pipeline && $(PY) -m usul_corpus fetch
@@ -24,3 +24,8 @@ lean:      ; cd formal/lean && lake build && lake env lean scripts/ExportTypes.l
 prolog-oracle: ; formal/oracle/run_all.sh   # needs swipl: independent Prolog mirror of the Lean kernels
 $(TLA_JAR):; mkdir -p $(@D) && curl -sSL -o $@ $(TLA_URL)
 tla: $(TLA_JAR) ; TLA2TOOLS=$(abspath $(TLA_JAR)) formal/tla/check.sh
+
+# Verification never creates/re-pins a lock; unavailable required bytes fail.
+.PHONY: source-verify source-verify-fetch
+source-verify: ; cd pipeline && $(PY) -m usul_corpus.source_verify
+source-verify-fetch: ; cd pipeline && $(PY) -m usul_corpus.source_verify --fetch-source

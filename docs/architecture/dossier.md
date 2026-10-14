@@ -564,7 +564,9 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `src:openiti-rajab-shamela21730/v01:p067`: Known madhhab amount basis.
   > المبيع والمعروف في المذهب ضمانه بالقيمة لا بالثمن المسمى
 - `src:openiti-rajab-shamela21730/v01:p068`: The common outcome; no claim to resolve competing explanations.
-  > الكتابة الفاسدة تضمن بالمسمى فإذا أدى ما سمى فيها حصل العتق ولم يلزمه ضمان قيمته ذكره أبو بكر وهو ظاهر كلام أحمد، واتفق الأصحاب على ذلك
+  > الكتابة الفاسدة تضمن بالمسمى فإذا أدى ما سمى فيها حصل العتق ولم يلزمه ضمان قيمته ذكره أبو بكر وهو ظاهر كلام أحمد، واتفق الأصحاب على ذلك لكن المتأخرون زعموا أن الكتابة الفاسدة تعليق بصفة فلا يؤثر فسادها ولا تحريمها كما لو قال لعبده إن أعطيتني خمرا فأنت حر فأعطاه عتق لوجود الصفة
+- `src:openiti-rajab-shamela21730/v01:p068`: The following competing characterization and excluded prohibited-consideration branch; no adjudication added.
+  > وأما أبو بكر فعنده أن الكتابة عقد معاوضة أبدا وهو اختيار ابن عقيل وهو الأظهر ولا يقع العتق عنده بأداء المحرم لأن العقد لا ينعقد بعوض محرم بل هو عنده باطل.
 
 **Rationale.** The source explicitly contrasts contract compensation in the selected nikah position with loss compensation for defective sale. The suite records the competing named/value positions. Muamalat.priceDue is reused after fixing that source fact, not as evidence for the fact itself. All readings and attributions await human review.
 
