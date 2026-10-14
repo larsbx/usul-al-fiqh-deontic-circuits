@@ -56,9 +56,13 @@ theorem fourth_qism_guaranteed : spreadFollowsInjury true false = true := rfl
 
 /-- Qāʿida 128, its first qism: «أن يكون مضمونا في الحالين، لكن يتفاوت قدر الضمان فيهما، فهل
 الاعتبار بحال السراية أو حال الجناية؟ على روايتين». The reading takes the state of the injury,
-on the same ground («وإنما تجب تابعة للجناية») and al-Qāḍī's «قياس المذهب» where the value fell
-between the injury and the death («لأن موته حصل بقطع يده وقيمته في تلك الحال ألفان»). The
-output is that the ḍamān is measured by the injury's state; outside the first qism there is no
+on the same ground («وإنما تجب تابعة للجناية»). The value-fall example 128.f003 is textual
+corroboration only under its annotated affirmative interpretation: the pinned witness reports
+«قياس المذهب أنه لا يضمنه بألفين», whereas the Mashhūr and Ṭāhā Saʿd digitizations omit «لا».
+RQ-05 in `corpus/review/research_questions.json` records the collation and remains open; neither
+this Boolean function nor its guards establish an emendation, a numerical amount, or consensus.
+The choice between Q128's two riwāyāt remains RQ-02. The output is that the ḍamān is measured
+by the injury's state; outside the first qism there is no
 ḍamān owed in both states to measure, and the output is false. -/
 def measuredAtInjury (guaranteedAtInjury guaranteedAtSpread : Bool) : Bool :=
   guaranteedAtInjury && guaranteedAtSpread
@@ -75,3 +79,4 @@ theorem measure_implies_spread_guaranteed (a s : Bool) (h : measuredAtInjury a s
   cases a <;> cases s <;> simp_all [measuredAtInjury, spreadFollowsInjury]
 
 end Usul.Readings.RajabA15
+

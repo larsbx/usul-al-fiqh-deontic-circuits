@@ -29,7 +29,151 @@
         "alternatives": {"type": "array", "minItems": 2, "items": {"type": "string"}},
         "research": {"type": "array", "minItems": 1, "items": {"type": "string"}, "description": "concrete next steps"},
         "status": {"enum": ["open-research", "ready-for-decision", "decided", "withdrawn"]},
+        "collation": {"$ref": "#/$defs/collation"},
         "decision": {"type": "object", "required": ["by", "date", "adopted"], "properties": {"by": {"const": "human"}, "date": {"type": "string"}, "adopted": {"type": "string"}}}
+      }
+    },
+    "collation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "date",
+        "status",
+        "base_commit",
+        "result",
+        "witnesses",
+        "findings",
+        "consequences"
+      ],
+      "properties": {
+        "date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "status": {
+          "const": "candidate"
+        },
+        "base_commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "result": {
+          "type": "string",
+          "minLength": 1
+        },
+        "witnesses": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/collationWitness"
+          }
+        },
+        "findings": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "consequences": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "case",
+            "reading",
+            "classification",
+            "reconciliation",
+            "provenance"
+          ],
+          "properties": {
+            "case": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reading": {
+              "type": "string",
+              "minLength": 1
+            },
+            "classification": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reconciliation": {
+              "type": "string",
+              "minLength": 1
+            },
+            "provenance": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "collationWitness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "cache_group",
+        "cache_file",
+        "url",
+        "sha256",
+        "bytes",
+        "edition_claim",
+        "independence_note",
+        "locator",
+        "excerpt_ar",
+        "has_negation"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cache_group": {
+          "enum": [
+            "corpus",
+            "rq05"
+          ]
+        },
+        "cache_file": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+$"
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://raw\\.githubusercontent\\.com/[^/]+/[^/]+/[0-9a-f]{40}/"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "edition_claim": {
+          "type": "string",
+          "minLength": 1
+        },
+        "independence_note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locator": {
+          "type": "string",
+          "pattern": "^v[0-9]+:p[0-9]+$"
+        },
+        "excerpt_ar": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 400
+        },
+        "has_negation": {
+          "type": "boolean"
+        }
       }
     }
   }
