@@ -154,7 +154,7 @@
       "id": "RQ-05",
       "title": "The witness's «لا» in 128.f003",
       "raised_by": "docs/architecture/taarud-reconciliation.md, lane A round 4 (128.f003)",
-      "question": "The pinned witness reads al-Qāḍī as «قياس المذهب أنه لا يضمنه بألفين», but the same sentence continues «وقد قلنا يضمن بألفين إذا عتق، كذلك هاهنا، وهذا موضع مجمع عليه» because the slave was worth two thousand at the cutting: the argument concludes liability at two thousand. Is «لا» the reading of the text, or a scribal or editorial slip?",
+      "question": "The pinned witness attributes «قياس المذهب أنه لا يضمنه بألفين» to al-Qāḍī, but continues affirmatively «وقد قلنا يضمن بألفين إذا عتق». For the same cutting of both hands, value two thousand at injury and one thousand at death, which wording and interpretation are supported? Digital edition-labelled witnesses now differ; the locus and cause of the divergence are not established.",
       "policy_in_force": "As is: 128.f003 is annotated by the argument (liable at two thousand, derivable under `measuredAtInjury`) and its note flags the «لا». The bank cannot decide a reading of the witness.",
       "pins": [
         "Usul.Readings.RajabA15.measuredAtInjury"
@@ -168,18 +168,131 @@
         {
           "ref": "src:openiti-rajab-shamela21730/v01:p289",
           "excerpt_ar": "كنقصان بدله بالحرية، وقد قلنا يضمن بألفين إذا عتق، كذلك هاهنا",
-          "note": "The argument that follows, concluding liability at two thousand."
+          "note": "Internal support for the affirmative interpretation, not permission to delete «لا». The emancipation comparison is a different legal situation."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p288",
+          "excerpt_ar": "لكن يتفاوت قدر الضمان فيهما، فهل الاعتبار بحال السراية أو حال الجناية؟",
+          "note": "Q128 first qism; the next sentence says «على روايتين». The general measure is disputed, so this case cannot settle the reading globally (RQ-02)."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p289",
+          "excerpt_ar": "ومنها: لو قطع يدي عبد وقيمته ألفان ثم سرت إلى نفسه ومات وقيمته ألف",
+          "note": "Exact target facts. No emancipation in this example; freedom enters only as the comparison in the argument."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p470",
+          "excerpt_ar": "قيمته لسيده واختاره القاضي وأصحابه",
+          "note": "Adjacent emancipation case, not the target value-fall case. Al-Inṣāf attributes the value-for-master position to Abū Bakr, al-Qāḍī and his companions, while marking Ibn Ḥāmid's free-person diya position as the madhhab. Not evidence of target-case consensus."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v09:p375",
+          "excerpt_ar": "وعند أبي بكر والقاضي وأصحابه: دية ذمي لوارث مسلم",
+          "note": "Adjacent emancipation/conversion treatment, continued by «وقيمة عبد». Corroborates the surrounding attribution, not the numerical value-fall ruling or the disputed negation."
         }
       ],
       "alternatives": [
-        "«لا» is a slip; the annotation (liable at two thousand) stands (the policy in force).",
-        "«لا» is the text: al-Qāḍī's qiyās gives liability at the value at death, the record's «مجمع عليه» refers to another branch, and the case is re-annotated."
+        "Affirmative reading: supported by the internal argument and two digitizations labelled as different editions. A candidate correction in an edited reading, never a silent alteration of the pinned witness; the stage at which «لا» entered remains unknown.",
+        "A distinction in the legal argument: requires a source explaining how the negative opening and affirmative analogy coexist in the same value-fall case. No such explanation was established; «لا يضمنه بألفين» alone does not assert liability at one thousand.",
+        "Suspend textual adjudication: preserve both attested digital readings and the existing candidate annotation, without treating textual uncertainty as genuine juristic ikhtilāf or claiming a clean derivation from the literal negated sentence."
       ],
       "research": [
-        "Collate another edition or manuscript of Taqrīr al-Qawāʿid at this record.",
-        "Check al-Qāḍī's al-Khilāf, or al-Inṣāf and al-Furūʿ, on the slave whose value falls between the cutting and the death."
+        "Inspect print images of Mashhūr 2:613 and Ṭāhā Saʿd 1:312–313, then Dār al-Fikr 1:289 and al-Bāz 1:332, including their apparatus; match edition metadata and pagination rather than assuming a digital transcription reproduces print.",
+        "Collate manuscript folios at this locus, including the witnesses named in Mashhūr's introduction. Silence in the displayed apparatus does not establish manuscript unanimity.",
+        "Locate the exact case in al-Qāḍī's al-Khilāf/al-Taʿlīq al-Kabīr if the relevant portion survives and is accessible. No direct text at this locus was inspected; catalogue hits for other sections are not corroboration.",
+        "Continue a scoped search of al-Inṣāf and al-Furūʿ for the numerical case. The inspected emancipation passages establish context only; failure to locate the exact case is not proof of its absence.",
+        "If later evidence changes the annotation, use revisions/revisit and regenerate its guards and reconciliation outputs under the derivation method; do not change a fact or expected output to match the encoder."
       ],
-      "status": "open-research"
+      "status": "open-research",
+      "collation": {
+        "date": "2026-10-14",
+        "status": "candidate",
+        "base_commit": "a867796051a716edd325c975b87b4ba98304ceeb",
+        "result": "digital-textual-divergence; editorial cause unresolved",
+        "witnesses": [
+          {
+            "id": "openiti-rajab-shamela21730",
+            "cache_group": "corpus",
+            "cache_file": "openiti-rajab-shamela21730.txt",
+            "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0795IbnRajabHanbali/0795IbnRajabHanbali.Qawacid/0795IbnRajabHanbali.Qawacid.Shamela0021730-ara1.completed",
+            "sha256": "f077fdf1ba4ec9cfecafed8b5e0023e850f57084e17463847cc238e3d1128e68",
+            "bytes": 1660710,
+            "edition_claim": "Metadata: Dār al-Fikr; year given uncertainly as 1900 (?).",
+            "independence_note": "The bank's pinned witness. Its negation is verified, not emended.",
+            "locator": "v01:p289",
+            "excerpt_ar": "لو قطع يدي عبد وقيمته ألفان ثم سرت إلى نفسه ومات وقيمته ألف فقال القاضي في خلافه: قياس المذهب أنه لا يضمنه بألفين ;",
+            "has_negation": true
+          },
+          {
+            "id": "rajab-mashhur-17894",
+            "cache_group": "rq05",
+            "cache_file": "0795IbnRajabHanbali.Qawacid.Sham19Y0017894-ara1",
+            "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0795IbnRajabHanbali/0795IbnRajabHanbali.Qawacid/0795IbnRajabHanbali.Qawacid.Sham19Y0017894-ara1",
+            "sha256": "791777135f2116144b7b2fea53186bcbed1716e4a4a60c4b54bb533d8de8d0ba",
+            "bytes": 3367735,
+            "edition_claim": "Metadata: Mashhūr Ḥasan Āl Salmān, Dār Ibn ʿAffān, first edition 1419 AH.",
+            "independence_note": "Different declared edition; digital transcription only, not a manuscript collation. The Arabic-keyboard mirror is not an additional independent witness.",
+            "locator": "v02:p613",
+            "excerpt_ar": "لو قطع يدي عبد وقيمته ألفان، ثم سرت إلى نفسه ومات وقيمته ألف؛ فقال القاضي في \"خلافه\": قياس المذهب أنه يضمنه بألفين؛",
+            "has_negation": false
+          },
+          {
+            "id": "rajab-sad-34191",
+            "cache_group": "rq05",
+            "cache_file": "0795IbnRajabHanbali.Qawacid.ShamAY0034191-ara3",
+            "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0795IbnRajabHanbali/0795IbnRajabHanbali.Qawacid/0795IbnRajabHanbali.Qawacid.ShamAY0034191-ara3",
+            "sha256": "d7c01e15a72eec29986357cc16140864a70a22ea4c0ae2501fea99efec5a49c4",
+            "bytes": 1627437,
+            "edition_claim": "Metadata: Ṭāhā ʿAbd al-Raʾūf Saʿd, Maktabat al-Kulliyyāt al-Azhariyya, first edition 1391 AH / 1971.",
+            "independence_note": "Different declared edition; digital transcription only. The affirmative continuation and «قال» are on p313.",
+            "locator": "v01:p312",
+            "excerpt_ar": "لو قطع يدي عبد وقيمته ألفان ثم سرت إلى نفسه ومات وقيمته ألف فقال القاضي في خلافه: قياس المذهب أنه يضمنه بألفين;",
+            "has_negation": false
+          },
+          {
+            "id": "rajab-baz-jk7052",
+            "cache_group": "rq05",
+            "cache_file": "0795IbnRajabHanbali.Qawacid.JK007052-ara1",
+            "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0795IbnRajabHanbali/0795IbnRajabHanbali.Qawacid/0795IbnRajabHanbali.Qawacid.JK007052-ara1",
+            "sha256": "156def7e58f59d3a848be761775067d0083490ed9c16153cc571a7e7b50fc366",
+            "bytes": 1631798,
+            "edition_claim": "Metadata: Maktabat Nizār Muṣṭafā al-Bāz, second edition, Mecca, 1999.",
+            "independence_note": "Same declared edition family and wording as ShamAY0034192; do not count these as two independent confirmations.",
+            "locator": "v01:p332",
+            "excerpt_ar": "لو قطع يدي عبد وقيمته ألفان ثم سرت إلى نفسه ومات وقيمته ألف فقال القاضي في خلافه قياس المذهب أنه لا يضمنه بألفين",
+            "has_negation": true
+          },
+          {
+            "id": "rajab-baz-34192",
+            "cache_group": "rq05",
+            "cache_file": "0795IbnRajabHanbali.Qawacid.ShamAY0034192-ara1",
+            "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0795IbnRajabHanbali/0795IbnRajabHanbali.Qawacid/0795IbnRajabHanbali.Qawacid.ShamAY0034192-ara1",
+            "sha256": "2863ebfa5123755bbe5949f6ddb7d546942ce4479575a1ea101994221a465497",
+            "bytes": 1640537,
+            "edition_claim": "Metadata: Maktabat Nizār Muṣṭafā al-Bāz, Mecca, 1999.",
+            "independence_note": "Same declared edition family and wording as JK007052; shared digital ancestry remains possible across all copies.",
+            "locator": "v01:p332",
+            "excerpt_ar": "لو قطع يدي عبد وقيمته ألفان ثم سرت إلى نفسه ومات وقيمته ألف فقال القاضي في خلافه قياس المذهب أنه لا يضمنه بألفين",
+            "has_negation": true
+          }
+        ],
+        "findings": [
+          "The complete pinned Q128 passage (pp288–290) was read and the source bytes matched corpus/lock.json. Both the negative opening and affirmative continuation occur in the same value-fall example. The heading distinguishes four liability states and leaves the first state's valuation at two riwāyāt.",
+          "All five checked digitizations give the same target situation: both hands cut, value two thousand then one thousand, death from the injury. None inserts emancipation into that example. Thus the discovered wording difference cannot be explained by different stated target facts.",
+          "Mashhūr 2:613 and Ṭāhā Saʿd 1:312 omit «لا» in al-Qāḍī's qiyās and insert «قال» before the reported consensus (Saʿd continuation 1:313). The pinned witness and both al-Bāz copies retain «لا» and lack that «قال». Record these as edition-labelled digital variants; no stemma or manuscript independence has been established.",
+          "The phrase «وهذا موضع مجمع عليه» is a report within the passage. The added «قال» in the affirmative digitizations matters for attribution. Neither that report nor internal coherence proves consensus independently or licenses deletion in the base witness.",
+          "The inspected al-Inṣāf 9:470–471 and al-Furūʿ 9:375–376 discuss injury followed by emancipation/conversion and allocation to master/heirs; they report the value position for Abū Bakr and al-Qāḍī but prefer or state free-person diya. They are contextual parallels only, not a vote against the target annotation.",
+          "A search of the three downloaded parallel works (al-Inṣāf, al-Furūʿ, al-Mubdiʿ) using the numerical, hand-cutting and injury/emancipation phrases did not establish an exact independent parallel to the value-fall example. No direct al-Khilāf passage or manuscript/print image at the disputed locus was verified.",
+          "The Arabic-keyboard Mashhūr transcription also has the affirmative reading (https://www.arabic-keyboard.info/books/ar/read-book/قواعد-ابن-رجب-ت-مشهور). It is a discovery aid, not another independent edition. The Shamela.org PDF listing describes BOK-to-PDF conversion and is not evidence of a scanned print witness. The aljam3 volume listing was accessible, but direct HTML retrieval returned HTTP 403 and no image at the target locus was inspected."
+        ],
+        "consequences": {
+          "case": "128.f003 remains the pre-existing candidate annotation under the policy in force. Its historical note is not rewritten. The affirmative interpretation has new textual corroboration, but is not the literal unambiguous ruling of every witness.",
+          "reading": "measuredAtInjury true true = true checks the chosen first-qism reading. Its Boolean output selects the injury state; it does not calculate 2000 or verify al-Qāḍī's words. Qualify its docstring and retain its definition, theorems and Python mirror.",
+          "classification": "Retain derivable conditionally on the annotated affirmative interpretation; no automatic promotion to reviewed/accepted. Textual divergence is not evidence of two juristic positions, so do not manufacture genuine_ikhtilaf. RQ-02 remains separate.",
+          "reconciliation": "No new graded ledger item or madhhab re-ranking: the target has no off-madhhab contradiction requiring S6, and the inspected parallels have different facts. These collation receipts are not ranked legal evidence.",
+          "provenance": "Source bytes, corpus lock, record receipts, case facts/expected/class, generated guards and coverage are unchanged. New external digitizations are research receipts with immutable URLs and hashes, not admitted corpus witnesses. RQ-05 remains open-research with no decision."
+        }
+      }
     },
     {
       "id": "RQ-06",
