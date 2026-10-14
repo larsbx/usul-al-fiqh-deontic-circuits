@@ -55,7 +55,7 @@ The unit is a committed farʿ record, which can contain multiple examples. Annot
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.759 | 0 | 0 |
-| All annotation suites | 761 | 0.992 | 0.736 | 0 | 6 |
+| All annotation suites | 801 | 0.946 | 0.703 | 0 | 43 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -236,6 +236,97 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
 - Ibn Rajab's *Taqrīr* (≈160), the *Manẓūma*, *al-Qawāʿid al-Nūrāniyya*, *Ṭarīq al-Wuṣūl*. Deduplicate against M3 with an explicit `same_as` / `refines` / `conflicts` graph.
 - Regression corpora: the *Iʿlām* sadd al-dharāʾiʿ instances (≈99) and the ḥiyal cases; the furūʿ from *al-Sharḥ al-Mumtiʿ* with the author's tarjīḥ as expected output.
 - Stress test: al-Ṭūfī on maṣlaḥa versus naṣṣ, as a known point of conflict.
+- **Seed of the `conflicts` graph (2026-10-10): the bank applied to its own contradictions.** Ten pairs from al-Saʿdī's 60 rule opposite ways on a shared case when each rule is read without its qayd. The pairs are Q13/Q27, Q20/Q25, Q31/Q41, Q55/Q57, Q17/Q39, Q4/Q40, Q21/Q50, Q11/Q52, Q12/Q45 and Q10/Q26. Each is resolved by the bank itself: by `Usul.resolve` and by Q29 (read a rule with what is attached to it). In every pair the qayd is the author's own sentence, quoted from one of the two qawāʿid and located in `corpus/tanaqud/sadi.json`. All ten reach jamʿ, so none needs naskh, tarjīḥ or tawaqquf. `Usul.Tanaqud` proves three things for each pair: the clash is real, the jamʿ is what resolution takes, and the jamʿ coincides with the rules' existing encodings (`obligedParts`, `timelyPerformance`, `discharges`, `zahirPrevails`, the presumption-based burden). Three pairs proved earlier are listed with them: Q13/Q36, Q26/Q43 and Q51/Q54. Checked by `tests/test_tanaqud.py`.
+- **al-Saʿdī's furūq, tranche 1 (2026-10-10).** Part two of the same book is the author's own list of masāʾil that look alike but are ruled differently. Each is graded by its aṣl: «الشارع لا يفرق بين المتشابهات من كل وجه، بل لا بد فيها من فوارق معنوية». In `Usul.Furuq` that aṣl is `Schema.Factors`: `alike_unless_farq`, `farq_is_maana`, `suri_farq_idle`. Items F01–F21 are in order, none skipped (`corpus/furuq/sadi_tranche1.json`): 10 sound furūq, 7 weak furūq (ruled alike), and 4 masāʾil the madhhab wrongly treats alike. Where his reason is already a theorem of the bank it is cited and proved:
+  - F06 is a naqḍ (`Qiyas.naqd_defeats`);
+  - F13 and F15 rest on T-01's qayd (God's right);
+  - F18 is Q27;
+  - F20 fails the ḥadīth gate (D4).
+  Witness: `islamhouse-qj-doc`, the same edition born-digital (the book is not on Shamela). The tanāquḍ quotes were re-anchored on it.
+- **Furūq tranche 2 (F22–F41) and a correction to the bank.** 4 sound, 15 weak, 1 wrongly ruled alike. Where his reason is a qāʿida of part one it is cited by its theorem: Q9 (custom: F25, F33, F41), Q22/Q23 (conditions: F23, F26), Q53 (F30), Q10/Q55 (F32, F36) and Q56 (F37). F37 exposed a contradiction between the bank and its author. Q56 had been encoded with khiyār al-sharṭ and an unclaimed shufʿa excepted. But Q56's own statement marks that exception «في قول ضعيف» and concludes «والصحيح: أنها مثل غيرها», and the furūq call it «من الفروق الضعيفة جداً». So Q56 is now a parameter in the repo's manner for a divided madhhab: `inherits .sahih` is al-Saʿdī's reading, with no exception, and `.mashhur` keeps Aḥmad's well-known view; `q56_readings_differ_iff` pins where they part. No other encoding builds in a farq that he grades weak.
+- **Furūq tranche 3 (F42–F60).** 15 sound, 4 weak. The section turns from correcting the madhhab to confirming it: most of these furūq rest on a stated wisdom (ḥikma) or on naṣṣ and ijmāʿ. The weak ones are:
+  - the slave and the free man in bodily duties: «فظاهر النصوص وعمومها يقتضي مساواة العبد للحر»;
+  - khulʿ versus divorce of a part;
+  - a waqf in the final illness for an heir: «الخارقة للإجماع … عين الوصية للوارث»;
+  - tayammum versus water purity: «قائمة مقام طهارة الماء في كل شيء» (Q28; the bank's Q28 encodes only when the substitute is used).
+  F59 rests on Q47 (`q47_vow_as_law`). Running tally over F01–F60: 29 sound, 26 weak, 5 wrongly treated alike. Every item's two rulings are checked by Lean (`UsulTest/FuruqTable.lean`) and by the Prolog oracle.
+- **Q28 completed, and furūq tranche 4 (F61–F75).** Q28's first half is now encoded: «يستباح به ما يستباح بالماء … وأنه يقوم مقامه في كل شيء» is `Sadi.q28_stands_in_everything`, and F51 (tayammum) cites it. Tranche 4 has 13 sound items and 2 weak:
+  - F64: oaths broken in ignorance or forgetfulness, «والصواب: التسوية وأنه لا يحنث في الجميع … فإن الحق لله، وأيضاً ليس في ذلك إتلاف لمال». This is T-01's qayd again, with Q27.
+  - F71: the madhhab's seven washings except on the ground, against «يكفي فيها على الصحيح أن تزول بأي شيء، وبأي عدد».
+  Where a reason is a qāʿida of part one, the item cites it: Q47 (F61), Q55/Q57 by way of T-04 (F65: court by the outward words, conscience by intent), Q34 (F66), Q6 and Q54 (F69). Running tally over F01–F75: 42 sound, 28 weak, 5 wrongly treated alike.
+- **Furūq tranche 5 (F76–F96).** 19 sound, 2 weak. The weak ones:
+  - F88: guardianship of property reserved to the father, against «ما للأقارب من الحنو والشفقة يقتضي أن ولاية المال كغيره من الولايات، بل أولى».
+  - F92: pre-emption lost by any delay. Its supporting ḥadīths «كلها ضعيفة، لا تقوم بها حجة», so the ḥadīth gate (D4) decides the farq, as in F20.
+  Items grounded in part one: Q30 (F87), Q26/Q43 (F89), Q32 (F90), Q31 (F94, which is Q31's own example of the child following each parent). Running tally over F01–F96: 61 sound, 30 weak, 5 wrongly treated alike.
+- **Furūq tranche 6 (F97–F115), and a fourth grade.** Some furūq he only reports («وفرّقوا», «ومن الفروق عند الأصحاب») without grading them. These are now `reported`: his ruling is recorded as theirs and nothing more is attributed to him. F95, earlier recorded as sound, is now reported. `Usul.Furuq.confirms_iff_sahih` now says his ruling matches the madhhab exactly on the sound and the reported items. The tranche has 10 sound, 7 reported, and 1 wrongly treated alike: F114, mixed lawful and unlawful money versus carrion mixed with slaughtered meat, «خبثه لمكسبه … خبثه لذاته، وبين الأمرين فرقٌ ظاهر». Items grounded in part one:
+  - Q46 (F108), Q13 (F109), Q2 (F110), Q31 (F111);
+  - Q11 (F113: a settled duty in doubt versus whether a duty arose);
+  - Q38 (F115, stated in Q38's own words).
+  Running tally over F01–F115: 71 sound, 30 weak, 6 wrongly treated alike, 8 reported.
+- **Furūq tranche 7 (F116–F136).** 8 sound, 8 reported, 5 weak. The weak ones:
+  - F121: tayammum for bodily impurity, «لاستواء النجاسات في عدم ورود النص بها»;
+  - F128: the madhhab's extra places where prayer is invalid, «أقرب إلى الصواب … أنها تصح فيها»;
+  - F129: the four-day rule for ending travel, «ليس لنا مرتبة ثالثة لا مقيم ولا مسافر»;
+  - F134: zakāt to an heir relative;
+  - F136: the old man who travels, «عليه الكفارة لظاهر النصوص».
+  Running tally over F01–F136: 79 sound, 35 weak, 6 wrongly treated alike, 16 reported.
+- **Furūq tranche 8 (F137–F166): the taqāsīm, to the end of part two.** 17 sound, 7 reported, 6 weak. In each weak item he restates the aṣḥāb's division, then calls the other view correct on one branch:
+  - F140: unripe fruit sold to the owner of its trees, «أصح المنع … لدخولها في العموم وعدم المعارض»;
+  - F142: the mithlī as only the measured and the weighed, «وهو الصحيح: أن المثلي أعم من ذلك»;
+  - F144: a pledge before possession, «بلزومه مطلقاً، وهو الصحيح»;
+  - F146: the slave's dealings without permission, on his dhimma «على القول الصحيح»;
+  - F155: a part freed by an insolvent partner, «يعتق كله، ويستسعى العبد … وهو الصحيح»;
+  - F165: a wife under nine, «وظاهر الأدلة وجوبها».
+  The closing remark on the twenty-odd furūq of nikāḥ («قد ذكرتها في كتاب الإرشاد») names no cases and is not an item. Final tally over F01–F166: 96 sound, 41 weak, 6 wrongly treated alike, 23 reported. Part two is complete.
+- **The register applied to itself (F01–F166, with the qawāʿid and T-01…T-10).** Each place where two entries rule one case differently, read without their qayd, was checked against the bank. None is a contradiction of his:
+  - **A report, then his grade (6).** F133→F134, F135→F136, F139→F140, F141→F142, F143→F144 and F145→F146. Each later weak item overturns a case inside the bare report just before it: the heir relative, the travelling old man, the sale to the tree's owner, the narrow mithlī, the pledge before possession, and the slave's dealings. A report attributes nothing to him (the definition of `reported`), so his conclusion on the case is the later grade. The items now say so (`overturns`). `Usul.Furuq.overturn_iff_daif` proves that an overturn needs a bare report followed by his own grade ruling the other way, and that this is exactly reported → daif. It is checked per link in `FuruqTable.lean`, by `test_overturns_only_a_bare_report` and by the oracle (`furuq/<F>/overturns`, plus a mutant killed by the corpus). No sound grade of his is overturned anywhere.
+  - **One qayd, several items.** F13, F14, F15, F64 and F109 all fall under T-01's qayd. F109's «في إتلافات النفوس والأموال» for the non-mukallaf is the human side (`Usul.Furuq.f109_adami`). F14 («التفريق بين المعذور وغيره هو الأولى») is Q27 on God's side, and was marked basis `qaida` with no ground; it is now grounded.
+  - **The same answer reached twice.**
+    - F05 and F128: the obligatory prayer inside the Kaʿba is valid.
+    - F37 and F92: pre-emption is like the other rights (Q56's sound reading).
+    - F27 and F151: «قدم الأقرب جهة» with the ascendants first.
+  - **Scope, in his own words.**
+    - Q28 (F51) with F121: the substitute stands in for what it substitutes, «وإنما يتيمم عن الأحداث».
+    - F23 with F34: «ما لم تُدخل أهلها في محذور شرعي» against «تدوير العقود … إذهاب لروحها».
+  Still open: F27 and F47 rest on an aṣl outside the sixty qawāʿid («الأصل المحكم في كل الأبواب», «الأصول الشرعية») and have no theorem yet. The test pins exactly these two.
+- **The contradiction pass extended to Ibn Rajab (`corpus/tanaqud/rajab.json`).** His formalised readings (`Usul.Refinements`, M8 tranches 1–5) were checked against each other and against al-Saʿdī's. Two pairs clash when read without their qayd, and his own sentence resolves each by jamʿ. Pair ids continue from al-Saʿdī's; a rule of another work is named `work:number`.
+  - **T-11, Ibn Rajab 66 ⟂ 6: an act done on a belief later shown wrong.** The reading `validWithBasis` voids the act when no valid basis exists in fact, while `errorExcused` upholds it. Where another's right is attached, the clash runs the other way. The qayd «ثم تبين خطؤه فيه وأن السبب المعتمد غيره وهو موجود» confines Q66 to the case where the true basis exists; elsewhere Q6 governs (`t11_jam`).
+  - **T-12, al-Saʿdī Q28 ⟂ Ibn Rajab 7: the original found during the substitute.** Q28 switches; Q7 lets a general concession stand. Ibn Rajab's qayd, «الضرب الثاني: أن يكون المتلبس به إنما شرع ضرورة للعجز عن الأصل وتعذره … فهذا يلزمه الانتقال», gives Q28 the necessity substitute. The jamʿ is the existing reading `mustSwitch` (`t12_jam`).
+  - **No clash.**
+    - Q93 with Q75: what the taker entered on liability for was his own due, so the recourse rule gives nothing either (`rajab_q93_q75_consistent`).
+    - Q65 with Q66 (`q65_is_the_unbelieved_basis`, already proved).
+  - **Q22 is khilāf, not contradiction.** The `istihlak` reading takes one riwāya, while 22.f003 records the manṣūṣ «أنه اشتراك» for oil mixed with oil. Ibn Rajab states «فيه خلاف» and gives no qayd, so the register does not enter a jamʿ for it.
+  Checked by `tests/test_tanaqud.py` (all registers, ids running on, each pair once across works), Lean (`TanaqudTable.lean`) and the oracle (pairs 11–12, two more mutants killed by the corpus).
+- **The pass continued over the rest of the formalised readings.** Two more pairs, each resolved by Ibn Rajab's own sentence:
+  - **T-13, Ibn Rajab 32 ⟂ 33: an excepted benefit of uncertain extent.** A waqf excepting its benefit for the founder's life is upheld by Q32, but the reading of Q33 voids a stated exception of uncertain extent. The qayd is «لأن جهالة المدة هنا لا تؤثر فإنها لا تزيد على جهالة مدة كل بطن بالنسبة إلى من بعده»: where the transfer already bears an uncertain period Q32 governs, elsewhere Q33 (`t13_jam`). Q33 with Q34 is entered as proved earlier (`binding_is_implicit_exception`).
+  - **T-14, Ibn Rajab 1 ⟂ al-Saʿdī Q9: an oath about running water.** The jirya reading says he cannot stand in what keeps changing; custom says the river is one body. The qayd is «والأيمان مرجعها إلى العرف» (1.f003): oaths follow Q9, purity follows Q1 (`t14_jam`).
+  - **Ibn al-Laḥḥām 52 is khilāf, not contradiction.** The head says the singular with al- is general; 52.f008 reads «al-ṣalāt» in a tayammum intention as the lowest prayer (`hamlAlaAdna`). He gives the farʿ as «في المسألة قولان أشهرهما عند الأصحاب الثاني», so no jamʿ is entered, as with Ibn Rajab 22.
+  The register holds 14 pairs (T-01…T-14), all reaching jamʿ. The oracle checks 625 vectors and kills 31 mutants.
+- **M8 tranche 6 checked as it lands.** The new readings were checked against the bank before committing.
+  - **T-15, Ibn Rajab 14 ⟂ 15: a breach certain in one of two.** Q14's second riwāya attaches the breach because «الأصل زال يقينا في أحدهما». Q15 keeps each presumption and ignores its consequence for another. Ibn Rajab's qayd is «فينظر إليهما مجتمعين في حكم يتعلق باجتماعهما»: taken together Q14 governs, each alone Q15 (`t15_jam`).
+  - **Ibn Rajab 9 with al-Saʿdī Q38: no clash.** Ibn Rajab's four sites map onto al-Saʿdī's three, the two kinds of condition becoming one, and the rulings agree on every site (`q9_refines_q38`).
+  The register holds 15 pairs. The oracle checks 633 vectors and kills 32 mutants.
+- **The textual foundation, pinned (layer `nusus`), and guards on terms.** The Qurʾān and the ḥadīth collections are now registered witnesses, fetched and pinned by sha256 in `corpus/lock.json`. They are the foundation every other layer rests on. Full texts stay in `.cache`.
+  - **The texts.**
+    - The Qurʾān: Tanzil's verbatim text (`tanzil-quran-simple`), with its licence footer.
+    - The ḥadīth, from OpenITI at fixed commits:
+      - al-Bukhārī (Shamela 1681), Muslim (1727), Abū Dāwūd (1726);
+      - al-Tirmidhī (7895), al-Nasāʾī's al-Mujtabā (829), Ibn Māja (1198);
+      - the Muwaṭṭaʾ (1699), Musnad Aḥmad (25794), al-Dārimī (21795).
+  - **`corpus/nusus/foundation.json`.** Each āya is quoted and checked letters-only against the pinned muṣḥaf at its sūra and āya. Each marfūʿ ḥadīth is checked in each cited collection, under its number. Each also carries al-Albānī's verdict from al-Irwāʾ, checked against the «* صحيح» line of that entry, and is admitted only through the D4 gate (`Seam.admitted`). An athar is recorded as an athar, with al-Albānī's word on it, never as a marfūʿ naṣṣ.
+  - **Terms resting on it.** The glossary gains al-manī (`maniyy`), al-madhy and al-wadī (`wady`), with rulings that cite foundation ids. The generated `UsulTest/NususTable.lean` checks those rulings against `Usul.Tahara`, and the oracle checks them against `tahara_oracle.pl`.
+    - al-manī is ṭāhir and obliges ghusl: al-Māʾida 6, al-Nisāʾ 43; Abū Dāwūd 206 and 372, al-Bukhārī 282; al-Irwāʾ 125, 126, 180.
+    - al-madhy is najis and obliges wuḍūʾ: Muslim 303; al-Irwāʾ 108.
+    - al-wadī follows the athar of Ibn ʿAbbās, which al-Albānī marks «موقوف».
+    - The division itself is al-Saʿdī's F120. `Usul.Tahara.semen_conflates` proves that the English «semen» covers terms whose rulings differ on both counts.
+    - al-najāsa and al-ḥadath are entered as distinct, on Ibn al-Qayyim's «ما فرق الله بينه من إزالة النجاسة ورفع الحدث».
+    - «إنما الماء من الماء» (Muslim 343) is deliberately not cited: it bears on the naskh question of intercourse without emission.
+  - **Guards (`corpus/dossier/term_guards.json`, `tests/test_nusus.py`).** Any English field of the registers, or Lean doc comment, that says «semen» or «impurity» must name the Arabic term it means.
+    - The guard found 30 such fields.
+    - Two of them were mislabelled by a mechanical replacement and were corrected from the source. Ibn Rajab 18.f015 «الأحداث الموجبة للطهارة» is ḥadath, not najāsa. 159.f007 «لو تيقن حدثا أو نجاسة» names both.
+    - The glossary key `mani` is al-māniʿ (المانع). Its ASCII fold collides with al-manī, so homographs must now declare each other in `distinct_from`, and the new term is keyed `maniyy`.
+    - One frozen gap case (Ibn Rajab 22.f000) was re-pinned because its English note changed (impurity → najāsa). Its class, facts and needs are unchanged.
+  Next, by the same method: give the cited dalīl of the bank's existing terms and qawāʿid their place in the foundation, starting with the qawāʿid that already quote a naṣṣ.
 - **Exit:** every new rule is classified and linked; the coverage trend is reported. Disagreement with Ibn ʿUthaymīn's tarjīḥ is classified as in M4, never silently patched.
 
 #### M9 · Qiyās metatheory ⟵ M5, M7

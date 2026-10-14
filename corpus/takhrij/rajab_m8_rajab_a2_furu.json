@@ -23,7 +23,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Hiring a worker other than the wet-nurse for his food and clothing: «وفيه روايتان أصحهما الجواز كالظئر». Ijāra is a binding contract and the food and clothing are its compensation, so the stipulation holds. On the madhhab side: al-Inṣāf «إلا أنه يصح أن يستأجر الأجير بطعامه وكسوته، وكذلك الظئر . وهذا المذهب مطلقا. وعليه جماهير الأصحاب»."
+   "note": "Hiring a worker other than the wet-nurse for his food and clothing: «وفيه روايتان أصحهما الجواز كالظئر». Ijāra is a binding (lāzim) contract and the food and clothing are its countervalue (ʿiwaḍ), so the stipulation (al-shurūṭ fīhā) holds. On the madhhab side: al-Inṣāf «إلا أنه يصح أن يستأجر الأجير بطعامه وكسوته، وكذلك الظئر . وهذا المذهب مطلقا. وعليه جماهير الأصحاب»."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f002",
@@ -34,7 +34,7 @@
     "binding_contract": true
    },
    "expected": true,
-   "note": "Sale: «فلو باعه ثوبا بنفقة عبده شهرا صح، ذكره القاضي في خلافه». The maintenance is the price in a binding contract; no dispute is reported."
+   "note": "Sale: «فلو باعه ثوبا بنفقة عبده شهرا صح، ذكره القاضي في خلافه». The maintenance is the price in a binding (lāzim) contract; no dispute is reported."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f003",
@@ -45,7 +45,7 @@
     "binding_contract": true
    },
    "expected": true,
-   "note": "Marriage: maintenance and clothing are compensation for the wife's surrender of herself and need not be stipulated; «ولو شرطت عليه نفقة ولدها وكسوته صح وكان من المهر». A binding contract with a compensation stipulation; no dispute is reported."
+   "note": "Marriage: maintenance and clothing are a countervalue (ʿiwaḍ) for the wife's surrender of herself and need not be stipulated; «ولو شرطت عليه نفقة ولدها وكسوته صح وكان من المهر». A binding (lāzim) contract with a countervalue (ʿiwaḍ) stipulation; no dispute is reported."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f004",
@@ -56,7 +56,7 @@
     "binding_contract": false
    },
    "expected": true,
-   "note": "The non-compensation kind, in permissive contracts: «فيجوز اشتراط المضارب النفقة والكسوة في مدة المضاربة», and likewise partnership, agency, and musāqāh and muzāraʿa if they are not binding. Leading ruling: the stipulation is valid, as a licence. Follow-on question, not annotated here: whether what is left after annulment is theirs; Ibn Rajab gives three iḥtimālāt (not settled, as a licence; settled, as ownership, from Abū Bakr's riwāya on the concubine; a distinction between little and much)."
+   "note": "The non-muʿāwaḍa kind («غير معاوضة»), in permissive contracts: «فيجوز اشتراط المضارب النفقة والكسوة في مدة المضاربة», and likewise partnership, agency, and musāqāh and muzāraʿa if they are not binding («بعدم لزومها»). Leading ruling: the stipulation (al-shurūṭ fīhā) is valid, as a licence. Follow-on question, not annotated here: whether what is left after annulment (faskh) is theirs; Ibn Rajab gives three iḥtimālāt (not settled, as a licence; settled, as ownership, from Abū Bakr's riwāya on the concubine; a distinction between little and much)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f005",
@@ -67,7 +67,7 @@
     "spent_in_purpose": false
    },
    "expected": false,
-   "note": "One who takes maintenance from another to perform the ḥajj for him: «عقد جائز والنفقة فيه إعانة على الحج لا أجرة ... وإن فضلت فضلة ردها نص عليه». A licence, not a compensation, and the surplus was not spent in its purpose, so it is not owned and is returned. Follow-on sub-questions in the record (the bequest of a set sum for one ḥajj, whose surplus goes to the named ḥājj «في المعروف من المذهب»; «حجوا عني بألف» without «حجة») turn on the law of bequests and are not annotated here."
+   "note": "One who takes maintenance from another to perform the ḥajj for him: «عقد جائز والنفقة فيه إعانة على الحج لا أجرة ... وإن فضلت فضلة ردها نص عليه». A licence, not a wage («لا أجرة»), and the surplus was not spent in its purpose, so it is not owned and is returned. Follow-on sub-questions in the record (the bequest of a set sum for one ḥajj, whose surplus goes to the named ḥājj «في المعروف من المذهب»; «حجوا عني بألف» without «حجة») turn on the law of bequests and are not annotated here."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f006",
@@ -89,7 +89,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "One who takes zakāt to perform the ḥajj (permitted «بناء على قولنا إن الحج من السبيل», a premise outside this qāʿida) and has some left over: is it reclaimed? The record's question under this qāʿida is the surplus, annotated here; it is aid, not compensation, and unspent. Ibn Rajab: reclaimed, «الأظهر». Madhhab side: no later text on the ḥājj specifically was found; Taṣḥīḥ al-Furūʿ (masʾala 17) corrects for the warrior from zakāt «أحدهما يلزمه رده، وهو الصحيح», and al-Inṣāf on «وإن فضل مع الغارم، والمكاتب، والغازي، وابن السبيل شيء بعد حاجتهم: لزمهم رده»; with Ibn Rajab's own «الأظهر» this is the reading's side."
+   "note": "One who takes zakāt to perform the ḥajj (permitted «بناء على قولنا إن الحج من السبيل», a premise outside this qāʿida) and has some left over: is it reclaimed? The record's question under this qāʿida is the surplus, annotated here; it is aid, not a wage (ujra), and unspent. Ibn Rajab: reclaimed, «الأظهر». Madhhab side: no later text on the ḥājj specifically was found; Taṣḥīḥ al-Furūʿ (masʾala 17) corrects for the warrior from zakāt «أحدهما يلزمه رده، وهو الصحيح», and al-Inṣāf on «وإن فضل مع الغارم، والمكاتب، والغازي، وابن السبيل شيء بعد حاجتهم: لزمهم رده»; with Ibn Rajab's own «الأظهر» this is the reading's side."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f007",
@@ -121,7 +121,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Ibn Rajab classes the harvest condition under the second kind, an obligation the contract does not impose, not set against a compensation («لأن حصاد الزرع قد يتوهم أنه من تمام التسليم الواجب»), so the reading makes it invalid, with al-Khiraqī. Ibn Abī Mūsā reports two wujūh on whether it corrupts the contract (a follow-on, not annotated). The later madhhab holds the condition valid as a hire of the seller: al-Inṣāf «الصحيح من المذهب: صحة اشتراط المشتري نفع البائع في المبيع ... وسواء كان حصادا»; al-Furūʿ «على الأصح». Off the madhhab: ledger."
+   "note": "Ibn Rajab classes the harvest condition (al-shurūṭ fīhā) under the second kind, an obligation the contract does not impose, not set against a countervalue, ʿiwaḍ («لأن حصاد الزرع قد يتوهم أنه من تمام التسليم الواجب»), so the reading makes it invalid, with al-Khiraqī. Ibn Abī Mūsā reports two wujūh on whether it corrupts the contract (a follow-on, not annotated). The later madhhab holds the condition valid as a hire of the seller: al-Inṣāf «الصحيح من المذهب: صحة اشتراط المشتري نفع البائع في المبيع ... وسواء كان حصادا»; al-Furūʿ «على الأصح». Off the madhhab: ledger."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f001",
@@ -142,7 +142,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Not against a compensation: an obligation the contract does not impose, so invalid. Whether it corrupts the contract is disputed («وفي فساد العقد به خلاف»), a follow-on not annotated here. Madhhab side: al-Inṣāf «لو شرط على أحدهما ما يلزم الآخر. لم يجز، وفسد الشرط. على الصحيح من المذهب، إلا في الجداد»."
+   "note": "Not against a countervalue (ʿiwaḍ): what the contract does not make binding on him («ما لم يلزمه بمقتضى العقد»), so invalid. Whether it corrupts the contract is disputed («وفي فساد العقد به خلاف»), a follow-on not annotated here. Madhhab side: al-Inṣāf «لو شرط على أحدهما ما يلزم الآخر. لم يجز، وفسد الشرط. على الصحيح من المذهب، إلا في الجداد»."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f002",
@@ -163,7 +163,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Ibn Rajab places the delivery-place condition under the second kind: naming the place «يوهم أن ذلك من جنس ما ذكر زمانه وأنه مستحق بنفس العقد», with no compensation against it; the reading makes it invalid, with the naṣṣ. The later madhhab holds it valid: al-Inṣāf «قوله (وإن شرطه في غيره: صح) . وهو المذهب. وعليه جماهير الأصحاب», citing this qāʿida for the naṣṣ; al-Iqnāʿ «ويصح شرطه فيه ويكون تأكيدا وفي غيره». Off the madhhab: ledger."
+   "note": "Ibn Rajab places the delivery-place condition under the second kind: naming the place «يوهم أن ذلك من جنس ما ذكر زمانه وأنه مستحق بنفس العقد», with no countervalue (ʿiwaḍ) against it; the reading makes it invalid, with the naṣṣ. The later madhhab holds it valid: al-Inṣāf «قوله (وإن شرطه في غيره: صح) . وهو المذهب. وعليه جماهير الأصحاب», citing this qāʿida for the naṣṣ; al-Iqnāʿ «ويصح شرطه فيه ويكون تأكيدا وفي غيره». Off the madhhab: ledger."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f000",
@@ -202,7 +202,7 @@
      "ruling": true
     },
     {
-     "who": "al-Qāḍī, al-Aḥkām al-Sulṭāniyya («قياس المذهب»): nothing unless a fee was stipulated or he is known to take a wage",
+     "who": "al-Qāḍī, al-Aḥkām al-Sulṭāniyya («قياس المذهب»): nothing unless a fee was stipulated (al-shurūṭ fīhā) or he is known to take a wage",
      "ruling": false
     }
    ],
@@ -240,7 +240,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Rescue of protected property from certain or near destruction is the qāʿida's second kind. Abū l-Barakāt's distinction (goods, not a person) Ibn Rajab answers «وفيه نظر». The record's tail (work on another's property otherwise: «فالمعروف من المذهب أنه لا أجرة له», against the canal naṣṣ) and the hired worker who departs from the condition are follow-ons, not annotated. Madhhab side: al-Inṣāf «والصحيح من المذهب المنصوص عن الإمام أحمد - رحمه الله -: أنه يستحق أجرة مثله في ذلك. بخلاف اللقطة. وعليه الأصحاب»."
+   "note": "Rescue of protected property from certain or near destruction is the qāʿida's second kind. Abū l-Barakāt's distinction (goods, not a person) Ibn Rajab answers «وفيه نظر». The record's tail (work on another's property otherwise: «فالمعروف من المذهب أنه لا أجرة له», against the canal naṣṣ) and the hired worker who departs from the condition («دون ما شرط عليه») are follow-ons, not annotated. Madhhab side: al-Inṣāf «والصحيح من المذهب المنصوص عن الإمام أحمد - رحمه الله -: أنه يستحق أجرة مثله في ذلك. بخلاف اللقطة. وعليه الأصحاب»."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q079.f001",
@@ -287,7 +287,7 @@
      "ruling": true
     },
     {
-     "who": "the author of al-Talkhīṣ for the melon beds, «وهو مقتضى كلام الخرقي وابن أبي موسى»: the crop's ruling, only on condition of cutting",
+     "who": "the author of al-Talkhīṣ for the melon beds, «وهو مقتضى كلام الخرقي وابن أبي موسى»: the crop's ruling, only on condition of cutting («إلا بشرط القطع»)",
      "ruling": false
     }
    ],

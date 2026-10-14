@@ -91,10 +91,16 @@ def _text(r: dict) -> str:
 
 
 def cases(corpus: Path) -> list[tuple[str, str, str]]:
-    """(record id, encoder, record text) for every annotated case whose record is committed."""
+    """(id, encoder, text) for annotations usable as whole-case routing labels.
+
+    Gap triage and a component guard need not identify a whole unit's correct encoder.
+    Such annotations explicitly set routing_label=false rather than feeding their examined
+    proposal back into training or held-out recall as a positive label.
+    """
     cs = takhrij.load(corpus)
     recs = _records(corpus, {c["far"] for c in cs})
-    return sorted((c["far"], c["encoder"], _text(recs[c["far"]])) for c in cs if c["far"] in recs)
+    return sorted((c["far"], c["encoder"], _text(recs[c["far"]])) for c in cs
+                  if c["far"] in recs and c.get("routing_label", True))
 
 
 def qawaid(corpus: Path) -> list[tuple[str, str]]:

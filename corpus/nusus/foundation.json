@@ -1,0 +1,761 @@
+{
+ "status": "candidate",
+ "note": "The textual foundation (al-nuṣūṣ): the Qurʾān and the Sunna, on which every term's ruling, qāʿida and farq of the bank rests. Āyāt are quoted from the pinned muṣḥaf (tanzil-quran-simple) at their sūra and āya; marfūʿ ḥadīth from the pinned primary collections at their number, each with al-Albānī's verdict from al-Irwāʾ, and admitted only through the ḥujja gate (decision D4, `Usul.Seam.admitted`). An athar is recorded as an athar, with al-Albānī's word on it, and never stands as a marfūʿ naṣṣ.",
+ "attribution": {
+  "quran": "Tanzil Quran Text (Simple, Version 1.1), Copyright (C) 2007-2026 Tanzil Project, License: Creative Commons Attribution 3.0. Quoted verbatim and unchanged; source and updates: https://tanzil.net"
+ },
+ "ayat": [
+  {
+   "id": "Q005:006",
+   "sura": 5,
+   "aya": 6,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَإِن كُنتُمْ جُنُبًا فَاطَّهَّرُوا",
+   "en": "«and if you are junub (in janāba), purify yourselves» (fa-ṭṭahharū: ṭahāra from the major ḥadath): ghusl"
+  },
+  {
+   "id": "Q005:006b",
+   "sura": 5,
+   "aya": 6,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَاغْسِلُوا وُجُوهَكُمْ وَأَيْدِيَكُمْ إِلَى الْمَرَافِقِ",
+   "en": "«wash (ighsilū: ghasl) your faces and your hands to the elbows»: the ghasl of limbs in wuḍūʾ"
+  },
+  {
+   "id": "Q004:043",
+   "sura": 4,
+   "aya": 43,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَلَا جُنُبًا إِلَّا عَابِرِي سَبِيلٍ حَتَّىٰ تَغْتَسِلُوا",
+   "en": "«nor junub, except passing through, until you have washed (ghusl)»"
+  },
+  {
+   "id": "Q002:196a",
+   "sura": 2,
+   "aya": 196,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَأَتِمُّوا الْحَجَّ وَالْعُمْرَةَ لِلَّهِ",
+   "en": "«complete the ḥajj and the ʿumra for God»: once in iḥrām, completion is due (F12)"
+  },
+  {
+   "id": "Q002:196b",
+   "sura": 2,
+   "aya": 196,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَمَن لَّمْ يَجِدْ فَصِيَامُ ثَلَاثَةِ أَيَّامٍ فِي الْحَجِّ",
+   "en": "«whoever finds no sacrifice: a fast of three days in the ḥajj» (F11: «لأن الله عين الثلاثة أن تكون في الحج»)"
+  },
+  {
+   "id": "Q005:095",
+   "sura": 5,
+   "aya": 95,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَمَن قَتَلَهُ مِنكُم مُّتَعَمِّدًا فَجَزَاءٌ مِّثْلُ مَا قَتَلَ مِنَ النَّعَمِ",
+   "en": "«whoever of you kills it deliberately, the jazāʾ is the like of what he killed, from the livestock» (F15 quotes it; F17: «لظاهر النص»)"
+  },
+  {
+   "id": "Q002:179",
+   "sura": 2,
+   "aya": 179,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَلَكُمْ فِي الْقِصَاصِ حَيَاةٌ",
+   "en": "«in qiṣāṣ there is life for you» (F49 quotes it)"
+  },
+  {
+   "id": "Q002:224",
+   "sura": 2,
+   "aya": 224,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَلَا تَجْعَلُوا اللَّهَ عُرْضَةً لِّأَيْمَانِكُمْ",
+   "en": "«do not make God, by your oaths (aymān), a barrier» (F63 quotes it)"
+  },
+  {
+   "id": "Q025:048",
+   "sura": 25,
+   "aya": 48,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَأَنزَلْنَا مِنَ السَّمَاءِ مَاءً طَهُورًا",
+   "en": "«and We sent down from the sky water ṭahūr»"
+  },
+  {
+   "id": "Q005:089",
+   "sura": 5,
+   "aya": 89,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَكَفَّارَتُهُ إِطْعَامُ عَشَرَةِ مَسَاكِينَ",
+   "en": "the kaffāra of an oath (yamīn): «its expiation is feeding ten poor»"
+  },
+  {
+   "id": "Q002:196c",
+   "sura": 2,
+   "aya": 196,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ",
+   "en": "the muḥrim's fidya: «a fidya of fasting, charity (ṣadaqa) or a sacrifice»"
+  },
+  {
+   "id": "Q004:092",
+   "sura": 4,
+   "aya": 92,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَدِيَةٌ مُّسَلَّمَةٌ إِلَىٰ أَهْلِهِ",
+   "en": "the diya of killing by error: «and a diya handed to his family»"
+  },
+  {
+   "id": "Q002:184",
+   "sura": 2,
+   "aya": 184,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَعَلَى الَّذِينَ يُطِيقُونَهُ فِدْيَةٌ طَعَامُ مِسْكِينٍ",
+   "en": "«and on those who can bear it with hardship, a fidya: feeding a poor man»"
+  }
+ ],
+ "ahadith": [
+  {
+   "id": "H-ali-madhy",
+   "narrator": "ʿAlī b. Abī Ṭālib",
+   "matn_ar": "يغسل ذكره ويتوضأ",
+   "en": "al-madhy: he washes (ghasl) his private part and makes wuḍūʾ",
+   "sources": [
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "number": 303,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 108,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-ali-fadakh",
+   "narrator": "ʿAlī b. Abī Ṭālib",
+   "matn_ar": "إذا رأيت المذي فاغسل ذكرك، وتوضأ وضوءك للصلاة، فإذا فضخت الماء فاغتسل",
+   "en": "al-madhy: wash and wuḍūʾ; al-manī (faḍkh al-māʾ): ghusl",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 206,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 125,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-umm-salama",
+   "narrator": "Umm Salama",
+   "matn_ar": "نعم إذا رأت الماء",
+   "en": "ghusl on the woman who has a wet dream, when she sees al-māʾ (al-manī)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 282,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 126,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-aisha-fark",
+   "narrator": "ʿĀʾisha",
+   "matn_ar": "كنت أفرك المني من ثوب رسول الله صلى الله عليه وسلم فيصلي فيه",
+   "en": "al-manī rubbed off the garment and prayed in: ṭāhir",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 372,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 180,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-ruat-ibil",
+   "narrator": "ʿĀṣim b. ʿAdī",
+   "matn_ar": "رخص لرعاء الإبل في البيتوتة يرمون يوم النحر",
+   "en": "the herders' concession to stone on later days (F16)",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 1975,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 1080,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-hajj-sabi",
+   "narrator": "Ibn ʿAbbās",
+   "matn_ar": "فرفعت إليه امرأة صبيا، فقالت: ألهذا حج؟ قال: «نعم، ولك أجر»",
+   "en": "the ḥajj of a child below discernment (F73: «كما دل عليه النص»)",
+   "sources": [
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "number": 1336,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 985,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-irq-zalim",
+   "narrator": "Saʿīd b. Zayd",
+   "matn_ar": "من أحيا أرضا ميتة فهي له، وليس لعرق ظالم حق",
+   "en": "«a wrongdoer's root has no right» (F148 quotes it)",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 3073,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 1520,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-wasiyya-warith",
+   "narrator": "Abū Umāma",
+   "matn_ar": "إن الله قد أعطى كل ذي حق حقه فلا وصية لوارث",
+   "en": "no bequest to an heir (F48: «الوصية للوارث الذي نص الشارع على بطلانه»)",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 2870,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    },
+    {
+     "work": "tirmidhi.jami",
+     "witness": "openiti-tirmidhi-shamela7895",
+     "number": 2120,
+     "numbering": "Aḥmad Shākir et al. (Shamela 7895)",
+     "matn_ar": "إن الله تبارك وتعالى قد أعطى لكل ذي حق حقه فلا وصية لوارث"
+    }
+   ],
+   "albani": {
+    "work": "albani.sahih_daif_tirmidhi",
+    "witness": "openiti-albani-sdtirmidhi-shamela782",
+    "number": 2120,
+    "verdict": "sahih",
+    "numbering": "al-Tirmidhī's numbers; al-Irwāʾ's own entry is on a page blank on Shamela (PR-16)"
+   }
+  },
+  {
+   "id": "H-ihdad",
+   "narrator": "Umm Ḥabība, Zaynab bt. Jaḥsh",
+   "matn_ar": "لا يحل لامرأة تؤمن بالله واليوم الآخر، أن تحد على ميت فوق ثلاث، إلا على زوج، فإنها تحد عليه أربعة أشهر وعشرا",
+   "en": "mourning: over a husband four months and ten, over anyone else no more than three (F163: «كما دلت على ذلك نصوص السنّة»)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 1280,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    }
+   ],
+   "albani": {
+    "work": "albani.sahih_daif_tirmidhi",
+    "witness": "openiti-albani-sdtirmidhi-shamela782",
+    "number": 1195,
+    "verdict": "sahih",
+    "numbering": "al-Tirmidhī's numbers; it cites «الإرواء (2114)», blank on Shamela (PR-16)"
+   }
+  },
+  {
+   "id": "H-halaf-khayr",
+   "narrator": "Abū Hurayra",
+   "matn_ar": "من حلف على يمين فرأى غيرها خيرا منها فليكفر عن يمينه وليفعل",
+   "en": "breaking an oath (yamīn) for what is better, with kaffāra (F63 quotes its sense)",
+   "sources": [
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "number": 1650,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)"
+    }
+   ],
+   "albani": {
+    "work": "albani.sahih_daif_tirmidhi",
+    "witness": "openiti-albani-sdtirmidhi-shamela782",
+    "number": 1530,
+    "verdict": "sahih",
+    "numbering": "al-Tirmidhī's numbers; it cites «الإرواء (2084)»"
+   }
+  },
+  {
+   "id": "H-shufa-iqal",
+   "narrator": "Ibn ʿUmar",
+   "matn_ar": "الشفعة كحل العقال",
+   "en": "pre-emption lapses like an untied rope (F92: one of «الأحاديث التي استدلوا بها كلها ضعيفة»)",
+   "sources": [
+    {
+     "work": "ibn_maja.sunan",
+     "witness": "openiti-ibnmaja-shamela1198",
+     "number": 2500,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1198)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 1542,
+    "verdict": "daifJiddan",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-siwak-ashi",
+   "narrator": "ʿAlī (marfūʿ, as al-Bayhaqī gives it)",
+   "matn_ar": "إذا صمتم فاستاكوا بالغداة ولا تستاكوا بالعشى",
+   "en": "the ḥadīth against the fasting man's siwāk after midday (F20: «ولم يصح حديث يدل على الفرق»); in none of the pinned collections",
+   "sources": [],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 67,
+    "verdict": "daif",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-bahr-tahur",
+   "narrator": "Abū Hurayra",
+   "matn_ar": "هو الطهور ماؤه الحل ميتته",
+   "en": "the sea: «its water is ṭahūr, its dead lawful»",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 83,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 9,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-luhum-ibil",
+   "narrator": "Jābir b. Samura",
+   "matn_ar": "توضأ من لحوم الإبل",
+   "en": "wuḍūʾ from camel meat (Ibn al-Laḥḥām 45)",
+   "sources": [
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "number": 360,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 118,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   },
+   "cited_by": [
+    "ibn_lahham.qawaid_fawaid.openiti_lahham_shamay34193.q045"
+   ]
+  },
+  {
+   "id": "H-nafs-mia",
+   "narrator": "the letter to ʿAmr b. Ḥazm (al-Zuhrī read it; al-Nasāʾī 4855)",
+   "matn_ar": "فى النفس المؤمنة مائة من الإبل",
+   "en": "a hundred camels for a believing life (Ibn al-Laḥḥām 36); al-Nasāʾī without «المؤمنة»",
+   "sources": [
+    {
+     "work": "nasai.sunan_sughra",
+     "witness": "openiti-nasai-shamela829",
+     "number": 4855,
+     "numbering": "ʿAbd al-Fattāḥ Abū Ghudda (Shamela 829)",
+     "matn_ar": "في النفس مائة من الإبل"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 2248,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   },
+   "cited_by": [
+    "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q036"
+   ]
+  },
+  {
+   "id": "H-safiyya",
+   "narrator": "Anas",
+   "matn_ar": "أعتق صفية وجعل عتقها صداقها",
+   "en": "he freed Ṣafiyya and made her freeing her dower (Ibn Rajab 56)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 5086,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    },
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "number": 1365,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 1856,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   },
+   "cited_by": [
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056"
+   ]
+  },
+  {
+   "id": "H-aqiqa",
+   "narrator": "Umm Kurz",
+   "matn_ar": "عن الغلام شاتان مكافئتان",
+   "en": "for a boy two matching sheep (Ibn Rajab 147)",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 2834,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    },
+    {
+     "work": "tirmidhi.jami",
+     "witness": "openiti-tirmidhi-shamela7895",
+     "number": 1513,
+     "numbering": "Aḥmad Shākir et al. (Shamela 7895)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 1166,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   },
+   "cited_by": [
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147"
+   ]
+  },
+  {
+   "id": "H-khalf-saff",
+   "narrator": "Wābiṣa",
+   "matn_ar": "رأى رجلا يصلي خلف الصف وحده فأمره أن يعيد",
+   "en": "he ordered one praying alone behind the row to repeat (Ibn ʿUthaymīn, bayt 71)",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 682,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 541,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   },
+   "cited_by": [
+    "ibn_uthaymin.manzuma.archive_manzuma_djvu.q071"
+   ]
+  },
+  {
+   "id": "H-shurut",
+   "narrator": "Abū Hurayra",
+   "matn_ar": "المسلمون على شروطهم",
+   "en": "Muslims are bound by their stipulations, al-shurūṭ fīhā (al-Saʿdī Q22; F26)",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 3594,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    },
+    {
+     "work": "tirmidhi.jami",
+     "witness": "openiti-tirmidhi-shamela7895",
+     "number": 1352,
+     "numbering": "Aḥmad Shākir et al. (Shamela 7895)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 1303,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   },
+   "cited_by": [
+    "sadi.qawaid_jamia.archive_pdf1995.q022",
+    "sadi.qawaid_jamia.archive_pdf1995_tess.q022",
+    "sadi.tariq_wusul.archive_tariq_tess.q871"
+   ]
+  },
+  {
+   "id": "H-sulh",
+   "narrator": "Abū Hurayra",
+   "matn_ar": "الصلح جائز بين المسلمين",
+   "en": "settlement is permitted among Muslims (al-Saʿdī Q22)",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 3594,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    },
+    {
+     "work": "ibn_maja.sunan",
+     "witness": "openiti-ibnmaja-shamela1198",
+     "number": 2353,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1198)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 1425,
+    "verdict": "hasan",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   },
+   "cited_by": [
+    "sadi.qawaid_jamia.archive_pdf1995.q022",
+    "sadi.qawaid_jamia.archive_pdf1995_tess.q022"
+   ]
+  },
+  {
+   "id": "H-man-sabaqa",
+   "narrator": "Asmar b. Muḍarris",
+   "matn_ar": "من سبق إلى ما لم يسبق إليه أحد فهو له",
+   "en": "whoever reaches first what no Muslim reached has it (al-Saʿdī Q24); Abū Dāwūd reads «ماء» (water) where the uṣūl texts quote «ما»",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 3071,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering",
+     "matn_ar": "من سبق إلى ماء لم يسبقه إليه مسلم فهو له"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 1553,
+    "verdict": "daif",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   },
+   "cited_by": [
+    "sadi.qawaid_jamia.archive_pdf1995.q024",
+    "sadi.qawaid_jamia.archive_pdf1995_tess.q024"
+   ]
+  },
+  {
+   "id": "H-man-sabaqa-ahaqq",
+   "narrator": "Asmar b. Muḍarris",
+   "matn_ar": "من سبق إلى ما لم يسبق إليه مسلم فهو أحق به",
+   "en": "the same report in the wording «فهو أحق به» (al-Saʿdī Q24); Abū Dāwūd has «فهو له»",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 3071,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering",
+     "matn_ar": "من سبق إلى ماء لم يسبقه إليه مسلم فهو له"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 1555,
+    "verdict": "daif",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   },
+   "cited_by": [
+    "sadi.qawaid_jamia.archive_pdf1995.q024",
+    "sadi.qawaid_jamia.archive_pdf1995_tess.q024"
+   ]
+  },
+  {
+   "id": "H-nadhr-taa",
+   "narrator": "ʿĀʾisha",
+   "matn_ar": "من نذر أن يطيع الله فليطعه",
+   "en": "whoever vows (nadhr) to obey God, let him obey Him (al-Saʿdī Q47; F61)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 6696,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 2596,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   },
+   "cited_by": [
+    "sadi.qawaid_jamia.archive_pdf1995.q047",
+    "sadi.qawaid_jamia.archive_pdf1995_tess.q047"
+   ]
+  },
+  {
+   "id": "H-la-darar",
+   "narrator": "Ibn ʿAbbās; ʿUbāda",
+   "matn_ar": "لا ضرر ولا ضرار",
+   "en": "no harm and no reciprocal harm (al-Saʿdī)",
+   "sources": [
+    {
+     "work": "ibn_maja.sunan",
+     "witness": "openiti-ibnmaja-shamela1198",
+     "number": 2340,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1198)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 896,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   },
+   "cited_by": [
+    "sadi.qawaid_jamia.archive_pdf1995_tess.i015"
+   ]
+  },
+  {
+   "id": "H-niyyat",
+   "narrator": "ʿUmar",
+   "matn_ar": "إنما الأعمال بالنيات",
+   "en": "acts are by intentions (al-Saʿdī Q57); al-Bukhārī 1 too, but this witness first quotes it in the editor's introduction",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 2201,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    },
+    {
+     "work": "ibn_maja.sunan",
+     "witness": "openiti-ibnmaja-shamela1198",
+     "number": 4227,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1198)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 22,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   },
+   "cited_by": [
+    "sadi.qawaid_jamia.archive_pdf1995_tess.q057"
+   ]
+  },
+  {
+   "id": "H-radd",
+   "narrator": "ʿĀʾisha",
+   "matn_ar": "من عمل عملا ليس عليه أمرنا فهو رد",
+   "en": "whoever does an act not of our matter, it is rejected; in al-Bukhārī a muʿallaq, so pinned in Muslim",
+   "sources": [
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "number": 1718,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 276,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   },
+   "cited_by": [
+    "sadi.tariq_wusul.archive_tariq_tess.q636"
+   ]
+  }
+ ],
+ "athar": [
+  {
+   "id": "A-ibn-abbas-wady",
+   "by": "Ibn ʿAbbās",
+   "excerpt_ar": "أما المني فهو الذي منه الغسل وأما المذي والودي فقال: اغسل ذكرك أو مذاكيرك وتوضأ وضوءك للصلاة",
+   "en": "al-manī: ghusl; al-madhy and al-wadī: wash and wuḍūʾ",
+   "work": "albani.tamam_minna",
+   "witness": "shamela-11122",
+   "status": "mawquf",
+   "albani_ar": "هذا موقوف والاستدلال به وحده - مع أنه مختلف في صلاحيته للاحتجاج به"
+  },
+  {
+   "id": "A-shurayh-shufa",
+   "by": "Shurayḥ (al-qāḍī)",
+   "excerpt_ar": "وأخرج عبد الرزاق من قول شريح: إنما الشفعة لمن واثبها",
+   "en": "«pre-emption belongs to whoever jumps at it»: Shurayḥ's saying, not the Prophet's ﷺ (F92 cites it among «الأحاديث التي استدلوا بها»)",
+   "work": "albani.irwa",
+   "witness": "shamela-22592",
+   "status": "maqtu",
+   "albani_ar": "وأخرج عبد الرزاق من قول شريح"
+  }
+ ]
+}

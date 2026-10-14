@@ -12,7 +12,7 @@
     "fixed_in_ayn": true
    },
    "expected": false,
-   "note": "The pledgor's sale or other non-penetrating disposal of the pledge is invalid, «لأن المرتهن أخذ بحقه في الرهن من التوثيق والحبس وقبضه»: the right is taken and fixed in the thing, as with the bankrupt's creditors after the ḥajr. Manumission takes effect «لقوته وسرايته», like the ihram of the wife or slave without permission (whom they may not release «على إحدى الروايتين»); that is the follow-on, not the leading ruling."
+   "note": "The pledgor's sale or other non-penetrating disposal of the pledge is invalid («لا يصح»), «لأن المرتهن أخذ بحقه في الرهن من التوثيق والحبس وقبضه»: the right is taken and fixed in the thing, as with the bankrupt's creditors after the ḥajr. Manumission takes effect «لقوته وسرايته», like the ihram of the wife or slave without permission (whom they may not release «على إحدى الروايتين»); that is the follow-on, not the leading ruling."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f001",
@@ -23,7 +23,7 @@
     "fixed_in_ayn": true
    },
    "expected": false,
-   "note": "Once the shafīʿ demands, the buyer's disposal is invalid «لأن حقه تقرر وثبت»: the demand is either taking (al-Qāḍī's view) or announces it and bars the buyer. If the shafīʿ only forbids the buyer without demanding, the buyer is not barred and the shufʿa lapses on its being immediate (al-Qāḍī, al-Khilāf): a follow-on."
+   "note": "Once the shafīʿ demands, the buyer's disposal is invalid, not ṣaḥīḥ, «لأن حقه تقرر وثبت»: the demand is either taking (al-Qāḍī's view) or announces it and bars the buyer. If the shafīʿ only forbids the buyer without demanding, the buyer is not barred and the shufʿa lapses on its being immediate (al-Qāḍī, al-Khilāf): a follow-on."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f002",
@@ -62,7 +62,7 @@
      "ruling": true
     },
     {
-     "who": "Ibn Rajab «والأظهر»: invalid after the demand, «لوجوب الدفع»; even invalid absolutely when he knows of the need «لم يبعد»",
+     "who": "Ibn Rajab «والأظهر»: invalid («لا يصح») after the demand, «لوجوب الدفع»; even invalid absolutely when he knows of the need «لم يبعد»",
      "ruling": false
     }
    ],
@@ -177,7 +177,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "The wife's disposal of half the dowry after divorce, on the premise that it does not enter the husband's ownership by force. His right is a right to take that half itself, unclaimed; the reading gives the undemanded output (valid). Taṣḥīḥ al-Furūʿ (v08:p339) corrects Ibn Mufliḥ's lead on that premise, «يصح ولا يتصرف، وهذا الصحيح من المذهب», which reads as barring her disposal; so the reading is off the later madhhab and the case enters the ledger. The premise itself is not the madhhab (the half enters his ownership by ḥukm, naṣṣ)."
+   "note": "The wife's disposal of half the dowry after divorce (ṭalāq), on the premise that it does not enter the husband's ownership by force. His right is a right to take that half itself, unclaimed; the reading gives the undemanded output (valid). Taṣḥīḥ al-Furūʿ (v08:p339) corrects Ibn Mufliḥ's lead on that premise, «يصح ولا يتصرف، وهذا الصحيح من المذهب», which reads as barring her disposal; so the reading is off the later madhhab and the case enters the ledger. The premise itself is not the madhhab (the half enters his ownership by ḥukm, naṣṣ)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f010",
@@ -199,7 +199,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "The heirs' right is not yet demanded: «وانتقال الحق إلى الورثة مظنون فلا يمنع التصرف» (Ibn Rajab's «وقد يقال», for al-Qāḍī). The later works give no taṣḥīḥ; al-Kashshāf (v04:p329) transmits al-Ikhtiyārāt calling al-Qāḍī's view weak and requiring the gift be held so the heir can reject it, so the reading's side is not shown to be the madhhab and the case enters the ledger. Follow-ons: the buyer's disposal in a two-sided option is suspended on the sale's completion (naṣṣ; Abū Bakr, al-Tanbīh; al-Qāḍī); the son's disposal of the father's gift is not suspended; the sick man's disposal beyond the third, the mukātab's manumission, the pledgor's disposal (al-Intiṣār) and the buyer's of the pre-empted share suspend on permission."
+   "note": "The heirs' right is not yet demanded: «وانتقال الحق إلى الورثة مظنون فلا يمنع التصرف» (Ibn Rajab's «وقد يقال», for al-Qāḍī). The later works give no taṣḥīḥ; al-Kashshāf (v04:p329) transmits al-Ikhtiyārāt calling al-Qāḍī's view weak (ḍaʿīf) and requiring the gift be held so the heir can reject it, so the reading's side is not shown to be the madhhab and the case enters the ledger. Follow-ons: the buyer's disposal in a two-sided option is suspended on the sale's completion (naṣṣ; Abū Bakr, al-Tanbīh; al-Qāḍī); the son's disposal of the father's gift is not suspended; the sick man's disposal beyond the third, the mukātab's manumission, the pledgor's disposal (al-Intiṣār) and the buyer's of the pre-empted share suspend on permission."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f001",
@@ -283,7 +283,7 @@
     "emptying_permitted": true
    },
    "expected": false,
-   "note": "Leading ruling: land lent for planting with uprooting stipulated; the borrower who takes his plants owes neither the loss nor the levelling, «لأن المالك رضي بذلك باشتراطه». Without the stipulation two wujūh: not liable (al-Qāḍī, Ibn ʿAqīl: lending with knowledge of uprooting is consent) and liable (al-Kāfī: he uprooted by choice); that is the qāʿida's own «فوجهان» for a permission to occupy, left open by the reading. Ibn Rajab adds that if the lender asks for uprooting and offers the arsh, no levelling should be due; and for lent land sown with harmful roots, two possibilities."
+   "note": "Leading ruling: land lent for planting with uprooting stipulated («شرط عليه القلع»); the borrower who takes his plants owes neither the loss nor the levelling, «لأن المالك رضي بذلك باشتراطه». Without the stipulation two wujūh: not liable (al-Qāḍī, Ibn ʿAqīl: lending with knowledge of uprooting is consent) and liable (al-Kāfī: he uprooted by choice); that is the qāʿida's own «فوجهان» for a permission to occupy, left open by the reading. Ibn Rajab adds that if the lender asks for uprooting and offers the arsh, no levelling should be due; and for lent land sown with harmful roots, two possibilities."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f008",
@@ -295,7 +295,7 @@
     "emptying_permitted": true
    },
    "expected": false,
-   "note": "Leading ruling: land leased for planting with uprooting stipulated at the term's end: no liability. Without the stipulation the same two wujūh; al-Kāfī reports no dispute on liability (ẓāhir of al-Qāḍī's al-Mujarrad), al-Talkhīṣ is decisive for none, «بأن المالك دخل على ذلك»."
+   "note": "Leading ruling: land leased for planting with uprooting stipulated (al-shurūṭ fīhā) at the term's end: no liability. Without the stipulation the same two wujūh; al-Kāfī reports no dispute on liability (ẓāhir of al-Qāḍī's al-Mujarrad), al-Talkhīṣ is decisive for none, «بأن المالك دخل على ذلك»."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f009",

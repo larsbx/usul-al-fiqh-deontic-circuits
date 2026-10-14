@@ -7,7 +7,12 @@ import UsulTest.TakhrijMirror
 import UsulTest.Takhrij
 import UsulTest.M8Tranche3
 import UsulTest.CommandSchemata
+import UsulTest.TanaqudTable
+import UsulTest.FuruqTable
+import UsulTest.NususTable
 import UsulTest.Reconcile
 import UsulTest.FatawaBank
 import UsulTest.FatawaTakhrij
 
+
+import UsulTest.R2Sample1Semantic

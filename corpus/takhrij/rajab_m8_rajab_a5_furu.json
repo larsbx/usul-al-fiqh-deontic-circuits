@@ -89,7 +89,7 @@
         "first_trustee": true
       },
       "expected": true,
-      "note": "The buyer from an agent whose departure from his mandate voids the sale, the goods perishing with the buyer: «فللموكل تضمين القيمة من شاء منهما من الوكيل والمشتري على المشهور»; the agent, if made to pay, has recourse on the buyer «لتلفه في يده». No contrary position is named."
+      "note": "The buyer from an agent whose departure from his mandate makes the sale fāsid («يفسد بها البيع»), the goods perishing with the buyer: «فللموكل تضمين القيمة من شاء منهما من الوكيل والمشتري على المشهور»; the agent, if made to pay, has recourse on the buyer «لتلفه في يده». No contrary position is named."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f001",
@@ -250,7 +250,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "The fuller gives a man's cloth to another by mistake, who cuts it thinking it his: «على القصار إذا أبدل». Under the qāʿida the cutter relied on an apparent cause from another (the fuller) whose error is shown. Ibn Rajab harmonises the two riwāyāt (cutting vs. wearing); «ومن الأصحاب من جعلهما مختلفتين». Follow-on: dirhams spent by the one they were given to are on the spender. al-Inṣāf (v06:p078): «فإن لم يعلم المدفوع إليه حتى قطعه: غرم أرش القطع، على الصحيح من المذهب»; off the madhhab side, in the ledger."
+      "note": "The fuller gives a man's cloth to another by mistake, who cuts it thinking it his: «على القصار إذا أبدل». Under the qāʿida the cutter relied on an apparent cause from another («سبب ظاهر من غيره», the fuller) whose error is shown. Ibn Rajab harmonises the two riwāyāt (cutting vs. wearing); «ومن الأصحاب من جعلهما مختلفتين». Follow-on: dirhams spent by the one they were given to are on the spender. al-Inṣāf (v06:p078): «فإن لم يعلم المدفوع إليه حتى قطعه: غرم أرش القطع، على الصحيح من المذهب»; off the madhhab side, in the ledger."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f008",
@@ -314,7 +314,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "The irrevocably divorced woman took maintenance thought due for a pregnancy, then proved not pregnant (the text's «ثم بانت حاملا» is read as حائلا, as the case requires): «ففي الرجوع عليها روايتان». She took it as her own. al-Inṣāf (v09:p362): «إحداهما: يرجع عليها. وهو المذهب»; on the madhhab side."
+      "note": "The irrevocably divorced woman (al-muṭallaqa al-bāʾin) took maintenance thought due for a pregnancy, then proved not pregnant (the text's «ثم بانت حاملا» is read as حائلا, as the case requires): «ففي الرجوع عليها روايتان». She took it as her own. al-Inṣāf (v09:p362): «إحداهما: يرجع عليها. وهو المذهب»; on the madhhab side."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f011",
@@ -436,7 +436,7 @@
       "expected": true,
       "positions": [
         {
-          "who": "Aḥmad's naṣṣ, Ibn Rajab «والصحيح الإطلاق»: charity without the judge",
+          "who": "Aḥmad's naṣṣ, Ibn Rajab «والصحيح الإطلاق»: charity («يتصدق به») without the judge",
           "ruling": true
         },
         {

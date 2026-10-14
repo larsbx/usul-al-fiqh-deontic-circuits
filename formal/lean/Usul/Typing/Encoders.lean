@@ -388,7 +388,7 @@ def holdingAfterContractEnd : Typed Situation (Bool) where
   run x1 := Usul.Refinements.liableAfterEnding x1
   proj_embed := fun _ => rfl
 
-/-- `void_contract_concluded` reads `Qaida.Rajab46`. -/
+/-- `void_contract_concluded` (is the fāsid contract concluded?) reads `Qaida.Rajab46`. -/
 def voidContractConcluded : Typed Situation (Bool) where
   Local := (Bool) × (Bool)
   proj s := do pure (← s.binding, ← s.pervasive)

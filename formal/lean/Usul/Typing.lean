@@ -101,7 +101,7 @@ def trustLoss : Typed Situation Bool where
   run | (h, t, n) => lossLiable h t n
   proj_embed := fun _ => rfl
 
-/-- `trust_voidance` reads Q14: a pure trust is voided by transgression. -/
+/-- `trust_voidance` reads Q14: a pure trust (amāna maḥḍa) is voided by transgression («تبطل بالتعدي»: bāṭil). -/
 def trustVoidance : Typed Situation Bool where
   Local := Bool × Bool
   proj s := do pure (← s.pureTrust, ← s.transgressed)

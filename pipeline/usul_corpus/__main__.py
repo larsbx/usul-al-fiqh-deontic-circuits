@@ -30,7 +30,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-from . import hadith
+from . import furuq, hadith, nusus, tanaqud
 from .fatawa import answers, fold, snapshot_witnesses, write_jsonl_gz
 from .labels import label, merge_review, report, review_sample
 from .bank_review import STAGES, en_vote, lean_guards, review as bank_review
@@ -82,6 +82,20 @@ def _works(only: str | None) -> list[dict]:
     return [w for w in works if w["status"] in FETCHABLE and (only is None or w["id"] == only)]
 
 
+def _pin(wid: str, entry: dict) -> None:
+    """Merge one witness's pin into lock.json, re-reading it under an exclusive lock so that a
+    concurrent fetch cannot overwrite another's pin (problem register PR-20)."""
+    import fcntl
+    path = CORPUS / "lock.json"
+    with open(path.with_suffix(".json.lk"), "w") as guard:
+        fcntl.flock(guard, fcntl.LOCK_EX)
+        lock = _load(path).get("witnesses", {})
+        lock[wid] = entry
+        tmp = path.with_suffix(".json.tmp")
+        tmp.write_text(json.dumps({"witnesses": dict(sorted(lock.items()))}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        tmp.replace(path)
+
+
 def cmd_fetch(args: argparse.Namespace) -> int:
     changed = []
     for work in _works(args.work):
@@ -93,9 +107,7 @@ def cmd_fetch(args: argparse.Namespace) -> int:
                 restore(w["id"], lock, TEXTS, CACHE)  # a committed public-domain text saves the download
             entry, drift = merge_lock(lock.get(w["id"]), fetch(w, CACHE, args.max_pages, args.refresh))
             changed += [w["id"]] * drift
-            # read-modify-write per witness: a fetch that runs for hours never writes back a stale lock
-            lock = _load(CORPUS / "lock.json").get("witnesses", {})
-            _dump(CORPUS / "lock.json", {"witnesses": dict(sorted({**lock, w["id"]: entry}.items()))})
+            _pin(w["id"], entry)  # read-modify-write under a file lock: neither a stale nor a concurrent fetch loses a pin (PR-20)
             print(f"{w['id']:40} {entry['bytes']:>10} B  {entry['sha256'][:12]}{'  CHANGED since pinned' if drift else ''}")
     if changed:
         print(f"content changed since pinned (see git diff corpus/lock.json): {', '.join(changed)}", file=sys.stderr)
@@ -272,6 +284,9 @@ def _link_matches(link: dict, r: dict) -> bool:
 SCALE_LEAN = ROOT / "formal" / "lean" / "HadithTest" / "ScaleMap.lean"
 DAIFA_LEAN = ROOT / "formal" / "lean" / "HadithTest" / "Daifa.lean"
 SEAM_LEAN = ROOT / "formal" / "lean" / "HadithTest" / "Seam.lean"
+TANAQUD_LEAN = ROOT / "formal" / "lean" / "UsulTest" / "TanaqudTable.lean"
+FURUQ_LEAN = ROOT / "formal" / "lean" / "UsulTest" / "FuruqTable.lean"
+NUSUS_LEAN = ROOT / "formal" / "lean" / "UsulTest" / "NususTable.lean"
 _SOURCES = {"Usul": "corpus/signature_map.json and\n-- corpus/proposals/*.json", "Hadith": "corpus/hadith/*.json"}
 
 
@@ -295,12 +310,19 @@ def _lean_names() -> list[str]:
     sigma = [link["lean"] for link in _load(CORPUS / "signature_map.json")["links"]]
     proposals = [n for p in sorted((CORPUS / "proposals").glob("*.json")) for r in _load(p)["rules"] for n in r["lean"]]
     review = [n for p in sorted((CORPUS / "review").glob("*.json")) for n in _review_names(_load(p))]  # IQ and research registers
+    bank = [n for d in ("tanaqud", "furuq") for p in sorted((CORPUS / d).glob("*.json")) for n in _bank_names(_load(p))]
     citations = [n for p in sorted((CORPUS / "citations").glob("*.json")) for ns in _load(p)["formalises"].values() for n in ns]
     dossier = [n for e in load_dossier()["entries"] for n in e["lean"]]
     glossary = [n for t in _load(GLOSSARY)["terms"] for n in t.get("lean", [])]
     m8 = [n for p in sorted((CORPUS / "worklists").glob("*_plan.json"))
           for q in _load(p)["selection"] for n in q["reading"]]
-    return sigma + proposals + review + citations + dossier + glossary + m8
+    return sigma + proposals + review + bank + citations + dossier + glossary + m8
+
+
+def _bank_names(reg: dict) -> list[str]:
+    """Lean constants a register of the bank applied to itself names: its module's, and each entry's."""
+    return [*reg["lean"], *(n for e in reg.get("pairs", []) + reg.get("proved_earlier", []) + reg.get("items", [])
+                             for n in e.get("lean", []) + e.get("grounds", []))]
 
 
 def _review_names(reg: dict) -> list[str]:
@@ -455,7 +477,7 @@ def docs_pages() -> dict[Path, str]:
     titles = {w["id"]: (w["title_tr"], w.get("reception", {}).get("genre", "")) for w in _load(CORPUS / "registry.json")["works"]}
     titles |= {a["id"]: (a["name_tr"], "") for a in _load(CORPUS / "reception" / "authors.json")["authors"]}
     return {ROOT / "docs/architecture/dossier.md": render_dossier(load_dossier(), records, {t["key"]: t for t in glossary["terms"]}),
-            ROOT / "docs/glossary.md": render_glossary(glossary, records),
+            ROOT / "docs/glossary.md": render_glossary(glossary, records, "Qurʾān: " + _load(CORPUS / "nusus/foundation.json")["attribution"]["quran"]),
             ROOT / "docs/architecture/reception-counts.md": render_counts(_load(CORPUS / "reception" / "report.json"), titles)}
 
 
@@ -536,6 +558,9 @@ def cmd_signature(_: argparse.Namespace) -> int:
     SCALE_LEAN.write_text(signature_lean(hadith_lean_names(), "Hadith"), encoding="utf-8")
     DAIFA_LEAN.write_text(hadith.daifa_lean(CORPUS), encoding="utf-8")
     SEAM_LEAN.write_text(hadith.seam_lean(_load(CORPUS / "hadith" / "irwa_join.json")["links"]), encoding="utf-8")
+    TANAQUD_LEAN.write_text(tanaqud.table_lean(tanaqud.registers(CORPUS)), encoding="utf-8")
+    FURUQ_LEAN.write_text(furuq.table_lean(CORPUS), encoding="utf-8")
+    NUSUS_LEAN.write_text(nusus.table_lean(nusus.load(CORPUS), _load(GLOSSARY), [i for t in furuq.tranches(CORPUS) for i in t["items"]]), encoding="utf-8")
     return 0
 
 

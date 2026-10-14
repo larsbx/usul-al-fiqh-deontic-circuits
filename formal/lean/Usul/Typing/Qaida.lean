@@ -42,7 +42,7 @@ structure ItlafQasd where
 
 /-- al-Saʿdī Q14 «التلف في يد الأمين غير مضمون إذا لم يتعد أو يفرط، وفي يد الظالم مضمون مطلقاً»: the
 hand, and the trustee's transgression («يتعد») and negligence in safekeeping («يفرط»); with
-`pureTrust`, the pure trust (amāna maḥḍa) that transgression voids. -/
+`pureTrust`, the pure trust (amāna maḥḍa) that transgression voids («تبطل بالتعدي», Ibn Rajab 45). -/
 structure Amana where
   hand : Option Hand := none
   pureTrust : Option Bool := none
