@@ -1,0 +1,409 @@
+{
+  "suite": "m8_rajab_rajab_a13",
+  "status": "candidate",
+  "provenance": "Shard rajab-a13 (lane A): every farʿ record of Ibn Rajab's qawāʿid 119 (with its two attached qawāʿid), 120, 122 and 124, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA13). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f001",
+      "encoder": "specific_singled_out",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "connected": true,
+        "revocable": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the aṣḥāb: his reservation of the room is accepted and the room is outside the iqrār («صرح به الأصحاب»; «المنصوص عن أحمد» that the clause joined by و is one sentence with what precedes; al-Inṣāf «بلا نزاع»)",
+          "ruling": true
+        },
+        {
+          "who": "Ibn Rajab's takhrīj on Ibn ʿAqīl's choice in «كان له علي»: the clause joined by و is a separate claim, so the reservation is not accepted («وقضيته أنه لا يقبل منه في القضاء»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«لو قال هذه الدار لزيد ولي منها هذا البيت قبل ولم يدخل البيت في الإقرار صرح به الأصحاب». One connected utterance, an iqrār (not revocable): the specific (the room) is singled out with its own ruling. Ibn Rajab draws a contrary implication from Ibn ʿAqīl's ground (the و-clause as an independent claim, as in «أنت طالق وعليك ألف») and rejects it: «والصحيح الأول». al-Inṣāf (v12:p174): «أو \" هذه الدار له، وهذا البيت لي \" قبل منه) . بلا نزاع»; Sharḥ al-Muntahā and Kashshāf (v06:p469, «بكلام متصل») likewise. On the madhhab side. Follow-on: «أنت طالق وعليك ألف», «ففيها روايتان»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f002",
+      "encoder": "specific_singled_out",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "connected": true,
+        "revocable": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Aḥmad's naṣṣ (riwāyat Ibn Hāniʾ and ʿAlī b. Saʿīd), with al-Qāḍī's report of agreement: Zayd takes nothing of the masākīn's share (the madhhab, «وعليه الأصحاب», per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "the wajh Ibn ʿAqīl in al-Funūn reports al-Qāḍī deriving: Zayd shares with them when he is poor",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«لو وصى لزيد بشيء وللمساكين بشيء وهو مسكين فإنه لا يستحق مع المساكين من نصيبهم شيئا نص عليه أحمد». The two bequests are set in one utterance as stated, and a bequest is revocable: the specific (Zayd) is singled out on either fact. al-Inṣāf (v07:p248): «ولو كان زيد فقيرا: لم يستحق من نصيب الفقراء شيئا. نص عليه في رواية ابن هانئ، وعلي بن سعيد. وهو المذهب. وعليه الأصحاب», reporting the takhrīj as a wajh. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f003",
+      "encoder": "specific_singled_out",
+      "class": "derivable",
+      "facts": {
+        "connected": false,
+        "revocable": true
+      },
+      "expected": true,
+      "note": "A ring to Zayd and its stone to another, a slave to one and its use to another, a house and its dwelling, «بلفظ لا يقتضي انفراد كل واحد بما وصى له به صريحا»: Abū Bakr in al-Shāfī, «لكل واحد منهما ما وصى له به لا يشاركه الآخر فيه». Whether the two were in one connected utterance is not stated (al-Majd reads Abū Bakr so, taking it from the iqrār masʾala); the facts take it as unstated (connected false), and since a bequest is revocable the specific is singled out either way («أشهرهن تقديم الخاص مطلقا»). Aḥmad's own naṣṣ here is tawaqquf (Muhannā: «هذه مشكلة»), not a contrary ruling, and Ibn Rajab reads its ẓāhir as «أنه يكون للموصى له به بخصوصه». No contrary ruling is reported, so derivable. The later madhhab agrees: al-Iqnāʿ (v03:p069) «وأن وصى له بخاتم ولآخر بفصه صح وليس لواحد منهما الانتفاع به إلا بإذن الآخر». Follow-on: one item to two men in turn is not a retraction but shared («المشهور في المذهب»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f004",
+      "encoder": "specific_singled_out",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "connected": true,
+        "revocable": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Aḥmad's naṣṣ (riwāyat al-Ḥasan b. Thawāb): the fixed monthly sum is paid from the third first and any surplus returns to the legatee of the third, the fixed bequest being as the specific to the general (Ibn Rajab: «فتعين حملها على ما قدمناه»; Kashshāf «نص عليه»)",
+          "ruling": true
+        },
+        {
+          "who": "the wajh al-Qāḍī reports, «وقد قيل لا يكون رجوعا»: the third is divided into four shares between the two legatees, as with a bequest of all one's property and of a third",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«لو وصى لرجل بثلثه ووصى لآخر بقدر منه»: «ثلثي هذا لفلان ويعطى فلان منه مائة درهم في كل شهر إلى أن يموت قال هو للآخر منهما ... وإذا مات هذا أو فضل شيء يرد إلى صاحب الثلث». One utterance and a bequest: the specific is singled out. Kashshāf (v04:p380): «ولو وصى لشخص بثلث ماله ويعطى زيد منه كل شهر مائة حتى يموت صح فإن مات وبقي شيء فهو للأول نص عليه». On the madhhab side. Al-Qāḍī's other reading (the second bequest a retraction of the first, the lifetime having no bound) is a third view Ibn Rajab rejects with the division («وكلا الوجهين المذكورين فيهما ضعف»), since Aḥmad returns the surplus to the first. Follow-ons in the record: al-Khiraqī's masʾala (a specific slave to one and a common third to another crowd in the slave, «وتبعه على ذلك ابن حامد والقاضي والأصحاب»), which Ibn Rajab confines to two separate times; the second division of the qāʿida (separate utterances); and the opening of the first attached qāʿida."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f005",
+      "encoder": "takes_only_by_special",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "special_title": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Aḥmad's naṣṣ: Zayd is given nothing of the neighbours' share («نص أحمد على الصورتين»)",
+          "ruling": true
+        },
+        {
+          "who": "al-Qāḍī's takhrīj (reported by Ibn ʿAqīl in al-Funūn): he takes by the title of neighbour too, as the zakāt collector takes for poverty with his collecting",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«إذا وصى لزيد بشيء ولجيرانه بشيء وهو من الجيران فإنه لا يعطى من نصيب الجيران». Zayd holds a special title (the named bequest) beside the general (neighbours): he takes only by the special. Kashshāf (v04:p366): «وكذا لو وصى لزيد وجيرانه بشيء لم يشاركهم زيد بكونه جارا». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f006",
+      "encoder": "takes_only_by_special",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "special_title": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Aḥmad's naṣṣ: Zayd, being poor, takes nothing of the poor's share (the madhhab, «وعليه الأصحاب», per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "al-Qāḍī's takhrīj (reported by Ibn ʿAqīl in al-Funūn): he takes by the title of poverty too",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«إذا وصى لزيد بشيء وللفقراء بشيء وزيد فقير. لا يعطي من نصيب الفقراء شيئا نص أحمد على الصورتين وخرج القاضي ... الاستحقاق بجهة الفقراء والجوار». A special title beside the general: he takes only by the special. al-Inṣāf (v07:p248): «ولو كان زيد فقيرا: لم يستحق من نصيب الفقراء شيئا ... وهو المذهب. وعليه الأصحاب». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f007",
+      "encoder": "takes_only_by_special",
+      "class": "derivable",
+      "facts": {
+        "special_title": true
+      },
+      "expected": true,
+      "note": "«لو وصى لأقاربه بشيء ووصى أن يكفر عنه بإيمان فلا يعطى من الكفارة من أخذ من الوصية من الأقارب نص على ذلك في رواية صالح». The relative who took by the special title (the bequest to relatives) takes nothing by the general (the poor who receive the expiation). No dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f008",
+      "encoder": "takes_only_by_special",
+      "class": "derivable",
+      "facts": {
+        "special_title": true
+      },
+      "expected": true,
+      "note": "«لو وصى للفقراء وورثته فقراء لم يجز لهم الأخذ من الوصية نص عليه في رواية حرب. وقال الوارث لا يصرف في المال مرتين». The heirs hold the special title (inheritance) and take nothing by the general (the poor). No dispute is reported on the leading ruling. Follow-ons: the heir does not perform the ḥajj for the deceased and also take the bequest, which al-Qāḍī confines to the excess over the fee of the like («فأما نفقة المثل فيجوز ; لأنها معاوضة»); and the opening of the second attached qāʿida with its first ṣūra, taking zakāt by poverty, debt and fighting together."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f009",
+      "encoder": "entitlement_multiplies",
+      "class": "derivable",
+      "facts": {
+        "combined_attributes": true,
+        "single_jiha": false
+      },
+      "expected": true,
+      "note": "«الأخذ من الخمس بأوصاف متعددة. (ومنها) الأخذ من الصدقات المنذورة والفيء والوقوف». Several attributes, each its own head of the khums (or of a vowed charity, the fayʾ, a waqf), meet in one person: the entitlement multiplies, «المشهور في المذهب أنها كالأعيان في تعدد الاستحقاق». No dispute is reported in the record."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f010",
+      "encoder": "entitlement_multiplies",
+      "class": "derivable",
+      "facts": {
+        "combined_attributes": true,
+        "single_jiha": false
+      },
+      "expected": true,
+      "note": "«المواريث بأسباب متعددة كالزوج ابن عم وابن العم إذا كان أخا لأم بالاتفاق». The husband who is a cousin inherits by both causes, by agreement: the leading ruling, without dispute. Follow-on: the grandmothers related by two kinships, dhawū al-arḥām and the Majūs related by two lines inherit by all of them «على الصحيح من المذهب», implying a contrary view not named in the record."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f011",
+      "encoder": "entitlement_multiplies",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "combined_attributes": true,
+        "single_jiha": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the madhhab and the aṣḥāb: she is divorced three times, each suspension met by its own attribute (al-Inṣāf «وهذا المذهب، وعليه الأصحاب»)",
+          "ruling": true
+        },
+        {
+          "who": "al-Shaykh Taqī al-Dīn: one divorce only, absent an intention otherwise, the swearer's evident meaning being one divorce whichever attribute is met",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«إن كلمت رجلا فأنت طالق وإن كلمت فقيها فأنت طالق وإن كلمت أسود فأنت طالق فكلمت رجلا فقيها أسود طلقت ثلاثا». Three attributes, each a separate suspension, meet in one man: the reading multiplies. Taqī al-Dīn: «لا تطلق إلا طلقة واحدة في المسائل كلها مع الطلاق». al-Inṣāf (v09:p065): «فرأت رجلا أسود فقيها: طلقت ثلاثا) ، وهذا المذهب، وعليه الأصحاب»; Kashshāf likewise. On the madhhab side. Follow-ons: the birth of a girl under «إن ولدت ولدا ... وإن ولدت أنثى» (two divorces); Aḥmad's naṣṣ «على ما نوى» for one and two divorces on a boy and a girl, against Sufyān and the aṣḥāb; and the caveat that one head reached by several attributes does not multiply (the bequest to relatives, al-Qāḍī on full and half brothers)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f000",
+      "encoder": "double_kinship_preferred",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "double_kinship": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "«رواية واحدة»: the full brother is preferred to the paternal brother in inheriting by walāʾ (al-Inṣāf «على الصحيح من المذهب. وعليه الأصحاب قاطبة»)",
+          "ruling": true
+        },
+        {
+          "who": "Ibn al-Zāghūnī's takhrīj in al-Talkhīṣ from the nikāḥ masʾala: another riwāya that they share",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«في الأخ للأبوين على الأخ للأب في الميراث بالولاء رواية واحدة، وخرج ابن الزاغوني ... رواية أخرى باشتراكه». The full brother's maternal kinship has no role in walāʾ, yet he is preferred. al-Inṣāf (v07:p314): «فيقدم الأخ من الأبوين على الأخ من الأب. على الصحيح من المذهب. وعليه الأصحاب قاطبة», then reporting the takhrīj. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f001",
+      "encoder": "double_kinship_preferred",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "double_kinship": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the riwāya preferring the full brother in guardianship of marriage, chosen by Abū Bakr and preferred by the author of al-Mughnī («المذهب عند المتأخرين» per al-Inṣāf; al-Iqnāʿ)",
+          "ruling": true
+        },
+        {
+          "who": "the riwāya that the two are equal («المذهب عند المتقدمين» per al-Inṣāf; al-Khiraqī)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«تقديم الأخ للأبوين على الأخ للأب في ولاية النكاح في إحدى الروايتين، اختارها أبو بكر ورجحه صاحب المغني». The reading prefers the double kinship. al-Inṣāf (v08:p069): «ثم أخوها لأبويها. ثم لأبيها) . هذا إحدى الروايتين. وهو المذهب عند المتأخرين ... وعنه: هما سواء. وهو المذهب عند المتقدمين»; the muʿtamad matn al-Iqnāʿ (v03:p172) «ثم أخوها لأبوين ثم لأبيها». On the side of the later madhhab. Follow-on in the record: preferring him in bearing the ʿāqila, «وفيه الروايتان»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f002",
+      "encoder": "double_kinship_preferred",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "double_kinship": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the riwāya preferring the full brother in leading the funeral prayer (al-Inṣāf «على الصحيح من المذهب»)",
+          "ruling": true
+        },
+        {
+          "who": "the riwāya that the two are equal (al-Qāḍī's equalising, as in nikāḥ)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«تقديمه عليه في الصلاة على الجنازة، وفيه الروايتان أيضا». al-Inṣāf (v02:p474): «ثم أقرب العصبة، على الصحيح من المذهب، وعليه الأصحاب ... فيقدم الأخ والعم وعم الأب وابن الأخ من الأبوين على من كان لأب منهم، وجعلهما القاضي في التسوية كالنكاح». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f003",
+      "encoder": "double_kinship_preferred",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "double_kinship": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Qāḍī and the aṣḥāb: in a waqf or bequest to the nearest, the full brother is preferred, being alone in a kinship as one a degree nearer (al-Inṣāf «وهو المذهب، وعليه جماهير الأصحاب»)",
+          "ruling": true
+        },
+        {
+          "who": "al-Shaykh Taqī al-Dīn, in the waqf: no preference by a kinship foreign to the entitlement, so the two are equal",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«في الوقف المقدم فيه بالقرب، وكذلك الوصية، فيترجح الأخ للأبوين على الأخ للأب صرح به القاضي والأصحاب في الوصية ... وخالف الشيخ تقي الدين في الوقف». al-Inṣāf (v07:p244), on the bequest to the nearest relative: «والأخ من الأبوين: أحق منهما) . وهو المذهب، وعليه جماهير الأصحاب», noting Taqī al-Dīn's dissent «لكن ذكره في الوقف»; and (v07:p099) «والوصية كالوقف في هذا الفصل», with Taqī al-Dīn's choice of equality in the waqf to the nearest reported from this qāʿida. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f001",
+      "encoder": "custom_restricts_general",
+      "class": "derivable",
+      "facts": {
+        "customary_usage": true
+      },
+      "expected": true,
+      "note": "A bequest to another man's relatives while the testator used to give to some of them, or to the jurists or the poor while he used to give to some: «قال القاضي في خلافه لا رواية فيه، ولا يمتنع أن نقول فيه ما نقوله في أقارب نفسه», that is, the general is confined to whom he used to give, as in the bequest to his own relatives. No contrary ruling is reported; the ruling is al-Qāḍī's iḥtimāl, the qāʿida's own khilāf (the report that ṣila is not regarded) being on the opening masʾala."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f002",
+      "encoder": "custom_restricts_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "customary_usage": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the wajh Ibn Rajab derives: the second tier is confined to the children of those named, «اعتبارا بآبائهم», the gift being one",
+          "ruling": true
+        },
+        {
+          "who": "Aḥmad's naṣṣ (riwāyat Ḥarb, «هم شركاء»): the second tier includes all the grandchildren (al-Muwaffaq, put first in al-Furūʿ, al-Mughnī and al-Sharḥ, corrected by al-Ḥārithī, per al-Inṣāf; al-Iqnāʿ with Kashshāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "«لو وقف على بعض أولاده ثم على أولاد أولاده فهل يختص البطن الثاني بأولاد المسمين ... نص أحمد في رواية حرب على أنه يشمل جميع ولد الولد. ويتخرج وجه آخر بالاختصاص». The waqif's own giving within the same gift went to some of his children; the reading confines the general «ولد ولده» to their children, as the bequest is confined to whom he used to give («فحمل بعضها على بعض أقرب من حمل الوصية على العطية في الحياة»). al-Inṣāf (v07:p047) gives the waqf «على المسلمين وأولادهما وأولاد الثالث ... ذكره المصنف مختارا له. وقدمه في الفروع، والمغني، والشرح», and Kashshāf (v04:p281) holds it: off the madhhab side, so a ledger entry. Follow-ons: whether the first tier includes the unnamed child (al-Qāḍī and Ibn ʿAqīl from the general «صدقة على ولده»), which Ibn Rajab rejects (a badal or ʿaṭf bayān restricts)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f003",
+      "encoder": "custom_restricts_general",
+      "class": "derivable",
+      "facts": {
+        "customary_usage": true
+      },
+      "expected": true,
+      "note": "«لو استأجر أجيرا يعمل له مدة معينة حمل على ما جرت العادة بالعمل فيه من الزمان دون غيره بغير خلاف». The general period is confined to the customary hours of work, without dispute."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f004",
+      "encoder": "custom_restricts_general",
+      "class": "derivable",
+      "facts": {
+        "customary_usage": true
+      },
+      "expected": true,
+      "note": "«لو حلف لا يأكل من هذه الشجرة اختصت يمينه بما يؤكل منها عادة وهو الثمر دون ما لا يؤكل عادة كالورق والخشب». The oath is confined to what is customarily eaten of the tree. No dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f000",
+      "encoder": "cause_restricts_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "prompting_cause": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "no breach by another lunch, the oath being confined to the lunch it was sworn on (al-Qāḍī in al-Kifāya and the author of al-Muḥarrar «جزم»; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "the wajh (and riwāya) that he breaks it by any lunch, by the generality of the word",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«لو دعي إلى غداء فحلف لا يتغدى، فهل يحنث بغداء غير ذلك المحلوف بسببه؟ على وجهين وجزم القاضي في الكفاية وصاحب المحرر بعدم الحنث». The invitation prompted the oath: the reading confines it to that lunch. al-Inṣāf (v11:p054): «وإن دعي إلى غداء، فحلف لا يتغدى: اختصت يمينه به إذا قصده) . وهذا المذهب. قال في الفروع: لم يحنث بغيره. على الأصح ... وعنه: يحنث». On the madhhab side; al-Muqniʿ's wording ties it to his intending it, al-Furūʿ states it without the proviso."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f001",
+      "encoder": "cause_restricts_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "prompting_cause": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the oath dissolves with the dismissal, being confined to his office (al-Taṣḥīḥ and al-Wajīz per al-Inṣāf; al-Muntahā «والعبرة بخصوص السبب»)",
+          "ruling": true
+        },
+        {
+          "who": "it does not dissolve («قال القاضي: قياس المذهب لا تنحل»; al-Furūʿ: «ونصه يحنث»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«لو حلف لا رأيت منكرا إلا رفعته إلى فلان القاضي، فعزل فهل تنحل يمينه؟ على وجهين». The office, the evident occasion of reporting a wrong to a qāḍī, prompted the oath: the reading confines it to his tenure, so it dissolves. al-Tarhīb, which Ibn Rajab quotes, puts the two wujūh only where no cause or indication exists and confines the oath to the office where the cause indicates it («ومع دلالة الحال والسبب يختص الرفع بحالة الولاية وجها واحدا»), the same output. al-Muntahā (v05:p227): «والعبرة بخصوص السبب لا بعموم اللفظ ... أو حلف لوال لا رأى منكرا إلا رفعه إليه ... فعزل ... لم يحنث بذلك بعد ولو لم يرد ما دام كذلك»; al-Inṣāf (v11:p056) on the case without intention: «أحدهما: تنحل يمينه. صححه التصحيح». On the madhhab side. Follow-ons from al-Tarhīb: whether he is quit by reporting after dismissal, the undesignated walī («لتردد الألف واللام بين تعريف العهد والجنس»), and knowing of the wrong after the walī knew."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f002",
+      "encoder": "cause_restricts_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "prompting_cause": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the oath dissolves once the slave is sold, the wife divorced or the debtor has paid, being confined to his authority over them (al-Qāḍī, al-Muwaffaq «هذا أولى», per al-Inṣāf; al-Muntahā)",
+          "ruling": true
+        },
+        {
+          "who": "it does not dissolve, by the generality of the word (the wajh on the generality, «ونصه يحنث» per al-Furūʿ)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«لو حلف على عبده أو زوجته أو لغريمه لا يخرج إلا بإذنه، ثم باع العبد وطلق الزوجة ووفى الغريم، فهل تنحل يمينه ؟ على الوجهين». His authority prompted the oath: the reading confines it and it dissolves. al-Inṣāf (v11:p056): «وإن لم تكن له نية: انحلت يمينه أيضا. ذكره القاضي. لأن الحال تصرف اليمين إليه»; al-Muntahā (v05:p227) «أو لا يخرج إلا بإذنه ونحوه فعزل أو زوجته فطلقها أو على رقيقه فأعتقه ونحوه لم يحنث». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f003",
+      "encoder": "cause_restricts_general",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "prompting_cause": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the riwāya Ibn ʿAqīl derives in ʿUmad al-Adilla: the general word is confined to its cause, so the wife who asked is not divorced",
+          "ruling": true
+        },
+        {
+          "who": "Aḥmad's naṣṣ (riwāyat al-Marrūdhī and Ibn Hāniʾ): the wife addressed is divorced by «كل امرأة لي طالق» («وقطع به جماعة» per al-Furūʿ)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "«لو قالت له زوجته: تزوجت علي؟ قال كل امرأة لي طالق، فإن المخاطبة تطلق بذلك نص عليه»; Abū Dāwūd's report has Aḥmad decline to answer («وهذا توقف منه»), and Ibn ʿAqīl makes it two riwāyas. Her question about another wife prompted the general word; confined to it, the reading leaves the addressee out. al-Furūʿ (v11:p024): «كل امرأة لي طالق تطلق على نصه وقطع به جماعة أخذا بالأعم من لفظ وسبب»: off the madhhab side, so a ledger entry. Candidate farq (not made here): the asker is herself the occasion of the answer, and «سبب الحكم لا يجوز إخراجه من العموم بالتخصيص» (Sharḥ al-Muntahā v03:p103, on a cognate masʾala)."
+    }
+  ]
+}
