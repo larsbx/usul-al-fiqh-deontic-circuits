@@ -481,19 +481,19 @@ Results on the round:
 - **Reconciliation:** 21 contradictions with 55 evidence items: 19 residues, 1 for the reading (114.f003, on cognate rulings only) and 1 tawaqquf (109.f018). At integration two iḥtimālāt graded as bare wujūh were regraded `takhrij` (109.f018, 114.f003); neither outcome changed.
 - **Register questions** are listed in [`taarud-reconciliation.md`](taarud-reconciliation.md).
 
-**Lane A, round 4 (parallel; qawāʿid 119–131; 89 furūʿ).** Four shards (`rajab-a13` … `rajab-a16`) from the pinned base `50f04fc`; the brief added round 3's review lessons (an iḥtimāl grades takhrīj; every reading total over its facts, a bar forcing the output false whatever else holds, with a theorem). Readings, by shard:
+**Lane A, round 4 (parallel; qawāʿid 119–126, 128–131; 80 furūʿ).** Four shards (`rajab-a13` … `rajab-a16`) from the pinned base `50f04fc`; the brief added round 3's review lessons (an iḥtimāl grades takhrīj; every reading total over its facts, a bar forcing the output false whatever else holds, with a theorem). Readings, by shard:
 
 | Shard | Qāʿida: reading |
 |---|---|
 | a13 | 119 `specificSingledOut`, with its attached qawāʿid `takesOnlyBySpecial` and `entitlementMultiplies`; 120 `doubleKinshipPreferred`; 122 `customRestricts`; 124 `causeRestricts` |
 | a14 | 121 `urfGeneralCovers`; 123 `sharGeneralCovers`; 126 `unintendedCovered` |
 | a15 | 125 `intentionGoverns`; 128 `spreadFollowsInjury`, `measuredAtInjury` |
-| a16 | 127 `directLiable`, `causeLiable`; 129 `hitStateGoverns`, `aqilaBears`; 130 `countsAsSurplus`; 131 `countsAsRich` |
+| a16 | 129 `hitStateGoverns`, `aqilaBears`; 130 `countsAsSurplus`; 131 `countsAsRich` |
 
 Results on the round:
-- **36 derivable, 53 ikhtilāf (30 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 89/89 = 1.000, madhhab coverage 66/89 = 0.742. Q121 (custom specialising the general) carries eight of the residues: its reading takes specialisation for the qāʿida's unmarked third class (RQ-02).
-- **At integration** 125.f007 moved to derivable (the only contrary is a Shāfiʿī's «مقتضى مذهبكم», not a position within the madhhab), with its ledger entry. Moving 127.f004, f006 and f008 too was reverted in review: there the positions dispute the *legal characterization* of one concrete scenario (is the stone-placer a pusher or a holder; does compulsion excuse), not a fact of the case, and Ibn Rajab's own placement of each in the qāʿida's classes fixes the reading's facts. Unlike 95.f002 (round 2), where the dispute is over a separate antecedent ruling, these stay `genuine_ikhtilaf`.
-- **Reconciliation:** 23 contradictions with 44 evidence items: 19 residues, 2 for the reading, 2 tawaqquf.
+- **31 derivable, 49 ikhtilāf (28 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 80/80 = 1.000, madhhab coverage 59/80 = 0.738. Q127 was annotated on main meanwhile (shard rajab-q127, `mubashara_tasabbub`); a16's duplicate reading and nine cases of it were dropped when main was merged, each farʿ being annotated once. Q121 (custom specialising the general) carries eight of the residues: its reading takes specialisation for the qāʿida's unmarked third class (RQ-02).
+- **At integration** 125.f007 moved to derivable (the only contrary is a Shāfiʿī's «مقتضى مذهبكم», not a position within the madhhab), with its ledger entry. Moving 127.f004, f006 and f008 too was reverted in review: there the positions dispute the *legal characterization* of one concrete scenario (is the stone-placer a pusher or a holder; does compulsion excuse), not a fact of the case, and Ibn Rajab's own placement of each in the qāʿida's classes fixes the reading's facts. Unlike 95.f002 (round 2), where the dispute is over a separate antecedent ruling, such cases stay `genuine_ikhtilaf` (main's rajab-q127 annotates them so).
+- **Reconciliation:** 21 contradictions with 38 evidence items: 17 residues, 2 for the reading, 2 tawaqquf.
 - **Register questions** are listed in [`taarud-reconciliation.md`](taarud-reconciliation.md).
 
 **Coverage trend:**
@@ -537,8 +537,8 @@ Results on the round:
 | All, after lane A round 2 | 663 | 0.991 | 0.733 | 0 | 6 |
 | Lane A round 3 alone | 89 | 1.000 | 0.764 | 0 | 0 |
 | All, after lane A round 3 | 752 | 0.992 | 0.736 | 0 | 6 |
-| Lane A round 4 alone | 89 | 1.000 | 0.742 | 0 | 0 |
-| All, after lane A round 4 | 841 | 0.993 | 0.737 | 0 | 6 |
+| Lane A round 4 alone | 80 | 1.000 | 0.738 | 0 | 0 |
+| All, after lane A round 4 and main (rajab-q127, lane B R2 sample) | 881 | 0.951 | 0.706 | 0 | 44 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 
