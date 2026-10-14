@@ -25,6 +25,7 @@ jobs:
       - name: Verify required locked sources (fail closed)
         run: make source-verify-fetch
       - name: Corpus tests with explicit exclusion report
+        if: ${{ !cancelled() }}
         run: cd pipeline && python -m pytest -q -rs --junitxml=../.cache/corpus-tests.xml
       - run: make validate generated
       - name: Retain source coverage and test exclusions
