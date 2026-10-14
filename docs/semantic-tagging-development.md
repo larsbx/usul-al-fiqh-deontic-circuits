@@ -39,17 +39,52 @@ From the repository root with the pinned Arabic archive materialized:
 ```sh
 PYTHONPATH=pipeline python -m usul_corpus.semantic_tags . corpus/fatawa/semantic-tags-development.json
 PYTHONPATH=pipeline python -m usul_corpus.semantic_tags . corpus/fatawa/semantic-tags-development.json --check
-PYTHONPATH=pipeline python -m pytest pipeline/tests/test_semantic_tags.py pipeline/tests/test_bank_review.py pipeline/tests/test_oracle.py -q
+PYTHONPATH=pipeline python -m usul_corpus.semantic_propositions .
+PYTHONPATH=pipeline python -m usul_corpus.semantic_propositions . --check
+PYTHONPATH=pipeline python -m pytest pipeline/tests/test_semantic_tags.py pipeline/tests/test_semantic_propositions.py pipeline/tests/test_bank_review.py pipeline/tests/test_oracle.py -q
 ```
 
 Development generation and deterministic checking were run against the recovered
-archive on 2026-10-14. The focused suite passed 48 tests. No new tagging accuracy,
+archive on 2026-10-14. The focused suite passed 58 tests. No new tagging accuracy,
 encoder accuracy or legal accuracy is reported. Tests exercise the boundary with
 synthetic observations; they do not validate Arabic semantic interpretation.
 
+## First authored proposition batch
+
+`corpus/fatawa/semantic-propositions-development.json` contains LLM-authored,
+purposively selected candidate annotations for 12 of the 53 questions: 21
+act-relative propositions, 72 candidate roles and 13 proposed bank mappings.
+Eighteen propositions are asserted; one each is hypothetical, questioned and
+uncertain. Polarity is recorded separately. Exact evidence for every role and
+proposed fact must lie inside its proposition's span and the question body.
+Editorial titles are excluded from factual evidence; answer text is unused.
+
+The validator rejects cross-proposition fact pooling, out-of-scope evidence,
+claimed review status and factual bindings from non-asserted or negative
+propositions. These structural checks do not establish that the authored actor,
+scope or interpretation is correct. Unspecified conditions stay unknown.
+
+Only one field has a candidate value: `trust_loss.hand = trustee` for the explicit
+entrustment in question 4652. It remains unreviewed. All 13 mappings hold, with
+zero new kernel executions. The deterministic report records these obligations
+in `corpus/fatawa/semantic-propositions-report.json`.
+
+The batch exposes distinctions that literal matching must preserve:
+
+- In 4588, four years of possession does not establish `luqata.year_passed`,
+  which requires a year of announcement. The field remains unknown.
+- In 104241, inability to return money does not establish an unidentified owner.
+- In 305083, the other driver's collision, the questioner's denial of contact,
+  and the assumed death are separate propositions.
+- In 83827, lack of consultation alone does not establish lack of permission.
+
+This is a development annotation batch, not an automatic semantic tagger or
+independent gold set. Remaining work includes the other 41 questions, independent
+review of the proposed interpretations, and evidence for missing typed facts.
+
 ## Next obligation
 
-Annotate complete act-relative propositions and their scopes on this development
+Complete and review act-relative propositions and their scopes on this development
 workset, preserving distinct subcases of each question. Add field-specific
 entailment checks and reviewed evidence before admitting fact values. Only then
 evaluate tag accuracy, typed fact accuracy, encoder retrieval and kernel agreement

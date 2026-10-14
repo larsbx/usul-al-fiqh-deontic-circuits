@@ -102,7 +102,8 @@ def admit(encoder: str, observations: list[dict], source_id: str, text: str) -> 
             "lean_expression": takhrij.lean_expr(encoder, facts)}
 
 
-def build(root: Path) -> dict:
+def question_sources(root: Path) -> dict[str, dict]:
+    """Pinned question text with a trusted title/body boundary for annotation."""
     tranche = json.loads((root / routing.TRANCHE).read_text())["cases"]
     need = {c["far"].rsplit(".", 1)[0] for c in tranche}
     archive = root / routing.ANSWERS
@@ -115,7 +116,14 @@ def build(root: Path) -> dict:
     questions = {r["id"]: f"{r['title']} {r['question']}" for r in selected}
     if set(questions) != need or len(selected) != len(questions):
         raise ValueError("Missing or duplicate development questions")
-    records = [propose(rid, text) for rid, text in sorted(questions.items())]
+    return {r["id"]: {"text": questions[r["id"]], "body_start": len(r['title']) + 1}
+            for r in selected}
+
+
+def build(root: Path) -> dict:
+    tranche = json.loads((root / routing.TRANCHE).read_text())["cases"]
+    sources = question_sources(root)
+    records = [propose(rid, source["text"]) for rid, source in sorted(sources.items())]
     return {"schema_version": 1, "status": "candidate", "purpose": "semantic annotation development scaffold",
             "source_sha256": ANSWERS_SHA256,
             "offset_unit": "Unicode code points in exact title-space-question text",
