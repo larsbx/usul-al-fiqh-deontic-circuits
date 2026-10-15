@@ -3,7 +3,7 @@ PY      ?= python3
 TLA_JAR ?= .cache/tla2tools.jar
 TLA_URL  = https://github.com/tlaplus/tlaplus/releases/download/v1.8.0/tla2tools.jar
 
-.PHONY: all test fetch fatawa labels bank-review oracle prolog-oracle fatawa-takhrij fatawa-prolog ocr build validate generated lean tla reception mentions
+.PHONY: all test fetch fatawa labels bank-review oracle prolog-oracle fatawa-takhrij fatawa-prolog judgement ocr build validate generated lean tla reception mentions
 all: source-verify test validate generated lean tla
 
 test:      ; cd pipeline && $(PY) -m pytest -q
@@ -14,6 +14,7 @@ bank-review: ; cd pipeline && $(PY) -m usul_corpus bank-review
 oracle:    ; cd pipeline && $(PY) -m usul_corpus oracle
 fatawa-takhrij: ; cd pipeline && $(PY) -m usul_corpus fatawa-takhrij
 fatawa-prolog: ; cd pipeline && $(PY) -m usul_corpus fatawa-prolog   # needs swipl
+judgement: ; cd pipeline && $(PY) -m usul_corpus judgement
 ocr:       ; cd pipeline && $(PY) -m usul_corpus ocr --jobs $(shell nproc)   # needs tesseract + poppler-utils
 build:     ; cd pipeline && $(PY) -m usul_corpus build
 validate:  ; cd pipeline && $(PY) -m usul_corpus validate

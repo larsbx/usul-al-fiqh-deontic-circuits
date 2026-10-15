@@ -55,12 +55,12 @@ This rejects Standard Deontic Logic (KD) as the core: it has no defeasibility an
 
 The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
 
-| Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
-|---|---|---|---|---|---|
-| Combined M8 tranche 3 | 29 | 1.000 | 0.759 | 0 | 0 |
-| All annotation suites | 981 | 0.955 | 0.716 | 0 | 44 |
+| Current scope (generated) | Cases | Coverage | Decided coverage | Disputed | Encoding errors | Open gaps |
+|---|---|---|---|---|---|---|
+| Combined M8 tranche 3 | 29 | 1.000 | 1.000 | 21 | 0 | 0 |
+| All annotation suites | 981 | 0.955 | 0.899 | 545 | 0 | 44 |
 
-Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
+Coverage counts derivability under the candidate encoding. Decided coverage scores the kernel only on cases that state one ruling; disputed cases are weighed by their evidence, not by who holds a position. Neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
 
 Pipeline details: [`architecture/formalization-pipeline.md`](architecture/formalization-pipeline.md).
@@ -118,6 +118,8 @@ Judgement form (proof-relevant):
 ```
 
 `Derivation : Type` is used, not `Prop`. Tarjīḥ compares derivations, so proof irrelevance would erase the object of study.
+
+Formalised as `Usul.Judgement` (question, answer typed by the question, subject, domain, grade, dalīl kinds): see [judgement.md](architecture/judgement.md).
 
 Sort-indexed defaults: one qāʿida with two domains.
 

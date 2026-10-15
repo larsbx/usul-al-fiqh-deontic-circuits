@@ -27,15 +27,17 @@ A case is classified by what the kernel computes from its facts, κ<sub>ρ</sub>
 | Class | Condition | Lean witness |
 |---|---|---|
 | derivable | φ ⊆ *F*<sub>ρ</sub> decides it and κ<sub>ρ</sub>(φ) = *r* | `#guard expr == r` |
-| genuine ikhtilāf | \|*P*\| ≥ 2 and κ<sub>ρ</sub>(φ) ∈ *P* (`matches_madhhab` says whether it is the madhhab's side) | `#guard expr == p` |
+| genuine ikhtilāf | \|*P*\| ≥ 2 and κ<sub>ρ</sub>(φ) ∈ *P* (`matches_madhhab` records whether the source labels it the madhhab's; descriptive, not a target) | `#guard expr == p` |
 | encoding error | the case is fully expressible and κ<sub>ρ</sub>(φ) ∉ *P* | `#guard expr != r` |
 | missing fact / missing rule | decided by a fact ∉ *F*<sub>ρ</sub> / by another principle; carries `needs: fact:… \| rule:…` | none (a gap) |
 | segmentation error | *u* is not a case | excluded |
 
-Coverage and madhhab coverage are defined as follows:
+Coverage and decided coverage are defined as follows:
 
     cov = (derivable + ikhtilāf) / (total − segmentation errors)
-    cov_m = (derivable + ikhtilāf on the madhhab side) / (total − segmentation errors)
+    cov_d = derivable / (derivable + encoding errors + missing facts + missing rules)
+
+cov_d scores κ only where the text states one ruling. A disputed case is not scored against any position, because a ruling stands by its proof, not by who holds it. The former madhhab coverage (derivable plus ikhtilāf on the madhhab side) is retired.
 
 **Lean is the oracle, not the annotation** (takhrij.md §"Lean is the oracle").
 - `UsulTest/TakhrijMirror.lean` checks the mirror against κ on every input, exhaustively.

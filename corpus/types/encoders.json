@@ -1,0 +1,1012 @@
+{
+ "status": "candidate",
+ "provenance": "Each takhrīj encoder's output typed by Usul.Judgement: the sort, and for a judgement the Question or Aspect it answers. Classified from each encoder's Lean definition, docstring and qāʿida (LLM-assisted, adjudicated); not human-reviewed. `alt` records the second reading of a hard case; `negated` marks an encoder whose true is the question's no.",
+ "encoders": {
+  "abstention_under_possible_condition": {
+   "sort": "judgement",
+   "question": "aspect:obligatory",
+   "reason": "abstains (Ibn Rajab 160 'يعتزل امرأته حتى يعلم انتفاؤه'): 'abstention governs conduct, not status'; whether he must abstain."
+  },
+  "advance_after_cause": {
+   "sort": "judgement",
+   "question": "aspect:permitted",
+   "reason": "Qaida 4: «لا يجوز تقديمها على سبب وجوبها ويجوز تقديمها بعد سبب الوجوب» - may he advance it.",
+   "alt": "wadi:validity: in worship «لا يجوز» here also means the advanced act does not count"
+  },
+  "advanced_kaffara_at_obligation": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "bool_as_validity": true,
+   "reason": "Qāʿida 5: advancedSufficesIn - whether an act (kaffāra) advanced before its time suffices (ijzāʾ), «فبرئ به»; true = it counts."
+  },
+  "advanced_worship": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Qaida 5: the advanced act suffices («فبرئ به») when it was the duty at performance - ijza'.",
+   "bool_as_validity": true
+  },
+  "alternative_proven_alone": {
+   "sort": "procedure",
+   "reason": "q111 «فقامت حجة بها أحدهما دون الآخر فهل يثبت»: alternativeProvenAlone - whether a proof establishing only one alternative suffices to establish it (owed only if the proof establishes the cause).",
+   "alt": "wadi:sabab: output phrased as whether the alternative is owed"
+  },
+  "amr": {
+   "sort": "judgement",
+   "reason": "amrStatus returns the Hukm of the commanded act; the qarīna-dependent wording is the means, the answer is the act's taklīfī status.",
+   "question": "taklifi",
+   "alt": "dalala (what the command wording conveys)"
+  },
+  "amr_mixed": {
+   "sort": "judgement",
+   "reason": "amrPerItem returns each commanded item's Hukm: the taklīfī status of each act.",
+   "question": "taklifi",
+   "alt": "dalala (what the command wording conveys)"
+  },
+  "annulment_on_nonexistent": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Qaida 59: «الفسوخ فترد على المعدوم» - whether an annulment on what no longer exists takes effect.",
+   "alt": "wadi:sabab: whether the annulment is a sabab of its effects",
+   "bool_as_validity": true
+  },
+  "annulment_without_return": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Qaida 59 with the defect farq: no return for a perished defective thing («وسقط الرد لتعذره») - whether the annulment takes effect.",
+   "alt": "wadi:sabab",
+   "bool_as_validity": true
+  },
+  "aqila_bears_across_change": {
+   "sort": "effect",
+   "reason": "Q129 farʿ: who bears the diya, this ʿāqila or the shooter's own wealth — to whom the liability goes.",
+   "alt": "judgement wadi:sabab: read as 'is this ʿāqila liable?'"
+  },
+  "asl_zahir": {
+   "sort": "epistemic",
+   "reason": "zahirPrevails: 'the ẓāhir prevails when strictly stronger, or equal and the matter has indicators' over Grades; which presumption establishes the fact."
+  },
+  "attached_growth_follows": {
+   "sort": "takyif",
+   "reason": "Q81: whether attached growth follows the aʿyān on reversion and in security/liability — treating growth as part of the substance.",
+   "alt": "effect: to whom the growth goes on reversion"
+  },
+  "attached_right_disposal": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Q53: whether the disposal of a thing to which a right attaches takes effect («لم ينفذ» / «صح التصرف»).",
+   "bool_as_validity": true
+  },
+  "attached_takeover_at_value": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q77: whether the principal's owner gains the right to take over the subordinate at its value and its owner is compelled — a right arising.",
+   "alt": "effect: who ends up owning the attached thing"
+  },
+  "ayman_by_urf": {
+   "sort": "dalala",
+   "reason": "oathBody (Ibn Rajab 1.f003, Q9 'والأيمان مرجعها إلى العرف'): what the oath's wording names, measured by custom.",
+   "alt": "takyif (custom counts the river as one body)"
+  },
+  "badal_stands_for_original": {
+   "sort": "takyif",
+   "reason": "Q143 «يقوم البدل مقام المبدل ويسد مسده ويبني حكمه على حكم مبدله»: badalStands - whether the substitute is treated as the original so its ruling builds on the original's; a characterisation of the substitute.",
+   "alt": "judgement wadi:sabab: whether the original's right/ruling passes to the substitute (cf. right_to_substitute)"
+  },
+  "bain_in_idda_as_wife": {
+   "sort": "takyif",
+   "reason": "Q145 «المعتدة البائن في حكم الزوجات في مسائل»: bainAsWife - whether she is treated as a wife while the ties of marriage remain."
+  },
+  "benefit_condition_against_compensation": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Q73: a stipulated benefit against compensation «فيصح», otherwise «فلا يصح».",
+   "bool_as_validity": true
+  },
+  "benefit_exception": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Qaida 32: «يصح عندنا استثناء منفعة العين» for a known period (or where uncertainty is tolerated); output is validity of the exception.",
+   "bool_as_validity": true
+  },
+  "benefit_then_thing": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qaida 35: whether owning the thing dissolves (ينفسخ) a prior contract on its benefit - acquisition as sabab of dissolution.",
+   "alt": "wadi:validity: whether the prior contract stays in force"
+  },
+  "benefit_to_other": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "liableForOthersBenefit (Ibn Rajab 27 'وإن كان النفع يعود إلى غيره فعليه الضمان'): whether the destruction is a sabab of ḍamān."
+  },
+  "budh_capacity_is_wealth": {
+   "sort": "takyif",
+   "reason": "Q131: whether capacity to earn by the buḍʿ counts as ghinā — classification of the person as rich."
+  },
+  "burdened_thing_compensated": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q138 «وجب ضمانها بالتلف والإتلاف ... ووجب بالإتلاف إن كان مستحق موجود»: mustCompensate - whether loss or destruction is a sabab of ḍamān."
+  },
+  "cancel_on_existence_valid": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "bool_as_validity": true,
+   "reason": "q118 «إن كان فيه مقصود معتبر شرعا صح وإلا لم يصح»: cancelOnExistenceValid - 'The output is that the suspension is valid'."
+  },
+  "cause_from_one_of_two": {
+   "sort": "effect",
+   "reason": "Qaida 14 returns Attach neither/each/lot/abstain: to whom the ruling attaches when the cause is from one of two unknown - an allocation enum.",
+   "alt": "epistemic: arises from doubt over which of two"
+  },
+  "cause_on_certainty": {
+   "sort": "effect",
+   "reason": "Concordance.attachOnCertainty returns Attach (neither/each/lot/abstain): to whom the ruling of a cause from one of two men attaches (qāʿida 14).",
+   "alt": "epistemic: the qāʿida is about doubt over which man the cause came from, each certain of his own state"
+  },
+  "cause_restricts_general": {
+   "sort": "dalala",
+   "reason": "q124 «هل نخص اللفظ العام بسببه الخاص»: causeRestricts - whether a general word is restricted to its prompting cause."
+  },
+  "combination_bars_its_amount": {
+   "sort": "judgement",
+   "question": "wadi:mani",
+   "reason": "q109 second kind «والمنع من الجمع يمنع من التصرف في القدر الذي يحصل به الجمع»: whether the combining amount is barred from disposal.",
+   "alt": "aspect:permitted (inverted)"
+  },
+  "combining_forms": {
+   "sort": "judgement",
+   "question": "aspect:permitted",
+   "reason": "Qaida 12: forms that are substitutes are not combined, others may be («جمعت فعله وأمره») - may he combine.",
+   "alt": "wadi:validity: Taqi al-Din «ولا يصح الجمع بين البدل والمبدل»"
+  },
+  "command_intended_usage": {
+   "sort": "dalala",
+   "reason": "CommandSchemata.intendedUsage returns CommandUsage: whether a command intending recommendation or permission is literal or figurative (43.f007); the intended ruling is an input."
+  },
+  "command_nonverbal_usage": {
+   "sort": "dalala",
+   "reason": "CommandSchemata.nonverbalUsage returns CommandUsage (literal/notLiteral/unsettled): whether writing or gesture is literally named a command; the module says naming is distinct from assigning a ruling."
+  },
+  "command_obligation_status": {
+   "sort": "judgement",
+   "question": "taklifi",
+   "reason": "CommandSchemata.obligationStatus returns a Hukm: the five-fold status of the act commanded by an unqualified threat / wujūb / farḍ label, under a reading and qarīna (43.f004).",
+   "alt": "dalala: the issue is whether explicit obligation expressions are naṣṣ immune to reinterpretation"
+  },
+  "command_prophetic_act_usage": {
+   "sort": "dalala",
+   "reason": "CommandSchemata.propheticActUsage returns CommandUsage: whether the Prophet's act is literally or figuratively called amr (43.f002)."
+  },
+  "common_amount_general": {
+   "sort": "dalala",
+   "reason": "q109 third kind «والمنع من القدر المشترك كالمنع من الجميع يقتضي العموم»: whether a bar on the common amount (indefinite under negation) is general over every instance - generality of wording."
+  },
+  "concurrent_causes": {
+   "sort": "effect",
+   "reason": "concurrentShare returns full/half (Ibn Rajab 28): the non-permitted actor's share of liability."
+  },
+  "concurrent_condition": {
+   "sort": "judgement",
+   "question": "wadi:shart",
+   "reason": "Qaida 56: the condition of capacity suffices when concurrent with the contract - is the condition met."
+  },
+  "continued_holding": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qaida 43: continued holding makes liable only one who withholds («فهو غاصب») - liability (daman) as effect of a sabab."
+  },
+  "continuity": {
+   "sort": "takyif",
+   "reason": "continuous: 'consecutive parts lie within the customary gap' (Q48 / Ibn Rajab 103 'الفعل الواحد يبنى بعضه على بعض مع الاتصال المعتاد'): whether the parts count as one continuous act, a characterisation by custom.",
+   "alt": "judgement wadi:shart (muwālāh as a condition met), but the def classifies the fact, not the condition"
+  },
+  "contract_by_kinaya": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "bool_as_validity": true,
+   "reason": "Qāʿida 39: kinayaConcludes - whether a contract concludes (inʿiqād) by allusive wording, barred for nikāḥ which needs witnessing.",
+   "alt": "dalala: what allusive wording can effect"
+  },
+  "craft_capacity_is_wealth": {
+   "sort": "takyif",
+   "reason": "Q132 «القدرة على اكتساب المال بالصناعات غني»: craftCountsAsRich - whether the craftsman counts as rich (ghinā), as budh_capacity_is_wealth.",
+   "alt": "judgement wadi:mani: richness as a bar to zakāt/maintenance entitlement, or a shart of ḥajj"
+  },
+  "crop_without_valid_permission": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q79: absence of valid permission is «المقتضي لتملك الزرع» — whether the landowner's right to take the crop arises.",
+   "alt": "judgement aspect:permitted: 'the landowner may take the crop'"
+  },
+  "custodian_liable_at_due_time": {
+   "sort": "effect",
+   "reason": "Q141 «لزمه ضمانها بقيمتها في ذلك الوقت، لا يوم تلفها»: dueTimeGoverns - at which moment (term vs day of destruction) the ḍamān is reckoned, i.e. how much, as hit_state_governs.",
+   "alt": "judgement wadi:sabab: read as whether he is liable at all; but liability is presupposed and only its measure varies"
+  },
+  "custom_restricts_general": {
+   "sort": "dalala",
+   "reason": "q122 «يخص العموم بالعادة»: customRestricts - whether the general term is restricted by custom."
+  },
+  "cut_sale_left_to_ripen": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Q81 farʿ: «فهل يبطل البيع» — validity of the sale; NOTE polarity inverted: true = the sale is void (fāsid).",
+   "bool_as_validity": true,
+   "alt": "judgement wadi:mani: leaving until ripe as an impediment annulling the sale",
+   "negated": true
+  },
+  "daman_without_qabd": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qaida 51: what is determined enters the new owner's daman without transport - liability arising."
+  },
+  "defective_compensation": {
+   "sort": "effect",
+   "reason": "Q47 returns CompensationBasis agreed/equivalent: how much is owed under daman (named consideration vs equivalent)."
+  },
+  "delegating_work": {
+   "sort": "judgement",
+   "question": "aspect:permitted",
+   "reason": "q69 «فلا يجوز للمعقود معه أن يقيم غيره مقامه»: mayDelegate - whether the one engaged for work may delegate it.",
+   "alt": "wadi:validity: whether the delegation is effective under the contract"
+  },
+  "deputy_of_principal": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qāʿida 61 docstring: 'a deputy is removed with his principal's removal or death unless his mandate is general' - asks whether the principal's removal/death is a sabab of the deputy's authority lapsing."
+  },
+  "deputy_of_qadi": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qāʿida 61 with the madhhab: the qāḍī's deputies are 'removed with him even under a general mandate' - same question, whether the principal's removal is a sabab of the deputy's removal."
+  },
+  "desisting_at_once": {
+   "sort": "takyif",
+   "reason": "Qaida 58: desisting at once «is not doing the forbidden» unless he foresaw it - whether the desisting counts as the forbidden act.",
+   "alt": "judgement aspect:permitted (negated): whether he sins by it"
+  },
+  "disposal_before_qabd": {
+   "sort": "judgement",
+   "question": "aspect:permitted",
+   "reason": "Qaida 52: «ولا منع من التصرف إلا في المبهم» - may he dispose before qabd.",
+   "alt": "wadi:validity: whether the disposal is valid/effective («لا تملك بدون القبض»)"
+  },
+  "disposal_before_qabd_debt": {
+   "sort": "judgement",
+   "question": "aspect:permitted",
+   "reason": "Qaida 52 with the bar on selling a debt to a third party («ولا يجوز لغيره») - may he dispose.",
+   "alt": "wadi:validity: whether the sale of the debt is valid"
+  },
+  "disposal_over_anothers_right": {
+   "sort": "judgement",
+   "question": "aspect:permitted",
+   "reason": "Qaida 54: one may not dispose so as to extinguish another's right («والصحيح أنه لا يجوز») - may he dispose.",
+   "alt": "wadi:validity: whether such disposal is valid"
+  },
+  "dispose_without_judge": {
+   "sort": "judgement",
+   "question": "aspect:permitted",
+   "reason": "Q97: «فليس له التصرف فيه بدون إذن الحاكم» / «جاز التصدق به» — whether he may give it in charity without the judge."
+  },
+  "distribution_each_over_whole": {
+   "sort": "dalala",
+   "reason": "q113: eachOverWhole - whether a numbered set distributed over another is read each-over-whole or one-to-one, by qarīna of custom or sharʿ - interpretation of the wording.",
+   "alt": "effect: an allocation"
+  },
+  "double_kinship_preferred": {
+   "sort": "effect",
+   "reason": "q120 «يرجح ذو القرابتين على ذي القرابة الواحدة»: doubleKinshipPreferred - who is preferred in the entitlement (to whom it goes)."
+  },
+  "doubled": {
+   "sort": "effect",
+   "reason": "compensationOwed returns a Nat amount (Q35 'ضوعف عليه الضمان'): how much ḍamān is owed, not yes/no."
+  },
+  "doubt_in_condition": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "bool_as_validity": true,
+   "reason": "validUnderDoubt (Ibn Rajab 68 'فلا يصح إيقاعه بهذا التردد... فالصحيح فيه الصحة'): whether the act done while doubting a condition is valid."
+  },
+  "each_on_its_asl": {
+   "sort": "epistemic",
+   "reason": "Qaida 15: a presumption's corollary that would alter another asl is ignored, each matter stays on its own asl - which presumption establishes the fact."
+  },
+  "eating_without_permission": {
+   "sort": "judgement",
+   "question": "aspect:permitted",
+   "reason": "q71 «فيجوز الأكل منه»: mayEat - whether he may eat from property without its owner's permission."
+  },
+  "entitlement_multiplies": {
+   "sort": "effect",
+   "reason": "q119 second attached qāʿida «فهل يتعدد الاستحقاق بها»: entitlementMultiplies - whether entitlement is multiplied by combined attributes (how much he takes).",
+   "alt": "wadi:sabab: whether each attribute is a separate sabab of entitlement"
+  },
+  "error_actor_liable": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q95: output is the liability of one who destroys/disposes in mistaken belief."
+  },
+  "excess_in_following": {
+   "sort": "judgement",
+   "question": "aspect:obligatory",
+   "reason": "Qāʿida 3 «هل يوصف الكل بالوجوب أو قدر الإجزاء منه»: excessObligatoryIn says whether the undistinguished excess is described as obligatory; the following-farq is a further input.",
+   "alt": "wadi:validity: the following-farq is about the excess counting (إدراك الركعة) for the one who joins"
+  },
+  "excess_over_sufficient": {
+   "sort": "judgement",
+   "question": "aspect:obligatory",
+   "reason": "Qaida 3: «هل يوصف الكل بالوجوب أو قدر الإجزاء منه» - whether the undistinguished excess bears the status wajib or is nafl.",
+   "alt": "takyif: classifying the performed excess as fard vs tatawwu' rather than asking whether he must do it"
+  },
+  "excused_error": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "bool_as_validity": true,
+   "reason": "errorExcused: 'the act stands despite the error, unless another's right is attached or he was negligent' (Ibn Rajab 6 'فإنه يجزئه')."
+  },
+  "failed_obligation_returns": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qaida 30: «فهل يعود إلى ملكه» what was given as due and failed to count - ownership reverting."
+  },
+  "fay_tie_break": {
+   "sort": "effect",
+   "reason": "fayTieBreak returns byCriteria/rulerChoice (Ibn Rajab 160.f038): how equal fayʾ recipients are ordered.",
+   "alt": "procedure (the ruler's discretion)"
+  },
+  "follows_proven_ownership": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qaida 25: whether what is attached to or born of an owned thing proven by bayyina/iqrar follows it into his ownership - ownership arising.",
+   "alt": "takyif: turns on whether the accessory counts as part of the thing (what follows in sale)"
+  },
+  "forbidden_cause_voided": {
+   "sort": "judgement",
+   "question": "wadi:mani",
+   "reason": "Q102: a cause brought about in a forbidden way that souls are drawn to is cancelled «ولم يترتب عليه أحكامه» — the forbidden manner bars the cause's effect.",
+   "alt": "judgement wadi:validity with inverted polarity (true = effects do not follow)"
+  },
+  "forced_acquisition": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qaida 50: a forced acquisition is owned before payment only under necessity - ownership arising."
+  },
+  "forced_acquisition_solvent": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qaida 50 with the shuf'a farq: the solvent shafi' owns by the demand - ownership arising."
+  },
+  "free_bestowal_of_needed_ayn": {
+   "sort": "judgement",
+   "question": "aspect:obligatory",
+   "reason": "Q99: a needed, harmless thing «يجب بذله مجانا» — must he give it free?"
+  },
+  "free_bestowal_of_needed_benefit": {
+   "sort": "judgement",
+   "question": "aspect:obligatory",
+   "reason": "Q99: a needed benefit «يجب بذله مجانا» — must he give it free?"
+  },
+  "generality": {
+   "sort": "dalala",
+   "reason": "IsGeneralIn (Q59/Q60): whether a noun form in a context is a marker of generality, blocked by ʿahd."
+  },
+  "ghulul_forfeiture": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "ghululForfeits: 'whether the share is forfeited' (Ibn Rajab 140.f006 'حرمان سهمه'); ghulūl as a sabab of the right lapsing."
+  },
+  "growth_from_substance": {
+   "sort": "takyif",
+   "reason": "Qawaid 20-21: growth from the substance «حكمه حكم الجزء»; classifies the growth as part or separate."
+  },
+  "hair_detached": {
+   "sort": "takyif",
+   "reason": "Qaida 2: «شعر الحيوان في حكم المنفصل عنه لا في حكم المتصل» classifies hair/nails as attached or detached."
+  },
+  "haml_ala_adna": {
+   "sort": "dalala",
+   "reason": "hamlAlaAdna: 'an unspecified intention over referents that differ in rank is read as the lowest' (Ibn al-Laḥḥām 52.f008); what an utterance/intention covers.",
+   "alt": "epistemic (the lowest is al-mutayaqqan, adna_is_certain)"
+  },
+  "hand_liability": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "handLiable (Ibn Rajab 91 'يضمن بالعقد وباليد الأموال المحضة... فيضمن باليد'): whether the hand is a sabab of ḍamān over the thing.",
+   "alt": "takyif (the input classifies the thing as property-like)"
+  },
+  "hand_with_owner_liable": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q92: whether a hand of liability stands with the owner's hand; output is liability."
+  },
+  "handover_by_description": {
+   "sort": "procedure",
+   "reason": "Q98: «من ادعى شيئا ووصفه دفع إليه بالصفة» — whether a claimant's description suffices to have the thing handed to him, a matter of claim and proof.",
+   "alt": "effect: to whom the thing is handed"
+  },
+  "hastened_right_forfeited": {
+   "sort": "judgement",
+   "question": "wadi:mani",
+   "reason": "Q102 attached qāʿida: «من تعجل حقه ... على وجه محرم عوقب بحرمانه» — forbidden hastening bars the right (e.g. killing the muwarrith)."
+  },
+  "heir_stands_in_owed_right": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q144 second kind «فإذا كانت لازمة قام الوارث مقامه»: heirStandsIn - whether death passes the deceased's binding (or tending-to-bind) obligation to the heir rather than its lapsing.",
+   "alt": "wadi:validity: whether the contract survives death («فلا يبطل في الموت») or lapses"
+  },
+  "heir_takes_deceased_right": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q144 first kind «ثبت لهم إرثه» / «فينتقل إلى الورثة»: heirInherits - whether the deceased's right passes to the heirs (a right arising for them).",
+   "alt": "effect: to whom the right goes (heirs vs lapsing)"
+  },
+  "hit_state_governs": {
+   "sort": "effect",
+   "reason": "Q129: which moment (hit vs shot) the liability is reckoned at; output selects the reference state, an allocation, not a yes/no ruling.",
+   "alt": "takyif: characterising which state of the target counts"
+  },
+  "holding_after_contract_end": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qaida 43 second division: liable where he caused the ending («لأنه يسبب») - liability as effect of a sabab."
+  },
+  "hukm_against_own_ijtihad": {
+   "sort": "procedure",
+   "reason": "rulingUndone: a judge's ruling is 'undone only when a clear text shows it wrong' (Ibn Rajab 68.f009 'ولم ينقض حكمه')."
+  },
+  "ihram_specification": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "bool_as_validity": true,
+   "reason": "validOnEvery: 'what suffices under a forgotten intention: what is valid on every possibility' (Ibn Rajab 106.f007 'لا يجزئه')."
+  },
+  "implicit_exception": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Qaida 33 docstring: an exception of uncertain extent is valid when it arises by law (al-Mughni «الصحة»).",
+   "bool_as_validity": true
+  },
+  "injury_state_measures": {
+   "sort": "effect",
+   "reason": "Q128 first qism: guaranteed in both states but the amount differs; output picks the state by which the ḍamān is measured (how much), not whether it is owed.",
+   "alt": "judgement wadi:sabab: Bool is false outside the first qism, where no ḍamān is owed in both states"
+  },
+  "intention_shapes_wording": {
+   "sort": "dalala",
+   "reason": "Q125: whether the intention generalises, specifies, restricts or excepts from the wording, i.e. the scope of the utterance."
+  },
+  "istihlak": {
+   "sort": "takyif",
+   "reason": "istihlak (Ibn Rajab 22 'العين المنغمرة في غيرها... هل هي كالمعدومة حكما'): whether the consumed substance counts as non-existent.",
+   "alt": "epistemic (defined as an instance of treatedAsAbsent)"
+  },
+  "itlaf": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "itlafLiable: 'destruction without right is compensable, whatever the mental state' (Q13/Q36); asks whether the destruction is a sabab of ḍamān."
+  },
+  "khalt_as_shirka": {
+   "sort": "effect",
+   "reason": "mixedOutcome returns shared/consumed/separate (Ibn Rajab 22.f003 'أنه اشتراك'): the ownership outcome of mixing.",
+   "alt": "takyif (classification of the mixture)"
+  },
+  "knowledge": {
+   "sort": "judgement",
+   "question": "wadi:shart",
+   "reason": "Requirement.normalize (Q45 / Ibn Rajab 63 'من لا يعتبر رضاه لفسخ عقد أو حله لا يعتبر علمه به'): whether the party's knowledge is a condition of the contract or rescission.",
+   "alt": "wadi:validity (the rescission is valid without his knowledge), but the output field is the requirement itself"
+  },
+  "lease_after_authority": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qaida 36: a lease dissolves when the lessor's authority ends unless the new holder succeeds him - end of authority as sabab of dissolution.",
+   "alt": "wadi:validity: whether the lease remains in force"
+  },
+  "lot_distinguishes_hidden_entitled": {
+   "sort": "procedure",
+   "reason": "Q105 furūʿ: an entitled one unknown to us «فيميز بالقرعة» — the qurʿa as the means of determining the entitled party.",
+   "alt": "epistemic: lot resolves our ignorance of a fact"
+  },
+  "lots": {
+   "sort": "effect",
+   "reason": "allocationFull returns toEntitled/divide/lot (Q25 / Ibn Rajab 160): which allocation applies."
+  },
+  "luqata": {
+   "sort": "effect",
+   "reason": "luqata returns hold/finderOwns/charity (Ibn Rajab 106.f002): the outcome of a found item."
+  },
+  "maadum_grant_valid": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Q107: grant to the non-existent «فالمشهور أنه لا يصح» / «فيصح في الوقف» — whether the grant holds.",
+   "bool_as_validity": true
+  },
+  "makeup_after_failure": {
+   "sort": "effect",
+   "reason": "Q31 returns MakeupExtent asBegun/baseline: the form of a subsequent make-up, not whether one is owed; an outcome enum."
+  },
+  "manumission_spread": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qaida 34: whether manumission's effect spreads (سريان العتق) to benefits owed under a binding contract - the reach of a sabab's effect.",
+   "alt": "wadi:mani: the source phrases the binding contract as «يمنع من سريان العتق», output is the negation of the bar"
+  },
+  "many_over_noble": {
+   "sort": "takyif",
+   "reason": "preferMany (Ibn Rajab 17 'فأيهما يرجح... ترجيح الكثرة'): which of two equal-cost acts counts as the more meritorious; a ranking of merit not expressible as a Hukm or Aspect.",
+   "alt": "judgement taklifi (afḍaliyya within the mandūb), but no Question/Aspect answers a preference"
+  },
+  "mistaken_basis": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "bool_as_validity": true,
+   "reason": "validWithBasis: 'valid when he acted on a basis he believed and a valid basis in fact existed' (Ibn Rajab 66 'التصرف صحيح')."
+  },
+  "mixed_haram_by_proportion": {
+   "sort": "effect",
+   "reason": "mixedHaram returns suspend/takeOut (Ibn Rajab 22.f007 'وجب التوقف... يخرج منها درهما'): which course applies to the mixed wealth.",
+   "alt": "judgement taklifi/aspect:obligatory (each option is a duty of conduct), but the answer is an enum"
+  },
+  "mubashara_tasabbub": {
+   "sort": "effect",
+   "reason": "Mubashara.damanOn returns Daman (mubashir/sabab/shared): on whom the ḍamān of an itlāf falls (q127)."
+  },
+  "nafaqa_stipulated_in_contract": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Q72: whether a stipulation of maintenance/clothing holds (is valid) in the contract, as muʿāwaḍa only in binding contracts.",
+   "bool_as_validity": true
+  },
+  "nafaqa_taken_owned": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q72: whether the worker owns the maintenance (يملك فيها الطعام والكسوة) — ownership arising."
+  },
+  "nafl_before_fard": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Qaida 11: nafl before a narrow fard of its kind «لم تصح على الصحيح», zakat carve-out «يصح أن يتنفل» - sihha.",
+   "alt": "aspect:permitted: «جاز التنفل» for the wide case",
+   "bool_as_validity": true
+  },
+  "necessity_spares_lighter": {
+   "sort": "judgement",
+   "question": "aspect:permitted",
+   "reason": "q112: necessityPermits - 'whether the option is permitted to him' when two forbidden things meet in necessity («فلا يباح»)."
+  },
+  "needed_item_is_surplus": {
+   "sort": "takyif",
+   "reason": "Q130: whether a needed house/servant/mount counts as surplus wealth (mal fāḍil) — classification of the item."
+  },
+  "occurrence_state_governs": {
+   "sort": "takyif",
+   "reason": "q117 «فهل يغلب عليه جانب التعليق أو جانب الوقوع»: occurrenceGoverns - which state a suspended contract is characterised by (Bool encodes a binary choice), not a ruling.",
+   "alt": "effect: which state's outcome applies"
+  },
+  "other_option_stands": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q110: «فإن اختار أحدهما سقط الآخر» — whether the other right survives (a right lapsing)."
+  },
+  "ownership_relates_back": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "q116: ruledFromCause - whether the ruling of ownership relates back to when its settled cause was concluded (ownership arising from the sabab).",
+   "alt": "takyif: characterising the interval as owned or not"
+  },
+  "partial_capability": {
+   "sort": "judgement",
+   "question": "aspect:obligatory",
+   "reason": "obligedParts (Q40 / Ibn Rajab 8 'هل يلزمه الإتيان بما قدر عليه'): whether he must do the part he can."
+  },
+  "partners": {
+   "sort": "judgement",
+   "question": "aspect:obligatory",
+   "reason": "partnerMustJoin: 'a refusing co-owner is compelled to what the common holding necessarily requires' (Q30 / Ibn Rajab 76 'أجبر أحدهما على موافقة الآخر'): must he join.",
+   "alt": "procedure (ijbār is enforced by the judge)"
+  },
+  "performed_without_leave_not_owned": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Q96 second kind: «فإنه يجزئ ولا ضمان» for a determined recipient — the discharge suffices.",
+   "bool_as_validity": true
+  },
+  "performed_without_leave_owned": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Q96 first kind: true when the performance «وقع الموقع» / «يجزئ» with no liability — the discharge counts.",
+   "bool_as_validity": true
+  },
+  "prevention_easier_than_removal": {
+   "sort": "judgement",
+   "question": "wadi:mani",
+   "reason": "Q134 «المنع أسهل من الرفع»: impedimentOperates - whether the impediment bars the ruling (it does at inception, not in continuance)."
+  },
+  "prohibited_worship": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Qaida 9: worship in a prohibited way «لم يصح» unless the prohibition returns to what is no condition - sihha.",
+   "bool_as_validity": true
+  },
+  "qabd_in_contracts": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qaida 49: a contract binds (luzum) without qabd unless qabd is part of its completion - whether the contract alone gives rise to binding.",
+   "alt": "wadi:shart: equivalently whether qabd is a shart of luzum (output negated)"
+  },
+  "qawad_choice_forfeits_attached_right": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q137 «فهل هو تفويت للمال ... أشهرهما اللزوم»: forfeitsAttachedRight - whether taking or waiving the qawad forfeits the attached right so that he is liable to its holder.",
+   "alt": "aspect:permitted (negated): the docstring also says the actor may not do it alone"
+  },
+  "qisas_belongs_to_whom": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Ibn Rajab 65.f004: «لا يصح العفو ههنا» unless the right to qisas is the victim's; output is whether the pardon is valid.",
+   "alt": "wadi:sabab: could be read as whether the pardon extinguishes the right, but the source asks sihha of the pardon",
+   "bool_as_validity": true
+  },
+  "rajiyya_takes_wife_rule": {
+   "sort": "takyif",
+   "reason": "Q146 «تفارق المطلقة الرجعية الزوجات في صور»: wifeRuleApplies - whether the rajʿiyya is treated as a wife on the point in question, the mirror of bain_in_idda_as_wife."
+  },
+  "recourse": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "recourseNec (Ibn Rajab 75.f006 'رجع'): whether paying for another, with permission or where it was unobtainable, gives rise to a right of recourse."
+  },
+  "recourse_after_return": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "q67 «فهل يستحق الرجوع ببدله»: recourseAfterReturn - whether a right of recourse for the substitute arises when the thing came back by gift."
+  },
+  "refusal_compelled_to_choose": {
+   "sort": "judgement",
+   "question": "aspect:obligatory",
+   "reason": "Q110: «وإن كان الحق غير مالي ألزم بالاختيار» — he must choose.",
+   "alt": "procedure: compulsion by the ḥākim"
+  },
+  "refusal_exacted_for_him": {
+   "sort": "effect",
+   "reason": "Q110: on refusing both, «استوفى له الحق الأصلي» — one branch of an outcome enum (exacted / falls / compelled to choose).",
+   "alt": "procedure: exaction by the ḥākim"
+  },
+  "refusal_right_falls": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q110: «وإن لم يكن حقا ثابتا سقط» — whether his right lapses.",
+   "alt": "effect: branch of the refusal-outcome enum"
+  },
+  "removal_before_knowledge": {
+   "sort": "judgement",
+   "reason": "Qāʿida 62: whether the principal's removal takes effect on the deputy before he knows of it, except in a public office.",
+   "question": "wadi:sabab",
+   "alt": "wadi:shart (is the deputy's knowledge a condition)"
+  },
+  "repeat_bearing_roots_as_trees": {
+   "sort": "takyif",
+   "reason": "Q80: whether repeatedly bearing roots are attached to crops or to trees — classification."
+  },
+  "rescission_harm": {
+   "sort": "effect",
+   "reason": "RajabA1.rescission returns Rescission (barred/withRemedy/free): what a harmful rescission of a non-binding contract does (q60, «لم يجز ولم ينفذ إلا أن يمكن استدراك الضرر»).",
+   "alt": "wadi:validity: 'barred' = لم ينفذ"
+  },
+  "rescue_loss_liability": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q78: whether one who brings loss on another's property to free his own is liable (ḍamān)."
+  },
+  "residual_jawaz_after_sarf": {
+   "sort": "dalala",
+   "reason": "jawazAfterSarf: 'whether the command still proves permissibility once its obligation is turned away' (Ibn al-Laḥḥām 43.f005); what the wording indicates."
+  },
+  "return_of_held_property": {
+   "sort": "judgement",
+   "question": "aspect:obligatory",
+   "reason": "Qaida 42: «فتجب المبادرة إلى الرد» where held without consent or guaranteed - must he return at once."
+  },
+  "returned_takes_first_ruling": {
+   "sort": "takyif",
+   "reason": "Q142 «هل يحكم على العائد بحكم الأول»: returnedIsFirst - whether what returned counts as the first thing («لأن الثاني غير الأول»), a classification of the returned thing."
+  },
+  "right_after_transfer": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qaida 24: the transfer is valid; the reading decides whether the due right survives it («لم يسقط» / «سقط») - a right lapsing/surviving.",
+   "alt": "wadi:mani: the transfer could be read as a bar to the right"
+  },
+  "right_for_or_against_self": {
+   "sort": "procedure",
+   "reason": "heardAfterDenial: 'after denying it, a right for the speaker is not heard; a right against him is' (Ibn al-Laḥḥām 54.f002); whether a claim/testimony is heard."
+  },
+  "right_on_refuser_exacted": {
+   "sort": "effect",
+   "reason": "Q110: «وإن كان حقا عليه وأمكن استيفاؤه منه استوفي» — outcome of refusal: the right owed is exacted from him.",
+   "alt": "procedure: exaction by the ḥākim"
+  },
+  "right_to_own_disposal": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Qaida 55: his disposal «لا يكون تملكا، ولا ينفذ» unless the cause is complete or the tie remains - whether the disposal takes effect.",
+   "alt": "wadi:sabab: whether the disposal is a sabab of ownership (tamalluk)",
+   "bool_as_validity": true
+  },
+  "right_to_substitute": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qāʿida 41 «فهل يعود الحق إلى البدل»: rightPassesToSubstitute - whether a bound right survives and attaches to the substitute, a right arising on the substitute."
+  },
+  "rukhsa_under_doubt": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "bool_as_validity": true,
+   "reason": "rukhsaValid: 'a concession whose permission needs certainty stands only when that permission is established' (Ibn Rajab 68.f001 'فلم يصح')."
+  },
+  "ruling_with_bar": {
+   "sort": "judgement",
+   "question": "wadi:mani",
+   "reason": "Qaida 57: a ruling coinciding with what bars it «لا يثبت» - does the coinciding mani' bar the effect (output true = holds)."
+  },
+  "running_water": {
+   "sort": "takyif",
+   "reason": "runningBody returns perJirya/whole (Ibn Rajab 1 'الماء الجاري هل هو كالراكد'): whether running water is one body."
+  },
+  "second_receiver_liable": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q94: output is the second receiver's liability (ḍamān vs amāna)."
+  },
+  "seizing_hand_liable": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q90: which hands over another's property carry ḍamān; output is liability of the seizing hand."
+  },
+  "settles_without_ability": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qaida 19: whether the duty settles (استقرار) in the dhimma without ability to perform; for qada' ability is required - an obligation arising.",
+   "alt": "wadi:shart: the source asks whether imkan al-ada' is a shart, output is its negation"
+  },
+  "shar_specialises_general": {
+   "sort": "dalala",
+   "reason": "q123 «ويخص العموم بالشرع»: sharGeneralCovers - whether the general wording covers an instance the sharʿ sets apart."
+  },
+  "shared_name_insha_valid": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Q105 faṣl: inshāʾ tied to a shared name «صح» unless witnessing is required — validity.",
+   "bool_as_validity": true
+  },
+  "shared_right_accrues_to_rest": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "q115: accruesToRest - whether each holder's right reaches the whole so that what one drops accrues to the rest (a right arising for the others).",
+   "alt": "effect: allocation of a shared right among holders"
+  },
+  "simultaneous_combination_voids": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "bool_as_validity": true,
+   "reason": "q109: simultaneousCombinationVoids - 'whether the item's contract is void' (الفساد) when the combination comes about at once; polarity inverted, true = fāsid.",
+   "negated": true
+  },
+  "specific_singled_out": {
+   "sort": "dalala",
+   "reason": "q119: specificSingledOut - whether a general wording with a specific instance singles out the specific with its own ruling (takhṣīṣ of ʿāmm by khāṣṣ)."
+  },
+  "split_halves_suffice": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Q101: «فهل يجزئه أم لا» — whether the two halves suffice for the duty.",
+   "bool_as_validity": true
+  },
+  "spread_follows_injury": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q128: output is that the spread (death from the injury) is guaranteed, i.e. whether ḍamān arises for it."
+  },
+  "substitute": {
+   "sort": "judgement",
+   "question": "aspect:permitted",
+   "reason": "useSubstitute (Q28): 'the substitute stands in for the original, but only when the original is impossible', i.e. whether he may resort to the substitute.",
+   "alt": "wadi:validity (whether the substitute suffices)"
+  },
+  "substitute_at_obligation": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "bool_as_validity": true,
+   "reason": "Qāʿida 16 / Saʿdī Q28: useSubstituteAt - whether the substitute stands in for the original and suffices, finding the original later not moving him to it.",
+   "alt": "aspect:permitted / aspect:obligatory: may he (must he) use the substitute rather than the original"
+  },
+  "substitute_refusal_judged_by_original": {
+   "sort": "effect",
+   "reason": "Q110: refusing the substitute «حكم عليه بالأصل» — which of two rights (original vs substitute) he is held to.",
+   "alt": "procedure: the judge rules against him"
+  },
+  "successive_by_binding": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qaida 37 jam': the later contract governs where it binds or the earlier did not («ويسقط ضمان العارية») - whether the later contract displaces the earlier's effects.",
+   "alt": "effect: which contract's ruling governs"
+  },
+  "successive_contracts": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Qaida 37: the later contract's ruling governs the hand (pledge used becomes loan, usurper cleared) - whether the later contract is a sabab displacing the earlier one's effects such as liability.",
+   "alt": "effect: could be read as which contract's ruling allocates the hand"
+  },
+  "sulh_replaces_owned_wealth": {
+   "sort": "takyif",
+   "reason": "Q137 third sub-qāʿida «هل يكون الصلح عنها صلحا عن القود أو المال»: sulhReplacesWealth - whether the ṣulḥ compensation counts as a wealth-for-wealth exchange.",
+   "alt": "effect: which regime governs the compensation (diya measure, shufʿa)"
+  },
+  "supervening_bar_extends_to_preliminaries": {
+   "sort": "judgement",
+   "question": "aspect:permitted",
+   "negated": true,
+   "reason": "Q136 «هل يستتبع تحريم مقدماته»: preliminariesForbidden - whether the preliminaries of intercourse are forbidden too; true = forbidden, the no of 'may he'."
+  },
+  "switch_to_original": {
+   "sort": "judgement",
+   "question": "aspect:obligatory",
+   "reason": "mustSwitch (Ibn Rajab 7 'فهذا يلزمه الانتقال إلى الأصل عند القدرة عليه'): whether he must switch to the original."
+  },
+  "tabaa": {
+   "sort": "procedure",
+   "reason": "established: 'what is not established independently may be established as a dependent' (Q50); Ibn Rajab 133's instances are proofs (women's testimony to birth establishes lineage), i.e. whether a proof suffices.",
+   "alt": "epistemic (what establishes a fact); the qāʿida is also used outside evidence, e.g. jawazAfterSarf"
+  },
+  "tadakhul": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "bool_as_validity": true,
+   "reason": "discharges (Q41 / Ibn Rajab 18 'تداخلت أفعالهما واكتفى فيهما بفعل واحد'): whether one performance suffices for both owed acts."
+  },
+  "taker_from_usurper": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "takerRecourse (Ibn Rajab 93 'رجع به على الغاصب'): whether the taker from a usurper has a right of recourse, unless he undertook the liability."
+  },
+  "takes_only_by_special": {
+   "sort": "effect",
+   "reason": "q119 first attached qāʿida «فإنه لا يأخذ إلا بالجهة الخاصة»: takesOnlyBySpecial - whether he takes by the special title alone, nothing from the general class's share (by which title / how much he takes).",
+   "alt": "dalala: the docstring ties it to the specific singled out of the general wording"
+  },
+  "taliq_al_bay": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Ibn Rajab 68.f007: a sale suspended on a condition both know to hold is valid, al-Kafi «فلا يؤثر ذكره في العقد»; output is the sale's validity.",
+   "bool_as_validity": true
+  },
+  "tolerance_exceeded": {
+   "sort": "effect",
+   "reason": "Qaida 29 returns Lapse all/excess: whether the tolerance lapses in the excess alone or in the whole - an extent enum."
+  },
+  "trust_loss": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "lossLiable (Q14): loss in a trustee's hand is compensable only with transgression or negligence; asks whether the hand is a sabab of ḍamān."
+  },
+  "trust_voidance": {
+   "sort": "judgement",
+   "reason": "Q14 «تبطل بالتعدي»: whether a pure trust survives transgression; the encoder returns true when it is bāṭil, so the answer is negated.",
+   "question": "wadi:validity",
+   "bool_as_validity": true,
+   "negated": true,
+   "alt": "wadi:mani (transgression bars the trust)"
+  },
+  "umum_lafz": {
+   "sort": "dalala",
+   "reason": "Dalala.coversBeyondSabab: 'A general wording on a specific occasion: whether it covers cases beyond its occasion' - scope of wording."
+  },
+  "unfixed_right_reaches_fixed": {
+   "sort": "effect",
+   "reason": "Q139 «فلا يزاد الحق الذي لم يقدر على المقدر»: unfixedMayReachFixed - how far the unfixed right may extend relative to the fixed one (how much), as entitlement_multiplies.",
+   "alt": "judgement wadi:mani: the fixed measure as a cap barring the excess"
+  },
+  "unintended_instance_covered": {
+   "sort": "dalala",
+   "reason": "q126: unintendedCovered - whether a general wording covers an instance not ordinarily intended."
+  },
+  "unknown_as_nonexistent": {
+   "sort": "epistemic",
+   "reason": "treatedAsAbsent (Ibn Rajab 106 'ينزل المجهول منزلة المعدوم'): the unknown treated as non-existent, a presumption about a fact."
+  },
+  "unknown_condition": {
+   "sort": "judgement",
+   "question": "wadi:shart",
+   "reason": "countsAsMet: 'whether the condition counts as met: if he knew it, or if all that is at stake is liability' (Ibn Rajab 64/65)."
+  },
+  "unknown_condition_in_fact": {
+   "sort": "judgement",
+   "question": "wadi:shart",
+   "reason": "Qawāʿid 64-65: countsAsMetIn docstring 'Whether the condition counts as met' for a condition that existed in fact but was unknown."
+  },
+  "unknown_consent_binds": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Q104: «صح الرضا به وألزم» — whether consent to the unknown is valid and binding.",
+   "bool_as_validity": true
+  },
+  "unknown_order_judged_sequential": {
+   "sort": "epistemic",
+   "reason": "Q108: what is unknown as simultaneous or sequential is judged sequential «لبعد التقارن» — a presumption establishing a fact."
+  },
+  "unknown_owner": {
+   "sort": "effect",
+   "reason": "recipient returns owner/publicInterest (Q20): to whom the right goes."
+  },
+  "unqualified_sharika_halves": {
+   "sort": "dalala",
+   "reason": "q114 «إطلاق الشركة هل يتنزل على المناصفة أو هو مبهم»: sharikaHalves - whether unqualified 'partnership' wording is taken as half and half.",
+   "alt": "effect: the share"
+  },
+  "urf_specialises_general": {
+   "sort": "dalala",
+   "reason": "q121: urfGeneralCovers - 'whether the general wording, used without qualification or intention, covers the instance' under ʿurf."
+  },
+  "vague_insha_valid": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Q105 inshāʾāt: «فلا يصح في مبهم» / «ويصح» — validity of the inshāʾ on a vague object.",
+   "bool_as_validity": true
+  },
+  "vague_one_bars_all": {
+   "sort": "judgement",
+   "question": "wadi:mani",
+   "reason": "q109 first kind: vagueOneBarsAll - 'whether dealing with each of the items is barred' because an unspecified barred one is confused among them; the confusion is an impediment to disposal.",
+   "alt": "aspect:permitted (inverted): may he deal with each item"
+  },
+  "vague_report_accepted": {
+   "sort": "procedure",
+   "reason": "Q105 ikhbārāt: «قبل في المبهم» / «لم يقبل» — whether a report (claim, testimony, iqrār) on a vague object is accepted."
+  },
+  "void_contract_concluded": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Qaida 46: a fasid contract is concluded (munʿaqid) only where binding and pervasive; a void sale «غير منعقد» - whether it is concluded and its effects follow.",
+   "alt": "wadi:sabab: the contract is already fasid; the question is whether it still produces effects",
+   "bool_as_validity": true
+  },
+  "vowed_as_shar_obligation": {
+   "sort": "takyif",
+   "reason": "Q100: whether the vowed obligation is attached to the sharʿ obligation or to the mandūb; the def selects which analogue's ruling applies — characterising the vowed act.",
+   "alt": "dalala: interpreting what the vow binds"
+  },
+  "wage_without_stipulation": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q74: who is entitled to a wage for unstipulated work — a right (iwaḍ) arising from the work."
+  },
+  "wording_in_other_tongue": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "reason": "Qaida 10: a non-Arabic wording counts where only meaning counts or he cannot manage Arabic - whether the formula counts/is valid.",
+   "alt": "dalala: concerns what is considered in a wording (lafz vs ma'na)",
+   "bool_as_validity": true
+  },
+  "wording_need_not_learn": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "bool_as_validity": true,
+   "reason": "Qāʿida 10: otherTongueValidIn - whether a non-Arabic wording counts/is valid for the contract or worship (ʿaqd, liʿān, khuṭba)."
+  },
+  "words_out_of_nature": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "bool_as_validity": true,
+   "reason": "Qāʿida 38 «فهل يفسد العقد بذلك أو يجعل كناية عما يمكن صحته»: asKinayaValid - whether the contract is ṣaḥīḥ as an allusion to another contract rather than fāsid.",
+   "alt": "dalala: turns on whether the wording or the meaning predominates (المغلب هل هو اللفظ أو المعنى)"
+  },
+  "worship_ruled_from_start": {
+   "sort": "judgement",
+   "question": "wadi:shart",
+   "reason": "q116 attached class: worshipFromStart - whether a worship whose condition was attained within its time is ruled as having its conditions met from the beginning.",
+   "alt": "wadi:validity"
+  }
+ }
+}

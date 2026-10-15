@@ -19,13 +19,19 @@ The roadmap names Ibn al-Laḥḥām for M4. His rules, however, are almost all 
 | Class | Meaning | Checked by |
 |---|---|---|
 | `derivable` | the case falls under the rule, its deciding facts are the encoder's fields, and the kernel gives the text's ruling | `#guard expr == expected` |
-| `genuine_ikhtilaf` | the text reports two or more positions; the kernel gives one of them (and `matches_madhhab` says whether it is the madhhab's) | `#guard expr == expected` |
+| `genuine_ikhtilaf` | the text reports two or more positions; the kernel gives one of them. `matches_madhhab` records whether the source labels that position the madhhab's; it describes the text and is not a target | `#guard expr == expected` |
 | `encoding_error` | the case is fully expressible, but the kernel contradicts every stated position: a finding against the reading | `#guard expr != expected` |
 | `missing_fact` | the ruling turns on a fact the encoder cannot express | — |
 | `missing_rule` | the case is decided by a different principle | — |
 | `segmentation_error` | the record is not a case (excluded from coverage) | — |
 
 Coverage = (derivable + genuine_ikhtilāf) / (total − segmentation errors). As the roadmap requires, ikhtilāf cases count as recorded positions, not failures.
+
+**No position is a target by attribution.** A ruling stands by its proof, not by whether a madhhab, a majority or an author holds it. The report therefore scores the kernel only on *decided* cases, those that state one ruling:
+
+    decided coverage = derivable / (derivable + encoding errors + missing facts + missing rules)
+
+Disputed cases (`genuine_ikhtilaf`) are counted apart (`disputed`). Which position is right is a question of tarjīḥ by the evidence. Earlier sections report a *madhhab coverage* (derivable plus ikhtilāf on the madhhab side). That figure is kept as it was recorded, but it is retired: it scored the kernel against an attribution.
 
 ## Lean is the oracle, not the annotation
 
@@ -182,12 +188,12 @@ Every ikhtilāf farʿ off the marked madhhab side is run through the kernel's ow
 
 The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
 
-| Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
-|---|---|---|---|---|---|
-| Combined M8 tranche 3 | 29 | 1.000 | 0.759 | 0 | 0 |
-| All annotation suites | 981 | 0.955 | 0.716 | 0 | 44 |
+| Current scope (generated) | Cases | Coverage | Decided coverage | Disputed | Encoding errors | Open gaps |
+|---|---|---|---|---|---|---|
+| Combined M8 tranche 3 | 29 | 1.000 | 1.000 | 21 | 0 | 0 |
+| All annotation suites | 981 | 0.955 | 0.899 | 545 | 0 | 44 |
 
-Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
+Coverage counts derivability under the candidate encoding. Decided coverage scores the kernel only on cases that state one ruling; disputed cases are weighed by their evidence, not by who holds a position. Neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
 
 Each selected qāʿida needs an explicitly sourced reading connected to a Lean encoder before its furūʿ can test that reading. An unannotated qāʿida is not proof that no related principle exists in the bank. Every emitted record of a selected qāʿida is inventoried, including `.f000`; known extraction gaps remain separate.
