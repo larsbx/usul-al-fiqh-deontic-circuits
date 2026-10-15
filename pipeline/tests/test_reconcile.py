@@ -465,3 +465,18 @@ def test_proofs_are_verbatim(x):
     if (text := _witness(w)) is None:
         pytest.fail(f"required witness {w} not cached; run make source-verify-fetch")
     assert locate(text, x["excerpt_ar"]) == loc, x["ref"]
+
+
+def test_a_position_is_one_attributed_view():
+    """q160.f031: Ibn Rajab gives Abū Bakr's and Ibn Ḥāmid's wujūh under the mashhūr («على وجهين»).
+    Al-Inṣāf and the muʿtamad pick the first against the second, so a tarjīḥ on the two glued
+    together would credit a disjunction with what the evidence gave one disjunct. Each proof, too,
+    weighs for the wajh it is given for (ʿUmar's «وال أيهما شئت» for the choosing one)."""
+    far = "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f031"
+    case = next(c for c in CASES if c["far"] == far)
+    entry = next(e for e in LEDGER["entries"] if e["far"] == far)
+    ps = case["positions"]
+    lost, puberty = (next(k for k, p in enumerate(ps) if name in p["who"]) for name in ("Abū Bakr", "Ibn Ḥāmid"))
+    assert lost != puberty
+    assert reconcile.attribution(case, entry) == ("tarjih", ps[lost]["ruling"])
+    assert [x["position"] for x in entry["proofs"] if "وال أيهما شئت" in x["excerpt_ar"]] == [puberty]

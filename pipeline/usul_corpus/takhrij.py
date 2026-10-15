@@ -508,6 +508,15 @@ def lean_expr(encoder: str, facts: dict) -> str:
     return ENCODERS[encoder]["lean"].format(**{k: literal(encoder, k, v) for k, v in facts.items()})
 
 
+def code(v: object) -> str:
+    """A ruling's or fact's identity: its JSON, so 1 is not true and key order is moot."""
+    return json.dumps(v, ensure_ascii=False, sort_keys=True)
+
+
+def among(v: object, values) -> bool:
+    return code(v) in map(code, values)
+
+
 def check_case(case: dict) -> list[str]:
     """Structural problems with a case (empty when well-formed)."""
     errs = []
@@ -518,16 +527,16 @@ def check_case(case: dict) -> list[str]:
         errs.append(f"unknown class {case['class']}")
     if case["class"] in GUARDED:
         f = case.get("facts") or {}
-        if set(f) != set(enc["facts"]) or any(f[k] not in dom for k, dom in enc["facts"].items()):
+        if set(f) != set(enc["facts"]) or not all(among(f[k], dom) for k, dom in enc["facts"].items()):
             errs.append("facts do not match the encoder")
-        elif case.get("expected") not in enc["out"]:
+        elif not among(case.get("expected"), enc["out"]):
             errs.append("expected outside the encoder's output domain")
-        elif (enc["py"](f) == case["expected"]) != (GUARDED[case["class"]] == "=="):
+        elif (code(enc["py"](f)) == code(case["expected"])) != (GUARDED[case["class"]] == "=="):
             errs.append("class contradicts the kernel's output")
     if case["class"] == "genuine_ikhtilaf" and len(case.get("positions") or []) < 2:
         errs.append("ikhtilāf needs at least two positions")
-    elif case["class"] == "genuine_ikhtilaf" and not errs and json.dumps(case.get("expected")) not in [
-            json.dumps(p["ruling"]) for p in case["positions"]]:  # JSON, so 1 is not true
+    elif case["class"] == "genuine_ikhtilaf" and not errs and not among(case.get("expected"),
+                                                                         [p["ruling"] for p in case["positions"]]):
         errs.append("no position holds the expected ruling")
     for n in case.get("needs", []):
         if not n.startswith(("fact:", "rule:")):
