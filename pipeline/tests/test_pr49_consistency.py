@@ -61,9 +61,10 @@ def test_pr49_tranche_and_current_generated_reports_are_consistent():
     report = takhrij.report(tranche)
     assert report["total"] == 27
     assert report["classes"] == {"derivable": 15, "genuine_ikhtilaf": 12}
-    # 8 and 0.852 at the PR #49 merge; q014.f000's jamʿ (PR-28) adds one match.
-    assert report["ikhtilaf_matching_madhhab"] == 9
-    assert report["madhhab_coverage"] == 0.889
+    # 8 on the madhhab's marked side at the PR #49 merge; q014.f000's jamʿ (PR-28) adds one. The side
+    # describes the text and is no longer scored (madhhab coverage is retired for decided coverage).
+    assert sum(1 for c in tranche if c["class"] == "genuine_ikhtilaf" and c.get("matches_madhhab")) == 9
+    assert report["decided_coverage"] == 1.0 and report["disputed"] == 12
     assert report["encoding_error"] == report["gaps_open"] == 0
     cases = takhrij.load(ROOT / "corpus")
     ledger = reconcile.load(ROOT / "corpus")

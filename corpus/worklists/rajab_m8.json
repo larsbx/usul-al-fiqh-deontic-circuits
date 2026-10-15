@@ -425,9 +425,9 @@
       "segmentation_error": 1
     },
     "coverage": 0.959,
-    "madhhab_coverage": 0.729,
+    "decided_coverage": 0.909,
+    "disputed": 598,
     "encoding_error": 0,
-    "ikhtilaf_matching_madhhab": 348,
     "gaps_open": 44,
     "revisited": 38
   },
@@ -438,9 +438,9 @@
       "genuine_ikhtilaf": 21
     },
     "coverage": 1.0,
-    "madhhab_coverage": 0.759,
+    "decided_coverage": 1.0,
+    "disputed": 21,
     "encoding_error": 0,
-    "ikhtilaf_matching_madhhab": 14,
     "gaps_open": 0,
     "revisited": 1,
     "revisit_queue": [],

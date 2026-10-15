@@ -564,12 +564,14 @@ def report(cases: list[dict], co: list[dict] = ()) -> dict:
     by = Counter(c["class"] for c in cases)
     scope = len(cases) - by["segmentation_error"]
     per = {e: dict(Counter(c["class"] for c in cases if c["encoder"] == e)) for e in ENCODERS}
-    ikh = [c for c in cases if c["class"] == "genuine_ikhtilaf"]
+    # A ruling stands by its proof, not by who holds it: only cases stating one ruling are scored; a
+    # disputed case (genuine ikhtilāf) is counted apart, for tarjīḥ by evidence.
+    decided = by["derivable"] + sum(by[g] for g in GAPS)
     return {"total": len(cases), "classes": dict(sorted(by.items())),
             "coverage": round((by["derivable"] + by["genuine_ikhtilaf"]) / scope, 3) if scope else 0.0,
-            "madhhab_coverage": round((by["derivable"] + sum(1 for c in ikh if c.get("matches_madhhab"))) / scope, 3) if scope else 0.0,
+            "decided_coverage": round(by["derivable"] / decided, 3) if decided else 0.0,
+            "disputed": by["genuine_ikhtilaf"],
             "encoding_error": by["encoding_error"],
-            "ikhtilaf_matching_madhhab": sum(1 for c in ikh if c.get("matches_madhhab")),
             "gaps_open": sum(1 for c in cases if c.get("needs")),
             "revisited": sum(1 for c in cases if c.get("revisit")),
             "revisit_queue": revisit_queue(cases),

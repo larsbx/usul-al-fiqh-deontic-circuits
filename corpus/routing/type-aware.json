@@ -47760,7 +47760,7 @@
     "corpus/takhrij/rajab_m8_tranche7_furu.json": "1a11a26a6765c2e4abd93daf2bc7cb45f84aeeea5e79c6a8b6e1b3da83c6ec76",
     "corpus/takhrij/rajab_m8_tranche8_furu.json": "3931bd2b0415488c1f33f27da28d1f164c8355cbd2029d084eac7d374e8f05ee",
     "corpus/takhrij/rajab_m8_tranche9_furu.json": "65d72a6ad2b11ccfee124b7f7ea6449a412ceb430322e62567395335abb6c8e0",
-    "corpus/takhrij/report.json": "407f625021f4c52b6b1a76d82795ae6c455dc84df6d15a2699b4a00a69169036",
+    "corpus/takhrij/report.json": "4055edaa2c239921f1511242cedda1506321b7b4299948cadb2cd53214263c57",
     "corpus/takhrij/sadi_furu.json": "bc25b22a9d6b49385c2c686d54b1ca223a8557f246d317c2d3cfb3814177f2bc",
     "pipeline/usul_corpus/arabic.py": "556b27861a39442ab2313e375edb903a0e5ce41e4b57777c5c2eea91c824001e",
     "pipeline/usul_corpus/encoders/__init__.py": "4a133416eed03eb1397708ac65895cf7802cd91866ab49428cd493a39d35fa11",
@@ -47793,7 +47793,7 @@
     "pipeline/usul_corpus/encoders/rajab_a9.py": "6189b8b1dcc9767188b840594fbf74a052a68a7d90aa54f726c21eb25a674747",
     "pipeline/usul_corpus/routing.py": "e207c68b0094a87a9b9c95b6ac0f62ce88ff7a0d4d53e14cb16b0a4a095bcf54",
     "pipeline/usul_corpus/signature_routing.py": "b7353e5f684590f0b727eab6e326b4a3ca2e6fb6129f861fdf97d475beab6e32",
-    "pipeline/usul_corpus/takhrij.py": "7271e3b27d4a190b53ed83e91f9fcf78844340fe0a601804deba510673106712"
+    "pipeline/usul_corpus/takhrij.py": "dab0525d6143092304138fce3f9e67311e075ecef932ceb74159cbbdd8fe8073"
   },
   "questions_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
 }

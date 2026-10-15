@@ -12,6 +12,11 @@
     {"lean": "Usul.DalilKind.qiyas", "witness": "shamela-9942", "term_ar": "القياس"},
     {"lean": "Usul.Conflict", "witness": "shamela-9942", "term_ar": "التعارض"},
     {"lean": "Usul.Resolution.naskh", "witness": "shamela-9942", "term_ar": "النسخ"},
-    {"lean": "Usul.Subject.IsMukallaf", "witness": "openiti-lahham-shamela8526", "qaida": 2}
+    {"lean": "Usul.Subject.IsMukallaf", "witness": "openiti-lahham-shamela8526", "qaida": 2},
+    {"lean": "Usul.Khitab", "witness": "shamela-9942", "term_ar": "الأحكام"},
+    {"lean": "Usul.Validity.sahih", "witness": "shamela-9942", "term_ar": "الصحيح"},
+    {"lean": "Usul.Validity.fasid", "witness": "shamela-9942", "term_ar": "الفاسد"},
+    {"lean": "Usul.Judgement.WellTyped", "witness": "shamela-9942", "term_ar": "الفقه"},
+    {"lean": "Usul.Judgement.wadi_without_taklif", "witness": "openiti-lahham-shamela8526", "qaida": 2}
   ]
 }

@@ -101,8 +101,8 @@ def build(corpus: Path) -> dict:
             "input_sha256": {str(p.relative_to(corpus)): sha256(p.read_bytes()) for p in inputs},
             "summary": summary, "suites": suites,
             "aggregate_report": {k: aggregate[k] for k in (
-                "total", "classes", "coverage", "madhhab_coverage", "encoding_error",
-                "ikhtilaf_matching_madhhab", "gaps_open", "revisited")},
+                "total", "classes", "coverage", "decided_coverage", "disputed", "encoding_error",
+                "gaps_open", "revisited")},
             "tranche3_report": takhrij.report(tranche3),
             "unsegmented_scope": "No segmented far is an extraction backlog, not proof of no examples; no case count is imputed",
             "annotation_scope": "Annotated includes recorded gaps and disagreements; all readings remain candidate, not adopted",
@@ -117,7 +117,7 @@ def scope_block(inventory: dict) -> str:
     s = inventory["summary"]
     def row(label: str, report: dict) -> str:
         return (f"| {label} | {report['total']} | {report['coverage']:.3f} | "
-                f"{report['madhhab_coverage']:.3f} | {report['encoding_error']} | {report['gaps_open']} |\n")
+                f"{report['decided_coverage']:.3f} | {report['disputed']} | {report['encoding_error']} | {report['gaps_open']} |\n")
     return (f"{BEGIN}\n"
             f"**Current M8 inventory (generated).** {s['segmented_furu']:,} segmented Ibn Rajab furūʿ records = "
             f"{s['annotated_furu']:,} annotated + **{s['pending_furu']:,} awaiting annotation**. "
@@ -129,12 +129,13 @@ def scope_block(inventory: dict) -> str:
             "disagreements are already counted as annotated; annotation does not mean independently reviewed or "
             "scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input "
             "hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.\n\n"
-            "| Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |\n"
-            "|---|---|---|---|---|---|\n"
+            "| Current scope (generated) | Cases | Coverage | Decided coverage | Disputed | Encoding errors | Open gaps |\n"
+            "|---|---|---|---|---|---|---|\n"
             + row("Combined M8 tranche 3", inventory["tranche3_report"])
             + row("All annotation suites", inventory["aggregate_report"])
-            + "\nCoverage counts derivability under the candidate encoding. Madhhab coverage uses candidate "
-            "source attributions; neither metric establishes scholarly acceptance.\n"
+            + "\nCoverage counts derivability under the candidate encoding. Decided coverage scores the kernel only "
+            "on cases that state one ruling; disputed cases are weighed by their evidence, not by who holds a "
+            "position. Neither metric establishes scholarly acceptance.\n"
             f"{END}")
 
 

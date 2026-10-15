@@ -1,0 +1,147 @@
+"""The question each encoder answers, typed by `Usul.Judgement` (docs/architecture/judgement.md).
+
+``corpus/types/encoders.json`` gives every encoder a *sort*. A ``judgement`` answers a `Usul.Question`
+(or a yes/no `Usul.Aspect` of a taklīfī status); the other sorts are outputs that are not answers to a
+khiṭāb at all, and so must never be compared with one:
+
+    effect     a waḍʿī effect whose answer is not yes/no (to whom, how much, which outcome)
+    dalala     what a text or utterance means or covers
+    takyif     what a thing or fact is classified as (taḥqīq al-manāṭ)
+    epistemic  which presumption or grade establishes a fact (`Qawaid.Held`)
+    procedure  adjudication and evidence
+
+`lean_file` makes the Lean build check each judgement encoder's output against its declared answer
+type. ``negated`` marks an encoder whose ``true`` is the question's ``false`` (it returns "void", the
+question asks "valid"); the guard checks the negated output, so ``true`` always means the question's
+yes (ṣaḥīḥ, the sabab holds). `report` counts encoders and cases by sort: the share of the bank that Σ can type, and the
+share it cannot yet. Every classification is a candidate, like the cases it types.
+"""
+
+from __future__ import annotations
+
+import json
+import re
+from collections import Counter
+from pathlib import Path
+
+from . import takhrij
+
+TYPES = Path("types") / "encoders.json"
+SORTS = ("judgement", "effect", "dalala", "takyif", "epistemic", "procedure")
+# question → the Lean type its answer must have
+QUESTIONS = {"taklifi": "Usul.Question.Answer .taklifi",
+             "aspect:obligatory": "Bool", "aspect:permitted": "Bool",
+             "wadi:sabab": "Usul.Question.Answer (.wadi .sabab)",
+             "wadi:shart": "Usul.Question.Answer (.wadi .shart)",
+             "wadi:mani": "Usul.Question.Answer (.wadi .mani)",
+             "wadi:validity": "Usul.Question.Answer (.wadi .validity)"}
+HUKM = set(takhrij.HUKM)
+
+
+def load(corpus: Path) -> dict[str, dict]:
+    return json.loads((corpus / TYPES).read_text(encoding="utf-8"))["encoders"]
+
+
+def check(types: dict[str, dict], encoders: dict[str, dict]) -> list[str]:
+    """Each typed encoder exists, has one sort, and a judgement's question fits its output domain."""
+    errs = [f"{n}: not an encoder" for n in sorted(set(types) - set(encoders))]
+    for n, t in sorted(types.items()):
+        if n not in encoders:
+            continue
+        out = set(map(str, encoders[n]["out"]))
+        if t.get("sort") not in SORTS:
+            errs.append(f"{n}: sort {t.get('sort')!r} not in {SORTS}")
+        elif t["sort"] != "judgement":
+            if "question" in t:
+                errs.append(f"{n}: only a judgement answers a question")
+        elif t.get("question") not in QUESTIONS:
+            errs.append(f"{n}: question {t.get('question')!r} not in {tuple(QUESTIONS)}")
+        elif t["question"] == "taklifi" and not out <= HUKM:
+            errs.append(f"{n}: a taklīfī answer is a Hukm, not {sorted(out)}")
+        elif t["question"] != "taklifi" and out != {"False", "True"}:
+            errs.append(f"{n}: a yes/no question needs a Bool output, not {sorted(out)}")
+        if t.get("bool_as_validity") and t.get("question") != "wadi:validity":
+            errs.append(f"{n}: bool_as_validity is for wadi:validity only")
+        if t.get("negated") and t.get("question") in (None, "taklifi"):
+            errs.append(f"{n}: only a yes/no answer can be negated")
+        if not str(t.get("reason", "")).strip():
+            errs.append(f"{n}: no reason")
+    return errs
+
+
+_TYPED = re.compile(r"/-- `(\w+)`(?:(?!-/).)*-/\s*def (\w+) : Typed Situation", re.S)
+
+
+def typed_names(root: Path) -> dict[str, str]:
+    """Encoder name → its typed definition in `Usul.Typing` (named in the docstring's first backticks)."""
+    lean = root / "formal" / "lean" / "Usul"
+    return {e: f"Usul.Typing.{d}" for f in [lean / "Typing.lean", *sorted((lean / "Typing").glob("*.lean"))]
+            for e, d in _TYPED.findall(f.read_text(encoding="utf-8"))}
+
+
+def _sample(encoder: str) -> str:
+    """The encoder's Lean expression at the first value of each fact domain."""
+    return takhrij.lean_expr(encoder, {k: dom[0] for k, dom in takhrij.ENCODERS[encoder]["facts"].items()})
+
+
+def _relabel(t: dict) -> str | None:
+    """The map from the encoder's output to the question's answer, if it is not the identity."""
+    neg, val = t.get("negated"), t.get("bool_as_validity")
+    return ("(Usul.Validity.ofEffects ∘ (!·))" if neg and val else "Usul.Validity.ofEffects" if val
+            else "(!·)" if neg else None)
+
+
+def lean_file(types: dict[str, dict], typed: dict[str, str] | None = None) -> str:
+    """Each judgement encoder ascribed to its question's answer type: the typed encoder of `Usul.Typing`
+    where there is one (`Typed Situation (Question.Answer q)`), else its expression at one input."""
+    typed = typed or {}
+    lines = ["-- GENERATED by `python -m usul_corpus judgement` from corpus/types/encoders.json. Do not edit.",
+             "-- Each judgement encoder's output has the answer type of the question it is declared to answer.",
+             "import Usul", ""]
+    for n, t in sorted(types.items()):
+        if t["sort"] != "judgement" or n not in takhrij.ENCODERS:
+            continue
+        f, ty = _relabel(t), QUESTIONS[t["question"]]
+        lines.append(f"-- {n}: {t['question']}" + (" (negated)" if t.get("negated") else ""))
+        if n in typed:
+            e = typed[n] if f is None else f"{typed[n]}.mapRun {f}"
+            lines.append(f"example : Usul.Typing.Typed Usul.Typing.Situation ({ty}) := {e}")
+        else:
+            e = _sample(n) if f is None else f"{f} ({_sample(n)})"
+            lines.append(f"example : {ty} := {e}")
+    return "\n".join(lines) + "\n"
+
+
+def report(types: dict[str, dict], encoders: dict[str, dict], cases: list[dict]) -> dict:
+    """Encoders and cases by sort and question; untyped encoders are listed, never guessed."""
+    def kind(n: str) -> str:
+        t = types.get(n)
+        return "untyped" if t is None else t["sort"] if t["sort"] != "judgement" else f"judgement/{t['question']}"
+    scoped = [c for c in cases if c["class"] != "segmentation_error"]
+    by_case = Counter(kind(c["encoder"]) for c in scoped)
+    typed = sum(v for k, v in by_case.items() if k.startswith("judgement/"))
+    return {"encoders": dict(sorted(Counter(kind(n) for n in encoders).items())),
+            "cases": dict(sorted(by_case.items())),
+            "cases_typed_by_judgement": round(typed / len(scoped), 3) if scoped else 0.0,
+            "untyped": sorted(n for n in encoders if n not in types),
+            "hard": {n: t["alt"] for n, t in sorted(types.items()) if t.get("alt")}}
+
+
+# Cues in a *question* that it asks about a posited sign, or about a report, not about a taklīfī status.
+# A flag is a candidate for review, never a relabelling.
+_FLAGS = {"wadi:validity": r"(يصح|صحة|صحيح|باطل|بطلان|فاسد|يبطل|تبطل|يفسد|تفسد|يجزئ|تجزئ|إجزاء)",
+          "wadi:sabab/daman": r"(يضمن|ضمان|ضامن|تعويض|الدية|يغرم)",
+          "wadi:sabab/milk": r"(يملك|تملك|ينعقد|انعقاد|يقع الطلاق|وقع الطلاق|تطلق)",
+          "riwaya": r"(صحة حديث|صحة الحديث|درجة حديث|درجة الحديث|تخريج حديث)"}
+_FLAG_RX = {k: re.compile(p) for k, p in _FLAGS.items()}
+
+
+def label_flags(labels: list[dict], questions: dict[str, str]) -> dict:
+    """Taklīfī labels whose question carries a waḍʿī or riwāya cue: the size of the mismatch to review."""
+    labelled = [x for x in labels if x.get("hukm")]
+    flags = {x["id"]: [k for k, rx in _FLAG_RX.items() if rx.search(questions.get(x["id"], ""))] for x in labelled}
+    flagged = {i: ks for i, ks in flags.items() if ks}
+    return {"taklifi_labels": len(labelled), "flagged": len(flagged),
+            "share": round(len(flagged) / len(labelled), 3) if labelled else 0.0,
+            "by_cue": dict(sorted(Counter(k for ks in flagged.values() for k in ks).items())),
+            "riwaya": sorted(i for i, ks in flagged.items() if "riwaya" in ks)}
