@@ -1,0 +1,475 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b15: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: what is sold (the slave-woman) is known; not knowing about the foetus does no harm, since the foetus is neither sold nor excepted by words.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p079",
+     "excerpt_ar": "والأولى صحته؛ لأن المبيع معلوم، وجهالة الحمل لا تضر من حيث إنه ليس بمبيع ولا مستثنى باللفظ",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For validity on these facts (a slave-woman pregnant with a free child). A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: the Law may except what words cannot. The aṣl is the sale of a married slave-woman, which is valid, with the use of her body excepted by the Law; the farʿ is the free foetus, excepted by the Law; the ʿilla is an exception made by the Law.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p079",
+     "excerpt_ar": "وقد يستثنى بالشرع ما لا يصح استثناؤه باللفظ، كما لو باع أمة مزوجة صح، ووقعت منفعة البضع مستثناة بالشرع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "An analogy with an aṣl the madhhab agrees on, cited for validity. The same argument is in al-Kāfī, Kashshāf (v03:p157) and Sharḥ al-Muntahā (v02:p015). Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Built on the verbal exception (a fortiori): if excepting the foetus by words is valid, the sale of the slave-woman pregnant with a free child is valid here.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p021",
+     "excerpt_ar": "فإن باع جارية حاملا بحر، وقلنا: يصح استثناء الحمل صح هاهنا",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "On these facts (the verbal exception taken as valid), al-Kāfī states validity without giving two views. This is an analogy from the verbal exception: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "al-Qāḍī's rationale: the free foetus does not enter the sale, so it is as if it were excepted, and is treated like the verbal exception.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p079",
+     "excerpt_ar": "فقال القاضي: لا يصح. وهو مذهب الشافعي؛ لأنه لا يدخل في البيع، فكأنه مستثنى",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The ground for al-Qāḍī's invalidity, which he shares with the Shāfiʿīs. A stated analogy to the exception: qiyas. On these facts, where the verbal exception is valid, the analogy does not lead to invalidity; the source gives it without that restriction."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale for the wajh of invalidity: the seller has in reality excepted the foetus.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p021",
+     "excerpt_ar": "وإن قلنا: لا يصح ثم، ففيه وجهان: # أحدهما: لا يصح، لأنه استثناه في الحقيقة",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "In al-Kāfī this wajh holds only on the view that the verbal exception is invalid. It is recorded as the stated ground of the invalidity ruling. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Majd al-Dīn's qiyās al-madhhab, under the qāʿida that an exception made by the Law (istithnāʾ ḥukmī) tolerates the unknown, unlike a verbal one: the sale is valid even though the widow's right of residence runs for an unknown period.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p041",
+     "excerpt_ar": "قال في المغني لا، لأن مدة الحمل مجهولة بخلاف مدة الأشهر، وقال الشيخ مجد الدين في مسودته على الهداية قياس المذهب صحة البيع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab sets out this farʿ under the qāʿida «الاستثناء الحكمي … تغتفر فيه الجهالة». Majd's ruling is explicitly a qiyās al-madhhab. al-Inṣāf (v06:p069) prefers it: «وهو الصواب»."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: the widow is owed residence only while pregnant, and the period of pregnancy is unknown, so the sale is as if the seller had sold the house and excepted its use for an unknown period.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p162",
+     "excerpt_ar": "لأنها إنما تستحق السكنى إذا كانت حاملا، ومدة الحمل مجهولة، فتصير كما لو باعها واستثنى نفعها مدة مجهولة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's ground for invalidity on these facts. The aṣl is the verbal exception of use for an unknown period: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale (farq): when the annulment comes from both parties or from the buyer, he has himself caused another's property to come into his hand, so he is liable; this is unlike the wife's case, where the husband ended the contract alone.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p227",
+     "excerpt_ar": "وإن سلمنا فإن الفسخ إن كان منهما، أو من المشتري، فقد حصل منه التسبب إلى جعل ملك غيره في يده",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given in the ṣadāq masʾala while explaining the sale annulled by the buyer. This is the basis of the wajh that the holder who causes the ending is liable. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Ibn Rajab states the second wajh and its rationale: if the holder ends the contract himself (the buyer's annulment) or takes part in ending it, he is liable, having caused another's property to come into his hand.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p056",
+     "excerpt_ar": "كفسخ المشتري أو يشارك فيه الآخر كالفسخ منهما فهو ضامن له لأنه يسبب إلى جعل ملك غيره في يده",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "For position 0 on these facts (the buyer returning for a defect ends the contract himself). A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: after annulment the sale object is a trust (amāna) in the buyer's hand, because it came there without any wrongdoing; he is liable only if he fails to return it.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p049",
+     "excerpt_ar": "(والمبيع بعد فسخ) بيع العيب أو غيره (أمانة بيد مشتر) لحصوله في يده بلا تعد، لكن إن قصر في رده فتلف ضمنه لتفريطه",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Cited for no liability after annulment for a defect or otherwise, which is the outcome of position 1 for a distinct sale object. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy of the two guarantees: the liability after the contract ends is measured by the original owner's liability before delivery, so a distinct (mutamayyiz) sale object is not guaranteed.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p056",
+     "excerpt_ar": "وهي طريقة أبي الخطاب وصاحب الكافي في آخرين اعتبارا لأحد الضمانين بالآخر",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The ground Ibn Rajab gives for Abū al-Khaṭṭāb's and al-Kāfī's way: measuring one guarantee by the other. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f009",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Reported consensus: a ruling the judge gives by what he does not himself believe is undone, in agreement with the four imāms; al-Qarāfī reports it as ijmāʿ.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p326",
+     "excerpt_ar": "(ظنيا وينقض حكمه بما لم يعتقده) إذا كان مجتهدا بخلاف المقلد وتقدم (وفاقا للأئمة الأربعة، وحكاه القرافي إجماعا",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The claim of ijmāʿ is stated outright for this very ruling (undoing the verdict of a mujtahid judge who rules against what he believes). It is al-Qarāfī's claim relayed by al-Buhūtī and al-Inṣāf (v11:p225); al-Furūʿ has only «وحكاه بعضهم إجماعا». It is explicit, so recorded as ijma, but it rests on one reporter and is flagged for review. It conflicts with Ibn Abī Mūsā's position, which Ibn Rajab reports. Reviewed: an ijmāʿ relayed by one reporter (al-Qarāfī), with Ibn Abī Mūsā reported holding the opposite, is a ẓann, not the certain ijmāʿ of Rawḍa v02 p389: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "al-Sāmarrī's rationale: agreement with the judge's belief is a condition of a valid ruling. A judge who rules in ignorance has his ruling undone though he does not believe it wrong, so a judge who believes it wrong has it undone a fortiori.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p122",
+     "excerpt_ar": "وقال السامري بل ينقض حكمه لأن شرط صحة الحكم موافقة الاعتقاد، ولهذا لو حكم بجهل لنقض حكمه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Cited for undoing the ruling on these facts. A stated rationale with an a fortiori analogy to the ignorant judge: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The ʿumra remains owed (in his dhimma) and is not discharged by doubt: the forgotten rite may have been a single ḥajj, onto which an ʿumra cannot be added, so the ʿumra's validity is doubtful.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p269",
+     "excerpt_ar": "إذ من المحتمل أن يكون المنسي حجا مفردا، وليس له إدخال العمرة على الحج، فتكون صحة العمرة مشكوكا فيها، فلا تسقط من ذمته بالشك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for this exact case (the forgotten rite turned to qirān does not count for the ʿumra). The decisive step is that the obligation stays in the dhimma until it is certainly discharged, which is the original state: istishab."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the forgotten rite may have been a single ḥajj, and adding an ʿumra onto a ḥajj is not valid, so the ʿumra is uncertain and the obligation does not fall.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p417",
+     "excerpt_ar": "قران؛ لأنه يحتمل أن يكون المنسي حجا مفردا لا يصح إدخال العمرة عليه فصحة العمرة مشكوك فيها",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Same facts. The part of the argument that rests on the prohibition of adding an ʿumra to a ḥajj is a stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale for the second view: the ʿumra is valid by building on the permission to add an ʿumra onto a ḥajj when there is a need, so a qirān dam is owed.",
+     "ref": "src:openiti-insaf-shamela21609/v03:p450",
+     "excerpt_ar": "وقيل: وتصح عمرته، بناء على إدخال العمرة على الحج لحاجة، فيلزمه دم قران",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Cited for the view that the ʿumra counts. It is a takhrīj from the case of adding an ʿumra for need: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f010",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the word «māl» covers a small amount, and the fixed amount he intended goes beyond what the word covers; a vow is not made binding by intention alone.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p278",
+     "excerpt_ar": "لأن اسم المال يقع على القليل وما نواه زيادة على ما تناوله الاسم، والنذر لا يلزم بالنية",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Cited for «يخرج ما شاء» when he vows alms of property and intends a thousand, which is this case. A linguistic and legal rationale: qiyas. Sharḥ al-Muntahā (v03:p475) gives the same."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Ibn Rajab's farq: restricting the absolute (taqyīd) adds to what the word means, and the addition is not established by bare intention, unlike narrowing the general.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p281",
+     "excerpt_ar": "وهذا بخلاف تقييد المطلق فإنه زيادة على مدلوله فلا تثبت الزيادة بالنية المجردة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Given for the third qism, to which this vow belongs, explaining why the intention does not bind. A linguistic rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "al-Majd's takhrīj: the aṣl is Aḥmad's naṣṣ that someone who vows fasting or prayer and intends more than the wording covers is bound by what he intended; the vow of alms with an intended amount is the farʿ («وهذا مثله»).",
+     "ref": "src:openiti-rajab-shamela21730/v01:p280",
+     "excerpt_ar": "وقد نص أحمد فيمن نذر صوما أو صلاة ونوى في نفسه أكثر مما يتناوله اللفظ أنه يلزم ما نواه، وهذا مثله",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Cited for binding on these facts. An analogy from another vow: qiyas. Ibn ʿAqīl prefers binding in all such cases."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f012",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: marriage requires witnessing in a form that can be testified to so as to establish the contract, which cannot be done for an intention; so «I marry you my daughter», when he has several daughters, is invalid until he names her in words.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p091",
+     "excerpt_ar": "لأن النكاح تعتبر فيه الشهادة على وجه يمكن أداؤها إذا ثبت به العقد، وهذا متعذر في النية، ولذلك لو قال: زوجتك ابنتي وله بنات",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given against those who validate a marriage where both parties intend the woman, and applied explicitly to «زوجتك ابنتي وله بنات», which is this case. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: if they intend her without words, the marriage is invalid, because witnessing is a condition of marriage and it can attach only to the words, which contain no designation.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p017",
+     "excerpt_ar": "وإن نويا ذلك من غير لفظ لم يصح؛ لأن الشهادة في النكاح شرط، ولا يقع إلا على اللفظ ولا تعيين فيه",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "On exactly these facts (several daughters, both intending one). A stated rationale: qiyas. al-Inṣāf (v08:p051) gives the same maʾkhadh for Abū al-Khaṭṭāb's view."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f013",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: «my four wives» uses a number, which is a naṣṣ for what it covers. Excepting one by intention gives the word a meaning it cannot bear, so the exception is not accepted, even between him and God.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p417",
+     "excerpt_ar": "أو قال لهن: أربعتكن طوالق. واستثنى بعضهن بالنية، لم يقبل، على قياس ما ذكرناه، ولا يدين فيه؛ لأنه عنى باللفظ ما لا يحتمل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For all four being divorced in the bāṭin too, on these facts. It is explicitly «على قياس» the case of «ثلاثا» excepted by the heart: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: a naṣṣ cannot have anything removed from what it covers by intention alone, since intention is weaker than the word.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p272",
+     "excerpt_ar": "وهذا ظاهر المنتهى لأن النص فيما يتناوله، فلا يرتفع منه شيء بمجرد النية لأنها أضعف منه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "For «تطلق أيضا» on «نسائي الأربع» with one excepted in his heart. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "al-Majd's rationale for the parallel case («ثلاثا إلا واحدة» by the heart): intention only turns a word to something it can mean, and an explicit naṣṣ has no other meaning; Ibn Rajab then says «نسائي الأربع» is like it.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p282",
+     "excerpt_ar": "واختاره صاحب المحرر ; لأن النية إنما تصرف اللفظ إلى محتمل ولا احتمال في النص الصريح، إنما الاحتمال في العموم",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab carries this over to the four wives («فهي كالتي قبلها»). A linguistic rationale: qiyas. He adds Aḥmad's words «النية فيما خفي ليس فيما ظهر» as a shāhid; they are the imām's words, not a separate dalīl."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f014",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: although «kull» is made to cover everything it is attached to, it is one of the general forms that can, in principle, be narrowed. So an exception of some slaves by intention narrows a general and is effective.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p282",
+     "excerpt_ar": "لأن كلا وإن كانت موضوعة لاستغراق ما يضاف إليه، إلا أنها من صيغ العموم القابلة في الجملة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's ground for preferring the riwāya of validity («ولكن صحة الاستثناء هنا أظهر») on these facts. He also cites a pointer in Aḥmad's words on the ashqāṣ, which is not a dalīl. A linguistic rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy to qiṣāṣ: qiṣāṣ is measured by the state at the injury (jināya), not by the spreading; the diya is measured the same way, so the injured dhimmī's diya is that of a dhimmī.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v07:p217",
+     "excerpt_ar": "(عليه في الذمي دية ذمي، وفي العبد قيمته لسيده) ودية مسلم لوارث مسلم ; لأن حكم القصاص معتبر بحال الجناية",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "The ground for Abū Bakr's and al-Qāḍī's view (a dhimmī's diya), on these facts. The Mughnī (v08:p275) gives the same ground from Abū al-Khaṭṭāb. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale with a supporting case: the arsh is measured by the state when the injury settles. If someone cuts off a man's hands and feet and the wound spreads to his death, one diya is owed; if the injury's own state were the measure, two would be owed.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p274",
+     "excerpt_ar": "وعليه دية مسلم؛ لأن اعتبار الأرش بحالة استقرار الجناية، بدليل ما لو قطع يدي رجل ورجليه، فسرى إلى نفسه، دية واحدة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For a Muslim's diya (Ibn Ḥāmid, the madhhab), on exactly these facts (a Muslim wounds a kāfir, who becomes Muslim and dies of the spreading). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the spreading of a wound is guaranteed. Since it destroyed a free Muslim, his full diya is owed, as if the injurer had killed him with a second wound.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p275",
+     "excerpt_ar": "والأول أصح، إن شاء الله؛ لأن سراية الجرح مضمونة، فإذا أتلفت حرا مسلما، وجب ضمانه بدية كاملة، كما لو قتله بجرح ثان",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's answer to Abū al-Khaṭṭāb, preferring a Muslim's diya. An analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy to qiṣāṣ: if someone cuts a slave's hand and the slave is freed and dies, the injurer owes the master the slave's value, because qiṣāṣ is measured by the state at the injury, not at the spreading, and the diya likewise.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p275",
+     "excerpt_ar": "فعلى الجاني قيمته للسيد؛ لأن حكم القصاص معتبر بحال الجناية، دون حال السراية، فكذلك الدية",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū al-Khaṭṭāb's ground for position 0 (his value), on these facts. The aṣl is qiṣāṣ: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The rationale also covers the freed slave: as qiṣāṣ is measured at the injury, so is the compensation if he is freed; Ḥanbal reports «يأخذ قيمته وقت جنايته».",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v07:p217",
+     "excerpt_ar": "(عليه في الذمي دية ذمي، وفي العبد قيمته لسيده) ودية مسلم لوارث مسلم ; لأن حكم القصاص معتبر بحال الجناية",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "For the riwāya of Ḥanbal and Abū Bakr's view (value to the master). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: when a free man cuts a slave's hand and the slave is freed and dies, there is no qiṣāṣ (no parity at the injury), but the injurer owes a free man's diya, measured by the state when the injury settles.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p274",
+     "excerpt_ar": "ولو قطع حر يد عبد، ثم عتق ومات، لم يجب قصاص؛ لعدم التكافؤ حال الجناية، وعلى الجاني دية حر اعتبارا بحال الاستقرار",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For a free man's diya (Ibn Ḥāmid, the madhhab) on exactly these facts. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: what is owed is measured by what the spreading leads to, not by what the injury destroys. If hands and feet are cut and the wound spreads to death, one diya is owed; if a finger is cut and it spreads, a full diya is owed. So when the spreading reaches a free Muslim, his full diya is owed.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p275",
+     "excerpt_ar": "ولأن الواجب مقدر بما تفضي إليه السراية دون ما تتلفه الجناية",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For a free man's diya on these facts. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the crime against the foetus was committed while it was a slave, so a tenth of the mother's value is owed.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p405",
+     "excerpt_ar": "وفي قول أبي بكر وأبي الخطاب، فيه عشر قيمة أمه؛ لأن الجناية عليه في حال كونه عبدا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For position 0 (the value of a slave-woman's foetus) on exactly these facts (the belly struck, the mother freed, then the miscarriage). A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the foetus fell free, and what counts is its state when it falls, since nothing is ruled for it before then.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v07:p297",
+     "excerpt_ar": "ثم أسقطت الجنين ففيه غرة) قدمه في \" المحرر \"، وجزم به في \" الوجيز \" لأنه سقط حرا، والعبرة بحال السقوط",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "For the ghurra of a free foetus (the madhhab) on these facts. A stated rationale: qiyas. The Mughnī gives the parallel ground «لأن الضمان معتبر بحال استقرار الجناية» for the kitābiyya case and applies the same split of views to the freed slave-woman."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: liability for game is reckoned by the state at the hit (iṣāba); at the hit the shooter was muḥrim, so he is liable.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p469",
+     "excerpt_ar": "ولو رمى الحلال صيدا ثم أحرم قبل أن يصيبه ضمنه) اعتبارا بحالة الإصابة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given for exactly this case (ḥalāl shoots, enters iḥrām before the hit). A bare «اعتبارا بحالة…» rationale with no text: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same rationale, applied to both directions: the ḥalāl who enters iḥrām before the hit is liable, the muḥrim who leaves iḥrām before the hit is not, reckoning by the state at the hit.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p547",
+     "excerpt_ar": "وإن رمى محل صيدا ثم أحرم قبل إصابته ضمنه، لا إن رماه محرما ثم حل قبل إصابته اعتبارا بحالة الإصابة فيهما",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Cited for the liability ruling on these facts; a stated rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Takhrīj by analogy: the aṣl is the ḥarbī who becomes Muslim before the arrow reaches him (no liability, the shot being permitted when made); the farʿ is the ḥalāl who enters iḥrām before the hit; the ʿilla is that the shot was permitted at the time it was made.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p292",
+     "excerpt_ar": "من عدم ضمان الحربي إذا أسلم قبل الإصابة اعتبارا بإباحة الرمي، إلا أن يفرق بأن قصد الإحرام عقيب الرمي سبب إلى الجناية على الصيد",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab extracts non-liability for this very case from the ḥarbī ruling; he notes a possible farq himself. An analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth: the Prophet said «لا ينفر صيدها» (of the ḥaram), without distinguishing between a killer standing in the ḥill and one in the ḥaram.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p318",
+     "excerpt_ar": "وهذا لا يصح؛ فإن النبي - صلى الله عليه وسلم - قال: «لا ينفر صيدها» . ولم يفرق بين من هو في الحل والحرم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited against the riwāya of no liability, for liability when shooting from the ḥill at ḥaram game. The ḥadīth reaches this case by the generality of its wording, not explicitly: zanni. The Mughnī also adds that Muslims agree on the prohibition of ḥaram game, but that ijmāʿ is on the general rule, not on this case, so it is not recorded as ijma."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: ḥaram game is protected by its place (the sanctity of the ḥaram), so its prohibition is not limited to someone standing in the ḥaram.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p318",
+     "excerpt_ar": "ولأن صيد الحرم معصوم بمحله بحرمة الحرم، فلا يختص تحريمه بمن في الحرم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A stated «لأن» rationale for liability on these facts: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the killer is ḥalāl and stands in the ḥill, so the shot is reckoned by the shooter and his place.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p318",
+     "excerpt_ar": "وحكى أبو الخطاب عن أحمد رواية أخرى، لا جزاء عليه في جميع ذلك؛ لأن القاتل حلال في الحل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The reason given for the riwāya Abū al-Khaṭṭāb reports (the same ruling as position 1). A stated rationale: qiyas. Ibn Rajab adds that the riwāya «ضعيف، ولا يثبت عن أحمد»; that weakens its attribution to Aḥmad, but no report is involved, so the tier stays qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the shooter's eligibility and the other conditions are reckoned at the shot, so if he apostatises or dies between the shot and the hit the game is still lawful.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p219",
+     "excerpt_ar": "(ارتد) بعد رميه (أو مات بعد رميه وقبل الإصابة حل) اعتبارا بحال الرمي",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Cited for lawfulness when the shooter apostatises or dies before the hit. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The same rationale: the game is lawful «اعتبارا بحال الرمي».",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p427",
+     "excerpt_ar": "(أو مات) المسلم (بين رميه وإصابته حل) الصيد اعتبارا بحال الرمي",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Same facts and the same stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

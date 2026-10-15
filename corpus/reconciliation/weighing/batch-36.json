@@ -1,0 +1,493 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b36: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "One cannot validly choose what one does not know. So intending the word's effect among Arabic speakers does not make the divorce valid. Compare: one who utters a word of unbelief without knowing its meaning does not become an unbeliever.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p397",
+     "excerpt_ar": "لم يقع أيضا؛ لأنه لا يصح منه اختيار ما لا يعلمه، ولذلك لو نطق بكلمة الكفر من لا يعلم معناها لم يكفر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma gives this for exactly these facts: a non-Arab who does not understand the word but intends its effect. It is a stated rationale with an analogy to the word of unbelief, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "His choice of what he does not know is not established, so it is like uttering the word of unbelief without knowing its meaning.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p314",
+     "excerpt_ar": "لأنه لم يتحقق فيه اختيار لما لا يعلمه، أشبه ما لو نطق بكلمة الكفر من لا يعرف معناها",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Given for the first of the two wujūh in the case where he intends the effect. Same analogy as al-Mughnī, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He pronounced the divorce intending its effect, so he resembles the Arab who knows the word.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p397",
+     "excerpt_ar": "ويحتمل أن تطلق إذا نوى موجبها؛ لأنه لفظ بالطلاق ناويا موجبه، فأشبه العربي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's iḥtimāl for the binding side, on these facts (he intends the effect). It is an analogy («فأشبه العربي»), so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He uttered the divorce intending what it entails, so it takes effect as it would if he knew its meaning.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v08:p284",
+     "excerpt_ar": "والثاني يقع لأنه أتى بالطلاق ناويا مقتضاه فوقع كما لو علمه",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "The second wajh where he intends the effect. It is an analogy to one who knows the meaning, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f006",
+   "proofs": [],
+   "advantages": [],
+   "searched": "al-Mughnī (kitāb al-ʿitq, and the related ṭalāq passage v07:p397 «فإن قال الأعجمي لامرأته: أنت طالق، ولا يفهم معناه»), al-Sharḥ al-Kabīr v08:p284, al-Mubdiʿ v06:p313, al-Kāfī, Kashshāf and Sharḥ al-Muntahā, searched for manumission in a tongue the speaker does not understand («لا يفهم», «لا يعرف معناه», «بالعجمية», «بالفارسية», «بغير العربية»). The proofs found are given only for divorce, never for manumission, so none is attached here."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "One divorce is certain, and anything beyond it is in doubt, so only one takes effect.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p263",
+     "excerpt_ar": "طلق فلان زوجته (فطلقة) لأنها اليقين وما زاد مشكوك فيه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given for «أنت طالق بعدد ما طلق فلان زوجته» where he does not know the number, which are these facts. It holds to the certain and drops the doubtful, so istishab."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A divorce beyond the certain amount is in doubt, so it does not take effect, just as when one doubts whether one divorced at all. The same applies to divorcing by the number Fulān divorced when the number is unknown.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p406",
+     "excerpt_ar": "لأن ما زاد على اليقين طلاق مشكوك فيه، فلم يقع، كما لو شك في أصل الطلاق",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "In al-Mubdiʿ this reason is followed directly by «وكذا لو قال لها: أنت طالق بعدد ما طلق فلان زوجته، وجهل عدده، فطلقة», so it is cited for this case. It is an analogy to doubt about the divorce itself, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f008",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The phrase is not an explicit oath. A kināya works only with intention, and one cannot intend something he does not know. So the oath of one who does not know the oaths of allegiance is not contracted at all.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p620",
+     "excerpt_ar": "فمن لم يعرفها، لم تنعقد يمينه بشيء مما فيها؛ لأن هذا ليس بصريح في القسم، والكناية لا تصح إلا بالنية",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for exactly these facts: he does not know what the oaths of allegiance are. It is a stated rationale (a kināya needs intention, and intention needs knowledge), so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is a kināya, so it needs both intention and knowledge, since one who does not know a thing cannot intend it.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p241",
+     "excerpt_ar": "لأنها كناية فلا بد فيها من النية والمعرفة لأن من لم يعرف شيئا لم يتأت أن ينويه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given for «وإن لم يعرفها … أو نواها ولم يعرفها فلا شيء عليه». This covers one who does not know them even if he intends them, so it answers the second wajh as well. It is a stated rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f009",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "«The oaths of the Muslims bind me» is a kināya, so intention is required, as with all kināyāt.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p241",
+     "excerpt_ar": "والنذر واليمين بالله إذا نوى بها ذلك) لأنها كناية واعتبرت فيها النية كسائر الكنايات",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given for this very phrase, which binds only «إذا نوى بها ذلك». It rules out binding without intention. It is an analogy to the other kināyāt, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "These oaths bind only with intention, as when he swears by each of them separately.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p446",
+     "excerpt_ar": "ونذر ويمين بالله) تعالى وإلا فلغو (مع النية) كما لو حلف بكل على انفراده",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Given for «أيمان المسلمين», which binds only with intention and is otherwise void («وإلا فلغو»). It is an analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f010",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "If the debtor knows the debt and hides it from the creditor, fearing he would not release him if he knew, the release should not be valid. It deceives the releaser, and that could have been avoided.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p049",
+     "excerpt_ar": "ويكتمه المستحق، خوفا من أنه إذا علمه لم يسمح بإبرائه منه، فينبغي أن لا تصح البراءة فيه؛ لأن فيه تغريرا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Supports the second riwāya, that release is invalid where the released party knew the debt. Ibn Qudāma frames it as knowing and hiding, which is the takhrīj attached to that riwāya. It is a stated rationale (taghrīr), so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of Umm Salama: two men disputed before the Prophet over inheritances that had become obscure. He said: cast lots, aim at the truth, and let each of you absolve the other. This shows release from the unknown is permitted.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v04:p060",
+     "excerpt_ar": "وتوخيا وليحلل كل واحد منكما صاحبه \" وهذا يدل على أن البراءة من المجهول جائزة",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Cited for the validity of release from the unknown in general (the riwāya «أجاز البراءة من المجهول»), and so for the unrestricted position. It is a connected marfūʿ āḥād report, so zanni. It is explicit on release, but the parties there were both ignorant, so it does not settle the case where one of them knew."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Release is the dropping of a right, so it takes effect whether the amount is known or not, like manumission and divorce. This holds even where the amount could be known.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p304",
+     "excerpt_ar": "ويصح الإبراء من المجهول (ولو لم يتعذر علمه) لأنه إسقاط حق فينفذ مع العلم والجهل كالعتق والطلاق",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given for validity «ولو لم يتعذر علمه», whether one or both parties are ignorant, which is the «أشهر الروايات». It is an analogy to manumission and divorce, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f011",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Release from defects is a concession in the sale that is established only by stipulation. So it is not established when the defect is unknown, like the option (khiyār).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p135",
+     "excerpt_ar": "لأنه مرفق في البيع، لا يثبت إلا بالشرط، فلا يثبت مع الجهل، كالخيار",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the first riwāya, that he is not released from defects unless the buyer knows them, under al-Khiraqī's «لم يبرأ، سواء علم به البائع أو لم يعلم». It is an analogy to the khiyār, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Release is a concession in the sale that is established only by stipulation, so it is not established with ignorance, like the term (ajal).",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p054",
+     "excerpt_ar": "وإذا اشترط البائع البراءة من كل عيب لم يبرأ لأن البراءة مرفق في البيع لا يثبت إلا بالشرط، فلم يثبت مع الجهالة كالأجل",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "The same reason in al-Kāfī, here with an analogy to the ajal, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "aqrabSahabi",
+     "dalil": "Ibn ʿUmar sold Zayd b. Thābit a slave on condition of release from defects. Zayd found a defect, and they took the case to ʿUthmān. ʿUthmān asked Ibn ʿUmar to swear that he had not known of the defect, and when he refused, ʿUthmān returned the slave to him. So the seller is released only from defects he did not know.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p135",
+     "excerpt_ar": "فقال عثمان لابن عمر: تحلف أنك لم تعلم بهذا العيب؟ فقال: لا. فرده عليه فباعه ابن عمر بألف درهم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the second riwāya: released except from a defect he knew. On these facts the seller did not know of the defect, so he is released. Ibn Qudāma calls the judgment uncontested («فلم تنكر، فكانت إجماعا»), but then reports «وقول عثمان قد خالفه ابن عمر». Since he reports ṣaḥāba disagreeing, the tier is aqrabSahabi, not ijmāʿ."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of Umm Salama on the obscured inheritances («استهما، وتوخيا، وليحلل كل واحد منكما صاحبه»), which shows release from the unknown is permitted. From that comes release from every defect.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p135",
+     "excerpt_ar": "فدل هذا على أن البراءة من المجهول جائزة، ولأنه إسقاط حق لا تسليم فيه، فصح من المجهول، كالعتاق والطلاق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for Abū al-Khaṭṭāb's takhrīj, that he is released from every defect («فيخرج من هذا صحة البراءة من كل عيب»), which falls on the releasing side. A connected marfūʿ āḥād ḥadīth bearing on this case by extension, so zanni. The excerpt also states the qiyās (dropping a right, like manumission and divorce)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f012",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Ratification takes the place of a release (ibrāʾ), so it is not valid in what is unknown. The heir's word is therefore accepted, with his oath, that he did not know the amount.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p147",
+     "excerpt_ar": "فالقول قوله مع يمينه؛ لأن الإجازة تنزلت منزلة الإبراء، فلا يصح في المجهول",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is «طريقة المصنف في المغني» that al-Inṣāf reports for this position: ratification of the unknown is not valid. It is an analogy to ibrāʾ, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Ratification is either execution or a gift, and neither is valid in what is unknown.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p239",
+     "excerpt_ar": "لأن الإجازة إما تنفيذ أو هبة، وكلاهما لا يجوز في المجهول",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Given for accepting the heir's claim that he thought the estate small, on the ground that unknown ratification is not valid. It is a stated rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He ratified a disposition he had the option to annul, so his option lapses. Compare one who ratifies a sale he could have rescinded for a defect or by an option. His claim that he did not know the amount is therefore not accepted.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p148",
+     "excerpt_ar": "ويحتمل أن لا يقبل قوله؛ لأنه أجاز عقدا له الخيار في فسخه، فبطل خياره، كما لو أجاز البيع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is the other wajh in the same case. It holds his ratification binding although he says he did not know the amount, so it treats ratification of the unknown as effective. al-Mubdiʿ (v05:p239) reports that al-Qāḍī and al-Majd built this case on whether what is ratified must be known. It is an analogy to ratifying a sale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "In appearance one of the two jumuʿas is valid. That both began at exactly the same moment is extremely unlikely, and what is extremely rare is treated as non-existent. Also the condition for holding the jumuʿa is in doubt, so it may not be held again.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p249",
+     "excerpt_ar": "فأما إن جهلنا كيفية وقوعهما، فالأولى أن لا يجوز إقامة الجمعة أيضا، لأن الظاهر صحة إحداهما، لأن وقوعهما معا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for exactly these facts: it is unknown how the two occurred. It argues that the ẓuhr is prayed and the jumuʿa is not repeated. The argument continues «بعيد جدا، وما كان في غاية الندرة فحكمه حكم المعدوم». It is a rationale from the ẓāhir, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Because there is doubt about the condition for holding the jumuʿa, and the ẓuhr is the substitute for the jumuʿa when it is missed.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p040",
+     "excerpt_ar": "صلوا ظهرا ولو أمكن فعل الجمعة) للشك في شرط إقامة الجمعة، والظهر بدل عن، الجمعة إذا فاتت",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given for «أو جهل الحال بأن لم يعلم كيف وقعتا: أمعا أم إحداهما بعد الأخرى», which are these facts. It is a stated rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "We are not certain of anything that prevents a valid jumuʿa, so they may hold it.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p250",
+     "excerpt_ar": "الشك في شرطها، ويحتمل أن لهم إقامتها؛ لأننا لم نتيقن المانع من صحتها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's iḥtimāl for repeating the jumuʿa on these same facts. It holds to the original state because no obstacle is certain, so istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The jumuʿa is repeated, either because simultaneity is possible or because what is unknown is treated as non-existent.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p240",
+     "excerpt_ar": "وعلى الثاني تعاد الجمعة إما لاحتمال المقارنة أو تنزيلا للمجهول كالمعدوم",
+     "who": "Ibn Rajab, al-Qawāʿid",
+     "note": "Ibn Rajab's statement of the rationale for the second wajh. It is a stated rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Whether the first is known and then forgotten or the manner is unknown, the ruling is the same (as when the first contract is unknown), because the reason is the same in all of them.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p012",
+     "excerpt_ar": "وكلا الطريقين لا بأس به. وسواء علم السابق ثم نسي، أو جهل الحال؛ لأن المعنى في الجميع واحد",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī puts «جهل الحال» (unknown whether the contracts fell together) under the sequential case of the unknown first contract, where one contract is valid. The two ways there are annulment or lot («يقرع بينهما»). That treats the case as sequential, not as both void. It is a stated rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Where it is unknown whether they fell together or in sequence, one of the contracts is valid and there is no way to know which. A valid contract is not voided by mere uncertainty, so the ḥākim must annul them.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p060",
+     "excerpt_ar": "(وجهل السابق) منهما (فسخهما حاكم) لأن أحدهما صحيح ولا طريق للعلم به",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf treats «جهل هل وقعا معا أو مرتبين» like the sequential case. It reasons «لأن أحدهما صحيح ولا طريق للعلم به», presuming one valid contract. That is the sequential treatment, against voiding both. A stated rationale, so qiyas. Kashshāf's remedy within the sequential case is annulment, the follow-on question in the note."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Both contracts are void because they may have fallen together.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p240",
+     "excerpt_ar": "أحدهما: يبطلان لاحتمال التقارن والثاني لاستبعاده",
+     "who": "Ibn Rajab, al-Qawāʿid",
+     "note": "Ibn Rajab's statement of the rationale for each wajh: possible simultaneity voids both, and its unlikelihood favours the sequential treatment. Only the first half is the proof for this position. It is a stated rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The ẓāhir is with the wife, since it is unlikely that both embraced Islam at exactly the same moment. The word of the one with the ẓāhir on his side is accepted, as the possessor's word is accepted.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p156",
+     "excerpt_ar": "القول قول المرأة؛ لأن الظاهر معه؛ إذ يبعد اتفاق الإسلام منهما دفعة واحدة، والقول قول من الظاهر معه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Qāḍī's view, which al-Inṣāf calls the madhhab, on exactly these facts: the husband claims simultaneity before consummation and she denies it. It is a rationale from the ẓāhir with an analogy to the possessor, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Her word is accepted because the ẓāhir is with her: it is unlikely that both embraced Islam at once.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p119",
+     "excerpt_ar": "(ف) القول (قولها) لأن الظاهر معها إذ يبعد اتفاق الإسلام منهما دفعة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Same rationale in Kashshāf, for the madhhab. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The marriage originally continues and annulment is something that supervenes. So the word of the one whose claim agrees with the aṣl is accepted, like the defendant.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p156",
+     "excerpt_ar": "وذكر أبو الخطاب فيها وجها آخر، أن القول قول الزوج؛ لأن الأصل بقاء النكاح، والفسخ طارئ عليه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū al-Khaṭṭāb's wajh for the claimant of simultaneity, on these facts. It rests on the continuance of the marriage, so istishab."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The aṣl is that the marriage continues.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p055",
+     "excerpt_ar": "وقال: بل أسلمنا معا، ففيه وجهان: أحدهما: القول قول الزوج؛ لأن الأصل بقاء النكاح",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's first wajh on these facts. Istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He may have bought it from one, then the other came to own it and he bought it from him. When both proofs can be true and reconciled, both must be accepted.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p260",
+     "excerpt_ar": "أو كانتا مطلقتين، أو إحداهما مطلقة، والأخرى مؤرخة، ثبت العقدان، ولزمه الثمنان؛ لأنه يمكن أن يشتريها من أحدهما ثم يملكها الآخر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for undated proofs, which are these facts. The passage continues «وإذا أمكن صدق البينتين والجمع بينهما، وجب تصديقهما». It is a stated rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Where both proofs can be true, they must be accepted, and no doubt remains, only a bare possibility. A bare possibility does not void a proof, since otherwise no proof could ever establish a right.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p260",
+     "excerpt_ar": "قلنا: إنه متى أمكن صدق البينتين، وجب تصديقهما، ولم يكن ثم شك، وإنما يبقى الوهم، والوهم لا تبطل به البينة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is Ibn Qudāma's answer to the objection that undated proofs may share a date. It also argues positively that both proofs stand on these facts. It is a reductio and rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Both proofs can be true as two sales at two times, so both must be accepted, like proofs with different dates.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p258",
+     "excerpt_ar": "لزمه الثمنان لهما؛ لأنه أمكن صدق البينتين بأن يكونا في زمنين، فوجب تصديقهما كالمختلفي التاريخ",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Given for undated proofs. It is an analogy to proofs with different dates, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The proofs may conflict, since their dates may be the same. The aṣl is that the possessor owes nothing.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p258",
+     "excerpt_ar": "ويحتمل تعارضهما، لاحتمال استواء تاريخهما. والأصل براءة الذمة",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's iḥtimāl on these facts: the proofs fall and he is presumed free of the debt. It rests on barāʾa, so istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Unqualified, «I made you a partner» calls for equality, so it means half.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p090",
+     "excerpt_ar": "ولو اشترى شيئا، فقال له رجل: أشركني فأشركه انصرف إلى نصفه؛ لأنها بإطلاقها تقتضي التسوية",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for exactly these facts: a buyer is asked «أشركني» and agrees with no share named. It is a linguistic rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "Ibn ʿUmar and Ibn al-Zubayr would meet ʿAbd Allāh b. Hishām in the market and say «make us partners», and he would. Unqualified partnership in a purchase was thus valid in practice. (Reported by al-Bukhārī.)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p090",
+     "excerpt_ar": "فيلقاه ابن عمر وابن الزبير، فيقولان له: أشركنا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the validity of «أشركني … أشركتك» without naming the price or share. It is the practice of two ṣaḥāba, with no ṣaḥābī disagreeing in the source, so fatwaSahabi. It supports validity, not the halves as such."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is invalid because the share is unknown.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p261",
+     "excerpt_ar": "لو قال لمشتري سلعة أشركني في هذه السلعة فهل يصح وينزل على المناصفة أم لا للجهالة",
+     "who": "Ibn Rajab, al-Qawāʿid",
+     "note": "The only stated reason for the invalidity wajh (al-Mubdiʿ has just «وقيل: لا يصح»). Jahāla is a rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He has a partnership in the slave whatever part he holds, so he may specify any share. Calling less than half a partnership is not figurative or against the apparent sense.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p137",
+     "excerpt_ar": "ولنا، أن أي جزء كان له منه، فله فيه شركة، فكان له تفسيره بما شاء، كالنصف، وليس إطلاق لفظ الشركة على ما دون النصف مجازا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the admission «له في هذا العبد شركة». Ibn Qudāma then says «وكذلك الحكم إذا قال: هذا العبد شركة بيننا», which are these facts. It is a linguistic rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Partnership applies to half at one time and to other shares at another. Where a word is ambiguous between two or more things, its explanation is referred to the speaker.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p412",
+     "excerpt_ar": "رجع في تفسيره نصيب الشريك إليه) لأن الشركة تقع على النصف تارة وعلى غيره أخرى",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Given for «هو شريكي فيه، أو هو شركة بيننا», which are these facts. It is a linguistic rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Abū Yūsuf: «فهم شركاء في الثلث» (al-Nisāʾ 12) calls for equality among the partners, so the same holds here and the admission is of half.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p137",
+     "excerpt_ar": "وقال أبو يوسف: يكون مقرا بنصفه؛ لقوله تعالى",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for Abū Yūsuf, a non-Ḥanbalī holder of the same ruling as al-Qāḍī (halves), so it counts for that ruling. The āya is about uterine siblings in inheritance and is carried over to the word «شركة» in an admission («كذا هاهنا»), so qiyas, not qati. Ibn Qudāma rebuts it: the equality in the āya rests on other evidence."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f003",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Only one divorce takes effect, because it is the certain amount, unless he specifies more.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p261",
+     "excerpt_ar": "وإن قلنا: الإبهام لم يقع أكثر من واحدة ; لأنها اليقين إلا أن يفسره بأكثر من ذلك",
+     "who": "Ibn Rajab, al-Qawāʿid",
+     "note": "Ibn Rajab's reason for the vagueness branch on these facts. Holding to the certain amount is istishab. The quote runs through the «إلا أن يفسره» qualifier."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Partnership calls for entitlement in every part, so she shares each of the three divorces.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p261",
+     "excerpt_ar": "ويحتمل أن يقع ثلاثا بناء على [أن] الشركة تقتضي الاستحقاق من كل جزء",
+     "who": "Ibn Rajab, al-Qawāʿid",
+     "note": "Ibn Rajab's stated basis for his iḥtimāl of three. A linguistic rationale, so qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "«شركتك معها» said to a co-wife right after divorcing the first is explicit divorce. It makes the ruling for both the same, by partnership in the utterance, as if he had repeated the words to her.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p248",
+     "excerpt_ar": "لأنه جعل الحكم فيهما واحدا، إما بالشركة في اللفظة أو بالمماثلة، وهذا لا يحتمل غير ما فهم منه فكان صريحا كما لو أعاده عليها بلفظه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf rules on «طلق زوجته … ثم قال عقبه لضرتها: شركتك معها», which these facts fall under. It says nothing about the count. Its rationale (the same ruling for both, as though the same words were repeated to her) leads to her receiving the same three, which is why the ledger matched it to this position. It is an analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

@@ -130,6 +130,13 @@ def test_footnote_anchors_and_page_markers_are_markup():
     assert "absent" in gate.check_quote(text, "قال أكثر العلماء بثبوته في 4 مواضع", "v01:p007")
 
 
+def test_negated_parenthesised_footnote_anchors_are_markup():
+    """al-Furūʿ's Shamela witness marks footnotes «(¬7)», with or without them in the excerpt."""
+    text = "# خلافا للحلواني (¬7) وبعض الشافعية\n~~(¬8)؛ لأن الله حكى عنهم\nPageV03P1011\n"
+    for quote in ("خلافا للحلواني وبعض الشافعية؛ لأن الله حكى عنهم", "خلافا للحلواني (¬7) وبعض الشافعية (¬8)؛ لأن الله حكى عنهم"):
+        assert gate.check_quote(text, quote, "v03:p1011") is None
+
+
 def test_page_break_does_not_hide_a_qualifier():
     text = "# هذا الحكم ثابت\nPageV01P001\n# إلا عند الضرورة\nPageV01P002\n"
     assert "qualifier" in gate.check_quote(text, "هذا الحكم ثابت", "v01:p001")

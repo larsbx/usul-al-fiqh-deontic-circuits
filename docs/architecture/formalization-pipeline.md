@@ -137,7 +137,7 @@ command creates or updates a source lock. A missing required witness is an error
 including in `test_reconcile.py` and the required witness-integrity tests.
 Quotations compare `arabic.quote_key`: Arabic letters plus each standalone
 numeral (any digit script), so a changed or dropped number fails. Page markers and
-footnote anchors (digits glued to the preceding word, `العلماء1`) are markup and
+footnote anchors (digits glued to the preceding word, `العلماء1`, or `(¬7)`) are markup and
 carry no key.
 
 CI uploads `.cache/source-verification.json` and `.cache/corpus-tests.xml` even on

@@ -1,0 +1,529 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b09: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the orphan's waṣī: the finder is the foundling's walī, so spending from the foundling's property on him needs no judge's permission.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p116",
+     "excerpt_ar": "ذكره أبو عبد الله بن حامد؛ لأنه ولي له، فلم يعتبر في الإنفاق عليه في حقه إذن الحاكم، كوصي اليتيم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma gives this as Ibn Ḥāmid's ground for spending from what was found with the foundling without the judge. Aṣl the waṣī of an orphan, ʿilla wilāya over the child; it is an analogy, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: maintaining the foundling is enjoining the good, in which the imām and others are equal, as with pouring out wine.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p116",
+     "excerpt_ar": "ولأن هذا من الأمر بالمعروف، فاستوى فيه الإمام وغيره، كتبديد الخمر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second ground in al-Mughnī for the same ruling: the act is a public duty that does not depend on the ruler. Analogy to pouring out wine: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the depositee: this is spending on a child, so it is not allowed without the judge, as when a depositee spends the absent depositor's money on his small child (Aḥmad's naṣṣ in the riwāya of Abū al-Ḥārith).",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p137",
+     "excerpt_ar": "لأنه إنفاق على طفل، فلم يجز بغير إذن الحاكم كما لو أنفق على صغير مودع",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ gives this as the ground for «وعنه: ما يدل على أنه لا ينفق عليه إلا بإذنه» and names Abū al-Ḥārith's text as its aṣl. Analogy: qiyas. al-Mughnī answers it (the finder has wilāya; the depositee does not, and the child's need must be proved before the judge), but that answer is a rebuttal, not a proof for position 0."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale given for al-Shāfiʿī: the finder has no wilāya over the child's property, only a right of custody, so he is like one who holds deposits of the child's father and spends from them.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p117",
+     "excerpt_ar": "بمنزلة ما لو كان لأبي الصغير ودائع عند إنسان، فأنفق عليه منه؛ وذلك لأنه لا ولاية له على ماله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited in al-Mughnī for al-Shāfiʿī, who holds the same ruling as position 1 (no spending without the judge where one is found); it counts for that ruling. Stated rationale and analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale (maṣlaḥa): the holder cannot return the property for ignorance of the owner; charity on the owner's behalf joins the holder's interest (discharge of his liability) and the owner's (the reward).",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p323",
+     "excerpt_ar": "لأنه معذور بعجزه عن الرد لجهله بالمالك. وثوابها لأربابها. وفي الصدقة بها عنهم جمع بين مصلحة الغاصب بتبرئة ذمته ومصلحة المالك",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā gives this for the whole class it has just listed, ghuṣūb, unclaimed pledges (رهون) and trusts whose owners are unknown, after stating that he may give them in charity «بلا إذن حاكم». So it is cited for charity with pledges without the judge. A reasoned rationale, not a text: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on luqaṭa that is not owned by announcement: such property is given in charity for its owner on condition of liability.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p323",
+     "excerpt_ar": "بشرط ضمانها) لأربابها. لأن الصدقة بها عنهم بدون ضمان إضاعة لها، لا إلى بدل وهو غير جائز (كلقطة)",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Same passage covering pledges: the charity is likened to luqaṭa, which the finder himself gives in charity. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Carrying over Aḥmad's other text (Abū Ṭālib): one holding a pledge whose owner is absent and who fears its spoiling goes to the sulṭān and does not sell it without him; so charity with unknown owners' pledges is read as allowed only when the judge cannot be reached.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p225",
+     "excerpt_ar": "تعذر إذن الحاكم لما روى عنه أبو طالب أيضا إذا كان عنده رهن وصاحبه غائب وخاف فساده يأتي السلطان",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab reports this as the ground of al-Qāḍī in al-Mujarrad and Ibn ʿAqīl for limiting the naṣṣ to where the judge's permission cannot be had. It carries a ruling on a known absent owner over to an unknown one: qiyas. Ibn Rajab records that al-Majd and others rejected the taʾwīl."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: giving the unclaimed deposit in charity is an act of the good (maʿrūf), open to anyone.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p225",
+     "excerpt_ar": "فيحتمل أن يحمل على إطلاقه ; لأنه من فعل المعروف ويحتمل أن يحمل عند تعذر إذن الحاكم",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Qāḍī's first iḥtimāl in al-Mujarrad, reported by Ibn Rajab, for reading Aḥmad's naṣṣ unrestrictedly (no judge). Rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Ibn Rajab's argument: the treasury is not an heir on the known madhhab and only keeps lost property; once the owner is despaired of, keeping has no point, and the owner's benefit is gained by charity on his behalf, which is better than paying it to the treasury.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p225",
+     "excerpt_ar": "ومقصود الصرف في مصلحة المالك تحصل بالصدقة به عنه وهو أولى من الصرف إلى بيت المال",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Given by Ibn Rajab for «والصحيح الإطلاق», the charity without a judge. A reasoned rationale (maṣlaḥa of the owner): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale (maṣlaḥa): charity on the unknown owners' behalf joins the holder's discharge and the owner's reward.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p323",
+     "excerpt_ar": "لأنه معذور بعجزه عن الرد لجهله بالمالك. وثوابها لأربابها. وفي الصدقة بها عنهم جمع بين مصلحة الغاصب بتبرئة ذمته ومصلحة المالك",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā gives it for the class that includes trusts and deposits (أمانات من ودائع) whose owners are unknown, after «بلا إذن حاكم». Rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: such property goes to the treasury, and distributing treasury property is left to the imām's ijtihād, so it needs the judge where he can be reached.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p225",
+     "excerpt_ar": "لأن هذا المال مصرفه إلى بيت المال وتفرقة مال بيت المال موكولة إلى اجتهاد الإمام",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Qāḍī's second iḥtimāl in al-Mujarrad, as Ibn Rajab reports it, for requiring the judge except where his permission cannot be had. Rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "The view of Ibn Masʿūd that property whose owner is unknown is given in charity, with Muʿāwiya's approval of the repentant ghāll giving the rest of his ghulūl in charity for the dispersed army; al-Mughnī adds that no contemporary is known to have disagreed.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p308",
+     "excerpt_ar": "وعن ابن مسعود، أنه رأى أن يتصدق بالمال الذي لا يعرف صاحبه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited in al-Mughnī (the repentant ghāll after the booty is divided) for giving ill-gotten property with unknown owners in charity, the same ruling as position 0 for usurped goods. al-Mughnī calls it ijmāʿ because «لم نعرف لهم مخالفا», which the rules treat as tacit, so fatwaSahabi, not ijma. The source does not address the judge's permission directly: the ṣaḥābī's view is cited for the charity itself."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: property serves this life or the next; when the worldly benefit to the owner is impossible, the benefit of the next life, charity on his behalf, is the one that remains.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p114",
+     "excerpt_ar": "لأن المال يراد لمصلحة المعاش أو المعاد ومصلحة المعاد أولى المصلحتين",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf gives this for «وله الصدقة بها عنهم» with usurped goods whose owners are unknown, as an alternative to handing them to the judge. Rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the usurper cannot return the goods, and if he gives them in charity the reward goes to the owners and the sin of usurpation falls from him.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p048",
+     "excerpt_ar": "لأنه عاجز عن ردها إلى مالكها، فإذا تصدق بها عنهم كان ثوابها لأربابها",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ on «وله أن يتصدق بها عنهم على الأصح» for usurped goods of unknown owners. Rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: such property belongs by right to the treasury, so its disposal is the imām's, and the khilāf over needing the judge applies to it too.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p226",
+     "excerpt_ar": "وطرد القاضي في كتاب الروايتين فيه الخلاف بناء على أنه مستحق لبيت المال",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab gives this as the basis on which al-Qāḍī in Kitāb al-Riwāyatayn extended the khilāf to usurped goods. Rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The ḥadīth of Faḍāla b. ʿUbayd: a necklace of gold and beads was bought for nine or seven dinars and the Prophet said «No, not until they are separated» (Abū Dāwūd; Muslim in another wording, where he had the gold removed and said «gold for gold, weight for weight»).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p029",
+     "excerpt_ar": "بقلادة فيها ذهب وخرز، ابتاعها رجل بتسعة دنانير أو سبعة دنانير، فقال النبي - صلى الله عليه وسلم -: لا، حتى تميز بينهما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's «ولنا» for the madhhab that mudd ʿajwa sales are void: a ribawī with something of another genus sold for its genus. A connected marfūʿ āḥād report, explicit on the necklace case: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on distributing the price by value (two slaves sold together; the shafīʿ taking the share with the sword): the price is spread over the items by value, which here gives either certain excess or unknown equality, and «الجهل بالتساوي كالعلم بعدمه في باب الربا».",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p029",
+     "excerpt_ar": "ولأن العقد إذا جمع عوضين مختلفي الجنس، وجب أن ينقسم أحدهما على الآخر، على قدر قيمة الآخر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's second proof for voidness; Ibn Rajab calls it the maʾkhadh of al-Qāḍī and his companions. Analogy and rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Sadd al-dharīʿa: such sales are used as a device for open ribā (a hundred dirhams in a purse sold for two hundred), so they are barred even when both sides are intended.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p249",
+     "excerpt_ar": "والمأخذ الثاني: أن ذلك ممنوع سدا لذريعة الربا. فإن اتخاذ ذلك حيلة على الربا الصريح واقع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's second maʾkhadh for the first riwāya, adding that Aḥmad's words allude to it. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale with analogies: a contract that can be read as valid is not read as void, as meat bought from a butcher is taken as slaughtered and goods bought from a possessor as his; here the genus can be set against the other genus or the extra.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p029",
+     "excerpt_ar": "واحتج من أجاز ذلك بأن العقد إذا أمكن حمله على الصحة، لم يحمل على الفساد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī gives this for those who allow it (Ḥammād, Abū Ḥanīfa, al-Ḥasan), the same ruling as the second riwāya where non-genus goods are on both sides or the single item is more. It counts for that ruling. Rationale and analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: each of the two pledgers, by pledging, became guarantor for his partner, so his share is not released until the whole is paid.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p252",
+     "excerpt_ar": "ويجوز أن يكون كل واحد منهما لما رهن صار كفيلا عن صاحبه فلا ينفك الرهن في نصيبه حتى يؤدي بجميع ما عليه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Qāḍī's way of explaining Aḥmad's naṣṣ (Muhannā) that the house stays pledged for what remains, as Ibn Rajab reports. Ibn Rajab and al-Majd note that Aḥmad's words do not mention guarantee. Rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: two contracting with one form a single transaction, so each share is pledged for the whole debt.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p252",
+     "excerpt_ar": "قال القاضي: هذا بناء على الرواية التي تقول: إن عقد الاثنين مع الواحد في حكم الصفقة الواحدة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Qāḍī's other grounding of the same naṣṣ, from Ibn Rajab. Rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: a transaction with two parties on one side is two contracts, so the release of one does not wait on the other, as when the two contracts are made separately.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p077",
+     "excerpt_ar": "انفك نصف الراهن؛ لأن الصفقة التي في أحد طرفيها عقدان فلا يقف انفكاك أحدهما على فكاك الآخر",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī states the release of half when one of two pledgers pays, giving this rationale and the analogy of separate contracts. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the pledgers are several, so each one's debt attaches to his own share, and a pledge does not attach to another's property unless he allowed it.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p217",
+     "excerpt_ar": "لأن الراهن متعدد فتعلق ما على كل منهما بنصيبه؛ لأن الرهن لا يتعلق بملك الغير إلا إذا كان مأذونا فيه",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ on «وإن رهنه رجلان شيئا فوفاه أحدهما انفك في نصيبه». Rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on two waṣīs: the two parties to the pledge were content only with the two keeping it together, so neither may keep it alone, as one of two waṣīs may not act alone.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p264",
+     "excerpt_ar": "ولنا، أن المتراهنين لم يرضيا إلا بحفظهما فلم يجز لأحدهما الانفراد بذلك، كالوصيين لا ينفرد أحدهما بالتصرف",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's «ولنا» for not allowing either ʿadl to keep the pledge alone. Aṣl the two waṣīs, ʿilla the parties' consent to joint keeping: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The same analogy (the two waṣīs, two agents in a sale) for barring division of the keeping.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p254",
+     "excerpt_ar": "لأن المتراهنين إنما رضيا بحفظهما جميعا فلا يجوز لهما الانفراد كالوصيين والوكيل في البيع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's statement of the wajh of al-Qāḍī in his Khilāf, Ibn ʿAqīl, al-Mughnī and al-Talkhīṣ. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: keeping it jointly is a hardship, so the instruction is taken to allow each to keep (dividing it if it is divisible).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p264",
+     "excerpt_ar": "وقال أبو حنيفة إن كان مما ينقسم، اقتسماه، وإلا فلكل واحد منهما إمساك جميعه؛ لأن اجتماعهما على حفظه يشق عليهما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited in al-Mughnī for Abū Ḥanīfa, who holds position 1's ruling for a divisible pledge (they divide it). It counts for that ruling. al-Mughnī answers that a store with two locks removes the hardship. Rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f005",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: «we have guaranteed you the thousand» makes them partners in the guarantee, and partnership requires equal shares, so each is liable for half.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p365",
+     "excerpt_ar": "فهو بينهما بالحصص) أي: نصفين (فكل واحد منهما ضامن لحصته) وهي النصف من الألف؛ لأن مقتضى الشركة التسوية",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf on the unqualified guarantee of two. A rationale from the wording: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the transaction is several when the guarantors are several, so the guarantee is divided between them.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p251",
+     "excerpt_ar": "وبناه القاضي على أن الصفقة تتعدد بتعدد الضامنين فيصير الضمان موزعا عليهما",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ, quoting al-Qawāʿid, gives al-Qāḍī's basis for liability by shares. Rationale: qiyas. The works checked (al-Mughnī v04:p414-415, al-Sharḥ al-Kabīr v05:p096-097, al-Mubdiʿ, Kashshāf, Ibn Rajab) state the naṣṣ for position 0 (Muhannā) but give no proof for it."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: he made the divorce of both depend on both of them speaking to both men, so neither is divorced by what the other alone did.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p461",
+     "excerpt_ar": "لأنه علق طلاقهما بكلامهما لهما فلا تطلق واحدة بكلام الأخرى وحدها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī gives this for the second wajh (no divorce until each speaks to both men), adding «وهكذا لو قال: إن دخلتما هاتين الدارين»; it is also the stronger view of al-Shāfiʿī's school. Rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: the marriage stands by the original state, so divorce is not imposed until the condition is fully met.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v08:p429",
+     "excerpt_ar": "إن دخلتما هاتين ms3666 الدارين فالحكم فيها كذلك لأن الأصل بقاء النكاح",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr gives this for the same no-divorce wajh, naming the two-houses case. «الأصل»: istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the speaking was done by both of them, as when he says «if you two menstruate, you are divorced» and each has one period, or «if you two ride your two mounts» and each rides hers.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p461",
+     "excerpt_ar": "أحدهما، يحنث؛ لأن تكليمهما وجد منهما، فحنث، كما لو قال: إن حضتما فأنتما طالقتان",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the first wajh, that each is divorced once each has spoken to one man (the same for the two houses). Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: each ṭalqa is divided among the wives, so each receives a part of every ṭalqa, and each part is completed to a whole ṭalqa.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p490",
+     "excerpt_ar": "لأننا إذا قسمنا كل طلقة بينهن حصل لكل واحدة جزءان من طلقتين ثم تكمل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī gives this for Abū Bakr and al-Qāḍī and the report from Aḥmad on «أوقعت بينكن ثلاث تطليقات: ما أرى إلا قد بن منه». Rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on «you are divorced by half of two ṭalqas», which gives one; and equal units of one kind, like coins, are divided by heads, not by parts, so each wife's share is completed within a single ṭalqa.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p491",
+     "excerpt_ar": "والأول أولى؛ لأنه لو قال: أنت طالق نصف طلقتين طلقت واحدة ويكمل نصيبها من الطلاق في واحدة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the view preferred there (one ṭalqa each for three among four). Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Taking the certain: one ṭalqa each is certain; an extra ṭalqa is in doubt and is not imposed.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p491",
+     "excerpt_ar": "ولأن فيما ذكرناه أخذا باليقين فكان أولى من إيقاع طلقة زائدة بالشك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's second ground for the same view: holding to certainty against doubt, i.e. the marriage continuing in the original state as to the extra ṭalqa: istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on nasab: walāʾ is likened to kinship («الولاء لحمة كلحمة النسب» is cited just before), so the emancipator's ʿaṣaba inherit by it nearest first, in the order of the kinship ʿaṣaba, where the full brother comes before the paternal one.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p347",
+     "excerpt_ar": "عصباته من بعده) لأنهم يدلون به، الأقرب فالأقرب؛ لأن الولاء مشبه بالنسب",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's ground for the emancipator's ʿaṣaba inheriting «الأقرب فالأقرب»; al-Inṣāf explains this as «كعصبات النسب. فيقدم الأخ من الأبوين على الأخ من الأب». The proof is general and reaches the full brother through the nasab order. Analogy: qiyas. No source gives a proof for Ibn al-Zāghūnī's takhrīj (position 1) in the walāʾ chapter. Its basis is the nikāḥ masʾala (see q120.f001)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on inheritance and on inheritance by walāʾ: guardianship of marriage is a right gained by taʿṣīb, so the full brother is preferred in it as he is in inheritance and in walāʾ, where women have no part, yet he is still preferred.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p016",
+     "excerpt_ar": "وهو الصحيح، إن شاء الله تعالى لأنه حق يستفاد بالتعصيب، فقدم فيه الأخ من الأبوين، كالميراث",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the riwāya chosen by Abū Bakr and preferred by Ibn Qudāma. Analogy with two aṣls: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The same analogy in al-Kāfī: a right gained by taʿṣīb resembles inheritance by walāʾ.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p011",
+     "excerpt_ar": "إحداهما: يقدم ذو الأبوين. اختاره أبو بكر؛ لأنه حق يستفاد بالتعصيب فأشبه الميراث بالولاء",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's ground for the same riwāya. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: both are related through the father, the side that gives ʿuṣūba, so they are equal in guardianship as if both were paternal; the mother's side, which preponderates in inheritance, has no role in guardianship, as with two paternal uncles one of whom is also a maternal uncle.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p016",
+     "excerpt_ar": "لأنهما استويا في الإدلاء بالجهة التي تستفاد منها العصوبة، وهي جهة الأب، فاستويا في الولاية",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the riwāya that they are equal (al-Khiraqī). Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the full brother is preferred in leading the funeral prayer because women have a part in that prayer, behind an imām or alone, so the maternal kinship counts here, unlike in nikāḥ.",
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v03:p328",
+     "excerpt_ar": "وإنما قدم أخ وعم وابنهما لأبوين لأن للنساء مدخلا مأمومة ومنفردة",
+     "who": "Shams al-Dīn Ibn Mufliḥ, al-Furūʿ",
+     "note": "Ibn Mufliḥ in al-Furūʿ gives this for preferring the full brother, uncle and their sons. Rationale: qiyas. al-Mughnī (v02:p360) only says the two wujūh are taken from the two riwāyas in nikāḥ."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on nikāḥ: al-Qāḍī made the two equal in the funeral prayer as they are in guardianship of marriage.",
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v03:p328",
+     "excerpt_ar": "لأن للنساء مدخلا مأمومة ومنفردة، وجعلهما القاضي في التسوية كنكاح",
+     "who": "Shams al-Dīn Ibn Mufliḥ, al-Furūʿ",
+     "note": "Reported in al-Furūʿ for al-Qāḍī's equalising. The analogy to nikāḥ carries over the equal-kinship ground: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the full brother has two kinships, so he is nearer than one with one kinship.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v06:p493",
+     "excerpt_ar": "والأخ من الأبوين أحق منهما لأن له قرابتين فهو أقرب ممن له قرابة واحدة",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr on the bequest to the nearest relative; Kashshāf and Sharḥ al-Muntahā give the same rationale, and Ibn Rajab says they likened being alone in a kinship to being a degree nearer. Rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: having an extra kinship that the other lacks is like being a degree nearer, which gives precedence in a waqf or bequest to the nearest.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p273",
+     "excerpt_ar": "وعللوا بأن الانفراد بالقرابة كالتقدم بدرجة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's report of the ʿilla given by al-Qāḍī and the aṣḥāb in the bequest, which carries over to the waqf. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: in the waqf no preference is given by a kinship foreign to the entitlement (the maternal tie is not what the waqf looks to), so the two brothers are equal.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p273",
+     "excerpt_ar": "وقال: لا يرجع فيه بالقرابة الأجنبية عن استحقاق الوقف",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Taqī al-Dīn's ground for his dissent in the waqf, reported by Ibn Rajab. Rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on nikāḥ: the maternal tie falls away, so the full brother is like the paternal brother, as in guardianship of marriage.",
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v07:p375",
+     "excerpt_ar": "ويتوجه رواية: كأخيه لأبيه لسقوط الأمومة، كنكاح",
+     "who": "Shams al-Dīn Ibn Mufliḥ, al-Furūʿ",
+     "note": "Ibn Mufliḥ's proposed riwāya in al-Furūʿ, on the bequest to the nearest relative, for equality. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on hanging fruit and the ḥarīsa of the mountain (sheep taken from pasture), for which the Prophet set double compensation in the ḥadīth of ʿAmr b. Shuʿayb: everything stolen from outside a ḥirz is compensated twice.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p120",
+     "excerpt_ar": "فإنه ذهب إلى إيجاب غرامة المسروق من غير حرز بمثليه، قياسا على الثمر المعلق وحريسة الجبل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī gives this as Abū Bakr's ground for the general doubling, the view reported from Aḥmad. Aṣl the two textual cases, farʿ other unguarded theft: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "ʿUmar's ruling: he made Ḥāṭib b. Abī Baltaʿa pay twice the value of a she-camel his slaves had taken and slaughtered from a man of Muzayna.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p120",
+     "excerpt_ar": "احتج أحمد بأن عمر أغرم حاطب بن أبي بلتعة حين انتحر غلمانه ناقة رجل من مزينة، مثلي قيمتها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Aḥmad argued with it, and al-Mughnī says Abū Bakr also relied on it («واستدلالا بحديث حاطب») for doubling beyond fruit and livestock. A ṣaḥābī's ruling with no ṣaḥābī disagreeing in the source: fatwaSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The original rule: a fungible is compensated with its like and a non-fungible with its value, as with things destroyed, usurped or snatched. Departure from it was made only in the two cases with a report (fruit and ḥarīsa), so everything else stays on the original rule.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p120",
+     "excerpt_ar": "ولنا أن الأصل وجوب غرامة المثلي بمثله، والمتقوم بقيمته بدليل المتلف",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's «ولنا» for compensating everything else only once. «الأصل»: istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: hands commonly reach for fruit, so its value is made heavier on the thief to deter him; this does not hold for other things.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p140",
+     "excerpt_ar": "ولأن الثمار في العادة تسبق اليد إليها فجاز أن تغلظ قيمتها على سارقها ردعا له وزجرا بخلاف غيرها",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf gives this for doubling with fruit and palm-pith, «بخلاف غيرها», which limits the doubling to them. Rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

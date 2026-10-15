@@ -1,0 +1,416 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b27: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "al-Qāḍī and his companions: each jirya is reckoned by itself; what is ahead of a moving najāsa is pure because it has not reached it, and what is behind is pure because it has not reached it; the jirya with it is najis if under two qullas",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p025",
+     "excerpt_ar": "كل جرية من الماء الجاري معتبرة بنفسها، فإذا كانت النجاسة جارية مع الماء، فما أمامها طاهر؛ لأنها لم تصل إليه",
+     "who": "Ibn Qudāma, al-Mughnī (reporting al-Qāḍī)",
+     "note": "al-Qāḍī's account and ground for reckoning each jirya alone: position 0. A rationale (contact as the cause of najāsa): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The ḥadīth of the two qullas («إذا بلغ الماء قلتين لم يحمل الخبث»), by its implied sense, makes water below two qullas najis; the jirya is below two qullas",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p025",
+     "excerpt_ar": "فإن قيل: قد ورد الشرع بتنجيس قليله؛ بقوله - عليه السلام -: «إذا بلغ الماء قلتين لم يحمل الخبث»",
+     "who": "Ibn Qudāma, al-Mughnī (objection voiced for the per-jirya view)",
+     "note": "The proof the Mughnī puts in the per-jirya side's mouth (al-Sharḥ al-Kabīr: «فالجرية منه لا تبلغ قلتين فتنجس لحديث القلتين»): position 0. A marfūʿ āḥād ḥadīth used by its mafhūm: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The ḥadīth of the two qullas by its spoken sense: the stream as a whole has reached two qullas, so it bears no impurity; singling out the jirya for this measure is arbitrary",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p025",
+     "excerpt_ar": "قلنا: هذا حجة على طهارته؛ لأن ماء الساقية بمجموعه قد بلغ القلتين، فلا يحمل الخبث، وتخصيص الجرية منه بهذا التقدير تحكم لا دليل عليه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The aggregate of the running water is what is reckoned: position 1's reckoning by the whole. The Mughnī argues it for its own view (running water najis only by change), but the ground is the reckoning of the whole against the jirya. Marfūʿ āḥād ḥadīth: zanni."
+    }
+   ],
+   "advantages": [
+    {
+     "for": 1,
+     "over": 0,
+     "by": "mantuq",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p025",
+     "excerpt_ar": "ثم الخبر إنما يدل بمنطوقه على نفي النجاسة عما بلغ القلتين، وإنما يستدل هاهنا بمفهومه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Both sides cite the qullatayn ḥadīth (zanni). The reckoning by the whole rests on its manṭūq (what reaches two qullas bears no impurity), the per-jirya reckoning on its mafhūm; the Mughnī says so expressly. Basis: stated — the source itself compares the two proofs in the excerpt.",
+     "basis": "stated"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A najis vessel dipped in running water is one washing however many jiryas pass, as when it is moved about in much still water",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p040",
+     "excerpt_ar": "فلو غمس الإناء) المتنجس (في ماء جار فهي غسلة واحدة ولو مر عليه جريات) كما لو حركه في الماء الكثير الراكد",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Ruling of al-Iqnāʿ with Kashshāf's analogy to moving it in much still water: position 0 (one ghasla). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "For a body that does not absorb najāsa, such as a vessel, each jirya of a river passing over it is a washing, since intention is not required; it is like water poured over it by a person without intent",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p043",
+     "excerpt_ar": "أو يكون في نهر جار، فتمر عليه جريات النهر، فكل جرية تمر عليه غسلة؛ لأن القصد غير معتبر، فأشبه ما لو صبه آدمي بغير قصد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Each jirya counts as a ghasla, so seven jiryas are seven washings: position 1. Stated ʿilla with analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "If four jiryas pass over him (and washing suffices for wiping) it suffices, as if he had performed wuḍūʾ four times, gaining one limb in order from each",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p102",
+     "excerpt_ar": "وإن مر عليه أربع جريات، وقلنا: الغسل يجزئ عن المسح. أجزأه، كما لو توضأ أربع مرات",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For the ḥadath lifted by four successive jiryas: position 0. Analogy to four reversed wuḍūʾs, each yielding one limb: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "One who immerses in running water for minor ḥadath is not purified until he emerges in order, as in still water, even if four jiryas pass over him (Aḥmad's naṣṣ)",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p040",
+     "excerpt_ar": "لم يرتفع حدثه، حتى يخرج مرتبا نصا كالراكد ولو مر عليه أربع جريات",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "On these very facts (four jiryas): not lifted, position 1, by assimilation of running to still water («كالراكد»; Sharḥ al-Muntahā: «أن الجاري، كالراكد»). The imam's naṣṣ is reported but the ground given is the analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "«فلم تجدوا ماء فتيمموا» (Q 5:6): tayammum is conditioned on not finding water, and this man finds it; with the ḥadīth «التراب كافيك ما لم تجد الماء»",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p243",
+     "excerpt_ar": "لقوله تعالى (فلم تجدوا ماء فتيمموا) وهذا واجد ولقوله عليه السلام \" التراب كافيك ما لم تجد الماء \"",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Given for one who has water but would lose the time in using it: he may not take tayammum, so he purifies and prays after the time: position 0 (al-Mughnī's view). The āya bears on it by the implied sense of its condition, and the ḥadīth is āḥād: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He is able to use water, so tayammum is not permitted to him, as when he does not fear losing the time",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p243",
+     "excerpt_ar": "ولأنه قادر على الماء فلم يجز له التيمم كما لو لم يخف فوت الوقت",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Same context: position 0. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The traveller who reaches water as the time is running out takes tayammum, being unable to use it within the time: the state of his lacking water is carried forward",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p095",
+     "excerpt_ar": "فيتيمم، لعدم قدرته على استعماله في الوقت. فاستصحب حال عدمه له، بخلاف من وصل إليه وتمكن من الصلاة في الوقت",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "On these very facts (a traveller reaching water as the time narrows): tayammum, position 1. The source names the ground as istiṣḥāb of his prior lack of water: istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The ʿidda ends with the birth of the last child, so the divorce meets her already separated (bāʾin) and does not fall, as when he says «when I die you are divorced»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p457",
+     "excerpt_ar": "ولنا، أن العدة انقضت بوضع الحمل، فصادفها الطلاق بائنا ولم يقع، كما لو قال: إذا مت فأنت طالق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "«ولنا» for Abū Bakr's ruling that she is divorced by the earlier births and separated, not divorced, by the last: position 0. Stated ʿilla with an analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Aḥmad's naṣṣ that «you are divorced with my death» does not divorce; divorce coinciding with the end of the ʿidda is a fortiori void",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p457",
+     "excerpt_ar": "وقد نص أحمد، في من قال: أنت طالق مع موتي. أنها لا تطلق. فهذا أولى",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "An a fortiori argument from the imam's naṣṣ on divorce coinciding with death to divorce coinciding with the separating birth: position 0. Qiyas (awlā)."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Ibn Ḥāmid: the moment of separation is the moment the divorce falls, and there is no incompatibility between them, so she is divorced by the last birth too",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p457",
+     "excerpt_ar": "وحكي عن ابن حامد أنها تطلق؛ لأن زمان البينونة زمن الوقوع، ولا تنافي بينهما",
+     "who": "Ibn Qudāma, al-Mughnī (reporting Ibn Ḥāmid)",
+     "note": "Ibn Ḥāmid's ground for divorce by the birth that ends the ʿidda: position 1. A rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f002",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Where the free woman would suffice him and he marries her with a slave woman in one contract, the slave woman's marriage fails for want of its condition, the lack of means (ṭawl) for a free woman",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p035",
+     "excerpt_ar": "فإن تزوج حرة تعفه وأمة في عقد واحد فسد نكاح الأمة، لعدم شرطه، وهو عدم طول الحرة",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Exactly the annotated branch (a free woman who suffices, both in one contract): the slave woman's marriage fails, position 1. A stated ʿilla (the missing sharṭ of Q 4:25): qiyas."
+    }
+   ],
+   "advantages": [],
+   "searched": "al-Mughnī v07 p123, p136-139 (free and slave woman, the conditions of marrying a slave woman), al-Sharḥ al-Kabīr v07 p514-521, al-Mubdiʿ v04 p037-038: no proof for position 0 (both valid where the free woman suffices); Ibn Rajab's Qawāʿid (q057) states the two wujūh without a ground."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Abū al-Khaṭṭāb: the death is the cause both of his owning her and of the divorce; the annulment follows the ownership, so the divorce falls in the moment of ownership that precedes the annulment and takes effect",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p512",
+     "excerpt_ar": "واختار أبو الخطاب أنه يقع؛ لأن الموت سبب ملكها وطلاقها وفسخ النكاح يترتب على الملك فيوجد الطلاق في زمن الملك السابق على الفسخ",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ground for divorce on «when my father dies» (and «if I buy you»): position 0, the later madhhab (Kashshāf and Sharḥ al-Muntahā repeat it verbatim). A rationale on the order of causes: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "al-Qāḍī: by the death he owns her, the marriage is annulled by the ownership, and that is the time of the divorce, so it does not fall, as with «you are divorced with my death»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p512",
+     "excerpt_ar": "لم يقع الطلاق اختاره القاضي؛ لأنه بالموت يملكها فينفسخ نكاحها بالملك وهو زمن الطلاق فلم يقع كما لو قال: أنت طالق مع موتي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Qāḍī's (al-Mujarrad) ground: the divorce coincides with the bar: position 1. Stated ʿilla plus analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Repeating «if I speak to you, you are divorced» is itself speaking to her, so the condition is met and she is divorced once",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p458",
+     "excerpt_ar": "وإذا قال لامرأته: إن كلمتك فأنت طالق. ثم أعاد ذلك ثانية، طلقت واحدة؛ لأن إعادته تكليم لها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The madhhab's ground («لأنه كلام»): the repetition is speech to her, so the oath is broken: position 0. A linguistic rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Ibn ʿAqīl: the repetition is of the same kind as the first oath and confirms it; the oath's purpose is to hurt and shun her by not speaking, and the repetition does not contradict that purpose",
+     "ref": "src:openiti-rajab-shamela21730/v01:p101",
+     "excerpt_ar": "قياس المذهب عندي أنه لا يحنث بهذا الكلام لأنه من جنس اليمين الأولى ومؤكد لها، وإنما المقصود أذاها وهجرها",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid (citing Ibn ʿAqīl, ʿUmad al-adilla)",
+     "note": "Ibn ʿAqīl's ground for no breach by the repetition, which Ibn Rajab calls «أقوى»: position 1. A rationale from the oath's intent: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The sick man's ownership of his father coincides with the seller's ownership of the price, so the favour to the seller and the father's manumission are two gifts at once and share the third",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p334",
+     "excerpt_ar": "وعتق الأب فيتحاصان لتقارنهما لأن ملك المريض لأبيه مقارن لملك البائع لثمنه فللبائع ثلث الثلث محاباة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "On these facts (nine dinars, the father worth six): they share, position 0 (al-Qāḍī, Ibn ʿAqīl; the muʿtamad). A stated ʿilla (coincidence): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Ṣāḥib al-Muḥarrar: the favour precedes the father's manumission, for the seller's ownership of the price coincides with the ownership of the father, and the manumission follows that ownership; the favour coincided with the condition of the manumission, not with it, so it executes as if earlier",
+     "ref": "src:openiti-rajab-shamela21730/v01:p102",
+     "excerpt_ar": "والثاني أنه تنفذ المحاباة ولا يعتق الأب وهو اختيار صاحب المحرر لأن المحاباة سابقة لعتق الأب",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The Muḥarrar's ground for the favour executing and the father not freed: position 1. A rationale on the order of causes: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Khulʿ before consummation for half her dower: the whole dower becomes his, half by the separation and half by the khulʿ",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p257",
+     "excerpt_ar": "فإن خالع امرأته بنصف صداقها، قبل دخوله، بها صح وصار الصداق كله؛ له نصفه بالطلاق، ونصفه بالخلع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The ruling for the whole with its distribution of the two halves to two causes: position 0 (al-Iqnāʿ, Kashshāf follow it). A rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He earned fifty as the compensation for the divorce, and the other half returned to him by the separation before consummation",
+     "ref": "src:openiti-rajab-shamela21730/v01:p103",
+     "excerpt_ar": "أحدهما تستحقه كله لأنه استحق عوضا عن الطلاق خمسين ورجع إليه بالطلاق قبل الدخول النصف الباقي",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ground of the first wajh: position 0. Ibn Rajab adds that its defenders say the halving follows the khulʿ, so he owned the fifty before it. Rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Knowing that half falls from him by the separation, he in effect took khulʿ for half of the half that remains hers: half is his by the divorce and a quarter by the khulʿ, three quarters in all",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p257",
+     "excerpt_ar": "ويحتمل أن يصير له ثلاثة أرباعه؛ لأنه إذا خالعها بنصفه، مع علمه أن النصف يسقط عنه، صار مخالعا بنصف النصف الذي يبقى لها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The iḥtimāl for three quarters: position 1. A rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "If the sick husband dies and she inherits, the favour (the dower above her fair dower) is void, because it is a bequest to an heir",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p151",
+     "excerpt_ar": "بطلت المحاباة؛ لأنها وصية لوارث، ولها صداقها وربع الباقي بالميراث",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For the favour stopped on the heirs' consent where she inherits: position 0 (al-Inṣāf: «هذا الصحيح من المذهب»). The excess is assimilated to a bequest to an heir: qiyas (the bequest-to-heir rule carried over)."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Possibly the ground of the five narrators' riwāya: inheritance that coincides with the gift does not prevent its execution; or the wife owned it as the husband owned the buḍʿ, and the inheritance is consequent on that",
+     "ref": "src:openiti-rajab-shamela21730/v01:p103",
+     "excerpt_ar": "ويحتمل أن يكون مأخذه أن الإرث المقارن للعطية لا يمنع نفوذها ويحتمل أن يقال إن الزوجة ملكها في حال ملك الزوج البضع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The two grounds Ibn Rajab proposes for the riwāya that the favour executes from the third: position 1. Rationales: qiyas. Ibn Rajab adds that the upshot «هو خلاف المذهب المعروف»."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f001",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Purification is valid with doubt in its cause: as one who doubts whether he is in ḥadath, performs wuḍūʾ intending to lift it and then learns he was in ḥadath, is sufficed by it; so wiping done in doubt is valid, though the prayer prayed in doubt is repeated",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p213",
+     "excerpt_ar": "وإن كان مسح مع الشك صح؛ لأن الطهارة تصح مع الشك في سببها، ألا ترى أنه لو شك في الحدث، فتوضأ ينوي رفع الحدث",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given on exactly these facts (doubt whether the wiping began in travel or residence, prayers after a day and night repeated, the wiping itself valid): position 1. A stated ʿilla with an analogy (the wuḍūʾ of one doubting his ḥadath): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The opposing wajh: the wuḍūʾ made by wiping in doubt is not valid, just as the prayer prayed with it in doubt after a day and night is repeated",
+     "ref": "src:openiti-insaf-shamela21609/v01:p178",
+     "excerpt_ar": "فلو خالف وفعل، فبان بقاؤها؛ صح وضوءه على الصحيح من المذهب. وقيل: لا يصح، كما يعيد ما صلى به مع شكه بعد يوم وليلة",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Stated for the parallel case of wiping while doubting whether the period remains; the «وقيل» carries the second wajh's ground (the wiping's permission not established, so the purification fails like the prayer). An analogy to the repeated prayer: qiyas. Applied here because the farʿ's second wajh turns on the same defect."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A hand whose seizure can found ownership removes liability for what it seizes, whether ownership results or not; the father's hand over his son's property is such a hand",
+     "ref": "src:openiti-rajab-shamela21730/v01:p206",
+     "excerpt_ar": "وإن كان على غير وجهه وجه التملك فلا يثبت به الضمان ولو أتلفه على أصح الوجهين وهو المذهب عند صاحب المحرر",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid (qāʿida 90)",
+     "note": "The qāʿida's rationale (the hand capable of owning) is the ground for no liability even if he destroys it: position 0. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The son's claim against his father is not extinguished, only its demand deferred: if the father dies, the son takes his debt from the estate",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p063",
+     "excerpt_ar": "وإن مات الأب، رجع الابن في تركته بدينه؛ لأن دينه لم يسقط عن الأب، وإنما تأخرت المطالبة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The ground on which the debt, including the value of what the father destroyed (al-Sharḥ al-Kabīr's «ولا قيمة متلف»), stands established in the father's dhimma though not demandable: position 1 (al-Inṣāf: «والمذهب منهما قدمه في المغني»). A rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "One who takes property from a usurper to rescue it and return it to its owner is not liable if it perishes before he can return it, because he is a benefactor (muḥsin)",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p178",
+     "excerpt_ar": "المال من الغاصب تخليصا) له (ليرده إلى مالكه) فتلف قبل التمكن، لم يضمنه؛ لأنه محسن",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "On the very case al-Talkhīṣ's other wajh addresses (rescued from the usurper): no liability, position 0. A stated ʿilla (iḥsān): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "al-Talkhīṣ: he is not liable, like the lost property one keeps for its owner",
+     "ref": "src:openiti-insaf-shamela21609/v06:p335",
+     "excerpt_ar": "فقال في التلخيص: ويحتمل أن لا يضمن كالملك الضائع إذا حفظه لصاحبه. وهو الأصح",
+     "who": "al-Mardāwī, al-Inṣāf (citing al-Talkhīṣ)",
+     "note": "For taking a deposit from a child to save it, extended in the same passage to rescue from a usurper: position 0. Analogy to lost property kept for its owner: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "al-Talkhīṣ's other wajh: he is liable, because he has no wilāya over it; likewise when he takes property from a usurper to return it",
+     "ref": "src:openiti-insaf-shamela21609/v06:p335",
+     "excerpt_ar": "يحتمل أن يضمن. لأنه لا ولاية له عليه. قال: وهكذا يخرج إذا أخذ المال من الغاصب تخليصا، ليرده إلى مالكه",
+     "who": "al-Mardāwī, al-Inṣāf (citing al-Talkhīṣ)",
+     "note": "Ground for liability for what is rescued from the usurper: position 1 (Ibn Rajab calls it «ضعيف»). Stated ʿilla: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q094.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The lessee's borrower stands in the lessee's place in taking the benefit, so he is like the lessee in not being liable; his hand is the lessee's hand",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p015",
+     "excerpt_ar": "لأنه قام مقام المستأجر في الاستيفاء، فكان حكمه كالمستأجر في عدم الضمان لأن يده كيده",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Ground for non-liability of the borrower from a lessee when it perishes without fault: position 0. Analogy to the lessee: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "al-Talkhīṣ: he is an amīn, having received it from the hand of an amīn, so he is not liable",
+     "ref": "src:openiti-rajab-shamela21730/v01:p217",
+     "excerpt_ar": "المستعير من المستأجر قال في التلخيص هو أمين على الصحيح لقبضه من يد أمين فلا يكون ضامنا",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid (citing al-Talkhīṣ)",
+     "note": "Stated ʿilla for position 0: qiyas."
+    }
+   ],
+   "advantages": [],
+   "searched": "For position 1 (liable as a borrower): al-Inṣāf v06 p049 and al-Furūʿ with Taṣḥīḥ v07 p169 report the wajh («وقيل: يضمنها»; «وهو ظاهر كلام كثير من الأصحاب») without a proof; al-Mughnī and al-Sharḥ al-Kabīr (ʿāriya, ijāra) do not argue the borrower from a lessee."
+  }
+ ]
+}

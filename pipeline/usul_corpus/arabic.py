@@ -152,8 +152,8 @@ def revolume(text: str) -> str:
 
 # The quotation key: Arabic letters, and each standalone numeral as a delimited token in Western
 # digits. Recognized markup carries no key: page markers, and footnote anchors (digits glued to the
-# preceding word, Shamela's `العلماء1`).
-_QUOTE = re.compile(r"PageV\d+P\d+|(?<![ء-ي\u064b-\u06520-9٠-٩۰-۹])([0-9٠-٩۰-۹]+)|([ء-ي])")
+# preceding word, Shamela's `العلماء1`, or negated in parentheses, `(¬7)`).
+_QUOTE = re.compile(r"PageV\d+P\d+|\(¬[0-9٠-٩۰-۹]+\)|(?<![ء-ي\u064b-\u06520-9٠-٩۰-۹])([0-9٠-٩۰-۹]+)|([ء-ي])")
 
 
 def _quote_pieces(s: str):

@@ -71,7 +71,7 @@ def required_witnesses(corpus: Path) -> set[str]:
     ledger = reconcile.load(corpus)  # same base-plus-shards view as tests and generators
     ids = set()
     for entry in ledger["entries"]:
-        for item in entry.get("evidence", []):
+        for item in entry.get("evidence", []) + entry.get("proofs", []) + entry.get("advantages", []):
             match = REF.fullmatch(item["ref"])
             if not match:
                 raise ValueError(f"invalid required evidence locator: {item['ref']}")

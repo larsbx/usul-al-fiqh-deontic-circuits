@@ -1,0 +1,623 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b02: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Farq: the pre-emptor's right is fixed in the share itself, while the starving man's right is to stave off death. Feeding him is a communal duty, so once the food passes to someone else the right attaches to that holder.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p088",
+     "excerpt_ar": "وقد يفرق بأن الشفيع حقه متعين في عين الشقص، وهذا حقه في سد الرمق",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "This is the only ground in the sources for Abū al-Khaṭṭāb's validity with no before/after-demand distinction. Ibn Rajab raises it against his own «الأظهر». It is a rationale, so qiyas, and weak support, since Ibn Rajab offers it only as «قد يفرق»."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: after the demand he must hand the food over, so the sale is void.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p088",
+     "excerpt_ar": "والأظهر أنه لا يصح البيع بعد الطلب لوجوب الدفع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "This is Ibn Rajab's «الأظهر» on the after-demand branch. It is qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy, a fortiori: like the purchaser after the shafīʿ's demand, and more so, since giving the food is owed from the start to save a life.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p088",
+     "excerpt_ar": "لأن بذله له واجب بالثمن فهو كما لو طالب الشفيع بالشفعة وأولى، لأن هذا يجب بذله ابتداء لإحياء النفس",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "This is Ibn Rajab's second ground for invalidity. It is qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The ḥadīth that the Prophet forbade selling fruit until its ripeness shows (muttafaq ʿalayh). By its implied sense the sale is valid once ripeness shows, and that covers fruit on which zakat is due.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p506",
+     "excerpt_ar": "ولنا، «أن النبي - صلى الله عليه وسلم -: نهى عن بيع الثمار حتى يبدو صلاحها.» متفق عليه. ومفهومه صحة بيعها إذا بدا صلاحها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is Ibn Qudāma's «ولنا» for valid disposal of the niṣāb. It reaches these facts only through its mafhūm and generality, so zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: the zakat is owed in the owner's dhimma, not in the property, so the sale is valid, like selling property while owing a debt. Even if it attaches to the ʿayn, that attachment does not bar disposal, like the arsh of a crime.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p506",
+     "excerpt_ar": "ولأن الزكاة وجبت في الذمة، والمال خال عنها، فصح بيعه، كما لو باع ماله، وعليه دين آدمي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is the second ground in the same «ولنا». It is qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: even if it is in the ʿayn, it is not a partnership or a right confined to it; payment from that very property cannot be demanded while other property exists.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p088",
+     "excerpt_ar": "ولا تجوز المطالبة بالإخراج منها عينا مع وجود غيرها، فلا يتوجه انحصار الاستحقاق فيها بحال",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "This is Ibn Rajab's ground for the naṣṣ. It is qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: if zakat is in the ʿayn he sold what he does not own; if in the dhimma, the zakat's amount is pledged for it, and selling a pledge is invalid.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p505",
+     "excerpt_ar": "لأننا إن قلنا إن الزكاة تتعلق بالعين، فقد باع ما لا يملكه، وإن قلنا تتعلق بالذمة، فقدر الزكاة مرتهن بها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is one of al-Shāfiʿī's qawls, the same ruling as Abū Bakr's in al-Shāfī (invalid in the zakat's amount). No Ḥanbalī ground for Abū Bakr is given. It is qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: it is a right not settled in the slave, payable from other property, so it does not bar the sale, like zakat. It is also a right arising without the master's consent, like a debt in his dhimma.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p128",
+     "excerpt_ar": "ولنا، أنه حق غير مستقر في الجاني، يملك أداءه من غيره، فلم يمنع البيع، كالزكاة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is Ibn Qudāma's «ولنا» for validity of selling the slave who has committed a crime. It is qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the victim's claim is to the arsh, not to own the slave's neck. The owner may pay the lesser of value or arsh, so the slave's surrender is not fixed and disposal is not barred, whether or not the victim demands.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p088",
+     "excerpt_ar": "والمطالبة منه إنما تتوجه بحقه وحقه هو أرش الجناية لا ملك رقبة العبد على الصحيح فلا يتوجه المنع من التصرف فيه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "This is Ibn Rajab's ground for the naṣṣ on the demand branch. It is qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy, a fortiori: a human's right attaches to his neck, which bars his sale as with a pledge; the right of the crime is stronger still, since it takes precedence over the pledgee.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p128",
+     "excerpt_ar": "وقال في الآخر: لا يصح بيعه؛ لأنه تعلق برقبته حق آدمي، فمنع صحة بيعه، كالرهن، بل حق الجناية آكد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is al-Shāfiʿī's other qawl, the same ruling as Abū al-Khaṭṭāb's in al-Intiṣār, which Ibn Rajab grounds «لتعلق الحق بعينه». It is qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: it is the disposal of an owner, so it is valid, as if the thing had not been taken from the unbelievers. The master may take it back from the second holder.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p079",
+     "excerpt_ar": "(صح تصرفه) ؛ لأنه تصرف من مالك فصح كما لو لم يؤخذ من الكفار",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "This is the ground for validity of the captor's sale or pledge. Abū al-Khaṭṭāb extends it without distinguishing demand. Al-Iqnāʿ itself then makes the demand a bar, so this ground supports position 0 only as he generalises it. It is qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: the master's demand bars disposal, as the shafīʿ's demand bars the purchaser's disposal.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p088",
+     "excerpt_ar": "والأظهر أن المطالبة تمنع التصرف كالشفعة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "This is Ibn Rajab's «الأظهر» on the demand branch. It is qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: as the demand for shufʿa bars the purchaser's disposal of the pre-empted share.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p079",
+     "excerpt_ar": "(وتمنع المطالبة التصرف فيه كالشفعة) أي: كما أن الطلب بالشفعة يمنع المشتري من التصرف في الشقص المشفوع",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "This is al-Iqnāʿ with al-Kashshāf adopting Ibn Rajab's view on the same analogy. It is qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f008",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The marfūʿ ḥadīth «whoever leaves a right or property, it is his heirs'»: the estate passes to them at once, so their disposal is a disposal of their own property.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p438",
+     "excerpt_ar": "وله - صلى الله عليه وسلم - «من ترك حقا أو مالا فلورثته»",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī cites it for the estate passing to the heirs despite the debt, and grounds valid disposal on that passing («لانتقالها إليهم»). Ibn Qudāma calls it «الخبر». It reaches the validity of disposal by implication, so zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: a debt attaching to property does not remove ownership for the master of a criminal slave, the pledgor or the bankrupt, so it does not bar the transfer. Their disposal is then valid, as when the master sells the criminal slave or the niṣāb.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p328",
+     "excerpt_ar": "ولأن تعلق الدين بالمال لا يزيل الملك في حق الجاني والراهن والمفلس، فلم يمنع نقله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is Ibn Qudāma's ground for the heirs' valid disposal on the riwāya that the debt does not bar the transfer, which is the madhhab. It is qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: the estate has passed to them, so they may dispose of it as the master disposes of a slave who has committed a crime.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p439",
+     "excerpt_ar": "(ويصح تصرف الورثة في التركة ببيع أو غيره) لانتقالها إليهم، كتصرف السيد في العبد الجاني",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "This is al-Iqnāʿ and al-Kashshāf's ground for the side Ibn Rajab calls «أصحهما». It is qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Āya al-Nisāʾ 11: «من بعد وصية يوصي بها أو دين». It assigns the estate to the heirs only after debt and bequest, so they do not own it before, and their disposal is in what is not theirs.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p328",
+     "excerpt_ar": "والرواية الثانية، يمنع نقل التركة إليهم، لقول الله تعالى: {من بعد وصية يوصي بها أو دين}",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma gives it for the riwāya that the debt bars the transfer. On that riwāya he concludes «لم يصح تصرفهم»; al-Inṣāf: «فعلى الثانية: لا إشكال في عدم النفوذ». So it is cited for this ruling, though from a premise outside the madhhab. The āya does not explicitly address the heirs' disposal; it bears on it by its apparent sense, so zanni."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f009",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: the husband's unexercised right to take the half is like the giver's right to reclaim (khiyār al-wāhib). The son may dispose of what his father gave him, so she may dispose of it.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p089",
+     "excerpt_ar": "صاحب الترغيب: يحتمل وجهين لتردده بين خيار البيع وبين خيار الواهب",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "These are al-Targhīb's two iḥtimāls on the premise that the half does not enter his ownership by force. The validity iḥtimāl rests on likening the case to the giver's option. It is qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: the husband's right is like an option in a sale (khiyār al-bayʿ). Disposal of the item during the sale's option is invalid, so her disposal is invalid.",
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p339",
+     "excerpt_ar": "عفا، فعلى القول الثاني يصح ولا يتصرف وفي الترغيب على الثاني وجهان؛ لتردده بين خيار البيع وخيار الواهب ، لكن المصنف قد قدم حكما وهو",
+     "who": "Ibn Mufliḥ, al-Furūʿ (with al-Mardāwī, Taṣḥīḥ al-Furūʿ)",
+     "note": "This is the invalidity iḥtimāl in al-Targhīb, as relayed in Taṣḥīḥ al-Furūʿ. Ibn Mufliḥ's lead «يصح ولا يتصرف», which al-Mardāwī calls the correct view of the madhhab, bars her disposal. It is qiyas. The excerpt runs through the qualifier that follows in the source."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: an attached increase follows the asset in contracts and in annulments, so it goes back with the item at no charge.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p110",
+     "excerpt_ar": "كالسمن، والكبر، والتعلم، والحمل قبل الوضع، والثمرة قبل التأبير، فإنه يردها بنمائها؛ لأنه يتبع في العقود والفسوخ",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is Ibn Qudāma's ground when the buyer returns for a defect a thing that has grown fat or learned a craft. It is a stated rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the attached increase cannot be separated, so it follows the sold item.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p039",
+     "excerpt_ar": "صححه الترمذي ويتبع نماء متصل المبيع لتعذر انفصاله",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "al-Buhūtī's ground on the madhhab side. «صححه الترمذي» in the excerpt grades the preceding ḥadīth on detached growth, not this proof. It is a rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: the seller is compelled to take back his goods and return the price, so he is likewise compelled to take the attached growth, and so pays its value.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p158",
+     "excerpt_ar": "ووجه الإجبار هنا على دفع القيمة أن البائع قد أجبر على أخذ سلعته ورد ثمنها فكذلك نماؤها المتصل بها يتبعها في حكمها",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's ground for the side of Ibn ʿAqīl, al-Shīrāzī and Taqī al-Dīn, set on Aḥmad's naṣṣ via Ibn Manṣūr «ردها ورجع عليه بقدر النماء». The growth is the buyer's and he recovers its value. It is qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The marfūʿ ḥadīth that whoever finds his own goods with a man who has become bankrupt is more entitled to them («الخبر»). Its generality covers goods that have grown.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p314",
+     "excerpt_ar": "وهو مذهب مالك، والشافعي، إلا أن مالكا يخير الغرماء بين أن يعطوه السلعة أو ثمنها الذي باعها به. واحتجوا بالخبر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The proof is cited for the Maymūnī riwāya (no bar) and for Mālik and al-Shāfiʿī, the same ruling held by non-Ḥanbalīs. It applies to the attached increase only by the ḥadīth's generality, so zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: it is an annulment, and a detached increase does not bar it, so neither does an attached one, as with return for a defect.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p314",
+     "excerpt_ar": "وبأنه فسخ لا تمنع منه الزيادة المنفصلة، فلا تمنعه المتصلة، كالرد بالعيب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is the second argument for reclaiming. al-Qāḍī's side also takes the riwāya «هو أحق به زاد أو نقص». It is qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: an annulment for a supervening cause does not give a claim to the asset grown by an attached increase, like annulment of marriage for insolvency or suckling.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p314",
+     "excerpt_ar": "ولنا، أنه فسخ بسبب حادث، فلم يملك به الرجوع في عين المال الزائدة زيادة متصلة، كفسخ النكاح بالإعسار أو الرضاع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is Ibn Qudāma's «ولنا» for al-Khiraqī's bar. It is qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: the increase arose in the bankrupt's ownership, so the seller has no right to take it, like a detached increase.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p314",
+     "excerpt_ar": "ولأنها زيادة في ملك المفلس، فلم يستحق البائع أخذها، كالمنفصلة، وكالحاصلة بفعله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is the second ground in the same «ولنا» passage. It is qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Takhrīj by analogy: as with return for a defect (Ibn Manṣūr's riwāya) and as when the bankrupt has dyed the cloth, the seller reclaims and pays the increase's value.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p159",
+     "excerpt_ar": "ويتخرج من رواية ابن منصور في الرد بالعيب أن يرجع البائع ههنا ويرد قيمة الزيادة كما لو صبغ المفلس الثوب",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "This is Ibn Rajab's takhrīj for the third position. It is qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the increase belongs to the son as growth of his property and did not come from his father, so the father cannot reclaim it. The asset is then barred too, to avoid joint ownership and partition.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p058",
+     "excerpt_ar": "والثانية، تمنع. وهو مذهب أبي حنيفة؛ لأن الزيادة للموهوب له لكونها نماء ملكه، ولم تنتقل إليه من جهة أبيه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is the ground for the riwāya that the increase bars the father's return (naṣṣ via Ibn Manṣūr). Abū Ḥanīfa holds the same ruling. It is qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: it takes back property by undoing a contract with no defect in the countervalue, so an attached increase bars it, as with the dower on annulment, half of it on divorce, or the seller's return on the buyer's bankruptcy.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p058",
+     "excerpt_ar": "ولأنه استرجاع للمال بفسخ عقد لغير عيب في عوضه، فمنعه الزيادة المتصلة، كاسترجاع الصداق بفسخ النكاح، أو نصفه بالطلاق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is the second ground for the bar. It is qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: it is an increase in the gift itself, so it does not bar the return, like an increase before delivery or a detached one.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p058",
+     "excerpt_ar": "إحداهما لا تمنع الرجوع. وهو مذهب الشافعي؛ لأنها زيادة في الموهوب، فلم تمنع الرجوع، كالزيادة قبل القبض",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is the ground for the riwāya allowing the return. al-Shāfiʿī holds the same ruling. It is qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the increase follows the son's property, which the father may take, so by returning and taking possession he takes ownership of it.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p159",
+     "excerpt_ar": "وعلى القول بجوازه فلا شيء] على الأب للزيادة لأنها تابعة لما يباح له من مال ولده",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "This is Ibn Rajab's ground that on this riwāya the father owes nothing for the increase. It is qiyas."
+    }
+   ],
+   "advantages": [
+    {
+     "for": 0,
+     "over": 1,
+     "by": "usulMany",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p058",
+     "excerpt_ar": "ولأنه استرجاع للمال بفسخ عقد لغير عيب في عوضه، فمنعه الزيادة المتصلة، كاسترجاع الصداق بفسخ النكاح، أو نصفه بالطلاق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This compares the qiyas proofs. The bar's ʿilla is shown in several uṣūl: the dower on annulment, half the dower on divorce, and, in the passage that follows, the seller's return on bankruptcy. The other side's analogy rests on increase before delivery and detached increase only. Basis: applied — the excerpt shows the property, but no source compares the two proofs; the bank applies the uṣūl murajjiḥ.",
+     "basis": "applied"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the attached increase is hers and she need not give it up. The half cannot be handed over without it, so he gets half the value.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p228",
+     "excerpt_ar": "إن شاءت دفعت إليه نصف قيمته يوم العقد؛ لأن الزيادة لها لا يلزمها بذلها ولا يمكنها دفع الأصل بدونها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is Ibn Qudāma's ground for al-Khiraqī's ruling: no return to the half itself, so the husband's right moves to half its value. It is qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Farq: the seller's annulment undoes the contract from its root, while divorce only cuts the marriage from now on. So the husband has no right in an increase that arose in her ownership.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p159",
+     "excerpt_ar": "وفرق بينه وبين البائع المفلس بأن فسخ البائع رفع للعقد من أصله والطلاق قاطع للنكاح من حينه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "This is al-Qāḍī's ground (al-Mujarrad) for the same ruling. Ibn Rajab rejects the farq, but al-Qāḍī cites it for this side, so it is recorded. It is a rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Takhrīj a fortiori: if he returns to half the detached increase on one riwāya, he returns to the half with an attached increase all the more.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p159",
+     "excerpt_ar": "وخرج صاحب المحرر الرجوع في النصف بزيادة متصلة من الرواية المحكية عن أحمد في الرجوع في نصف الزيادة المنفصلة وأولى",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "This is Ṣāḥib al-Muḥarrar's ground. It is qiyas (a fortiori)."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Analogy: as with annulment for a defect, he takes the half and repays the increase's value.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p159",
+     "excerpt_ar": "ويتخرج فيه وجه آخر بالرجوع في النصف بزيادته وبرد قيمة الزيادة كما في الفسخ بالعيب",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "This is Ibn Rajab's own wajh. It is qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Barāʾa: the accuser's liability is originally free of the ḥadd, so it is not imposed without proof of the accused's freedom.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p095",
+     "excerpt_ar": "وقال أبو بكر: القول قول القاذف في الرق؛ لأن الأصل براءة ذمته من الحد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū Bakr's ground for no ḥadd when the accuser of a person of unknown status claims he is a slave and the accused denies it. The ground is the original state, so the tier is istishab."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the ḥadd is averted by doubts; the claimed slavery is possible, so it is a doubt that averts the ḥadd.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p095",
+     "excerpt_ar": "وهو يدرأ بالشبهات، وما ادعاه محتمل، فيكون شبهة. وعن الشافعي، كالوجهين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū Bakr's second ground on these facts. al-Shāfiʿī is reported with both wujūh, so the ruling also has a non-Ḥanbalī holder. It is a rationale (shubha, so the ḥadd is averted), so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The original state of people is freedom, and that is also the apparent; a claim against it is disregarded.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p095",
+     "excerpt_ar": "ولنا أن الأصل الحرية، وهو الظاهر، فلم يلتفت إلى ما خالفه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ولنا» for imposing the ḥadd on these facts (the accused denies being a slave). He rests on al-aṣl al-ḥurriyya (also backed by the ẓāhir), so istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: like one who explains explicit qadhf by something that would change its meaning, or one who claims the accused was a polytheist; such claims are not accepted.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p095",
+     "excerpt_ar": "كما لو فسر صريح القذف بما يحيله، وكما لو ادعى أنه مشرك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is the same «ولنا» passage, analogising to two cases where the accuser's claim does not drop the ḥadd. It is qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The original state is freedom.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p354",
+     "excerpt_ar": "لو قذف مجهولة النسب وادعى رقها فأنكرته) فيحد لأن الأصل الحرية",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "al-Buhūtī gives the madhhab's ground for the ḥadd on exactly these facts. The ground is the aṣl, so istishab."
+    }
+   ],
+   "advantages": [
+    {
+     "for": 0,
+     "over": 1,
+     "by": "dariHadd",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p095",
+     "excerpt_ar": "وهو يدرأ بالشبهات، وما ادعاه محتمل، فيكون شبهة. وعن الشافعي، كالوجهين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is between the two qiyas proofs. Abū Bakr's ʿilla leads to averting the ḥadd («يدرأ بالشبهات»), and the other side's analogy leads to imposing it. The murajjiḥ is dariHadd, recorded although the sources do not adopt it here. Basis: applied — the excerpt shows the property, but no source compares the two proofs; the bank applies the uṣūl murajjiḥ.",
+     "basis": "applied"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: the wording is made for effecting divorce and requires it to fall, as when nothing like it precedes. It is turned away only by an intent to confirm or to make her understand.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p478",
+     "excerpt_ar": "ولنا، أن هذا اللفظ للإيقاع، ويقتضي الوقوع، بدليل ما لو لم يتقدمه مثله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is Ibn Qudāma's «ولنا» for two divorces when he had no intent, which is the case here. It is a rationale built on what the wording requires, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: as the general is acted on while no specifier exists, and the unrestricted while no restrictor exists.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p478",
+     "excerpt_ar": "فإذا لم يوجد ذلك وقع مقتضاه، كما يجب العمل بالعموم. في العام إذا لم يوجد المخصص",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The same «ولنا» passage. With no intent, nothing turns the second wording from its requirement. It is an analogy to the uṣūl rule on the general, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Repetition may be for confirmation or for making her understand, or it may be a new pronouncement; a divorce is not imposed on doubt, so the marriage stays as it was.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p478",
+     "excerpt_ar": "وقال في الآخر: تطلق واحدة؛ لأن التكرار يكون للتأكيد والإفهام، ويحتمل الإيقاع، فلا توقع طلقة بالشك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is al-Shāfiʿī's other qawl, which holds the same ruling of one divorce on the same unstated intent. Ibn Rajab's takhrīj and Aḥmad's text via Ṣāliḥ give the same ruling. Its core is that the certain marriage is not removed by doubt, so istishab."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Only one divorce is certain; the second is doubtful.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p346",
+     "excerpt_ar": "فيتوجه أن يخرج رواية أخرى بوقوع الرستفغني مع الإطلاق لأنه المتيقن",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's own takhrīj of a riwāya of one divorce when no intent is stated, resting on certainty. The garbled word in the cached text («الرستفغني») stands for «الواحدة». The ground is the certain, so istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: the article may refer to something known (the divorce he is pronouncing), not to the whole genus.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p484",
+     "excerpt_ar": "والثانية، إنها واحدة؛ لأنه يحتمل أن تعود الألف واللام إلى معهود، يريد الطلاق الذي أوقعته",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is given for «أنت طالق الطلاق». For «الطلاق يلزمني» Ibn Qudāma says «وجههما ما تقدم», so the same proofs apply to this farʿ. It is a linguistic rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: the article on generic nouns is often used without exhaustiveness, as in 'whoever is forced into divorce', 'he washed with water'.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p484",
+     "excerpt_ar": "ولأن اللام في أسماء الأجناس تستعمل لغير الاستغراق كثيرا، كقوله: ومن أكره على الطلاق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is the second ground for one divorce, carried over by «وجههما ما تقدم». It is an argument from usage, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Customary-usage rationale: people of custom do not take it to mean three, so what they intend by the wording is one, as if they intended one.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p484",
+     "excerpt_ar": "والأشبه في هذا جميعه أن يكون واحدة؛ لأن أهل العرف لا يعتقدونه ثلاثا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is Ibn Qudāma's own preference («الأشبه»), said directly of «الطلاق يلزمني» and «علي الطلاق». It is a rationale from ʿurf, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: the definite article is for exhaustiveness, so it takes in all of divorce, which is three.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p484",
+     "excerpt_ar": "إحداهما: يقع الثلاث. نص عليها أحمد، في رواية مهنا؛ لأن الألف واللام للاستغراق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is the ground for three, given for «أنت طالق الطلاق» and carried over to «الطلاق يلزمني» by «وجههما ما تقدم». It is a linguistic rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: a singular noun in an iḍāfa is meant for the whole, as in the verse «وإن تعدوا نعمة الله لا تحصوها» [al-Naḥl 18] and «أحل لكم ليلة الصيام» [al-Baqara 187].",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p497",
+     "excerpt_ar": "فقال أبو الخطاب: يطلق نساؤه كلهن، ويعتق إماؤه؛ لأن الواحد المضاف يراد به الكل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū al-Khaṭṭāb's ground when he intended no particular wife or slave. The verses are about other matters. They are cited only to show the usage, so this is a linguistic qiyas, not zanni."
+    },
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "The view (all wives or slaves are covered) is reported from Ibn ʿAbbās.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p497",
+     "excerpt_ar": "كقوله تعالى: {وإن تعدوا نعمة الله لا تحصوها} [النحل: 18] و {أحل لكم ليلة الصيام} [البقرة: 187] ولأن ذلك يروى عن ابن عباس",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū al-Khaṭṭāb adds that the ruling is reported from Ibn ʿAbbās. No other ṣaḥābī is cited against it, so fatwaSahabi. It is reported with «يروى» and no chain, so it is weak support."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A singular noun in an iḍāfa is general.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p590",
+     "excerpt_ar": "لأنه) أي: لفظ عبدي أو أمتي أو زوجتي (مفرد",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "al-Buhūtī's ground for the mansūṣ ruling that all are covered. It is a linguistic rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: a singular word is used for a plural only figuratively, and speech is taken at its literal sense unless evidence turns it away.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p497",
+     "excerpt_ar": "لأن لفظ الواحد لا يستعمل في الجمع إلا مجازا والكلام لحقيقته ما لم يصرفه عنها دليل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is the view of the jamāʿa (one unspecified wife or slave), which Ibn Qudāma calls «أصح». It is a linguistic rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "One is certain; the ruling is not established for more on a doubtful matter.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p497",
+     "excerpt_ar": "ولو تساوى الاحتمالان لوجب قصره على الواحدة؛ لأنها اليقين فلا يثبت الحكم فيما زاد عليها بأمر مشكوك فيه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is Ibn Qudāma's preference of the aṣl. Ibn Rajab glosses it «ولو كان الجمع أظهر فيه ترجيحا للأصل على الظاهر». The ground is certainty, so istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Two dirhams are certain; the third is only possible, so liability for it is not established.",
+     "ref": "src:openiti-insaf-shamela21609/v12:p227",
+     "excerpt_ar": "وقال: ومن أصحابنا من قال \" درهمان \" لأنه اليقين، والثالث محتمل",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "al-Talkhīṣ reports this wajh for when he states no intent («وأطلق»). The ground is the certain, so istishab."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The third repeats the second's wording, so it can be a repetition; with no intent it is taken that way.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p348",
+     "excerpt_ar": "ويحتمل إرادة التكرار به لأنه بلفظه فيحمل عليه عند الإطلاق لأنه اليقين",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab sets out Ṣāḥib al-Talkhīṣ's account of the wajh for two dirhams. The first part is a linguistic rationale (same wording), so qiyas. Its certainty clause repeats the istishab above."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: wāw is for conjunction, and conjunction requires distinctness, so the third differs from the second as the second differs from the first; and acknowledgement does not call for confirmation.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p125",
+     "excerpt_ar": "وظاهر مذهبه أنه تلزمه الثلاثة؛ لأن الواو للعطف، والعطف يقتضي المغايرة، فوجب أن يكون الثالث غير الثاني",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is Ibn Qudāma's ground for three dirhams with no stated intent. It is a linguistic rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}
