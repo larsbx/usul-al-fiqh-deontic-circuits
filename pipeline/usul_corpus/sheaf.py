@@ -5,6 +5,12 @@ that point (`Sheaf.positions`), they glue iff they agree (`positions_glue_iff`);
 an obstruction record. This module emits one record per unordered pair of positions with
 different rulings, and a Lean guard per case pinning the kernel's count of ordered obstruction
 pairs (`Sheaf.obstructions`) to twice the records. The kernel is the authority over this mirror.
+
+Not every position is a view the reading can express: its ruling may lie outside the encoder's
+range (`out`), as with murāḍāt, muhāyaʾa or the heirs' oaths against a `lots` reading. Such a
+position can never equal the case's expected ruling. Its obstructions are a range gap, not an
+ikhtilāf the reading could adjudicate, so `outside` lists those positions and the summary
+separates the records whose two positions are both within the reading.
 """
 
 from __future__ import annotations
@@ -12,6 +18,8 @@ from __future__ import annotations
 import json
 from itertools import combinations
 from pathlib import Path
+
+from .takhrij import ENCODERS
 
 OUTPUT = Path("sheaf") / "obstructions.json"
 LEAN = "Obstructions.lean"
@@ -32,15 +40,23 @@ def obstructions(case: dict) -> list[list[int]]:
     return [[i, j] for i, j in combinations(range(len(rs)), 2) if rs[i] != rs[j]]
 
 
+def outside(case: dict) -> list[int]:
+    """Positions whose ruling the case's encoder cannot output."""
+    out = ENCODERS[case["encoder"]]["out"]
+    return [k for k, p in enumerate(case["positions"]) if p["ruling"] not in out]
+
+
 def ikhtilaf(cases: list[dict]) -> list[dict]:
     return sorted((c for c in cases if c["class"] == "genuine_ikhtilaf"), key=lambda c: c["far"])
 
 
 def render(cases: list[dict]) -> dict:
     rows = [{"far": c["far"], "encoder": c["encoder"], "positions": len(c["positions"]),
-             "obstructions": obstructions(c)} for c in ikhtilaf(cases)]
+             "outside": outside(c), "obstructions": obstructions(c)} for c in ikhtilaf(cases)]
+    within = [[i, j] for r in rows for i, j in r["obstructions"] if i not in r["outside"] and j not in r["outside"]]
     summary = {"cases": len(rows), "obstructed": sum(bool(r["obstructions"]) for r in rows),
-               "records": sum(len(r["obstructions"]) for r in rows)}
+               "records": sum(len(r["obstructions"]) for r in rows), "records_within_reading": len(within),
+               "positions_outside_reading": sum(len(r["outside"]) for r in rows)}
     return {"summary": summary, "cases": rows}
 
 

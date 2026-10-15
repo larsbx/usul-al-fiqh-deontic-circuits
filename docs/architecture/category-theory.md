@@ -106,6 +106,13 @@ they all agree. A `genuine_ikhtilaf` case is therefore exactly a case with an ob
 
 `pipeline/tests/test_sheaf.py` pins the record shape and checks that both outputs are generated.
 
+Some positions are views the reading cannot express: their ruling lies outside the encoder's
+range (`out`), as with murāḍāt, muhāyaʾa or the heirs' oaths against the `lots` reading of Ibn
+Rajab's Q160. Such a position can never equal the case's expected ruling. Each record lists these
+positions as `outside`. The summary separates `records_within_reading` (both positions
+expressible: an ikhtilāf the reading could adjudicate) from the rest, which are gaps in the
+reading's range rather than disagreements within it.
+
 For set-valued verdicts the obstruction to gluing is a pairwise disagreement: a Čech 1-cochain
 that does not vanish. The layer does not claim a cohomology group.
 
