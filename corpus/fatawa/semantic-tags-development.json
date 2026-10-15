@@ -1,0 +1,5896 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "purpose": "semantic annotation development scaffold",
+  "source_sha256": "621fcd30c854a45407a5c303de8656c402eab4c59abde884a06038348ffbb205",
+  "offset_unit": "Unicode code points in exact title-space-question text",
+  "records": [
+    {
+      "source_id": "islamqa.10284",
+      "text_sha256": "e0460dcdef13141bdcf403778762307af82b98770e1378fc4588dd84c879bdf2",
+      "text": "وجد شاة في الصحراء فماذا يفعل بها عثرت على شاة ضالة في البر فماذا أفعل بها خصوصاً أن الاحتفاظ بها إلى أن أجد صاحبها يكلفني ثمن العلف وربما لا أجد صاحبه.",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.10284",
+            "text_sha256": "e0460dcdef13141bdcf403778762307af82b98770e1378fc4588dd84c879bdf2",
+            "start": 139,
+            "end": 141,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.103846",
+      "text_sha256": "b35a478a93df602bc12d16930d75048d22c36d17cc6a23445c0418c43ae5541e",
+      "text": "يشك في نجاسة ثوبه بعد التبول أنا طالب في دولة أجنبية للدراسة وأقضي معظم اليوم في مكان العمل وعند احتياجي للتبول فأنا أبول واقفا لإحساسي بإمكانية إصابة مقعد الدورة بالنجاسة وكذلك لعدم قبولي نفسيا الجلوس عليها مع المحاولة قدر الاستطاعة الأمن من الإصابة برزاز البول وأنا أستعمل مناديل ورقية للاستجمار من البول ، فما هو حكم قطرات البول البسيطة التي قد تسقط على السروال بعد التبول واقفا ( مع أخذ الحيطة ) ؟ كما أرجو توضيح هل يختلف الحكم في حالة تأكد الشخص من حدوث ذلك عنه في حالة الظن فقط ؟ وهل يكفي الرش بالماء أو المسح علي ما يعتقد أنه موضع الإصابة برزاز البول ؟ وهل الإكثار من الأسئلة في هذا الأمر من الوسواس ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.103846",
+            "text_sha256": "b35a478a93df602bc12d16930d75048d22c36d17cc6a23445c0418c43ae5541e",
+            "start": 18,
+            "end": 21,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.103846",
+            "text_sha256": "b35a478a93df602bc12d16930d75048d22c36d17cc6a23445c0418c43ae5541e",
+            "start": 365,
+            "end": 368,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.104241",
+      "text_sha256": "28da90facbcb72ae75f40e8f3c842df4f9335f47675fbbf217587493bdd42cba",
+      "text": "إذا تاب من الرشوة هل يرد الرشاوى لأصحابها؟ أخذت رشوة مبالغ نقدية وهدايا فكيف التوبة وما الحل في الفلوس والهدايا ؟ وإذا تعذر إرجاع هذه الأشياء لصاحبها فما الحل ؟ وإذا تصدقت بها فهل يجوز إخراج نقود بثمن الهدايا ؟ وهل يمكن تزويج أحد الشباب من هذه النقود أو فتح مشروع لأحد الشباب المحتاجين ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.104241",
+            "text_sha256": "28da90facbcb72ae75f40e8f3c842df4f9335f47675fbbf217587493bdd42cba",
+            "start": 0,
+            "end": 3,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.107436",
+      "text_sha256": "1a5c1e70cee589e313624510e45ece9a24a565809ce1f142e91b7fb478be0c8f",
+      "text": "أقاموا في استراحات خاصة بالموظفين ويريدون التكفير عن ذلك والدي يعمل في إحدى المصالح الحكومية والتي تتيح له المبيت والإقامة باستراحات خاصة بهؤلاء الموظفين فقط ، إلا أنه في هذا الصيف ونظرا لعدم وجود موظفين في هذه الاستراحة فقد قام والدي باصطحابنا معه للإقامة في هذه الاستراحة عدة أيام ، وبالطبع قمنا باستهلاك الماء والكهرباء في تلك الفترة ، إلا أن الطعام كان من نفقتنا الخاصة ، ولكن بعد انتهاء الإقامة بدا لنا أن نكفر عما فعلنا بأن نخرج من أموالنا الخاصة مبلغا من المال يعادل تقريبا قيمة الكهرباء والماء التي استهلكناها ، وقيمة المبيت في هذه الاستراحة ، والسؤال : هل الكفارة فعلا بإخراج هذه الأموال أم هناك كفارة أخرى؟ وهل يلزم إخراج هذه الأموال لصالح مصالح حكومية أو هيئات ذات نفع عام ؟ وإذا تعذر ذلك علينا لأننا لا نجد مثل هذه المصالح أو الهيئات التي تفتح باب التبرعات فهل يكفي أن نعطي هذه الأموال للفقراء والمساكين أم يلزم إعطاؤها لمصالح حكومية أو مدارس تحت الإنشاء أو هيئات ذات نفع عام؟ وهل يمكن التبرع بها لصالح بناء مساجد ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "exception",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.107436",
+            "text_sha256": "1a5c1e70cee589e313624510e45ece9a24a565809ce1f142e91b7fb478be0c8f",
+            "start": 160,
+            "end": 163,
+            "quote": "إلا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "exception",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.107436",
+            "text_sha256": "1a5c1e70cee589e313624510e45ece9a24a565809ce1f142e91b7fb478be0c8f",
+            "start": 339,
+            "end": 342,
+            "quote": "إلا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.107436",
+            "text_sha256": "1a5c1e70cee589e313624510e45ece9a24a565809ce1f142e91b7fb478be0c8f",
+            "start": 381,
+            "end": 384,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.107436",
+            "text_sha256": "1a5c1e70cee589e313624510e45ece9a24a565809ce1f142e91b7fb478be0c8f",
+            "start": 712,
+            "end": 714,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.108549",
+      "text_sha256": "a703272cd156210896b5361312c7786f16f9f8017989656707641491165ef7e7",
+      "text": "تشك في حصول الطهر قبل الفجر فهل تصلي وتصوم؟ في آخر يوم للدورة الشهرية رأيت نزول السائل الأصفر قبل أذان الفجر بحوالي ساعتين ثم نمت ولم أرى هل توقف نزوله قبل الفجر أم لا وفي الصباح لاحظت توقف نزول السوائل ثم انتظرت قليلا أترقب وقد أذن لصلاة الظهر وبعدها اغتسلت فهل يجب علي قضاء ما فاتني من صلاة أم أصلي صلاة الظهر فقط؟ وهل يحب عليّ أن اقضي صيام هذا اليوم بعد رمضان؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.108549",
+            "text_sha256": "a703272cd156210896b5361312c7786f16f9f8017989656707641491165ef7e7",
+            "start": 18,
+            "end": 21,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.108549",
+            "text_sha256": "a703272cd156210896b5361312c7786f16f9f8017989656707641491165ef7e7",
+            "start": 94,
+            "end": 97,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.108549",
+            "text_sha256": "a703272cd156210896b5361312c7786f16f9f8017989656707641491165ef7e7",
+            "start": 152,
+            "end": 155,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.108549",
+            "text_sha256": "a703272cd156210896b5361312c7786f16f9f8017989656707641491165ef7e7",
+            "start": 165,
+            "end": 167,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.108549",
+            "text_sha256": "a703272cd156210896b5361312c7786f16f9f8017989656707641491165ef7e7",
+            "start": 353,
+            "end": 356,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.110860",
+      "text_sha256": "0891d89721818c2836937cc2339932014e8c6c43c0ecf520e3dbb4480528d7ab",
+      "text": "صامت مع الشك في غسلها من الحيض فهل يلزمها القضاء؟ أنا امرأة أعاني من مشكلة الوسواس القهري في العبادات وخصوصا في الطهارة فأنا عندما يأتيني الحيض لا أنتظر حتى أرى الطهر فمجرد الجفاف أغتسل لإحساسي بالذنب لعدم الصلاة وأعاود الاغتسال مرتين وأكثر فأنا قبل رمضان بيومين اغتسلت من الحيض وبعد أربعة وعشرين ساعة رأيت كدرة تميل إلى الاحمرار فتتبعت أثر الكدرة بمنديل واغتسلت في الليل بنية صيام أول أيام رمضان وصمت اليوم الأول وصمت اليوم الثاني من رمضان وعند صلاة العصر من اليوم الثاني من رمضان رأيت القليل من الصفرة مع مثل التراب فلم أعاود الغسل واستمريت في الصوم إلى نهاية رمضان . الآن بعد رمضان أحس بالذنب أن صومي غير صحيح وأنه علي إعادة الصوم لعدم الغسل مرة أخرى فأفتوني جزاكم الله خيرا هل صومي صحيح أم أنه علي إعادة الصوم مرة أخرى ؟ وبماذا تنصحوني جزاكم الله عني خير جزاء .",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.110860",
+            "text_sha256": "0891d89721818c2836937cc2339932014e8c6c43c0ecf520e3dbb4480528d7ab",
+            "start": 125,
+            "end": 130,
+            "quote": "عندما"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.110860",
+            "text_sha256": "0891d89721818c2836937cc2339932014e8c6c43c0ecf520e3dbb4480528d7ab",
+            "start": 144,
+            "end": 146,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.110860",
+            "text_sha256": "0891d89721818c2836937cc2339932014e8c6c43c0ecf520e3dbb4480528d7ab",
+            "start": 246,
+            "end": 249,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.110860",
+            "text_sha256": "0891d89721818c2836937cc2339932014e8c6c43c0ecf520e3dbb4480528d7ab",
+            "start": 575,
+            "end": 578,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.114793",
+      "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+      "text": "يعاني من الغازات ويشك في خروج الريح منه فكيف يصلي أنا شاب أبلغ من العمر 26 سنة ومشكلتي هي أني أشعر بوجود غازات في بطني وأشعر أيضا أن عملية التبرز لا تتم بالكامل فيخرج تقريبا 90 % منه والباقي لا أستطيع إخراجه أو إنزاله فأقوم باستنجاء الدبر وغسله جيدا حتى أضمن عدم وجود نجاسات بسبب هذا الجزء الباقي من البراز ولله الحمد هذا يحدث بالفعل فدائما لا أجد آثار نجاسات في الملبس لكن المشكلة هي أنى أشعر بخروج ريح عند كل وضوء وكل صلاة تقريبا لكني لا أسمع صوتا ولا أشم ريحا.... وسألت شيوخا في هذه المسألة فقالوا: لي إذا كان الموضوع شكاً فقط فلا تعد الوضوء؛ لأن هذا من الوسواس يريد أن يفسد عليك عبادتك ويجعلها ثقيلة عليك أما إذا تيقنت فعلا بخروج ريح وجب عليك إعادة الوضوء والصلاة حتى إذا لم تسمع صوتا أو لم تشم ريحا، وأخذت عهدا على نفسي أني لن أعيد أي وضوء أو أي صلاة حتى إذا تيقنت تماما أو سمعت صوتا أو شممت ريحا حتى لا أعطى فرصة للوسواس أن يتملك منى ويجعلني دائما أشعر بعدم استقرار نفسي وقلق شديد لدرجة أني بعد أي صلاة أشعر فيها بخروج شيء من الدبر ولم أسمع لها صوتا أو لم أشم ريحا أحلف بالله ألا أعيد هذه الصلاة حتى لا أعطي فرصة للوسوسة.......... لكن مشكلتي هي:- - أني خائف جدا وأشعر بقلق شديد وحيرة كبيرة جدا في أن يكون الذي خرج منى بالفعل ريحا وخصوصا أني أعاني من وجود غازات في بطني وعدم القيام بعملية التبرز بصفة سليمة فأشعر بقلق لأنني لم أقم بإعادة هذه الصلاة بل حلفت ألا أعيدها وأكون بذلك قد تركت فرضا من فروض الله - وفي نفس الوقت أيضا أخاف أن أعيد الوضوء والصلاة وبذلك أكون قد حققت غاية وهدف الشيطان لوسوستي وجعل العبادة ثقيلة علي، أنا في حيرة كبيرة وقلق شديد لأن هذا الموضوع يتكرر لي كثيرا ولا أدري ما أفعله يعتبر صحيحا أم خطأ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.114793",
+            "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+            "start": 146,
+            "end": 148,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.114793",
+            "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+            "start": 191,
+            "end": 193,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.114793",
+            "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+            "start": 341,
+            "end": 343,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.114793",
+            "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+            "start": 437,
+            "end": 439,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.114793",
+            "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+            "start": 505,
+            "end": 508,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.114793",
+            "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+            "start": 613,
+            "end": 616,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.114793",
+            "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+            "start": 672,
+            "end": 675,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.114793",
+            "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+            "start": 676,
+            "end": 678,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.114793",
+            "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+            "start": 692,
+            "end": 694,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.114793",
+            "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+            "start": 729,
+            "end": 731,
+            "quote": "لن"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.114793",
+            "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+            "start": 760,
+            "end": 763,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.114793",
+            "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+            "start": 806,
+            "end": 808,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.114793",
+            "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+            "start": 897,
+            "end": 900,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.114793",
+            "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+            "start": 959,
+            "end": 961,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.114793",
+            "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+            "start": 1006,
+            "end": 1008,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.114793",
+            "text_sha256": "e53d8183385c3032c1736bfb445650cee036b0e432b00149222947b6d2a5e1dc",
+            "start": 1229,
+            "end": 1231,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.126387",
+      "text_sha256": "720ee15f48727d563c633a198277ad708d17e2a25e467a1c1ebfbed59dac2c44",
+      "text": "اللقطة اليسيرة لا تعرف ولو كانت في مكة وجدت خمسين ريالاً أثناء رمي الجمار في الحج فماذا أفعل بها ؟ وهل أتصدق بها ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.126387",
+            "text_sha256": "720ee15f48727d563c633a198277ad708d17e2a25e467a1c1ebfbed59dac2c44",
+            "start": 15,
+            "end": 17,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.126502",
+      "text_sha256": "38d1696d32d2b3659f23d34e0d02db411f7347b1a499246703239a4989796d51",
+      "text": "يجوز أخذ لقطة الحرم إذا كانت يسيرة وجدت لقطة في مكة حوالي عشرة إلى خمسة عشر ريالا، ما حكمها ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.126502",
+            "text_sha256": "38d1696d32d2b3659f23d34e0d02db411f7347b1a499246703239a4989796d51",
+            "start": 20,
+            "end": 23,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.128510",
+      "text_sha256": "f93c33a5a35025b14dc3fea3f2126cbb813cd17ad5651e1bf32c7b9659a549b9",
+      "text": "إذا وجد على مكتبه قلماً لم يعرف صاحبه فماذا يفعل به؟ عثرت على قلم على المكتب ، هل لي أن آخذه ؟ وهل هذا حرام؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.128510",
+            "text_sha256": "f93c33a5a35025b14dc3fea3f2126cbb813cd17ad5651e1bf32c7b9659a549b9",
+            "start": 0,
+            "end": 3,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.128510",
+            "text_sha256": "f93c33a5a35025b14dc3fea3f2126cbb813cd17ad5651e1bf32c7b9659a549b9",
+            "start": 24,
+            "end": 26,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.128887",
+      "text_sha256": "38a5bd62543e89538c8740303aa8545dd9193c49937658ba1f062e28331968d3",
+      "text": "الطواف مع وجود الشك في الطهارة هل يصح طواف الوداع وأنا فى شك من الطهارة؟ الحمد لله أنا أديت فريضة الحج للمرة الأولى هذا العام ولكن لي شك في منسك من المناسك ألا وهو طواف الوداع. أنا أديت طواف الوداع يوم الخميس ولكن كنت نائما في الحرم من الأربعاء وكنت على طهارة والحمد لله ولكن عندما استيقظت فجر الخميس فذهبت للوضوء كنت في شك من أمري – هل أنا على جنب أم لا – لأنه قد ينزل المنى بكميه صغيره جدا ولا استطيع التأكد ومع ذلك تحريت بشده حتى أتأكد لدرجه أنني تحريت العضو الذكرى نفسه وليس الثياب فقط-آسف في التعبير- وبنظرتي قلت أنه لا يوجد شيء ولكنى وجدت جزء من الثياب قد يكون فيه بعض المنى ولكنى غير متأكد أيضا لأنه قد تكون أثار قديمه في الثياب . المهم أنني لم أغتسل وتوضأت فقط وصليت الفجر وأديت طواف الوداع ورجعت إلى الرياض حيث مقر عملي. هل عدم اغتسالي للخروج من الشك يعتبر إهمال في حق الله وسوء أدب مع الله؟ وأنه كان من المفروض عليا أنى كنت اصطحب معي ثياب جديدة للاغتسال بعد الاستيقاظ-سواء كنت جنب أم لا- خصوصا أنه كثيرا ما تحدث لي هذه الحالة من الجنابة؟ فما الحكم في صحة الحج؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.128887",
+            "text_sha256": "38a5bd62543e89538c8740303aa8545dd9193c49937658ba1f062e28331968d3",
+            "start": 276,
+            "end": 281,
+            "quote": "عندما"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.128887",
+            "text_sha256": "38a5bd62543e89538c8740303aa8545dd9193c49937658ba1f062e28331968d3",
+            "start": 352,
+            "end": 354,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.128887",
+            "text_sha256": "38a5bd62543e89538c8740303aa8545dd9193c49937658ba1f062e28331968d3",
+            "start": 522,
+            "end": 524,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.128887",
+            "text_sha256": "38a5bd62543e89538c8740303aa8545dd9193c49937658ba1f062e28331968d3",
+            "start": 649,
+            "end": 651,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.128887",
+            "text_sha256": "38a5bd62543e89538c8740303aa8545dd9193c49937658ba1f062e28331968d3",
+            "start": 864,
+            "end": 867,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.128887",
+            "text_sha256": "38a5bd62543e89538c8740303aa8545dd9193c49937658ba1f062e28331968d3",
+            "start": 894,
+            "end": 896,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.131070",
+      "text_sha256": "c323bbe8006cb6739d3961a9e48e20e15fbcb3dabf5e53daf4e1b67d22a9756e",
+      "text": "من وجد كنزاً مدفوناً في أرض فماذا يلزمه ؟. سمعت أن من وجد مالاً أو كنزاً مدفوناً في أرض لبيت قد اشتراه ، أنه عليه التصدق بخمسه ؛ فما صحة هذا الكلام ؟.",
+      "status": "candidate",
+      "tags": [],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.13717",
+      "text_sha256": "9dc6aafc5c92a9e0b1b851193046dcfa11d9ef4e8aa3d26499eacfe9e0f5a388",
+      "text": "أحكام الوديعة هل لك أن تذكر لي بعض الأحكام المتعلقة بالودائع ؟.",
+      "status": "candidate",
+      "tags": [],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.140833",
+      "text_sha256": "1fade6f866684a0a12f27a67a797fa1b5be58e2c78b3210afbe459b63c70795b",
+      "text": "صَادَر بحكم وظيفته رخاماً قبل ثلاثين سنَة على أن يتلفه ولم يفعل فهل يضمنه؟ في عام 1401 هـ تقريباً كان عمري حينها في بداية العشرينات , وكنت أعمل في شركة للنظافة في مدينتي بجانب كوني طالباً بالجامعة , وكان العمل الموكَّل لي \" فرقة للطوارئ \" - حينها - لإزالة أي مخالفات ، أو متروكات ، بعد الكتابة عليها ، بالإزالة خلال فترة محددة حسب تعليمات البلدية .\nوكان لي قريب يعمِّر عمارة , وخلال جولاتنا وجدتُ صناديق تحوي رخاماً , وكتبْتُ عليها : \" تُرفع عن الشارع وإلا ستزال وتعدم \" ؛ حيث كنا أي مخلَّف نجده ولا يزيله صاحبُه : نزيله ، ونرميه في مرمى البلدية العام .\nصاحب الرخام لم يَرفع الرخام من الشارع ، وخطر ببالي بدلاً من دفنه بمرمى البلدية أن أعطيه لقريبي ليستفيد منه ، وبالفعل عقب فوات المدة المقررة : رفعنا الرخام ، وبدلاً من المرمى العام للبلدية : أوصلته لعمارة قريبي الذي سبق أن أبلغته بأن هناك رخاماً سأحضره له لو لم يرفعه صاحبه بعد رفعه , وللأمانة لأني أريد أن أقابل الله بعمل صالح : حضر صاحب البلاط لنا ، وقدَّم شكوى ، وهدَّد ، وقلنا له : البلاط أُتلف .\nسؤالي : والله ، ثم والله ، ثم والله ، لي فترة من الزمن وأمْر البلاط في بالي ، فصاحب المنزل والله لا أعرف من هو , وأريد فتوى ، هل تصرفي فيه شيء ، وإن كان فيه : أريد أن أبرئ ذمتي قبل أن يأتي عليَّ يوم لا ينفع فيه الندم .\nالقصة مرَّ عليها قرابة 30 عاماً ، والصناديق والله لا أعلم إن كانت 4 ، أو أكثر ، أو أقل .\nأفتوني ، جزاكم الله خير الجزاء .",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.140833",
+            "text_sha256": "1fade6f866684a0a12f27a67a797fa1b5be58e2c78b3210afbe459b63c70795b",
+            "start": 26,
+            "end": 29,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.140833",
+            "text_sha256": "1fade6f866684a0a12f27a67a797fa1b5be58e2c78b3210afbe459b63c70795b",
+            "start": 282,
+            "end": 285,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.140833",
+            "text_sha256": "1fade6f866684a0a12f27a67a797fa1b5be58e2c78b3210afbe459b63c70795b",
+            "start": 566,
+            "end": 568,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.140833",
+            "text_sha256": "1fade6f866684a0a12f27a67a797fa1b5be58e2c78b3210afbe459b63c70795b",
+            "start": 812,
+            "end": 814,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.140833",
+            "text_sha256": "1fade6f866684a0a12f27a67a797fa1b5be58e2c78b3210afbe459b63c70795b",
+            "start": 827,
+            "end": 830,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.140833",
+            "text_sha256": "1fade6f866684a0a12f27a67a797fa1b5be58e2c78b3210afbe459b63c70795b",
+            "start": 1051,
+            "end": 1053,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.140833",
+            "text_sha256": "1fade6f866684a0a12f27a67a797fa1b5be58e2c78b3210afbe459b63c70795b",
+            "start": 1131,
+            "end": 1134,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.140833",
+            "text_sha256": "1fade6f866684a0a12f27a67a797fa1b5be58e2c78b3210afbe459b63c70795b",
+            "start": 1153,
+            "end": 1155,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.140833",
+            "text_sha256": "1fade6f866684a0a12f27a67a797fa1b5be58e2c78b3210afbe459b63c70795b",
+            "start": 1223,
+            "end": 1225,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.146191",
+      "text_sha256": "d87a5ab733a847ef12a704883998625de91e743db2bfdf2d12a4cbda4fb3d61c",
+      "text": "من وجد كنزاً مدفوناً في أرض فماذا يلزمه ؟ سمعت أن من وجد مالا أو كنزا مدفونا في أرض لبيت قد اشتراه ، أنه عليه التصدق بخمسه ؛ فما صحة هذا الكلام ؟",
+      "status": "candidate",
+      "tags": [],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.152192",
+      "text_sha256": "fdf50166e5c4805d9ec5f99429bf4a7172c270c64e0a18f71e68be9e7c73ff74",
+      "text": "وجوب إتلاف كتب السحر والتنجيم كان عندي صديق توفاه الله وكان عنده كتاب يحتوي على طلاسم وأمور سحرية للاطلاع فقط وعندما توفي ذهبت لتعزية أهله وأعطتني زوجته هذا الكتاب أمانة وبعد مرور عامين اتصلت بي وتريد الأمانة كتاب السحر فهل علي أن أرجعه أم أتلفه وأخاف إن أرجعته أن يعمل به احد عملاً ويلحق الضرر بالآخرين ويلحقه الذنب بالمتوفى",
+      "status": "candidate",
+      "tags": [],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.164604",
+      "text_sha256": "473f4de66acf667936a37c77f9d84ef021225ba7493b9147b5e9ca17b63771ed",
+      "text": "جاءه ضيف غير مسلم وكسر له قطعة أثاث في بيته فهل من حقه مطالبته بالضمان؟ عندي قطعه من أثاث في بيتي كسرها ضيف لي وهو من غير المسلمين ، وأنا أسكن بالولايات المتحدة الامريكية ، فهل التعويض المالي عن تلك القطعه جائز؟ وإذا كان غير جائز فهل يعني هذا أن لا آخذ التعويض سواء مَن كسرها مِن المسلمين أو غير المسلمين ؟ وإذا كان التعويض المالي عن القطعة المكسورة غير جائز فهل التعويض العيني جائز ؟ يعني : أن يذهب ويشتري ما يشابه القطعة المكسورة ويعطيني إياها ؟ .",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.164604",
+            "text_sha256": "473f4de66acf667936a37c77f9d84ef021225ba7493b9147b5e9ca17b63771ed",
+            "start": 246,
+            "end": 248,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.165409",
+      "text_sha256": "c37d8b3968c3bd0db094a4c027bcf9bd3a5e110666a6a10cec4558f66ec51bcd",
+      "text": "الإيداع في بنك إسلامي يعطي هبات للعملاء ويدعي أنه يضارب بالمال نحن طلاب مسلمون ندرس في ماليزيا، ومن يحمل مبلغ كاش قد يتعرض للسرقة لذا لجأنا إلى البنك الإسلامي الذي يوفر نظام إسلامي (حسب عنوانه) حيث يتم إيداع المبلغ في المصرف ومن ثم يسحب المودع من المبلغ ما يحتاج عن طريق مكائن الكترونية موزعة في أماكن معينة ، وعندما قدمنا إلى فتح حساب عند البنك قالوا لنا إننا نتبع نظام الوديعة في الإسلام والمبلغ الذي سوف تودعه لن تحصل على أي فائدة معه ، وبعد عدة أشهر صرنا نجد زيادات طفيفة على المبلغ وعندما سألناهم عنها قالوا أن هذه (هبه) من المصرف للمساهمين فيه وليست فائدة وأن هذه الهبة ناتجة عن مضاربة معينة يقوم بها المصرف. وبالعودة إلى موقعكم الموقر اطلعنا على مفهوم المضاربة إلا أننا لم نستطع أن نستشف جوابا كافيا لمثل حالتنا ، لذا فإننا نرجو من جنابكم الكريم أن توضحوا لنا مشروعية هذه \"الهبة\" وإن كانت محرمة أو من الربا فهل يحل لنا استخراجها من المبلغ وطرحها في أي سبيل على أن لا نعتبرها صدقه؟؟ وهل نحن مضطرون؟؟\nلطفا نرجو الجواب العاجل لأن هذا الجواب ينتظره آلاف الطلاب هنا لأننا في حرج من الأمر.\nودمتم في خدمة الإسلام والمسلمين",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.165409",
+            "text_sha256": "c37d8b3968c3bd0db094a4c027bcf9bd3a5e110666a6a10cec4558f66ec51bcd",
+            "start": 413,
+            "end": 415,
+            "quote": "لن"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "exception",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.165409",
+            "text_sha256": "c37d8b3968c3bd0db094a4c027bcf9bd3a5e110666a6a10cec4558f66ec51bcd",
+            "start": 668,
+            "end": 671,
+            "quote": "إلا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.165409",
+            "text_sha256": "c37d8b3968c3bd0db094a4c027bcf9bd3a5e110666a6a10cec4558f66ec51bcd",
+            "start": 677,
+            "end": 679,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.165409",
+            "text_sha256": "c37d8b3968c3bd0db094a4c027bcf9bd3a5e110666a6a10cec4558f66ec51bcd",
+            "start": 871,
+            "end": 873,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.170478",
+      "text_sha256": "5359302240a73ec43671808323ffbdc15323fd87a3afcf7e3c99a4bd628bd817",
+      "text": "تعاني من الوسوسة وتشك في خروج المني أو المذي أنا أعاني من الوساوس منذ فتره طويلة ولكن تخلصت منها جميعا بسبب تجاهلي لها ولكني أعاني من وسواس واحد جعلني أشعر بالصداع الدائم من كثرة التفكير فيه وهل أن صلاتي صحيحة أم لا أنا أعاني من شكك في نزول المني أو المذي مع العلم أني أعرف الفرق بينهم ولكن لا أستطيع التمييز فأنا أشك في نزول المذي بمجرد الكلام مع شخص أو عند رؤية رجل وأنا متوضئة .\nوبسبب ذلك فأنا مثارة معظم الوقت رغم أني لا أشاهد مناظر إباحية ولكني إذا تكرر أمامي مشهد ولو قبله رغم أني أمسك نفسي إني ما أحس بحاجه تحدث لي رعشه وبسببها أقوم من أمام التلفاز ولكني أخاف أن يكون نزل المنى فأنا أود معرفه هل المنى ينزل بالجماع والعادة السرية فقط أم في حالتي ينزل المني؟\nأنا أغتسل كثيرا بسبب ذلك وأعيد وضوئي كثيراً لأني خائفة أني أنزلت مذي بسبب الأفكار التي تأتي لي بمجرد الوضوء مع العلم أن الأفكار تكون دون إرادتي أمنع نفسي من التفكير بس إذا فكرت أخاف أن يكون نزل مني أرجوكم أفيدوني لأني سأموت .",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.170478",
+            "text_sha256": "5359302240a73ec43671808323ffbdc15323fd87a3afcf7e3c99a4bd628bd817",
+            "start": 213,
+            "end": 215,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.170478",
+            "text_sha256": "5359302240a73ec43671808323ffbdc15323fd87a3afcf7e3c99a4bd628bd817",
+            "start": 291,
+            "end": 293,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.170478",
+            "text_sha256": "5359302240a73ec43671808323ffbdc15323fd87a3afcf7e3c99a4bd628bd817",
+            "start": 422,
+            "end": 424,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.170478",
+            "text_sha256": "5359302240a73ec43671808323ffbdc15323fd87a3afcf7e3c99a4bd628bd817",
+            "start": 450,
+            "end": 453,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.170478",
+            "text_sha256": "5359302240a73ec43671808323ffbdc15323fd87a3afcf7e3c99a4bd628bd817",
+            "start": 833,
+            "end": 836,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.176193",
+      "text_sha256": "75ada778ea0c3fae42bd523a194ae9af4e5f66129cb0003057c70770786da8eb",
+      "text": "أعادت الطواف لوجود الشك في الحدث هذا العام قمت بفريضة الحج بحمد الله فأريد الاستفسار عن بعض المسائل بالرغم أني قرأت كثيرا عن الحج :\n1- أصابني الحيض 1 من ذي الحجة وكنت بالمدينة ، ولم أدخل الحرم ولكن أحيانا أمر مرورا من الساحات الخارجية مع زوجي دون دخول المسجد ؟ بعد ذلك ذهبت إلى ميقات آبار علي وكنت اغتسلت اتباعا للسنة في سكن المدينة ، وعند الميقات نويت العمرة ، رغم أني حائض ، وكان هذا اليوم الرابع من ذي الحجة وبقيت على إحرامي حتى اليوم السادس ، وهذا يوم طهري غالبا وأحيانا قليلة السابع ، المهم لم أتسرع وأقوم بالعمرة حتى رأيت القصة البيضاء التي اعتدت على رؤيتها عند طهري ، وبل أيضا بعد القصة البيضاء حصل جفاف كامل ، فاغتسلت وصليت العصر في السكن ، وذهبت إلى الحرم وصليت المغرب والعشاء ، وقبل العمرة جددت وضوئي ؛ بسبب ما أعانيه من شعوري الكثير برطوبة الفرج وخاصة عند التعب والمشي الكثير ، المهم طفت بالبيت وسعيت ، وذهبت أجلكم الله على الحمامات لأقصر، وبعد ذلك عند ذهابي للحمام لم يكن على ما أضعه على ملابسي الداخلية شيء ، ولكن عند وضعي منديل على (الفرج) وجدت سائل شفاف خالطته القليل من الصفرة- العفو على هذا الكلام –وهذه الصفرة أكاد أراها طول الشهر وخاصة عند المشي الكثير، واجتهادي كامرأة أن هذه المادة ربما خرجت فقد في آخر العمرة ؛ لأنها لم تكن نزلت على الداخلي بعد فهل عمرتي صحيحة .\nفي طواف الإفاضة جددت الوضوء قبل الطواف مباشرة ، ولكن كان الزحام كثير والمدافعة كثيرة ، وطفت بالطابق الأول، ومع كثرة التعب وخاصة أن مشيت من منى إلى الجمرات إلى الحرم بحمد الله ، شعرت برطوبة ولكن لا أعرف بالتحديد بأي شوط ولا أعرف إن كانت رطوبة أو وسوسة ، وأذن الظهر وصليت أثناء الطواف وأكملت الطواف ، وصليت ركعتين ولكن بما أن طواف الإفاضة ركن خشيت أن يكون وضوئي انتقض بسبب الرطوبة وذهبت إلى الحمام وكان هناك سائل أبيض مع أصفر أوبني ، جددت الوضوء وأعدت الطواف كله ، وأذن العصر وصليته ثم سعيت ، وأذن المغرب وصليته ، ومع كل المشي أتوقع أنه نزلت علي رطوبة مرة أخرى ،هل ما فعلت من إعادة الطواف صحيحة ، وهل صلواتي صحيحة بإذنه تعالى ، فقد غضب زوجي كثيرا لأني أعدت الطواف وتسببت بتأخيره ، ولا أعلم بالتحديد هذه الرطوبة متى نزلت من أجل الصلاة والذهاب إلى الحمام كل فرض يصعب كثيرا خاصة ؛لأني أودي المناسك والزحام شديد وهذا اليوم معظم أعمال الحج فيه ، أفتوني رحمكم الله .",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.176193",
+            "text_sha256": "75ada778ea0c3fae42bd523a194ae9af4e5f66129cb0003057c70770786da8eb",
+            "start": 261,
+            "end": 264,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.176193",
+            "text_sha256": "75ada778ea0c3fae42bd523a194ae9af4e5f66129cb0003057c70770786da8eb",
+            "start": 496,
+            "end": 498,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.176193",
+            "text_sha256": "75ada778ea0c3fae42bd523a194ae9af4e5f66129cb0003057c70770786da8eb",
+            "start": 584,
+            "end": 587,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.176193",
+            "text_sha256": "75ada778ea0c3fae42bd523a194ae9af4e5f66129cb0003057c70770786da8eb",
+            "start": 877,
+            "end": 879,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.176193",
+            "text_sha256": "75ada778ea0c3fae42bd523a194ae9af4e5f66129cb0003057c70770786da8eb",
+            "start": 1139,
+            "end": 1141,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.176193",
+            "text_sha256": "75ada778ea0c3fae42bd523a194ae9af4e5f66129cb0003057c70770786da8eb",
+            "start": 1163,
+            "end": 1166,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.176193",
+            "text_sha256": "75ada778ea0c3fae42bd523a194ae9af4e5f66129cb0003057c70770786da8eb",
+            "start": 1213,
+            "end": 1216,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.176193",
+            "text_sha256": "75ada778ea0c3fae42bd523a194ae9af4e5f66129cb0003057c70770786da8eb",
+            "start": 1379,
+            "end": 1381,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.179911",
+      "text_sha256": "af885272ced0807596f1a5a46d52ef09ab80ed97bada157e53a6c1945a22e01c",
+      "text": "كيف يتصرفون في المال المتصدق به على جهة تعذر إيصاله لها؟ توفي رجل مسلم في بريطانيا وترك زوجة وحيدة بدون مال ، حتى لدفنه ، فقرر الإخوة جمع بعض من المال حتى يتم الدفن ، دفن الرجل رحمه الله على نفقة بلدية المدينة ، بشرط إذا وجد عنده مال في بنك من البنوك ستؤخذ تكاليف الدفن من هذا المال .\nوفي نفس الوقت جمع الأخوة مبلغا لدفع تكاليف الدفن ، فالناس في حيرة هل يعطى المال الذي جمع إلى البلدية بالرغم من أنها تنازلت عنه لعدم تركه أي أموال؟ هل يجب إعلام المتبرعين بأن المال لم يدفع لتكاليف الدفن؟ أو يعطى المال إلى الأرملة المحتاجة؟ علما بأن المال الذي جمع كان لغرض الدفن النية التي دفعت بها الصدقات) , أو يرجع المال إلى أصحابه؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.179911",
+            "text_sha256": "af885272ced0807596f1a5a46d52ef09ab80ed97bada157e53a6c1945a22e01c",
+            "start": 212,
+            "end": 216,
+            "quote": "بشرط"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.179911",
+            "text_sha256": "af885272ced0807596f1a5a46d52ef09ab80ed97bada157e53a6c1945a22e01c",
+            "start": 217,
+            "end": 220,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.179911",
+            "text_sha256": "af885272ced0807596f1a5a46d52ef09ab80ed97bada157e53a6c1945a22e01c",
+            "start": 465,
+            "end": 467,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.187157",
+      "text_sha256": "9ac2fcd19eb140d4be5789f76007134f7daac04bdfdc216467c09b1ae64f1bec",
+      "text": "مشكلات زوجية فيها أحكام طلاق الحامل وفي طهر جامع فيه وطلاق الكناية أنا متزوجة مند 7 سنوات ، طُلقت المرة الأولى وأنا حامل ورجعت في العدة ، والمرة الثانية حدث شجار بيني وبين زوجي فترك البيت ، واتصل بالهاتف يريد ملابسه فرفضت أن أبعثها له فقال \" عليَّ اليمين الطلاق بالثلاثة إن ما بعثتِ الملابس \" وجاءت أخته وأعطيتها الملابس ، وبعد أسبوع رجعنا على اعتبار أنه ما حصل طلاق ، والآن وقبل 8 أشهر طلقني في طهر جامعني فيه ، وعند اطلاعي على الفتاوى سمعت بالطلاق بالكناية وجلست أتذكر المشاكل التي كانت تحصل بيننا ويقال فيها كنايات ، ولكن هذا منذ سنوات ولا أتذكر الكلام ولا نيته حينها ، وهو الآن يريد إرجاعي ويقول : إنه طلقني مرتين فقط ، فهل رجوعي صحيح علماً أنه لدينا طفلان وأنا يتيمة ! ولكن أخاف ؟",
+      "status": "candidate",
+      "tags": [],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.191459",
+      "text_sha256": "f199b477c832acaf852f6fc9f27d7f5dc8fdb6904fccb3b1f6ad13555abd36d8",
+      "text": "حكم لقطة الحرم المدني . أنا أعمل في إحدى الفنادق بالمدينة ، وينزل عندي زوار وحجاج كثر ، وقبل ثلاثة أيام وجد حاج مبلغا من المال ، وتم تسليمه لي بحسب طبيعة عملي في الاستقبال ؛ لأن جميع المفقودات تكون عندنا في الفندق ، وقد مرت ثلاثة أيام ولم يأت أحد يسأل عنها . هل أتصدق بها ؟ وهل لو اشتريت بها مثل عجل أو ماعز ، ووزعتها على الفقراء والأهل : هل هذا جائز أم لا ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.191459",
+            "text_sha256": "f199b477c832acaf852f6fc9f27d7f5dc8fdb6904fccb3b1f6ad13555abd36d8",
+            "start": 354,
+            "end": 356,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.196584",
+      "text_sha256": "7330dc3b64a0dbb5a1d9888e151608cfaf8eb454d6092e8226af4fd4139b2be2",
+      "text": "من أخذ أموال الناس ، ثم تاب ، فهل يجوز له أن يتصدق بتلك الأموال على أهله ؟ أنا سيدة عربية متزوجة ومقيمة في أوروبا مع زوجي وهو الذي ينفق علي ، وليس لي أي مدخول مادي .\nلدي أم ، وأب ، و٥ من الأخوة ، و ٤ من الأخوات البنات ، والكل يقيمون في البلاد العربية علما أن عائلتي فقيرة فأبي لا يعمل ، وأمي مريضة ، و ٣ من الأخوة يعملون للنفقة على العائلة رغم ذلك ، فإن تكاليف الحياة جد غالية علما أيضا أن إخوتي الذكور هم الآن في سن الزواج ولم يتزوجوا وذلك لعدم توفر الظروف المادية لذلك .\nبالنسبة لي فأنا في الماضي قد ارتكبت الكثير من المعاصي والذنوب ، وأخذت أموالا من بعض الناس ، وقد صرفت الأموال ولم أردها إلى أصحابها ، والآن الحمد لله قد تبت إلى الله ، وأريد إرجاع المال إلى أصحابه ، ومن شروط التوبة إرجاع الحقوق إلى أصحابها ، فتعذر علي إيجادهم ، وحاولت بكل الطرق ، لكن من المستحيل إيجادهم ، أو العثور عليهم .\nفالآن قدرت المبلغ وأريد إعطاءه صدقة لتبرئة ذمتي .\nفهل أستطيع إعطاء هذه الصدقة إلى أمي ?\n، علما أنها ستنفقها على البيت وعلى إخوتي الذكور والبنات ، علما بأنني لا أنفق على أبي وأمي ، لأنني لا أعمل ، وأنا ماكثة بالبيت ، وزوجي ينفق علي ، وليس لي أي مدخول كي أنفق على أبي وأمي ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.196584",
+            "text_sha256": "7330dc3b64a0dbb5a1d9888e151608cfaf8eb454d6092e8226af4fd4139b2be2",
+            "start": 277,
+            "end": 279,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.196584",
+            "text_sha256": "7330dc3b64a0dbb5a1d9888e151608cfaf8eb454d6092e8226af4fd4139b2be2",
+            "start": 954,
+            "end": 956,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.196584",
+            "text_sha256": "7330dc3b64a0dbb5a1d9888e151608cfaf8eb454d6092e8226af4fd4139b2be2",
+            "start": 983,
+            "end": 985,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.198294",
+      "text_sha256": "6ed78dbde1f41cf50edf69f6b999b88c148785aa948c4dd0e30b8701a090b13a",
+      "text": "طلبت منه زوجته الحلف على كتاب الله بأنه لو عاد للمخدرات تحرم عليه، وتشك أنه قد عاد لتعاطيها زوجي تعبني ، وحياتنا دائما على المحك ، والسبب أنه يتعاطى المخدرات ، مثل الكبتاجون ، والحشيش ، والزاناكس ، وغيرها من المسكرات والمفترات ، وفي كل مرة يتعاطى فيها تحدث مشاكل ، والأبناء يتضررون نفسياً ، وتصبح الحياة نكدا وغما ، وكالمعتاد في نهاية كل مشكلة يعدني بعدم العودة للمخدرات ، وأن ينتبه لبيته وأبنائه ، ولكن سرعان ما تعود حليمة لعادتها القديمة ، علماً بإني استخدمت معه أساليب الترغيب والترهيب ، ولكن دون جدوى .\nومن حوالي الشهر والنصف اضطررت لأن أخيره بين مزاجه والمخدرات وبين حياتنا واستمرارها ، ومن باب الترهيب : طلبت منه أن يحلف على كتاب الله بأن يترك المخدرات بجميع أنواعها ولا يعود لها تحت أي ظرف كان ، وأنه إذا عاد : أَحْرُم عليه ، وقبل أن يحلف وضحت له خطورة ما سيحلف عليه ، وما في نيتي ، فأجابني : بأن الحلف على نية المحلوف له ، وفعلاً حلف على كتاب الله بما أخبرته ، والحمد لله ، انقلبت حياتنا إلى سعادة ، حيث عاد شعور الأمان إلي من ناحيته بعد الله .\nولكن بالأمس عاد إلى البيت وكان متعاطياً الكبتاجون ، فقلت : لعل الشيطان يوسوس بي ، ولكن تصرفاته وأفعاله وشكله يؤكد لي إحساسي ، وعندما واجهته بشكوكي أنكر ولامني ، لعدم ثقتي به ، تناقشنا كثيراً ، وذكرته بالحلف ، وأني أحرم عليه ، وهو مازال مصرا على أنه على العهد ، ولكن أنا أعرفه جيداً ، فنحن متزوجان من تسع سنين ، وهو بالنسبة لي كالكتاب ، أستطيع قراءته بوضوح .\nالمهم أني حاولت تصديقه وتكذيب ظنوني ، علما بأني متأكدة ٩٩٪ ، وهو لا يزال يصر ، وينكر .\nفهل أنا أحرم عليه الآن ؟\nوإذا لم يكن كذلك ، فما كفارة حلفه ؟\nوهل الحلف بهذه الطريقة جائز ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.198294",
+            "text_sha256": "6ed78dbde1f41cf50edf69f6b999b88c148785aa948c4dd0e30b8701a090b13a",
+            "start": 708,
+            "end": 711,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.198294",
+            "text_sha256": "6ed78dbde1f41cf50edf69f6b999b88c148785aa948c4dd0e30b8701a090b13a",
+            "start": 942,
+            "end": 945,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.198294",
+            "text_sha256": "6ed78dbde1f41cf50edf69f6b999b88c148785aa948c4dd0e30b8701a090b13a",
+            "start": 1376,
+            "end": 1378,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.198294",
+            "text_sha256": "6ed78dbde1f41cf50edf69f6b999b88c148785aa948c4dd0e30b8701a090b13a",
+            "start": 1428,
+            "end": 1430,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.209303",
+      "text_sha256": "6f908f556d9c844611736792cef1eb35015f7b677f0bdf342b7bc17f6518b76b",
+      "text": "لا يجوز للملتقط أن ينتفع باللقطة قبل أن يعرفها سنة . وجدت جهاز \"أي بود\" فألصقت إعلاناً في المكان الذي وجدته فيه ، فإذا ما رآه مالكه اتصل بي، وقد مر شهران حتى الآن ولم يأت أحد ، وبحسب ما أعلم أنه ينبغي علي أن أعلن سنة كاملة .\nوالسؤال هو: هل بإمكاني استخدامه خلال مدة الإعلان إلى أن يأتي صاحبه ؟ أم الأفضل أن لا أفعل حتى ينقضي عاماً بأكمله ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.209303",
+            "text_sha256": "6f908f556d9c844611736792cef1eb35015f7b677f0bdf342b7bc17f6518b76b",
+            "start": 0,
+            "end": 2,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.209303",
+            "text_sha256": "6f908f556d9c844611736792cef1eb35015f7b677f0bdf342b7bc17f6518b76b",
+            "start": 33,
+            "end": 36,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.209303",
+            "text_sha256": "6f908f556d9c844611736792cef1eb35015f7b677f0bdf342b7bc17f6518b76b",
+            "start": 307,
+            "end": 309,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.223512",
+      "text_sha256": "f1474a3773a458c44c00bc21ba669a6df73daeef650c683913186d23135a04eb",
+      "text": "انكسر حوض جدتهم فعالجوها عند معالج شعبي فتوفيت فماذا عليهم ؟ أصاب جدتي كسر في عظم الحوض وذهبنا بها إلى المستشفى وقرروا لها عملية ولكن خفنا أن يزيدها هذا سوءا واعتقدنا أن لو أحضرنا طبيبا شعبيا لمعالجة هذه الأمور سيكون أفضل، وقد كان وأحضر معه أحزمة وأشرطة ضمادات ولفها حول الحوض ولكن بشكل شديد مما دعاها إلى الصراخ والتألم وقد كنا من حولها نهدئها ونقول لها هذا لصالحك حتى مضت ست ساعات وتوفيت وشعرنا بالذنب الشديد لما فعلناه بها وكان تقرير المستشفى حول الوفاة هبوط حاد في الدورة الدموية والتنفسية.\nقد قيل لنا أن هذا الطبيب متمرس ولم نكن نعلم عاقبة هذا الأمر وحتى يومنا هذا نحن نشعر بالذنب ونريد أن نعلم إن كان علينا دية أو صيام شهرين أو اطعام عدد معين المساكين.",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.223512",
+            "text_sha256": "f1474a3773a458c44c00bc21ba669a6df73daeef650c683913186d23135a04eb",
+            "start": 600,
+            "end": 606,
+            "quote": "إن كان"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.22830",
+      "text_sha256": "7dfe8a3242551cdec6a87223f4538fb17de4c97f354dc438c2aec3d2720b6dd2",
+      "text": "ضمان الأمانات إذا كنت مسافراً وأعطاك شخص أمانة توصلها لآخر عبارة عن مال أو شيء ما وفُقدت منك هذه الأمانة بسبب سرقة أو أمر لا تقدر عليه، فهل يجب عليك أن تعيد المبلغ أو الشيء الذي فقدته للشخص الذي حملك الأمانة ؟ أرجو التوضيح .",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.22830",
+            "text_sha256": "7dfe8a3242551cdec6a87223f4538fb17de4c97f354dc438c2aec3d2720b6dd2",
+            "start": 14,
+            "end": 17,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.22830",
+            "text_sha256": "7dfe8a3242551cdec6a87223f4538fb17de4c97f354dc438c2aec3d2720b6dd2",
+            "start": 122,
+            "end": 124,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.23424",
+      "text_sha256": "cd3563d7facd9f5ab726821760d3a01abc6b0c52226ca540cd5c71d0ace7a4e4",
+      "text": "هل يسترشد بمن يصلي بجانبه إذا شك بعدد الركعات يحدث عندما أكون مسبوقا في الصلاة أن أسهو وأنسى كم من الركعات أدركت وكم بقي لأقضي واتسائل عندما أكون متأكدا أن الأشخاص الثلاثة وربما أكثر الذي بعدي قد انتظموا في الصف معي في نفس الوقت ....وسؤالي هل من المشروع أن اقتدي بهم من ناحية الركعات المتبقية خاصة انه من الصعوبة أن يتفق عدد من الأشخاص على السهو والنسيان .؟.",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.23424",
+            "text_sha256": "cd3563d7facd9f5ab726821760d3a01abc6b0c52226ca540cd5c71d0ace7a4e4",
+            "start": 26,
+            "end": 29,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.23424",
+            "text_sha256": "cd3563d7facd9f5ab726821760d3a01abc6b0c52226ca540cd5c71d0ace7a4e4",
+            "start": 51,
+            "end": 56,
+            "quote": "عندما"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.23424",
+            "text_sha256": "cd3563d7facd9f5ab726821760d3a01abc6b0c52226ca540cd5c71d0ace7a4e4",
+            "start": 135,
+            "end": 140,
+            "quote": "عندما"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.242731",
+      "text_sha256": "674d28c32c349b1a23f2766096be0c5d18d13aca14b90c273c804250137d168f",
+      "text": "بالغت الطبيبة في حفر السن فأفسدت العصب ذهبت والدتي قبل شهرين إلى عيادة دكتورة أسنان ؛ لتقوم بعمل حشوة لأربعة أسنان لها ، أجرت لها الطبيبة حشو لأربعة أسنان في غضون نصف ساعة ، وعندما عادت والدتي للبيت ، وزال تأثير البنج بدأت تظهر مشاكل في أسنانها ، الواحد بعد الآخر ، وظلت تتردد على هذه الدكتورة لمدة ثلاثة أيام أو أكثر ، وليس هنالك أي حل ، وكلما قامت هذه الطبيبة بفحص سن لها ، أو تصحيح الأخطاء تأخذ نفس المبلغ الذي أخذته أول مرة عن كل سن عالجته ، فأصبحت أمي مدينة لها بمبلغ 10 الآف دينار ، وعندما ذهبت أمي لدكتور آخر قام بحفر الحشوة ، فوجد في كل سن ثقبا أو ثقبين ، فهل يجب على والدتي سداد دينها لهذه الطبيبة أم لا ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.242731",
+            "text_sha256": "674d28c32c349b1a23f2766096be0c5d18d13aca14b90c273c804250137d168f",
+            "start": 51,
+            "end": 54,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.242731",
+            "text_sha256": "674d28c32c349b1a23f2766096be0c5d18d13aca14b90c273c804250137d168f",
+            "start": 254,
+            "end": 257,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.242731",
+            "text_sha256": "674d28c32c349b1a23f2766096be0c5d18d13aca14b90c273c804250137d168f",
+            "start": 610,
+            "end": 612,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.252463",
+      "text_sha256": "e58d54dbacaa62939df9264f8a83fabda7213ec89b7cd2c948d8e2d4c3bfe9ac",
+      "text": "حكم رهن الوديعة في البنك لشراء سيارة بالمرابحة أريد شراء سيارة من أجل العمل عليها وزيادة الدخل الشهري . وأملك المال لشرائها ولكن إذا وضعت كل المال في ثمن السيارة خسرت رأس مالي فهل يجوز وضع رأس المال في البنك وأخذ قرض من البنك بضمان رأس المال مع شرط أن يقوم البنك بشراء السيارة من معرض السيارات وأقوم أنا بشراء السيارة ممن البنك بأقساط معلومة لمدة معلومة.\nمع العلم أن في هذه الحالة تكون ثمن السيارة أقل من سعرها عند الدفع كاش. مثال : إذا كانت السيارة بمبلغ 100000 في المعرض وقمت بإيداع هذا المبلغ في البنك (حتي يضمن البنك ماله) وقمت بتقسيط السيارة علي ثلاث سنوات فإن سعر السيارة بعد سداد جميع الأقساط وخصم الفائدة ونسبة الأرباح علي رأس المال سيكون 96000 . فهل هذا حلال أم حرام",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.252463",
+            "text_sha256": "e58d54dbacaa62939df9264f8a83fabda7213ec89b7cd2c948d8e2d4c3bfe9ac",
+            "start": 129,
+            "end": 132,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.252463",
+            "text_sha256": "e58d54dbacaa62939df9264f8a83fabda7213ec89b7cd2c948d8e2d4c3bfe9ac",
+            "start": 433,
+            "end": 436,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.252463",
+            "text_sha256": "e58d54dbacaa62939df9264f8a83fabda7213ec89b7cd2c948d8e2d4c3bfe9ac",
+            "start": 578,
+            "end": 581,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.253293",
+      "text_sha256": "2bf8dc9f0e7f5586f7906fbff1046b00d95fdfbc9d3b59e0bea6ed762d2ec091",
+      "text": "اشترى آلة كبيرة وتركها ، فماذا يصنع بها البائع ؟ منذ 4سنوات بعت آلة بقيمة 15000 دينار جزائري ، لشخص لا أعرفه في السوق ، فأعطاني مبلغ 13000دج ، وبقيت 2000دج ، ثم قال لي : على الأكثر أشهر وآتي إليك بالنقود ، وآخذ الآلة ، إلا إنني ومنذ ذلك اليوم وأنا اتصل به فيقول لي : الأسبوع القادم وعد سوف آخذها، إلا إنه يخلف الوعد ، مع العلم أن مبلغها اليوم في السوق أقل من هذا المبلغ ، أنا تركتها عند مستودع لوالدي ، ووالدي يحرجني كونه محتاج لمكانها ، فهي تأخذ مساحة كبيرة .\nالسؤال : هو ماذا أفعل في ما يرضي الله ؟ هل أبيعها وبيعها يتطلب نقل ووقوف في سوق وهو يكلفني على الأقل 1000دج ؟\nوإذا بعتها سوف يكون الثمن أقل ، فما أفعل به هل أخذه إليه وأزيده الباقي من جيبي ؟\nأم ما هو الحل ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.253293",
+            "text_sha256": "2bf8dc9f0e7f5586f7906fbff1046b00d95fdfbc9d3b59e0bea6ed762d2ec091",
+            "start": 100,
+            "end": 102,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "exception",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.253293",
+            "text_sha256": "2bf8dc9f0e7f5586f7906fbff1046b00d95fdfbc9d3b59e0bea6ed762d2ec091",
+            "start": 219,
+            "end": 222,
+            "quote": "إلا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "exception",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.253293",
+            "text_sha256": "2bf8dc9f0e7f5586f7906fbff1046b00d95fdfbc9d3b59e0bea6ed762d2ec091",
+            "start": 297,
+            "end": 300,
+            "quote": "إلا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.260724",
+      "text_sha256": "3784786d4454d360f414be6daff438ecdda9e08d8f64149536b690ca441ddcf3",
+      "text": "تغيب عن العمل انتظارا لنقله والإدارة تطالبه بإحضار إجازة مرضية موظف يعمل في سلك التعليم الإبتدائي في بلاد المغرب العربي تم تعيينه منذ بضع سنين في محافظة تبعد عن محافظته الأصلية حوالي ٣٠٠ كم ، وكان مع حلول كل عودة مدرسية ينتقل صحبة عائلته إلى المحافظة التي عُيِّن فيها ويستأجر منزلا ، ونظرا لظروفه الصحية والعائلية فقد تقدم هذا الأخير بطلب نقله إلى المصالح المختصة منذ بداية تعيينه ، وقد وفق هذه السنة لإيجاد من تعاني من ظروف إجتماعية هي الأخرى ، والتي ترغب في تبادل الأماكن معه ، فتقدموا بطلبهم سوية إلى المصالح المختصة ، والتي وعدتهم بأن النقل سيتم في غضون بضعة أيام نظرا لاتفاق الطرفين مسبقا ، وبناء على ذلك فقد طلب هذا الموظف من الإدارة خصم أجر البضعة أيام التي لن يباشر فيها العمل في انتظار تفعيل نقله ؛ وذلك لأنه لا يسعه أن ينتقل صحبة أهله من محافظته إلى المحافظة التي سبق ذكرها ، واستئجار منزل لبضعة أيام فقط نظرا للمشقة أولا ، ولتعذر كراء مسكن لمدة زمنية قصيرة ثانيا ، لكن مع الأسف ظلت الإدارة تسوف النقل ، وفي كل مرة تحدد مهلة يومين أو ثلاثة لإنهاء كافة الاجراءات ، وقد تواصلت هذه الوعود إلى أن تجاوز الأمر الشهر، وقد أصر المعني بالأمر في بادئ الأمر على عدم أخذ الأجر ، وعدم أخذ أجازة مرضية ، لكن الإدارة هددته بالطرد ، قائلة : إنها رغم علمها أن الاجازة ليست مرضية إلا أنه يجب عليه تبرير غيابه ، وإلا سيتم فصله فوجد نفسه مضطرا للرضوخ ، وبعد هذا الشرح الذي أرجو أن يكون شافيا ، أطلب ردا على هذين السؤالين: ١- ماحكم أخذه للإجازة المرضية ؟ ٢- علما وأن الادارة لم تنقص أجر الأيام التي لم يباشر فيها العمل حتى الآن ، وعلما أن هذا الوضع قد يطول ؛ لأنه ولحد الساعة التي أراسلكم فيها لا تزال الإدارة تسوف وتماطل ، فما حكم الأجر الذي دفع له مقابل الأيام التي لم يباشر فيها العمل ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.260724",
+            "text_sha256": "3784786d4454d360f414be6daff438ecdda9e08d8f64149536b690ca441ddcf3",
+            "start": 665,
+            "end": 667,
+            "quote": "لن"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.260724",
+            "text_sha256": "3784786d4454d360f414be6daff438ecdda9e08d8f64149536b690ca441ddcf3",
+            "start": 718,
+            "end": 720,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "exception",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.260724",
+            "text_sha256": "3784786d4454d360f414be6daff438ecdda9e08d8f64149536b690ca441ddcf3",
+            "start": 1173,
+            "end": 1176,
+            "quote": "إلا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.260724",
+            "text_sha256": "3784786d4454d360f414be6daff438ecdda9e08d8f64149536b690ca441ddcf3",
+            "start": 1365,
+            "end": 1367,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.260724",
+            "text_sha256": "3784786d4454d360f414be6daff438ecdda9e08d8f64149536b690ca441ddcf3",
+            "start": 1389,
+            "end": 1391,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.260724",
+            "text_sha256": "3784786d4454d360f414be6daff438ecdda9e08d8f64149536b690ca441ddcf3",
+            "start": 1484,
+            "end": 1486,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.260724",
+            "text_sha256": "3784786d4454d360f414be6daff438ecdda9e08d8f64149536b690ca441ddcf3",
+            "start": 1558,
+            "end": 1560,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.266167",
+      "text_sha256": "e072dadf12ded5f4d36d837790aa61d2ccd6057d2b79e20ba81edbd887f566b9",
+      "text": "أعطاه صاحب العمل سيارة ليستعملها فجرى له حادث فمن الذي يتحمل ضمان ما تلف من سيارة الغير ؟ أعمل لدى مؤسسة ، وأنا على كفالتهم ، وأعطوني سيارة لأقضي بها متطلباتي الشخصية ، مثل الذهاب للمسجد ، والسوق ، وصار معي حادث بتلك السيارة ، فمن الذي يجب عليه الدفع للطرف الآخر المتضرر ، أنا أم المؤسسة ؟",
+      "status": "candidate",
+      "tags": [],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.272160",
+      "text_sha256": "3423e87a21bbc3793c28fe1ef3ef7f910ee1045b4d5536a937e98fdf36b76b99",
+      "text": "حكم أخذ التعويض الذي يقدره شيخ معارض السيارات صدم أحدهم سيارتي المتوقفة وأدى إلى إتلاف جزء كبير منها ، وحضر المرور إلى موقع الحادث وكان نسبة الخطأ على المتسبب 100% بسبب سرعته الزائدة ، وعند مراجعة المرور قامو بتوجيهي لمكتب تقدير السيارات وبعد اطلاعهم عليها أفادوا في تقريرهم بأن إصلاحها مكلف وتم توجيهي لشيخ معارض السيارات فتم تقييمها من قبل ثلاثة معارض قبل الحادث بـ 35000 ريال وبعد الحادث 14000 ريال ، والفرق في ذلك 21000 ريال وتم تسليم هذه الأوراق للمرور ، وفي هذه الحال سيتم إلزم المتسبب بدفع هذا المبلغ لي . وقد تواصل معي المتسبب بالحادث وعرض علي إصلاح السيارة ورفضت لأنها لن تعود كما كانت وقيمتها السوقية سوف تهبط بسبب هذا الحادث . وقررت بيعها للتشليح . السؤال : ما حكم أخذ مبلغ التعويض الذي قدره شيخ المعارض وهو 21000 ريال ، مع العلم أنني قد اشتريت هذه السيارة قبل عام ونصف تقريباً بمبلغ 26000 ريال وتكلفت عليها إصلاحات أساسية وليست استهلاكية ، ولا أدري كم القيمة السوقية للسيارة لو بعتها للتشليح",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.272160",
+            "text_sha256": "3423e87a21bbc3793c28fe1ef3ef7f910ee1045b4d5536a937e98fdf36b76b99",
+            "start": 338,
+            "end": 341,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.272160",
+            "text_sha256": "3423e87a21bbc3793c28fe1ef3ef7f910ee1045b4d5536a937e98fdf36b76b99",
+            "start": 354,
+            "end": 357,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.272160",
+            "text_sha256": "3423e87a21bbc3793c28fe1ef3ef7f910ee1045b4d5536a937e98fdf36b76b99",
+            "start": 578,
+            "end": 580,
+            "quote": "لن"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.272160",
+            "text_sha256": "3423e87a21bbc3793c28fe1ef3ef7f910ee1045b4d5536a937e98fdf36b76b99",
+            "start": 768,
+            "end": 771,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.286486",
+      "text_sha256": "611fb4a853823ba470ec4567dbd8252635cc1a1ba9bbe67b37ac860c603a79e3",
+      "text": "ما حكم أخذ الغرامة التي فرضتها المحكمة على شركة التأمين بسبب تأخرها في دفع التعويض عن حادث السير؟ تعرضت لحادث سيارة قبل 9 سنوات، وقد رفعت قضية تعويض على شركة تأمين السائق الذي تسبب بالحادث، وبسبب القوانين والأنظمة المعمول بها في الهند فقد طالب المحامي الذي وكلته في هذه القضية أن تدفع شركة التأمين بالإضافة إلى مبلغ التعويض فائدة قدرها 7.5% من مبلغ التعويض الذي تحكم به المحكمة، وقد طلبت من المحامي التنازل عن هذه الفائدة بمجرد ما علمت بذلك، ولكنه برر فعله بأنّه لا بد من ذلك في القانون، وقد حكمت المحكمة لي بمبلغ 9.84 لاخ (لاخ=100,000) هندي، مع أن مبلغ التعويض المطلوب كان 10 كرور (كرور=10,000,000) هندي، وهو مبلغ أقل بكثير من المبلغ الذي تكبدته عائلتي، ولكن مع الفائدة التي ستتراكم عن كل شهر خلال السنوات الثمانية الماضية فإنّ المبلغ الذي سأحصل عليه سيكون 15.15 لاخ، ويجب علي إعطاء المحامي 15% من مبلغ التعويض لقاء أتعابه.\nسؤالي هو: هل يجوز لي الحصول على مبلغ التعويض مع الفائدة؟ وإن كان الحكم عدم الجواز، فهل يجوز لي إعطاء مبلغ الفائدة لبعض أقاربي الذين ساعدوني، ثم يقوموا بإرجاع المبلغ لي كهدية؛ حتى تصبح حلالًا لي؟ وهل يجوز لي حساب نسبة المحامي من المبلغ الأصلي دون الفائدة حتى لا ترتفع قيمة أتعابه؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.286486",
+            "text_sha256": "611fb4a853823ba470ec4567dbd8252635cc1a1ba9bbe67b37ac860c603a79e3",
+            "start": 116,
+            "end": 119,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.286486",
+            "text_sha256": "611fb4a853823ba470ec4567dbd8252635cc1a1ba9bbe67b37ac860c603a79e3",
+            "start": 463,
+            "end": 465,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.286486",
+            "text_sha256": "611fb4a853823ba470ec4567dbd8252635cc1a1ba9bbe67b37ac860c603a79e3",
+            "start": 1083,
+            "end": 1085,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.287215",
+      "text_sha256": "5914449f88f1f2a815e30bfd9e3037138d7333ef61c6f26dbf020c579805ddd1",
+      "text": "وهب لأولاده شققا في مرض موته فهل تدخل في التركة؟ وإذا تعذر الوصول إلى زوجته الثانية فما يفعل بنصيبها؟ تزوج زوجي عن طريق الانترنت من امرأة اجنبية لمدة عام، و كان مريضا، ثم زاد عليه المرض، خلال شهر قرر خلاله طلاقها، ومات قبل ذلك، خلال هذه المدة منح أبنائي الشقق التي في بيتنا، وكان في كامل قواه العقلية، ولم يضغط عليه أحد، ولكنه لم يتمكن من إتمام الاجراءات الرسمية قبل وفاته، وهذه الزوجة لم نكن نعرف عنها أية معلومات إلا رقم جوالها، واعتراف زوجي، بعد وفاة زوجي اتصل بها ابني الاكبر، وطلب منها إرسال أي إثبات لزواجها، فلم يكون معها أي إثبات، فقد تزوجها عرفيا، ومع ذلك أرسلنا لها نصيبها في الميراث من النقود، و تبقى نصيبها في العقارات.\nفسؤالي هنا:\nما نصيبها في بيتنا المكون من شقق بعدد أولادي، وقد وهبها لهم والدهم، ولم يتبقَ غير بدروم، وحديقة، وسطح البيت، فكيف يقسم؟ وهل لها نصيب في المعاش، ومبلغ الدفن الذي من وظيفته، وكان باسمي وأولادي؟ و في حال إننا لم نصل إليها، حيث لا ترد على الجوال، فكيف نوصل لها حقها؟ و في حال وفاتها لا نعرف عنها شيئا؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.287215",
+            "text_sha256": "5914449f88f1f2a815e30bfd9e3037138d7333ef61c6f26dbf020c579805ddd1",
+            "start": 219,
+            "end": 222,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.287215",
+            "text_sha256": "5914449f88f1f2a815e30bfd9e3037138d7333ef61c6f26dbf020c579805ddd1",
+            "start": 327,
+            "end": 329,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.287215",
+            "text_sha256": "5914449f88f1f2a815e30bfd9e3037138d7333ef61c6f26dbf020c579805ddd1",
+            "start": 363,
+            "end": 366,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.287215",
+            "text_sha256": "5914449f88f1f2a815e30bfd9e3037138d7333ef61c6f26dbf020c579805ddd1",
+            "start": 386,
+            "end": 388,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "exception",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.287215",
+            "text_sha256": "5914449f88f1f2a815e30bfd9e3037138d7333ef61c6f26dbf020c579805ddd1",
+            "start": 415,
+            "end": 418,
+            "quote": "إلا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.287215",
+            "text_sha256": "5914449f88f1f2a815e30bfd9e3037138d7333ef61c6f26dbf020c579805ddd1",
+            "start": 445,
+            "end": 448,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.287215",
+            "text_sha256": "5914449f88f1f2a815e30bfd9e3037138d7333ef61c6f26dbf020c579805ddd1",
+            "start": 850,
+            "end": 852,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.287215",
+            "text_sha256": "5914449f88f1f2a815e30bfd9e3037138d7333ef61c6f26dbf020c579805ddd1",
+            "start": 868,
+            "end": 870,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.287215",
+            "text_sha256": "5914449f88f1f2a815e30bfd9e3037138d7333ef61c6f26dbf020c579805ddd1",
+            "start": 923,
+            "end": 925,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.304828",
+      "text_sha256": "978692ff6c7fcf1ee6b52cba66a76509314f7b3055afd3a653eb8ed0d21af2a2",
+      "text": "سرقت أشخاصا لا تعرفهم ثم تابت، هل يشرع أن تتصدق عنهم؟ اعتدت السرقة منذ فترة طويلة ، لكن من فضل الله ورحمته بي تبت توبة نصوحا منذ حوالي عشر سنوات ، وبدأت أتقرب إلى الله بالعبادات والصدقات عن نفسي ، ولم أكن أعلم أن من شروط التوبة من السرقة رد المسروقات ، أو التحلل من صاحبها لإبراء الذمة ، فهو ذنب لا يترك ، لكن للأسف كل ما سرقته تم بيعه ، وإنفاق نقوده من فترة طويلة ، و منه خاتمان ذهب سعرهم حاليا حوالي ٣٠٠٠جنيه ، ووقتها كان سعرهم أقل بكثير من حوالي ١٦ سنة ، ونقود وخلافه بحوالي ٢٠٠٠ جنيه ، كان لدي لاب توب اشتريته من مالي الخاص الحلال منذ عام ، وقيمته المادية وهو مستعمل ٤٢٥٠ جنيه ، وعندما علمت بشروط التوبة بادرت بالأمس بالتبرع به لصالح جمعية خيرية تقبل التبرعات العينية المستعملة بنية الصدقة الجارية عن من سرقت منهم ، فهل يجوز التبرع العيني بنية التصدق بقيمته المادية عن الأشخاص الذين تمت السرقة منهم ؛ لأني لا أعرفهم ، ويتعذر الوصول للآخرين منهم ؟ وإذا لا يجوز فما العمل ؟ وماذا عن الصدقات السابقة من مالي الحلال بعد التوبة هل يتقبلها الله مني ؟ وهل يمكنني تغيير نيتي فيها لتكون جميعها عن من سرقت منهم تحريا مني لسداد كل ما غفلت عن قيمته ؟ وهل يحسب ما وجب رده بقيمة الذهب وقت السرقة حوالي ١٥٠٠ أم بقيمة وزنه بسعر اليوم ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.304828",
+            "text_sha256": "978692ff6c7fcf1ee6b52cba66a76509314f7b3055afd3a653eb8ed0d21af2a2",
+            "start": 12,
+            "end": 14,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.304828",
+            "text_sha256": "978692ff6c7fcf1ee6b52cba66a76509314f7b3055afd3a653eb8ed0d21af2a2",
+            "start": 296,
+            "end": 298,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.304828",
+            "text_sha256": "978692ff6c7fcf1ee6b52cba66a76509314f7b3055afd3a653eb8ed0d21af2a2",
+            "start": 810,
+            "end": 812,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.304828",
+            "text_sha256": "978692ff6c7fcf1ee6b52cba66a76509314f7b3055afd3a653eb8ed0d21af2a2",
+            "start": 856,
+            "end": 858,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.304828",
+            "text_sha256": "978692ff6c7fcf1ee6b52cba66a76509314f7b3055afd3a653eb8ed0d21af2a2",
+            "start": 916,
+            "end": 919,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.305083",
+      "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+      "text": "خافت المرأة أن يصيبها بسيارة فرجعت عن طريقها فأصابتها سيارة أخرى فهل يضمن ؟ كنت أقود سيارة عندما رأتني امرأة عجوز تحاول عبور الطريق ، وخافت من أنني ربما قد أصدمها ، ثم رجعت إلى الخلف وهي لا تعرف أنّ هناك سيارة أخرى قريبة منها ، ذلك السائق لمسها قليلاً ، وسقطت على الأرض ، خرجت أنا والسائق من سيارتنا لفحصها ، أدركنا أن كوعها فقط قد أصيب.\nسؤالي الآن هو:\nنظرًا لأننا لا نعرف في أيّ ظرف أو حالة هي ، ولا نعرف أين تعيش ، هل يجب علينا أن نفترض أنها قد ماتت ، وعلينا أن نصوم مدّة شهرين ، على الرغم من أننا لا نعتقد أن لمس السائق لها بسيارته من الصعوبة أن يتسبب في موتها؟\nوإذا كان الصيام إلزامياً علينا ، ثمّ بيني وبين السائق كم يجب أن أصوم ، لكن من فضلك يجب أن تلاحظ بأنني لم ألمسها بسيارتي ، أنا فقط سبب رجوعها للوراء .",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.305083",
+            "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+            "start": 91,
+            "end": 96,
+            "quote": "عندما"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.305083",
+            "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+            "start": 187,
+            "end": 189,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.305083",
+            "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+            "start": 365,
+            "end": 367,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.305083",
+            "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+            "start": 500,
+            "end": 502,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.305083",
+            "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+            "start": 667,
+            "end": 669,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.315435",
+      "text_sha256": "9928165c48b48865207249606c27c5c6d5ad97724cad17bea1fd57891e0b5ad7",
+      "text": "عبر رجل الطريق أمامه فجأة فأصابه بطرف سيارته ومات بعد ساعات فهل يضمنه؟ كنت أقود سيارتي في طريق سريع، وعرضه يتسع ل 5 سيارات متجاورة، وكان على يمين سيارة ميكروباص تحجب عني رؤية القادم من الناحية اليمنى تماما، وفجأة ظهر أمامي شخص كان يعبر الطريق قادما من الجهه اليمنى، ولا يوجد مكان عبور مشاة في هذا المكان، ومحجوب عني تماماً بسبب الميكروباص، والذي هو أيضا لم يعطني أي تحذير عن عبور هذا الشخص، والذي نجح في تفادي الميكروباص، وظهر أمامي، ولا يفصلني عنه سوى متر واحد فقط أو 2 متر على الأكثر، وأيضاً هذا الشخص بالفعل تخطى سيارتي من الإمام، إلا أن ساقه اصطدمت بآخر طرف الجانب الأيسر من سيارتي، ثم اصطدم بمراية السيارة اليسرى، والجانب الأمامي الأيسر من سيارتي، وأتلف الجانب الأمامي الأيسر من سيارتي، وأسقط المراية كاملة، كانت إصاباته في الساق اليسرى، والجانب الأيسر، والرأس، وظل جالسا على الأرض، وواعيا، وتحدثت إليه، وأجابني عن مكان سكنه، وعمله، واتصلنا بمكان عمله، وأبلغناهم، وانتظرنا حوالي نصف ساعة حتى أتت سيارة الإسعاف، وتم نقله إلى المستشفى، والتي لم تقم بأي شيء، وأبلغونا أنه يحتاج عملية، ولكن ستجرى له بعد يومين، قمنا بنقله بسيارة الإسعاف إلى مستشفى خاص، إلا إنه توفي فيها بعد حوالي 4 ساعات.\nفهل هذا قتل خطأ تجب له دية وكفارة؟ وهل على أي إثم أو ذنب في هذا الأمر؟\nعلما بأنني كنت أسير بنفس السرعة التي تسير بها معظم السيارات على هذا الطريق، وسيارتي ليس بها أي أعطال، والفرامل وأجهزة التعليق وعجلة القيادة في حالة ممتازة.\nأرجو الإفادة؛ لأن الألم يعتصرني، رغم أنني في عداد المجني عليهم، ولست الجاني، فقد وضعني المرحوم بإذن الله تعالى، في وضع لا يمكن الفكاك منه، أو حتى التصرف فيه.",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.315435",
+            "text_sha256": "9928165c48b48865207249606c27c5c6d5ad97724cad17bea1fd57891e0b5ad7",
+            "start": 50,
+            "end": 53,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.315435",
+            "text_sha256": "9928165c48b48865207249606c27c5c6d5ad97724cad17bea1fd57891e0b5ad7",
+            "start": 354,
+            "end": 356,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "exception",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.315435",
+            "text_sha256": "9928165c48b48865207249606c27c5c6d5ad97724cad17bea1fd57891e0b5ad7",
+            "start": 534,
+            "end": 537,
+            "quote": "إلا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.315435",
+            "text_sha256": "9928165c48b48865207249606c27c5c6d5ad97724cad17bea1fd57891e0b5ad7",
+            "start": 945,
+            "end": 947,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.315435",
+            "text_sha256": "9928165c48b48865207249606c27c5c6d5ad97724cad17bea1fd57891e0b5ad7",
+            "start": 1001,
+            "end": 1004,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "exception",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.315435",
+            "text_sha256": "9928165c48b48865207249606c27c5c6d5ad97724cad17bea1fd57891e0b5ad7",
+            "start": 1054,
+            "end": 1057,
+            "quote": "إلا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.315435",
+            "text_sha256": "9928165c48b48865207249606c27c5c6d5ad97724cad17bea1fd57891e0b5ad7",
+            "start": 1072,
+            "end": 1075,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.315435",
+            "text_sha256": "9928165c48b48865207249606c27c5c6d5ad97724cad17bea1fd57891e0b5ad7",
+            "start": 1246,
+            "end": 1249,
+            "quote": "ليس"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.315435",
+            "text_sha256": "9928165c48b48865207249606c27c5c6d5ad97724cad17bea1fd57891e0b5ad7",
+            "start": 1437,
+            "end": 1439,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.317604",
+      "text_sha256": "90d9049618869676d20de980751ac51fa1b1ee8fe81dadb3a4a2b3d8ac190e55",
+      "text": "خفف السرعة فاتجه الذي وراءه إلى اليمين فانقلبت سيارة خلفهما فهل يضمن؟ في سنة ٢٠١٠ كنت راجعا من مقر عملي في الطريق السريع، وأتذكر أنه لا توجد سيارات بجانبي، و كنت في المسار الأوسط ، حيث إن الطريق السريع هذا مكون من ثلاثة مسارات، وجاءت سيارة خلفي، واقترب مني كثيرا، مما أدى إلى إنزعاجي حيث إن الطريق فارغ، وأنا في المسار الأوسط، فلماذا يلتصق خلفي، فأتذكر إن لم تخوني الذاكرة أنني خففت من سرعتي ليتضايق، ويبتعد عني، ثم اقترب مني أكثر، ثم بسرعة قام بالذهاب للمسار الأول السريع، ثم سمعت صوت فرامل وإطارات، حيث أتوقع أن سائقا كان خلفنا في المسار الأول، وتفاجأ بانتقال السيارة التي خلفي، ثم انقلبت تلك السيارة، توقفت أنا وذلك السائق الذي كان يعاندني، وتوقفت سيارات للمساعدة، ثم تحدث هذا الشخص لي حيث إن سيارتنا قد احتكوا مع بعضهم من الجانب؛ لأنه لما صار بمحاذاتي في المسار الأول تقريبا سمعنا صوت الفرامل، وانحرفت أنا أو هو باتجاه بعضنا بسبب ارتباكنا من صوت الفرامل للسيارة التي انقلبت، المهم ذهب ذلك الشخص، ولا أتذكر لماذا لم آخذ رقم لوحة سيارته، ولماذا لم أشرح الحادث، أتوقع أنني لم أفعل ذلك؛ لأنني كنت خائفا من إجراءات الشرطة، وإنه حتى وإن كان الغلط علي قليلا، فخفت أيضا من انتقام صاحب السيارة؛ لأنني أبلغت عليه، والخلاصة إنني لا أدري كيف تجاهلت الموضوع كل هذه السنوات، ونسيته، والآن وجداني وضميري يؤنبني كثيرا، ولا أدري هل أنا ضامن للحادث؟ ولأعلم هل هناك وفيات، وهل علي إثم؛ لأنني لم آخذ رقم لوحة سيارة الشخص الأخر؟ و ماذا أفعل حيث إن الأشخاص مجهولون لدي؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.317604",
+            "text_sha256": "90d9049618869676d20de980751ac51fa1b1ee8fe81dadb3a4a2b3d8ac190e55",
+            "start": 133,
+            "end": 135,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.317604",
+            "text_sha256": "90d9049618869676d20de980751ac51fa1b1ee8fe81dadb3a4a2b3d8ac190e55",
+            "start": 356,
+            "end": 358,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.317604",
+            "text_sha256": "90d9049618869676d20de980751ac51fa1b1ee8fe81dadb3a4a2b3d8ac190e55",
+            "start": 916,
+            "end": 918,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.317604",
+            "text_sha256": "90d9049618869676d20de980751ac51fa1b1ee8fe81dadb3a4a2b3d8ac190e55",
+            "start": 947,
+            "end": 949,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.317604",
+            "text_sha256": "90d9049618869676d20de980751ac51fa1b1ee8fe81dadb3a4a2b3d8ac190e55",
+            "start": 974,
+            "end": 976,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.317604",
+            "text_sha256": "90d9049618869676d20de980751ac51fa1b1ee8fe81dadb3a4a2b3d8ac190e55",
+            "start": 1122,
+            "end": 1124,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.317604",
+            "text_sha256": "90d9049618869676d20de980751ac51fa1b1ee8fe81dadb3a4a2b3d8ac190e55",
+            "start": 1277,
+            "end": 1279,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.328808",
+      "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+      "text": "حكم التعويض من شركة الطيران عن حقيبة انكسرت أعطيت صديقي حقيبة سفر خاصة لي للسفر بها، وعند عودته، تم كسر الحقيبة من قبل خطوط الطيران، فطلب صديقي تعويضاً بقيمة ٣٠٠ ريال سعودي، ومع أني لا أعلم بكم قيمة حقيبة عند شرائي لها، ولا أعلم هل هي تستحق هذه القيمة، هل كان أكثر أو أقل ، فما حكم أخذي لها المبلغ ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.328808",
+            "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+            "start": 115,
+            "end": 118,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.328808",
+            "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+            "start": 182,
+            "end": 184,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.344230",
+      "text_sha256": "90af341642beb4c0323259af1aaa58f1485702045554c6b1f531cc2e529e1bf5",
+      "text": "طلب منه أن يقود السيارة فارتكب حادثا فهل يشتركان في الضمان أتاني أخ أسكن معه، فقال لي : أحضرت سيارة من مكان عملي لنذهب ونرجع بصاحبي، فوافقت، وفعلا سرنا، وأخذنا صاحبه، وأنا التزم سرعات الطريق، وهوو يدلني على الطريقة عبر خريطة جوجل، وفي آخر المشوار أخطأ بالطريق، فأدخلنا بطريق فرعي، وفي نهاية الطريق فتحة، وكان هناك سيارة أنا أراها تريد الدخول، ولكن قدرت أني سأسبقه، وطبيعي أنه يراني مثلما أراه، وفعلا عبرت الفتحة، فاصطدم بنا في وسط سيارتنا تماما، فنزلنا من السيارة، وقلنا اتصلوا بالشرطة، فقالوا لي: لا تتصل بالشرطة؛ لأن الشرطة إذا أتت ستخالفك أنت، لأن أفضلية المرور له، وحتى لو صدمك هو، فقلت ما العمل، قالوا: اذهب وتكلم مع الرجل، وقل له: نحن نصلح لك سيارتك، لا داعي للشرطة، وهنا كلهم يتكلمون بصيغة الجماعة، والسيارة التي نقودها مأمنة ضد الغير، يعني لو أتت الشرطة كانت خالفتنا ب400 دينار، والتأمين أصلح سيارة الرجل، ونحن صلحنا سيارة عمل صديقي، وكنت محافظا على ظن إننا كلنا شركاء في الضر الواقع، فقلت لهم نعم كما ترغبون، وفي اليوم الثاني أصلحنا سيارة الرجل، وكلفت 900 دينار، يعني أكثر من المخالفة ب 500 دينار، وأصلح صديقي سيارة عمله ب1050 دينار، وعندما أتيت لأطالبه بنصف التكلفة فقال لي : لن أتحمل دينارا واحدا، فأنت كنت تقود السيارة، وأنا لا علاقة لي بشيء أبدا، مع إني يشهد الله تعالى ما كنت أقود السيارة بتهور، وراعيتها، واتقيت الله تعالى بالقيادة، والله تعالى يشهد على ذلك، وهو يشهد على ذلك أيضا، وهو قائم على كل الموضوع، وتنكر لي أيما تنكر، وطال الجدال، ولم يرضَ أن يتحمل دينارا، قلت له: لماذا لم تعلمني بذلك قبل الصعود بالسيارة، قسما بالله ما كنت قبلت قيادتها، وأنا لم أرضَ أن أدفع أكثر من النصف.\nفسؤالي :\nهل يجب علي تحمل تكلفة تصليح السيارة كاملة؟ وهل أضمن السيارة بدون علمي، مع العلم إن يرفض التصالح معي على أي مبلغ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.344230",
+            "text_sha256": "90af341642beb4c0323259af1aaa58f1485702045554c6b1f531cc2e529e1bf5",
+            "start": 498,
+            "end": 500,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.344230",
+            "text_sha256": "90af341642beb4c0323259af1aaa58f1485702045554c6b1f531cc2e529e1bf5",
+            "start": 526,
+            "end": 529,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.344230",
+            "text_sha256": "90af341642beb4c0323259af1aaa58f1485702045554c6b1f531cc2e529e1bf5",
+            "start": 657,
+            "end": 659,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.344230",
+            "text_sha256": "90af341642beb4c0323259af1aaa58f1485702045554c6b1f531cc2e529e1bf5",
+            "start": 1086,
+            "end": 1088,
+            "quote": "لن"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.344230",
+            "text_sha256": "90af341642beb4c0323259af1aaa58f1485702045554c6b1f531cc2e529e1bf5",
+            "start": 1137,
+            "end": 1139,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.344230",
+            "text_sha256": "90af341642beb4c0323259af1aaa58f1485702045554c6b1f531cc2e529e1bf5",
+            "start": 1395,
+            "end": 1397,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.344230",
+            "text_sha256": "90af341642beb4c0323259af1aaa58f1485702045554c6b1f531cc2e529e1bf5",
+            "start": 1410,
+            "end": 1413,
+            "quote": "قبل"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.344230",
+            "text_sha256": "90af341642beb4c0323259af1aaa58f1485702045554c6b1f531cc2e529e1bf5",
+            "start": 1468,
+            "end": 1470,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.345284",
+      "text_sha256": "82796a817eb9066622b4633b5cbe4a978e8c1b9c8376138f192272b25922ab3f",
+      "text": "هل يضمن سائق السيارة إذا صدم دابة؟ ضربت دابة بالسيارة، وماتت، هل أدفع لصاحبها علما بأنه يترك الدابة في الطريق؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.345284",
+            "text_sha256": "82796a817eb9066622b4633b5cbe4a978e8c1b9c8376138f192272b25922ab3f",
+            "start": 21,
+            "end": 24,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.348122",
+      "text_sha256": "8ea605ed2d8991efe74b4675ac156898e18f1678452841b4edc8ac0ce5e14980",
+      "text": "وضعت عربة الأطفال فتعثرت فيها جدتها وانكسر فخذها ثم ماتت بعد أسبوع فهل عليها شيء؟ وضعت عربة الأطفال الخاصة بابنتي بعد ضمها بجوار المائدة في مكان لا يأتيه أهل البيت كثيرا، كما أفعل عند زيارة أهلي من كل عام خلال إجازتي من إقامتي بالخارج، ولكن لم ألحظ أن جزءا من العربة بطول الكف أو أقل كان بارزا قليلا، وفي أحد الليالي نمت، ونسيت أن أطفئ الإضاءة عند المائدة، فقامت جدتي ليلا لتطفئها، وفعلت، وهي راجعة إلى غرفتها تعثرت في الجزء البارز من العربة، وسقطت جدتي فانكسر فخذها، ثم ماتت بعد ذلك بأسبوع، فهل موتها بعد أن أصيبت أعد المتسببة فيه؟ وهل علي كفارة القتل الخطأ؟ وماذا أفعل إن صح ظني؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.348122",
+            "text_sha256": "8ea605ed2d8991efe74b4675ac156898e18f1678452841b4edc8ac0ce5e14980",
+            "start": 57,
+            "end": 60,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.348122",
+            "text_sha256": "8ea605ed2d8991efe74b4675ac156898e18f1678452841b4edc8ac0ce5e14980",
+            "start": 114,
+            "end": 117,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.348122",
+            "text_sha256": "8ea605ed2d8991efe74b4675ac156898e18f1678452841b4edc8ac0ce5e14980",
+            "start": 145,
+            "end": 147,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.348122",
+            "text_sha256": "8ea605ed2d8991efe74b4675ac156898e18f1678452841b4edc8ac0ce5e14980",
+            "start": 241,
+            "end": 243,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.348122",
+            "text_sha256": "8ea605ed2d8991efe74b4675ac156898e18f1678452841b4edc8ac0ce5e14980",
+            "start": 476,
+            "end": 479,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.348122",
+            "text_sha256": "8ea605ed2d8991efe74b4675ac156898e18f1678452841b4edc8ac0ce5e14980",
+            "start": 502,
+            "end": 505,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.363963",
+      "text_sha256": "dca8abaf9bfb159c83d99d7d4f9b2d5c05324efc28804587f8d47906c9950f99",
+      "text": "ظهر أماهها شخص فأصابته وكسرت ساقه وكان مصابا بالكورونا فمات بسبب نقص الأكسجين كنت أقود على طريق سريع جهة اليسار المخصصة للسريع، وظهر أمامي شخص يمشي مترددا في عبور الطريق، يتقدم ويتأخر، وأنذرته مراراً ببوق السيارة، وبعدما تجاوزني للحارة المرورية التي تليني عاد بظهره فجأة أمامي، فصدمته بالخطأ، وكان حياً، وبالمشفى أجروا له أشعة، ووجدوا كسرا بالساق، وجرحا 3 سم بالوجه، وتبين أنه مصاب بكورونا ،وحالة صدره سيئة بسبب المرض، فرفضوا إجراء جراحة تركيب شريحة في ساقه خوفاً من تخديره وصدره بهذه الحالة، وكان يمكن تخديره نصفيا، ولكن المشافي الخاصة بكورونا لم يكن بها مكان، والمشافي العادية رفضوه، حتى توصلنا لمشفى به قسم عزل، لكنه توفي في الطريق إليها، فهل علي دية وكفارة؟ رغم أن: 1-الأشعة على كامل الجسم لم تظهر سوى كسر بالساق وجرح 3 سم بالوجه نتجا عن الحادث. 2- وقت الحادث الواحدة ظهراً، والوفاة الخامسة فجراً، وبينهما كان يتكلم، وواعيا، والتقرير الطبي أن حالته تسمح بالاستجواب. 3-المتوفى-رحمه اللَّه- توفي اختناقاً بسبب نقص الأكسجين، مثلما يحدث مع غالب وفيات كورونا، حيث يخرج من فمه وأنفه دم عند الوفاة، ولم يكن يعاني من أي نزيف داخلي بسبب الحادث، وربما تواجده في عربة الإسعاف كل ذلك الوقت وعدم تلقيه رعاية كافية تسبب في إجهاده، واحتياج صدره للأكسجين الذي لم يتمكن من الحصول عليه لتضرر رئتيه. 3-أن الخطأ في عبوره لطريق سريع من غير منطقة عبور المشاة، وكانت الجزيرة الفاصلة بين الطريقين خلفه مباشرة، لكنه أصر على العبور رغم تحذيري له. 4-فرامل السيارة كانت سليمة، وكنت منتبهة، والتقرير الهندسي أثبت عدم وجود خلل بالسيارة، وعدم صدمي له بسرعة عالية. وإن وجبت في حقي الدية، فأنا لا أملك مبلغها، ولا أستطيعه، فهل يقوم مبلغ التصالح مقامها؟ وبالنسبة للكفارة فهل يجب بدء الصيام فوراً؟ علماً أن شهر رمضان سيتخلل تلك الكفارة.",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.363963",
+            "text_sha256": "dca8abaf9bfb159c83d99d7d4f9b2d5c05324efc28804587f8d47906c9950f99",
+            "start": 545,
+            "end": 547,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.363963",
+            "text_sha256": "dca8abaf9bfb159c83d99d7d4f9b2d5c05324efc28804587f8d47906c9950f99",
+            "start": 694,
+            "end": 696,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.363963",
+            "text_sha256": "dca8abaf9bfb159c83d99d7d4f9b2d5c05324efc28804587f8d47906c9950f99",
+            "start": 1148,
+            "end": 1150,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.363963",
+            "text_sha256": "dca8abaf9bfb159c83d99d7d4f9b2d5c05324efc28804587f8d47906c9950f99",
+            "start": 1465,
+            "end": 1467,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.4046",
+      "text_sha256": "b6c7cc18b6cce9c1fd3d4593d76de9f4edad1e41fb3b442bb793b50ecf0d337c",
+      "text": "اللقطة تعرف سنة كاملة وجدت لقطة ذهب وبعتها وتصدقت بثمنها وأنوي إن وجدت صاحبها ولم يرض أن أعطيه قيمتها لأنني وجدتها وسط مدينة كبيرة فهل لي علي إثم في ذلك ؟",
+      "status": "candidate",
+      "tags": [],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.4050",
+      "text_sha256": "ece3606fb12351513f1753578977b48b7569326a124a7a5514206740ba847b82",
+      "text": "وجد مبلغا من المال في الحرم ذهبنا للحجّ وفي أثناء وجودي في الحرم عثرت على محفظة نقود وبها مبلغ لا بأس به من المال فماذا أفعل به وخصوصا أنّ مدّة بقائي في مكة كانت محدودة ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.4050",
+            "text_sha256": "ece3606fb12351513f1753578977b48b7569326a124a7a5514206740ba847b82",
+            "start": 95,
+            "end": 97,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.4588",
+      "text_sha256": "a28be0fc995f83fe88f3a9fb4bad87965d1255c0c8a86352975e054980bd8976",
+      "text": "لقطة الحرم التقط أحد الأبناء ساعة من الحرم المكي ، وظلت معه حتى الآن منذ أكثر من أربع سنوات ، فما هو الحل بالنسبة لها ؟ هل يردها للحرم مرة ثانية ، أم يتصدق بقيمتها على أحد الفقراء بعد تثمينها عند بائعي الساعات ؟ جزاكم الله خير الجزاء .",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "time",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.4588",
+            "text_sha256": "a28be0fc995f83fe88f3a9fb4bad87965d1255c0c8a86352975e054980bd8976",
+            "start": 180,
+            "end": 183,
+            "quote": "بعد"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.4652",
+      "text_sha256": "c75dc680002346fc3de7fa0f5d0e6f19a7ca4ec579fbe6335450b01d572f09d1",
+      "text": "الوديعة إذا هلكت بدون تعد لا تضمن أردت السفر فحمّلني شخص مالا أمانة لإيصاله إلى قريب له ، فاستولت عليه سلطات المطار التي لا تسمح بخروج مبلغ زائد على حد معين ، وأخذوا مالا خاصا بي أيضا ، فهل يجب علي تعويض صاحب المال ؟",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.4652",
+            "text_sha256": "c75dc680002346fc3de7fa0f5d0e6f19a7ca4ec579fbe6335450b01d572f09d1",
+            "start": 8,
+            "end": 11,
+            "quote": "إذا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.4652",
+            "text_sha256": "c75dc680002346fc3de7fa0f5d0e6f19a7ca4ec579fbe6335450b01d572f09d1",
+            "start": 26,
+            "end": 28,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.4652",
+            "text_sha256": "c75dc680002346fc3de7fa0f5d0e6f19a7ca4ec579fbe6335450b01d572f09d1",
+            "start": 121,
+            "end": 123,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.5049",
+      "text_sha256": "ecae742b31e3f1961c48e6d435a6e753d7af9d9d76952248803f68f79e0edf8d",
+      "text": "أحكام اللقطة ما حكم من وجد مالاُ في الطريق ؟ هل يجوز له أن يأخذه ؟",
+      "status": "candidate",
+      "tags": [],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.83025",
+      "text_sha256": "08fc4a0b5ffcd1c6bba3161fdba9caf83271c4fa9bd2be3b8b154ce62574ef75",
+      "text": "تشك في طهارتها لطواف الإفاضة فماذا يلزمها الآن ؟ أحرمت بالحج وعند صباح اليوم الذي كنت سأقوم بطواف الإفاضة فيه استيقظت وشكيت بأني احتلمت ولكنى لم أكن متأكدة وأديت طواف الإفاضة بهذا الشك ، أرجوكم أفتوني ماذا علي أن أفعل بالتحديد علما بأني مقيمة الآن بجده وعندما أحرمت بالحج أحرمت من مصر مع العلم أني لا أستطيع أن أعود وأحرم من مصر مرة أخرى أخشى ألا يكون حجي صحيحا .",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.83025",
+            "text_sha256": "08fc4a0b5ffcd1c6bba3161fdba9caf83271c4fa9bd2be3b8b154ce62574ef75",
+            "start": 142,
+            "end": 144,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.83025",
+            "text_sha256": "08fc4a0b5ffcd1c6bba3161fdba9caf83271c4fa9bd2be3b8b154ce62574ef75",
+            "start": 298,
+            "end": 300,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    },
+    {
+      "source_id": "islamqa.83827",
+      "text_sha256": "cde3f22d31d736abbd6cb3d166d84ecdb6918e96253df001d159561e1a8f39f0",
+      "text": "أودع وديعة فاستثمرها دون علم صاحبها أعمل مع إخوتي في مؤسسة لنا ، وقد كان أخي الأكبر لديه مكتب تجاري في الخارج يسهل به عمليات التصدير للمتعاملين معه ، وقد أودع عنده أحد الأشخاص من المتعاملين مبلغا ماليا كوديعة ، ولكن أخي تصرف في هذه الوديعة دون استشارة صاحبها وبعدها سلم المكتب لزميل له وقد أعلم المتعاملين بذلك ، وفي هذه الفترة ضاع من مال الوديعة في عمليات تحويل البعض منها وعندما طالب صاحبها بها لم تكن كلها حاضرة فأعطاه الموجود وبدأ يسدد في الأقساط الأخرى ، وقد تداخلت الديون في بعضها فلا نعلم إن كان شيء منها قد دخل في المشروع المشترك بيننا ، وهو الآن يعد بتسديد كل المبلغ حتى الذي ضاع دون علمه ولكنه يتهرب من صاحب المال لحين إعداد نفسه ، وصاحب المال يقول إنه لا يسامح في أي مبلغ استعمله أخي في أي نشاط. فأفتونا بارك الله فيكم ما حكم المشروع المقام بيننا مع العلم أن أخي هذا هو الممون الأكبر له. وكيف التصرف لكي نحلل مالنا هذا من الحرام وما الشيء الذي يجب على أخي لكي يغفر الله له هذا الذنب ويقبل توبته. نرجو تفصيل الأمور وماذا علينا نحن كإخوة لكي نحلل أموالنا وجزاكم الله كل خير .",
+      "status": "candidate",
+      "tags": [
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.83827",
+            "text_sha256": "cde3f22d31d736abbd6cb3d166d84ecdb6918e96253df001d159561e1a8f39f0",
+            "start": 397,
+            "end": 399,
+            "quote": "لم"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "condition",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.83827",
+            "text_sha256": "cde3f22d31d736abbd6cb3d166d84ecdb6918e96253df001d159561e1a8f39f0",
+            "start": 496,
+            "end": 502,
+            "quote": "إن كان"
+          },
+          "scope": null,
+          "meaning": null
+        },
+        {
+          "role": "negation",
+          "status": "candidate",
+          "method": "literal_marker",
+          "evidence": {
+            "source_id": "islamqa.83827",
+            "text_sha256": "cde3f22d31d736abbd6cb3d166d84ecdb6918e96253df001d159561e1a8f39f0",
+            "start": 663,
+            "end": 665,
+            "quote": "لا"
+          },
+          "scope": null,
+          "meaning": null
+        }
+      ],
+      "semantic_roles": {
+        "act": {
+          "status": "unknown",
+          "value": null
+        },
+        "actor": {
+          "status": "unknown",
+          "value": null
+        },
+        "object": {
+          "status": "unknown",
+          "value": null
+        },
+        "affected_party": {
+          "status": "unknown",
+          "value": null
+        },
+        "condition": {
+          "status": "unknown",
+          "value": null
+        },
+        "exception": {
+          "status": "unknown",
+          "value": null
+        },
+        "negation": {
+          "status": "unknown",
+          "value": null
+        },
+        "omission": {
+          "status": "unknown",
+          "value": null
+        },
+        "time": {
+          "status": "unknown",
+          "value": null
+        },
+        "scope": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "encoder_facts": [],
+      "kernel_output": null
+    }
+  ],
+  "development_references": [
+    {
+      "case_id": "islamqa.23424.f001",
+      "question_id": "islamqa.23424",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.23424.f002",
+      "question_id": "islamqa.23424",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.83025.f001",
+      "question_id": "islamqa.83025",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.103846.f001",
+      "question_id": "islamqa.103846",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.103846.f002",
+      "question_id": "islamqa.103846",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.103846.f003",
+      "question_id": "islamqa.103846",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.103846.f004",
+      "question_id": "islamqa.103846",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.108549.f001",
+      "question_id": "islamqa.108549",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.110860.f001",
+      "question_id": "islamqa.110860",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.110860.f002",
+      "question_id": "islamqa.110860",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.110860.f003",
+      "question_id": "islamqa.110860",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.110860.f004",
+      "question_id": "islamqa.110860",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.114793.f001",
+      "question_id": "islamqa.114793",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.114793.f002",
+      "question_id": "islamqa.114793",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.114793.f003",
+      "question_id": "islamqa.114793",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.114793.f004",
+      "question_id": "islamqa.114793",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.128887.f001",
+      "question_id": "islamqa.128887",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.170478.f001",
+      "question_id": "islamqa.170478",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.170478.f002",
+      "question_id": "islamqa.170478",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.170478.f003",
+      "question_id": "islamqa.170478",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.176193.f001",
+      "question_id": "islamqa.176193",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.176193.f002",
+      "question_id": "islamqa.176193",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.187157.f001",
+      "question_id": "islamqa.187157",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.187157.f002",
+      "question_id": "islamqa.187157",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.198294.f001",
+      "question_id": "islamqa.198294",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.198294.f002",
+      "question_id": "islamqa.198294",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.198294.f003",
+      "question_id": "islamqa.198294",
+      "existing_candidate_encoder": "asl_zahir"
+    },
+    {
+      "case_id": "islamqa.164604.f002",
+      "question_id": "islamqa.164604",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.223512.f001",
+      "question_id": "islamqa.223512",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.223512.f002",
+      "question_id": "islamqa.223512",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.242731.f001",
+      "question_id": "islamqa.242731",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.266167.f001",
+      "question_id": "islamqa.266167",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.266167.f002",
+      "question_id": "islamqa.266167",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.272160.f001",
+      "question_id": "islamqa.272160",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.286486.f001",
+      "question_id": "islamqa.286486",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.305083.f001",
+      "question_id": "islamqa.305083",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.305083.f002",
+      "question_id": "islamqa.305083",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.305083.f003",
+      "question_id": "islamqa.305083",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.315435.f001",
+      "question_id": "islamqa.315435",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.315435.f002",
+      "question_id": "islamqa.315435",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.315435.f003",
+      "question_id": "islamqa.315435",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.317604.f001",
+      "question_id": "islamqa.317604",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.317604.f002",
+      "question_id": "islamqa.317604",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.328808.f001",
+      "question_id": "islamqa.328808",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.344230.f001",
+      "question_id": "islamqa.344230",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.344230.f002",
+      "question_id": "islamqa.344230",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.345284.f001",
+      "question_id": "islamqa.345284",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.345284.f002",
+      "question_id": "islamqa.345284",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.348122.f001",
+      "question_id": "islamqa.348122",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.348122.f002",
+      "question_id": "islamqa.348122",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.348122.f003",
+      "question_id": "islamqa.348122",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.363963.f001",
+      "question_id": "islamqa.363963",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.363963.f002",
+      "question_id": "islamqa.363963",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.363963.f003",
+      "question_id": "islamqa.363963",
+      "existing_candidate_encoder": "itlaf"
+    },
+    {
+      "case_id": "islamqa.4046.f001",
+      "question_id": "islamqa.4046",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.4046.f002",
+      "question_id": "islamqa.4046",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.4046.f003",
+      "question_id": "islamqa.4046",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.4046.f004",
+      "question_id": "islamqa.4046",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.4050.f001",
+      "question_id": "islamqa.4050",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.4588.f001",
+      "question_id": "islamqa.4588",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.5049.f001",
+      "question_id": "islamqa.5049",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.5049.f002",
+      "question_id": "islamqa.5049",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.5049.f003",
+      "question_id": "islamqa.5049",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.5049.f004",
+      "question_id": "islamqa.5049",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.5049.f005",
+      "question_id": "islamqa.5049",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.5049.f006",
+      "question_id": "islamqa.5049",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.5049.f007",
+      "question_id": "islamqa.5049",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.10284.f001",
+      "question_id": "islamqa.10284",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.10284.f002",
+      "question_id": "islamqa.10284",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.126387.f001",
+      "question_id": "islamqa.126387",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.126502.f001",
+      "question_id": "islamqa.126502",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.128510.f001",
+      "question_id": "islamqa.128510",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.128510.f002",
+      "question_id": "islamqa.128510",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.131070.f001",
+      "question_id": "islamqa.131070",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.131070.f002",
+      "question_id": "islamqa.131070",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.131070.f003",
+      "question_id": "islamqa.131070",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.146191.f001",
+      "question_id": "islamqa.146191",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.146191.f002",
+      "question_id": "islamqa.146191",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.146191.f003",
+      "question_id": "islamqa.146191",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.191459.f001",
+      "question_id": "islamqa.191459",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.191459.f002",
+      "question_id": "islamqa.191459",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.191459.f003",
+      "question_id": "islamqa.191459",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.209303.f001",
+      "question_id": "islamqa.209303",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.209303.f002",
+      "question_id": "islamqa.209303",
+      "existing_candidate_encoder": "luqata"
+    },
+    {
+      "case_id": "islamqa.4652.f001",
+      "question_id": "islamqa.4652",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.13717.f001",
+      "question_id": "islamqa.13717",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.13717.f002",
+      "question_id": "islamqa.13717",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.13717.f003",
+      "question_id": "islamqa.13717",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.13717.f004",
+      "question_id": "islamqa.13717",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.13717.f005",
+      "question_id": "islamqa.13717",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.22830.f001",
+      "question_id": "islamqa.22830",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.22830.f002",
+      "question_id": "islamqa.22830",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.22830.f003",
+      "question_id": "islamqa.22830",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.83827.f001",
+      "question_id": "islamqa.83827",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.140833.f001",
+      "question_id": "islamqa.140833",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.140833.f002",
+      "question_id": "islamqa.140833",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.152192.f001",
+      "question_id": "islamqa.152192",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.164604.f001",
+      "question_id": "islamqa.164604",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.165409.f001",
+      "question_id": "islamqa.165409",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.165409.f002",
+      "question_id": "islamqa.165409",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.252463.f001",
+      "question_id": "islamqa.252463",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.252463.f002",
+      "question_id": "islamqa.252463",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.253293.f001",
+      "question_id": "islamqa.253293",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.253293.f002",
+      "question_id": "islamqa.253293",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.253293.f003",
+      "question_id": "islamqa.253293",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.253293.f004",
+      "question_id": "islamqa.253293",
+      "existing_candidate_encoder": "trust_loss"
+    },
+    {
+      "case_id": "islamqa.104241.f001",
+      "question_id": "islamqa.104241",
+      "existing_candidate_encoder": "unknown_owner"
+    },
+    {
+      "case_id": "islamqa.104241.f002",
+      "question_id": "islamqa.104241",
+      "existing_candidate_encoder": "unknown_owner"
+    },
+    {
+      "case_id": "islamqa.104241.f003",
+      "question_id": "islamqa.104241",
+      "existing_candidate_encoder": "unknown_owner"
+    },
+    {
+      "case_id": "islamqa.107436.f001",
+      "question_id": "islamqa.107436",
+      "existing_candidate_encoder": "unknown_owner"
+    },
+    {
+      "case_id": "islamqa.179911.f001",
+      "question_id": "islamqa.179911",
+      "existing_candidate_encoder": "unknown_owner"
+    },
+    {
+      "case_id": "islamqa.179911.f002",
+      "question_id": "islamqa.179911",
+      "existing_candidate_encoder": "unknown_owner"
+    },
+    {
+      "case_id": "islamqa.179911.f003",
+      "question_id": "islamqa.179911",
+      "existing_candidate_encoder": "unknown_owner"
+    },
+    {
+      "case_id": "islamqa.196584.f001",
+      "question_id": "islamqa.196584",
+      "existing_candidate_encoder": "unknown_owner"
+    },
+    {
+      "case_id": "islamqa.196584.f002",
+      "question_id": "islamqa.196584",
+      "existing_candidate_encoder": "unknown_owner"
+    },
+    {
+      "case_id": "islamqa.196584.f003",
+      "question_id": "islamqa.196584",
+      "existing_candidate_encoder": "unknown_owner"
+    },
+    {
+      "case_id": "islamqa.260724.f001",
+      "question_id": "islamqa.260724",
+      "existing_candidate_encoder": "unknown_owner"
+    },
+    {
+      "case_id": "islamqa.260724.f002",
+      "question_id": "islamqa.260724",
+      "existing_candidate_encoder": "unknown_owner"
+    },
+    {
+      "case_id": "islamqa.287215.f001",
+      "question_id": "islamqa.287215",
+      "existing_candidate_encoder": "unknown_owner"
+    },
+    {
+      "case_id": "islamqa.287215.f002",
+      "question_id": "islamqa.287215",
+      "existing_candidate_encoder": "unknown_owner"
+    },
+    {
+      "case_id": "islamqa.287215.f003",
+      "question_id": "islamqa.287215",
+      "existing_candidate_encoder": "unknown_owner"
+    },
+    {
+      "case_id": "islamqa.304828.f001",
+      "question_id": "islamqa.304828",
+      "existing_candidate_encoder": "unknown_owner"
+    },
+    {
+      "case_id": "islamqa.304828.f002",
+      "question_id": "islamqa.304828",
+      "existing_candidate_encoder": "unknown_owner"
+    }
+  ],
+  "evaluation": {
+    "questions": 53,
+    "existing_cases": 123,
+    "literal_marker_candidates": 179,
+    "semantic_tag_accuracy": null,
+    "fact_accuracy": null,
+    "encoder_accuracy": null,
+    "new_kernel_executions": 0
+  },
+  "limitations": [
+    "Literal markers are annotation aids, not semantic extraction",
+    "No facts inferred; all semantic roles remain unknown",
+    "Existing case encoders are separate development references, never tagger inputs",
+    "Published cases are not a blind test; no retrieval improvement measured",
+    "Reviewed observation status is caller-attested; a locator is not authentication"
+  ]
+}

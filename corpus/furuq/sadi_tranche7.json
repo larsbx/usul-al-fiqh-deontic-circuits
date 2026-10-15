@@ -1,0 +1,384 @@
+{
+ "note": "al-Saʿdī, al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa, part two (al-furūq), tranche 7: F116–F136 in order after tranche 6, none skipped; conventions as in tranches 1 and 6.",
+ "work": "sadi.qawaid_jamia",
+ "witness": "islamhouse-qj-doc",
+ "module": "Usul.Furuq",
+ "asl": {
+  "ref": "src:islamhouse-qj-doc#furuq",
+  "excerpt_ar": "أن الشارع لا يفرق بين المتشابهات من كل وجه، بل لا بد فيها من فوارق معنوية، وأوصاف متفاوتة أوجبت الفرق"
+ },
+ "lean": [
+  "Usul.Furuq.Grade",
+  "Usul.Furuq.Grade.apart",
+  "Usul.Furuq.alike_unless_farq",
+  "Usul.Furuq.farq_is_maana",
+  "Usul.Furuq.suri_farq_idle"
+ ],
+ "items": [
+  {
+   "id": "F116",
+   "cases_en": [
+    "the sutra of one praying (even a stick or a line)",
+    "the screen of one relieving himself, and the wall between neighbours"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: التفريق بين سترة المصلي، وسترة المتخلي، وسترة الجار"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F117",
+   "cases_en": [
+    "urine and faeces (no amount excused)",
+    "blood, pus and vomit (a little excused); the rest ṭāhir"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وفرقوا بين الخارج من بدن الإنسان"
+   },
+   "grounds": [],
+   "note": "and likewise for breaking wuḍūʾ"
+  },
+  {
+   "id": "F118",
+   "cases_en": [
+    "hair whose removal is forbidden (beard, brows) or prescribed (moustache, armpit, pubic)",
+    "the rest (permitted)"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وقسموا شعور بدن الإنسان إلى ثلاثة أقسام"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F119",
+   "cases_en": [
+    "touching a woman with desire (breaks wuḍūʾ, forbidden fasting and in iḥrām)",
+    "without desire"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وفرّقوا بين مس المرأة بشهوة وبغير شهوة"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F120",
+   "cases_en": [
+    "urine and madhy",
+    "manī (ṭāhir, obliges ghusl)"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وفرقوا بين الخارج من الذكر"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F121",
+   "cases_en": [
+    "najāsa on the body (tayammum for it when its ghasl is impossible)",
+    "on the garment or the place (none)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "no_proof",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لاستواء النجاسات في عدم ورود النص بها"
+   },
+   "grounds": [],
+   "note": "«والصحيح: اختيار شيخ الإسلام أن النجاسات كلها لا تيمم عنها، وإنما يتيمم عن الأحداث»"
+  },
+  {
+   "id": "F122",
+   "cases_en": [
+    "wine turned vinegar, a clot become a ṭāhir animal, water whose change has gone (made ṭāhir by transformation)",
+    "other najis things transformed"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وفرقوا بين تطهير الخمرة إذا انقلبت خلًّا"
+   },
+   "grounds": [],
+   "note": "he adds that Ibn Taymiyya extends it to everything transformed from najis to good, without choosing"
+  },
+  {
+   "id": "F123",
+   "cases_en": [
+    "the foetus's rulings tied to ensoulment, to live birth",
+    "those tied to its formation"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: أن الجنين له ثلاثة أحكام"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F124",
+   "cases_en": [
+    "picturing beings with souls (unlawful)",
+    "picturing trees, buildings, vessels (lawful)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: أن تصوير ذوات الأرواح لا يحل"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F125",
+   "cases_en": [
+    "the number of witnesses for property, for ḥadd and retaliation, for zinā",
+    "for Ramaḍān, for what only women see, for a physician or vet"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وذلك بحسب الآثار الواردة في هذا الباب"
+   },
+   "grounds": [],
+   "note": "«وبحسب الحكم المترتبة على ذلك التحديد»",
+   "nusus": [],
+   "nass_cited": "unspecified"
+  },
+  {
+   "id": "F126",
+   "cases_en": [
+    "supererogatory prayer in the forbidden times",
+    "the excepted prayers (the sunna of fajr, a repeated congregation, ṭawāf, the funeral …)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة في أوقات النهي عن النوافل كلها: إلا سنّة الفجر قبلها، وإعادة جماعة أقيمت، وركعتي الطواف"
+   },
+   "grounds": [],
+   "note": "prayers with a cause (dhawāt al-asbāb) are disputed: the mashhūr bars them"
+  },
+  {
+   "id": "F127",
+   "cases_en": [
+    "prayer anywhere on earth",
+    "in the graveyard, the bath-house, camels' resting places, najis and usurped ground"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: أن الأرض والأماكن كلها يصلى فيها، إلا المقبرة، والحمام، وأعطان الإبل (4)، والنجسة، والمغصوبة"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F128",
+   "cases_en": [
+    "the dump, the slaughterhouse, the roadway, their roofs, the farḍ prayer inside the Kaʿba (not ṣaḥīḥ, the mashhūr)",
+    "other places (valid)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والقول الآخر أقرب إلى الصواب وهو الذي تدل عليه الأدلة الصحيحة أنها تصح فيها"
+   },
+   "grounds": [],
+   "note": "cf. F05",
+   "nusus": [],
+   "nass_cited": "unspecified"
+  },
+  {
+   "id": "F129",
+   "cases_en": [
+    "a traveller resolved to stay more than four days (no concessions)",
+    "one staying less or unsure (concessions)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لأنه ليس لنا مرتبة ثالثة لا مقيم ولا مسافر"
+   },
+   "grounds": [],
+   "note": "«والصواب: القول الآخر: أنه ما دام مسافراً فإنه يترخص حتى ينقطع سفره»"
+  },
+  {
+   "id": "F130",
+   "cases_en": [
+    "livestock for milk, breeding and fattening (livestock zakāt), for trade (trade zakāt)",
+    "livestock for work (none); and likewise real estate"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: أن المواشي من الأنعام الثمانية ثلاثة أقسام"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F131",
+   "cases_en": [
+    "zakātable wealth due a quarter-tenth, a twentieth, a tenth, a fifth",
+    "livestock with fixed dues"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "ومن الفروق الصحيحة: أن المال الزكوي خمسة أقسام"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F132",
+   "cases_en": [
+    "gold and silver vessels (forbidden to all), ordinary jewellery (women only)",
+    "what is used for need, as tying teeth (lawful even to men)"
+   ],
+   "madhhab": "apart",
+   "grade": "sahih",
+   "ruling": "apart",
+   "basis": "maana",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "لاشتراك الجميع في المعنى الذي حرمت لأجله"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F133",
+   "cases_en": [
+    "ascendants and descendants (no zakāt to them, no testimony for them, maḥram always, …)",
+    "other relatives"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وقسّم الأصحاب الأقارب إلى قسمين"
+   },
+   "grounds": [],
+   "note": ""
+  },
+  {
+   "id": "F134",
+   "cases_en": [
+    "zakāt to a relative the giver inherits from (barred, the madhhab)",
+    "to other needy relatives (allowed)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وعلى القول الصحيح الصواب: جواز إعطائهم"
+   },
+   "grounds": [],
+   "note": "",
+   "overturns": "F133"
+  },
+  {
+   "id": "F135",
+   "cases_en": [
+    "those who may break the fast and make up, those who owe the kaffāra (al-Saʿdī's word; the āya's «فدية», al-Baqara 184)",
+    "those who owe neither (as the madhhab holds)"
+   ],
+   "madhhab": "apart",
+   "grade": "reported",
+   "ruling": "apart",
+   "basis": "stated",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "وقسّم الأصحاب المكلف الذي أفطر في رمضان إلى ثلاثة أقسام"
+   },
+   "grounds": [],
+   "note": "and the pregnant and nursing woman, a fourth"
+  },
+  {
+   "id": "F136",
+   "cases_en": [
+    "the old man unable to fast who is travelling (neither make-up nor kaffāra, the madhhab: «لوجود السببين»)",
+    "the old man at home (expiation)"
+   ],
+   "madhhab": "apart",
+   "grade": "daif",
+   "ruling": "alike",
+   "basis": "nass",
+   "author": {
+    "ref": "src:islamhouse-qj-doc#furuq",
+    "excerpt_ar": "والصواب: في هذا الأخير أن عليه الكفارة لظاهر النصوص"
+   },
+   "grounds": [],
+   "note": "",
+   "overturns": "F135",
+   "nusus": [],
+   "nass_cited": "unspecified"
+  }
+ ]
+}

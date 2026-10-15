@@ -52,3 +52,16 @@ def test_answer_record_flattens_topic_paths_and_cross_references():
     assert r["subsites"] == [{"ref": 47, "path": ["الاختلاط"]}]
     assert r["see_also"] == ["islamqa.7535"]
     assert r["langs"] == ["ar", "en"] and r["created"] == "2008-03-26" and r["updated"] == "2020-02-11"
+
+
+def test_jsonl_gz_is_byte_deterministic_and_round_trips(tmp_path):
+    import gzip, json, time
+    from usul_corpus.fatawa import write_jsonl_gz
+
+    recs = [answer_record(ANSWER)]
+    a, b = tmp_path / "a.jsonl.gz", tmp_path / "b.jsonl.gz"
+    write_jsonl_gz(a, recs)
+    time.sleep(1.1)  # a gzip header mtime would differ
+    write_jsonl_gz(b, recs)
+    assert a.read_bytes() == b.read_bytes()
+    assert [json.loads(l) for l in gzip.open(a, "rt", encoding="utf-8")] == recs

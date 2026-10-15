@@ -1,0 +1,235 @@
+{
+  "suite": "m8_rajab_rajab_a9",
+  "status": "candidate",
+  "provenance": "Shard rajab-a9 (lane A): every farʿ record of Ibn Rajab's qawāʿid 107, 108 and 110, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA9). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f001",
+      "encoder": "maadum_grant_valid",
+      "class": "derivable",
+      "facts": {"by_origin": false, "explicit_inclusion": true, "object_entails": false},
+      "expected": true,
+      "note": "A licence (ijāza) to Fulān and to whoever is born to him: «فإنها تصح», as Abū Bakr b. Abī Dāwūd did, licensing a man, his child and «حبل الحبلة». The non-existent follows an existent and is named, the qāʿida's second kind with explicit inclusion; no dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f002",
+      "encoder": "maadum_grant_valid",
+      "class": "genuine_ikhtilaf",
+      "facts": {"by_origin": true, "explicit_inclusion": true, "object_entails": false},
+      "expected": false,
+      "positions": [
+        {"who": "qiyās of al-Qāḍī's own statement on the waqf: invalid", "ruling": false},
+        {"who": "al-Qāḍī's fatwā, reported by al-Khaṭīb: valid absolutely", "ruling": true}
+      ],
+      "matches_madhhab": true,
+      "note": "A licence to whoever is born to Fulān, from the outset: «فأفتى القاضي فيها بالصحة مطلقا ... وقياس قوله في الوقف عدم الصحة». A grant to the non-existent by way of origin, of which the qāʿida says «فالمشهور أنه لا يصح». The licence to transmit is not treated in al-Inṣāf or the muʿtamad; the side is taken from Ibn Rajab's own marked label (al-mashhūr) in the qāʿida's statement, and the waqf analogue (q107.f003) is invalid on the madhhab."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f003",
+      "encoder": "maadum_grant_valid",
+      "class": "genuine_ikhtilaf",
+      "facts": {"by_origin": true, "explicit_inclusion": true, "object_entails": false},
+      "expected": false,
+      "positions": [
+        {"who": "al-Qāḍī in his Khilāf: invalid, a waqf on one who does not own now, like a waqf on a slave", "ruling": false},
+        {"who": "al-Majd: the ẓāhir of Aḥmad (riwāyat Ṣāliḥ) gives its validity from the outset", "ruling": true}
+      ],
+      "matches_madhhab": true,
+      "note": "A waqf on whoever will be born to him: «فصرح القاضي في خلافه بأنه لا يصح». al-Majd reads Aḥmad's «أو من يكون من أقاربه» as validity (he himself calls it a waqf suspended on a condition, «وقف معلق بشرط»); Ibn Rajab construes «يكون» as kāna nāqiṣa, «من يكون [موجودا] من أقاربه». al-Inṣāf (v07:p023): «لو قال \" وقفت على من سيولد لي \" أو \" من سيولد لفلان \" لم يصح. على الصحيح من المذهب. وعليه جماهير الأصحاب»; al-Iqnāʿ «ولا يصح على معدوم أصلا كمن سيولد»; on the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f004",
+      "encoder": "maadum_grant_valid",
+      "class": "derivable",
+      "facts": {"by_origin": false, "explicit_inclusion": true, "object_entails": false},
+      "expected": true,
+      "note": "A waqf on his child and his child's child for ever, or on whoever is born to him: «فيصح بغير إشكال نص عليه». The non-existent follows existent beneficiaries and is named; the qāʿida's second kind with explicit inclusion."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f005",
+      "encoder": "maadum_grant_valid",
+      "class": "genuine_ikhtilaf",
+      "facts": {"by_origin": false, "explicit_inclusion": false, "object_entails": false},
+      "expected": false,
+      "positions": [
+        {"who": "the other riwāya: the later-born child does not enter", "ruling": false},
+        {"who": "ẓāhir of Aḥmad, Ibn Abī Mūsā, ẓāhir of al-Qāḍī and Ibn ʿAqīl, Ibn al-Zāghūnī's fatwā: he enters", "ruling": true}
+      ],
+      "matches_madhhab": true,
+      "note": "A waqf on his children, some existing, then another is born: «ففي دخوله روايتان». The non-existent follows the existent but is not named, and «ولده» does not of itself entail him: the qāʿida's khilāf branch «إن لم يصرح وكان المحل لا يستلزم المعدوم ففي دخوله خلاف». al-Inṣāf (v07:p074), citing this qāʿida: «والرواية الثانية: لا يدخل معهم. وهو المذهب», and so al-Tanqīḥ and al-Muntahā «دخل الموجودون فقط»; on the madhhab side. al-Iqnāʿ and Kashshāf hold he enters «خلافا لما في التنقيح» (a difference within the muʿtamad, noted for review)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f006",
+      "encoder": "maadum_grant_valid",
+      "class": "genuine_ikhtilaf",
+      "facts": {"by_origin": false, "explicit_inclusion": false, "object_entails": false},
+      "expected": false,
+      "positions": [
+        {"who": "the wajh takhrīj-ed from q107.f005: the later one does not share", "ruling": false},
+        {"who": "the other wajh; Ibn Rajab «والدخول هنا أولى»; Shams al-Dīn b. Abī ʿUmar's fatwā: he shares", "ruling": true}
+      ],
+      "matches_madhhab": false,
+      "note": "A waqf passing to those in the degree of one who died childless; two take his share, then a third is born: «فهل يشاركهم يخرج فيه وجهان من التي قبلها». The qāʿida puts it in the khilāf branch: «وكذا لو انتقل الوقف إلى قوم فحدث من يشاركهم», so the reading does not establish inclusion. Ibn Rajab's farq: the waqf on children may regard the individuals existing at the waqf, whereas the degree regards only the general direction. The later madhhab holds he shares (al-Muntahā, al-Inṣāf), against the reading: ledger. Follow-on in the record: the bequest to the non-existent by origin is invalid, not ṣaḥīḥ (al-Qāḍī, Ibn ʿAqīl), with two riwāyas on one arising between the bequest and death, and Aḥmad's farq between the sikka and the kūra."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f001",
+      "encoder": "unknown_order_judged_sequential",
+      "class": "genuine_ikhtilaf",
+      "facts": {"known_simultaneous": false, "known_sequential": false},
+      "expected": true,
+      "positions": [
+        {"who": "the madhhab al-mashhūr: judged sequential; each inherits from the other's old wealth", "ruling": true},
+        {"who": "Abū al-Khaṭṭāb's takhrīj of a riwāya: no mutual inheritance, the condition being in doubt («للشك في شرطه»)", "ruling": false}
+      ],
+      "matches_madhhab": true,
+      "note": "Mutual heirs dying together by collapse, drowning or plague, simultaneity unknown: «حكمنا بتعاقبه على المذهب المشهور، وورثنا كل واحد منهما من الآخر من تلاد ماله». al-Inṣāf (v07:p345): «فالصحيح من المذهب: أن كل واحد من الموتى يرث صاحبه من تلاد ماله»; on the madhhab side. Follow-on: likewise where one is known to have died first but which is unknown or forgotten, resting on certainty of life not being required."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f002",
+      "encoder": "unknown_order_judged_sequential",
+      "class": "genuine_ikhtilaf",
+      "facts": {"known_simultaneous": false, "known_sequential": false},
+      "expected": true,
+      "positions": [
+        {"who": "the sounder wajh: judged sequential, ẓuhr is prayed", "ruling": true},
+        {"who": "the second wajh: the jumuʿa is repeated, for possible simultaneity or treating the unknown as non-existent", "ruling": false}
+      ],
+      "matches_madhhab": true,
+      "note": "Two jumuʿas held in a town without need, unknown whether they began together: «على الوجهين أصحهما تعاد الظهر ; لأن التقارن مستبعد». al-Inṣāf (v02:p403): «وإن قلنا تعاد ظهرا أعيدت هنا ظهرا، على الصحيح من المذهب»; on the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f003",
+      "encoder": "unknown_order_judged_sequential",
+      "class": "genuine_ikhtilaf",
+      "facts": {"known_simultaneous": false, "known_sequential": false},
+      "expected": true,
+      "positions": [
+        {"who": "the wajh holding simultaneity unlikely: judged sequential, one contract upheld (by lot)", "ruling": true},
+        {"who": "the wajh voiding both for possible simultaneity", "ruling": false}
+      ],
+      "matches_madhhab": true,
+      "note": "Two guardians marry her off, unknown whether the contracts fell together: «ففيه وجهان أيضا: أحدهما: يبطلان لاحتمال التقارن والثاني لاستبعاده». al-Inṣāf (v08:p092-093): «لو جهل وقوعهما معا، فهي على الروايتين. على الصحيح من المذهب ... وقيل: يبطلان», i.e. treated as the sequential case; on the madhhab side. Follow-on: within the sequential case the madhhab annuls both (al-Inṣāf «فسخ النكاحان ... وهو المذهب») rather than drawing lots, a separate question."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f004",
+      "encoder": "unknown_order_judged_sequential",
+      "class": "genuine_ikhtilaf",
+      "facts": {"known_simultaneous": false, "known_sequential": false},
+      "expected": true,
+      "positions": [
+        {"who": "the wajh siding with the claimant of sequence, the ẓāhir being with him: the marriage is annulled (infisākh, «ينفسخ النكاح»)", "ruling": true},
+        {"who": "the wajh siding with the claimant of simultaneity, the aṣl being continuance: no annulment", "ruling": false}
+      ],
+      "matches_madhhab": true,
+      "note": "Unbelieving spouses embrace Islam before consummation and dispute whether together or in sequence: «على وجهين يرجعان إلى تعارض الأصل والظاهر». al-Inṣāf (v08:p212): «أحدهما: القول قولها. وهو المذهب؛ لأن الظاهر معها. اختاره القاضي»; on the madhhab side. Taṣḥīḥ al-Muḥarrar and al-Wajīz give the other wajh (noted for review)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f005",
+      "encoder": "unknown_order_judged_sequential",
+      "class": "genuine_ikhtilaf",
+      "facts": {"known_simultaneous": false, "known_sequential": false},
+      "expected": true,
+      "positions": [
+        {"who": "the wajh: both contracts stand, in two times, and he owes both prices", "ruling": true},
+        {"who": "the wajh: the two proofs conflict, it may be one contract, they fall and he is presumed free", "ruling": false}
+      ],
+      "matches_madhhab": true,
+      "note": "Two men each prove by undated proof that he sold the possessor this slave for a thousand: «فهل يصح العقدان ويلزمه الثمنان ... أو يتعارض البينتان ... على وجهين». al-Inṣāf (v11:p401): «فأمكن صدقهما لاختلاف تاريخهما، أو إطلاقهما ... عمل بهما . وهذا هو المذهب», and al-Iqnāʿ likewise; on the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f001",
+      "encoder": "other_option_stands",
+      "class": "derivable",
+      "facts": {"chose_one": false},
+      "expected": true,
+      "note": "The one entitled to retaliation pardons it, on the view that one of two things is due to him: «تعين له المال ولو عفى عن المال ثبت له القود». Dropping one fixes the other; no dispute reported (the antecedent, what the killing obliges, is stated as an assumption «وقلنا»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f002",
+      "encoder": "other_option_stands",
+      "class": "genuine_ikhtilaf",
+      "facts": {"chose_one": false},
+      "expected": true,
+      "positions": [
+        {"who": "Ibn ʿAqīl: the claim to the arsh stands, the defect giving one of two things", "ruling": true},
+        {"who": "Ibn Abī Mūsā and al-Qāḍī: the arsh falls too", "ruling": false}
+      ],
+      "matches_madhhab": false,
+      "note": "A buyer finds a defect, then uses the thing in a way that does not show contentment to keep it: «لم يسقط حقه من المطالبة بالأرش عند ابن عقيل ; لأن العيب موجب لأحد شيئين ... وقال ابن أبي موسى والقاضي يسقط الأرش أيضا وفيه بعد». The use drops the return, and on the reading the arsh stands. al-Inṣāf (v04:p420), citing this qāʿida for the case, makes the arsh fall «وهو المذهب في ذلك كله», with al-Iqnāʿ and Sharḥ al-Muntahā: against the reading; ledger."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f003",
+      "encoder": "refusal_exacted_for_him",
+      "class": "derivable",
+      "facts": {"harms_other": true, "financial": true, "established": true},
+      "expected": true,
+      "note": "The debtor brings his debt when due, with no harm in taking it; the creditor is told to take it or release him: «فإن امتنع قبضه له الحاكم وبرئ غريمه». His refusal harms the debtor and the right is financial and established, so it is exacted for him."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f004",
+      "encoder": "refusal_right_falls",
+      "class": "derivable",
+      "facts": {"harms_other": true, "established": false},
+      "expected": true,
+      "note": "The legatee refuses both acceptance and rejection: «حكم عليه بالرد وسقط حقه من الوصية». His refusal keeps the heirs in suspense and his right is not yet established (it is established by acceptance), so it falls."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f005",
+      "encoder": "refusal_right_falls",
+      "class": "derivable",
+      "facts": {"harms_other": true, "established": false},
+      "expected": true,
+      "note": "One who marks out dead land and neither revives it nor lets go for a long time: «فإن حقه يسقط منه». His holding bars others from reviving, and his right is precedence, not established ownership, so it falls."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f006",
+      "encoder": "refusal_compelled_to_choose",
+      "class": "derivable",
+      "facts": {"harms_other": true, "financial": false, "established": true},
+      "expected": true,
+      "note": "One who embraces Islam with two sisters or more than four wives and refuses to choose: «حبس وعزر حتى يختار». The right is non-financial (the marriage), so he is compelled to choose."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f007",
+      "encoder": "refusal_compelled_to_choose",
+      "class": "derivable",
+      "facts": {"harms_other": true, "financial": false, "established": true},
+      "expected": true,
+      "note": "The freed wife of a slave delays her choice for long: «أجبرها الحاكم على اختيار الفسخ أو الإقامة بالتمكين من الاستمتاع». The option is non-financial, so she is compelled to choose."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f008",
+      "encoder": "refusal_compelled_to_choose",
+      "class": "genuine_ikhtilaf",
+      "facts": {"harms_other": true, "financial": false, "established": true},
+      "expected": true,
+      "positions": [
+        {"who": "one riwāya: he is imprisoned until he returns or divorces", "ruling": true},
+        {"who": "the second riwāya: the ḥākim separates them", "ruling": false}
+      ],
+      "matches_madhhab": false,
+      "note": "The one who swore īlāʾ (a yamīn not to approach his wife; «المولى») refuses, after the term, both to return and to divorce: «فروايتان إحداهما يحبس حتى يفيء أو يطلق. والثانية: يفرق الحاكم بينهما». The reading compels the choice; al-Inṣāf (v09:p190) «وفي الأخرى: يطلق الحاكم عليه، وهو المذهب», with al-Muntahā and al-Iqnāʿ: against the reading; ledger. Follow-on in the record (a further «ومنها»): the pledgor who refuses payment when the debt falls due, with no agent to sell, has the pledge sold by the ḥākim, of the qāʿida's branch «وإن كان حقا عليه وأمكن استيفاؤه منه استوفي»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f009",
+      "encoder": "substitute_refusal_judged_by_original",
+      "class": "derivable",
+      "facts": {"refused_substitute": true},
+      "expected": true,
+      "note": "The defendant denies and refuses the oath: «وقضى بالنكول وجعل مقرا ; لأن اليمين بدل عن الإقرار وعن النكول فإذا امتنع من البدل حكم عليه بالأصل». The record states the qāʿida's own clause; no dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f010",
+      "encoder": "right_on_refuser_exacted",
+      "class": "genuine_ikhtilaf",
+      "facts": {"right_on_him": true, "exactable": true},
+      "expected": true,
+      "positions": [
+        {"who": "the wajh: he is judged against by refusal (nukūl)", "ruling": true},
+        {"who": "the wajh: he is imprisoned until he answers", "ruling": false}
+      ],
+      "matches_madhhab": true,
+      "note": "The defendant refuses to answer the claim at all, the claim being of the kind decided by refusal: «فهل يقضي عليه به هاهنا أم يحبس حتى يجيب على وجهين». The right claimed lies on him and can be exacted, so the reading exacts it. al-Inṣāf (v11:p264): «قال له القاضي: إن أجبت، وإلا جعلتك ناكلا. وقضيت عليك ... وهو المذهب», with al-Muntahā and al-Iqnāʿ; on the madhhab side. Follow-on: where the claim is not decided by refusal (killing, ḥadd), whether he is imprisoned till he confesses or released, two wujūh — the right is then not exactable."
+    }
+  ]
+}

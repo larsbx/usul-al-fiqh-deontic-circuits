@@ -1,0 +1,378 @@
+{
+ "suite": "m8_rajab_rajab_a10",
+ "status": "candidate",
+ "provenance": "Shard rajab-a10 (lane A): every farʿ record of Ibn Rajab's qawāʿid 109 and 111, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA10). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+ "cases": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f001",
+   "encoder": "vague_one_bars_all",
+   "class": "derivable",
+   "facts": {
+    "confusion_effective": true,
+    "distinguished": false
+   },
+   "expected": true,
+   "note": "Divorcing («طلق») one of his wives unspecified: «منع من وطء زوجاته حتى يميز بالقرعة على الصحيح». The barred one is unspecified, so he is barred from all until she is singled out. How she is singled out (by lot «على الصحيح», or by his designation in another riwāya) is a follow-on, not a dispute on the bar."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f002",
+   "encoder": "vague_one_bars_all",
+   "class": "derivable",
+   "facts": {
+    "confusion_effective": true,
+    "distinguished": false
+   },
+   "expected": true,
+   "note": "Freeing one of his slave-women unspecified: «منع من وطء واحدة منهن حتى تميز المعتقة بالقرعة». Barred from each until she is singled out; «وفيه وجه بالتعيين» concerns only how she is singled out."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f003",
+   "encoder": "vague_one_bars_all",
+   "class": "derivable",
+   "facts": {
+    "confusion_effective": true,
+    "distinguished": false
+   },
+   "expected": true,
+   "note": "The thrice-divorced wife confused with his other wives: «منع من وطء واحدة منهن حتى يميز المطلقة»; singling out by lot «على ظاهر المذهب» is the follow-on. A specific one confused with others, of the qāʿida's first kind."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f004",
+   "encoder": "vague_one_bars_all",
+   "class": "derivable",
+   "facts": {
+    "confusion_effective": true,
+    "distinguished": false
+   },
+   "expected": true,
+   "note": "His sister confused with a limited number of foreign women: «منع من التزوج بكل واحدة منهن حتى يعلم أخته من غيرها». The number being limited («بعدد محصور») is what makes the confusion effective."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f005",
+   "encoder": "vague_one_bars_all",
+   "class": "derivable",
+   "facts": {
+    "confusion_effective": true,
+    "distinguished": false
+   },
+   "expected": true,
+   "note": "Carrion confused with a slaughtered animal: «يمنع من الأكل منهما حتى يعلم المذكاة», with no dispute reported."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f006",
+   "encoder": "vague_one_bars_all",
+   "class": "derivable",
+   "facts": {
+    "confusion_effective": true,
+    "distinguished": false
+   },
+   "expected": true,
+   "note": "Impure vessels (najis, carrying najāsa) confused with pure ones: «يمنع من الطهارة بواحدة منها حتى يتبين على الظاهر», with no dispute reported."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f007",
+   "encoder": "vague_one_bars_all",
+   "class": "derivable",
+   "facts": {
+    "confusion_effective": true,
+    "distinguished": false
+   },
+   "expected": true,
+   "note": "Swearing by divorce («حلف بالطلاق») not to eat a date that then got mixed into dates: «فإنه يمنع من أكل تمرة منه حتى يعلم عين التمرة». That he is not judged to have broken the oath by eating one («وإن كنا لا نحكم عليه بالحنث بأكل واحدة») is a separate question; the bar is the leading ruling."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f008",
+   "encoder": "vague_one_bars_all",
+   "class": "derivable",
+   "facts": {
+    "confusion_effective": true,
+    "distinguished": false
+   },
+   "expected": true,
+   "note": "Swearing by the divorce of his wives («حلف بطلاق زوجاته») not to have intercourse with one of them, intending one unspecified: «فإنه يمنع من الوطء حتى يميزها بالقرعة وقيل بتعيينه». The dispute is only over how she is singled out."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f009",
+   "encoder": "vague_one_bars_all",
+   "class": "derivable",
+   "facts": {
+    "confusion_effective": true,
+    "distinguished": false
+   },
+   "expected": true,
+   "note": "Safe-conduct given to one of a fort's people (or one of them became Muslim), then each of them claims to be that one: «حرم قتلهم بغير خلاف». The leading ruling is the bar on killing them, with no dispute. The follow-on, enslaving them, is «وجهان»: forbidden while they all claim it («وهو المنصوص», Ibn Rajab's «والصحيح الأول»), or one is released by lot and the rest enslaved (Abū Bakr, al-Khiraqī, preferred by Ibn ʿAqīl). The first again applies the qāʿida's bar; the second singles out by lot."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f010",
+   "encoder": "combination_bars_its_amount",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "combining_amount": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "al-mashhūr (Ibn Rajab: «والأول أصح»): he may have intercourse with one of the two first; the other then becomes forbidden",
+     "ruling": false
+    },
+    {
+     "who": "Abū al-Khaṭṭāb, with what Ibn Hāniʾ reports from Aḥmad: he is barred from both until one is made forbidden",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "Owning two sisters, or a mother and daughter: «فالمشهور أن له الإقدام على وطء واحدة منهما ابتداء فإذا فعل حرمت الأخرى … والأول أصح ; لأن المحرم هو ما يحصل به الجمع». Intercourse with the first does not bring about the combination, so it is not barred. al-Inṣāf (v08:p125): «إشعار بجواز وطء إحداهما ابتداء قبل تحريم الأخرى. وهو صحيح. وهو المذهب. وعليه جماهير الأصحاب»; on the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f011",
+   "encoder": "combination_bars_its_amount",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "combining_amount": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "al-Qāḍī in al-Mujarrad (the second wajh): the first is permitted once the second has completed istibrāʾ; the second is the one forbidden, the combination having come about by her",
+     "ruling": false
+    },
+    {
+     "who": "the first wajh (Ibn Rajab: «والأظهر هاهنا الأول»): he refrains from both until he makes one forbidden, both being his firāsh",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "Having had intercourse with two sisters he owns, one after the other: «يمتنع من وطئهما جميعا حتى يحرم إحداهما … أم تباح له الأولى إذا استبرأ الثانية ; لأنهما أخص بالتحريم حيث كان الجمع حاصلا بوطئها على وجهين». The text states the combination came about by intercourse with the second, so renewed intercourse with the first is not the amount by which it came about, and the reading leaves her permitted. Ibn Rajab prefers the other wajh («لثبوت الفراش لهما جميعا فيكون الممنوع منهما واحدة مبهمة»), and al-Inṣāf (v08:p126) makes it «الصحيح من المذهب», as do al-Iqnāʿ and al-Muntahā. Off the madhhab; ledger entry."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f012",
+   "encoder": "combination_bars_its_amount",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "combining_amount": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "Ibn Rajab «فالأظهر», and one way of reading al-Qāḍī: he may have intercourse with four of them, which is his choice of them",
+     "ruling": false
+    },
+    {
+     "who": "another way of reading al-Qāḍī's words: all are forbidden before he chooses",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "A convert with more than four wives who become Muslim or are kitābiyyāt: «فالأظهر أن له وطء أربع منهن ويكون اختيارا منه ; لأن التحريم إنما يتعلق بالزيادة على الأربع وكلام القاضي قد يدل على هذا وقد يدل على تحريم الجميع قبل الاختيار». Four are not the amount by which the combination comes about. al-Inṣāf (v08:p220) holds that intercourse with one of them «كان اختيارا لها. وهو المذهب. وعليه جماهير الأصحاب», the ruling Ibn Rajab's «الأظهر» pairs with permission. The madhhab side is taken from Ibn Rajab's own «الأظهر» with that support; al-Inṣāf states no separate ruling on whether the intercourse is permitted."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f013",
+   "encoder": "combination_bars_its_amount",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "combining_amount": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "«فأشهر الوجهين»: al-Qāḍī in al-Mujarrad and Abū al-Khaṭṭāb: he is not an ʾīlāʾ-swearer until he has had three, and then he is one toward the fourth",
+     "ruling": false
+    },
+    {
+     "who": "al-Qāḍī in his Khilāf and Ibn ʿAqīl in ʿUmad, who called it the ẓāhir of Aḥmad: he is an ʾīlāʾ-swearer toward all of them at once",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "Swearing (yamīn) to his four wives «والله لا وطئتكن», on the view that part of the act does not break the oath: the oath bars only the act that completes the combination, so before three the intercourse of each is not barred and he is not yet an ʾīlāʾ-swearer. al-Inṣāf (v09:p180): «لم يصر موليا حتى يطأ ثلاثا، فحينئذ يصير موليا من الرابعة، على الصحيح من المذهب»; on the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f014",
+   "encoder": "combination_bars_its_amount",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "combining_amount": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "al-Majd («واستبعده»), Ibn Rajab («وهو كما قال»), the author of al-Targhīb: he need refrain from only one of the four until the adulteress is cleared",
+     "ruling": false
+    },
+    {
+     "who": "al-Qāḍī in al-Taʿlīq: he is barred from all four until the adulteress is shown not to be pregnant",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "Committing zinā while having four wives. The question is whether all four are barred. The bar is «لأجل الجمع بين خمس فيكفي فيه أن يمسك عن [وطء] واحدة منهن», so the four together are more than the amount by which the combination comes about. al-Inṣāf (v08:p133) has two wujūh on intercourse with four besides her: not permitted («وهو صحيح», put first by al-Mughnī and al-Sharḥ), or permitted (al-Mustawʿib). Neither bars all four. It cites al-Qāḍī's Taʿlīq only as reported, then al-Majd's «واستبعده» and this qāʿida. The later treatment is on the reading's side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f015",
+   "encoder": "simultaneous_combination_voids",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "has_precedence": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "the madhhab (Ibn Rajab: «فالنكاح باطل»; naṣṣ in the riwāyas of Ṣāliḥ and Abū al-Ḥārith): the contract is void for all, none having precedence",
+     "ruling": true
+    },
+    {
+     "who": "al-Qāḍī's iḥtimāl of a lot in his Khilāf (al-Majd: «لعلة تخالف الإجماع»), with Ibn Manṣūr's report «يختار إحداهما»: one of them stands",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "Marrying five, or two sisters, in one contract: «فالنكاح باطل ; لأن الجميع حصل به ولا مزية للبعض على البعض فيبطل». al-Inṣāf (v08:p123): «وكذا لو تزوج خمسا في عقد واحد. وهذا المذهب فيهما. وعليه الأصحاب»; on the madhhab side. Follow-on in the same record: a mother and daughter in one contract, «ففيه وجهان», both void (al-Qāḍī, Ibn ʿAqīl, al-Mughnī) or the mother's alone (al-Kāfī, al-Muḥarrar). al-Inṣāf (v08:p152) makes the first «المذهب». So the precedence clause of the qāʿida («اختص الفساد به على الصحيح») is not the madhhab there; noted for the integrator."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f016",
+   "encoder": "simultaneous_combination_voids",
+   "class": "derivable",
+   "facts": {
+    "has_precedence": false
+   },
+   "expected": true,
+   "note": "A convert with a mother and daughter, neither consummated: «فالمذهب أنه ينفسخ نكاح الأم وحدها … ويثبت نكاح البنت نص عليه … واتفق الأصحاب عليه». The item annotated is the mother's marriage, over which the daughter's has precedence. al-Qāḍī's «ولو لم يكن صحيحا فيها كان له أن يختار» rests on another premise. The riwāya of Abū Ṭālib (both forbidden) is carried on consummation. Neither is a dispute on these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f017",
+   "encoder": "simultaneous_combination_voids",
+   "class": "derivable",
+   "facts": {
+    "has_precedence": false
+   },
+   "expected": true,
+   "note": "Married to an adult and a young girl, the adult unconsummated, and she nursed the girl: «فسد نكاح الكبيرة لمصيرها من أمهات نسائه», with no dispute. Follow-on: the young girl's marriage, «روايتان», void or not void («وهي أصح», «الدوام أقوى من الابتداء»). al-Inṣāf (v09:p339) makes «وثبت نكاح الصغرى … هذا المذهب», which is the reading's output for the girl (she has precedence)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f018",
+   "encoder": "simultaneous_combination_voids",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "has_precedence": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "al-Majd's second iḥtimāl: the marriage of all is void, as with nursing, the event that forbids the combination",
+     "ruling": true
+    },
+    {
+     "who": "al-Majd's first iḥtimāl: he chooses two of them, as a slave who becomes Muslim with four wives does",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "A dhimmī with four wives who is enslaved: «يحتمل أن يتخير منهن اثنين … ويحتمل أن يبطل نكاح الجميع». The combination beyond a slave's two comes about at once with the four equal, so the reading voids all. No later treatment found in al-Inṣāf, al-Furūʿ, Kashshāf, al-Iqnāʿ or al-Muntahā, and Ibn Rajab marks neither. matches_madhhab is false for want of a madhhab label; ledger entry (tawaqquf). Candidate farq: initiation against continuance (f017 «الدوام أقوى من الابتداء»)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f019",
+   "encoder": "simultaneous_combination_voids",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "has_precedence": true
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "Ibn Rajab «على الأصح»: only the slave-woman's marriage is void; the free woman's stands",
+     "ruling": false
+    },
+    {
+     "who": "the other wajh implied by «على الأصح»: both marriages are void, as with five in one contract",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "Marrying a free woman and a slave-woman in one contract while lacking the condition (sharṭ) for marrying slave-women: «فإنه يبطل نكاح الأمة وحدها على الأصح ; لأن الحرة تمتاز عليهما بصفة ورود نكاحها عليها مثل هذه الحال ولا عكس». The item annotated is the free woman's marriage, which has precedence. No later treatment of this exact case found: al-Inṣāf and Kashshāf treat the combination only where the conditions hold (valid). The madhhab side is taken from Ibn Rajab's own «على الأصح». The record goes on to the qāʿida's third kind («لا وطئت إحداكن»; «لا وطئت واحدة منكن فالمذهب الصحيح أنه يعم … وهو قول القاضي والأصحاب», against Abū Bakr's reported ʾīlāʾ from one unspecified). That is the common-amount reading's output, kept in this note."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f020",
+   "encoder": "common_amount_general",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "bars_common_amount": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "Abū al-Khaṭṭāb and Ibn ʿAqīl in their Khilāfs (Ibn Rajab: «وهو الحق»): the oath is general, so going out without leave after once going out with it breaks it",
+     "ruling": true
+    },
+    {
+     "who": "al-Qāḍī in his Khilāf: unqualified, the oath is confined to one time, and once she has gone out with leave a later going out without it does not break it",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "«إن خرجتي من الدار مرة بغير إذني فأنت طالق»: what is barred is one going out without leave, an indefinite under the condition («النكرة في الشرط»), the amount common to every going out. «وإن أطلق فقال القاضي في خلافه تتقيد يمينه بمرة واحدة … وخالفه أبو الخطاب وابن عقيل في خلافهما وهو الحق». al-Inṣāf (v09:p098) on the cognate «إذا خرجت بغير إذني … ثم أذن لها فخرجت، ثم خرجت بغير إذنه: طلقت»: «هذا المذهب»; on the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f000",
+   "encoder": "alternative_proven_alone",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "proof_establishes_cause": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "one riwāya: the diya is not owed by the one who declines (by al-Inṣāf's alternative it falls on the treasury)",
+     "ruling": false
+    },
+    {
+     "who": "the other riwāya: the diya is owed by him",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "On the view that deliberate killing obliges one of two things: the heirs claim in qasāma and the one claimed against declines the oaths (nukūl, «فنكل», from the yamīn of the claim): «فهل يلزمه الدية على روايتين». Declining establishes the diya but not retaliation, so the statement does not establish the diya. al-Inṣāf (v10:p149): «إحداهما: تلزمهم الدية. وهو المذهب», and Taṣḥīḥ al-Furūʿ: «وهو الصحيح». Off the madhhab; ledger entry. Candidate farq: declining is a judgment by default against the one who declines, not a proof of one alternative."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f001",
+   "encoder": "alternative_proven_alone",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "proof_establishes_cause": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "Ibn Rajab «والصحيح فيها عدم وجوب الدية»: no diya",
+     "ruling": false
+    },
+    {
+     "who": "the other riwāya: the diya of the wound is owed",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "Claiming a deliberate wound and bringing one man and two women: «فهل تلزمه ديتها على روايتين والصحيح فيها عدم وجوب الدية لئلا يلزم أن يجب بالقتل الدية عينا». That proof does not establish retaliation, the original of which the diya is the substitute: «إن قلنا أن موجب القتل القصاص عينا فالدية بدل». al-Inṣāf (v12:p087), on the cognate of deliberate killing: «وإذا شهد بقتل العمد رجل وامرأتان: لم يثبت قصاص ولا دية، هذا المذهب مطلقا، وعليه الأصحاب»; on the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f002",
+   "encoder": "alternative_proven_alone",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "proof_establishes_cause": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "the riwāya the madhhab follows: the value is not owed",
+     "ruling": false
+    },
+    {
+     "who": "the riwāya of Ibn Manṣūr (reported in al-Muḥarrar): the value of the slave is owed, without retaliation",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "One man and two women testify that a slave deliberately killed a slave: «فهل يثبت بذلك غرم قيمة العبد دون القود على روايتين حكاهما صاحب المحرر». al-Inṣāf (v12:p087): «لم يثبت قصاص ولا دية، هذا المذهب مطلقا، وعليه الأصحاب، وعنه: يثبت المال إن كان المجني عليه عبدا، نقلها ابن منصور»; on the madhhab side. Ibn Rajab doubts the record belongs here, since in Ibn Manṣūr's riwāya the killer appears free and the crime obliges money alone. That would make it the other question, a proof establishing the money without the crime, noted, not annotated. This record's text is the inline «(ومنها)» item that follows f001 in the witness."
+  }
+ ]
+}

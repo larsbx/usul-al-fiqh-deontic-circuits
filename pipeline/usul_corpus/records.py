@@ -6,12 +6,17 @@ from .hudud import Hadd
 from .segment import Unit
 
 PIPELINE = "usul_corpus/1"
-EXCERPT_LEN = {"public_domain_text": 400, "modern_cache_only": 160}
+EXCERPT_LEN = {"public_domain_text": 400, "modern_cache_only": 160, "cc_by_verbatim": 400}
 
 
 def _loc(witness: str, page: tuple[int, int] | None, anchor: str) -> str:
     where = f"/v{page[0]:02d}:p{page[1]:03d}" if page else ""
     return f"src:{witness}{where}#{anchor}"
+
+
+def _span(u) -> list[int] | None:
+    """The first and last page of a line-segmented unit; none when it sits on no numbered page."""
+    return [p[1] for p in (u.page, u.end_page) if p] or None
 
 
 def unit_tags(units: tuple[Unit, ...], prefix: str = "q") -> list[str]:
@@ -98,4 +103,65 @@ def sharh_record(work: dict, witness: str, link) -> dict:
         "similarity": link.similarity,
         "status": "candidate",
         "extraction": {"pipeline": PIPELINE, "method": "verse_trigram_chain"},
+    }
+
+
+def fatwa_record(work: dict, witness: str, idx: int, u) -> dict:
+    """One question-and-answer unit (``qa.QA``) of a fatāwā collection: excerpts within the
+    work's rights, the page span, and the sha256 receipt of the full unit text."""
+    cap = EXCERPT_LEN[work["rights"]]
+    tag = f"qa{idx:05d}"
+    return {
+        "id": f"{work['id']}.{witness.replace('-', '_')}.{tag}",
+        "work": work["id"],
+        "witness": witness,
+        "record_type": "fatwa",
+        "number": u.number,
+        "locator": _loc(witness, u.page, tag),
+        "page_span": _span(u),
+        "question_ar": u.question[:cap],
+        "answer_ar": u.answer[:cap] if u.answer else None,
+        "sha256": u.sha256,
+        "status": "candidate",
+        "extraction": {"pipeline": PIPELINE, "method": "qa"},
+    }
+
+
+def masala_record(work: dict, witness: str, idx: int, u) -> dict:
+    """One entry (``qa.Entry``) of a *Masāʾil* collection: its excerpt within the work's rights,
+    printed number, page span and the sha256 receipt of the whole entry."""
+    tag = f"m{idx:05d}"
+    return {
+        "id": f"{work['id']}.{witness.replace('-', '_')}.{tag}",
+        "work": work["id"],
+        "witness": witness,
+        "record_type": "masala",
+        "number": u.number,
+        "locator": _loc(witness, u.page, tag),
+        "page_span": _span(u),
+        "excerpt_ar": u.text[:EXCERPT_LEN[work["rights"]]],
+        "sha256": u.sha256,
+        "status": "candidate",
+        "extraction": {"pipeline": PIPELINE, "method": "masail"},
+    }
+
+
+def bab_record(work: dict, witness: str, idx: int, u) -> dict:
+    """One unit (``abwab.Bab``) of a matn: its heading, rank, path, excerpt within the work's rights,
+    page span and the sha256 receipt of the whole unit."""
+    tag = f"b{idx:05d}"
+    return {
+        "id": f"{work['id']}.{witness.replace('-', '_')}.{tag}",
+        "work": work["id"],
+        "witness": witness,
+        "record_type": "bab",
+        "rank": u.rank,
+        "heading_ar": u.heading[:EXCERPT_LEN[work["rights"]]],
+        "path_ar": list(u.path),
+        "locator": _loc(witness, u.page, tag),
+        "page_span": _span(u),
+        "excerpt_ar": u.text[:EXCERPT_LEN[work["rights"]]],
+        "sha256": u.sha256,
+        "status": "candidate",
+        "extraction": {"pipeline": PIPELINE, "method": "abwab"},
     }

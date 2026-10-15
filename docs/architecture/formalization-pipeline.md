@@ -45,8 +45,9 @@ Each witness is pinned: the OpenITI ones by commit SHA, the others by Shamela bo
 | Ibn ʿUthaymīn, *Taqrīb al-Tadmuriyya* | Shamela 11100 | located |
 | al-Mardāwī, *al-Inṣāf* *(addition)* | OpenITI 0900AH, Shamela 21609 | located |
 | 23 classical works on qiyās (8 Ḥanbalī, 13 other madhhabs, Ibn Ḥazm against) | OpenITI, pinned commits | located and fetched; see [`qiyas.md`](qiyas.md#sources) |
+| 49 fatāwā, masāʾil and aḥkām collections cited by Ibn Bāz, Ibn ʿUthaymīn, al-Albānī and al-Saʿdī (52 with three already registered), plus 8 of their own collections as citers (9 with *al-Sharḥ al-Mumtiʿ*) | OpenITI (pinned commits) and Shamela | located and fetched; titles and authors counted; see [`reception.md`](reception.md); mentions labelled for a classifier, see [`mentions.md`](mentions.md) |
 
-**Rights policy.** Full texts live only in `.cache/`. Committed records carry excerpts of at most 400 characters for pre-modern texts and at most 160 characters for modern authors (`records.EXCERPT_LEN`).
+**Rights policy.** Full texts are fetched into `.cache/`. The 89 public-domain text witnesses (works with `rights: public_domain_text`, all OpenITI) are also committed under [`corpus/texts`](../../corpus/texts/README.md) via Git LFS, byte-identical to their pinned source; modern texts are never committed. Committed records carry excerpts of at most 400 characters for pre-modern texts and at most 160 characters for modern authors (`records.EXCERPT_LEN`).
 
 ## 2. Rule counts checked against pinned editions (M0 exit)
 
@@ -123,3 +124,18 @@ Each invariant was mutation-checked once: a seeded bug in the spec makes TLC rep
 3. **M4:** the first tranche is in (204 furūʿ, Lean-guarded; see [`takhrij.md`](takhrij.md)). Next: review the annotations, decide IQ-09 and IQ-20 (IQ-21, the yaqīn threshold, was adopted on human review: `Grade.YaqinFor`, Ibn Taymiyya's second-order reading; amended so that `update` treats a ẓann of unknown preponderance as tawaqquf: inert as a challenger, shakk-strength as the incumbent, `update_conservative` otherwise), then extend to the remaining Ibn Rajab furūʿ (911 furūʿ and divisions in 127 qawāʿid, plus 6 qawāʿid with no segmented furūʿ, after M8 tranches 1–3, which took qawāʿid 6, 22, 68; 7, 27, 28, 64, 65; and 1, 17, 66, 91, 93; opening examples are now segmented as `.f000`, see [`takhrij.md`](takhrij.md#m8-scale-up-first-tranche)) and, after M5, to Ibn al-Laḥḥām's uṣūl rules.
 4. **OCR:** recover the 18 missing *Ṭarīq* paragraphs and verse 60's commentary link; split *Ṭarīq* into its source sections («ومن رسالة …») (see [`ocr-pipeline.md`](ocr-pipeline.md)).
 5. **Proof debt:** prove that every admissible extension of a finite framework extends to a preferred extension, then connect attacks on structured derivations to that framework. Finite grounded convergence and leastness are now proved in `Usul.FiniteGrounded`; see [the remaining semantic contracts](lean-semantic-contracts.md#remaining-proof-debt).
+
+### Required source replay (PR-06)
+
+`make source-verify-fetch` restores/downloads the reconciliation witness subset
+from the existing registry and checks complete source hashes, Arabic quotations,
+closing-page locators and immediate qualifier boundaries. `make source-verify`
+runs the same gate without network fetching; `make all` includes it. Neither
+command creates or updates a source lock. A missing required witness is an error,
+including in `test_reconcile.py` and the required witness-integrity tests.
+
+CI uploads `.cache/source-verification.json` and `.cache/corpus-tests.xml` even on
+failure. Read the verified/failed/excluded coverage and pytest skip reasons;
+green required-subset replay does not certify the excluded sources, foundation
+numbering checks, semantic adequacy, or independent scholarly review. See the
+[PR-06 log](../problem-register.md) for scope, source corrections and limitations.

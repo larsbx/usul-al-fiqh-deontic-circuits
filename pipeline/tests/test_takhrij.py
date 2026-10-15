@@ -51,20 +51,8 @@ def test_annotated_cases_cover_their_qawaid_exactly_once_and_stay_generated():
         jsonschema.validate(json.loads(f.read_text()), schema)
     cases = takhrij.load(ROOT / "corpus")
     assert cases and all(takhrij.check_case(c) == [] for c in cases)
-    far = {}
-    for f in (ROOT / "corpus/records").glob("*.jsonl"):
-        for line in f.read_text().splitlines():
-            r = json.loads(line)
-            if r["record_type"] == "far":
-                far[r["id"]] = r["qaida"]
-    ids = [c["far"] for c in cases]
-    assert len(ids) == len(set(ids)) and set(ids) <= set(far)
-    home = {c["far"]: c.get("home") or c.get("revisit", {}).get("from_encoder", c["encoder"]) for c in cases}
-    for c in cases:
-        assert far[c["far"]] in takhrij.ENCODERS[home[c["far"]]]["qawaid"], c["far"]
-    annotated = set(home.values())
-    expected = {i for e in annotated for i, q in far.items() if q in takhrij.ENCODERS[e]["qawaid"]}
-    assert set(ids) == expected
+    records = [json.loads(line) for f in (ROOT / "corpus/records").glob("*.jsonl") for line in f.read_text().splitlines()]
+    assert takhrij.annotation_errors(cases, records) == []
     tests = ROOT / "formal/lean/UsulTest"
     assert (tests / "Takhrij.lean").read_text() == takhrij.lean_file(cases)
     assert (tests / "TakhrijMirror.lean").read_text() == takhrij.mirror_file()
@@ -87,3 +75,33 @@ def test_bank_is_applied_to_itself():
     for c in cases:
         if "revisit" in c:
             assert set(c["revisit"]["closed_by"]) <= takhrij.provides(), c["far"]
+
+
+RECORDS = [{"id": "w.x.q001.f001", "record_type": "far", "qaida": "w.x.q001"},
+           {"id": "w.x.q001.f002", "record_type": "far", "qaida": "w.x.q001"},
+           {"id": "w.y.qa00001", "record_type": "fatwa"}, {"id": "w.z.b00001", "record_type": "bab"}]
+
+
+def _annotation(i, encoder="itlaf"):
+    return {"far": i, "encoder": encoder}
+
+
+def test_a_unit_record_is_annotated_once_with_no_qaida_to_own():
+    """Fatwā, masʾala and bāb units are claimable obligations (units.json): an annotation of one is
+    valid once, and the qāʿida checks of furūʿ do not apply to it (routing assigns its encoder)."""
+    assert takhrij.annotation_errors([_annotation("w.y.qa00001"), _annotation("w.z.b00001", "tabaa")], RECORDS) == []
+    assert takhrij.annotation_errors([_annotation("w.y.qa00001")] * 2, RECORDS) == ["w.y.qa00001: annotated twice"]
+    assert takhrij.annotation_errors([_annotation("w.y.qa00009")], RECORDS) == ["w.y.qa00009: not a committed farʿ or unit record"]
+
+
+def test_furu_keep_their_qaida_ownership_and_completeness(monkeypatch):
+    monkeypatch.setitem(takhrij.ENCODERS, "t", {"qawaid": ["w.x.q001"]})
+    assert takhrij.annotation_errors([_annotation("w.x.q001.f001", "itlaf")], RECORDS)[0] == "w.x.q001.f001: its qāʿida is not its home encoder's"
+    assert takhrij.annotation_errors([_annotation("w.x.q001.f001", "t")], RECORDS) == ["w.x.q001.f002: unannotated farʿ of an annotated encoder's qāʿida"]
+
+
+def test_the_case_schema_admits_unit_ids():
+    pattern = json.loads((ROOT / "schemas/takhrij_cases.schema.json").read_text())["properties"]["cases"]["items"]["properties"]["far"]["pattern"]
+    import re
+    assert all(re.search(pattern, i) for i in ("a.b.q001.f001", "a.b.qa00001", "a.b.m00001", "a.b.b00001"))
+    assert not re.search(pattern, "a.b.q001")
