@@ -255,6 +255,15 @@ With main merged (PR-30's eleven recovered furūʿ add three on-madhhab ikhtilā
 | 128.f004 | al-Targhīb's derivation is a Ḥanbalī position against Ibn Rajab's «بالاتفاق» | ikhtilāf stands |
 | 119.f003, 124.f001 | the output is the same on either value of the unstated fact | nothing turns on it |
 
+**Lane A, round 5** was the first round under the rule that every ikhtilāf has a tarjīḥ. It added 57 entries and 151 evidence items, one entry for each of its ikhtilāf cases. All 41 on-madhhab entries confirm their side and 16 are residues; there is no tawaqquf and no jamʿ. Two cases went through the bank's procedure at integration (invariant 10):
+
+| Farʿ | The procedure applied | Outcome |
+|---|---|---|
+| 144.f005 | no later treatment, no label of Ibn Rajab's: Aḥmad's ẓāhir outranks the majority's and a cognate taṣḥīḥ | on the madhhab side, confirmed |
+| 146.f004 | two riwāyāt with no madhhab label; al-Mardāwī's «قلت: الصواب أنه يحلها» (ashab) decides | residue, against the reading |
+
+The ledger now holds every one of the 545 ikhtilāf cases: 543 active entries (2 archived) with 1,963 evidence items; 20 jamʿ, 1 naskh, 508 tarjīḥ (155 residues) and 14 tawaqquf; 288 entries confirm an on-madhhab annotation.
+
 **Left as residues, for want of a cited farq:**
 
 | Encoder | Residues / cases | Why no jamʿ |

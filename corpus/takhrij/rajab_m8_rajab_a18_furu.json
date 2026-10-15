@@ -1,0 +1,387 @@
+{
+  "suite": "m8_rajab_rajab_a18",
+  "status": "candidate",
+  "provenance": "Shard rajab-a18 (lane A): every farʿ record of Ibn Rajab's qawāʿid 137 and 138, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA18). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf, al-Furūʿ with its Taṣḥīḥ, and the muʿtamad (al-Muntahā, al-Iqnāʿ and al-Buhūtī's two sharḥs); candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f001",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "either_of_two": true,
+        "victim_encumbered": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "liable to the pledgee (Aḥmad's naṣṣ in Ibn Manṣūr's report; al-Qāḍī and most, «أشهرهما»; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "not liable, wealth being fixed only by choice (al-Majd's taṣḥīḥ, «وصححه صاحب المحرر»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The pledgor retaliates, without the pledgee's leave, on the killer of the pledged slave: «فهل يلزمه الضمان للمرتهن أم لا على وجهين. أشهرهما اللزوم نص عليه أحمد في رواية ابن منصور». On the riwāya that the obligation is one of two things (aḥad amrayn), where Ibn Rajab says the khilāf must be placed («ويتعين بناؤه على القول بأن الواجب أحد أمرين»), and the pledgee's right attached to the slave («وقد كان تعلق حقه برقبة العبد المرهون فيتعلق ببدله الواجب»): retaliating forfeits it, so he is liable (ḍamān). al-Inṣāf (v05:p182): «وهذا المذهب. نص عليه في رواية ابن منصور»; al-Muntahā, al-Iqnāʿ and both of al-Buhūtī's sharḥs state it. On the madhhab side. Follow-ons: the measure (his value in the naṣṣ, the lesser of value and arsh per al-Qāḍī and most); whether he may retaliate without leave at all (Ibn Rajab's bracket «قالوا ولا يجوز له القصاص بدون إذن المرتهن»; al-Inṣāf has the master's right to qiṣāṣ as the madhhab, the muʿtamad only with leave or a substitute pledge); and al-Kāfī's placing of the two wujūh on the riwāya of qawad alone, which Ibn Rajab calls «بعيد»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f002",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "class": "derivable",
+      "facts": {
+        "either_of_two": true,
+        "victim_encumbered": true
+      },
+      "expected": true,
+      "note": "A slave of an estate drowned in debt is killed deliberately, and the heirs, ownership having passed to them, choose qiṣāṣ: «فهل يطالبون بقيمة العبد أم لا؟ يخرج على المرهون». The creditors' right is attached to the estate's slave as the pledgee's to the pledge, so on aḥad amrayn the retaliation forfeits it and they owe its value, as in the pledge (q137.f001, where liability is the naṣṣ and the madhhab). No dispute is reported for this farʿ itself; al-Majd's wajh in the pledge would carry over by the same takhrīj."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f003",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "class": "derivable",
+      "facts": {
+        "either_of_two": true,
+        "victim_encumbered": true
+      },
+      "expected": true,
+      "note": "The slave whose usufruct is bequeathed is killed deliberately: may the owner of the raqaba retaliate, and is he liable? «صرح القاضي في خلافه بالمنع كالرهن سواء» — the leading ruling, on the wajh that the usufruct holder's right survives the killing, so his right is attached to the slave's substitute: barred without his leave, and liable. Ibn Rajab: «وأما على الوجه الآخر وهو بطلان حقه بالقتل ... فلا يمنع مالك الرقبة من الاقتصاص فلا شيء عليه» — the same reading with no attached right gives that. The antecedent is a separate ruling of the bequest of usufruct; al-Inṣāf (v07:p263) has «وإن قتلت فلهم قيمتها في أحد الوجهين) وتبطل الوصية. وهو المذهب», on which the owner retaliates freely."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f004",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "either_of_two": true,
+        "victim_encumbered": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "he may retaliate without his master's leave (al-Qāḍī in al-Mujarrad, Ibn ʿAqīl; Ibn Rajab; the ṣaḥīḥ per Taṣḥīḥ al-Furūʿ)",
+          "ruling": false
+        },
+        {
+          "who": "barred without his leave (al-Qāḍī in his Khilāf as qiyās al-madhhab, from Abū Bakr's case)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The mukātab is injured: may he retaliate without his master's leave? «ذكر القاضي في المجرد وابن عقيل الجواز ... وقال القاضي في خلافه قياس المذهب قول أبي بكر في منعه». Ibn Rajab: «وفيه نظر ... وهذا بخلاف اقتصاص المكاتب من الجاني عليه فإنه لم يفوت به مالا مملوكا له» — no right of another is attached to what he forfeits, so he may. Taṣḥīḥ al-Furūʿ (v08:p152): «له ذلك. قلت: وهو الصواب والصحيح من المذهب»; al-Muntahā, al-Iqnāʿ and both sharḥs state it. On the madhhab side. Follow-on: Abū Bakr's case, the mukātab retaliating on one of his slaves for another, where the killer is owned wealth (barred in the muʿtamad), and the mukātab owes his master nothing even there."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f005",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "class": "derivable",
+      "facts": {
+        "either_of_two": true,
+        "victim_encumbered": true
+      },
+      "expected": true,
+      "note": "A slave bequeathed to a named legatee is killed before acceptance: may the heirs retaliate without the legatee's leave? «إذا قلنا هو ملك يتوجه المنع إذا قلنا: إن الجناية أوجبت أحد شيئين فإن فعلوا ضمنوا للموصى له القيمة إذا قبل». The legatee's right is attached to the slave and its value: barred, and liable if he accepts. No dispute is reported (Ibn Rajab's tawajjuh)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f006",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "class": "derivable",
+      "facts": {
+        "either_of_two": true,
+        "victim_encumbered": true
+      },
+      "expected": true,
+      "note": "A slave of a muḍāraba with profit is killed deliberately: «فهما شريكان وليس لأحدهما الانفراد بالقصاص ولا العفو. هذا ظاهر كلام القاضي وابن عقيل فلو اقتص رب المال بغير اختيار المضارب توجه أن يضمن للمضارب حصته من الربح إن قلنا الواجب بالقتل أحد شيئين». The worker's share of profit is attached to the slave: the owner may not act alone and is liable for that share. No dispute is reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f007",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "class": "derivable",
+      "facts": {
+        "either_of_two": true,
+        "victim_encumbered": true
+      },
+      "expected": true,
+      "note": "The pledgor's waiver of the crime on the pledged slave, «وقد ذكرنا حكمه مستوفى»: on aḥad shayʾayn a free waiver is, in al-Kāfī, «كالعفو عن المال», with three wujūh — invalid, «لا يصح» (al-Kāfī); valid, its value taken as a pledge (Abū al-Khaṭṭāb, al-Talkhīṣ's jazm); valid as to the pledgor, not the pledgee, the value taken from the culprit and returned when the pledge ends (al-Qāḍī, Ibn ʿAqīl). All three keep the pledgee's attached right: the waiver does not pass against it. al-Muntahā: «وإن عفا عن المال صح لا في حق مرتهن». Follow-ons: on the riwāya of qawad alone, ḍamān is denied by al-Qāḍī and Ibn ʿAqīl and implied by Abū al-Khaṭṭāb; on the wajh that the restricted donor's waiver drops the wealth, «فيتخرج في الضمان وجهان كالاقتصاص»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f008",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "either_of_two": true,
+        "victim_encumbered": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the wealth does not drop with the qawad (the mashhūr, Ibn Rajab: «لا يسقط المال بإسقاطهم وهو المشهور»)",
+          "ruling": true
+        },
+        {
+          "who": "the waiver stands and the wealth drops (the second wajh, «في المحرر أنه المنصوص عليه»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The bankrupt (muflis) waives gratis the qawad due to him: «فالمشهور أنا إن قلنا الواجب القود عينا صح، وإن قلنا الواجب أحد أمرين لم يصح العفو عن المال وعلى الوجه الآخر الذي قيل أنه المنصوص يصح». The creditors' right is in his property, not in the one injured, and the diya is not yet fixed, so the waiver forfeits nothing attached: it stands and the wealth drops. al-Muntahā: «ومثله العفو عن قود بلا مال من محجور عليه لسفه أو فلس ... ويصح ; لأن الدية لم تتعين»; al-Buhūtī's Kashshāf: «والمذهب صحة العفو من هؤلاء مجانا». al-Iqnāʿ («لا مجانا») and al-Furūʿ (from al-Targhīb, «اختار الأكثر: لا يصح مجانا») hold the other side, and al-Inṣāf only relays Ibn Rajab's two wujūh. On the madhhab side by the later muʿtamad; the ledger entry grades both. Follow-on: the ḍamān on those who report it (as in the pledge)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f009",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "either_of_two": true,
+        "victim_encumbered": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the wealth does not drop with the qawad (the mashhūr, Ibn Rajab: «لا يسقط المال بإسقاطهم وهو المشهور»), by «وحكمه حكم المفلس»",
+          "ruling": true
+        },
+        {
+          "who": "the waiver stands (the wajh «في المحرر أنه المنصوص عليه», by «وحكمه حكم المفلس»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The mukātab's gratis waiver of qiṣāṣ: «وحكمه حكم المفلس» — the two wujūh of q137.f008 for him. Nothing attached to the one injured is forfeited, so the waiver stands. al-Buhūtī's Kashshāf names the mukātab: «(السفيه ووارث المفلس والمكاتب وكذا المريض فيما زاد على الثلث) والمذهب صحة العفو من هؤلاء مجانا»; al-Iqnāʿ has «وكذا ... والمكاتب» on the other side. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f010",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "either_of_two": true,
+        "victim_encumbered": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the wealth does not drop with the qawad (the mashhūr, Ibn Rajab: «لا يسقط المال بإسقاطهم وهو المشهور»), by «وحكمه حكم ذلك»",
+          "ruling": true
+        },
+        {
+          "who": "the waiver stands (the wajh «في المحرر أنه المنصوص عليه», by «وحكمه حكم ذلك»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The heirs, the estate drowned in debt, waive gratis the qiṣāṣ for their muwarrith: «وحكمه حكم ذلك». The creditors' right is in the estate, the diya not fixed, the one killed no encumbered property: the waiver stands. al-Muntahā: «أو من الورثة مع دين مستغرق»; al-Buhūtī's Kashshāf: «والمذهب صحة العفو من هؤلاء مجانا»; al-Iqnāʿ («ووارث المفلس») on the other side. On the madhhab side. Contrast q137.f002, where the one killed is an estate slave to which the creditors' right was attached."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f011",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "either_of_two": true,
+        "victim_encumbered": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the wealth does not drop with the qawad (the mashhūr, Ibn Rajab: «لا يسقط المال بإسقاطهم وهو المشهور»), by «كذلك»",
+          "ruling": true
+        },
+        {
+          "who": "the waiver stands from the whole estate (the wajh «في المحرر أنه المنصوص عليه», by «كذلك»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The sick man's gratis waiver of qiṣāṣ beyond a third: «وحكمه فيما إذا زاد على الثلث كذلك». The heirs' right is in his estate, the diya not fixed: the waiver stands from the whole estate. al-Muntahā: «وإن أوجب قود أنفذ من أصل التركة ولو لم تكن سوى دمه», al-Buhūtī: «نصا لعدم تعين المال»; al-Iqnāʿ («وكذا المريض فيما زاد على الثلث إن مات») on the other side. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f012",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "class": "derivable",
+      "facts": {
+        "either_of_two": true,
+        "victim_encumbered": false
+      },
+      "expected": false,
+      "note": "The heir waives the slave who killed the slave whose usufruct is bequeathed: «هل يضمن لمالك المنفعة قيمتها على وجهين حكاهما في الترغيب والأظهر تخريجهما على أن حق صاحب المنفعة هل سقط بالإتلاف أم لا». The two wujūh rest on that antecedent, a separate ruling of the bequest of usufruct, each side the reading's own output on its own facts. Annotated on the madhhab of the antecedent, al-Inṣāf (v07:p263) «وإن قتلت فلهم قيمتها في أحد الوجهين) وتبطل الوصية. وهو المذهب», with «ينبني على الخلاف ما إذا عفا عن قاتلها: هل تلزمه القيمة»: the usufruct holder's right lapsed, nothing attached is forfeited, no liability. On the other antecedent Ibn Rajab's tawajjuh, «أن لا ينفذ عفوه في قدر قيمة المنافع ; لأنها ملك للغير إذا قلنا الواجب أحد أمرين», is the reading with the right attached. Contrast the hired slave, «لأن الإجارة تنفسخ بالقتل»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f013",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "class": "derivable",
+      "facts": {
+        "either_of_two": true,
+        "victim_encumbered": true
+      },
+      "expected": true,
+      "note": "A bequeathed slave is killed before acceptance: may the heirs waive his killer without the legatee's choice? «لأن قيمته له صرح بذلك أبو الخطاب والأصحاب» — they may not, the legatee's right being attached to his value. Derivable. Follow-on: Ibn Rajab's takhrīj on the riwāya of qawad alone, «فلم يجب بهذه الجناية مال فلهم العفو»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f014",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "either_of_two": true,
+        "victim_encumbered": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the waiver is valid (al-Qāḍī in his Khilāf, on either riwāya)",
+          "ruling": false
+        },
+        {
+          "who": "suspended on the heirs' consent (Ibn Rajab's «ويتوجه فيه وجه آخر»)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The victim, in his death-illness, waives the heir who wounded him deliberately: «إن قلنا الواجب القود عينا فهو صحيح وإن قلنا الواجب أحد شيئين فكذلك صرح به القاضي في خلافه في ويتوجه فيه وجه آخر بوقوفه على إجازة الورثة». The heirs' right is in his estate, the diya not fixed, the waived qawad nothing attached: the waiver stands. al-Inṣāf (v10:p010) on the general rule: «وإن عفا عن قاتله بعد الجرح: صح ... وهو المذهب»; al-Muntahā: «وإن أوجب قود أنفذ من أصل التركة». On the madhhab side. Follow-ons, the two tanbīhs: an unqualified waiver (falls on qawad and diya, «وذكر أنه المنصوص», per al-Majd; al-Inṣāf «بريء من الدية. كالقود على الصحيح من المذهب، نص عليه»), and the one who chose qiṣāṣ then waives to the diya (yes, al-Qāḍī and Ibn ʿAqīl; no, an iḥtimāl in al-Kāfī and al-Muḥarrar; al-Inṣāf «على الصحيح من المذهب»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f015",
+      "encoder": "sulh_replaces_owned_wealth",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "either_of_two": true,
+        "victim_owned": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "valid (the majority's iṭlāq, «وأطلق الأكثرون»; al-Mughnī «لا أعلم فيه خلافا»; al-Sāmarrī)",
+          "ruling": false
+        },
+        {
+          "who": "not valid beyond the diya in its genus (Abū al-Khaṭṭāb in al-Intiṣār; al-Talkhīṣ within the genus)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A ṣulḥ over deliberate killing for more than the diya: «قال أبو الخطاب في الانتصار لا يصح لأن الدية تجب بالعفو والمصالحة فلا يجوز أخذ أكثر من الواجب من الجنس ... وأطلق الأكثرون جواز الصلح بأكثر من الدية من غير تفصيل. قال في المغني لا أعلم فيه خلافا». The one killed is no owned property, so the ṣulḥ is over the qawad («فالمأخوذ عوض عنه وليس من جنسه فجاز من غير تقدير»), not bound by the diya: valid. al-Inṣāf (v05:p246): «ويصح الصلح عن القصاص بديات، وبكل ما يثبت مهرا) . هذا المذهب. وعليه جماهير الأصحاب»; al-Muntahā «بفوق دية». On the madhhab side. Follow-on: al-Talkhīṣ allows it outside the diya's genus only, and within it only after the genus is fixed (ribā al-nasīʾa and al-faḍl)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f016",
+      "encoder": "sulh_replaces_owned_wealth",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "either_of_two": true,
+        "victim_owned": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "no shufʿa, the countervalue not being wealth (Abū Bakr, al-Qāḍī and most, «على أشهر الوجهين»)",
+          "ruling": false
+        },
+        {
+          "who": "shufʿa (Ibn Ḥāmid; on aḥad shayʾayn al-Mughnī, al-Talkhīṣ and al-Sāmarrī in al-Mustawʿib)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A ṣulḥ over the blood of deliberate killing by a share (shiqṣ) of land: is it pre-empted? «إن قلنا الواجب القود عينا فالشقص مأخوذ بعوض غير مالي فلا شفعة فيه على أشهر الوجهين وهو قول أبي بكر والقاضي والأكثرين خلافا لأبي حامد، وإن قلنا الواجب أحد شيئين فهو مأخوذ بعوض مالي ... صرح به صاحب المغني والتلخيص». The one killed is no owned property, so the ṣulḥ is over the qawad, a non-wealth countervalue: no shufʿa. al-Inṣāf (v06:p252), without binding it to either riwāya: «أحدهما: لا شفعة في ذلك. وهو الصحيح من المذهب»; al-Muntahā, al-Iqnāʿ and al-Buhūtī state it. On the madhhab side; Ibn Rajab: «وهو وقف على إطلاق الأكثرين»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f017",
+      "encoder": "sulh_replaces_owned_wealth",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "either_of_two": true,
+        "victim_owned": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "trade wealth without intention, a substitute for the slave (al-Qāḍī in al-Takhrīj on aḥad shayʾayn)",
+          "ruling": true
+        },
+        {
+          "who": "not without intention, the ṣulḥ being over the qawad (Ibn Rajab's «وقد يقال», which he finds in the ẓāhir of al-Qāḍī's taʿlīl)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "One's slave kills a trade slave deliberately, and the owner takes wealth in ṣulḥ: is it trade wealth without intention? «ذكر القاضي في التخريج أنه إن قلنا الواجب القصاص عينا لم يصر المال المصالح به للتجارة إلا بنية ... وإن قلنا أحد شيئين فهو من مال التجارة بغير نية كثمن المبيع، وعلل بأنه عوض عن المقتول». The one killed was owned wealth, so the ṣulḥ wealth replaces it: trade wealth without intention. al-Iqnāʿ: «ولو قتل عبد تجارة خطأ أو عمدا فصالح سيده على مال صار للتجارة»; al-Furūʿ and al-Buhūtī state it. On the madhhab side. Ibn Rajab: «وهذا منزل على أن الصلح وقع على المال أما إن قيل إنه واقع عن القود فقد يقال كذلك ; لأنه بدل عن العبد وقد يقال لا يصير للتجارة إلا بنية». Follow-on: the muḍāraba slave (al-Qāḍī and Ibn ʿAqīl: muḍāraba wealth «لأنه بدل بكل حال»), and Abū al-Barakāt's iḥtimāl that the muḍāraba lapses («أن المضاربة قد بطلت») on qawad alone."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f000",
+      "encoder": "burdened_thing_compensated",
+      "class": "derivable",
+      "facts": {
+        "guaranteed": true,
+        "destroyed": false,
+        "claimant_exists": true
+      },
+      "expected": true,
+      "note": "Zakāt, on its attaching to the property itself «على المشهور»: «فإنها لا تسقط بتلف المال ويجب ضمانها». A guaranteed thing is compensated by perishing as by destruction. No dispute is reported here (the riwāya that it drops when the property perishes without fault is treated in the zakāt chapter)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f001",
+      "encoder": "burdened_thing_compensated",
+      "class": "derivable",
+      "facts": {
+        "guaranteed": true,
+        "destroyed": false,
+        "claimant_exists": false
+      },
+      "expected": true,
+      "note": "Game for the muḥrim and in the Ḥaram: «مضمون على المالك بالجزاء» — guaranteed, so compensated whatever else holds (Lean `guaranteed_always`). Follow-on, the first example of the second kind: «الرهن يضمن بالإتلاف مثل أن يستهلكه الراهن أو يعتقه إن كان عبدا ولا يضمن بالتلف», which the reading gives with an unguaranteed thing and a present pledgee."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f002",
+      "encoder": "burdened_thing_compensated",
+      "class": "derivable",
+      "facts": {
+        "guaranteed": false,
+        "destroyed": true,
+        "claimant_exists": true
+      },
+      "expected": true,
+      "note": "The master frees his slave who has committed a crime: «فإنه يضمنه» — unguaranteed, destroyed (the locus of the right), the victim present: he is liable. The dispute is over the measure, «وهل يضمنه بأرش الجناية مطلقا أو بأقل الأمرين منه ومن قيمته على روايتين» (with Ibn Manṣūr's and Ḥarb's reports splitting on his knowledge), not over the liability. Follow-ons: killed by the master, its value; killed by a stranger, «ففي الخلاف الكبير يسقط الحق كما لو مات» against Ḥarb's report, chosen by Abū Bakr, that the right passes to the value."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f003",
+      "encoder": "burdened_thing_compensated",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "guaranteed": false,
+        "destroyed": true,
+        "claimant_exists": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the diya in his estate (Aḥmad's naṣṣ; al-Qāḍī on either riwāya; the ṣaḥīḥ per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "it drops with his death or killing, rich or poor, on either riwāya (al-Shaykh Taqī al-Dīn's takhrīj)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "One kills deliberately and is then killed: Aḥmad in Ibn Thawb's report, «إن أولياءه بالخيار إن شاءوا قتلوا وإن شاءوا قبلوا الدية فقد نص على أن القاتل إذا قتل تعينت الدية في تركته». The killer's person is unguaranteed, destroyed by another, the first victim's heirs present: the diya is due in his estate. al-Inṣāf (v10:p006): «وإن مات القاتل وجبت الدية في تركته) . وكذا لو قتل. وهذا هو الصحيح من المذهب، نص عليه». On the madhhab side. The same al-Inṣāf passage has the diya due on his natural death too, where the reading (perishing of an unguaranteed thing) gives nothing: a residue outside this case. Follow-ons: Ibn Rajab's inference that nothing is due on the riwāya of qawad alone; who claims (the first victim's heirs from his estate, or, by al-Mughnī's takhrīj, against the second killer); the heir who kills the culprit without the ḥākim («ظاهر هذا أنه لا يلزمه ضمان»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f004",
+      "encoder": "burdened_thing_compensated",
+      "class": "derivable",
+      "facts": {
+        "guaranteed": false,
+        "destroyed": true,
+        "claimant_exists": true
+      },
+      "expected": true,
+      "note": "A sacrificial animal or hady designated, not for a debt in the dhimma: «فإن أتلفه أو تلف بتفريطه فعليه ضمانه بمثله ; لأن مستحقه موجود وهم مساكين» — unguaranteed, destroyed, its beneficiaries present: liable. Follow-on: lost without fault, «فلا شيء عليه», against the riwāya transmitted by al-Qāḍī, Abū al-Khaṭṭāb and Ibn ʿAqīl «بوجوب الضمان كالزكاة», which Ibn Rajab calls «بعيد جدا»; and the vow (nadhr) of charity with a specific property that perishes."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f005",
+      "encoder": "burdened_thing_compensated",
+      "class": "derivable",
+      "facts": {
+        "guaranteed": false,
+        "destroyed": false,
+        "claimant_exists": false
+      },
+      "expected": false,
+      "note": "A vow (nadhr) to free a specific slave who dies before being freed: «لم يلزمه عتق غيره ولزمه كفارة يمين نص عليه أحمد لعجزه عن المنذور» — unguaranteed and perished: no substitute is owed (the kaffāra is for the broken vow, not a ḍamān of the slave). Follow-ons: the master kills him, «فهل يلزمه ضمانه على وجهين» — no (al-Qāḍī, Abū al-Khaṭṭāb: «فإذا فات المصرف لم يبق مستحق للعتق») or yes, its value spent on freeing slaves (Ibn ʿAqīl, the slaves being a maṣrif), a dispute over whether a claimant exists; a stranger kills him (the value to the master, Abū al-Khaṭṭāb; a wajh extracted that it is spent on freeing)."
+    }
+  ]
+}

@@ -83,7 +83,8 @@ structure Situation extends Qaida.Qarain, Qaida.ItlafHal, Qaida.ItlafQasd, Qaida
     Qaida.Rajab19, Qaida.Rajab37, Qaida.Sadi41, Qaida.Rajab93, Qaida.Rajab29, Qaida.Lahham61,
     Qaida.Rajab64, Qaida.Rajab46, Qaida.Rajab10, Qaida.Rajab38, Qaida.Rajab119, Qaida.Rajab120,
     Qaida.Rajab121, Qaida.Rajab122, Qaida.Rajab123, Qaida.Rajab124, Qaida.Rajab125, Qaida.Rajab126,
-    Qaida.Rajab128, Qaida.Rajab129, Qaida.Rajab130, Qaida.Rajab131
+    Qaida.Rajab128, Qaida.Rajab129, Qaida.Rajab130, Qaida.Rajab131,
+    Qaida.Rajab132, Qaida.Rajab134, Qaida.Rajab136, Qaida.Rajab137, Qaida.Rajab138, Qaida.Rajab139, Qaida.Rajab141, Qaida.Rajab142, Qaida.Rajab143, Qaida.Rajab144, Qaida.Rajab145, Qaida.Rajab146
 
 /-! ## Encoders typed over `Situation` (names as in `takhrij.ENCODERS`) -/
 

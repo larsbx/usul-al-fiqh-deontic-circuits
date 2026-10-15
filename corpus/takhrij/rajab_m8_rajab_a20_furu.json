@@ -1,0 +1,457 @@
+{
+  "suite": "m8_rajab_rajab_a20",
+  "status": "candidate",
+  "provenance": "Shard rajab-a20 (lane A): every farʿ record of Ibn Rajab's qawāʿid 144 and 146, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA20). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f001",
+      "encoder": "heir_takes_deceased_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "accrues_at_death": false,
+        "claimed_or_held": false,
+        "attached_to_inherited_property": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "not inherited without his claim (Aḥmad «في أكثر الروايات», «على المذهب»; the madhhab per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "the heirs may claim it at all events (the ẓāhir of Abū Ṭālib's report from Aḥmad; Abū al-Khaṭṭāb's takhrīj)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: the shufʿa of one who died without claiming it: «الشفعة فلا تورث مطالبته على المذهب». An unclaimed right of acquisition, so on the reading's «أشهرهما» it is not inherited. al-Inṣāf (v06:p297): «فإن مات قبل طلبها: لم يستحق الورثة الشفعة. على الصحيح من المذهب. وعليه الأصحاب. ونص عليه مرارا». On the madhhab side. Follow-ons: the two maʾkhadhs Aḥmad pointed to (a right needing his claim, so known desire suffices, al-Qāḍī; or a right lost by abandonment, so the heirs of an absent shafīʿ may claim); Abū Ṭālib's report «فلولده أن يطلبوا الشفعة», whose ẓāhir is inheritance at all events, and Abū al-Khaṭṭāb's takhrīj to the same effect."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f002",
+      "encoder": "heir_takes_deceased_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "accrues_at_death": false,
+        "claimed_or_held": false,
+        "attached_to_inherited_property": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "not inherited without his claim (Aḥmad's naṣṣ; the madhhab per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "inherited at all events (the wajh Abū al-Khaṭṭāb and others extracted)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The right to cancel under khiyār al-sharṭ: «فلا تورث بغير مطالبة نص عليه أيضا وخرج أبو الخطاب وغيره وجها آخر بإرثه مطلقا». Unclaimed and not a right of property attached to the estate: not inherited. al-Inṣāf (v04:p393): «ومن مات منهما بطل خياره، ولم يورث) . هذا المذهب. وعليه جماهير الأصحاب», adding that a claimed option is inherited. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f003",
+      "encoder": "heir_takes_deceased_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "accrues_at_death": false,
+        "claimed_or_held": false,
+        "attached_to_inherited_property": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "not established without his claim (al-Qāḍī; Aḥmad's riwāya that the gift singling out a child becomes fixed by his death)",
+          "ruling": false
+        },
+        {
+          "who": "passes to the heirs (the ẓāhir of Abū al-Khaṭṭāb's takhrīj of the khilāf; Aḥmad's riwāya that the other children may reclaim)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: the cancellation by a father's taking back his gift: «فلا يثبت بدون المطالبة أيضا صرح به القاضي، وظاهر كلام أبي الخطاب تخريج الخلاف فيه». Unclaimed: not inherited. Kashshāf (v03:p210) uses it as the agreed base of analogy: «فلم يورث كخيار الرجوع في الهبة». The cognate sub-question Ibn Rajab cites, the gift singling out some children when the father dies before equalising or taking it back («روايتان»), is in al-Inṣāf (v07:p140) «فإن مات قبل ذلك) (ثبت للمعطى) . هذا المذهب»: the other heirs do not take it back. On the madhhab side. Follow-on: Ibn Rajab's two maʾkhadhs there (a father's personal right of rujūʿ, or a command to undo an injustice owed to the other children, who may then reclaim)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f004",
+      "encoder": "heir_takes_deceased_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "accrues_at_death": false,
+        "claimed_or_held": false,
+        "attached_to_inherited_property": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "not inherited without his claim (Aḥmad's naṣṣ; the madhhab per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "inherited and claimable (Abū al-Khaṭṭāb's takhrīj)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The ḥadd of qadhf: «فلا يورث بدون المطالبة أيضا نص عليه وخرج أبو الخطاب فيه وجها بالإرث والمطالبة». A right that is not of property, unclaimed: not inherited. al-Inṣāf (v04:p393): «حد القذف لا يورث إلا بمطالبة الميت في حياته، كخيار الشرط. على الصحيح من المذهب. ونص عليه»; and (v10:p220) «فإن مات ولم يطالب: سقط الحد بلا إشكال». On the madhhab side. Follow-on: who among the heirs takes a claimed ḥadd (all of them «على المنصوص»; the ʿaṣaba; all but the spouses), from the record's tanbīh."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f005",
+      "encoder": "heir_takes_deceased_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "accrues_at_death": false,
+        "claimed_or_held": false,
+        "attached_to_inherited_property": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "it lapses without his claim (the ẓāhir of Aḥmad's words)",
+          "ruling": false
+        },
+        {
+          "who": "the heirs exact it, since it falls to property (the ẓāhir of al-Qāḍī and the majority)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Qiṣāṣ for less than a life, where the victim died of another cause without claiming it: «وظاهر كلام أحمد كما قدمناه أنه يسقط بدون الطلب، وظاهر كلام القاضي والأكثرين أنه يستوفي، وعللوا بأنه يسقط إلى مال فهو كخيار الرد بالعيب». The qāʿida places it among the unclaimed rights that are not of property, so the reading gives Aḥmad's ẓāhir: it lapses. The majority characterise it as a right that falls to property; the dispute is over that characterisation, so the case stays ikhtilāf. No later work found treating these facts; al-Inṣāf (v09:p482) has the cognate: a child or madman who dies before majority holding a qiṣāṣ, «قام وارثهما مقامهما في القصاص على الصحيح من المذهب», which leans to the majority, so the madhhab side is not confirmed for the reading. Integration: with no later treatment of these facts and no label of Ibn Rajab's, the bank's grade order decides (derivation-method invariant 10): Aḥmad's ẓāhir outranks the majority's and the cognate taṣḥīḥ, so the reading's side is taken as the madhhab's."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f006",
+      "encoder": "heir_takes_deceased_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "accrues_at_death": false,
+        "claimed_or_held": false,
+        "attached_to_inherited_property": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the bequest lapses (Aḥmad's manṣūṣ via Ibn Manṣūr; al-Qāḍī and the majority)",
+          "ruling": false
+        },
+        {
+          "who": "the option of acceptance passes to his heirs (al-Khiraqī; the madhhab per al-Inṣāf)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The option to accept a bequest, the legatee dying after the testator and before accepting: «المنصوص عن أحمد أن الوصية تبطل بموت الموصى له قبل وصولها إليه ... وهو اختيار القاضي والأكثرين إذا مات قبل القبول. وقال الخرقي يثبت الخيار بين القبول والرد لورثة الموصى له». An unclaimed right of acquisition: on the reading's «أشهرهما» not inherited, so the bequest lapses. al-Inṣāf (v07:p205) on al-Khiraqī's «قام وارثه مقامه»: «هذا المذهب. نص عليه في رواية صالح. قاله المجد». Off the madhhab side. Follow-on: al-Majd's reading of Ṣāliḥ's report and of Ibn Manṣūr's (on taking possession, not acceptance)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f007",
+      "encoder": "heir_takes_deceased_right",
+      "class": "derivable",
+      "facts": {
+        "accrues_at_death": false,
+        "claimed_or_held": false,
+        "attached_to_inherited_property": true
+      },
+      "expected": true,
+      "note": "The kafīl for a debt owed to the deceased: «وهو كالرهن ; لأنه توثقة», passing to the heirs without claim; al-Qāḍī's ḍābiṭ «أن ما فيه مال ينتقل إلى الورثة وما لا فلا». A right attached to the inherited debt: derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f008",
+      "encoder": "heir_takes_deceased_right",
+      "class": "derivable",
+      "facts": {
+        "accrues_at_death": false,
+        "claimed_or_held": false,
+        "attached_to_inherited_property": true
+      },
+      "expected": true,
+      "note": "The ḍamān: «فإذا مات وله دين له به ضامن انتقل إلى الورثة مضمونا». Attached to the inherited debt: derivable. Follow-on: a ḥawāla by the creditor in his life ends the ḍamān («فإنه ينفسخ الضمان بالحوالة»), Aḥmad's naṣṣ via Muhannā, «لأن الأجنبي ليس بخليفة لرب الدين ... بخلاف الوارث»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f009",
+      "encoder": "heir_takes_deceased_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "accrues_at_death": false,
+        "claimed_or_held": false,
+        "attached_to_inherited_property": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the term passes, the debt not falling due once the heirs secure it («أشهر الروايتين»; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "it falls due by his death (the other riwāya; chosen by Ibn Abī Mūsā)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The term of a deferred debt owed by the deceased: «فلا يحل الدين المؤجل إذا أوثقه الورثة برهن أو كفيل في أشهر الروايتين». The term is a right of the estate passing with it; the heirs here secure it (the qualifier is part of the case). Inherited: the debt does not fall due. al-Inṣāf (v05:p307): «ومن مات وعليه دين مؤجل: لم يحل إذا وثق الورثة) ... هذا المذهب». On the madhhab side. Follow-on: if security is impossible it falls due «على الصحيح من المذهب»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f010",
+      "encoder": "heir_takes_deceased_right",
+      "class": "derivable",
+      "facts": {
+        "accrues_at_death": false,
+        "claimed_or_held": false,
+        "attached_to_inherited_property": true
+      },
+      "expected": true,
+      "note": "Return for a defect: the heir returns it; al-Qāḍī hesitated whether «ثابت ابتداء أو بطريق الإرث؟ والمشهور أنه إرث», and the option for a missing quality made a sharṭ of the contract is the same. Both modes give the heir the return, so the leading ruling is undisputed: a right attached to the inherited property, derivable. Follow-ons: al-Qāḍī's view in Kitāb al-Takhrīj that the heir owns «على حكم ملك الميت» (the ʿīna case), which Ibn Rajab calls «غريب»; the record then opens the second kind (rights owed by the deceased)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f011",
+      "encoder": "heir_stands_in_owed_right",
+      "class": "derivable",
+      "facts": {
+        "obligation_binding": true,
+        "tends_to_binding": false
+      },
+      "expected": true,
+      "note": "Second kind, rights owed by the deceased: «إذا مات وعليه ديون أو أوصى بوصايا فللورثة تنفيذها إذا لم يعين وصيا». Lāzim («لازمة»): the heir discharges them, derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f012",
+      "encoder": "heir_stands_in_owed_right",
+      "class": "derivable",
+      "facts": {
+        "obligation_binding": true,
+        "tends_to_binding": false
+      },
+      "expected": true,
+      "note": "Leading ruling: an obligatory act of worship done for him after death, ḥajj and the «المنذورات»: «فإن الورثة يفعلونها عنه ويجب عليهم بذلك إن كان له مال وإلا فلا». Lāzim: the heir stands in, derivable. Follow-ons: a stranger acting without the heirs' leave («ففي الإجزاء وجهان»), expiations by manumission (al-Mughnī: the heir's is valid, a stranger's not; al-Bulgha), and the heir's slaughter of a designated uḍḥiya; the tanbīh on which heir is meant."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f013",
+      "encoder": "heir_stands_in_owed_right",
+      "class": "derivable",
+      "facts": {
+        "obligation_binding": false,
+        "tends_to_binding": true
+      },
+      "expected": true,
+      "note": "The pledgor who dies before delivering a pledge that binds only on delivery: «فوارثه قائم مقامه في اختيار التقبيض والامتناع ذكره الأصحاب ... لأنه عقد يئول إلى اللزوم فلا يبطل في الموت كالبيع في مدة الخيار». A permissible contract tending to bindingness: the heir stands in, derivable. Follow-on: «بخلاف الشركة والمضاربة مع أن في المضاربة خلافا سبق»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f014",
+      "encoder": "heir_stands_in_owed_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "obligation_binding": false,
+        "tends_to_binding": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the heir stands in his place, as with the rahn (Abū al-Khaṭṭāb; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "the gift lapses (the manṣūṣ via Ibn Manṣūr; Ibn Abī Mūsā; al-Qāḍī and Ibn ʿAqīl for a gift in health)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The donor who dies before the gift becomes lāzim by delivery: «ففيه وجهان: أحدهما: يقوم وارثه مقامه في ذلك كالرهن قاله أبو الخطاب. والثاني: يبطل وهو المنصوص في رواية ابن منصور». A contract tending to bindingness, like the rahn: the heir stands in. al-Inṣāf (v07:p123) on «وإن مات الواهب: قام وارثه مقامه في الإذن والرجوع»: «هذا المذهب». On the madhhab side. Follow-on: a gift in the final illness, where al-Qāḍī and Ibn ʿAqīl give the heirs the option «لشبهها بالوصية»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f000",
+      "encoder": "rajiyya_takes_wife_rule",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "rajiyya": true,
+        "listed_difference": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "lawful to him, as a wife (a riwāya; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "not lawful until he takes her back (a riwāya; the ẓāhir of al-Khiraqī)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Leading ruling: whether she is lawful to him during the ʿidda: «أن في إباحتها في مدة العدة روايتين». A listed point, so the reading has her differ from a wife: not lawful. al-Inṣāf (v09:p153): «ويباح) (لزوجها وطؤها والخلوة والسفر بها ...) ، وهذا المذهب». Off the madhhab side. Follow-on: on the riwāya of prohibition, whether intercourse obliges a mahr («على وجهين»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f001",
+      "encoder": "rajiyya_takes_wife_rule",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "rajiyya": true,
+        "listed_difference": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "bidʿa («أصح الروايتين»)",
+          "ruling": false
+        },
+        {
+          "who": "not bidʿa, as for a wife (the other riwāya)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Divorcing her again during her ʿidda: «أن طلاقها في مدة العدة طلاق بدعة على أصح الروايتين». A listed point: she differs from a wife (who may be divorced by the sunna in a fresh ṭuhr): bidʿa. al-Inṣāf (v08:p452): «وعلى المذهب: ليس له أن يطلق ثانية وثالثة قبل الرجعة. على الصحيح من المذهب», with «وعنه: له ذلك قبل الرجعة». On the madhhab side, by that cognate taṣḥīḥ. Candidate farq: al-Inṣāf and Kashshāf treat a second divorce alone as unlike the third («لا إن طلقها اثنتين فلا يحرم»); the record does not say how many."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f002",
+      "encoder": "rajiyya_takes_wife_rule",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "rajiyya": true,
+        "listed_difference": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "valid, as for a wife (a riwāya; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "not valid (a riwāya)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Whether an ilāʾ from her is valid: «على روايتين». A listed point: she differs from a wife: the ilāʾ is not valid. al-Inṣāf (v09:p152): «والرجعية زوجة، يلحقها الطلاق والظهار والإيلاء) ... وهذا المذهب، وعليه الأصحاب، وعنه: لا يصح الإيلاء منها». Off the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f003",
+      "encoder": "rajiyya_takes_wife_rule",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "rajiyya": true,
+        "listed_difference": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "her choice is valid, as a wife's, and her option lapses (a wajh; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "her choice is not valid during the ʿidda (a wajh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A rajʿiyya freed under a slave husband: «هل يصح اختيارها لزوجها ... على وجهين». A listed point: her choosing him is not valid as a wife's would be. al-Inṣāf (v08:p182): «فإن رضيت بالمقام، فهل يبطل خيارها؟ على وجهين ... أحدهما: يبطل. وهو المذهب»: her choice is effective. Off the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f004",
+      "encoder": "rajiyya_takes_wife_rule",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "rajiyya": true,
+        "listed_difference": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "it makes her lawful to the first, as with a wife (a riwāya; al-Mardāwī's «الصواب»)",
+          "ruling": true
+        },
+        {
+          "who": "it does not (a riwāya)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The thrice-divorced wife marries another who is alone with her and divorces her («ثم طلقها»), the ʿidda and rajʿa being established by the khalwa («وهو ظاهر المذهب»), then has intercourse with her in the ʿidda: «فهل يحلها لزوجها الأول؟ على روايتين، حكاهما صاحب الترغيب». A listed point: unlike a wife's, the intercourse does not make her lawful to the first. al-Inṣāf (v09:p166) quotes the record and adds «قلت: الصواب أنه يحلها», al-Mardāwī's own view, for the wife's ruling; no madhhab label holds the reading's side, so it is annotated off the madhhab."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f005",
+      "encoder": "rajiyya_takes_wife_rule",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "rajiyya": true,
+        "listed_difference": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "attached to him, as a wife's child (a riwāya; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "not attached (a riwāya)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A child conceived by the rajʿiyya during the ʿidda: «فهل تلحق بمطلقها أم لا؟ على روايتين». A listed point: unlike a wife's child, it is not attached. al-Inṣāf (v09:p263) on the rajʿiyya who gives birth more than four years after the divorce, before the ʿidda ends: «أحدهما: يلحقه نسبه. وهو المذهب». Off the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f006",
+      "encoder": "rajiyya_takes_wife_rule",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "rajiyya": true,
+        "listed_difference": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "custody returns at once, during the period of rajʿa (a wajh; the madhhab per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "it does not return until the ʿidda ends, as while a wife (a wajh; an extraction in al-Mughnī, «قياس المذهب» per al-Qāḍī)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A mother who lost custody by marrying a stranger and is then divorced revocably: «هل تعود إلى حضانته في مدة الرجعة أم لا تعود حتى تنقضي عدتها؟ على وجهين». A listed point: unlike a wife (whose marriage bars custody), the rajʿiyya regains it at once. al-Inṣāf (v09:p425): «فيرجع إليها حقها من الحضانة بمجرد الطلاق. وهو الصحيح من المذهب». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f007",
+      "encoder": "rajiyya_takes_wife_rule",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "rajiyya": true,
+        "listed_difference": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "she moves to the ʿidda of death, as a wife (a riwāya; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "she observes the longer of the two (a riwāya)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The husband of a rajʿiyya dies: «فهل تنتقل إلى عدة الوفاة أو تعتد بأطولهما؟ على روايتين». A listed point: unlike a wife, she observes the longer of the two. al-Inṣāf (v09:p275): «فإن مات زوج الرجعية: استأنفت عدة الوفاة من حين موته، وسقطت عدة الطلاق) . هذا المذهب». Off the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f008",
+      "encoder": "rajiyya_takes_wife_rule",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "rajiyya": true,
+        "listed_difference": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "she must stay home for God's right, as the widow (Aḥmad's naṣṣ via Abū Dāwūd; al-Qāḍī; the author of al-Muḥarrar)",
+          "ruling": false
+        },
+        {
+          "who": "she may go out with her husband's leave, as a wife (a bare «قيل»)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Staying in her home: «أن الرجعية يجب عليها لزوم منزلها لحق الله تعالى كالمتوفى عنها نص عليه أحمد في رواية أبي داود وذكره القاضي في خلافه وصاحب المحرر، وقيل هي كالزوجة يجوز لها الخروج والتجول بإذن الزوج مطلقا». A listed point: unlike a wife, she must stay home. Kashshāf (v05:p435): «وحكم الرجعية في العدة حكم المتوفى عنها في لزوم المنزل»; Sharḥ al-Muntahā «نصا». On the madhhab side (no label found in al-Inṣāf; the muʿtamad states it)."
+    }
+  ]
+}

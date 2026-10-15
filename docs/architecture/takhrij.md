@@ -178,14 +178,14 @@ Every ikhtilāf farʿ off the marked madhhab side is run through the kernel's ow
 **Scope reconciliation.** Counts come from committed record IDs minus all existing annotations, not historical estimates. M4 now annotates 196 Ibn Rajab records under 14 qawāʿid, including nine `.f000` additions. PR #29's 1,129 segmented records minus those 196 and tranche 1's 26 left 907 records in 122 qawāʿid with cases. The old “869 in 146” mixed pre-opening counts with all unannotated qawāʿid, including those with no segmented case. PR #30 then added seven segmented records and annotated tranche 2's 25: 1,136 − 196 − 26 − 25 = 889, in 118 qawāʿid. Merged PR #32 then added the list-and-division segmentation and 21 candidate annotations. The unified tranche 3 below preserves those cases and PR #31's eight existing-record annotations, in one 29-record suite; current totals are generated below. Ibn al-Laḥḥām and the global report's totals are separate scopes.
 
 <!-- BEGIN GENERATED M8 SCOPE -->
-**Current M8 inventory (generated).** 1,189 segmented Ibn Rajab furūʿ records = 822 annotated + **367 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 121 are fully annotated and **33 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
+**Current M8 inventory (generated).** 1,189 segmented Ibn Rajab furūʿ records = 914 annotated + **275 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 133 are fully annotated and **21 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
 
 The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
 
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.759 | 0 | 0 |
-| All annotation suites | 889 | 0.950 | 0.705 | 0 | 44 |
+| All annotation suites | 981 | 0.955 | 0.716 | 0 | 44 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -496,6 +496,20 @@ Results on the round:
 - **Reconciliation:** 21 contradictions with 38 evidence items: 17 residues, 2 for the reading, 2 tawaqquf.
 - **Register questions** are listed in [`taarud-reconciliation.md`](taarud-reconciliation.md).
 
+**Lane A, round 5 (parallel; qawāʿid 132, 134, 136–139, 141–146; 92 furūʿ).** Four shards (`rajab-a17` … `rajab-a20`) from the pinned base `c780c5f`, under the owner's rule that every ikhtilāf has a tarjīḥ: on-madhhab cases get ledger entries too, and each must confirm its side. The brief added round 4's lessons and the source gate (no excerpt may stop before a qualifier). Readings, by shard:
+
+| Shard | Qāʿida: reading |
+|---|---|
+| a17 | 132 `craftCountsAsRich`; 134 `impedimentOperates`; 136 `preliminariesForbidden`; 139 `unfixedMayReachFixed`; 141 `dueTimeGoverns` |
+| a18 | 137 `forfeitsAttachedRight`, `sulhReplacesWealth`; 138 `mustCompensate` |
+| a19 | 142 `returnedIsFirst`; 143 `badalStands`; 145 `bainAsWife` |
+| a20 | 144 `heirInherits`, `heirStandsIn`; 146 `wifeRuleApplies` |
+
+Results on the round:
+- **35 derivable, 57 ikhtilāf (41 on the madhhab side), 0 encoding errors, no new gaps.** Coverage 92/92 = 1.000, madhhab coverage 76/92 = 0.826.
+- **At integration** 144.f005 moved to the madhhab side. No later work treats its facts and Ibn Rajab gives no label, so the bank's grade order decides (invariant 10): Aḥmad's ẓāhir outranks the majority's and a cognate taṣḥīḥ. The fourteen new encoders were typed (`Usul.Typing`, Ibn Rajab 132–146), and a leading paragraph mark was removed from twelve excerpts.
+- **Reconciliation:** 57 entries with 151 evidence items, one for every ikhtilāf. All 41 on-madhhab entries confirm their side; the 16 others are residues. No research question was needed.
+
 **Coverage trend:**
 
 | Stage | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
@@ -539,6 +553,8 @@ Results on the round:
 | All, after lane A round 3 | 752 | 0.992 | 0.736 | 0 | 6 |
 | Lane A round 4 alone | 80 | 1.000 | 0.738 | 0 | 0 |
 | All, after lane A round 4 and main (rajab-q127, lane B R2 sample) | 881 | 0.951 | 0.706 | 0 | 44 |
+| Lane A round 5 alone | 92 | 1.000 | 0.826 | 0 | 0 |
+| All, after lane A round 5 and main (PR #76) | 981 | 0.955 | 0.716 | 0 | 44 |
 
 A fresh tranche starts lower than the self-applied bank, as expected. Its new gaps go into the ledger, and the next round of the bank applied to itself will run over them.
 
