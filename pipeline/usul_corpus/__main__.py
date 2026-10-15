@@ -771,8 +771,9 @@ def cmd_fatawa_prolog(_: argparse.Namespace) -> int:
     return 0
 
 
-def cmd_judgement(_: argparse.Namespace) -> int:
-    """Each encoder's sort and question (corpus/types/encoders.json), guarded in Lean and reported."""
+def cmd_judgement(args: argparse.Namespace) -> int:
+    """Each encoder's sort and question (corpus/types/encoders.json), guarded in Lean and reported.
+    `--check` validates the types and their Lean guards without writing, and needs no LFS data."""
     import gzip
 
     from . import fatawa_takhrij, judgement, takhrij
@@ -780,7 +781,14 @@ def cmd_judgement(_: argparse.Namespace) -> int:
     if errs := judgement.check(types, takhrij.ENCODERS):
         print("\n".join(errs))
         return 1
-    (SIGNATURE_LEAN.parent / "EncoderTypes.lean").write_text(judgement.lean_file(types, judgement.typed_names(ROOT)), encoding="utf-8")
+    lean, guards = SIGNATURE_LEAN.parent / "EncoderTypes.lean", judgement.lean_file(types, judgement.typed_names(ROOT))
+    if args.check:
+        if lean.read_text(encoding="utf-8") != guards:
+            print("types stale (formal/lean/UsulTest/EncoderTypes.lean): run python -m usul_corpus judgement", file=sys.stderr)
+            return 1
+        print(json.dumps({"encoders_typed": len(types)}))
+        return 0
+    lean.write_text(guards, encoding="utf-8")
     cases = takhrij.load(CORPUS) + fatawa_takhrij.load(CORPUS)
     rep = judgement.report(types, takhrij.ENCODERS, cases)
     labels = ISLAMQA / "labels" / "islamqa-ar.labels.jsonl.gz"
@@ -867,7 +875,9 @@ def parser() -> argparse.ArgumentParser:
     sub.add_parser("oracle").set_defaults(run=cmd_oracle)
     sub.add_parser("fatawa-takhrij").set_defaults(run=cmd_fatawa_takhrij)
     sub.add_parser("fatawa-prolog").set_defaults(run=cmd_fatawa_prolog)
-    sub.add_parser("judgement").set_defaults(run=cmd_judgement)
+    jd = sub.add_parser("judgement", help="the types layer: each encoder's sort and question, guarded in Lean")
+    jd.add_argument("--check", action="store_true", help="validate the types and their Lean guards without writing")
+    jd.set_defaults(run=cmd_judgement)
     fa = sub.add_parser("fatawa")
     fa.add_argument("--lang")
     fa.add_argument("--refresh", action="store_true")

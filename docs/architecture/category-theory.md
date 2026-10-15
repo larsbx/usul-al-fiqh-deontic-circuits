@@ -1,6 +1,6 @@
 # The categorical layer (`Usul.Cat`)
 
-**Place in the stack.** Qawāʿid ([`schemata.md`](schemata.md)) are the foundation. Types come next ([`judgement.md`](judgement.md): `Usul.Judgement`, `Usul.Typing`). This layer is downstream of both. Its objects are the types' scales (ḥukm, grade, verdict), and its factorization is the qawāʿid's S1 shape `Factors`.
+**Place in the stack.** Qawāʿid ([`schemata.md`](schemata.md)) are the foundation. Types come next ([`judgement.md`](judgement.md): `Usul.Judgement`, `Usul.Typing`). This layer is downstream of both. Its scales are Σ's (`Usul.Hukm`, `Usul.Signature`: the vocabulary below the qawāʿid), and its factorization is the qawāʿid's S1 shape `Factors`.
 
 The roadmap (§0) gives category theory one job: **compositional specification, checked through
 Lean statements**. `formal/lean/Usul/Cat/` is that layer. Like the rest of the kernel it does not

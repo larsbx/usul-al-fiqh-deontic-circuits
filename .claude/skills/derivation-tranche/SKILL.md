@@ -30,7 +30,7 @@ The method is specified in `docs/architecture/derivation-method.md`; this is how
 Follow `docs/architecture/derivation-method.md` §5.3 for one round:
 - verify each contribution against its claim and base commit;
 - merge in a fixed order;
-- regenerate with `python -m usul_corpus takhrij`, `reconcile`, `worklist`, `routing`, `sheaf`, `docs` and `signature`, and the type system's Prolog export with `make lean`;
+- regenerate with `python -m usul_corpus takhrij`, `reconcile`, `worklist`, `routing`, then the types (`judgement`) before the categories built on them (`sheaf`), then `docs` and `signature`, and the type system's Prolog export with `make lean`;
 - self-apply: the revisit queue must end empty;
 - reconcile over the union;
 - run `make all`;
