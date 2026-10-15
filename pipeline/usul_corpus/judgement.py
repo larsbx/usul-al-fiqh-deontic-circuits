@@ -172,15 +172,23 @@ def _wilson_low(k: int, n: int, z: float = 1.96) -> float:
     return (p + z * z / (2 * n) - z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n))) / (1 + z * z / n)
 
 
+def _distinct_floor(required: dict[str, float], sets: dict[str, int]) -> float:
+    """Fewest distinct flagged questions that can hold `required[c]` correct flags of each cue `c`, where
+    `sets` counts questions by cue set ("a+b"). A question with k cues meets at most k requirements, so
+    distinct >= sum(required) - sum((k - 1) * n); and any one cue's requirement is itself a floor."""
+    overlap = sum((len(cs.split("+")) - 1) * n for cs, n in sets.items())
+    return max(max(required.values(), default=0.0), sum(required.values()) - overlap)
+
+
 def flag_precision(sample: dict, flags: dict, confidence: float = 0.95) -> dict:
     """Per-cue precision of the label flags on the evaluation sample, and a floor on the expected share of
     taklīfī labels that are type mismatches.
 
-    A flagged question is a mismatch if any of its cues asks what it claims, so it counts once, at its
-    strongest cue's lower bound (`by_cue_set`). The cue bounds are one-sided Wilson bounds at
-    (1 - confidence)/k for k sampled cues (Bonferroni), so they hold together with probability at least
-    `confidence`. `lower95` is each cue's own two-sided interval, for reading only. Recall is not
-    measured, so the share is a floor, not an estimate of the whole."""
+    A cue's precision bounds the correct share of all its flags pooled (`by_cue`), not of each overlap
+    stratum, so the floor is the fewest distinct questions meeting every cue's bound (`_distinct_floor`).
+    The cue bounds are one-sided Wilson bounds at (1 - confidence)/k for k sampled cues (Bonferroni), so
+    they hold together with probability at least `confidence`. `lower95` is each cue's own two-sided
+    interval, for reading only. Recall is not measured, so the share is a floor, not an estimate of the whole."""
     items = sample["evaluation"]["items"]
     cues = sorted({x["cue"] for x in items})
     z = NormalDist().inv_cdf(1 - (1 - confidence) / len(cues)) if cues else 0.0
@@ -190,7 +198,7 @@ def flag_precision(sample: dict, flags: dict, confidence: float = 0.95) -> dict:
         k, n = sum(hits), len(hits)
         per[cue] = {"sample": n, "correct": k, "precision": round(k / n, 3), "lower95": round(_wilson_low(k, n), 3),
                     "lower_joint": round(_wilson_low(k, n, z), 3)}
-    floor = sum(n * max((per[c]["lower_joint"] for c in cs.split("+") if c in per), default=0.0)
-                for cs, n in flags["by_cue_set"].items())
+    required = {c: per[c]["lower_joint"] * n for c, n in flags["by_cue"].items() if c in per}
+    floor = _distinct_floor(required, flags["by_cue_set"])
     return {"judge": sample["judge"], "per_cue": per, "confidence": confidence,
             "mismatch_floor": round(floor / flags["taklifi_labels"], 3) if flags["taklifi_labels"] else 0.0}

@@ -90,7 +90,7 @@ def test_cues_fire_on_their_questions(text, cue):
 def test_flag_precision_uses_the_evaluation_sample_and_reports_a_floor():
     sample = {"judge": "j", "evaluation": {"items": [{"cue": "riwaya", "asks_that": True}] * 9 +
                                                      [{"cue": "riwaya", "asks_that": False}]}}
-    rep = judgement.flag_precision(sample, {"taklifi_labels": 100, "by_cue_set": {"riwaya": 10}})
+    rep = judgement.flag_precision(sample, {"taklifi_labels": 100, "by_cue": {"riwaya": 10}, "by_cue_set": {"riwaya": 10}})
     # One cue: the joint bound is the one-sided 95% Wilson bound (z = 1.645).
     assert rep["per_cue"]["riwaya"] == {"sample": 10, "correct": 9, "precision": 0.9, "lower95": 0.596,
                                         "lower_joint": 0.652}
@@ -101,17 +101,27 @@ def _two_cue_sample():
     return {"judge": "j", "evaluation": {"items": [{"cue": c, "asks_that": True} for c in ("a", "b") for _ in range(20)]}}
 
 
-def test_overlapping_flags_count_once_at_their_strongest_cue():
+def test_overlapping_flags_count_each_question_once():
     """Audit: summing per-cue hits double-counted questions with two cues (a 192.6% "floor")."""
-    rep = judgement.flag_precision(_two_cue_sample(), {"taklifi_labels": 100, "by_cue_set": {"a+b": 100}})
+    rep = judgement.flag_precision(_two_cue_sample(), {"taklifi_labels": 100, "by_cue": {"a": 100, "b": 100},
+                                                       "by_cue_set": {"a+b": 100}})
     assert 0 < rep["mismatch_floor"] <= 1
     assert rep["mismatch_floor"] == rep["per_cue"]["a"]["lower_joint"]
+
+
+def test_distinct_floor_holds_under_the_pooled_cue_bounds():
+    """Review: a bound is on a cue's pooled flags, not on each overlap stratum. With 100 a-only, 100 b-only and
+    100 a+b flags at bounds 0.9 and 0.8, the bounds allow 240 distinct mismatches (100 overlap, 80 a, 60 b), not 260."""
+    sets = {"a": 100, "b": 100, "a+b": 100}
+    assert judgement._distinct_floor({"a": 0.9 * 200, "b": 0.8 * 200}, sets) == pytest.approx(240)
+    # One cue's own requirement is always a floor, however much the cues overlap.
+    assert judgement._distinct_floor({"a": 90, "b": 10}, {"a+b": 100}) == 90
 
 
 def test_the_floor_bound_is_joint_over_the_cues_used():
     """Bonferroni: k cues each at one-sided 0.05/k, so every bound holds together with probability ≥ 0.95."""
     from statistics import NormalDist
-    rep = judgement.flag_precision(_two_cue_sample(), {"taklifi_labels": 10, "by_cue_set": {"a": 1}})
+    rep = judgement.flag_precision(_two_cue_sample(), {"taklifi_labels": 10, "by_cue": {"a": 1}, "by_cue_set": {"a": 1}})
     z = NormalDist().inv_cdf(1 - 0.05 / 2)
     assert rep["per_cue"]["a"]["lower_joint"] == round(judgement._wilson_low(20, 20, z), 3)
     assert rep["confidence"] == 0.95
