@@ -25,6 +25,13 @@ ORIGINAL_GAP_CASE_SHA256 = {
     takhrij.LAHHAM.format(52) + ".f007": "0ba95f474f71653933db2a1bb78fe2483a9ddac3e918abd07e98c499453b9543",
     takhrij.RAJAB.format(22) + ".f000": "ba72663774a7a84972999b44d0291ed0f05f3a5db176c740042be8d68353ec0a",
 }
+# English-only revisions (term guards, problem register PR-02): the note each gap case had when
+# pinned. Restoring it must give the pinned hash back, so no class, fact or need has changed.
+GAP_NOTE_REVISIONS = {
+    takhrij.LAHHAM.format(43) + ".f004": "Whether an unqualified threat, or the words 'obligatory'/'fard', are a text (nass) for obligation that admits no reinterpretation (al-Qadi: no; Abu al-Barakat, preferred: yes) asks whether an indication may override the default at all, whereas the kernel lets any qarina override every command.",
+    takhrij.LAHHAM.format(52) + ".f007": "A qadi saying 'the qadi's wife is divorced' has no transmitted ruling; Ibn al-Lahham offers it as possibly resting on al- generality or on whether a speaker is included in his own general speech, so no ruling to test.",
+    takhrij.RAJAB.format(22) + ".f000": "Water in which impurity is consumed: if the water is much, the impurity's ruling falls «بغير خلاف»; if little, two riwāyas. The ruling turns on the quantity of water, which the reading (consumed as non-existent) does not express, so the record is not derivable as a whole. (Opening example, segmented as f000.)",
+}
 
 
 def _plan():
@@ -46,8 +53,10 @@ def test_candidate_receipts_preserve_the_four_live_gaps():
     assert all(q["status"] == "open" for q in plan["review_questions"])
     assert all(r["gap_status"] == "open" for r in plan["case_receipts"])
     cases = {c["far"]: c for c in takhrij.load(CORPUS)}
+    renoted = {n["far"] for n in plan.get("note_revisions", [])}
     for r in plan["case_receipts"]:
-        assert r["original_case"] == cases[r["far"]]
+        live = cases[r["far"]]
+        assert r["original_case"] == (dict(live, note=r["original_case"].get("note")) if r["far"] in renoted else live)
         assert cases[r["far"]]["class"] == "missing_rule"
         assert not set(cases[r["far"]]["needs"]) <= takhrij.provides()
 
@@ -55,9 +64,13 @@ def test_candidate_receipts_preserve_the_four_live_gaps():
 def test_all_six_original_gaps_are_unchanged_and_the_report_counts_live_annotations():
     cases = takhrij.load(CORPUS)
     report = takhrij.report(cases)
-    gaps = {c["far"]: m5.case_sha256(c) for c in cases if c["class"] in takhrij.GAPS}
-    assert gaps == ORIGINAL_GAP_CASE_SHA256
-    assert report["gaps_open"] == len(ORIGINAL_GAP_CASE_SHA256) == 6
+    gaps = {c["far"]: m5.case_sha256(dict(c, note=GAP_NOTE_REVISIONS.get(c["far"], c.get("note"))))
+            for c in cases if c["class"] in takhrij.GAPS}
+    assert all(c["note"] != GAP_NOTE_REVISIONS[c["far"]] for c in cases if c["far"] in GAP_NOTE_REVISIONS)
+    # Pin the original M5 obligations; later source-grounded tranches may add distinct gaps.
+    assert {uid: gaps[uid] for uid in ORIGINAL_GAP_CASE_SHA256} == ORIGINAL_GAP_CASE_SHA256
+    assert len(ORIGINAL_GAP_CASE_SHA256) == 6
+    assert report["gaps_open"] == sum(bool(c.get("needs")) for c in cases)
     assert report["total"] == len(cases)
     assert report["classes"].get("encoding_error", 0) == 0
     assert not {f["id"] for f in _plan()["fixtures"]} & {c["far"] for c in cases}
@@ -389,3 +402,15 @@ def test_retry_after_a_rejected_download_can_restore_the_cache_without_repinning
     assert m5.fetch_locked_source(plan, CORPUS, tmp_path) == data
     assert requests == [plan["source"]["url"]] * 2
     assert (CORPUS / "lock.json").read_bytes() == old_lock
+
+
+def test_a_note_revision_needs_its_ledger_entry():
+    """English-only note revisions of a receipt case are allowed only through the plan's ledger
+    (PR-24): drop the ledger entry and the live case no longer matches its receipt."""
+    plan = _plan()
+    assert plan["note_revisions"]
+    with pytest.raises(ValueError, match="live case changed"):
+        m5.validate(dict(plan, note_revisions=[]), CORPUS)
+    wrong = [dict(r, note=r["note"] + " (edited)") for r in plan["note_revisions"]]
+    with pytest.raises(ValueError, match="note revision differs from its ledger"):
+        m5.validate(dict(plan, note_revisions=wrong), CORPUS)

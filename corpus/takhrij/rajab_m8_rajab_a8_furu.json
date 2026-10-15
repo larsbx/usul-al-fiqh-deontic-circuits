@@ -1,0 +1,333 @@
+{
+ "suite": "m8_rajab_rajab_a8",
+ "status": "candidate",
+ "provenance": "Shard rajab-a8 (lane A): every farʿ record of Ibn Rajab's qawāʿid 104 and 105, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA8). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+ "cases": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f001",
+   "encoder": "unknown_consent_binds",
+   "class": "derivable",
+   "facts": {
+    "vagueness_admitted": true
+   },
+   "expected": true,
+   "note": "Entering iḥrām with whatever Fulān entered it with, or with one of the rites unspecified: «فيصح». The iḥrām admits vagueness as to its kinds, so the consent to the unknown binds («رضا معتبر لازم»), of the qāʿida's first kind, with no dispute reported."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f002",
+   "encoder": "unknown_consent_binds",
+   "class": "derivable",
+   "facts": {
+    "vagueness_admitted": true
+   },
+   "expected": true,
+   "note": "Divorcing (ṭalāq) one of his wives unspecified: «فيصح وتعين بالقرعة على المذهب». Divorce admits vagueness as to the persons it falls on; how she is designated (by lot «على المذهب») is a follow-on, not a dispute on validity."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f003",
+   "encoder": "unknown_consent_binds",
+   "class": "derivable",
+   "facts": {
+    "vagueness_admitted": true
+   },
+   "expected": true,
+   "note": "Freeing one of his slaves unspecified: «فيصح ويعين بالقرعة أيضا على الصحيح». Manumission admits vagueness as to the persons it falls on; designation by lot is the follow-on."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f004",
+   "encoder": "unknown_consent_binds",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "vagueness_admitted": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "naṣṣ (riwāyat Abū al-Ḥārith), al-Qāḍī, Ibn ʿAqīl and most: the divorce does not bind him",
+     "ruling": false
+    },
+    {
+     "who": "the other wajh: it binds, he having committed to its effect among its people",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "One who divorces in a foreign word whose meaning he does not understand, committing to its effect among those who speak it: «ففي لزوم الطلاق له وجهان، والمنصوص في رواية أبي الحارث أنه لا يلزمه الطلاق وهو قول القاضي وابن عقيل والأكثرين». Of the qāʿida's second kind. al-Inṣāf (v08:p476), on one who says it not understanding it and intends its effect: «أحدهما: لا يقع. وهو المذهب. صححه في التصحيح», quoting this qāʿida; on the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f005",
+   "encoder": "unknown_consent_binds",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "vagueness_admitted": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "the side of Abū al-Ḥārith's naṣṣ, as in the previous farʿ: it does not bind",
+     "ruling": false
+    },
+    {
+     "who": "the other wajh: it binds, he having committed to its effect among the Arabs",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The non-Arab who pronounces the word of divorce not understanding it but committing to its effect among the Arabs: «فيه الخلاف», the khilāf of the previous farʿ. al-Inṣāf (v08:p476), on «أو نطق الأعجمي بلفظ \" الطلاق \" وهو لا يفهمه … وإن نوى موجبه: فعلى وجهين»: «أحدهما: لا يقع. وهو المذهب»; on the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f006",
+   "encoder": "unknown_consent_binds",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "vagueness_admitted": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "naṣṣ of Aḥmad (riwāyat ʿAbd Allāh): the manumission does not bind",
+     "ruling": false
+    },
+    {
+     "who": "the other side of the khilāf: it binds",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "A non-Arab or an Arab who frees in another tongue not understanding it: «ففيه خلاف ونص أحمد من رواية عبد الله أنه لا يلزم العتق». No later treatment of the manumission found in al-Inṣāf, al-Furūʿ, al-Iqnāʿ or Kashshāf; matched on Ibn Rajab's naṣṣ label, which agrees with al-Inṣāf's madhhab on the divorce (ṭalāq) of the previous two furūʿ."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f007",
+   "encoder": "unknown_consent_binds",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "vagueness_admitted": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "one wajh: no more than one divorce binds him",
+     "ruling": false
+    },
+    {
+     "who": "the other wajh: Fulān's divorce binds him whatever it was",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "«أنت طالق مثل ما طلق فلان زوجته» not knowing how Fulān divorced: «فهل يلزمه مثل طلاق فلان بكل حال أو لا يلزمه أكثر من واحدة؟ فيه وجهان». The unknown number is not bound. al-Inṣāf (v09:p014): «طلقت واحدة على الصحيح من المذهب»; on the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f008",
+   "encoder": "unknown_consent_binds",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "vagueness_admitted": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "first wajh: his oath is not contracted at all",
+     "ruling": false
+    },
+    {
+     "who": "second wajh (al-Khiraqī's fatwā via Ibn Baṭṭa): contracted if he commits to it and intends it; third: so except the oath by God; fourth (ẓāhir of al-Qāḍī's Khilāf): its effect binds him intended or not",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "«أيمان البيعة تلزمني لأفعلن كذا» not knowing what they are; four wujūh, the leading one «لا تنعقد يمينه بالكلية». al-Inṣāf (v11:p035-036) on one who does not know them: «وإلا فلا شيء عليه … وهذا المذهب», and «وإن نواها وجهلها: فلا شيء عليه. على الصحيح من المذهب»; on the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f009",
+   "encoder": "unknown_consent_binds",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "vagueness_admitted": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "qiyās of the mashhūr in the oaths of allegiance (al-Majd): nothing binds until he intends and commits to it, or until he knows it",
+     "ruling": false
+    },
+    {
+     "who": "al-Qāḍī (al-Khilāf): the oath by God, divorce, manumission, ẓihār and vow bind him intended or not; al-Muḥarrar reports no khilāf on binding",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "«أيمان المسلمين تلزمني»: al-Qāḍī binds him to all of them «نوى ذلك أو لم ينوه», built on his view in the oaths of allegiance; «وقياس المشهور عن أصحابنا في يمين البيعة أنه لا يلزمه شيء حتى ينويه». The record does not say whether he intended them; annotated on the branch where the khilāf arises, that he did not. al-Inṣāf (v11:p036) binds him to ẓihār, divorce (ṭalāq), manumission and vow «إذا نوى ذلك، على الصحيح من المذهب», so not without intention; on the madhhab side, though al-Inṣāf adds that al-Qāḍī's binding without intention is the jazm of al-Wajīz and preferred in al-Muḥarrar. Follow-on: al-Majd's farq that these oaths are known among Muslims, unlike the oaths of allegiance."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f010",
+   "encoder": "unknown_consent_binds",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "vagueness_admitted": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "second riwāya: invalid where the released one knew it; third riwāya: invalid even if both are ignorant, save where knowing it is impossible",
+     "ruling": false
+    },
+    {
+     "who": "«أشهر الروايات»: release from the unknown is valid absolutely, whether the releaser was ignorant of its amount, description or both",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "Release from the unknown: «وأشهر الروايات صحتها مطلقا سواء جهل المبرئ قدره ووصفه أو جهلهما معا»; the second «لا يصح إذا عرفه المبرأ», with a takhrīj that it is valid unless he hid it; the third «لا يصح البراءة من المجهول وإن جهلاه إلا فيما تعذر علمه للضرورة». The record does not fix who knew; the third riwāya disputes every branch. The reading leaves the khilāf branch unbound; al-Iqnāʿ and Kashshāf make release valid even where knowing it is possible, «لأنه إسقاط حق»: off the madhhab side, so a ledger entry."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f011",
+   "encoder": "unknown_consent_binds",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "vagueness_admitted": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "«أشهرهما»: he is not released",
+     "ruling": false
+    },
+    {
+     "who": "second riwāya: released save from a defect he knew and hid; Abū al-Khaṭṭāb's takhrīj from release from the unknown: valid absolutely",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "Release from the defects of the thing sold, none specified: «وفيه روايتان. أشهرهما أنه لا يبرأ». The record does not say whether the seller knew a defect; annotated where the second riwāya differs, that he did not. al-Inṣāf (v04:p359): «لم يبرأ … وهذا المذهب في ذلك بلا ريب. وعليه جماهير الأصحاب»; on the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f012",
+   "encoder": "unknown_consent_binds",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "vagueness_admitted": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "one wajh: the ratification of an unknown bequest is not valid (the way of al-Mughnī)",
+     "ruling": false
+    },
+    {
+     "who": "the other wajh: it is valid (some aṣḥāb, on ratification as execution)",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "Ratifying an unknown bequest: «وفي صحتها وجهان». al-Inṣāf (v07:p197) gives no label: al-Qāḍī, al-Muḥarrar and al-Furūʿ build it on whether ratification is execution or a fresh gift, «وطريقة المصنف في المغني: أن الإجازة لا تصح بالمجهول», and some aṣḥāb: on execution «صحت بالمجهول». Execution is the madhhab, which gives the valid side by implication, while the madhhab on the heir who ratified a share thinking the estate small gives him back the excess (v07:p201, «وهو المذهب»). Not matched without a label; a ledger entry."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f001",
+   "encoder": "vague_report_accepted",
+   "class": "derivable",
+   "facts": {
+    "religious_or_against_self": true
+   },
+   "expected": true,
+   "note": "Being told that a dog licked one of these two vessels, not which: «قبل وصار كمن اشتبه عليه طاهر بنجس», and likewise for one of two garments or one of two meats being carrion. A religious report, accepted in the vague."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f002",
+   "encoder": "vague_report_accepted",
+   "class": "derivable",
+   "facts": {
+    "religious_or_against_self": true
+   },
+   "expected": true,
+   "note": "Acknowledgment: «فيصح المبهم ويلزم بتعيينه» (one of these two is Fulān's; a dirham or a dinar), and for a vague beneficiary, with the lot «على المنصوص» for one of his daughters he married off. A report obliging a right on the reporter. Follow-on: in the sale acknowledged to one of two claimants, the lot even where the thing is in one's hand (Aḥmad via Ibn Manṣūr, Abū Bakr), against a riwāya that the hand counts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f003",
+   "encoder": "vague_insha_valid",
+   "class": "derivable",
+   "facts": {
+    "binding_transfer": false,
+    "equal_mixed": false
+   },
+   "expected": true,
+   "note": "A claim of a vague thing: «فإن كانت بما يصح وقوع العقد عليه مبهما كالوصية … فإنها تصح». A bequest is valid on the vague, so the claim is. Follow-on: al-Targhīb doubts the claim of an acknowledgment, and «وأما الدعوى على المبهم فلا تصح ولا تسمع», with al-Targhīb's iḥtimāl that it is heard for need."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f004",
+   "encoder": "vague_insha_valid",
+   "class": "derivable",
+   "facts": {
+    "binding_transfer": false,
+    "equal_mixed": false
+   },
+   "expected": true,
+   "note": "Testimony to a vague thing: «فإن كان المشهود به [يصح] مبهما صحت الشهادة به كالعتق والطلاق والإقرار والوصية». Annotated for manumission and divorce, annulments on taghlīb. Follow-on: testimony that he divorced, freed or revoked a specific bequest whose identity they forgot, «ففي القبول وجهان حكاهما في المحرر»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f005",
+   "encoder": "shared_name_insha_valid",
+   "class": "derivable",
+   "facts": {
+    "vague_valid": false,
+    "intended_specific": false,
+    "witnessing_required": true
+   },
+   "expected": false,
+   "note": "A marriage contracted on a name that does not single out its bearer: «فلو قال: زوجتك بنتي وله بنات لم يصح». No inward designation, so it is as explicit vagueness, which marriage does not take. Follow-on, where both inwardly intended one: «ففي الصحة وجهان» (al-Qāḍī in one place valid; Abū al-Khaṭṭāb and al-Qāḍī elsewhere void, marriage needing witnesses), with Abū Ḥafṣ al-ʿUkbarī's distinction."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f006",
+   "encoder": "shared_name_insha_valid",
+   "class": "derivable",
+   "facts": {
+    "vague_valid": true,
+    "intended_specific": true,
+    "witnessing_required": false
+   },
+   "expected": true,
+   "note": "A bequest to his neighbour Muḥammad, having two of that name, where it is known he meant a specific one: «فههنا يصح الوصية بغير تردد ويخرج المستحق منهما بالقرعة». A bequest needs no witnesses. `vague_valid` is set from the second state, a bequest to one of the two unspecified: «حكى الأصحاب في الصحة روايتين ولكن المنصوص عن أحمد الصحة»; the output here does not depend on it."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f007",
+   "encoder": "vague_report_accepted",
+   "class": "derivable",
+   "facts": {
+    "religious_or_against_self": false
+   },
+   "expected": false,
+   "note": "A judge's letter that Fulān b. Fulān so described owes so much; the one brought proves a sharer in name, description and lineage: «وقف حتى يعلم الخصم منهما ولم يجز القضاء مع عدم العلم». A report obliging a right on another is not accepted in the vague. Follow-on: for a described animal or slave with no sharer proved, «ففيه وجهان: أشهرهما أنه يسلم إلى المدعي مختوم العتق ويؤخذ منه كفيل»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f008",
+   "encoder": "lot_distinguishes_hidden_entitled",
+   "class": "derivable",
+   "facts": {
+    "specific_in_fact": true
+   },
+   "expected": true,
+   "note": "Two daughters of one name; he gave to or acknowledged for one of them and died without saying which: al-Qāḍī «قياس المذهب إخراج المستحقة منهما بالقرعة», Ibn Rajab «وهذا صحيح ; لأن الهبة والإقرار هنا وقع لمعنى في الباطن وإنما أشكل علينا الوقوف عليه فيميز بالقرعة»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f009",
+   "encoder": "lot_distinguishes_hidden_entitled",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "specific_in_fact": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "Taqī al-Dīn's iḥtimāl: a lot, «لأن الحق ثبت لإحدى الجهتين ولم يعلم عينها»",
+     "ruling": true
+    },
+    {
+     "who": "Ibn ʿAqīl (al-Funūn): divided between them, «كما في تعارض البينات»; Taqī al-Dīn's other iḥtimāl, which he calls nearer to right: the sons' sons are preferred by custom",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "A waqf deed «على فلان وبني بنيه» where it is unclear whether sons' sons or a daughter's sons are meant; the right fell on one of the two in fact. Leading ruling Ibn ʿAqīl's division, «يكون بينهما عندنا لتساويهما»; Taqī al-Dīn: division on conflict is «رواية مرجوحة». al-Inṣāf (v07:p052) repeats the record without a label, and Ibn Rajab marks none; not matched, a ledger entry."
+  }
+ ]
+}

@@ -1,0 +1,153 @@
+{
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f000",
+   "grades": [
+    "ashab",
+    "takhrij"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Ibn Rajab classes the harvest condition as an obligation not set against a compensation, with al-Khiraqī; the later madhhab treats it as a hire of the seller and holds it valid. Candidate farq: whether the stipulated work is priced into the sale (the qāʿida's own first kind).",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v04:p346",
+     "excerpt_ar": "وسواء كان حصادا، أو جز رطبة أو غيرهما. قال الزركشي: هو المختار للأكثرين.",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Continues «واعلم أن الصحيح من المذهب: صحة اشتراط المشتري نفع البائع في المبيع»: the corrected madhhab extends the validity of the buyer's stipulation of the seller's work to harvesting."
+    },
+    {
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v06:p188",
+     "excerpt_ar": "وإن شرط المشتري نفع البائع كحمل المبيع وحصاده صح, على الأصح.",
+     "position": 1,
+     "grade": "tashih",
+     "who": "Ibn Mufliḥ, al-Furūʿ",
+     "note": "The buyer's stipulation that the seller carry or harvest the thing sold is valid «على الأصح»."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f002",
+   "grades": [
+    "nass",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The naṣṣ (Muhannā) voids the condition of delivering the salam goods elsewhere than the place of contract; the madhhab, with most aṣḥāb, holds it valid.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p108",
+     "excerpt_ar": "قوله (وإن شرطه في غيره: صح) . وهو المذهب. وعليه جماهير الأصحاب.",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Stipulating delivery of the salam goods in a place other than the place of contract is valid: al-madhhab, with the great majority of the aṣḥāb."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p108",
+     "excerpt_ar": "به كثير منهم. وعنه لا يصح. اختاره أبو بكر أيضا في التنبيه. قال في",
+     "position": 0,
+     "grade": "ashab",
+     "who": "Abū Bakr ʿAbd al-ʿAzīz, al-Tanbīh (via al-Inṣāf)",
+     "note": "The contrary riwāya, chosen by Abū Bakr in al-Tanbīh; al-Inṣāf then cites this qāʿida for the naṣṣ of invalidity."
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p143",
+     "excerpt_ar": "إليه كأخذ بدل السلم ويصح شرطه فيه ويكون تأكيدا وفي غيره ولا يصح بيع",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "The Iqnāʿ rules decisively that the condition is valid in the place of contract, as emphasis, and elsewhere."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f001",
+   "grades": [
+    "ashab",
+    "ashab",
+    "takhrij"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "On the sale of land holding repeat-bearing roots, the later madhhab takes Abū l-Khaṭṭāb's and al-Mughnī's way (the roots follow the land outright, unlike trees), not the tree's ruling.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p057",
+     "excerpt_ar": "الرعاية الكبرى: فأصله للمشتري في الأصح. واختار ابن عقيل: إن كان البائع",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf (citing al-Riʿāya al-Kubrā)",
+     "note": "After «فالأصول للمشتري ... هذا المذهب. جزم به في الوجيز ... وقدمه في المغني، والشرح»: the roots go to the buyer, «في الأصح», Ibn ʿAqīl's tree-like «بحقوقها» distinction being the dissent."
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p126",
+     "excerpt_ar": "زهرة كبنفسج ونرجس وورد وياسمين ونحوها فالأصول للمشتري وكذلك أوراقه",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "In a sale of land holding plants cut again and again or bearing again and again (raṭba, cucumber, aubergine), the roots go to the buyer, stated decisively without the tree's condition."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f002",
+   "grades": [
+    "wajh",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The usurper's repeat-bearing planting: al-Inṣāf leaves the two iḥtimālāt open; the Iqnāʿ, with al-Buhūtī, rules it like crops, the owner taking it for its cost.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v06:p138",
+     "excerpt_ar": "والوجه الثاني: هو كالغراس. قال الناظم: وكالغرس في الأقوى: المكرر جزه.",
+     "position": 0,
+     "grade": "ashab",
+     "who": "al-Nāẓim (via al-Inṣāf)",
+     "note": "al-Nāẓim prefers the tree wajh «في الأقوى»; al-Inṣāf itself leaves both open (Ibn Razīn puts the crop wajh first)."
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p340",
+     "excerpt_ar": "أجرته مبنيا ورطبة ونحوها كزرع فيما تقدم: لا كغرس ولو أراد مالك لم يكن له",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "The Iqnāʿ rules decisively that raṭba and the like are as crops in the usurpation rules, not as planted trees."
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p082",
+     "excerpt_ar": "أخرى، أو يتكرر حمله كقثاء وباذنجان (كزرع فيما تقدم) في أن رب الأرض إذا",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Buhūtī, Kashshāf al-qināʿ",
+     "note": "al-Buhūtī glosses the Iqnāʿ's «ورطبة ونحوه» to include what bears again and again, cucumber and aubergine: the landowner may take it for its cost, like crops."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f004",
+   "grades": [
+    "wajh",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "A musāqāh on repeat-bearing roots: the later madhhab follows the crop wajh, not a musāqāh but a muzāraʿa.",
+   "evidence": [
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p533",
+     "excerpt_ar": "لم تصح،؛ لأن ذلك ليس بشجر وتصح المزارعة عليه",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Buhūtī, Kashshāf al-qināʿ",
+     "note": "A musāqāh on what bears again and again (cotton, melon beds, aubergine) is invalid, «لأن ذلك ليس بشجر», and a muzāraʿa on it is valid."
+    }
+   ]
+  }
+ ]
+}

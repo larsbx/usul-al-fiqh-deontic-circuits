@@ -8,11 +8,12 @@ import jsonschema
 import pytest
 
 from usul_corpus import reconcile, takhrij
+from usul_corpus.__main__ import load_dossier
 
 ROOT = Path(__file__).parents[2]
 CASES = takhrij.load(ROOT / "corpus")
 LEDGER = reconcile.load(ROOT / "corpus")
-DOSSIER = json.loads((ROOT / "corpus/dossier/refinements.json").read_text())
+DOSSIER = load_dossier()  # shard entries included
 
 
 def test_grade_order_mirrors_the_kernel():
@@ -94,13 +95,18 @@ def test_author_preference_is_not_automatically_a_madhhab_tashih():
 
 
 def test_non_ijmal_is_only_indirect_support_for_generality():
-    case = next(c for c in CASES if c["far"].endswith("q052.f001"))
+    case = next(c for c in CASES if c["far"].endswith("lahham_shamela8526.q052.f001"))
     entry = next(e for e in LEDGER["entries"] if e["far"] == case["far"])
     assert entry["grades"] == ["ashab", "wajh"]
     assert [v["grade"] for v in entry["evidence"]] == ["takhrij", "takhrij", "ashab"]
     assert reconcile.resolve(case, entry) == ("tarjih", True)
     assert not reconcile.marked_for_reading(case, entry)
     assert not case["matches_madhhab"]
+
+
+def _sans_english(case: dict) -> dict:
+    return {**{k: v for k, v in case.items() if k != "note"},
+            "positions": [{k: v for k, v in p.items() if k != "who"} for p in case["positions"]]}
 
 
 def test_review_audit_retains_originals_and_tracks_current_candidates():
@@ -122,36 +128,9 @@ def test_review_audit_retains_originals_and_tracks_current_candidates():
         if row["far"].endswith("q159.f035"):
             assert "a man of unknown lineage commits qadhf" in row["original_annotation"]["note"]
             assert "the accused person is enslaved" in c["note"]
-            assert {k: v for k, v in row["original_annotation"].items() if k != "note"} == {
-                k: v for k, v in c.items() if k != "note"}
-        else:
-            assert row["original_annotation"] == c
-
-
-def test_locked_replay_rejects_missing_tampered_and_wrong_location(tmp_path):
-    import hashlib
-    wid = "test-source"
-    text = "# لا إجمال في البيع\nPageV01P001\n"
-    data = text.encode()
-    witness = {"id": wid, "kind": "openiti", "repo": "test", "commit": "pin", "path": "source"}
-    from usul_corpus.fetch import witness_url
-    corpus, cache = tmp_path / "corpus", tmp_path / "cache"
-    corpus.mkdir(); cache.mkdir()
-    (corpus / "registry.json").write_text(json.dumps({"works": [{"witnesses": [witness]}]}))
-    (corpus / "lock.json").write_text(json.dumps({"witnesses": {wid: {
-        "url": witness_url(witness), "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}}}))
-    item = {"ref": f"src:{wid}/v01:p001", "excerpt_ar": "لا إجمال في البيع"}
-    ledger = {"entries": [{"evidence": [item]}]}
-    assert reconcile.verify_evidence(ledger, corpus, cache) == [f"{wid}: locked witness not cached"]
-    source = cache / f"{wid}.txt"
-    source.write_bytes(data)
-    assert reconcile.verify_evidence(ledger, corpus, cache) == []
-    source.write_bytes(data + b" ")
-    assert reconcile.verify_evidence(ledger, corpus, cache) == [f"{wid}: full source differs from lock"]
-    source.write_bytes(data)
-    item["ref"] = f"src:{wid}/v01:p002"
-    assert reconcile.verify_evidence(ledger, corpus, cache) == [
-        f"src:{wid}/v01:p002: excerpt or location differs from locked witness"]
+        # Later English-only revisions (term guards) touch the note and a position's `who`;
+        # everything the kernel reads is the audited original.
+        assert _sans_english(row["original_annotation"]) == _sans_english(c)
 
 
 def test_imported_evidence_adds_a_graded_holder():
@@ -178,12 +157,12 @@ def test_evidence_cites_registered_witnesses_within_their_limits():
 
 @pytest.mark.parametrize("v", EVIDENCE, ids=lambda v: v["ref"])
 def test_evidence_is_verbatim(v):
-    """Letters-only comparison against the cached witness; skipped where it is not cached (CI)."""
+    """Required reconciliation evidence: a missing witness is a failure, including offline."""
     from usul_corpus.arabic import locate
     w, loc = v["ref"][4:].split("/")
     src = ROOT / ".cache/corpus" / f"{w}.txt"
     if not src.exists():
-        pytest.skip(f"{w} not cached")
+        pytest.fail(f"required witness {w} not cached; run make source-verify-fetch")
     assert locate(src.read_text(encoding="utf-8"), v["excerpt_ar"]) == loc, v["ref"]
 
 
@@ -201,3 +180,77 @@ def test_every_jam_lands_on_the_prevailing_side():
     kept = _ikh("y", True, [True, False], False, "successive_by_binding", f(False, False))
     ledger = {"entries": [_entry("x", ["ashab", "zahir"], jam), _entry("y", ["ashab", "zahir"], jam)]}
     assert reconcile.check([moved, kept], ledger, DOSSIER) == ["y: a jamʿ must land on the prevailing side"]
+
+
+def _side_fixture():
+    case = {**_ikh("x", True, [True, False]), "side_check": {
+        "from_matches": True, "refs": ["src:w/v01:p001"], "contradictions": [{
+            "evidence_index": 0, "case_facts": {"successive": True},
+            "rationale": "The later explicit ruling concerns this successive-contract case."}]}}
+    ev = [{"ref": "src:w/v01:p001", "excerpt_ar": "source passage", "position": 1,
+           "grade": "tashih", "who": "later work", "note": "case-specific"}]
+    return case, {"entries": [{**_entry("x", ["ashab", "ashab"]), "evidence": ev}]}
+
+
+def test_a_failed_side_check_enters_the_ledger_with_its_evidence():
+    case, ledger = _side_fixture()
+    assert reconcile.check([case], {"entries": []}, DOSSIER) == [
+        "x: apparent contradiction not in the ledger", "x: a failed side check must enter the ledger"]
+    assert reconcile.check([case], ledger, DOSSIER) == []
+    assert reconcile.check([case], {"entries": [_entry("x", ["ashab", "ashab"])]}, DOSSIER) == [
+        "x: a side check cites only the ledger's own evidence"]
+
+
+@pytest.mark.parametrize("original", [False, None, 1, "true"])
+def test_failed_side_check_requires_original_true(original):
+    case, ledger = _side_fixture()
+    case["side_check"]["from_matches"] = original
+    assert any("true original annotation" in e for e in reconcile.check([case], ledger, DOSSIER))
+
+
+@pytest.mark.parametrize("mutation", ["outside_ref", "wrong_case_facts", "agreeing", "identical_positions",
+    "unmarked", "ambiguous", "full_ledger_tie", "missing_items", "bad_index", "duplicate_index",
+    "unselected_ref", "missing_rationale", "current_true", "original_not_listed"])
+def test_failed_side_check_rejects_adversarial_evidence(mutation):
+    from copy import deepcopy
+    case, ledger = _side_fixture()
+    sc = case["side_check"]
+    entry = ledger["entries"][0]
+    if mutation == "outside_ref": sc["refs"] = ["src:other/v01:p001"]
+    elif mutation == "wrong_case_facts": sc["contradictions"][0]["case_facts"] = {"successive": False}
+    elif mutation == "agreeing": entry["evidence"][0]["position"] = 0
+    elif mutation == "identical_positions": case["positions"][1]["ruling"] = True
+    elif mutation == "unmarked": entry["evidence"][0]["grade"] = "ashab"
+    elif mutation == "ambiguous":
+        case["positions"].append({"who": "third", "ruling": "other"})
+        entry["grades"].append("ashab")
+        entry["evidence"].append({**entry["evidence"][0], "position": 2})
+        sc["contradictions"].append({**sc["contradictions"][0], "evidence_index": 1})
+    elif mutation == "full_ledger_tie": entry["evidence"].append({**entry["evidence"][0], "position": 0})
+    elif mutation == "missing_items": sc["contradictions"] = []
+    elif mutation == "bad_index": sc["contradictions"][0]["evidence_index"] = True
+    elif mutation == "duplicate_index": sc["contradictions"].append(deepcopy(sc["contradictions"][0]))
+    elif mutation == "unselected_ref":
+        entry["evidence"].append({**entry["evidence"][0], "ref": "src:w/v01:p002"})
+        sc["refs"].append("src:w/v01:p002")
+    elif mutation == "missing_rationale": sc["contradictions"][0]["rationale"] = " "
+    elif mutation == "current_true": case["matches_madhhab"] = True
+    elif mutation == "original_not_listed": case["expected"] = "not a position"
+    assert reconcile.check([case], ledger, DOSSIER), mutation
+
+
+def test_same_page_opposing_evidence_requires_exact_item_selection():
+    case, ledger = _side_fixture()
+    entry = ledger["entries"][0]
+    entry["evidence"].append({**entry["evidence"][0], "position": 0, "grade": "ashab"})
+    assert reconcile.check([case], ledger, DOSSIER) == []
+    case["side_check"]["contradictions"][0]["evidence_index"] = 1
+    assert reconcile.check([case], ledger, DOSSIER)
+
+
+def test_six_reviewed_disagreements_preserve_their_original_annotations():
+    checked = [c for c in CASES if "side_check" in c]
+    assert len(checked) == 6
+    assert reconcile.check(CASES, LEDGER, DOSSIER) == []
+    assert all(c["side_check"]["from_matches"] is True and c["matches_madhhab"] is False for c in checked)
+    assert all(reconcile.standing(c, next(e for e in LEDGER["entries"] if e["far"] == c["far"])) == "against_reading" for c in checked)

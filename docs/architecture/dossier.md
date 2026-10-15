@@ -19,7 +19,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Conditions**
 
-1. a marker of generality (al- of genus, an annexed singular, a particle, or an indefinite in negation, prohibition or condition)
+1. a marker of generality (al- of genus, an annexed singular, a particle, or an indefinite in negation, prohibition or a conditional clause, al-sharṭ)
 2. no indication of ʿahd and no proper name pinning the referent
 
 **Texts**
@@ -29,7 +29,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f003`: «تنزهوا من البول»: the companions read al- as ʿahd (human urine) «بقرينة».
   > دعوى أن الأصل في الأبوال كلها النجاسة استدلالا بقوله عليه السلام: "تنزهوا من البول فإن عامة عذاب القبر منه" 1 ولكن أصحابنا حملوا الألف واللام هنا على العهد وهو بول الآدمى بقرينة.
 
-**Rationale.** The generality of al- is the default reading of the marker, and the qāʿida states its own blocking condition. Five of the six generality ikhtilāf cases split exactly on whether al- is ʿahd or genus, so the blocking fact must be an input: without it the kernel always took genus and landed on the minority side.
+**Rationale.** The generality of al- is the default reading of the marker, and the qāʿida states its own blocking qayd. Five of the six generality ikhtilāf cases split exactly on whether al- is ʿahd or genus, so the blocking fact must be an input: without it the kernel always took genus and landed on the minority side.
 
 **Lean:** `Usul.Dalala.IsGeneralIn`, `Usul.Dalala.isGeneralIn_no_ahd`, `Usul.Dalala.ahd_blocks`, `Usul.Dalala.isGeneralIn_is_gate`  
 **Conservative over the earlier reading:** `Usul.Dalala.isGeneralIn_no_ahd`
@@ -80,7 +80,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 **Conditions**
 
 1. not given as a gift (al-Qāḍī: the payer intends recourse)
-2. either the payment discharged an obligation owed by the other party, or the spending was by the owner's or the judge's permission
+2. either the payment discharged a wājib owed by the other party, or the spending was by the owner's or the judge's permission
 
 **Texts**
 
@@ -137,7 +137,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Conditions**
 
-1. a ẓāhir strictly stronger than the aṣl always prevails (a sharʿī proof)
+1. a ẓāhir strictly stronger than the aṣl (a higher grade of ẓann: the sharʿī ḥujja, «فإن كان الظاهر حجة يجب قبولها شرعا») always prevails
 2. on equal grades the ẓāhir prevails only where the matter has indicators by which it is known
 
 **Texts**
@@ -147,7 +147,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008`: Doubting dawn: «ولا عبرة في ذلك بغلبة الظن وبالقرائن» unless a reliable report.
   > إذا شك في طلوع الفجر في رمضان فإنه يباح له الأكل حتى يتيقن طلوعه نص عليه، أحمد، ولا عبرة في ذلك بغلبة الظن وبالقرائن ونحوها ما لم يكن مستندا إلى إخبار ثقة بالطلع.
 
-**Rationale.** Equal grades produced opposite rulings in the cases (purity and dawn keep the aṣl; sunset follows the ẓāhir), so the grade cannot be the deciding input. Ibn Rajab names the deciding fact himself: whether the matter has indicators.
+**Rationale.** Equal grades produced opposite rulings in the cases (ṭahāra and dawn keep the aṣl; sunset follows the ẓāhir), so the grade cannot be the deciding input. Ibn Rajab names the deciding fact himself: whether the matter has indicators.
 
 **Lean:** `Usul.Refinements.zahirPrevails`, `Usul.Refinements.zahirPrevails_conservative`, `Usul.Refinements.tie_without_amara_keeps_asl`, `Usul.Refinements.stronger_prevails`  
 **Conservative over the earlier reading:** `Usul.Refinements.zahirPrevails_conservative`
@@ -213,7 +213,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 <a id="trust_voidance"></a>
 
-## A pure trust is voided by transgression; a compound trust is not
+## A pure trust is voided by transgression («تبطل بالتعدي»); a compound trust is not
 
 **Terms:** [al-amāna (al-maḥḍa wa'l-mutaḍammina)](../glossary.md#amana), [al-ḍamān](../glossary.md#daman)  
 **Closes:** `rule:trust_voidance`  
@@ -241,7 +241,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 <a id="abstention_possible_condition"></a>
 
-## Abstain while a divorce condition may have occurred
+## Abstain while the event a divorce is suspended on (taʿlīq) may have occurred
 
 **Terms:** [al-yaqīn](../glossary.md#yaqin), [al-shakk](../glossary.md#shakk), [al-iḥtiyāṭ / al-iʿtizāl](../glossary.md#ihtiyat)  
 **Closes:** `rule:abstention_under_possible_condition`  
@@ -254,25 +254,25 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Conditions**
 
-1. divorce suspended on a condition
+1. divorce suspended on an event (taʿlīq)
 2. its occurrence is possible
 3. its absence is not known
 
 **Texts**
 
-- `src:openiti-rajab-shamela21730/v01:p356`: The marriage is not judged dissolved: he is certain of her lawfulness and doubts her prohibition.
-  > متيقن لحل زوجته شاك في تحريمها
+- `src:openiti-rajab-shamela21730/v01:p356`: The marriage is not judged dissolved: he is certain of her lawfulness and doubts her prohibition, «بخلاف» one man with two wives, where the end of one marriage is certain (the qayd of T-15).
+  > متيقن لحل زوجته شاك في تحريمها، بخلاف ما إذا كانت الزوجتان لرجل واحد فإنه تيقن زوال النكاح في إحدى زوجتيه
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f027`: «You are divorced on Laylat al-Qadr»: abstain from the last ten «لإمكان أن يكون أول ليلة».
   > إذا قال أنت طالق ليلة القدر يعتزلها إذا دخل العشر الأواخر ms469 لإمكان أن يكون أول ليلة.
 
-**Rationale.** Abstention is a rule of conduct, not of status. The doubtful condition does not displace the certain marriage (Q11), so the theorem abstention_keeps_status proves both at once: the held judgement is unchanged, and abstention is due. Whether abstention is obligatory (al-Qāḍī) or scrupulous (Ibn ʿAqīl) is a further question the reading does not decide.
+**Rationale.** Abstention is a rule of conduct, not of status. The doubtful event does not displace the certain marriage (Q11), so the theorem abstention_keeps_status proves both at once: the held judgement is unchanged, and abstention is due. Whether abstention is wājib (al-Qāḍī) or scrupulous, waraʿ (Ibn ʿAqīl) is a further question the reading does not decide.
 
 **Lean:** `Usul.Refinements.abstains`, `Usul.Refinements.abstention_keeps_status`, `Usul.Refinements.known_absence_ends_abstention`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
 
 <a id="lots_for_forgotten_wife"></a>
 
-## Lots decide which wife was divorced when she is forgotten
+## Lots decide which wife was divorced (ṭalāq) when she is forgotten
 
 **Terms:** [al-qurʿa](../glossary.md#qurah), [al-majhūl](../glossary.md#majhul)  
 **Closes:** `rule:lots`  
@@ -323,7 +323,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `sadi.qawaid_jamia.archive_pdf1995_tess.q035`: Al-Saʿdī Q35, the doubling of compensation where a punishment lapses: the reading this case was filed under.
   > من سقطت عنه العقوبة لموجب ضوعف عليه الضمان وذلك إذا كان فعله سبباً ناهضاً لوجوب العقوبة عليه ولكن سقطت عنه لسبب من الأسباب، فإنه يضاعف عليه ضمان الشيء؛ (؟) سورة
 
-**Rationale.** The case sits under the qāʿida of aggravated compensation but is not a doubling: the restitution is owed once and the aggravation is a forfeiture whose size is the share, not the theft. ghulul_is_not_doubling proves the burden can be below, at or above twice the theft, which is exactly the text's «قدر السرقة وأقل وأكثر».
+**Rationale.** The case sits under the qāʿida of aggravated ḍamān («ضوعف عليه الضمان») but is not a doubling: the restitution is owed once and the aggravation is a forfeiture whose size is the share, not the theft. ghulul_is_not_doubling proves the burden can be below, at or above twice the theft, which is exactly the text's «قدر السرقة وأقل وأكثر».
 
 **Lean:** `Usul.Refinements.bootyTheftBurden`, `Usul.Refinements.ghululForfeits`, `Usul.Refinements.ghulul_is_not_doubling`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
@@ -389,7 +389,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 <a id="luqata"></a>
 
-## Luqaṭa after its year: owned, or given in charity, because the owner is unknown
+## Luqaṭa after its year: owned, or given as ṣadaqa, because the owner is unknown
 
 **Terms:** [al-luqaṭa](../glossary.md#luqata), [al-majhūl](../glossary.md#majhul)  
 **Closes:** `rule:luqata`  
@@ -500,14 +500,14 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f006`: «وافعلوا الخير», «دع ما يريبك»: the dilemma that either reading drops some items.
   > إذا كان المأمور به بعضه واجبا وبعضه مستحبا كقوله تعالى: {وافعلوا الخير} [الحج: 77] وقوله صلى الله عليه وسلم: "دع ما يريبك إلى ما لا يريبك" 1 ونحو ذلك وهو كثير في الكتابة والسنة. قال بعض الأصوليين إن حمل الأمر على الوجوب خرجت منه المستحبات وإن حمل على الندب خرجت منه الواجبات مع أنه يحكم وإن حمل عليهما لزم حمل اللفظ على حقيقته ومجازه أو على حقيقته. قال ms128 ابن عبد السلام في قواعده والحمل على الوجو
 
-**Rationale.** The dilemma assumes one status for the whole command. Both answers give each item its own status, one by takhṣīṣ of a general obligation, the other by the meaning of the command; mixed_readings_agree proves they rule alike on every item, so the case is derivable whichever is taken. They remain different claims about the word's meaning (ḥaqīqa and majāz), which the kernel does not model.
+**Rationale.** The dilemma assumes one status for the whole command. Both answers give each item its own status, one by takhṣīṣ of a general wujūb, the other by the meaning of the command; mixed_readings_agree proves they rule alike on every item, so the case is derivable whichever is taken. They remain different claims about the word's meaning (ḥaqīqa and majāz), which the kernel does not model.
 
 **Lean:** `Usul.Refinements.amrPerItem`, `Usul.Refinements.amrByTakhsis`, `Usul.Refinements.mixed_readings_agree`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
 
 <a id="makeup_after_failure"></a>
 
-## Make-up description after a binding undertaking
+## Make-up description after an undertaking made wājib
 
 **Terms:** [al-wājib](../glossary.md#wajib), [al-fāsid](../glossary.md#fasid), [al-rukhṣa](../glossary.md#rukhsa)  
 **Closes:** `rule:makeup_after_failure`  
@@ -541,7 +541,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 <a id="defective_compensation"></a>
 
-## Named versus equivalent compensation in defective contracts
+## Named (al-musammā) versus equivalent ḍamān in fāsid contracts
 
 **Terms:** [al-ḍamān](../glossary.md#daman), [al-fāsid](../glossary.md#fasid), [al-itlāf](../glossary.md#itlaf)  
 **Closes:** `rule:defective_compensation`  
@@ -555,7 +555,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 **Conditions**
 
 1. the source identifies whether the selected position treats compensation as contract or loss liability
-2. lawful consideration; the void/prohibited-consideration branch is outside this encoding
+2. lawful consideration; the bāṭil/prohibited-consideration branch is outside this encoding
 
 **Texts**
 
@@ -564,7 +564,9 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `src:openiti-rajab-shamela21730/v01:p067`: Known madhhab amount basis.
   > المبيع والمعروف في المذهب ضمانه بالقيمة لا بالثمن المسمى
 - `src:openiti-rajab-shamela21730/v01:p068`: The common outcome; no claim to resolve competing explanations.
-  > الكتابة الفاسدة تضمن بالمسمى فإذا أدى ما سمى فيها حصل العتق ولم يلزمه ضمان قيمته ذكره أبو بكر وهو ظاهر كلام أحمد، واتفق الأصحاب على ذلك
+  > الكتابة الفاسدة تضمن بالمسمى فإذا أدى ما سمى فيها حصل العتق ولم يلزمه ضمان قيمته ذكره أبو بكر وهو ظاهر كلام أحمد، واتفق الأصحاب على ذلك لكن المتأخرون زعموا أن الكتابة الفاسدة تعليق بصفة فلا يؤثر فسادها ولا تحريمها كما لو قال لعبده إن أعطيتني خمرا فأنت حر فأعطاه عتق لوجود الصفة
+- `src:openiti-rajab-shamela21730/v01:p068`: The following competing characterization and excluded prohibited-consideration branch; no adjudication added.
+  > وأما أبو بكر فعنده أن الكتابة عقد معاوضة أبدا وهو اختيار ابن عقيل وهو الأظهر ولا يقع العتق عنده بأداء المحرم لأن العقد لا ينعقد بعوض محرم بل هو عنده باطل.
 
 **Rationale.** The source explicitly contrasts contract compensation in the selected nikah position with loss compensation for defective sale. The suite records the competing named/value positions. Muamalat.priceDue is reused after fixing that source fact, not as evidence for the fact itself. All readings and attributions await human review.
 
@@ -573,7 +575,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 <a id="hukm_against_own_ijtihad"></a>
 
-## A ruling against the judge's own ijtihād stands unless a clear text contradicts it
+## A judge's verdict (ḥukm al-ḥākim) against his own ijtihād stands unless a clear text contradicts it
 
 **Terms:** [al-ẓann al-bayyin khaṭaʾuh](../glossary.md#zann_bayyin_khatauh), [ghalabat al-ẓann](../glossary.md#ghalabat_al_zann)  
 **Closes:** `rule:hukm_against_own_ijtihad`  
@@ -602,7 +604,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 <a id="ayman_by_urf"></a>
 
-## An oath's object is measured by custom
+## An oath's (yamīn's) object is measured by custom
 
 **Terms:** [al-ʿurf](../glossary.md#urf)  
 **Closes:** `rule:ayman_by_urf`  
@@ -679,7 +681,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022`: Qāʿida 22: is what is lost in another as non-existent? The mixed dirhams are among its furūʿ.
   > العين المنغمرة في غيرها إذا لم يظهر أثرها فهل هي كالمعدومة حكما أو لا؟ . فيه خلاف وينبني عليه مسائل: (ومنها) الماء الذي استهلكت فيه النجاسة فإن كان كثيرا سقط حكمها بغير خلاف، وإن كان يسيرا فروايتان ثم من الأصحاب من يقول إنما سقط حكمها وإلا فهي موجودة ومنهم من يقول بل الماء أحالها لأن له قوة الإحالة فلم يبق لها وجود بل الموجود غيرها فهو عين طاهرة وهي طريقة أبي الخطاب. (ومنها) اللبن المشوب بالماء ال
 
-**Rationale.** Aḥmad's ground is that taking out the share from much «يجحف بماله», while the little can be left without loss. Al-Qāḍī reads the suspension as recommendation and requires taking out the share in all; Ibn ʿAqīl in al-Funūn forbids the whole. Both are kept as positions.
+**Rationale.** Aḥmad's ground is that taking out the share from much «يجحف بماله», while the little can be left without loss. Al-Qāḍī reads the suspension as istiḥbāb (recommendation) and requires taking out the share in all; Ibn ʿAqīl in al-Funūn forbids the whole. Both are kept as positions.
 
 **Lean:** `Usul.Refinements.mixedHaram`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
@@ -700,21 +702,21 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 **Conditions**
 
 1. the act is a concession
-2. its permitting condition is in doubt
+2. its permitting sharṭ is in doubt
 
 **Texts**
 
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068`: Qāʿida 68's first type: what needs a firm intention is not valid with doubt unless ghalabat al-ẓann or an aṣl supports it.
   > إيقاع العبادات أو العقود أو غيرهما مع الشك في شرط صحتها هل يجعلها كالمعلقة على تحقيق ذلك الشرط أم لا؟ هي نوعان: أحدهما ما يشترط فيه النية الجازمة فلا يصح إيقاعه بهذا التردد ما لم يكن الشك غلبة ظن تكفي مثله في إيقاع العبادة أو العقد كغلبة الظن بدخول الوقت وطهارة الماء والثوب ونحو ذلك. ومن أمثلة ذلك إذا صلى يظن نفسه محدثا فتبين متطهرا. ومنها لو شك هل ابتدأ [مدة] مسح الخفين في السفر أو الحضر فمسح يوم
 
-**Rationale.** A concession is qāʿida 68's first type, a condition that needs a firm basis. Its aṣl is the ʿazīma, so no aṣl supports it (rukhsa_is_firm_condition). Al-Mughnī's view, that wuḍūʾ is valid with doubt in its cause, is the other position.
+**Rationale.** A concession is qāʿida 68's first type, a sharṭ that needs a firm basis. Its aṣl is the ʿazīma, so no aṣl supports it (rukhsa_is_firm_condition). Al-Mughnī's view, that wuḍūʾ is valid with doubt in its sabab, is the other position.
 
 **Lean:** `Usul.Refinements.rukhsaValid`, `Usul.Refinements.rukhsa_is_firm_condition`, `Usul.Refinements.validUnderDoubt`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
 
 <a id="taliq_al_bay"></a>
 
-## A sale conditioned on a fact both know to hold is as if unconditioned
+## A sale suspended (taʿlīq) on a fact both know to hold is as if unsuspended
 
 **Terms:** [al-sharṭ](../glossary.md#shart), [al-ṣaḥīḥ](../glossary.md#sahih)  
 **Closes:** `rule:taliq_al_bay`  
@@ -727,7 +729,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Conditions**
 
-1. the condition is a present fact
+1. the taʿlīq's event is a present fact
 2. both parties know it holds
 
 **Texts**
@@ -735,7 +737,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068`: Qāʿida 68: acting while doubting a condition of validity, «هل يجعلها كالمعلقة على تحقيق ذلك الشرط».
   > إيقاع العبادات أو العقود أو غيرهما مع الشك في شرط صحتها هل يجعلها كالمعلقة على تحقيق ذلك الشرط أم لا؟ هي نوعان: أحدهما ما يشترط فيه النية الجازمة فلا يصح إيقاعه بهذا التردد ما لم يكن الشك غلبة ظن تكفي مثله في إيقاع العبادة أو العقد كغلبة الظن بدخول الوقت وطهارة الماء والثوب ونحو ذلك. ومن أمثلة ذلك إذا صلى يظن نفسه محدثا فتبين متطهرا. ومنها لو شك هل ابتدأ [مدة] مسح الخفين في السفر أو الحضر فمسح يوم
 
-**Rationale.** The bar on conditioned sale (al-Qāḍī, Ibn ʿAqīl) is against uncertainty in the contract. A condition both know to hold adds none, as with «بعتك هذه إن كانت جارية» and Aḥmad's naṣṣ on selling the absent thing «إن كان سالما».
+**Rationale.** The bar on suspended sale («البيع لا يصح تعليقه») (al-Qāḍī, Ibn ʿAqīl) is against uncertainty in the contract. A taʿlīq on what both know to hold adds none, as with «بعتك هذه إن كانت جارية» and Aḥmad's naṣṣ on selling the absent thing «إن كان سالما».
 
 **Lean:** `Usul.Refinements.conditionedSaleValid`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
@@ -764,7 +766,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065`: Qāʿida 65: one who disposed of what he thought not his.
   > وهي من تصرف في شيء يظن أنه لا يملكه فتبين أنه كان يملكه، وفيها خلاف أيضا ويندرج تحتها صور: منها لو باع ملك أبيه بغير إذنه ثم تبين أن أباه كان قد مات ولا وارث له وفي صحة تصرفه وجهان ويقال روايتان. ومنها لو طلق امرأة يظنها أجنبية فتبينت زوجته ففي وقوع الطلاق روايتان، وبناهما أبو بكر على أن الصريح هل يحتاج إلى نية أم لا؟ قال القاضي إنما هذا الخلاف في صورة الجهل بأهلية المحل ولا يطرد مع العلم به ومنها
 
-**Rationale.** If qiṣāṣ for the life is the heirs', the victim pardoned a right he did not know to be his to pardon. That is qāʿida 65's unknown condition (heirs_right_is_q65), so the pardon is void, as al-Qāḍī and others hold.
+**Rationale.** If qiṣāṣ for the life is the heirs', the victim pardoned a right he did not know to be his to pardon. That is qāʿida 65's case, acting on what one thought not one's own («من تصرف في شيء يظن أنه لا يملكه») (heirs_right_is_q65), so the pardon is not ṣaḥīḥ, «وجزم القاضي وغيره بأنه لا يصح العفو».
 
 **Lean:** `Usul.Refinements.pardonOfSpreadValid`, `Usul.Refinements.heirs_right_is_q65`, `Usul.Refinements.countsAsMet`  
 **Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
@@ -796,7 +798,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f006`: Aḥmad's riwāya: the void condition «يصير وجوده كعدمه», so the binding pledge stands.
   > لو قال الراهن للمرتهن: إن جئتك بحقك إلى وقت كذا وإلا فالرهن لك بالدين وقبل ذلك فهو أمانة عنده إلى ذلك الوقت، ثم يصير مضمونا ; لأن قبضه صار بعقد فاسد ذكره القاضي وابن عقيل، باللآلي عن أحمد في رواية محمد بن الحسن بن هارون أنه لا يضمنه بحال ذكره القاضي في الخلاف ; لأن الشرط يفسد فيصير وجوده كعدمه.
 
-**Rationale.** The reconciliation ledger found the reading against Majd's ẓāhir of Aḥmad on the pledge used with permission (37.f000) and against Aḥmad's riwāya on the pledge with a void condition (37.f006). Abū al-Barakāt's own farq in 37.f003 is the jamʿ: a non-binding permission cannot undo a binding pledge. The refinement is the old reading wherever the later contract binds or the earlier did not, so every derivable farʿ of the qāʿida keeps its ruling, and the two contradictions resolve to the higher-graded side.
+**Rationale.** The reconciliation ledger found the reading against Majd's ẓāhir of Aḥmad on the pledge used with permission (37.f000) and against Aḥmad's riwāya on the pledge with a void condition, «الشرط يفسد» (37.f006). Abū al-Barakāt's own farq in 37.f003 is the jamʿ: a non-binding permission cannot undo a binding (lāzim) pledge. The refinement is the old reading wherever the later contract binds or the earlier did not, so every derivable farʿ of the qāʿida keeps its ruling, and the two contradictions resolve to the higher-graded side.
 
 **Lean:** `Usul.Refinements.laterBindingGoverns`, `Usul.Refinements.laterBindingGoverns_conservative`, `Usul.Refinements.laterBindingGoverns_unbound_earlier`, `Usul.Refinements.binding_pledge_survives`  
 **Conservative over the earlier reading:** `Usul.Refinements.laterBindingGoverns_conservative`
@@ -830,14 +832,14 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `src:openiti-insaf-shamela21609/v04:p145`: al-Mardāwī reads the apparent sense of al-Muqniʿ, al-Hidāya, al-Mudhhab, al-Mustawʿib and others as 'she is not returned to him', since they give only her value. This is position 0 (his right stays settled in the value).
   > لكن لو أسلم بعد ذلك: ففي جواز ردها إليه احتمالان وأطلقهما في الرعاية الكبرى، والفروع، والقواعد الفقهية. قلت: ظاهر كلام المصنف هنا، وصاحب الهداية، والمذهب، والمستوعب، وغيرهم: أنها لا ترد إليه، لاقتصارهم على إعطاء قيمتها.
 
-**Rationale.** The reconciliation ledger found the reading against the later taṣḥīḥ on five of the qāʿida's seven furūʿ: al-Inṣāf, al-Iqnāʿ and Kashshāf judge kaffārāt by the state at obligation, and the books give the value where the right was fixed in it. The refinement is the earlier reading wherever the substitute was not yet settled (the fungible destroyed and its like found before payment, the bankrupt's purchase freed of the competing right), so those keep their rulings.
+**Rationale.** The reconciliation ledger found the reading against the later taṣḥīḥ on five of the qāʿida's seven furūʿ: al-Inṣāf, al-Iqnāʿ and Kashshāf judge kaffārāt by the state at obligation («بحالة الوجوب»), and the books give the value where the right was fixed in it. The refinement is the earlier reading wherever the substitute was not yet settled (the fungible destroyed and its like found before payment, the bankrupt's purchase freed of the competing right), so those keep their rulings.
 
 **Lean:** `Usul.Refinements.useSubstituteAt`, `Usul.Refinements.useSubstituteAt_conservative`, `Usul.Refinements.settled_substitute_stands`  
 **Conservative over the earlier reading:** `Usul.Refinements.useSubstituteAt_conservative`
 
 <a id="unknown_condition_in_fact"></a>
 
-## In transactions the condition counts as it is in fact
+## In transactions the condition (sharṭ) counts as it is in fact
 
 **Terms:** [al-jamʿ](../glossary.md#jam), [al-farq](../glossary.md#farq), [al-sharṭ](../glossary.md#shart)  
 **Closes:** `rule:unknown_condition_in_fact`  
@@ -870,7 +872,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 <a id="excess_in_following"></a>
 
-## In following, the excess counts as the obligatory
+## In following, the excess counts as the obligatory (wājib)
 
 **Terms:** [al-jamʿ](../glossary.md#jam), [al-farq](../glossary.md#farq)  
 **Closes:** `rule:excess_in_following`  
@@ -916,7 +918,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 **Conditions**
 
 1. the advanced act is a kaffāra
-2. the state changed by its wujūb (he broke the oath well off)
+2. the state changed by its wujūb (he broke the oath well off: «حنث وهو موسر»)
 
 **Texts**
 
@@ -927,7 +929,7 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 - `src:openiti-hajjawi-iqna-shamela7360/v04:p338`: The Iqnāʿ matn ends the sentence "if he expiated by fasting before the ḥinth for poverty, then broke the oath" (previous line) with "while well off, it does not suffice".
   > وهو موسر لم يجزئه ومن كرر يمينا موجبها واحد على فعل واحد كقوله: والله لا
 
-**Rationale.** The muʿtamad (al-Iqnāʿ, Kashshāf) sides with al-Mughnī on the expiation advanced by fasting: a kaffāra is judged at its wujūb, the same farq as qāʿida 16's state at obligation. The hady of tamattuʿ is no kaffāra, and the later works leave it unweighted, so it keeps the reading, as do the zakāt and the second kind (a defect in a condition).
+**Rationale.** The muʿtamad (al-Iqnāʿ, Kashshāf) sides with al-Mughnī on the expiation advanced by fasting: a kaffāra is judged at its wujūb, the same farq as qāʿida 16's state at obligation. The hady of tamattuʿ is no kaffāra, and the later works leave it unweighted, so it keeps the reading, as do the zakāt and the second kind (a defect in a condition, sharṭ).
 
 **Lean:** `Usul.Refinements.advancedSufficesIn`, `Usul.Refinements.advancedSufficesIn_conservative`  
 **Conservative over the earlier reading:** `Usul.Refinements.advancedSufficesIn_conservative`
@@ -964,3 +966,204 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 
 **Lean:** `Usul.Refinements.otherTongueValidIn`, `Usul.Refinements.otherTongueValidIn_conservative`  
 **Conservative over the earlier reading:** `Usul.Refinements.otherTongueValidIn_conservative`
+
+<a id="forced_acquisition_solvent"></a>
+
+## A solvent taker owns before paying
+
+**Terms:** [al-jamʿ](../glossary.md#jam), [al-farq](../glossary.md#farq)  
+**Closes:** `rule:forced_acquisition_solvent`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050`: Ibn Rajab, qāʿida 50: whether ownership in forced acquisitions waits on paying the price; the tranche-9 reading allowed it only under necessity.
+  > هل يتوقف الملك في العقود القهرية على دفع الثمن أو يقع بدونه مضمونا في الذمة هذا على ضربين: أحدهما: التملك الاضطراري كمن اضطر إلى طعام الغير ومنعه وقدر على أخذه فإنه يأخذه مضمونا سواء كان معه ثمن يدفعه في الحال أو لا لأن ضرره لا يندفع إلا بذلك والثاني: ما عدده من التمليكات المشروعة لإزالة ضرر ما كالأخذ بالشفعة وأخذ الغراس والبناء من المستعير والمستأجر والزرع ومن الغاصب وتقويم الشقص من العبد المشترك
+
+**Conditions**
+
+1. the acquisition is the shufʿa (the farq is cited for it alone; the seller's annulment (faskh) and the other acquisitions keep the reading)
+2. the shafīʿ is solvent for the price
+
+**Texts**
+
+- `src:openiti-insaf-shamela21609/v06:p298`: Al-Mardāwī says the view that the shafīʿ owns the share by the mere demand, if he can pay the price, is "huwa al-madhhab" (the previous line reads "wa-qīla: yamlikuhu bi-mujarrad al-muṭālaba idhā kāna malīʾan bi-l-thaman. wa-huwa"). He reports Ibn ʿAqīl's "not owned until he pays the price" only as 
+  > المذهب. اختاره القاضي، وأبو الخطاب، وابن عبدوس في تذكرته. وقدمه في
+- `src:openiti-hajjawi-iqna-shamela7360/v02:p366`: The Iqnāʿ states decisively that the share is owned by the demand, even before he receives it, provided he can pay the price, so ownership comes before the price is paid. On the shufʿa, the record's leading example.
+  > ذلك رضا فإن اشتغل بكلام آخر أو سكت لغير حاجة بطلت ويملك الشقص بالمطالبة
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f001`: Ibn Rajab's rationale, «والضرر لا يزال بالضرر», and his farq for the seller's annulment: «اجتمع له العوض والمعوض».
+  > ما عدده من التمليكات المشروعة لإزالة ضرر ما كالأخذ بالشفعة وأخذ الغراس والبناء من المستعير والمستأجر والزرع ومن الغاصب وتقويم الشقص من العبد المشترك إذا قيل إنه تملك يقف على التقويم، وكالفسوخ التي يستقل بها البائع بعد قبض الثمن يتخرج ذلك كله على وجهين فإن لأصحابنا في الأخذ بالشفعة وجهين: أحدهما: لا يملك بدون دفع الثمن وهو محكي عن ابن عقيل ويشهد له نص أحمد أنه إذا لم يحضر المال مدة طويلة بطلت شفعته
+
+**Rationale.** The ledger found the reading against al-Inṣāf's «وهو المذهب», Kashshāf and al-Iqnāʿ on the shufʿa: the solvent taker owns by the demand, with the price owed. Solvency is the farq the madhhab states, and it answers Ibn Rajab's own ground: «والضرر لا يزال بالضرر», and a solvent taker inflicts no harm. The necessity case keeps the reading, and so does every acquisition other than the shufʿa, for which no farq is cited.
+
+**Lean:** `Usul.Refinements.ownedBeforePaymentIn`, `Usul.Refinements.ownedBeforePaymentIn_conservative`, `Usul.Refinements.ownedBeforePaymentIn_insolvent`  
+**Conservative over the earlier reading:** `Usul.Refinements.ownedBeforePaymentIn_conservative`
+
+<a id="disposal_before_qabd_debt"></a>
+
+## A debt is sold only to the debtor
+
+**Terms:** [al-jamʿ](../glossary.md#jam), [al-farq](../glossary.md#farq)  
+**Closes:** `rule:disposal_before_qabd_debt`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052`: Ibn Rajab, qāʿida 52: disposal before qabḍ; the tranche-10 reading barred it only in the undetermined and where the right is not settled.
+  > في التصرف في المملوكات قبل قبضها: وهي منقسمة إلى عقود وغيرها فالعقود نوعان: أحدهما: عقود المعاوضات وتنقسم إلى بيع وغيره، فأما المبيع فقالت طائفة من الأصحاب التصرف قبل القبض والضمان متلازمان فإن كان البيع مضمونا على البائع لم يجز التصرف فيه للمشتري حتى يقبضه وإن كان قبل القبض من ضمان المشتري جار له التصرف فيه، وصرح بذلك القاضي في الجامع الصغير وغيره. وجعلوا العلة المانعة من التصرف توالي الضمانات. و
+
+**Conditions**
+
+1. the thing disposed of is a settled debt in another's dhimma
+2. it is sold to one other than the debtor
+
+**Texts**
+
+- `src:openiti-insaf-shamela21609/v05:p112`: al-Inṣāf: a settled debt may not be sold to any but the debtor, «وهو الصحيح من المذهب. وعليه الأصحاب», which al-Mardāwī applies to the sale of the deeds.
+  > ذمته. وهو الصحيح من المذهب. وعليه الأصحاب. وعنه يصح. قاله الشيخ تقي
+- `src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p072`: The Muntahā and its sharḥ state flatly that a debt may not be sold to anyone but the debtor, «muṭlaqan». This covers sale for goods taken in the session.
+  > (ولا) بيع دين لغير من هو عليه مطلقا ولا بيعه (بمؤجل لمن هو عليه) ;
+- `src:openiti-hajjawi-iqna-shamela7360/v02:p144`: The Iqnāʿ allows the sale of a settled debt to the debtor and then rules decisively «ولا يصح بيعه لغيره».
+  > به نسيئة أو بموصوف في الذمة وإلا فلا ولا يصح بيعه لغيره ولا بيع دين
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f001`: Ibn Rajab: «حاصل هذا يرجع إلى جواز بيع الدين من غير الغريم», the riwāya the reading followed.
+  > بيع الصكاك قبل قبضها وهي الديون الثابتة على الناس وتسمى صكاكا لأنها تكتب في صكاك وهي ما يكتب فيه من الرق ونحوه فيباع ما في الصك فإن كان الدين نقدا وبيع بنقد لم يجز بلا خلاف لأنه صرف بنسيئة وإن بيع بعرض وقبضه في المجلس ففيه روايتان إحداهما: لا يجوز قال أحمد في رواية ابن منصور في بيع الصك هو غرر، ونقل أبو طالب عنه أنه كرهه وقال: الصك لا يدرى أيخرج أو لا، وهذا يدل على أن مراده الصك من عطاء ms102 الدي
+
+**Rationale.** The ledger found the reading against al-Inṣāf's «وهو الصحيح من المذهب. وعليه الأصحاب», al-Iqnāʿ and al-Muntahā on the deeds: a settled debt is sold to the debtor and to no one else. That is the farq the madhhab states; the determined and the settled otherwise keep the reading.
+
+**Lean:** `Usul.Refinements.disposeBeforeQabdIn`, `Usul.Refinements.disposeBeforeQabdIn_conservative`  
+**Conservative over the earlier reading:** `Usul.Refinements.disposeBeforeQabdIn_conservative`
+
+<a id="deputy_of_qadi"></a>
+
+## The qāḍī's deputies are removed with him
+
+**Terms:** [al-jamʿ](../glossary.md#jam), [al-farq](../glossary.md#farq)  
+**Closes:** `rule:deputy_of_qadi`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061`: Ibn Rajab, qāʿida 61: whether one who acts generally does so by agency or by authority; the tranche-10 reading kept any deputy of general mandate in office.
+  > المتصرف تصرفا عاما على الناس كلهم من غير ولاية أحد معين وهو الإمام، هل يكون تصرفه عليهم بطريق الوكالة لهم أو بطريق الولاية؟ في ذلك وجهان وخرج الآمدي روايتين بناء على أن خطأه هل هو على عاقلته أو في بيت المال ; لأنا إن جعلناه على عاقلته فهو متصرف بنفسه وإن جعلناه في بيت المال فهو متصرف بوكالتهم لهم وعليهم فلا يضمن لهم ولا يهدر خطاءه فيجب في بيت المال واختيار القاضي في خلافه أنه متصرف بالوكالة لعمومه
+
+**Conditions**
+
+1. the deputy holds a general mandate
+2. he was appointed by a qāḍī, not by the imām
+
+**Texts**
+
+- `src:openiti-insaf-shamela21609/v11:p172`: al-Inṣāf, fāʾida 2 under the judge's removal: if the delegating party is a qāḍī whose authority lapses by death, dismissal etc., 'انعزل نائبه وإن لم ينعزل في المسائل التي قبلها' - this is the ṣaḥīḥ of the madhhab and the view of most aṣḥāb: deputies are removed (position 1).
+  > هذا الصحيح من المذهب. وعليه أكثر الأصحاب. وصححه في النظم، وغيره. وجزم به
+- `src:openiti-buhuti-kashshaf-shamela21642/v06:p293`: Kashshāf: if the delegator is a qāḍī and his authority lapses by death or otherwise, his deputies are removed, because they are his deputies like agents - position 1.
+  > زالت ولايته بموت أو عزل أو غيره كما لو اختل فيه بعض شروطه انعزلوا) لأنهم
+- `src:openiti-hajjawi-iqna-shamela7360/v04:p368`: The Iqnāʿ matn: if the delegator is a qāḍī whose authority lapses by death etc., they (his deputies) are removed - position 1.
+  > فإن كان المستتيب قاضيا فعزل نوابه أو زالت ولايته بموت أو عزل أو غيره:
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f001`: Ibn ʿAqīl from the aṣḥāb: «لأنهم نواب القاضي بخلاف القضاة فإنهم نواب للمسلمين».
+  > من ولايته عامة كخلفائه وأمنائه على الأطفال ونوابه على القرى فهل هم بمنزلة وكلائه أو نواب المسلمين فلا ينعزلون بموته؟ على وجهين ذكرهما الآمدي، وصحح صاحب الترغيب عدم الانعزال، وحكى ابن عقيل عن الأصحاب أنهم ينعزلون لأنهم نواب القاضي بخلاف القضاة فإنهم نواب للمسلمين، ولهذا يجب على الإمام نصب القضاة ولا يجب على القضاة الاستنابة، ويجاب عنه بأن القضاء ليس بفرض كفاية على رواية ولا يجب نصب قاض بالكلية وبأن
+
+**Rationale.** The ledger found the reading against al-Inṣāf's «هذا الصحيح من المذهب. وعليه أكثر الأصحاب», al-Iqnāʿ and Kashshāf: the qāḍī's deputies are removed with him, being his deputies like agents. The farq is the one Ibn ʿAqīl reports from the aṣḥāb, the qāḍīs themselves deputies of the Muslims; deputies of the imām keep the reading.
+
+**Lean:** `Usul.Refinements.removedWithPrincipalIn`, `Usul.Refinements.removedWithPrincipalIn_conservative`  
+**Conservative over the earlier reading:** `Usul.Refinements.removedWithPrincipalIn_conservative`
+
+<a id="annulment_without_return"></a>
+
+## No return for a defect once the thing perishes
+
+**Terms:** [al-jamʿ](../glossary.md#jam), [al-farq](../glossary.md#farq)  
+**Closes:** `rule:annulment_without_return`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059`: Ibn Rajab, qāʿida 59: annulments fall on what no longer exists; the tranche-11 reading let every annulment survive the thing's loss.
+  > العقود لا ترد إلا على موجود بالفعل أو بالقوة، وأما الفسوخ فترد على المعدوم حكما واختيارا على الصحيح وقد دل عليه حديث المصراة حيث أوجب الشارع رد صاع التمر عوضا عن اللبن بعد تلفه وهو مما ورد العقد عليه فدل على أنه حكم بفسخ العقد فيه ورد عوضه مع أصله والرجوع بالثمن كاملا فأما الانفساخ الحكمي بالتلف ففي مواضع : منها إذا تلف المبيع المبهم قبل قبضه انفسخ العقد فيه وفي عوضه سواء كان ثمنا أو مثمنا. ومنها 
+
+**Conditions**
+
+1. the buyer would annul for a defect by returning the thing sold
+2. the thing sold has perished
+
+**Texts**
+
+- `src:openiti-insaf-shamela21609/v04:p419`: If the defective item perishes the buyer is limited to the arsh, «وهذا المذهب. وعليه أكثر الأصحاب»; annulment returning the substitute is only al-Qāḍī's takhrīj.
+  > قوله (أو تلف المبيع: رجع بأرشه) يعني يتعين له الأرش. وهذا المذهب. وعليه أكثر الأصحاب. ويتخرج أن يفسخ ويغرم القيمة.
+- `src:openiti-buhuti-kashshaf-shamela21642/v03:p222`: Kashshāf: in the list that begins with perishing of the item («أو تلف المبيع ولو بفعله»), the arsh is fixed and return lapses because it is impossible.
+  > أو باعه) أي باع المشتري المبيع (أو وهبه أو رهنه، أو وقفه غير عالم بعيبه) ثم علم (تعين الأرش) لما تقدم وسقط الرد لتعذره
+- `src:openiti-hajjawi-iqna-shamela7360/v02:p098`: The Iqnāʿ matn lists perishing among the cases where the arsh is fixed («تعين الأرش»).
+  > أو قتل أو استولد الأمة أو تلف المبيع ولو بفعله: كأكله ونحوه أو باعه أو وهبه أو رهنه أو وقفه غير عالم بعيبه - تعين الأرش
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f004`: Ibn Rajab against the akthar: «وهو ضعيف لأن البدل يقوم مقام العين»; the reading followed him.
+  > إذا تلفت العين المعيبة كلها فهل يملك المشتري الفسخ ورد بدلها أم لا؟ الذي عليه الأكثرون أنه لا يملك ذلك وأشار إليه أحمد في رواية ابن منصور قالوا: لأن الرد يستدعي مردودا ولا مردود إلا مع بقاء العين وظلامته تستدرك بالأرش وهو ضعيف لأن البدل يقوم مقام العين وخرج القاضي في خلافه جواز ذلك من رد المشتري أرش العيب الحادث عنده كما تقدم وذكر في أنه قياس المذهب وتابعه عليه أبو الخطاب في انتصاره، وجزم به ابن ع
+
+**Rationale.** The ledger found the reading against al-Inṣāf's «وهذا المذهب. وعليه أكثر الأصحاب», al-Iqnāʿ and Kashshāf: once the thing with an ʿayb perishes the arsh is fixed, the return impossible («وسقط الرد لتعذره»). Annulments by operation of law (infisākh: the undetermined thing, the blighted fruit, the lease) and after the parties' oaths (the yamīn of a claim, then faskh) keep the reading; iqāla after loss is left to tarjīḥ, where al-Qāḍī's «قياس المذهب» keeps it with the reading for review.
+
+**Lean:** `Usul.Refinements.annulsNonexistentIn`, `Usul.Refinements.annulsNonexistentIn_conservative`  
+**Conservative over the earlier reading:** `Usul.Refinements.annulsNonexistentIn_conservative`
+
+<a id="cause_on_certainty"></a>
+
+## A cause from one of two men: each alone is bound to nothing harmless when certain of his own state
+
+**Terms:** [al-sabab](../glossary.md#sabab), [al-yaqīn](../glossary.md#yaqin), [al-shakk](../glossary.md#shakk)  
+**Closes:** `rule:cause_on_certainty`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014`: Ibn Rajab, qāʿida 14: «فهل يلحق الحكم بكل منهما أو لا يلحق بواحد منهما شيء». The first riwāya on the two who find al-manī rests on each one's certainty: «لا يلزم واحدا منهما غسل ولا وضوء نظرا إلى أن كل واحد منهما متيقن للطهارة شاك في الحدث»; taken together, «فينظر إليهما مجتمعين في حكم يتعلق باجتماعهما».
+  > (القاعدة الرابعة عشر) : إذا وجد سبب إيجاب أو تحريم من أحد رجلين لا يعلم عينه منهما، فهل يلحق الحكم بكل منهما أو لا يلحق بواحد منهما شيء في المسألة خلاف ولها صور: (إحداها) إذا وجد اثنان منيا في ثوب ينامان فيه أو سمعا صوتا خارجا ولم يعلم من أيهما هو ففي المسألة روايتان (إحداهما) لا يلزم واحدا منهما غسل ولا وضوء نظرا إلى أن كل واحد منهما متيقن للطهارة شاك في الحدث. (والثانية) : يلزمهما الغسل والوضوء 
+
+**Conditions**
+
+1. a cause of obligation or prohibition from one of two, not known which
+2. each is certain of his own prior state and doubts only the breach
+3. the ruling is harmless (ṭahāra), not one that would cut a right (divorce, manumission)
+4. each is taken alone, not together in one ruling
+
+**Texts**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000`: The two riwāyas on the shared garment; the first on each one's certainty.
+  > إذا وجد اثنان منيا في ثوب ينامان فيه أو سمعا صوتا خارجا ولم يعلم من أيهما هو ففي المسألة روايتان (إحداهما) لا يلزم واحدا منهما غسل ولا وضوء نظرا إلى أن كل واحد منهما متيقن للطهارة شاك في الحدث. (والثانية) : يلزمهما الغسل والوضوء لأن الأصل زال يقينا في أحدهما فتعذر البقاء عليه وتعين الاحتياط ولم يلتفت إلى النظر في كل واحد بمفرده كثوبين أو إناءين نجس أحدهما.
+- `src:openiti-insaf-shamela21609/v01:p229`: al-Inṣāf: no ghusl, «على الصحيح من المذهب».
+  > ينام فيه هو وغيره، وكانا من أهل الاحتلام على الصحيح من المذهب، وعنه يجب.
+- `src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p080`: Sharḥ al-Muntahā, decisively: neither owes the ghusl (and neither follows the other in prayer: the joint ruling).
+  > إذا كان الثوب لا ينام فيه غيره ممن يحتلم. فإن كان كذلك فلا غسل على واحد
+
+**Rationale.** Two contributions read qāʿida 14 differently. The M8 reading (attachTo) takes Ibn Rajab's farq: binding both is harmless in ṭahāra, cuts a right in divorce. It therefore binds each in the shared-garment case, which the madhhab rejects: al-Inṣāf, al-Furūʿ and Sharḥ al-Muntahā give no ghusl to either, as the ledger's graded evidence for 14.f000 records. The other reading (oneOfTwoAttaches, tanāquḍ T-15) separates the two taken together from each alone, and puts each alone on his own aṣl (Q15). The jamʿ keeps both: each alone and certain of his own state is bound to nothing harmless, which is Q15 (q14_alone_is_q15); where a right would be cut each still abstains (Aḥmad's naṣṣ); taken together the certain cause attaches. The refinement is conservative over attachTo and departs only on the harmless case, to neither.
+
+**Lean:** `Usul.Readings.Concordance.attachOnCertainty`, `Usul.Readings.Concordance.attachOnCertainty_conservative`, `Usul.Readings.Concordance.attachOnCertainty_departs`, `Usul.Readings.Concordance.attachOnCertainty_abstains`, `Usul.Readings.Concordance.q14_alone_is_q15`, `Usul.Readings.Concordance.q14_together_attaches_alone_not`, `Usul.Readings.Concordance.q3_readings_agree`, `Usul.Readings.Concordance.q9_readings_agree`, `Usul.Readings.Concordance.validDespite_refines_q38`, `Usul.Readings.Concordance.q15_readings_agree`  
+**Conservative over the earlier reading:** `Usul.Readings.Concordance.attachOnCertainty_conservative`
+
+<a id="mubashara_tasabbub"></a>
+
+## The direct act and the cause: on whom the ḍamān of an itlāf falls
+
+**Terms:** [al-ḍamān](../glossary.md#daman), [al-itlāf](../glossary.md#itlaf), [al-sabab](../glossary.md#sabab)  
+**Closes:** `rule:mubashara_tasabbub`  
+**Register:** —
+
+**Statement**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127`: Ibn Rajab, qāʿida 127: an itlāf resting on a direct act and a cause makes the direct act liable, «إلا إذا كانت المباشرة مبنية على السبب وناشئة عنه»; then the cause alone bears it where the direct act has no transgression, and shares it where it has some. «فالأقسام ثلاثة».
+  > إذا استند إتلاف ms372 أموال الآدميين ونفوسهم إلى مباشرة وسبب تعلق الضمان بالمباشرة دون السبب إلا إذا كانت المباشرة مبنية على السبب وناشئة عنه، سواء كانت ملجئة، ثم إن كانت المباشرة والحالة هذه لا عدوان فيها بالكلية استقل السبب وحده بالضمان، وإن كان فيها عدوان شاركت السبب في الضمان. فالأقسام ثلاثة: ومن صور القسم الأول مسائل: منها: إذا حفر واحد بئرا عدوانا ثم دفع غيره فيها آدميا معصوما أو مالا لمعصوم
+
+**Conditions**
+
+1. an itlāf of persons or property resting on both a direct act (mubāshara) and a cause (sabab)
+2. whether the direct act is built on the cause and arises from it
+3. whether the direct act has any transgression
+
+**Texts**
+
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f000`: Division one: pushing someone into a well another dug in transgression, «فالضمان على الدافع وحده».
+  > إذا حفر واحد بئرا عدوانا ثم دفع غيره فيها آدميا معصوما أو مالا لمعصوم فسقط فتلف فالضمان على الدافع وحده.
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f003`: Division two: the judge's execution arises from false testimony without transgression in him, «فالضمان والقود عليهم دون الحاكم».
+  > لو قتل الحاكم حدا أو قصاصا بشهادة ثم أقر الشهود أنهم تعمدوا الكذب فالضمان والقود عليهم دون الحاكم. ونقل أبو النصر العجلي عن أحمد إذا رجم الحاكم بشهادة أربعة ثم تبين أن المرجوم مجبوب فالضمان على الحاكم وهو مشكل ; لأنه قد تبين كذبهم بالعيان فهو كإقرارهم بتعمد الكذب، وقد يفرق بأن المجبوب لا يخفى أمره غالبا فالإقدام على رجمه لا يخلو من تفريط، وبأن الشهود قد يشتبه عليهم فلا يتحقق تعمدهم للكذب وأما إن ت
+- `ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f005`: Division three, on one riwāya: «الممسك مع القاتل فإنهما يشتركان في الضمان والقود على إحدى الروايتين»; the other riwāya gives it to the direct actor alone.
+  > الممسك مع القاتل فإنهما يشتركان في الضمان والقود على إحدى الروايتين، وفي الأخرى يختص المباشر بهما ويحبس الماسك حتى يموت.
+
+**Rationale.** The IslamQA tranche left 9 of its 27 itlāf cases as missing_rule with need rule:mubashara_tasabbub: these answers turn on causation, which the itlāf encoder (al-Saʿdī Q13 ⊔ Q36) does not read. Ibn Rajab's qāʿida 127 states that rule over itlāf itself, with three divisions its own furūʿ instance. It is formalised as a new encoder beside itlāf, which is unchanged; its type extends itlāf's types (Usul.Typing.Qaida.Mubashara). A cause with no direct act is not covered by the statement and stays a gap.
+
+**Lean:** `Usul.Readings.Mubashara.damanOn`, `Usul.Readings.Mubashara.q127_direct_unless_arising`, `Usul.Readings.Mubashara.q127_cause_alone_without_udwan`, `Usul.Readings.Mubashara.q127_shared_with_udwan`, `Usul.Readings.Mubashara.q127_three_divisions`, `Usul.Readings.Mubashara.q127_agrees_with_q13`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)

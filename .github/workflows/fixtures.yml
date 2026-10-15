@@ -32,3 +32,6 @@ jobs:
 
       - name: Run runner self-tests, fixtures, and guard mutants
         run: tests/run_all.sh
+
+      - name: "Oracle: Prolog mirror of the Lean ḥadīth kernel over the corpus"
+        run: formal/oracle/run_all.sh

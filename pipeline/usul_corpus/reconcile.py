@@ -18,6 +18,8 @@ import re
 from collections import Counter
 from pathlib import Path
 
+from .shards import with_fragments
+
 from . import takhrij
 
 LEDGER = Path("reconciliation") / "ledger.json"
@@ -106,6 +108,52 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
                 errs.append(f"{f}: a jamʿ must land on the prevailing side")
         if c.get("matches_madhhab") and not e.get("jam"):
             errs.append(f"{f}: matches the madhhab without a jamʿ; nothing to reconcile")
+    for c in cases:
+        if "side_check" not in c:
+            continue
+        sc = c["side_check"]
+        f = c["far"]
+        if sc.get("from_matches") is not True or c.get("matches_madhhab") is not False or c["class"] != "genuine_ikhtilaf":
+            errs.append(f"{f}: a failed side check preserves a true original annotation and a false current match")
+        e = entries.get(f)
+        if e is None:
+            errs.append(f"{f}: a failed side check must enter the ledger")
+            continue
+        ev = e.get("evidence", [])
+        refs = sc.get("refs", [])
+        if not refs or len(set(refs)) != len(refs) or not set(refs) <= {v["ref"] for v in ev}:
+            errs.append(f"{f}: a side check cites only the ledger's own evidence")
+            continue
+        witnesses = sc.get("contradictions", [])
+        indices = [w.get("evidence_index") for w in witnesses]
+        if (not witnesses or any(type(i) is not int or not 0 <= i < len(ev) for i in indices)
+                or len(set(indices)) != len(indices)):
+            errs.append(f"{f}: a side check needs distinct exact evidence items")
+            continue
+        selected = [ev[i] for i in indices]
+        if set(refs) != {v["ref"] for v in selected}:
+            errs.append(f"{f}: side-check refs must identify exactly the selected evidence")
+        if any(w.get("case_facts") != c["facts"] or not isinstance(w.get("rationale"), str)
+               or not w["rationale"].strip() for w in witnesses):
+            errs.append(f"{f}: contradiction evidence needs case-specific facts and an applicability rationale")
+        ps = c["positions"]
+        if any(type(v.get("position")) is not int or not 0 <= v["position"] < len(ps)
+               or v.get("grade") not in {"tashih", "jazm"} for v in selected):
+            errs.append(f"{f}: contradiction evidence needs a listed position and later tashih or jazm")
+            continue
+        rulings = [p["ruling"] for p in ps]
+        pairs = [(ps[v["position"]]["ruling"], v["grade"]) for v in selected]
+        winner = prevail(pairs)
+        if (c["expected"] not in rulings or any(r == c["expected"] for r, _ in pairs)
+                or winner is None):
+            errs.append(f"{f}: cited evidence must establish an unambiguous ruling against the original side")
+        # A selected subset cannot override a tie or a contrary outcome in the full ledger.
+        if (len(e["grades"]) == len(ps) and all(g in GRADES for gs in e["grades"] for g in _grades(gs))
+                and all(type(v.get("position")) is int and 0 <= v["position"] < len(ps)
+                        and v.get("grade") in GRADES for v in ev)):
+            stage, ruling = resolve(c, e)
+            if stage != "tarjih" or ruling != winner or ruling == c["expected"]:
+                errs.append(f"{f}: the full ledger must confirm the cited contradiction by tarjih")
     for enc, cs in jams.items():
         frm = {entries[c["far"]]["jam"]["from"] for c in cs}
         if len(frm) != 1:
@@ -155,6 +203,8 @@ def report(cases: list[dict], ledger: dict) -> dict:
         if standing(c, e) == "against_reading":
             residues.setdefault(c["encoder"], []).append(c["far"])
     return {"entries": len(rows),
+            "evidence_items": sum(len(e.get("evidence", [])) for e, _ in rows),
+            "side_checks": sorted(c["far"] for _, c in rows if "side_check" in c),
             "stages": dict(sorted(Counter(resolve(c, e)[0] for e, c in rows).items())),
             "standing": dict(sorted(Counter(standing(c, e) for e, c in rows).items())),
             "worklist": dict(sorted(residues.items(), key=lambda kv: (-len(kv[1]), kv[0]))),
@@ -190,45 +240,7 @@ def draft(cases: list[dict], ledger: dict) -> list[dict]:
 
 
 def load(corpus: Path) -> dict:
+    """The committed ledger plus every shard's entries (``reconciliation/entries/*.json``)."""
     p = corpus / LEDGER
-    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {"entries": []}
-
-
-def verify_evidence(ledger: dict, corpus: Path, cache: Path, fetch_source: bool = False) -> list[str]:
-    """Replay every imported excerpt against a complete locked witness, failing closed.
-
-    This checks transcription and location, not scholarly relevance or grading.
-    It never creates or updates a content lock.
-    """
-    import hashlib
-    from .arabic import locate
-    from .fetch import fetch, witness_url
-
-    registry = json.loads((corpus / "registry.json").read_text())
-    witnesses = {w["id"]: w for work in registry["works"] for w in work["witnesses"]}
-    locks = json.loads((corpus / "lock.json").read_text())["witnesses"]
-    grouped: dict[str, list[dict]] = {}
-    for entry in ledger["entries"]:
-        for item in entry.get("evidence", []):
-            grouped.setdefault(item["ref"][4:].split("/")[0], []).append(item)
-    errors = []
-    for wid, items in sorted(grouped.items()):
-        witness, lock = witnesses.get(wid), locks.get(wid)
-        if not witness or not lock or witness_url(witness) != lock["url"]:
-            errors.append(f"{wid}: missing or inconsistent registered source lock")
-            continue
-        source = cache / f"{wid}.txt"
-        if fetch_source and not source.exists():
-            fetch(witness, cache)
-        if not source.exists():
-            errors.append(f"{wid}: locked witness not cached")
-            continue
-        data = source.read_bytes()
-        if len(data) != lock["bytes"] or hashlib.sha256(data).hexdigest() != lock["sha256"]:
-            errors.append(f"{wid}: full source differs from lock")
-            continue
-        text = data.decode("utf-8")
-        for item in items:
-            if locate(text, item["excerpt_ar"]) != item["ref"].split("/")[1]:
-                errors.append(f"{item['ref']}: excerpt or location differs from locked witness")
-    return errors
+    base = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {"entries": []}
+    return with_fragments(base, p.parent / "entries", key="far")

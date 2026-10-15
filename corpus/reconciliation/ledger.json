@@ -181,6 +181,53 @@
       ]
     },
     {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The later madhhab counts the whole of running water like still water («وهي المذهب»; Sharḥ al-Muntahā: «والمذهب: أن الجاري كالراكد»); al-Furūʿ's «أشهر» for the jirya is outweighed.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p057",
+          "excerpt_ar": "لم تغيره، وإلا فلا. وهي المذهب. وهي ظاهر كلام المصنف هنا وغيره. قال في",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On running water al-Inṣāf gives the riwāya that it is like still water, so the whole body counts (two qullas of the whole repel najāsa unless it changes), and calls it «wa-hiya al-madhhab». That is position 1."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p057",
+          "excerpt_ar": "واختارها في المستوعب. قال في الفروع: وهي أشهر. قال في الحاوي الكبير: هذا",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "For the riwāya that each jirya counts by itself, al-Inṣāf reports that al-Furūʿ calls it «ashhar» and al-Ḥāwī al-Kabīr «ẓāhir al-madhhab». This is a minority labelling for position 0, which al-Mardāwī does not adopt."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p039",
+          "excerpt_ar": "لعموم ما سبق (فلا اعتبار بالجرية) وهي ما أحاط بالنجاسة فوقها وتحتها",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-qināʿ",
+          "note": "Kashshāf, glossing the Iqnāʿ text «running water is like still if its whole reaches two qullas», rules «no account is taken of the jirya». It later calls the per-jirya riwāya «ẓāhir al-fasād»."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p021",
+          "excerpt_ar": "كلامه في الإنصاف، والمذهب: أن الجاري كالراكد، ويعتبر مجموعه، فإن بلغ",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-irādāt",
+          "note": "Sharḥ al-Muntahā says the Muntahā mentions the per-jirya riwāya only because it is strong and well known, and that «the madhhab is that running water is like still and its whole is counted»."
+        }
+      ]
+    },
+    {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001",
       "grades": [
         "jazm",
@@ -235,6 +282,34 @@
           "grade": "jazm",
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf glosses the Iqnāʿ ruling (ḥinth) and names al-Qawāʿid al-fiqhiyya (Ibn Rajab) as its source."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Inṣāf: the hair is washed in the janāba ghusl, «وهو المذهب. وعليه جماهير الأصحاب»; Kashshāf, «مسترسلا كان أو غيره».",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p255",
+          "excerpt_ar": "البشرة وغيره، وهو المذهب. وعليه جماهير الأصحاب. قال في المغني: وهو ظاهر",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «ويعم بدنه بالغسل», al-Inṣāf says the general washing includes the hair and the skin beneath it and that this is the madhhab, held by the great majority. That is the obligation to wash the hair (position 1)."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p154",
+          "excerpt_ar": "(و) حتى (ظاهر شعره وباطنه) من ذكر أو أنثى، مسترسلا كان أو غيره.",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf: in ghusl the outside and inside of the hair must be washed, man or woman, hanging (mustarsil) or not, citing «تحت كل شعرة جنابة»."
         }
       ]
     },
@@ -681,7 +756,11 @@
         "nass",
         "nass"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "cause_on_certainty",
+        "from": "cause_from_one_of_two",
+        "farq": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000"
+      },
       "naskh": null,
       "evidence": [
         {
@@ -1623,6 +1702,27 @@
       ]
     },
     {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f007",
+      "grades": [
+        "nass",
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Taṣḥīḥ al-Furūʿ: the unlawful share is taken out whatever the proportion, «هو الصواب، وهو المذهب», Aḥmad's numbers not a limit.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v04:p396",
+          "excerpt_ar": "هو الصواب، وهو المذهب، فإذا فعل ذلك وتصرف خرج من الإثم وجاز له التصرف،",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+          "note": "Taṣḥīḥ al-Furūʿ masʾala 3: of the reports (forbidden unless the lawful is much; only one unlawful in two; ten or fewer), al-Mardāwī declares correct al-Qāḍī's other view, the aṣḥāb's and al-Shaykh's, that Aḥmad's words set no limit and the share must be taken out - «هو الصواب، وهو المذهب» - position 1."
+        }
+      ]
+    },
+    {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f000",
       "grades": [
         "wajh",
@@ -2462,6 +2562,42 @@
       ]
     },
     {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f001",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Named authors on both sides; neither is a taṣḥīḥ.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p319",
+          "excerpt_ar": "وقيمة الولد لمولاه والمبيع بعد فسخ أمانة بيد مشتر",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The Muntahā states decisively that the sale object after rescission is a trust (amāna) in the buyer's hand, so not guaranteed, matching position 1's outcome (no liability) though on the ground of the fourth wajh (pure amāna) rather than Abū al-Khaṭṭāb's carry-over of the prior guarantee. The muʿtamad's ground is the trust of the hand, Ibn Rajab's fourth wajh, but its ruling is position 1's."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p049",
+          "excerpt_ar": "بعد فسخ) بيع العيب أو غيره (أمانة بيد مشتر) لحصوله في يده بلا تعد، لكن",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Al-Buhūtī explains that after rescission for defect or otherwise the object is an amāna with the buyer because it reached him without transgression (liable only for negligence in returning), i.e. no ḍamān, matching position 1's ruling. The muʿtamad's ground is the trust of the hand, Ibn Rajab's fourth wajh, but its ruling is position 1's."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p225",
+          "excerpt_ar": "فيرده عليه ويصح الفسخ في غيبته، كما تقدم والمبيع بعد فسخ أمانة كما في",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf adopts the Muntahā ruling that the sale object after faskh is an amāna (not guaranteed), matching position 1's outcome. The muʿtamad's ground is the trust of the hand, Ibn Rajab's fourth wajh, but its ruling is position 1's."
+        }
+      ]
+    },
+    {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005",
       "grades": [
         "takhrij",
@@ -2469,6 +2605,438 @@
       ],
       "jam": null,
       "naskh": null
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f001",
+      "grades": [
+        [
+          "ashab",
+          "nass"
+        ],
+        "wajh"
+      ],
+      "jam": {
+        "encoder": "forced_acquisition_solvent",
+        "from": "forced_acquisition",
+        "farq": "src:openiti-insaf-shamela21609/v06:p298"
+      },
+      "naskh": null,
+      "note": "Aḥmad's naṣṣ is on the seller's annulment and the shufʿa lapsing, cited by Ibn Rajab in support.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p298",
+          "excerpt_ar": "المذهب. اختاره القاضي، وأبو الخطاب، وابن عبدوس في تذكرته. وقدمه في",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Al-Mardāwī says the view that the shafīʿ owns the share by the mere demand, if he can pay the price, is \"huwa al-madhhab\" (the previous line reads \"wa-qīla: yamlikuhu bi-mujarrad al-muṭālaba idhā kāna malīʾan bi-l-thaman. wa-huwa\"). He reports Ibn ʿAqīl's \"not owned until he pays the price\" only as a qīl, so position 1 holds. On the shufʿa, the record's leading example."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p158",
+          "excerpt_ar": "البعض وترك البعض إضرارا بالمشتري، لكن على المذهب من أن الشفيع يملك الشقص",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf calls it \"ʿalā al-madhhab\" that the shafīʿ owns the share by the demand (bi-l-ṭalab), before any payment. On the shufʿa, the record's leading example."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p366",
+          "excerpt_ar": "ذلك رضا فإن اشتغل بكلام آخر أو سكت لغير حاجة بطلت ويملك الشقص بالمطالبة",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ states decisively that the share is owned by the demand, even before he receives it, provided he can pay the price, so ownership comes before the price is paid. On the shufʿa, the record's leading example."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f001",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": {
+        "encoder": "disposal_before_qabd_debt",
+        "from": "disposal_before_qabd",
+        "farq": "src:openiti-insaf-shamela21609/v05:p112"
+      },
+      "naskh": null,
+      "note": "Two riwāyas on the deeds; the later madhhab bars selling a debt to any but the debtor, which covers them.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p112",
+          "excerpt_ar": "ذمته. وهو الصحيح من المذهب. وعليه الأصحاب. وعنه يصح. قاله الشيخ تقي",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: a settled debt may not be sold to any but the debtor, «وهو الصحيح من المذهب. وعليه الأصحاب», which al-Mardāwī applies to the sale of the deeds."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v06:p331",
+          "excerpt_ar": "فصل: يصح بيع الدين المستقر من الغريم لا من غيره",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn Mufliḥ, al-Furūʿ",
+          "note": "al-Furūʿ gives as its lead view that a settled debt may be sold to the debtor and not to anyone else. The allowing riwāya is added only after it as «وعنه: يصح منهما»."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p072",
+          "excerpt_ar": "(ولا) بيع دين لغير من هو عليه مطلقا ولا بيعه (بمؤجل لمن هو عليه) ;",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-irādāt",
+          "note": "The Muntahā and its sharḥ state flatly that a debt may not be sold to anyone but the debtor, «muṭlaqan». This covers sale for goods taken in the session."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p144",
+          "excerpt_ar": "به نسيئة أو بموصوف في الذمة وإلا فلا ولا يصح بيعه لغيره ولا بيع دين",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ allows the sale of a settled debt to the debtor and then rules decisively «ولا يصح بيعه لغيره»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f002",
+      "grades": [
+        "jazm",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The later madhhab voids the sale joined to the kitāba («باع ماله لماله»), against concurrence.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p322",
+          "excerpt_ar": "البيع) . هذا الصحيح من المذهب. جزم به في المغني، والمحرر، والشرح،",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf on the Muqniʿ 'وإن جمع بين كتابة وبيع ... بطل البيع': 'هذا الصحيح من المذهب', with jazm in al-Mughnī, al-Muḥarrar, al-Sharḥ, al-Wajīz etc.; 'Qīla yaṣiḥḥ, wa-qīla al-ṣiḥḥa manṣūṣ Aḥmad' (position 0) is reported as the weaker view."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v06:p162",
+          "excerpt_ar": "وجهان \"م 28\" وبين كتابة وبيع يبطل البيع, في الأصح, وفي الكتابة وجهان \"م",
+          "position": 1,
+          "grade": "tashih",
+          "who": "Ibn Mufliḥ, al-Furūʿ",
+          "note": "al-Furūʿ: combining kitāba and sale voids the sale 'في الأصح'; it notes 'وقيل: نصه: صحتها'."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p180",
+          "excerpt_ar": "لعبده (بعتك عبدي هذا وكاتبتك بمائة كل شهر عشرة بطل البيع) ؛ لأنه باع",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf/Iqnāʿ: the sale is void (he sold his property to his own slave), the kitāba valid for its share."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p021",
+          "excerpt_ar": "مثلا (بطل) البيع ; لأنه باع ماله لماله، أشبه ما لو باعه قبل الكتابة",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā/Muntahā: the sale is void, as if sold before the kitāba."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p074",
+          "excerpt_ar": "مثل أن يقول بعتك عبدي هذا وكاتبتك بمائة كل شهر عشرة بطل البيع وصحت",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "Iqnāʿ matn: the sale is void and the kitāba valid by its share."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f003",
+      "grades": [
+        "wajh",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "No later source treats the masʾala; al-Mughnī's cognate ruling on the agent's claim joins al-Qāḍī's «الأشبه».",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p107",
+          "excerpt_ar": "هاهنا. والدليل على أن الدعوى لا تسمع قبل ثبوت الوكالة أنها لا تسمع إلا",
+          "position": 1,
+          "grade": "takhrij",
+          "who": "Ibn Qudāma, al-Mughnī",
+          "note": "al-Mughnī: the self-styled agent's claim for his principal is not heard before his agency is proven; a cognate ruling for position 1, not the same masʾala."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f004",
+      "grades": [
+        "qiyas",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The muʿtamad voids agency to divorce a woman not yet married, against al-Talkhīṣ's qiyās.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p355",
+          "excerpt_ar": "المذهب. من حيث الجملة. فعلى هذا: لو وكله في بيع ما سيملكه، أو في طلاق من",
+          "position": 1,
+          "grade": "qiyas",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: that agency is only from one able to dispose is «المذهب من حيث الجملة», and «فعلى هذا» agency in divorcing a woman he will marry is invalid; a taṣḥīḥ of the general rule."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p463",
+          "excerpt_ar": "(ولا يصح) أن يوكل (في بيع ما سيملكه، ولا) في (طلاق من يتزوجها) لأن",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf decisively: agency to divorce a woman he will marry is invalid, and it continues that 'إن تزوجت فلانة فقد وكلتك في طلاقها' is 'لم يصح', unlike the conditional agency for manumission."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p186",
+          "excerpt_ar": "(ولا تصح) وكالة (في بيع ما سيملكه أو) في (طلاق من يتزوجها) ; لأن",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā/Muntahā: agency in divorcing a woman he will marry is invalid, explicitly contrasting 'إن تزوجت فلانة فقد وكلتك في طلاقها' with the valid conditional manumission agency."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f006",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The madhhab clears the umm walad by one period, giving no weight to the concurrent freedom.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p326",
+          "excerpt_ar": "وقوله (أو بحيضة إن كانت ممن تحيض) . هو المذهب، سواء كانت أم ولد أو",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: the umm walad, like other slave women, is cleared by one menstrual period, «هو المذهب»; neither a free woman's ʿidda nor the slave wife's two months and five days, so it rejects position 1 and is mapped to position 0, the ʿidda of a slave woman."
+        },
+        {
+          "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p140",
+          "excerpt_ar": "كاملة) هذا المشهور عن أحمد. وهو قول ابن عمر. وروي ذلك عن عثمان، وعائشة،",
+          "position": 0,
+          "grade": "tashih",
+          "who": "Ibn Qudāma, al-Mughnī",
+          "note": "On al-Khiraqī's «وأم الولد إذا مات سيدها، فلا تنكح حتى تحيض حيضة كاملة», al-Mughnī calls one full period «al-mashhūr ʿan Aḥmad». The free woman's ʿidda of four months and ten days is the other riwāya."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p123",
+          "excerpt_ar": "التي كان يصيبها قبل استبرائها أو مات عنها لزمها استبراء نفسها لكن لو",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ rules decisively that when the master of an umm walad dies, she must observe istibrāʾ (one period, by the following faṣl), not a free woman's ʿidda."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f002",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Annotated for the branch where the free woman would suffice him, the only one with a bar; there al-Inṣāf quotes Ibn Rajab's fāʾida for the slave woman's voidness, a single author against al-Qāḍī and Abū al-Khaṭṭāb. The madhhab's «صح» is for the other branch and is not evidence here.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p144",
+          "excerpt_ar": "لو تزوج حر خائف العنت غير واجد للطول حرة تعفه بانفرادها، وأمة في عقد واحد: صح نكاح الحرة وحدها. وهو ظاهر كلام القاضي في المجرد. وهو أصح.",
+          "position": 1,
+          "grade": "ashab",
+          "who": "Ibn Rajab's fāʾida, quoted in al-Inṣāf",
+          "note": "Where the free woman alone would suffice him: only her marriage valid, «وهو ظاهر كلام القاضي في المجرد. وهو أصح», a single author's preference."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q058.f001",
+      "grades": [
+        "takhrij",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The muʿtamad makes withdrawal intercourse («لأن النزع جماع») and owes the kaffāra however the menses came.",
+      "evidence": [
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p201",
+          "excerpt_ar": "طاهرة فحاضت في أثناء وطئه، ولو لم يستدم) الوطء بل نزع في الحال (لأن",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf: if she was pure and her menses began during intercourse, the kaffāra is due even if he did not continue but withdrew at once, 'because withdrawal is intercourse' - the kaffāra side (position 0), with no exception for lack of expectation."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p064",
+          "excerpt_ar": "أثناء وطئه ولو لم يستدم لأن النزع جماع فعليه دينار زنته مثقال خاليا من",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ matn decisively: even without continuing, withdrawal is intercourse, so he owes a dinar (or half) - position 0."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p113",
+          "excerpt_ar": "طاهرة فحاضت، فنزع في الحال لأن النزع جماع (ولو) كان",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā likewise: menses beginning during intercourse with immediate withdrawal still entails the kaffāra, since withdrawal is intercourse - position 0."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f004",
+      "grades": [
+        [
+          "qiyas",
+          "ashab"
+        ],
+        [
+          "jazm",
+          "zahir"
+        ]
+      ],
+      "jam": {
+        "encoder": "annulment_without_return",
+        "from": "annulment_on_nonexistent",
+        "farq": "src:openiti-insaf-shamela21609/v04:p419"
+      },
+      "naskh": null,
+      "note": "The madhhab fixes the arsh once the defective thing perishes, the return impossible.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p419",
+          "excerpt_ar": "قوله (أو تلف المبيع: رجع بأرشه) يعني يتعين له الأرش. وهذا المذهب. وعليه أكثر الأصحاب. ويتخرج أن يفسخ ويغرم القيمة.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "If the defective item perishes the buyer is limited to the arsh, «وهذا المذهب. وعليه أكثر الأصحاب»; annulment returning the substitute is only al-Qāḍī's takhrīj."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p222",
+          "excerpt_ar": "أو باعه) أي باع المشتري المبيع (أو وهبه أو رهنه، أو وقفه غير عالم بعيبه) ثم علم (تعين الأرش) لما تقدم وسقط الرد لتعذره",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf: in the list that begins with perishing of the item («أو تلف المبيع ولو بفعله»), the arsh is fixed and return lapses because it is impossible."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p098",
+          "excerpt_ar": "أو قتل أو استولد الأمة أو تلف المبيع ولو بفعله: كأكله ونحوه أو باعه أو وهبه أو رهنه أو وقفه غير عالم بعيبه - تعين الأرش",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ matn lists perishing among the cases where the arsh is fixed («تعين الأرش»)."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f005",
+      "grades": [
+        [
+          "qiyas",
+          "ashab"
+        ],
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Inṣāf is undecided and the muʿtamad voids iqāla once the thing sold perishes; al-Qāḍī's «قياس المذهب» still outranks its jazm under the bank's grades, so tarjīḥ keeps the reading, for review.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p477",
+          "excerpt_ar": "القاضي في موضع من خلافه، والمصنف في المغني.",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: 'if the goods perished, it is said the iqāla is not valid on either riwāya - the way of al-Qāḍī in one place of his Khilāf and of the author in al-Mughnī', adding Ibn Qudāma (al-Mughnī) as a holder of position 1; al-Inṣāf gives no taṣḥīḥ (both views 'قيل', al-Furūʿ left them unresolved)."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p250",
+          "excerpt_ar": "(وتصح) الإقالة (مع تلف ثمن لا مع تلف مبيع) ، لتعذر الرد فيه.",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf (on the Iqnāʿ): iqāla is valid when the price has perished but not when the sold thing has, since its return is impossible - position 1."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p346",
+          "excerpt_ar": "ولا تصح مع تلف مثمن وموت عاقد ولا بزيادة على ثمن أو نقصه أو بغير جنسه",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The Muntahā matn, right after defining iqāla as faskh: it is not valid when the thing sold has perished - position 1."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p064",
+          "excerpt_ar": "مثمن) مطلقا لفوات محل الفسخ وتصح مع تلف ثمن (و) لا مع (موت عاقد) بائع أو",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā: not valid with the perishing of the thing sold 'absolutely' (i.e. even though iqāla is faskh), because the object of annulment is gone - position 1."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f001",
+      "grades": [
+        "ashab",
+        "jazm"
+      ],
+      "jam": {
+        "encoder": "deputy_of_qadi",
+        "from": "deputy_of_principal",
+        "farq": "src:openiti-insaf-shamela21609/v11:p172"
+      },
+      "naskh": null,
+      "note": "al-Inṣāf: «هذا الصحيح من المذهب. وعليه أكثر الأصحاب»: the qāḍī's deputies are removed with him, against al-Targhīb.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p172",
+          "excerpt_ar": "هذا الصحيح من المذهب. وعليه أكثر الأصحاب. وصححه في النظم، وغيره. وجزم به",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf, fāʾida 2 under the judge's removal: if the delegating party is a qāḍī whose authority lapses by death, dismissal etc., 'انعزل نائبه وإن لم ينعزل في المسائل التي قبلها' - this is the ṣaḥīḥ of the madhhab and the view of most aṣḥāb: deputies are removed (position 1)."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p293",
+          "excerpt_ar": "زالت ولايته بموت أو عزل أو غيره كما لو اختل فيه بعض شروطه انعزلوا) لأنهم",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf: if the delegator is a qāḍī and his authority lapses by death or otherwise, his deputies are removed, because they are his deputies like agents - position 1."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p491",
+          "excerpt_ar": "قاضيا فعزل نوابه أو زالت ولايته بموت أو غيره انعزلوا) لأنهم نوابه",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā (on the Muntahā matn): the qāḍī's deputies are removed on his death 'because they are his deputies, like his agents' - position 1."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p368",
+          "excerpt_ar": "فإن كان المستتيب قاضيا فعزل نوابه أو زالت ولايته بموت أو عزل أو غيره:",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ matn: if the delegator is a qāḍī whose authority lapses by death etc., they (his deputies) are removed - position 1."
+        }
+      ]
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f000",
@@ -3522,6 +4090,42 @@
       "naskh": null
     },
     {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f001",
+      "grades": [
+        "nass",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Inṣāf: doubling is for fruit, palm-pith and livestock only, other goods compensated once «على الصحيح من المذهب»; the general riwāya is chosen by Abū Bakr and Taqī al-Dīn.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p277",
+          "excerpt_ar": "إلا مرة واحدة. على الصحيح من المذهب. قال المصنف، والشارح: هذا قول",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "... «على الصحيح من المذهب», al-Mughnī and al-Sharḥ calling it the view of the aṣḥāb except Abū Bakr - i.e. doubling is restricted (to fruit/palm and livestock), position 1."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p277",
+          "excerpt_ar": "وعنه: أن ذلك كالثمر والماشية، اختاره أبو بكر، والشيخ تقي الدين - رحمه",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: the riwāya that all non-ḥirz theft is like fruit and livestock (doubled) was chosen by Abū Bakr and Shaykh Taqī al-Dīn (and others say it is naṣṣ) - added holders of position 0, but it is the marjūḥ side."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p140",
+          "excerpt_ar": "إليها فجاز أن تغلظ قيمتها على سارقها ردعا له وزجرا بخلاف غيرها وقوله -",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf: the value of fruit is made heavier on its thief as deterrence, «بخلاف غيرها» - doubling is specific to fruit, position 1."
+        }
+      ]
+    },
+    {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021",
       "grades": [
         "ashab",
@@ -4063,6 +4667,43 @@
       ]
     },
     {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f006",
+      "grades": [
+        "takhrij",
+        "takhrij",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The muʿtamad casts lots and bars selling either before them (al-Iqnāʿ, Kashshāf; al-Inṣāf fronting it from al-Riʿāya); the joint sale is only «وقيل».",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p320",
+          "excerpt_ar": "عبده بعبد غيره أقرع بينهما. ولم يصح بيع أحدهما قبل القرعة. قدمه في",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: if his slave is confused with another's, lots are cast and neither may be sold before the lot - fronted in al-Riʿāya al-Ṣughrā and al-Kubrā (Ibn Ḥamdān), and al-Qāḍī's iḥtimāl; selling both and dividing the price (al-Qāḍī's 'ajwad') follows as a qīla - position 0."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p073",
+          "excerpt_ar": "واحد ومثله الإجارة ولو اشتبه عبده بعيد غيره لم يصح بيع أحدهما قبل القرعة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The Iqnāʿ matn decisively: neither may be sold before the lot - position 0 (lot)."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p179",
+          "excerpt_ar": "(ولو اشتبه عبده بعبد غيره لم يصح بيع أحدهما قبل القرعة) قدمه في",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf on the Iqnāʿ: the lot view, fronted in al-Riʿāya al-Kubrā; the joint sale with division by value is cited only as «وقيل» with al-Qāḍī's «أجود ما يقال فيه» - position 0."
+        }
+      ]
+    },
+    {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f009",
       "grades": [
         "ashab",
@@ -4124,6 +4765,61 @@
           "grade": "jazm",
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ rules decisively that when two describe it together (or the second before handover) lots are drawn and the winner swears and takes it."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f012",
+      "grades": [
+        "wajh",
+        [
+          "nass",
+          "qiyas"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Inṣāf: the bequest with a shared name is void «على الصحيح من المذهب. وعليه الأصحاب», with the Muntahā and al-Buhūtī; valid with a lot only where a qarīna shows one was meant.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p231",
+          "excerpt_ar": "لم تصح الوصية. على الصحيح من المذهب. وعليه الأصحاب. وعنه: تصح. كقوله",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: a bequest «to my neighbour / relative so-and-so» with a shared name (or «to one of these two») is not valid «على الصحيح من المذهب», with the aṣḥāb; validity is only «وعنه» - position 0 (void)."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p231",
+          "excerpt_ar": "تصح، للإبهام. واختار الصحة في غير الأولى: القاضي، وأبو بكر في الشافي،",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: validity in the shared-name case was chosen by al-Qāḍī, Abū Bakr in al-Shāfī and Ibn Rajab; on validity the lot is 'الصواب' (al-Qawāʿid al-Fiqhiyya) against the heirs' choice - named holders of position 1, the marjūḥ side."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p461",
+          "excerpt_ar": "وصى بثلثه لأحد هذين أو قال لجاري أو قريبي فلان باسم مشترك لم",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The Muntahā matn: a bequest to «my neighbour so-and-so» with a shared name is not valid (continues «يصح») - position 0."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p471",
+          "excerpt_ar": "قريبي فلان باسم مشترك لم يصح) لإبهام الموصى له. وتعيينه شرط. فإن كان ثم",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ al-Muntahā: invalid for the vagueness of the beneficiary, specification being a condition; only if a qarīna shows he meant a specific one is it valid, with the lot per Ibn Rajab's qiyās al-madhhab - position 0 for the unqualified case."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p358",
+          "excerpt_ar": "ل (قريبي فلان باسم مشترك) لأن تعيين الموصى له شرط فإذا قال لأحد هذين",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Kashshāf: invalid, since specifying the beneficiary is a condition, unless a qarīna shows a specific one was meant - position 0."
         }
       ]
     },

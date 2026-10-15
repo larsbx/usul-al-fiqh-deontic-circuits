@@ -53,7 +53,7 @@
         "perpetual_commutative": false
       },
       "expected": false,
-      "note": "Buying an unpollinated spathe on condition of cutting, then its palm: «والمجزوم به في الكافي أنه لا ينفسخ بغير خلاف», though Ibn Rajab notes hesitation since it follows in sale."
+      "note": "Buying an unpollinated spathe on condition of cutting («بشرط قطعه»), then its palm: «والمجزوم به في الكافي أنه لا ينفسخ بغير خلاف», though Ibn Rajab notes hesitation since it follows in sale."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f000",
@@ -76,7 +76,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "A pledge, then permission to use it: does it become a loan while used? al-Qāḍī, Ibn ʿAqīl, al-Mughnī, al-Talkhīṣ: liable by use, «لأن ذلك حقيقة العارية»; Majd al-Dīn: «ظاهر كلام أحمد أنه لا يصير مضمونا بحال». Reconciled (jamʿ, the binding farq of f003): the pledge binds and the permission does not, so it stays a pledge; the reading now takes Majd's ẓāhir of Aḥmad."
+      "note": "A pledge, then permission to use it: does it become a loan while used? al-Qāḍī, Ibn ʿAqīl, al-Mughnī, al-Talkhīṣ: liable by use, «لأن ذلك حقيقة العارية»; Majd al-Dīn: «ظاهر كلام أحمد أنه لا يصير مضمونا بحال». Reconciled (jamʿ, the binding farq of f003): the pledge binds (lāzim) and the permission does not, so it stays a pledge; the reading now takes Majd's ẓāhir of Aḥmad."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001",
@@ -99,7 +99,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "A deposit, then permission to use it: al-Qāḍī, Ibn ʿAqīl, al-Talkhīṣ: liable while used, «لمصيره عارية»; some later authors: the ẓāhir of Aḥmad is that it is not, as with the pledge. Under the binding refinement it stays liable (deposit and loan are alike non-binding, «ولا اختلاف هاهنا بين العقدين في الجواز»; Majd distinguishes it from the pledge), which leaves it a residue against the later authors' ẓāhir."
+      "note": "A deposit, then permission to use it: al-Qāḍī, Ibn ʿAqīl, al-Talkhīṣ: liable while used, «لمصيره عارية»; some later authors: the ẓāhir of Aḥmad is that it is not, as with the pledge. Under the binding refinement it stays liable (deposit and loan are alike non-binding (jāʾiz), «ولا اختلاف هاهنا بين العقدين في الجواز»; Majd distinguishes it from the pledge), which leaves it a residue against the later authors' ẓāhir."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f002",
@@ -111,7 +111,7 @@
         "later_binding": true
       },
       "expected": true,
-      "note": "Lending a thing to be pledged: valid by naṣṣ, with Ibn al-Mundhir's report of agreement; liable on the pledger as borrower, a trust with the pledgee. Whether it binds the owner is disputed (al-Ḥārithī, Abū al-Khaṭṭāb)."
+      "note": "Lending a thing to be pledged: valid by naṣṣ, with Ibn al-Mundhir's report of agreement; liable on the pledger as borrower, a trust with the pledgee. Whether it binds the owner (its luzūm) is disputed (al-Ḥārithī, Abū al-Khaṭṭāb)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f003",
@@ -123,7 +123,7 @@
         "later_binding": true
       },
       "expected": true,
-      "note": "Lending a thing, then pledging it with the borrower: Abū al-Barakāt, «قياس المذهب صحته ويسقط ضمان العارية», the binding trust displacing the non-binding loan."
+      "note": "Lending a thing, then pledging it with the borrower: Abū al-Barakāt, «قياس المذهب صحته ويسقط ضمان العارية», the binding (lāzim) trust displacing the non-binding loan."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f004",
@@ -170,7 +170,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "«If I bring your due by such a time, else the pledge is yours»: a trust until then, then liable, the hold being by a void contract (al-Qāḍī, Ibn ʿAqīl); a riwāya of Aḥmad: never liable, the void condition counting as absent. Reconciled (jamʿ): the void sale binds nothing and does not displace the binding pledge; the reading now takes the riwāya of Aḥmad."
+      "note": "«If I bring your due by such a time, else the pledge is yours»: a trust until then, then liable, the hold being by a fāsid contract (al-Qāḍī, Ibn ʿAqīl); a riwāya of Aḥmad: never liable, the void condition («الشرط يفسد») counting as absent. Reconciled (jamʿ): the void sale binds nothing and does not displace the binding (lāzim) pledge; the reading now takes the riwāya of Aḥmad."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f007",
@@ -193,7 +193,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "Kitāba of a mudabbar, or tadbīr of a mukātab: valid by naṣṣ; if the master dies before any payment he is freed by tadbīr from the third, and his earnings are his (as a mukātab) or the heirs' on two wujūh; Ibn al-Ḥakam's narration has kitāba voiding the tadbīr."
+      "note": "Kitāba of a mudabbar, or tadbīr of a mukātab: valid by naṣṣ; if the master dies before any payment he is freed by tadbīr from the third, and his earnings are his (as a mukātab) or the heirs' on two wujūh; Ibn al-Ḥakam's narration has kitāba voiding the tadbīr («بطلان التدبير بالكتابة»)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f000",
@@ -214,7 +214,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "A loan of use with a countervalue stipulated: valid as a kināya for qarḍ (Abū al-Khaṭṭāb, al-Qāḍī; the countervalue as in a gift); or void, «وجعله أبو الخطاب في موضع آخر المذهب»."
+      "note": "A loan of use with a countervalue stipulated («وشرط عليه العوض»): valid as a kināya for qarḍ (Abū al-Khaṭṭāb, al-Qāḍī; the countervalue as in a gift); or fāsid, «وجعله أبو الخطاب في موضع آخر المذهب»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f001",
@@ -235,7 +235,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "«Take this as muḍāraba, all the profit yours (or mine)»: al-Qāḍī, Ibn ʿAqīl: a void muḍāraba with the usual wage; al-Mughnī elsewhere: a valid ibḍāʿ, «فراعى الحكم دون اللفظ», and a loan in the first form. No madhhab marked."
+      "note": "«Take this as muḍāraba, all the profit yours (or mine)»: al-Qāḍī, Ibn ʿAqīl: a fāsid muḍāraba with the usual wage; al-Mughnī elsewhere: a valid ibḍāʿ, «فراعى الحكم دون اللفظ», and a loan in the first form. No madhhab marked."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f002",
@@ -299,7 +299,7 @@
       "expected": true,
       "positions": [
         {
-          "who": "riwāya: divorce, as he meant",
+          "who": "riwāya: divorce (ṭalāq, «أعني به الطلاق»), as he meant",
           "ruling": true
         },
         {
@@ -308,7 +308,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "«You are ḥarām to me, I mean divorce», ḥarām being explicit for ẓihār: is the explanation void and it ẓihār, or valid and divorce? Two riwāyas. No madhhab marked."
+      "note": "«You are ḥarām to me, I mean divorce», ḥarām being explicit for ẓihār: is the explanation set aside («يلغو») and it ẓihār, or valid («يصح») and divorce? Two riwāyas. No madhhab marked."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f006",

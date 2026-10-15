@@ -73,11 +73,11 @@ original holder, imported locator and note available for substantive review.
 
 ## Validation contract
 
-`reconcile --verify-source` fails on absent caches, full-source hash drift and
-wrong excerpt locations. `--fetch-source` restores only missing witnesses and
-never repins. Hosted corpus CI runs the mandatory replay before generated
-checks. Regression controls cover generality versus non-ijmāl, author preference,
-missing/tampered/wrong-location evidence, preservation of all 48 audit originals
+Locked replay is `make source-verify` (`usul_corpus.source_verify`, merged as PR-06), which
+supersedes this audit's own `reconcile --verify-source`: it fails on absent caches, full-source
+hash drift and wrong excerpt locations, restores missing witnesses without repinning, and runs in
+hosted CI before the generated checks. Regression controls cover generality versus non-ijmāl, author preference,
+preservation of all 48 audit originals
 and the corrected qadhf roles. Generated Lean guards and reports remain aligned
 with Python; compilation checks the admitted grades, not their scholarly truth.
 

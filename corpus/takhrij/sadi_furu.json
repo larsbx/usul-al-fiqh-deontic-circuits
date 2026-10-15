@@ -25,7 +25,7 @@
     "amara": true
    },
    "expected": true,
-   "note": "Cat. 1: a reliable report that a dog licked this vessel is a shar'i proof (zahir=qat) overriding the presumption of purity (asl=zann); impurity is ruled."
+   "note": "Cat. 1: a reliable report that a dog licked this vessel is a shar'i proof (zahir=qat) overriding the presumption of ṭahāra (asl=zann); najāsa is ruled."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003",
@@ -96,7 +96,7 @@
     "amara": false
    },
    "expected": false,
-   "note": "Known purity or impurity with preponderant belief of its removal: build on the aṣl, preponderant belief does not suffice; purity and ḥadath are matters «لا أمارة عليه» (Ibn Rajab at f013), so on equal grades the aṣl stands.",
+   "note": "Known ṭahāra or najāsa (of water, garment, ground or body), or a known ḥadath or najāsa, with preponderant belief of its removal («لو تيقن حدثا أو نجاسة»): build on the aṣl, preponderant belief does not suffice; ṭahāra and ḥadath are matters «لا أمارة عليه» (Ibn Rajab at f013), so on equal grades the aṣl stands.",
    "revisit": {
     "from_class": "encoding_error",
     "closed_by": [
@@ -146,7 +146,7 @@
     "amara": true
    },
    "expected": true,
-   "note": "Cat. 3: impurity found after prayer, possibly incurred before or after: prayer valid since the apparent is the soundness of the mukallaf's acts (zahir=zann, custom) against the asl of non-discharge (zann), reinforced by a second asl."
+   "note": "Cat. 3: najāsa found after prayer, possibly incurred before or after: prayer valid since the apparent is that the mukallaf's acts are ṣaḥīḥ («الظاهر صحة أعمال المكلف») (zahir=zann, custom) against the asl of non-discharge (zann), reinforced by a second asl."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011",
@@ -169,7 +169,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Cat. 3: post-contract dispute over a validity condition (seller claims he was a minor): zahir of contracts' validity (zann, custom) vs asl of non-majority (zann); kernel gives the buyer's word, which is al-madhhab."
+   "note": "Cat. 3: post-contract dispute over a validity sharṭ («بعض شرائط صحة العقد») (seller claims he was a minor): zahir of contracts' validity (zann, custom) vs asl of non-majority (zann); kernel gives the buyer's word, which is al-madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012",
@@ -251,7 +251,7 @@
     "amara": true
    },
    "expected": true,
-   "note": "Cat. 3: deep sleep nullifies wudu' as the presumptive locus (mazinna) of hadath (zahir=zann) against the asl of continuing purity (zann)."
+   "note": "Cat. 3: deep sleep nullifies wudu' as the presumptive locus (mazinna) of hadath (zahir=zann) against the asl of continuing ṭahāra (zann)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017",
@@ -328,12 +328,12 @@
      "ruling": true
     },
     {
-     "who": "wajh 2: pure, by the asl",
+     "who": "wajh 2: ṭāhir, by the asl",
      "ruling": false
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4 (khilaf 'when zahir and asl are equal'): a dog with a wet mouth put its head in a vessel: zahir of licking=zann vs asl of purity=zann; kernel gives impurity; no position is marked as the madhhab."
+   "note": "Cat. 4 (khilaf 'when zahir and asl are equal'): a dog with a wet mouth put its head in a vessel: zahir of licking=zann vs asl of ṭahāra=zann; kernel gives najāsa; no position is marked as the madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022",
@@ -347,16 +347,16 @@
    "expected": true,
    "positions": [
     {
-     "who": "wajh 1: impure",
+     "who": "wajh 1: najis",
      "ruling": true
     },
     {
-     "who": "wajh 2 (via Ibn Tamim): pure unless seen coming from the latrine",
+     "who": "wajh 2 (via Ibn Tamim): ṭāhir unless seen coming from the latrine",
      "ruling": false
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4: a non-blood creature in little water, nearer the latrine than the well: zahir of impure origin=zann vs asl of purity=zann; kernel gives impure; no preferred wajh stated (if nearer the well or equidistant it is pure, no conflict)."
+   "note": "Cat. 4: a non-blood creature in little water, nearer the latrine than the well: zahir of najis origin=zann vs asl of ṭahāra=zann; kernel gives najis; no preferred wajh stated (if nearer the well or equidistant it is ṭāhir, no conflict)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023",
@@ -370,7 +370,7 @@
    "expected": true,
    "positions": [
     {
-     "who": "riwaya 1, mansus, made the madhhab by Abu al-Barakat: pure (asl)",
+     "who": "riwaya 1, mansus, made the madhhab by Abu al-Barakat: ṭāhir (asl)",
      "ruling": false
     },
     {
@@ -379,7 +379,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4: street mud: zahir of impurity (custom)=zann vs asl of purity=zann; kernel gives impurity, which al-Talkhis calls the madhhab but the mansus/Majd position is purity, so matches_madhhab is set false (disputed)."
+   "note": "Cat. 4: street mud: zahir of najāsa (custom)=zann vs asl of ṭahāra=zann; kernel gives najāsa, which al-Talkhis calls the madhhab but the mansus/Majd position is ṭahāra, so matches_madhhab is set false (disputed)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024",
@@ -397,12 +397,12 @@
      "ruling": true
     },
     {
-     "who": "wajh 2: pure, asl of non-exhumation",
+     "who": "wajh 2: ṭāhir, asl of non-exhumation",
      "ruling": false
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4: an old cemetery of doubtful exhumation: zahir=zann vs asl=zann; kernel gives impurity; no preferred wajh stated."
+   "note": "Cat. 4: an old cemetery of doubtful exhumation: zahir=zann vs asl=zann; kernel gives najāsa; no preferred wajh stated."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025",
@@ -416,7 +416,7 @@
    "expected": true,
    "positions": [
     {
-     "who": "riwaya 1: permitted (asl of purity)",
+     "who": "riwaya 1: permitted (asl of ṭahāra)",
      "ruling": false
     },
     {
@@ -424,12 +424,12 @@
      "ruling": false
     },
     {
-     "who": "riwaya 3: if the zahir is very strong, not used before washing",
+     "who": "riwaya 3: if the zahir is very strong («إن قوي الظاهر جدا»), not used before ghasl",
      "ruling": true
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4: clothes and vessels of unbelievers: zahir of contamination=zann vs asl of purity=zann; kernel's true matches only riwaya 3 (which itself makes the outcome depend on the zahir's strength); no riwaya is marked the madhhab here."
+   "note": "Cat. 4: clothes and vessels of unbelievers: zahir of najāsa=zann vs asl of ṭahāra=zann; kernel's true matches only riwaya 3 (which itself makes the outcome depend on the zahir's strength); no riwaya is marked the madhhab here."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026",
@@ -451,12 +451,12 @@
      "ruling": false
     },
     {
-     "who": "wajh: forbidden until washed (Ibn Abi Musa's choice)",
+     "who": "wajh: forbidden until washed, ghasl (Ibn Abi Musa's choice)",
      "ruling": true
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4: clothes of children and the careless: zahir of impurity=zann vs asl of purity=zann; kernel matches the prohibition (Ibn Abi Musa's ikhtiyar), not marked the madhhab."
+   "note": "Cat. 4: clothes of children and the careless: zahir of najāsa=zann vs asl of ṭahāra=zann; kernel matches the prohibition (Ibn Abi Musa's ikhtiyar), not marked the madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027",
@@ -690,7 +690,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Cat. 4: 'you are divorced, you are divorced' with no stated intent: zahir of a fresh pronouncement=zann vs asl of the marriage continuing=zann; kernel matches the ashab's two divorces."
+   "note": "Cat. 4: 'you are divorced, you are divorced' («أنت طالق أنت طالق») with no stated intent: zahir of a fresh pronouncement=zann vs asl of the marriage continuing=zann; kernel matches the ashab's two divorces."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037",
@@ -713,7 +713,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Cat. 4: 'divorce is binding on me' -- one or three: zahir of istighraq=zann vs asl=zann; kernel gives three; the text marks neither as the madhhab."
+   "note": "Cat. 4: 'divorce is binding on me' («الطلاق يلزمني») -- one or three: zahir of istighraq=zann vs asl=zann; kernel gives three; the text marks neither as the madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038",
@@ -736,7 +736,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Cat. 4: 'my wife is divorced / my slave is free' with several: zahir of generality=zann vs asl=zann; kernel matches the mansus; the Mughni's view expressly prefers the asl 'even if the plural is more apparent', which no >= grading can produce."
+   "note": "Cat. 4: 'my wife is divorced / my slave is free' («زوجتي طالق أو عبدي حر») with several: zahir of generality=zann vs asl=zann; kernel matches the mansus; the Mughni's view expressly prefers the asl 'even if the plural is more apparent', which no >= grading can produce."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039",
@@ -769,7 +769,7 @@
     "customary_continuity": true
    },
    "expected": true,
-   "note": "Purifying a little impure water by adding much water requires only customary continuity, not pouring two qullas at once."
+   "note": "Making a little najis water ṭahūr (taṭhīr) by adding much water requires only customary continuity, not pouring two qullas at once."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f002",
@@ -789,7 +789,7 @@
     "customary_continuity": true
    },
    "expected": true,
-   "note": "A prayer may be resumed after a forgetful salam if the gap is short, and is not invalidated."
+   "note": "A prayer may be resumed after a forgetful salam if the gap is short, and does not become bāṭil."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f004",
@@ -830,7 +830,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "A tawaf interrupted by an obligatory or funeral prayer is built upon whether muwalat is sunna or a condition, on the better-known of two turuq; the other turuq (implied) makes it depend on muwalat's status."
+   "note": "A tawaf interrupted by an obligatory or funeral prayer is built upon whether muwalat is sunna or a sharṭ, on the better-known of two turuq; the other turuq (implied) makes it depend on muwalat's status."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f007",
@@ -840,7 +840,7 @@
     "customary_continuity": true
    },
    "expected": true,
-   "note": "Oath to eat only one meal today: eating continuously or with customary breaks is one meal and does not break the oath; resuming after a long gap does."
+   "note": "Oath (ḥalaf: «لو حلف لا أكلت إلا أكلة واحدة») to eat only one meal today: eating continuously or with customary breaks is one meal and does not break the oath; resuming after a long gap does."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f008",
@@ -891,8 +891,32 @@
      "ruling": 1
     }
    ],
-   "matches_madhhab": true,
-   "note": "Theft from outside a hirz (amputation lapses) doubles the compensation by Ahmad's nass; a qila restricts doubling to fruit; the nass is taken as the madhhab mark."
+   "matches_madhhab": false,
+   "note": "Theft from outside a hirz (amputation lapses) doubles the compensation (ḍamān, «الغرم») by Ahmad's nass; a qila restricts doubling to fruit; the nass is taken as the madhhab mark.",
+   "side_check": {
+    "from_matches": true,
+    "refs": [
+     "src:openiti-buhuti-kashshaf-shamela21642/v06:p140",
+     "src:openiti-insaf-shamela21609/v10:p277"
+    ],
+    "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side.",
+    "contradictions": [
+     {
+      "evidence_index": 0,
+      "case_facts": {
+       "lapsed": true
+      },
+      "rationale": "The source note asserts doubling for all theft outside hirz. Al-Insaf and Kashshaf expressly give single compensation for goods other than the listed fruit/palm/livestock exceptions. This refutes that universal reading, not doubling within the exceptions; lapsed alone is insufficient for a concrete theft decision."
+     },
+     {
+      "evidence_index": 2,
+      "case_facts": {
+       "lapsed": true
+      },
+      "rationale": "The source note asserts doubling for all theft outside hirz. Al-Insaf and Kashshaf expressly give single compensation for goods other than the listed fruit/palm/livestock exceptions. This refutes that universal reading, not doubling within the exceptions; lapsed alone is insufficient for a concrete theft decision."
+     }
+    ]
+   }
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f002",
@@ -902,7 +926,7 @@
     "lapsed": true
    },
    "expected": 2,
-   "note": "A concealed stray animal is compensated at twice its value, per Ahmad, the doubling replacing amputation."
+   "note": "A concealed stray animal is owed in ḍamān at twice its value, per Ahmad, the doubling replacing amputation."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f003",
@@ -912,7 +936,7 @@
     "lapsed": true
    },
    "expected": 2,
-   "note": "A one-eyed man who gouges a sound eye is not retaliated against and owes the full diya (double the eye's half diya), per nass."
+   "note": "A one-eyed man who gouges an eye of a man whose eyes are both sound («عين الصحيح») is not retaliated against and owes the full diya (double the eye's half diya), per nass."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f004",
@@ -932,7 +956,7 @@
     "lapsed": true
    },
    "expected": 2,
-   "note": "Theft in a famine year: no amputation and the compensation is doubled (al-Qadi on Ahmad's view, the Hatib slaves report)."
+   "note": "Theft in a famine year: no amputation and the ḍamān is doubled (al-Qadi on Ahmad's view, the Hatib slaves report)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f006",
@@ -986,7 +1010,7 @@
    "expected": true,
    "positions": [
     {
-     "who": "riwaya: three divorces (generality)",
+     "who": "riwaya: three ṭalāqs (generality)",
      "ruling": true
     },
     {
@@ -995,7 +1019,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "'Al-talaq is binding on me' without intention: two riwayat, three (generality of al-) or one (customary/sunni 'ahd); none marked, and the deciding question is the presence of 'ahd, which the encoder lacks."
+   "note": "'Al-talaq is binding on me' («الطلاق يلزمنى») without intention: two riwayat, three (generality of al-) or one (customary/sunni 'ahd); none marked, and the deciding question is the presence of 'ahd, which the encoder lacks."
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f003",
@@ -1089,7 +1113,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Oath to report every wrong to al-wali: two wujuh, whether only the present governor is meant ('ahd) or any later one (genus); none marked."
+   "note": "Oath (ḥalaf: «لو حلف الحالف لا أرى منكرا إلا رفعته إلى الوالى») to report every wrong to al-wali: two wujuh, whether only the present governor is meant ('ahd) or any later one (genus); none marked."
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f007",
@@ -1097,7 +1121,7 @@
    "class": "missing_rule",
    "facts": null,
    "expected": null,
-   "note": "A qadi saying 'the qadi's wife is divorced' has no transmitted ruling; Ibn al-Lahham offers it as possibly resting on al- generality or on whether a speaker is included in his own general speech, so no ruling to test.",
+   "note": "A qadi saying 'the qadi's wife is divorced' («امرأة القاضى طالق») has no transmitted ruling; Ibn al-Lahham offers it as possibly resting on al- generality or on whether a speaker is included in his own general speech, so no ruling to test.",
    "needs": [
     "rule:speaker_in_own_speech"
    ]
@@ -1111,7 +1135,7 @@
     "ranked": true
    },
    "expected": true,
-   "note": "Tayammum intended for «al-ṣalāt» without specifying obligatory or supererogatory: by the rule of generality it covers both, or «تنزيلا له على الأدنى» only the supererogatory; the latter is «أشهرهما عند الأصحاب», which the lowest-reading derives (the lowest is the certain).",
+   "note": "Tayammum intended for «al-ṣalāt» without specifying obligatory or supererogatory («ولم ينو فرضا ولا نافلة»): by the rule of generality it covers both, or «تنزيلا له على الأدنى» only the supererogatory; the latter is «أشهرهما عند الأصحاب», which the lowest-reading derives (the lowest is the certain).",
    "revisit": {
     "from_class": "genuine_ikhtilaf",
     "closed_by": [
@@ -1153,7 +1177,7 @@
     "ahd": false
    },
    "expected": true,
-   "note": "A vow to slaughter 'my child' (a ram due) with several children requires a ram for each, per Ibn Qudama citing Ahmad and built on the rule."
+   "note": "A vow (nadhr: «إذا نذر ذبح ولده») to slaughter 'my child' (a ram due) with several children requires a ram for each, per Ibn Qudama citing Ahmad and built on the rule."
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f002",
@@ -1189,7 +1213,7 @@
     "ahd": false
    },
    "expected": true,
-   "note": "'If your pregnancy is a male... if female...' and she bears twins of both sexes: no divorce, since 'your pregnancy' as a whole is neither, consistent with the annexed noun being general."
+   "note": "'If your pregnancy is a male... if female...' and she bears twins of both sexes: no ṭalāq («قال الأصحاب لا تطلق»), since 'your pregnancy' as a whole is neither, consistent with the annexed noun being general."
   },
   {
    "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f005",
@@ -1213,7 +1237,7 @@
     "ahd": true
    },
    "expected": false,
-   "note": "'I bequeath to my neighbour Muḥammad' with two neighbours so named: the proper name pins the annexed singular (taʿyīn), so it is not general; both positions (invalid, al-aṣaḥḥ; or valid for one chosen by the heirs) agree on that, and their dispute about validity lies beyond this reading.",
+   "note": "'I bequeath to my neighbour Muḥammad' with two neighbours so named: the proper name pins the annexed singular (taʿyīn), so it is not general; both positions (not ṣaḥīḥ, al-aṣaḥḥ; or ṣaḥīḥ for one chosen by the heirs) agree on that, and their dispute about validity lies beyond this reading.",
    "revisit": {
     "from_class": "encoding_error",
     "closed_by": [
@@ -1281,7 +1305,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "A muhrim attacked by game kills it in self-defence: not liable on the sounder of two wujuh (the other makes him liable); the famine sub-case (killing to eat, liable) also fits the kernel."
+   "note": "A muhrim attacked by game kills it in self-defence: not liable on al-aṣaḥḥ of two wujūh («على أصح الوجهين») (the other makes him liable); the famine sub-case (killing to eat, liable) also fits the kernel."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002",
@@ -1346,7 +1370,7 @@
     "consent_required": false
    },
    "expected": false,
-   "note": "Manumission (even for payment), the freed wife's annulment under a slave husband, annulment for defect or deception, of ijara and of non-binding contracts all proceed without the other party's knowledge because his consent is not required."
+   "note": "Manumission (even for payment), the freed wife's faskh under a slave husband («فسخ المعتقة تحت عبد»), faskh for defect or deception, of ijara and of non-binding (jāʾiz) contracts («العقود الجائزة») all proceed without the other party's knowledge because his consent is not required."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f001",
@@ -1432,8 +1456,36 @@
      "ruling": "divide"
     }
    ],
-   "matches_madhhab": true,
-   "note": "His slave confused with another's slave: al-Qāḍī gives lot, agreement, or (marked 'ajwad') selling both and dividing the price by value like mixed oil; as co-ownable property divisible=true so the kernel yields divide, the position al-Qāḍī prefers (no madhhab label as such)."
+   "matches_madhhab": false,
+   "note": "His slave confused with another's slave: al-Qāḍī gives lot, agreement, or (marked 'ajwad') selling both and dividing the price by value like mixed oil; as co-ownable property divisible=true so the kernel yields divide, the position al-Qāḍī prefers (no madhhab label as such).",
+   "side_check": {
+    "from_matches": true,
+    "refs": [
+     "src:openiti-buhuti-kashshaf-shamela21642/v03:p179",
+     "src:openiti-hajjawi-iqna-shamela7360/v02:p073"
+    ],
+    "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side.",
+    "contradictions": [
+     {
+      "evidence_index": 1,
+      "case_facts": {
+       "entitled_known": false,
+       "divisible": true,
+       "confusion_category": false
+      },
+      "rationale": "The case note specifies confused ownership of two slaves. Iqna and Kashshaf prohibit selling either before lots, adopting lot rather than the suggested joint sale/division. The annotation of divide as al-Qadi's preferred position is preserved."
+     },
+     {
+      "evidence_index": 2,
+      "case_facts": {
+       "entitled_known": false,
+       "divisible": true,
+       "confusion_category": false
+      },
+      "rationale": "The case note specifies confused ownership of two slaves. Iqna and Kashshaf prohibit selling either before lots, adopting lot rather than the suggested joint sale/division. The annotation of divide as al-Qadi's preferred position is preserved."
+     }
+    ]
+   }
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f007",
@@ -1445,7 +1497,7 @@
     "confusion_category": true
    },
    "expected": "lot",
-   "note": "Deposit claimed by two, the depositary not knowing whose: lot, and the winner swears and takes (naṣṣ of Aḥmad); a specific entitlement lost in confusion, Ibn Rajab's second category, goes to lots although the deposit is divisible.",
+   "note": "Deposit claimed by two, the depositary not knowing whose: lot, and the winner swears and takes («حلف وأخذها»: the yamīn of a claim; naṣṣ of Aḥmad); a specific entitlement lost in confusion, Ibn Rajab's second category, goes to lots although the deposit is divisible.",
    "revisit": {
     "from_class": "encoding_error",
     "closed_by": [
@@ -1557,7 +1609,7 @@
     "confusion_category": true
    },
    "expected": "lot",
-   "note": "Bequest to 'my neighbour Muḥammad' with two neighbours so named: void, or valid with one picked by lot; the earlier fuller treatment gives validity as the naṣṣ and lot for the confused entitled per qiyās al-madhhab, which the refined reading derives.",
+   "note": "Bequest to 'my neighbour Muḥammad' with two neighbours so named: bāṭil, or ṣaḥīḥ with one picked by lot; the earlier fuller treatment gives validity as the naṣṣ and lot for the confused entitled per qiyās al-madhhab, which the refined reading derives.",
    "revisit": {
     "from_class": "encoding_error",
     "closed_by": [
@@ -1575,7 +1627,55 @@
      "ruling": "lot"
     }
    ],
-   "matches_madhhab": true
+   "matches_madhhab": false,
+   "side_check": {
+    "from_matches": true,
+    "refs": [
+     "src:openiti-buhuti-kashshaf-shamela21642/v04:p358",
+     "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p471",
+     "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p461",
+     "src:openiti-insaf-shamela21609/v07:p231"
+    ],
+    "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side.",
+    "contradictions": [
+     {
+      "evidence_index": 0,
+      "case_facts": {
+       "entitled_known": false,
+       "divisible": true,
+       "confusion_category": true
+      },
+      "rationale": "The case note gives an unqualified shared-name bequest. Al-Insaf and Muntaha invalidate that unqualified bequest; validity and lots where a qarina identifies an intended beneficiary are a distinct conditional case. The facts do not encode qarina, so this candidate rejects the unqualified reading only."
+     },
+     {
+      "evidence_index": 2,
+      "case_facts": {
+       "entitled_known": false,
+       "divisible": true,
+       "confusion_category": true
+      },
+      "rationale": "The case note gives an unqualified shared-name bequest. Al-Insaf and Muntaha invalidate that unqualified bequest; validity and lots where a qarina identifies an intended beneficiary are a distinct conditional case. The facts do not encode qarina, so this candidate rejects the unqualified reading only."
+     },
+     {
+      "evidence_index": 3,
+      "case_facts": {
+       "entitled_known": false,
+       "divisible": true,
+       "confusion_category": true
+      },
+      "rationale": "The case note gives an unqualified shared-name bequest. Al-Insaf and Muntaha invalidate that unqualified bequest; validity and lots where a qarina identifies an intended beneficiary are a distinct conditional case. The facts do not encode qarina, so this candidate rejects the unqualified reading only."
+     },
+     {
+      "evidence_index": 4,
+      "case_facts": {
+       "entitled_known": false,
+       "divisible": true,
+       "confusion_category": true
+      },
+      "rationale": "The case note gives an unqualified shared-name bequest. Al-Insaf and Muntaha invalidate that unqualified bequest; validity and lots where a qarina identifies an intended beneficiary are a distinct conditional case. The facts do not encode qarina, so this candidate rejects the unqualified reading only."
+     }
+    ]
+   }
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f013",
@@ -1633,7 +1733,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Two mutual heirs died with order forgotten or disputed: the madhhab treats it as unknown (mutual inheritance), other wujūh are lot, oaths, or halving the disputed estate; estate is divisible so kernel gives divide = Abū Bakr's wajh, not the madhhab."
+   "note": "Two mutual heirs died with order forgotten or disputed: the madhhab treats it as unknown (mutual inheritance), other wujūh are lot, the claimants' oaths (yamīn of a claim), or halving the disputed estate; estate is divisible so kernel gives divide = Abū Bakr's wajh, not the madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f015",
@@ -1645,7 +1745,7 @@
     "confusion_category": true
    },
    "expected": "lot",
-   "note": "A deceased's wife irrevocably divorced (or invalidly married) and unknown among his wives is identified by lot and the inheritance goes to the rest (naṣṣ of Aḥmad): a confused specific entitlement, lots though the share is divisible.",
+   "note": "A deceased's wife irrevocably divorced («طلاقا يقطع الإرث») (or married by a fāsid nikāḥ) and unknown among his wives is identified by lot and the inheritance goes to the rest (naṣṣ of Aḥmad): a confused specific entitlement, lots though the share is divisible.",
    "revisit": {
     "from_class": "encoding_error",
     "closed_by": [
@@ -1691,7 +1791,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Two guardians marry her to two men with the earlier unknown: riwāyatān lot vs annulment/voidness; Ibn Abī Mūsā marks voidness as more correct, so the kernel's lot matches the non-preferred riwāya; the reading has no field for the inner validity of a marriage (abḍāʿ)."
+   "note": "Two guardians marry her to two men with the earlier unknown: riwāyatān lot vs annulment (faskh), or both bāṭil; Ibn Abī Mūsā marks both bāṭil as more correct, so the kernel's lot matches the non-preferred riwāya; the reading has no field for the inner validity of a marriage (abḍāʿ)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f018",
@@ -1718,7 +1818,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Convert with more than four wives divorces all thrice: the mashhūr extracts four by lot as the chosen; kernel lot matches the mashhūr."
+   "note": "Convert with more than four wives divorces (ṭalāq) all thrice: the mashhūr extracts four by lot as the chosen; kernel lot matches the mashhūr."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f019",
@@ -1816,7 +1916,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Record excerpt is cut at the page break; the full case (p355) is an unspecified divorce 'one of you is divorced': lot in ẓāhir al-madhhab, a riwāya lets him designate; kernel lot matches the madhhab."
+   "note": "Record excerpt is cut at the page break; the full case (p355) is an unspecified divorce 'one of you is divorced' («إحداكما طالق»): lot in ẓāhir al-madhhab, a riwāya lets him designate; kernel lot matches the madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f024",
@@ -1839,7 +1939,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "A specific wife divorced then forgotten (or the raven case): the madhhab identifies her by lot and the others are permitted, against the riwāya of suspension; kernel lot matches."
+   "note": "A specific wife divorced (ṭalāq) then forgotten (or the raven case): the madhhab identifies her by lot and the others are permitted, against the riwāya of suspension; kernel lot matches."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f025",
@@ -1866,7 +1966,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Two men's opposite raven oaths: wujūh no-divorce vs lot (naṣṣ: both abstain); the decisive fact (two different husbands, each certain of his own marriage) is not an encoder field; kernel matches the lot wajh, not marked as madhhab."
+   "note": "Two men's opposite raven taʿlīqs («إن كان غرابا فامرأتي طالق ثلاثا»): wujūh no-divorce vs lot (naṣṣ: both abstain); the decisive fact (two different husbands, each certain of his own marriage) is not an encoder field; kernel matches the lot wajh, not marked as madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f026",
@@ -1878,7 +1978,7 @@
     "absence_known": false
    },
    "expected": true,
-   "note": "Having appointed an agent to divorce his wife, he abstains from her «حتى يدري ما يفعل»: the divorce depends on what may already have happened, so by Taqī al-Dīn's summary of Aḥmad's texts he abstains until its absence is known.",
+   "note": "Having appointed an agent to divorce his wife («إذا وكل وكيلا في طلاق امرأته»), he abstains from her «حتى يدري ما يفعل»: the divorce depends on what may already have happened, so by Taqī al-Dīn's summary of Aḥmad's texts he abstains until its absence is known.",
    "revisit": {
     "from_class": "missing_rule",
     "closed_by": [
@@ -1897,7 +1997,7 @@
     "absence_known": false
    },
    "expected": true,
-   "note": "«You are divorced on Laylat al-Qadr»: he abstains once the last ten nights begin «لإمكان أن يكون أول ليلة» (since it may be the first night).",
+   "note": "«You are divorced on Laylat al-Qadr» («أنت طالق ليلة القدر»): he abstains once the last ten nights begin «لإمكان أن يكون أول ليلة» (since it may be the first night).",
    "revisit": {
     "from_class": "missing_rule",
     "closed_by": [
@@ -1916,7 +2016,7 @@
     "absence_known": false
    },
    "expected": true,
-   "note": "«You are divorced a month before my death»: he abstains absolutely (Muhannā from Aḥmad), since the condition may already obtain and its absence cannot be known in his lifetime.",
+   "note": "«You are divorced a month before my death»: he abstains absolutely (Muhannā from Aḥmad), since the taʿlīq's event may already obtain and its absence cannot be known in his lifetime.",
    "revisit": {
     "from_class": "missing_rule",
     "closed_by": [
@@ -2108,7 +2208,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Oath sworn but its kind forgotten: manṣūṣ nothing is due; al-Qāḍī's qiyās lots among oath-types; kernel lot matches only that (Ibn Rajab's introduction excludes lots for unspecified obligations, which the reading lacks)."
+   "note": "Oath sworn but its kind forgotten («لو حلف بيمين ولم يدر أي الأيمان هي»): manṣūṣ nothing is due; al-Qāḍī's qiyās lots among oath-types; kernel lot matches only that (Ibn Rajab's introduction excludes lots for unspecified wājibāt, which the reading lacks)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f037",
@@ -2120,7 +2220,7 @@
     "confusion_category": false
    },
    "expected": "lot",
-   "note": "Two archery teams dispute which picks first: lot; appended dispute on who shoots first has positions (lot per al-Āmidī, prize-giver first then lot per al-Qāḍī, contract invalid per al-Targhīb)."
+   "note": "Two archery teams dispute which picks first: lot; appended dispute on who shoots first has positions (lot per al-Āmidī, prize-giver first then lot per al-Qāḍī, contract not ṣaḥīḥ per al-Targhīb)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f038",
@@ -2172,7 +2272,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Imamate contracted to two in succession, earlier unknown: takhrīj on the two-guardians case (void vs lot); Ibn Rajab says the mashhūr there is annulment, so lot is the non-mashhūr."
+   "note": "Imamate contracted to two in succession, earlier unknown: takhrīj on the two-guardians case (bāṭil vs lot); Ibn Rajab says the mashhūr there is faskh of both («أنه يفسخ النكاحان»), so lot is the non-mashhūr."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f041",
@@ -2231,7 +2331,7 @@
     "confusion_category": true
    },
    "expected": "lot",
-   "note": "A thing held by a third party who acknowledges it for one of two claimants without knowing which: lot (the two wujūh concern only the oath); a confused specific entitlement.",
+   "note": "A thing held by a third party who acknowledges it for one of two claimants without knowing which: lot (the two wujūh concern only the yamīn of the claim: «وهل يحلف؟»); a confused specific entitlement.",
    "revisit": {
     "from_class": "encoding_error",
     "closed_by": [
@@ -2304,7 +2404,7 @@
     "confusion_category": false
    },
    "expected": "lot",
-   "note": "Emancipating slaves in final illness beyond the third: lot frees a third's worth (naṣṣ); the listed exceptions (conditional ʿitq, intended halves, pregnant slave) would encode with other facts, and Ibn Abī Mūsā's restriction is noted."
+   "note": "Emancipating slaves in final illness beyond the third: lot frees a third's worth (naṣṣ); the listed exceptions (ʿitq suspended on another's, taʿlīq: «إن أعتقت سالما فغانم حر»; intended halves, pregnant slave) would encode with other facts, and Ibn Abī Mūsā's restriction is noted."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f048",
@@ -2322,7 +2422,7 @@
      "ruling": "lot"
     },
     {
-     "who": "takhrīj from the divorce riwāya",
+     "who": "takhrīj from the ṭalāq riwāya",
      "ruling": "his designation"
     }
    ],
@@ -2395,7 +2495,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "One in minor hadath with water for only some limbs: two wujuh on using it, the negative grounded in minor hadath not lifting partially or partial washing not being legislated; neither is marked madhhab."
+   "note": "One in minor hadath with water for only some limbs: two wujuh on using it, the negative grounded in minor hadath not lifting partially or washing (ghasl) part of the limbs of one in minor ḥadath not being legislated; neither is marked madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f004",
@@ -2496,7 +2596,7 @@
    "expected": false,
    "positions": [
     {
-     "who": "al-mashhur (no obligation)",
+     "who": "al-mashhur (no wujūb)",
      "ruling": false
     },
     {
@@ -2540,7 +2640,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Ransoming a free Muslim captive gives recourse with or without his permission (most report no dispute), but al-Qāḍī's Kitāb al-Riwāyatayn has a riwāya making it depend on permission; nothing is marked madhhab."
+   "note": "Ransoming (fidāʾ) a free Muslim captive gives recourse with or without his permission (most report no dispute), but al-Qāḍī's Kitāb al-Riwāyatayn has a riwāya making it depend on permission; nothing is marked madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f002",
@@ -2773,7 +2873,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "A musāqī who flees: whoever is hired to finish the work is treated like the cameleer's case (the same two riwāyas), and the owner may also rescind; no marker."
+   "note": "A musāqī who flees: whoever is hired to finish the work is treated like the cameleer's case (the same two riwāyas), and the owner may also rescind (faskh: «إلا أن للمالك الفسخ»); no marker."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f013",
@@ -2834,7 +2934,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Kaffarat of zihar and oaths follow the hady al-mut'a case: if the original becomes available before the fast, one riwaya (state at performance) requires moving to it, the other (state at obligation) fixes the substitute; the text marks neither here. Reconciled (jamʿ, state at obligation): «والاعتبار في الكفارات بحالة الوجوب» (al-Iqnāʿ); al-Inṣāf: «على الصحيح من المذهب»."
+   "note": "Kaffarat of zihar and oaths («كفارة الظهار واليمين») follow the hady al-mut'a case: if the original becomes available before the fast, one riwaya (state at performance) requires moving to it, the other (state at wujūb) fixes the substitute; the text marks neither here. Reconciled (jamʿ, state at obligation): «والاعتبار في الكفارات بحالة الوجوب» (al-Iqnāʿ); al-Inṣāf: «على الصحيح من المذهب»."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f002",
@@ -2867,7 +2967,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "A slave-girl promised as reward becomes Muslim so the unbeliever gets her value; if he later converts, two wujuh on whether his right returns to her; none marked. Reconciled (jamʿ, state at obligation): his right was fixed in the value at her conversion; the books give him only the value (al-Inṣāf, Taṣḥīḥ al-Furūʿ)."
+   "note": "A slave-girl promised as reward becomes Muslim so the unbeliever gets her value; if he later converts, two wujuh on whether his right returns to her; none marked. Reconciled (jamʿ, state at obligation, ḥālat al-wujūb): his right was fixed in the value at her conversion; the books give him only the value (al-Inṣāf, Taṣḥīḥ al-Furūʿ)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f004",
@@ -2889,7 +2989,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Fruiting trees given as dower, divorce before consummation, value fixed after she refuses; if he offers to take half the trees leaving the fruit, two wujuh: she is not compelled (Ibn 'Aqil) or she is; none marked. Reconciled (jamʿ, state at obligation): the right moved to the value when she refused, so she is not compelled (Ibn ʿAqīl, al-Mughnī, al-Sharḥ)."
+   "note": "Fruiting trees given as dower, ṭalāq before consummation, value fixed after she refuses; if he offers to take half the trees leaving the fruit, two wujuh: she is not compelled (Ibn 'Aqil) or she is; none marked. Reconciled (jamʿ, state at obligation, ḥālat al-wujūb): the right moved to the value when she refused, so she is not compelled (Ibn ʿAqīl, al-Mughnī, al-Sharḥ)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f005",
@@ -2915,7 +3015,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Divorced before consummation after she sold the dower, the sale rescinded before he took half its value: al-ashab deny return to the thing; the kernel matches only Ibn Rajab's takhrij of a return. Reconciled (jamʿ, state at obligation): the right was fixed in the value at the divorce, so it does not return to the thing (al-aṣḥāb)."
+   "note": "Divorced (ṭalāq) before consummation after she sold the dower, the sale rescinded before he took half its value: al-ashab deny return to the thing; the kernel matches only Ibn Rajab's takhrij of a return. Reconciled (jamʿ, state at obligation, ḥālat al-wujūb): the right was fixed in the value at the divorce, so it does not return to the thing (al-aṣḥāb)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f006",
@@ -2970,7 +3070,7 @@
     "follows_established": true
    },
    "expected": true,
-   "note": "One woman's testimony to suckling is accepted (on the madhhab) and annulment of the marriage follows from it as a dependent."
+   "note": "One woman's testimony to suckling is accepted (on the madhhab) and the marriage's dissolving of itself (infisākh: «ويترتب على ذلك انفساخ النكاح») follows from it as a dependent."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f004",
@@ -3025,7 +3125,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Tarāwīḥ on the cloudy night is prayed as a dependent of the fast on one of two wajhs, neither marked as the madhhab (al-Qāḍī's extension to other month-linked rulings is called weak)."
+   "note": "Tarāwīḥ on the cloudy night is prayed as a dependent of the fast on one of two wajhs, neither marked as the madhhab (al-Qāḍī's extension to other month-linked rulings is called weak, «وهو ضعيف هنا»: ḍaʿīf of a view)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f007",
@@ -3047,7 +3147,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "An oath of divorce that the Prophet did not say a hadith: one narrator establishes the hadith and divorce follows (Ibn ʿAqīl), while non-occurrence is derivable (yatakharraj) from the next case; neither is marked."
+   "note": "An oath of divorce (ḥalif bi-l-ṭalāq: «لو حلف بالطلاق») that the Prophet did not say a hadith: one narrator establishes the hadith and divorce follows (Ibn ʿAqīl), while non-occurrence is derivable (yatakharraj) from the next case; neither is marked."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f008",
@@ -3069,7 +3169,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "An oath of divorce that he usurped nothing, followed by usurpation proven by witness and oath or a man and two women: al-Qāḍī (Mujarrad), Ibn ʿAqīl and al-Mughnī deny divorce, al-Sāmarrī affirms it; no position is marked madhhab and the kernel matches only al-Sāmarrī."
+   "note": "An oath of divorce (ḥalif bi-l-ṭalāq) that he usurped nothing, followed by usurpation proven by a witness and the claimant's oath (shāhid wa-yamīn) or a man and two women: al-Qāḍī (Mujarrad), Ibn ʿAqīl and al-Mughnī deny divorce, al-Sāmarrī affirms it; no position is marked madhhab and the kernel matches only al-Sāmarrī."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f009",
@@ -3091,7 +3191,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Divorce made conditional on a birth to which women testify: al-mashhūr is that it occurs as a dependent, al-Majd derived a wajh that it does not."
+   "note": "Divorce suspended (taʿlīq) on a birth to which women testify: al-mashhūr is that it occurs as a dependent, al-Majd derived a wajh that it does not."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f010",
@@ -3113,7 +3213,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "A mukātab who proves payment of his instalments by witness and oath or a man and two women is freed per al-Khiraqī (al-Mughnī reports no dispute), but al-Targhīb reports two wajhs; none is marked madhhab."
+   "note": "A mukātab who proves payment of his instalments by a witness and his oath (shāhid wa-yamīn) or a man and two women is freed per al-Khiraqī (al-Mughnī reports no dispute), but al-Targhīb reports two wajhs; none is marked madhhab."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f011",
@@ -3135,7 +3235,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "A waqf made conditional on the founder's death is valid on al-manṣūṣ, called the sounder, because it counts as a bequest and bequests accept conditions, while al-Qāḍī invalidates it."
+   "note": "A waqf suspended (taʿlīq) on the founder's death is valid on al-manṣūṣ, called aṣaḥḥ («والأول أصح»), because it counts as a bequest and bequests accept taʿlīq («والوصايا تقبل التعليق»), while al-Qāḍī holds it not ṣaḥīḥ."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f012",
@@ -3146,7 +3246,7 @@
     "follows_established": true
    },
    "expected": true,
-   "note": "A release made conditional on the releaser's death is valid because it enters within the bequest (naṣṣ, al-Qāḍī and the aṣḥāb); whether the wounded man's release counts as a bequest to the killer is a separate question."
+   "note": "A release suspended (taʿlīq) on the releaser's death is valid because it enters within the bequest (naṣṣ, al-Qāḍī and the aṣḥāb); whether the wounded man's release counts as a bequest to the killer is a separate question."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f013",
@@ -3157,7 +3257,7 @@
     "follows_established": true
    },
    "expected": true,
-   "note": "'At the start of the month you are divorced for a thousand' is valid: the exchange enters as a dependent of the conditional divorce once she accepts."
+   "note": "'At the start of the month you are divorced for a thousand' is valid: the exchange enters as a dependent of the divorce suspended on the month (taʿlīq) once she accepts."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f014",
@@ -3179,7 +3279,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "A convert with more than four wives says 'whenever one of you converts she is divorced': one wajh invalidates it (choice cannot be conditioned), the other validates it because choice follows the divorce; neither is marked."
+   "note": "A convert with more than four wives says 'whenever one of you converts she is divorced': one wajh: not ṣaḥīḥ (choice cannot be suspended on a sharṭ: «والاختيار لا يتعلق بالشرط»; divorce accepts taʿlīq), the other validates it because choice follows the divorce; neither is marked."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f015",
@@ -3256,7 +3356,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "After one unknown wife was divorced and the husband died, the lot picks her and her divorce ʿidda follows as a dependent (ẓāhir kalām Aḥmad); al-Qāḍī makes all observe the longer term. This is not an explicit madhhab marker."
+   "note": "After one unknown wife was divorced (ṭalāq) and the husband died, the lot picks her and her divorce ʿidda follows as a dependent (ẓāhir kalām Aḥmad); al-Qāḍī makes all observe the longer term. This is not an explicit madhhab marker."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f020",
@@ -3300,7 +3400,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "The qārin who intends both ḥajj and ʿumra needs one ṭawāf and one saʿy on al-madhhab al-ṣaḥīḥ, but a riwāya requires two of each; al-Qāḍī's version of that riwāya denies the embedded ʿumra counts, which is the dependency condition."
+   "note": "The qārin who intends both ḥajj and ʿumra needs one ṭawāf and one saʿy on al-madhhab al-ṣaḥīḥ, but a riwāya requires two of each; al-Qāḍī's version of that riwāya denies the embedded ʿumra counts, which is the dependency (tabaʿiyya) the reading tests."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f002",
@@ -3322,7 +3422,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "One who vowed ḥajj while still owing the obligatory ḥajj then performs ḥajjat al-islām: it suffices for both per Abū Ṭālib's riwāya, but al-mashhūra says it does not, and the text gives no condition-based reason, so the kernel matches only the non-madhhab riwāya."
+   "note": "One who vowed (nadhr) ḥajj while still owing the farḍ ḥajj («حج الفرض») then performs ḥajjat al-islām: it suffices for both per Abū Ṭālib's riwāya, but al-mashhūra says it does not, and the text gives no sharṭ-based reason, so the kernel matches only the non-madhhab riwāya."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f003",
@@ -3344,7 +3444,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "A vowed month's fast that coincides with Ramaḍān: the better-known riwāya among the aṣḥāb says Ramaḍān does not satisfy both, the riwāya of al-Marrūdhī and al-Khiraqī says it does; the kernel matches the non-madhhab one."
+   "note": "A vowed (nadhr) month's fast that coincides with Ramaḍān: the better-known riwāya among the aṣḥāb says Ramaḍān does not satisfy both, the riwāya of al-Marrūdhī and al-Khiraqī says it does; the kernel matches the non-madhhab one."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f004",
@@ -3366,7 +3466,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "A vowed charity of a niṣāb at the end of the ḥawl, intended as both vow and zakāt: al-Mughnī says it suffices, Ṣāḥib Sharḥ al-Hidāya says it does not; neither is marked."
+   "note": "A vowed ṣadaqa (nadhr: «نذر الصدقة») of a niṣāb at the end of the ḥawl, intended as both vow and zakāt: al-Mughnī says it suffices, Ṣāḥib Sharḥ al-Hidāya says it does not; neither is marked."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f005",
@@ -3410,7 +3510,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "One takbīr intended as both the opening takbīr and the rukūʿ takbīr: al-Qāḍī denies it for combining a pillar with a non-pillar (a rank condition the reading lacks), Ibn Shāqlā accepts it; neither is marked."
+   "note": "One takbīr intended as both the opening takbīr and the rukūʿ takbīr: al-Qāḍī denies it for combining a pillar with a non-pillar (a rank distinction, rukn against non-rukn, the reading lacks), Ibn Shāqlā accepts it; neither is marked."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f007",
@@ -3443,7 +3543,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "Two prostrations of recitation heard together: al-manṣūṣ (al-Barzāṭī) requires two, a takhrīj lets one suffice; the kernel matches only the non-madhhab takhrīj, and the text gives no condition-based reason."
+   "note": "Two prostrations of recitation heard together: al-manṣūṣ (al-Barzāṭī) requires two, a takhrīj lets one suffice; the kernel matches only the non-madhhab takhrīj, and the text gives no sharṭ-based reason."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f009",
@@ -3476,7 +3576,7 @@
     }
    ],
    "matches_madhhab": false,
-   "note": "An obligatory prayer straight after ṭawāf: does it replace the two ṭawāf rakʿas? Abū Bakr says no (al-aqyas), Abū Ṭālib and al-Athram report yes; no madhhab marker."
+   "note": "An obligatory prayer (maktūba, a farḍ) straight after ṭawāf: does it replace the two ṭawāf rakʿas? Abū Bakr says no (al-aqyas), Abū Ṭālib and al-Athram report yes; no madhhab marker."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f011",
@@ -3564,7 +3664,7 @@
     "same_purpose": true
    },
    "expected": true,
-   "note": "Causes of expiation of one kind (oaths, iḥrām, fasting, ẓihār) merge and one kaffāra makes the rest lapse; the reported wajhs concern only unspecified intention, and for ritual impurities intending one lifts all on al-mashhūr."
+   "note": "Causes of expiation (al-asbāb: «اجتماع الأسباب التي يجب بها الكفارات») of one kind (aymān, iḥrām, fasting, ẓihār) merge and one kaffāra makes the rest lapse; the reported wajhs concern only unspecified intention, and for aḥdāth (al-ḥadath, «الأحداث الموجبة للطهارة», not najāsa) intending one lifts all on al-mashhūr."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001",
@@ -3576,7 +3676,7 @@
     "negligent": false
    },
    "expected": true,
-   "note": "An agent who transgresses becomes liable for what he transgressed in (al-mashhur), while the agency itself survives; only the liability side is encoded, the voidance question is outside the encoder."
+   "note": "An agent who transgresses becomes liable for what he transgressed in (al-mashhur), while the agency itself survives; only the liability side is encoded, the question whether the agency becomes bāṭil is outside the encoder."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002",
@@ -3588,7 +3688,7 @@
     "negligent": false
    },
    "expected": true,
-   "note": "A partner or mudarib who transgresses becomes liable and his dealings remain valid (min al-madhhab); liability is encoded, voidance is not."
+   "note": "A partner or mudarib who transgresses becomes liable and his dealings remain valid (min al-madhhab); liability is encoded, buṭlān (becoming bāṭil) is not."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003",
@@ -3612,7 +3712,7 @@
     "negligent": true
    },
    "expected": true,
-   "note": "A hired guardian who stops guarding partway becomes liable (the sounder wajh, the lease not voided); the two wujuh concern voidance, not liability."
+   "note": "A hired guardian who stops guarding partway becomes liable (al-aṣaḥḥ of two wujūh for Ibn al-Muthannā, «أصحهما لا تبطل»: the lease not made bāṭil); the two wujuh concern buṭlān (bāṭil or not), not liability."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005",
@@ -3633,11 +3733,11 @@
    },
    "positions": [
     {
-     "who": "first possibility (Ibn ʿAqīl, al-Mufradāt): voided",
+     "who": "first possibility (Ibn ʿAqīl, al-Mufradāt): bāṭil",
      "ruling": true
     },
     {
-     "who": "second possibility: not voided",
+     "who": "second possibility: not bāṭil",
      "ruling": false
     }
    ],
@@ -3653,7 +3753,7 @@
     "hardship": false
    },
    "expected": true,
-   "note": "The days of the mustaḥāḍa beyond her customary sitting are treated as non-existent (she takes the rulings of the pure), «فإن مدة الاستحاضة تطول ولا غاية لها تنتظر»: one despairs of learning them, unlike the beginner's doubtful days, which become known by repetition soon.",
+   "note": "The days of the mustaḥāḍa beyond her customary sitting are treated as non-existent (she takes the rulings of the ṭāhira, the woman not in ḥayḍ), «فإن مدة الاستحاضة تطول ولا غاية لها تنتظر»: one despairs of learning them, unlike the beginner's doubtful days, which become known by repetition soon.",
    "revisit": {
     "from_class": "missing_rule",
     "closed_by": [
@@ -3671,7 +3771,7 @@
     "ownable": true
    },
    "expected": "finderOwns",
-   "note": "After the year of announcement the luqaṭa is owned «لجهالة ربها»; what is not ownable is given in charity for him (al-ṣaḥīḥ). An instance of qāʿida 106: the owner, still unknown, is treated as absent (luqata_is_instance).",
+   "note": "After the year of announcement the luqaṭa is owned «لجهالة ربها»; what is not ownable is given as ṣadaqa for him («يتصدق به عنه», al-ṣaḥīḥ). An instance of qāʿida 106: the owner, still unknown, is treated as absent (luqata_is_instance).",
    "revisit": {
     "from_class": "missing_rule",
     "from_encoder": "unknown_owner",
@@ -3730,7 +3830,7 @@
     "hardship": true
    },
    "expected": true,
-   "note": "Street mud is ruled pure «على الصحيح المنصوص»: its unknown impurity is set aside because taking it into account is a hardship.",
+   "note": "Street mud is ruled ṭāhir «على الصحيح المنصوص»: its unknown najāsa is set aside because taking it into account is a hardship.",
    "revisit": {
     "from_class": "missing_rule",
     "closed_by": [
@@ -3749,7 +3849,7 @@
     "confusion_category": false
    },
    "expected": "lot",
-   "note": "One wife divorced and forgotten is identified by lot and the others are lawful (al-madhhab al-ṣaḥīḥ al-mashhūr); retested under the lots reading, which the bank now has.",
+   "note": "One wife divorced (ṭalāq) and forgotten is identified by lot and the others are lawful (al-madhhab al-ṣaḥīḥ al-mashhūr); retested under the lots reading, which the bank now has.",
    "revisit": {
     "from_class": "missing_rule",
     "from_encoder": "unknown_owner",
@@ -3795,7 +3895,7 @@
     "pure_means": false
    },
    "expected": true,
-   "note": "One unable to recite must still stand: standing is «مقصود في نفسه وهو عبادة منفردة», not a pure means to the recitation. (Opening example, segmented as f000.)"
+   "note": "One unable to recite must still stand: standing is «مقصود في نفسه وهو عبادة منفردة», not a pure means (wasīla maḥḍa) to the recitation. (Opening example, segmented as f000.)"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f000",
@@ -3817,7 +3917,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Hady al-mutʿa lacking, fasting became due, then the hady is found before fasting began: whether he must move to it rests on two riwāyas, the state at obligation or at performance. The reading (the original is possible again, so the substitute is not used) takes the state at performance; no madhhab is marked between them. (Opening example, segmented as f000.) Reconciled (jamʿ, state at obligation): the fast became due before the hady was found, so it stands (al-Inṣāf: the madhhab; al-Iqnāʿ, Kashshāf)."
+   "note": "Hady al-mutʿa lacking, fasting became due, then the hady is found before fasting began: whether he must move to it rests on two riwāyas, the state at wujūb or at performance. The reading (the original is possible again, so the substitute is not used) takes the state at performance; no madhhab is marked between them. (Opening example, segmented as f000.) Reconciled (jamʿ, state at obligation): the fast became due before the hady was found, so it stands (al-Inṣāf: the madhhab; al-Iqnāʿ, Kashshāf)."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000",
@@ -3841,16 +3941,16 @@
    "expected": true,
    "positions": [
     {
-     "who": "al-mashhūr: void, a pure trust",
+     "who": "al-mashhūr: bāṭil, a trust outright (amāna maḥḍa)",
      "ruling": true
     },
     {
-     "who": "Ibn al-Zāghūnī: not void once he resumes keeping it",
+     "who": "Ibn al-Zāghūnī: not bāṭil once he resumes keeping it",
      "ruling": false
     }
    ],
    "matches_madhhab": true,
-   "note": "Transgression in a deposit voids it, the duty is to return it at once, «لأنها أمانة محضة… هذا هو المشهور»; Ibn al-Zāghūnī: once the transgression ends and he resumes keeping it, it is not void. (Opening example, segmented as f000.)"
+   "note": "Transgression in a deposit makes the trust bāṭil («بطلت»), return is wājib at once («ووجب الرد على الفور»), «لأنها أمانة محضة… هذا هو المشهور»; Ibn al-Zāghūnī: once the transgression ends and he resumes keeping it, it is not bāṭil. (Opening example, segmented as f000.)"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063.f000",
@@ -3884,7 +3984,7 @@
     }
    ],
    "matches_madhhab": true,
-   "note": "Paying another's due debt without his permission: recourse «في أصح الروايتين وهي المذهب»; al-Qāḍī adds conditions (intending recourse, the debtor refusing), which the authors of al-Mughnī and al-Muḥarrar reject. (Opening example, segmented as f000.)"
+   "note": "Paying another's due debt without his permission: recourse «في أصح الروايتين وهي المذهب»; al-Qāḍī adds shurūṭ («واشترط القاضي», sharṭ: intending recourse, the debtor refusing), which the authors of al-Mughnī and al-Muḥarrar reject. (Opening example, segmented as f000.)"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f000",

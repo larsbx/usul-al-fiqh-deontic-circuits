@@ -1,0 +1,1540 @@
+{
+ "suite": "islamqa_tranche1",
+ "status": "candidate",
+ "provenance": "Extended facts read from each answer's text for the Prolog oracle (examples/v40_fatwa_rules.pl); the ruling is the text's own for the case. Facts beyond the encoder's are the ones the tranche's gaps need. null = the text does not settle it, or the ruling does not depend on it.",
+ "cases": [
+  {
+   "far": "islamqa.23424.f001",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Doubt (shakk) about the number of rakʿas against the presumed lesser count (zann): he builds on certainty"
+  },
+  {
+   "far": "islamqa.23424.f002",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "zann",
+    "amara": true,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": true,
+   "note": "Preponderant belief (ghalabat al-ẓann = zann), aided by the external sign of the people beside him (amara), may override the presumed lesser count (zann)"
+  },
+  {
+   "far": "islamqa.83025.f001",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Presumed purity (zann) vs mere doubt of a wet dream (shakk), no sign seen: no ghusl, ṭawāf valid"
+  },
+  {
+   "far": "islamqa.103846.f001",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": true,
+   "note": "Presumed purity of the garment (zann) vs verified urine on it (qat): washing is obligatory"
+  },
+  {
+   "far": "islamqa.103846.f002",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Presumed purity of the garment (zann) vs doubt whether urine splashed (shakk): no washing"
+  },
+  {
+   "far": "islamqa.103846.f003",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": true,
+   "note": "Quoted Permanent Committee: presumed wuḍūʾ (zann) vs verified emission of a drop (qat): istinjāʾ and wuḍūʾ required"
+  },
+  {
+   "far": "islamqa.103846.f004",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Quoted Permanent Committee: presumed wuḍūʾ and purity (zann) vs doubt of a drop (shakk): nothing required"
+  },
+  {
+   "far": "islamqa.108549.f001",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Presumed continuing menstruation (zann) vs doubt whether it ended before fajr (shakk): she counts as menstruating, so no fajr make-up and the fast is invalid"
+  },
+  {
+   "far": "islamqa.110860.f001",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "wahm",
+    "amara": false,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Waswās in purity (wahm) against the established state (zann): it is to be ignored"
+  },
+  {
+   "far": "islamqa.110860.f002",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": true,
+   "note": "Presumed continuing menstruation (zann) vs complete dryness, one of the two sharʿī signs of purity (qat, amara): ghusl and fast valid"
+  },
+  {
+   "far": "islamqa.110860.f003",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Presumed menstruation (zann) vs bare dryness without the full sign, i.e. no certainty of purity (shakk): the first two fasts must be made up"
+  },
+  {
+   "far": "islamqa.110860.f004",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true,
+    "discharge_after_purity": true,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Established purity (zann) vs ṣufra/kudra actually seen after it (qat that it was seen, amara); text: not menstruation."
+  },
+  {
+   "far": "islamqa.114793.f001",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Presumed wuḍūʾ (zann) vs doubt of breaking wind (shakk): ignore the doubt"
+  },
+  {
+   "far": "islamqa.114793.f002",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": true,
+   "note": "Presumed wuḍūʾ (zann) vs certainty of wind (qat): wuḍūʾ is broken even without sound or smell"
+  },
+  {
+   "far": "islamqa.114793.f003",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": true,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Presumed wuḍūʾ (zann) vs gas sounds inside the belly, an external sign (amara) that gives no knowledge of an exit (shakk): wuḍūʾ intact"
+  },
+  {
+   "far": "islamqa.114793.f004",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "wahm",
+    "amara": true,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Ibn Bāz: presumed purity (zann) vs waswās about smells that may come from elsewhere (wahm): complete the prayer"
+  },
+  {
+   "far": "islamqa.128887.f001",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": true,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Presumed purity (zann) vs doubt of janāba (shakk), with a possible trace on the clothes that may be old (amara): no ghusl, ṭawāf valid"
+  },
+  {
+   "far": "islamqa.170478.f001",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Presumed purity and no discharge (zann) vs doubt of madhy or manī (shakk"
+  },
+  {
+   "far": "islamqa.170478.f002",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": true,
+   "note": "Presumed no discharge (zann) vs certainty that something came out (qat): it is madhy, so purity is lifted"
+  },
+  {
+   "far": "islamqa.170478.f003",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": true,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Presumed purity (zann) vs felt wetness (an indicator, amara) of doubtful origin (shakk) after sprinkling water: attribute it to the water"
+  },
+  {
+   "far": "islamqa.176193.f001",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true,
+    "discharge_after_purity": true,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Certain purity, ghusl, ṭawāf, then ṣufra/kudra seen (qat, amara); text: not menstruation, ṭawāf valid."
+  },
+  {
+   "far": "islamqa.176193.f002",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Presumed purity (zann) vs doubt of nullification during or after ṭawāf (shakk): ṭawāf and prayer valid"
+  },
+  {
+   "far": "islamqa.187157.f001",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Presumed absence of divorce intent (zann) vs doubt about forgotten intent behind kināya words (shakk): no divorce"
+  },
+  {
+   "far": "islamqa.187157.f002",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false,
+    "discharge_after_purity": false,
+    "forum": "none"
+   },
+   "ruling": false,
+   "note": "Presumed continuation of the marriage (zann) vs an unverified recollection that kināya words were used (shakk): they may resume"
+  },
+  {
+   "far": "islamqa.198294.f001",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true,
+    "discharge_after_purity": false,
+    "forum": "diyana"
+   },
+   "ruling": true,
+   "note": "Before God: presumed marriage and no relapse (zann) vs the wife's own certainty that he relapsed (qat, signs in his conduct): she must act on it"
+  },
+  {
+   "far": "islamqa.198294.f002",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true,
+    "discharge_after_purity": false,
+    "forum": "qada"
+   },
+   "ruling": false,
+   "note": "Wife's certainty of relapse (qat, signs in his conduct) vs presumed marriage (zann); in the apparent ruling his denial prevails."
+  },
+  {
+   "far": "islamqa.198294.f003",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "qat",
+    "amara": true,
+    "discharge_after_purity": false,
+    "forum": "diyana"
+   },
+   "ruling": true,
+   "note": "Ibn Qudāma, quoted: presumed marriage (zann) vs a triple divorce established by two upright witnesses (qat): she may not let him approach her"
+  },
+  {
+   "far": "islamqa.164604.f002",
+   "facts": {
+    "causation": "direct",
+    "fault": null,
+    "permitted": false,
+    "victim_fault": null,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": true,
+   "note": "Guest took it without permission or bumped into it: liable; the text does not make it depend on fault."
+  },
+  {
+   "far": "islamqa.223512.f001",
+   "facts": {
+    "causation": "indirect",
+    "fault": true,
+    "permitted": null,
+    "victim_fault": null,
+    "physician": false,
+    "death_from_injury": null,
+    "other_direct_actor": true
+   },
+   "ruling": false,
+   "note": "Family 'erred' (اخطأتم) in bringing a folk healer, but owe no diya because the healer was the direct actor."
+  },
+  {
+   "far": "islamqa.223512.f002",
+   "facts": {
+    "causation": "direct",
+    "fault": true,
+    "permitted": false,
+    "victim_fault": null,
+    "physician": true,
+    "death_from_injury": true
+   },
+   "ruling": true,
+   "note": "Healer liable if the death was caused by him through lack of skill, transgression or negligence (the conditional branch the text rules on)."
+  },
+  {
+   "far": "islamqa.242731.f001",
+   "facts": {
+    "causation": "direct",
+    "fault": true,
+    "permitted": true,
+    "victim_fault": null,
+    "physician": true,
+    "death_from_injury": null
+   },
+   "ruling": true,
+   "note": "Dentist's hand erred (drilled too far): liable even if skilled; skill only removes the sin."
+  },
+  {
+   "far": "islamqa.266167.f001",
+   "facts": {
+    "causation": "direct",
+    "fault": true,
+    "permitted": null,
+    "victim_fault": null,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": true,
+   "note": "Employee driver in an accident where the fault was his: liable for the other car."
+  },
+  {
+   "far": "islamqa.266167.f002",
+   "facts": {
+    "causation": "none",
+    "fault": null,
+    "permitted": null,
+    "victim_fault": null,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": false,
+   "note": "Employer who lent the car has no connection to the employee's fault: not liable."
+  },
+  {
+   "far": "islamqa.272160.f001",
+   "facts": {
+    "causation": "direct",
+    "fault": true,
+    "permitted": null,
+    "victim_fault": false,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": true,
+   "note": "Speeding driver 100% at fault hit a parked car: liable for damage plus loss in value."
+  },
+  {
+   "far": "islamqa.286486.f001",
+   "facts": {
+    "causation": "direct",
+    "fault": true,
+    "permitted": null,
+    "victim_fault": null,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": true,
+   "note": "Other driver at fault injured the questioner's body or car: owes compensation."
+  },
+  {
+   "far": "islamqa.305083.f001",
+   "facts": {
+    "causation": "indirect",
+    "fault": false,
+    "permitted": null,
+    "victim_fault": null,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": false,
+   "note": "Questioner drove lawfully and only caused the woman to step back: not liable (indirect cause, no transgression)."
+  },
+  {
+   "far": "islamqa.305083.f002",
+   "facts": {
+    "causation": "direct",
+    "fault": null,
+    "permitted": null,
+    "victim_fault": null,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": true,
+   "note": "Other driver struck her directly: liable as direct actor (even without transgression), unless he could not avoid her."
+  },
+  {
+   "far": "islamqa.305083.f003",
+   "facts": {
+    "causation": "indirect",
+    "fault": true,
+    "permitted": null,
+    "victim_fault": false,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": true,
+   "note": "If the questioner was speeding and the other driver did not transgress: questioner liable as a transgressing indirect cause."
+  },
+  {
+   "far": "islamqa.315435.f001",
+   "facts": {
+    "causation": "direct",
+    "fault": false,
+    "permitted": null,
+    "victim_fault": true,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": false,
+   "note": "Permitted speed, pedestrian crossed suddenly 1-2 m ahead where there is no crossing: no diya, no kaffara."
+  },
+  {
+   "far": "islamqa.315435.f002",
+   "facts": {
+    "causation": "direct",
+    "fault": true,
+    "permitted": null,
+    "victim_fault": null,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": true,
+   "note": "Driver who could have avoided the collision or was speeding: liable."
+  },
+  {
+   "far": "islamqa.315435.f003",
+   "facts": {
+    "causation": "direct",
+    "fault": true,
+    "permitted": null,
+    "victim_fault": true,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": true,
+   "note": "Driver and pedestrian both at fault: driver owes kaffara and diya in proportion to his fault."
+  },
+  {
+   "far": "islamqa.317604.f001",
+   "facts": {
+    "causation": "indirect",
+    "fault": false,
+    "permitted": null,
+    "victim_fault": true,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": false,
+   "note": "Questioner slowed down; the tailgater swerved without looking: questioner not liable."
+  },
+  {
+   "far": "islamqa.317604.f002",
+   "facts": {
+    "causation": "indirect",
+    "fault": true,
+    "permitted": null,
+    "victim_fault": false,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": true,
+   "note": "Stubborn tailgater is an indirect cause but transgressed and was negligent: liable, not the overturned driver."
+  },
+  {
+   "far": "islamqa.328808.f001",
+   "facts": {
+    "causation": "direct",
+    "fault": null,
+    "permitted": true,
+    "victim_fault": null,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": true,
+   "note": "Airline as common hired worker broke a suitcase: liable even without transgression or negligence."
+  },
+  {
+   "far": "islamqa.344230.f001",
+   "facts": {
+    "causation": "direct",
+    "fault": true,
+    "permitted": true,
+    "victim_fault": false,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": true,
+   "note": "Driver erred (crossed despite other car's right of way) while driving at a friend's request: liable; ignorance of liability no excuse."
+  },
+  {
+   "far": "islamqa.344230.f002",
+   "facts": {
+    "causation": "indirect",
+    "fault": null,
+    "permitted": null,
+    "victim_fault": null,
+    "physician": false,
+    "death_from_injury": null,
+    "other_direct_actor": true
+   },
+   "ruling": false,
+   "note": "Friend who asked him to drive and rode along (even if he misdirected him): not liable; liability on the direct actor."
+  },
+  {
+   "far": "islamqa.345284.f001",
+   "facts": {
+    "causation": "direct",
+    "fault": false,
+    "permitted": null,
+    "victim_fault": null,
+    "physician": false,
+    "death_from_injury": null,
+    "unavoidable": true
+   },
+   "ruling": false,
+   "note": "Driver hit an animal without negligence and could not avoid it: not liable."
+  },
+  {
+   "far": "islamqa.345284.f002",
+   "facts": {
+    "causation": "direct",
+    "fault": true,
+    "permitted": null,
+    "victim_fault": null,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": true,
+   "note": "Driver hit an animal through negligence: liable."
+  },
+  {
+   "far": "islamqa.348122.f001",
+   "facts": {
+    "causation": "indirect",
+    "fault": false,
+    "permitted": null,
+    "victim_fault": null,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": false,
+   "note": "Pram placed in a rarely used spot, grandmother tripped: not a transgression, not liable."
+  },
+  {
+   "far": "islamqa.348122.f002",
+   "facts": {
+    "causation": "indirect",
+    "fault": true,
+    "permitted": null,
+    "victim_fault": null,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": true,
+   "note": "If she transgressed (e.g. in the walkway): liable for the fracture."
+  },
+  {
+   "far": "islamqa.348122.f003",
+   "facts": {
+    "causation": "indirect",
+    "fault": true,
+    "permitted": null,
+    "victim_fault": null,
+    "physician": false,
+    "death_from_injury": null,
+    "later_death": true
+   },
+   "ruling": false,
+   "note": "Death a week later: not liable for the life unless doctors attribute it to the fracture; the text leaves the attribution open (liable if attributed)."
+  },
+  {
+   "far": "islamqa.363963.f001",
+   "facts": {
+    "causation": "direct",
+    "fault": false,
+    "permitted": null,
+    "victim_fault": true,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": false,
+   "note": "Reasonable speed, warned the pedestrian, he stepped back suddenly: not liable."
+  },
+  {
+   "far": "islamqa.363963.f002",
+   "facts": {
+    "causation": "direct",
+    "fault": true,
+    "permitted": null,
+    "victim_fault": true,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": true,
+   "note": "If she sped or failed to try to avoid him: liable for the fracture and the wound."
+  },
+  {
+   "far": "islamqa.363963.f003",
+   "facts": {
+    "causation": "direct",
+    "fault": true,
+    "permitted": null,
+    "victim_fault": true,
+    "physician": false,
+    "death_from_injury": false,
+    "later_death": true
+   },
+   "ruling": false,
+   "note": "Even if negligent, not liable for the death: the text attributes it to COVID hypoxia, not the fracture."
+  },
+  {
+   "far": "islamqa.4046.f001",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": true
+   },
+   "ruling": "finderOwns",
+   "note": "Valuable find outside the Haramayn, announced a year, owner unknown: his after the year."
+  },
+  {
+   "far": "islamqa.4046.f002",
+   "facts": {
+    "trivial": false,
+    "location": "makka_haram",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": null
+   },
+   "ruling": "hold",
+   "note": "Find in the Haramayn (Mecca and Medina alike here): never owned, announce forever; handing it to the Haramayn authorities is the stated alternative."
+  },
+  {
+   "far": "islamqa.4046.f003",
+   "facts": {
+    "trivial": true,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": null
+   },
+   "ruling": "keepNow",
+   "note": "Trivial find (rope, sandal strap, small money): no announcement, he may use it; giving it in charity for the owner is also allowed."
+  },
+  {
+   "far": "islamqa.4046.f004",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "self_preserving",
+    "buried_treasure": false,
+    "year_passed": null
+   },
+   "ruling": "leave",
+   "note": "Stray camel and animals that fend off small predators may not be picked up."
+  },
+  {
+   "far": "islamqa.4050.f001",
+   "facts": {
+    "trivial": false,
+    "location": "makka_haram",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": null
+   },
+   "ruling": "hold",
+   "note": "Wallet found in the Meccan Haram: IslamQA follows the view that it is never owned and is announced forever, or handed to the officials (Ibn ʿUthaymin); the other view owns it after a year (finderOwns)."
+  },
+  {
+   "far": "islamqa.4588.f001",
+   "facts": {
+    "trivial": false,
+    "location": "makka_haram",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": false
+   },
+   "ruling": "handToAuthority",
+   "note": "Watch from the Meccan Haram kept four years unannounced: return it to the Great Court of Mecca for the Haram lost-property committee."
+  },
+  {
+   "far": "islamqa.5049.f001",
+   "facts": {
+    "trivial": true,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": null
+   },
+   "ruling": "keepNow",
+   "note": "Things people do not pursue (whip, loaf, date, stick): owned by the finder without announcement."
+  },
+  {
+   "far": "islamqa.5049.f002",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "self_preserving",
+    "buried_treasure": false,
+    "year_passed": null
+   },
+   "ruling": "leave",
+   "note": "Camels, horses, birds, gazelles and the like: forbidden to pick up, not owned by announcing."
+  },
+  {
+   "far": "islamqa.5049.f003",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": null,
+    "self_keeping": true
+   },
+   "ruling": "leave",
+   "note": "Large self-keeping items (huge pots, timber, iron): forbidden to take like stray camels; not an animal, so the schema has no field for this."
+  },
+  {
+   "far": "islamqa.5049.f004",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "vulnerable",
+    "buried_treasure": false,
+    "year_passed": null
+   },
+   "ruling": "hold",
+   "note": "Edible stray animal (sheep, young camel, chicken): do the best for the owner: eat it owing its value, sell it and keep the price, or keep and feed it without owning it. The text does not make it his at once."
+  },
+  {
+   "far": "islamqa.5049.f005",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": null,
+    "perishable": true
+   },
+   "ruling": "hold",
+   "note": "Perishable find (melon, fruit): eat it owing its value or sell it and keep the price until the owner comes; perishability has no field here."
+  },
+  {
+   "far": "islamqa.5049.f006",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": false
+   },
+   "ruling": "hold",
+   "note": "Ordinary property (money, vessels): keep it in trust and announce it."
+  },
+  {
+   "far": "islamqa.5049.f007",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": true
+   },
+   "ruling": "finderOwns",
+   "note": "Gold/silver announced a year with no owner: he may spend it (hadith of Zayd b. Khalid), returning it if the owner ever comes."
+  },
+  {
+   "far": "islamqa.10284.f001",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "vulnerable",
+    "buried_treasure": false,
+    "year_passed": false
+   },
+   "ruling": "hold",
+   "note": "Stray sheep during the announcement: eat it at an assessed value, sell it and keep the price, or keep it through the announcement period."
+  },
+  {
+   "far": "islamqa.10284.f002",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "vulnerable",
+    "buried_treasure": false,
+    "year_passed": true
+   },
+   "ruling": "finderOwns",
+   "note": "Stray sheep whose owner does not come after the announcement period: it belongs to the finder."
+  },
+  {
+   "far": "islamqa.126387.f001",
+   "facts": {
+    "trivial": true,
+    "location": "makka_haram",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": null
+   },
+   "ruling": "charity",
+   "note": "Fifty riyals at the Jamarat: too small to announce; charity for the owner is fine, as is handing it to the lost-property officials or announcing it.",
+   "oracle_gap": "The text permits charity, handing it to the officials, or announcing it, and never says he may keep it, unlike 126502.f001 with the same facts; the facts carry no distinction between the two answers."
+  },
+  {
+   "far": "islamqa.126502.f001",
+   "facts": {
+    "trivial": true,
+    "location": "makka_haram",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": null
+   },
+   "ruling": "keepNow",
+   "note": "Ten to fifteen riyals in Mecca: trivial; he may use or eat it; announcing it or giving it in charity is also fine."
+  },
+  {
+   "far": "islamqa.128510.f001",
+   "facts": {
+    "trivial": true,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": null
+   },
+   "ruling": "keepNow",
+   "note": "Pen on a desk worth up to about fifty riyals: may be taken and used without announcement."
+  },
+  {
+   "far": "islamqa.128510.f002",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": false
+   },
+   "ruling": "hold",
+   "note": "Find of real value: must be announced a year before it is owned."
+  },
+  {
+   "far": "islamqa.131070.f001",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": true,
+    "year_passed": null
+   },
+   "ruling": "rikazFifth",
+   "note": "Buried treasure with pre-Islamic marks is rikaz: a fifth is due."
+  },
+  {
+   "far": "islamqa.131070.f002",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": true,
+    "year_passed": true,
+    "muslim_buried": true
+   },
+   "ruling": "finderOwns",
+   "note": "Treasure buried by Muslims is luqata: announce a full year, then the finder owns it (returning it if the owner appears)."
+  },
+  {
+   "far": "islamqa.131070.f003",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": true,
+    "year_passed": null
+   },
+   "ruling": "rikazFifth",
+   "note": "Treasure in bought or gifted land: IslamQA leans (Ibn Qudama, Ibn ʿUthaymin) to the finder keeping it after the fifth; the majority give it to the land's first owner or his heir."
+  },
+  {
+   "far": "islamqa.146191.f001",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": true,
+    "year_passed": null
+   },
+   "ruling": "rikazFifth",
+   "note": "Buried treasure with pre-Islamic marks is rikaz: a fifth is due."
+  },
+  {
+   "far": "islamqa.146191.f002",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": true,
+    "year_passed": true,
+    "muslim_buried": true
+   },
+   "ruling": "finderOwns",
+   "note": "Treasure buried by Muslims is luqata: announce a full year, then the finder owns it (returning it if the owner appears)."
+  },
+  {
+   "far": "islamqa.146191.f003",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": true,
+    "year_passed": null
+   },
+   "ruling": "rikazFifth",
+   "note": "Treasure in bought or gifted land: IslamQA leans (Ibn Qudama, Ibn ʿUthaymin) to the finder keeping it after the fifth; the majority give it to the land's first owner or his heir."
+  },
+  {
+   "far": "islamqa.191459.f001",
+   "facts": {
+    "trivial": false,
+    "location": "makka_haram",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": null
+   },
+   "ruling": "hold",
+   "note": "Meccan Haram find: IslamQA prefers that it is announced forever and never owned; Hanafis, Malikis, Hanbalis and one Shafiʿi report treat it like other finds (finderOwns)."
+  },
+  {
+   "far": "islamqa.191459.f002",
+   "facts": {
+    "trivial": false,
+    "location": "madina_haram",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": false
+   },
+   "ruling": "hold",
+   "note": "Money found in the Medina Haram, held three days: keep it and announce it a full year, or hand it to the responsible authorities; not charity yet."
+  },
+  {
+   "far": "islamqa.191459.f003",
+   "facts": {
+    "trivial": false,
+    "location": "madina_haram",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": true
+   },
+   "ruling": "finderOwns",
+   "note": "Medina Haram find after a year: like other lands, his after the year (Shafiʿi majority, Ibn ʿUthaymin); al-Bulqini and others: never owned (hold)."
+  },
+  {
+   "far": "islamqa.209303.f001",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": false
+   },
+   "ruling": "hold",
+   "note": "iPod announced two months: a trust to be announced a full year; no use meanwhile."
+  },
+  {
+   "far": "islamqa.209303.f002",
+   "facts": {
+    "trivial": false,
+    "location": "elsewhere",
+    "animal": "none",
+    "buried_treasure": false,
+    "year_passed": true
+   },
+   "ruling": "finderOwns",
+   "note": "Valuable find announced a year with no owner: his after the year."
+  },
+  {
+   "far": "islamqa.4652.f001",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": false,
+    "has_legal_value": true,
+    "lawful_authority_act": true
+   },
+   "ruling": false,
+   "note": "Trustee carrier; airport authorities seized the money under currency rules; no fault; not liable. Text does not assess the seizure's lawfulness; an authority acted, so lawful_authority_act=true."
+  },
+  {
+   "far": "islamqa.13717.f001",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": false,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": false,
+   "note": "Depositee, deposit perishes without transgression or negligence; not liable."
+  },
+  {
+   "far": "islamqa.13717.f002",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": true,
+    "negligent": false,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": true,
+   "note": "Depositee who transgresses against the deposit is liable if it perishes."
+  },
+  {
+   "far": "islamqa.13717.f003",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": true,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": true,
+   "note": "Depositee negligent in guarding the deposit is liable if it perishes."
+  },
+  {
+   "far": "islamqa.13717.f004",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": true,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": true,
+   "note": "Deposited animal dies after the depositee stops feeding it, an omission of a duty (tafrit); liable."
+  },
+  {
+   "far": "islamqa.13717.f005",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": false,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": false,
+   "note": "Depositee hands the deposit to his wife/servant/treasurer, as permitted; it perishes without transgression or negligence; not liable."
+  },
+  {
+   "far": "islamqa.22830.f001",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": false,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": false,
+   "note": "Entrusted carrier kept the item in a proper hirz, no transgression or negligence, then it was stolen; not liable."
+  },
+  {
+   "far": "islamqa.22830.f002",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": true,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": true,
+   "note": "Trustee neglected to keep it in its hirz, then it was stolen; liable."
+  },
+  {
+   "far": "islamqa.22830.f003",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": true,
+    "negligent": false,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": true,
+   "note": "Trustee transgressed (placed it in an unsafe place, disposed of it or used it), then it was stolen; liable."
+  },
+  {
+   "far": "islamqa.83827.f001",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": true,
+    "negligent": false,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": true,
+   "note": "Depositee disposed of the deposit without the owner's permission (transgression; text says he is 'in the ruling of the usurper'); part was lost in transfers; liable. hand=wrongdoer would also give true."
+  },
+  {
+   "far": "islamqa.140833.f001",
+   "facts": {
+    "hand": "wrongdoer",
+    "transgressed": true,
+    "negligent": false,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": true,
+   "note": "Employee diverted lawfully confiscated marble to a relative: usurpation (wrongdoer, transgressed); his act was not the lawful one; liable."
+  },
+  {
+   "far": "islamqa.140833.f002",
+   "facts": {
+    "has_legal_value": true,
+    "lawful_authority_act": true,
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": false
+   },
+   "ruling": false,
+   "note": "Hypothetical lawful confiscation and destruction as ta'zir bil-mal: 'no blame'. Hand is the authority's agent, closest to trustee."
+  },
+  {
+   "far": "islamqa.152192.f001",
+   "facts": {
+    "has_legal_value": false,
+    "lawful_authority_act": false,
+    "hand": "trustee",
+    "transgressed": true,
+    "negligent": false
+   },
+   "ruling": false,
+   "note": "Trustee of a deposited sorcery book destroys it against the owner's request for return (beyond permission, though the text says shariah requires it); no value, so not liable."
+  },
+  {
+   "far": "islamqa.164604.f001",
+   "facts": {
+    "causation": "direct",
+    "fault": false,
+    "permitted": true,
+    "victim_fault": null,
+    "physician": false,
+    "death_from_injury": null
+   },
+   "ruling": false,
+   "note": "Guest held the furniture with permission and it broke in his hand without error or carelessness: not liable (liable only if he erred or was careless)."
+  },
+  {
+   "far": "islamqa.165409.f001",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": false,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": false,
+   "note": "Bank as mudarib in an investment account; capital lost without fault; not bound to return it."
+  },
+  {
+   "far": "islamqa.165409.f002",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": true,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": true,
+   "note": "Bank as mudarib whose shortcoming (taqsir) caused the loss; liable for capital."
+  },
+  {
+   "far": "islamqa.252463.f001",
+   "facts": {
+    "has_legal_value": true,
+    "lawful_authority_act": false,
+    "hand": "guarantor_by_contract",
+    "transgressed": false,
+    "negligent": false
+   },
+   "ruling": true,
+   "note": "Bank holding current-account deposits = borrower of a loan, hand of guarantee by contract; bound to repay."
+  },
+  {
+   "far": "islamqa.252463.f002",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": false,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": false,
+   "note": "Investment account (mudaraba): guarantee removed, bank as trustee with no fault; ruling false (record reclassed segmentation_error)."
+  },
+  {
+   "far": "islamqa.253293.f001",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": false,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": false,
+   "note": "Seller keeps sold goods the buyer has not collected (not prevented); without transgression or negligence he is not liable."
+  },
+  {
+   "far": "islamqa.253293.f002",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": true,
+    "negligent": false,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": true,
+   "note": "Same seller-custodian, with transgression; liable."
+  },
+  {
+   "far": "islamqa.253293.f003",
+   "facts": {
+    "hand": "trustee",
+    "transgressed": false,
+    "negligent": true,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": true,
+   "note": "Same seller-custodian, with negligence; liable."
+  },
+  {
+   "far": "islamqa.253293.f004",
+   "facts": {
+    "hand": "wrongdoer",
+    "transgressed": false,
+    "negligent": false,
+    "has_legal_value": true,
+    "lawful_authority_act": false
+   },
+   "ruling": true,
+   "note": "Seller who prevents the buyer from taking delivery bears the loss 'because he is like the usurper'; hand=wrongdoer."
+  },
+  {
+   "far": "islamqa.104241.f001",
+   "facts": {
+    "owner_identifiable": true,
+    "illicit_exchange": false,
+    "despaired": null,
+    "public_property": false,
+    "recipient_is_own_family": false,
+    "owner_later_appears": false
+   },
+   "ruling": "owner",
+   "note": "Bribe paid only to obtain the payer's own right (not an illicit exchange); the known payer gets it back."
+  },
+  {
+   "far": "islamqa.104241.f002",
+   "facts": {
+    "owner_identifiable": true,
+    "illicit_exchange": true,
+    "despaired": null,
+    "public_property": false,
+    "recipient_is_own_family": false,
+    "owner_later_appears": false
+   },
+   "ruling": "publicInterest",
+   "note": "Bribe for what was not his right, which he obtained; IslamQA (Ibn Taymiyya, Ibn al-Qayyim) spends it on the poor and public interests, while another group (طائفة) says return it to the owner."
+  },
+  {
+   "far": "islamqa.104241.f003",
+   "facts": {
+    "owner_identifiable": false,
+    "illicit_exchange": false,
+    "despaired": null,
+    "public_property": false,
+    "recipient_is_own_family": false,
+    "owner_later_appears": false
+   },
+   "ruling": "publicInterest",
+   "note": "Return owed but the payer and his heirs cannot be found after searching (بعد البحث والتحري); the text never says the search was given up, so despaired is null; charity on his behalf."
+  },
+  {
+   "far": "islamqa.107436.f001",
+   "facts": {
+    "owner_identifiable": true,
+    "illicit_exchange": false,
+    "despaired": null,
+    "public_property": true,
+    "recipient_is_own_family": false,
+    "owner_later_appears": false
+   },
+   "ruling": "publicInterest",
+   "note": "Government rest-house services, which are public money; the owner is the state (identified), and the value goes to any public-interest channel or the poor.",
+   "oracle_gap": "Public money spent on public-interest channels without asking whether the paying body can take it back; with the state as an identifiable owner, the oracle returns it to the owner, as 260724.f001's text does."
+  },
+  {
+   "far": "islamqa.179911.f001",
+   "facts": {
+    "owner_identifiable": true,
+    "illicit_exchange": false,
+    "despaired": null,
+    "public_property": false,
+    "recipient_is_own_family": false,
+    "owner_later_appears": false
+   },
+   "ruling": "owner",
+   "note": "Earmarked burial donations no longer needed; returned to the known donors (who may then give it to the widow)."
+  },
+  {
+   "far": "islamqa.179911.f002",
+   "facts": {
+    "owner_identifiable": true,
+    "illicit_exchange": false,
+    "despaired": null,
+    "public_property": false,
+    "recipient_is_own_family": false,
+    "owner_later_appears": false
+   },
+   "ruling": "owner",
+   "note": "Quoted Permanent Committee: treatment money for a patient who died is returned to the known party that gave it."
+  },
+  {
+   "far": "islamqa.179911.f003",
+   "facts": {
+    "owner_identifiable": false,
+    "illicit_exchange": false,
+    "despaired": null,
+    "public_property": false,
+    "recipient_is_own_family": false,
+    "owner_later_appears": false
+   },
+   "ruling": "publicInterest",
+   "note": "Donors unknown or unreachable (تعذر), with no despair stated; spent on a similar charitable channel."
+  },
+  {
+   "far": "islamqa.196584.f001",
+   "facts": {
+    "owner_identifiable": false,
+    "illicit_exchange": false,
+    "despaired": true,
+    "public_property": false,
+    "recipient_is_own_family": false,
+    "owner_later_appears": false
+   },
+   "ruling": "publicInterest",
+   "note": "She tried every way and finding the owners is 'impossible' (من المستحيل إيجادهم); charity on their behalf."
+  },
+  {
+   "far": "islamqa.196584.f002",
+   "facts": {
+    "owner_identifiable": true,
+    "illicit_exchange": false,
+    "despaired": null,
+    "public_property": false,
+    "recipient_is_own_family": false,
+    "owner_later_appears": true
+   },
+   "ruling": "ownerChooses",
+   "note": "Quoted Permanent Committee: an owner who turns up after the charity may ratify it, or else is paid his right."
+  },
+  {
+   "far": "islamqa.196584.f003",
+   "facts": {
+    "owner_identifiable": false,
+    "illicit_exchange": false,
+    "despaired": true,
+    "public_property": false,
+    "recipient_is_own_family": true,
+    "owner_later_appears": false
+   },
+   "ruling": "familyAllowed",
+   "note": "She may give the charity to her own poor family, whose maintenance she does not owe (with Ibn ʿUthaymīn's no-favouritism proviso)."
+  },
+  {
+   "far": "islamqa.260724.f001",
+   "facts": {
+    "owner_identifiable": true,
+    "illicit_exchange": false,
+    "despaired": null,
+    "public_property": true,
+    "recipient_is_own_family": false,
+    "owner_later_appears": false
+   },
+   "ruling": "owner",
+   "note": "Salary from a state teaching post for days not worked, returned to the paying body where possible."
+  },
+  {
+   "far": "islamqa.260724.f002",
+   "facts": {
+    "owner_identifiable": false,
+    "illicit_exchange": false,
+    "despaired": null,
+    "public_property": true,
+    "recipient_is_own_family": false,
+    "owner_later_appears": false
+   },
+   "ruling": "publicInterest",
+   "note": "If return to the state employer is not possible: charity or state-funded public interests; no despair stated."
+  },
+  {
+   "far": "islamqa.287215.f001",
+   "facts": {
+    "owner_identifiable": true,
+    "illicit_exchange": false,
+    "despaired": null,
+    "public_property": false,
+    "recipient_is_own_family": false,
+    "owner_later_appears": false
+   },
+   "ruling": "owner",
+   "note": "The widow's inheritance share must be sought out and given to her, or to her heirs if she has died."
+  },
+  {
+   "far": "islamqa.287215.f002",
+   "facts": {
+    "owner_identifiable": false,
+    "illicit_exchange": false,
+    "despaired": null,
+    "public_property": false,
+    "recipient_is_own_family": false,
+    "owner_later_appears": false
+   },
+   "ruling": "keepForOwner",
+   "note": "If she cannot be reached, the heirs may hold her share for her or give it in charity on her behalf. The text permits both and I recorded the first; no despair is stated for her, though the quoted Ibn Taymiyya ties charity to despair.",
+   "oracle_gap": "The text permits a choice: hold her share for her or give it in charity on her behalf. A ruling records one option; the oracle gives the charity route (publicInterest)."
+  },
+  {
+   "far": "islamqa.287215.f003",
+   "facts": {
+    "owner_identifiable": true,
+    "illicit_exchange": false,
+    "despaired": null,
+    "public_property": false,
+    "recipient_is_own_family": false,
+    "owner_later_appears": true
+   },
+   "ruling": "ownerChooses",
+   "note": "If she appears after the charity she chooses between ratifying it or taking her share."
+  },
+  {
+   "far": "islamqa.304828.f001",
+   "facts": {
+    "owner_identifiable": true,
+    "illicit_exchange": false,
+    "despaired": null,
+    "public_property": false,
+    "recipient_is_own_family": false,
+    "owner_later_appears": false
+   },
+   "ruling": "owner",
+   "note": "Stolen goods go back to the owner or his heirs by default; theft is not an exchange."
+  },
+  {
+   "far": "islamqa.304828.f002",
+   "facts": {
+    "owner_identifiable": false,
+    "illicit_exchange": false,
+    "despaired": null,
+    "public_property": false,
+    "recipient_is_own_family": false,
+    "owner_later_appears": false
+   },
+   "ruling": "publicInterest",
+   "note": "She does not know her victims after trying to recall them; despair is not stated; she may give charity on their behalf."
+  }
+ ]
+}

@@ -52,7 +52,7 @@
   {
    "number": 4,
    "statement_ar": "الوجوب يتعلق بالاستطاعة؛ فلا واجب مع العجز، ولا محرم مع الضرورة",
-   "gloss_en": "Obligation depends on capacity: no obligation with inability, no prohibition with necessity.",
+   "gloss_en": "Obligation (wujūb) depends on capacity: no obligation with inability, no prohibition with necessity.",
    "kind": "default",
    "domain": "general",
    "lean": [
@@ -100,7 +100,7 @@
   {
    "number": 7,
    "statement_ar": "التكليف وهو البلوغ والعقل شرط لوجوب العبادات، والتمييز شرط لصحتها إلا الحج والعمرة",
-   "gloss_en": "Legal responsibility (maturity and reason) conditions the obligation of worship; discernment conditions its validity, except ḥajj and ʿumra.",
+   "gloss_en": "Legal responsibility (maturity and ʿaql) is a sharṭ of the wujūb of worship; discernment is a sharṭ of its validity, except ḥajj and ʿumra.",
    "kind": "rule",
    "domain": "ibadat",
    "lean": [
@@ -111,7 +111,7 @@
   {
    "number": 8,
    "statement_ar": "الأحكام الأصولية والفروعية لا تتم إلا بأمرين: وجود شروطها وأركانها، وانتفاء موانعها",
-   "gloss_en": "Rulings, in principles and branches, hold only when their conditions and pillars are present and their impediments absent.",
+   "gloss_en": "Rulings, in principles and branches, hold only when their shurūṭ (sharṭ) and pillars are present and their impediments absent.",
    "kind": "meta",
    "domain": "general",
    "lean": [
@@ -147,7 +147,7 @@
   {
    "number": 10,
    "statement_ar": "البينة على المدعي، واليمين على من أنكر",
-   "gloss_en": "Proof is on the claimant, the oath on the one who denies.",
+   "gloss_en": "Proof is on the claimant, the oath (the yamīn of a claim) on the one who denies.",
    "kind": "procedure",
    "domain": "muamalat",
    "lean": [
@@ -260,7 +260,7 @@
   {
    "number": 16,
    "statement_ar": "العدل واجب في كل شيء، والفضل مسنون",
-   "gloss_en": "Justice is obligatory in everything; generosity is recommended.",
+   "gloss_en": "Justice is wājib in everything; generosity is masnūn («والفضل مسنون»).",
    "kind": "taqsim",
    "domain": "general",
    "lean": [
@@ -287,7 +287,7 @@
   {
    "number": 18,
    "statement_ar": "تضمن المثليات بمثلها، والمتقومات بقيمتها",
-   "gloss_en": "Fungibles are compensated with their like, non-fungibles with their value.",
+   "gloss_en": "Fungibles are made good (ḍamān: «تضمن») with their like, non-fungibles with their value.",
    "kind": "taqsim",
    "domain": "muamalat",
    "lean": [
@@ -298,7 +298,7 @@
   {
    "number": 19,
    "statement_ar": "إذا تعذر المسمى رجع إلى القيمة",
-   "gloss_en": "When the stipulated price is unattainable, one reverts to the value.",
+   "gloss_en": "When the named price (al-musammā) is unattainable, one reverts to the value.",
    "kind": "default",
    "domain": "muamalat",
    "lean": [
@@ -359,7 +359,7 @@
   {
    "number": 23,
    "statement_ar": "والمسلمون على شروطهم إلا شرطاً أحل حراماً أو حرم حلالاً",
-   "gloss_en": "Muslims are bound by their stipulations, except a stipulation that permits the forbidden or forbids the permitted (printed under one heading with Q22).",
+   "gloss_en": "Muslims are bound by their stipulations (al-shurūṭ fīhā), except a stipulation that permits the forbidden or forbids the permitted (printed under one heading with Q22).",
    "kind": "rule",
    "domain": "muamalat",
    "lean": [
@@ -443,7 +443,9 @@
    "lean": [
     "Usul.Sadi.useSubstitute",
     "Usul.Sadi.q28_substitute_only_when_needed",
-    "Usul.Schema.substitute_is_priority"
+    "Usul.Schema.substitute_is_priority",
+    "Usul.Sadi.permits",
+    "Usul.Sadi.q28_stands_in_everything"
    ],
    "schemata": [
     "S2-priority"
@@ -452,7 +454,7 @@
   {
    "number": 29,
    "statement_ar": "يجب تقييد اللفظ بملحقاته من وصف أو شرط أو استثناء أو غيرها",
-   "gloss_en": "An utterance must be qualified by its attachments: description, condition, exception and the like.",
+   "gloss_en": "An utterance must be qualified by its attachments: description, sharṭ (the linguistic one), exception and the like.",
    "kind": "interpretation",
    "domain": "lafz",
    "lean": [
@@ -481,7 +483,7 @@
   {
    "number": 31,
    "statement_ar": "الأحكام تتبعض بحسب تباين أسبابها، فيعمل كل سبب في مقتضاه",
-   "gloss_en": "Rulings divide according to their distinct causes; each cause operates in its own effect.",
+   "gloss_en": "Rulings divide according to their distinct asbāb; each sabab operates in its own effect.",
    "kind": "meta",
    "domain": "general",
    "lean": [
@@ -495,7 +497,7 @@
   {
    "number": 32,
    "statement_ar": "من أدى عن غيره واجباً رجع عليه",
-   "gloss_en": "Whoever pays another's obligation has recourse against him (reading from the index stub; body heading lost to OCR).",
+   "gloss_en": "Whoever pays another's wājib («من أدى عن غيره واجباً») has recourse against him (reading from the index stub; body heading lost to OCR).",
    "kind": "rule",
    "domain": "muamalat",
    "lean": [
@@ -554,7 +556,7 @@
   {
    "number": 35,
    "statement_ar": "من سقطت عنه العقوبة لموجب ضوعف عليه الضمان",
-   "gloss_en": "Whoever escapes punishment for a reason bears doubled compensation.",
+   "gloss_en": "Whoever escapes punishment for a mūjib («لموجب») bears doubled ḍamān («ضوعف عليه الضمان»).",
    "kind": "rule",
    "domain": "muamalat",
    "lean": [
@@ -583,7 +585,7 @@
   {
    "number": 37,
    "statement_ar": "إذا اختلف المتعاملان في صفة من صفات المعاملة رجح أقواهما دليلاً",
-   "gloss_en": "When contracting parties disagree on a term, the one with the stronger evidence prevails.",
+   "gloss_en": "When contracting parties disagree on a term, the one with the stronger evidence prevails (tarjīḥ: «رجح أقواهما دليلاً»).",
    "kind": "procedure",
    "domain": "muamalat",
    "lean": [
@@ -598,7 +600,7 @@
   {
    "number": 38,
    "statement_ar": "إذا عاد التحريم إلى نفس العبادة أو شرطها فسدت، وإذا عاد إلى أمر خارج لم تفسد",
-   "gloss_en": "If the prohibition attaches to the act of worship itself or its condition, it is void; if to something external, it is not.",
+   "gloss_en": "If the prohibition attaches to the act of worship itself or its sharṭ, it is fāsid («فسدت»); if to something external, it is not.",
    "kind": "farq",
    "domain": "ibadat",
    "lean": [
@@ -609,7 +611,7 @@
   {
    "number": 39,
    "statement_ar": "لا يجوز تقديم العبادات أو الكفارات على سبب الوجوب، ويجوز تقديمها بعد وجود السبب وقبل شرط الوجوب",
-   "gloss_en": "Acts of worship and expiations may not precede the cause of obligation, but may precede its condition once the cause exists.",
+   "gloss_en": "Acts of worship and kaffārāt may not precede the sabab of wujūb, but may precede its sharṭ once the sabab exists.",
    "kind": "rule",
    "domain": "ibadat",
    "lean": [
@@ -701,7 +703,7 @@
   {
    "number": 45,
    "statement_ar": "من لا يعتبر رضاه في عقد أو فسخ لا يعتبر علمه",
-   "gloss_en": "Whose consent is not required for a contract or its rescission, his knowledge is not required either.",
+   "gloss_en": "Whose consent is not required for a contract or its faskh («في عقد أو فسخ»), his knowledge is not required either.",
    "kind": "rule",
    "domain": "muamalat",
    "lean": [
@@ -715,7 +717,7 @@
   {
    "number": 46,
    "statement_ar": "من له الحق على الغير وكان سبب الحق ظاهراً فله الأخذ من ماله بقدر حقه إذا امتنع، وإن كان خفياً فليس له ذلك",
-   "gloss_en": "A creditor with an evident cause may take his due from a refusing debtor's property; with a hidden cause he may not.",
+   "gloss_en": "A creditor with an evident sabab of his right («سبب الحق ظاهراً») may take his due from a refusing debtor's property; with a hidden cause he may not.",
    "kind": "farq",
    "domain": "muamalat",
    "lean": [
@@ -727,7 +729,7 @@
   {
    "number": 47,
    "statement_ar": "الواجب بالنذر يلحق بالواجب بالشرع",
-   "gloss_en": "What is obligatory by vow is assimilated to what is obligatory by the law.",
+   "gloss_en": "What is wājib by vow (nadhr) is assimilated to what is obligatory by the law.",
    "kind": "rule",
    "domain": "ibadat",
    "lean": [
@@ -785,7 +787,7 @@
   {
    "number": 51,
    "statement_ar": "الأسباب والدواعي للعقود والتبرعات معتبرة",
-   "gloss_en": "The causes and motives of contracts and gifts are taken into account.",
+   "gloss_en": "The motives (asbāb and dawāʿī: «الأسباب والدواعي») of contracts and gifts are taken into account.",
    "kind": "interpretation",
    "domain": "muamalat",
    "lean": [
@@ -803,7 +805,7 @@
   {
    "number": 52,
    "statement_ar": "إذا قويت القرائن قدمت على الأصل",
-   "gloss_en": "When indications are strong, they take precedence over the presumption.",
+   "gloss_en": "When qarāʾin are strong («إذا قويت القرائن»), they take precedence over the presumption.",
    "kind": "default",
    "domain": "general",
    "lean": [
@@ -821,7 +823,7 @@
   {
    "number": 53,
    "statement_ar": "إذا تبين فساد العقد بطل ما بني عليه، وإن فسخ فسخاً اختيارياً لم تبطل العقود الطارئة قبل الفسخ",
-   "gloss_en": "If a contract proves void, what was built on it is void; if it is rescinded by choice, contracts concluded before the rescission stand.",
+   "gloss_en": "If a contract proves fāsid, what was built on it is bāṭil («إذا تبين فساد العقد بطل ما بني عليه»); if it is undone by a faskh by choice («وإن فسخ فسخاً اختيارياً»), contracts concluded before the faskh stand.",
    "kind": "farq",
    "domain": "muamalat",
    "lean": [
@@ -875,7 +877,10 @@
    "domain": "muamalat",
    "lean": [
     "Usul.Muamalat.inherits",
-    "Usul.Muamalat.q56_exceptions_only"
+    "Usul.Muamalat.Q56Reading",
+    "Usul.Muamalat.q56_heir_in_everything",
+    "Usul.Muamalat.q56_mashhur_exceptions",
+    "Usul.Muamalat.q56_readings_differ_iff"
    ]
   },
   {
@@ -961,7 +966,7 @@
   {
    "number": 59,
    "statement_ar": "النكرة في سياق النفي أو النهي أو الشرط تفيد العموم",
-   "gloss_en": "An indefinite noun in the context of negation, prohibition or condition is general.",
+   "gloss_en": "An indefinite noun in the context of negation, prohibition or a conditional clause (al-sharṭ) is general.",
    "kind": "interpretation",
    "domain": "lafz",
    "lean": [

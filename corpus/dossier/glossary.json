@@ -44,8 +44,12 @@
     },
     {
      "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q002",
-     "note": "Condition of taklīf is ʿaql and understanding the address; distinguishes khiṭāb al-waḍʿ from khiṭāb al-taklīf."
+     "note": "The sharṭ of taklīf is ʿaql and understanding the address; distinguishes khiṭāb al-waḍʿ from khiṭāb al-taklīf."
     }
+   ],
+   "sense": "of the Lawgiver (sharʿī)",
+   "distinct_from": [
+    "hukm_hakim"
    ]
   },
   {
@@ -143,7 +147,7 @@
    "ar": "الواجب",
    "tr": "al-wājib",
    "gloss": "obligatory",
-   "definition": "What the Lawgiver commanded by way of binding (ʿalā wajh al-ilzām), e.g. the five prayers. Ibn al-Laḥḥām reports two narrations from Aḥmad on farḍ and wājib: in the soundest they are synonyms; in the other farḍ is stronger (e.g. established by a decisive proof).",
+   "definition": "What the Lawgiver commanded by way of binding (ʿalā wajh al-ilzām), e.g. the five prayers. Ibn al-Laḥḥām reports two narrations from Aḥmad on farḍ and wājib: in the sounder (aṣaḥḥ, «في أصح الروايتين») they are synonyms; in the other farḍ is more emphatic (ākad) (e.g. established by a decisive proof).",
    "conditions": [
     "a command (amr)",
     "binding (ilzām)"
@@ -170,13 +174,25 @@
     },
     {
      "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q010",
-     "note": "Farḍ and wājib synonymous in the soundest narration; the other narration makes farḍ stronger."
+     "note": "Farḍ and wājib synonymous in the soundest narration; the other narration makes farḍ more emphatic («الفرض آكد»)."
     },
     {
      "ref": "src:archive-pdf1995-tess/v01:p038",
      "excerpt_ar": "الوجوب يتعلق بالاستطاعة؛ فلا واجب مع العجزء ولا محرم مع الضرورة",
      "note": "Al-Saʿdī Q4: no obligation with inability (formalised as Sadi.operative)."
     }
+   ],
+   "forms": [
+    "وجب",
+    "واجب",
+    "يجب",
+    "وجوب",
+    "wujūb",
+    "ilzām",
+    "إلزام",
+    "yajib",
+    "wājibāt",
+    "واجبات"
    ]
   },
   {
@@ -184,7 +200,7 @@
    "ar": "المندوب",
    "tr": "al-mandūb",
    "gloss": "recommended",
-   "definition": "What the Lawgiver commanded not by way of binding, e.g. the regular sunna prayers.",
+   "definition": "What the Lawgiver commanded not by way of binding (ilzām), e.g. the regular sunna prayers.",
    "conditions": [
     "a command",
     "not binding"
@@ -203,7 +219,29 @@
     {
      "ref": "ibn_uthaymin.usul.shamela_9942.h004",
      "note": "Definition."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p011",
+     "excerpt_ar": "واصطلاحاً: ما أمر به الشارع لا على وجه الإلزام؛ كالرواتب",
+     "note": "Ibn ʿUthaymīn's definition, verbatim (PR-13)."
     }
+   ],
+   "forms": [
+    "مستحب",
+    "يستحب",
+    "mustaḥabb",
+    "sunna",
+    "سنة",
+    "ندب",
+    "nafl",
+    "نفل",
+    "taṭawwuʿ",
+    "تطوع",
+    "masnūn",
+    "مسنون",
+    "istiḥbāb",
+    "يسن",
+    "استحباب"
    ]
   },
   {
@@ -232,6 +270,11 @@
     {
      "ref": "ibn_uthaymin.usul.shamela_9942.h007",
      "note": "Definition."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p012",
+     "excerpt_ar": "واصطلاحاً: ما لا يتعلق به أمر، ولا نهي لذاته؛ كالأكل في رمضان ليلاً",
+     "note": "Ibn ʿUthaymīn's definition, verbatim (PR-13)."
     }
    ]
   },
@@ -240,7 +283,7 @@
    "ar": "المكروه",
    "tr": "al-makrūh",
    "gloss": "disliked",
-   "definition": "What the Lawgiver prohibited not by way of binding abstention, e.g. taking and giving with the left hand.",
+   "definition": "What the Lawgiver prohibited not by way of binding (ilzām) abstention, e.g. taking and giving with the left hand.",
    "conditions": [
     "a prohibition",
     "not binding"
@@ -257,6 +300,11 @@
     {
      "ref": "ibn_uthaymin.usul.shamela_9942.h006",
      "note": "Definition."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p012",
+     "excerpt_ar": "واصطلاحاً: ما نهى عنه الشارع لا على وجه الإلزام بالترك؛ كالأخذ بالشمال والإعطاء بها",
+     "note": "Ibn ʿUthaymīn's definition, verbatim (PR-13)."
     }
    ]
   },
@@ -265,7 +313,7 @@
    "ar": "المحرم",
    "tr": "al-muḥarram / al-ḥarām",
    "gloss": "forbidden",
-   "definition": "What the Lawgiver prohibited by way of binding abstention, e.g. disobedience to parents. Al-Saʿdī Q4: there is no prohibition with necessity (ḍarūra).",
+   "definition": "What the Lawgiver prohibited by way of binding (ilzām) abstention, e.g. disobedience to parents. Al-Saʿdī Q4: there is no prohibition with necessity (ḍarūra).",
    "conditions": [
     "a prohibition (nahy)",
     "binding abstention"
@@ -298,8 +346,8 @@
    "key": "sahih",
    "ar": "الصحيح",
    "tr": "al-ṣaḥīḥ",
-   "gloss": "valid",
-   "definition": "Ibn ʿUthaymīn: what the effects of performing it follow from, whether an act of worship or a contract; it requires its conditions complete and its impediments absent. Ibn Qudāma defines ṣiḥḥa as the Lawgiver's taking the thing into account with respect to its ruling. Ibn Rajab and al-Saʿdī: a prohibition directed at the act of worship itself or its condition voids it, one directed at something external does not (Ibn Rajab reports two narrations where the prohibition of a condition is not specific to it).",
+   "gloss": "al-ṣaḥīḥ (of an act or contract): valid, its effects follow; not the ḥadīth grade, nor a sound farq",
+   "definition": "Ibn ʿUthaymīn: what the effects of performing it follow from, whether an act of worship or a contract; it requires its conditions (sharṭ) complete and its impediments absent. Ibn Qudāma defines ṣiḥḥa as the Lawgiver's taking the thing into account with respect to its ruling. Ibn Rajab and al-Saʿdī: a prohibition directed at the act of worship itself or its condition voids it, one directed at something external does not (Ibn Rajab reports two narrations where the prohibition of a condition is not specific to it).",
    "conditions": [
     "conditions present",
     "impediments absent"
@@ -336,16 +384,29 @@
      "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009",
      "note": "Prohibition returning to the essence or a specific condition of worship voids it; otherwise two narrations or two wajhs."
     }
+   ],
+   "distinct_from": [
+    "fasid",
+    "batil",
+    "sahih_hadith",
+    "sahih_qawl",
+    "qiyas_sahih"
+   ],
+   "sense": "of an act or contract",
+   "forms": [
+    "ṣiḥḥa",
+    "صحة",
+    "يصح"
    ]
   },
   {
    "key": "fasid",
    "ar": "الفاسد",
    "tr": "al-fāsid",
-   "gloss": "invalid",
+   "gloss": "al-fāsid: not ṣaḥīḥ; in the madhhab one with al-bāṭil, except in ḥajj and nikāḥ (F98)",
    "definition": "Ibn ʿUthaymīn: what the effects of performing it do not follow from, whether worship or contract. Ibn al-Laḥḥām: for the Ḥanbalīs and Shāfiʿīs fāsid and bāṭil are synonyms, whereas Abū Ḥanīfa distinguishes the bāṭil (not legislated at all) from the fāsid (legislated in origin but forbidden for a prohibited attribute); Ibn ʿUthaymīn notes the Ḥanbalīs still distinguish them in ḥajj and marriage. Ibn Rajab: a contract whose sound form entails liability entails it when fāsid too.",
    "conditions": [
-    "a missing condition or present impediment (Ibn ʿUthaymīn)"
+    "a missing sharṭ or present impediment (Ibn ʿUthaymīn)"
    ],
    "related": [
     "sahih",
@@ -376,6 +437,19 @@
      "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047",
      "note": "Liability under a fāsid contract follows its ṣaḥīḥ counterpart."
     }
+   ],
+   "distinct_from": [
+    "batil",
+    "ayb"
+   ],
+   "furuq": [
+    "F98"
+   ],
+   "forms": [
+    "فسد",
+    "فساد",
+    "fasād",
+    "ifsād"
    ]
   },
   {
@@ -383,7 +457,7 @@
    "ar": "السبب",
    "tr": "al-sabab",
    "gloss": "cause",
-   "definition": "Al-Kawkab (after al-Qarāfī, also quoted by al-Ṭūfī): what by its existence entails the existence (of the ruling) and by its absence its absence, in itself; 'in itself' excludes cases where a condition is missing or an impediment present (e.g. the niṣāb before the year is complete). Al-Ṭūfī notes that a sharʿī cause, unlike a rational one, need not always produce its effect. Al-Saʿdī Q39 and Ibn Rajab q4: worship and expiations may not precede the cause of obligation but may precede its condition.",
+   "definition": "Al-Kawkab (after al-Qarāfī, also quoted by al-Ṭūfī): what by its existence entails the existence (of the ruling) and by its absence its absence, in itself; 'in itself' excludes cases where a sharṭ is missing or an impediment present (e.g. the niṣāb before the year is complete). Al-Ṭūfī notes that a sharʿī cause, unlike a rational one, need not always produce its effect. Al-Saʿdī Q39 and Ibn Rajab q4: worship and expiations may not precede the cause of wujūb but may precede its condition.",
    "conditions": [
     "existence entails the ruling, absence its absence, li-dhātihi"
    ],
@@ -415,14 +489,24 @@
      "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004",
      "note": "Ibn Rajab: same rule for ʿibādāt."
     }
+   ],
+   "forms": [
+    "أسباب",
+    "asbāb",
+    "tasabbub",
+    "تسبب",
+    "mūjib",
+    "موجب",
+    "muqtaḍī",
+    "مقتض"
    ]
   },
   {
    "key": "shart",
    "ar": "الشرط",
    "tr": "al-sharṭ",
-   "gloss": "condition",
-   "definition": "Ibn Qudāma: what entails, by its absence, the absence of the ruling (iḥṣān for stoning, the year for zakāt); the conditioned does not exist without it, but need not exist when it exists. Al-Kawkab: what by its absence entails absence and by its existence neither existence nor absence, in itself. Conditions are rational, linguistic or sharʿī; al-Kawkab (after al-Qarāfī) says the linguistic 'condition' (if you enter the house you are divorced) is really a sabab.",
+   "gloss": "al-sharṭ: a condition of a thing or a ruling (waḍʿī); not a stipulation in a contract (al-shurūṭ fīhā), nor a taʿlīq",
+   "definition": "Ibn Qudāma: what entails, by its absence, the absence of the ruling (iḥṣān for stoning, the year for zakāt); the conditioned does not exist without it, but need not exist when it exists. Al-Kawkab: what by its absence entails absence and by its existence neither existence nor absence, in itself. The sharṭ is rational, linguistic or sharʿī; al-Kawkab (after al-Qarāfī) says the linguistic 'condition' (if you enter the house you are divorced) is really a sabab.",
    "conditions": [
     "absence entails absence of the ruling",
     "existence does not entail the ruling"
@@ -456,6 +540,10 @@
      "excerpt_ar": "لابد لذلك من أحد أمرين : إما لفقد لازم من لوازمهاء أو لوجود مانع خاص يبطلها",
      "note": "Al-Saʿdī Q8: a failed act lacks a required element or has a voiding impediment."
     }
+   ],
+   "distinct_from": [
+    "shart_fiha",
+    "taliq"
    ]
   },
   {
@@ -493,6 +581,9 @@
      "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057",
      "note": "Ibn Rajab: when a ruling and its impediment coincide, the well-known madhhab is that the ruling does not arise (Ibn Ḥāmid disagrees)."
     }
+   ],
+   "distinct_from": [
+    "maniyy"
    ]
   },
   {
@@ -539,7 +630,7 @@
    "ar": "العزيمة",
    "tr": "al-ʿazīma",
    "gloss": "strict rule",
-   "definition": "Linguistically firm intent. Ibn Qudāma: the ruling established without contravening a sharʿī proof (or: what God made binding on His servants). Ibn al-Laḥḥām, quoting al-Ṭūfī: the ruling established by a sharʿī proof free of an opposing factor, which al-Ṭūfī says covers the obligatory, prohibited and disliked. Not formalised in the Lean modules.",
+   "definition": "Linguistically firm intent. Ibn Qudāma: the ruling established without contravening a sharʿī proof (or: what God made binding, ilzām, on His servants). Ibn al-Laḥḥām, quoting al-Ṭūfī: the ruling established by a sharʿī proof free of an opposing factor, which al-Ṭūfī says covers the wājib, ḥarām and makrūh. Not formalised in the Lean modules.",
    "conditions": [],
    "related": [
     "rukhsa"
@@ -628,10 +719,10 @@
    "ar": "القياس",
    "tr": "al-qiyās",
    "gloss": "analogy",
-   "definition": "Ibn ʿUthaymīn: equating a farʿ with an aṣl in a ruling for an ʿilla uniting them. Ibn Qudāma and al-Ṭūfī: carrying (ḥaml) a farʿ onto an aṣl in a ruling by a common factor; al-Kawkab: returning (radd) a farʿ to an aṣl by a uniting ʿilla. Its pillars are aṣl, farʿ, ʿilla and ḥukm. Ibn Taymiyya (via Ibn al-Qayyim) distinguishes sound qiyās (joining like cases, separating unlike ones), which never contradicts a text, from unsound qiyās.",
+   "definition": "Ibn ʿUthaymīn: equating a farʿ with an aṣl in a ruling for an ʿilla uniting them. Ibn Qudāma and al-Ṭūfī: carrying (ḥaml) a farʿ onto an aṣl in a ruling by a common factor; al-Kawkab: returning (radd) a farʿ to an aṣl by a uniting ʿilla. Its pillars are aṣl, farʿ, ʿilla and ḥukm. Ibn Taymiyya (via Ibn al-Qayyim) distinguishes ṣaḥīḥ (sound) qiyās («والصحيح هو الذي وردت به الشريعة»; joining like cases, separating unlike ones), which never contradicts a text, from unsound qiyās.",
    "conditions": [
     "four arkān: aṣl, farʿ, ʿilla, ḥukm",
-    "not against a stronger proof (Ibn ʿUthaymīn cond. 1)",
+    "not against a stronger proof («دليلاً أقوى منه», Ibn ʿUthaymīn cond. 1)",
     "aṣl ruling by text or ijmāʿ",
     "ʿilla present in the farʿ"
    ],
@@ -684,7 +775,7 @@
    "ar": "الأصل (ركن القياس)",
    "tr": "al-aṣl (rukn al-qiyās)",
    "gloss": "base case",
-   "definition": "The case compared to. Al-Kawkab: for the jurists it is the locus of the ruling compared to; others say it is the proof of the ruling or the ruling itself, a verbal dispute; al-Ṭūfī likewise reports text (the ribā ḥadīth) or its locus (the six commodities). Conditions: its ruling is established by text or agreement of the disputants (Ibn Qudāma) or by text or ijmāʿ, not by qiyās (Ibn ʿUthaymīn), and is rationally intelligible.",
+   "definition": "The case compared to. Al-Kawkab: for the jurists it is the locus of the ruling compared to; others say it is the proof of the ruling or the ruling itself, a verbal dispute; al-Ṭūfī likewise reports text (the ribā ḥadīth) or its locus (the six commodities). Its shurūṭ (sharṭ): its ruling is established by text or agreement of the disputants (Ibn Qudāma) or by text or ijmāʿ, not by qiyās (Ibn ʿUthaymīn), and is rationally intelligible.",
    "conditions": [
     "ruling established by naṣṣ or agreement/ijmāʿ",
     "ruling maʿqūl al-maʿnā",
@@ -728,7 +819,7 @@
    "ar": "الفرع",
    "tr": "al-farʿ",
    "gloss": "new case",
-   "definition": "The case to which the aṣl's ruling is extended. Its condition is that the ʿilla of the aṣl exist in it as it does in the aṣl (Ibn ʿUthaymīn); al-Ṭūfī accepts presumptive presence. Al-Kawkab: there must be no text on the farʿ's ruling.",
+   "definition": "The case to which the aṣl's ruling is extended. Its sharṭ is that the ʿilla of the aṣl exist in it as it does in the aṣl (Ibn ʿUthaymīn); al-Ṭūfī accepts presumptive presence. Al-Kawkab: there must be no text on the farʿ's ruling.",
    "conditions": [
     "the aṣl's ʿilla present in it",
     "no text already rules it"
@@ -812,6 +903,21 @@
      "excerpt_ar": "وعلة الحكم هي الحكمة في الأمر به، أو النهي عنه؛ أو إباحته",
      "note": "Al-Saʿdī Q58: ʿilla identified with the ḥikma."
     }
+   ],
+   "sense": "of a ruling (qiyās)",
+   "distinct_from": [
+    "illa_hadith"
+   ],
+   "forms": [
+    "manāṭ",
+    "مناط",
+    "ʿilliyya",
+    "taʿlīl",
+    "تعليل",
+    "muʿallal",
+    "معلل",
+    "ʿilal",
+    "علل"
    ]
   },
   {
@@ -819,7 +925,7 @@
    "ar": "الحكمة",
    "tr": "al-ḥikma",
    "gloss": "wisdom, purpose",
-   "definition": "The purpose a ruling serves. Al-Kawkab: the ʿilla must contain a ḥikma that calls to compliance, and an impediment of the cause is one that disturbs that ḥikma. Ibn Qudāma and al-Ṭūfī: showing the ḥikma without the ruling (kasr) is not binding, since ḥikmas cannot be measured by opinion. Al-Saʿdī identifies the ʿilla with the ḥikma, where Ibn Qudāma treats the ʿilla as a sign.",
+   "definition": "The purpose a ruling serves. Al-Kawkab: the ʿilla must contain a ḥikma that calls to compliance, and an impediment of the cause is one that disturbs that ḥikma. Ibn Qudāma and al-Ṭūfī: showing the ḥikma without the ruling (kasr) is not binding («غير لازم»), since ḥikmas cannot be measured by opinion. Al-Saʿdī identifies the ʿilla with the ḥikma, where Ibn Qudāma treats the ʿilla as a sign.",
    "conditions": [],
    "related": [
     "illa",
@@ -930,7 +1036,7 @@
    "ar": "الدوران",
    "tr": "al-dawarān",
    "gloss": "co-variation",
-   "definition": "The ruling exists with the description and ceases with its absence (prohibition with the intoxicating strength of wine). It yields presumption (ẓann) of causality according to most Ḥanbalīs (al-Kawkab, al-Ṭūfī); Ibn Qudāma reports that some require it to be combined with something else. Al-Āmidī and Ibn al-Ḥājib call it ṭard wa-ʿaks.",
+   "definition": "The ruling exists with the description and ceases with its absence (prohibition with the intoxicating strength of wine). It yields presumption (ẓann) of causality (ʿilliyya) according to most Ḥanbalīs (al-Kawkab, al-Ṭūfī); Ibn Qudāma reports that some require it to be combined with something else. Al-Āmidī and Ibn al-Ḥājib call it ṭard wa-ʿaks.",
    "conditions": [
     "ṭard: ruling with the description",
     "ʿaks: no ruling without it"
@@ -1033,7 +1139,7 @@
     {
      "ref": "src:openiti-rawda-shamela12010/v02:p222",
      "excerpt_ar": "الأمر الثاني: أن يكون سبره حاصرا لجميع ما يعلل به",
-     "note": "Exhaustiveness condition."
+     "note": "Exhaustiveness sharṭ."
     },
     {
      "ref": "src:openiti-rawda-shamela12010/v02:p224",
@@ -1118,7 +1224,7 @@
    "ar": "الشبه",
    "tr": "al-shabah",
    "gloss": "resemblance",
-   "definition": "Al-Qāḍī: the farʿ oscillates between a permitting and a prohibiting aṣl and is joined to the one it resembles more (the slave between the free man and the beast). Sources differ on its authority: two reports from Aḥmad (al-Ṭūfī: the more apparent is that it is valid); al-Kawkab: a proof only where qiyās al-ʿilla is impossible; Ibn ʿUthaymīn calls it weak; Ibn al-Qayyim says God reports it only from the people of falsehood.",
+   "definition": "Al-Qāḍī: the farʿ oscillates between a permitting and a prohibiting aṣl and is joined to the one it resembles more (the slave between the free man and the beast). Sources differ on its authority: two reports from Aḥmad (al-Ṭūfī: the more apparent is that it is valid); al-Kawkab: a proof only where qiyās al-ʿilla is impossible; Ibn ʿUthaymīn calls it ḍaʿīf («وهذا القسم من القياس ضعيف»); Ibn al-Qayyim says God reports it only from the people of falsehood.",
    "conditions": [],
    "related": [
     "masalik_al_illa",
@@ -1165,7 +1271,7 @@
    "ar": "تنقيح المناط",
    "tr": "tanqīḥ al-manāṭ",
    "gloss": "refining the anchor",
-   "definition": "The Lawgiver attaches a ruling to its cause together with descriptions that play no part, which must be set aside so that the ruling extends (the Bedouin who had intercourse in Ramaḍān). Al-Ṭūfī says most deniers of qiyās accept it.",
+   "definition": "The Lawgiver attaches a ruling to its cause (manāṭ) together with descriptions that play no part, which must be set aside so that the ruling extends (the Bedouin who had intercourse in Ramaḍān). Al-Ṭūfī says most deniers of qiyās accept it.",
    "conditions": [],
    "related": [
     "takhrij_al_manat",
@@ -1313,7 +1419,7 @@
    "ar": "المنع",
    "tr": "al-manʿ",
    "gloss": "denial",
-   "definition": "Denial, by the objector, of the aṣl's ruling, of the ʿilla's existence in the aṣl, of its causality, or of its existence in the farʿ; the soundest view is that the arguer is not cut off by denial of the aṣl ruling (Ibn Qudāma, al-Ṭūfī). Muṭālaba (demanding proof of causality) is the third of these denials.",
+   "definition": "Denial, by the objector, of the aṣl's ruling, of the ʿilla's existence in the aṣl, of its causality, or of its existence in the farʿ; al-ṣaḥīḥ (Ibn Qudāma «والصحيح», al-Ṭūfī «على الأصح») is that the arguer is not cut off by denial of the aṣl ruling (Ibn Qudāma, al-Ṭūfī). Muṭālaba (demanding proof of causality) is the third of these denials.",
    "conditions": [],
    "related": [
     "qawadih",
@@ -1388,7 +1494,7 @@
    "ar": "تخصيص العلة",
    "tr": "takhṣīṣ al-ʿilla",
    "gloss": "specifying the ʿilla",
-   "definition": "Whether the ʿilla survives a naqḍ as a proof in the remaining cases, like a specified general term. Sources differ: al-Qāḍī and Abū al-Khaṭṭāb (al-Kawkab) hold naqḍ does not impair it; Ibn Ḥāmid holds it does; Ibn Qudāma distinguishes, voiding the extracted ʿilla but not the textual one when a condition is missing or an impediment present; al-Shinqīṭī prefers the reverse attribution; Ibn al-Qayyim says takhṣīṣ for a missing condition or present impediment is not impossible.",
+   "definition": "Whether the ʿilla survives a naqḍ as a proof in the remaining cases, like a specified general term. Sources differ: al-Qāḍī and Abū al-Khaṭṭāb (al-Kawkab) hold naqḍ does not impair it; Ibn Ḥāmid holds it does; Ibn Qudāma distinguishes, voiding the extracted ʿilla but not the textual one when a sharṭ is missing or an impediment present; al-Shinqīṭī prefers the reverse attribution; Ibn al-Qayyim says takhṣīṣ for a missing condition or present impediment is not impossible.",
    "conditions": [],
    "related": [
     "naqd",
@@ -1436,7 +1542,7 @@
    "ar": "الكسر",
    "tr": "al-kasr",
    "gloss": "breaking (the ḥikma)",
-   "definition": "Showing the ḥikma without the ruling. Ibn Qudāma and al-Ṭūfī: not binding, since the ḥikma cannot be measured by opinion; al-Kawkab: the sound view among the aṣḥāb is that kasr does not void the ʿilla, while Ibn Mufliḥ calls it 'naqḍ of the meaning', treated like naqḍ; al-Shinqīṭī holds it impairs wherever naqḍ does.",
+   "definition": "Showing the ḥikma without the ruling. Ibn Qudāma and al-Ṭūfī: not binding («غير لازم»), since the ḥikma cannot be measured by opinion; al-Kawkab: al-ṣaḥīḥ among the aṣḥāb («الصحيح عند أصحابنا») is that kasr does not void the ʿilla, while Ibn Mufliḥ calls it 'naqḍ of the meaning', treated like naqḍ; al-Shinqīṭī holds it impairs wherever naqḍ does.",
    "conditions": [],
    "related": [
     "naqd",
@@ -1580,7 +1686,7 @@
    "ar": "فساد الاعتبار",
    "tr": "fasād al-iʿtibār",
    "gloss": "invalid consideration",
-   "definition": "The objection that the qiyās contradicts a text (Ibn Qudāma, al-Ṭūfī) or a text or ijmāʿ (al-Kawkab), so it is void. Ibn ʿUthaymīn makes non-collision with a stronger proof the first condition of qiyās.",
+   "definition": "The objection that the qiyās contradicts a text (Ibn Qudāma, al-Ṭūfī) or a text or ijmāʿ (al-Kawkab), so it is void. Ibn ʿUthaymīn makes non-collision with a stronger proof («دليلاً أقوى منه») the first sharṭ of qiyās.",
    "conditions": [],
    "related": [
     "qawadih",
@@ -1649,7 +1755,7 @@
    "ar": "المعارضة",
    "tr": "al-muʿāraḍa",
    "gloss": "counter-argument",
-   "definition": "Either in the aṣl, showing another cause for its ruling (better, needs no aṣl of its own), or in the farʿ, citing what prevents the ruling there, a stronger proof or a description; Ibn Qudāma and al-Kawkab accept it. With manʿ, it is one of the two kinds to which all objections reduce.",
+   "definition": "Either in the aṣl, showing another ʿilla for its ruling (better, needs no aṣl of its own), or in the farʿ, citing what prevents the ruling there, a stronger proof («بدليل آكد منه») or a description; Ibn Qudāma and al-Kawkab accept it. With manʿ, it is one of the two kinds to which all objections reduce.",
    "conditions": [],
    "related": [
     "man",
@@ -1718,7 +1824,7 @@
    "ar": "الأصل / الاستصحاب",
    "tr": "al-aṣl / al-istiṣḥāb",
    "gloss": "presumption of continuity",
-   "definition": "Ibn Qudāma: istiṣḥāb is holding to a rational or sharʿī proof (original non-liability, a general term until specified, a text until abrogated, a ruling the law shows to continue), resting on a presumptive proof with no changer known. Al-Saʿdī Q11: the presumption is that what was remains, and certainty is not removed by doubt. Ibn Rajab: when two presumptions conflict the stronger is followed; al-Saʿdī Q6: the default in ʿādāt is permission and in ʿibādāt prohibition.",
+   "definition": "Ibn Qudāma: istiṣḥāb is holding to a rational or sharʿī proof (original non-liability, a general term until specified, a text until abrogated, a ruling the law shows to continue), resting on a presumptive proof with no changer known. Al-Saʿdī Q11: the presumption is that what was remains, and certainty is not removed by doubt. Ibn Rajab: when two presumptions conflict the weightier is followed («عمل بالأرجح منهما»); al-Saʿdī Q6: the default in ʿādāt is permission and in ʿibādāt prohibition.",
    "conditions": [],
    "related": [
     "yaqin",
@@ -1789,7 +1895,7 @@
    "ar": "اليقين",
    "tr": "al-yaqīn",
    "gloss": "certainty",
-   "definition": "Decisive perception (ʿilm: «إدراكاً جازماً», Ibn ʿUthaymīn). Al-Saʿdī Q11: certainty is not removed by doubt. Adopted reading (IQ-21, human review 2026-10-07): a judgement is certain for acting when it is qaṭʿ, or a ẓann whose preponderance is itself known on a dalīl (Ibn Taymiyya: belief in a view's preponderance is ʿilm; al-Rawḍa: God makes ẓann a sign of the obligation, so the obligation is known). A ẓann of unknown preponderance is not yaqīn. Where certainty cannot be reached, one builds on ghalabat al-ẓann (bayt 90).",
+   "definition": "Decisive perception (ʿilm: «إدراكاً جازماً», Ibn ʿUthaymīn). Al-Saʿdī Q11: certainty is not removed by doubt. Adopted reading (IQ-21, human review 2026-10-07): a judgement is certain for acting when it is qaṭʿ, or a ẓann whose preponderance is itself known on a dalīl (Ibn Taymiyya: belief in a view's preponderance is ʿilm; al-Rawḍa: God makes ẓann a sign of the wujūb, so the wujūb is known). A ẓann of unknown preponderance is not yaqīn. Where certainty cannot be reached, one builds on ghalabat al-ẓann (bayt 90).",
    "conditions": [],
    "related": [
     "asl",
@@ -1859,7 +1965,7 @@
    "ar": "الظن",
    "tr": "al-ẓann",
    "gloss": "presumption, probable belief",
-   "definition": "Perceiving a thing with a weaker possibility of its opposite (Ibn ʿUthaymīn); the weaker side is wahm, equal sides shakk. Ẓann has degrees, the higher called ghalabat al-ẓann (al-Kawkab), and leans on a cause, unlike wahm (al-Rawḍa). Usage: «ʿilm» is said figuratively of presumptive assent («فإن علمتموهن مؤمنات») and «ẓann» of knowledge («الذين يظنون أنهم ملاقو ربهم»), but neither collapses the grades. Whether fiqh, mostly ẓann, is ʿilm is answered several ways: the ruling is known and the ẓann lies on its way (al-Rāzī; al-Ṭūfī finds it contrived and would define fiqh as ẓann); fiqh is maʿrifa covering both (Ibn ʿUthaymīn); Ibn Taymiyya: belief that a view preponderates is ʿilm, the preponderance of one belief over another is ẓann, and fiqh is the former (IQ-21).",
+   "definition": "Perceiving a thing with an outweighed (marjūḥ) possibility of its opposite (Ibn ʿUthaymīn: «مع احتمال ضد مرجوح»); the outweighed side is wahm, equal sides shakk. Ẓann has degrees, the higher called ghalabat al-ẓann (al-Kawkab), and leans on a sabab, unlike wahm (al-Rawḍa: «والظن: ميلها بسبب»). Usage: «ʿilm» is said figuratively of presumptive assent («فإن علمتموهن مؤمنات») and «ẓann» of knowledge («الذين يظنون أنهم ملاقو ربهم»), but neither collapses the grades. Whether fiqh, mostly ẓann, is ʿilm is answered several ways: the ruling is known and the ẓann lies on its way (al-Rāzī; al-Ṭūfī finds it contrived and would define fiqh as ẓann); fiqh is maʿrifa covering both (Ibn ʿUthaymīn); Ibn Taymiyya: belief that a view preponderates is ʿilm, the preponderance of one belief over another is ẓann, and fiqh is the former (IQ-21).",
    "conditions": [],
    "related": [
     "ghalabat_al_zann",
@@ -1885,7 +1991,7 @@
     {
      "ref": "src:openiti-kawkab-shamela12019/v04:p152",
      "excerpt_ar": "ويجب العمل بالظن فيها\" أي في علل الأحكام \"إجماعا",
-     "note": "Acting on ẓann in ʿilal obligatory by consensus."
+     "note": "Acting on ẓann in ʿilal wājib by consensus."
     },
     {
      "ref": "src:openiti-kawkab-shamela12019/v01:p074",
@@ -1924,7 +2030,7 @@
    "ar": "القرينة",
    "tr": "al-qarīna",
    "gloss": "contextual indication",
-   "definition": "An accompanying indication that changes how a text or presumption is taken. The bare command implies obligation unless a qarīna turns it to something else (Ibn al-Laḥḥām, Aḥmad's text). Al-Saʿdī Q52: when qarāʾin are strong they are put before the aṣl. Ibn Rajab: a ẓāhir resting on qarāʾin sometimes prevails over the aṣl and sometimes not; the circumstances (dalālat al-aḥwāl) change the meaning of words.",
+   "definition": "An accompanying indication that changes how a text or presumption is taken. The bare command implies obligation unless a qarīna turns it to something else (Ibn al-Laḥḥām, Aḥmad's text). Al-Saʿdī Q52: when qarāʾin are strong («إذا قويت القرائن») they are put before the aṣl. Ibn Rajab: a ẓāhir resting on qarāʾin sometimes prevails over the aṣl and sometimes not; the circumstances (dalālat al-aḥwāl) change the meaning of words.",
    "conditions": [],
    "related": [
     "amr",
@@ -1963,7 +2069,7 @@
    "ar": "الأمارة",
    "tr": "al-amāra",
    "gloss": "indicator, sign",
-   "definition": "A sign that is not necessarily always accompanied by what it indicates. Ibn ʿUthaymīn defines the waḍʿī rulings as amārāt posited by the Lawgiver; those who admit takhṣīṣ al-ʿilla argue that sharʿī ʿilal are amārāt, which suffice if their ruling is mostly with them (reported by Ibn Qudāma, who answers it). Ibn Rajab allows acting on preponderant belief about time because time has amārāt, unlike completing prayer, purity or ḥadath.",
+   "definition": "A sign that is not necessarily always accompanied by what it indicates. Ibn ʿUthaymīn defines the waḍʿī rulings as amārāt posited by the Lawgiver; those who admit takhṣīṣ al-ʿilla argue that sharʿī ʿilal are amārāt, which suffice if their ruling is mostly with them (reported by Ibn Qudāma, who answers it). Ibn Rajab allows acting on preponderant belief about time because time has amārāt, unlike completing prayer, ṭahāra or ḥadath.",
    "conditions": [],
    "related": [
     "hukm_wadi",
@@ -1998,7 +2104,7 @@
    "ar": "التعارض",
    "tr": "al-taʿāruḍ",
    "gloss": "conflict of proofs",
-   "definition": "Two proofs facing each other so that one contradicts the other (Ibn ʿUthaymīn). Resolution order: reconcile (jamʿ) if possible, else abrogation if its conditions are met, else preference (tarjīḥ); where none applies, suspension (tawaqquf). Ibn ʿUthaymīn holds such an unresolvable conflict cannot exist in the texts themselves, only in the mujtahid's view.",
+   "definition": "Two proofs facing each other so that one contradicts the other (Ibn ʿUthaymīn). Resolution order: reconcile (jamʿ) if possible, else abrogation if its shurūṭ (sharṭ) are met, else preference (tarjīḥ); where none applies, suspension (tawaqquf). Ibn ʿUthaymīn holds such an unresolvable conflict cannot exist in the texts themselves, only in the mujtahid's view.",
    "conditions": [
     "jamʿ",
     "then naskh",
@@ -2056,12 +2162,12 @@
     {
      "ref": "src:shamela-9942/v01:p082",
      "excerpt_ar": "وإن تعارضت، وأمكن الجمع وجب الجمع، وإن لم يمكن الجمع عمل بالنسخ إن تمت شروطه.",
-     "note": "Jamʿ is obligatory if possible."
+     "note": "Jamʿ is wājib if possible."
     },
     {
      "ref": "src:shamela-9942/v01:p053",
      "excerpt_ar": "تعذر الجمع بين الدليلين، فإن أمكن الجمع فلا نسخ لإمكان العمل بكل منهما.",
-     "note": "Naskh conditional on impossibility of jamʿ."
+     "note": "Naskh has the sharṭ that jamʿ be impossible."
     }
    ]
   },
@@ -2070,7 +2176,7 @@
    "ar": "النسخ",
    "tr": "al-naskh",
    "gloss": "abrogation",
-   "definition": "Lifting the ruling of a sharʿī proof, or its wording, by a proof from the Book and Sunna. Conditions include that reconciliation be impossible and the later date of the abrogating text be known.",
+   "definition": "Lifting the ruling of a sharʿī proof, or its wording, by a proof from the Book and Sunna. Its shurūṭ (sharṭ) include that reconciliation be impossible and the later date of the abrogating text be known.",
    "conditions": [
     "jamʿ impossible",
     "the abrogating proof known to be later"
@@ -2102,7 +2208,7 @@
    "ar": "الترجيح",
    "tr": "al-tarjīḥ",
    "gloss": "preference",
-   "definition": "When neither reconciliation nor abrogation is possible, preference is obligatory (Ibn ʿUthaymīn: text over ẓāhir, ẓāhir over muʾawwal, manṭūq over mafhūm, the jalī qiyās over the khafī). Among ʿilal, Ibn Qudāma says an ʿilla is preferred by what a report is preferred by; al-Kawkab ranks sabr over munāsaba over shabah.",
+   "definition": "When neither reconciliation nor abrogation is possible, preference is wājib («وجب الترجيح», Ibn ʿUthaymīn: text over ẓāhir, ẓāhir over muʾawwal, manṭūq over mafhūm, the jalī qiyās over the khafī). Among ʿilal, Ibn Qudāma says an ʿilla is preferred by what a report is preferred by; al-Kawkab ranks sabr over munāsaba over shabah.",
    "conditions": [],
    "related": [
     "taarud",
@@ -2139,6 +2245,16 @@
      "excerpt_ar": "ويقدم من القياس: الجلي على الخفي",
      "note": "Jalī over khafī."
     }
+   ],
+   "forms": [
+    "أقوى",
+    "أرجح",
+    "قويت",
+    "قوي",
+    "آكد",
+    "aqwā",
+    "arjaḥ",
+    "ākad"
    ]
   },
   {
@@ -2146,7 +2262,7 @@
    "ar": "التوقف",
    "tr": "al-tawaqquf",
    "gloss": "suspension of judgement",
-   "definition": "Ibn ʿUthaymīn: where two general texts conflict and nothing specifies one by the other, each is acted on where they do not conflict and judgement is suspended where they do. Ibn Rajab reports that Aḥmad suspended judgement on the two-men 'raven' divorce case. Ibn Taymiyya extends it to the single jurist: «وحيث لا يعلم الرجحان فهو متوقف لا قول له». Adopted in the kernel (IQ-21, human review): a ẓann of unknown preponderance is suspended in Qawaid.update, inert as a challenger and counted as shakk as the incumbent.",
+   "definition": "Ibn ʿUthaymīn: where two general texts conflict and nothing specifies one by the other, each is acted on where they do not conflict and judgement is suspended where they do. Ibn Rajab reports that Aḥmad suspended judgement on the two-men 'raven' taʿlīq case. Ibn Taymiyya extends it to the single jurist: «وحيث لا يعلم الرجحان فهو متوقف لا قول له». Adopted in the kernel (IQ-21, human review): a ẓann of unknown preponderance is suspended in Qawaid.update, inert as a challenger and counted as shakk as the incumbent.",
    "conditions": [],
    "related": [
     "ihtiyat",
@@ -2187,7 +2303,7 @@
    "ar": "العام",
    "tr": "al-ʿāmm",
    "gloss": "general term",
-   "definition": "A term encompassing all its individuals without limit. Al-Saʿdī Q59–60: an indefinite after negation, prohibition or condition, the particles man, mā, ayy, matā, generic al- and the annexed singular are general. Ibn al-Laḥḥām: the singular with al- is general unless there is a qarīna of ʿahd. The generality of the wording, not the specific occasion, counts (Ibn ʿUthaymīn; Ibn al-Laḥḥām q61, with a second view reported).",
+   "definition": "A term encompassing all its individuals without limit. Al-Saʿdī Q59–60: an indefinite after negation, prohibition or a conditional clause (the linguistic sharṭ), the particles man, mā, ayy, matā, generic al- and the annexed singular are general. Ibn al-Laḥḥām: the singular with al- is general unless there is a qarīna of ʿahd. The generality of the wording, not the specific occasion, counts (Ibn ʿUthaymīn; Ibn al-Laḥḥām q61, with a second view reported).",
    "conditions": [],
    "related": [
     "khass",
@@ -2237,6 +2353,11 @@
     {
      "ref": "ibn_uthaymin.usul.shamela_9942.h012",
      "note": "Definition."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p038",
+     "excerpt_ar": "واصطلاحاً: اللفظ الدال على محصور بشخص أو عدد، كأسماء الأعلام والإشارة والعدد",
+     "note": "Ibn ʿUthaymīn's definition, verbatim (PR-13)."
     }
    ]
   },
@@ -2331,7 +2452,7 @@
    "ar": "المقيد",
    "tr": "al-muqayyad",
    "gloss": "restricted",
-   "definition": "Ibn ʿUthaymīn: what indicates the reality with a restriction ('a believing slave'). Ibn al-Laḥḥām: what applies to a specified individual or one described by something added to its genus. Al-Saʿdī Q29: an utterance must be restricted by its attachments (description, condition, exception).",
+   "definition": "Ibn ʿUthaymīn: what indicates the reality with a restriction ('a believing slave'). Ibn al-Laḥḥām: what applies to a specified individual or one described by something added to its genus. Al-Saʿdī Q29: an utterance must be restricted by its attachments (description, the linguistic sharṭ, exception).",
    "conditions": [],
    "related": [
     "mutlaq"
@@ -2441,7 +2562,7 @@
    "ar": "النهي",
    "tr": "al-nahy",
    "gloss": "prohibition",
-   "definition": "Speech containing a demand to refrain by way of superiority, in the form lā tafʿal (Ibn ʿUthaymīn). Unqualified it requires prohibition (Ibn al-Laḥḥām) and, per Ibn ʿUthaymīn, also the invalidity of what is prohibited; whether a prohibition voids worship depends on whether it returns to the act, its condition or something external (Ibn Rajab q9, al-Saʿdī Q38).",
+   "definition": "Speech containing a demand to refrain by way of superiority, in the form lā tafʿal (Ibn ʿUthaymīn). Unqualified it requires prohibition (Ibn al-Laḥḥām) and, per Ibn ʿUthaymīn, also the invalidity of what is prohibited; whether a prohibition voids worship depends on whether it returns to the act, its sharṭ or something external (Ibn Rajab q9, al-Saʿdī Q38).",
    "conditions": [],
    "related": [
     "amr",
@@ -2481,7 +2602,7 @@
    "ar": "الضمان",
    "tr": "al-ḍamān",
    "gloss": "liability",
-   "definition": "Ibn Rajab: the causes of liability are three: contract, hand (possession) and destruction (itlāf). A contract whose valid form entails liability entails it when invalid too. Al-Saʿdī Q14: loss in a trustee's hand is not compensable without transgression or negligence, in a wrongdoer's hand it is; Q18: fungibles are compensated in kind, others by value.",
+   "definition": "Ibn Rajab: the asbāb of liability are three: contract, hand (possession) and destruction (itlāf). A contract whose valid form entails liability entails it when invalid too. Al-Saʿdī Q14: loss in a trustee's hand is not compensable without transgression or negligence, in a wrongdoer's hand it is; Q18: fungibles are compensated in kind, others by value.",
    "conditions": [
     "a cause: ʿaqd, yad or itlāf"
    ],
@@ -2511,6 +2632,12 @@
      "excerpt_ar": "التلف في يد الأمين غير مضمون إذا لم يتعد؛ أو يفرط؛",
      "note": "Al-Saʿdī Q14."
     }
+   ],
+   "distinct_from": [
+    "arsh",
+    "diya",
+    "jaza",
+    "kaffara"
    ]
   },
   {
@@ -2518,7 +2645,7 @@
    "ar": "الأمانة (المحضة والمتضمنة)",
    "tr": "al-amāna (al-maḥḍa wa'l-mutaḍammina)",
    "gloss": "trust",
-   "definition": "Al-Saʿdī: the trustee (amīn) holds another's property with the owner's or the law's consent; loss with him is not compensable unless he transgresses or is negligent. Ibn Rajab: the very meaning of amāna is absence of liability, so a trustee's word on loss is accepted; a pure trust (maḥḍa), held only for the owner's benefit like a deposit, is voided by transgression, while a trust that includes another matter (mutaḍammina) is not, on the sound view. Al-Saʿdī Q43: one who took the thing for his own benefit is not believed on its return; for the owner's benefit he is. Lean encodes Q43's distinction, not Ibn Rajab's voiding rule.",
+   "definition": "Al-Saʿdī: the trustee (amīn) holds another's property with the owner's or the law's consent; loss with him is not compensable unless he transgresses or is negligent. Ibn Rajab: the very meaning of amāna is absence of liability, so a trustee's word on loss is accepted; a pure trust (maḥḍa), held only for the owner's benefit like a deposit, is voided by transgression, while a trust that includes another matter (mutaḍammina) is not, on al-ṣaḥīḥ («لا تبطل على الصحيح»). Al-Saʿdī Q43: one who took the thing for his own benefit is not believed on its return; for the owner's benefit he is. Lean encodes Q43's distinction, not Ibn Rajab's voiding rule.",
    "conditions": [
     "held with the owner's or the law's permission",
     "no transgression or negligence"
@@ -2552,8 +2679,8 @@
     },
     {
      "ref": "src:openiti-rajab-shamela21730/v01:p059",
-     "excerpt_ar": "ما أخذه لمصلحة مالكه خاصة كالمودع فهو أمين محض",
-     "note": "Ibn Rajab: what he took solely for the owner's benefit (the depositee) is a pure trustee."
+     "excerpt_ar": "ما أخذه لمصلحة مالكه خاصة كالمودع فهو أمين محض لكن إذا تلفت الوديعة من بين ماله ففي ضمانه خلاف",
+     "note": "Ibn Rajab: what he took solely for the owner's benefit (the depositee) is a trustee outright (amīn maḥḍ), «لكن» if the deposit perishes from among his own property his liability is disputed."
     },
     {
      "ref": "src:archive-pdf1995-tess/v01:p095",
@@ -2567,7 +2694,7 @@
    "ar": "الإتلاف",
    "tr": "al-itlāf",
    "gloss": "destruction",
-   "definition": "Directly destroying by an act that requires it, or wrongfully setting up a cause that leads to destruction (Ibn Rajab). Al-Saʿdī Q13: the deliberate, the ignorant and the forgetful are equal in it. Destroying a thing to repel its harm is not compensable; destroying it to benefit from it is (Ibn Rajab q26, al-Saʿdī Q36).",
+   "definition": "Directly destroying by an act that requires it, or wrongfully setting up a cause that leads to destruction (tasabbub, Ibn Rajab). Al-Saʿdī Q13: the deliberate, the ignorant and the forgetful are equal in it. Destroying a thing to repel its harm is not compensable; destroying it to benefit from it is (Ibn Rajab q26, al-Saʿdī Q36).",
    "conditions": [],
    "related": [
     "daman"
@@ -2736,7 +2863,7 @@
    "ar": "الاحتياط / الاعتزال",
    "tr": "al-iḥtiyāṭ / al-iʿtizāl",
    "gloss": "precaution; abstention",
-   "definition": "Abstaining from one's wife when a divorce may have taken effect. Ibn Rajab reports Aḥmad's text that two men whose oaths make one wife divorced abstain until certain, and Ibn Taymiyya's reading of Aḥmad: whenever divorce is tied to a condition that may have occurred, the husband abstains until he knows it has not. Al-Saʿdī instead says that on doubt whether the condition occurred one builds on its non-occurrence (the marriage stands), precaution being commendable. Not formalised in the Lean modules.",
+   "definition": "Abstaining from one's wife when a divorce may have taken effect. Ibn Rajab reports Aḥmad's text that two men whose taʿlīqs make one wife divorced abstain until certain, and Ibn Taymiyya's reading of Aḥmad: whenever divorce is suspended (taʿlīq) on an event that may have occurred, the husband abstains until he knows it has not. Al-Saʿdī instead says that on doubt whether the taʿlīq's event occurred one builds on its non-occurrence (the marriage stands), precaution being good («ولو سلك العبد طريق الاحتياط كان حسناً»). Not formalised in the Lean modules.",
    "conditions": [],
    "related": [
     "yaqin",
@@ -2823,8 +2950,8 @@
    "refs": [
     {
      "ref": "src:openiti-majmufatawa-shamela7289/v13:p117",
-     "excerpt_ar": "فرق بين اعتقاد الرجحان ورجحان الاعتقاد أما اعتقاد الرجحان فهو علم والمجتهد ما عمل إلا بذلك العلم وهو اعتقاد رجحان هذا على هذا وأما رجحان هذا الاعتقاد على هذا الاعتقاد فهو الظن",
-     "note": "Ibn Taymiyya: belief in preponderance is ʿilm; preponderance of a belief is ẓann."
+     "excerpt_ar": "فرق بين اعتقاد الرجحان ورجحان الاعتقاد أما اعتقاد الرجحان فهو علم والمجتهد ما عمل إلا بذلك العلم وهو اعتقاد رجحان هذا على هذا وأما رجحان هذا الاعتقاد على هذا الاعتقاد فهو الظن؛ لكن لم يكن ممن قال الله فيه: {إن يتبعون إلا الظن} بل هنا ظن رجحان هذا وظن رجحان ذاك وهذا الظن هو الراجح ورجحانه معلوم",
+     "note": "Ibn Taymiyya: belief in preponderance is ʿilm; preponderance of a belief is ẓann; «لكن» this ẓann is not the blamed ẓann of {إن يتبعون إلا الظن}: «هذا الظن هو الراجح ورجحانه معلوم»."
     },
     {
      "ref": "src:openiti-majmufatawa-shamela7289/v13:p119",
@@ -2848,10 +2975,10 @@
    "ar": "غلبة الظن",
    "tr": "ghalabat al-ẓann",
    "gloss": "preponderant belief (also al-ẓann al-ghālib, ghālib al-ẓann; the verb: ghalaba ʿalā ẓannih)",
-   "definition": "The higher degree of ẓann. Ibn ʿUthaymīn, bayt 90: «وإن تعذر اليقين فارجعا لغالب الظن تكن متبعا», i.e. «إذا تعذر اليقين رجعنا إلى غلبة الظن»; with no preponderant belief one returns to the aṣl. It suffices to perform worship or a contract (Ibn Rajab 68) and is put before the aṣl where strong indications support it (al-Saʿdī Q52), but not against an aṣl that certainty can still reach, nor where Aḥmad's naṣṣ requires certainty (dawn in Ramaḍān, Ibn Rajab 159). Al-Saʿdī: management (taṣarruf) rests on it, rulings have fixed routes.",
+   "definition": "The higher degree of ẓann. Ibn ʿUthaymīn, bayt 90: «وإن تعذر اليقين فارجعا لغالب الظن تكن متبعا», i.e. «إذا تعذر اليقين رجعنا إلى غلبة الظن»; with no preponderant belief one returns to the aṣl. It suffices to perform worship or a contract (Ibn Rajab 68) and is put before the aṣl where strong qarāʾin support it (al-Saʿdī Q52, «إذا قويت القرائن»), but not against an aṣl that certainty can still reach, nor where Aḥmad's naṣṣ requires certainty (dawn in Ramaḍān, Ibn Rajab 159). Al-Saʿdī: management (taṣarruf) rests on it, rulings have fixed routes.",
    "conditions": [
     "certainty is unattainable",
-    "the belief rests on a cause (amāra), not mere inclination",
+    "the belief rests on a sabab (amāra), not mere inclination",
     "no aṣl that certainty can reach is displaced by it",
     "its error has not become evident"
    ],
@@ -2976,7 +3103,7 @@
    "ar": "اللقطة",
    "tr": "al-luqaṭa",
    "gloss": "a lost thing found",
-   "definition": "A lost item picked up by a finder. After the year of announcement it is owned «لجهالة ربها», and what is not ownable is given in charity on the owner's behalf (al-ṣaḥīḥ): an instance of treating the unknown owner as non-existent (qāʿida 106). Whether ownership comes automatically or by the finder's choice is two wujūh (Ibn Rajab elsewhere), not modelled.",
+   "definition": "A lost item picked up by a finder. After the year of announcement it is owned «لجهالة ربها», and what is not ownable is given as ṣadaqa on the owner's behalf (al-ṣaḥīḥ): an instance of treating the unknown owner as non-existent (qāʿida 106). Whether ownership comes automatically or by the finder's choice is two wujūh (Ibn Rajab elsewhere), not modelled.",
    "conditions": [
     "the year of announcement has passed",
     "the owner remains unknown"
@@ -3049,6 +3176,1311 @@
      "ref": "src:openiti-lahham-shamela8526/v01:p276",
      "excerpt_ar": "والفرق بين النصين أن الشهادة حق عليه فتسمع بعد النفي كما لو أقر بالحق بعد جحوده والبينة حق له فلا تسمع كما لو ادعى الخق بعد أن نفاه",
      "note": "The farq: bayyina is a right for him."
+    }
+   ]
+  },
+  {
+   "key": "maniyy",
+   "ar": "المني",
+   "tr": "al-manī",
+   "gloss": "al-manī: the fluid of janāba (not «semen» at large, which also covers al-madhy and al-wadī)",
+   "definition": "Of what exits from the front passage, the one that obliges ghusl and is ṭāhir, as al-Saʿdī reports the division (F120: «ومنه طاهر يوجب الغسل وهو المني»). Its ghusl rests on al-Māʾida 6 and al-Nisāʾ 43, on ʿAlī's «فإذا فضخت الماء فاغتسل» (Abū Dāwūd 206) and Umm Salama's «نعم إذا رأت الماء» (al-Bukhārī 282); its ṭahāra on ʿĀʾisha's «كنت أفرك المني من ثوب رسول الله ﷺ فيصلي فيه» (Abū Dāwūd 372). al-Albānī grades all three ṣaḥīḥ (al-Irwāʾ 125, 126, 180).",
+   "conditions": [
+    "ṭāhir: not washed as a najāsa",
+    "obliges ghusl (rafʿ al-ḥadath al-akbar), not wuḍūʾ only"
+   ],
+   "related": [
+    "madhy",
+    "wady",
+    "najasa",
+    "hadath"
+   ],
+   "distinct_from": [
+    "madhy",
+    "wady",
+    "mani"
+   ],
+   "lean": [
+    "Usul.Tahara.Kharij",
+    "Usul.Tahara.semen_conflates",
+    "Usul.Tahara.q15_f001_turns_on_the_name"
+   ],
+   "lean_value": "Usul.Tahara.Kharij.maniyy",
+   "rulings": {
+    "najis": false,
+    "obliges": "ghusl"
+   },
+   "nusus": [
+    "Q005:006",
+    "Q004:043",
+    "H-ali-fadakh",
+    "H-umm-salama",
+    "H-aisha-fark"
+   ],
+   "furuq": [
+    "F120"
+   ],
+   "refs": [
+    {
+     "ref": "src:shamela-22592/v01:p196",
+     "excerpt_ar": "كنت أفرك المنى من ثوب رسول الله صلى الله عليه وسلم ثم يذهب فيصلى به",
+     "note": "al-Irwāʾ 180, «* صحيح»: al-manī is rubbed off and prayed in."
+    },
+    {
+     "ref": "src:shamela-22592/v01:p162",
+     "excerpt_ar": "إذا رأيت المذى فاغسل ذكرك وتوضأ وضوءك للصلاة , فإذا فضخت الماء فاغتسل",
+     "note": "al-Irwāʾ 125, «* صحيح»: al-madhy obliges washing and wuḍūʾ, al-manī ghusl."
+    }
+   ]
+  },
+  {
+   "key": "madhy",
+   "ar": "المذي",
+   "tr": "al-madhy",
+   "gloss": "al-madhy: the fluid that obliges washing and wuḍūʾ, not ghusl",
+   "definition": "Of what exits from the front passage, the one that is najis and obliges washing the private part and wuḍūʾ, not ghusl (F120: «ومنه نجس ينقض الوضوء ويوجب غسله، وغسل الذكر والأنثيين منه وهو المذي»). It rests on ʿAlī's ḥadīth «يغسل ذكره ويتوضأ» (Muslim 303) and «إذا رأيت المذي فاغسل ذكرك، وتوضأ وضوءك للصلاة» (Abū Dāwūd 206), ṣaḥīḥ in al-Albānī's verdict (al-Irwāʾ 108, 125).",
+   "conditions": [
+    "najis",
+    "obliges wuḍūʾ, not ghusl"
+   ],
+   "related": [
+    "maniyy",
+    "wady",
+    "najasa"
+   ],
+   "distinct_from": [
+    "maniyy",
+    "wady"
+   ],
+   "lean": [
+    "Usul.Tahara.Kharij",
+    "Usul.Tahara.madhy_wady_alike"
+   ],
+   "lean_value": "Usul.Tahara.Kharij.madhy",
+   "rulings": {
+    "najis": true,
+    "obliges": "wudu"
+   },
+   "nusus": [
+    "H-ali-madhy",
+    "H-ali-fadakh"
+   ],
+   "furuq": [
+    "F120"
+   ],
+   "refs": [
+    {
+     "ref": "src:shamela-22592/v01:p145",
+     "excerpt_ar": "قوله فى المذى: \" يغسل ذكره ويتوضأ \". متفق عليه",
+     "note": "al-Irwāʾ 108, «* صحيح»: al-madhy obliges washing and wuḍūʾ."
+    }
+   ]
+  },
+  {
+   "key": "wady",
+   "ar": "الودي",
+   "tr": "al-wadī",
+   "gloss": "al-wadī: ruled as al-madhy, on an athar",
+   "definition": "Ruled as al-madhy: washing and wuḍūʾ, not ghusl. Its support is the athar of Ibn ʿAbbās only («وأما المذي والودي فقال: اغسل ذكرك أو مذاكيرك وتوضأ وضوءك للصلاة»), which al-Albānī marks «هذا موقوف» and whose standing as ḥujja alone he calls disputed (Tamām al-Minna). The register records it as an athar, below a marfūʿ naṣṣ.",
+   "conditions": [
+    "support: athar mawqūf (Ibn ʿAbbās), not a marfūʿ naṣṣ"
+   ],
+   "related": [
+    "madhy",
+    "maniyy"
+   ],
+   "distinct_from": [
+    "maniyy",
+    "madhy"
+   ],
+   "lean": [
+    "Usul.Tahara.Kharij",
+    "Usul.Tahara.madhy_wady_alike"
+   ],
+   "lean_value": "Usul.Tahara.Kharij.wady",
+   "rulings": {
+    "najis": true,
+    "obliges": "wudu"
+   },
+   "nusus": [
+    "A-ibn-abbas-wady"
+   ],
+   "refs": [
+    {
+     "ref": "src:shamela-11122/v01:p099",
+     "excerpt_ar": "أما المني فهو الذي منه الغسل وأما المذي والودي فقال: اغسل ذكرك أو مذاكيرك وتوضأ وضوءك للصلاة",
+     "note": "Tamām al-Minna: the athar of Ibn ʿAbbās (al-Bayhaqī), as quoted."
+    },
+    {
+     "ref": "src:shamela-11122/v01:p099",
+     "excerpt_ar": "هذا موقوف والاستدلال به وحده - مع أنه مختلف في صلاحيته للاحتجاج به",
+     "note": "al-Albānī on it: mawqūf, disputed as a sole ḥujja."
+    }
+   ]
+  },
+  {
+   "key": "najasa",
+   "ar": "النجاسة",
+   "tr": "al-najāsa",
+   "gloss": "al-najāsa: a physical impurity, removed (izāla); not ḥadath",
+   "definition": "A physical impurity, which is removed (izāla), not lifted; removing it is valid without intention (F68), and tayammum is not made for it (F121: «النجاسات كلها لا تيمم عنها، وإنما يتيمم عن الأحداث»). Ibn al-Qayyim: «ما فرق الله بينه من إزالة النجاسة ورفع الحدث». The English «impurity» does not distinguish it from ḥadath; the register names it.",
+   "related": [
+    "hadath",
+    "maniyy",
+    "madhy",
+    "wady"
+   ],
+   "distinct_from": [
+    "hadath"
+   ],
+   "furuq": [
+    "F68",
+    "F121"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-ilam-shamela11496/v01:p222",
+     "excerpt_ar": "وجمعتم بين ما فرق الله بينه من إزالة النجاسة ورفع الحدث",
+     "note": "Iʿlām: najāsa is removed and ḥadath lifted, two things God separated."
+    }
+   ]
+  },
+  {
+   "key": "hadath",
+   "ar": "الحدث",
+   "tr": "al-ḥadath",
+   "gloss": "al-ḥadath: the state lifted (rafʿ) by wuḍūʾ or ghusl; not najāsa",
+   "definition": "The state that bars prayer and is lifted (rafʿ) by wuḍūʾ (minor) or ghusl (major, janāba), with intention (F68); tayammum is made for it alone (F121). Ibn al-Qayyim: «ما فرق الله بينه من إزالة النجاسة ورفع الحدث».",
+   "related": [
+    "najasa",
+    "maniyy",
+    "madhy"
+   ],
+   "distinct_from": [
+    "najasa"
+   ],
+   "furuq": [
+    "F68",
+    "F121"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-ilam-shamela11496/v01:p222",
+     "excerpt_ar": "وجمعتم بين ما فرق الله بينه من إزالة النجاسة ورفع الحدث",
+     "note": "Iʿlām: najāsa is removed and ḥadath lifted."
+    }
+   ]
+  },
+  {
+   "key": "tahur",
+   "ar": "الطهور",
+   "tr": "al-ṭahūr",
+   "gloss": "al-ṭahūr: water ṭāhir in itself that also purifies (lifts ḥadath, removes najāsa)",
+   "definition": "Water that is ṭāhir and purifies: «وَأَنزَلْنَا مِنَ السَّمَاءِ مَاءً طَهُورًا» (al-Furqān 48); of the sea, «هو الطهور ماؤه الحل ميتته» (Abū Dāwūd 83; al-Irwāʾ 9, ṣaḥīḥ). al-Saʿdī holds that water stays ṭahūr until najāsa changes it (F19: «وأن الماء باق على طهوريته حتى تغيره النجاسة»).",
+   "related": [
+    "tahir",
+    "tahara",
+    "najasa"
+   ],
+   "distinct_from": [
+    "tahir",
+    "tahara"
+   ],
+   "nusus": [
+    "Q025:048",
+    "H-bahr-tahur"
+   ],
+   "furuq": [
+    "F19"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F19",
+     "excerpt_ar": "وأن الماء باق على طهوريته حتى تغيره النجاسة",
+     "note": "al-Saʿdī: water stays ṭahūr until najāsa changes it."
+    },
+    {
+     "ref": "src:shamela-22592/v01:p042",
+     "excerpt_ar": "قوله فى البحر: \" هو الطهور ماؤه , الحل ميتته \"",
+     "note": "al-Irwāʾ 9, «* صحيح»."
+    }
+   ]
+  },
+  {
+   "key": "tahir",
+   "ar": "الطاهر",
+   "tr": "al-ṭāhir",
+   "gloss": "al-ṭāhir: not najis; of water in the madhhab, also a middle class (ṭāhir, not purifying)",
+   "definition": "What is not najis (al-manī is ṭāhir: F120 «ومنه طاهر يوجب الغسل وهو المني»). In the madhhab's division of water it is also a middle class between ṭahūr and najis: water a ṭāhir substance has changed loses its ṭahūriyya («وأنه يسلبه الطهورية في الأول دون الثاني»). al-Saʿdī grades that farq ḍaʿīf and holds the water ṭahūr (F19). So «pure water» must say which: ṭahūr (purifying) or ṭāhir (not najis, and in the madhhab not purifying).",
+   "related": [
+    "tahur",
+    "tahara",
+    "najasa",
+    "maniyy"
+   ],
+   "distinct_from": [
+    "tahur",
+    "tahara"
+   ],
+   "furuq": [
+    "F19",
+    "F120"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F19",
+     "excerpt_ar": "وأنه يسلبه الطهورية في الأول دون الثاني",
+     "note": "The madhhab's middle class: water a ṭāhir substance changed on purpose loses its ṭahūriyya."
+    },
+    {
+     "ref": "src:islamhouse-qj-doc#F120",
+     "excerpt_ar": "ومنه طاهر يوجب الغسل وهو المني",
+     "note": "al-manī is ṭāhir."
+    }
+   ]
+  },
+  {
+   "key": "tahara",
+   "ar": "الطهارة",
+   "tr": "al-ṭahāra",
+   "gloss": "al-ṭahāra: being ṭāhir; of a person, free of ḥadath (lifted) and of najāsa (removed)",
+   "definition": "The state of being ṭāhir. Of a person it has two parts the law keeps apart: freedom from ḥadath, lifted by wuḍūʾ or ghusl with intention, and freedom from najāsa, removed without it (F68; Ibn al-Qayyim: «ما فرق الله بينه من إزالة النجاسة ورفع الحدث»). Of a thing: freedom from najāsa.",
+   "related": [
+    "hadath",
+    "najasa",
+    "tahur",
+    "tahir"
+   ],
+   "distinct_from": [
+    "tahur",
+    "tahir"
+   ],
+   "furuq": [
+    "F68",
+    "F121"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-ilam-shamela11496/v01:p222",
+     "excerpt_ar": "وجمعتم بين ما فرق الله بينه من إزالة النجاسة ورفع الحدث",
+     "note": "Iʿlām: removing najāsa and lifting ḥadath are two things."
+    }
+   ]
+  },
+  {
+   "key": "mahd",
+   "ar": "المحض",
+   "tr": "al-maḥḍ",
+   "gloss": "al-maḥḍ: sheer, unmixed (a «pure means», a «purely God's» right); not a purity term",
+   "definition": "Sheer, unmixed: a «pure means» (wasīla maḥḍa, Q40) or a right that is God's alone («الحق فيها لله متمحض», F13). The English «pure» in this sense says nothing of ṭahāra.",
+   "related": [],
+   "distinct_from": [
+    "tahir",
+    "tahur"
+   ],
+   "furuq": [
+    "F13"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#q040",
+     "excerpt_ar": "إلا أن يكون المقدور عليه وسيلة محضة",
+     "note": "Q40: a part that is a pure means (wasīla maḥḍa) is not due by itself."
+    },
+    {
+     "ref": "src:islamhouse-qj-doc#F13",
+     "excerpt_ar": "وهذه الحق فيها لله متمحض",
+     "note": "F13: here the right is purely God's."
+    }
+   ]
+  },
+  {
+   "key": "ghusl",
+   "ar": "الغُسل",
+   "tr": "al-ghusl",
+   "gloss": "al-ghusl: the full ritual bath that lifts the major ḥadath (janāba, ḥayḍ); not ghasl",
+   "definition": "Washing the whole body with intention to lift the major ḥadath: «وَإِن كُنتُمْ جُنُبًا فَاطَّهَّرُوا» (al-Māʾida 6), «حَتَّىٰ تَغْتَسِلُوا» (al-Nisāʾ 43), «فإذا فضخت الماء فاغتسل» (Abū Dāwūd 206). al-Saʿdī: «طهارة الحدث الأكبر» against «طهارة الحدث الأصغر» (F52). Unvowelled, الغسل is also al-ghasl; the register vowels it and names which.",
+   "related": [
+    "ghasl",
+    "hadath",
+    "maniyy",
+    "tahara"
+   ],
+   "distinct_from": [
+    "ghasl"
+   ],
+   "nusus": [
+    "Q005:006",
+    "Q004:043",
+    "H-ali-fadakh"
+   ],
+   "furuq": [
+    "F52"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F52",
+     "excerpt_ar": "التفريق في طهارة الحدث الأكبر، وطهارة الحدث الأصغر",
+     "note": "F52: the ṭahāra of the major ḥadath (ghusl) and of the minor (wuḍūʾ)."
+    }
+   ]
+  },
+  {
+   "key": "ghasl",
+   "ar": "الغَسل",
+   "tr": "al-ghasl",
+   "gloss": "al-ghasl: washing a limb or a thing (in wuḍūʾ, or of najāsa); not ghusl",
+   "definition": "Washing a limb or a thing: the limbs in wuḍūʾ («فَاغْسِلُوا وُجُوهَكُمْ», al-Māʾida 6), or a najāsa away («سبع غسلات إحداها بتراب», F70; «يغسل ذكره ويتوضأ», Muslim 303). Unvowelled, الغسل is also al-ghusl; the register vowels it and names which.",
+   "related": [
+    "ghusl",
+    "najasa",
+    "tahara"
+   ],
+   "distinct_from": [
+    "ghusl"
+   ],
+   "nusus": [
+    "Q005:006b",
+    "H-ali-madhy"
+   ],
+   "furuq": [
+    "F70"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F70",
+     "excerpt_ar": "التي لا بد فيها من سبع غسلات إحداها بتراب ونحوه",
+     "note": "F70: seven washings (ghasalāt) for the heavy najāsa."
+    }
+   ]
+  },
+  {
+   "key": "batil",
+   "ar": "الباطل",
+   "tr": "al-bāṭil",
+   "gloss": "al-bāṭil: void, no effect follows; in the madhhab one with al-fāsid except in ḥajj and nikāḥ",
+   "definition": "What has no effect. al-Saʿdī reports the madhhab: the aṣḥāb distinguish the bāṭil from the fāsid in two chapters only, the ḥajj and ʿumra (one goes on in the fāsid and makes it up) and nikāḥ (a fāsid nikāḥ needs ṭalāq or faskh, «للاختلاف فيه»); «وأما بقية الأبواب فجعلوا الباطل والفاسد واحداً، الكل لا يصح ولا يفيد الملك والتصرف» (F98). So «void» and «defective» must say which, above all in those two chapters.",
+   "related": [
+    "fasid",
+    "sahih"
+   ],
+   "distinct_from": [
+    "fasid",
+    "ayb",
+    "ibtal"
+   ],
+   "furuq": [
+    "F98"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F98",
+     "excerpt_ar": "وأما بقية الأبواب فجعلوا الباطل والفاسد واحداً، الكل لا يصح ولا يفيد الملك والتصرف",
+     "note": "F98: outside ḥajj and nikāḥ the bāṭil and the fāsid are one."
+    }
+   ],
+   "forms": [
+    "بطل",
+    "buṭlān"
+   ]
+  },
+  {
+   "key": "ayb",
+   "ar": "العيب",
+   "tr": "al-ʿayb",
+   "gloss": "al-ʿayb: a defect or blemish in a thing (goods, a sacrificial animal); not fasād of a contract",
+   "definition": "A defect in the thing itself: goods sold with a defect («البيع المعيب», F138: return or arsh), a sacrificial animal that becomes blemished («ثم تعيبت فإنها لا تجزيه», Ibn Rajab 30). It says nothing of the contract's validity: a sale of defective goods is ṣaḥīḥ, with an option. English «defective» must say which.",
+   "related": [
+    "fasid",
+    "batil"
+   ],
+   "distinct_from": [
+    "fasid",
+    "batil"
+   ],
+   "furuq": [
+    "F138"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F138",
+     "excerpt_ar": "وقسّموا البيع المعيب إلى خمسة أقسام",
+     "note": "F138: the sale of defective goods, in five divisions."
+    }
+   ]
+  },
+  {
+   "key": "kaffara",
+   "ar": "الكفارة",
+   "tr": "al-kaffāra",
+   "gloss": "al-kaffāra: the expiation fixed for a breach (a yamīn, ẓihār, killing, intercourse in Ramaḍān)",
+   "definition": "The expiation the law fixes for a breach: «فَكَفَّارَتُهُ إِطْعَامُ عَشَرَةِ مَسَاكِينَ» (al-Māʾida 89); in an oath, «ففيه الكفارة إذا حنث» (F63). al-Saʿdī also calls the feeding of the old man who cannot fast «الكفارة» (F135), where the āya says «فدية» (al-Baqara 184); the register keeps his word and notes the āya's.",
+   "related": [
+    "fidya",
+    "jaza",
+    "daman",
+    "diya"
+   ],
+   "distinct_from": [
+    "fidya",
+    "jaza",
+    "daman",
+    "diya",
+    "arsh"
+   ],
+   "nusus": [
+    "Q005:089"
+   ],
+   "furuq": [
+    "F63",
+    "F135"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F63",
+     "excerpt_ar": "ففيه الكفارة إذا حنث",
+     "note": "F63: the binding oath on a future matter carries kaffāra when broken."
+    }
+   ]
+  },
+  {
+   "key": "fidya",
+   "ar": "الفدية",
+   "tr": "al-fidya",
+   "gloss": "al-fidya: the ransom-offering for a prohibited act of iḥrām, or for a fast not kept",
+   "definition": "«فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ» (al-Baqara 196) for the muḥrim; «فِدْيَةٌ طَعَامُ مِسْكِينٍ» (al-Baqara 184) for the fast. In F13 the madhhab owes it for shaving «مطلقاً». Not fidāʾ (ransoming a slave or a captive).",
+   "related": [
+    "kaffara",
+    "jaza",
+    "fida"
+   ],
+   "distinct_from": [
+    "kaffara",
+    "jaza",
+    "fida"
+   ],
+   "nusus": [
+    "Q002:196c",
+    "Q002:184"
+   ],
+   "furuq": [
+    "F13"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F13",
+     "excerpt_ar": "تجب عليه فيه الفدية مطلقاً",
+     "note": "F13: the madhhab owes fidya for shaving and clipping whatever the state."
+    }
+   ]
+  },
+  {
+   "key": "jaza",
+   "ar": "الجزاء",
+   "tr": "al-jazāʾ",
+   "gloss": "al-jazāʾ: the like of game killed in iḥrām or the ḥaram",
+   "definition": "«فَجَزَاءٌ مِّثْلُ مَا قَتَلَ مِنَ النَّعَمِ» (al-Māʾida 95). al-Saʿdī: «وأن جزاء الصيد يتعين فيه المثل لظاهر النص» (F17), and it is owed by the deliberate («نصت على المتعمد», F15).",
+   "related": [
+    "fidya",
+    "kaffara",
+    "daman"
+   ],
+   "distinct_from": [
+    "fidya",
+    "kaffara",
+    "daman"
+   ],
+   "nusus": [
+    "Q005:095"
+   ],
+   "furuq": [
+    "F15",
+    "F17"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F17",
+     "excerpt_ar": "وأن جزاء الصيد يتعين فيه المثل لظاهر النص",
+     "note": "F17: the like is fixed in the jazāʾ of game, by the apparent text."
+    }
+   ]
+  },
+  {
+   "key": "diya",
+   "ar": "الدية",
+   "tr": "al-diya",
+   "gloss": "al-diya: the blood-money for a life or a limb",
+   "definition": "«وَدِيَةٌ مُّسَلَّمَةٌ إِلَىٰ أَهْلِهِ» (al-Nisāʾ 92). Deliberate aggression gives the heir qiṣāṣ or diya; error and quasi-deliberate killing «الذي يوجب الدية فقط، إلا إن عفي له عنها» (F49).",
+   "related": [
+    "daman",
+    "kaffara"
+   ],
+   "distinct_from": [
+    "daman",
+    "kaffara",
+    "arsh"
+   ],
+   "nusus": [
+    "Q004:092",
+    "Q002:179"
+   ],
+   "furuq": [
+    "F49"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F49",
+     "excerpt_ar": "الذي يوجب الدية فقط، إلا إن عفي له عنها",
+     "note": "F49: error and quasi-deliberate killing owe diya only, unless it is forgiven."
+    }
+   ]
+  },
+  {
+   "key": "arsh",
+   "ar": "الأرش",
+   "tr": "al-arsh",
+   "gloss": "al-arsh: the difference in value a defect makes (in a sale), or a wound's indemnity",
+   "definition": "In a sale with a defect (ʿayb): the buyer chooses return or arsh, the difference the defect makes («موجب للرد أو الأرش», F21; F138).",
+   "related": [
+    "ayb",
+    "daman",
+    "diya"
+   ],
+   "distinct_from": [
+    "daman",
+    "diya"
+   ],
+   "furuq": [
+    "F21",
+    "F138"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F21",
+     "excerpt_ar": "موجب للرد أو الأرش",
+     "note": "F21: a defect in a sold thing gives return or arsh."
+    }
+   ]
+  },
+  {
+   "key": "fida",
+   "ar": "الفداء",
+   "tr": "al-fidāʾ",
+   "gloss": "al-fidāʾ: ransoming (a slave from his crime, a captive); not fidya",
+   "definition": "Paying to free someone or something from a claim: the master of a slave who committed a crime «فيخيّر سيده بين فدائه» (F145) by the lesser of his value and the arsh, or delivers him. Not fidya, the expiatory offering.",
+   "related": [
+    "fidya",
+    "arsh"
+   ],
+   "distinct_from": [
+    "fidya"
+   ],
+   "furuq": [
+    "F145"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F145",
+     "excerpt_ar": "فيخيّر سيده بين فدائه",
+     "note": "F145: the master may ransom the slave from his crime."
+    }
+   ]
+  },
+  {
+   "key": "sahih_hadith",
+   "ar": "الصحيح",
+   "tr": "al-ṣaḥīḥ",
+   "sense": "of a ḥadīth",
+   "gloss": "al-ṣaḥīḥ (of a ḥadīth): the grade that makes it ḥujja; not the validity of an act, nor a view the madhhab prefers",
+   "definition": "Ibn Ḥajar, al-Nukhba: the āḥād report «بنقل عدل تام الضبط، متصل السند، غير معلل ولا شاذ» is «الصحيح لذاته»: an upright narrator of complete precision, a connected isnād, no ʿilla and no shudhūdh. It is the top of al-Albānī's verdicts and, with al-ḥasan, what the ḥadīth gate admits (D4, Usul.Seam.admitted).",
+   "conditions": [
+    "ʿadl narrators",
+    "complete ḍabṭ",
+    "connected isnād",
+    "no ʿilla (illa_hadith)",
+    "no shudhūdh"
+   ],
+   "related": [
+    "daif_hadith",
+    "illa_hadith"
+   ],
+   "distinct_from": [
+    "sahih",
+    "sahih_qawl"
+   ],
+   "lean": [
+    "Hadith.Verdict.sahih",
+    "Usul.Seam.admitted"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-nukhba-shamela5940/v04:p722",
+     "excerpt_ar": "بنقل عدل تام الضبط، متصل السند، غير معلل ولا شاذ: هو الصحيح لذاته",
+     "note": "al-Nukhba: the five shurūṭ (sharṭ) of the ṣaḥīḥ li-dhātih."
+    }
+   ]
+  },
+  {
+   "key": "daif_hadith",
+   "ar": "الضعيف",
+   "tr": "al-ḍaʿīf",
+   "sense": "of a ḥadīth",
+   "gloss": "al-ḍaʿīf (of a ḥadīth): below ḥasan, not ḥujja; not a weak view, nor a weak farq",
+   "definition": "Ibn al-Ṣalāḥ: «كل حديث لم يجتمع فيه صفات الحديث الصحيح، ولا صفات الحديث الحسن … فهو حديث ضعيف». The ḥadīth gate rejects it (Usul.Seam.daif_not_admitted); al-Albānī's ḍaʿīf jiddan and mawḍūʿ lie below it.",
+   "related": [
+    "sahih_hadith",
+    "illa_hadith"
+   ],
+   "distinct_from": [
+    "daif_qawl"
+   ],
+   "lean": [
+    "Hadith.Verdict.daif",
+    "Usul.Seam.daif_not_admitted"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-ibn-salah-shamela22870/v01:p041",
+     "excerpt_ar": "كل حديث لم يجتمع فيه صفات الحديث الصحيح، ولا صفات الحديث الحسن المذكورات فيما تقدم، فهو حديث ضعيف",
+     "note": "Ibn al-Ṣalāḥ, the third type."
+    }
+   ]
+  },
+  {
+   "key": "illa_hadith",
+   "ar": "العلة",
+   "tr": "al-ʿilla",
+   "sense": "of a ḥadīth",
+   "gloss": "al-ʿilla (of a ḥadīth): a hidden defect that impairs it; not the ratio legis of qiyās",
+   "definition": "al-Nukhba: «والمعلل ما فيه علة خفية قادحة»; its absence is a sharṭ of the ṣaḥīḥ. The qiyās ʿilla (illa) is the anchor of a ruling, a different term on the same word.",
+   "related": [
+    "sahih_hadith",
+    "daif_hadith"
+   ],
+   "distinct_from": [
+    "illa"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-nukhba-shamela5940/v04:p722",
+     "excerpt_ar": "والمعلل ما فيه علة خفية قادحة",
+     "note": "al-Nukhba, commentary on the ṣaḥīḥ."
+    }
+   ]
+  },
+  {
+   "key": "sahih_qawl",
+   "ar": "الصحيح",
+   "tr": "al-ṣaḥīḥ",
+   "sense": "of a view (tarjīḥ)",
+   "gloss": "al-ṣaḥīḥ (of a view): the view the author or the madhhab prefers (al-ṣaḥīḥ min al-madhhab); not the validity of an act, nor a ḥadīth grade",
+   "definition": "A tarjīḥ inside the khilāf: Ibn Rajab, of the riwāyas on the unborn child, «والصحيح من المذهب أن له حكما» (Q84). It weighs views; whether the act it rules on is ṣaḥīḥ is the other term (sahih).",
+   "related": [
+    "asahh",
+    "daif_qawl"
+   ],
+   "distinct_from": [
+    "sahih",
+    "sahih_hadith"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p178",
+     "excerpt_ar": "قالوا والصحيح من المذهب أن له حكما",
+     "note": "Ibn Rajab Q84."
+    }
+   ]
+  },
+  {
+   "key": "asahh",
+   "ar": "الأصح",
+   "tr": "al-aṣaḥḥ",
+   "sense": "of two wujūh or riwāyas (tarjīḥ)",
+   "gloss": "al-aṣaḥḥ: the sounder of two wujūh or riwāyas, a tarjīḥ inside the madhhab; English «sounder» must say so",
+   "definition": "Ibn Rajab: the muḥrim who kills attacking game «لم يضمنه على أصح الوجهين» (Q26); al-Manṣūṣ on the waqf suspended (taʿlīq) on death, «وقال القاضي لا يصح والأول أصح» (Q133). It ranks wujūh; it is not a ḥadīth grade.",
+   "related": [
+    "sahih_qawl",
+    "daif_qawl"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p036",
+     "excerpt_ar": "لو صال عليه صيد في إحرامه فقتله دفعا عن نفسه لم يضمنه على أصح الوجهين",
+     "note": "Q26."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p299",
+     "excerpt_ar": "وقال القاضي لا يصح والأول أصح",
+     "note": "Q133."
+    }
+   ]
+  },
+  {
+   "key": "daif_qawl",
+   "ar": "الضعيف",
+   "tr": "al-ḍaʿīf",
+   "sense": "of a view or wajh",
+   "gloss": "al-ḍaʿīf (of a view): a wajh or derivation the author holds weak; not a ḥadīth grade",
+   "definition": "Ibn Rajab on the derived wajh that a lease of a freed slave lapses: «وهذا ضعيف فإن الولي تنقطع ولايته بالكلية عن الصبي ببلوغه رشيدا، بخلاف السيد» (Q34). It weighs a view, not a report.",
+   "related": [
+    "sahih_qawl",
+    "asahh"
+   ],
+   "distinct_from": [
+    "daif_hadith"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p042",
+     "excerpt_ar": "وهذا ضعيف فإن الولي تنقطع ولايته بالكلية عن الصبي ببلوغه رشيدا، بخلاف السيد فإن استثناء منافعه بالشرط",
+     "note": "Q34."
+    }
+   ]
+  },
+  {
+   "key": "farq_sahih",
+   "ar": "الفروق الصحيحة",
+   "tr": "al-furūq al-ṣaḥīḥa",
+   "sense": "of a farq",
+   "gloss": "a sound farq: al-Saʿdī's grade for a distinction he upholds (Grade.sahih)",
+   "definition": "al-Saʿdī lists furūq under «ومن الفروق الصحيحة» (e.g. F28, «الفرق بين شروط الأشياء والشروط فيها»): the two masāʾil are rightly ruled apart.",
+   "related": [
+    "farq_daif"
+   ],
+   "furuq": [
+    "F28"
+   ],
+   "lean": [
+    "Usul.Furuq.Grade.sahih",
+    "Usul.Furuq.Grade.apart"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F28",
+     "excerpt_ar": "ومن الفروق الصحيحة: الفرق بين شروط الأشياء والشروط فيها",
+     "note": "F28."
+    }
+   ]
+  },
+  {
+   "key": "farq_daif",
+   "ar": "الفروق الضعيفة",
+   "tr": "al-furūq al-ḍaʿīfa",
+   "sense": "of a farq",
+   "gloss": "a weak farq: al-Saʿdī's grade for a distinction he rejects (Grade.daif): the masāʾil are alike",
+   "definition": "al-Saʿdī: «وهذا الفرق ضعيف لعدم ثبوت الفرق بينهما في هذا الموضع شرعاً» (F04); he lists others under «ومن الفروق الضعيفة». A weak farq overturns a reported one (Usul.Furuq.overturn_iff_daif).",
+   "related": [
+    "farq_sahih"
+   ],
+   "furuq": [
+    "F04"
+   ],
+   "lean": [
+    "Usul.Furuq.Grade.daif",
+    "Usul.Furuq.overturn_iff_daif"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F04",
+     "excerpt_ar": "وهذا الفرق ضعيف لعدم ثبوت الفرق بينهما في هذا الموضع شرعاً",
+     "note": "F04."
+    }
+   ]
+  },
+  {
+   "key": "shart_fiha",
+   "ar": "الشروط فيها",
+   "tr": "al-shurūṭ fīhā",
+   "gloss": "al-shurūṭ fīhā: a stipulation a party makes in a contract (F28); not a condition of the contract itself (al-sharṭ)",
+   "definition": "al-Saʿdī F28: «وأما الشروط فيها فهي أمور خارجة عن نفس العقود، وإنما يشرطها أحد المتعاقدين لغرض له خاص»; they bind when ṣaḥīḥ, «وهي الشروط التي لا تدخل في محرم، ولا تخرح عن واجب»: «فالمسلمون على شروطهم». Against them stand the shurūṭ of the things, «مقوماتها التي لا تتم ولا تصح إلا بها» (al-sharṭ). He counts the taʿlīqāt among the stipulations (F23).",
+   "related": [
+    "shart",
+    "taliq",
+    "sahih"
+   ],
+   "distinct_from": [
+    "shart",
+    "taliq"
+   ],
+   "furuq": [
+    "F28",
+    "F26"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F28",
+     "excerpt_ar": "وأما الشروط فيها فهي أمور خارجة عن نفس العقود، وإنما يشرطها أحد المتعاقدين لغرض له خاص",
+     "note": "F28: the stipulations, external to the contract."
+    }
+   ]
+  },
+  {
+   "key": "taliq",
+   "ar": "التعليق",
+   "tr": "al-taʿlīq",
+   "gloss": "al-taʿlīq: suspending a contract, a divorce or a manumission on an event («إن…»); English «conditional» must say so",
+   "definition": "Tying the effect of a disposition to a future event or a description: «لو علق الطلاق بالولادة» (Ibn Rajab Q133), «ومُعلَّقٌ عتقه على صفة» (al-Saʿdī). The madhhab bars it in contracts except agency and guardianships and allows it in cancellations; al-Saʿdī grades that farq ḍaʿīf, «والصواب: أن العقود كلها كالفسوخ يصح تعليقها», and counts it a stipulation, «ومن أهم الشروط التعليقات» (F23). Ibn Taymiyya treats a divorce suspended to urge or deter as an oath (F60).",
+   "related": [
+    "shart_fiha",
+    "shart"
+   ],
+   "distinct_from": [
+    "shart",
+    "shart_fiha"
+   ],
+   "furuq": [
+    "F23",
+    "F60",
+    "F156"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F23",
+     "excerpt_ar": "والصواب: أن العقود كلها كالفسوخ يصح تعليقها، ولا فرق بينها",
+     "note": "F23."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p298",
+     "excerpt_ar": "لو علق الطلاق بالولادة فشهد بها النساء",
+     "note": "Q133."
+    }
+   ]
+  },
+  {
+   "key": "ibtal",
+   "ar": "الإبطال",
+   "tr": "al-ibṭāl",
+   "sense": "of an ʿilla or argument",
+   "gloss": "al-ibṭāl: refuting an ʿilla or an argument (its buṭlān); not the voidness of an act or contract (al-bāṭil)",
+   "definition": "The dialectical sense of «void»: al-Ṭūfī's sabr is «إبطال كل علة علل بها الحكم المعلل إجماعا، إلا واحدة فتعين», and whether naqḍ voids an ʿilla is «بطلان العلة». The sources also say ifsād («إفساد علة خصمه») and qadḥ (qadh). It ranks arguments; whether an act is bāṭil is the other term.",
+   "related": [
+    "qadh",
+    "naqd",
+    "sabr_wal_taqsim"
+   ],
+   "distinct_from": [
+    "batil"
+   ],
+   "forms": [
+    "إبطال",
+    "مبطل",
+    "بطلان",
+    "إفساد",
+    "ifsād"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p404",
+     "excerpt_ar": "النوع الثاني السبر: وهو إبطال كل علة علل بها الحكم المعلل إجماعا، إلا واحدة فتعين",
+     "note": "al-Ṭūfī: sabr is ibṭāl."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p498",
+     "excerpt_ar": "وهو إبداء العلة بدون الحكم، وفي بطلان العلة به خلاف",
+     "note": "al-Ṭūfī: naqḍ, and whether it voids the ʿilla."
+    }
+   ]
+  },
+  {
+   "key": "qadh",
+   "ar": "القدح",
+   "tr": "al-qadḥ",
+   "sense": "of an ʿilla",
+   "gloss": "al-qadḥ: impairing an ʿilla (an objection that tells against it); «naqḍ impairs» is qadḥ",
+   "definition": "al-Kawkab on naqḍ: «والقول الثاني: يقدح. اختاره من أصحابنا: ابن حامد وقاله القاضي أيضا», against takhṣīṣ al-ʿilla, where the ʿilla stays ḥujja in the rest. The objections are «القوادح».",
+   "related": [
+    "ibtal",
+    "naqd",
+    "takhsis_al_illa"
+   ],
+   "forms": [
+    "يقدح",
+    "قادح",
+    "قوادح"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p058",
+     "excerpt_ar": "والقول الثاني: يقدح. اختاره من أصحابنا: ابن حامد وقاله القاضي أيضا",
+     "note": "al-Kawkab: the second view on naqḍ."
+    }
+   ]
+  },
+  {
+   "key": "qiyas_sahih",
+   "ar": "القياس الصحيح",
+   "tr": "al-qiyās al-ṣaḥīḥ",
+   "sense": "of a qiyās",
+   "gloss": "al-qiyās al-ṣaḥīḥ: the sound qiyās, which never contradicts a ṣaḥīḥ text; against al-qiyās al-fāsid",
+   "definition": "Ibn al-Qayyim: «والقياس الصحيح هو الميزان»; Ibn Taymiyya: the ṣaḥīḥ is joining like cases and separating unlike ones, and «ليس في الشريعة شيء على خلاف القياس الصحيح بل على خلاف القياس الفاسد». A qiyās is ṣaḥīḥ as an argument; whether the act it rules on is ṣaḥīḥ is the other term (sahih).",
+   "related": [
+    "qiyas",
+    "sahih"
+   ],
+   "distinct_from": [
+    "sahih"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-ilam-shamela11496/v01:p103",
+     "excerpt_ar": "والقياس الصحيح هو الميزان؛ فالأولى تسميته بالاسم الذي سماه الله به",
+     "note": "Ibn al-Qayyim."
+    }
+   ]
+  },
+  {
+   "key": "hukm_hakim",
+   "ar": "حكم الحاكم",
+   "tr": "ḥukm al-ḥākim",
+   "sense": "of a judge",
+   "gloss": "ḥukm al-ḥākim: a judge's verdict in a dispute; not the sharʿī ruling (al-ḥukm) it applies",
+   "definition": "Ibn Rajab Q68: «لو حكم حاكم في مسألة مختلف فيها بما يرى أن الحق في غيره أثم وعصى بذلك ولم ينقض حكمه إلا أن يكون مخالفا لنص صريح» (Ibn Abī Mūsā); al-Sāmirī undoes it, «لأن شرط صحة الحكم موافقة الاعتقاد». A verdict is undone (naqḍ al-ḥukm) by a clear text, not by another ijtihād: «الاجتهاد لا ينقض بالاجتهاد». The sharʿī ḥukm is the Lawgiver's address; the verdict binds (ilzām) the parties in one case.",
+   "related": [
+    "hukm"
+   ],
+   "distinct_from": [
+    "hukm"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p122",
+     "excerpt_ar": "لو حكم حاكم في مسألة مختلف فيها بما يرى أن الحق في غيره أثم وعصى بذلك ولم ينقض حكمه إلا أن يكون مخالفا لنص صريح",
+     "note": "Ibn Rajab Q68.f009."
+    }
+   ]
+  },
+  {
+   "key": "zakat",
+   "ar": "الزكاة",
+   "tr": "al-zakāt",
+   "gloss": "al-zakāt: the obligatory (wājib) alms on wealth of a niṣāb after the ḥawl; not any charity (al-ṣadaqa)",
+   "definition": "The fixed due on wealth reaching the niṣāb at the end of the ḥawl. Ibn Rajab Q18 sets it against a vowed (nadhr) ṣadaqa of the same niṣāb: «لو نذر الصدقة بنصاب من المال وقت حلول الحول، فهل تجب فيه الزكاة؟ على وجهين», and whether one payment discharges both is a second pair of wujūh.",
+   "related": [
+    "sadaqa"
+   ],
+   "distinct_from": [
+    "sadaqa"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p024",
+     "excerpt_ar": "لو نذر الصدقة بنصاب من المال وقت حلول الحول، فهل تجب فيه الزكاة؟ على وجهين",
+     "note": "Ibn Rajab Q18.f004."
+    }
+   ]
+  },
+  {
+   "key": "sadaqa",
+   "ar": "الصدقة",
+   "tr": "al-ṣadaqa",
+   "gloss": "al-ṣadaqa: giving for God's sake, voluntary (taṭawwuʿ) or vowed or owed as a fidya; not the zakāt",
+   "definition": "The general word: the muḥrim's fidya is «فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ» (al-Baqara 196); the unclaimed luqaṭa that cannot be owned «يتصدق به عنه على الصحيح» (Ibn Rajab Q106); a vowed ṣadaqa becomes owed by the vow (nadhr, Q18). The zakāt is the fixed due on a niṣāb (zakat).",
+   "related": [
+    "zakat",
+    "fidya"
+   ],
+   "distinct_from": [
+    "zakat"
+   ],
+   "nusus": [
+    "Q002:196c"
+   ],
+   "forms": [
+    "تصدق",
+    "صدقة"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p238",
+     "excerpt_ar": "وما لا يتملك منها يتصدق به عنه على الصحيح",
+     "note": "Ibn Rajab Q106.f002."
+    }
+   ]
+  },
+  {
+   "key": "yamin",
+   "ar": "اليمين",
+   "tr": "al-yamīn",
+   "sense": "a binding oath (ḥalif)",
+   "gloss": "al-yamīn: a binding oath by God (or by divorce or manumission), broken by ḥinth and released by kaffāra; not the oath of a claim",
+   "definition": "al-Saʿdī F63 separates «لغو اليمين، وهي: اليمين التي لم يقصدها الحالف» from the binding oath on a future matter, which carries kaffāra when broken (al-Māʾida 89; «من حلف على يمين فرأى غيرها خيرا منها فليكفر عن يمينه»). It is not a vow (al-nadhr): in the vow the obedience is the aim, «فالطاعة فيه مقصودة، بخلاف اليمين» (F59). An oath «by divorce» is often a taʿlīq; Ibn Taymiyya treats one made to urge or deter as a yamīn «لوجود روح اليمين فيه ومعناه» (F60).",
+   "related": [
+    "kaffara",
+    "nadhr",
+    "taliq"
+   ],
+   "distinct_from": [
+    "yamin_daawa",
+    "nadhr"
+   ],
+   "nusus": [
+    "Q002:224",
+    "Q005:089",
+    "H-halaf-khayr"
+   ],
+   "furuq": [
+    "F59",
+    "F60",
+    "F63",
+    "F64"
+   ],
+   "forms": [
+    "حلف",
+    "ḥalaf",
+    "ḥalif",
+    "aymān",
+    "أيمان",
+    "يحنث",
+    "حنث",
+    "ḥinth",
+    "يمينه"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F63",
+     "excerpt_ar": "الفرق بين لغو اليمين، وهي: اليمين التي لم يقصدها الحالف",
+     "note": "F63."
+    }
+   ]
+  },
+  {
+   "key": "yamin_daawa",
+   "ar": "اليمين",
+   "tr": "al-yamīn",
+   "sense": "of a claim (a means of proof)",
+   "gloss": "al-yamīn (of a claim): the oath that settles a dispute, «واليمين على من أنكر»; not a binding oath",
+   "definition": "Al-Saʿdī Q10: «البينة على المدعي، واليمين على من أنكر»; with one witness it completes the proof («بشاهد ويمين», Ibn Rajab Q133). Ibn Rajab Q160 on a thing held for one of two: «وهل يحلف؟ على وجهين … والمنصوص عن أحمد أن عليه اليمين». It establishes a right; it is not broken and carries no kaffāra.",
+   "related": [
+    "yamin"
+   ],
+   "distinct_from": [
+    "yamin"
+   ],
+   "forms": [
+    "يحلف",
+    "shāhid wa-yamīn"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p363",
+     "excerpt_ar": "وهل يحلف؟ على وجهين، ذكرهما أبو بكر. والمنصوص عن أحمد أن عليه اليمين",
+     "note": "Ibn Rajab Q160.f044."
+    }
+   ]
+  },
+  {
+   "key": "nadhr",
+   "ar": "النذر",
+   "tr": "al-nadhr",
+   "gloss": "al-nadhr: a vow, binding oneself to an act of obedience; to be fulfilled, not expiated (except the vow that runs as an oath)",
+   "definition": "al-Saʿdī F59: «النذر الذي يتعين الوفاء به الذي هو إلزام المكلف نفسه طاعة لله»; «فالطاعة فيه مقصودة، بخلاف اليمين». What it obliges joins what the law obliges (Q47). The vow of obstinacy or anger (nadhr al-lajāj wa-l-ghaḍab) runs as an oath and is expiated (F61).",
+   "related": [
+    "yamin",
+    "kaffara"
+   ],
+   "distinct_from": [
+    "yamin"
+   ],
+   "furuq": [
+    "F59",
+    "F61"
+   ],
+   "forms": [
+    "نذر",
+    "nudhūr"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F59",
+     "excerpt_ar": "فالطاعة فيه مقصودة، بخلاف اليمين",
+     "note": "F59."
+    }
+   ]
+  },
+  {
+   "key": "talaq",
+   "ar": "الطلاق",
+   "tr": "al-ṭalāq",
+   "gloss": "al-ṭalāq: the husband's dissolving of the marriage by his word; not faskh, nor its dissolving of itself (infisākh)",
+   "definition": "The husband ends the marriage by his own word, without her knowledge or consent (Q45; Ibn Rajab Q63: «فإن الزوج يستقل بإزالته بالطلاق»). It is revocable (rajʿī) within the ʿidda or irrevocable (bāʾin): «وتبين المرأة من الزوج إذا كمل الطلاق» (F161). Khulʿ is disputed between ṭalāq and faskh («سواء قيل هو فسخ أو طلاق»), and the ruling of a khulʿ through a stranger is the same on both.",
+   "related": [
+    "khul",
+    "faskh",
+    "infisakh",
+    "taliq"
+   ],
+   "distinct_from": [
+    "faskh",
+    "infisakh",
+    "khul"
+   ],
+   "forms": [
+    "طلق",
+    "طالق",
+    "طلاق",
+    "ṭallaqa",
+    "muṭallaqa",
+    "rajʿiyya",
+    "رجعية",
+    "bāʾin",
+    "بائن"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p115",
+     "excerpt_ar": "فإن الزوج يستقل بإزالته بالطلاق",
+     "note": "Ibn Rajab Q63."
+    }
+   ]
+  },
+  {
+   "key": "faskh",
+   "ar": "الفسخ",
+   "tr": "al-faskh",
+   "gloss": "al-faskh: undoing a contract by a party's (or a judge's) act, for a defect, an option or a right; not ṭalāq, nor the contract's dissolving of itself (infisākh)",
+   "definition": "A party with the right undoes the contract: «فسخ المعتقة تحت عبد، ومنها فسخ البيع المعيب والمدلس» (Ibn Rajab Q63); the agreed faskh needs no judge, the disputed one does (F99). Contracts made before a faskh by choice stand, unlike those built on a contract that proves fāsid (Q53, F30).",
+   "related": [
+    "infisakh",
+    "talaq",
+    "khul"
+   ],
+   "distinct_from": [
+    "infisakh",
+    "talaq"
+   ],
+   "furuq": [
+    "F30",
+    "F99"
+   ],
+   "forms": [
+    "فسخ",
+    "الفسوخ",
+    "fusūkh",
+    "fasakha"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F99",
+     "excerpt_ar": "وكذلك فرّقوا في الفسوخ المتفق على إثباتها، فلا تحتاج إلى حاكم",
+     "note": "F99."
+    }
+   ]
+  },
+  {
+   "key": "infisakh",
+   "ar": "الانفساخ",
+   "tr": "al-infisākh",
+   "gloss": "al-infisākh: a contract's dissolving of itself when its ground lapses (suckling proven, a sharṭ gone); no one's act, unlike faskh",
+   "definition": "Ibn Rajab Q133: «شهادة امرأة على الرضاع يقبل على المذهب ويترتب على ذلك انفساخ النكاح»; Q7: «ثم زال أحد الشرطين، فهل ينفسخ نكاحه»; Q34: «لم تنفسخ الإجارة على المذهب». al-Saʿdī F30: «إذا انفسخ لظهور مبطل ومفسد». No party annuls; the contract ends.",
+   "related": [
+    "faskh",
+    "talaq"
+   ],
+   "distinct_from": [
+    "faskh",
+    "talaq"
+   ],
+   "forms": [
+    "ينفسخ",
+    "انفسخ",
+    "انفساخ",
+    "تنفسخ",
+    "infasakha"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p298",
+     "excerpt_ar": "شهادة امرأة على الرضاع يقبل على المذهب ويترتب على ذلك انفساخ النكاح",
+     "note": "Ibn Rajab Q133.f003."
+    }
+   ]
+  },
+  {
+   "key": "khul",
+   "ar": "الخلع",
+   "tr": "al-khulʿ",
+   "gloss": "al-khulʿ: the wife's release from the marriage for a price; disputed between ṭalāq and faskh",
+   "definition": "Ibn Rajab Q63: «ومنها الخلع فإنه يصح مع الأجنبي على المذهب سواء قيل هو فسخ أو طلاق», with a wajh barring it through a stranger if it is faskh. al-Saʿdī holds the farq between khulʿ and ṭalāq of a part of the wife weak (F46).",
+   "related": [
+    "talaq",
+    "faskh"
+   ],
+   "distinct_from": [
+    "talaq",
+    "faskh"
+   ],
+   "furuq": [
+    "F46"
+   ],
+   "forms": [
+    "خلع",
+    "khulʿ"
+   ],
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p115",
+     "excerpt_ar": "ومنها الخلع فإنه يصح مع الأجنبي على المذهب سواء قيل هو فسخ أو طلاق",
+     "note": "Ibn Rajab Q63.f000."
+    }
+   ]
+  },
+  {
+   "key": "fard",
+   "ar": "الفرض",
+   "tr": "al-farḍ",
+   "gloss": "al-farḍ: the obligatory; one with al-wājib in the sounder riwāya, more emphatic in the other; of the individual (ʿayn) or of the community (kifāya)",
+   "definition": "Ibn al-Laḥḥām: «الفرض والواجب مترادفان شرعا في أصح الروايتين عن أحمد», and in the other «الفرض آكد». Against it stands the nafl (F01–F10: the fard prayer and the nafl). A farḍ kifāya lapses when enough perform it (the Friday on the ʿĪd, Ibn Rajab 18).",
+   "related": [
+    "wajib",
+    "mandub"
+   ],
+   "forms": [
+    "فرض",
+    "فريضة",
+    "farīḍa",
+    "farāʾiḍ"
+   ],
+   "refs": [
+    {
+     "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q010",
+     "note": "Farḍ and wājib: synonyms in the sounder riwāya; farḍ more emphatic in the other."
+    }
+   ]
+  },
+  {
+   "key": "luzum",
+   "ar": "اللزوم",
+   "tr": "al-luzūm",
+   "sense": "of a contract",
+   "gloss": "al-luzūm: a contract's being binding (lāzim: neither party may undo it alone) against jāʾiz; not the obligatoriness of an act (wujūb)",
+   "definition": "al-Saʿdī: hire is lāzim, the reward contract not, «لأن الجعالة عقد جائز» (F91); the pledge «لا يلزم عند الأصحاب إلا بالقبض», though he holds «قوي بلزومه مطلقاً، وهو الصحيح» (F144). A jāʾiz contract may be undone without the other's knowledge (Ibn Rajab Q63). The «not binding» of an objection (kasr, «فغير لازم») is a third use: the opponent need not answer it.",
+   "related": [
+    "faskh",
+    "wajib"
+   ],
+   "distinct_from": [
+    "wajib"
+   ],
+   "furuq": [
+    "F91",
+    "F144"
+   ],
+   "forms": [
+    "لازم",
+    "lāzim",
+    "جائز",
+    "jāʾiz",
+    "يلزم",
+    "لزوم",
+    "lazima",
+    "انعقد",
+    "inʿiqād"
+   ],
+   "refs": [
+    {
+     "ref": "src:islamhouse-qj-doc#F91",
+     "excerpt_ar": "لأن الجعالة عقد جائز",
+     "note": "F91: the juʿāla is jāʾiz."
     }
    ]
   }
