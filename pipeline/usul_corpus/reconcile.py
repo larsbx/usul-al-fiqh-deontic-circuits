@@ -182,6 +182,8 @@ def _proof_errors(f: str, case: dict, entry: dict) -> list[str]:
         errs.append(f"{f}: an advantage names two listed positions, a murajjiḥ, a ref and its excerpt")
     elif not weighed(entry) and entry.get("advantages"):
         errs.append(f"{f}: advantages weigh proofs; record the proofs")
+    if weighed(entry) and not entry["proofs"] and not str(entry.get("searched", "")).strip():
+        errs.append(f"{f}: weighed with no proof: say where the proofs were searched for")
     return errs
 
 
@@ -404,7 +406,7 @@ def draft(cases: list[dict], ledger: dict) -> list[dict]:
             for c in candidates(cases) if c["far"] not in have]
 
 
-WEIGHED = ("proofs", "advantages")
+WEIGHED = ("proofs", "advantages", "searched")
 
 
 def load(corpus: Path) -> dict:

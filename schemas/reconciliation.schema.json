@@ -314,6 +314,11 @@
                 }
               }
             }
+          },
+          "searched": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Where the weigher looked for the positions' proofs; required when none was found."
           }
         }
       }

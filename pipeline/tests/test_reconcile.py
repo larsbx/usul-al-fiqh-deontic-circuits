@@ -116,10 +116,13 @@ def test_proofs_name_positions_tiers_and_their_source():
         f"x: a proof names a listed position, a tier from {reconcile.TIERS}, a ref and its excerpt"]
     assert reconcile.check([c], {"entries": [{**e, "proofs": [_proof(0, "tashih")]}]}, DOSSIER) == [
         f"x: a proof names a listed position, a tier from {reconcile.TIERS}, a ref and its excerpt"]
-    assert reconcile.check([c], {"entries": [{**e, "proofs": [], "advantages": [_adv(0, 0, "muthbit")]}]}, DOSSIER) == [
+    assert reconcile.check([c], {"entries": [{**e, "proofs": [_proof(0, "zanni")], "advantages": [_adv(0, 0, "muthbit")]}]}, DOSSIER) == [
         "x: an advantage names two listed positions, a murajjiḥ, a ref and its excerpt"]
     assert reconcile.check([c], {"entries": [{**e, "advantages": [_adv(0, 1, "muthbit")]}]}, DOSSIER) == [
         "x: advantages weigh proofs; record the proofs"]
+    assert reconcile.check([c], {"entries": [{**e, "proofs": []}]}, DOSSIER) == [
+        "x: weighed with no proof: say where the proofs were searched for"]
+    assert reconcile.check([c], {"entries": [{**e, "proofs": [], "searched": "al-Mughnī v05:p100"}]}, DOSSIER) == []
 
 
 def test_check_demands_every_contradiction_and_a_grade_per_position():
