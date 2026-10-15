@@ -1,0 +1,122 @@
+{
+  "fixture_id": "finite_deontic_boundary_v1",
+  "note": "Boundary fixture: Boolean projections are derived from finite hukm tags and must not replace them.",
+  "verdicts": [
+    {
+      "id": "khawf_allah_wajib",
+      "target": {"kind": "root", "id": "khawf"},
+      "object": "allah_essence",
+      "subject": "all_mukallafin",
+      "operator": "o",
+      "verdict": "wajib",
+      "condition": {
+        "id": "stronger_than_other_than_allah",
+        "description": "Fear of Allah is deontically ordered above fear of other-than-Allah."
+      },
+      "warrant_id": "quranic_3_175",
+      "projection_notes": ["weak_permissible", "ideal_positive", "is_required"]
+    },
+    {
+      "id": "khawf_other_than_allah_forbidden_when_displacing_taqwa",
+      "target": {"kind": "root", "id": "khawf"},
+      "object": "other_than_allah",
+      "subject": "all_mukallafin",
+      "operator": "f",
+      "verdict": "haram",
+      "condition": {
+        "id": "when_displaces_taqwa",
+        "description": "Fear of other-than-Allah is forbidden when it displaces taqwa."
+      },
+      "warrant_id": "quranic_3_175",
+      "projection_notes": ["is_forbidden", "path_excluding"]
+    },
+    {
+      "id": "huzn_loss_neutral",
+      "target": {"kind": "root", "id": "huzn"},
+      "object": "genuine_loss",
+      "subject": "all_mukallafin",
+      "operator": "p",
+      "verdict": "mubah",
+      "condition": {
+        "id": "ordinary_loss_without_unbelief_or_despair",
+        "description": "Grief over genuine loss is not itself a forbidden deontic state."
+      },
+      "warrant_id": "quranic_generic_loss_warrant",
+      "projection_notes": ["weak_permissible", "is_neutral"]
+    },
+    {
+      "id": "ghadab_uncontrolled_demoted",
+      "target": {"kind": "root", "id": "ghadab"},
+      "object": "creation",
+      "subject": "all_mukallafin",
+      "operator": "d",
+      "verdict": "makruh",
+      "condition": {
+        "id": "when_uncontrolled",
+        "description": "Uncontrolled anger is path-demoting but not identical to haram without a stronger condition."
+      },
+      "warrant_id": "ethical_control_warrant",
+      "projection_notes": ["weak_permissible", "is_discouraged", "path_demoting"]
+    }
+  ],
+  "projection_rules": [
+    {
+      "id": "projection_is_required",
+      "projection": "is_required",
+      "true_for": ["wajib"],
+      "note": "Obligation is a projection of the wajib tag only."
+    },
+    {
+      "id": "projection_is_forbidden",
+      "projection": "is_forbidden",
+      "true_for": ["haram"],
+      "note": "Forbidden is a projection of the haram tag only."
+    },
+    {
+      "id": "projection_weak_permissible",
+      "projection": "weak_permissible",
+      "true_for": ["wajib", "mandub", "mubah", "makruh"],
+      "note": "Weak permission means not path-excluding; it does not mean neutral."
+    },
+    {
+      "id": "projection_ideal_positive",
+      "projection": "ideal_positive",
+      "true_for": ["wajib", "mandub"],
+      "note": "Ideal-positive paths satisfy required and recommended constraints."
+    },
+    {
+      "id": "projection_path_demoting",
+      "projection": "path_demoting",
+      "true_for": ["makruh"],
+      "note": "Makruh demotes a path without automatically excluding it."
+    },
+    {
+      "id": "projection_path_excluding",
+      "projection": "path_excluding",
+      "true_for": ["haram"],
+      "note": "Haram excludes a path from ideality unless a higher-priority exception is explicitly modeled."
+    }
+  ],
+  "forbidden_collapses": [
+    {
+      "id": "collapse_not_haram_to_mubah",
+      "invalid_equation": "not_haram = mubah",
+      "reason": "not_haram includes wajib, mandub, mubah, and makruh."
+    },
+    {
+      "id": "collapse_not_wajib_to_haram",
+      "invalid_equation": "not_wajib = haram",
+      "reason": "not_wajib includes mandub, mubah, makruh, haram, and no_ruling."
+    },
+    {
+      "id": "collapse_allowed_to_neutral",
+      "invalid_equation": "allowed = mubah",
+      "reason": "wajib, mandub, and makruh may be weakly permissible without being neutral."
+    },
+    {
+      "id": "collapse_ideal_to_not_haram",
+      "invalid_equation": "ideal = not_haram",
+      "reason": "Ideality must account for wajib satisfaction, mandub preference, and makruh demotion."
+    }
+  ]
+}
