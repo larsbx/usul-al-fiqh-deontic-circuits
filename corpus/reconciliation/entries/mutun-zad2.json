@@ -1,0 +1,56 @@
+{
+ "entries": [
+  {
+   "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p03",
+   "grades": [
+    "wajh",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Water enough for part of the purification, the muḥdith's branch: Ibn Rajab reports two wujūh (q008.f003, graded as there); Zād and ʿUmda state the obligation to use it decisively, al-Inṣāf labels it the madhhab, al-Muntahā states it; the other wajh is Abū Bakr's and Ibn Abī Mūsā's. The tarjīḥ lands on the reading's side, the case's expected.",
+   "evidence": [
+    {
+     "ref": "src:openiti-hajjawi-zadmustaqni-shamela11230/v01:p033",
+     "excerpt_ar": "ومن وجد ماء يكفي بعض طهره تيمم بعد استعماله ومن جرح تيمم له وغسل الباقي.",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, Zād al-Mustaqniʿ",
+     "note": "The matn states it decisively for any purification («بعض طهره»), the muḥdith's included."
+    },
+    {
+     "ref": "src:openiti-ibnqudama-umda-shamela11315/v01:p017",
+     "excerpt_ar": "فإن أمكنه استعماله في بعض بدنه أو وجد ماء لا يكفيه لطهارته استعمله وتيمم للباقي.",
+     "position": 0,
+     "grade": "jazm",
+     "who": "Ibn Qudāma, ʿUmdat al-Fiqh",
+     "note": "The other matn states it decisively, without distinguishing the ḥadaths."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p273",
+     "excerpt_ar": "إحداهما: يلزمه استعماله. وهو المذهب. وعليه الجمهور، وجزم به في الوجيز، والعمدة، والإفادات، والمنور، والمنتخب، وغيرهم، واختاره ابن عبدوس في تذكرته، وصححه في التصحيح، والمغني، والشرح، والفروع، وشرح المجد",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "For the muḥdith, al-Inṣāf labels the obligation to use it the madhhab, held by the majority."
+    },
+    {
+     "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v01:p097",
+     "excerpt_ar": "وإن وجد حتى المحدث ماء لا يكفي لطهارة استعمله ثم تيمم",
+     "position": 0,
+     "grade": "jazm",
+     "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+     "note": "Even the muḥdith uses the insufficient water, then performs tayammum."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p273",
+     "excerpt_ar": "قال الزركشي: هذا أشهر الوجهين، واختاره القاضي وغيره. والوجه الثاني: لا يلزمه استعماله، اختاره أبو بكر، وابن أبي موسى، وقدمه في الرعاية الصغرى.",
+     "position": 1,
+     "grade": "ashab",
+     "who": "al-Mardāwī, al-Inṣāf, reporting Abū Bakr and Ibn Abī Mūsā",
+     "note": "The other wajh, held by named companions."
+    }
+   ]
+  }
+ ]
+}
