@@ -1,0 +1,917 @@
+{
+ "entries": [
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q001",
+   "adilla": [
+    {
+     "ref": "Q016:090",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p023",
+      "excerpt_ar": "هذا الأصل شامل لجميع الشريعة؛ لا يشذ عنه شيء من أحكامها، لا فرق بين ما تعلق بالأصول أو بالفروع، وسواء تعلق بحقوق الله، أو بحقوق عباده . قال الله تعالى : 9 © إن لَه يمر ِالْمدلٍ والْإِحَسنٍ وَإتَي ذى اقرف وين عَنِ الْنَحْتََ انكر لبي 1 مَنَحُ تَ ونس ١4 فلم يَبْقَ عدل ولا إحسان ولا صلة إلا أمر به في هذه الاية الكريمة",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q007:033",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p023",
+      "excerpt_ar": "كما جمعت الآية التي بعدها أصول المحرمات، ونبهت على قبحهاء وهي قوله تعالى : قَلْ نَم حَرّم رق الْفوحكن",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q002:219",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p026",
+      "excerpt_ar": "والعدل مصالحه خالصة»؛ والظلم مفاسده خالصة، والميسر والخمر مفاسدهما ومضارهما أكثر من نفعهما ولذلك حرمهما الله قال تعالى: فِهمآ ثم كير وَمَلَفِمٌ لِِنَاسٍ وَإِتْمَهُمَآ أَسخَبرٌ من نجهم",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "al-Saʿdī grounds the qāʿida (al-maṣlaḥa khāliṣa aw rājiḥa) directly on Q16:90: «هذا الأصل شامل لجميع الشريعة … قال الله تعالى: إن الله يأمر بالعدل والإحسان…», then «فلم يبق عدل ولا إحسان ولا صلة إلا أمر به في هذه الآية» and nothing of al-faḥshāʾ, al-munkar or al-baghy but it forbids. He pairs Q7:33 as gathering the uṣūl of the prohibitions and noting their ugliness (the forbidding half). Q2:219 he adduces for the rājiḥa case: wine and maysir, whose harm exceeds their benefit, «ولذلك حرمهما الله». Ibn ʿUthaymīn (bayts 10–12) reads Q2:219 the same way for preponderant and equal harm («والدليل على هذه المسألة»). The OCR garbles the āyāt; the editor's footnotes name al-Naḥl 90 and al-Aʿrāf 33."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995_tess.q002",
+   "adilla": [
+    {
+     "ref": "Q009:120",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p028",
+      "excerpt_ar": "وكذلك الخروج إلى الحج والعمرة 6 والجهاد في سبيل الله من حين يحرج ويذهب من محله إلى أن يرجع إلى مقره وهو 1 عبادة 3 لأنها وسائل للعبادة ومتممات لها. قال تعالى: ذّلكى بِأنْهُرٌ ا يُصِبْهُرٌُ ْم نسب ولا لخمصسة",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "al-Wasāʾil lahā aḥkām al-maqāṣid. al-Saʿdī argues it mainly from the nature of a command («فالأمر بالشيء أمر به وبما لا يتم إلا به»); the one āya he adduces is Q9:120–121, for the farʿ that going out to ḥajj, ʿumra and jihād is worship «لأنها وسائل للعبادة ومتممات لها»: thirst, fatigue, hunger and every valley crossed are written for them. He also cites «وفي الحديث الصحيح: من سلك طريقا يلتمس فيه علما» (Muslim, per the editor), not added here. Ibn ʿUthaymīn's Manẓūma has no bayt on al-wasāʾil as such."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995_tess.q003",
+   "adilla": [
+    {
+     "ref": "Q002:185",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p035",
+      "excerpt_ar": "المشقة تجلب التيسير، وجميع رخص الشريعة وتخفيفاتها متفرعة عن هذا الاصل قال الله تعالى : ُريدُ أنه بِكُم لسر وَلا بريد بد بِحُم الْفرَ 4\" © يُكَلْف آله ننس إلا وسَعهام!\" 0 فسا إلا ما 2 « وَمَاجَمَلٌ 2 الي مِنْ 2 حر قل ثرا ا متكت »*'. نهذ الآيات وغيرها دليل على هذا االأصل الكبير",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q002:286",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p035",
+      "excerpt_ar": "المشقة تجلب التيسير، وجميع رخص الشريعة وتخفيفاتها متفرعة عن هذا الاصل قال الله تعالى : ُريدُ أنه بِكُم لسر وَلا بريد بد بِحُم الْفرَ 4\" © يُكَلْف آله ننس إلا وسَعهام!\" 0 فسا إلا ما 2 « وَمَاجَمَلٌ 2 الي مِنْ 2 حر قل ثرا ا متكت »*'. نهذ الآيات وغيرها دليل على هذا االأصل الكبير",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q065:007",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p035",
+      "excerpt_ar": "المشقة تجلب التيسير، وجميع رخص الشريعة وتخفيفاتها متفرعة عن هذا الاصل قال الله تعالى : ُريدُ أنه بِكُم لسر وَلا بريد بد بِحُم الْفرَ 4\" © يُكَلْف آله ننس إلا وسَعهام!\" 0 فسا إلا ما 2 « وَمَاجَمَلٌ 2 الي مِنْ 2 حر قل ثرا ا متكت »*'. نهذ الآيات وغيرها دليل على هذا االأصل الكبير",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q022:078",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p035",
+      "excerpt_ar": "المشقة تجلب التيسير، وجميع رخص الشريعة وتخفيفاتها متفرعة عن هذا الاصل قال الله تعالى : ُريدُ أنه بِكُم لسر وَلا بريد بد بِحُم الْفرَ 4\" © يُكَلْف آله ننس إلا وسَعهام!\" 0 فسا إلا ما 2 « وَمَاجَمَلٌ 2 الي مِنْ 2 حر قل ثرا ا متكت »*'. نهذ الآيات وغيرها دليل على هذا االأصل الكبير",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q064:016",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p035",
+      "excerpt_ar": "المشقة تجلب التيسير، وجميع رخص الشريعة وتخفيفاتها متفرعة عن هذا الاصل قال الله تعالى : ُريدُ أنه بِكُم لسر وَلا بريد بد بِحُم الْفرَ 4\" © يُكَلْف آله ننس إلا وسَعهام!\" 0 فسا إلا ما 2 « وَمَاجَمَلٌ 2 الي مِنْ 2 حر قل ثرا ا متكت »*'. نهذ الآيات وغيرها دليل على هذا االأصل الكبير",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "al-Mashaqqa tajlib al-taysīr. al-Saʿdī quotes five āyāt after the qāʿida and names them its dalīl: «فهذه الآيات وغيرها دليل على هذا الأصل الكبير» (Q2:185 yusr, Q2:286 and Q65:7 no burden beyond capacity, Q22:78 no ḥaraj in religion, Q64:16 as far as you are able; the editor's footnotes give the places, the OCR garbles the āyāt). Ibn ʿUthaymīn (bayt 13) gives the same «ودليل هذه القاعدة»: Q22:78, Q2:185, Q5:6 and «إن الدين يسر»."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q004",
+   "adilla": [
+    {
+     "ref": "Q064:016",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p038",
+      "excerpt_ar": "ولا محرم مع الضرورة قال الله تعالى : « تَلْوا لله ما آسَتَطعيْ»”\". وثبت في الصحيح عنه كَيةِ أنه قال: «إذا أمرتكم بأمر فأتوا منه ما استطعتم»\"'. وهذه القاعدة تضمنت أصلين",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "H-s1-amartukum",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p038",
+      "excerpt_ar": "ولا محرم مع الضرورة قال الله تعالى : « تَلْوا لله ما آسَتَطعيْ»”\". وثبت في الصحيح عنه كَيةِ أنه قال: «إذا أمرتكم بأمر فأتوا منه ما استطعتم»\"'. وهذه القاعدة تضمنت أصلين",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q005:003",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p038",
+      "excerpt_ar": "والثانى : إباحة المحظورات عند وقوع الاضطرار إليه » كما قال تعالى أيضاً فى الأصل الثانى بعدما حرم الميتة والدم » وما عطف : 12 : ا ب ا ل قا مامص ا 7 لا 7217 ير /7مباغو عليهما: فمن أضْطر في مخبْصَةٍ غير مَتَجَائِفٍ لرثي فَإِنَ الله عور",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q006:119",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p039",
+      "excerpt_ar": "شل لك ما حرم عَكحَكُ إل ما اَضْطررَثُمٌ إ2»”'\". فهذه الآية صريحة بحل كل محرم اضطر العبد إليه، ولكن الضرورة تقدر بقدرهاء فإذا اندفعت الضرورة وجب على المضطر الكف",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q024:061",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p039",
+      "excerpt_ar": "وقال تعالى : ليس على الحم حرم ولا تل الأترج صر ول عل المَريضِ ترج ”\"\". وذلك في كل عبادة توقفت على البصرء أو الصحة، أو سلامة الأعضاء كالجهاد ونحوه، ولهذا اشترطت القدرة في جميع الواجبات، فمن لم يقدر فلا يكلفه الله ما يعجز عنه",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "Wujūb follows istiṭāʿa: al-Saʿdī opens with Q64:16 and «وثبت في الصحيح عنه ﷺ أنه قال: إذا أمرتكم بأمر فأتوا منه ما استطعتم» (al-Bukhārī 7288). For the second aṣl, ibāḥat al-maḥẓūrāt for the muḍṭarr, he quotes Q5:3 («فمن اضطر في مخمصة…») and Q6:119, of which he says «فهذه الآية صريحة بحل كل محرم اضطر العبد إليه», bounded by «الضرورة تقدر بقدرها». Q24:61 (no ḥaraj on the blind, lame, sick) he adduces for the first aṣl in worship that needs sight or health, «ولهذا اشترطت القدرة في جميع الواجبات»; it also stands in Q48:17, the editor names al-Nūr 61. He further cites «من رأى منكم منكرا» and Q65:7, not added."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q005",
+   "adilla": [
+    {
+     "ref": "Q039:003",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p040",
+      "excerpt_ar": "هذان الأصلان شرط لكل عمل ديني ظاهر كأقوال اللسانء وأعمال الجوارح؛ وباطن كأعمال القلوب . قال الله تعالى : آلا له و مج ال النالض »” \" « ومآ أرردا إل\" لَِبدُوا أنه لمي لَه أن",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q098:005",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p040",
+      "excerpt_ar": "هذان الأصلان شرط لكل عمل ديني ظاهر كأقوال اللسانء وأعمال الجوارح؛ وباطن كأعمال القلوب . قال الله تعالى : آلا له و مج ال النالض »” \" « ومآ أرردا إل\" لَِبدُوا أنه لمي لَه أن",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q059:007",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p041",
+      "excerpt_ar": "قال تعالي في متابعة الرسول كل : وما ءالدكم النولٌ فَخدُوهُثما تبَنَكُم عَندُ هوا »”''» وقال في الجمع بين الأصلين: وَمَنّأَحْسَنُدِينا يَكَنَ ألم وَججَهُمْ لله وَهُوَ نحن »*\" أسلم وجهه: أخلص أعماله الظاهرة والباطنة لله وهو محسن في هذا الإسلام، بأن يكون فيه متبعاً لرسول الله",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q004:125",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p041",
+      "excerpt_ar": "قال تعالي في متابعة الرسول كل : وما ءالدكم النولٌ فَخدُوهُثما تبَنَكُم عَندُ هوا »”''» وقال في الجمع بين الأصلين: وَمَنّأَحْسَنُدِينا يَكَنَ ألم وَججَهُمْ لله وَهُوَ نحن »*\" أسلم وجهه: أخلص أعماله الظاهرة والباطنة لله وهو محسن في هذا الإسلام، بأن يكون فيه متبعاً لرسول الله",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "H-niyyat",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p042",
+      "excerpt_ar": "والأعمال التى يفعلها العبد لله لكنها غير مشروعة فهى باطلة؛ لفقدها المتابعة. وكذلك الاعتقادات المخالفة لما فى كتاب الله وسنّة رسوله؛ كاعتقادات أهل البدع المخالفة لما عليه الرسول كي وأصحابه؛ وكلها تدخل في قوله ِية: «إنما الأعمال بالنيات» وإنما لكل امرىئٌ ما نوى»\"”\" متفق عليه؛ . وقوله كلة: «من عمل عملاً ليس عليه أمرنا فهو رد»\"'\" متفق عليه",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "H-radd",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p042",
+      "excerpt_ar": "والأعمال التى يفعلها العبد لله لكنها غير مشروعة فهى باطلة؛ لفقدها المتابعة. وكذلك الاعتقادات المخالفة لما فى كتاب الله وسنّة رسوله؛ كاعتقادات أهل البدع المخالفة لما عليه الرسول كي وأصحابه؛ وكلها تدخل في قوله ِية: «إنما الأعمال بالنيات» وإنما لكل امرىئٌ ما نوى»\"”\" متفق عليه؛ . وقوله كلة: «من عمل عملاً ليس عليه أمرنا فهو رد»\"'\" متفق عليه",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "The two uṣūl, al-ikhlāṣ and al-mutābaʿa, are a sharṭ of every religious act; al-Saʿdī states them on Q39:3 and Q98:5 (ikhlāṣ), Q59:7 (mutābaʿa) and Q4:125 «وقال في الجمع بين الأصلين». An act lacking ikhlāṣ or lacking mutābaʿa is void, «وكلها تدخل في قوله ﷺ: إنما الأعمال بالنيات … وقوله: من عمل عملا ليس عليه أمرنا فهو رد»: the first ḥadīth the balance of the inward, the second of the outward («فالأول ميزان للأعمال باطنا والثاني ميزان الأعمال ظاهرا»)."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q006",
+   "adilla": [
+    {
+     "ref": "Q042:021",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p045",
+      "excerpt_ar": "وهذه القاعدة تضمنت أصلين عظيمين، ذكرهما الإمام أحمد وغيره من الأئمة ودل عليهما الكتاب والسنة في مواضع، مثل قوله على في الال الأول : « َم هر شر كوا شَرَعُواً لهم يَنَ أرب مَالَمْ بد اد\" و مثل : الأمر بعبادته وحده لا شريك له في مواضع ول وقوله في - الثاني : ٍ هو الى حل لكم كَافي الْأتضٍ جَيمِيكًا",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q002:029",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p045",
+      "excerpt_ar": "وهذه القاعدة تضمنت أصلين عظيمين، ذكرهما الإمام أحمد وغيره من الأئمة ودل عليهما الكتاب والسنة في مواضع، مثل قوله على في الال الأول : « َم هر شر كوا شَرَعُواً لهم يَنَ أرب مَالَمْ بد اد\" و مثل : الأمر بعبادته وحده لا شريك له في مواضع ول وقوله في - الثاني : ٍ هو الى حل لكم كَافي الْأتضٍ جَيمِيكًا",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q007:032",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p046",
+      "excerpt_ar": "وقوله تعالى : قل مَنْ حَرّم زيتةٌ لَه ال أ باد والطبَبتٍ مِنَ اررق ل ضََ 50 اموا في الْحبَرْةَ لديا خَالِصَةٌ م الِْبَمَةٍ ”' فأنكر تعالى على من حرم ما خلق الله لعباده من المآكل، والمشارب، والملابس، وتوابعها",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "H-radd",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p046",
+      "excerpt_ar": "فمن أوجب أو استحب عبادة لم يدل عليها الكتاب ولا السنة » فقد ابتدع ديناً لم يأذن الله به وهو مردود على صاحبه؛ كما قال كَلِةٍ: «مّن عمل عملاً ليس عليه أمرنا فهو رد» متفق عليه",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "al-Saʿdī: «ودل عليهما الكتاب والسنة في مواضع»: for the first aṣl (al-ḥaẓr in ʿibādāt) Q42:21, legislating in religion what God did not permit; for the second (al-ibāḥa in ʿādāt) Q2:29, «أي لجميع أنواع الانتفاعات», and Q7:32, God's rebuke of whoever forbids the adornment and good things He created. A worship made wājib or mustaḥabb without the Book and Sunna is a bidʿa «مردود على صاحبه؛ كما قال ﷺ: من عمل عملا ليس عليه أمرنا فهو رد», adduced for the first aṣl's ruling."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q007",
+   "adilla": [
+    {
+     "ref": "H-hajj-sabi",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p048",
+      "excerpt_ar": "فمن كان دون التمييز لا تصح عبادته كلها ؛ لمشاركته حينئذ لغير العا قل إ لذي لا قصد له صحيح سوى إ لحج والعمرة» فإنه صح أن النبي كَِلةٍ: «رفعت إليه امرأة صبياً فى المهدء وا ل 2 كا : ذا ٠ !ا 0 )١( ل فقالت : ألهذا حج؟ قال: نعم ولك أجر، متفق عليه",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q004:006",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p049",
+      "excerpt_ar": "وأما التصرفات المالية فحيث كان الغرض الأكبر منها حفظ الأموال. وحسن التصرف فيها احتيط فيهاء فشرط لها مع التكليف : الرشد، وهو إحسان حفظ المال، وصيانته ومعرفة التصرف. قال تعالى : ( فَإنّءَاتسْتْم ينهم شا دقعو ال فشرط الله شرطين لدفع أموالهم إليهم: البلوغ، والرشد",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "Taklīf (bulūgh and ʿaql) is the sharṭ of wujūb, tamyīz of ṣiḥḥa, except ḥajj and ʿumra, and rushd is added for dealings. The exception al-Saʿdī bases on the ḥadīth of the woman who lifted up a child: «فإنه صح أن النبي ﷺ … ألهذا حج؟ قال: نعم ولك أجر». The sharṭ of rushd for financial dealings he takes from Q4:6: «فشرط الله شرطين لدفع أموالهم إليهم: البلوغ، والرشد». The commanding of the mumayyiz to pray at seven and striking at ten he states without quoting the ḥadīth; Q6:152 (the walī's tabarruʿ) is not added."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q008",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527"
+   ],
+   "note": "None found. al-Saʿdī states the qāʿida (al-aḥkām need their shurūṭ and arkān present and their mawāniʿ absent) as «أصل كبير مطرد» and illustrates it with the texts of promise and threat («تواترت النصوص») and furūʿ of prayer, fasting, sale, inheritance and nikāḥ, naming no text as its dalīl. Ibn ʿUthaymīn's bayt 34 («والشيء لا يتم إلا أن تتم شروطه…») gives examples only (Q4:11 with «لا يرث الكافر المسلم» as a māniʿ), and al-Risāla al-Laṭīfa (shamela-9527) states it without a dalīl."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q009",
+   "adilla": [
+    {
+     "ref": "Q004:019",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p052",
+      "excerpt_ar": "وأمّا إذا حكم الشارع عليهاء ولم يحدهاء فإنه حكم على العباد بما يعرفونه، ويعتادونه، وقد يصرح لهم بالرجوع إلى ذلك كما في قوله تعالى : وَعَاشْرُوهُنَ ِالْمَعْرُوف",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q002:228",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p275",
+      "excerpt_ar": "ما أحيل فيه على العرف مثل: جميع حقوق الزوجة يرجع فيها إلى العرف بنص 0 قال ا : «وَلّنَ يِثلٌ الى عَلَيِنَ وَلْعِفضُ»» [البقرة: 778] وعلّ موود رن من بِالحون* [البقرة: ؟77] وَعَاشْروهنٌ الْمَعُرُوف [النساء: 9١]؛ 0 ا أنه أحيل فيه على العرف فيؤخذ به",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "al-ʿurf decides every ruling the Lawgiver set without a measure: where He set a ḥukm without defining it, «فإنه حكم على العباد بما يعرفونه ويعتادونه، وقد يصرح لهم بالرجوع إلى ذلك كما في قوله تعالى: وعاشروهن بالمعروف» (Q4:19). Ibn ʿUthaymīn (bayt 65) gives the texts that refer a ruling to al-maʿrūf «بنص»: Q2:228, Q2:233 and Q4:19, «أنه أحيل فيه على العرف فيؤخذ به». The āyāt are adduced as instances where the naṣṣ itself refers to custom, not named the qāʿida's dalīl."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q010",
+   "adilla": [
+    {
+     "ref": "H-s1-bayyina",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p055",
+      "excerpt_ar": "وهذا أصل نبّه عليه النبى كلل حيث قال: «البينة على المدعى واليمين على المنكر، رواه البيهقى بإسناد صحيح»؛ وأصله فى الصحيحين",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "«وهذا أصل نبّه عليه النبي ﷺ حيث قال: البينة على المدعي واليمين على المنكر، رواه البيهقي بإسناد صحيح، وأصله في الصحيحين», with ijmāʿ. al-Bayhaqī is not a pinned collection; the foundation entry is the same wording in al-Tirmidhī 1341 («البينة على المدعي واليمين على المدعى عليه»), graded ṣaḥīḥ by al-Albānī; the ṣaḥīḥ origin he names is Ibn ʿAbbās's «ولكن اليمين على المدعى عليه» (Muslim 1711, al-Irwāʾ 2654), not added separately. Ibn ʿUthaymīn (bayt 72) cites the same ḥadīth. The tafsīr of faṣl al-khiṭāb (Q38:20) as this rule he reports only as «وقد قيل»; not added."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q011",
+   "adilla": [
+    {
+     "ref": "H-s1-la-yansarif",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p057",
+      "excerpt_ar": "هذا أصل كبير يدل عليه قوله كَليةٍ في الحديث الصحيح حين شكا إليه الرجل يجد الشيء» وهو في الصلاة قال : «لآ ينصرف حتى يسمع صوتاً أو يجد ريحاًا'' أي: حتى يتيقن أنه أحدث",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "al-Aṣl baqāʾ mā kāna ʿalā mā kāna; al-yaqīn lā yazūl bi-l-shakk: «هذا أصل كبير يدل عليه قوله ﷺ في الحديث الصحيح حين شكا إليه الرجل يجد الشيء وهو في الصلاة: لا ينصرف حتى يسمع صوتا أو يجد ريحا، أي: حتى يتيقن أنه أحدث». The certain ṭahāra stands until the ḥadath is certain. He also cites the ḥadīth of ʿAdī b. Ḥātim on game found dead for a farʿ, not added."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q013",
+   "adilla": [
+    {
+     "ref": "Q004:029",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p253",
+      "excerpt_ar": "والدليل على هذه القاعدة قول الله تعالى: كأَيُهَا لبت امنا كا كلو أتولكم بَيْتَكُم وَلْنطِلٍ» [النساء: 74]؛ وقول النبي كَل في الصحفة التي كسرتها إحدى أمهات المؤمنين قال: «طعام بطعام» وإناء بإناء»'\". ولأن الله تعالى أوجب الدية في القتل الخطاء وهذا ضمان لا شك",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    },
+    {
+     "ref": "H-s1-qasa",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p253",
+      "excerpt_ar": "والدليل على هذه القاعدة قول الله تعالى: كأَيُهَا لبت امنا كا كلو أتولكم بَيْتَكُم وَلْنطِلٍ» [النساء: 74]؛ وقول النبي كَل في الصحفة التي كسرتها إحدى أمهات المؤمنين قال: «طعام بطعام» وإناء بإناء»'\". ولأن الله تعالى أوجب الدية في القتل الخطاء وهذا ضمان لا شك",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    },
+    {
+     "ref": "Q004:092",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p253",
+      "excerpt_ar": "والدليل على هذه القاعدة قول الله تعالى: كأَيُهَا لبت امنا كا كلو أتولكم بَيْتَكُم وَلْنطِلٍ» [النساء: 74]؛ وقول النبي كَل في الصحفة التي كسرتها إحدى أمهات المؤمنين قال: «طعام بطعام» وإناء بإناء»'\". ولأن الله تعالى أوجب الدية في القتل الخطاء وهذا ضمان لا شك",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "In itlāf the deliberate, the ignorant and the forgetful are alike liable. al-Saʿdī gives as its sign «ولهذا أوجب الله الدية في القتل خطأ» (Q4:92), the sin and punishment alone differing. Ibn ʿUthaymīn (bayts 55–57: the sin falls with jahl, ikrāh and nisyān, but ḍamān in the rights of people does not) states «والدليل على هذه القاعدة»: Q4:29, the broken bowl («طعام بطعام وإناء بإناء») and «ولأن الله تعالى أوجب الدية في القتل الخطأ، وهذا ضمان لا شك». al-Saʿdī's exception, the muḥrim's game liable only if deliberate, rests on Q5:95 («ومن قتله منكم متعمدا»), which limits rather than grounds the qāʿida."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q014",
+   "adilla": [
+    {
+     "ref": "Q009:091",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p262",
+      "excerpt_ar": "هذه أيضاً قاعدة مأخوذة من القرآن الكريم، قال الله تبارك وتعالى: ما عل الْمَحْسِئِينَ ين سيل [التوبة: ]4١ فكل محسن فإنه لا سبيل عليه، والظالم هو الذي عليه السبيل لقوله تعالى: 1 عُدْكنَ إلا ع عل اللي [البقرة: 17] وقال تعالى: إئا لتيل عَلّ الَيْنَ يَظْلِيِ اناس رَيَعْنَ فى الأضٍ َي الس [الشورى",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    },
+    {
+     "ref": "Q042:042",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p262",
+      "excerpt_ar": "هذه أيضاً قاعدة مأخوذة من القرآن الكريم، قال الله تبارك وتعالى: ما عل الْمَحْسِئِينَ ين سيل [التوبة: ]4١ فكل محسن فإنه لا سبيل عليه، والظالم هو الذي عليه السبيل لقوله تعالى: 1 عُدْكنَ إلا ع عل اللي [البقرة: 17] وقال تعالى: إئا لتيل عَلّ الَيْنَ يَظْلِيِ اناس رَيَعْنَ فى الأضٍ َي الس [الشورى",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    },
+    {
+     "ref": "Q002:193",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p262",
+      "excerpt_ar": "هذه أيضاً قاعدة مأخوذة من القرآن الكريم، قال الله تبارك وتعالى: ما عل الْمَحْسِئِينَ ين سيل [التوبة: ]4١ فكل محسن فإنه لا سبيل عليه، والظالم هو الذي عليه السبيل لقوله تعالى: 1 عُدْكنَ إلا ع عل اللي [البقرة: 17] وقال تعالى: إئا لتيل عَلّ الَيْنَ يَظْلِيِ اناس رَيَعْنَ فى الأضٍ َي الس [الشورى",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    },
+    {
+     "ref": "H-irq-zalim",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p263",
+      "excerpt_ar": "قوله: (وعكسه الظالم فاسمع قيلي): الظالم: هو المعتدي، فإنه يضمن لقوله كِل: اليس لعرق ظالم حق",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "al-Saʿdī gives no text: the trustee (al-amīn) is not liable «لأن هذا هو معنى الائتمان», the hand without right is liable absolutely, or «ما ترتب على المأذون فهو غير مضمون». Ibn ʿUthaymīn's bayt 61 («وما على المحسن من سبيل، وعكسه الظالم») is «قاعدة مأخوذة من القرآن الكريم»: Q9:91 no way against the muḥsinīn, Q2:193 and Q42:42 the way is against the wrongdoers, and the ẓālim liable «لقوله ﷺ: ليس لعرق ظالم حق». His qāʿida is the muḥsin/ẓālim one, whose ruling is al-Saʿdī's (the amīn holds by permission and is a muḥsin unless he transgresses), so the link is indicated."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q015",
+   "adilla": [
+    {
+     "ref": "H-la-darar",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p063",
+      "excerpt_ar": "وهذا لفظ قوله ل رواه أحمد وابن ماجه؛ من حديث ابن عباس”'\"» فالضرر منفي شرعاً فلا يحل لمسلم أن يضر أخاه المسلم",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "The qāʿida is the ḥadīth's wording: «وهذا لفظ قوله ﷺ رواه أحمد وابن ماجه من حديث ابن عباس، فالضرر منفي شرعا». The heading line «لا ضرر ولا ضرار» is lost in both OCR witnesses at this place (the table of contents has it). He goes on to the Qurʾānic prohibitions of specific ḍirār (Q65:6, Q2:231, Q2:233, Q2:282, Q4:12) as its instances; not added."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q016",
+   "adilla": [
+    {
+     "ref": "Q049:009",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p066",
+      "excerpt_ar": "قال الله تعالى: «وَأَتَرِطْياً نّ أنه بُْتُ الْمُشِْطِيت »!'\". وقال تعالى : وإ عابم فَعَاقواً يمِثل ما عُوؤسم بد ولين صبرم لهو حر سبيت \"\"'. وقال تعالى : محراو كو سيك يتا كم عَتسا رامل جرم َل اذَه؟”\"\" فأباح الله مقابلة الجاني بمثل جنايته؛ وهو العدل، ثم ندب إلى العفو وهو الفضل",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q016:126",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p066",
+      "excerpt_ar": "قال الله تعالى: «وَأَتَرِطْياً نّ أنه بُْتُ الْمُشِْطِيت »!'\". وقال تعالى : وإ عابم فَعَاقواً يمِثل ما عُوؤسم بد ولين صبرم لهو حر سبيت \"\"'. وقال تعالى : محراو كو سيك يتا كم عَتسا رامل جرم َل اذَه؟”\"\" فأباح الله مقابلة الجاني بمثل جنايته؛ وهو العدل، ثم ندب إلى العفو وهو الفضل",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q042:040",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p066",
+      "excerpt_ar": "قال الله تعالى: «وَأَتَرِطْياً نّ أنه بُْتُ الْمُشِْطِيت »!'\". وقال تعالى : وإ عابم فَعَاقواً يمِثل ما عُوؤسم بد ولين صبرم لهو حر سبيت \"\"'. وقال تعالى : محراو كو سيك يتا كم عَتسا رامل جرم َل اذَه؟”\"\" فأباح الله مقابلة الجاني بمثل جنايته؛ وهو العدل، ثم ندب إلى العفو وهو الفضل",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q002:237",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p066",
+      "excerpt_ar": "وكذلك المتعاملان بجميع أنواع المعاملات العدل فيها واجب؛ وهو أن تعطي الذي عليك كما تأخذ الذي لك»؛ والفضل فيها مندوب إليه . قال تعالى : إلا كَنسوا لس يت 4”*' وهو العفو عن بعض الحق والمحاباة فى المعاملة",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "al-ʿAdl wājib, al-faḍl masnūn. al-Saʿdī opens with Q49:9 («وأقسطوا إن الله يحب المقسطين»), Q16:126 and Q42:40, then «فأباح الله مقابلة الجاني بمثل جنايته وهو العدل، ثم ندب إلى العفو وهو الفضل». In dealings, ʿadl is giving what one owes as one takes what is owed, and faḍl is commended: «ولا تنسوا الفضل بينكم» (Q2:237), «وهو العفو عن بعض الحق والمحاباة في المعاملة». He continues with Q2:280, Q2:220, Q5:45, Q4:148 and Q41:34; not added."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q017",
+   "adilla": [
+    {
+     "ref": "Q033:036",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p067",
+      "excerpt_ar": "وذلك أن العبد عبد مملوك تحت أوامر ربه ليس له من الأمر شي ا وما كَانَ لمُؤِْنِ ولا مُؤْمَةٍ ذا قضى اله ورسولة أمرا أن ين َنم يزه نّ أَترِهِمٌ ”\" فإذا تعجل الأمور التي يترتب عليها حكم شرعي قبل وجود أسبابها الصحيحة، لم يفده شيئاً وعوقب بنقيض قصده",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q046:020",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p068",
+      "excerpt_ar": "من تعجل شهواته المحرمة في الدنيا عوقب بحرمانها في الآخرة ما لم يتب قبل موته . قال تعالى : وي يريش الذي كَتروا عل الثار أَدشبث يي فى ا الااستنم",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "Whoever hastens a thing before its time is deprived of it. al-Saʿdī grounds it on the servant having no say against his Lord's command (Q33:36): hastening a ruling before its sound causes «لم يفده شيئا وعوقب بنقيض قصده». For the farʿ that whoever hastens forbidden pleasures in this world is deprived of them in the next he quotes Q46:20 («أذهبتم طيباتكم في حياتكم الدنيا»). Ibn ʿUthaymīn (bayt 92) reasons from the ḥikma of the sharīʿa and gives no text. Neither text is named the qāʿida's dalīl; the furūʿ (the killer's inheritance) rest on ijmāʿ and athar in the fiqh books, not quoted here."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q018",
+   "adilla": [
+    {
+     "ref": "Q002:194",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p257",
+      "excerpt_ar": "وكونه يضمن المثلى بالمثل لأنه أقرب إلى العدل، لقوله تعالى: فين أَعتَدَئى عَكي: نا 8 فَعْنَدُا عَكِدِ بِيثلِ مَا أَعَتَدَئ ل عَلِ» [البقرة",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    },
+    {
+     "ref": "H-s1-qasa",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p259",
+      "excerpt_ar": "ويدل لذلك قصة أم المؤمنين رضي الله عنهاء حين كسرت الصحفة فأخذ النبي كَل صحفتها ودفعها للتي أرسلت الصحفة وقال: «طعام بطعام وإناء بإناء” '. ويدل لذلك أيضاً أن النبي كل كان يستقرض البعير ويرد بعيراً» فقد استقرض بكراً ورد رباعياً خيارا",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    },
+    {
+     "ref": "H-s1-bakr",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p259",
+      "excerpt_ar": "ويدل لذلك قصة أم المؤمنين رضي الله عنهاء حين كسرت الصحفة فأخذ النبي كَل صحفتها ودفعها للتي أرسلت الصحفة وقال: «طعام بطعام وإناء بإناء” '. ويدل لذلك أيضاً أن النبي كل كان يستقرض البعير ويرد بعيراً» فقد استقرض بكراً ورد رباعياً خيارا",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "Mithliyyāt are made good by their like, mutaqawwimāt by their value. al-Saʿdī takes the mithlī to be whatever has a like or near-like, «وهو الصحيح؛ لأنه ﷺ استقرض بعيرا … فقضى خيرا منه، ولأنه ضمن أم المؤمنين … بصحيفتها الصحيحة، والحديثان صحيحان» (the editor: Muslim 1600, al-Bukhārī 2481). Ibn ʿUthaymīn (bayt 59) gives the like for the like «لأنه أقرب إلى العدل، لقوله تعالى: فمن اعتدى عليكم فاعتدوا عليه بمثل ما اعتدى عليكم», and «ويدل لذلك» the broken bowl («طعام بطعام وإناء بإناء») and the camel borrowed and repaid with a camel. The istidlāl excerpts are Ibn ʿUthaymīn's because al-Saʿdī's passage runs across a page of footnotes in both witnesses."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q019",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527"
+   ],
+   "note": "None found. al-Saʿdī states the qāʿida (when the musammā cannot be known or delivered, one reverts to the value) and applies it to price, wage and mahr, with the reason «لأن الغالب أن السلع تباع بأقيامها» and «أقرب إلى حصول غرض كل منهما»; he names no text. Ibn ʿUthaymīn's Manẓūma has no bayt for it."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q020",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "None found. al-Saʿdī states that a right-holder who cannot be known is treated as non-existent (the luqaṭa after taʿrīf, unclaimable ghuṣūb and deposits, the heirless estate to bayt al-māl, the woman with no known walī) without naming a text."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q021",
+   "adilla": [
+    {
+     "ref": "H-s1-gharar",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p071",
+      "excerpt_ar": "وقد نهى كَيِةٍ اعن بيع الغرر»”'؟ فيدخل في ذلك بيع الآبق”\"؛ والشارد”” والحمل فى البطنء والمجهولات التى يجهل تحصيلهاء أو يجهل مقدارها، وكلها داخلة في الغرر، والميسر",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q005:091",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p071",
+      "excerpt_ar": "وقد قرن الله الميسر للخمر لما فيه من المفاسد الكثيرة؛ لأنه يوقع العداوة والبغضاء؛ ويصد عن ذكر الله وعن الصلاة؛ ويوقع العبد فى المكاسب الدنيئة المخالفة للمعقول",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "Gharar and maysir are forbidden in exchanges and contests. al-Saʿdī: «وقد نهى ﷺ عن بيع الغرر» (Muslim 1513), «فيدخل في ذلك بيع الآبق والشارد والحمل في البطن…». For maysir he points to God's coupling it with wine «لما فيه من المفاسد الكثيرة؛ لأنه يوقع العداوة والبغضاء ويصد عن ذكر الله وعن الصلاة», the wording of Q5:91, without quoting the āya. The exception of racing on horses, camels and arrows the editor footnotes with «لا سبق إلا في خف أو حافر» (al-Tirmidhī 1700); not added. Ibn ʿUthaymīn (bayts 62–64) argues the muʿāwaḍa/tabarruʿ difference by reasoning."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q022",
+   "adilla": [
+    {
+     "ref": "H-sulh",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p072",
+      "excerpt_ar": "هذان الأصلان هما لفظ الحديث الذي صححه غير واحد من الأثمة”*\" وما أعظم نفعهماء وأكثر فوائدهما. فهذا الحديث يدل على",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "Printed with Q23 under one heading («القاعدة الثانية والثالثة والعشرون»); al-Saʿdī: «هذان الأصلان هما لفظ الحديث الذي صححه غير واحد من الأئمة … فهذا الحديث يدل على أن جميع أنواع الصلح بين المسلمين جائزة ما لم تدخل أهلها في محرم». The foundation ḥadīth is «الصلح جائز بين المسلمين» (Abū Dāwūd 3594, al-Irwāʾ 1425, ḥasan). He adduces Q4:128 («والصلح خير») for the farʿ of spouses' settlement; not added. Ibn ʿUthaymīn's bayt 83 states the same qāʿida."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q024",
+   "adilla": [
+    {
+     "ref": "H-man-sabaqa-ahaqq",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p075",
+      "excerpt_ar": "المراد بالمباحات هنا : ما ليس له مالك محترم؟؛ لقوله كَية: «من سبق إلى ما لم يسبق إليه مسلم فهو أحق به",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "al-Saʿdī bases it on «لقوله ﷺ: من سبق إلى ما لم يسبق إليه مسلم فهو أحق به», and the editor notes «وإسناده ضعيف». al-Albānī grades it ḍaʿīf (al-Irwāʾ 1555); it is recorded as the stated dalīl and is not admitted as a ḥujja. Abū Dāwūd 3071 has «من سبق إلى ماء … فهو له»."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q025",
+   "adilla": [
+    {
+     "ref": "Q003:044",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p344",
+      "excerpt_ar": "الأول في قصة مريم حيث قال: منَا كُتَ لبه إذ يلوت آمهم أيهم يَكْفْلُ م ونا كت لََيهِمْ إذ يَخْسِمُونَ؟ [آل عمران: 44]. وأما الموضع الثاني: ففي قصة يونس عليه السلام حينما خرج من قومه ُعَاضِباً؛ ثم ركب سفينة؛ فثقلت بهم السفينة فاضطروا إلى أن يلقوا بعض مَنْ فيها» فقاموا بالقرعة؛ ولهذا قال الله تعالى: «قََاهمَ فَكَدَ بن الْنَحَمِيَ © [الصافات",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    },
+    {
+     "ref": "Q037:141",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p344",
+      "excerpt_ar": "الأول في قصة مريم حيث قال: منَا كُتَ لبه إذ يلوت آمهم أيهم يَكْفْلُ م ونا كت لََيهِمْ إذ يَخْسِمُونَ؟ [آل عمران: 44]. وأما الموضع الثاني: ففي قصة يونس عليه السلام حينما خرج من قومه ُعَاضِباً؛ ثم ركب سفينة؛ فثقلت بهم السفينة فاضطروا إلى أن يلقوا بعض مَنْ فيها» فقاموا بالقرعة؛ ولهذا قال الله تعالى: «قََاهمَ فَكَدَ بن الْنَحَمِيَ © [الصافات",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    },
+    {
+     "ref": "H-s1-istiham",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p344",
+      "excerpt_ar": "وأما السنة فقد جاءت القرعة في ستة مواضع: منها قول النبي كل: «لو يعلم الناس ما في النداء والصف الأول؛ ثم لم يجدوا إلا أن يستهموا عليه لاستهموا",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "Lots are prescribed when the entitled party is unknown and division impossible. al-Saʿdī: «وقد ثبتت القرعة بالكتاب …» with Q37:141 and Q3:44 (the OCR loses the āyāt; the editor's footnotes name al-Ṣāffāt 141 and Āl ʿImrān 44) and «في عدة أحاديث صحيحة». Ibn ʿUthaymīn (bayt 91) states «وهذه القاعدة مأخوذة من الكتاب والسنة: أما الكتاب: فإن الله تعالى ذكر القرعة في موضعين من كتابه», the casting of pens over Maryam and Yūnus's lot, «وأما السنة فقد جاءت القرعة في ستة مواضع», first the istihām over the call and the first row (al-Bukhārī 615) and the Prophet's lot among his wives (al-Bukhārī 2593, not added: no al-Albānī entry found in the pinned works). Both bound it: a lot that works as maysir is forbidden."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q026",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527"
+   ],
+   "note": "None found. al-Saʿdī's reason is rational: the owner trusted the amīn and put him in his own place, and a claim the senses and custom belie is not heard. Ibn ʿUthaymīn (bayts 71, 73–74: the amīn's claim of return and loss, «وكل ما ينكره الحس امنعا») reasons likewise without a text."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q027",
+   "adilla": [
+    {
+     "ref": "H-s1-nasiya-salat",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p079",
+      "excerpt_ar": "مثال ترك المأمور: حديث أنس رضى الله عنه أن النبى كَل قال: «من نسى صلاة فليصلها إذا ذكرهاء لا كفارة لها إلا ذلك». ٍ ١ أخرجه البخاري فى المواقيت؛ باب من نسى صلاة فليصلها إذا ذكرها (47ف)؛ ومسلم في المساجدء باب قضاء الصلاة الفائتة (184). ومثال فعل المحظور: حديث أبي هريرة رضي الله عنه قال: قال رسول الله كةٍ: «من نسي وهو صائم فأكل أو شرب» فليتم صومه فإنما أطعمه الله وسقاه",
+      "who": "the editor of al-Saʿdī's 1995 edition, footnote to al-Saʿdī's «ثابت بالسنة»"
+     }
+    },
+    {
+     "ref": "H-s1-nasiya-saim",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p079",
+      "excerpt_ar": "مثال ترك المأمور: حديث أنس رضى الله عنه أن النبى كَل قال: «من نسى صلاة فليصلها إذا ذكرهاء لا كفارة لها إلا ذلك». ٍ ١ أخرجه البخاري فى المواقيت؛ باب من نسى صلاة فليصلها إذا ذكرها (47ف)؛ ومسلم في المساجدء باب قضاء الصلاة الفائتة (184). ومثال فعل المحظور: حديث أبي هريرة رضي الله عنه قال: قال رسول الله كةٍ: «من نسي وهو صائم فأكل أو شرب» فليتم صومه فإنما أطعمه الله وسقاه",
+      "who": "the editor of al-Saʿdī's 1995 edition, footnote to al-Saʿdī's «ثابت بالسنة»"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "The farq between omitting a command and committing a prohibition, for one excused by ignorance or forgetting: al-Saʿdī says «وهذا الفرق … ثابت بالسنة», and the editor's footnote to it names the Sunna: «مثال ترك المأمور» the forgotten prayer to be prayed when remembered (Muslim 684, al-Bukhārī 597), «ومثال فعل المحظور» the one who eats forgetting his fast and completes it (Muslim 1155). Ibn ʿUthaymīn (bayt 55) cites both ḥadīths and Q2:286 («ربنا لا تؤاخذنا إن نسينا أو أخطأنا») for the falling of the sin."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q028",
+   "adilla": [
+    {
+     "ref": "Q004:043b",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p080",
+      "excerpt_ar": "قال الله تعالى بعدما أوجب الطهارة بالماء: فلم يجدواً ماه فَتَيَتَمُوا صعِيدًا طَيبا فَأمَسَحُواً بوجوهكم وَأيدٍ ريك فأقام التيمم عند العدم للماء، أو عند الضرر باستعماله مقام الماء، فدل على أنه يستباح به ما يستباح بالماء من العبادات وغيرهاء، وأنه يقوم مقامه في كل شيء",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "H-s1-said",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p325",
+      "excerpt_ar": "لكن لو تيمم عن جنابة ثم وجد الماء؛ وجب عليه أن يغتسلء ولذلك دليلان : الدليل الأول: قول النبي كِلّةٍ: «الصعيد الطيب وضوء المسلم» وإن لم يجد الماء عشر سنين، فإذا وجد الماء، فليتق الله وليمسه بشرته",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "The badal stands in for the mubdal, resorted to only when the original is unattainable. al-Saʿdī: after God made ṭahāra by water wājib, «فلم تجدوا ماء فتيمموا…» (Q4:43; the editor names al-Nisāʾ 43) «فأقام التيمم عند العدم للماء أو عند الضرر باستعماله مقام الماء، فدل على أنه يستباح به ما يستباح بالماء». Ibn ʿUthaymīn (bayt 85) adds for the second half that tayammum lapses when water is found: «الصعيد الطيب وضوء المسلم وإن لم يجد الماء عشر سنين، فإذا وجد الماء فليتق الله وليمسه بشرته» (the foundation entry is al-Tirmidhī 124's «طهور المسلم» wording), adduced for the ruling, not named the qāʿida's dalīl."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q029",
+   "adilla": [
+    {
+     "ref": "Q004:023",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p339",
+      "excerpt_ar": "وعلى هذا فقوله: «الثق دَخَاْشْر يِهنٌ» احترازٌ ممن لم يدخل بهاء بدليل قوله تعالى: «(قإن لم كوا علش 3 * : . الاكيا. آم سد مم رب بهرى فَلَا ججُتاحَ عَلِيِحَتُمٌ* فصرح بالمفهوم",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "An utterance is qualified by its attachments (waṣf, sharṭ, istithnāʾ). al-Saʿdī grounds it on the language of the Arabs and ʿurf, «وهذا مطرد في كلام الله وكلام رسوله», naming no text. Ibn ʿUthaymīn (bayt 89, «والأصل في القيد احتراز») shows it on Q4:23: «اللاتي دخلتم بهن» excludes the unconsummated, «بدليل قوله تعالى: فإن لم تكونوا دخلتم بهن فلا جناح عليكم، فصرح بالمفهوم», the Qurʾān itself stating that the qualifier narrows the ruling."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q030",
+   "adilla": [
+    {
+     "ref": "H-la-darar",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p081",
+      "excerpt_ar": "يلزم الممتنع منهم بما يعود على المشترك من الأمور الضرورية؛ والمصارف؛ والتعميرات وغيرهاء ويشتركون في زيادتها ونقصانها بحسب أملاكهم؛ ومع الجهل بمقدار ما لكل منهم يتساوون لأنه لا ضرر ولا ضرارء ويدخل في ذلك شيء كثير، فإذا احتاجت الدار إلى تعمير وامتنع أحد الشركاء أجبر على التعمير",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995-tess",
+    "archive-pdf1995",
+    "archive-manzuma-tess"
+   ],
+   "note": "Partners are compelled to the necessary upkeep of what they share «لأنه لا ضرر ولا ضرار»: the refusing partner is compelled to repair the shared house, well or land, though alone he would not be, because another's right is tied to it."
+  }
+ ]
+}
