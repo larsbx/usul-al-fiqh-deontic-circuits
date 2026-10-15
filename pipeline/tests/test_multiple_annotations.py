@@ -8,7 +8,6 @@ case once: none dedups by unit, encoder or facts, and none lets one case shadow 
 
 import json
 import re
-import shutil
 from collections import Counter
 from pathlib import Path
 
@@ -153,8 +152,7 @@ def test_out_of_domain_routing_counts_every_case_of_the_tranche():
     assert ood["cases"] == len(tranche)
 
 
-@pytest.mark.skipif(shutil.which("swipl") is None, reason="swipl not installed")
-def test_typed_coverage_is_per_unit_and_shared_by_its_cases():
+def test_typed_coverage_is_per_unit_and_shared_by_its_cases(swipl):
     """Coverage is computed once per unit; every case of that unit reads the same scores."""
     ts = tr.present(ROOT)[0]
     cov = tr.coverage(ROOT, ts)

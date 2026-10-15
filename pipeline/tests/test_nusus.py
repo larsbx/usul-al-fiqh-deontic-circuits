@@ -24,10 +24,18 @@ HUJJA = {"sahih", "hasan"}                                       # Usul.Seam.adm
 
 
 def _text(witness):
+    """A required foundation witness: missing is a failure, including offline (`make source-verify-fetch`)."""
     p = CACHE / f"{witness}.txt"
     if not p.exists():
-        pytest.skip(f"{witness} not cached")
+        pytest.fail(f"required witness {witness} not cached; run make source-verify-fetch")
     return p.read_text(encoding="utf-8")
+
+
+def test_every_witness_the_tests_read_is_required():
+    pinned = json.loads((CORPUS / "hadith/irwa_coverage.json").read_text(encoding="utf-8"))["witness"]
+    read = ({a["witness"] for k in ("ayat", "athar") for a in F[k]} | {h["albani"]["witness"] for h in F["ahadith"]}
+            | {s["witness"] for h in F["ahadith"] for s in h["sources"]} | {pinned})
+    assert read == nusus.witnesses(CORPUS)
 
 
 def test_schema():

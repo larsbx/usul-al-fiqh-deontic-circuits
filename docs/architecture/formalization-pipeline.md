@@ -129,12 +129,51 @@ Each invariant was mutation-checked once: a seeded bug in the spec makes TLC rep
 
 ### Required source replay (PR-06)
 
-`make source-verify-fetch` restores/downloads the reconciliation witness subset
-from the existing registry and checks complete source hashes, Arabic quotations,
+`make source-verify-fetch` restores/downloads the required witnesses (the
+reconciliation subset and every witness of the textual foundation,
+`nusus.witnesses`) from the existing registry and checks complete source hashes, Arabic quotations,
 closing-page locators and immediate qualifier boundaries. `make source-verify`
 runs the same gate without network fetching; `make all` includes it. Neither
 command creates or updates a source lock. A missing required witness is an error,
-including in `test_reconcile.py` and the required witness-integrity tests.
+including in `test_reconcile.py`, `test_nusus.py` and the required witness-integrity tests.
+With `--fetch-source`, a cached file whose bytes differ from its lock (a CI cache
+of an earlier pin) is fetched again; without it, that file fails. CI caches
+`.cache/corpus` across runs, so al-Albānī's Irwāʾ (scraped from Shamela page by
+page) is fetched once, resuming from its `.part` checkpoint if a run stops; a
+checkpoint resumes only under the pin it was started for (`.part.pin`).
+
+Tests that need SWI-Prolog or the IslamQA answers (Git LFS) take the `swipl` and
+`islamqa_answers` fixtures (`pipeline/tests/conftest.py`): skipped where absent,
+a failure where `USUL_REQUIRE` names them. CI sets `USUL_REQUIRE=swipl,islamqa`,
+installs SWI-Prolog in the corpus job and pulls (then caches) the one LFS file.
+
+The same job also runs two focused integration gates on Ubuntu 24.04 with
+`swi-prolog-nox` (SWI 9+; locally replayed with 9.0.4):
+
+- `make integration` replays the committed oracle cases/report, classical typed
+  routing reports, proposals, generated Prolog situations and routing index. It
+  needs no downloaded witness or IslamQA archive. Only tests marked
+  `external_source` are deselected, explicitly, rather than skipped.
+- `make integration-external` runs those external-source checks after the LFS
+  fetch: IslamQA typed/lexical routing reports and post-hoc fact quotations.
+  The answers fixture checks the existing `signature_routing.ANSWERS_SHA256`
+  pin, including on cache hits. A pointer, absent archive or wrong hash fails.
+
+Both invoke pytest's `--integration-gate`: a bounded SWI startup/JSON goal must
+succeed, and any collection, setup or test skip fails the gate. No tests
+collected also fails. Subprocess regressions exercise missing/broken/no-op
+runtimes, unexpected skips, missing/corrupt external data and explicit external
+deselection. JUnit reports are retained as `.cache/integration-committed.xml`
+and `.cache/integration-external.xml`. Existing equality tests compare the
+reconstructed artifacts with the committed files; these targets do not rewrite
+reports. Oracle replay retains the original first-run snapshots, fitted
+IslamQA results and classical held-out results as distinct report fields.
+
+These integration checks do not replace `source-verify-fetch`, foundation
+verification or the full corpus suite. Optional source exclusions in that full
+suite remain separately reported; they cannot hide skips in either integration
+gate.
+
 Quotations compare `arabic.quote_key`: Arabic letters plus each standalone
 numeral (any digit script), so a changed or dropped number fails. Page markers and
 footnote anchors (digits glued to the preceding word, `العلماء1`, or `(¬7)`) are markup and
@@ -142,6 +181,6 @@ carry no key.
 
 CI uploads `.cache/source-verification.json` and `.cache/corpus-tests.xml` even on
 failure. Read the verified/failed/excluded coverage and pytest skip reasons;
-green required-subset replay does not certify the excluded sources, foundation
-numbering checks, semantic adequacy, or independent scholarly review. See the
+green required-subset replay does not certify the excluded sources, semantic
+adequacy, or independent scholarly review. See the
 [PR-06 log](../problem-register.md) for scope, source corrections and limitations.

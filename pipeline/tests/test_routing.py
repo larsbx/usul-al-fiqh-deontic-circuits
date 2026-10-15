@@ -39,7 +39,6 @@ def test_a_text_routes_by_its_words():
     assert model.rank("وجد لقطة في الطريق")[0] == "luqata"
 
 
-def test_the_out_of_domain_report_is_current():
-    if not (ROOT / routing.ANSWERS).exists() or (ROOT / routing.ANSWERS).stat().st_size < 1000:
-        pytest.skip("IslamQA answers not fetched (Git LFS)")
+@pytest.mark.external_source
+def test_the_out_of_domain_report_is_current(islamqa_answers):
     assert routing.render_ood(ROOT) == (CORPUS / routing.OOD).read_text(encoding="utf-8")

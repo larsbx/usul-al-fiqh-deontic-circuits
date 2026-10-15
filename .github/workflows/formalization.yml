@@ -12,38 +12,57 @@ permissions:
 jobs:
   corpus:
     name: Corpus pipeline (pytest + schema validation + vectors)
-    runs-on: ubuntu-latest
-    timeout-minutes: 60
+    runs-on: ubuntu-24.04
+    # A cold witness cache scrapes al-Albānī's Irwāʾ from Shamela page by page (~55 min); warm runs take minutes.
+    timeout-minutes: 120
+    env:
+      # The tests these name fail where they would otherwise skip (pipeline/tests/conftest.py).
+      USUL_REQUIRE: swipl,islamqa
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
       - run: pip install pytest jsonschema numpy pillow
-      - name: Replay locked M5 command-schema evidence
-        run: cd pipeline && python -m usul_corpus m5-commands --fetch-source
-      - name: Install locked-source OCR dependencies
+      - name: Install SWI-Prolog and locked-source OCR dependencies
         run: |
           sudo apt-get update -q
-          sudo apt-get install -y -q tesseract-ocr poppler-utils
-      - name: Restore pinned OCR bytes
-        id: ocr-cache
+          sudo apt-get install -y -q swi-prolog-nox tesseract-ocr poppler-utils
+          swipl --version
+      - name: Replay committed Python and Prolog artifacts (no skips)
+        run: make integration
+      - name: Key the IslamQA answers by their LFS pointer
+        id: answers
+        run: echo "key=islamqa-ar-$(git rev-parse HEAD:data/islamqa/answers/islamqa-ar.jsonl.gz)" >> "$GITHUB_OUTPUT"
+      - name: Restore the IslamQA answers
+        id: answers-cache
+        uses: actions/cache@v4
+        with:
+          path: data/islamqa/answers/islamqa-ar.jsonl.gz
+          key: ${{ steps.answers.outputs.key }}
+      - name: Fetch the IslamQA answers (Git LFS)
+        if: steps.answers-cache.outputs.cache-hit != 'true'
+        run: git lfs pull --include=data/islamqa/answers/islamqa-ar.jsonl.gz
+      - name: Replay external-source routing and quotation checks (no skips)
+        run: make integration-external
+      # Witness bytes are judged against corpus/lock.json, never trusted from the cache: a stale file is
+      # refetched by source-verify-fetch, and a partial Shamela fetch (.part) resumes on the next run.
+      - name: Restore the witness cache
         uses: actions/cache/restore@v4
         with:
-          path: |
-            .cache/corpus/archive-pdf1995-tess.*
-            .cache/corpus/archive-manzuma-tess.*
-          key: ${{ runner.os }}-istidlal-ocr-${{ hashFiles('corpus/lock.json', 'pipeline/usul_corpus/ocr.py', 'pipeline/usul_corpus/verses.py', 'pipeline/usul_corpus/numbers.py') }}
+          path: .cache/corpus
+          key: witnesses-${{ github.run_id }}
+          restore-keys: witnesses-
+      - name: Replay locked M5 command-schema evidence
+        run: cd pipeline && python -m usul_corpus m5-commands --fetch-source
       - name: Verify required locked sources (fail closed)
         run: make source-verify-fetch
-      - name: Cache verified OCR bytes
-        if: steps.ocr-cache.outputs.cache-hit != 'true'
+      - name: Save the witness cache
+        if: always()
         uses: actions/cache/save@v4
         with:
-          path: |
-            .cache/corpus/archive-pdf1995-tess.*
-            .cache/corpus/archive-manzuma-tess.*
-          key: ${{ steps.ocr-cache.outputs.cache-primary-key }}
+          path: .cache/corpus
+          key: witnesses-${{ hashFiles('.cache/corpus/**') }}
       - name: Corpus tests with explicit exclusion report
         if: ${{ !cancelled() }}
         run: cd pipeline && python -m pytest -q -rs --junitxml=../.cache/corpus-tests.xml
@@ -56,6 +75,8 @@ jobs:
           path: |
             .cache/source-verification.json
             .cache/corpus-tests.xml
+            .cache/integration-committed.xml
+            .cache/integration-external.xml
           if-no-files-found: error
 
   lean:

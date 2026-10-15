@@ -1,5 +1,4 @@
 import json
-import shutil
 from pathlib import Path
 
 import pytest
@@ -78,17 +77,15 @@ def test_first_run_scores_the_earlier_rules_answers_not_todays_winners():
     assert rep["post_hoc_facts"] == {"islamqa.2.f001": ["unavoidable"]}
 
 
-def test_every_post_hoc_fact_has_verbatim_evidence_in_its_answer():
+@pytest.mark.external_source
+def test_every_post_hoc_fact_has_verbatim_evidence_in_its_answer(islamqa_answers):
     import gzip
     from usul_corpus import fatawa_takhrij
     facts = fatawa_prolog.load_facts(ROOT / "corpus")
     post_hoc = {f: x for f, x in facts.items() if x.get("post_hoc")}
     assert post_hoc and all(set(x["post_hoc"]) == set(x.get("post_hoc_evidence", {})) for x in post_hoc.values())
-    path = ROOT / "data/islamqa/answers/islamqa-ar.jsonl.gz"
-    if not path.exists() or path.stat().st_size < 1000:  # absent, or a Git LFS pointer (CI checkout)
-        pytest.skip("IslamQA answers not fetched (Git LFS)")
     need = {f.rsplit(".", 1)[0] for f in post_hoc}
-    with gzip.open(path, "rt", encoding="utf-8") as fh:
+    with gzip.open(islamqa_answers, "rt", encoding="utf-8") as fh:
         answers = {r["id"]: r for r in map(json.loads, fh) if r["id"] in need}
     for f, x in post_hoc.items():
         a = answers[f.rsplit(".", 1)[0]]
@@ -109,8 +106,11 @@ def test_committed_cases_are_generated():
     assert fatawa_prolog.check(cases, facts) == []
     records = fatawa_prolog.merge(cases, facts)
     assert (ROOT / fatawa_prolog.CASES).read_text(encoding="utf-8") == fatawa_prolog.prolog_file(records)
-    if shutil.which("swipl") is None:
-        pytest.skip("swipl not installed")
+
+
+def test_the_committed_report_replays(swipl):
+    facts = fatawa_prolog.load_facts(ROOT / "corpus")
+    records = fatawa_prolog.merge(fatawa_prolog.load_cases(ROOT / "corpus", facts), facts)
     rep = fatawa_prolog.report(records, fatawa_prolog.run(ROOT), fatawa_prolog.first_runs(ROOT, records),
                                frozenset(fatawa_prolog.revised_rules(ROOT)), fatawa_prolog.sorts(ROOT / "corpus"))
     # the reconstructed first-run rules reproduce the first run (105/122); the classical held-out run is 24/26
