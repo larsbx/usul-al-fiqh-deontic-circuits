@@ -1297,8 +1297,8 @@ def budhCapacityIsWealth : Typed Situation (Bool) where
 /-- `craft_capacity_is_wealth` reads `Qaida.Rajab132`. -/
 def craftCapacityIsWealth : Typed Situation (Bool) where
   Local := (Bool) × (Bool) × (Bool)
-  proj s := do pure (← s.hasWealth, ← s.canEarnByCraft, ← s.beyondOwnMaintenance)
-  embed | (x1, x2, x3) => { hasWealth := some x1, canEarnByCraft := some x2, beyondOwnMaintenance := some x3 }
+  proj s := do pure (← s.hasWealthQ132, ← s.canEarnByCraft, ← s.beyondOwnMaintenance)
+  embed | (x1, x2, x3) => { hasWealthQ132 := some x1, canEarnByCraft := some x2, beyondOwnMaintenance := some x3 }
   run | (x1, x2, x3) => Usul.Readings.RajabA17.craftCountsAsRich x1 x2 x3
   proj_embed := fun _ => rfl
 

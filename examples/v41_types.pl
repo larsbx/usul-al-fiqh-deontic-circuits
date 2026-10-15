@@ -209,7 +209,7 @@ qaida_type(rajab131, 'Ibn Rajab 131 «القدرة على اكتساب الما�
 type_field(rajab131, has_wealth, 'Option Bool').
 type_field(rajab131, can_earn_by_budh, 'Option Bool').
 qaida_type(rajab132, 'Ibn Rajab 132 «القدرة على اكتساب المال بالصناعات غني بالنسبة إلى نفقة النفس، ومن تلزم نفقته من زوجة وخادم وهل هو غني فاضل عن ذلك على روايتين، ويتفرع على ذلك مسائل: (منها) القوي المكتسب لا يباح له أخذ الزكاة بجهة الفقر فإنه …». Read by `craft_capacity_is_wealth`.').
-type_field(rajab132, has_wealth, 'Option Bool').
+type_field(rajab132, has_wealth_q132, 'Option Bool').
 type_field(rajab132, can_earn_by_craft, 'Option Bool').
 type_field(rajab132, beyond_own_maintenance, 'Option Bool').
 qaida_type(rajab134, 'Ibn Rajab 134 «المنع أسهل من الرفع، ويتخرج على ذلك مسائل كثيرة جدا: (منها) تخمير الخل ابتداء بأن يوضع فيها خل يمنع تخميرها مشروع، وتخليلها بعد تخميرها ممنوع. (منها) ذبح الحيوان المأكول يمنع نجاسة لحمه وجلده وهو مشروع ودبغ …». Read by `prevention_easier_than_removal`.').
@@ -618,7 +618,7 @@ encoder_reads(continuity, 1, customary_continuity).
 encoder_type(contract_by_kinaya, 'Bool').
 encoder_reads(contract_by_kinaya, 1, needs_witnessing).
 encoder_type(craft_capacity_is_wealth, 'Bool').
-encoder_reads(craft_capacity_is_wealth, 1, has_wealth).
+encoder_reads(craft_capacity_is_wealth, 1, has_wealth_q132).
 encoder_reads(craft_capacity_is_wealth, 2, can_earn_by_craft).
 encoder_reads(craft_capacity_is_wealth, 3, beyond_own_maintenance).
 encoder_type(crop_without_valid_permission, 'Bool').

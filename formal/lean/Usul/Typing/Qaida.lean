@@ -726,7 +726,7 @@ structure Rajab131 where
 
 /-- Ibn Rajab 132 «القدرة على اكتساب المال بالصناعات غني بالنسبة إلى نفقة النفس، ومن تلزم نفقته من زوجة وخادم وهل هو غني فاضل عن ذلك على روايتين، ويتفرع على ذلك مسائل: (منها) القوي المكتسب لا يباح له أخذ الزكاة بجهة الفقر فإنه …». Read by `craft_capacity_is_wealth`. -/
 structure Rajab132 where
-  hasWealth : Option (Bool) := none
+  hasWealthQ132 : Option (Bool) := none
   canEarnByCraft : Option (Bool) := none
   beyondOwnMaintenance : Option (Bool) := none
 
