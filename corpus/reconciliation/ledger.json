@@ -518,6 +518,18 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā states decisively that finding water during the prayer or ṭawāf voids them."
         }
+      ],
+      "adilla": [
+        {
+          "position": 0,
+          "ref": "H-abu-dharr-said",
+          "note": "al-Mughnī's evidence that the prayer is bāṭil: «دل بمفهومه: على أنه لا يكون طهورا عند وجود الماء، وبمنطوقه على وجوب إمساسه جلده عند وجوده»."
+        },
+        {
+          "position": 1,
+          "ref": "Q047:033",
+          "note": "The other riwāya's evidence in al-Mughnī: he cannot use the water without making the prayer bāṭil, which «ولا تبطلوا أعمالكم» forbids. Both sides have an admitted naṣṣ, so the dalīl stage gives no result and the grades decide. For review: al-Mughnī reports Aḥmad's turning from «يمضي» («ثم تدبرت، فإذا أكثر الأحاديث على أنه يخرج»), a retraction the naskh stage might weigh."
+        }
       ]
     },
     {
@@ -571,6 +583,23 @@
           "grade": "jazm",
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā rules that even the muḥdith who finds insufficient water uses it and then performs tayammum."
+        }
+      ],
+      "adilla": [
+        {
+          "position": 0,
+          "ref": "Q005:006c",
+          "note": "al-Mughnī for the junub, and for the muḥdith «لما ذكرنا في الجنب»: tayammum is for one who finds no water, «وهذا واجد»."
+        },
+        {
+          "position": 0,
+          "ref": "H-abu-dharr-said",
+          "note": "al-Mughnī's «وخبر أبي ذر، شرط في التيمم عدم الماء، وهذا واجد», extended to the muḥdith «لما ذكرنا في الجنب»."
+        },
+        {
+          "position": 0,
+          "ref": "H-ma-statatum",
+          "note": "al-Mughnī for using the water he can: «إذا أمرتكم بأمر فأتوا منه ما استطعتم», extended to the muḥdith. The other wajh argues from muwālāt («لأن الموالاة شرط فيها»), with no text: the dalīl stage decides for using it, as the grades do."
         }
       ]
     },
@@ -4298,6 +4327,18 @@
           "grade": "jazm",
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf extends this to Magians and idolaters as well: pure if their state is unknown, because the aṣl of purity is not removed by doubt (position 0)."
+        }
+      ],
+      "adilla": [
+        {
+          "position": 0,
+          "ref": "Q005:005",
+          "note": "al-Mughnī (after Ibn ʿAqīl) and Kashshāf: the food of the People of the Book is lawful, so their vessels are not ḥarām («لا يحرم استعمال أوانيهم»). It bears on the kitābīs, part of Zād's «الكفار». al-Mughnī and Kashshāf also adduce «توضئوا من مزادة مشركة», but al-Albānī did not find that wording (al-Irwāʾ 36: «لم أجده»), so it is not entered."
+        },
+        {
+          "position": 1,
+          "ref": "H-abi-thalaba-aniya",
+          "note": "al-Mughnī's evidence for karāha: «إن وجدتم غيرها فلا تأكلوا فيها», read as karāha («وأقل أحوال النهي الكراهة»). For review: its «فاغسلوها» (washing, ghasl, before use when no others are found) bears on the facts of the washing riwāya too, though no holder of that riwāya in the works read here adduces it."
         }
       ]
     },
