@@ -14,9 +14,12 @@ between the sciences become functors.
 
 namespace Usul.Cat
 
-/-- A small category. -/
+universe u u₁ u₂ u₃
+
+/-- A category with objects in `Type u` and arrows in `Type`: small for the scales, large enough
+for typed encoders (`Usul.Cat.Typing`). -/
 structure Cat where
-  Obj : Type
+  Obj : Type u
   Hom : Obj → Obj → Type
   id : ∀ a, Hom a a
   comp : ∀ {a b c}, Hom a b → Hom b c → Hom a c
@@ -40,7 +43,7 @@ def op (C : Cat) : Cat where
 @[simp] theorem op_op (C : Cat) : C.op.op = C := rfl
 
 /-- The thin category of a preorder: an arrow `a ⟶ b` is a proof of `r a b`. -/
-def thin {α : Type} (r : α → α → Prop) (refl : ∀ a, r a a)
+def thin {α : Type u} (r : α → α → Prop) (refl : ∀ a, r a a)
     (trans : ∀ {a b c}, r a b → r b c → r a c) : Cat where
   Obj := α
   Hom a b := PLift (r a b)
@@ -60,7 +63,7 @@ def disc (β : Type) : Cat := thin (@Eq β) (fun _ => rfl) Eq.trans
 /-- Parallel arrows are equal. -/
 def Thin (C : Cat) : Prop := ∀ {a b} (f g : C.Hom a b), f = g
 
-theorem thin_thin {α : Type} {r : α → α → Prop} {refl trans} : Thin (thin r refl trans) :=
+theorem thin_thin {α : Type u} {r : α → α → Prop} {refl trans} : Thin (thin r refl trans) :=
   fun f g => by cases f; cases g; rfl
 
 theorem Thin.op {C : Cat} (h : Thin C) : Thin C.op := h

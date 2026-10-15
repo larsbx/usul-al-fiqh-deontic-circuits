@@ -74,4 +74,29 @@ example : ¬ ∃ g, Glues (cover situations [mughni, otherWajh, asgharSahih])
     (sections situations [mughni, otherWajh, asgharSahih]) g :=
   fun h => absurd (glues_iff_obstructions_nil.1 h) (by simp [obstructions, situations, mughni, otherWajh, asgharSahih])
 
+/-! ## Downstream of the types (`Usul.Cat.Typing`) -/
+
+section Typed
+
+open Usul.Typing Usul.Muamalat Usul.Cat.Typing
+
+/-- Two situations with the same itlāf signature (Q13 ⊔ Q36), differing in another qāʿida's fact
+(the hand of Q14): the type licenses the qiyās. -/
+example : itlaf.judge { purpose := some .benefit, mental := some .deliberate, hand := some .trustee } =
+    itlaf.judge { purpose := some .benefit, mental := some .deliberate } :=
+  qiyas itlaf rfl
+
+/-- Ibn Rajab 16's type extends Q28's: an arrow `substituteAtObligation ⟶ substitute`, and not back,
+since Q28's encoder applies where Ibn Rajab 16's does not. -/
+example : (readsCat Situation).Hom ⟨Bool, substituteAtObligation⟩ ⟨Bool, substitute⟩ := ⟨rajab16_reads_q28⟩
+
+example : substitute.applies { originalPossible := some true } = true := rfl
+example : substituteAtObligation.applies { originalPossible := some true } = false := rfl
+
+example : ¬ Reads substitute substituteAtObligation := fun h => by
+  have := h.applies (s := { originalPossible := some true }) rfl
+  exact absurd this (by decide)
+
+end Typed
+
 end UsulTest.Cat

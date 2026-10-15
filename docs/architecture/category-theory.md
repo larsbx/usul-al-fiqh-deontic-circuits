@@ -1,6 +1,6 @@
 # The categorical layer (`Usul.Cat`)
 
-**Place in the stack.** Qawāʿid ([`schemata.md`](schemata.md)) are the foundation. Types come next ([`judgement.md`](judgement.md): `Usul.Judgement`, `Usul.Typing`). This layer is downstream of both. Its scales are Σ's (`Usul.Hukm`, `Usul.Signature`: the vocabulary below the qawāʿid), and its factorization is the qawāʿid's S1 shape `Factors`.
+**Place in the stack.** Qawāʿid ([`schemata.md`](schemata.md)) are the foundation. Types come next ([`judgement.md`](judgement.md): `Usul.Judgement`, `Usul.Typing`). This layer is downstream of both, in the import graph and not only in reading order. `Usul.Cat.Typing` imports the types (`Usul.Typing`), and the root `Usul.Cat` imports it. `pipeline/tests/test_layers.py` pins the stack: nothing below the categories imports them, only the types layer and the categories import the types, and the categories reach the types. Its scales (`Scales`) come from Σ (`Usul.Hukm`, `Usul.Signature`: the vocabulary below the qawāʿid). Its factorization is the qawāʿid's S1 shape `Factors`, applied to the typed encoders in `Typing`.
 
 The roadmap (§0) gives category theory one job: **compositional specification, checked through
 Lean statements**. `formal/lean/Usul/Cat/` is that layer. Like the rest of the kernel it does not
@@ -13,6 +13,7 @@ claim. Vectors are in `formal/lean/UsulTest/Cat.lean`, `Obstructions.lean` and `
 | `Scales` | §2.1, H7 | the sciences' scales are thin categories, and their seams are functors | `sigmaIso : hukmCat ≅ hukmCatᵒᵖ`, `gradeOfVerdict`, `hujja_upSet` |
 | `Factor` | §2.5, M9 L-QIY-1 | ʿilla valid ⇔ ruling factors through the feature; naqḍ = witness against | `factors_iff_functor`, `factors_iff_exists`, `factorsOn_iff_extension`, `not_factorsOn_iff_naqd`, `qiyas_determined`, `unattested_free` |
 | `Sheaf` | M10 | local verdicts glue iff they match; ikhtilāf is a named obstruction | `gluing`, `glue_unique`, `no_glue_iff_obstruction`, `glues_iff_obstructions_nil` |
+| `Typing` | types → categories | the categorical layer on the qāʿida types: L-QIY-1 over typed encoders, and the category of typed encoders | `retract`, `judge_factors`, `qiyas`, `judge_functor`, `readsCat`, `Reads.factors`, `applies_upSet`, `rajab16_reads_q28` |
 | `Institution`, `Carriers` | M11 | carriers as institutions; a check in one carrier proves the statement in another when the model maps are onto | `Comorphism.comp`, `entails_iff`, `compile`, `initial`, `always_iff`, `entailsB_iff` |
 
 ## Scales
@@ -123,6 +124,33 @@ on effect, dalāla, takyīf, epistemic and procedure encoders (`records_within_r
 
 For set-valued verdicts the obstruction to gluing is a pairwise disagreement: a Čech 1-cochain
 that does not vanish. The layer does not claim a cohomology group.
+
+## Downstream of the types (`Usul.Cat.Typing`)
+
+The qawāʿid define the types (`Usul.Typing.Qaida`: one structure per qāʿida with exactly the facts it
+states, `Situation` their join), and encoders are typed over them (`Typed S O`: `proj`, `embed`,
+`proj_embed`). This module puts the categorical layer on those types.
+
+* **Retract** (`retract`): a typed encoder's local signature is a retract of the situation type.
+* **L-QIY-1 over the types** (`judge_factors`, `judge_functor`, `qiyas`): an encoder's ruling factors
+  through its qāʿida type's projection, so it is a functor from the kernel of that projection
+  (`Factor.factors_iff_functor`). Two situations with the same local signature receive the same
+  ruling, whatever other qawāʿid's facts they carry. The vector: itlāf (Q13 ⊔ Q36) on two situations
+  that differ in the hand of Q14.
+* **The category of typed encoders** (`readsCat S`, thin): `E ⟶ F` when `E` reads at least as much
+  as `F`. Wherever `E` applies, `F` does, and `F`'s signature is a function of `E`'s (`Reads`).
+  * Applying to a situation is an up-set along arrows (`applies_upSet`).
+  * Where the finer encoder applies, the coarser one's ruling factors through the finer signature
+    (`Reads.factors`).
+  * A qāʿida type that `extends` another gives an arrow. Ibn Rajab 16's type extends Q28's, so
+    `substituteAtObligation ⟶ substitute` (`rajab16_reads_q28`). There is no arrow back: Q28's
+    encoder applies where Ibn Rajab 16's lacks `settledAtObligation`.
+* **Answers** (`Reads.mapRun`, `judge_mapRun_factors`): relabelling an answer (`Typed.mapRun`, as
+  `Usul.Typing.Answers` does for validity and negated encoders) is an isomorphism in `readsCat`, and
+  it keeps the factorization.
+
+`Cat` is universe-polymorphic in its objects so that typed encoders, which live in `Type 1`, can
+be objects. Arrows stay in `Type`.
 
 ## Institutions across carriers (M11)
 

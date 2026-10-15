@@ -101,7 +101,7 @@ Known extraction defect: h014 is labelled «فمن المخصص المتصل» b
 | `Usul.Kulliyyat` | the general maxims: `q05_both_foundations` (sincerity ∧ following, via Q8's gate); `q09_*` (custom fills undefined measures); `q15_*`; `q17_*`; `q29_attach_narrows` (qualifiers only narrow); `q31_each_cause_its_effect`; `q34_best_admissible` (Q33's `best` discharges a guardian's choice); `q39_*` (after the cause, before the condition); `q41_*` (merging of like worship); `q48_custom_monotone`; `q50_*`; `q57_*` (intent read where possible) |
 | `Usul.Qawaid` | `yaqin_la_yazul_bish_shakk`, `update_grade_mono`, `closure_respects_capacity` (*mā lā yatimm al-wājib…* is consistent with *lā wājib maʿa ʿajz*), `darura_bounded` |
 | `Usul.Typing.Qaida` / `Usul.Typing` / `Usul.Judgement` | **types, defined by the qawāʿid**: one structure per qāʿida with exactly the facts it states, `Situation` their join, encoders as `Typed S O` (`proj_embed`), and the judgement form with each encoder's question (see [`judgement.md`](judgement.md)) |
-| `Usul.Cat` | **categories, downstream of the types**: scales, qiyās as factorization, gluing and obstruction, institutions across carriers (see [`category-theory.md`](category-theory.md)) |
+| `Usul.Cat` | **categories, downstream of the types** (`Usul.Cat.Typing`: L-QIY-1 over typed encoders, the category of typed encoders; the stack is pinned by `test_layers.py`): scales, qiyās as factorization, gluing and obstruction, institutions across carriers (see [`category-theory.md`](category-theory.md)) |
 | `UsulTest` | 47 shared grounded-extension vectors checked with `#guard`; Σ-map and catalogue constants checked with `#check`; every catalogue schema tag pinned by a typed `example` (`Schemata.lean`) |
 
 ### TLA+ (`formal/tla`, TLC, bounded)
