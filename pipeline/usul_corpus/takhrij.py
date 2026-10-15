@@ -10,6 +10,7 @@ case whose class asserts agreement or disagreement, so a wrong annotation fails 
 from __future__ import annotations
 
 import json
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -559,7 +560,7 @@ def mirror_file() -> str:
     return "\n".join(lines) + "\n"
 
 
-def report(cases: list[dict]) -> dict:
+def report(cases: list[dict], co: list[dict] = ()) -> dict:
     by = Counter(c["class"] for c in cases)
     scope = len(cases) - by["segmentation_error"]
     per = {e: dict(Counter(c["class"] for c in cases if c["encoder"] == e)) for e in ENCODERS}
@@ -574,7 +575,9 @@ def report(cases: list[dict]) -> dict:
             "gaps_open": sum(1 for c in cases if c.get("needs")),
             "revisited": sum(1 for c in cases if c.get("revisit")),
             "revisit_queue": revisit_queue(cases),
-            "per_encoder": {e: dict(sorted(v.items())) for e, v in per.items() if v}}
+            "per_encoder": {e: dict(sorted(v.items())) for e, v in per.items() if v},
+            **({"co_annotations": {"total": len(co), "per_encoder": dict(sorted(Counter(c["encoder"] for c in co).items()))}}
+               if co else {})}
 
 
 UNIT_TYPES = ("fatwa", "masala", "bab")
@@ -595,6 +598,50 @@ def annotation_errors(cases: list[dict], records: list[dict]) -> list[str]:
     expected = {i for e in set(home.values()) for i, q in far.items() if q in ENCODERS[e]["qawaid"]}
     errs += [f"{i}: unannotated farʿ of an annotated encoder's qāʿida" for i in sorted(expected - set(home))]
     return errs
+
+
+CO = Path("corpus/takhrij/co")
+
+
+def key(c: dict) -> str:
+    """A co-annotation's id: its farʿ and its encoder (a farʿ's home annotation is its farʿ)."""
+    return f"{c['far']}@{c['encoder']}"
+
+
+def keyed(co: list[dict]) -> list[dict]:
+    return [{**c, "far": key(c)} for c in co]
+
+
+def co_errors(co: list[dict], cases: list[dict], records: list[dict]) -> list[str]:
+    """A co-annotation records that a second encoder derives the farʿ's stated ruling, on the farʿ's
+    own words. It needs the farʿ's home annotation, once and kernel-derived (or a side of its
+    ikhtilāf); a gap at home is closed by revisiting it (S4), never by a co-annotation beside it.
+    Invariant 5 stays on the home annotations: a co-annotation is not counted there."""
+    from .labels import normalize_ar
+    flat = lambda s: "".join(normalize_ar(re.sub(r"ms\d+", "", s or "")).split())  # milestones are not words
+    home = {c["far"]: c for c in cases}
+    text = {r["id"]: r.get("case_ar") or r.get("excerpt_ar") for r in records if r["record_type"] == "far"}
+    seen = Counter(key(c) for c in co)
+    errs = [f"{k}: annotated twice" for k, n in sorted(seen.items()) if n > 1]
+    for c in co:
+        k, h = key(c), home.get(c["far"])
+        errs += [f"{k}: {e}" for e in check_case(c)]
+        if h is None:
+            errs.append(f"{k}: no home annotation")
+            continue
+        if c["encoder"] == h["encoder"]:
+            errs.append(f"{k}: repeats its home encoder")
+        if c["class"] != "derivable":
+            errs.append(f"{k}: a co-annotation records a derivation")
+        if GUARDED.get(h["class"]) != "==":
+            errs.append(f"{k}: its home is a gap; revisit it instead")
+        if not c.get("basis") or flat(c["basis"]) not in flat(text.get(c["far"])):
+            errs.append(f"{k}: basis is not the farʿ's own words")
+    return errs
+
+
+def load_co(root: Path) -> list[dict]:
+    return load_dir(root / "takhrij" / "co")
 
 
 def load_dir(d: Path) -> list[dict]:

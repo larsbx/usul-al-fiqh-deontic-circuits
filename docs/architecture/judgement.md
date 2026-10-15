@@ -28,18 +28,18 @@
 
 ## Every encoder typed (`make judgement`)
 
-[`corpus/types/encoders.json`](../../corpus/types/encoders.json) gives each of the 177 takhrīj encoders a *sort*. A *judgement* answers a `Question` or a yes/no `Aspect`. The other sorts are outputs that answer no khiṭāb, so they must never be compared with one:
+[`corpus/types/encoders.json`](../../corpus/types/encoders.json) gives each of the 191 takhrīj encoders a *sort*. A *judgement* answers a `Question` or a yes/no `Aspect`. The other sorts are outputs that answer no khiṭāb, so they must never be compared with one:
 
 | Sort | What the output is | Encoders | Cases |
 |---|---|---:|---:|
-| judgement / `wadi:sabab` | a sabab holds: liability, ownership, a right arising or lapsing | 41 | 241 |
+| judgement / `wadi:sabab` | a sabab holds: liability, ownership, a right arising or lapsing | 45 | 275 |
 | judgement / `wadi:validity` | ṣaḥīḥ or fāsid | 37 | 180 |
-| judgement / `aspect:obligatory`, `aspect:permitted` | must he? may he? | 20 | 82 |
-| judgement / `wadi:shart`, `wadi:mani` | a condition met, an impediment present | 10 | 56 |
+| judgement / `aspect:obligatory`, `aspect:permitted` | must he? may he? | 21 | 87 |
+| judgement / `wadi:shart`, `wadi:mani` | a condition met, an impediment present | 11 | 63 |
 | judgement / `taklifi` | the act's five-fold status | 3 | 5 |
-| effect | a waḍʿī effect that is not yes/no: to whom, how much, which outcome | 24 | 172 |
+| effect | a waḍʿī effect that is not yes/no: to whom, how much, which outcome | 26 | 176 |
 | dalāla | what a text or utterance means or covers | 18 | 87 |
-| takyīf | what a thing or fact is classified as (taḥqīq al-manāṭ) | 13 | 72 |
+| takyīf | what a thing or fact is classified as (taḥqīq al-manāṭ) | 19 | 114 |
 | epistemic | which presumption or grade establishes a fact | 4 | 80 |
 | procedure | adjudication and evidence | 7 | 35 |
 
@@ -49,10 +49,10 @@
 - `Usul.Typing` types what an encoder reads; this file types what its output answers.
 
 **What it shows**
-- **Only 0.558 of the 1,010 cases (classical and IslamQA) answer a khiṭāb at all.** The rest are effects, dalāla, takyīf, epistemic and procedure. A single "ruling" field across the bank compares answers to different questions.
+- **Only 0.554 of the 1,102 cases (classical and IslamQA) answer a khiṭāb at all.** The rest are effects, dalāla, takyīf, epistemic and procedure. A single "ruling" field across the bank compares answers to different questions.
 - **The IslamQA tranche is a case in point.** Its five encoders split three ways. `itlaf` and `trust_loss` are sabab questions (ḍamān). `luqata` and `unknown_owner` are effects (which outcome, to whom). `asl_zahir` is epistemic. So the Prolog oracle's agreement figure mixes three sorts.
-- **Classification is uncertain.** 76 of the 177 encoders carry an `alt`, a second defensible reading. The commonest splits are validity vs aspect:permitted («لا يجوز» in worship or disposal), sabab vs effect, and dalāla vs takyīf. These are the review items.
-- **Three encoders had their polarity reversed:** `trust_voidance`, `cut_sale_left_to_ripen` and `simultaneous_combination_voids` return true for *void*. They are typed as validity, negated, rather than given a polarity that reads the other way.
+- **Classification is uncertain.** 84 of the 191 encoders carry an `alt`, a second defensible reading. The commonest splits are validity vs aspect:permitted («لا يجوز» in worship or disposal), sabab vs effect, and dalāla vs takyīf. These are the review items.
+- **Four encoders had their polarity reversed:** `trust_voidance`, `cut_sale_left_to_ripen` and `simultaneous_combination_voids` return true for *void*, and `supervening_bar_extends_to_preliminaries` true for *forbidden*. They are typed negated (validity, and may-he), rather than given a polarity that reads the other way.
 - **The IslamQA labels:** 2,326 of 14,352 taklīfī labels (0.162) sit on a question that asks about a posited sign or a report:
   - validity: 1,772;
   - milk: 357;

@@ -30,6 +30,8 @@ example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.benefitThenThing
 -- benefit_to_other: wadi:sabab
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.benefitToOther
+-- burdened_thing_compensated: wadi:sabab
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.burdenedThingCompensated
 -- cancel_on_existence_valid: wadi:validity
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .validity)) := Usul.Typing.cancelOnExistenceValid.mapRun Usul.Validity.ofEffects
 -- combination_bars_its_amount: wadi:mani
@@ -98,6 +100,10 @@ example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.handWithOwnerLiable
 -- hastened_right_forfeited: wadi:mani
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .mani)) := Usul.Typing.hastenedRightForfeited
+-- heir_stands_in_owed_right: wadi:sabab
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.heirStandsInOwedRight
+-- heir_takes_deceased_right: wadi:sabab
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.heirTakesDeceasedRight
 -- holding_after_contract_end: wadi:sabab
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.holdingAfterContractEnd
 -- ihram_specification: wadi:validity
@@ -136,10 +142,14 @@ example : Usul.Typing.Typed Usul.Typing.Situation (Bool) := Usul.Typing.partners
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .validity)) := Usul.Typing.performedWithoutLeaveNotOwned.mapRun Usul.Validity.ofEffects
 -- performed_without_leave_owned: wadi:validity
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .validity)) := Usul.Typing.performedWithoutLeaveOwned.mapRun Usul.Validity.ofEffects
+-- prevention_easier_than_removal: wadi:mani
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .mani)) := Usul.Typing.preventionEasierThanRemoval
 -- prohibited_worship: wadi:validity
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .validity)) := Usul.Typing.prohibitedWorship.mapRun Usul.Validity.ofEffects
 -- qabd_in_contracts: wadi:sabab
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.qabdInContracts
+-- qawad_choice_forfeits_attached_right: wadi:sabab
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.qawadChoiceForfeitsAttachedRight
 -- qisas_belongs_to_whom: wadi:validity
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .validity)) := Usul.Typing.qisasBelongsToWhom.mapRun Usul.Validity.ofEffects
 -- recourse: wadi:sabab
@@ -190,6 +200,8 @@ example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.successiveByBinding
 -- successive_contracts: wadi:sabab
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.successiveContracts
+-- supervening_bar_extends_to_preliminaries: aspect:permitted (negated)
+example : Usul.Typing.Typed Usul.Typing.Situation (Bool) := Usul.Typing.superveningBarExtendsToPreliminaries.mapRun (!·)
 -- switch_to_original: aspect:obligatory
 example : Usul.Typing.Typed Usul.Typing.Situation (Bool) := Usul.Typing.switchToOriginal
 -- tadakhul: wadi:validity

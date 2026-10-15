@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "candidate",
-  "provenance": "The 157 cases of fold 0 of the routing index's held-out split (corpus/routing/index.json; Ibn Rajab and Ibn al-Laḥḥām furūʿ) typed into Usul.Typing situations, LLM-assisted by four agents working blind: they saw each farʿ's committed text under an opaque id (record ids name the qāʿida) and a field catalogue generated from the Lean export, never the qāʿida, encoder or label. Quotes are verbatim, at most 160 characters. The 17 fold-0 cases of the RajabA13–A16 shards (qawāʿid 119–130), added at the 2026-10-14 merge, were typed by one agent that had seen their annotations, so not blind; likewise q128.f000, recovered and annotated at PR-30. Not human-reviewed.",
+  "provenance": "The 157 cases of fold 0 of the routing index's held-out split (corpus/routing/index.json; Ibn Rajab and Ibn al-Laḥḥām furūʿ) typed into Usul.Typing situations, LLM-assisted by four agents working blind: they saw each farʿ's committed text under an opaque id (record ids name the qāʿida) and a field catalogue generated from the Lean export, never the qāʿida, encoder or label. Quotes are verbatim, at most 160 characters. The 17 fold-0 cases of the RajabA13–A16 shards (qawāʿid 119–130), added at the 2026-10-14 merge, were typed by one agent that had seen their annotations, so not blind; likewise q128.f000, recovered and annotated at PR-30. The 22 fold-0 cases of the RajabA17–A20 shards (qawāʿid 132–146), added at the round-5 merge, were typed blind again, by one agent that saw only each farʿ's text under an opaque id and the generated field catalogue. Not human-reviewed.",
   "answers": [
     {
       "answer": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f001",
@@ -2319,6 +2319,20 @@
       ]
     },
     {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f002",
+      "situations": [
+        {
+          "label": "strong earner, hajj",
+          "facts": {
+            "can_earn_by_craft": true
+          },
+          "evidence": {
+            "can_earn_by_craft": "القوي المكتسب"
+          }
+        }
+      ]
+    },
+    {
       "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f001",
       "situations": [
         {
@@ -2392,6 +2406,344 @@
           "label": "wife: if you divorce me you are released from my dower",
           "facts": {},
           "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f004",
+      "situations": [
+        {
+          "label": "wife starts vowed/supererogatory hajj without husband's permission",
+          "facts": {
+            "permission": false
+          },
+          "evidence": {
+            "permission": "بدون إذنه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f005",
+      "situations": [
+        {
+          "label": "water found after tayammum, before starting prayer",
+          "facts": {
+            "original_possible": true
+          },
+          "evidence": {
+            "original_possible": "أن وجود الماء بعد التيمم وقبل الشروع في الصلاة"
+          }
+        },
+        {
+          "label": "water found after entering prayer with tayammum",
+          "facts": {
+            "original_possible": true
+          },
+          "evidence": {
+            "original_possible": "ولو دخل فيها بالتيمم ثم وجد الماء"
+          }
+        },
+        {
+          "label": "able to marry free woman after marrying slave",
+          "facts": {
+            "original_possible": true
+          },
+          "evidence": {
+            "original_possible": "القدرة على نكاح الحرة بعد نكاح الأمة"
+          }
+        },
+        {
+          "label": "able to free slave after starting fast for zihar",
+          "facts": {
+            "original_possible": true
+          },
+          "evidence": {
+            "original_possible": "القدرة على كفارة الظهار بالعتق بعد الشروع في الصيام"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f002",
+      "situations": [
+        {
+          "label": "no catalogue field stated",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f004",
+      "situations": [
+        {
+          "label": "no catalogue field stated",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f002",
+      "situations": [
+        {
+          "label": "estate slave killed deliberately, heirs chose qisas",
+          "facts": {
+            "mental": "deliberate",
+            "victim_encumbered": true,
+            "chose_one": true
+          },
+          "evidence": {
+            "mental": "عمدا",
+            "victim_encumbered": "عبد من التركة المستغرقة بالديون",
+            "chose_one": "فاختاروا القصاص"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f003",
+      "situations": [
+        {
+          "label": "slave with bequeathed usufruct killed deliberately",
+          "facts": {
+            "mental": "deliberate",
+            "victim_encumbered": true,
+            "permission": true
+          },
+          "evidence": {
+            "mental": "إذا قتل عمدا",
+            "victim_encumbered": "العبد الموصى بمنفعته",
+            "permission": "بعد إذن مالك المنفعة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f004",
+      "situations": [
+        {
+          "label": "mukatab takes retaliation without master's permission",
+          "facts": {
+            "permission": false
+          },
+          "evidence": {
+            "permission": "بدون إذن سيده"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f007",
+      "situations": [
+        {
+          "label": "pledgor pardons injury to pledged item",
+          "facts": {
+            "victim_encumbered": true
+          },
+          "evidence": {
+            "victim_encumbered": "الجناية على المرهون"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f008",
+      "situations": [
+        {
+          "label": "bankrupt pardons qawad gratis",
+          "facts": {
+            "against_compensation": false,
+            "victim_encumbered": true
+          },
+          "evidence": {
+            "against_compensation": "مجانا",
+            "victim_encumbered": "عفو المفلس"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f010",
+      "situations": [
+        {
+          "label": "heirs pardon qisas with debts consuming estate",
+          "facts": {
+            "victim_encumbered": true
+          },
+          "evidence": {
+            "victim_encumbered": "مع استغراق الديون"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f016",
+      "situations": [
+        {
+          "label": "settlement of deliberate blood for a share",
+          "facts": {
+            "mental": "deliberate",
+            "against_compensation": true
+          },
+          "evidence": {
+            "mental": "دم العمد",
+            "against_compensation": "صالح عن دم العمد بشقص"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f003",
+      "situations": [
+        {
+          "label": "deliberate killer then killed",
+          "facts": {
+            "mental": "deliberate"
+          },
+          "evidence": {
+            "mental": "إذا قتل رجلا عمدا"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f006",
+      "situations": [
+        {
+          "label": "sacrificial skins exchanged for household vessels",
+          "facts": {
+            "same_purpose": true
+          },
+          "evidence": {
+            "same_purpose": "يقوم مقام الانتفاع بالجلد نفسه في متاع البيت"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f007",
+      "situations": [
+        {
+          "label": "waqf ruined",
+          "facts": {
+            "destroyed": true
+          },
+          "evidence": {
+            "destroyed": "إبدال الوقف إذا خرب"
+          }
+        },
+        {
+          "label": "waqf still built",
+          "facts": {
+            "destroyed": false
+          },
+          "evidence": {
+            "destroyed": "والوقف مع عمارته"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f009",
+      "situations": [
+        {
+          "label": "kitaba goods found defective and returned",
+          "facts": {
+            "defect_return": true
+          },
+          "evidence": {
+            "defect_return": "فوجده معيبا فرده"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f002",
+      "situations": [
+        {
+          "label": "option of condition, no demand",
+          "facts": {
+            "demanded": false
+          },
+          "evidence": {
+            "demanded": "بغير مطالبة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f003",
+      "situations": [
+        {
+          "label": "gift revocation right, no demand",
+          "facts": {
+            "demanded": false
+          },
+          "evidence": {
+            "demanded": "بدون المطالبة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f008",
+      "situations": [
+        {
+          "label": "guaranteed debt at death",
+          "facts": {
+            "guaranteed": true
+          },
+          "evidence": {
+            "guaranteed": "وله دين له به ضامن"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f004",
+      "situations": [
+        {
+          "label": "bain divorce, remarried in idda, divorced before consummation",
+          "facts": {
+            "rajiyya": false,
+            "in_idda": true
+          },
+          "evidence": {
+            "rajiyya": "طلاقا بائنا",
+            "in_idda": "ثم نكحها في العدة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f004",
+      "situations": [
+        {
+          "label": "second husband has intercourse in idda after khalwa",
+          "facts": {
+            "in_idda": true,
+            "rajiyya": true
+          },
+          "evidence": {
+            "in_idda": "ثم وطئها في مدة العدة",
+            "rajiyya": "وثبتت الرجعة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f008",
+      "situations": [
+        {
+          "label": "revocably divorced woman",
+          "facts": {
+            "rajiyya": true
+          },
+          "evidence": {
+            "rajiyya": "أن الرجعية"
+          }
         }
       ]
     },

@@ -1,0 +1,385 @@
+{
+ "suite": "m8_rajab_rajab_a17",
+ "status": "candidate",
+ "provenance": "Shard rajab-a17 (lane A): every farʿ record of Ibn Rajab's qawāʿid 132, 134, 136, 139 and 141, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA17). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+ "cases": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f001",
+   "encoder": "craft_capacity_is_wealth",
+   "class": "derivable",
+   "facts": {
+    "has_wealth": false,
+    "can_earn_by_craft": true,
+    "beyond_own_maintenance": false
+   },
+   "expected": true,
+   "note": "Leading ruling: «القوي المكتسب لا يباح له أخذ الزكاة بجهة الفقر فإنه غني بالاكتساب». Taking zakāt for poverty is a matter of his own maintenance, where the qāʿida makes the capacity to earn richness: derivable. Follow-on, outside the leading ruling: whether he may take as a debtor (al-gharim) «على وجهين» (al-Qāḍī and Ibn ʿAqīl permit it, «ظاهر كلام أحمد»; al-Majd forbids it), which Ibn Rajab ties to compelling him to earn for his debt; al-Inṣāf (v03:p242) has «قلت: هذا المذهب» for the prohibition while making the compulsion «الصحيح من المذهب»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f002",
+   "encoder": "craft_capacity_is_wealth",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "has_wealth": false,
+    "can_earn_by_craft": true,
+    "beyond_own_maintenance": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "not obligatory, zād and rāḥila being required (the madhhab per Ibn Rajab and al-Inṣāf)",
+     "ruling": false
+    },
+    {
+     "who": "obligatory where he can earn on the way (al-Majd's tawajjuh «على أصلنا»; Ibn al-Jawzī in Kashf al-Mushkil)",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "Ḥajj for the able-bodied earner far from Makka: «فالمذهب انتفاء الوجوب». al-Majd: «يتوجه على أصلنا في البعيد أن يجب الحج إن كان قادرا على التكسب في طريقة كما يجبره على الكسب لوفاء دينه». Ḥajj lies beyond his own maintenance; the reading, taking the riwāya that earning capacity is surplus richness, makes it obligatory with al-Majd. al-Inṣāf (v03:p401): zād and rāḥila «هذا المذهب من حيث الجملة، وعليه جماهير الأصحاب ... ونص عليه», and the Iqnāʿ and Kashshāf have the earner «استحب له الحج ولم يجب عليه». Off the madhhab side. Ibn Rajab's own farq: «حقوق الله مبنية على المسامحة بخلاف حقوق الآدميين ولهذا لا يجب عليه التكسب لتحصيل مال يحج به ولا يعتق به في الكفارة». The near (within the qaṣr distance) «فوجهان» is a follow-on."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f003",
+   "encoder": "craft_capacity_is_wealth",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "has_wealth": false,
+    "can_earn_by_craft": true,
+    "beyond_own_maintenance": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "compelled to earn for the remainder of his debt (riwāya; «الصحيح من المذهب» per al-Inṣāf)",
+     "ruling": true
+    },
+    {
+     "who": "not compelled (riwāya)",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "«وفاء الديون وفي إجبار المفلس على الكسب للوفاء روايتان مشهورتان». Paying debts lies beyond his own maintenance; the reading makes the capacity to earn wealth for it, so he is compelled. al-Inṣāf (v05:p317): «إحداهما: يجبر. وهو الصحيح من المذهب»; al-Muntahā, al-Iqnāʿ and Kashshāf state it decisively. On the madhhab side. Follow-on: the mukātab is not compelled «على المذهب المشهور ; لأنه دين ضعيف», with Ibn ʿAqīl's takhrīj of compulsion."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f004",
+   "encoder": "craft_capacity_is_wealth",
+   "class": "derivable",
+   "facts": {
+    "has_wealth": false,
+    "can_earn_by_craft": true,
+    "beyond_own_maintenance": false
+   },
+   "expected": true,
+   "note": "Leading ruling: «أن القدرة على الكسب بالحرفة يمنع وجوب نفقته على أقاربه صرح به القاضي في خلافه وكذا ذكر صاحب الكافي وغيره». His own maintenance: the capacity counts as richness, so no claim on his kin: derivable. Follow-ons: the healthy man with no craft (two riwāyas per Abū al-Khaṭṭāb, al-Qāḍī's distinctions for the two lines) is a different fact; his kin's maintenance from his earnings is due per al-Qāḍī, Ibn ʿAqīl, Ibn al-Zāghūnī «والأكثرون», which the reading's surplus riwāya also gives."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f005",
+   "encoder": "craft_capacity_is_wealth",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "has_wealth": false,
+    "can_earn_by_craft": true,
+    "beyond_own_maintenance": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "bears his share of the ʿaql (riwāya; al-Majd restricts it to the earner)",
+     "ruling": true
+    },
+    {
+     "who": "bears nothing, being poor (riwāya; the madhhab per al-Inṣāf)",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "«أن الفقير المكتسب هل يحتمل العقل مع العاقلة فيه روايتان». Bearing the ʿaql lies beyond his own maintenance; the reading makes him bear it. al-Inṣāf (v10:p120) has «وليس على فقير ... حمل شيء» as «هذا المذهب», the other riwāya «وقيده المجد وغيره بالمعتمل»; al-Muntahā, al-Iqnāʿ and Kashshāf: «وليس على فقير ولو معتملا». Off the madhhab side. Kashshāf's farq: «لأن حمل العاقلة مواساة فلا يلزم الفقير كالزكاة»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f006",
+   "encoder": "craft_capacity_is_wealth",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "has_wealth": false,
+    "can_earn_by_craft": true,
+    "beyond_own_maintenance": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "due (riwāya; «أشهرهما» per Ibn Rajab, «الصحيح من المذهب» per al-Inṣāf)",
+     "ruling": true
+    },
+    {
+     "who": "not due (riwāya; the ẓāhir of al-Khiraqī per al-Inṣāf)",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "«الجزية هل تجب على الفقير المكتسب على روايتين أشهرهما الوجوب». The reading makes the earner rich for it: due. al-Inṣāf (v04:p224): «لو كان معتملا وجبت عليه، على الصحيح من المذهب»; al-Iqnāʿ and Kashshāf state it decisively. On the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f001",
+   "encoder": "prevention_easier_than_removal",
+   "class": "derivable",
+   "facts": {
+    "impediment": true,
+    "before_establishment": true
+   },
+   "expected": true,
+   "note": "Leading ruling: «تخمير الخل ابتداء بأن يوضع فيها خل يمنع تخميرها مشروع». The measure precedes the fermentation and prevents it: derivable. The removal branch, «وتخليلها بعد تخميرها ممنوع», is the reading's own (a supervening measure does not lift)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f002",
+   "encoder": "prevention_easier_than_removal",
+   "class": "derivable",
+   "facts": {
+    "impediment": true,
+    "before_establishment": true
+   },
+   "expected": true,
+   "note": "Leading ruling: «ذبح الحيوان المأكول يمنع نجاسة لحمه وجلده وهو مشروع». Slaughter precedes the najāsa of death and prevents it: derivable. The removal branch: tanning after death «لا يفيد طهارته على ظاهر المذهب», as the reading has."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f003",
+   "encoder": "prevention_easier_than_removal",
+   "class": "derivable",
+   "facts": {
+    "impediment": true,
+    "before_establishment": true
+   },
+   "expected": true,
+   "note": "Leading ruling: «السفر قبل الشروع في الصيام يبيح الفطر». The travel precedes the fast: derivable. Follow-on, outside the leading ruling: travelling during a day of Ramaḍān, «ففي استباحة الفطر روايتان والإتمام فيه أفضل بكل حال», with Ibn Manṣūr's report distinguishing an intention formed by night; the reading's removal branch would give the riwāya that he does not break the fast."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f004",
+   "encoder": "prevention_easier_than_removal",
+   "class": "derivable",
+   "facts": {
+    "impediment": true,
+    "before_establishment": true
+   },
+   "expected": true,
+   "note": "Leading ruling: «أن الرجل يملك منع زوجته من حج النذر والنفل»: before she enters iḥrām his right prevents it: derivable. Follow-on: once she has entered it without his leave, «ففي جواز تحليلها روايتان». al-Inṣāf (v03:p398) also cites al-Mughnī «وليس له منعها من الحج المنذور», which turns on the vow being obligatory, not on the qāʿida's distinction; for the nafl, «وله الرجوع ما لم يحرم»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f005",
+   "encoder": "prevention_easier_than_removal",
+   "class": "derivable",
+   "facts": {
+    "impediment": true,
+    "before_establishment": true
+   },
+   "expected": true,
+   "note": "Leading ruling: «أن وجود الماء بعد التيمم وقبل الشروع في الصلاة يمنع الدخول فيها بالتيمم»: derivable. Follow-ons: water found during the prayer (two riwāyas), the free woman's availability after marrying a slave (two riwāyas), and the means of manumission found after starting the fast of ẓihār («لا يوجب الانتقال على الصحيح وقبله يوجب»), each the removal branch."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f006",
+   "encoder": "prevention_easier_than_removal",
+   "class": "derivable",
+   "facts": {
+    "impediment": true,
+    "before_establishment": true
+   },
+   "expected": true,
+   "note": "Leading ruling: «أن المرأة تملك منع نفسها حتى تقبض صداقها»: derivable. Follow-ons: having surrendered herself first, «فهل تملك الامتناع بعد ذلك حتى تقبضه على وجهين»; al-Mughnī's view on the seller who has delivered; the difference of religion that bars marriage «يمنعه ابتداء ولا يفسخه في الدوام على الأشهر»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f007",
+   "encoder": "prevention_easier_than_removal",
+   "class": "derivable",
+   "facts": {
+    "impediment": true,
+    "before_establishment": true
+   },
+   "expected": true,
+   "note": "Leading ruling: «الإسلام يمنع ابتداء الرق ولا يرفعه بعد حصوله»: both halves are the reading's: derivable. Ibn Rajab explains the child of a Muslim slave woman (a part of her, «في معنى استدامة الرق») and captives who convert before enslavement (its sabab, «انعقاد سببه في الكفر», was complete)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f000",
+   "encoder": "supervening_bar_extends_to_preliminaries",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "weak_ownership": false,
+    "worship": false,
+    "bars_indulgence": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "permitted below the farj (the madhhab, «في المذهب الصحيح»)",
+     "ruling": false
+    },
+    {
+     "who": "enjoyment between the navel and the knee is barred (another riwāya)",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "«الحيض والنفاس يحرم بهما الوطء في الفرج ولا يحرم ما دونه في المذهب الصحيح وفيه رواية أخرى يمنع الاستمتاع ما بين السرة والركبة». A bar that is not worship, ownership sound: the preliminaries stay permitted. al-Inṣāf (v01:p350): «ويجوز أن يستمتع من الحائض بما دون الفرج) ، هذا المذهب مطلقا»; al-Muntahā states it. On the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f001",
+   "encoder": "supervening_bar_extends_to_preliminaries",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "weak_ownership": false,
+    "worship": false,
+    "bars_indulgence": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "the preliminaries are forbidden (riwāya; «أشهرهما»; the madhhab per al-Inṣāf)",
+     "ruling": true
+    },
+    {
+     "who": "not forbidden (riwāya)",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "«الظهار يحرم الوطء في الفرج وفي الاستمتاع بمقدماته روايتان أشهرهما التحريم». Placed under the second type (not worship); the reading's side for that type spares the preliminaries. al-Inṣāf (v09:p204): «إحداهما: يحرم، وهو المذهب»; al-Iqnāʿ, al-Muntahā and Kashshāf state it. Off the madhhab side. Kashshāf's reason: «لأن ما حرم الوطء من القول حرم دواعيه كالطلاق والإحرام»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f002",
+   "encoder": "supervening_bar_extends_to_preliminaries",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "weak_ownership": false,
+    "worship": false,
+    "bars_indulgence": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "the preliminaries are forbidden (riwāya; the madhhab per al-Inṣāf)",
+     "ruling": true
+    },
+    {
+     "who": "permitted (riwāya; corrected by al-Qāḍī in al-Mujarrad)",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "«الأمة المسبية في مدة الاستبراء يحرم وطئها وفي الاستمتاع بالمباشرة روايتان وصحح القاضي في المجرد الجواز». Ibn Rajab places the captive under the second type, apart from the bought slave whose ownership may not be established; the reading spares the preliminaries with al-Qāḍī. al-Inṣāf (v09:p317): «أحدهما: لا يحل. وهو المذهب»; al-Muntahā and Kashshāf state it for every owned slave in istibrāʾ «ولو مسبية». Off the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f003",
+   "encoder": "supervening_bar_extends_to_preliminaries",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "weak_ownership": false,
+    "worship": false,
+    "bars_indulgence": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "the preliminaries are permitted (a wajh; stated by al-Iqnāʿ, Kashshāf and Sharḥ al-Muntahā)",
+     "ruling": false
+    },
+    {
+     "who": "forbidden (a wajh)",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "«الزوجة الموطوءة لشبهة يحرم وطؤها مدة الاستبراء وفي مقدمات الوطء وجهان». The reading spares the preliminaries. al-Inṣāf (v09:p295) leaves the two wujūh unweighted («وأطلقهما في المحرر ... والفروع»); al-Iqnāʿ «وله الاستمتاع منهما بما دون الفرج», Kashshāf «لأن التحريم لعارض كالحيض» and Sharḥ al-Muntahā «لأن تحريمها لعارض يختص به الفرج» state it. On the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f004",
+   "encoder": "supervening_bar_extends_to_preliminaries",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "weak_ownership": false,
+    "worship": false,
+    "bars_indulgence": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "disliked, not forbidden (Ibn ʿAqīl)",
+     "ruling": false
+    },
+    {
+     "who": "forbidden (Ibn Rajab's tawajjuh)",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "«الجمع بين الأختين المملوكتين في الاستمتاع بمقدمات الوطء قال ابن عقيل يكره ولا يحرم، ويتوجه أن يحرم». The reading (a bar that is not worship spares the preliminaries) sides with Ibn ʿAqīl, as al-Iqnāʿ does. Kashshāf adds «وقال القاضي يحرم كالوطء» and that al-Inṣāf corrects the cognate «أن دواعي الوطء كالوطء» (v08:p130, the bought sister of his wife). Off the madhhab side. Kashshāf's harmonisation: «ولو حمل كلام ابن عقيل على ما قبل وطء إحداهما لم يعارض كلام القاضي» (before intercourse with either, nothing has supervened). Ibn Rajab's further branch: if mubāshara for desire forbids the sister like intercourse, «فلا إشكال»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q139.f000",
+   "encoder": "unfixed_right_reaches_fixed",
+   "class": "derivable",
+   "facts": {
+    "takes_all_when_alone": false,
+    "tied_to_base": false,
+    "same_locus": false
+   },
+   "expected": false,
+   "note": "Leading ruling (opening example of the second type): «الحد والتعزير فلا يبلغ بتعزير الحر والعبد أدنى حدودهما». Taʿzīr is left to discretion with no base: it does not reach the lowest ḥadd: derivable. Aḥmad's «لا يزاد في كل تعزير عشر جلدات» agrees, and is the madhhab per al-Inṣāf (v10:p244) and al-Muntahā («ولا يزاد في تعزير على عشر في غير ما تقدم»). Branches with other facts: what has intercourse as its sabab («فيما سببه الوطء»: «فيجوز أن يبلغ بالتعزير عليه في حق الحر مائة جلدة بدون نفي», or a hundred less one, the slave fifty less one); and the view some aṣḥāb report, «لا يبلغ بالتعزير في معصية حدا مشروعا في جنسها، ويجوز أن يزيد على حد غير جنسها» (al-Mughnī: «ويحتمله كلام أحمد والخرقي»), which turns on whether the sin's own genus has a ḥadd."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q139.f001",
+   "encoder": "unfixed_right_reaches_fixed",
+   "class": "derivable",
+   "facts": {
+    "takes_all_when_alone": false,
+    "tied_to_base": false,
+    "same_locus": false
+   },
+   "expected": false,
+   "note": "Leading ruling: «السهم من الغنيمة والرضخ فلا يبلغ بالرضخ لآدمي سهمه المقدر ولا بالرضخ لمركوب سهمه المقدر»: the second type: derivable. The record continues into the third type (a right estimated from a base): the ḥukūma in a locus with a fixed arsh does not exceed it, «وفي بلوغه وجهان»; the slave's value against the free man's diya, «على روايتين» — the reading's same_locus / tied_to_base branches."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f000",
+   "encoder": "custodian_liable_at_due_time",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "custodian_until_term": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "by its measure dried (Ibn Rajab's «على الصحيح»; the madhhab per al-Inṣāf)",
+     "ruling": true
+    },
+    {
+     "who": "by its like fresh, as an outsider (riwāya)",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "«لو ترك الساعي زكاة الثمار أمانة بيد رب المال فأتلفها قبل جفافها أو تلفت بتفريطه ضمنها بقدرها يابسا لا رطبا على الصحيح، وعنه يضمنها بمثلها رطبا». The owner is bound to keep the fruit until it dries: liable by the dried measure. al-Inṣāf (v03:p109): «ضمن زكاتها بخرصها تمرا على الصحيح من المذهب؛ لأنه يلزمه تجفيف هذا الرطب بخلاف الأجنبي»; al-Muntahā, al-Iqnāʿ and Kashshāf state it. On the madhhab side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f001",
+   "encoder": "custodian_liable_at_due_time",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "custodian_until_term": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "the greater of its values from the destruction to the day of sacrifice (the qāʿida's statement; al-Ḥalwānī)",
+     "ruling": true
+    },
+    {
+     "who": "its value on the day of destruction, as an outsider (a wajh; the madhhab per al-Inṣāf)",
+     "ruling": false
+    },
+    {
+     "who": "the greater of its value or a like hady (al-Kāfī)",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "«لو أتلف الأضحية أو الهدي فعليه ضمانه بأكثر القيمتين من يوم الإتلاف أو يوم النحر، وفيه وجه يضمنها بقيمتها يوم التلف قبل يوم النحر بكل حال كما لو كان أجنبيا، وفي الكافي يضمنها بأكثر الأمرين من قيمتها أو هدي مثلها». The owner is bound to keep it until the day of sacrifice: the reading reckons his liability by that term. al-Inṣāf (v04:p095): «والصحيح من المذهب: أنه يضمنها بالقيمة يوم التلف فيصرف في مثلها كالأجنبي», with al-Muntahā, al-Iqnāʿ, Kashshāf and al-Furūʿ. Off the madhhab side; Kashshāf treats it «كسائر المتقومات». Follow-ons: eating the whole uḍḥiya (liable for its like in meat, naṣṣ in Ibn Manṣūr's riwāya) and its destruction by another (its value)."
+  }
+ ]
+}

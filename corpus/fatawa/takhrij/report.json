@@ -161,6 +161,33 @@
       "gaps_open": 0,
       "encoders": 4
     },
+    "rajab_m8_rajab_a17_furu": {
+      "total": 22,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 11,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 5
+    },
+    "rajab_m8_rajab_a18_furu": {
+      "total": 23,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 11,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 3
+    },
+    "rajab_m8_rajab_a19_furu": {
+      "total": 24,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 18,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 3
+    },
     "rajab_m8_rajab_a1_furu": {
       "total": 25,
       "coverage": 1.0,
@@ -169,6 +196,15 @@
       "encoding_error": 0,
       "gaps_open": 0,
       "encoders": 4
+    },
+    "rajab_m8_rajab_a20_furu": {
+      "total": 23,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 17,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 3
     },
     "rajab_m8_rajab_a2_furu": {
       "total": 21,

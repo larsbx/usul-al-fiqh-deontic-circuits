@@ -81,11 +81,21 @@ These are the rules the history enforced, each after a failure it fixed:
 3. **Supersede, never rewrite.** Revisits, `revisions` (receipt hash → current hash) and ledger entries keep history. "Annotations are never rewritten from here" (taarud-reconciliation.md §review).
 4. **Ledger closure.** An extension cannot land while a gap it could close is unrevisited.
 5. **Exactly-once inventory.** Every obligation id is annotated once. Ids are disjoint across contributors, and their union is the inventory.
+   - **Scrutinised (2026-10-14).** A farʿ often turns on more than one qāʿida, and forcing one label hides that. So invariant 5 holds for the *home* annotation only, and a farʿ may also carry *co-annotations*.
+     - A co-annotation (`corpus/takhrij/co/*.json`, id `far@encoder`) records that a second encoder derives the same stated ruling, on the farʿ's own words (`basis`, verbatim in the record; milestones are not words).
+     - It is admitted only if:
+       - its farʿ has its home annotation, and the home is kernel-derived or one side of an ikhtilāf;
+       - its encoder is not the home's;
+       - it is itself `derivable`, so a second failure is never recorded beside a first;
+       - it appears once per encoder.
+     - A gap at home is closed by revisiting it (S4), never by a co-annotation.
+     - Co-annotations are guarded apart (`UsulTest/TakhrijCo.lean`) and counted apart (`report.json` `co_annotations`). Coverage, the ledger and routing labels still see one case per farʿ (`takhrij.co_errors`; `tests/test_multiple_annotations.py`, mutation-checked).
 6. **Regenerate, don't sum.** Totals are rebuilt from the merged tree (`f927fb1`, `ed283bf`/`861de80`).
 7. **Gaps name their need, and are not invented.** A case that a reading should cover gets a reading, not a new gap (`ed283bf`). Need tags are corrected on revisit when the text names another principle.
 8. **Policy points stay open** (43.f004). Pinning the alternatives so they are expressible is allowed; choosing one is not.
-9. **Apply the bank before asking the owner** (D3 `d21241e`, D5 `5cfbe02`). A question reaches a human only after the bank's own procedure leaves it open.
-10. **Rights.** Pre-modern excerpts may run to 400 characters; modern ones are capped at 160 characters and their contexts stay in `.cache`.
+9. **Every ikhtilāf has a tarjīḥ.** An on-madhhab ikhtilāf enters the ledger with its graded evidence, and its tarjīḥ must confirm the annotated side or cite an open research question (`reconcile.check`).
+10. **Apply the bank before asking the owner** (D3 `d21241e`, D5 `5cfbe02`). A question reaches a human only after the bank's own procedure leaves it open.
+11. **Rights.** Pre-modern excerpts may run to 400 characters; modern ones are capped at 160 characters and their contexts stay in `.cache`.
 
 ### Research questions
 

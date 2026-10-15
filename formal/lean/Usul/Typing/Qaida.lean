@@ -724,4 +724,70 @@ structure Rajab131 where
   hasWealth : Option (Bool) := none
   canEarnByBudh : Option (Bool) := none
 
+/-- Ibn Rajab 132 «القدرة على اكتساب المال بالصناعات غني بالنسبة إلى نفقة النفس، ومن تلزم نفقته من زوجة وخادم وهل هو غني فاضل عن ذلك على روايتين، ويتفرع على ذلك مسائل: (منها) القوي المكتسب لا يباح له أخذ الزكاة بجهة الفقر فإنه …». Read by `craft_capacity_is_wealth`. -/
+structure Rajab132 where
+  hasWealthQ132 : Option (Bool) := none
+  canEarnByCraft : Option (Bool) := none
+  beyondOwnMaintenance : Option (Bool) := none
+
+/-- Ibn Rajab 134 «المنع أسهل من الرفع، ويتخرج على ذلك مسائل كثيرة جدا: (منها) تخمير الخل ابتداء بأن يوضع فيها خل يمنع تخميرها مشروع، وتخليلها بعد تخميرها ممنوع. (منها) ذبح الحيوان المأكول يمنع نجاسة لحمه وجلده وهو مشروع ودبغ …». Read by `prevention_easier_than_removal`. -/
+structure Rajab134 where
+  impediment : Option (Bool) := none
+  beforeEstablishment : Option (Bool) := none
+
+/-- Ibn Rajab 136 «الوطء المحرم العارض هل يستتبع تحريم مقدماته أم لا؟ إن كان لضعف الملك وقصوره أو خشية عدم ثبوته كالأمة المشتراة إذا ملكت بعقد محرم فيحرم سائر أنواع الاستمتاع بها، وإن كان لغير ذلك من الموانع فهو نوعان: أحدهما …». Read by `supervening_bar_extends_to_preliminaries`. -/
+structure Rajab136 where
+  weakOwnership : Option (Bool) := none
+  worship : Option (Bool) := none
+  barsIndulgence : Option (Bool) := none
+
+/-- Ibn Rajab 137 «الواجب بقتل العمد هل هو القود عينا أو أحد أمرين إما القود وإما الدية، فيه روايتان معروفتان ويتفرع عليهما ثلاث قواعد، استيفاء القود، والعفو عنه، والصلح عنه. " القاعدة الأولى " في استيفاء القود. فيتعين حق …». Read by `qawad_choice_forfeits_attached_right`, `sulh_replaces_owned_wealth`. -/
+structure Rajab137 where
+  eitherOfTwo : Option (Bool) := none
+  victimEncumbered : Option (Bool) := none
+  victimOwned : Option (Bool) := none
+
+/-- Ibn Rajab 138 «العين المتعلق بها حق لله تعالى أو لآدمي، إما أن تكون مضمونة أو غير مضمونة فإن كانت مضمونة وجب ضمانها بالتلف والإتلاف بكل حال، وإن لم تكن مضمونة لم يجب ضمانها بالتلف ووجب بالإتلاف إن كان مستحق موجود وإلا فلا، …». Read by `burdened_thing_compensated`. -/
+structure Rajab138 where
+  guaranteedQ138 : Option (Bool) := none
+  destroyed : Option (Bool) := none
+  claimantExists : Option (Bool) := none
+
+/-- Ibn Rajab 139 «الحقوق الواجبة من جنس إذا كان بعضها مقدرا بالشرع وبعضها غير مقدر به ، فهي ثلاثة أنواع: أحدها: أن يكون تقدير الحق خشية سقوط صاحبه فحيث كان من لم يقدر حقه يستحق الجميع عند الانفراد كذوي الفروض مع العصبات في …». Read by `unfixed_right_reaches_fixed`. -/
+structure Rajab139 where
+  takesAllWhenAlone : Option (Bool) := none
+  tiedToBase : Option (Bool) := none
+  sameLocus : Option (Bool) := none
+
+/-- Ibn Rajab 141 «إذا أتلف عينا تعلق بها حق الله تعالى من يجب عليه حفظها واستيفاؤها إلى مدة معلومة لزمه ضمانها بقيمتها في ذلك الوقت، لا يوم تلفها أو بمثلها على صفاتها في ذلك الوقت لا يوم تلفها على أصح الوجهين، ويتخرج على ذلك …». Read by `custodian_liable_at_due_time`. -/
+structure Rajab141 where
+  custodianUntilTerm : Option (Bool) := none
+
+/-- Ibn Rajab 142 «ما زال من الأعيان ثم عاد بأصل الخلقة أو بصنع آدمي هل يحكم على العائد بحكم الأول أم لا؟ فيه خلاف يطرد في مسائل منها: لو قلع سنه أو قطع أذنه فأعاده في الحال فثبت والتحم كما كان لم يرح، فهل يحكم بطهارته أم لا نص …». Read by `returned_takes_first_ruling`. -/
+structure Rajab142 where
+  restoredByLife : Option (Bool) := none
+  oldMaterials : Option (Bool) := none
+
+/-- Ibn Rajab 143 «يقوم البدل مقام المبدل ويسد مسده ويبني حكمه على حكم مبدله في مواضع كثيرة، وقد سبق ذكر بعضها. ومنها: إذا مسح على الخف ثم خلعه فإنه يجزئه غسل قدميه على إحدى الروايتين، ولو فاتت الموالاة ; لأن المسح كمل الوضوء …». Read by `badal_stands_for_original`. -/
+structure Rajab143 where
+  soldForPrice : Option (Bool) := none
+
+/-- Ibn Rajab 144 «فيما يقوم فيه الورثة مقام موروثهم من الحقوق، وهي نوعان: حق له وحق عليه. فأما النوع الأول فما كان من حقوقه يجب بموته كالدية والقصاص في النفس فلا ريب في أن لهم استيفاءه وسواء قلنا إنه ثابت لهم ابتداء أو منتقل …». Read by `heir_stands_in_owed_right`, `heir_takes_deceased_right`. -/
+structure Rajab144 where
+  accruesAtDeath : Option (Bool) := none
+  claimedOrHeld : Option (Bool) := none
+  attachedToInheritedProperty : Option (Bool) := none
+  obligationBinding : Option (Bool) := none
+  tendsToBinding : Option (Bool) := none
+
+/-- Ibn Rajab 145 «المعتدة البائن في حكم الزوجات في مسائل: منها: أن المبتوتة في مرض الموت ترث في العدة دون ما بعدها على إحدى الروايتين ; لأن الطلاق مانع من الإرث فلما قصد به الفرار من الحق المنعقد سببه ضعف منه فلم يعمل في المنع …». Read by `bain_in_idda_as_wife`. -/
+structure Rajab145 where
+  inIdda : Option (Bool) := none
+  tiesCut : Option (Bool) := none
+
+/-- Ibn Rajab 146 «تفارق المطلقة الرجعية الزوجات في صور: منها: أن في إباحتها في مدة العدة روايتين، وعلى رواية التحريم فهل يجب لها المهر بالوطء؟ على وجهين. ومنها: أن طلاقها في مدة العدة طلاق بدعة على أصح الروايتين. ومنها: أن …». Read by `rajiyya_takes_wife_rule`. -/
+structure Rajab146 where
+  rajiyya : Option (Bool) := none
+  listedDifference : Option (Bool) := none
+
 end Usul.Typing.Qaida
