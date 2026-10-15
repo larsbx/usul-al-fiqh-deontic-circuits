@@ -43,6 +43,10 @@ def test_check_case_requires_an_ikhtilaf_position_to_hold_the_kernel_ruling():
     assert takhrij.check_case(_case("genuine_ikhtilaf", facts, "lot", positions=glossed, matches_madhhab=False)) == [
         "no position holds the expected ruling"]
     assert takhrij.check_case(_case("genuine_ikhtilaf", facts, "lot", positions=coded, matches_madhhab=False)) == []
+    abstain = {"suspended": True, "possible": True, "absence_known": False}
+    ints = [{"who": "a", "ruling": 1}, {"who": "b", "ruling": False}]
+    assert takhrij.check_case(_case("genuine_ikhtilaf", abstain, True, encoder="abstention_under_possible_condition",
+                                    positions=ints, matches_madhhab=False)) == ["no position holds the expected ruling"]
 
 
 def test_report_coverage_excludes_segmentation_errors():

@@ -47793,7 +47793,7 @@
     "pipeline/usul_corpus/encoders/rajab_a9.py": "6189b8b1dcc9767188b840594fbf74a052a68a7d90aa54f726c21eb25a674747",
     "pipeline/usul_corpus/routing.py": "e207c68b0094a87a9b9c95b6ac0f62ce88ff7a0d4d53e14cb16b0a4a095bcf54",
     "pipeline/usul_corpus/signature_routing.py": "b7353e5f684590f0b727eab6e326b4a3ca2e6fb6129f861fdf97d475beab6e32",
-    "pipeline/usul_corpus/takhrij.py": "2bebd54dfc2d0ad21c2792134188b738e5ba2c5514d2bdb5568ac8c10a874cb1"
+    "pipeline/usul_corpus/takhrij.py": "e646b813f731c4fe96acf49142d8b442713f34391c787fb77ac6faf88c1097f7"
   },
   "questions_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
 }
