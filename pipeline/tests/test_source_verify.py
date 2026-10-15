@@ -107,6 +107,36 @@ def test_repeated_quote_checks_the_declared_page():
     assert "absent" in gate.check_quote(text, "هذا الحكم ثابت", "v01:p003")
 
 
+NUMERAL_TEXT = "# أقر أن عليه 100 درهم حالة\nPageV01P001\n"
+
+
+@pytest.mark.parametrize("quote", ["عليه 100 درهم", "عليه ١٠٠ درهم", "عليه ۱۰۰ درهم"])
+def test_a_numeral_is_matched_across_digit_scripts(quote):
+    assert gate.check_quote(NUMERAL_TEXT, quote, "v01:p001") is None
+
+
+@pytest.mark.parametrize("quote", ["عليه 999 درهم", "عليه ٩٩٩ درهم", "عليه 10 درهم", "عليه 1 00 درهم", "عليه درهم"])
+def test_a_changed_or_dropped_numeral_fails(quote):
+    """Audit: letters-only comparison accepted «عليه 999 درهم» against «عليه 100 درهم»."""
+    assert "absent" in gate.check_quote(NUMERAL_TEXT, quote, "v01:p001")
+
+
+def test_footnote_anchors_and_page_markers_are_markup():
+    """Shamela footnote anchors are digits glued to a word (`علماء1`); page markers carry digits too."""
+    text = "# قال أكثر العلماء1 بثبوته2 في 3 مواضع\nPageV01P007\n# وبه قال الموفق\nPageV01P008\n"
+    assert gate.check_quote(text, "قال أكثر العلماء بثبوته في 3 مواضع", "v01:p007") is None
+    assert gate.check_quote(text, "قال أكثر العلماء١ بثبوته في 3 مواضع", "v01:p007") is None
+    assert gate.check_quote(text, "في 3 مواضع وبه قال", "v01:p008") is None
+    assert "absent" in gate.check_quote(text, "قال أكثر العلماء بثبوته في 4 مواضع", "v01:p007")
+
+
+def test_negated_parenthesised_footnote_anchors_are_markup():
+    """al-Furūʿ's Shamela witness marks footnotes «(¬7)», with or without them in the excerpt."""
+    text = "# خلافا للحلواني (¬7) وبعض الشافعية\n~~(¬8)؛ لأن الله حكى عنهم\nPageV03P1011\n"
+    for quote in ("خلافا للحلواني وبعض الشافعية؛ لأن الله حكى عنهم", "خلافا للحلواني (¬7) وبعض الشافعية (¬8)؛ لأن الله حكى عنهم"):
+        assert gate.check_quote(text, quote, "v03:p1011") is None
+
+
 def test_page_break_does_not_hide_a_qualifier():
     text = "# هذا الحكم ثابت\nPageV01P001\n# إلا عند الضرورة\nPageV01P002\n"
     assert "qualifier" in gate.check_quote(text, "هذا الحكم ثابت", "v01:p001")

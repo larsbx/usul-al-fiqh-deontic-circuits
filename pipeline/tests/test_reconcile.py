@@ -242,6 +242,71 @@ def test_imported_evidence_adds_a_graded_holder():
     assert reconcile.check([c], {"entries": [bad]}, DOSSIER) == ["x: evidence must name a listed position and a grade"]
 
 
+def _bank(q: str) -> tuple[dict, dict]:
+    """A deep copy of the bank's case and ledger entry for question/farʿ `q` (e.g. "q121.f005")."""
+    from copy import deepcopy
+    e = next(e for e in LEDGER["entries"] if e["far"].endswith(q))
+    return next(c for c in CASES if c["far"] == e["far"]), deepcopy(e)
+
+
+def _ev(ref="src:w/v01:p001", position=1, grade="tashih"):
+    return {"ref": ref, "excerpt_ar": "x" * 20, "position": position, "grade": grade, "who": "w", "note": "n"}
+
+
+DUPLICATE = "x: evidence cites one page once per position"
+
+
+def test_evidence_counts_each_page_once_per_position():
+    c = _ikh("x", True, [True, False])
+    e = _entry("x", ["ashab", "ashab"])
+    assert reconcile.check([c], {"entries": [{**e, "evidence": [_ev(), _ev(position=0)]}]}, DOSSIER) == []
+    for dup in ([_ev(), _ev()], [_ev(), {**_ev(), "who": "other", "note": "reworded"}], [_ev(), _ev(grade="jazm")]):
+        assert reconcile.check([c], {"entries": [{**e, "evidence": dup}]}, DOSSIER) == [DUPLICATE]
+
+
+@pytest.mark.parametrize("q", ["q121.f005", "q160.f014"])
+def test_a_copied_evidence_item_cannot_manufacture_a_preference(q):
+    """Audit mutation: copying one item turned q121.f005's tawaqquf into tarjīḥ and reversed q160.f014 (now the
+    attribution record, which `report.json` and the Lean guards still carry)."""
+    from copy import deepcopy
+    schema = json.loads((ROOT / "schemas/reconciliation.schema.json").read_text())
+    c, e = _bank(q)
+    for v in e["evidence"]:
+        dup = {**e, "evidence": [*e["evidence"], deepcopy(v)]}
+        assert any("one page once per position" in m for m in reconcile.check([c], {"entries": [dup]}, DOSSIER))
+        with pytest.raises(jsonschema.ValidationError):
+            jsonschema.validate({**LEDGER, "entries": [dup]}, schema)
+
+
+def _naskh(ruling=False, ref="src:w/v01:p001"):
+    return {"ruling": ruling, "ref": ref, "note": "a later riwāya"}
+
+
+def test_naskh_names_a_reported_ruling_with_its_chronology_witness():
+    c = _ikh("x", True, [True, False])
+    e = {**_entry("x", ["ashab", "ashab"]), "evidence": [_ev()]}
+    assert reconcile.check([c], {"entries": [{**e, "naskh": _naskh()}]}, DOSSIER) == []
+    bad = {"outside_domain": _naskh(ruling="OUTSIDE_ENCODER_DOMAIN"),
+           "unlinked_ref": _naskh(ref="src:w/v01:p002"),
+           "not_a_source": _naskh(ref="not-a-source"),
+           "witness_for_other_side": _naskh(ruling=True)}
+    for k, n in bad.items():
+        assert reconcile.check([c], {"entries": [{**e, "naskh": n}]}, DOSSIER) == [
+            "x: naskh needs a reported ruling and a cited evidence item attesting it"], k
+
+
+def test_the_audited_naskh_mutation_is_rejected():
+    """Audit mutation on q100.f003: an out-of-domain ruling and a non-source reference passed both validators."""
+    schema = json.loads((ROOT / "schemas/reconciliation.schema.json").read_text())
+    c, e = _bank("q100.f003")
+    assert reconcile.check([c], {"entries": [e]}, DOSSIER) == []
+    e["naskh"] = {**e["naskh"], "ruling": "OUTSIDE_ENCODER_DOMAIN", "ref": "not-a-source"}
+    assert reconcile.check([c], {"entries": [e]}, DOSSIER) == [
+        f"{c['far']}: naskh needs a reported ruling and a cited evidence item attesting it"]
+    with pytest.raises(jsonschema.ValidationError):
+        jsonschema.validate({**LEDGER, "entries": [e]}, schema)
+
+
 # Grouped by witness: `arabic._indexed` caches only a few texts, so interleaving re-indexes each book.
 EVIDENCE = sorted((v for e in LEDGER["entries"] for v in e.get("evidence", [])), key=lambda v: v["ref"].split("/")[0])
 

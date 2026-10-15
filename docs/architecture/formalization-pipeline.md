@@ -135,6 +135,10 @@ closing-page locators and immediate qualifier boundaries. `make source-verify`
 runs the same gate without network fetching; `make all` includes it. Neither
 command creates or updates a source lock. A missing required witness is an error,
 including in `test_reconcile.py` and the required witness-integrity tests.
+Quotations compare `arabic.quote_key`: Arabic letters plus each standalone
+numeral (any digit script), so a changed or dropped number fails. Page markers and
+footnote anchors (digits glued to the preceding word, `العلماء1`, or `(¬7)`) are markup and
+carry no key.
 
 CI uploads `.cache/source-verification.json` and `.cache/corpus-tests.xml` even on
 failure. Read the verified/failed/excluded coverage and pytest skip reasons;

@@ -40,12 +40,13 @@ def excerpts(corpus: Path):
 def check_quote(text: str, excerpt: str, locator: str) -> str | None:
     """Match an occurrence ending at the declared closing-page marker.
 
-    Like arabic.locate, retain Arabic letters (including negations), ignore
-    punctuation/diacritics/markup. Unlike locate, search every occurrence so a
+    Like arabic.locate, compare arabic.quote_key: Arabic letters (including
+    negations) and standalone numerals, ignoring punctuation, diacritics, page
+    markers and footnote anchors. Unlike locate, search every occurrence so a
     repeated passage cannot borrow the first occurrence's page or qualifier.
     """
-    needle = arabic.letters(excerpt)
-    if not needle:
+    needle = arabic.quote_key(excerpt)
+    if not arabic.letters(excerpt):
         return "empty Arabic quotation"
     text, indices, flat = arabic._indexed(text)
     start = flat.find(needle)
@@ -108,7 +109,7 @@ def locked_text(wid: str, witness: dict, lock: dict, corpus: Path, cache: Path,
 
 def verify(corpus: Path, cache: Path, fetch_source: bool = False) -> dict:
     report = {"schema_version": 1, "scope": "reconciliation-witnesses-v1",
-              "comparison": "Arabic letters; exact letter forms; closing-page locator",
+              "comparison": "Arabic letters and standalone numerals; exact letter forms; closing-page locator",
               "status": "failed", "witnesses": [], "checks": [], "errors": [],
               "outside_scope": ["JSONL records and non-ref quotation fields", "Quran aya, hadith number and Albani verdict replay (test_nusus.py)",
                                 "interpretive relevance, formal correctness and scholarly validation"]}

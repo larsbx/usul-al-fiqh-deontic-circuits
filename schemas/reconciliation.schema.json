@@ -177,9 +177,18 @@
                 ],
                 "additionalProperties": false,
                 "properties": {
-                  "ruling": {},
+                  "ruling": {
+                    "type": [
+                      "boolean",
+                      "string",
+                      "integer"
+                    ],
+                    "description": "One of the case's reported rulings (enforced by reconcile.check)."
+                  },
                   "ref": {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^src:[^/]+/v\\d+:p\\d+$",
+                    "description": "The page of an evidence item in this entry attesting the ruling with its chronology."
                   },
                   "note": {
                     "type": "string",
@@ -231,7 +240,9 @@
                   "minLength": 1
                 }
               }
-            }
+            },
+            "uniqueItems": true,
+            "description": "Each cited page grades a position once (enforced by reconcile.check on (ref, position)); exact copies are rejected here."
           },
           "proofs": {
             "description": "The proofs each position cites, by tier (Rawḍa v02 p389–390). Present = weighed; a position may cite none.",

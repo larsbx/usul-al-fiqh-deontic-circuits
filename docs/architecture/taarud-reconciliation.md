@@ -111,7 +111,7 @@ An **apparent contradiction** was an ikhtilāf farʿ where the reading does not 
 7. **takhrīj:** a takhrīj or an iḥtimāl.
 8. **wajh:** a bare wajh.
 
-Each position listed the distinct grades of its holders; supports were compared lexicographically, unmarked grades counting once per ruling.
+Each position listed the distinct grades of its holders; supports were compared lexicographically, unmarked grades counting once per ruling. Marked grades count per holder, so an entry cites a page at most once per position (`reconcile.check` keys evidence on `(ref, position)`; the schema rejects exact copies): a page naming two holders of one position is graded once, at the stronger grade.
 
 **Lean is the authority.** `UsulTest/Reconcile.lean` holds one generated guard per entry, by proof (`Usul.Tarjih.reconcile`) where the farʿ is weighed and by attribution (`Usul.Reconcile.byAttribution`) for every entry, so the Python mirror cannot drift. A test also pins the grade ranks to the Lean definition.
 
@@ -128,7 +128,7 @@ Ibn Rajab and Ibn al-Laḥḥām often report a dispute without marking the madh
 
 **The evidence item.** Each item in a ledger entry's `evidence` adds one graded holder to one listed position. It records:
 - a `src:` locator and a verbatim excerpt;
-- the excerpt is checked letter by letter against the pinned witness (`test_evidence_is_verbatim`, skipped where the witness is not cached), and it stays within the witness's excerpt limit.
+- the excerpt is checked letter by letter, numerals included, against the pinned witness (`test_evidence_is_verbatim`, skipped where the witness is not cached), and it stays within the witness's excerpt limit.
 
 **How evidence is graded.** The grades are the same as above:
 
@@ -183,7 +183,7 @@ The later works settle 65 of the 71 suspended cases. They mostly settle them aga
   - `asl_zahir` (3) and `tadakhul` (3): the mashhūra riwāya against the reading.
   - `words_out_of_nature` (2): qāʿida 38, where the madhhab follows the wording. No farq is cited there, so no jamʿ is possible, and the residue stands as the record.
 - **Nine reviews** (`review`): tarjīḥ gives the reading a marked side while the annotation says no madhhab matches. Examples are the naṣṣ of Aḥmad against a takhrīj (75.f005, 75.f007) and al-Talkhīṣ's qiyās al-madhhab (133.f018). These are questions for the human reviewer. Annotations are never rewritten from here.
-- **One naskh.** 100.f003 (the register sweep below): al-Zarkashī reports the riwāya barring an obligatory fast in tashrīq as «التي ذهب إليها أحمد أخيرا». No other annotated paragraph reports the chronology of a retraction.
+- **One naskh.** 100.f003 (the register sweep below): al-Zarkashī reports the riwāya barring an obligatory fast in tashrīq as «التي ذهب إليها أحمد أخيرا». No other annotated paragraph reports the chronology of a retraction. A naskh is admitted only with its witness: `naskh.ref` must be the page of one of the entry's own evidence items whose position holds `naskh.ruling` (`reconcile.check`).
 
 ### Refinements from the worklist
 
