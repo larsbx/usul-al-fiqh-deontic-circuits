@@ -3,21 +3,21 @@
   "status": "candidate",
   "set": "rajab_fold0",
   "method": "blind typing into Usul.Typing situations; Prolog routing by coverage of each encoder's fields",
-  "answers": 179,
-  "situations": 232,
-  "fields_stated": 259,
+  "answers": 197,
+  "situations": 255,
+  "fields_stated": 286,
   "cases": 197,
   "encoders": 202,
   "applies": 0.3503,
   "recall": {
-    "1": 0.467,
-    "5": 0.6244,
-    "10": 0.6244
+    "1": 0.4873,
+    "5": 0.6548,
+    "10": 0.6548
   },
   "recall_with_named_rules": {
-    "1": 0.467,
-    "5": 0.6244,
-    "10": 0.6244
+    "1": 0.4873,
+    "5": 0.6548,
+    "10": 0.6548
   },
   "lexical_recall": {
     "1": 0.5635,
@@ -25,9 +25,9 @@
     "10": 0.8579
   },
   "hybrid_recall": {
-    "1": 0.6548,
-    "5": 0.8985,
-    "10": 0.9188
+    "1": 0.6294,
+    "5": 0.9036,
+    "10": 0.9239
   },
   "hybrid": "types first: encoders by the share of their fields the situation settles, lexical rank breaking ties and ordering the rest",
   "prior_recall": {
@@ -35,7 +35,7 @@
     "5": 0.1066,
     "10": 0.1878
   },
-  "encoders_applying_per_answer": 0.55,
+  "encoders_applying_per_answer": 0.51,
   "encoders_touched_per_answer": 1.18,
   "by_encoder": {
     "advance_after_cause": {
@@ -191,8 +191,8 @@
     "dalalat_hal_carries_claim": {
       "cases": 3,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 3
+      "top5": 1,
+      "unrouted": 2
     },
     "defective_compensation": {
       "cases": 1,
@@ -269,8 +269,8 @@
     "four_kinds_marriage_prohibition": {
       "cases": 2,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 2
+      "top5": 1,
+      "unrouted": 1
     },
     "generality": {
       "cases": 2,
@@ -281,8 +281,8 @@
     "grandchild_in_child_term": {
       "cases": 2,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 2
+      "top5": 1,
+      "unrouted": 1
     },
     "hair_detached": {
       "cases": 1,
@@ -359,8 +359,8 @@
     "mahr_halved_by_separation": {
       "cases": 1,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 1
+      "top5": 1,
+      "unrouted": 0
     },
     "many_over_noble": {
       "cases": 1,
@@ -617,8 +617,8 @@
     "transfer_follows_cause": {
       "cases": 2,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 2
+      "top5": 1,
+      "unrouted": 1
     },
     "trust_loss": {
       "cases": 1,
@@ -629,8 +629,8 @@
     "two_usul_reinforced_governs": {
       "cases": 5,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 5
+      "top5": 1,
+      "unrouted": 4
     },
     "umum_lafz": {
       "cases": 1,
@@ -1705,8 +1705,8 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f004",
       "encoder": "transfer_follows_cause",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f006",
@@ -1717,8 +1717,8 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f003",
       "encoder": "dalalat_hal_carries_claim",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f010",
@@ -1741,14 +1741,14 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152.f004",
       "encoder": "four_kinds_marriage_prohibition",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.25,
+      "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f006",
       "encoder": "grandchild_in_child_term",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.3333,
+      "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f017",
@@ -1771,8 +1771,8 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f008",
       "encoder": "mahr_halved_by_separation",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.25,
+      "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f002",
@@ -1795,8 +1795,8 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f007",
       "encoder": "two_usul_reinforced_governs",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f010",
