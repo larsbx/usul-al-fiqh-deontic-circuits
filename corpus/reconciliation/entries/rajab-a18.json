@@ -1,0 +1,468 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f001",
+      "grades": [
+        [
+          "nass",
+          "jazm"
+        ],
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The pledgor's liability for retaliating is Aḥmad's naṣṣ and the madhhab in al-Inṣāf, stated decisively by al-Muntahā, al-Iqnāʿ and both of al-Buhūtī's sharḥs; al-Majd's contrary taṣḥīḥ is an author's preference.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p182",
+          "excerpt_ar": "وهذا المذهب. نص عليه في رواية ابن منصور. وقدمه في المغني، والشرح،",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī in al-Inṣāf",
+          "note": "On «فإن اقتص فعليه قيمة أقلهما قيمة، تجعل مكانه»: «يعني يلزم الضمان. وهذا المذهب»; he reports al-Muḥarrar's «وهو أصح عندي», the position already listed."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p423",
+          "excerpt_ar": "في نفس أو دونها أو عفا على مال فعليه قيمة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār's al-Muntahā",
+          "note": "The matn: the master who retaliates without leave or a substitute pledge owes «قيمة أقلهما تجعل مكانه»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p172",
+          "excerpt_ar": "فإن اقتص في نفس أو دونها أو عفا على مال فعليه قيمة اقلهما قيمة تجعل رهنا",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī's al-Iqnāʿ",
+          "note": "The matn states it decisively."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p358",
+          "excerpt_ar": "# (فإن اقتص) سيد المرهون من الجاني عليه (في نفس أو دونها) فعليه قيمة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī's Kashshāf",
+          "note": "Sharḥ of al-Iqnāʿ: «لأنه أتلف مالا استحق بسبب إتلاف الرهن فغرم قيمته»."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p121",
+          "excerpt_ar": "دونها) من طرف أو جرح فعليه قيمة أقلهما تجعل مكانه ; لأنه أتلف مالا استحق",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī's Sharḥ al-Muntahā",
+          "note": "Sharḥ of al-Muntahā, the same ground."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f004",
+      "grades": [
+        "ashab",
+        "qiyas"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The mukātab's retaliating for himself without leave is the ṣaḥīḥ in Taṣḥīḥ al-Furūʿ and is stated by al-Muntahā, al-Iqnāʿ and both sharḥs; the bar is al-Qāḍī's qiyās al-madhhab and al-Riʿāya's «في الأصح».",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p152",
+          "excerpt_ar": "والوجه الثاني: له ذلك. قلت: وهو الصواب والصحيح من المذهب، واختاره",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī's Taṣḥīḥ al-Furūʿ",
+          "note": "Al-masʾala 9–16: «والصحيح من المذهب»; «والقول الأول ضعيف جدا». al-Mardāwī says the same in al-Inṣāf («قلت: وهذا المذهب»), not listed twice."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p462",
+          "excerpt_ar": "قال في الرعاية: ولا يقتص لنفسه من عضو وقيل: أو جروح بدون إذن سيده في",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Mardāwī in al-Inṣāf",
+          "note": "Ibn Ḥamdān in al-Riʿāya, «في الأصح», and al-Fāʾiq, relayed by al-Inṣāf."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p030",
+          "excerpt_ar": "بشرطه ونفقته من مكاتبه ولو لسيده على أمه وله أن يقتص لنفسه من جان على",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār's al-Muntahā",
+          "note": "The matn: «وله أن يقتص لنفسه من جان على طرفه لا من بعض رقيقه»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p146",
+          "excerpt_ar": "ورقيقه وله أن يقتص لنفسه ممن جنى عليه على طرفه او جرحه بغير إذن سيده وله",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī's al-Iqnāʿ",
+          "note": "The matn: «بغير إذن سيده»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p546",
+          "excerpt_ar": "في ذلك مما لا غناء عنه (وله) أي المكاتب (أن يقتص لنفسه ممن جنى عليه على",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī's Kashshāf",
+          "note": "Sharḥ of al-Iqnāʿ: «لأنه لو عفا على مال كان له فكذلك بدله»."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p602",
+          "excerpt_ar": "# (وله) أي المكاتب (أن يقتص لنفسه) ولو بلا إذن سيده (من جان على طرفه) أي",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī's Sharḥ al-Muntahā",
+          "note": "Sharḥ of al-Muntahā: «ولو بلا إذن سيده»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f008",
+      "grades": [
+        "ashab",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The restricted donor's gratis waiver standing is the wajh al-Muḥarrar calls manṣūṣ, stated by al-Muntahā and al-Buhūtī («والمذهب صحة العفو من هؤلاء مجانا», «لأن الدية لم تتعين»); the wealth's not dropping is Ibn Rajab's «المشهور», with al-Iqnāʿ and al-Furūʿ (from al-Targhīb's «اختار الأكثر»). al-Inṣāf only relays Ibn Rajab's two wujūh.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v06:p476",
+          "excerpt_ar": "وفي الترغيب: اختار الأكثر: لا يصح مجانا, والخلاف في سفيه ووارث مع ديون",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn Mufliḥ's al-Furūʿ",
+          "note": "al-Furūʿ, from al-Targhīb: «اختار الأكثر: لا يصح مجانا»; it also reports «وقيل: للمفلس العفو مجانا, نص عليه»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p187",
+          "excerpt_ar": "وإن أحب العفو عنه إلى مال فله ذلك لا مجانا وكذا السفيه ووارث المفلس",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī's al-Iqnāʿ",
+          "note": "The matn: the muflis may waive to wealth, «لا مجانا»."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v05:p042",
+          "excerpt_ar": "محجور عليه لسفه أو فلس أو من الورثة مع دين مستغرق ومن قال لمن له عليه",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār's al-Muntahā",
+          "note": "The matn: «ومثله العفو عن قود بلا مال من محجور عليه لسفه أو فلس» passes from the whole estate."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p281",
+          "excerpt_ar": "# (ومثله العفو عن قود بلا مال من محجور عليه لسفه أو فلس أو من الورثة مع",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī's Sharḥ al-Muntahā",
+          "note": "Sharḥ of al-Muntahā: «ويصح ; لأن الدية لم تتعين»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p544",
+          "excerpt_ar": "# وفي المنتهى وغيره يصح عفوه مجانا لأن الدية لم تتعين، وقاله في المغني",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī's Kashshāf",
+          "note": "al-Buhūtī, after the matn's «لا مجانا»: al-Muntahā and al-Mughnī validate it; then «والمذهب صحة العفو من هؤلاء مجانا»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f009",
+      "grades": [
+        "ashab",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The restricted donor's gratis waiver standing is the wajh al-Muḥarrar calls manṣūṣ, stated by al-Muntahā and al-Buhūtī («والمذهب صحة العفو من هؤلاء مجانا», «لأن الدية لم تتعين»); the wealth's not dropping is Ibn Rajab's «المشهور», with al-Iqnāʿ; al-Buhūtī names the mukātab.",
+      "evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p187",
+          "excerpt_ar": "وإن أحب العفو عنه إلى مال فله ذلك لا مجانا وكذا السفيه ووارث المفلس",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī's al-Iqnāʿ",
+          "note": "The matn: «لا مجانا وكذا السفيه ووارث المفلس» and, on the next line, «والمكاتب»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p544",
+          "excerpt_ar": "(السفيه ووارث المفلس والمكاتب وكذا المريض فيما زاد على الثلث) والمذهب",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī's Kashshāf",
+          "note": "Sharḥ of al-Iqnāʿ, continuing «صحة العفو من هؤلاء مجانا، لأن الدية لم تتعين»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f010",
+      "grades": [
+        "ashab",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The restricted donor's gratis waiver standing is the wajh al-Muḥarrar calls manṣūṣ, stated by al-Muntahā and al-Buhūtī («والمذهب صحة العفو من هؤلاء مجانا», «لأن الدية لم تتعين»); the wealth's not dropping is Ibn Rajab's «المشهور», with al-Iqnāʿ; al-Muntahā names the heirs with an estate drowned in debt.",
+      "evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p187",
+          "excerpt_ar": "وإن أحب العفو عنه إلى مال فله ذلك لا مجانا وكذا السفيه ووارث المفلس",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī's al-Iqnāʿ",
+          "note": "The matn: «وكذا السفيه ووارث المفلس»."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v05:p042",
+          "excerpt_ar": "محجور عليه لسفه أو فلس أو من الورثة مع دين مستغرق ومن قال لمن له عليه",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār's al-Muntahā",
+          "note": "The matn: «أو من الورثة مع دين مستغرق»."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p281",
+          "excerpt_ar": "# (ومثله العفو عن قود بلا مال من محجور عليه لسفه أو فلس أو من الورثة مع",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī's Sharḥ al-Muntahā",
+          "note": "Sharḥ of al-Muntahā: «أو من الورثة مع دين مستغرق) للتركة ويصح»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p544",
+          "excerpt_ar": "(السفيه ووارث المفلس والمكاتب وكذا المريض فيما زاد على الثلث) والمذهب",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī's Kashshāf",
+          "note": "Sharḥ of al-Iqnāʿ: «ووارث المفلس ... والمذهب صحة العفو من هؤلاء مجانا»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f011",
+      "grades": [
+        "ashab",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The restricted donor's gratis waiver standing is the wajh al-Muḥarrar calls manṣūṣ, stated by al-Muntahā and al-Buhūtī («والمذهب صحة العفو من هؤلاء مجانا», «لأن الدية لم تتعين»); the wealth's not dropping is Ibn Rajab's «المشهور», with al-Iqnāʿ; al-Muntahā has the dying man's waiver of qawad pass from the whole estate.",
+      "evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p187",
+          "excerpt_ar": "والمكاتب وكذا المريض فيما زاد على الثلث إن مات",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī's al-Iqnāʿ",
+          "note": "The matn: «وكذا المريض فيما زاد على الثلث إن مات»."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v05:p042",
+          "excerpt_ar": "قود أنفذ من أصل التركة ولو لم تكن سوى دمه ومثله العفو عن قود بلا مال من",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār's al-Muntahā",
+          "note": "The matn: «وإن أوجب قود أنفذ من أصل التركة ولو لم تكن سوى دمه»."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p281",
+          "excerpt_ar": "# ولو لم تكن) التركة (سوى دمه) نصا لعدم تعين المال فإذا سقط القود لم",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī's Sharḥ al-Muntahā",
+          "note": "Sharḥ of al-Muntahā: «نصا لعدم تعين المال»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p544",
+          "excerpt_ar": "(السفيه ووارث المفلس والمكاتب وكذا المريض فيما زاد على الثلث) والمذهب",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī's Kashshāf",
+          "note": "Sharḥ of al-Iqnāʿ: «وكذا المريض فيما زاد على الثلث) والمذهب صحة العفو من هؤلاء مجانا»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f014",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The waiver of an heir by a dying victim is al-Qāḍī's ruling, and falls under the madhhab's general rule that the wounded man's waiver of his injurer is valid and that a waived qawad passes from the whole estate; the suspension on the heirs is Ibn Rajab's iḥtimāl.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p010",
+          "excerpt_ar": "# قوله (وإن عفا عن قاتله بعد الجرح: صح) . سواء كان بلفظ العفو أو الوصية.",
+          "position": 0,
+          "grade": "qiyas",
+          "who": "al-Mardāwī in al-Inṣāf",
+          "note": "Then «وهو المذهب»: the taṣḥīḥ of the general rule, not of the heir-injurer."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v05:p042",
+          "excerpt_ar": "قود أنفذ من أصل التركة ولو لم تكن سوى دمه ومثله العفو عن قود بلا مال من",
+          "position": 0,
+          "grade": "qiyas",
+          "who": "Ibn al-Najjār's al-Muntahā",
+          "note": "The matn's general rule: a waived qawad «أنفذ من أصل التركة»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f015",
+      "grades": [
+        [
+          "jazm",
+          "ashab"
+        ],
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "A ṣulḥ over qiṣāṣ for more than the diya is the madhhab with the jamāhīr in al-Inṣāf and stated by al-Muntahā; Abū al-Khaṭṭāb's and al-Talkhīṣ's restriction are named companions.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p246",
+          "excerpt_ar": "# قوله (ويصح الصلح عن القصاص بديات، وبكل ما يثبت مهرا) . هذا المذهب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī in al-Inṣāf",
+          "note": "«هذا المذهب. وعليه جماهير الأصحاب»; he then relays al-Intiṣār and al-Talkhīṣ, the position already listed."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p456",
+          "excerpt_ar": "بفوق دية وبما يثبت مهرا حالا ومؤجلا لا بعوض عن خيار أو شفعة أو حد قذف",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār's al-Muntahā",
+          "note": "The matn: «بفوق دية»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f016",
+      "grades": [
+        [
+          "jazm",
+          "ashab"
+        ],
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "No shufʿa in a share taken in ṣulḥ over deliberate blood is the ṣaḥīḥ of the madhhab in al-Inṣāf, stated by al-Muntahā, al-Iqnāʿ and al-Buhūtī; Ibn Ḥāmid's shufʿa and al-Mughnī's binding are named companions.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p252",
+          "excerpt_ar": "# أحدهما: لا شفعة في ذلك. وهو الصحيح من المذهب. قال في الكافي: لا شفعة",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī in al-Inṣāf",
+          "note": "«وهو الصحيح من المذهب»; al-Ḥārithī: «أكثر الأصحاب قال: بانتفاء الشفعة»."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p226",
+          "excerpt_ar": "فلا تجب في قسمه ولا هبة ولا فيما عوضه غير مالي كصداق وعوض خلع وصلح عن",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār's al-Muntahā",
+          "note": "The matn: «ولا فيما عوضه غير مالي كصداق وعوض خلع وصلح عن دم عمد»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p364",
+          "excerpt_ar": "ونحوه ولا فيما عوضه غير مال: كصداق وعوض خلع وصلح عن دم عمد وما أخذه أجرة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī's al-Iqnāʿ",
+          "note": "The matn states it decisively."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p137",
+          "excerpt_ar": "(وصلح عن دم عمد) ؛ لأن ذلك ليس له عوض يمكن الأخذ به فأشبه الموهوب",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī's Kashshāf",
+          "note": "Sharḥ of al-Iqnāʿ: «لأن ذلك ليس له عوض يمكن الأخذ به»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f017",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The ṣulḥ wealth for a killed trade slave being trade wealth without intention is al-Qāḍī's ruling, stated by al-Furūʿ, al-Iqnāʿ and al-Buhūtī; the need of intention on a ṣulḥ over the qawad is Ibn Rajab's iḥtimāl.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v04:p196",
+          "excerpt_ar": "وقلنا الواجب أحد شيئين، وإلا لم يصر للتجارة إلا بنية، ولو تخمر عصير",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn Mufliḥ's al-Furūʿ",
+          "note": "After «وكذا لو كان عمدا»: on aḥad shayʾayn it is trade wealth, otherwise only by intention."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p278",
+          "excerpt_ar": "الزكاة ولو قتل عبد تجارة خطأ أو عمدا فصالح سيده على مال صار للتجارة ولو",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī's al-Iqnāʿ",
+          "note": "The matn, «خطأ أو عمدا», unbound to either riwāya."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p244",
+          "excerpt_ar": "# (ولو قتل عبد تجارة خطأ أو عمدا، فصالح سيده على مال صار) المال",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī's Kashshāf",
+          "note": "Sharḥ of al-Iqnāʿ: «باستصحاب نية التجارة، كما لو اعتاض عنه»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f003",
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The diya in the estate of a killer who is killed is Aḥmad's naṣṣ and the ṣaḥīḥ of the madhhab in al-Inṣāf, stated by al-Iqnāʿ and al-Buhūtī; its dropping is al-Shaykh Taqī al-Dīn's takhrīj.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p006",
+          "excerpt_ar": "# قوله (وإن مات القاتل وجبت الدية في تركته) . وكذا لو قتل. وهذا هو",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī in al-Inṣāf",
+          "note": "«وهذا هو الصحيح من المذهب، نص عليه»; he reports Taqī al-Dīn's choice, the position already listed."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p188",
+          "excerpt_ar": "القاتل أو قتل وجبت الدية في تركته كتعذره في طرفه وقتل غير المكافئ وإن",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī's al-Iqnāʿ",
+          "note": "The matn: «إن مات القاتل أو قتل وجبت الدية في تركته»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p545",
+          "excerpt_ar": "# (إن مات القاتل، أو قتل وجبت الدية في تركته) لأنه تعذر استيفاء القود من",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī's Kashshāf",
+          "note": "Sharḥ of al-Iqnāʿ: «لأنه تعذر استيفاء القود»."
+        }
+      ]
+    }
+  ]
+}
