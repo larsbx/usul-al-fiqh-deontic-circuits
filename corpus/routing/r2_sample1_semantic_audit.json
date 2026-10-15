@@ -471,14 +471,14 @@
           "reason": "Source decision: Ahmad says the condition persists until breached, whether triple or single divorce. Encoder requires qarina_one_to_one and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
+          "encoder": "advanced_worship",
+          "disposition": "not_established",
+          "reason": "Source decision: Ahmad says the condition persists until breached, whether triple or single divorce. Encoder requires due_at_performance and returns [False, True] (Ibn Rajab 5); the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with the PR-30 annotations, in place of intention_shapes_wording (reviewed not_established), which this unit no longer receives."
+        },
+        {
           "encoder": "unknown_condition",
           "disposition": "not_established",
           "reason": "Source decision: Ahmad says the condition persists until breached, whether triple or single divorce. Encoder requires knew, liability_only and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
-        },
-        {
-          "encoder": "intention_shapes_wording",
-          "disposition": "not_established",
-          "reason": "Source decision: Ahmad says the condition persists until breached, whether triple or single divorce. Encoder requires restricts_absolute, excepts_from_text and returns [False, True] (Ibn Rajab 125); the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with Lane A round 4 (PR #71), in place of advanced_worship, ayman_by_urf, istihlak (reviewed insufficient/not_established), which this unit no longer receives."
         }
       ],
       "classification": "missing_rule",
@@ -519,9 +519,9 @@
           "reason": "Source decision: The stated hajj miqat after umra was Mecca. Encoder requires needed and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
-          "encoder": "error_actor_liable",
+          "encoder": "custom_restricts_general",
           "disposition": "not_established",
-          "reason": "Source decision: The stated hajj miqat after umra was Mecca. Encoder requires external_cause, basis_void, ruling_overturned, as_owner, negligent and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
+          "reason": "Source decision: The stated hajj miqat after umra was Mecca. Encoder requires customary_usage and returns [False, True] (Ibn Rajab 122); the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with the PR-30 annotations, in place of error_actor_liable (reviewed not_established), which this unit no longer receives."
         },
         {
           "encoder": "advanced_kaffara_at_obligation",
@@ -668,9 +668,9 @@
           "reason": "Source decision: Perform witr until the morning prayer has been performed. Encoder requires needed and returns [False, True] (Ibn Rajab 130); the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with Lane A round 4 (PR #71), in place of common_amount_general, deputy_of_principal, unknown_as_nonexistent (reviewed not_established), which this unit no longer receives."
         },
         {
-          "encoder": "injury_state_measures",
+          "encoder": "unknown_as_nonexistent",
           "disposition": "not_established",
-          "reason": "Source decision: Perform witr until the morning prayer has been performed. Encoder requires guaranteed_at_injury, guaranteed_at_spread and returns [False, True] (Ibn Rajab 128); the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with Lane A round 4 (PR #71), in place of common_amount_general, deputy_of_principal, unknown_as_nonexistent (reviewed not_established), which this unit no longer receives."
+          "reason": "Source decision: Perform witr until the morning prayer has been performed. Encoder requires unknown, despair, hardship and returns [False, True] (Ibn Rajab 106); the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with the PR-30 annotations, in place of injury_state_measures (reviewed not_established), which this unit no longer receives."
         }
       ],
       "classification": "missing_rule",
@@ -2071,14 +2071,14 @@
           "reason": "Source decision: Eating requires explicit permission or an indicating circumstance; accepting invitation has separate conditions. Encoder requires known_simultaneous, known_sequential and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
+          "encoder": "injury_state_measures",
+          "disposition": "not_established",
+          "reason": "Source decision: Eating requires explicit permission or an indicating circumstance; accepting invitation has separate conditions. Encoder requires guaranteed_at_injury, guaranteed_at_spread and returns [False, True] (Ibn Rajab 128); the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with the PR-30 annotations, in place of asl_zahir (reviewed not_established), which this unit no longer receives."
+        },
+        {
           "encoder": "eating_without_permission",
           "disposition": "insufficient",
           "reason": "The proposed permission-exception encoder addresses eating without permission; it does not express ordinary explicit/implied permission. The empty typing misses stated facts; do not negate permission because its exception type lacks a field."
-        },
-        {
-          "encoder": "asl_zahir",
-          "disposition": "not_established",
-          "reason": "Source decision: Eating requires explicit permission or an indicating circumstance; accepting invitation has separate conditions. Encoder requires asl_grade, zahir_grade, amara and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         }
       ],
       "classification": "missing_rule",

@@ -27,7 +27,7 @@ def test_worklist_is_generated_and_its_denominators_reconcile_independently():
     covered = {c["far"] for c in takhrij.load(CORPUS)} & fars.keys()
     pending = fars.keys() - covered
     summary = inventory["summary"]
-    assert summary["segmented_furu"] == len(fars) == 1179
+    assert summary["segmented_furu"] == len(fars) == 1189  # 1179 + the 10 PR-30 recovered
     assert summary["annotated_furu"] == len(covered)
     assert summary["pending_furu"] == len(pending)
     assert summary["qawaid_awaiting_annotation"] == len({fars[i] for i in pending})
@@ -161,6 +161,15 @@ def test_both_pr_contributions_are_preserved_without_case_reinterpretation():
                 assert current == expected_hash, far
 
 
+def _without_recovered(records: list[dict]) -> list[dict]:
+    """The records before PR-30 recovered the furūʿ the segmenter drops (their receipt)."""
+    from collections import Counter
+    receipt = _json(CORPUS / f"segmentation/{m8_worklist.WITNESS}-opening.json")["records"]
+    ids, counts = {r["id"] for r in receipt}, Counter(r["qaida"] for r in receipt)
+    return [{**r, "furu_count": r["furu_count"] - counts[r["id"]]} if r["record_type"] == "qaida" and r["id"] in counts else r
+            for r in records if r["id"] not in ids]
+
+
 def test_new_segmentation_preserves_every_legacy_record_and_identifier():
     """Project away just the 43 added far records and their parent count increments.
     The result must equal the hash-pinned pre-list corpus, including order and case text."""
@@ -168,9 +177,9 @@ def test_new_segmentation_preserves_every_legacy_record_and_identifier():
 
     plan = _json(CORPUS / "worklists/rajab_m8_tranche3_plan.json")
     receipt = plan["segmentation"]
-    raw = (CORPUS / m8_worklist.RECORDS).read_bytes()
+    records = _without_recovered([json.loads(line) for line in (CORPUS / m8_worklist.RECORDS).read_text().splitlines()])
+    raw = "".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records).encode()
     assert hashlib.sha256(raw).hexdigest() == receipt["current_records_sha256"]
-    records = [json.loads(line) for line in raw.decode().splitlines()]
     by_id = {r["id"]: r for r in records}
     added = set(receipt["added_far_ids"])
     assert len(added) == 43 and len(receipt["affected_qawaid"]) == 14

@@ -1,0 +1,89 @@
+{
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f000",
+   "grades": [
+    "ashab",
+    [
+     "nass",
+     "ashab"
+    ]
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Ibn Rajab's two named wujūh, al-Qāḍī's carried from Aḥmad; al-Inṣāf puts al-Qāḍī's ḥinth «وهو المذهب», and al-Muntahā states it. Against the reading.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v11:p092",
+     "excerpt_ar": "حنث بأكل رءوس الطيور والسمك، وبيض السمك والجراد عند القاضي) . وهو المذهب",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "On al-Muqniʿ's «وإن حلف \" لا يأكل رأسا ولا بيضا \" حنث بأكل رءوس الطيور والسمك»."
+    },
+    {
+     "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v05:p237",
+     "excerpt_ar": "بأكل رأس طير وسمك وجراد وبيض ذلك",
+     "position": 1,
+     "grade": "jazm",
+     "who": "Ibn al-Najjār, al-Muntahā",
+     "note": "«ولا يأكل رأسا ولا بيضا حنث بأكل رأس طير وسمك»."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f000",
+   "grades": [
+    [
+     "nass",
+     "ashab"
+    ],
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "A riwāya on each side; al-Inṣāf makes the qarāba by lineage the madhhab, against the riwāya of ṣila that al-Qāḍī and others correct. Against the reading.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p085",
+     "excerpt_ar": "يعني بالسوية بين كبيرهم وصغيرهم، وذكرهم وأنثاهم، وغنيهم وفقيرهم. بشرط أن يكون مسلما. وهذا المذهب. عليه أكثر الأصحاب",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "On al-Muqniʿ's waqf to his qarāba: «فهو للذكر والأنثى من أولاده، وأولاد أبيه، وجده، وجد أبيه»."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p086",
+     "excerpt_ar": "وعنه يختص منهم من يصله. نقله ابن هانئ وغيره. وصححه القاضي، وجماعة",
+     "position": 0,
+     "grade": "ashab",
+     "who": "al-Qāḍī and a group, as al-Inṣāf reports",
+     "note": "The riwāya of ṣila, corrected (taṣḥīḥ) by al-Qāḍī and others, not the madhhab."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f000",
+   "grades": [
+    "ashab",
+    [
+     "nass",
+     "ashab"
+    ]
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Companions on the reading's side; Ibn Ḥāmid with Aḥmad's naṣṣ (Ibn Abī Mūsā) on the other, which al-Inṣāf makes the madhhab. Against the reading.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v09:p470",
+     "excerpt_ar": "وعليه دية حر مسلم في قول ابن حامد) وهو المذهب اختاره المصنف والشارح وذكر",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Of the dhimmī or slave wounded who becomes Muslim or is freed and dies: «وهو المذهب ... وجزم به في الوجيز وغيره وقدمه في الفروع»."
+    }
+   ]
+  }
+ ]
+}

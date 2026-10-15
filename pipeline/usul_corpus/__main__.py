@@ -185,6 +185,8 @@ def _segment(work: dict, w: dict, text: str) -> tuple[list[dict], tuple | None]:
         return [hadd_record(work, witness, i, h) for i, h in enumerate(hudud, 1)], None
     units = SEGMENTERS[seg["kind"]](text, seg)
     records = [r for t, u in zip(unit_tags(units), units) for r in qaida_records(work, witness, seg["kind"], t, u)]
+    if (opening := CORPUS / "segmentation" / f"{witness}-opening.json").exists():
+        records = with_recovered(records, verified_openings(json.loads(opening.read_text(encoding="utf-8")), witness, text))
     return records, units
 
 
@@ -280,8 +282,6 @@ def cmd_build(_: argparse.Namespace) -> int:
                     records += sharh
                     audit[w["id"]] |= report
                 numbered[w["id"]] = units
-            if (opening := CORPUS / "segmentation" / f"{w['id']}-opening.json").exists():
-                records = with_recovered(records, verified_openings(json.loads(opening.read_text(encoding="utf-8")), w["id"], text))
             path = CORPUS / "records" / f"{w['id']}.jsonl"
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records), encoding="utf-8")

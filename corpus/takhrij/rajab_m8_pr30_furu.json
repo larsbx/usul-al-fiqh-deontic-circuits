@@ -1,0 +1,165 @@
+{
+ "suite": "m8_rajab_pr30",
+ "status": "candidate",
+ "provenance": "The opening furūʿ the headed segmenter drops, recovered by PR #28 and added on merge (problem register PR-30), annotated against their qawāʿid's existing readings. Annotated by reading the full paragraph in the pinned witness; each ikhtilāf side checked against al-Inṣāf and the muʿtamad. Candidate, awaiting human review.",
+ "cases": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f000_2",
+   "encoder": "partial_capability",
+   "class": "missing_rule",
+   "facts": null,
+   "expected": null,
+   "needs": [
+    "rule:follower_part_not_obliged"
+   ],
+   "note": "The sick man who cannot put his face to the ground but can place the other limbs of sujūd: «فإنه لا يلزمه ذلك على الصحيح، لأن السجود على بقية الأعضاء إنما وجب تبعا للسجود على الوجه وتكميلا له». Ibn Rajab's second qism, a part obliged only as a follower (tabaʿan) of another, is neither a pure means (wasīla maḥḍa, the first qism) nor an independent ʿibāda; `partial_capability` reads only the first, so the case is not forced onto it."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f000",
+   "encoder": "tadakhul",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "same_kind": true,
+    "same_purpose": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "«فالمذهب»: the acts of the greater ṭahāra suffice when he intends both",
+     "ruling": true
+    },
+    {
+     "who": "riwāya («وعنه»): they do not suffice for the minor ḥadath until he does wuḍūʾ",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "One under both ḥadaths, minor and major: «فالمذهب أنه يكفيه أفعال الطهارة الكبرى إذا نوى الطهارتين [جميعا] بها وعنه لا يجزئه عن الأصغر حتى يأتي بالوضوء». Abū Bakr's choice, that it suffices if he keeps wuḍūʾ's own order and continuity, is a third, conditional view. Follow-on: one tayammum intending both ḥadaths suffices «بغير خلاف», Aḥmad's naṣṣ in the riwāya of Muhannā."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f000",
+   "encoder": "benefit_exception",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "known_period": true,
+    "tolerates_uncertainty": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "Ibn Rajab: valid («صح»); al-Inṣāf: «هذا الصحيح من المذهب»",
+     "ruling": true
+    },
+    {
+     "who": "the riwāya reported («وحكي فيه رواية أخرى بعدم الصحة»)",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The thing sold, the seller excepting its benefit for a known period: «صح، وحكي فيه رواية أخرى بعدم الصحة». al-Inṣāf (v04:p344), on al-Muqniʿ's «أن يشترط البائع نفعا معلوما في البيع، كسكنى الدار شهرا»: «هذا الصحيح من المذهب. وعليه الأصحاب ... وعنه: لا يصح. قال في القواعد: وحكى عنه رواية لا يصح»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f000",
+   "encoder": "rescue_loss_liability",
+   "class": "derivable",
+   "facts": {
+    "causes_loss": true,
+    "sufferer_negligent": false,
+    "emptying_permitted": false
+   },
+   "expected": true,
+   "note": "A house sold with a she-camel in it that can leave only by breaking the door: «فإنه يهدم ويضمن للمشتري النقص». Freeing the seller's property causes the loss in the buyer's, with no negligence by the buyer, so the seller is liable (ḍamān)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f000",
+   "encoder": "error_actor_liable",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "external_cause": true,
+    "basis_void": true,
+    "ruling_overturned": true,
+    "as_owner": true,
+    "negligent": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "Aḥmad's naṣṣ (al-Maymūnī): the two witnesses are liable («يضمنان المال»), its ẓāhir settling it on them",
+     "ruling": false
+    },
+    {
+     "who": "al-Qāḍī's iḥtimāl: the heirs are made to pay, then recover from the witnesses",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "Two witnesses testify to Zayd's death, his estate is divided among his heirs, and he comes back alive: «فنص [أحمد] في رواية الميموني أنهما يضمنان المال ولم يتعرض للورثة وظاهر كلامه استقرار الضمان على الشهود», in line with «قوله المشهور عنه في تقرير الضمان على الغار». No liability on the judge, «لأنه ملجأ إلى الحكم من جهة الشهود». al-Muntahā (Sharḥ al-Muntahā v03:p199): «(وتضمن البينة) التي شهدت بوفاته (ما تلف من ماله)»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f000",
+   "encoder": "urf_specialises_general",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "urfi_haqiqa": false,
+    "only_qualified": false,
+    "mostly_qualified": true
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "Abū al-Khaṭṭāb, and al-Qāḍī in a place of his Khilāf: only a head eaten alone by custom",
+     "ruling": false
+    },
+    {
+     "who": "al-Qāḍī: every head so named, of birds and fish, transmitted in a place from Aḥmad (the madhhab per al-Inṣāf)",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "The oath not to eat heads: al-Qāḍī «يحنث بأكل كل ما يسمى رأسا من رءوس الطيور والسمك، ونقله في موضع عن أحمد»; Abū al-Khaṭṭāb «لا يحنث إلا برأس يؤكل في العادة مفردا». The heads of birds and fish are named «رأس» but hardly meant unqualified, the qāʿida's third class; the reading specialises by custom (ʿurf). al-Inṣāf (v11:p092) puts al-Qāḍī's ḥinth «وهو المذهب», and al-Muntahā states it: off the madhhab side, so a ledger entry."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f000",
+   "encoder": "custom_restricts_general",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "customary_usage": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "Aḥmad (Ibn al-Qāsim, Sindī, Ṣāliḥ): as the testator's way of ṣila; al-Qāḍī in his Khilāf: the madhhab",
+     "ruling": true
+    },
+    {
+     "who": "Aḥmad (Ibn Manṣūr): no regard to ṣila; al-Inṣāf: the madhhab defines the qarāba by lineage",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "A bequest (waṣiyya) to his relatives or his household: «فهو على ما يعرف من مذهب الرجل، إن كان يصل عمته وخالته» (Ibn al-Qāsim); the aṣḥāb differ on whether Ṣāliḥ's riwāya is a third riwāya or the madhhab, and Ibn Manṣūr transmits «أنه لا اعتبار بالصلة». The reading confines the general by the testator's custom. al-Inṣāf (v07:p085), on the waqf to his qarāba, which the bequest follows: «فهو للذكر والأنثى من أولاده، وأولاد أبيه، وجده، وجد أبيه ... وهذا المذهب. عليه أكثر الأصحاب»; «وعنه يختص منهم من يصله ... وصححه القاضي، وجماعة»: off the madhhab side, so a ledger entry."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f000",
+   "encoder": "injury_state_measures",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "guaranteed_at_injury": true,
+    "guaranteed_at_spread": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "al-Qāḍī and Abū al-Khaṭṭāb: a dhimmī's diya, by the state at the injury",
+     "ruling": true
+    },
+    {
+     "who": "Ibn Ḥāmid: a Muslim's diya; Ibn Abī Mūsā: Aḥmad's naṣṣ (the madhhab per al-Inṣāf)",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "He wounds a dhimmī, who becomes Muslim and dies: «فلا قود، وهل يجب فيه دية مسلم أو دية ذمي؟ على وجهين»; either way the diya goes to his Muslim heirs. Guaranteed in both states, the reading measures by the injury's state. al-Inṣāf (v09:p470): «وعليه دية حر مسلم في قول ابن حامد) وهو المذهب»: off the madhhab side, so a ledger entry."
+  }
+ ]
+}

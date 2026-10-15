@@ -7,7 +7,7 @@
   "bytes": 1660710,
   "sha256": "f077fdf1ba4ec9cfecafed8b5e0023e850f57084e17463847cc238e3d1128e68"
  },
- "provenance": "Recovered by PR #28 (opening-furu/v1, 87 records). On merging into main, whose segmenter (PR #29) already yields .f000, only the records whose text no main record of the same qāʿida contains are kept. Main's ids are unchanged; where main already has a .f000, a recovered record takes .f000_2.",
+ "provenance": "Recovered by PR #28 (opening-furu/v1, 87 records). On merging into main, whose segmenter (PR #29) already yields .f000, only the records in a paragraph no main record of the same qāʿida starts in are kept (q057's inline «ومنها» is inside main's q057.f000). Main's ids are unchanged; where main already has a .f000, a recovered record takes .f000_2.",
  "span_basis": "Unicode code-point offsets, end exclusive, in the full headed unit body: OpenITI parse_markdown section texts joined by newline, as in segment_headed. Hash UTF-8 bytes. Locators retain the parent qāʿida's page anchor.",
  "review": "Source segmentation candidates only. No encoder facts, positions, rulings, or review approvals are inferred. Review.tla still governs promotion; unannotated recovered records remain in the coverage denominator.",
  "boundary": "This is a conservative structural profile, not an exhaustive semantic case census. Bare pronouns, generic comparisons and ruling alternatives are not example introducers. Other unlabeled cases still require source review.",
@@ -72,27 +72,6 @@
      "start": 93,
      "end": 171,
      "sha256": "0facfe2045ca816bcb9637a44d8df98094881df20c4353463f3de70814707c41"
-    }
-   }
-  },
-  {
-   "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f000_2",
-   "work": "ibn_rajab.taqrir_qawaid",
-   "witness": "openiti-rajab-shamela21730",
-   "record_type": "far",
-   "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057",
-   "locator": "src:openiti-rajab-shamela21730/v01:p097#q057.f000_2",
-   "case_ar": "لو قال أنت طالق بعد موتي لم تطلق بغير خلاف نعلمه، ولو قال مع موتي أو موتك لم تطلق نص عليه في رواية مهنا لأن الموت سبب البينونة فلا يجامعها الطلاق ويلزم على قول ابن حامد الوقوع ههنا لأنه إذا وقع الطلاق مع الحكم بالبينونة فإيقاعه مع سبب الحكم أولى ويلزم مثل ذلك القاضي ومن تابعه على الوقوع مع سبب الانفساخ لتأخر الانفساخ عنه ولم يلتزموا ذلك، وادعوا ههنا المقارنة دون السبق ولا يصح ولعل المانع من إيقاع ",
-   "status": "candidate",
-   "extraction": {
-    "pipeline": "usul_corpus/opening-furu-1",
-    "method": "headed+opening_minha",
-    "source_span": {
-     "basis": "headed_unit_body/v1",
-     "body_sha256": "16f1b92c92aff27ce81062d9f8e5f738558d4f237e48a1c82ea256ee710a66fd",
-     "start": 872,
-     "end": 1372,
-     "sha256": "f14fa5c4c070a1aa8361229f80354f66989bd60da000897c85163c0e1aef8959"
     }
    }
   },

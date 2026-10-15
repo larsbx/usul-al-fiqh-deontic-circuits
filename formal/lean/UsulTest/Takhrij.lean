@@ -69,6 +69,20 @@ import Usul
 #guard (Usul.Refinements.errorExcused false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f000 (derivable)
 #guard (Usul.Refinements.validUnderDoubt true false false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f000 (genuine_ikhtilaf)
+#guard (Usul.Kulliyyat.discharges (⟨0, 0, 0⟩ : Usul.Kulliyyat.Act Nat Nat Nat) ⟨if true then 0 else 1, if true then 0 else 1, 1⟩) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f000 (genuine_ikhtilaf)
+#guard (Usul.Refinements.benefitExceptionValid true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f000 (derivable)
+#guard (Usul.Readings.RajabA3.lossLiable true false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f000 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA5.errorActorLiable true true true true false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f000 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA14.urfGeneralCovers false false true) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f000 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA13.customRestricts true) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f000 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA15.measuredAtInjury true true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f000 (derivable)
 #guard (Usul.Readings.Mubashara.damanOn false true) == .mubashir
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f001 (derivable)

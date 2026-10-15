@@ -256,7 +256,7 @@ def test_rajab_recovered_openings_are_in_the_records_and_on_the_witness():
     from usul_corpus.__main__ import verified_openings
     receipt = json.loads((ROOT / f"corpus/segmentation/{RAJAB}-opening.json").read_text())
     records = [json.loads(line) for line in (ROOT / f"corpus/records/{RAJAB}.jsonl").read_text().splitlines()]
-    assert all(r in records for r in receipt["records"]) and len(receipt["records"]) == 11
+    assert all(r in records for r in receipt["records"]) and len(receipt["records"]) == 10
     for q in (r for r in records if r["record_type"] == "qaida"):
         assert q["furu_count"] == sum(r.get("qaida") == q["id"] for r in records)
     text = next((p.read_text(encoding="utf-8") for p in (ROOT / ".cache/corpus" / f"{RAJAB}.txt", ROOT / f"corpus/texts/{RAJAB}.txt")
