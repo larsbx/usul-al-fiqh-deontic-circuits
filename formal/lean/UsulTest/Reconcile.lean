@@ -315,7 +315,7 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f029
 #guard reconcile (P := String) none none [("the wife's word (she denies, he claims)", .wajh), ("lot", .wajh), ("the wife's word (she denies, he claims)", .tashih), ("the wife's word (she denies, he claims)", .tashih), ("the wife's word (she denies, he claims)", .jazm)] == (.tarjih "the wife's word (she denies, he claims)")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f031
-#guard reconcile (P := String) none none [("no lot; lineage lost (Abū Bakr) or chosen at puberty (Ibn Ḥāmid)", .tashih), ("attach to both claimants", .ashab), ("lot", .nass), ("no lot; lineage lost (Abū Bakr) or chosen at puberty (Ibn Ḥāmid)", .tashih), ("no lot; lineage lost (Abū Bakr) or chosen at puberty (Ibn Ḥāmid)", .jazm), ("no lot; lineage lost (Abū Bakr) or chosen at puberty (Ibn Ḥāmid)", .jazm)] == (.tarjih "no lot; lineage lost (Abū Bakr) or chosen at puberty (Ibn Ḥāmid)")
+#guard reconcile (P := String) none none [("no lot; lineage lost", .tashih), ("no lot; lineage lost", .wajh), ("attach to both claimants", .ashab), ("lot", .nass), ("no lot; chosen at puberty", .tashih), ("no lot; chosen at puberty", .wajh), ("no lot; lineage lost", .tashih), ("no lot; lineage lost", .jazm), ("no lot; lineage lost", .jazm)] == (.tarjih "no lot; lineage lost")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f034
 #guard reconcile (P := String) none none [("none may be killed or enslaved", .nass), ("lot", .ashab), ("none may be killed or enslaved", .tashih), ("none may be killed or enslaved", .jazm), ("none may be killed or enslaved", .jazm)] == (.tarjih "none may be killed or enslaved")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f035

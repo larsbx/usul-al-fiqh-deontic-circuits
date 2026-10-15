@@ -296,3 +296,15 @@ def test_the_ledger_holds_every_ikhtilaf():
     """Every ikhtilāf has a tarjīḥ: in the active ledger, or in the history a resolution retired it to."""
     entries = {e["far"] for e in LEDGER["entries"]} | set(reconcile._archived_tarjih())
     assert {c["far"] for c in CASES if c["class"] == "genuine_ikhtilaf"} <= entries
+
+
+def test_a_position_is_one_attributed_view():
+    """q160.f031: Ibn Rajab gives Abū Bakr's and Ibn Ḥāmid's wujūh under the mashhūr («على وجهين»).
+    Al-Inṣāf and the muʿtamad pick the first against the second, so a tarjīḥ on the two glued
+    together would credit a disjunction with what the evidence gave one disjunct."""
+    far = "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f031"
+    case = next(c for c in CASES if c["far"] == far)
+    entry = next(e for e in LEDGER["entries"] if e["far"] == far)
+    lost, puberty = (next(p for p in case["positions"] if name in p["who"]) for name in ("Abū Bakr", "Ibn Ḥāmid"))
+    assert lost is not puberty
+    assert reconcile.resolve(case, entry) == ("tarjih", lost["ruling"])
