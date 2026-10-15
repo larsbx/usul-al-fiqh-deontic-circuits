@@ -1,0 +1,548 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Pilot of tarjīḥ by proof (Usul.Tarjih): twelve disputed furūʿ drawn at random from the two-position riwāya entries, weighed by the adilla al-Mughnī and al-Mubdiʿ cite for each position, tiers per Rawḍa v02 p389–390. Drafted by three agents, every excerpt located verbatim; tiers then reviewed (five revised, each noted). No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "ʿĀʾisha: those who combined ḥajj and ʿumra made one ṭawāf for both (muttafaq ʿalayh)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p409",
+     "excerpt_ar": "«وأما الذين كانوا جمعوا بين الحج والعمرة، فإنما طافوا لهما طوافا واحدا» . متفق عليه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Under «ولنا» for one ṭawāf and one saʿy (the madhhab); an agreed-upon report of the Prophet's Companions' practice with him, treated as marfūʿ āḥād."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Jābir: the Prophet combined ḥajj and ʿumra and made one ṭawāf for both (al-Tirmidhī, graded ḥasan; likewise Ibn ʿUmar's marfūʿ «أجزأه طواف واحد»)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p410",
+     "excerpt_ar": "وعن جابر، «أن النبي - صلى الله عليه وسلم - قرن بين الحج والعمرة، فطاف لهما طوافا واحدا» . رواهما الترمذي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Connected marfūʿ āḥād, graded ḥasan by al-Tirmidhī as the source says."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the mufrid: a nāsik who needs one shaving and one stoning needs one ṭawāf and one saʿy (also tadākhul of two ʿibādas of one kind, like the two ṭahāras)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p410",
+     "excerpt_ar": "ولأنه ناسك يكفيه حلق واحد، ورمي واحد، فكفاه طواف واحد، وسعي واحد، كالمفرد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Rational analogy for the madhhab."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Q 2:196 «وأتموا الحج والعمرة لله»: completing each requires its acts in full, with no distinction for the qārin",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p409",
+     "excerpt_ar": "واحتج بعض من اختار ذلك بقول الله تعالى: {وأتموا الحج والعمرة لله} [البقرة: 196]",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited by those choosing two ṭawāfs and two saʿys (the second riwāya); an āya cited directly. The source answers that the acts done for both complete them. Reviewed: the āya's general command to complete both rites indicates two ṭawāfs only by its generality, not explicitly: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "mursalDaif",
+     "dalil": "Ḥadīth «من جمع بين الحج والعمرة فعليه طوافان» (al-Dāraquṭnī), which the source says it does not know to be sound, through weak chains",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p410",
+     "excerpt_ar": "فلا نعلم صحته، ورواه الدارقطني من طرق ضعيفة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The ḥadīth is cited at p409 for the second riwāya; the source grades it weak (al-Ḥasan b. ʿUmāra etc.), so mursalDaif."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "They are two rites, so they have two ṭawāfs, as when performed separately",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p409",
+     "excerpt_ar": "ولأنهما نسكان، فكان لهما طوافان، كما لو كانا منفردين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Rational analogy for the second riwāya."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "aqrabSahabi",
+     "dalil": "Ibn ʿAbbās (with ʿIkrima), reported by Saʿīd with his isnād: one who vowed ḥajj without having made the obligatory ḥajj, «it suffices for both». Ibn ʿAbbās approved ʿIkrima's answer.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p237",
+     "excerpt_ar": "وروى سعيد بإسناده عن ابن عباس وعكرمة أنهما قالا، في رجل نذر أن يحج، ولم يكن حج الفريضة، قال: يجزئ لهما جميعا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited directly after Abū Ṭālib's riwāya («وهذا قول ابن عباس، وعكرمة»). Ibn ʿUmar and Anas are reported on the other side in the same passage, so this is a ṣaḥābī view where the ṣaḥāba disagreed: aqrabSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on vowing to fast the day someone arrives, when he arrives on a day of Ramadan and the man intends it for both the farḍ and the vow. ʿIkrima gives a parallel analogy: four rakʿas vowed, then praying ʿaṣr, counts for both.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p237",
+     "excerpt_ar": "وهذا مثل ما لو نذر صوم يوم يقدم فلان فقدم في يوم من رمضان، فنواه عن فرضه ونذره",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given as the parallel that supports Abū Ṭālib's riwāya, with a stated aṣl and a shared feature (one act fulfilling both the farḍ and the vow). So qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "aqrabSahabi",
+     "dalil": "The view of Ibn ʿUmar and Anas (and ʿAṭāʾ) that the vowed ḥajj is not discharged.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p237",
+     "excerpt_ar": "فالمنصوص عن أحمد أن المنذورة لا تسقط عنه. وهو قول ابن عمر وأنس",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the naṣṣ (the mashhūra) that the vow stays owed. Ibn ʿAbbās is reported against it, so the ṣaḥāba disagreed: aqrabSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: it is a single ḥajj, so it cannot count for two, just as when he vowed two ḥajjs and made one.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p237",
+     "excerpt_ar": "لأنها حجة واحدة، فلا تجزئ عن حجتين، كما لو نذر حجتين، فحج واحدة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The «لأن… كما لو» rationale for the mashhūra, with an aṣl (two vowed ḥajjs, one performed). So qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The marfūʿ ḥadīth taken in its general wording: «When the two parties to a sale disagree, the seller's word holds and the buyer has the option», with no restriction to the goods being extant. Aḥmad says only Yazīd b. Hārūn has «والمبيع قائم», and the narrators from al-Masʿūdī erred in it.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p146",
+     "excerpt_ar": "إذا اختلف المتبايعان فالقول قول البائع والمشتري بالخيار",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given explicitly as «ووجه الرواية الأولى عموم قوله» for mutual oaths once the goods have perished. It is a connected marfūʿ āḥād report, so ahad. Ibn al-Mundhir's remark «ليس في هذا الباب حديث يعتمد عليه» (v04:p147) weakens the ḥadīth evidence on both sides."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the case where the goods still exist: each party is both claimant and denier, so the oath is prescribed for both, and the goods perishing does not change this.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p146",
+     "excerpt_ar": "ولأن كل واحد منهما مدع ومنكر فيشرع اليمين، كحال قيام السلعة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A rational argument for the first riwāya, with an aṣl (the goods extant) and a stated ʿilla (each is claimant and denier). So qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The mafhūm (implied contrary meaning) of the qualifier «والسلعة قائمة» in the marfūʿ ḥadīth on the two disagreeing parties: mutual oaths are not prescribed once the goods have perished.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p146",
+     "excerpt_ar": "لقوله - عليه السلام - في الحديث «والسلعة قائمة» فمفهومه أنه لا يشرع التحالف عند تلفها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the riwāya Abū Bakr chose, that the buyer's word holds on oath. It is an inference (mafhūm) from an āḥād marfūʿ report, so ahad. Aḥmad's own remark that the narrators erred in this phrase is set against it."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The general rule on claims: both agree that the goods passed to the buyer and that ten is owed, and they differ only over a further ten. The seller claims it and the buyer denies it, and the word is the denier's. Mutual oaths were an exception to this rule because of the ḥadīth, so it applies only while the goods exist.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p146",
+     "excerpt_ar": "واستحقاق عشرة في ثمنها، واختلفا في عشرة زائدة البائع يدعيها والمشتري ينكرها، والقول قول المنكر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A rationale («ولأنهما اتفقا…») for the buyer's word on oath: the ordinary rule of claim and denial, with the ḥadīth-based exception kept to its own case («ففيما عداه يبقى على القياس»). The source itself calls it qiyās, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of ʿUtba b. al-Nudhdur (Ibn Mājah): Moses hired himself out for eight or ten years for the chastity of his private parts and the food of his stomach; the law of those before us is our law unless abrogated.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p365",
+     "excerpt_ar": "قال: إن موسى آجر نفسه ثماني سنين أو عشرا، على عفة فرجه، وطعام بطنه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "First proof under «ولنا» for allowing a hired worker to be paid with his food and clothing (masʾala 4232). A connected marfūʿ report, used through sharʿ man qablanā."
+    },
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "Tacit consensus: Abū Bakr, ʿUmar, Abū Mūsā and Abū Hurayra hired workers for their food and clothing, and no one objected, so it is an ijmāʿ.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p365",
+     "excerpt_ar": "ولأن من ذكرنا من الصحابة وغيرهم فعلوه، فلم يظهر له نكير، فكان إجماعا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The source itself states an ijmāʿ for this position. It is a tacit one (no objection was voiced), not an explicit one. Reviewed: a tacit consensus («فلم يظهر له نكير») is ṣaḥābī practice with no objection reported, not a certain ijmāʿ: fatwaSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the wet-nurse: established for her by Q 2:233 «وعلى المولود له رزقهن وكسوتهن بالمعروف»; carried over to other workers; customary measure stands in for naming the amount, as with a wife's maintenance.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p365",
+     "excerpt_ar": "ولأنه قد ثبت في الظئر بالآية، فيثبت في غيرها بالقياس عليها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Explicit qiyās (aṣl: the ẓiʾr) for this position, matching Ibn Rajab's «كالظئر»."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the pay is unknown (majhūl), and the ẓiʾr is an exception by the āya (the riwāya chosen by al-Qāḍī, allowed only for the wet-nurse).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p364",
+     "excerpt_ar": "وهذا مذهب أبي حنيفة؛ لأن ذلك مجهول؛ وإنما جاز في الظئر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For any worker other than the wet-nurse this riwāya says it is not valid, which is position 1 on these facts. A rational ʿilla (jahāla)."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale (the third riwāya, not valid at all): food and clothing vary widely, so the wage is unknown, and a wage must be known.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p365",
+     "excerpt_ar": "لأن ذلك يختلف اختلافا كثيرا متباينا، فيكون مجهولا، والأجر من شرطه أن يكون معلوما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same outcome (invalid) on the facts. The argument rests on a condition of the contract plus jahāla, so it is a rational argument (qiyās tier)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f012",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The Prophet's words to the two sturdy men who asked for ṣadaqa: «If you wish I will give you, but the rich and the able-bodied earner have no share in it». He accepted their apparent state and did not check whether they were in fact rich.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p498",
+     "excerpt_ar": "لأن النبي - صلى الله عليه وسلم - أعطى الرجلين الجلدين، وقال: إن شئتما أعطيتكما منها، ولا حظ فيها لغني",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the first riwāya (chosen by Abū Bakr): zakāt given to someone thought poor who proves rich is valid, so nothing is owed. A marfūʿ āḥād report, so ahad."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Abū Hurayra's marfūʿ ḥadīth, graded «متفق عليه» by the source: a man gave his ṣadaqa to a rich man unknowingly and was told his ṣadaqa had been accepted.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p498",
+     "excerpt_ar": "فوضعها في يد غني، فأصبحوا يتحدثون: تصدق على غني فأتي فقيل له: أما صدقتك فقد قبلت",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A second marfūʿ report given for the same riwāya. It is in al-Bukhārī and Muslim, but it is still āḥād, so ahad."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he paid what was due to someone not entitled to it, so he has not discharged the duty. This is compared to paying zakāt to an unbeliever or to a relative, and to debts owed to people.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p498",
+     "excerpt_ar": "والرواية الثانية، لا يجزئه؛ لأنه دفع الواجب إلى غير مستحقه، فلم يخرج من عهدته، كما لو دفعها إلى كافر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The second riwāya (the payment does not count, so he remains liable) is supported only by this rationale with stated aṣls (kāfir, relative, debts to people). So qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "mursalDaif",
+     "dalil": "Ḥadīth (Abū Hurayra) «كل الطلاق جائز، إلا طلاق المعتوه»; the source states that Abū Hurayra's ḥadīth is not established.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p379",
+     "excerpt_ar": "لقول النبي - صلى الله عليه وسلم -: «كل الطلاق جائز، إلا طلاق المعتوه»",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for divorce by the drunk taking effect. Faṣl 5840 extends the same ruling to his manumission, sale, apostasy, admission, killing, qadhf and theft, «لأن المعنى في الجميع واحد». Weak tier because of «وحديث أبي هريرة لا يثبت» (v07:p380)."
+    },
+    {
+     "position": 0,
+     "tier": "aqrabSahabi",
+     "dalil": "ʿAlī, Muʿāwiya and Ibn ʿAbbās (Ibn ʿAbbās: the drunk's divorce is valid); the ṣaḥāba under ʿUmar treated the drunk as sober for the ḥadd of qadhf (ʿAlī: «إذا سكر هذى، وإذا هذى افترى»).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p379",
+     "excerpt_ar": "فقال علي: نراه إذا سكر هذى، وإذا هذى افترى، وعلى المفتري ثمانون",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for treating the drunk as sober («فجعلوه كالصاحي»). ʿUthmān is reported against it, so this is aqrabSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: a divorce pronounced by a legally responsible (mukallaf), uncoerced man over his own wife takes effect, like the sober man's; his responsibility is shown by his being executed for killing and having his hand cut for theft.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p379",
+     "excerpt_ar": "ولأنه إيقاع للطلاق من مكلف غير مكره صادف ملكه، فوجب أن يقع، كطلاق الصاحي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Explicit analogy (aṣl: the sober man) for position 0."
+    },
+    {
+     "position": 1,
+     "tier": "aqrabSahabi",
+     "dalil": "ʿUthmān: the drunk's divorce does not take effect. Ibn al-Mundhir: established from ʿUthmān, and no ṣaḥābī is known to have opposed him.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p379",
+     "excerpt_ar": "قال ابن المنذر: هذا ثابت عن عثمان، ولا نعلم أحدا من الصحابة خالفه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For the riwāya (Abū Bakr ʿAbd al-ʿAzīz's choice) that he is like the madman. Tier fatwaSahabi because the source quotes Ibn al-Mundhir that no ṣaḥābī disagreed, although the same passage reports ʿAlī and others the other way; the reconciliation is Aḥmad's verdict that those reports are not sound. Reviewed: the same passage reports ʿAlī, Muʿāwiya and Ibn ʿAbbās the other way, so the ṣaḥāba disagreed: aqrabSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: his reason is gone, like the madman and the sleeper; his will is absent, like the coerced; reason is a condition of taklīf, whether it was lost through sin or not (like one who breaks his own legs and prays sitting).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p379",
+     "excerpt_ar": "ولأنه زائل العقل، أشبه المجنون، والنائم، ولأنه مفقود الإرادة، أشبه المكره",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Explicit analogies for the position that he is like the madman."
+    }
+   ],
+   "advantages": [
+    {
+     "for": 1,
+     "over": 0,
+     "by": "muttasil",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p379",
+     "excerpt_ar": "وقال أحمد: حديث عثمان أرفع شيء فيه، وهو أصح. يعني من حديث علي، وحديث الأعمش، منصور لا يرفعه إلى علي",
+     "who": "Ibn Qudāma, al-Mughnī (quoting Aḥmad)",
+     "note": "Aḥmad prefers the ʿUthmān report as sounder than the ʿAlī report, because Manṣūr's chain does not carry it up to ʿAlī: the ʿUthmān report is connected and the other is not. The source also says Abū Hurayra's ḥadīth for position 0 «لا يثبت»."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "aqrabSahabi",
+     "dalil": "ʿUmar's ruling in the plague of ʿAmwās: «ورثوا بعضهم من بعض» (Aḥmad: «أذهب إلى قول عمر، وعلي»).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p378",
+     "excerpt_ar": "فكتب في ذلك إلى عمر، - رضي الله عنه -. فكتب عمر: أن ورثوا بعضهم من بعض",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For mutual inheritance of those who die together (masʾala 4963). Ṣaḥāba disagreed (Abū Bakr, Zayd, Ibn ʿAbbās, Muʿādh and al-Ḥasan b. ʿAlī are reported against it), so this is aqrabSahabi, not fatwaSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "mursalDaif",
+     "dalil": "The report from Iyās b. ʿAbd Allāh al-Muzanī that the Prophet was asked about people on whom a house fell and said «يرث بعضهم بعضا»; Ibn Qudāma says it is really Iyās's own answer, not narrated from the Prophet.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p379",
+     "excerpt_ar": "والصحيح أن هذا إنما هو عن إياس نفسه، وأنه هو المسئول، وليس براوية عن النبي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "«بعض أصحابنا» argue from it for this position. The source denies that it is marfūʿ, so it counts as weak."
+    },
+    {
+     "position": 1,
+     "tier": "aqrabSahabi",
+     "dalil": "Abū Bakr, Zayd, Ibn ʿAbbās, Muʿādh and al-Ḥasan b. ʿAlī did not make them inherit from each other; also the dead of al-Yamāma, Ṣiffīn and al-Ḥarra, and Umm Kulthūm bt. ʿAlī and her son Zayd, did not inherit from each other.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p378",
+     "excerpt_ar": "وروي عن أبي بكر الصديق، وزيد، وابن عباس، ومعاذ، والحسن بن علي - رضي الله عنهم -، أنهم لم يورثوا بعضهم من بعض",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for no mutual inheritance, which al-Mughnī also reports «روي عن أحمد ما يدل عليه». ʿUmar and ʿAlī are reported the other way, so the tier is aqrabSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "ʿIlla: the condition of inheriting (the heir being alive at the death) is unknown, and inheritance is not established while its condition is in doubt; like a fetus born dead.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p379",
+     "excerpt_ar": "ولأن شرط التوريث حياة الوارث بعد موت الموروث، وهو غير معلوم، ولا يثبت التوريث مع الشك في شرطه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Matches the candidate's «للشك في شرطه». A rational argument with the aṣl «كالحمل إذا وضعته ميتا»."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The original state is non-inheritance; it is not set aside by doubt.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p379",
+     "excerpt_ar": "ولأن الأصل عدم التوريث فلا نثبته بالشك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "An explicit «الأصل» argument for position 1."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f011",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "«أنت طالق» carries no number and no baynūna, so three do not fall, as with «أنت طالق واحدة»; it reports a description like «قائمة، حائض»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p483",
+     "excerpt_ar": "لأن هذا اللفظ لا يتضمن عددا، ولا بينونة، فلم تقع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Reason of the first riwāya (only one); analogy with explicit «واحدة» and descriptive adjectives."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A word that becomes three when «ثلاثا» is joined to it becomes three when three is intended, like the kināyāt",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p483",
+     "excerpt_ar": "لأنه لفظ لو قرن به لفظ الثلاث، كان ثلاثا، فإذا نوى به الثلاث، كان ثلاثا، كالكنايات",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Reason of the second riwāya (three fall); analogy with kināyāt."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: «طالق» is an ism fāʿil implying the maṣdar, which covers few and many, unlike ḥāʾiḍ/ṭāhir which cannot multiply",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p483",
+     "excerpt_ar": "اسم فاعل، واسم الفاعل يقتضي المصدر، كما يقتضيه الفعل، والمصدر يقع على القليل والكثير",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Further rational argument for the second riwāya."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Q 2:222 «فاعتزلوا النساء في المحيض», with al-maḥīḍ read as the place of the menses (like maqīl, mabīt), so the bar is confined to the farj",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p231",
+     "excerpt_ar": "ولأن المحيض هو اسم لمكان الحيض في ظاهر كلام أحمد",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Cited by al-Mubdiʿ for the madhhab (permission below the farj); the operative proof is the āya itself, read per Aḥmad's apparent word. Reviewed: the āya bears on this only through reading al-maḥīḍ as the place of the menses, an interpretation, so it is certain in transmission but not in indication: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Marfūʿ ḥadīth on the occasion of the āya: «اصنعوا كل شيء إلا النكاح», narrated by Muslim",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p231",
+     "excerpt_ar": "هذه الآية قال النبي - صلى الله عليه وسلم -: «اصنعوا كل شيء إلا النكاح» رواه مسلم",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Connected marfūʿ āḥād report (Muslim) cited for the permission."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the dubur: intercourse is barred because of adhā, so the bar is confined to its locus",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p232",
+     "excerpt_ar": "ولأنه وطء منع للأذى، فاختص بمحله كالدبر",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Rational analogy (aṣl: dubur; ʿilla: adhā confined to its place) for permission."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the fear of falling into the forbidden (intercourse) bars enjoyment between navel and knee",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p232",
+     "excerpt_ar": "وعن أحمد: لا يجوز أن يستمتع بما بينهما، وجزم به في \" النهاية \" لخوفه مواقعة المحظور",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Stated as the reason of the other riwāya (adopted in al-Nihāya); a rational, precautionary ʿilla, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "mursalDaif",
+     "dalil": "Ḥadīth of ʿAbd Allāh b. Saʿd: «لك ما فوق الإزار» (Abū Dāwūd), answered as from Ḥizām b. Ḥakīm, weakened by Ibn Ḥazm and others, and as only a mafhūm",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p232",
+     "excerpt_ar": "قال: لك ما فوق الإزار» رواه أبو داود، وأجيب بأنه من رواية حزام بن حكيم، وقد ضعفه ابن حزم وغيره",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Cited for the riwāya of prohibition; the source reports its narrator weakened, so mursalDaif rather than ahad."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "ʿĀʾisha (al-Bukhārī): the Prophet would order her to wear an izār and then touch her while menstruating",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p232",
+     "excerpt_ar": "كان يأمرني أن أتزر، فيباشرني وأنا حائض»",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Connected marfūʿ (Bukhārī) cited in the same chain for the riwāya of prohibition; the source answers it as the Prophet leaving some permitted things out of distaste."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The wiping stood in for washing the feet alone, so its lapse revives only what it replaced, as tayammum lapsing on sight of water requires only what it replaced",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p210",
+     "excerpt_ar": "لأن مسح الخفين ناب عن غسل الرجلين خاصة، فطهورهما يبطل ما ناب عنه، كالتيمم إذا بطل برؤية الماء وجب ما ناب عنه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given as the reason of the riwāya «أنه يجزئه غسل قدميه»; analogy on tayammum."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Restart because the muwālāt has lapsed (the khilāf is built on the obligation of muwālāt)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p210",
+     "excerpt_ar": "ومن منع التفريق أبطل وضوءه؛ لفوات الموالاة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Stated reason for voiding the wuḍūʾ (the madhhab / the masʾala's text «أعاد الوضوء»); a rational ʿilla."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The wuḍūʾ lapsed in some limbs, so it lapses in all, as with a ḥadath",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p211",
+     "excerpt_ar": "ولنا أن الوضوء بطل في بعض الأعضاء، فبطل في جميعها، كما لو أحدث",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ولنا» for the voiding of the ṭahāra (answering those who require nothing); analogy on ḥadath."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Q 4:11 «للذكر مثل حظ الأنثيين»: God's own apportionment between children; the gift should follow God's division.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p053",
+     "excerpt_ar": "ولنا أن الله تعالى قسم بينهم، فجعل للذكر مثل حظ الأنثيين، وأولى ما اقتدى بقسمة الله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Opens the «ولنا» for division by inheritance shares in the masʾala of gifts to children (فصل 4461). The āya is cited directly, though its own subject is mīrāth and its use for gifts is by way of following God's division (iqtidāʾ); a stricter grader could treat this as qiyās. Reviewed: the āya apportions inheritance; carrying its division to a gift in life is an analogy, so the proof for this farʿ is a qiyās."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: a gift in life is one of the two states of giving; aṣl = giving at death (inheritance), farʿ = gift in life; it is an advancing of what comes after death, like zakāt paid early.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p053",
+     "excerpt_ar": "ولأن العطية في الحياة أحد حالي العطية، فيجعل للذكر منها مثل حظ الأنثيين، كحالة الموت",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Explicit analogy («كحالة الموت») for the son-two-shares position; followed by a further rationale (the male's greater need: mahr and maintenance)."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Marfūʿ ḥadīth of al-Nuʿmān b. Bashīr: the Prophet told Bashīr b. Saʿd «سو بينهم», giving as its ʿilla «أيسرك أن يستووا في برك؟».",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p053",
+     "excerpt_ar": "لأن النبي - صلى الله عليه وسلم - قال لبشير بن سعد: \" سو بينهم \"",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for equal shares for sons and daughters (there attributed to Abū Ḥanīfa, Mālik and al-Shāfiʿī; it is the same position as Ibn ʿAqīl's riwāya). A connected marfūʿ report. Ibn Qudāma answers that it is a qaḍiyyat ʿayn with no general scope."
+    },
+    {
+     "position": 1,
+     "tier": "mursalDaif",
+     "dalil": "Ḥadīth of Ibn ʿAbbās «سووا بين أولادكم في العطية، ولو كنت مؤثرا لأحد لآثرت النساء على الرجال» (Saʿīd's Sunan); Ibn Qudāma says the sound version of it is mursal.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p054",
+     "excerpt_ar": "على أن الصحيح من خبر ابن عباس أنه مرسل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for equal shares (v06:p053). The tier is set by the source's own grading of this report as mursal."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: a gift in life, so male and female are equal in it, as with maintenance and clothing (aṣl: nafaqa and kiswa).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p053",
+     "excerpt_ar": "ولأنها عطية في الحياة، فاستوى فيها الذكر والأنثى، كالنفقة والكسوة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Rational analogy given for the equality position."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f018",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The original state: the ḥarbī's blood is lawful and there is no amān unless amān is established, so the Muslim's word (denying amān) holds.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p243",
+     "excerpt_ar": "إحداهن، القول قول المسلم؛ لأن الأصل معه فإن الأصل إباحة دم الحربي، وعدم الأمان",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The only proof given for the first riwāya, and it relies explicitly on «الأصل»: the absence of amān. So istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A rationale: the captive may be telling the truth, and his blood is protected. This possibility is a shubha that prevents killing him. Elsewhere Ibn Qudāma likens a captive whose capture is unproven to an envoy («كالرسول»), but that is his own tarjīḥ against the Shāfiʿīs.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p244",
+     "excerpt_ar": "والثانية، القول، قول الأسير؛ لأنه يحتمل صدقه وحقن دمه، فيكون هذا شبهة تمنع من قتله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The proof given for the second riwāya (Abū Bakr's choice), that the mushrik's word holds. It is a rational argument (the doubt that averts killing), not a text, so qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

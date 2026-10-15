@@ -1,28 +1,58 @@
 # Reconciliation: the bank's taʿāruḍ procedure applied to its own furūʿ
 
-The bank's kernel already has a procedure for conflicting adilla: `Usul.resolve` (`formal/lean/Usul/Taarud.lean`), after Ibn ʿUthaymīn. It tries jamʿ first, then naskh, then tarjīḥ, and suspends judgement (tawaqquf) when all three fail. `Usul.Reconcile` (`formal/lean/Usul/Reconcile.lean`) points that procedure at the bank itself, so the bank works through its apparent contradictions by its own rule rather than by an outside judgement.
+The bank's kernel already has a procedure for conflicting adilla: `Usul.resolve` (`formal/lean/Usul/Taarud.lean`), after Ibn ʿUthaymīn. It tries jamʿ first, then naskh, then tarjīḥ, and suspends judgement (tawaqquf) when all three fail. The reconciliation points that procedure at the bank's own disputed furūʿ.
 
-## What counts as an apparent contradiction
+## A ruling stands by its proof (redesign, 2026-10-15)
 
-An **apparent contradiction** is an ikhtilāf farʿ where the reading does not land on the madhhab's marked side (`matches_madhhab` is false). There are two adilla in play:
+The owner's rule: the madhhab's position is not authoritative; a ruling is valid by its proofs. Until this redesign the tarjīḥ stage ranked positions by *who holds them* (the madhhab's label, then a naṣṣ of Aḥmad, the aṣḥāb, one companion, a wajh). That is now a record, and tarjīḥ weighs proofs.
 
-- the reading, which is the qāʿida as formalised;
-- the reported positions on that farʿ.
-
-All of them sit in `corpus/reconciliation/ledger.json`. When a new tranche adds one, `reconcile.check` fails until it gets a ledger entry, and `python -m usul_corpus reconcile --draft` proposes grades for the reviewer to correct.
-
-**Every ikhtilāf has a tarjīḥ** (the owner's rule, 2026-10-14). An ikhtilāf farʿ annotated on the madhhab side enters the ledger too, with its graded evidence, and `reconcile.check` requires its resolution to land on the annotated side (`expected`). Where it does not, the annotation is in question: the entry may stand only by citing an open research question (`register`, e.g. RQ-03), never silently. `test_the_ledger_holds_every_ikhtilaf` holds the whole bank to this, and the report counts the confirming entries (`confirming`).
-
-## The four stages
-
-`reconcile jam naskh ps = resolve ⟨jam, naskh, prevail ps⟩`
-
-| Stage | Offered when | Checked by |
+| | Before | Now |
 |---|---|---|
-| jamʿ | The source cites a farq. The case is re-encoded under a refinement whose dossier entry names a conservativity theorem over the earlier reading. | Python checks that every farʿ the refinement moves away from the earlier reading lands on its prevailing side, and that at least one farʿ moves. Lean checks the theorem and the re-encoded guards. |
-| naskh | A later riwāya or a retraction (rujūʿ) with reported chronology. | The ledger's `naskh.ref`. |
-| tarjīḥ | Some ruling's graded support strictly exceeds every other ruling's. | `prevail`, which carries `prevail_mem` (it never invents a ruling) and `prevail_unanimous`. |
-| tawaqquf | Every earlier stage fails. | `reconcile_tawaqquf_iff`. |
+| Which furūʿ | the ikhtilāf off the madhhab's side, then every ikhtilāf with the on-madhhab ones required to confirm their side | every ikhtilāf; no side is a target |
+| Tarjīḥ | `Usul.Reconcile.prevail` over attribution grades | `Usul.Tarjih.prevail` over the proofs each position cites |
+| Attribution | decided the case | `attribution` in `report.json`: what the labels favour, a record for comparison |
+| A farʿ with no proofs recorded | resolved by its holders | `unweighed`: on the weighing worklist, never resolved |
+
+**Tiers** (`Usul.Tarjih.Tier`, weakest first), from Ibn Qudāma's *Rawḍa*, «باب: في ترتيب الأدلة ومعرفة الترجيح» (v02 p389–390), and Aḥmad's order of resort (`DalilKind.resort`, which `Tier.refines_resort` proves the tiers never invert):
+
+1. **ijma**: a stated ijmāʿ, «لكون الإجماع دليلا قاطعا».
+2. **qati**: the Book or the mutawātir Sunna, certain in transmission *and* explicit on the point.
+3. **zanni**: a text whose proof is a ẓann: an āḥād report, or the Book through its generality, apparent sense, implied sense or an interpretation. «ولا يتصور أن يتعارض علم وظن» holds only of what is ʿilm on the point.
+4. **fatwaSahabi**: a ṣaḥābī's fatwā with no ṣaḥābī disagreeing.
+5. **aqrabSahabi**: a ṣaḥābī's view where the ṣaḥāba disagreed.
+6. **mursalDaif**: a mursal, or a report the source calls weak.
+7. **qiyas**: an analogy or a stated rationale.
+8. **istishab**: the original state.
+
+**Tarjīḥ.** A ruling's strength is the highest tier any proof cited for it reaches. A higher tier decides, whatever the lower one's advantages. At the same tier, a ruling prevails over another only with a counted advantage over it and none from it back. The advantages are the murajjiḥāt the *Rawḍa* states (v02 p391–401, `Usul.Tarjih.Murajjih`): more narrators, precision, piety, the narrator the event concerns or who took part in it, corroboration, agreed raising, a self-consistent narrator, a connected chain, what moves from the original state, the affirming report, and the ʿilla advantages. Those the source reports as disputed or weak (prohibition over permission, lightness of the ruling, the sensible ʿilla, fewer properties) are recorded but never decide (`favours_uncounted`). Where the stated advantages do not settle it, the result is tawaqquf: «رجحنا، فأخذنا الأقوى في أنفسنا» is the mujtahid's own weighing, which the bank does not simulate.
+
+Proved in Lean: tarjīḥ never invents a ruling (`prevail_mem`), a position that cites no proof outweighs nothing whoever holds it (`beats_unproven`), a higher tier decides (`beats_of_tier`, `not_beats_of_tier`), and outweighing is asymmetric (`beats_asymm`).
+
+**Not yet modelled.** The strength of the indication *within* a tier (naṣṣ over ẓāhir, the spoken over the implied, saying over doing) is not in the *Rawḍa*'s list, so two ẓannī texts with no stated advantage between them go to tawaqquf. Ibn ʿUthaymīn's and al-Kawkab's lists would add these; they are the next source to import.
+
+**Data.** Proofs live in `corpus/reconciliation/weighing/*.json`, laid over the ledger by `reconcile.load`, each farʿ weighed in one file. A proof records its position, tier, the proof itself (`dalil`), and a verbatim excerpt checked against its pinned witness (`test_proofs_are_verbatim`, and `make source-verify`). A jamʿ still needs a cited farq and a conservativity theorem; that it lands on the side the proofs favour is checked once the farʿ is weighed, and listed in `jam_pending` until then.
+
+**Pilot** (`weighing/pilot.json`): 12 two-position riwāya entries drawn at random, weighed from al-Mughnī and al-Mubdiʿ. Five tiers were revised on review: two āyāt bearing on the farʿ only by generality or interpretation (zanni, not qati), one inheritance āya carried to a gift (qiyas), one tacit consensus (fatwaSahabi, not ijma), and one ṣaḥābī fatwā contradicted in the same passage (aqrabSahabi).
+
+| Result | Furūʿ |
+|---|---|
+| tarjīḥ for the reading | q072.f001 (a report and a ṣaḥābī practice over a rationale), q095.f012 (two reports over a qiyās) |
+| tarjīḥ against the reading | q147.f002 (a report over a qiyās), q158.f018 (a qiyās over istiṣḥāb), q102.f005 (ṣaḥābī against ṣaḥābī, ʿUthmān's report connected, per Aḥmad) |
+| tawaqquf | q018.f001, q018.f002, q059.f003, q108.f001, q125.f011, q136.f000, q143.f001 |
+
+In 2 of the 5 resolved furūʿ the proofs side with the madhhab's label; in the other 3 they go against it. Seven of twelve end in tawaqquf, mostly qiyās against qiyās or ẓannī text against ẓannī text: the missing within-tier murajjiḥāt are the binding constraint.
+
+## The attribution record (before the redesign)
+
+Everything below describes the earlier grading by attribution. Its figures are kept as the record of what the madhhab's labels favour; they are not tarjīḥ.
+
+### What counted as an apparent contradiction
+
+An **apparent contradiction** was an ikhtilāf farʿ where the reading does not land on the madhhab's marked side (`matches_madhhab` is false). From 2026-10-14 every ikhtilāf entered the ledger, the on-madhhab ones required to confirm their side; that requirement is withdrawn, since `matches_madhhab` describes the text and is no target.
+
+### The four stages
+
+`byAttribution jam naskh ps = resolve ⟨jam, naskh, prevail ps⟩`
 
 **Grades (`Usul.Reconcile.Grade`), strongest first.** The first five are the annotation convention's marked sides (`Grade.marked`):
 
@@ -31,13 +61,13 @@ All of them sit in `corpus/reconciliation/ledger.json`. When a new tranche adds 
 3. **ẓāhir:** the ẓāhir of Aḥmad's words.
 4. **qiyās:** qiyās al-madhhab, or qiyās al-manṣūṣ.
 5. **jazm:** the aṣḥāb at large: «الأصحاب», most of them, or the ẓāhir of the aṣḥāb.
-6. **aṣḥāb:** one named companion's choice. This includes an author's own «الأظهر» or «الصواب»: an author weighing the evidence is not labelling the madhhab.
+6. **aṣḥāb:** one named companion's choice. This includes an author's own «الأظهر» or «الصواب».
 7. **takhrīj:** a takhrīj or an iḥtimāl.
 8. **wajh:** a bare wajh.
 
-**Tarjīḥ.** Each position lists the distinct grades of the people who hold it. Positions with the same ruling pool their grades, and a ruling's support is its pooled grades sorted strongest first. Supports are compared lexicographically, so a weaker grade never outweighs a stronger one, however many hold it. When two supports share every grade, the longer one wins, following «الأكثرون». Unmarked grades (one companion, a takhrīj, a wajh) count once per ruling, however many hold them, so two named companions against one is still a tie. Marked grades count per holder.
+Each position listed the distinct grades of its holders; supports were compared lexicographically, unmarked grades counting once per ruling.
 
-**Lean is the authority.** `UsulTest/Reconcile.lean` holds one generated guard per entry, so the Python mirror cannot drift from `Usul.Reconcile.reconcile`. A test also pins the grade ranks to the Lean definition.
+**Lean is the authority.** `UsulTest/Reconcile.lean` holds one generated guard per entry, by proof (`Usul.Tarjih.reconcile`) where the farʿ is weighed and by attribution (`Usul.Reconcile.byAttribution`) for every entry, so the Python mirror cannot drift. A test also pins the grade ranks to the Lean definition.
 
 ## Imported evidence: the later taṣḥīḥ
 
@@ -71,7 +101,7 @@ Some evidence does not speak to the farʿ itself, and is graded lower:
 
 **What was found.** The later works treat 113 of the 125 contradictions not resolved by jamʿ, and 321 evidence items were imported. Twelve were not found: 16.f005, 25.f000, 25.f002, 45.f005, 65.f006, 68.f003, 133.f007, 133.f014, 133.f020, 159.f032, 160.f035, and 31.f004 (dropped). Each finding's reasoning is kept in the item's `note`.
 
-## Results
+## Results by attribution (historical)
 
 | Stage | Ibn Rajab's reports alone | With the later taṣḥīḥ | After the refinements (current) |
 |---|---|---|---|

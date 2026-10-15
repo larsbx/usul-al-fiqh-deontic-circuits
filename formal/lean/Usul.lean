@@ -5,6 +5,7 @@ import Usul.Grounded
 import Usul.FiniteGrounded
 import Usul.Taarud
 import Usul.Reconcile
+import Usul.Tarjih
 import Usul.Qawaid
 import Usul.Sadi
 import Usul.Schema

@@ -1,16 +1,12 @@
 import Usul.Taarud
 
 /-!
-# Reconciliation: the bank's taʿāruḍ procedure applied to its own furūʿ
+# Attribution: what the reported positions' holders and labels favour (a record, not a tarjīḥ)
 
-An *apparent contradiction* is a farʿ on which the bank's reading and a reported position of
-the madhhab disagree. The bank works it through its own `Usul.resolve`, in the kernel's order:
-
-* *jamʿ*: a conservative refinement of the reading (a cited farq, with a theorem that it is the
-  old reading wherever the farq is absent) under which the reading gives the preferred ruling;
-* *naskh*: a later riwāya or a retraction (*rujūʿ*) whose chronology is reported;
-* *tarjīḥ*: the ruling whose support is strongest under the Ḥanbalī grades below;
-* *tawaqquf*: otherwise.
+A ruling stands by its proof, not by who holds it: the bank's tarjīḥ weighs proofs
+(`Usul.Tarjih`). This module keeps the earlier grading by attribution as a *description* of the
+madhhab's labels, so that what they favour can be compared with what the proofs favour. It never
+decides a case.
 
 Grades follow the annotation convention's marked sides, strongest first: taṣḥīḥ (a position
 labelled «المذهب», «الصحيح», «المشهور», «الأشهر»), naṣṣ (a riwāya or manṣūṣ of
@@ -55,11 +51,11 @@ def support (ps : List (P × Grade)) (p : P) : List Nat :=
   let rs := (ps.filter (·.1 = p)).map (·.2.rank)
   (rs.filter (· ≥ Grade.jazm.rank) ++ (rs.filter (· < Grade.jazm.rank)).eraseDups).mergeSort (fun a b => a ≥ b)
 
-/-- Tarjīḥ: the ruling whose support strictly exceeds every other ruling's, if any. -/
+/-- The ruling the labels favour: its support strictly exceeds every other ruling's, if any. -/
 def prevail (ps : List (P × Grade)) : Option P :=
   (ps.map (·.1)).find? fun p => (ps.map (·.1)).all fun q => q = p || lexGt (support ps p) (support ps q)
 
-/-- Tarjīḥ never invents a ruling: the winner is one of the reported positions. -/
+/-- The labels' favourite is one of the reported positions. -/
 theorem prevail_mem {ps : List (P × Grade)} {p : P} (h : prevail ps = some p) :
     p ∈ ps.map (·.1) :=
   List.mem_of_find?_eq_some h
@@ -69,15 +65,16 @@ theorem prevail_unanimous (p : P) (g : Grade) (gs : List Grade) :
     prevail ((p, g) :: gs.map (p, ·)) = some p := by
   simp [prevail]
 
-/-- The whole procedure: the kernel's `resolve` on the three stages' offers. -/
-def reconcile (jam naskh : Option P) (ps : List (P × Grade)) : Resolution P :=
+/-- The kernel's `resolve` with the labels' favourite in the tarjīḥ slot: what the procedure would
+conclude if attribution were proof. A record for comparison only. -/
+def byAttribution (jam naskh : Option P) (ps : List (P × Grade)) : Resolution P :=
   resolve ⟨jam, naskh, prevail ps⟩
 
-theorem reconcile_jam_first {jam : P} {naskh : Option P} {ps : List (P × Grade)} :
-    reconcile (some jam) naskh ps = .jam jam := rfl
+theorem byAttribution_jam_first {jam : P} {naskh : Option P} {ps : List (P × Grade)} :
+    byAttribution (some jam) naskh ps = .jam jam := rfl
 
-theorem reconcile_tawaqquf_iff {jam naskh : Option P} {ps : List (P × Grade)} :
-    reconcile jam naskh ps = .tawaqquf ↔ jam = none ∧ naskh = none ∧ prevail ps = none :=
+theorem byAttribution_tawaqquf_iff {jam naskh : Option P} {ps : List (P × Grade)} :
+    byAttribution jam naskh ps = .tawaqquf ↔ jam = none ∧ naskh = none ∧ prevail ps = none :=
   resolve_tawaqquf_iff
 
 -- Two riwāyas, one labelled the madhhab: taṣḥīḥ decides.
@@ -90,7 +87,7 @@ theorem reconcile_tawaqquf_iff {jam naskh : Option P} {ps : List (P × Grade)} :
 #guard prevail [("a", Grade.ashab), ("a", .ashab), ("b", .ashab)] == none
 -- A weaker grade never outweighs a stronger one, however many hold it.
 #guard prevail [("a", Grade.zahir), ("b", .jazm), ("b", .jazm), ("b", .ashab)] == some "a"
-#guard reconcile none none [("a", Grade.wajh), ("b", .wajh)] == .tawaqquf
-#guard reconcile none (some "b") [("a", Grade.nass)] == .naskh "b"
+#guard byAttribution none none [("a", Grade.wajh), ("b", .wajh)] == .tawaqquf
+#guard byAttribution none (some "b") [("a", Grade.nass)] == .naskh "b"
 
 end Usul.Reconcile

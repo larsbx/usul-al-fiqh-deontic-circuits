@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/schemas/reconciliation.schema.json",
-  "title": "Reconciliation ledger: the bank's apparent contradictions, graded and resolved by Usul.Reconcile (candidates)",
+  "title": "Reconciliation ledger: the bank's disputed furūʿ, weighed by proof (Usul.Tarjih) with the holders' attribution kept as a record (Usul.Reconcile) (candidates)",
   "type": "object",
   "required": [
     "suite",
@@ -21,6 +21,48 @@
         "ashab",
         "takhrij",
         "wajh"
+      ]
+    },
+    "tier": {
+      "enum": [
+        "istishab",
+        "qiyas",
+        "mursalDaif",
+        "aqrabSahabi",
+        "fatwaSahabi",
+        "zanni",
+        "qati",
+        "ijma"
+      ]
+    },
+    "murajjih": {
+      "enum": [
+        "kathratRuwat",
+        "tayaqquz",
+        "wara",
+        "sahibWaqia",
+        "mubashir",
+        "corroborated",
+        "marfu",
+        "consistentNarrator",
+        "muttasil",
+        "naqil",
+        "muthbit",
+        "usulMany",
+        "tardAks",
+        "mutaaddiya",
+        "wasf",
+        "ithbat",
+        "aslShari",
+        "aslAgreed",
+        "aslStronger",
+        "muaththira",
+        "mulaima",
+        "munasaba",
+        "hazir",
+        "khiffa",
+        "hissiyya",
+        "fewerAwsaf"
       ]
     }
   },
@@ -163,6 +205,95 @@
                 "who": {
                   "type": "string",
                   "minLength": 1
+                },
+                "note": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "proofs": {
+            "description": "The proofs each position cites, by tier (Rawḍa v02 p389–390). Present = weighed; a position may cite none.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "position",
+                "tier",
+                "dalil",
+                "ref",
+                "excerpt_ar",
+                "note"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "position": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "tier": {
+                  "$ref": "#/$defs/tier"
+                },
+                "dalil": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "the proof itself: the āya, the report with its grade, the ijmāʿ, the aṣl and ʿilla"
+                },
+                "ref": {
+                  "type": "string",
+                  "pattern": "^src:[^/]+/v\\d+:p\\d+$"
+                },
+                "excerpt_ar": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "who": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "advantages": {
+            "description": "Murajjiḥāt the source states between two positions' proofs of one tier (Rawḍa v02 p391–401).",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "for",
+                "over",
+                "by",
+                "ref",
+                "excerpt_ar",
+                "note"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "for": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "over": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "by": {
+                  "$ref": "#/$defs/murajjih"
+                },
+                "ref": {
+                  "type": "string",
+                  "pattern": "^src:[^/]+/v\\d+:p\\d+$"
+                },
+                "excerpt_ar": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "who": {
+                  "type": "string"
                 },
                 "note": {
                   "type": "string",
