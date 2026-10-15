@@ -1,0 +1,1065 @@
+{
+ "suite": "mutun_mutun_umda",
+ "status": "candidate",
+ "provenance": "Lane B, mutūn pilot: ʿUmdat al-Fiqh kitāb al-ṭahāra masāʾil (corpus/records/openiti-ibnqudama-umda-shamela11315.masail.jsonl) annotated against the bank's readings at base 65bcdf60b800049bcf00bca9328e1bbd605fd88f, each aligned with Ibn Rajab's furūʿ and Zād al-Mustaqniʿ's masāʾil after reading both texts. Candidate; leading ruling per masʾala.",
+ "cases": [
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00001.p01",
+   "encoder": "running_water",
+   "class": "missing_rule",
+   "needs": [
+    "rule:only_water_is_tahur",
+    "rule:qullatayn_najasa_threshold",
+    "rule:running_water_najis_only_by_change"
+   ],
+   "aligned": [
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
+     "relation": "sub",
+     "note": "Running water with najāsa: ʿUmda takes a third riwāya (not najis without change), neither side of the farʿ."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f001",
+     "relation": "cognate",
+     "note": "The qullatayn threshold, applied to adding much water to little najis water."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001.p02",
+     "relation": "same",
+     "note": "Only ṭahūr water lifts ḥadath and removes najāsa: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001.p06",
+     "relation": "sub",
+     "note": "Two qullas: agree on the threshold and the measure (500 ʿIrāqī raṭl, about 108 Damascene); Zād excepts human urine and liquid excrement unless removal is hard, ʿUmda states no exception: differ."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: water is created ṭahūr, lifting the aḥdāth (ḥadath) and removing najāsāt, and no other liquid gives ṭahāra. Follow-ons: two qullas, or running water, are not made najis except by a change of colour, taste or smell; other water becomes najis by contact with najāsa; the two qullas are about 108 Damascene raṭl. Running water: ʿUmda holds that it is not made najis without change whatever its amount, which al-Inṣāf reports as a third riwāya («وعنه: لا ينجس قليله إلا بالتغير» … «جزم به في العمدة»), beside the two that running_water decides (each jirya, or the whole): the reading does not decide this sub-ruling, so it is named in needs.",
+   "quote": "خلق الماء طهورا يطهر من الأحداث والنجاسات فلا تحصل الطهارة بمائع غيره"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00001.p02",
+   "encoder": "istihlak",
+   "class": "missing_rule",
+   "needs": [
+    "rule:water_loses_tahuriyya"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001.p08",
+     "relation": "same",
+     "note": "Change by cooking or by what falls in makes it ṭāhir: agree (Zād measures by change of taste, colour or smell, ʿUmda by overcoming its name)."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001.p09",
+     "relation": "same",
+     "note": "Little water used to lift a ḥadath is ṭāhir: agree."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: water loses its ṭahūr status (it stays ṭāhir) when something not ṭahūr is cooked in it, when a mixture overcomes its name, or when it was used to lift a ḥadath. No reading decides when water ceases to be ṭahūr; istihlak decides whether a consumed admixture keeps its own ruling, a different question.",
+   "quote": "وإن طبخ في الماء ما ليس بطهور وكذلك ما خالطه فغلب على اسمه أو استعمل في رفع حدث سلب طهوريته"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00001.p03",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false
+   },
+   "expected": false,
+   "aligned": [
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007",
+     "relation": "same",
+     "note": "Known ṭahāra or najāsa, doubt of its removal: build on the aṣl."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f006",
+     "relation": "sub",
+     "note": "Najis vessels confused with ṭāhir ones bar ṭahāra from any: ʿUmda agrees (tayammum, leaving both)."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f001",
+     "relation": "cognate",
+     "note": "A report that a dog licked one of two vessels makes it as if ṭāhir were confused with najis."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001.p12",
+     "relation": "same",
+     "note": "Doubt of najāsa or ṭahāra: build on the certain: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001.p13",
+     "relation": "sub",
+     "note": "Ṭahūr confused with najis: both barred, tayammum: agree. Ṭahūr with ṭāhir: Zād one wuḍūʾ with a handful from each, ʿUmda wuḍūʾ from each: differ in manner."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001.p14",
+     "relation": "sub",
+     "note": "Confused garments: a prayer in each by the number of the najis, plus one: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00010.p03",
+     "relation": "sub",
+     "note": "Hidden place of najāsa: ghasl until its removal is certain: agree."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: doubt (shakk) whether water or another thing is ṭāhir or najis: build on the certain. The aṣl (the known state presumed to continue) is ẓann; against it only shakk, with no amāra: the ẓāhir does not prevail (False), the aṣl stands. Ibn Rajab q159.f007 states the same question; its case grades the ẓāhir ẓann (his «غلب على ظنه» branch), the matn states «شك», and both give the same output. Follow-ons: the hidden place of najāsa on a garment: ghasl until certain; ṭahūr confused with najis water and no other: tayammum, leaving both (q109.f006, vague_one_bars_all, agrees); ṭahūr confused with ṭāhir: wuḍūʾ from each; ṭāhir garments confused with najis ones: a prayer in each, by the number of the najis, plus one.",
+   "quote": "إذا شك في طهارة الماء أو غيره أو نجاسته بني على اليقين"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00001.p04",
+   "encoder": "running_water",
+   "class": "missing_rule",
+   "needs": [
+    "rule:najasa_washing_count"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00010.p01",
+     "relation": "same",
+     "note": "Dog and pig: seven, one with earth; on the ground one washing: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00010.p02",
+     "relation": "sub",
+     "note": "Other najāsāt: Zād seven without earth, ʿUmda three: differ."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001",
+     "relation": "cognate",
+     "note": "The number of washings (ghasalāt) of a najis vessel dipped in running water."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: the najāsa of a dog or a pig takes seven washings (ghasalāt), one of them with earth. Follow-ons: three cleansing washings (ghasl) suffice for other najāsāt; on the ground one pouring that removes its substance suffices. No reading decides the number of washings.",
+   "quote": "وتغسل نجاسة الكلب والخنزير سبعا إحداهن بالتراب"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00001.p05",
+   "encoder": "unknown_as_nonexistent",
+   "class": "missing_rule",
+   "needs": [
+    "rule:nadh_for_light_najasa",
+    "rule:pardon_of_small_najasa",
+    "rule:tahir_excretions"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00010.p04",
+     "relation": "same",
+     "note": "Naḍḥ for the urine of a boy who has not eaten food: agree. Zād does not mention madhy here."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00010.p05",
+     "relation": "sub",
+     "note": "Small blood pardoned: agree (Zād: outside liquids and foods, from a ṭāhir animal)."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00010.p07",
+     "relation": "sub",
+     "note": "Human manī and the urine of an edible animal are ṭāhir: agree."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: sprinkling (naḍḥ) suffices for the urine of a boy who has not eaten food, and likewise for madhy. Follow-ons: a small amount of madhy and of blood and what comes from it (pus) is pardoned, «ما لا يفحش في النفس»; human manī and the urine of an animal whose meat is eaten are ṭāhir. No reading decides these lightenings of najāsa; unknown_as_nonexistent sets aside an unknown najāsa for hardship, not a known small one.",
+   "quote": "ويجزئ في بول الغلام الذي لم يأكل الطعام النضح"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00002.p01",
+   "encoder": "prohibited_worship",
+   "class": "missing_rule",
+   "needs": [
+    "rule:gold_silver_vessels"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00002.p01",
+     "relation": "same",
+     "note": "Using and keeping them is ḥarām, with the small silver ḍabba excepted: agree; Zād adds that ṭahāra from them is ṣaḥīḥ and that the ḍabba is «لحاجة»."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f002",
+     "relation": "cognate",
+     "note": "Whether worship by a prohibited means is ṣaḥīḥ (prayer on usurped land)."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: vessels of gold and silver may not be used, in ṭahāra or otherwise; a vessel with a gold or silver ḍabba is the same, unless the ḍabba is small and of silver. ʿUmda states the prohibition only, not whether a ṭahāra from them is ṣaḥīḥ (prohibited_worship would bear on that).",
+   "quote": "لا يجوز استعمال آنية الذهب والفضة في طهارة ولا غيرها"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00002.p02",
+   "encoder": "asl_zahir",
+   "class": "missing_rule",
+   "needs": [
+    "rule:vessel_permissibility",
+    "rule:mayta_najasa"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00002.p01",
+     "relation": "same",
+     "note": "Every ṭāhir vessel may be kept and used: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00002.p03",
+     "relation": "sub",
+     "note": "Vessels and clothes of unbelievers of unknown state, the untanned and tanned skin, hair: agree; Zād extends it to all kuffār and permits a tanned skin in dry things."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00010.p06",
+     "relation": "sub",
+     "note": "The human and what has no flowing blood do not become najis by death: agree."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025",
+     "relation": "sub",
+     "note": "Clothes and vessels of unbelievers: ʿUmda holds the riwāya of permission, against the reading's output there."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f001",
+     "relation": "sub",
+     "note": "Hair is not made najis by death: agree."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f002",
+     "relation": "sub",
+     "note": "Tanning after death does not make the skin ṭāhir: agree."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022",
+     "relation": "cognate",
+     "note": "What has no flowing blood, doubted to be generated from najāsa."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: all other ṭāhir vessels may be used and kept. Follow-ons: the vessels and clothes of Ahl al-Kitāb may be used «ما لم تعلم نجاستها»: q159.f025 records three riwāyas, and asl_zahir there gives True (the third, the ẓāhir prevails), whereas ʿUmda holds the first (permission, the aṣl), as that case already records (matches_madhhab false). Wool and hair of carrion (mayta) are ṭāhir (q002.f001, hair_detached, agrees); its skin is najis tanned or not, and its bones (q134.f002 agrees on tanning); every mayta is najis except the human, the sea animal and what has no flowing blood, if not generated from najāsāt.",
+   "quote": "ويجوز استعمال سائر الآنية الطاهر واتخاذها"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00003.p01",
+   "encoder": "amr",
+   "class": "missing_rule",
+   "needs": [
+    "rule:khala_adab"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00003.p01",
+     "relation": "same",
+     "note": "The same supplications on entering and leaving: agree."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: one entering the khalāʾ should (mustaḥabb) say «بسم الله أعوذ بالله من الخبث والخبائث», and on leaving «غفرانك». The paragraph ends mid-sentence at a page break («ويقدم رجله»), continued in p02. A domain rule of adab, not a qāʿida.",
+   "quote": "يستحب لمن أراد دخول الخلاء أن يقول"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00003.p02",
+   "encoder": "amr",
+   "class": "segmentation_error",
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00003.p02",
+     "relation": "sub",
+     "note": "Entering with dhikr of God only for need; the right hand: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00003.p03",
+     "relation": "sub",
+     "note": "Qibla forbidden outside buildings; the road, shade and fruit tree: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00003.p04",
+     "relation": "sub",
+     "note": "Istijmār then water; istijmār suffices within the usual place: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00003.p05",
+     "relation": "sub",
+     "note": "What may be used for istijmār: agree; Zād adds food and what is attached to an animal."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00003.p06",
+     "relation": "sub",
+     "note": "Three cleansing wipes at least: agree."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f003",
+     "relation": "cognate",
+     "note": "Najāsa that passes its usual place."
+    }
+   ],
+   "routing_label": false,
+   "note": "Not a masʾala by itself: the second half of a sentence split at a page break (audit page_break_candidates). It opens «اليسرى في الدخول واليمنى في الخروج», completing p01's «ويقدم رجله», and the witness has a lacuna inside it («ويجوز ذلك في البنيا انقطع البول»). It carries the rest of the bāb, to be annotated once re-segmented (rule:khala_adab, rule:istijmar_conditions): nothing bearing God's dhikr taken in except for need; facing or turning the back to the qibla forbidden in open land and allowed in buildings; not touching the penis with the right hand; istijmār then istinjāʾ with water; istijmār suffices if the najāsa does not pass its usual place (q029.f003); no fewer than three cleansing wipes; any ṭāhir thing except dung, bones and what is respected."
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00004.p01",
+   "encoder": "doubt_in_condition",
+   "class": "missing_rule",
+   "needs": [
+    "rule:niyya_shart_of_worship",
+    "rule:wudu_procedure"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00005.p02",
+     "relation": "same",
+     "note": "Niyya is a sharṭ of every ṭahāra from aḥdāth: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00005.p06",
+     "relation": "sub",
+     "note": "The description of wuḍūʾ: agree in its order and limits."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f000",
+     "relation": "cognate",
+     "note": "Wiping the ears with the head."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: neither wuḍūʾ nor any other act of worship is ṣaḥīḥ without intention (niyya). Follow-ons: the description of wuḍūʾ (tasmiya, the hands three times, maḍmaḍa and istinshāq, the face, the arms to the elbows, the head with the ears, the feet to the ankles, the shahāda after it). No reading states niyya as a sharṭ of worship; doubt_in_condition presupposes it.",
+   "quote": "لا يصح الوضوء ولا غيره من العبادات إلا أن ينويه"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00004.p02",
+   "encoder": "continuity",
+   "class": "missing_rule",
+   "needs": [
+    "rule:wudu_wajibat",
+    "rule:muwalat_measure"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00005.p01",
+     "relation": "same",
+     "note": "The farḍ acts: agree on tartīb, muwālāt by drying and the whole head; Zād counts the ears in the head and puts the niyya as a sharṭ (b00005.p02)."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f002",
+     "relation": "cognate",
+     "note": "Muwālāt: custom or drying of the limbs; ʿUmda takes drying."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: the wājib acts of wuḍūʾ are the niyya, washing (ghasl) once each limb except the hands, wiping the whole head, the order (tartīb), and not delaying a limb until the one before it dries (muwālāt). Muwālāt is measured here by drying, one of the two riwāyas of q103.f002 (custom or drying), whose continuity case decides only that a slight gap does not break it.",
+   "quote": "والواجب من ذلك النية والغسل مرة مرة ما خلا الكفين ومسح الرأس كله وترتيب الوضوء على ما ذكرنا وأن لا يؤخر غسل عضو حتى ينشف ما قبله"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00004.p03",
+   "encoder": "combining_forms",
+   "class": "missing_rule",
+   "needs": [
+    "rule:wudu_sunan",
+    "rule:tasmiya_status"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00004.p04",
+     "relation": "same",
+     "note": "Tasmiya in wuḍūʾ: Zād wājib with remembrance, ʿUmda masnūn: differ."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00004.p06",
+     "relation": "sub",
+     "note": "The sunan of wuḍūʾ: agree on the hands, thoroughness except when fasting, takhlīl, the right first and the second and third washing (ghasla)."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00005.p01",
+     "relation": "cognate",
+     "note": "The ears: ʿUmda lists wiping them among the masnūn, Zād counts them in the head (farḍ): differ."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f000",
+     "relation": "cognate",
+     "note": "Wiping the ears once, with the head or with new water."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: the tasmiya of wuḍūʾ is masnūn (sunna). Follow-ons, also masnūn: washing (ghasl) the hands, thoroughness in maḍmaḍa and istinshāq unless fasting, takhlīl of the beard and fingers, wiping the ears, the right before the left, three times each; more than three is makrūh, as is waste. Zād b00004.p04 makes the tasmiya wājib with remembrance: the mutūn differ on the leading ruling.",
+   "quote": "والمسنون التسمية"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00004.p04",
+   "encoder": "amr",
+   "class": "missing_rule",
+   "needs": [
+    "rule:siwak_times"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00004.p01",
+     "relation": "same",
+     "note": "Masnūn at all times except for one fasting after the zawāl, emphasised at prayer, waking and change of the mouth: agree."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: siwāk is masnūn when the mouth changes, on rising from sleep and at prayer, and mustaḥabb at all times except for one fasting after the zawāl. Its ḥadīth «لولا أن أشق على أمتي لأمرتهم» is the uṣūl locus of the command's force, but amr decides the status of an issued command, not of one withheld.",
+   "quote": "ويسن السواك عند تغير الفم والقيام من النوم وعند الصلاة"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00005.p01",
+   "encoder": "rukhsa_under_doubt",
+   "class": "missing_rule",
+   "needs": [
+    "rule:khuff_wiping_period"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006.p01",
+     "relation": "same",
+     "note": "A day and night, three for the traveller, from the ḥadath after putting them on: agree."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f001",
+     "relation": "cognate",
+     "note": "Doubt whether the wiping period began in travel or residence."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: wiping (masḥ) over the khuffs and similar thick socks that stay on the feet is permitted in the minor ṭahāra, a day and night for the resident and three days and nights for the traveller, from the ḥadath to the like of it. The period is a domain rule.",
+   "quote": "يجوز المسح على الخفين وما أشبههما من الجوارب الصفيقة"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00005.p02",
+   "encoder": "badal_stands_for_original",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "sold_for_price": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "a riwāya (Ibn Rajab q143.f001): washing (ghasl) the feet suffices, the wiping having stood for their washing",
+     "ruling": true
+    },
+    {
+     "who": "the other riwāya: the ṭahāra is bāṭil and restarted (ʿUmda; al-Inṣāf: the madhhab)",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "needs": [
+    "rule:khuff_period_on_travel_change"
+   ],
+   "aligned": [
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f001",
+     "relation": "same",
+     "note": "Wiping, then taking off the khuff: ʿUmda holds the restart side."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f001",
+     "relation": "cognate",
+     "note": "Doubt whether the period began in travel or residence: the resident's period."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006.p06",
+     "relation": "same",
+     "note": "Part of the place appearing, or the period ending: restart the ṭahāra: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006.p03",
+     "relation": "sub",
+     "note": "Wiping in travel then residing, or the reverse: a resident's wiping: agree; Zād adds ḥadath then travel before wiping: a traveller's."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: one who wiped and then the period ended, or who took off (khalʿ) the khuff before it, has his ṭahāra become bāṭil («بطلت طهارته»). The take-off branch is Ibn Rajab's q143.f001 on the same facts, annotated with this encoder: two riwāyas, washing the feet suffices (the wiping stood for their washing, the reading's output) or the ṭahāra is restarted. ʿUmda states the restart side, which al-Inṣāf labels the madhhab: off the reading's side; ledger entry. Follow-on: one who wiped travelling and then resided, or the reverse, completes a resident's wiping; no reading decides it.",
+   "quote": "ومتى مسح ثم انقضت المدة أو خلع قبلها بطلت طهارته"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00005.p03",
+   "encoder": "substitute",
+   "class": "missing_rule",
+   "needs": [
+    "rule:turban_wiping",
+    "rule:jabira_wiping"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006.p01",
+     "relation": "sub",
+     "note": "Turban: Zād «محنكة أو ذات ذؤابة» for a man, ʿUmda the tail only; Zād adds women's head-covers wound under the throat, ʿUmda says a woman does not wipe over a turban: differ in scope."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006.p02",
+     "relation": "sub",
+     "note": "Splint not exceeding need, until untied, put on after complete ṭahāra: agree; Zād adds even in the major ḥadath."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006.p05",
+     "relation": "cognate",
+     "note": "How much of the turban and splint is wiped."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: wiping over the turban (ʿimāma) is permitted if it has a tail (dhuʾāba) and covers the whole head except what is customarily uncovered. Follow-ons: it is a sharṭ of wiping over all of these that they are put on in a complete ṭahāra; wiping over a splint (jabīra) is permitted while it does not exceed the place of need, until it is untied; man and woman are alike except that a woman does not wipe over a turban.",
+   "quote": "ويجوز المسح على العمامة إذا كانت ذات ذؤابة"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00006.p01",
+   "encoder": "asl_zahir",
+   "class": "missing_rule",
+   "needs": [
+    "rule:wudu_nullifiers"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00007.p01",
+     "relation": "same",
+     "note": "The exit from a passage, gross najis exit elsewhere, loss of reason except light sleep sitting or standing, touching the penis, touching a woman with desire: agree; Zād adds touching the anus and the khunthā cases."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016",
+     "relation": "sub",
+     "note": "Deep sleep nullifies as the mazinna of ḥadath."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f000",
+     "relation": "cognate",
+     "note": "Touching a woman's hair or nail with desire does not nullify."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: what exits from the two passages nullifies wuḍūʾ; the paragraph opens the list of seven nullifiers (the najis exit from elsewhere if gross, loss of reason except light sleep sitting or standing, touching the penis with the hand, touching a woman), which a page break splits: «بشهوة» and the rest are in p02. Sleep is decided by asl_zahir at q159.f016 (deep sleep as the mazinna of ḥadath), which agrees with ʿUmda's exception of light sleep; the list as a whole is a domain rule.",
+   "quote": "هي سبعة: الخارج من السبيلين"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00006.p02",
+   "encoder": "asl_zahir",
+   "class": "segmentation_error",
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00007.p02",
+     "relation": "sub",
+     "note": "Camel meat nullifies: agree. Zād also counts washing (ghasl) a corpse and does not list ridda here; ʿUmda's seven omit the ghasl of the dead: differ."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00007.p03",
+     "relation": "cognate",
+     "note": "Whatever obliges ghusl obliges wuḍūʾ except death."
+    }
+   ],
+   "routing_label": false,
+   "note": "Not a masʾala by itself: the second half of the list of nullifiers split at a page break (audit page_break_candidates): it opens «بشهوة», completing p01's «ولمس امرأة». It carries apostasy (ridda) and eating camel meat, to be annotated with p01 once re-segmented (rule:wudu_nullifiers)."
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00006.p03",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "shakk",
+    "amara": false
+   },
+   "expected": false,
+   "aligned": [
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007",
+     "relation": "same",
+     "note": "A known ḥadath or ṭahāra, doubt of its removal: build on the aṣl."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00007.p04",
+     "relation": "same",
+     "note": "Build on the certain: agree; Zād adds both certain with the order unknown."
+    }
+   ],
+   "routing_label": true,
+   "note": "Leading ruling: one certain of ṭahāra who doubts a ḥadath, or certain of a ḥadath who doubts ṭahāra, stays with what he is certain of. The known state is the aṣl (ẓann of its continuing); against it only shakk with no amāra: the ẓāhir does not prevail (False). Ibn Rajab q159.f007 states it («وكذلك لو تيقن حدثا»). The whole paragraph.",
+   "quote": "ومن تيقن الطهارة وشك في الحدث أو تيقن الحدث وشك ف الطهارة فهو على ما تيقن منهما"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00007.p01",
+   "encoder": "each_on_its_asl",
+   "class": "missing_rule",
+   "needs": [
+    "rule:ghusl_mujibat"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008.p01",
+     "relation": "same",
+     "note": "Exit of manī with gushing: agree; Zād adds «بلذة» and the case where it moves and does not exit."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008.p02",
+     "relation": "same",
+     "note": "Concealing the ḥashafa in a farj: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008.p03",
+     "relation": "cognate",
+     "note": "Zād lists further mūjib: conversion of an unbeliever, death, ḥayḍ, nifās (ʿUmda gives ḥayḍ's ghusl in b00009.p02)."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000",
+     "relation": "cognate",
+     "note": "Manī found in a garment two sleep in: on whom the ghusl falls."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: what obliges (mūjib) ghusl is the exit of al-manī, the gushing fluid, and the meeting of the two circumcised parts. A domain rule; the readings on doubtful wetness or manī (each_on_its_asl, cause_on_certainty) decide whether a found trace obliges it, not what obliges ghusl.",
+   "quote": "والموجب له: خروج المني وهو الماء الدافق والتقاء الختانين"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00007.p02",
+   "encoder": "partial_capability",
+   "class": "missing_rule",
+   "needs": [
+    "rule:ghusl_wajibat"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008.p08",
+     "relation": "same",
+     "note": "The sufficient ghusl: niyya and covering the body once: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008.p06",
+     "relation": "sub",
+     "note": "The complete ghusl: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008.p07",
+     "relation": "sub",
+     "note": "Rubbing and the right side first: agree."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f002",
+     "relation": "cognate",
+     "note": "Able to do only part of the ghusl of janāba."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: the wājib in ghusl is the niyya and covering the body with ghasl, with maḍmaḍa and istinshāq. Follow-ons: the tasmiya is masnūn; rubbing the body; Maymūna's description of the Prophet's ghusl. A domain rule.",
+   "quote": "والواجب فيه النية وبدنه بالغسل مع المضمضة والاستنشاق"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00007.p03",
+   "encoder": "hair_detached",
+   "class": "missing_rule",
+   "needs": [
+    "rule:ghusl_hair_unbraiding"
+   ],
+   "aligned": [
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002",
+     "relation": "cognate",
+     "note": "Washing the hair itself in janāba."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008.p06",
+     "relation": "cognate",
+     "note": "Pouring on the head three times so as to wet it."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: undoing the hair is not wājib in ghusl once its roots are wetted. hair_detached decides whether hair follows the body; Ibn Rajab's q002.f002 asks whether the hair itself must be washed (ghasl) in janāba, a cognate question; ʿUmda's is about undoing braids.",
+   "quote": "ولا يجب نقض الشعر في غسل اإذا روى أصوله"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00007.p04",
+   "encoder": "tadakhul",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "same_kind": true,
+    "same_purpose": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "Ibn Rajab q018.f000 «فالمذهب»: the acts of the greater ṭahāra suffice when he intends both (ʿUmda; al-Inṣāf: the madhhab)",
+     "ruling": true
+    },
+    {
+     "who": "a riwāya («وعنه»): not for the minor ḥadath until he does wuḍūʾ",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "aligned": [
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f000",
+     "relation": "same",
+     "note": "Both ḥadaths, a ghusl intending both: ʿUmda holds the madhhab side."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008.p09",
+     "relation": "same",
+     "note": "A ghusl intending both ḥadaths suffices: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p05",
+     "relation": "sub",
+     "note": "A tayammum intending aḥdāth, or najāsa on the body: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p09",
+     "relation": "sub",
+     "note": "Intending one does not suffice for the other: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00005.p04",
+     "relation": "cognate",
+     "note": "Several aḥdāth of one kind, intending one lifts all."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: one who intends both ṭahāras by his ghusl is discharged of both. Ibn Rajab's q018.f000 is the same question on the same facts, annotated with this encoder: «فالمذهب» it suffices when he intends both, «وعنه» not for the minor ḥadath until he does wuḍūʾ; Abū Bakr's third view requires wuḍūʾ's own order and continuity. ʿUmda states the madhhab side, the reading's output; al-Inṣāf labels it the madhhab. Follow-ons: a tayammum for both ḥadaths and for najāsa on the body suffices for all (q018.f000: for the two ḥadaths «بغير خلاف»); intending some of them, he has only what he intended.",
+   "quote": "وإذا نوى بغسله بغسله الطهارتين أجزأ عنهما"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00008.p01",
+   "encoder": "substitute",
+   "class": "missing_rule",
+   "needs": [
+    "rule:tayammum_procedure"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p08",
+     "relation": "same",
+     "note": "The farḍ: the face and the hands to the wrists: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p12",
+     "relation": "sub",
+     "note": "The description of the strike: agree."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: tayammum is one strike of the hands on clean earth (al-ṣaʿīd al-ṭayyib), wiping the face and the hands (kaffayn) with them; more strikes or more wiping are permitted. The procedure is a domain rule.",
+   "quote": "وصفته أن يضرب بيديه على الصعيد الطيب ضربة واحدة فيمسح بهما وجهه وكفيه"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00008.p02",
+   "encoder": "substitute",
+   "class": "segmentation_error",
+   "routing_label": false,
+   "note": "Not a masʾala: the heading line «وله شروط أربعة:» that introduces the four sharṭs of tayammum stated in p03–p06; it states no ruling of its own."
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00008.p03",
+   "encoder": "substitute",
+   "class": "derivable",
+   "facts": {
+    "original_possible": false
+   },
+   "expected": true,
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p02",
+     "relation": "same",
+     "note": "Tayammum is legislated when water is absent, too dear, or harmful to use or seek: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p03",
+     "relation": "sub",
+     "note": "Water for part of the ṭahāra: used, then tayammum: agree."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f003",
+     "relation": "sub",
+     "note": "Water for only some limbs: ʿUmda holds the must-use side."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: the first sharṭ of tayammum is inability («العجز») to use water: the substitute is used when the original is not possible. The text states the inability and lists its grounds (no water, fear of harm from illness or cold, fear of thirst for himself, a companion or his animal, fear for himself or his property in seeking it, or its price being excessive). Follow-on: water for part of the body, or too little, is used and tayammum made for the rest: the must-use side of q008.f003, which partial_capability gives (True).",
+   "quote": "أحدها: العجز عن استعمال الماء"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00008.p04",
+   "encoder": "advance_after_cause",
+   "class": "missing_rule",
+   "needs": [
+    "rule:tayammum_time_condition"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p02",
+     "relation": "same",
+     "note": "Tayammum once the time of a farīḍa enters or a nafl is permitted: agree."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f000",
+     "relation": "cognate",
+     "note": "Ṭahāra may be advanced after its sabab, the ḥadath."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f005",
+     "relation": "cognate",
+     "note": "Combining two prayers by one tayammum, then the second's time enters with water at hand."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: the second sharṭ is the time: no tayammum for a farīḍa before its time, nor for a nafl in the time it is forbidden. advance_after_cause was examined: Ibn Rajab's q004.f000 lets ṭahāra be advanced after its sabab, the ḥadath; ʿUmda's bar rests on tayammum being a ṭahāra of necessity that the time occasions, which the reading's one fact does not carry. Recorded as a gap, not an encoding error; a reading for the time-bound substitute would decide it.",
+   "quote": "الثاني: الوقت فلا يتيمم لفريضة قبل وقتها ولا لنافلة في وقت النهي عنها"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00008.p05",
+   "encoder": "nafl_before_fard",
+   "class": "missing_rule",
+   "needs": [
+    "rule:tayammum_niyya_scope"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p09",
+     "relation": "same",
+     "note": "Intending a nafl, or nothing specific, he does not pray a farḍ by it; intending a farḍ he prays all its time: agree."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: the third sharṭ is the niyya: a tayammum made for a nafl does not permit a farḍ prayer; one made for a farīḍa permits it and any farāʾiḍ and nawāfil until its time ends. The scope of the tayammum's niyya is a domain rule.",
+   "quote": "الثالث: النية فإن تيمم لنافلة لم يصل بها فرضا"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00008.p06",
+   "encoder": "switch_to_original",
+   "class": "missing_rule",
+   "needs": [
+    "rule:tayammum_earth"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p07",
+     "relation": "same",
+     "note": "Earth that has dust: agree (Zād «طهور», ʿUmda «طاهر»)."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p10",
+     "relation": "sub",
+     "note": "Nullified by the end of the time, the nullifiers of wuḍūʾ, and water even in the prayer: agree."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f001",
+     "relation": "sub",
+     "note": "Water found during the prayer: ʿUmda holds buṭlān, the reading's output."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f005",
+     "relation": "sub",
+     "note": "Water found after tayammum: before the prayer it bars entering it."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: the fourth sharṭ is earth: tayammum only with ṭāhir earth that has dust. Follow-ons: what nullifies water ṭahāra nullifies tayammum, and the end of the time, and ability to use water even within the prayer: that branch is q007.f001, where switch_to_original gives True (the prayer is bāṭil), as ʿUmda states; that case is recorded with matches_madhhab false, while ʿUmda and Zād both state buṭlān (a side for review).",
+   "quote": "الرابع: التراب فلا يتيمم إلا بتراب طاهر له غبار"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00009.p01",
+   "encoder": "supervening_bar_extends_to_preliminaries",
+   "class": "missing_rule",
+   "needs": [
+    "rule:hayd_prohibitions"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p03",
+     "relation": "same",
+     "note": "Prayer and fasting neither ṣaḥīḥ nor permitted, intercourse in the farj ḥarām: agree; Zād adds the kaffāra of a dinar or half for intercourse."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008.p04",
+     "relation": "cognate",
+     "note": "One owing ghusl: the Qurʾān and staying in the mosque."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f000",
+     "relation": "sub",
+     "note": "Ḥayḍ bars intercourse in the farj: agree."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f003",
+     "relation": "cognate",
+     "note": "The prayer falls from the woman in the days of ḥayḍ."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: ḥayḍ bars ten things: performing the prayer and its wujūb, fasting, ṭawāf, reciting the Qurʾān, touching the muṣḥaf, staying in the mosque, intercourse in the farj, the sunna of ṭalāq, and the ʿidda by months. Only intercourse in the farj is decided by a reading (q136.f000), and ʿUmda agrees; the list is a domain rule.",
+   "quote": "ويمنع عشرة أشياء: فعل الصلاة وجوبها وفعل الصيام والطواف وقراءة القرآن ومس المصحف"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00009.p02",
+   "encoder": "supervening_bar_extends_to_preliminaries",
+   "class": "missing_rule",
+   "needs": [
+    "rule:hayd_effects",
+    "rule:hayd_durations"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008.p03",
+     "relation": "sub",
+     "note": "Ḥayḍ obliges ghusl: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p02",
+     "relation": "sub",
+     "note": "Least and most ḥayḍ, least ṭuhr, no limit to its most: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p03",
+     "relation": "sub",
+     "note": "After the blood stops, only fasting and ṭalāq before ghusl; enjoyment below the farj: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p01",
+     "relation": "sub",
+     "note": "Age limits: nine agree; the oldest Zād fifty, ʿUmda sixty: differ."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f000",
+     "relation": "sub",
+     "note": "Enjoyment below the farj is not barred: agree."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f003",
+     "relation": "sub",
+     "note": "The most of ḥayḍ is fifteen days: agree."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: ḥayḍ obliges ghusl, establishes bulūgh and counts in the ʿidda. Follow-ons: once the blood stops, fasting and ṭalāq are permitted and the rest not until she has the ghusl; enjoyment below the farj is permitted (q136.f000: the reading gives False, the preliminaries stay permitted, as ʿUmda); the least ḥayḍ a day and night, the most fifteen days (q147.f003: agree), the least ṭuhr thirteen days, the youngest age nine years and the oldest sixty (Zād: none after fifty).",
+   "quote": "ويوجب الغسل والبلوغ والاعتداد به"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00009.p03",
+   "encoder": "unknown_as_nonexistent",
+   "class": "missing_rule",
+   "needs": [
+    "rule:mubtadaa_sitting"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p04",
+     "relation": "same",
+     "note": "The beginner: Zād the minimum until repeated thrice, ʿUmda ḥayḍ from the first month within the maximum: differ; beyond the maximum istiḥāḍa: agree."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: a beginner (mubtadaʾa) who sees blood at an age when women menstruate sits (refrains); if it stops before a day and night it is not ḥayḍ, if it passes that and not the maximum it is ḥayḍ; repeated three months alike it becomes her ʿāda; beyond the maximum the excess is istiḥāḍa. Zād b00011.p04 has her sit only the minimum, then have ghusl and pray, and makes it ḥayḍ only after it repeats three times (making up what was owed in it): the mutūn differ on the leading ruling.",
+   "quote": "والمبتدأة إذا رأت الدم لوقت تحيض في مثله جلست"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00009.p04",
+   "encoder": "asl_zahir",
+   "class": "missing_rule",
+   "needs": [
+    "rule:mustahada_tahara",
+    "rule:mustahada_reference_order"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p08",
+     "relation": "same",
+     "note": "Washing (ghasl) and bandaging the farj, wuḍūʾ for each prayer's time: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p05",
+     "relation": "sub",
+     "note": "The one with an ʿāda sits it, even with tamyīz: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p04",
+     "relation": "sub",
+     "note": "Tamyīz by black and red blood: agree."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014",
+     "relation": "sub",
+     "note": "ʿĀda, then tamyīz, then the usual of women."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: the mustaḥāḍa has the ghusl at the end of the ḥayḍ, washes (ghasl) and bandages her farj, makes wuḍūʾ for the time of each prayer and prays; one with incontinence of urine is the same. Follow-ons: in the next month the one with an ʿāda takes her ʿāda; without one, with discernment (tamyīz), the black thick blood. Ibn Rajab's q159.f014 states this order and asl_zahir decides only its last step (p05); the order itself and the mustaḥāḍa's ṭahāra are domain rules.",
+   "quote": "وعليها أن تغتسل عند آخر الحيض وتغسل فرجها وتعصبه وتتوضأ لوقت كل صلاة وتصلي"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00009.p05",
+   "encoder": "asl_zahir",
+   "class": "derivable",
+   "facts": {
+    "asl_grade": "zann",
+    "zahir_grade": "zann",
+    "amara": true
+   },
+   "expected": true,
+   "aligned": [
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014",
+     "relation": "same",
+     "note": "With neither ʿāda nor tamyīz: the usual of women, six or seven."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p05",
+     "relation": "same",
+     "note": "The forgetful without tamyīz: the usual ḥayḍ: agree."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p04",
+     "relation": "sub",
+     "note": "The beginner without tamyīz: the usual ḥayḍ of each month: agree."
+    }
+   ],
+   "routing_label": true,
+   "note": "Leading ruling: a beginner or one who forgot her ʿāda, with no discernment (tamyīz), takes six or seven days of each month as ḥayḍ, «لأنه غالب عادة النساء». Ibn Rajab's q159.f014 is the same question, annotated asl_zahir with these facts: the ẓāhir (her likeness to women, by custom) prevails over the aṣl. The whole paragraph.",
+   "quote": "وإن كانت مبتدأة أو ناسية لعادتها ولا تمييز لها فحيضها من كل شهر ستة أيام أو سبعة لأنه غالب عادة النساء"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00009.p06",
+   "encoder": "asl_zahir",
+   "class": "missing_rule",
+   "needs": [
+    "rule:pregnancy_excludes_hayd"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p01",
+     "relation": "same",
+     "note": "No ḥayḍ with pregnancy: agree."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: a pregnant woman does not menstruate, unless she sees blood a day or two before giving birth, which is then the blood of nifās. A domain rule.",
+   "quote": "والحامل لا تحيض إلا أن ترى الدم قبل ولادتها بيوم أو يومين فيكون دم نفاس"
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00010.p01",
+   "encoder": "supervening_bar_extends_to_preliminaries",
+   "class": "missing_rule",
+   "needs": [
+    "rule:nifas_rulings"
+   ],
+   "aligned": [
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p10",
+     "relation": "same",
+     "note": "Like ḥayḍ in what it permits, forbids, obliges and removes: agree; Zād excepts the ʿidda and bulūgh."
+    },
+    {
+     "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p09",
+     "relation": "sub",
+     "note": "Most forty days, ṭuhr before it: agree; blood returning within the forty: Zād doubtful, ʿUmda nifās: differ."
+    },
+    {
+     "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f000",
+     "relation": "cognate",
+     "note": "Nifās, like ḥayḍ, bars intercourse in the farj."
+    }
+   ],
+   "routing_label": false,
+   "note": "Leading ruling: nifās, the blood that exits by reason of birth, takes the ruling of ḥayḍ in what it permits, forbids, obliges and removes. Follow-ons: its most is forty days, it has no least; seeing ṭuhr she has the ghusl and is ṭāhir; if it returns within the forty it is nifās too, where Zād b00011.p09 makes it doubtful (she fasts, prays and makes up the wājib fast): the mutūn differ there.",
+   "quote": "وحكمها حكم الحيض فيما يحل ويحرم ويجب ويسقط به"
+  }
+ ]
+}
