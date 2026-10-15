@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "candidate",
-  "provenance": "The 139 cases of fold 0 of the routing index's held-out split (corpus/routing/index.json; Ibn Rajab and Ibn al-Laḥḥām furūʿ) typed into Usul.Typing situations, LLM-assisted by four agents working blind: they saw each farʿ's committed text under an opaque id (record ids name the qāʿida) and a field catalogue generated from the Lean export, never the qāʿida, encoder or label. Quotes are verbatim, at most 160 characters. Not human-reviewed.",
+  "provenance": "The 157 cases of fold 0 of the routing index's held-out split (corpus/routing/index.json; Ibn Rajab and Ibn al-Laḥḥām furūʿ) typed into Usul.Typing situations, LLM-assisted by four agents working blind: they saw each farʿ's committed text under an opaque id (record ids name the qāʿida) and a field catalogue generated from the Lean export, never the qāʿida, encoder or label. Quotes are verbatim, at most 160 characters. The 17 fold-0 cases of the RajabA13–A16 shards (qawāʿid 119–130), added at the 2026-10-14 merge, were typed by one agent that had seen their annotations, so not blind; likewise q128.f000, recovered and annotated at PR-30. Not human-reviewed.",
   "answers": [
     {
       "answer": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f001",
@@ -2065,6 +2065,255 @@
           },
           "evidence": {
             "legitimate_purpose": "وليس مقصود المعلق إيقاع الفسخ وإنما قصده الامتناع من التوكيل"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f004",
+      "situations": [
+        {
+          "label": "third bequeathed to one, a monthly sum from it to another, in one utterance",
+          "facts": {
+            "connected": true
+          },
+          "evidence": {
+            "connected": "قال ثلثي هذا لفلان ويعطى فلان منه مائة درهم في كل شهر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f008",
+      "situations": [
+        {
+          "label": "bequest to the poor when his heirs are poor",
+          "facts": {
+            "special_title": true
+          },
+          "evidence": {
+            "special_title": "وقال الوارث لا يصرف في المال مرتين"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f002",
+      "situations": [
+        {
+          "label": "precedence in leading the funeral prayer",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f002",
+      "situations": [
+        {
+          "label": "oath not to eat meat, then eats fish",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f003",
+      "situations": [
+        {
+          "label": "oath not to enter a house, then enters a mosque or bath-house",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f009",
+      "situations": [
+        {
+          "label": "oath that he has no wealth while owning non-zakatable property",
+          "facts": {
+            "customary_usage": true
+          },
+          "evidence": {
+            "customary_usage": "نحن لا نعد الدار والثياب والخادم مالا"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f001",
+      "situations": [
+        {
+          "label": "bequest to another's kin, some of whom he used to support",
+          "facts": {
+            "customary_usage": true
+          },
+          "evidence": {
+            "customary_usage": "وصى لقرابة غيره وكان يصل بعضهم"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f003",
+      "situations": [
+        {
+          "label": "hire for a fixed period",
+          "facts": {
+            "customary_usage": true
+          },
+          "evidence": {
+            "customary_usage": "حمل على ما جرت العادة بالعمل فيه من الزمان دون غيره"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f004",
+      "situations": [
+        {
+          "label": "oath not to eat from this tree",
+          "facts": {
+            "customary_usage": true
+          },
+          "evidence": {
+            "customary_usage": "اختصت يمينه بما يؤكل منها عادة وهو الثمر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f002",
+      "situations": [
+        {
+          "label": "bequest to his relatives: do the heirs enter?",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f000",
+      "situations": [
+        {
+          "label": "invited to lunch, swears not to lunch",
+          "facts": {
+            "prompting_cause": true
+          },
+          "evidence": {
+            "prompting_cause": "لو دعي إلى غداء فحلف لا يتغدى"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f001",
+      "situations": [
+        {
+          "label": "oath to report wrongs to the qadi, the circumstances pointing to his office",
+          "facts": {
+            "prompting_cause": true
+          },
+          "evidence": {
+            "prompting_cause": "وإن كان السبب أو القرائن تقتضي حالة الولاية اختص بها"
+          }
+        },
+        {
+          "label": "the same oath with no indication from the circumstances",
+          "facts": {
+            "prompting_cause": false
+          },
+          "evidence": {
+            "prompting_cause": "وإن لم يكن دلالة بحال فهل يبر برفعه إليه بعد العزل"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f009",
+      "situations": [
+        {
+          "label": "'if you wear a garment', intending a red one",
+          "facts": {
+            "excepts_from_text": false
+          },
+          "evidence": {
+            "excepts_from_text": "إن لبست ثوبا فأنت طالق، وقال أردت أحمر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f000",
+      "situations": [
+        {
+          "label": "a dhimmī wounded who becomes Muslim and dies of the wound",
+          "facts": {
+            "guaranteed_at_injury": true,
+            "guaranteed_at_spread": true
+          },
+          "evidence": {
+            "guaranteed_at_injury": "لو جرح ذميا",
+            "guaranteed_at_spread": "فأسلم ثم مات"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f003",
+      "situations": [
+        {
+          "label": "both hands of a slave cut off, the wound spreads, value falls before death",
+          "facts": {
+            "guaranteed_at_injury": true,
+            "guaranteed_at_spread": true
+          },
+          "evidence": {
+            "guaranteed_at_injury": "لو قطع يدي عبد وقيمته ألفان",
+            "guaranteed_at_spread": "ثم سرت إلى نفسه ومات وقيمته ألف"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q130.f001",
+      "situations": [
+        {
+          "label": "taking zakat while owning a house and a needed servant",
+          "facts": {
+            "needed_q130": true
+          },
+          "evidence": {
+            "needed_q130": "عنده جارية تساوي مائة دينار يحتاج إليها للخدمة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q130.f003",
+      "situations": [
+        {
+          "label": "bankrupt's house and needed servant",
+          "facts": {
+            "needed_q130": true
+          },
+          "evidence": {
+            "needed_q130": "وأما الخادم فلا يباع عليه إذا كان محتاجا إليه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q130.f006",
+      "situations": [
+        {
+          "label": "selling one's house to maintain kin",
+          "facts": {
+            "needed_q130": true
+          },
+          "evidence": {
+            "needed_q130": "لا بد له من مسكن"
           }
         }
       ]

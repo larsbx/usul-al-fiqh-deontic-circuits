@@ -49,6 +49,27 @@ def qaida_records(work: dict, witness: str, method: str, tag: str, u: Unit) -> l
     return [_qaida(work, witness, method, qid, tag, u)] + furu
 
 
+def with_recovered(records: list[dict], recovered: list[dict]) -> list[dict]:
+    """Recovered opening furūʿ (``corpus/segmentation/<witness>-opening.json``) placed after their
+    qāʿida's own .f000 (or the qāʿida, when it has none), each counted in its furu_count. No
+    existing id moves."""
+    extra: dict[str, list[dict]] = {}
+    for r in recovered:
+        extra.setdefault(r["qaida"], []).append(r)
+    opened = {r["qaida"] for r in records if r["id"].endswith(".f000")}
+    out: list[dict] = []
+    for r in records:
+        q = r["id"] if r["record_type"] == "qaida" else r.get("qaida")
+        if r["record_type"] == "qaida" and q in extra:
+            r = {**r, "furu_count": r["furu_count"] + len(extra[q])}
+        out.append(r)
+        if q in extra and r["id"] == (f"{q}.f000" if q in opened else q):
+            out += extra.pop(q)
+    if extra:
+        raise ValueError(f"recovered furūʿ without their qāʿida: {sorted(extra)}")
+    return out
+
+
 def _qaida(work: dict, witness: str, method: str, qid: str, tag: str, u: Unit) -> dict:
     return {
         "id": qid,

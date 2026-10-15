@@ -17,7 +17,7 @@ Severity:
 | PR-03 | A | One Arabic word, several technical senses, one key: ṣaḥīḥ (valid act / ḥadīth grade / sound farq), ḍaʿīf, ʿilla (ratio legis / ḥadīth defect), ḥukm (ruling / judge's verdict), sharṭ (condition / stipulation, F28); and the transliteration homograph ghusl / ghasl | 6 senses | partly closed: ṣaḥīḥ (act / ḥadīth / view / farq), ḍaʿīf (ḥadīth / view / farq) and ʿilla (ruling / ḥadīth) are sense-keyed terms, and terms sharing an `ar` must declare distinct senses (tested). sharṭ (of a thing) / al-shurūṭ fīhā (a party's stipulation, F28) / al-taʿlīq likewise (guard «condition», 50 sites). The «void» of an ʿilla is al-ibṭāl or al-qadḥ and the «sound» qiyās al-qiyās al-ṣaḥīḥ, each a term (PR-23). ḥukm (the Lawgiver's) / ḥukm al-ḥākim (a judge's verdict, Ibn Rajab Q68), with a guard on «ruling» beside «judge». Closed |
 | PR-04 | A | Furūq resting on a naṣṣ (basis `nass`) do not cite it from the foundation | 17 items (F11 … F165), plus the 2 ḍaʿīf ḥadīth of F20, F92 | closed: 12 items cite 5 āyāt, 8 ḥadīth and 1 athar; 6 recorded as «unspecified» by his own wording; al-Saʿdī's «لم يصح» agrees with al-Albānī on both rejected ḥadīth |
 | PR-05 | A | The ḥadīth dalīls of the uṣūl records (`irwa_join.json`) are graded but not pinned to a primary collection | 13 links | closed: all 13 links rest on 13 foundation ḥadīth, each verbatim under its number in a primary collection and graded from al-Irwāʾ (one ḍaʿīf report in two wordings; «الصلح جائز» ḥasan apart from «المسلمون على شروطهم» ṣaḥīḥ); a test resolves every link |
-| PR-06 | B | CI never runs the verbatim checks: every one skips when the witness is not cached, so textual fidelity is enforced only locally | all verbatim tests | open |
+| PR-06 | B | CI never runs the verbatim checks: every one skips when the witness is not cached, so textual fidelity is enforced only locally | all verbatim tests | partly closed: mandatory fail-closed replay of the reconciliation witness subset; remaining sources explicitly excluded, see PR-06 log |
 | PR-07 | B | Excerpts that stop just before a qualifier («إلا», «لكن», «بخلاف» …), so the quote reads as unqualified | F126, F127; found by its guard: glossary `amana`, dossier `abstention_possible_condition`, and Ibn Taymiyya's «اعتقاد الرجحان» (glossary, dossier, IQ-21) | closed: quotes extended; guard over furūq, tanāquḍ, glossary and dossier |
 | PR-08 | B | Ḥadīth numbers are given without their numbering scheme (Abū Dāwūd 206 in Muḥyī al-Dīn's edition; al-Irwāʾ cites «رقم ٢٠٠ من الصحيح», al-Albānī's own) | 4 sources | closed: `numbering` required on every source and on al-Albānī's entry |
 | PR-09 | B | Lean inductives name fiqh concepts in English with no Arabic anchor in their doc comment | 52 of 71 | open |
@@ -39,6 +39,8 @@ Severity:
 | PR-26 | A | The al-Irwāʾ reader kept a header only if it continued the run greedily, so one misnumbered header («(٣٣٨)» printed for 238) made it drop every entry from 238 to 338, and al-Albānī's verdicts there (e.g. 276, «من عمل عملا ليس عليه أمرنا فهو رد») read as absent. Found while closing PR-05 | 145 entries | closed: the reader takes the longest increasing run of headers; coverage re-pinned (2121 found, 562 missing, of which only 238 and 2555 are present but unread) |
 | PR-27 | A | Merging main brought ~400 new annotations written before the term guards existed; 246 English sites named no term, and some mistranslated | 246 fields | closed: each named from its source word (four parallel passes, applied centrally, every guard green); main's independent readings of Ibn Rajab 3, 9, 14, 15 (tranches 7–8) supersede this branch's tranche 6 |
 | PR-28 | A | Two readings of Ibn Rajab 3, 9, 14 and 15 coexisted after the merge, and on 14.f000 the M8 reading bound each man to the ghusl where the madhhab binds neither | 4 qawāʿid, 1 farʿ | closed: Q3, Q9, Q15 proved equivalent; Q14 joined (jamʿ) by Ibn Rajab's own ground «متيقن للطهارة شاك في الحدث» (`attachOnCertainty`, conservative), 14.f000 revisited onto the madhhab the ledger's taṣḥīḥ and jazm already held |
+| PR-29 | B | Merging Lane A round 4 (PR #71) added its encoders to the routing index, which displaced 40 lexical proposals across 24 R2 sample units, each needing a semantic review | 24 units, 40 proposals | closed: each new proposal reviewed `not_established` (the source states none of the encoder's facts), the displaced reviews retired with the proposal |
+| PR-30 | A | The headed segmenter drops a qāʿida's first farʿ when it stands in a paragraph no record starts in, mostly the first «منها» inline after the statement, so 10 Ibn Rajab furūʿ had no record (found by PR #28) | 10 furūʿ, 10 qawāʿid | closed: recovered as candidate records (`corpus/segmentation/openiti-rajab-shamela21730-opening.json`, verified on the locked witness), ids unchanged; the 8 in annotated qawāʿid annotated (`rajab_m8_pr30_furu.json`, 3 ledger entries), q136 and q142 on the worklist |
 | PR-14 | A | The bulk «impurity → najāsa» replacement could mislabel ḥadath | 27 fields | closed `021d1d8`: each reviewed; 18.f015 and 159.f007 corrected from source |
 
 ## PR-02 families (English gloss → terms it conflates)
@@ -184,3 +186,82 @@ The tarjīḥ test also learned «ترجيح». This branch's tranche 6 is dropp
 
 The ledger already held, for 14.f000, al-Inṣāf «على الصحيح من المذهب», al-Furūʿ «عن الأصح» and Sharḥ al-Muntahā «فلا غسل على واحد». All three give neither man the ghusl, and Sharḥ al-Muntahā adds that neither follows the other in prayer, which is the joint ruling. Yet the entry had no jamʿ, and the M8 reading bound each. The jamʿ `attachOnCertainty` takes the first riwāya's own ground, «كل واحد منهما متيقن للطهارة شاك في الحدث», which is Q15. It is conservative over `attachTo` and departs only on the harmless case, only to «neither» (proved). `reconcile.check` confirms it lands on the prevailing side. The divorce and slave-women cases keep their abstention.
 
+
+**PR-06 (2026-10-14).** The required source gate is now `make source-verify-fetch`,
+run before the corpus tests in the Formalization pipeline. It derives its witness
+subset from every active reconciliation evidence reference, reuses
+`corpus/registry.json`, `corpus/lock.json`, `texts.restore` and `fetch.fetch`, and
+never writes a lock. The URL, complete byte count and SHA-256 must agree before
+any quote is checked; missing files, failed downloads, LFS pointers and changed
+bytes fail. The locked-source pattern follows the still-open PR #51's
+`verify_evidence` implementation, without importing that PR's interpretation or
+grading changes.
+
+On the implementation base `2224f2e58a5c08fe9878fa55569f30755b9878f4`, the subset
+contains **14 witnesses and all 531 active reconciliation evidence items**. All
+paged `ref`/`excerpt_ar` pairs in corpus JSON using those same witnesses are also
+checked: **698 field occurrences verified**, including copies in contribution
+shards. These are counts of fields, not distinct scholarly arguments. The report
+lists **565 excluded field occurrences** individually. Non-page anchors and
+other witnesses are outside this subset even if a developer happens to cache
+them. JSONL records, other quotation field shapes and the separate foundation
+āya/ḥadīth-number/verdict tests remain outside this report's coverage. PR-06 is
+therefore **partly closed**, not a claim of complete corpus fidelity.
+
+Replay exposed two existing source-field defects in the interpretive-question
+register. IQ-03's first established source quoted «للحاكم أن يعرض للمقر بحد …»
+with `openiti-insaf-shamela21609/v12:p008`; the complete unchanged quotation ends
+on **v12:p009** (OpenITI's page marker closes the preceding page). IQ-06's first
+established source used `openiti-kawkab-shamela12019/v04:p442` and
+«لا ضرر ولا ضرار ... وقد علل أصحابنا بذلك في مسائل كثيرة». The ellipsis omitted
+the intervening variant wording. Its quotation now includes that intervening
+text from the locked witness, with closing page **v04:p443**. Only these refs and
+the latter excerpt changed; question status, relations, notes and proposed
+interpretations did not. The prior values are preserved here for audit.
+
+The machine report `.cache/source-verification.json` separates `verified`,
+`failed` and `excluded` checks, names every source and its pin, and binds each
+checked excerpt by SHA-256. CI retains it with the pytest JUnit report; `-rs`
+prints reasons for the other tests' unavailable-witness skips. Required
+reconciliation quote and witness-integrity tests now fail instead of skipping.
+No full witness is published by this gate, and the registry's cache-only and
+public-domain storage policy is unchanged.
+
+Quotation matching uses the repository's Arabic-letter policy (not byte-for-byte
+punctuation or vocalization identity), and the declared **ending page**. All
+occurrences are examined on that page, so a repeated quotation cannot borrow a
+qualifier or location from its first occurrence. The existing immediate-qualifier
+pattern is applied after stripping page/paragraph markup, including across page
+breaks. This is a bounded textual guard, not proof that every legally relevant
+qualification in surrounding prose has been captured. Negative controls include
+missing sources/pins, altered bytes, LFS pointers, wrong URLs, bad quotes/pages,
+empty evidence, truncated qualifiers, network failure and lock immutability.
+Source fidelity, Lean/formal correctness, and independent scholarly validation
+remain separate; this gate promotes no candidate reading or legal ruling.
+
+
+Cold-cache CI exposed a selector omission: the base ledger alone omitted the
+Ibn Rajab witness introduced by a contribution shard. Selection now uses
+`reconcile.load`, the same base-plus-shards loader as the tests and generators;
+a shard-only missing-witness regression prevents this omission. The original
+13-witness count described the base ledger, not the complete active ledger.
+
+The enlarged replay also corrected IQ-09's second established source from
+`openiti-rajab-shamela21730/v01:p348` to **v01:p350**, and IQ-20's first established
+source from `v01:p338` to **v01:p340**, with their quotations unchanged. Q47's
+kitāba excerpt in `dossier/refinements.json` (`defective_compensation`) and
+`worklists/rajab_m8_tranche3_plan.json` stopped at «واتفق الأصحاب على ذلك», before
+«لكن المتأخرون زعموا…». That original excerpt has SHA-256
+`6a68c869a88198a2e1645ac7df34c61db37dac5130033aba941ed07fbf5c2fb9` on the base
+commit above. Both source bundles now include the full continuation through
+«بل هو عنده باطل», as two contiguous excerpts (277 and 154 characters), each
+within the existing 400-character policy. Competing characterizations remain
+unadjudicated. The case annotations, contribution hashes, record hashes,
+encoders and legal outcomes are unchanged; no frozen case receipt is re-pinned.
+The generated dossier page is refreshed from these source fields.
+
+**PR-29, the round-4 merge.** Round 4's encoders entered the lexical routing index, so `typed-routing` now draws a different first five for 24 of the R2 sample's units. Every proposal still has a review. The 40 new ones are `not_established`: the bank holds none of their facts in those units, and none is filled from silence. On m01051, «ينظر ما كان بينه حيث حلف» points to the oath's occasion, which is Ibn Rajab 124's question, but the occasion itself is not stated.
+
+**PR-30, the furūʿ the segmenter dropped.** PR #28 re-segmented Ibn Rajab's opening examples on its own scheme; main had meanwhile segmented them as `.f000` (PR #29), with annotations resting on those ids. Main's scheme is kept. Of #28's 87 recovered records, 77 lie in a paragraph that one of main's records starts in (sometimes two «منها» in one `.f000`, which loses no text). The other 10 are furūʿ main drops: q018 «من عليه حدثان أصغر وأكبر», q032 «المبيع إذا استثنى البائع منفعته», q078, q095, q121, q122, q128, q136 and q142 as `.f000`, and q008 «المريض إذا عجز في الصلاة عن وضع وجهه», whose qāʿida already has a `.f000`, as `.f000_2`. `_segment` adds them from the receipt only after finding each verbatim in the locked witness at its qāʿida.
+
+Eight sit in annotated qawāʿid and are annotated in `rajab_m8_pr30_furu.json`, each madhhab side checked in al-Inṣāf or al-Muntahā. q018, q032 and q095 match the madhhab. q078 is derivable. q121, q122 and q128 are off it (al-Inṣāf «وهو المذهب» for al-Qāḍī, «وهذا المذهب. عليه أكثر الأصحاب» for the qarāba by lineage, «وهو المذهب» for Ibn Ḥāmid), each with a ledger entry resolving by tarjīḥ against the reading. q008's sick man is Ibn Rajab's second qism, a part obliged only as a follower («إنما وجب تبعا»); `partial_capability` reads only pure means, so it is `missing_rule` (`rule:follower_part_not_obliged`) rather than forced. The same paragraph's third-qism examples («كصوم بعض اليوم», «كعتق بعض الرقبة») are still unsegmented. The new cases shift the routing index, so four R2 sample units draw a new proposal each, reviewed `not_established` as in PR-29.

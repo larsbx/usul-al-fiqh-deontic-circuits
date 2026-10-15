@@ -226,6 +226,25 @@ All six resolve by tarjīḥ against their readings and join the worklist. 1.f00
 | 59.f005 | the question is the grade order itself (qiyās above jazm) | **open: RQ-03** |
 | 53.f009 | the subject of al-Furūʿ's «ولا يتصرف» | **open: RQ-04** |
 
+**Lane A, round 4** added 21 contradictions and 38 evidence items: 17 residues, 2 resolved for the reading and 2 tawaqquf. No jamʿ was attempted. With main merged (rajab-q127's three entries) the ledger stands at 234 entries and 569 active evidence items, with 19 jamʿ, 1 naskh, 200 tarjīḥ (135 residues) and 14 tawaqquf. The round's register questions went through the bank's procedure first (invariant 9):
+
+| Farʿ / qāʿida | Candidate farq, or the procedure applied | Outcome |
+|---|---|---|
+| 125.f007 | the only contrary is not a position within the madhhab | derivable |
+| 127 | annotated on main (rajab-q127) as ikhtilāf on the same principle: the positions dispute the legal characterization of one scenario | a16's duplicate dropped; candidate farqs: the placer as the pusher (f006, «جعلا له كالدافع»); qawad for the killer alone (f005) |
+| 121 | the madhhab includes the instance where the sharʿ or the language names it, «تقديما للشرع واللغة»; the reading's side of the third class is an unmarked choice | farq candidate; **RQ-02** |
+| 124.f003 | Sharḥ al-Muntahā v03:p103, «ولأنها سبب الطلاق وسبب الحكم لا يجوز إخراجه من العموم بالتخصيص» (a cognate) | farq candidate (`addressee_is_occasion`) |
+| 126.f004, f005 | the text's own farq: an instance absent from intent against one present but unknown | farq candidate |
+| 128 | the state at the spread where the victim's status rises, at the injury where only the value falls; Ibn Rajab names no side | farq candidate; **RQ-02** |
+| 128.f003 | the witness's «لا» against the argument it opens | **RQ-05** |
+| 129 | «القود» extended to every non-liability condition (game, f006); `aqilaBears` grounded in al-Āmidī inside a farʿ | **RQ-06** |
+| 120.f001 | «المذهب عند المتأخرين» against «عند المتقدمين»: tashih against tashih, the Iqnāʿ's jazm breaks the tie | the later madhhab, as annotated |
+| 119.f001 | Ibn Rajab's takhrīj from Ibn ʿAqīl's ground is a position (`takhrij`) against al-Inṣāf's «بلا نزاع» | ikhtilāf stands, on the madhhab side |
+| 121.f007 | «بلا نزاع» is the aṣḥāb at large | `jazm`, as graded |
+| 121.f005, 128.f006 | a cognate or a reference back («الخلاف المتقدم») grades `qiyas` | as graded |
+| 128.f004 | al-Targhīb's derivation is a Ḥanbalī position against Ibn Rajab's «بالاتفاق» | ikhtilāf stands |
+| 119.f003, 124.f001 | the output is the same on either value of the unstated fact | nothing turns on it |
+
 **Left as residues, for want of a cited farq:**
 
 | Encoder | Residues / cases | Why no jamʿ |
@@ -240,3 +259,22 @@ All six resolve by tarjīḥ against their readings and join the worklist. 1.f00
 Everything here has status `candidate`. The grades are a reading of the annotated paragraph. A resolution is "derivable under the encoding", never a fatwā.
 
 The independent [lane-D acceptance audit](lane-d-acceptance-audit-2026-10-11.md) records the scope of all six discrepancies. Two qualified passages are preserved in `corpus/review/lane_d/qualified_evidence.json` outside graded reconciliation. The six outcomes remain candidates; textual applicability rationales require human review and are not proved by Lean.
+
+### Review audit, 2026-10-10
+
+The [follow-up audit](reconciliation-review-audit-2026-10-10.md) pins the original
+48-case review queue to PR #47's merge and records each original annotation, Arabic
+record, imported evidence and unresolved scholarly obligation in
+`corpus/reconciliation/review-audit-2026-10-10.json`. It does not promote later
+preferences into the original annotations.
+
+In 52.f001, denial of ijmāl is only indirect support for the encoded universal
+generality. Two imported grades therefore change from jazm to takhrīj; all excerpts
+and competing holders remain. At the audit's base the review queue fell from 54 to 53, with
+144 entries, 15 jamʿ, 121 tarjīḥ, 8 tawaqquf and 61 residues unchanged.
+The English subject/object error in 159.f035 is corrected without changing its
+facts or two riwāyas. Drafting no longer treats an author's own aẓhar as taṣḥīḥ.
+
+The audit's own locked-replay command was superseded on merge by `make source-verify`
+(`usul_corpus.source_verify`, PR-06), which replays every excerpt of the active ledger and its
+shards against complete locked witnesses and fails closed.

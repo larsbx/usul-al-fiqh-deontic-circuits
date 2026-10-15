@@ -154,8 +154,7 @@ def table_lean(foundation: dict, glossary: dict, furuq_items: list[dict] = ()) -
             lines += [f"-- {h['id']}: named not sound by al-Saʿdī; {h['albani']['work']} {h['albani']['number']}",
                       f"#guard Usul.Seam.admitted ⟨.nass, .{h['albani']['verdict']}⟩ == false"]
         if h["id"] in cited:
-            sources = ", ".join(f"{s['work']} {s['number']}" for s in h["sources"])
-            lines += [f"-- {h['id']}: {sources}; Irwāʾ {h['albani']['number']}",
+            lines += [f"-- {h['id']}: {', '.join(s['work'] + ' ' + str(s['number']) for s in h['sources'])}; Irwāʾ {h['albani']['number']}",
                       f"#guard Usul.Seam.admitted ⟨.nass, .{h['albani']['verdict']}⟩ == true"]
     for t in glossary["terms"]:
         for name, v in t.get("rulings", {}).items():

@@ -319,7 +319,11 @@ import Usul
 #check @Usul.Readings.RajabA2.asTree
 #check @Usul.Readings.RajabA5.errorActorLiable
 #check @Usul.Reconcile.prevail
+#check @Usul.Readings.RajabA14.urfGeneralCovers
+#check @Usul.Readings.RajabA15.measuredAtInjury
 #check @Usul.Readings.RajabA3.disposalStands
+#check @Usul.Readings.RajabA16.hitStateGoverns
+#check @Usul.Readings.RajabA16.aqilaBears
 #check @Usul.Process.status
 #check @Usul.Process.analogy_never_outranks_text
 #check @Usul.Process.order_is_resort

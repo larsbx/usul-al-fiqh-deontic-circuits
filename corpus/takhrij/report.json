@@ -1,17 +1,17 @@
 {
- "total": 801,
+ "total": 889,
  "classes": {
-  "derivable": 324,
-  "genuine_ikhtilaf": 433,
+  "derivable": 356,
+  "genuine_ikhtilaf": 488,
   "missing_fact": 3,
-  "missing_rule": 40,
+  "missing_rule": 41,
   "segmentation_error": 1
  },
- "coverage": 0.946,
- "madhhab_coverage": 0.704,
+ "coverage": 0.95,
+ "madhhab_coverage": 0.705,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 239,
- "gaps_open": 43,
+ "ikhtilaf_matching_madhhab": 270,
+ "gaps_open": 44,
  "revisited": 38,
  "revisit_queue": [],
  "per_encoder": {
@@ -53,7 +53,7 @@
   },
   "tadakhul": {
    "derivable": 4,
-   "genuine_ikhtilaf": 11
+   "genuine_ikhtilaf": 12
   },
   "trust_loss": {
    "derivable": 4,
@@ -61,7 +61,8 @@
   },
   "partial_capability": {
    "derivable": 3,
-   "genuine_ikhtilaf": 2
+   "genuine_ikhtilaf": 2,
+   "missing_rule": 1
   },
   "substitute": {
    "derivable": 2,
@@ -215,7 +216,8 @@
    "missing_rule": 1
   },
   "benefit_exception": {
-   "derivable": 6
+   "derivable": 6,
+   "genuine_ikhtilaf": 1
   },
   "implicit_exception": {
    "derivable": 4,
@@ -432,6 +434,64 @@
    "derivable": 3,
    "genuine_ikhtilaf": 3
   },
+  "specific_singled_out": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 3
+  },
+  "takes_only_by_special": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 2
+  },
+  "entitlement_multiplies": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 1
+  },
+  "double_kinship_preferred": {
+   "genuine_ikhtilaf": 4
+  },
+  "custom_restricts_general": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 2
+  },
+  "cause_restricts_general": {
+   "genuine_ikhtilaf": 4
+  },
+  "urf_specialises_general": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 9
+  },
+  "shar_specialises_general": {
+   "genuine_ikhtilaf": 5
+  },
+  "unintended_instance_covered": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 6
+  },
+  "intention_shapes_wording": {
+   "derivable": 10,
+   "genuine_ikhtilaf": 5
+  },
+  "spread_follows_injury": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 3
+  },
+  "injury_state_measures": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 3
+  },
+  "hit_state_governs": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 4
+  },
+  "aqila_bears_across_change": {
+   "genuine_ikhtilaf": 1
+  },
+  "needed_item_is_surplus": {
+   "derivable": 6
+  },
+  "budh_capacity_is_wealth": {
+   "derivable": 1
+  },
   "nafaqa_stipulated_in_contract": {
    "derivable": 3,
    "genuine_ikhtilaf": 1
@@ -459,7 +519,7 @@
    "genuine_ikhtilaf": 7
   },
   "rescue_loss_liability": {
-   "derivable": 8,
+   "derivable": 9,
    "genuine_ikhtilaf": 1
   },
   "attached_takeover_at_value": {
@@ -487,7 +547,7 @@
   },
   "error_actor_liable": {
    "derivable": 3,
-   "genuine_ikhtilaf": 9
+   "genuine_ikhtilaf": 10
   },
   "dispose_without_judge": {
    "derivable": 1,

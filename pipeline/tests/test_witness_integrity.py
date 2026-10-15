@@ -8,8 +8,10 @@ from pathlib import Path
 import pytest
 
 from usul_corpus.__main__ import CACHE
+from usul_corpus.source_verify import required_witnesses
 
 ROOT = Path(__file__).parents[2]
+REQUIRED = required_witnesses(ROOT / "corpus")
 LOCK = json.loads((ROOT / "corpus/lock.json").read_text(encoding="utf-8"))["witnesses"]
 FORMAT = {w["id"]: w.get("format", "text") for work in json.loads((ROOT / "corpus/registry.json").read_text())["works"]
           for w in work["witnesses"]}
@@ -20,7 +22,9 @@ def test_cached_witness_matches_its_pin(wid):
     ext = {"doc": "doc", "pdf": "pdf"}.get(FORMAT.get(wid, "text"), "txt")
     path = CACHE / f"{wid}.{ext}"
     if not path.exists():
-        pytest.skip(f"{wid} not cached")
+        if wid in REQUIRED:
+            pytest.fail(f"required witness {wid} not cached; run make source-verify-fetch")
+        pytest.skip(f"excluded from required source subset: {wid} not cached")
     assert hashlib.sha256(path.read_bytes()).hexdigest() == LOCK[wid]["sha256"]
 
 

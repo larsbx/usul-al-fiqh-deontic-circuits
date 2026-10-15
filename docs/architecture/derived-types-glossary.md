@@ -67,3 +67,28 @@ Next: introduce typed discharge plans; wrap bounded taking under Q46 with eviden
 of evident cause and refusal; add source-admission certificates separately from
 mathematical certificates. Nominal monetary/temporal units require new domain
 decisions and should not be inferred from today's unlabelled Nat representations.
+
+## Second layer: discharge and bounded taking
+
+| Source vocabulary | Derived type | Certificate |
+|---|---|---|
+| tadākhul / one performance suffices, Q41 | `DischargePlan r owed` | Every owed act has a performed witness related by r. |
+| same kind and same purpose, Q41 | `worshipPlan` | Coverage under the existing Kulliyyat.Merges reading. |
+| evident cause / refusal / amount of the right, Q46 | `TakingPermission ctx` | Evident cause, refusal, and amount ≤ claim. |
+
+Q41: `src:archive-pdf1995-tess/v01:p093` and
+`sadi.qawaid_jamia.archive_pdf1995.q041`. The generic plan is directional coverage;
+it claims neither minimum cardinality nor equivalence. The worship constructor
+uses exactly the existing same-kind/same-purpose relation. Ibn Rajab's q18
+qualifications are not silently added or discarded.
+
+Q46: `sadi.qawaid_jamia.archive_pdf1995.q046`,
+`src:archive-pdf1995#q046`. The committed OCR excerpt additionally mentions
+inability to obtain permission. The existing `mayTake` formalizes the refusal
+branch only; the new type preserves that scope and does not claim to cover the
+additional textual branch. Amounts remain the current unlabelled Nat units.
+
+`certifyTaking_complete` proves that certificate availability equals the existing
+Boolean evaluator. A hidden cause cannot inhabit TakingPermission, and no
+certificate can carry an amount exceeding the claim. Context truth and source
+admission remain external obligations, distinct from these kernel certificates.

@@ -380,6 +380,48 @@
           "locator": "src:archive-pdf1995#q058"
         }
       ]
+    },
+    {
+      "type": "DischargePlan",
+      "source_term": "tadakhul",
+      "arabic": "التداخل",
+      "scope": "Directional coverage under a supplied relation; no equivalence or minimum cardinality claim.",
+      "refs": [
+        {
+          "ref": "src:archive-pdf1995-tess/v01:p093",
+          "note": "Al-Saʿdī Q41; same kind and purpose."
+        },
+        {
+          "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018",
+          "note": "Additional qualifications remain specific to this reading."
+        }
+      ],
+      "rules": [
+        {
+          "number": 41,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q041",
+          "locator": "src:archive-pdf1995#q041"
+        }
+      ]
+    },
+    {
+      "type": "TakingPermission",
+      "source_term": "Q46_evident_cause_refusal_bounded_taking",
+      "arabic": "سبب الحق الظاهر والأخذ بقدر الحق عند الامتناع",
+      "scope": "Derived compound name. Certifies the existing refusal branch only; the OCR witness also mentions inability to obtain permission. Supplied context facts and Nat amount units are not independently established.",
+      "refs": [
+        {
+          "ref": "src:archive-pdf1995#q046",
+          "note": "Committed OCR witness, candidate."
+        }
+      ],
+      "rules": [
+        {
+          "number": 46,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q046",
+          "locator": "src:archive-pdf1995#q046"
+        }
+      ]
     }
   ]
 }

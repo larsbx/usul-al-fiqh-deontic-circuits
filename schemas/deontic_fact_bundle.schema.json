@@ -29,6 +29,10 @@
       "type": "string",
       "pattern": "^[a-z][a-z0-9_]*$"
     },
+    "non_empty_string": {
+      "type": "string",
+      "minLength": 1
+    },
     "target": {
       "type": "object",
       "required": ["kind", "id"],
@@ -45,25 +49,153 @@
       "properties": {
         "kind": {"const": "affect_root"},
         "id": {"$ref": "#/$defs/canonical_id"},
-        "display": {"type": "string", "minLength": 1},
+        "display": {"$ref": "#/$defs/non_empty_string"},
         "arabic_root": {"type": "string"},
         "gloss": {"type": "string"},
-        "cluster": {"type": "string", "minLength": 1},
+        "cluster": {"$ref": "#/$defs/non_empty_string"},
         "aliases": {"type": "array", "items": {"type": "string"}},
         "verse_refs": {"type": "array", "items": {"type": "string"}}
       }
     },
     "warrant": {
+      "oneOf": [
+        {"$ref": "#/$defs/quranic_warrant"},
+        {"$ref": "#/$defs/lexical_warrant"},
+        {"$ref": "#/$defs/behavioral_warrant"},
+        {"$ref": "#/$defs/somatic_warrant"},
+        {"$ref": "#/$defs/tafsir_warrant"},
+        {"$ref": "#/$defs/inferred_warrant"},
+        {"$ref": "#/$defs/commentary_warrant"}
+      ]
+    },
+    "quranic_warrant": {
       "type": "object",
-      "required": ["kind", "id", "tier", "source_kind", "status"],
+      "required": ["kind", "id", "tier", "source_kind", "status", "locator", "reference"],
       "additionalProperties": false,
       "properties": {
         "kind": {"const": "warrant"},
         "id": {"$ref": "#/$defs/canonical_id"},
         "tier": {"enum": [1, 2, 3, 4]},
-        "source_kind": {"enum": ["quranic", "lexical", "behavioral", "somatic", "tafsir", "inferred", "commentary"]},
+        "source_kind": {"const": "quranic"},
         "status": {"enum": ["candidate", "accepted", "quarantined", "rejected"]},
-        "locator": {"type": "string"},
+        "locator": {"$ref": "#/$defs/non_empty_string"},
+        "reference": {"$ref": "#/$defs/non_empty_string"},
+        "note": {"type": "string"},
+        "quarantine_reason": {"type": "string"}
+      }
+    },
+    "lexical_warrant": {
+      "type": "object",
+      "required": ["kind", "id", "tier", "source_kind", "status", "locator", "source", "lemma"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "warrant"},
+        "id": {"$ref": "#/$defs/canonical_id"},
+        "tier": {"enum": [1, 2, 3, 4]},
+        "source_kind": {"const": "lexical"},
+        "status": {"enum": ["candidate", "accepted", "quarantined", "rejected"]},
+        "locator": {"$ref": "#/$defs/non_empty_string"},
+        "source": {"$ref": "#/$defs/non_empty_string"},
+        "lemma": {"$ref": "#/$defs/non_empty_string"},
+        "note": {"type": "string"},
+        "quarantine_reason": {"type": "string"}
+      }
+    },
+    "behavioral_warrant": {
+      "type": "object",
+      "required": ["kind", "id", "tier", "source_kind", "status", "locator", "verse_range", "target", "signatures"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "warrant"},
+        "id": {"$ref": "#/$defs/canonical_id"},
+        "tier": {"enum": [1, 2, 3, 4]},
+        "source_kind": {"const": "behavioral"},
+        "status": {"enum": ["candidate", "accepted", "quarantined", "rejected"]},
+        "locator": {"$ref": "#/$defs/non_empty_string"},
+        "verse_range": {"$ref": "#/$defs/non_empty_string"},
+        "target": {"$ref": "#/$defs/target"},
+        "signatures": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/canonical_id"}
+        },
+        "note": {"type": "string"},
+        "quarantine_reason": {"type": "string"}
+      }
+    },
+    "somatic_warrant": {
+      "type": "object",
+      "required": ["kind", "id", "tier", "source_kind", "status", "locator", "body_part", "state", "verses"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "warrant"},
+        "id": {"$ref": "#/$defs/canonical_id"},
+        "tier": {"enum": [1, 2, 3, 4]},
+        "source_kind": {"const": "somatic"},
+        "status": {"enum": ["candidate", "accepted", "quarantined", "rejected"]},
+        "locator": {"$ref": "#/$defs/non_empty_string"},
+        "body_part": {"$ref": "#/$defs/non_empty_string"},
+        "state": {"$ref": "#/$defs/non_empty_string"},
+        "verses": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "note": {"type": "string"},
+        "quarantine_reason": {"type": "string"}
+      }
+    },
+    "tafsir_warrant": {
+      "type": "object",
+      "required": ["kind", "id", "tier", "source_kind", "status", "locator", "source", "reference"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "warrant"},
+        "id": {"$ref": "#/$defs/canonical_id"},
+        "tier": {"enum": [1, 2, 3, 4]},
+        "source_kind": {"const": "tafsir"},
+        "status": {"enum": ["candidate", "accepted", "quarantined", "rejected"]},
+        "locator": {"$ref": "#/$defs/non_empty_string"},
+        "source": {"$ref": "#/$defs/non_empty_string"},
+        "reference": {"$ref": "#/$defs/non_empty_string"},
+        "note": {"type": "string"},
+        "quarantine_reason": {"type": "string"}
+      }
+    },
+    "inferred_warrant": {
+      "type": "object",
+      "required": ["kind", "id", "tier", "source_kind", "status", "locator", "reason", "dependencies"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "warrant"},
+        "id": {"$ref": "#/$defs/canonical_id"},
+        "tier": {"enum": [1, 2, 3, 4]},
+        "source_kind": {"const": "inferred"},
+        "status": {"enum": ["candidate", "accepted", "quarantined", "rejected"]},
+        "locator": {"$ref": "#/$defs/non_empty_string"},
+        "reason": {"$ref": "#/$defs/non_empty_string"},
+        "dependencies": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/canonical_id"}
+        },
+        "note": {"type": "string"},
+        "quarantine_reason": {"type": "string"}
+      }
+    },
+    "commentary_warrant": {
+      "type": "object",
+      "required": ["kind", "id", "tier", "source_kind", "status", "locator", "author", "work"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "warrant"},
+        "id": {"$ref": "#/$defs/canonical_id"},
+        "tier": {"enum": [1, 2, 3, 4]},
+        "source_kind": {"const": "commentary"},
+        "status": {"enum": ["candidate", "accepted", "quarantined", "rejected"]},
+        "locator": {"$ref": "#/$defs/non_empty_string"},
+        "author": {"$ref": "#/$defs/non_empty_string"},
+        "work": {"$ref": "#/$defs/non_empty_string"},
         "note": {"type": "string"},
         "quarantine_reason": {"type": "string"}
       }
@@ -101,7 +233,7 @@
         "kind": {"const": "hukm_classification"},
         "id": {"$ref": "#/$defs/canonical_id"},
         "target": {"$ref": "#/$defs/target"},
-        "object": {"type": "string", "minLength": 1},
+        "object": {"$ref": "#/$defs/non_empty_string"},
         "hukm": {"enum": ["wajib", "mandub", "mubah", "makruh", "haram", "haram_when_dominant", "haram_when_ibadah_grade"]},
         "condition": {"type": "string"},
         "warrant_id": {"$ref": "#/$defs/canonical_id"}
