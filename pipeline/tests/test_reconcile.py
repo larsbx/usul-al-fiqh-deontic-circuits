@@ -89,6 +89,50 @@ def test_draft_grades_from_the_annotation():
         "tashih", "nass", "zahir", "wajh", "ashab"]
 
 
+def test_author_preference_is_not_automatically_a_madhhab_tashih():
+    for who in ("Ibn Rajab (al-aẓhar)", "one author: azhar", "al-Mughnī (al-ṣawāb)"):
+        assert reconcile.draft_grade(who) == "ashab"
+
+
+def test_non_ijmal_is_only_indirect_support_for_generality():
+    case = next(c for c in CASES if c["far"].endswith("lahham_shamela8526.q052.f001"))
+    entry = next(e for e in LEDGER["entries"] if e["far"] == case["far"])
+    assert entry["grades"] == ["ashab", "wajh"]
+    assert [v["grade"] for v in entry["evidence"]] == ["takhrij", "takhrij", "ashab"]
+    assert reconcile.resolve(case, entry) == ("tarjih", True)
+    assert not reconcile.marked_for_reading(case, entry)
+    assert not case["matches_madhhab"]
+
+
+def _sans_english(case: dict) -> dict:
+    return {**{k: v for k, v in case.items() if k != "note"},
+            "positions": [{k: v for k, v in p.items() if k != "who"} for p in case["positions"]]}
+
+
+def test_review_audit_retains_originals_and_tracks_current_candidates():
+    audit = json.loads((ROOT / "corpus/reconciliation/review-audit-2026-10-10.json").read_text())
+    assert audit["cohort_size"] == len(audit["cases"]) == 48
+    assert len({row["far"] for row in audit["cases"]}) == 48
+    cases = {c["far"]: c for c in CASES}
+    entries = {e["far"]: e for e in LEDGER["entries"]}
+    locks = json.loads((ROOT / "corpus/lock.json").read_text())["witnesses"]
+    for receipt in audit["source_receipts"]:
+        assert all(receipt[k] == locks[receipt["witness"]][k] for k in ("url", "bytes", "sha256"))
+    for row in audit["cases"]:
+        c, e = cases[row["far"]], entries[row["far"]]
+        assert row["scholarly_status"] == "open"
+        assert row["grades"] == e["grades"]
+        assert row["imported_evidence"] == e.get("evidence", [])
+        assert row["current_resolution"] == list(reconcile.resolve(c, e))
+        assert row["current_review_member"] == reconcile.marked_for_reading(c, e)
+        if row["far"].endswith("q159.f035"):
+            assert "a man of unknown lineage commits qadhf" in row["original_annotation"]["note"]
+            assert "the accused person is enslaved" in c["note"]
+        # Later English-only revisions (term guards) touch the note and a position's `who`;
+        # everything the kernel reads is the audited original.
+        assert _sans_english(row["original_annotation"]) == _sans_english(c)
+
+
 def test_imported_evidence_adds_a_graded_holder():
     c = _ikh("x", True, [True, False])
     e = _entry("x", ["ashab", "ashab"])

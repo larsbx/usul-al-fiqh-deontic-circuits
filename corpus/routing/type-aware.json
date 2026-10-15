@@ -38829,7 +38829,7 @@
     "corpus/takhrij/rajab_m8_tranche8_furu.json": "3931bd2b0415488c1f33f27da28d1f164c8355cbd2029d084eac7d374e8f05ee",
     "corpus/takhrij/rajab_m8_tranche9_furu.json": "65d72a6ad2b11ccfee124b7f7ea6449a412ceb430322e62567395335abb6c8e0",
     "corpus/takhrij/report.json": "80b7316d7ed8ddd50b3129f2b609111c1d7de42f54e63d013e6f8c99147cefea",
-    "corpus/takhrij/sadi_furu.json": "56908d9b18679ddcef3dacd3d059781e5ac3478b9f8911d7d1b2a9a3eff42d47",
+    "corpus/takhrij/sadi_furu.json": "5b9b337e35813907c498353636fc88bba3e7bedd2df96ffb988d9748d91cb574",
     "pipeline/usul_corpus/arabic.py": "556b27861a39442ab2313e375edb903a0e5ce41e4b57777c5c2eea91c824001e",
     "pipeline/usul_corpus/encoders/__init__.py": "4a133416eed03eb1397708ac65895cf7802cd91866ab49428cd493a39d35fa11",
     "pipeline/usul_corpus/encoders/concordance.py": "f527d8841df4052aa40649f00d6837888777e02fcbf804832411f581effc3c39",

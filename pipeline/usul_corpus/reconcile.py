@@ -220,7 +220,7 @@ def marked_for_reading(case: dict, entry: dict) -> bool:
 
 
 # Drafting aid for new tranches: a grade proposed from the annotator's `who`, for review.
-_DRAFT = (("tashih", r"madhhab|mashh|ashhar|aṣaḥḥ|ṣaḥīḥ|sahih|aẓhar|azhar"),
+_DRAFT = (("tashih", r"madhhab|mashh|ashhar|aṣaḥḥ|ṣaḥīḥ|sahih"),
           ("nass", r"naṣṣ|nass|manṣūṣ|mansus|riwāya|riwaya|Aḥmad \(|^Aḥmad"),
           ("zahir", r"ẓāhir (of|kalām) Aḥmad|zahir kalam Ahmad|apparent text of Ahmad"),
           ("qiyas", r"qiyās al-madhhab"),
