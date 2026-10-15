@@ -13,17 +13,52 @@ jobs:
   corpus:
     name: Corpus pipeline (pytest + schema validation + vectors)
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # A cold witness cache scrapes al-Albānī's Irwāʾ from Shamela page by page (~40 min); warm runs take minutes.
+    timeout-minutes: 75
+    env:
+      # The tests these name fail where they would otherwise skip (pipeline/tests/conftest.py).
+      USUL_REQUIRE: swipl,islamqa
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
       - run: pip install pytest jsonschema numpy pillow
+      - name: Install SWI-Prolog (routing and fatāwā replays)
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q swi-prolog-nox
+          swipl --version
+      - name: Key the IslamQA answers by their LFS pointer
+        id: answers
+        run: echo "key=islamqa-ar-$(git rev-parse HEAD:data/islamqa/answers/islamqa-ar.jsonl.gz)" >> "$GITHUB_OUTPUT"
+      - name: Restore the IslamQA answers
+        id: answers-cache
+        uses: actions/cache@v4
+        with:
+          path: data/islamqa/answers/islamqa-ar.jsonl.gz
+          key: ${{ steps.answers.outputs.key }}
+      - name: Fetch the IslamQA answers (Git LFS)
+        if: steps.answers-cache.outputs.cache-hit != 'true'
+        run: git lfs pull --include=data/islamqa/answers/islamqa-ar.jsonl.gz
+      # Witness bytes are judged against corpus/lock.json, never trusted from the cache: a stale file is
+      # refetched by source-verify-fetch, and a partial Shamela fetch (.part) resumes on the next run.
+      - name: Restore the witness cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/corpus
+          key: witnesses-${{ github.run_id }}
+          restore-keys: witnesses-
       - name: Replay locked M5 command-schema evidence
         run: cd pipeline && python -m usul_corpus m5-commands --fetch-source
       - name: Verify required locked sources (fail closed)
         run: make source-verify-fetch
+      - name: Save the witness cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/corpus
+          key: witnesses-${{ hashFiles('.cache/corpus/**') }}
       - name: Corpus tests with explicit exclusion report
         if: ${{ !cancelled() }}
         run: cd pipeline && python -m pytest -q -rs --junitxml=../.cache/corpus-tests.xml

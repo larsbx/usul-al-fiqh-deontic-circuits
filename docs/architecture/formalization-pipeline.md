@@ -129,12 +129,22 @@ Each invariant was mutation-checked once: a seeded bug in the spec makes TLC rep
 
 ### Required source replay (PR-06)
 
-`make source-verify-fetch` restores/downloads the reconciliation witness subset
-from the existing registry and checks complete source hashes, Arabic quotations,
+`make source-verify-fetch` restores/downloads the required witnesses (the
+reconciliation subset and every witness of the textual foundation,
+`nusus.witnesses`) from the existing registry and checks complete source hashes, Arabic quotations,
 closing-page locators and immediate qualifier boundaries. `make source-verify`
 runs the same gate without network fetching; `make all` includes it. Neither
 command creates or updates a source lock. A missing required witness is an error,
-including in `test_reconcile.py` and the required witness-integrity tests.
+including in `test_reconcile.py`, `test_nusus.py` and the required witness-integrity tests.
+With `--fetch-source`, a cached file whose bytes differ from its lock (a CI cache
+of an earlier pin) is fetched again; without it, that file fails. CI caches
+`.cache/corpus` across runs, so al-Albānī's Irwāʾ (scraped from Shamela page by
+page) is fetched once, resuming from its `.part` checkpoint if a run stops.
+
+Tests that need SWI-Prolog or the IslamQA answers (Git LFS) take the `swipl` and
+`islamqa_answers` fixtures (`pipeline/tests/conftest.py`): skipped where absent,
+a failure where `USUL_REQUIRE` names them. CI sets `USUL_REQUIRE=swipl,islamqa`,
+installs SWI-Prolog in the corpus job and pulls (then caches) the one LFS file.
 Quotations compare `arabic.quote_key`: Arabic letters plus each standalone
 numeral (any digit script), so a changed or dropped number fails. Page markers and
 footnote anchors (digits glued to the preceding word, `العلماء1`, or `(¬7)`) are markup and
@@ -142,6 +152,6 @@ carry no key.
 
 CI uploads `.cache/source-verification.json` and `.cache/corpus-tests.xml` even on
 failure. Read the verified/failed/excluded coverage and pytest skip reasons;
-green required-subset replay does not certify the excluded sources, foundation
-numbering checks, semantic adequacy, or independent scholarly review. See the
+green required-subset replay does not certify the excluded sources, semantic
+adequacy, or independent scholarly review. See the
 [PR-06 log](../problem-register.md) for scope, source corrections and limitations.

@@ -17,7 +17,7 @@ Severity:
 | PR-03 | A | One Arabic word, several technical senses, one key: ṣaḥīḥ (valid act / ḥadīth grade / sound farq), ḍaʿīf, ʿilla (ratio legis / ḥadīth defect), ḥukm (ruling / judge's verdict), sharṭ (condition / stipulation, F28); and the transliteration homograph ghusl / ghasl | 6 senses | partly closed: ṣaḥīḥ (act / ḥadīth / view / farq), ḍaʿīf (ḥadīth / view / farq) and ʿilla (ruling / ḥadīth) are sense-keyed terms, and terms sharing an `ar` must declare distinct senses (tested). sharṭ (of a thing) / al-shurūṭ fīhā (a party's stipulation, F28) / al-taʿlīq likewise (guard «condition», 50 sites). The «void» of an ʿilla is al-ibṭāl or al-qadḥ and the «sound» qiyās al-qiyās al-ṣaḥīḥ, each a term (PR-23). ḥukm (the Lawgiver's) / ḥukm al-ḥākim (a judge's verdict, Ibn Rajab Q68), with a guard on «ruling» beside «judge». Closed |
 | PR-04 | A | Furūq resting on a naṣṣ (basis `nass`) do not cite it from the foundation | 17 items (F11 … F165), plus the 2 ḍaʿīf ḥadīth of F20, F92 | closed: 12 items cite 5 āyāt, 8 ḥadīth and 1 athar; 6 recorded as «unspecified» by his own wording; al-Saʿdī's «لم يصح» agrees with al-Albānī on both rejected ḥadīth |
 | PR-05 | A | The ḥadīth dalīls of the uṣūl records (`irwa_join.json`) are graded but not pinned to a primary collection | 13 links | closed: all 13 links rest on 13 foundation ḥadīth, each verbatim under its number in a primary collection and graded from al-Irwāʾ (one ḍaʿīf report in two wordings; «الصلح جائز» ḥasan apart from «المسلمون على شروطهم» ṣaḥīḥ); a test resolves every link |
-| PR-06 | B | CI never runs the verbatim checks: every one skips when the witness is not cached, so textual fidelity is enforced only locally | all verbatim tests | partly closed: mandatory fail-closed replay of the reconciliation witness subset; remaining sources explicitly excluded, see PR-06 log |
+| PR-06 | B | CI never runs the verbatim checks: every one skips when the witness is not cached, so textual fidelity is enforced only locally | all verbatim tests | partly closed: mandatory fail-closed replay of the reconciliation and foundation witnesses; remaining sources explicitly excluded, see PR-06 log |
 | PR-07 | B | Excerpts that stop just before a qualifier («إلا», «لكن», «بخلاف» …), so the quote reads as unqualified | F126, F127; found by its guard: glossary `amana`, dossier `abstention_possible_condition`, and Ibn Taymiyya's «اعتقاد الرجحان» (glossary, dossier, IQ-21) | closed: quotes extended; guard over furūq, tanāquḍ, glossary and dossier |
 | PR-08 | B | Ḥadīth numbers are given without their numbering scheme (Abū Dāwūd 206 in Muḥyī al-Dīn's edition; al-Irwāʾ cites «رقم ٢٠٠ من الصحيح», al-Albānī's own) | 4 sources | closed: `numbering` required on every source and on al-Albānī's entry |
 | PR-09 | B | Lean inductives name fiqh concepts in English with no Arabic anchor in their doc comment | 52 of 71 | open |
@@ -228,6 +228,16 @@ prints reasons for the other tests' unavailable-witness skips. Required
 reconciliation quote and witness-integrity tests now fail instead of skipping.
 No full witness is published by this gate, and the registry's cache-only and
 public-domain storage policy is unchanged.
+
+**PR-06, foundation (2026-10-15).** The required set now also holds every witness
+the textual foundation is checked against (`nusus.witnesses`: the Qurʾān, the six
+ḥadīth collections, al-Albānī's works and the pinned al-Irwāʾ), so
+`test_nusus.py`'s āya, ḥadīth-number and verdict replays fail instead of skipping
+when a witness is missing. CI caches the witnesses across runs (each file still
+judged against its lock) and runs the SWI-Prolog routing and fatāwā replays in the
+corpus job, with the IslamQA answers they need; `USUL_REQUIRE` turns their skips
+into failures there. Still outside: JSONL records, other quotation field shapes and
+the witnesses no required check reads.
 
 Quotation matching uses the repository's Arabic-letter policy (not byte-for-byte
 punctuation or vocalization identity), and the declared **ending page**. All
