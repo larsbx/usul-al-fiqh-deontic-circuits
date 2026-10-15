@@ -129,8 +129,8 @@ def test_facts_for_one_case_in_two_files_are_refused(tmp_path):
 
 
 def test_committed_facts_are_one_per_case():
-    cases = fatawa_takhrij.load(CORPUS)
-    assert fatawa_prolog.check(cases, fatawa_prolog.load_facts(CORPUS)) == []
+    facts = fatawa_prolog.load_facts(CORPUS)  # the tranche and the classical held-out cases
+    assert fatawa_prolog.check(fatawa_prolog.load_cases(CORPUS, facts), facts) == []
 
 
 # --- routing ----------------------------------------------------------------------------

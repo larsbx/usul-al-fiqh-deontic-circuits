@@ -68,7 +68,8 @@
             }
           },
           "matches_madhhab": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "Whether the source labels the kernel's position the madhhab's. Descriptive of the text; never a scoring target (a ruling stands by its proof)."
           },
           "routing_label": {
             "type": "boolean",

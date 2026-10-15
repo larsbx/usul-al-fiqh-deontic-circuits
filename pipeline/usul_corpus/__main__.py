@@ -19,6 +19,7 @@
     python -m usul_corpus oracle      # export the weighted training set; evaluate the baseline oracles
     python -m usul_corpus fatawa-takhrij  # check the IslamQA takhrīj tranches; regenerate their Lean guards and report
     python -m usul_corpus fatawa-prolog   # write the tranches as Prolog cases; run the oracle and report (needs swipl)
+    python -m usul_corpus judgement       # check each encoder's declared question; Lean type guards; typing report
 """
 
 from __future__ import annotations
@@ -378,7 +379,7 @@ def cmd_takhrij(_: argparse.Namespace) -> int:
     (tests / "TakhrijMirror.lean").write_text(takhrij.mirror_file(), encoding="utf-8")
     rep = takhrij.report(cases, co)
     (CORPUS / "takhrij" / "report.json").write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(json.dumps({k: rep[k] for k in ("total", "coverage", "madhhab_coverage", "encoding_error", "ikhtilaf_matching_madhhab", "classes")}, ensure_ascii=False))
+    print(json.dumps({k: rep[k] for k in ("total", "coverage", "decided_coverage", "disputed", "encoding_error", "classes")}, ensure_ascii=False))
     return 0
 
 
@@ -736,7 +737,7 @@ def cmd_fatawa_takhrij(_: argparse.Namespace) -> int:
         print(json.dumps(bad, ensure_ascii=False, indent=1))
         return 1
     (SIGNATURE_LEAN.parent / "FatawaTakhrij.lean").write_text(fatawa_takhrij.lean_file(cases), encoding="utf-8")
-    rep = takhrij.report(cases)
+    rep = takhrij.report(cases) | {"banks": fatawa_takhrij.compare(CORPUS)}
     _dump(CORPUS / "fatawa" / "takhrij" / "report.json", rep)
     print(json.dumps({k: rep[k] for k in ("total", "coverage", "encoding_error", "classes")}, ensure_ascii=False))
     return 0
@@ -744,8 +745,9 @@ def cmd_fatawa_takhrij(_: argparse.Namespace) -> int:
 
 def cmd_fatawa_prolog(_: argparse.Namespace) -> int:
     """The takhrīj cases as Prolog facts and fixture vectors; the oracle's agreement with the texts."""
-    from . import fatawa_prolog, fatawa_takhrij
-    cases, facts = fatawa_takhrij.load(CORPUS), fatawa_prolog.load_facts(CORPUS)
+    from . import fatawa_prolog
+    facts = fatawa_prolog.load_facts(CORPUS)
+    cases = fatawa_prolog.load_cases(CORPUS, facts)
     if errs := fatawa_prolog.check(cases, facts):
         print("\n".join(errs))
         return 1
@@ -753,7 +755,30 @@ def cmd_fatawa_prolog(_: argparse.Namespace) -> int:
     (ROOT / fatawa_prolog.CASES).write_text(fatawa_prolog.prolog_file(records), encoding="utf-8")
     rep = fatawa_prolog.report(records, fatawa_prolog.run(ROOT))
     _dump(CORPUS / "fatawa" / "prolog" / "report.json", rep)
-    print(json.dumps({k: rep[k] for k in ("total", "per_encoder")}, ensure_ascii=False))
+    print(json.dumps({s: rep[s]["total"] for s in ("islamqa", "classical")}, ensure_ascii=False))
+    return 0
+
+
+def cmd_judgement(_: argparse.Namespace) -> int:
+    """Each encoder's sort and question (corpus/types/encoders.json), guarded in Lean and reported."""
+    import gzip
+
+    from . import fatawa_takhrij, judgement, takhrij
+    types = judgement.load(CORPUS)
+    if errs := judgement.check(types, takhrij.ENCODERS):
+        print("\n".join(errs))
+        return 1
+    (SIGNATURE_LEAN.parent / "EncoderTypes.lean").write_text(judgement.lean_file(types, judgement.typed_names(ROOT)), encoding="utf-8")
+    cases = takhrij.load(CORPUS) + fatawa_takhrij.load(CORPUS)
+    rep = judgement.report(types, takhrij.ENCODERS, cases)
+    labels = ISLAMQA / "labels" / "islamqa-ar.labels.jsonl.gz"
+    if labels.exists():
+        with gzip.open(ISLAMQA / "answers" / "islamqa-ar.jsonl.gz", "rt", encoding="utf-8") as f:
+            questions = {r["id"]: f"{r.get('title') or ''} {r.get('question') or ''}" for r in map(json.loads, f)}
+        with gzip.open(labels, "rt", encoding="utf-8") as f:
+            rep["labels"] = judgement.label_flags(list(map(json.loads, f)), questions)
+    _dump(CORPUS / "types" / "report.json", rep)
+    print(json.dumps({k: rep[k] for k in ("encoders", "cases", "cases_typed_by_judgement")}, ensure_ascii=False))
     return 0
 
 
@@ -827,6 +852,7 @@ def parser() -> argparse.ArgumentParser:
     sub.add_parser("oracle").set_defaults(run=cmd_oracle)
     sub.add_parser("fatawa-takhrij").set_defaults(run=cmd_fatawa_takhrij)
     sub.add_parser("fatawa-prolog").set_defaults(run=cmd_fatawa_prolog)
+    sub.add_parser("judgement").set_defaults(run=cmd_judgement)
     fa = sub.add_parser("fatawa")
     fa.add_argument("--lang")
     fa.add_argument("--refresh", action="store_true")

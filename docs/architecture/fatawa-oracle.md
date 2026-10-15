@@ -169,3 +169,59 @@ The next schema step is a ruling *set* (the permitted options), with agreement m
 - finds: `trivial_find` 5, `haram_makka` 4 (this rule fixes the 3 encoding errors), `rikaz` 4, and the two animal rules.
 
 The `bank` rule still decides 24 cases, all in `asl_zahir`.
+
+## Against the classical banks
+
+The classical takhrīj banks (`corpus/takhrij`) total 461 cases: Saʿdī, dalāla, and Ibn Rajab's M8 tranches 1–10. `make fatawa-takhrij` summarises each bank, under `banks` in [`report.json`](../../corpus/fatawa/takhrij/report.json).
+
+**No position is a target by attribution.** A ruling stands by its proof, not by whether a madhhab, a majority or an author holds it. So each case is one of two kinds:
+- **Decided:** it states one ruling with its reason. The bank is scored on these (*decided coverage*: derivable cases over derivable cases plus gaps).
+- **Disputed (`genuine_ikhtilaf`):** it reports several positions, each with its reasoning. It is not scored for agreement. Which position is right is a question of tarjīḥ by the evidence, so the case goes on a worklist.
+
+| bank | cases | encoders | decided coverage | disputed | open gaps | encoding errors |
+|---|---:|---:|---:|---:|---:|---:|
+| `sadi_furu` | 213 | 24 | 0.991 | 107 | 1 | 0 |
+| `rajab_m8_*` (10 tranches) | 238 | 3–9 each | 0.889–1.0 | 152 | 1 | 0 |
+| `dalala_furu` | 10 | 4 | 0.5 | 1 | 4 | 0 |
+| **`islamqa_tranche1`** | **123** | **5** | **0.525** | **2** | **54** | **3** |
+
+**Why the classical banks are covered and the fatāwā are not.** The two were sampled differently:
+- **Classical furūʿ** are the examples a qāʿida's own author gives under it, and 37 gaps were closed by revisiting the readings. Coverage near 1 says the bank reads its sources; it does not say the bank generalises.
+- **IslamQA cases** were retrieved by keyword from answers written for other reasons. Their decided coverage of 0.525 is the first out-of-source measure the bank has had.
+
+**Disputes run the other way.** Over half of the classical cases are disputed, because Ibn Rajab reports the riwāyāt and wujūh with their reasoning. A fatwā argues for one answer from its evidence, so IslamQA has only 2 disputed cases.
+
+### The Prolog oracle on held-out classical cases
+
+[`classical_facts.json`](../../corpus/fatawa/prolog/classical_facts.json) brings into the oracle the 53 classical cases of its five encoders. The rules were never written against these cases.
+- **26 decided cases:** the stated ruling is the target (`agrees/1`).
+- **27 disputed cases:** each is held as its positions (`position/2`). The only requirement is that the oracle takes one of them (`within_positions/1`). The cases are listed under `tarjih_worklist` in [`report.json`](../../corpus/fatawa/prolog/report.json).
+
+| encoder | decided | bank = ruling | oracle = ruling (as fitted) | oracle = ruling (fixed) | disputed |
+|---|---:|---:|---:|---:|---:|
+| `asl_zahir` | 16 | 16 | 16 | 16 | 24 |
+| `itlaf` | 4 | 4 | **2** | 4 | 2 |
+| `trust_loss` | 4 | 4 | 4 | 4 | 1 |
+| `luqata` | 1 | 1 | 1 | 1 | 0 |
+| `unknown_owner` | 1 | 1 | 1 | 1 | 0 |
+| **total** | **26** | **26** | **24** | **26** | **27** |
+
+**The rules fitted to modern accidents broke the classical itlāf cases.**
+- Ibn Rajab's q026 cases are all destruction by the agent's own hand, such as a muḥrim killing game that attacks him, or knocking an egg from one's eye. «المباشر ضامن وإن لم يتعد» therefore made the agent liable in all of them. Qāʿida 26 holds, with its reasoning, that repelling the thing's own harm is not compensable.
+- The fix is a rule, `itlaf_bi_haqq`, placed before the causation rules. It shares `itlaf_liable/2` with the bank.
+- Modern cases carry no `purpose` fact, so they are unchanged at 119/122.
+
+The lesson for the rule order: the classical bank decides when a destruction is *with right*; the modern rules decide *who caused* it.
+
+**`asl_zahir`: the two banks test different regions of the same function.** The table counts decided cases as ẓāhir / aṣl.
+
+| (aṣl, ẓāhir, amāra) | classical decided | classical disputed | modern decided |
+|---|---:|---:|---:|
+| (zann, qat, ✓) | 6 / 0 | 1 | 7 / 3 |
+| (zann, zann, ✓): a tie | 7 / 0 | 23 | 1 / 0 |
+| (zann, zann, ✗) | 0 / 2 | — | — |
+| (zann, shakk or wahm, any) | 0 / 1 | — | 0 / 16 |
+
+- **Every decided tie with an amāra goes to the ẓāhir:** 7 classical cases and 1 modern (islamqa.23424.f002). This is consistent with the IQ-20 tie rule.
+- **Modern cases are mostly off the tie:** doubt and waswās go to the aṣl, a certain indicator goes to the ẓāhir. The 3 certain-indicator cases that go to the aṣl are decided by `sufra_kudra_after_tuhr` and `bayyina_in_qada`.
+- **The classical disputes are almost all ties** (23 of 24). Grade and amāra alone do not separate the positions, so the next fact will come from weighing their evidence: what each side cites as the amāra and why it should or should not displace the aṣl. That reading is the tarjīḥ worklist.

@@ -16,3 +16,5 @@ import UsulTest.FatawaBank
 import UsulTest.FatawaTakhrij
 import UsulTest.R2Sample1Semantic
 import UsulTest.KernelContracts
+import UsulTest.Judgement
+import UsulTest.EncoderTypes
