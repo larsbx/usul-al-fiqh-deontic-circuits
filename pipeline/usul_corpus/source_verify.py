@@ -1,7 +1,8 @@
 """Fail-closed replay of a declared subset, using the existing registry and locks.
 
 The required subset is every witness cited by the active reconciliation ledger, and every witness
-the textual foundation (`nusus/foundation.json`) is checked against in test_nusus.py.
+the textual foundation (`nusus/foundation.json`) is checked against in test_nusus.py,
+and every istidlāl witness in the qawāʿid dossier.
 All paged ref/excerpt pairs in corpus JSON using those witnesses are replayed.
 Other references are inventoried as excluded, never silently counted as passes.
 This is source fidelity under the existing Arabic-letters comparison, not review.
@@ -11,6 +12,8 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
+import subprocess
 import re
 from collections import Counter
 from pathlib import Path
@@ -77,6 +80,15 @@ def required_witnesses(corpus: Path) -> set[str]:
             if not match:
                 raise ValueError(f"invalid required evidence locator: {item['ref']}")
             ids.add(match[1])
+    dossier = corpus / "dossier/qawaid_adilla.json"
+    if dossier.exists():
+        for entry in json.loads(dossier.read_text(encoding="utf-8"))["entries"]:
+            for dalil in entry["adilla"]:
+                item = dalil["istidlal"]
+                match = REF.fullmatch(item["ref"])
+                if not match or match[1] != item["witness"]:
+                    raise ValueError(f"invalid required istidlāl locator/witness: {item['ref']}")
+                ids.add(item["witness"])
     if not ids:
         raise ValueError("required reconciliation evidence set is empty")
     return ids | nusus.witnesses(corpus)
@@ -90,13 +102,57 @@ def _pin(lock: dict) -> str:
     return json.dumps({k: lock.get(k) for k in ("url", "bytes", "sha256")}, sort_keys=True)
 
 
+def restore_locked_ocr(wid: str, witness: dict, lock: dict, cache: Path) -> None:
+    """Reproduce an existing OCR pin with the repository's pinned models. Never re-pin.
+
+    Verify the fetched PDF before OCR, and the derived text before publishing it
+    into the source cache. No corpus files or extraction metrics are rewritten.
+    """
+    from . import ocr
+    cache.mkdir(parents=True, exist_ok=True)
+    pdf = cache / f"{wid}.pdf"
+    if pdf.exists() and not _matches(pdf.read_bytes(), lock):
+        pdf.unlink()
+    if not pdf.exists():
+        fetch.fetch(witness, cache)  # candidate lock deliberately ignored
+    data = pdf.read_bytes()
+    if len(data) != lock.get("bytes") or hashlib.sha256(data).hexdigest() != lock.get("sha256"):
+        raise ValueError("OCR source PDF differs from lock")
+    opts = ocr.OcrOptions.from_config(witness["ocr"], anchor_step=witness.get("segmenter", {}).get("anchor_step"))
+    work = ocr.cache_dir(cache.parent / "source-ocr" / wid, pdf, opts)
+    chosen, _, _ = ocr.ocr_pdf(pdf, work, cache.parent / "tessdata", opts, jobs=min(4, os.cpu_count() or 1))
+    text = "#META#Header#End#\n" + "".join(ocr.page_markdown(page) for page in chosen)
+    if hashlib.sha256(text.encode("utf-8")).hexdigest() != lock["ocr_sha256"]:
+        raise ValueError("regenerated OCR text differs from existing ocr_sha256; lock unchanged")
+    (cache / f"{wid}.txt").write_text(text, encoding="utf-8")
+
+
 def locked_text(wid: str, witness: dict, lock: dict, corpus: Path, cache: Path,
                 fetch_source: bool) -> str:
     """Reuse restore/fetch, but never call the lock-writing fetch CLI or _pin.
 
     Adapted from PR #51's verify_evidence full-source URL/size/hash check.
-    Only direct text sources are accepted: a DOC/PDF lock does not pin its text.
+    Direct texts use the source pin; OCR uses its separate existing derived-text pin.
     """
+    if witness.get("format", "text") == "pdf":
+        # The existing OCR lock pins the exact derived text independently of the PDF.
+        # Never re-run the lock-writing OCR command while verifying evidence.
+        if lock.get("url") != fetch.witness_url(witness):
+            raise ValueError("registered URL differs from source lock")
+        digest = lock.get("ocr_sha256", "")
+        if not re.fullmatch(r"[0-9a-f]{64}", digest):
+            raise ValueError("required PDF witness lacks a pinned OCR text derivation")
+        path = cache / f"{wid}.txt"
+        if fetch_source and path.exists() and hashlib.sha256(path.read_bytes()).hexdigest() != digest:
+            path.unlink()
+        if not path.exists() and fetch_source:
+            restore_locked_ocr(wid, witness, lock, cache)
+        if not path.exists():
+            raise ValueError("required locked OCR witness unavailable; run make source-verify-fetch")
+        data = path.read_bytes()
+        if hashlib.sha256(data).hexdigest() != digest:
+            raise ValueError("derived OCR text differs from lock (including LFS pointers)")
+        return data.decode("utf-8")
     if witness.get("format", "text") != "text":
         raise ValueError("required witness needs a separately pinned text derivation")
     if lock.get("url") != fetch.witness_url(witness):
@@ -126,13 +182,14 @@ def locked_text(wid: str, witness: dict, lock: dict, corpus: Path, cache: Path,
 
 
 def verify(corpus: Path, cache: Path, fetch_source: bool = False) -> dict:
-    report = {"schema_version": 1, "scope": "reconciliation-and-foundation-witnesses-v2",
+    report = {"schema_version": 1, "scope": "reconciliation-foundation-istidlal-witnesses-v3",
               "comparison": "Arabic letters and standalone numerals; exact letter forms; closing-page locator",
               "status": "failed", "witnesses": [], "checks": [], "errors": [],
               "outside_scope": ["JSONL records and non-ref quotation fields", "Quran aya, hadith number and Albani verdict replay (witnesses provisioned here; replayed by test_nusus.py)",
                                 "interpretive relevance, formal correctness and scholarly validation"]}
     registry = json.loads((corpus / "registry.json").read_text(encoding="utf-8"))
-    witnesses = {w["id"]: w for work in registry["works"] for w in work["witnesses"]}
+    witnesses = {w["id"]: {"segmenter": work.get("segmenter", {}), **w}
+                 for work in registry["works"] for w in work["witnesses"]}
     locks = json.loads((corpus / "lock.json").read_text(encoding="utf-8"))["witnesses"]
     try:
         required = required_witnesses(corpus)
@@ -150,8 +207,11 @@ def verify(corpus: Path, cache: Path, fetch_source: bool = False) -> dict:
                 raise ValueError("required witness lacks registry entry or source lock")
             text = locked_text(wid, witnesses[wid], locks[wid], corpus, cache, fetch_source)
             receipt.update({k: locks[wid][k] for k in ("url", "bytes", "sha256")})
+            if witnesses[wid].get("format") == "pdf":
+                receipt["ocr_sha256"] = locks[wid]["ocr_sha256"]
+                receipt["verification"] = "pinned OCR text; PDF bytes and OCR interpretation not replayed"
             receipt["status"] = "verified"
-        except (ValueError, OSError, KeyError) as exc:
+        except (ValueError, OSError, KeyError, subprocess.SubprocessError) as exc:
             receipt["error"] = str(exc)
             report["errors"].append(f"{wid}: {exc}")
         for row in rows:
@@ -176,7 +236,7 @@ def verify(corpus: Path, cache: Path, fetch_source: bool = False) -> dict:
         match = WID.match(str(row["ref"]))
         if not match or match[1] not in required:
             report["checks"].append({k: row[k] for k in ("path", "pointer", "ref")} | {
-                "status": "excluded", "reason": "witness outside required reconciliation subset; no fidelity result"})
+                "status": "excluded", "reason": "witness outside required evidence subset; no fidelity result"})
     report["checks"].sort(key=lambda x: (x["path"], x["pointer"]))
     report["counts"] = dict(Counter(x["status"] for x in report["checks"]))
     if not report["errors"] and not report["counts"].get("failed") and report["counts"].get("verified"):

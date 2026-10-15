@@ -452,7 +452,7 @@
             1,
             3
           ],
-          "lexical_rank": 46
+          "lexical_rank": 45
         },
         {
           "encoder": "cause_from_one_of_two",
@@ -1022,12 +1022,12 @@
           "lexical_rank": 3
         },
         {
-          "encoder": "generality",
+          "encoder": "asl_zahir",
           "settled": null,
           "lexical_rank": 4
         },
         {
-          "encoder": "combining_forms",
+          "encoder": "generality",
           "settled": null,
           "lexical_rank": 5
         }
@@ -1090,17 +1090,17 @@
           "lexical_rank": 2
         },
         {
-          "encoder": "unknown_order_judged_sequential",
+          "encoder": "asl_zahir",
           "settled": null,
           "lexical_rank": 3
         },
         {
-          "encoder": "eating_without_permission",
+          "encoder": "unknown_order_judged_sequential",
           "settled": null,
           "lexical_rank": 4
         },
         {
-          "encoder": "injury_state_measures",
+          "encoder": "eating_without_permission",
           "settled": null,
           "lexical_rank": 5
         }
@@ -1186,17 +1186,17 @@
           "lexical_rank": 2
         },
         {
-          "encoder": "split_halves_suffice",
+          "encoder": "asl_zahir",
           "settled": null,
           "lexical_rank": 3
         },
         {
-          "encoder": "taker_from_usurper",
+          "encoder": "split_halves_suffice",
           "settled": null,
           "lexical_rank": 4
         },
         {
-          "encoder": "ruling_with_bar",
+          "encoder": "taker_from_usurper",
           "settled": null,
           "lexical_rank": 5
         }
@@ -1254,7 +1254,7 @@
             1,
             2
           ],
-          "lexical_rank": 11
+          "lexical_rank": 12
         },
         {
           "encoder": "generality",
@@ -1327,7 +1327,7 @@
             1,
             3
           ],
-          "lexical_rank": 9
+          "lexical_rank": 10
         },
         {
           "encoder": "right_for_or_against_self",

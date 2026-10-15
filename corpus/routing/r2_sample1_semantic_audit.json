@@ -1631,6 +1631,11 @@
           "reason": "Source decision: The text lists estate denominator bases and their possible awl increases. Encoder requires repeated_bearing and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
+          "encoder": "asl_zahir",
+          "disposition": "not_established",
+          "reason": "Source decision: The text lists estate denominator bases and their possible awl increases. Encoder requires asl_grade, zahir_grade, amara and returns [False, True]; the source does not establish this mapping to that decision."
+        },
+        {
           "encoder": "split_halves_suffice",
           "disposition": "insufficient",
           "reason": "A halves-suffice Boolean cannot calculate estate denominators. This is a rule exposition, not a concrete estate: outside current vocabulary, not a corrupt or missing segment."
@@ -1639,11 +1644,6 @@
           "encoder": "taker_from_usurper",
           "disposition": "not_established",
           "reason": "Source decision: The text lists estate denominator bases and their possible awl increases. Encoder requires entered_on_liability and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
-        },
-        {
-          "encoder": "ruling_with_bar",
-          "disposition": "not_established",
-          "reason": "Source decision: The text lists estate denominator bases and their possible awl increases. Encoder requires with_bar and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         }
       ],
       "classification": "missing_rule",
@@ -1953,14 +1953,14 @@
           "reason": "Source decision: Itikaf is recommended, valid without fasting, and both become binding through a vow. Encoder requires target and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
+          "encoder": "asl_zahir",
+          "disposition": "not_established",
+          "reason": "Source decision: Itikaf is recommended, valid without fasting, and both become binding through a vow. Encoder requires asl_grade, zahir_grade, amara and returns [False, True]; the source does not establish this mapping to that decision."
+        },
+        {
           "encoder": "generality",
           "disposition": "not_established",
           "reason": "Source decision: Itikaf is recommended, valid without fasting, and both become binding through a vow. Encoder requires form, context, ahd and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
-        },
-        {
-          "encoder": "combining_forms",
-          "disposition": "not_established",
-          "reason": "Source decision: Itikaf is recommended, valid without fasting, and both become binding through a vow. Encoder requires substitutes and returns [False, True]; the source does not establish this mapping to that decision."
         }
       ],
       "classification": "missing_rule",
@@ -2066,6 +2066,11 @@
           "reason": "Source decision: Eating requires explicit permission or an indicating circumstance; accepting invitation has separate conditions. Encoder requires shar_excludes and returns [False, True] (Ibn Rajab 123); the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with Lane A round 4 (PR #71), in place of advance_after_cause (reviewed not_established), which this unit no longer receives."
         },
         {
+          "encoder": "asl_zahir",
+          "disposition": "not_established",
+          "reason": "Source decision: Eating requires explicit permission or an indicating circumstance; accepting invitation has separate conditions. Encoder requires asl_grade, zahir_grade, amara and returns [False, True]; the source does not establish this mapping to that decision."
+        },
+        {
           "encoder": "unknown_order_judged_sequential",
           "disposition": "not_established",
           "reason": "Source decision: Eating requires explicit permission or an indicating circumstance; accepting invitation has separate conditions. Encoder requires known_simultaneous, known_sequential and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
@@ -2074,11 +2079,6 @@
           "encoder": "eating_without_permission",
           "disposition": "not_established",
           "reason": "Source decision: Eating requires explicit permission or an indicating circumstance; accepting invitation has separate conditions. Encoder requires necessity, ward_wilaya, compensated_otherwise, unguarded_craved and returns [False, True]; the source does not establish this mapping to that decision."
-        },
-        {
-          "encoder": "injury_state_measures",
-          "disposition": "not_established",
-          "reason": "Source decision: Eating requires explicit permission or an indicating circumstance; accepting invitation has separate conditions. Encoder requires guaranteed_at_injury, guaranteed_at_spread and returns [False, True] (Ibn Rajab 128); the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with the PR-30 annotations, in place of asl_zahir (reviewed not_established), which this unit no longer receives."
         }
       ],
       "classification": "missing_rule",

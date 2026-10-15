@@ -55,7 +55,7 @@ In 2 of the 5 resolved furūʿ the proofs side with the madhhab's label; in the 
 
 ## The full weighing (2026-10-15)
 
-Every ledger entry is now weighed: 596 entries, 1,855 proofs, 14 advantages, in `weighing/pilot.json` and `weighing/batch-00…38.json`. Each batch was drafted by an agent under one rulebook, every excerpt verified at its page through any qualifier that follows it (`make source-verify`: 4,444 excerpts), and every qaṭʿī or ijmāʿ claim reviewed. No human has reviewed the weighing yet.
+The #84 weighing covered all 596 ledger entries then present: 1,855 proofs and 14 advantages, in `weighing/pilot.json` and `weighing/batch-00…38.json`. Each batch was drafted by an agent under one rulebook, every excerpt verified at its page through any qualifier that follows it (`make source-verify`: 4,444 excerpts), and every qaṭʿī or ijmāʿ claim reviewed. No human has reviewed the weighing yet. The following figures describe that weighing. PR #86 adds 12 entries without proof records; they remain `unweighed`, bringing the current ledger to 608 entries without changing the proof-based resolver.
 
 | | By proof (`sources` policy) | By attribution (record) |
 |---|---|---|
@@ -99,6 +99,10 @@ An **apparent contradiction** was an ikhtilāf farʿ where the reading does not 
 ### The four stages
 
 `byAttribution jam naskh ps = resolve ⟨jam, naskh, prevail ps⟩`
+
+The mutūn foundation references are retained as `adilla` metadata. They do not introduce an alternative resolver: `Usul.Tarjih` weighs the recorded proofs and advantages, and missing proof records remain `unweighed`. Attribution grades never supply a fallback.
+
+**No work is the reference.** A disagreement between aligned works that no reading decides, such as ʿUmda against Zād on the same masʾala, also needs a tarjīḥ (`disagreements`; its standing is `no_reading`).
 
 **Grades (`Usul.Reconcile.Grade`), strongest first.** The first five are the annotation convention's marked sides (`Grade.marked`):
 
@@ -375,3 +379,18 @@ facts or two riwāyas. Drafting no longer treats an author's own aẓhar as ta�
 The audit's own locked-replay command was superseded on merge by `make source-verify`
 (`usul_corpus.source_verify`, PR-06), which replays every excerpt of the active ledger and its
 shards against complete locked witnesses and fails closed.
+
+## Mutūn integration (PR #86 correction)
+
+Aligned cases require an additional reconciliation entry only when their class is `missing_rule`
+or `missing_fact` and their positions contain at least two distinct rulings under `takhrij.code`.
+Agreement, derivable cases, encoding errors, and segmentation errors do not create this obligation;
+`genuine_ikhtilaf` retains its separate existing obligation. A gap has no reading to reconcile by
+jamʿ or naskh. Reports label a decided gap `no_reading` rather than compare it with a missing expected
+ruling.
+
+The mutūn entries' `adilla` remain checked foundation references, not a second resolver. Main's
+`Usul.Tarjih` proof/advantage procedure remains authoritative. Entries without the required proof
+records stay `unweighed`; attribution grades never provide a fallback. Earlier statements in the
+mutūn contribution's entry notes that grades decide are historical proposal commentary, superseded
+by this integration rule and the generated report.

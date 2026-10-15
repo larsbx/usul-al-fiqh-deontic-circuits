@@ -977,6 +977,30 @@ open Usul.Reconcile
 #guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.applying (P := String) none none ["both proofs fall (then as no proof)", "divide", "lot", "suspend"] ([("both proofs fall (then as no proof)", .qiyas), ("both proofs fall (then as no proof)", .mursalDaif), ("divide", .zanni), ("divide", .qiyas), ("lot", .qiyas), ("suspend", .qiyas), ("suspend", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "divide")
 #guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["both proofs fall (then as no proof)", "divide", "lot", "suspend"] ([("both proofs fall (then as no proof)", .qiyas), ("both proofs fall (then as no proof)", .mursalDaif), ("divide", .zanni), ("divide", .qiyas), ("lot", .qiyas), ("suspend", .qiyas), ("suspend", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "divide")
 #guard byAttribution (P := String) none none [("both proofs fall (then as no proof)", .nass), ("divide", .nass), ("lot", .nass), ("suspend", .ashab), ("both proofs fall (then as no proof)", .tashih), ("both proofs fall (then as no proof)", .jazm)] == (.tarjih "both proofs fall (then as no proof)")
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001.p08
+#guard byAttribution (P := String) none none [("Any change of taste, colour or smell by a pure thing falling in makes the water ṭāhir.", .nass), ("A mixing pure thing removes ṭahūriyya only when it overcomes the water's name («فغلب على اسمه»).", .nass), ("Any change of taste, colour or smell by a pure thing falling in makes the water ṭāhir.", .jazm), ("Any change of taste, colour or smell by a pure thing falling in makes the water ṭāhir.", .tashih), ("A mixing pure thing removes ṭahūriyya only when it overcomes the water's name («فغلب على اسمه»).", .jazm)] == (.tarjih "Any change of taste, colour or smell by a pure thing falling in makes the water ṭāhir.")
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00004.p04
+#guard byAttribution (P := String) none none [("Wājib when remembered.", .nass), ("Sunna.", .nass), ("Wājib when remembered.", .jazm), ("Wājib when remembered.", .tashih), ("Sunna.", .jazm)] == (.tarjih "Wājib when remembered.")
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00005.p03
+#guard byAttribution (P := String) none none [("The ḥadath is lifted.", .nass), ("Not lifted.", .nass), ("The ḥadath is lifted.", .jazm), ("The ḥadath is lifted.", .tashih)] == (.tarjih "The ḥadath is lifted.")
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008.p08
+#guard byAttribution (P := String) none none [("tasmiya required", .nass), ("tasmiya sunna", .nass), ("tasmiya required", .jazm), ("tasmiya required", .qiyas), ("tasmiya sunna", .jazm)] == (.tarjih "tasmiya required")
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p01
+#guard byAttribution (P := String) none none [("no ḥayḍ after fifty", .nass), ("ḥayḍ possible until sixty", .nass), ("no ḥayḍ after fifty", .jazm), ("no ḥayḍ after fifty", .tashih), ("ḥayḍ possible until sixty", .jazm)] == (.tarjih "no ḥayḍ after fifty")
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p04
+#guard byAttribution (P := String) none none [("sits the least, then washes and prays until three repetitions", .nass), ("blood within the most is ḥayḍ from the first month", .nass), ("sits the least, then washes and prays until three repetitions", .jazm), ("sits the least, then washes and prays until three repetitions", .tashih), ("blood within the most is ḥayḍ from the first month", .jazm), ("blood within the most is ḥayḍ from the first month", .ashab)] == (.tarjih "sits the least, then washes and prays until three repetitions")
+-- ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00005.p02
+#guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("false", .jazm), ("false", .tashih)] == (.tarjih "false")
+-- ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00007.p04
+#guard byAttribution (P := String) none none [("true", .ashab), ("false", .nass), ("true", .jazm), ("true", .tashih)] == (.tarjih "true")
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00002.p03
+#guard byAttribution (P := String) none none [("false", .nass), ("false", .nass), ("true", .nass), ("false", .jazm), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00005.p04
+#guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .qiyas), ("false", .ashab)] == (.tarjih "true")
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006.p06
+#guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("false", .jazm), ("false", .jazm), ("false", .tashih)] == (.tarjih "false")
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p03
+#guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("true", .jazm), ("true", .jazm), ("true", .tashih), ("true", .jazm), ("false", .ashab)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f000
 #guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf

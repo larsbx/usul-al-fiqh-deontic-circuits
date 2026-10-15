@@ -42,7 +42,7 @@ from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
 from .openiti import parse_markdown
 from .records import hadd_record, qaida_records, sharh_record, unit_tags, with_recovered
-from .units import UNIT_SEGMENTERS
+from .units import UNIT_SEGMENTERS, masail_path, paragraph_records
 from .segment import (
     audit_numbering,
     consensus_numbering,
@@ -287,6 +287,12 @@ def cmd_build(_: argparse.Namespace) -> int:
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records), encoding="utf-8")
             print(f"{w['id']:40} {len(records):>4} records")
+            if (seg := w.get("segmenter", work["segmenter"])).get("paragraphs"):  # the matn's masāʾil, a file of their own
+                masail, report = paragraph_records(work, w["id"], text, seg)
+                (CORPUS / masail_path(w["id"])).write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in masail),
+                                                          encoding="utf-8")
+                audit[f"{w['id']}#masail"] = {"work": work["id"], **report}
+                print(f"{w['id']:40} {len(masail):>4} masāʾil")
         if len(numbered) > 1:
             audit[f"consensus:{work['id']}"] = consensus_numbering(numbered, expected)
     _dump(CORPUS / "audit.json", merge_audit(_load(CORPUS / "audit.json"), audit, skipped))

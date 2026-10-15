@@ -5,6 +5,14 @@ import Usul
 
 open Usul.Cat.Sheaf
 
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00002.p03
+#guard (obstructions [()] (positions [0, 0, 2])).length == 4
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00005.p04
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006.p06
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p03
+#guard (obstructions [()] (positions [0, 1])).length == 2
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f005
 #guard (obstructions [()] (positions [0, 1])).length == 2
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f001
@@ -20,6 +28,10 @@ open Usul.Cat.Sheaf
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f008
 #guard (obstructions [()] (positions [0, 1])).length == 2
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q054.f002
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00005.p02
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00007.p04
 #guard (obstructions [()] (positions [0, 1])).length == 2
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000
 #guard (obstructions [()] (positions [0, 1])).length == 2

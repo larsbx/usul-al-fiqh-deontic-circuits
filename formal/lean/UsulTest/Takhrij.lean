@@ -13,6 +13,40 @@ import Usul
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061.f003 (derivable)
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
+-- ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00001.p03 (derivable)
+#guard (Usul.Refinements.zahirPrevails .zann .shakk false) == false
+-- ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00005.p02 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA19.badalStands false) == true
+-- ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00006.p03 (derivable)
+#guard (Usul.Refinements.zahirPrevails .zann .shakk false) == false
+-- ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00007.p04 (genuine_ikhtilaf)
+#guard (Usul.Kulliyyat.discharges (⟨0, 0, 0⟩ : Usul.Kulliyyat.Act Nat Nat Nat) ⟨if true then 0 else 1, if true then 0 else 1, 1⟩) == true
+-- ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00008.p03 (derivable)
+#guard (Usul.Sadi.useSubstitute false) == true
+-- ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00009.p05 (derivable)
+#guard (Usul.Refinements.zahirPrevails .zann .zann true) == true
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001.p06 (derivable)
+#guard (Usul.Refinements.istihlak true) == true
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001.p10 (derivable)
+#guard (Usul.Refinements.istihlak false) == false
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001.p12 (derivable)
+#guard (Usul.Refinements.zahirPrevails .zann .zann false) == false
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001.p13 (derivable)
+#guard (Usul.Readings.RajabA10.vagueOneBarsAll true false) == true
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00002.p03 (genuine_ikhtilaf)
+#guard (Usul.Refinements.zahirPrevails .zann .zann true) == true
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00005.p04 (genuine_ikhtilaf)
+#guard (Usul.Kulliyyat.discharges (⟨0, 0, 0⟩ : Usul.Kulliyyat.Act Nat Nat Nat) ⟨if true then 0 else 1, if true then 0 else 1, 1⟩) == true
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006.p06 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA19.badalStands false) == true
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00007.p04 (derivable)
+#guard (Usul.Refinements.zahirPrevails .zann .zann false) == false
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p02 (derivable)
+#guard (Usul.Sadi.useSubstitute false) == true
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p03 (genuine_ikhtilaf)
+#guard (decide (0 ∈ Usul.Sadi.obligedParts [0] (fun _ => true) (fun _ => false))) == true
+-- hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p05 (derivable)
+#guard (Usul.Kulliyyat.discharges (⟨0, 0, 0⟩ : Usul.Kulliyyat.Act Nat Nat Nat) ⟨if true then 0 else 1, if true then 0 else 1, 1⟩) == true
 -- kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00518 (derivable)
 #guard (Usul.Sadi.useSubstitute false) == true
 -- ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00176 (derivable)

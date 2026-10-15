@@ -80,9 +80,10 @@ class Model:
 
 
 def _records(corpus: Path, ids: set[str]) -> dict[str, dict]:
-    """The committed records with these ids, read only from the witnesses they name."""
+    """The committed records with these ids, read only from the witnesses they name (a witness's
+    records file, and its masāʾil file ``<witness>.masail.jsonl`` where it has one)."""
     keys = {i.split(".")[2] for i in ids}
-    return {r["id"]: r for p in sorted((corpus / "records").glob("*.jsonl")) if p.stem.replace("-", "_") in keys
+    return {r["id"]: r for p in sorted((corpus / "records").glob("*.jsonl")) if p.name.split(".")[0].replace("-", "_") in keys
             for r in map(json.loads, p.read_text(encoding="utf-8").splitlines()) if r["id"] in ids}
 
 

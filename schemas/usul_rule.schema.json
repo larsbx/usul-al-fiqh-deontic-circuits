@@ -23,6 +23,7 @@
     "furu_count": {"type": "integer", "minimum": 0},
     "qaida": {"type": "string"},
     "bayt": {"type": "string"},
+    "bab": {"type": "string", "description": "masala of a matn: the id of the bab record it is a paragraph of"},
     "page_span": {"type": ["array", "null"], "items": {"type": "integer", "minimum": 1}, "minItems": 1, "maxItems": 2},
     "quoted_ar": {"type": "string"},
     "similarity": {"type": "number", "minimum": 0, "maximum": 1},

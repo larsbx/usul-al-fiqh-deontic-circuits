@@ -24,10 +24,10 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install pytest jsonschema numpy pillow
-      - name: Install SWI-Prolog (routing and fatāwā replays)
+      - name: Install SWI-Prolog and locked-source OCR dependencies
         run: |
           sudo apt-get update -q
-          sudo apt-get install -y -q swi-prolog-nox
+          sudo apt-get install -y -q swi-prolog-nox tesseract-ocr poppler-utils
           swipl --version
       - name: Replay committed Python and Prolog artifacts (no skips)
         run: make integration

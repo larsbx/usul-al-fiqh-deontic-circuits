@@ -1,0 +1,258 @@
+{
+ "entries": [
+  {
+   "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001.p08",
+   "grades": [
+    "nass",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Water one of whose properties a pure thing has changed while its name remains: two riwāyas. Zād states that it becomes ṭāhir, not ṭahūr, and al-Inṣāf labels this the madhhab, held by most aṣḥāb; ʿUmda removes ṭahūriyya only when the mixing thing overcomes the water's name, the other riwāya (al-Kāfī: «نقلها الأكثر»), which al-Muwaffaq, al-Majd and Ibn Taymiyya chose. The madhhab's grades give Zād's side. The adilla give the other: al-Mughnī and al-Sharḥ al-Kabīr adduce for it the āya «فلم تجدوا ماء فتيمموا», «ماء» being indefinite after a negation and so general («نكرة في سياق النفي»), and Abū Dharr's ḥadīth (in al-Mughnī's wording «التراب كافيك ما لم تجد الماء»: this man finds water). Zād's side is argued from qiyās only (like boiled bean water; «زال عن إطلاقه»), with no text. So the dalīl stage decides for ʿUmda's side, against the madhhab's grades. For review: the madhhab's holders do not dispute the āya; they hold the changed water is no longer unqualified water (Kashshāf: «لأنه ليس بماء مطلق»), so the dispute is over the āya's reach.",
+   "evidence": [
+    {
+     "ref": "src:openiti-hajjawi-zadmustaqni-shamela11230/v01:p025",
+     "excerpt_ar": "وإن تغير طعمه أو لونه2 أو ريحه بطبخ أو ساقط فيه أو رفع بقليله",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, Zād al-Mustaqniʿ",
+     "note": "The matn states decisively that a change of taste, colour or smell by a pure thing falling in makes the water ṭāhir (the predicate «فطاهر» follows on the next page)."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p032",
+     "excerpt_ar": "إحداهما: يسلبه الطهورية. فيصير طاهرا غير مطهر، وهو المذهب. وعليه جماهير الأصحاب.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Of the Muqniʿ's «فإن غير أحد أوصافه: لونه، أو طعمه، أو ريحه»: the riwāya that it loses ṭahūriyya is the madhhab (position 0)."
+    },
+    {
+     "ref": "src:openiti-ibnqudama-umda-shamela11315/v01:p013",
+     "excerpt_ar": "وإن طبخ في الماء ما ليس بطهور وكذلك ما خالطه فغلب على اسمه أو استعمل في رفع حدث سلب طهوريته.",
+     "position": 1,
+     "grade": "jazm",
+     "who": "Ibn Qudāma, ʿUmdat al-Fiqh",
+     "note": "The matn makes a mixing pure thing remove ṭahūriyya only when it overcomes the water's name (position 1)."
+    }
+   ],
+   "adilla": [
+    {
+     "position": 1,
+     "ref": "Q004:043b",
+     "note": "al-Mughnī and al-Sharḥ al-Kabīr adduce it for the riwāya that the water stays ṭahūr: «وهذا عام في كل ماء؛ لأنه نكرة في سياق النفي», so tayammum is not allowed while this water, which keeps its name, is found."
+    },
+    {
+     "position": 1,
+     "ref": "H-abu-dharr-said",
+     "note": "al-Mughnī adduces Abū Dharr's ḥadīth (as «التراب كافيك ما لم تجد الماء») for the same riwāya: «وهذا واجد للماء». The pinned wording is al-Tirmidhī's."
+    }
+   ]
+  },
+  {
+   "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00004.p04",
+   "grades": [
+    "nass",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The tasmiya in wuḍūʾ: two riwāyas. Zād makes it wājib when remembered, and al-Inṣāf labels this the madhhab; ʿUmda counts it among the sunan, the riwāya al-Khallāl reports as where Aḥmad's view settled, chosen by al-Khiraqī, Ibn Abī Mūsā and al-Muwaffaq (al-Muwaffaq and al-Shāriḥ call it ẓāhir al-madhhab). Each side has an admitted naṣṣ. The obligation side adduces Abū Hurayra's «لا وضوء لمن لم يذكر اسم الله عليه» (al-Albānī: ḥasan, al-Irwāʾ 81). The sunna side adduces the āya of wuḍūʾ, which lists its acts and does not name the tasmiya (al-Mubdiʿ: «فلم يذكرها»), and Aḥmad's «ليس يثبت في هذا حديث». Both adilla are of the naṣṣ kind, so the dalīl stage gives no result and the madhhab's grades decide, for Zād. Noted for review, not resolved: the āya's silence against the ḥadīth's negation is a taʿāruḍ the sunna side settles by reading the ḥadīth as «نفي الكمال» (al-Mughnī).",
+   "evidence": [
+    {
+     "ref": "src:openiti-hajjawi-zadmustaqni-shamela11230/v01:p029",
+     "excerpt_ar": "ويجب التسمية في الوضوء مع الذكر. ويجب الختان ما لم يخف على نفسه",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, Zād al-Mustaqniʿ",
+     "note": "The matn states the tasmiya wājib when remembered (position 0)."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p128",
+     "excerpt_ar": "وعنه أنها واجبة وهي المذهب. قال صاحب الهداية، والفصول، والمذهب، والنهاية، والخلاصة، ومجمع البحرين، والمجد في شرحه: التسمية واجبة في أصح الروايتين",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "On the Muqniʿ's listing of the tasmiya among the sunan of wuḍūʾ, al-Inṣāf labels the riwāya of obligation the madhhab (position 0)."
+    },
+    {
+     "ref": "src:openiti-ibnqudama-umda-shamela11315/v01:p016",
+     "excerpt_ar": "والمسنون التسمية وغسل الكفين والمبالغة في المضمضة والاستنشاق إلا أن يكون صائما",
+     "position": 1,
+     "grade": "jazm",
+     "who": "Ibn Qudāma, ʿUmdat al-Fiqh",
+     "note": "The matn counts the tasmiya among the sunan (position 1)."
+    }
+   ],
+   "adilla": [
+    {
+     "position": 0,
+     "ref": "H-tasmiya-wudu",
+     "note": "The evidence of the obligation riwāya in al-Mughnī, al-Mubdiʿ, Kashshāf and Sharḥ al-Muntahā: the negation of wuḍūʾ without the name of God («نفي في نكرة يقتضي أن لا يصح وضوءه بدون التسمية»)."
+    },
+    {
+     "position": 1,
+     "ref": "Q005:006d",
+     "note": "al-Mubdiʿ adduces the āya for the sunna side: it lists the acts of wuḍūʾ and does not name the tasmiya («فلم يذكرها»)."
+    }
+   ]
+  },
+  {
+   "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00005.p03",
+   "grades": [
+    "nass",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Intending what ṭahāra is recommended for (reading the Qurʾān), or a recommended renewal while forgetting the ḥadath: two riwāyas. Zād states that the ḥadath is lifted, and al-Inṣāf labels this the madhhab; the other riwāya (chosen by Ibn Ḥāmid, al-Qāḍī and Abū al-Khaṭṭāb) holds that it is not lifted. The lifting side adduces the khabar of intentions: he intended a ṭahāra of the Law and has what he intended (al-Mughnī: «ولأنه نوى طهارة شرعية، فصحت للخبر»; al-Sharḥ al-Kabīr likewise). The other side argues from qiyās (he did not intend lifting the ḥadath, «أشبه ما لو نوى التبرد») and adduces no text. So the dalīl stage decides for Zād's side, as the madhhab's grades do. For review: «وإنما لكل امرئ ما نوى» is also what the other side's reasoning turns on, though it does not cite it here.",
+   "evidence": [
+    {
+     "ref": "src:openiti-hajjawi-zadmustaqni-shamela11230/v01:p029",
+     "excerpt_ar": "فإن نوى ما تسن له الطهارة كقراءة أو تجديدا مسنونا \"ناسيا حدثه\" ارتفع.",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, Zād al-Mustaqniʿ",
+     "note": "The matn states decisively that the ḥadath is lifted (position 0)."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p145",
+     "excerpt_ar": "إحداهما: يرتفع، وهو المذهب. اختاره أبو حفص العكبري، وابن عبدوس في تذكرته، وصححه في التصحيح، والمصنف في المغني، والشارح.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "On the Muqniʿ's «فإن نوى ما تسن له الطهارة، أو التجديد، فهل يرتفع حدثه؟ على روايتين»: lifting is the madhhab (position 0)."
+    }
+   ],
+   "adilla": [
+    {
+     "position": 0,
+     "ref": "H-niyyat",
+     "note": "«إنما الأعمال بالنيات، وإنما لكل امرئ ما نوى», which al-Mughnī quotes in full in the preceding faṣl; al-Mughnī and al-Sharḥ al-Kabīr adduce it for lifting: he intended a ṭahāra of the Law, so he has it («فصحت للخبر»)."
+    }
+   ]
+  },
+  {
+   "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008.p08",
+   "grades": [
+    "nass",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The tasmiya in the sufficient ghusl. Zād counts it in the mujziʾ ghusl and ʿUmda makes it sunna; al-Inṣāf makes its ruling in ghusl that of the tasmiya in wuḍūʾ «خلافا ومذهبا واختيارا», where the madhhab is obligation, and Kashshāf and Sharḥ al-Muntahā make it wājib in ghusl «قياسا على الوضوء». No adilla are cited. The ḥadīth «لا وضوء لمن لم يذكر اسم الله عليه» names wuḍūʾ: al-Mughnī gives it for the riwāya of obligation in all three ṭahāras, but its bearing on the ghusl is by qiyās (Kashshāf, Sharḥ al-Muntahā), so it is not cited as a naṣṣ on these facts. No text is adduced for the sunna side in the ghusl either. The madhhab's grades decide, for Zād.",
+   "evidence": [
+    {
+     "ref": "src:openiti-hajjawi-zadmustaqni-shamela11230/v01:p033",
+     "excerpt_ar": "والمجزئ: أن ينوي \"ثم يسمي1\" ويعم بدنه بالغسل مرة.",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, Zād al-Mustaqniʿ",
+     "note": "The matn puts the tasmiya in the sufficient ghusl (position 0)."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p257",
+     "excerpt_ar": "واعلم أن حكم التسمية على الغسل كهي على الوضوء، خلافا ومذهبا واختيارا",
+     "position": 0,
+     "grade": "qiyas",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The ghusl's tasmiya takes the ruling and madhhab of wuḍūʾ's, where al-Inṣāf (v01:p128) has «وعنه أنها واجبة وهي المذهب» (position 0): a taṣḥīḥ by a cognate masʾala."
+    },
+    {
+     "ref": "src:openiti-ibnqudama-umda-shamela11315/v01:p017",
+     "excerpt_ar": "والواجب فيه النية وبدنه بالغسل مع المضمضة والاستنشاق وتسن التسمية",
+     "position": 1,
+     "grade": "jazm",
+     "who": "Ibn Qudāma, ʿUmdat al-Fiqh",
+     "note": "The matn makes the tasmiya of ghusl sunna (position 1)."
+    }
+   ]
+  },
+  {
+   "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p01",
+   "grades": [
+    "nass",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The upper age of ḥayḍ: riwāyas. Zād states fifty, and al-Inṣāf labels it the madhhab; ʿUmda states sixty, the riwāya al-Khallāl and al-Qāḍī chose. The fifty side adduces ʿĀʾisha's saying «إذا بلغت المرأة خمسين سنة خرجت من حد الحيض» (al-Mughnī). That is an athar, and al-Albānī did not find it (al-Irwāʾ 186: «لم أقف عليه»), so it has no ḥujja verdict and the gate does not admit it. The sixty side argues from what exists in women (al-Mughnī: «المرجع في هذا إلى الوجود»), not from a text. So the adilla decide nothing, and the madhhab's grades decide, for Zād. The āya «واللائي يئسن من المحيض» (al-Ṭalāq 4) shows that despair of ḥayḍ exists, not where it begins, so it is not cited.",
+   "evidence": [
+    {
+     "ref": "src:openiti-hajjawi-zadmustaqni-shamela11230/v01:p035",
+     "excerpt_ar": "لا حيض قبل تمام تسع سنين ولا بعد خمسين سنة ولا مع حمل.",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, Zād al-Mustaqniʿ",
+     "note": "The matn states no ḥayḍ after fifty (position 0)."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p356",
+     "excerpt_ar": "قوله (وأكثره خمسون سنة) هذا المذهب جزم به في الهداية، والمذاهب، ومسبوك الذهب",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "al-Inṣāf labels fifty the madhhab and names ʿUmda among those decisive on sixty (position 0)."
+    },
+    {
+     "ref": "src:openiti-ibnqudama-umda-shamela11315/v01:p018",
+     "excerpt_ar": "وأقل سن تحيض له المرأة تسع سنين وأكثره ستون.",
+     "position": 1,
+     "grade": "jazm",
+     "who": "Ibn Qudāma, ʿUmdat al-Fiqh",
+     "note": "The matn states sixty (position 1)."
+    }
+   ],
+   "adilla": [
+    {
+     "position": 0,
+     "ref": "A-aisha-khamsin",
+     "note": "al-Mughnī's evidence for the fifty riwāya («لما روي عن عائشة»). It is an athar with no verdict (al-Irwāʾ 186: «لم أقف عليه»), so it is not admitted and decides nothing."
+    }
+   ]
+  },
+  {
+   "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p04",
+   "grades": [
+    "nass",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The beginner (al-mubtadaʾa): Zād has her sit the least ḥayḍ until the blood repeats three times. Aḥmad states this (al-Inṣāf: «نص عليه في رواية عبد الله، وصالح، والمروذي»), and al-Inṣāf labels it the madhhab. ʿUmda, as worded, has blood within the most counted as ḥayḍ from the first month, the riwāya that she sits up to the most, chosen by al-Muwaffaq and the author of al-Fāʾiq. No adilla are cited. al-Mughnī argues the madhhab from caution («حكما ببراءة ذمتها من عبادة واجبة») and qiyās on the forgetful woman. The other side argues from the first blood being judged ḥayḍ. Aḥmad's six-or-seven riwāya «على حديث حمنة» is a third view, not either position. The madhhab's grades decide, for Zād.",
+   "evidence": [
+    {
+     "ref": "src:openiti-hajjawi-zadmustaqni-shamela11230/v01:p036",
+     "excerpt_ar": "والمبتدأة تجلس أقله ثم تغتسل وتصلي فإن انقطع لأكثره فما دون اغتسلت إذا انقطع1 فإن تكرر ثلاثا فحيض تقضي2 ما وجب فيه",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, Zād al-Mustaqniʿ",
+     "note": "The matn: the least, then ghusl and prayer; ḥayḍ once repeated three times (position 0)."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p361",
+     "excerpt_ar": "الصحيح من المذهب: أنها لا تجلس ما جاوز اليوم والليلة إلا بعد تكراره ثلاثا. وعليه جماهير الأصحاب",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "She does not sit beyond the day and night until it repeats three times: the sound view of the madhhab (position 0)."
+    },
+    {
+     "ref": "src:openiti-ibnqudama-umda-shamela11315/v01:p018",
+     "excerpt_ar": "وإن جاوز ذلك ولم يعبر أكثر الحيض فهو حيض فإذا تكرر ثلاثة أشهر بمعنى واحد صار عادة",
+     "position": 1,
+     "grade": "jazm",
+     "who": "Ibn Qudāma, ʿUmdat al-Fiqh",
+     "note": "The matn counts blood within the most as ḥayḍ, the habit forming by three months (position 1)."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p360",
+     "excerpt_ar": "والرابعة: تجلس إلى أكثره. اختاره المصنف، وصاحب الفائق.",
+     "position": 1,
+     "grade": "ashab",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The riwāya that she sits up to the most, the choice of al-Muwaffaq and the author of al-Fāʾiq (position 1)."
+    }
+   ]
+  }
+ ]
+}

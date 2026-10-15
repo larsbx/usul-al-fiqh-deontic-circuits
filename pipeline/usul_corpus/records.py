@@ -186,3 +186,26 @@ def bab_record(work: dict, witness: str, idx: int, u) -> dict:
         "status": "candidate",
         "extraction": {"pipeline": PIPELINE, "method": "abwab"},
     }
+
+
+def paragraph_record(work: dict, witness: str, bab: dict, n: int, p) -> dict:
+    """The ``n``-th masʾala (``abwab.Paragraph``) of a matn unit, a child of that unit's ``bab``
+    record: the parent's heading and path, the paragraph's page span, its excerpt within the work's
+    rights and the sha256 receipt of the whole paragraph."""
+    cap = EXCERPT_LEN[work["rights"]]
+    tag = f"{bab['id'].rsplit('.', 1)[1]}.p{n:02d}"
+    return {
+        "id": f"{bab['id']}.p{n:02d}",
+        "work": work["id"],
+        "witness": witness,
+        "record_type": "masala",
+        "bab": bab["id"],
+        "heading_ar": bab["heading_ar"],
+        "path_ar": bab["path_ar"],
+        "locator": _loc(witness, p.page, tag),
+        "page_span": _span(p),
+        "excerpt_ar": p.text[:cap],
+        "sha256": p.sha256,
+        "status": "candidate",
+        "extraction": {"pipeline": PIPELINE, "method": "abwab_paragraphs"},
+    }

@@ -1,5 +1,5 @@
 {
-  "entries": 596,
+  "entries": 608,
   "weighed": 596,
   "proofs": 1855,
   "advantages": 14,
@@ -7,12 +7,14 @@
     "jam": 20,
     "naskh": 1,
     "tarjih": 235,
-    "tawaqquf": 340
+    "tawaqquf": 340,
+    "unweighed": 12
   },
   "standing": {
     "against_reading": 80,
     "for_reading": 176,
-    "tawaqquf": 340
+    "tawaqquf": 340,
+    "unweighed": 12
   },
   "worklist": {
     "two_usul_reinforced_governs": [
@@ -186,7 +188,15 @@
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f007"
     ]
   },
-  "weighing_worklist": {},
+  "weighing_worklist": {
+    "tadakhul": 3,
+    "asl_zahir": 2,
+    "badal_stands_for_original": 2,
+    "partial_capability": 2,
+    "excused_error": 1,
+    "istihlak": 1,
+    "unknown_as_nonexistent": 1
+  },
   "jam_pending": [],
   "policies": {
     "strict": {
@@ -230,7 +240,7 @@
   },
   "attribution": {
     "note": "what the reported holders' labels favour (Usul.Reconcile); a record, not a tarjīḥ",
-    "evidence_items": 2118,
+    "evidence_items": 2157,
     "side_checks": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002",
@@ -242,12 +252,13 @@
     "stages": {
       "jam": 20,
       "naskh": 1,
-      "tarjih": 561,
+      "tarjih": 573,
       "tawaqquf": 14
     },
     "standing": {
-      "against_reading": 171,
-      "for_reading": 411,
+      "against_reading": 174,
+      "for_reading": 414,
+      "no_reading": 6,
       "tawaqquf": 14
     },
     "labels_agree_with_proofs": 184,

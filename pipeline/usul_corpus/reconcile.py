@@ -155,7 +155,11 @@ def resolve(case: dict, entry: dict, policy: str = DEFAULT) -> tuple[str, object
 
 def standing(case: dict, entry: dict) -> str:
     stage, r = resolve(case, entry)
-    return stage if stage in ("tawaqquf", "unweighed") else "for_reading" if r == case["expected"] else "against_reading"
+    if stage in ("tawaqquf", "unweighed"):
+        return stage
+    if case["class"] != "genuine_ikhtilaf":
+        return "no_reading"
+    return "for_reading" if r == case["expected"] else "against_reading"
 
 
 # --- the attribution record (`Usul.Reconcile`): what the labels favour, never a resolution ----------
@@ -172,7 +176,25 @@ def attribution(case: dict, entry: dict) -> tuple[str, object | None]:
 
 def attribution_standing(case: dict, entry: dict) -> str:
     stage, r = attribution(case, entry)
-    return "tawaqquf" if stage == "tawaqquf" else "for_reading" if r == case["expected"] else "against_reading"
+    if stage == "tawaqquf":
+        return stage
+    if case["class"] != "genuine_ikhtilaf":
+        return "no_reading"
+    return "for_reading" if r == case["expected"] else "against_reading"
+
+
+def foundation_ids() -> set[str]:
+    """Validate foundation references as metadata, never as an alternative resolver."""
+    path = Path(__file__).resolve().parents[2] / "corpus/nusus/foundation.json"
+    d = json.loads(path.read_text(encoding="utf-8"))
+    return {a["id"] for k in ("ayat", "ahadith", "athar") for a in d.get(k, [])}
+
+
+def disagreements(cases: list[dict]) -> list[dict]:
+    """Cases where aligned works state different rulings that no reading decides: each needs a tarjīḥ too."""
+    return [c for c in cases if c.get("aligned") and c["class"] in ("missing_rule", "missing_fact")
+            and len({takhrij.code(p["ruling"]) for p in c.get("positions") or []}) >= 2]
+
 
 
 def _old(case: dict, frm: str) -> object:
@@ -202,15 +224,27 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
     by = {c["far"]: c for c in cases}
     entries = {e["far"]: e for e in ledger["entries"]}
     errs = [f"{c['far']}: an ikhtilāf not in the ledger" for c in candidates(cases) if c["far"] not in entries]
+    between = {c["far"] for c in disagreements(cases)}
+    errs += [f"{f}: a disagreement between works without a tarjīḥ in the ledger" for f in sorted(between) if f not in entries]
     open_rq = _open_research_questions()
+    found = foundation_ids()
+    for f, e in entries.items():
+        for d in e.get("adilla", []):
+            if d["ref"] not in found:
+                errs.append(f"{f}: dalīl {d['ref']} is not in the textual foundation")
+            elif f in by and (type(d["position"]) is not int or not 0 <= d["position"] < len(by[f].get("positions") or [])):
+                errs.append(f"{f}: dalīl {d['ref']} names no listed position")
     if len(entries) != len(ledger["entries"]):
         errs.append("duplicate ledger entries")
     conservative = {e["id"]: e["conservative"] for e in dossier["entries"]}
     jams: dict[str, list[dict]] = {}
     for f, e in entries.items():
         c = by.get(f)
-        if c is None or c["class"] != "genuine_ikhtilaf":
+        if c is None or (c["class"] != "genuine_ikhtilaf" and f not in between):
             errs.append(f"{f}: not an ikhtilāf case")
+            continue
+        if f in between and (e.get("jam") or e.get("naskh")):
+            errs.append(f"{f}: no reading decides it, so no jamʿ or naskh of a reading")
             continue
         if len(e["grades"]) != len(c["positions"]) or not {x for g in e["grades"] for x in _grades(g)} <= set(GRADES):
             errs.append(f"{f}: one grade per position, from {GRADES}")
@@ -291,7 +325,7 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
             errs.append(f"{enc}: one earlier reading per refinement")
             continue
         frm = frm.pop()
-        for c in (c for c in cases if c["encoder"] == enc and _old(c, frm) != c["expected"]):
+        for c in (c for c in cases if c["class"] in ("derivable", "genuine_ikhtilaf") and c["encoder"] == enc and _old(c, frm) != c["expected"]):
             e = entries.get(c["far"])
             if e is None or _against_proofs(c, e):
                 errs.append(f"{c['far']}: the refinement departs from {frm} against the side the proofs favour")
@@ -409,7 +443,7 @@ def marked_for_reading(case: dict, entry: dict) -> bool:
     question about the annotation's description, for the human reviewer, never rewritten here."""
     stage, r = attribution(case, entry)
     top_ = max((RANK[g] for q, g in graded(case, entry) if q == r), default=-1)
-    return stage == "tarjih" and r == case["expected"] and top_ >= RANK["jazm"] and not case.get("matches_madhhab")
+    return case["class"] == "genuine_ikhtilaf" and stage == "tarjih" and r == case["expected"] and top_ >= RANK["jazm"] and not case.get("matches_madhhab")
 
 
 # Drafting aid for new tranches: a grade proposed from the annotator's `who`, for review.

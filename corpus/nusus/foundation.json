@@ -108,6 +108,414 @@
    "witness": "tanzil-quran-simple",
    "excerpt_ar": "وَعَلَى الَّذِينَ يُطِيقُونَهُ فِدْيَةٌ طَعَامُ مِسْكِينٍ",
    "en": "«and on those who can bear it with hardship, a fidya: feeding a poor man»"
+  },
+  {
+   "id": "Q004:043b",
+   "sura": 4,
+   "aya": 43,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَلَمْ تَجِدُوا مَاءً فَتَيَمَّمُوا صَعِيدًا طَيِّبًا",
+   "en": "«and you find no water (māʾ), then make tayammum with clean earth (ṣaʿīd)»: al-Mughnī reads «ماء» as indefinite after a negation («نكرة في سياق النفي»), so general for every water"
+  },
+  {
+   "id": "Q005:006c",
+   "sura": 5,
+   "aya": 6,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَلَمْ تَجِدُوا مَاءً فَتَيَمَّمُوا صَعِيدًا طَيِّبًا",
+   "en": "«and you find no water (māʾ), then make tayammum with clean earth (ṣaʿīd)»: tayammum only for one who does not find water (al-Mughnī: «فاشترط أن لا يجد الماء»)"
+  },
+  {
+   "id": "Q005:006d",
+   "sura": 5,
+   "aya": 6,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "إِذَا قُمْتُمْ إِلَى الصَّلَاةِ فَاغْسِلُوا وُجُوهَكُمْ وَأَيْدِيَكُمْ إِلَى الْمَرَافِقِ وَامْسَحُوا بِرُءُوسِكُمْ وَأَرْجُلَكُمْ إِلَى الْكَعْبَيْنِ",
+   "en": "the āya of wuḍūʾ: «when you rise to prayer, wash (ighsilū: ghasl) your faces and your hands to the elbows, wipe (masḥ) your heads, and your feet to the ankles»; it names no tasmiya («فلم يذكرها», al-Mubdiʿ)"
+  },
+  {
+   "id": "Q005:005",
+   "sura": 5,
+   "aya": 5,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَطَعَامُ الَّذِينَ أُوتُوا الْكِتَابَ حِلٌّ لَّكُمْ",
+   "en": "«the food of those given the Book is lawful (ḥill) for you»: al-Mughnī, after Ibn ʿAqīl, from it that their vessels are not ḥarām («لا يحرم استعمال أوانيهم»)"
+  },
+  {
+   "id": "Q047:033",
+   "sura": 47,
+   "aya": 33,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَلَا تُبْطِلُوا أَعْمَالَكُمْ",
+   "en": "«and do not render your deeds void» (ibṭāl: «ولا تبطلوا»)"
+  },
+  {
+   "id": "Q016:090",
+   "sura": 16,
+   "aya": 90,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ وَإِيتَاءِ ذِي الْقُرْبَىٰ وَيَنْهَىٰ عَنِ الْفَحْشَاءِ وَالْمُنكَرِ وَالْبَغْيِ",
+   "en": "«God commands justice (al-ʿadl) and excellence (al-iḥsān) … and forbids indecency, wrong and oppression»: al-Saʿdī Q1 (every command is maṣlaḥa)"
+  },
+  {
+   "id": "Q007:033",
+   "sura": 7,
+   "aya": 33,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "قُلْ إِنَّمَا حَرَّمَ رَبِّيَ الْفَوَاحِشَ مَا ظَهَرَ مِنْهَا وَمَا بَطَنَ",
+   "en": "«say: my Lord has forbidden only the indecencies (al-fawāḥish)»: the prohibitions (al-Saʿdī Q1)"
+  },
+  {
+   "id": "Q002:219",
+   "sura": 2,
+   "aya": 219,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "قُلْ فِيهِمَا إِثْمٌ كَبِيرٌ وَمَنَافِعُ لِلنَّاسِ وَإِثْمُهُمَا أَكْبَرُ مِن نَّفْعِهِمَا",
+   "en": "wine and gambling (al-maysir): «in them is great sin and benefits for people, and their sin is greater than their benefit» (al-Saʿdī Q1)"
+  },
+  {
+   "id": "Q009:120",
+   "sura": 9,
+   "aya": 120,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "ذَٰلِكَ بِأَنَّهُمْ لَا يُصِيبُهُمْ ظَمَأٌ وَلَا نَصَبٌ وَلَا مَخْمَصَةٌ فِي سَبِيلِ اللَّهِ",
+   "en": "«that is because no thirst, fatigue or hunger strikes them in the path of God …»: the means of an act of worship count with it (al-Saʿdī Q2)"
+  },
+  {
+   "id": "Q002:185",
+   "sura": 2,
+   "aya": 185,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "يُرِيدُ اللَّهُ بِكُمُ الْيُسْرَ وَلَا يُرِيدُ بِكُمُ الْعُسْرَ",
+   "en": "«God wants ease (al-yusr) for you, and does not want hardship for you» (al-Saʿdī Q3)"
+  },
+  {
+   "id": "Q002:286",
+   "sura": 2,
+   "aya": 286,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
+   "en": "«God does not burden a soul beyond its capacity (wusʿahā)» (al-Saʿdī Q3)"
+  },
+  {
+   "id": "Q065:007",
+   "sura": 65,
+   "aya": 7,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا مَا آتَاهَا",
+   "en": "«God does not burden a soul except with what He has given it» (al-Saʿdī Q3)"
+  },
+  {
+   "id": "Q022:078",
+   "sura": 22,
+   "aya": 78,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَمَا جَعَلَ عَلَيْكُمْ فِي الدِّينِ مِنْ حَرَجٍ",
+   "en": "«and He has not placed on you any constraint (ḥaraj) in religion» (al-Saʿdī Q3)"
+  },
+  {
+   "id": "Q064:016",
+   "sura": 64,
+   "aya": 16,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَاتَّقُوا اللَّهَ مَا اسْتَطَعْتُمْ",
+   "en": "«so fear God as far as you are able (mā istaṭaʿtum)» (al-Saʿdī Q3, Q4)"
+  },
+  {
+   "id": "Q005:003",
+   "sura": 5,
+   "aya": 3,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَمَنِ اضْطُرَّ فِي مَخْمَصَةٍ غَيْرَ مُتَجَانِفٍ لِّإِثْمٍ فَإِنَّ اللَّهَ غَفُورٌ رَّحِيمٌ",
+   "en": "«whoever is compelled by hunger (iḍṭurra fī makhmaṣa), not inclining to sin, God is forgiving»: necessity (ḍarūra) lifts the prohibition (al-Saʿdī Q4)"
+  },
+  {
+   "id": "Q006:119",
+   "sura": 6,
+   "aya": 119,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَقَدْ فَصَّلَ لَكُم مَّا حَرَّمَ عَلَيْكُمْ إِلَّا مَا اضْطُرِرْتُمْ إِلَيْهِ",
+   "en": "«He has detailed for you what He has forbidden you, except what you are compelled to (mā uḍṭurirtum ilayhi)» (al-Saʿdī Q4)"
+  },
+  {
+   "id": "Q024:061",
+   "sura": 24,
+   "aya": 61,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "لَّيْسَ عَلَى الْأَعْمَىٰ حَرَجٌ وَلَا عَلَى الْأَعْرَجِ حَرَجٌ وَلَا عَلَى الْمَرِيضِ حَرَجٌ",
+   "en": "«there is no constraint (ḥaraj) on the blind, the lame or the sick»: no wājib beyond capacity (al-Saʿdī Q4)"
+  },
+  {
+   "id": "Q039:003",
+   "sura": 39,
+   "aya": 3,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "أَلَا لِلَّهِ الدِّينُ الْخَالِصُ",
+   "en": "«indeed, to God belongs the sincere religion (al-dīn al-khāliṣ)»: ikhlāṣ (al-Saʿdī Q5)"
+  },
+  {
+   "id": "Q098:005",
+   "sura": 98,
+   "aya": 5,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ",
+   "en": "«they were commanded only to worship God, making the religion sincerely His (mukhliṣīna lahu al-dīn)» (al-Saʿdī Q5)"
+  },
+  {
+   "id": "Q059:007",
+   "sura": 59,
+   "aya": 7,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَمَا آتَاكُمُ الرَّسُولُ فَخُذُوهُ وَمَا نَهَاكُمْ عَنْهُ فَانتَهُوا",
+   "en": "«whatever the Messenger gives you, take it, and whatever he forbids you, refrain»: mutābaʿa (al-Saʿdī Q5)"
+  },
+  {
+   "id": "Q004:125",
+   "sura": 4,
+   "aya": 125,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَمَنْ أَحْسَنُ دِينًا مِّمَّنْ أَسْلَمَ وَجْهَهُ لِلَّهِ وَهُوَ مُحْسِنٌ",
+   "en": "«who is better in religion than one who submits his face to God while being a muḥsin»: both foundations together (al-Saʿdī Q5)"
+  },
+  {
+   "id": "Q042:021",
+   "sura": 42,
+   "aya": 21,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "أَمْ لَهُمْ شُرَكَاءُ شَرَعُوا لَهُم مِّنَ الدِّينِ مَا لَمْ يَأْذَن بِهِ اللَّهُ",
+   "en": "«or have they partners who legislated for them in religion what God did not permit?»: no worship without the Lawgiver (al-Saʿdī Q6)"
+  },
+  {
+   "id": "Q002:029",
+   "sura": 2,
+   "aya": 29,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "هُوَ الَّذِي خَلَقَ لَكُم مَّا فِي الْأَرْضِ جَمِيعًا",
+   "en": "«it is He who created for you all that is on the earth»: the default in customs is permission (al-Saʿdī Q6)"
+  },
+  {
+   "id": "Q007:032",
+   "sura": 7,
+   "aya": 32,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "قُلْ مَنْ حَرَّمَ زِينَةَ اللَّهِ الَّتِي أَخْرَجَ لِعِبَادِهِ وَالطَّيِّبَاتِ مِنَ الرِّزْقِ",
+   "en": "«say: who has forbidden the adornment of God which He brought forth for His servants, and the good things of provision?» (al-Saʿdī Q6)"
+  },
+  {
+   "id": "Q004:006",
+   "sura": 4,
+   "aya": 6,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَإِنْ آنَسْتُم مِّنْهُمْ رُشْدًا فَادْفَعُوا إِلَيْهِمْ أَمْوَالَهُمْ",
+   "en": "«if you perceive in them right judgement (rushd), hand over to them their property»: rushd a sharṭ of financial dealings (al-Saʿdī Q7)"
+  },
+  {
+   "id": "Q004:019",
+   "sura": 4,
+   "aya": 19,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَعَاشِرُوهُنَّ بِالْمَعْرُوفِ",
+   "en": "«and live with them in kindness (bi-l-maʿrūf)»: the measure referred to custom (ʿurf) (al-Saʿdī Q9)"
+  },
+  {
+   "id": "Q002:228",
+   "sura": 2,
+   "aya": 228,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَلَهُنَّ مِثْلُ الَّذِي عَلَيْهِنَّ بِالْمَعْرُوفِ",
+   "en": "«and they have rights like those upon them, according to what is recognised (bi-l-maʿrūf)» (Ibn ʿUthaymīn on al-ʿurf)"
+  },
+  {
+   "id": "Q004:029",
+   "sura": 4,
+   "aya": 29,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تَأْكُلُوا أَمْوَالَكُم بَيْنَكُم بِالْبَاطِلِ",
+   "en": "«do not consume one another's property unjustly (bi-l-bāṭil)» (Ibn ʿUthaymīn: «والدليل على هذه القاعدة», liability for itlāf)"
+  },
+  {
+   "id": "Q009:091",
+   "sura": 9,
+   "aya": 91,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "مَا عَلَى الْمُحْسِنِينَ مِن سَبِيلٍ",
+   "en": "«there is no way (sabīl) against those who do good (al-muḥsinīn)»: the trustee is not liable (Ibn ʿUthaymīn)"
+  },
+  {
+   "id": "Q042:042",
+   "sura": 42,
+   "aya": 42,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "إِنَّمَا السَّبِيلُ عَلَى الَّذِينَ يَظْلِمُونَ النَّاسَ",
+   "en": "«the way (al-sabīl) is only against those who wrong people»: the wrongdoer is liable (Ibn ʿUthaymīn)"
+  },
+  {
+   "id": "Q002:193",
+   "sura": 2,
+   "aya": 193,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَلَا عُدْوَانَ إِلَّا عَلَى الظَّالِمِينَ",
+   "en": "«there is no aggression except against the wrongdoers (al-ẓālimīn)» (Ibn ʿUthaymīn)"
+  },
+  {
+   "id": "Q049:009",
+   "sura": 49,
+   "aya": 9,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَأَقْسِطُوا إِنَّ اللَّهَ يُحِبُّ الْمُقْسِطِينَ",
+   "en": "«and be just (aqsiṭū): God loves the just» (al-Saʿdī Q16)"
+  },
+  {
+   "id": "Q016:126",
+   "sura": 16,
+   "aya": 126,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَإِنْ عَاقَبْتُمْ فَعَاقِبُوا بِمِثْلِ مَا عُوقِبْتُم بِهِ وَلَئِن صَبَرْتُمْ لَهُوَ خَيْرٌ لِّلصَّابِرِينَ",
+   "en": "«if you retaliate, retaliate with the like of what you were dealt; but if you are patient, it is better for the patient»: ʿadl and faḍl (al-Saʿdī Q16)"
+  },
+  {
+   "id": "Q042:040",
+   "sura": 42,
+   "aya": 40,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَجَزَاءُ سَيِّئَةٍ سَيِّئَةٌ مِّثْلُهَا فَمَنْ عَفَا وَأَصْلَحَ فَأَجْرُهُ عَلَى اللَّهِ",
+   "en": "«the recompense of an evil is an evil like it; but whoever pardons and makes peace, his reward is with God»: ʿadl permitted, faḍl urged (al-Saʿdī Q16)"
+  },
+  {
+   "id": "Q002:237",
+   "sura": 2,
+   "aya": 237,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَلَا تَنسَوُا الْفَضْلَ بَيْنَكُمْ",
+   "en": "«and do not forget generosity (al-faḍl) between you» (al-Saʿdī Q16)"
+  },
+  {
+   "id": "Q033:036",
+   "sura": 33,
+   "aya": 36,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَمَا كَانَ لِمُؤْمِنٍ وَلَا مُؤْمِنَةٍ إِذَا قَضَى اللَّهُ وَرَسُولُهُ أَمْرًا أَن يَكُونَ لَهُمُ الْخِيَرَةُ مِنْ أَمْرِهِمْ",
+   "en": "«it is not for a believing man or woman, when God and His Messenger have decided a matter, to have a choice in their matter» (al-Saʿdī Q17)"
+  },
+  {
+   "id": "Q046:020",
+   "sura": 46,
+   "aya": 20,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَيَوْمَ يُعْرَضُ الَّذِينَ كَفَرُوا عَلَى النَّارِ أَذْهَبْتُمْ طَيِّبَاتِكُمْ فِي حَيَاتِكُمُ الدُّنْيَا وَاسْتَمْتَعْتُم بِهَا",
+   "en": "«the day the disbelievers are exposed to the Fire: you exhausted your good things in your worldly life and enjoyed them» (al-Saʿdī Q17)"
+  },
+  {
+   "id": "Q002:194",
+   "sura": 2,
+   "aya": 194,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَمَنِ اعْتَدَىٰ عَلَيْكُمْ فَاعْتَدُوا عَلَيْهِ بِمِثْلِ مَا اعْتَدَىٰ عَلَيْكُمْ",
+   "en": "«whoever transgresses against you, transgress against him with the like (bi-mithli) of what he did»: the like is made good by its like (Ibn ʿUthaymīn)"
+  },
+  {
+   "id": "Q005:091",
+   "sura": 5,
+   "aya": 91,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "إِنَّمَا يُرِيدُ الشَّيْطَانُ أَن يُوقِعَ بَيْنَكُمُ الْعَدَاوَةَ وَالْبَغْضَاءَ فِي الْخَمْرِ وَالْمَيْسِرِ وَيَصُدَّكُمْ عَن ذِكْرِ اللَّهِ وَعَنِ الصَّلَاةِ",
+   "en": "«Satan only wants to cast enmity and hatred among you through wine and gambling (al-maysir), and to turn you from the remembrance of God and from prayer» (al-Saʿdī Q21)"
+  },
+  {
+   "id": "Q003:044",
+   "sura": 3,
+   "aya": 44,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "إِذْ يُلْقُونَ أَقْلَامَهُمْ أَيُّهُمْ يَكْفُلُ مَرْيَمَ",
+   "en": "«when they cast their pens, which of them would take charge of Maryam»: the lot (qurʿa) (Ibn ʿUthaymīn)"
+  },
+  {
+   "id": "Q037:141",
+   "sura": 37,
+   "aya": 141,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَسَاهَمَ فَكَانَ مِنَ الْمُدْحَضِينَ",
+   "en": "«and he cast lots (fa-sāhama) and was among the losers»: the lot (qurʿa) (Ibn ʿUthaymīn)"
+  },
+  {
+   "id": "Q004:023",
+   "sura": 4,
+   "aya": 23,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَإِن لَّمْ تَكُونُوا دَخَلْتُم بِهِنَّ فَلَا جُنَاحَ عَلَيْكُمْ",
+   "en": "«but if you have not gone in to them, there is no sin on you»: the qualifier «اللاتي دخلتم بهن» excludes, stated explicitly (Ibn ʿUthaymīn)"
+  },
+  {
+   "id": "Q017:009",
+   "sura": 17,
+   "aya": 9,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "إِنَّ هَٰذَا الْقُرْآنَ يَهْدِي لِلَّتِي هِيَ أَقْوَمُ",
+   "en": "«this Qurʾān guides to that which is most upright» (al-Saʿdī Q33: aqwam, «أصلح وأحسن»)"
+  },
+  {
+   "id": "Q039:055",
+   "sura": 39,
+   "aya": 55,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَاتَّبِعُوا أَحْسَنَ مَا أُنزِلَ إِلَيْكُم مِّن رَّبِّكُم",
+   "en": "«and follow the best of what has been sent down to you from your Lord» (al-Saʿdī Q33)"
+  },
+  {
+   "id": "Q018:079",
+   "sura": 18,
+   "aya": 79,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "أَمَّا السَّفِينَةُ فَكَانَتْ لِمَسَاكِينَ يَعْمَلُونَ فِي الْبَحْرِ فَأَرَدتُّ أَنْ أَعِيبَهَا وَكَانَ وَرَاءَهُم مَّلِكٌ يَأْخُذُ كُلَّ سَفِينَةٍ غَصْبًا",
+   "en": "al-Khiḍr damages the ship lest a king seize it outright: the lighter of two harms (al-Saʿdī Q33)"
+  },
+  {
+   "id": "Q018:080",
+   "sura": 18,
+   "aya": 80,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَأَمَّا الْغُلَامُ فَكَانَ أَبَوَاهُ مُؤْمِنَيْنِ فَخَشِينَا أَن يُرْهِقَهُمَا طُغْيَانًا وَكُفْرًا",
+   "en": "al-Khiḍr and the boy who would have burdened his believing parents with transgression and disbelief (al-Saʿdī Q33)"
+  },
+  {
+   "id": "Q002:148",
+   "sura": 2,
+   "aya": 148,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَاسْتَبِقُوا الْخَيْرَاتِ",
+   "en": "«so race to all that is good» (Ibn ʿUthaymīn: the dalīl for preferring the higher maṣlaḥa)"
+  },
+  {
+   "id": "Q006:108",
+   "sura": 6,
+   "aya": 108,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَلَا تَسُبُّوا الَّذِينَ يَدْعُونَ مِن دُونِ اللَّهِ فَيَسُبُّوا اللَّهَ عَدْوًا بِغَيْرِ عِلْمٍ",
+   "en": "«do not revile those they call on besides God, lest they revile God in enmity without knowledge» (Ibn ʿUthaymīn: the lighter mafsada is borne)"
+  },
+  {
+   "id": "Q006:152",
+   "sura": 6,
+   "aya": 152,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَلَا تَقْرَبُوا مَالَ الْيَتِيمِ إِلَّا بِالَّتِي هِيَ أَحْسَنُ",
+   "en": "«do not approach the orphan's property except in the best way» (al-Saʿdī Q34: the guardian chooses what is best for his ward)"
+  },
+  {
+   "id": "Q002:222",
+   "sura": 2,
+   "aya": 222,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَيَسْأَلُونَكَ عَنِ الْمَحِيضِ قُلْ هُوَ أَذًى فَاعْتَزِلُوا النِّسَاءَ فِي الْمَحِيضِ",
+   "en": "«they ask you about menstruation: say, it is a harm (adhā), so keep away from women during menstruation» (al-Saʿdī Q58: the ruling follows its ʿilla)"
+  },
+  {
+   "id": "Q007:157",
+   "sura": 7,
+   "aya": 157,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَيُحِلُّ لَهُمُ الطَّيِّبَاتِ وَيُحَرِّمُ عَلَيْهِمُ الْخَبَائِثَ",
+   "en": "«he makes lawful for them the good things and forbids them the foul» (al-Saʿdī Q58: ḥill turns on al-ṭayyib, taḥrīm on al-khabath)"
   }
  ],
  "ahadith": [
@@ -734,6 +1142,606 @@
    "cited_by": [
     "sadi.tariq_wusul.archive_tariq_tess.q636"
    ]
+  },
+  {
+   "id": "H-tasmiya-wudu",
+   "narrator": "Abū Hurayra",
+   "matn_ar": "لا صلاة لمن لا وضوء له، ولا وضوء لمن لم يذكر اسم الله تعالى عليه",
+   "en": "«no wuḍūʾ for one who does not mention the name of God over it»: the tasmiya of wuḍūʾ; its holders read the negation as of the wuḍūʾ itself («نفي في نكرة», al-Mughnī), so wājib",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 101,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 81,
+    "verdict": "hasan",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-aisha-ghusl-wudu",
+   "narrator": "ʿĀʾisha",
+   "matn_ar": "كان إذا اغتسل من الجنابة، بدأ فغسل يديه، ثم يتوضأ كما يتوضأ للصلاة",
+   "en": "the Prophet's ghusl from janāba began with a wuḍūʾ as for prayer: his act (fiʿl)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 248,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    },
+    {
+     "work": "tirmidhi.jami",
+     "witness": "openiti-tirmidhi-shamela7895",
+     "number": 104,
+     "numbering": "Aḥmad Shākir et al. (Shamela 7895)",
+     "matn_ar": "ويتوضأ وضوءه للصلاة، ثم يشرب شعره الماء"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 132,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-abi-thalaba-aniya",
+   "narrator": "Abū Thaʿlaba al-Khushanī",
+   "matn_ar": "فإن وجدتم غيرها فلا تأكلوا فيها، وإن لم تجدوا فاغسلوها وكلوا فيها",
+   "en": "the vessels of the People of the Book: «if you find others, do not eat in them; if you do not, wash them (ghasl) and eat in them»",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 5478,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 37,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-abu-dharr-said",
+   "narrator": "Abū Dharr",
+   "matn_ar": "إن الصعيد الطيب طهور المسلم وإن لم يجد الماء عشر سنين فإذا وجد الماء فليمسه بشرته",
+   "en": "«clean earth (al-ṣaʿīd) is the Muslim's ṭahūr though he find no water for ten years; when he finds water, let him touch his skin with it»",
+   "sources": [
+    {
+     "work": "tirmidhi.jami",
+     "witness": "openiti-tirmidhi-shamela7895",
+     "number": 124,
+     "numbering": "Aḥmad Shākir et al. (Shamela 7895)"
+    },
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 332,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering",
+     "matn_ar": "الصعيد الطيب وضوء المسلم ولو إلى عشر سنين، فإذا وجدت الماء فأمسه جلدك"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 153,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-ma-statatum",
+   "narrator": "Abū Hurayra",
+   "matn_ar": "أمرتكم بأمر فأتوا منه ما استطعتم",
+   "en": "«when I command you a thing, do of it what you are able»: capability of part (al-Mughnī on water enough for some limbs)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 7288,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    },
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "number": 1337,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)",
+     "matn_ar": "فإذا أمرتكم بشيء فأتوا منه ما استطعتم"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 155,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-s1-la-yansarif",
+   "narrator": "ʿAbd Allāh b. Zayd",
+   "matn_ar": "لا ينصرف حتى يسمع صوتا أو يجد ريحا",
+   "en": "the one who doubts a ḥadath in prayer does not leave it «until he hears a noise or finds a smell»: certainty (yaqīn) is not removed by doubt (al-Saʿdī Q11: «يدل عليه»)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)",
+     "number": 137
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "numbering": "al-Irwāʾ's own entry numbers",
+    "number": 107,
+    "verdict": "sahih"
+   }
+  },
+  {
+   "id": "H-s1-bayyina",
+   "narrator": "ʿAmr b. Shuʿayb, from his father, from his grandfather (ʿAbd Allāh b. ʿAmr)",
+   "matn_ar": "البينة على المدعي واليمين على المدعى عليه",
+   "en": "«proof (al-bayyina) is on the claimant, the yamīn on the one claimed against» (al-Saʿdī Q10); al-Tirmidhī: «في إسناده مقال», al-Albānī: ṣaḥīḥ",
+   "sources": [
+    {
+     "work": "tirmidhi.jami",
+     "witness": "openiti-tirmidhi-shamela7895",
+     "numbering": "Aḥmad Shākir et al. (Shamela 7895)",
+     "number": 1341,
+     "matn_ar": "قال في خطبته: البينة على المدعي، واليمين على المدعى عليه"
+    }
+   ],
+   "albani": {
+    "work": "albani.sahih_daif_tirmidhi",
+    "witness": "openiti-albani-sdtirmidhi-shamela782",
+    "numbering": "al-Tirmidhī's numbers; al-Albānī cites «الإرواء (2641)» on the next ḥadīth",
+    "number": 1341,
+    "verdict": "sahih"
+   }
+  },
+  {
+   "id": "H-s1-gharar",
+   "narrator": "Abū Hurayra",
+   "matn_ar": "نهى رسول الله صلى الله عليه وسلم عن بيع الحصاة، وعن بيع الغرر",
+   "en": "he forbade the sale of the pebble and the sale of gharar (al-Saʿdī Q21)",
+   "sources": [
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)",
+     "number": 1513
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "numbering": "al-Irwāʾ's own entry numbers",
+    "number": 1294,
+    "verdict": "sahih"
+   }
+  },
+  {
+   "id": "H-s1-qasa",
+   "narrator": "Anas",
+   "matn_ar": "طعام بطعام، وإناء بإناء",
+   "en": "the broken bowl: «food for food and a vessel for a vessel», the like made good by its like (Ibn ʿUthaymīn on ḍamān al-mithlī)",
+   "sources": [
+    {
+     "work": "tirmidhi.jami",
+     "witness": "openiti-tirmidhi-shamela7895",
+     "numbering": "Aḥmad Shākir et al. (Shamela 7895)",
+     "number": 1359
+    },
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)",
+     "number": 2481,
+     "matn_ar": "فدفع القصعة الصحيحة، وحبس المكسورة"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "numbering": "al-Irwāʾ's own entry numbers",
+    "number": 1523,
+    "verdict": "sahih"
+   }
+  },
+  {
+   "id": "H-s1-bakr",
+   "narrator": "Abū Rāfiʿ",
+   "matn_ar": "لم أجد فيها إلا خيارا رباعيا، فقال: أعطه إياه، إن خيار الناس أحسنهم قضاء",
+   "en": "he borrowed a young camel (bakr) and repaid a camel: an animal made good by its like (al-Saʿdī and Ibn ʿUthaymīn on al-mithliyyāt)",
+   "sources": [
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)",
+     "number": 1600
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "numbering": "al-Irwāʾ's own entry numbers",
+    "number": 1371,
+    "verdict": "sahih"
+   }
+  },
+  {
+   "id": "H-s1-istiham",
+   "narrator": "Abū Hurayra",
+   "matn_ar": "لو يعلم الناس ما في النداء والصف الأول، ثم لم يجدوا إلا أن يستهموا عليه لاستهموا",
+   "en": "«if people knew what is in the call and the first row, and found no way but to cast lots (yastahimū) for it, they would cast lots»: the lot (qurʿa) (Ibn ʿUthaymīn)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)",
+     "number": 615
+    }
+   ],
+   "albani": {
+    "work": "albani.sahih_daif_tirmidhi",
+    "witness": "openiti-albani-sdtirmidhi-shamela782",
+    "numbering": "al-Tirmidhī's numbers",
+    "number": 225,
+    "verdict": "sahih"
+   }
+  },
+  {
+   "id": "H-s1-nasiya-salat",
+   "narrator": "Anas",
+   "matn_ar": "من نسي صلاة فليصلها إذا ذكرها، لا كفارة لها إلا ذلك",
+   "en": "«whoever forgets a prayer, let him pray it when he remembers it»: an omitted command is not discharged by forgetting (al-Saʿdī Q27)",
+   "sources": [
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)",
+     "number": 684
+    },
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)",
+     "number": 597,
+     "matn_ar": "من نسي صلاة فليصل إذا ذكرها، لا كفارة لها إلا ذلك"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "numbering": "al-Irwāʾ's own entry numbers",
+    "number": 263,
+    "verdict": "sahih"
+   }
+  },
+  {
+   "id": "H-s1-nasiya-saim",
+   "narrator": "Abū Hurayra",
+   "matn_ar": "من نسي وهو صائم، فأكل أو شرب، فليتم صومه، فإنما أطعمه الله وسقاه",
+   "en": "«whoever forgets while fasting and eats or drinks, let him complete his fast»: a prohibition done in forgetfulness is excused (al-Saʿdī Q27)",
+   "sources": [
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)",
+     "number": 1155
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "numbering": "al-Irwāʾ's own entry numbers",
+    "number": 938,
+    "verdict": "sahih"
+   }
+  },
+  {
+   "id": "H-s2-adda-amana",
+   "narrator": "Abū Hurayra",
+   "matn_ar": "أد الأمانة إلى من ائتمنك، ولا تخن من خانك",
+   "en": "render the trust to whoever entrusted you, and do not betray whoever betrayed you (al-Saʿdī Q46)",
+   "sources": [
+    {
+     "work": "tirmidhi.jami",
+     "witness": "openiti-tirmidhi-shamela7895",
+     "number": 1264,
+     "numbering": "Aḥmad Shākir et al. (Shamela 7895)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 1544,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-s2-aqdi",
+   "narrator": "Umm Salama",
+   "matn_ar": "فأقضي على نحو ما أسمع",
+   "en": "I judge according to what I hear (al-Saʿdī Q55, Q57)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 7168,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 2631,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-s2-jabir-jamal",
+   "narrator": "Jābir b. ʿAbd Allāh",
+   "matn_ar": "فبعته، فاستثنيت حملانه إلى أهلي، فلما قدمنا أتيته بالجمل ونقدني ثمنه",
+   "en": "Jābir sold the Prophet his camel and reserved riding it home (al-Saʿdī Q42)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 2718,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 1304,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-s2-safina",
+   "narrator": "Safīna",
+   "matn_ar": "عليك أن تخدم رسول الله صلى الله عليه وسلم ما عشت",
+   "en": "Umm Salama freed Safīna with the sharṭ (al-sharṭ) that he serve the Prophet for life (al-Saʿdī Q42)",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 3932,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 1752,
+    "verdict": "hasan",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-s2-lutbiyya",
+   "narrator": "Abū Ḥumayd al-Sāʿidī",
+   "matn_ar": "هذا مالكم، وهذا هدية أهديت لي، أفلا جلس في بيت أبيه وأمه حتى تأتيه هديته",
+   "en": "the collector Ibn al-Lutbiyya's gifts: why did he not sit in his parents' house and see whether gifts came to him (al-Saʿdī Q51)",
+   "sources": [
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "number": 1832,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 862,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers; entry 862 grades the collectors' ḥadīth and quotes Abū Ḥumayd's narration as its second witness, «متفق عليه»"
+   }
+  },
+  {
+   "id": "H-s2-hirra",
+   "narrator": "Abū Qatāda",
+   "matn_ar": "إنها ليست بنجس، إنها من الطوافين عليكم والطوافات",
+   "en": "the cat is not najis (نجس, al-najāsa): it is among those who go about among you (al-Saʿdī Q58)",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 75,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 173,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-s2-hind",
+   "narrator": "ʿĀʾisha",
+   "matn_ar": "إن أبا سفيان رجل شحيح، فأحتاج أن آخذ من ماله، قال: خذي ما يكفيك وولدك بالمعروف",
+   "en": "Hind may take from Abū Sufyān's property what suffices her and her child, bi'l-maʿrūf (Ibn ʿUthaymīn on al-Saʿdī Q46)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 7180,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 2646,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-s2-tabir",
+   "narrator": "Ibn ʿUmar",
+   "matn_ar": "من ابتاع نخلا بعد أن تؤبر فثمرتها للبائع إلا أن يشترط المبتاع",
+   "en": "palms sold after pollination: the fruit is the seller's unless the buyer makes it a sharṭ (al-sharṭ) (Ibn ʿUthaymīn on al-Saʿdī Q50)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 2379,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    },
+    {
+     "work": "tirmidhi.jami",
+     "witness": "openiti-tirmidhi-shamela7895",
+     "number": 1244,
+     "numbering": "Aḥmad Shākir et al. (Shamela 7895)"
+    }
+   ],
+   "albani": {
+    "work": "albani.sahih_daif_tirmidhi",
+    "witness": "openiti-albani-sdtirmidhi-shamela782",
+    "number": 1244,
+    "verdict": "sahih",
+    "numbering": "al-Tirmidhī's numbers"
+   }
+  },
+  {
+   "id": "H-s2-ghurm-mithlayh",
+   "narrator": "ʿAbd Allāh b. ʿAmr",
+   "matn_ar": "ومن خرج بشيء منه فعليه غرامة مثليه والعقوبة",
+   "en": "whoever carries off hanging fruit owes twice its value and a punishment (Ibn ʿUthaymīn on al-Saʿdī Q35)",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 1710,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    },
+    {
+     "work": "nasai.sunan_sughra",
+     "witness": "openiti-nasai-shamela829",
+     "number": 4958,
+     "numbering": "ʿAbd al-Fattāḥ Abū Ghudda (Shamela 829)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 2413,
+    "verdict": "hasan",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-s2-shart-batil",
+   "narrator": "ʿĀʾisha",
+   "matn_ar": "ما كان من شرط ليس في كتاب الله فهو باطل وإن كان مائة شرط",
+   "en": "any sharṭ (al-sharṭ) not in the Book of God is bāṭil, even a hundred of them (Ibn ʿUthaymīn on al-Saʿdī Q38)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 2168,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 1308,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-s2-sail",
+   "narrator": "Abū Hurayra",
+   "matn_ar": "أرأيت إن قتلته؟ قال: «هو في النار»",
+   "en": "the man who kills one who assails him for his property: the assailant is in the Fire (Ibn ʿUthaymīn on al-Saʿdī Q36)",
+   "sources": [
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "number": 140,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 2446,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-s2-asir",
+   "narrator": "Anas",
+   "matn_ar": "لعن رسول الله صلى الله عليه وسلم في الخمر عشرة: عاصرها ومعتصرها",
+   "en": "the Prophet cursed ten in respect of wine, among them its presser and the one for whom it is pressed (Ibn al-Qayyim on intents in contracts; al-Saʿdī Q51)",
+   "sources": [
+    {
+     "work": "tirmidhi.jami",
+     "witness": "openiti-tirmidhi-shamela7895",
+     "number": 1295,
+     "numbering": "Aḥmad Shākir et al. (Shamela 7895)"
+    }
+   ],
+   "albani": {
+    "work": "albani.sahih_daif_tirmidhi",
+    "witness": "openiti-albani-sdtirmidhi-shamela782",
+    "number": 1295,
+    "verdict": "hasan",
+    "numbering": "al-Tirmidhī's numbers"
+   }
+  },
+  {
+   "id": "H-s2-zamaa",
+   "narrator": "ʿĀʾisha",
+   "matn_ar": "الولد للفراش وللعاهر الحجر، واحتجبي منه يا سودة",
+   "en": "the child of Zamʿa's slave-woman: the child belongs to the firāsh, and Sawda is to veil from him (Ibn al-Qayyim: rulings divide within one person; al-Saʿdī Q31)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 2218,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    },
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "number": 1457,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 2110,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers; entry 2110 is the dispute of Saʿd and ʿAbd b. Zamʿa"
+   }
   }
  ],
  "athar": [
@@ -756,6 +1764,16 @@
    "witness": "shamela-22592",
    "status": "maqtu",
    "albani_ar": "وأخرج عبد الرزاق من قول شريح"
+  },
+  {
+   "id": "A-aisha-khamsin",
+   "by": "ʿĀʾisha",
+   "excerpt_ar": "إذا بلغت المرأة خمسين سنة خرجت من حد الحيض",
+   "en": "«when a woman reaches fifty years she leaves the bound of ḥayḍ»: Aḥmad mentions it and al-Mughnī gives it for the fifty riwāya («لما روي عن عائشة»); al-Albānī (al-Irwāʾ 186) did not find it («لم أقف عليه»), so it carries no verdict",
+   "work": "albani.irwa",
+   "witness": "shamela-22592",
+   "status": "mawquf",
+   "albani_ar": "لم أقف عليه. ولا أدرى فى أى كتاب ذكره أحمد"
   }
  ]
 }

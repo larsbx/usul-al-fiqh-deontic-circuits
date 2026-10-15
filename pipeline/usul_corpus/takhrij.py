@@ -605,6 +605,10 @@ def annotation_errors(cases: list[dict], records: list[dict]) -> list[str]:
     ids = [c["far"] for c in cases]
     errs = [f"{i}: annotated twice" for i, n in sorted(Counter(ids).items()) if n > 1]
     errs += [f"{i}: not a committed farʿ or unit record" for i in sorted(set(ids) - set(far) - units)]
+    known = set(far) | units
+    errs += [f"{c['far']}: aligned to {a['id']}, not a committed record" for c in cases for a in c.get("aligned", ())
+             if a["id"] not in known]
+    errs += [f"{c['far']}: aligned to itself" for c in cases if any(a["id"] == c["far"] for a in c.get("aligned", ()))]
     home = {c["far"]: c.get("home") or c.get("revisit", {}).get("from_encoder", c["encoder"]) for c in cases if c["far"] in far}
     errs += [f"{i}: its qāʿida is not its home encoder's" for i, e in sorted(home.items()) if far[i] not in ENCODERS[e]["qawaid"]]
     expected = {i for e in set(home.values()) for i, q in far.items() if q in ENCODERS[e]["qawaid"]}

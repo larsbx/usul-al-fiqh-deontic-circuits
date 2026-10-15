@@ -1,0 +1,77 @@
+{
+ "entries": [
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00005.p02",
+   "grades": [
+    "nass",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Two riwāyas on the khuff taken off after wiping (Ibn Rajab q143.f001); ʿUmda states the restart side decisively and al-Inṣāf labels it the madhhab, naming al-ʿUmda among those decisive on it. Against the reading: a residue of `badalStands`, as at q143.f001.",
+   "evidence": [
+    {
+     "ref": "src:openiti-ibnqudama-umda-shamela11315/v01:p016",
+     "excerpt_ar": "ومتى مسح ثم انقضت المدة أو خلع قبلها بطلت طهارته ومن مسح مسافرا ثم أقام أو مقيما ثم سافر أتم مسح مقيم.",
+     "position": 1,
+     "grade": "jazm",
+     "who": "Ibn Qudāma, ʿUmdat al-Fiqh",
+     "note": "The matn states the ṭahāra bāṭil on taking off the khuff, without naming a dispute."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p190",
+     "excerpt_ar": "هذا الصحيح من المذهب، قال في الكافي: بطلت الطهارة في أشهر الروايتين. قال",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Of «ومتى ظهر قدم الماسح ورأسه، أو انقضت مدة المسح استأنف الطهارة»; the same item as the q143.f001 entry, on the same facts."
+    }
+   ]
+  },
+  {
+   "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00007.p04",
+   "grades": [
+    "ashab",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Ibn Rajab's «فالمذهب» (q018.f000) against the riwāya; ʿUmda states the sufficiency decisively and al-Inṣāf labels it «هذا المذهب مطلقا». Confirms the annotated side.",
+   "evidence": [
+    {
+     "ref": "src:openiti-ibnqudama-umda-shamela11315/v01:p017",
+     "excerpt_ar": "وإذا نوى بغسله بغسله الطهارتين أجزأ عنهما وكذلك لو تيمم للحدثين والنجاسة على بدنه أجزأ عن جميعها وإن نوى بعضها فليس له إلا ما نوى.",
+     "position": 0,
+     "grade": "jazm",
+     "who": "Ibn Qudāma, ʿUmdat al-Fiqh",
+     "note": "The matn states that a ghusl intending both ṭahāras discharges both."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p259",
+     "excerpt_ar": "قوله (وإن اغتسل ينوي الطهارتين أجزأه عنهما) هذا المذهب مطلقا. وعليه",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The same item as the q018.f000 entry, on the same facts."
+    }
+   ],
+   "adilla": [
+    {
+     "position": 0,
+     "ref": "Q004:043",
+     "note": "al-Mughnī's evidence for sufficiency: «جعل الغسل غاية للمنع من الصلاة، فإذا اغتسل يجب أن لا يمنع منها»; the junub who has done ghusl is not barred from prayer."
+    },
+    {
+     "position": 0,
+     "ref": "Q005:006",
+     "note": "al-Mughnī, after Ibn ʿAbd al-Barr: God imposed on the junub the ghusl, not wuḍūʾ («إنما افترض على الجنب الغسل من الجنابة، دون الوضوء»)."
+    },
+    {
+     "position": 1,
+     "ref": "H-aisha-ghusl-wudu",
+     "note": "The other riwāya's evidence in al-Mughnī: «لأن النبي - صلى الله عليه وسلم - فعل ذلك», his wuḍūʾ within the ghusl of janāba. Both sides have an admitted naṣṣ, so the dalīl stage gives no result and the grades decide. For review, not resolved: the sufficiency side reads the act as the recommended manner (al-Mughnī: «أجمعوا على استحباب الوضوء قبل الغسل، تأسيا»)."
+    }
+   ]
+  }
+ ]
+}

@@ -3,37 +3,37 @@
   "status": "candidate",
   "set": "rajab_fold0",
   "method": "blind typing into Usul.Typing situations; Prolog routing by coverage of each encoder's fields",
-  "answers": 197,
-  "situations": 255,
-  "fields_stated": 286,
-  "cases": 197,
+  "answers": 198,
+  "situations": 256,
+  "fields_stated": 287,
+  "cases": 198,
   "encoders": 202,
-  "applies": 0.3503,
+  "applies": 0.3485,
   "recall": {
-    "1": 0.4873,
-    "5": 0.6548,
-    "10": 0.6548
+    "1": 0.4848,
+    "5": 0.6515,
+    "10": 0.6515
   },
   "recall_with_named_rules": {
-    "1": 0.4873,
-    "5": 0.6548,
-    "10": 0.6548
+    "1": 0.4848,
+    "5": 0.6515,
+    "10": 0.6515
   },
   "lexical_recall": {
-    "1": 0.5635,
-    "5": 0.8274,
-    "10": 0.8579
+    "1": 0.5606,
+    "5": 0.8232,
+    "10": 0.8586
   },
   "hybrid_recall": {
-    "1": 0.6294,
-    "5": 0.9036,
-    "10": 0.9239
+    "1": 0.6263,
+    "5": 0.899,
+    "10": 0.9242
   },
   "hybrid": "types first: encoders by the share of their fields the situation settles, lexical rank breaking ties and ordering the rest",
   "prior_recall": {
-    "1": 0.0558,
-    "5": 0.1066,
-    "10": 0.1878
+    "1": 0.0556,
+    "5": 0.1111,
+    "10": 0.1919
   },
   "encoders_applying_per_answer": 0.51,
   "encoders_touched_per_answer": 1.18,
@@ -69,10 +69,10 @@
       "unrouted": 0
     },
     "asl_zahir": {
-      "cases": 3,
+      "cases": 4,
       "applies": 0,
       "top5": 2,
-      "unrouted": 1
+      "unrouted": 2
     },
     "attached_growth_follows": {
       "cases": 1,
@@ -739,6 +739,12 @@
     {
       "case": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061.f002",
       "encoder": "umum_lafz",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00009.p05",
+      "encoder": "asl_zahir",
       "settled": 0.0,
       "rank": null
     },
