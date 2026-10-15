@@ -1,0 +1,618 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f001",
+      "grades": [
+        "wajh",
+        [
+          "jazm",
+          "nass"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Purity of the water prevails: al-Inṣāf and Taṣḥīḥ al-Furūʿ label it the madhhab, al-Iqnāʿ and Kashshāf state it decisively, with «الأكثرين» and Aḥmad's naṣṣ in the record itself; the najāsa wajh stands alone.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p339",
+          "excerpt_ar": "إذا مات في الماء اليسير حيوان لا يعلم، هل ينجس بالموت أم لا؟ لم ينجس الماء على الصحيح من المذهب، جزم به في المغني، والشرح. قال المجد في شرحه: لم ينجس في أظهر الوجهين. وصححه في مجمع البحرين. قال في القواعد: وهو المرجح عند الأكثرين. وقيل: ينجس. وأطلقهما ابن تميم، وابن حمدان، وابن عبيدان. وكذا الحكم لو وجد فيه روثة خلافا ومذهبا.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of the animal of unknown flowing soul, then «وكذا الحكم لو وجد فيه روثة خلافا ومذهبا», citing Ibn Rajab."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v01:p092",
+          "excerpt_ar": "أحدهما: هو طاهر، وهو الصحيح، اختاره الشيخ تقي الدين، قال في القاعدة الثامنة والخمسين بعد المائة: هذا المرجح عند الأكثر",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+          "note": "Masʾala 22 of the Taṣḥīḥ: dung of doubtful purity fallen into water."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p011",
+          "excerpt_ar": "أو في نجاسة عظم فهو طاهر أو في روثة فطاهرة أو في جفاف نجاسة على ذباب أو غيره فيحكم بعدم الجفاف",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn: «أو في روثة فطاهرة»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p047",
+          "excerpt_ar": "(أو) شك (في) طهارة (روثة) وقعت في ماء أو غيره (فطاهرة) لما تقدم نقله حرب وغيره فيمن وطئ روثة، فرخص فيه إذا لم يعلم ما هي.",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The sharḥ, citing Ḥarb's report of the rukhṣa."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f002",
+      "grades": [
+        "nass",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The najāsa (no drying) prevails: Abū Bakr's report from Aḥmad, al-Iqnāʿ and Kashshāf stating it decisively, al-Mardāwī's own preference in the Taṣḥīḥ; the purity wajh is bare.",
+      "evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p011",
+          "excerpt_ar": "أو في نجاسة عظم فهو طاهر أو في روثة فطاهرة أو في جفاف نجاسة على ذباب أو غيره فيحكم بعدم الجفاف",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn: «أو في جفاف نجاسة على ذباب أو غيره فيحكم بعدم الجفاف»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p047",
+          "excerpt_ar": "(أو) شك (في جفاف نجاسة على ذباب أو غيره فيحكم بعدم الجفاف) لأنه الأصل.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The sharḥ: «لأنه الأصل»."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v01:p092",
+          "excerpt_ar": "لو شك في جفاف نجاسة على ذباب وغيره وعدمه، فأطلق فيه الخلاف، وأطلقه في القاعدة الثامنة والخمسين بعد المائة، ومختصر ابن تميم، والرعاية الكبرى: أحدهما: الحكم بعدم الجفاف \"قلت\" وهو الصواب، لأنه الأصل",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+          "note": "Al-Mardāwī's «قلت»: an author's preference, after reporting that the qāʿida leaves the khilāf open."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f003",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Not counting the rakʿa prevails: al-Inṣāf's taṣḥīḥ, the Iqnāʿ and the Muntahā, with Ibn Rajab's «فالمذهب»; against it only the Talkhīṣ's iḥtimāl.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v02:p224",
+          "excerpt_ar": "فائدة: إن شك هل أدرك الإمام راكعا أم لا؟ لم يدرك الركعة، على الصحيح من المذهب عليه أكثر الأصحاب، وذكر في التلخيص وجها أنه يدركها",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "He adds that the Talkhīṣ's wajh is among the mufradāt."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p142",
+          "excerpt_ar": "راكعا ثم شك بعد تكبيره هل رفع الإمام رأسه قبل إدراكه راكعا لم يعتد بتلك",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn: «لم يعتد بتلك الركعة»."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v01:p256",
+          "excerpt_ar": "ولو شك من أدرك الإمام راكعا، بعد أن أحرم معه: هل رفع الإمام رأسه قبل إدراكه راكعا أم لا؟ لم يعتد بتلك الركعة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The matn, adding «ويسجد لذلك»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f004",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "No sujūd prevails: al-Inṣāf labels it the madhhab of most aṣḥāb, al-Iqnāʿ and Kashshāf state it; both wujūh in the record are bare.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v02:p149",
+          "excerpt_ar": "(إحداهما: لا يلزمه وهو المذهب) وعليه أكثر الأصحاب قال في المذهب: هو قول أكثر الأصحاب",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ «وإن شك في ترك واجب، فهل يلزمه السجود؟ على وجهين»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p142",
+          "excerpt_ar": "ومن شك في ترك ركن فهو كتركه ولا يسجد لشكه في ترك واجب ولا لشكه هل سها أو في زيادة إلا إذا شك فيها وقت فعلها",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p407",
+          "excerpt_ar": "(ولا يسجد لشكه في ترك واجب) ؛ لأن الأصل عدم وجوبه فلا يسجد بالشك",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The sharḥ: «لأن الأصل عدم وجوبه»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f005",
+      "grades": [
+        "nass",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "No payment before receipt prevails: Aḥmad's naṣṣ, stated decisively by al-Iqnāʿ and Kashshāf; al-Qāḍī and Ibn ʿAqīl, reported in al-Inṣāf, hold the other side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p247",
+          "excerpt_ar": "لكن لو كان النصاب غائبا عن البلد لا يقدر على الإخراج منه لم يلزمه إخراج زكاته حتى يتمكن من الأداء منه",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn, on the niṣāb absent from the town that he cannot pay from."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p182",
+          "excerpt_ar": "(لكن لو كان النصاب غائبا عن البلد) أو مغصوبا أو ضالا ونحوه (لا يقدر على الإخراج منه لم يلزمه إخراج زكاته، حتى يتمكن من الأداء منه)",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The sharḥ, adding the usurped and stray."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p044",
+          "excerpt_ar": "وقال القاضي، وابن عقيل: ويلزمه أداء زكاته قبل قبضه؛ لأنه في يده حكما ولهذا يتلف من ضمانه بخلاف الدين في ذمة غريمه",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Qāḍī and Ibn ʿAqīl: payment due before receipt, the wealth being in his hand constructively."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f006",
+      "grades": [
+        "nass",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "No fiṭra prevails: Aḥmad's naṣṣ, labelled the madhhab in al-Inṣāf and stated in al-Iqnāʿ and al-Muntahā; against it Ibn Rajab's takhrīj.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p173",
+          "excerpt_ar": "قوله (إلا أن يشك في حياته، فتسقط) هذا المذهب، نص عليه في رواية صالح وعليه أكثر الأصحاب. لأن الأصل براءة الذمة، والظاهر موته، كالنفقة.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "He adds Ibn Shihāb's contrary view and his own «قلت: وهو أقوى في النظر», and quotes Ibn Rajab's takhrīj."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p280",
+          "excerpt_ar": "ومن له عبد آبق أو ضال أو مغصوب أو محبوس كأسير فعليه فطرته إلا أن يشك في حياته فتسقط",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v01:p497",
+          "excerpt_ar": "ومتبرع بمؤنته رمضان وآبق ونحوه لا إن شك في حياته",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The matn: fiṭra for the runaway «لا إن شك في حياته»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f007",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "No ijzāʾ prevails: al-Inṣāf's taṣḥīḥ and the Iqnāʿ, with Ibn Rajab's «المشهور» and Ibn Abī Mūsā; against it Abū al-Khaṭṭāb's iḥtimāl.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p216",
+          "excerpt_ar": "قوله (ولا غائب لا يعلم خبره) ، هذا المذهب، وعليه جماهير الأصحاب، قال في الفروع: ولا يجزئ من جهل خبره في الأصح",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "He quotes Ibn Rajab's «المشهور عدم الإجزاء» and reports the contrary as an iḥtimāl in al-Hidāya."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p089",
+          "excerpt_ar": "ولا زمن ولا مقعد ولا غائب لا يعلم خبره فإن أعتقه ثم تبين أنه حي أجزأ",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn, adding that it suffices once he is shown to have been alive."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f008",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The buyer's word prevails: both riwāyas are Aḥmad's, and al-Muntahā and al-Iqnāʿ state the buyer's decisively; al-Inṣāf reports named aṣḥāb on each side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p431",
+          "excerpt_ar": "يقبل قول البائع. وهي أنصهما. واختارها القاضي في الروايتين، وأبو الخطاب في الهداية، وابن عبدوس في تذكرته.",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Qāḍī, Abū al-Khaṭṭāb and Ibn ʿAbdūs chose the seller's word; «وهي أنصهما»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p431",
+          "excerpt_ar": "يقبل قول المشتري. صححه في التصحيح، والنظم. قال في إدراك الغاية: يقبل قول المشتري في الأظهر. وقطع به الخرقي، وصاحب الوجيز",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The buyer's word: the Taṣḥīḥ, al-Naẓm, al-Khiraqī and al-Wajīz."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p319",
+          "excerpt_ar": "وإن اختلفا عند من حدث العيب مع الاحتمال ولا بينة فقول مشتر بيمينه على البت إن لم يخرج عن يده",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The matn, with its condition that the goods not have left his hand."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p101",
+          "excerpt_ar": "اختلفا عند من حدث العيب مع احتمال قول كل كخرق ثوب ورفوه ونحوهما فقول مشتر مع يمنيه على البت",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f009",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The owner's word on absence of the defect prevails: al-Inṣāf reports no dispute and al-Iqnāʿ states it decisively; the record's two wujūh are bare.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p211",
+          "excerpt_ar": "اختلفا في رده، أو عيب: فالقول قول المالك) . بلا نزاع أعلمه. وجزم به في المغني، والشرح، والحارثي، والوجيز، والفائق، وغيرهم. لكن لو شاهدت البينة العبد معيبا عند الغاصب، فقال المالك: حدث عند الغاصب، وقال الغاصب: بل كان فيه قبل غصبه: فالقول قول الغاصب.",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "«بلا نزاع أعلمه», with al-Mughnī, al-Sharḥ and al-Ḥārithī; the excepted branch (bayyina saw the defect with the usurper) is a different case."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p353",
+          "excerpt_ar": "وإن اختلفا في رده أو عيب فيه بعد تلفه فقول المالك لكن لو شاهدت البينة العبد معيبا عند الغاصب فقال المالك: حدث عند الغاصب وقال الغاصب: بل كان فيه قبل غصبه فقول الغاصب",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn, of the item after its loss; same exception."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f010",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The lessee's word prevails: al-Inṣāf's taṣḥīḥ with al-Muntahā and al-Iqnāʿ, both riwāyas being Aḥmad's.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p080",
+          "excerpt_ar": "لو ادعى مرض العبد، أو إباقه، أو شرود الدابة، أو موتها بعد فراغ المدة أو فيها أو تلف المحمول: قبل قوله. على الصحيح من المذهب.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of the lessee claiming the slave's illness or running away; he reports «وعنه: القول قول ربه»."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p115",
+          "excerpt_ar": "أو ادعى مكتر أن المكترى أبق أو مرض، أو شرد أو مات في المدة أو بعدها قبل بيمينه",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The matn: «قبل بيمينه»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p317",
+          "excerpt_ar": "ولو ادعى مرض العبد أو إباقه أو شرود الدابة أو موتها بعد فراغ المدة أو فيها أو تلف المحمول قبل قوله والأجرة عليه إذا حلف أنه ما انتفع",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f011",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The wife's word prevails: al-Inṣāf labels it the madhhab and al-Iqnāʿ states it once the ʿunna is established; both are riwāyas.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p191",
+          "excerpt_ar": "قوله (وإن كانت ثيبا. فالقول قوله) . هذا إحدى الروايات. جزم به في العمدة، والوجيز، ومنتخب الأزجي، وغيرهم. واختاره القاضي في كتاب الروايتين، والمصنف، والشارح، وابن عبدوس، في تذكرته. وعنه: القول قولها. وهو المذهب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "«وعنه: القول قولها. وهو المذهب», after listing those who chose his word."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p198",
+          "excerpt_ar": "وإن كانت ثيبا وأدعى وطأها بعد ثبوت عنته وأنكرته فقولها",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn, after the ʿunna is established."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f012",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "His word prevails: al-Iqnāʿ and Kashshāf state it decisively; the record's wujūh are bare.",
+      "evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p204",
+          "excerpt_ar": "وإن قال أسلمت في عدتك فالنكاح باق وقالت بل بعد انقضائها فقوله ويجب المسمى بالدخول مطلقا",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p120",
+          "excerpt_ar": "(أسلمت في عدتك فالنكاح باق وقالت بل) أسلمت (بعد انقضائها) فانفسخ النكاح (ف) القول (قوله) لأن الأصل بقاء النكاح",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The sharḥ: «لأن الأصل بقاء النكاح»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f013",
+      "grades": [
+        "wajh",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Her word prevails: al-Inṣāf labels it the madhhab; al-Muntahā, al-Iqnāʿ and Kashshāf state it; the other wajh has al-Kāfī and al-Qāḍī.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p215",
+          "excerpt_ar": "قوله (وإن اختلفا في السابق منهما فالقول قولها، في أحد الوجهين) . وهو المذهب. صححه في التصحيح، والنظم. وجزم به في الوجيز، وغيره.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ's «في أحد الوجهين»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p120",
+          "excerpt_ar": "(وإن اختلفا في السابق) منهما بأن ادعت سبقه لتجب لها نفقة العدة فأنكرها فقولها لأن الأصل وجوب النفقة وهو يدعي سقوطها",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The sharḥ: «لأن الأصل وجوب النفقة»."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p122",
+          "excerpt_ar": "اختلفا في السابق أو جهل الأمر فقولها ولها النفقة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p204",
+          "excerpt_ar": "ولها نفقة العدة إن أسلمت قبله لا بعده وإن اختلفا في السابق أو جهل الأمر فقولها",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f014",
+      "grades": [
+        "ashab",
+        [
+          "ashab",
+          "takhrij"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Non-occurrence prevails: al-Iqnāʿ and al-Muntahā state it decisively, with al-Majd; the occurrence side has named aṣḥāb and an indication drawn from Aḥmad's answer on a different oath.",
+      "evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p060",
+          "excerpt_ar": "ولو كان الشرط عدميا نحو لقد فعلت كذا أو إن لم أفعله اليوم فمضى وشك في فعله لم تطلق وله الوطء",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn on the negative condition."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p331",
+          "excerpt_ar": "وهو هنا مطلق التردد ولا يلزم بشك فيه أو فيما علق عليه ولو عدميا",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f015",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The walī's word prevails: al-Inṣāf labels it the madhhab and al-Iqnāʿ states it, with Ibn Rajab's «أشهرهما»; against it the view reported from Abū Bakr.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p475",
+          "excerpt_ar": "وأنكر وليه) وجب القصاص والقول قول المنكر هذا المذهب قال في الفروع: فالقود أو الدية في الأصح إن أنكر الولي",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ's «وإن قتل من لا يعرف وادعى كفره أو رقه ...»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p180",
+          "excerpt_ar": "وجب القصاص والقول قول المنكر مع يمينه إذا لم تكن بينة ومتى صدق المنكر فلا قود ولا دية",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn, «إذا لم تكن بينة»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f016",
+      "grades": [
+        "takhrij",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Half prevails, by the muʿtamad's ruling in the cognate two-contract case (graded qiyās) with al-Qāḍī; the whole is only the implication of Abū al-Khaṭṭāb and al-Majd.",
+      "evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p222",
+          "excerpt_ar": "ولها المهر في العقد الثاني إن كان دخل بها ونصفه في العقد الأول أن أدعى سقوط نصفه بالطلاق قبل الدخول",
+          "position": 1,
+          "grade": "qiyas",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The cognate: the first of two contracts, he claiming half lapsed by ṭalāq before consummation; if he denies the contracts altogether she is asked."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p155",
+          "excerpt_ar": "ونصفه) أي المهر (في العقد الأول إن ادعى سقوط نصفه بالطلاق قبل الدخول) لأن الأصل عدم لزومه له.",
+          "position": 1,
+          "grade": "qiyas",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The sharḥ: «لأن الأصل عدم لزومه له»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f017",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Permission prevails: al-Inṣāf's taṣḥīḥ and al-Iqnāʿ, both positions being riwāyas.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p424",
+          "excerpt_ar": "قوله (وإن رمى صيدا. فغاب عنه، ثم وجده ميتا لا أثر به غير سهمه: حل) . وكذا لو رماه على شجرة، أو جبل، فوقع على الأرض. هذا المذهب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "He lists the other riwāyas (mortal wound; found the same day; near; never)."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p325",
+          "excerpt_ar": "وإن رمى صيدا ولو ليلا فجرحه ولو غير موح فغاب عن عينه ثم وجده ميتا - ولو بعد يومه - وسهمه فقط فيه أو أثره ولا أثر به غيره - حل",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f018",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The Muslim's word prevails: al-Inṣāf's taṣḥīḥ with al-Iqnāʿ and Kashshāf; the captive's riwāya was chosen by Abū Bakr.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p205",
+          "excerpt_ar": "قوله (ومن جاء بمشرك، فادعى أي المشرك أنه أمنه فأنكر) يعني المسلم (فالقول قوله) يعني المسلم هذا المذهب. وعليه أكثر الأصحاب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "He reports «وعنه قول الأسير. اختاره أبو بكر» and the third riwāya."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p037",
+          "excerpt_ar": "وادعى المشرك عليه أنه أمنه فأنكر فالقول قول المسلم",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p106",
+          "excerpt_ar": "أمنه فأنكر فالقول قول المسلم) لأن الأصل عدم الأمان",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The sharḥ: «لأن الأصل عدم الأمان»."
+        }
+      ]
+    }
+  ]
+}
