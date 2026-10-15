@@ -1,0 +1,348 @@
+{
+  "suite": "m8_rajab_rajab_a23",
+  "status": "candidate",
+  "provenance": "Shard rajab-a23 (lane A): every farʿ record of Ibn Rajab's qawāʿid 153 and 157, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA23). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f001",
+      "encoder": "grandchild_in_child_term",
+      "class": "derivable",
+      "facts": {
+        "included_with_or_without_child": true,
+        "included_only_absent_child": false,
+        "intermediate_child_present": true
+      },
+      "expected": true,
+      "note": "Leading ruling: the women forbidden in marriage, «المحرمات في النكاح كالبنات وحلائل الأبناء»: the granddaughter is as the daughter, and the grandson's wife as the son's. No dispute reported. A first-kind ruling («يدخل في مسماه مطلقا مع وجود الولد وعدمه»): the fact that the child is present is set to the branch that distinguishes the kind, and does not decide it."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f002",
+      "encoder": "grandchild_in_child_term",
+      "class": "derivable",
+      "facts": {
+        "included_with_or_without_child": true,
+        "included_only_absent_child": false,
+        "intermediate_child_present": true
+      },
+      "expected": true,
+      "note": "«امتناع القصاص بين الأب وولده»: the grandfather is not killed for his grandchild, as the father is not for his child. No dispute reported. A first-kind ruling («يدخل في مسماه مطلقا مع وجود الولد وعدمه»): the fact that the child is present is set to the branch that distinguishes the kind, and does not decide it."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f003",
+      "encoder": "grandchild_in_child_term",
+      "class": "derivable",
+      "facts": {
+        "included_with_or_without_child": true,
+        "included_only_absent_child": false,
+        "intermediate_child_present": true
+      },
+      "expected": true,
+      "note": "«امتناع قطعه في السرقة من مال ولده»: no amputation for theft from the grandchild's property either. No dispute reported. A first-kind ruling («يدخل في مسماه مطلقا مع وجود الولد وعدمه»): the fact that the child is present is set to the branch that distinguishes the kind, and does not decide it."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f004",
+      "encoder": "grandchild_in_child_term",
+      "class": "derivable",
+      "facts": {
+        "included_with_or_without_child": true,
+        "included_only_absent_child": false,
+        "intermediate_child_present": true
+      },
+      "expected": true,
+      "note": "«رد شهادة الوالد لولده»: the grandfather's testimony for his grandchild is rejected as the father's is. No dispute reported. A first-kind ruling («يدخل في مسماه مطلقا مع وجود الولد وعدمه»): the fact that the child is present is set to the branch that distinguishes the kind, and does not decide it."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f005",
+      "encoder": "grandchild_in_child_term",
+      "class": "derivable",
+      "facts": {
+        "included_with_or_without_child": true,
+        "included_only_absent_child": false,
+        "intermediate_child_present": true
+      },
+      "expected": true,
+      "note": "«وجوب إعتاق الولد على والده»: the grandchild owned by his grandfather is freed on him as the child on his father. No dispute reported. A first-kind ruling («يدخل في مسماه مطلقا مع وجود الولد وعدمه»): the fact that the child is present is set to the branch that distinguishes the kind, and does not decide it."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f006",
+      "encoder": "grandchild_in_child_term",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "included_with_or_without_child": true,
+        "included_only_absent_child": false,
+        "intermediate_child_present": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the grandfather's emancipation draws the walāʾ whether or not the father is present (Ibn Rajab's first riwāya; «وعنه: يجره إلى مواليه» in al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "he does not draw it while the father is present (the riwāya that he never draws it, «لا يجره الجد بحال», the madhhab per al-Inṣāf; and the riwāya that he draws it only if the father is lost)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Jarr al-walāʾ: the grandchildren of a freedwoman whose father and grandfather are slaves, when the grandfather is freed. Ibn Rajab places it in the first kind with three riwāyas: «سواء كان الأب موجودا أو لم يكن»; «إن كان الأب مفقودا جر الجد الولاء ... وإن كان موجودا لم يجره»; «لا يجره الجد بحال». The record does not say whether the father is present; the khilāf arises on either branch, and the case is annotated on the branch with the father present, which separates the first kind from the second (there the first riwāya alone gives the draw). The reading, from the qāʿida's placement, gives the first riwāya. al-Inṣāf (v07:p389): «(وإن أعتق الجد لم يجر ولاءهم في أصح الروايتين) ... وهذا المذهب. وعليه الأصحاب», with Kashshāf, al-Iqnāʿ and al-Furūʿ stating that he does not draw it. Off the madhhab: a residue for this placement. Follow-on: on the madhhab, a father freed after the grandfather draws it from the grandfather's patrons (al-Inṣāf)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f007",
+      "encoder": "grandchild_in_child_term",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "included_with_or_without_child": true,
+        "included_only_absent_child": false,
+        "intermediate_child_present": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the grandchild is included in a waqf on «the child» (Aḥmad's naṣṣ in the riwāyas of al-Marrūdhī, Yūsuf b. Abī Mūsā and al-Munādī; al-Khallāl, Ibn Abī Mūsā and al-Qāḍī in his note on his Khilāf; the madhhab per al-Inṣāf and Taṣḥīḥ al-Furūʿ)",
+          "ruling": true
+        },
+        {
+          "who": "not included while a child exists (al-Qāḍī in Aḥkām al-Qurʾān; those of the aṣḥāb who took al-Mujarrad to exclude the grandchild from the bare term; «والرواية الثانية: لا يدخلون مطلقا» in al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: «الوقف على الولد فيدخل فيه ولد الولد نص عليه أحمد». Annotated with the child present, the branch where al-Qāḍī's Aḥkām al-Qurʾān view («إن كان ثم ولد لم يدخل ولد الولد») parts from the naṣṣ. al-Inṣāf (v07:p075): «إحداهما: يدخلون مطلقا. وهو المذهب»; Taṣḥīḥ al-Furūʿ «وهو الصحيح من المذهب»; al-Iqnāʿ, al-Muntahā and both of al-Buhūtī's sharḥs state it. On the madhhab side. Follow-ons: whether they share with their parents or come after them («على وجهين»; al-Inṣāf: «فلا يستحقون إلا بعد آبائهم مرتبا. على الصحيح من المذهب»), and if in order, by stratum or by each parent («والثاني هو منصوص أحمد»); the reading of al-Mujarrad's «ثم على أولاد أولاده ثم على الفقراء» (exclusion, or two strata named and then the poor, as in al-Talkhīṣ). The grandchildren of daughters are taken up in the next record."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f008",
+      "encoder": "grandchild_in_child_term",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "included_with_or_without_child": true,
+        "included_only_absent_child": false,
+        "intermediate_child_present": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "a bequest to his child includes the son's child as the waqf does (the aṣḥāb, «وقد جعل الأصحاب حكمها حكم الواقف»; Abū al-Khaṭṭāb reports a naṣṣ of Aḥmad)",
+          "ruling": true
+        },
+        {
+          "who": "the bequest is confined to the existing upper stratum (the indication of al-Shaykh Taqī al-Dīn: «الوصية تمليك للموجودين فيختص بالطبقة العليا الموجودة»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: «الوصية لولده، وقد جعل الأصحاب حكمها حكم الواقف». Annotated with the child present, where Taqī al-Dīn's farq bites; Ibn Rajab notes that Aḥmad's known text is on the waqf only. Taṣḥīḥ al-Furūʿ (v07:p366): the bequest takes the waqf's ruling «خلافا ومذهبا»; al-Inṣāf (v07:p076) «حكم الوقف»; Kashshāf and Sharḥ al-Muntahā include the sons' children in the bequest. On the madhhab side. Follow-ons: the daughters' children, not included on al-Khiraqī's and al-Qāḍī's choice, included on Abū Bakr's and Ibn Ḥāmid's (two wujūh), and Aḥmad's naṣṣ in al-Marrūdhī's riwāya that they are not included in the waqf on the child, which Ibn Abī Mūsā and al-Shīrāzī confine to the bare term «الولد». Candidate farq: Taqī al-Dīn's perpetuity of the waqf against the bequest's ownership by those existing."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f009",
+      "encoder": "grandchild_in_child_term",
+      "class": "derivable",
+      "facts": {
+        "included_with_or_without_child": true,
+        "included_only_absent_child": false,
+        "intermediate_child_present": true
+      },
+      "expected": true,
+      "note": "Leading ruling: «المنع في دفع الزكاة إلى الولد يدخل فيه ولد الولد وسواء في ذلك ولد الذكور والإناث على المنصوص عن أحمد», because «ولد البنت قد ثبت له حكم الولد في موضع», unlike the waqf and bequest, which follow the name in use. No dispute reported. A first-kind ruling («يدخل في مسماه مطلقا مع وجود الولد وعدمه»): the fact that the child is present is set to the branch that distinguishes the kind, and does not decide it. The record runs on into the second kind's heading and its first instance, inheritance: grandchildren inherit their grandfather when their father is lost, but the grandfather does not inherit as the father «على ظاهر المذهب», with a wajh that he does, chosen by Ibn Baṭṭa, Abū Ḥafṣ al-Barmakī and Taqī al-Dīn."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f010",
+      "encoder": "grandchild_in_child_term",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "included_with_or_without_child": false,
+        "included_only_absent_child": true,
+        "intermediate_child_present": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the grandfather is guardian after the father, ahead of the son (al-Khiraqī and al-Qāḍī; the madhhab per al-Inṣāf, «وعليه الأصحاب»)",
+          "ruling": true
+        },
+        {
+          "who": "the son is put ahead of the grandfather (the riwāya chosen by Ibn Abī Mūsā and al-Shīrāzī, reported in al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: «ولاية النكاح ; فيلي الجد فيها بعد الأب مقدما على الابن على قول الخرقي والقاضي». Second kind, the father absent: the grandfather stands in his place. Ibn Rajab's «على قول الخرقي والقاضي» marks a dispute; its other side is the riwāya al-Inṣāf reports. al-Inṣāf (v08:p069): «هذا المذهب. وعليه الأصحاب. وعنه: يقدم الابن وابنه على الأب والجد»; al-Iqnāʿ and Sharḥ al-Muntahā put the grandfather ahead of the son. On the madhhab side. Follow-on: he does not take the father's place in compelling a marriage «على المذهب», with a riwāya reported by Ibn al-Zāghūnī that he does."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f011",
+      "encoder": "grandchild_in_child_term",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "included_with_or_without_child": false,
+        "included_only_absent_child": true,
+        "intermediate_child_present": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the grandfather leads the funeral prayer after the father, ahead of the son (Ibn Rajab «على الصحيح أيضا»; the madhhab per al-Inṣāf, «وعليه الأصحاب»)",
+          "ruling": true
+        },
+        {
+          "who": "the son is put ahead of the grandfather (the riwāya al-Inṣāf reports for the ghusl of the dead, to which it refers the prayer)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: «ولاية الصلاة على الجنازة فيلي الجد بعد الأب مقدما على الابن على الصحيح أيضا». Second kind, the father absent. al-Inṣāf (v02:p474): «فبعد الوصي والحاكم في الصلاة عليه أبوه، ثم جده، ثم أقرب العصبة، على الصحيح من المذهب، وعليه الأصحاب، على ما تقدم في غسله», where (v02:p472) «وعنه يقدم الابن على الجد فقط»; Kashshāf orders «الأب ثم الجد له وإن علا ثم الابن». On the madhhab side. al-Inṣāf also reports the iḥtimāl from the wording of al-Talkhīṣ and al-Muḥarrar of putting the son ahead of the father."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f012",
+      "encoder": "grandchild_in_child_term",
+      "class": "derivable",
+      "facts": {
+        "included_with_or_without_child": false,
+        "included_only_absent_child": true,
+        "intermediate_child_present": false
+      },
+      "expected": true,
+      "note": "«الحضانة فإن الجد أولى رجالها بها بعد الأب». Second kind, the father absent: the grandfather takes the father's place. No dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f013",
+      "encoder": "grandchild_in_child_term",
+      "class": "derivable",
+      "facts": {
+        "included_with_or_without_child": false,
+        "included_only_absent_child": false,
+        "intermediate_child_present": false
+      },
+      "expected": false,
+      "note": "«الرجوع في الهبة»: the grandfather may not take back his gift to his grandchild, as the father may. No dispute reported. A third-kind ruling («ما لا يدخل فيه في مسمى الولد بحال»): the child is taken as absent, the branch that distinguishes the kind, and his absence does not admit the grandchild."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f014",
+      "encoder": "grandchild_in_child_term",
+      "class": "derivable",
+      "facts": {
+        "included_with_or_without_child": false,
+        "included_only_absent_child": false,
+        "intermediate_child_present": false
+      },
+      "expected": false,
+      "note": "«الأخذ من مال الولد بغير حاجة»: the grandfather may not take from his grandchild's property as the father may. No dispute reported. A third-kind ruling («ما لا يدخل فيه في مسمى الولد بحال»): the child is taken as absent, the branch that distinguishes the kind, and his absence does not admit the grandchild."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f015",
+      "encoder": "grandchild_in_child_term",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "included_with_or_without_child": false,
+        "included_only_absent_child": false,
+        "intermediate_child_present": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the grandfather has no guardianship over the grandchild's property (Ibn Rajab's placement in the third kind; the madhhab per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "he has it («وفيه رواية»; «وعنه: للجد ولاية» in al-Inṣāf)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«ولاية المال وفيه رواية». Third kind, the father absent. al-Inṣāf (v05:p324): «أن الجد والأم وسائر العصبات ليس لهم ولاية. وهو المذهب الذي عليه أكثر الأصحاب. ... وعنه: للجد ولاية»; al-Iqnāʿ, Kashshāf and Sharḥ al-Muntahā deny it. On the madhhab side. Follow-on (al-Inṣāf): on the riwāya, he comes before the ḥākim, and before the father's waṣī on the ṣaḥīḥ."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f016",
+      "encoder": "grandchild_in_child_term",
+      "class": "derivable",
+      "facts": {
+        "included_with_or_without_child": false,
+        "included_only_absent_child": false,
+        "intermediate_child_present": false
+      },
+      "expected": false,
+      "note": "«الاستئذان في الجهاد»: the grandchild need not ask his grandfather's leave for jihād as he must his parents'. No dispute reported. A third-kind ruling («ما لا يدخل فيه في مسمى الولد بحال»): the child is taken as absent, the branch that distinguishes the kind, and his absence does not admit the grandchild."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f017",
+      "encoder": "grandchild_in_child_term",
+      "class": "derivable",
+      "facts": {
+        "included_with_or_without_child": false,
+        "included_only_absent_child": false,
+        "intermediate_child_present": false
+      },
+      "expected": false,
+      "note": "«الاستتباع في الإسلام»: the grandchild does not follow his grandfather into Islam as he follows his father. No dispute reported. A third-kind ruling («ما لا يدخل فيه في مسمى الولد بحال»): the child is taken as absent, the branch that distinguishes the kind, and his absence does not admit the grandchild."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f018",
+      "encoder": "grandchild_in_child_term",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "included_with_or_without_child": false,
+        "included_only_absent_child": false,
+        "intermediate_child_present": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the grandfather is as the other relatives bound to maintain, sharing it with the other heir by inheritance (Ibn Rajab «فالمعروف»; the madhhab per al-Inṣāf, only the father bearing it alone)",
+          "ruling": false
+        },
+        {
+          "who": "the grandfather is as the father and bears it alone (the riwāya reported by Ibn al-Zāghūnī in al-Iqnāʿ, «وعنه: الجد والجدة كالأب في ذلك» in al-Inṣāf)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: «الانفراد بالنفقة مع وجود وارث غيره موسرا كان الوارث الذي معه أو معسرا فالمعروف أن حكمه حكم سائر من تلزمه النفقة». The father alone bears it whatever the other heir's means. Annotated on the branch where the other heir is well off: there the grandfather shares by inheritance on «المعروف», and bears all only on the riwāya that he is as the father; with a needy co-heir the further question of a full or proportionate share also enters. al-Inṣāf (v09:p397), on «إلا أن يكون له أب: فتكون النفقة عليه وحده»: «هذا المذهب مطلقا. وعليه الأصحاب», reporting «وعنه: الجد والجدة كالأب في ذلك»; al-Iqnāʿ divides between mother and grandfather «على الأم الثلث والباقي على الجد». On the madhhab side. A third-kind ruling («ما لا يدخل فيه في مسمى الولد بحال»): the child is taken as absent, the branch that distinguishes the kind, and his absence does not admit the grandchild. Follow-on: whether one well-off relative with a needy co-heir owes the whole or his share («على روايتين أصحهما لا يلزمه أكثر من مقدار إرثه منه»), and Ibn al-Zāghūnī's statement that this khilāf is in the grandfather and grandmother alone, other relatives owing only their share «بغير خلاف»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q157.f000",
+      "encoder": "idda_transfer_on_change",
+      "class": "derivable",
+      "facts": {
+        "idda_status_changes": true,
+        "husband_can_remedy_in_idda": true,
+        "sick_husband_ibana": false
+      },
+      "expected": true,
+      "note": "«الرجعية إذا أعتقت أو توفي زوجها انتقلت إلى عدة حرة أو عدة وفاة»: the husband can take her back in the ʿidda, so she moves. No dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q157.f001",
+      "encoder": "idda_transfer_on_change",
+      "class": "derivable",
+      "facts": {
+        "idda_status_changes": true,
+        "husband_can_remedy_in_idda": true,
+        "sick_husband_ibana": false
+      },
+      "expected": true,
+      "note": "Leading ruling: slave wives of a mushrik slave who become Muslim and are freed: «فإن عدتهن عدة حرائر ; لأنه عتق في عدة يتمكن الزوج فيها من الاستدراك بالإسلام». No dispute reported. Contrasted: where the slave became Muslim and the slave wives were freed while still mushrik, «فإن عدتهن عدة إماء ; لأن الزوج لا يمكنه تلافي نكاحهن» (the reading gives no move there: transfersToNewIdda true false false = false)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q157.f002",
+      "encoder": "idda_transfer_on_change",
+      "class": "derivable",
+      "facts": {
+        "idda_status_changes": true,
+        "husband_can_remedy_in_idda": true,
+        "sick_husband_ibana": false
+      },
+      "expected": true,
+      "note": "«المرتد إذا قتل في عدة امرأته فإنها تستأنف عدة الوفاة نص عليه في رواية ابن منصور ; لأنه كان يمكنه تلافي النكاح بالإسلام», «بناء على أن الفسخ يقف على انقضاء العدة». The text states the remedy as the ground; whether the faskh by apostasy waits on the ʿidda is a separate prior ruling the case takes as given (on the riwāya of immediate faskh he could not remedy it, and the reading would give no move)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q157.f003",
+      "encoder": "idda_transfer_on_change",
+      "class": "derivable",
+      "facts": {
+        "idda_status_changes": true,
+        "husband_can_remedy_in_idda": true,
+        "sick_husband_ibana": false
+      },
+      "expected": true,
+      "note": "«لو أسلمت المرأة وهي تحت كافر ثم مات قبل انقضاء العدة فإنها تنتقل إلى عدة الوفاة في قياس التي قبلها ذكره الشيخ تقي الدين»: he could remedy the marriage by becoming Muslim in her ʿidda. No dispute reported."
+    }
+  ]
+}

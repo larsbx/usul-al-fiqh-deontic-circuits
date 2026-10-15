@@ -1,0 +1,334 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f006",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The grandfather's emancipation does not draw the walāʾ while the father lives: «هذا المذهب. وعليه الأصحاب» in al-Inṣāf, stated decisively in al-Furūʿ, al-Iqnāʿ and Kashshāf; the riwāya that he draws it at all events, which the qāʿida's first-kind placement gives, is marjūḥ.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p389",
+          "excerpt_ar": "قوله (وإن أعتق الجد لم يجر ولاءهم في أصح الروايتين) . وكذا قال في المذهب وغيره. وهذا المذهب. وعليه الأصحاب.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ; he adds al-Zarkashī's «هو المشهور، والمختار للأصحاب من الروايات»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p389",
+          "excerpt_ar": "والحاوي الصغير، والفروع، وغيرهم. وعنه: يجره إلى مواليه.",
+          "position": 0,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The riwāya that he draws it, reported after the madhhab."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p084",
+          "excerpt_ar": "وإن عتق الجد قبله لم يجره، وعنه: بلى، مع موت الأب، وعنه: مطلقا، ثم إن عتق الأب جره",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn Mufliḥ, al-Furūʿ",
+          "note": "The leading statement, with the other two riwāyas after it."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p128",
+          "excerpt_ar": "الجد ولو قبل الأب أو بعد موته لم يجر ولاءهم وأن اشترى الابن أبا عتق عليه",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn: whether freed before the father or after his death."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p505",
+          "excerpt_ar": "(وإن أعتق الجد ولو قبل الأب أو) عتق (بعد موته) أي الأب (لم يجر ولاءهم)",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The sharḥ continues with Aḥmad's «الجد لا يجر الولاء، ليس هو كالأب»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f007",
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The sons' children are included in a waqf on «the child»: Aḥmad's naṣṣ, «وهو المذهب» in al-Inṣāf and «الصحيح من المذهب» in Taṣḥīḥ al-Furūʿ, stated by al-Iqnāʿ, al-Muntahā and both of al-Buhūtī's sharḥs; the second riwāya and al-Qāḍī's exclusion while a child exists stand against it.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p075",
+          "excerpt_ar": "إحداهما: يدخلون مطلقا. وهو المذهب. نص عليه في رواية المروذي، ويوسف بن موسى، ومحمد بن عبد الله المنادي.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ «وهل يدخل فيه ولد البنين؟ على روايتين»; he cites this qāʿida among those who put it first."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p075",
+          "excerpt_ar": "والرواية الثانية: لا يدخلون مطلقا. قال المصنف في باب الوصايا والقاضي، وابن عقيل: لا يدخلون بدون قرينة. قال المصنف، والشارح: اختاره القاضي، وأصحابه.",
+          "position": 1,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The second riwāya; he then reports al-Qāḍī's Aḥkām al-Qurʾān view (excluded while a child exists)."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v07:p365",
+          "excerpt_ar": "أحدهما: يشمله، وهو الصحيح من المذهب، نص عليه في رواية المروذي ويوسف بن موسى ومحمد بن عبد الله المنادي",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+          "note": "Taṣḥīḥ al-Furūʿ, masʾala 8."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p020",
+          "excerpt_ar": "ويدخل ولد بنيه وجد وإحالة الوقف أولا ولا يدخل ولد البنات كوصية ويستحقونه مرتبا",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn (the witness's «وجد وإحالة» for «وجدوا حالة»)."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p371",
+          "excerpt_ar": "الذكور والإناث بالسوية وولد البنين وجدوا حالة الوقف أو لا كوصية",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, al-Muntahā",
+          "note": "The matn, of a waqf on his child then the poor."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p278",
+          "excerpt_ar": "(ويدخل) أيضا في الوقف على ولده ولده وأولاده أو ولد غيره أو أولاده (ولد بنيه) مطلقا (وجدوا) أي: ولد البنين (حالة الوقف أو لا)",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Sharḥ of al-Iqnāʿ."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p418",
+          "excerpt_ar": "(و) دخل (ولد البنين) مطلقا سواء (وجدوا حالة الوقف أو لا كوصية) لولد فلان، فيدخل فيه أولاده الموجودون حالة الوصية وأولاد بنيه",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ al-Muntahā",
+          "note": "Sharḥ of al-Muntahā."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f008",
+      "grades": [
+        [
+          "jazm",
+          "nass"
+        ],
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "A bequest to one's child includes the sons' children as the waqf does: the aṣḥāb's equation, Taṣḥīḥ al-Furūʿ «خلافا ومذهبا», with Kashshāf and Sharḥ al-Muntahā; Taqī al-Dīn's restriction to the existing upper stratum stands against it.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v07:p366",
+          "excerpt_ar": "المسألة الثانية-9: حكم ما إذا أوصى لولد غيره في دخول ولد بنيه الموجودين ومن سيوجد بعد الوصية وقبل موت الموصي حكم ما تقدم في التي قبلها خلافا ومذهبا.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+          "note": "Taṣḥīḥ al-Furūʿ: the bequest follows the waqf, whose madhhab is inclusion."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p076",
+          "excerpt_ar": "الثاني: حكم ما إذا أوصى لولده في دخول ولد بنيه: حكم الوقف. قاله في الفروع، وغيره.",
+          "position": 0,
+          "grade": "qiyas",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The waqf's taṣḥīḥ carried to the bequest; he then quotes this qāʿida's report of Taqī al-Dīn's indication."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p279",
+          "excerpt_ar": "(وكذا حكم وصية) في تناول الولد أو الأولاد لأولاد البنين.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Sharḥ of al-Iqnāʿ."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p418",
+          "excerpt_ar": "فيدخل فيه أولاده الموجودون حالة الوصية وأولاد بنيه وجدوا حالة الوصية أو بعدها قبل موت الموصي لا من وجد بعد موته.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ al-Muntahā",
+          "note": "Sharḥ of al-Muntahā, on «كوصية»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f010",
+      "grades": [
+        "ashab",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The grandfather is the bride's guardian after the father and ahead of her son: «هذا المذهب. وعليه الأصحاب» in al-Inṣāf, stated by al-Iqnāʿ and Sharḥ al-Muntahā; the riwāya putting the son ahead of the grandfather stands against it.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p069",
+          "excerpt_ar": "ثم ابنه، وإن سفل) . هذا المذهب. وعليه الأصحاب. وعنه: يقدم الابن وابنه على الأب والجد.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ «أبوها. ثم أبوه وإن علا. ثم ابنها»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p069",
+          "excerpt_ar": "وعنه: يقدم الابن على الجد. اختاره ابن أبي موسى، والشيرازي.",
+          "position": 1,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The riwāya."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p172",
+          "excerpt_ar": "بنكاح المرأة الحرة أبوها ثم أبوه وأن علا وأولى الأجداد أقربهم ثم ابنها",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p638",
+          "excerpt_ar": "(فأبوه وإن علا) أي الجد للأب، وإن علا فيقدم على الابن وابنه، لأن له إيلادا أو تعصيبا، فقدم عليهما كالأب",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ al-Muntahā",
+          "note": "Sharḥ of al-Muntahā."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f011",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The grandfather leads the funeral prayer after the father and ahead of the son: «على الصحيح من المذهب، وعليه الأصحاب» in al-Inṣāf, and Kashshāf's order; the riwāya putting the son ahead, stated for the ghusl of the dead and carried to the prayer by reference, stands against it.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v02:p474",
+          "excerpt_ar": "إذا علمت ذلك فبعد الوصي والحاكم في الصلاة عليه أبوه، ثم جده، ثم أقرب العصبة، على الصحيح من المذهب، وعليه الأصحاب، على ما تقدم في غسله.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of the prayer, after the waṣī and the ruler."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p110",
+          "excerpt_ar": "الأولى بالصلاة على الحر (أقرب العصبة) يعني الأب ثم الجد له وإن علا ثم الابن ثم ابنه وإن نزل",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Sharḥ of al-Iqnāʿ «ثم أقرب العصبة»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f015",
+      "grades": [
+        "ashab",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The grandfather has no guardianship of property: «وهو المذهب الذي عليه أكثر الأصحاب» in al-Inṣāf, stated by al-Iqnāʿ, Kashshāf and Sharḥ al-Muntahā; the riwāya giving him guardianship stands against it.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p324",
+          "excerpt_ar": "ظاهر قوله (ثم لوصيه. ثم للحاكم) أن الجد والأم وسائر العصبات ليس لهم ولاية. وهو المذهب الذي عليه أكثر الأصحاب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ's order of guardians of the child's property."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p324",
+          "excerpt_ar": "وقدمه في الفروع، والرعايتين، والحاويين، والفائق، والمحرر، والنظم. وعنه: للجد ولاية.",
+          "position": 1,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The riwāya."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p223",
+          "excerpt_ar": "يقوم به والجد والأم وسائر العصبات لا ولاية لهم ولا يجوز لوليهما أن يتصرف في مالهما إلا على وجه الحظ لهما",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p447",
+          "excerpt_ar": "(والجد) لا ولاية له لأنه لا يدلي بنفسه وإنما يدلي بالأب فهو كالأخ",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Sharḥ of al-Iqnāʿ."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p175",
+          "excerpt_ar": "فإن عدم) حاكم أهل (فأمين يقوم مقامه) أي الحاكم وعلم منه أنه لا ولاية للجد والأم وباقي العصبات",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ al-Muntahā",
+          "note": "Sharḥ of al-Muntahā."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f018",
+      "grades": [
+        "ashab",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Only the father bears a relative's maintenance alone; the grandfather with a well-off co-heir shares it by inheritance: «هذا المذهب مطلقا. وعليه الأصحاب» in al-Inṣāf and al-Iqnāʿ's division between mother and grandfather; the riwāya that the grandparents are as the father stands against it.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p397",
+          "excerpt_ar": "قوله (وعلى هذا حساب النفقات. إلا أن يكون له أب: فتكون النفقة عليه وحده) . هذا المذهب مطلقا. وعليه الأصحاب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ, whose example just before is «فإذا كان أم وجد: فعلى الأم الثلث، والباقي على الجد»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p397",
+          "excerpt_ar": "وقال ابن عقيل في التذكرة: الولد مثل الأب في ذلك. وعنه: الجد والجدة كالأب في ذلك. ذكرهما ابن الزاغوني في الإقناع.",
+          "position": 1,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The riwāya Ibn al-Zāghūnī reports."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p148",
+          "excerpt_ar": "فأم وجد على الأم الثلث والباقي على الجد وجدة وأخ على الجدة السدس والباقي على الأخ",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn, of an heir other than the father."
+        }
+      ]
+    }
+  ]
+}
