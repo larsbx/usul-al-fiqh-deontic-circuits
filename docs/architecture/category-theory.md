@@ -2,8 +2,8 @@
 
 The roadmap (§0) gives category theory one job: **compositional specification, checked through
 Lean statements**. `formal/lean/Usul/Cat/` is that layer. Like the rest of the kernel it does not
-depend on Mathlib: it has a small core (`Basic`) and three modules, each discharging a roadmap
-claim. Vectors are in `formal/lean/UsulTest/Cat.lean`.
+depend on Mathlib: it has a small core (`Basic`) and modules that each discharge a roadmap
+claim. Vectors are in `formal/lean/UsulTest/Cat.lean`, `Obstructions.lean` and `Institutions.lean`.
 
 | Module | Roadmap | Claim | Main results |
 |---|---|---|---|
@@ -11,6 +11,7 @@ claim. Vectors are in `formal/lean/UsulTest/Cat.lean`.
 | `Scales` | §2.1, H7 | the sciences' scales are thin categories, and their seams are functors | `sigmaIso : hukmCat ≅ hukmCatᵒᵖ`, `gradeOfVerdict`, `hujja_upSet` |
 | `Factor` | §2.5, M9 L-QIY-1 | ʿilla valid ⇔ ruling factors through the feature; naqḍ = witness against | `factors_iff_functor`, `factors_iff_exists`, `factorsOn_iff_extension`, `not_factorsOn_iff_naqd`, `qiyas_determined`, `unattested_free` |
 | `Sheaf` | M10 | local verdicts glue iff they match; ikhtilāf is a named obstruction | `gluing`, `glue_unique`, `no_glue_iff_obstruction`, `glues_iff_obstructions_nil` |
+| `Institution`, `Carriers` | M11 | carriers as institutions; a check in one carrier proves the statement in another when the model maps are onto | `Comorphism.comp`, `entails_iff`, `compile`, `initial`, `always_iff`, `entailsB_iff` |
 
 ## Scales
 
@@ -107,11 +108,51 @@ they all agree. A `genuine_ikhtilaf` case is therefore exactly a case with an ob
 For set-valued verdicts the obstruction to gluing is a pairwise disagreement: a Čech 1-cochain
 that does not vanish. The layer does not claim a cohomology group.
 
+## Institutions across carriers (M11)
+
+`Institution` packages a carrier's signatures (a category), sentences and models over each
+signature, and satisfaction. The satisfaction condition `M' ⊨ σ(φ) ↔ M'|σ ⊨ φ` is a field: truth
+does not depend on notation. A `Comorphism I J` translates signatures and sentences forward and
+models backward, preserving satisfaction, and is natural in both. Comorphisms compose
+(`Comorphism.comp`).
+
+**Borrowing** (`Comorphism.entails_iff`): every comorphism preserves consequence. When every
+source model is the reduct of some target model, it also reflects consequence. This is the
+precise sense in which a TLC run or a QuickCheck property *proves* a Lean-side statement. Without
+that surjectivity, a pass is evidence but not proof.
+
+`Usul.Cat.Carriers` instantiates this on the fragment the three carriers share: finitely many
+Boolean state variables, with renamings `Fin m → Fin n` as signature morphisms (`finSet`).
+
+| Institution | Sentences | Models | Carrier |
+|---|---|---|---|
+| `propI` | Boolean formulas `Form n` | valuations | Lean state predicates |
+| `traceI` | `now φ`, `always φ` (`□φ`), `step ψ` (`[][ψ]_vars`, over primed and unprimed vars) | finite behaviours | TLA+ within TLC's bounds |
+| `execI` | `(Fin n → Bool) → Bool` | valuations | Haskell, `#eval` |
+
+* `compile : propI ⥤ execI` maps a formula to its evaluator. `initial : propI ⥤ traceI` maps it to
+  `Init`. Both model maps are onto (`compile_onto`, `initial_onto`), so borrowing is exact.
+* An invariant `□φ` is not the image of a comorphism, because one valuation cannot stand for a
+  behaviour. It reduces statewise instead (`always_iff`), which is what TLC checks.
+* `entailsB` decides `propI` consequence by truth tables (`entailsB_iff`, complete via
+  `mem_allVals`).
+
+Fixtures (`UsulTest/Institutions.lean`) read `formal/tla/Taklif.tla` in this fragment:
+* its `Init`, `OnlyMukallafBound`, `RukhsaNeedsSabab` and `BulughIrreversible` hold on a behaviour
+  built from the spec's own actions (Init → Bulugh → Depart → TakeRukhsa → Arrive → LoseAql);
+* two mutants each violate exactly one property;
+* the satisfaction conditions of `propI`, `traceI` along the embedding of the subject signature
+  (bulūgh, ʿaql), `compile` and `initial` are checked on every fixture and every valuation;
+* the mukallaf sentence is `Subject.IsMukallaf` read on a valuation (the bridge to `Usul.Signature`);
+* a binding duty entails mukallaf, decided in `propI` and transported to `traceI`.
+
 ## Open
 
 * **M10, beyond one point:** covers over several situations, such as context separations like
   the Q2 farʿ 2 vector, need the facts that separate the contexts. The bank records those per
   case, not per position.
 * **M9 exit:** Haskell laws for L-QIY-1 in `semantic-categorical-oracle`.
-* **M11:** institutions across carriers (Lean, TLA+, Haskell) with signature morphisms.
-  `Basic` is the place for them.
+* **M11, the rest:** connect the fixtures to TLC itself (export the behaviour as a TLA+ trace
+  spec and check it), and mirror `execI` in `semantic-categorical-oracle` (Haskell), then
+  register the contracts with their laws. Comorphisms for the richer fragments (sets such as
+  `bound`, naturals such as `events`) extend `Form` with those sorts.

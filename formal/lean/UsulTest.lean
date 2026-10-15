@@ -18,3 +18,4 @@ import UsulTest.Cat
 import UsulTest.R2Sample1Semantic
 import UsulTest.KernelContracts
 import UsulTest.Obstructions
+import UsulTest.Institutions
