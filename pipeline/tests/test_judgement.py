@@ -56,10 +56,33 @@ def test_report_lists_the_untyped_and_never_guesses():
 
 def test_label_flags_count_taklifi_labels_whose_question_is_wadi_or_riwaya():
     labels = [{"id": "a", "hukm": "haram"}, {"id": "b", "hukm": "mubah"}, {"id": "c", "hukm": None}]
-    qs = {"a": "هل خروج الدم يبطل الصلاة؟", "b": "ما صحة حديث من زار قبري", "c": "هل يبطل"}
+    qs = {"a": "هل خروج الدم يبطل الصلاة؟", "b": "ما صحة حديث من زار قبري", "c": "هل يبطل الصلاة"}
     rep = judgement.label_flags(labels, qs)
     assert rep["taklifi_labels"] == 2 and rep["flagged"] == 2 and rep["riwaya"] == ["b"]
-    assert rep["by_cue"] == {"riwaya": 1, "wadi:validity": 2}
+    assert rep["by_cue"] == {"riwaya": 1, "wadi:validity": 1}
+
+
+@pytest.mark.parametrize("text", ["هل يصح أن أسافر غدا", "سأل عن الصحة النفسية", "الاتجاه الصحيح للقبلة",
+                                  "حكم تجزئة المساحة", "أرض زراعية يملكها", "يضمن له مستقبلا", "هدية للعروس",
+                                  "شركة ضامنة", "بعد انعقاد الخطبة", "ما صحة هذا المقال"])
+def test_cues_do_not_fire_on_the_false_hits_found_in_review(text):
+    assert not any(rx.search(text) for rx in judgement._FLAG_RX.values())
+
+
+@pytest.mark.parametrize("text, cue", [("هل يبطل الصيام", "wadi:validity"), ("فهل عمرتها صحيحة", "wadi:validity"),
+                                       ("شروط صحة الصلاة", "wadi:validity"), ("فهل يضمن", "wadi:sabab/daman"),
+                                       ("هل تجب الدية", "wadi:sabab/daman"), ("فهل يقع الطلاق", "wadi:sabab/milk"),
+                                       ("ما صحة حديث", "riwaya")])
+def test_cues_fire_on_their_questions(text, cue):
+    assert judgement._FLAG_RX[cue].search(text)
+
+
+def test_flag_precision_uses_the_evaluation_sample_and_reports_a_floor():
+    sample = {"judge": "j", "evaluation": {"items": [{"cue": "riwaya", "asks_that": True}] * 9 +
+                                                     [{"cue": "riwaya", "asks_that": False}]}}
+    rep = judgement.flag_precision(sample, {"taklifi_labels": 100, "by_cue": {"riwaya": 10}})
+    assert rep["per_cue"]["riwaya"] == {"sample": 10, "correct": 9, "precision": 0.9, "lower95": 0.596}
+    assert rep["mismatch_floor"] == 0.06
 
 
 def test_committed_types_are_checked_and_generated():

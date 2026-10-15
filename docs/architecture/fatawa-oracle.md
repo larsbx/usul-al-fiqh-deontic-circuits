@@ -154,7 +154,22 @@ The takhrīj tranche tests the *bank* against the texts. The Prolog oracle asks 
 | `unknown_owner` | 17 | 15 | 12 | 11 |
 | **total** | **122** | **119** | **68** | **64** |
 
-**Read this as a fit, not an accuracy.** The rules were written and corrected against these same 122 texts. The first pass agreed on 105. Each of the 14 cases fixed since then rests on a rule that a text states (Majmaʿ al-Fiqh's traffic-accident exemptions as quoted in islamqa.345284, «يضاف الحكم إلى المباشر», «البينة على المدعي»). Only a held-out tranche measures whether the rules generalise.
+**This is a fit, not an accuracy** (`fit: in_sample` in the report). The rules were written and then revised against these same 122 texts.
+- **Revised rules.** After the first run, seven rules were added and four changed (`rule_revision/2` in the rules file). Each cites a text: Majmaʿ al-Fiqh's traffic-accident exemptions as quoted in islamqa.345284, «يضاف الحكم إلى المباشر», «البينة على المدعي». But they were chosen because cases failed.
+- **Post-hoc facts, unverified.** Six facts were added to 9 cases to rescue them: `unavoidable`, `other_direct_actor`, `later_death`, `muslim_buried`, `self_keeping`, `perishable` (`post_hoc` in the facts file). They were read from the annotators' notes and have not been checked against the answers.
+- **The first run scored 105 of 122** (`first_run`), against 119 after revision. This is a rerun, not a filter: the rules the tranche was first run with, without the post-hoc facts, over the same cases.
+  - Those rules were never committed. The snapshot [`rules_islamqa_first_run.pl`](../../corpus/fatawa/prolog/snapshots/rules_islamqa_first_run.pl) is today's rules with every `rule_revision/2` undone.
+  - It reproduces the recorded 105/122, and a test pins that.
+- **By sort** (`per_sort`), the three sorts in the tranche fare differently:
+
+  | sort | decided | oracle (revised) | first run | bank |
+  |---|---:|---:|---:|---:|
+  | sabab (ḍamān) | 48 | 48 | 44 | 18/18 answered |
+  | effect (finds, unknown owner) | 47 | 44 | 35 | 22/26 answered |
+  | epistemic (aṣl / ẓāhir) | 27 | 27 | 26 | 24/24 answered |
+
+  Most of the revision went into the effect domains.
+- Only a fresh tranche, untouched by revision, measures whether the rules generalise.
 
 **The three recorded gaps** are all answers that permit a *choice* between rulings, which a single-valued ruling cannot hold:
 - islamqa.126387.f001: charity or the officials, never keeping it;
@@ -192,6 +207,12 @@ The classical takhrīj banks (`corpus/takhrij`) total 461 cases: Saʿdī, dalāl
 **Disputes run the other way.** Over half of the classical cases are disputed, because Ibn Rajab reports the riwāyāt and wujūh with their reasoning. A fatwā argues for one answer from its evidence, so IslamQA has only 2 disputed cases.
 
 ### The Prolog oracle on held-out classical cases
+
+**On held-out cases the oracle did worse than the bank.**
+- Rerun with the rules as they stood before these cases joined (the committed file at 3da8400, [`rules_before_classical.pl`](../../corpus/fatawa/prolog/snapshots/rules_before_classical.pl)), it agreed on 24 of the 26 decided classical cases (`first_run`). The bank alone agreed on all 26.
+- The two misses are Ibn Rajab's q026 repel-harm cases.
+- `itlaf_bi_haqq`, which closes the gap, was added *after* seeing these cases. So today's 26/26 is labelled `revised_after_held_out`, not held out.
+- So far the oracle adds nothing over the bank on cases it was not fitted to.
 
 [`classical_facts.json`](../../corpus/fatawa/prolog/classical_facts.json) brings into the oracle the 53 classical cases of its five encoders. The rules were never written against these cases.
 - **26 decided cases:** the stated ruling is the target (`agrees/1`).
