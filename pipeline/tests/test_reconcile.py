@@ -181,6 +181,15 @@ def test_named_companions_count_once_per_ruling():
     assert reconcile.prevail([("a", "nass"), ("a", "nass"), ("b", "nass")]) == "a"
 
 
+def test_a_gap_naming_a_refinement_is_not_a_departure():
+    """A missing_rule case names the reading it examined; it has no facts, so the jamʿ check skips it."""
+    jam = {"encoder": "successive_by_binding", "from": "successive_contracts", "farq": "r"}
+    f = lambda e, l: {"successive": True, "earlier_binding": e, "later_binding": l}
+    moved = _ikh("x", False, [True, False], True, "successive_by_binding", f(True, False))
+    gap = {"far": "g", "encoder": "successive_by_binding", "class": "missing_rule", "facts": {}, "needs": ["rule:r"], "note": "n"}
+    assert reconcile.check([moved, gap], {"entries": [_entry("x", ["ashab", "zahir"], jam)]}, DOSSIER) == []
+
+
 def test_every_jam_lands_on_the_prevailing_side():
     jam = {"encoder": "successive_by_binding", "from": "successive_contracts", "farq": "r"}
     f = lambda e, l: {"successive": True, "earlier_binding": e, "later_binding": l}

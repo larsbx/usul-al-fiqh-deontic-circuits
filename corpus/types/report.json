@@ -14,20 +14,20 @@
     "takyif": 21
   },
   "cases": {
-    "dalala": 105,
-    "effect": 202,
-    "epistemic": 98,
-    "judgement/aspect:obligatory": 35,
-    "judgement/aspect:permitted": 52,
-    "judgement/taklifi": 5,
-    "judgement/wadi:mani": 46,
+    "dalala": 106,
+    "effect": 207,
+    "epistemic": 119,
+    "judgement/aspect:obligatory": 47,
+    "judgement/aspect:permitted": 73,
+    "judgement/taklifi": 13,
+    "judgement/wadi:mani": 48,
     "judgement/wadi:sabab": 286,
-    "judgement/wadi:shart": 21,
-    "judgement/wadi:validity": 180,
-    "procedure": 49,
-    "takyif": 126
+    "judgement/wadi:shart": 22,
+    "judgement/wadi:validity": 199,
+    "procedure": 51,
+    "takyif": 147
   },
-  "cases_typed_by_judgement": 0.519,
+  "cases_typed_by_judgement": 0.522,
   "untyped": [],
   "hard": {
     "advance_after_cause": "wadi:validity: in worship «لا يجوز» here also means the advanced act does not count",

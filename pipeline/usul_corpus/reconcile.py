@@ -168,7 +168,7 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
             errs.append(f"{enc}: one earlier reading per refinement")
             continue
         frm = frm.pop()
-        home = [c for c in cases if c["encoder"] == enc]
+        home = [c for c in cases if c["encoder"] == enc and c["class"] in ("derivable", "genuine_ikhtilaf")]  # a gap has no facts
         for c in home:
             flipped = _old(c, frm) != c["expected"]
             if flipped and (c["far"] not in entries or prevail(graded(c, entries[c["far"]])) != c["expected"]):

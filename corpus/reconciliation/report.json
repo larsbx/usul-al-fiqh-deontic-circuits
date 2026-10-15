@@ -1,6 +1,6 @@
 {
-  "entries": 596,
-  "evidence_items": 2118,
+  "entries": 602,
+  "evidence_items": 2139,
   "side_checks": [
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002",
@@ -9,16 +9,16 @@
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f006",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f012"
   ],
-  "confirming": 325,
+  "confirming": 328,
   "stages": {
     "jam": 20,
     "naskh": 1,
-    "tarjih": 561,
+    "tarjih": 567,
     "tawaqquf": 14
   },
   "standing": {
-    "against_reading": 171,
-    "for_reading": 411,
+    "against_reading": 174,
+    "for_reading": 414,
     "tawaqquf": 14
   },
   "worklist": {
@@ -50,7 +50,8 @@
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034",
-      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037"
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00002.p03"
     ],
     "two_usul_reinforced_governs": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f001",
@@ -84,6 +85,12 @@
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f007",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f009",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f013"
+    ],
+    "badal_stands_for_original": [
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00005.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006.p06",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f006"
     ],
     "concurrent_condition": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f002",
@@ -157,10 +164,6 @@
     "attached_right_disposal": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f009",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f010"
-    ],
-    "badal_stands_for_original": [
-      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f001",
-      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f006"
     ],
     "benefit_condition_against_compensation": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f000",
