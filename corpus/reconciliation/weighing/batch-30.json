@@ -1,0 +1,464 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b30: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He could not free a slave before entering the fast, so the fast is not dropped, as if the inability lasted until he finished",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p040",
+     "excerpt_ar": "ولنا أنه لم يقدر على العتق قبل تلبسه بالصيام، فلم يسقط عنه، كما لو استمر العجز إلى بعد الفراغ",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For position 0 (no switch). Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He found the original after starting the substitute's fast, like the mutamattiʿ who finds the hady after starting the seven days",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p040",
+     "excerpt_ar": "ولأنه وجد المبدل بعد الشروع في صوم البدل. فلم يلزمه الانتقال إليه، كالمتمتع يجد الهدي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For position 0. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He became able to do the original before discharging the duty by the substitute, so he must return to it, like one who did tayammum and finds water before or during the prayer",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p040",
+     "excerpt_ar": "إلى أنه يلزمه العتق؛ لأنه قدر على الأصل قبل أداء فرضه بالبدل، فلزمه العود إليه، كالمتيمم يجد الماء",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for Ibn Sīrīn, ʿAṭāʾ, al-Nakhaʿī, al-Thawrī and the Ḥanafīs, who hold the ruling of position 1 (the switch); the ḥanbalī wajh shares it. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The Prophet: «Clean earth is the Muslim's wuḍūʾ even if he finds no water for ten years; when you find water, let it touch your skin» (Abū Dāwūd, al-Nasāʾī): by its implied sense it is no purifier once water is found, by its spoken sense he must use the water",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p198",
+     "excerpt_ar": "ولنا قوله - عليه السلام -: «الصعيد الطيب وضوء المسلم وإن لم يجد الماء عشر سنين، فإذا وجدت الماء",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's lead proof that the tayammum and so the prayer are void (position 0). A connected marfūʿ āḥād report: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Tayammum is a purity of necessity, void when the necessity ends, like the mustaḥāḍa's purity when her bleeding stops",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p198",
+     "excerpt_ar": "ولأن التيمم طهارة ضرورة، فبطلت بزوال الضرورة كطهارة المستحاضة إذا انقطع دمها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For position 0, on the necessity reading Ibn Rajab names. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "He is forbidden to void the prayer by «and do not void your deeds» (Muḥammad 33), so he is not able to use the water",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p198",
+     "excerpt_ar": "لأن قدرته تتوقف على إبطال الصلاة، وهو منهي عن إبطالها، بقوله تعالى: {ولا تبطلوا أعمالكم}",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for Mālik, al-Shāfiʿī and the riwāya that he continues (position 1). The āya by its generality, not explicit on tayammum: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He found the original after engaging in what the substitute was for, so he need not leave, as one who finds the slave after starting the kaffāra fast",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p197",
+     "excerpt_ar": "واحتجوا بأنه وجد المبدل بعد التلبس بمقصود البدل، فلم يلزمه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For position 1. Qiyas (al-Mughnī rebuts it, but it is the argument given for that ruling)."
+    }
+   ],
+   "advantages": [
+    {
+     "for": 0,
+     "over": 1,
+     "by": "khass",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p198",
+     "excerpt_ar": "دل بمفهومه: على أنه لا يكون طهورا عند وجود الماء، وبمنطوقه على وجوب إمساسه جلده عند وجوده",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Both are zanni. The ḥadīth speaks to the very case of finding water after tayammum, while «ولا تبطلوا أعمالكم» is general over all deeds: the specific over the general."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Marrying a slave woman was permitted only for need; when the need ends he may not continue it, as one permitted carrion in necessity may not continue eating it once he finds the lawful",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p138",
+     "excerpt_ar": "وهو قول المزني؛ لأنه إنما أبيح للحاجة، فإذا زالت الحاجة لم يجز له استدامته، كمن أبيح له أكل الميتة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For position 0 (dissolved), the wajh/riwāya sharing al-Muzanī's view. Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "aqrabSahabi",
+     "dalil": "Ibn ʿAbbās: the slave wife's marriage is dissolved when he marries a free woman over her (gaining the means)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p138",
+     "excerpt_ar": "والرواية الثانية، ينفسخ نكاح الأمة. وهو قول ابن عباس ومسروق، وإسحاق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "On the cognate lapse (marrying a free woman, the riwāya «ووجه الروايتين ما تقدم في المسألة»). A ṣaḥābī's view with ʿAlī reported against it: aqrabSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Lacking the means is one of the two conditions for marrying a slave woman, so its continuance is not required, like fear of ʿanat; continuance differs from initiation, as ʿidda, ridda and safety from ʿanat bar initiation only",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p138",
+     "excerpt_ar": "ولنا، أن فقد الطول أحد شرطي إباحة نكاح الأمة، فلم تعتبر استدامته، كخوف العنت",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For position 1 (not dissolved). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "aqrabSahabi",
+     "dalil": "ʿAlī: when he marries the free woman over the slave woman, he gives the free woman two nights and the slave woman one, showing the marriage stands",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p139",
+     "excerpt_ar": "وقد استدل على بقاء النكاح بما روي عن علي أنه قال: إذا تزوج الحرة على الأمة، قسم للحرة ليلتين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For position 1; al-Mughnī adds that if it were void by marrying a free woman it would be void by ability. ʿAlī against Ibn ʿAbbās: aqrabSahabi."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The Prophet's ḥadīth «whoever finds his goods themselves with a man who has become bankrupt has more right to them», applied once the mortgagee's right is dropped: the seller has 'found his goods themselves' with the buyer",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p323",
+     "excerpt_ar": "وإن أفلس وهو رهن، فأبرأ المرتهن المشتري من دينه، أو قضى الدين من غيره، فللبائع الرجوع أيضا كذلك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī gives the seller the return when the pledge is released after the bankruptcy, on the same ground just given for release before it («أنه أدرك متاعه بعينه»), i.e. the wording of the ḥadīth quoted on this page. A connected marfūʿ āḥād report (al-Mughnī defends its connection on the previous page) reaching this farʿ by its general wording: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: once the creditor of the slave's offence releases the debt, the seller finds his goods themselves free of any other person's attached right, so the bar is gone and the return applies",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p324",
+     "excerpt_ar": "وإن أبرأ الغريم من الجناية، فللبائع الرجوع فيه؛ لأنه وجد متاعه بعينه خاليا من تعلق حق غيره به",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For position 0 on these facts (a right attached to the bought thing, then dropped). A stated ʿilla («لأنه…»): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same rationale extended to the dropped shufʿa and the dropped pledge: the seller found his goods themselves with no other right attached",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p427",
+     "excerpt_ar": "فللبائع الرجوع) لأنه وجد متاعه بعينه لم يتعلق به حق لغيره",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf gives this for the release from the arsh, then carries it to the shafīʿ or murtahin who drops his right (the very facts). Stated ʿilla: qiyas."
+    }
+   ],
+   "advantages": [],
+   "searched": "Position 1 (the takhrīj ranking the seller with the creditors): no argument found in al-Mughnī v04 p321–325 (taflīs, fourth condition), al-Sharḥ al-Kabīr, al-Kāfī, Kashshāf v03 p427–428."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Borrowing the pledge makes the mortgagee liable, because the ruling is built on the ʿāriya, which is a liable hold in the madhhab",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p289",
+     "excerpt_ar": "ومتى استعار المرتهن الرهن صار مضمونا عليه. وبهذا قال الشافعي. وقال أبو حنيفة: لا ضمان عليه. ومبنى ذلك على العارية، فإنها عندنا مضمونة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For position 0: the use of the pledge with the owner's permission is a borrowing, and borrowing carries liability. A characterisation plus the rule of its aṣl (ʿāriya): qiyas."
+    }
+   ],
+   "advantages": [],
+   "searched": "Position 1 (never liable, ẓāhir of Aḥmad per Majd): not argued in al-Mughnī v04 p288–289, al-Sharḥ al-Kabīr v04 p440, al-Kāfī v02 p084, al-Mubdiʿ v04 p226; Kashshāf v04 p166 states the pledge as liable."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A deposit whose owner permits its use becomes, once used, a liable loan, like the pledge whose owner permits the mortgagee to use it; unused it stays a trust, since use is not the deposit's aim",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p167",
+     "excerpt_ar": "فإن أذن المالك) للمدفوع إليه المال (في التصرف) أي: استعماله (ففعل) أي: استعمله حسب الإذن (صارت عارية مضمونة) كالرهن",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "For position 0 (liable while used). Explicit aṣl (the pledge permitted for use) and farʿ: qiyas."
+    }
+   ],
+   "advantages": [],
+   "searched": "Position 1 (not liable, the later authors' ẓāhir of Aḥmad): no argument found in al-Mughnī (wadīʿa and rahn, v04 p289), al-Sharḥ al-Kabīr, al-Kāfī, al-Mubdiʿ, Kashshāf v04 p165–166."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "After the term the pledge is held under a void sale; a void contract takes the valid one's rule on liability, and sale is liable",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p288",
+     "excerpt_ar": "صار بعد ذلك مضمونا؛ لأنه مقبوض بحكم بيع فاسد، وحكم الفاسد من العقود حكم الصحيح في الضمان",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For position 0 (liable after the time). Stated ʿilla with the aṣl the valid sale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The condition is void, so its existence counts as its absence and the hold remains a pledge's (trust) hold",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p352",
+     "excerpt_ar": "أنه لا يضمنه بحال ذكره القاضي في الخلاف؛ لأن الشرط فسد، فيصير وجوده كعدمه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf, quoting al-Qawāʿid for the naṣṣ of Aḥmad in the riwāya of Muḥammad b. al-Ḥasan b. Hārūn (position 1), gives this reason. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The earnings stay his in both cases: they were his property before, and nothing removed them from his hand, as when the master releases him from the kitāba money",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p331",
+     "excerpt_ar": "وما في يده من الكسب له في الحالين، لأنه كان مملوكا له ولم يوجد ما يخرجه عن يده، فبقي له",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's ruling and reason for position 0 (his, under the kitāba) when the master dies before payment. Stated ʿilla with an aṣl: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Ibn Qudāma (shaykhunā): he is freed and his children and earnings follow him, because the master cannot void the kitāba, which binds on his side; he can only drop his claim, as if he released him from the kitāba money",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v12:p325",
+     "excerpt_ar": "وعندي أنه ينبغي أن يعتق ويتبعه ولده وإكسابه لأن السيد لا يملك إبطال كتابته لكونها عقدا لازما من جهته",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "For position 0, against the aṣḥāb. Stated rationale (the binding kitāba): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "When freed by tadbīr, what is in his hand is the master's (and so the heirs'), since it was the master's before the freeing, as if he had not been a mukātab; the kitāba lapses",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v12:p325",
+     "excerpt_ar": "ومتى عتق بالتدبير كان ما في يده لسيده لأنه كان له قبل العتق فيكون له بعد العتق كما لو لم يكن مكاتبا",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "The aṣḥāb's view (position 1: the heirs'). Stated rationale with the aṣl (the plain mudabbar): qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "What forbids intercourse by a spoken act forbids its preliminaries, like ṭalāq and iḥrām",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p012",
+     "excerpt_ar": "إحداهما يحرم. وهو اختيار أبي بكر وهو قول الزهري، ومالك، والأوزاعي، وأبي عبيد وأصحاب الرأي. وروي ذلك عن النخعي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's reason for the riwāya of prohibition (position 0) follows directly: «لأن ما حرم الوطء من القول حرم دواعيه، كالطلاق والإحرام». Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is an intercourse whose prohibition carries a payment (kaffāra), so the prohibition does not go beyond it, like intercourse with a menstruating woman",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p012",
+     "excerpt_ar": "والثانية، لا يحرم. قال أحمد: أرجو أن لا يكون به بأس",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's reason for the riwāya of permission (position 1): «لأنه وطء يتعلق بتحريمه مال، فلم يتجاوزه التحريم، كوطء الحائض». Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The 'touching' (masīs) in the āya «before they touch one another» is a metonym for intercourse, so the prohibition is confined to it",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p169",
+     "excerpt_ar": "ولأن المسيس هنا كناية عن الوطء، فيقتصر عليه",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "For position 1: the āya of ẓihār read by an interpretation (kināya) of its word, not explicit: zanni."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Every istibrāʾ that forbids intercourse forbids its preliminaries, like the ʿidda; and they invite the intercourse forbidden for fear of mixing waters, so the captive resembles the bought slave",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p149",
+     "excerpt_ar": "فأما المسبية، فظاهر كلام الخرقي تحريم مباشرتها فيما دون الفرج لشهوة. وهو الظاهر عن أحمد؛ لأن كل استبراء حرم الوطء حرم دواعيه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For position 0 on exactly these facts (the captive). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "fatwaSahabi",
+     "dalil": "Ibn ʿUmar: a slave girl fell to his share at Jalūlāʾ, «whose neck was like a silver jug», and he rose and kissed her while people watched",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p149",
+     "excerpt_ar": "وقع في سهمي يوم جلولاء جارية، كأن عنقها إبريق فضة، فما ملكت نفسي أن قمت إليها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the riwāya that it is not forbidden (position 1). A ṣaḥābī's act with no ṣaḥābī reported against it here: fatwaSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "No text covers the captive, and she cannot be likened to the bought slave (who may be another's umm walad); the captive is his in any case, and intercourse is forbidden only lest he water another's crop",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p149",
+     "excerpt_ar": "والمسبية مملوكة له على كل حال، وإنما حرم وطؤها لئلا يسقي ماءه زرع غيره",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For position 1. A stated ʿilla confining the bar to intercourse: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "She is a wife whose intercourse is forbidden for a supervening cause confined to the private part, so enjoying her short of it is permitted, as in menstruation",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v09:p130",
+     "excerpt_ar": "لأنها زوجة حرم وطؤها لعارض يختص بالفرج فأبيح الاستمتاع منها بما دونه كالحيض",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "For position 0 (preliminaries permitted). Aṣl: menstruation; ʿilla: a cause confined to the farj. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "What forbids intercourse forbids its preliminaries, like iḥrām",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v09:p130",
+     "excerpt_ar": "والثاني) لا تحل لأن ما حرم الوطئ حرم دواعيه كالإحرام",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "For position 1 (forbidden). Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f004",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "al-Qāḍī: joining the two owned sisters in the preliminaries is forbidden like intercourse",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p077",
+     "excerpt_ar": "وقال القاضي يحرم كالوطء) وقاله ابن رجب بحثا في القاعدة السادسة والثلاثين بعد المائة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "For position 1. The aṣl (joining them in intercourse) is named with «كـ»: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "After intercourse with one, the other is forbidden and the preliminaries of intercourse are like intercourse, by the generality of «and that you join two sisters» (al-Nisāʾ 23), which covers intercourse and contract",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p656",
+     "excerpt_ar": "نصا ودواعي الوطء كالوطء، لعموم قوله تعالى: {وأن تجمعوا بين الأختين}",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "For the ruling of position 1 (preliminaries forbidden in joining the sisters), on the variant after intercourse with one (Kashshāf: Ibn ʿAqīl's view may be read as before intercourse with either). The āya by its generality: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The preliminaries take intercourse's rule, since means take the rule of their ends (stated for the bought sister of his wife)",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p077",
+     "excerpt_ar": "ودواعي الوطء مثله) أي مثل الوطء فتحرم صححه في الإنصاف لأن الوسائل لها حكم المقاصد",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The cognate al-Inṣāf corrects; Kashshāf cites it against Ibn ʿAqīl. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": [],
+   "searched": "Position 0 (Ibn ʿAqīl: disliked, not forbidden): Kashshāf v05 p077, al-Iqnāʿ v03 p184 state it without proof; nothing found in al-Mughnī, al-Sharḥ al-Kabīr, al-Kāfī, al-Mubdiʿ."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f015",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "ʿAmr b. Shuʿayb from his father from his grandfather, marfūʿ: «whoever kills deliberately is handed to the heirs of the slain: if they wish they kill, if they wish they take the diya ... and whatever they settle on is theirs» (al-Tirmidhī: ḥasan gharīb)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p363",
+     "excerpt_ar": "أخذوا الدية، ثلاثين حقة، وثلاثين جذعة، وأربعين خلفة، وما صولحوا عليه فهو لهم. وذلك لتشديد القتل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited by al-Mughnī for a ṣulḥ over qiṣāṣ above, at or below the diya. A connected marfūʿ āḥād report graded ḥasan gharīb: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "Saʿīd b. al-ʿĀṣ, al-Ḥasan and al-Ḥusayn offered the son of Hudba b. Khashram's victim seven diyas to pardon him",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p363",
+     "excerpt_ar": "فبذل سعيد بن العاص والحسن والحسين لابن المقتول سبع ديات، ليعفو عنه، فأبى ذلك، وقتله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The ṣaḥāba's practice of offering far more than the diya for the qawad, with no ṣaḥābī reported against it in the source: fatwaSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is a countervalue for what is not wealth, so any agreed amount is valid, like the dower and the khulʿ payment; and it is a ṣulḥ over what ribā does not enter, like a ṣulḥ over goods",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p363",
+     "excerpt_ar": "ولأنه عوض عن غير مال، فجاز الصلح عنه بما اتفقوا عليه، كالصداق، وعوض الخلع، ولأنه صلح عما لا يجري فيه الربا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For position 0 on these facts (the qawad of a free victim is no wealth). Two analogies: qiyas."
+    }
+   ],
+   "advantages": [],
+   "searched": "Position 1 (Abū al-Khaṭṭāb's al-Intiṣār, not beyond the diya in its genus): no argument for deliberate killing found; al-Mughnī v04 p369 and al-Kāfī v02 p117 bar exceeding the diya only for khaṭaʾ, which is not these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f016",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The share is owned for something that is not wealth, like a gifted or inherited share; and it has no countervalue by which the pre-emptor could take it",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p235",
+     "excerpt_ar": "ولنا، أنه مملوك بغير مال، أشبه الموهوب والموروث، ولأنه يمتنع أخذه بمهر المثل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's own proof for no shufʿa in a share given as dower, khulʿ or ṣulḥ over deliberate blood (position 0). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is real estate owned by a contract of exchange, so it resembles sale (argument of Ibn Ḥāmid's side)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p235",
+     "excerpt_ar": "واحتجوا على أخذه بالشفعة بأنه عقار مملوك بعقد معاوضة، فأشبه البيع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For shufʿa in such a share (position 1: Ibn Ḥāmid, Mālik, al-Shāfiʿī). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "If the obligation is one of two things, choosing the ṣulḥ drops the qiṣāṣ and fixes the diya, so the share is a countervalue for wealth",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p236",
+     "excerpt_ar": "وأما إذا قلنا: إن الواجب أحد شيئين. فباختياره الصلح سقط القصاص، وتعينت الدية، فكان الجميع عوضا عن المال",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's rationale for shufʿa on the aḥad shayʾayn reading (the ground position 1 rests on). Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f017",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The settlement wealth becomes trade wealth by carrying over (istiṣḥāb) the trade intention in the slave, as when he takes a countervalue for it",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p244",
+     "excerpt_ar": "فصالح سيده على مال صار) المال (للتجارة) باستصحاب نية التجارة، كما لو اعتاض عنه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "For position 0 (trade wealth without new intention). An analogy to the countervalue in exchange, with the trade intention carried over: qiyas (the 'istiṣḥāb' here is of the intention, an analogy, not the barāʾa)."
+    }
+   ],
+   "advantages": [],
+   "searched": "Position 1 (not trade wealth without intention): no argument in al-Mughnī (zakāt al-tijāra), al-Sharḥ al-Kabīr, al-Mubdiʿ, al-Kāfī, Sharḥ al-Muntahā v01 p394; Kashshāf v02 p244 gives only position 0."
+  }
+ ]
+}

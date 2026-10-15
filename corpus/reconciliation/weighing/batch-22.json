@@ -1,0 +1,583 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b22: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The prayer is a worship performed in the prohibited manner, so it is invalid like the menstruant's prayer and fast; its standing, bowing and prostrating are themselves the forbidden occupation of another's land, and one cannot obey by what he disobeys",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p056",
+     "excerpt_ar": "ولنا أن الصلاة عبادة أتى بها على الوجه المنهي عنه، فلم تصح، كصلاة الحائض وصومها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ولنا» for the riwāya that prayer on usurped land is invalid: position 0. Analogy to the menstruant plus a stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The ḥadīth «من عمل عملا ليس عليه أمرنا فهو رد» (marfūʿ, no grade given), cited for the nullity of the usurper's worship, which al-Buhūtī says includes prayer «في ثوب أو بقعة مغصوبة»",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p321",
+     "excerpt_ar": "كأن صلى أو حج بمغصوب عالما ذاكرا وعقده فهما باطلان. لحديث",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Cited in Sharḥ al-Muntahā (bāb al-ghaṣb) for the invalidity of worship performed with the usurped, the bukʿa named just before: position 0. A marfūʿ āḥād ḥadīth bearing on the farʿ by its generality: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The place is a condition of prayer (hence no prayer on a swing or a carpet in the air), so prohibition attaching to the condition voids it; and the movements in the usurped house are the forbidden act itself",
+     "ref": "src:openiti-rajab-shamela21730/v01:p012",
+     "excerpt_ar": "أحدهما أن البقعة شرط للصلاة ولهذا لا تصح الصلاة في الأرجوحة ولا على بساط في الهواء",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The first of Ibn Rajab's two maʾkhadhs for nullity in the usurped bukʿa (the second: the movements are the prohibited act itself): position 0. A stated ʿilla: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The prohibition does not attach to the prayer itself, so it does not prevent validity, as when one prays while seeing a drowning man he could save",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p056",
+     "excerpt_ar": "لأن النهي لا يعود إلى الصلاة، فلم يمنع صحتها، كما لو صلى وهو يرى غريقا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given in al-Mughnī for the second riwāya (validity), there attributed to Abū Ḥanīfa, Mālik and al-Shāfiʿī's other qawl; it counts for the same ruling held by the Ḥanbalī riwāya (al-Khallāl, Ibn ʿAqīl): position 1. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The prohibition (on the usurped or silk turban, the gold ring, the khuff, the drawstring) does not attach to a condition of prayer, so it does not affect it, as one who keeps a usurped garment in his sleeve",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p153",
+     "excerpt_ar": "كخف وتكة كذلك ; لأن النهي لا يعود إلى شرط الصلاة، فلا يؤثر فيها، كما لو غصب ثوبا ووضعه بكمه",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "al-Buhūtī's ground for the Muntahā's «ولا يبطلها لبس عمامة وخاتم منهي عنهما»: validity, the majority's side, position 0. Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same ground: the prohibited ring, armlet, turban, drawstring or silk khuff is not a condition of prayer",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p270",
+     "excerpt_ar": "فإن صلاته صحيحة لأن النهي لا يعود إلى شرط الصلاة أشبه ما لو غصب ثوبا فوضعه في كمه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's ground for validity in these items: position 0. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "No qiṣāṣ was due in the wound (a jāʾifa and the like), so waiving it is void; qiṣāṣ became due only after the waiver, by the spread",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p357",
+     "excerpt_ar": "فلوليه القصاص؛ لأن القصاص لم يجب في الجرح، فلم يصح العفو عنه، وإنما وجب القصاص بعد عفوه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's ground for «فلوليه القصاص» after a pardon of qiṣāṣ in a non-retaliable wound that spreads to the life: position 0. A rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is a waiver of what was not due nor had its cause arisen, like releasing a debt before it is due",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p280",
+     "excerpt_ar": "لأنه عفو عما لم يجب ولا انعقد سبب وجوبه أشبه الإبراء من الدين قبل وجوبه",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "al-Buhūtī's ground for the Muntahā's «ولا يصح عفوه عن قود شجة لا قود فيها»: position 0. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The imām has wilāya over the one who refuses, and zakāt is a right open to deputising, so the imām's taking it falls in its place",
+     "ref": "src:openiti-rajab-shamela21730/v01:p221",
+     "excerpt_ar": "لأن للإمام ولاية على الممتنع وهذا حق تدخله النيابة فوقع موقعه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's ground for «أصح الوجهين», that the zakāt taken by force suffices outwardly and inwardly: position 0. A stated ʿilla: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The imām has wilāya in taking zakāt, which is why he takes it from the refuser by agreement; were it not to suffice he would not take it, or would take it again and again",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p478",
+     "excerpt_ar": "ولأن للإمام ولاية في أخذها، ولذلك يأخذها من الممتنع اتفاقا ولو لم يجزئه لما أخذها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given in al-Mughnī for al-Qāḍī's view (with al-Shāfiʿī) that the imām's taking suffices without the owner's intention; it bears a fortiori on the forced taking, position 0. A rationale with a reductio: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Intention being impossible on his part (he is coerced), its requirement lapses, as for the child and the madman whose guardian pays",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p478",
+     "excerpt_ar": "أجزأت من غير نية؛ لأن تعذر النية في حقه أسقط وجوبها عنه كالصغير والمجنون",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's statement of the ẓāhir of al-Khiraqī that the forcibly taken zakāt suffices without intention: position 0. Analogy to the child and madman: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The imām is the owner's agent, or the poor's agent, or both; in each case his intention cannot stand in for the owner's",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p478",
+     "excerpt_ar": "إلا بنية رب المال؛ لأن الإمام إما وكيله، وإما وكيل الفقراء",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The first ground Ibn Qudāma gives for Abū al-Khaṭṭāb's and Ibn ʿAqīl's view that it does not suffice inwardly without the owner's intention: position 1. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Zakāt is a worship requiring intention, so it does not suffice from one capable of intention without it, like prayer forced on someone, which is taken only to guard the outward",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p478",
+     "excerpt_ar": "ولأن الزكاة عبادة تجب لها النية، فلا تجزئ عمن وجبت عليه بغير نية، إن كان من أهل النية كالصلاة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second ground for Abū al-Khaṭṭāb and Ibn ʿAqīl (outwardly only): position 1. Analogy to prayer: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Zakāt is a pure worship, so it does not count without intention, like one who prays under compulsion",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p418",
+     "excerpt_ar": "لأنها عبادة محضة فلم تجز بغير نية، كالمصلي كرها، وهذا اختيار أبي الخطاب وابن عقيل",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's iḥtimāl that it does not suffice between him and God without his intention, Abū al-Khaṭṭāb's and Ibn ʿAqīl's choice: position 1. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The releaser did what the muḥrim was bound to do, and the muḥrim's hand has lost its standing and inviolability",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p453",
+     "excerpt_ar": "أرسله إنسان من يده، فلا ضمان عليه؛ لأنه فعل ما يلزمه فعله، ولأن اليد قد زال حكمها وحرمتها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's two grounds for no liability on the one who releases the game from the muḥrim's visible hand: position 0. Stated rationales: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He did what was specifically due from the muḥrim in this very thing, as one who returns a usurped thing to its owner",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v03:p142",
+     "excerpt_ar": "ذكره الأصحاب؛ لأنه فعل ما يتعين على المحرم فعله في هذه العين خاصة كالمغصوب",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's ground for the aṣḥāb's «فلا ضمان على المرسل»: position 0. Analogy to the usurped thing: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He performed what was due from the owner, as if he had paid his debt for him",
+     "ref": "src:openiti-rajab-shamela21730/v01:p222",
+     "excerpt_ar": "لا يضمن ; لأنه فعل الواجب عليه كما لو أدى عنه دينه في هذا الحال",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's ground for al-Qāḍī and most aṣḥāb: position 0. Analogy to paying another's debt: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The muḥrim's ownership has not ceased, so another's release of it is a destruction of his property, like killing it",
+     "ref": "src:openiti-rajab-shamela21730/v01:p222",
+     "excerpt_ar": "لأن ملكه لم يزل عنه وإرسال الغير إتلاف يوجب الضمان فهو كقتله",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The ground Ibn Rajab reports from al-Mubhij for liability of the releaser (unless a ḥākim or a child's guardian): position 1. (The printed «أنه لا يضمن» before it is contradicted by this very reason.) Analogy to killing: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The property fixed by the vow is like the designated uḍḥiya, whose slaughter by another without leave counts and is not compensated; there is no difference between vowed dirhams and the uḍḥiya",
+     "ref": "src:openiti-rajab-shamela21730/v01:p222",
+     "excerpt_ar": "أحدهما: لا ضمان عليه كالأضحية وهو اختيار أبي الخطاب في انتصاره",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Abū al-Khaṭṭāb's wajh (al-Intiṣār) of no liability, argued by analogy to the designated uḍḥiya, which Ibn Rajab endorses («بل نقول في نذر الصدقة بالمعين ما نقول في الأضحية المعينة»): position 0. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Discharging a vow needs the owner's intention, like zakāt, so another's giving it without leave does not count and he is liable",
+     "ref": "src:openiti-rajab-shamela21730/v01:p222",
+     "excerpt_ar": "وقد أشار القاضي إلى الفرق بأن النذر يحتاج إخراجه إلى نية كالزكاة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Qāḍī's farq for his and Ibn ʿAqīl's view that the giver is liable: position 1. Ibn Rajab rejects it («وهذا ممنوع»), but it is the ground cited for this side. Analogy to zakāt: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f009",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The handing over reached the one entitled to it, as when a stranger returns a deposit to its owner without the depositary's leave",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p496",
+     "excerpt_ar": "(لم يضمنه) لمصادفة الصرف مستحقه، كما لو دفع وديعة إلى ربها بلا إذن مودع",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "al-Buhūtī's ground for the Muntahā's «وإن صرف أجنبي الموصى به لمعين في جهته لم يضمنه»: no liability where the beneficiary is determined, position 0 on these facts. A stated ʿilla with an analogy to the returned deposit: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A debt bequeathed to a determined person has become his right, so he is like a determined heir and payment to him alone discharges",
+     "ref": "src:openiti-rajab-shamela21730/v01:p224",
+     "excerpt_ar": "في دفعه إلى الورثة والموصى له ; لأنه صار حقا له فهو كالوارث المعين",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The reason Ibn Rajab gives for the aṣḥāb's rule on the bequeathed debt, which he sets against Aḥmad's «أخاف» in support of the leading ruling that handing a bequest to its determined beneficiary falls in its place: position 0. Assimilation to the determined heir: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The obligation was one of two things; by choosing qiṣāṣ he forfeited the wealth due, and the pledgee's right, attached to the slave, attaches to its due substitute; so it is as if he killed or freed the pledge",
+     "ref": "src:openiti-rajab-shamela21730/v01:p303",
+     "excerpt_ar": "فإذا عينه بالقصاص فقد فوت المال الواجب على المرتهن وقد كان تعلق حقه برقبة العبد المرهون فيتعلق ببدله الواجب",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's ground for «أشهرهما اللزوم», Aḥmad's naṣṣ in Ibn Manṣūr's riwāya: position 0. A stated ʿilla with analogy to killing or freeing the pledge: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He destroyed wealth that became due by reason of the pledge's destruction, so he owes its value, as when the injury itself obliges wealth",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p281",
+     "excerpt_ar": "ولنا، أنه أتلف مالا استحق بسبب إتلاف الرهن، فغرم قيمته، كما لو كانت الجناية موجبة للمال",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ولنا» for Aḥmad's naṣṣ that the lesser value is taken from him and made a pledge: position 0. Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same ground as al-Mughnī",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p121",
+     "excerpt_ar": "فعليه قيمة أقلهما تجعل مكانه ; لأنه أتلف مالا استحق بسبب إتلاف الرهن فلزمه غرمه",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "al-Buhūtī's ground for the Muntahā's ruling of liability: position 0. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Wealth becomes fixed only by choosing it, choosing is a kind of earning, and he owes the pledgee no earning; so the muflis too need not take wealth for an injury",
+     "ref": "src:openiti-rajab-shamela21730/v01:p303",
+     "excerpt_ar": "لأن المال إنما يتعين بالاختيار والاختيار نوع تكسب والتكسب للمرتهن لا يلزم",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The ground for al-Majd's taṣḥīḥ of no liability: position 1. A stated rationale with a parallel (the muflis): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "No wealth was due by the injury nor ever became owed, and the pledgor need not strive to earn wealth for the pledgee",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p281",
+     "excerpt_ar": "وهو مذهب الشافعي؛ لأنه لم يجب بالجناية مال، ولا استحق بحال، وليس على الراهن أن يسعى للمرتهن",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given in al-Mughnī for the takhrīj that nothing is due, al-Shāfiʿī's madhhab; it counts for the same ruling as al-Majd's: position 1. A rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Claiming and waiving qiṣāṣ belong to the slave, not his master, even for a pure slave; a fortiori the mukātab",
+     "ref": "src:openiti-rajab-shamela21730/v01:p304",
+     "excerpt_ar": "ذكر القاضي في المجرد وابن عقيل الجواز ; لأن المطالبة بالقصاص والعفو عنه إلى العبد دون سيده",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Qāḍī's (al-Mujarrad) and Ibn ʿAqīl's ground for the mukātab's retaliating without his master's leave: position 0. A rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "In retaliating on one who injured him the mukātab forfeits no wealth owned by him (unlike the pledgor or the mukātab retaliating among his own slaves)",
+     "ref": "src:openiti-rajab-shamela21730/v01:p304",
+     "excerpt_ar": "وهذا بخلاف اقتصاص المكاتب من الجاني عليه فإنه لم يفوت به مالا مملوكا له",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's farq rebutting al-Qāḍī's qiyās from Abū Bakr's case and supporting the permission: position 0. A distinguishing ʿilla: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Had he waived for wealth, the wealth would be his; so too its substitute, the qiṣāṣ",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p602",
+     "excerpt_ar": "من جان على طرفه) أي المكاتب لأنه لو عفا عن مال لكان له. فكذا بدله",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "al-Buhūtī's ground for the Muntahā's «وله أن يقتص لنفسه» (without his master's leave): position 0. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Carried over from Abū Bakr's ruling barring the mukātab from retaliating among his own slaves without his master's leave",
+     "ref": "src:openiti-rajab-shamela21730/v01:p304",
+     "excerpt_ar": "قياس المذهب قول أبي بكر في منعه من الاقتصاص من عبيده إذا قتل بعضهم بعضا",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Qāḍī's (al-Khilāf) qiyās al-madhhab for barring him: position 1. A qiyās on another farʿ: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f008",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The wealth became due on the waiver of qiṣāṣ, and they cannot drop it after that, as with waiving the diya of an accidental killing",
+     "ref": "src:openiti-rajab-shamela21730/v01:p305",
+     "excerpt_ar": "أحدهما لا يسقط المال بإسقاطهم وهو المشهور ; لأن المال وجب بالعفو عن القصاص ولا يمكنهم إسقاطه بعد ذلك",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's tafrīʿ of the wajh that the gratis waiver does not drop the wealth (al-mashhūr), stated for the class he lists: the muflis, the mukātab, the sick man beyond a third and the heirs with an estate drowned in debt; here the muflis: position 0. Analogy to waiving the diya of khaṭaʾ: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "On the riwāya that the obligation is one of two things, the wealth becomes due by his saying 'I waive the qiṣāṣ', so 'without wealth' drops it after it became due and fixed, which the muflis may not do",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p362",
+     "excerpt_ar": "لم يملك؛ لأن المال يجب بقوله: عفوت عن القصاص. فقوله: على غير مال. إسقاط له بعد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's ground for barring the muflis's gratis waiver on that riwāya: position 0. A rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The wealth is due and he may not drop it, if the obligation is one of two things",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p544",
+     "excerpt_ar": "(لا) يعفو (مجانا) لأن المال واجب وليس له إسقاطه إذا قلنا الواجب أحد شيئين",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's ground for al-Iqnāʿ's «لا مجانا» for the muflis: position 0. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The wealth is fixed only by his choosing it or by his dropping the qiṣāṣ alone; dropping both in one connected utterance drops both without the wealth entering his ownership",
+     "ref": "src:openiti-rajab-shamela21730/v01:p305",
+     "excerpt_ar": "الثاني: يسقط في المحرر أنه المنصوص عليه ; لأن المال لا يتعين",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The ground of the wajh that al-Muḥarrar calls al-manṣūṣ, for the same class; here the muflis: position 1. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "On either riwāya on the effect of deliberate killing, the diya is not fixed, so the gratis waiver touches no fixed wealth; that is why the muflis's waiver without wealth is valid",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p359",
+     "excerpt_ar": "فما تعينت الدية، ولا تعينت الوصية بمال،؛ ولذلك صح العفو من المفلس إلى غير مال",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma applies it expressly to the muflis: position 1. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The diya has not become fixed, so the muflis's gratis waiver stands",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p544",
+     "excerpt_ar": "وفي المنتهى وغيره يصح عفوه مجانا لأن الدية لم تتعين، وقاله في المغني",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī's report of the Muntahā's ground (and al-Mughnī's): position 1. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f009",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The wealth became due on the waiver of qiṣāṣ, and they cannot drop it after that, as with waiving the diya of an accidental killing",
+     "ref": "src:openiti-rajab-shamela21730/v01:p305",
+     "excerpt_ar": "أحدهما لا يسقط المال بإسقاطهم وهو المشهور ; لأن المال وجب بالعفو عن القصاص ولا يمكنهم إسقاطه بعد ذلك",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's tafrīʿ of the wajh that the gratis waiver does not drop the wealth (al-mashhūr), stated for the class he lists: the muflis, the mukātab, the sick man beyond a third and the heirs with an estate drowned in debt; here the mukātab, whose ruling he gives as «وحكمه حكم المفلس»: position 0. Analogy to waiving the diya of khaṭaʾ: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The wealth is fixed only by his choosing it or by his dropping the qiṣāṣ alone; dropping both in one connected utterance drops both without the wealth entering his ownership",
+     "ref": "src:openiti-rajab-shamela21730/v01:p305",
+     "excerpt_ar": "الثاني: يسقط في المحرر أنه المنصوص عليه ; لأن المال لا يتعين",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The ground of the wajh that al-Muḥarrar calls al-manṣūṣ, for the same class; here the mukātab: position 1. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The diya has not become fixed, so the gratis waiver of the mukātab (and the others listed) stands",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p544",
+     "excerpt_ar": "والمكاتب وكذا المريض فيما زاد على الثلث) والمذهب صحة العفو من هؤلاء مجانا، لأن الدية لم تتعين",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī names the mukātab: position 1. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f010",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The wealth became due on the waiver of qiṣāṣ, and they cannot drop it after that, as with waiving the diya of an accidental killing",
+     "ref": "src:openiti-rajab-shamela21730/v01:p305",
+     "excerpt_ar": "أحدهما لا يسقط المال بإسقاطهم وهو المشهور ; لأن المال وجب بالعفو عن القصاص ولا يمكنهم إسقاطه بعد ذلك",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's tafrīʿ of the wajh that the gratis waiver does not drop the wealth (al-mashhūr), stated for the class he lists: the muflis, the mukātab, the sick man beyond a third and the heirs with an estate drowned in debt; here the heirs with a debt-drowned estate («وحكمه حكم ذلك»): position 0. Analogy to waiving the diya of khaṭaʾ: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The wealth became due and fixed on the waiver of qiṣāṣ, so 'without wealth' drops it after it was fixed, which the muflis's heir may not do",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p362",
+     "excerpt_ar": "وجوبه وتعيينه، ولا يملك ذلك. وهكذا الحكم في السفيه ووارث المفلس",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma extends the muflis's ruling to the muflis's heir: position 0. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The wealth is fixed only by his choosing it or by his dropping the qiṣāṣ alone; dropping both in one connected utterance drops both without the wealth entering his ownership",
+     "ref": "src:openiti-rajab-shamela21730/v01:p305",
+     "excerpt_ar": "الثاني: يسقط في المحرر أنه المنصوص عليه ; لأن المال لا يتعين",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The ground of the wajh that al-Muḥarrar calls al-manṣūṣ, for the same class; here the heirs: position 1. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The diya has not become fixed, so the gratis waiver of the muflis's heir (and the others listed) stands",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p544",
+     "excerpt_ar": "والمكاتب وكذا المريض فيما زاد على الثلث) والمذهب صحة العفو من هؤلاء مجانا، لأن الدية لم تتعين",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī's list includes «ووارث المفلس»: position 1. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f011",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The wealth became due on the waiver of qiṣāṣ, and they cannot drop it after that, as with waiving the diya of an accidental killing",
+     "ref": "src:openiti-rajab-shamela21730/v01:p305",
+     "excerpt_ar": "أحدهما لا يسقط المال بإسقاطهم وهو المشهور ; لأن المال وجب بالعفو عن القصاص ولا يمكنهم إسقاطه بعد ذلك",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's tafrīʿ of the wajh that the gratis waiver does not drop the wealth (al-mashhūr), stated for the class he lists: the muflis, the mukātab, the sick man beyond a third and the heirs with an estate drowned in debt; here the sick man beyond a third: position 0. Analogy to waiving the diya of khaṭaʾ: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The wealth is fixed only by his choosing it or by his dropping the qiṣāṣ alone; dropping both in one connected utterance drops both without the wealth entering his ownership",
+     "ref": "src:openiti-rajab-shamela21730/v01:p305",
+     "excerpt_ar": "الثاني: يسقط في المحرر أنه المنصوص عليه ; لأن المال لا يتعين",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The ground of the wajh that al-Muḥarrar calls al-manṣūṣ, for the same class; here the sick man: position 1. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Whether or not it fits in the third makes no difference, since deliberate killing obliges qawad (or one of two things), so neither the diya nor a bequest of wealth is fixed",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p359",
+     "excerpt_ar": "إذا ثبت هذا، فلا فرق بين أن يخرج من الثلث أو لم يخرج؛ لأن موجب العمد القود",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma on the dying victim's waiver: valid from the whole estate, position 1. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The wealth is not fixed, so the waiver of qawad is carried out from the whole estate even if his blood is all it holds",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p281",
+     "excerpt_ar": "ولو لم تكن) التركة (سوى دمه) نصا لعدم تعين المال",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "al-Buhūtī's ground for the Muntahā's «وإن أوجب قود أنفذ من أصل التركة»: position 1. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f014",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He dropped his right after its cause arose, so it drops, as when one waives pre-emption after the sale",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p359",
+     "excerpt_ar": "ولنا، أنه أسقط حقه بعد انعقاد سببه، فسقط، كما لو أسقط الشفعة بعد البيع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ولنا» for the validity of the victim's waiver of his killer after the wound (against those who treat it as a bequest to the killer): stated generally, it covers the heir who wounded him; position 0. Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Neither the diya nor a bequest of wealth is fixed, so the waiver is not a bequest needing the third (or, for an heir, the heirs' consent)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p359",
+     "excerpt_ar": "فما تعينت الدية، ولا تعينت الوصية بمال،؛ ولذلك صح العفو من المفلس إلى غير مال",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's reason why the third plays no part in the waiver of deliberate injury; it answers the wajh of suspension on the heirs' consent: position 0. A rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The rajʿiyya is in the ruling of wives, so she is lawful to him as before the divorce",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p520",
+     "excerpt_ar": "ويطأها. وهذا مذهب أبي حنيفة؛ لأنها في حكم الزوجات، فأبيحت له كما قبل الطلاق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's ground for the riwāya (al-Qāḍī: ẓāhir al-madhhab) that she is lawful, there given with Abū Ḥanīfa's madhhab: position 0. Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same ground: she is in the ruling of wives",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p343",
+     "excerpt_ar": "ولها أن تتزين له وتسرف) لأنها في حكم الزوجات كما قبل الطلاق",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī's ground for al-Iqnāʿ's «ويباح لزوجها وطؤها والخلوة والسفر بها»: position 0. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is a divorce that has taken effect, so it establishes prohibition, like a divorce for compensation",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p520",
+     "excerpt_ar": "ووجه الأولى، أنها طلقة واقعة، فأثبتت التحريم، كالتي بعوض",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ووجه الأولى» for the ẓāhir of al-Khiraqī that she is unlawful until taken back: position 1. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "She is divorced, so unlawful, as if divorced once for compensation",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v08:p474",
+     "excerpt_ar": "ومذهب الشافعي وحكي ذلك عن عطاء ومالك لأنها مطلقة فكانت محرمة كما لو طلقها بعوض واحدة",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr's ground for the riwāya that she is not lawful: position 1. Qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}
