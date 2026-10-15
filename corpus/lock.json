@@ -591,6 +591,12 @@
       "bytes": 772457,
       "sha256": "1c1f7d80090bb330f1c3c572c3230549252c307df0124eb61fdf7cd0aaf16af2"
     },
+    "openiti-shawkani-durarbahiyya-shamay34280": {
+      "witness": "openiti-shawkani-durarbahiyya-shamay34280",
+      "url": "https://raw.githubusercontent.com/OpenITI/1275AH/d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8/data/1255Shawkani/1255Shawkani.DurarBahiyya/1255Shawkani.DurarBahiyya.ShamAY0034280-ara1",
+      "bytes": 78322,
+      "sha256": "a06a22ab63960d8cff57fd4068146fd7ead558ef335507afaf2c3882d794fdbe"
+    },
     "openiti-shawkani-fathrabbani-shamela36543": {
       "witness": "openiti-shawkani-fathrabbani-shamela36543",
       "url": "https://raw.githubusercontent.com/OpenITI/1275AH/d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8/data/1255Shawkani/1255Shawkani.FathRabbaniMinFatawa/1255Shawkani.FathRabbaniMinFatawa.Shamela0036543-ara1",

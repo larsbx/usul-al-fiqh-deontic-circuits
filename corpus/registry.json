@@ -2291,6 +2291,43 @@
       }
     },
     {
+      "id": "shawkani.durar_bahiyya",
+      "title_ar": "الدرر البهية في المسائل الفقهية",
+      "title_tr": "al-Durar al-Bahiyya fī al-Masāʾil al-Fiqhiyya",
+      "author": {
+        "name_tr": "Muḥammad b. ʿAlī al-Shawkānī",
+        "death_ah": 1250
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "Matn of al-Rawḍa al-Nadiyya (qannawji.rawda_nadiyya). Witness: ed. Muḥammad Ṣubḥī Ḥallāq, Dār al-Nadā, Beirut 1413 (PageV01P001–P342). Not registered: ShamAY 36516, which carries Fayṣal Āl Mubārak's (d. 1376) al-Ghurar al-Naqiyya and so is a modern text.",
+      "witnesses": [
+        {
+          "id": "openiti-shawkani-durarbahiyya-shamay34280",
+          "kind": "openiti",
+          "repo": "1275AH",
+          "commit": "d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8",
+          "path": "data/1255Shawkani/1255Shawkani.DurarBahiyya/1255Shawkani.DurarBahiyya.ShamAY0034280-ara1",
+          "edition": "ShamAY 34280"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "matn",
+        "madhhab": "mujtahid",
+        "cite_as": [
+          "الدرر البهية"
+        ],
+        "not": [
+          "شرح الدرر البهية"
+        ]
+      }
+    },
+    {
       "id": "qannawji.rawda_nadiyya",
       "title_ar": "الروضة الندية شرح الدرر البهية",
       "title_tr": "al-Rawḍa al-Nadiyya",
