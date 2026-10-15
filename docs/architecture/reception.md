@@ -19,7 +19,7 @@ The selection is scholarly (what these four are known to rely on), then checked 
 - **Ijmāʿ and khilāf:** Ibn al-Mundhir (*al-Ijmāʿ*, *al-Awsaṭ*, *al-Ishrāf*), Ibn Ḥazm (*Marātib al-Ijmāʿ*, *al-Muḥallā*), Ibn ʿAbd al-Barr (*al-Tamhīd*, *al-Istidhkār*), Ibn Rushd (*Bidāyat al-Mujtahid*), al-Nawawī (*al-Majmūʿ*).
 - **Ḥanbalī mutūn and shurūḥ:** Ibn Qudāma (*al-Mughnī*, *al-Kāfī*, *al-Muqniʿ*, *ʿUmdat al-Fiqh*), Majd al-Dīn (*al-Muḥarrar*), *al-Sharḥ al-Kabīr*, Ibn Mufliḥ (*al-Furūʿ*), *al-Mubdiʿ*, al-Mardāwī (*al-Inṣāf*, already registered), al-Ḥajjāwī (*Zād al-Mustaqniʿ*, *al-Iqnāʿ*), Ibn al-Najjār (*Muntahā al-Irādāt*), al-Buhūtī (*al-Rawḍ al-Murbiʿ*, *Kashshāf al-Qināʿ*, *Sharḥ al-Muntahā*).
 - **Ibn Taymiyya and Ibn al-Qayyim:** *Majmūʿ al-Fatāwā*, *al-Fatāwā al-Kubrā*, *al-Mustadrak*, *Jāmiʿ al-Masāʾil*, al-Baʿlī's *al-Ikhtiyārāt al-Fiqhiyya*; *Zād al-Maʿād*, *Iʿlām al-Muwaqqiʿīn* (already registered), *al-Ṭuruq al-Ḥukmiyya*, *Aḥkām Ahl al-Dhimma*, *Ighāthat al-Lahfān*, *Badāʾiʿ al-Fawāʾid*; Ibn Rajab's *Qawāʿid* (already registered).
-- **Ḥadīth al-aḥkām:** al-Khaṭṭābī (*Maʿālim al-Sunan*), al-Nawawī (*Sharḥ Muslim*), Ibn Ḥajar (*Fatḥ al-Bārī*, *Bulūgh al-Marām*, *al-Talkhīṣ al-Ḥabīr*), al-Ṣanʿānī (*Subul al-Salām*), al-Shawkānī (*Nayl al-Awṭār*, *al-Sayl al-Jarrār*, *al-Fatḥ al-Rabbānī*, and *al-Durar al-Bahiyya*, the matn of *al-Rawḍa*), Ṣiddīq Ḥasan Khān (*al-Rawḍa al-Nadiyya*). These are al-Albānī's main interlocutors.
+- **Ḥadīth al-aḥkām:** al-Khaṭṭābī (*Maʿālim al-Sunan*), al-Nawawī (*Sharḥ Muslim*), Ibn Ḥajar (*Fatḥ al-Bārī*, *Bulūgh al-Marām*, *al-Talkhīṣ al-Ḥabīr*), al-Ṣanʿānī (*Subul al-Salām*), al-Shawkānī (*Nayl al-Awṭār*, *al-Sayl al-Jarrār*, *al-Fatḥ al-Rabbānī*, *al-Durar al-Bahiyya*, the matn of *al-Rawḍa*, and its sharḥ *al-Darārī al-Muḍiyya*), Ṣiddīq Ḥasan Khān (*al-Rawḍa al-Nadiyya*). These are al-Albānī's main interlocutors.
 - **Najdī fatāwā:** *al-Durar al-Saniyya*, *Fatāwā wa-Rasāʾil Muḥammad b. Ibrāhīm*, *Fatāwā al-Lajna al-Dāʾima* (first series).
 
 Citers: Ibn Bāz (*Majmūʿ Fatāwā*, *Nūr ʿalā al-Darb*), Ibn ʿUthaymīn (*Majmūʿ Fatāwā wa-Rasāʾil*, *Nūr ʿalā al-Darb*, *al-Sharḥ al-Mumtiʿ*), al-Albānī (*Irwāʾ al-Ghalīl*, *Tamām al-Minna*), al-Saʿdī (*Irshād Ulī al-Baṣāʾir*, *Bahjat Qulūb al-Abrār*).
@@ -33,7 +33,7 @@ Known witness limits, also in each work's `note`:
 - *Fatāwā al-Lajna al-Dāʾima* is the first series only;
 - *al-Majmūʿ* includes the takmila of al-Subkī and al-Muṭīʿī;
 - *al-Rawḍa al-Nadiyya* includes al-Albānī's own *Taʿlīqāt*;
-- *al-Durar al-Bahiyya* is the bare matn (ShamAY 34280, ed. Ḥallāq). The other OpenITI witness (ShamAY 36516) carries Fayṣal Āl Mubārak's (d. 1376) *al-Ghurar al-Naqiyya*, so it is modern and not registered. The witness's OpenITI `AUTO` headings are split mid-line, and `abwab` finds no kitāb or bāb in them, so the work has no `segmenter` yet;
+- *al-Durar al-Bahiyya* is the bare matn (ShamAY 34280, ed. Ḥallāq), whose OpenITI `AUTO` headings are split mid-line, so it has no `segmenter`. Its tabwīb is read from the other OpenITI witness, ShamAY 36516, registered as Fayṣal Āl Mubārak's (d. 1376) *al-Ghurar al-Naqiyya* (`noncommercial_text`): it prints the whole matn and keeps the commentary in closing endnotes;
 - the Shamela fetcher numbers every page as volume 1, so locators into multi-volume Shamela citers give the page number but not the volume.
 
 Not located on OpenITI: the *Masāʾil* of ʿAbd Allāh, Ṣāliḥ and Ibn Hāniʾ; Ibn Qāsim's *Ḥāshiyat al-Rawḍ*; *al-Fatāwā al-Saʿdiyya*; al-Albānī's *Silsila*s (Shamela 9442 and 12762, not registered).

@@ -1,7 +1,8 @@
-"""Public-domain witness texts committed under ``corpus/texts`` (Git LFS).
+"""Witness texts committed under ``corpus/texts`` (Git LFS).
 
-Only witnesses of works whose rights are ``public_domain_text`` are publishable; modern texts stay in
-``.cache/corpus``. Every committed text is byte-identical to its pinned source: ``stage`` copies from
+Only witnesses of works whose rights are in ``PUBLISHABLE`` are committed: public-domain texts, and
+texts the owner has cleared for non-commercial study (``noncommercial_text``). Other modern texts stay
+in ``.cache/corpus``. Every committed text is byte-identical to its pinned source: ``stage`` copies from
 the cache only after checking ``lock.json``, and ``restore`` lets ``fetch`` fill the cache from a
 committed text instead of the network when the two agree. An LFS pointer names its content's sha256,
 so the check also runs where LFS content was not downloaded (CI).
@@ -17,9 +18,12 @@ from pathlib import Path
 _POINTER = re.compile(rb"\Aversion https://git-lfs\.github\.com/spec/v1\noid sha256:([0-9a-f]{64})\nsize \d+\n\Z")
 
 
+PUBLISHABLE = frozenset({"public_domain_text", "noncommercial_text"})
+
+
 def publishable(registry: dict) -> tuple[str, ...]:
-    """Ids of the text witnesses of public-domain works, each once, in registry order."""
-    return tuple(dict.fromkeys(x["id"] for w in registry["works"] if w["rights"] == "public_domain_text"
+    """Ids of the text witnesses of publishable works, each once, in registry order."""
+    return tuple(dict.fromkeys(x["id"] for w in registry["works"] if w["rights"] in PUBLISHABLE
                                for x in w["witnesses"] if x.get("format") != "pdf"))
 
 

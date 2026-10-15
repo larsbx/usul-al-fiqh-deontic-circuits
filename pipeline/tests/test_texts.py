@@ -11,6 +11,7 @@ REGISTRY = {"works": [
     {"id": "a.scan", "rights": "public_domain_text", "witnesses": [{"id": "w-pdf", "kind": "archive", "format": "pdf"}]},
     {"id": "b.modern", "rights": "modern_cache_only", "witnesses": [{"id": "w-new", "kind": "shamela"}]},
     {"id": "a.part", "rights": "public_domain_text", "witnesses": [{"id": "w-old", "kind": "openiti"}]},
+    {"id": "c.study", "rights": "noncommercial_text", "witnesses": [{"id": "w-nc", "kind": "openiti"}]},
 ]}
 
 
@@ -18,8 +19,8 @@ def _lock(**texts: bytes) -> dict:
     return {k: {"witness": k, "bytes": len(v), "sha256": hashlib.sha256(v).hexdigest()} for k, v in texts.items()}
 
 
-def test_only_public_domain_text_witnesses_are_publishable_once_each():
-    assert publishable(REGISTRY) == ("w-old",)
+def test_only_public_domain_and_noncommercial_text_witnesses_are_publishable_once_each():
+    assert publishable(REGISTRY) == ("w-old", "w-nc")
 
 
 def test_stage_copies_verified_texts_and_refuses_drifted_ones(tmp_path):
@@ -52,7 +53,7 @@ def test_an_lfs_pointer_is_verified_by_its_oid_without_the_content(tmp_path):
     assert committed_sha256(p) == hashlib.sha256(b"matn").hexdigest()
 
 
-def test_committed_texts_are_public_domain_and_match_the_lock():
+def test_committed_texts_are_publishable_and_match_the_lock():
     """Runs in CI on LFS pointers (checkout without lfs) as well as on the real files."""
     registry = json.loads((ROOT / "corpus/registry.json").read_text(encoding="utf-8"))
     lock = json.loads((ROOT / "corpus/lock.json").read_text(encoding="utf-8"))["witnesses"]

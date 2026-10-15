@@ -1,7 +1,7 @@
 {
   "registry_version": "1",
   "policy": {
-    "full_text": "Full texts are fetched into .cache/corpus. Public-domain text witnesses (works with rights public_domain_text) are also committed, byte-identical to their pinned source, under corpus/texts via Git LFS; modern texts are never committed. Committed records carry short excerpts with edition-qualified locators.",
+    "full_text": "Full texts are fetched into .cache/corpus. Public-domain text witnesses (works with rights public_domain_text) are also committed, byte-identical to their pinned source, under corpus/texts via Git LFS; modern texts are never committed, except those cleared for non-commercial study (rights noncommercial_text), which are committed the same way. Committed records carry short excerpts with edition-qualified locators.",
     "authority": "Records are candidates until reviewed. Nothing here is a fatwā."
   },
   "works": [
@@ -2303,7 +2303,7 @@
       ],
       "kernel": false,
       "rights": "public_domain_text",
-      "note": "Matn of al-Rawḍa al-Nadiyya (qannawji.rawda_nadiyya). Witness: ed. Muḥammad Ṣubḥī Ḥallāq, Dār al-Nadā, Beirut 1413 (PageV01P001–P342). Not registered: ShamAY 36516, which carries Fayṣal Āl Mubārak's (d. 1376) al-Ghurar al-Naqiyya and so is a modern text.",
+      "note": "Matn of shawkani.darari_mudiyya and of al-Rawḍa al-Nadiyya (qannawji.rawda_nadiyya). Witness: ed. Muḥammad Ṣubḥī Ḥallāq, Dār al-Nadā, Beirut 1413 (PageV01P001–P342); its AUTO headings are split mid-line, so it has no segmenter. The matn's tabwīb is read from al_mubarak.ghurar_naqiyya, which prints it in full.",
       "witnesses": [
         {
           "id": "openiti-shawkani-durarbahiyya-shamay34280",
@@ -2325,6 +2325,74 @@
         "not": [
           "شرح الدرر البهية"
         ]
+      }
+    },
+    {
+      "id": "shawkani.darari_mudiyya",
+      "title_ar": "الدراري المضية شرح الدرر البهية",
+      "title_tr": "al-Darārī al-Muḍiyya Sharḥ al-Durar al-Bahiyya",
+      "author": {
+        "name_tr": "Muḥammad b. ʿAlī al-Shawkānī",
+        "death_ah": 1250
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "al-Shawkānī's own sharḥ of shawkani.durar_bahiyya. Witness: Dār al-Kutub al-ʿIlmiyya, 1st ed. 1407, 2 vols (PageV01–V02P466), with hand-set kitāb/bāb/faṣl headings; the other OpenITI witnesses (JK 175, ShamAY 34281, Zaydiyya 266) have none or AUTO headings.",
+      "witnesses": [
+        {
+          "id": "openiti-shawkani-dararimudiyya-shamela7264",
+          "kind": "openiti",
+          "repo": "1275AH",
+          "commit": "d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8",
+          "path": "data/1255Shawkani/1255Shawkani.DarariMudiyya/1255Shawkani.DarariMudiyya.Shamela0007264-ara1",
+          "edition": "Shamela 7264"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "sharh",
+        "madhhab": "mujtahid",
+        "cite_as": [
+          "الدراري المضية"
+        ]
+      },
+      "segmenter": {
+        "kind": "abwab"
+      }
+    },
+    {
+      "id": "al_mubarak.ghurar_naqiyya",
+      "title_ar": "الدرر البهية في المسائل الفقهية وعليه الغرر النقية",
+      "title_tr": "al-Ghurar al-Naqiyya ʿalā al-Durar al-Bahiyya",
+      "author": {
+        "name_tr": "Fayṣal b. ʿAbd al-ʿAzīz Āl Mubārak",
+        "death_ah": 1376
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "noncommercial_text",
+      "note": "Carries the full matn of shawkani.durar_bahiyya, one masʾala per «# -» line under body headings «كتاب …», «باب …», «فصل»; al-Ghurar is the closing block of endnotes «(¬n)», after the «|EDITOR| ENDNOTES» marker. ed. Muḥammad b. Ḥasan Āl Mubārak (first printing). Committed for non-commercial study only.",
+      "witnesses": [
+        {
+          "id": "openiti-mubarak-ghurarnaqiyya-shamay36516",
+          "kind": "openiti",
+          "repo": "1275AH",
+          "commit": "d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8",
+          "path": "data/1255Shawkani/1255Shawkani.DurarBahiyya/1255Shawkani.DurarBahiyya.ShamAY0036516-ara1",
+          "edition": "ShamAY 36516"
+        }
+      ],
+      "status": "located",
+      "segmenter": {
+        "kind": "abwab",
+        "end": "\\|EDITOR\\|",
+        "body_headings": true
       }
     },
     {

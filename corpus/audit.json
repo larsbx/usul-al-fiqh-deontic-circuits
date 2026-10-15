@@ -1739,6 +1739,15 @@
     "found": 1847,
     "answered": 1825
   },
+  "openiti-mubarak-ghurarnaqiyya-shamay36516": {
+    "work": "al_mubarak.ghurar_naqiyya",
+    "found": 123,
+    "ranks": {
+      "bab": 48,
+      "fasl": 37,
+      "kitab": 38
+    }
+  },
   "openiti-muhammadibnibrahim-fatawa-shamela8476": {
     "work": "muhammad_ibn_ibrahim.fatawa",
     "found": 3974,
@@ -2362,6 +2371,15 @@
     "duplicates": [],
     "unparsed": 0,
     "matches_expected": true
+  },
+  "openiti-shawkani-dararimudiyya-shamela7264": {
+    "work": "shawkani.darari_mudiyya",
+    "found": 127,
+    "ranks": {
+      "bab": 47,
+      "fasl": 47,
+      "kitab": 33
+    }
   },
   "openiti-ulamanajd-durarsaniyya-shamela3055": {
     "work": "ulama_najd.durar_saniyya",

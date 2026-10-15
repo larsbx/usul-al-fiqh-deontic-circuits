@@ -44075,14 +44075,14 @@
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00014",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00016",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00013",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00034"
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00014"
         ],
         "hybrid": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00565",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00014",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00016",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00013",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00034"
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00014"
         ],
         "shared": 5
       },
@@ -44091,16 +44091,16 @@
         "lexical": [
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00031",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00016",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00062",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00050",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00013",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00014"
+          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00013"
         ],
         "hybrid": [
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00031",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00016",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00062",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00050",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00013",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00014"
+          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00013"
         ],
         "shared": 5
       },
@@ -44108,17 +44108,17 @@
         "encoder": "advanced_worship",
         "lexical": [
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00016",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00062",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00031",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00013",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00014",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00034"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00067"
         ],
         "hybrid": [
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00016",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00062",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00031",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00013",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00014",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00034"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00067"
         ],
         "shared": 5
       },
@@ -44144,17 +44144,17 @@
         "encoder": "amr",
         "lexical": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00547",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00102",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00103",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00549",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00103",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00227",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00843"
+          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00103"
         ],
         "hybrid": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00547",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00102",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00103",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00549",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00103",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00227",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00843"
+          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00103"
         ],
         "shared": 5
       },
@@ -44289,16 +44289,16 @@
         "lexical": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00227",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00120",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00116",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00117",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00216",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00164"
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00216"
         ],
         "hybrid": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00227",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00120",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00116",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00117",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00216",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00164"
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00216"
         ],
         "shared": 5
       },
@@ -44327,14 +44327,14 @@
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00334",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00021",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00009",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00064"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00031"
         ],
         "hybrid": [
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00159",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00334",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00021",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00009",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00064"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00031"
         ],
         "shared": 5
       },
@@ -44381,14 +44381,14 @@
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00386",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00221",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00367",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00155"
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00076"
         ],
         "hybrid": [
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00244",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00386",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00221",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00367",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00155"
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00076"
         ],
         "shared": 5
       },
@@ -44434,15 +44434,15 @@
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00128",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00697",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00592",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00373",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00457"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00062",
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00373"
         ],
         "hybrid": [
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00128",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00697",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00592",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00373",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00457"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00062",
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00373"
         ],
         "shared": 5
       },
@@ -44523,16 +44523,16 @@
         "lexical": [
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008",
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00012",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00009",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00009",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00027",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00013"
+          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00027"
         ],
         "hybrid": [
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008",
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00012",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00009",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00009",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00027",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00013"
+          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00027"
         ],
         "shared": 5
       },
@@ -44579,14 +44579,14 @@
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00018",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00050",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00116",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00094"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00103"
         ],
         "hybrid": [
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00031",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00018",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00050",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00116",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00094"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00103"
         ],
         "shared": 5
       },
@@ -44594,17 +44594,17 @@
         "encoder": "command_intended_usage",
         "lexical": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00632",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00386",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00029",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00312",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00181"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00029",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00115",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00121",
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00386"
         ],
         "hybrid": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00632",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00386",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00029",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00312",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00181"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00029",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00115",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00121",
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00386"
         ],
         "shared": 5
       },
@@ -44612,17 +44612,17 @@
         "encoder": "command_nonverbal_usage",
         "lexical": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00632",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00386",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00029",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00312",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00181"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00029",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00115",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00121",
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00386"
         ],
         "hybrid": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00632",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00386",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00029",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00312",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00181"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00029",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00115",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00121",
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00386"
         ],
         "shared": 5
       },
@@ -44630,17 +44630,17 @@
         "encoder": "command_obligation_status",
         "lexical": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00632",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00386",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00029",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00312",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00181"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00029",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00115",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00121",
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00386"
         ],
         "hybrid": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00632",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00386",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00029",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00312",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00181"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00029",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00115",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00121",
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00386"
         ],
         "shared": 5
       },
@@ -44648,17 +44648,17 @@
         "encoder": "command_prophetic_act_usage",
         "lexical": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00632",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00386",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00029",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00312",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00181"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00029",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00115",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00121",
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00386"
         ],
         "hybrid": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00632",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00386",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00029",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00312",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00181"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00029",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00115",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00121",
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00386"
         ],
         "shared": 5
       },
@@ -44774,17 +44774,17 @@
         "encoder": "craft_capacity_is_wealth",
         "lexical": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00514",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00067",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00066",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00084",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00071",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00223"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00036",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00072"
         ],
         "hybrid": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00514",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00067",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00066",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00084",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00071",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00223"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00036",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00072"
         ],
         "shared": 5
       },
@@ -44792,17 +44792,17 @@
         "encoder": "crop_without_valid_permission",
         "lexical": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00249",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00081",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00235",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00404",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00233",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00170"
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00233"
         ],
         "hybrid": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00249",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00081",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00235",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00404",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00233",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00170"
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00233"
         ],
         "shared": 5
       },
@@ -44938,15 +44938,15 @@
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00083",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00288",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00185",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00191",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00132"
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00116",
+          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00191"
         ],
         "hybrid": [
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00083",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00288",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00185",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00191",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00132"
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00116",
+          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00191"
         ],
         "shared": 5
       },
@@ -44993,14 +44993,14 @@
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00475",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00133",
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00207",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00103"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00121"
         ],
         "hybrid": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00278",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00475",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00133",
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00207",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00103"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00121"
         ],
         "shared": 5
       },
@@ -45026,17 +45026,17 @@
         "encoder": "disposal_before_qabd_debt",
         "lexical": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00292",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00076",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00058",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00152",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00146",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00362"
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00071",
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00152"
         ],
         "hybrid": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00292",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00076",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00058",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00152",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00146",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00362"
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00071",
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00152"
         ],
         "shared": 5
       },
@@ -45046,15 +45046,15 @@
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00266",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00068",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00266",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00244",
-          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00203"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00103",
+          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00244"
         ],
         "hybrid": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00266",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00068",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00266",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00244",
-          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00203"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00103",
+          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00244"
         ],
         "shared": 5
       },
@@ -45101,14 +45101,14 @@
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00346",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00108",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00301",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00200"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00122"
         ],
         "hybrid": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00503",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00346",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00108",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00301",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00200"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00122"
         ],
         "shared": 5
       },
@@ -45151,18 +45151,18 @@
       {
         "encoder": "each_on_its_asl",
         "lexical": [
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00009",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00055",
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00012",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00009",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00013"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00008"
         ],
         "hybrid": [
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00009",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00055",
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00012",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00009",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00013"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00008"
         ],
         "shared": 5
       },
@@ -45171,16 +45171,16 @@
         "lexical": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00599",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00810",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00092",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00357",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00335",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00596"
+          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00335"
         ],
         "hybrid": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00599",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00810",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00092",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00357",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00335",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00596"
+          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00335"
         ],
         "shared": 5
       },
@@ -45279,16 +45279,16 @@
         "lexical": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00082",
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00066",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00119",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00068",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00280"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00038",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00033",
+          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00119"
         ],
         "hybrid": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00082",
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00066",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00119",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00068",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00280"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00038",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00033",
+          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00119"
         ],
         "shared": 5
       },
@@ -45297,16 +45297,16 @@
         "lexical": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00796",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00203",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00046",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00849",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00115",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00222"
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00115"
         ],
         "hybrid": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00796",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00203",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00046",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00849",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00115",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00222"
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00115"
         ],
         "shared": 5
       },
@@ -45422,17 +45422,17 @@
         "encoder": "free_bestowal_of_needed_benefit",
         "lexical": [
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00083",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00080",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00342",
-          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00068",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00056",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00147"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00085",
+          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00068"
         ],
         "hybrid": [
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00083",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00080",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00342",
-          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00068",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00056",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00147"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00085",
+          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00068"
         ],
         "shared": 5
       },
@@ -45441,16 +45441,16 @@
         "lexical": [
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00011",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00407",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00103",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00070",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00560",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00020"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00041"
         ],
         "hybrid": [
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00011",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00407",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00103",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00070",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00560",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00020"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00041"
         ],
         "shared": 5
       },
@@ -45533,14 +45533,14 @@
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00021",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00017",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00064",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00018"
         ],
         "hybrid": [
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00011",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00021",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00017",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00064",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00018"
         ],
         "shared": 5
       },
@@ -45728,17 +45728,17 @@
         "encoder": "ihram_specification",
         "lexical": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00165",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00053",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00196",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00059",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00123",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00195"
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00123"
         ],
         "hybrid": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00165",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00053",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00196",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00059",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00123",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00195"
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00123"
         ],
         "shared": 5
       },
@@ -45857,14 +45857,14 @@
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00572",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00114",
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00127",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00594"
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00061"
         ],
         "hybrid": [
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00239",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00572",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00114",
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00127",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00594"
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00061"
         ],
         "shared": 5
       },
@@ -45965,14 +45965,14 @@
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00128",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00127",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00663",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00592"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00062"
         ],
         "hybrid": [
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00132",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00128",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00127",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00663",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00592"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00062"
         ],
         "shared": 5
       },
@@ -45981,16 +45981,16 @@
         "lexical": [
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00128",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00589",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00127",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00373",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00592"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00062",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00056",
+          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00127"
         ],
         "hybrid": [
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00128",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00589",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00127",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00373",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00592"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00062",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00056",
+          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00127"
         ],
         "shared": 5
       },
@@ -46018,15 +46018,15 @@
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00122",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00621",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00329",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00331",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00356"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00087",
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00331"
         ],
         "hybrid": [
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00122",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00621",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00329",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00331",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00356"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00087",
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00331"
         ],
         "shared": 5
       },
@@ -46037,14 +46037,14 @@
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00037",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00018",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00076",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00529"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00020"
         ],
         "hybrid": [
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00036",
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00037",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00018",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00076",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00529"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00020"
         ],
         "shared": 5
       },
@@ -46179,16 +46179,16 @@
         "lexical": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00428",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00195",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00044",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00156",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00129",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00466"
+          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00129"
         ],
         "hybrid": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00428",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00195",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00044",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00156",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00129",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00466"
+          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00129"
         ],
         "shared": 5
       },
@@ -46339,18 +46339,18 @@
       {
         "encoder": "prohibited_worship",
         "lexical": [
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00044",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00018",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00059",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00083",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00075",
-          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00037",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00056"
+          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00075"
         ],
         "hybrid": [
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00044",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00018",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00059",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00083",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00075",
-          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00037",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00056"
+          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00075"
         ],
         "shared": 5
       },
@@ -46358,17 +46358,17 @@
         "encoder": "qabd_in_contracts",
         "lexical": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00168",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00078",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00290",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00309",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00318",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00091"
+          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00318"
         ],
         "hybrid": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00168",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00078",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00290",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00309",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00318",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00091"
+          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00318"
         ],
         "shared": 5
       },
@@ -46396,15 +46396,15 @@
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00495",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00477",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00487",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00479",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00239"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00118",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00114"
         ],
         "hybrid": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00495",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00477",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00487",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00479",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00239"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00118",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00114"
         ],
         "shared": 5
       },
@@ -46413,16 +46413,16 @@
         "lexical": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00448",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00140",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00070",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00660",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00461",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00447"
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00461"
         ],
         "hybrid": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00448",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00140",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00070",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00660",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00461",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00447"
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00461"
         ],
         "shared": 5
       },
@@ -46467,16 +46467,16 @@
         "lexical": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00580",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00366",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00126",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00578",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00660",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00590"
+          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00660"
         ],
         "hybrid": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00580",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00366",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00126",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00578",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00660",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00590"
+          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00660"
         ],
         "shared": 5
       },
@@ -46485,16 +46485,16 @@
         "lexical": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00372",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00177",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00126",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00177",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00204",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00872"
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00204"
         ],
         "hybrid": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00372",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00177",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00126",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00177",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00204",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00872"
+          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00204"
         ],
         "shared": 5
       },
@@ -46591,36 +46591,36 @@
       {
         "encoder": "residual_jawaz_after_sarf",
         "lexical": [
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00029",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00632",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00013",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00566",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00550",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00235"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00121",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00127",
+          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00013"
         ],
         "hybrid": [
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00029",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00632",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00013",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00566",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00550",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00235"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00121",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00127",
+          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00013"
         ],
         "shared": 5
       },
       {
         "encoder": "return_of_held_property",
         "lexical": [
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00085",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00074",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00095",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00121",
-          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00081",
-          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00068"
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00104"
         ],
         "hybrid": [
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00085",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00074",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00095",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00121",
-          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00081",
-          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00068"
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00104"
         ],
         "shared": 5
       },
@@ -46681,18 +46681,18 @@
       {
         "encoder": "right_on_refuser_exacted",
         "lexical": [
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00126",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00273",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00585",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00867",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00143",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00235"
+          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00143"
         ],
         "hybrid": [
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00126",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00273",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00585",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00867",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00143",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00235"
+          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00143"
         ],
         "shared": 5
       },
@@ -46735,18 +46735,18 @@
       {
         "encoder": "rukhsa_under_doubt",
         "lexical": [
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00027",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00011",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00005",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00007",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00646"
+          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006"
         ],
         "hybrid": [
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00027",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00011",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00005",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00007",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00646"
+          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006"
         ],
         "shared": 5
       },
@@ -46829,14 +46829,14 @@
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00092",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00055",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00053",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00148"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00023"
         ],
         "hybrid": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00049",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00092",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00055",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00053",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00148"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00023"
         ],
         "shared": 5
       },
@@ -46934,17 +46934,17 @@
         "encoder": "split_halves_suffice",
         "lexical": [
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00044",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00037",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00076",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00067",
-          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00042",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00043"
+          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00042"
         ],
         "hybrid": [
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00044",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00037",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00076",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00067",
-          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00042",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00043"
+          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00042"
         ],
         "shared": 5
       },
@@ -47098,15 +47098,15 @@
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00664",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00428",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00279",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00052"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00018",
+          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00279"
         ],
         "hybrid": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00664",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00428",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00279",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00052"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00018",
+          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00279"
         ],
         "shared": 5
       },
@@ -47117,14 +47117,14 @@
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00608",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00622",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00140",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00609"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00073"
         ],
         "hybrid": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00392",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00608",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00622",
           "majd.muharrar.openiti_majd_muharrar_shamela7460.b00140",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00609"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00073"
         ],
         "shared": 5
       },
@@ -47134,15 +47134,15 @@
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00085",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00072",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00025",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00838",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00031"
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00049",
+          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00838"
         ],
         "hybrid": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00085",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00072",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00025",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00838",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00031"
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00049",
+          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00838"
         ],
         "shared": 5
       },
@@ -47224,15 +47224,15 @@
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00187",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00124",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00092",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00195",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00272"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00090",
+          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00195"
         ],
         "hybrid": [
           "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00187",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00124",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00092",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00195",
-          "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00272"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00090",
+          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00195"
         ],
         "shared": 5
       },
@@ -47258,17 +47258,17 @@
         "encoder": "trust_voidance",
         "lexical": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00036",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00085",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00080",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00441",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00237",
-          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00095",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00321"
+          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00237"
         ],
         "hybrid": [
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00036",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00085",
+          "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00080",
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00441",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00237",
-          "majd.muharrar.openiti_majd_muharrar_shamela7460.b00095",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00321"
+          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00237"
         ],
         "shared": 5
       },
@@ -47293,18 +47293,18 @@
       {
         "encoder": "umum_lafz",
         "lexical": [
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00097",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00174",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00150",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00829",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00188",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00079"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00103",
+          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00829"
         ],
         "hybrid": [
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00097",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00174",
           "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00150",
-          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00829",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00188",
-          "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00079"
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00103",
+          "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00829"
         ],
         "shared": 5
       },
@@ -47511,16 +47511,16 @@
         "lexical": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00659",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00415",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00126",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00212",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00235",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00431"
+          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00235"
         ],
         "hybrid": [
           "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00659",
           "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00415",
+          "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00126",
           "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00212",
-          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00235",
-          "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00431"
+          "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00235"
         ],
         "shared": 5
       },
@@ -47690,7 +47690,7 @@
   },
   "inputs_sha256": {
     "corpus/fatawa/takhrij/islamqa_tranche1.json": "2e1bce1bf3cacd32fa4a28f013f6dd0ced299b250da4c67561a5c671a19c2a00",
-    "corpus/lock.json": "460b7135f351db2dc29aa61bca7acd9d0dececcd57e472357b542a442fd98d1d",
+    "corpus/lock.json": "d93b3b2763061a7eef5c10d935b2603118fd78aced53e78881841900d4926219",
     "corpus/records/archive-manzuma-djvu.jsonl": "bf3b1ffe55721df374f129d8a345c945cfbd848556e989c5023f98d3477ba202",
     "corpus/records/archive-manzuma-tess.jsonl": "18018bf7958a0f8ed2034a141f707fe5c0cc0f1124d58831d4e433dbb8f39fde",
     "corpus/records/archive-pdf1995-tess.jsonl": "05131a016719223fbe1c4778a4ed284dbb5f3366f2f281d54a1cfb788a5f9ad1",
@@ -47715,8 +47715,10 @@
     "corpus/records/openiti-lajnadaima-fatawa-shamela8381.jsonl": "ce9d11e3bad82d1b1df54945ad5b3cf68b63bda7e3d51314187bbf36f2617099",
     "corpus/records/openiti-majd-muharrar-shamela7460.jsonl": "e090dc43d9723915f1c8d2f2756997f49c7b4f178b57c81a50a774ac14e98e5b",
     "corpus/records/openiti-majmufatawa-shamela7289.jsonl": "f9c0423d7a3961bf49edc476bd5f40f7021b5d3402004edf0dd479bfce87a827",
+    "corpus/records/openiti-mubarak-ghurarnaqiyya-shamay36516.jsonl": "5543e8fd0669f7023b99241e658fd4dda959705264f109178ad653ecae6e61a2",
     "corpus/records/openiti-muhammadibnibrahim-fatawa-shamela8476.jsonl": "06eb66046035456a46f2a2b167d8d131984a9175c1f9dfb936e99841465832c3",
     "corpus/records/openiti-rajab-shamela21730.jsonl": "3ec424ea5e677a4bdaad4ce68295d411f0ea64bf3e4fe608781a60f36c835ca0",
+    "corpus/records/openiti-shawkani-dararimudiyya-shamela7264.jsonl": "8ddce2550c43bd8eefb5ff793ee0a009ab649c592e649b09a4752cd3f6ead3d2",
     "corpus/records/openiti-ulamanajd-durarsaniyya-shamela3055.jsonl": "7073c1f6bee0085e9e5aed5216613d3e05a89062e74ed2c90779c3a0abceecfa",
     "corpus/records/shamela-9942.jsonl": "b55665119a973aa1dc17ba322406aa9757bc55a6c6375f4ce862838b71db8c33",
     "corpus/routing/ood.json": "50f1c66ddab050bcf5cf6b27e73b8fffd902bb42ddb97ac7096bdac1df26d02c",

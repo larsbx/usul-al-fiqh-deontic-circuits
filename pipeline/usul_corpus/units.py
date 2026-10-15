@@ -21,7 +21,7 @@ from .records import bab_record, fatwa_record, masala_record
 UNIT_SEGMENTERS = {
     "qa": (lambda text, seg: segment_qa(text, seg.get("question"), seg["answer"], seg.get("question_heading", False)), fatwa_record),
     "masail": (lambda text, seg: segment_entries(text, seg["start"], seg.get("ordered", False)), masala_record),
-    "abwab": (lambda text, seg: segment_abwab(text, seg.get("end")), bab_record),
+    "abwab": (lambda text, seg: segment_abwab(text, seg.get("end"), seg.get("body_headings", False)), bab_record),
 }
 INVENTORY = "worklists/units.json"
 
