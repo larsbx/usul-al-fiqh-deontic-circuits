@@ -606,6 +606,62 @@ import Usul
 #guard (Usul.Readings.RajabA16.countsAsRich false true) == false
 #guard (Usul.Readings.RajabA16.countsAsRich true false) == true
 #guard (Usul.Readings.RajabA16.countsAsRich true true) == true
+#guard (Usul.Readings.RajabA17.craftCountsAsRich false false false) == false
+#guard (Usul.Readings.RajabA17.craftCountsAsRich false false true) == false
+#guard (Usul.Readings.RajabA17.craftCountsAsRich false true false) == true
+#guard (Usul.Readings.RajabA17.craftCountsAsRich false true true) == true
+#guard (Usul.Readings.RajabA17.craftCountsAsRich true false false) == true
+#guard (Usul.Readings.RajabA17.craftCountsAsRich true false true) == true
+#guard (Usul.Readings.RajabA17.craftCountsAsRich true true false) == true
+#guard (Usul.Readings.RajabA17.craftCountsAsRich true true true) == true
+#guard (Usul.Readings.RajabA17.impedimentOperates false false) == false
+#guard (Usul.Readings.RajabA17.impedimentOperates false true) == false
+#guard (Usul.Readings.RajabA17.impedimentOperates true false) == false
+#guard (Usul.Readings.RajabA17.impedimentOperates true true) == true
+#guard (Usul.Readings.RajabA17.preliminariesForbidden false false false) == false
+#guard (Usul.Readings.RajabA17.preliminariesForbidden false false true) == false
+#guard (Usul.Readings.RajabA17.preliminariesForbidden false true false) == false
+#guard (Usul.Readings.RajabA17.preliminariesForbidden false true true) == true
+#guard (Usul.Readings.RajabA17.preliminariesForbidden true false false) == true
+#guard (Usul.Readings.RajabA17.preliminariesForbidden true false true) == true
+#guard (Usul.Readings.RajabA17.preliminariesForbidden true true false) == true
+#guard (Usul.Readings.RajabA17.preliminariesForbidden true true true) == true
+#guard (Usul.Readings.RajabA17.unfixedMayReachFixed false false false) == false
+#guard (Usul.Readings.RajabA17.unfixedMayReachFixed false false true) == false
+#guard (Usul.Readings.RajabA17.unfixedMayReachFixed false true false) == true
+#guard (Usul.Readings.RajabA17.unfixedMayReachFixed false true true) == false
+#guard (Usul.Readings.RajabA17.unfixedMayReachFixed true false false) == true
+#guard (Usul.Readings.RajabA17.unfixedMayReachFixed true false true) == true
+#guard (Usul.Readings.RajabA17.unfixedMayReachFixed true true false) == true
+#guard (Usul.Readings.RajabA17.unfixedMayReachFixed true true true) == true
+#guard (Usul.Readings.RajabA17.dueTimeGoverns false) == false
+#guard (Usul.Readings.RajabA17.dueTimeGoverns true) == true
+#guard (Usul.Readings.RajabA18.forfeitsAttachedRight false false) == false
+#guard (Usul.Readings.RajabA18.forfeitsAttachedRight false true) == false
+#guard (Usul.Readings.RajabA18.forfeitsAttachedRight true false) == false
+#guard (Usul.Readings.RajabA18.forfeitsAttachedRight true true) == true
+#guard (Usul.Readings.RajabA18.sulhReplacesWealth false false) == false
+#guard (Usul.Readings.RajabA18.sulhReplacesWealth false true) == false
+#guard (Usul.Readings.RajabA18.sulhReplacesWealth true false) == false
+#guard (Usul.Readings.RajabA18.sulhReplacesWealth true true) == true
+#guard (Usul.Readings.RajabA18.mustCompensate false false false) == false
+#guard (Usul.Readings.RajabA18.mustCompensate false false true) == false
+#guard (Usul.Readings.RajabA18.mustCompensate false true false) == false
+#guard (Usul.Readings.RajabA18.mustCompensate false true true) == true
+#guard (Usul.Readings.RajabA18.mustCompensate true false false) == true
+#guard (Usul.Readings.RajabA18.mustCompensate true false true) == true
+#guard (Usul.Readings.RajabA18.mustCompensate true true false) == true
+#guard (Usul.Readings.RajabA18.mustCompensate true true true) == true
+#guard (Usul.Readings.RajabA19.returnedIsFirst false false) == false
+#guard (Usul.Readings.RajabA19.returnedIsFirst false true) == false
+#guard (Usul.Readings.RajabA19.returnedIsFirst true false) == true
+#guard (Usul.Readings.RajabA19.returnedIsFirst true true) == true
+#guard (Usul.Readings.RajabA19.badalStands false) == true
+#guard (Usul.Readings.RajabA19.badalStands true) == false
+#guard (Usul.Readings.RajabA19.bainAsWife false false) == false
+#guard (Usul.Readings.RajabA19.bainAsWife false true) == false
+#guard (Usul.Readings.RajabA19.bainAsWife true false) == true
+#guard (Usul.Readings.RajabA19.bainAsWife true true) == false
 #guard (Usul.Readings.RajabA2.nafaqaStipulable false false) == true
 #guard (Usul.Readings.RajabA2.nafaqaStipulable false true) == true
 #guard (Usul.Readings.RajabA2.nafaqaStipulable true false) == false
@@ -624,6 +680,22 @@ import Usul
 #guard (Usul.Readings.RajabA2.ownerTakesCrop true) == false
 #guard (Usul.Readings.RajabA2.asTree false) == false
 #guard (Usul.Readings.RajabA2.asTree true) == true
+#guard (Usul.Readings.RajabA20.heirInherits false false false) == false
+#guard (Usul.Readings.RajabA20.heirInherits false false true) == true
+#guard (Usul.Readings.RajabA20.heirInherits false true false) == true
+#guard (Usul.Readings.RajabA20.heirInherits false true true) == true
+#guard (Usul.Readings.RajabA20.heirInherits true false false) == true
+#guard (Usul.Readings.RajabA20.heirInherits true false true) == true
+#guard (Usul.Readings.RajabA20.heirInherits true true false) == true
+#guard (Usul.Readings.RajabA20.heirInherits true true true) == true
+#guard (Usul.Readings.RajabA20.heirStandsIn false false) == false
+#guard (Usul.Readings.RajabA20.heirStandsIn false true) == true
+#guard (Usul.Readings.RajabA20.heirStandsIn true false) == true
+#guard (Usul.Readings.RajabA20.heirStandsIn true true) == true
+#guard (Usul.Readings.RajabA20.wifeRuleApplies false false) == true
+#guard (Usul.Readings.RajabA20.wifeRuleApplies false true) == true
+#guard (Usul.Readings.RajabA20.wifeRuleApplies true false) == true
+#guard (Usul.Readings.RajabA20.wifeRuleApplies true true) == false
 #guard (Usul.Readings.RajabA3.disposalStands false false) == true
 #guard (Usul.Readings.RajabA3.disposalStands false true) == true
 #guard (Usul.Readings.RajabA3.disposalStands true false) == true

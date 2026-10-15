@@ -208,8 +208,50 @@ type_field(rajab130, needed_q130, 'Option Bool').
 qaida_type(rajab131, 'Ibn Rajab 131 «القدرة على اكتساب المال بالبضع ليس بغنى معتبر، صرح به القاضي في خلافه وفرع عليه مسائل: (منها) إذا أفلست المرأة وهي ممن يرغب في نكاحها لم تجبر على النكاح لأخذ المهر بغير خلاف ومنها: أنه لا يجب عليها نفقة الأقارب بقدرتها …». Read by `budh_capacity_is_wealth`.').
 type_field(rajab131, has_wealth, 'Option Bool').
 type_field(rajab131, can_earn_by_budh, 'Option Bool').
+qaida_type(rajab132, 'Ibn Rajab 132 «القدرة على اكتساب المال بالصناعات غني بالنسبة إلى نفقة النفس، ومن تلزم نفقته من زوجة وخادم وهل هو غني فاضل عن ذلك على روايتين، ويتفرع على ذلك مسائل: (منها) القوي المكتسب لا يباح له أخذ الزكاة بجهة الفقر فإنه …». Read by `craft_capacity_is_wealth`.').
+type_field(rajab132, has_wealth, 'Option Bool').
+type_field(rajab132, can_earn_by_craft, 'Option Bool').
+type_field(rajab132, beyond_own_maintenance, 'Option Bool').
+qaida_type(rajab134, 'Ibn Rajab 134 «المنع أسهل من الرفع، ويتخرج على ذلك مسائل كثيرة جدا: (منها) تخمير الخل ابتداء بأن يوضع فيها خل يمنع تخميرها مشروع، وتخليلها بعد تخميرها ممنوع. (منها) ذبح الحيوان المأكول يمنع نجاسة لحمه وجلده وهو مشروع ودبغ …». Read by `prevention_easier_than_removal`.').
+type_field(rajab134, impediment, 'Option Bool').
+type_field(rajab134, before_establishment, 'Option Bool').
+qaida_type(rajab136, 'Ibn Rajab 136 «الوطء المحرم العارض هل يستتبع تحريم مقدماته أم لا؟ إن كان لضعف الملك وقصوره أو خشية عدم ثبوته كالأمة المشتراة إذا ملكت بعقد محرم فيحرم سائر أنواع الاستمتاع بها، وإن كان لغير ذلك من الموانع فهو نوعان: أحدهما …». Read by `supervening_bar_extends_to_preliminaries`.').
+type_field(rajab136, weak_ownership, 'Option Bool').
+type_field(rajab136, worship, 'Option Bool').
+type_field(rajab136, bars_indulgence, 'Option Bool').
+qaida_type(rajab137, 'Ibn Rajab 137 «الواجب بقتل العمد هل هو القود عينا أو أحد أمرين إما القود وإما الدية، فيه روايتان معروفتان ويتفرع عليهما ثلاث قواعد، استيفاء القود، والعفو عنه، والصلح عنه. " القاعدة الأولى " في استيفاء القود. فيتعين حق …». Read by `qawad_choice_forfeits_attached_right`, `sulh_replaces_owned_wealth`.').
+type_field(rajab137, either_of_two, 'Option Bool').
+type_field(rajab137, victim_encumbered, 'Option Bool').
+type_field(rajab137, victim_owned, 'Option Bool').
+qaida_type(rajab138, 'Ibn Rajab 138 «العين المتعلق بها حق لله تعالى أو لآدمي، إما أن تكون مضمونة أو غير مضمونة فإن كانت مضمونة وجب ضمانها بالتلف والإتلاف بكل حال، وإن لم تكن مضمونة لم يجب ضمانها بالتلف ووجب بالإتلاف إن كان مستحق موجود وإلا فلا، …». Read by `burdened_thing_compensated`.').
+type_field(rajab138, guaranteed_q138, 'Option Bool').
+type_field(rajab138, destroyed, 'Option Bool').
+type_field(rajab138, claimant_exists, 'Option Bool').
+qaida_type(rajab139, 'Ibn Rajab 139 «الحقوق الواجبة من جنس إذا كان بعضها مقدرا بالشرع وبعضها غير مقدر به ، فهي ثلاثة أنواع: أحدها: أن يكون تقدير الحق خشية سقوط صاحبه فحيث كان من لم يقدر حقه يستحق الجميع عند الانفراد كذوي الفروض مع العصبات في …». Read by `unfixed_right_reaches_fixed`.').
+type_field(rajab139, takes_all_when_alone, 'Option Bool').
+type_field(rajab139, tied_to_base, 'Option Bool').
+type_field(rajab139, same_locus, 'Option Bool').
 qaida_type(rajab14, 'Ibn Rajab 14 «(القاعدة الرابعة عشر) : إذا وجد سبب إيجاب أو تحريم من أحد رجلين لا يعلم عينه منهما، فهل يلحق الحكم بكل منهما أو لا يلحق بواحد منهما شيء في المسألة خلاف ولها صور: (إحداها) إذا وجد اثنان منيا في ثوب ينامان فيه أو سمعا …». Read by `cause_from_one_of_two`.').
 type_field(rajab14, harmless, 'Option Bool').
+qaida_type(rajab141, 'Ibn Rajab 141 «إذا أتلف عينا تعلق بها حق الله تعالى من يجب عليه حفظها واستيفاؤها إلى مدة معلومة لزمه ضمانها بقيمتها في ذلك الوقت، لا يوم تلفها أو بمثلها على صفاتها في ذلك الوقت لا يوم تلفها على أصح الوجهين، ويتخرج على ذلك …». Read by `custodian_liable_at_due_time`.').
+type_field(rajab141, custodian_until_term, 'Option Bool').
+qaida_type(rajab142, 'Ibn Rajab 142 «ما زال من الأعيان ثم عاد بأصل الخلقة أو بصنع آدمي هل يحكم على العائد بحكم الأول أم لا؟ فيه خلاف يطرد في مسائل منها: لو قلع سنه أو قطع أذنه فأعاده في الحال فثبت والتحم كما كان لم يرح، فهل يحكم بطهارته أم لا نص …». Read by `returned_takes_first_ruling`.').
+type_field(rajab142, restored_by_life, 'Option Bool').
+type_field(rajab142, old_materials, 'Option Bool').
+qaida_type(rajab143, 'Ibn Rajab 143 «يقوم البدل مقام المبدل ويسد مسده ويبني حكمه على حكم مبدله في مواضع كثيرة، وقد سبق ذكر بعضها. ومنها: إذا مسح على الخف ثم خلعه فإنه يجزئه غسل قدميه على إحدى الروايتين، ولو فاتت الموالاة ; لأن المسح كمل الوضوء …». Read by `badal_stands_for_original`.').
+type_field(rajab143, sold_for_price, 'Option Bool').
+qaida_type(rajab144, 'Ibn Rajab 144 «فيما يقوم فيه الورثة مقام موروثهم من الحقوق، وهي نوعان: حق له وحق عليه. فأما النوع الأول فما كان من حقوقه يجب بموته كالدية والقصاص في النفس فلا ريب في أن لهم استيفاءه وسواء قلنا إنه ثابت لهم ابتداء أو منتقل …». Read by `heir_stands_in_owed_right`, `heir_takes_deceased_right`.').
+type_field(rajab144, accrues_at_death, 'Option Bool').
+type_field(rajab144, claimed_or_held, 'Option Bool').
+type_field(rajab144, attached_to_inherited_property, 'Option Bool').
+type_field(rajab144, obligation_binding, 'Option Bool').
+type_field(rajab144, tends_to_binding, 'Option Bool').
+qaida_type(rajab145, 'Ibn Rajab 145 «المعتدة البائن في حكم الزوجات في مسائل: منها: أن المبتوتة في مرض الموت ترث في العدة دون ما بعدها على إحدى الروايتين ; لأن الطلاق مانع من الإرث فلما قصد به الفرار من الحق المنعقد سببه ضعف منه فلم يعمل في المنع …». Read by `bain_in_idda_as_wife`.').
+type_field(rajab145, in_idda, 'Option Bool').
+type_field(rajab145, ties_cut, 'Option Bool').
+qaida_type(rajab146, 'Ibn Rajab 146 «تفارق المطلقة الرجعية الزوجات في صور: منها: أن في إباحتها في مدة العدة روايتين، وعلى رواية التحريم فهل يجب لها المهر بالوطء؟ على وجهين. ومنها: أن طلاقها في مدة العدة طلاق بدعة على أصح الروايتين. ومنها: أن …». Read by `rajiyya_takes_wife_rule`.').
+type_field(rajab146, rajiyya, 'Option Bool').
+type_field(rajab146, listed_difference, 'Option Bool').
 qaida_type(rajab14_certainty, 'Ibn Rajab 14 on the first riwāya\'s own ground, «نظرا إلى أن كل واحد منهما متيقن للطهارة شاك في الحدث»: each man is certain of his own prior state and doubts only the breach (Q15: each on his aṣl). Read by `cause_on_certainty` (`Usul.Readings.Concordance`).').
 type_extends(rajab14_certainty, rajab14).
 type_field(rajab14_certainty, each_certain, 'Option Bool').
@@ -515,6 +557,11 @@ encoder_reads(attached_takeover_at_value, 1, wrongful).
 encoder_reads(attached_takeover_at_value, 2, separable_without_harm).
 encoder_type(ayman_by_urf, 'Usul.Refinements.Body').
 encoder_reads(ayman_by_urf, 1, custom_one_body).
+encoder_type(badal_stands_for_original, 'Bool').
+encoder_reads(badal_stands_for_original, 1, sold_for_price).
+encoder_type(bain_in_idda_as_wife, 'Bool').
+encoder_reads(bain_in_idda_as_wife, 1, in_idda).
+encoder_reads(bain_in_idda_as_wife, 2, ties_cut).
 encoder_type(benefit_condition_against_compensation, 'Bool').
 encoder_reads(benefit_condition_against_compensation, 1, against_compensation).
 encoder_type(benefit_exception, 'Bool').
@@ -527,6 +574,10 @@ encoder_reads(benefit_to_other, 1, benefits_other).
 encoder_type(budh_capacity_is_wealth, 'Bool').
 encoder_reads(budh_capacity_is_wealth, 1, has_wealth).
 encoder_reads(budh_capacity_is_wealth, 2, can_earn_by_budh).
+encoder_type(burdened_thing_compensated, 'Bool').
+encoder_reads(burdened_thing_compensated, 1, guaranteed_q138).
+encoder_reads(burdened_thing_compensated, 2, destroyed).
+encoder_reads(burdened_thing_compensated, 3, claimant_exists).
 encoder_type(cancel_on_existence_valid, 'Bool').
 encoder_reads(cancel_on_existence_valid, 1, legitimate_purpose).
 encoder_type(cause_from_one_of_two, 'Usul.Refinements.Attach').
@@ -566,8 +617,14 @@ encoder_type(continuity, 'Bool').
 encoder_reads(continuity, 1, customary_continuity).
 encoder_type(contract_by_kinaya, 'Bool').
 encoder_reads(contract_by_kinaya, 1, needs_witnessing).
+encoder_type(craft_capacity_is_wealth, 'Bool').
+encoder_reads(craft_capacity_is_wealth, 1, has_wealth).
+encoder_reads(craft_capacity_is_wealth, 2, can_earn_by_craft).
+encoder_reads(craft_capacity_is_wealth, 3, beyond_own_maintenance).
 encoder_type(crop_without_valid_permission, 'Bool').
 encoder_reads(crop_without_valid_permission, 1, valid_permission).
+encoder_type(custodian_liable_at_due_time, 'Bool').
+encoder_reads(custodian_liable_at_due_time, 1, custodian_until_term).
 encoder_type(custom_restricts_general, 'Bool').
 encoder_reads(custom_restricts_general, 1, customary_usage).
 encoder_type(cut_sale_left_to_ripen, 'Bool').
@@ -679,6 +736,13 @@ encoder_reads(handover_by_description, 2, owner_unknown).
 encoder_reads(handover_by_description, 3, owner_hand).
 encoder_type(hastened_right_forfeited, 'Bool').
 encoder_reads(hastened_right_forfeited, 1, hastened_forbidden).
+encoder_type(heir_stands_in_owed_right, 'Bool').
+encoder_reads(heir_stands_in_owed_right, 1, obligation_binding).
+encoder_reads(heir_stands_in_owed_right, 2, tends_to_binding).
+encoder_type(heir_takes_deceased_right, 'Bool').
+encoder_reads(heir_takes_deceased_right, 1, accrues_at_death).
+encoder_reads(heir_takes_deceased_right, 2, claimed_or_held).
+encoder_reads(heir_takes_deceased_right, 3, attached_to_inherited_property).
 encoder_type(hit_state_governs, 'Bool').
 encoder_reads(hit_state_governs, 1, liability_ruling).
 encoder_type(holding_after_contract_end, 'Bool').
@@ -765,12 +829,21 @@ encoder_reads(performed_without_leave_not_owned, 1, recipient_determined).
 encoder_type(performed_without_leave_owned, 'Bool').
 encoder_reads(performed_without_leave_owned, 1, wilaya).
 encoder_reads(performed_without_leave_owned, 2, distinct).
+encoder_type(prevention_easier_than_removal, 'Bool').
+encoder_reads(prevention_easier_than_removal, 1, impediment).
+encoder_reads(prevention_easier_than_removal, 2, before_establishment).
 encoder_type(prohibited_worship, 'Bool').
 encoder_reads(prohibited_worship, 1, target).
 encoder_type(qabd_in_contracts, 'Bool').
 encoder_reads(qabd_in_contracts, 1, qabd_completes).
+encoder_type(qawad_choice_forfeits_attached_right, 'Bool').
+encoder_reads(qawad_choice_forfeits_attached_right, 1, either_of_two).
+encoder_reads(qawad_choice_forfeits_attached_right, 2, victim_encumbered).
 encoder_type(qisas_belongs_to_whom, 'Bool').
 encoder_reads(qisas_belongs_to_whom, 1, right_is_victims).
+encoder_type(rajiyya_takes_wife_rule, 'Bool').
+encoder_reads(rajiyya_takes_wife_rule, 1, rajiyya).
+encoder_reads(rajiyya_takes_wife_rule, 2, listed_difference).
 encoder_type(recourse, 'Bool').
 encoder_reads(recourse, 1, gift).
 encoder_reads(recourse, 2, owed_by_other).
@@ -805,6 +878,9 @@ encoder_reads(residual_jawaz_after_sarf, 1, sarf).
 encoder_type(return_of_held_property, 'Bool').
 encoder_reads(return_of_held_property, 1, held_by_consent).
 encoder_reads(return_of_held_property, 2, guaranteed).
+encoder_type(returned_takes_first_ruling, 'Bool').
+encoder_reads(returned_takes_first_ruling, 1, restored_by_life).
+encoder_reads(returned_takes_first_ruling, 2, old_materials).
 encoder_type(right_after_transfer, 'Bool').
 encoder_reads(right_after_transfer, 1, on_property).
 encoder_reads(right_after_transfer, 2, reason_ceases).
@@ -864,6 +940,13 @@ encoder_reads(successive_by_binding, 2, earlier_binding).
 encoder_reads(successive_by_binding, 3, later_binding).
 encoder_type(successive_contracts, 'Bool').
 encoder_reads(successive_contracts, 1, successive).
+encoder_type(sulh_replaces_owned_wealth, 'Bool').
+encoder_reads(sulh_replaces_owned_wealth, 1, either_of_two).
+encoder_reads(sulh_replaces_owned_wealth, 2, victim_owned).
+encoder_type(supervening_bar_extends_to_preliminaries, 'Bool').
+encoder_reads(supervening_bar_extends_to_preliminaries, 1, weak_ownership).
+encoder_reads(supervening_bar_extends_to_preliminaries, 2, worship).
+encoder_reads(supervening_bar_extends_to_preliminaries, 3, bars_indulgence).
 encoder_type(switch_to_original, 'Bool').
 encoder_reads(switch_to_original, 1, necessity).
 encoder_type(tabaa, 'Bool').
@@ -891,6 +974,10 @@ encoder_reads(trust_voidance, 2, transgressed).
 encoder_type(umum_lafz, 'Bool').
 encoder_reads(umum_lafz, 1, in_occasion).
 encoder_reads(umum_lafz, 2, general_wording).
+encoder_type(unfixed_right_reaches_fixed, 'Bool').
+encoder_reads(unfixed_right_reaches_fixed, 1, takes_all_when_alone).
+encoder_reads(unfixed_right_reaches_fixed, 2, tied_to_base).
+encoder_reads(unfixed_right_reaches_fixed, 3, same_locus).
 encoder_type(unintended_instance_covered, 'Bool').
 encoder_reads(unintended_instance_covered, 1, rare_or_barred).
 encoder_reads(unintended_instance_covered, 2, intended_q126).

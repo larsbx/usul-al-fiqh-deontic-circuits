@@ -418,6 +418,86 @@ open Usul.Reconcile
 #guard reconcile (P := String) none none [("false", .wajh), ("false", .takhrij), ("true", .wajh), ("true", .ashab), ("true", .qiyas)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f007
 #guard reconcile (P := String) none none [("true", .ashab), ("false", .takhrij)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f002
+#guard reconcile (P := String) none none [("false", .ashab), ("true", .takhrij), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("true", .ashab)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f003
+#guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f005
+#guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("false", .qiyas), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("true", .ashab)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f006
+#guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f000
+#guard reconcile (P := String) none none [("false", .nass), ("true", .nass), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f001
+#guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f002
+#guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("false", .ashab)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f003
+#guard reconcile (P := String) none none [("false", .wajh), ("true", .wajh), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f004
+#guard reconcile (P := String) none none [("false", .ashab), ("true", .takhrij), ("false", .ashab), ("true", .qiyas), ("true", .ashab)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f000
+#guard reconcile (P := String) none none [("true", .ashab), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f001
+#guard reconcile (P := String) none none [("true", .ashab), ("false", .wajh), ("true", .ashab), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("true", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f001
+#guard reconcile (P := String) none none [("true", .nass), ("true", .jazm), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f004
+#guard reconcile (P := String) none none [("false", .ashab), ("true", .qiyas), ("false", .tashih), ("true", .ashab), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f008
+#guard reconcile (P := String) none none [("true", .ashab), ("false", .nass), ("true", .jazm), ("true", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f009
+#guard reconcile (P := String) none none [("true", .ashab), ("false", .nass), ("true", .jazm), ("false", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f010
+#guard reconcile (P := String) none none [("true", .ashab), ("false", .nass), ("true", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f011
+#guard reconcile (P := String) none none [("true", .ashab), ("false", .nass), ("true", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f014
+#guard reconcile (P := String) none none [("false", .ashab), ("true", .takhrij), ("false", .qiyas), ("false", .qiyas)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f015
+#guard reconcile (P := String) none none [("false", .jazm), ("false", .ashab), ("true", .ashab), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f016
+#guard reconcile (P := String) none none [("false", .jazm), ("false", .ashab), ("true", .ashab), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f017
+#guard reconcile (P := String) none none [("true", .ashab), ("false", .takhrij), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f003
+#guard reconcile (P := String) none none [("true", .nass), ("true", .ashab), ("false", .takhrij), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f000
+#guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f001
+#guard reconcile (P := String) none none [("true", .nass), ("false", .ashab), ("true", .tashih)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f002
+#guard reconcile (P := String) none none [("true", .wajh), ("true", .ashab), ("false", .wajh), ("true", .tashih), ("false", .ashab)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f003
+#guard reconcile (P := String) none none [("false", .ashab), ("true", .wajh), ("false", .tashih)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f004
+#guard reconcile (P := String) none none [("false", .ashab), ("true", .wajh), ("false", .tashih)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f006
+#guard reconcile (P := String) none none [("false", .ashab), ("true", .takhrij), ("true", .wajh), ("false", .tashih)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f007
+#guard reconcile (P := String) none none [("false", .nass), ("true", .nass), ("false", .tashih)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f001
+#guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("false", .tashih)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f002
+#guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("false", .ashab), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f005
+#guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f006
+#guard reconcile (P := String) none none [("true", .nass), ("false", .jazm), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f007
+#guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("false", .ashab), ("true", .tashih)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f009
+#guard reconcile (P := String) none none [("true", .wajh), ("false", .wajh), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f010
+#guard reconcile (P := String) none none [("true", .wajh), ("true", .ashab), ("false", .ashab), ("true", .tashih), ("true", .ashab)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f011
+#guard reconcile (P := String) none none [("true", .ashab), ("false", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f003
+#guard reconcile (P := String) none none [("true", .ashab), ("false", .takhrij), ("true", .tashih)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f004
+#guard reconcile (P := String) none none [("false", .nass), ("false", .ashab), ("true", .nass), ("false", .tashih)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f005
+#guard reconcile (P := String) none none [("true", .nass), ("true", .jazm), ("false", .ashab), ("true", .jazm), ("true", .qiyas)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f000
 #guard reconcile (P := String) none none [("false", .ashab), ("true", .takhrij), ("true", .tashih), ("true", .tashih)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f002
@@ -428,6 +508,40 @@ open Usul.Reconcile
 #guard reconcile (P := String) none none [("true", .wajh), ("false", .wajh), ("true", .ashab), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f004
 #guard reconcile (P := String) none none [("true", .wajh), ("false", .wajh), ("false", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f001
+#guard reconcile (P := String) none none [("false", .nass), ("true", .nass), ("true", .takhrij), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f002
+#guard reconcile (P := String) none none [("false", .nass), ("true", .takhrij), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f003
+#guard reconcile (P := String) none none [("false", .ashab), ("false", .nass), ("true", .takhrij), ("true", .nass), ("false", .jazm), ("false", .qiyas)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f004
+#guard reconcile (P := String) none none [("false", .nass), ("true", .takhrij), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f005
+#guard reconcile (P := String) none none [("false", .zahir), ("true", .jazm), ("true", .qiyas), ("true", .qiyas)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f006
+#guard reconcile (P := String) none none [("false", .nass), ("false", .jazm), ("true", .ashab), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f009
+#guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f014
+#guard reconcile (P := String) none none [("true", .ashab), ("false", .nass), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f000
+#guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f001
+#guard reconcile (P := String) none none [("false", .nass), ("false", .ashab), ("true", .nass), ("false", .qiyas), ("false", .qiyas)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f002
+#guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f003
+#guard reconcile (P := String) none none [("true", .wajh), ("false", .wajh), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f004
+#guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("true", .ashab)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f005
+#guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f006
+#guard reconcile (P := String) none none [("false", .wajh), ("true", .wajh), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f007
+#guard reconcile (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f008
+#guard reconcile (P := String) none none [("false", .nass), ("false", .ashab), ("true", .wajh), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f009
 #guard reconcile (P := String) none none [("true", .wajh), ("false", .wajh), ("false", .tashih)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f010

@@ -39,7 +39,7 @@
         },
         {
           "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p358",
-          "excerpt_ar": "# (فإن اقتص) سيد المرهون من الجاني عليه (في نفس أو دونها) فعليه قيمة",
+          "excerpt_ar": "(فإن اقتص) سيد المرهون من الجاني عليه (في نفس أو دونها) فعليه قيمة",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī's Kashshāf",
@@ -107,7 +107,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p602",
-          "excerpt_ar": "# (وله) أي المكاتب (أن يقتص لنفسه) ولو بلا إذن سيده (من جان على طرفه) أي",
+          "excerpt_ar": "(وله) أي المكاتب (أن يقتص لنفسه) ولو بلا إذن سيده (من جان على طرفه) أي",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
@@ -151,7 +151,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p281",
-          "excerpt_ar": "# (ومثله العفو عن قود بلا مال من محجور عليه لسفه أو فلس أو من الورثة مع",
+          "excerpt_ar": "(ومثله العفو عن قود بلا مال من محجور عليه لسفه أو فلس أو من الورثة مع",
           "position": 1,
           "grade": "jazm",
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
@@ -159,7 +159,7 @@
         },
         {
           "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p544",
-          "excerpt_ar": "# وفي المنتهى وغيره يصح عفوه مجانا لأن الدية لم تتعين، وقاله في المغني",
+          "excerpt_ar": "وفي المنتهى وغيره يصح عفوه مجانا لأن الدية لم تتعين، وقاله في المغني",
           "position": 1,
           "grade": "jazm",
           "who": "al-Buhūtī's Kashshāf",
@@ -223,7 +223,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p281",
-          "excerpt_ar": "# (ومثله العفو عن قود بلا مال من محجور عليه لسفه أو فلس أو من الورثة مع",
+          "excerpt_ar": "(ومثله العفو عن قود بلا مال من محجور عليه لسفه أو فلس أو من الورثة مع",
           "position": 1,
           "grade": "jazm",
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
@@ -267,7 +267,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p281",
-          "excerpt_ar": "# ولو لم تكن) التركة (سوى دمه) نصا لعدم تعين المال فإذا سقط القود لم",
+          "excerpt_ar": "ولو لم تكن) التركة (سوى دمه) نصا لعدم تعين المال فإذا سقط القود لم",
           "position": 1,
           "grade": "jazm",
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
@@ -295,7 +295,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v10:p010",
-          "excerpt_ar": "# قوله (وإن عفا عن قاتله بعد الجرح: صح) . سواء كان بلفظ العفو أو الوصية.",
+          "excerpt_ar": "قوله (وإن عفا عن قاتله بعد الجرح: صح) . سواء كان بلفظ العفو أو الوصية.",
           "position": 0,
           "grade": "qiyas",
           "who": "al-Mardāwī in al-Inṣāf",
@@ -326,7 +326,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v05:p246",
-          "excerpt_ar": "# قوله (ويصح الصلح عن القصاص بديات، وبكل ما يثبت مهرا) . هذا المذهب.",
+          "excerpt_ar": "قوله (ويصح الصلح عن القصاص بديات، وبكل ما يثبت مهرا) . هذا المذهب.",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī in al-Inṣāf",
@@ -357,7 +357,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v06:p252",
-          "excerpt_ar": "# أحدهما: لا شفعة في ذلك. وهو الصحيح من المذهب. قال في الكافي: لا شفعة",
+          "excerpt_ar": "أحدهما: لا شفعة في ذلك. وهو الصحيح من المذهب. قال في الكافي: لا شفعة",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī in al-Inṣāf",
@@ -417,7 +417,7 @@
         },
         {
           "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p244",
-          "excerpt_ar": "# (ولو قتل عبد تجارة خطأ أو عمدا، فصالح سيده على مال صار) المال",
+          "excerpt_ar": "(ولو قتل عبد تجارة خطأ أو عمدا، فصالح سيده على مال صار) المال",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī's Kashshāf",
@@ -440,7 +440,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v10:p006",
-          "excerpt_ar": "# قوله (وإن مات القاتل وجبت الدية في تركته) . وكذا لو قتل. وهذا هو",
+          "excerpt_ar": "قوله (وإن مات القاتل وجبت الدية في تركته) . وكذا لو قتل. وهذا هو",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī in al-Inṣāf",
@@ -456,7 +456,7 @@
         },
         {
           "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p545",
-          "excerpt_ar": "# (إن مات القاتل، أو قتل وجبت الدية في تركته) لأنه تعذر استيفاء القود من",
+          "excerpt_ar": "(إن مات القاتل، أو قتل وجبت الدية في تركته) لأنه تعذر استيفاء القود من",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī's Kashshāf",

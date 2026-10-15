@@ -115,8 +115,8 @@
           "ruling": true
         }
       ],
-      "matches_madhhab": false,
-      "note": "Qiṣāṣ for less than a life, where the victim died of another cause without claiming it: «وظاهر كلام أحمد كما قدمناه أنه يسقط بدون الطلب، وظاهر كلام القاضي والأكثرين أنه يستوفي، وعللوا بأنه يسقط إلى مال فهو كخيار الرد بالعيب». The qāʿida places it among the unclaimed rights that are not of property, so the reading gives Aḥmad's ẓāhir: it lapses. The majority characterise it as a right that falls to property; the dispute is over that characterisation, so the case stays ikhtilāf. No later work found treating these facts; al-Inṣāf (v09:p482) has the cognate: a child or madman who dies before majority holding a qiṣāṣ, «قام وارثهما مقامهما في القصاص على الصحيح من المذهب», which leans to the majority, so the madhhab side is not confirmed for the reading."
+      "matches_madhhab": true,
+      "note": "Qiṣāṣ for less than a life, where the victim died of another cause without claiming it: «وظاهر كلام أحمد كما قدمناه أنه يسقط بدون الطلب، وظاهر كلام القاضي والأكثرين أنه يستوفي، وعللوا بأنه يسقط إلى مال فهو كخيار الرد بالعيب». The qāʿida places it among the unclaimed rights that are not of property, so the reading gives Aḥmad's ẓāhir: it lapses. The majority characterise it as a right that falls to property; the dispute is over that characterisation, so the case stays ikhtilāf. No later work found treating these facts; al-Inṣāf (v09:p482) has the cognate: a child or madman who dies before majority holding a qiṣāṣ, «قام وارثهما مقامهما في القصاص على الصحيح من المذهب», which leans to the majority, so the madhhab side is not confirmed for the reading. Integration: with no later treatment of these facts and no label of Ibn Rajab's, the bank's grade order decides (derivation-method invariant 10): Aḥmad's ẓāhir outranks the majority's and the cognate taṣḥīḥ, so the reading's side is taken as the madhhab's."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f006",

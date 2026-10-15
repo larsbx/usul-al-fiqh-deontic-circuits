@@ -145,7 +145,7 @@
       ],
       "jam": null,
       "naskh": null,
-      "note": "Aḥmad's ẓāhir (lapse) against the majority's ẓāhir (exacted); the later works treat only the cognate qiṣāṣ of a child or madman who dies before claiming, which passes to the heir «على الصحيح من المذهب». By the grade order Aḥmad's ẓāhir outranks a cognate taṣḥīḥ and the majority, so the tarjīḥ falls on the reading's side although no later work confirms it on these facts.",
+      "note": "Aḥmad's ẓāhir (lapse) against the majority's ẓāhir (exacted); the later works treat only the cognate qiṣāṣ of a child or madman who dies before claiming, which passes to the heir «على الصحيح من المذهب». By the grade order Aḥmad's ẓāhir outranks a cognate taṣḥīḥ and the majority, so the tarjīḥ falls on the reading's side although no later work confirms it on these facts. On the madhhab side by that order (invariant 10); the case is marked so.",
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v09:p482",
@@ -410,8 +410,17 @@
       ],
       "jam": null,
       "naskh": null,
-      "note": "Two riwāyāt reported by the author of al-Targhīb, with no madhhab label in the later works; al-Mardāwī's «قلت: الصواب أنه يحلها» is an author's preference for the wife's ruling and is not on a line of its own long enough to cite. By the grades the case stays in tawaqquf.",
-      "evidence": []
+      "note": "Two riwāyāt reported by the author of al-Targhīb, with no madhhab label in the later works; al-Mardāwī's «قلت: الصواب أنه يحلها» (ashab) tips them to the wife's ruling, against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p166",
+          "excerpt_ar": "ثم وطئها في مدة العدة فهل يحلها لزوجها الأول؟ على روايتين، حكاهما صاحب الترغيب، قلت: الصواب أنه يحلها.",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Mardāwī's own «قلت: الصواب», an author's preference (ashab)."
+        }
+      ]
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f005",
