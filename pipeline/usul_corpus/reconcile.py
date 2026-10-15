@@ -210,11 +210,14 @@ def _archived_tarjih() -> dict[str, dict]:
     return {e["far"]: e for p in sorted(d.glob("*.json")) for e in json.loads(p.read_text(encoding="utf-8")).get("entries", [])}
 
 
+OPEN = frozenset({"open-research", "ready-for-decision"})
+
+
 def _open_research_questions() -> set[str]:
     """Ids of the research register's questions not yet decided by a human: the only licence for an
     on-madhhab case whose tarjīḥ goes the other way to stand as annotated."""
     p = Path(__file__).resolve().parents[2] / "corpus" / "review" / "research_questions.json"
-    return {q["id"] for q in json.loads(p.read_text(encoding="utf-8"))["questions"] if q["status"] != "decided"} if p.exists() else set()
+    return {q["id"] for q in json.loads(p.read_text(encoding="utf-8"))["questions"] if q["status"] in OPEN} if p.exists() else set()
 
 
 def report(cases: list[dict], ledger: dict) -> dict:
@@ -227,7 +230,8 @@ def report(cases: list[dict], ledger: dict) -> dict:
     return {"entries": len(rows),
             "evidence_items": sum(len(e.get("evidence", [])) for e, _ in rows),
             "side_checks": sorted(c["far"] for _, c in rows if "side_check" in c),
-            "confirming": sum(1 for e, c in rows if c.get("matches_madhhab") and not e.get("jam")),
+            "confirming": sum(1 for e, c in rows if c.get("matches_madhhab") and not e.get("jam")
+                             and resolve(c, e)[1] == c["expected"]),
             "stages": dict(sorted(Counter(resolve(c, e)[0] for e, c in rows).items())),
             "standing": dict(sorted(Counter(standing(c, e) for e, c in rows).items())),
             "worklist": dict(sorted(residues.items(), key=lambda kv: (-len(kv[1]), kv[0]))),

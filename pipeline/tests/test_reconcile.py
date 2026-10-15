@@ -271,6 +271,19 @@ def test_every_ikhtilaf_has_a_tarjih():
         "x: the tarjīḥ goes against the annotated madhhab side without an open research question"]
 
 
+def test_only_undecided_questions_license(monkeypatch, tmp_path):
+    """A withdrawn or decided question licenses nothing; a confirming count counts confirmations only."""
+    (tmp_path / "corpus" / "review").mkdir(parents=True)
+    (tmp_path / "corpus" / "review" / "research_questions.json").write_text(json.dumps({"questions": [
+        {"id": f"RQ-0{i}", "status": s} for i, s in
+        enumerate(["open-research", "ready-for-decision", "withdrawn", "decided"], 1)]}))
+    monkeypatch.setattr(reconcile, "__file__", str(tmp_path / "pipeline" / "usul_corpus" / "reconcile.py"))
+    assert reconcile._open_research_questions() == {"RQ-01", "RQ-02"}
+    c = _ikh("x", True, [True, False], matches=True)
+    against = {**_entry("x", ["ashab", "nass"]), "register": "RQ-01"}
+    assert reconcile.report([c], {"entries": [against]})["confirming"] == 0
+
+
 def test_the_ledger_holds_every_ikhtilaf():
     """Every ikhtilāf has a tarjīḥ: in the active ledger, or in the history a resolution retired it to."""
     entries = {e["far"] for e in LEDGER["entries"]} | set(reconcile._archived_tarjih())
