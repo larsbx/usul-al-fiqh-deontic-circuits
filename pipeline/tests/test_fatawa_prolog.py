@@ -85,8 +85,8 @@ def test_every_post_hoc_fact_has_verbatim_evidence_in_its_answer():
     post_hoc = {f: x for f, x in facts.items() if x.get("post_hoc")}
     assert post_hoc and all(set(x["post_hoc"]) == set(x.get("post_hoc_evidence", {})) for x in post_hoc.values())
     path = ROOT / "data/islamqa/answers/islamqa-ar.jsonl.gz"
-    if not path.exists():
-        pytest.skip("IslamQA answers not fetched")
+    if not path.exists() or path.stat().st_size < 1000:  # absent, or a Git LFS pointer (CI checkout)
+        pytest.skip("IslamQA answers not fetched (Git LFS)")
     need = {f.rsplit(".", 1)[0] for f in post_hoc}
     with gzip.open(path, "rt", encoding="utf-8") as fh:
         answers = {r["id"]: r for r in map(json.loads, fh) if r["id"] in need}
