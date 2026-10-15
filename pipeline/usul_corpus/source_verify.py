@@ -11,6 +11,8 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
+import subprocess
 import re
 from collections import Counter
 from pathlib import Path
@@ -91,12 +93,35 @@ def required_witnesses(corpus: Path) -> set[str]:
     return ids
 
 
+def restore_locked_ocr(wid: str, witness: dict, lock: dict, cache: Path) -> None:
+    """Reproduce an existing OCR pin with the repository's pinned models. Never re-pin.
+
+    Verify the fetched PDF before OCR, and the derived text before publishing it
+    into the source cache. No corpus files or extraction metrics are rewritten.
+    """
+    from . import ocr
+    cache.mkdir(parents=True, exist_ok=True)
+    pdf = cache / f"{wid}.pdf"
+    if not pdf.exists():
+        fetch.fetch(witness, cache)  # candidate lock deliberately ignored
+    data = pdf.read_bytes()
+    if len(data) != lock.get("bytes") or hashlib.sha256(data).hexdigest() != lock.get("sha256"):
+        raise ValueError("OCR source PDF differs from lock")
+    opts = ocr.OcrOptions.from_config(witness["ocr"], anchor_step=witness.get("segmenter", {}).get("anchor_step"))
+    work = ocr.cache_dir(cache.parent / "source-ocr" / wid, pdf, opts)
+    chosen, _, _ = ocr.ocr_pdf(pdf, work, cache.parent / "tessdata", opts, jobs=min(4, os.cpu_count() or 1))
+    text = "#META#Header#End#\n" + "".join(ocr.page_markdown(page) for page in chosen)
+    if hashlib.sha256(text.encode("utf-8")).hexdigest() != lock["ocr_sha256"]:
+        raise ValueError("regenerated OCR text differs from existing ocr_sha256; lock unchanged")
+    (cache / f"{wid}.txt").write_text(text, encoding="utf-8")
+
+
 def locked_text(wid: str, witness: dict, lock: dict, corpus: Path, cache: Path,
                 fetch_source: bool) -> str:
     """Reuse restore/fetch, but never call the lock-writing fetch CLI or _pin.
 
     Adapted from PR #51's verify_evidence full-source URL/size/hash check.
-    Only direct text sources are accepted: a DOC/PDF lock does not pin its text.
+    Direct texts use the source pin; OCR uses its separate existing derived-text pin.
     """
     if witness.get("format", "text") == "pdf":
         # The existing OCR lock pins the exact derived text independently of the PDF.
@@ -107,8 +132,10 @@ def locked_text(wid: str, witness: dict, lock: dict, corpus: Path, cache: Path,
         if not re.fullmatch(r"[0-9a-f]{64}", digest):
             raise ValueError("required PDF witness lacks a pinned OCR text derivation")
         path = cache / f"{wid}.txt"
+        if not path.exists() and fetch_source:
+            restore_locked_ocr(wid, witness, lock, cache)
         if not path.exists():
-            raise ValueError("required locked OCR witness unavailable; provision the existing ocr_sha256 bytes")
+            raise ValueError("required locked OCR witness unavailable; run make source-verify-fetch")
         data = path.read_bytes()
         if hashlib.sha256(data).hexdigest() != digest:
             raise ValueError("derived OCR text differs from lock (including LFS pointers)")
@@ -139,7 +166,8 @@ def verify(corpus: Path, cache: Path, fetch_source: bool = False) -> dict:
               "outside_scope": ["JSONL records and non-ref quotation fields", "Quran aya, hadith number and Albani verdict replay (test_nusus.py)",
                                 "interpretive relevance, formal correctness and scholarly validation"]}
     registry = json.loads((corpus / "registry.json").read_text(encoding="utf-8"))
-    witnesses = {w["id"]: w for work in registry["works"] for w in work["witnesses"]}
+    witnesses = {w["id"]: {"segmenter": work.get("segmenter", {}), **w}
+                 for work in registry["works"] for w in work["witnesses"]}
     locks = json.loads((corpus / "lock.json").read_text(encoding="utf-8"))["witnesses"]
     try:
         required = required_witnesses(corpus)
@@ -161,7 +189,7 @@ def verify(corpus: Path, cache: Path, fetch_source: bool = False) -> dict:
                 receipt["ocr_sha256"] = locks[wid]["ocr_sha256"]
                 receipt["verification"] = "pinned OCR text; PDF bytes and OCR interpretation not replayed"
             receipt["status"] = "verified"
-        except (ValueError, OSError, KeyError) as exc:
+        except (ValueError, OSError, KeyError, subprocess.SubprocessError) as exc:
             receipt["error"] = str(exc)
             report["errors"].append(f"{wid}: {exc}")
         for row in rows:

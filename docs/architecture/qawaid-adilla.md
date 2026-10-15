@@ -41,9 +41,11 @@ bytes, missing pins, altered bytes, invented excerpts, and wrong pages fail veri
 annotation checker also rejects unavailable witnesses and empty normalized excerpts.
 
 The two PDF-derived witnesses use the existing `ocr_sha256` locks. Verification requires the exact
-pinned OCR text in `.cache/corpus/<witness>.txt` and does not regenerate or rewrite a lock. Its receipt
-explicitly distinguishes verification of the derived text from replay of the PDF or validation of
-OCR interpretation. `--fetch-source` can fetch direct text witnesses, but cannot recreate absent OCR
-outputs. CI therefore fails until the required pinned OCR bytes are provisioned; a missing private
-cache is not a successful check. Modern witness text remains cache-only under the existing rights
-policy.
+pinned OCR text in `.cache/corpus/<witness>.txt` and never rewrites a lock. With `--fetch-source`, an
+absent OCR output is recreated by the existing OCR pipeline: first verify the downloaded PDF's
+original size and hash, then use the registry configuration and pinned Tesseract models, and admit
+the output only if it equals the existing `ocr_sha256`. A different toolchain or extraction result
+fails closed; it cannot authorize a new pin. CI installs Tesseract and Poppler for this restoration.
+
+Receipts distinguish verification of the pinned derived text from validation of OCR interpretation.
+Modern witness text and OCR intermediates remain cache-only under the existing rights policy.

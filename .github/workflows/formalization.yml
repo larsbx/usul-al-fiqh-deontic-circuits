@@ -13,7 +13,7 @@ jobs:
   corpus:
     name: Corpus pipeline (pytest + schema validation + vectors)
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -22,6 +22,10 @@ jobs:
       - run: pip install pytest jsonschema numpy pillow
       - name: Replay locked M5 command-schema evidence
         run: cd pipeline && python -m usul_corpus m5-commands --fetch-source
+      - name: Install locked-source OCR dependencies
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q tesseract-ocr poppler-utils
       - name: Verify required locked sources (fail closed)
         run: make source-verify-fetch
       - name: Corpus tests with explicit exclusion report

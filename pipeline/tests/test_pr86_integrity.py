@@ -98,7 +98,38 @@ def test_pdf_istidlal_requires_the_existing_ocr_hash_without_repinning(tmp_path,
         assert source_verify.locked_text(w["id"], w, lock, tmp_path, tmp_path, True) == text
     else:
         with pytest.raises(ValueError):
+            source_verify.locked_text(w["id"], w, lock, tmp_path, tmp_path, False)
+    assert lock == before
+
+
+@pytest.mark.parametrize("mutation", ["valid", "pdf_drift", "ocr_drift"])
+def test_fetch_restores_ocr_only_when_both_existing_pins_match(tmp_path, monkeypatch, mutation):
+    from usul_corpus import ocr
+    pdf = b"pinned source PDF"
+    text = "#META#Header#End#\n# قول صحيح\nPageV01P001\n"
+    w = {"id": "ocr-source", "kind": "url", "url": "https://example.org/source.pdf", "format": "pdf",
+         "ocr": {"engines": ["ara_std"], "dpi": 300, "psm": 4}}
+    lock = {"url": w["url"], "bytes": len(pdf), "sha256": hashlib.sha256(pdf).hexdigest(),
+            "ocr_sha256": hashlib.sha256(text.encode()).hexdigest()}
+    before = dict(lock)
+    calls = []
+    def fetch(witness, cache):
+        (cache / "ocr-source.pdf").write_bytes(pdf + (b"changed" if mutation == "pdf_drift" else b""))
+        return {"sha256": "a misleading candidate pin must never be trusted"}
+    def run(*args, **kwargs):
+        calls.append(True)
+        return ([object()], [], {})
+    monkeypatch.setattr(source_verify.fetch, "fetch", fetch)
+    monkeypatch.setattr(ocr, "ocr_pdf", run)
+    monkeypatch.setattr(ocr, "page_markdown", lambda _: text.split("\n", 1)[1] + ("changed" if mutation == "ocr_drift" else ""))
+    if mutation == "valid":
+        assert source_verify.locked_text(w["id"], w, lock, tmp_path, tmp_path, True) == text
+        assert (tmp_path / "ocr-source.txt").read_text() == text
+    else:
+        with pytest.raises(ValueError):
             source_verify.locked_text(w["id"], w, lock, tmp_path, tmp_path, True)
+        assert not (tmp_path / "ocr-source.txt").exists()
+    assert bool(calls) == (mutation != "pdf_drift")
     assert lock == before
 
 
