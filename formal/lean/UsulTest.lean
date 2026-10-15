@@ -18,6 +18,7 @@ import UsulTest.Cat
 import UsulTest.R2Sample1Semantic
 import UsulTest.KernelContracts
 import UsulTest.Obstructions
+import UsulTest.TaklifBehaviour
 import UsulTest.Institutions
 import UsulTest.Judgement
 import UsulTest.EncoderTypes

@@ -1,17 +1,17 @@
-import Usul
+import UsulTest.TaklifBehaviour
 
 /-!
 M11 fixtures: the shared fragment of `formal/tla/Taklif.tla`, read in the three institutions of
 `Usul.Cat.Carriers`. The satisfaction conditions are theorems. These guards check them on
-fixtures, as the exit criterion asks, and pin the TLA+ invariants on behaviours built from the
-spec's own actions.
+fixtures, as the exit criterion asks, and pin the TLA+ invariants on a behaviour of the spec:
+the one TLC replays through Taklif's own actions in `TaklifTrace.tla`.
 
 Variables (`Taklif.tla`): 0 baligh, 1 aqil, 2 travelling, 3 rukhsa, 4 bound ≠ {}.
 -/
 
 namespace UsulTest.Institutions
 
-open Usul Usul.Cat Usul.Cat.Carriers Form
+open Usul Usul.Cat Usul.Cat.Carriers Form UsulTest.TaklifBehaviour
 
 abbrev N := 5
 
@@ -38,15 +38,8 @@ def vars : List (Fin N) := [0, 1, 2, 3, 4]
 def spec : List (TSen N) :=
   [.now init, .always onlyMukallafBound, .always rukhsaNeedsSabab, .step bulughIrreversible vars]
 
-/-- A state from its five flags. -/
-def st (b a t r d : Bool) : Fin N → Bool := fun i => match i.val with
-  | 0 => b | 1 => a | 2 => t | 3 => r | _ => d
-
-/-- Init → Bulugh → Depart → TakeRukhsa → Arrive → LoseAql. -/
-def behaviour : Trace N :=
-  ⟨st false true false false false,
-   [st true true false false true, st true true true false true, st true true true true true,
-    st true true false false true, st true false false false false]⟩
+-- `behaviour` and `st` are generated (`formal/fixtures/gen_taklif.py`): TLC replays the same
+-- behaviour through Taklif's actions in `formal/tla/TaklifTrace.tla`.
 
 /-- A rukhsa taken at home: violates `RukhsaNeedsSabab`. -/
 def rukhsaAtHome : Trace N := ⟨st false true false false false, [st true true false true true]⟩

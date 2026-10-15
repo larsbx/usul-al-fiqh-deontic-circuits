@@ -147,13 +147,23 @@ Fixtures (`UsulTest/Institutions.lean`) read `formal/tla/Taklif.tla` in this fra
 * the mukallaf sentence is `Subject.IsMukallaf` read on a valuation (the bridge to `Usul.Signature`);
 * a binding duty entails mukallaf, decided in `propI` and transported to `traceI`.
 
+**TLC replays the same behaviour.** `formal/fixtures/gen_taklif.py` holds it once, as full
+`Taklif.tla` states (with `capable` and `bound`). It writes:
+* `formal/tla/TaklifTrace.tla`, a trace-validation spec that `make tla` checks with the other
+  specs: each step must be produced by the action it names (a mismatch deadlocks), the first state
+  must satisfy `Init`, and the invariants and `BulughIrreversible` hold along the trace;
+* `UsulTest/TaklifBehaviour.lean`, the same behaviour in the Boolean fragment. The abstraction
+  reads `bound` as `bound ≠ {}` and drops `capable`; it is the model map from TLA+ states to `traceI`.
+
+`make generated` regenerates both and rejects drift. A stale obligation (bound not rebound after
+an incapacity) and a wrong initial state are each rejected by TLC (mutation-checked).
+
 ## Open
 
 * **M10, beyond one point:** covers over several situations, such as context separations like
   the Q2 farʿ 2 vector, need the facts that separate the contexts. The bank records those per
   case, not per position.
 * **M9 exit:** Haskell laws for L-QIY-1 in `semantic-categorical-oracle`.
-* **M11, the rest:** connect the fixtures to TLC itself (export the behaviour as a TLA+ trace
-  spec and check it), and mirror `execI` in `semantic-categorical-oracle` (Haskell), then
-  register the contracts with their laws. Comorphisms for the richer fragments (sets such as
+* **M11, the rest:** mirror `execI` in `semantic-categorical-oracle` (Haskell), then register
+  the contracts with their laws. Comorphisms for the richer fragments (sets such as
   `bound`, naturals such as `events`) extend `Form` with those sorts.
