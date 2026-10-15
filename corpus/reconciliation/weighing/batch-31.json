@@ -1,0 +1,538 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b31: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Q 4:43 «nor when junub, except passing through, until you have washed»: ghusl is made the limit of the bar from prayer, so once he has washed he is not barred",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p161",
+     "excerpt_ar": "جعل الغسل غاية للمنع من الصلاة، فإذا اغتسل يجب أن لا يمنع منها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The āya is about the junub. It bears on someone with both ḥadaths only through the implied sense of the ghāya: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "They are two acts of worship of one kind, so the lesser enters the greater, as ʿumra enters ḥajj",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p161",
+     "excerpt_ar": "ولأنهما عبادتان من جنس واحد، فتدخل الصغرى في الكبرى، كالعمرة في الحج",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Analogy with ʿumra in ḥajj: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ibn ʿAbd al-Barr: God required ghusl of the junub, not wuḍūʾ («and if you are junub, purify yourselves», Q 5:6); one who washes his whole body has done what is due, «an ijmāʿ with no disagreement»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p161",
+     "excerpt_ar": "لأن الله تعالى إنما افترض على الجنب الغسل من الجنابة، دون الوضوء، بقوله {وإن كنتم جنبا فاطهروا}",
+     "who": "Ibn Qudāma, al-Mughnī (quoting Ibn ʿAbd al-Barr)",
+     "note": "The āya by its apparent sense, with an ijmāʿ reported by one transmitter and contradicted by the riwāya and al-Shāfiʿī's other view that al-Mughnī reports on the same page: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The Prophet did wuḍūʾ (with his ghusl)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p161",
+     "excerpt_ar": "وهو أحد قولي الشافعي؛ لأن النبي - صلى الله عليه وسلم - فعل ذلك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The riwāya (and one of al-Shāfiʿī's views) that ghusl does not suffice for wuḍūʾ. A marfūʿ report of his deed: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Both the janāba and the ḥadath occurred, so both purifications are due, as when each occurs alone",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p161",
+     "excerpt_ar": "ولأن الجنابة والحدث وجدا منه، فوجبت لهما الطهارتان، كما لو كانا مفردين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Analogy with each ḥadath occurring alone: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Where the day of arrival falls in Ramaḍān he must make it up, because he did not fast it for his vow (Kashshāf applies the same to a month from the day of arrival that begins on the first of Ramaḍān)",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p280",
+     "excerpt_ar": "وإن وافق قدومه يوما من رمضان فعليه القضاء) لأنه لم يصمه عن نذره",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The fast was not done for the vow, so the vow still has to be made up. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "al-Qāḍī: the vow is valid, being a vow of obedience that can usually be fulfilled, as if the month had fallen in Shaʿbān; so he fasts Ramaḍān, then makes up the vow and expiates",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p020",
+     "excerpt_ar": "والصحيح عندي صحة النذر؛ لأنه نذر طاعة يمكن الوفاء به غالبا، فانعقد، كما لو وافق شعبان. فعلى هذا يصوم رمضان، ثم يقضي، ويكفر",
+     "who": "Ibn Qudāma, al-Mughnī (reporting al-Qāḍī)",
+     "note": "al-Qāḍī's preferred view, also Abū Bakr's choice: Ramaḍān does not settle the vow. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He vowed a fast in a stretch of time and has fasted in it; this is the analogue (qiyās) of the view of Ibn ʿAbbās and ʿIkrima",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p020",
+     "excerpt_ar": "وهو قياس قول ابن عباس، وعكرمة؛ لأنه نذر صوما في وقت، وقد صام فيه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Khiraqī's ruling: one fast counts for both Ramaḍān and the vow. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "aqrabSahabi",
+     "dalil": "Ibn ʿAbbās, on one who vowed ḥajj before performing the obligatory ḥajj: one ḥajj counts for both (he approved ʿIkrima's analogy with a vowed four rakʿas prayed as ʿaṣr); Ibn ʿUmar and Anas held that he starts with the ḥajj of Islam and then performs the vow",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p020",
+     "excerpt_ar": "وروى عكرمة، عن ابن عباس، في رجل نذر أن يحج، ولم يكن حج الفريضة، قال: يجزئ لهما جميعا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī cites this in support of al-Khiraqī's view. It concerns the parallel ḥajj case, and Ibn ʿUmar and Anas disagree in the same passage, so the tier is aqrabSahabi. It would be qiyas if the carry-over from ḥajj to fasting counts as the proof."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The zakāt is itself a ṣadaqa, so one payment counts for zakāt and the vow, and the rest is ṣadaqa for the vow",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p070",
+     "excerpt_ar": "إلا أن ينوي الزكاة بقدرها، ويكون ذلك صدقة تجزئه عن الزكاة والنذر؛ لكون الزكاة صدقة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's iḥtimāl (position 0). A stated ʿilla: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Each of them is a ṣadaqa, as when one intends both the greeting of the mosque and the regular sunna with two rakʿas",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p176",
+     "excerpt_ar": "الزكاة والنذر إن نواهما معا) لأن كلا منهما صدقة كما لو نوى بركعتين التحية والراتبة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Analogy with two rakʿas intended for the taḥiyya and the rātiba: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The Prophet's command that the pilgrim's last act be at the House («until his last act is at the House»): this ṭawāf is his last act, so the command is fulfilled",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p404",
+     "excerpt_ar": "إحداهما، يجزئه عن طواف الوداع، لأنه أمر أن يكون آخر عهده بالبيت، وقد فعل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The first riwāya (al-Khiraqī). A marfūʿ ḥadīth whose wording is met by the ziyāra ṭawāf, through its apparent sense: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "What is prescribed as a greeting of the mosque is satisfied by an obligatory act of its kind, as the prescribed prayer satisfies the two rakʿas of taḥiyyat al-masjid",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p404",
+     "excerpt_ar": "ولأن ما شرع لتحية المسجد أجزأ عنه الواجب من جنسه، كتحية المسجد بركعتين تجزئ عنهما المكتوبة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Analogy with taḥiyyat al-masjid: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "They are two obligatory acts of worship, so neither counts for the other, like two obligatory prayers",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p404",
+     "excerpt_ar": "وعنه، لا يجزئه عن طواف الوداع؛ لأنهما عبادتان واجبتان، فلم تجز إحداهما عن الأخرى، كالصلاتين الواجبتين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The case records this side as a takhrīj; al-Mughnī reports it as a riwāya and gives this reason. Analogy with two obligatory prayers: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Same: they differ, like two obligatory prayers, and as when one intends the farewell ṭawāf for the ziyāra",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v03:p234",
+     "excerpt_ar": "والثانية: لا، لاختلافهما كالصلاتين الواجبتين، وكما لو نوى بطوافه الوداع عن طواف الزيارة",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The ḥadīth of ʿAbd al-Raḥmān b. Zayd b. al-Khaṭṭāb: «and if two witnesses testify, then fast and break the fast»: the fiṭr is tied to two witnesses",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p166",
+     "excerpt_ar": "أحدهما: لا يفطرون؛ لقوله - عليه السلام -: «وإن شهد اثنان فصوموا وأفطروا»",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "First wajh: they do not break the fast after thirty days begun on one witness. A marfūʿ āḥād report whose bearing here is by its implied sense (two witnesses for the fiṭr): zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Breaking the fast may not rest on one witness, as when one man testifies to the Shawwāl crescent (aṣl: Shawwāl crescent; ʿilla: a fiṭr resting on a single witness)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p166",
+     "excerpt_ar": "ولأنه فطر، فلم يجز أن يستند إلى شهادة واحد، كما لو شهد بهلال شوال",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Analogy with the testimony to the Shawwāl crescent, which needs two: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: lest the fiṭr come about on the word of one man",
+     "ref": "src:openiti-rajab-shamela21730/v01:p298",
+     "excerpt_ar": "أشهرهما لا يفطرون لئلا يؤدي إلى الفطر بقول واحد",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's reason for the better-known wajh: a stated rationale, qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The fiṭr follows from completing the count, not from the testimony, and what is not established on its own can be established as a dependent, as lineage follows a birth proven by women's testimony",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p166",
+     "excerpt_ar": "لأن الصوم إذا وجب الفطر لاستكمال العدة، لا بالشهادة، وقد يثبت تبعا ما لا يثبت أصلا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second wajh (al-Mughnī notes it is al-Shāfiʿī's naṣṣ and reported from Abū Ḥanīfa): the fiṭr follows the fast. Analogy with lineage proven through a birth to which women testify: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Same: the fiṭr is established as a dependent of the fast, as lineage is established through a birth proven by women",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v03:p008",
+     "excerpt_ar": "والثاني وجزم به في \" الوجيز \" أنهم يفطرون لثبوته تبعا، كالنسب لا يثبت بشهادة النساء، ويثبت بها الولادة",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ repeats the tabaʿ analogy for the second wajh (al-Wajīz affirms it): qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Praying tarāwīḥ that night is a precaution for the sunna of its night prayer and entails nothing forbidden, unlike advancing the fast; Aḥmad's word «al-qiyām qabl al-ṣiyām»",
+     "ref": "src:openiti-insaf-shamela21609/v03:p271",
+     "excerpt_ar": "القيام قبل الصيام احتياط لسنة قيامه، ولا يتضمن محذورا، والصوم نهي عن تقديمه",
+     "who": "al-Mardāwī, al-Inṣāf (citing al-Majd's Sharḥ)",
+     "note": "al-Majd's argument for praying tarāwīḥ on the cloudy night, as the night prayer follows the precautionary fast. A stated rationale (iḥtiyāṭ) built on Aḥmad's word: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He prays tarāwīḥ that night as a precaution for the sunna; the fast's other dependents follow because they depend on the fast",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p302",
+     "excerpt_ar": "(ويصلي التراويح ليلته) إذن (احتياطا للسنة) قال أحمد: القيام قبل الصيام",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf gives the same precaution rationale with Aḥmad's word. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Restricting the ruling to the text: the precautionary fast is what the naṣṣ gives, and other rulings of the month are not established, so the night stays on its original status",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v03:p005",
+     "excerpt_ar": "وظاهره أنها لا تصلى التراويح ليلتئذ، واختاره التميميون اقتصارا على النص",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "The second wajh (Abū Ḥafṣ, the Tamīmīs): no tarāwīḥ, keeping to the text. I read «iqtiṣāran ʿalā al-naṣṣ» as leaving everything beyond the fast on its prior state (the month not yet established): istishab. It could also be read as a bare restriction of the ruling, i.e. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "One narrator establishes the ḥadīth, and the divorce suspended on it follows as a dependent, though divorce is not established by one man's report",
+     "ref": "src:openiti-rajab-shamela21730/v01:p298",
+     "excerpt_ar": "فرواه واحد ثبت الحديث به ووقع الطلاق وإن كان الطلاق لا يثبت بخلاف واحد ذكره ابن عقيل",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid (reporting Ibn ʿAqīl, ʿUmad al-Adilla)",
+     "note": "Ibn ʿAqīl's ruling rests on the qāʿida that a thing is established as a dependent which is not established independently. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Takhrīj from the next case: the oath that he usurped nothing, where the usurpation proven by a witness and oath does not bring the divorce",
+     "ref": "src:openiti-rajab-shamela21730/v01:p298",
+     "excerpt_ar": "ويتخرج عدم وقوع الطلاق في المسألتين من المسألة الآتية",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Non-occurrence is derived by analogy with the usurpation case (aṣl), whose ʿilla is that divorce is not proven by evidence that does not prove divorce: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f008",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Divorce is not proven by evidence that proves only property (a man and two women, a witness and oath, refusal to swear)",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p319",
+     "excerpt_ar": "لم تطلق) لأن الطلاق لا يثبت بذلك والأصل بقاء العصمة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The divorce does not follow: what proves the usurpation does not prove divorce. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The original state is that the marriage tie continues",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p319",
+     "excerpt_ar": "لأن الطلاق لا يثبت بذلك والأصل بقاء العصمة ولو حلف لا يستحق على فلان شيئا",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The second reason in the same sentence: «al-aṣl baqāʾ al-ʿiṣma»: istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f009",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Aḥmad's naṣṣ (riwāya of Muhannā): he said 'if you menstruate, you and your co-wife are divorced', and women testified to her menstruation; both were divorced",
+     "ref": "src:openiti-rajab-shamela21730/v01:p299",
+     "excerpt_ar": "ويشهد له نص أحمد في رواية مهنا إذا قال لها إن حضت فأنت وضرتك طالق فشهد النساء بحيضها طلقتا جميعا",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The divorce follows the birth proven by women. Ibn Rajab supports it with Aḥmad's naṣṣ on menstruation proven by women. Carrying that naṣṣ over to the birth case is qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Takhrīj: no divorce until those testify whose testimony proves divorce itself, as when an oath that he usurped nothing meets usurpation proven by a man and two women or a witness and oath",
+     "ref": "src:openiti-insaf-shamela21609/v09:p082",
+     "excerpt_ar": "ويتخرج أن لا تطلق حتى يشهد من يثبت ابتداء الطلاق بشهادته، كمن حلف بالطلاق ما غصب",
+     "who": "al-Mardāwī, al-Inṣāf (reporting al-Muḥarrar)",
+     "note": "al-Majd's derived wajh, by analogy with the usurpation case: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f010",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The dispute is over paying money, and money is proven by a witness and oath; the manumission follows from the original contract, as lineage follows a birth proven by one woman",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p429",
+     "excerpt_ar": "وصار حرا وهذا قول الشافعي - رضي الله عنه -؛ لأن النزاع بينهما في أداء المال، والمال يقبل فيه الشاهد واليمين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Khiraqī's ruling (al-Shāfiʿī agrees): he is freed. A stated ʿilla (the testimony is about property): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "One witness can establish what then entails a thing that needs two, as one woman's testimony to a birth entails lineage",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p429",
+     "excerpt_ar": "ولا يمتنع أن يثبت بشهادة الواحد ما يترتب عليه أمر لا يثبت إلا بشاهدين، كما أن الولادة تثبت بشهادة المرأة الواحدة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The tabaʿ analogy with lineage through birth: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same: the dispute is over payment of money, which this evidence proves",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p069",
+     "excerpt_ar": "وعتق) لأن النزاع بينهما في أداء المال، والمال يقبل فيه ذلك، وقيل: في غير النجم الأخير",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ repeats the ʿilla and notes a variant («wa-qīla») excluding the last instalment. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The purpose of this testimony is manumission, which is not proven by a witness and oath",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p429",
+     "excerpt_ar": "فإن قيل: القصد بهذه الشهادة العتق، وهو مما لا يثبت بشاهد ويمين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī raises this as an objection («fa-in qīla») and answers it. It is the only reason given anywhere for the other wajh in al-Targhīb. A rationale: qiyas. al-Mughnī's answer is a rebuttal and is not recorded."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f011",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "ʿUmar's will: «This is what ʿAbd Allāh ʿUmar, Commander of the Faithful, bequeathed: if anything befalls him, Thamgh is a ṣadaqa…» (Abū Dāwūd), cited by Aḥmad; it became widely known among the Companions and no one objected",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p025",
+     "excerpt_ar": "وهذا نص في مسألتنا، ووقفه هذا كان بأمر النبي - صلى الله عليه وسلم - ولأنه اشتهر في الصحابة، فلم ينكر، فكان إجماعا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A waqf suspended on death, done by ʿUmar. al-Mughnī calls it a naṣṣ on the masʾala and a tacit consensus («lam yunkar»). A tacit consensus of the ṣaḥāba with none disagreeing: fatwaSahabi, not ijma."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is a gift suspended on death, so it is valid, like an outright gift or ṣadaqa; a bequest is wider than dealings in life",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p025",
+     "excerpt_ar": "ولأن هذا تبرع معلق بالموت، فصح كالهبة والصدقة المطلقة، أو نقول: صدقة معلقة بالموت، فأشبهت غير الوقف",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Analogy with gifts and ṣadaqa, and with bequests: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is a bequest, and bequests accept suspension",
+     "ref": "src:openiti-rajab-shamela21730/v01:p299",
+     "excerpt_ar": "والأول أصح ; لأنها وصية والوصايا تقبل التعليق",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's tarjīḥ of al-manṣūṣ: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It suspends a waqf on a condition, and suspending a waqf is not allowed, as when it is suspended on a condition during life",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p025",
+     "excerpt_ar": "وقال القاضي: لا يصح هذا؛ لأنه تعليق للوقف على شرط، وتعليق الوقف على شرط غير جائز",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Qāḍī's argument, with the waqf suspended on a condition during life as the aṣl: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f014",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The divorce includes a choice (ikhtiyār) of the wife, and choice cannot be suspended on a condition",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p161",
+     "excerpt_ar": "والثاني، لا يصح؛ لأن الطلاق يتضمن الاختيار، والاختيار لا يصح تعليقه بالشرط",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The wajh that it is not valid. A stated rationale (the choice is like a contract and does not accept taʿlīq): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same: divorce here is choice, and choice is not attached to a condition",
+     "ref": "src:openiti-rajab-shamela21730/v01:p299",
+     "excerpt_ar": "أحدهما: لا يصح ; لأن الطلاق اختيار والاختيار لا يتعلق بالشرط",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Divorce may be suspended on a condition, and it includes choosing her, so each wife who converts is chosen and divorced",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p161",
+     "excerpt_ar": "أحدهما، يصح؛ لأن الطلاق يصح تعليقه بالشرط، ويتضمن الاختيار لها، فكلما أسلمت واحدة كان اختيارا لها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The wajh that it is valid: choice comes in as part of the divorce. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Divorce accepts suspension, and the choice is established as its dependent and within it",
+     "ref": "src:openiti-rajab-shamela21730/v01:p299",
+     "excerpt_ar": "والثاني: يصح ; لأن الطلاق يقبل التعليق والاختيار يثبت تبعا له وضمنا",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f018",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The lot has a role in telling free from slave, but none in determining lineage",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p374",
+     "excerpt_ar": "وقيل: لا يثبتان ; لأنه لا مدخل للقرعة في تمييز النسب، ولها مدخل في تمييز الرق من الحرية",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "The view that neither lineage nor inheritance follows (al-Sāmarrī). A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same: the lot has no role in lineages",
+     "ref": "src:openiti-rajab-shamela21730/v01:p300",
+     "excerpt_ar": "أنه لا يثبت نسبه ولا يرث به وهو الذي ذكره القاضي في المجرد وابن عقيل والسامري ; لأن القرعة لا مدخل لها في الأنساب",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He is free, and his freedom rests on his father's acknowledgement, so he inherits as if the father had named him in the acknowledgement",
+     "ref": "src:openiti-rajab-shamela21730/v01:p300",
+     "excerpt_ar": "قياس المذهب ; لأنه حر استندت حريته إلى الإقرار فأشبه ما لو عينه في إقراره",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid (reporting al-Talkhīṣ)",
+     "note": "Analogy with the child named in the acknowledgement: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Same ʿilla, given in al-Mughnī for the parallel case of one slave woman's three children and applied here: «qiyās al-madhhab» is that his lineage and inheritance are established",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p154",
+     "excerpt_ar": "لأن للقرعة مدخلا في إثبات الحرية. وقياس المذهب ثبوت نسبه وميراثه، على ما ذكرنا في التي قبلها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī refers back to its argument in the preceding faṣl («he is free, his freedom resting on his father's acknowledgement, so he inherits»): qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f019",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Once the divorce is established by the lot, its consequences, the ʿidda among them, follow it",
+     "ref": "src:openiti-rajab-shamela21730/v01:p300",
+     "excerpt_ar": "في ظاهر كلام أحمد رضي الله عنه ; لأن الطلاق لما ثبت بالقرعة تبعه لوازمه من العدة وغيرها",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The rationale for ẓāhir kalām Aḥmad: a dependent follows what the lot establishes. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Each wife may be the one still married, owing the death ʿidda, or the divorced one, owing the divorce ʿidda; she is free of it with certainty only by the longer of the two",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p503",
+     "excerpt_ar": "لأن كل واحدة منهن يحتمل أن يكون عليها عدة الوفاة ويحتمل أنها المطلقة فعليها عدة الطلاق فلا تبرأ يقينا إلا بأطولهما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's «wa-l-ṣaḥīḥ» for the husband dying before the divorced wife is identified: precaution for certainty. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Same: each may be the divorced wife or another, so the longer term binds her and the shorter is included in it",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p337",
+     "excerpt_ar": "تكون المطلقة أو غيرها فلزمها الأطول ودخل فيه ما دونه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f020",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "In inheritance and blood money his word is accepted when it lessens his share and refused when it increases it, because he is suspect and his word does not bind others",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p208",
+     "excerpt_ar": "وأما الميراث والدية، فإن أقر على نفسه بما يقلل ميراثه أو ديته، قبل منه، وإن ادعى ما يزيد ذلك، لم يقبل؛ لأنه متهم فيه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "After accepting the hermaphrodite's word for marriage, al-Mughnī accepts it only where it is against himself. A stated ʿilla (suspicion): qiyas. No source gives a reason for all male rulings following (position 0); al-Mughnī accepts his word in his worship as a matter between him and God, but that does not cover rulings that benefit him."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

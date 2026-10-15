@@ -1,0 +1,466 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b10: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: divorce and the ḥadd of qadhf are two rights against him; both follow from the one utterance, and his word is not accepted to drop either.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p020",
+     "excerpt_ar": "وبه جزم في عمد الأدلة أنه يحد ; لأنهما حقان عليه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn ʿAqīl's first possibility, the one asserted in ʿUmad al-Adilla. No listed work treats the masʾala; Ibn Rajab's report is the only argument found. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: qadhf and divorce exclude each other, so once the word is taken as divorce it cannot also be qadhf.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p020",
+     "excerpt_ar": "والثاني : لا يحد لأنه لو كان قذفا لم يكن طلاقا لتنافيهما",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn ʿAqīl's second possibility (no ḥadd). A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: wuḍūʾ from one of two confused vessels, later found to be the ṭahūr one, is like praying before knowing the time has entered and then finding it had: the act was done without the knowledge its validity needs (aṣl: prayer before knowing the time; ʿilla: performing while the condition is not known).",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p048",
+     "excerpt_ar": "لم يصح وضوءه) كما لو صلى قبل أن يعلم دخول الوقت فصادفه، وظاهره سواء تحرى أو لا",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Cited by al-Buhūtī for the madhhab ruling (not valid) on exactly these facts: no ghalaba (no taḥarrī) and no presumption to build on. A stated analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale for Abū al-Ḥusayn: firm certainty that the wuḍūʾ is valid is not a condition of it, so it stands once the water proves ṭahūr.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p120",
+     "excerpt_ar": "وقال القاضي أبو الحسين يصح وهو يرجع إلى أن الجزم بصحة الوضوء لا يشترط",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab gives this as the ground of Abū al-Ḥusayn's view (validity). A stated rationale, not a text: qiyas. None of the listed works argues for this view; al-Mubdiʿ (v01:p043) only reports it."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the suspended intention («the farḍ if I am in ḥadath / if the time has entered, else renewal or nafl») only states what the act's ruling would be anyway without it, so voicing it does no harm.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p121",
+     "excerpt_ar": "فذكر ابن عقيل أنه يجزئه لأن هذا حكمه ولو لم ينوه، فإذا نواه لم يضره",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn ʿAqīl's ground for sufficiency; the prayer rests on a preponderant belief that the time has entered, which suffices. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Takhrīj a fortiori from Abū Bakr's view in the zakāt case (the hesitant intention does not suffice, «لم يخلص النية عن الفرض»): here even more so, since the zakāt case at least rested on a presumption of continuance and this one does not.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p121",
+     "excerpt_ar": "ويتخرج منه وجه في التي قبلها أنه لا يصح وأولى لأن هناك لم يبن على أصل مستصحب",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The extracted wajh for insufficiency is a qiyās (awlā) from the following farʿ; Ibn Rajab himself notes it is answered by ghalabat al-ẓann on the time. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: he made the intention purely for the farḍ and only ordered the nafl after it; that is the payment's ruling even if unsaid (if the wealth had perished it would be voluntary), so saying it does not harm.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p477",
+     "excerpt_ar": "فبان سالما، أجزأت نيته؛ لأنه أخلص النية للفرض، ثم رتب عليها النفل، وهذا حكمها كما لو لم يقله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's reason for sufficiency when the absent wealth proves safe. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: the absent wealth is presumed to remain, so an intention to pay its zakāt despite doubt over its safety is valid.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p477",
+     "excerpt_ar": "جاز له إخراج الزكاة عنه، وكانت نية الإخراج صحيحة؛ لأن الأصل بقاؤه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is the presumption that distinguishes the case (asl_mustashab): the intention is built on the continuance of the wealth. The original state: istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale for Abū Bakr: the intention was not made purely for the obligatory zakāt but hesitated between it and a voluntary gift.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v02:p394",
+     "excerpt_ar": "وقال أبو بكر: لا يجزئه؛ لأنه لم يخلص النية للفرض",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ attaches Abū Bakr's denial to this very conditional formula («إن كان سالما ... وإلا فنفل»); in al-Mughnī the same reason is given for «زكاة مالي الغائب أو تطوع». A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: on the riwāya that Ramaḍān needs a specified intention, this intention did not specify the fast as Ramaḍān's with firmness.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p113",
+     "excerpt_ar": "وإلا فهو نفل. لم يجزئه، على الرواية الأولى؛ لأنه لم يعين الصوم من رمضان جزما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's ground for insufficiency, resting on the requirement of taʿyīn (the mashhūr). A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: intention is firm resolve; a suspended intention is not firm.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p439",
+     "excerpt_ar": "ولا يصح عند من أوجبه؛ لأنه لم يجزم به والنية عزم جازم",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's reason for the same ruling on the same formula («فهو فرض وإلا فهو نفل»). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale for Ṣāliḥ's report: under cloud the fast of that day is (on that riwāya) obligatory, so the hesitant intention suffices then, unlike a clear night.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v03:p019",
+     "excerpt_ar": "ونقل صالح : أنه يصح بالنية المترددة والمطلقة مع الغيم دون الصحو؛ لوجوب صومه",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ gives Ṣāliḥ's report with its reason. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale on the riwāya that taʿyīn is not required for Ramaḍān: he intended the fast, and that intention suffices.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p439",
+     "excerpt_ar": "صح عند من لم يوجب التعيين؛ لأنه نوى الصوم ونيته كافية",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Cited for sufficiency on the same formula, on the riwāya on which Ṣāliḥ's report is built (al-Inṣāf v03:p295). Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: the deposited dinar is presumed to remain, so the exchange may be built on it under doubt; doubt does not remove certainty.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p044",
+     "excerpt_ar": "ووجه الأول، أن الأصل بقاؤه، فصح البناء عليه عند الشك، فإن الشك لا يزيل اليقين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's argument for Ibn ʿAqīl's view (valid). The original state: istishab."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the sale of an absent animal whose life is doubted, which is valid and void only if it proves to have perished at the contract.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p044",
+     "excerpt_ar": "ولذلك صح بيع الحيوان الغائب المشكوك في حياته، فإن تبين أنه كان تالفا حين العقد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same passage, for the same view; aṣl the absent animal, ʿilla a doubted existence presumed to continue. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale for al-Qāḍī: the dinar is not known to remain, and ṣarf needs a present, known countervalue.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p044",
+     "excerpt_ar": "وقال القاضي: لا يصح؛ لأنه غير معلوم البقاء. وهو منصوص الشافعي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for al-Qāḍī's view (not valid), also al-Shāfiʿī's naṣṣ. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the judge and his trustee are provided for from the treasury, so they need not take from the ward's property.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p455",
+     "excerpt_ar": "وأما الحاكم وأمينه فلا يأكلان شيئا لأنهما يستغنيان بمالهما في بيت المال",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī's reason for excluding them (the Iqnāʿ/Muntahā ruling). A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Farq: the father may fix a fee for his executor even when a volunteer exists, so the executor acts by his permission; the judge may not pay anyone when a volunteer exists, so his trustee is unlike the executor.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p131",
+     "excerpt_ar": "وفرق بينه وبين الوصي بأن الأب له أن يجعل للوصي جعلا مع وجود متبرع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Qāḍī's first view, distinguishing the ḥākim's trustee from the testamentary executor. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the father's executor, taken from Aḥmad's naṣṣ that the judge takes a wage for judging in proportion to his work: so he may take for his work on the orphan's property.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p131",
+     "excerpt_ar": "وقال مرة: له الأكل كوصي الأب وأخذه من نص أحمد على أن الحاكم يأخذ على القضاء أجرا بقدر شغله",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Qāḍī's second view, which al-Mardāwī calls «الصواب». A takhrīj and analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the executor/guardian: the waqf administrator is equal to him in meaning and ruling.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p455",
+     "excerpt_ar": "ويأكل ناظر وقف بمعروف نصا إذا لم يشترط الواقف له شيئا) لأنه يساوي الوصي معنى وحكما",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī's reason for the naṣṣ that the nāẓir eats where the founder stipulated nothing. Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the zakāt collector, who takes for his work even when rich.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p180",
+     "excerpt_ar": "يحتج أكل) منه (بمعروف) إلحاقا له بعامل الزكاة",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā's reason for the nāẓir eating without need and without a stipulation. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "fatwaSahabi",
+     "dalil": "ʿUmar's waqf, entrusted to Ḥafṣa, in which he stipulated that its administrator may eat from it «بالمعروف»: Aḥmad drew from it that the administrator eats when that is stipulated, so (by mafhūm) not without it.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p131",
+     "excerpt_ar": "ونقل الميموني عن أحمد أنه ذكر حديث عمر حين وقف فأوصى إلى حفصة ثم قال أحمد: وليه يأكل منه بالمعروف إذا اشترط ذلك",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The ṣaḥābī's own stipulation in his waqf, with no ṣaḥābī reported against it, read by Aḥmad as making the stipulation the ground of eating. fatwaSahabi; the denial rests on the mafhūm of Aḥmad's wording, which Ibn Rajab draws out."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the agent and the hired worker can get their pay from the principal or hirer, so they have no need to eat from the property; the hired worker has already taken a wage for his work.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p131",
+     "excerpt_ar": "ومنها الوكيل والأجير والمعروف منعهما من الأكل لاستغنائهما عنه بطلب الأجرة من المؤجر والموكل",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The stated ground of al-maʿrūf (they do not eat). A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Farq: the agent can agree a fee with his principal; the executor cannot (the principal is dead), so the executor eats and the agent does not.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p455",
+     "excerpt_ar": "لأنه يمكنه موافقة الموكل على الأجرة، بخلاف الوصي أشار إليه القاضي",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given in Kashshāf for the agent for distributing alms; the same farq is reported by al-Inṣāf (v05:p341) for the agent generally. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Aḥmad (Ḥanbal) let the guardian and executor eat «because they are like the hired worker and the agent», which presupposes that the agent too may take for his upkeep.",
+     "ref": "src:openiti-insaf-shamela21609/v05:p340",
+     "excerpt_ar": "يأكلان بالمعروف. لأنهما كالأجير والوكيل. وظاهر هذا: النفقة للوكيل",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Not a sharʿī proof of its own but an inference from the imām's analogy (the agent as aṣl), drawn by al-Qāḍī; recorded as the only stated ground for this position. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of Abū Saʿīd al-Khudrī, marfūʿ: «If you come to the wall of a garden, call the owner; if he answers [ask], otherwise eat without causing damage» (Aḥmad, Ibn Mājah; its men trustworthy).",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p200",
+     "excerpt_ar": "فإن أجابك وإلا فكل من غير أن تفسد» رواه أحمد وابن ماجه ورجاله ثقات",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Cited for eating from unguarded fruit with no condition of need. Connected marfūʿ āḥād: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "Anas b. Mālik, ʿAbd al-Raḥmān b. Samura and Abū Barza ate from fruit they passed; ʿUmar: «he eats and does not take a bundle»; Ibn ʿAbbās likewise.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p561",
+     "excerpt_ar": "أنه يأكل ولا يحمل، لما روي عن أبي زينب، قال: سافرت مع أنس بن مالك",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's proof for the first riwāya (eat, not carry). al-Mughnī (v09:p417) adds «قول من سمينا من الصحابة من غير مخالف، فيكون إجماعا» and answers Saʿd's abstaining as not a disagreement; a tacit consensus of ṣaḥāba, so fatwaSahabi, not ijma."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of ʿAmr b. Shuʿayb from his father from his grandfather, marfūʿ, on hanging fruit: «Whatever one in need takes with his mouth, not taking a bundle, there is nothing on him; whoever carries some off owes twice its value and punishment» (graded ḥasan).",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p561",
+     "excerpt_ar": "والثالثة: له الأكل إن كان جائعا، ولا يأكل إن لم يكن جائعا، لما روى عمرو بن شعيب",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Cited in al-Kāfī for the riwāya that he eats only if hungry: the ḥadīth's qualifier «من ذي حاجة». Connected marfūʿ āḥād: zanni."
+    },
+    {
+     "position": 2,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of Rāfiʿ (b. ʿAmr): the Prophet said to him «Do not throw at it; eat what has fallen» (graded ṣaḥīḥ in al-Kāfī; al-Tirmidhī ḥasan ṣaḥīḥ in al-Mughnī).",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p561",
+     "excerpt_ar": "والثانية: يباح ما سقط، ولا يرمي بحجر ولا يضرب، لما روى رافع",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Cited in al-Kāfī for the riwāya that only fallen fruit is permitted. Connected marfūʿ āḥād: zanni."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the two witnesses caused the taking of his property, so they are liable for what perished or cannot be recovered.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v09:p135",
+     "excerpt_ar": "فله تضمين الشاهدين لأنهما سبب الاستيلاء عليه",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr for the man who returns alive after his death was testified to and his estate divided. Causation as ʿilla: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the property perished through their testimony.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p199",
+     "excerpt_ar": "البينة) التي شهدت بوفاته (ما تلف من ماله) لتلفه بسبب شهادتها",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā for the Muntahā's ruling that the witnesses are liable. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the direct taker (the heir who consumed it) is liable before the one who caused it; the witnesses only if he cannot be made to pay.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p199",
+     "excerpt_ar": "قلت: إن تعذر تضمين المباشر وإلا فالضمان عليه ; لأنه مقدم على المتسبب",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "al-Buhūtī's own qualification supports making the heirs pay first, as in al-Qāḍī's iḥtimāl; Ibn Rajab adds that they then recover from the witnesses «لتغريرهم». A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: whoever consumed the property destroyed it without the owner's permission, so the owner may claim from him.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v09:p135",
+     "excerpt_ar": "وللمالك تضمين المتلف لأنه أتلف ماله بغير إذنه",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr, same passage: the returning owner may also claim from the heir who consumed it. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the executor is excused, not having known of the creditor.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p496",
+     "excerpt_ar": "دين يستغرقه) أي الثلث لاستغراقه جميع المال لم يضمن. لأنه معذور بعدم علمه رب الدين",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā for no liability when an estate-consuming debt appears after he distributed the third. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale for liability: the creditors' right attaches strongly to the estate (Aḥmad: «the estate belongs to the creditors, not the heirs»), so disposing of it against that right is answerable.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p219",
+     "excerpt_ar": "ولكنه تعلق قوي لا سيما إن قلنا لم ينتقل إلى الورثة ولهذا قال أحمد في رواية ابن منصور في التركة هي للغرماء",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's statement of the ground of the riwāya of liability. A stated rationale resting on Aḥmad's naṣṣ: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the executor (or judge) is excused, not having known the legatee.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p496",
+     "excerpt_ar": "ثم ثبت) الموصى له (لم يضمن) موصى إليه ولا حاكم شيئا أي لأنه معذور بعدم علمه به",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā for no liability after spending a bequest to an unknown legatee who then proves it. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale from Aḥmad's naṣṣ: the estate is the creditors' before the heirs', so the heirs may dispose of it only on condition of liability.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p219",
+     "excerpt_ar": "هي للغرماء لا للورثة ولهذا لا يملك الورثة التصرف فيها إلا بشرط الضمان",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab states it in the executor's case and expressly of the heirs; it is the ground that separates them from the executor and makes them liable to the creditors (al-Qāḍī and Ibn ʿAqīl). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Takhrīj by analogy on the executor who distributed the third and is not liable when a consuming debt appears.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p219",
+     "excerpt_ar": "فإنهم يضمنون للغرماء ذكره القاضي وابن عقيل ويتخرج فيه وجه آخر بانتفاء الضمان من مسألة الوصي",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's extracted wajh; aṣl the executor's case, carried over to the heirs executing the bequest. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f011",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the three attributes are all found in him, so it is as if she saw three men bearing the three attributes; each suspension is met.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p361",
+     "excerpt_ar": "فرأت رجلا أسود فقيها - طلقت ثلاثا) لوجود الصفات الثلاث فيه، أشبه ما لو رأت ثلاثة فيهم الثلاث صفات",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ (and al-Sharḥ al-Kabīr, Kashshāf) for the madhhab ruling of three divorces. Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the divorce is suspended on each attribute separately and each has occurred, as if found in three persons.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p114",
+     "excerpt_ar": "لأن الطلاق معلق على كل من هذه الصفات وقد وجدت أشبه ما لو وجدت في ثلاثة أعيان",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā for the same ruling. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale from the swearer's evident meaning: he meant «you are divorced» whichever attribute is met, so the unqualified wording is taken in that sense, it being the customary usage, unless he intends otherwise.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p273",
+     "excerpt_ar": "لأن الأظهر من مراد الحالف أنت طالق سواء ولدت ذكرا أو أنثى، وسواء كلمت رجلا أو فقيها أو أسود",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Taqī al-Dīn's ground for one divorce only. A linguistic and customary rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

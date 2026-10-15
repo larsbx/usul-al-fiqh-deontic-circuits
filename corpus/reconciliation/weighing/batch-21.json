@@ -1,0 +1,619 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b21: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "«إذا أمرتكم بأمر فأتوا منه ما استطعتم»: he does what he can of the washing, then performs tayammum for the rest",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p093",
+     "excerpt_ar": "ماء لا يكفي لطهارة استعمله) وجوبا (ثم تيمم) للباقي، لحديث «إذا أمرتكم بأمر فأتوا منه ما استطعتم»",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Cited expressly for one in minor ḥadath (حتى المحدث). A marfūʿ āḥād ḥadīth bearing on the farʿ by its general wording: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Q 5:6 «فلم تجدوا ماء فتيمموا»: tayammum is conditioned on not finding water, and this man finds some",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p175",
+     "excerpt_ar": "ولنا قوله تعالى: {فلم تجدوا ماء فتيمموا} [المائدة: 6] ، وخبر أبي ذر، شرط في التيمم عدم الماء، وهذا واجد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Argued for the junub with partial water and carried to the muḥdith by «يلزمه استعماله؛ لما ذكرنا في الجنب». The āya is not explicit on partial water; it bears by its apparent sense: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He is able to do part of purification with water, so it is binding on him, like the junub and like one partly wounded",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p175",
+     "excerpt_ar": "أحدهما يلزمه استعماله؛ لما ذكرنا في الجنب؛ ولأنه قدر على بعض الطهارة بالماء، فلزمه كالجنب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's ground for the first wajh. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Continuity (muwālāt) is a condition of wuḍūʾ, so washing some limbs without the rest is of no use, unlike janāba",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p175",
+     "excerpt_ar": "والثاني لا يلزمه؛ لأن الموالاة شرط فيها، فإذا غسل بعض الأعضاء دون بعض، لم يفد، بخلاف الجنابة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ground for the second wajh, with a farq from the junub. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "«إذا أمرتكم بأمر فأتوا منه ما استطعتم» (agreed upon per al-Kāfī)",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p413",
+     "excerpt_ar": "إحداهما: يلزمه إخراجه، لقوله - صلى الله عليه وسلم -: «إذا أمرتكم بأمر فأتوا منه ما استطعتم» متفق عليه",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Cited for obliging the part ṣāʿ. A marfūʿ āḥād ḥadīth applied by its general wording: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is a purification, so what he can of it is due, like purification with water; and part of a ṣāʿ is paid for a co-owned slave, so it may be paid for others",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p095",
+     "excerpt_ar": "ولأنها طهرة، فوجب منها ما قدر عليه، كالطهارة بالماء، ولأن الجزء من الصاع يخرج عن العبد المشترك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's analogies for the second riwāya (the madhhab). qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Had he owned part of a slave its fiṭra would bind him, so owning part of what is paid binds him to pay it",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p413",
+     "excerpt_ar": "ولأنه لو ملك بعض العبد لزمته فطرته، فكذلك إذا ملك بعض المؤدى لزمه أداؤه",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Further analogy in al-Kāfī. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is a purification and is not due from one who does not own the whole, like the expiation",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p095",
+     "excerpt_ar": "إحداهما لا يلزمه. اختارها ابن عقيل؛ لأنها طهرة فلا تجب على من لا يملك جميعها، كالكفارة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn ʿAqīl's riwāya; aṣl: the kaffāra not partly discharged. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He lacks what discharges the duty, like one owing an expiation who owns only part of a slave",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p413",
+     "excerpt_ar": "والثانية: لا يلزمه؛ لأنه عدم ما يؤدي به الفرض فلم يلزمه",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Same analogy in al-Kāfī. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "«لا ضرر ولا ضرار»: the partner is harmed by leaving the shared ceiling unbuilt",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p152",
+     "excerpt_ar": "أو بين سفل أحدهما وعلو الآخر (شريكه) فيه ببناء معه أي الطالب (أجبر) المطلوب على البناء معه نصا",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā names the ceiling between one's lower and another's upper storey and grounds the compulsion «لحديث لا ضرر ولا ضرار» a few words on. A marfūʿ āḥād ḥadīth applied by its generality: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rebuilding is shared because the benefit of the ceiling is to both",
+     "ref": "src:openiti-rajab-shamela21730/v01:p143",
+     "excerpt_ar": "والمنصوص ههنا أنه إن انكسر خشبه فيه فبناؤهما بينهما لأن المنفعة لهما جميعا وظاهره الإجبار",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Aḥmad's naṣṣ (Abū Ṭālib) with its stated reason, which Ibn Rajab reads as compulsion. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Leaving it unbuilt harms, so he is compelled, as he is compelled to partition and to demolish what threatens to fall",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p383",
+     "excerpt_ar": "لأن في ترك بنائه إضرارا، فيجبر عليه، كما يجبر على القسمة إذا طلبها أحدهما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the shared wall; the Mughnī puts the ceiling «على روايتين، كالحائط بين البيتين» (v04:p384), so the same ground carries. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is property without sanctity in itself, so its owner is not compelled to spend on it, as if he owned it alone; and it is building a wall, not compelled, like the first building",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p383",
+     "excerpt_ar": "لأنه ملك لا حرمة له في نفسه، فلم يجبر مالكه على الإنفاق عليه، كما لو انفرد به",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The non-compulsion riwāya for the wall, which the Mughnī calls «أقوى دليلا» and extends to the ceiling by «كالحائط بين البيتين». qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "«لا ضرر ولا ضرار»: a partner is compelled to repair shared property",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p414",
+     "excerpt_ar": "(ويجبر الشريك على العمارة مع شريكه في الأملاك والأوقاف المشتركة) لقوله - صلى الله عليه وسلم - «لا ضرر ولا ضرار»",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given for all shared property; the Kashshāf then extends it to the qanāt «كما تقدم في الحائط والسقف» (v03:p415). A marfūʿ ḥadīth by its generality: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The wall can be partitioned (its ground divided), whereas the qanāt and well cannot, so compulsion here is without dispute",
+     "ref": "src:openiti-rajab-shamela21730/v01:p144",
+     "excerpt_ar": "ولم يذكر ابن أبي موسى فيه خلافا وإنما ذكر الروايتين في الحائط والفرق أن الحائط يمكن قسمته بخلاف القناة والبئر",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The farq that grounds Ibn Abī Mūsā's single answer (Aḥmad's naṣṣ). qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He is compelled here because his partner cannot partition it with him and so is harmed, unlike the wall whose ground can be divided",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p386",
+     "excerpt_ar": "أنه يجبر هاهنا على الإنفاق؛ لأنه لا يتمكن شريكه من مقاسمته، فيضر به، بخلاف الحائط",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Reported for Abū Ḥanīfa, same ruling as position 0 (compulsion in the qanāt even where not in the wall). qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Treat them alike: dividing the wall's ground also harms both, and spending is gentler on them, so the qanāt and wall are equal (two riwāyas in both)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p386",
+     "excerpt_ar": "والأولى التسوية؛ لأن في قسمة العرصة إضرارا بهما والإنفاق أرفق بهما، فكانا سواء",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's answer to the farq, extending the two riwāyas to the qanāt as al-Qāḍī and most do. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "When the thing itself cannot be divided, division passes to its substitute, the price",
+     "ref": "src:openiti-rajab-shamela21730/v01:p145",
+     "excerpt_ar": "أحدهما: أنه إذا تعذر قسمة العين عدل إلى قسمة بدلها وهو القيمة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "First of the two grounds (maʾkhadh) Ibn Rajab gives for compelled sale. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The partner's right is in half the value of the whole, not the value of a half; selling his share alone would diminish it, as the Law in sirāya values the whole slave and gives each partner the value of his share",
+     "ref": "src:openiti-rajab-shamela21730/v01:p145",
+     "excerpt_ar": "والثاني: أن حق الشريك في نصف القيمة مثلا لا في قيمة النصف فلو باع نصيبه مفردا لنقص حقه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Second ground, with aṣl in the valuation for sirāya. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "If the ruler sells slaves when the master will not maintain them, to remove harm from one to whom he owes a right, he may a fortiori sell to remove harm from a partner",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p230",
+     "excerpt_ar": "إذا امتنع السيد من الإنفاق على مماليكه، باعهم الحاكم عليه. فإذا صرنا إلى ذلك دفعا للضرر عن شريك له عليه حق وملك",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ (citing Taqī al-Dīn)",
+     "note": "Taqī al-Dīn's a fortiori argument for compelling sale in qismat al-tarāḍī. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Partition of usufruct can only be by time, one taking before the other; there is no equality in that, the other's right being delayed, so he is not compelled",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p233",
+     "excerpt_ar": "لأن قسمة المنافع إنما تكون بقسمة الزمان، والزمان إنما يقسم بأن يأخذ أحدهما قبل الآخر، وهذا لا تسوية فيه، فإن الآخر يتأخر حقه فلا يجبر",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "The Mubdiʿ's (and the Sharḥ's) ground for no compulsion. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Muhāyaʾa is an exchange (one's benefit for its like at another time) with one partner's right delayed, unlike partition of things, which is separation of the two shares",
+     "ref": "src:openiti-rajab-shamela21730/v01:p145",
+     "excerpt_ar": "والمهايأة معاوضة حيث كانت استيفاء للمنفعة من مثلها في زمن آخر، وفيها تأخير أحدهما عن استيفاء حقه فلا يلزم بخلاف قسمة الأعيان",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The farq al-Qāḍī and his companions draw. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "By place there is no delay of either partner's right, so it is like partition of things, which is compelled",
+     "ref": "src:openiti-rajab-shamela21730/v01:p146",
+     "excerpt_ar": "أنه تجب المهايأة بالمكان دون الزمان لانتفاء تأخر استيفاء أحدهما لحقه في المهايأة بالأمكنة فهو كقسمة الأعيان",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ground for the wajh chosen by the author of al-Muḥarrar; aṣl: qismat al-aʿyān. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He was entitled from the start to keep the thing and claim the arsh; using it while knowing of the defect amounts to keeping it with knowledge, which does not drop the arsh",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p123",
+     "excerpt_ar": "وقياس المذهب، أن له الأرش؛ لأن له إمساك المبيع، والمطالبة بأرشه، وهذا يتنزل منزلة إمساكه مع العلم بعيبه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Muwaffaq's «قياس المذهب» for disposal after knowledge of the defect, which he then extends (3025) to use and offering for sale: «وقد ذكرنا أن قياس المذهب استحقاق الأرش». A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The arsh is compensation for the part lost through the defect, so it does not fall by his disposing of the rest, as one sold ten measures and given nine who disposes of them",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p124",
+     "excerpt_ar": "ولأن الأرش عوض الجزء الفائت بالعيب، فلم يسقط بتصرفه فيما سواه؛ كما لو باعه عشرة أقفزة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second ground for the arsh standing after disposal with knowledge; aṣl: the short delivery of measured goods. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "His disposal (use) while knowing the defect shows contentment with it defective, as though he declared it, so the arsh falls like the return",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p048",
+     "excerpt_ar": "كوطء وحمل على دابة (فيسقط أرش كرد) لقيام دليل الرضا مقام التصريح",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Given expressly for use other than trial (riding, intercourse) after knowing: the indication of contentment stands in place of its declaration; analogy to the return. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He became content with the thing deficient, so his right to the arsh fell like the return",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p092",
+     "excerpt_ar": "لأنه قد رضي بالمبيع ناقصا فسقط حقه من الأرش كالرد بلا نزاع",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "The Mubdiʿ's ground for «فلا شيء له» on disposal with knowledge, the head under which al-Inṣāf places use and offering for sale. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The shafīʿ's right attaches to the spathe (unpollinated at the sale, so part of the sold palm) and to its growth",
+     "ref": "src:openiti-rajab-shamela21730/v01:p162",
+     "excerpt_ar": "ولو تأبر الطلع المشمول بالبيع في يد المشتري ثم أخذه الشفيع ففي تبعيته وجهان لتعلق حقه بالطلع ونمائه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's ground for the wajh that the fruit follows the shafīʿ's taking: his right reached the spathe at the sale. A stated rationale: qiyas. No other source checked argues this wajh."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The shafīʿ's taking from the buyer is a second purchase, so it is treated as a purchase by consent: what was pollinated in the buyer's hand stays his, and the shafīʿ takes land and palms by their share of the price",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p257",
+     "excerpt_ar": "شراء ثان، فيكون حكمه حكم ما لو اشترى برضاه، فإن اشتراه وفيه طلع غير مؤبر، فأبره، ثم أخذه الشفيع، أخذ الأصل دون الثمرة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "On these very facts (unpollinated at purchase, pollinated by the buyer, then taken) the Mughnī gives the fruit to the buyer, by analogy of the pre-emptive taking to a second sale. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Same: separated growth arose in the buyer's ownership, and the taking is a second purchase",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v05:p512",
+     "excerpt_ar": "الشفيع من يشتري شراء ثان فيكون حكمه حكم مالو اشترى برضاه وإن اشتراه وفيه",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "The Sharḥ repeats the Mughnī's ground and ruling. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "What passes by acceptance passes from the offeror at the time of the offer, as in gift and sale",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p156",
+     "excerpt_ar": "تبينا أن الملك ثبت حين موت الموصي. وهو ظاهر مذهب الشافعي؛ لأن ما وجب انتقاله بالقبول، وجب انتقاله من جهة الموجب عند الإيجاب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ground given for Abū al-Khaṭṭāb's wajh (and al-Shāfiʿī's apparent view) that acceptance reveals ownership from the death; aṣl: hiba and bayʿ. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Q 4:11 «من بعد وصية يوصي بها أو دين»: inheritance comes after the bequest, so the bequeathed thing cannot be the heir's; nor can it remain the dead man's, he being unable to own",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p156",
+     "excerpt_ar": "ولأنه لا يجوز أن يثبت الملك فيه للوارث؛ لأن الله تعالى قال {من بعد وصية يوصي بها أو دين}",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the same wajh: the āya does not state when the legatee owns; it bears on the farʿ only by the implied sense that the heir's share follows the bequest (and the Mughnī reads it as «وصية مقبولة»). Book by non-explicit indication: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A transfer of a specific thing to a specific person that needs acceptance: ownership does not precede acceptance, as in all contracts; acceptance completes the cause and the ruling does not precede its cause",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p156",
+     "excerpt_ar": "تملك عين لمعين يفتقر إلى القبول، فلم يسبق الملك القبول، كسائر العقود، ولأن القبول من تمام السبب، والحكم لا يتقدم سببه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's «ولنا» for ownership from acceptance (the madhhab). qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The diya is the substitute for his life, so it is his, like the diya of his limbs cut in his life; and he could validly waive it after being wounded, which he could not if it were the heirs' right",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p388",
+     "excerpt_ar": "أنها تحدث على ملك الميت؛ لأنها بدل نفسه، فيكون بدلها له، كدية أطرافه المقطوعة منه في الحياة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's ground for the riwāya that it arises on the deceased's ownership; aṣl: the diya of limbs cut in life. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Ownership can be renewed for him after death in what he needs (debts, bequest), as one whose net catches game after his death",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p242",
+     "excerpt_ar": "ولأنه يجوز أن يتجدد له ملك بعد الموت، كمن نصب شبكة فسقط فيها صيد بعد موته",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given in the bequest chapter for the riwāya that the diya enters his bequest because it is his; answers the objection that the dead cannot newly own. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Aḥmad: the Prophet ruled that the diya is inheritance",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p476",
+     "excerpt_ar": "فأخذت ديته فميراث) عنه. قال الإمام أحمد \" «قضى النبي صلى الله عليه وسلم أن الدية ميراث» \"",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "A marfūʿ report (no grade given) cited for the diya being inherited from him, hence entering his bequest and paying his debts: the ruling of position 0. It bears only by its apparent sense (inheritance is of the deceased's property). zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is only owed after death, and by death the deceased's ownership ends and he ceases to be capable of owning, so ownership arises for the heirs from the outset",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p388",
+     "excerpt_ar": "والأخرى، أنها تحدث على ملك الورثة ابتداء؛ لأنها إنما تستحق بعد الموت",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's ground for the other riwāya. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Its cause is the death, the ruling does not precede its cause, and it cannot become the dead man's after his death",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p241",
+     "excerpt_ar": "لأن الدية إنما تجب للورثة بعد موت الموصي، بدليل أن سببها الموت، فلا يجوز وجوبها قبله؛ لأن الحكم لا يتقدم سببه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given (also for Mālik in the diya of ʿamd) for the riwāya that the diya does not enter the bequest, being the heirs'. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The net is treated as his visible hand, so what falls into it is his estate",
+     "ref": "src:openiti-rajab-shamela21730/v01:p205",
+     "excerpt_ar": "صيد بعد موته هل هو تركة موروثة جعلا لها كيده المشاهدة أو هو ملك للورثة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's statement of the ground of al-Qāḍī and Ibn ʿAqīl: the net as his hand. A rationale by assimilation: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "His ownership remains in what he needs (burial, debts, bequests), and ownership may be renewed for him in game caught in his net after death, so that his debts are paid from it",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p157",
+     "excerpt_ar": "وفيما إذا نصب شبكة فوقع فيها صيد بعد موته، بحيث تقضى ديونه، وتنفذ وصاياه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī rests the case on his ownership lasting for what he needs («فإنه يبقى ملكه فيما يحتاج إليه»). qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is the heirs' because ownership of the net passed to them, as offspring born of inherited stock and fruit of inherited trees",
+     "ref": "src:openiti-rajab-shamela21730/v01:p205",
+     "excerpt_ar": "بل هو ملك للورثة بانتقال ملك الشبكة إليه كما يتولد من النتاج الموروث ويثمر من الشجر",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Abū al-Khaṭṭāb's ground in al-Intiṣār as Ibn Rajab reports it; aṣl: the growth of inherited property. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "His manumission is by his kitāba, and the kitāba was from his master",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v07:p247",
+     "excerpt_ar": "والرواية الأخرى ولاؤه للمكاتب لأن عتقه بكتابته وهي من سيده",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Ground for the walāʾ belonging to the master who wrote the kitāba, not the heirs paid. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The walāʾ is the deceased's because the cause came from him, so the manumission is ascribed to him",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p442",
+     "excerpt_ar": "وأما كون الولاء للميت، فلأن السبب وجد منه، فنسب العتق إليه، وثبت الولاء له",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Said of the mukātab freed after the master's death by an heir's release; the same ʿilla governs payment to the heirs. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "«الولاء لمن أعتق» (agreed upon): the walāʾ is the manumitter's, applied to one freed by kitāba even when he pays the heirs",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p499",
+     "excerpt_ar": "(ولو أدى) المكاتب (إلى الورثة) ما كوتب عليه وعتق فولاؤه للموروث يرث به",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The Kashshāf lists this case among those where the master has the walāʾ «لقوله - صلى الله عليه وسلم - الولاء لمن أعتق متفق عليه» (same page). The ḥadīth reaches the case only by its generality and the reading of the master as manumitter: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He passed to the heirs, so it is as if they had bought him",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v07:p247",
+     "excerpt_ar": "(وعنه في المكاتب إذا أدى إلى الورثة أن ولاءه لهم) لأنه انتقل إليهم أشبه ما لو اشتروه",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Ground for the riwāya that the walāʾ is the heirs'; aṣl: purchase. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "«إنما الولاء لمن أعتق»: the walāʾ belongs to the manumitter, the mukātab, once he is capable",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v12:p377",
+     "excerpt_ar": "وقال القاضي هو موقوف إن أدى عتق والولاء له وإلا فهو للسيد، وهذا أحد قولي الشافعي لقول النبي صلى الله عليه وسلم",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Al-Qāḍī's suspension (and one of al-Shāfiʿī's two views) is grounded on the ḥadīth (quoted right after the excerpt), a marfūʿ ḥadīth applied by its general wording: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The slave freed is not the master's property, and walāʾ cannot be fixed for him over one not freed in his ownership",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v12:p377",
+     "excerpt_ar": "ولأن العبد ليس بملك له ولا يجوز أن يثبت له الولاء على من لم يعتق في ملكه",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Second ground for suspension rather than settlement on the master. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The walāʾ is the mukātab's once freed because it was concluded for him before his freedom",
+     "ref": "src:openiti-rajab-shamela21730/v01:p266",
+     "excerpt_ar": "فإن أدى المكاتب الأول وعتق فالولاء له لانعقاده له قبل عتقه وهو قول القاضي في المجرد",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Qāḍī's ʿilla as Ibn Rajab states it: the cause concluded for him. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Manumission is inseparable from walāʾ and walāʾ cannot be suspended, being a cause of inheritance like lineage",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v12:p376",
+     "excerpt_ar": "قال أبو بكر وولاؤه للسيد وهو قول أبي حنيفة لأن العتق لا ينفك عن الولاء والولاء لا يوقف لأنه سبب يورث به فهو كالنسب",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Abū Bakr's (and Abū Ḥanīfa's) ground; aṣl: nasab. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "If the master has walāʾ over the mukātab, he has it a fortiori over one on whom the mukātab bestowed freedom",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p051",
+     "excerpt_ar": "(وولاء من يعتقه ويكاتبه لسيده) لأنه إذا ثبت له الولاء على المكاتب فلأن يثبت على من أنعم عليه المكاتب بطريق الأولى",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "An a fortiori analogy for settlement on the master. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Walāʾ was fixed on this manumission at a time when its patron was not capable of inheriting, so it settled on the patron's patron",
+     "ref": "src:openiti-rajab-shamela21730/v01:p266",
+     "excerpt_ar": "أحدهما: أنه للسيد الأول وهو محكي عن أبي بكر لثبوت الولاء على هذا العتق في حال ليس مولاه من أهل الميراث",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Abū Bakr's ʿilla in Ibn Rajab. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy to the free man: the slave who suspends manumission on ownership, then is freed and owns, is freed as the free man would be",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v12:p276",
+     "excerpt_ar": "فإن قال العبد ذلك ثم عتق وملك عتق في أحد الوجهين قياسا على الحر",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "The Sharḥ names the wajh that he is freed and grounds it expressly in qiyās on the free man (aṣl: the free man's suspension on ownership, valid on the madhhab's riwāya). An analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He is freed like the free man (same analogy)",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p330",
+     "excerpt_ar": "وإن قال ذلك العبد، ثم عتق وملك، فهل يعتق عليه؟ على وجهين: أحدهما: يعتق عليه، كالحر",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī gives the first wajh with the bare analogy «كالحر». qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The slave cannot manumit at the time of the suspension because he does not own; and any ownership he has is weak, unsettled, open to the master's seizure, unlike the free man's",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v12:p276",
+     "excerpt_ar": "لأن العبد لا يصح العتق منه حين التعليق لكونه لا يملك وإن ملك فهو ملك ضعيف غير مستقر",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "The Sharḥ's ground for the wajh it calls «الصحيح»: the suspension is judged at its making, when the slave lacked capacity to manumit; a stated rationale with a farq from the free man: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The slave does not own, so the suspension does not validly issue from him",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p330",
+     "excerpt_ar": "والثاني: لا يعتق عليه، لأن العبد لا يملك، فلا يصح منه التعليق",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Same rationale in al-Kāfī for the second wajh. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He owns three divorces at the moment it falls (being free then), so three fall",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p260",
+     "excerpt_ar": "فوجد بعد عتقه طلقت) المعلق طلاقها (ثلاثا) لملك الثلاث حين الوقوع",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The Kashshāf's stated ʿilla for three: what counts is the capacity at occurrence, when he is free and owns three. A rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same: the three fall because he owns them at the time of falling",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p093",
+     "excerpt_ar": "بعد عتقه وقعت) الثلاث لملكه لها حين الوقوع",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Same stated ʿilla in Sharḥ al-Muntahā. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Two fall and one remains to him, by analogy to his suspending the three on his own manumission (where the third lapses, the soundest view)",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p429",
+     "excerpt_ar": "لزمته الثلاث، وقيل: ثنتان، ويبقى له واحدة، كتعليقها بعتقه في الأصح",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "The Mubdiʿ reports the contrary wajh (qīla) with its analogy: the aṣl is suspending the three on his manumission, where only two fall; the farʿ is suspending on another condition met after manumission. qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

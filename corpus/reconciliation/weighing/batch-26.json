@@ -1,0 +1,412 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b26: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q054.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "By saying he has no bayyina he gave the lie to his own witnesses, an admission against himself; a later bayyina contradicts his admission, which he cannot retract",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p239",
+     "excerpt_ar": "ولنا، أنه أكذب بينته، بإقراره أنه لا يشهد له أحد، فإذا شهد له إنسان، كان تكذيبا له",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The argument for al-Khiraqī's naṣṣ that the bayyina is not heard (position 0). It is based on his admission: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The farq: denying the bayyina is an admission against oneself and one is held to one's admission, whereas the witness's denial is not an admission, because testimony is a right against him",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p237",
+     "excerpt_ar": "فإن ذلك إقرار منه على نفسه بعدم البينة، والإنسان يؤاخذ بإقراره",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The farq that the case note describes: the bayyina is the claimant's own right, so his denial binds him (position 0). qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He may have forgotten, or the witnesses may have heard the matter without his knowing, so his denial does not establish that he gave them the lie",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p189",
+     "excerpt_ar": "لأنه يجوز أن ينسى، أو يكون الشاهدان سمعا منه وصاحب الحق لا يعلمه",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ (citing al-Furūʿ)",
+     "note": "Given for the wajh, chosen by Ibn ʿAqīl and others, that the bayyina is heard. al-Furūʿ calls it «متجه» (position 1). al-Mughnī gives the same reason for Abū Yūsuf, Ibn al-Mundhir and the Shāfiʿīs. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A right (the burning) attached to the goods before the sale and gift, so it takes precedence and the sale and gift are undone; analogy with retaliation against the offender, whose prior right is not defeated by his later dealings",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p307",
+     "excerpt_ar": "واحتمل أن ينقض البيع والهبة ويحرق؛ لأنه تعلق به حق سابق على البيع والهبة، فوجب تقديمه، كالقصاص في حق الجاني",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The second iḥtimāl of al-Mughnī on the ghāll who sells or gives away his goods: the burning was due first, so it is put first and the sale is undone (position 0). A stated ʿilla with an aṣl (al-qiṣāṣ): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same: a prior right attached to the goods, to be put first, as retaliation against the offender",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v10:p535",
+     "excerpt_ar": "واحتمل أن ينقض البيع والهبة ويحرق لأنه تعلق به حق سابق على البيع والهبة فوجب تقديمه",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ repeats al-Mughnī's iḥtimāl for undoing the sale and burning. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The goods have become another's property, so burning them would punish someone other than the offender; analogy with their passing to the heirs at his death, where Aḥmad says the burning lapses",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p307",
+     "excerpt_ar": "وإن باع متاعه، أو وهبه، احتمل أن لا يحرق؛ لأنه صار لغيره، أشبه ما لو انتقل عنه بالموت",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The first iḥtimāl: the sale stands and the burning lapses (position 1), by analogy with the transfer at death, for which al-Mughnī cites Aḥmad's naṣṣ that the burning lapses because it is a punishment. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The seller is not liable because the wall is no longer his property when it falls; the buyer is not liable because no demand to demolish was made of him",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p429",
+     "excerpt_ar": "فباعه مائلا، فلا ضمان على بائعه؛ لأنه ليس بملك له، ولا على المشتري؛ لأنه لم يطالب بنقضه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ruling and rationale that liability lapses with the sale after the demand (al-Qāḍī's view, position 0). It gives no exception for a sale made to escape. A rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "At the time of the fall the wall is not his, so he can no longer demolish it and there is no negligence on his part",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p125",
+     "excerpt_ar": "لأن الحائط ليس ملكه حال السقوط فزال تمكنه من هدمه فلا تفريط منه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf gives this ʿilla for the seller's non-liability, then reports Ibn ʿAqīl's exception for a sale made as a trick to escape the demand (position 1) without arguing it. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Resale on the condition of manumission is invalid because the duty of manumission already attaching to the slave bars the sale, as a slave vowed to be freed may not be sold; also the condition would repeat without end",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p194",
+     "excerpt_ar": "لأنه يتسلسل ولأن تعلق حق العتق الواجب عليه يمنع الصحة كما لو نذر عتق عبد فإنه لا يصح بيعه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ (after al-Azajī, al-Nihāya)",
+     "note": "For al-Azajī's invalidity of the resale, which Kashshāf says Ibn Rajab follows if the right in the manumission is God's, like the vowed slave: exactly position 0. An analogy with the vowed slave: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The stipulated manumission is a due act of worship that the buyer took on, like a vow, so the ruler frees the slave if the buyer refuses",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p194",
+     "excerpt_ar": "لأنه عتق مستحق عليه لكونه قربة التزمها كالنذر وكما يطلق على المولى",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The ground for compelling the buyer: the manumission is God's right like a vow. This is the premise on which position 0 builds. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A stipulation does not make the stipulated act due, as with a stipulated pledge or surety; so the buyer is not compelled and the seller only gets an option to annul",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p171",
+     "excerpt_ar": "والثاني، لا يحبر؛ لأن الشرط لا يوجب فعل المشروط، بدليل ما لو شرط الرهن، والضمين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The wajh that the buyer is not compelled treats the condition as the seller's right, made good by his option to annul. That is the premise of position 1 (the seller's right, which lapses). An analogy with a stipulated pledge: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A valid stipulation of manumission attaches to the slave himself, so the buyer is compelled as if he had vowed to free him",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p171",
+     "excerpt_ar": "أحدهما، يجبر؛ لأن شرط العتق إذا صح، تعلق بعينه، فيجبر عليه، كما لو نذر عتقه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The opposing wajh in al-Mughnī: the right is attached to the slave as with a vowed slave. This is the basis of position 0. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The ḥadīth «There is no harm and no harming»: completing the sale would harm the poor and cause them to lose their right, so the sale is undone in the zakāt's share, which is taken from the niṣāb, and the buyer recovers that much of the price from the seller",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p506",
+     "excerpt_ar": "لأن على الفقراء ضررا في إتمام البيع، وتفويتا لحقوقهم، فوجب فسخه؛ لقول النبي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's preferred iḥtimāl («وهذا أصح») when the seller cannot pay the zakāt: the sale is undone in its share (position 0). A marfūʿ āḥād ḥadīth applied by its generality: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The poor have no ownership in the niṣāb, since the owner may pay from other wealth; so after the sale the zakāt is a debt on him like other debts, and it is not taken from the niṣāb if he cannot pay",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p506",
+     "excerpt_ar": "فإن عجز بقيت الزكاة في ذمته، كسائر الديون، ولا يؤخذ من النصاب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The first course in al-Mughnī: the sale stands and the zakāt stays in the seller's dhimma like other debts (position 1). An analogy with ordinary debts: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Zakāt is owed in the dhimma: paying it from outside the niṣāb is allowed, so it was not owed in the niṣāb itself, as with zakāt al-fiṭr",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p506",
+     "excerpt_ar": "لأن إخراجها من غير النصاب جائز، فلم تكن واجبة فيه، كزكاة الفطر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Proof for the riwāya that zakāt is owed in the dhimma, which is the basis of position 1. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The substitute paid by the destroyer becomes a pledge in the hands of the trustee by the mere taking, like the substitute of a hady or sacrifice",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p350",
+     "excerpt_ar": "يكون رهنا في يده) أي: العدل (بمجرد الأخذ) من المتلف كبدل هدي وأضحية",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "For the ẓāhir of the aṣḥāb, which is al-Qāḍī's, that the value is a pledge by mere taking (position 0). Analogy with the substitute of a hady: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The value stands in for the pledged thing and is its substitute, so it is a pledge",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p271",
+     "excerpt_ar": "وتكون القيمة رهنا؛ لأنها نائبة عن العين، وبدل عنها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Stated where the pledger frees the pledged slave: the value taken from him is a pledge in its place because it is the substitute of the thing. The ʿilla bears directly on the value of a destroyed pledge (position 0). qiyas. No source in the works searched argues position 1 (al-Kāfī, al-Talkhīṣ, Abū al-Khaṭṭāb)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Once the substitute is bought for the waqf it becomes waqf, like the substitute of a sacrifice or a destroyed pledge; and the buyer acts like an agent, whose purchase falls to his principal, here the waqf's purpose",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p427",
+     "excerpt_ar": "وبمجرد شراء البدل) لجهة الوقف (يصير وقفا كبدل أضحية و) بدل (رهن أتلف) لأنه كالوكيل في الشراء، وشراء الوكيل يقع لموكله",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "For the Muntahā's ruling that the substitute is waqf by the purchase (position 0). Two analogies, with the sacrifice and pledge substitutes and with agency: qiyas. The text adds «والاحتياط وقفه», a precaution against anyone who denies it, which is not a proof for position 1."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Ibn Qundus: a purchase made for the waqf in the lawful way, once binding, falls to the purpose it was bought for, as an agent's purchase falls to the principal",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p295",
+     "excerpt_ar": "لأنه كالوكيل في الشراء والوكيل يقع شراؤه للموكل فكذا هنا يقع شراؤه للجهة المشترى لها ولا يكون ذلك إلا وقفا",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ (Ibn Qundus, Ḥawāshī al-Muḥarrar)",
+     "note": "Same ruling and ʿilla: position 0. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f002",
+   "proofs": [],
+   "advantages": [],
+   "searched": "al-Mughnī v09 p443-444 (destroyed designated sacrifice: value or like owed, «فإن شاء اشترى بها أضحية»; no ruling on whether the purchase itself designates); al-Sharḥ al-Kabīr, al-Mubdiʿ, al-Kāfī, Kashshāf (v03 p011; v04 p295, which only uses «كبدل أضحية» as the aṣl for the waqf), Sharḥ Muntahā v02 p427 (same). No source argues whether the substitute is designated by the purchase or needs a new designation."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The buyer's ownership of the slave woman is complete and settled through a valid sale; the seller's power to annul does not stop ownership passing, as the father's power to revoke a gift to his son does not. So her seller's manumission or intercourse before annulling by word is no annulment",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p227",
+     "excerpt_ar": "لعقد البيع الصحيح وملكه الفسخ لا يمنع نقل الملك كملك الأب الرجوع فيما وهبه لولده لا يمنع انتقال ملك الموهوب للولد",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's ground, matching the «تام مستقر» that the case note quotes, for al-Qāḍī's view that intercourse or manumission is neither annulment nor effective (position 0). Analogy with the father's gift: qiyas. The iḥtimāl of al-Mujarrad and al-Fuṣūl (position 1) is not argued in the works searched."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f002",
+   "proofs": [],
+   "advantages": [],
+   "searched": "al-Mughnī v04 p307-316 (taflīs: «من أدرك متاعه», the seller's retrieval, the bankrupt's intercourse); Sharḥ Muntahā v02 p164 («ويصح رجوعه... بقول... فلا يحصل رجوعه بفعل»: ruling only, its «كرجوع أب في هبة» is for delay); Kashshāf v03 p428-429; al-Mubdiʿ, al-Sharḥ al-Kabīr, al-Kāfī searched for وطء/عتق البائع with المفلس. No source gives a proof that the seller's intercourse or disposal is or is not retrieval of the bankrupt's slave woman."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f003",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The prior sale is the cause; once the shafīʿ's demand is joined to it, it is like an offer joined by acceptance, so ownership passes at the demand",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p239",
+     "excerpt_ar": "فإذا انضمت إليه المطالبة، كان كالإيجاب في البيع انضم إليه القبول",
+     "who": "Ibn Qudāma, al-Mughnī (al-Qāḍī and Abū al-Khaṭṭāb)",
+     "note": "al-Qāḍī and Abū al-Khaṭṭāb hold that the shafīʿ owns by the demand. This is the basis of Ibn Rajab's takhrīj that, especially after the demand, his right is settled (position 1). qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Same: the prior sale is a cause which, joined with the demand, is like offer and acceptance",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v05:p538",
+     "excerpt_ar": "وقال القاضي وابو الخطاب يملكه بالمطالبة لأن البيع السابق سبب فإذا انضمت إليه المطالبة كان كالإيجاب في البيع",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Repeats al-Mughnī. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The son's ownership of the gift is certain and goes only by something certain, an explicit revocation; a disposal by the father is therefore no revocation, even if he intends one",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p439",
+     "excerpt_ar": "لأن الملك ثابت للموهوب له يقينا، فلا يزول إلا بيقين وهو صريح الرجوع",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "For the Muntahā's «ولا يصح رجوع إلا بقول», which agrees with Aḥmad's naṣṣ that the father's manumission is no revocation (position 0). The continuance of a certain ownership: istishab."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Same: ownership certain for the donee is not removed except by an explicit statement",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p060",
+     "excerpt_ar": "والآخر، لا يكون رجوعا. وهو مذهب الشافعي؛ لأن الملك ثابت للموهوب له يقينا، فلا يزول إلا بالصريح",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given in al-Mughnī for the wajh (also al-Shāfiʿī's) that a taking accompanied by indications is no revocation. It counts for the ruling of position 0. istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A contract is concluded by what the circumstances show, so annulment all the more; and a word of revocation counts only for what it shows, so whatever shows revocation is revocation",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p060",
+     "excerpt_ar": "يكون رجوعا. اختاره ابن عقيل؛ لأننا اكتفينا في العقد بدلالة الحال، ففي الفسخ أولى، ولأن لفظ الرجوع إنما كان رجوعا لدلالته عليه",
+     "who": "Ibn Qudāma, al-Mughnī (Ibn ʿAqīl's choice)",
+     "note": "Ibn ʿAqīl's ground that an act showing revocation is revocation. This supports Abū Ḥafṣ's takhrīj that the father's manumission is valid and a revocation (position 1). It is argued in al-Mughnī for a taking with indications, not the manumission itself. A qiyās a fortiori: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The son's ownership of his property is complete: his disposal of it is valid and his slave women are lawful to him. The father only has a power to take it, as with a thing he gave, so before taking it he disposes of another's property without authority",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p064",
+     "excerpt_ar": "وذلك لأن ملك الابن تام على مال نفسه، فصح تصرفه فيه، ويحل له وطء جواريه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For Aḥmad's naṣṣ «لا يجوز عتق الأب لعبد ابنه، ما لم يقبضه», that the father's disposal before taking possession is not effective (position 0). qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Before taking it the father disposes of another's property without authority, as with the thing he gave before he takes it back",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p064",
+     "excerpt_ar": "فقبل انتزاعها لا يصح تصرفه؛ لأنه يتصرف في ملك غيره بغير ولاية",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second limb of the same argument, by analogy with the gift (the aṣl of the preceding farʿ). qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same ʿilla: the son's ownership of his property is complete, and the father may only take it, as with what he gave him",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p440",
+     "excerpt_ar": "فلا يصح تصرفه أي: الأب في مال ولده قبله أي: القبض",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ Muntahā continues «ولو كان تصرفه فيه عتقا نصا، لتمام ملك الابن على ماله»: position 0. qiyas. No source argues Abū Ḥafṣ's or Abū Bakr's view (position 1)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Divorce is a cause of ending the ownership that came into being with an option; intercourse by the owner prevents the ending, as the seller's intercourse during the option period does",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p149",
+     "excerpt_ar": "وتحصل الرجعة بالوطء في ظاهر المذهب، قصد، أو لم يقصد؛ لأن سبب زوال الملك انعقد مع الخيار، والوطء من المالك يمنع زواله",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "For the riwāya that intercourse is a return whether intended or not (position 0, the madhhab of al-Qāḍī and Ibn Ḥāmid). Analogy with the seller's intercourse during khiyār: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same, with a second aṣl: intercourse also ends a proxy he gave to divorce her",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p417",
+     "excerpt_ar": "والوطء من المالك يمنع زواله كوطء البائع في مدة الخيار، وكما ينقطع به التوكيل في طلاقها",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ: «على المذهب، اختاره ابن حامد والقاضي». qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The āya «And take as witnesses two just men among you» (al-Ṭalāq 2): witnessing can only be of a statement, so the return happens only by word",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p149",
+     "excerpt_ar": "وعن أحمد: لا تحصل الرجعة إلا بالقول. وهو ظاهر كلام الخرقي، لقول الله تعالى",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "For the riwāya that only a statement is a return. al-Kāfī continues «ولا يحصل الإشهاد إلا على القول». That is the building on requiring witnesses that the case calls «البناء المنصوص» (position 1). The āya commands witnessing; that a return needs words follows only by implication: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A return makes an intended intimacy lawful and was commanded with witnesses, so for one able to speak it does not happen without words, as with marriage; and an act by one able to speak does not count, as a speaker's gesture does not",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p523",
+     "excerpt_ar": "لأنها استباحة بضع مقصود، أمر بالإشهاد فيه، فلم تحصل من القادر بغير قول، كالنكاح، ولأن غير القول فعل من قادر على القول",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for al-Khiraqī's ẓāhir and al-Shāfiʿī, one of Aḥmad's two riwāyas: position 1. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f010",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He refuses what he owes, namely an answer, so he is judged against by his refusal, as one who refuses the oath is",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p080",
+     "excerpt_ar": "فإن أجاب وإلا جعله ناكلا، وحكم عليه؛ لأنه ناكل عما توجه عليه الجواب فيه، فيحكم عليه بالنكول عنه، كاليمين",
+     "who": "Ibn Qudāma, al-Mughnī (Abū al-Khaṭṭāb's view)",
+     "note": "Abū al-Khaṭṭāb's ground for judging the silent defendant by nukūl (position 0, the madhhab). Analogy with refusing the oath: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "What the analogy shares: both the answer and the oath are ways for the right to come to light",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p191",
+     "excerpt_ar": "والجامع بينهما: أن كل واحد من القولين طريق إلى ظهور الحق",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ states the jāmiʿ of the qiyās for position 0, which it reports as the madhhab (Ibn al-Munajjā, al-Wajīz). qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The answer, like the oath, is a right owed by him; so he is imprisoned until he gives it, as one who admits a debt and refuses to pay is imprisoned",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p191",
+     "excerpt_ar": "قاله القاضي، وقدمه السامري ; لأن اليمين حق عليه، كما لو أقر بمال وامتنع من أدائه",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Qāḍī's view (put first by al-Sāmirrī) that he is imprisoned until he answers (position 1), when the claimant has no bayyina. Analogy with one who admits and refuses to pay: qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

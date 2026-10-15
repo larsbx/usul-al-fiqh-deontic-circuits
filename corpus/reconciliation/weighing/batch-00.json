@@ -1,0 +1,430 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b00: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f001",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Kaffāras are judged at the time they fall due (wujūb), which for an oath is the ḥinth; he is then well off, so fasting does not suffice, as if he had fasted at that time",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p244",
+     "excerpt_ar": "قال في المغني: لأن المعتبر في الكفارات وقت الوجوب وهو هنا وقت الحنث وقد صار موسرا فلا يجزئ",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Al-Buhūtī quotes al-Mughnī's reason for «لم يجزئه» on exactly these facts (fast before ḥinth while poor, ḥinth while well off). A rational principle with an implied analogy (كما لو صام إذن): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The general rule: kaffāras are reckoned by the state at wujūb because they are due by way of purification, like the ḥadd (qiyās on the ḥadd)",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v07:p018",
+     "excerpt_ar": "لأنها تجب على وجه الطهرة، فكان الاعتبار بحال الوجوب كالحد",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "The rationale al-Mubdiʿ gives for the riwāya that kaffāras are judged by the state at wujūb (the madhhab), on which the denial of sufficiency here rests. Analogy on the ḥadd: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "His duty was outwardly fasting (he was poor), so he was discharged by it; the kaffāra having dissolved the oath, no ḥinth occurs afterwards",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p244",
+     "excerpt_ar": "وإطلاق الأكثرين يخالف ذلك لأنه كان فرضه في الظاهر فبرئ من الواجب",
+     "who": "Ibn Rajab, al-Qawāʿid, quoted in al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Ibn Rajab's reasoning (al-Qawāʿid, q. 5), quoted by al-Buhūtī, for the unqualified statements of most aṣḥāb that it suffices. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f002",
+   "proofs": [],
+   "advantages": [],
+   "searched": "No proof argued for either side. Checked al-Mughnī v03:p420 (§§2613–2614, fasting then able to afford the hady: the case of fasting after wujūb only); Kashshāf v02:p454 (reports Ibn al-Zāghūnī against the unqualified statements of most aṣḥāb, with no proof); al-Mubdiʿ v03:p162; al-Inṣāf v03:p516 (reports only). Grepped al-Sharḥ al-Kabīr, al-Kāfī and Sharḥ al-Muntahā for the fast before wujūb with the hady affordable at wujūb."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f003",
+   "proofs": [],
+   "advantages": [],
+   "searched": "No source found arguing advanced sheep for twenty-four camels with a birth before the ḥawl. Checked al-Mughnī v02:p472–473 (§1751: advanced zakāt where a birth changes the farḍ, for 120 sheep → second sheep, not the change of kind from sheep to bint makhāḍ); al-Kāfī v01:p418; al-Mubdiʿ v02:p400–401; Kashshāf v02:p267; grepped al-Sharḥ al-Kabīr and Sharḥ al-Muntahā for «أربع شياه»/«أربعا وعشرين» with تعجيل/نتج."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He prayed before the prayer was due and before the cause of its wujūb (in his case); so it does not count for what became due, as if he had prayed before the time",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p289",
+     "excerpt_ar": "ولنا، أنه صلى قبل وجوبها عليه، وقبل سبب وجوبها، فلم تجزه عما وجد سبب وجوبها عليه، كما لو صلى قبل الوقت",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ولنا» for repetition (the manṣūṣ) on these facts. Aṣl: prayer before the time; ʿilla: performance before wujūb: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He prayed a supererogatory prayer, which does not count for the obligatory, as if he had intended nafl",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p290",
+     "excerpt_ar": "ولأنه صلى نافلة، فلم تجزه عن الواجب، كما لو نوى نفلا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second reason under «ولنا» in al-Mughnī for repetition. Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He reached puberty within the time of the ʿibāda after doing it, so he must repeat it, like ḥajj",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p290",
+     "excerpt_ar": "ولأنه بلغ في وقت العبادة وبعد فعلها، فلزمته إعادتها كالحج، ووظيفة الوقت في حق البالغ ظهرا واجبة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Third reason in al-Mughnī for repetition. Aṣl: the boy's ḥajj before puberty (al-Qāḍī's side distinguishes it as not commanded of him). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He performed the duty of the time, so he need not repeat it, like an adult",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p289",
+     "excerpt_ar": "وقال الشافعي: يجزئه، ولا يلزمه إعادتها في الموضعين؛ لأنه أدى وظيفة الوقت، فلم يلزمه إعادتها، كالبالغ",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given in al-Mughnī for al-Shāfiʿī, a non-Ḥanbalī holder of al-Qāḍī's ruling (no repetition). It counts for that ruling. Analogy on the adult: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Takhrīj from the option of condition (khiyār al-sharṭ), where the thing sold perishes and he annuls, takes back the price and pays the value",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p091",
+     "excerpt_ar": "وخرج بعض أصحابنا من خيار الشرط أن يفسخ ويرجع بالثمن ويغرم القيمة",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Al-Mubdiʿ reports this as the takhrīj for annulment with the substitute returned (al-Qāḍī's side). It carries the ruling of khiyār al-sharṭ over to the defect option: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "He already had the right to the arsh, and the original state is that it remains",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p091",
+     "excerpt_ar": "فله الأرش رواية واحدة؛ لأنه كان يملك ذلك، والأصل البقاء",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Al-Mubdiʿ's first reason why the arsh alone is his remedy once the defective thing perishes, which is the madhhab. Continuance of an established right: istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A choice between two things fixes the one that remains possible when the other becomes impossible; and return presupposes a thing returned, of which there is none here (al-Talkhīṣ)",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p091",
+     "excerpt_ar": "إذ التخيير بين شيئين يقتضي تعيين أحدهما عند تعذر الآخر",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Al-Mubdiʿ's rationale for fixing the arsh, which matches Ibn Rajab's «لأن الرد يستدعي مردودا». Al-Talkhīṣ's distinction from khiyār al-sharṭ follows in the same passage. A rational ʿilla: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "If iqāla is faskh (not sale), it is valid after the thing perishes; al-Qāḍī: this is qiyās al-madhhab",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p123",
+     "excerpt_ar": "ومنها: هل يصح مع تلف المبيع، ففيه طريقان إحداهما: لا يصح عليهما، والثاني: إن قلنا: هي فسخ صحت",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Al-Mubdiʿ gives this as the second ṭarīq, which al-Qāḍī calls «قياس المذهب», for validity on the view that iqāla is faskh. A derivation from the faskh characterisation: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Iqāla is invalid once the thing sold has perished because its return is impossible",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p250",
+     "excerpt_ar": "(وتصح) الإقالة (مع تلف ثمن لا مع تلف مبيع) ، لتعذر الرد فيه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's reason for invalidity, the muʿtamad. Al-Qāḍī's cited reason differs (it is like a sale), but the ruling is the same, so the proof counts for it. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The locus of the annulment has gone",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p064",
+     "excerpt_ar": "(ولا تصح مع تلف مثمن) مطلقا لفوات محل الفسخ وتصح مع تلف ثمن",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā's reason for invalidity whether or not iqāla is faskh. A rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f006",
+   "proofs": [],
+   "advantages": [],
+   "searched": "No proof found for the allocation of loss in «أشركتك في نصفه» on annulment. Checked al-Inṣāf v04:p436–437 (the ishrāk masʾala: shares only); al-Mughnī v05:p015–028 (waḍīʿa in shirka by capital, a different masʾala); grepped al-Mughnī, al-Sharḥ al-Kabīr, al-Mubdiʿ, Kashshāf, Sharḥ al-Muntahā and al-Kāfī for «أشركتك» with loss, profit or perishing, and for profit-shared/loss-on-one formulas."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The imam pays the diya from the treasury, as in the preceding case (claimants refuse to swear and do not accept the defendants' oaths), where the Prophet paid the Anṣārī's diya of a hundred camels himself",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p045",
+     "excerpt_ar": "إحداهن: يخلى سبيلهم؛ لأنها يمين في حق المدعى عليه، فلم يحبس عليها كسائر الأيمان، قال القاضي: ويديه الإمام من بيت المال، كالتي قبلها",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "In al-Kāfī for the riwāya that the defendants who decline are let go and the diya is not on them (al-Qāḍī: Aḥmad's naṣṣ, from the treasury). The report of the Prophet paying the diya concerns another case (claimants refusing to swear) and is carried over by «كالتي قبلها»: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is a ruling established by nukūl, so it is established against them here as in all other claims",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p501",
+     "excerpt_ar": "وهذا هو الصحيح، وهو اختيار أبي بكر؛ لأنه حكم ثبت بالنكول، فيثبت في حقهم هاهنا، كسائر الدعاوى",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's first reason for the diya being owed by those who decline (Ḥarb's riwāya, which al-Mughnī calls the correct one). Analogy on other claims: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Putting it on the treasury would lead to the blood going unrequited and the claimants' right being lost when it can be made good; and an oath in a claim where money can be imposed cannot leave the defendant liable for nothing",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p501",
+     "excerpt_ar": "ولأن وجوبها في بيت المال، يفضي إلى إهدار الدم، وإسقاط حق المدعين، مع إمكان جبره، فلم يجز، كسائر الدعاوى",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second rationale in al-Mughnī for the diya being owed by the one who declines. A stated rationale (munāsaba) with an analogy on other claims: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A ruling established by nukūl, as when the claim is of accidental killing",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p045",
+     "excerpt_ar": "والثالثة: تجب الدية على المدعى عليه؛ لأنه حكم يثبت بالنكول، فثبت بالنكول هاهنا، كما لو كانت الدعوى قتل خطأ",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Al-Kāfī's reason for the third riwāya (the diya on the defendant). Aṣl: a claim of khaṭaʾ: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "On the riwāya that deliberate killing obliges retaliation specifically, the diya is a substitute, and no substitute is due where the original is not established",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p135",
+     "excerpt_ar": "والقتل العمد موجبه القصاص عينا، في إحدى الروايتين، والدية بدل عنه، ولا يجب البدل ما لم يوجد المبدل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's reason why a man and two women (or a witness and oath) establish neither retaliation nor diya for deliberate killing. Ibn Rajab carries it to a deliberate wound, which also obliges retaliation, so the diya is not owed. A rationale on the aṣl/badal relation: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "On the riwāya that the obligation is one of the two unspecified, neither is fixed except by choice or impossibility, and neither has occurred, so imposing the diya alone would fix one",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p135",
+     "excerpt_ar": "وفي الرواية الأخرى، الواجب أحدهما لا بعينه، فلا يجوز أن يتعين أحدهما إلا بالاختيار، أو التعذر، ولم يوجد واحد منهما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second reason in al-Mughnī for denying the diya when the proof does not establish the deliberate crime. Ibn Rajab's «لئلا يلزم أن يجب بالقتل الدية عينا» is this reason. A rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Deliberate killing obliges retaliation, with money as its substitute; if the original is not established, its substitute is not due",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p336",
+     "excerpt_ar": "لأن القتل يوجب القصاص، والمال بدل منه. فإذا لم يثبت الأصل لم يجب بدله",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Al-Mubdiʿ's reason for the madhhab: a man and two women for deliberate killing establish neither retaliation nor money, with no exception for a slave victim. It then reports Ibn Manṣūr's riwāya without a proof. A rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "On the riwāya that one of two things is due, neither is fixed except by choice, so imposing the money alone would fix one",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p336",
+     "excerpt_ar": "وإن قلنا موجبه أحد شيئين، لم يتعين أحدهما إلا بالاختيار. فلو أوجبنا الدية وحدها أوجبنا معينا",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Second reason in al-Mubdiʿ for the same ruling. It covers the value of a slave as the money due by the crime. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The Muslims do not bear it, since he was not a Muslim when he shot; nor his dhimmī ʿāqila, since he killed as a Muslim; so it falls on the offender's own wealth",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p386",
+     "excerpt_ar": "لم يعقله المسلمون؛ لأنه لم يكن مسلما حال رميه، ولا المعاهدون؛ لأنه قتله وهو مسلم، فيكون في مال الجاني",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's reason on these exact facts for the diya in his own wealth. The ʿilla is the lack of shared religion at the relevant moment for each ʿāqila: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same: it cannot be imposed on his Christian ʿāqila (he killed as a Muslim) nor on the Muslims (he shot as a Christian)",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p041",
+     "excerpt_ar": "وجبت الدية عليه؛ لأنه لا يمكن إيجابها على عاقلته من النصارى؛ لأنه قتل وهو مسلم، ولا على عاقلته من المسلمين",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Al-Kāfī's parallel reasoning for the same ruling. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ibn ʿAbbās: a bedouin told the Prophet he saw the crescent; on his testimony of faith the Prophet ordered Bilāl to announce the fast (Abū Dāwūd, al-Nasāʾī, al-Tirmidhī)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p164",
+     "excerpt_ar": "ولنا ما روى ابن عباس قال: «جاء أعرابي إلى النبي - صلى الله عليه وسلم - فقال: رأيت الهلال",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "First proof under «ولنا» for accepting one upright witness. A connected marfūʿ āḥād report, and its indication is by manṭūq: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ibn ʿUmar: people looked for the crescent; he told the Prophet he had seen it, and the Prophet fasted and ordered the people to fast (Abū Dāwūd)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p164",
+     "excerpt_ar": "وروى ابن عمر، قال «تراءى الناس الهلال، فأخبرت رسول الله - صلى الله عليه وسلم - أني رأيته. فصام وأمر الناس بصيامه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second marfūʿ report in al-Mughnī for one witness. Connected āḥād: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is a report of the time of an obligation known by sight, so one is accepted, as a report that the prayer time has come; and a religious report binding reporter and hearer alike, like riwāya",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p164",
+     "excerpt_ar": "ولأنه خبر عن وقت الفريضة فيما طريقه المشاهدة، فقبل من واحد، كالخبر بدخول وقت الصلاة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's rational argument for one witness. Analogy on prayer-time reports and riwāya: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "ʿAbd al-Raḥmān b. Zayd b. al-Khaṭṭāb, from Companions of the Prophet: «…and if two upright witnesses testify, fast and break the fast» (al-Nasāʾī)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p164",
+     "excerpt_ar": "وإن شهد شاهدان ذوا عدل، فصوموا وأفطروا.» رواه النسائي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited in al-Mughnī for the two-witness view (ʿUthmān, Mālik, al-Layth, al-Awzāʿī, Isḥāq), which is the other riwāya's ruling. A connected marfūʿ report, but it bears on one witness only by mafhūm, as al-Mughnī notes: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "aqrabSahabi",
+     "dalil": "ʿUthmān: only the testimony of two is accepted",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p164",
+     "excerpt_ar": "وقال عثمان بن عفان - رضي الله عنه -: لا يقبل إلا شهادة اثنين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A Companion's view for two witnesses. The same source reports ʿUmar, ʿAlī and Ibn ʿUmar for one witness, so the Companions disagree: aqrabSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is testimony to the sighting of a crescent, so it resembles testimony to the Shawwāl crescent (which needs two)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p164",
+     "excerpt_ar": "ولأن هذه شهادة على رؤية الهلال، فأشبهت الشهادة على هلال شوال",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Rational argument in al-Mughnī for two witnesses. Analogy on Shawwāl: qiyas. Al-Mughnī answers it with a distinction (entering the ʿibāda versus leaving it)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "They agree on the contract and dispute only what would void it, so the one claiming validity is believed, as in a dispute over a voiding condition, where Muslims' dealings are mostly valid",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p148",
+     "excerpt_ar": "وإن قال: بعتك وأنا صبي. فالقول قول المشتري. نص عليه، وهو قول الثوري وإسحاق لأنهما اتفقا على العقد، واختلفا فيما يفسده",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's reason for Aḥmad's naṣṣ (the buyer's word) on these facts. It carries over the case of a disputed voiding condition: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "In disputes over what voids a contract, the claimant of validity is believed because Muslims more commonly transact validly (the aṣl of the analogy)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p148",
+     "excerpt_ar": "فالقول قول من يدعي الصحة مع يمينه؛ لأن ظهور تعاطي المسلم الصحيح أكثر من تعاطيه للفاسد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The rationale of the aṣl to which al-Mughnī likens the minority claim («كالتي قبلها»). It is a rationale from the ẓāhir: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Minority is the original state, so the claimant of minority is believed; unlike a voiding condition or duress, whose original state is absence, and here legal capacity is not established, so the ẓāhir of a mukallaf's valid dealing does not apply",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v04:p112",
+     "excerpt_ar": "ويحتمل أن يقبل قول من يدعي الصغر لأنه الأصل وهو قول بعض أصحاب الشافعي",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "The iḥtimāl in al-Sharḥ al-Kabīr (as in al-Mughnī) for accepting the claim of minority, the other wajh. Grounded in «الأصل» (continuance of minority): istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The time is a matter of ijtihād, so preponderant belief suffices, as in other such matters",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p310",
+     "excerpt_ar": "جازت صلاته، جزم به جماعة، لأنه أمر اجتهادي، فاكتفي فيه بغلبة الظن كغيره",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Al-Mubdiʿ's reason for validity of prayer on preponderant belief that the time has entered (the madhhab). Analogy on other ijtihād matters: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The Companions built breaking the fast on preponderant belief; so too entering the prayer time",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p310",
+     "excerpt_ar": "ولأن الصحابة كانوا يبنون أمر الفطر على غلبة الظن",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Second reason in al-Mubdiʿ. The Companions' practice concerns the fast's end and is carried over to prayer times, so it is qiyas, not fatwaSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Burayda: «Pray ʿaṣr early on a cloudy day…» (al-Bukhārī), understood as praying as soon as its time has come by certainty or preponderant belief",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p280",
+     "excerpt_ar": "ومعناه - والله أعلم - التبكير بها إذا دخل وقت فعلها، ليقين، أو غلبة ظن",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī cites the marfūʿ ḥadīth on this question and reads it to cover entry of the time by preponderant belief. A connected āḥād report whose bearing here is by interpretation: zanni."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Asmāʾ: they broke the fast in the Prophet's time on a cloudy day, then the sun appeared (al-Bukhārī)",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v03:p040",
+     "excerpt_ar": "والمذهب: أن له الفطر بغلبة الظن لأنهم أفطروا في عهده - عليه السلام - ثم طلعت الشمس",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Al-Mubdiʿ's first proof for permission to break the fast on preponderant belief, citing the report al-Mughnī (v03:p147) gives in full from Asmāʾ (al-Bukhārī). A report of what was done in the Prophet's time, which is marfūʿ in ruling and āḥād: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "What has an indicator (amāra) admits ijtihād and one person's word, like the qibla",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v03:p040",
+     "excerpt_ar": "ولأن ما عليه أمارة يدخله الاجتهاد، ويقبل فيه قول واحد كالقبلة",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Second proof in al-Mubdiʿ (repeated in Kashshāf). Analogy on the qibla: qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

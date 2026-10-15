@@ -1,0 +1,468 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b32: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Aḥmad's own reasoning (riwāya of Ṣāliḥ): asked whether the latecomer should intend the opening by his single takbīr, he said: whether he intends it or not, did he not come wanting the prayer? And the intention of rukūʿ does not negate the intention of opening",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p363",
+     "excerpt_ar": "قيل له: ينوي بها الافتتاح؟ قال: نوى أو لم ينو، أليس قد جاء وهو يريد الصلاة؟ ولأن نية الركوع لا تنافي نية الافتتاح",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited by Ibn Qudāma against al-Qāḍī for the validity of one takbīr intended for both (Ibn Shāqlā's ruling). A stated rationale (the two intentions do not conflict, both being parts of the one act of worship): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on ṭawāf al-ziyāra intended for itself and for wadāʿ: an obligation that suffices for itself and for another when he intends it, so intending both obligations does not spoil it",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p363",
+     "excerpt_ar": "ولأنه واجب يجزئ عنه وعن غيره إذا نواه، فلم يمنع صحة نية الواجبين، كما لو نوى بطواف الزيارة له وللوداع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the sufficiency of the combined intention on these facts. Aṣl: ṭawāf al-ziyāra intended also for wadāʿ; farʿ: the opening takbīr intended also for rukūʿ; ʿilla: one act that suffices for both: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās (al-Qāḍī): he associated an obligatory act with what is not it in one intention, like one who sneezes on rising from rukūʿ and says «rabbanā wa-laka l-ḥamd» intending both, which Aḥmad declared insufficient",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v02:p009",
+     "excerpt_ar": "وقال القاضي إن نوى بها تكبيرة الاحرام وحدها أجزاه وإن نواهما لم يجزه في الظاهر من قول أحمد لأنه شرك بين الواجب وغيره في النية",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Qāḍī's argument for denial on exactly these facts. Aṣl: the sneeze-ḥamd intended for both (naṣṣ of Aḥmad); ʿilla: tashrīk of the rukn with a non-rukn in one intention: qiyas. The Sharḥ and al-Mughnī reject the analogy as unlike (the sneeze-ḥamd is not part of the prayer), which is a rebuttal, not a proof for position 0."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f008",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the cause of the prostration (hearing a verse of sajda with intent to listen) is multiplied, so the prostration is multiplied",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p449",
+     "excerpt_ar": "إلا إذا سمع سجدتين معا فيسجد لكل واحدة سجدة) إذا قصد الاستماع. وكذا لو قرأ سجدة واستمع أخرى لتعدد السبب",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī gives the madhhab (al-manṣūṣ) of two prostrations for two sajdas heard together, with the reason «لتعدد السبب»; he then reports Ibn Rajab's takhrīj that one suffices without a proof. A stated ʿilla: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the two rakʿas of ṭawāf, which are repeated as the ṭawāf is repeated: the recitation is a cause, so the prostration repeats with it",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p252",
+     "excerpt_ar": "لأنها سبب، فيتكرر بتكرارها، كركعتي الطواف بتكرره، وإن سمع سجدتين معا سجد سجدتين",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Stated for repeating the prostration with repeated recitation and applied in the same breath to two sajdas heard together. Aṣl: ṭawāf rakʿas; ʿilla: causation: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f010",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "fatwaSahabi",
+     "dalil": "Ibn ʿAbbās's view that the obligatory prayer after ṭawāf suffices for the two rakʿas of ṭawāf (also ʿAṭāʾ, Jābir b. Zayd, al-Ḥasan, Saʿīd b. Jubayr, Isḥāq)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p348",
+     "excerpt_ar": "وإذا صلى المكتوبة بعد طوافه، أجزأته عن ركعتي الطواف. روي نحو ذلك عن ابن عباس، وعطاء، وجابر بن زيد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited by Ibn Qudāma for the ruling of Abū Ṭālib and al-Athram's report. A ṣaḥābī's view with no ṣaḥābī reported against it in the passage: fatwaSahabi (it is introduced with «روي», unqualified)."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the two rakʿas of iḥrām: both are two rakʿas prescribed for the nusuk, so the maktūba suffices for them",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p348",
+     "excerpt_ar": "ولنا، أنهما ركعتان شرعتا للنسك، فأجزأت عنهما المكتوبة، كركعتي الإحرام",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ولنا» for the sufficiency. Aṣl: rakʿatā al-iḥrām; ʿilla: rakʿas prescribed for the rite: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the two rakʿas of fajr: the ṭawāf rakʿas are a sunna, so the maktūba does not stand in for them",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p348",
+     "excerpt_ar": "قال أبو بكر عبد العزيز: هو أقيس. وبه قال الزهري، ومالك، وأصحاب الرأي؛ لأنه سنة، فلم تجز عنها المكتوبة، كركعتي الفجر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The reason given for the riwāya that he prays the ṭawāf rakʿas after the maktūba, which Abū Bakr calls «أقيس» (also held by al-Zuhrī, Mālik, the Ḥanafīs). Aṣl: rakʿatā al-fajr: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f011",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The Prophet's command «لا ينفرن أحد حتى يكون آخر عهده بالبيت» (cited in this chapter): what is commanded is that his last contact be with the House, and the delayed ṭawāf al-ziyāra achieves that",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p404",
+     "excerpt_ar": "إحداهما، يجزئه عن طواف الوداع، لأنه أمر أن يكون آخر عهده بالبيت، وقد فعل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's first reason for the riwāya that it suffices. It rests on the marfūʿ āḥād ḥadīth on wadāʿ, applied by its sense (the purpose is fulfilled), not by an explicit text on this case: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on taḥiyyat al-masjid: what is prescribed as a greeting is satisfied by an obligatory act of its kind, as the maktūba suffices for the two rakʿas of taḥiyya",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p404",
+     "excerpt_ar": "ولأن ما شرع لتحية المسجد أجزأ عنه الواجب من جنسه، كتحية المسجد بركعتين تجزئ عنهما المكتوبة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second reason for the same riwāya (al-Mubdiʿ calls it «ظاهر المذهب»). Aṣl: taḥiyyat al-masjid; ʿilla: a greeting satisfied by an obligatory act of its genus: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on two obligatory prayers: they are two obligatory acts of worship, so one does not suffice for the other",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p404",
+     "excerpt_ar": "وعنه، لا يجزئه عن طواف الوداع؛ لأنهما عبادتان واجبتان، فلم تجز إحداهما عن الأخرى، كالصلاتين الواجبتين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The reason given for the other riwāya on these facts. Aṣl: two obligatory prayers: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f012",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "The single takbīr is transmitted from Zayd b. Thābit and Ibn ʿUmar, with no ṣaḥābī known to oppose them",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p363",
+     "excerpt_ar": "ولأنه قد نقلت تكبيرة واحدة عن زيد بن ثابت وابن عمر، ولم يعرف لهما في الصحابة مخالف",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the manṣūṣ that the opening takbīr suffices for the rukūʿ takbīr. Ibn Qudāma calls it «إجماعا», but it is a tacit consensus (no known opponent) of ṣaḥāba: fatwaSahabi, not ijma."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on ṭawāf al-ziyāra done on departure, which suffices for wadāʿ: two obligations of one genus met in one place, one of them a rukn, so the other lapses into it",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p363",
+     "excerpt_ar": "ولأنه اجتمع واجبان من جنس في محل واحد، وأحدهما ركن، فسقط به الآخر، كما لو طاف الحاج طواف الزيارة عند خروجه من مكة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second proof for sufficiency. Aṣl: ṭawāf al-ziyāra/wadāʿ; ʿilla: two obligations of one genus in one place, one a rukn: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Because the rukūʿ takbīr is itself obligatory, it must be said along with the opening takbīr",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v02:p057",
+     "excerpt_ar": "وعنه: يجب معها تكبيرة الركوع، صححه ابن عقيل، وابن الجوزي؛ وهو ظاهر كلام جماعة لوجوبها",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "The reason al-Mubdiʿ gives for the other riwāya (declared correct by Ibn ʿAqīl and Ibn al-Jawzī). A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f014",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on ʿīd and Friday falling on one day, where one ghusl suffices for both; likewise the tamattuʿ/qirān sheep on the day of sacrifice suffices for the hady and the uḍḥiya",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p616",
+     "excerpt_ar": "فعق) أجزأ عن أضحية (أو ضحى أجزأ عن الأخرى) كما لو اتفق يوم عيد وجمعة فاغتسل لأحدهما",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Al-Buhūtī's reason for the Muntahā's ruling that either suffices for the other when their times coincide. Aṣl: one ghusl for ʿīd and jumuʿa: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Ibn al-Qayyim (Tuḥfat al-Wadūd): as when one prays two rakʿas intending taḥiyyat al-masjid and the sunna of the maktūba, or prays a farḍ after ṭawāf, which counts for both",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p029",
+     "excerpt_ar": "قال الشيخ شمس الدين محمد (ابن القيم في كتابه تحفة الودود في أحكام المولود: كما لو صلى ركعتين ينوي بهما تحية المسجد وسنة المكتوبة",
+     "who": "Ibn al-Qayyim, Tuḥfat al-Wadūd, quoted in al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Quoted by al-Buhūtī for the manṣūṣ that one animal intended for both suffices. Aṣl: one prayer intended for two greetings/sunnas: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The depositee and unpaid agent took the thing on the understanding that they would bear no liability for it and received nothing in return for what they paid; they were deceived (taghrīr) by the usurper",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p204",
+     "excerpt_ar": "وإن غرمهما رجعا على الغاصب بما غرما من القيمة والأجر؛ لأنهما دخلا على أن لا يضمنا شيئا من ذلك، ولم يحصل لهما بدل عما ضمنا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma on exactly the depositee/agent ignorant of the usurpation: the owner may make them liable, and they have recourse on the usurper. A stated ʿilla (entry on non-liability without countervalue): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Recourse because of the usurper's deception and because they did not enter upon liability for anything",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p100",
+     "excerpt_ar": "رجعا) أي: المودع والمتهب (بهما) على الغاصب حيث لم يعلما لتغريره لهما، ولأنهما لم يدخلا على ضمان شيء",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Al-Buhūtī's reasons for the madhhab (Iqnāʿ). Rationale of taghrīr: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Liability settles on the hand because the property perished under it without the owner's permission",
+     "ref": "src:openiti-insaf-shamela21609/v06:p179",
+     "excerpt_ar": "وفيه وجه آخر باستقرار الضمان عليها، ولتلف المال تحتها من غير إذن",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The reason al-Mardāwī reports (from Ibn Rajab) for the wajh of al-Qāḍī's al-Mujarrad that liability settles on the depositee. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The hand took the thing as a trust (amāna), so having paid it has recourse on the usurper",
+     "ref": "src:openiti-insaf-shamela21609/v06:p180",
+     "excerpt_ar": "كالشريك، والمضارب، والوكيل بجعل، والمرتهن فالمشهور: جواز تضمينها أيضا. وترجع بما ضمنت. لدخولها على الأمانة",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Al-Mardāwī (after Ibn Rajab) on the fifth hand. A stated ʿilla (entry upon trust): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "For the murtahin ignorant of the usurpation: the owner may make either liable, the liability settling on the usurper; if the murtahin pays, he has recourse because the usurper deceived him, like one deceived as to a slave-girl's freedom",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p298",
+     "excerpt_ar": "وإن ضمن المرتهن رجع على الغاصب؛ لأنه غره، فرجع عليه، كالمغرور بحرية أمة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's third wajh on the murtahin of a usurped pledge (one of the hands of this farʿ). Aṣl: the one deceived about a slave-girl's freedom (maghrūr): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The murtahin's first wajh: another's property perished under his wrongful hand, so liability settles on him as if he had known",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p298",
+     "excerpt_ar": "أحدها يضمن، ويستقر الضمان عليه؛ لأن مال غيره ms2158 تلف تحت يده العادية، فاستقر الضمان عليه، كما لو علم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited in al-Mughnī for liability settling on the murtahin who did not know, which is the possibility (al-Mujarrad, Ibn ʿAqīl, al-Muwaffaq in al-rahn) that the hand bears it. Aṣl: the one who knew: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The borrower entered on the understanding that the benefits were his without liability, so he has recourse for the hire he paid",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p204",
+     "excerpt_ar": "وهل يرجع بما غرم من الأجر؟ فيه وجهان؛ أحدهما، يرجع؛ لأنه دخل على أن المنافع له غير مضمونة عليه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma on the borrower from a usurper who did not know: recourse for the benefit (the madhhab per al-Inṣāf). A stated ʿilla: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He has no recourse because he used the thing and so has already received the counterpart of what he paid",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p204",
+     "excerpt_ar": "والثاني، لا يرجع؛ لأنه انتفع بها، فقد استوفى بدل ما غرم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The reason for the other wajh/riwāya on these facts (no recourse for the benefit consumed). A stated ʿilla: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Liability for the benefit settles on him in return for his use of it",
+     "ref": "src:openiti-insaf-shamela21609/v06:p178",
+     "excerpt_ar": "وعنه: لا يرجع بضمان المنفعة إذا تلفت بالاستيفاء. ويستقر الضمان عليه في مقابلة الانتفاع",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Al-Mardāwī's statement of the second riwāya with its reason on the borrower's facts. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The buyer entered the sale with the seller on the basis that he is liable for the thing by the price, so when he pays its value he has no recourse",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p202",
+     "excerpt_ar": "وهو قيمتها إن تلفت في يده، وأرش بكارتها، وبدل جزء من أجزائها؛ لأنه دخل مع البائع على أنه يكون ضامنا لذلك بالثمن",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma for the aṣḥāb's ruling that the ignorant buyer has no recourse for the value. A stated ʿilla (entry on liability): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He entered on liability for the thing, having given the price in exchange for it",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p101",
+     "excerpt_ar": "فعليه قيمتها ولا يرجع بها ولا بأرش بكارة) على الغاصب؛ لأنه دخل على ضمان العين؛ لأنه بذل الثمن في مقابلتها",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Al-Buhūtī's reason for the madhhab on these facts. Stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Ibn Rajab: qiyās al-madhhab on the riwāya that a man deceived into marrying a slave-girl has recourse on the deceiver despite consuming the benefit and entering upon liability for it; and a fortiori from Aḥmad's naṣṣ that a buyer to whom a defect was concealed recovers the price though he entered on liability for the thing",
+     "ref": "src:openiti-rajab-shamela21730/v01:p212",
+     "excerpt_ar": "وهو عندي قياس المذهب حيث قلنا في إحدى الروايتين برجوع المغرور بنكاح الأمة على من غره مع استيفائه منفعة البضع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's argument for settling the liability on the usurper (the riwāya al-Mughnī reports in al-rahn). Aṣl: the maghrūr in nikāḥ and the tadlīs of a defect; farʿ: buyer from a usurper: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The recipient of a ṣadāq, khulʿ countervalue, settlement or debt payment entered on the basis that the thing was at his own risk in exchange for his right",
+     "ref": "src:openiti-rajab-shamela21730/v01:p214",
+     "excerpt_ar": "وأما قيم الأعيان فمقتضى ما ذكره القاضي ومن اتبعه أنه لا يرجع بها ; لأنه دخل على أنها مضمونة عليه بحقه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab states al-Qāḍī's ruling with its reason on these facts. A stated ʿilla (entry on liability): qiyas."
+    }
+   ],
+   "advantages": [],
+   "searched": "For position 1 (the takhrīj from sale giving recourse for the value) Ibn Rajab only refers back to «الوجه المذكور في البيع» without a proof of its own here (Taqrīr al-Qawāʿid v01 p214); Kashshāf v04 p102, Sharḥ al-Muntahā v02 p314 and al-Inṣāf v06 p180 state the rule without argument; al-Mughnī's ghaṣb chapter (v05 p201–205) does not treat this hand."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The lessee entered the contract on the basis that he would be liable for the benefit, so he has no recourse for the hire he paid (except any excess over the agreed rent)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p203",
+     "excerpt_ar": "فإن ضمن المستأجر، لم يرجع بذلك، لأنه دخل في العقد على أنه يضمن المنفعة، إلا أن يزيد أجر المثل على المسمى في العقد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma on the lessee from a usurper (al-Qāḍī and most). A stated ʿilla: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Liability for the benefit settles on the lessee, not for the thing, because he entered upon liability for the benefit only",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p100",
+     "excerpt_ar": "عكسهما) يستقر عليه ضمان المنفعة دون العين لأنه دخل على ضمان المنفعة دون العين",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Al-Buhūtī's reason for the madhhab. Stated rationale: qiyas."
+    }
+   ],
+   "advantages": [],
+   "searched": "For position 1 (Abū al-Barakāt's takhrīj that the lessee bears no liability at all) Ibn Rajab only says it is built on the view that the maghrūr is not liable at all (Taqrīr al-Qawāʿid v01 p214); al-Inṣāf v06 p181 reports it without argument; al-Mughnī v05 p202–203 and Kashshāf v04 p100 give no proof for it."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f008",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The muḍārib, muzāriʿ and partner with the usurped property entered on the basis that they bear no liability at all, so when made liable they have recourse",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p102",
+     "excerpt_ar": "فإن ضمنه المالك رجع على الغاصب بقيمة وأجرة عمل؛ لأنهم دخلوا على أن لا ضمان عليهم إلا حصتهم من الربح",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Al-Buhūtī on the seventh hand (Ibn Rajab's eighth). A stated ʿilla: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "For the second muḍārib who received the money from a muḍārib acting like a usurper, without knowing: he has recourse because the first deceived him, like one deceived about a slave-girl's freedom",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p035",
+     "excerpt_ar": "وإن لم يعلم، فهل يرجع على الأول؟ على وجهين؛: أحدهما، يرجع عليه؛ لأنه غره، فأشبه ما لو غره بحرية أمة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma on the muḍārib without authorization, whom he treats «كالغاصب» in liability; the case Ibn Rajab names for the dissenting wajh. Aṣl: the one deceived about freedom: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "No recourse, because the loss occurred in his hand, so liability settles on him",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p035",
+     "excerpt_ar": "والثاني: لا يرجع؛ لأن التلف كان في يده، فاستقر الضمان عليه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The wajh Ibn Rajab reports «في المضارب بغير إذن» that the worker has no recourse, with its reason. A stated rationale (loss under his hand): qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: conjunction requires difference between the conjoined terms, so Zayd named on his own is not one of the neighbours for that share",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p366",
+     "excerpt_ar": "لاقتضاء العطف المغايرة وكذا لو وصى لزيد وجيرانه بشيء لم يشاركهم زيد بكونه جارا",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Al-Buhūtī applies the reason given for the poor case to the neighbours case on these facts. Linguistic rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Taqī al-Dīn's distinction: Zayd is designated by his person, which does not multiply, whereas in a bequest to relatives the entitlement hangs on a description, so a relative who is also poor may take twice",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p256",
+     "excerpt_ar": "قد يفرق بينهما بأن زيدا يتعين، والقرابة لفظ عام يدخل فيه الفقراء وغيرهم",
+     "who": "Ibn Taymiyya, quoted in Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Al-Mubdiʿ, on the naṣṣ that Zayd does not share with the neighbours or the poor, answers the suggested takhrīj from the relatives case with this distinction (farq). A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Al-Qāḍī's takhrīj: Zayd takes by the title of neighbour too, just as the zakāt collector takes by poverty along with his share as collector",
+     "ref": "src:openiti-rajab-shamela21730/v01:p272",
+     "excerpt_ar": "وخرج القاضي فيما نقله ابن عقيل في فنونه الاستحقاق بجهة الفقراء والجوار كما يستحق عامل الزكاة الأخذ بجهة الفقر",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The analogy offered for the takhrīj. Aṣl: the zakāt collector who is poor takes by two titles: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "By fixing Zayd's share at a dinar, the testator cut off any discretion to pay him more, so he gets nothing of the poor's share",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p277",
+     "excerpt_ar": "وإن وصى لزيد بدينار، وللفقراء بثلاثة وزيد فقير، لم يعط غير الدينار، لأنه قطع الاجتهاد في الدفع إليه بتقدير حقه بدينار",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Ibn Qudāma on exactly these facts. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: the conjunction of the poor to Zayd implies they are other than him",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p366",
+     "excerpt_ar": "ولو كان زيد فقيرا لم يستحق من نصيب الفقراء شيئا) لاقتضاء العطف المغايرة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Al-Buhūtī's reason for the madhhab on these facts. Linguistic rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Conjunction indicates difference between the conjoined; and allowing it would allow the whole share of the needy to be paid to him, which the wording excludes",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v06:p501",
+     "excerpt_ar": "لأن عطفهم عليه يدل على المغايرة بينهم إذ الظاهر بين المعطوف والمعطوف عليه المغايرة ولأن تجويز ذلك يفضي",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Given in al-Sharḥ al-Kabīr for Zayd who is a miskīn in a bequest to Zayd and the masākīn (held also by al-Ḥasan and Isḥāq): the same ruling for the same reason. Linguistic rationale and reductio: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Al-Qāḍī's takhrīj: he takes by the title of poverty too, as the zakāt collector takes by poverty along with collecting",
+     "ref": "src:openiti-rajab-shamela21730/v01:p272",
+     "excerpt_ar": "وخرج القاضي فيما نقله ابن عقيل في فنونه الاستحقاق بجهة الفقراء والجوار كما يستحق عامل الزكاة الأخذ بجهة الفقر",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The analogy offered for the takhrīj on the poor case. Aṣl: the poor zakāt collector: qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

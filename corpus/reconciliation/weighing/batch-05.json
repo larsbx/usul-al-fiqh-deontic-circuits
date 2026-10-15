@@ -1,0 +1,488 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b05: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "ʿUmar's marfūʿ ḥadīth (Muslim, Abū Dāwūd): when the muʾadhdhin says «حي على الصلاة» the hearer says «لا حول ولا قوة إلا بالله», and the same at «حي على الفلاح». It ends «من قلبه دخل الجنة». al-Athram calls it one of the good ḥadīths.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p310",
+     "excerpt_ar": "ثم قال: حي على الصلاة. قال: لا حول ولا قوة إلا بالله، ثم قال: حي على الفلاح. قال: لا حول ولا قوة إلا بالله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for saying the ḥawqala in place of the ḥayʿala, without combining them (position 0). A connected marfūʿ āḥād report, so zanni. Abū Rāfiʿ's report of the Prophet's own practice is given alongside."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The ḥayʿala is an address to the hearer, so repeating it is pointless. The right response is to obey and ask for strength.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p291",
+     "excerpt_ar": "ولأنه خطاب فإعادته عبث، بل سبيله الطاعة، وسؤال الحول والقوة",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's rationale for the ḥawqala alone, which is position 0, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The hearer repeats the ḥayʿala and also says the ḥawqala, so as to act on both reports: Abū Saʿīd's marfūʿ «فقولوا مثل ما يقول» (muttafaq ʿalayh) and ʿUmar's ḥadīth with the ḥawqala.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p291",
+     "excerpt_ar": "وقيل: يوافقه في الحيعلة مع قول ذلك، ليجمع بينهما، وقال الخرقي، وغيره: يقول كما يقول",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "The reason given for the qīl that combines them, which is position 1, is to act on both marfūʿ ḥadīths together («ليجمع بينهما»). The proof is these āḥād reports, so zanni. al-Mughnī (v01:p310) also allows «أو يجمع بينهما»."
+    }
+   ],
+   "advantages": [
+    {
+     "for": 0,
+     "over": 1,
+     "by": "khass",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p310",
+     "excerpt_ar": "وهذا أخص من حديث أبي سعيد، فيقدم عليه، أو يجمع بينهما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī says ʿUmar's ḥadīth (ḥawqala at the ḥayʿala) is more specific than Abū Saʿīd's general «say as he says», and so takes precedence. That is the specific over the general, between two zanni proofs. He also allows combining them, which is position 1's way, so the advantage is stated with that alternative left open. Basis: stated — the source itself compares the two proofs in the excerpt.",
+     "basis": "stated"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Taqī al-Dīn: the Prophet said one wording at one time and the other at another, so each wording is a substitute for the other, and a substitute is not combined with what it replaces. He adds that no established musnad ḥadīth combining them reached him.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p015",
+     "excerpt_ar": "لأنه كان يقول هذا تارة وهذا تارة فأحد اللفظين بدل عن الآخر ولا يصح الجمع بين البدل والمبدل",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The reason given for not combining, which is position 0. A rationale (substitute and replaced), so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Kaʿb b. ʿUjra's marfūʿ ḥadīth, agreed upon, with «كما صليت على آل إبراهيم» (one wording, not the combined one). It is the soundest thing reported on the matter.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p581",
+     "excerpt_ar": "والأولى الإتيان بالصلاة كما في حديث كعب بن عجرة المتفق عليه فإنه أصح شئ روي فيها",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Cited for the preferred wording, which is the single non-combined form (position 0). A marfūʿ āḥād report, so zanni."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The combined wording «على إبراهيم وعلى آل إبراهيم» is established in Ṣaḥīḥ al-Bukhārī from Kaʿb b. ʿUjra, and al-Nasāʾī has it from Kaʿb and from Abū Ṭalḥa.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p015",
+     "excerpt_ar": "وقد ثبت في صحيح البخاري الجمع بينهما من حديث كعب بن عجرة وأخرجه النسائي من حديث كعب أيضا ومن حديث أبي طلحة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's answer to Taqī al-Dīn, for combining (position 1). A marfūʿ āḥād report, so zanni. al-Mughnī (v01:p389) also cites al-Nasāʾī's version «كما صليت على إبراهيم وآل إبراهيم», which al-Tirmidhī graded ḥasan ṣaḥīḥ."
+    }
+   ],
+   "advantages": [
+    {
+     "for": 0,
+     "over": 1,
+     "by": "sahihayn",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p581",
+     "excerpt_ar": "والأولى الإتيان بالصلاة كما في حديث كعب بن عجرة المتفق عليه فإنه أصح شئ روي فيها",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr prefers the single wording because its version of Kaʿb's ḥadīth is agreed upon by al-Bukhārī and Muslim and is «أصح شئ روي فيها». The combined wording is cited from al-Nasāʾī and al-Tirmidhī (al-Mughnī), or from al-Bukhārī alone (Ibn Rajab). Both proofs are zanni. Basis: stated — the source itself compares the two proofs in the excerpt.",
+     "basis": "stated"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Taken alone, each of the two may not be the one it came from, so for each the obligation of ghusl is doubtful. This is likened to two men who each hear the sound of wind and think it came from the other («كما لو سمع كل واحد منهما صوت ريح»).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p149",
+     "excerpt_ar": "فلا غسل على واحد منهما؛ لأن كل واحد منهما بالنظر إليه مفردا يحتمل أن لا يكون منه، فوجوب الغسل عليه مشكوك فيه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's reason that neither must wash, on exactly these facts (semen in a garment two sleep in), with the noise case as aṣl. The doubt argument comes with an analogy, so qiyas. He adds that neither may follow the other in prayer, since one of them is certainly junub."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The original state: ghusl is not owed, and it does not become owed through doubt.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p105",
+     "excerpt_ar": "فإن وجد منيا في ثوب ينام فيه هو وغيره، فلا غسل عليه، لأن الأصل عدم وجوبه، فلا يجب بالشك",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī states the ruling of position 1 on the same facts and rests it explicitly on «الأصل عدم وجوبه», so istishab. al-Sharḥ al-Kabīr (v01:p199) gives the same: «والأصل عدم وجوبه»."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Abū Bakr's first qawl: the full diya. The death came from both what God required and the striker's transgression, so liability falls on the transgressor, as when one lashes a sick man once and he dies. Also «فأشبه ما لو ألقى على سفينة موقرة حجرا فغرقها».",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p165",
+     "excerpt_ar": "أحدهما: كمال الدية؛ لأنه قتل حصل من جهة الله وعدوان الضارب، فكان الضمان على العادي، كما لو ضرب مريضا سوطا فمات به",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The reason given for position 0, with an aṣl (striking a sick man, or the overloaded ship), so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The second qawl: half. He died from an act that carries liability and one that does not, as when a man wounds himself and another wounds him and he dies.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p165",
+     "excerpt_ar": "والثاني: عليه نصف الضمان؛ لأنه تلف بفعل مضمون وغير مضمون، فكان الواجب نصف الدية، كما لو جرح نفسه وجرحه غيره فمات",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The reason given for position 1, with an aṣl, so qiyas. al-Mughnī notes Abū Ḥanīfa, Mālik and one of al-Shāfiʿī's two views hold it."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f010",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Intercourse with one of two sisters he owns does not combine them as bedfellows (firāsh). So it is not forbidden, as when he owns only one of them.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p125",
+     "excerpt_ar": "ولنا، أنه ليس يجمع بينهما في الفراش، فلم يحرم، كما لو كان في ملكه إحداهما فقط",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's «ولنا» against al-Ḥakam, Ḥammād and al-Nakhaʿī, whose view Abū al-Khaṭṭāb gives as a madhhab of Aḥmad (position 1). It has an aṣl (owning one), so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "What is forbidden is what brings about the combination, and intercourse with the first does not.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p242",
+     "excerpt_ar": "والأول أصح ; لأن المحرم هو ما يحصل به الجمع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's reason for preferring the mashhūr, which is position 0. A rationale defining the forbidden act, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He may have intercourse with whichever he wishes, because the other has not become his firāsh.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p077",
+     "excerpt_ar": "(وله وطء إحداهما) أيتهما شاء لأن الأخرى لم تصر فراشا",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's rationale for the madhhab ruling, which is position 0, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f011",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "mursalDaif",
+     "dalil": "al-Qāḍī and the Shāfiʿīs: the first stays lawful because forbidden intercourse does not make the lawful forbidden. This is the dictum «الحرام لا يحرم الحلال».",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p126",
+     "excerpt_ar": "وقال القاضي، وأصحاب الشافعي: الأولى باقية على الحل؛ لأن الوطء الحرام لا يحرم الحلال . إلا أن القاضي قال: لا يطؤها حتى يستبرئ الثانية.",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for position 0, that the first is permitted once the second has completed istibrāʾ (al-Qāḍī adds the istibrāʾ). Ibn Qudāma answers «وقولهم: إن الحرام لا يحرم الحلال. ليس بخبر صحيح» (same page). He treats it as a report and says it is not sound, so mursalDaif. The excerpt runs through the qualifier that follows in the source. Al-Qāḍī conditions it: «لا يطؤها حتى يستبرئ الثانية»."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The second is the one more specifically forbidden, since the combination came about by intercourse with her. So the first becomes lawful once the second is cleared.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p242",
+     "excerpt_ar": "أم تباح له الأولى إذا استبرأ الثانية ; لأنهما أخص بالتحريم حيث كان الجمع حاصلا بوطئها على وجهين",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's statement of the reason for the second wajh (position 0). A rationale locating the combination in the second intercourse, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The second has become his firāsh, since her child's lineage attaches to him, so her sister is forbidden to him, as if he had had intercourse with her first.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p126",
+     "excerpt_ar": "ولنا، أن الثانية قد صارت فراشا له يلحقه نسب ولدها، فحرمت عليه أختها، كما لو وطئها ابتداء",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's «ولنا» for «لا يحل له وطء إحداهما حتى يحرم الأخرى ويستبرئها», which is position 1. The aṣl is intercourse with her alone, so qiyas. Ibn Rajab gives the same ground: «لثبوت الفراش لهما جميعا»."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f012",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The prohibition attaches only to what exceeds four, so intercourse with four is not barred and counts as his choice.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p242",
+     "excerpt_ar": "فالأظهر أن له وطء أربع منهن ويكون اختيارا منه ; لأن التحريم إنما يتعلق بالزيادة على الأربع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's reason for position 0. A rationale on the scope of the prohibition, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Intercourse is lawful only within ownership, so it indicates choice, like intercourse with a slave-girl sold under an option.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p159",
+     "excerpt_ar": "وإن وطئ إحداهن، كان اختيارا لها، في قياس المذهب؛ لأنه لا يجوز إلا في ملك، فيدل على الاختيار، كوطء الجارية المبيعة بشرط الخيار",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the ruling that intercourse with one of the wives is choice, which is the second half of position 0 («ويكون اختيارا منه»). It does not separately rule on whether the act is permitted before choosing. Called «قياس المذهب», with an aṣl, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f013",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "On the view that doing part does not break the oath, he can have intercourse with each without breaking it, so his oath has not barred him from her. When he has had three, he cannot have the fourth without breaking it, and becomes an ʾīlāʾ-swearer toward her.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p545",
+     "excerpt_ar": "لا يحنث بفعل البعض. لم يكن موليا منهن في الحال؛ لأنه يمكنه وطء كل واحدة منهن من غير حنث، فلم يمنع نفسه بيمينه من وطئها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is exactly the farʿ's premise («وقلنا لا تحنث بفعل البعض»), and the reason given for position 0. A rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "One whose intercourse with her does not break the oath is not an ʾīlāʾ-swearer toward her, like a woman he did not swear about.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p545",
+     "excerpt_ar": "ولنا، أن من لا يحنث بوطئها، لا يكون موليا منها، كالتي لم يحلف عليها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's «ولنا» against al-Muzanī's report from al-Shāfiʿī and the Ḥanafīs, who make him an ʾīlāʾ-swearer toward all at once (the ruling of position 1). The aṣl is the woman not sworn about, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The maʾkhadh: a ruling tied to a collective form is a ruling on all the parts together, not one by one. On that reading he is an ʾīlāʾ-swearer toward all of them at once.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p242",
+     "excerpt_ar": "أو على مجموع الأجزاء في حالة الاجتماع دون الانفراد فعلى الثاني يكون موليا من الجميع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's statement of the ground for position 1 (al-Qāḍī's Khilāf, Ibn ʿAqīl). A linguistic rationale about what the collective word refers to, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f014",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The bar is there because of combining five women, so it is enough to refrain from one of the four until the adulteress is cleared.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p242",
+     "excerpt_ar": "واستبعده الشيخ مجد الدين وهو كما قال ; لأن التحريم هنا لأجل الجمع بين خمس فيكفي فيه أن يمسك عن",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Majd's and Ibn Rajab's reason against al-Qāḍī's Taʿlīq, for position 0. Ibn Rajab adds that al-Mughnī says the same of a convert with five wives who parts from one. A rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Once he has had intercourse with three of them, he must refrain from the fourth until the woman he slept with (by shubha or zinā) finishes her ʿidda. Otherwise his seed would be gathered in more than four women.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p080",
+     "excerpt_ar": "فإذا وطئ ثلاثا منهن وجب عليه الإمساك عن الرابعة حتى تنقضي عدة الموطوءة بشبهة أو زنا لئلا يجمع ماءه في أكثر من أربع نسوة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's rationale bars only the fourth, not all four, which is position 0. A rationale, so qiyas. Sharḥ al-Muntahā (v02:p658) gives the same «لئلا يجمع ماؤه في أكثر من أربع نسوة»."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f020",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Abū al-Khaṭṭāb: the generality comes from the indefinite («مرة») falling under the condition.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p244",
+     "excerpt_ar": "وظاهر كلام أبي الخطاب أن العموم أتى من دخول النكرة في الشرط",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "One of the grounds Ibn Rajab reports for position 0, a linguistic rationale, so qiyas. Ibn ʿAqīl's ground is reported alongside: «ذكر المرة تنبيه على المنع من الزيادة عليها»."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Under the madhhab an oath dissolves only by being broken. Going out with leave, even a hundred times, does not dissolve it. What was sworn about, one going out without leave, is still possible, so whenever it happens the oath is broken.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p244",
+     "excerpt_ar": "فإن اليمين عندنا إنما تنحل بالحنث ولو خرجت مائة مرة بإذنه لم تنحل اليمين بذلك عندنا والمحلوف عليه قائم",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's own reason for «وهو الحق», which is position 0. A rationale from the madhhab's principle on dissolving oaths, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "al-Shāfiʿī: the oath attaches to a single going out, by a particle that does not entail repetition. So once she goes out with leave, he has kept the oath and it dissolves.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p594",
+     "excerpt_ar": "وقال الشافعي: تنحل، فلا يحنث بخروجها بعد ذلك؛ لأن اليمين تعلقت بخروج واحد، بحرف لا يقتضي التكرار",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A non-Ḥanbalī proof for the same ruling as position 1 (going out with leave dissolves the oath, so a later going out without leave does not break it). It is on the cognate «إن خرجت بغير إذني», without «مرة». al-Mughnī rejects it. A linguistic rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The Talkhīṣ's argument from the aṣl: agency admits suspension (taʿlīq) under the madhhab, so the rotating agency is valid. The revocation clause «كلما عدت وكيلي فقد عزلتك» is likewise a revocation suspended on a condition.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p332",
+     "excerpt_ar": "قال في التلخيص وهي على أصلنا صحيحة في صحة التعليق وصورتها أن تقول كلما عزلتك فأنت وكيلي",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Cited for validity, the ruling of position 0. It argues from a general principle of the madhhab (suspension is valid), not from a text, so qiyas. It does not address the purpose the facts turn on."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "«كلما وكلتك فقد عزلتك» is a revocation suspended on a condition (the act of appointing), and a suspended revocation is valid, as established earlier. So the agent is revoked each time he is appointed.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p468",
+     "excerpt_ar": "فسخ معلق بشرط وهو التوكيل والفسخ المعلق صحيح كما تقدم وعلى هذا فلا يصير وكيلا إذا وكله بعد العزل",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's stated rationale for holding the suspended revocation valid and effective, which is position 0. It refers back to the general validity of suspending agency and its revocation, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Taqī al-Dīn's rationale: the rotating suspension would make a non-binding contract binding, which changes a rule of the sharʿ.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p332",
+     "excerpt_ar": "وقال الشيخ تقي الدين لا يصح لأنه يؤدي إلى أن تصير العقود الجائزة لازمة وذلك تغيير لقاعدة الشرع",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "The reason given for invalidity (position 1). It is a rationale tied to the nature of non-binding contracts, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Taqī al-Dīn's second rationale: the person suspending does not aim to bring about revocation. He aims only to bar the agency and undo it before it exists, and contracts are not revoked before they are concluded.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p332",
+     "excerpt_ar": "وليس مقصود المعلق إيقاع الفسخ وإنما الامتناع من التوكيل وحله قبل وقوعه والعقود لا تفسخ قبل انعقادها",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "This is the ground the facts turn on, that the suspension has no legitimate purpose. It is a rationale (purpose, and that revocation presupposes an existing contract), so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The cause indicates the intention to restrict, just as it indicates the intention to generalise. Had he intended the restriction, the oath would have been confined to it, so it is confined when something that indicates the intention is present.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p567",
+     "excerpt_ar": "يدل على النية في الخصوص، كدلالته عليها في العموم ولو نوى الخصوص لاختصت يمينه به، فكذلك إذا وجد ما يدل عليها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's argument for confining a general word to its specific cause when there is no intention. It is given with al-Qāḍī's cases, after the lunch-invitation example. The aṣl is an explicit intention to restrict, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The word is general but the purpose restricts it, so it becomes as if he had sworn «لا يتغدى عند الداعي».",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p084",
+     "excerpt_ar": "اختصت يمينه بالغداء عند الداعي إذا قصده، لأن اللفظ، وإن كان عاما، لكن القصد خصصه",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's rationale for the muqniʿ ruling that the oath is confined to that lunch. It ties the ruling to his intending it («إذا قصده»), so it reaches the bare-cause facts only through the cause indicating intent. A rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The Lawgiver's general word spoken for a specific cause is taken by the generality of the word, not the specificity of the cause. The swearer's oath is treated the same way.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p567",
+     "excerpt_ar": "ووجه ذلك أن لفظ الشارع إذا كان عاما، لسبب خاص، وجب الأخذ بعموم اللفظ دون خصوص السبب، كذلك يمين الحالف",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given as «ووجه ذلك» for the riwāya that the oath is carried on its generality. That is position 1: he breaks it by any lunch. The aṣl is the Lawgiver's speech and the farʿ the swearer's, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: one does not say «he reported it to him» (as to a qāḍī) except while he holds office.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p567",
+     "excerpt_ar": "والوجه الآخر، تنحل اليمين بعزله. وهو مذهب أبي حنيفة؛ لأنه لا يقال: رفعه إليه. إلا في حال ولايته",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The reason given for the wajh that the oath lapses with the dismissal, which is position 0. al-Mughnī notes it is also Abū Ḥanīfa's madhhab, and it counts for the same ruling. A rationale from usage, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The intention or the cause is given precedence over the generality of the word.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p249",
+     "excerpt_ar": "(انحلت يمينه) تقديما للنية أو السبب على عموم اللفظ لما تقدم.",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's rationale for the oath lapsing on dismissal, which is position 0. It applies the general rule that the cause restricts the word, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "al-Qāḍī: when an oath attaches to a specific person described by a quality, it attaches to the person even if the quality changes.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p567",
+     "excerpt_ar": "قال القاضي: هذا قياس المذهب؛ لأن اليمين إذا تعلقت بعين موصوفة، تعلقت بالعين وإن تغيرت الصفة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the wajh that the oath does not lapse with the dismissal, which is position 1. Called «قياس المذهب», with the oath on a described individual as aṣl, so qiyas. al-Mughnī notes it is one of the Shāfiʿī wujūh too."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "al-Qāḍī: the circumstance of the case carries the meaning of the speech to itself. He can bar a wife or slave only while he has authority over them, so it is as if he said «as long as you are mine».",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p567",
+     "excerpt_ar": "لأن قرينة الحال تنقل حكم الكلام إلى نفسها، وإنما يملك منع الزوجة والعبد مع ولايته عليهما، فكأنه قال: ما دمتما في ملكي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for «لا يحنث» when the slave is freed or the wife divorced and they go out without leave, which is position 0 (the oath dissolves). A rationale from the indication of the circumstance, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The Lawgiver's general word spoken for a specific cause is taken by the generality of the word. The swearer's oath is treated the same way.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p567",
+     "excerpt_ar": "ووجه ذلك أن لفظ الشارع إذا كان عاما، لسبب خاص، وجب الأخذ بعموم اللفظ دون خصوص السبب، كذلك يمين الحالف",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's «ووجه ذلك» for the riwāya that oaths are carried on their generality when there is no intention. al-Qāḍī's wife and slave case is set against it in the next breath, so it is the proof for position 1 (no dissolution) on these facts. The aṣl is the Lawgiver's speech, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Mālik's rationale on the cognate case «طلق نساءك» – «نسائي طوالق»: a general address is confined to its specific cause, and the cause was a request about wives other than the asker.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p418",
+     "excerpt_ar": "وحكي عن مالك، أن السائلة لا تطلق في هذه الصورة؛ لأن الخطاب العام يقصر على سببه الخاص، وسببه سؤال طلاق من سواها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A non-Ḥanbalī proof for the same ruling as position 0 (the asking wife is not divorced). It is on a cognate case, where she asks about other wives and he answers with a general word. No Ḥanbalī source here argues Ibn ʿAqīl's derived riwāya on the exact facts. A rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Aḥmad's naṣṣ that she is divorced with the others, taking the broader of the word and the cause.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p087",
+     "excerpt_ar": "تزوجت علي؟ فقال: كل امرأة لي طالق، فإنها تطلق معهم، نص عليه، أخذا بالأعم من لفظ وسبب",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ on the exact facts gives the ruling of position 1 with its rationale: the general word covers her, and the cause does not cut it down. A rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Acting on the generality of the word is better than the specificity of the cause, because the word is the indicant of the ruling. It is followed both when it is specific and when it is general.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p418",
+     "excerpt_ar": "والعمل بعموم اللفظ أولى من خصوص السبب؛ لأن دليل الحكم هو اللفظ، فيجب اتباعه، والعمل بمقتضاه في خصوصه وعمومه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's «ولنا» against Mālik on the cognate «طلق نساءك» case: the asker is divorced with the rest. That is the ruling of position 1 on a closely parallel set of facts. A rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

@@ -1,0 +1,502 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b16: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f001",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: milk poured into much water that does not alter it is not \"mixed milk\" and yields no nourishment (no growing of flesh, no strengthening of bone), which is the ground of the nursing prohibition.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p175",
+     "excerpt_ar": "فأما إن صب في ماء كثير لم يتغير به، لم يثبت به التحريم؛ لأن هذا ليس بلبن مشوب، ولا يحصل به التغذي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given by Ibn Qudāma for exactly the consumed case (milk lost in much water), the side the author of al-Mughnī takes. A «لأن…» rationale built on the ʿilla of the prohibition (nourishment): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the consumed milk is neither nursing nor in its meaning, so the ruling of nursing does not attach to it.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p175",
+     "excerpt_ar": "ولنا، أن هذا ليس برضاع، ولا في معناه، فوجب أن لا يثبت حكمه فيه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's «ولنا» answer to al-Qāḍī on the same facts. It denies that the farʿ shares the aṣl's meaning: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: the parts of the milk have reached the child's stomach, so it resembles milk mixed in whose colour still shows (aṣl), which prohibits.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p175",
+     "excerpt_ar": "وحكي عن القاضي، أن التحريم يثبت به. وهو قول الشافعي؛ لأن أجزاء اللبن حصلت في بطنه، فأشبه ما لو كان لونه ظاهرا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Reported for al-Qāḍī (and al-Shāfiʿī) on this very case. «فأشبه…»: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: once the intoxicant is consumed in the water it has not taken the name \"water\" from it, so he has drunk water, not khamr.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p118",
+     "excerpt_ar": "فاستهلك) المسكر (فيه) أي الماء (ثم شربه) لم يحد لأنه باستهلاكه في الماء لم يسلب اسم الماء عنه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Al-Buhūtī's reason for no ḥadd on exactly these facts (mixed, consumed, then drunk). A stated rationale about the name: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same rationale: the consumed intoxicant did not remove the name of water from the water.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p361",
+     "excerpt_ar": "فإن استهلك في الماء فلا حد لأنه لم يسلب عن الماء اسمه",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā on the consumed case. «لأنه…»: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Takhrīj by a fortiori: Aḥmad made the owner a partner when mixed with another kind; that is a tanbīh that mixing with its own kind is all the more a partnership (he receives like it from it).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p214",
+     "excerpt_ar": "لأنه نص على أنه يكون شريكا به إذا خلطه بغير الجنس، فيكون تنبيها على ما إذا خلطه بجنسه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Ḥāmid's ground for the same-kind case (zayt with zayt), the manṣūṣ side. An inference from a parallel ruling: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the usurper can return part of the owner's own property with the like for the rest, so the claim does not shift wholly to a substitute; the mixed oil is not treated as destroyed.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p214",
+     "excerpt_ar": "ولنا، أنه قدر على دفع بعض ماله إليه، مع رد المثل في الباقي، فلم ينتقل إلى المثل في الجميع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's «ولنا» against al-Qāḍī on the same-kind mixture, supporting that the owner keeps a share in the mixture. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: mixing made returning the very property impossible, so it resembles destruction (aṣl): he owes the like from wherever he wishes.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p214",
+     "excerpt_ar": "لأنه تعذر عليه رد عين ماله بالخلط، فأشبه ما لو تلف؛ لأنه لا يتميز له شيء من ماله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Qāḍī's «قياس المذهب» for the same-kind mixture, i.e. consumption. «فأشبه…»: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: by mixing it became consumed, as when a buyer mixes bought oil with his own and goes bankrupt: the seller is only one of the creditors.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p214",
+     "excerpt_ar": "لأنه صار بالخلط مستهلكا، وكذلك لو اشترى زيتا فخلطه بزيته، ثم أفلس، صار البائع كبعض الغرماء",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Qāḍī again, given for the better/worse/other-kind mixture but resting on the same claim (mixing = consumption) that decides the same-kind case. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the bequeathed measure was an undivided share of the stock and stays an undivided share after mixing, so the bequest stands.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p189",
+     "excerpt_ar": "لم يكن رجوعا، سواء خلطها بمثلها، أو بخير منها، أو دونها؛ لأنه كان مشاعا. وبقي مشاعا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī on a bequest of a measure from a heap then mixed: no revocation. Same structure as a raṭl of a specific oil. «لأنه…»: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same rationale: the qafīz was undivided and remains undivided.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p350",
+     "excerpt_ar": "لأن القفيز كان مشاعا وبقي على إشاعته",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's reason for the madhhab ruling on the parallel case. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: he has eaten barley; like one who swore not to eat ripe dates and ate a half-ripe date (aṣl): he breaks the oath.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p600",
+     "excerpt_ar": "فأكل حنطة فيها حبات شعير، حنث؛ لأنه أكل شعيرا فحنث، كما لو حلف لا يأكل رطبا، فأكل منصفا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's first statement for the grains-in-grain case (with the grains of the sworn-off kind), the position that the oath is broken. «كما لو…»: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same analogy in al-Kāfī for the exact form of the case (barley with grains of wheat): he ate wheat, like the half-ripe date.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p202",
+     "excerpt_ar": "أحدهما: يحنث؛ لأنه أكل حنطة، فأشبه ما لو حلف لا يأكل رطبا، فأكل منصفا",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "One of the two wujūh al-Kāfī lists, for breaking the oath. «فأشبه…»: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: the few grains are consumed in the other grain, like clarified butter in khabīṣ whose taste does not show (aṣl), which does not break an oath against butter.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p600",
+     "excerpt_ar": "ويحتمل أن لا يحنث؛ لأنه يستهلك في الحنطة، فأشبه السمن في الخبيص",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's iḥtimāl for not breaking the oath on these facts. «فأشبه…»: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Same analogy, preferred by al-Sharḥ: consumed in the wheat, like butter in khabīṣ with no taste of it.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v11:p266",
+     "excerpt_ar": "والأولى أن لا يحنث لأنه مستهلك في الحنطة أشبه السمن في الخبيص الذي لا يظهر طعمه",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Shams al-Dīn prefers this side («والأولى») against «غير الخرقي». qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: the consumed thing does not carry the name of what he swore about, and what is consumed in a thing is as if absent.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p265",
+     "excerpt_ar": "لأن المستهلك لا يقع عليه اسم الذي حلف عليه فلم يحنث بأكل المستهلك فيه ولأن المستهلك في الشيء يصير وجوده كعدمه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's reasons for the madhhab ruling (no breaking) on this case. Stated rationales: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: an animal killed to repel its harm, so not compensated, like the attacking human (aṣl).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p438",
+     "excerpt_ar": "ولنا، أنه حيوان قتله لدفع شره، فلم يضمنه، كالآدمي الصائل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's «ولنا» for no liability when the game attacks and can be repelled only by killing. «كالآدمي…»: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: by attacking, the game has joined the harmful animals by nature, so it is like the biting dog that the muḥrim may kill without penalty.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p438",
+     "excerpt_ar": "ولأنه التحق بالمؤذيات طبعا، فصار كالكلب العقور",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second reason al-Mughnī gives for the same position. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: he killed it for his own need, like killing game to eat in famine (aṣl), which is compensated.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p438",
+     "excerpt_ar": "وقال أبو بكر: عليه الجزاء. وهو قول أبي حنيفة؛ لأنه قتله لحاجة نفسه، أشبه قتله لحاجته إلى أكله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Reported for Abū Bakr (and Abū Ḥanīfa) on these facts. «أشبه…»: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: thorns harm by their nature, so they resemble predatory animals, which may be killed in the ḥaram.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p321",
+     "excerpt_ar": "وقال القاضي، وأبو الخطاب: لا يحرم. وروي ذلك عن عطاء، ومجاهد، وعمرو بن دينار، والشافعي؛ لأنه يؤذي بطبعه، فأشبه السباع من الحيوان",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for al-Qāḍī and Abū al-Khaṭṭāb (and Successors, al-Shāfiʿī) that cutting harmful thorns is not forbidden. «فأشبه…»: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ḥadīth (marfūʿ, āḥād): «لا يعضد شجرها», and in Abū Hurayra's ḥadīth «لا يختلى شوكها»; al-Mughnī calls the latter explicit.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p321",
+     "excerpt_ar": "ولنا، قول النبي - صلى الله عليه وسلم -: «لا يعضد شجرها» . وفي حديث أبي هريرة: «لا يختلى شوكها» . وهذا صريح",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's «ولنا» for the prohibition of cutting thorns. A connected marfūʿ ḥadīth (the Ibn ʿAbbās version is given as muttafaq ʿalayh at v03:p316): zanni."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Indication of the ḥadīth: most of the ḥaram's trees are thorny, so the Prophet's ban on cutting its trees applies in its apparent sense to thorns.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p321",
+     "excerpt_ar": "ولأن الغالب في شجر الحرم الشوك، فلما حرم النبي - صلى الله عليه وسلم - قطع شجرها، والشوك غالبه، كان ظاهرا في تحريمه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Reads the general ḥadīth as covering thorns by its apparent sense (ẓāhir), so zanni rather than a separate qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q036.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: a binding contract concluded by right of guardianship does not lapse when the boy comes of age, as when the guardian sold his house or married him off (aṣl).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p348",
+     "excerpt_ar": "ليس له فسخ الإجارة؛ لأنه عقد لازم، عقده بحق الولاية، فلم يبطل بالبلوغ، كما لو باع داره أو زوجه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū al-Khaṭṭāb's position in al-Mughnī on exactly these facts (lease of the boy or his property, majority mid-term). «كما لو…»: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same rationale: the guardian concluded a binding contract by right of his authority, so it does not lapse when his authority ends.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p255",
+     "excerpt_ar": "وأما في الولي فلأنه عقد عقدا لازما بحق الولاية فلا يبطل بزوال ولايته",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā for the madhhab (the lease is not dissolved). qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy to the waqf lease (aṣl): after the authority ends the benefits belong to one over whom the lessor has neither ownership nor authority, so the lease lapses for the remaining term.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p348",
+     "excerpt_ar": "ويحتمل أن تبطل الإجارة فيما بعد زوال الولاية، على ما ذكرنا في إجارة الوقف",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's iḥtimāl of dissolution, the position the case labels al-Mughnī's wajh, carried from the first-tier waqf lessor who dies. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f009",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the right is established for one of the two lines but which one is unknown, so it is singled out by lot (as for other confused entitled persons).",
+     "ref": "src:openiti-rajab-shamela21730/v01:p237",
+     "excerpt_ar": "فيحتمل أن يقرع ههنا ; لأن الحق ثبت لإحدى الجهتين ولم يعلم عينها",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Taqī al-Dīn's iḥtimāl as Ibn Rajab quotes it. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: the two readings are equal, so the yield is divided between them, as when two bodies of evidence conflict (aṣl).",
+     "ref": "src:openiti-rajab-shamela21730/v01:p237",
+     "excerpt_ar": "قال ابن عقيل في فنونه: يكون بينهما عندنا لتساويهما كما في تعارض البينات",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn ʿAqīl's ground for division. Taqī al-Dīn answers that this is a single wavering bayyina, and that division on conflict is a weaker riwāya; that is a rebuttal, not a proof for the lot. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale from custom and wording: someone endowing on his sons' children does not usually limit it to males, and had he meant a daughter's children he would have named her. So the sons' sons are preferred.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p237",
+     "excerpt_ar": "ويحتمل أن يرجح بنو البنين ; لأن العادة أن الإنسان إذا وقف على ولد بنيه لا يخص منهما الذكور",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Taqī al-Dīn's second iḥtimāl, which he calls nearer to right; it sits in position 1 with Ibn ʿAqīl because both deny the lot. A stated rationale from custom: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the owned slave is mixed up with another's, so he is singled out by lot and then sold.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p350",
+     "excerpt_ar": "يحتمل أن يقرع بينهما فيعين بالقرعة ثم يبيعه لأنه قد اختلط المستحق بغيره",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Al-Qāḍī's first iḥtimāl (Khilāf) as Ibn Rajab reports it. «لأنه…»: qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Analogy: they sell both slaves and divide the price by their values, as when one man's oil mixes with another's of different quality (aṣl).",
+     "ref": "src:openiti-rajab-shamela21730/v01:p350",
+     "excerpt_ar": "إنهما يبيعان العبدين ويقتسمان الثمن على قيمة العبدين كما قلنا إذا اختلط زيته بزيت الآخر",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Al-Qāḍī's preferred answer («وأجود ما يقال فيها»). «كما قلنا…»: qiyas. The second iḥtimāl (agreement) is reported with no proof."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f008",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the two are equal in arriving first, and the lot is what distinguishes between equals.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p109",
+     "excerpt_ar": "أقرع بينهما) على المذهب لأنهما استويا في السبق، والقرعة مميزة",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Al-Mubdiʿ for the madhhab on two arriving together at a public sitting place. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same rationale, extended to the inn, ribāṭ, madrasa and khānqāh.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p196",
+     "excerpt_ar": "لأنهم استووا في السبق والقرعة مميزة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf on exactly the listed places. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the ruler knows better where the public interest lies, so he prefers one of them.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p109",
+     "excerpt_ar": "وقيل: يقدم الإمام من يرى منهما) لأنه أعلم بالمصلحة في ذلك",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Al-Mubdiʿ's reason for the wajh that the ruler chooses. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f009",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: neither has an advantage over the other, so the lot decides.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p425",
+     "excerpt_ar": "وإن استبق إليه اثنان، وضاق المكان عنهما، أقرع بينهما؛ لأنه لا مزية لأحدهما على صاحبه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's chosen answer for two reaching a public mine that fits one. qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Same rationale in al-Kāfī: no advantage of one over the other.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p246",
+     "excerpt_ar": "فإن سبق إليه اثنان يضيق المكان عنهما، أقرع بينهما؛ لأنه لا مزية لأحدهما على صاحبه",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Al-Kāfī gives this for the lot in general, before listing al-Qāḍī's split by trade and need; it is the reason given for the lot ruling, which the need-case iḥtimāl shares. qiyas."
+    },
+    {
+     "position": 3,
+     "tier": "qiyas",
+     "dalil": "Analogy: what is taken can be divided and they are equal in it, so it is divided, as when two claim a thing held by both (aṣl).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p425",
+     "excerpt_ar": "ويحتمل أن يقسم بينهما؛ لأنه يمكن قسمته، وقد تساويا فيه، فيقسم بينهما، كما لو تداعيا عينا في أيديهما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's own iḥtimāl of division; it counts for the divide ruling that al-Qāḍī lists in the need case. qiyas. No source gives a proof for rotation (muhāyaʾa) or for the neediest first."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f011",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: both equal in what entitles to delivery (the description), so they share the find, as when the thing is in both their hands (aṣl).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p085",
+     "excerpt_ar": "وقال أبو الخطاب: تقسم بينهما؛ لأنهما تساويا فيما يستحق به الدفع، فتساويا فيها، كما لو كانت في أيديهما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū al-Khaṭṭāb's ground for division of a find described by two. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: two claim a thing in a third party's hand and are equal in evidence or its absence, so it goes to the one the lot picks, as with a deposit the depositary cannot assign (aṣl).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p085",
+     "excerpt_ar": "ولأنهما تداعيا عينا في يد غيرهما، وتساويا في البينة، أو في عدمها، فتكون لمن وقعت له القرعة، كما لو ادعيا وديعة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's reason for the lot (al-Qāḍī), which he calls sounder and closer to the madhhab's uṣūl; he also distinguishes Abū al-Khaṭṭāb's aṣl (a thing in both hands, where each hand covers half). qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f012",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: specifying the legatee is a condition; «my neighbour so-and-so» with a shared name covers both bearers, so the legatee is left vague and the bequest fails, unless a contextual sign shows he meant one in particular.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p358",
+     "excerpt_ar": "فقد أبهم الموصى له وكذا الجار والقريب لوقوعه على كل من المسميين (ما لم تكن قرينة تدل على أنه أراد معينا",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf for the madhhab (void) on exactly the shared-name neighbour. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same rationale: the legatee is vague, and specifying him is a condition.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p471",
+     "excerpt_ar": "لم يصح) لإبهام الموصى له. وتعيينه شرط",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā on the same case. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: where he meant one particular neighbour and we cannot tell which, the entitled one is drawn by lot, as with the divorced wife or the sold item confused with others (aṣl).",
+     "ref": "src:openiti-rajab-shamela21730/v01:p235",
+     "excerpt_ar": "ويخرج المستحق منهما بالقرعة على قياس المذهب في اشتباه المستحق للمال بغيره من الزوجة المطلقة، والسلعة المبيعة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's qiyās al-madhhab for validity with a lot, the reading's position; he adds Aḥmad's naṣṣ (Ṣāliḥ's riwāya on three slaves named Faraj) as showing validity despite the shared name, which is an imām's text, not a proof. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f013",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: he is owed one unspecified slave and none is more entitled than another, so the lot decides, as when one of them is manumitted unspecified (aṣl).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p253",
+     "excerpt_ar": "ولكن يعطى واحدا بالقرعة؛ لأنه يستحق واحدا غير معين، فليس واحد بأولى من واحد، فوجب المصير إلى القرعة، كما لو أعتق واحدا منهم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī for al-Khiraqī's position on a bequest of one of my slaves. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: whatever slave the heirs give falls under the name \"slave\", so it suffices, as if he had bequeathed a slave without referring to his slaves.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p253",
+     "excerpt_ar": "يعطيه الورثة من عبيده ما شاءوا، من صحيح أو معيب جيد أو رديء؛ لأنه يتناوله اسم العبد فأجزأ",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's statement of the Ibn Manṣūr riwāya, the manṣūṣ. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Taking the least: the lowest the name covers is the certain part; more is not established, so the heirs owe no more.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p351",
+     "excerpt_ar": "أن له أخسهم يعني أدنى ما يقع عليه الاسم ; لأنه المتيقن",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's ground for the manṣūṣ. Holding to the certain minimum keeps the heirs free of the doubtful excess (barāʾa), so istishab; it could be read as a bare rationale (qiyas)."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Distinction from al-Khiraqī's aṣl: in manumission the right is the slaves', who are equal, so the lot picks one; here the right is the legatee's, who is owed only what the name covers.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p351",
+     "excerpt_ar": "وإنما أقرعنا في العتق لأن العتق حق للعبيد وقد تساووا في استحقاقه فيميز بالقرعة، وهنا الحق للموصى له",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's farq against the analogy to manumission. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}
