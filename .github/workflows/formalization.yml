@@ -13,8 +13,8 @@ jobs:
   corpus:
     name: Corpus pipeline (pytest + schema validation + vectors)
     runs-on: ubuntu-latest
-    # A cold witness cache scrapes al-Albānī's Irwāʾ from Shamela page by page (~40 min); warm runs take minutes.
-    timeout-minutes: 75
+    # A cold witness cache scrapes al-Albānī's Irwāʾ from Shamela page by page (~55 min); warm runs take minutes.
+    timeout-minutes: 120
     env:
       # The tests these name fail where they would otherwise skip (pipeline/tests/conftest.py).
       USUL_REQUIRE: swipl,islamqa
