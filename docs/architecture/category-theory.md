@@ -88,13 +88,30 @@ Example (`UsulTest/Cat.lean`, Ibn Rajab Q2 farʿ 2): al-Mughnī's wajh in janāb
 the minor ḥadath rule differently in *different* contexts, and they glue. Adding the other janāba
 wajh produces exactly one disagreement, at janāba, and it is emitted as an obstruction record.
 
+### Every genuine ikhtilāf is an obstruction (M10 exit)
+
+A takhrīj case's reported positions all speak to one situation, the farʿ. `Sheaf.positions` makes
+each position a patch over that one point, and `positions_glue_iff` proves that they glue iff
+they all agree. A `genuine_ikhtilaf` case is therefore exactly a case with an obstruction.
+
+`python -m usul_corpus sheaf` (part of `make generated`) emits this for the whole bank:
+
+* `corpus/sheaf/obstructions.json`: for each `genuine_ikhtilaf` case, one record per unordered
+  pair of positions with different rulings. All 488 cases are obstructed, with 559 records.
+* `formal/lean/UsulTest/Obstructions.lean`: one `#guard` per case. It checks that the kernel's
+  `obstructions` returns exactly twice the recorded pairs (ordered pairs). The kernel is the
+  authority over the mirror, and a wrong count fails the build.
+
+`pipeline/tests/test_sheaf.py` pins the record shape and checks that both outputs are generated.
+
 For set-valued verdicts the obstruction to gluing is a pairwise disagreement: a Čech 1-cochain
 that does not vanish. The layer does not claim a cohomology group.
 
 ## Open
 
-* **M10 exit:** emit obstruction records from the pipeline for every M4/M8 `genuine_ikhtilaf`
-  case. Each such record already has the shape of a two-patch cover over one situation.
+* **M10, beyond one point:** covers over several situations, such as context separations like
+  the Q2 farʿ 2 vector, need the facts that separate the contexts. The bank records those per
+  case, not per position.
 * **M9 exit:** Haskell laws for L-QIY-1 in `semantic-categorical-oracle`.
 * **M11:** institutions across carriers (Lean, TLA+, Haskell) with signature morphisms.
   `Basic` is the place for them.

@@ -393,6 +393,17 @@ def cmd_reconcile(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_sheaf(_: argparse.Namespace) -> int:
+    """M10: emit an obstruction record for every genuine ikhtilāf, and its Lean guards."""
+    from . import sheaf, takhrij
+    cases = takhrij.load(CORPUS)
+    rep = sheaf.render(cases)
+    _dump(CORPUS / sheaf.OUTPUT, rep)
+    (SIGNATURE_LEAN.parent / sheaf.LEAN).write_text(sheaf.lean_file(cases), encoding="utf-8")
+    print(json.dumps(rep["summary"]))
+    return 0
+
+
 def cmd_worklist(args: argparse.Namespace) -> int:
     """Regenerate (or ``--check``) every obligation inventory: Ibn Rajab's M8 worklist with its scope
     paragraphs, and the unit inventory of the line-segmented witnesses."""
@@ -793,6 +804,7 @@ def parser() -> argparse.ArgumentParser:
     sub.add_parser("validate").set_defaults(run=cmd_validate)
     sub.add_parser("signature").set_defaults(run=cmd_signature)
     sub.add_parser("takhrij").set_defaults(run=cmd_takhrij)
+    sub.add_parser("sheaf", help="M10: obstruction records for every genuine ikhtilaf").set_defaults(run=cmd_sheaf)
     rc = sub.add_parser("reconcile", help="resolve the bank's apparent contradictions by its own taʿāruḍ procedure")
     rc.add_argument("--draft", action="store_true", help="print draft ledger entries for unledgered contradictions")
     rc.set_defaults(run=cmd_reconcile)

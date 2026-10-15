@@ -147,4 +147,20 @@ theorem glues_iff_obstructions_nil [DecidableEq β] {xs : List X} {ps : List (Pa
   · intro h p q x hp hq
     exact h p.1 p.2 q.1 q.2 x hp.1 hp.2 hq.2
 
+/-! ## A takhrīj case as a cover
+
+A case's reported positions all speak to the same situation: the farʿ. Each is a patch over the
+one-point site, ruling as that position rules. -/
+
+/-- The positions of one case, one patch each, named by their ruling. -/
+def positions [ToString β] (rs : List β) : List (Patch Unit β) :=
+  rs.map fun r => ⟨toString r, fun _ => true, fun _ => r⟩
+
+/-- A case's positions glue iff they agree: ikhtilāf is exactly an obstruction on the farʿ. -/
+theorem positions_glue_iff [ToString β] [DecidableEq β] {rs : List β} :
+    obstructions [()] (positions rs) = [] ↔ ∀ a ∈ rs, ∀ b ∈ rs, a = b := by
+  rw [obstructions_nil_iff]
+  simp only [positions, List.mem_map, List.mem_singleton, forall_exists_index, and_imp,
+    forall_apply_eq_imp_iff₂, forall_const]
+
 end Usul.Cat.Sheaf
