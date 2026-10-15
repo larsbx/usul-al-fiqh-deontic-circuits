@@ -3,7 +3,7 @@
 This is the executable form of milestones M0–M2 from [`../roadmap-hanbali-usul-formalization.md`](../roadmap-hanbali-usul-formalization.md), with first slices of M3, M5 and M6.
 
 ```text
-corpus/registry.json ──fetch──▶ .cache/corpus/*.txt (pinned, sha256 in corpus/lock.json; never committed)
+corpus/registry.json ──fetch──▶ .cache/corpus/*.txt (pinned, sha256 in corpus/lock.json; text witnesses also in corpus/texts)
         │                              │
         │                       build (segment)
         │                              ▼
@@ -47,7 +47,7 @@ Each witness is pinned: the OpenITI ones by commit SHA, the others by Shamela bo
 | 23 classical works on qiyās (8 Ḥanbalī, 13 other madhhabs, Ibn Ḥazm against) | OpenITI, pinned commits | located and fetched; see [`qiyas.md`](qiyas.md#sources) |
 | 49 fatāwā, masāʾil and aḥkām collections cited by Ibn Bāz, Ibn ʿUthaymīn, al-Albānī and al-Saʿdī (52 with three already registered), plus 8 of their own collections as citers (9 with *al-Sharḥ al-Mumtiʿ*) | OpenITI (pinned commits) and Shamela | located and fetched; titles and authors counted; see [`reception.md`](reception.md); mentions labelled for a classifier, see [`mentions.md`](mentions.md) |
 
-**Rights policy.** Full texts are fetched into `.cache/`. The 91 public-domain text witnesses (works with `rights: public_domain_text`, all OpenITI) are also committed under [`corpus/texts`](../../corpus/texts/README.md) via Git LFS, byte-identical to their pinned source. Modern texts are never committed, except those cleared for non-commercial study (`rights: noncommercial_text`; so far *al-Ghurar al-Naqiyya*), which are committed the same way and must not be reproduced commercially. Committed records carry excerpts of at most 400 characters for pre-modern and cleared texts and at most 160 characters for other modern authors (`records.EXCERPT_LEN`).
+**Rights policy.** Full texts are fetched into `.cache/`. Text witnesses of public-domain works (`rights: public_domain_text`, 91) and of modern works cleared for non-commercial study (`rights: noncommercial_text`) are also committed under [`corpus/texts`](../../corpus/texts/README.md) via Git LFS, byte-identical to their pinned source; cleared texts must not be reproduced commercially, and pdf and doc witnesses are not committed. Committed records carry excerpts of at most 400 characters for pre-modern texts and at most 160 characters for modern authors (`records.EXCERPT_LEN`).
 
 ## 2. Rule counts checked against pinned editions (M0 exit)
 

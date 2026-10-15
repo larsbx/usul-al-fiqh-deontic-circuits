@@ -22,9 +22,10 @@ PUBLISHABLE = frozenset({"public_domain_text", "noncommercial_text"})
 
 
 def publishable(registry: dict) -> tuple[str, ...]:
-    """Ids of the text witnesses of publishable works, each once, in registry order."""
+    """Ids of the text witnesses of publishable works, each once, in registry order. A pdf or doc
+    witness is pinned as its binary, so only plain text is staged."""
     return tuple(dict.fromkeys(x["id"] for w in registry["works"] if w["rights"] in PUBLISHABLE
-                               for x in w["witnesses"] if x.get("format") != "pdf"))
+                               for x in w["witnesses"] if x.get("format", "text") == "text"))
 
 
 def _sha256(p: Path) -> str:

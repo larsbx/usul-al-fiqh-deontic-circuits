@@ -11,7 +11,8 @@ REGISTRY = {"works": [
     {"id": "a.scan", "rights": "public_domain_text", "witnesses": [{"id": "w-pdf", "kind": "archive", "format": "pdf"}]},
     {"id": "b.modern", "rights": "modern_cache_only", "witnesses": [{"id": "w-new", "kind": "shamela"}]},
     {"id": "a.part", "rights": "public_domain_text", "witnesses": [{"id": "w-old", "kind": "openiti"}]},
-    {"id": "c.study", "rights": "noncommercial_text", "witnesses": [{"id": "w-nc", "kind": "openiti"}]},
+    {"id": "c.study", "rights": "noncommercial_text", "witnesses": [{"id": "w-nc", "kind": "openiti"},
+                                                                    {"id": "w-doc", "kind": "url", "format": "doc"}]},
 ]}
 
 
@@ -19,7 +20,8 @@ def _lock(**texts: bytes) -> dict:
     return {k: {"witness": k, "bytes": len(v), "sha256": hashlib.sha256(v).hexdigest()} for k, v in texts.items()}
 
 
-def test_only_public_domain_and_noncommercial_text_witnesses_are_publishable_once_each():
+def test_only_text_witnesses_of_public_domain_and_noncommercial_works_are_publishable_once_each():
+    """A pdf or doc witness is pinned as its binary, not as text, so it is never staged."""
     assert publishable(REGISTRY) == ("w-old", "w-nc")
 
 

@@ -1,7 +1,7 @@
 {
   "registry_version": "1",
   "policy": {
-    "full_text": "Full texts are fetched into .cache/corpus. Public-domain text witnesses (works with rights public_domain_text) are also committed, byte-identical to their pinned source, under corpus/texts via Git LFS; modern texts are never committed, except those cleared for non-commercial study (rights noncommercial_text), which are committed the same way. Committed records carry short excerpts with edition-qualified locators.",
+    "full_text": "Full texts are fetched into .cache/corpus. Text witnesses of public-domain works (rights public_domain_text) and of modern works cleared for non-commercial study (rights noncommercial_text) are also committed, byte-identical to their pinned source, under corpus/texts via Git LFS; pdf and doc witnesses are not. Cleared texts must not be reproduced commercially. Committed records carry short excerpts with edition-qualified locators.",
     "authority": "Records are candidates until reviewed. Nothing here is a fatwā."
   },
   "works": [
@@ -262,7 +262,7 @@
         "signature"
       ],
       "kernel": true,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "shamela-9942",
@@ -371,7 +371,7 @@
         "axioms"
       ],
       "kernel": true,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "archive-pdf1995",
@@ -431,7 +431,7 @@
         "axioms"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "archive-manzuma-tess",
@@ -559,7 +559,7 @@
         "axioms"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "archive-tariq-tess",
@@ -638,7 +638,7 @@
         "axioms"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "note": "Addition: al-Saʿdī's own compact uṣūl epitome; cross-check for the signature layer.",
       "witnesses": [
         {
@@ -742,7 +742,7 @@
         "tests"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "shamela-10649",
@@ -770,7 +770,7 @@
         "dialectic"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "shamela-266",
@@ -793,7 +793,7 @@
         "dialectic"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "shamela-282",
@@ -847,7 +847,7 @@
         "aqida"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "shamela-8874",
@@ -894,7 +894,7 @@
         "aqida"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "shamela-11100",
@@ -1145,7 +1145,7 @@
         "dialectic"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "note": "qiyās source (hanbali usul, Ḥanbalī); qiyās span: PageV01P300 (al-aṣl al-khāmis: al-qiyās) – PageV01P366 (ijtihād wa-taqlīd begins V01P367)",
       "witnesses": [
         {
@@ -3318,7 +3318,7 @@
         "tests"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "note": "Najdī ajwiba from Muḥammad b. ʿAbd al-Wahhāb onward, compiled by Ibn Qāsim (d. 1392).",
       "witnesses": [
         {
@@ -3358,7 +3358,7 @@
         "tests"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "openiti-muhammadibnibrahim-fatawa-shamela8476",
@@ -3399,7 +3399,7 @@
         "tests"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "note": "Witness is al-Majmūʿa al-Ūlā only. Committee fatāwā co-signed by Ibn Bāz; registered as cited, not as his citer.",
       "witnesses": [
         {
@@ -3439,7 +3439,7 @@
         "tests"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "openiti-ibnbaz-majmufatawa-shamela21537",
@@ -3475,7 +3475,7 @@
         "tests"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "openiti-ibnbaz-nuraladarb-shamela107",
@@ -3511,7 +3511,7 @@
         "tests"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "openiti-ibnuthaymin-majmufatawa-shamela12293",
@@ -3547,7 +3547,7 @@
         "tests"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "openiti-ibnuthaymin-nuraladarb-shamela2300",
@@ -3584,7 +3584,7 @@
         "tests"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "track": "albani_hadith",
       "note": "base text is Ibn Ḍūyān's Ḥanbalī Manār al-Sabīl: the join with the uṣūl track (H8)",
       "witnesses": [
@@ -3616,7 +3616,7 @@
       ],
       "kernel": false,
       "track": "albani_hadith",
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "openiti-albani-sdtirmidhi-shamela782",
@@ -3642,7 +3642,7 @@
         "tests"
       ],
       "kernel": true,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "track": "albani_hadith",
       "witnesses": [
         {
@@ -3672,7 +3672,7 @@
         "tests"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "shamela-1602",
@@ -3700,7 +3700,7 @@
         "tests"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "witnesses": [
         {
           "id": "shamela-9945",
@@ -3866,7 +3866,7 @@
         "signature"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "track": "albani_hadith",
       "note": "Ibn Kathīr's Ikhtiṣār with Shākir's sharḥ; the edition carrying al-Albānī's taʿlīqāt is not yet located",
       "witnesses": [
@@ -3956,7 +3956,7 @@
         "axioms"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "track": "albani_hadith",
       "witnesses": [
         {
@@ -3988,7 +3988,7 @@
         "tests"
       ],
       "kernel": true,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "track": "albani_hadith",
       "witnesses": [
         {
@@ -4013,7 +4013,7 @@
         "tests"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "track": "albani_hadith",
       "witnesses": [
         {
@@ -4038,7 +4038,7 @@
         "tests"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "track": "albani_hadith",
       "witnesses": [
         {
@@ -4063,7 +4063,7 @@
         "tests"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "track": "albani_hadith",
       "witnesses": [
         {
@@ -4088,7 +4088,7 @@
         "inference"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "track": "albani_hadith",
       "witnesses": [
         {
@@ -4112,7 +4112,7 @@
         "inference"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "track": "albani_hadith",
       "witnesses": [
         {
@@ -4136,7 +4136,7 @@
         "inference"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "track": "albani_hadith",
       "witnesses": [
         {
@@ -4188,7 +4188,7 @@
         "inference"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "track": "albani_hadith",
       "witnesses": [
         {
@@ -4240,7 +4240,7 @@
         "aqida"
       ],
       "kernel": false,
-      "rights": "modern_cache_only",
+      "rights": "noncommercial_text",
       "track": "albani_hadith",
       "witnesses": [
         {
