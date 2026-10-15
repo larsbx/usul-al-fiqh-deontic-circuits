@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "candidate",
-  "provenance": "The 156 cases of fold 0 of the routing index's held-out split (corpus/routing/index.json; Ibn Rajab and Ibn al-Laḥḥām furūʿ) typed into Usul.Typing situations, LLM-assisted by four agents working blind: they saw each farʿ's committed text under an opaque id (record ids name the qāʿida) and a field catalogue generated from the Lean export, never the qāʿida, encoder or label. Quotes are verbatim, at most 160 characters. The 17 fold-0 cases of the RajabA13–A16 shards (qawāʿid 119–130), added at the 2026-10-14 merge, were typed by one agent that had seen their annotations, so not blind. Not human-reviewed.",
+  "provenance": "The 157 cases of fold 0 of the routing index's held-out split (corpus/routing/index.json; Ibn Rajab and Ibn al-Laḥḥām furūʿ) typed into Usul.Typing situations, LLM-assisted by four agents working blind: they saw each farʿ's committed text under an opaque id (record ids name the qāʿida) and a field catalogue generated from the Lean export, never the qāʿida, encoder or label. Quotes are verbatim, at most 160 characters. The 17 fold-0 cases of the RajabA13–A16 shards (qawāʿid 119–130), added at the 2026-10-14 merge, were typed by one agent that had seen their annotations, so not blind; likewise q128.f000, recovered and annotated at PR-30. Not human-reviewed.",
   "answers": [
     {
       "answer": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f001",
@@ -2240,6 +2240,22 @@
           },
           "evidence": {
             "excepts_from_text": "إن لبست ثوبا فأنت طالق، وقال أردت أحمر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f000",
+      "situations": [
+        {
+          "label": "a dhimmī wounded who becomes Muslim and dies of the wound",
+          "facts": {
+            "guaranteed_at_injury": true,
+            "guaranteed_at_spread": true
+          },
+          "evidence": {
+            "guaranteed_at_injury": "لو جرح ذميا",
+            "guaranteed_at_spread": "فأسلم ثم مات"
           }
         }
       ]

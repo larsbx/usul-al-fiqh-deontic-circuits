@@ -40,7 +40,7 @@ from .texts import publishable, restore, stage
 from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
 from .openiti import parse_markdown
-from .records import hadd_record, qaida_records, sharh_record, unit_tags
+from .records import hadd_record, qaida_records, sharh_record, unit_tags, with_recovered
 from .units import UNIT_SEGMENTERS
 from .segment import (
     audit_numbering,
@@ -185,6 +185,8 @@ def _segment(work: dict, w: dict, text: str) -> tuple[list[dict], tuple | None]:
         return [hadd_record(work, witness, i, h) for i, h in enumerate(hudud, 1)], None
     units = SEGMENTERS[seg["kind"]](text, seg)
     records = [r for t, u in zip(unit_tags(units), units) for r in qaida_records(work, witness, seg["kind"], t, u)]
+    if (opening := CORPUS / "segmentation" / f"{witness}-opening.json").exists():
+        records = with_recovered(records, verified_openings(json.loads(opening.read_text(encoding="utf-8")), witness, text))
     return records, units
 
 
@@ -229,6 +231,26 @@ def merge_audit(previous: dict[str, dict], fresh: dict[str, dict], skipped: dict
     kept = {k: v for k, v in previous.items()
             if k.split("#")[0] in skipped or (k.startswith("consensus:") and k[len("consensus:"):] in works)}
     return dict(sorted(({k: v for k, v in fresh.items() if k not in kept} | kept).items()))
+
+
+def _page(loc: str) -> tuple[int, int]:
+    v, p = loc.split(":")
+    return int(v[1:]), int(p[1:])
+
+
+def verified_openings(receipt: dict, wid: str, text: str) -> list[dict]:
+    """The recovered records of a receipt, each found verbatim (letters) in the witness, ending on or
+    after its qāʿida's page (the locator's anchor, as for every farʿ)."""
+    from .arabic import locate
+    if receipt["status"] != "candidate" or receipt["source"]["witness"] != wid:
+        raise ValueError(f"{wid}: opening receipt is not a candidate receipt for this witness")
+    if hashlib.sha256(text.encode("utf-8")).hexdigest() != receipt["source"]["sha256"]:
+        raise ValueError(f"{wid}: opening receipt pins other bytes")
+    for r in receipt["records"]:
+        found, page = locate(text, r["case_ar"]), r["locator"].split("/")[1].split("#")[0]
+        if found is None or _page(found) < _page(page):
+            raise ValueError(f"{r['id']}: recovered text not in the witness at its qāʿida")
+    return receipt["records"]
 
 
 def cmd_build(_: argparse.Namespace) -> int:

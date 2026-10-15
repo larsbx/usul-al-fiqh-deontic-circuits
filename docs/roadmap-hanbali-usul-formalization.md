@@ -48,14 +48,14 @@ This rejects Standard Deontic Logic (KD) as the core: it has no defeasibility an
 | M11 oracle | started | `semantic-categorical-oracle` `Oracle.Usul.*` advisory laws; three-way agreement on `grounded-v1.json` |
 
 <!-- BEGIN GENERATED M8 SCOPE -->
-**Current M8 inventory (generated).** 1,179 segmented Ibn Rajab furūʿ records = 814 annotated + **365 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 121 are fully annotated and **33 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
+**Current M8 inventory (generated).** 1,189 segmented Ibn Rajab furūʿ records = 822 annotated + **367 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 121 are fully annotated and **33 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
 
 The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
 
 | Current scope (generated) | Cases | Coverage | Madhhab coverage | Encoding errors | Open gaps |
 |---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 0.759 | 0 | 0 |
-| All annotation suites | 881 | 0.951 | 0.707 | 0 | 43 |
+| All annotation suites | 889 | 0.950 | 0.705 | 0 | 44 |
 
 Coverage counts derivability under the candidate encoding. Madhhab coverage uses candidate source attributions; neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->

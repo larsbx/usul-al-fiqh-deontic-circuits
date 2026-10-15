@@ -104,7 +104,7 @@
           "lexical_rank": 4
         },
         {
-          "encoder": "injury_state_measures",
+          "encoder": "unknown_as_nonexistent",
           "settled": null,
           "lexical_rank": 5
         }
@@ -131,12 +131,12 @@
           "lexical_rank": 3
         },
         {
-          "encoder": "hastened_right_forfeited",
+          "encoder": "custom_restricts_general",
           "settled": null,
           "lexical_rank": 4
         },
         {
-          "encoder": "custom_restricts_general",
+          "encoder": "hastened_right_forfeited",
           "settled": null,
           "lexical_rank": 5
         }
@@ -227,12 +227,12 @@
           "lexical_rank": 3
         },
         {
-          "encoder": "shar_specialises_general",
+          "encoder": "needed_item_is_surplus",
           "settled": null,
           "lexical_rank": 4
         },
         {
-          "encoder": "needed_item_is_surplus",
+          "encoder": "shar_specialises_general",
           "settled": null,
           "lexical_rank": 5
         }
@@ -345,7 +345,7 @@
             1,
             1
           ],
-          "lexical_rank": 68
+          "lexical_rank": 69
         },
         {
           "encoder": "needed_item_is_surplus",
@@ -758,7 +758,7 @@
             1,
             2
           ],
-          "lexical_rank": 39
+          "lexical_rank": 40
         },
         {
           "encoder": "tadakhul",
@@ -958,12 +958,12 @@
           "lexical_rank": 3
         },
         {
-          "encoder": "unknown_condition",
+          "encoder": "advanced_worship",
           "settled": null,
           "lexical_rank": 4
         },
         {
-          "encoder": "intention_shapes_wording",
+          "encoder": "unknown_condition",
           "settled": null,
           "lexical_rank": 5
         }
@@ -990,7 +990,7 @@
           "lexical_rank": 3
         },
         {
-          "encoder": "error_actor_liable",
+          "encoder": "custom_restricts_general",
           "settled": null,
           "lexical_rank": 4
         },
@@ -1060,7 +1060,7 @@
             1,
             2
           ],
-          "lexical_rank": 74
+          "lexical_rank": 76
         },
         {
           "encoder": "benefit_then_thing",
@@ -1095,12 +1095,12 @@
           "lexical_rank": 3
         },
         {
-          "encoder": "eating_without_permission",
+          "encoder": "injury_state_measures",
           "settled": null,
           "lexical_rank": 4
         },
         {
-          "encoder": "asl_zahir",
+          "encoder": "eating_without_permission",
           "settled": null,
           "lexical_rank": 5
         }
@@ -1117,17 +1117,17 @@
           "lexical_rank": 1
         },
         {
-          "encoder": "doubled",
+          "encoder": "injury_state_measures",
           "settled": null,
           "lexical_rank": 2
         },
         {
-          "encoder": "ghulul_forfeiture",
+          "encoder": "doubled",
           "settled": null,
           "lexical_rank": 3
         },
         {
-          "encoder": "injury_state_measures",
+          "encoder": "ghulul_forfeiture",
           "settled": null,
           "lexical_rank": 4
         },
@@ -1297,7 +1297,7 @@
             1,
             2
           ],
-          "lexical_rank": 54
+          "lexical_rank": 55
         },
         {
           "encoder": "combining_forms",
