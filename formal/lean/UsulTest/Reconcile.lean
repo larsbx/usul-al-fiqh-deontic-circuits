@@ -313,7 +313,7 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f025
 #guard reconcile (P := String) none none [("no divorce; each rests on certainty of his marriage", .jazm), ("lot", .ashab), ("both abstain until certain", .nass), ("no divorce; each rests on certainty of his marriage", .tashih), ("no divorce; each rests on certainty of his marriage", .tashih), ("no divorce; each rests on certainty of his marriage", .jazm), ("no divorce; each rests on certainty of his marriage", .jazm)] == (.tarjih "no divorce; each rests on certainty of his marriage")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f029
-#guard reconcile (P := String) none none [("the wife's word (she denies, he claims)", .wajh), ("lot; whoever wins, his word", .wajh), ("the wife's word (she denies, he claims)", .tashih), ("the wife's word (she denies, he claims)", .tashih), ("the wife's word (she denies, he claims)", .jazm)] == (.tarjih "the wife's word (she denies, he claims)")
+#guard reconcile (P := String) none none [("the wife's word (she denies, he claims)", .wajh), ("lot", .wajh), ("the wife's word (she denies, he claims)", .tashih), ("the wife's word (she denies, he claims)", .tashih), ("the wife's word (she denies, he claims)", .jazm)] == (.tarjih "the wife's word (she denies, he claims)")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f031
 #guard reconcile (P := String) none none [("no lot; lineage lost (Abū Bakr) or chosen at puberty (Ibn Ḥāmid)", .tashih), ("attach to both claimants", .ashab), ("lot", .nass), ("no lot; lineage lost (Abū Bakr) or chosen at puberty (Ibn Ḥāmid)", .tashih), ("no lot; lineage lost (Abū Bakr) or chosen at puberty (Ibn Ḥāmid)", .jazm), ("no lot; lineage lost (Abū Bakr) or chosen at puberty (Ibn Ḥāmid)", .jazm)] == (.tarjih "no lot; lineage lost (Abū Bakr) or chosen at puberty (Ibn Ḥāmid)")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f034
@@ -321,13 +321,13 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f035
 #guard reconcile (P := String) none none [("divide", .ashab), ("lot", .ashab)] == .tawaqquf
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f036
-#guard reconcile (P := String) none none [("nothing binding", .nass), ("tawaqquf", .nass), ("lot among the oaths", .takhrij), ("expiation for every oath", .ashab), ("nothing binding", .tashih), ("lot among the oaths", .ashab)] == (.tarjih "nothing binding")
+#guard reconcile (P := String) none none [("nothing binding", .nass), ("tawaqquf", .nass), ("lot", .takhrij), ("expiation for every oath", .ashab), ("nothing binding", .tashih), ("lot", .ashab)] == (.tarjih "nothing binding")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f040
 #guard reconcile (P := String) none none [("both void/annulled", .takhrij), ("lot", .takhrij), ("both void/annulled", .jazm), ("both void/annulled", .jazm)] == (.tarjih "both void/annulled")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f045
-#guard reconcile (P := String) none none [("divide, like a thing in both their hands", .wajh), ("lot", .zahir), ("divide, like a thing in both their hands", .jazm), ("lot", .nass), ("lot", .jazm)] == (.tarjih "lot")
+#guard reconcile (P := String) none none [("divide", .wajh), ("lot", .zahir), ("divide", .jazm), ("lot", .nass), ("lot", .jazm)] == (.tarjih "lot")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f046
-#guard reconcile (P := String) none none [("both proofs fall (then as no proof)", .nass), ("divide without oath", .nass), ("lot, winner swears", .nass), ("suspend", .ashab), ("both proofs fall (then as no proof)", .tashih), ("both proofs fall (then as no proof)", .jazm)] == (.tarjih "both proofs fall (then as no proof)")
+#guard reconcile (P := String) none none [("both proofs fall (then as no proof)", .nass), ("divide", .nass), ("lot", .nass), ("suspend", .ashab), ("both proofs fall (then as no proof)", .tashih), ("both proofs fall (then as no proof)", .jazm)] == (.tarjih "both proofs fall (then as no proof)")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f000
 #guard reconcile (P := String) none none [("false", .ashab), ("true", .nass), ("true", .ashab), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f000
