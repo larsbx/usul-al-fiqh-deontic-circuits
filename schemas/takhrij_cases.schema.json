@@ -64,7 +64,14 @@
               "required": [
                 "who",
                 "ruling"
-              ]
+              ],
+              "properties": {
+                "detail": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "What the source adds to the position beyond its ruling, which stays an encoder code where the encoder has one."
+                }
+              }
             }
           },
           "matches_madhhab": {

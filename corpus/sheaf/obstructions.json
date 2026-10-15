@@ -3,17 +3,17 @@
     "cases": 598,
     "obstructed": 598,
     "records": 672,
-    "records_within_reading": 607,
+    "records_within_reading": 609,
     "conflicts_of_khitab": 303,
     "records_within_reading_by_sort": {
       "dalala": 60,
-      "effect": 82,
+      "effect": 84,
       "epistemic": 52,
       "judgement": 303,
       "procedure": 23,
       "takyif": 87
     },
-    "positions_outside_reading": 40
+    "positions_outside_reading": 35
   },
   "cases": [
     {
@@ -8508,8 +8508,7 @@
       "question": null,
       "positions": 2,
       "outside": [
-        0,
-        1
+        0
       ],
       "obstructions": [
         [
@@ -8614,7 +8613,6 @@
       "outside": [
         0,
         1,
-        2,
         3
       ],
       "obstructions": [
@@ -8682,9 +8680,7 @@
       "sort": "effect",
       "question": null,
       "positions": 2,
-      "outside": [
-        0
-      ],
+      "outside": [],
       "obstructions": [
         [
           0,
@@ -8700,8 +8696,6 @@
       "positions": 4,
       "outside": [
         0,
-        1,
-        2,
         3
       ],
       "obstructions": [

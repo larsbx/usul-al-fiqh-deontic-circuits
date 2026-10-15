@@ -35,6 +35,20 @@ def test_check_case_rejects_bad_facts_domains_and_thin_ikhtilaf():
     assert takhrij.check_case(_case("missing_fact", None, None)) == []
 
 
+def test_check_case_requires_an_ikhtilaf_position_to_hold_the_kernel_ruling():
+    """The kernel sides with a reported position, as an encoder code; a gloss rides in `detail`."""
+    facts = {"entitled_known": False, "divisible": False, "confusion_category": False}
+    glossed = [{"who": "a", "ruling": "divide"}, {"who": "b", "ruling": "lot; whoever wins, his word"}]
+    coded = [glossed[0], {"who": "b", "ruling": "lot", "detail": "whoever wins, his word"}]
+    assert takhrij.check_case(_case("genuine_ikhtilaf", facts, "lot", positions=glossed, matches_madhhab=False)) == [
+        "no position holds the expected ruling"]
+    assert takhrij.check_case(_case("genuine_ikhtilaf", facts, "lot", positions=coded, matches_madhhab=False)) == []
+    abstain = {"suspended": True, "possible": True, "absence_known": False}
+    ints = [{"who": "a", "ruling": 1}, {"who": "b", "ruling": False}]
+    assert takhrij.check_case(_case("genuine_ikhtilaf", abstain, True, encoder="abstention_under_possible_condition",
+                                    positions=ints, matches_madhhab=False)) == ["no position holds the expected ruling"]
+
+
 def test_report_coverage_excludes_segmentation_errors():
     cases = [_case("derivable", {}, None), _case("missing_fact", None, None), _case("segmentation_error", None, None)]
     rep = takhrij.report(cases)

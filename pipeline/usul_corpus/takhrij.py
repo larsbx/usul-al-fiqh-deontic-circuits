@@ -526,6 +526,9 @@ def check_case(case: dict) -> list[str]:
             errs.append("class contradicts the kernel's output")
     if case["class"] == "genuine_ikhtilaf" and len(case.get("positions") or []) < 2:
         errs.append("ikhtilāf needs at least two positions")
+    elif case["class"] == "genuine_ikhtilaf" and not errs and json.dumps(case.get("expected")) not in [
+            json.dumps(p["ruling"]) for p in case["positions"]]:  # JSON, so 1 is not true
+        errs.append("no position holds the expected ruling")
     for n in case.get("needs", []):
         if not n.startswith(("fact:", "rule:")):
             errs.append(f"need {n} is neither fact: nor rule:")

@@ -60,7 +60,7 @@ Every ledger entry is now weighed: 596 entries, 1,855 proofs, 14 advantages, in 
 | | By proof (`sources` policy) | By attribution (record) |
 |---|---|---|
 | jamʿ / naskh | 20 / 1 | 20 / 1 |
-| tarjīḥ | 240: 158 for the reading, 82 against | 561: 391 for, 170 against |
+| tarjīḥ | 240: 159 for the reading, 81 against | 561: 391 for, 170 against |
 | tawaqquf | 335 | 14 |
 
 - **Proofs by tier:** qiyās 1,498; ẓannī text 178; istiṣḥāb 91; ṣaḥābī fatwā 36; disputed ṣaḥābī view 35; mursal or weak 17. No qaṭʿī text and no certain ijmāʿ: every claimed consensus was tacit («لم يعرف له مخالف») or reported by one transmitter against a contrary riwāya, and is tiered accordingly.

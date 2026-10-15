@@ -10,8 +10,8 @@
     "tawaqquf": 335
   },
   "standing": {
-    "against_reading": 83,
-    "for_reading": 178,
+    "against_reading": 82,
+    "for_reading": 179,
     "tawaqquf": 335
   },
   "worklist": {
@@ -43,8 +43,7 @@
     "lots": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f025",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f029",
-      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f045",
-      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f046"
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f045"
     ],
     "repeat_bearing_roots_as_trees": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f001",
