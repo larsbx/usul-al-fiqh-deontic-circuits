@@ -11,7 +11,7 @@ a signature morphism `Fin m → Fin n` renames variables (`finSet`).
 | Institution | Sentences | Models | Carrier |
 |---|---|---|---|
 | `propI` | Boolean formulas `Form n` | valuations | Lean state predicates |
-| `traceI` | `now φ`, `always φ` (`□φ`), `step ψ` (`[][ψ]`, `ψ` over primed and unprimed vars) | finite behaviours | TLA+ under TLC's bounds |
+| `traceI` | `now φ`, `always φ` (`□φ`), `step ψ w` (`[][ψ]_w`, `ψ` over primed and unprimed vars) | finite behaviours | TLA+ under TLC's bounds |
 | `execI` | arbitrary `(Fin n → Bool) → Bool` | valuations | Haskell / `#eval` |
 
 Comorphisms, both with surjective model maps so that borrowing applies in both directions
@@ -172,11 +172,17 @@ theorem lift2_comp {m n k : Nat} (f : Fin m → Fin n) (g : Fin n → Fin k) :
   refine Fin.addCases (fun j => ?_) (fun j => ?_) i <;>
     simp only [lift2, Function.comp, Fin.addCases_left, Fin.addCases_right]
 
-/-- TLA+ sentences: a state predicate at `Init`, an invariant `□φ`, an action property `[][ψ]`. -/
+/-- `UNCHANGED w`: the step leaves the variables `w` as they were. -/
+def unchanged {n : Nat} (w : List (Fin n)) (s s' : Fin n → Bool) : Bool := w.all fun i => s i == s' i
+
+/-- TLA+ sentences: a state predicate at `Init`, an invariant `□φ`, and an action property
+`[][ψ]_w`, where `[ψ]_w` is `ψ ∨ UNCHANGED w`. The subscript `w` is part of the sentence, as in
+TLA+, so that renaming carries it: a reduct may turn a real step into a stutter on the smaller
+signature, but never on `w`'s image. -/
 inductive TSen (n : Nat) where
   | now (φ : Form n)
   | always (φ : Form n)
-  | step (ψ : Form (n + n))
+  | step (ψ : Form (n + n)) (w : List (Fin n))
   deriving Repr
 
 namespace TSen
@@ -186,12 +192,12 @@ variable {m n k : Nat}
 def rename (σ : Fin m → Fin n) : TSen m → TSen n
   | now φ => now (φ.rename σ)
   | always φ => always (φ.rename σ)
-  | step ψ => step (ψ.rename (lift2 σ))
+  | step ψ w => step (ψ.rename (lift2 σ)) (w.map σ)
 
 def holds (t : Trace n) : TSen n → Bool
   | now φ => φ.eval t.init
   | always φ => t.states.all φ.eval
-  | step ψ => t.steps.all fun p => ψ.eval (join p.1 p.2)
+  | step ψ w => t.steps.all fun p => ψ.eval (join p.1 p.2) || unchanged w p.1 p.2
 
 theorem rename_id (φ : TSen n) : φ.rename id = φ := by
   cases φ <;> simp [rename, lift2_id]
@@ -205,10 +211,10 @@ theorem holds_rename (σ : Fin m → Fin n) (t : Trace n) (φ : TSen m) :
   cases φ with
   | now φ => simp [rename, holds, Trace.map]
   | always φ => simp [rename, holds, Trace.states_map, List.all_map, Function.comp_def]
-  | step ψ =>
-    simp only [rename, holds, Trace.steps_map, List.all_map]
+  | step ψ w =>
+    simp only [rename, holds, Trace.steps_map, List.all_map, unchanged]
     congr 1; funext p
-    simp [← join_lift2]
+    simp [← join_lift2]; rfl
 
 end TSen
 

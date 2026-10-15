@@ -32,7 +32,11 @@ def rukhsaNeedsSabab : Form N := .imp rukhsa travelling
 /-- `BulughIrreversible`: `[][baligh => baligh']_vars`. -/
 def bulughIrreversible : Form (N + N) := .imp (var (Fin.castAdd N 0)) (var (Fin.natAdd N 0))
 
-def spec : List (TSen N) := [.now init, .always onlyMukallafBound, .always rukhsaNeedsSabab, .step bulughIrreversible]
+/-- `vars == <<baligh, aqil, travelling, rukhsa, bound>>`. -/
+def vars : List (Fin N) := [0, 1, 2, 3, 4]
+
+def spec : List (TSen N) :=
+  [.now init, .always onlyMukallafBound, .always rukhsaNeedsSabab, .step bulughIrreversible vars]
 
 /-- A state from its five flags. -/
 def st (b a t r d : Bool) : Fin N → Bool := fun i => match i.val with
@@ -52,9 +56,20 @@ def bulughUndone : Trace N := ⟨st false true false false false, [st true true 
 
 #guard spec.all (·.holds behaviour)
 #guard !(TSen.always rukhsaNeedsSabab).holds rukhsaAtHome
-#guard !(TSen.step bulughIrreversible).holds bulughUndone
+#guard !(TSen.step bulughIrreversible vars).holds bulughUndone
 #guard (spec.filter (!·.holds rukhsaAtHome)).length == 1
 #guard (spec.filter (!·.holds bulughUndone)).length == 1
+
+/-! ## Stuttering: `[ψ]_w` is `ψ ∨ UNCHANGED w` -/
+
+def s₀ : Fin N → Bool := st false true false false false
+
+-- `[][FALSE]_vars` admits only stuttering steps.
+#guard (TSen.step (.not .tt) vars).holds ⟨s₀, [s₀, s₀]⟩
+#guard !(TSen.step (.not .tt) vars).holds behaviour
+-- The subscript matters: departing changes `travelling`, which `<<baligh, aqil>>` does not see.
+#guard (TSen.step (.not .tt) [0, 1]).holds ⟨s₀, [st false true true false false]⟩
+#guard !(TSen.step (.not .tt) [2]).holds ⟨s₀, [st false true true false false]⟩
 
 /-! ## Satisfaction conditions on fixtures -/
 
@@ -67,7 +82,7 @@ def traces : List (Trace N) := [behaviour, rukhsaAtHome, bulughUndone]
 
 def sentences₂ : List (TSen 2) :=
   [.now mukallaf₂, .always mukallaf₂, .always (.imp (var 0) (var 1)),
-   .step (.imp (var (Fin.castAdd 2 0)) (var (Fin.natAdd 2 0)))]
+   .step (.imp (var (Fin.castAdd 2 0)) (var (Fin.natAdd 2 0))) [0, 1], .step (.not .tt) [1]]
 
 -- traceI along `ι`: `t ⊨ ι(φ) ↔ t|ι ⊨ φ` on every fixture.
 #guard traces.all fun t => sentences₂.all fun φ => (φ.rename ι).holds t == φ.holds (t.map ι)

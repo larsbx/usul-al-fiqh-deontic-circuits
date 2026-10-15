@@ -98,7 +98,8 @@ they all agree. A `genuine_ikhtilaf` case is therefore exactly a case with an ob
 `python -m usul_corpus sheaf` (part of `make generated`) emits this for the whole bank:
 
 * `corpus/sheaf/obstructions.json`: for each `genuine_ikhtilaf` case, one record per unordered
-  pair of positions with different rulings. All 488 cases are obstructed, with 559 records.
+  pair of positions with different rulings. Every case is obstructed; the current totals are in
+  the file's generated `summary`, and `test_every_ikhtilaf_is_obstructed` enforces the claim.
 * `formal/lean/UsulTest/Obstructions.lean`: one `#guard` per case. It checks that the kernel's
   `obstructions` returns exactly twice the recorded pairs (ordered pairs). The kernel is the
   authority over the mirror, and a wrong count fails the build.
@@ -127,7 +128,7 @@ Boolean state variables, with renamings `Fin m → Fin n` as signature morphisms
 | Institution | Sentences | Models | Carrier |
 |---|---|---|---|
 | `propI` | Boolean formulas `Form n` | valuations | Lean state predicates |
-| `traceI` | `now φ`, `always φ` (`□φ`), `step ψ` (`[][ψ]_vars`, over primed and unprimed vars) | finite behaviours | TLA+ within TLC's bounds |
+| `traceI` | `now φ`, `always φ` (`□φ`), `step ψ w` (`[][ψ]_w`, i.e. `□(ψ ∨ UNCHANGED w)`, `ψ` over primed and unprimed vars) | finite behaviours | TLA+ within TLC's bounds |
 | `execI` | `(Fin n → Bool) → Bool` | valuations | Haskell, `#eval` |
 
 * `compile : propI ⥤ execI` maps a formula to its evaluator. `initial : propI ⥤ traceI` maps it to
