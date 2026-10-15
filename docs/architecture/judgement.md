@@ -1,5 +1,7 @@
 # The judgement form: what a question asks
 
+**Place in the stack.** Qawāʿid ([`schemata.md`](schemata.md)) are the foundation. Types come first on top of them: this document. Categories come next, downstream of the types: [`category-theory.md`](category-theory.md).
+
 `Usul.Judgement` (`formal/lean/Usul/Judgement.lean`) formalises the roadmap's judgement form `Γ ⊢ d : H(a, s) @ g` (§2.1). A question must be typed before its answer is compared with any other. Every type in the module comes from a ḥadd already in the corpus, and each is linked in `corpus/signature_map.json`, so the Lean build `#check`s it.
 
 | Type | What it is | Source |

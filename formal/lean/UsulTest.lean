@@ -14,11 +14,11 @@ import UsulTest.NususTable
 import UsulTest.Reconcile
 import UsulTest.FatawaBank
 import UsulTest.FatawaTakhrij
-import UsulTest.Cat
 import UsulTest.R2Sample1Semantic
 import UsulTest.KernelContracts
+import UsulTest.Judgement
+import UsulTest.EncoderTypes
+import UsulTest.Cat
 import UsulTest.Obstructions
 import UsulTest.TaklifBehaviour
 import UsulTest.Institutions
-import UsulTest.Judgement
-import UsulTest.EncoderTypes

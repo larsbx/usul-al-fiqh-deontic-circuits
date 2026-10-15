@@ -21,7 +21,6 @@ import Usul.Refinements
 import Usul.Tanaqud
 import Usul.Furuq
 import Usul.Seam
-import Usul.Cat
 import Usul.Tahara
 import Usul.Readings
 import Usul.Typing
@@ -30,3 +29,4 @@ import Usul.Typing.Relations
 import Usul.DerivedTypes
 import Usul.Judgement
 import Usul.Typing.Answers
+import Usul.Cat

@@ -34,7 +34,9 @@ This lane is explicitly downstream of canonical/test data. Its invariants are no
 - Citation labels: [`docs/architecture/mentions.md`](docs/architecture/mentions.md): weakly labelled title and author mentions, a review queue and gold labels, for training a citation classifier
 - Derivation method: [`docs/architecture/derivation-method.md`](docs/architecture/derivation-method.md): how the bank derives a text's ruling, checks and extends it, and runs in parallel; the agent procedure is the `derivation-tranche` skill (`.claude/skills/`)
 - Parallel derivation plan: [`docs/roadmap-parallel-derivation.md`](docs/roadmap-parallel-derivation.md): the source texts by role, and the lanes for running the method over them in parallel
-- Categorical layer: [`docs/architecture/category-theory.md`](docs/architecture/category-theory.md): `Usul.Cat`, the scales as thin categories (σ as a duality, the ḥadīth seam as a functor), qiyās as factorization (L-QIY-1), and the gluing lemma with ikhtilāf as obstruction (M10)
+- Qawāʿid (the foundation): [`docs/architecture/schemata.md`](docs/architecture/schemata.md): al-Saʿdī's rules, their readings, and the eight shapes under them
+- Types: [`docs/architecture/judgement.md`](docs/architecture/judgement.md): `Usul.Judgement` and `Usul.Typing`, the judgement form and what each encoder's output answers
+- Categories: [`docs/architecture/category-theory.md`](docs/architecture/category-theory.md): `Usul.Cat`, downstream of the types: the scales as thin categories (σ as a duality, the ḥadīth seam as a functor), qiyās as factorization (L-QIY-1), the gluing lemma with ikhtilāf as obstruction (M10), and the carriers as institutions (M11)
 - `make all` runs the corpus tests, record validation, the generated-file drift check, the Lean build and TLC. `make fetch build` refreshes the corpus cache and records.
 
 ## al-Albānī ḥadīth-methodology track

@@ -120,6 +120,7 @@ Judgement form (proof-relevant):
 `Derivation : Type` is used, not `Prop`. Tarjīḥ compares derivations, so proof irrelevance would erase the object of study.
 
 Formalised as `Usul.Judgement` (question, answer typed by the question, subject, domain, grade, dalīl kinds): see [judgement.md](architecture/judgement.md).
+Downstream of the types, `Usul.Cat` gives their compositional semantics (scales, factorization, gluing, institutions): see [category-theory.md](architecture/category-theory.md). Both rest on the qawāʿid ([schemata.md](architecture/schemata.md)).
 
 Sort-indexed defaults: one qāʿida with two domains.
 
