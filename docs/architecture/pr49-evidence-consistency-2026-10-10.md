@@ -40,3 +40,7 @@ On main `9def50992a994d71df63dc3eaca10b790bdcd33a`, the focused consistency test
 Command: `PYTHONPATH=pipeline python -m pytest pipeline/tests/test_pr49_consistency.py pipeline/tests/test_reconcile.py -q -k 'not verbatim'`.
 
 These checks verify generated Lean text; a fresh Lean compilation and cached-witness verbatim replay were not performed in this environment. No generator, interpretation, active ledger or generated report changes are required.
+
+## Later: q014.f000 (PR-28)
+
+The residue q014.f000 was later closed by a jamʿ, `cause_on_certainty`: on the first riwāya's own ground, «متيقن للطهارة شاك في الحدث», the harmless case binds neither, which is the madhhab the ledger's evidence already held. Its expected reading is now `neither`, standing `for_reading`; the pre-jamʿ `each` still stands against it. Tranche 8 thus has 9 madhhab matches among ikhtilāf and coverage 0.889 (24/27). The figures above remain the merge snapshot.

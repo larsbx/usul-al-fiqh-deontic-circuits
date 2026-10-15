@@ -45,11 +45,15 @@ def test_pr49_resolved_cases_retain_positions_sources_and_guards():
         old = {**case, "expected": "neither", "matches_madhhab": False}
         assert reconcile.standing(old, entry) == "against_reading"
         assert reconcile.candidates([old]) == [old]
-    # The harmless purification case is a distinct, surviving negative control.
+    # The harmless purification case was a distinct residue; PR-28 closed it by jamʿ
+    # (`cause_on_certainty`), and its pre-jamʿ reading still stands against the evidence.
     far = PREFIX + "q014.f000"
     entry = next(e for e in ledger["entries"] if e["far"] == far)
-    assert by[far]["expected"] == "each"
-    assert reconcile.standing(by[far], entry) == "against_reading"
+    assert by[far]["expected"] == "neither" and entry["jam"]["from"] == "cause_from_one_of_two"
+    assert reconcile.resolve(by[far], entry) == ("jam", "neither")
+    assert reconcile.standing(by[far], entry) == "for_reading"
+    pre = {**by[far], "encoder": "cause_from_one_of_two", "expected": "each", "matches_madhhab": False}
+    assert reconcile.standing(pre, {k: v for k, v in entry.items() if k != "jam"}) == "against_reading"
 
 
 def test_pr49_tranche_and_current_generated_reports_are_consistent():
@@ -57,8 +61,9 @@ def test_pr49_tranche_and_current_generated_reports_are_consistent():
     report = takhrij.report(tranche)
     assert report["total"] == 27
     assert report["classes"] == {"derivable": 15, "genuine_ikhtilaf": 12}
-    assert report["ikhtilaf_matching_madhhab"] == 8
-    assert report["madhhab_coverage"] == 0.852
+    # 8 and 0.852 at the PR #49 merge; q014.f000's jamʿ (PR-28) adds one match.
+    assert report["ikhtilaf_matching_madhhab"] == 9
+    assert report["madhhab_coverage"] == 0.889
     assert report["encoding_error"] == report["gaps_open"] == 0
     cases = takhrij.load(ROOT / "corpus")
     ledger = reconcile.load(ROOT / "corpus")
