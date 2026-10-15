@@ -1,0 +1,493 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b11: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Takhrīj: if the part of the rukūʿ beyond the sufficient measure is voluntary, the obligated follower would be following a volunteer in it, which (on this view) is invalid",
+     "ref": "src:openiti-rajab-shamela21730/v01:p005",
+     "excerpt_ar": "ظاهر كلام القاضي وابن عقيل تخريجها على الوجهين إذا قلنا لا يصح اقتداء المفترض بالمتنفل",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The derivation Ibn Rajab reports for the wujūh; a reasoned extension of the rule against the obligated following the volunteer: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: following can drop what is obligatory, as with the latecomer (masbūq) and the jumuʿa of a woman, slave or traveller; so in following the excess counts as the obligatory",
+     "ref": "src:openiti-rajab-shamela21730/v01:p005",
+     "excerpt_ar": "قال ابن عقيل ويحتمل أن تجري الزيادة مجرى الواجب في باب الاتباع خاصة إذ الاتباع قد يسقط الواجب كما في المسبوق",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn ʿAqīl's iḥtimāl, with its stated ʿilla and aṣl; qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the excess over a seventh may be omitted without condition or substitute, so it resembles slaughtering two sheep (one obligatory, one voluntary)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p470",
+     "excerpt_ar": "لأن الزائد على السبع يجوز تركه من غير شرط ولا بدل، فأشبه ما لو ذبح شاتين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's reason for the wajh that only a seventh is obligatory; explicit analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A seventh suffices him, so it resembles slaughtering several sheep",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p541",
+     "excerpt_ar": "واحتمل أن يكون سبعها واجبا وباقيها تطوعا؛ لأن سبعها يجزئه فأشبه ما لو ذبح شياه",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's reason for the same wajh; qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he chose the higher to discharge his obligation, so all of it is obligatory, as when one chooses the highest of the options in the oath expiation or the expiation for intercourse in menses",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p470",
+     "excerpt_ar": "لأنه اختار الأعلى لأداء فرضه، فكان كله واجبا، كما لو اختار الأعلى من",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn ʿAqīl's wajh as Ibn Qudāma argues it; explicit analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Same analogy to choosing the highest option of an expiation",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p462",
+     "excerpt_ar": "وتكون كلها واجبة) ؛ لأنه اختار الأعلى لأداء فرضه فكان كله واجبا كما لو اختار الأعلى من خصال الكفارة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī adopts «كلها واجبة» with this analogy; qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f002",
+   "proofs": [],
+   "advantages": [],
+   "searched": "al-Mughnī, al-Sharḥ al-Kabīr, al-Mubdiʿ, al-Kāfī, Kashshāf, Sharḥ al-Muntahā and al-Furūʿ searched for the whole-head-at-once masʾala («رأسه كله»/«جميع رأسه» near «دفعة»/«الناصية», «الكل فرض»): not treated there. al-Inṣāf v01:p162 and Ibn Rajab v01:p005 state the two wujūh (al-Inṣāf: the ṣaḥīḥ is the nāṣiya's measure) without argument."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of Ubayy b. Kaʿb (Aḥmad, Musnad; Abū Dāwūd, by their isnāds, no grade given): the Prophet told the man who offered an older, finer camel than the bint makhāḍ due: that is what was due on you; if you volunteer good, God will reward it, and we accept it",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p435",
+     "excerpt_ar": "ذاك الذي وجب عليك، فإن تطوعت بخير أجزل الله فيه، وقبلناه منك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited by Ibn Qudāma for paying a higher age than due; the Prophet calls the excess over the due a taṭawwuʿ, which indicates, without stating the farʿ in terms, that part is voluntary: a marfūʿ āḥād ḥadīth: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the Lawgiver grants a jubrān (compensation) for the excess age, so the excess is not part of the obligation",
+     "ref": "src:openiti-rajab-shamela21730/v01:p006",
+     "excerpt_ar": "وقال أبو الخطاب كله فرض وقال القاضي بعضه تطوع وهو الصواب ; لأن الشارع أعطاه جبرانا عن الزيادة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's reason for preferring al-Qāḍī; a rationale drawn from the jubrān rule: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Paying the higher age is paying the due plus an excess that benefits and does not harm",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p190",
+     "excerpt_ar": "ولو مع وجود التبيع لأنه إخراج الواجب وزيادة تنفع ولا تضر",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī treats the higher age as the obligation plus an extra; stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: ẓuhr was his obligation and he performed it, so it stands even if the excuse lifts before the imam prays, like the incapacitated man (maʿḍūb) for whom ḥajj was performed and who then recovers",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p311",
+     "excerpt_ar": "تجميع إمام لأنها فرضه، وقد أداه (ولو زال عذره قبله) أي قبل تجميع الإمام كمعضوب حج عنه ثم عوفي (إلا الصبي) إذا بلغ ولو كان",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "al-Buhūtī on the exact facts (excuse lifted before the imam's jumuʿa); explicit analogy: qiyas. The excerpt runs through the qualifier that follows in the source."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He was not addressed by jumuʿa, so his ẓuhr is valid, as for one far from the jumuʿa location",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p255",
+     "excerpt_ar": "ولنا، أنه لم يخاطب بالجمعة، فصحت منه الظهر، كما لو كان بعيدا من موضع الجمعة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's proof for the validity of the excused man's ẓuhr before the imam, against Abū Bakr; qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is a valid prayer that discharged his obligation, like ẓuhr prayed alone followed by going to the congregation",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p255",
+     "excerpt_ar": "ولأنها صلاة صحيحة أسقطت فرضه، وأبرأت ذمته، فأشبهت ما لو صلى الظهر منفردا، ثم سعى إلى الجماعة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for its standing «سواء زال عذره أو لم يزل»; qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the persistence of his excuse is not certain, so his prayer before the imam is invalid, like that of one with no excuse",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p255",
+     "excerpt_ar": "وقال أبو بكر عبد العزيز: لا تصح صلاته قبل الإمام؛ لأنه لا يتيقن بقاء العذر، فلم تصح صلاته كغير المعذور",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū Bakr's reason as al-Mughnī reports it (Ibn Rajab names a different maʾkhadh, the time of ẓuhr); explicit analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: another party's right is attached to the ruling",
+     "ref": "src:openiti-rajab-shamela21730/v01:p009",
+     "excerpt_ar": "والمشهور النقض لتعلق حق الغير به، وأما إذا اصطاد بكلب علمه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's reason for the mashhūr of undoing it; a stated ʿilla: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: a condition of the ruling's validity (upright witnesses) is shown to have been missing",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p360",
+     "excerpt_ar": "ولو بان بعد الحكم كفر الشهود أو فسقهم لزمه) أي الحاكم (نقضه) أي الحكم لفقد شرط صحته",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī on the exact facts; a stated ʿilla: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: ijtihād is not undone by ijtihād",
+     "ref": "src:openiti-rajab-shamela21730/v01:p009",
+     "excerpt_ar": "رجح ابن عقيل في الفنون عدمه، وبه جزم القاضي في كتاب الصيد من خلافه، والآمدي لئلا ينقض الاجتهاد بالاجتهاد",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The ground Ibn Rajab gives for Ibn ʿAqīl, al-Qāḍī and al-Āmidī; a stated principle: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the qibla: one whose ijtihād changes after praying does not repeat, but before praying follows the new ijtihād; likewise fisq shown after the ruling does not undo it",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p052",
+     "excerpt_ar": "ولذلك إذا بان فسق الشهود قبل الحكم، لم يحكم بشهادتهم، ولو بان بعد الحكم، لم ينقضه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma states non-undoing as a consequence of the qibla analogy in the same passage; qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the child does not follow her in sale or otherwise, and she may have borne it before his ownership",
+     "ref": "src:openiti-rajab-shamela21730/v01:p034",
+     "excerpt_ar": "لأنه لا يتبعها في بيع ولا غيره ويجوز أن يكون ولدته قبل ملكه لها",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Qāḍī's reason as Ibn Rajab reports it; stated ʿilla and analogy to sale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the child is a part of her, and the proven (legal) hand has been shown to precede the observed hand, so it prevails",
+     "ref": "src:openiti-rajab-shamela21730/v01:p034",
+     "excerpt_ar": "أنه يتبعها لأنه من أجزائها وقد ثبت سبق اليد الحكمية لليد المشاهدة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn ʿAqīl's inclination as Ibn Rajab reports it; a stated ʿilla: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he designated it only for what was in his dhimma; when it does not count for that it returns to its owner, like one who pays zakāt and finds it was not due",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v03:p575",
+     "excerpt_ar": "إنما عينه عما في ذمته فإذا لم يقع عنه عاد إلى صاحبه كمن أخرج زكاته فبان أنها غير واجبة",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "The reason the Sharḥ gives for the riwāya of return (ẓāhir al-Khiraqī); explicit analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "Ibn ʿAbbās (Saʿīd b. Manṣūr, by isnād): if you dedicate an obligatory hady and it perishes (ʿaṭiba), slaughter it, then eat it if you wish, give it if you wish, sell it if you wish, and replace it with another",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v03:p575",
+     "excerpt_ar": "ولنا ما روى سعيد باسناد عن ابن عباس رضي الله عنهما أنه قال: إذا اهديت هديا واجبا فعطب فانحره ثم كله إن شئت",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Cited for this position (that it is his to dispose of) against Mālik; no ṣaḥābī is reported disagreeing in this masʾala here (ʿĀʾisha's report is on the lost-and-found hady): fatwaSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the poor's right attached to it by the designation, so he must slaughter it, as if he had designated it by a vow from the start",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v03:p266",
+     "excerpt_ar": "أصحهما: ليس له استرجاع ذلك إلى ملكه؛ لأنه تعلق به حق الفقراء بتعيينه فلزمه ذبحه، كما لو عينه بنذره ابتداء",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's reason for the aṣaḥḥ (the madhhab per al-Inṣāf); explicit analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Report of ʿĀʾisha (al-Dāraquṭnī): she lost two hady animals, sacrificed two replacements, then when the lost ones returned sacrificed them too, saying «this is the sunna of the hady»; with the analogy of the recovered usurped animal",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p609",
+     "excerpt_ar": "كمغصوب قدر عليه، لما روى الدارقطني «عن عائشة أنها أهدت هديين فأضلتهما فبعث إليها ابن الزبير بهديين فنحرتهما",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "al-Buhūtī cites it for no return of the blemished, perished or lost; the report is about a lost-and-found hady carried over to the blemished one, so: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he paid it for what the recipient would be owed later; when something prevents that entitlement it must be returned, like rent paid when the house collapses before occupancy",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p475",
+     "excerpt_ar": "وهذا مذهب الشافعي؛ لأنه مال دفعه عما يستحقه القابض في الثاني؛ فإذا طرأ ما يمنع الاستحقاق، وجب رده",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for Ibn Ḥāmid's view (recourse when he told the poor man it was early zakāt), which is also al-Shāfiʿī's; analogy to prepaid rent: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: it reached the poor man, so he may not reclaim it, as when he did not tell him it was early zakāt; and it was zakāt paid to one entitled, like when only the poor man's state changes",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p475",
+     "excerpt_ar": "وقال القاضي: وهو المذهب عندي؛ لأنها وصلت إلى الفقير فلم يكن له ارتجاعها، كما لو لم يعلمه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Qāḍī's reasons for Abū Bakr's no recourse; explicit analogies: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It was paid to one entitled and fell as a voluntary gift, so it cannot be reclaimed",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p268",
+     "excerpt_ar": "لأنها دفعت إلى مستحقها، فلم يملك استرجاعها لوقوعه نفلا",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī on the perishing of the wealth before the year; stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f002",
+   "proofs": [],
+   "advantages": [],
+   "searched": "al-Mughnī v02:p472–473 (tabīʿ for thirty cattle, offspring) treats only whether the early payment suffices, not reclaiming it; al-Furūʿ with Taṣḥīḥ al-Furūʿ v04:p286 and al-Inṣāf v03:p211 state the two wujūh on reclaiming (al-Mardāwī: «وهو الصواب» for reclaiming) without argument; Ibn Rajab v01:p040 derives it on the preceding wujūh. The general argument for early zakāt (al-Mughnī v02:p475) is recorded under the preceding farʿ, not for these facts."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the muḍāraba capital was lost through his act (the purchase), and in an itlāf that entails liability knowledge and ignorance are alike",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p032",
+     "excerpt_ar": "لأن مال المضاربة تلف بسببه، ولا فرق في الإتلاف الموجب للضمان بين العلم والجهل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma gives this for liability «علم بذلك أو جهل» on exactly this purchase without permission; a stated ʿilla assimilating the case to itlāf: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same rationale: liability-entailing destruction does not distinguish knowledge from ignorance",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p373",
+     "excerpt_ar": "لأن الإتلاف الموجب للضمان لا فرق فيه بين العلم والجهل",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ gives it for «علم أو لم يعلم على المذهب»; a rational assimilation to itlāf: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the loss arose from a quality in the thing bought unknown to the buyer, like buying a defective thing whose defect he did not know and which perished by it (aṣl: the unknowingly bought defective item; ʿilla: loss through an unknown quality of the sale-object)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p033",
+     "excerpt_ar": "لأن التلف حصل لمعنى في المبيع لم يعلم به المشتري، فلم يضمن، كما لو اشترى معيبا لم يعلم بعيبه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū Bakr's reason for «إن لم يكن العامل عالما ... لم يضمن», the position of the unknowing worker; explicit analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The uṣūl distinguish knowledge from its absence in liability, as with the excused and one who shoots at the ranks of the polytheists",
+     "ref": "src:openiti-insaf-shamela21609/v05:p434",
+     "excerpt_ar": "وقال: لأن الأصول قد فرقت بين العلم وعدمه في باب الضمان كالمعذور وكمن رمي إلى صف المشركين",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Cited from ʿUyūn al-Masāʾil for Abū Bakr's «إن لم يعلم لم يضمن»; an analogy to recognised cases of the excused: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the cutter was deceived (maghrūr) by the fuller and did not take the cloth on terms of liability",
+     "ref": "src:openiti-rajab-shamela21730/v01:p219",
+     "excerpt_ar": "وظاهر كلامه أن لا شيء على القاطع ; لأنه مغرور ولم يدخل على",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's reason for reading Ḥanbal's riwāya as nothing on the cutter; a stated ʿilla (ghurūr): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The cloth still exists and can be reclaimed, and its loss in value is the fuller's, by his mistaken wrong (jināya khaṭaʾ), unlike spent money",
+     "ref": "src:openiti-rajab-shamela21730/v01:p219",
+     "excerpt_ar": "لأن العين هنا موجودة فيمكن الرجوع فيها ويضمن نقصها القصار لجنايته خطأ",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's explanation of Aḥmad's distinction putting the cut on the fuller; a stated ʿilla: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The receiver recovers the arsh and wear-rent from the fuller because the fuller deceived him",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p271",
+     "excerpt_ar": "ورجع) قابض (بهما) أي: بأرش قطعه وأجرة لبسه (على دافع) نصا ; لأنه غره",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "al-Buhūtī places the final loss on the fuller (with recourse), the outcome of position 0, by the ʿilla of ghurūr; qiyas. Note he first makes the cutter liable to the owner."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The receiver who cut it unknowingly owes the arsh of cutting because he encroached on another's property",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p271",
+     "excerpt_ar": "وغرم قابض) له (قطعه أو لبسه جهلا) أنه ثوب غيره (أرش قطعه وأجرة لبسه) ; لتعديه على ملك غيره",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Given for the cutter's liability (al-Inṣāf: the ṣaḥīḥ of the madhhab); a stated ʿilla (taʿaddī on another's property, with or without knowledge): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the cutter owes the arsh just as one given another's dirhams by mistake owes what he spent (aṣl: dirhams spent; ʿilla: loss of another's property under his use)",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p449",
+     "excerpt_ar": "أرش قطعه كدراهم أنفقها، ويرده مقطوعا على الأصح",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ assimilates the cutting to spending mistakenly given dirhams, the follow-on case where the spender is liable; explicit analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f009",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: it has become clear his ownership never passed, so he takes what remains and has recourse for the rest by its substitute",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p466",
+     "excerpt_ar": "أخذ ما وجده) من المال (بعينه) بيد الوارث أو غيره؛ لأنه قد تبين عدم انتقال ملكه عنه (ورجع على من أخذ الباقي)",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī's ground for recourse against those who took the rest (the madhhab); a stated ʿilla (ownership shown not to have passed): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the division and disposal were permitted on the apparent facts, as his wife is permitted to remarry; the disposal over his property and wife is suspended on his ratification only while it exists, and what has perished is past",
+     "ref": "src:openiti-rajab-shamela21730/v01:p220",
+     "excerpt_ar": "ووجهه أنه جاز اقتسام المال في الظاهر والتصرف فيه، ولهذا يباح لزوجته أن تتزوج",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's argument for the manṣūṣ of no liability; analogy to the remarriage of the missing man's wife: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the property was divided by a right that was theirs",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p401",
+     "excerpt_ar": "والتالف ليس بمضمون، نص عليه في رواية ابن منصور، وقدمها في الرعاية، واختاره جمع؛ لأنه إنما قسم بحق لهم",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's reason for the non-liability of what perished; a stated ʿilla: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f010",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he paid it as owed; when shown not owed he reclaims it, as one who paid her a debt then found he owed none",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p235",
+     "excerpt_ar": "لأنه دفعه على أنه واجب، فإذا بان أنه ليس بواجب، استرجعه، كما لو قضاها دينا، فبان أنه لم يكن عليه دين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's ground for «والصحيح أنه يرجع» when she proves not pregnant; explicit analogy to a debt paid in error: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "She took what she was not entitled to, like taking a claimed debt later shown false",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p230",
+     "excerpt_ar": "رجع) عليها بما أنفقه عليها لأخذها ما لا تستحقه كأخذ دين ادعاه ثم ظهر كذبه",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "al-Buhūtī on the exact facts (يظنها حاملا فبانت حائلا); analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on maintenance spent in a void marriage before separation, which is not reclaimed",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p231",
+     "excerpt_ar": "وعنه: لا يرجع عليها؛ لأنه لو كان النكاح فاسدا، فأنفق عليها، ثم فرق بينهما، لم يرجع، كذا هاهنا",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "The reason Ibn Qudāma gives for the riwāya of no recourse; explicit analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He spent by virtue of the marriage's effects, so does not reclaim, like maintenance in a marriage later shown void",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v07:p149",
+     "excerpt_ar": "والثانية: لا رجوع بشيء ; لأنه أنفق عليها بحكم آثار النكاح، فلم يرجع به كالنفقة في النكاح الفاسد إذا تبين فساده",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's reason for the second riwāya; qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f011",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the duty of maintenance lapsed with the husband's death, so she is not entitled to what she took after it",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p470",
+     "excerpt_ar": "رجع عليها الوارث) بما أنفقته منذ مات، لأن وجوب النفقة ارتفع بموت الزوج فلا تستحق ما قبضته من النفقة بعد موته",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī on the exact facts (أنفقت في غيبته من ماله فبان ميتا); a stated ʿilla: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The wife of the missing man who waited: maintenance until his death, recourse for the rest, since she has been shown to have spent another's (the heirs') property",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p135",
+     "excerpt_ar": "فلها النفقة إلى يوم موته أو بينونتها منه، ويرجع عليها بالباقي؛ لأنا تبينا أنها أنفقت مال غيره",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma on the parallel case of the mafqūd's wife whose husband is shown dead; a stated ʿilla: qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

@@ -1,0 +1,529 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b28: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: a prayer that became obligatory on him (by the entry of its time) must be made up when missed, like the prayer whose performance was possible (aṣl); the one whose time had not entered is not comparable, as it was never due",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p271",
+     "excerpt_ar": "ولنا أنها صلاة وجبت عليه، فوجب قضاؤها إذا فاتته، كالتي أمكن أداؤها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's «ولنا» for the make-up being due on one who caught part of the time and then became insane or menstruated before he could pray: exactly position 0. An analogy with stated ʿilla (wujūb by the time): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: the prayer became obligatory at the entry of the time, and the original state is that it does not lapse",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p312",
+     "excerpt_ar": "لأنها وجبت بدخول الوقت، والأصل عدم سقوطها",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's first ground for the majority view (make-up due) on these facts; an appeal to «الأصل» of continued obligation: istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he did not catch enough of the time to be able to pray, so no make-up is due, as when the excuse arises before the time enters",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p271",
+     "excerpt_ar": "لأنه لم يدرك من الوقت ما يمكنه أن يصلي فيه، فلم يجب القضاء، كما لو طرأ العذر قبل ذلك الوقت",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given in al-Mughnī for al-Shāfiʿī and Isḥāq and for Ibn Baṭṭa's choice (the riwāya also chosen by Ibn Abī Mūsā per al-Mubdiʿ): no make-up without time enough to perform it, position 1. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: zakāt is property that became due in the dhimma, so it does not lapse by the perishing of the niṣāb, like a debt (or like the price of a sale, whose guarantee does not require the possibility of payment)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p509",
+     "excerpt_ar": "ومن نصر الأول قال: مال وجب في الذمة، فلم يسقط بتلف النصاب، كالدين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī gives this for «المشهور عن أحمد», that zakāt does not lapse when the niṣāb perishes, whether or not he was negligent, which covers loss before he could pay: position 0. Analogy to debt: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: zakāt is a worship whose obligation attaches to wealth, so its duty lapses when the wealth perishes before it could be paid, like the Ḥajj",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p509",
+     "excerpt_ar": "ومن اشترط التمكن قال: هذه عبادة يتعلق وجوبها بالمال، فيسقط فرضها بتلفه قبل إمكان أدائها، كالحج",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The ground of those requiring the possibility of payment (al-Maymūnī's riwāya from Aḥmad, al-Shāfiʿī and others in al-Mughnī): lapse when the niṣāb perishes before he could pay, position 1 (the wajh al-Shīrāzī derives). Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: zakāt is due by way of solace (muwāsāt) to the poor, so it is not owed in a way that would require payment when the wealth is gone and its owner poor; without negligence (as before he could pay) it lapses",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p509",
+     "excerpt_ar": "والصحيح، إن شاء الله، أن الزكاة تسقط بتلف المال، إذا لم يفرط في الأداء؛ لأنها تجب على سبيل المواساة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's own tarjīḥ in al-Mughnī: one who could not pay is not negligent, so his zakāt lapses with the wealth, position 1 on these facts. A rationale from the purpose of the obligation: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: they caught part of the time of the worship, so they must make it up, as when they catch part of the time of a prayer",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p147",
+     "excerpt_ar": "والثانية: يلزمهم القضاء؛ لأنهم أدركوا بعض وقت العبادة، فلزمهم القضاء، كما لو أدركوا بعض وقت الصلاة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the riwāya obliging the boy reaching puberty, the convert and the recovered insane (mid-day, not fasting) to make up the day: position 0. Analogy to prayer: qiyas. al-Mughnī treats the menstruant's make-up as «بغير خلاف»."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale and qiyās: the sanctity of the time, the analogy to evidence of the new moon established during the day, and his catching part of its time as with prayer",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p309",
+     "excerpt_ar": "لزمه إمساك ذلك اليوم وقضاؤه لحرمة الوقت ولقيام البينة فيه بالرؤية؛ ولإدراكه جزءا من وقته كالصلاة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's grounds for the madhhab (imsāk and make-up) for the convert, the insane who recovers and the boy who comes of age mid-day: position 0. Stated rationales and analogies: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: they did not catch a time in which they could enter upon the fast, so it resembles the excuse lifting after the time has gone out",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p146",
+     "excerpt_ar": "إحداهما، لا يلزمهم ذلك؛ لأنهم لم يدركوا وقتا يمكنهم التلبس بالعبادة فيه، فأشبه ما لو زال عذرهم بعد خروج الوقت",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the other riwāya (no make-up): position 1. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth (al-Tirmidhī: ḥasan): asked what makes the Ḥajj obligatory, the Prophet said «provision and a mount»; istiṭāʿa is so explained, so the possibility of travel and a safe road are not conditions of the obligation",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p214",
+     "excerpt_ar": "لأن النبي - صلى الله عليه وسلم - لما سئل: ما يوجب الحج؟ . قال: (الزاد والراحلة) . قال الترمذي: هذا حديث حسن",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī cites it for the riwāya (the ẓāhir of al-Khiraqī) that the possibility of travel and a safe road are conditions only of the duty to set out, so the Ḥajj settles in the dhimma without them and is performed for him if he dies: position 0. A marfūʿ āḥād ḥadīth graded ḥasan, applying by its explanation of the āya: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: this is an excuse preventing the performance itself, so it does not prevent the obligation, like chronic incapacity (ʿaḍb); and the possibility of performance is not a condition of the obligation of acts of worship (as with the menstruant becoming pure at the end of a prayer time)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p214",
+     "excerpt_ar": "ولأن هذا عذر يمنع نفس الأداء، فلم يمنع الوجوب كالعضب، ولأن إمكان الأداء ليس بشرط في وجوب العبادات",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's further grounds for the same riwāya: position 0. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The Book (Āl ʿImrān 97): Allah made the Ḥajj obligatory only on the one able (mustaṭīʿ), and one who cannot travel or whose road is unsafe is not able",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p214",
+     "excerpt_ar": "فروي أنهما من شرائط الوجوب، فلا يجب الحج بدونهما؛ لأن الله تعالى إنما فرض الحج على المستطيع، وهذا غير مستطيع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the riwāya that these are conditions of the obligation itself (so it does not settle without them): position 1. The āya applies to this case by its general sense of istiṭāʿa, not explicitly: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: Ḥajj cannot be performed without it, so it is a condition, like provision and a mount",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p214",
+     "excerpt_ar": "ولأن هذا يتعذر معه فعل الحج، فكان شرطا، كالزاد والراحلة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second ground for position 1 in al-Mughnī. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f015",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the contract cannot be valid for both, and neither has precedence over the other, so it is void for both, as when a woman is married to two men (at once); likewise five in one contract",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p122",
+     "excerpt_ar": "لأنه لا يمكن تصحيحه فيهما، ولا مزية لإحداهما على الأخرى، فيبطل فيهما، كما لو زوجت المرأة لرجلين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī on two sisters (or a woman and her aunt) in one contract, applied «لذلك» to five: position 0. Analogy with a stated ʿilla: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the forbidden combination arises from all of them together and none has precedence, so all is void (unlike separate contracts)",
+     "ref": "src:openiti-rajab-shamela21730/v01:p242",
+     "excerpt_ar": "فالنكاح باطل ; لأن الجميع حصل به ولا مزية للبعض على البعض فيبطل بخلاف ما إذا تزوجهن في عقود متفرقة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab on five or two sisters in one contract: position 0. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: al-Qāḍī's iḥtimāl of a lot where two guardians marry her to two men at once; this case is like it, so one stands by lot",
+     "ref": "src:openiti-rajab-shamela21730/v01:p242",
+     "excerpt_ar": "وذكر القاضي في خلافه احتمالا بالقرعة فيما إذا زوج الوليان من رجلين دفعة واحدة وهذا مثله ولكن هذا لعلة تخالف الإجماع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab carries al-Qāḍī's iḥtimāl to this case («وهذا مثله»): position 1. Analogy: qiyas; al-Majd calls it «لعلة تخالف الإجماع»."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on a reported riwāya: whoever of his slaves brings him news is free; two bring it together; one is freed by lot",
+     "ref": "src:openiti-rajab-shamela21730/v01:p242",
+     "excerpt_ar": "ولكنه يعتضد بالرواية التي نقلها ابن أبي موسى فيمن قال لعبيده أيكم جاءني بخبر كذا فهو حر فأتاه به اثنان معا عتق واحد منهما بالقرعة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab: the lot is supported by this riwāya (and Aḥmad's naṣṣ in Muhannā's report on «first slave/wife to appear»): position 1. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f018",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the enslavement is a supervening event forbidding the combination, like nursing (which voids both marriages that it makes a forbidden combination)",
+     "ref": "src:openiti-rajab-shamela21730/v01:p243",
+     "excerpt_ar": "ويحتمل أن يبطل نكاح الجميع كالرضاع إلى الحادث المحرم للجمع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Majd's second iḥtimāl as Ibn Rajab reports it: the marriage of all four is void, position 0. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: like a slave who becomes Muslim with four wives and chooses two",
+     "ref": "src:openiti-rajab-shamela21730/v01:p243",
+     "excerpt_ar": "يحتمل أن يتخير منهن اثنين كما لو أسلم عبد وتحته أربع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Majd's first iḥtimāl: he chooses two, position 1. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f019",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the free woman has precedence, since her marriage can be contracted in this state and the slave-woman's cannot, so the voidness falls on the slave-woman alone",
+     "ref": "src:openiti-rajab-shamela21730/v01:p243",
+     "excerpt_ar": "فإنه يبطل نكاح الأمة وحدها على الأصح ; لأن الحرة تمتاز عليهما بصفة ورود نكاحها عليها مثل هذه الحال ولا عكس",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's ground for «على الأصح»: position 0. A rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: she is a subject capable of marriage, to whom a contract from a competent party was joined, with no one equal to her combined with her in it, so it is valid as if she alone were contracted",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p123",
+     "excerpt_ar": "لأنها محل قابل للنكاح، أضيف إليها عقد صادر من أهله، لم يجتمع معها فيه مثلها، فصح، كما لو انفردت به",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī gives this for the riwāya validating the lawful party (the stranger beside the milk-sister; Aḥmad's naṣṣ on the free woman and slave-woman, «يثبت نكاح الحرة، ويفارق الأمة»), «أظهر الروايتين»: position 0. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: it is one utterance joining the lawful and the forbidden, so it is not valid, as when one marries two sisters together",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p123",
+     "excerpt_ar": "إحداهما، يفسد فيهما، وهو أحد قولي الشافعي، واختيار أبي بكر لأنها لفظة واحدة، جمعت حلالا وحراما، فلم يصح، كما لو جمع بين أختين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī gives this for the riwāya (Abū Bakr's choice) voiding both: position 1. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the freedom in each is joined to the other, two halves of a thing making a whole thing, so together they take a free son's share (al-Khabrī: the majority hold this the qiyās of ʿAlī's view)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p349",
+     "excerpt_ar": "فإن كمل منهما واحد، ورثا جميعا ميراث ابن حر؛ لأن نصفي شيء شيء كامل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the wajh that the freedom is completed, so two half-free sons take the whole estate: position 0. A rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: each one's right, were he wholly free, is in the whole estate, and he took half only by his brother's crowding; so each half-free son takes half of his right, i.e. half the estate",
+     "ref": "src:openiti-rajab-shamela21730/v01:p261",
+     "excerpt_ar": "والثاني أن حق كل واحد منهما مع كمال حريته في جميع المال لا في نصفه وإنما أخذ نصفه لمزاحمة أخيه له",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's second maʾkhadh for the wajh (preferred by al-Qāḍī, al-Sāmarrī and a group) that the two take all: position 0. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: if the freedom were completed, the slavery would have no effect and they would inherit as two free men",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p349",
+     "excerpt_ar": "والوجه الآخر، لا تكمل الحرية فيهما، لأنهما لو كملت لم يظهر للرق أثر، وكانا في ميراثهما كالحرين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the wajh that the freedom is not completed (the madhhab per al-Inṣāf): position 1. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: lest their complete and their partial freedom come out equal",
+     "ref": "src:openiti-rajab-shamela21730/v01:p262",
+     "excerpt_ar": "والوجه الثاني: لا يستحقان المال كله لئلا تستوي [حال] حريتهما الكاملة والمبعضة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's ground for the second wajh: position 1. A rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: each grandmother is entitled to the whole sixth and is reduced only by crowding; once the father's mother is excluded the crowding is gone, so the mother's mother takes the whole sixth",
+     "ref": "src:openiti-rajab-shamela21730/v01:p262",
+     "excerpt_ar": "أصحهما أنها تستحق السدس كله لزوال المزاحمة مع قيام الاستحقاق لجميعه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab on the exact case (mother's mother, father's mother and the father, on the riwāya that he excludes his mother): position 0. A rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the grandmother who would exclude or crowd her has lost her standing and is as if non-existent",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p304",
+     "excerpt_ar": "فقيل: السدس كله لأم أم الأم؛ لأن التي تحجبها أو تزاحمها قد سقط حكمها، فصارت كالمعدومة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī on the sister case (the father, his mother and the mother's mother's mother) among those who let the son exclude his mother; the same ground as position 0. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: without the father the mother's mother would have only half the sixth, so his presence cannot give her more than she had in his absence",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p304",
+     "excerpt_ar": "والباقي للأب؛ لأن الأب لو عدم لم يكن لأم الأم إلا نصف السدس، فلا يكون لها مع وجوده إلا ما كان لها مع عدمه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for «وقيل: لأم الأم نصف السدس» on the exact case: position 1. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the father's mother reduces her from the sixth to half of it though herself excluded, as the mother's children reduce the mother though excluded by the father",
+     "ref": "src:openiti-rajab-shamela21730/v01:p262",
+     "excerpt_ar": "أحدهما: أن أم الأب تحجبها عن السدس إلى نصفه فلا أثر لكونها محجوبة كما يحجب ولد الأم الأم مع انحجابهم بالأب",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's first maʾkhadh for half the sixth: position 1. Analogy: qiyas (Ibn Rajab adds «وفيه نظر»)."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the father's mother's half of the sixth, when the father excludes her, accrues to him, not to the other grandmother (as what the excluded mother's children take from the mother accrues to the father who excludes them)",
+     "ref": "src:openiti-rajab-shamela21730/v01:p262",
+     "excerpt_ar": "والثاني أن أم الأب لها مع أم الأم نصف السدس فلما حجب الأب أمه توفر ذلك عليه لا على الأخرى",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's second maʾkhadh for half the sixth: position 1. A rationale with an analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: «and this room is mine» is in the sense of an exception, taking out part of what the first words covered by connected speech",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p115",
+     "excerpt_ar": "وكذلك إن قال: هذه الدار له، وهذا البيت لي. صح أيضا؛ لأنه في معنى الاستثناء، لكونه أخرج بعض ما دخل في اللفظ الأول بكلام متصل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī on the exact case: the reservation is accepted and the room outside the iqrār, position 0. A linguistic rationale with an analogy to the exception: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: what is joined by «and» is one sentence with what precedes it (Aḥmad's naṣṣ), so the room is singled out",
+     "ref": "src:openiti-rajab-shamela21730/v01:p270",
+     "excerpt_ar": "والصحيح الأول وأن المعطوف بالواو مع المعطوف عليه في حكم الجملة الواحدة وهو المنصوص عن أحمد",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's ground for the aṣḥāb's ruling: position 0. A linguistic rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: the clause joined by «and» is an independent sentence, a separate claim, as with «you are divorced and you owe a thousand» (divorced without compensation)",
+     "ref": "src:openiti-rajab-shamela21730/v01:p270",
+     "excerpt_ar": "لأن مأخذه أن المعطوف بالواو جملة مستقلة غير مرتبطة بما قبلها فهي دعوى مستقلة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's takhrīj on Ibn ʿAqīl's ground: the reservation is not accepted, position 1. A linguistic rationale with an analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: Ramaḍān admits no fast but Ramaḍān's, so it is like the night, which is outside a vow of fasting",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p024",
+     "excerpt_ar": "إذا نذر صوم سنة بعينها، لم يدخل في نذره رمضان؛ لأنه لا يقبل غير صوم رمضان، فأشبه الليل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī on the vow of a specified year; per al-Inṣāf the vow of all time takes that ruling, and al-Mughnī v10:p031 applies it to «صوم الدهر». Position 0. Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth: the Prophet forbade fasting the two ʿĪds, so their fast is not valid for a vow, and they are like Ramaḍān (outside the vow)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p024",
+     "excerpt_ar": "ولا يوما العيدين؛ لأن النبي - صلى الله عليه وسلم - نهى عن صيامهما، ولا يصح صومهما عن النذر، فأشبها رمضان",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the forbidden days being outside the vowed fast: position 0. A marfūʿ prohibition that bears on the vow only by implication, completed by an analogy: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: the forbidden days are among the days of the year the vow names, so the vow covers them",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p024",
+     "excerpt_ar": "فعلى هذه الرواية، يدخل في نذره العيدان وأيام التشريق؛ لأنها أيام من جملة السنة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the riwāya (from Aḥmad on a vow to fast Shawwāl: make up the ʿĪd day and expiate) that the forbidden days enter the vow: position 1. A rationale from the vow's wording: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ḥadīth (Abū Dāwūd): «There is no vow in disobedience, and its expiation is the expiation of an oath»",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v11:p344",
+     "excerpt_ar": "ويقضي بدلها وعليه كفارة يمين لقوله عليه السلام لا نذر في معصية وكفارته كفارة يمين رواه أبو داود",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr cites it on the riwāya that the ʿĪds and tashrīq days enter the vow: he does not fast them, makes them up and expiates, the consequence position 1 names. A marfūʿ āḥād report, no grade given: zanni."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f001",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās and usage: forbidden meat is meat in its literal and customary sense, so eating it breaks the oath, as with usurped meat",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p608",
+     "excerpt_ar": "ولنا، أن هذا لحم حقيقة وعرفا، فيحنث بأكله، كالمغصوب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's «ولنا» for ḥinth on eating carrion or pork after swearing not to eat meat: position 1. A linguistic and customary rationale with an analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The Book (al-Baqara 173): Allah called it meat, «and the flesh (laḥm) of swine»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p608",
+     "excerpt_ar": "وقد سماه الله - تعالى - لحما، فقال: {ولحم الخنزير}",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited by al-Mughnī to show the name «meat» covers forbidden meat: position 1. The āya is not about oaths; it bears only by its usage of the word: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: his oath is directed to what is lawful, not to what is forbidden, so the forbidden does not break it, as one who swears not to sell is not forsworn by a void sale",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p608",
+     "excerpt_ar": "لأن يمينه تنصرف إلى ما يحل لا إلى ما يحرم، فلم يحنث بما لا يحل، كما لو حلف لا يبيع، فباع بيعا فاسدا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī reports this for al-Shāfiʿī's one wajh, the same ruling as position 0 (forbidden meat outside the oath; the wajh al-Mardāwī calls «قوي»). It is a proof for that ruling though its holder here is non-Ḥanbalī. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Uṣūl rationale: the general wording is specified by the sharʿ, which sets the heir apart from bequests, so «relatives» in his bequest does not include those who inherit",
+     "ref": "src:openiti-rajab-shamela21730/v01:p277",
+     "excerpt_ar": "ويخص العموم بالشرع أيضا على الصحيح في مسائل",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab lists the wajh excluding heirs (the ẓāhir of Ibn Abī Mūsā and Ibn ʿAqīl) as an instance of this qāʿida: position 0. A stated rationale, not a quoted text: qiyas. No source found arguing position 1 (al-Furūʿ and Kashshāf state «والأصح دخول وارثه» without proof)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the agent is not, in the sharʿ, an agent for the forbidden divorce, so his divorce at a time of bidʿa does not take effect",
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v09:p026",
+     "excerpt_ar": "والوجه الثاني: يحرم ولا يقع، صححه الناظم، وهو قوي، لأنه ليس وكيلا فيه شرعا",
+     "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ (with al-Furūʿ)",
+     "note": "Taṣḥīḥ al-Furūʿ gives this for the wajh al-Nāẓim judged sound: position 0. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the agent who divorces at a time of bidʿa is like the principal who does so: forbidden but effective",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p239",
+     "excerpt_ar": "أي طلق الوكيل زمن بدعة (وقع) الطلاق (كالموكل) إذا طلق زمن بدعة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf (on al-Iqnāʿ «فإن فعل وقع كالموكل»): position 1. Analogy to the principal: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the Friday prayer does not recur often, so the duty of going out to it does no harm to the iʿtikāf, as when a woman's iʿtikāf is crossed by days of menstruation",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p190",
+     "excerpt_ar": "ولأن الجمعة لا تتكرر، فلا يضر وجوب الخروج إليها، كما لو اعتكفت المرأة مدة يتخللها أيام حيضها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī against requiring a Friday mosque: iʿtikāf over a period including a Friday is valid in any congregational mosque, going out for the Friday prayer: position 0. Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: he goes out for what he cannot avoid, so it is as if he had excepted the Friday prayer in his vow's wording; and it does not recur, unlike congregational prayer",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v03:p065",
+     "excerpt_ar": "ولأنه خرج لما لا بد منه فكأنه استثنى الجمعة بلفظه، ولا يتكرر بخلاف الجماعة",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's ground for the jāmiʿ not being required: position 0. A rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the sharʿ has excepted the Friday prayer from the vowed continuity",
+     "ref": "src:openiti-rajab-shamela21730/v01:p277",
+     "excerpt_ar": "فله أن يعتكف في غير الجامع ويخرج إلى الجمعة لاستثنائها بالشرع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's ground for the madhhab in the vowed continuous month: position 0. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: he could have avoided going out by choosing the Friday mosque, so going out from another mosque breaks the iʿtikāf",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v03:p065",
+     "excerpt_ar": "فإن اعتكف في غيره بطل بخروجه إليها؛ لأنه أمكنه التحرز منه لكن إن عين بنذره المسجد الجامع تعين",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ gives this for the wajh in al-Intiṣār that the iʿtikāf must be in the Friday mosque: position 1. A rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

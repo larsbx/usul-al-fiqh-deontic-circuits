@@ -1,0 +1,475 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b18: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f002",
+   "proofs": [],
+   "advantages": [],
+   "searched": "No source argues the licence (ijāza) to whoever is born to Fulān. Checked al-Mughnī, al-Sharḥ al-Kabīr, al-Mubdiʿ, al-Kāfī, Kashshāf al-Qināʿ and Sharḥ al-Muntahā for الإجازة للمعدوم, أجزت لمن يولد, الإجازة لمن, لمن يولد لفلان: no hits. The waqf analogue (q107.f003) is argued in al-Mughnī v06:p182, Kashshāf v04:p250 and al-Mubdiʿ v05:p160, but not for the ijāza."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A waqf on one not yet existing by origin is invalid because the non-existent cannot be given ownership",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p250",
+     "excerpt_ar": "على من (يحدث لي أو لفلان) ؛ لأنه لا يصح تمليك المعدوم",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given for invalidity on exactly these facts (whoever will be born to me or to Fulān). The waqf is treated as a transfer of ownership: stated rationale, qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A waqf is meant to endure, and that requires extending it to the non-existent; a bequest, by contrast, runs like inheritance and only reaches the existent",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p182",
+     "excerpt_ar": "قلنا: الوصية أجريت مجرى الميراث، ولا يحصل الميراث إلا لموجود، فكذا الوصية، والوقف يراد للدوام، فمن ضرورته إثباته للمعدوم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "In the bequest chapter Ibn Qudāma accepts that a waqf «على من يحدث من ولده أو ولد فلان» is valid and gives this reason; al-Mubdiʿ reports «وصححه فيه في المغني؛ لأنه يراد للدوام». It supports validity (al-Majd's side). A stated farq and rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Same reason reported: al-Mughnī deemed the waqf on whoever will be born valid, because a waqf is meant to endure, unlike a bequest",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p160",
+     "excerpt_ar": "وصححه فيه في \" المغني \"؛ لأنه يراد للدوام بخلاف الوصية",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ relays al-Mughnī's reason for validity of the waqf on the non-existent by origin. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f005",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A child born to the founder after the waqf takes like those existing at the waqf, following them",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p278",
+     "excerpt_ar": "وإن حدث للواقف ولد بعد وقفه استحق) الحادث (كالموجودين) حال الوقف تبعا لهم",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given for the later-born child's inclusion (Ibn Abī Mūsā, Ibn al-Zāghūnī), against al-Tanqīḥ. The only reason given is that he follows the existing children: a stated rationale, qiyas. For position 0 (only those existing; al-Muntahā, Sharḥ al-Muntahā v02:p418 «نصا») no source gives a proof beyond Aḥmad's text."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f006",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "One born later into the degree has the stated description (being of the degree), so he shares with those existing at the death",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p420",
+     "excerpt_ar": "(والحادث من أهل الدرجة بعد موت الآيل نصيبه إليهم. كالموجودين حينه) أي الموت (فيشاركهم) لوجود الوصف فيه",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Given for sharing on these facts. The rationale is that the founder's condition describes him: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Whoever comes to exist among them is of the degree, so the founder's condition applies to him",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p283",
+     "excerpt_ar": "وكذا من سيوجد منهم) ؛ لأنه من أهل الدرجة فالشرط منطبق عليه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Same ruling; same kind of reasoning from the founder's wording. Qiyas. No source argues position 0 (the later one does not share)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "The rightly guided caliphs ruled that whoever closes a door or lets down a curtain owes the mahr and she owes the ʿidda (Zurāra ibn Awfā, via Aḥmad and al-Athram; also from ʿUmar, ʿAlī and Zayd)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p249",
+     "excerpt_ar": "قضى الخلفاء الراشدون المهديون، أن من أغلق بابا، أو أرخى سترا، فقد وجب المهر، ووجبت العدة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī calls it «إجماع الصحابة» only because the rulings «تشتهر، ولم يخالفهم أحد في عصرهم»: a tacit consensus, so not ijmaʿ. It reports views of Ibn ʿAbbās and Ibn Masʿūd against it but declares those reports unsound or broken, so no established ṣaḥābī dissent remains: fatwaSahabi (aqrabSahabi if the dissent were counted)."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The handing over that she owes has taken place on her side, so the countervalue becomes fixed, as when he has intercourse, or as when she leases or sells her house and hands it over",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p249",
+     "excerpt_ar": "ولأن التسليم المستحق وجد من جهتها، فيستقر به البدل، كما لو وطئها، أو كما لو أجرت دارها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Rationale for the full mahr by khalwa. Analogy to intercourse and to handing over in a sale or lease: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Q 2:237: «if you divorce them before you have touched them and have fixed a mahr, then half of what you fixed», and this woman was divorced before being touched",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p249",
+     "excerpt_ar": "{وإن طلقتموهن من قبل أن تمسوهن وقد فرضتم لهن فريضة فنصف ما فرضتم} [البقرة: 237] وهذه قد طلقها قبل أن يمسها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the view that the mahr is not fixed without intercourse. It holds only if «تمسوهن» means intercourse, which al-Mughnī disputes (a figure for its cause, the khalwa), so it is not explicit on this point: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "She is a divorced wife who has not been touched, so she is like one with whom he never secluded himself",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p249",
+     "excerpt_ar": "ولأنها مطلقة لم تمس، أشبهت من لم يخل بها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Rationale for the same position: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "mursalDaif",
+     "dalil": "The reports from Ibn ʿAbbās and Ibn Masʿūd that the mahr is fixed only by intercourse; Aḥmad: Layth narrates the Ibn ʿAbbās report and is not strong; the Ibn Masʿūd report is broken (Ibn al-Mundhir)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p249",
+     "excerpt_ar": "وما رووه عن ابن عباس، لا يصح، قال أحمد: يرويه ليث، وليس بالقوي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The ṣaḥāba reports cited for this position, which the source itself calls unsound («لا يصح») and «منقطع»: mursalDaif."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Q 2:237: half the fixed mahr on divorce before touching; established for divorce and extended to what is in its sense",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p148",
+     "excerpt_ar": "تنصف المهر) ms2657 المسمى لقوله تعالى {وإن طلقتموهن من قبل أن تمسوهن} [البقرة: 237] الآية فثبت في الطلاق",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The āya on which halving rests, cited for every separation from the husband, and Kashshāf then adds «وكذا تعليق طلاقها على فعلها». A divorce suspended on her act is a divorce by him, so the āya covers it by its generality, not explicitly: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The cause (the divorce) comes from the husband; she only fulfilled its condition, and a ruling is ascribed to whoever made the cause",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p149",
+     "excerpt_ar": "(وكذا تعليق طلاقها على فعلها) فإذا فعلت وقع وتنصف الصداق؛ لأن السبب وجد من الزوج وهو الطلاق، وإنما هي حققت شرطه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given for halving when he suspends the divorce on her act and she does it. Rationale from cause and condition: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A suspended divorce comes from the husband; so if he suspends it on her entering the house and she enters, the separation occurs and she has half the mahr",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p152",
+     "excerpt_ar": "ويفارق تعليق الطلاق، فإنه من جهة الزوج، ولهذا لو علقه على دخول الدار فدخلت، وقعت الفرقة ولها نصف المهر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī states the ruling on these facts as the farq from her Islam. Stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Taqī al-Dīn, strengthened by Ibn Rajab: likened to her choosing separation before consummation when he gave her the choice, which by the naṣṣ drops the mahr; the likeness holds only where it was at her request",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p149",
+     "excerpt_ar": "تنجيزها في نفسها إذا اختارت الفرقة قبل الدخول فإنه لا مهر لها على المنصوص لكن إنما تتم المشابهة إذا كان بسؤالها",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf gives this as the support for Taqī al-Dīn's «فلا مهر لها» where the condition is an avoidable act of hers, and itself limits the likeness. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Khulʿ halves the mahr because the husband's side predominates in it: it is valid by him without her, as in his khulʿ with a stranger, so he is as if alone in it",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p066",
+     "excerpt_ar": "وإنما ينصف المهر بالخلع؛ لأن المغلب فيه جانب الزوج، بدليل أنه يصح به دونها، وهو خلعه مع أجنبي، فصار كالمنفرد به",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Given for halving by khulʿ on these facts. Stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same: the husband's side predominates in khulʿ, since its compensation may be paid by her or by another, so he is as if alone in it",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p148",
+     "excerpt_ar": "وإنما تنصف بالخلع لأن المغلب فيه جانب الزوج بدليل أن بذل عوضه يصح منها ومن غيرها فصار الزوج كالمنفرد به",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Same rationale, given after the āya on divorce for khulʿ «ولو بسؤالها». Qiyas. No source argues position 1 (khulʿ drops the mahr) with a proof."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "When the separation comes about before consummation through the husband's Islam, she has half the mahr, because the separation came about by his act",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p152",
+     "excerpt_ar": "أو نصف مهر مثلها إن كانت فاسدة، مثل أن يصدقها خمرا أو خنزيرا؛ لأن الفرقة حصلت بفعله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for halving on exactly these facts (his Islam, she not a kitābiyya). Stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The first view is the madhhab because the marriage is annulled for difference of religion, and that results from his Islam",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p066",
+     "excerpt_ar": "والأول المذهب؛ لأن فسخ النكاح، لاختلاف الدين، وذلك حاصل بإسلامه",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Given against the other riwāya on the same facts. Stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He did what was obligatory on him, and the separation came about by her refusing to join him in that duty, so it is from her side",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p066",
+     "excerpt_ar": "وعن أحمد: أنه إذا أسلم لا مهر عليه؛ لأنه فعل الواجب عليه، وحصلت الفرقة بامتناعها من موافقته على الواجب، فكان من جهتها",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "The other riwāya with its reason, on these facts. Stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f008",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The separation comes from difference of religion, which came from her Islam, so the separation is by her act and she has nothing, as if she had apostatised",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p152",
+     "excerpt_ar": "ووجه الأولى أن الفرقة حصلت باختلاف الدين، واختلاف الدين حصل بإسلامها، فكانت الفرقة حاصلة بفعلها، فلم يجب لها شيء، كما لو ارتدت",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the madhhab (no mahr) on exactly these facts. Analogy to her apostasy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A separation from her side before consummation (her Islam, her annulment for his defect, and the like) drops the mahr: she destroyed the object before handing it over, as a seller who destroys the goods before delivery",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p066",
+     "excerpt_ar": "فيسقط مهرها؛ لأنها أتلفت المعوض قبل التسليم فسقط العوض، كما لو أتلف المبيع قبل تسليمه",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's general reason for every separation from her side, her Islam among them. Analogy to the sale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The separation came from him, by his refusing Islam, while she did what God made obligatory on her, so she has half of what God fixed for her, as when he suspends her divorce on prayer and she prays",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p152",
+     "excerpt_ar": "وهي فعلت ما فرض الله عليها، فكان لها نصف ما فرض الله لها، كما لو علق طلاقها على الصلاة فصلت",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the other riwāya (Abū Bakr's choice; also Qatāda and al-Thawrī). Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f010",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The mahr from the husband is the countervalue of her benefits; when she annuls while what she contracted for is intact, the countervalue returns to the one who contracted with her. Her option exists only because of a harm to her",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p188",
+     "excerpt_ar": "قلنا: العوض من الزوج في مقابلة منافعها، فإذا اختارت فسخ العقد مع سلامة ما عقدت عليه، رجع العوض إلى العاقد معها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's answer on these facts, to the question why her annulment for his defect is not counted as from him because he concealed it. Rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A separation from her side before consummation, including her annulment for the husband's defect, drops the mahr: she destroyed the object before handing it over, like a seller who destroys the goods",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p066",
+     "excerpt_ar": "وفسخها لعيب الزوج، أو إعساره، فيسقط مهرها؛ لأنها أتلفت المعوض قبل التسليم فسقط العوض، كما لو أتلف المبيع قبل تسليمه",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Same ruling, on these facts. Analogy to the sale: qiyas. No source argues position 1 (halving, Taqī al-Dīn) with a proof; al-Furūʿ only gives it as a tawjīh."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f012",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The separation came from her side, so her mahr drops, as when she becomes Muslim, apostatises, or suckles one whose suckling annuls her marriage",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p197",
+     "excerpt_ar": "ولنا، أن الفرقة جاءت من قبلها، فسقط مهرها، كما لو أسلمت، أو ارتدت، أو أرضعت من يفسخ نكاحها رضاعه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for no mahr where the freed slave-woman annuls before consummation. al-Mughnī answers the master's claim: «لكن بواسطتها». Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The mahr was due to the master, and it does not drop by another's act",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p196",
+     "excerpt_ar": "وعن أحمد، رواية أخرى، للسيد نصف المهر؛ لأنه وجب للسيد، فلا يسقط بفعل غيره",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The other riwāya (Muhannā; Abū Bakr) with its reason, on these facts. Stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f041",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Where the two judges are equally near, there is nothing to prefer one litigant's choice without the lot, so the lot decides between the litigants",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p292",
+     "excerpt_ar": "فإن استويا) أي الحاكمان في القرب (أقرع بينهما) أي بين الخصمين إذا طلب كل واحد منهما قاضيا لعدم الترجيح بدون القرعة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given for the lot on exactly these facts (equal claims, equal distance). A stated rationale (no other preference exists), so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "When the two judges are also equal in nearness, the one whose lot comes out is preferred, since nothing else gives preference",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p491",
+     "excerpt_ar": "إن استوى الحاكمان أيضا في القرب يقدم من الحاكمين من خرجت له (القرعة) لأنه لا مرجح غيرها",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Same facts, same ruling (the lot after the claimant's choice and the nearer judge). Stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f045",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Neither claimant has a hand, an outward sign or proof; they are equal and neither has a better right, so each swears and they share it",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p556",
+     "excerpt_ar": "وتناصفاها) أي قسمت بينهما لاستوائهما، وليس أحدهما بها أولى من الآخر لعدم المرجح من يد وغيرها",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Given for the first of the four states (the thing in nobody's hand, no proof): divided. A rationale from equality with no preference: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of Abū Hurayra: two men claimed a thing and neither had proof; the Prophet ordered them to draw lots over the oath, willing or not (Abū Dāwūd)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p255",
+     "excerpt_ar": "لما روى أبو هريرة، «أن رجلين تداعيا عينا، لم تكن لواحد منهما بينة، فأمرهما النبي - صلى الله عليه وسلم - أن يستهما على اليمين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī cites it for the lot where the thing is held by a third who disclaims ownership, i.e. neither claimant has a hand, which al-Inṣāf (Ṣāliḥ, Ḥanbal) treats as the same case («كالتي بيد ثالث»). A connected marfūʿ āḥād report: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "They are equal in the claim with neither proof nor hand, and the lot distinguishes among equals, as when a man in his final illness frees slaves who are all his property",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p255",
+     "excerpt_ar": "ولأنهما تساويا في الدعوى، ولا بينة لواحد منهما ولا يد، والقرعة تميز عند التساوي، كما لو أعتق عبيدا لا مال له غيرهم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Stated with the words «ولا يد», which fits a thing in neither claimant's hand. Analogy to the lot among the freed slaves: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f046",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The two proofs are two arguments that conflict with nothing to prefer either, so both fall away, like two conflicting reports; then the case is as if there were no proof",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p256",
+     "excerpt_ar": "ولأن البينتين حجتان تعارضتا، من غير ترجيح لإحداهما على الأخرى، فسقطتا، كالخبرين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the first riwāya (the proofs fall, and they draw lots over the oath as if there were no proof). Analogy to conflicting reports: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "mursalDaif",
+     "dalil": "Report of Ibn al-Musayyib: two men disputed before the Prophet, each bringing upright witnesses in equal number, and he cast lots between them (al-Shāfiʿī, Musnad)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p255",
+     "excerpt_ar": "روى ابن المسيب، «أن رجلين اختصما إلى رسول الله - صلى الله عليه وسلم - في أمر، وجاء كل منهما بشهود",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the same riwāya (proofs fall, then the lot). Saʿīd ibn al-Musayyib is a tābiʿī reporting from the Prophet, so the report is mursal: mursalDaif."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of Abū Mūsā: two men disputed a camel before the Prophet, each bringing proof that it was his, and he gave it to them in halves",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p256",
+     "excerpt_ar": "وأقام كل واحد منهما البينة أنه له؛ فقضى رسول الله - صلى الله عليه وسلم - به بينهما نصفين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the riwāya that the proofs are both used and the thing divided. A connected marfūʿ āḥād report: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "They are equal in what they claim, so they are equal in its division",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p256",
+     "excerpt_ar": "ولأنهما تساويا في دعواه، فيتساويان في قسمته",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Rationale for division on the same facts: qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Abū al-Khaṭṭāb: the one whom the lot favours must also swear, the oath strengthening his proof",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p265",
+     "excerpt_ar": "وقال أبو الخطاب: عليه اليمين مع بينته، ترجيحا لها",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Given for requiring the lot-winner's oath, which is what this position adds to the lot. A stated rationale: qiyas."
+    },
+    {
+     "position": 3,
+     "tier": "qiyas",
+     "dalil": "One of the two proofs is false, so they fall, as when two men each bring proof of marriage to a woman in neither's hand; so the ruling is suspended until they bring something clear",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p264",
+     "excerpt_ar": "وعنه: يقف الحكم حتى يأتيا بأمر بين، قال: لأن إحداهما كاذبة فسقطتا",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "A riwāya of Aḥmad, with his own reason, for suspending the case; the same ruling as Ibn Shihāb's suspension. Rationale and analogy: qiyas."
+    },
+    {
+     "position": 3,
+     "tier": "qiyas",
+     "dalil": "The matter is unclear, so one must wait, as a judge does when the ruling in a case is not clear to him",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p256",
+     "excerpt_ar": "لأنه اشتبه الأمر، فوجب التوقف، كالحاكم إذا لم يتضح له الحكم في قضيته",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for Abū Thawr (and a fourth view of al-Shāfiʿī): a non-Ḥanbalī holder of the same ruling (suspension). Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f048",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The one who is to be freed is not specified, so the master may not specify him, as when he frees all in his final illness and they exceed the third, or frees a specific one and forgets him",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p326",
+     "excerpt_ar": "ولنا أن مستحق العتق غير معين، فلم يملك تعيينه، كما لو أعتق الجميع في مرضه ولم يخرجوا من الثلث",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the lot against the master's designation, on these facts (he said «one of you is free» intending none). Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The one entitled to freedom is one unspecified person, so he is distinguished by lot, as when he frees all of them in his illness and the heirs do not allow it",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p528",
+     "excerpt_ar": "ثم أنسيه أعتق أحدهم بالقرعة) لأن مستحق العتق واحد غير معين فميز بالقرعة كما لو أعتق جميعهم في مرضه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Covers both the unintended one and the specified-then-forgotten one. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Specifying the freedom is a fresh act, so whoever pronounced it unspecified may specify it, as with divorce",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p326",
+     "excerpt_ar": "لأن تعيين العتق ابتداء، فإذا أوقعه غير معين، كان له تعيينه، كالطلاق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for Abū Ḥanīfa and al-Shāfiʿī, non-Ḥanbalī holders of the same ruling; it is the analogy with ṭalāq on which the takhrīj rests. Qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

@@ -1,0 +1,547 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b06: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale (Ibn Qudāma's iḥtimāl): when retaliation is exacted with a poisoned or blunt instrument, the whole act is prohibited, unlike cutting two fingers where one cut is permitted; so the whole sirāya is owed.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p306",
+     "excerpt_ar": "ويحتمل أن يلزمه ضمان السراية كلها، فيما إذا اقتص بآلة مسمومة أو كالة؛ لأن الفعل كله محرم، بخلاف قطع الإصبعين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The sources treat this farʿ as retaliation exacted wrongfully (poisoned/blunt tool, extreme heat or cold) with death following; Ibn Qudāma's iḥtimāl for full liability rests on the act being wholly forbidden. A rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās (al-Qāḍī): death resulted from two acts, one permitted and unguaranteed, one forbidden and guaranteed, so liability is split in halves, as when one wounds a man while apostate and again after his Islam and he dies of both.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p306",
+     "excerpt_ar": "فقال القاضي: على المقتص نصف الدية؛ لأنه تلف بفعلين؛ جائز ومحرم، ومضمون وغير مضمون، فانقسم الواجب عليهما نصفين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Qāḍī's argument for half on exactly the qiṣāṣ-with-excess / poisoned-tool case; Ibn Qudāma notes it is also the Shāfiʿī view. An analogy with a stated ʿilla, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the second shooter's wound is what made the game forbidden (it died of a permitting and a forbidding wound), so the whole liability falls on him.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p384",
+     "excerpt_ar": "وعلى الثاني ضمان جميعه؛ لأن جرحه هو الذي حرمه، فكان جميع الضمان عليه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the second shooter owing the whole game (wounded by the first) where the first could not slaughter it. Ibn Rajab names this as one of the two rationales of the madhhab. Rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the second destroyed the game, in its state as wounded by the first, against the first's ownership, so he owes its value in that state.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p215",
+     "excerpt_ar": "(ويغرم) الثاني (قيمته للأول مجروحا بالجرح الأول) لأنه أتلفه عليه كذلك",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī's reason for the stated ruling on these facts. Rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale (Ibn Qudāma's second iḥtimāl): if the first could slaughter and did not, his wound also became a forbidding one, so liability is divided between the two wounds.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p384",
+     "excerpt_ar": "الاحتمال الثاني، أن يضمن الثاني بقسط جرحه؛ لأن الأول إذا ترك الذبح مع إمكانه، صار جرحه حاظرا أيضا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Argued for a share rather than the whole, but only in the sub-case where the first left slaughter while able; Ibn Rajab's half-wajh is derived from the rationale that only the second shot was aggressive. Rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the hirer transgresses by the excess, and the owner's silence (even if present) does not remove liability, as one who sits by a man and burns his clothes while he is silent.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p372",
+     "excerpt_ar": "ولأن الراكب متعد بالزيادة، وسكوت صاحبها لا يسقط الضمان، كمن جلس إلى إنسان فحرق ثيابه وهو ساكت",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's argument for full value even where the owner accompanies the animal, the disputed case. Ibn Qudāma also cites the Seven Fuqahāʾ of Medina via al-Athram (tābiʿūn, no tier) for liability. Analogy, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: if it perished from fatigue, the transgressor bears all, as one who throws a stone into a fully laden ship and sinks it.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p372",
+     "excerpt_ar": "ولأنها إن تلفت بسبب تعبها، فالضمان على المتعدي، كمن ألقى حجرا في سفينة موقرة فغرقها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The last added act bears the whole loss though the prior load was permitted. Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās (Shāfiʿī companions): it perished from a guaranteed and an unguaranteed act, like an animal that dies from the hirer's wound and its owner's wound, so half its value.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p372",
+     "excerpt_ar": "وإن تلفت تحت الراكب ففيه قولان أحدهما يلزمه نصف قيمتها؛ لأنها تلفت بفعل مضمون وغير مضمون، أشبه ما لو تلفت بجراحته وجراحة مالكها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given by Ibn Qudāma for the Shāfiʿīs, non-Ḥanbalī holders of the same half/share ruling; the Ḥanbalī wajh (Abū al-Khaṭṭāb's iḥtimāl of half) is reported without proof. Ibn Qudāma rebuts it with the thief whose hand is cut and then wounded. Analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: one liable and one not liable shared the killing, so the jazāʾ falls on the liable one alone, as when a non-muḥrim points out game to a muḥrim.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v03:p289",
+     "excerpt_ar": "ولنا أنه اشترك في قتله من يجب عليه الضمان ومن لا يجب فاختص الجزاء بمن يجب عليه كما لو دل الحلال محرما",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Argued for the whole jazāʾ on the muḥrim, ẓāhir of Aḥmad. Analogy, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: an obligating and an exempting cause meet, so obligation prevails, as with game killed while partly in the ḥaram and partly outside.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v03:p289",
+     "excerpt_ar": "ولأنه اجتمع موجب ومسقط فغلب الإيجاب كما لو قتل صيدا بعضه في الحرم وبعضه في الحل",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Second rationale for the whole jazāʾ; al-Buhūtī repeats it. Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: half the jazāʾ, as if both partners were muḥrims.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v03:p288",
+     "excerpt_ar": "وقال أصحاب الشافعي عليه نصف الجزاء كما لو كانا محرمين",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Given for the Shāfiʿīs, non-Ḥanbalī holders of the same half ruling that al-Qāḍī takes; Ibn Rajab reports al-Qāḍī likewise compared it to sharing with one not liable for lives and property. Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the muḥrim owes only his share, as with two muḥrims sharing a kill.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v03:p357",
+     "excerpt_ar": "فالجزاء كله على المحرم في أحد الوجهين وفيه وجه آخر إن على المحرم بحصته كالمحرمين",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "The Ḥanbalī wajh for the share, carried over from two muḥrims. Analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Qurʾān 2:237: a wife divorced before being touched gets half the fixed dower; this wife is divorced before masīs.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p252",
+     "excerpt_ar": "ولنا، قول الله تعالى: {وإن طلقتموهن من قبل أن تمسوهن وقد فرضتم لهن فريضة فنصف ما فرضتم} [البقرة: 237] وهذه مطلقة قبل المسيس",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the husband owing only half the dower (Aḥmad's naṣṣ via Muhannā). The āya is explicit on half the dower before masīs, but that defloration by pushing is not masīs rests on its apparent sense (Ibn Qudāma reads «تمسوهن» as intercourse by ẓāhir), so zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the husband destroyed what the contract entitled him to destroy, so he owes nothing more for it, as if he destroyed his slave-woman's virginity.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p252",
+     "excerpt_ar": "ولأنه أتلف ما يستحق إتلافه بالعقد، فلم يضمنه لغيره، كما لو أتلف عذرة أمته",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Explains why the husband pays no arsh and the dower is not completed; Ibn Rajab adds the stranger owes half the arsh because that taking was unpermitted. Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās a fortiori (takhrīj): Aḥmad made a stranger who does this owe the dower, so the husband doing it is more fitting to confirm the full dower.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p252",
+     "excerpt_ar": "ويتخرج أن يجب لها الصداق كاملا؛ لأن أحمد قال: إن فعل ذلك أجنبي، عليه الصداق. ففيما إذا فعله الزوج أولى",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is al-Mughnī's takhrīj itself. An a fortiori analogy from Aḥmad's naṣṣ, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās (Abū Yūsuf and Muḥammad): he took her virginity within a valid marriage, so the full dower is due, as if he had had intercourse with her.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p252",
+     "excerpt_ar": "وقال أبو يوسف، ومحمد: عليه الصداق كاملا؛ لأنه أذهب عذرتها في نكاح صحيح، فكان عليه المهر كاملا، كما لو وطئها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for Ḥanafī holders of the same full-dower ruling. Analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q039.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: a lease is a sale of benefits, so it is concluded by the word «sale», like ṣarf, which has its own name but is a sale.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p322",
+     "excerpt_ar": "وهل تنعقد بلفظ البيع؟ فيه وجهان أحدهما، تنعقد به؛ لأنها بيع فانعقدت بلفظه، كالصرف",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Proof of the validating wajh; Ibn Qudāma first establishes that ijāra is a kind of sale. Analogy, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: ijāra is a transfer of ownership by each party to the other, a sale of benefits.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p322",
+     "excerpt_ar": "وهي نوع من البيع، لأنها تمليك من كل واحد منهما لصاحبه، فهي بيع المنافع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Groundwork for the validating wajh (also in Sharḥ al-Muntahā for the word «sale» applied to the benefit). Rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: ijāra has a specific meaning and needs a word that signifies it, since sale and lease attach to the same thing in the same way, as with distinct contracts.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p322",
+     "excerpt_ar": "والثاني لا تنعقد به؛ لأن فيها معنى خاصا، فافتقرت إلى لفظ يدل على ذلك المعنى",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Proof of the invalidating wajh. A linguistic rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: it differs from sale in its rule and name, so it resembles nikāḥ, which is not concluded by the word «sale».",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p322",
+     "excerpt_ar": "ولأنه عقد يخالف البيع في الحكم والاسم، فأشبه النكاح",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second argument for invalidity. Analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: he delayed returning it although he could, so he is liable.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v07:p322",
+     "excerpt_ar": "وإن كان بعد الإمكان فتلفت ففيه وجهان (أحدهما) يضمنها لتأخر ردها مع إمكانه",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Same ʿilla as Ibn Rajab's «لتعديه بترك الرد مع إمكانه». Rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the heirs hold another's property without being entrusted, like one whose house the wind blew a garment into; keeping it without informing the owner while able makes him liable.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v07:p323",
+     "excerpt_ar": "وإنما حصل مال غيرهم بأيديهم بمنزلة من أطارت الريح إلى داره ثوبا وعلم به فعليه إعلام صاحبه به فإن أحرز ذلك مع الإمكان ضمن",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "The analogy the sources give for the heir; Sharḥ al-Muntahā gives the same comparison. Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: he did not transgress in taking hold of it; it came into his hand without his act.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v07:p322",
+     "excerpt_ar": "والآخر لا يضمنها لأنه غير متعد في إثبات يده عليها إنما حصلت في يده بغير فعله",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "The wajh of trust (al-Muqniʿ). Rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: what may be sold may be pledged, so the sold item may be pledged for its price.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p285",
+     "excerpt_ar": "وهذا يدل على صحة الشرط؛ لأنه يجوز بيعه، فجاز رهنه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's reading of Aḥmad's riwāya as validating the condition. Rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the condition is that he pledge it after he owns it, so ownership is present when the pledge takes effect.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p285",
+     "excerpt_ar": "وظاهر الرواية صحة رهنه. وقولهم: إنه غير مملوك. قلنا إنما شرط رهنه بعد ملكه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Answers the ʿilla of the other side directly on these facts (pledge concurrent with ownership). Rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: a condition may alter a default effect of sale (delivery first), as deferral of the price may be stipulated against the default of immediate payment.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p285",
+     "excerpt_ar": "كما أن مقتضى البيع حلول الثمن ووجوب تسليمه في الحال، ولو شرط التأجيل جاز",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Supports validity against the objection that pledge contradicts sale's effects. Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: when the pledge was stipulated, the item was not yet the buyer's property.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p285",
+     "excerpt_ar": "لم يصح قاله ابن حامد وهو قول الشافعي لأن المبيع حين شرط رهنه لم يكن ملكا له",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Ḥāmid's (and al-Shāfiʿī's) reason, the one Ibn Rajab cites: «لانتفاء الملك للرهن». Rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale (al-Qāḍī): sale requires the price to be paid from other than the item, pledge requires payment from it; their effects contradict.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p285",
+     "excerpt_ar": "ومنها أن البيع يقتضي إيفاء الثمن من غير المبيع والرهن يقتضي الوفاء منه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "One of al-Qāḍī's grounds for invalidity on these facts. Rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: it suffices that the sale is concurrent with its condition, the buyer's being a mukātab who may deal with his master.",
+     "ref": "src:openiti-insaf-shamela21609/v04:p322",
+     "excerpt_ar": "والأكثرون اكتفوا باقتران البيع بشرطه، وهو كون المشتري مكاتبا يصح معاملته للسيد",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "al-Mardāwī, citing Ibn Rajab, gives this as the ground of those who validate the sale. Rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: before the kitāba is complete he is a pure slave, who cannot buy from his master nor owe him a price.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p178",
+     "excerpt_ar": "لم يصح لأن المكاتب قبل تمام الكتابة عبد قن فلا يصح أن يشتري من سيده شيئا ولا يثبت لسيده في ذمته ثمن",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's ground for voiding the sale, i.e. the kitāba has not preceded. Rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he sold his property to his own slave, so it is void, as if he sold to him without any kitāba.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p040",
+     "excerpt_ar": "لأنه باع ماله لعبده القن؛ فلم يصح، كما لو باعه من غير كتابة",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Same argument in al-Mubdiʿ (also in Kashshāf). Analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās (al-Qāḍī): as testimony that one bought a house from its owner proves sale and ownership together, agency and debt may be proved together.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p096",
+     "excerpt_ar": "واستشهد للقبول بما لو شهد أنه ابتاع من فلان دارا وهو مالك لها بأنه يصح شهادتهما بالبيع والملك في حالة واحدة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Only Ibn Rajab reports this; it is the argument adduced for acceptance. Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale (al-Qāḍī): until his agency is established, payment to him is not due.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p096",
+     "excerpt_ar": "والأشبه اعتبار تقدم الوكالة لأنه ما لم نثبت وكالته لا يجب الدفع إليه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Qāḍī's preferred view, reported by Ibn Rajab. Rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: a claim is heard only from a party litigating for himself or for an established principal; one whose agency is unproved is neither, as one claiming for someone he does not claim to represent.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p107",
+     "excerpt_ar": "والدليل على أن الدعوى لا تسمع قبل ثبوت الوكالة أنها لا تسمع إلا من خصم يخاصم عن نفسه أو عن موكله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's proof that a claim for the principal is not heard before agency is established, which is what requires agency to come first. Rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the agency is valid if suspending ṭalāq and manumission on acquiring the marriage or ownership is valid.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p326",
+     "excerpt_ar": "إن تزوجت هذه، فقد وكلتك في طلاقها، أو إن اشتريت هذا العبد فقد وكلتك في عتقه، صح إن قلنا يصح تعليقهما على ملكهما",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Ibn Mufliḥ reports this (from authors other than al-Azajī) for validity, built on the validity of suspension on ownership. Rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the principal does not own the ṭalāq when he appoints the agent.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p463",
+     "excerpt_ar": "لأن الموكل لا يملكه حين التوكيل وإن قال: إن تزوجت فلانة فقد وكلتك في طلاقها لم يصح ، بخلاف إن اشتريت فلانا فقد وكلتك في",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī's reason for voiding exactly this formula. Rationale, so qiyas. The excerpt runs through the qualifier that follows in the source."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās with a distinction: agency to free a slave once bought is valid because manumission may be suspended on ownership, whereas ṭalāq may not be suspended on marriage.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p463",
+     "excerpt_ar": "بخلاف إن اشتريت فلانا فقد وكلتك في عتقه لصحة تعليق العتق على الملك بخلاف تعليق طلاق المرأة على نكاحها",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Explains why this case is void. Rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: no time passes after the contract in which annulment (for lack of parity) could occur, so freedom concurrent with acceptance suffices.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p650",
+     "excerpt_ar": "قبلت له هذا النكاح وأعتقته لأنه لم يمض زمن بعد العقد يمكن الفسخ فيه",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "al-Buhūtī validates the marriage on these facts. No source found arguing the takhrīj against it (Inṣāf and Ibn Rajab only report it). Rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "aqrabSahabi",
+     "dalil": "Ṣaḥābī view: Ibn ʿUmar (also reported from ʿUthmān and ʿĀʾisha): the umm walad waits one menstrual period.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p140",
+     "excerpt_ar": "هذا المشهور عن أحمد. وهو قول ابن عمر. وروي ذلك عن عثمان، وعائشة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma reports ʿAlī and Ibn Masʿūd for three menses and ʿAmr b. al-ʿĀṣ for four months and ten days, so the ṣaḥāba disagree: aqrabSahabi. This is the mashhūr istibrāʾ, which the ledger places under the slave-woman position."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: it is an istibrāʾ for the end of ownership over her person, so one menstrual period, like every other istibrāʾ of freed and owned women.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p140",
+     "excerpt_ar": "ولنا أنه استبراء لزوال الملك عن الرقبة، فكان حيضة في حق من تحيض، كسائر استبراء المعتقات والمملوكات",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Main argument for not treating her as a free widow. Analogy, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: at the death she is a slave, so a slave woman's ʿidda, as a slave wife whose husband dies and who is freed after his death.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p140",
+     "excerpt_ar": "ولأنها حين الموت أمة، فكانت عدتها عدة الأمة، كما لو مات رجل عن زوجته الأمة، فعتقت بعد موته",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the riwāya of two months and five days, i.e. the ʿidda of a slave woman; Ibn Qudāma doubts this riwāya is from Aḥmad. Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "mursalDaif",
+     "dalil": "Report of ʿAmr b. al-ʿĀṣ (Abū Dāwūd): the sunna for an umm walad whose master dies is four months and ten days.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p140",
+     "excerpt_ar": "لا تفسدوا علينا سنة نبينا - صلى الله عليه وسلم - عدة أم الولد إذا توفي عنها سيدها أربعة أشهر وعشر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the free woman's ʿidda; Ibn Qudāma says «فأما حديث عمرو بن العاص، فضعيف», Aḥmad: «لا يصح». So mursalDaif."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: she is free and in ʿidda for a death, so four months and ten days, like a free wife.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p140",
+     "excerpt_ar": "ولأنها حرة تعتد للوفاة، فكانت عدتها أربعة أشهر وعشرا، كالزوجة الحرة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The concurrent-freedom rationale Ibn Rajab reports. Ibn Qudāma rejects it because she is not a wife. Analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth (marfūʿ, āḥād): «When the prayer is called, there is no prayer but the prescribed one», and ṭawāf is prayer, so it falls under the general wording.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p356",
+     "excerpt_ar": "ولنا، قول النبي - صلى الله عليه وسلم -: «إذا أقيمت الصلاة، فلا صلاة إلا المكتوبة» والطواف صلاة فيدخل تحت عموم الخبر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for leaving the ṭawāf for the congregational prayer and then building on it (Kashshāf cites it for «صلى وبنى»). It bears on ṭawāf only by generality, so zanni."
+    },
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "Ṣaḥābī view: Ibn ʿUmar held that one prays and then builds on the ṭawāf and saʿy, with no known contemporary opponent.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p356",
+     "excerpt_ar": "مع أنه قول ابن عمر ومن سميناه من أهل العلم، ولم نعرف لهم في عصرهم مخالفا، وإذا صلى بنى على طوافه وسعيه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn al-Mundhir names only al-Ḥasan (a tābiʿī) as dissenting, so no ṣaḥābī disagrees: fatwaSahabi, not ijmāʿ."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the prayer is a lawful act within the ṭawāf, so it does not break it, like a short interruption.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p356",
+     "excerpt_ar": "وقول الجمهور أولى؛ لأن هذا فعل مشروع في أثناء الطواف، فلم يقطعه، كاليسير",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Supports building regardless of muwālāt's status. Analogy, so qiyas. No source argues the other ṭarīq; Mughnī's proofs that muwālāt is a condition are given for interruptions other than prayer and funerals."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f009",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās (by ʿurf): as one who swore to eat only one meal today and paused to drink or change dishes has eaten one meal, a suckling broken off and resumed at once is one.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p173",
+     "excerpt_ar": "لأنه لو حلف: لا أكلت اليوم إلا أكلة واحدة. فاستدام الأكل زمنا، أو قطع لشرب الماء أو انتقال من لون إلى لون",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's proof for the wajh that it is all one suckling, also the Shāfiʿī view. Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the first would have been a suckling had he not returned, so it stays one if he returns, as when he breaks off by choice.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p173",
+     "excerpt_ar": "وذلك لأن الأولى رضعة لو لم يعد، فكانت رضعة وإن عاد، كما لو قطع باختياره",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Argued for Abū Bakr's two sucklings, the ẓāhir of Aḥmad's words in Ḥanbal's riwāya. Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: a small amount by nose or mouth (saʿūṭ, wajūr) counts as a suckling, so does this short one.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p173",
+     "excerpt_ar": "والأول أصح؛ لأن اليسير من السعوط والوجور رضعة، فكذا هذا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's preference for two. Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: returning is a new suckling, and the Lawgiver set no time for a suckling, so a short gap counts as a long one.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p446",
+     "excerpt_ar": "لأن العود ارتضاع والشارع لم يحد الرضعة بزمان فوجب أن يكون القريب كالبعيد",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī's reason for the madhhab of two. Rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}
