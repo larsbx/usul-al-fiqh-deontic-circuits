@@ -402,9 +402,9 @@ def cmd_reconcile(args: argparse.Namespace) -> int:
 
 def cmd_sheaf(_: argparse.Namespace) -> int:
     """M10: emit an obstruction record for every genuine ikhtilāf, and its Lean guards."""
-    from . import sheaf, takhrij
+    from . import judgement, sheaf, takhrij
     cases = takhrij.load(CORPUS)
-    rep = sheaf.render(cases)
+    rep = sheaf.render(cases, judgement.load(CORPUS))
     _dump(CORPUS / sheaf.OUTPUT, rep)
     (SIGNATURE_LEAN.parent / sheaf.LEAN).write_text(sheaf.lean_file(cases), encoding="utf-8")
     print(json.dumps(rep["summary"]))

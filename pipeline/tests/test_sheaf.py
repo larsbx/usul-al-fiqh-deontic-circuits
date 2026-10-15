@@ -3,15 +3,16 @@
 import json
 from pathlib import Path
 
-from usul_corpus import sheaf, takhrij
+from usul_corpus import judgement, sheaf, takhrij
 
 ROOT = Path(__file__).resolve().parents[2]
 CORPUS = ROOT / "corpus"
 CASES = takhrij.load(CORPUS)
+TYPES = judgement.load(CORPUS)
 
 
 def test_every_ikhtilaf_is_obstructed():
-    rep = sheaf.render(CASES)
+    rep = sheaf.render(CASES, TYPES)
     assert rep["summary"]["cases"] == sum(c["class"] == "genuine_ikhtilaf" for c in CASES)
     assert all(r["obstructions"] for r in rep["cases"]), [r["far"] for r in rep["cases"] if not r["obstructions"]]
 
@@ -31,7 +32,15 @@ def test_outside_is_beyond_the_encoder_range():
                for k in sheaf.outside(c) if c["expected"] in takhrij.ENCODERS[c["encoder"]]["out"])
 
 
+def test_records_are_typed_by_the_types_layer():
+    rep = sheaf.render(CASES, TYPES)
+    assert all(r["sort"] == TYPES[r["encoder"]]["sort"] for r in rep["cases"])
+    conflicts = sum(len(sheaf.within(r)) for r in rep["cases"] if r["sort"] == "judgement")
+    assert rep["summary"]["conflicts_of_khitab"] == conflicts
+    assert sum(rep["summary"]["records_within_reading_by_sort"].values()) == rep["summary"]["records_within_reading"]
+
+
 def test_outputs_are_generated():
-    assert json.loads((CORPUS / sheaf.OUTPUT).read_text(encoding="utf-8")) == sheaf.render(CASES)
+    assert json.loads((CORPUS / sheaf.OUTPUT).read_text(encoding="utf-8")) == sheaf.render(CASES, TYPES)
     lean = ROOT / "formal/lean/UsulTest" / sheaf.LEAN
     assert lean.read_text(encoding="utf-8") == sheaf.lean_file(CASES)

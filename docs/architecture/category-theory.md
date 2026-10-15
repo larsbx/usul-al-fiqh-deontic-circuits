@@ -115,6 +115,12 @@ positions as `outside`. The summary separates `records_within_reading` (both pos
 expressible: an ikhtilāf the reading could adjudicate) from the rest, which are gaps in the
 reading's range rather than disagreements within it.
 
+The records are typed by the types layer. Each carries its encoder's sort and question from
+`corpus/types/encoders.json`. Two answers conflict only when they answer the same question
+(`Judgement.Conflicts`), and only a `judgement`-sort encoder answers a khiṭāb. So the summary counts
+`conflicts_of_khitab` (records within the reading on `judgement` encoders) apart from disagreements
+on effect, dalāla, takyīf, epistemic and procedure encoders (`records_within_reading_by_sort`).
+
 For set-valued verdicts the obstruction to gluing is a pairwise disagreement: a Čech 1-cochain
 that does not vanish. The layer does not claim a cohomology group.
 

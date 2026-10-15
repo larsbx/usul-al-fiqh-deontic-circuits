@@ -11,6 +11,12 @@ range (`out`), as with murāḍāt, muhāyaʾa or the heirs' oaths against a `lo
 position can never equal the case's expected ruling. Its obstructions are a range gap, not an
 ikhtilāf the reading could adjudicate, so `outside` lists those positions and the summary
 separates the records whose two positions are both within the reading.
+
+The records are typed by the types layer (`corpus/types/encoders.json`, `Usul.Judgement`). Each
+carries its encoder's sort and question. Two answers conflict only when they answer the same
+question (`Judgement.Conflicts`), and only a `judgement`-sort encoder answers a khiṭāb. So a record
+within the reading counts as a conflict of khiṭāb exactly when its sort is `judgement`. On an
+effect, dalāla, takyīf, epistemic or procedure encoder it is a disagreement of another kind.
 """
 
 from __future__ import annotations
@@ -19,6 +25,9 @@ import json
 from itertools import combinations
 from pathlib import Path
 
+from collections import Counter
+
+from . import judgement
 from .takhrij import ENCODERS
 
 OUTPUT = Path("sheaf") / "obstructions.json"
@@ -50,12 +59,23 @@ def ikhtilaf(cases: list[dict]) -> list[dict]:
     return sorted((c for c in cases if c["class"] == "genuine_ikhtilaf"), key=lambda c: c["far"])
 
 
-def render(cases: list[dict]) -> dict:
-    rows = [{"far": c["far"], "encoder": c["encoder"], "positions": len(c["positions"]),
+def within(row: dict) -> list[list[int]]:
+    """The records whose two positions the reading can both express."""
+    return [[i, j] for i, j in row["obstructions"] if i not in row["outside"] and j not in row["outside"]]
+
+
+def render(cases: list[dict], types: dict[str, dict]) -> dict:
+    rows = [{"far": c["far"], "encoder": c["encoder"], "sort": types[c["encoder"]]["sort"],
+             "question": types[c["encoder"]].get("question"), "positions": len(c["positions"]),
              "outside": outside(c), "obstructions": obstructions(c)} for c in ikhtilaf(cases)]
-    within = [[i, j] for r in rows for i, j in r["obstructions"] if i not in r["outside"] and j not in r["outside"]]
+    by_sort = Counter()
+    for r in rows:
+        by_sort[r["sort"]] += len(within(r))
     summary = {"cases": len(rows), "obstructed": sum(bool(r["obstructions"]) for r in rows),
-               "records": sum(len(r["obstructions"]) for r in rows), "records_within_reading": len(within),
+               "records": sum(len(r["obstructions"]) for r in rows),
+               "records_within_reading": sum(by_sort.values()),
+               "conflicts_of_khitab": by_sort["judgement"],
+               "records_within_reading_by_sort": dict(sorted(by_sort.items())),
                "positions_outside_reading": sum(len(r["outside"]) for r in rows)}
     return {"summary": summary, "cases": rows}
 
