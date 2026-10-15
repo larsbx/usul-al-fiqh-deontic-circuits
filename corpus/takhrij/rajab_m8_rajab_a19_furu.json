@@ -1,0 +1,462 @@
+{
+  "suite": "m8_rajab_rajab_a19",
+  "status": "candidate",
+  "provenance": "Shard rajab-a19 (lane A): every farʿ record of Ibn Rajab's qawāʿid 142, 143 and 145, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA19). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f000",
+      "encoder": "returned_takes_first_ruling",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "restored_by_life": true,
+        "old_materials": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "pure, the part having taken hold and healed (Aḥmad's naṣṣ; Ibn Abī Mūsā; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "impure (najāsa), the other riwāya al-Qāḍī reports",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The qāʿida's opening example: a man pulls out his tooth or cuts off his ear and puts it back at once, «فثبت والتحم كما كان»: «فهل يحكم بطهارته أم لا نص أحمد على طهارته إذا ثبت والتحم، وعلى نجاسته إذا لم يثبت، وحكى القاضي المسألة على روايتين». Annotated for the part that took hold and healed, the branch where both riwāyas are reported. Restored by life («لعود الحياة إليه», Ibn Abī Mūsā): it takes the ruling of the first, pure. al-Inṣāf (v01:p489): «فثبتت. فهي طاهرة) هذا المذهب. وعليه الجمهور، وقطع به أكثرهم». On the madhhab side. Follow-ons: a part that did not take hold is impure (najāsa) by Aḥmad's naṣṣ (the reading gives the same, nothing being restored by life); if it was the act of a wrongdoer, «فالمنصوص عن أحمد أنه لا قود فيه ولا دية سوى حكومة نقصه», built by many aṣḥāb on its purity, against al-Qāḍī's «حقه بحاله»; and whether one who took qiṣāṣ may sever the culprit's re-attached part again (Aḥmad's naṣṣ: yes, «القصاص للشين والشين قد زال»; al-Qāḍī in al-Mujarrad: no)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f001",
+      "encoder": "returned_takes_first_ruling",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "restored_by_life": true,
+        "old_materials": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "no liability, the limb having returned (the madhhab as Ibn Rajab states it; Aḥmad's naṣṣ on the tooth and «جماهير الأصحاب» per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "the diya of the tooth is due though it grew back (al-Qāḍī, as al-Inṣāf reports him)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A man pulls out another's nail, tooth or hair and it grows back, or destroys his smell or sight and it returns: «فلا ضمان بحال في المذهب ; لأن أطراف الآدمي لا تضمن بالإتلاف إذ ليست أموالا، فإنما يضمن بما نقص الجملة ولم يوجد نقص». Restored by growth, the returned limb is the first: no liability. al-Inṣāf (v10:p098) on an adult's tooth or nail that grows back: «سقطت ديته. وإن كان قد أخذها: ردها. هذا المذهب. وعليه جماهير الأصحاب»; it reports al-Qāḍī's «تجب ديتها» against it. On the madhhab side. Follow-ons: «ولا فرق في ذلك بين الحر والعبد صرح به جماعة», and Ibn Rajab's «ويتوجه التفريق» for a slave, whose limbs are property (a branch of different facts); the emaciated slave girl who fattens again (two wujūh); al-Talkhīṣ's arsh for a wall pulled down and rebuilt by a usurper (built on the arsh being due, the rebuilding being ʿudwān), and al-Qāḍī's purchaser who pulls down and rebuilds a usurped house."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f002",
+      "encoder": "returned_takes_first_ruling",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "restored_by_life": true,
+        "old_materials": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "no ḍamān once it grows back (a wajh; Ibn Rajab's «والأشبه» for the Ḥaram's plants; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "ḍamān though it grows back (the other wajh; al-Mustawʿib's «هو الصحيح عندي», jazm of al-Ifādāt, as al-Inṣāf reports them)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A plant of the Ḥaram, or a branch of its tree, is cut and grows back: «ففي ضمانه وجهان», and likewise the feathers of game in the Ḥaram or in iḥrām plucked and regrown. Restored by growth, it takes the ruling of the first: no ḍamān. Ibn Rajab's own «والأشبه أن صيد الحرم ونباته ملحق بالآدميين», whose limbs are not liable once they return. al-Inṣāf (v03:p557): «أحدهما: يسقط الضمان، وهو المذهب، وعليه أكثر الأصحاب». On the madhhab side. Follow-on: the feathers likewise («وإن نتف ريشه فعاد، فلا شيء عليه ... وهو المذهب», al-Inṣāf v03:p546), though Ibn Rajab likens the muḥrim's game to owned property."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f003",
+      "encoder": "returned_takes_first_ruling",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "restored_by_life": false,
+        "old_materials": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "no right to replace the beams without leave, the second wall being another (al-Qāḍī and Ibn ʿAqīl in al-ʿĀriya; the madhhab per al-Inṣāf, whatever the materials)",
+          "ruling": false
+        },
+        {
+          "who": "he may replace them, the wall being rebuilt with its old materials (the second wajh, reported from al-Qāḍī, which Ibn Rajab doubts)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "He lends a wall to rest his beams on; the wall falls and the owner rebuilds it: «فهل له إعادة الوضع أم لا؟ فيه وجهان: ليس له ذلك بدون إذن ; لأن الثاني غير الأول ... والثاني: له ذلك إن أعاده بآلته العتيقة وإلا فلا». The two wujūh part only where the wall is rebuilt with its old materials, so the case is annotated for that branch (the record does not say with which materials it was rebuilt). Rebuilt by human hand, the wall is another thing: no right to replace the beams without leave. al-Inṣāf (v06:p106): «لم يملك رده) . هذا المذهب سواء أعيد الحائط بآلته الأولى، أو بغيرها». On the madhhab side. Follow-on, of different facts: a placing owed under a ṣulḥ «فله الوضع بكل حال وجها واحدا»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f004",
+      "encoder": "returned_takes_first_ruling",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "restored_by_life": false,
+        "old_materials": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the renewed wall is not under the lease and the lessor is not compelled to renew (al-Qāḍī, Ibn ʿAqīl, al-Talkhīṣ; the madhhab per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "he is compelled to renew, as he is to repair (a wajh al-Talkhīṣ reports)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A rented house's wall collapses and the lessor rebuilds it: «فصرح به القاضي وابن عقيل بأن هذا المجدد لم يقع عليه العقد، وفرعا عليه أنه لا يجبر على التجديد», as al-Talkhīṣ, which «حكى وجها بإجباره على التجديد كما يجبر على الترميم». Rebuilt by human hand, the new wall is not the one leased: not under the contract, and the lessor is not compelled to renew it. The record names no materials; annotated for a rebuilding not stated to use the old ones, where Ibn Rajab's «ويتوجه التفريق بين أن تعاد بآلتها العتيقة أو غيرها» does not arise. al-Inṣāf (v06:p068): «وليس له إجباره على التجديد. على الصحيح من المذهب وقيل: بلى». On the madhhab side. Follow-on: al-Talkhīṣ's «إن جدد فلا خيار له»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f005",
+      "encoder": "returned_takes_first_ruling",
+      "class": "derivable",
+      "facts": {
+        "restored_by_life": false,
+        "old_materials": false
+      },
+      "expected": false,
+      "note": "Leading ruling: a shared wall collapses and one partner rebuilds it: «إن أعاده بآلة جديدة لم يعد» the other partner's right. Rebuilt by human hand, from new materials: it is not the first, and the right does not return. Derivable. Follow-on: rebuilt with its old materials, «فوجهان سبق ذكرهما» (al-Inṣāf v05:p266 on the riwāya of no compulsion: «لكن إن بناه بآلته فهو بينهما»), where the reading, giving the materials no weight, would deny the return; the candidate farq is the materials, Ibn Rajab's own «ويتوجه»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f006",
+      "encoder": "returned_takes_first_ruling",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "restored_by_life": false,
+        "old_materials": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the bequest is void and does not return with the rebuilding, the house being another (the mashhūr per Ibn Rajab; the madhhab per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "it returns, the house being rebuilt with its old materials (Ibn Rajab's «ويتوجه»)",
+          "ruling": true
+        },
+        {
+          "who": "the bequest is not void at all («لا تبطل الوصية بكل حال», a wajh)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A house is bequeathed to him and collapses: «فالمشهور بطلان الوصية بزوال الاسم ولا يعود بعود البناء ; لأنه غير الأول، ويتوجه عودها إن أعادها بآلتها القديمة، وفيه وجه آخر لا تبطل الوصية بكل حال ولو لم يعد بناؤها». Annotated for a house rebuilt with its old materials, the branch where all three positions part. Rebuilt by human hand, the house is another: the bequest does not return. al-Inṣāf (v07:p215): «لو وصى له بدار، فانهدمت فأعادها. فالمذهب بطلان الوصية». On the madhhab side. Follow-ons on the wajh that the bequest stands: whether he takes the rubble present at the bequest (on whether the bequest or the death is reckoned) and the new building («على وجهين أيضا»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f007",
+      "encoder": "returned_takes_first_ruling",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "restored_by_life": false,
+        "old_materials": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "they may not rebuild it, the rebuilding being a new founding (a riwāya; the madhhab per al-Inṣāf, «صححه في التصحيح»)",
+          "ruling": false
+        },
+        {
+          "who": "they may rebuild it, the rebuilding being a continuation (the other riwāya; al-Khulāṣa's «على الأصح»)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A church allowed to stand in Dār al-Islām collapses: «فهل يمكنون من إعادتها؟ على روايتين معروفتين، بناء على أن الإعادة هل هي استدامة أو إنشاء». The record names no materials, and neither riwāya turns on them. Rebuilt by human hand, it is a new building (inshāʾ): they are not allowed. al-Inṣāf (v04:p237): «إحداهما: المنع من ذلك. وهو المذهب. صححه في التصحيح». On the madhhab side. Follow-on: a town taken by force with a ruined church allowed to stand, «فيه طريقان» (barred outright; or on the khilāf over the collapsed church)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f001",
+      "encoder": "badal_stands_for_original",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sold_for_price": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "washing the feet suffices though the muwālāt has lapsed, the wiping having stood for their washing (a riwāya, as Ibn Rajab reports it)",
+          "ruling": true
+        },
+        {
+          "who": "he restarts the ṭahāra (the other riwāya; the madhhab per al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "He wipes over the khuff, then takes it off: «فإنه يجزئه غسل قدميه على إحدى الروايتين، ولو فاتت الموالاة ; لأن المسح كمل الوضوء وأتمه وقام مقام غسل الرجلين إلى حين الخلع». The wiping stood in the place of the ghasl of the feet: washing them completes the wuḍūʾ. al-Inṣāf (v01:p190) on «ومتى ظهر قدم الماسح ... استأنف الطهارة»: «هذا الصحيح من المذهب، قال في الكافي: بطلت الطهارة في أشهر الروايتين». Off the madhhab side; ledger entry. Follow-on: water enough for part of the limbs, then tayammum for the rest, then water after the muwālāt has lapsed: only the rest is washed («وهو ظاهر ما ذكره الشيخ مجد الدين في شرح الهداية لكنه بناه على سقوط الموالاة للعذر»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f002",
+      "encoder": "badal_stands_for_original",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sold_for_price": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the ṣarf stands, the replacement taken in the session of return standing for it (a riwāya; al-Khiraqī, al-Khallāl, al-Qāḍī and his followers; «الصحيح» per Taṣḥīḥ al-Furūʿ)",
+          "ruling": true
+        },
+        {
+          "who": "the ṣarf is undone by the return (the other riwāya; Abū Bakr)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The parties to a ṣarf part, then one finds a defect in what he took, returns it and takes its replacement in the session of return: «فهل ينتقض الصرف بذلك أم لا؟ على روايتين». The replacement stands in the place of what was returned: the ṣarf stands. Taṣḥīḥ al-Furūʿ (v06:p311): «\"إحداهما\" لا يبطل, وهو الصحيح, اختاره الخرقي والخلال والقاضي وأصحابه»; al-Muntahā states it. On the madhhab side. The branch is the contract in the dhimma with a defect of the same genus (al-Inṣāf v05:p047), the one where a replacement is taken at all."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f003",
+      "encoder": "badal_stands_for_original",
+      "class": "derivable",
+      "facts": {
+        "sold_for_price": false
+      },
+      "expected": true,
+      "note": "Forty of those obliged attend the Jumuʿa, then are replaced by their like during the khuṭba or the prayer: «انعقدت الجمعة وتمت بهم». The replacements stand in the place of those replaced. Derivable; no dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f004",
+      "encoder": "badal_stands_for_original",
+      "class": "derivable",
+      "facts": {
+        "sold_for_price": false
+      },
+      "expected": true,
+      "note": "Leading ruling: a niṣāb of zakāt property exchanged for a niṣāb of its genus «بني على حول الأول على المذهب». The substitute stands in its place. Derivable. Follow-ons: exchanged for another genus he restarts the ḥawl, «إلا في إبدال أحد النقدين بالآخر فإن فيه روايتين», and Abū al-Khaṭṭāb's takhrīj in al-Intiṣār of building on the ḥawl for another genus at large."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f005",
+      "encoder": "badal_stands_for_original",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sold_for_price": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "permitted (Aḥmad's naṣṣ; the madhhab per al-Inṣāf, with or without karāha)",
+          "ruling": true
+        },
+        {
+          "who": "forbidden («وعنه يحرم», as al-Inṣāf reports it)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "He exchanges a muṣḥaf for one like it: «جاز نص عليه، بخلاف ما لو باعه بثمن», for «لا يدل على الرغبة عنه ولا على الاستبدال به بعوض دنيوي بخلاف أخذ ثمنه». The substitute stands in its place: permitted. al-Inṣāf (v04:p279) on the riwāyas over buying and exchanging it: «إحداهما: لا يكره. وهو المذهب»; against it a riwāya of karāha («يكره»), still a permission, and «وعنه يحرم». On the madhhab side. Follow-on: Abū Bakr's two riwāyas on whether the exchange is a sale, which al-Qāḍī denies («هي بيع بلا خلاف»); the sale for a price, which the reading bars."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f006",
+      "encoder": "badal_stands_for_original",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sold_for_price": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "permitted, the vessels standing for the hide's own use (Aḥmad's naṣṣ as Ibn Rajab reports it; the riwāya of selling it for household goods)",
+          "ruling": true
+        },
+        {
+          "who": "forbidden, as a sale of the hide (the aṣḥāb at large; the madhhab per al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "He exchanges the hides of uḍḥiyas for household vessels: «جاز نص عليه ; لأن ذلك يقوم مقام الانتفاع بالجلد نفسه في متاع البيت». The vessels stand in the place of the hide's own use: permitted. al-Inṣāf (v04:p092): «يحرم بيع الجلد والجل على الصحيح من المذهب», reporting «وعنه يجوز بيعها بمتاع البيت ... فيكون إبدالا» as a riwāya against it; Kashshāf states the prohibition of the sale. Off the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f007",
+      "encoder": "badal_stands_for_original",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sold_for_price": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "permitted (Aḥmad's naṣṣ; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "not permitted, his ownership having ceased with the designation (a riwāya; Abū al-Khaṭṭāb in al-Hidāya)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: «إبدال الهدي والأضاحي بخير منها وهو جائز نص عليه». The better animal stands in the place of the designated one: permitted. al-Inṣāf (v04:p089): «وقطع في القواعد الفقهية بجواز إبدالها بخير منها وقال: نص عليه والصحيح من المذهب: أنه يجوز له نقل الملك فيه وشراء خير منه», against the riwāya that his ownership ceases outright so that no exchange is allowed (chosen by Abū al-Khaṭṭāb in al-Hidāya). On the madhhab side. Follow-ons: the waqf fallen into ruin and the mosque deserted by its people (exchanged), and the waqf still in good repair for a better one («روايتان»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f008",
+      "encoder": "badal_stands_for_original",
+      "class": "derivable",
+      "facts": {
+        "sold_for_price": false
+      },
+      "expected": true,
+      "note": "Leading ruling: the owner of the capital dies while it is with the muḍārib or the ʿinān partner, and the heir wishes to confirm him and permits him to deal: «جاز». The heir's confirmation builds on the first contract. Derivable. Follow-ons: «وهل هو ابتداء عقد أو استدامة؟ على وجهين ذكرهما في التلخيص», which matter where the capital is goods and qirāḍ on goods is bāṭil (al-Talkhīṣ: on beginning, not valid; on confirmation, valid); and the worker's death, where confirming his heir on goods is a beginning «وجها واحدا قاله القاضي والأكثرون»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f009",
+      "encoder": "badal_stands_for_original",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sold_for_price": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the ʿitq stands and the replacement is due (a wajh; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "the ʿitq is lifted by the return (the other wajh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "He contracts kitāba for goods; the slave pays them, the master finds a defect in them and returns them: «فهل يستحق بدله ولا يرتفع العتق أم يرتفع العتق برده؟ على وجهين». The replacement stands in the place of the goods with the defect: the ʿitq stands and the replacement is due. al-Inṣāf (v07:p454): «فله أرشه أو قيمته. ولا يرتفع العتق) . هذا المذهب»; Kashshāf states it. On the madhhab side. Follow-on: «وبناه بعضهم على أن الملك هل يحصل بالقبض أم يقف على الرضى»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f010",
+      "encoder": "badal_stands_for_original",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sold_for_price": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "he is freed, the ʿiwaḍ standing for the debt (a wajh; al-Muwaffaq, al-Shāriḥ; Taṣḥīḥ al-Furūʿ)",
+          "ruling": true
+        },
+        {
+          "who": "he is not freed (the other wajh; al-Qāḍī)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "He takes, for the kitāba debt, something of another genus: «فهل يعتق المكاتب؟ على وجهين». What is taken (the ʿiwaḍ) stands in the place of what was owed: the mukātab is freed. Taṣḥīḥ al-Furūʿ (v08:p142): «أحدهما: يعتق، وهو الصواب إن كان المعنى ما فسرتها به، وهو الظاهر»; al-Inṣāf: «والصواب: العتق. اختاره المصنف، والشارح، وغيرهما. وعدم العتق قاله القاضي». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f011",
+      "encoder": "badal_stands_for_original",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sold_for_price": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the ʿiwaḍ stands for the right: no breach (Ibn Ḥāmid; al-Muwaffaq and al-Shāriḥ, «وهو أولى»)",
+          "ruling": true
+        },
+        {
+          "who": "it does not: he breaks his oath (al-Qāḍī)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The record (the tail of 143.f010's paragraph, not located as a separate unit): «أن العوض هل يقوم مقام المعوض في البر والحنث أم لا؟ على وجهين». Annotated for the scenario the later works treat: one who swore not to leave his debtor until he has his right is paid goods for it, then leaves. The ʿiwaḍ stands in the place of the right: he keeps his oath. al-Inṣāf (v11:p115): «قضاه عن حقه عرضا، ثم فارقه. فقال ابن حامد: لا يحنث. قال المصنف، والشارح: وهو أولى. وقال القاضي: يحنث»; al-Muntahā, al-Iqnāʿ and Kashshāf state that he does not break it. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f001",
+      "encoder": "bain_in_idda_as_wife",
+      "class": "derivable",
+      "facts": {
+        "in_idda": true,
+        "ties_cut": false
+      },
+      "expected": true,
+      "note": "Leading ruling: «أن المبتوتة في مرض الموت ترث في العدة» (the ṭalāq being meant to flee her right), «فلم يعمل في المنع ما دامت علق الزوجية قائمة». In her ʿidda she is as a wife: she inherits. al-Inṣāf (v07:p356): «ورثته ما دامت في العدة. ولم يرثها) هو بلا نزاع». Derivable. Follow-on: after the ʿidda, «دون ما بعدها على إحدى الروايتين», while al-Inṣāf (v07:p356) has «ترثه بعد العدة، ولو كانت غير مدخول بها، ما لم تتزوج. وهو الصحيح من المذهب»; there the reading (not a wife after the ʿidda) gives no inheritance, a residue for the fleeing husband whose ground is the flight, not the marriage."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f002",
+      "encoder": "bain_in_idda_as_wife",
+      "class": "derivable",
+      "facts": {
+        "in_idda": true,
+        "ties_cut": false
+      },
+      "expected": true,
+      "note": "The record (not located as a separate unit): «تحريم نكاح الأخت في عدة أختها البائن. والخامسة في عدة الرابعة تنزيلا لحالة العدة منزلة حالة النكاح». In her ʿidda the bāʾin is as a wife: her sister, and a fifth, are barred until it ends. al-Inṣāf (v08:p131): «وإن طلق إحداهن لم يجز أن يتزوج أخرى حتى تنقضي عدتها». Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f003",
+      "encoder": "bain_in_idda_as_wife",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "in_idda": true,
+        "ties_cut": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the ʿiddas do not merge: she completes the first and begins the second (the madhhab as Ibn Rajab states it; «جماهير الأصحاب» per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "they merge (the ẓāhir of Abū Bakr on the child's wife, as al-Majd draws it)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The bāʾin, while in her ʿidda, is intercoursed by another in error: «أتمت عدة الأول واستأنفت العدة للثاني على المذهب فلا تكون محبوسة على رجلين في عدة واحدة، كما لا يحبس عليهما في نكاح واحد». As a wife, she is not held for two men at once: the two ʿiddas do not merge. al-Inṣāf (v09:p297): «هذا المذهب. وعليه جماهير الأصحاب. لأن العدتين من رجلين لا يتداخلان». On the madhhab side. Against it Ibn Rajab adduces Abū Bakr on the child's wife and al-Majd's «وظاهر هذا تداخل العدتين». Follow-on: where the husband himself is the one who erred, the ʿiddas merge, «إلا أن تحمل من أحد الوطأين ففي التداخل وجهان»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f004",
+      "encoder": "bain_in_idda_as_wife",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "in_idda": true,
+        "ties_cut": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "she builds on the first ʿidda (a riwāya; al-Qāḍī's «رواية واحدة» on the second ṭarīqa; the madhhab per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "she begins the ʿidda anew, as the rajʿiyya does (the other riwāya, on the first ṭarīqa)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "He divorces a consummated wife irrevocably, marries her again in her ʿidda, then divorces her before consummation: «ففيها طريقان: أحدهما: أنها على الروايتين في الرجعية إذا روجعت أو طلقت في العدة قبل الإصابة هل تبني أو تستأنف ... والثاني: تبني هنا رواية واحدة ... لانقطاع النكاح الثاني عن الأول بالبينونة بخلاف الرجعية». As a wife (on the first ṭarīqa, like the rajʿiyya), the second marriage joins the first and she begins the ʿidda anew. al-Inṣāf (v09:p301): «أولاهما: أنها تبني على ما مضى من العدة الأولى. لأن هذا طلاق من نكاح لا دخول فيه. فلا يوجب عدة) . هذا المذهب بلا ريب»; al-Iqnāʿ states it. Off the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f005",
+      "encoder": "bain_in_idda_as_wife",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "in_idda": true,
+        "ties_cut": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "she inherits (Aḥmad's naṣṣ in al-Barzāṭī's report; al-Qāḍī; the ẓāhir of the aṣḥāb)",
+          "ruling": true
+        },
+        {
+          "who": "the spouses do not inherit by Islam before the division at all (Abū Bakr, as al-Qāḍī reports him)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A Muslim dies, his wife a dhimmī, and she becomes Muslim in her ʿidda before the estate is divided: «فنص أحمد في رواية البرزاطي على أنها ترث ما لم تنقض عدتها ... وحكى القاضي عن أبي بكر أن الزوجين لا يتوارثان بالإسلام قبل القسمة بحال، قال وظاهر كلام الأصحاب خلافه». In her ʿidda she is as a wife: she inherits. Sharḥ al-Muntahā (v02:p552): «(زوجة) وأسلمت (في عدة) قبل القسم نصا»; al-Inṣāf gives the general rule (one who becomes Muslim before the division inherits) «وهذا المذهب». On the madhhab side. Follow-ons: the wife who became Muslim first and died in the ʿidda is not inherited by her kāfir husband though he becomes Muslim before the division, «لانقطاع علق الزوجية عنه بموتها» (the reading's bar: ties cut); and the bāʾin's maintenance: lodging and maintenance with pregnancy, otherwise none, «هذا ظاهر المذهب», with riwāyas of lodging alone and of both, and the qawl that she is as a wife in going out with his leave."
+    }
+  ]
+}

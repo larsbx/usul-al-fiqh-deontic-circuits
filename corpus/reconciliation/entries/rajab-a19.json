@@ -1,0 +1,447 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f000",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two riwāyas as al-Qāḍī reports them; al-Inṣāf labels purity of the re-attached part that took hold the madhhab. For the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p489",
+          "excerpt_ar": "فثبتت. فهي طاهرة) هذا المذهب. وعليه الجمهور، وقطع به أكثرهم.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of «فإن سقطت سنه فأعادها بحرارتها، فثبتت. فهي طاهرة»: the madhhab; the riwāya of impurity follows."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f001",
+      "grades": [
+        "nass",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Aḥmad's naṣṣ on the tooth and the jumhūr against al-Qāḍī; al-Inṣāf labels it the madhhab. For the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p098",
+          "excerpt_ar": "أخذها: ردها. هذا المذهب. وعليه جماهير الأصحاب. منهم: أبو بكر، وغيره، ونص",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of an adult's tooth or nail pulled out that grows back: «سقطت ديته. وإن كان قد أخذها: ردها»; al-Qāḍī's «تجب ديتها» follows."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f002",
+      "grades": [
+        [
+          "wajh",
+          "ashab"
+        ],
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two wujūh; al-Inṣāf labels the fall of the ḍamān on regrowth the madhhab of most of the aṣḥāb. For the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p557",
+          "excerpt_ar": "أحدهما: يسقط الضمان، وهو المذهب، وعليه أكثر الأصحاب. قال في المستوعب:",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of «فإن استخلف هو، أو الحشيش»: the ḍamān falls."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p557",
+          "excerpt_ar": "والرعايتين، وشرح ابن رزين، وغيرهم، والوجه الثاني: لا يسقط الضمان، جزم به",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Ifādāt and al-Mustawʿib, as al-Inṣāf reports them",
+          "note": "«جزم به في الإفادات. قال في المستوعب: هو الصحيح عندي»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f003",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Qāḍī and Ibn ʿAqīl against an unattributed wajh; al-Inṣāf labels no right to replace the beams the madhhab, with or without the old materials. For the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p106",
+          "excerpt_ar": "سقط عنه لهدم أو غيره: لم يملك رده) . هذا المذهب سواء أعيد الحائط بآلته",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "«... بآلته الأولى، أو بغيرها»: the old-materials branch the case is annotated for."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f004",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Qāḍī, Ibn ʿAqīl and al-Talkhīṣ against a wajh al-Talkhīṣ reports; al-Inṣāf gives no compulsion to renew «على الصحيح من المذهب». For the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p068",
+          "excerpt_ar": "وليس له إجباره على التجديد. على الصحيح من المذهب وقيل: بلى.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of the leased house that needs renewal: the lessee cannot compel the lessor to renew."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f006",
+      "grades": [
+        "ashab",
+        "takhrij",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The mashhūr per Ibn Rajab, his own tawajjuh, and a bare wajh; al-Inṣāf labels the voiding of the bequest the madhhab. For the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p215",
+          "excerpt_ar": "إحداهما: لو وصى له بدار، فانهدمت فأعادها. فالمذهب بطلان",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "«... الوصية قال في القواعد: هذا المشهور. ولا تعود بعود البناء»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f007",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two riwāyas; al-Inṣāf labels the bar on rebuilding the madhhab, with al-Taṣḥīḥ. For the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p237",
+          "excerpt_ar": "إحداهما: المنع من ذلك. وهو المذهب. صححه في التصحيح. وجزم به في الوجيز.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of «وفي بناء ما استهدم منها، ولو كلها: روايتان»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f001",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two riwāyas; al-Inṣāf labels restarting the ṭahāra the sound view of the madhhab. Against the reading: a residue of `badalStands`.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p190",
+          "excerpt_ar": "هذا الصحيح من المذهب، قال في الكافي: بطلت الطهارة في أشهر الروايتين. قال",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of «ومتى ظهر قدم الماسح ورأسه، أو انقضت مدة المسح استأنف الطهارة»; «وعنه يجزيه مسح رأسه وغسل قدميه» follows."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f002",
+      "grades": [
+        "nass",
+        [
+          "nass",
+          "ashab"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two riwāyas; Taṣḥīḥ al-Furūʿ names the ṣarf's standing «الصحيح» and al-Muntahā states it. For the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v06:p311",
+          "excerpt_ar": "إحداهما\" لا يبطل, وهو الصحيح, اختاره الخرقي والخلال والقاضي وأصحابه",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+          "note": "«فعلى هذه الراوية له البدل في مجلس الرد, فإن تفرقا قبله بطل العقد»."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p361",
+          "excerpt_ar": "مع أرش وأخذ بدله بمجلس رد فإن تفرقا قبله بطل وإن لم يكن من جنسه فتفرقا",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "Of a ṣarf in the dhimma with a defect of its genus found after parting: «وبعده له إمساكه مع أرش وأخذ بدله بمجلس رد»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f005",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Riwāyas; al-Inṣāf labels the exchange not even disliked the madhhab, so a fortiori permitted. For the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p279",
+          "excerpt_ar": "إحداهما: لا يكره. وهو المذهب. فقد رخص الإمام أحمد في شرائه. وجزم به في",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of «وفي كراهة شرائه وإبداله روايتان»; «وعنه يحرم» follows."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f006",
+      "grades": [
+        "nass",
+        "jazm"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Aḥmad's naṣṣ as Ibn Rajab reports it against the aṣḥāb's prohibition of selling the hide, which al-Inṣāf labels the sound view of the madhhab and Kashshāf states. Against the reading: a residue of `badalStands`.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p092",
+          "excerpt_ar": "(ولا يبيعه ولا شيئا منها) يحرم بيع الجلد والجل على الصحيح من المذهب",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "It goes on «وعنه: يجوز ويشتري به آلة البيت ... وعنه يجوز بيعها بمتاع البيت ... فيكون إبدالا», the exchange as a riwāya against the madhhab."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p013",
+          "excerpt_ar": "(ويحرم بيعهما) أي: بيع الجلد والجل لحديث علي قال «أمرني رسول الله -",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Decisive, with no exception for household vessels."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f007",
+      "grades": [
+        "nass",
+        [
+          "nass",
+          "ashab"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Aḥmad's naṣṣ against a riwāya Abū al-Khaṭṭāb chose; al-Inṣāf labels the transfer and the purchase of a better animal the sound view of the madhhab. For the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p089",
+          "excerpt_ar": "القواعد الفقهية بجواز إبدالها بخير منها وقال: نص عليه والصحيح من المذهب:",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "«... أنه يجوز له نقل الملك فيه وشراء خير منه نقله الجماعة عن أحمد وعليه أكثر الأصحاب»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f009",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two wujūh; al-Inṣāf labels the ʿitq standing the madhhab and Kashshāf states it. For the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p454",
+          "excerpt_ar": "يرتفع العتق) . هذا المذهب. جزم به في المحرر، والوجيز، والمنور، والهداية،",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of «وإذا أدى، وعتق. فوجد السيد بالعوض، عيبا فله أرشه أو قيمته. ولا يرتفع العتق»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p544",
+          "excerpt_ar": "فله) أي السيد (أرشه) إن أمسكه (أو عوضه إن رده ولم يبطل عتقه) لأنه إتلاف،",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Decisive."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f010",
+      "grades": [
+        [
+          "wajh",
+          "ashab"
+        ],
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two wujūh; Taṣḥīḥ al-Furūʿ resolves al-Furūʿ's unmarked khilāf for the ʿitq. For the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p142",
+          "excerpt_ar": "أحدهما: يعتق، وهو الصواب إن كان المعنى ما فسرتها به، وهو الظاهر، ثم",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+          "note": "Of «وفي عتقه بالاعتياض وجهان \"م 4\"», read as giving something else in place of what is owed."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p453",
+          "excerpt_ar": "والرعاية الكبرى. والصواب: العتق. اختاره المصنف، والشارح، وغيرهما. وعدم",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "His own «والصواب»; «وعدم العتق قاله القاضي» follows."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f011",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ibn Ḥāmid against al-Qāḍī; al-Muntahā, al-Iqnāʿ and Kashshāf state that payment in goods is no breach. For the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v05:p249",
+          "excerpt_ar": "يفارقه أو فارقه من غير إذن لا إذا أكره أو قضاه بحقه عرضا وفعل وكيله كهو",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "Of «لا فارقتك حتى أستوفي حقي منك»: he breaks it «... لا إذا أكره أو قضاه بحقه عرضا»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p272",
+          "excerpt_ar": "فارقه مكرها (أو قضاه عن حقه عرضا ثم فارقه) لأنه قضاه حقه (ك) ما لو حلف",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Under «(إلا أن يهرب) ... فلا يحنث»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p356",
+          "excerpt_ar": "عن حقه عرضا ثم فارقه: كلا فارقتك حتى تبرأ من حقي أن ولي قبلك حق وإن",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "Of «ولا أفارقك حتى أستوفي حقي منك»: he breaks it «... إلا أن يهرب منه بغير اختياره أو قضاه عن حقه عرضا ثم فارقه», as with «لا فارقتك حتى تبرأ من حقي»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f003",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The madhhab as Ibn Rajab states it against al-Majd's reading of Abū Bakr; al-Inṣāf labels it the madhhab of the jamāhīr. For the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p297",
+          "excerpt_ar": "هذا المذهب. وعليه جماهير الأصحاب. لأن العدتين من رجلين لا يتداخلان.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of «ثم استأنفت العدة من الوطء»: she completes the first ʿidda, then begins the second."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f004",
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two riwāyas; al-Inṣāf labels building on the first ʿidda the madhhab «بلا ريب». Against the reading: a residue of `bainAsWife`; the candidate farq is the second ṭarīqa's «لانقطاع النكاح الثاني عن الأول بالبينونة بخلاف الرجعية».",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p301",
+          "excerpt_ar": "لأن هذا طلاق من نكاح لا دخول فيه. فلا يوجب عدة) . هذا المذهب بلا ريب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of «وإذا طلقها طلاقا بائنا، ثم نكحها في عدتها، ثم طلقها فيها قبل دخوله بها ... أنها تبني على ما مضى من العدة الأولى»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f005",
+      "grades": [
+        [
+          "nass",
+          "jazm"
+        ],
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Aḥmad's naṣṣ and the ẓāhir of the aṣḥāb against Abū Bakr; Sharḥ al-Muntahā states it for the wife, and al-Inṣāf labels the general rule the madhhab. For the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p552",
+          "excerpt_ar": "(زوجة) وأسلمت (في عدة) قبل القسم نصا. روي عن عمر وعثمان والحسن بن علي،",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ al-Muntahā",
+          "note": "Under «إلا إذا أسلم كافر قبل قسم ميراث مورثه المسلم فيرث منه نصا»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p348",
+          "excerpt_ar": "المصنف. وهذا المذهب. جزم به في الوجيز، وغيره. قال في الرعايتين: هذا",
+          "position": 0,
+          "grade": "qiyas",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of the general rule «إلا أن يسلم قبل قسم ميراثه، فيرثه»; al-Inṣāf then has the wife alike, «ونص عليه في رواية البرزاطي ما لم تنقض عدتها»."
+        }
+      ]
+    }
+  ]
+}
