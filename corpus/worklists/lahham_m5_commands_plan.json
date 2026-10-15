@@ -810,5 +810,12 @@
       ],
       "note": "Within the stated first command position; the intended ruling is given. Untransmitted branches stay unsettled and the conflicting Qadi permission reports remain distinct."
     }
+  ],
+  "note_revisions": [
+    {
+      "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+      "note": "Whether an unqualified threat, or the words 'obligatory'/'fard' («إطلاق الوجوب أو الفرض»), are a text (nass) for obligation that admits no reinterpretation (al-Qadi: no; Abu al-Barakat, preferred: yes) asks whether an indication may override the default at all, whereas the kernel lets any qarina override every command.",
+      "reason": "English note names the Arabic term (problem register PR-02: «obligatory» is al-wujūb, «إطلاق الوجوب أو الفرض»); class, facts and needs unchanged"
+    }
   ]
 }

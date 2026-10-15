@@ -1,0 +1,67 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f002",
+      "grades": [
+        "takhrij",
+        [
+          "nass",
+          "ashab",
+          "jazm"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The confinement of the second tier to the named children's offspring is Ibn Rajab's takhrīj; Aḥmad's naṣṣ (Ḥarb) has all the grandchildren share, chosen by al-Muwaffaq and held by al-Iqnāʿ with Kashshāf. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p047",
+          "excerpt_ar": "ولد ولدي \" كان الوقف على المسلمين وأولادهما وأولاد الثالث، ولا شيء",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Muwaffaq, put first in al-Furūʿ, al-Mughnī and al-Sharḥ, as al-Inṣāf reports",
+          "note": "«ذكره المصنف مختارا له. وقدمه في الفروع، والمغني، والشرح. ونصراه ... وصححه الحارثي»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p047",
+          "excerpt_ar": "وجه بالاختصاص بولد من وقف عليهم، اعتبارا بآبائهم. وكذا الحكم والخلاف",
+          "position": 0,
+          "grade": "takhrij",
+          "who": "Ibn Rajab's takhrīj in this qāʿida, as al-Inṣāf reports it",
+          "note": "«وقال في القاعدة الثانية والعشرين بعد المائة: ويخرج وجه بالاختصاص»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p281",
+          "excerpt_ar": "وأولاد الثالث الذي لم يذكره لدخوله في عموم ولدي ولا شيء للثالث) جعلا",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Iqnāʿ with al-Buhūtī's Kashshāf",
+          "note": "The matn: «كان الوقف على المسمين، وأولادهما، وأولاد الثالث الذي لم يذكره ... ولا شيء للثالث»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f003",
+      "grades": [
+        "takhrij",
+        [
+          "nass",
+          "ashab"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Aḥmad's naṣṣ divorces the wife who asked, «وقطع به جماعة»; confining the general word to its cause is Ibn ʿAqīl's takhrīj of a second riwāya. Against the reading. Candidate farq for a jamʿ: the asker is herself the occasion of the answer, and the occasion is never taken out of the general (Sharḥ al-Muntahā on a cognate masʾala); not made here.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v11:p024",
+          "excerpt_ar": "تطلق على نصه وقطع به جماعة أخذا بالأعم من لفظ وسبب: وقوله لمن عليه دينه:",
+          "position": 1,
+          "grade": "nass",
+          "who": "Aḥmad's naṣṣ, as Ibn Mufliḥ reports it in al-Furūʿ",
+          "note": "«وكذا قوله جوابا لقولها تزوجت علي: كل امرأة لي طالق تطلق على نصه وقطع به جماعة»; al-Inṣāf (v11:p058) repeats it verbatim."
+        }
+      ]
+    }
+  ]
+}

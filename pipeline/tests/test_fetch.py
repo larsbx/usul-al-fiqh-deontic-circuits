@@ -34,6 +34,19 @@ def test_witness_urls_are_pinned():
     ar = {"kind": "archive", "item": "Pdf1995", "file": "a b.txt"}
     assert witness_url(ar) == "https://archive.org/download/Pdf1995/a%20b.txt"
     assert witness_url({"kind": "shamela", "book_id": 9942}) == "https://shamela.ws/book/9942/1"
+    assert witness_url({"kind": "url", "url": "https://example.org/a.doc"}) == "https://example.org/a.doc"
+
+
+def test_doc_witness_is_converted_beside_the_locked_original(tmp_path, monkeypatch):
+    """A Word witness: the lock pins the downloaded .doc; readers use the UTF-8 text beside it."""
+    import usul_corpus.fetch as F
+    calls = []
+    monkeypatch.setattr(F, "_get", lambda url: b"DOC")
+    monkeypatch.setattr(F, "doc_to_text", lambda doc: calls.append(doc) or doc.with_suffix(".txt"))
+    w = {"id": "x-doc", "kind": "url", "url": "https://example.org/a.doc", "format": "doc"}
+    entry = F.fetch(w, tmp_path)
+    assert (tmp_path / "x-doc.doc").read_bytes() == b"DOC" and calls == [tmp_path / "x-doc.doc"]
+    assert entry["bytes"] == 3 and entry["url"] == "https://example.org/a.doc"
 
 
 @pytest.mark.parametrize("err", [ConnectionResetError(104, "reset"), urllib.error.URLError("down"), TimeoutError()])
@@ -105,3 +118,18 @@ def test_merge_lock_keeps_derived_hashes_while_the_content_is_unchanged():
     new = {"witness": "w", "url": "u", "bytes": 4, "sha256": "bb"}
     assert merge_lock(old, new) == (new, True)  # derived hashes describe the old bytes: dropped
     assert merge_lock(None, new) == (new, False)
+
+
+def test_concurrent_pins_are_not_lost(tmp_path, monkeypatch):
+    """Two fetches pinning at once both land in lock.json (problem register PR-20)."""
+    import json
+    import threading
+    from usul_corpus import __main__ as cli
+    monkeypatch.setattr(cli, "CORPUS", tmp_path)
+    (tmp_path / "lock.json").write_text('{"witnesses": {}}')
+    ts = [threading.Thread(target=cli._pin, args=(f"w{i}", {"sha256": str(i)})) for i in range(8)]
+    for t in ts:
+        t.start()
+    for t in ts:
+        t.join()
+    assert set(json.loads((tmp_path / "lock.json").read_text())["witnesses"]) == {f"w{i}" for i in range(8)}

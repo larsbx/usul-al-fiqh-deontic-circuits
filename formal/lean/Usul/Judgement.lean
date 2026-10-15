@@ -118,6 +118,31 @@ theorem Question.khitab_wad_iff (q : Question) (a : q.Answer) : q.khitab a = .wa
 /-- Liability (ḍamān) is asked as a sabab: is this destruction or this hand a sabab of it? -/
 def Question.daman : Question := .wadi .sabab
 
+/-- A yes/no question about a taklīfī status. «يجوز» asks whether the act is permitted, that is, not
+forbidden; «يجب» asks whether it is obligatory. Each answer is a projection of the status, so it is a
+taklīfī question and needs a mukallaf like any other. -/
+inductive Aspect where
+  | obligatory | permitted
+  deriving DecidableEq, Repr
+
+def Aspect.holds : Aspect → Hukm → Bool
+  | .obligatory, h => h == .wajib
+  | .permitted, h => h != .haram
+
+theorem Aspect.permitted_iff (h : Hukm) : Aspect.permitted.holds h = true ↔ h ≠ .haram := by
+  cases h <;> decide
+
+/-- What is obligatory is permitted. -/
+theorem Aspect.obligatory_permitted (h : Hukm) (o : Aspect.obligatory.holds h = true) :
+    Aspect.permitted.holds h = true := by
+  cases h <;> simp_all [Aspect.holds]
+
+/-- The aspects agree with the status of the omission: the omission of an obligatory act is not
+permitted. -/
+theorem Aspect.omission_of_obligatory (h : Hukm) (o : Aspect.obligatory.holds h = true) :
+    Aspect.permitted.holds (Hukm.σ h) = false := by
+  cases h <;> simp_all [Aspect.holds, Hukm.σ]
+
 /-- A judgement: the answer to a question about an act and a subject, in a domain, held at a grade
 on named kinds of dalīl. -/
 structure Judgement (Act : Type) where

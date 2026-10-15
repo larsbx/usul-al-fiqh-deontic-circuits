@@ -43,6 +43,284 @@
         "Collect the Ḥanbalī uṣūl positions on the authority of a claimed ijmāʿ and on ijmāʿ sukūtī (al-ʿUdda, al-Tamhīd, al-Wāḍiḥ, al-Musawwada, Sharḥ al-Kawkab: all registered)."
       ],
       "status": "open-research"
+    },
+    {
+      "id": "RQ-02",
+      "title": "A qāʿida that itself leaves two unmarked sides: which one the reading takes",
+      "raised_by": "docs/architecture/taarud-reconciliation.md, lane A register sweep (Q80, Q95); lane A round 4 (Q121, Q128)",
+      "question": "Where Ibn Rajab's qāʿida states its own question as «فيه وجهان» or «قولان» without marking either, the reading must still return one side. Is the choice the annotator's (the side whose ground the text states, or a split that fits the furūʿ), or should such a qāʿida get two readings, one per side, with each farʿ annotated under both?",
+      "policy_in_force": "As is (bank applied, 2026-10-13): the reading takes the side the shard chose and says so in its docstring; Q80 `asTree` takes the wajh whose ground is stated, Q95 `errorActorLiable` splits the bare-ijtihād branch by acting as owner or negligence. The other side is a recorded position, and each farʿ where the later madhhab follows it is a residue in the ledger. The bank's tarjīḥ cannot rank two unmarked sides (wajh against wajh is a tie), and choosing one is a policy point (derivation-method §4, invariant 8). Round 4 adds two: Q121 `urfGeneralCovers` takes specialisation for the qāʿida's third class («ففيه وجهان»), which keeps 121.f006 derivable and leaves eight furūʿ off the later madhhab; Q128 `measuredAtInjury` takes the state at the injury, on «السراية ... تابعة للجناية», where Ibn Rajab names no side.",
+      "pins": [
+        "Usul.Readings.RajabA2.asTree",
+        "Usul.Readings.RajabA5.errorActorLiable",
+        "Usul.Reconcile.prevail",
+        "Usul.Readings.RajabA14.urfGeneralCovers",
+        "Usul.Readings.RajabA15.measuredAtInjury"
+      ],
+      "sources": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p157",
+          "excerpt_ar": "ما تكرر حمله من أصول البقول والخضراوات هل هو ملحق بالزرع أو بالشجر]",
+          "note": "Q80's own question, answered «فيه وجهان» on the next line."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p218",
+          "excerpt_ar": "إخراجه لحق الله إلى من يظنه مستحقا ثم تبين الخطأ، ففي ضمانه قولان، وإن",
+          "note": "Q95: the bare-ijtihād branch is left at «قولان»."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p274",
+          "excerpt_ar": "بقيد أو قرينة، ولا يكاد يفهم عند الإطلاق دخوله فيه، ففيه وجهان",
+          "note": "Q121's third class: a name mostly used with a qualifier, left at «وجهان»."
+        }
+      ],
+      "alternatives": [
+        "The annotator's choice, documented (the policy in force).",
+        "Two readings per such qāʿida, one per side, with the bank reporting each farʿ under both; madhhab coverage counts the side the later madhhab takes per farʿ.",
+        "The side the later madhhab takes on the majority of the qāʿida's furūʿ (an empirical choice from the ledger)."
+      ],
+      "research": [
+        "List every qāʿida whose statement leaves its own question at «وجهان»/«قولان»/«روايتان» unmarked (the readings' docstrings name them).",
+        "For Q80 and Q95, tabulate per farʿ which side al-Inṣāf and the muʿtamad take.",
+        "Check whether al-Mardāwī or Ibn Qāḍī al-Jabal (in his own qawāʿid) marks the qāʿida-level question."
+      ],
+      "status": "open-research"
+    },
+    {
+      "id": "RQ-03",
+      "title": "Qiyās al-madhhab on the farʿ against the muʿtamad's decisive statements",
+      "raised_by": "docs/architecture/taarud-reconciliation.md, tranche 11 (59.f005) and the lane A register sweep",
+      "question": "The bank's grade order puts qiyās al-madhhab (4) above the jazm of the aṣḥāb or a muʿtamad matn (5), and tarjīḥ is lexicographic, so one «قياس المذهب» of al-Qāḍī outweighs the decisive statements of al-Muntahā, Sharḥ al-Muntahā and Kashshāf (59.f005, iqāla after the thing sold perishes). Is that order right where the qiyās is on the farʿ itself and al-Inṣāf is undecided?",
+      "policy_in_force": "As is: `Usul.Reconcile.Grade` and its mirror order taṣḥīḥ > naṣṣ > ẓāhir > qiyās > jazm > aṣḥāb > takhrīj > wajh; 59.f005 resolves for the reading and is listed for review. The bank cannot decide this: the question is its own grade order.",
+      "pins": [
+        "Usul.Reconcile.Grade",
+        "Usul.Reconcile.prevail"
+      ],
+      "sources": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p109",
+          "excerpt_ar": "آخر قياس المذهب صحتها بعد التلف إذا قلنا هي فسخ وتابعه أبو الخطاب في",
+          "note": "al-Qāḍī's qiyās al-madhhab on 59.f005, followed by Abū al-Khaṭṭāb and Ibn ʿAqīl."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p250",
+          "excerpt_ar": "(وتصح) الإقالة (مع تلف ثمن لا مع تلف مبيع) ، لتعذر الرد فيه.",
+          "note": "The muʿtamad's jazm against it (al-Iqnāʿ in Kashshāf; al-Muntahā and its sharḥ likewise)."
+        }
+      ],
+      "alternatives": [
+        "Keep the order (the policy in force): a stated qiyās al-madhhab is a marked madhhab side, the muʿtamad's jazm only the aṣḥāb's.",
+        "Put jazm of a muʿtamad matn above qiyās: the later madhhab's settled statement outranks an earlier inference from it.",
+        "Split jazm: the muʿtamad's own jazm above qiyās, the aṣḥāb's at large below it."
+      ],
+      "research": [
+        "Collect every ledger entry where a qiyās-graded side beats only jazm-graded evidence (the report's `stages` and the evidence grades identify them).",
+        "Read al-Mardāwī's muqaddima to al-Inṣāf and Ibn Badrān's al-Madkhal on how «قياس المذهب» ranks against what later authors state decisively."
+      ],
+      "status": "open-research"
+    },
+    {
+      "id": "RQ-04",
+      "title": "Who «لا يتصرف» bars in al-Furūʿ's ruling on the halved dowry",
+      "raised_by": "docs/architecture/taarud-reconciliation.md, lane A round 1 (53.f009)",
+      "question": "In al-Furūʿ, «لو طلقها ثم عفا ففي صحته وجهان ويصح على الثاني، ولا يتصرف», corrected in Taṣḥīḥ al-Furūʿ as «يصح ولا يتصرف، وهذا الصحيح من المذهب»: is the one who does not dispose the husband (whose half is not yet his on the second view) or the wife (whose disposal of that half is the question of 53.f009)? The masculine verb points to the husband; al-Targhīb's two wujūh that follow, between the sale's option and the donor's option, concern the wife's disposal.",
+      "policy_in_force": "As is: 53.f009 reads it as barring the wife's disposal, so the reading (valid) is off the later madhhab and the ledger rests in its tarjīḥ. The bank cannot decide a pronoun.",
+      "pins": [
+        "Usul.Readings.RajabA3.disposalStands"
+      ],
+      "sources": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p338",
+          "excerpt_ar": "وعليه لو طلقها ثم عفا ففي صحته وجهان ويصح على الثاني، ولا يتصرف. وفي",
+          "note": "al-Furūʿ's wording."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p339",
+          "excerpt_ar": "المصنف قد قدم حكما وهو أنه يصح ولا يتصرف، وهذا الصحيح من المذهب.",
+          "note": "Taṣḥīḥ al-Furūʿ's taṣḥīḥ of it."
+        }
+      ],
+      "alternatives": [
+        "The wife does not dispose (the policy in force): 53.f009 off the madhhab, a residue.",
+        "The husband does not dispose: Taṣḥīḥ al-Furūʿ does not speak to the wife's disposal, the evidence is dropped and 53.f009 has no later treatment."
+      ],
+      "research": [
+        "Read the passage in al-Targhīb (or al-Inṣāf's report of it) for the subject of the two wujūh.",
+        "Check al-Mubdiʿ and Kashshāf on «إذا طلق ثم عفا» for the husband's disposal before he chooses."
+      ],
+      "status": "open-research"
+    },
+    {
+      "id": "RQ-05",
+      "title": "The witness's «لا» in 128.f003",
+      "raised_by": "docs/architecture/taarud-reconciliation.md, lane A round 4 (128.f003)",
+      "question": "The pinned witness attributes «قياس المذهب أنه لا يضمنه بألفين» to al-Qāḍī, but continues affirmatively «وقد قلنا يضمن بألفين إذا عتق». For the same cutting of both hands, value two thousand at injury and one thousand at death, which wording and interpretation are supported? Digital edition-labelled witnesses now differ; the locus and cause of the divergence are not established.",
+      "policy_in_force": "As is: 128.f003 is annotated by the argument (liable at two thousand, derivable under `measuredAtInjury`) and its note flags the «لا». The bank cannot decide a reading of the witness.",
+      "pins": [
+        "Usul.Readings.RajabA15.measuredAtInjury"
+      ],
+      "sources": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p289",
+          "excerpt_ar": "فقال القاضي في خلافه: قياس المذهب أنه لا يضمنه بألفين ; لأن نقصان القيمة",
+          "note": "The witness's wording."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p289",
+          "excerpt_ar": "كنقصان بدله بالحرية، وقد قلنا يضمن بألفين إذا عتق، كذلك هاهنا",
+          "note": "Internal support for the affirmative interpretation, not permission to delete «لا». The emancipation comparison is a different legal situation."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p288",
+          "excerpt_ar": "لكن يتفاوت قدر الضمان فيهما، فهل الاعتبار بحال السراية أو حال الجناية؟",
+          "note": "Q128 first qism; the next sentence says «على روايتين». The general measure is disputed, so this case cannot settle the reading globally (RQ-02)."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p289",
+          "excerpt_ar": "ومنها: لو قطع يدي عبد وقيمته ألفان ثم سرت إلى نفسه ومات وقيمته ألف",
+          "note": "Exact target facts. No emancipation in this example; freedom enters only as the comparison in the argument."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p470",
+          "excerpt_ar": "قيمته لسيده واختاره القاضي وأصحابه",
+          "note": "Adjacent emancipation case, not the target value-fall case. Al-Inṣāf attributes the value-for-master position to Abū Bakr, al-Qāḍī and his companions, while marking Ibn Ḥāmid's free-person diya position as the madhhab. Not evidence of target-case consensus."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v09:p375",
+          "excerpt_ar": "وعند أبي بكر والقاضي وأصحابه: دية ذمي لوارث مسلم",
+          "note": "Adjacent emancipation/conversion treatment, continued by «وقيمة عبد». Corroborates the surrounding attribution, not the numerical value-fall ruling or the disputed negation."
+        }
+      ],
+      "alternatives": [
+        "Affirmative reading: supported by the internal argument and two digitizations labelled as different editions. A candidate correction in an edited reading, never a silent alteration of the pinned witness; the stage at which «لا» entered remains unknown.",
+        "A distinction in the legal argument: requires a source explaining how the negative opening and affirmative analogy coexist in the same value-fall case. No such explanation was established; «لا يضمنه بألفين» alone does not assert liability at one thousand.",
+        "Suspend textual adjudication: preserve both attested digital readings and the existing candidate annotation, without treating textual uncertainty as genuine juristic ikhtilāf or claiming a clean derivation from the literal negated sentence."
+      ],
+      "research": [
+        "Inspect print images of Mashhūr 2:613 and Ṭāhā Saʿd 1:312–313, then Dār al-Fikr 1:289 and al-Bāz 1:332, including their apparatus; match edition metadata and pagination rather than assuming a digital transcription reproduces print.",
+        "Collate manuscript folios at this locus, including the witnesses named in Mashhūr's introduction. Silence in the displayed apparatus does not establish manuscript unanimity.",
+        "Locate the exact case in al-Qāḍī's al-Khilāf/al-Taʿlīq al-Kabīr if the relevant portion survives and is accessible. No direct text at this locus was inspected; catalogue hits for other sections are not corroboration.",
+        "Continue a scoped search of al-Inṣāf and al-Furūʿ for the numerical case. The inspected emancipation passages establish context only; failure to locate the exact case is not proof of its absence.",
+        "If later evidence changes the annotation, use revisions/revisit and regenerate its guards and reconciliation outputs under the derivation method; do not change a fact or expected output to match the encoder."
+      ],
+      "status": "open-research",
+      "collation": {
+        "date": "2026-10-14",
+        "status": "candidate",
+        "base_commit": "a867796051a716edd325c975b87b4ba98304ceeb",
+        "result": "digital-textual-divergence; editorial cause unresolved",
+        "witnesses": [
+          {
+            "id": "openiti-rajab-shamela21730",
+            "cache_group": "corpus",
+            "cache_file": "openiti-rajab-shamela21730.txt",
+            "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0795IbnRajabHanbali/0795IbnRajabHanbali.Qawacid/0795IbnRajabHanbali.Qawacid.Shamela0021730-ara1.completed",
+            "sha256": "f077fdf1ba4ec9cfecafed8b5e0023e850f57084e17463847cc238e3d1128e68",
+            "bytes": 1660710,
+            "edition_claim": "Metadata: Dār al-Fikr; year given uncertainly as 1900 (?).",
+            "independence_note": "The bank's pinned witness. Its negation is verified, not emended.",
+            "locator": "v01:p289",
+            "excerpt_ar": "لو قطع يدي عبد وقيمته ألفان ثم سرت إلى نفسه ومات وقيمته ألف فقال القاضي في خلافه: قياس المذهب أنه لا يضمنه بألفين ;",
+            "has_negation": true
+          },
+          {
+            "id": "rajab-mashhur-17894",
+            "cache_group": "rq05",
+            "cache_file": "0795IbnRajabHanbali.Qawacid.Sham19Y0017894-ara1",
+            "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0795IbnRajabHanbali/0795IbnRajabHanbali.Qawacid/0795IbnRajabHanbali.Qawacid.Sham19Y0017894-ara1",
+            "sha256": "791777135f2116144b7b2fea53186bcbed1716e4a4a60c4b54bb533d8de8d0ba",
+            "bytes": 3367735,
+            "edition_claim": "Metadata: Mashhūr Ḥasan Āl Salmān, Dār Ibn ʿAffān, first edition 1419 AH.",
+            "independence_note": "Different declared edition; digital transcription only, not a manuscript collation. The Arabic-keyboard mirror is not an additional independent witness.",
+            "locator": "v02:p613",
+            "excerpt_ar": "لو قطع يدي عبد وقيمته ألفان، ثم سرت إلى نفسه ومات وقيمته ألف؛ فقال القاضي في \"خلافه\": قياس المذهب أنه يضمنه بألفين؛",
+            "has_negation": false
+          },
+          {
+            "id": "rajab-sad-34191",
+            "cache_group": "rq05",
+            "cache_file": "0795IbnRajabHanbali.Qawacid.ShamAY0034191-ara3",
+            "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0795IbnRajabHanbali/0795IbnRajabHanbali.Qawacid/0795IbnRajabHanbali.Qawacid.ShamAY0034191-ara3",
+            "sha256": "d7c01e15a72eec29986357cc16140864a70a22ea4c0ae2501fea99efec5a49c4",
+            "bytes": 1627437,
+            "edition_claim": "Metadata: Ṭāhā ʿAbd al-Raʾūf Saʿd, Maktabat al-Kulliyyāt al-Azhariyya, first edition 1391 AH / 1971.",
+            "independence_note": "Different declared edition; digital transcription only. The affirmative continuation and «قال» are on p313.",
+            "locator": "v01:p312",
+            "excerpt_ar": "لو قطع يدي عبد وقيمته ألفان ثم سرت إلى نفسه ومات وقيمته ألف فقال القاضي في خلافه: قياس المذهب أنه يضمنه بألفين;",
+            "has_negation": false
+          },
+          {
+            "id": "rajab-baz-jk7052",
+            "cache_group": "rq05",
+            "cache_file": "0795IbnRajabHanbali.Qawacid.JK007052-ara1",
+            "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0795IbnRajabHanbali/0795IbnRajabHanbali.Qawacid/0795IbnRajabHanbali.Qawacid.JK007052-ara1",
+            "sha256": "156def7e58f59d3a848be761775067d0083490ed9c16153cc571a7e7b50fc366",
+            "bytes": 1631798,
+            "edition_claim": "Metadata: Maktabat Nizār Muṣṭafā al-Bāz, second edition, Mecca, 1999.",
+            "independence_note": "Same declared edition family and wording as ShamAY0034192; do not count these as two independent confirmations.",
+            "locator": "v01:p332",
+            "excerpt_ar": "لو قطع يدي عبد وقيمته ألفان ثم سرت إلى نفسه ومات وقيمته ألف فقال القاضي في خلافه قياس المذهب أنه لا يضمنه بألفين",
+            "has_negation": true
+          },
+          {
+            "id": "rajab-baz-34192",
+            "cache_group": "rq05",
+            "cache_file": "0795IbnRajabHanbali.Qawacid.ShamAY0034192-ara1",
+            "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0795IbnRajabHanbali/0795IbnRajabHanbali.Qawacid/0795IbnRajabHanbali.Qawacid.ShamAY0034192-ara1",
+            "sha256": "2863ebfa5123755bbe5949f6ddb7d546942ce4479575a1ea101994221a465497",
+            "bytes": 1640537,
+            "edition_claim": "Metadata: Maktabat Nizār Muṣṭafā al-Bāz, Mecca, 1999.",
+            "independence_note": "Same declared edition family and wording as JK007052; shared digital ancestry remains possible across all copies.",
+            "locator": "v01:p332",
+            "excerpt_ar": "لو قطع يدي عبد وقيمته ألفان ثم سرت إلى نفسه ومات وقيمته ألف فقال القاضي في خلافه قياس المذهب أنه لا يضمنه بألفين",
+            "has_negation": true
+          }
+        ],
+        "findings": [
+          "The complete pinned Q128 passage (pp288–290) was read and the source bytes matched corpus/lock.json. Both the negative opening and affirmative continuation occur in the same value-fall example. The heading distinguishes four liability states and leaves the first state's valuation at two riwāyāt.",
+          "All five checked digitizations give the same target situation: both hands cut, value two thousand then one thousand, death from the injury. None inserts emancipation into that example. Thus the discovered wording difference cannot be explained by different stated target facts.",
+          "Mashhūr 2:613 and Ṭāhā Saʿd 1:312 omit «لا» in al-Qāḍī's qiyās and insert «قال» before the reported consensus (Saʿd continuation 1:313). The pinned witness and both al-Bāz copies retain «لا» and lack that «قال». Record these as edition-labelled digital variants; no stemma or manuscript independence has been established.",
+          "The phrase «وهذا موضع مجمع عليه» is a report within the passage. The added «قال» in the affirmative digitizations matters for attribution. Neither that report nor internal coherence proves consensus independently or licenses deletion in the base witness.",
+          "The inspected al-Inṣāf 9:470–471 and al-Furūʿ 9:375–376 discuss injury followed by emancipation/conversion and allocation to master/heirs; they report the value position for Abū Bakr and al-Qāḍī but prefer or state free-person diya. They are contextual parallels only, not a vote against the target annotation.",
+          "A search of the three downloaded parallel works (al-Inṣāf, al-Furūʿ, al-Mubdiʿ) using the numerical, hand-cutting and injury/emancipation phrases did not establish an exact independent parallel to the value-fall example. No direct al-Khilāf passage or manuscript/print image at the disputed locus was verified.",
+          "The Arabic-keyboard Mashhūr transcription also has the affirmative reading (https://www.arabic-keyboard.info/books/ar/read-book/قواعد-ابن-رجب-ت-مشهور). It is a discovery aid, not another independent edition. The Shamela.org PDF listing describes BOK-to-PDF conversion and is not evidence of a scanned print witness. The aljam3 volume listing was accessible, but direct HTML retrieval returned HTTP 403 and no image at the target locus was inspected."
+        ],
+        "consequences": {
+          "case": "128.f003 remains the pre-existing candidate annotation under the policy in force. Its historical note is not rewritten. The affirmative interpretation has new textual corroboration, but is not the literal unambiguous ruling of every witness.",
+          "reading": "measuredAtInjury true true = true checks the chosen first-qism reading. Its Boolean output selects the injury state; it does not calculate 2000 or verify al-Qāḍī's words. Qualify its docstring and retain its definition, theorems and Python mirror.",
+          "classification": "Retain derivable conditionally on the annotated affirmative interpretation; no automatic promotion to reviewed/accepted. Textual divergence is not evidence of two juristic positions, so do not manufacture genuine_ikhtilaf. RQ-02 remains separate.",
+          "reconciliation": "No new graded ledger item or madhhab re-ranking: the target has no off-madhhab contradiction requiring S6, and the inspected parallels have different facts. These collation receipts are not ranked legal evidence.",
+          "provenance": "Source bytes, corpus lock, record receipts, case facts/expected/class, generated guards and coverage are unchanged. New external digitizations are research receipts with immutable URLs and hashes, not admitted corpus witnesses. RQ-05 remains open-research with no decision."
+        }
+      }
+    },
+    {
+      "id": "RQ-06",
+      "title": "A reading's scope beyond the qāʿida's own words",
+      "raised_by": "docs/architecture/taarud-reconciliation.md, lane A round 4 (Q129)",
+      "question": "Q129 asks whether the state at the shot or at the hit governs, «أم يفرق بين القود والضمان، أم بين أن يكون الرمي مباحا أو محظورا». The reading takes the qawad/ḍamān split and extends «القود» to every condition of the act that is not a liability (the lawfulness of game, 129.f006); and `aqilaBears` rests on al-Āmidī's ground quoted inside a farʿ, not on the qāʿida's heading. May a reading extend a qāʿida's terms, or add a reading grounded only inside one farʿ, to avoid a gap?",
+      "policy_in_force": "As is: both stand (invariant 7: a case a reading should cover gets a reading, not a gap), each docstring quotes its ground, and every case they decide is annotated `candidate`. No case's class depends on the extension being wrong.",
+      "pins": [
+        "Usul.Readings.RajabA16.hitStateGoverns",
+        "Usul.Readings.RajabA16.aqilaBears"
+      ],
+      "sources": [
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p290",
+          "excerpt_ar": "القود والضمان، أم بين أن يكون بين الرمي مباحا أو محظورا؟ فيه للأصحاب",
+          "note": "Q129's options: the split the reading takes, and the fourth it does not."
+        }
+      ],
+      "alternatives": [
+        "Extensions and farʿ-grounded readings stand, documented (the policy in force).",
+        "Only the qāʿida's own terms: 129.f006 becomes a gap (`rule:` the lawfulness of game), which invariant 7 forbids unless the text names another principle.",
+        "Take Q129's fourth option (a permitted or forbidden shot) as a second reading, and annotate each farʿ under both."
+      ],
+      "research": [
+        "Check al-Inṣāf and the muʿtamad on game shot by one who leaves iḥrām before it is hit, for the ground they give.",
+        "List readings in the bank whose docstring quotes a farʿ rather than the qāʿida's statement."
+      ],
+      "status": "open-research"
     }
   ]
 }

@@ -15,6 +15,20 @@
   "gaps_open": 54,
   "revisited": 0,
   "revisit_queue": [
+    "islamqa.223512.f001",
+    "islamqa.305083.f001",
+    "islamqa.305083.f002",
+    "islamqa.305083.f003",
+    "islamqa.317604.f001",
+    "islamqa.317604.f002",
+    "islamqa.344230.f002",
+    "islamqa.348122.f001",
+    "islamqa.348122.f002",
+    "islamqa.4046.f003",
+    "islamqa.5049.f001",
+    "islamqa.126387.f001",
+    "islamqa.126502.f001",
+    "islamqa.128510.f001",
     "islamqa.287215.f002"
   ],
   "per_encoder": {
@@ -66,6 +80,87 @@
       "gaps_open": 1,
       "encoders": 9
     },
+    "rajab_m8_pr30_furu": {
+      "total": 8,
+      "coverage": 0.875,
+      "decided_coverage": 0.5,
+      "disputed": 6,
+      "encoding_error": 0,
+      "gaps_open": 1,
+      "encoders": 8
+    },
+    "rajab_m8_q127_furu": {
+      "total": 9,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 4,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 1
+    },
+    "rajab_m8_rajab_a10_furu": {
+      "total": 23,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 12,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 5
+    },
+    "rajab_m8_rajab_a11_furu": {
+      "total": 23,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 12,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 4
+    },
+    "rajab_m8_rajab_a12_furu": {
+      "total": 22,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 18,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 4
+    },
+    "rajab_m8_rajab_a13_furu": {
+      "total": 23,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 15,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 6
+    },
+    "rajab_m8_rajab_a14_furu": {
+      "total": 22,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 19,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 3
+    },
+    "rajab_m8_rajab_a15_furu": {
+      "total": 22,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 10,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 3
+    },
+    "rajab_m8_rajab_a16_furu": {
+      "total": 13,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 5,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 4
+    },
     "rajab_m8_rajab_a1_furu": {
       "total": 25,
       "coverage": 1.0,
@@ -101,6 +196,51 @@
       "encoding_error": 0,
       "gaps_open": 0,
       "encoders": 5
+    },
+    "rajab_m8_rajab_a5_furu": {
+      "total": 24,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 14,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 3
+    },
+    "rajab_m8_rajab_a6_furu": {
+      "total": 22,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 5,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 5
+    },
+    "rajab_m8_rajab_a7_furu": {
+      "total": 22,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 15,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 4
+    },
+    "rajab_m8_rajab_a8_furu": {
+      "total": 21,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 10,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 5
+    },
+    "rajab_m8_rajab_a9_furu": {
+      "total": 21,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 12,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 8
     },
     "rajab_m8_tranche10_furu": {
       "total": 19,
@@ -181,7 +321,7 @@
       "disputed": 12,
       "encoding_error": 0,
       "gaps_open": 0,
-      "encoders": 5
+      "encoders": 6
     },
     "rajab_m8_tranche9_furu": {
       "total": 16,

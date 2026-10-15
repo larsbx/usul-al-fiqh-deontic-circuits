@@ -497,9 +497,14 @@ def _lit(v) -> str:
     return f".{v}"
 
 
-def lean_expr(encoder: str, facts: dict) -> str:
+def literal(encoder: str, fact: str, value) -> str:
+    """The Lean literal an encoder emits for one fact value."""
     lits = ENCODERS[encoder].get("lits", {})
-    return ENCODERS[encoder]["lean"].format(**{k: lits[k][v] if k in lits else _lit(v) for k, v in facts.items()})
+    return lits[fact][value] if fact in lits else _lit(value)
+
+
+def lean_expr(encoder: str, facts: dict) -> str:
+    return ENCODERS[encoder]["lean"].format(**{k: literal(encoder, k, v) for k, v in facts.items()})
 
 
 def check_case(case: dict) -> list[str]:

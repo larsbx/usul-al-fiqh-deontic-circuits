@@ -61,17 +61,17 @@
           "ref": "src:openiti-ibnmuflih-sham19y122256/v03:p1011",
           "excerpt_ar": "لا إجمال في: (وأحل الله البيع) (¬6)، خلافا للحلواني (¬7) وبعض الشافعية",
           "position": 0,
-          "grade": "jazm",
+          "grade": "takhrij",
           "who": "Ibn Mufliḥ, Uṣūl al-Fiqh",
-          "note": "Ibn Mufliḥ states flatly that the verse is not mujmal, naming al-Ḥulwānī as the dissenter."
+          "note": "Ibn Mufliḥ states flatly that the verse is not mujmal, naming al-Ḥulwānī as the dissenter. Audit 2026-10-10: this excerpt denies ijmāl, whereas position 0 asserts generality of al-bayʿ. Non-ijmāl alone does not establish universal scope; al-Taḥbīr v06:p2772 expressly distinguishes shumul, ahd and genus without istighraq. Support for this encoded position is by implication only, so takhrij replaces jazm. The original excerpt and attribution are preserved. The adjacent discussion in Sharh al-Kawkab v03:p427 expressly calls generality the correct reading while quoting al-Barmawi; review its attribution and grade separately rather than treating the shorter denial-of-ijmal excerpt as decisive jazm."
         },
         {
           "ref": "src:openiti-kawkab-shamela12019/v03:p426",
           "excerpt_ar": "\"ولا\" إجمال أيضا \"في\" قوله تعالى: {وأحل الله البيع} 5 عند الأكثر6.",
           "position": 0,
-          "grade": "jazm",
+          "grade": "takhrij",
           "who": "Ibn al-Najjār, Sharḥ al-Kawkab al-Munīr",
-          "note": "The muʿtamad uṣūl matn denies ijmāl in the verse and attributes this to the majority."
+          "note": "The muʿtamad uṣūl matn denies ijmāl in the verse and attributes this to the majority. Audit 2026-10-10: this excerpt denies ijmāl, whereas position 0 asserts generality of al-bayʿ. Non-ijmāl alone does not establish universal scope; al-Taḥbīr v06:p2772 expressly distinguishes shumul, ahd and genus without istighraq. Support for this encoded position is by implication only, so takhrij replaces jazm. The original excerpt and attribution are preserved. The adjacent discussion in Sharh al-Kawkab v03:p427 expressly calls generality the correct reading while quoting al-Barmawi; review its attribution and grade separately rather than treating the shorter denial-of-ijmal excerpt as decisive jazm."
         },
         {
           "ref": "src:openiti-tahbir-shamela6336/v06:p2772",
@@ -756,7 +756,11 @@
         "nass",
         "nass"
       ],
-      "jam": null,
+      "jam": {
+        "encoder": "cause_on_certainty",
+        "from": "cause_from_one_of_two",
+        "farq": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000"
+      },
       "naskh": null,
       "evidence": [
         {
