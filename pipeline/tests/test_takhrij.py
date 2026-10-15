@@ -105,3 +105,45 @@ def test_the_case_schema_admits_unit_ids():
     import re
     assert all(re.search(pattern, i) for i in ("a.b.q001.f001", "a.b.qa00001", "a.b.m00001", "a.b.b00001"))
     assert not re.search(pattern, "a.b.q001")
+
+
+def _issued(cases: list[dict]) -> dict[tuple[str, str], set[str]]:
+    """Each encoding (encoder, facts) mapped to the rulings the bank issues for it: the expected
+    value of every case it guards with ==."""
+    out: dict[tuple[str, str], set[str]] = {}
+    for c in cases:
+        if takhrij.GUARDED.get(c["class"]) == "==":
+            key = (c["encoder"], json.dumps(c["facts"], sort_keys=True, ensure_ascii=False))
+            out.setdefault(key, set()).add(json.dumps(c["expected"], ensure_ascii=False))
+    return out
+
+
+def _bank() -> list[dict]:
+    from usul_corpus import fatawa_takhrij
+    return takhrij.load(ROOT / "corpus") + fatawa_takhrij.load(ROOT / "corpus")
+
+
+def test_one_encoding_issues_one_ruling():
+    """Determinism across the whole bank (both lanes): an encoding issues exactly one ruling, the
+    kernel's own output on it."""
+    issued = _issued(_bank())
+    assert {k: v for k, v in issued.items() if len(v) > 1} == {}
+    for (enc, facts), (ruling,) in issued.items():
+        assert json.dumps(takhrij.ENCODERS[enc]["py"](json.loads(facts)), ensure_ascii=False) == ruling, (enc, facts)
+
+
+def test_two_rulings_for_one_encoding_are_caught():
+    unknown = {"entitled_known": False, "divisible": False, "confusion_category": False}
+    issued = _issued([_case("derivable", unknown, "lot"), _case("genuine_ikhtilaf", dict(reversed(unknown.items())), "divide")])
+    assert [len(v) for v in issued.values()] == [2]
+
+
+def test_expected_is_a_kernel_value_and_a_gap_states_its_ruling_apart():
+    """`expected` is an encoder output or null; a gap the kernel does not decide has none, its ruling
+    in the text's words going in `stated_ruling`."""
+    for c in _bank():
+        if c.get("expected") is not None:
+            assert c["expected"] in takhrij.ENCODERS[c["encoder"]]["out"], c["far"]
+        if c["class"] in takhrij.GAPS and c["class"] not in takhrij.GUARDED:
+            assert c.get("expected") is None, c["far"]
+        assert c["class"] in takhrij.GAPS or "stated_ruling" not in c, c["far"]

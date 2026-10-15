@@ -24,7 +24,8 @@
         }
       ],
       "routing_label": false,
-      "expected": "Ahmad requires wudu for genital touch, camel meat and a kiss with desire; not for the other listed acts."
+      "stated_ruling": "Ahmad requires wudu for genital touch, camel meat and a kiss with desire; not for the other listed acts.",
+      "expected": null
     },
     {
       "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00425",
@@ -38,7 +39,8 @@
         "rule:tayammum_time_fear"
       ],
       "routing_label": false,
-      "expected": "Ahmad allows tayammum when fearing the prayer time will be missed; the Ibn Umar report says no repeat."
+      "stated_ruling": "Ahmad allows tayammum when fearing the prayer time will be missed; the Ibn Umar report says no repeat.",
+      "expected": null
     },
     {
       "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00518",
@@ -73,7 +75,8 @@
         "rule:zakat_sale_hawl"
       ],
       "routing_label": false,
-      "expected": "Nontrade sale proceeds require a new year from sale; trade property follows the earlier commercial cycle."
+      "stated_ruling": "Nontrade sale proceeds require a new year from sale; trade property follows the earlier commercial cycle.",
+      "expected": null
     },
     {
       "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00642",
@@ -86,7 +89,8 @@
         "rule:fitr_coownership_shares"
       ],
       "routing_label": false,
-      "expected": "Each co-owner pays fitr in proportion to his share."
+      "stated_ruling": "Each co-owner pays fitr in proportion to his share.",
+      "expected": null
     },
     {
       "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00653",
@@ -99,7 +103,8 @@
         "rule:zakat_distribution_authorization"
       ],
       "routing_label": false,
-      "expected": "Ishaq reads Ali's direction to distribute as permission."
+      "stated_ruling": "Ishaq reads Ali's direction to distribute as permission.",
+      "expected": null
     },
     {
       "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00887",
@@ -112,7 +117,8 @@
         "rule:divorce_and_idda_status"
       ],
       "routing_label": false,
-      "expected": "Divorce count follows the man's status; idda follows the woman's."
+      "stated_ruling": "Divorce count follows the man's status; idda follows the woman's.",
+      "expected": null
     },
     {
       "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00945",
@@ -125,7 +131,8 @@
         "rule:fifth_marriage_idda_bar"
       ],
       "routing_label": false,
-      "expected": "A fifth marriage waits until the divorced wife's idda ends; death permits marriage."
+      "stated_ruling": "A fifth marriage waits until the divorced wife's idda ends; death permits marriage.",
+      "expected": null
     },
     {
       "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m01212",
@@ -148,7 +155,8 @@
         }
       ],
       "routing_label": false,
-      "expected": "Ahmad says the condition persists until breached, whether triple or single divorce."
+      "stated_ruling": "Ahmad says the condition persists until breached, whether triple or single divorce.",
+      "expected": null
     },
     {
       "far": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m03427",
@@ -161,7 +169,8 @@
         "rule:hajj_miqat_after_umra"
       ],
       "routing_label": false,
-      "expected": "The stated hajj miqat after umra was Mecca."
+      "stated_ruling": "The stated hajj miqat after umra was Mecca.",
+      "expected": null
     },
     {
       "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00052",
@@ -174,7 +183,8 @@
         "rule:wudu_nullifiers"
       ],
       "routing_label": false,
-      "expected": "Laughing in prayer does not require renewed ablution; touching the armpit also does not."
+      "stated_ruling": "Laughing in prayer does not require renewed ablution; touching the armpit also does not.",
+      "expected": null
     },
     {
       "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00196",
@@ -187,7 +197,8 @@
         "rule:prayer_behind_intoxicant_drinker"
       ],
       "routing_label": false,
-      "expected": "Ahmad permits praying behind the described drinker."
+      "stated_ruling": "Ahmad permits praying behind the described drinker.",
+      "expected": null
     },
     {
       "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00355",
@@ -200,7 +211,8 @@
         "rule:witr_before_fajr_prayer"
       ],
       "routing_label": false,
-      "expected": "Perform witr until the morning prayer has been performed."
+      "stated_ruling": "Perform witr until the morning prayer has been performed.",
+      "expected": null
     },
     {
       "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00529",
@@ -213,7 +225,8 @@
         "rule:ihram_time_by_residency"
       ],
       "routing_label": false,
-      "expected": "The arriving mutamatti enters hajj ihram on Tarwiya; the Meccan report is tied to seeing the crescent."
+      "stated_ruling": "The arriving mutamatti enters hajj ihram on Tarwiya; the Meccan report is tied to seeing the crescent.",
+      "expected": null
     },
     {
       "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00649",
@@ -226,7 +239,8 @@
         "rule:shroud_three_cloths"
       ],
       "routing_label": false,
-      "expected": "Ahmad prefers three wrapping cloths."
+      "stated_ruling": "Ahmad prefers three wrapping cloths.",
+      "expected": null
     },
     {
       "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00683",
@@ -239,7 +253,8 @@
         "rule:funeral_carrying_sequence"
       ],
       "routing_label": false,
-      "expected": "Circling the bier is permitted; a particular right/left carrying sequence is preferred."
+      "stated_ruling": "Circling the bier is permitted; a particular right/left carrying sequence is preferred.",
+      "expected": null
     },
     {
       "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01051",
@@ -253,7 +268,8 @@
         "rule:oath_context_intention"
       ],
       "routing_label": false,
-      "expected": "Interpret the milk oath in its original context; the butter outcome is not settled here."
+      "stated_ruling": "Interpret the milk oath in its original context; the butter outcome is not settled here.",
+      "expected": null
     },
     {
       "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01087",
@@ -266,7 +282,8 @@
         "rule:qisas_status_equivalence"
       ],
       "routing_label": false,
-      "expected": "The quoted position bars retaliation against a free person for a slave."
+      "stated_ruling": "The quoted position bars retaliation against a free person for a slave.",
+      "expected": null
     },
     {
       "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01254",
@@ -279,7 +296,8 @@
         "rule:intoxicant_small_quantity"
       ],
       "routing_label": false,
-      "expected": "A small quantity of that whose large quantity intoxicates is forbidden."
+      "stated_ruling": "A small quantity of that whose large quantity intoxicates is forbidden.",
+      "expected": null
     },
     {
       "far": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01272",
@@ -292,7 +310,8 @@
         "rule:quran_wash_drink"
       ],
       "routing_label": false,
-      "expected": "Ahmad expresses hope that drinking the washing of written Quran is unobjectionable."
+      "stated_ruling": "Ahmad expresses hope that drinking the washing of written Quran is unobjectionable.",
+      "expected": null
     },
     {
       "far": "harb.masail.openiti_harb_masail_shamela12527.m00014",
@@ -305,7 +324,8 @@
         "rule:chronological_marriage_priority"
       ],
       "routing_label": false,
-      "expected": "The earlier marriage stands; Ahmad says the grandfather is slightly closer."
+      "stated_ruling": "The earlier marriage stands; Ahmad says the grandfather is slightly closer.",
+      "expected": null
     },
     {
       "far": "harb.masail.openiti_harb_masail_shamela12527.m00100",
@@ -332,7 +352,8 @@
         }
       ],
       "routing_label": false,
-      "expected": "Ishaq requires half the mahr without khalwa; valid seclusion can require all, with stated impediment exceptions."
+      "stated_ruling": "Ishaq requires half the mahr without khalwa; valid seclusion can require all, with stated impediment exceptions.",
+      "expected": null
     },
     {
       "far": "harb.masail.openiti_harb_masail_shamela12527.m00102",
@@ -355,7 +376,8 @@
         }
       ],
       "routing_label": false,
-      "expected": "Ishaq rejects the listed intervening marriages for restoration to the former husband."
+      "stated_ruling": "Ishaq rejects the listed intervening marriages for restoration to the former husband.",
+      "expected": null
     },
     {
       "far": "harb.masail.openiti_harb_masail_shamela12527.m00196",
@@ -370,7 +392,8 @@
         "rule:inheritance_after_unidentified_divorce"
       ],
       "routing_label": false,
-      "expected": "Ishaq suspends determination and denies inheritance if the divorced wife is unknown."
+      "stated_ruling": "Ishaq suspends determination and denies inheritance if the divorced wife is unknown.",
+      "expected": null
     },
     {
       "far": "harb.masail.openiti_harb_masail_shamela12527.m00245",
@@ -385,7 +408,8 @@
         "rule:conditional_divorce_intention_and_idda"
       ],
       "routing_label": false,
-      "expected": "Ishaq assigns three divorces under the stated joint intention; further divorce can occur during idda."
+      "stated_ruling": "Ishaq assigns three divorces under the stated joint intention; further divorce can occur during idda.",
+      "expected": null
     },
     {
       "far": "harb.masail.openiti_harb_masail_shamela12527.m00283",
@@ -398,7 +422,8 @@
         "rule:revocable_delegation_of_divorce"
       ],
       "routing_label": false,
-      "expected": "Ahmad finds the absent husband's delegation uncontrolled because he may retract."
+      "stated_ruling": "Ahmad finds the absent husband's delegation uncontrolled because he may retract.",
+      "expected": null
     },
     {
       "far": "harb.masail.openiti_harb_masail_shamela12527.m00323",
@@ -421,7 +446,8 @@
         }
       ],
       "routing_label": false,
-      "expected": "Ahmad counts a year from cessation when no cause is known; illness/lactation requires waiting for return."
+      "stated_ruling": "Ahmad counts a year from cessation when no cause is known; illness/lactation requires waiting for return.",
+      "expected": null
     },
     {
       "far": "harb.masail.openiti_harb_masail_shamela12527.m00390",
@@ -446,7 +472,8 @@
         }
       ],
       "routing_label": false,
-      "expected": "Ahmad denies the freed woman an option after intercourse whether or not she knew of it."
+      "stated_ruling": "Ahmad denies the freed woman an option after intercourse whether or not she knew of it.",
+      "expected": null
     },
     {
       "far": "harb.masail.openiti_harb_masail_shamela12527.m00435",
@@ -459,7 +486,8 @@
         "rule:medicinal_substance_permission"
       ],
       "routing_label": false,
-      "expected": "The narrator reports limited easing by Ahmad concerning the stated purgative/iron substance."
+      "stated_ruling": "The narrator reports limited easing by Ahmad concerning the stated purgative/iron substance.",
+      "expected": null
     },
     {
       "far": "harb.masail.openiti_harb_masail_shamela12527.m00465",
@@ -482,7 +510,8 @@
         }
       ],
       "routing_label": false,
-      "expected": "Ahmad permits a kunya for a dhimmi and a child; al-Awzai disallows the dhimmi kunya."
+      "stated_ruling": "Ahmad permits a kunya for a dhimmi and a child; al-Awzai disallows the dhimmi kunya.",
+      "expected": null
     },
     {
       "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00098",
@@ -495,7 +524,8 @@
         "rule:inheritance_base_and_awl"
       ],
       "routing_label": false,
-      "expected": "The text lists estate denominator bases and their possible awl increases."
+      "stated_ruling": "The text lists estate denominator bases and their possible awl increases.",
+      "expected": null
     },
     {
       "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00108",
@@ -510,7 +540,8 @@
         "rule:tadbir_kitaba_compatibility"
       ],
       "routing_label": false,
-      "expected": "Tadbir and kitaba may coexist with stated payment/death/one-third consequences; offspring take the mother's status."
+      "stated_ruling": "Tadbir and kitaba may coexist with stated payment/death/one-third consequences; offspring take the mother's status.",
+      "expected": null
     },
     {
       "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00151",
@@ -523,7 +554,8 @@
         "rule:wine_vinegar_purity"
       ],
       "routing_label": false,
-      "expected": "Spontaneous vinegar is pure/permitted; deliberate conversion does not purify."
+      "stated_ruling": "Spontaneous vinegar is pure/permitted; deliberate conversion does not purify.",
+      "expected": null
     },
     {
       "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00176",
@@ -551,7 +583,8 @@
         "rule:judicial_lot_oath"
       ],
       "routing_label": false,
-      "expected": "With unknown ownership and two proofs, draw lots for the oath; the winner swears and takes."
+      "stated_ruling": "With unknown ownership and two proofs, draw lots for the oath; the winner swears and takes.",
+      "expected": null
     },
     {
       "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00060",
@@ -564,7 +597,8 @@
         "rule:itikaf_vow_conditions"
       ],
       "routing_label": false,
-      "expected": "Itikaf is recommended, valid without fasting, and both become binding through a vow."
+      "stated_ruling": "Itikaf is recommended, valid without fasting, and both become binding through a vow.",
+      "expected": null
     },
     {
       "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00111",
@@ -590,7 +624,8 @@
         "rule:walima_explicit_or_implied_permission"
       ],
       "routing_label": false,
-      "expected": "Eating requires explicit permission or an indicating circumstance; accepting invitation has separate conditions."
+      "stated_ruling": "Eating requires explicit permission or an indicating circumstance; accepting invitation has separate conditions.",
+      "expected": null
     },
     {
       "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00236",
@@ -603,7 +638,8 @@
         "rule:qisas_status_equivalence"
       ],
       "routing_label": false,
-      "expected": "The matn states immunity, capacity, equivalence and nonparenthood conditions for qisas."
+      "stated_ruling": "The matn states immunity, capacity, equivalence and nonparenthood conditions for qisas.",
+      "expected": null
     },
     {
       "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00259",
@@ -616,7 +652,8 @@
         "rule:ignorance_notice_apparent_prohibition"
       ],
       "routing_label": false,
-      "expected": "The text distinguishes ignorance requiring instruction from an asserted absence of such ignorance."
+      "stated_ruling": "The text distinguishes ignorance requiring instruction from an asserted absence of such ignorance.",
+      "expected": null
     }
   ]
 }

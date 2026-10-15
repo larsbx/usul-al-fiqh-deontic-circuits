@@ -56,7 +56,14 @@
               "null"
             ]
           },
-          "expected": {},
+          "expected": {
+            "description": "The encoder's output the case is guarded at (derivable, ikhtilāf, encoding error); null on a gap, which the kernel does not decide."
+          },
+          "stated_ruling": {
+            "type": "string",
+            "minLength": 1,
+            "description": "A gap's ruling as the text states it, in English: what a future reading must derive. Never a kernel output."
+          },
           "positions": {
             "type": "array",
             "items": {
