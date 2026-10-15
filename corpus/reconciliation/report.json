@@ -1,6 +1,6 @@
 {
-  "entries": 602,
-  "evidence_items": 2139,
+  "entries": 608,
+  "evidence_items": 2157,
   "side_checks": [
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002",
@@ -13,10 +13,11 @@
   "stages": {
     "jam": 20,
     "naskh": 1,
-    "tarjih": 567,
+    "tarjih": 573,
     "tawaqquf": 14
   },
   "basis": {
+    "dalil": 6,
     "jam": 20,
     "madhhab": 567,
     "naskh": 1,
@@ -25,6 +26,7 @@
   "standing": {
     "against_reading": 174,
     "for_reading": 414,
+    "no_reading": 6,
     "tawaqquf": 14
   },
   "worklist": {
