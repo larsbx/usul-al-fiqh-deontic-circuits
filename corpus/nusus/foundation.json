@@ -108,6 +108,46 @@
    "witness": "tanzil-quran-simple",
    "excerpt_ar": "وَعَلَى الَّذِينَ يُطِيقُونَهُ فِدْيَةٌ طَعَامُ مِسْكِينٍ",
    "en": "«and on those who can bear it with hardship, a fidya: feeding a poor man»"
+  },
+  {
+   "id": "Q004:043b",
+   "sura": 4,
+   "aya": 43,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَلَمْ تَجِدُوا مَاءً فَتَيَمَّمُوا صَعِيدًا طَيِّبًا",
+   "en": "«and you find no water (māʾ), then make tayammum with clean earth (ṣaʿīd)»: al-Mughnī reads «ماء» as indefinite after a negation («نكرة في سياق النفي»), so general for every water"
+  },
+  {
+   "id": "Q005:006c",
+   "sura": 5,
+   "aya": 6,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "فَلَمْ تَجِدُوا مَاءً فَتَيَمَّمُوا صَعِيدًا طَيِّبًا",
+   "en": "«and you find no water (māʾ), then make tayammum with clean earth (ṣaʿīd)»: tayammum only for one who does not find water (al-Mughnī: «فاشترط أن لا يجد الماء»)"
+  },
+  {
+   "id": "Q005:006d",
+   "sura": 5,
+   "aya": 6,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "إِذَا قُمْتُمْ إِلَى الصَّلَاةِ فَاغْسِلُوا وُجُوهَكُمْ وَأَيْدِيَكُمْ إِلَى الْمَرَافِقِ وَامْسَحُوا بِرُءُوسِكُمْ وَأَرْجُلَكُمْ إِلَى الْكَعْبَيْنِ",
+   "en": "the āya of wuḍūʾ: «when you rise to prayer, wash (ighsilū: ghasl) your faces and your hands to the elbows, wipe (masḥ) your heads, and your feet to the ankles»; it names no tasmiya («فلم يذكرها», al-Mubdiʿ)"
+  },
+  {
+   "id": "Q005:005",
+   "sura": 5,
+   "aya": 5,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَطَعَامُ الَّذِينَ أُوتُوا الْكِتَابَ حِلٌّ لَّكُمْ",
+   "en": "«the food of those given the Book is lawful (ḥill) for you»: al-Mughnī, after Ibn ʿAqīl, from it that their vessels are not ḥarām («لا يحرم استعمال أوانيهم»)"
+  },
+  {
+   "id": "Q047:033",
+   "sura": 47,
+   "aya": 33,
+   "witness": "tanzil-quran-simple",
+   "excerpt_ar": "وَلَا تُبْطِلُوا أَعْمَالَكُمْ",
+   "en": "«and do not render your deeds void» (ibṭāl: «ولا تبطلوا»)"
   }
  ],
  "ahadith": [
@@ -734,6 +774,132 @@
    "cited_by": [
     "sadi.tariq_wusul.archive_tariq_tess.q636"
    ]
+  },
+  {
+   "id": "H-tasmiya-wudu",
+   "narrator": "Abū Hurayra",
+   "matn_ar": "لا صلاة لمن لا وضوء له، ولا وضوء لمن لم يذكر اسم الله تعالى عليه",
+   "en": "«no wuḍūʾ for one who does not mention the name of God over it»: the tasmiya of wuḍūʾ; its holders read the negation as of the wuḍūʾ itself («نفي في نكرة», al-Mughnī), so wājib",
+   "sources": [
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 101,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 81,
+    "verdict": "hasan",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-aisha-ghusl-wudu",
+   "narrator": "ʿĀʾisha",
+   "matn_ar": "كان إذا اغتسل من الجنابة، بدأ فغسل يديه، ثم يتوضأ كما يتوضأ للصلاة",
+   "en": "the Prophet's ghusl from janāba began with a wuḍūʾ as for prayer: his act (fiʿl)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 248,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    },
+    {
+     "work": "tirmidhi.jami",
+     "witness": "openiti-tirmidhi-shamela7895",
+     "number": 104,
+     "numbering": "Aḥmad Shākir et al. (Shamela 7895)",
+     "matn_ar": "ويتوضأ وضوءه للصلاة، ثم يشرب شعره الماء"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 132,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-abi-thalaba-aniya",
+   "narrator": "Abū Thaʿlaba al-Khushanī",
+   "matn_ar": "فإن وجدتم غيرها فلا تأكلوا فيها، وإن لم تجدوا فاغسلوها وكلوا فيها",
+   "en": "the vessels of the People of the Book: «if you find others, do not eat in them; if you do not, wash them (ghasl) and eat in them»",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 5478,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 37,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-abu-dharr-said",
+   "narrator": "Abū Dharr",
+   "matn_ar": "إن الصعيد الطيب طهور المسلم وإن لم يجد الماء عشر سنين فإذا وجد الماء فليمسه بشرته",
+   "en": "«clean earth (al-ṣaʿīd) is the Muslim's ṭahūr though he find no water for ten years; when he finds water, let him touch his skin with it»",
+   "sources": [
+    {
+     "work": "tirmidhi.jami",
+     "witness": "openiti-tirmidhi-shamela7895",
+     "number": 124,
+     "numbering": "Aḥmad Shākir et al. (Shamela 7895)"
+    },
+    {
+     "work": "abu_dawud.sunan",
+     "witness": "openiti-abudawud-shamela1726",
+     "number": 332,
+     "numbering": "Muḥyī al-Dīn ʿAbd al-Ḥamīd (Shamela 1726); not al-Albānī's Ṣaḥīḥ Abī Dāwūd numbering",
+     "matn_ar": "الصعيد الطيب وضوء المسلم ولو إلى عشر سنين، فإذا وجدت الماء فأمسه جلدك"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 153,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
+  },
+  {
+   "id": "H-ma-statatum",
+   "narrator": "Abū Hurayra",
+   "matn_ar": "أمرتكم بأمر فأتوا منه ما استطعتم",
+   "en": "«when I command you a thing, do of it what you are able»: capability of part (al-Mughnī on water enough for some limbs)",
+   "sources": [
+    {
+     "work": "bukhari.sahih",
+     "witness": "openiti-bukhari-shamela1681",
+     "number": 7288,
+     "numbering": "Fuʾād ʿAbd al-Bāqī, as in Dār Ṭawq al-Najāh (Shamela 1681)"
+    },
+    {
+     "work": "muslim.sahih",
+     "witness": "openiti-muslim-shamela1727",
+     "number": 1337,
+     "numbering": "Muḥammad Fuʾād ʿAbd al-Bāqī (Shamela 1727)",
+     "matn_ar": "فإذا أمرتكم بشيء فأتوا منه ما استطعتم"
+    }
+   ],
+   "albani": {
+    "work": "albani.irwa",
+    "witness": "shamela-22592",
+    "number": 155,
+    "verdict": "sahih",
+    "numbering": "al-Irwāʾ's own entry numbers"
+   }
   }
  ],
  "athar": [
@@ -756,6 +922,16 @@
    "witness": "shamela-22592",
    "status": "maqtu",
    "albani_ar": "وأخرج عبد الرزاق من قول شريح"
+  },
+  {
+   "id": "A-aisha-khamsin",
+   "by": "ʿĀʾisha",
+   "excerpt_ar": "إذا بلغت المرأة خمسين سنة خرجت من حد الحيض",
+   "en": "«when a woman reaches fifty years she leaves the bound of ḥayḍ»: Aḥmad mentions it and al-Mughnī gives it for the fifty riwāya («لما روي عن عائشة»); al-Albānī (al-Irwāʾ 186) did not find it («لم أقف عليه»), so it carries no verdict",
+   "work": "albani.irwa",
+   "witness": "shamela-22592",
+   "status": "mawquf",
+   "albani_ar": "لم أقف عليه. ولا أدرى فى أى كتاب ذكره أحمد"
   }
  ]
 }
