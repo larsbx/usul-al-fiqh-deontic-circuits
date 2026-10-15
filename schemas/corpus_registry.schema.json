@@ -45,6 +45,7 @@
                          "start": {"type": "string", "description": "masail: regex an entry's opening line starts with; a named group n is the printed number"},
                          "end": {"type": "string", "description": "abwab: regex for the heading that closes the matn (closing matter, bibliography)"},
                          "body_headings": {"type": "boolean", "description": "abwab: short body lines «كتاب …», «باب …» open units, and end is matched on body lines"},
+                         "kitab_headings": {"type": "array", "items": {"type": "string"}, "description": "abwab: exact headings an edition prints as a bāb that open a kitāb"},
                          "ordered": {"type": "boolean", "description": "masail: only the longest increasing run of printed numbers opens entries"},
                          "anchor_step": {"type": "integer", "minimum": 1, "description": "numbered: full-length reads may bridge gaps up to this size"},
                          "index": {"type": "boolean", "description": "also read the closing index «marker <ordinal>: statement»"}}

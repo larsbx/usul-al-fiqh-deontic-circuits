@@ -9,7 +9,9 @@ as its title. A heading matching the work's ``end`` pattern closes the matn, so 
 matter and bibliography are not absorbed by its last faṣl. With ``body_headings``, a witness that prints its
 headings as body lines (*al-Ghurar al-Naqiyya*: «# كتاب الطهارة», «# باب المياه») opens a unit at a
 short body line beginning «كتاب» or «باب», and ``end`` is matched on body lines too, since such a
-witness also prints the marker of its closing endnotes as one. A unit runs from one opening to the next and carries its path: the titles
+witness also prints the marker of its closing endnotes as one. ``kitab_headings`` corrects an edition
+that prints a kitāb as a bāb («باب النكاح» in *al-Ghurar*, «كتاب النكاح» in the matn's other witnesses):
+those exact headings open a kitāb. A unit runs from one opening to the next and carries its path: the titles
 of the kitāb and bāb it sits in. Text before the first kitāb or bāb is front matter, and a heading
 with no text of its own is a unit of no text: both are dropped, though the heading stays in the path.
 Lines and pages are cleaned as in ``qa`` (OpenITI: a page marker closes its page).
@@ -22,6 +24,7 @@ from __future__ import annotations
 
 import hashlib
 import re
+from collections.abc import Iterable
 from dataclasses import dataclass
 
 from .qa import Page, _lines
@@ -67,8 +70,11 @@ def _matn(text: str, end: str | None, body_headings: bool = False) -> list[tuple
     return out
 
 
-def _opening(line: str, heading: bool, body_headings: bool = False) -> tuple[str, str] | None:
+def _opening(line: str, heading: bool, body_headings: bool = False,
+             kitab_headings: frozenset[str] = frozenset()) -> tuple[str, str] | None:
     """(heading, rank) when the line opens a unit."""
+    if line in kitab_headings:
+        return line, "kitab"
     m = _RANK.match(line)
     if heading:
         return line, _RANKS[m[1]] if m else "fasl"
@@ -77,8 +83,10 @@ def _opening(line: str, heading: bool, body_headings: bool = False) -> tuple[str
     return (line, _RANKS[m[1]]) if body_headings and m and len(line.split()) <= _BODY_TITLE_WORDS else None
 
 
-def segment_abwab(text: str, end: str | None = None, body_headings: bool = False) -> tuple[Bab, ...]:
+def segment_abwab(text: str, end: str | None = None, body_headings: bool = False,
+                  kitab_headings: Iterable[str] = ()) -> tuple[Bab, ...]:
     """Every unit with text, in order; the path is the enclosing kitāb and bāb titles."""
+    promoted = frozenset(kitab_headings)
     units: list[Bab] = []
     kitab = bab = None
     cur: tuple[str, str, tuple[str, ...]] | None = None
@@ -89,7 +97,7 @@ def segment_abwab(text: str, end: str | None = None, body_headings: bool = False
             units.append(Bab(*cur, " ".join(l for l, _ in body), body[0][1], body[-1][1]))
 
     for line, page, heading in _matn(text, end, body_headings):
-        if opened := _opening(line, heading, body_headings):
+        if opened := _opening(line, heading, body_headings, promoted):
             title, rank = opened
             if rank == "fasl" and kitab is None and bab is None:
                 continue  # front matter

@@ -118,3 +118,14 @@ def test_body_rank_lines_open_units_only_when_the_witness_asks():
 def test_a_long_body_line_beginning_with_a_rank_word_is_prose():
     text = "#META#Header#End#\n# كتاب الطهارة\n# - الماء طاهر.\n# - والنعل بالمسح.\n# باب من أبواب العلم الواسعة يذكر فيه الفقهاء ما يلي\nPageV01P001\n"
     assert [u.rank for u in segment_abwab(text, body_headings=True)] == ["kitab"]
+
+
+def test_a_heading_the_edition_misranks_can_be_ranked_as_a_kitab():
+    """al-Ghurar prints «باب النكاح» where the matn's other witnesses have «كتاب النكاح»: nikāḥ is
+    not a bāb of al-Ḥajj."""
+    text = ("#META#Header#End#\n# كتاب الحج\n# - يجب على كل مكلف مستطيع.\n# باب النكاح\n# - يشرع لمن استطاع الباءة.\n"
+            "# فصل\n# - ولا نكاح إلا بولي.\nPageV01P001\n")
+    assert [(u.rank, u.path, u.heading) for u in segment_abwab(text, body_headings=True)][1:] == [
+        ("bab", ("كتاب الحج",), "باب النكاح"), ("fasl", ("كتاب الحج", "باب النكاح"), "فصل")]
+    assert [(u.rank, u.path, u.heading) for u in segment_abwab(text, body_headings=True, kitab_headings={"باب النكاح"})][1:] == [
+        ("kitab", (), "باب النكاح"), ("fasl", ("باب النكاح",), "فصل")]

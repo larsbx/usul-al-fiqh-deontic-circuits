@@ -2377,7 +2377,7 @@
       ],
       "kernel": false,
       "rights": "noncommercial_text",
-      "note": "Carries the full matn of shawkani.durar_bahiyya, one masʾala per «# -» line under body headings «كتاب …», «باب …», «فصل»; al-Ghurar is the closing block of endnotes «(¬n)», after the «|EDITOR| ENDNOTES» marker. ed. Muḥammad b. Ḥasan Āl Mubārak (first printing). Committed for non-commercial study only.",
+      "note": "Carries the full matn of shawkani.durar_bahiyya, one masʾala per «# -» line under body headings «كتاب …», «باب …», «فصل»; al-Ghurar is the closing block of endnotes «(¬n)», after the «|EDITOR| ENDNOTES» marker. ed. Muḥammad b. Ḥasan Āl Mubārak (first printing). Committed for non-commercial study only. The edition prints «باب النكاح» where the matn's other witnesses (ShamAY 34280, al-Darārī) have «كتاب النكاح»; kitab_headings ranks it as a kitāb.",
       "witnesses": [
         {
           "id": "openiti-mubarak-ghurarnaqiyya-shamay36516",
@@ -2392,7 +2392,10 @@
       "segmenter": {
         "kind": "abwab",
         "end": "\\|EDITOR\\|",
-        "body_headings": true
+        "body_headings": true,
+        "kitab_headings": [
+          "باب النكاح"
+        ]
       }
     },
     {
