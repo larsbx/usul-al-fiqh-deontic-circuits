@@ -1,21 +1,81 @@
 {
   "summary": {
-    "cases": 598,
-    "obstructed": 598,
-    "records": 672,
-    "records_within_reading": 607,
-    "conflicts_of_khitab": 303,
+    "cases": 604,
+    "obstructed": 604,
+    "records": 679,
+    "records_within_reading": 614,
+    "conflicts_of_khitab": 306,
     "records_within_reading_by_sort": {
       "dalala": 60,
       "effect": 82,
-      "epistemic": 52,
-      "judgement": 303,
+      "epistemic": 54,
+      "judgement": 306,
       "procedure": 23,
-      "takyif": 87
+      "takyif": 89
     },
     "positions_outside_reading": 40
   },
   "cases": [
+    {
+      "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00002.p03",
+      "encoder": "asl_zahir",
+      "sort": "epistemic",
+      "question": null,
+      "positions": 3,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00005.p04",
+      "encoder": "tadakhul",
+      "sort": "judgement",
+      "question": "wadi:validity",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006.p06",
+      "encoder": "badal_stands_for_original",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p03",
+      "encoder": "partial_capability",
+      "sort": "judgement",
+      "question": "aspect:obligatory",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
     {
       "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f005",
       "encoder": "residual_jawaz_after_sarf",
@@ -119,6 +179,34 @@
       "encoder": "right_for_or_against_self",
       "sort": "procedure",
       "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00005.p02",
+      "encoder": "badal_stands_for_original",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00007.p04",
+      "encoder": "tadakhul",
+      "sort": "judgement",
+      "question": "wadi:validity",
       "positions": 2,
       "outside": [],
       "obstructions": [
