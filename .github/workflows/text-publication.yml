@@ -50,3 +50,4 @@ jobs:
           name: text-publication-verification
           path: .cache/text-publication-*.json
           if-no-files-found: error
+          include-hidden-files: true  # .cache/ is a dot-directory, which upload-artifact v4 skips by default
