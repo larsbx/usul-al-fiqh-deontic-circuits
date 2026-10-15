@@ -912,6 +912,758 @@
     "archive-manzuma-tess"
    ],
    "note": "Partners are compelled to the necessary upkeep of what they share «لأنه لا ضرر ولا ضرار»: the refusing partner is compelled to repair the shared house, well or land, though alone he would not be, because another's right is tied to it."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q031",
+   "adilla": [
+    {
+     "ref": "H-s2-zamaa",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "openiti-ilam-shamela11496",
+      "ref": "src:openiti-ilam-shamela11496/v04:p271",
+      "excerpt_ar": "فحكم وأفتى بالولد لصاحب الفراش عملا بموجب الفراش، وأمر سودة أن تحتجب منه عملا بشبهه بعتبة، وقال: «ليس لك بأخ» للشبهة، وجعله أخا في الميراث، فتضمنت فتواه - صلى الله عليه وسلم - أن الأمة فراش، وأن الأحكام تتبعض في العين الواحدة عملا بالاشتباه كما تتبعض في الرضاعة",
+      "who": "Ibn al-Qayyim, Iʿlām al-Muwaqqiʿīn"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī gives no naṣṣ: he grounds the qāʿida in its furūʿ (testimony that establishes the property but not the qaṭʿ, the child following the father in nasab and the mother in ḥurriyya, tafrīq al-ṣafqa). Ibn al-Qayyim (Iʿlām, the fatwas of the Prophet, faṣl thubūt al-nasab) derives the qāʿida from the ḥadīth of the son of Zamʿa's slave-woman: the Prophet gave the child to the firāsh in nasab and inheritance, yet ordered Sawda to veil from him because of his resemblance to ʿUtba, «فتضمنت فتواه ... أن الأحكام تتبعض في العين الواحدة»: one person carries different rulings, each from its own sabab (the firāsh for nasab, the shubha for ḥijāb), which is the qāʿida."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q033",
+   "adilla": [
+    {
+     "ref": "Q017:009",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p085",
+      "excerpt_ar": "وإذا تزاحمت المفاسد، واضطر إلى فعل أحدها قدم الأخف منها وهذان أصلان عظيمان، قال تعالى : إن هذا القرّنَ بَدِى لِلَقَ أق أي أصلح وأحسن",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q039:055",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p085",
+      "excerpt_ar": "وهذان أصلان عظيمان، قال تعالى : إن هذا القرّنَ بَدِى لِلَقَ أق أي أصلح وأحسن . وقال تعالى : ب يعوا أَحَسن مآ",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q018:079",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p085",
+      "excerpt_ar": "وقصة الخضر في قتله الغلام وخرقه للسفينة تدل على الأصل الثاني، فإن الحال دائرة بين قتل الغلام وهو مفسدة وبين إرهاقه لأبويه وإفساده دينهما، وهى مفسدة أكبر فارتكب الأخف، وخرقه السفينة مفسدة، وذهاب السفينة كلها غصباً من الملك الذي أمامهم أكبر مفسدة",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q018:080",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p085",
+      "excerpt_ar": "وقصة الخضر في قتله الغلام وخرقه للسفينة تدل على الأصل الثاني، فإن الحال دائرة بين قتل الغلام وهو مفسدة وبين إرهاقه لأبويه وإفساده دينهما، وهى مفسدة أكبر فارتكب الأخف، وخرقه السفينة مفسدة، وذهاب السفينة كلها غصباً من الملك الذي أمامهم أكبر مفسدة",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q002:148",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p149",
+      "excerpt_ar": "أما الدليل على تقديم الأعلى في المصالح فعموم قوله تعالى: كسَتفها الخَيْرتٍ» [البقرة: ]١48 لأن الاستباق إلى الشيء تقدم إليه",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    },
+    {
+     "ref": "Q006:108",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p149",
+      "excerpt_ar": "وأما المفاسد فلأن الله سبحانه وتعالى قال: ( ثَيْيهَا الآيت يَدَعُونَ مين دون اذَه فَييسبُوا الله عدوا بغير ل [الأنعام: .]٠08 فهنا تعارضت مفسدتان",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī: «وهذان أصلان عظيمان» and adduces al-Isrāʾ 9 (aqwam glossed «أصلح وأحسن») and al-Zumar 55 (follow the best, aḥsan) for the first aṣl (the higher maṣlaḥa is preferred), and says the story of al-Khiḍr «تدل على الأصل الثاني»: killing the boy (mafsada) against his burdening his parents with kufr (greater mafsada), damaging the ship against its seizure (greater mafsada), the lighter was done (al-Kahf 79–80). He also cites al-Zumar 18 (footnoted), but the OCR of that line is illegible, so it is not recorded. Ibn ʿUthaymīn (verses 29–30) asks «هل هناك دليل» and answers: for maṣāliḥ the generality of «فاستبقوا الخيرات» (racing to the better), for mafāsid al-Anʿām 108, where reviling the idols is forbidden because it brings the greater mafsada of reviling God. He also cites «أمك ثم أمك» (Bukhārī/Muslim) as the Prophet's own statement of the rule; it is left out because al-Albānī's verdict on it was not found in the pinned works."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q034",
+   "adilla": [
+    {
+     "ref": "Q006:152",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p087",
+      "excerpt_ar": "ومثله تخيير ولى اليتيم : والمجنون » والسفيه وناظر الوقف إذا دارا لأمر بين تصرفين » يتعين عليه فعل ١ لأصلح لمن ولى عليه . قال الله تعالى : ولا تَقرَيوا مال لبتي إلا يال هي تَحَسَن",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī states no dalīl for the division itself. For its second part (takhyīr ijtihād: a choice given for another's benefit binds the chooser to that other's best interest) he adduces «ولا تقربوا مال اليتيم إلا بالتي هي أحسن» after the walī of the orphan, the majnūn, the safīh and the nāẓir of a waqf: the āya requires the guardian to take the best course for his ward, which is the ruling of that part."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q035",
+   "adilla": [
+    {
+     "ref": "H-s2-ghurm-mithlayh",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p348",
+      "excerpt_ar": "فهنا لا يثبت عليه القطع وهو العقوبة؛ لأن من شروط وجوب القطع أن تكون السرقة من حرزء فإذا لم تكن من حرزء فلا يجب قطع السارق، لأن التفريط من رب المالء لكن يضاعف عليه الغرم كما جاء في ذلك حديث عن رسول الله كلل",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī calls the qāʿida «القياس الصحيح» (the jināya calls for punishment, a māniʿ blocks it, the ghurm is increased instead) and names no naṣṣ. Ibn ʿUthaymīn (verses 93–94) adduces the qāʿida's central farʿ, theft from outside a ḥirz: no qaṭʿ, but «يضاعف عليه الغرم كما جاء في ذلك حديث عن رسول الله ﷺ»; his footnote identifies it as the ḥadīth of ʿAmr b. Shuʿayb in Abū Dāwūd (al-ḥudūd), ḥasan by al-Albānī in al-Irwāʾ (2413): whoever carries off hanging fruit owes «غرامة مثليه والعقوبة». Ibn al-Qayyim (Iʿlām) likewise lists «إضعاف الغرم على سارق الثمار المعلقة» and on the concealer of a stray among the Sunna's financial penalties."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q036",
+   "adilla": [
+    {
+     "ref": "Q004:029",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p253",
+      "excerpt_ar": "والدليل على هذه القاعدة قول الله تعالى: كأَيُهَا لبت امنا كا كلو أتولكم بَيْتَكُم وَلْنطِلٍ» [النساء: 74]؛ وقول النبي كَل في الصحفة التي كسرتها إحدى أمهات المؤمنين قال: «طعام بطعام» وإناء بإناء»",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    },
+    {
+     "ref": "H-s1-qasa",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p253",
+      "excerpt_ar": "والدليل على هذه القاعدة قول الله تعالى: كأَيُهَا لبت امنا كا كلو أتولكم بَيْتَكُم وَلْنطِلٍ» [النساء: 74]؛ وقول النبي كَل في الصحفة التي كسرتها إحدى أمهات المؤمنين قال: «طعام بطعام» وإناء بإناء»",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    },
+    {
+     "ref": "H-s2-sail",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p254",
+      "excerpt_ar": "فأباح النبي كلل قتل من صال على الشخص ليأخذ ماله ولكن يجب أن تدافعه بالأسهل فالأسهل، فإذا لم يندفع إلا بالقتل فاقتله، وإن خفت أن يبادرك بالقتل، وأنك لو حاولت أن تدفعه بما دون القتل قتلك، فلك أن تبادره بالقتل، ولا ضمان عليك لأنك قتلته لدفع أذاه",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    },
+    {
+     "ref": "Q002:196c",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p255",
+      "excerpt_ar": "فالأذية هنا ليست من نفس الشعرء وإنما الأذية من الهوام، لكن لا تتدفع هذه الأذية إلا بإتلاف الشعرء فيضمئنه، ولهذا أوجب الله عليه الفدية؛ مع أنه أباح له أن يحلق رأسه من أجل الضرورة إلى حلقه. لكن لما لم يكن الأذى من الشعرء بل من غيره، ودفع أذى ذلك الغير بإتلاف الشعر، صار فيه الضمان",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī gives only the furūʿ (the assailing animal, the hair in the muḥrim's eye, against hair removed for sores in the head). Ibn ʿUthaymīn's verses 57–58 are the same qāʿida (whatever is destroyed is maḍmūn unless destroyed to repel its harm): «والدليل على هذه القاعدة» al-Nisāʾ 29 and the Prophet's «طعام بطعام وإناء بإناء» for the broken bowl. For the exception he adduces the ḥadīth of the man assailed for his property («هو في النار», Muslim): the assailant may be killed «ولا ضمان عليك لأنك قتلته لدفع أذاه». For the first half (destroying to repel a harm that is not from the thing itself) he adduces Kaʿb b. ʿUjra and the fidya of al-Baqara 196: the muḥrim shaves for the lice, so the hair is maḍmūn, «ولهذا أوجب الله عليه الفدية»."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q037",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī states the qāʿida and its furūʿ (the aṣl is the absence of a disputed sharṭ or term; a defect is presumed new; with no murajjiḥ the parties swear and rescind) with no naṣṣ. No verse of Ibn ʿUthaymīn's Manẓūma is on it; the Iʿlām cites «إذا اختلف المتبايعان ... تحالفا وترادا» only for the authenticity of ḥadīth received by the community, not for this qāʿida."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q038",
+   "adilla": [
+    {
+     "ref": "H-radd",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p089",
+      "excerpt_ar": "ودليل فساد ما نهى عنه من العبادة قوله كِليةٍ: «من عمل عملاً ليس عليه أمرنا فهو رد أي مردود",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    },
+    {
+     "ref": "H-s2-shart-batil",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p087",
+      "excerpt_ar": "وكذلك ما نهي عنه من غير العبادة إذا وقع على الوجه الذي نهي عنه فإنه يقع فاسداً» وهذا معنى قولهم: النهي يقتضي الفساد. ودليلها في غير العبادة قول الي 3 : «كل شرط ليس في كتاب الله فهو باطل وإن كان مائة شرط»",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī explains the farq (a nahy on the act itself or its sharṭ returns on its object with ibṭāl; a nahy on something external only makes the act ḥarām and lessens it) but names no naṣṣ. Ibn ʿUthaymīn's verses 20–22 are this qāʿida (verse 20: «النهي يقتضي الفساد»; 21–22: a nahy on the dhāt or the sharṭ is mufsid, on something external, like the forbidden turban, it is not; he calls them «كالتفصيل للإجمال السابق»). For fasād in ʿibādāt he names as dalīl «من عمل عملا ليس عليه أمرنا فهو رد», and in other than ʿibāda «كل شرط ليس في كتاب الله فهو باطل»: the sharṭ covers the contract itself, so a contract made against the nahy is bāṭil; this is al-Saʿdī's «ومثل ذلك المعاملة»."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q039",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī grounds it in the fixed times of the ʿibādāt (an act before its sabab is invalid; after the sabab and before the sharṭ, valid, e.g. kaffāra after the oath and before ḥinth) with no naṣṣ. Ibn ʿUthaymīn (verse 33, «وكل سابق لسببه لا شرطه») explains it by examples and cites Ibn Rajab, with no dalīl for the qāʿida (he cites al-Mujādila 3 only for the ẓihār farʿ)."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q040",
+   "adilla": [
+    {
+     "ref": "Q064:016",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p091",
+      "excerpt_ar": "ودليل هذا الأصل : قوله تعالى : فَأنوا لَه ما آسَتَطعيُ وقوله كلةٍ في الحديث الصحيح: «إذا أمرتكم بأمر فأتوا منه ما",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "H-ma-statatum",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p091",
+      "excerpt_ar": "ودليل هذا الأصل : قوله تعالى : فَأنوا لَه ما آسَتَطعيُ وقوله كلةٍ في الحديث الصحيح: «إذا أمرتكم بأمر فأتوا منه ما",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī: «ودليل هذا الأصل» al-Taghābun 16 and the ḥadīth «إذا أمرتكم بأمر فأتوا منه ما استطعتم» (agreed upon). Whoever can do part of a command does that part: part of the ṣalāt's arkān and shurūṭ, with a badal where there is one; except a part that is a pure wasīla or that is not an ʿibāda by itself. Ibn ʿUthaymīn (verse 15) adduces the same two texts."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q041",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī calls it «من نعمة الله وتيسيره» and gives furūʿ (the rātiba with taḥiyyat al-masjid, one kaffāra for repeated oaths on one matter) with no naṣṣ; no Manẓūma verse or other searched witness gives one."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q042",
+   "adilla": [
+    {
+     "ref": "H-s2-jabir-jamal",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p094",
+      "excerpt_ar": "مثال الأول: من باع داراً واستثنى سكناها مدة معينة، أو باع بهيمة واستثنى ركوبهاء أو الحمل عليها إلى محل معين جاز ذلك لقصة جمل جابر حين «باعه على النبي كَل واستثنى ظهره إلى المدينة»",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "H-s2-safina",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p094",
+      "excerpt_ar": "لو وقف عقاراً واستثنى الانتفاع به مدة معلومة، أو مدة مجهولة كمدة حياته أو أعتقى رقيقاً واستثنى خدمته أو خدمة غيره مدة معلومة» أو مدة حياته فهو جائز؛ لأن أم سلمة «أعتقت سفينة وشرطت عليه أن يخدم النبي كَيةٍ مدة حياته»",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī grounds the farq in the nature of the two bābs (muʿāwaḍāt require taḥrīr, tabarruʿāt do not) and gives a text for each part's mithāl: in a sale, reserving a known usufruct is permitted «لقصة جمل جابر» (he sold the Prophet his camel and reserved riding it to Madīna); in a gift (ʿitq), even an unknown term is permitted «لأن أم سلمة أعتقت سفينة وشرطت عليه أن يخدم النبي ﷺ مدة حياته». The texts carry the qāʿida's two rulings without being called its dalīl."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q043",
+   "adilla": [
+    {
+     "ref": "Q009:091",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p095",
+      "excerpt_ar": "من قبض العين لحظ نفسه لم يقبل قوله في الرد، فإن قبضه لحظ مالكه قبل وذلك لأنه إذا قبضه لحظ مالكه فهو محسن محض، وما على المحسنين من سبيل",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī gives the basis of the second half himself: «وذلك لأنه إذا قبضه لحظ مالكه فهو محسن محض، وما على المحسنين من سبيل» (al-Tawba 91): the depositary, wakīl, waṣī and nāẓir without pay are muḥsinūn, so their claim of return is accepted; one who took for his own benefit (murtahin, hired worker) claims against the aṣl and needs bayyina. Ibn ʿUthaymīn (verses 61 and 73) adduces the same āya, «قاعدة مأخوذة من القرآن الكريم»."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q044",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī applies it to ijāra, juʿāla and conditional waqf and waṣiyya, reasoning from the nature of the contracts, with no naṣṣ; nothing was found in the other witnesses."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q045",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī gives furūʿ (faskh by khiyār, ṭalāq, rajʿa, ʿitq, waqf, shufʿa) with no naṣṣ. Ibn ʿUthaymīn (verse 69) gives the same qāʿida with the ibrāʾ example and reasoning only."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q046",
+   "adilla": [
+    {
+     "ref": "H-s2-adda-amana",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p097",
+      "excerpt_ar": "فهذا إذا امتنع من الوفاء فليس لصاحب الحق الأخذ من ماله بغير إذنه ؛ لأنه وإن كان له حق لكنه فى هذه الحالة ينسب إلى خيانة؛ وأيضاً فيه سد الباب؛ لثلا ينفتح باب الشر ويدّعي الآخذ أن له حقاً وهو مبطل لقوله كِلةٍ: «أ3 الأمانة إلى من ائتمنك. ولا تخن من خانك»",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "H-s2-hind",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p308",
+      "excerpt_ar": "ومن ذلك المرأة؛ فإن نفقتها واجبة على الزوج شرعاء فلو كان زوجها بخيلاً؛ لا يعطيها ما يكفيها، وله مال تقدر على أخذه لتنفق على نفسها وأولادها إن كان لها أولاد بالمعروف، فهل لها أن تفعل؟ نقول: نعم؛ لأن النبي كَيةٍ أفتى به هند بنت عتبة رضي الله عنها",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī gives the dalīl of the second half: where the sabab of the right is hidden (a loan, a price), taking without leave is imputed as khiyāna and opens the door to evil, «لقوله ﷺ: أد الأمانة إلى من ائتمنك ولا تخن من خانك»; he says the middle view is what «تدل عليه الأدلة الشرعية». For the first half (an evident sabab: the wife's nafaqa, the guest) Ibn ʿUthaymīn (verses 75–76) adduces the Prophet's fatwa to Hind bint ʿUtba, «خذي ما يكفيك وولدك بالمعروف»: «لأن هذا حق شرعي وسببه ظاهر». Ibn al-Qayyim (Iʿlām) draws the same line: in the ẓafar case «سبب الحق فيها ليس ثابتا ... ولهذا منعه النبي ... بقوله أد الأمانة», and the guest's taking is allowed «لظهور سبب الحق ... كما تقدم في قصة هند»."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q047",
+   "adilla": [
+    {
+     "ref": "H-nadhr-taa",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p098",
+      "excerpt_ar": "الواجب بالنذر يلحق بالواجب بالشرع لأن قوله كَليةٍ: «من نذر أن يطيع الله فليطعه». يدل على أن مجرى النذر مجرى ما وجب على العبد بدون إيجابه على نفسه",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī: «لأن قوله ﷺ: من نذر أن يطيع الله فليطعه يدل على أن مجرى النذر مجرى ما وجب على العبد بدون إيجابه على نفسه»: what is wājib by nadhr follows what is wājib by the law, so a vowed ṣalāt is at least two rakʿas standing, a vowed fast needs the intention from the night, and a vowed fast precedes voluntary fasting like qaḍāʾ."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q048",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī gives furūʿ (pouring water on najāsa, forgetting part of the ṣalāt, muwālāt in wuḍūʾ, a joined istithnāʾ) resting on ʿurf, with no naṣṣ."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q049",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī gives furūʿ (zakāt, ḥajj istiṭāʿa, nafaqa) with no naṣṣ; nothing was found in the other witnesses."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q050",
+   "adilla": [
+    {
+     "ref": "H-s2-tabir",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-manzuma-tess",
+      "ref": "src:archive-manzuma-tess/v01:p312",
+      "excerpt_ar": "وأما الثاني» فلأن النبي كله قال: «من باع نخلاً بعد أن تؤبرء فثمرتها للبائع إلا أن يشترط المبتاع»؛ فمفهومه أن الثمرة قبل أن تؤبر تكون للمشتري، تبعاً لبيع أصلهاء مع أنها لم بِبدٌ صلاحها بعد",
+      "who": "Ibn ʿUthaymīn, Sharḥ Manẓūmat Uṣūl al-Fiqh wa-Qawāʿidihi"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī states the qāʿida from its furūʿ (the masbūq following his imām, fruit not yet ripe sold with the ripe, the foundations of a house) without a naṣṣ. Ibn ʿUthaymīn (verses 77–78, «يثبت تبعا ما لا يثبت استقلالا») adduces «من باع نخلا بعد أن تؤبر فثمرتها للبائع إلا أن يشترط المبتاع»: by its mafhūm the unpollinated fruit passes to the buyer «تبعا لبيع أصلها» although its sale alone before bud ṣalāḥ is forbidden. The text is adduced for a central farʿ of the qāʿida."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q051",
+   "adilla": [
+    {
+     "ref": "H-niyyat",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p101",
+      "excerpt_ar": "إذا عقد العاقد عقداً» أو تبرع وهنا داع وحامل حمله على ذلك اعتبرنا ذلك الذي حمله؛ لآن الأعمال بالنيات، والأمور بمقاصدها",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "H-s2-lutbiyya",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p101",
+      "excerpt_ar": "ومن ذلك: هدايا العمال، فإنها لا تحل لهم؛ لأن السبب معروف، ولهذا قال كِةٍ فى قضية ابن اللتبية الذي أرسله عاملاً على الصدقة وحصل له هدايا من الناس المرسل إليهم؛ قال في كرأ عليه : اهلاً جلس في بيته فينظر أيهدى إليه أم لا؟». فا فأعتبر السبب الحامل لهم على الإهداء",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "H-s2-asir",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "openiti-ilam-shamela11496",
+      "ref": "src:openiti-ilam-shamela11496/v03:p079",
+      "excerpt_ar": "في الخمر عاصرها ومعتصرها» ، ومن المعلوم أن العاصر إنما عصر عنبا، ولكن لما كانت نيته إنما هي تحصيل الخمر لم ينفعه ظاهر عصره، ولم يعصمه من اللعنة لباطن قصده ومراده، فعلم أن الاعتبار في العقود والأفعال بحقائقها ومقاصدها دون ظواهر ألفاظها وأفعالها",
+      "who": "Ibn al-Qayyim, Iʿlām al-Muwaqqiʿīn"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī gives the basis: the motive that bore the contracting party to the contract or gift is taken into account «لأن الأعمال بالنيات، والأمور بمقاصدها» (so the mukrah's contracts are void and ḥiyal are tied to their aim). For the farʿ of officials' gifts he adduces the Prophet's word on Ibn al-Lutbiyya, «فاعتبر السبب الحامل لهم على الإهداء». Ibn al-Qayyim (Iʿlām, on intents in contracts) derives the principle from the curse on the presser of wine: the presser only pressed grapes, but his intent made him cursed, «فعلم أن الاعتبار في العقود والأفعال بحقائقها ومقاصدها»."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q052",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī reasons that the aṣl is preferred only where nothing outweighs it, and gives furūʿ (ghalabat al-ẓann in wuḍūʾ and najāsa, the custom of the mustaḥāḍa, the husband's nafaqa claim) with no naṣṣ. Ibn ʿUthaymīn mentions qarāʾin only for the forms of the command."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q053",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī calls it a ḍābiṭ and farq and reasons from ownership at the time of disposal, with no naṣṣ."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q054",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī gives furūʿ (disposal by one who thinks he owns or is wakīl, and the reverse) with no naṣṣ. Ibn ʿUthaymīn (verse 35) gives a dalīl only for the ʿibādāt half (ẓann suffices: the ḥadīth of taḥarrī in ṣalāt, Asmāʾ's ifṭār, the ṣadaqa that fell to a thief), and for the muʿāmalāt half, this qāʿida, examples only."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q055",
+   "adilla": [
+    {
+     "ref": "H-s2-aqdi",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p104",
+      "excerpt_ar": "فإذا أقر لغيره بدين قرض، أو ثمن مبيع، أو قيمة متلف، أو مغصوب، أو رهن، أو غيره وجب ما أقر به، ولو قال: غلطت أو نسيت؛ لأنه كِِةٍ ثبت عنه أنه قال: «إنما أقضي بنحو ما أسمع»",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī: iqrār is the strongest bayyina; whoever confesses a right owes it even if he says he erred or forgot, «لأنه ﷺ ثبت عنه أنه قال: إنما أقضي بنحو ما أسمع»: the judge rules on the apparent, here the confession. The pinned Bukhārī wording is «فأقضي على نحو ما أسمع»."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995_tess.q056",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī reasons from the passing of the estate (the heir is the deceased's nāʾib in his estate) and rejects the exclusion of khiyār al-sharṭ and shufʿa: «وليس على إبطالها دليل، ولا تعليل صحيح». No naṣṣ for the qāʿida in the searched witnesses."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q057",
+   "adilla": [
+    {
+     "ref": "H-niyyat",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p106",
+      "excerpt_ar": "يجب حمل كلام الناطقين على مرادهم مهما أمكن في العقود؛ والفسوخ, والإقرارات، وغيرها وذلك أن الأقوال داخلة فى الأعمال، فتدخل فى قوله كِلةٍ: «إنما الأعمال بالنيات» وإنما لكل امرئٌ ما نوى»",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "H-s2-aqdi",
+     "relation": "stated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p106",
+      "excerpt_ar": "وأما إذا تعلق بكلامه حق للغير فكذلك نعتبر ما نوى إلا أن ذلك الغير إذا طالبه بمقتضى لفظه لم يكن لنا أن نحكم إلا بالظاهر؛ لقوله «إنما أقضي بنحو مما أسمع",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī: words are acts, so they fall under «إنما الأعمال بالنيات وإنما لكل امرئ ما نوى»: what a speaker intends governs his own affairs; where another's right attaches and he holds to the wording, only the ẓāhir is judged, «لقوله ﷺ إنما أقضي بنحو مما أسمع». Hence kināyāt in ṭalāq, ẓihār, ʿitq and waqf need niyya or a qarīna, and oaths follow the swearer's intent."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q058",
+   "adilla": [
+    {
+     "ref": "H-s2-hirra",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p108",
+      "excerpt_ar": "ولما سئل كَل عن الهرة؟ قال: «إنها ليست بنجس إنها من الطوافين عليكم والطوافات». فعلل بكثرة دورانها وترددها على الناس، وعظم المشقة فيها لو نجست",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q002:222",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p108",
+      "excerpt_ar": "الْتَحِيضنَ الآية. فعلل ترتيب أحكام الحيض عليه بوجود الأذى، فكلما وجد الأذى الذي هو دم الحيض ترتبت عليه أحكام الحيض كلهاء وكلما فقد الأذى لم يثبت منها شيء",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    },
+    {
+     "ref": "Q007:157",
+     "relation": "indicated",
+     "istidlal": {
+      "witness": "archive-pdf1995-tess",
+      "ref": "src:archive-pdf1995-tess/v01:p109",
+      "excerpt_ar": "وقال تعالى : «رَيُجِلٌ لَهْرُ اتيت وَيُحَرَمْ عَجهرٌ الْحبَيتَ » فالحل دائر مع وجود وصف الطيب؛ والتحريم مع وصف الخبث»؛ لا يتخلف كل منهما عن وصفه",
+      "who": "al-Saʿdī (the qāʿida's author)"
+     }
+    }
+   ],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī gives the texts as amthila of the qāʿida, not as its named dalīl, but each shows the Lawgiver tying a ruling to its ʿilla, from which he reads the qāʿida: the cat is not najis «إنها من الطوافين عليكم» («فعلل بكثرة دورانها»); menstruation is adhā, so its rulings hold while the adhā exists and lapse when it ceases (al-Baqara 222); al-ṭayyibāt are made ḥalāl and al-khabāʾith ḥarām, «فالحل دائر مع وجود وصف الطيب، والتحريم مع وصف الخبث» (al-Aʿrāf 157). He also gives al-Māʾida 6 (tayammum on loss of water or harm) and «لا يقبل الله صلاة أحدكم إذا أحدث حتى يتوضأ» (Bukhārī, Muslim); the latter is left out because the pinned al-Irwāʾ grades a different wording (entry 120) and no verdict on this one was found."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q059",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī gives āyāt as amthila of the qāʿida, not as its dalīl: al-Infiṭār 19 (three nakirāt after nafy), al-Qaṣaṣ 88 (after nahy), Yūnus 107 (after sharṭ); they show the rule applied, not derived. Ibn ʿUthaymīn (verses 98–99) likewise gives examples only. The qāʿida rests on Arabic usage (istiqrāʾ), so no naṣṣ is recorded."
+  },
+  {
+   "qaida": "sadi.qawaid_jamia.archive_pdf1995.q060",
+   "adilla": [],
+   "searched": [
+    "archive-pdf1995",
+    "archive-pdf1995-tess",
+    "archive-manzuma-tess",
+    "archive-tariq-tess",
+    "shamela-9527",
+    "openiti-nuraniyya-shamela21729",
+    "openiti-ilam-shamela11496"
+   ],
+   "note": "al-Saʿdī says «وأمثلتها من الكتاب والسنة كثيرة جدا»; the editor's footnote adds examples (al-Ṭalāq 2–3, al-Muzzammil 20, al-Isrāʾ 110, al-ʿAṣr 1–2, al-Ḍuḥā 11). These are amthila of the ṣiyagh al-ʿumūm, not their dalīl; Ibn ʿUthaymīn (verse 97) also gives examples only. No naṣṣ recorded."
   }
  ]
 }
