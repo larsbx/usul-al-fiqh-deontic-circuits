@@ -1406,6 +1406,86 @@ def rajiyyaTakesWifeRule : Typed Situation (Bool) where
   run | (x1, x2) => Usul.Readings.RajabA20.wifeRuleApplies x1 x2
   proj_embed := fun _ => rfl
 
+/-- `woman_half_of_man` reads `Qaida.Rajab147`. -/
+def womanHalfOfMan : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.womanParty, ← s.listedHalvingPoint)
+  embed | (x1, x2) => { womanParty := some x1, listedHalvingPoint := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA21.womanHalf x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `determinate_holder_right` reads `Qaida.Rajab149`. -/
+def determinateHolderRight : Typed Situation (Bool) where
+  Local := (Bool)
+  proj s := s.rightHolderDeterminate
+  embed x1 := { rightHolderDeterminate := some x1 }
+  run x1 := Usul.Readings.RajabA21.determinateHolderRule x1
+  proj_embed := fun _ => rfl
+
+/-- `transfer_follows_cause` reads `Qaida.Rajab150`. -/
+def transferFollowsCause : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.transferGivenForCause, ← s.independentGiftCause)
+  embed | (x1, x2) => { transferGivenForCause := some x1, independentGiftCause := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA21.causeGovernsTransfer x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `dalalat_hal_carries_claim` reads `Qaida.Rajab151`. -/
+def dalalatHalCarriesClaim : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.halSupportsClaim, ← s.halBeliesClaim)
+  embed | (x1, x2) => { halSupportsClaim := some x1, halBeliesClaim := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA22.halCarriesClaim x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `four_kinds_marriage_prohibition` reads `Qaida.Rajab152`. -/
+def fourKindsMarriageProhibition : Typed Situation (Bool) where
+  Local := (Bool) × (Bool) × (Bool) × (Bool)
+  proj s := do pure (← s.nasabDabit, ← s.sihrClass, ← s.jamRahmMahram, ← s.radaCounterpart)
+  embed | (x1, x2, x3, x4) => { nasabDabit := some x1, sihrClass := some x2, jamRahmMahram := some x3, radaCounterpart := some x4 }
+  run | (x1, x2, x3, x4) => Usul.Readings.RajabA21.marriageProhibited x1 x2 x3 x4
+  proj_embed := fun _ => rfl
+
+/-- `grandchild_in_child_term` reads `Qaida.Rajab153`. -/
+def grandchildInChildTerm : Typed Situation (Bool) where
+  Local := (Bool) × (Bool) × (Bool)
+  proj s := do pure (← s.includedWithOrWithoutChild, ← s.includedOnlyAbsentChild, ← s.intermediateChildPresent)
+  embed | (x1, x2, x3) => { includedWithOrWithoutChild := some x1, includedOnlyAbsentChild := some x2, intermediateChildPresent := some x3 }
+  run | (x1, x2, x3) => Usul.Readings.RajabA23.grandchildCountsAsChild x1 x2 x3
+  proj_embed := fun _ => rfl
+
+/-- `bud_exit_charged` reads `Qaida.Rajab154`. -/
+def budExitCharged : Typed Situation (Bool) where
+  Local := (Bool) × (Bool) × (Bool)
+  proj s := do pure (← s.chargedUnconsummatedMahr, ← s.husbandElectsMahr, ← s.wifeBearsExit)
+  embed | (x1, x2, x3) => { chargedUnconsummatedMahr := some x1, husbandElectsMahr := some x2, wifeBearsExit := some x3 }
+  run | (x1, x2, x3) => Usul.Readings.RajabA22.budExitCharged x1 x2 x3
+  proj_embed := fun _ => rfl
+
+/-- `mahr_fully_established` reads `Qaida.Rajab155`. -/
+def mahrFullyEstablished : Typed Situation (Bool) where
+  Local := (Bool) × (Bool) × (Bool) × (Bool)
+  proj s := do pure (← s.intercourseOccurred, ← s.khalwaOccurred, ← s.husbandCapableOfIntercourse, ← s.deathBeforeConsummation)
+  embed | (x1, x2, x3, x4) => { intercourseOccurred := some x1, khalwaOccurred := some x2, husbandCapableOfIntercourse := some x3, deathBeforeConsummation := some x4 }
+  run | (x1, x2, x3, x4) => Usul.Readings.RajabA21.mahrEstablished x1 x2 x3 x4
+  proj_embed := fun _ => rfl
+
+/-- `mahr_halved_by_separation` reads `Qaida.Rajab156`. -/
+def mahrHalvedBySeparation : Typed Situation (Bool) where
+  Local := (Bool) × (Bool) × (Bool) × (Bool)
+  proj s := do pure (← s.sepByHusband, ← s.sepByStranger, ← s.sepByWife, ← s.husbandFasakhForHerHarm)
+  embed | (x1, x2, x3, x4) => { sepByHusband := some x1, sepByStranger := some x2, sepByWife := some x3, husbandFasakhForHerHarm := some x4 }
+  run | (x1, x2, x3, x4) => Usul.Readings.RajabA24.mahrHalved x1 x2 x3 x4
+  proj_embed := fun _ => rfl
+
+/-- `idda_transfer_on_change` reads `Qaida.Rajab157`. -/
+def iddaTransferOnChange : Typed Situation (Bool) where
+  Local := (Bool) × (Bool) × (Bool)
+  proj s := do pure (← s.iddaStatusChanges, ← s.husbandCanRemedyInIdda, ← s.sickHusbandIbana)
+  embed | (x1, x2, x3) => { iddaStatusChanges := some x1, husbandCanRemedyInIdda := some x2, sickHusbandIbana := some x3 }
+  run | (x1, x2, x3) => Usul.Readings.RajabA23.transfersToNewIdda x1 x2 x3
+  proj_embed := fun _ => rfl
+
 /-! ## Integration: the jamʿ of Ibn Rajab 14's two readings -/
 
 /-- `cause_on_certainty` reads `Qaida.Rajab14Certainty`, which extends Ibn Rajab 14's type. -/

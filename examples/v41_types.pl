@@ -252,11 +252,49 @@ type_field(rajab145, ties_cut, 'Option Bool').
 qaida_type(rajab146, 'Ibn Rajab 146 «تفارق المطلقة الرجعية الزوجات في صور: منها: أن في إباحتها في مدة العدة روايتين، وعلى رواية التحريم فهل يجب لها المهر بالوطء؟ على وجهين. ومنها: أن طلاقها في مدة العدة طلاق بدعة على أصح الروايتين. ومنها: أن …». Read by `rajiyya_takes_wife_rule`.').
 type_field(rajab146, rajiyya, 'Option Bool').
 type_field(rajab146, listed_difference, 'Option Bool').
+qaida_type(rajab147, 'Ibn Rajab 147 «أحكام النساء على النصف من أحكام الرجال في مواضع: منها: الميراث والدية، ومنها: العقيقة عن الغلام شاتان وعن الجارية شاة. ومنها: الشهادة والعتق، فيعدل عتق امرأتين بعتق رجل في الفكاك من النار، كما دل عليه الحديث، …». Read by `woman_half_of_man`.').
+type_field(rajab147, woman_party, 'Option Bool').
+type_field(rajab147, listed_halving_point, 'Option Bool').
+qaida_type(rajab149, 'Ibn Rajab 149 «الحق الثابت لمعين يخالف الثابت لغير معين في أحكام منها من له وارث معين ليس له أن يوصي بأكثر من ثلثه، ومن لا وارث له من ذي فرض ولا عصبة ولا رحم هل له أن يوصي بماله كله أم لا؟ على روايتين، فمن الأصحاب من بناهما …». Read by `determinate_holder_right`.').
+type_field(rajab149, right_holder_determinate, 'Option Bool').
 qaida_type(rajab14_certainty, 'Ibn Rajab 14 on the first riwāya\'s own ground, «نظرا إلى أن كل واحد منهما متيقن للطهارة شاك في الحدث»: each man is certain of his own prior state and doubts only the breach (Q15: each on his aṣl). Read by `cause_on_certainty` (`Usul.Readings.Concordance`).').
 type_extends(rajab14_certainty, rajab14).
 type_field(rajab14_certainty, each_certain, 'Option Bool').
 qaida_type(rajab15, 'Ibn Rajab 15 «إذا استصحبنا أصلا وأعملنا ظاهرا في طهارة شيء أو حله أو حرمته وكان لازم ذلك تغير أصل آخر يجب استصحابه أو ترك العمل بظاهر آخر يجب إعماله لم يلتفت إلى ذلك اللازم على الصحيح، ولذلك صور: منها) إذا استيقظ من نومه فوجد …». Read by `each_on_its_asl`.').
 type_field(rajab15, separate_matters, 'Option Bool').
+qaida_type(rajab150, 'Ibn Rajab 150 «تعتبر الأسباب في عقود التمليكات كما يعتبر في الأيمان، ويتخرج على هذا مسائل متعددة: منها: مسائل العينة. ومنها: هدية المقترض قبل الأداء فإنه لا يجوز قبولها ممن لم يجر له منه عادة. ومنها: هدية المشركين لأمير …». Read by `transfer_follows_cause`.').
+type_field(rajab150, transfer_given_for_cause, 'Option Bool').
+type_field(rajab150, independent_gift_cause, 'Option Bool').
+qaida_type(rajab151, 'Ibn Rajab 151 «دلالة الأحوال يختلف بها دلالة الأقوال في قبول دعوى ما يوافقها ورد ما يخالفها، ويترتب عليها الأحكام بمجردها، ويتخرج عليه مسائل: منها: كنايات الطلاق في حالة الغضب والخصومة لا يقبل دعوى إرادة غير الطلاق بها. …». Read by `dalalat_hal_carries_claim`.').
+type_field(rajab151, hal_supports_claim, 'Option Bool').
+type_field(rajab151, hal_belies_claim, 'Option Bool').
+qaida_type(rajab152, 'Ibn Rajab 152 «المحرمات في النكاح أربعة أنواع: النوع الأول: المحرمات بالنسب، وضابط ذلك أنه يحرم على الإنسان أصوله وفروعه، وفروع أصله الأدنى وإن سفلن، وفروع أصوله البعيدة دون بناتهن فيدخل في أصوله: أمه وأم أمه وأم أبيه وإن …». Read by `four_kinds_marriage_prohibition`.').
+type_field(rajab152, nasab_dabit, 'Option Bool').
+type_field(rajab152, sihr_class, 'Option Bool').
+type_field(rajab152, jam_rahm_mahram, 'Option Bool').
+type_field(rajab152, rada_counterpart, 'Option Bool').
+qaida_type(rajab153, 'Ibn Rajab 153 «ولد الولد هل يدخل في مسمى الولد عند الإطلاق، هذا ثلاثة أنواع: أحدها: أنه يدخل في مسماه مطلقا مع وجود الولد وعدمه، وذلك في صور: منها المحرمات في النكاح كالبنات وحلائل الأبناء. ومنها: امتناع القصاص بين الأب …». Read by `grandchild_in_child_term`.').
+type_field(rajab153, included_with_or_without_child, 'Option Bool').
+type_field(rajab153, included_only_absent_child, 'Option Bool').
+type_field(rajab153, intermediate_child_present, 'Option Bool').
+qaida_type(rajab154, 'Ibn Rajab 154 «خروج البضع من الزوج هل هو متقوم أم لا؟ بمعنى أنه هل يلزمه المخرج له قهرا ضمانة للزوج بالمهر؟ وفيه قولان في المذهب ويذكر أن روايتين عن أحمد، وأكثر الأصحاب كالقاضي ومن بعده يقولون: ليس بمتقوم، وخصوا هذا الخلاف …». Read by `bud_exit_charged`.').
+type_field(rajab154, charged_unconsummated_mahr, 'Option Bool').
+type_field(rajab154, husband_elects_mahr, 'Option Bool').
+type_field(rajab154, wife_bears_exit, 'Option Bool').
+qaida_type(rajab155, 'Ibn Rajab 155 «يتقرر المهر كله للمرأة بأحد ثلاثة أشياء: الأول: الوطء فيتقرر به المهر على كل حال، وأما مقدماته كاللمس للشهوة والنظر إلى الفرج أو إلى جسدها وهي عارية فمن الأصحاب من ألحقه بالوطء وجعله مقررا رواية واحدة ; لأنه …». Read by `mahr_fully_established`.').
+type_field(rajab155, intercourse_occurred, 'Option Bool').
+type_field(rajab155, khalwa_occurred, 'Option Bool').
+type_field(rajab155, husband_capable_of_intercourse, 'Option Bool').
+type_field(rajab155, death_before_consummation, 'Option Bool').
+qaida_type(rajab156, 'Ibn Rajab 156 «فيما ينتصف به المهر قبل استقراره وما يسقط به الفرقة قبل الدخول إن كانت من جهة الزوج وحده أو من جهة أجنبي وحده تنصف بها المهر المسمى، وإن كانت من جهة الزوجة وحدها سقط بها المهر، وإن كانت من جهة الزوجين معا أو …». Read by `mahr_halved_by_separation`.').
+type_field(rajab156, sep_by_husband, 'Option Bool').
+type_field(rajab156, sep_by_stranger, 'Option Bool').
+type_field(rajab156, sep_by_wife, 'Option Bool').
+type_field(rajab156, husband_fasakh_for_her_harm, 'Option Bool').
+qaida_type(rajab157, 'Ibn Rajab 157 «إذا تغير حال المرأة التي في العدة بانتقالها من رق إلى حرية أو طرأ عليها سبب موجب لعدة أخرى من الزوج كوفاته فهل يلزمها الانتقال إلى عدة الوفاة أو إلى عدة حرة؟ إن كان زوجها متمكنا من تلافي نكاحها في العدة لزمها …». Read by `idda_transfer_on_change`.').
+type_field(rajab157, idda_status_changes, 'Option Bool').
+type_field(rajab157, husband_can_remedy_in_idda, 'Option Bool').
+type_field(rajab157, sick_husband_ibana, 'Option Bool').
 qaida_type(rajab17, 'Ibn Rajab 17 «إذا تقابل عملان أحدهما ذو شرف في نفسه ورفعة وهو واحد، والآخر ذو تعدد في نفسه وكثرة، فأيهما يرجح.». Read by `many_over_noble`.').
 type_field(rajab17, same_cost, 'Option Bool').
 qaida_type(rajab19, 'Ibn Rajab 19 «إمكان الأداء ليس بشرط في استقرار الواجبات بالشرع في الذمة على ظاهر المذهب ويندرج تحت ذلك صور: (منها) الطهارة فإذا وصل عادم الماء إلى الماء وقد ضاق الوقت فعليه أن يتطهر ويصلي بعد الوقت ذكره صاحب المغني.». Read by `settles_without_ability`.').
@@ -571,6 +609,10 @@ encoder_type(benefit_then_thing, 'Bool').
 encoder_reads(benefit_then_thing, 1, perpetual_commutative).
 encoder_type(benefit_to_other, 'Bool').
 encoder_reads(benefit_to_other, 1, benefits_other).
+encoder_type(bud_exit_charged, 'Bool').
+encoder_reads(bud_exit_charged, 1, charged_unconsummated_mahr).
+encoder_reads(bud_exit_charged, 2, husband_elects_mahr).
+encoder_reads(bud_exit_charged, 3, wife_bears_exit).
 encoder_type(budh_capacity_is_wealth, 'Bool').
 encoder_reads(budh_capacity_is_wealth, 1, has_wealth).
 encoder_reads(budh_capacity_is_wealth, 2, can_earn_by_budh).
@@ -629,6 +671,9 @@ encoder_type(custom_restricts_general, 'Bool').
 encoder_reads(custom_restricts_general, 1, customary_usage).
 encoder_type(cut_sale_left_to_ripen, 'Bool').
 encoder_reads(cut_sale_left_to_ripen, 1, left_until_ripe).
+encoder_type(dalalat_hal_carries_claim, 'Bool').
+encoder_reads(dalalat_hal_carries_claim, 1, hal_supports_claim).
+encoder_reads(dalalat_hal_carries_claim, 2, hal_belies_claim).
 encoder_type(daman_without_qabd, 'Bool').
 encoder_reads(daman_without_qabd, 1, determined).
 encoder_type(defective_compensation, 'Usul.Refinements.CompensationBasis').
@@ -644,6 +689,8 @@ encoder_reads(deputy_of_qadi, 1, general).
 encoder_reads(deputy_of_qadi, 2, of_qadi).
 encoder_type(desisting_at_once, 'Bool').
 encoder_reads(desisting_at_once, 1, foresaw).
+encoder_type(determinate_holder_right, 'Bool').
+encoder_reads(determinate_holder_right, 1, right_holder_determinate).
 encoder_type(disposal_before_qabd, 'Bool').
 encoder_reads(disposal_before_qabd, 1, mubham).
 encoder_reads(disposal_before_qabd, 2, settled).
@@ -708,6 +755,11 @@ encoder_type(forced_acquisition_solvent, 'Bool').
 encoder_reads(forced_acquisition_solvent, 1, acquisition_necessity).
 encoder_reads(forced_acquisition_solvent, 2, shufa).
 encoder_reads(forced_acquisition_solvent, 3, solvent).
+encoder_type(four_kinds_marriage_prohibition, 'Bool').
+encoder_reads(four_kinds_marriage_prohibition, 1, nasab_dabit).
+encoder_reads(four_kinds_marriage_prohibition, 2, sihr_class).
+encoder_reads(four_kinds_marriage_prohibition, 3, jam_rahm_mahram).
+encoder_reads(four_kinds_marriage_prohibition, 4, rada_counterpart).
 encoder_type(free_bestowal_of_needed_ayn, 'Bool').
 encoder_reads(free_bestowal_of_needed_ayn, 1, needed).
 encoder_reads(free_bestowal_of_needed_ayn, 2, harmless_q99).
@@ -719,6 +771,10 @@ encoder_reads(generality, 2, context).
 encoder_reads(generality, 3, ahd).
 encoder_type(ghulul_forfeiture, 'Bool').
 encoder_reads(ghulul_forfeiture, 1, as_ghulul).
+encoder_type(grandchild_in_child_term, 'Bool').
+encoder_reads(grandchild_in_child_term, 1, included_with_or_without_child).
+encoder_reads(grandchild_in_child_term, 2, included_only_absent_child).
+encoder_reads(grandchild_in_child_term, 3, intermediate_child_present).
 encoder_type(growth_from_substance, 'Usul.Refinements.Growth').
 encoder_reads(growth_from_substance, 1, from_substance).
 encoder_type(hair_detached, 'Usul.Refinements.Attachment').
@@ -749,6 +805,10 @@ encoder_type(holding_after_contract_end, 'Bool').
 encoder_reads(holding_after_contract_end, 1, ended_by_holder).
 encoder_type(hukm_against_own_ijtihad, 'Bool').
 encoder_reads(hukm_against_own_ijtihad, 1, contradicts_nass).
+encoder_type(idda_transfer_on_change, 'Bool').
+encoder_reads(idda_transfer_on_change, 1, idda_status_changes).
+encoder_reads(idda_transfer_on_change, 2, husband_can_remedy_in_idda).
+encoder_reads(idda_transfer_on_change, 3, sick_husband_ibana).
 encoder_type(ihram_specification, 'Bool').
 encoder_reads(ihram_specification, 1, component).
 encoder_type(implicit_exception, 'Bool').
@@ -784,6 +844,16 @@ encoder_type(maadum_grant_valid, 'Bool').
 encoder_reads(maadum_grant_valid, 1, by_origin).
 encoder_reads(maadum_grant_valid, 2, explicit_inclusion).
 encoder_reads(maadum_grant_valid, 3, object_entails).
+encoder_type(mahr_fully_established, 'Bool').
+encoder_reads(mahr_fully_established, 1, intercourse_occurred).
+encoder_reads(mahr_fully_established, 2, khalwa_occurred).
+encoder_reads(mahr_fully_established, 3, husband_capable_of_intercourse).
+encoder_reads(mahr_fully_established, 4, death_before_consummation).
+encoder_type(mahr_halved_by_separation, 'Bool').
+encoder_reads(mahr_halved_by_separation, 1, sep_by_husband).
+encoder_reads(mahr_halved_by_separation, 2, sep_by_stranger).
+encoder_reads(mahr_halved_by_separation, 3, sep_by_wife).
+encoder_reads(mahr_halved_by_separation, 4, husband_fasakh_for_her_harm).
 encoder_type(makeup_after_failure, 'Usul.Refinements.MakeupExtent').
 encoder_reads(makeup_after_failure, 1, failure).
 encoder_type(manumission_spread, 'Bool').
@@ -964,6 +1034,9 @@ encoder_reads(taliq_al_bay, 1, conditional).
 encoder_reads(taliq_al_bay, 2, known_to_hold).
 encoder_type(tolerance_exceeded, 'Usul.Refinements.Lapse').
 encoder_reads(tolerance_exceeded, 1, at_fault).
+encoder_type(transfer_follows_cause, 'Bool').
+encoder_reads(transfer_follows_cause, 1, transfer_given_for_cause).
+encoder_reads(transfer_follows_cause, 2, independent_gift_cause).
 encoder_type(trust_loss, 'Bool').
 encoder_reads(trust_loss, 1, hand).
 encoder_reads(trust_loss, 2, transgressed).
@@ -1022,6 +1095,9 @@ encoder_reads(vowed_as_shar_obligation, 2, mandub_ruling).
 encoder_type(wage_without_stipulation, 'Bool').
 encoder_reads(wage_without_stipulation, 1, professional).
 encoder_reads(wage_without_stipulation, 2, public_or_rescue).
+encoder_type(woman_half_of_man, 'Bool').
+encoder_reads(woman_half_of_man, 1, woman_party).
+encoder_reads(woman_half_of_man, 2, listed_halving_point).
 encoder_type(wording_in_other_tongue, 'Bool').
 encoder_reads(wording_in_other_tongue, 1, meaning_only).
 encoder_reads(wording_in_other_tongue, 2, able).

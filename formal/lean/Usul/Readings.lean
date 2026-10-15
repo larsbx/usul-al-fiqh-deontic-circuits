@@ -15,6 +15,10 @@ import Usul.Readings.RajabA18
 import Usul.Readings.RajabA19
 import Usul.Readings.RajabA2
 import Usul.Readings.RajabA20
+import Usul.Readings.RajabA21
+import Usul.Readings.RajabA22
+import Usul.Readings.RajabA23
+import Usul.Readings.RajabA24
 import Usul.Readings.RajabA3
 import Usul.Readings.RajabA4
 import Usul.Readings.RajabA5

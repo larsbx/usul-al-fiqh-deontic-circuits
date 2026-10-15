@@ -1,16 +1,16 @@
 {
- "total": 981,
+ "total": 1066,
  "classes": {
-  "derivable": 391,
-  "genuine_ikhtilaf": 545,
+  "derivable": 441,
+  "genuine_ikhtilaf": 580,
   "missing_fact": 3,
   "missing_rule": 41,
   "segmentation_error": 1
  },
- "coverage": 0.955,
- "madhhab_coverage": 0.716,
+ "coverage": 0.959,
+ "madhhab_coverage": 0.731,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 311,
+ "ikhtilaf_matching_madhhab": 337,
  "gaps_open": 44,
  "revisited": 38,
  "revisit_queue": [],
@@ -563,6 +563,45 @@
   },
   "rajiyya_takes_wife_rule": {
    "genuine_ikhtilaf": 9
+  },
+  "woman_half_of_man": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 2
+  },
+  "determinate_holder_right": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 2
+  },
+  "transfer_follows_cause": {
+   "derivable": 7,
+   "genuine_ikhtilaf": 1
+  },
+  "four_kinds_marriage_prohibition": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 1
+  },
+  "mahr_fully_established": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 1
+  },
+  "dalalat_hal_carries_claim": {
+   "derivable": 9,
+   "genuine_ikhtilaf": 5
+  },
+  "bud_exit_charged": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 4
+  },
+  "grandchild_in_child_term": {
+   "derivable": 11,
+   "genuine_ikhtilaf": 7
+  },
+  "idda_transfer_on_change": {
+   "derivable": 4
+  },
+  "mahr_halved_by_separation": {
+   "derivable": 6,
+   "genuine_ikhtilaf": 12
   },
   "attached_right_disposal": {
    "derivable": 4,
