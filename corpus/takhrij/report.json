@@ -1,16 +1,16 @@
 {
- "total": 889,
+ "total": 981,
  "classes": {
-  "derivable": 356,
-  "genuine_ikhtilaf": 488,
+  "derivable": 391,
+  "genuine_ikhtilaf": 545,
   "missing_fact": 3,
   "missing_rule": 41,
   "segmentation_error": 1
  },
- "coverage": 0.95,
- "madhhab_coverage": 0.705,
+ "coverage": 0.955,
+ "madhhab_coverage": 0.716,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 270,
+ "ikhtilaf_matching_madhhab": 311,
  "gaps_open": 44,
  "revisited": 38,
  "revisit_queue": [],
@@ -492,6 +492,45 @@
   "budh_capacity_is_wealth": {
    "derivable": 1
   },
+  "craft_capacity_is_wealth": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 4
+  },
+  "prevention_easier_than_removal": {
+   "derivable": 7
+  },
+  "supervening_bar_extends_to_preliminaries": {
+   "genuine_ikhtilaf": 5
+  },
+  "unfixed_right_reaches_fixed": {
+   "derivable": 2
+  },
+  "custodian_liable_at_due_time": {
+   "genuine_ikhtilaf": 2
+  },
+  "qawad_choice_forfeits_attached_right": {
+   "derivable": 7,
+   "genuine_ikhtilaf": 7
+  },
+  "sulh_replaces_owned_wealth": {
+   "genuine_ikhtilaf": 3
+  },
+  "burdened_thing_compensated": {
+   "derivable": 5,
+   "genuine_ikhtilaf": 1
+  },
+  "returned_takes_first_ruling": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 7
+  },
+  "badal_stands_for_original": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 8
+  },
+  "bain_in_idda_as_wife": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 3
+  },
   "nafaqa_stipulated_in_contract": {
    "derivable": 3,
    "genuine_ikhtilaf": 1
@@ -513,6 +552,17 @@
   },
   "repeat_bearing_roots_as_trees": {
    "genuine_ikhtilaf": 5
+  },
+  "heir_takes_deceased_right": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 7
+  },
+  "heir_stands_in_owed_right": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 1
+  },
+  "rajiyya_takes_wife_rule": {
+   "genuine_ikhtilaf": 9
   },
   "attached_right_disposal": {
    "derivable": 4,
@@ -635,6 +685,13 @@
   },
   "substitute_refusal_judged_by_original": {
    "derivable": 1
+  }
+ },
+ "co_annotations": {
+  "total": 2,
+  "per_encoder": {
+   "error_actor_liable": 1,
+   "mubashara_tasabbub": 1
   }
  }
 }

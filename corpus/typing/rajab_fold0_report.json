@@ -3,40 +3,40 @@
   "status": "candidate",
   "set": "rajab_fold0",
   "method": "blind typing into Usul.Typing situations; Prolog routing by coverage of each encoder's fields",
-  "answers": 157,
-  "situations": 206,
-  "fields_stated": 227,
-  "cases": 157,
-  "encoders": 177,
-  "applies": 0.4395,
+  "answers": 179,
+  "situations": 232,
+  "fields_stated": 259,
+  "cases": 179,
+  "encoders": 191,
+  "applies": 0.3855,
   "recall": {
-    "1": 0.5605,
-    "5": 0.7261,
-    "10": 0.7261
+    "1": 0.514,
+    "5": 0.6872,
+    "10": 0.6872
   },
   "recall_with_named_rules": {
-    "1": 0.5605,
-    "5": 0.7261,
-    "10": 0.7261
+    "1": 0.514,
+    "5": 0.6872,
+    "10": 0.6872
   },
   "lexical_recall": {
-    "1": 0.5987,
-    "5": 0.8535,
-    "10": 0.879
+    "1": 0.581,
+    "5": 0.8436,
+    "10": 0.8771
   },
   "hybrid_recall": {
-    "1": 0.7197,
-    "5": 0.9427,
-    "10": 0.9618
+    "1": 0.6704,
+    "5": 0.9218,
+    "10": 0.9497
   },
   "hybrid": "types first: encoders by the share of their fields the situation settles, lexical rank breaking ties and ordering the rest",
   "prior_recall": {
-    "1": 0.0701,
-    "5": 0.1656,
-    "10": 0.2548
+    "1": 0.0615,
+    "5": 0.1453,
+    "10": 0.2291
   },
-  "encoders_applying_per_answer": 0.61,
-  "encoders_touched_per_answer": 1.16,
+  "encoders_applying_per_answer": 0.55,
+  "encoders_touched_per_answer": 1.18,
   "by_encoder": {
     "advance_after_cause": {
       "cases": 1,
@@ -92,6 +92,18 @@
       "top5": 1,
       "unrouted": 1
     },
+    "badal_stands_for_original": {
+      "cases": 3,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 3
+    },
+    "bain_in_idda_as_wife": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
     "benefit_exception": {
       "cases": 1,
       "applies": 0,
@@ -103,6 +115,12 @@
       "applies": 1,
       "top5": 1,
       "unrouted": 0
+    },
+    "burdened_thing_compensated": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
     },
     "cancel_on_existence_valid": {
       "cases": 1,
@@ -149,6 +167,12 @@
     "continuity": {
       "cases": 1,
       "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "craft_capacity_is_wealth": {
+      "cases": 1,
+      "applies": 0,
       "top5": 1,
       "unrouted": 0
     },
@@ -260,6 +284,12 @@
       "top5": 2,
       "unrouted": 0
     },
+    "heir_takes_deceased_right": {
+      "cases": 3,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 3
+    },
     "implicit_exception": {
       "cases": 1,
       "applies": 1,
@@ -362,10 +392,28 @@
       "top5": 0,
       "unrouted": 1
     },
+    "prevention_easier_than_removal": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 2
+    },
     "prohibited_worship": {
       "cases": 1,
       "applies": 1,
       "top5": 1,
+      "unrouted": 0
+    },
+    "qawad_choice_forfeits_attached_right": {
+      "cases": 6,
+      "applies": 0,
+      "top5": 5,
+      "unrouted": 1
+    },
+    "rajiyya_takes_wife_rule": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 2,
       "unrouted": 0
     },
     "recourse": {
@@ -493,6 +541,18 @@
       "applies": 1,
       "top5": 1,
       "unrouted": 0
+    },
+    "sulh_replaces_owned_wealth": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "supervening_bar_extends_to_preliminaries": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 2
     },
     "tabaa": {
       "cases": 4,
@@ -1433,6 +1493,12 @@
       "rank": 1
     },
     {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f002",
+      "encoder": "craft_capacity_is_wealth",
+      "settled": 0.3333,
+      "rank": 1
+    },
+    {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f001",
       "encoder": "tabaa",
       "settled": 1.0,
@@ -1453,6 +1519,132 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f013",
       "encoder": "tabaa",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f004",
+      "encoder": "prevention_easier_than_removal",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f005",
+      "encoder": "prevention_easier_than_removal",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f002",
+      "encoder": "supervening_bar_extends_to_preliminaries",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f004",
+      "encoder": "supervening_bar_extends_to_preliminaries",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f002",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "settled": 0.5,
+      "rank": 3
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f003",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "settled": 0.5,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f004",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f007",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f008",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "settled": 0.5,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f010",
+      "encoder": "qawad_choice_forfeits_attached_right",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f016",
+      "encoder": "sulh_replaces_owned_wealth",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f003",
+      "encoder": "burdened_thing_compensated",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f006",
+      "encoder": "badal_stands_for_original",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f007",
+      "encoder": "badal_stands_for_original",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f009",
+      "encoder": "badal_stands_for_original",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f002",
+      "encoder": "heir_takes_deceased_right",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f003",
+      "encoder": "heir_takes_deceased_right",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f008",
+      "encoder": "heir_takes_deceased_right",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f004",
+      "encoder": "bain_in_idda_as_wife",
+      "settled": 0.5,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f004",
+      "encoder": "rajiyya_takes_wife_rule",
+      "settled": 0.5,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f008",
+      "encoder": "rajiyya_takes_wife_rule",
       "settled": 0.5,
       "rank": 1
     },

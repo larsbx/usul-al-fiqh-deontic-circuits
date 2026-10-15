@@ -1,0 +1,484 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f002",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ḥajj for the earner far from Makka: the reading makes it obligatory with al-Majd's tawajjuh; zād and rāḥila are the madhhab in al-Inṣāf, and the Iqnāʿ, Kashshāf and Sharḥ al-Muntahā have it only recommended for the earner. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p401",
+          "excerpt_ar": "قوله (الخامس: الاستطاعة، وهو أن يملك زادا وراحلة) . هذا المذهب من حيث",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "«هذا المذهب من حيث الجملة، وعليه جماهير الأصحاب ... ونص عليه»; then «فعلى المذهب: يستحب الحج لمن أمكنه المشي والتكسب بالصنعة»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p340",
+          "excerpt_ar": "استحب له الحج ولم يجب عليه ويكره لمن حرفته المسالة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "Of one who can earn by a craft on the way: recommended, not obligatory, stated decisively."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p388",
+          "excerpt_ar": "(ولا يسأل الناس استحب له الحج) خروجا من الخلاف (ولم يجب عليه) ؛ لأنه",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "«لأنه ليس بمستطيع لما تقدم من أن الاستطاعة: ملك الزاد والراحلة»."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p517",
+          "excerpt_ar": "يستحب لمن أمكنه المشي والكسب بالصنعة ويكره لمن حرفته المسألة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ al-Muntahā",
+          "note": "After «فإن لم يملك ذلك لم يلزمه الحج»: only recommended for the earner."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p401",
+          "excerpt_ar": "المشي والتكسب بالصنعة: فعليه الحج، واختاره الشيخ عبد الحليم ولد المجد",
+          "position": 1,
+          "grade": "ashab",
+          "who": "Ibn al-Jawzī (Kashf al-Mushkil) and ʿAbd al-Ḥalīm son of al-Majd, as al-Inṣāf reports them",
+          "note": "Obligatory for one who can walk and earn by a craft; ʿAbd al-Ḥalīm: «هذا ظاهر على أصلنا»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f003",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two well-known riwāyas on compelling the bankrupt craftsman to earn for his remaining debt; al-Inṣāf makes compulsion the correct madhhab and al-Muntahā, al-Iqnāʿ and Kashshāf state it. For the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p317",
+          "excerpt_ar": "إحداهما: يجبر. وهو الصحيح من المذهب. جزم به في الوجيز، ونظم المفردات،",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «وإن بقي على المفلس بقية وله صنعة، فهل يجبر على إيجار نفسه لقضائها؟»."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p491",
+          "excerpt_ar": "ويلزم إجبار مفلس محترف على إيجار نفسه فيما يليق به ل بقية دينه كوقف",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, al-Muntahā",
+          "note": "Stated decisively."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p220",
+          "excerpt_ar": "وإن بقي على المفلس بقية أجبر المحترف على الكسب",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "Stated decisively, «وإيجار نفسه فيما يليق بمثله لقضاء ما بقي عليه»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p439",
+          "excerpt_ar": "(وإن بقي على المفلس) بعد قسم ماله (بقية) من الدين (أجبر المحترف على",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "With the ḥadīth of Surraq."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f005",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two riwāyas on the poor earner bearing the ʿaql; al-Inṣāf makes «not on the poor» the madhhab, the other riwāya being the one al-Majd restricts to the earner, and al-Muntahā, al-Iqnāʿ and Kashshāf exclude the poor «ولو معتملا». Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p120",
+          "excerpt_ar": "مخالف لدين الجاني: حمل شيء) . هذا المذهب جزم به في الوجيز، وغيره.",
+          "position": 1,
+          "grade": "qiyas",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The taṣḥīḥ is of «وليس على فقير ... حمل شيء» generally; the earner falls under it, the contrary riwāya being the one al-Majd restricts to him."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v05:p101",
+          "excerpt_ar": "ويعقل هرم وزمن وأعمى وغائب كضدهم لا فقير ولو معتملا",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, al-Muntahā",
+          "note": "Stated decisively, the earner named («ولو معتملا»)."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p234",
+          "excerpt_ar": "المعاقلة وليس على فقير ولو معتملا ولا صبي ولا زائل العقل ولا امرأة ولا",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "Stated decisively, the earner named."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p060",
+          "excerpt_ar": "يعقلوا عنه كأهل محلته لأنهم لا يرثونه (وليس على فقير ولو معتملا حمل شيء",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "«لأن حمل العاقلة مواساة فلا يلزم الفقير كالزكاة»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p121",
+          "excerpt_ar": "وعنه: أن الفقير يحمل من العقل. وأطلقهما المصنف، وغيره. وقيده المجد وغيره",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Majd and others, as al-Inṣāf reports them",
+          "note": "They restrict the riwāya that the poor bears to the earner; al-Zarkashī: «وهو حسن»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f006",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two riwāyas on the jizya of the poor earner; Ibn Rajab's «أشهرهما الوجوب», al-Inṣāf's «على الصحيح من المذهب», with al-Iqnāʿ and Kashshāf stating it. For the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p224",
+          "excerpt_ar": "لو كان معتملا وجبت عليه، على الصحيح من المذهب. قال في الفروع: تجب على",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "«فعلى المذهب: لو كان معتملا وجبت عليه»; al-Furūʿ «على الأصح»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p044",
+          "excerpt_ar": "على فقير يعجز عنها غير معتمل فإن كان معتملا وجبت عليه ومن بلغ أو أفاق أو",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "Stated decisively."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p121",
+          "excerpt_ar": "(فإن كان) الفقير (معتملا وجبت عليه) الجزية لما سبق.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Stated decisively, after ʿUmar's three classes whose lowest is «الفقير المعتمل»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f000",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The menstruating woman: enjoyment below the farj is the madhhab outright in al-Inṣāf, with al-Muntahā; the navel-to-knee riwāya is the one already listed. For the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p350",
+          "excerpt_ar": "قوله (ويجوز أن يستمتع من الحائض بما دون الفرج) ، هذا المذهب مطلقا.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "«وعليه جمهور الأصحاب، وقطع به كثير منهم»; «وعنه لا يجوز الاستمتاع بما بين السرة والركبة»."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v01:p120",
+          "excerpt_ar": "وطلاق ويجوز أن يستمتع من حائض بدون فرج ويسن ستره",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, al-Muntahā",
+          "note": "Stated decisively."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f001",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ẓihār: the preliminaries forbidden is «أشهرهما» in Ibn Rajab and the madhhab in al-Inṣāf, stated by al-Iqnāʿ, al-Muntahā and Kashshāf. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p204",
+          "excerpt_ar": "يحرم، وهو المذهب، اختاره أبو بكر، والقاضي، وأصحابه، منهم",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «وهل يحرم الاستمتاع منها بما دون الفرج؟ على روايتين»: «إحداهما: يحرم، وهو المذهب»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p085",
+          "excerpt_ar": "ويحرم علي مظاهر ومظاهر منها الوطء والاستمتاع منها بما دون الفرج قبل التكفير",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "Stated decisively."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p357",
+          "excerpt_ar": "على مظاهر ومظاهر منها وطء ودواعيه قبل تكفير ولو كان بإطعام",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, al-Muntahā",
+          "note": "Stated decisively."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p374",
+          "excerpt_ar": "(و) يحرم أيضا (الاستمتاع منها بما دون الفرج قبل التكفير) لأن ما حرم",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "«لأن ما حرم الوطء من القول حرم دواعيه كالطلاق والإحرام»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f002",
+      "grades": [
+        "nass",
+        [
+          "nass",
+          "ashab"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The captive in istibrāʾ: the preliminaries forbidden is the madhhab in al-Inṣāf, and al-Muntahā and Kashshāf bar enjoyment of every owned slave in istibrāʾ; al-Qāḍī in al-Mujarrad, Ibn al-Bannāʾ and al-Shīrāzī permit it. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p317",
+          "excerpt_ar": "والكافي، والهادي، والمغني، والشرح. أحدهما: لا يحل. وهو المذهب. قال",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «إلا المسبية، هل له الاستمتاع بها فيما دون الفرج؟ على روايتين»."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p417",
+          "excerpt_ar": "أو لم تحض حتى من طفل وأنثى لم يحل استمتاعه بها ولو بقبلة حتى يستبرئها",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, al-Muntahā",
+          "note": "The sentence opens «يوطأ مثلها ولو مسبية»: the captive is named."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p435",
+          "excerpt_ar": "له وطؤها ولا الاستمتاع بها بقبلة و) لا بنظر (لشهوة ولا بما دون فرج بكرا",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Of a slave owned «ببيع أو هبة أو إرث أو سبي»: the captive included."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p317",
+          "excerpt_ar": "والرواية الثانية: يحل له ذلك. وجزم به ابن البنا، والشيرازي. وصححه في",
+          "position": 1,
+          "grade": "ashab",
+          "who": "Ibn al-Bannāʾ and al-Shīrāzī, as al-Inṣāf reports them",
+          "note": "«وصححه في البلغة، والقاضي في المجرد»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f003",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two wujūh, left unweighted by al-Inṣāf and al-Furūʿ; al-Iqnāʿ, Kashshāf and Sharḥ al-Muntahā permit enjoyment below the farj during the ʿidda of the wife had by mistake. For the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p115",
+          "excerpt_ar": "وتستبرأ السرية وله الاستمتاع منهما بما دون الفرج.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "Of the wife or concubine had by mistake or zinā, stated decisively."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p425",
+          "excerpt_ar": "الزوجة والسرية (بما دون الفرج) كقبلة ولمس لشهوة لأن التحريم لعارض",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "«لأن التحريم لعارض كالحيض»."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p200",
+          "excerpt_ar": "وطء في فرج) ; لأن تحريمها لعارض يختص به الفرج فأبيح الاستمتاع منها بما",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ al-Muntahā",
+          "note": "On al-Muntahā's «ولا يحرم على زوج ... زمن عدة غير وطء في فرج»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f004",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Combining two owned sisters in the preliminaries: Ibn ʿAqīl's dislike (the reading's side, put in al-Iqnāʿ) against al-Qāḍī's prohibition with Ibn Rajab's tawajjuh, which Kashshāf joins to al-Inṣāf's taṣḥīḥ of the cognate «دواعي الوطء كالوطء». Against the reading; Kashshāf's harmonisation (before intercourse with either) is the candidate farq.",
+      "evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p184",
+          "excerpt_ar": "بمقدمات الوطء فيكره ولا يحرم قاله ابن عقيل فأن وطئ إحداهما فليس له وطء",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn gives Ibn ʿAqīl's view with no other."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p130",
+          "excerpt_ar": "الفروع. والصحيح من المذهب: أن دواعي الوطء كالوطء. وقدم ابن رزين في شرحه",
+          "position": 1,
+          "grade": "qiyas",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "A cognate masʾala: the bought sister of his wife during the wife's ʿidda."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p077",
+          "excerpt_ar": "(وقال القاضي يحرم كالوطء) وقاله ابن رجب بحثا في القاعدة السادسة",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Qāḍī, as Kashshāf reports him",
+          "note": "«وصححه في الإنصاف كما جزم به المصنف آنفا»; then «ولو حمل كلام ابن عقيل على ما قبل وطء إحداهما لم يعارض كلام القاضي»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f000",
+      "grades": [
+        "ashab",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Zakāt fruit destroyed by the owner before drying: by its estimate dried, Ibn Rajab's «على الصحيح» and al-Inṣāf's «على الصحيح من المذهب», stated by al-Muntahā, al-Iqnāʿ and Kashshāf; the fresh like is the riwāya. For the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p109",
+          "excerpt_ar": "الصحيح من المذهب؛ لأنه يلزمه تجفيف هذا الرطب بخلاف الأجنبي، وعنه رطبا",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Continuing «ضمن زكاتها بخرصها تمرا على»."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v01:p476",
+          "excerpt_ar": "عنبا أو رطبا بفعل مالك أو بضمن زكاته بخرصة زبيبا أو تمرا",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, al-Muntahā",
+          "note": "Stated decisively."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p264",
+          "excerpt_ar": "وإن أتلفها المالك أو تلفت بتفريطه ضم زكاتها بخرصها تمرا وإن ترك الساعي",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "Stated decisively."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p216",
+          "excerpt_ar": "(وإن أتلفها) أي الثمرة (المالك أو تلفت بتفريطه ضمن زكاتها بخرصها تمرا)",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Stated decisively."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f001",
+      "grades": [
+        "ashab",
+        "wajh",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The owner who destroys his designated uḍḥiya or hady: the reading's reckoning at the day of sacrifice (Ibn Rajab, al-Ḥalwānī) and al-Kāfī's greater of value or a like (most of the aṣḥāb per al-Zarkashī) against the value on the day of destruction, the madhhab in al-Inṣāf and stated by al-Muntahā, al-Iqnāʿ, Kashshāf and al-Furūʿ. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p095",
+          "excerpt_ar": "الزركشي: هو قول أكثر الأصحاب والصحيح من المذهب: أنه يضمنها بالقيمة يوم",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "«أنه يضمنها بالقيمة يوم التلف فيصرف في مثلها كالأجنبي»; the first clause is the other view's support."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p191",
+          "excerpt_ar": "تراداه وإن أتلفها أجنبي أو صاحبها ضمنها بقيمتها يوم التلف تصرف في مثلها",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, al-Muntahā",
+          "note": "Stated decisively, owner and outsider alike."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p405",
+          "excerpt_ar": "وإن أتلفها صاحبها ضمنها بقيمتها يوم التلف تصرف في مثلها كإتلاف أجنبي وإن",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "Stated decisively."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p015",
+          "excerpt_ar": "المعينة من هدي أو أضحية (صاحبها ضمنها بقيمتها يوم التلف) في محله،",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "«كسائر المتقومات»."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v06:p098",
+          "excerpt_ar": "أحمد. وإن فرط ضمن القيمة يوم التلف, يصرف في مثله كأجنبي, وقيل: أكثر",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn Mufliḥ, al-Furūʿ",
+          "note": "Put first, the greater of the values given as «وقيل»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p095",
+          "excerpt_ar": "بأكثر الأمرين: من مثلها أو قيمتها وجزم به في الهداية، والمذهب، ومسبوك",
+          "position": 2,
+          "grade": "jazm",
+          "who": "al-Muqniʿ with al-Hidāya, al-Madhhab, al-Khulāṣa, al-Kāfī and others, «قول أكثر الأصحاب» per al-Zarkashī",
+          "note": "Reported in al-Inṣāf ahead of the taṣḥīḥ for the value on the day of destruction."
+        }
+      ]
+    }
+  ]
+}

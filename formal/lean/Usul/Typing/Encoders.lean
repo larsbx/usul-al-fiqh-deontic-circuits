@@ -1294,6 +1294,118 @@ def budhCapacityIsWealth : Typed Situation (Bool) where
   run | (x1, x2) => Usul.Readings.RajabA16.countsAsRich x1 x2
   proj_embed := fun _ => rfl
 
+/-- `craft_capacity_is_wealth` reads `Qaida.Rajab132`. -/
+def craftCapacityIsWealth : Typed Situation (Bool) where
+  Local := (Bool) × (Bool) × (Bool)
+  proj s := do pure (← s.hasWealthQ132, ← s.canEarnByCraft, ← s.beyondOwnMaintenance)
+  embed | (x1, x2, x3) => { hasWealthQ132 := some x1, canEarnByCraft := some x2, beyondOwnMaintenance := some x3 }
+  run | (x1, x2, x3) => Usul.Readings.RajabA17.craftCountsAsRich x1 x2 x3
+  proj_embed := fun _ => rfl
+
+/-- `prevention_easier_than_removal` reads `Qaida.Rajab134`. -/
+def preventionEasierThanRemoval : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.impediment, ← s.beforeEstablishment)
+  embed | (x1, x2) => { impediment := some x1, beforeEstablishment := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA17.impedimentOperates x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `supervening_bar_extends_to_preliminaries` reads `Qaida.Rajab136`. -/
+def superveningBarExtendsToPreliminaries : Typed Situation (Bool) where
+  Local := (Bool) × (Bool) × (Bool)
+  proj s := do pure (← s.weakOwnership, ← s.worship, ← s.barsIndulgence)
+  embed | (x1, x2, x3) => { weakOwnership := some x1, worship := some x2, barsIndulgence := some x3 }
+  run | (x1, x2, x3) => Usul.Readings.RajabA17.preliminariesForbidden x1 x2 x3
+  proj_embed := fun _ => rfl
+
+/-- `qawad_choice_forfeits_attached_right` reads `Qaida.Rajab137`. -/
+def qawadChoiceForfeitsAttachedRight : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.eitherOfTwo, ← s.victimEncumbered)
+  embed | (x1, x2) => { eitherOfTwo := some x1, victimEncumbered := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA18.forfeitsAttachedRight x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `sulh_replaces_owned_wealth` reads `Qaida.Rajab137`. -/
+def sulhReplacesOwnedWealth : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.eitherOfTwo, ← s.victimOwned)
+  embed | (x1, x2) => { eitherOfTwo := some x1, victimOwned := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA18.sulhReplacesWealth x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `burdened_thing_compensated` reads `Qaida.Rajab138`. -/
+def burdenedThingCompensated : Typed Situation (Bool) where
+  Local := (Bool) × (Bool) × (Bool)
+  proj s := do pure (← s.guaranteedQ138, ← s.destroyed, ← s.claimantExists)
+  embed | (x1, x2, x3) => { guaranteedQ138 := some x1, destroyed := some x2, claimantExists := some x3 }
+  run | (x1, x2, x3) => Usul.Readings.RajabA18.mustCompensate x1 x2 x3
+  proj_embed := fun _ => rfl
+
+/-- `unfixed_right_reaches_fixed` reads `Qaida.Rajab139`. -/
+def unfixedRightReachesFixed : Typed Situation (Bool) where
+  Local := (Bool) × (Bool) × (Bool)
+  proj s := do pure (← s.takesAllWhenAlone, ← s.tiedToBase, ← s.sameLocus)
+  embed | (x1, x2, x3) => { takesAllWhenAlone := some x1, tiedToBase := some x2, sameLocus := some x3 }
+  run | (x1, x2, x3) => Usul.Readings.RajabA17.unfixedMayReachFixed x1 x2 x3
+  proj_embed := fun _ => rfl
+
+/-- `custodian_liable_at_due_time` reads `Qaida.Rajab141`. -/
+def custodianLiableAtDueTime : Typed Situation (Bool) where
+  Local := (Bool)
+  proj s := s.custodianUntilTerm
+  embed x1 := { custodianUntilTerm := some x1 }
+  run x1 := Usul.Readings.RajabA17.dueTimeGoverns x1
+  proj_embed := fun _ => rfl
+
+/-- `returned_takes_first_ruling` reads `Qaida.Rajab142`. -/
+def returnedTakesFirstRuling : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.restoredByLife, ← s.oldMaterials)
+  embed | (x1, x2) => { restoredByLife := some x1, oldMaterials := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA19.returnedIsFirst x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `badal_stands_for_original` reads `Qaida.Rajab143`. -/
+def badalStandsForOriginal : Typed Situation (Bool) where
+  Local := (Bool)
+  proj s := s.soldForPrice
+  embed x1 := { soldForPrice := some x1 }
+  run x1 := Usul.Readings.RajabA19.badalStands x1
+  proj_embed := fun _ => rfl
+
+/-- `heir_takes_deceased_right` reads `Qaida.Rajab144`. -/
+def heirTakesDeceasedRight : Typed Situation (Bool) where
+  Local := (Bool) × (Bool) × (Bool)
+  proj s := do pure (← s.accruesAtDeath, ← s.claimedOrHeld, ← s.attachedToInheritedProperty)
+  embed | (x1, x2, x3) => { accruesAtDeath := some x1, claimedOrHeld := some x2, attachedToInheritedProperty := some x3 }
+  run | (x1, x2, x3) => Usul.Readings.RajabA20.heirInherits x1 x2 x3
+  proj_embed := fun _ => rfl
+
+/-- `heir_stands_in_owed_right` reads `Qaida.Rajab144`. -/
+def heirStandsInOwedRight : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.obligationBinding, ← s.tendsToBinding)
+  embed | (x1, x2) => { obligationBinding := some x1, tendsToBinding := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA20.heirStandsIn x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `bain_in_idda_as_wife` reads `Qaida.Rajab145`. -/
+def bainInIddaAsWife : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.inIdda, ← s.tiesCut)
+  embed | (x1, x2) => { inIdda := some x1, tiesCut := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA19.bainAsWife x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `rajiyya_takes_wife_rule` reads `Qaida.Rajab146`. -/
+def rajiyyaTakesWifeRule : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.rajiyya, ← s.listedDifference)
+  embed | (x1, x2) => { rajiyya := some x1, listedDifference := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA20.wifeRuleApplies x1 x2
+  proj_embed := fun _ => rfl
+
 /-! ## Integration: the jamʿ of Ibn Rajab 14's two readings -/
 
 /-- `cause_on_certainty` reads `Qaida.Rajab14Certainty`, which extends Ibn Rajab 14's type. -/

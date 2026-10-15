@@ -32,8 +32,14 @@ SKIP = {"segmentation_error"}  # not a case of its encoder
 
 
 def load_facts(corpus: Path) -> dict[str, dict]:
-    return {c["far"]: c for f in sorted((corpus / "fatawa" / "prolog").glob("*_facts.json"))
-            for c in json.loads(f.read_text(encoding="utf-8"))["cases"]}
+    """Extended facts per case; a case given in two places is refused, not silently shadowed."""
+    entries = [(f.name, c) for f in sorted((corpus / "fatawa" / "prolog").glob("*_facts.json"))
+               for c in json.loads(f.read_text(encoding="utf-8"))["cases"]]
+    seen = Counter(c["far"] for _, c in entries)
+    if dup := sorted(i for i, n in seen.items() if n > 1):
+        raise ValueError("facts given more than once: " + ", ".join(
+            f"{i} ({', '.join(name for name, c in entries if c['far'] == i)})" for i in dup))
+    return {c["far"]: c for _, c in entries}
 
 
 def merge(cases: list[dict], facts: dict[str, dict]) -> list[dict]:

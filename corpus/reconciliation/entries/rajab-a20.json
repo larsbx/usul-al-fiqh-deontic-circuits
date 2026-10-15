@@ -1,0 +1,565 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f001",
+      "grades": [
+        "nass",
+        [
+          "nass",
+          "takhrij"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The unclaimed shufʿa is not inherited: al-Inṣāf labels it «الصحيح من المذهب», and Kashshāf and al-Iqnāʿ state it decisively; Abū Ṭālib's report and Abū al-Khaṭṭāb's takhrīj stand against it.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p297",
+          "excerpt_ar": "قبل طلبها: لم يستحق الورثة الشفعة. على الصحيح من المذهب. وعليه الأصحاب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of the shafīʿ who dies before claiming; he then cites Ibn Rajab's two maʾkhadhs and the takhrīj of Abū al-Khaṭṭāb."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p158",
+          "excerpt_ar": "(بطلت) شفعته؛ لأنها نوع خيار شرع للتمليك، أشبه القبول، فإنه لو مات من",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Sharḥ of «وإن مات الشفيع قبل الطلب»: his shufʿa lapses."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p374",
+          "excerpt_ar": "وإن مات الشفيع بطلت وإن طالب فلا وتكون لورثته كلهم على حسب ميراثهم ولا",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn: it lapses unless he claimed it."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f002",
+      "grades": [
+        "nass",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The unclaimed khiyār al-sharṭ is not inherited: Aḥmad's naṣṣ, labelled «هذا المذهب» in al-Inṣāf and stated decisively in Kashshāf and al-Iqnāʿ, against Abū al-Khaṭṭāb's takhrīj.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p393",
+          "excerpt_ar": "منهما بطل خياره، ولم يورث) . هذا المذهب. وعليه جماهير الأصحاب. وجزم به",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ «ومن مات منهما بطل خياره، ولم يورث»; he reports the takhrīj «ويتخرج أن يورث» from Abū al-Khaṭṭāb."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p210",
+          "excerpt_ar": "(ومن مات منهما) أي البائع والمشتري (بطل خياره وحده ولم يورث) لأنه حق",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The sharḥ continues «إن لم يكن طالب به قبل موته»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p090",
+          "excerpt_ar": "بطل خياره وحده ولم يورث إن لم يكن طالب به قبل موته فإن طالب به قبله ورث",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f003",
+      "grades": [
+        [
+          "ashab",
+          "nass"
+        ],
+        [
+          "takhrij",
+          "nass"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The father's unclaimed right to take back a gift does not pass to his heirs: al-Qāḍī states it, Kashshāf takes it as the base of an analogy, and al-Inṣāf labels the cognate ruling on the unequal gift «هذا المذهب»; against it, Abū al-Khaṭṭāb's takhrīj and the riwāya letting the other children reclaim.",
+      "evidence": [
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p210",
+          "excerpt_ar": "فسخ لا يجوز الاعتياض عنه فلم يورث كخيار الرجوع في الهبة (إن لم يكن طالب",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Khiyār al-rujūʿ in the hiba is the stated, unclaimed, non-inherited base."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p140",
+          "excerpt_ar": "هذا المذهب. وعليه أكثر الأصحاب. منهم الخلال، وصاحبه أبو بكر، والخرقي،",
+          "position": 0,
+          "grade": "qiyas",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «فإن مات قبل ذلك) (ثبت للمعطى)»: the unequal gift is fixed for the recipient when the father dies before equalising; the cognate sub-question."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f004",
+      "grades": [
+        "nass",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The unclaimed ḥadd of qadhf lapses: Aḥmad's naṣṣ, labelled «الصحيح من المذهب» in al-Inṣāf and assumed in Kashshāf, against Abū al-Khaṭṭāb's takhrīj.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p393",
+          "excerpt_ar": "حد القذف لا يورث إلا بمطالبة الميت في حياته، كخيار الشرط. على الصحيح",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The line continues «من المذهب. ونص عليه. وعليه الأصحاب»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p211",
+          "excerpt_ar": "طالب به قبله ورث كشفعة وحد قذف) قال أحمد الموت يبطل به ثلاثة أشياء",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The ḥadd of qadhf, like the shufʿa, is inherited only if claimed."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f005",
+      "grades": [
+        "zahir",
+        "jazm"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Aḥmad's ẓāhir (lapse) against the majority's ẓāhir (exacted); the later works treat only the cognate qiṣāṣ of a child or madman who dies before claiming, which passes to the heir «على الصحيح من المذهب». By the grade order Aḥmad's ẓāhir outranks a cognate taṣḥīḥ and the majority, so the tarjīḥ falls on the reading's side although no later work confirms it on these facts. On the madhhab side by that order (invariant 10); the case is marked so.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p482",
+          "excerpt_ar": "لو مات الصبي والمجنون قبل البلوغ والعقل: قام وارثهما مقامهما في القصاص",
+          "position": 1,
+          "grade": "qiyas",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The line continues «على الصحيح من المذهب وعليه جماهير الأصحاب»; a qiṣāṣ held but not claimed, cognate."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p181",
+          "excerpt_ar": "الصغير نصا وإن ماتا قبل البلوغ والعقل قام وارثهما مقامهما فيه وإن قتلا",
+          "position": 1,
+          "grade": "qiyas",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The same cognate in the matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f006",
+      "grades": [
+        [
+          "nass",
+          "jazm"
+        ],
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The heirs stand in for the legatee in accepting: al-Inṣāf labels al-Khiraqī's view «هذا المذهب» and al-Iqnāʿ states it decisively; the manṣūṣ lapse, chosen by al-Qāḍī and the majority, is the other side. The taṣḥīḥ prevails, against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p205",
+          "excerpt_ar": "هذا المذهب. نص عليه في رواية صالح. قاله المجد. واختاره المصنف، والشارح،",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «وإن مات بعده، وقبل الرد والقبول: قام وارثه مقامه. ذكره الخرقي»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p052",
+          "excerpt_ar": "الموصى له بعد موت الموصي وقبل الرد والقبول قام وارثه مقامه في القبول",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f009",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The deferred debt does not fall due by death once the heirs secure it: al-Inṣāf labels it «هذا المذهب», and Kashshāf, al-Iqnāʿ and al-Muntahā state it decisively, against the riwāya that it falls due.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p307",
+          "excerpt_ar": "الأمرين من قيمة التركة أو الدين. هذا المذهب. قال في القواعد الفقهية: هذا",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «ومن مات وعليه دين مؤجل: لم يحل إذا وثق الورثة»; he quotes Ibn Rajab's «أشهر الروايتين»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p438",
+          "excerpt_ar": "دين مؤجل لم يحل) الدين بموته (إذا وثق الورثة أو) وثق (غيرهما برهن أو",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "«لأن الأجل حق للميت»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p219",
+          "excerpt_ar": "الغرماء ببقية ديونهم ومن مات وعليه دين مؤجل لم يحل إذا وثق الورثة أو",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p490",
+          "excerpt_ar": "إن وثق ورثته أو أجنبي الأقل من الدين أو التركة ويختص بها رب حال أو لم",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The preceding words: «ولا يحل بجنون ولا موت»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f014",
+      "grades": [
+        "ashab",
+        [
+          "nass",
+          "ashab"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The heir stands in for the donor who died before delivery: al-Inṣāf labels it «هذا المذهب», and Kashshāf and al-Iqnāʿ state it decisively; the manṣūṣ lapse is the other side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p123",
+          "excerpt_ar": "قوله (وإن مات الواهب: قام وارثه مقامه في الإذن والرجوع)",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Muqniʿ's words; al-Inṣāf's next line begins «هذا المذهب. جزم به في الهداية»; he then quotes Ibn Rajab's report of the manṣūṣ."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p303",
+          "excerpt_ar": "(وإن مات واهب قبل إقباض ورجوع) لم تبطل الهبة لأنه عقد مآله إلى اللزوم،",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "«فلم ينفسخ بالموت كالبيع في مدة الخيار»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p032",
+          "excerpt_ar": "واهب قبل إقباض ورجوع قام وارثه مقامه في إذن ورجوع",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f000",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The rajʿiyya is lawful to her husband: al-Inṣāf labels it «هذا المذهب» and Kashshāf states it decisively; the tarjīḥ goes against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p153",
+          "excerpt_ar": "وتتزين) ، وهذا المذهب، وعليه أكثر الأصحاب، قال القاضي: هذا ظاهر المذهب،",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «ويباح لزوجها وطؤها والخلوة والسفر بها»; he reports «وعنه: ليست مباحة حتى يراجعها بالقول»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p343",
+          "excerpt_ar": "وطؤها و) يباح له (الخلوة) بها (و) يباح له (السفر بها ولها أن تتزين له",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "«لأنها في حكم الزوجات كما قبل الطلاق»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f001",
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Divorcing the rajʿiyya again before taking her back is barred: al-Inṣāf labels it «الصحيح من المذهب» and al-Iqnāʿ «حرم نصا», both for the triple spread over ṭuhrs before a rajʿa, a cognate of the record's unspecified divorce; Ibn Rajab's «أصح الروايتين» agrees. The tarjīḥ confirms the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p452",
+          "excerpt_ar": "ليس له أن يطلق ثانية وثالثة قبل الرجعة. على الصحيح من المذهب. قال الشيخ",
+          "position": 0,
+          "grade": "qiyas",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Preceded by «وعلى المذهب:» (that tripling in one ṭuhr is prohibited); a second and third divorce before rajʿa, cognate."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p006",
+          "excerpt_ar": "ثلاثا بكلمة أو بكلمات في طهر لم يصبها فيه أو في إطهار قبل رجعة حرم نصا",
+          "position": 0,
+          "grade": "qiyas",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The triple in separate ṭuhrs before a rajʿa; cognate."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f002",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The ilāʾ from a rajʿiyya is valid: al-Inṣāf labels it «هذا المذهب» and Kashshāf states it decisively; the tarjīḥ goes against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p152",
+          "excerpt_ar": "اللعان، وهذا المذهب، وعليه الأصحاب، وعنه: لا يصح الإيلاء منها، فعلى",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «والرجعية زوجة، يلحقها الطلاق والظهار والإيلاء»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p343",
+          "excerpt_ar": "(والرجعية زوجة يلحقها الطلاق والظهار واللعان والإيلاء وابتداء المدة)",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The matn of al-Iqnāʿ in the sharḥ."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f003",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Her consent to remain voids the option, so her choice is effective: al-Inṣāf labels it «هو المذهب», al-Iqnāʿ and al-Muntahā state it decisively; the tarjīḥ goes against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p182",
+          "excerpt_ar": "وهو المذهب. اختاره المصنف وغيره. وصححه في التصحيح، والمذهب، فقال: سقط",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «وإن عتقت المعتدة الرجعية فلها الخيار» … «فإن رضيت بالمقام، فهل يبطل خيارها؟ … أحدهما: يبطل»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p196",
+          "excerpt_ar": "وإن كان رجعيا أو عتقت المعتدة الرجعية فلها الخيار فإن رضيت بالمقام بطل",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p108",
+          "excerpt_ar": "الرجعية أو عتقت ثم طلقها رجعيا فلها الخيار فإن رضيت بالمقام بطل ومتى",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f004",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two riwāyāt reported by the author of al-Targhīb, with no madhhab label in the later works; al-Mardāwī's «قلت: الصواب أنه يحلها» (ashab) tips them to the wife's ruling, against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p166",
+          "excerpt_ar": "ثم وطئها في مدة العدة فهل يحلها لزوجها الأول؟ على روايتين، حكاهما صاحب الترغيب، قلت: الصواب أنه يحلها.",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Mardāwī's own «قلت: الصواب», an author's preference (ashab)."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f005",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The child is attached: al-Inṣāf labels it «هو المذهب» and Kashshāf states it decisively; the tarjīḥ goes against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p263",
+          "excerpt_ar": "أحدهما: يلحقه نسبه. وهو المذهب. قال في المستوعب: لحقه نسبه في أصح",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «وإن طلقها طلاقا رجعيا، فولدت لأكثر من أربع سنين» … «فهل يلحقه نسبه؟»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p407",
+          "excerpt_ar": "انقضت عدتها لحقه نسبه) لأنها في حكم الزوجات أشبه ما قبل الطلاق (وإن",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Of the rajʿiyya delivering more than four years after the divorce."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f006",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Custody returns by the revocable divorce itself: al-Inṣāf labels it «الصحيح من المذهب», and Kashshāf and al-Iqnāʿ state it decisively. The tarjīḥ confirms the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p425",
+          "excerpt_ar": "حقها من الحضانة بمجرد الطلاق. وهو الصحيح من المذهب. اختاره المصنف،",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of one divorced revocably by the stranger before her ʿidda ends."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p499",
+          "excerpt_ar": "وعقل المجنون، وطلقت الزوجة - ولو رجعيا، ولو لم تنقض العدة - رجعوا إلى",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "«رجعوا إلى حقهم» of custody."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p159",
+          "excerpt_ar": "وأسلم الكافر وعدم الفاسق ولو ظاهرا وعقل المجنون وطلقت الزوجة ولو رجعيا",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f007",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "She begins the ʿidda of death: al-Inṣāf labels it «هذا المذهب» and al-Iqnāʿ states it decisively; the tarjīḥ goes against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p275",
+          "excerpt_ar": "الطلاق) . هذا المذهب. وعليه الأصحاب. وجزم به في المغني، والوجيز، ومنتخب",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «فإن مات زوج الرجعية: استأنفت عدة الوفاة من حين موته، وسقطت عدة الطلاق»; he reports «وعنه: تعتد بأطولهما»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p110",
+          "excerpt_ar": "حرة وأمة ويجبر الكسر وإن مات زوج الرجعية في عدتها استأنفت عدة وفاة من",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f008",
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The rajʿiyya keeps to her home like the widow: Aḥmad's naṣṣ, stated decisively by al-Iqnāʿ, al-Muntahā and both sharḥs of al-Buhūtī, against a bare qīla. The tarjīḥ confirms the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p435",
+          "excerpt_ar": "الرجعية في العدة حكم المتوفى عنها في لزوم المنزل) وقوله تعالى",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "«وسواء أذن لها الزوج في الخروج أو لم يأذن؛ لأن ذلك من حقوق العدة»."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p206",
+          "excerpt_ar": "(ورجعية في لزوم منزل) مطلقها لا في الإحداد (كمتوفى عنها) زوجها نصا",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ al-Muntahā",
+          "note": "Sharḥ of al-Muntahā."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p414",
+          "excerpt_ar": "في لزوم منزل كمتوفى عنها وإن امتنع من لزمته سكنى أجبر وإن غاب اكترى عنه",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "Preceded by «ورجعية»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p120",
+          "excerpt_ar": "نفقة كمعتدة لشبهة أو نكاح فاسد أن مستبرأة بعتق وحكم الرجعية في العدة حكم",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "Continues «المتوفى عنها في لزوم المنزل»."
+        }
+      ]
+    }
+  ]
+}
