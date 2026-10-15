@@ -175,10 +175,19 @@
      "excerpt_ar": "ومتى استعار المرتهن الرهن صار مضمونا عليه. وبهذا قال الشافعي. وقال أبو حنيفة: لا ضمان عليه. ومبنى ذلك على العارية، فإنها عندنا مضمونة",
      "who": "Ibn Qudāma, al-Mughnī",
      "note": "For position 0: the use of the pledge with the owner's permission is a borrowing, and borrowing carries liability. A characterisation plus the rule of its aṣl (ʿāriya): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Abū Bakr's ruling that a stipulated benefit of the pledge is void and it remains a pledge as it was: the binding pledge is not turned into a liable loan by a permitted use (Majd's shāhid for the ẓāhir of Aḥmad)",
+     "ref": "src:openiti-rajab-shamela21730/v01:p047",
+     "excerpt_ar": "ظاهر كلام أحمد أنه لا يصير مضمونا بحال ويشهد له قول أبي بكر في خلافه: شرط منفعة الرهن باطل وهو رهن بحاله",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid (reporting Majd, Sharḥ al-Hidāya)",
+     "note": "Added on review: Majd's own ground for 'never liable', which the commentaries do not argue and Ibn Rajab reports. It is the same farq the jamʿ cites (37.f003: the binding contract is not displaced by the non-binding ʿāriya). A stated rationale by analogy: qiyas."
     }
    ],
    "advantages": [],
-   "searched": "Position 1 (never liable, ẓāhir of Aḥmad per Majd): not argued in al-Mughnī v04 p288–289, al-Sharḥ al-Kabīr v04 p440, al-Kāfī v02 p084, al-Mubdiʿ v04 p226; Kashshāf v04 p166 states the pledge as liable."
+   "searched": "Position 1 (never liable, ẓāhir of Aḥmad per Majd): not argued in al-Mughnī v04 p288–289, al-Sharḥ al-Kabīr v04 p440, al-Kāfī v02 p084, al-Mubdiʿ v04 p226; Kashshāf v04 p166 states the pledge as liable. On review, Majd's ground was found in Ibn Rajab's own text (v01:p047) and added."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001",

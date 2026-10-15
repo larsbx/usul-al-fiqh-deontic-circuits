@@ -53,6 +53,40 @@ Proved in Lean: tarjīḥ never invents a ruling (`prevail_mem`), a position tha
 
 In 2 of the 5 resolved furūʿ the proofs side with the madhhab's label; in the other 3 they go against it. Seven of twelve end in tawaqquf, mostly qiyās against qiyās or ẓannī text against ẓannī text. The pilot was weighed before al-Kawkab's murajjiḥāt were added; they are applied in the full weighing.
 
+## The full weighing (2026-10-15)
+
+Every ledger entry is now weighed: 596 entries, 1,855 proofs, 14 advantages, in `weighing/pilot.json` and `weighing/batch-00…38.json`. Each batch was drafted by an agent under one rulebook, every excerpt verified at its page through any qualifier that follows it (`make source-verify`: 4,444 excerpts), and every qaṭʿī or ijmāʿ claim reviewed. No human has reviewed the weighing yet.
+
+| | By proof (`sources` policy) | By attribution (record) |
+|---|---|---|
+| jamʿ / naskh | 20 / 1 | 20 / 1 |
+| tarjīḥ | 240 (178 for the reading, 83 against with the jamʿ and naskh counted by standing) | 561 |
+| tawaqquf | 335 | 14 |
+
+- **Proofs by tier:** qiyās 1,498; ẓannī text 178; istiṣḥāb 91; ṣaḥābī fatwā 36; disputed ṣaḥābī view 35; mursal or weak 17. No qaṭʿī text and no certain ijmāʿ: every claimed consensus was tacit («لم يعرف له مخالف») or reported by one transmitter against a contrary riwāya, and is tiered accordingly.
+- **Tawaqquf dominates** because most of these masāʾil are argued by qiyās on both sides, and the sources rarely state an advantage between two qiyāsāt. Seventeen entries have no argued proof on either side (`searched` records where).
+- **Labels and proofs:** of the 240 tarjīḥ by proof, the madhhab's labels favour the same ruling in 187. Of the 133 resolved furūʿ annotated on the madhhab's side, the proofs confirm 110 and go against 23.
+- **Policies:** one farʿ changes under `strict` (q132.f003, decided by the disputed saying-over-deed advantage) and one under `all` (q159.f035, decided by the rejected advantage of warding off the ḥadd).
+- **jamʿ:** none is refuted by the proofs. q037.f000 was at first: the weighing found no argued proof for Majd's side. Majd's own ground, Abū Bakr's «شرط منفعة الرهن باطل وهو رهن بحاله», reported by Ibn Rajab (v01:p047), was then added; qiyās against qiyās leaves the jamʿ standing.
+- **Residues by proof** (`report.json` `worklist`): 83, led by `two_usul_reinforced_governs` (8), `asl_zahir` (7), `heir_takes_deceased_right` (4) and `lots` (4).
+
+**Not modelled yet.** A proof the source cites only to rebut it (q067.f003 «ولا يصح», q096.f006 «وهذا ممنوع») is recorded as a proof; naqḍ and muʿāraḍa are a further layer. Tābiʿūn views have no tier and appear only in notes.
+
+**Open review items** raised by the weighers. These are doubts about the annotations, recorded and not acted on:
+
+- q156.f017: the case note says al-Muntahā halves the mahr for the excess wives; Sharḥ al-Muntahā v02:p688 reads no mahr («لتبين أن الفرقة وقعت بإسلامهم جميعا»), i.e. with position 0. (b19)
+- q033.f000: al-Kāfī v02:p021 holds the sale valid without dispute when the verbal exception of the foetus is valid (these facts); al-Qāḍī's «كأنه مستثنى» yields invalidity only if it is invalid. The framing of al-Qāḍī's side may be off. (b15)
+- q028.f001: Ibn Rajab's wording (retaliation, then a fresh aggressive wound) differs from the ledger evidence and al-Mughnī v08:p306 (retaliation done wrongfully: poisoned tool, extreme heat); the Iqnāʿ/Kashshāf ruling is «بقية الدية». (b06)
+- q140.f001: in al-Mughnī the restricted view also covers livestock from pasture, not only fruit and palm-pith as the position label has it. (b09)
+- q107.f003: al-Mughnī v06:p182 itself accepts the waqf on «من يحدث من ولده» as valid. (b18)
+- q096.f005: Ibn Rajab's printed «أنه لا يضمن» for al-Mubhij contradicts the reason he gives next; proof attached to 'liable'. (b22)
+- Witness check: openiti-burhanibnmuflih-mubdi-shamela21619bk2 v08:p229–230 quotes «قال الشيخ تقي الدين» and reads like Kashshāf; confirm the file holds al-Mubdiʿ. (b21)
+- Rebutted proofs: some proofs are cited and rejected by their own source (q067.f003 «ولا يصح»; q096.f006 «وهذا ممنوع»). The weighing records them; rebuttal (naqḍ/muʿāraḍa) is not yet modelled. (b22, b24)
+- q019.f004: al-Mughnī v03:p146 and Kashshāf make the menstruant's make-up due «بغير خلاف»; the khilāf covers the boy reaching puberty, the convert, the recovered insane. The case note may be loose. (b28)
+- q128.f006: al-Mughnī's ḍamān wajh and Kashshāf assess the diya less the arsh of the cut; position 1's wording says the full diya of a free man. (b29)
+- q018.f005: the case calls position 1 a takhrīj; al-Mughnī v03:p404 and al-Mubdiʿ v03:p234 report it as a riwāya with a reason. (b31)
+- q158.f016: the case note calls the muʿtamad's «لأن الأصل عدم لزومه له» (Kashshāf v05:p155) qiyās; by what it is, an appeal to the aṣl, it is istiṣḥāb. (b34)
+
 ## The attribution record (before the redesign)
 
 Everything below describes the earlier grading by attribution. Its figures are kept as the record of what the madhhab's labels favour; they are not tarjīḥ.

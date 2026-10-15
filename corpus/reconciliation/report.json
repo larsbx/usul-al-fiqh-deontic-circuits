@@ -1,22 +1,30 @@
 {
   "entries": 596,
-  "weighed": 462,
-  "proofs": 1471,
-  "advantages": 12,
+  "weighed": 596,
+  "proofs": 1855,
+  "advantages": 14,
   "stages": {
     "jam": 20,
     "naskh": 1,
-    "tarjih": 178,
-    "tawaqquf": 272,
-    "unweighed": 125
+    "tarjih": 240,
+    "tawaqquf": 335
   },
   "standing": {
-    "against_reading": 59,
-    "for_reading": 140,
-    "tawaqquf": 272,
-    "unweighed": 125
+    "against_reading": 83,
+    "for_reading": 178,
+    "tawaqquf": 335
   },
   "worklist": {
+    "two_usul_reinforced_governs": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f004",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f008",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f009",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f010",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f011",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f015",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f016",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f018"
+    ],
     "asl_zahir": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022",
@@ -48,6 +56,21 @@
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f004",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f007"
     ],
+    "tabaa": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f004",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f008",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f020"
+    ],
+    "urf_specialises_general": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f002",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f003",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f007"
+    ],
+    "vowed_as_shar_obligation": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f001",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f003",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f002"
+    ],
     "craft_capacity_is_wealth": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f002",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f003"
@@ -75,6 +98,10 @@
     "split_halves_suffice": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f001",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f002"
+    ],
+    "unknown_consent_binds": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f010",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f011"
     ],
     "attached_growth_follows": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f002"
@@ -139,56 +166,33 @@
     "shar_specialises_general": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f001"
     ],
-    "two_usul_reinforced_governs": [
-      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f018"
+    "supervening_bar_extends_to_preliminaries": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f004"
     ],
-    "vowed_as_shar_obligation": [
-      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f003"
+    "tadakhul": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f008"
+    ],
+    "tolerance_exceeded": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f002"
+    ],
+    "unintended_instance_covered": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f001"
+    ],
+    "unqualified_sharika_halves": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f003"
     ],
     "woman_half_of_man": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f002"
+    ],
+    "words_out_of_nature": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f004"
+    ],
+    "worship_ruled_from_start": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f007"
     ]
   },
-  "weighing_worklist": {
-    "two_usul_reinforced_governs": 17,
-    "tabaa": 11,
-    "tadakhul": 10,
-    "unknown_consent_binds": 9,
-    "urf_specialises_general": 9,
-    "taker_from_usurper": 7,
-    "unknown_condition_in_fact": 7,
-    "unintended_instance_covered": 6,
-    "words_out_of_nature": 6,
-    "supervening_bar_extends_to_preliminaries": 4,
-    "tolerance_exceeded": 4,
-    "unknown_order_judged_sequential": 4,
-    "vowed_as_shar_obligation": 4,
-    "sulh_replaces_owned_wealth": 3,
-    "switch_to_original": 3,
-    "unqualified_sharika_halves": 3,
-    "wage_without_stipulation": 3,
-    "successive_by_binding": 2,
-    "takes_only_by_special": 2,
-    "trust_voidance": 2,
-    "worship_ruled_from_start": 2,
-    "substitute_at_obligation": 1,
-    "taliq_al_bay": 1,
-    "transfer_follows_cause": 1,
-    "trust_loss": 1,
-    "unknown_as_nonexistent": 1,
-    "woman_half_of_man": 1,
-    "wording_need_not_learn": 1
-  },
-  "jam_pending": [
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f004",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f005",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f006",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f002",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f003"
-  ],
+  "weighing_worklist": {},
+  "jam_pending": [],
   "policies": {
     "strict": {
       "counts": [
@@ -232,7 +236,7 @@
       "for_reading": 411,
       "tawaqquf": 14
     },
-    "labels_agree_with_proofs": 135,
+    "labels_agree_with_proofs": 187,
     "review": [
       "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f006",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003",

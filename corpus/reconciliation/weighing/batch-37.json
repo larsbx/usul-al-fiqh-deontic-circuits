@@ -1,0 +1,530 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b37: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The Prophet's saying «whoever kills a slain enemy has his spoils», one of his well-known rulings acted on by the caliphs after him",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p238",
+     "excerpt_ar": "«من قتل قتيلا، فله سلبه» . # وهذا من قضايا رسول الله - صلى الله عليه وسلم - المشهورة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For the killer's entitlement without the imam's stipulation. A connected marfūʿ āḥād ḥadīth, general over every killer: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The spoils are taken from the booty without the imam's assessment or ijtihād, so they need no stipulation from him, like a share of the booty",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p238",
+     "excerpt_ar": "ولأن السلب مأخوذ من الغنيمة بغير تقدير الإمام واجتهاده، فلم يفتقر إلى شرطه، كالسهم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same position. Stated ʿilla and aṣl: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "ʿAwf b. Mālik: a reinforcing soldier killed an enemy, Khālid gave him only part of the spoils, and the Prophet said «do not give it to him, Khālid»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p238",
+     "excerpt_ar": "واحتجوا بما روى عوف بن مالك أن مدديا اتبعهم، فقتل علجا، فأخذ خالد بعض سلبه، وأعطاه بعضه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for Abū Ḥanīfa, al-Thawrī and Mālik, with a riwāya from Aḥmad chosen by Abū Bakr (spoils only by stipulation). A marfūʿ report (Saʿīd and Abū Dāwūd): zanni."
+    },
+    {
+     "position": 1,
+     "tier": "aqrabSahabi",
+     "dalil": "Saʿd b. Abī Waqqāṣ gave Shibr b. ʿAlqama the spoils at al-Qādisiyya as a nafl; and ʿUmar took the fifth from al-Barāʾ's spoils: had it been the killer's right, neither would have been needed",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p238",
+     "excerpt_ar": "وإنا قد نفلناه إياه. ولو كان حقا له، لم يحتج إلى نفله، ولأن عمر أخذ الخمس من سلب البراء",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same position. Acts of ṣaḥāba; the source reports ʿAwf b. Mālik arguing that the Prophet gave the spoils to the killer, and Saʿd not taking the fifth, so ṣaḥāba disagree: aqrabSahabi."
+    }
+   ],
+   "advantages": [
+    {
+     "for": 0,
+     "over": 1,
+     "by": "ashhar",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p238",
+     "excerpt_ar": "وهذا من قضايا رسول الله - صلى الله عليه وسلم - المشهورة، التي عمل بها الخلفاء بعده",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Between the two zanni ḥadīths: al-Mughnī calls «من قتل قتيلا فله سلبه» one of the Prophet's well-known rulings acted on by the caliphs, against the single incident in ʿAwf's report (which it reads as a punishment). ashhar."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy to the vowed hady, from which the vower may not eat",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p545",
+     "excerpt_ar": "قال القاضي: ومن أصحابنا من منع الأكل منها، قياسا على الهدي المنذور",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "For the bar on eating from a vowed udhiya (al-Mughnī: «وهو ظاهر كلام أحمد، وبناه على الهدي المنذور»). An explicit qiyās."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A vow is read by what is familiar; the familiar sharʿī udhiya is slaughtered and eaten from, and the vow changes nothing in the vowed thing except making it obligatory",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p457",
+     "excerpt_ar": "ولنا، أن النذر محمول على المعهود، والمعهود من الأضحية الشرعية ذبحها، والأكل منها، والنذر لا يغير من صفة المنذور إلا الإيجاب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's proof for eating from a vowed udhiya, distinguishing the hady due by the sharʿ. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ibn ʿAbbās's report of the Prophet's udhiya: he fed his household a third, his poor neighbours a third and gave the beggars a third (graded ḥasan by Abū Mūsā)",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p022",
+     "excerpt_ar": "والصدقة بثلثها، ولو كانت) الأضحية (منذورة أو معينة) لحديث ابن عباس في صفة أضحية النبي - صلى الله عليه وسلم",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf cites it for dividing in thirds, eating included, even from a vowed udhiya. A marfūʿ report of the Prophet's deed, ḥasan per the source, reaching the vowed udhiya by generality: zanni."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is an obligatory prayer, so it resembles missed obligatory prayers and the funeral prayer, which are performed in those times",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p081",
+     "excerpt_ar": "ولنا أنها صلاة واجبة، فأشبهت الفوائت من الفرائض وصلاة الجنازة، وقد وافقنا فيه فيما بعد صلاة العصر وصلاة الصبح",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's proof for performing the vowed prayer in a time of prohibition, «سواء كان النذر مطلقا أو مؤقتا». Analogy to missed farāʾiḍ: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same analogy in Kashshāf: a vowed prayer is obligatory, so it resembles the farāʾiḍ",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p452",
+     "excerpt_ar": "بأن قال لله علي أن أصلي ركعتين عند طلوع الشمس ونحوه؛ لأنها صلاة واجبة فأشبهت الفرائض",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Even when vowed for those times. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The general wording of the ḥadīths forbidding prayer in those times",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p799",
+     "excerpt_ar": "أنه لا يجوز بناء على صوم الواجب في أيام التشريق وهو قول أبي حنيفة لعموم النهي",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "The takhrīj for the madhhab and Abū Ḥanīfa's view rest on «عموم النهي», i.e. the marfūʿ prohibitions read by their generality: zanni."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Ibn ʿUmar and ʿĀʾisha: «fasting in the days of tashrīq was permitted only to one who finds no hady» (al-Bukhārī), and every obligatory fast is analogised to it",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p170",
+     "excerpt_ar": "أن يصمن إلا لمن لم يجد الهدي أي: المتمتع إذا عدم الهدي، وهو حديث صحيح، رواه البخاري ويقاس عليه كل مفروض",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For the riwāya that tashrīq may be fasted for a farḍ, on which the vow turns. The report is on the tamattuʿ fast and is carried to every obligation: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A vow coinciding with tashrīq: fasting them for the obligation is valid, as argued for the tamattuʿ fast",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p220",
+     "excerpt_ar": "وفي الأخرى، يصح صيامها للفرض، لما ذكرنا في صيامها عن دم المتعة",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "On the vowed fast in tashrīq. Carried over from the tamattuʿ fast: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Ibn ʿAqīl: what a vow makes binding is the unqualified voluntary act, and voluntary fasting in tashrīq is barred, so the vow is like a vow of sin",
+     "ref": "src:openiti-rajab-shamela21730/v01:p229",
+     "excerpt_ar": "واختار ابن عقيل أنه كنذر المعصية ; لأن الملزم بالنذر هو التطوع المطلق",
+     "who": "Ibn Rajab, al-Qawāʿid",
+     "note": "Ibn ʿAqīl's own ground as Ibn Rajab reports it. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Tashrīq is forbidden for fasting, so it resembles the two ʿīd days, which are not fasted even for a farḍ",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p170",
+     "excerpt_ar": "وأما صومها للفرض، ففيه روايتان: إحداهما: لا يجوز؛ لأنه منهي عن صومها، فأشبهت يومي العيد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For the riwāya that tashrīq is not fasted for a farḍ, which supports Ibn ʿAqīl's ruling. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Nubaysha al-Hudhalī: the Prophet said «the days of tashrīq are days of eating, drinking and remembrance of God»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p169",
+     "excerpt_ar": "لما روى نبيشة الهذلي، قال: قال رسول الله - صلى الله عليه وسلم -: «أيام التشريق أيام أكل وشرب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the prohibition on fasting tashrīq, the ground of the bar. A connected marfūʿ ḥadīth (the source adds «متفق عليه»), reaching the vow by generality: zanni."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "One rakʿa does not suffice in an obligatory prayer, so it does not suffice in a vowed one, like a single prostration",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p216",
+     "excerpt_ar": "والثانية: لا يجزئه إلا ركعتان؛ لأن الركعة لا تجزئ في الفرض، فلا تجزئ في النذر كالسجدة",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "For two rakʿas. Analogy to the sharʿ obligation: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same rationale in Kashshāf: one rakʿa does not suffice in an obligatory prayer",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p279",
+     "excerpt_ar": "وإن نذر صلاة وأطلق فركعتان قائما لقادر) على القيام (لأن الركعة لا تجزئ ms3452 في فرض وإن عين عددا",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The madhhab ruling with its ground. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The witr is a lawful prayer of one rakʿa",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p216",
+     "excerpt_ar": "وإن نذر صلاة، ففيه روايتان: إحداهما: يجزئه ركعة؛ لأن الوتر ركعة مشروعة",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "For one rakʿa sufficing: analogy to the least voluntary prayer: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The unqualified is read by what the sharʿ makes familiar, and that is the slave that suffices in an expiation",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p216",
+     "excerpt_ar": "وإذا نذر عتق رقبة، فهي التي تجزئ عن الواجب؛ لأن المطلق يحمل على المعهود في الشرع، وذلك هو الواجب في الكفارة",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "For al-Qāḍī's ruling (a slave free of defects). A rationale from the sharʿ's usage: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Whatever the name covers suffices, as in a bequest of a slave",
+     "ref": "src:openiti-rajab-shamela21730/v01:p229",
+     "excerpt_ar": "ويحتمل أن يجزئه ما يقع عليه الاسم كالوصية فإن القاضي سلمها",
+     "who": "Ibn Rajab, al-Qawāʿid",
+     "note": "Ibn Rajab's own iḥtimāl; he adds that Aḥmad's naṣṣ in the bequest also requires a sound slave, which weakens the aṣl. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale with analogy: a head not customarily eaten on its own is not what the word turns to by custom, so no ḥinth, as one who swears not to eat roast meat (shiwāʾ) is not forsworn by a roasted egg",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p107",
+     "excerpt_ar": "لأنه لا ينصرف إليه اللفظ عرفا، فلم يحنث، كما لو حلف لا يأكل شواء فأكل بيضا",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Given for Abū al-Khaṭṭāb's view on heads and eggs (only a head customarily eaten alone). An ʿilla from customary usage plus an aṣl (the shiwāʾ oath): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "General rationale for the third class: attaching a verb that custom attaches only to some of the named things is a contextual indication (qarīna) that only those are meant, like specifying them by intention",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p200",
+     "excerpt_ar": "والثاني: يختص بما جرت العادة بإضافة الفعل إليه؛ لأن هذا قرينة دالة على اختصاصه بالإرادة، فأشبه ما لو خصه بنيته",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī states this wajh for the class to which the heads oath belongs and then applies it to Abū al-Khaṭṭāb's ruling on heads. Analogy to specification by intention: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "These are heads in reality and in custom and are eaten, so eating them breaks the oath, as one who swore off meat is forsworn by ostrich or giraffe meat, rare though it is",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p611",
+     "excerpt_ar": "ووجه الأول، أن هذه رءوس - حقيقة وعرفا - مأكولة، فحنث بأكلها، كما لو حلف لا يأكل لحما، فأكل من لحم النعام والزرافة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's argument for al-Qāḍī's ḥinth by the heads of birds, fish and the rest. The name's generality in reality and custom, with an aṣl (rare meats): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The name is general for them in reality and custom, like one who swore not to drink water and is forsworn by salt or impure water",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p200",
+     "excerpt_ar": "فقال القاضي: يحنث بأكل رأس كل حيوان من النعم، والطير، والصيد، والحيتان، والجراد، لعموم الاسم فيه حقيقة وعرفا",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "For al-Qāḍī's view; the analogy to salt and impure water follows. A stated linguistic ʿilla: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Fish and locust eggs are not understood from the unqualified word «egg» and are only mentioned with the name of the creature that lays them added, so the oath does not reach them",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p611",
+     "excerpt_ar": "وهو الصحيح؛ لأن هذا لا يفهم من إطلاق اسم البيض، ولا يذكر إلا مضافا إلى بائضه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's argument for Abū al-Khaṭṭāb (only an egg that leaves its layer in its life), which it calls correct and the view of most scholars. A linguistic/customary rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A word attached to an act custom confines to part of the named things is a qarīna limiting what is meant, like specifying it by intention",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p200",
+     "excerpt_ar": "والثاني: يختص بما جرت العادة بإضافة الفعل إليه؛ لأن هذا قرينة دالة على اختصاصه بالإرادة، فأشبه ما لو خصه بنيته",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī states this wajh for the class and applies it to eggs: «وعند أبي الخطاب: لا يحنث بأكل بيض لا يزايل بائضه». Analogy to specification by intention: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Fish and locust eggs are an animal's eggs, like ostrich eggs, which break the oath",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p611",
+     "excerpt_ar": "فأما إن أكل بيض السمك أو الجراد، فقال القاضي: يحنث؛ لأنه بيض حيوان، أشبه بيض النعام",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Qāḍī's ḥinth, on these very facts. Stated ʿilla and aṣl: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The name covers them in reality and in custom",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p263",
+     "excerpt_ar": "وعند القاضي يحنث وقدمه في الرعاية وجزم به في الوجيز لعموم الاسم فيه حقيقة وعرفا",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf gives this for al-Qāḍī's ḥinth by fish and locust eggs, then cites al-Inṣāf that it is the madhhab. Linguistic rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The unqualified word «meat» does not turn to fish: an agent told to buy meat who buys fish does not bind his principal, and one may say «I ate no meat, only fish»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p608",
+     "excerpt_ar": "لأنه لا ينصرف إليه إطلاق اسم اللحم، ولو وكل وكيلا في شراء اللحم، فاشترى له سمكا، لم يلزمه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for Ibn Abī Mūsā (no ḥinth without intention), shared with Abū Ḥanīfa and al-Shāfiʿī. Customary/linguistic rationale with an aṣl (the agency): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: one who swears not to sit under a roof is not forsworn by sitting under the sky, though God called it a guarded roof, because that naming is figurative; so here",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p608",
+     "excerpt_ar": "كما لو حلف: لا قعدت تحت سقف. فإنه لا يحنث بالقعود تحت السماء، وقد سماها الله تعالى {سقفا محفوظا}",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For the same position. The āya is not a proof here but the aṣl of the analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Qurʾān 16:14 «He it is who subjected the sea that you may eat from it fresh meat» and 35:12: God names fish «meat»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p608",
+     "excerpt_ar": "ولنا، قول الله تعالى: {وهو الذي سخر البحر لتأكلوا منه لحما طريا} [النحل: 14] . وقال: {ومن كل تأكلون لحما طريا}",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's first proof for ḥinth (al-Khiraqī). The āya names fish meat; it reaches the oath only by the naming, not by an explicit ruling on oaths: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Fish is part of an animal's body and is called meat, so eating it breaks the oath, like bird meat",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p608",
+     "excerpt_ar": "ولأنه من جسم حيوان، ويسمى لحما، فحنث بأكله، كلحم الطائر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second proof for ḥinth. Stated ʿilla and aṣl: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A mosque or bath-house is not called a house (bayt) in custom, so it falls under the classes where custom limits the name",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p610",
+     "excerpt_ar": "وهو قول أكثر الفقهاء؛ لأنه لا يسمى بيتا في العرف، فأشبه ما قبله من الأنواع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's iḥtimāl «ويحتمل أن لا يحنث», which matches the extracted wajh. Customary rationale with analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "God calls mosques houses: Qurʾān 24:36 «in houses God permitted to be raised», and 3:96 «the first house set up for people»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p610",
+     "excerpt_ar": "والأول المذهب، لأنهما بيتان حقيقة، وقد سمى الله المساجد بيوتا، فقال: {في بيوت أذن الله أن ترفع}",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For Aḥmad's naṣṣ (ḥinth). The āya bears on the oath only through its naming of mosques: the Book by a non-explicit indication, zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Since it is a house in reality and the Lawgiver names it so, entering it breaks the oath, like a man's own house",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p610",
+     "excerpt_ar": "وإذا كان بيتا في الحقيقة، ويسميه الشارع بيتا، حنث بدخوله، كبيت الإنسان",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Stated ʿilla with an aṣl: qiyas. al-Mughnī also cites unattributed reports «المسجد بيت كل تقي» and «بئس البيت الحمام» with «روي», which are not recorded here."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The swearer apparently means nothing but the Persian rayḥān",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p609",
+     "excerpt_ar": "وقال القاضي: لا يحنث إلا بشم الريحان الفارسي. وهو مذهب الشافعي؛ لأن الحالف لا يريد بيمينه في الظاهر سواه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For al-Qāḍī's view, shared with al-Shāfiʿī. Rationale from the apparent intent: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The Persian rayḥān is what is called rayḥān in custom",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p200",
+     "excerpt_ar": "فقال القاضي. تختص يمينه الريحان الفارسي؛ لأنه المسمى عرفا",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Same position. A customary-usage rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The name rayḥān truly covers every sweet-smelling plant or flower",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p609",
+     "excerpt_ar": "وقال أبو الخطاب: يحنث بشم ما يسمى في الحقيقة ريحانا؛ لأن الاسم يتناوله حقيقة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For Abū al-Khaṭṭāb's ḥinth. Linguistic rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The rose, violet and jasmine are covered by the name rayḥān in reality",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p263",
+     "excerpt_ar": "لا يشم الريحان فشم الورد والبنفسج والياسمين ولو يابسا حنث) لأنه يتناوله اسم الريحان حقيقة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's ground for the Iqnāʿ's ḥinth, on these facts. Linguistic rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f005",
+   "proofs": [],
+   "advantages": [],
+   "searched": "No proof work argues the oath against beef and wild-cattle meat (or the cognate oath not to ride a donkey). Searched for بقر الوحش / حمارا وحشيا / البقر الوحشي and لحم بقر in al-Mughnī (oaths v09 p605–612; hits only zakāt v02 p444, iḥrām, ribā), al-Sharḥ al-Kabīr (v02 p436 zakāt, v11 p080 foods), al-Kāfī (v02 p034 ribā), al-Mubdiʿ, Kashshāf (v06 p261–263 oaths) and Sharḥ al-Muntahā (v03 p460–461 oaths). The zakāt masʾala that Ibn Rajab compares (al-Mughnī v02 p444: «لأن اسم البقر يشملها» vs «لأن اسم البقر عند الإطلاق لا ينصرف إليها») is argued for zakāt, not for the oath, so it is not recorded."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The mukātab has left his master's ownership and disposal, so he is not within the name of his slaves, like a free man",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p519",
+     "excerpt_ar": "وقال أبو حنيفة، وصاحباه، وإسحاق: لا يعتق المكاتب. وهو قول الشافعي؛ لأنه خارج عن ملك سيده وتصرفه، فلم يدخل في اسم مماليكه، كالحر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the Ḥanafīs and al-Shāfiʿī, non-Ḥanbalī holders of the same ruling (the mukātab not included), which is the ground al-Qāḍī gives for his extracted riwāya («خارجون من مسمى الرقيق والمملوك عرفا»). Stated ʿilla and aṣl: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The Prophet's ḥadīth «the mukātab is a slave as long as a dirham of his contract remains», and his telling ʿĀʾisha «buy Barīra and free her» while she was a mukātaba",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p519",
+     "excerpt_ar": "ودليل كونه مملوكه، قوله - عليه السلام -: «المكاتب عبد ما بقي عليه درهم» . وقوله لعائشة: «اشتري بريرة، وأعتقيها» وكانت مكاتبة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For the inclusion of the mukātab in «his slaves». Marfūʿ āḥād reports (no grade given) that establish he is owned; they reach the oath through the name: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He is owned, so he is freed like the mudabbar; and since he can be freed directly he enters a conditional manumission like the rest of his slaves",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p519",
+     "excerpt_ar": "ولنا، أنه مملوكه، فيعتق، كالمدبر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same position. Analogy to the mudabbar: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The wording is general over all of them, so they are freed as if he had named them",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p024",
+     "excerpt_ar": "وشقص يملكه) وعبد عبده المأذون، نص عليه، وإن استوعبهم دين المأذون ; لأن لفظه عام فيهم، فيعتقوا كما لو عينهم",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "For «كل مملوك لي حر» freeing mudabbars, mukātabs, umm walads and part-shares. A linguistic ʿilla with analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f008",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A riwāya that a vow of all one's property reaches only coin, because the unqualified word «property» turns to that",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p104",
+     "excerpt_ar": "وعن أحمد: إذا نذر الصدقة بجميع ماله إنما يتناول نذره الصامت من ماله، لأن إطلاق المال ينصرف إليه",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Cited in al-Mubdiʿ beside the oath that he has no property. Its ground is the reach of «مال» in usage, the same ground as Aḥmad's naṣṣ and al-Qāḍī's reference to custom (position 0); strictly it is the coin-only riwāya that al-Inṣāf lists apart. A usage rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f009",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A riwāya that «property» unqualified turns to coin, so non-zakāt goods such as a house or clothes are not meant",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p104",
+     "excerpt_ar": "وعن أحمد: إذا نذر الصدقة بجميع ماله إنما يتناول نذره الصامت من ماله، لأن إطلاق المال ينصرف إليه",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ places it against the ḥinth in this very oath; it supports the ẓāhir from al-Ḥarbī's riwāya («we do not count the house, the clothes and the servant as property»). A usage rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Non-zakāt goods and debts are property, so he breaks the oath by contradicting it; a debt is property on which the year runs and which can be released or transferred, like a deposit",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p104",
+     "excerpt_ar": "وإن حلف لا مال له، وله مال غير زكوي، أو دين على الناس، حنث) لأنه مال، فوجب أن يحنث للمخالفة في يمينه",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "For the aṣḥāb's ḥinth, on these facts. Stated ʿilla: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Property is what people customarily hold for gain, so non-zakāt goods are within it",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p262",
+     "excerpt_ar": "حنث) لأنه مال فوجب أن يحنث في يمينه للمخالفة والدين مال ينعقد عليه الحول",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf gives this for ḥinth by non-zakāt goods (property, land, furnishings, animals) and debts. Stated ʿilla: qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

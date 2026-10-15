@@ -1,0 +1,466 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b34: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f001",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: the general wording «every woman of mine» is taken together with its cause (her question), so the addressed wife is included",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p087",
+     "excerpt_ar": "فقال: كل امرأة لي طالق، فإنها تطلق معهم، نص عليه، أخذا بالأعم من لفظ وسبب",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ on the answer «كل امرأة لي طالق» to «تزوجت علي؟»: she is divorced with them, Aḥmad's naṣṣ (position 1). A stated rationale about the reach of the wording: qiyas. No work consulted argues position 0 (Ibn ʿAqīl's extracted riwāya) on these facts."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f002",
+   "proofs": [],
+   "advantages": [],
+   "searched": "al-Mubdiʿ v07:p412-413, Kashshāf v06:p113-114 and Sharḥ al-Muntahā v03:p359 report only Ḥarb's question and Aḥmad's answer («لم يبلغني فيه شيء وذهب إلى حد واحد») and Sharḥ al-Muntahā's «ولا يكفر من قذف أباه إلى آدم نصا», with no proof attached; the Q 24:4 argument that follows is for one ḥadd for slandering a group in one word, a different masʾala. Searched al-Mughnī, al-Sharḥ al-Kabīr and al-Kāfī for «إلى آدم» and «آدم وحواء» in the qadhf chapters: nothing. No source argues the apostasy wajh."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: saying «I disobeyed God in what He commanded me» if I do it is below shirk, so it is not like swearing by leaving Islam and owes no kaffāra",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p508",
+     "excerpt_ar": "وإن قال: عصيت الله فيما أمرني، أو في كل ما افترض علي، أو محوت المصحف",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ruling on these words (no expiation; the passage continues «لم تلزمه كفارة؛ لأن هذا دون الشرك»): position 0. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: these words carry no violation requiring expiation and are not in the meaning of the naṣṣ, so the swearer remains on the original freedom from obligation",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p076",
+     "excerpt_ar": "لأن هذه الأشياء لا نقص فيها يقتضي الوجوب، ولا هي في معنى ما سبق، فيبقى الحالف على البراءة الأصلية، واختار في المحرر",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's ground for the madhhab (no expiation), Kashshāf giving the same. «البراءة الأصلية» → istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: disobedience in «all He commanded» includes tawḥīd, so the words amount to swearing by leaving Islam and are an oath",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p076",
+     "excerpt_ar": "واختار في المحرر: أنه إذا قال عصيت الله في كل ما أمرني، أنه يمين لدخول التوحيد فيه",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Majd's choice in al-Muḥarrar as al-Mubdiʿ reports it: position 1. A stated rationale (the ʿilla of including tawḥīd): qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: by the second phrase he meant someone other than his umm walad, so it resembles calling one of his wives, being answered by another and saying «you are divorced» while taking her for the one called, where she is not divorced on one riwāya",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p294",
+     "excerpt_ar": "وباللفظة الثانية أراد غير أم ولده، فأشبه ما لو نادى من نسائه، فأجابته غيرها، فقال: أنت طالق. يحسبها التي ناداها، فإنها لا تطلق، على رواية",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's iḥtimāl that she is not freed («ويحتمل أن لا تعتق»), after Aḥmad's naṣṣ that she is freed: position 0, by analogy to the wife answered by another, the case Ibn Rajab builds it on. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: ḥurriyya and ʿitq are explicit (ṣarīḥ) words, used in the Book and the Sunna and customarily for manumission, so they free without intention",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p294",
+     "excerpt_ar": "لأن هذين اللفظين وردا في الكتاب والسنة، وهما يستعملان في العتق عرفا، فكانا صريحين فيه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for freeing by the ṣarīḥ word «وإن لم ينو شيئا», under which it cites Aḥmad's naṣṣ that the unknown umm walad is freed: position 1. A linguistic rationale: qiyas. Kashshāf v04:p511 gives the same ground (لأنهما لفظان ورد الشرع بهما)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: his life is not known, so the validity of freeing him is not known; a manumission whose validity is unknown does not discharge the kaffāra",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p024",
+     "excerpt_ar": "ولا غائب غيبة منقطعة لا يعلم خبره؛ لأنه لا يعلم حياته، فلا يعلم صحة عتقه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for not accepting the absent slave whose news is cut off in the kaffāra (position 0). A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: the dhimma remains occupied by the kaffāra and is not discharged by a doubt; the presumption of life is outweighed because death is certain to come and the cutting-off of news indicates it",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v08:p592",
+     "excerpt_ar": "لأنه مشكوك في حياته والأصل بقاء شغل الذمة فلا تبرأ بالشك وهو مشكوك في وجوده فيشك في اعتاقه",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr for «ولا يجزئ غائب لا يعلم خبره»: the aṣl of the occupied dhimma, reinforced by the indication of death (it then rebuts «الأصل حياته»), exactly the record's reinforced first aṣl. «الأصل» → istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: it suffices, as when his being alive becomes known afterwards (the manumission of a living slave is valid)",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v07:p024",
+     "excerpt_ar": "وقد وجدت دلالة عليه، وهو انقطاع خبره، وقيل: يجزئ كما لو علم بعد",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ reports «وقيل: يجزئ» with a likening to the case where his life is later learned (position 1, the iḥtimāl). An analogy: qiyas. The objection «الأصل حياته» is raised in the sources only to be rebutted, so it is not recorded as a proof."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f008",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: the aṣl is soundness of the goods and validity of the contract; the buyer claims a right to annul and the seller denies it, and the word is the denier's",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p125",
+     "excerpt_ar": "وبهذا قال أبو حنيفة، والشافعي؛ لأن الأصل سلامة المبيع، وصحة العقد، ولأن المشتري يدعي عليه استحقاق فسخ البيع، وهو ينكره، والقول قول المنكر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the second riwāya (the seller's word with his oath) where the defect could have arisen with either party; given also for Abū Ḥanīfa and al-Shāfiʿī, the same ruling. «الأصل» → istishab."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: the aṣl is that the lost part was not received (delivered), that its share of the price is owed back, and the contract not binding on him",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p125",
+     "excerpt_ar": "لأن الأصل عدم القبض في الجزء الفائت، واستحقاق ما يقابله من الثمن، ولزوم العقد في حقه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the first riwāya, the buyer's word with oath, on exactly these facts (a defect that could have arisen before or after). «الأصل» → istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the word is the one who denies receipt, as when they dispute receipt of the goods themselves",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p125",
+     "excerpt_ar": "فكان القول قول من ينفي ذلك، كما لو اختلفا في قبض المبيع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same passage, the analogy completing the buyer's riwāya (aṣl: a dispute over receipt of the sold item). qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f009",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: when the usurper (liable for the value) claims the lost item had a defect and the owner denies, the owner's word, because the aṣl is absence of the defect",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p219",
+     "excerpt_ar": "وإن قال الغاصب: كانت فيه سلعة، أو أصبع زائدة، أو عيب. فأنكر المالك، فالقول قوله؛ لأن الأصل عدم ذلك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī on the liable usurper describing the lost item with a value-reducing defect: the claimant (owner) is believed, position 1. «الأصل عدم ذلك» → istishab."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: the usurper says the slave was a thief (so worth less), the owner denies: the owner's word, since the aṣl is absence of theft",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p231",
+     "excerpt_ar": "وإن قال الغاصب: كان سارقا فقيمته مائة، وقال المالك: لم يكن سارقا فقيمته ألف، فالقول فقول المالك؛ لأن الأصل عدم السرقة",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī on the same facts with a named defect (theft) lowering the value: claimant's word. istishab."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: in a dispute over a defect (e.g. an extra finger) the owner's word, since the aṣl is absence of the defect",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p048",
+     "excerpt_ar": "(وإن اختلفا في رده أو عيب) بأن قال: كانت فيه إصبع زائدة أو نحوها (فالقول قول المالك) لأن الأصل عدم الرد والعيب",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ on al-Muqniʿ's text: the madhhab ruling for the claimant, with the aṣl of no defect. istishab. No work consulted argues position 0 (the ghārim's word on a claimed defect); al-Mughnī's «لأنه غارم» is given only where the defect is seen and its time disputed, which the record marks as different facts."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f010",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: the lessee's word (on oath that he did not benefit), since the aṣl is that no benefit was received",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p414",
+     "excerpt_ar": "فعن أحمد روايتان إحداهما أن القول قول المستأجر؛ لما ذكرنا، ولا أجر عليه إذا حلف أنه ما انتفع بها؛ لأن الأصل عدم الانتفاع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī, on the lessee claiming the slave ran away from him and the lessor denying: first riwāya, the lessee's word. «الأصل عدم الانتفاع» → istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the lessee is entrusted with the leased item, so he resembles the depositary, whose word is accepted",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p414",
+     "excerpt_ar": "فالقول قول المستأجر؛ لأنه مؤتمن عليها، فأشبه المودع، ولأن الأصل عدم العدوان، والبراءة من الضمان",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given first for the dispute over transgression, and then carried to the runaway claim by «لما ذكرنا»: the lessee's word. Analogy to the wadīʿa: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: the lessor's word, since the aṣl is soundness (no running away)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p414",
+     "excerpt_ar": "لأن الأصل عدم الانتفاع. والثانية القول قول المؤجر؛ لأن الأصل السلامة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the second riwāya on the same facts, the lessor's word (position 0). «الأصل السلامة» → istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f011",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: the aṣl is no intercourse, so her word agrees with the aṣl and certainty is with her",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p206",
+     "excerpt_ar": "حكاها القاضي في المجرد؛ لأن الأصل عدم الإصابة، فكان القول قولها، لأن قولها موافق للأصل، واليقين معها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the third riwāya (her word with oath) where she is a thayyib and they dispute intercourse: position 0. istishab."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: her word, since the aṣl is no intercourse",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p045",
+     "excerpt_ar": "وعنه: القول قولها؛ لأن الأصل عدم الإصابة. وعنه: يخلى معها في بيت",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī on the thayyib case: the riwāya for her word with its aṣl. istishab."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: his claim keeps the contract sound and himself free of defects, and the aṣl is soundness; the matter cannot be proved by bayyina, so his word, like the denier in other claims",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p206",
+     "excerpt_ar": "لأن هذا مما يتعذر إقامة البينة عليه، وجنبته أقوى، فإن في دعواه سلامة العقد، وسلامة نفسه من العيوب، والأصل السلامة، فكان القول قوله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the second riwāya (the husband's word with oath), also the view of al-Thawrī, al-Shāfiʿī and others: position 1. «الأصل السلامة» → istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: his word, as when he claims intercourse in īlāʾ",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p207",
+     "excerpt_ar": "والصحيح أن القول قوله، كما لو ادعى الوطء في الإيلاء، ولما قدمنا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's own tarjīḥ for the husband's word, against the semen test and the second-wife test. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f012",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: the husband's word, since the aṣl is that the marriage continues",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p055",
+     "excerpt_ar": "أسلمت في عدتك فالنكاح باق، وقالت: بل انقضت عدتي قبل إسلامك فالقول قول الزوج؛ لأن الأصل بقاء النكاح",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī on exactly these facts (after consummation, «أسلمت في عدتك»): first wajh, his word. istishab."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: his word because the marriage is presumed to continue",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p156",
+     "excerpt_ar": "فانفسخ النكاح. ففيه وجهان؛ أحدهما، القول قوله؛ لأن الأصل بقاء النكاح. والثاني، القول قولها؛ لأن الأصل عدم إسلام الثاني",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī, he says the second converted within the ʿidda, she says after it: the two wujūh with their aṣls. The first half supports position 0. istishab."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: her word, since the aṣl is that the second spouse did not convert (within the ʿidda)",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p055",
+     "excerpt_ar": "وفيه وجه آخر أن القول قول المرأة؛ لأن الأصل عدم إسلام الثاني",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī, the second wajh on the same facts: position 1. istishab. al-Mughnī states the same ground in the passage cited for position 0."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f013",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: her word, since the aṣl is that maintenance is owed, and he claims its lapse",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p156",
+     "excerpt_ar": "أسلمت قبلك فلا نفقة لك فالقول قولها؛ لأن الأصل وجوب النفقة. وهو يدعي سقوطها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī on exactly these facts (each claims to have converted first, over the ʿidda maintenance): her word. istishab."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: her word, the aṣl being that maintenance is owed",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p055",
+     "excerpt_ar": "فقالت: بل أسلمت قبلك فلي النفقة، ففيه وجهان: أحدهما: القول قولها؛ لأن الأصل وجوب النفقة",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī, first wajh. istishab."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: maintenance is owed only for enabling enjoyment, and the aṣl is that it is not owed",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p056",
+     "excerpt_ar": "والثاني: القول قوله؛ لأن النفقة إنما تجب بالتمكين من الاستمتاع، والأصل عدم وجوبه",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī, second wajh: his word (Ibn Qudāma's taʿlīl as the record names it). «والأصل عدم وجوبه» → istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f014",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: certainty is the marriage's continuance, so it does not end by doubt and possibility",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p455",
+     "excerpt_ar": "ففيه وجهان؛ أحدهما، تطلق؛ لأن الأصل عدم الحمل قبل الوطء. والثاني، لا تطلق؛ لأن اليقين بقاء النكاح، فلا يزول بشك واحتمال",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī on «إن لم تكوني حاملا فأنت طالق» where the child may be from the later intercourse: a ṭalāq suspended on an absence with the doubt unresolved. The second wajh (no ṭalāq) is position 0. istishab."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The marriage is established with certainty and does not lapse by doubt, as the Prophet ordered the one who doubts about ritual purity not to leave «until he hears a sound or finds a smell» (building on certainty, carried over from ṭahāra to ṭalāq)",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p332",
+     "excerpt_ar": "وشك في فعله لم تطلق) لأن النكاح ثابت بيقين فلا يزول بالشك ويشهد له قوله - صلى الله عليه وسلم",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf on al-Iqnāʿ's «ولو كان الشرط عدميا ... وشك في فعله لم تطلق»: exactly position 0. The ḥadīth is about ḥadath, carried over to ṭalāq: graded qiyas (the istiṣḥāb element is the same as al-Mughnī's)."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: the condition is the absence (of pregnancy), and the aṣl is that absence, so she is divorced",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p455",
+     "excerpt_ar": "وإن لم يظهر ذلك، واحتمل أن يكون من الثاني، ففيه وجهان؛ أحدهما، تطلق؛ لأن الأصل عدم الحمل قبل الوطء",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same passage of al-Mughnī: the first wajh, ṭalāq occurs, on the aṣl that the absent condition persists (position 1). istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f015",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: the aṣl is the victim's life and freedom, so their continuance is ruled, as when one kills a Muslim and claims he apostatised before",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p434",
+     "excerpt_ar": "ولنا، أن الأصل حياة المجني عليه وحريته، فيجب الحكم ببقائه، كما لو قتل من كان مسلما، وادعى أنه ارتد قبل قتله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's «ولنا» for the walī's word when the killer claims the victim was a slave: position 1. «الأصل» → istishab (with a supporting analogy)."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the land is the land of Islam, so the unknown victim is judged a Muslim, as its foundling is judged a Muslim",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p434",
+     "excerpt_ar": "وهكذا لو قتل في دار الإسلام إنسانا، وادعى أنه كان كافرا، وأنكر وليه، فالقول قول الولي؛ لأن الدار دار الإسلام",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī on the claim that the victim was an unbeliever: the walī's word, by the ḥukm of the dār (analogy to the laqīṭ). qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: the aṣl is freedom, and the outward state in the dār is freedom",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p048",
+     "excerpt_ar": "إذا قتل رجلا، وادعى أنه قتله وهو عبد، فأنكر وليه، فالقول قول الولي مع يمنيه؛ لأن الأصل الحرية، والظاهر في الدار الحرية",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī on the same claim (slave). istishab."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: the aṣl is freedom of the killer's dhimma, and what he claims is possible, so certainty is not left for a doubt",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p434",
+     "excerpt_ar": "وقال في الآخر: القول قول الجاني؛ لأن الأصل براءة ذمته، وما ادعاه محتمل، فلا نزول عن اليقين بالشك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given in al-Mughnī for al-Shāfiʿī's other qawl, the same ruling as position 0 (the killer's word, Abū Bakr's report in the record). istishab. al-Mughnī rebuts it."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f016",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: when he claims the lapse of half by ṭalāq before consummation, only half of the first contract's mahr, since the aṣl is that it (the other half) was not binding on him",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p155",
+     "excerpt_ar": "ونصفه) أي المهر (في العقد الأول إن ادعى سقوط نصفه بالطلاق قبل الدخول) لأن الأصل عدم لزومه له",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf on the cognate case the record names (two contracts proven, the first ended by ṭalāq, consummation unproven): half. The record calls it qiyās; by what it is («الأصل عدم لزومه») it is istishab."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Istiṣḥāb: in a dispute over consummation the denier's word, as the aṣl is with him and is not removed except by certainty; so she has only half the mahr if he denies",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p529",
+     "excerpt_ar": "أو قالت: قد أصابني، فلي المهر كاملا. فالقول قول المنكر منهما؛ لأن الأصل معه، فلا يزول إلا بيقين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's general ground behind its tafṣīl (half when the husband denies consummation), the branch of position 1. istishab. No work consulted argues position 0 (the whole mahr by the contract) on these facts."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f017",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of ʿAdī b. Ḥātim (agreed upon): «If you shoot game and find it after a day or two with no trace but that of your arrow, eat»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p378",
+     "excerpt_ar": "«إذا رميت الصيد، فوجدته بعد يوم أو يومين، ليس به إلا أثر سهمك، فكل، وإن وجدته غريقا في الماء، فلا تأكل» . متفق عليه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's «ولنا» for the game that vanished and was found dead with only his arrow: permitted. A connected marfūʿ āḥād ḥadīth, explicit on the facts: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of ʿAmr b. Shuʿayb from his father from his grandfather (Abū Dāwūd): «Even if it vanishes from you, as long as you find no trace on it other than your arrow»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p379",
+     "excerpt_ar": "قال: ما رد عليك سهمك، فكل. قال: وإن تغيب عني؟ قال: وإن تغيب عنك، ما لم تجد فيه أثرا غير سهمك، أو تجده قد صل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second marfūʿ report in al-Mughnī for position 0, explicit on its vanishing. zanni."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "His arrow wound, the cause of permission, exists with certainty, and the opposing cause is doubtful, so certainty is not left for doubt",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p379",
+     "excerpt_ar": "ولأن جرحه بسهمه سبب إباحته، وقد وجد يقينا، والمعارض له مشكوك فيه، فلا تزول عن اليقين بالشك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's rational ground: the record's reinforced aṣl (no other cause shared in the kill). Holding to the established certainty against a doubt: istishab."
+    },
+    {
+     "position": 1,
+     "tier": "fatwaSahabi",
+     "dalil": "Ibn ʿAbbās: «Eat what you killed on the spot (aṣmayta), and do not eat what vanished from you (anmayta)»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p378",
+     "excerpt_ar": "وللشافعي فيه قولان؛ لأن ابن عباس قال: كل ما أصميت، وما أنميت فلا تأكل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited in al-Mughnī for al-Shāfiʿī's prohibiting qawl (also a riwāya from Aḥmad with ʿAṭāʾ and al-Thawrī disliking what vanished): position 1. A ṣaḥābī's view with no other ṣaḥābī reported against it in the source: fatwaSahabi (al-Mughnī also gives a fuller report of Ibn ʿAbbās permitting within the day)."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

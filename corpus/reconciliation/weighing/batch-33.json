@@ -1,0 +1,484 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b33: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Mixing the deposit with his own money so it cannot be told apart makes him liable, as when he mixes it with something inferior",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p437",
+     "excerpt_ar": "ولنا، أنه خلطها بماله خلطا لا يتميز، فوجب أن يضمنها، كما لو خلطها بدونها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ولنا» for liability, covering dirhams mixed with dirhams (Ibn al-Qāsim's contrary view about mixing dirhams for safekeeping is answered by it): position 0. Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "By mixing it inseparably he has removed his own ability to return it, so he is liable, as if he had thrown it into the sea",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p437",
+     "excerpt_ar": "ولأنه إذا خلطها بما لا يتميز، فقد فوت على نفسه إمكان ردها، فلزمه ضمانها، كما لو ألقاها في لجة بحر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second proof for liability: position 0. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "No liability: what is wanted from coins is their amount, not the coins themselves, and mixing them with his own money may keep them more safely",
+     "ref": "src:openiti-rajab-shamela21730/v01:p030",
+     "excerpt_ar": "وعنه رواية أخرى لا ضمان عليه لأن النقود لا يتعلق الغرض بأعيانها بل بمقدارها وربما كان خلطها [مع ماله] أحفظ لها",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The other riwāya with its stated rationale, on these facts (dirham deposit mixed with his money). Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Liable for the whole gap to the fair price: the agent was not authorised to make this sale, so it resembles a stranger's sale; had he been authorised he would owe nothing",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p098",
+     "excerpt_ar": "والأول أقيس؛ لأنه لم يؤذن للوكيل في هذا البيع، فأشبه بيع الأجنبي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For the first wajh (the whole difference between the fair price and the sale price), which Ibn Qudāma calls «أقيس». An analogy to the unauthorised stranger: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Ibn ʿAqīl's argument: as much najāsa on a garment must all be washed without setting aside the part pardoned on its own, and much movement in prayer is not split into a pardoned part, so the tolerated part is not set aside from the agent's liability",
+     "ref": "src:openiti-rajab-shamela21730/v01:p039",
+     "excerpt_ar": "ورجح ابن عقيل ضمان بقية ثمن المثل كله واستشهد له بالنجاسة الكثيرة في الثوب يجب غسلها ولا يفرد ههنا ما يعفى عنه بانفراده",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn ʿAqīl's evidence for liability for the whole shortfall, given in this masʾala. Analogy to excess najāsa and excess movement: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Liable only for what lies beyond the tolerated: a sale at a tolerated loss is valid and carries no liability, so only the untolerated part is owed",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p098",
+     "excerpt_ar": "والثاني، ما بين ما يتغابن الناس به، وما لا يتغابن الناس به، لأن ما يتغابن الناس به يصح بيعه به ولا ضمان عليه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The second wajh with its stated rationale, given on these facts (the agent selling below the tolerated loss on the riwāya that the sale holds). Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f002",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Q 22:28 «فكلوا منها وأطعموا البائس الفقير»: the command to feed entails obligation, so if he eats it all he owes the least that satisfies the charity due from it",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v03:p583",
+     "excerpt_ar": "(فإن أكلها كلها ضمن أقل ما يجزئ في الصدقة مها) لقول الله تعالى (فكلوا منها وأطعموا البائس الفقير) والأمر يقتضي الوجوب",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Cited for liability for the least amount (the madhhab, position 1). The āya does not name the amount; the obligation of some charity is read from the imperative and the measure follows from it. A non-explicit indication: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "What he was permitted to eat he does not make good; he makes good only what charity was due on, since it is a right owed while the meat exists, which he must replace when he destroys it, like a deposit",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v03:p583",
+     "excerpt_ar": "ولأن ما أبيح له أكله لا يلزمه غرامته، ويلزم غرم ما وجبت به الصدقة لأنه حق يجب عليه مع بقائه فلزمته غرامته إذا أتلفه كالوديعة",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Explains why only the obligatory minimum, not a third, is owed: position 1. The report of the other view («وفيه قول آخر إنه يجب عليه ضمان ثلثها») comes with no proof, and al-Sharḥ calls the first «أقيس وأصح». Analogy to the deposit: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Only the spread part must be washed: the one whose najāsa spreads beyond the usual place is not at fault or transgressing, unlike the agent and the sacrificer, so the pardon for the usual place stays",
+     "ref": "src:openiti-rajab-shamela21730/v01:p039",
+     "excerpt_ar": "أشهرهما أن الواجب غسل المتعدى خاصة وهو قول القاضي واللمش نسبه إلى نص أحمد لأن هذا لا ينسب فيه إلى تفريط وتعد بخلاف الوكيل والمضحي",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's stated reason for the better-known wajh on these facts. A rationale distinguishing this case from the at-fault cases: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Istijmār in the usual place is a concession for the hardship of washing a place where najāsa recurs; what does not recur needs water, while the stone suffices for what is in the usual place, as if there were nothing beyond it",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p066",
+     "excerpt_ar": "(فلا يجزئ إلا الماء للمتعدي فقط) ؛ لأن الاستجمار في المحل المعتاد رخصة للمشقة في غسله، لتكرر النجاسة فيه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "For water only on the spread part (position 0), with the concession's rationale. Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The stone suffices for what is in the usual place, just as when nothing has spread beyond it",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p066",
+     "excerpt_ar": "ويجزئ الحجر في الذي في محل المادة كما لو لم يكن غيره",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The analogy that keeps the usual place under the concession: position 0. Qiyas. No source checked gives a proof for washing all (al-Inṣāf and Ibn Rajab only report the wajh)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He makes good the missing share in full, by the third, because that is the recommended amount",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v02:p418",
+     "excerpt_ar": "فعلى هذا إن دفع إلى اثنين ضمن نصيب الثالث، وهل يضمنه بالثلث؛ لأنه القدر المستحب",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Stated for paying two of the three due (on the riwāya requiring three per category): the full share is owed because it is the recommended measure. The farʿ's payment to one, owing two shares in full, follows the same ʿilla: position 0. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Or he makes good the least part, because that is what suffices, as with the sacrifice eaten whole",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v02:p418",
+     "excerpt_ar": "أو بأقل جزء منه؛ لأنه المجزئ، فيه وجهان، كالأضحية إذا أكلها",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "The second wajh with its ʿilla and an analogy to the sacrifice: position 1 (the least share). Stated for two recipients; the same rationale applies to one. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A deposit is a pure trust; transgression removes the trust, so it is void and must be returned at once, and it does not return without a new contract",
+     "ref": "src:openiti-rajab-shamela21730/v01:p064",
+     "excerpt_ar": "إذا تعدى في الوديعة بطلت ولم يجز له الإمساك ووجب الرد على الفور لأنها أمانة محضة وقد زالت بالتعدي",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The well-known view with its stated ʿilla: position 0. Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Having become liable through transgression, his trust is void, as when he denies the deposit and then admits it; returning it to its place with the intention of keeping it does not restore it",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p452",
+     "excerpt_ar": "ولنا، أنه ضمنها بعدوان، فبطل الاستئمان، كما لو جحدها ثم أقر بها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Against Abū Ḥanīfa, who holds he is freed once he returns it to its place: position 0. Analogy to denial: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The owner entrusted him with keeping it because he was content with his trustworthiness; whenever the trustworthiness exists again the entrustment exists, as if he had said «whenever you betray and then return, you are trusted»",
+     "ref": "src:openiti-rajab-shamela21730/v01:p064",
+     "excerpt_ar": "وقد يوجه بأن المالك أسند إليه الحفظ لرضاه بأمانته فمتى وجدت الأمانة فالإسناد موجود لوجود علته",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The argument offered for Ibn al-Zāghūnī's view that once the transgression ends the deposit is not void: position 1. A rationale plus analogy to the explicit conditional deposit: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He is freed once he returns it to its place, because he holds it by the owner's permission, as before the transgression",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p452",
+     "excerpt_ar": "وقال أبو حنيفة: يبرأ؛ لأنه ممسك لها بإذن مالكها فأشبه ما قبل التعدي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū Ḥanīfa's proof for the same outcome as Ibn al-Zāghūnī (the trust resumes when he resumes keeping it): counted for position 1 as a non-Ḥanbalī holder of that ruling. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The executorship is void: by his fault he has left the bounds of trust, so his authority ends with the loss of its condition, like a judge who becomes a fāsiq",
+     "ref": "src:openiti-rajab-shamela21730/v01:p065",
+     "excerpt_ar": "والثاني تبطل لأنه خرج من حيز الأمانة بالتفريط فزالت ولايته بانتفاء شرطها كالحاكم إذا فسق",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn ʿAqīl's possibility (al-Mufradāt) that it is void, with its ʿilla and an analogy to the judge: position 0. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Not void: only his trust is removed and he becomes liable, like the agent who transgresses",
+     "ref": "src:openiti-rajab-shamela21730/v01:p065",
+     "excerpt_ar": "أحدهما: لا يبطل بل تزول أمانته سبتية ضامنا كالوكيل",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The other possibility, by analogy to the agent whose agency survives transgression: position 1. Qiyas. («سبتية» is a corruption in the cached text, quoted as it stands.)"
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The sale is invalid because it is a sale suspended on a condition (taʿlīq), and sale does not admit suspension",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p079",
+     "excerpt_ar": "ففيه وجهان؛ أحدهما، لا يصح. وهو قول القاضي وبعض الشافعية؛ لأنه بيع معلق على شرط",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given on exactly this case (the principal saying «إن كنت أذنت لك في شرائها بألفين، فقد بعتكها»): the first wajh, al-Qāḍī's, with its stated ʿilla. A rationale drawn from the bar on conditional sale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Valid: the condition is an actual fact both parties know to exist, so making it a condition does no harm, as when one says «if this slave girl is mine, I have sold her to you»; every condition whose existence both know neither suspends the sale nor puts doubt in it",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p079",
+     "excerpt_ar": "والثاني، يصح؛ لأن هذا أمر واقع يعلمان، وجوده، فلا يضر جعله شرطا، كما لو قال: إن كانت هذه الجارية جاريتي، فقد بعتكها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The second wajh on these very facts (the condition known to hold), the one al-Inṣāf and al-Furūʿ trace to al-Kāfī as an iḥtimāl. A stated ʿilla with an analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The gift to the commander in dār al-ḥarb is spoil: it was obtained by the army's strength, like what is taken by force",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p327",
+     "excerpt_ar": "ولنا، أنه أخذ ذلك بظهر الجيش، أشبه ما لو أخذه قهرا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ولنا» for gifts to the imām or commander during campaign being ghanīma: position 0. Analogy to what is seized: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "When given to the imām or commander, the apparent purpose is to buy him off, so it resembles what is taken from them by force",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p327",
+     "excerpt_ar": "فالظاهر أنه يداري عن نفسه به، فأشبه ما أخذ منه قهرا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The cause of the gift is his command, so it is not his own: position 0. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It belongs to the one to whom it was given in every case, because it was given to him specifically, as when the gift is made in dār al-islām; reported as a riwāya from Aḥmad",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p327",
+     "excerpt_ar": "وقال أبو حنيفة: هو للمهدى له بكل حال، لأنه خص بها، أشبه إذا كان في دار الإسلام، وحكي ذلك رواية عن أحمد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū Ḥanīfa's proof, and the riwāya from Aḥmad with the same ruling (the gift is his): position 1. Analogy to the gift in dār al-islām: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The original rule for dung and carcasses is najāsa; where some are ruled pure that is a concession against the rule, and what makes the concession apply is not established here, so the original rule stays",
+     "ref": "src:openiti-rajab-shamela21730/v01:p335",
+     "excerpt_ar": "أحدهما: أنه نجس ; لأن الأصل في الأرواث والميتات النجاسة، وحيث قضى بطهارة شيء منها فرخصة على خلاف الأصل",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The first wajh on these facts (dung of unknown origin in a little water), with the presumption of najāsa for dung. Istishab."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The original state of water is purity, which is not removed by doubt",
+     "ref": "src:openiti-rajab-shamela21730/v01:p335",
+     "excerpt_ar": "والثاني: أنه طاهر وهو المرجح عند الأكثرين ; لأن الأصل في الماء الطهارة فلا يزال عنها بالشك",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The second wajh, «المرجح عند الأكثرين», with its aṣl. Istishab. (Aḥmad's naṣṣ on stepping on unknown dung, cited after it, is the imām's ruling, not a separate dalīl.)"
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The original state is that the wetness remains, so the najāsa is presumed not to have dried",
+     "ref": "src:openiti-rajab-shamela21730/v01:p335",
+     "excerpt_ar": "أحدهما: أنه نجس ; لأن الأصل بقاء الرطوبة نقلها أبو بكر عن أحمد",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The first wajh with its aṣl, transmitted by Abū Bakr from Aḥmad: position 0. Istishab."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "He rules that it has not dried, because that is the original state",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p047",
+     "excerpt_ar": "(أو) شك (في جفاف نجاسة على ذباب أو غيره فيحكم بعدم الجفاف) لأنه الأصل",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The Iqnāʿ ruling with al-Buhūtī's reason: position 0. Istishab."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The original state of the garment is purity",
+     "ref": "src:openiti-rajab-shamela21730/v01:p335",
+     "excerpt_ar": "والثاني: لا ينجس ; لأن الأصل طهارة الثوب",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The second wajh with its aṣl: position 1. Istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The original state is that he did not catch the rakʿa",
+     "ref": "src:openiti-rajab-shamela21730/v01:p335",
+     "excerpt_ar": "فالمذهب أنه لا يعتد له بتلك الركعة ; لأن الأصل عدم الإدراك",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The madhhab ruling with its aṣl: position 0. Istishab."
+    },
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "The ruling is reported from Ibn ʿUmar",
+     "ref": "src:openiti-rajab-shamela21730/v01:p335",
+     "excerpt_ar": "لأن الأصل عدم الإدراك وهو منقول عن ابن عمر رضي الله عنهما",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab says this ruling is reported from Ibn ʿUmar; no ṣaḥābī is reported against it here. The report itself is not quoted: fatwaSahabi, on the source's attribution."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The original state is that the imām remained in rukūʿ",
+     "ref": "src:openiti-rajab-shamela21730/v01:p336",
+     "excerpt_ar": "أحدهما: أنه يعتد له بها ; لأن الأصل بقاء الإمام في الركوع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The iḥtimāl of the author of al-Talkhīṣ with its aṣl: position 1. Istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The original state is that he has not performed the wājib, so sujūd is due",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p030",
+     "excerpt_ar": "وقال القاضي: يحتمل أن يلزمه السجود؛ لأن الأصل عدمه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Qāḍī's view on these facts (doubt about leaving a wājib whose omission requires sujūd): position 0. Istishab."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The original state is that he did not perform it",
+     "ref": "src:openiti-rajab-shamela21730/v01:p336",
+     "excerpt_ar": "أحدهما: يلزمه لأن الأصل عدم الإتيان به",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's first wajh with its aṣl: position 0. Istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "No sujūd: he doubts its cause, so it is not owed on doubt, as when he doubts whether he added something",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p030",
+     "excerpt_ar": "فقال ابن حامد: لا سجود عليه؛ لأنه شك في سببه، فلم يلزمه بالشك، كما لو شك في الزيادة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Ḥāmid's view (the madhhab per al-Inṣāf) with an analogy to doubt about an addition: position 1. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The original state is that sujūd is not owed, so he does not prostrate on doubt",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p407",
+     "excerpt_ar": "(ولا يسجد لشكه في ترك واجب) ؛ لأن الأصل عدم وجوبه فلا يسجد بالشك",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The Iqnāʿ ruling with al-Buhūtī's aṣl: position 1. Istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Aḥmad's naṣṣ (Muhannā's riwāya) that payment is not due, giving the reason that he does not know whether the wealth has perished",
+     "ref": "src:openiti-rajab-shamela21730/v01:p336",
+     "excerpt_ar": "والمنصوص عن أحمد في رواية مهنا أنه لا يجب، وعلل بأنه لا يدري لعل المال ذهب",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The imām's ruling with its stated ʿilla (the wealth's survival is not known), on these facts (absent wealth whose news is not cut off): position 0. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The ability to pay is a condition for the obligation to hand it over, not for the obligation of zakāt itself",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p182",
+     "excerpt_ar": "لم يلزمه إخراج زكاته، حتى يتمكن من الأداء منه) لما تقدم فإمكان الأداء شرط لوجوب الإخراج لا لوجوب الزكاة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "For the absent niṣāb that cannot be paid from: payment waits until he can pay (position 0). A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He must pay before receiving it, since it is in his hand constructively, and so perishes at his risk, unlike a debt owed by a debtor",
+     "ref": "src:openiti-insaf-shamela21609/v03:p044",
+     "excerpt_ar": "وقال القاضي، وابن عقيل: ويلزمه أداء زكاته قبل قبضه؛ لأنه في يده حكما ولهذا يتلف من ضمانه بخلاف الدين في ذمة غريمه",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "al-Qāḍī and Ibn ʿAqīl, on wealth absent from its owner (a loan that he lent out is named next to it): position 1. A rationale with a distinction from the debt: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "If zakāt is owed in the dhimma, he must pay from other wealth, because its zakāt does not fall if the wealth perishes, unlike a debt",
+     "ref": "src:openiti-insaf-shamela21609/v03:p044",
+     "excerpt_ar": "الذمة، لزمه الإخراج عنه من غيره؛ لأن زكاته لا تسقط بتلفه، بخلاف الدين",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The binding on the locus of zakāt that the case note names; on the dhimma view payment is due before receipt: position 1. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Aḥmad's naṣṣ (Ṣāliḥ's riwāya): no fiṭra, because the original state is a dhimma free of obligation, and fiṭra is owed in the dhimma",
+     "ref": "src:openiti-rajab-shamela21730/v01:p336",
+     "excerpt_ar": "المنصوص عن أحمد في رواية صالح أنه لا تجب ; لأن الأصل براءة الذمة والفطرة في الذمة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The runaway slave whose news is cut off: position 0 with barāʾat al-dhimma. Istishab."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He does not know his ownership survives, and freeing him for a kaffāra would not suffice, so his fiṭra is not due, as for a dead slave",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p092",
+     "excerpt_ar": "لم تجب فطرته، نص عليه، في رواية صالح؛ لأنه لا يعلم بقاء ملكه عليه، ولو أعتقه في كفارته لم يجزئه، فلم تجب فطرته كالميت",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The same naṣṣ on these facts (the slave whose life is in doubt and whose news is cut off): position 0. Analogy to the dead slave: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "Fiṭra is due, derived from the permissibility of freeing him, since the original state is that he survives",
+     "ref": "src:openiti-rajab-shamela21730/v01:p336",
+     "excerpt_ar": "ويتخرج لنا وجه آخر أنه يجب بناء على جواز عتقه ; لأن الأصل بقاؤه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's takhrīj for position 1, resting on the slave's survival as the aṣl. Istishab."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}
