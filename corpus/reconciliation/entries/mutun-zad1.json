@@ -1,0 +1,137 @@
+{
+ "entries": [
+  {
+   "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00002.p03",
+   "grades": [
+    "nass",
+    "nass",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The three riwāyas of q159.f025 on the vessels and clothes of unbelievers whose state is unknown. Zād states riwāya 1 (permitted) decisively; al-Inṣāf labels it the madhhab, with al-Iqnāʿ and Kashshāf. Against the reading, which lands on riwāya 3. Evidence items of the q159.f025 entry reused: same facts.",
+   "evidence": [
+    {
+     "ref": "src:openiti-hajjawi-zadmustaqni-shamela11230/v01:p027",
+     "excerpt_ar": "وتباح آنية الكفار ولو لم تحل ذبائحهم وثيابهم إن جهل حالها",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, Zād al-Mustaqniʿ",
+     "note": "The matn states permission decisively, even for unbelievers whose slaughter is not lawful, when the state is unknown (position 0)."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p085",
+     "excerpt_ar": "هذا المذهب مطلقا. وعليه الجمهور. قال في مجمع البحرين: هذا أظهر",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Reused from the q159.f025 entry: on the Muqniʿ's purity and permission of the unbelievers' clothes and vessels unless their impurity is known, al-Inṣāf: the madhhab absolutely (position 0)."
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p013",
+     "excerpt_ar": "تكره وثياب الكفار كلهم وأوانيهم طاهرة إن جهل حالها حتى ماولي عوراتهم كما",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "Reused from the q159.f025 entry: the clothes and vessels of all unbelievers are pure when their state is unknown (position 0)."
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p053",
+     "excerpt_ar": "الأوثان (وأوانيهم) أي أواني الكفار كلهم (طاهرة إن جهل حالها، حتى ما ولي",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Reused from the q159.f025 entry: Magians and idolaters included (position 0)."
+    }
+   ]
+  },
+  {
+   "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00005.p04",
+   "grades": [
+    "wajh",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Two wujūh (or riwāyas) on a recommended ghusl standing for the obligatory one. Zād, al-Iqnāʿ and al-Muntahā state its sufficiency decisively; al-Inṣāf makes its ruling and madhhab that of intending what ṭahāra is recommended for, where «يرتفع، وهو المذهب» (a taṣḥīḥ by a cognate masʾala: qiyās). al-Majd holds the other side. Confirms the annotated side.",
+   "evidence": [
+    {
+     "ref": "src:openiti-hajjawi-zadmustaqni-shamela11230/v01:p029",
+     "excerpt_ar": "وإن نوى غسلا مسنونا أجزأ عن واجب \"وكذا عكسه\" وإن اجتمعت أحداث توجب وضوءا أو غسلا فنوى بطهارته أحدها ارتفع سائرها",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, Zād al-Mustaqniʿ",
+     "note": "The matn states the sufficiency decisively, and the reverse (position 0)."
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p025",
+     "excerpt_ar": "وإن نوى غسلا مسنونا أجزأ عن الواجب وكذا عكسه وإن نواهما حصلا والمستحب أن يغتسل للواجب غسلا ثم للمسنون غسلا آخر",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "Decisive, with the recommendation of two separate ghusls (position 0)."
+    },
+    {
+     "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v01:p050",
+     "excerpt_ar": "ومن نوى غسلا مسنونا أو واجبا أجزأ عن الآخر وإن نواهما حصلا",
+     "position": 0,
+     "grade": "jazm",
+     "who": "Ibn al-Najjār, al-Muntahā",
+     "note": "Decisive (position 0)."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p147",
+     "excerpt_ar": "واعلم أن الحكم هنا كالحكم فيما إذا نوى ما تسن له الطهارة، خلافا ومذهبا عند أكثر الأصحاب",
+     "position": 0,
+     "grade": "qiyas",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "On the Muqniʿ's «وإذا نوى غسلا مسنونا، فهل يجزي عن الواجب؟ على وجهين»: the madhhab here is that of the cognate masʾala, where al-Inṣāf (v01:p145) has «إحداهما: يرتفع، وهو المذهب» (position 0)."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p147",
+     "excerpt_ar": "وعند المجد في شرحه: لا يرتفع بالغسل المسنون. ويرتفع بالوضوء المسنون. وتبعه في مجمع البحرين، واختاره أبو حفص",
+     "position": 1,
+     "grade": "ashab",
+     "who": "al-Majd, Sharḥ al-Hidāya (via al-Inṣāf)",
+     "note": "al-Majd: the recommended ghusl does not lift the ḥadath, unlike the recommended wuḍūʾ (position 1)."
+    }
+   ]
+  },
+  {
+   "far": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006.p06",
+   "grades": [
+    "nass",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The two riwāyas of q143.f001 on the wiper whose foot appears. Zād and ʿUmda state restarting decisively; al-Inṣāf labels it the sound view of the madhhab. Against the reading (`badalStands`); the al-Inṣāf item is reused from the q143.f001 entry.",
+   "evidence": [
+    {
+     "ref": "src:openiti-hajjawi-zadmustaqni-shamela11230/v01:p031",
+     "excerpt_ar": "ومتى ظهر بعض محل الفرض \"بعد الحدث\" أو تمت مدته استأنف الطهارة",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, Zād al-Mustaqniʿ",
+     "note": "The matn states restarting the ṭahāra decisively (position 1)."
+    },
+    {
+     "ref": "src:openiti-ibnqudama-umda-shamela11315/v01:p016",
+     "excerpt_ar": "ومتى مسح ثم انقضت المدة أو خلع قبلها بطلت طهارته",
+     "position": 1,
+     "grade": "jazm",
+     "who": "Ibn Qudāma, ʿUmdat al-Fiqh",
+     "note": "The other matn: removing the khuff before the period ends voids the ṭahāra (position 1)."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p190",
+     "excerpt_ar": "هذا الصحيح من المذهب، قال في الكافي: بطلت الطهارة في أشهر الروايتين. قال",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Reused from the q143.f001 entry: of «ومتى ظهر قدم الماسح ورأسه، أو انقضت مدة المسح استأنف الطهارة» (position 1)."
+    }
+   ]
+  }
+ ]
+}
