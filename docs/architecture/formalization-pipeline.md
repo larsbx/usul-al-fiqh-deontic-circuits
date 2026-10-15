@@ -139,7 +139,8 @@ including in `test_reconcile.py`, `test_nusus.py` and the required witness-integ
 With `--fetch-source`, a cached file whose bytes differ from its lock (a CI cache
 of an earlier pin) is fetched again; without it, that file fails. CI caches
 `.cache/corpus` across runs, so al-Albānī's Irwāʾ (scraped from Shamela page by
-page) is fetched once, resuming from its `.part` checkpoint if a run stops.
+page) is fetched once, resuming from its `.part` checkpoint if a run stops; a
+checkpoint resumes only under the pin it was started for (`.part.pin`).
 
 Tests that need SWI-Prolog or the IslamQA answers (Git LFS) take the `swipl` and
 `islamqa_answers` fixtures (`pipeline/tests/conftest.py`): skipped where absent,

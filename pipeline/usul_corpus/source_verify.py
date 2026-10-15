@@ -86,6 +86,10 @@ def _matches(data: bytes, lock: dict) -> bool:
     return len(data) == lock.get("bytes") and hashlib.sha256(data).hexdigest() == lock.get("sha256")
 
 
+def _pin(lock: dict) -> str:
+    return json.dumps({k: lock.get(k) for k in ("url", "bytes", "sha256")}, sort_keys=True)
+
+
 def locked_text(wid: str, witness: dict, lock: dict, corpus: Path, cache: Path,
                 fetch_source: bool) -> str:
     """Reuse restore/fetch, but never call the lock-writing fetch CLI or _pin.
@@ -105,7 +109,14 @@ def locked_text(wid: str, witness: dict, lock: dict, corpus: Path, cache: Path,
     if not path.exists():
         texts.restore(wid, {wid: lock}, corpus / "texts", cache)
     if not path.exists() and fetch_source:
+        # fetch resumes an interrupted Shamela walk from `<wid>.part`; a checkpoint restored from a
+        # cache of an earlier pin would splice its pages in, so it resumes only under its own pin.
+        part, pin = cache / f"{wid}.part", cache / f"{wid}.part.pin"
+        if part.exists() and not (pin.exists() and pin.read_text(encoding="utf-8") == _pin(lock)):
+            part.unlink()
+        pin.write_text(_pin(lock), encoding="utf-8")
         fetch.fetch(witness, cache)  # its returned candidate lock is deliberately discarded
+        pin.unlink()
     if not path.exists():
         raise ValueError("required locked witness unavailable")
     data = path.read_bytes()

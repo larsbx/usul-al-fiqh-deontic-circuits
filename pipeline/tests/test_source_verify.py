@@ -93,6 +93,25 @@ def test_a_stale_cached_witness_is_refetched_only_when_fetching(fixture, monkeyp
     assert (cache / "test-source.txt").read_text() == TEXT
 
 
+def test_a_checkpoint_resumes_only_under_its_own_pin(fixture, monkeypatch):
+    """A restored `.part` from an interrupted fetch resumes only for the pin it was started under."""
+    corpus, cache = fixture
+    (cache / "test-source.txt").unlink()
+    part, seen = cache / "test-source.part", []
+    def fetch(w, c):
+        seen.append(part.exists())
+        (c / "test-source.txt").write_text(TEXT)
+        part.unlink(missing_ok=True)
+    monkeypatch.setattr(gate.fetch, "fetch", fetch)
+    part.write_text("pages of an earlier pin")
+    assert gate.verify(corpus, cache, fetch_source=True)["status"] == "verified_required_subset"
+    (cache / "test-source.txt").unlink()
+    part.write_text("pages of this pin")
+    (cache / "test-source.part.pin").write_text(gate._pin(json.loads((corpus / "lock.json").read_text())["witnesses"]["test-source"]))
+    assert gate.verify(corpus, cache, fetch_source=True)["status"] == "verified_required_subset"
+    assert seen == [False, True]
+
+
 def test_fetch_failure_is_a_failure_not_an_exclusion(fixture, monkeypatch):
     corpus, cache = fixture
     (cache / "test-source.txt").unlink()
