@@ -45,8 +45,9 @@ def _proof(position, tier):
     return {"position": position, "tier": tier, "dalil": "d", "ref": "src:w/v01:p001", "excerpt_ar": "نص", "note": "n"}
 
 
-def _adv(winner, loser, by):
-    return {"for": winner, "over": loser, "by": by, "ref": "src:w/v01:p001", "excerpt_ar": "نص", "note": "n"}
+def _adv(winner, loser, by, basis="stated"):
+    return {"for": winner, "over": loser, "by": by, "basis": basis, "ref": "src:w/v01:p001", "excerpt_ar": "نص",
+            "note": "n"}
 
 
 def test_attribution_is_a_record_and_decides_nothing():
@@ -84,15 +85,19 @@ def test_tiers_and_murajjihat_mirror_the_kernel():
     names = [n for line in block.split("where", 1)[1].splitlines() if not line.strip().startswith("--")
              for n in re.findall(r"\| (\w+)", line)]
     assert tuple(names) == reconcile.MURAJJIH
-    std = lean[lean.index("def Murajjih.standing"):lean.index("/-- Which standings decide")]
+    std = lean[lean.index("def Murajjih.standing"):lean.index("/-- Where an advantage comes from")]
     for line in std.splitlines():
         if "=>" in line and "_ =>" not in line:
             names, st = line.split("=>")
             assert {m: reconcile.STANDING[m] for m in re.findall(r"\.(\w+)", names)} == dict.fromkeys(
                 re.findall(r"\.(\w+)", names), st.strip().lstrip("."))
-    assert {pol: {st for st in ("asserted", "disputed", "weak", "rejected")
-                  if f"| .{st}" in lean[lean.index(f"def {pol} : Policy"):].split("\n")[0]}
-            for pol in ("strict", "sources")} == {pol: set(reconcile.POLICIES[pol]) for pol in ("strict", "sources")}
+    for pol in ("strict", "sources"):
+        line = lean[lean.index(f"def {pol} : Policy"):].split("\n")[0]
+        assert ({st for st in ("asserted", "disputed", "weak", "rejected") if f"| .{st}" in line},
+                line.rstrip("⟩").rsplit(", ", 1)[1] == "true") == (set(reconcile.POLICIES[pol][0]), reconcile.POLICIES[pol][1])
+    assert "def applying : Policy := ⟨sources.standing, true⟩" in lean and reconcile.POLICIES["applying"] == (
+        reconcile.POLICIES["sources"][0], True)
+    assert "def all : Policy := ⟨fun _ => true, true⟩" in lean
 
 
 def test_weak_and_rejected_advantages_are_formalised_and_run_under_their_policy():
@@ -108,6 +113,17 @@ def test_weak_and_rejected_advantages_are_formalised_and_run_under_their_policy(
     assert set(reconcile.STANDING) == set(reconcile.MURAJJIH)
 
 
+def test_applied_advantages_are_kept_and_count_only_under_their_policy():
+    """An advantage the bank applies, which no source states, is recorded and run, but does not decide by default."""
+    c = _ikh("x", True, [True, False])
+    e = {**_entry("x", ["ashab", "ashab"]), "proofs": [_proof(0, "zanni"), _proof(1, "zanni")],
+         "advantages": [_adv(0, 1, "khass", "applied")]}
+    assert [reconcile.resolve(c, e, p) for p in ("strict", "sources", "applying", "all")] == [
+        ("tawaqquf", None), ("tawaqquf", None), ("tarjih", True), ("tarjih", True)]
+    assert reconcile.check([c], {"entries": [{**e, "advantages": [{**_adv(0, 1, "khass"), "basis": "guessed"}]}]}, DOSSIER) == [
+        "x: an advantage names two listed positions, a murajjiḥ, its basis, a ref and its excerpt"]
+
+
 def test_proofs_name_positions_tiers_and_their_source():
     c = _ikh("x", True, [True, False])
     e = _entry("x", ["ashab", "ashab"])
@@ -117,7 +133,7 @@ def test_proofs_name_positions_tiers_and_their_source():
     assert reconcile.check([c], {"entries": [{**e, "proofs": [_proof(0, "tashih")]}]}, DOSSIER) == [
         f"x: a proof names a listed position, a tier from {reconcile.TIERS}, a ref and its excerpt"]
     assert reconcile.check([c], {"entries": [{**e, "proofs": [_proof(0, "zanni")], "advantages": [_adv(0, 0, "muthbit")]}]}, DOSSIER) == [
-        "x: an advantage names two listed positions, a murajjiḥ, a ref and its excerpt"]
+        "x: an advantage names two listed positions, a murajjiḥ, its basis, a ref and its excerpt"]
     assert reconcile.check([c], {"entries": [{**e, "advantages": [_adv(0, 1, "muthbit")]}]}, DOSSIER) == [
         "x: advantages weigh proofs; record the proofs"]
     assert reconcile.check([c], {"entries": [{**e, "proofs": []}]}, DOSSIER) == [

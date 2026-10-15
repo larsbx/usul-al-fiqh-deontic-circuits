@@ -33,7 +33,9 @@ v02 p389–401). Who holds a position, the madhhab's label included, is kept as 
   (p730), and the view of the more learned of two ṣaḥāba (p743). Each advantage carries its standing in the sources
   (asserted, disputed, weak, rejected; `Murajjih.standing`), and which standings decide is a
   `Policy`: by default what a cited source asserts as its own, with the strict and the inclusive
-  policies run beside it.
+  policies run beside it. Each advantage also carries its `Basis`: stated by a source comparing the
+  two proofs, or applied by the bank to properties the proofs show; by default only the stated
+  decide.
 * **Tawaqquf.** «فإن لم يمكن الجمع، ولا معرفة النسخ: رجحنا، فأخذنا الأقوى في أنفسنا» (p391):
   where the stated advantages do not settle it, the weighing is the mujtahid's own, and the
   bank suspends.
@@ -119,34 +121,56 @@ def Murajjih.standing : Murajjih → Standing
   | .dariHadd => .rejected
   | _ => .asserted
 
-/-- Which standings decide. -/
-abbrev Policy := Standing → Bool
+/-- Where an advantage comes from. `stated`: a cited source compares the two proofs itself («وهذا
+أخص من حديث أبي سعيد، فيقدم عليه»). `applied`: the bank applies a murajjiḥ of the uṣūl works to
+properties each proof shows in its source, which no source compares. Both are kept; the policy
+decides whether the applied count. -/
+inductive Basis where
+  | stated | applied
+  deriving DecidableEq, Repr
+
+/-- Which advantages decide: by their standing in the uṣūl works, and whether an applied one counts. -/
+structure Policy where
+  standing : Standing → Bool
+  applied : Bool
 
 namespace Policy
-/-- Only what no cited source disputes. -/
-def strict : Policy | .asserted => true | _ => false
-/-- What a cited source asserts as its own, disputed or not: the bank's default. -/
-def sources : Policy | .asserted | .disputed => true | _ => false
-/-- Every recorded advantage, the weak and the rejected included. -/
-def all : Policy := fun _ => true
+/-- Only stated advantages that no cited source disputes. -/
+def strict : Policy := ⟨fun | .asserted => true | _ => false, false⟩
+/-- Stated advantages a cited source asserts as its own, disputed or not: the bank's default. -/
+def sources : Policy := ⟨fun | .asserted | .disputed => true | _ => false, false⟩
+/-- As `sources`, and the bank's own applications of the murajjiḥāt too. -/
+def applying : Policy := ⟨sources.standing, true⟩
+/-- Every recorded advantage, the weak, the rejected and the applied included. -/
+def all : Policy := ⟨fun _ => true, true⟩
 
-/-- The policies are nested: strict ⊆ sources ⊆ all. -/
-theorem strict_le_sources (s : Standing) (h : strict s = true) : sources s = true := by
+/-- The policies are nested: strict ⊆ sources ⊆ applying ⊆ all. -/
+theorem strict_le_sources (s : Standing) (h : strict.standing s = true) : sources.standing s = true := by
   cases s <;> simp_all [strict, sources]
 
-theorem sources_le_all (s : Standing) : all s = true := rfl
+theorem sources_le_applied (s : Standing) : sources.standing s = applying.standing s := rfl
+
+theorem le_all (s : Standing) : all.standing s = true ∧ all.applied = true := ⟨rfl, rfl⟩
 
 /-- The default leaves out exactly what a cited source calls weak or rejects. -/
-theorem sources_false_iff (s : Standing) : sources s = false ↔ s = .weak ∨ s = .rejected := by
+theorem sources_false_iff (s : Standing) : sources.standing s = false ↔ s = .weak ∨ s = .rejected := by
   cases s <;> simp [sources]
+
+/-- The default counts only what a source states. -/
+theorem sources_stated_only : sources.applied = false := rfl
 end Policy
 
-/-- One stated advantage: the proof for `winner` is preferred to the proof for `loser`. -/
+/-- One advantage: the proof for `winner` is preferred to the proof for `loser`. -/
 structure Advantage (P : Type) where
   winner : P
   loser : P
   by_ : Murajjih
+  basis : Basis
   deriving DecidableEq, Repr
+
+/-- The policy counts the advantage. -/
+def Advantage.counts {P : Type} (π : Policy) (a : Advantage P) : Bool :=
+  π.standing a.by_.standing && (a.basis == .stated || π.applied)
 
 variable {P : Type} [DecidableEq P]
 
@@ -156,7 +180,7 @@ def top (ps : List (P × Tier)) (p : P) : Option Nat :=
 
 /-- Some advantage the policy counts prefers `p` to `q`. -/
 def favours (π : Policy) (as : List (Advantage P)) (p q : P) : Bool :=
-  as.any fun a => a.winner = p && a.loser = q && π a.by_.standing
+  as.any fun a => a.winner = p && a.loser = q && a.counts π
 
 /-- `p` outweighs `q`: a proof of a higher tier, or of the same tier with a counted advantage over
 `q` and none from `q` back. A position citing no proof outweighs nothing. -/
@@ -213,14 +237,20 @@ theorem beats_asymm (h : beats π ps as p q = true) : beats π ps as q p = false
   · simp_all
 
 /-- Advantages the policy does not count never decide. -/
-theorem favours_uncounted (h : ∀ a ∈ as, π a.by_.standing = false) : favours π as p q = false := by
+theorem favours_uncounted (h : ∀ a ∈ as, a.counts π = false) : favours π as p q = false := by
   simp only [favours, List.any_eq_false]
   intro a ha; simp [h a ha]
 
 /-- Under the default, what a cited source calls weak or rejects never decides. -/
 theorem favours_sources_weak (h : ∀ a ∈ as, a.by_.standing = .weak ∨ a.by_.standing = .rejected) :
     favours Policy.sources as p q = false :=
-  favours_uncounted fun a ha => (Policy.sources_false_iff _).2 (h a ha)
+  favours_uncounted fun a ha => by
+    simp [Advantage.counts, (Policy.sources_false_iff _).2 (h a ha)]
+
+/-- A policy that does not count applied advantages is decided only by what the sources state. -/
+theorem favours_applied_ignored (hπ : π.applied = false) (h : ∀ a ∈ as, a.basis = .applied) :
+    favours π as p q = false :=
+  favours_uncounted fun a ha => by simp [Advantage.counts, hπ, h a ha]
 
 theorem reconcile_jam_first {jam : P} {naskh : Option P} : reconcile π (some jam) naskh rs ps as = .jam jam :=
   rfl
@@ -232,17 +262,20 @@ theorem reconcile_tawaqquf_iff {jam naskh : Option P} :
 open Policy in
 section
 -- A report outweighs a qiyās, whatever the qiyās's advantages.
-#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .qiyas)] [⟨"b", "a", .muaththira⟩] == some "a"
+#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .qiyas)] [⟨"b", "a", .muaththira, .stated⟩] == some "a"
 -- Two reports: the connected one over the mursal.
-#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .muttasil⟩] == some "a"
+#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .muttasil, .stated⟩] == some "a"
 -- Advantages on both sides: the weighing is the mujtahid's own, so tawaqquf.
-#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .muttasil⟩, ⟨"b", "a", .muthbit⟩] == none
+#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .muttasil, .stated⟩, ⟨"b", "a", .muthbit, .stated⟩] == none
 -- A weak advantage decides only under the policy that counts everything.
-#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .khiffa⟩] == none
-#guard prevail all ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .khiffa⟩] == some "a"
+#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .khiffa, .stated⟩] == none
+#guard prevail all ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .khiffa, .stated⟩] == some "a"
 -- A disputed advantage decides by default, not under the strict policy.
-#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .qawl⟩] == some "a"
-#guard prevail strict ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .qawl⟩] == none
+#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .qawl, .stated⟩] == some "a"
+#guard prevail strict ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .qawl, .stated⟩] == none
+-- An applied advantage decides only under the policies that count the bank's applications.
+#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .khass, .applied⟩] == none
+#guard prevail applying ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .khass, .applied⟩] == some "a"
 -- A position citing no proof loses to one that cites any.
 #guard prevail sources ["a", "b"] [("b", Tier.istishab)] [] == some "b"
 -- Nothing cited on either side: tawaqquf.

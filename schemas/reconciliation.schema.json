@@ -279,17 +279,18 @@
             }
           },
           "advantages": {
-            "description": "Murajjiḥāt the source states between two positions' proofs of one tier (Rawḍa v02 p391–401).",
+            "description": "Murajjiḥāt between two positions' proofs of one tier: stated by a source comparing them, or applied by the bank to properties the proofs show (Usul.Tarjih.Basis).",
             "type": "array",
             "items": {
               "type": "object",
               "required": [
-                "for",
-                "over",
+                "basis",
                 "by",
-                "ref",
                 "excerpt_ar",
-                "note"
+                "for",
+                "note",
+                "over",
+                "ref"
               ],
               "additionalProperties": false,
               "properties": {
@@ -318,6 +319,12 @@
                 "note": {
                   "type": "string",
                   "minLength": 1
+                },
+                "basis": {
+                  "enum": [
+                    "stated",
+                    "applied"
+                  ]
                 }
               }
             }

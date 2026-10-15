@@ -42,7 +42,8 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p310",
      "excerpt_ar": "وهذا أخص من حديث أبي سعيد، فيقدم عليه، أو يجمع بينهما",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "al-Mughnī says ʿUmar's ḥadīth (ḥawqala at the ḥayʿala) is more specific than Abū Saʿīd's general «say as he says», and so takes precedence. That is the specific over the general, between two zanni proofs. He also allows combining them, which is position 1's way, so the advantage is stated with that alternative left open."
+     "note": "al-Mughnī says ʿUmar's ḥadīth (ḥawqala at the ḥayʿala) is more specific than Abū Saʿīd's general «say as he says», and so takes precedence. That is the specific over the general, between two zanni proofs. He also allows combining them, which is position 1's way, so the advantage is stated with that alternative left open. Basis: stated — the source itself compares the two proofs in the excerpt.",
+     "basis": "stated"
     }
    ]
   },
@@ -85,7 +86,8 @@
      "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p581",
      "excerpt_ar": "والأولى الإتيان بالصلاة كما في حديث كعب بن عجرة المتفق عليه فإنه أصح شئ روي فيها",
      "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
-     "note": "al-Sharḥ al-Kabīr prefers the single wording because its version of Kaʿb's ḥadīth is agreed upon by al-Bukhārī and Muslim and is «أصح شئ روي فيها». The combined wording is cited from al-Nasāʾī and al-Tirmidhī (al-Mughnī), or from al-Bukhārī alone (Ibn Rajab). Both proofs are zanni."
+     "note": "al-Sharḥ al-Kabīr prefers the single wording because its version of Kaʿb's ḥadīth is agreed upon by al-Bukhārī and Muslim and is «أصح شئ روي فيها». The combined wording is cited from al-Nasāʾī and al-Tirmidhī (al-Mughnī), or from al-Bukhārī alone (Ibn Rajab). Both proofs are zanni. Basis: stated — the source itself compares the two proofs in the excerpt.",
+     "basis": "stated"
     }
    ]
   },
