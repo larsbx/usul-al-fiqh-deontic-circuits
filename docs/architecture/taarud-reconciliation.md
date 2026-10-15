@@ -264,6 +264,8 @@ With main merged (PR-30's eleven recovered furūʿ add three on-madhhab ikhtilā
 
 The ledger now holds every one of the 545 ikhtilāf cases: 543 active entries (2 archived) with 1,963 evidence items; 20 jamʿ, 1 naskh, 508 tarjīḥ (155 residues) and 14 tawaqquf; 288 entries confirm an on-madhhab annotation.
 
+**Lane A, round 6** added 53 entries and 155 evidence items. Every one of its ikhtilāf cases has an entry: all 37 on-madhhab entries confirm their side, and 16 are residues. There is no tawaqquf and no jamʿ. Five cases take their contrary side from al-Inṣāf where Ibn Rajab only marks the split. The ledger now holds all 598 ikhtilāf cases: 596 active entries (2 archived) with 2,118 evidence items; 20 jamʿ, 1 naskh, 561 tarjīḥ (171 residues) and 14 tawaqquf; 325 entries confirm an on-madhhab annotation.
+
 **Left as residues, for want of a cited farq:**
 
 | Encoder | Residues / cases | Why no jamʿ |

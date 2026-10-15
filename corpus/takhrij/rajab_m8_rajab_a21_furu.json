@@ -1,0 +1,347 @@
+{
+  "suite": "m8_rajab_rajab_a21",
+  "status": "candidate",
+  "provenance": "Shard rajab-a21 (lane A): every farʿ record of Ibn Rajab's qawāʿid 147, 149, 150, 152 and 155, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA21). Typological records are annotated for their leading ruling, or for the branch where the reported khilāf arises where the record says so. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f000",
+      "encoder": "woman_half_of_man",
+      "class": "derivable",
+      "facts": {
+        "woman_party": true,
+        "listed_halving_point": true
+      },
+      "expected": true,
+      "note": "Leading ruling: inheritance and diya: «الميراث والدية»; then the ʿaqīqa, «عن الغلام شاتان وعن الجارية شاة». Listed points: her measure is half a man's. No dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f001",
+      "encoder": "woman_half_of_man",
+      "class": "derivable",
+      "facts": {
+        "woman_party": true,
+        "listed_halving_point": true
+      },
+      "expected": true,
+      "note": "Leading ruling: testimony, «الشهادة»: two women's testimony stands for one man's. Follow-on: emancipation, «فيعدل عتق امرأتين بعتق رجل في الفكاك من النار، كما دل عليه الحديث»; Ibn Abī Mūsā reports two riwāyas there, the second of which he made the madhhab: «أن عتق العبد والأمة في ذلك سواء». That dispute is in the ʿitq branch, not the leading testimony ruling."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f002",
+      "encoder": "woman_half_of_man",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "woman_party": true,
+        "listed_halving_point": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the gift is divided as inheritance is, a son two shares to a daughter's one (Ibn Rajab «المشروع عندنا»; Aḥmad's naṣṣ in many reports; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "sons and daughters alike (Ibn ʿAqīl, «خلافا لابن عقيل»; a riwāya per al-Inṣāf, chosen by him in al-Funūn and by al-Ḥārithī)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Gifts to children in life: «فإن المشروع عندنا أن يكون على سبيل الميراث خلافا لابن عقيل». The daughter's share is half the son's: a listed point. al-Inṣāf (v07:p136): «القسمة بينهم على قدر ميراثهم) هذا المذهب نص عليه», with «وعنه: المشروع أن يكون الذكر كالأنثى ... اختاره ابن عقيل في الفنون». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f003",
+      "encoder": "woman_half_of_man",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "woman_party": true,
+        "listed_halving_point": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the most of menses is fifteen days, half the month (Ibn Rajab «على ظاهر المذهب»; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "seventeen days (a riwāya per al-Inṣāf), so not half",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Prayer: «فإن المرأة تسقط عنها الصلاة أيام الحيض، وأكثر الحيض على ظاهر المذهب خمسة عشر يوما وهو نصف الشهر». The halving rests on the maximum Ibn Rajab marks «على ظاهر المذهب»; the other side is not named in the record and is taken from al-Inṣāf (v01:p358): «وأكثره خمسة عشر يوما) . هذا المذهب. وعليه جمهور الأصحاب ... وعنه سبعة عشر يوما». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q149.f001",
+      "encoder": "determinate_holder_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "right_holder_determinate": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "he may bequeath all his property (one riwāya; the madhhab per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "only a third (the other riwāya, Ibn Manṣūr's report)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "One with a determinate heir may not bequeath more than a third; «ومن لا وارث له من ذي فرض ولا عصبة ولا رحم هل له أن يوصي بماله كله أم لا؟ على روايتين، فمن الأصحاب من بناهما على هذه القاعدة، ومنهم من بناهما على أن بيت المال هل هو عصبة وارث أم لا؟». Annotated where the khilāf arises, the one with no heir: the third protects determinate heirs, and the Muslims are not determinate, so on the reading the restriction does not apply (output false = the determinate holder's restriction does not hold). al-Inṣāf (v07:p192): «فأما من لا وارث له: فتجوز وصيته بجميع ماله) . هذا المذهب. وعليه جماهير الأصحاب», reporting Ibn Rajab's two bases. On the madhhab side. Follow-ons: the imām's acknowledgment of the lineage of one with no known heir (al-Qāḍī, Ibn ʿAqīl: it is established), his ratifying a bequest of all, and his pardoning the killer of one with no heir for the diya only, with two wajhs on whether he may retaliate."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q149.f002",
+      "encoder": "determinate_holder_right",
+      "class": "derivable",
+      "facts": {
+        "right_holder_determinate": false
+      },
+      "expected": false,
+      "note": "Property whose owner is unknown: «الأموال التي يجهل ربها يجوز التصدق منها بخلاف ما علم ربها». No determinate holder: it is not held back for him, so it may be given in charity. No dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q149.f003",
+      "encoder": "determinate_holder_right",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "right_holder_determinate": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the deferred debt falls due (al-Qāḍī and Ibn ʿAqīl in al-Mujarrad, the author of al-Mughnī)",
+          "ruling": false
+        },
+        {
+          "who": "it does not fall due, for he has an heir though not a determinate one (one of the two iḥtimāls al-Qāḍī gives in his Khilāf)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«إذا مات من لا وارث له وعليه دين مؤجل فهل يحل؟ قال القاضي وابن عقيل في المجرد وصاحب المغني: يحل ; لأن الأصل يستحقه الوارث وقد عدم هنا. وذكر القاضي في خلافه احتمالين ; لأن له وارثا لكنه غير معين». The term is kept for a determinate heir; there is none, so on the reading the term is not kept (output false) and the debt falls due. al-Inṣāf (v05:p308) reports the same holders without a label; al-Iqnāʿ (v02:p219) states it decisively, «فإن تعذر التوثق لعدم وارث أو غيره حل», and Kashshāf (v03:p438) «بأن مات عن غير وارث حل ولو ضمنه الإمام». On the madhhab side. Follow-ons: the hire of one who dies with no heir (Aḥmad's naṣṣ on the camel hired for ḥajj, explained in al-Mughnī as lapse for want of an heir to take the benefit), the imām's taking the shufʿa claimed before death, and Ibn ʿAqīl's ḥadd al-qadhf."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q149.f004",
+      "encoder": "determinate_holder_right",
+      "class": "derivable",
+      "facts": {
+        "right_holder_determinate": false
+      },
+      "expected": false,
+      "note": "Property owed to an indeterminate party: «أن المال المستحق لغير معين كالزكاة لا تقف أداؤه على مطالبتهم ولا على مطالبة وكيلهم وهو الإمام ... بخلاف المستحق لمعين فإنه لا يجب الأداء إليه بدون مطالبة». The determinate holder's rule (payment waits on his demand) does not apply; hence «لا تسقط الزكاة عندنا بتلف النصاب قبل التمكن من الأداء». No internal dispute reported («عندنا» marks the madhhab against others)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f000",
+      "encoder": "transfer_follows_cause",
+      "class": "derivable",
+      "facts": {
+        "transfer_given_for_cause": true,
+        "independent_gift_cause": false
+      },
+      "expected": true,
+      "note": "«مسائل العينة»: the second sale is made because of the first and takes its ruling. No dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f001",
+      "encoder": "transfer_follows_cause",
+      "class": "derivable",
+      "facts": {
+        "transfer_given_for_cause": true,
+        "independent_gift_cause": false
+      },
+      "expected": true,
+      "note": "The borrower's gift before repayment: «فإنه لا يجوز قبولها ممن لم يجر له منه عادة». Given for the loan, with no prior custom of gifting: the cause (sabab) governs and it may not be accepted. With a prior custom (independent_gift_cause) the reading frees it, as the record's own exception says."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f002",
+      "encoder": "transfer_follows_cause",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "transfer_given_for_cause": true,
+        "independent_gift_cause": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "he does not have it to himself: it is ghanīma (or fayʾ) (Ibn Rajab «على المذهب»; the madhhab per al-Inṣāf for a gift in dār al-ḥarb)",
+          "ruling": true
+        },
+        {
+          "who": "it is his (a riwāya per al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«هدية المشركين لأمير الجيش فإنه لا يختص بها على المذهب بل هي غنيمة أو فيء على اختلاف الأصحاب». Given because of his command: the cause (sabab) governs and it is not his. Whether ghanīma or fayʾ does not change the output. The record does not say where the gift was made; annotated for a gift in dār al-ḥarb, where the khilāf «على المذهب» arises: al-Inṣāf (v04:p188) «فإن أهدي في دار الحرب: فهو غنيمة. على الصحيح من المذهب ... وعنه هو لمن أهدي له. وعنه هو فيء»; Kashshāf gives the cause, «لأن ذلك فعل خوفا من الجيش». A gift sent into dār al-islām is his per al-Mughnī and Kashshāf. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f003",
+      "encoder": "transfer_follows_cause",
+      "class": "derivable",
+      "facts": {
+        "transfer_given_for_cause": true,
+        "independent_gift_cause": false
+      },
+      "expected": true,
+      "note": "Gifts to officials: Aḥmad, of gifts to the amīr, «هذا الغلول», and «ومنع الأصحاب من قبول القاضي هدية من لم تجر العادة بهديته له قبل ولايته». Given for the office, with no prior custom: governed by the cause (sabab) and barred. No dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f004",
+      "encoder": "transfer_follows_cause",
+      "class": "derivable",
+      "facts": {
+        "transfer_given_for_cause": true,
+        "independent_gift_cause": false
+      },
+      "expected": true,
+      "note": "The wife's gift of her mahr to her husband at his request: «فإن سببها طلب استدامة النكاح، فإن طلقها فلها الرجوع فيها نص عليه أحمد في رواية عبد الله». The cause governs, so it is returned when the cause fails. Ibn Rajab reports only the naṣṣ; later works dispute it (al-Inṣāf v07:p146: al-Muqniʿ «قدم هنا عدم رجوعها إذا سألها», with Abū Bakr and others, «وأطلقهما في المغني ... والفروع»), which the record does not report."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f005",
+      "encoder": "transfer_follows_cause",
+      "class": "derivable",
+      "facts": {
+        "transfer_given_for_cause": true,
+        "independent_gift_cause": false
+      },
+      "expected": true,
+      "note": "A gift to one who intercedes before the ruler: «فلا يجوز. ذكره القاضي، وأومأ إليه ... لأنها كالأجرة». Follow-on: Aḥmad's naṣṣ (Ṣāliḥ) that one who returns a deposit and is given a gift «لا يقبلها إلا بنية المكافأة», and the same for all trusts."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f006",
+      "encoder": "transfer_follows_cause",
+      "class": "derivable",
+      "facts": {
+        "transfer_given_for_cause": true,
+        "independent_gift_cause": false
+      },
+      "expected": true,
+      "note": "Aḥmad's naṣṣ (Ibn Māhān): the extra meat the buyer asked for follows the meat when it is returned for a defect, «لأنها أخذت بسبب اللحم فجعلها تابعة للعقد في الرد». Al-Qāḍī's restriction to the session and Ibn ʿAqīl's takhrīj of a riwāya on additions after the contract is lāzim concern the basis, not this ruling."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f007",
+      "encoder": "transfer_follows_cause",
+      "class": "derivable",
+      "facts": {
+        "transfer_given_for_cause": true,
+        "independent_gift_cause": false
+      },
+      "expected": true,
+      "note": "Aḥmad (al-Athram): the mawlā who married an Arab woman and was separated from her, «وإن كان أهدى هدية يردونها عليه»; al-Qāḍī: given on condition (sharṭ) the contract lasts, like a gift for a return. Follow-ons: Ibn Rajab's distinction between a separation that drops the mahr and one that confirms it, and a payment to a third party because of the contract (the broker’s fee), where Ibn ʿAqīl distinguishes iqāla from cancellation for khiyār or a defect."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152.f001",
+      "encoder": "four_kinds_marriage_prohibition",
+      "class": "derivable",
+      "facts": {
+        "nasab_dabit": true,
+        "sihr_class": false,
+        "jam_rahm_mahram": false,
+        "rada_counterpart": false
+      },
+      "expected": true,
+      "note": "Kind one, nasab: «يحرم على الإنسان أصوله وفروعه، وفروع أصله الأدنى وإن سفلن، وفروع أصوله البعيدة دون بناتهن»; leading ruling, his mother and grandmothers. The cousins alone remain lawful. No dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152.f002",
+      "encoder": "four_kinds_marriage_prohibition",
+      "class": "derivable",
+      "facts": {
+        "nasab_dabit": false,
+        "sihr_class": true,
+        "jam_rahm_mahram": false,
+        "rada_counterpart": false
+      },
+      "expected": true,
+      "note": "Kind two, ṣihr: the spouses' relatives are lawful «إلا أربعة أصناف حلائل الآباء والأبناء وأمهات النساء وبنات النساء المدخول بهن»; leading ruling, his wife's mother. Follow-on: the rabīb's daughter is prohibited too, Aḥmad's naṣṣ (Ṣāliḥ), Shaykh Taqī al-Dīn knowing no dispute."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152.f003",
+      "encoder": "four_kinds_marriage_prohibition",
+      "class": "derivable",
+      "facts": {
+        "nasab_dabit": false,
+        "sihr_class": false,
+        "jam_rahm_mahram": true,
+        "rada_counterpart": false
+      },
+      "expected": true,
+      "note": "Kind three, combination: «فكل امرأتين بينهما رحم محرم يحرم الجمع بينهما بحيث لو كانت إحداهما ذكرا لم يجز له التزوج بالأخرى لأجل النسب دون الصهر»; leading ruling, a woman and her paternal aunt. Follow-on: a man's wife and his daughter by another may be combined (ṣihr, not nasab); two women related by riḍāʿ may not, Aḥmad's naṣṣ (al-Athram, Ḥarb), his tawaqquf (Ibn Manṣūr) being on ẓihār."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152.f004",
+      "encoder": "four_kinds_marriage_prohibition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "nasab_dabit": false,
+        "sihr_class": false,
+        "jam_rahm_mahram": false,
+        "rada_counterpart": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "prohibited: riḍāʿ prohibits what nasab does in all three kinds (Ibn Rajab's ḍābiṭ; Aḥmad (Ibn Badīnā) on the wife of a milk son, «لا يعجبني أن يتزوجها، يحرم من الرضاع ما يحرم من النسب»)",
+          "ruling": true
+        },
+        {
+          "who": "lawful: riḍāʿ does not establish the prohibition of ṣihr (Shaykh Taqī al-Dīn's choice)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Kind four, riḍāʿ: «فيحرم به ما يحرم من النسب في الأنواع الثلاثة المتقدمة», then «واختار الشيخ تقي الدين أنه لا يثبت به تحريم المصاهرة ... ولا على المرأة نكاح أبي زوجها وابنه من الرضاع». The milk counterparts of the nasab and jamʿ kinds are not disputed; annotated where the khilāf arises, the ṣihr kind through riḍāʿ: the wife of his milk son (the case of Aḥmad's answer). al-Inṣāf (v08:p115) counts in «حلائل أبنائه» «كل من تزوجها أحد من أولاده ... من نسب أو رضاع», and so al-Iqnāʿ and Kashshāf. On the madhhab side. Follow-on: the girl suckled with milk of zinā is prohibited, Aḥmad's naṣṣ (ʿAbd Allāh)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155.f000",
+      "encoder": "mahr_fully_established",
+      "class": "derivable",
+      "facts": {
+        "intercourse_occurred": true,
+        "khalwa_occurred": false,
+        "husband_capable_of_intercourse": false,
+        "death_before_consummation": false
+      },
+      "expected": true,
+      "note": "Intercourse: «الوطء فيتقرر به المهر على كل حال». Follow-on: its preliminaries (touching with desire, looking at her private part or at her unclothed): some aṣḥāb joined them to intercourse by a single riwāya, others derived two wajhs or riwāyas from the khilāf on ṣihr prohibition by them; Ibn ʿAqīl's custom-in-company distinction; Aḥmad's naṣṣ (Muhannā) «إذا تعمد النظر إليها وهي عريانة تغتسل وجب لها المهر»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155.f001",
+      "encoder": "mahr_fully_established",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "intercourse_occurred": false,
+        "khalwa_occurred": true,
+        "husband_capable_of_intercourse": true,
+        "death_before_consummation": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the khalwa establishes the whole mahr (the akthar, «وأنكر الأكثرون هذه الرواية»; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "it does not establish it without intercourse (a riwāya some aṣḥāb reported, taken from Yaʿqūb ibn Bukhtān's report)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: «الخلوة ممن يمكن الوطء بمثله» establishes the mahr; «ومن الأصحاب من حكى رواية أخرى أنه لا يستقر المهر بالخلوة لمجردها بدون الوطء أخذا مما روي يعقوب بن بختان عن أحمد ... وأنكر الأكثرون هذه الرواية». al-Inṣāf (v08:p283): «ومنها: الخلوة. على الصحيح من المذهب. عليه الأصحاب»; al-Muntahā, al-Iqnāʿ and Kashshāf state it with its shurūṭ (she did not refuse him, he is one whose like has intercourse). On the madhhab side. Follow-ons: a physical or legal impediment (jabb, ratq, iḥrām, menses), with the three ṭuruq of the aṣḥāb (al-Inṣāf v08:p285: it establishes «على الصحيح من المذهب»), the spouses' agreement that there was no intercourse (two riwāyas on the half), the basis of the rule (maẓinnat al-waṭʾ, tamkīn, Ibn ʿAqīl's two reasons, or the enjoyment lawful only by marriage, ẓāhir of Aḥmad in Ḥarb's report), and Shaykh Taqī al-Dīn's tawjīh that it establishes even where he prevented intercourse."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155.f002",
+      "encoder": "mahr_fully_established",
+      "class": "derivable",
+      "facts": {
+        "intercourse_occurred": false,
+        "khalwa_occurred": false,
+        "husband_capable_of_intercourse": false,
+        "death_before_consummation": true
+      },
+      "expected": true,
+      "note": "Death: «الموت قبل الدخول». Follow-ons: if he divorces her (ṭalāq) in his last illness and dies of it, two riwāyas built on whether she inherits from him; a fourth establishing sabab, his removing her virginity by pushing, on a riwāya al-Mughnī derived."
+    }
+  ]
+}

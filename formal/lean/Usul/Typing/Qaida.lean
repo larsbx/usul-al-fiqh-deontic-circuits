@@ -790,4 +790,67 @@ structure Rajab146 where
   rajiyya : Option (Bool) := none
   listedDifference : Option (Bool) := none
 
+/-- Ibn Rajab 147 «أحكام النساء على النصف من أحكام الرجال في مواضع: منها: الميراث والدية، ومنها: العقيقة عن الغلام شاتان وعن الجارية شاة. ومنها: الشهادة والعتق، فيعدل عتق امرأتين بعتق رجل في الفكاك من النار، كما دل عليه الحديث، …». Read by `woman_half_of_man`. -/
+structure Rajab147 where
+  womanParty : Option (Bool) := none
+  listedHalvingPoint : Option (Bool) := none
+
+/-- Ibn Rajab 149 «الحق الثابت لمعين يخالف الثابت لغير معين في أحكام منها من له وارث معين ليس له أن يوصي بأكثر من ثلثه، ومن لا وارث له من ذي فرض ولا عصبة ولا رحم هل له أن يوصي بماله كله أم لا؟ على روايتين، فمن الأصحاب من بناهما …». Read by `determinate_holder_right`. -/
+structure Rajab149 where
+  rightHolderDeterminate : Option (Bool) := none
+
+/-- Ibn Rajab 150 «تعتبر الأسباب في عقود التمليكات كما يعتبر في الأيمان، ويتخرج على هذا مسائل متعددة: منها: مسائل العينة. ومنها: هدية المقترض قبل الأداء فإنه لا يجوز قبولها ممن لم يجر له منه عادة. ومنها: هدية المشركين لأمير …». Read by `transfer_follows_cause`. -/
+structure Rajab150 where
+  transferGivenForCause : Option (Bool) := none
+  independentGiftCause : Option (Bool) := none
+
+/-- Ibn Rajab 151 «دلالة الأحوال يختلف بها دلالة الأقوال في قبول دعوى ما يوافقها ورد ما يخالفها، ويترتب عليها الأحكام بمجردها، ويتخرج عليه مسائل: منها: كنايات الطلاق في حالة الغضب والخصومة لا يقبل دعوى إرادة غير الطلاق بها. …». Read by `dalalat_hal_carries_claim`. -/
+structure Rajab151 where
+  halSupportsClaim : Option (Bool) := none
+  halBeliesClaim : Option (Bool) := none
+
+/-- Ibn Rajab 152 «المحرمات في النكاح أربعة أنواع: النوع الأول: المحرمات بالنسب، وضابط ذلك أنه يحرم على الإنسان أصوله وفروعه، وفروع أصله الأدنى وإن سفلن، وفروع أصوله البعيدة دون بناتهن فيدخل في أصوله: أمه وأم أمه وأم أبيه وإن …». Read by `four_kinds_marriage_prohibition`. -/
+structure Rajab152 where
+  nasabDabit : Option (Bool) := none
+  sihrClass : Option (Bool) := none
+  jamRahmMahram : Option (Bool) := none
+  radaCounterpart : Option (Bool) := none
+
+/-- Ibn Rajab 153 «ولد الولد هل يدخل في مسمى الولد عند الإطلاق، هذا ثلاثة أنواع: أحدها: أنه يدخل في مسماه مطلقا مع وجود الولد وعدمه، وذلك في صور: منها المحرمات في النكاح كالبنات وحلائل الأبناء. ومنها: امتناع القصاص بين الأب …». Read by `grandchild_in_child_term`. -/
+structure Rajab153 where
+  includedWithOrWithoutChild : Option (Bool) := none
+  includedOnlyAbsentChild : Option (Bool) := none
+  intermediateChildPresent : Option (Bool) := none
+
+/-- Ibn Rajab 154 «خروج البضع من الزوج هل هو متقوم أم لا؟ بمعنى أنه هل يلزمه المخرج له قهرا ضمانة للزوج بالمهر؟ وفيه قولان في المذهب ويذكر أن روايتين عن أحمد، وأكثر الأصحاب كالقاضي ومن بعده يقولون: ليس بمتقوم، وخصوا هذا الخلاف …». Read by `bud_exit_charged`. -/
+structure Rajab154 where
+  chargedUnconsummatedMahr : Option (Bool) := none
+  husbandElectsMahr : Option (Bool) := none
+  wifeBearsExit : Option (Bool) := none
+
+/-- Ibn Rajab 155 «يتقرر المهر كله للمرأة بأحد ثلاثة أشياء: الأول: الوطء فيتقرر به المهر على كل حال، وأما مقدماته كاللمس للشهوة والنظر إلى الفرج أو إلى جسدها وهي عارية فمن الأصحاب من ألحقه بالوطء وجعله مقررا رواية واحدة ; لأنه …». Read by `mahr_fully_established`. -/
+structure Rajab155 where
+  intercourseOccurred : Option (Bool) := none
+  khalwaOccurred : Option (Bool) := none
+  husbandCapableOfIntercourse : Option (Bool) := none
+  deathBeforeConsummation : Option (Bool) := none
+
+/-- Ibn Rajab 156 «فيما ينتصف به المهر قبل استقراره وما يسقط به الفرقة قبل الدخول إن كانت من جهة الزوج وحده أو من جهة أجنبي وحده تنصف بها المهر المسمى، وإن كانت من جهة الزوجة وحدها سقط بها المهر، وإن كانت من جهة الزوجين معا أو …». Read by `mahr_halved_by_separation`. -/
+structure Rajab156 where
+  sepByHusband : Option (Bool) := none
+  sepByStranger : Option (Bool) := none
+  sepByWife : Option (Bool) := none
+  husbandFasakhForHerHarm : Option (Bool) := none
+
+/-- Ibn Rajab 157 «إذا تغير حال المرأة التي في العدة بانتقالها من رق إلى حرية أو طرأ عليها سبب موجب لعدة أخرى من الزوج كوفاته فهل يلزمها الانتقال إلى عدة الوفاة أو إلى عدة حرة؟ إن كان زوجها متمكنا من تلافي نكاحها في العدة لزمها …». Read by `idda_transfer_on_change`. -/
+structure Rajab157 where
+  iddaStatusChanges : Option (Bool) := none
+  husbandCanRemedyInIdda : Option (Bool) := none
+  sickHusbandIbana : Option (Bool) := none
+
+/-- Ibn Rajab 158 «إذا تعارض معنا أصلان عمل بالأرجح منهما لاعتضاده بما يرجحه، فإن تساويا خرج في المسألة وجها غالبا. من صور ذلك: ما إذا وقع في الماء نجاسة وشك في بلوغه القلتين فهل يحكم بنجاسته أو طهارته على وجهين: أحدهما: يحكم …». Read by `two_usul_reinforced_governs`. -/
+structure Rajab158 where
+  firstAslReinforced : Option (Bool) := none
+  secondAslReinforced : Option (Bool) := none
+
 end Usul.Typing.Qaida

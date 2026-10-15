@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "candidate",
-  "provenance": "The 157 cases of fold 0 of the routing index's held-out split (corpus/routing/index.json; Ibn Rajab and Ibn al-Laḥḥām furūʿ) typed into Usul.Typing situations, LLM-assisted by four agents working blind: they saw each farʿ's committed text under an opaque id (record ids name the qāʿida) and a field catalogue generated from the Lean export, never the qāʿida, encoder or label. Quotes are verbatim, at most 160 characters. The 17 fold-0 cases of the RajabA13–A16 shards (qawāʿid 119–130), added at the 2026-10-14 merge, were typed by one agent that had seen their annotations, so not blind; likewise q128.f000, recovered and annotated at PR-30. The 22 fold-0 cases of the RajabA17–A20 shards (qawāʿid 132–146), added at the round-5 merge, were typed blind again, by one agent that saw only each farʿ's text under an opaque id and the generated field catalogue. Not human-reviewed.",
+  "provenance": "The 157 cases of fold 0 of the routing index's held-out split (corpus/routing/index.json; Ibn Rajab and Ibn al-Laḥḥām furūʿ) typed into Usul.Typing situations, LLM-assisted by four agents working blind: they saw each farʿ's committed text under an opaque id (record ids name the qāʿida) and a field catalogue generated from the Lean export, never the qāʿida, encoder or label. Quotes are verbatim, at most 160 characters. The 17 fold-0 cases of the RajabA13–A16 shards (qawāʿid 119–130), added at the 2026-10-14 merge, were typed by one agent that had seen their annotations, so not blind; likewise q128.f000, recovered and annotated at PR-30. The 22 fold-0 cases of the RajabA17–A20 shards (qawāʿid 132–146), added at the round-5 merge, were typed blind again, by one agent that saw only each farʿ's text under an opaque id and the generated field catalogue. The 18 fold-0 cases of the RajabA21–A25 shards (qawāʿid 147–158), added at the round-6 merge, were typed blind in the same way. Not human-reviewed.",
   "answers": [
     {
       "answer": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f001",
@@ -2743,6 +2743,301 @@
           },
           "evidence": {
             "rajiyya": "أن الرجعية"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f002",
+      "situations": [
+        {
+          "label": "lifetime gift to children",
+          "facts": {
+            "gift": true
+          },
+          "evidence": {
+            "gift": "عطية الأولاد في الحياة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f004",
+      "situations": [
+        {
+          "label": "wife gifts mahr at husband's request, then he divorces",
+          "facts": {
+            "gift": true,
+            "transfer_given_for_cause": true,
+            "sep_by_husband": true,
+            "woman_party": true
+          },
+          "evidence": {
+            "gift": "هبة المرأة زوجها صداقها",
+            "transfer_given_for_cause": "فإن سببها طلب استدامة النكاح",
+            "sep_by_husband": "فإن طلقها",
+            "woman_party": "هبة المرأة زوجها صداقها"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f006",
+      "situations": [
+        {
+          "label": "extra meat given, meat returned for defect",
+          "facts": {
+            "defect_return": true,
+            "arising_from_sabab": true
+          },
+          "evidence": {
+            "defect_return": "ثم رد اللحم بعيب",
+            "arising_from_sabab": "لأنها أخذت بسبب اللحم"
+          }
+        },
+        {
+          "label": "Ibn Aqil: extra given after contract became binding",
+          "facts": {
+            "defect_return": true,
+            "arising_from_sabab": true,
+            "later_binding": true
+          },
+          "evidence": {
+            "defect_return": "ثم رد اللحم بعيب",
+            "arising_from_sabab": "لأنها أخذت بسبب اللحم",
+            "later_binding": "بلحوق الزيادة بعد لزوم العقد"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f003",
+      "situations": [
+        {
+          "label": "mocking shahada, circumstances support his claim",
+          "facts": {
+            "hal_supports_claim": true
+          },
+          "evidence": {
+            "hal_supports_claim": "مع دلالة الحال على صدقه"
+          }
+        },
+        {
+          "label": "acknowledgment of property in the same state",
+          "facts": {
+            "hal_supports_claim": true,
+            "is_iqrar": true
+          },
+          "evidence": {
+            "hal_supports_claim": "مع دلالة الحال على صدقه",
+            "is_iqrar": "لو أقر بمال في هذه الحال"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f010",
+      "situations": [
+        {
+          "label": "no catalogue field stated",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f011",
+      "situations": [
+        {
+          "label": "no catalogue field stated",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152.f001",
+      "situations": [
+        {
+          "label": "no catalogue field stated",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152.f004",
+      "situations": [
+        {
+          "label": "son's wife by suckling",
+          "facts": {
+            "rada_counterpart": true
+          },
+          "evidence": {
+            "rada_counterpart": "في حليلة الابن من الرضاع"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f006",
+      "situations": [
+        {
+          "label": "father present",
+          "facts": {
+            "intermediate_child_present": true
+          },
+          "evidence": {
+            "intermediate_child_present": "وإن كان موجودا"
+          }
+        },
+        {
+          "label": "father missing",
+          "facts": {
+            "intermediate_child_present": false
+          },
+          "evidence": {
+            "intermediate_child_present": "إن كان الأب مفقودا"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f017",
+      "situations": [
+        {
+          "label": "no catalogue field stated",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f000",
+      "situations": [
+        {
+          "label": "marriage spoiled by outsider before consummation",
+          "facts": {
+            "intercourse_occurred": false,
+            "sep_by_stranger": true
+          },
+          "evidence": {
+            "intercourse_occurred": "قبل الدخول بها",
+            "sep_by_stranger": "كما إذا كانت الفرقة من الأجنبي وحده"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f006",
+      "situations": [
+        {
+          "label": "father divorces minor daughter by khul with her money",
+          "facts": {
+            "ward_wilaya": true
+          },
+          "evidence": {
+            "ward_wilaya": "مخالعة الأب ابنته الصغيرة بشيء من ماله"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f008",
+      "situations": [
+        {
+          "label": "wife's conversion",
+          "facts": {
+            "sep_by_wife": true
+          },
+          "evidence": {
+            "sep_by_wife": "إسلامها"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f002",
+      "situations": [
+        {
+          "label": "doubt whether the impurity had dried",
+          "facts": {
+            "asl_mustashab": true
+          },
+          "evidence": {
+            "asl_mustashab": "لأن الأصل بقاء الرطوبة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f005",
+      "situations": [
+        {
+          "label": "news of property cut off",
+          "facts": {
+            "absence_known": false
+          },
+          "evidence": {
+            "absence_known": "فإن كان منقطعا خبره"
+          }
+        },
+        {
+          "label": "news not cut off (deposit)",
+          "facts": {
+            "absence_known": true
+          },
+          "evidence": {
+            "absence_known": "وإن لم يكن خبر منقطعا كالمودع"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f006",
+      "situations": [
+        {
+          "label": "runaway slave, news cut off",
+          "facts": {
+            "absence_known": false
+          },
+          "evidence": {
+            "absence_known": "العبد الآبق المنقطع خبره"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f007",
+      "situations": [
+        {
+          "label": "freeing slave of unknown fate in expiation",
+          "facts": {
+            "absence_known": false,
+            "second_asl_reinforced": true
+          },
+          "evidence": {
+            "absence_known": "هلاك العبد من انقطاع خبره",
+            "second_asl_reinforced": "وقد عضده الظاهر الدال على هلاك العبد من انقطاع خبره"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f010",
+      "situations": [
+        {
+          "label": "lessee claims slave absconded (no catalogue field stated)",
+          "facts": {},
+          "evidence": {}
+        },
+        {
+          "label": "lessee claims slave fell ill",
+          "facts": {
+            "independent_proof": true
+          },
+          "evidence": {
+            "independent_proof": "لأن المرض يمكن إقامة البينة"
           }
         }
       ]

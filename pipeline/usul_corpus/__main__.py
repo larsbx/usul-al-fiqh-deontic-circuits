@@ -764,7 +764,8 @@ def cmd_fatawa_prolog(_: argparse.Namespace) -> int:
         return 1
     records = fatawa_prolog.merge(cases, facts)
     (ROOT / fatawa_prolog.CASES).write_text(fatawa_prolog.prolog_file(records), encoding="utf-8")
-    rep = fatawa_prolog.report(records, fatawa_prolog.run(ROOT))
+    rep = fatawa_prolog.report(records, fatawa_prolog.run(ROOT), fatawa_prolog.first_runs(ROOT, records),
+                               frozenset(fatawa_prolog.revised_rules(ROOT)), fatawa_prolog.sorts(CORPUS))
     _dump(CORPUS / "fatawa" / "prolog" / "report.json", rep)
     print(json.dumps({s: rep[s]["total"] for s in ("islamqa", "classical")}, ensure_ascii=False))
     return 0
@@ -788,6 +789,8 @@ def cmd_judgement(_: argparse.Namespace) -> int:
             questions = {r["id"]: f"{r.get('title') or ''} {r.get('question') or ''}" for r in map(json.loads, f)}
         with gzip.open(labels, "rt", encoding="utf-8") as f:
             rep["labels"] = judgement.label_flags(list(map(json.loads, f)), questions)
+        if (CORPUS / judgement.FLAG_SAMPLE).exists():
+            rep["labels"]["precision"] = judgement.flag_precision(_load(CORPUS / judgement.FLAG_SAMPLE), rep["labels"])
     _dump(CORPUS / "types" / "report.json", rep)
     print(json.dumps({k: rep[k] for k in ("encoders", "cases", "cases_typed_by_judgement")}, ensure_ascii=False))
     return 0

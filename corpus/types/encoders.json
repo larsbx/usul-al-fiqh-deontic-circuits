@@ -119,6 +119,12 @@
    "question": "wadi:sabab",
    "reason": "liableForOthersBenefit (Ibn Rajab 27 'وإن كان النفع يعود إلى غيره فعليه الضمان'): whether the destruction is a sabab of ḍamān."
   },
+  "bud_exit_charged": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q154 the buḍʿ's exit from the husband's ownership: budExitCharged - whether the act is a sabab of a mahr charged to the one who caused it, as burdened_thing_compensated.",
+   "alt": "effect: to whom the mahr is charged"
+  },
   "budh_capacity_is_wealth": {
    "sort": "takyif",
    "reason": "Q131: whether capacity to earn by the buḍʿ counts as ghinā — classification of the person as rich."
@@ -236,6 +242,10 @@
    "alt": "judgement wadi:mani: leaving until ripe as an impediment annulling the sale",
    "negated": true
   },
+  "dalalat_hal_carries_claim": {
+   "sort": "procedure",
+   "reason": "Q151 «دلالة الأحوال يختلف بها دلالة الأقوال في قبول دعوى ما يوافقها ورد ما يخالفها»: halCarriesClaim - whether a claim the circumstances support is accepted, a matter of claim and proof."
+  },
   "daman_without_qabd": {
    "sort": "judgement",
    "question": "wadi:sabab",
@@ -265,6 +275,11 @@
    "sort": "takyif",
    "reason": "Qaida 58: desisting at once «is not doing the forbidden» unless he foresaw it - whether the desisting counts as the forbidden act.",
    "alt": "judgement aspect:permitted (negated): whether he sins by it"
+  },
+  "determinate_holder_right": {
+   "sort": "takyif",
+   "reason": "Q149 the right owed to a determinate holder: determinateHolderRule - whether the right is classed as owed to a determinate holder, so that holder's ruling applies.",
+   "alt": "judgement wadi:shart: a determinate holder as a condition of the ruling"
   },
   "disposal_before_qabd": {
    "sort": "judgement",
@@ -377,6 +392,11 @@
    "question": "wadi:sabab",
    "reason": "Qaida 50 with the shuf'a farq: the solvent shafi' owns by the demand - ownership arising."
   },
+  "four_kinds_marriage_prohibition": {
+   "sort": "judgement",
+   "question": "wadi:mani",
+   "reason": "Q152 the four kinds of prohibition (nasab, ṣihr, jamʿ, riḍāʿ): marriageProhibited - whether a relation is a māniʿ of the marriage."
+  },
   "free_bestowal_of_needed_ayn": {
    "sort": "judgement",
    "question": "aspect:obligatory",
@@ -395,6 +415,10 @@
    "sort": "judgement",
    "question": "wadi:sabab",
    "reason": "ghululForfeits: 'whether the share is forfeited' (Ibn Rajab 140.f006 'حرمان سهمه'); ghulūl as a sabab of the right lapsing."
+  },
+  "grandchild_in_child_term": {
+   "sort": "dalala",
+   "reason": "Q153 the walad of the walad in the term walad: grandchildCountsAsChild - whether the word «الولد» includes the grandchild, in three kinds."
   },
   "growth_from_substance": {
    "sort": "takyif",
@@ -455,6 +479,10 @@
   "hukm_against_own_ijtihad": {
    "sort": "procedure",
    "reason": "rulingUndone: a judge's ruling is 'undone only when a clear text shows it wrong' (Ibn Rajab 68.f009 'ولم ينقض حكمه')."
+  },
+  "idda_transfer_on_change": {
+   "sort": "effect",
+   "reason": "Q157 a change in her state during the ʿidda: transfersToNewIdda - whether the ʿidda moves to the other kind, a consequence of the change."
   },
   "ihram_specification": {
    "sort": "judgement",
@@ -522,6 +550,15 @@
    "question": "wadi:validity",
    "reason": "Q107: grant to the non-existent «فالمشهور أنه لا يصح» / «فيصح في الوقف» — whether the grant holds.",
    "bool_as_validity": true
+  },
+  "mahr_fully_established": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q155 «يتقرر المهر كاملا»: mahrEstablished - whether intercourse, a khalwa with capacity, or death is a sabab fixing the whole mahr."
+  },
+  "mahr_halved_by_separation": {
+   "sort": "effect",
+   "reason": "Q156 a separation before consummation: mahrHalved - whether the named mahr is halved or dropped, by whose side the separation came."
   },
   "makeup_after_failure": {
    "sort": "effect",
@@ -886,6 +923,10 @@
    "sort": "effect",
    "reason": "Qaida 29 returns Lapse all/excess: whether the tolerance lapses in the excess alone or in the whole - an extent enum."
   },
+  "transfer_follows_cause": {
+   "sort": "takyif",
+   "reason": "Q150 what is given for a cause takes the cause's ruling: causeGovernsTransfer - whether the transfer is classed by its cause (unless an independent cause stands)."
+  },
   "trust_loss": {
    "sort": "judgement",
    "question": "wadi:sabab",
@@ -898,6 +939,10 @@
    "bool_as_validity": true,
    "negated": true,
    "alt": "wadi:mani (transgression bars the trust)"
+  },
+  "two_usul_reinforced_governs": {
+   "sort": "epistemic",
+   "reason": "Q158 «إذا تعارض معنا أصلان عمل بالأرجح منهما»: firstAslGoverns - which of two conflicting presumptions establishes the fact, the reinforced one governing."
   },
   "umum_lafz": {
    "sort": "dalala",
@@ -981,6 +1026,10 @@
    "sort": "judgement",
    "question": "wadi:sabab",
    "reason": "Q74: who is entitled to a wage for unstipulated work — a right (iwaḍ) arising from the work."
+  },
+  "woman_half_of_man": {
+   "sort": "effect",
+   "reason": "Q147 «المرأة على النصف من الرجل في مسائل»: womanHalf - how much the woman takes or counts on the listed point (half), a measure of the consequence."
   },
   "wording_in_other_tongue": {
    "sort": "judgement",

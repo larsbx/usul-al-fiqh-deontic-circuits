@@ -186,6 +186,24 @@ rule(unknown_owner, bank, C, V) :-
     bank(C, V).
 
 % -------------------------------------------------------------------------
+% Revisions: rules added or changed after the first run, against the same texts
+% (IslamQA tranche 1; itlaf_bi_haqq against the classical held-out cases). An
+% agreement through one of them is a fit, not evidence that the rules generalise.
+% -------------------------------------------------------------------------
+
+rule_revision(unattributed_death, added).
+rule_revision(quwwa_qahira, added).
+rule_revision(mubashir_first, added).
+rule_revision(bayyina_in_qada, added).
+rule_revision(perishable_find, added).
+rule_revision(family_recipient, added).
+rule_revision(itlaf_bi_haqq, added).
+rule_revision(rikaz, changed).
+rule_revision(trivial_find, changed).
+rule_revision(dallat_al_ibil, changed).
+rule_revision(dallat_al_ghanam, changed).
+
+% -------------------------------------------------------------------------
 % Sources
 % -------------------------------------------------------------------------
 

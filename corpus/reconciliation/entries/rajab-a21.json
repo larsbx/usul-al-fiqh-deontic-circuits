@@ -1,0 +1,275 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f002",
+      "grades": [
+        "jazm",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Gifts to children divided as inheritance is: al-Inṣāf labels it «هذا المذهب» with Aḥmad's naṣṣ in many reports, and al-Muntahā and Kashshāf state it decisively; against it Ibn ʿAqīl and the riwāya of equal shares. Tarjīḥ for the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p136",
+          "excerpt_ar": "قوله (والمشروع في عطية الأولاد: القسمة بينهم على قدر ميراثهم) هذا المذهب نص عليه في رواية أبي داود",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "«... وعليه جماهير الأصحاب»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p136",
+          "excerpt_ar": "وعنه: المشروع أن يكون الذكر كالأنثى كما في النفقة. اختاره ابن عقيل في الفنون، والحارثي.",
+          "position": 1,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The riwāya of equal shares, which Ibn ʿAqīl chose."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p310",
+          "excerpt_ar": "والتعديل الواجب أن يعطيهم (بقدر إرثهم منه) اقتداء بقسمة الله تعالى وقياسا لحالة الحياة على حال الموت",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Sharḥ of al-Iqnāʿ, decisive."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p405",
+          "excerpt_ar": "ويجب تعديل بين من يرث بقرابة، من ولد وغيره، في هبة غير تافه، بكونها بقدر إرثهم، إلا في نفقة، فتجب الكفاية.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The matn; the exception (maintenance) is outside the gift."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f003",
+      "grades": [
+        "ashab",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The most of menses is fifteen days: al-Inṣāf labels it «هذا المذهب. وعليه جمهور الأصحاب», and al-Iqnāʿ, al-Muntahā and Kashshāf state it decisively; the seventeen-day riwāya stands against it. Tarjīḥ for the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p358",
+          "excerpt_ar": "قوله (وأكثره خمسة عشر يوما) . هذا المذهب. وعليه جمهور الأصحاب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "He reports «وعنه سبعة عشر يوما», the riwāya listed as the other position."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p065",
+          "excerpt_ar": "وأقل الحيض يوم وليلة فلو انقطع لأقل منه فليس بحيض بل دم فساد وأكثره خمسة عشر يوما وغالبه ست أو سبع",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v01:p122",
+          "excerpt_ar": "وأقله يوم وليلة وأكثره خمسة عشر يوما وغالبه ست أو سبع",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p203",
+          "excerpt_ar": "(وأكثره) أي: الحيض (خمسة عشر يوما) بلياليهن لقول علي ما زاد على الخمسة عشر استحاضة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Sharḥ of al-Iqnāʿ."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q149.f001",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "One with no heir may bequeath all his property: al-Inṣāf labels it «هذا المذهب. وعليه جماهير الأصحاب», and al-Iqnāʿ and Kashshāf state it decisively; the third-only riwāya (Ibn Manṣūr) stands against it. Tarjīḥ for the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p192",
+          "excerpt_ar": "قوله (فأما من لا وارث له: فتجوز وصيته بجميع ماله) . هذا المذهب. وعليه جماهير الأصحاب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "He reports «وعنه: لا تجوز إلا بالثلث. نص عليه في رواية ابن منصور» and Ibn Rajab's two bases."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p048",
+          "excerpt_ar": "ومن لا وارث له بفرض أو عصبة أو رحم تجوز وصيته بكل ماله فلو مات وترك زوجا أو زوجة لا غير",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p339",
+          "excerpt_ar": "(ومن لا وارث له بفرض أو عصبة أو رحم تجوز وصيته بكل ماله) روي عن ابن مسعود لأن منع مجاوزة الثلث ثبت لحق الورثة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The sharḥ gives the reason the qāʿida names: the third protects the heirs."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q149.f003",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The deferred debt of one with no heir falls due: al-Qāḍī, Ibn ʿAqīl and al-Mughnī hold it, and al-Iqnāʿ and Kashshāf state it decisively; al-Inṣāf reports it without a label. Against it only al-Qāḍī's iḥtimāl. Tarjīḥ for the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p219",
+          "excerpt_ar": "فتختص أرباب الديون الحالة بالمال فإن تعذر التوثق لعدم وارث أو غيره حل فيأخذه كله",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p438",
+          "excerpt_ar": "(فإن تعذر التوثق لعدم وارث) بأن مات عن غير وارث حل ولو ضمنه الإمام",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Sharḥ of al-Iqnāʿ."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f002",
+      "grades": [
+        "ashab",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "A gift of the unbelievers to the army's commander in dār al-ḥarb is ghanīma, not his: al-Inṣāf labels it «على الصحيح من المذهب», and al-Iqnāʿ and Kashshāf state it decisively; the riwāya that it is his stands against it. Tarjīḥ for the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p188",
+          "excerpt_ar": "إما أن يهدى في أرض الحرب أو لا. فإن أهدي في دار الحرب: فهو غنيمة. على الصحيح من المذهب. كما جزم به المصنف.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "He then reports «وعنه هو لمن أهدي له. وعنه هو فيء»; fayʾ is also not his."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p031",
+          "excerpt_ar": "وما أخذه من الفدية أو أهداه الكفار لأمير الجيش أو لبعض قواده أو بعض الغانمين في دار الحرب فغنيمة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p093",
+          "excerpt_ar": "(أو أهداه الكفار لأمير الجيش أو لبعض قواده) جمع قائد، وهو نائبه (أو) أهداه الكفار ل (بعض الغانمين في دار الحرب ف) هو (غنيمة) للجيش؛ لأن ذلك فعل خوفا من الجيش",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The sharḥ gives the cause: the gift is made for fear of the army."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152.f004",
+      "grades": [
+        [
+          "zahir",
+          "ashab"
+        ],
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The wife of a milk son is prohibited: al-Inṣāf counts her among «حلائل أبنائه ... من نسب أو رضاع», and al-Iqnāʿ and Kashshāf state it decisively, with Aḥmad's answer (Ibn Badīnā); against it Shaykh Taqī al-Dīn's choice. Tarjīḥ for the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p115",
+          "excerpt_ar": "ودخل في قوله (وأبنائه) يعني وحلائل أبنائه: كل من تزوجها أحد من أولاده، أو أولاد أولاده وإن نزلوا، سواء كانوا من أولاد البنين أو البنات، من نسب أو رضاع.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Stated decisively in the tanbīhāt; he also cites Ibn Rajab's qāʿida and Shaykh Taqī al-Dīn's choice."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p181",
+          "excerpt_ar": "وحلائل أبنائه: وهن كل من تزوجها أحد من بنيه أو بني أولاده وإن نزلوا من أولاد البنين أو البنات من نسب أو رضاع وتباح بناتها",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p071",
+          "excerpt_ar": "(وحلائل أبنائه وهن كل من تزوجها أحد من بنيه أو) من بني أولاده وإن نزلوا من أولاد البنين أو البنات من نسب أو رضاع",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Sharḥ of al-Iqnāʿ, citing «يحرم من الرضاع ما يحرم من النسب»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155.f001",
+      "grades": [
+        "jazm",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The khalwa establishes the whole mahr: al-Inṣāf labels it «على الصحيح من المذهب. عليه الأصحاب», and al-Muntahā, al-Iqnāʿ and Kashshāf state it decisively; against it only the riwāya some reported from Ibn Bukhtān's report, which the majority denied. Tarjīḥ for the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p283",
+          "excerpt_ar": "ومنها: الخلوة. على الصحيح من المذهب. عليه الأصحاب. وهو من المفردات.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Among the things that establish the whole mahr; he cites Ibn Rajab on the denied riwāya."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p152",
+          "excerpt_ar": "ووطؤها حية في فرج ولو دبرا وخلوة بها عن مميز، وبالغ مطلقا مع علمه ولم تمنعه إن كان يطأ مثله ويوطأ مثلها",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The matn, under «ويقرره كاملا»; its conditions (she did not refuse, he is of an age for intercourse) are the case's facts."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p220",
+          "excerpt_ar": "وطلاق في مرض موت قبل دخوله وخلوة بها عن بالغ ومميز ولو كافرا وأعمى نصا ولو كان الخالي أعمى أو نائما مع علمه أن لم تمنعه: إن كان ممن يطأ مثلها وبمن يوطأ مثلها",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn, under «ويقرر الصداق المسمى كاملا»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p151",
+          "excerpt_ar": "وإنما تكون الخلوة مقررة (إن كان) الزوج (ممن يطأ مثله) وهو ابن عشر وقد خلا.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Sharḥ of al-Iqnāʿ."
+        }
+      ]
+    }
+  ]
+}
