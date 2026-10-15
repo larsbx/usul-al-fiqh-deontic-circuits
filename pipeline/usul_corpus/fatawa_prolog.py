@@ -29,7 +29,7 @@ import subprocess
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from . import fatawa_takhrij, takhrij
+from . import fatawa_takhrij, judgement, takhrij
 
 RULES = "examples/v40_fatwa_rules.pl"
 CASES = "examples/v40_fatwa_cases.pl"
@@ -69,6 +69,7 @@ def merge(cases: list[dict], facts: dict[str, dict]) -> list[dict]:
         domain = takhrij.ENCODERS[c["encoder"]]["facts"]
         complete = set(enc) == set(domain) and all(enc[k] in dom for k, dom in domain.items())
         out.append(dict(far=c["far"], encoder=c["encoder"], encoder_facts=enc, facts=ext, ruling=x.get("ruling"),
+                        post_hoc=x.get("post_hoc", []),
                         positions=[p["ruling"] for p in x.get("positions", [])],
                         kernel=takhrij.ENCODERS[c["encoder"]]["py"](enc) if complete else None,
                         gap=x.get("oracle_gap")))
@@ -136,23 +137,52 @@ def _same(a, b) -> bool:
     return {atom(a), atom(b)} <= {"hold", "handToAuthority"} or atom(a) == atom(b)
 
 
-def report(records: list[dict], answers: dict[str, dict]) -> dict:
-    """Agreement with decided rulings per encoder, for the oracle and the bank alone; disputed cases apart."""
+def sorts(corpus: Path) -> dict[str, str]:
+    """Encoder → what its output answers (corpus/types/encoders.json), for the per-sort split."""
+    types = judgement.load(corpus)
+    return {e: judgement.sort_of(types, e) for e in types}
+
+
+_REVISION = re.compile(r"^rule_revision\((\w+), (added|changed)\)\.$", re.M)
+
+
+def revised_rules(root: Path) -> set[str]:
+    """Rules the rules file declares added or changed after the first run (`rule_revision/2`)."""
+    return {r for r, _ in _REVISION.findall((root / RULES).read_text(encoding="utf-8"))}
+
+
+def report(records: list[dict], answers: dict[str, dict], revised: frozenset[str] = frozenset(),
+           sorts: dict[str, str] | None = None) -> dict:
+    """Agreement with decided rulings, for the oracle and the bank alone; disputed cases apart.
+
+    The IslamQA figures are a fit (the rules were written and revised against those texts); the classical
+    ones are held out. ``first_pass`` counts the agreements that need no revised rule and no post-hoc fact.
+    ``per_sort`` splits by what the encoder's output answers (corpus/types/encoders.json), since agreement
+    on a sabab question and on an effect are not the same measure."""
+    sorts = sorts or {}
     per: dict[str, dict[str, Counter]] = defaultdict(lambda: defaultdict(Counter))
+    by_sort: dict[str, dict[str, Counter]] = defaultdict(lambda: defaultdict(Counter))
     rules: dict[str, Counter] = defaultdict(Counter)
     for r in records:
         a, s = answers[r["far"]], source(r["far"])
-        for k in (per[s][r["encoder"]], per[s]["total"]):
+        for k in (per[s][r["encoder"]], per[s]["total"], by_sort[s][sorts.get(r["encoder"], "untyped")]):
             if r["positions"]:
                 k["disputed"] += 1
                 k["oracle_within_positions"] += any(_same(a["ruling"], p) for p in r["positions"])
                 continue
+            agree = _same(a["ruling"], r["ruling"])
             k["decided"] += 1
-            k["oracle"] += _same(a["ruling"], r["ruling"])
+            k["oracle"] += agree
+            k["first_pass"] += agree and a["rule"] not in revised and not r["post_hoc"]
             k["bank_answers"] += r["kernel"] is not None
             k["bank"] += r["kernel"] is not None and _same(r["kernel"], r["ruling"])
         rules[s][a["rule"]] += 1
-    return {s: {"total": dict(p.pop("total")), "per_encoder": {e: dict(k) for e, k in sorted(p.items())},
+    fit = {"islamqa": "in_sample", "classical": "held_out"}
+    return {s: {"fit": fit[s], "total": dict(p.pop("total")),
+                "per_encoder": {e: dict(k) for e, k in sorted(p.items())},
+                "per_sort": {t: dict(k) for t, k in sorted(by_sort[s].items())},
                 "rules_fired": dict(rules[s].most_common())} for s, p in sorted(per.items())} | {
+            "revised_rules": sorted(revised),
+            "post_hoc_facts": {r["far"]: r["post_hoc"] for r in records if r["post_hoc"]},
             "gaps": {r["far"]: r["gap"] for r in records if r["gap"]},
             "tarjih_worklist": sorted(r["far"] for r in records if r["positions"])}

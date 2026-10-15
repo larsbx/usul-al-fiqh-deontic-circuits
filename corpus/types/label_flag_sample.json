@@ -1,0 +1,543 @@
+{
+ "status": "candidate",
+ "judge": "model (Claude), reading each title and question; not human-reviewed",
+ "question": "Does the asker's question ask what the cue claims (validity; liability as sabab; ownership or the divorce taking effect; a report's authenticity) rather than a taklīfī status?",
+ "development": {
+  "note": "drawn under the broad and intermediate cues (seed 2026); used to tighten the ḍamān, milk and riwāya cues, so not an estimate",
+  "items": [
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.13929",
+    "match": "صحة نكاحي",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.221219",
+    "match": "صيامي صحيح",
+    "asks_that": false,
+    "why_not": "asks which adhān timing is more accurate (a fact), not whether the fast is valid"
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.317610",
+    "match": "تصح الصلاة",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.327598",
+    "match": "العقد صحيح",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.433260",
+    "match": "يصح الخلع",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.134235",
+    "match": "صلاتي صحيحة",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.183356",
+    "match": "زواجهما فاسد",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.398854",
+    "match": "يبطل الغسل",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.411465",
+    "match": "صلاتهم صحيحة",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.366009",
+    "match": "صحة صيام",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.279406",
+    "match": "يبطل الصلاة",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.67728",
+    "match": "صحة حجتي",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.381053",
+    "match": "تصح الصلاة",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.360542",
+    "match": "يصح الانتقال من الصيام",
+    "asks_that": false,
+    "why_not": "asks when switching to feeding is allowed: may-he, not validity"
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.99506",
+    "match": "الوصية ؟ أهي باطلة",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.414116",
+    "match": "يضمن",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.70318",
+    "match": "دية",
+    "asks_that": false,
+    "why_not": "asks whether they may take diya from the insurer: taklīfī"
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.336051",
+    "match": "ضامنة",
+    "asks_that": false,
+    "why_not": "ضامنة names a guarantor company; asks whether the loan contract is permitted"
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.266167",
+    "match": "ضمان ما",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.105446",
+    "match": "دية",
+    "asks_that": false,
+    "why_not": "asks whether she may spend from the diya: taklīfī"
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.140833",
+    "match": "يضمنه",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.148829",
+    "match": "يضمن",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.280788",
+    "match": "الدية",
+    "asks_that": false,
+    "why_not": "asks whether the killer may pay the diya himself: taklīfī"
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.146803",
+    "match": "يضمن",
+    "asks_that": false,
+    "why_not": "يضمن = ensures"
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.349351",
+    "match": "يضمن",
+    "asks_that": false,
+    "why_not": "يضمن = ensures"
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.101907",
+    "match": "يقع الطلاق",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.454877",
+    "match": "يملكه",
+    "asks_that": false,
+    "why_not": "يملكها relative clause; asks about fixing a share price"
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.643668",
+    "match": "يملكه",
+    "asks_that": false,
+    "why_not": "يملكه relative clause; asks about zakāt valuation"
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.316176",
+    "match": "انعقاد",
+    "asks_that": false,
+    "why_not": "انعقاد in passing; asks about deferring delivery"
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.223741",
+    "match": "يملكه",
+    "asks_that": false,
+    "why_not": "يملكه relative clause; asks whether she may take from her father"
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.315675",
+    "match": "تملكه",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.177833",
+    "match": "يملكه",
+    "asks_that": false,
+    "why_not": "يملكه relative clause; an inheritance division"
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.148733",
+    "match": "هل يملك",
+    "asks_that": false,
+    "why_not": "ʿaqīda question (power over the cosmos), not ownership"
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.201951",
+    "match": "انعقاد",
+    "asks_that": false,
+    "why_not": "انعقاد الخطبة; asks the ruling on the conduct"
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.155013",
+    "match": "يقع الطلاق",
+    "asks_that": true
+   },
+   {
+    "cue": "riwaya",
+    "id": "islamqa.195314",
+    "match": "ما صحة",
+    "asks_that": true
+   },
+   {
+    "cue": "riwaya",
+    "id": "islamqa.600523",
+    "match": "ما صحة",
+    "asks_that": true
+   },
+   {
+    "cue": "riwaya",
+    "id": "islamqa.199904",
+    "match": "ما صحة",
+    "asks_that": true
+   },
+   {
+    "cue": "riwaya",
+    "id": "islamqa.363305",
+    "match": "ما صحة",
+    "asks_that": true
+   },
+   {
+    "cue": "riwaya",
+    "id": "islamqa.204010",
+    "match": "ما صحة",
+    "asks_that": false,
+    "why_not": "ما صحة in passing; asks whether posting Qurʾān pages is an innovation"
+   }
+  ]
+ },
+ "evaluation": {
+  "note": "drawn under the committed cues (seed 1447), excluding development items; the precision reported",
+  "items": [
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.1312",
+    "match": "يبطل الصيام",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.70270",
+    "match": "تصح الصلاة",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.288825",
+    "match": "يصح عقد",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.46561",
+    "match": "الطلاق الأول صحيحة",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.127876",
+    "match": "صلاته صحيحة",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.128712",
+    "match": "عقدها باطل",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.365511",
+    "match": "يفسد الصوم",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.426607",
+    "match": "يبطل الوضوء",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.260299",
+    "match": "عمرتها صحيحة",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.302878",
+    "match": "صلاتي صحيحة",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.286931",
+    "match": "تصح هذه الصلاة",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.199587",
+    "match": "يصح قراءتها في صلاة",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.112155",
+    "match": "صحة هذا النكاح",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.38205",
+    "match": "يفسد الصيام",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:validity",
+    "id": "islamqa.146562",
+    "match": "يجزئ غسل",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.370847",
+    "match": "فهل يضمن",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.495638",
+    "match": "عليه دية",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.329014",
+    "match": "هل يضمن",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.294567",
+    "match": "هل يضمن",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.216798",
+    "match": "تجب الدية",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.158063",
+    "match": "ضمان ما",
+    "asks_that": false,
+    "why_not": "asks whether a guarantee-of-capital condition is permitted: taklīfī"
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.111773",
+    "match": "تجب الدية",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.350121",
+    "match": "هل يضمن",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.82026",
+    "match": "تلزمه الدية",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/daman",
+    "id": "islamqa.271272",
+    "match": "يتحمل خسارة",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.182868",
+    "match": "وقع طلاق",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.210358",
+    "match": "وقع طلاق",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.201090",
+    "match": "يقع الطلاق",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.377970",
+    "match": "وقع الطلاق",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.117677",
+    "match": "وقع الطلاق",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.171051",
+    "match": "هل طلقت",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.105438",
+    "match": "وقع طلاق",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.178146",
+    "match": "وقع الطلاق",
+    "asks_that": false,
+    "why_not": "asks about property division under UK law, not whether the divorce occurred"
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.176692",
+    "match": "يقع الطلاق",
+    "asks_that": true
+   },
+   {
+    "cue": "wadi:sabab/milk",
+    "id": "islamqa.318644",
+    "match": "يقع الطلاق",
+    "asks_that": true
+   },
+   {
+    "cue": "riwaya",
+    "id": "islamqa.211384",
+    "match": "حديث ضعيف",
+    "asks_that": true
+   },
+   {
+    "cue": "riwaya",
+    "id": "islamqa.202017",
+    "match": "صحة حديث",
+    "asks_that": true
+   },
+   {
+    "cue": "riwaya",
+    "id": "islamqa.209774",
+    "match": "صحة هذا الحديث",
+    "asks_that": true
+   },
+   {
+    "cue": "riwaya",
+    "id": "islamqa.273606",
+    "match": "صحة حديث",
+    "asks_that": true
+   },
+   {
+    "cue": "riwaya",
+    "id": "islamqa.242247",
+    "match": "صحة هذا الحديث",
+    "asks_that": true
+   },
+   {
+    "cue": "riwaya",
+    "id": "islamqa.157541",
+    "match": "صحة هذا الحديث",
+    "asks_that": true
+   },
+   {
+    "cue": "riwaya",
+    "id": "islamqa.238939",
+    "match": "صحة حديث",
+    "asks_that": true
+   },
+   {
+    "cue": "riwaya",
+    "id": "islamqa.106427",
+    "match": "صحة هذا الحديث",
+    "asks_that": true
+   },
+   {
+    "cue": "riwaya",
+    "id": "islamqa.70265",
+    "match": "درجة حديث",
+    "asks_that": true
+   },
+   {
+    "cue": "riwaya",
+    "id": "islamqa.644017",
+    "match": "صحة حديث",
+    "asks_that": true
+   }
+  ]
+ }
+}

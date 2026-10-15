@@ -64,6 +64,25 @@ def test_vectors_bank_agreement_and_recorded_gaps():
     assert f"fixture_premise(agrees({c}), query(oracle({c}, _, _)))." in pl
 
 
+def test_first_pass_excludes_revised_rules_and_post_hoc_facts():
+    recs = [{"far": f"islamqa.{i}.f001", "encoder": "trust_loss", "positions": [], "ruling": False, "kernel": False,
+             "post_hoc": ph, "gap": None} for i, ph in ((1, []), (2, ["unavoidable"]), (3, []))]
+    answers = {"islamqa.1.f001": {"ruling": "false", "rule": "hand_of_trust"},
+               "islamqa.2.f001": {"ruling": "false", "rule": "hand_of_trust"},
+               "islamqa.3.f001": {"ruling": "false", "rule": "quwwa_qahira"}}
+    rep = fatawa_prolog.report(recs, answers, frozenset({"quwwa_qahira"}), {"trust_loss": "judgement/wadi:sabab"})
+    assert rep["islamqa"]["fit"] == "in_sample"
+    assert rep["islamqa"]["total"] == {"decided": 3, "oracle": 3, "first_pass": 1, "bank_answers": 3, "bank": 3}
+    assert rep["islamqa"]["per_sort"]["judgement/wadi:sabab"]["first_pass"] == 1
+    assert rep["post_hoc_facts"] == {"islamqa.2.f001": ["unavoidable"]}
+
+
+def test_revised_rules_are_declared_rules():
+    import re
+    declared = set(re.findall(r"^rule\(\w+, (\w+), C,", (ROOT / fatawa_prolog.RULES).read_text(), re.M))
+    assert fatawa_prolog.revised_rules(ROOT) <= declared and "itlaf_bi_haqq" in fatawa_prolog.revised_rules(ROOT)
+
+
 def test_committed_cases_are_generated():
     facts = fatawa_prolog.load_facts(ROOT / "corpus")
     cases = fatawa_prolog.load_cases(ROOT / "corpus", facts)
@@ -72,5 +91,6 @@ def test_committed_cases_are_generated():
     assert (ROOT / fatawa_prolog.CASES).read_text(encoding="utf-8") == fatawa_prolog.prolog_file(records)
     if shutil.which("swipl") is None:
         pytest.skip("swipl not installed")
-    rep = fatawa_prolog.report(records, fatawa_prolog.run(ROOT))
+    rep = fatawa_prolog.report(records, fatawa_prolog.run(ROOT), frozenset(fatawa_prolog.revised_rules(ROOT)),
+                               fatawa_prolog.sorts(ROOT / "corpus"))
     assert json.loads((ROOT / "corpus/fatawa/prolog/report.json").read_text()) == rep
