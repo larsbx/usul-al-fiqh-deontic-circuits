@@ -78,6 +78,25 @@ def test_first_run_scores_the_earlier_rules_answers_not_todays_winners():
     assert rep["post_hoc_facts"] == {"islamqa.2.f001": ["unavoidable"]}
 
 
+def test_every_post_hoc_fact_has_verbatim_evidence_in_its_answer():
+    import gzip
+    from usul_corpus import fatawa_takhrij
+    facts = fatawa_prolog.load_facts(ROOT / "corpus")
+    post_hoc = {f: x for f, x in facts.items() if x.get("post_hoc")}
+    assert post_hoc and all(set(x["post_hoc"]) == set(x.get("post_hoc_evidence", {})) for x in post_hoc.values())
+    path = ROOT / "data/islamqa/answers/islamqa-ar.jsonl.gz"
+    if not path.exists():
+        pytest.skip("IslamQA answers not fetched")
+    need = {f.rsplit(".", 1)[0] for f in post_hoc}
+    with gzip.open(path, "rt", encoding="utf-8") as fh:
+        answers = {r["id"]: r for r in map(json.loads, fh) if r["id"] in need}
+    for f, x in post_hoc.items():
+        a = answers[f.rsplit(".", 1)[0]]
+        text = fatawa_takhrij._flat(" ".join(a.get(k) or "" for k in ("title", "question", "summary", "answer")))
+        for fact, excerpt in x["post_hoc_evidence"].items():
+            assert fatawa_takhrij._flat(excerpt) in text, (f, fact)
+
+
 def test_revised_rules_are_declared_rules():
     import re
     declared = set(re.findall(r"^rule\(\w+, (\w+), C,", (ROOT / fatawa_prolog.RULES).read_text(), re.M))

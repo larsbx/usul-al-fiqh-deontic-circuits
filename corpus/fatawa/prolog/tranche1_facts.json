@@ -1,7 +1,7 @@
 {
  "suite": "islamqa_tranche1",
  "status": "candidate",
- "provenance": "Extended facts read from each answer's text for the Prolog oracle (examples/v40_fatwa_rules.pl); the ruling is the text's own for the case. Facts beyond the encoder's are the ones the tranche's gaps need. null = the text does not settle it, or the ruling does not depend on it. `post_hoc` lists facts added after the first oracle run, to rescue a case that failed: read from the annotator's note, not verified against the answer text.",
+ "provenance": "Extended facts read from each answer's text for the Prolog oracle (examples/v40_fatwa_rules.pl); the ruling is the text's own for the case. Facts beyond the encoder's are the ones the tranche's gaps need. null = the text does not settle it, or the ruling does not depend on it. `post_hoc` lists facts added after the first oracle run, to rescue a case that failed; `post_hoc_evidence` gives, for each, the answer's own words that state it (verbatim, checked by test).",
  "cases": [
   {
    "far": "islamqa.23424.f001",
@@ -355,7 +355,10 @@
    "note": "Family 'erred' (اخطأتم) in bringing a folk healer, but owe no diya because the healer was the direct actor.",
    "post_hoc": [
     "other_direct_actor"
-   ]
+   ],
+   "post_hoc_evidence": {
+    "other_direct_actor": "لأن المباشر لهذا العمل والذي قد يكون تسبب في الوفاة هو المعالج الشعبي وليس أنتم"
+   }
   },
   {
    "far": "islamqa.223512.f002",
@@ -580,7 +583,10 @@
    "note": "Friend who asked him to drive and rode along (even if he misdirected him): not liable; liability on the direct actor.",
    "post_hoc": [
     "other_direct_actor"
-   ]
+   ],
+   "post_hoc_evidence": {
+    "other_direct_actor": "فالجناية تتربت آثارها على الجاني المباشر لها"
+   }
   },
   {
    "far": "islamqa.345284.f001",
@@ -597,7 +603,10 @@
    "note": "Driver hit an animal without negligence and could not avoid it: not liable.",
    "post_hoc": [
     "unavoidable"
-   ]
+   ],
+   "post_hoc_evidence": {
+    "unavoidable": "فإذا لم يكن منك تفريط ، ولم يمكنك تفادي الحادث، فلا شيء عليك"
+   }
   },
   {
    "far": "islamqa.345284.f002",
@@ -653,7 +662,10 @@
    "note": "Death a week later: not liable for the life unless doctors attribute it to the fracture; the text leaves the attribution open (liable if attributed).",
    "post_hoc": [
     "later_death"
-   ]
+   ],
+   "post_hoc_evidence": {
+    "later_death": "وانكسر فخذها ثم ماتت بعد أسبوع"
+   }
   },
   {
    "far": "islamqa.363963.f001",
@@ -696,7 +708,10 @@
    "note": "Even if negligent, not liable for the death: the text attributes it to COVID hypoxia, not the fracture.",
    "post_hoc": [
     "later_death"
-   ]
+   ],
+   "post_hoc_evidence": {
+    "later_death": "وقت الحادث الواحدة ظهراً، والوفاة الخامسة فجراً"
+   }
   },
   {
    "far": "islamqa.4046.f001",
@@ -808,7 +823,10 @@
    "note": "Large self-keeping items (huge pots, timber, iron): forbidden to take like stray camels; not an animal, so the schema has no field for this.",
    "post_hoc": [
     "self_keeping"
-   ]
+   ],
+   "post_hoc_evidence": {
+    "self_keeping": "ويلحق بذلك الأدوات الكبيرة ، كالقدر الضخمة والخشب والحديد وما يحتفظ بنفسه"
+   }
   },
   {
    "far": "islamqa.5049.f004",
@@ -836,7 +854,10 @@
    "note": "Perishable find (melon, fruit): eat it owing its value or sell it and keep the price until the owner comes; perishability has no field here.",
    "post_hoc": [
     "perishable"
-   ]
+   ],
+   "post_hoc_evidence": {
+    "perishable": "النوع الثاني : ما يخشى فساده ؛ كبطيخ وفاكهة"
+   }
   },
   {
    "far": "islamqa.5049.f006",
@@ -961,7 +982,10 @@
    "note": "Treasure buried by Muslims is luqata: announce a full year, then the finder owns it (returning it if the owner appears).",
    "post_hoc": [
     "muslim_buried"
-   ]
+   ],
+   "post_hoc_evidence": {
+    "muslim_buried": "وأما إذا كان هذا الكنز من دفين المسلمين ، فهو لقطة"
+   }
   },
   {
    "far": "islamqa.131070.f003",
@@ -1001,7 +1025,10 @@
    "note": "Treasure buried by Muslims is luqata: announce a full year, then the finder owns it (returning it if the owner appears).",
    "post_hoc": [
     "muslim_buried"
-   ]
+   ],
+   "post_hoc_evidence": {
+    "muslim_buried": "وأما إذا كان هذا الكنز من دفين المسلمين ، فهو لقطة"
+   }
   },
   {
    "far": "islamqa.146191.f003",
