@@ -1,0 +1,34 @@
+{
+ "suite": "co_rajab_q95_q127",
+ "status": "candidate",
+ "provenance": "Co-annotations: furūʿ whose own words also settle a second encoder's facts, deriving the same stated ruling. Each farʿ keeps its one home annotation (invariant 5); each basis is quoted verbatim from the farʿ record. Candidate, awaiting human review.",
+ "cases": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f003",
+   "encoder": "error_actor_liable",
+   "class": "derivable",
+   "facts": {
+    "external_cause": true,
+    "basis_void": false,
+    "ruling_overturned": false,
+    "as_owner": false,
+    "negligent": false
+   },
+   "expected": false,
+   "basis": "ثم أقر الشهود أنهم تعمدوا الكذب فالضمان والقود عليهم دون الحاكم",
+   "note": "Q95's first branch in Q127's farʿ: the judge acted on an apparent cause from others who then confessed their deliberate lie, Q95's «فإن كان مستندا إلى سبب ظاهر من غيره ثم تبين خطأ المتسبب أو أقر بتعمده للجناية ضمن المتسبب», so the actor is not liable. Q95 itself treats the judge's stoning of the majbūb under the same notion («ولعل تضمينه ههنا لتفريطه»). The facts not reached by that branch are false as the leading case states none of them."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f001",
+   "encoder": "mubashara_tasabbub",
+   "class": "derivable",
+   "facts": {
+    "arising_from_sabab": true,
+    "udwan_in_mubashara": false
+   },
+   "expected": "sabab",
+   "basis": "ثم رجع الشهود وصرحوا بالخطأ أو  التعمد بشهادة الزور فإن الضمان يختص بهم لاعترافهم",
+   "note": "Q127's second division in Q95's farʿ: the judgment and the claimant's taking are built on the testimony, with no transgression in them («ولا يرجع على المحكوم له بشيء»), so the cause alone bears it, as Q127.f003 rules for the witnesses who confess."
+  }
+ ]
+}

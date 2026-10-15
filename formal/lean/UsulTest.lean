@@ -5,6 +5,7 @@ import UsulTest.SignatureMap
 import UsulTest.Schemata
 import UsulTest.TakhrijMirror
 import UsulTest.Takhrij
+import UsulTest.TakhrijCo
 import UsulTest.M8Tranche3
 import UsulTest.CommandSchemata
 import UsulTest.TanaqudTable

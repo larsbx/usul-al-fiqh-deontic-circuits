@@ -56,7 +56,9 @@ def test_annotated_cases_cover_their_qawaid_exactly_once_and_stay_generated():
     tests = ROOT / "formal/lean/UsulTest"
     assert (tests / "Takhrij.lean").read_text() == takhrij.lean_file(cases)
     assert (tests / "TakhrijMirror.lean").read_text() == takhrij.mirror_file()
-    assert json.loads((ROOT / "corpus/takhrij/report.json").read_text()) == takhrij.report(cases)
+    assert json.loads((ROOT / "corpus/takhrij/report.json").read_text()) == takhrij.report(cases, takhrij.load_co(ROOT / "corpus"))
+    for f in sorted((ROOT / "corpus/takhrij/co").glob("*.json")):
+        jsonschema.validate(json.loads(f.read_text()), schema)
 
 
 def test_case_findings_point_at_register_questions_on_their_rule():

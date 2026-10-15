@@ -367,10 +367,16 @@ def cmd_takhrij(_: argparse.Namespace) -> int:
     if bad:
         print(json.dumps(bad, ensure_ascii=False, indent=1))
         return 1
+    from .routing import _records
+    co = takhrij.load_co(CORPUS)
+    if bad := takhrij.co_errors(co, cases, list(_records(CORPUS, {c["far"] for c in co}).values())):
+        print("\n".join(bad))
+        return 1
     tests = SIGNATURE_LEAN.parent
     (tests / "Takhrij.lean").write_text(takhrij.lean_file(cases), encoding="utf-8")
+    (tests / "TakhrijCo.lean").write_text(takhrij.lean_file(takhrij.keyed(co), source=str(takhrij.CO)), encoding="utf-8")
     (tests / "TakhrijMirror.lean").write_text(takhrij.mirror_file(), encoding="utf-8")
-    rep = takhrij.report(cases)
+    rep = takhrij.report(cases, co)
     (CORPUS / "takhrij" / "report.json").write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(json.dumps({k: rep[k] for k in ("total", "coverage", "madhhab_coverage", "encoding_error", "ikhtilaf_matching_madhhab", "classes")}, ensure_ascii=False))
     return 0
