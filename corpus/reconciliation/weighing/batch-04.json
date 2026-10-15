@@ -1,0 +1,603 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b04: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f002",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "When the attacker can only be repelled by killing, the defender kills him and is not liable, because it is a killing by right, like killing a rebel",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p113",
+     "excerpt_ar": "وإن لم يمكن إلا بالقتل، قتله ولم يضمنه؛ لأنه قتل بحق فلم يضمنه، كالباغي",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Al-Kāfī states this for the defender generally, right after granting Muslims the right to aid the wronged and repel the wrongdoer («وللمسلمين عون المظلوم، ودفع الظالم»), so it covers one who kills in defence of another. It is not argued against al-Qāḍī's distinction, which is why it is weaker evidence for this case. Analogy: qiyas."
+    }
+   ],
+   "advantages": [],
+   "searched": "No proof found for al-Qāḍī's liability (position 0). Checked al-Mughnī v09:p183 (fasl 7385: aiding the attacked is allowed, no word on liability), al-Kāfī v04:p112–113, Kashshāf v04:p129 (states al-Qāḍī's view and the Rajabiyyāt without reasons), al-Mubdiʿ and al-Sharḥ al-Kabīr on dafʿ al-ṣāʾil."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The ḥadīth of Ḥudhayfa (Muslim), on which the riwāya that a forced oath binds rests",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p070",
+     "excerpt_ar": "وعنه: تنعقد، حكاها أبو الخطاب، لخبر حذيفة. رواه مسلم. وككفارة الصيد",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Cited for the riwāya that a forced oath binds, which holds the same ruling (binding) on these facts a fortiori. Al-Qāḍī's narrower ground (forced for another, not for himself) is not argued in these works. Marfūʿ connected report (Muslim): zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is the oath of a mukallaf and so binds like the oath of one who chooses; and the expiation is not dropped by doubt, like the expiation for game",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v11:p183",
+     "excerpt_ar": "تنعقد وهو قول أبي حنيفة لأنها يمين مكلف فانعقدت كيمين المختار ولأن هذه الكفارة لا تسقط بالشبهة",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Given for the riwāya and for Abū Ḥanīfa (a non-Ḥanbalī holder of the binding ruling for every forced oath). Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of Abū Umāma and Wāthila b. al-Asqaʿ: «ليس على مقهور يمين»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p487",
+     "excerpt_ar": "ولنا ما روى أبو أمامة، وواثلة بن الأسقع، أن رسول الله صلى الله عليه وسلم قال: ليس على مقهور يمين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's proof that a forced oath does not bind. Al-Inṣāf (v11:p020) takes al-Muwaffaq's general words as covering the oath forced to repel wrong from another («وهو ظاهر كلام المصنف»), with Abū al-Khaṭṭāb. Marfūʿ report, no grade given: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is speech imposed on him without right, so it is void under compulsion, like the word of kufr",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p487",
+     "excerpt_ar": "ولأنه قول حمل عليه بغير حق، فلم يصح ككلمة الكفر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same scope as the ḥadīth. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "«رفع عن أمتي الخطأ والنسيان وما استكرهوا عليه»",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p070",
+     "excerpt_ar": "لم تنعقد يمينه) ذكره الأصحاب، لقوله عليه السلام : رفع عن أمتي الخطأ والنسيان وما استكرهوا عليه",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Al-Mubdiʿ gives this for the madhhab that a forced oath does not bind. Marfūʿ report, no grade given: zanni."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of Jābir: he sold the Prophet a camel and stipulated its riding to Madina («واستثنيت حملانه إلى أهلي»), agreed upon",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p074",
+     "excerpt_ar": "ولنا، ما روى جابر: أنه باع النبي صلى الله عليه وسلم جملا، واشترط ظهره إلى المدينة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Connected marfūʿ report (muttafaq ʿalayh, as the source says) on a seller excepting a known benefit of the thing sold. A case of the same kind rather than an explicit general rule: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The Prophet forbade an exception unless it is known («نهى عن الثنيا إلا أن تعلم»), and this one is known",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p074",
+     "excerpt_ar": "ولأن النبي صلى الله عليه وسلم : نهى عن الثنيا إلا أن تعلم. وهذه معلومة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Marfūʿ report used by its implied sense (a known exception is allowed). Implied sense: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A benefit may be excepted for the buyer by the Sharʿ (pollinated palm, sown land, leased house, married slave-woman), so the seller may except it, as he may stipulate the fruit before pollination",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p074",
+     "excerpt_ar": "ولأن المنفعة قد تقع مستثناة بالشرع على المشتري فيما إذا اشترى نخلة مؤبرة، أو أرضا مزروعة، أو دارا مؤجرة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "mursalDaif",
+     "dalil": "The report that the Prophet forbade a sale with a condition, which al-Mughnī says is not established",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p074",
+     "excerpt_ar": "ولم يصح نهي النبي صلى الله عليه وسلم عن بيع وشرط. وإنما نهى عن شرطين في بيع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for al-Shāfiʿī and the Ḥanafīs, non-Ḥanbalī holders of the same ruling (the exception is invalid). Al-Mughnī calls it unestablished: mursalDaif."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The condition contradicts what the sale requires, like stipulating that the thing not be delivered, since it delays delivery until the seller has had the benefit",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p074",
+     "excerpt_ar": "ولأنه ينافي مقتضى البيع، فأشبه ما لو شرط أن لا يسلمه، وذلك؛ لأنه شرط تأخير تسليم المبيع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for al-Shāfiʿī and the Ḥanafīs (invalid), the same ruling as the riwāya. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He owned the benefit by one contract and then the bare thing by another, so there is no clash, as one owns fruit by one contract and then the tree by another",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p350",
+     "excerpt_ar": "لأنه ملك المنفعة بعقد، ثم ملك الرقبة المسلوبة بعقد آخر، فلم يتنافيا، كما يملك الثمرة بعقد، ثم يملك الأصل بعقد آخر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's first wajh (the lease stands). Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The legatee of the benefit may lease to the owner of the thing, so owning the benefit does not clash with a contract on the thing",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p350",
+     "excerpt_ar": "ولو أجر الموصى له بالمنفعة مالك الرقبة، صحت الإجارة، فدل على أن ملك المنفعة لا ينافي العقد على الرقبة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A further analogy for the same wajh: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The lease is a contract on the thing's benefit and is voided when the contracting party comes to own the thing, as a marriage is voided when he buys his wife; and owning the thing bars starting a lease, so it bars continuing one",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p350",
+     "excerpt_ar": "كالنكاح، فإنه لو تزوج أمة، ثم اشتراها، بطل نكاحه، ولأن ملك الرقبة يمنع ابتداء الإجارة، فمنع استدامتها، كالنكاح",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's second wajh (dissolved). Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Inheritance (or gift, bequest and the like) of the leased thing by the lessee does not dissolve the lease, there being no clash between owning the thing and owning the benefit",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p031",
+     "excerpt_ar": "بإرث أو هبة أو وصية أو صداق أو عوض في خلع أو صلح ونحوه) كجعالة وطلاق وعتق لعدم التنافي بين ملك الرقبة والمنفعة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Al-Buhūtī's stated rationale on these very facts (the madhhab). Rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The lessee who inherits the thing is ruled as one who bought it; on purchase the lease does not dissolve because he owned the benefit by one contract and the thing by another, like fruit then the tree",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p445",
+     "excerpt_ar": "فرع: إذا ورث المستأجر العين المؤجرة، أو وهبت له، أو أخذها بوصية، أو صداق، أو عوض في خلع، أو في صلح",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Al-Mubdiʿ carries the purchase case, whose aṣaḥḥ reason (owning the benefit by one contract and the thing by another, like fruit then the tree) is given just before, over to inheritance, gift, bequest and the like («فالحكم فيه كما لو اشتراها»). Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Inheritance by the lessee takes the ruling of purchase on dissolution or survival; on dissolution the reason is the marriage analogy (buying one's wife ends the marriage; ownership bars starting a lease and so its continuance)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p351",
+     "excerpt_ar": "وإن ورث المستأجر العين المستأجرة، فالحكم فيه كما لو اشتراها، في بطلان الإجارة أو بقائها ، إلا أنه لا فرق في الحكم بين فسخ الإجارة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī ties the inheritance case to the purchase case on both wujūh, so the analogy for dissolution given there (v05:p350) is the proof for this side. Al-Mujarrad's own ground (inheritance being compulsory) is not argued in these works. Analogy: qiyas. The excerpt runs through the qualifier that follows in the source. Al-Mughnī adds «إلا أنه لا فرق في الحكم بين فسخ الإجارة وبقائها»: on his account the dispute has no practical consequence."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale offered for al-Khiraqī: a harvest condition leads to dispute (the seller cuts high to keep a remainder, the buyer wants it cut low), and dispute is a mafsada that voids the sale",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p073",
+     "excerpt_ar": "فيفضي إلى التنازع، وهو مفسدة، فيبطل البيع من أجله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's own iḥtimāl explaining al-Khiraqī's voiding on this very farʿ (harvest stipulated on the seller). A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "mursalDaif",
+     "dalil": "Report that the Prophet forbade a sale with a condition («نهى عن بيع وشرط»), which al-Mughnī says is not established",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p073",
+     "excerpt_ar": "وروي عن النبي صلى الله عليه وسلم أنه نهى عن بيع، وشرط . ولنا، ما تقدم، ولم يصح",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for Abū Thawr and al-Thawrī, who void the contract by such a seller-benefit condition (the same ruling as al-Khiraqī). Al-Mughnī says «لم يصح»: an unestablished report, so mursalDaif."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Abū Thawr and al-Thawrī: it is a corrupt condition, so it resembles the other corrupt conditions",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p073",
+     "excerpt_ar": "أنهما أبطلا العقد بهذا الشرط؛ لأنه شرط فاسد، فأشبه سائر الشروط الفاسدة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for non-Ḥanbalī holders of the same ruling (invalid) on stipulating the seller's work in the thing sold. Analogy to the other corrupt conditions: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is a sale plus a hire: he sold the crop and hired himself out to harvest it; each may be contracted alone, so both may be joined, like selling two items",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p072",
+     "excerpt_ar": "هذا بيع، وإجارة؛ لأنه باعه الزرع، وآجره نفسه على حصاده، وكل واحد منهما يصح إفراده بالعقد، فإذا جمعهما جاز، كالعينين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given by those who allow the harvest condition, and al-Mughnī adopts it («صح؛ لما ذكرناه»). Analogy (to joining two items in one sale): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "fatwaSahabi",
+     "dalil": "Muḥammad b. Maslama bought a bundle of firewood from a Nabatean and stipulated that he carry it; Aḥmad argued from this",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p073",
+     "excerpt_ar": "واحتج أحمد بأن محمد بن مسلمة اشترى من نبطي جرزة حطب، وشارطه على حملها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A ṣaḥābī's practice, cited by Aḥmad for the validity of stipulating the seller's work in the thing sold, of which the harvest condition is a case. No ṣaḥābī is reported against him here: fatwaSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The authentic ḥadīth is that the Prophet forbade two conditions in a sale (al-Tirmidhī), which by its implied sense permits a single condition",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p073",
+     "excerpt_ar": "إنما الصحيح أن النبي صلى الله عليه وسلم نهى عن شرطين في بيع . كذا ذكره الترمذي. وهذا دال بمفهومه على جواز الشرط الواحد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Connected marfūʿ report used by its mafhūm for a single seller-benefit condition, which covers the harvest condition. Indication by implied sense: zanni."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A condition against what the contract requires corrupts it, like a muḍāraba in which the work is put on the owner of the capital",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p298",
+     "excerpt_ar": "لأنه شرط يخالف مقتضى العقد، فأفسده، كالمضاربة إذا شرط العمل فيها على رب المال",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī gives this for al-Qāḍī and Abū al-Khaṭṭāb (and al-Shāfiʿī): putting on one party what binds the other is not allowed. Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same rationale in Kashshāf for the condition and the contract being void",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p541",
+     "excerpt_ar": "فسد الشرط والعقد) ؛ لأنه شرط يخالف مقتضى العقد فأفسده، كالمضاربة إذا",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Al-Buhūtī's reason for the madhhab ruling on these facts. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A condition that does not upset the contract's purpose and carries no harm is valid, like deferring the price or stipulating a pledge, guarantor or option in a sale",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p298",
+     "excerpt_ar": "لأنه شرط لا يخل بمصلحة العقد، ولا مفسدة فيه، فصح، كتأجيل الثمن في المبيع، وشرط الرهن والضمين والخيار",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's reason for the view drawn from Aḥmad's naṣṣ that the jadhādh may be stipulated on the worker (and from al-Khiraqī on muḍāraba): the condition is valid. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Takhrīj from Aḥmad's naṣṣ that the jadhādh may be stipulated on the worker, extended to the rest of the work by analogy",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p165",
+     "excerpt_ar": "فيخرج في سائر العمل مثل",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Al-Kāfī extends the naṣṣ on jadhādh to every item of work stipulated on the other party. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It stipulates against what the contract requires, since the contract requires delivery at its own place",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p227",
+     "excerpt_ar": "أنه لا يصح لأنه شرط خلاف ما اقتضاه العقد، لأن العقد يقتضي الإيفاء في مكانه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's reason for the riwāya Ibn Abī Mūsā reports (invalid). A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Naming the place carries gharar, since delivery there may become impossible, like specifying a particular measure (al-Qāḍī, Abū al-Khaṭṭāb; chosen by Abū Bakr)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p227",
+     "excerpt_ar": "لأن فيه غررا، لأنه ربما تعذر تسليمه في ذلك المكان، فأشبه تعيين المكيال",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the riwāya of invalidity whenever a place is named, which covers a place other than that of the contract. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is a sale, so a stipulated place of delivery other than the place of contract is valid, as in sales of specific goods; and it names a place of delivery, as when the place of contract is named",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p227",
+     "excerpt_ar": "لأنه عقد بيع فصح شرط ذكر الإيفاء في غير مكانه، كبيوع الأعيان",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's first reason for validity. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Naming the place serves the parties' purpose and interest, like naming the time",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p227",
+     "excerpt_ar": "فإن في تعيين المكان غرضا ومصلحة لهما، فأشبه تعيين الزمان",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's answer for validity against the gharar argument. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of ʿAmr b. Shuʿayb from his father from his grandfather: «لا نذر لابن آدم فيما لا يملك، ولا عتق فيما لا يملك، ولا طلاق لابن آدم فيما لا يملك»; al-Tirmidhī: ḥasan, the best in the chapter",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p526",
+     "excerpt_ar": "ولا طلاق لابن آدم فيما لا يملك قال الترمذي وهذا حديث حسن، وهو أحسن ما روي في هذا الباب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Connected marfūʿ āḥād report, graded ḥasan in the source, for divorce suspended on marriage not taking effect. Its general wording reaches the suspension only by interpretation: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "Ibn ʿAbbās, ʿAlī and Jābir are reported for it, and no contemporary is known to differ",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p526",
+     "excerpt_ar": "ولأنه قول من سمينا من الصحابة، ولم نعرف لهم مخالفا في عصرهم، فيكون إجماعا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The source calls it ijmāʿ, but only because no one is known to differ (a tacit consensus), so per the rules it is the ṣaḥāba's view: fatwaSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "One whose divorce would not take effect by direct pronouncement cannot make a valid suspension, like the insane; and it is a suspension before ownership, like suspending a foreign woman's divorce on entering the house",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p526",
+     "excerpt_ar": "ولأن من لا يقع طلاقه وعتقه بالمباشرة، لم تنعقد له صفة، كالمجنون",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Divorce and manumission can be suspended on uncertain events, so they can be suspended on coming to own the woman or slave, like a bequest, a vow and an oath",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p526",
+     "excerpt_ar": "وهو قول الثوري، وأصحاب الرأي؛ لأنه يصح تعليقه على الأخطار، فصح تعليقه على حدوث الملك، كالوصية والنذر واليمين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the riwāya that indicates it takes effect and for al-Thawrī and the Ḥanafīs, holders of the same ruling. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A man may say to his slave-woman «the first child you bear is free», which is valid and is a suspension of freedom on ownership",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p526",
+     "excerpt_ar": "ولأنه لو قال لأمته: أول ولد تلدينه فهو حر. فإنه يصح وهو تعليق للحرية على الملك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given (with Abū Bakr) for the riwāya that manumission suspended on ownership is valid, the madhhab. Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "One who vows manumission must fulfil it while one who vows divorce need not, so as they differ in vows they may differ in oaths; and manumission is God's right and a qurba",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p526",
+     "excerpt_ar": "والفرق بينهما، أن ناذر العتق يلزمه الوفاء به، وأن ناذر الطلاق لا يلزمه الوفاء به، فكما افترقا في النذر، جاز أن يفترقا في اليمين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū Bakr's distinction between the suspended manumission (valid) and divorce (void). Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of ʿAmr b. Shuʿayb: «… ولا عتق فيما لا يملك …», al-Tirmidhī: ḥasan",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p526",
+     "excerpt_ar": "لا نذر لابن آدم فيما لا يملك، ولا عتق فيما لا يملك، ولا طلاق لابن آدم فيما لا يملك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the riwāya that neither divorce nor manumission suspended on ownership takes effect. Connected marfūʿ āḥād report, graded ḥasan: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of ʿĀʾisha: «لا طلاق ولا عتاق فيما لا يملك ابن آدم، وإن عينها», al-Dāraquṭnī",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p526",
+     "excerpt_ar": "لا طلاق ولا عتاق فيما لا يملك ابن آدم، وإن عينها رواه الدارقطني",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Marfūʿ report naming manumission and a specified person, for the same riwāya. Āḥād: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "One whose manumission would not take effect by direct pronouncement cannot make a valid suspension, like the insane",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p526",
+     "excerpt_ar": "ولأن من لا يقع طلاقه وعتقه بالمباشرة، لم تنعقد له صفة، كالمجنون",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For the same riwāya. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "When retaliation becomes impossible the diya is due, as when the killer dies, some co-heirs forgive, or another impediment arises; unlike the slave who commits a crime, he has property that passes on",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p283",
+     "excerpt_ar": "ولنا، على وجوب الدية في تركة الجاني الأول، أن القصاص إذا تعذر وجبت الدية، كما لو مات، أو عفا بعض الشركاء، أو حدث مانع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī on these very facts (the killer killed by someone other than the walī). Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The diya is due in his estate because exacting retaliation from him has become impossible",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p545",
+     "excerpt_ar": "(إن مات القاتل، أو قتل وجبت الدية في تركته) لأنه تعذر استيفاء القود من",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's reason for the madhhab. Rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The first victim's blood is lost because its object has gone, like when a slave who committed a crime is killed (al-Ḥasan, Mālik)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p283",
+     "excerpt_ar": "وقال الحسن، ومالك: يقتل قاتله، ويبطل دم الأول؛ لأنه فات محله، فأشبه ما لو قتل العبد الجاني",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for al-Ḥasan and Mālik, non-Ḥanbalī holders of the same ruling (the right drops when the killer is killed); al-Shaykh Taqī al-Dīn's own takhrīj is not argued in these works. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "She owes the mahr because the exit of the buḍʿ (from the husband's ownership) has a value (al-Qāḍī)",
+     "ref": "src:openiti-insaf-shamela21609/v09:p160",
+     "excerpt_ar": "أحدهما: تضمن، اختاره القاضي؛ لأن خروج البضع متقوم",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Rationale stated on these very facts. Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "In the parallel case where she admits the first husband's rajʿa and stays with the second, al-Qāḍī makes her owe the first a mahr: she has kept him from her buḍʿ without right, like witnesses to a divorce who retract",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p534",
+     "excerpt_ar": "وذكر القاضي، أن عليها له مهرا. وهو قول بعض أصحاب الشافعي؛ لأنها أقرت أنها حالت بينه وبين بضعها بغير حق، فأشبه شهود الطلاق إذا رجعوا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same question (does she owe the first husband the mahr when the second keeps her after an unknown rajʿa), a slightly different trigger (her admission, not the riwāya favouring the second). Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "She owes nothing, because the exit of the buḍʿ from the husband's ownership has no value (the ṣaḥīḥ in the chapter on raḍāʿ)",
+     "ref": "src:openiti-insaf-shamela21609/v09:p160",
+     "excerpt_ar": "والثاني: لا تضمن، ويأتي في باب الرضاع: أن الصحيح من المذهب: أن خروج البضع غير متقوم",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Rationale stated on these facts. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Her ownership of the mahr is settled, so he cannot reclaim it from her, as when she apostatises, becomes Muslim or kills herself",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p534",
+     "excerpt_ar": "ولنا أن ملكها استقر على المهر، فلم يرجع به عليها، كما لو ارتدت، أو أسلمت، أو قتلت نفسها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's answer to al-Qāḍī in the parallel case (her admission while the second keeps her), on the same question of mahr owed to the first. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Q 60:10 «وآتوهم ما أنفقوا», read as returning her mahr to her kāfir husband",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p300",
+     "excerpt_ar": "إذا جاءت امرأة له مسلمة، وجب رد مهرها؛ لقول الله تعالى: وآتوهم ما أنفقوا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for al-Shāfiʿī in one of his views, a non-Ḥanbalī holder of the same ruling (the ẓāhir of the Qurʾān the case cites). Al-Mughnī says the āya came down on the Ḥudaybiya peace, where returning women had been stipulated; it reaches a peace made without that sharṭ only by its apparent sense, so zanni rather than qati."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "She took nothing from him, and had she taken it, she took it by force in the abode of force; had she owed a substitute it would be the mahr al-mithl, not the named mahr",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p300",
+     "excerpt_ar": "وأما المرأة، فلا يجب رد مهرها؛ لأنها لم تأخذ منه شيئا، ولو أخذته كانت قد قهرتهم عليه في دار القهر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's rationale for no return. Rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "One who comes out to us from outside the Abode of Islam is not returned, nor anything in his place, like a free man or a slave who left before becoming Muslim",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p300",
+     "excerpt_ar": "ولنا، أنه من غير أهل دار الإسلام، خرج إلينا، فلم يجب رده، ولا رد شيء بدلا عنه، كالحر من الرجال",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Covers the muhājira and her mahr («ولا رد شيء بدلا عنه»). Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "She earned the mahr by what was had of her, so it is not returned to another",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p115",
+     "excerpt_ar": "(ولا يجب رد مهر المرأة) إليهم لأنها استحقته بما نيل منها فلا يرد لغيرها.",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's reason for the madhhab. Rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The exit of the buḍʿ from the husband's ownership has no value, so if he accepts no countervalue he gets nothing, as when he divorces or suspends divorce on an act she then does",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p343",
+     "excerpt_ar": "ولنا، أن خروج البضع من ملك الزوج غير متقوم، على ما أسلفنا، فإذا رضي بغير عوض، لم يكن له شيء، كما لو طلقها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's proof on these facts (khulʿ on wine or pork, both knowing). Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Khulʿ on such a thing, knowing it forbidden, shows that he accepts nothing",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p219",
+     "excerpt_ar": "لأن الخلع على ذلك مع العلم بتحريمه يدل على رضا فاعله بغير شيء",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's reason for the madhhab. Rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Khulʿ is an exchange for the buḍʿ, so when the countervalue is forbidden the mahr al-mithl is due, as in marriage (al-Shāfiʿī)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p343",
+     "excerpt_ar": "وقال الشافعي: له عليها مهر المثل؛ لأنه معاوضة بالبضع، فإذا كان العوض محرما وجب مهر المثل، كالنكاح",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for al-Shāfiʿī, a non-Ḥanbalī holder of the ruling that the khulʿ carries a mahr (Taqī al-Dīn: «يرجع إلى المهر كالنكاح»). Analogy to marriage: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He may only deal with her property where it serves her interest, and here there is none: it drops her maintenance and clothing and spends her property",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v08:p180",
+     "excerpt_ar": "لأنه إنما ملك التصرف بمالها فيه الحظ وليس في هذا حظ بل فيه إسقاط نفقتها وكسوتها وبذل مالها",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Rationale on these facts (the madhhab). Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same rationale in al-Mubdiʿ",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p271",
+     "excerpt_ar": "نفقتها وكسوتها وبدل مالها، ولا حظ لها في ذلك",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Rationale for the madhhab. Qiyas."
+    }
+   ],
+   "advantages": [],
+   "searched": "No proof found for position 1 (the father may, the exit being of value). Al-Sharḥ al-Kabīr v08:p180 and al-Mubdiʿ v06:p270 give an iḥtimāl that he may when he sees her interest in it (ḥaẓẓ), a different ground the case does not state, so it is not recorded. Also checked al-Mughnī and al-Kāfī on the father's khulʿ."
+  }
+ ]
+}

@@ -1,0 +1,538 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b14: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f008",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The ḥadīth «إنما الأعمال بالنيات وإنما لامرئ ما نوى» (marfūʿ; no grade given here): he has only what he intended, and one who intended 'the prayer' unspecified did not intend the farḍ, so the farḍ is not made permissible.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p262",
+     "excerpt_ar": "ولنا قول النبي صلى الله عليه وسلم \" إنما الأعمال بالنيات وإنما لأمرئ ما نوى \" وهذا ما نوى الفرض",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Cited for «وإن نوى نفلا أو أطلق النية للصلاة لم يصل إلا نفلا», the lowest-reading side. A marfūʿ āḥād report applied by its general wording, not explicit on tayammum: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: specifying the farḍ is a condition and is absent; the nafl is allowed because it is the least that an unqualified intention is taken to cover.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p176",
+     "excerpt_ar": "لأن التعيين شرط ولم يوجد في الفرض، وإنما أبيح النفل لأنه أقل ما يحمل عليه الإطلاق",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "On these very facts («أو أطلق النية للصلاة بأن نوى استباحة الصلاة، ولم ينو فرضا ولا نفلا»): the explicit taking of an unqualified intention to the lowest. Stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: tayammum does not lift the ḥadath; it only makes prayer permissible, so it does not make the farḍ permissible until he intends it.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p121",
+     "excerpt_ar": "وإن نوى نفلا أو صلاة مطلقة، لم يبح له الفرض، لأن التيمم لا يرفع الحدث، وإنما تستباح به الصلاة",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Al-Kāfī on «صلاة مطلقة». A stated rationale from the nature of tayammum: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy with water-purification: if tayammum does not lapse with the end of the time, it is like ablution with water, a purification by which the nafl is valid, so he may pray whatever he wishes with it.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p261",
+     "excerpt_ar": "ويتخرج لنا مثل ذلك إذا قلنا إن التيمم لا يبطل بخروج الوقت فيكون حكمه حكم طهارة الماء",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Given for Abū Ḥanīfa's ruling and the takhrīj of the same for the madhhab: the generality side (it covers the farḍ as well). Aṣl water-purification, farʿ tayammum: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the ʿawra is in fact covered (the aim of the condition is met), so the prayer is valid; given beside Aḥmad's naṣṣ.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p460",
+     "excerpt_ar": "فإن كان ذا لحية كبيرة تغطي الجيب فتستر عورته صحت صلاته نص عليه لأن عورته مستورة",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Cited for the madhhab ruling that the attached beard counts as covering on exactly these facts (wide collar, large beard). A «لأن…» rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the purpose (covering) is achieved, and the command to cover is not restricted to a particular coverer, so any coverer suffices, including what is attached to the body (hand, beard).",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p264",
+     "excerpt_ar": "لأن المقصود سترها، وقد حصل ولأن الأمر بسترها غير مقيد بساتر فكفى أي ساتر",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given for «ويكفي ... متصل به، كيده ولحيته», then applied to the wide collar covered by the beard. The appeal to the unrestricted command cites no text, so it is a stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale (al-Qāḍī's return to the naṣṣ): the aim of covering in prayer is to hide the colour of the skin, which the attached beard does; unlike iḥrām, where only covering by what is customarily worn is forbidden.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p005",
+     "excerpt_ar": "ورجع إلى أنه ستر في الصلاة دون الإحرام ; لأن القصد في ستر الصلاة تغييب لون البشرة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's report of the reason al-Qāḍī gave when he came back to Aḥmad's naṣṣ for prayer. A stated rationale distinguishing prayer from iḥrām: qiyas. No source gives a proof for al-Qāḍī's first view that the attached is no covering."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale and analogy: the rider transgresses by the excess, and the owner's silence does not lift liability, like one who sits beside a man and burns his clothes while he stays silent.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p372",
+     "excerpt_ar": "ولأن الراكب متعد بالزيادة، وسكوت صاحبها لا يسقط الضمان، كمن جلس إلى إنسان فحرق ثيابه وهو ساكت",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is the reason al-Mujarrad gives («لتعديه بالزيادة، وسكوت المالك لا يمنع الضمان»), set out in al-Mughnī for full liability where the owner is with the mount. Analogy to burning the clothes of a silent owner: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: where it perishes in the owner's hand by another cause (a beast of prey, a fall), there is no liability, since it did not perish in a transgressing hand nor by a transgressing cause.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p372",
+     "excerpt_ar": "وإن تلفت بسبب آخر من افتراس سبع أو سقوط في هوة ونحو ذلك، فلا ضمان فيها؛ لأنها لم تتلف في يد عادية",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's own ruling for the mount in its owner's hand perishing not by the load, which is the al-Talkhīṣ side. Stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy (al-Shāfiʿī's companions): if it perishes in the owner's hand, the hirer is not liable, like its perishing after the period of transgression.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p372",
+     "excerpt_ar": "معها فتلفت في يد صاحبها، لم يضمنها المكتري؛ لأنها تلفت في يد صاحبها، أشبه ما لو تلفت بعد مدة التعدي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the Shāfiʿī holders of the same ruling (not liable while the owner's hand is on it). Counts for this ruling. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: the one who enters has not taken control of it, so he is not liable, as if he had entered with permission or entered the owner's open land.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p180",
+     "excerpt_ar": "ولنا، أنه غير مستول عليها، فلم يضمنها، كما لو دخلها بإذنه، أو دخل صحراءه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's «ولنا» for «فلو دخل أرض إنسان أو داره، لم يضمنها بدخوله ... وسواء كان صاحبها فيها أو لم يكن»: the no-liability side on these facts. Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy with the loan: only what would be made liable in a loan is made liable by usurpation, and mere entry establishes no loan, so it establishes no usurpation.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p180",
+     "excerpt_ar": "ولأنه إنما يضمن بالغصب ما يضمنه في العارية، وهذا لا تثبت به العارية",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second reason in the same «ولنا» (repeated in Kashshāf v04:p077). Qiyas. No source argues al-Talkhīṣ's liability of the entrant with intent and strength on these facts; the Shāfiʿī rationale in al-Mughnī concerns an absent owner."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the mount is in its owner's hand, so the rider seated behind him is not liable for anything.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p071",
+     "excerpt_ar": "وكذا رديف ربها) بأن أركب إنسانا خلفه فتلفت الدابة تحتهما لم يضمن الرديف شيئا لأن الدابة بيد مالكها",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Exactly these facts (the owner seats someone behind him and the mount perishes beneath them). Stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the mount is not taken into possession by the rider, being in its owner's hand, and the rider does not keep it alone; so no ruling of a loan attaches. Like covering a guest with a blanket.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p293",
+     "excerpt_ar": "لأنها غير مقبوضة ; لأنها بيد صاحبها وراكبها لم ينفرد بحفظها",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Given for the one carried for God's sake, then extended to «كرديف ربها». Stated rationale: qiyas. No source gives a proof for the iḥtimāl of half the value as a borrower (al-Inṣāf and al-Mubdiʿ only report «وقيل: يضمن نصف القيمة»)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f009",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "aqrabSahabi",
+     "dalil": "ʿUmar b. al-Khaṭṭāb's ruling on Ṭulayḥa's case (via Saʿīd b. al-Musayyab and Sulaymān b. Yasār): the second husband may never marry her.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p125",
+     "excerpt_ar": "ثم اعتدت بقية عدتها من الأول، ثم اعتدت من الآخر، ولا ينكحها أبدا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the riwāya of permanent prohibition («لقول عمر لا ينكحها أبدا»). Al-Mughnī reports that ʿAlī disagreed and that ʿUmar retracted to ʿAlī's view, so the ṣaḥāba disagree: aqrabSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: he hastened the right before its time, so he is denied it in its time, like the heir who kills the one he would inherit from.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p125",
+     "excerpt_ar": "ولأنه استعجل الحق قبل وقته فحرمه في وقته، كالوارث إذا قتل موروثه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "This is the attached qāʿida itself, given for the riwāya of permanent prohibition (also held by Mālik and al-Shāfiʿī's old view). Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: the act corrupts lineage, so it brings permanent prohibition, like liʿān.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p125",
+     "excerpt_ar": "ولأنه يفسد النسب فيوقع التحريم المؤبد، كاللعان",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second analogy for the same riwāya. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Qurʾān 4:24 «وأحل لكم ما وراء ذلكم» (and 5:5): the verses of permission are general and may not be specialised without proof.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p125",
+     "excerpt_ar": "ولأن آيات الإباحة عامة، كقوله تعالى {وأحل لكم ما وراء ذلكم} [النساء: 24]",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's «ولنا على إباحتها بعد العدتين». The verses reach this woman only by their generality, so zanni, not qati."
+    },
+    {
+     "position": 1,
+     "tier": "aqrabSahabi",
+     "dalil": "ʿAlī: once her ʿidda ends he is a suitor like any other; ʿUmar is reported to have retracted to ʿAlī's view («ردوا الجهالات إلى السنة»).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p125",
+     "excerpt_ar": "فإن عليا قال: إذا انقضت عدتها، فهو خاطب من الخطاب. فقال عمر ردوا الجهالات إلى السنة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "ʿAlī's view for the madhhab side. ʿUmar's contrary saying is also reported, so aqrabSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A fortiori analogy: had he committed zinā with her she would not be forbidden to him forever, so this is more so; nor does a contract or intercourse in an invalid marriage (as without a walī) forbid.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p125",
+     "excerpt_ar": "ولأنه لو زنى بها، لم تحرم عليه على التأبيد، فهذا أولى",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the madhhab side. Qiyas (a fortiori)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: at the shot he did not aim his transgression at a life equal to his own, so no qiṣāṣ, as if he shot at a ḥarbī or an apostate who then became Muslim.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p309",
+     "excerpt_ar": "ولنا على درء القصاص، أنه لم يتعد إلى نفس مكافئته له حال الرمي، فلم يجب عليه قصاص، كما لو رمى حربيا أو مرتدا فأسلم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's «ولنا» for «فلا قود، وعليه دية حر مسلم» (al-Khiraqī, Ibn Ḥāmid; al-Shāfiʿī). Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: qiṣāṣ is the requital of the act, so both the shot and the hit are counted, as its two ends; parity was lacking at the shot, so no qiṣāṣ, while the diya, as compensation for what was lost, follows the state at the hit.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p310",
+     "excerpt_ar": "والقصاص جزاء الفعل، فيعتبر الفعل فيه والإصابة معا؛ لأنهما طرفاه، فلذلك، لم يجب القصاص بقتله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Explains why the reading takes the state at the shot for qawad and the state at the hit for the diya. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: he wrongfully and intentionally killed someone equal to him, so qiṣāṣ is due, as if the victim had been a free Muslim at the shot.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p309",
+     "excerpt_ar": "وقال أبو بكر: يجب القود؛ لأنه قتل مكافئا له ظلما عمدا، فوجب القصاص، كما لو كان حرا مسلما حال الرمي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū Bakr's reason for qawad. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: the shufʿa is a right of cancellation established not to make good a lost part, so it is not inherited, like the father's right to take back a gift.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p279",
+     "excerpt_ar": "ولنا، أنه حق فسخ ثبت لا لفوات جزء، فلم يورث، كالرجوع في الهبة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's «ولنا» for «والشفعة لا تورث، إلا أن يكون الميت طالب بها», the reading's side. Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: it is an option given for acquiring ownership, like the option of acceptance, which does not pass to heirs.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p279",
+     "excerpt_ar": "ولأنه نوع خيار جعل للتمليك، أشبه خيار القبول",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second reason in the same «ولنا». Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: the shufʿa is an option established to ward off harm from property, so it is inherited, like the option to return for a defect.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p279",
+     "excerpt_ar": "قال أبو الخطاب ويتخرج لنا مثل ذلك؛ لأنه خيار ثابت لدفع الضرر عن المال، فيورث، كخيار الرد بالعيب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū al-Khaṭṭāb's takhrīj, also the view of Mālik and al-Shāfiʿī: the heirs may claim it. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: the option is a right of cancellation for which no compensation may be taken, so it is not inherited, like the option to take back a gift.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p494",
+     "excerpt_ar": "ولنا، أنه حق فسخ لا يجوز الاعتياض عنه؛ فلم يورث كخيار الرجوع في الهبة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's «ولنا» for «والمذهب أن خيار الميت منهما يبطل بموته». The same reason is in Kashshāf v03:p210 and al-Kāfī v02:p031. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: the option is a financial right, so it passes to the heir, like the term of a deferred price and the option to return for a defect.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p494",
+     "excerpt_ar": "ويتخرج أن الخيار لا يبطل، وينتقل إلى ورثته؛ لأنه حق مالي، فينتقل إلى الوارث، كالأجل وخيار الرد بالعيب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The takhrīj that it is inherited at all events (also Mālik and al-Shāfiʿī). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: it is a right to cancel the sale, so it passes to the heir, like return for a defect and cancellation after mutual oaths.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p494",
+     "excerpt_ar": "ولأنه حق فسخ للبيع، فينتقل إلى الوارث، كالرد بالعيب، والفسخ بالتحالف",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second reason for the same takhrīj. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "aqrabSahabi",
+     "dalil": "Abū Bakr to ʿĀʾisha: «وددت أنك كنت حزتيه», implying that had she taken possession the others could not take it back; and ʿUmar: «لا نحلة إلا نحلة يحوزها الولد دون الوالد».",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v06:p273",
+     "excerpt_ar": "ووجه الرواية الأولى قول أبي بكر لعائشة رضي الله عنهما لما نحلها نحلا وددت",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Given for the riwāya that the gift becomes fixed for the favoured child at the father's death, with no reclaiming by the others. The same source reports Abū Bakr and ʿUmar ordering Qays b. Saʿd to undo his father's division after his death, so the ṣaḥāba reports conflict: aqrabSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogies: it is a gift to his child, so it becomes binding at death as if he were the only child; and taking back is the father's right attaching to the child's property, so it lapses at his death, like his right to take from the child's property.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v06:p273",
+     "excerpt_ar": "ولأنها عطية لولده فلزمت بالموت كما لو انفرد ولأنه حق للأب يتعلق بمال الولد فسقط بموته كالأخذ من ماله",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "The second analogy is the leading characterisation itself (a personal, unclaimed right of the father, so it does not pass). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The ḥadīth of Bashīr: the Prophet called the preference «جور». Injustice may not be done or received, and death does not stop it being injustice, so it must be returned.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v06:p273",
+     "excerpt_ar": "لأن النبي صلى الله عليه وسلم سمى ذلك جورا بقوله لبشير \" لا نشهدني على جور \"",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Given for the riwāya (chosen by Ibn Baṭṭa and Abū Ḥafṣ; Isḥāq, ʿUrwa) that the other heirs may take it back. A marfūʿ report bearing on the point by inference: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "A report attributed to the Prophet: «يرد في حياة الرجل وبعد موته», which ʿUrwa followed (per Aḥmad).",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v06:p273",
+     "excerpt_ar": "وذهب إلى حديث النبي صلى الله عليه وسلم \" يرد في حياة الرجل وبعد موته \"",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Cited for the reclaiming side. The source gives it as the Prophet's ḥadīth but states no chain or grade; tiered zanni on the source's attribution, though doubtful."
+    },
+    {
+     "position": 1,
+     "tier": "aqrabSahabi",
+     "dalil": "Abū Bakr and ʿUmar asked Qays b. Saʿd to undo the division his father Saʿd b. ʿUbāda made among his children, after Saʿd's death, when a child was born afterwards.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v06:p273",
+     "excerpt_ar": "فمشى أبو بكر وعمر رضي الله عنهما إلى قيس بن سعد فقالا إن سعد قسم ماله ولم يدر ما يكون",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Given for the reclaiming side. Other reports from the same two Companions are cited for the opposite side, so aqrabSahabi."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: it is a ḥadd that requires a claim, so if the holder made no claim it is not due, like the ḥadd of amputation for theft.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p061",
+     "excerpt_ar": "ولنا، أنه حد تعتبر فيه المطالبة، فإذا لم يوجد الطلب من المالك، لم يجب، كحد القطع في السرقة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's «ولنا» for «وإذا مات المقذوف قبل المطالبة بالحد، سقط». Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The ḥadīth «من ترك حقا فلورثته» (marfūʿ; no grade given here): whoever leaves a right, it goes to his heirs.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p061",
+     "excerpt_ar": "وقال أصحاب الشافعي يورث، وإن لم يكن طالب به؛ لقول النبي - صلى الله عليه وسلم -: «من ترك حقا فلورثته»",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for al-Shāfiʿī's companions, who hold the same ruling as Abū al-Khaṭṭāb's takhrīj (inherited without a claim). A general marfūʿ text: zanni. Al-Mughnī answers it, but a rebuttal is not a proof."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: a right established for him in life, inherited when claimed, is inherited when unclaimed too, like the right of qiṣāṣ.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p061",
+     "excerpt_ar": "ولأنه حق ثبت له في الحياة، يورث إذا طالب به، فيورث وإن لم يطالب به، كحق القصاص",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same holders. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f005",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: qiṣāṣ for less than a life falls back to property (the diya), so it is like the option to return for a defect, which passes to heirs without a claim.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p316",
+     "excerpt_ar": "وظاهر كلام القاضي والأكثرين أنه يستوفي، وعللوا بأنه يسقط إلى مال فهو كخيار الرد بالعيب",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The reason al-Qāḍī and the majority give for the heirs exacting it, on exactly these facts. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the right of qiṣāṣ is one for which compensation may be taken and which changes into property, so unlike the ḥadd of qadhf it passes to the heirs though unclaimed.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p061",
+     "excerpt_ar": "وأما حق القصاص، فإنه حق يجوز الاعتياض عنه، وينتقل إلى المال، بخلاف ما نحن فيه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's distinction in the question of the qadhf victim who dies without claiming: it grants that an unclaimed qiṣāṣ passes, for the same ʿilla as the majority's. Qiyas. No source argues for Aḥmad's ẓāhir that it lapses."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: a bequest is a contract needing acceptance, so if the one entitled to accept dies first it lapses, like a gift.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p155",
+     "excerpt_ar": "لأنه عقد يفتقر إلى القبول، فإذا مات من له القبول قبله، بطل العقد، كالهبة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Ḥāmid's reason for the bequest lapsing. Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: an option for which no compensation may be taken lapses by death, like the options of the session and of stipulation, and the option to take by shufʿa.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p155",
+     "excerpt_ar": "قال القاضي: هو قياس المذهب؛ لأنه خيار لا يعتاض عنه، فبطل بالموت، كخيار المجلس والشرط وخيار الأخذ بالشفعة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Qāḍī's reason, the reading's own characterisation (an unclaimed right of acquisition). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The ḥadīth «من ترك حقا فلورثته» (marfūʿ; no grade given here): the option is a right of the deceased, so it passes to the heir.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p155",
+     "excerpt_ar": "لأنه حق ثبت للموروث فثبت للوارث بعد موته، لقوله - عليه السلام -: «من ترك حقا فلورثته»",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for al-Khiraqī's view that the heir stands in his place (the madhhab per al-Inṣāf). General marfūʿ text: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: the bequest is binding on one side (the testator's), so it does not lapse by the death of the one holding the option, like a pledge or a sale with an option for one party.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p155",
+     "excerpt_ar": "ولنا، على أن الوصية لا تبطل بموت الموصى له، أنها عقد لازم من أحد الطرفين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's «ولنا» for the madhhab side. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f009",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: death was not made something that voids rights; it is the moment of succession, so the term, a right of the deceased, survives (with the debt secured), as with the bankrupt, whose term does not lapse.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p327",
+     "excerpt_ar": "ولأن الموت ما جعل مبطلا للحقوق، وإنما هو ميقات للخلافة، وعلامة على الوراثة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Mughnī's «ولنا» for «لا تحل إذا وثق الورثة». Stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The ḥadīth «من ترك حقا أو مالا فلورثته» (marfūʿ; no grade given here): the term is a right left by the deceased, so it passes to his heirs.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p327",
+     "excerpt_ar": "وقد قال النبي - صلى الله عليه وسلم -: «من ترك حقا أو مالا فلورثته»",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same «ولنا». General marfūʿ text applied to the term: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The ḥadīth «الميت مرتهن بدينه حتى يقضى عنه» (marfūʿ; no grade given here): deferring the debt harms the deceased, who stays bound until it is paid.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p327",
+     "excerpt_ar": "أما الميت فلأن النبي - صلى الله عليه وسلم - قال: «الميت مرتهن بدينه، حتى يقضى عنه»",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the riwāya that the debt falls due at death (also al-Shaʿbī, al-Nakhaʿī, Mālik, al-Thawrī, al-Shāfiʿī). It bears on the term only by implication: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Reasoning by elimination: the debt cannot stay in the ruined dhimma of the deceased, nor in the heirs' dhimma, which they did not assume and the creditor did not accept, nor attach to the estate while deferred without harm; so it falls due.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p327",
+     "excerpt_ar": "لا يجوز بقاؤه في ذمة الميت لخرابها، وتعذر مطالبته بها، ولا ذمة الورثة؛ لأنهم لم يلتزموها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same side. Stated rationale: qiyas. Al-Mughnī calls it a ruling by maṣlaḥa mursala, but that is a rebuttal and does not change what the proof is."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f014",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: the gift is a contract tending to become binding, so it is not dissolved by death, like a sale with a stipulated option; the heir stands in the donor's place in permitting delivery and in revoking.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p043",
+     "excerpt_ar": "لأنه عقد مآله إلى اللزوم، فلم ينفسخ بالموت كالبيع المشروط فيه الخيار",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū al-Khaṭṭāb's reason (and that of most of al-Shāfiʿī's companions) for «إذا مات الواهب، قام وارثه مقامه»: the reading's side. Qiyas. Same reason in Kashshāf v04:p303 and al-Kāfī."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: before delivery the gift is a non-binding contract, so it lapses by the death of either party, like agency and partnership.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p043",
+     "excerpt_ar": "ذكره القاضي في موت الواهب؛ لأنه عقد جائز فبطل بموت أحد المتعاقدين، كالوكالة والشركة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Al-Qāḍī's reason for the gift lapsing at the donor's death: the other side. Qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

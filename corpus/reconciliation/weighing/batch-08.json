@@ -1,0 +1,592 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b08: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: consent to the named price was given only within the contract's own liability, and the fāsid contract does not create liability; liability arises from a supervening cause (loss under his hand), so it is by value or like, as when parties agree a sum for a loan's liability and it is disregarded.",
+     "excerpt_ar": "لأن المسمى إنما وقع الرضى به في ضمان العقد والعقد غير موجب للضمان",
+     "note": "Ibn Rajab's ground for the known madhhab (naṣṣ in the riwāyas of Ibn Manṣūr and Abū Ṭālib) that the thing received under a fāsid sale is guaranteed by value, not the price; the facts deny contractual liability. Stated rationale with an analogy to the ʿāriya: qiyas.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p068",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid"
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: ownership did not pass under the fāsid sale, so the named price is not owed; it is guaranteed like a usurped thing (by value or like).",
+     "excerpt_ar": "ويضمن أجرة مثله ونقصه ونحوه كما تقدم و (لا) يضمنه (بالثمن) لعدم انتقال الملك فيه",
+     "note": "Kashshāf's reason for «لا يضمنه بالثمن». Stated rationale (and analogy to the maghṣūb): qiyas.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p245",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: by handing it over the seller permitted its destruction for the named consideration, like one who says 'destroy it for a thousand dirhams', who is owed only what he named; Taqī al-Dīn calls it the qiyās of the madhhab, taken from nikāḥ.",
+     "excerpt_ar": "لأن إقباضه إياه إذن له في إتلافه بالعوض المسمى فأشبه ما لو قال له أتلفه بألف درهم",
+     "note": "Cited by Ibn Rajab for Abū Bakr's view, chosen by Taqī al-Dīn, that it is guaranteed by the named price (the position holding the contract's own terms). Analogy: qiyas. Ibn Rajab answers it (the price was set against ownership, not destruction), which is a rebuttal, not a proof for the other side.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p068",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid"
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the benefits perished under the lessee's hand against a consideration that never became the lessor's, so recourse is to their value (equivalent rent), as if he had used them.",
+     "excerpt_ar": "لأن المنافع تلفت تحت يده بعوض لم يسلم للمؤجر فرجع إلى قيمتها كما لو استوفاه",
+     "note": "Kashshāf's ground for «فعليه أجرة المثل، سكن أو لم يسكن» in the fāsid lease. Analogy/rationale: qiyas.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p046",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on fāsid nikāḥ: the named mahr is due in a fāsid nikāḥ, so the named rent is due in a fāsid lease (and more so, since the consideration is the object there).",
+     "excerpt_ar": "وقال القاضي في التعليق: يجب المسمى في نكاح فاسد. فيجب أن نقول مثله في الإجارة",
+     "note": "al-Qāḍī in al-Taʿlīq, reported by al-Inṣāf, for the named-rent position (the one al-Rawḍa gives as a riwāya). An analogy from nikāḥ: qiyas.",
+     "ref": "src:openiti-insaf-shamela21609/v06:p087",
+     "who": "al-Mardāwī, al-Inṣāf"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Takhrīj by analogy: the fāsid lease takes the same ruling as the fāsid sale, where Abū Bakr held the named price is owed (handing over is permission at the named consideration).",
+     "excerpt_ar": "ويتخرج على قول أبي بكر أنها تضمن بالأجرة المسماة والقول فيها كالقول في البيع سواء",
+     "note": "Ibn Rajab's derivation of the named-rent position from Abū Bakr's view in sale; the ground is the sale's ground carried over. Analogy: qiyas.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p068",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid"
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Marfūʿ ḥadīth of ʿĀʾisha in one wording: «and she has what he gave her for what he had of her», i.e. the named mahr, which al-Qāḍī transmits with chains from al-Barqānī and al-Khallāl.",
+     "excerpt_ar": "والمنصوص عن أحمد أن لها المسمى؛ لأن في بعض ألفاظ حديث عائشة: «ولها الذي أعطاها بما أصاب منها.»",
+     "note": "Cited by al-Mughnī for Aḥmad's naṣṣ that the named mahr settles after consummation in a fāsid nikāḥ. An āḥād marfūʿ report in one of its wordings, not graded here: zanni.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p012",
+     "who": "Ibn Qudāma, al-Mughnī"
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the fāsid nikāḥ is still concluded and carries most of the valid nikāḥ's rulings (ṭalāq, the death ʿidda), so the named mahr is owed as in the valid one.",
+     "excerpt_ar": "ولأن النكاح مع فساده ينعقد ويترتب عليه أكثر أحكام الصحيح من وقوع الطلاق",
+     "note": "Kashshāf's second ground for «استقر المسمى»; matches the facts' contractual liability. Analogy to the valid contract: qiyas.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p160",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ"
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Marfūʿ ḥadīth «she has the mahr for what he made lawful of her private parts»: the Prophet made the mahr due by the intercourse, and intercourse obliges the mahr al-mithl.",
+     "excerpt_ar": "ولنا، قول النبي - صلى الله عليه وسلم -: «فلها المهر بما استحل من فرجها» . فجعل لها",
+     "note": "Ibn Qudāma's proof («ولنا») for the mahr al-mithl in a fāsid nikāḥ (al-Khiraqī's view, also al-Shāfiʿī's). The ḥadīth reaches the amount only by inference, so zanni.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p012",
+     "who": "Ibn Qudāma, al-Mughnī"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the fāsid contract obliges nothing (no mahr before consummation), so the intercourse alone obliges, and it obliges the mahr al-mithl, as intercourse by mistake (shubha) does.",
+     "excerpt_ar": "وبقي الوطء موجبا بمفرده، فأوجب مهر المثل، كوطء الشبهة",
+     "note": "Ibn Qudāma's rational ground for the same position; aṣl waṭʾ al-shubha. Analogy: qiyas.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p012",
+     "who": "Ibn Qudāma, al-Mughnī"
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale (gharar): the stipend is something absent; it is not known whether it will reach him, or what it is.",
+     "excerpt_ar": "نص أحمد على كراهته في رواية أبي طالب وابن منصور وبكر بن محمد، وقال هو شيء مغيب لا يدرى أيصل إليه أم لا",
+     "note": "Aḥmad's own ground in three riwāyas, reported by Ibn Rajab, for not selling the stipend before receipt; the right is not settled on the facts. Stated rationale: qiyas.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p084",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid"
+    },
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "Ibn ʿAbbās: he does not know what will come out or when, so let him not buy it; he disliked it.",
+     "excerpt_ar": "قال ابن عباس ما يدريه ما يخرج ومتى يخرج لا يشتريه وكرهه",
+     "note": "Cited by Aḥmad (Abū Ṭālib's riwāya) on selling the increase in the stipend. No other ṣaḥābī is reported against it, though Ḥarb reports Ibn ʿAbbās allowing it for goods (position 1): fatwaSahabi, with the conflict in his own reports noted.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p084",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid"
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the stipend is absent, so selling it is a gharar sale.",
+     "excerpt_ar": "(ولا يصح بيع العطاء قبل قبضه) ؛ لأن العطاء مغيب فيكون من بيع الغرر",
+     "note": "Kashshāf's ground for the madhhab ruling. Classing it under gharar is a stated rationale: qiyas.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p167",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ"
+    },
+    {
+     "position": 1,
+     "tier": "fatwaSahabi",
+     "dalil": "Ibn ʿAbbās disliked selling the increase in the stipend except for goods (so for goods it is allowed), reported by Ḥarb with a sound chain.",
+     "excerpt_ar": "وروى حرب بإسناد صحيح عن ابن عباس أنه كان يكره بيع الزيادة في العطاء إلا بعرض",
+     "note": "Ibn Rajab cites it with Ḥarb's riwāya «لا بأس به بعرض», the permitting position. A ṣaḥābī's view with no ṣaḥābī reported against it (the contrary report is from the same Ibn ʿAbbās): fatwaSahabi.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p084",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid"
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: selling the deed is gharar (it is not known whether it will be paid).",
+     "excerpt_ar": "إحداهما: لا يجوز قال أحمد في رواية ابن منصور في بيع الصك هو غرر",
+     "note": "Aḥmad's ground in Ibn Manṣūr's riwāya, reported by Ibn Rajab, for not selling the deeds for goods. Stated rationale: qiyas.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p084",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid"
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the creditor cannot deliver a debt owed by another, so its sale to a third party is void, like selling a runaway slave.",
+     "excerpt_ar": "بيع دين بدين. ولنا أنه غير قادر على تسليمه، فلم يصح، كبيع الآبق",
+     "note": "al-Mughnī's proof («ولنا») for the madhhab that a debt is not sold to other than the debtor, which governs the deeds (settled debts on third parties). Analogy: qiyas.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p048",
+     "who": "Ibn Qudāma, al-Mughnī"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Farq: the deed refers to a man who acknowledges a debt he owes, unlike the stipend, which is absent and uncertain; so the deed may be sold for goods taken in the session.",
+     "excerpt_ar": "وقال الصك إنما يحتال على رجل وهو يقر بدين عليه والعطاء إنما هو شيء مغيب",
+     "note": "Aḥmad's own farq in the permitting riwāyas (Ḥarb, Ḥanbal, Muḥammad b. al-Ḥakam), reported by Ibn Rajab; on the facts the debt is settled on a third party. Stated rationale: qiyas.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p085",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: it is a purchase with property established in a solvent debtor's dhimma, like buying on one's own credit (with goods given in the session).",
+     "excerpt_ar": "ففيه قولان أحدهما يصح؛ لأنه ابتاع بمال ثابت في الذمة، فصح، كما لو اشترى في ذمته",
+     "note": "Given by al-Mughnī for one of al-Shāfiʿī's two sayings (debt on a solvent, willing debtor); a non-Ḥanbalī holder of the same ruling. Analogy: qiyas.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p048",
+     "who": "Ibn Qudāma, al-Mughnī"
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q054.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "The practice of Ibn ʿUmar: when he bought something he liked he left his counterpart (to make the sale binding), agreed upon by al-Bukhārī and Muslim.",
+     "excerpt_ar": "وذكر القاضي، أن ظاهر كلام أحمد، جواز ذلك؛ لأن ابن عمر كان إذا اشترى شيئا يعجبه فارق صاحبه. متفق عليه",
+     "note": "Cited by al-Qāḍī for the riwāya allowing departure lest the other annul. A ṣaḥābī's deed with no ṣaḥābī reported against him: fatwaSahabi. Ibn Qudāma ranks the Prophet's saying above it and suggests the ḥadīth did not reach him.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p485",
+     "who": "Ibn Qudāma, al-Mughnī"
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Marfūʿ ḥadīth of ʿAmr b. Shuʿayb from his father from his grandfather: «…it is not lawful for him to leave his counterpart for fear he will ask to annul», graded ḥasan by al-Tirmidhī.",
+     "excerpt_ar": "فلا يحل له أن يفارق صاحبه خشية أن يستقيله» . رواه النسائي، والأثرم، والترمذي، وقال: حديث حسن",
+     "note": "Cited for the riwāya chosen by Abū Bakr and al-Mughnī that departure for this purpose is forbidden («وظاهر الحديث تحريم مفارقة أحد المتبايعين لصاحبه خشية من فسخ البيع»). An āḥād ḥasan ḥadīth, explicit in wording: zanni.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p485",
+     "who": "Ibn Qudāma, al-Mughnī"
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q058.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: withdrawal is itself intercourse, so intercourse occurred during menses and the kaffāra (a dīnār or half) is due.",
+     "excerpt_ar": "طاهرة فحاضت في أثناء وطئه، ولو لم يستدم) الوطء بل نزع في الحال (لأن النزع جماع",
+     "note": "Kashshāf's ground for kaffāra where menses begin during intercourse and he withdraws at once (the takhrīj 'withdrawal is intercourse'). Stated rationale: qiyas.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p201",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ"
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The ḥadīth of the dīnār for intercourse in menses, by its generality, reaches the excused; and qiyās on the kaffāras of intercourse in the fast and iḥrām, which bind the excused.",
+     "excerpt_ar": "أحدهما، تجب لعموم الخبر؛ ولأنها كفارة تجب بالوطء، أشبهت كفارة الوطء في الصوم والإحرام",
+     "note": "al-Mughnī's wajh that the excused owes it; it adds «وعلى الرواية الأولى، عليه كفارة» for this very case. The ḥadīth applies only by generality, so zanni (the qiyās is the weaker part).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p245",
+     "who": "Ibn Qudāma, al-Mughnī"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the prohibition attached only once menses existed, and he left the intercourse then; unless he expected her menses by habit (then it resembles the fast case).",
+     "excerpt_ar": "وإلا فلا كفارة لأنه إنما تعلق به المنع بعد وجود الحيض وقد ترك الوطء حينئذ",
+     "note": "Ibn Rajab's «والأظهر» on the stated fact that he did not foresee it. Stated rationale: qiyas.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p105",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid"
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Marfūʿ ḥadīth «my community is pardoned mistake and forgetting», by its generality: the excused owes no kaffāra.",
+     "excerpt_ar": "والثاني، لا تجب لقوله - عليه السلام -: «عفي لأمتي عن الخطأ والنسيان»",
+     "note": "al-Mughnī's second wajh, which it applies to this case: «فعلى هذا لو وطئ طاهرا، فحاضت في أثناء وطئه، لا كفارة عليه». Same ruling as Ibn Rajab on these facts. The ḥadīth bears by generality: zanni.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p245",
+     "who": "Ibn Qudāma, al-Mughnī"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the kaffāra is to erase sin, so it is not due without fault, like the oath's kaffāra.",
+     "excerpt_ar": "ككفارة اليمين، فعلى هذا لو وطئ طاهرا، فحاضت في أثناء وطئه، لا كفارة عليه",
+     "note": "al-Mughnī's rational ground for the same wajh, applied in terms to this farʿ. Analogy: qiyas.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p245",
+     "who": "Ibn Qudāma, al-Mughnī"
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the qāḍī's deputies of general mandate are deputies of the Muslims, not his agents, so they are not removed by his death (as qāḍīs are not removed by the imām's death).",
+     "excerpt_ar": "فهل هم بمنزلة وكلائه أو نواب المسلمين فلا ينعزلون بموته؟ على وجهين ذكرهما الآمدي، وصحح صاحب الترغيب عدم الانعزال",
+     "note": "The ground of the wajh ṣāḥib al-Targhīb corrected, as Ibn Rajab frames it; the qiyās is on the qāḍī appointed by the imām. Stated rationale: qiyas.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p114",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Farq: they are the qāḍī's own deputies, unlike qāḍīs, who are deputies of the Muslims; hence the imām must appoint qāḍīs but qāḍīs need not appoint deputies.",
+     "excerpt_ar": "وحكى ابن عقيل عن الأصحاب أنهم ينعزلون لأنهم نواب القاضي بخلاف القضاة فإنهم نواب للمسلمين",
+     "note": "Ibn ʿAqīl's report from the aṣḥāb. Stated rationale: qiyas. Ibn Rajab's answer to it is a rebuttal, not a proof for position 0.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p114",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the agent: the deputy is the qāḍī's deputy, so he is removed by his death and dismissal, like an agent.",
+     "excerpt_ar": "فإذا استخلف القاضي خليفة، انعزل بموته وعزله؛ لأنه نائبه، فأشبه الوكيل",
+     "note": "al-Kāfī's ground for the madhhab. Analogy: qiyas.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p225",
+     "who": "Ibn Qudāma, al-Kāfī"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Same qiyās on the agent, with the farq from the qāḍī appointed by the imām.",
+     "excerpt_ar": "انعزلوا) لأنهم نوابه أشبهوا الوكيل، وهذا بخلاف من ولاه الإمام قاضيا",
+     "note": "Kashshāf's ground for «انعزلوا». Analogy: qiyas.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p293",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ"
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the permitted slave and child act only by permission, so they are confined to what they were permitted (their capacity is restricted to it), and delegation is outside it.",
+     "excerpt_ar": "(وليس لأحد منهما أن يوكل فيما يتولى مثله) من العمل (بنفسه) إذا لم يعجزه لأنهما يتصرفان بالإذن فاختصا",
+     "note": "Kashshāf states the ruling outright without building it on the agent's khilāf, on the ground of restricted, permission-based capacity, the ground of al-Talkhīṣ's flat denial. Stated rationale: qiyas.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p457",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale for the first of the two wujūh: he acts by permission, so he is confined to what was permitted.",
+     "excerpt_ar": "أحدهما: لا يجوز، جزم به في \" الوجيز \"، لأنه متصرف بالإذن فاختص بما أذن فيه",
+     "note": "al-Mubdiʿ on the Muqniʿ's «وهل له أن يوكل فيما يتولى مثله بنفسه؟ على وجهين», the two wujūh the jumhūr (and al-Kāfī) build on the agent; this is the denying wajh. Stated rationale: qiyas.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p320",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās for the agent's madhhab (Ibn Manṣūr's riwāya): he was not permitted to delegate nor does his permission imply it, as if he had been forbidden; and he was entrusted with what he can do himself, so he may not hand it to one not trusted, like the depositary.",
+     "excerpt_ar": "لأنه لم يأذن له في التوكيل، ولا تضمنه إذنه، فلم يجز، كما لو نهاه، ولأنه استئمان فيما يمكنه النهوض",
+     "note": "Al-Mughnī's proof in the agent, to which al-Kāfī's ṭarīq assimilates the slave (position 1 is 'as the agent'). Analogies to the forbidden agent and to the wadīʿa: qiyas.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p071",
+     "who": "Ibn Qudāma, al-Mughnī"
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he owns the dealing himself, so he owns it through a deputy, like the competent owner; and the master put him in his own place.",
+     "excerpt_ar": "والثاني: بلى، لأنه ملك التصرف بنفسه فملكه بنائبه كالمالك الرشيد، ولأنه أقامه مقام نفسه",
+     "note": "al-Mubdiʿ's ground for the permitting wajh, the agent's other riwāya applied to the permitted slave. Analogy to al-mālik al-rashīd: qiyas.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p320",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ"
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Qiyās for the agent's other riwāya (Ḥanbal's): the agent may act himself, so he may act through a deputy, like the owner.",
+     "excerpt_ar": "نقلها حنبل. وبه قال ابن أبي ليلى، إذا مرض أو غاب؛ لأن الوكيل له أن يتصرف بنفسه، فملكه نيابة كالمالك",
+     "note": "Al-Mughnī's ground for the permitting riwāya in the agent, on which the slave's case is built by al-Kāfī's ṭarīq. Analogy: qiyas.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p071",
+     "who": "Ibn Qudāma, al-Mughnī"
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the permitted child (mumayyiz) and slave act only by permission, so they are confined to what was permitted, as the agent is.",
+     "excerpt_ar": "(وليس لأحد منهما أن يوكل فيما يتولى مثله) من العمل (بنفسه) إذا لم يعجزه لأنهما يتصرفان بالإذن فاختصا",
+     "note": "Kashshāf names both («أحد منهما» = the mumayyiz and the slave) and closes the sentence «كالوكيل», al-Kāfī's assimilation. Stated rationale/analogy: qiyas.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p457",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ"
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās for the agent's madhhab: no permission to delegate, none implied; entrusted with what he can do himself, like the depositary.",
+     "excerpt_ar": "لأنه لم يأذن له في التوكيل، ولا تضمنه إذنه، فلم يجز، كما لو نهاه، ولأنه استئمان فيما يمكنه النهوض",
+     "note": "The child is «كالوكيل» per al-Kāfī, so the agent's proof is the proof for the child's denial. Analogy: qiyas.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p071",
+     "who": "Ibn Qudāma, al-Mughnī"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he owns the dealing himself, so he owns it through a deputy, like the competent owner.",
+     "excerpt_ar": "والثاني: بلى، لأنه ملك التصرف بنفسه فملكه بنائبه كالمالك الرشيد، ولأنه أقامه مقام نفسه",
+     "note": "al-Mubdiʿ's ground for the permitting wajh of the permitted one in bāb al-ḥajr, which covers the permitted child. Analogy: qiyas.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p320",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās for the agent's other riwāya: who may act himself may act through a deputy, like the owner.",
+     "excerpt_ar": "نقلها حنبل. وبه قال ابن أبي ليلى، إذا مرض أو غاب؛ لأن الوكيل له أن يتصرف بنفسه، فملكه نيابة كالمالك",
+     "note": "The child takes the agent's khilāf, so this is the proof for the permitting side. Analogy: qiyas.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p071",
+     "who": "Ibn Qudāma, al-Mughnī"
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the agent: the partner and the muḍārib delegating are as the agent delegating, and the sound madhhab denies the agent delegation in what he can do himself.",
+     "excerpt_ar": "وقد علمت الصحيح من المذهب: أنه لا يجوز للوكيل التوكيل فيما يتولى مثله إذا لم يعجز عنه فكذلك هنا",
+     "note": "al-Inṣāf's argument for the first ṭarīq (al-Qāḍī and most aṣḥāb). Analogy: qiyas.",
+     "ref": "src:openiti-insaf-shamela21609/v05:p417",
+     "who": "al-Mardāwī, al-Inṣāf"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the breadth, volume and usual length of their dealings are indications of permission to delegate sale and purchase.",
+     "excerpt_ar": "وذلك لعموم تصرفهما وكثرته، وطول مدته غالبا. وهذه قرائن تدل على الإذن في التوكيل في البيع والشراء",
+     "note": "al-Inṣāf's ground for the second ṭarīq (put first in al-Muḥarrar, preferred by Abū al-Khaṭṭāb). It argues an implied permission from the contract's nature; the case does not supply that permission as a fact. Stated rationale: qiyas.",
+     "ref": "src:openiti-insaf-shamela21609/v05:p417",
+     "who": "al-Mardāwī, al-Inṣāf"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Farq: the agent delegating would obtain by the contract its own equal, but the partner obtains by partnership something narrower (agency is narrower than partnership), so he may delegate.",
+     "excerpt_ar": "وقيل: يجوز للشريك التوكيل، بخلاف الوكيل؛ لأنه لو جاز للوكيل التوكيل، لاستفاد بحكم العقد مثل العقد",
+     "note": "al-Mughnī's ground for the partner (Ibn ʿAqīl's farq per Ibn Rajab); it covers the partner, not the muḍārib. Stated rationale: qiyas.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p017",
+     "who": "Ibn Qudāma, al-Mughnī"
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the agent: the ḥākim deputising acts for others by permission, so he is as the agent, who may not delegate what he can do himself.",
+     "excerpt_ar": "(وكذا) أي كالوكيل فيما تقدم تفصيله (وصي يوكل أو حاكم يستنيب) ; لأن كلا منهما متصرف لغيره بالإذن",
+     "note": "Sharḥ al-Muntahā's ground for the first ṭarīq (al-Qāḍī in al-Mujarrad and al-Khilāf). Analogy: qiyas.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p189",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the purpose of judging is deciding between litigants and conveying rights to their holders, which is achieved by himself or another, so he may appoint a deputy unless forbidden.",
+     "excerpt_ar": "وإن لم ينهه، جاز له الاستخلاف؛ لأن الغرض من القضاء الفصل بين المتخاصمين وإيصال الحق إلى مستحقه، فجاز أن يليه بنفسه وبغيره",
+     "note": "al-Kāfī's ground for the qāḍī's istikhlāf without permission. Stated rationale: qiyas.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p225",
+     "who": "Ibn Qudāma, al-Kāfī"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the qāḍī is not the imām's deputy but a guardian for the Muslims, so in his office he has the imām's standing, unlike the agent; and the burden of all cases would stall public interests, like an agent unable to do it all.",
+     "excerpt_ar": "بناء على أن القاضي ليس بنائب للإمام بل هو ناظر للمسلمين لا عمن ولاه",
+     "note": "Ibn Rajab's statement of the second ṭarīq's grounds (al-Aḥkām al-Sulṭāniyya, Ibn ʿAqīl, al-Muḥarrar, Aḥmad's naṣṣ via Muhannā). Stated rationale: qiyas.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p125",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid"
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q149.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "The view of Ibn Masʿūd that one with no heir may bequeath all his property.",
+     "excerpt_ar": "(ومن لا وارث له بفرض أو عصبة أو رحم تجوز وصيته بكل ماله) روي عن ابن مسعود",
+     "note": "Kashshāf (and al-Mubdiʿ) report it from Ibn Masʿūd with no ṣaḥābī reported against it, for the madhhab. fatwaSahabi.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p339",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ"
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās by the ʿilla the Prophet stated: the bar on exceeding a third is for the heirs' right («that you leave your heirs rich is better…»); with no heir the ʿilla is absent, so the bar lapses.",
+     "excerpt_ar": "لأن منع مجاوزة الثلث ثبت لحق الورثة بدليل قوله - صلى الله عليه وسلم -: «إنك إن تدع ورثتك أغنياء خير",
+     "note": "Kashshāf's main ground for the madhhab. The ḥadīth is about another case (Saʿd, who had an heir); it is carried over by its ʿilla, so qiyas, not zanni.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p339",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ"
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same ʿilla argument: the bar is for the heir's right, so when there is none it falls with its ʿilla, as in health.",
+     "excerpt_ar": "وقاله أهل العراق؛ لأن المنع من الزيادة على الثلث لحق الوارث، فإذا عدم، وجب أن يزول المنع لزوال علته",
+     "note": "al-Mubdiʿ's ground for the madhhab (also the Iraqis'). Stated rationale: qiyas.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p234",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he has those who pay blood-money for him (the Muslims), so the bequest is not effective beyond a third, as if he had an heir; and the Muslims (bayt al-māl) inherit him.",
+     "excerpt_ar": "(وعنه: لا يجوز إلا الثلث) وهو قول الأوزاعي؛ لأن له من يعقل عنه، فلم تنفذ بأكثر من الثلث، كما لو كان له وارث",
+     "note": "al-Mubdiʿ's ground for Ibn Manṣūr's riwāya (third only), the bayt al-māl-as-heir basis Ibn Rajab mentions. Analogy: qiyas.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p234",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ"
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q149.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the term is a right that passes to the heir, and here there is no heir, so the debt falls due.",
+     "excerpt_ar": "قال القاضي وابن عقيل في المجرد وصاحب المغني: يحل ; لأن الأصل يستحقه الوارث وقد عدم هنا",
+     "note": "Ibn Rajab's report of the ground of al-Qāḍī, Ibn ʿAqīl and al-Mughnī for the debt falling due. Stated rationale: qiyas.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p321",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid"
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: where the debt cannot be secured, for want of an heir or otherwise, it falls due to avert the preponderant harm to the creditor.",
+     "excerpt_ar": "بأن مات عن غير وارث حل ولو ضمنه الإمام (أو) ل (غيره) أي غير عدمه، بأن خلف وارثا لكنه لم يوثق (حل) الدين لغلبة الضرر",
+     "note": "Kashshāf on al-Iqnāʿ's «فإن تعذر التوثق لعدم وارث أو غيره حل», stated decisively. Stated rationale: qiyas.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p438",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: he does have an heir (the Muslims), only not a determinate one, so the term may be kept.",
+     "excerpt_ar": "وذكر القاضي في خلافه احتمالين ; لأن له وارثا لكنه غير معين",
+     "note": "The second of the two iḥtimāls al-Qāḍī gives in his Khilāf, as Ibn Rajab reports its ground. Stated rationale: qiyas.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p321",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid"
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f013",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the apparent state (ẓāhir) favours whichever spouse claims the mahr al-mithl, so his or her word is taken, as the denier's word is taken in all other claims (aṣl: the munkir in sāʾir al-daʿāwā; ʿilla: the ẓāhir is with him).",
+     "excerpt_ar": "ولنا، أن الظاهر قول من يدعي مهر المثل، فكان القول قوله، قياسا على المنكر في سائر الدعاوى",
+     "note": "Cited by Ibn Qudāma («ولنا») for the riwāya that the word is with whoever claims the mahr al-mithl; on these facts the wife's claim matches the mahr al-mithl, so the ẓāhir is with her. A stated analogy: qiyas.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p234",
+     "who": "Ibn Qudāma, al-Mughnī"
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same qiyās: the ẓāhir supports the truthfulness of the one claiming the mahr al-mithl, so he/she resembles the denier in other claims.",
+     "excerpt_ar": "لأن الظاهر صدق من يدعيه، فيقدم قوله، أشبه المنكر في سائر الدعاوى",
+     "note": "al-Mubdiʿ's ground for «وعنه: القول قول من يدعي مهر المثل منهما», which al-Qāḍī and his companions upheld. Analogy: qiyas.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p218",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ"
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The marfūʿ ḥadīth «but the oath is on the one claimed against», by its generality: the husband denies the increase claimed against him, so he is the one who takes the oath and his word stands, whatever the mahr al-mithl.",
+     "excerpt_ar": "لأنه منكر لما يدعى عليه فدخل في عموم قوله - صلى الله عليه وسلم - «ولكن اليمين على المدعى عليه»",
+     "note": "Kashshāf's proof for the madhhab (the husband's word on oath, «ولو لم يكن ما ادعاه الزوج مهر مثل»). The ḥadīth reaches the farʿ only through its generality («فدخل في عموم»), so zanni, not qati.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p154",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the husband denies the excess over what he admits, and the denier's word is taken.",
+     "excerpt_ar": "(فالقول قول الزوج) قدمه في \" المحرر \" و\" الفروع \"؛ لأنه منكر للزيادة",
+     "note": "al-Mubdiʿ's first ground for the husband's word (put first in al-Muḥarrar and al-Furūʿ). Stated rationale: qiyas.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p218",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ"
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

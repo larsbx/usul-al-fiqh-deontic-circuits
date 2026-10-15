@@ -1,0 +1,529 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b12: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The lawfulness of sale accords with the original state, since benefits are originally lawful; any prohibited sale departs from the aṣl, which is why the Prophet took care to name the void sales, so the āya is general and specialised",
+     "ref": "src:openiti-kawkab-shamela12019/v03:p427",
+     "excerpt_ar": "وهو أن حل البيع على وفق الأصل من حيث إن الأصل في المنافع الحل",
+     "who": "Ibn al-Najjār, Sharḥ al-Kawkab al-Munīr",
+     "note": "Given to explain why the sound view takes {وأحل الله البيع} as general and not mujmal. Its ground is the original permissibility of benefits: istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "God reported their saying that sale is «like ribā», so what tells them apart must be taken into account; the āya therefore needs clarification",
+     "ref": "src:openiti-ibnmuflih-sham19y122256/v03:p1011",
+     "excerpt_ar": "خلافا للحلواني وبعض الشافعية؛ لأن الله حكى عنهم: أنه (مثل الربا)، فاعتبر ما يميز",
+     "who": "Ibn Mufliḥ, Uṣūl al-Fiqh",
+     "note": "The ground for al-Ḥalwānī's view that it is mujmal (Ibn Mufliḥ then rebuts it). A rationale drawn from the context of the āya: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Sales in the Sharīʿa are some lawful and some forbidden, so the word is ambivalent between them until the Sharīʿa clarified which",
+     "ref": "src:openiti-tahbir-shamela6336/v06:p2773",
+     "excerpt_ar": "فمن قال إنه مجمل قال لتردده بين هذه البياعات الجائزة، والمحرمة، ثم ورد البيان",
+     "who": "al-Mardāwī, al-Taḥbīr",
+     "note": "The linguistic rationale of those who call it mujmal, reported in al-Taḥbīr. A linguistic rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The article in «الطلاق» is for istighrāq, so it covers all of divorce, which is three",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p484",
+     "excerpt_ar": "لأن الألف واللام للاستغراق، فيقتضي استغراق الكل، وهو ثلاث",
+     "who": "Ibn Qudāma, al-Mughnī (Aḥmad's naṣṣ in Muhannā's riwāya)",
+     "note": "Given for «أنت طالق الطلاق» and carried to «الطلاق يلزمني» by «وإن أطلق ففيه روايتان، وجههما ما تقدم». A linguistic rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The article may refer to a known divorce, and in genus nouns it is often not for istighrāq («إذا عقل الصبي الطلاق»), so it is not taken as general without an intention",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p484",
+     "excerpt_ar": "لأنه يحتمل أن تعود الألف واللام إلى معهود، يريد الطلاق الذي أوقعته",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The ground of the riwāya of one divorce, carried to this farʿ by «وجههما ما تقدم». A linguistic rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Customary speakers do not take it to be three and do not know that the article is for istighrāq; what they mean by it is one, so it is as if they intended one",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p484",
+     "excerpt_ar": "والأشبه في هذا جميعه أن يكون واحدة؛ لأن أهل العرف لا يعتقدونه ثلاثا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's own preference on «الطلاق يلزمني» and the like (the madhhab per al-Inṣāf). A rationale from custom: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Rifāʿa's ḥadīth: «God does not accept a man's prayer until he performs wuḍūʾ properly, faces the qibla and says: Allāhu akbar»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p333",
+     "excerpt_ar": "حتى يضع الوضوء مواضعه، ثم يستقبل القبلة، فيقول: الله أكبر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited «ولنا» against Abū Ḥanīfa and al-Shāfiʿī for the exact form. The Prophet's saying, a connected marfūʿ āḥād: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The Prophet always opened prayer with «Allāhu akbar», and no departure from it is reported until he left the world, which shows departing from it is not allowed",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p333",
+     "excerpt_ar": "يفتتح الصلاة بقوله: الله أكبر» . لم ينقل عنه عدول عن ذلك حتى فارق الدنيا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A report of his constant practice, for the exact form. Connected marfūʿ āḥād of his deed: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The form occurs in the speech of God, His Messenger and the eloquent only so, so the unqualified word «takbīr» refers to it alone, as «tasmiya» refers to «bi-smi llāh»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p334",
+     "excerpt_ar": "فإطلاق لفظ التكبير ينصرف إليها دون غيرها، كما أن إطلاق لفظ التسمية ينصرف",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The ʿahd reading of «تحريمها التكبير» on which the madhhab rests. A linguistic rationale with analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "al-Shāfiʿī: «الله الأكبر» suffices because the article changes neither the structure nor the meaning; it only makes the word definite",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p333",
+     "excerpt_ar": "الشافعي قال: تنعقد بقوله: الله الأكبر. لأن الألف واللام لم تغيره عن بنيته ومعناه",
+     "who": "Ibn Qudāma, al-Mughnī (reporting al-Shāfiʿī)",
+     "note": "A non-Ḥanbalī holder of the view that variants suffice. A linguistic rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Abū Ḥanīfa: any name of God said in veneration suffices, since it is remembrance of God in veneration like «الله أكبر», and the khuṭba's wording is not fixed",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p333",
+     "excerpt_ar": "لأنه ذكر الله تعالى على وجه التعظيم، أشبه قوله: الله أكبر. واعتبر ذلك بالخطبة",
+     "who": "Ibn Qudāma, al-Mughnī (reporting al-Ḥākim for Abū Ḥanīfa)",
+     "note": "A non-Ḥanbalī holder of the wider view that other forms suffice. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The purpose is achieved, and it is not Qurʾān in which the order is required",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p398",
+     "excerpt_ar": "وجه آخر، أنه يجزئ. وهو قول الشافعي؛ لأن المقصود يحصل، وليس هو بقرآن يعتبر فيه النظم",
+     "who": "Ibn Qudāma, al-Mughnī (al-Qāḍī's wajh, al-Shāfiʿī)",
+     "note": "The ground of the wajh that «عليكم السلام» suffices, on exactly these facts. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The Prophet said it in order and commanded it so; and he told Abū Tamīma «Do not say ʿalayka al-salām, for ʿalayka al-salām is the greeting of the dead» (Aḥmad, Musnad)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p398",
+     "excerpt_ar": "ولنا أن النبي - صلى الله عليه وسلم - قاله مرتبا، وأمر به كذلك. وقال لأبي تميمة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited «ولنا» for its not sufficing. The Prophet's deed, command and prohibition, connected marfūʿ āḥād: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is a dhikr said at one end of the prayer, so it may not be reversed, like the takbīr",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p398",
+     "excerpt_ar": "ولأنه ذكر يؤتى به في أحد طرفي الصلاة، فلم يجز منكسا، كالتكبير",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Analogy on the opening takbīr for the same ruling: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "It contradicts his saying «Pray as you have seen me pray»; it alters the reported salām and drops a letter (the article) that entails istighrāq",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p362",
+     "excerpt_ar": "لمخالفته لقوله - صلى الله عليه وسلم - «صلوا كما رأيتموني أصلي» ومن تعمد قولا من هذه الصور",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Cited for the variants (including «عليكم السلام») not sufficing. A connected marfūʿ āḥād by generality: zanni."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Where there is neither intention nor occasion, the article is for the genus, so it covers every governor appointed",
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v11:p023",
+     "excerpt_ar": "قلت: وهو الصواب حيث لم يكن نية ولا سبب فيكون للجنس فيشمل كل وال يولى",
+     "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ (printed with al-Furūʿ)",
+     "note": "Given for the wajh that the governor is not fixed. A linguistic rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The one who was governor at the time of the oath is not fixed, because the word turns to the genus; so if he is removed or dies, the oath is kept by reporting to his successor",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p453",
+     "excerpt_ar": "إلا رفعته لذي الولاية لم يتعين من كان واليا حين الحلف لانصرافه إلى",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "The Muntahā's ruling with al-Buhūtī's linguistic ground (the printed text reads «الحبس», evidently for «الجنس»). qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The governor at the time of the oath is fixed, the article being for ʿahd, and the outward state of things requires it",
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v11:p023",
+     "excerpt_ar": "والوجه الثاني: يتعين وهو من كان اليمين في زمنه فيكون للعهد وظاهر الحال يقتضي ذلك",
+     "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ (printed with al-Furūʿ)",
+     "note": "The ground of the other wajh. A linguistic and contextual rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Taqī al-Dīn: trees attached to the land are under the hand of the land's holders; that hand stands until a proof displaces what it entails (e.g. that the planter is known to have planted it with his own money)",
+     "ref": "src:openiti-rajab-shamela21730/v01:p035",
+     "excerpt_ar": "أن ما كان متصلا بالأرض من الشجر فيد أهل الأرض ثابتة عليه ما لم تأت حجة تدفع موجب اليد",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid (reporting Taqī al-Dīn)",
+     "note": "Given by Ibn Rajab on exactly this ṣūra (land proven, trees standing in it) for the trees following the land. A stated rationale from the effect of the hand: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f002",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The clothes are separate from the slave and the holder's hand is on them, so his word prevails in them",
+     "ref": "src:openiti-rajab-shamela21730/v01:p035",
+     "excerpt_ar": "فقال صاحب الكافي والترغيب هي له لأن يده عليها وهي منفصلة عن العبد",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid (reporting al-Kāfī and al-Targhīb)",
+     "note": "The ground given for the holder's position on these very facts (slave's ownership proven, holder claims the clothes). A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "In the parallel case of the usurped slave, the clothes on him are the usurper's because they and the slave are in his hand, so his word is accepted in them",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p231",
+     "excerpt_ar": "اختلفا في الثياب التي على العبد المغصوب هل هي للغاصب أو للمالك؟ فهي للغاصب؛ لأنها والعبد في يده",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "The Kāfī passage Ibn Rajab cites: the slave is the owner's, the holder claims the clothes; the hand decides for the holder. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "His acknowledgment did not cover the container, which may be a container belonging to the acknowledger, so it is not binding on him",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p128",
+     "excerpt_ar": "يكون مقرا بالمظروف دون الظرف. هذا اختيار ابن حامد ومذهب مالك والشافعي لأن إقراره لم يتناول الظرف",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Ḥāmid's wajh (the ashhar) on exactly these facts (dates in a bag, sword in a sheath). A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Against Abū Ḥanīfa: the kerchief may be the usurper's own while serving as the garment's container, as if he said «a garment in my kerchief», which is no acknowledgment of it; so too when unqualified, like «I usurped a riding beast in its stable»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p128",
+     "excerpt_ar": "ولنا، أنه يحتمل أن يكون المنديل للغاصب، وهو ظرف للثوب، فيقول: غصبت ثوبا في منديل لي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ولنا» for the contents-only ruling, extended to usurpation. Analogy (كما لو قال: غصبت دابة في إصطبلها): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He mentioned the container in the course of the acknowledgment and it can be acknowledged, so it binds him, as if he said «he has with me a slave wearing a turban»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p128",
+     "excerpt_ar": "والثاني، يلزمه الجميع؛ لأنه ذكر ذلك في سياق الإقرار، ويصلح أن يكون مقرا به، فلزمه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The ground of the other wajh (both). Analogy on the slave with a turban: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The shafīʿ takes the share without the buyer's choice, so he is entitled to it only by bringing its price, as with delivery of the sold thing",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p261",
+     "excerpt_ar": "لأن الشفيع يأخذ الشقص بغير اختيار المشتري، فلا يستحق ذلك إلا بإحضار عوضه، كتسليم المبيع",
+     "who": "Ibn Qudāma, al-Mughnī (reporting Abū Ḥanīfa and his companions)",
+     "note": "The argument of a non-Ḥanbalī holder of the same ruling: no shufʿa until the price is brought. Analogy on delivery in sale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is an acquisition of the sold thing for a price, so it does not wait on producing the price, as in sale; if the price is not brought within the delay, the taking is annulled",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p261",
+     "excerpt_ar": "ولنا، أنه تملك للمبيع بعوض، فلا يقف على إحضار العوض، كالبيع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ولنا» for the shafīʿ owning before paying (the price owed by him). Analogy on sale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "al-Qāḍī and Abū al-Khaṭṭāb: he owns it by the demand, since the prior sale is a cause and the demand joined to it is like the offer in sale joined by acceptance",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p239",
+     "excerpt_ar": "يملكه بالمطالبة؛ لأن البيع السابق سبب، فإذا انضمت إليه المطالبة، كان كالإيجاب في البيع انضم إليه القبول",
+     "who": "Ibn Qudāma, al-Mughnī (reporting al-Qāḍī and Abū al-Khaṭṭāb)",
+     "note": "The madhhab position named in the case note (owns the share by demand). Analogy on offer and acceptance: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Jābir was asked about the price of the cat and said: the Prophet rebuked it (Muslim); in Abū Dāwūd's wording «he forbade the price of the cat» (al-Tirmidhī: ḥasan, with iḍṭirāb in its chain)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p193",
+     "excerpt_ar": "لما روى مسلم عن جابر، أنه «سئل عن ثمن السنور، فقال: زجر النبي - صلى الله عليه وسلم - عن ذلك»",
+     "who": "Ibn Qudāma, al-Mughnī (Abū Bakr's ground)",
+     "note": "Cited for the riwāya that dislikes its price (Abū Bakr's choice), the position Ibn Rajab calls «أصح الروايتين». Connected marfūʿ in Muslim: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "aqrabSahabi",
+     "dalil": "Abū Hurayra disliked the price of the cat",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p193",
+     "excerpt_ar": "وعن أحمد أنه كره ثمنها. وروي ذلك عن أبي هريرة، وطاوس، ومجاهد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A ṣaḥābī's view for the prohibition; Ibn ʿAbbās is reported for permission in the same passage: aqrabSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "aqrabSahabi",
+     "dalil": "Ibn ʿAbbās held the sale of the cat permitted",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p193",
+     "excerpt_ar": "فقال الخرقي: يجوز بيعها. وبه قال ابن عباس، والحسن، وابن سيرين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A ṣaḥābī's view for validity, with Abū Hurayra reported against it: aqrabSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Sale was legislated as the way to reach needs and permitted benefits; whatever may be lawfully benefited from should be saleable; the ḥadīth is read of the unowned or useless cat",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p193",
+     "excerpt_ar": "ويحمل الحديث على غير المملوك منها، أو ما لا نفع فيه منها؛ بدليل ما ذكرنا، ولأن البيع شرع طريقا للتوصل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ولنا» for al-Khiraqī's permission (the madhhab per al-Inṣāf), carried from the hunting beasts. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The general ḥadīths barring the killer from inheriting («ليس للقاتل شيء», which ʿUmar heard from the Prophet, Mālik's Muwaṭṭaʾ and Aḥmad; Ibn ʿAbbās's marfūʿ «فليس لقاتل ميراث»), specialised only by killing that carries no liability",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p366",
+     "excerpt_ar": "ولنا، على أبي حنيفة وأصحابه عموم الأخبار، خصصنا منها القتل الذي لا يضمن",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited against Abū Ḥanīfa, who lets the child, the madman and the sleeper inherit: the generality of connected marfūʿ āḥād reports covers these killers. Āḥād by generality: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is a killing that entails liability, so it bars inheritance, like the mistaken killing",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p366",
+     "excerpt_ar": "ولأنه قتل مضمون فيمنع الميراث كالخطأ",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given on the same facts (child, madman) against Abū Ḥanīfa. Analogy on khaṭaʾ: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The killing by the child or madman is a forbidden killing that destroys an inviolable soul, and letting him inherit would lead to it; so it is unlike killing by right",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p366",
+     "excerpt_ar": "ولا يصح القياس على قتل الصبي، والمجنون؛ لأنه قتل محرم، وتفويت نفس معصومة، والتوريث يفضي إليه ، بخلاف مسألتنا إذا ثبت هذا،",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma states the rationale (sadd: the ruling exists to prevent forbidden killing) for barring the child and madman. qiyas. The excerpt runs through the qualifier that follows in the source."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The child, madman, sleeper and the like killed without being suspected of it and without sin, so it resembles killing in a ḥadd, which does not bar inheritance",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p366",
+     "excerpt_ar": "فإنه يرثه؛ لأنه قتل غير متهم فيه، ولا مأثم فيه، فأشبه القتل في الحد",
+     "who": "Ibn Qudāma, al-Mughnī (reporting Abū Ḥanīfa)",
+     "note": "The argument of Abū Ḥanīfa's school, who hold the same ruling as Ibn ʿAqīl's wajh (no bar where suspicion is absent). Its ground is the absent suspicion. Analogy on the ḥadd: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Killing bars inheritance, which is stronger than a bequest, so all the more it bars the bequest; and the bequest is treated like inheritance, so what bars the one bars the other. Abū Bakr also relies on Aḥmad's naṣṣ that the mudabbar who kills his master voids his tadbīr, tadbīr being a bequest",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p224",
+     "excerpt_ar": "لأن القتل يمنع الميراث الذي هو آكد من الوصية، فالوصية أولى، ولأن الوصية أجريت مجرى الميراث، فيمنعها ما يمنعه",
+     "who": "Ibn Qudāma, al-Mughnī (Abū Bakr's ground)",
+     "note": "Abū Bakr's ground for voiding the bequest to the killer, which covers the killing after the bequest. A fortiori analogy on inheritance: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "A killing that supervenes on the bequest voids it: killing bars inheritance because he hastened what had a cause already in place and is met with the opposite of his aim; this holds for a bequest made before the killing, as tadbīr is voided by a later killing",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p224",
+     "excerpt_ar": "القتل إنما منع الميراث، لكونه بالقتل استعجل الميراث الذي انعقد سببه فعورض بنقيض قصده",
+     "who": "Ibn Qudāma, al-Mughnī (Abū al-Khaṭṭāb's distinction, which Ibn Qudāma calls «حسن»)",
+     "note": "Exactly these facts: the legatee kills after the bequest. A stated ʿilla carried from inheritance: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A gift to the killer is valid, so a bequest to him is valid, as to a dhimmī; Ibn Ḥāmid also cites Aḥmad's naṣṣ that the victim's pardon of a mistaken wound counts from the third, «and this is a bequest to a killer»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p224",
+     "excerpt_ar": "لأن الهبة له تصح، فصحت الوصية له، كالذمي",
+     "who": "Ibn Qudāma, al-Mughnī (Ibn Ḥāmid's wajh)",
+     "note": "Ibn Ḥāmid, named in al-Inṣāf as the choice of «لا تبطل». Analogy on the gift and on the dhimmī: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Anas: the Prophet was asked «Shall we make wine into vinegar?» and said «No» (al-Tirmidhī: ḥasan ṣaḥīḥ; Muslim)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p173",
+     "excerpt_ar": "سئل رسول الله - صلى الله عليه وسلم - أنتخذ الخمر خلا؟ قال: لا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The prohibition of making it vinegar, cited «ولنا» for its not becoming lawful when made vinegar. A connected marfūʿ āḥād: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Abū Ṭalḥa asked about orphans who inherited wine: «Pour it out». «May I not make it vinegar?» «No» (Abū Dāwūd). A prohibition entailing taḥrīm; had there been a way to salvage it, he would not have ordered the orphans' property poured out",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p173",
+     "excerpt_ar": "أهرقها قال: أفلا أخللها؟ قال: لا» رواه أبو داود. وهذا نهي يقتضي التحريم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the same ruling. A connected marfūʿ āḥād: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "ʿUmar on the minbar: «Vinegar of wine that has been spoiled is not lawful until God Himself spoils it», spread among the people and not objected to",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p173",
+     "excerpt_ar": "لا يحل خل خمر أفسدت، حتى يكون الله تعالى هو تولى إفسادها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma calls it «إجماع الصحابة», but from its being preached and not opposed (tacit), which by the rule is not ijmāʿ; no ṣaḥābī is reported against it on this point: fatwaSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Abū Ḥanīfa: the cause of its prohibition goes when it is made vinegar, so it becomes pure, as when it turns by itself; purification does not depend on whether God or a human did it, as with purifying a garment, body or ground",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p172",
+     "excerpt_ar": "تطهر في الحالين؛ لأن علة تحريمها زالت بتخليلها فطهرت",
+     "who": "Ibn Qudāma, al-Mughnī (reporting Abū Ḥanīfa)",
+     "note": "The argument of a non-Ḥanbalī holder of the wajh that it is purified, which Abū al-Khaṭṭāb reports in the madhhab («وقيل: تطهر»). Analogy on self-turned wine: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "«What nasab prohibits, riḍāʿ prohibits» (the Prophet; muttafaq ʿalayh), with the āya {وحلائل أبنائكم الذين من أصلابكم}, whose «من أصلابكم» excludes only the adopted son",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p071",
+     "excerpt_ar": "من نسب أو رضاع لقوله تعالى {وحلائل أبنائكم الذين من أصلابكم} [النساء: 23] مع ما تقدم من قوله",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Cited for counting the wife of a milk son among the ḥalāʾil. The āya is not explicit on milk sons and the ḥadīth is āḥād applied by generality: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The āya {وحلائل أبنائكم} [al-Nisāʾ 23] covers the wives of his sons and daughters' sons, by nasab or riḍāʿ, by the contract alone",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p112",
+     "excerpt_ar": "فيحرم على الرجل أزواج أبنائه، وأبناء بناته، من نسب أو رضاع، قريبا كان أو بعيدا بمجرد العقد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma reads the milk son's wife into the āya, adding «ولا نعلم في هذا خلافا» (tacit, not ijmāʿ). The Book by generality: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Aḥmad (Ibn Badīnā) on the wife of a milk son: «I do not like that he marry her; what nasab prohibits, riḍāʿ prohibits», grounding it on the ḥadīth",
+     "ref": "src:openiti-rajab-shamela21730/v01:p325",
+     "excerpt_ar": "لا يعجبني أن يتزوجها، يحرم من الرضاع ما يحرم من النسب",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid (reporting Aḥmad)",
+     "note": "Aḥmad's answer on exactly this case, citing the marfūʿ ḥadīth. A marfūʿ āḥād by generality: zanni."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The grandfather stands in the father's place in ʿaṣaba and the rulings of lineage, so likewise in drawing the walāʾ",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p420",
+     "excerpt_ar": "لأن الجد يقوم مقام الأب في التعصيب وأحكام النسب، فكذلك في جر الولاء",
+     "who": "Ibn Qudāma, al-Mughnī (for the riwāya that he draws it)",
+     "note": "The ground of the riwāya «وعنه أنه يجره», held unqualified (with or without the father) by Shurayḥ, al-Shaʿbī, al-Nakhaʿī and others. Analogy on the father: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The original state is that the walāʾ remains with whoever is entitled to it; it departs from that only by agreement on the father's emancipation, and the grandfather is not his equal",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p420",
+     "excerpt_ar": "ولنا، أن الأصل بقاء الولاء لمستحقه، وإنما خولف هذا الأصل للاتفاق على أنه ينجر بعتق الأب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ولنا» for Aḥmad's naṣṣ that the grandfather does not draw it (the madhhab). Continuance of the original state: istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The grandfather is related through another and the walāʾ does not settle on him (a later-freed father draws it from him), so he does not draw it, like the brother",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p420",
+     "excerpt_ar": "ولأن الجد يدلي بغيره، ولا يستقر الولاء عليه، فلم يجر الولاء كالأخ",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For the same ruling. Analogy on the brother: qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

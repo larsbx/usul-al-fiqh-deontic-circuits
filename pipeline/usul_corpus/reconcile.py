@@ -35,7 +35,7 @@ STAGES = ("jam", "naskh", "tarjih", "tawaqquf", "unweighed")
 # Proof tiers, weakest first; mirrors `Usul.Tarjih.Tier.rank` (Rawḍa v02 p389–390, Aḥmad's order of resort).
 TIERS = ("istishab", "qiyas", "mursalDaif", "aqrabSahabi", "fatwaSahabi", "zanni", "qati", "ijma")
 TIER_RANK = {t: i for i, t in enumerate(TIERS)}
-# The advantages the Rawḍa (v02 p391–401) and al-Kawkab (v04 p650–703) state between proofs of one tier;
+# The advantages the Rawḍa (v02 p391–401), al-Kawkab (v04 p650–703) and al-Ṭūfī (v03 p729–746) state between proofs of one tier;
 # mirrors `Usul.Tarjih.Murajjih`.
 MURAJJIH = ("kathratRuwat", "tayaqquz", "wara", "sahibWaqia", "mubashir",
             "corroborated", "marfu", "consistentNarrator", "muttasil", "naqil", "muthbit",
@@ -43,6 +43,7 @@ MURAJJIH = ("kathratRuwat", "tayaqquz", "wara", "sahibWaqia", "mubashir",
             "muaththira", "mulaima", "munasaba",
             "sahihayn", "masmu", "qawl", "fil", "nahy", "amr", "khass", "ammMahfuz", "iqtida", "ima", "muwafaqa",
             "muallal", "hazir",
+            "mantuq", "nass", "mubayyan", "haqiqa", "ashhar", "siyaq", "afqah",
             "khiffa", "hissiyya", "fewerAwsaf", "dariHadd")
 # Each advantage's standing in the cited sources; mirrors `Usul.Tarjih.Murajjih.standing`.
 STANDING = {m: "asserted" for m in MURAJJIH} | dict.fromkeys(
@@ -215,8 +216,8 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
                 errs.append(f"{f}: jamʿ needs the case under a refinement with a conservativity theorem")
                 continue
             jams.setdefault(j["encoder"], []).append(c)
-            if weighed(e) and _by_proof(c, e) != c["expected"]:
-                errs.append(f"{f}: a jamʿ must land on the side the proofs favour")
+            if _against_proofs(c, e):
+                errs.append(f"{f}: a jamʿ must not land against the side the proofs favour")
         if (rq := e.get("register")) is not None and rq not in open_rq:
             errs.append(f"{f}: {rq} is not an open research question")
     for c in cases:
@@ -273,8 +274,8 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
         frm = frm.pop()
         for c in (c for c in cases if c["encoder"] == enc and _old(c, frm) != c["expected"]):
             e = entries.get(c["far"])
-            if e is None or (weighed(e) and _by_proof(c, e) != c["expected"]):
-                errs.append(f"{c['far']}: the refinement departs from {frm} other than to the side the proofs favour")
+            if e is None or _against_proofs(c, e):
+                errs.append(f"{c['far']}: the refinement departs from {frm} against the side the proofs favour")
         if all(_old(c, frm) == c["expected"] for c in cs):
             errs.append(f"{enc}: a jamʿ must move some farʿ off {frm}")
     return errs
@@ -282,6 +283,12 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
 
 def _by_proof(case: dict, entry: dict) -> object | None:
     return weigh(rulings(case), proved(case, entry), stated(case, entry))
+
+
+def _against_proofs(case: dict, entry: dict) -> bool:
+    """The proofs favour a ruling other than the one the jamʿ gives. Tawaqquf does not refute a jamʿ: the
+    proofs leave the farʿ open, and jamʿ comes before tarjīḥ."""
+    return weighed(entry) and (p := _by_proof(case, entry)) is not None and p != case["expected"]
 
 
 def jam_pending(cases: list[dict], ledger: dict) -> list[str]:

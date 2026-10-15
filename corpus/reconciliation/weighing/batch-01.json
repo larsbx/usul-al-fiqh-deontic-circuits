@@ -1,0 +1,631 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b01: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the apparent sense is that the second attested contract is a valid contract with its own legal effect, like the first one (the first contract is the aṣl, the second the farʿ, and the ʿilla is that a valid contract has an effect).",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v08:p076",
+     "excerpt_ar": "فالقول قولها مع يمينها لأن الظاهر أن الثاني عقد صحيح يفيد حكما كالأول",
+     "who": "Shams al-Din Ibn Qudama, al-Sharh al-Kabir",
+     "note": "Cited for the wife's word (two marriages, two mahrs) on exactly these facts: one contract repeated or two separated by a divorce. It is a rationale drawn from the zahir, so it is qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale and parallel: the zahir is with the wife, and the same rule holds in sale when two bayyinas attest two sales on different days (the seller's word that there were two contracts), as Abu Bakr, al-Qadi and the ashab state.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p342",
+     "excerpt_ar": "فالقول قول الزوجة ; لأن الظاهر معها، وكذا لو شهدت بينة أنه باعه هذا الثوب",
+     "who": "Ibn Rajab, Taqrir al-Qawaid",
+     "note": "Ibn Rajab gives this for the ashab's position on these facts and draws the parallel to two attested sales. A rationale with an analogue, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The original state: there was no separation between them, and the husband's liability for a second mahr is presumed absent (barāʾat al-dhimma).",
+     "ref": "src:openiti-rajab-shamela21730/v01:p342",
+     "excerpt_ar": "ينبغي أن يكون القول قوله لأن الأصل عدم الفرقة بينهما والأصل براءته من المهر الثاني",
+     "who": "Ibn Rajab, Taqrir al-Qawaid",
+     "note": "Taqi al-Din's argument for the husband's word, as Ibn Rajab reports it. It rests on the aṣl and barāʾa, so istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the surrounding indicators (the dog put its head in and its mouth is wet) point to licking and weaken the aṣl of purity.",
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v01:p092",
+     "excerpt_ar": "والوجه الثاني: هو نجس. قلت: وهو الصواب، لأن القرائن المحتفة بذلك تقتضي ما قلنا، وتوجب ضعف الأصل",
+     "who": "al-Mardawi, Tashih al-Furu (printed with Ibn Muflih, al-Furu)",
+     "note": "Al-Mardawi gives this for the najāsa wajh when a dog puts its head into the vessel and its mouth is found wet. It is a rationale from the indicators, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the apparent sense is that the dog licked.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p343",
+     "excerpt_ar": "وكان فمه رطبا فهل يحكم بنجاسة الماء ; لأن الظاهر ولوغه",
+     "who": "Ibn Rajab, Taqrir al-Qawaid",
+     "note": "Ibn Rajab gives al-Azaji's ground for the impurity wajh on these facts. A rationale from the zahir, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The original state: the dog is presumed not to have licked.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p047",
+     "excerpt_ar": "وجد (بفيه رطوبة فلا ينجس) ؛ لأن الأصل عدم الولوغ",
+     "who": "al-Buhuti, Kashshaf al-Qina",
+     "note": "Kashshaf gives this for the water's purity on these exact facts. It rests on the aṣl, so istishab."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Marfūʿ hadith «دع ما يريبك إلى ما لا يريبك» (no grade given), cited for acting on certainty about the water's purity when in doubt.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p025",
+     "excerpt_ar": "ويعمل) عند الشك (بيقين في كثرة ماء وطهارته ونجاسته) لحديث «دع ما يريبك إلى ما لا يريبك»",
+     "who": "al-Buhuti, Sharh Muntaha al-Iradat",
+     "note": "Sharh al-Muntaha cites this hadith for the general rule of acting on certainty and then says the rule covers the dog that put its head in with a wet mouth: the water is not impure (only disliked as a precaution). It is a connected marfūʿ report that bears on the case only through a general rule, so zanni."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The original state: the creature (and the water) is presumed pure.",
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v01:p093",
+     "excerpt_ar": "قلت: الصواب أنه طاهر لأنه الأصل، وهو ظاهر كلام جماعة",
+     "who": "al-Mardawi, Tashih al-Furu (printed with Ibn Muflih, al-Furu)",
+     "note": "Al-Mardawi gives this for purity in Ibn Rajab's case of a non-blood creature nearer the latrine than the well. It rests on the aṣl, so istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "Ṣaḥābī practice: ʿUmar and ʿAli waded through rain mud and prayed without washing their feet. Ibn Masʿud said «كنا لا نتوضأ من موطئ», and the like is reported from Ibn ʿAbbas.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p071",
+     "excerpt_ar": "وممن روي عنه أنه خاض طين المطر، وصلى، ولم يغسل رجليه عمر، وعلي",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Ibn Qudama cites this for the purity of street mud from rain, which is mud of suspected but unverified najāsa. No ṣaḥābī is reported as disagreeing, so fatwaSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The original state: things are pure, even when najāsa is suspected.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p193",
+     "excerpt_ar": "(وطين الشارع وترابه طاهر) وإن ظنت نجاسته؛ لأن الأصل الطهارة (ما لم تعلم نجاسته) فيعفى عن",
+     "who": "al-Buhuti, Kashshaf al-Qina",
+     "note": "Kashshaf gives this for the purity of street mud whose najāsa is suspected, which is exactly this case. It rests on the aṣl, so istishab. The excerpt runs through the qualifier that follows in the source."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Ahmad argued for the purity of rain mud from the hadith of the Bedouin who urinated in the mosque, where pouring water purified the floor. The aṣl is ground purified by water, the farʿ is rain mud in the streets, and the ʿilla is that water overcomes the najāsa.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p071",
+     "excerpt_ar": "واحتج في طهارة طين المطر بحديث الأعرابي الذي بال في المسجد",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Ahmad's own argument for the purity position, as reported in al-Mughni. The hadith is about another matter carried over to this one, so qiyas, not zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the apparent state (customary contamination of streets) is preferred over the aṣl.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p343",
+     "excerpt_ar": "والثانية: أنه نجس ترجيحا للظاهر وجعله صاحب التلخيص المذهب",
+     "who": "Ibn Rajab, Taqrir al-Qawaid",
+     "note": "Ibn Rajab's only stated ground for the impurity riwaya. It is a rationale from the zahir, so qiyas, and it is weak as stated."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: burial apparently puts najāsa into some of the soil, so the pure becomes mixed with the impure. Mixed material may not be used for purification, as with mixed vessels (aṣl: vessels where pure and impure are mixed; ʿilla: ishtibāh).",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p256",
+     "excerpt_ar": "(والثاني) لا يجوز لأن الظاهر من الدفن فيها حصول النجاسة في بعضها فيشتبه بغيره والمشتبه لا تجوز الطهارة به كالأواني",
+     "who": "Shams al-Din Ibn Qudama, al-Sharh al-Kabir",
+     "note": "This is Ibn ʿAqil's second wajh for a cemetery whose state is unknown, which is these facts. An analogy with a stated ʿilla, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The original state: the soil is pure, and purity does not lapse through doubt, as when one doubts the purity of water.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p188",
+     "excerpt_ar": "وإن شك في تكرر الدفن فيها، أو في نجاسة التراب الذي تيمم به، جاز التيمم به؛ لأن الأصل الطهارة، فلا يزول بالشك",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Ibn Qudama gives this for the purity (and usability for tayammum) of cemetery soil when repeated exhumation is doubted, which is exactly these facts. It rests on the aṣl, so istishab."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Q 5:5 «وطعام الذين أوتوا الكتاب حل لكم», taken to imply that their vessels may be used.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p061",
+     "excerpt_ar": "لا تختلف الرواية في أنه لا يحرم استعمال أوانيهم؛ وذلك لقول الله تعالى: {وطعام الذين أوتوا الكتاب حل لكم",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Cited for permitting use of the vessels of the People of the Book. The āya permits their food and bears on vessels only by implication, so zanni and not qati."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Hadith, agreed upon (muttafaq ʿalayh): the Prophet and his Companions made wuḍūʾ from a polytheist woman's water-skin. This is a report of his deed. The text adds the aṣl of purity.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p062",
+     "excerpt_ar": "«لأن النبي - صلى الله عليه وسلم - وأصحابه توضئوا من مزادة مشركة» متفق عليه؛ ولأن الأصل الطهارة",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Abu al-Khattab's proof (which is also al-Shafiʿi's view) that the clothes and vessels even of non-Kitabis are pure and may be used until najāsa is certain. A connected marfūʿ āḥād report, so zanni."
+    },
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "Ṣaḥābī practice: ʿUmar made wuḍūʾ from a Christian woman's jar.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p061",
+     "excerpt_ar": "وتوضأ عمر من جرة نصرانية. وهل يكره له استعمال أوانيهم؟ على روايتين",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Cited for permitting use of their vessels without dislike (the first riwaya). No ṣaḥābī is cited as disagreeing, so fatwaSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Hadith of Abu Thaʿlaba al-Khushani, agreed upon: «إن وجدتم غيرها فلا تأكلوا فيها، وإن لم تجدوا غيرها فاغسلوها وكلوا فيها». The least that a prohibition indicates is dislike.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p061",
+     "excerpt_ar": "والثانية يكره لما روى أبو ثعلبة الخشني، قال: قلت «يا رسول الله، إنا بأرض قوم أهل كتاب، أفنأكل في آنيتهم؟",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Cited for the second riwaya, that the vessels are disliked. A connected marfūʿ āḥād report, so zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: they do not guard against najāsa and their vessels are not free of their food, which at least makes use disliked.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p062",
+     "excerpt_ar": "وأقل أحوال النهي الكراهة؛ ولأنهم لا يتورعون عن النجاسة، ولا تسلم آنيتهم من أطعمتهم",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Given for the dislike riwaya, from fear of contamination. A rationale, so qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: their vessels always hold their food, and their slaughtered animals are carrion, so the vessels are apparently impure.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p062",
+     "excerpt_ar": "فقال القاضي: لا يستعمل ما استعملوه من آنيتهم؛ لأن أوانيهم لا تخلو من أطعمتهم، وذبائحهم ميتة",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Al-Qadi's ground for not using the vessels of non-Kitabis (Magians, idolaters) before washing, which is where the zahir is very strong. A rationale, so qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Ahmad on the Magians, as explained in al-Mughni. The vessels they use for food are apparently impure, so they are like their lower garments (aṣl: the garments next to their private parts; ʿilla: apparent contact with najāsa).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p062",
+     "excerpt_ar": "لا يؤكل من طعامهم إلا الفاكهة؛ لأن الظاهر نجاسة آنيتهم المستعملة في أطعمتهم، فأشبهت السراويلات من ثيابهم",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Cited for the strong-zahir riwaya: do not use these before washing. An analogy, so qiyas."
+    }
+   ],
+   "advantages": [
+    {
+     "for": 1,
+     "over": 0,
+     "by": "qawl",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p061",
+     "excerpt_ar": "فقال رسول الله - صلى الله عليه وسلم -: إن وجدتم غيرها فلا تأكلوا فيها",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Both are zanni. The proof for dislike (Abu Thaʿlaba) is the Prophet's own saying. The proof for permission (the mazāda report) is a report of his deed (توضئوا من مزادة مشركة)."
+    },
+    {
+     "for": 1,
+     "over": 0,
+     "by": "hazir",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p061",
+     "excerpt_ar": "إن وجدتم غيرها فلا تأكلوا فيها، وإن لم تجدوا غيرها فاغسلوها وكلوا فيها",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "The Abu Thaʿlaba hadith is a prohibition («فلا تأكلوا فيها»). The proof for the first riwaya shows only permission (his wuḍūʾ from the polytheist woman's water-skin), so prohibition is preferred over permission."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the garment may well have been overtaken by najāsa.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p063",
+     "excerpt_ar": "وتكره الصلاة فيه؛ لما فيه من احتمال غلبة النجاسة له",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Ibn Qudama gives this for dislike of praying in children's clothes. A rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the clothes are pure by the aṣl, but disliked as a precaution for the act of worship.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p053",
+     "excerpt_ar": "لأن الأصل طهارتها (مع الكراهة) احتياطا للعبادة",
+     "who": "al-Buhuti, Kashshaf al-Qina",
+     "note": "Kashshaf's ground for validity with dislike in the clothes of children, nursing and menstruating women. The dislike rests on precaution, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Marfūʿ report in Abu Dawud from ʿAʾisha: the Prophet did not pray in the women's hair-cloths and blankets (no grade given).",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p064",
+     "excerpt_ar": "والتوقي لذلك أولى لاحتمال النجاسة فيه وقد روى أبو داود عن عائشة قالت كان رسول الله صلى الله عليه وسلم لا يصلي في شعرنا",
+     "who": "Shams al-Din Ibn Qudama, al-Sharh al-Kabir",
+     "note": "The Sharh cites this for the ashab's view that it is better to avoid such clothes, which is the dislike position, for children's, nursing women's and menstruating women's clothes together. A connected marfūʿ āḥād report of his practice, so zanni."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Hadith, agreed upon: the Prophet prayed carrying Umama bint Abi al-ʿAs. A further report says al-Hasan leapt on his back when he prostrated.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p064",
+     "excerpt_ar": "تتحقق نجاسته وهو قول الثوري وأصحاب الرأي لأن النبي صلى الله عليه وسلم صلى وهو حامل أمامة بنت أبي العاص بن الربيع متفق عليه",
+     "who": "Shams al-Din Ibn Qudama, al-Sharh al-Kabir",
+     "note": "The Sharh's own ruling is that prayer in children's clothes is permitted (تباح), and it gives this proof for it. The precaution it then adds is attributed to «أصحابنا». This fits the no-dislike wajh, which al-Insaf records as a riwaya and an ikhtiyar in Majmaʿ al-Bahrayn. A connected marfūʿ report, so zanni."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Analogy: Ibn Abi Musa treats a child's garment like a Magian's garment (aṣl), in which prayer is barred before washing.",
+     "ref": "src:openiti-insaf-shamela21609/v01:p086",
+     "excerpt_ar": "وألحق ابن أبي موسى ثوب الصبي بثوب المجوسي في منع الصلاة فيه قبل غسله",
+     "who": "al-Mardawi, al-Insaf",
+     "note": "This is the only ground stated anywhere for the prohibition wajh, which is Ibn Abi Musa's choice. It is an ilḥāq, so qiyas."
+    }
+   ],
+   "advantages": [
+    {
+     "for": 1,
+     "over": 0,
+     "by": "sahihayn",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p064",
+     "excerpt_ar": "صلى وهو حامل أمامة بنت أبي العاص بن الربيع متفق عليه",
+     "who": "Shams al-Din Ibn Qudama, al-Sharh al-Kabir",
+     "note": "Both are zanni. The Umama hadith cited for permissibility is agreed upon (al-Bukhari and Muslim). The ʿAʾisha report cited for avoidance is given only from Abu Dawud."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Hadith of Abu Saʿid al-Khudri, from Muslim, Abu Dawud and Ibn Majah: whoever doubts whether he prayed three or four should cast off the doubt and build on what is certain. The hadith of ʿAbd al-Rahman b. ʿAwf is to the same effect.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p014",
+     "excerpt_ar": "فليطرح الشك، وليبن على ما استيقن، ثم يسجد سجدتين قبل أن يسلم",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Cited for building on certainty (the fewer) for imam and lone worshipper alike, Abu Bakr's choice. A connected marfūʿ āḥād report that is explicit on the point, so zanni."
+    },
+    {
+     "position": 0,
+     "tier": "aqrabSahabi",
+     "dalil": "Ṣaḥābī views: Ibn ʿUmar, Ibn ʿAbbas and ʿAbd Allah b. ʿAmr held that one builds on certainty.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p013",
+     "excerpt_ar": "اختارها أبو بكر. وروي ذلك عن ابن عمر، وابن عباس، وعبد الله بن عمرو، وشريح",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Cited for the certainty riwaya. The same passage reports ʿAli and Ibn Masʿud for acting on preponderant belief, so the ṣaḥāba disagree: aqrabSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The original state: the doubted rakʿa is presumed not performed, so it must be performed, as when one doubts whether one prayed at all.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p014",
+     "excerpt_ar": "ولأن الأصل عدم الإتيان بما شك فيه، فلزمه الإتيان",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Given for building on certainty. It rests on the aṣl of non-performance, so istishab."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Hadith of Ibn Masʿud, agreed upon: «إذا شك أحدكم في صلاته فليتحر الصواب فليتم عليه», with variants in Muslim and Abu Dawud explicitly on following one's predominant belief.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p014",
+     "excerpt_ar": "إذا شك أحدكم في صلاته فليتحر الصواب، فليتم عليه، ثم ليسجد سجدتين» . متفق عليه",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Cited as «ووجه هذه الرواية» for building on preponderant belief for anyone who has a belief, imam or lone worshipper. A connected marfūʿ āḥād report, so zanni."
+    },
+    {
+     "position": 1,
+     "tier": "aqrabSahabi",
+     "dalil": "Ṣaḥābī views: ʿAli b. Abi Talib and Ibn Masʿud held that one acts on preponderant belief.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p014",
+     "excerpt_ar": "روي ذلك عن علي بن أبي طالب، وابن مسعود، وبنحوه قال النخعي",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Cited for the preponderant-belief riwaya. Other ṣaḥāba (Ibn ʿUmar, Ibn ʿAbbas, ʿAbd Allah b. ʿAmr) are reported for certainty, so aqrabSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: preponderant belief is a proof in the Law and must be followed, as when the qibla is unclear (aṣl: the qibla; ʿilla: ẓann is a sharʿī indicator).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p014",
+     "excerpt_ar": "ولأن الظن دليل في الشرع فوجب اتباعه كما لو اشتبهت عليه القبلة",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Given for building on preponderant belief. An analogy, so qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the imam has followers who correct him if he errs, so he may act on what seems most likely. The lone worshipper has no one to correct him, so he builds on certainty.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p015",
+     "excerpt_ar": "المنفرد، لأن الإمام له من ينبهه ويذكره إذا أخطأ الصواب، فليعمل بالأظهر عنده",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "This is the ground for the mashhur riwaya, which separates imam from lone worshipper. A rationale, so qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "zanni",
+     "dalil": "Marfūʿ hadith «لا غرار في الصلاة» (no grade given), read to mean that the lone worshipper must not leave the prayer in doubt of its completion. This is combined with assigning Abu Saʿid's hadith to the lone worshipper and Ibn Masʿud's to the imam.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p015",
+     "excerpt_ar": "فيبني على اليقين، ليحصل له إتمام صلاته، ولا يكون مغرورا بها، وهو معنى قوله - عليه الصلاة والسلام -: «لا غرار في الصلاة»",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Cited for the lone-worshipper half of the mashhur riwaya. A marfūʿ report whose bearing depends on interpretation, so zanni."
+    }
+   ],
+   "advantages": [
+    {
+     "for": 1,
+     "over": 0,
+     "by": "sahihayn",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p014",
+     "excerpt_ar": "فليتحر الصواب، فليتم عليه، ثم ليسجد سجدتين» . متفق عليه",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Both are zanni. Ibn Masʿud's hadith for preponderant belief is agreed upon. Abu Saʿid's hadith for certainty is attributed only to Muslim, Abu Dawud and Ibn Majah («أخرجه مسلم، وأبو داود، وابن ماجه»)."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ibn al-Mundhir's report of consensus: everyone whose view he preserved held that one who doubts the number of circuits builds on certainty.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p344",
+     "excerpt_ar": "وإن شك في عدد الطواف، بنى على اليقين. قال ابن المنذر: أجمع كل من نحفظ عنه من أهل العلم على ذلك",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "The source states an explicit ijmāʿ for this very ruling. Ibn al-Mundhir's form («أجمع كل من نحفظ عنه») is limited to those he knew of, and the madhhab itself has the contrary riwaya (Abu Bakr), so review this tier. Reviewed: an ijmāʿ reported by one transmitter («أجمع كل من نحفظ عنه»), with a contrary riwāya in the madhhab, is a ẓann, not the certain ijmāʿ of Rawḍa v02 p389: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: ṭawāf is an act of worship, so doubt within it is resolved on certainty, as in prayer (aṣl: prayer; ʿilla: doubt during an act of worship).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p344",
+     "excerpt_ar": "ولأنها عبادة فمتى شك فيها وهو فيها، بنى على اليقين كالصلاة",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Given for taking the certain count. An analogy, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The original state: the certain count, with the doubted circuit presumed not done.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p345",
+     "excerpt_ar": "ومنها: إذا شك في عدد الطواف وفيه روايتان إحداهما يرجع إلى الأصل وهو المتيقن",
+     "who": "Ibn Rajab, Taqrir al-Qawaid",
+     "note": "Ibn Rajab's stated ground for the first riwaya. It rests on the aṣl, so istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: ṭawāf is like prayer, where one may act on preponderant belief (aṣl: prayer on the riwaya of taḥarrī).",
+     "ref": "src:openiti-rajab-shamela21730/v01:p345",
+     "excerpt_ar": "والثاني: يرجع إلى غالب ظنه كالصلاة فإن أخبره اثنان بما طاف",
+     "who": "Ibn Rajab, Taqrir al-Qawaid",
+     "note": "This is the only ground stated for the second riwaya. An analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The original state: in Dar al-Islam the presumption is Islam.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p345",
+     "excerpt_ar": "وهذا يرجع إلى تعارض الأصل والظاهر إذ الأصل في دار الإسلام الإسلام والظاهر في هذا الكفر",
+     "who": "Ibn Rajab, Taqrir al-Qawaid",
+     "note": "Ibn Rajab names the aṣl of Islam in Dar al-Islam as the basis of the ashab who pray over the corpse despite marks of kufr. It rests on the aṣl, so istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rule and rationale: one looks first to the marks (circumcision, clothing, dye). The presumption of the dār («الأصل أن من كان في دار فهو من أهلها») holds only while no contrary indicator exists.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p400",
+     "excerpt_ar": "نظر إلى العلامات، من الختان، والثياب، والخضاب، فإن لم يكن عليه علامة، وكان في دار الإسلام",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Ibn Qudama makes the marks decisive and falls back on the dār only when there are no marks. That supports Ahmad's text that a corpse bearing only marks of kufr gets no prayer. It is a rationale from indicators, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Marfūʿ hadith «ولكن اليمين على المدعى عليه». The husband denies the excess claimed against him, so he falls under its general wording.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p154",
+     "excerpt_ar": "لأنه منكر لما يدعى عليه فدخل في عموم قوله - صلى الله عليه وسلم - «ولكن اليمين على المدعى عليه»",
+     "who": "al-Buhuti, Kashshaf al-Qina",
+     "note": "Kashshaf cites this for the husband's word (with his oath) on the mahr amount even when he claims less than the fair mahr. It applies by generality, so zanni."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The original state: the husband's liability for the disputed excess is presumed absent (barāʾat al-dhimma), and he is the denier and the one who pays.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p345",
+     "excerpt_ar": "إحداهما القول قول الزوج ; لأنه منكر وغارم) : والأصل براءة ذمته من القدر الزائد",
+     "who": "Ibn Rajab, Taqrir al-Qawaid",
+     "note": "Ibn Rajab's ground for the first riwaya. It rests on barāʾa, so istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: the zahir supports whoever claims the fair mahr, so his word is taken, as with the denier in other claims and the depositee who claims loss or return.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p234",
+     "excerpt_ar": "ولنا، أن الظاهر قول من يدعي مهر المثل، فكان القول قوله، قياسا على المنكر في سائر الدعاوى، وعلى المودع",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Ibn Qudama's «ولنا» for the word of whoever claims the fair mahr, the Khiraqi text. An explicit qiyās, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The original state: the marriage continues and annulment is a later event. The husband's word agrees with the aṣl, like a denier's.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p156",
+     "excerpt_ar": "أن القول قول الزوج؛ لأن الأصل بقاء النكاح، والفسخ طارئ عليه، فكان القول قول من يوافق قوله",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Abu al-Khattab's wajh for the husband's word on these facts. It rests on the continuance of the marriage, so istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: simultaneous conversion at one instant is unlikely, so the zahir is with the wife. The word goes to whoever has the zahir, as the possessor's word is taken (صاحب اليد).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p156",
+     "excerpt_ar": "فقال القاضي: القول قول المرأة؛ لأن الظاهر معه؛ إذ يبعد اتفاق الإسلام منهما دفعة واحدة",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Al-Qadi's ground for the wife's word on these facts. A rationale from the zahir with the possessor as analogue, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: a child is usually conceived from intercourse.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p345",
+     "excerpt_ar": "فهل يتقرر المهر بذلك ; لأن الغالب أن الولد، إنما ينعقد عن الإصابة",
+     "who": "Ibn Rajab, Taqrir al-Qawaid",
+     "note": "The ground for the wajh that the mahr is settled, as Ibn Rajab reports it from al-Qadi's al-Mujarrad. A rationale from what usually happens, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The original state: intercourse is presumed absent, and conception may have happened without it.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p345",
+     "excerpt_ar": "أولا ; لأن الأصل عدم إصابتها ويحتمل أنه سبق الماء إلى فرجها فانعقد به الولد",
+     "who": "Ibn Rajab, Taqrir al-Qawaid",
+     "note": "The ground for the wajh that the mahr is not settled. It rests on the aṣl, so istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Distinction (farq): lineage is established by mere possibility, but settling the mahr is not, so the child's birth does not prove intercourse.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p346",
+     "excerpt_ar": "والأظهر في تعليل عدم تقرر المهر أن يقال: الولد يثبت نسبه بمجرد الإمكان بخلاف استقرار المهر",
+     "who": "Ibn Rajab, Taqrir al-Qawaid",
+     "note": "Ibn Rajab's preferred reasoning for non-settlement. A rationale and distinction, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: a guardian who did not know did not deceive, so he does not pay, like a cousin-guardian (aṣl: a remote guardian; ʿilla: the deception came from someone else). The text excepts insanity, which hardly stays hidden from one who sees her.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p190",
+     "excerpt_ar": "ولنا، على أن الولي إذا لم يعلم لا يغرم، أن التغرير من غيره، فلم يغرم، كما لو كان ابن عم",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Ibn Qudama's «ولنا» against al-Qadi's view that a close guardian is liable whether or not he knew. It supports believing the guardian (with his oath) except for insanity. An analogy, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The original state: the guardian's knowledge of the defect is presumed absent.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p680",
+     "excerpt_ar": "(في عدم علمه به) أي العيب حيث لا بينة بعلمه ; لأن الأصل عدمه فلا غرم عليه",
+     "who": "al-Buhuti, Sharh Muntaha al-Iradat",
+     "note": "Sharh al-Muntaha gives this for believing even a close (maḥram) guardian who denies knowing the defect. It rests on the aṣl, so istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: for a close guardian (father, grandfather, son), the apparent state belies his claim not to know.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p346",
+     "excerpt_ar": "قريبا كالأب والجد والابن لم يقبل قوله مطلقا ; لأن الظاهر يكذبه",
+     "who": "Ibn Rajab, Taqrir al-Qawaid",
+     "note": "Al-Qadi's wajh, which Ibn ʿAqil follows, as Ibn Rajab gives it. A rationale from the zahir, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The original state: things are permissible.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p346",
+     "excerpt_ar": "على وجهين لأن الأصل في الأعيان الإباحة والغالب ههنا الحرام",
+     "who": "Ibn Rajab, Taqrir al-Qawaid",
+     "note": "Ibn Rajab names the aṣl of permissibility as the basis of the wajh that eating from mixed wealth is allowed, even when the unlawful predominates. It rests on the aṣl, so istishab."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the transaction is not void because the item may be lawful, whether the unlawful is little or much. The doubt only makes it disliked.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p201",
+     "excerpt_ar": "كرهناه لاحتمال التحريم فيه، ولم يبطل البيع؛ لإمكان الحلال، قل الحرام أو كثر",
+     "who": "Ibn Qudama, al-Mughni",
+     "note": "Ibn Qudama gives this for permitting dealings with one whose wealth is mixed, explicitly however much unlawful there is. This is the permissive position (with dislike). A rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the majority takes the place of the whole, so when the unlawful predominates the whole is treated as unlawful.",
+     "ref": "src:openiti-insaf-shamela21609/v08:p322",
+     "excerpt_ar": "إن كان الحرام أكثر: حرم الأكل، وإلا فلا. إقامة للأكثر مقام الكل. قطع به ابن الجوزي",
+     "who": "al-Mardawi, al-Insaf",
+     "note": "Ibn al-Jawzi's position, which is exactly this ruling: eating is forbidden when the unlawful is the greater part. A rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: mixed wealth is like vessels where the pure and the impure are mixed, all of which must be avoided (aṣl: mixed vessels; ʿilla: ishtibāh).",
+     "ref": "src:openiti-insaf-shamela21609/v08:p322",
+     "excerpt_ar": "قال الأزجي في نهايته: هذا قياس المذهب، كما قلنا في اشتباه الأواني الطاهرة بالنجسة",
+     "who": "al-Mardawi, al-Insaf",
+     "note": "Al-Azaji gives this for the broader view that eating is forbidden outright. On these facts, where the unlawful is the majority, that view gives the same ruling, so it counts for this position. An analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

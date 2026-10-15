@@ -8,34 +8,73 @@ open Usul.Reconcile
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f005
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("true", .tashih), ("true", .tashih), ("true", .jazm), ("false", .nass)] == (.tarjih "true")
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .istishab), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .istishab), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .istishab), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .wajh), ("true", .takhrij), ("true", .takhrij), ("false", .ashab)] == (.tarjih "true")
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .zanni), ("false", .qiyas), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .zanni), ("false", .qiyas), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .zanni), ("false", .qiyas), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f006
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000
 #guard byAttribution (P := String) none none [("perJirya", .nass), ("perJirya", .ashab), ("whole", .nass), ("whole", .tashih), ("perJirya", .tashih), ("whole", .jazm), ("whole", .tashih)] == (.tarjih "whole")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001
 #guard byAttribution (P := String) none none [("whole", .jazm), ("perJirya", .wajh), ("whole", .jazm), ("whole", .jazm)] == (.tarjih "whole")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["perJirya", "whole"] ([("perJirya", .qiyas), ("perJirya", .qiyas), ("whole", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["perJirya", "whole"] ([("perJirya", .qiyas), ("perJirya", .qiyas), ("whole", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["perJirya", "whole"] ([("perJirya", .qiyas), ("perJirya", .qiyas), ("whole", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("perJirya", .ashab), ("whole", .qiyas), ("whole", .ashab), ("whole", .jazm), ("whole", .jazm)] == (.tarjih "whole")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["detached", "attached"] ([("detached", .zanni), ("detached", .qiyas), ("detached", .qiyas), ("attached", .mursalDaif), ("attached", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "detached")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["detached", "attached"] ([("detached", .zanni), ("detached", .qiyas), ("detached", .qiyas), ("attached", .mursalDaif), ("attached", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "detached")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["detached", "attached"] ([("detached", .zanni), ("detached", .qiyas), ("detached", .qiyas), ("attached", .mursalDaif), ("attached", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "detached")
 #guard byAttribution (P := String) none none [("detached", .ashab), ("attached", .wajh), ("attached", .tashih), ("attached", .jazm)] == (.tarjih "attached")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) (some "true") none ["false", "true"] ([("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) (some "true") none ["false", "true"] ([("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) (some "true") none ["false", "true"] ([("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "true")
 #guard byAttribution (P := String) (some "true") none [("false", .takhrij), ("true", .takhrij), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.jam "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .wajh), ("true", .wajh), ("false", .tashih), ("false", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .wajh), ("true", .wajh), ("false", .tashih)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .ashab), ("false", .takhrij)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) (some "false") none ["true", "false"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) (some "false") none ["true", "false"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) (some "false") none ["true", "false"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "false")
 #guard byAttribution (P := String) (some "false") none [("true", .jazm), ("false", .ashab), ("false", .jazm), ("false", .jazm), ("false", .ashab)] == (.jam "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .jazm), ("false", .ashab)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh)] == .tawaqquf
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f001
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
@@ -50,12 +89,24 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f005
 #guard byAttribution (P := String) (some "true") none [("false", .wajh), ("true", .wajh), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.jam "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("true", .zanni)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .khass⟩] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("true", .zanni)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .khass⟩] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("true", .zanni)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .khass⟩] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .wajh), ("true", .wajh), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .zanni), ("true", .zanni)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .sahihayn⟩] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .zanni), ("true", .zanni)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .sahihayn⟩] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .zanni), ("true", .zanni)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .sahihayn⟩] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .ashab), ("false", .tashih), ("false", .jazm), ("true", .nass)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) (some "neither") none ["each", "neither"] ([("neither", .qiyas), ("neither", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "neither")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) (some "neither") none ["each", "neither"] ([("neither", .qiyas), ("neither", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "neither")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) (some "neither") none ["each", "neither"] ([("neither", .qiyas), ("neither", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "neither")
 #guard byAttribution (P := String) (some "neither") none [("each", .nass), ("neither", .nass), ("neither", .tashih), ("neither", .tashih), ("neither", .jazm)] == (.jam "neither")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .takhrij)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f000
 #guard byAttribution (P := String) (some "true") none [("false", .nass), ("true", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.jam "true")
@@ -99,14 +150,29 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f005
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .nass), ("false", .tashih), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("true", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("separate", .qiyas), ("separate", .zanni), ("separate", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "separate")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("separate", .qiyas), ("separate", .zanni), ("separate", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "separate")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("separate", .qiyas), ("separate", .zanni), ("separate", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "separate")
 #guard byAttribution (P := String) none none [("part", .nass), ("separate", .nass), ("separate", .tashih), ("separate", .jazm), ("separate", .jazm), ("separate", .jazm)] == (.tarjih "separate")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("part", .qiyas), ("separate", .qiyas), ("separate", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("part", .qiyas), ("separate", .qiyas), ("separate", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("part", .qiyas), ("separate", .qiyas), ("separate", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("part", .takhrij), ("separate", .wajh), ("separate", .tashih), ("separate", .jazm)] == (.tarjih "separate")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("separate", .zanni), ("separate", .zanni), ("separate", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "separate")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("separate", .zanni), ("separate", .zanni), ("separate", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "separate")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("separate", .zanni), ("separate", .zanni), ("separate", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "separate")
 #guard byAttribution (P := String) none none [("part", .nass), ("separate", .nass), ("separate", .tashih), ("separate", .jazm)] == (.tarjih "separate")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q021.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("part", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "part")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("part", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "part")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("part", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "part")
 #guard byAttribution (P := String) none none [("part", .ashab), ("separate", .wajh), ("part", .tashih), ("part", .jazm), ("part", .jazm)] == (.tarjih "part")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q021.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("separate", .istishab), ("separate", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("separate", .istishab), ("separate", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("separate", .istishab), ("separate", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("part", .ashab), ("separate", .wajh), ("part", .jazm), ("part", .jazm), ("part", .jazm)] == (.tarjih "part")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f001
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .ashab), ("true", .ashab), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
@@ -123,14 +189,26 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f007
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("true", .qiyas), ("false", .ashab)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .ashab)] == .tawaqquf
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("true", .takhrij), ("false", .ashab)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f005
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("false", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab), ("true", .jazm), ("true", .ashab)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("false", .zanni), ("false", .qiyas), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("false", .zanni), ("false", .qiyas), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("false", .zanni), ("false", .qiyas), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab), ("false", .qiyas)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f001
 #guard byAttribution (P := String) none none [("all", .ashab), ("excess", .wajh), ("all", .tashih), ("all", .jazm), ("all", .jazm)] == (.tarjih "all")
@@ -139,10 +217,19 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f004
 #guard byAttribution (P := String) none none [("all", .wajh), ("excess", .wajh), ("excess", .takhrij)] == (.tarjih "excess")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .fatwaSahabi), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .fatwaSahabi), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .fatwaSahabi), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("true", .tashih), ("true", .ashab)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f003
 #guard byAttribution (P := String) none none [("baseline", .ashab), ("asBegun", .wajh), ("baseline", .takhrij), ("baseline", .takhrij)] == (.tarjih "baseline")
@@ -169,8 +256,14 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f006
 #guard byAttribution (P := String) none none [("true", .takhrij), ("false", .takhrij), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q039.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q039.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .wajh), ("true", .ashab), ("false", .wajh), ("false", .jazm), ("false", .jazm), ("false", .tashih)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f001
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
@@ -181,26 +274,56 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005
 #guard byAttribution (P := String) none none [("true", .takhrij), ("false", .takhrij)] == .tawaqquf
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) (some "true") none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) (some "true") none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) (some "true") none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "true")
 #guard byAttribution (P := String) (some "true") none [("false", .ashab), ("false", .nass), ("true", .wajh), ("true", .tashih), ("true", .tashih), ("true", .jazm)] == (.jam "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) (some "false") none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) (some "false") none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) (some "false") none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "false")
 #guard byAttribution (P := String) (some "false") none [("false", .nass), ("true", .nass), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.jam "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .jazm), ("false", .ashab), ("false", .tashih), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .ashab), ("false", .takhrij)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .qiyas), ("false", .takhrij), ("false", .qiyas), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f006
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .aqrabSahabi), ("false", .qiyas), ("false", .qiyas), ("true", .mursalDaif), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .aqrabSahabi), ("false", .qiyas), ("false", .qiyas), ("true", .mursalDaif), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .aqrabSahabi), ("false", .qiyas), ("false", .qiyas), ("true", .mursalDaif), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .nass), ("false", .tashih), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f002
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab), ("false", .ashab)] == .tawaqquf
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q058.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .zanni), ("false", .qiyas), ("false", .zanni), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .zanni), ("false", .qiyas), ("false", .zanni), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .zanni), ("false", .qiyas), ("false", .zanni), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .takhrij), ("false", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) (some "false") none ["true", "false"] ([("true", .qiyas), ("false", .istishab), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) (some "false") none ["true", "false"] ([("true", .qiyas), ("false", .istishab), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) (some "false") none ["true", "false"] ([("true", .qiyas), ("false", .istishab), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "false")
 #guard byAttribution (P := String) (some "false") none [("true", .qiyas), ("true", .ashab), ("false", .jazm), ("false", .zahir), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.jam "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .qiyas), ("true", .ashab), ("false", .ashab), ("false", .ashab), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) (some "true") none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) (some "true") none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) (some "true") none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.jam "true")
 #guard byAttribution (P := String) (some "true") none [("false", .ashab), ("true", .jazm), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.jam "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f000
 #guard byAttribution (P := String) (some "true") none [("false", .wajh), ("true", .wajh), ("true", .tashih), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.jam "true")
@@ -225,6 +348,9 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f001
 #guard byAttribution (P := String) none none [("false", .wajh), ("true", .ashab), ("true", .qiyas), ("true", .takhrij)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .takhrij)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f007
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .takhrij), ("true", .tashih), ("true", .ashab), ("false", .ashab)] == (.tarjih "true")
@@ -245,6 +371,9 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f003
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .nass), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("false", .ashab)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f009
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .zahir), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f004
 #guard byAttribution (P := String) none none [("false", .tashih), ("true", .wajh), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
@@ -265,38 +394,89 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f020
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh)] == .tawaqquf
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["2", "1"] ([("2", .qiyas), ("2", .fatwaSahabi), ("1", .istishab), ("1", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "2")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["2", "1"] ([("2", .qiyas), ("2", .fatwaSahabi), ("1", .istishab), ("1", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "2")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["2", "1"] ([("2", .qiyas), ("2", .fatwaSahabi), ("1", .istishab), ("1", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "2")
 #guard byAttribution (P := String) none none [("2", .nass), ("1", .wajh), ("1", .tashih), ("2", .ashab), ("1", .jazm)] == (.tarjih "1")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .istishab), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .istishab), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .istishab), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .wajh), ("true", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("false", .tashih)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .fatwaSahabi), ("false", .istishab), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .fatwaSahabi), ("false", .istishab), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .fatwaSahabi), ("false", .istishab), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .tashih), ("false", .nass), ("true", .tashih), ("true", .nass), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("false", .jazm), ("false", .jazm), ("false", .ashab)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .zanni), ("false", .fatwaSahabi), ("false", .zanni), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "false", .qawl⟩, ⟨"false", "false", .hazir⟩] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .zanni), ("false", .fatwaSahabi), ("false", .zanni), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "false", .qawl⟩, ⟨"false", "false", .hazir⟩] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .zanni), ("false", .fatwaSahabi), ("false", .zanni), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "false", .qawl⟩, ⟨"false", "false", .hazir⟩] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .nass), ("false", .nass), ("true", .nass), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .zanni), ("false", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "false", .sahihayn⟩] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .zanni), ("false", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "false", .sahihayn⟩] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .zanni), ("false", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "false", .sahihayn⟩] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .wajh), ("false", .wajh), ("true", .ashab), ("false", .jazm), ("false", .jazm), ("false", .ashab)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .aqrabSahabi), ("false", .istishab), ("true", .zanni), ("true", .aqrabSahabi), ("true", .qiyas), ("false", .qiyas), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [⟨"true", "false", .sahihayn⟩] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .aqrabSahabi), ("false", .istishab), ("true", .zanni), ("true", .aqrabSahabi), ("true", .qiyas), ("false", .qiyas), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [⟨"true", "false", .sahihayn⟩] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .aqrabSahabi), ("false", .istishab), ("true", .zanni), ("true", .aqrabSahabi), ("true", .qiyas), ("false", .qiyas), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [⟨"true", "false", .sahihayn⟩] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .nass), ("false", .tashih), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("false", .istishab), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("false", .istishab), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("false", .istishab), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .nass), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .istishab), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .istishab), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .istishab), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .nass), ("false", .tashih), ("true", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .istishab), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .istishab), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .istishab), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("false", .wajh), ("true", .wajh), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .istishab), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .istishab), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .istishab), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("false", .ashab)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .istishab), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .istishab), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .istishab), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .ashab), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .istishab), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .istishab), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .istishab), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .wajh), ("true", .wajh), ("false", .tashih), ("false", .jazm), ("true", .ashab)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .istishab), ("false", .qiyas), ("true", .istishab), ("true", .qiyas), ("true", .istishab)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .dariHadd⟩] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .istishab), ("false", .qiyas), ("true", .istishab), ("true", .qiyas), ("true", .istishab)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .dariHadd⟩] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .istishab), ("false", .qiyas), ("true", .istishab), ("true", .qiyas), ("true", .istishab)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .dariHadd⟩] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .nass), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .istishab), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .istishab), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .istishab), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .wajh), ("true", .wajh), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f006
 #guard byAttribution (P := String) none none [("lot", .takhrij), ("mutual agreement (murāḍāt)", .takhrij), ("divide", .ashab), ("lot", .ashab), ("lot", .jazm), ("lot", .jazm)] == (.tarjih "lot")
@@ -335,6 +515,9 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f000
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .nass), ("true", .ashab), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .nass), ("false", .tashih), ("true", .ashab)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f000
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .nass), ("false", .ashab), ("false", .tashih)] == (.tarjih "false")
@@ -343,20 +526,41 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f003
 #guard byAttribution (P := String) none none [("true", .takhrij), ("false", .ashab), ("true", .qiyas)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .takhrij), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("true", .ashab)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f011
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .mursalDaif), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .mursalDaif), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .mursalDaif), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f018
 #guard byAttribution (P := String) none none [("true", .takhrij), ("false", .takhrij)] == .tawaqquf
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .nass), ("true", .tashih), ("true", .tashih)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .ashab), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .ashab), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f006
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .istishab), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .istishab), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .istishab), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .takhrij), ("false", .ashab), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f007
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .nass), ("false", .ashab), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f003
 #guard byAttribution (P := String) none none [("true", .takhrij), ("false", .takhrij), ("false", .takhrij), ("true", .qiyas), ("false", .takhrij)] == (.tarjih "true")
@@ -379,10 +583,19 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f006
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("false", .tashih), ("true", .wajh)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .qiyas), ("false", .ashab), ("true", .tashih), ("false", .ashab), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .takhrij), ("false", .nass), ("false", .ashab), ("false", .jazm), ("false", .ashab), ("true", .takhrij), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .takhrij), ("false", .nass), ("false", .ashab), ("false", .nass)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f001
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .ashab), ("true", .tashih), ("false", .ashab), ("true", .jazm)] == (.tarjih "true")
@@ -426,12 +639,24 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f007
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .takhrij)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .takhrij), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("true", .ashab)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("false", .zanni), ("false", .zanni), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .qawl⟩] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("false", .zanni), ("false", .zanni), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .qawl⟩] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("false", .zanni), ("false", .zanni), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .qawl⟩] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("false", .qiyas), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("true", .ashab)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f006
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .fatwaSahabi), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .fatwaSahabi), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .fatwaSahabi), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f000
 #guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .zanni), ("false", .qiyas), ("true", .qiyas), ("true", .mursalDaif), ("true", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
@@ -447,8 +672,14 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f004
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .takhrij), ("false", .ashab), ("true", .qiyas), ("true", .ashab)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .wajh), ("true", .ashab), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("true", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f001
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .jazm), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
@@ -471,6 +702,9 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f017
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .takhrij), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .takhrij), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f000
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih)] == (.tarjih "true")
@@ -492,28 +726,64 @@ open Usul.Reconcile
 #guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("false", .tashih)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("false", .ashab), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f006
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .zanni), ("false", .qiyas), ("false", .aqrabSahabi)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .zanni), ("false", .qiyas), ("false", .aqrabSahabi)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .zanni), ("false", .qiyas), ("false", .aqrabSahabi)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .jazm), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f007
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("false", .ashab), ("true", .tashih)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f009
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f010
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .wajh), ("true", .ashab), ("false", .ashab), ("true", .tashih), ("true", .ashab)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f011
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .fatwaSahabi), ("true", .fatwaSahabi), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .fatwaSahabi), ("true", .fatwaSahabi), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .fatwaSahabi), ("true", .fatwaSahabi), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .takhrij), ("true", .tashih)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .nass), ("false", .ashab), ("true", .nass), ("false", .tashih)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .mursalDaif), ("true", .aqrabSahabi), ("false", .zanni), ("false", .qiyas), ("false", .aqrabSahabi)] : List (String × Usul.Tarjih.Tier)) [⟨"true", "false", .khass⟩] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .mursalDaif), ("true", .aqrabSahabi), ("false", .zanni), ("false", .qiyas), ("false", .aqrabSahabi)] : List (String × Usul.Tarjih.Tier)) [⟨"true", "false", .khass⟩] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .mursalDaif), ("true", .aqrabSahabi), ("false", .zanni), ("false", .qiyas), ("false", .aqrabSahabi)] : List (String × Usul.Tarjih.Tier)) [⟨"true", "false", .khass⟩] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .jazm), ("false", .ashab), ("true", .jazm), ("true", .qiyas)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .mursalDaif), ("false", .qiyas), ("true", .qiyas), ("true", .fatwaSahabi), ("true", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .mursalDaif), ("false", .qiyas), ("true", .qiyas), ("true", .fatwaSahabi), ("true", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .mursalDaif), ("false", .qiyas), ("true", .qiyas), ("true", .fatwaSahabi), ("true", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .takhrij), ("true", .tashih), ("true", .tashih)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .nass), ("true", .tashih), ("false", .ashab), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f001
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab), ("false", .takhrij), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
@@ -522,20 +792,44 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f004
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .nass), ("true", .takhrij), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .takhrij), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .aqrabSahabi), ("false", .qiyas), ("true", .zanni), ("true", .zanni), ("true", .aqrabSahabi)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .aqrabSahabi), ("false", .qiyas), ("true", .zanni), ("true", .zanni), ("true", .aqrabSahabi)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .aqrabSahabi), ("false", .qiyas), ("true", .zanni), ("true", .zanni), ("true", .aqrabSahabi)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("false", .ashab), ("false", .nass), ("true", .takhrij), ("true", .nass), ("false", .jazm), ("false", .qiyas)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .takhrij), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("false", .zahir), ("true", .jazm), ("true", .qiyas), ("true", .qiyas)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f006
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("false", .nass), ("false", .jazm), ("true", .ashab), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f009
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .zanni), ("false", .zanni), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .zanni), ("false", .zanni), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .zanni), ("false", .zanni), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f014
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .nass), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f000
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
@@ -563,46 +857,103 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f003
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q149.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .fatwaSahabi), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .fatwaSahabi), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .fatwaSahabi), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .nass), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q149.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .takhrij), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f002
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .zanni), ("true", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .zanni), ("true", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .zanni), ("true", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .zahir), ("true", .ashab), ("false", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155.f001
 #guard byAttribution (P := String) none none [("true", .jazm), ("false", .takhrij), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .aqrabSahabi), ("false", .qiyas), ("true", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .aqrabSahabi), ("false", .qiyas), ("true", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .aqrabSahabi), ("false", .qiyas), ("true", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("false", .nass), ("false", .ashab), ("true", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("false", .qiyas), ("false", .qiyas)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f007
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f009
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .aqrabSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .aqrabSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .aqrabSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .ashab), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f013
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .zanni), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .zanni), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .zanni), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .wajh), ("false", .qiyas)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("false", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("false", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("false", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .nass), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .jazm), ("true", .ashab), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f006
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .takhrij), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f006
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .istishab), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .istishab), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .istishab), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("false", .tashih), ("true", .nass), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f007
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .ashab), ("true", .tashih), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f008
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .jazm), ("true", .nass), ("false", .ashab), ("true", .tashih), ("true", .qiyas), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f010
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .nass), ("true", .tashih), ("false", .nass), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f011
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .takhrij), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f015
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .nass), ("false", .tashih), ("true", .nass), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f018
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .nass), ("false", .tashih), ("true", .nass), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f001
 #guard byAttribution (P := String) none none [("true", .jazm), ("false", .ashab), ("false", .takhrij), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
@@ -668,36 +1019,69 @@ open Usul.Reconcile
 #guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .istishab), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f009
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("false", .tashih)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f010
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab), ("false", .takhrij)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f009
 #guard byAttribution (P := String) none none [("true", .takhrij), ("false", .ashab), ("false", .jazm), ("false", .tashih), ("false", .tashih), ("false", .jazm), ("true", .ashab)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f006
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .jazm), ("false", .tashih)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .jazm), ("true", .takhrij), ("false", .ashab), ("false", .nass), ("false", .takhrij), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .usulMany⟩] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .usulMany⟩] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .usulMany⟩] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .nass), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .jazm), ("true", .takhrij), ("false", .takhrij), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f002
 #guard byAttribution (P := String) none none [("false", .tashih), ("true", .wajh), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f006
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .tashih), ("true", .zahir), ("true", .jazm), ("false", .ashab), ("false", .wajh), ("true", .tashih), ("true", .jazm), ("false", .ashab)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f007
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .zahir), ("false", .nass), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("false", .nass), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f006
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab)] == .tawaqquf
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .aqrabSahabi), ("false", .aqrabSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .aqrabSahabi), ("false", .aqrabSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .aqrabSahabi), ("false", .aqrabSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .nass), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f001
 #guard byAttribution (P := String) none none [("false", .wajh), ("true", .ashab), ("false", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f003
 #guard byAttribution (P := String) none (some "false") [("true", .wajh), ("false", .ashab), ("true", .nass), ("false", .nass), ("false", .jazm), ("false", .jazm)] == (.naskh "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f009
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .aqrabSahabi), ("true", .qiyas), ("true", .qiyas), ("false", .zanni), ("false", .aqrabSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .aqrabSahabi), ("true", .qiyas), ("true", .qiyas), ("false", .zanni), ("false", .aqrabSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .aqrabSahabi), ("true", .qiyas), ("true", .qiyas), ("false", .zanni), ("false", .aqrabSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .jazm), ("false", .tashih), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f010
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .nass), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
@@ -718,26 +1102,59 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f008
 #guard byAttribution (P := String) none none [("mubashir", .wajh), ("shared", .wajh)] == .tawaqquf
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .zanni), ("true", .qiyas), ("false", .zanni), ("false", .aqrabSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .zanni), ("true", .qiyas), ("false", .zanni), ("false", .aqrabSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .zanni), ("true", .qiyas), ("false", .zanni), ("false", .aqrabSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .tashih), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .tashih), ("true", .nass), ("false", .wajh), ("true", .tashih), ("true", .ashab), ("true", .jazm), ("true", .jazm), ("true", .qiyas), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("true", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("true", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("true", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .tashih), ("false", .ashab), ("true", .tashih), ("false", .nass), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .tashih), ("true", .ashab), ("false", .ashab), ("true", .takhrij), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .jazm), ("true", .ashab), ("false", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .istishab), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .istishab), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .istishab), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .nass)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .istishab), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .istishab), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .istishab), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .jazm), ("false", .takhrij), ("true", .tashih), ("false", .zahir), ("true", .jazm), ("false", .takhrij), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .fatwaSahabi), ("true", .qiyas), ("false", .qiyas), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .fatwaSahabi), ("true", .qiyas), ("false", .qiyas), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .fatwaSahabi), ("true", .qiyas), ("false", .qiyas), ("false", .istishab)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .takhrij), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f006
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .fatwaSahabi), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .fatwaSahabi), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .fatwaSahabi), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .tashih), ("false", .wajh), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .zanni), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .zanni), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .zanni), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .tashih), ("false", .nass), ("true", .wajh), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f008
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("true", .zanni), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("true", .zanni), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("true", .zanni), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("false", .takhrij), ("true", .tashih), ("true", .tashih), ("false", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q054.f002
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .wajh), ("true", .ashab), ("false", .tashih), ("true", .ashab), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
@@ -764,14 +1181,29 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f004
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .nass), ("true", .tashih), ("false", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f006
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .jazm), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f007
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f008
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("true", .qiyas), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("true", .qiyas), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("true", .qiyas), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .wajh), ("true", .ashab), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f032
 #guard byAttribution (P := String) none none [("lot", .tashih), ("to the mother", .wajh), ("lot", .tashih), ("lot", .jazm), ("lot", .jazm), ("lot", .jazm), ("lot", .jazm), ("lot", .jazm)] == (.tarjih "lot")
@@ -811,22 +1243,46 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f000
 #guard byAttribution (P := String) none none [("true", .tashih), ("false", .nass), ("true", .tashih), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab), ("true", .tashih), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f007
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("false", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("false", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .qiyas), ("false", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .tashih), ("false", .jazm), ("true", .nass), ("true", .ashab), ("false", .ashab), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .tashih), ("true", .jazm), ("false", .takhrij), ("false", .ashab), ("false", .nass), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .tashih), ("true", .ashab), ("true", .jazm), ("false", .nass), ("true", .tashih), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f003
 #guard byAttribution (P := String) none none [("false", .nass), ("false", .jazm), ("true", .wajh), ("false", .ashab), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .ashab), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .takhrij), ("false", .tashih), ("true", .ashab), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .ashab), ("true", .nass), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .takhrij), ("false", .tashih), ("false", .tashih)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f004
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .takhrij), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
@@ -859,32 +1315,71 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f005
 #guard byAttribution (P := String) none none [("false", .jazm), ("true", .takhrij), ("true", .jazm), ("true", .qiyas), ("true", .qiyas), ("true", .qiyas), ("true", .qiyas), ("true", .qiyas)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .ashab), ("false", .ashab), ("false", .jazm), ("true", .takhrij), ("false", .qiyas), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .takhrij), ("false", .ashab), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .ashab), ("false", .jazm), ("true", .ashab), ("false", .qiyas), ("true", .ashab), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .ashab), ("true", .nass), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .fatwaSahabi)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .fatwaSahabi)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .fatwaSahabi)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .zahir), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .tashih), ("true", .zahir), ("true", .ashab), ("false", .qiyas), ("false", .qiyas), ("false", .qiyas)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .fatwaSahabi), ("false", .zanni), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .fatwaSahabi), ("false", .zanni), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .fatwaSahabi), ("false", .zanni), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .tashih), ("false", .nass), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f000
 #guard byAttribution (P := String) none none [("false", .tashih), ("true", .wajh), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["full", "half"] ([("full", .qiyas), ("half", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["full", "half"] ([("full", .qiyas), ("half", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["full", "half"] ([("full", .qiyas), ("half", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("full", .tashih), ("full", .jazm), ("half", .wajh), ("full", .tashih), ("full", .jazm), ("half", .nass), ("full", .jazm), ("full", .jazm), ("full", .jazm), ("full", .jazm)] == (.tarjih "full")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["full", "half"] ([("full", .qiyas), ("half", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["full", "half"] ([("full", .qiyas), ("half", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["full", "half"] ([("full", .qiyas), ("half", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("full", .ashab), ("half", .wajh), ("full", .qiyas), ("full", .qiyas), ("full", .qiyas)] == (.tarjih "full")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["full", "half"] ([("full", .qiyas), ("full", .qiyas), ("half", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["full", "half"] ([("full", .qiyas), ("full", .qiyas), ("half", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["full", "half"] ([("full", .qiyas), ("full", .qiyas), ("half", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("full", .tashih), ("half", .takhrij), ("full", .tashih), ("half", .ashab), ("full", .jazm), ("full", .jazm), ("full", .jazm), ("full", .qiyas)] == (.tarjih "full")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["full", "half"] ([("full", .qiyas), ("full", .qiyas), ("half", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["full", "half"] ([("full", .qiyas), ("full", .qiyas), ("half", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["full", "half"] ([("full", .qiyas), ("full", .qiyas), ("half", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("full", .nass), ("half", .takhrij), ("full", .qiyas), ("full", .jazm), ("full", .jazm), ("full", .jazm), ("full", .jazm), ("full", .jazm)] == (.tarjih "full")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["full", "half"] ([("full", .qiyas), ("full", .qiyas), ("half", .qiyas), ("half", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["full", "half"] ([("full", .qiyas), ("full", .qiyas), ("half", .qiyas), ("half", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["full", "half"] ([("full", .qiyas), ("full", .qiyas), ("half", .qiyas), ("half", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("full", .zahir), ("half", .ashab), ("full", .tashih), ("half", .ashab), ("full", .jazm), ("full", .jazm), ("full", .jazm), ("full", .jazm), ("full", .jazm)] == (.tarjih "full")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["half", "full"] ([("half", .zanni), ("half", .qiyas), ("full", .qiyas), ("full", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "half")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["half", "full"] ([("half", .zanni), ("half", .qiyas), ("full", .qiyas), ("full", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "half")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["half", "full"] ([("half", .zanni), ("half", .qiyas), ("full", .qiyas), ("full", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "half")
 #guard byAttribution (P := String) none none [("half", .nass), ("full", .takhrij), ("half", .qiyas), ("half", .qiyas), ("half", .qiyas), ("half", .qiyas), ("half", .qiyas)] == (.tarjih "half")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f001
 #guard byAttribution (P := String) none none [("false", .tashih), ("false", .nass), ("true", .wajh), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
@@ -899,8 +1394,14 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f004
 #guard byAttribution (P := String) none none [("false", .jazm), ("true", .takhrij), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .tashih), ("false", .ashab), ("false", .jazm), ("true", .wajh), ("false", .tashih), ("true", .ashab), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .ashab), ("false", .tashih), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f000
 #guard byAttribution (P := String) none none [("true", .jazm), ("true", .ashab), ("false", .ashab), ("true", .jazm), ("true", .jazm), ("true", .qiyas), ("true", .qiyas)] == (.tarjih "true")
@@ -934,6 +1435,9 @@ open Usul.Reconcile
 #guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("false", .zanni), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f006
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .wajh), ("false", .takhrij)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f001
 #guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .fatwaSahabi), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
@@ -943,6 +1447,9 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f006
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas), ("false", .takhrij), ("false", .takhrij), ("false", .takhrij)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .takhrij), ("true", .jazm), ("false", .tashih), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f000
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .tashih), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
@@ -951,6 +1458,9 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f003
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .takhrij), ("false", .nass), ("true", .tashih), ("false", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q079.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .takhrij), ("false", .ashab), ("true", .qiyas), ("true", .takhrij), ("true", .takhrij)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f000
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
@@ -959,8 +1469,14 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f004
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("false", .ashab), ("true", .tashih), ("false", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .tashih), ("true", .nass), ("true", .ashab), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f001
 #guard byAttribution (P := String) none none [("true", .ashab), ("true", .wajh), ("false", .wajh), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
@@ -969,6 +1485,9 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f003
 #guard byAttribution (P := String) none none [("true", .tashih), ("false", .wajh), ("true", .tashih), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .ashab), ("false", .tashih), ("true", .ashab), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f002
 #guard byAttribution (P := String) none none [("false", .nass), ("false", .tashih), ("true", .nass), ("false", .tashih), ("true", .ashab), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
@@ -983,10 +1502,19 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f004
 #guard byAttribution (P := String) none none [("true", .zahir), ("false", .ashab)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["equivalent", "agreed"] ([("equivalent", .qiyas), ("equivalent", .qiyas), ("agreed", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["equivalent", "agreed"] ([("equivalent", .qiyas), ("equivalent", .qiyas), ("agreed", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["equivalent", "agreed"] ([("equivalent", .qiyas), ("equivalent", .qiyas), ("agreed", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("equivalent", .tashih), ("equivalent", .nass), ("agreed", .ashab), ("equivalent", .tashih), ("equivalent", .ashab), ("equivalent", .jazm), ("equivalent", .jazm), ("equivalent", .jazm), ("equivalent", .jazm)] == (.tarjih "equivalent")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["equivalent", "agreed"] ([("equivalent", .qiyas), ("agreed", .qiyas), ("agreed", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["equivalent", "agreed"] ([("equivalent", .qiyas), ("agreed", .qiyas), ("agreed", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["equivalent", "agreed"] ([("equivalent", .qiyas), ("agreed", .qiyas), ("agreed", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("equivalent", .tashih), ("agreed", .takhrij), ("equivalent", .tashih), ("agreed", .nass), ("equivalent", .jazm), ("equivalent", .jazm), ("equivalent", .jazm), ("equivalent", .jazm), ("equivalent", .jazm)] == (.tarjih "equivalent")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["agreed", "equivalent"] ([("agreed", .zanni), ("agreed", .qiyas), ("equivalent", .zanni), ("equivalent", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["agreed", "equivalent"] ([("agreed", .zanni), ("agreed", .qiyas), ("equivalent", .zanni), ("equivalent", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["agreed", "equivalent"] ([("agreed", .zanni), ("agreed", .qiyas), ("equivalent", .zanni), ("equivalent", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("agreed", .tashih), ("agreed", .nass), ("equivalent", .nass), ("equivalent", .ashab), ("agreed", .tashih), ("equivalent", .ashab), ("agreed", .qiyas), ("agreed", .jazm), ("agreed", .jazm), ("agreed", .jazm), ("agreed", .jazm)] == (.tarjih "agreed")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f002
 #guard byAttribution (P := String) none none [("true", .tashih), ("false", .wajh), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
@@ -1038,6 +1566,9 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q036.f000
 #guard byAttribution (P := String) none none [("false", .tashih), ("false", .ashab), ("true", .wajh), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .tashih), ("false", .wajh), ("true", .tashih), ("false", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f001
 #guard byAttribution (P := String) none none [("true", .jazm), ("true", .nass), ("false", .takhrij), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
@@ -1050,20 +1581,44 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f006
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .takhrij), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f011
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .jazm), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .takhrij), ("true", .tashih), ("true", .takhrij), ("true", .takhrij)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .nass), ("true", .tashih), ("false", .tashih), ("false", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("false", .ashab), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("true", .jazm), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("false", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .wajh), ("false", .nass), ("true", .tashih), ("true", .qiyas), ("true", .takhrij)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("true", .jazm), ("false", .qiyas), ("false", .nass), ("true", .tashih), ("true", .nass), ("true", .jazm), ("false", .takhrij), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("true", .jazm), ("false", .wajh), ("false", .nass), ("true", .tashih), ("true", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f003
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
@@ -1080,16 +1635,34 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f007
 #guard byAttribution (P := String) none none [("true", .wajh), ("false", .wajh), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .fatwaSahabi), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .fatwaSahabi), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .fatwaSahabi), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .tashih), ("false", .nass), ("true", .takhrij), ("false", .tashih), ("true", .nass), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .zanni), ("false", .zanni), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .zanni), ("false", .zanni), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .zanni), ("false", .zanni), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("true", .tashih), ("true", .nass), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .fatwaSahabi), ("false", .qiyas), ("true", .fatwaSahabi)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .fatwaSahabi), ("false", .qiyas), ("true", .fatwaSahabi)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .fatwaSahabi), ("false", .qiyas), ("true", .fatwaSahabi)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .nass), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q054.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .fatwaSahabi), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .fatwaSahabi), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .fatwaSahabi), ("false", .zanni)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("false", .ashab), ("false", .tashih), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .qiyas), ("false", .takhrij)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f000
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .jazm), ("false", .ashab), ("false", .nass), ("true", .tashih), ("false", .ashab), ("false", .tashih), ("true", .ashab), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
@@ -1102,16 +1675,34 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q094.f006
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .wajh), ("false", .tashih), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .nass), ("false", .tashih), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .nass), ("true", .ashab), ("false", .tashih), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .takhrij)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f009
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("false", .ashab), ("true", .tashih), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f010
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f011
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .nass), ("false", .nass), ("true", .tashih), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f012
 #guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
@@ -1119,16 +1710,34 @@ open Usul.Reconcile
 #guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .zanni), ("false", .zanni), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .nass), ("false", .tashih), ("true", .ashab), ("false", .nass), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .nass), ("true", .tashih), ("true", .ashab), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .takhrij), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .fatwaSahabi), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .fatwaSahabi), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .fatwaSahabi), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .jazm), ("false", .takhrij), ("true", .tashih), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab), ("true", .tashih), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .tashih), ("true", .ashab), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f002
 #guard byAttribution (P := String) none none [("true", .tashih), ("false", .ashab), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
@@ -1139,16 +1748,34 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008
 #guard byAttribution (P := String) none none [("true", .tashih), ("false", .nass), ("true", .tashih), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .tashih), ("true", .ashab), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .istishab), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .istishab), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .istishab), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab), ("true", .tashih), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .tashih), ("true", .nass), ("false", .tashih), ("true", .nass), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f006
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .istishab), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .istishab), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .istishab), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .takhrij)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .tashih), ("true", .wajh), ("false", .tashih), ("false", .tashih), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f003
 #guard byAttribution (P := String) none none [("excess", .tashih), ("all", .ashab), ("excess", .tashih), ("all", .ashab), ("excess", .nass), ("excess", .jazm), ("excess", .jazm)] == (.tarjih "excess")
@@ -1177,8 +1804,14 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f005
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .takhrij), ("false", .qiyas), ("false", .qiyas), ("false", .takhrij), ("false", .qiyas), ("false", .qiyas)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .jazm), ("false", .ashab), ("true", .tashih), ("true", .nass), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .nass), ("true", .ashab), ("false", .nass), ("false", .ashab), ("true", .tashih), ("true", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f005
 #guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .mursalDaif), ("true", .aqrabSahabi), ("true", .qiyas), ("false", .aqrabSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .muttasil⟩] == (.tarjih "false")
@@ -1186,24 +1819,48 @@ open Usul.Reconcile
 #guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .mursalDaif), ("true", .aqrabSahabi), ("true", .qiyas), ("false", .aqrabSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [⟨"false", "true", .muttasil⟩] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("true", .tashih), ("false", .nass), ("false", .ashab), ("true", .tashih), ("true", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f007
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .zanni), ("true", .fatwaSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .zanni), ("true", .fatwaSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .zanni), ("true", .fatwaSahabi), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .tashih), ("false", .wajh), ("false", .nass), ("true", .tashih), ("true", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f010
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .tashih), ("false", .ashab), ("true", .ashab), ("true", .nass), ("false", .tashih), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f012
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .ashab), ("false", .qiyas), ("false", .takhrij), ("false", .takhrij)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f013
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .tashih), ("false", .ashab), ("true", .ashab), ("true", .zahir), ("false", .tashih), ("false", .ashab), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f014
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .ashab), ("false", .qiyas), ("false", .qiyas), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f015
 #guard byAttribution (P := String) none none [("true", .tashih), ("true", .nass), ("false", .takhrij), ("false", .nass), ("true", .tashih), ("true", .ashab), ("true", .jazm), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f019
 #guard byAttribution (P := String) none none [("false", .ashab), ("true", .wajh), ("false", .qiyas), ("false", .qiyas), ("false", .qiyas), ("false", .qiyas), ("false", .qiyas), ("false", .qiyas)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f020
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .qiyas), ("true", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .ashab), ("true", .qiyas), ("true", .takhrij), ("true", .jazm), ("true", .jazm), ("true", .jazm)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f001
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .nass), ("false", .ashab), ("true", .nass), ("false", .qiyas), ("false", .ashab), ("false", .jazm), ("false", .jazm), ("false", .takhrij), ("false", .takhrij)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f002
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "false")
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .nass), ("false", .tashih), ("false", .ashab), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f004
 #guard byAttribution (P := String) none none [("false", .nass), ("false", .ashab), ("false", .jazm), ("true", .wajh), ("false", .tashih), ("false", .ashab), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
@@ -1220,16 +1877,34 @@ open Usul.Reconcile
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f011
 #guard byAttribution (P := String) none none [("false", .tashih), ("false", .nass), ("true", .nass), ("true", .takhrij), ("false", .tashih), ("false", .tashih), ("false", .jazm), ("false", .jazm), ("false", .jazm), ("false", .jazm)] == (.tarjih "false")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["detached", "attached"] ([("detached", .qiyas), ("detached", .qiyas), ("detached", .qiyas), ("attached", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["detached", "attached"] ([("detached", .qiyas), ("detached", .qiyas), ("detached", .qiyas), ("attached", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["detached", "attached"] ([("detached", .qiyas), ("detached", .qiyas), ("detached", .qiyas), ("attached", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("detached", .ashab), ("attached", .wajh), ("detached", .tashih), ("detached", .nass), ("detached", .jazm), ("detached", .jazm), ("detached", .jazm), ("detached", .jazm)] == (.tarjih "detached")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f004
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["detached", "attached"] ([("detached", .qiyas), ("detached", .qiyas), ("detached", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "detached")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["detached", "attached"] ([("detached", .qiyas), ("detached", .qiyas), ("detached", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "detached")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["detached", "attached"] ([("detached", .qiyas), ("detached", .qiyas), ("detached", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "detached")
 #guard byAttribution (P := String) none none [("detached", .tashih), ("detached", .nass), ("attached", .ashab), ("detached", .tashih), ("detached", .tashih), ("detached", .jazm), ("detached", .jazm), ("detached", .jazm), ("detached", .jazm)] == (.tarjih "detached")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f003
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("part", .qiyas), ("separate", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("part", .qiyas), ("separate", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("part", .qiyas), ("separate", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("part", .tashih), ("separate", .wajh), ("part", .tashih), ("separate", .ashab), ("part", .tashih), ("part", .jazm), ("part", .jazm), ("part", .jazm)] == (.tarjih "part")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f005
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("part", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "part")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("part", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "part")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["part", "separate"] ([("part", .qiyas), ("part", .qiyas), ("part", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "part")
 #guard byAttribution (P := String) none none [("part", .jazm), ("separate", .nass), ("separate", .ashab), ("part", .tashih), ("separate", .ashab), ("part", .jazm), ("part", .jazm)] == (.tarjih "part")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f000
 #guard byAttribution (P := String) none none [("true", .tashih), ("false", .nass), ("true", .tashih)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .zanni), ("true", .qiyas), ("false", .mursalDaif), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .zanni), ("true", .qiyas), ("false", .mursalDaif), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["true", "false"] ([("true", .zanni), ("true", .zanni), ("true", .qiyas), ("false", .mursalDaif), ("false", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == (.tarjih "true")
 #guard byAttribution (P := String) none none [("true", .ashab), ("false", .nass), ("true", .tashih)] == (.tarjih "true")
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f000
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.strict (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.sources (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
+#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.all (P := String) none none ["false", "true"] ([("false", .qiyas), ("false", .qiyas), ("true", .qiyas), ("true", .qiyas)] : List (String × Usul.Tarjih.Tier)) [] == .tawaqquf
 #guard byAttribution (P := String) none none [("false", .nass), ("true", .takhrij), ("false", .jazm), ("true", .ashab)] == (.tarjih "false")

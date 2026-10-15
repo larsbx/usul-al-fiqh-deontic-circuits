@@ -26,7 +26,11 @@ v02 p389–401). Who holds a position, the madhhab's label included, is kept as 
   silence, prohibition over command and command over permission, the specific over the general
   and the unspecialised general over the specialised, iqtiḍāʾ over īmāʾ and mafhūm, īmāʾ over
   mafhūm, the mafhūm of agreement over that of contrast, a ruling whose ʿilla the Lawgiver
-  states, and what the two Ṣaḥīḥs agree on. Each advantage carries its standing in the sources
+  states, and what the two Ṣaḥīḥs agree on. Al-Ṭūfī's *Sharḥ Mukhtaṣar al-Rawḍa* (v03 p729–746)
+  adds the spoken over the implied («ودلالة المنطوق على المفهوم», p730), the naṣṣ over the ẓāhir
+  (p738), the clear over the ambiguous and the literal over the figurative (p729–730), the
+  better-known sense (p730, p746), a text stated to give the ruling over one read from context
+  (p730), and the view of the more learned of two ṣaḥāba (p743). Each advantage carries its standing in the sources
   (asserted, disputed, weak, rejected; `Murajjih.standing`), and which standings decide is a
   `Policy`: by default what a cited source asserts as its own, with the strict and the inclusive
   policies run beside it.
@@ -77,6 +81,8 @@ inductive Murajjih where
   -- the indication and the report (al-Kawkab v04 p650–703)
   | sahihayn | masmu | qawl | fil | nahy | amr | khass | ammMahfuz | iqtida | ima | muwafaqa | muallal
   | hazir
+  -- the indication (al-Ṭūfī, Sharḥ Mukhtaṣar al-Rawḍa v03 p729–746)
+  | mantuq | nass | mubayyan | haqiqa | ashhar | siyaq | afqah
   -- called weak or rejected by a cited source: recorded, not counted
   | khiffa | hissiyya | fewerAwsaf | dariHadd
   deriving DecidableEq, Repr

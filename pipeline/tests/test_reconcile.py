@@ -141,15 +141,17 @@ def test_jam_must_be_conservative_and_land_on_the_side_the_proofs_favour():
     assert reconcile.check([unbound], {"entries": [weighed("qiyas", "zanni")]}, DOSSIER) == []
     # The flip lands on the weaker proof: not a jamʿ.
     assert reconcile.check([unbound], {"entries": [weighed("zanni", "qiyas")]}, DOSSIER) == [
-        "x: a jamʿ must land on the side the proofs favour",
-        "x: the refinement departs from successive_contracts other than to the side the proofs favour"]
+        "x: a jamʿ must not land against the side the proofs favour",
+        "x: the refinement departs from successive_contracts against the side the proofs favour"]
     # Unweighed, the move is pending, not resolved by the labels.
     ledger = {"entries": [_entry("x", ["zahir", "ashab"], jam)]}
     assert reconcile.check([unbound], ledger, DOSSIER) == []
     assert reconcile.jam_pending([unbound], ledger) == ["x"]
     # A derivable farʿ the refinement changes breaks conservativity.
     derivable = {**unbound, "far": "y", "class": "derivable"}
-    assert "y: the refinement departs from successive_contracts other than to the side the proofs favour" in reconcile.check(
+    # Proofs that leave it open (tawaqquf) do not refute the jamʿ.
+    assert reconcile.check([unbound], {"entries": [weighed("qiyas", "qiyas")]}, DOSSIER) == []
+    assert "y: the refinement departs from successive_contracts against the side the proofs favour" in reconcile.check(
         [unbound, derivable], {"entries": [weighed("qiyas", "zanni")]}, DOSSIER)
     # No refinement without a conservativity theorem in the dossier.
     other = {**jam, "encoder": "successive_contracts"}

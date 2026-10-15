@@ -1,0 +1,521 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b07: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q039.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās a fortiori: «nakaḥtuhā/tazawwajtuhā» makes a foreign woman lawful, so the revocably divorced wife is more so; Aḥmad alluded to it and Ibn Ḥāmid chose it (with intention, as for kināyāt of ṭalāq).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p524",
+     "excerpt_ar": "والثاني، تحصل به الرجعة. أومأ إليه أحمد. واختاره ابن حامد؛ لأنه تباح به الأجنبية، فالرجعية أولى",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the wajh that rajʿa takes place by an allusive word (with intention); the facts need no witnessing, the setting in which the khilāf runs. A stated rationale (awlā analogy): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on nikāḥ: the word is an allusion, rajʿa is the making lawful of an intended buḍʿ, and that is not obtained by allusion, as nikāḥ is not.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p524",
+     "excerpt_ar": "أحدهما، لا تحصل به الرجعة؛ لأن هذا كناية، والرجعة استباحة بضع مقصود، ولا تحصل بالكناية، كالنكاح",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the wajh that rajʿa by allusion is not valid; aṣl nikāḥ, ʿilla «istibāḥat buḍʿ maqṣūd». Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: «nakaḥtu/tazawwajtu» is coined for initiating marriage, while rajʿa continues it.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p149",
+     "excerpt_ar": "والثاني: لا يصح؛ لأنه وضع لابتداء النكاح، وهذه لاستدامته",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Second rationale for the same wajh in al-Kāfī: the word does not fit continuation. Stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q079.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on crop sown under a void (fāsid) contract, which Aḥmad's words give the landowner for the cost: the owner may take it for his outlay here too.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p154",
+     "excerpt_ar": "ويحتمل أن يتملكه مالك الأرض أيضا كالمزروع بعقد فاسد على ما دل عليه كلام أحمد",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's argument for the naṣṣ (owner takes the crop for its cost). Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: what calls for the owner's taking the crop is the absence of a valid permission, and it exists here; protecting the trees from uprooting is no bar, since that is to avoid loss to an excused planter.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p155",
+     "excerpt_ar": "والمقتضي لتملك الزرع هو انتفاء الإذن الصحيح وهو موجود هنا",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Stated ʿilla matched to the facts (valid_permission false). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the crop the flood carried into another's land: it is left for its owner at a rent, having come about without aggression or fault; likewise on the naṣṣ that such a planter's trees are respected like the borrower's and lessee's.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p154",
+     "excerpt_ar": "ويشهد لهذا الوجه أن الزرع النابت في أرض الغير مما حمله السيل لمالكه مبقى هنا بالأجرة لحصوله من غير عدوان ولا تفريط",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's support for the tawjīh that the crop is the sower's, with rent recoverable from the usurper. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth: the Prophet forbade selling fruit before its soundness appears; what is bought on condition of cutting and cut is excepted by ijmāʿ, and the rest stays forbidden.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p066",
+     "excerpt_ar": "ووجه الرواية الأولى، «أن النبي - صلى الله عليه وسلم - نهى عن بيع الثمرة قبل بدو صلاحها.» فاستثنى منه ما اشتراه بشرط القطع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the riwāya that the sale is void. Marfūʿ prohibition applied by its remaining scope after the exception: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: leaving it on the tree is a feature the Law forbade stipulating for God's right, so its occurrence voids the contract, like delay in ribawī exchange; and validity would be a means to the forbidden sale, as with ʿīna.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p066",
+     "excerpt_ar": "ولأن التبقية معنى حرم الشرع اشتراطه لحق الله تعالى، فأبطل العقد وجوده. كالنسيئة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Rationale for voidness. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: at most the sold thing has become mixed with another, like fruit bought and other fruit growing indistinguishably, or wheat with other wheat poured on it.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p066",
+     "excerpt_ar": "أكثر ما فيه أن المبيع اختلط بغيره، فأشبه ما لو اشترى ثمرة، فحدثت ثمرة أخرى، ولم تتميز",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the riwāya (Aḥmad b. Saʿīd; most jurists) that the sale stands. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale of the riwāya of ʿAbd Allāh and Ṣāliḥ: his giving to them in his life is a qarīna that he meant to keep the tie after his death.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p229",
+     "excerpt_ar": "لأن عطيته لهم في حياته قرينة دالة على صلته لهم بعد مماته، وإلا فلا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for following the testator's custom of ṣila (in the Mughnī for the mother's kin). Stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the Lawgiver's usage: the Prophet gave «dhū al-qurbā» (al-Ḥashr 7) to the descendants up to Hāshim and not beyond, so the testator's unqualified word is carried on what God's unqualified word was carried on.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p229",
+     "excerpt_ar": "فحمل مطلق كلام الموصي على ما حمل عليه المطلق من كلام الله تعالى وفسر بما فسر به",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for defining qarāba by lineage (al-Khiraqī's ruling), with no regard to ṣila. The āya and the Prophet's practice concern the fayʾ share, carried over to the bequest: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The name «qarāba» has a sharʿī usage, which must be followed and put before the lexical/customary one, like wuḍūʾ, ṣalāt, ṣawm and ḥajj.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p230",
+     "excerpt_ar": "ولنا، أن هذا الاسم له عرف في الشرع، وهو ما ذكرناه، فيجب حمله عليه، وتقديمه على العرف اللغوي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given against Mālik and Abū Ḥanīfa for the lineage definition. Linguistic/stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Ibn Rajab's takhrīj: the second tier is confined to the children of those named, «by reference to their fathers», since it is one gift and reading part of it by part is nearer than reading the bequest by the gifts of his lifetime.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p276",
+     "excerpt_ar": "اعتبارا بآبائهم فإن هذه عطية واحدة، فحمل بعضها على بعض أقرب من حمل الوصية على العطية في الحياة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The argued ground for the confinement. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: Aḥmad's «they are partners» refers to the grandchildren, who share by the generality of the wāqif's word «walad waladī».",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p015",
+     "excerpt_ar": "أي يشترك أولاد الموقوف عليهما وأولاد غيرهم؛ لعموم لفظ الواقف فيهم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for including all the grandchildren in the second tier. Qiyas (linguistic rationale)."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale for the naṣṣ: confining the first tier to the young children was for fear of their ruin, a meaning absent in the second tier, so he included all the grandchildren.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p276",
+     "excerpt_ar": "لأن تخصيص البطن بالصغار كان لخوفه عليهم الضيعة، وهذا المعنى مفقود في البطن الثاني",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's account of why the naṣṣ generalises the second tier. Stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of Ibn ʿUmar: a man asked «what makes ḥajj obligatory?» and the Prophet said «provision and mount» (al-Tirmidhī, ḥasan; with al-Dāraquṭnī's reports from Jābir, Ibn ʿUmar, Ibn ʿAmr, Anas and ʿĀʾisha): the Prophet explained istiṭāʿa as zād and rāḥila.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p215",
+     "excerpt_ar": "ما يوجب الحج؟ قال: الزاد والراحلة.» رواه الترمذي. وقال: حديث حسن",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited (ولنا) against Mālik's view that one able to walk is bound; the far earner owns no zād or rāḥila, so on this explanation he is not mustaṭīʿ. Connected marfūʿ āḥād, graded ḥasan: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on jihād: an act of worship tied to crossing a long distance, so zād and rāḥila are a condition of its obligation; and «the hardship-free general state» governs, as the travel concessions do.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p215",
+     "excerpt_ar": "ولأنها عبادة تتعلق بقطع مسافة بعيدة، فاشترط لوجوبها الزاد والراحلة، كالجهاد، وما ذكروه ليس باستطاعة، فإنه شاق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second proof for non-obligation on the far traveller without owned means. Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Ibn Rajab's farq against al-Majd's analogy: God's rights are built on leniency, unlike human rights; hence one is not bound to earn wealth for ḥajj or to free a slave in kaffāra.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p297",
+     "excerpt_ar": "حقوق الله مبنية على المسامحة بخلاف حقوق الآدميين ولهذا لا يجب عليه التكسب لتحصيل مال يحج به",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Given to keep the madhhab (no obligation) against the tawajjuh; a stated rationale (farq): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Al-Majd's qiyās: the far earner who can earn on his way is bound to ḥajj, as he is compelled to earn to pay his debt (on «aṣlunā»).",
+     "ref": "src:openiti-rajab-shamela21730/v01:p297",
+     "excerpt_ar": "وقال الشيخ مجد الدين يتوجه على أصلنا في البعيد أن يجب الحج إن كان قادرا على التكسب في طريقة كما يجبره على الكسب لوفاء دينه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The direct argument for the obligation on these facts; aṣl the bankrupt compelled to earn, ʿilla capacity to earn as wealth. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of Surraq: the Prophet sold Surraq, who had incurred debts, for five camels; a free man is not sold, so it was his services that were sold (to pay his debt).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p336",
+     "excerpt_ar": "لأن النبي - صلى الله عليه وسلم - باع سرقا في دينه، وكان سرق رجلا دخل المدينة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for compelling the bankrupt craftsman to hire himself out for the rest of his debt (also the view of ʿUmar b. ʿAbd al-ʿAzīz, Sawwār, al-ʿAnbarī, Isḥāq). A marfūʿ report of the Prophet's deed, read by interpretation (sale of manāfiʿ): zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: manāfiʿ run like aʿyān (contracted on, bar zakāt, constitute wealth), so debts are paid from them; ijāra is an exchange he may be compelled into, like selling his property for his debt, or hiring out his umm walad; and he is able to pay.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p336",
+     "excerpt_ar": "ولأن المنافع تجري مجرى الأعيان، في صحة العقد عليها وتحريم أخذ الزكاة، وثبوت الغنى بها، فكذلك في وفاء الدين منها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Rationales for the same riwāya; earning capacity treated as wealth. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Āya: «And if one is in hardship, then respite until ease» (al-Baqara 280).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p336",
+     "excerpt_ar": "إحداهما، لا يجبره، وهو قول مالك والشافعي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the riwāya that he is not compelled (with Mālik and al-Shāfiʿī); the āya bears on the earner only by the generality of «dhū ʿusra» (the Mughnī disputes his inclusion): zanni."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of Abū Saʿīd (Muslim): a man whose fruit was struck and whose debts grew; the Prophet said «Take what you find; you have nothing but that.»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p336",
+     "excerpt_ar": "فقال النبي - صلى الله عليه وسلم - خذوا ما وجدتم، وليس لكم إلا ذلك.» رواه مسلم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for no compulsion: the creditors get only his existing property. Connected marfūʿ āḥād (Muslim): zanni. The Mughnī answers it as «qaḍiyyat ʿayn»."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: this is acquiring wealth, to which he is not compelled, as he is not compelled to accept a gift or ṣadaqa, and a woman is not compelled to marry for the mahr.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p336",
+     "excerpt_ar": "ولأن هذا تكسب للمال، فلم يجبره عليه، كقبول الهبة والصدقة، وكما لا تجبر المرأة على التزويج لتأخذ المهر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Rationale for the same riwāya. Qiyas."
+    }
+   ],
+   "advantages": [
+    {
+     "for": 1,
+     "over": 0,
+     "by": "qawl",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p336",
+     "excerpt_ar": "فقال النبي - صلى الله عليه وسلم - خذوا ما وجدتم، وليس لكم إلا ذلك.» رواه مسلم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Both zanni: position 1's ḥadīth is the Prophet's saying («خذوا ما وجدتم، وليس لكم إلا ذلك»), position 0's Surraq report is of his deed (باع سرقا), so qawl over fiʿl. The source itself prefers position 0, calling Abū Saʿīd's report a qaḍiyyat ʿayn."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the rich: the poor earner is of the people of nuṣra, so he is of the ʿāqila like the rich man.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v07:p342",
+     "excerpt_ar": "(وعنه أن الفقير المعتمل) أي: المحترف (يحمل من العقل) حكاها أبو الخطاب، وهي قول أكثر العلماء، لأنه من أهل النصرة فكان من العاقلة كالغني",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Cited for the riwāya (Abū al-Khaṭṭāb) that the poor earner bears his share, on exactly these facts (muʿtamil). Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on zakāt: bearing the ʿaql is muwāsāh, which does not bind the poor, as zakāt does not; and it was laid on the ʿāqila to lighten the killer, so it may not burden the poor.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p060",
+     "excerpt_ar": "(وليس على فقير ولو معتملا حمل شيء من الدية) لأن حمل العاقلة مواساة فلا يلزم الفقير كالزكاة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Cited for the madhhab on these facts («ولو معتملا»). Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Al-Kāfī: the poor man is not of the people of muwāsāh, and for that reason zakāt is not due from him; the muʿtamil riwāya is answered by this.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p042",
+     "excerpt_ar": "وحكى أبو الخطاب في الفقير المعتمل رواية أخرى أنه يعقل، والمذهب الأول، لما ذكرناه، ولذلك لا تجب عليه الزكاة",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Rationale for the madhhab, stated against the earner riwāya explicitly. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "ʿUmar set the jizya in three tiers and put the lowest on «the poor earner» (al-faqīr al-muʿtamil).",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v10:p598",
+     "excerpt_ar": "ولنا أن عمر رضي الله عنه جعل الجزية على ثلاث طبقات جعل أدناها على الفقير المعتمل",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Cited (ولنا) for the jizya falling on the earner and not on the non-earning poor. A ṣaḥābī's ruling with no ṣaḥābī disagreement reported here: fatwaSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the earner able to earn his sufficiency is in the rule of the rich.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p173",
+     "excerpt_ar": "فأما المعتمل الذي يقدر على كسب ما يقوم بكفايته، فعليه الجزية؛ لأنه في حكم الأغنياء",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Directly for these facts. Stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Farq/qiyās: the owner was bound to dry this fresh fruit, unlike an outsider; so he owes the poor's share by the estimate as dried, as one who destroys his designated uḍḥiya owes another in its place.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p016",
+     "excerpt_ar": "والفرق بينهما أن رب المال وجب عليه تجفيف هذا الرطب، بخلاف الأجنبي، ولهذا قلنا في من أتلف أضحيته المتعينة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for liability by the dried measure; the custodian-until-term feature is the ʿilla. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the outsider: liable for its like fresh on the day of destruction.",
+     "ref": "src:openiti-insaf-shamela21609/v03:p109",
+     "excerpt_ar": "وعنه رطبا كالأجنبي، فإنه يضمنه بمثله رطبا يوم التلف",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Cited for the riwāya that he is liable by its like fresh. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The qāʿida's rationale: whoever destroys a thing bound to God's right which he must keep and deliver until a known term is liable for its value at that term, not on the day of destruction.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p312",
+     "excerpt_ar": "إذا أتلف عينا تعلق بها حق الله تعالى من يجب عليه حفظها واستيفاؤها إلى مدة معلومة لزمه ضمانها بقيمتها في ذلك الوقت",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The only argued ground found for the greater value up to the day of sacrifice (al-Ḥalwānī's wajh is merely reported in al-Mubdiʿ). Stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on an outsider's destruction and other mutaqawwamāt: a destruction that obliges the value obliges no more than the value on that day.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p444",
+     "excerpt_ar": "لأنه إتلاف أوجب القيمة، فلم يجب أكثر من القيمة يوم الإتلاف، كما لو أتلفها أجنبي، وكسائر المضمونات",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the value on the day of destruction (ẓāhir of al-Qāḍī; Abū Ḥanīfa). Analogy: qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he was bound to the shedding of blood and the distribution and has defeated both, so he owes the greater of its value or a like hady, as if he had destroyed two things.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p539",
+     "excerpt_ar": "ويلزمه أكثر الأمرين من قيمتها، أو هدي مثلها؛ لأنه لزمته الإراقة والتفرقة، وقد فوتهما فلزمه ضمانهما، كما لو أتلف شيئين",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "The Kāfī's position and its rationale. Qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Abū al-Khaṭṭāb: God's right in its slaughter attached to it, so he owes its like when that is the greater of the two, unlike a human's property.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p444",
+     "excerpt_ar": "أبو الخطاب: يلزمه مثلها؛ لأنه أكثر الأمرين، ولأنه تعلق بها حق الله - تعالى - في ذبحها، فوجب عليه مثلها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same ruling (the greater of value or a like). Stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "aqrabSahabi",
+     "dalil": "ʿUmar consulted on a man who said in a quarrel «I am no adulterer, nor is my mother an adulteress»; they said he had praised his parents, but ʿUmar said he had alluded at his opponent and flogged him the ḥadd; ʿUthmān likewise flogged for an allusion.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p089",
+     "excerpt_ar": "فقالوا: قد مدح أباه وأمه. فقال عمر: قد عرض بصاحبه. فجلده الحد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the ḥadd for allusion in a quarrel (al-Athram's riwāya), i.e. the non-qadhf explanation is not accepted when the state indicates qadhf. The consulted ṣaḥāba first disagreed with ʿUmar: aqrabSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: an allusion with a qarīna turning it to one of its meanings is like the explicit word, as ṭalāq takes effect by allusion.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p089",
+     "excerpt_ar": "ولأن الكناية مع القرينة الصارفة إلى أحد محتملاتها، كالصريح الذي لا يحتمل إلا ذلك المعنى، ولذلك وقع الطلاق بالكناية",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Rationale for the same position. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ḥadīth: a man told the Prophet «my wife has borne a black boy», alluding to denying him, and no ḥadd or anything else was imposed on him.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p089",
+     "excerpt_ar": "إن امرأتي ولدت غلاما أسود يعرض بنفيه، فلم يلزمه بذلك حد ولا غيره",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for no ḥadd by allusion (Ḥanbal's riwāya; ʿAṭāʾ, al-Shāfiʿī and others). A marfūʿ report of the Prophet's non-imposition: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "God distinguished allusion from explicit proposal in the ʿidda (permitting the first), so likewise in qadhf; and any word bearing two meanings is not qadhf, like «yā fāsiq».",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p089",
+     "excerpt_ar": "وقد فرق الله تعالى بين التعريض بالخطبة والتصريح بها، فأباح التعريض في العدة، وحرم التصريح، فكذلك في القذف",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The āya concerns marriage proposals and is carried over to qadhf: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: his claim may be true, so his blood is not shed on a doubt.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p022",
+     "excerpt_ar": "ونقل عن أحمد، أنه يقبل منه، ولا يجبر على الإسلام؛ لأنه يحتمل الصدق، فلا يراق دمه بالشبهة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the riwāya that his «I did not mean Islam» is accepted; given for the general case, it applies a fortiori where the state (mockery, reporting) supports him. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he has been judged a Muslim, so he is killed if he goes back, as if a long time had passed.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p022",
+     "excerpt_ar": "والأول أولى؛ لأنه قد حكم بإسلامه، فيقتل إذا رجع كما لو طالت مدته",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the naṣṣ that he becomes an apostate and is compelled to Islam. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: what he says is possible (hence the owner is put to his oath), and ḥudūd are averted by doubts.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p143",
+     "excerpt_ar": "والأول أولى؛ لأن الحدود تدرأ بالشبهات، وإفضاؤه إلى سقوط القطع لا يمتنع اعتباره",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for no cutting (the madhhab; al-Shāfiʿī's text). The maxim is given as a rationale, not as a graded ḥadīth: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Maṣlaḥa rationale: dropping the cutting on his claim would mean no thief is ever cut, defeating deterrence.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p143",
+     "excerpt_ar": "لأن سقوط القطع بدعواه يؤدي إلى أن لا يجب قطع سارق، فتفوت مصلحة الزجر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the riwāya that he is cut. Stated rationale: qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Rationale: if he is known for theft his lie is known, so he is cut; otherwise not.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p143",
+     "excerpt_ar": "وعنه رواية ثالثة، أنه إن كان معروفا بالسرقة قطع؛ لأنه يعلم كذبه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The third riwāya; on the annotated branch (known for theft) it coincides with position 1's ruling. Stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f009",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "aqrabSahabi",
+     "dalil": "ʿUmar: «Whoever gives a gift intending recompense, it remains his gift; he may take it back if he is not satisfied with it.» Reported in sense also from ʿAlī and Faḍāla b. ʿUbayd.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p066",
+     "excerpt_ar": "لقول عمر - رضي الله عنه -: ومن وهب هبة أراد بها الثواب، فهو على هبته، يرجع فيها إذا لم يرض منها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for Mālik's (and one Shāfiʿī) position that the gift sought for recompense entails thawāb, the same ruling as Ḥanbal's report; the Mughnī notes «حديث عمر قد خالفه ابنه وابن عباس»: aqrabSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: a gift by way of gratuity, so it entails no recompense, like a gift to one's equal and a bequest.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p066",
+     "excerpt_ar": "ولنا أنها عطية على وجه التبرع، فلم تقتض ثوابا، كهبة المثل والوصية",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the madhhab that the unconditioned hiba entails no thawāb. Qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}
