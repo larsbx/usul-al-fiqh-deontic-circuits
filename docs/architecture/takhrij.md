@@ -39,7 +39,7 @@ Annotation is LLM-assisted and stays `candidate`. Lean checks its claims at thre
 
 - `UsulTest/TakhrijMirror.lean` guards every input of every encoder, so the Python mirror annotators compute with equals the Lean reading.
 - `UsulTest/Takhrij.lean` guards each annotated agreement (`==`) and each recorded disagreement (`!=`). A case claimed derivable that the kernel does not derive fails the build.
-- `check_case` rejects malformed annotations before generation: facts outside the domains, a class the kernel contradicts, or an ikhtilāf with fewer than two positions.
+- `check_case` rejects malformed annotations before generation: facts outside the domains, a class the kernel contradicts, an ikhtilāf with fewer than two positions, or one where no position holds the expected ruling as an encoder code (what the source adds goes in the position's `detail`).
 
 `python -m usul_corpus takhrij` regenerates both Lean files and `corpus/takhrij/report.json`. `test_takhrij.py` requires every furūʿ record of an annotated qāʿida to appear exactly once, and the generated files to be in sync.
 

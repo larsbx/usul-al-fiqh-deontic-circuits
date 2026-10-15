@@ -1,0 +1,601 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b13: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The ḥadīth of Umm Salama: «يكفيك أن تحثي على رأسك ثلاث حثيات», said after she told him she braided her hair tightly; this does not usually wet tightly braided hair",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p167",
+     "excerpt_ar": "لأن النبي - صلى الله عليه وسلم - قال: \" يكفيك أن تحثي على رأسك ثلاث حثيات \". مع إخبارها إياه بشد ضفر رأسها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's first proof for the wajh that washing the hanging hair is not obligatory (the ẓāhir of al-Khiraqī; also Abū Ḥanīfa). A marfūʿ āḥād ḥadīth (Muslim, per the Mughnī's citation of the same report at v01:p166) that bears on the point by implication: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy with her clothes: hair is not one of the parts of the living body (it is not made impure by death, has no life, touching it does not break wuḍūʾ, ṭalāq does not fall on it), so it is not washed for janāba",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p167",
+     "excerpt_ar": "ولأن الشعر ليس من أجزاء الحيوان، بدليل أنه لا ينجس بموته، ولا حياة فيه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's rational proof for no wujūb, following the qāʿida that hair is as detached. Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: if wetting it were obligatory, undoing the braids would be obligatory to be sure the washing reached it, and it is not",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p167",
+     "excerpt_ar": "ولأنه لو وجب بله لوجب نقضه ليعلم أن الغسل قد أتى عليه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Further reason in the Mughnī for no wujūb. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "mursalDaif",
+     "dalil": "The ḥadīth «تحت كل شعرة جنابة، فبلوا الشعر، وأنقوا البشرة» (Abū Dāwūd), which the source calls weak, al-Ḥārith b. Wajīh alone transmitting it",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p167",
+     "excerpt_ar": "وأما حديث: \" بلوا الشعر \". فيرويه الحارث بن وجيه وحده، وهو ضعيف",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the wajh of wujūb (the ẓāhir of the aṣḥāb, and al-Shāfiʿī's school). The Mughnī says its sole narrator is weak: mursalDaif."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy with the eyebrows and eyelashes: it is hair growing where washing is due",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p167",
+     "excerpt_ar": "ولأنه شعر نابت في محل الغسل، فوجب غسله، كشعر الحاجبين وأهداب العينين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's rational reason for the wajh of wujūb. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy with the fetus and saliva: hair and nail are parts that separate from her in health, unlike a finger",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p492",
+     "excerpt_ar": "ولنا أنه جزء ينفصل عنها في حال السلامة فلم تطلق بطلاقه كالحمل والريق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's «ولنا» for al-Khiraqī's «شعرك أو ظفرك طالق لم تطلق». Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: hair and nails fall away and others grow, so they are not like the permanent limbs",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p492",
+     "excerpt_ar": "لأن الشعر والظفر يزولان ويخرج غيرهما فليس هما كالأعضاء الثابتة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's first reason for no effect. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy with sweat, saliva and milk: hair has no life, is not made impure by the animal's death, and touching it does not break wuḍūʾ",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p492",
+     "excerpt_ar": "ولأن الشعر لا روح فيه ولا ينجس بموت الحيوان ولا ينقض الوضوء مسه فأشبه العرق والريق واللبن",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Further reason in the Mughnī that the hair is as detached from her. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy with the finger: it is a part made lawful by the marriage, so she is divorced by its divorce",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p492",
+     "excerpt_ar": "وقال مالك والشافعي: تطلق بذلك، ونحوه عن الحسن؛ لأنه جزء يستباح بنكاحها فتطلق بطلاقه كالأصبع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Reason given for Mālik and al-Shāfiʿī (and al-Ḥasan), holders of the same ruling as the other view; al-Sharḥ al-Kabīr says the muḥarrar's author records it as an iḥtimāl. Non-Ḥanbalī holders; analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The ḥawl is the mothers' and not the young ones' when the mothers are a niṣāb, and so also when they are not",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p451",
+     "excerpt_ar": "لأن الاعتبار بحول الأمهات دون السخال فيما إذا كانت نصابا، وكذلك إذا لم تكن نصابا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Reason the Mughnī gives for the riwāya counting the ḥawl from owning the mothers (also Mālik's view). A stated rationale extending one case to the other: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The offspring are growth of the niṣāb, so the whole counts from owning the mothers",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v02:p303",
+     "excerpt_ar": "ونقل حنبل: حول الكل منذ ملك الأمات لنماء النصاب، وفيه شيء",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ gives Ḥanbal's riwāya with its reason, the offspring being growth of the mothers. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: no ḥawl has passed over a niṣāb, so zakāt is not due, as when the niṣāb is completed by something other than its offspring, or as with trade goods",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p451",
+     "excerpt_ar": "ولنا، أنه لم يحل الحول على نصاب، فلم تجب الزكاة فيها، كما لو كملت بغير سخالها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's «ولنا» for counting from the completion (the ṣaḥīḥ of the madhhab). Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The ḥadīth «لا زكاة في مال حتى يحول عليه الحول» (marfūʿ, no grade given here), by its generality",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v02:p457",
+     "excerpt_ar": "وجبت فيه الزكاة لعموم قوله عليه السلام \" لا زكاة في مال حتى يحول عليه الحول \"",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr cites it for a niṣāb that is completed by what is acquired, counted from the completion. A marfūʿ āḥād report applied by generality: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the niṣāb is the cause, so the ḥawl must pass over all of it",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p384",
+     "excerpt_ar": "والأول المذهب؛ لأن النصاب هو السبب فاعتبر مضي الحول على جميعه",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's reason for counting the ḥawl from the completion of the niṣāb by offspring. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The ten calves born of the thirty cows follow them in liability and ḥawl, so the early-paid musinna covers all forty",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p472",
+     "excerpt_ar": "ويحتمل أن تجزئه المسنة المعجلة عن الجميع؛ لأن العشر تابعة للثلاثين في الوجوب والحول",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's iḥtimāl on exactly the offspring case (early payment for the niṣāb's yet-unborn young). A stated rationale of following: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Growth (offspring or profit) below a niṣāb follows the niṣāb in liability and ḥawl, so it is like what already exists",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p472",
+     "excerpt_ar": "والثاني: يجزئ؛ لأنه تابع له في الوجوب والحول، فأشبه الموجود",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's second wajh for the fourth kind of increase. It covers offspring with profit, so it supports the takhrīj for offspring. Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the increase follows what he owns",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v02:p684",
+     "excerpt_ar": "وقال أبو حنيفة: يجزئه لأنه تابع لما هو مالكه",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Reason given for Abū Ḥanīfa's view that early payment for the expected increase suffices. A non-Ḥanbalī holder of the same ruling; a stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: he paid early the zakāt of what is not yet his property, as if he paid before owning the niṣāb; the extra zakāt's cause is the increase itself, which does not yet exist",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v02:p684",
+     "excerpt_ar": "ولنا أنه عجل زكاة ما ليس في ملكه فلم يجز كالنصاب الاول",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr's «ولنا» that early payment covers the niṣāb and not the increase. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy with the third kind (offspring that reach a niṣāb): its zakāt cannot be paid before it exists",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p472",
+     "excerpt_ar": "أحدهما، لا يجزئ تعجيل زكاته قبل وجوده، كالذي قبله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's first wajh for the fourth kind of increase. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The growth is treated as a part of the original thing, or rescission undoes the contract from its start",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p088",
+     "excerpt_ar": "حكاها القاضي والشيخان جعلا للنماء كالجزء من الأصل، أو نظرا إلى أن الفسخ رفع للعقد من أصله",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's account of the reasoning for the riwāya that he returns it only with its growth. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy with kitāba: return is a legal ruling that extends to her offspring, as kitāba does",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p110",
+     "excerpt_ar": "وقال مالك: إن كان النماء ثمرة لم يردها، وإن كان ولدا رده معها؛ لأن الرد حكم، فسرى إلى ولدها كالكتابة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Reason given for Mālik, who returns the offspring (not the fruit) with the mother. A non-Ḥanbalī holder of the ruling for offspring; analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The ḥadīth «الخراج بالضمان» (the yield goes with the liability)",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p088",
+     "excerpt_ar": "فالمذهب المعمول به أنه للمشتري أيضا ويرد الأصل بدونها لقوله: «الخراج بالضمان»",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ cites it for the buyer's keeping the offspring, fruit and milk and returning the original without them. A marfūʿ āḥād ḥadīth applied by its generality: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The ḥadīth «الخراج بالضمان»: the sold thing was at the buyer's risk, so its growth is his",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p220",
+     "excerpt_ar": "وكذلك نماؤه المنفصل فقط كالثمرة واللبن) لقوله - صلى الله عليه وسلم - «الخراج بالضمان» والمبيع مضمون على المشتري",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf cites it for the separate growth from the substance. A marfūʿ āḥād ḥadīth: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: it arose in the buyer's ownership, as earnings do; it is separate growth, so the original may be returned without it",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p110",
+     "excerpt_ar": "ولنا، أنه حادث في ملك المشتري، فلم يمنع الرد، كما لو كان في",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's «ولنا» that offspring, fruit and milk stay with the buyer. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Farq: the fruit is an increase in his property coming out of its substance, while profit does not come from the substance but from trading",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p045",
+     "excerpt_ar": "واحتمل أن يكون من ثلثه؛ لأن الثمرة زيادة في ملكه، خارجة عن عينه، والربح لا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's second iḥtimāl for a dying man's musāqāt naming more than the usual share. A stated rationale (farq from muḍāraba): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the excess comes from the substance of his property, unlike profit in muḍāraba",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p521",
+     "excerpt_ar": "حسب) الزائد (من الثلث) ؛ لأنه من عين المال، بخلاف الربح في المضاربة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's reason for counting the excess from the third. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: what is stipulated in musāqāt and muzāraʿa comes out of the substance of his property; profit comes about by the work",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p216",
+     "excerpt_ar": "فتعتبر من ثلثه لخروج المشروط فيهما من عين ملكه، بخلاف الربح في المضاربة",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā's reason for counting the favouring from the third. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy with profit in muḍāraba: the fruit comes into being in the ownership of both parties",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p045",
+     "excerpt_ar": "احتمل أن لا يحتسب به من ثلثه؛ لأن الثمرة تخرج على ملكيهما، كالربح في المضاربة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's first iḥtimāl that the excess is not counted from the third. Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Farq from giving a riding animal for half its earnings, allowed by analogy with muḍāraba because it grows by work: the growth of sheep does not depend on his work",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p328",
+     "excerpt_ar": "لأن النماء الحاصل في الغنم لا يقف حصوله على عمله فيها، فلم يمكن إلحاقه بذلك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's answer explaining why giving livestock for a share of their milk and offspring is not allowed. A stated rationale (farq): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The consideration is unknown and does not exist; it may never exist, and the base state is that it does not exist; it could not be a price in a sale",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p328",
+     "excerpt_ar": "ولا أعلم فيه مخالفا؛ وذلك لأن العوض مجهول معدوم، ولا يدرى أيوجد أم لا، والأصل عدمه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's reason for Aḥmad's dislike of giving a cow to one who feeds it for a share of its young. Mainly an analogy with sale («ولا يصح أن يكون ثمنا»): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the animal's growth comes about without the worker's work",
+     "ref": "src:openiti-insaf-shamela21609/v05:p454",
+     "excerpt_ar": "والمذهب: لا، لحصول نمائه بغير عمله، ويجوز بجزء منه مدة معلومة",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "al-Inṣāf's reason for the madhhab against giving one's animal or bees for a share of their yield. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q021.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy with the children of the mukātaba and the mudabbara: the child follows its mother's legal status, so its substance is the heirs' and its benefits the legatee's, as hers are",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p184",
+     "excerpt_ar": "فهو مملوك، حكمه حكم أمه؛ لأن الولد يتبع الأم في حكمها، كولد المكاتبة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's first answer, one of the two wujūh on the view that the child is a part. Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the child is not part of the bequeathed benefit, nor is it the bequeathed slave woman herself, so it goes to the owner of the substance",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p184",
+     "excerpt_ar": "ويحتمل أن يكون لمالك الرقبة؛ لأن ذلك ليس من النفع الموصى به. ولا هو من الرقبة الموصى بنفعها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's iḥtimāl, the other wajh on the part view (the heirs'). It also denies that the child is a benefit. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the child is a part of her and not part of the bequeathed benefit",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p375",
+     "excerpt_ar": "أو زنا فالولد لمالك الرقبة لأنه جزء منها) وليس من النفع الموصى به",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf gives the child to the owner of the substance because it is a part. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q021.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy with the valid kitāba: it is a kitāba in which payment frees her, so her child is freed by it too",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p464",
+     "excerpt_ar": "أحدهما، يتبعها؛ لأنها كتابة يعتق فيها بالأداء، فيعتق به ولدها، كالكتابة الصحيحة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's report of Abū al-Khaṭṭāb's first wajh that the child follows. Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy with the valid kitāba: he is freed in it by payment",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p615",
+     "excerpt_ar": "ويتبع ولد) في كتابة فاسدة لأنه يعتق فيها بالأداء أشبه الصحيحة",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā's reason for the child following in a fāsid kitāba. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "istishab",
+     "dalil": "The base state is that the child remains a slave, and that is removed only by a text or what is in the sense of a text; neither exists",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p464",
+     "excerpt_ar": "ولأن الأصل بقاء الرق فيه، فلا يزول إلا بنص، أو معنى نص، وما وجد واحد منهما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's reason for its preferred wajh that the child does not follow («وهو أقيس، وأصح»), which it ties to the master's keeping the earnings in a fāsid kitāba («لما ذكرنا في الذي قبله»). Original state: istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the child follows in a valid kitāba only by force of the contract, which is missing here",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p567",
+     "excerpt_ar": "وفيه وجه آخر لا يتبعها لأنه إنما يتبع في الصحيحة بحكم العقد وهو مفقود هنا",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's reason for the other wajh, noting al-Mubdiʿ calls it «أقيس وأصح». A stated rationale (farq): qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qurʾān 4:11 «يوصيكم الله في أولادكم» and 4:11 «إن كان له ولد» take in the sons' children however low; the unqualified word of a person is to be read as the unqualified word of God",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p011",
+     "excerpt_ar": "فالمطلق من كلام الآدمي إذا خلا عن قرينة، ينبغي أن يحمل على المطلق من كلام الله تعالى",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's «ووجه ذلك» for Aḥmad's naṣṣ that the waqf on «ولدي» passes to the grandchildren. The āyas are on inheritance and ḥajb, carried over to a waqf-wording: qiyas, not zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: a grandchild is called a child (Yā banī Ādam, Yā banī Isrāʾīl; the ḥadīth «ارموا بني إسماعيل فإن أباكم كان راميا»; tribes are named after their forebears)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p011",
+     "excerpt_ar": "ولأن ولد ولده ولد له، بدليل قول الله تعالى: يا بني آدم ويا بني إسرائيل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second reason the Mughnī gives for inclusion. The texts are adduced for usage (a grandchild is named «ولد»), not on waqf: a linguistic rationale, qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: «الولد» in its literal and customary sense is the child of his loins; the grandchild is called so only figuratively, as shown by the sound negation «ما هذا ولدي، إنما هو ولد ولدي»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p011",
+     "excerpt_ar": "لأن الولد حقيقة وعرفا إنما هو ولده لصلبه، وإنما يسمى ولد الولد ولدا مجازا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Reason the Mughnī gives for al-Qāḍī and his companions that the grandchild is not included at all; on these facts (a child present) it yields the exclusion. Linguistic rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f008",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The bequest to «ولد» includes the sons' children for the reasons given for the waqf: the āya 4:11 includes sons' children and the unqualified word of a person is read on the word of God, and a grandchild is a child in usage",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p278",
+     "excerpt_ar": "كما لو وصى لولد زيد أو لأولاده فيدخل فيها أولاد بنيه لما تقدم دون أولاد",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf joins the bequest to the waqf («لما تقدم»), applying the waqf's proofs to it. Carried over from the āya on inheritance and from the waqf: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The sons' children enter the name «ولد» wherever God uses it, in inheritance, ḥajb and the rest, so they enter the bequest too",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p177",
+     "excerpt_ar": "لأنهم دخلوا في اسم الولد في كل موضع ذكره الله تعالى من الإرث والحجب وغيره",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The iḥtimāl the Mughnī records for including the sons' children in the bequest. Rationale from the Qurʾānic usage carried over to a bequest: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Farq: the waqf is perpetual, whereas a bequest is a transfer of ownership to those in existence, so it is confined to the highest existing stratum",
+     "ref": "src:openiti-insaf-shamela21609/v07:p077",
+     "excerpt_ar": "لأن الوقف يتأبد، والوصية تمليك للموجودين. فيختص بالطبقة العليا الموجودة",
+     "who": "Taqī al-Dīn Ibn Taymiyya, cited in al-Mardāwī, al-Inṣāf",
+     "note": "Taqī al-Dīn's indication, reported by al-Inṣāf, which is position 1 itself. A stated rationale (farq between waqf and bequest): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: «الولد» literally means the child of the loins; the grandchildren enter 4:11 only when there is no son of the loins, which cannot be done in a bequest",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p177",
+     "excerpt_ar": "انتفت القرائن، لم يدخلوا في الوصية؛ لأن اسم الولد حقيقة عبارة عن ولد الصلب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's own view that the bequest to «ولد فلان» does not take in the grandchildren absent a qarīna. It answers the āya by saying they enter it only when there is no son, which fits these facts (a child present). Linguistic rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f010",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy with the father: the grandfather has begetting (īlād) and agnatic standing (taʿṣīb), so he is put before the son and the brother, as the father is",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p014",
+     "excerpt_ar": "ولنا، أن الجد له إيلاد وتعصيب، فيقدم عليهما، كالأب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's «ولنا» for al-Khiraqī's order, which puts the grandfather ahead of the son. Analogy: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the son and the brother are subject to retaliation for her and to amputation for stealing her property; the grandfather is not, which shows his nearer standing",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p014",
+     "excerpt_ar": "ولأن الابن والأخ يقادان بها، ويقطعان بسرقة مالها، والجد بخلافه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second reason in the Mughnī for putting the grandfather first. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The son has a stronger claim to inheritance and a stronger taʿṣīb (he even inherits the walāʾ of his father where the grandfather does not), so he comes first",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p014",
+     "excerpt_ar": "وعن أحمد رواية أخرى، أن الابن مقدم على الجد. وهو قول مالك؛ ومن وافقه؛ لما تقدم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī gives the riwāya putting the son before the grandfather «لما تقدم», that is, for the reason Mālik and others give for the son over the father (stronger inheritance and taʿṣīb). A stated rationale also used by non-Ḥanbalīs: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f011",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: both the father's line and the son relate directly, but the father is more tender and his prayer for his son nearer to being answered, and the funeral prayer is for supplication, unlike inheritance",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p360",
+     "excerpt_ar": "والأب أرأف وأشفق، ودعاؤه لأبنه أقرب إلى الإجابة، فكان أولى",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's «ولنا» for al-Khiraqī's «ثم الأب وإن علا، ثم الابن», which it glosses as the father, then the grandfather however high, then the son. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The father is put first for his special tenderness, as he is put before the son in marriage guardianship; the grandfather follows because he shares the father's ratio",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v02:p224",
+     "excerpt_ar": "ثم جده) وإن علا، فلمشاركة الأب في المعنى",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's reason for the grandfather after the father, ahead of the son, in washing the dead, to which al-Inṣāf refers the prayer. Analogy on the father: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the son has the stronger taʿṣīb, as inheritance shows",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p360",
+     "excerpt_ar": "وحكي عن مالك أن الابن أحق من الأب؛ لأنه أقوى تعصيبا منه، بدليل الإرث",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Reported for Mālik, who puts the son ahead of the father and so a fortiori of the grandfather; it is the reason for the son's precedence that the riwāya relies on. A non-Ḥanbalī holder; a stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f015",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: the grandfather relates through an intermediary, like the brother and the paternal uncle, who have no property guardianship; he differs from the father, who relates directly, excludes him and differs from him in inheritance",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p243",
+     "excerpt_ar": "ولنا، أن الجد يدلي بواسطة، فأشبه الأخ والعم وفارق الأب، فإنه يدلي بنفسه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's «ولنا» against Abū Ḥanīfa and al-Shāfiʿī for denying the grandfather guardianship over property. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy with the father: the grandfather has begetting and taʿṣīb, so he resembles the father",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p242",
+     "excerpt_ar": "للجد ولاية على ابن ابنه وإن سفل؛ لأن له ولادة وتعصيبا، فأشبه الأب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The reason the Mughnī gives for Abū Ḥanīfa and al-Shāfiʿī, who hold the same ruling as the riwāya «للجد ولاية». Analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f018",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Qurʾān 2:233 «وعلى الوارث مثل ذلك»: maintenance falls on the heir; the mother is an heir, so she bears her share with the grandfather",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p219",
+     "excerpt_ar": "ولنا، قول الله تعالى: {وعلى الوارث مثل ذلك} [البقرة: 233] والأم وارثة، فكان عليها بالنص",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The Mughnī's «ولنا» for dividing the maintenance between mother and grandfather by inheritance, against al-Shāfiʿī's putting it all on the grandfather. The āya is general («the heir») and is applied to the grandfather's case by that generality: zanni, not qati."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy with inheritance: maintenance is a right due by kinship, so the grandfather does not bear it alone, just as he does not inherit alone",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p219",
+     "excerpt_ar": "ولأنه معنى يستحق بالنسب، فلم يختص به الجد دون الأم كالوراثة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second reason in the Mughnī for sharing by inheritance. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy with the father: the grandfather alone is the agnate (ʿaṣaba), so he bears the whole as the father does",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p219",
+     "excerpt_ar": "وقال الشافعي: النفقة كلها على الجد؛ لأنه ينفرد بالتعصيب، فأشبه الأب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Reason given for al-Shāfiʿī, who holds the same ruling as the riwāya that the grandfather is as the father here. A non-Ḥanbalī holder; analogy: qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

@@ -2,16 +2,12 @@ import Usul.Taarud
 import Usul.Signature
 
 /-!
-# Reconciliation: the bank's taʿāruḍ procedure applied to its own furūʿ
+# Attribution: what the reported positions' holders and labels favour (a record, not a tarjīḥ)
 
-An *apparent contradiction* is a farʿ on which the bank's reading and a reported position of
-the madhhab disagree. The bank works it through its own `Usul.resolve`, in the kernel's order:
-
-* *jamʿ*: a conservative refinement of the reading (a cited farq, with a theorem that it is the
-  old reading wherever the farq is absent) under which the reading gives the preferred ruling;
-* *naskh*: a later riwāya or a retraction (*rujūʿ*) whose chronology is reported;
-* *tarjīḥ*: the ruling whose support is strongest under the Ḥanbalī grades below;
-* *tawaqquf*: otherwise.
+A ruling stands by its proof, not by who holds it: the bank's tarjīḥ weighs proofs
+(`Usul.Tarjih`). This module keeps the earlier grading by attribution as a *description* of the
+madhhab's labels, so that what they favour can be compared with what the proofs favour. It never
+decides a case.
 
 Grades follow the annotation convention's marked sides, strongest first: taṣḥīḥ (a position
 labelled «المذهب», «الصحيح», «المشهور», «الأشهر»), naṣṣ (a riwāya or manṣūṣ of
@@ -56,11 +52,11 @@ def support (ps : List (P × Grade)) (p : P) : List Nat :=
   let rs := (ps.filter (·.1 = p)).map (·.2.rank)
   (rs.filter (· ≥ Grade.jazm.rank) ++ (rs.filter (· < Grade.jazm.rank)).eraseDups).mergeSort (fun a b => a ≥ b)
 
-/-- Tarjīḥ: the ruling whose support strictly exceeds every other ruling's, if any. -/
+/-- The ruling the labels favour: its support strictly exceeds every other ruling's, if any. -/
 def prevail (ps : List (P × Grade)) : Option P :=
   (ps.map (·.1)).find? fun p => (ps.map (·.1)).all fun q => q = p || lexGt (support ps p) (support ps q)
 
-/-- Tarjīḥ never invents a ruling: the winner is one of the reported positions. -/
+/-- The labels' favourite is one of the reported positions. -/
 theorem prevail_mem {ps : List (P × Grade)} {p : P} (h : prevail ps = some p) :
     p ∈ ps.map (·.1) :=
   List.mem_of_find?_eq_some h
@@ -70,58 +66,16 @@ theorem prevail_unanimous (p : P) (g : Grade) (gs : List Grade) :
     prevail ((p, g) :: gs.map (p, ·)) = some p := by
   simp [prevail]
 
-/-! ## Tarjīḥ by dalīl first
+/-- The kernel's `resolve` with the labels' favourite in the tarjīḥ slot: what the procedure would
+conclude if attribution were proof. A record for comparison only. -/
+def byAttribution (jam naskh : Option P) (ps : List (P × Grade)) : Resolution P :=
+  resolve ⟨jam, naskh, prevail ps⟩
 
-The basis is the Qurʾān and the Sunna: a position is weighed first by its adilla, and only then by
-who holds it. An offered dalīl carries its kind in Aḥmad's order (`DalilKind.resort`) and whether
-it is admitted: an āya always, a ḥadīth or an athar only through the ḥujja gate (`Usul.Seam`).
-Among admitted adilla, the strongest kind present decides when exactly one position has it. -/
+theorem byAttribution_jam_first {jam : P} {naskh : Option P} {ps : List (P × Grade)} :
+    byAttribution (some jam) naskh ps = .jam jam := rfl
 
-/-- The best (lowest) resort among a position's admitted adilla, if it has any. -/
-def bestResort (ds : List (P × DalilKind × Bool)) (p : P) : Option Nat :=
-  ((ds.filter fun d => d.1 = p && d.2.2).map (·.2.1.resort)).min?
-
-/-- Tarjīḥ by dalīl: the one position whose admitted dalīl is of a stronger kind than any other
-position's, if any. Ties, and positions without an admitted dalīl, decide nothing here. -/
-def dalilPrevail (ds : List (P × DalilKind × Bool)) : Option P :=
-  (ds.map (·.1)).find? fun p =>
-    match bestResort ds p with
-    | none => false
-    | some r => (ds.map (·.1)).all fun q => q = p || match bestResort ds q with
-        | none => true
-        | some s => r < s
-
-/-- A dalīl stage never invents a ruling. -/
-theorem dalilPrevail_mem {ds : List (P × DalilKind × Bool)} {p : P} (h : dalilPrevail ds = some p) :
-    p ∈ ds.map (·.1) :=
-  List.mem_of_find?_eq_some h
-
-/-- An unadmitted dalīl (a ḍaʿīf ḥadīth) decides nothing. -/
-theorem dalilPrevail_unadmitted (p : P) (k : DalilKind) : dalilPrevail [(p, k, false)] = none := by
-  simp [dalilPrevail, bestResort]
-
-/-- The tarjīḥ stage: the adilla first, the madhhab's grades only where they decide nothing. -/
-def tarjih (ds : List (P × DalilKind × Bool)) (ps : List (P × Grade)) : Option P :=
-  (dalilPrevail ds).or (prevail ps)
-
-theorem tarjih_dalil_first {ds : List (P × DalilKind × Bool)} {ps : List (P × Grade)} {p : P}
-    (h : dalilPrevail ds = some p) : tarjih ds ps = some p := by
-  simp [tarjih, h]
-
-theorem tarjih_madhhab_fallback {ds : List (P × DalilKind × Bool)} {ps : List (P × Grade)}
-    (h : dalilPrevail ds = none) : tarjih ds ps = prevail ps := by
-  simp [tarjih, h]
-
-/-- The whole procedure: the kernel's `resolve` on the three stages' offers. -/
-def reconcile (jam naskh : Option P) (ps : List (P × Grade)) (ds : List (P × DalilKind × Bool) := []) :
-    Resolution P :=
-  resolve ⟨jam, naskh, tarjih ds ps⟩
-
-theorem reconcile_jam_first {jam : P} {naskh : Option P} {ps : List (P × Grade)} :
-    reconcile (some jam) naskh ps = .jam jam := rfl
-
-theorem reconcile_tawaqquf_iff {jam naskh : Option P} {ps : List (P × Grade)} :
-    reconcile jam naskh ps = .tawaqquf ↔ jam = none ∧ naskh = none ∧ prevail ps = none :=
+theorem byAttribution_tawaqquf_iff {jam naskh : Option P} {ps : List (P × Grade)} :
+    byAttribution jam naskh ps = .tawaqquf ↔ jam = none ∧ naskh = none ∧ prevail ps = none :=
   resolve_tawaqquf_iff
 
 -- Two riwāyas, one labelled the madhhab: taṣḥīḥ decides.
@@ -134,14 +88,7 @@ theorem reconcile_tawaqquf_iff {jam naskh : Option P} {ps : List (P × Grade)} :
 #guard prevail [("a", Grade.ashab), ("a", .ashab), ("b", .ashab)] == none
 -- A weaker grade never outweighs a stronger one, however many hold it.
 #guard prevail [("a", Grade.zahir), ("b", .jazm), ("b", .jazm), ("b", .ashab)] == some "a"
-#guard reconcile none none [("a", Grade.wajh), ("b", .wajh)] == .tawaqquf
-#guard reconcile none (some "b") [("a", Grade.nass)] == .naskh "b"
--- A naṣṣ of the Qurʾān or Sunna outweighs the madhhab's taṣḥīḥ of the other side.
-#guard reconcile none none [("a", Grade.tashih), ("b", .nass)] [("b", .nass, true)] == .tarjih "b"
--- A ḍaʿīf ḥadīth is not admitted: the madhhab's grades decide.
-#guard reconcile none none [("a", Grade.tashih), ("b", .nass)] [("b", .nass, false)] == .tarjih "a"
--- A naṣṣ outranks a ṣaḥābī's fatwā; two positions each with a naṣṣ fall to the grades.
-#guard dalilPrevail [("a", DalilKind.fatwaSahabi, true), ("b", .nass, true)] == some "b"
-#guard dalilPrevail [("a", DalilKind.nass, true), ("b", .nass, true)] == none
+#guard byAttribution none none [("a", Grade.wajh), ("b", .wajh)] == .tawaqquf
+#guard byAttribution none (some "b") [("a", Grade.nass)] == .naskh "b"
 
 end Usul.Reconcile

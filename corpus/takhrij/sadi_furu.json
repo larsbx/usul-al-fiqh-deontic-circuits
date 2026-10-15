@@ -2042,7 +2042,8 @@
     },
     {
      "who": "wajh 2",
-     "ruling": "lot; whoever wins, his word"
+     "ruling": "lot",
+     "detail": "whoever wins, his word"
     }
    ],
    "matches_madhhab": false,
@@ -2072,8 +2073,8 @@
    "expected": "lot",
    "positions": [
     {
-     "who": "al-mashhūr",
-     "ruling": "no lot; lineage lost (Abū Bakr) or chosen at puberty (Ibn Ḥāmid)"
+     "who": "al-mashhūr, wajh 1 (Abū Bakr)",
+     "ruling": "no lot; lineage lost"
     },
     {
      "who": "Majd (al-Muḥarrar)",
@@ -2082,10 +2083,14 @@
     {
      "who": "Aḥmad riwāya (al-Mughnī)",
      "ruling": "lot"
+    },
+    {
+     "who": "al-mashhūr, wajh 2 (Ibn Ḥāmid)",
+     "ruling": "no lot; chosen at puberty"
     }
    ],
    "matches_madhhab": false,
-   "note": "Lineage unattainable by qāfa: the mashhūr denies qurʿa in nasab, a riwāya attaches by lot; kernel gives lot (the reading lacks Ibn Rajab's nasab exclusion), matching only the non-mashhūr riwāya."
+   "note": "Lineage unattainable by qāfa: the mashhūr denies qurʿa in nasab and then splits «على وجهين» (lost: Abū Bakr; left until puberty to choose: Ibn Ḥāmid), a riwāya attaches by lot; kernel gives lot (the reading lacks Ibn Rajab's nasab exclusion), matching only the non-mashhūr riwāya. Positions 0 and 3 were one glued position until 2026-10-15."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f032",
@@ -2200,7 +2205,8 @@
     },
     {
      "who": "Ibn ʿAqīl iḥtimāl / al-Qāḍī qiyās",
-     "ruling": "lot among the oaths"
+     "ruling": "lot",
+     "detail": "among the oaths"
     },
     {
      "who": "Ibn ʿAqīl",
@@ -2353,7 +2359,8 @@
    "positions": [
     {
      "who": "wajh 1",
-     "ruling": "divide, like a thing in both their hands"
+     "ruling": "divide",
+     "detail": "like a thing in both their hands"
     },
     {
      "who": "wajh 2, ẓāhir kalām Aḥmad (Ṣāliḥ)",
@@ -2380,11 +2387,13 @@
     },
     {
      "who": "riwāya 2",
-     "ruling": "divide without oath"
+     "ruling": "divide",
+     "detail": "without oath"
     },
     {
      "who": "riwāya 3",
-     "ruling": "lot, winner swears"
+     "ruling": "lot",
+     "detail": "the winner swears"
     },
     {
      "who": "Ibn Shihāb",

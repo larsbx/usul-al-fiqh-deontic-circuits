@@ -4,9 +4,9 @@
   "unit": "one committed fatwa, masala or bab record; obligations are its record ids",
   "summary": {
     "witnesses": 19,
-    "units": 50507,
+    "units": 50511,
     "annotated": 164,
-    "pending": 50343
+    "pending": 50347
   },
   "witnesses": [
     {
@@ -68,10 +68,10 @@
       "kind": "abwab_paragraphs",
       "source_sha256": "3cb016a086680795785eb713bac4b8b645fa32bcc94d0efbfd95fda1a1cc0a56",
       "records": "records/openiti-hajjawi-zadmustaqni-shamela11230.masail.jsonl",
-      "records_sha256": "f1ca065d75a8a35d4721b5ebf0da45200df597b8ff79afb26c2f8e05f320e551",
-      "units": 1166,
+      "records_sha256": "669386586f36c7cfbb0374a50da61986ca84f29384a49e7739ce9dc4a4f40bc7",
+      "units": 1167,
       "annotated": 88,
-      "pending": 1078,
+      "pending": 1079,
       "annotated_ids": [
         "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001.p01",
         "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001.p02",
@@ -258,10 +258,10 @@
       "kind": "abwab_paragraphs",
       "source_sha256": "46a47285cf2cf1796a675853df7c5d6d69de7084666064dba6b596cf4863cd84",
       "records": "records/openiti-ibnqudama-umda-shamela11315.masail.jsonl",
-      "records_sha256": "e7858bdbe54b12a23900c7f699301b2171a1c7491383c0c14c3d842637c36bc8",
-      "units": 831,
+      "records_sha256": "6f2ad361d4702e649ac4e528919dc662300f2174699451ece64fd73dd923ea7b",
+      "units": 834,
       "annotated": 36,
-      "pending": 795,
+      "pending": 798,
       "annotated_ids": [
         "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00001.p01",
         "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00001.p02",

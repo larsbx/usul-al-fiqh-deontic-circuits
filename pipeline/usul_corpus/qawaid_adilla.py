@@ -47,7 +47,9 @@ def errors(entries: list[dict], records: dict, found: set[str], text: Callable[[
             if d["relation"] not in RELATIONS:
                 errs.append(f"{q}: relation {d['relation']!r} not in {RELATIONS}")
             src = text(d["istidlal"]["witness"])
-            if src is not None and letters(d["istidlal"]["excerpt_ar"]) not in letters(src):
+            if src is None:
+                errs.append(f"{q}: required istidlāl witness unavailable: {d['istidlal']['witness']}")
+            elif not letters(d["istidlal"]["excerpt_ar"]) or letters(d["istidlal"]["excerpt_ar"]) not in letters(src):
                 errs.append(f"{q}: istidlāl for {d['ref']} is not verbatim in {d['istidlal']['witness']}")
     return errs
 

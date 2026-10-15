@@ -1,6 +1,7 @@
 """Fail-closed replay of a declared subset, using the existing registry and locks.
 
-The required subset is every witness cited by the active reconciliation ledger.
+The required subset is every witness cited by the active reconciliation ledger
+and every istidlāl witness in the qawāʿid dossier.
 All paged ref/excerpt pairs in corpus JSON using those witnesses are replayed.
 Other references are inventoried as excluded, never silently counted as passes.
 This is source fidelity under the existing Arabic-letters comparison, not review.
@@ -40,12 +41,13 @@ def excerpts(corpus: Path):
 def check_quote(text: str, excerpt: str, locator: str) -> str | None:
     """Match an occurrence ending at the declared closing-page marker.
 
-    Like arabic.locate, retain Arabic letters (including negations), ignore
-    punctuation/diacritics/markup. Unlike locate, search every occurrence so a
+    Like arabic.locate, compare arabic.quote_key: Arabic letters (including
+    negations) and standalone numerals, ignoring punctuation, diacritics, page
+    markers and footnote anchors. Unlike locate, search every occurrence so a
     repeated passage cannot borrow the first occurrence's page or qualifier.
     """
-    needle = arabic.letters(excerpt)
-    if not needle:
+    needle = arabic.quote_key(excerpt)
+    if not arabic.letters(excerpt):
         return "empty Arabic quotation"
     text, indices, flat = arabic._indexed(text)
     start = flat.find(needle)
@@ -70,13 +72,22 @@ def required_witnesses(corpus: Path) -> set[str]:
     ledger = reconcile.load(corpus)  # same base-plus-shards view as tests and generators
     ids = set()
     for entry in ledger["entries"]:
-        for item in entry.get("evidence", []):
+        for item in entry.get("evidence", []) + entry.get("proofs", []) + entry.get("advantages", []):
             match = REF.fullmatch(item["ref"])
             if not match:
                 raise ValueError(f"invalid required evidence locator: {item['ref']}")
             ids.add(match[1])
+    dossier = corpus / "dossier/qawaid_adilla.json"
+    if dossier.exists():
+        for entry in json.loads(dossier.read_text(encoding="utf-8"))["entries"]:
+            for dalil in entry["adilla"]:
+                item = dalil["istidlal"]
+                match = REF.fullmatch(item["ref"])
+                if not match or match[1] != item["witness"]:
+                    raise ValueError(f"invalid required istidlāl locator/witness: {item['ref']}")
+                ids.add(item["witness"])
     if not ids:
-        raise ValueError("required reconciliation evidence set is empty")
+        raise ValueError("required evidence set is empty")
     return ids
 
 
@@ -87,6 +98,21 @@ def locked_text(wid: str, witness: dict, lock: dict, corpus: Path, cache: Path,
     Adapted from PR #51's verify_evidence full-source URL/size/hash check.
     Only direct text sources are accepted: a DOC/PDF lock does not pin its text.
     """
+    if witness.get("format", "text") == "pdf":
+        # The existing OCR lock pins the exact derived text independently of the PDF.
+        # Never re-run the lock-writing OCR command while verifying evidence.
+        if lock.get("url") != fetch.witness_url(witness):
+            raise ValueError("registered URL differs from source lock")
+        digest = lock.get("ocr_sha256", "")
+        if not re.fullmatch(r"[0-9a-f]{64}", digest):
+            raise ValueError("required PDF witness lacks a pinned OCR text derivation")
+        path = cache / f"{wid}.txt"
+        if not path.exists():
+            raise ValueError("required locked OCR witness unavailable; provision the existing ocr_sha256 bytes")
+        data = path.read_bytes()
+        if hashlib.sha256(data).hexdigest() != digest:
+            raise ValueError("derived OCR text differs from lock (including LFS pointers)")
+        return data.decode("utf-8")
     if witness.get("format", "text") != "text":
         raise ValueError("required witness needs a separately pinned text derivation")
     if lock.get("url") != fetch.witness_url(witness):
@@ -107,8 +133,8 @@ def locked_text(wid: str, witness: dict, lock: dict, corpus: Path, cache: Path,
 
 
 def verify(corpus: Path, cache: Path, fetch_source: bool = False) -> dict:
-    report = {"schema_version": 1, "scope": "reconciliation-witnesses-v1",
-              "comparison": "Arabic letters; exact letter forms; closing-page locator",
+    report = {"schema_version": 1, "scope": "reconciliation-and-istidlal-witnesses-v2",
+              "comparison": "Arabic letters and standalone numerals; exact letter forms; closing-page locator",
               "status": "failed", "witnesses": [], "checks": [], "errors": [],
               "outside_scope": ["JSONL records and non-ref quotation fields", "Quran aya, hadith number and Albani verdict replay (test_nusus.py)",
                                 "interpretive relevance, formal correctness and scholarly validation"]}
@@ -131,6 +157,9 @@ def verify(corpus: Path, cache: Path, fetch_source: bool = False) -> dict:
                 raise ValueError("required witness lacks registry entry or source lock")
             text = locked_text(wid, witnesses[wid], locks[wid], corpus, cache, fetch_source)
             receipt.update({k: locks[wid][k] for k in ("url", "bytes", "sha256")})
+            if witnesses[wid].get("format") == "pdf":
+                receipt["ocr_sha256"] = locks[wid]["ocr_sha256"]
+                receipt["verification"] = "pinned OCR text; PDF bytes and OCR interpretation not replayed"
             receipt["status"] = "verified"
         except (ValueError, OSError, KeyError) as exc:
             receipt["error"] = str(exc)
@@ -157,7 +186,7 @@ def verify(corpus: Path, cache: Path, fetch_source: bool = False) -> dict:
         match = WID.match(str(row["ref"]))
         if not match or match[1] not in required:
             report["checks"].append({k: row[k] for k in ("path", "pointer", "ref")} | {
-                "status": "excluded", "reason": "witness outside required reconciliation subset; no fidelity result"})
+                "status": "excluded", "reason": "witness outside required evidence subset; no fidelity result"})
     report["checks"].sort(key=lambda x: (x["path"], x["pointer"]))
     report["counts"] = dict(Counter(x["status"] for x in report["checks"]))
     if not report["errors"] and not report["counts"].get("failed") and report["counts"].get("verified"):

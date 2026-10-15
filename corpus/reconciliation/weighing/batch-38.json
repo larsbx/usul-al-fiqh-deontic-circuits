@@ -1,0 +1,424 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b38: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The takbīr is dhikr of God, and dhikr is achieved in any tongue; the Qurʾān is Arabic and ceases to be Qurʾān in translation, but dhikr remains dhikr",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p335",
+     "excerpt_ar": "والأول أصح؛ لأن التكبير ذكر الله، وذكر الله تعالى يحصل بكل لسان، وأما القرآن فإنه عربي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For al-Qāḍī's al-Mujarrad view, preferred by al-Mughnī: one who cannot say it in Arabic says the takbīr in his own tongue. A stated rationale with a distinguished aṣl: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy to recitation: one unable to recite in Arabic does not render the Qurʾān in another tongue; so the takbīr lapses and he is like the mute",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p335",
+     "excerpt_ar": "لا يكبر بغير العربية، ويكون حكمه حكم الأخرس، كمن عجز عن القراءة بالعربية لا يعبر عنها بغيرها",
+     "who": "al-Qāḍī, al-Jāmiʿ (in al-Mughnī)",
+     "note": "al-Qāḍī in al-Jāmiʿ for the wajh that it lapses as the Qurʾān does. Aṣl the Qurʾān, farʿ the takbīr: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Whatever has Arabic as a condition, one able must learn the Arabic for it, as with the takbīr",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p079",
+     "excerpt_ar": "وقال أبو الخطاب: عليه أن يتعلم؛ لأن ما كانت العربية شرطا فيه، لزمه أن يتعلمها مع القدرة، كالتكبير",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū al-Khaṭṭāb's ground for requiring the one who can learn to learn the Arabic words, so that the contract is not concluded in his tongue. Aṣl the takbīr: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Nikāḥ is not obligatory, so learning its pillars in Arabic is not obligatory, as with sale, unlike the takbīr",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p079",
+     "excerpt_ar": "ووجه الأول أن النكاح غير واجب، فلم يجب تعلم أركانه بالعربية كالبيع، بخلاف التكبير",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for «ليس على من لا يحسن العربية تعلم ألفاظ النكاح بها», so the contract in his tongue stands though he could learn. Aṣl sale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He is unable to use other than his own tongue, so the Arabic requirement lapses for him, as for the mute",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p079",
+     "excerpt_ar": "فأما من لا يحسن العربية، فيصح منه عقد النكاح بلسانه؛ لأنه عاجز عما سواه، فسقط عنه كالأخرس",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ground for the validity of nikāḥ in his tongue for one without Arabic. Aṣl the mute: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f005",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is a place of need, as was said of nikāḥ: the one without Arabic performs liʿān in his tongue and need not learn",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v09:p008",
+     "excerpt_ar": "وفي الآخر يصح بلسانه ولا يلزمه التعلم لأنه موضع حاجة كما قلنا في النكاح وهو أصح إن شاء الله",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "For the wajh that it is valid without learning, preferred by al-Sharḥ. Aṣl nikāḥ, ʿilla need: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Spouses who lack Arabic may perform liʿān in their own tongue because of need",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p088",
+     "excerpt_ar": "وإن كانا لا يحسنان ذلك، جاز لهما الالتعان بلسانهما؛ لموضع الحاجة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for liʿān in their tongue by those without Arabic. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Just as a countervalue may be stipulated in a gift, which then becomes a sale, a timed loan of use with a known countervalue is valid and becomes a hire, the meaning prevailing over the word",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p288",
+     "excerpt_ar": "شرط عوض معلوم، وتصير إجارة) كما يصح شرط العوض في الهبة، وتصير بيعا تغليبا للمعنى على اللفظ",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "For the validity of ʿāriya with a stipulated countervalue. Aṣl the gift with a countervalue; a stated rationale (meaning over word): qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Abū Ḥanīfa: «the profit is all mine» gives it the rule of ibḍāʿ, so it is turned to that and is a valid ibḍāʿ, like the case without the word muḍāraba",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p026",
+     "excerpt_ar": "وقال أبو حنيفة: إذا قال: والربح كله لي كان إبضاعا صحيحا؛ لأنه أثبت له حكم الإبضاع فانصرف إليه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for a non-Ḥanbalī holder of the validity ruling (al-Mughnī itself answers it here). A stated rationale reading the contract by its rule: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Muḍāraba requires the profit to be shared; stipulating it all for one stipulates what negates the contract's requirement, so it is void, as if all the profit were stipulated for one partner in ʿinān",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p026",
+     "excerpt_ar": "ولنا، أن المضاربة تقتضي كون الربح بينهما، فإذا شرط اختصاص أحدهما. بالربح، فقد شرط ما ينافي مقتضى العقد، ففسد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's own argument here for «خذه مضاربة، والربح كله لك، أو كله لي. فهو عقد فاسد» (the void side; the valid ibḍāʿ reading is al-Mughnī elsewhere). Aṣl shirkat al-ʿinān: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Hire requires use, and the customary use of dirhams and dinars is by consuming their substance; so an unqualified hire of them is taken to that use and is a loan",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p404",
+     "excerpt_ar": "وقال القاضي: لا تصح الإجارة، وتكون قرضا. وهذا مذهب أبي حنيفة؛ لأن الإجارة تقتضي الانتفاع، والانتفاع المعتاد بالدراهم والدنانير إنما هو بأعيانها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Qāḍī's ground (shared with Abū Ḥanīfa) for treating it as a valid loan. A stated rationale from custom: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qarḍ transfers ownership while hire is use with the thing remaining, so one cannot be expressed by the other",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p404",
+     "excerpt_ar": "ولا يجوز أن يعبر بها عن القرض؛ لأن القرض تمليك للغير، والإجارة تقتضي الانتفاع مع بقاء العين، فلم يجز التعبير بأحدهما عن الآخر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the Shāfiʿīs, who hold it neither a valid hire nor a loan: a non-Ḥanbalī holder of the 'not valid' ruling. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Linguistic: names and expressions are taken by transmission, and the language never uses ijāra for qarḍ",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p404",
+     "excerpt_ar": "ولأن التسمية والألفاظ تؤخذ نقلا، ولم يعهد في اللسان التعبير بالإجارة عن القرض",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same holders, a linguistic rationale against reading the hire as a loan: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f004",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Salam in a specific thing is void because it may perish before delivery, as when a specific unknown measure or weight is stipulated",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v04:p340",
+     "excerpt_ar": "لأنه ربما تلف قبل أوان تسليمه فلم يصح كما لو شرط مكيالا بعينه أو صنجة بعينها غير معلومة",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "For «فإن أسلم في عين لم يصح», the invalid side. Aṣl the specific unknown measure: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A specific thing can be sold at once, so there is no need for salam in it; and specific things are not established in the dhimma",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p065",
+     "excerpt_ar": "ولا يصح السلم في عين لذلك، ولأن الأعيان لا تثبت في الذمة",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's grounds for the nullity of salam in a present thing. Stated rationales: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He expressly said the word divorce, so it is divorce, as when he strikes her and says «this is your divorce»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p415",
+     "excerpt_ar": "وهي الرواية المشهورة التي رواها عنه الجماعة؛ لأنه صرح بلفظ الطلاق، فكان طلاقا، كما لو ضربها، وقال: هذا طلاقك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For the well-known riwāya that «أنت علي حرام أعني به الطلاق» is divorce. Aṣl «هذا طلاقك»: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Linguistic: ḥarām is explicit only for prohibition, which divides into prohibition by ẓihār and by divorce; his explanation specifies the divorce",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p415",
+     "excerpt_ar": "وليس هذا صريحا في الظهار، إنما هو صريح في التحريم، والتحريم يتنوع إلى تحريم بالظهار، وإلى تحريم بالطلاق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same riwāya, distinguishing «كظهر أمي». A linguistic rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "aqrabSahabi",
+     "dalil": "ʿUmar b. al-Khaṭṭāb: «you are ḥarām to me, I mean by it a divorce» is one divorce",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p414",
+     "excerpt_ar": "فإنه قال: إذا قال: أنت علي حرام، أعني به طلاقا. فهي واحدة. وروي هذا عن عمر بن الخطاب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "ʿUmar's view on this very wording. On the same page ʿUthmān and Ibn ʿAbbās hold it ẓihār whether or not he means divorce: ṣaḥāba disagree, so aqrabSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Ḥarām is explicit for ẓihār, so his saying «I mean divorce» does not turn it into divorce, as with «you are to me like my mother's back, I mean divorce»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p415",
+     "excerpt_ar": "ووجهه أنه صريح في الظهار، فلم يصر طلاقا بقوله: أريد به الطلاق. كما لو قال: أنت علي كظهر أمي، أعني به الطلاق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The ground al-Mughnī gives for the riwāya of al-Naysābūrī (kaffārat al-ẓihār). Aṣl the ẓihār formula: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "aqrabSahabi",
+     "dalil": "Ibn ʿAbbās (via al-Athram): ḥarām obliges freeing a slave, else two months' fasting or feeding sixty, i.e. the ẓihār expiation; with ʿUthmān he holds it ẓihār even if divorce is meant",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p414",
+     "excerpt_ar": "روى الأثرم، بإسناده عن ابن عباس، في الحرام، أنه تحرير رقبة، فإن لم يجد فصيام شهرين متتابعين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for «إنه ظهار... نوى الطلاق أو لم ينوه». ʿUmar is reported on the other side: aqrabSahabi."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The iqāla is valid with any wording that conveys its meaning, so «settle with me for the like of the price» is an iqāla in the words of ṣulḥ",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p307",
+     "excerpt_ar": "وكان إقالة) بلفظ الصلح لأنها تصح بكل ما أدى معناها",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "For the validity of the ṣulḥ over the salam debt for the like of the price, read as iqāla. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ibn al-Sāʿidī's report (Abū Dāwūd): ʿUmar ordered him a collector's wage though he said he worked for God, citing that the Prophet did the same to him and said «if you are given something without asking, eat and give in charity»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p488",
+     "excerpt_ar": "استعملني عمر على الصدقة، فلما فرغت منها وأديتها إليه، أمر لي بعمالة فقلت، إنما عملت لله وأجري على الله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited in al-Mughnī for paying the collector sent without a contract his wage: the collector had stipulated nothing and even disclaimed a wage, yet the Prophet gave him ʿumāla. A connected marfūʿ āḥād report reaching the farʿ by its sense: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "The Prophet's practice: he sent collectors without fixing a wage with any of them, and they were paid; so the imam may send one without ijāra and pay him the wage of his like",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p488",
+     "excerpt_ar": "وهذا كان المعروف على عهد رسول الله - صلى الله عليه وسلم - فإنه لم يبلغنا أنه قاطع أحدا من العمال على أجر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the case where the imam sends the collector without hire («وإن شاء بعثه بغير إجارة، ويدفع إليه أجر مثله»): the very facts. A report of the Prophet's practice, āḥād: zanni."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Stated rationale: the rescued property would perish and be lost to its owner, so the rescuer earns the wage of his like even without the owner's leave, unlike the finder of a luqṭa",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p206",
+     "excerpt_ar": "وإن لم يأذن له ربه؛ لأنه يخشى هلاكه، وتلفه على مالكه بخلاف اللقطة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "For the exception to «no wage without a jaʿl»: rescuing another's goods (or slave) from the sea, a beast's mouth or a desert. A stated ʿilla («لأنه…»): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Maṣlaḥa rationale: a wage urges people to save property from destruction; the diver who knows he will be paid risks himself to rescue it",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p206",
+     "excerpt_ar": "فتجب لهم الأجرة على الملاك؛ لأن فيه حثا، وترغيبا في إنقاذ الأموال من الهلكة، فإن الغواص إذا علم أن له الأجرة غرر بنفسه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given for those who save goods from a wrecked ship, the same rescue case. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy to the luqṭa: the finder of lost property earns nothing for taking and keeping it, so neither does the rescuer (al-Qāḍī's iḥtimāl for the slave)",
+     "ref": "src:openiti-insaf-shamela21609/v06:p393",
+     "excerpt_ar": "وحكى القاضي احتمالا في العبد: بعدم الوجوب كاللقطة",
+     "who": "al-Mardāwī, al-Inṣāf (reporting al-Qāḍī)",
+     "note": "The only stated ground for the no-wage side on these facts; al-Inṣāf reports it with Aḥmad's naṣṣ on the sheep saved from the lion. An analogy («ك…»): qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The fast is not divisible within a day (eating in part of it bars fasting the rest), so when found in part of the day he is fasting from its start",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p114",
+     "excerpt_ar": "يحكم له بذلك من أول النهار. وهو قول بعض أصحاب الشافعي؛ لأن الصوم لا يتبعض في اليوم، بدليل ما لو أكل في بعضه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū al-Khaṭṭāb's (al-Hidāya) ground for ruling it a fast from the day's beginning. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Ruling a fast without an actual intention is not impossible, as when one forgets the fast after intending it; and one who catches part of a rakʿa or of the congregation catches all of it",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p115",
+     "excerpt_ar": "نية حقيقة، كما لو نسي الصوم بعد نيته، أو غفل عنه، ولأنه لو أدرك بعض الركعة أو بعض الجماعة كان مدركا لجميعها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same position. Analogies to the forgetful faster and the late joiner: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "«Actions are only by intentions, and each person has only what he intended»: what preceded the intention was not intended as a fast",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p115",
+     "excerpt_ar": "ولنا أن ما قبل النية لم ينو صيامه، فلا يكون صائما فيه؛ لقوله - عليه السلام -: «إنما الأعمال بالنيات",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "For Aḥmad's naṣṣ that it is a fast from the intention. A ṣaḥīḥ marfūʿ ḥadīth reaching this farʿ by its general wording: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Fasting is a pure worship and does not exist without intention, like other pure worships",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p115",
+     "excerpt_ar": "ولأن الصوم عبادة محضة، فلا توجد بغير نية، كسائر العبادات المحضة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same position. A stated rationale with an aṣl: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f008",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "Ibn ʿAbbās: if the slave is freed at ʿArafa his ḥajj suffices him; if freed at Jamʿ (Muzdalifa) it does not",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p238",
+     "excerpt_ar": "قال طاوس، عن ابن عباس: إذا أعتق العبد بعرفة، أجزأت عنه حجته؛ فإن أعتق بجمع، لم تجزئ عنه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited by Aḥmad and al-Mughnī for the sufficiency of the ḥajj when the status changes while in iḥrām before the standing ends. No ṣaḥābī is reported disagreeing (the dissent is Mālik, Ibn al-Mundhir, the Ḥanafīs): fatwaSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He caught the standing free and adult, so it suffices, as if he had entered iḥrām at that hour",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p238",
+     "excerpt_ar": "ولنا، أنه أدرك الوقوف حرا بالغا فأجزأه، كما لو أحرم تلك الساعة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's argument for the sufficiency on these facts. Aṣl the one who enters iḥrām after attaining the condition: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Their iḥrām was not contracted as obligatory, so it does not suffice for the obligatory ḥajj, as if they had stayed as they were",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p238",
+     "excerpt_ar": "لأن إحرامهما لم ينعقد واجبا، فلا يجزئ عن الواجب، كما لو بقيا على حالهما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for Mālik and the Ḥanafīs (non-Ḥanbalī holders of the other riwāya's ruling). A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Menses is named by the Lawgiver without a limit in language or law, so it is referred to custom; and custom has a fifteen-day menses (ʿAṭāʾ; Sharīk's woman who menstruated fifteen days every month)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p225",
+     "excerpt_ar": "ولنا أنه ورد في الشرع مطلقا من غير تحديد، ولا حد له في اللغة، ولا في الشريعة، فيجب الرجوع فيه إلى العرف والعادة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's argument for the madhhab's bounds (a day and night to fifteen days), followed on the same page by the reports of women menstruating fifteen days. A rationale referring the ruling to custom: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "aqrabSahabi",
+     "dalil": "ʿAlī: whatever exceeds fifteen days is istiḥāḍa",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p225",
+     "excerpt_ar": "وحديث الجلد قد روي عن علي - رضي الله عنه - ما يعارضه. فإنه قال: ما زاد على خمسة عشر استحاضة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A ṣaḥābī's view fixing the maximum at fifteen. The same passage reports Anas counting the qurʾ up to ten (weakened through al-Jald b. Ayyūb), so a ṣaḥābī is reported on the other side: aqrabSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "mursalDaif",
+     "dalil": "Ibn ʿUmar marfūʿ: «one of them stays half her life not praying», i.e. half the month, fifteen days",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p238",
+     "excerpt_ar": "قال: تمكث إحداهن شطر عمرها لا تصلي» وذكر ابن المنجا أنه رواه البخاري، وهو خطأ، قال البيهقي: لم أجده في شيء من كتب الحديث",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Adduced («يؤيده») for fifteen days, the halving point itself; al-Mubdiʿ adds Ibn Manda «لا يثبت بوجه من الوجوه». A report the source calls unestablished: mursalDaif."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Custom: Ibn al-Mundhir heard that the women of the family of al-Mājishūn menstruated seventeen days",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p320",
+     "excerpt_ar": "وروى عن أحمد أن أقله يوم وأن أكثره سبعة عشر، قال ابن المنذر بلغني أن نساء آل الماجشون كن يحضن سبع عشرة",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "The only ground given for the seventeen-day riwāya: an observed custom, on the same principle of referring menses to custom. A rationale from custom: qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

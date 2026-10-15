@@ -34,7 +34,6 @@ INVENTORY = "worklists/units.json"
 PARAGRAPHS = "abwab_paragraphs"  # the inventory kind of a matn's masāʾil
 _TITLE = re.compile(r"^(?:كتاب|باب)(?![^\W\d_])")  # a kitāb or bāb title printed as a body line
 _TERMINAL = re.compile(r"[.:؟?!][\s\d\"'«»()\[\]{}]*$")
-_EXCERPT = 60  # characters of a dropped duplicate quoted in the audit
 
 
 def masail_path(witness: str) -> str:
@@ -42,40 +41,49 @@ def masail_path(witness: str) -> str:
 
 
 def paragraph_records(work: dict, witness: str, text: str, seg: dict) -> tuple[list[dict], dict]:
-    """The masʾala records of a matn and their audit. Every paragraph of every unit is either a record,
-    numbered .p01, .p02 … within its bāb in text order, or reported in the audit: a duplicate (same
-    Arabic letters as an earlier paragraph of the witness, which is kept), a title (a kitāb or bāb
-    heading printed as a body line), or a paragraph with no Arabic letters («...», a footnote number).
-    Continuation lines before a unit's first paragraph are reported as loose text. A kept paragraph
-    that opens on a later page than the previous paragraph of its unit, which ends unpunctuated, is
-    listed as a page-break candidate: possibly the same sentence, split by the page."""
+    """Preserve source occurrences, even when their words coincide.
+
+    A body title matching the immediately following unit on the same page assigns
+    subsequent paragraphs to that unit. Keep both printed occurrences and audit
+    the reassignment; do not change the historical bāb records or their ids.
+    """
     records: list[dict] = []
-    seen: dict[str, str] = {}
     audit = {"units": 0, "paragraphs": 0, "masail": 0, "duplicates": [], "titles": [], "no_letters": [], "loose": [],
-             "page_break_candidates": []}
-    for i, unit in enumerate(segment_masail(text, seg.get("end")), 1):
-        parent = bab_record(work, witness, i, unit.bab)
+             "page_break_candidates": [], "reattributions": []}
+    split = segment_masail(text, seg.get("end"))
+    parents = [bab_record(work, witness, i, u.bab) for i, u in enumerate(split, 1)]
+    counts: dict[str, int] = {}
+    previous = {}
+    for i, unit in enumerate(split):
+        parent = target = parents[i]
         audit["units"] += 1
         audit["paragraphs"] += len(unit.paragraphs)
         audit["loose"] += [{"bab": parent["id"], "text_ar": line} for line in unit.loose]
-        n, prev = 0, None
         for k, p in enumerate(unit.paragraphs, 1):
             key, where = letters(p.text), {"bab": parent["id"], "paragraph": k}
             if not key:
                 audit["no_letters"].append({**where, "text_ar": p.text})
             elif _TITLE.match(p.text):
                 audit["titles"].append({**where, "text_ar": p.text})
-            elif key in seen:
-                audit["duplicates"].append({**where, "duplicates": seen[key], "page_span": _span(p),
-                                            "excerpt_ar": p.text[:_EXCERPT]})
+                # Both title and page must agree; equal body text is never evidence
+                # of duplication or of chapter membership.
+                target = parent
+                if (i + 1 < len(split) and p.page is not None
+                        and key == letters(split[i + 1].bab.heading)
+                        and p.page == split[i + 1].bab.page):
+                    target = parents[i + 1]
             else:
-                n += 1
-                r = paragraph_record(work, witness, parent, n, p)
-                seen[key] = r["id"]
+                n = counts.get(target["id"], 0) + 1
+                counts[target["id"]] = n
+                r = paragraph_record(work, witness, target, n, p)
                 records.append(r)
+                if target != parent:
+                    audit["reattributions"].append({**where, "record": r["id"], "bab_to": target["id"],
+                                                   "page_span": _span(p), "reason": "body title matches next unit on same page"})
+                prev = previous.get(target["id"])
                 if prev and prev.end_page != p.page and not _TERMINAL.search(prev.text):
                     audit["page_break_candidates"].append(r["id"])
-            prev = p
+                previous[target["id"]] = p
     audit["masail"] = len(records)
     return records, audit
 

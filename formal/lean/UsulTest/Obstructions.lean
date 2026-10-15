@@ -1192,7 +1192,7 @@ open Usul.Cat.Sheaf
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f029
 #guard (obstructions [()] (positions [0, 1])).length == 2
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f031
-#guard (obstructions [()] (positions [0, 1, 2])).length == 6
+#guard (obstructions [()] (positions [0, 1, 2, 3])).length == 12
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f032
 #guard (obstructions [()] (positions [0, 1])).length == 2
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f033

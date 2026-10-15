@@ -1,0 +1,664 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b19: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ibn Masʿūd (Muslim): the Prophet used to pair two sūras of the mufaṣṣal in each rakʿa, twenty sūras.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p103",
+     "excerpt_ar": "فروي أن الأفضل كثرة الركوع والسجود، «لقول ابن مسعود: إني لأعلم النظائر التي كان رسول الله",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the riwāya that more rakʿas and prostrations are better. A connected marfūʿ report of the Prophet's practice: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth: every prostration earns a good deed, erases a bad one and raises a degree.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p103",
+     "excerpt_ar": "«ما من عبد سجد سجدة إلا كتب الله له بها حسنة، ومحا عنه بها سيئة، ورفع له بها درجة»",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the same riwāya: each prostration has its own reward, so more prostrations earn more. Bears on the comparison only by implication: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of Rabīʿa b. Kaʿb (Aḥmad, Muslim, Abū Dāwūd): «help me against yourself by much prostration».",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p440",
+     "excerpt_ar": "وعن ربيعة بن كعب الأسلمي أنه قال للنبي - صلى الله عليه وسلم - «أسألك مرافقتك في الجنة، فقال: أعني على نفسك بكثرة السجود»",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf cites it, with the ḥadīths of Thawbān and ʿUbāda, for «كثرة الركوع والسجود ... أفضل من طول القيام». Āḥād marfūʿ: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ḥadīth (Muslim): «the best prayer is long standing (qunūt)».",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p104",
+     "excerpt_ar": "والثانية، التطويل أفضل؛ لقول رسول الله - صلى الله عليه وسلم -: «أفضل الصلاة طول القنوت» . رواه مسلم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the riwāya that length is better. Āḥād marfūʿ: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The Prophet's practice: most of his prayer was tahajjud, which he made long, and he kept up only what is best.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p104",
+     "excerpt_ar": "«ولأن النبي - صلى الله عليه وسلم - كان أكثر صلاته التهجد وكان يطيله، على ما قد مر ذكره، ولا يداوم إلا على الأفضل»",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the same riwāya. A report of his deed: zanni. For the third riwāya (equality) al-Mughnī gives only «لتعارض الأخبار», the conflict of reports, which is not itself a proof, so none is recorded."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: two badanas shed more blood, and shedding blood is the aim of the sacrifice.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p532",
+     "excerpt_ar": "(فبدنتان) سمينتان (بتسعة، أفضل من بدنة بعشرة) لما فيه من كثرة إراقة الدم",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given for Aḥmad's naṣṣ (Ibn Manṣūr). A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Analogy: more animals of one kind is better, as more slaves freed is better.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v03:p252",
+     "excerpt_ar": "فرع: زيادة العدد في جنس أفضل كالعتق، وقيل: المغالاة في الثمن",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's ground for preferring number. aṣl: manumission; farʿ: the hady. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the single badana is the more precious.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p532",
+     "excerpt_ar": "(ورجح الشيخ البدنة) التي بعشرة على البدنتين بتسعة؛ لأنها أنفس",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's reason for Taqī al-Dīn's preference. qiyas. Ibn Rajab refers to a ḥadīth in Abū Dāwūd for this side but does not quote it, so it is not recorded."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Aḥmad cites the report that each letter recited earns so many good deeds, so faster recitation earns more.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p022",
+     "excerpt_ar": "قال: أليس قد جاء بكل حرف كذا وكذا حسنة؟ قالوا له: في السرعة؟",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Aḥmad's answer to Jaʿfar, which Ibn Rajab reads as preferring quantity. A marfūʿ report that bears on the comparison only by implication: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Q 73:4 «and recite the Qurʾān in measured recitation».",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p128",
+     "excerpt_ar": "والترتيل أفضل من قراءة الكثير مع العجلة؛ لأن الله تعالى قال: {ورتل القرآن ترتيلا}",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for preferring measured recitation over much hurried recitation. The āya commands tartīl but does not explicitly compare it with quantity: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Q 38:29 «a blessed Book We sent down to you, that they may reflect on its verses», together with Q 73:4.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v01:p431",
+     "excerpt_ar": "(كثيرا بغير تفهم) للآية السابقة، ولقوله تعالى {كتاب أنزلناه إليك مبارك ليدبروا آياته}",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Cited for preferring understanding and reflection over reciting much without understanding. The āya gives reflection as the purpose but does not explicitly compare: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "fatwaSahabi",
+     "dalil": "The ṣaḥāba and tābiʿūn stated explicitly that reflective recitation is better.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p022",
+     "excerpt_ar": "وهذا يدل على تفضيل قراءة التفكر على السرعة، وهو اختيار الشيخ تقي الدين وهو المنصوص صريحا عن الصحابة والتابعين",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab reports the view as explicitly stated by the Companions and reports no Companion against it: fatwaSahabi. No named Companion is quoted."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Ḥadīth Aḥmad cites: whoever learns the Qurʾān when old, finding it hard, has two rewards; carried over to anyone who forces himself to a good deed.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p023",
+     "excerpt_ar": "قال ألم تسمع «النبي صلى الله عليه وسلم يقول من تعلم القرآن وهو كبير يشق عليه فله أجران»",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Aḥmad's answer to the question. The ḥadīth is about learning the Qurʾān with hardship and is carried over to every act done against one's own inclination: qiyas, not zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the one who forces himself does two works, struggling against himself and the act of obedience, hence two rewards.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p023",
+     "excerpt_ar": "وهذا ظاهر في ترجيح المكره نفسه لأن له عملين جهادا وطاعة أخرى، ولذلك كان له أجران",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's reading of Aḥmad's answer. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the glad one's station, a soul at rest in obedience, is better than many separate works.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p023",
+     "excerpt_ar": "وهو اختيار الشيخ تقي الدين لأن مقامه في طمأنينة النفس أفضل من أعمال متعددة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Taqī al-Dīn's reason (with al-Junayd). qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: one resident in Mecca performing ṭawāf and another crossing deserts to reach Mecca; the traveller's work is harder, but the resident's is better.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p023",
+     "excerpt_ar": "فمثلهما كمثل رجل مقيم بمكة يشتغل بالطواف والآخر يقطع المفاوز والقفار في السير إلى مكة فعمله أشق والأول أفضل",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Given for the same side. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth: whoever frees a Muslim, God frees for each of his limbs a limb of the freer from the Fire.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p235",
+     "excerpt_ar": "كان أولى وأفضل؛ لأن النبي - صلى الله عليه وسلم - قال: «من أعتق امرأ مسلما، أعتق الله بكل عضو منه عضوا منه من النار»",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for buying more slaves at the price of three costly ones, from the same money (bequest to buy slaves). The reward is per person freed, so more people freed earn more; this bears on the comparison by implication: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: it releases an additional person.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p235",
+     "excerpt_ar": "ولأنه يفرج عن نفس زائدة، فكان أفضل من عدم ذلك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Second reason in the same passage. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: it releases three persons.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p283",
+     "excerpt_ar": "فأمكن شراء ثلاث رقاب بثمن رقبتين غاليتين، فعتق الثلاثة أولى، لأنه تخليص لثلاثة",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī on the same facts (the money of two costly slaves buys three). qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ḥadīth: «the best slaves to free are the most precious to their owners and the highest in price».",
+     "ref": "src:openiti-rajab-shamela21730/v01:p023",
+     "excerpt_ar": "وهذا في العتق أولى مع قول النبي صلى الله عليه وسلم «خير الرقاب أنفسها عند أهلها وأغلاها ثمنا»",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab cites it against al-Qāḍī and Ibn ʿAqīl. The ḥadīth names the costliest slave as the best to free; on several cheap slaves against one costly slave it is not explicit. Āḥād marfūʿ: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Analogy: some of the Salaf (Ibn ʿUmar, al-Rabīʿ b. Khuthaym) gave in charity the food they desired, even when its value would profit the poor more, acting on Q 3:92; this applies a fortiori to manumission.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p023",
+     "excerpt_ar": "وإن كان المسكين ينتفع بقيمته أكثر، عملا بقوله ( {لن تنالوا البر حتى تنفقوا مما تحبون}",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Carried from charity in food to manumission («وهذا في العتق أولى»), so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the extra was never owed in the dhimma; it attached only to the designated animal and lapsed when that animal perished, like a voluntary hady that perishes.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p461",
+     "excerpt_ar": "وإن عين صحيحا فهلك، أو تعيب بغير تفريطه، لم يلزمه أكثر مما كان واجبا في الذمة؛ لأن الزائد لم يجب في الذمة، وإنما تعلق بالعين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the baseline when the animal is lost without fault, which are these facts. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same rationale, with the aṣl stated: the hady obligated only by designation, which lapses when it perishes.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v03:p575",
+     "excerpt_ar": "لأن الزائد لم يجب في الذمة، وإنما تعلق بالعين فسقط بتلفها كأصل الهدي إذا لم يجب بغير التعيين",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr repeats al-Mughnī with the explicit aṣl. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale as reported from the author of al-Mughnī: the increase was due only through designation and perished without fault, as with a voluntary hady.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p040",
+     "excerpt_ar": "لأن الزيادة وجبت بتعيينه وقد تلفت بغير تفريط فسقطت كما لو عين هديا تطوعا ثم تلف",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's report. qiyas. No source gives a proof for the other wajh (keeping the higher description) on these facts."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: iʿtikāf at this time has a merit found at no other time, so a make-up elsewhere does not suffice, as with a vowed iʿtikāf in al-Masjid al-Ḥarām that was corrupted.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p040",
+     "excerpt_ar": "لأن في الاعتكاف في هذا الزمن فضيلة لا توجد في غيره فلا يجزئ القضاء في غيره كما لو نذر الاعتكاف في المسجد الحرام ثم أفسده",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Given for Aḥmad's apparent text and Ibn Abī Mūsā's choice. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the vow includes a vow of iʿtikāf on Laylat al-Qadr, which nothing else equals, so the make-up must fall in corresponding days.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p040",
+     "excerpt_ar": "ولأن نذر اعتكافه يشتمل على نذر اعتكاف ليلة القدر فتعين لأن غيرها لا يساويها",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Second reason for the same position. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same rationale: the merit of that time cannot be matched elsewhere.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p361",
+     "excerpt_ar": "وظاهر كلام أحمد لزومه وهو اختيار ابن أبي موسى؛؛ لأن في الاعتكاف في هذا الزمن فضيلة لا توجد في غيره",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf reproduces it, citing Ibn Rajab's 31st qāʿida. qiyas. No proof is given for the other wajh."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: by her freedom she has become her husband's equal in status, so she has no option, as when a kitābiyya married to a Muslim becomes Muslim.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p192",
+     "excerpt_ar": "ولنا، أنها كافأت زوجها في الكمال، فلم يثبت لها الخيار، كما لو أسلمت الكتابية تحت مسلم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The «ولنا» for no option under a free husband. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Aḥmad: the contract is valid, so it is not undone by a disputed cause; under a free husband the option is disputed, under a slave it is not.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p192",
+     "excerpt_ar": "قال: والعقد صحيح، فلا يفسخ بالمختلف فيه، والحر فيه اختلاف، والعبد لا اختلاف فيه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The marriage stays valid as it was until something agreed upon removes it: continuance of the original state, so istishab."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Distinction: a slave husband is deficient, so a freed wife is harmed by staying with him; a free husband is not.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p192",
+     "excerpt_ar": "ويخالف الحر العبد؛ لأن العبد ناقص، فإذا كملت تحته تضررت ببقائها عنده، بخلاف الحر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Explains why the option given in Barīra's case under a slave does not reach a free husband. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of al-Aswad from ʿĀʾisha (al-Nasāʾī): the Prophet gave Barīra the option, and her husband was free.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p192",
+     "excerpt_ar": "لما روى الأسود، عن عائشة، أن النبي - صلى الله عليه وسلم - «خير بريرة، وكان زوجها حرا.» رواه النسائي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for Ṭāwūs, al-Thawrī and the Ḥanafīs, who give her the option. That is the same ruling Taqī al-Dīn reaches, so it counts for it. A connected marfūʿ report: zanni. al-Mughnī answers that al-Aswad's narrations contradict each other."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: she has been perfected by freedom, so she has the option, as when her husband is a slave.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p192",
+     "excerpt_ar": "ولأنها كملت بالحرية، فكان لها الخيار، كما لو كان زوجها عبدا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the same non-Ḥanbalī holders of the ruling. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale of those who hold that manumission spreads: she now owns her buḍʿ and no one keeps any ownership over her, so whether she stays is her choice, whatever the husband's status.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p042",
+     "excerpt_ar": "قال: قد ملكت بضعها فلم يبق لأحد عليها ملك فصار الخيار لها في المقام مع الزوج",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Taqī al-Dīn's ground. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the lease is a contract over the benefit, so manumission does not dissolve it, as with marriage.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p179",
+     "excerpt_ar": "وإن أجر عبده، ثم أعتقه، لم تنفسخ الإجارة؛ لأنه عقد على المنفعة فلم تنفسخ بالعتق، كالنكاح",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Given for the madhhab: the lease stands. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the master made a binding disposition, so it does not lapse on the slave's manumission, as when he married off his slave-woman and then sold her.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p424",
+     "excerpt_ar": "لأنه تصرف له تصرفا لازما فلا تنفسخ ببلوغ الصبي كما لو زوجه أو باع عقاره ولا يعتق العبد كما لو زوج أمته ثم باعها",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Given for the madhhab on the slave and the ward together. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale (the qāʿida): benefits owed under a binding contract are an exception made by operation of law, which is stronger than an exception made in words, so the manumission does not reach them.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p042",
+     "excerpt_ar": "استحقاق منافع العبد بعقد لازم يمنع من سريان العتق إليها كالاستثناء في العقد وأولى ; لأن الاستثناء الحكمي أقوى",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's own ground for the madhhab. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale (al-Muqniʿ's wajh): he leased for a period over which he has no authority at all, like a lease of waqf by the beneficiary who then dies.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p424",
+     "excerpt_ar": "(ويحتمل أن تنفسخ) هذا وجه ; لأنه أجره مدة لا ولاية له عليها بالكلية أشبه إجارة الوقف",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Cited for dissolution, the wajh that al-Muqniʿ derives. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: on manumission the master's authority over the slave ends, as with a guardian who leased out the boy and the boy then came of age.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p042",
+     "excerpt_ar": "صاحب المقنع ذلك وجها لنا لا بناء على السراية بل على زوال ولاية السيد عن عبده بعتقه، فيكون كما لو أجر الولي الصبي",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab reports the takhrīj and then calls it weak («وهذا ضعيف»): a guardian's authority ends altogether, a master's does not. His verdict judges the analogy; it does not call a report weak, so the tier stays qiyas. No source gives a proof for Taqī al-Dīn's sirāya ground beyond his view itself."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f013",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the cause of the liʿān is the husband's own qadhf, so the separation is ascribed to him and is like his ṭalāq (which halves).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p273",
+     "excerpt_ar": "وفي فرقة اللعان روايتان؛ إحداهما، هي كطلاقه؛ لأن سبب اللعان قذفه الصادر منه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the riwāya that the liʿān separation halves the mahr. A stated rationale assimilating it to his divorce: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the liʿān's cause is his qadhf, so it resembles khulʿ (a separation the husband's side dominates, which halves).",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p217",
+     "excerpt_ar": "إحداهما: هو كطلاقه لأن سبب اللعان قذفه الصادر منه، أشبه الخلع",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ adds the comparison with khulʿ (aṣl: khulʿ; farʿ: liʿān; ʿilla: the separation's cause comes from him). qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the annulment follows directly upon her liʿān, so it is like her annulling for his impotence (which drops the whole mahr).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p273",
+     "excerpt_ar": "والثانية، يسقط به مهرها؛ لأن الفسخ عقيب لعانها، فهو كفسخها لعنته",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the riwāya that it drops. Analogy with her own faskh: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the annulment is from her side, since it is only completed when her liʿān is completed.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p150",
+     "excerpt_ar": "(وفرقة اللعان تسقط كل المهر) لأن الفسخ من قبلها لأنه إنما يحصل عند تمام لعانها",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's reason for the madhhab drop on these facts. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Abū Bakr's rationale: the separation occurs only by her liʿān, so it came from the wife's side.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p333",
+     "excerpt_ar": "فذكر أبو بكر أن فرقة اللعان جاءت من جهة الزوجة ; لأن الفرقة إنما تقع بلعانها",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's report of the reason for the drop (the position's own holder). qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f014",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: in khulʿ the husband's side predominates, shown by its validity without her (his khulʿ with a stranger), so it counts as his alone.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p066",
+     "excerpt_ar": "وإنما ينصف المهر بالخلع؛ لأن المغلب فيه جانب الزوج، بدليل أنه يصح به دونها، وهو خلعه مع أجنبي",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Cited for halving by khulʿ even at her request. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Q 2:237 («فنصف ما فرضتم») establishes halving for ṭalāq before consummation; every separation the husband alone effects, khulʿ among them, is analogised to it.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v08:p067",
+     "excerpt_ar": "فريضة فنصف ما فرضتم) ثبت في الطلاق وقسنا عليه سائر ما استقل به الزوج",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "The āya is explicit for ṭalāq only; the source extends it to khulʿ by «وقسنا عليه». Carried over from another matter: qiyas, not qati."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "al-Qāḍī's rationale for Aḥmad's naṣṣ: the husband alone can effect khulʿ (valid with a stranger without her consent), so it is ascribed to him.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p331",
+     "excerpt_ar": "وعلله القاضي بأن الخلع يستقل به الزوج ; لأنه يصح مع الأجنبي بدون رضى المرأة فلذلك نسب إليه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's report of the reason for the naṣṣ that khulʿ halves. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale (wajh): if khulʿ is an annulment it is ascribed to both spouses, and so is like mutual liʿān (which drops it); not so if it is a divorce, which the husband effects alone.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p333",
+     "excerpt_ar": "أنه يسقط المهر كله إذا قلنا هو فسخ فإنه يكون منسوبا إليهما، فيكون كالتلاعن، بخلاف ما إذا قلنا إنه طلاق فإن الطلاق يستقل به الزوج",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The first route to the drop, restricted by its own qualifier to khulʿ as faskh. Analogy with liʿān: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale (extracted wajh): even as a divorce, khulʿ comes from her side at her request; backed by the riwāya that she does not inherit from a husband she took khulʿ from in his illness.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p333",
+     "excerpt_ar": "ويتخرج لنا وجه آخر أنه يسقط به المهر، وإن قلنا هو طلاق بناء على أنه جاء من قبلها بسؤالها",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The second route to the drop, built on the inheritance case. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Ibn Abī Mūsā's rationale: the separation came from her side (so no mutʿa and no inheritance).",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p216",
+     "excerpt_ar": "وذكر ابن أبي موسى أن المختلعة لا متعة لها، وأن المخالعة في المرض لا ترث، وعلل بأن الفرقة حصلت من جهتها",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "The ʿilla that Ibn Rajab carries over to the mahr. Cited on mutʿa and inheritance, not stated for the mahr, so a carried-over rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f015",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the sale that causes the annulment was completed by the master (standing in the husband's place) and the woman together, so it resembles khulʿ (which halves).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p274",
+     "excerpt_ar": "إحداهما، يتنصف بها مهرها؛ لأن البيع الموجب للفسخ تم بالسيد القائم مقام الزوج وبالمرأة، فأشبه الخلع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for halving when she buys her husband. Analogy with khulʿ: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: weight is given to the stranger's side (the seller), since the contract originates from him.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p333",
+     "excerpt_ar": "أنه ينتصف بها المهر تغليبا لجهة الأجنبي هنا وهو البائع، إذ هو أصل العقد ومنه نشأ وعنه تلقى",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's statement of the more widely held wajh (Abū Bakr, al-Qāḍī). A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the annulment occurs immediately after her acceptance of the sale, so it resembles her annulling for his impotence.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p274",
+     "excerpt_ar": "والثانية، يسقط المهر؛ لأن الفسخ وجد عقيب قبولها، فأشبه فسخها لعنته",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the drop. Analogy with her own faskh: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: weight is given to the wife's side, since the annulment follows her acceptance.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p333",
+     "excerpt_ar": "والثاني: يسقط المهر تغليبا لجهة الزوجة إذ الانفساخ متعقب لقبولها",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's statement of the second wajh. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f016",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: the annulment is ascribed to her, since she yielded herself to the one whose intercourse annuls the marriage.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p334",
+     "excerpt_ar": "فقال القاضي ومن اتبعه يسقط مهرها إسنادا للفسخ إليها",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Qāḍī's reason, as Ibn Rajab reports it. A stated ascription (like her own faskh): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the separation is from her and a stranger together, so it falls under the fifth kind (her purchase of her husband), whose halving wajh it takes.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p334",
+     "excerpt_ar": "وقال الشيخ تقي الدين يتخرج على وجهين ; لأن الفرقة منها ومن الأجنبي",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Taqī al-Dīn's takhrīj, with its stated reason. qiyas. No other source checked argues the mahr on these facts."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f017",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: it becomes clear that the separation happened by their becoming Muslim together, so no mahr is due, as when a marriage is annulled for a defect.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p163",
+     "excerpt_ar": "فلا مهر للأخرى؛ لأننا تبينا أن الفرقة وقعت بإسلامهم جميعا، فلا تستحق مهرا، كما لو فسخ النكاح لعيب في إحداهما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Stated for the sister not chosen; the passage then applies it to the excess over four (\"وهكذا الحكم فيما زاد على الأربع\"). qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: Islam does not let this marriage stand, so it brings no mahr before consummation, like a Magian who married his sister and both became Muslim before consummation.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p163",
+     "excerpt_ar": "ولأنه نكاح لا يقر عليه في الإسلام، فلا يجب به مهر إذا لم يدخل بها، كما لو تزوج المجوسي أخته",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The second reason, applied in the same passage to the excess wives. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "al-Qāḍī's rationale: he is barred from keeping them, so it is like a fāsid marriage (where the mahr comes only with intercourse).",
+     "ref": "src:openiti-rajab-shamela21730/v01:p334",
+     "excerpt_ar": "فلا يجب لهن شيء من المهر ذكره القاضي في الجامع والخلاف معللا بأنه ممنوع من إمساكهن فهو كالنكاح الفاسد",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab reports the reason with the ruling. qiyas. No source gives a proof for the halving wajh, which Ibn Rajab only extracts from the next masʾala."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f018",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: one of the two marriages is valid and it has ended before consummation, so half a mahr is owed to one of them; since she is not known, they draw lots (as for taking one wife on a journey).",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p031",
+     "excerpt_ar": "فعليه نصف المهر لإحداهما؛ لأن نكاحها صحيح، ولا يعلم أيتهما هي، فيقرع بينهما",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Given for the madhhab ruling on these facts. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: one marriage is valid and he has separated from her before consummation, so half the mahr is due, assigned by lot.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p075",
+     "excerpt_ar": "(فعليه لإحداهما نصف المهر) لأن نكاح واحدة منهما صحيح وقد فارقها قبل الدخول (يقترعان عليه)",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's reason. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Abū Bakr's first tawjīh: the half is in fact owed to one of them, so the lot determines which.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p334",
+     "excerpt_ar": "يجب نصف المهر ثم يقترعان فمن وقعت عليها القرعة حكم لها به ; لأنه واجب عليه لإحداهما في نفس الأمر فتعين بالقرعة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's report of the reason. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Abū Bakr: he is compelled to divorce them, so he owes no mahr, as when his marriage is annulled by suckling or the like.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p032",
+     "excerpt_ar": "أبو بكر: يتوجه ألا يلزمه لهما صداق؛ لأنه مجبر على طلاقهما، فلم يلزمه صداقهما، كما لو فسخ نكاحه برضاع أو غيره",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Given for the drop. Analogy with an annulment imposed on him: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Abū Bakr's second tawjīh: he is coerced into the divorce, so it is as if the annulment came from the woman's side.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p334",
+     "excerpt_ar": "والثاني لا يجب شيء به لأنه مكره على الطلاق فكأن الفسخ جاء من جهة المرأة فلا تستحق شيئا",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's report of the reason. qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

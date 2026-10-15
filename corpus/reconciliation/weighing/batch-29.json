@@ -1,0 +1,439 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b29: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f000",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The fast became fixed as owed when it fell due, because its cause existed together with its condition, which is the lack of a hady. So he does not move back to the hady.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p420",
+     "excerpt_ar": "وقد انتقل فرضه إلى الصيام؛ وذلك لأن الصيام استقر في ذمته، لوجوبه حال وجود السبب المتصل بشرطه، وهو عدم الهدي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's grounds for the riwāya that he need not move to the hady (the state at obligation, position 1), on these facts: the fast is due but not begun. It is a stated rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The fast became settled on him, so he is like someone who has already begun it.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p483",
+     "excerpt_ar": "إحداهما: لا يلزمه الهدي؛ لأن الصوم استقر عليه، أشبه الشارع فيه",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "An analogy with one who has begun the fast. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The time of obligation governs, as in the other kaffārāt.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p454",
+     "excerpt_ar": "ثم قدر على الهدي لم يلزمه الانتقال إليه) اعتبارا بوقت الوجوب كسائر الكفارات",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's grounds for the muʿtamad (no move), covering the fast not yet begun. An analogy with the kaffārāt, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He became able to give the original before beginning the substitute, so he must move to it, like the one doing tayammum who finds water.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p420",
+     "excerpt_ar": "ولأنه قدر على المبدل قبل شروعه في البدل، فلزمه الانتقال إليه، كالمتيمم إذا وجد الماء",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The rationale for the second riwāya (move to the hady, position 0). It is an analogy with tayammum, so qiyas. Aḥmad's answer in Yaʿqūb's riwāya (two hadys) is reported but is a fatwā, not a proof."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He found the original before beginning the substitute, so he is like one who had it at the time of obligation.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p483",
+     "excerpt_ar": "والثانية: يلزمه لأنه وجد المبدل قبل شروعه في البدل أشبه الواجد له حال الوجوب",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's analogy for the same riwāya. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f001",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A kaffāra is owed as a purification, so the time of obligation governs it, like the ḥadd.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p039",
+     "excerpt_ar": "ولنا أن الكفارة تجب على وجه الطهارة، فكان الاعتبار فيها بحالة الوجوب كالحد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ولنا» for the state at obligation (position 1): someone who could not free a slave when the kaffāra fell due does not have to move to manumission if he later can. It is an analogy with the ḥadd, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Whoever owes fasting in a kaffāra is not bound to anything else, like a slave who is later freed.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p039",
+     "excerpt_ar": "أو نقول: من وجب عليه الصيام في الكفارة، لم يلزمه غيره، كالعبد إذا أعتق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A second analogy for the same position. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Aḥmad's own argument: a slave who commits qadhf and is then freed receives a slave's flogging. In the same way he expiates what was owed on the day of breaking the oath.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p039",
+     "excerpt_ar": "واحتج فقال: افترى وهو عبد أي ثم أعتق فإنما يجلد جلد العبد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Aḥmad's iḥtijāj, which the riwāya al-Athram reports, for the state at obligation. It is an analogy with the ḥadd of qadhf, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Second riwāya (also a view of al-Shāfiʿī): it is a right owed in the dhimma because of wealth, so the harsher of the two states is taken, as with ḥajj. If he can free a slave at any point before expiating, only manumission suffices.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p039",
+     "excerpt_ar": "لأنه حق يجب في الذمة بوجود مال، فاعتبر فيه أغلظ الحالين كالحج",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Gives the same ruling as position 0: he moves to the original once he can, before fasting. It is an analogy with ḥajj, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Abū Ḥanīfa and Mālik: it is a right with a substitute of another kind, so the time of performance governs, like wuḍūʾ.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p039",
+     "excerpt_ar": "لأنه حق له بدل من غير جنسه، فكان الاعتبار فيه بحالة الأداء، كالوضوء",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A non-Ḥanbalī proof for the state at performance, the ruling of position 0. It is an analogy with wuḍūʾ and tayammum, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f003",
+   "proofs": [],
+   "advantages": [],
+   "searched": "al-Mughnī v09:p230 (the slave-girl promised as a reward who becomes Muslim before the conquest), al-Sharḥ al-Kabīr v10:p432–433, al-Kāfī v04:p140, al-Mubdiʿ v03:p309 and Kashshāf v03:p067. All give her value to the unbelieving claimant «لأن الكافر لا يبتدئ الملك على مسلم». al-Mubdiʿ and Kashshāf then note only «ثم إن أسلم ففي أخذها احتمالان», with no argument. No source argues either side of whether the right returns to her after he becomes Muslim."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Once she refused, the husband's right moved to the value. It does not return to the thing itself unless both agree, so neither is bound to accept what the other offers.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p229",
+     "excerpt_ar": "لم يلزم واحدا منهما قبول قول الآخر؛ لأن الحق انتقل إلى القيمة، فلم يعد إلى العين إلا برضاهما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's rationale on these facts: he offers to take back half the trees and wait for the fruit. She is not compelled (position 0, Ibn ʿAqīl's view). It is a stated rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The harm of waiting falls on him, so she must accept his offer. This is like her offering him half the palms with their spathes, or like a husband who accepts the item in a reduced state.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p229",
+     "excerpt_ar": "ويحتمل أن يلزمها قبول ما عرض عليها؛ لأن الضرر عليه فأشبه ما لو بذلت له نصفها مع طلعها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The iḥtimāl that she is compelled (position 1). It is an analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "His right became fixed in the value at the divorce, so a later rescission of her sale does not give him back half the thing itself.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p232",
+     "excerpt_ar": "فلم يأخذ قيمة النصف حتى فسخ البيع والرهن والهبة، لم يكن له الرجوع في نصفها؛ لأن حقه يثبت في القيمة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma on these facts: divorce after a binding sale, then the sale is rescinded before he takes half the value. There is no return, which is the aṣḥāb's position 0. It is a stated rationale, so qiyas. No source here argues Ibn Rajab's takhrīj (position 1) or Abū al-Barakāt's distinction (position 2)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Shares are like whole persons in matters that a slight defect does not bar. The aṣl is zakat: half of eighty jointly owned sheep makes zakat due as forty owned outright would. Also sacrificial animals held in shares.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p562",
+     "excerpt_ar": "ولنا، أن الأشقاص كالأشخاص فيما لا يمنع منه العيب اليسير، دليله الزكاة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ولنا» for al-Khiraqī's ruling that the two halves suffice. It is an analogy with zakat on shares and with shares in hady, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Abū Bakr: the purpose of manumission is that the freed person gains the full legal capacities of a free man, and freeing two halves does not achieve that.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p561",
+     "excerpt_ar": "وقال أبو بكر بن جعفر: لا يجزئ؛ لأن المقصود من العتق تكميل الأحكام، ولا يحصل من إعتاق نصفين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū Bakr's reason for position 1 (they do not suffice). It argues from the purpose of the ruling, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "Ibn Qudāma's own preference: the unqualified «raqaba» of the kaffāra āya refers to a whole slave, and two halves do not give what a whole person's manumission gives. So he rejects treating two halves like a whole slave, by analogy with a commission to buy or give a 'raqaba'.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p562",
+     "excerpt_ar": "والأولى أنه لا يجزئ إعتاق نصفين، إذا لم يكن الباقي بينهما حرا؛ لأن إطلاق الرقبة إنما ينصرف إلى إعتاق الكاملة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for 'does not suffice'. Ibn Qudāma limits it to the case where the rest of each slave is not free, which is the ordinary form of these facts. The argument reads the āya's word raqaba by its apparent, customary sense, so zanni (the Book by a non-explicit indication)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "al-Qāḍī: as in kaffāra, which may be paid from two kinds. The Lawgiver set one sheep against ten dirhams, so a sheep and ten dirhams equal one jubrān.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p439",
+     "excerpt_ar": "فقال القاضي: لا يمنع هذا، كما قلنا في الكفارة، فله إخراجها من جنسين؛ لأن الشاة مقام عشرة دراهم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Qāḍī's grounds for 'it suffices' on these facts (a sheep and ten dirhams as the jubrān). It is an analogy with kaffāra plus the stated equivalence, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The sheep stands in place of ten dirhams, and the payer had the choice between the two kinds even when combined with others, so he has it for each part taken singly.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v01:p389",
+     "excerpt_ar": "فإن أراد أعطى شاة وعشرة دراهم، أو أخذ ذلك جاز ذكره القاضي؛ لأن الشاة مقام عشرة دراهم، وقد كانت الخيرة إليه فيهما مع غيرهما",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī gives the same rationale for 'it suffices'. It is a stated rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The Prophet gave the choice between two sheep and twenty dirhams (the zakat letter). A sheep and ten dirhams is a third option, so allowing it goes against the report.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p439",
+     "excerpt_ar": "ويحتمل المنع؛ لأن النبي - صلى الله عليه وسلم - خير بين شاتين وعشرين درهما، وهذا قسم ثالث، فتجويزه يخالف الخبر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The iḥtimāl of 'does not suffice' (position 1) rests on the marfūʿ report of the jubrān. The report does not mention the mixed payment explicitly. The ban follows from reading the two named options as exhaustive (an implied sense), so zanni."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He has paid the required number from what the text names, so it suffices, as when paid from one kind. Each kind can stand for the other in the whole number, so it can in part, like tayammum standing for water for part of the body.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p561",
+     "excerpt_ar": "ولنا، أنه أخرج من المنصوص عليه بعده العدد الواجب، فأجزأ كما لو أخرجه من جنس واحد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «ولنا» for feeding five and clothing five, the facts of this case. It is an analogy, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Feeding and clothing are close in meaning: both meet need, both take the same number of recipients and require them to be poor. So they act as one kind and can be combined.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p561",
+     "excerpt_ar": "ولأن معنى الطعام والكسوة متقارب؛ إذ القصد منهما سد الخلة، ودفع الحاجة، وقد استويا في العدد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The second rationale for the same ruling, which is also the 'common unit' the reading relies on. It is a shared ʿilla, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Allah let the one who owes the kaffāra choose between feeding and clothing (al-Māʾida 89), so the choice is his across all ten and also among some of them.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p243",
+     "excerpt_ar": "لأن الله تعالى خير من وجبت عليه الكفارة بين الإطعام والكسوة فكان مرجعهما إلى اختياره في العشرة وفي بعضهم بخلاف ما لم يخيره فيه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf's proof for permitting feeding some and clothing others. The āya gives the choice but says nothing explicit about splitting the ten. Reading the choice as extending to part of the number is an indication, so zanni."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "al-Shāfiʿī: al-Māʾida 89 makes the kaffāra one of three options, and someone who feeds five and clothes five has done none of them. Limiting it to three options also excludes a fourth, mixed option.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p560",
+     "excerpt_ar": "فوجه الدلالة من وجهين؛ أحدهما: أنه جعل الكفارة أحد هذه الخصال الثلاثة، ولم يأت بواحد منها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for al-Shāfiʿī, who holds the same ruling as the wajh in Sharḥ al-Hidāya (it does not suffice). The āya does not state this explicitly, so zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is one kind of expiation, so it cannot be split, like manumission. It patches the kaffāra together from two kinds, like freeing half a slave and feeding five.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p560",
+     "excerpt_ar": "ولأنه نوع من التكفير، فلم يجزئه تبعيضه، كالعتق، ولأنه لفق الكفارة من نوعين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Shāfiʿī's analogies for 'does not suffice', which is position 1's ruling. These are analogies, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Each kind suffices alone, so part from one and part from another suffices, like the fiṭra of a jointly owned slave when each owner pays from a different kind.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v02:p666",
+     "excerpt_ar": "لأن كل واحد منهما يجزئ منفردا فاجزأ بعض من هذا وبعض من الآخر كفطرة العبد المشترك اذا أخرج كل واحد من جنس",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr's reason for a ṣāʿ made up of several kinds, the facts here. The aṣl is the fiṭra of a jointly owned slave, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Aḥmad's naṣṣ: each kind is permitted alone, so it is permitted with another, because their purpose is close or the same.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p442",
+     "excerpt_ar": "نص أحمد على إجزاء صاع من أجناس ; لأن كلا منها يجوز منفردا، فكذا مع غيره لتقارب مقصودها، أو اتحاده",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "The rationale given with Aḥmad's naṣṣ for the same ruling: a shared purpose, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is one kaffāra, so part of it cannot be paid by feeding and part by fasting, as with the other kaffārāt.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p450",
+     "excerpt_ar": "وجوزه محمد بن الحسن إذا عجز عن بعض الإطعام. ولا يصح؛ لأنها كفارة واحدة، فلا يؤدي بعضها بالإطعام وبعضها بالصيام، كسائر الكفارات",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the cognate case of jazāʾ al-ṣayd, which the case note uses for the madhhab's general rule. The fidya of a ḥajj prohibition is also a single kaffāra, so the argument transfers to these facts. It is an analogy with the other kaffārāt, so qiyas. No source in this set treats the fidya directly."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Aḥmad's naṣṣ: one may not fast for part of the jazāʾ and feed for part, because it is one kaffāra, like the other kaffārāt.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p452",
+     "excerpt_ar": "(ولا يجوز أن يصوم عن بعض الجزاء ويطعم عن بعضه) نص عليه؛ لأنها كفارة واحدة فلم يجز فيها ذلك كسائر الكفارات",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The same reasoning in the muʿtamad, again on the cognate jazāʾ. qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: conjoining the poor to Zayd indicates that they are distinct from him, since the apparent sense is that what is conjoined differs from what it is conjoined to. So Zayd, though poor, takes nothing from the poor's share.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p235",
+     "excerpt_ar": "وإن كان زيد مسكينا، لم يدفع إليه من سهم المساكين شيء، وبه قال الحسن، وإسحاق؛ لأن عطفهم عليه يدل على المغايرة بينهما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma gives this for exactly this ruling: Zayd is poor and gets nothing of the masākīn's share. It is a linguistic rationale (the conjunction implies distinctness), so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Reductio: allowing it would lead to allowing the whole bequest to be paid to Zayd, and the testator's words require the opposite.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p235",
+     "excerpt_ar": "ولأن تجويز ذلك يفضي إلى تجويز دفع الجميع إليه، ولفظه يقتضي خلاف ذلك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's second reason for the same ruling. It argues from what follows and from the wording, not from a text, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "By naming a fixed sum for Zayd (a dinar to him, three to the poor), the testator removed any discretion to pay him more. His right is fixed at the dinar.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p277",
+     "excerpt_ar": "وإن وصى لزيد بدينار، وللفقراء بثلاثة وزيد فقير، لم يعط غير الدينار، لأنه قطع الاجتهاد في الدفع إليه بتقدير حقه بدينار",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī states the case in the form of these facts, with separate amounts for Zayd and for the poor, and gives this as the reason. It is a stated rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f004",
+   "proofs": [],
+   "advantages": [],
+   "searched": "al-Mughnī v06:p190 (§4690), al-Sharḥ al-Kabīr v06:p460, al-Mubdiʿ v05:p248 and v05:p285, Kashshāf v04:p380 (Ibn Thawāb's riwāya). Each reports Aḥmad's naṣṣ only, with «فحكم بصحة الوصية وإنفاذها على ما أمر به الموصي». None gives an argument for either position, and none mentions the four-share division. Searched al-Kāfī and Sharḥ al-Muntahā for «كل شهر» and «ثلثي» with no treatment found."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The wound was not guaranteed when inflicted, so its spread is not guaranteed either, whether or not he became Muslim before the spread.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p275",
+     "excerpt_ar": "سواء أسلم قبل السراية أو لم يسلم؛ لأن الجرح غير مضمون، فلم يضمن سرايته، بخلاف التي قبلها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma treats exactly these facts (an apostate or ḥarbī wounded, who becomes Muslim and then dies of the wound): no qiṣāṣ and no diya. The proof is the principle that the spread follows the injury, a rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He died from the spread of a wound that was permitted, so it is not guaranteed, like the thief whose amputation spreads.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p004",
+     "excerpt_ar": "وإن قطع يد مرتد أو حربي فأسلم ومات لم يضمن؛ لأنه مات من سراية جرح مأذون فيه، فلم يضمن كالسارق، إذا سرى قطعه",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "An analogy with the thief's ḥadd amputation, on these facts. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He did not commit an offence against someone whose blood was protected.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v09:p352",
+     "excerpt_ar": "ذمي يد مرتد أو حربي فأسلم ثم مات فلا شئ على القاطع لأنه لم يجن على معصوم",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr's reason for no liability on these facts: protection is judged at the time of the injury. A stated rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He died from the spread of an unguaranteed wound, like a death from the spread of a ḥadd amputation or of retaliation.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p313",
+     "excerpt_ar": "وفي وجوب الضمان وجهان؛ أحدهما: لا يجب شيء؛ لأنه مات بسراية جرح غير مضمون، أشبه ما لو مات بسراية القطع في الحد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's first wajh on these facts (a master wounds his own slave, frees him, and he dies of the wound): no ḍamān. It is an analogy, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It turns out that the cut was a killing, so he killed his own slave, and that brings no ḍamān, as if he had not freed him. This follows from Abū Bakr's view.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p314",
+     "excerpt_ar": "ولأنا تبينا أن القطع كان قتلا، فيكون قاتلا لعبده، فلا يلزمه ضمانه، كما لو لم يعتقه. وهذا بمقتضى قول أبي بكر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A second rationale for the same wajh, tied to Abū Bakr as the case note says. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He died free from the spread of a wrongful cut, so it is guaranteed, as if the one who cut him were a stranger. The arsh of the cut falls away, because the cut happened while he was owned.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p314",
+     "excerpt_ar": "لأنه مات وهو حر بسراية قطع عدوان، فيضمن، كما لو كان القاطع أجنبيا، لكن يسقط أرش القطع؛ لأنه في ملكه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's second wajh is ḍamān (position 1), though he assesses it as the diya minus the arsh of the cut, not the full diya of a free man. It is an analogy with a stranger as the wounder, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He died free, so the master owes his heirs what exceeds the arsh of the cut, and the master does not inherit because he is the killer.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p527",
+     "excerpt_ar": "(ويضمنه بما زاد على أرش القطع من الدية لورثته) لأنه مات حرا",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf gives ḍamān as the muʿtamad on these facts, with this rationale (the state at death governs). qiyas. As in al-Mughnī, the measure is the diya minus the arsh."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f007",
+   "proofs": [],
+   "advantages": [],
+   "searched": "al-Mughnī (jazāʾ al-ṣayd, v03:p319, v03:p445), al-Sharḥ al-Kabīr v03:p362–363, al-Kāfī v01:p505–506, Kashshāf v02:p438 and v02:p469–471, al-Mubdiʿ and Sharḥ al-Muntahā. These treat only the converse case: wounded in the ḥill, died in the ḥaram, which is no jazāʾ «لأن الذكاة حصلت في الحل». They also treat game shot from the ḥill that enters the ḥaram, and game taken out of the ḥaram. None treats game wounded in the ḥaram that dies in the ḥill, and none argues for full ḍamān or for the arsh only."
+  }
+ ]
+}

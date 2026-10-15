@@ -1539,19 +1539,8 @@
     "work": "hajjawi.zad_mustaqni",
     "units": 286,
     "paragraphs": 1220,
-    "masail": 1166,
-    "duplicates": [
-      {
-        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00089",
-        "paragraph": 1,
-        "duplicates": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00088.p04",
-        "page_span": [
-          109,
-          109
-        ],
-        "excerpt_ar": "إذا باع دارا شمل أرضها وبناءها \"وسقفها\" والباب المنصوب1 والس"
-      }
-    ],
+    "masail": 1167,
+    "duplicates": [],
     "titles": [
       {
         "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001",
@@ -1872,7 +1861,7 @@
       "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00084.p08",
       "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00084.p14",
       "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00086.p06",
-      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00089.p01",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00089.p03",
       "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00090.p04",
       "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00091.p03",
       "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00092.p03",
@@ -1924,6 +1913,19 @@
       "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00281.p06",
       "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00284.p06",
       "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00285.p04"
+    ],
+    "reattributions": [
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00088",
+        "paragraph": 5,
+        "record": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00089.p01",
+        "bab_to": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00089",
+        "page_span": [
+          109,
+          109
+        ],
+        "reason": "body title matches next unit on same page"
+      }
     ]
   },
   "openiti-harb-masail-shamela12527": {
@@ -2005,39 +2007,8 @@
     "work": "ibn_qudama.umda",
     "units": 207,
     "paragraphs": 891,
-    "masail": 831,
-    "duplicates": [
-      {
-        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00041",
-        "paragraph": 1,
-        "duplicates": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00040.p01",
-        "page_span": [
-          42,
-          42
-        ],
-        "excerpt_ar": "أفضل الصيام صيام داود عليه السلام كان يصوم يوما ويفطر يوما1 "
-      },
-      {
-        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00041",
-        "paragraph": 2,
-        "duplicates": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00040.p02",
-        "page_span": [
-          42,
-          42
-        ],
-        "excerpt_ar": "والصائم المتطوع أمير نفسه إن شاء صام وإن شاء أفطر ولا قضاء ع"
-      },
-      {
-        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00199",
-        "paragraph": 1,
-        "duplicates": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00190.p01",
-        "page_span": [
-          149,
-          149
-        ],
-        "excerpt_ar": "وهي نوعان:"
-      }
-    ],
+    "masail": 834,
+    "duplicates": [],
     "titles": [
       {
         "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00001",
@@ -2373,7 +2344,8 @@
       "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00166.p04",
       "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00173.p03",
       "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00183.p02"
-    ]
+    ],
+    "reattributions": []
   },
   "openiti-ibntaymiyya-fatawakubra-shamela9690": {
     "work": "ibn_taymiyya.fatawa_kubra",

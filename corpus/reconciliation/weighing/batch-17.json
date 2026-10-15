@@ -1,0 +1,520 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b17: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f014",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "aqrabSahabi",
+     "dalil": "ʿUmar's written ruling in the plague of ʿAmawās, when whole households died and the order was unknown: let them inherit from one another; Aḥmad said he follows ʿUmar, ʿAlī and others. Abū Bakr, Zayd, Ibn ʿAbbās, Muʿādh and al-Ḥasan b. ʿAlī are reported as not making them inherit.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p378",
+     "excerpt_ar": "فجعل أهل البيت يموتون عن آخرهم، فكتب في ذلك إلى عمر، - رضي الله عنه -. فكتب عمر: أن ورثوا بعضهم من بعض",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for mutual inheritance from the original property when the order of death is unknown; al-Inṣāf (v07 p345) makes the forgotten-order case follow this ruling. The same passage reports ṣaḥāba on the other side, so aqrabSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "mursalDaif",
+     "dalil": "Report from Iyās b. ʿAbd Allāh al-Muzanī that the Prophet was asked about people on whom a house fell and said: they inherit from one another. Ibn Qudāma says the sound version is Iyās's own answer, not a report from the Prophet.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p379",
+     "excerpt_ar": "والصحيح أن هذا إنما هو عن إياس نفسه، وأنه هو المسئول، وليس براوية عن النبي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Some aṣḥāb cite it as marfūʿ for mutual inheritance; the source says it is not established as the Prophet's word, so mursalDaif."
+    },
+    {
+     "position": 3,
+     "tier": "istishab",
+     "dalil": "The cause of each living heir's right from his own deceased is certain; it is blocked only if the other deceased survived him, which is doubtful, and certainty is not left for doubt. So the son's estate goes to his father and the woman's to her brother and husband.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p278",
+     "excerpt_ar": "وإنما يمتنع لبقاء موروث الآخر بعده وهذا أمر مشكوك فيه فلا نزول عن اليقين بالشك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for al-Khiraqī's masʾala (woman and son die, heirs dispute who died first): each side swears and the dead do not inherit from each other. Holding to the certain state, so istishab."
+    },
+    {
+     "position": 3,
+     "tier": "qiyas",
+     "dalil": "When the heirs dispute the order, the oath falls on each as defendant; he swears to defeat the other's claim and keeps the inheritance, as in other rights. Unlike the case where all agree they do not know, where no oath arises.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p379",
+     "excerpt_ar": "لأن مع التداعي تتوجه اليمين، على المدعى عليه، فيحلف على إبطال دعوى صاحبه، ويتوفر الميراث له",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's explanation of why Aḥmad's naṣṣ (oaths, no mutual inheritance) applies on disputed facts. A stated rationale with an analogy to other claims: qiyas."
+    },
+    {
+     "position": 3,
+     "tier": "aqrabSahabi",
+     "dalil": "Abū Bakr al-Ṣiddīq, Zayd, Ibn ʿAbbās, Muʿādh and al-Ḥasan b. ʿAlī did not make such dead inherit from one another; each one's property went to his living heirs. ʿUmar and others are reported the other way.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p378",
+     "excerpt_ar": "وروي عن أبي بكر الصديق، وزيد، وابن عباس، ومعاذ، والحسن بن علي - رضي الله عنهم -، أنهم لم يورثوا بعضهم من بعض",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Supports the no-mutual-inheritance half of position 3. Ṣaḥāba disagree in the same passage, so aqrabSahabi."
+    },
+    {
+     "position": 4,
+     "tier": "qiyas",
+     "dalil": "Abū Bakr's view that the disputed estate is halved: the two claimants are equal in their claim, so it is divided between them as when two dispute an animal in both their hands, each swearing for what he is given.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p279",
+     "excerpt_ar": "فله وجه؛ لأنهما تساويا في دعواه، فيقسم بينهما كما لو تنازعا دابة في أيديهما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for dividing the disputed share. A stated analogy, so qiyas. al-Inṣāf (v07 p346) gives the same analogy for Abū Bakr's view. No source gives a proof for lot (positions 0 and 2); al-Inṣāf only reports Ibn Abī Mūsā's view and Abū Bakr's weakening of it."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f017",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Lot is used to single out rights when they are equal, as the Prophet's lot for which wife travels with him, the turn for the first night, and fixing shares in a division. The one chosen by lot has the other divorce her, then renews his own contract.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p061",
+     "excerpt_ar": "لأن القرعة تدخل بتميز الحقوق عند التساوي، كالسفر بإحدى نسائه، والبداءة بالمبيت عند إحداهن",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the second riwāya (lot) when the earlier of two marriages by two guardians is unknown. The lot texts are about other matters, carried over here, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "A valid contract is not undone merely because it has become unclear, as when buyer and seller differ over the price: the contract ends only by annulment. So the ruler annuls both.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p061",
+     "excerpt_ar": "فإن العقد الصحيح لا يبطل بمجرد إشكاله، كما لو اختلف المتبايعان في قدر الثمن",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's case for the madhhab (annulment by the ruler) against the view that the marriages simply fall. An analogy to the disputed sale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "One of the two contracts is valid and there is no way to know which, so the ruler annuls both.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p060",
+     "excerpt_ar": "(وجهل السابق) منهما (فسخهما حاكم) لأن أحدهما صحيح ولا طريق للعلم به",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The rationale for annulment on exactly these facts (earlier unknown, or known then forgotten). A stated reason, so qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "al-Shāfiʿī and Ibn al-Mundhir: the marriage is annulled of itself because it cannot be carried out.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p061",
+     "excerpt_ar": "وقال الشافعي، وابن المنذر: النكاح مفسوخ؛ لأنه تعذر إمضاؤه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for non-Ḥanbalī holders of the view that both marriages fall without a ruler's annulment, the ruling Ibn Abī Mūsā prefers. Ibn Qudāma rejects it. A stated reason, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f018",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He cannot divorce more than four, so when he pronounces divorce on all, the four divorced are drawn out by lot, as if he had divorced four of them not specified.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p124",
+     "excerpt_ar": "لأنه لا يملك الطلاق على أكثر من أربع فإذا أوقع الطلاق على الجميع أخرج الأربع المطلقات بالقرعة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The rationale for the mashhūr ruling: a convert with more than four wives who divorces all thrice has four drawn by lot as the chosen ones. A stated reason with an analogy, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Divorce falls only on a wife, and he cannot hold more than four, so lot picks the four who become the chosen ones and are divorced; the rest are free to remarry him.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p688",
+     "excerpt_ar": "أربعا بقرعة) فكن المختارات فيقع بهن الطلاق ; لأنه لا يملكه في أكثر من أربع",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "The same rationale in Sharḥ al-Muntahā on these facts. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Lot is used because singling out the four is what lot is for; the others are not divorced and he may marry them after the four's ʿidda.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p186",
+     "excerpt_ar": "(وإن طلق الجميع ثلاثا، أقرع بينهن، فأخرج بالقرعة أربعا منهن) ; لأن ذلك فائدة الإقراع",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Mubdiʿ's reason for lot here. It also reports «وقيل: لا قرعة، ويحرمن إلا بعد زوج» with no proof. A stated rationale, so qiyas. No proof is given for al-Qāḍī's or Taqī al-Dīn's views."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f019",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Aḥmad (Muhannā) allowed marriage on 'one of his slaves': the uncertainty is small and can be resolved by lot, unlike an unspecified slave, where the uncertainty is large.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p221",
+     "excerpt_ar": "ووجهه أن الجهالة ها هنا يسيرة، ويمكن التعيين بالقرعة، بخلاف ما إذا أصدقها عبدا مطلقا، فإن الجهالة تكثر، فلا يصح",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The reason given for the Muhannā narration, which ends with lot when the parties dispute. A stated rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Once the dower is valid she is owed one slave not specified, so lot is used to single it out, as when someone frees one of his slaves.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p198",
+     "excerpt_ar": "لأنه إذا صح أن يكون صداقا استحقت واحدا غير معين، فشرعت القرعة مميزة، كما لو أعتق أحد عبده",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Cited for the mashhūr («الأشهر») that she gets one by lot. An analogy to the unspecified manumission, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same analogy: she is owed one unspecified slave, so lot singles it out, as in freeing one of one's slaves.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p133",
+     "excerpt_ar": "لأنه إذا صح أن يكون صداقها استحقت واحدا غير معين فوجبت القرعة لتميزه كما لو أعتق أحد عبيده",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The same rationale in Kashshāf. qiyas. No source gives a proof for the middle slave (position 1) beyond Aḥmad's naṣṣ («تعطى من أوسطهم»), or for Ibn ʿAqīl's wujūh."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f023",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "Using lot to find which wife is divorced is reported from ʿAlī and Ibn ʿAbbās, with no ṣaḥābī known to disagree.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p496",
+     "excerpt_ar": "ولنا أن ما ذكرناه مروي عن علي وابن عباس - رضي الله عنهما - ولا مخالف لهما في الصحابة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The first proof for lot when he says «إحداكن طالق» and intends none. Two ṣaḥāba with no reported dissent among the ṣaḥāba, so fatwaSahabi. Kashshāf (v05 p332) and Sharḥ al-Muntahā cite the same."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Divorce removes ownership and is built on predominance and spreading, like manumission, so lot applies to it as it does to manumission. The aṣl is fixed by the Prophet's lot among the six slaves.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p496",
+     "excerpt_ar": "ولأنه إزالة ملك بني على التغليب والسراية فتدخله القرعة كالعتق وقد ثبت الأصل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "An analogy from manumission (aṣl: the six slaves) to divorce (farʿ), with a shared ʿilla. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The right belongs to one person not specified, so it must be fixed by lot, as with freeing slaves in final illness beyond the third, travelling with one wife, the first turn, and partners dividing.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p496",
+     "excerpt_ar": "ولأن الحق لواحد غير معين فوجب تعيينه بالقرعة كالحرية في العبيد إذا أعتقهم في مرضه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "A further analogy for lot on these facts. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Abū Ḥanīfa, al-Shāfiʿī and others: he could have pronounced and named the divorce from the start, so having pronounced it without naming, he may still name; it is using what he already owned.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p496",
+     "excerpt_ar": "له أن يختار أيتهن شاء فيوقع عليها الطلاق؛ لأنه يملك إيقاعه ابتداء وتعيينه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for non-Ḥanbalī holders of the ruling of the second riwāya (his own designation). A stated reason, so qiyas. Ibn Qudāma rejects it. No proof is given for Aḥmad's tawaqquf (position 2)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f024",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "ʿAlī, about a man who divorced one of four wives and died with the witnesses not knowing which: cast lots among the four, set one aside, and divide the inheritance among them.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p498",
+     "excerpt_ar": "قال علي - رضي الله عنه -: أقرع بين الأربع وأنذر منهن واحدة وأقسم بينهن الميراث",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The aṣḥāb cite it for the madhhab that the forgotten divorcee is identified by lot («واحتجوا بما ذكرنا من حديث علي»). Ibn Qudāma replies that it concerns inheritance, not the lawfulness of the others. No ṣaḥābī disagreement is reported, so fatwaSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "She is a divorcee not known by herself, so it is like 'one of you is divorced'; and divorce removes one of two ownerships built on predominance and spreading, like manumission.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p499",
+     "excerpt_ar": "واحتجوا بما ذكرنا من حديث علي ولأنها مطلقة لم تعلم بعينها فأشبه ما لو قال: إحداكن طالق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The aṣḥāb's analogy for lot on these facts (a specific wife divorced, then forgotten). qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "His wife has become confused with another, so lot cannot make either lawful, as when she is confused with a stranger. Lot does not lift the prohibition from the divorced one or the divorce from her, which is why it returns if he remembers.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p498",
+     "excerpt_ar": "لأنه اشتبهت عليه زوجته فلم تحل له إحداهما بالقرعة كما لو اشتبهت بأجنبية لم يكن له عليها عقد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's case for the riwāya of suspension (no lot for lawfulness). An analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Here the divorce fell on a specific woman; lot neither removes it from her nor places it on another, unlike an unspecified divorce where lot does the specifying. So, as with a sister confused with strangers or carrion with slaughtered meat, lot has no place.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p499",
+     "excerpt_ar": "وفي مسألتنا؛ الطلاق واقع في معينة لا محالة، والقرعة لا ترفعه عنها، ولا توقعه على غيرها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's distinction of the aṣḥāb's aṣl. A rationale with analogies, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f025",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Each of the two men is certain of his own marriage and the falling of his divorce is doubtful, so the rules of marriage (maintenance, clothing, housing) stay in force for each.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p494",
+     "excerpt_ar": "لأن كل واحد منهما يقين نكاحه باق ووقوع طلاقه مشكوك فيه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the view that neither wife is divorced when two men swore opposite raven oaths. Holding to the certain marriage, so istishab."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "Abū Ḥanīfa's followers and al-Shāfiʿī: neither is forbidden his wife, since each is judged to remain married and no divorce has been judged against him.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p494",
+     "excerpt_ar": "لا يحرم على واحد منهما وطء امرأته؛ لأنه محكوم ببقاء نكاحه ولم يحكم بوقوع الطلاق عليه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for non-Ḥanbalī holders who let each go on as before, the fuller form of position 0. Ibn Qudāma rejects this part. The original state, so istishab."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "al-Qāḍī: one of the two has certainly broken his oath and his wife is forbidden to him; since this cannot be told apart, intercourse is forbidden to both, as when one of two vessels is impure, whether they belong to one man or two.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p494",
+     "excerpt_ar": "فأما الوطء فذكر القاضي أنه يحرم عليهما؛ لأن أحدهما حانث بيقين، وامرأته محرمة عليه وقد أشكل فحرم عليهما جميعا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the naṣṣ that both abstain until certain. An analogy to the two vessels and to breaking an oath over one of two wives, so qiyas. No source gives a proof for lot (position 1)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f029",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "If both statements come together there is no rajʿa: her report that the ʿidda has ended falls after it, so his claim comes after the ʿidda and is not accepted.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p529",
+     "excerpt_ar": "وإن وقع القول منهما جميعا، فلا رجعة؛ لأن خبرها بانقضاء عدتها يكون بعدها، فيكون قوله بعد العدة، فلا يقبل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the wife's word when they claim at the same moment. A stated rationale, so qiyas. Ibn Qudāma calls this correct against Abū al-Khaṭṭāb's lot."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "When they claim together, the two statements cancel out because they are equal, and the original state is that there was no rajʿa.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p348",
+     "excerpt_ar": "(وإن تداعيا) ذلك (معا قدم قولها) لتساقط قولهما مع التساوي والأصل عدم الرجعة",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The rationale on exactly these facts rests on the original absence of rajʿa, so istishab. No source gives a proof for lot (position 1), which Ibn Qudāma reports only as Abū al-Khaṭṭāb's iḥtimāl."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f031",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Abū Bakr's view: the two claims contradict each other and neither has a proof, so neither is established, as when two claim that he is their slave; marks on the body do not decide it.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p130",
+     "excerpt_ar": "ولنا أن دعواهما تعارضتا، ولا حجة لواحد منهما، فلم تثبت، كما لو ادعيا رقه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the view that the lineage is lost when there is no qāfa or it is unclear. An analogy, so qiyas."
+    },
+    {
+     "position": 3,
+     "tier": "mursalDaif",
+     "dalil": "ʿUmar's saying to the boy: «وال أيهما شئت» (follow whichever of them you wish), cited for letting the child choose. Ibn Qudāma says it is not established.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p130",
+     "excerpt_ar": "وقال في القديم: حتى يميز؛ لقول عمر: وال أيهما شئت",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the choosing view, position 3 (Ibn Ḥāmid: chosen at puberty; al-Shāfiʿī's old view: at discernment). The source says «فلم يثبت», so mursalDaif."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "al-Majd's view: as two claimants of a thing in neither's hand share it when they are equal in proof or both lack it, the lineage is attached to both, since it cannot be attached by lot.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p359",
+     "excerpt_ar": "فإن العين تقسم بينهما وكذا هاهنا يلحق النسب بهما إذ لا يمكن إلحاقه بالقرعة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's report of al-Majd's analogy from the shared claim to a thing. qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "mursalDaif",
+     "dalil": "The ḥadīth of Zayd b. Arqam: ʿAlī cast lots among three men who had intercourse with one woman over the child, and the Prophet approved. Aḥmad said he did not know it to be sound and weakened it; Ibn Rajab says it is disputed.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p358",
+     "excerpt_ar": "في حديث علي في ثلاثة وقعوا على امرأة فأقرع بينهم قال: لا أعرفه صحيحا وأوهنه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The text behind the riwāya of lot in lineage (al-Mughnī, al-farāʾiḍ). Aḥmad himself weakens it, so mursalDaif."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Aḥmad (Ṣāliḥ): the Prophet cast lots in five places, among them over a child; «I hold to lot because the Prophet cast lots», and he cast lots among his wives, and lot is in the Qurʾān in two places.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p359",
+     "excerpt_ar": "وأذهب إلى القرعة ; لأن النبي صلى الله عليه وسلم أقرع. قلت إن بعض الناس لا يجيزون القرعة إلا في الأموال",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab says the lot riwāya is taken from this answer. Apart from the weak child ḥadīth, it carries over the Prophet's lot in other matters (his wives), so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f032",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "If the boy chooses neither parent or both, one is put first by lot, since neither has any advantage over the other and both cannot have custody together.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p240",
+     "excerpt_ar": "قدم أحدهما بالقرعة؛ لأنه لا مزية لأحدهما على صاحبه، ولا يمكن اجتماعهما على حضانته",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The rationale for the mashhūr on these facts. qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Lot is used because neither parent has an advantage over the other; if he later chooses the other, the child goes back to that one.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p501",
+     "excerpt_ar": "(أقرع) بينهما لأنه لا مزية لأحدهما على الآخر (ثم إن اختار غير من قدم",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The same rationale in Kashshāf. qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "An iḥtimāl in al-Targhīb: the mother has the better right, as when the boy reaches puberty without being of sound judgement.",
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v09:p345",
+     "excerpt_ar": "وفي الترغيب احتمال أن أمه أحق، كبلوغه غير رشيد",
+     "who": "Ibn Mufliḥ, al-Furūʿ",
+     "note": "Cited for the wajh that the child goes to the mother. An analogy to the boy who comes of age without sound judgement, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f033",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "When the rights are equal and nothing gives preference, we turn to lot, as when guardians dispute who will marry off their ward; the one chosen by lot is then appointed agent by the others.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v09:p400",
+     "excerpt_ar": "اقرع بينهم لأن الحقوق إذا تساوت وعدم الترجيح صرنا إلى القرعة كما لو تشاحوا في تزويج موليتهم",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Cited for the mashhūr that lot decides which of the qawad holders carries it out. An analogy, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Lot because they are equal in the right and nothing else gives preference.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p275",
+     "excerpt_ar": "قدم واحد) منهما (بقرعة) لتساويهما في الحق وعدم المرجح غيرها",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "The same rationale in Sharḥ al-Muntahā. qiyas. No source gives a proof for Ibn Abī Mūsā's view that the imam designates (position 1); Kashshāf (v05 p538) only reports it."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f034",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Each of them may be telling the truth, so the permitted is confused with the forbidden where there is no necessity, and prohibition prevails, as when a muḥṣan adulterer is confused with protected persons; and enslaving one who may not be enslaved is forbidden.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v03:p354",
+     "excerpt_ar": "واشتبه المباح بالمحرم فيما لا ضرورة إليه، فوجب تغليب التحريم، كما لو اشتبه زان محصن بمعصومين",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Cited for the manṣūṣ that none may be killed or enslaved when the holder of the safe-conduct cannot be identified. An analogy with a stated ʿilla, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "istishab",
+     "dalil": "The people of the fortress had never been slaves, so enslaving all but one would begin enslavement while it is doubtful whether that is permitted; unlike a case where one of those confused was already a slave and slavery is only continued.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p241",
+     "excerpt_ar": "لأن أهل الحصن لم يسبق لهم رق فإرقاقهم إلا واحد يؤدي إلى ابتداء الإرقاق مع الشك في إباحته بخلاف ما إذا كان أحد المشتبهين رقيقا",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's reason for preferring the manṣūṣ. It holds to their original free state against starting enslavement on doubt, so istishab."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Abū Bakr: the right belongs to one of them not specified; the holder of the safe-conduct is drawn out by lot and the rest enslaved, as when one of one's slaves is freed and then confused (killing is different, being averted by doubt).",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v03:p354",
+     "excerpt_ar": "ويخرج صاحب الأمان بها. (ويسترق الباقون) كما لو أعتق عبدا من عبيده، ثم أشكل، بخلاف القتل، فإنه يدرأ بها لشبهة",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Cited for Abū Bakr's and al-Khiraqī's lot. An analogy, so qiyas. al-Kāfī (v04 p165) gives the same analogy («لأنه اشتبه الحر بالرقيق»)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f035",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Abū Bakr (al-Tanbīh), first qawl: the money is shared between them because they are equal in it through their claims.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p361",
+     "excerpt_ar": "أحدهما: أن المال بينهما جميعا لأنهما فيه سواء بدعواهما له",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Cited for dividing the reward between the two who each claim to have opened the fortress. A stated reason, so qiyas. No proof is given for the second qawl (lot)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f036",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "If he used a word with his wife and does not know whether it was divorce or ẓihār, nothing is binding, like semen found in a garment shared by two where it is not known whose it is; al-Furūʿ says the same is to be expected for one who swore an oath and then forgot it.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p341",
+     "excerpt_ar": "لم يلزمه شيء) كمني في ثوب لا يدري من أيهما هو؟ قال في الفروع: ويتوجه مثله من حلف يمينا ثم جهلها",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given for the sister case and carried over to the forgotten oath; Aḥmad's naṣṣ in this case is that nothing binds him. An analogy, so qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "al-Mardāwī: «the soul inclines to lot», because his obligation is certainly engaged, by either divorce or ẓihār.",
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v09:p149",
+     "excerpt_ar": "قلت: والنفس تميل إلى القرعة، لأن ذمته قد اشتغلت قطعا إما بطلاق أو ظهار",
+     "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ (in al-Furūʿ)",
+     "note": "Stated just after quoting al-Qāḍī's qiyās to cast lots among the oath types, though worded for the divorce-or-ẓihār case to which al-Furūʿ extends the forgotten oath. A stated rationale, so qiyas. No proof is given for tawaqquf (position 1) or for Ibn ʿAqīl's expiation of every oath (position 3)."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f040",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "If allegiance was given to both at once, or the earlier is unknown, the contract is void for both, because acting on either one's allegiance would be preference without anything to prefer it.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p160",
+     "excerpt_ar": "فالعقد باطل فيهما) لأن العمل ببيعة أحدهما إذن ترجيح بغير مرجح",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The rationale for the ruling Kashshāf and al-Iqnāʿ give (both void). A stated reason, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "al-Qāḍī: the case is derived from the two guardians who marry a woman with the earlier unknown, where there are two riwāyas; the second is to use lot.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p362",
+     "excerpt_ar": "والثانية: استعمال القرعة بناء على ما إذا زوج الوليان وجهل السابق",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The takhrīj itself: an analogy from the two-marriages case (aṣl) to the imamate (farʿ), so qiyas. Ibn Rajab adds that the better-known first riwāya there is annulment."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

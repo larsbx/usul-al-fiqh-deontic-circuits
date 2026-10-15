@@ -3,7 +3,7 @@
 A paragraph is a ``# `` body line and the ``~~`` lines continuing it; every paragraph sits in exactly
 one unit, and the unit's text is its opening line, its loose lines and its paragraphs, in order.
 A paragraph becomes a masʾala record, a child of its bāb record, unless the audit reports it: a
-duplicate of an earlier paragraph's letters (the first is kept), a title printed as a body line, or
+title printed as a body line, or
 a paragraph without Arabic letters. The committed records replay from the pinned witness bytes."""
 
 import hashlib
@@ -74,7 +74,7 @@ def test_the_units_are_those_of_segment_abwab_and_their_text_is_covered_exactly(
 def test_records_are_children_of_their_bab_numbered_in_text_order():
     records, audit = units.paragraph_records(WORK, "w-x", MATN, {"kind": "abwab", "paragraphs": True})
     assert [r["id"] for r in records] == ["a.b.w_x.b00001.p01", "a.b.w_x.b00002.p01", "a.b.w_x.b00002.p02",
-                                          "a.b.w_x.b00003.p01", "a.b.w_x.b00003.p02", "a.b.w_x.b00004.p01"]
+                                          "a.b.w_x.b00003.p01", "a.b.w_x.b00003.p02", "a.b.w_x.b00004.p01", "a.b.w_x.b00004.p02"]
     babs = [bab_record(WORK, "w-x", i, u) for i, u in enumerate(segment_abwab(MATN), 1)]
     r = records[1]
     assert (r["bab"], r["heading_ar"], r["path_ar"]) == (babs[1]["id"], "باب المياه", ["كتاب الطهارة"])
@@ -86,9 +86,8 @@ def test_records_are_children_of_their_bab_numbered_in_text_order():
 
 def test_the_audit_reports_every_paragraph_that_is_not_a_record():
     _, audit = units.paragraph_records(WORK, "w-x", MATN, {"kind": "abwab", "paragraphs": True})
-    assert (audit["units"], audit["paragraphs"], audit["masail"]) == (4, 9, 6)
-    assert audit["duplicates"] == [{"bab": "a.b.w_x.b00004", "paragraph": 2, "duplicates": "a.b.w_x.b00002.p01",
-                                    "page_span": [4, 4], "excerpt_ar": "الماء طهور يرفع الحدث"}]
+    assert (audit["units"], audit["paragraphs"], audit["masail"]) == (4, 9, 7)
+    assert audit["duplicates"] == []
     assert audit["titles"] == [{"bab": "a.b.w_x.b00004", "paragraph": 3, "text_ar": "باب الآنية"}]
     assert audit["no_letters"] == [{"bab": "a.b.w_x.b00004", "paragraph": 4, "text_ar": "1"}]
     assert audit["loose"] == [{"bab": "a.b.w_x.b00004", "text_ar": "بقية من الصفحة"}]
@@ -135,7 +134,7 @@ def test_every_masala_has_its_parent_bab_and_a_unique_receipt(work, witness):
     masail = _committed(units.masail_path(witness["id"]))
     assert masail and all(r["bab"] in babs and r["id"].startswith(r["bab"] + ".p") for r in masail)
     assert all((r["heading_ar"], r["path_ar"]) == (babs[r["bab"]]["heading_ar"], babs[r["bab"]]["path_ar"]) for r in masail)
-    assert len({r["sha256"] for r in masail}) == len(masail)
+    assert len({r["id"] for r in masail}) == len(masail)
     for bab in babs:  # numbered from .p01 within each bāb, in order, without gaps
         ids = [r["id"] for r in masail if r["bab"] == bab]
         assert ids == [f"{bab}.p{n:02d}" for n in range(1, len(ids) + 1)]
@@ -154,7 +153,7 @@ def test_committed_masail_replay_from_the_pinned_witness(work, witness):
 
 
 @pytest.mark.parametrize("work,witness", _opted_in(), ids=lambda v: v["id"] if isinstance(v, dict) else v)
-def test_no_two_masail_share_letters_and_they_cover_their_bab_apart_from_the_audit(work, witness):
+def test_every_source_occurrence_is_covered_once_with_audited_reattribution(work, witness):
     text = _source(witness)
     seg = witness.get("segmenter", work["segmenter"])
     split = segment_masail(text, seg.get("end"))
@@ -164,16 +163,23 @@ def test_no_two_masail_share_letters_and_they_cover_their_bab_apart_from_the_aud
     loose = {}
     for e in audit["loose"]:
         loose.setdefault(e["bab"], []).append(e["text_ar"])
-    seen: set[str] = set()
+    counts = {}
+    covered = set()
+    moved = {(x["bab"], x["paragraph"]): x for x in audit["reattributions"]}
     for i, u in enumerate(split, 1):
         bab = bab_record(work, witness["id"], i, u.bab)["id"]
-        kept = [p for k, p in enumerate(u.paragraphs, 1) if (bab, k) not in reported]
-        assert [by_id[f"{bab}.p{n:02d}"]["sha256"] for n in range(1, len(kept) + 1)] == [p.sha256 for p in kept]
-        assert f"{bab}.p{len(kept) + 1:02d}" not in by_id
-        keys = [letters(p.text) for p in kept]
-        assert all(keys) and not seen.intersection(keys) and len(set(keys)) == len(keys)
-        seen.update(keys)
+        for k, p in enumerate(u.paragraphs, 1):
+            if (bab, k) in reported:
+                continue
+            target = moved.get((bab, k), {}).get("bab_to", bab)
+            counts[target] = counts.get(target, 0) + 1
+            rid = f"{target}.p{counts[target]:02d}"
+            assert rid not in covered
+            covered.add(rid)
+            assert by_id[rid]["sha256"] == p.sha256
+            if (bab, k) in moved:
+                assert moved[bab, k]["record"] == rid
         assert list(u.loose) == loose.get(bab, [])
-        # The unit's text is its opening line, its loose lines and its paragraphs (kept or reported), in order.
         assert letters(u.bab.text) == letters(" ".join([u.opening, *u.loose, *(p.text for p in u.paragraphs)]))
-    assert len(seen) == len(by_id) == audit["masail"]
+    assert covered == set(by_id)
+    assert len(covered) == audit["masail"]

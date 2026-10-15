@@ -45,9 +45,6 @@ inventory `corpus/worklists/units.json` gives each opted-in witness a second row
 A paragraph is reported in the audit, with its bāb id and its position in the bāb, instead of
 becoming a record when it is one of these:
 
-- **A duplicate**: its Arabic letters (`arabic.letters`) equal those of an earlier paragraph in the
-  witness. The first occurrence is kept, and the audit names the id of the record it duplicates. No
-  two masʾala records of a witness share letters.
 - **A title**: a body line beginning with «كتاب» or «باب», which is a heading printed as a body line
   («# كتاب الصلاة» after «### | كتاب الصلاة»). In both witnesses every such line is a short title.
 - **No letters**: a paragraph with no Arabic letters, such as the editor's «...», a stray footnote
@@ -59,45 +56,43 @@ paragraph ends without terminal punctuation. Shamela starts a new `# ` line at a
 a masʾala may be the second half of one sentence («… ويعم بدنه غسلا ثلاثا PageV01P032» / «ويدلكه
 ويتيامن …»). The list is a review hint only. Paragraphs are not joined on that guess.
 
+## Occurrence identity and corrected attribution
+
+Equal Arabic letters do not establish duplication. Every occurrence is retained, including two
+occurrences within one bāb or on the same page. The record id identifies the occurrence; `sha256`
+identifies its text and may repeat. The audit's `duplicates` list is retained for compatibility
+but is empty: no source occurrence is discarded on textual equality.
+
+A body title matching the immediately following unit's heading on the same page assigns subsequent
+paragraphs to that unit. The existing bāb records remain unchanged. Each moved occurrence is recorded
+in `reattributions` with its original bāb and paragraph index, destination record, page span, and
+reason. A similar title on another page does not authorize reassignment.
+
+This restores «وهي نوعان» in ʿUmda's `b00199`, independently of `b00190`. It also retains both printed
+sale passages in Zād under `b00089`; the copy formerly called `b00088.p04` becomes `b00089.p01`, and
+the occurrence beneath the explicit heading becomes `b00089.p02`. Two repeated paragraphs in
+ʿUmda's `b00041` are retained as independent source occurrences. None of the pilot's annotated
+paragraph ids changes.
+
 ## Counts
 
 | | ʿUmda | Zād |
 |---|---:|---:|
 | units (bāb records) | 207 | 286 |
 | paragraphs | 891 | 1,220 |
-| masʾala records (kept) | 831 | 1,166 |
-| duplicates dropped | 3 | 1 |
+| masʾala records | 834 | 1,167 |
+| duplicates dropped | 0 | 0 |
 | titles | 25 | 23 |
 | without letters | 32 | 30 |
 | loose lines | 1 | 0 |
-| page-break candidates | 39 | 101 |
+| reassigned occurrences | 0 | 1 |
 
-The unit inventory grows by these 1,997 records, from 48,510 to 50,507 obligations.
-
-Both witnesses repeat page markers: ʿUmda has 284 markers for 129 pages, and Zād has 327 for 225.
-Shamela closes a page again at every chapter boundary on it. This repeats markers, not text: few
-paragraphs repeat.
-
-- **ʿUmda, «باب صيام التطوع».** The witness prints the start of p. 42 twice. The abwab segmenter
-  therefore emits two bāb records with this heading. `b00040` holds the bāb's first two paragraphs,
-  and `b00041` repeats them before continuing. The two repeats are dropped, so `b00041.p01` is
-  «ونهى رسول الله …».
-- **ʿUmda, «وهي نوعان:».** A short opener in `b00199` coincides letter for letter with `b00190.p01`.
-  It is a different masʾala, but it is dropped under the letters rule.
-- **Zād, «باب بيع الأصول والثمار».** The start of p. 109 is printed first at the end of `b00088`: a
-  body-line copy of the title, then the bāb's first paragraph. It is printed again under the
-  heading. The first occurrence (`b00088.p04`) is kept, so that paragraph sits under the preceding
-  unit (a faṣl). Its repeat, `b00089`'s first paragraph, is dropped.
-- **ʿUmda, `b00206`.** A `~~` continuation line begins with the verb «فصل» («وإن فصل بينهما
-  بسكوت …»), so `abwab` opens a spurious faṣl in the middle of a sentence of `b00205`. That line is
-  the unit's opening line, and the rest of the sentence is the witness's one loose line. The bāb
-  records are left as they are.
-
-No bāb record duplicates another's letters.
+These figures are regenerated from the locked witnesses in `corpus/audit.json`; the obligation
+inventory is generated in `corpus/worklists/units.json`.
 
 ## Replay
 
-`pipeline/tests/test_masail.py` replays both witnesses from the locked bytes. It checks that the
-masāʾil files and their audit entries are reproduced byte for byte, that every parent bāb exists,
-that no two masāʾil share letters, and that each bāb's text is covered by its masāʾil plus what the
-audit reports. Without the cached witness bytes, the replay tests skip with that reason.
+`pipeline/tests/test_masail.py` checks the two witnesses' records and audits byte for byte and
+accounts for every source occurrence exactly once, including the audited attribution change.
+`test_pr86_integrity.py` covers repeated text within and across bābs, the copied sale passage,
+and false disagreement obligations. Source replay still needs the pinned witness bytes.

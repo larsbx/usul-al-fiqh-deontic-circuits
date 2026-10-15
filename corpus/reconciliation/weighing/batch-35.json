@@ -1,0 +1,475 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b35: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f000",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: in transactions what counts is the actual state of affairs, not the actor's belief; once permission (or ownership) is the condition and it in fact existed, the disposal stands.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p157",
+     "excerpt_ar": "وإنما صح البيع فيهما؛ لأن الاعتبار في المعاملات بما في نفس الأمر، لا بما في ظن المكلف",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī gives this for both cases of al-Iqnāʿ: one who sells thinking he has no permission when he had in fact been made agent, the facts of this case. A stated rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Same rationale: an agent who sells without knowing of his agency has his sale executed, because contracts follow the actual state of affairs.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p462",
+     "excerpt_ar": "مثل أن وكله في بيع داره ولم يعلم الوكيل فباعها نفذ بيعه لأن الاعتبار في العقود بما في نفس الأمر",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The agent-unaware case, the form in which al-Inṣāf and al-Iqnāʿ carry this masʾala. A rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale and qiyās: idhn means informing, so a permission she does not know of is no permission; and as the Lawgiver's permissions and commands take effect only once known, so does a man's permission.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p387",
+     "excerpt_ar": "نص عليه؛ لأن الإذن هو الإعلام، مع أن إذن الشارع وأوامره ونواهيه لا يثبت حكمها إلا بعد العلم بها، وكذا إذن الآدمي",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Given for the manṣūṣ ruling that she is divorced when he permitted her without her knowing. A linguistic rationale plus analogy to the Lawgiver's address, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: she went out intending to defy him, so it is as if he had not permitted her; what counts is intent, not the actual state.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p387",
+     "excerpt_ar": "ولأنها قصدت بخروجها مخالفته وعصيانه، أشبه ما لو لم يأذن لها في الباطن؛ لأن العبرة بالقصد لا بحقيقة الحال",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Second reason for the same ruling (repeated in Kashshāf v05:p308). A rationale with analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Linguistic rationale: it is correctly said that he permitted her even though she did not know of it, so the condition \"without my permission\" was not met.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p387",
+     "excerpt_ar": "ويحتمل ألا تطلق) قدمه الحلواني؛ لأنه يقال: أذن لها، ولم يعلم به",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "The reason for the possibility (put first by al-Ḥalwānī) that she is not divorced. A linguistic rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f002",
+   "proofs": [],
+   "advantages": [],
+   "searched": "al-Mughnī (bayʿ al-khiyār and wakāla, incl. v05:p088-089 on the agent unaware of dismissal), al-Sharḥ al-Kabīr, al-Kāfī, al-Mubdiʿ, Kashshāf (v03:p157, v03:p462), Sharḥ al-Muntahā, al-Inṣāf and al-Furūʿ searched for the buyer acting in the option period after the seller's unknown permission (إذن البائع … لم يعلم / قبل العلم بالإذن): no source argues this farʿ. The ledger's reconciliation rests on the agency analogy only."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: liability remains, as when the usurper serves the owner his own usurped thorns as fuel and the owner burns them unknowing (the usurper is not freed); the owner's unknown permission does not lift it.",
+     "ref": "src:openiti-insaf-shamela21609/v06:p188",
+     "excerpt_ar": "قال في الفنون، في مسألة الطعام: يبقى الضمان. بدليل ما لو قدم له شوكه الذي غصبه منه فسجره وهو لا يعلم",
+     "who": "al-Mardāwī, al-Inṣāf (quoting Ibn ʿAqīl, al-Funūn)",
+     "note": "Ibn ʿAqīl (al-Funūn), cited in al-Inṣāf, on the food the owner permitted and the usurper ate unknowing, the very case; with al-Intiṣār and al-Qāḍī Yaʿqūb behind the same ruling. An analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: liability is not established by mere belief over what is not in fact liable, as one who has intercourse with a woman he takes for a stranger and she proves his wife owes no mahr (and as one who eats thinking the sun not set when it had owes no qaḍāʾ).",
+     "ref": "src:openiti-insaf-shamela21609/v06:p189",
+     "excerpt_ar": "والصواب: الجزم بعدم الضمان. لأن الضمان لا يثبت بمجرد الاعتقاد فيما ليس بمضمون كمن وطئ امرأة يظنها أجنبية فتبينت زوجته",
+     "who": "al-Mardāwī, al-Inṣāf (quoting Ibn Rajab)",
+     "note": "Ibn Rajab (Qāʿida 64) quoted in al-Inṣāf, which calls it «الصواب». Analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: he believed the disposal void (taking the thing to be his father's), so it is void.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p262",
+     "excerpt_ar": "فصح كما لو علم. ويحتمل أن لا يصح؛ لأنه اعتقده باطلا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's possibility of invalidity for one who sells or pledges his father's slave and the father had already died. A rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he disposed believing his act invalid, so it is invalid, like one who prays believing he lacks wuḍūʾ and it turns out he had it.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p072",
+     "excerpt_ar": "والثاني، لا يصح؛ لأنه تصرف تصرفا يعتقد فساده، ففسد، كما لو صلى يعتقد أنه محدث، فبان متطهرا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī applies the two wujūh explicitly to «لو تصرف في عين يعتقد أنها لأبيه، فبان أنه قد مات» right after. Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the disposal came from one competent to make it and fell on his own property, so it is valid as if he had known.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p262",
+     "excerpt_ar": "ونحو ذلك، صح تصرفه؛ لأنه تصرف صدر من أهله، وصادف ملكه، فصح كما لو علم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for one who sells his father's slave and the father had died, the slave his by inheritance: these facts. A rationale with analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: transactions follow the actual state, not the actor's belief; ownership by inheritance held, so the sale stands.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p157",
+     "excerpt_ar": "وإنما صح البيع فيهما؛ لأن الاعتبار في المعاملات بما في نفس الأمر، لا بما في ظن المكلف",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Given for al-Iqnāʿ's «كموت أبيه وهو وارثه», the facts of this case. A rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he did not mean divorce of his wife by the words, so nothing falls, like a slip of the tongue into words he did not intend.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p400",
+     "excerpt_ar": "لا يقع بهما طلاق ولا حرية؛ لأنه لم يرد بهما ذلك، فلم يقع بهما شيء، كسبق اللسان إلى ما لم يرده",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū Bakr's ruling and reason, in al-Mughnī's faṣl on one who meets his wife taking her for a stranger and says «أنت طالق» or «تنحي يا مطلقة». Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: he addressed her with the explicit word of divorce, so she is divorced as if he had known her to be his wife; his belief that she was a stranger has no effect.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p145",
+     "excerpt_ar": "فتطلق، لأنه واجهها بصريح الطلاق كما لو علمها زوجته ولا أثر لظنها أجنبية",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā's reason for al-Muntahā's ruling of divorce on these facts. A rationale with analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale from usage: people do not customarily address strangers as «divorced woman», so the word keeps its effect and the wife is divorced.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p400",
+     "excerpt_ar": "وتطلق الزوجة؛ لعدم العادة بالمخاطبة بقوله: يا مطلقة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's possibility, distinguishing the wife from the slave-woman; it supports divorce on these facts. A rationale from custom, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale from usage: people customarily address an unknown woman as «free woman», so the word was not meant as manumission.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p400",
+     "excerpt_ar": "ويحتمل أن لا تعتق الأمة؛ لأن العادة من الناس مخاطبة من لا يعرفها بقوله: يا حرة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's possibility of distinguishing the case (the one Ibn Rajab mentions), for not freed. A rationale from custom, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he did not intend manumission by the words, so nothing falls, like a slip of the tongue (Abū Bakr).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p400",
+     "excerpt_ar": "فقال أبو بكر، فيمن لقي امرأته، فقال: تنحي يا مطلقة، أو يا حرة. وهو لا يعرفها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The sentence continues «لا يقع بهما طلاق ولا حرية؛ لأنه لم يرد بهما ذلك ... كسبق اللسان», given for «تنحي يا حرة» to his own slave. Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās on ṭalāq: the explicit word of manumission takes effect without intention, even in jest, as divorce does; Aḥmad ruled the slave freed in this very case («قد عتقت عليه»).",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p511",
+     "excerpt_ar": "(ولو) كان (هازلا) كالطلاق (ولو تجرد) ما سبق من لفظ الصريح (عن النية) قال أحمد في رجل لقي امرأة في الطريق",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf gives the explicit-word principle with Aḥmad's naṣṣ on «تنحي يا حرة» to his own slave. The proof is the analogy to ṭalāq, so qiyas; the naṣṣ is the Imam's, not a sharʿī proof."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: he released him from what he did not believe was owed, so it was not in reality a release.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p049",
+     "excerpt_ar": "والثاني، لا تصح؛ لأنه أبرأه مما لا يعتقد أنه عليه، فلم يكن ذلك إبراء في الحقيقة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for invalidity of the release on these facts. A rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the release fell on a debt he owned and dropped it, as if he had known of it.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p049",
+     "excerpt_ar": "ففي صحة البراءة وجهان؛ أحدهما، صحتها؛ لأنها صادفت ملكه، فأسقطته، كما لو علمها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for validity on these facts; al-Mughnī roots both wujūh in selling an inheritance thought still the deceased's. Analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: she married in a period in which the Law barred her from marrying, so it is void, like a woman in ʿidda, or one in doubt of pregnancy who marries before the doubt clears.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p138",
+     "excerpt_ar": "ولنا أنها تزوجت في مدة منعها الشرع من النكاح فيها، فلم يصح، كما لو تزوجت المعتدة في عدتها، أو المرتابة قبل زوال ريبتها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's own argument («ولنا») for invalidity even when it emerges the husband had died or divorced her long enough before. Analogy, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: she believed the marriage forbidden and void.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p137",
+     "excerpt_ar": "والثاني، لا يصح؛ لأنها معتقدة تحريم نكاحها وبطلانه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Qāḍī's second wajh, built on the sale of an inheritance thought still the deceased's. A rationale, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: in fact she was neither married nor in ʿidda, so her marriage is valid as if she had known.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p137",
+     "excerpt_ar": "أحدهما، هو صحيح؛ لأنها ليست في نكاح ولا عدة، فصح تزويجها، كما لو علمت ذلك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Qāḍī's first wajh on these facts. Analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: he was deceived by the commander, so the manumission does not take effect; unlike one not deceived, who has no excuse.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p118",
+     "excerpt_ar": "ويحتمل أن لا ينفذ لتغريره بخلاف ما إذا لم يغرره أحد فإنه غير معذور فينفذ عتقه لمصادفته ملكه",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The second possibility (al-Talkhīṣ as reported by Ibn Rajab) for the man ordered to free a slave he thinks the commander's. A rationale, so qiyas. No other source treats the case."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās (takhrīj): like one who frees a slave in the dark and it proves his own, the manumission takes effect; here he takes the value back from the commander for deceiving him.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p118",
+     "excerpt_ar": "أعتق عبدا في ظلمة ثم تبين أنه عبده لكن يرجع هنا على الآمر بالقيمة لتغريره له",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Talkhīṣ's first possibility, «يحتمل تخريجه على من أعتق عبدا في ظلمة», as Ibn Rajab reports it. An analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he believed the condition of validity (ability to take possession) absent, like one who sells a slave he thinks free or another's and it proves his own.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p361",
+     "excerpt_ar": "عدم الشرط فأشبه ما لو باع عبدا يظن أنه حر، أو أنه عبد غيره، فتبين أنه عبده",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's possibility of invalidity for one who buys what he thinks he cannot take possession of, likened to the runaway, and it proves obtainable (Ibn Rajab's source for the third view). Analogy, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ḥadīth of Abū Saʿīd (Aḥmad): the Prophet forbade buying a slave while he is a runaway. al-Buhūtī cites it for invalidity even for a buyer able to recover him.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p162",
+     "excerpt_ar": "لقادر على تحصيله) لما روى أحمد عن أبي سعيد «أن رسول الله - صلى الله عليه وسلم - نهى عن شراء العبد وهو آبق»",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The muʿtamad voids the runaway's sale outright, so on these facts (he could obtain it) it is still void. A marfūʿ āḥād report, no grade given: zanni. It bears on the ruling (invalid) rather than on the buyer's mistaken belief."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the sale fell on something that could in fact be taken possession of, so it is valid, as if both had known.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p360",
+     "excerpt_ar": "فإن اشتراه وهو يظن أنه عاجز عن قبضه، فتبين أن قبضه ممكن، صح البيع؛ لأن البيع تناول ما يمكن قبضه، فصح، كما لو علما ذلك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's first view for the buyer who thinks possession impossible and it proves possible. Analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: one cannot truly choose what he does not understand, so it is like uttering a word of unbelief without knowing its meaning, which has no effect.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v08:p284",
+     "excerpt_ar": "وإن نوى موجبه فعلى وجهين (أحدهما) لا يقع لأنه لا يتحقق اختياره لما لا يعلمه فأشبه ما لو نطق بكلمة الكفر",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Given for no divorce when he says a divorce word he does not understand while intending its effect among its speakers, the facts here. Analogy, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same analogy to uttering unbelief without understanding.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p113",
+     "excerpt_ar": "فإن نوى موجبه لم يقع؛ لأنه لم يتحقق اختياره لما لا يعلمه، فأشبه ما لو نطق بكلمة الكفر من لا يعرف معناها",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī on the non-Arab who says «أنت طالق» not knowing its meaning, and the Arab who says it in Persian. Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he uttered the divorce word intending what it entails, so it falls, as if he had known its meaning.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v08:p284",
+     "excerpt_ar": "(والثاني) يقع لأنه أتى بالطلاق ناويا مقتضاه فوقع كما لو علمه",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Given for the other wajh on these facts. Analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale of hardship: avoiding all the women of a whole city is too burdensome, so he may marry from them without investigating.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p045",
+     "excerpt_ar": "وأما إذا اشتبهت في نساء مصر، فإنه يشق اجتنابهن جميعا، ولذلك يجوز له النكاح من غير تحر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for exactly this ruling (marriage without taḥarrī when a sister is confused among a city's women), in distinguishing it from the confused vessels. A stated rationale (mashaqqa), so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Same rationale of hardship as al-Mughnī.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p051",
+     "excerpt_ar": "وأما إذا اشتبهت أخته في نساء مصر فإنه يشق اجتنابهن جميعا ولذلك يجوز له النكاح من غير تحر بخلاف هذا",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr repeats the reason for marrying without investigation. A rationale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale of hardship: avoiding all the women of a large town is a burden, hence marriage without investigation.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p043",
+     "excerpt_ar": "أشبه ما لو اشتبهت عليه أخته في نساء بلد كبير، لأنه يشق عليه اجتناب الكل، ولذلك يجوز له النكاح من غير تحر",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ states the ruling and its reason while reporting the view allowing taḥarrī over vessels. A rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale and analogy: he did not mean the man by his greeting, so the man is like one he excepted from the group; one who greets a group excepting the man does not break his oath.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p617",
+     "excerpt_ar": "فإن لم يعلم أن المحلوف عليه فيهم، ففيه روايتان؛ إحداهما، لا يحنث لأنه لم يرده، فأشبه ما لو استثناه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for no ḥinth on exactly these facts: he greets a group not knowing the man is among them. A stated reason with an analogy to the case of exception, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: he did not intend the man by his greeting or speech, so the man stands as one excepted from the group.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p317",
+     "excerpt_ar": "هو فيهم ولم يعلم لم يحنث لأنه لم يقصده بسلامه ولا كلامه، فهو بمنزلة المستثنى منهم",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The madhhab text (al-Iqnāʿ) with al-Buhūtī's reason for no ḥinth when he greets a group the man is in without knowing. A rationale with an analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale and analogy: he meant the whole group by his greeting and the man is one of them; the one unaware is like the one who forgets, who breaks his oath (in ṭalāq and ʿitq).",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p617",
+     "excerpt_ar": "والثانية، يحنث؛ لأنه قد أرادهم بسلامه، وهو منهم، وهذا بمنزلة الناسي",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The reason Ibn Qudāma gives for the riwāya of ḥinth on these facts. A stated reason plus analogy to the forgetful, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: by greeting them he spoke to all of them, and the man is among them, so he has spoken to him.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p460",
+     "excerpt_ar": "وإن لم يعلم أنه فيهم، ففيه روايتان؛ إحداهما: يحنث؛ لأنه كلمهم جميعهم وهو فيهم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same masʾala in the chapter on the ʿīlāʾ/oath of not speaking; al-Mughnī there suggests the ḥinth applies to oaths by ṭalāq and ʿitāq, where ignorance does not excuse. A rationale, so qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the turn-taking is an exchange of his share of earnings on the master's day for the master's share on his own day; an exchange does not reach what is unknown and not expected to occur, so rare earnings stay shared.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p306",
+     "excerpt_ar": "لأن المهايأة معاوضة، فكأنه تعاوض عن نصيبه من كسبه في يوم سيده بنصيب سيده في يومه، فلا تتناول المعاوضة المجهول",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for the wajh that rare earnings (lost property, gift, bequest) do not enter the muhāyaʾa and are divided between the part-free slave and his master. A rationale from the nature of exchange, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on sale: the turn-taking is like a sale, which covers only what is ordinarily within reach; the rare is not, so it stays outside and is shared.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p250",
+     "excerpt_ar": "والثاني: لا يدخل؛ لأن المهايأة، كالبيع، فلا يدخل فيها، إلا ما يقدر عليه في العادة، والنادر لا يقدر عليه عادة",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī on the turn-taking of co-owners, naming rikāz, gift and lost property, the instance in the case facts. Analogy to sale, so qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on inheritance: lost property is a rare earning, neither known nor expected, so it does not enter the turns, just as inheritance does not.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v06:p373",
+     "excerpt_ar": "لم تدخل في المهايأة في أحد الوجهين لأنها كسب نادر لا يعلم وجوده ولا يظن فلم يدخل في المهايأة كالإرث",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "Given for the part-free slave's lost property; the same text extends the two wujūh to gift, bequest and other rare earnings. Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: rare earnings are among his earnings, so they resemble the ordinary earnings that the turns cover, and fall to whoever's turn they occur in.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p306",
+     "excerpt_ar": "فذكر القاضي أنها تدخل في المهايأة؛ لأنها من أكسابه فأشبهت المعتادة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Qāḍī's reason for the wajh that they enter the turns, the ruling of position 1. Analogy, so qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: a rare acquisition is still earning, like the ordinary earning that the turn-taking divides.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p250",
+     "excerpt_ar": "أحدهما: يدخل فيها؛ لأنها كسب، أشبه المعتاد",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's reason for the wajh that rare earnings enter the turns. Analogy, so qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

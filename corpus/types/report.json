@@ -127,6 +127,14 @@
       "wadi:sabab/milk": 41,
       "wadi:validity": 434
     },
+    "by_cue_set": {
+      "riwaya": 92,
+      "riwaya+wadi:validity": 1,
+      "wadi:sabab/daman": 34,
+      "wadi:sabab/milk": 38,
+      "wadi:sabab/milk+wadi:validity": 3,
+      "wadi:validity": 430
+    },
     "riwaya": [
       "islamqa.103605",
       "islamqa.104246",
@@ -229,28 +237,33 @@
           "sample": 10,
           "correct": 10,
           "precision": 1.0,
-          "lower95": 0.722
+          "lower95": 0.722,
+          "lower_joint": 0.666
         },
         "wadi:sabab/daman": {
           "sample": 10,
           "correct": 9,
           "precision": 0.9,
-          "lower95": 0.596
+          "lower95": 0.596,
+          "lower_joint": 0.547
         },
         "wadi:sabab/milk": {
           "sample": 10,
           "correct": 9,
           "precision": 0.9,
-          "lower95": 0.596
+          "lower95": 0.596,
+          "lower_joint": 0.547
         },
         "wadi:validity": {
           "sample": 15,
           "correct": 15,
           "precision": 1.0,
-          "lower95": 0.796
+          "lower95": 0.796,
+          "lower_joint": 0.749
         }
       },
-      "mismatch_floor": 0.032
+      "confidence": 0.95,
+      "mismatch_floor": 0.03
     }
   }
 }

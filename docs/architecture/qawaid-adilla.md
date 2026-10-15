@@ -32,3 +32,18 @@ Q24's stated dalīl, «من سبق إلى ما لم يسبق إليه مسلم �
 qāʿida rests on no admitted naṣṣ. Left out for want of a verified verdict: the Prophet's lot among his
 wives (Bukhārī 2593, Q25), «أمك ثم أمك» (Muslim 2548, Q33), and «لا يقبل الله صلاة أحدكم إذا أحدث» in the
 wording al-Saʿdī gives (Q58); al-Zumar 39:18 (Q33) is unreadable in both OCR witnesses.
+
+## Required source replay (PR #86 correction)
+
+Every cited `istidlal.witness` is part of `source_verify.required_witnesses`, in addition to the
+reconciliation witnesses. Its `ref` must name that same witness and a closing-page locator. Missing
+bytes, missing pins, altered bytes, invented excerpts, and wrong pages fail verification. The
+annotation checker also rejects unavailable witnesses and empty normalized excerpts.
+
+The two PDF-derived witnesses use the existing `ocr_sha256` locks. Verification requires the exact
+pinned OCR text in `.cache/corpus/<witness>.txt` and does not regenerate or rewrite a lock. Its receipt
+explicitly distinguishes verification of the derived text from replay of the PDF or validation of
+OCR interpretation. `--fetch-source` can fetch direct text witnesses, but cannot recreate absent OCR
+outputs. CI therefore fails until the required pinned OCR bytes are provisioned; a missing private
+cache is not a successful check. Modern witness text remains cache-only under the existing rights
+policy.
