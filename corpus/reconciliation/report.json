@@ -1,6 +1,6 @@
 {
-  "entries": 234,
-  "evidence_items": 569,
+  "entries": 482,
+  "evidence_items": 1814,
   "side_checks": [
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002",
@@ -9,15 +9,16 @@
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f006",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f012"
   ],
+  "confirming": 248,
   "stages": {
     "jam": 20,
     "naskh": 1,
-    "tarjih": 199,
+    "tarjih": 447,
     "tawaqquf": 14
   },
   "standing": {
-    "against_reading": 134,
-    "for_reading": 86,
+    "against_reading": 136,
+    "for_reading": 332,
     "tawaqquf": 14
   },
   "worklist": {
@@ -247,6 +248,12 @@
     "other_option_stands": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f002"
     ],
+    "performed_without_leave_not_owned": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f009"
+    ],
+    "qisas_belongs_to_whom": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f004"
+    ],
     "recourse_after_return": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f003"
     ],
@@ -317,6 +324,7 @@
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f007",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f002",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f001",
+    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f002",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f002",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f005",

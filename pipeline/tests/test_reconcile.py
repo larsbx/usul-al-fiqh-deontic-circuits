@@ -210,3 +210,23 @@ def test_six_reviewed_disagreements_preserve_their_original_annotations():
     assert reconcile.check(CASES, LEDGER, DOSSIER) == []
     assert all(c["side_check"]["from_matches"] is True and c["matches_madhhab"] is False for c in checked)
     assert all(reconcile.standing(c, next(e for e in LEDGER["entries"] if e["far"] == c["far"])) == "against_reading" for c in checked)
+
+
+def test_every_ikhtilaf_has_a_tarjih():
+    """The owner's rule: an on-madhhab ikhtilāf is in the ledger too, and its tarjīḥ confirms the
+    annotated side unless the entry cites an open research question."""
+    c = _ikh("x", True, [True, False], matches=True)
+    assert reconcile.check([c], {"entries": []}, DOSSIER) == ["x: an ikhtilāf without a tarjīḥ in the ledger"]
+    assert reconcile.check([c], {"entries": [_entry("x", ["tashih", "ashab"])]}, DOSSIER) == []
+    against = _entry("x", ["ashab", "nass"])
+    assert reconcile.check([c], {"entries": [against]}, DOSSIER) == [
+        "x: the tarjīḥ goes against the annotated madhhab side without an open research question"]
+    assert reconcile.check([c], {"entries": [{**against, "register": "RQ-03"}]}, DOSSIER) == []
+    assert reconcile.check([c], {"entries": [{**against, "register": "RQ-99"}]}, DOSSIER) == [
+        "x: RQ-99 is not an open research question",
+        "x: the tarjīḥ goes against the annotated madhhab side without an open research question"]
+
+
+def test_the_ledger_holds_every_ikhtilaf():
+    entries = {e["far"] for e in LEDGER["entries"]}
+    assert {c["far"] for c in CASES if c["class"] == "genuine_ikhtilaf"} <= entries

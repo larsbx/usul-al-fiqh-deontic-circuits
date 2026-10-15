@@ -82,8 +82,9 @@ These are the rules the history enforced, each after a failure it fixed:
 6. **Regenerate, don't sum.** Totals are rebuilt from the merged tree (`f927fb1`, `ed283bf`/`861de80`).
 7. **Gaps name their need, and are not invented.** A case that a reading should cover gets a reading, not a new gap (`ed283bf`). Need tags are corrected on revisit when the text names another principle.
 8. **Policy points stay open** (43.f004). Pinning the alternatives so they are expressible is allowed; choosing one is not.
-9. **Apply the bank before asking the owner** (D3 `d21241e`, D5 `5cfbe02`). A question reaches a human only after the bank's own procedure leaves it open.
-10. **Rights.** Pre-modern excerpts may run to 400 characters; modern ones are capped at 160 characters and their contexts stay in `.cache`.
+9. **Every ikhtilāf has a tarjīḥ.** An on-madhhab ikhtilāf enters the ledger with its graded evidence, and its tarjīḥ must confirm the annotated side or cite an open research question (`reconcile.check`).
+10. **Apply the bank before asking the owner** (D3 `d21241e`, D5 `5cfbe02`). A question reaches a human only after the bank's own procedure leaves it open.
+11. **Rights.** Pre-modern excerpts may run to 400 characters; modern ones are capped at 160 characters and their contexts stay in `.cache`.
 
 ### Research questions
 

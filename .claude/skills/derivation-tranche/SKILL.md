@@ -21,6 +21,7 @@ The method is specified in `docs/architecture/derivation-method.md`; this is how
    - Do not invent a gap where a reading is due (§4, invariant 7).
 5. **Cite.** A closure or new principle gets a dossier entry in `corpus/dossier/entries/<shard>.json`, with verbatim excerpts, conditions, rationale, Lean constants, and `conservative` where it refines.
 6. **Evidence (lanes C/D/E).** Graded, verbatim evidence goes to `corpus/reconciliation/entries/<shard>.json`. Positions are added to cases as `revisions`, never by editing a case.
+   - **Every `genuine_ikhtilaf` case gets a ledger entry**, on the madhhab side or off it. On-madhhab entries must have a tarjīḥ that confirms the annotated side; if the evidence goes the other way, report it (the integrator decides between a `side_check` and an open research question).
 7. **Gate locally.** Run `check_case` on your cases through `python -m usul_corpus takhrij`. Inspect the generated Lean, then discard the shared generated files with `git checkout -- ../formal/lean/UsulTest ../corpus/takhrij/report.json`. Also run `python -m pytest -q tests/test_dossier.py tests/test_reconcile.py tests/test_shards.py`, and the Lean build of your module where Lean is available.
 8. **Hand back.** Commit only the files you own: your claim, suite, encoder module, Lean module and fragments. Do not commit regenerated shared outputs, and put no totals in the report. List what you could not decide as register questions.
 
