@@ -60,6 +60,16 @@ def test_label_flags_count_taklifi_labels_whose_question_is_wadi_or_riwaya():
     rep = judgement.label_flags(labels, qs)
     assert rep["taklifi_labels"] == 2 and rep["flagged"] == 2 and rep["riwaya"] == ["b"]
     assert rep["by_cue"] == {"riwaya": 1, "wadi:validity": 1}
+    assert rep["by_cue_set"] == {"riwaya": 1, "wadi:validity": 1}
+
+
+def test_cue_sets_count_each_flagged_question_once():
+    labels = [{"id": "a", "hukm": "haram"}, {"id": "b", "hukm": "haram"}]
+    qs = {"a": "ما صحة حديث: هل يبطل الصيام", "b": "هل يبطل الصيام"}
+    rep = judgement.label_flags(labels, qs)
+    assert rep["by_cue"] == {"riwaya": 1, "wadi:validity": 2}
+    assert rep["by_cue_set"] == {"riwaya+wadi:validity": 1, "wadi:validity": 1}
+    assert sum(rep["by_cue_set"].values()) == rep["flagged"]
 
 
 @pytest.mark.parametrize("text", ["هل يصح أن أسافر غدا", "سأل عن الصحة النفسية", "الاتجاه الصحيح للقبلة",
@@ -80,9 +90,31 @@ def test_cues_fire_on_their_questions(text, cue):
 def test_flag_precision_uses_the_evaluation_sample_and_reports_a_floor():
     sample = {"judge": "j", "evaluation": {"items": [{"cue": "riwaya", "asks_that": True}] * 9 +
                                                      [{"cue": "riwaya", "asks_that": False}]}}
-    rep = judgement.flag_precision(sample, {"taklifi_labels": 100, "by_cue": {"riwaya": 10}})
-    assert rep["per_cue"]["riwaya"] == {"sample": 10, "correct": 9, "precision": 0.9, "lower95": 0.596}
-    assert rep["mismatch_floor"] == 0.06
+    rep = judgement.flag_precision(sample, {"taklifi_labels": 100, "by_cue_set": {"riwaya": 10}})
+    # One cue: the joint bound is the one-sided 95% Wilson bound (z = 1.645).
+    assert rep["per_cue"]["riwaya"] == {"sample": 10, "correct": 9, "precision": 0.9, "lower95": 0.596,
+                                        "lower_joint": 0.652}
+    assert rep["mismatch_floor"] == 0.065
+
+
+def _two_cue_sample():
+    return {"judge": "j", "evaluation": {"items": [{"cue": c, "asks_that": True} for c in ("a", "b") for _ in range(20)]}}
+
+
+def test_overlapping_flags_count_once_at_their_strongest_cue():
+    """Audit: summing per-cue hits double-counted questions with two cues (a 192.6% "floor")."""
+    rep = judgement.flag_precision(_two_cue_sample(), {"taklifi_labels": 100, "by_cue_set": {"a+b": 100}})
+    assert 0 < rep["mismatch_floor"] <= 1
+    assert rep["mismatch_floor"] == rep["per_cue"]["a"]["lower_joint"]
+
+
+def test_the_floor_bound_is_joint_over_the_cues_used():
+    """Bonferroni: k cues each at one-sided 0.05/k, so every bound holds together with probability ≥ 0.95."""
+    from statistics import NormalDist
+    rep = judgement.flag_precision(_two_cue_sample(), {"taklifi_labels": 10, "by_cue_set": {"a": 1}})
+    z = NormalDist().inv_cdf(1 - 0.05 / 2)
+    assert rep["per_cue"]["a"]["lower_joint"] == round(judgement._wilson_low(20, 20, z), 3)
+    assert rep["confidence"] == 0.95
 
 
 def test_committed_types_are_checked_and_generated():
