@@ -176,6 +176,12 @@
                 }
               }
             }
+          },
+          "basis": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400,
+            "description": "co-annotations only: the farʿ's own words that settle this encoder's facts"
           }
         }
       }

@@ -63,7 +63,7 @@ def test_candidate_receipts_preserve_the_four_live_gaps():
 
 def test_all_six_original_gaps_are_unchanged_and_the_report_counts_live_annotations():
     cases = takhrij.load(CORPUS)
-    report = takhrij.report(cases)
+    report = takhrij.report(cases, takhrij.load_co(CORPUS))
     gaps = {c["far"]: m5.case_sha256(dict(c, note=GAP_NOTE_REVISIONS.get(c["far"], c.get("note"))))
             for c in cases if c["class"] in takhrij.GAPS}
     assert all(c["note"] != GAP_NOTE_REVISIONS[c["far"]] for c in cases if c["far"] in GAP_NOTE_REVISIONS)
