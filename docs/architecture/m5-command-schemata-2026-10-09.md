@@ -11,6 +11,24 @@ All four command gaps retain their original `missing_rule` records and `needs` v
 records denial of literal naming without inventing a positive figurative classification.
 Command naming and the five-fold ruling of an act have separate types.
 
+`Usul.CommandDerivation` now states the inference rules independently as indexed
+inductive types. Their constructors retain the reported reading and relevant premises;
+general soundness and completeness proofs connect them to all four executable
+capabilities. `CommandRequest.Result` keeps usage classification, a five-fold ruling and
+an intended-command pair distinct. Determinacy holds for a fixed request, not across
+disputed readings. Negative theorems rule out a positive gesture inference and the
+author's literal act inference without established imitation.
+
+`AdmittedCommand` is a candidate trace with additional model premises. The caller must
+supply the question's first-command-position context for the obligation and intended-use
+branches, and justify every supplied qarīna by an external admissibility predicate.
+An encoder result alone cannot supply those proofs. This admission boundary does not
+adopt a reading, close an interpretation question or confer scholarly authority.
+For the author's conditional prophetic-act inference, setting the imitation flag to
+`true` additionally requires external evidence of established imitation; selecting the
+flag is not evidence. The `false` branch remains an unanswered candidate trace.
+See [the semantic contracts and remaining proof debt](lean-semantic-contracts.md).
+
 ## Source contrasts and boundaries
 
 The sole witness is `openiti-lahham-shamela8526`, the immutable OpenITI revision
