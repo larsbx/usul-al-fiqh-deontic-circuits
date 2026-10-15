@@ -57,7 +57,9 @@ def test_the_prolog_situations_are_current(ts):
     assert tr.prolog_file(ts, _data(ts)) == (ROOT / ts.prolog).read_text(encoding="utf-8")
 
 
-@pytest.mark.parametrize("ts", SETS, ids=ids)
+@pytest.mark.parametrize("ts", [pytest.param(ts, id=ts.name,
+                         marks=[pytest.mark.external_source] if ts.name == "islamqa_tranche1" else [])
+                         for ts in SETS])
 def test_the_report_is_current(ts, swipl, request):
     if ts.name == "islamqa_tranche1":
         request.getfixturevalue("islamqa_answers")

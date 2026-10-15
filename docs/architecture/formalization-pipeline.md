@@ -146,6 +146,34 @@ Tests that need SWI-Prolog or the IslamQA answers (Git LFS) take the `swipl` and
 `islamqa_answers` fixtures (`pipeline/tests/conftest.py`): skipped where absent,
 a failure where `USUL_REQUIRE` names them. CI sets `USUL_REQUIRE=swipl,islamqa`,
 installs SWI-Prolog in the corpus job and pulls (then caches) the one LFS file.
+
+The same job also runs two focused integration gates on Ubuntu 24.04 with
+`swi-prolog-nox` (SWI 9+; locally replayed with 9.0.4):
+
+- `make integration` replays the committed oracle cases/report, classical typed
+  routing reports, proposals, generated Prolog situations and routing index. It
+  needs no downloaded witness or IslamQA archive. Only tests marked
+  `external_source` are deselected, explicitly, rather than skipped.
+- `make integration-external` runs those external-source checks after the LFS
+  fetch: IslamQA typed/lexical routing reports and post-hoc fact quotations.
+  The answers fixture checks the existing `signature_routing.ANSWERS_SHA256`
+  pin, including on cache hits. A pointer, absent archive or wrong hash fails.
+
+Both invoke pytest's `--integration-gate`: a bounded SWI startup/JSON goal must
+succeed, and any collection, setup or test skip fails the gate. No tests
+collected also fails. Subprocess regressions exercise missing/broken/no-op
+runtimes, unexpected skips, missing/corrupt external data and explicit external
+deselection. JUnit reports are retained as `.cache/integration-committed.xml`
+and `.cache/integration-external.xml`. Existing equality tests compare the
+reconstructed artifacts with the committed files; these targets do not rewrite
+reports. Oracle replay retains the original first-run snapshots, fitted
+IslamQA results and classical held-out results as distinct report fields.
+
+These integration checks do not replace `source-verify-fetch`, foundation
+verification or the full corpus suite. Optional source exclusions in that full
+suite remain separately reported; they cannot hide skips in either integration
+gate.
+
 Quotations compare `arabic.quote_key`: Arabic letters plus each standalone
 numeral (any digit script), so a changed or dropped number fails. Page markers and
 footnote anchors (digits glued to the preceding word, `العلماء1`, or `(¬7)`) are markup and

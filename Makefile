@@ -7,6 +7,11 @@ TLA_URL  = https://github.com/tlaplus/tlaplus/releases/download/v1.8.0/tla2tools
 all: source-verify test validate generated lean tla
 
 test:      ; cd pipeline && $(PY) -m pytest -q
+# Both gates verify committed outputs by equality; neither updates artifacts.
+INTEGRATION_TESTS = tests/test_fatawa_prolog.py tests/test_typed_routing.py tests/test_multiple_annotations.py tests/test_routing.py
+.PHONY: integration integration-external
+integration: ; cd pipeline && $(PY) -m pytest -q --integration-gate -m 'not external_source' $(INTEGRATION_TESTS) tests/test_integration_gate.py --junitxml=../.cache/integration-committed.xml
+integration-external: ; cd pipeline && $(PY) -m pytest -q --integration-gate -m external_source $(INTEGRATION_TESTS) --junitxml=../.cache/integration-external.xml
 fetch:     ; cd pipeline && $(PY) -m usul_corpus fetch
 fatawa:    ; cd pipeline && $(PY) -m usul_corpus fatawa
 labels:    ; cd pipeline && $(PY) -m usul_corpus labels

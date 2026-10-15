@@ -4,6 +4,7 @@ the encoders' qawāʿid), never hand-written lexicons; recall is measured on hel
 import json
 from pathlib import Path
 
+import pytest
 
 from usul_corpus import routing
 
@@ -38,5 +39,6 @@ def test_a_text_routes_by_its_words():
     assert model.rank("وجد لقطة في الطريق")[0] == "luqata"
 
 
+@pytest.mark.external_source
 def test_the_out_of_domain_report_is_current(islamqa_answers):
     assert routing.render_ood(ROOT) == (CORPUS / routing.OOD).read_text(encoding="utf-8")

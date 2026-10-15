@@ -12,7 +12,7 @@ permissions:
 jobs:
   corpus:
     name: Corpus pipeline (pytest + schema validation + vectors)
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     # A cold witness cache scrapes al-Albānī's Irwāʾ from Shamela page by page (~55 min); warm runs take minutes.
     timeout-minutes: 120
     env:
@@ -29,6 +29,8 @@ jobs:
           sudo apt-get update -q
           sudo apt-get install -y -q swi-prolog-nox
           swipl --version
+      - name: Replay committed Python and Prolog artifacts (no skips)
+        run: make integration
       - name: Key the IslamQA answers by their LFS pointer
         id: answers
         run: echo "key=islamqa-ar-$(git rev-parse HEAD:data/islamqa/answers/islamqa-ar.jsonl.gz)" >> "$GITHUB_OUTPUT"
@@ -41,6 +43,8 @@ jobs:
       - name: Fetch the IslamQA answers (Git LFS)
         if: steps.answers-cache.outputs.cache-hit != 'true'
         run: git lfs pull --include=data/islamqa/answers/islamqa-ar.jsonl.gz
+      - name: Replay external-source routing and quotation checks (no skips)
+        run: make integration-external
       # Witness bytes are judged against corpus/lock.json, never trusted from the cache: a stale file is
       # refetched by source-verify-fetch, and a partial Shamela fetch (.part) resumes on the next run.
       - name: Restore the witness cache
@@ -71,6 +75,8 @@ jobs:
           path: |
             .cache/source-verification.json
             .cache/corpus-tests.xml
+            .cache/integration-committed.xml
+            .cache/integration-external.xml
           if-no-files-found: error
 
   lean:

@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 
+import pytest
 
 from usul_corpus import fatawa_prolog
 
@@ -76,6 +77,7 @@ def test_first_run_scores_the_earlier_rules_answers_not_todays_winners():
     assert rep["post_hoc_facts"] == {"islamqa.2.f001": ["unavoidable"]}
 
 
+@pytest.mark.external_source
 def test_every_post_hoc_fact_has_verbatim_evidence_in_its_answer(islamqa_answers):
     import gzip
     from usul_corpus import fatawa_takhrij
