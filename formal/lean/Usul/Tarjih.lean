@@ -20,8 +20,16 @@ v02 p389–401). Who holds a position, the madhhab's label included, is kept as 
   concerns, the one who took part in it), in the text (corroboration by the Book, the Sunna,
   ijmāʿ, a qiyās, the caliphs or a ṣaḥābī; agreed raising; a narrator not contradicting
   himself; a connected chain), from outside (what moves from the original state; the
-  affirming report), and between ʿilal (p397–401). Advantages the source reports as disputed
-  or weak («وقيل: لا يرجح بذلك», «وهي ترجيحات ضعيفة») are recorded but do not count.
+  affirming report), and between ʿilal (p397–401). Ibn al-Najjār's *Sharḥ al-Kawkab al-Munīr*
+  (v04 p650–703) adds the strength of the indication, which the Rawḍa leaves out: the Prophet's
+  saying over his deed and his deed over his tacit approval, what was heard from him over his
+  silence, prohibition over command and command over permission, the specific over the general
+  and the unspecialised general over the specialised, iqtiḍāʾ over īmāʾ and mafhūm, īmāʾ over
+  mafhūm, the mafhūm of agreement over that of contrast, a ruling whose ʿilla the Lawgiver
+  states, and what the two Ṣaḥīḥs agree on. Each advantage carries its standing in the sources
+  (asserted, disputed, weak, rejected; `Murajjih.standing`), and which standings decide is a
+  `Policy`: by default what a cited source asserts as its own, with the strict and the inclusive
+  policies run beside it.
 * **Tawaqquf.** «فإن لم يمكن الجمع، ولا معرفة النسخ: رجحنا، فأخذنا الأقوى في أنفسنا» (p391):
   where the stated advantages do not settle it, the weighing is the mujtahid's own, and the
   bank suspends.
@@ -66,16 +74,66 @@ inductive Murajjih where
   -- between ʿilal (p397–401)
   | usulMany | tardAks | mutaaddiya | wasf | ithbat | aslShari | aslAgreed | aslStronger
   | muaththira | mulaima | munasaba
-  -- reported as disputed or weak: recorded, not counted
-  | hazir | khiffa | hissiyya | fewerAwsaf
+  -- the indication and the report (al-Kawkab v04 p650–703)
+  | sahihayn | masmu | qawl | fil | nahy | amr | khass | ammMahfuz | iqtida | ima | muwafaqa | muallal
+  | hazir
+  -- called weak or rejected by a cited source: recorded, not counted
+  | khiffa | hissiyya | fewerAwsaf | dariHadd
   deriving DecidableEq, Repr
 
-/-- Whether the source lets the advantage decide. Prohibition over permission is al-Qāḍī's,
-«وقيل: لا يرجح بذلك» (p396); lightness of the ruling «ترجيحات ضعيفة» (p398); the sensible ʿilla
-and the fewer properties «ترجيح ضعيف», Abū al-Khaṭṭāb choosing «التسوية» (p398–399). -/
-def Murajjih.counts : Murajjih → Bool
-  | .hazir | .khiffa | .hissiyya | .fewerAwsaf => false
-  | _ => true
+/-- How the cited sources hold an advantage. Every murajjiḥ is formalised with its standing; which
+standings decide is a policy (`Policy`), itself part of the formalisation, so the weak and the
+rejected are kept and can be run, not dropped. -/
+inductive Standing where
+  /-- a cited source asserts it and reports no dissent -/
+  | asserted
+  /-- a cited source asserts it and reports a dissent -/
+  | disputed
+  /-- a cited source calls it weak -/
+  | weak
+  /-- a cited source rejects it -/
+  | rejected
+  deriving DecidableEq, Repr
+
+/-- The standing of each advantage in the cited sources.
+* Disputed: more narrators («وقال بعض الحنفية: لا يرجح به», Rawḍa v02 p391), the transitive ʿilla
+  («ومنع ذلك قوم», p399, Ibn Qudāma siding «والأول أولى»), prohibition over permission (al-Qāḍī's,
+  «وقيل: لا يرجح بذلك», p396; asserted in al-Kawkab v04 p679), the saying over the deed («وقيل:
+  هما سواء، وقيل: الفعل أولى», al-Kawkab v04 p656), command over permission (al-Āmidī and others
+  the other way, v04 p659), what moves from the original state (al-Rāzī and al-Ṭūfī the other way,
+  v04 p687).
+* Weak: lightness of the ruling, «وهي ترجيحات ضعيفة» (Rawḍa p398; al-Kawkab asserts it, v04
+  p692); the sensible ʿilla and the fewer properties, «ترجيح ضعيف», Abū al-Khaṭṭāb choosing
+  «التسوية» (p398–399).
+* Rejected: what wards off the ḥadd, «ولا يرجح المسقط للحد» (Rawḍa p396; al-Kawkab gives it «عند
+  الأكثر», v04 p689). -/
+def Murajjih.standing : Murajjih → Standing
+  | .kathratRuwat | .mutaaddiya | .hazir | .qawl | .amr | .naqil => .disputed
+  | .khiffa | .hissiyya | .fewerAwsaf => .weak
+  | .dariHadd => .rejected
+  | _ => .asserted
+
+/-- Which standings decide. -/
+abbrev Policy := Standing → Bool
+
+namespace Policy
+/-- Only what no cited source disputes. -/
+def strict : Policy | .asserted => true | _ => false
+/-- What a cited source asserts as its own, disputed or not: the bank's default. -/
+def sources : Policy | .asserted | .disputed => true | _ => false
+/-- Every recorded advantage, the weak and the rejected included. -/
+def all : Policy := fun _ => true
+
+/-- The policies are nested: strict ⊆ sources ⊆ all. -/
+theorem strict_le_sources (s : Standing) (h : strict s = true) : sources s = true := by
+  cases s <;> simp_all [strict, sources]
+
+theorem sources_le_all (s : Standing) : all s = true := rfl
+
+/-- The default leaves out exactly what a cited source calls weak or rejects. -/
+theorem sources_false_iff (s : Standing) : sources s = false ↔ s = .weak ∨ s = .rejected := by
+  cases s <;> simp [sources]
+end Policy
 
 /-- One stated advantage: the proof for `winner` is preferred to the proof for `loser`. -/
 structure Advantage (P : Type) where
@@ -90,52 +148,57 @@ variable {P : Type} [DecidableEq P]
 def top (ps : List (P × Tier)) (p : P) : Option Nat :=
   ((ps.filter (·.1 = p)).map (·.2.rank)).max?
 
-/-- Some counted advantage prefers `p` to `q`. -/
-def favours (as : List (Advantage P)) (p q : P) : Bool :=
-  as.any fun a => a.winner = p && a.loser = q && a.by_.counts
+/-- Some advantage the policy counts prefers `p` to `q`. -/
+def favours (π : Policy) (as : List (Advantage P)) (p q : P) : Bool :=
+  as.any fun a => a.winner = p && a.loser = q && π a.by_.standing
 
 /-- `p` outweighs `q`: a proof of a higher tier, or of the same tier with a counted advantage over
 `q` and none from `q` back. A position citing no proof outweighs nothing. -/
-def beats (ps : List (P × Tier)) (as : List (Advantage P)) (p q : P) : Bool :=
+def beats (π : Policy) (ps : List (P × Tier)) (as : List (Advantage P)) (p q : P) : Bool :=
   match top ps p, top ps q with
   | some _, none => true
-  | some a, some b => a > b || (a == b && favours as p q && !favours as q p)
+  | some a, some b => a > b || (a == b && favours π as p q && !favours π as q p)
   | none, _ => false
 
 /-- Tarjīḥ: the reported ruling that outweighs every other, if any. -/
-def prevail (rs : List P) (ps : List (P × Tier)) (as : List (Advantage P)) : Option P :=
-  rs.find? fun p => rs.all fun q => q = p || beats ps as p q
+def prevail (π : Policy) (rs : List P) (ps : List (P × Tier)) (as : List (Advantage P)) : Option P :=
+  rs.find? fun p => rs.all fun q => q = p || beats π ps as p q
 
-/-- The whole procedure: the kernel's `resolve`, its tarjīḥ by proof. -/
-def reconcile (jam naskh : Option P) (rs : List P) (ps : List (P × Tier)) (as : List (Advantage P)) :
-    Resolution P :=
-  resolve ⟨jam, naskh, prevail rs ps as⟩
+/-- The whole procedure: the kernel's `resolve`, its tarjīḥ by proof under a policy. -/
+def reconcile (π : Policy) (jam naskh : Option P) (rs : List P) (ps : List (P × Tier))
+    (as : List (Advantage P)) : Resolution P :=
+  resolve ⟨jam, naskh, prevail π rs ps as⟩
+
+variable {π : Policy} {rs : List P} {ps : List (P × Tier)} {as : List (Advantage P)} {p q : P}
 
 /-- Tarjīḥ never invents a ruling. -/
-theorem prevail_mem {rs : List P} {ps : List (P × Tier)} {as : List (Advantage P)} {p : P}
-    (h : prevail rs ps as = some p) : p ∈ rs :=
+theorem prevail_mem (h : prevail π rs ps as = some p) : p ∈ rs :=
   List.mem_of_find?_eq_some h
 
 /-- A position that cites no proof outweighs nothing, whoever holds it. -/
-theorem beats_unproven {ps : List (P × Tier)} {as : List (Advantage P)} {p q : P}
-    (h : top ps p = none) : beats ps as p q = false := by
+theorem beats_unproven (h : top ps p = none) : beats π ps as p q = false := by
   simp [beats, h]
 
 /-- A higher tier decides, whatever advantages the lower one has (p390). -/
-theorem beats_of_tier {ps : List (P × Tier)} {as : List (Advantage P)} {p q : P} {a b : Nat}
-    (hp : top ps p = some a) (hq : top ps q = some b) (h : b < a) : beats ps as p q = true := by
+theorem beats_of_tier {a b : Nat} (hp : top ps p = some a) (hq : top ps q = some b) (h : b < a) :
+    beats π ps as p q = true := by
   simp [beats, hp, hq, h]
 
 /-- No advantage lifts a lower tier. -/
-theorem not_beats_of_tier {ps : List (P × Tier)} {as : List (Advantage P)} {p q : P} {a b : Nat}
-    (hp : top ps p = some a) (hq : top ps q = some b) (h : a < b) : beats ps as p q = false := by
+theorem not_beats_of_tier {a b : Nat} (hp : top ps p = some a) (hq : top ps q = some b) (h : a < b) :
+    beats π ps as p q = false := by
   have : ¬ b < a := Nat.lt_asymm h
   have : a ≠ b := Nat.ne_of_lt h
   simp_all [beats]
 
+/-- Across tiers the policy is idle: only proofs of one tier are weighed by advantages. -/
+theorem beats_policy_irrelevant {π' : Policy} {a b : Nat} (hp : top ps p = some a)
+    (hq : top ps q = some b) (h : a ≠ b) : beats π ps as p q = beats π' ps as p q := by
+  have : (a == b) = false := by simpa using h
+  simp [beats, hp, hq, this]
+
 /-- Outweighing is asymmetric, so at most one reported ruling prevails. -/
-theorem beats_asymm {ps : List (P × Tier)} {as : List (Advantage P)} {p q : P}
-    (h : beats ps as p q = true) : beats ps as q p = false := by
+theorem beats_asymm (h : beats π ps as p q = true) : beats π ps as q p = false := by
   unfold beats at *
   cases hp : top ps p <;> cases hq : top ps q <;> simp_all
   rename_i a b
@@ -143,32 +206,42 @@ theorem beats_asymm {ps : List (P × Tier)} {as : List (Advantage P)} {p q : P}
   · exact ⟨Nat.le_of_lt h, fun e => absurd h (e ▸ Nat.lt_irrefl _)⟩
   · simp_all
 
-/-- Advantages the source does not count never decide. -/
-theorem favours_uncounted {as : List (Advantage P)} {p q : P}
-    (h : ∀ a ∈ as, a.by_.counts = false) : favours as p q = false := by
+/-- Advantages the policy does not count never decide. -/
+theorem favours_uncounted (h : ∀ a ∈ as, π a.by_.standing = false) : favours π as p q = false := by
   simp only [favours, List.any_eq_false]
   intro a ha; simp [h a ha]
 
-theorem reconcile_jam_first {jam : P} {naskh : Option P} {rs : List P} {ps : List (P × Tier)}
-    {as : List (Advantage P)} : reconcile (some jam) naskh rs ps as = .jam jam := rfl
+/-- Under the default, what a cited source calls weak or rejects never decides. -/
+theorem favours_sources_weak (h : ∀ a ∈ as, a.by_.standing = .weak ∨ a.by_.standing = .rejected) :
+    favours Policy.sources as p q = false :=
+  favours_uncounted fun a ha => (Policy.sources_false_iff _).2 (h a ha)
 
-theorem reconcile_tawaqquf_iff {jam naskh : Option P} {rs : List P} {ps : List (P × Tier)}
-    {as : List (Advantage P)} :
-    reconcile jam naskh rs ps as = .tawaqquf ↔ jam = none ∧ naskh = none ∧ prevail rs ps as = none :=
+theorem reconcile_jam_first {jam : P} {naskh : Option P} : reconcile π (some jam) naskh rs ps as = .jam jam :=
+  rfl
+
+theorem reconcile_tawaqquf_iff {jam naskh : Option P} :
+    reconcile π jam naskh rs ps as = .tawaqquf ↔ jam = none ∧ naskh = none ∧ prevail π rs ps as = none :=
   resolve_tawaqquf_iff
 
+open Policy in
+section
 -- A report outweighs a qiyās, whatever the qiyās's advantages.
-#guard prevail ["a", "b"] [("a", Tier.zanni), ("b", .qiyas)] [⟨"b", "a", .muaththira⟩] == some "a"
+#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .qiyas)] [⟨"b", "a", .muaththira⟩] == some "a"
 -- Two reports: the connected one over the mursal.
-#guard prevail ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .muttasil⟩] == some "a"
+#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .muttasil⟩] == some "a"
 -- Advantages on both sides: the weighing is the mujtahid's own, so tawaqquf.
-#guard prevail ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .muttasil⟩, ⟨"b", "a", .muthbit⟩] == none
--- A disputed advantage does not decide.
-#guard prevail ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .hazir⟩] == none
+#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .muttasil⟩, ⟨"b", "a", .muthbit⟩] == none
+-- A weak advantage decides only under the policy that counts everything.
+#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .khiffa⟩] == none
+#guard prevail all ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .khiffa⟩] == some "a"
+-- A disputed advantage decides by default, not under the strict policy.
+#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .qawl⟩] == some "a"
+#guard prevail strict ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .qawl⟩] == none
 -- A position citing no proof loses to one that cites any.
-#guard prevail ["a", "b"] [("b", Tier.istishab)] [] == some "b"
+#guard prevail sources ["a", "b"] [("b", Tier.istishab)] [] == some "b"
 -- Nothing cited on either side: tawaqquf.
-#guard prevail ["a", "b"] ([] : List (String × Tier)) [] == none
-#guard reconcile none none ["a", "b"] [("a", Tier.qati), ("b", .zanni)] [] == .tarjih "a"
+#guard prevail sources ["a", "b"] ([] : List (String × Tier)) [] == none
+#guard reconcile sources none none ["a", "b"] [("a", Tier.qati), ("b", .zanni)] [] == .tarjih "a"
+end
 
 end Usul.Tarjih

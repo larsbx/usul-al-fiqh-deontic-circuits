@@ -35,13 +35,23 @@ STAGES = ("jam", "naskh", "tarjih", "tawaqquf", "unweighed")
 # Proof tiers, weakest first; mirrors `Usul.Tarjih.Tier.rank` (Rawḍa v02 p389–390, Aḥmad's order of resort).
 TIERS = ("istishab", "qiyas", "mursalDaif", "aqrabSahabi", "fatwaSahabi", "zanni", "qati", "ijma")
 TIER_RANK = {t: i for i, t in enumerate(TIERS)}
-# The advantages the Rawḍa states between proofs of one tier (v02 p391–401); mirrors `Usul.Tarjih.Murajjih`.
+# The advantages the Rawḍa (v02 p391–401) and al-Kawkab (v04 p650–703) state between proofs of one tier;
+# mirrors `Usul.Tarjih.Murajjih`.
 MURAJJIH = ("kathratRuwat", "tayaqquz", "wara", "sahibWaqia", "mubashir",
             "corroborated", "marfu", "consistentNarrator", "muttasil", "naqil", "muthbit",
             "usulMany", "tardAks", "mutaaddiya", "wasf", "ithbat", "aslShari", "aslAgreed", "aslStronger",
             "muaththira", "mulaima", "munasaba",
-            "hazir", "khiffa", "hissiyya", "fewerAwsaf")
-UNCOUNTED = frozenset({"hazir", "khiffa", "hissiyya", "fewerAwsaf"})  # disputed or weak: recorded, never decisive
+            "sahihayn", "masmu", "qawl", "fil", "nahy", "amr", "khass", "ammMahfuz", "iqtida", "ima", "muwafaqa",
+            "muallal", "hazir",
+            "khiffa", "hissiyya", "fewerAwsaf", "dariHadd")
+# Each advantage's standing in the cited sources; mirrors `Usul.Tarjih.Murajjih.standing`.
+STANDING = {m: "asserted" for m in MURAJJIH} | dict.fromkeys(
+    ("kathratRuwat", "mutaaddiya", "hazir", "qawl", "amr", "naqil"), "disputed") | dict.fromkeys(
+    ("khiffa", "hissiyya", "fewerAwsaf"), "weak") | {"dariHadd": "rejected"}
+# Which standings decide; mirrors `Usul.Tarjih.Policy`. The bank resolves under `sources`.
+POLICIES = {"strict": frozenset({"asserted"}), "sources": frozenset({"asserted", "disputed"}),
+            "all": frozenset({"asserted", "disputed", "weak", "rejected"})}
+DEFAULT = "sources"
 
 
 def candidates(cases: list[dict]) -> list[dict]:
@@ -77,19 +87,22 @@ def top(ps: list[tuple[object, str]], p: object) -> int | None:
     return max((TIER_RANK[t] for r, t in ps if r == p), default=None)
 
 
-def favours(adv: list[tuple[object, object, str]], p: object, q: object) -> bool:
-    return any(w == p and l == q and m not in UNCOUNTED for w, l, m in adv)
+def favours(adv: list[tuple[object, object, str]], p: object, q: object, policy: str = DEFAULT) -> bool:
+    return any(w == p and l == q and STANDING[m] in POLICIES[policy] for w, l, m in adv)
 
 
-def beats(ps: list[tuple[object, str]], adv: list[tuple[object, object, str]], p: object, q: object) -> bool:
+def beats(ps: list[tuple[object, str]], adv: list[tuple[object, object, str]], p: object, q: object,
+          policy: str = DEFAULT) -> bool:
     """`p` outweighs `q`: a higher tier, or the same tier with a counted advantage and none back."""
     a, b = top(ps, p), top(ps, q)
-    return a is not None and (b is None or a > b or (a == b and favours(adv, p, q) and not favours(adv, q, p)))
+    return a is not None and (b is None or a > b or (
+        a == b and favours(adv, p, q, policy) and not favours(adv, q, p, policy)))
 
 
-def weigh(rs: list[object], ps: list[tuple[object, str]], adv: list[tuple[object, object, str]]) -> object | None:
+def weigh(rs: list[object], ps: list[tuple[object, str]], adv: list[tuple[object, object, str]],
+          policy: str = DEFAULT) -> object | None:
     """Mirror of `Usul.Tarjih.prevail`: the reported ruling that outweighs every other, if any."""
-    return next((p for p in rs if all(q == p or beats(ps, adv, p, q) for q in rs)), None)
+    return next((p for p in rs if all(q == p or beats(ps, adv, p, q, policy) for q in rs)), None)
 
 
 def support(ps: list[tuple[object, str]], p: object) -> list[int]:
@@ -117,7 +130,7 @@ def graded(case: dict, entry: dict) -> list[tuple[object, str]]:
             + [(ps[v["position"]]["ruling"], v["grade"]) for v in entry.get("evidence", [])])
 
 
-def resolve(case: dict, entry: dict) -> tuple[str, object | None]:
+def resolve(case: dict, entry: dict, policy: str = DEFAULT) -> tuple[str, object | None]:
     """Mirror of `Usul.Tarjih.reconcile`: the first stage that offers a ruling; ``unweighed`` while
     no proof is recorded, since holders alone decide nothing."""
     if entry.get("jam"):
@@ -126,7 +139,7 @@ def resolve(case: dict, entry: dict) -> tuple[str, object | None]:
         return "naskh", entry["naskh"]["ruling"]
     if not weighed(entry):
         return "unweighed", None
-    p = weigh(rulings(case), proved(case, entry), stated(case, entry))
+    p = weigh(rulings(case), proved(case, entry), stated(case, entry), policy)
     return ("tarjih", p) if p is not None else ("tawaqquf", None)
 
 
@@ -298,13 +311,14 @@ def lean_file(cases: list[dict], ledger: dict) -> str:
         naskh = e["naskh"]["ruling"] if e.get("naskh") else None
         lines.append(f"-- {e['far']}")
         if weighed(e):
-            stage, r = resolve(c, e)
             rs = ", ".join(map(_str, rulings(c)))
             ps = ", ".join(f"({_str(p)}, .{t})" for p, t in proved(c, e))
             adv = ", ".join(f"⟨{_str(w)}, {_str(l)}, .{m}⟩" for w, l, m in stated(c, e))
-            out = ".tawaqquf" if stage == "tawaqquf" else f"(.{stage} {_str(r)})"
-            lines.append(f"#guard Usul.Tarjih.reconcile (P := String) {_opt(jam)} {_opt(naskh)} [{rs}] "
-                         f"([{ps}] : List (String × Usul.Tarjih.Tier)) [{adv}] == {out}")
+            for pol in POLICIES:
+                stage, r = resolve(c, e, pol)
+                out = ".tawaqquf" if stage == "tawaqquf" else f"(.{stage} {_str(r)})"
+                lines.append(f"#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.{pol} (P := String) {_opt(jam)} {_opt(naskh)} "
+                             f"[{rs}] ([{ps}] : List (String × Usul.Tarjih.Tier)) [{adv}] == {out}")
         stage, r = attribution(c, e)
         ps = ", ".join(f"({_str(p)}, .{g})" for p, g in graded(c, e))
         out = ".tawaqquf" if stage == "tawaqquf" else f"(.{stage} {_str(r)})"
@@ -347,6 +361,10 @@ def report(cases: list[dict], ledger: dict) -> dict:
             "worklist": dict(sorted(residues.items(), key=lambda kv: (-len(kv[1]), kv[0]))),
             "weighing_worklist": dict(sorted(unweighed.items(), key=lambda kv: (-kv[1], kv[0]))),
             "jam_pending": jam_pending(cases, ledger),
+            "policies": {pol: {"counts": sorted(POLICIES[pol]),
+                               "differs_from_default": sorted(c["far"] for e, c in rows
+                                                              if resolve(c, e, pol) != resolve(c, e))}
+                         for pol in POLICIES if pol != DEFAULT},
             "attribution": {
                 "note": "what the reported holders' labels favour (Usul.Reconcile); a record, not a tarjīḥ",
                 "evidence_items": sum(len(e.get("evidence", [])) for e, _ in rows),

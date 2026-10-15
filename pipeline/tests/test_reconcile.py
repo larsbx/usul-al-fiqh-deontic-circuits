@@ -68,7 +68,7 @@ def test_resolution_by_proof_mirrors_the_kernel_guards():
     assert reconcile.resolve(c, w([_proof(0, "zanni"), _proof(1, "zanni")], [_adv(0, 1, "muttasil")])) == ("tarjih", True)
     assert reconcile.resolve(c, w([_proof(0, "zanni"), _proof(1, "zanni")],
                                   [_adv(0, 1, "muttasil"), _adv(1, 0, "muthbit")])) == ("tawaqquf", None)
-    assert reconcile.resolve(c, w([_proof(0, "zanni"), _proof(1, "zanni")], [_adv(0, 1, "hazir")])) == ("tawaqquf", None)
+    assert reconcile.resolve(c, w([_proof(0, "zanni"), _proof(1, "zanni")], [_adv(0, 1, "khiffa")])) == ("tawaqquf", None)
     assert reconcile.resolve(c, w([_proof(1, "istishab")])) == ("tarjih", False)
     assert reconcile.resolve(c, w([])) == ("tawaqquf", None)
     assert reconcile.standing(c, w([_proof(1, "qati"), _proof(0, "zanni")])) == "against_reading"
@@ -84,8 +84,28 @@ def test_tiers_and_murajjihat_mirror_the_kernel():
     names = [n for line in block.split("where", 1)[1].splitlines() if not line.strip().startswith("--")
              for n in re.findall(r"\| (\w+)", line)]
     assert tuple(names) == reconcile.MURAJJIH
-    uncounted = lean[lean.index("def Murajjih.counts"):lean.index("/-- One stated advantage")]
-    assert set(re.findall(r"\.(\w+)", uncounted.split("Bool", 1)[1].split("=> false")[0])) == reconcile.UNCOUNTED
+    std = lean[lean.index("def Murajjih.standing"):lean.index("/-- Which standings decide")]
+    for line in std.splitlines():
+        if "=>" in line and "_ =>" not in line:
+            names, st = line.split("=>")
+            assert {m: reconcile.STANDING[m] for m in re.findall(r"\.(\w+)", names)} == dict.fromkeys(
+                re.findall(r"\.(\w+)", names), st.strip().lstrip("."))
+    assert {pol: {st for st in ("asserted", "disputed", "weak", "rejected")
+                  if f"| .{st}" in lean[lean.index(f"def {pol} : Policy"):].split("\n")[0]}
+            for pol in ("strict", "sources")} == {pol: set(reconcile.POLICIES[pol]) for pol in ("strict", "sources")}
+
+
+def test_weak_and_rejected_advantages_are_formalised_and_run_under_their_policy():
+    """Nothing is dropped: every murajjiḥ has its standing, and each policy is run and reported."""
+    c = _ikh("x", True, [True, False])
+    e = {**_entry("x", ["ashab", "ashab"]), "proofs": [_proof(0, "zanni"), _proof(1, "zanni")]}
+    weak, disputed = {**e, "advantages": [_adv(0, 1, "khiffa")]}, {**e, "advantages": [_adv(0, 1, "qawl")]}
+    assert [reconcile.resolve(c, weak, p) for p in ("strict", "sources", "all")] == [
+        ("tawaqquf", None), ("tawaqquf", None), ("tarjih", True)]
+    assert [reconcile.resolve(c, disputed, p) for p in ("strict", "sources", "all")] == [
+        ("tawaqquf", None), ("tarjih", True), ("tarjih", True)]
+    assert reconcile.report([c], {"entries": [weak]})["policies"]["all"]["differs_from_default"] == ["x"]
+    assert set(reconcile.STANDING) == set(reconcile.MURAJJIH)
 
 
 def test_proofs_name_positions_tiers_and_their_source():

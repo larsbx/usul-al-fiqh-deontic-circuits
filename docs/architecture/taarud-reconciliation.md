@@ -24,11 +24,22 @@ The owner's rule: the madhhab's position is not authoritative; a ruling is valid
 7. **qiyas**: an analogy or a stated rationale.
 8. **istishab**: the original state.
 
-**Tarjīḥ.** A ruling's strength is the highest tier any proof cited for it reaches. A higher tier decides, whatever the lower one's advantages. At the same tier, a ruling prevails over another only with a counted advantage over it and none from it back. The advantages are the murajjiḥāt the *Rawḍa* states (v02 p391–401, `Usul.Tarjih.Murajjih`): more narrators, precision, piety, the narrator the event concerns or who took part in it, corroboration, agreed raising, a self-consistent narrator, a connected chain, what moves from the original state, the affirming report, and the ʿilla advantages. Those the source reports as disputed or weak (prohibition over permission, lightness of the ruling, the sensible ʿilla, fewer properties) are recorded but never decide (`favours_uncounted`). Where the stated advantages do not settle it, the result is tawaqquf: «رجحنا، فأخذنا الأقوى في أنفسنا» is the mujtahid's own weighing, which the bank does not simulate.
+**Tarjīḥ.** A ruling's strength is the highest tier any proof cited for it reaches. A higher tier decides, whatever the lower one's advantages. At the same tier, a ruling prevails over another only with a counted advantage over it and none from it back. Where the counted advantages do not settle it, the result is tawaqquf: «رجحنا، فأخذنا الأقوى في أنفسنا» is the mujtahid's own weighing, which the bank does not simulate.
+
+**Murajjiḥāt** (`Usul.Tarjih.Murajjih`). From the *Rawḍa* (v02 p391–401): more narrators, precision, piety, the narrator the event concerns or who took part in it, corroboration, agreed raising, a self-consistent narrator, a connected chain, what moves from the original state, the affirming report, and the ʿilla advantages. From Ibn al-Najjār's *Sharḥ al-Kawkab al-Munīr* (v04 p650–703), the strength of the indication the *Rawḍa* leaves out: what the two Ṣaḥīḥs agree on, what was heard from the Prophet over his silence, his saying over his deed and his deed over his tacit approval, prohibition over command and command over permission, prohibition over permission, the specific over the general, the unspecialised general over the specialised, iqtiḍāʾ over īmāʾ and mafhūm, īmāʾ over mafhūm, the mafhūm of agreement over that of contrast, and a ruling whose ʿilla the Lawgiver states.
+
+**Every murajjiḥ is formalised with its standing, and none is dropped.** `Murajjih.standing` records how the cited sources hold it:
+
+| Standing | Murajjiḥāt | Source |
+|---|---|---|
+| asserted | the rest | |
+| disputed | more narrators; the transitive ʿilla; prohibition over permission; saying over deed; command over permission; what moves from the original state | the source sides with it and reports a dissent (Rawḍa p391, p396, p399; al-Kawkab p656, p659, p679, p687) |
+| weak | lightness of the ruling; the sensible ʿilla; fewer properties | «وهي ترجيحات ضعيفة», «ترجيح ضعيف» (Rawḍa p398–399), though al-Kawkab asserts lightness (p692) |
+| rejected | what wards off the ḥadd | «ولا يرجح المسقط للحد» (Rawḍa p396), though al-Kawkab gives it «عند الأكثر» (p689) |
+
+Which standings decide is a `Policy`, itself formal: `strict` (asserted only), `sources` (asserted and disputed: what a cited source holds as its own; the bank's default) and `all` (every recorded advantage). The policies are nested (`strict_le_sources`), the default leaves out exactly the weak and the rejected (`sources_false_iff`), and across tiers the policy is idle (`beats_policy_irrelevant`). Every weighed entry is guarded in Lean under all three, and `report.json` `policies` lists the furūʿ whose resolution changes under `strict` or `all`.
 
 Proved in Lean: tarjīḥ never invents a ruling (`prevail_mem`), a position that cites no proof outweighs nothing whoever holds it (`beats_unproven`), a higher tier decides (`beats_of_tier`, `not_beats_of_tier`), and outweighing is asymmetric (`beats_asymm`).
-
-**Not yet modelled.** The strength of the indication *within* a tier (naṣṣ over ẓāhir, the spoken over the implied, saying over doing) is not in the *Rawḍa*'s list, so two ẓannī texts with no stated advantage between them go to tawaqquf. Ibn ʿUthaymīn's and al-Kawkab's lists would add these; they are the next source to import.
 
 **Data.** Proofs live in `corpus/reconciliation/weighing/*.json`, laid over the ledger by `reconcile.load`, each farʿ weighed in one file. A proof records its position, tier, the proof itself (`dalil`), and a verbatim excerpt checked against its pinned witness (`test_proofs_are_verbatim`, and `make source-verify`). A jamʿ still needs a cited farq and a conservativity theorem; that it lands on the side the proofs favour is checked once the farʿ is weighed, and listed in `jam_pending` until then.
 
@@ -40,7 +51,7 @@ Proved in Lean: tarjīḥ never invents a ruling (`prevail_mem`), a position tha
 | tarjīḥ against the reading | q147.f002 (a report over a qiyās), q158.f018 (a qiyās over istiṣḥāb), q102.f005 (ṣaḥābī against ṣaḥābī, ʿUthmān's report connected, per Aḥmad) |
 | tawaqquf | q018.f001, q018.f002, q059.f003, q108.f001, q125.f011, q136.f000, q143.f001 |
 
-In 2 of the 5 resolved furūʿ the proofs side with the madhhab's label; in the other 3 they go against it. Seven of twelve end in tawaqquf, mostly qiyās against qiyās or ẓannī text against ẓannī text: the missing within-tier murajjiḥāt are the binding constraint.
+In 2 of the 5 resolved furūʿ the proofs side with the madhhab's label; in the other 3 they go against it. Seven of twelve end in tawaqquf, mostly qiyās against qiyās or ẓannī text against ẓannī text. The pilot was weighed before al-Kawkab's murajjiḥāt were added; they are applied in the full weighing.
 
 ## The attribution record (before the redesign)
 

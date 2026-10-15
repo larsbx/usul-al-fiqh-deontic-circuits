@@ -207,6 +207,23 @@
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f000",
     "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f003"
   ],
+  "policies": {
+    "strict": {
+      "counts": [
+        "asserted"
+      ],
+      "differs_from_default": []
+    },
+    "all": {
+      "counts": [
+        "asserted",
+        "disputed",
+        "rejected",
+        "weak"
+      ],
+      "differs_from_default": []
+    }
+  },
   "attribution": {
     "note": "what the reported holders' labels favour (Usul.Reconcile); a record, not a tarjīḥ",
     "evidence_items": 2118,
