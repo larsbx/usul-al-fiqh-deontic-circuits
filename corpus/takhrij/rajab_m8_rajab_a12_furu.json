@@ -1,0 +1,433 @@
+{
+  "suite": "m8_rajab_rajab_a12",
+  "status": "candidate",
+  "provenance": "Shard rajab-a12 (lane A): every farʿ record of Ibn Rajab's qawāʿid 116, 117 and 118, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA12). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f001",
+      "encoder": "ownership_relates_back",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "settled_cause": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the wajh that the fruit follows the shafīʿ's taking, his ownership reaching back to the sale (al-Inṣāf v05:p061 «إلا أن في الأخذ بالشفعة وجها آخر»)",
+          "ruling": true
+        },
+        {
+          "who": "the wajh that the fruit pollinated in the buyer's hand is the buyer's («على الصحيح من المذهب» per al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The shafīʿ takes by pre-emption palms whose fruit was unpollinated at the sale and is pollinated when he takes: «وفيه وجهان سبق ذكرهما». His ownership rests on the sale, a settled cause («سبب مستقر»); carried back to it, the fruit (then unpollinated, so following the palm) is his. The reading so has it. al-Inṣāf (v06:p292): «لو تأبر الطلع المشمول بالبيع في يد المشتري: كانت التمرة له. على الصحيح من المذهب ... وفيه وجه: هي للشفيع»: off the madhhab side, so a ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f002",
+      "encoder": "ownership_relates_back",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "settled_cause": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the wajh that ownership is from the death (al-Muqniʿ's iḥtimāl, put first in al-Riʿāyatayn, al-Ḥāwī, al-Khulāṣa, al-Muḥarrar, al-Fāʾiq per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "ownership from the acceptance (the madhhab per al-Inṣāf; al-Qāḍī and his companions)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The legatee who accepts after the death: «فهل يثبت له الملك من حين الموت أم لا وفيه خلاف معروف». The death makes the bequest a settled cause (sabab) on the testator's side; the reading carries the ownership back to the death. al-Inṣāf (v07:p206): «وإن قبلها بعد الموت: ثبت الملك حين القبول. في الصحيح) وهو المذهب»: off the madhhab side, so a ledger entry. Follow-ons in the same record, outside its leading ruling: the landowner who takes the usurper's crop after it ripens (whose is the zakāt? «على وجهين»), and annulment (faskh, «الفسخ بالعيب والخيار») for a defect or an option (a lifting of the contract from its origin or from now, «وفيه خلاف معروف»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f003",
+      "encoder": "ownership_relates_back",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "settled_cause": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the riwāya that it arises on the deceased's ownership, its cause being in his life (the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "the riwāya that it arises on the heirs' ownership, being due after the death",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The blood-money (diya) of one killed: «هل تحدث على ملك الوارث ; لأنها تجب [بعد] الموت أو على ملك الموروث ; لأن سببها وجد في حياته على روايتين معروفتين». Its cause was found in his life; the reading has it arise on the deceased's ownership (so his debts are paid and his bequests executed from it). al-Inṣāf (v07:p262): «والصحيح من المذهب: أنها تحدث على ملك الميت»; al-Iqnāʿ (v03:p067): «فهي ميراث تحدث على مللك الميت». On the madhhab side. Follow-on: Ibn al-Zāghūnī reports the two riwāyas in qiṣāṣ too (owed to the heirs from the outset, or inherited)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f004",
+      "encoder": "ownership_relates_back",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "settled_cause": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Qāḍī and Ibn ʿAqīl: it is an inherited estate of the deceased (the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "Abū al-Khaṭṭāb (al-Intiṣār): it is the heirs' property, the net having passed to them",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A cause (sabab) of ownership or liability concluded in life and realised after death, as game falling into a net he set before he died: «ففيه خلاف سبق ذكره». In his earlier treatment (v01:p205): «والذي صرح به القاضي وابن عقيل أنه تركة موروثة وقال أبو الخطاب في الانتصار: بل هو ملك للورثة». The reading carries the ownership back to the setting of the net: the game is the deceased's estate. al-Inṣāf (v07:p260): «فإن الصيد يكون للناصب. فيدخل ثلثه في الوصية وهو صحيح. وهو المذهب»; al-Iqnāʿ (v03:p067) likewise. On the madhhab side. Follow-on: one who trips on the net after the death (liability from the estate), the same khilāf."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f005",
+      "encoder": "ownership_relates_back",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "settled_cause": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "«والمذهب أن الولاء للسيد الأول», the cause concluded in his ownership",
+          "ruling": true
+        },
+        {
+          "who": "the riwāya that it is the heirs', the cause realised in their ownership",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A slave under kitāba whose master dies before he pays, who pays the heirs and is freed: «فهل الولاء للسيد الذي كاتبه لانعقاد سببه في ملكه أو للورثة المؤدى إليهم لتحقق السبب في ملكهم؟ على روايتين والمذهب أن الولاء للسيد الأول». The reading has the walāʾ follow the cause concluded in the master's ownership. al-Inṣāf (v07:p375): «والصحيح من المذهب: أنه إذا عتق عليه بالكتابة: يكون له عليه الولاء ... وعنه في المكاتب (إذا أدى إلى الورثة: يكون ولاؤه لهم»; Kashshāf (v04:p499): «ولو أدى المكاتب إلى الورثة ... فولاؤه للموروث». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f006",
+      "encoder": "ownership_relates_back",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "settled_cause": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Qāḍī (al-Mujarrad): suspended, the walāʾ the mukātab's once he pays and is freed (ẓāhir of al-Muqniʿ per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "Abū Bakr, preferred by al-Qāḍī in al-Khilāf: the walāʾ settles on the master (al-Iqnāʿ, Kashshāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A mukātab who writes a kitāba for his own slave, who pays and is freed before the first mukātab pays (or whom he frees for property): «ففي ولايته وجهان». Abū Bakr: the walāʾ settles on the master «لثبوت الولاء على هذا العتق في حال ليس مولاه من أهل الميراث»; al-Qāḍī in al-Mujarrad: suspended, and if the first mukātab pays and is freed «فالولاء له لانعقاده له قبل عتقه». The reading carries the walāʾ back to the cause concluded for the mukātab: it is his once he is freed. al-Inṣāf (v07:p375) gives it as «ظاهر كلام المصنف» and al-Qāḍī's in al-Mujarrad, without a taṣḥīḥ; but al-Iqnāʿ (v03:p147) and Kashshāf (v04:p548) decide «وولاء من يعتقه أو يكاتبه لسيده ولو مع عدم عجزه ورجوعه إلى الرق», save where the first pays before the second: off the madhhab side, so a ledger entry. Follow-ons in the record: Ibn Rajab's farq for a kitāba made without the master's permission; the slave freeing with permission (Ṭalḥa al-ʿĀqūlī suspended, al-Qāḍī and Aḥmad's naṣṣ: the master's); the convert with more than four wives (ʿidda from the choice or the conversion, «على وجهين»); the fuḍūlī's ratified contract («على وجهين», Ibn Rajab noting «ولكن السبب هنا غير مستقر», the reading's own exception)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f007",
+      "encoder": "worship_ruled_from_start",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "condition_within_time": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the wajh that it is ruled a fast from the day's beginning (al-Qāḍī in al-Mujarrad, Abū al-Khaṭṭāb in al-Hidāya, al-Majd per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "the wajh that it is a fast only from the intention («ظاهر كلام أحمد»; the madhhab per al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "One who intends a voluntary (taṭawwuʿ) fast in the middle of the day: «فهل يحكم له بحكم الصيام من أوله أم حين نواه فلا يثاب على صومه إلا من حين النية على وجهين. والثاني: ظاهر كلام أحمد». Of the class attached to the qāʿida; the intention, attained within the day, suffices, and the reading rules the fast from the day's beginning. al-Inṣāf (v03:p298): «يحكم بالصوم الشرعي المثاب عليه من وقت النية. على الصحيح من المذهب. نقله أبو طالب»: off the madhhab side, so a ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f008",
+      "encoder": "worship_ruled_from_start",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "condition_within_time": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "«أشهرهما الإجزاء»: it suffices for the ḥajj of Islam",
+          "ruling": true
+        },
+        {
+          "who": "the other riwāya: it does not suffice",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A boy who comes of age, or a slave freed, while in iḥrām before the time of the standing passes: «فهل يجزئهما عن حجة الإسلام على روايتين أشهرهما الإجزاء». The condition is attained within the ḥajj's time; the reading rules it as a ḥajj whose conditions were met from its start, so it suffices. The record gives three groundings of the iḥrām (suspended «مراعى», what preceded counted as nothing, or turning on iḥrām as condition («شرط محض») or pillar). al-Muntahā (v02:p058): «ويجزيان من أسلم أو أفاق ثم أحرم أو بلغ أو عتق محرما قبل دفع من عرفة», though on the second grounding («وأن ما قبله تطوع لم ينقلب فرضا»), noting «وقال جماعة ينعقد إحرامه موقوفا»: the ruling is on the madhhab side, the reading's grounding is the jamāʿa's."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f001",
+      "encoder": "occurrence_state_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "suspension_barred": true,
+        "occurrence_barred": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "«والمذهب أن الاعتبار بحال الموت», most reporting no dispute",
+          "ruling": true
+        },
+        {
+          "who": "the weak reported khilāf: the state at the bequest governs",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A bequest to one apparently an heir who is not one at death, or the reverse: «والمذهب أن الاعتبار بحال الموت ولم يحك الأكثرون فيه خلافا فإن الوصية للورثة لا يمكن أن تلزم والوصية للأجنبي بالثلث فما دون لا يمكن أن تقف على الإجازة ومنهم من حكى خلافا ضعيفا في الاعتبار بحال الوصية». Taking the state of the bequest leads to what the sharʿ bars, so that side is dropped and the state at death governs. al-Inṣāf (v07:p200): «هذا الصحيح من المذهب. وعليه الأصحاب. وأكثرهم لم يحك فيه خلافا: أن الاعتبار في الوصية بحال الموت». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f002",
+      "encoder": "occurrence_state_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "suspension_barred": false,
+        "occurrence_barred": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Abū Bakr and Ibn Abī Mūsā: from the third, the state at occurrence (the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "the other wajh (a riwāya per al-Qāḍī's Khilāf): from the whole estate, the state at suspension",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Manumission suspended in health on a condition («علق … بشرط») met in his illness: «فهل يعتق من الثلث أو من رأس المال؟ على وجهين، وحكى القاضي في خلافه روايتين واختار أبو بكر وابن أبي موسى أنه يعتق من الثلث», where the condition is not of his own doing (of his doing it is from the third «بغير خلاف»). The reading takes the state at occurrence, illness: from the third. al-Inṣāf (v07:p166): «فالصحيح من المذهب: أن يكون من الثلث»; al-Muntahā (v03:p420) and al-Iqnāʿ (v03:p041) likewise. On the madhhab side. Follow-ons: Aḥmad's naṣṣ (riwāyat Ṣāliḥ) on the oath not to go out to Basra (a taʿlīq of ṭalāq: «أنت كذا وكذا وإن لم أخرج إلى البصرة»), and the fetus freed in health and born in illness."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f003",
+      "encoder": "occurrence_state_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "suspension_barred": false,
+        "occurrence_barred": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the manṣūṣ (riwāyat Ṣāliḥ and Muhannā): she inherits",
+          "ruling": true
+        },
+        {
+          "who": "the riwāya mukharraja from accusing her in health and the liʿān in illness: she does not (the madhhab per al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Divorce suspended in health on a condition met in his illness, not of his doing: «فهل ترثه أم لا على روايتين والمنصوص أنها ترثه في رواية صالح ومهنا والأخرى مخرجة من مسألة قذفها في الصحة وملاعنتها في المرض». The reading takes the state at occurrence, a divorce in the illness of death: she inherits. al-Inṣāf (v07:p355): «إذا علقه في الصحة على شرط، فوجد في المرض، فالصحيح من المذهب: أنه كطلاق الصحيح ... وعنه: أنه كمتهم فيه»: off the madhhab side, so a ledger entry. Follow-ons in the record (each separately segmented): the fāsiq made executor (f004), the house partly fallen (f005)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f004",
+      "encoder": "occurrence_state_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "suspension_barred": false,
+        "occurrence_barred": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the wajh that it is valid, the qualities sufficing at the death (one of al-Muwaffaq's two wujūh; «صححه في التصحيح» per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "the wajh that it is not, the qualities required at the appointment too (the madhhab per al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Appointing a fāsiq executor who is upright at the death, on our saying the fāsiq may not be appointed: «فهل يصح الوصية ... على وجهين». The reading takes the state at the death: valid. al-Inṣāf (v07:p289) sets out four wujūh: «والثاني: يكفي وجودها عند الموت فقط ... صححه في التصحيح»; «والثالث: يعتبر وجودها عند الموت والوصية فقط. وهو المذهب»; al-Iqnāʿ (v03:p077) and Sharḥ al-Muntahā (v02:p494) require the qualities at both: off the madhhab side, so a ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f005",
+      "encoder": "occurrence_state_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "suspension_barred": false,
+        "occurrence_barred": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the wajh that the rubble does not enter, the house being taken as it is at the death",
+          "ruling": true
+        },
+        {
+          "who": "the wajh that it enters, being of the house bequeathed (al-Iqnāʿ, Kashshāf; Ibn Ḥamdān's «الأنقاض له»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A house bequeathed to Zayd, part of whose building falls before the death: «فهل يدخل ملك الأنقاض في الوصية؟ على وجهين», and likewise a building added after the bequest, as Abū al-Khaṭṭāb reports. The reading takes the state at the death, when the rubble is no longer of the house: it does not enter. al-Inṣāf (v07:p217) leaves the two wujūh unresolved; al-Iqnāʿ (v03:p055) and Kashshāf (v04:p351) decide by the state at the bequest: the added building is the heir's, «لا المنهدم منها لأن الأنقاض منها». Off the muʿtamad's side, so a ledger entry. The follow-on (the added building) the muʿtamad likewise gives by the bequest's state."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f006",
+      "encoder": "occurrence_state_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "suspension_barred": false,
+        "occurrence_barred": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the wajh that he is freed, the suspension met when he is free",
+          "ruling": true
+        },
+        {
+          "who": "the wajh that the suspension is void, made when he could not own (the madhhab per al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A slave who says «متى ملكت عبدا فهو حر», on the suspension of manumission on ownership being valid from a free man «كما هو المشهور من المذهب», then is freed and owns a slave: «فهل يعتق على وجهين». The reading takes the state at occurrence, a free owner: he is freed. al-Inṣāf (v07:p418): «(وإن قاله العبد: لم يصح، في أصح الوجهين) ... وهذا المذهب»: off the madhhab side, so a ledger entry. Follow-on: the mukātab's bequest made before his freedom, which al-Majd gave two wujūh by takhrīj."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f007",
+      "encoder": "occurrence_state_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "suspension_barred": false,
+        "occurrence_barred": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the wajh that three fall, by the state at occurrence (the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "the wajh that two fall, he owning no more at the suspension",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A slave who suspends a triple divorce, is freed, and the condition is then met: «فهل تطلق ثلاثا أو اثنين حيث لم يكن مالكا حال التعليق لأكثر منها؟ على وجهين». The reading takes the state at occurrence, a free husband: three. al-Inṣāf (v09:p167): «لزمته الثلاث، على الصحيح من المذهب»; al-Iqnāʿ (v04:p015): «فلو علق الطلاق الثلاث بشرط فوجد بعد عتقه طلقت ثلاث». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f008",
+      "encoder": "occurrence_state_governs",
+      "class": "derivable",
+      "facts": {
+        "suspension_barred": false,
+        "occurrence_barred": false
+      },
+      "expected": true,
+      "note": "Divorce suspended before consummation on Zayd's arrival; he consummates, and Zayd arrives while she menstruates: «فإنه يقع الطلاق بدعيا لا بمعنى الإثم به بل بمعنى أمره بالمراجعة فيه ولو كان قد علق طلاقا أو غيره على طلاق البدعة ترتب عليه ولم يحك الأصحاب فيه خلافا». The state at occurrence governs, with no dispute reported. Follow-on: «إن قمت فأنت طالق» and she rises menstruating, «قال في رعاية الانتصار مباح وفي الترغيب بدعي»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f001",
+      "encoder": "cancel_on_existence_valid",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "legitimate_purpose": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "«فالمذهب المنصوص عن أحمد أنه لا يصح»",
+          "ruling": false
+        },
+        {
+          "who": "the aṣḥāb who extend the second riwāya to all cases: it is valid",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Divorce suspended on marriage: «فالمذهب المنصوص عن أحمد أنه لا يصح ; لأن النكاح لا يقصد للطلاق عقيب العقد», some aṣḥāb extending a second riwāya to every case («ومنهم من خرج في الكل روايتين»). No purpose the sharʿ recognises; the reading voids the suspension. al-Inṣāf (v09:p059): «لم تطلق إذا تزوجها) ، هذا المذهب، وعليه الأصحاب، ونص عليه. (وعنه: تطلق)». On the madhhab side. Follow-ons: the oath (ḥalaf) to his wife not to marry over her, by a taʿlīq of ṭalāq on the new marriage (two riwāyas, a right of hers making it a purpose); a suspension made while in a marriage, on another marriage (Aḥmad's naṣṣ in riwāyat Ibn Manṣūr: valid); the slave-woman and the freed slave-woman (naṣṣ: valid)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f002",
+      "encoder": "cancel_on_existence_valid",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "legitimate_purpose": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "«والمذهب المنصوص صحته» (al-Khallāl and his companion admit no khilāf)",
+          "ruling": true
+        },
+        {
+          "who": "the second riwāya Ibn Ḥāmid and al-Qāḍī report: not valid",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Manumission suspended on ownership: «والمذهب المنصوص صحته ; لأن الملك يراد للعتق ويكون مقصودا كما في شراء ذي الرحم وغيره والخلال وصاحبه لا يثبتان في المذهب في ذلك خلافا وابن حامد والقاضي يحكيان في ذلك روايتين». The suspension serves a recognised purpose; the reading holds it valid. al-Inṣāf (v07:p417): «إحداهما: يصح وهو المذهب. وعليه أكثر الأصحاب». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f003",
+      "encoder": "cancel_on_existence_valid",
+      "class": "derivable",
+      "facts": {
+        "legitimate_purpose": true
+      },
+      "expected": true,
+      "note": "A vow (nadhr) suspended on ownership, «إن رزقني الله مالا فلله علي أن أتصدق به أو بشيء منه»: «فيصح ونقل الشيخ تقي الدين عليه بالاتفاق», with «ومنهم من عاهد الله لئن آتانا من فضله لنصدقن» [al-Tawba 75]. A recognised purpose; valid, with no dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f004",
+      "encoder": "cancel_on_existence_valid",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "legitimate_purpose": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the Talkhīṣ, «قياس المذهب»: valid (the madhhab per al-Inṣāf; al-Muntahā, Kashshāf)",
+          "ruling": true
+        },
+        {
+          "who": "Taqī al-Dīn: not valid, having no purpose but to bar the agency",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Suspending the revocation of an agency on its existence, or the agency on its revocation (the «دورية»): «ذكر صاحب التلخيص أن قياس المذهب صحة ذلك بناء على أن الوكالة قابلة للتعليق عندنا وكذلك فسخها وقال الشيخ تقي الدين لا يصح ; لأنه يؤدي إلى أن تصير العقود الجائزة لازمة ... وليس مقصود المعلق إيقاع الفسخ وإنما قصده الامتناع من التوكيل». The only statement on the purpose is Taqī al-Dīn's, that it has none the sharʿ recognises; on it the reading voids the suspension. The Talkhīṣ argues from another ground (agency admits suspension). al-Inṣāf (v05:p368): «وهو فسخ معلق بشرط ... والصحيح من المذهب: صحتها»; al-Muntahā (v02:p530) and Kashshāf (v03:p468) make the agent revoked by «كلما وكلتك فقد عزلتك», «فسخ معلق بشرط»: off the madhhab side, so a ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f005",
+      "encoder": "cancel_on_existence_valid",
+      "class": "derivable",
+      "facts": {
+        "legitimate_purpose": false
+      },
+      "expected": false,
+      "note": "Suspending the annulment of a sale by iqāla on the sale's existence, or of a marriage for a defect on the marriage's existence: «وقد صرح الأصحاب ببطلان ذلك منهم القاضي وابن عقيل وأبو الخطاب معللين بأنه وقع العقد قبل عقده». A contract whose own annulment is suspended on it would not be intended in itself; no purpose; void, with no dispute reported on the case. Ibn Rajab objects to the aṣḥāb's other taʿlīl («بأن الفسوخ لا تقبل التعليق») from Aḥmad's naṣṣ on «إن جئتني بالثمن إلى كذا وكذا وإلا فلا بيع بيننا», a suspension of annulment on another condition, not on the contract's existence."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f006",
+      "encoder": "cancel_on_existence_valid",
+      "class": "derivable",
+      "facts": {
+        "legitimate_purpose": false
+      },
+      "expected": false,
+      "note": "Suspending the revocation of a tadbīr on its existence: al-Qāḍī in al-Mujarrad, of one who says to his mudabbara «كلما ولدت ولدا فقد رجعت في تدبيره»: «لا يكون رجوعا ; لأن الرجوع إنما يصح في تدبير موجود ... كما لو قال: لعبده متى دبرتك فقد رجعت. لم يصح». No purpose; void, with no dispute reported."
+    }
+  ]
+}

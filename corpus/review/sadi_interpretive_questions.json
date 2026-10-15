@@ -182,7 +182,7 @@
    "status": "referenced",
    "established": [
     {
-     "ref": "src:openiti-insaf-shamela21609/v12:p008",
+     "ref": "src:openiti-insaf-shamela21609/v12:p009",
      "relation": "refines",
      "note": "The judge may invite one who confessed to a ḥadd to retract; al-Intiṣār: prompting the retraction is lawful. So in the ḥudūd a retraction is not inert.",
      "excerpt_ar": "للحاكم أن يعرض للمقر بحد أن يرجع عن إقراره، وقال في الانتصار: تلقينه الرجوع مشروع"
@@ -320,10 +320,10 @@
    "status": "referenced",
    "established": [
     {
-     "ref": "src:openiti-kawkab-shamela12019/v04:p442",
+     "ref": "src:openiti-kawkab-shamela12019/v04:p443",
      "relation": "agrees",
      "note": "'No harm and no reciprocal harm' is a principle our companions reasoned with in many matters; rulings are either for securing benefits or for repelling harms.",
-     "excerpt_ar": "لا ضرر ولا ضرار ... وقد علل أصحابنا بذلك في مسائل كثيرة"
+     "excerpt_ar": "لا ضرر ولا ضرار\" 4 وفي رواية \"ولا إضرار\" 5 بزيادة همزة في أوله، وألف بين الراءين6. وقد علل أصحابنا بذلك في مسائل كثيرة"
     }
    ],
    "analogies": [
@@ -453,7 +453,7 @@
      "note": "Lots distinguish the entitled when entitlement attaches to an unspecified one among equals, or to recover a specific entitled person lost in confusion; not used for lineage. The reading lacks the equality condition and the lineage exclusion."
     },
     {
-     "ref": "src:openiti-rajab-shamela21730/v01:p348",
+     "ref": "src:openiti-rajab-shamela21730/v01:p350",
      "relation": "contradicts",
      "note": "Takhrīj evidence (corpus/takhrij, cases q160.f007, f012, f015, f044): where a specific entitled person is lost in confusion, Ibn Rajab prescribes lots even though the property could be divided between the claimants; the reading's order (division before lots) holds only for an unspecified entitlement among equals.",
      "excerpt_ar": "إذا ادعى الوديعة اثنان فقال المودع: لا أعلم لمن هي منكما. فإنه يقرع بينهما، فمن قرع فصاحبه ، حلف وأخذها نص عليه أحمد، وهي من فروع مسألة تداعي عين بيد ثالث يعترف بأنها لأحدهما وسنذكرها إن شاء الله."
@@ -1027,7 +1027,7 @@
    "status": "referenced",
    "established": [
     {
-     "ref": "src:openiti-rajab-shamela21730/v01:p338",
+     "ref": "src:openiti-rajab-shamela21730/v01:p340",
      "relation": "contradicts",
      "note": "Takhrīj evidence (cases q159.f007, f008): with a known state and preponderant belief of its removal, Ibn Rajab holds to the aṣl and says preponderant belief does not suffice; at f013 he allows breaking the fast on preponderant belief of sunset «because time has indicators by which it is known». Equal grades, opposite rulings: the deciding fact is the indicator, not the grade.",
      "excerpt_ar": "إذا شك في طلوع الفجر في رمضان فإنه يباح له الأكل حتى يتيقن طلوعه نص عليه، أحمد، ولا عبرة في ذلك بغلبة الظن وبالقرائن ونحوها ما لم يكن مستندا إلى إخبار ثقة بالطلع."
@@ -1093,7 +1093,7 @@
     {
      "ref": "src:openiti-majmufatawa-shamela7289/v13:p117",
      "relation": "refines",
-     "excerpt_ar": "فرق بين اعتقاد الرجحان ورجحان الاعتقاد أما اعتقاد الرجحان فهو علم والمجتهد ما عمل إلا بذلك العلم وهو اعتقاد رجحان هذا على هذا وأما رجحان هذا الاعتقاد على هذا الاعتقاد فهو الظن",
+     "excerpt_ar": "فرق بين اعتقاد الرجحان ورجحان الاعتقاد أما اعتقاد الرجحان فهو علم والمجتهد ما عمل إلا بذلك العلم وهو اعتقاد رجحان هذا على هذا وأما رجحان هذا الاعتقاد على هذا الاعتقاد فهو الظن؛ لكن لم يكن ممن قال الله فيه: {إن يتبعون إلا الظن} بل هنا ظن رجحان هذا وظن رجحان ذاك وهذا الظن هو الراجح ورجحانه معلوم",
      "note": "Ibn Taymiyya: the jurist acts on knowledge of preponderance; only the preponderance of one belief over another is ẓann."
     },
     {
@@ -1168,6 +1168,72 @@
        "Usul.Qawaid.update_strength_mono"
       ]
      }
+    ]
+   }
+  },
+  {
+   "id": "IQ-22",
+   "rules": [
+    24
+   ],
+   "schemata": [
+    "S8-optimal"
+   ],
+   "pins": [
+    "Usul.Muamalat.q24_first_has_priority",
+    "Usul.Muamalat.q24_is_optimal"
+   ],
+   "commitment": "Q24 is encoded as an established rule. The one ḥadīth al-Saʿdī cites for it («من سبق إلى ما لم يسبق إليه مسلم فهو أحق به») is graded ḍaʿīf by al-Albānī (al-Irwāʾ 1555), so under the ḥadīth track's single gate (Hadith.Verdict.Hujja) it is not a dalīl; under the uṣūl track's adilla order (roadmap §2.2: mursal / non-fabricated ḍaʿīf ≻ qiyās) it may be. Surfaced by the H8 join (corpus/hadith/irwa_join.json).",
+   "alternatives": [
+    "Aḥmad's fourth aṣl (Iʿlām): the ḍaʿīf that is not bāṭil, munkar or through a suspected narrator is acted on before qiyās when nothing in the chapter opposes it. On this reading the ḥadīth still supports Q24 within the Ḥanbalī track, and the two tracks' gates differ.",
+    "Ibn al-Qayyim's gloss on the same aṣl: Aḥmad's ḍaʿīf is «قسيم الصحيح وقسم من أقسام الحسن». If his usable ḍaʿīf is the later ḥasan, a ḥadīth al-Albānī grades ḍaʿīf (below ḥasan) falls outside it: the disagreement is terminological, and Q24 needs another dalīl.",
+    "Q24 stands without the ḥadīth: al-ibāḥa al-aṣliyya for what has no protected owner (al-Saʿdī's own gloss: «ما ليس له مالك محترم») with the general rule that the earlier claim prevails (S8). The rule survives; only its cited naṣṣ is lost."
+   ],
+   "if_changed": "Nothing proved changes: q24_first_has_priority and q24_is_optimal do not take the ḥadīth as a hypothesis. What changes is Q24's recorded support: the Ḥanbalī fourth aṣl (alternative 1), the ibāḥa aṣliyya and S8 (alternative 3), or no textual dalīl. The question also fixes how the seam is read across tracks: whether Hadith.Verdict.Hujja is the gate for the uṣūl track's ḥadīth dalīls, or only the ḥadīth track's.",
+   "route": "halaqa:shared/usul-k/evidence-order.md",
+   "status": "adopted",
+   "established": [
+    {
+     "ref": "src:shamela-22592/v06:p011",
+     "relation": "contradicts",
+     "excerpt_ar": "من سبق إلى ما لم يسبق إليه مسلم فهو أحق به \" رواه أبو داود (ص ٤٥٥) . * ضعيف",
+     "note": "al-Albānī, al-Irwāʾ 1555: the ḥadīth al-Saʿdī cites for Q24 is ḍaʿīf."
+    },
+    {
+     "ref": "sadi.qawaid_jamia.archive_pdf1995.q024",
+     "relation": "bears-on",
+     "note": "al-Saʿdī cites this ḥadīth as Q24's dalīl («لقوله ﷺ»)."
+    },
+    {
+     "ref": "src:openiti-ilam-shamela11496/v01:p025",
+     "relation": "refines",
+     "excerpt_ar": "الأصل الرابع: الأخذ بالمرسل والحديث الضعيف، إذا لم يكن في الباب شيء يدفعه، وهو الذي رجحه على القياس، وليس المراد بالضعيف عنده الباطل ولا المنكر ولا ما في روايته متهم بحيث لا يسوغ الذهاب إليه فالعمل به؛ بل الحديث الضعيف عنده قسيم الصحيح وقسم من أقسام الحسن",
+     "note": "Ibn al-Qayyim on Aḥmad's fourth aṣl: the non-fabricated ḍaʿīf before qiyās, where his ḍaʿīf includes the later ḥasan."
+    },
+    {
+     "ref": "src:shamela-11122/v01:p034",
+     "relation": "contradicts",
+     "excerpt_ar": "القاعدة الثانية عشرة ترك العمل بالحديث الضعيف في فضائل الأعمال",
+     "note": "al-Albānī, Tamām al-Minna Q12: no acting on a ḍaʿīf ḥadīth, even in faḍāʾil."
+    }
+   ],
+   "analogies": [],
+   "decision": {
+    "by": "human",
+    "date": "2026-10-10",
+    "instruction": "yes the gate does apply to the usul Hadith issues",
+    "adopted": "The ḥadīth gate (Hadith.Verdict.Hujja) applies to every ḥadīth offered as dalīl in the uṣūl track, in whatever slot of Aḥmad's order it is offered. Aḥmad's fourth aṣl keeps its place, read with Ibn al-Qayyim's gloss (his ḍaʿīf is «قسم من أقسام الحسن»): it admits ḥasan and above, nothing the gate rejects. Q24's cited ḥadīth (al-Irwāʾ 1555, ḍaʿīf) is therefore not a dalīl.",
+    "lean": [
+     "Usul.Seam.admitted",
+     "Usul.Seam.admitted_iff_yaqin",
+     "Usul.Seam.daif_not_admitted",
+     "Usul.Seam.mursalDaif_admits_only_hasan_up",
+     "Usul.Seam.q24_dalil_not_admitted"
+    ],
+    "scope": "Encoding E of this repository: Usul.Seam is the one import edge from the ḥadīth track into the uṣūl kernel. No proved theorem changes: q24_first_has_priority and q24_is_optimal never took the ḥadīth as a hypothesis. The seam check over joined dalīls is HadithTest/Seam.lean.",
+    "follow_up": [
+     "Q24's remaining support is not decided here: alternative 3 (al-ibāḥa al-aṣliyya for what has no protected owner, with S8) is the candidate, for review.",
+     "Every further ḥadīth dalīl the H8 join finds is subject to the same gate; a failing one is surfaced, not silently dropped."
     ]
    }
   }

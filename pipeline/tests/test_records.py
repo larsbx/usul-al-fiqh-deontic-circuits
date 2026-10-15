@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 
 import jsonschema
+import pytest
 
 from usul_corpus.records import qaida_records, unit_tags
 from usul_corpus.segment import Unit
@@ -17,6 +18,16 @@ def test_qaida_records_emit_parent_then_furu_and_validate():
     assert f1["qaida"] == q["id"] and f1["id"] == q["id"] + ".f001"
     assert f2["case_ar"] == "إذا تكلم في الصلاة ناسيا"
     for r in (q, f1, f2):
+        jsonschema.validate(r, SCHEMA)
+
+
+def test_opening_example_is_f000_and_keeps_later_ids():
+    u = Unit(6, "القاعدة 6", "يجزئه", (1, 8), ("إذا كفر بالإطعام",), False, opening="إذا أحج المعضوب")
+    q, f0, f1 = qaida_records(WORK, "openiti-x", "headed", "q006", u)
+    assert (f0["id"], f1["id"]) == (q["id"] + ".f000", q["id"] + ".f001")
+    assert f0["case_ar"] == "إذا أحج المعضوب" and f0["extraction"]["method"] == "headed+opening_example"
+    assert q["furu_count"] == 2
+    for r in (q, f0, f1):
         jsonschema.validate(r, SCHEMA)
 
 
@@ -189,3 +200,67 @@ def test_citation_maps_are_grounded():
     for mod in ("Qiyas", "Jadal", "QiyasLimits"):
         names = re.findall(r"^theorem (\S+)", (root / f"formal/lean/Usul/{mod}.lean").read_text(), re.M)
         assert names and all(f"Usul.{mod}.{n}" in grounded_all for n in names), mod
+
+
+def test_research_questions_are_grounded():
+    """The research register: schema-valid; every source is a verbatim excerpt from a registered witness
+    on the cited page (checked where cached); every pin is a Lean constant; nothing is decided by an agent."""
+    import re as _re
+    root = Path(__file__).parents[2]
+    reg = json.loads((root / "corpus/review/research_questions.json").read_text(encoding="utf-8"))
+    jsonschema.validate(reg, json.loads((root / "schemas/research_question.schema.json").read_text()))
+    witnesses = {w["id"] for work in json.loads((root / "corpus/registry.json").read_text())["works"] for w in work["witnesses"]}
+    lean_defs = {m.split(".")[-1] for p in (root / "formal/lean").rglob("*.lean") if ".lake" not in p.parts
+                 for m in _re.findall(r"^\s*(?:def|theorem|abbrev|inductive|structure)\s+([\w.']+)", p.read_text(encoding="utf-8"), _re.M)}
+    for q in reg["questions"]:
+        assert all(pin.split(".")[-1] in lean_defs for pin in q["pins"]), q["id"]
+        assert q["status"] != "decided" or q["decision"]["by"] == "human", q["id"]
+        for s in q["sources"]:
+            wid, vol, page = _re.fullmatch(r"src:([a-z0-9-]+)/v(\d+):p(\d+)", s["ref"]).groups()
+            assert wid in witnesses, s["ref"]
+            cached = root / ".cache/corpus" / f"{wid}.txt"
+            assert s["excerpt_ar"].strip(), s["ref"]  # an empty excerpt would match every page
+            if cached.exists():
+                from usul_corpus.reception import pages
+                marker = f"PageV{int(vol):02d}P{int(page):03d}"
+                body = next((b for loc, b in pages(cached.read_text(encoding="utf-8")) if loc == marker), "")
+                assert s["excerpt_ar"] in body, s["ref"]
+
+
+def test_a_build_that_skips_a_witness_keeps_its_previous_audit():
+    """Rebuilding where a witness is not cached (e.g. no OCR output) must not drop its audit entries,
+    nor recompute its work's consensus from the remaining witnesses."""
+    from usul_corpus.__main__ import merge_audit
+    previous = {"a": {"work": "w1", "found": 5}, "a#index": {"work": "w1"}, "b": {"work": "w1", "found": 4},
+                "consensus:w1": {"from": "a+b"}, "c": {"work": "w2", "found": 1}}
+    fresh = {"b": {"work": "w1", "found": 6}, "consensus:w1": {"from": "b alone"}, "c": {"work": "w2", "found": 2}}
+    merged = merge_audit(previous, fresh, skipped={"a": "w1"})
+    assert merged == {"a": {"work": "w1", "found": 5}, "a#index": {"work": "w1"}, "b": {"work": "w1", "found": 6},
+                      "c": {"work": "w2", "found": 2}, "consensus:w1": {"from": "a+b"}}
+
+
+ROOT = Path(__file__).parents[2]
+RAJAB = "openiti-rajab-shamela21730"
+
+
+def test_recovered_opening_follows_its_qaida_and_keeps_every_id():
+    from usul_corpus.records import with_recovered
+    q = {"id": "w.q001", "record_type": "qaida", "furu_count": 1}
+    f0, f1 = ({"id": f"w.q001.f00{k}", "record_type": "far", "qaida": "w.q001"} for k in (0, 1))
+    late = {"id": "w.q001.f000_2", "record_type": "far", "qaida": "w.q001"}
+    assert [r["id"] for r in with_recovered([q, f0, f1], [late])] == ["w.q001", "w.q001.f000", "w.q001.f000_2", "w.q001.f001"]
+    assert with_recovered([q, f1], [f0])[1] == f0 and with_recovered([q, f1], [f0])[0]["furu_count"] == 2
+
+
+def test_rajab_recovered_openings_are_in_the_records_and_on_the_witness():
+    from usul_corpus.__main__ import verified_openings
+    receipt = json.loads((ROOT / f"corpus/segmentation/{RAJAB}-opening.json").read_text())
+    records = [json.loads(line) for line in (ROOT / f"corpus/records/{RAJAB}.jsonl").read_text().splitlines()]
+    assert all(r in records for r in receipt["records"]) and len(receipt["records"]) == 11
+    for q in (r for r in records if r["record_type"] == "qaida"):
+        assert q["furu_count"] == sum(r.get("qaida") == q["id"] for r in records)
+    text = next((p.read_text(encoding="utf-8") for p in (ROOT / ".cache/corpus" / f"{RAJAB}.txt", ROOT / f"corpus/texts/{RAJAB}.txt")
+                 if p.exists() and not p.read_text(encoding="utf-8").startswith("version https://git-lfs")), None)
+    if text is None:
+        pytest.skip(f"{RAJAB} not cached")
+    assert verified_openings(receipt, RAJAB, text) == receipt["records"]

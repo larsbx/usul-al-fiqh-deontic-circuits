@@ -1,0 +1,1911 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "source_sha256": "621fcd30c854a45407a5c303de8656c402eab4c59abde884a06038348ffbb205",
+  "method": "LLM-authored direct reading of question bodies; no answers or existing case facts used to populate roles.",
+  "selection": "Purposive first batch covering multiple actors, negation, uncertainty, hypothetical conditions, time and title leakage; not representative.",
+  "records": [
+    {
+      "source_id": "islamqa.10284",
+      "text_sha256": "e0460dcdef13141bdcf403778762307af82b98770e1378fc4588dd84c879bdf2",
+      "status": "candidate",
+      "propositions": [
+        {
+          "id": "islamqa.10284.p1",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.10284",
+            "text_sha256": "e0460dcdef13141bdcf403778762307af82b98770e1378fc4588dd84c879bdf2",
+            "start": 34,
+            "end": 59,
+            "quote": "عثرت على شاة ضالة في البر"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "questioner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.10284",
+                  "text_sha256": "e0460dcdef13141bdcf403778762307af82b98770e1378fc4588dd84c879bdf2",
+                  "start": 34,
+                  "end": 38,
+                  "quote": "عثرت"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "find stray sheep",
+              "evidence": [
+                {
+                  "source_id": "islamqa.10284",
+                  "text_sha256": "e0460dcdef13141bdcf403778762307af82b98770e1378fc4588dd84c879bdf2",
+                  "start": 34,
+                  "end": 38,
+                  "quote": "عثرت"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "stray sheep",
+              "evidence": [
+                {
+                  "source_id": "islamqa.10284",
+                  "text_sha256": "e0460dcdef13141bdcf403778762307af82b98770e1378fc4588dd84c879bdf2",
+                  "start": 43,
+                  "end": 51,
+                  "quote": "شاة ضالة"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        {
+          "id": "islamqa.10284.p2",
+          "status": "candidate",
+          "modality": "uncertain",
+          "polarity": "negative",
+          "scope": {
+            "source_id": "islamqa.10284",
+            "text_sha256": "e0460dcdef13141bdcf403778762307af82b98770e1378fc4588dd84c879bdf2",
+            "start": 133,
+            "end": 151,
+            "quote": "وربما لا أجد صاحبه"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "questioner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.10284",
+                  "text_sha256": "e0460dcdef13141bdcf403778762307af82b98770e1378fc4588dd84c879bdf2",
+                  "start": 142,
+                  "end": 145,
+                  "quote": "أجد"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "find owner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.10284",
+                  "text_sha256": "e0460dcdef13141bdcf403778762307af82b98770e1378fc4588dd84c879bdf2",
+                  "start": 142,
+                  "end": 151,
+                  "quote": "أجد صاحبه"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "owner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.10284",
+                  "text_sha256": "e0460dcdef13141bdcf403778762307af82b98770e1378fc4588dd84c879bdf2",
+                  "start": 146,
+                  "end": 151,
+                  "quote": "صاحبه"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        }
+      ],
+      "bank_mappings": [
+        {
+          "proposition_id": "islamqa.10284.p1",
+          "encoder": "luqata",
+          "facts": {
+            "year_passed": {
+              "proposition_id": "islamqa.10284.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            },
+            "ownable": {
+              "proposition_id": "islamqa.10284.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.104241",
+      "text_sha256": "28da90facbcb72ae75f40e8f3c842df4f9335f47675fbbf217587493bdd42cba",
+      "status": "candidate",
+      "propositions": [
+        {
+          "id": "islamqa.104241.p1",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.104241",
+            "text_sha256": "28da90facbcb72ae75f40e8f3c842df4f9335f47675fbbf217587493bdd42cba",
+            "start": 43,
+            "end": 71,
+            "quote": "أخذت رشوة مبالغ نقدية وهدايا"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "questioner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.104241",
+                  "text_sha256": "28da90facbcb72ae75f40e8f3c842df4f9335f47675fbbf217587493bdd42cba",
+                  "start": 43,
+                  "end": 47,
+                  "quote": "أخذت"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "receive bribe",
+              "evidence": [
+                {
+                  "source_id": "islamqa.104241",
+                  "text_sha256": "28da90facbcb72ae75f40e8f3c842df4f9335f47675fbbf217587493bdd42cba",
+                  "start": 43,
+                  "end": 52,
+                  "quote": "أخذت رشوة"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "money and gifts",
+              "evidence": [
+                {
+                  "source_id": "islamqa.104241",
+                  "text_sha256": "28da90facbcb72ae75f40e8f3c842df4f9335f47675fbbf217587493bdd42cba",
+                  "start": 53,
+                  "end": 71,
+                  "quote": "مبالغ نقدية وهدايا"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        {
+          "id": "islamqa.104241.p2",
+          "status": "candidate",
+          "modality": "hypothetical",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.104241",
+            "text_sha256": "28da90facbcb72ae75f40e8f3c842df4f9335f47675fbbf217587493bdd42cba",
+            "start": 114,
+            "end": 158,
+            "quote": "وإذا تعذر إرجاع هذه الأشياء لصاحبها فما الحل"
+          },
+          "roles": {
+            "actor": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "act": {
+              "status": "candidate",
+              "value": "return property to owner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.104241",
+                  "text_sha256": "28da90facbcb72ae75f40e8f3c842df4f9335f47675fbbf217587493bdd42cba",
+                  "start": 124,
+                  "end": 149,
+                  "quote": "إرجاع هذه الأشياء لصاحبها"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "property",
+              "evidence": [
+                {
+                  "source_id": "islamqa.104241",
+                  "text_sha256": "28da90facbcb72ae75f40e8f3c842df4f9335f47675fbbf217587493bdd42cba",
+                  "start": 130,
+                  "end": 141,
+                  "quote": "هذه الأشياء"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "candidate",
+              "value": "owner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.104241",
+                  "text_sha256": "28da90facbcb72ae75f40e8f3c842df4f9335f47675fbbf217587493bdd42cba",
+                  "start": 143,
+                  "end": 149,
+                  "quote": "صاحبها"
+                }
+              ]
+            },
+            "condition": {
+              "status": "candidate",
+              "value": "return is infeasible",
+              "evidence": [
+                {
+                  "source_id": "islamqa.104241",
+                  "text_sha256": "28da90facbcb72ae75f40e8f3c842df4f9335f47675fbbf217587493bdd42cba",
+                  "start": 115,
+                  "end": 123,
+                  "quote": "إذا تعذر"
+                }
+              ]
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        }
+      ],
+      "bank_mappings": [
+        {
+          "proposition_id": "islamqa.104241.p2",
+          "encoder": "unknown_owner",
+          "facts": {
+            "owner_identifiable": {
+              "proposition_id": "islamqa.104241.p2",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.108549",
+      "text_sha256": "a703272cd156210896b5361312c7786f16f9f8017989656707641491165ef7e7",
+      "status": "candidate",
+      "propositions": [
+        {
+          "id": "islamqa.108549.p1",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.108549",
+            "text_sha256": "a703272cd156210896b5361312c7786f16f9f8017989656707641491165ef7e7",
+            "start": 70,
+            "end": 122,
+            "quote": "رأيت نزول السائل الأصفر قبل أذان الفجر بحوالي ساعتين"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "questioner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.108549",
+                  "text_sha256": "a703272cd156210896b5361312c7786f16f9f8017989656707641491165ef7e7",
+                  "start": 70,
+                  "end": 74,
+                  "quote": "رأيت"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "observe yellow discharge",
+              "evidence": [
+                {
+                  "source_id": "islamqa.108549",
+                  "text_sha256": "a703272cd156210896b5361312c7786f16f9f8017989656707641491165ef7e7",
+                  "start": 70,
+                  "end": 93,
+                  "quote": "رأيت نزول السائل الأصفر"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "yellow discharge",
+              "evidence": [
+                {
+                  "source_id": "islamqa.108549",
+                  "text_sha256": "a703272cd156210896b5361312c7786f16f9f8017989656707641491165ef7e7",
+                  "start": 80,
+                  "end": 93,
+                  "quote": "السائل الأصفر"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "candidate",
+              "value": "approximately two hours before dawn call",
+              "evidence": [
+                {
+                  "source_id": "islamqa.108549",
+                  "text_sha256": "a703272cd156210896b5361312c7786f16f9f8017989656707641491165ef7e7",
+                  "start": 94,
+                  "end": 122,
+                  "quote": "قبل أذان الفجر بحوالي ساعتين"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "islamqa.108549.p2",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "negative",
+          "scope": {
+            "source_id": "islamqa.108549",
+            "text_sha256": "a703272cd156210896b5361312c7786f16f9f8017989656707641491165ef7e7",
+            "start": 130,
+            "end": 167,
+            "quote": "ولم أرى هل توقف نزوله قبل الفجر أم لا"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "questioner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.108549",
+                  "text_sha256": "a703272cd156210896b5361312c7786f16f9f8017989656707641491165ef7e7",
+                  "start": 134,
+                  "end": 137,
+                  "quote": "أرى"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "observe whether discharge stopped",
+              "evidence": [
+                {
+                  "source_id": "islamqa.108549",
+                  "text_sha256": "a703272cd156210896b5361312c7786f16f9f8017989656707641491165ef7e7",
+                  "start": 134,
+                  "end": 151,
+                  "quote": "أرى هل توقف نزوله"
+                }
+              ]
+            },
+            "object": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "affected_party": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "candidate",
+              "value": "before dawn",
+              "evidence": [
+                {
+                  "source_id": "islamqa.108549",
+                  "text_sha256": "a703272cd156210896b5361312c7786f16f9f8017989656707641491165ef7e7",
+                  "start": 152,
+                  "end": 161,
+                  "quote": "قبل الفجر"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "bank_mappings": [
+        {
+          "proposition_id": "islamqa.108549.p2",
+          "encoder": "asl_zahir",
+          "facts": {
+            "asl_grade": {
+              "proposition_id": "islamqa.108549.p2",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            },
+            "zahir_grade": {
+              "proposition_id": "islamqa.108549.p2",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            },
+            "amara": {
+              "proposition_id": "islamqa.108549.p2",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.126387",
+      "text_sha256": "720ee15f48727d563c633a198277ad708d17e2a25e467a1c1ebfbed59dac2c44",
+      "status": "candidate",
+      "propositions": [
+        {
+          "id": "islamqa.126387.p1",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.126387",
+            "text_sha256": "720ee15f48727d563c633a198277ad708d17e2a25e467a1c1ebfbed59dac2c44",
+            "start": 39,
+            "end": 81,
+            "quote": "وجدت خمسين ريالاً أثناء رمي الجمار في الحج"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "questioner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.126387",
+                  "text_sha256": "720ee15f48727d563c633a198277ad708d17e2a25e467a1c1ebfbed59dac2c44",
+                  "start": 39,
+                  "end": 43,
+                  "quote": "وجدت"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "find money",
+              "evidence": [
+                {
+                  "source_id": "islamqa.126387",
+                  "text_sha256": "720ee15f48727d563c633a198277ad708d17e2a25e467a1c1ebfbed59dac2c44",
+                  "start": 39,
+                  "end": 43,
+                  "quote": "وجدت"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "fifty riyals",
+              "evidence": [
+                {
+                  "source_id": "islamqa.126387",
+                  "text_sha256": "720ee15f48727d563c633a198277ad708d17e2a25e467a1c1ebfbed59dac2c44",
+                  "start": 44,
+                  "end": 56,
+                  "quote": "خمسين ريالاً"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "candidate",
+              "value": "during stoning ritual on pilgrimage",
+              "evidence": [
+                {
+                  "source_id": "islamqa.126387",
+                  "text_sha256": "720ee15f48727d563c633a198277ad708d17e2a25e467a1c1ebfbed59dac2c44",
+                  "start": 57,
+                  "end": 81,
+                  "quote": "أثناء رمي الجمار في الحج"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "bank_mappings": [
+        {
+          "proposition_id": "islamqa.126387.p1",
+          "encoder": "luqata",
+          "facts": {
+            "year_passed": {
+              "proposition_id": "islamqa.126387.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            },
+            "ownable": {
+              "proposition_id": "islamqa.126387.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.128510",
+      "text_sha256": "f93c33a5a35025b14dc3fea3f2126cbb813cd17ad5651e1bf32c7b9659a549b9",
+      "status": "candidate",
+      "propositions": [
+        {
+          "id": "islamqa.128510.p1",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.128510",
+            "text_sha256": "f93c33a5a35025b14dc3fea3f2126cbb813cd17ad5651e1bf32c7b9659a549b9",
+            "start": 53,
+            "end": 76,
+            "quote": "عثرت على قلم على المكتب"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "questioner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.128510",
+                  "text_sha256": "f93c33a5a35025b14dc3fea3f2126cbb813cd17ad5651e1bf32c7b9659a549b9",
+                  "start": 53,
+                  "end": 57,
+                  "quote": "عثرت"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "find pen on desk",
+              "evidence": [
+                {
+                  "source_id": "islamqa.128510",
+                  "text_sha256": "f93c33a5a35025b14dc3fea3f2126cbb813cd17ad5651e1bf32c7b9659a549b9",
+                  "start": 53,
+                  "end": 57,
+                  "quote": "عثرت"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "pen",
+              "evidence": [
+                {
+                  "source_id": "islamqa.128510",
+                  "text_sha256": "f93c33a5a35025b14dc3fea3f2126cbb813cd17ad5651e1bf32c7b9659a549b9",
+                  "start": 62,
+                  "end": 65,
+                  "quote": "قلم"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        }
+      ],
+      "bank_mappings": [
+        {
+          "proposition_id": "islamqa.128510.p1",
+          "encoder": "unknown_owner",
+          "facts": {
+            "owner_identifiable": {
+              "proposition_id": "islamqa.128510.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.164604",
+      "text_sha256": "473f4de66acf667936a37c77f9d84ef021225ba7493b9147b5e9ca17b63771ed",
+      "status": "candidate",
+      "propositions": [
+        {
+          "id": "islamqa.164604.p1",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.164604",
+            "text_sha256": "473f4de66acf667936a37c77f9d84ef021225ba7493b9147b5e9ca17b63771ed",
+            "start": 72,
+            "end": 130,
+            "quote": "عندي قطعه من أثاث في بيتي كسرها ضيف لي وهو من غير المسلمين"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "guest",
+              "evidence": [
+                {
+                  "source_id": "islamqa.164604",
+                  "text_sha256": "473f4de66acf667936a37c77f9d84ef021225ba7493b9147b5e9ca17b63771ed",
+                  "start": 104,
+                  "end": 110,
+                  "quote": "ضيف لي"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "break furniture",
+              "evidence": [
+                {
+                  "source_id": "islamqa.164604",
+                  "text_sha256": "473f4de66acf667936a37c77f9d84ef021225ba7493b9147b5e9ca17b63771ed",
+                  "start": 98,
+                  "end": 103,
+                  "quote": "كسرها"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "piece of furniture",
+              "evidence": [
+                {
+                  "source_id": "islamqa.164604",
+                  "text_sha256": "473f4de66acf667936a37c77f9d84ef021225ba7493b9147b5e9ca17b63771ed",
+                  "start": 77,
+                  "end": 89,
+                  "quote": "قطعه من أثاث"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "candidate",
+              "value": "questioner as possessor",
+              "evidence": [
+                {
+                  "source_id": "islamqa.164604",
+                  "text_sha256": "473f4de66acf667936a37c77f9d84ef021225ba7493b9147b5e9ca17b63771ed",
+                  "start": 72,
+                  "end": 76,
+                  "quote": "عندي"
+                }
+              ]
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        }
+      ],
+      "bank_mappings": [
+        {
+          "proposition_id": "islamqa.164604.p1",
+          "encoder": "itlaf",
+          "facts": {
+            "purpose": {
+              "proposition_id": "islamqa.164604.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            },
+            "mental": {
+              "proposition_id": "islamqa.164604.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.305083",
+      "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+      "status": "candidate",
+      "propositions": [
+        {
+          "id": "islamqa.305083.p1",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.305083",
+            "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+            "start": 228,
+            "end": 251,
+            "quote": "ذلك السائق لمسها قليلاً"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "other driver",
+              "evidence": [
+                {
+                  "source_id": "islamqa.305083",
+                  "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+                  "start": 228,
+                  "end": 238,
+                  "quote": "ذلك السائق"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "contact woman with vehicle",
+              "evidence": [
+                {
+                  "source_id": "islamqa.305083",
+                  "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+                  "start": 239,
+                  "end": 251,
+                  "quote": "لمسها قليلاً"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "woman",
+              "evidence": [
+                {
+                  "source_id": "islamqa.305083",
+                  "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+                  "start": 239,
+                  "end": 244,
+                  "quote": "لمسها"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        {
+          "id": "islamqa.305083.p2",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "negative",
+          "scope": {
+            "source_id": "islamqa.305083",
+            "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+            "start": 661,
+            "end": 684,
+            "quote": "بأنني لم ألمسها بسيارتي"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "questioner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.305083",
+                  "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+                  "start": 661,
+                  "end": 666,
+                  "quote": "بأنني"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "contact woman with own vehicle",
+              "evidence": [
+                {
+                  "source_id": "islamqa.305083",
+                  "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+                  "start": 670,
+                  "end": 684,
+                  "quote": "ألمسها بسيارتي"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "woman",
+              "evidence": [
+                {
+                  "source_id": "islamqa.305083",
+                  "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+                  "start": 670,
+                  "end": 676,
+                  "quote": "ألمسها"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        {
+          "id": "islamqa.305083.p3",
+          "status": "candidate",
+          "modality": "questioned",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.305083",
+            "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+            "start": 417,
+            "end": 451,
+            "quote": "هل يجب علينا أن نفترض أنها قد ماتت"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "questioner and other driver",
+              "evidence": [
+                {
+                  "source_id": "islamqa.305083",
+                  "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+                  "start": 424,
+                  "end": 429,
+                  "quote": "علينا"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "suppose woman has died",
+              "evidence": [
+                {
+                  "source_id": "islamqa.305083",
+                  "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+                  "start": 433,
+                  "end": 451,
+                  "quote": "نفترض أنها قد ماتت"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "woman",
+              "evidence": [
+                {
+                  "source_id": "islamqa.305083",
+                  "text_sha256": "7067de1590631a6788449539a130798957fec1bc43a9dc653ead28efce5ab244",
+                  "start": 439,
+                  "end": 443,
+                  "quote": "أنها"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        }
+      ],
+      "bank_mappings": [
+        {
+          "proposition_id": "islamqa.305083.p1",
+          "encoder": "itlaf",
+          "facts": {
+            "purpose": {
+              "proposition_id": "islamqa.305083.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            },
+            "mental": {
+              "proposition_id": "islamqa.305083.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            }
+          }
+        },
+        {
+          "proposition_id": "islamqa.305083.p2",
+          "encoder": "itlaf",
+          "facts": {
+            "purpose": {
+              "proposition_id": "islamqa.305083.p2",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            },
+            "mental": {
+              "proposition_id": "islamqa.305083.p2",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.328808",
+      "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+      "status": "candidate",
+      "propositions": [
+        {
+          "id": "islamqa.328808.p1",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.328808",
+            "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+            "start": 44,
+            "end": 83,
+            "quote": "أعطيت صديقي حقيبة سفر خاصة لي للسفر بها"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "questioner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.328808",
+                  "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+                  "start": 44,
+                  "end": 49,
+                  "quote": "أعطيت"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "lend travel bag",
+              "evidence": [
+                {
+                  "source_id": "islamqa.328808",
+                  "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+                  "start": 44,
+                  "end": 55,
+                  "quote": "أعطيت صديقي"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "travel bag",
+              "evidence": [
+                {
+                  "source_id": "islamqa.328808",
+                  "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+                  "start": 56,
+                  "end": 65,
+                  "quote": "حقيبة سفر"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "candidate",
+              "value": "friend",
+              "evidence": [
+                {
+                  "source_id": "islamqa.328808",
+                  "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+                  "start": 50,
+                  "end": 55,
+                  "quote": "صديقي"
+                }
+              ]
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        {
+          "id": "islamqa.328808.p2",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.328808",
+            "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+            "start": 97,
+            "end": 131,
+            "quote": "تم كسر الحقيبة من قبل خطوط الطيران"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "airline",
+              "evidence": [
+                {
+                  "source_id": "islamqa.328808",
+                  "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+                  "start": 119,
+                  "end": 131,
+                  "quote": "خطوط الطيران"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "break bag",
+              "evidence": [
+                {
+                  "source_id": "islamqa.328808",
+                  "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+                  "start": 100,
+                  "end": 111,
+                  "quote": "كسر الحقيبة"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "bag",
+              "evidence": [
+                {
+                  "source_id": "islamqa.328808",
+                  "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+                  "start": 104,
+                  "end": 111,
+                  "quote": "الحقيبة"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        {
+          "id": "islamqa.328808.p3",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "negative",
+          "scope": {
+            "source_id": "islamqa.328808",
+            "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+            "start": 221,
+            "end": 251,
+            "quote": "لا أعلم هل هي تستحق هذه القيمة"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "questioner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.328808",
+                  "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+                  "start": 224,
+                  "end": 228,
+                  "quote": "أعلم"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "know whether claimed value is justified",
+              "evidence": [
+                {
+                  "source_id": "islamqa.328808",
+                  "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+                  "start": 224,
+                  "end": 251,
+                  "quote": "أعلم هل هي تستحق هذه القيمة"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "claimed value",
+              "evidence": [
+                {
+                  "source_id": "islamqa.328808",
+                  "text_sha256": "e3336601e4f5f69b86222d3f938a580becc7d2ae5be0dc3988681aa60034a244",
+                  "start": 241,
+                  "end": 251,
+                  "quote": "هذه القيمة"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        }
+      ],
+      "bank_mappings": [
+        {
+          "proposition_id": "islamqa.328808.p2",
+          "encoder": "itlaf",
+          "facts": {
+            "purpose": {
+              "proposition_id": "islamqa.328808.p2",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            },
+            "mental": {
+              "proposition_id": "islamqa.328808.p2",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.345284",
+      "text_sha256": "82796a817eb9066622b4633b5cbe4a978e8c1b9c8376138f192272b25922ab3f",
+      "status": "candidate",
+      "propositions": [
+        {
+          "id": "islamqa.345284.p1",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.345284",
+            "text_sha256": "82796a817eb9066622b4633b5cbe4a978e8c1b9c8376138f192272b25922ab3f",
+            "start": 35,
+            "end": 60,
+            "quote": "ضربت دابة بالسيارة، وماتت"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "questioner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.345284",
+                  "text_sha256": "82796a817eb9066622b4633b5cbe4a978e8c1b9c8376138f192272b25922ab3f",
+                  "start": 35,
+                  "end": 39,
+                  "quote": "ضربت"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "strike animal with vehicle",
+              "evidence": [
+                {
+                  "source_id": "islamqa.345284",
+                  "text_sha256": "82796a817eb9066622b4633b5cbe4a978e8c1b9c8376138f192272b25922ab3f",
+                  "start": 35,
+                  "end": 53,
+                  "quote": "ضربت دابة بالسيارة"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "animal",
+              "evidence": [
+                {
+                  "source_id": "islamqa.345284",
+                  "text_sha256": "82796a817eb9066622b4633b5cbe4a978e8c1b9c8376138f192272b25922ab3f",
+                  "start": 40,
+                  "end": 44,
+                  "quote": "دابة"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        {
+          "id": "islamqa.345284.p2",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.345284",
+            "text_sha256": "82796a817eb9066622b4633b5cbe4a978e8c1b9c8376138f192272b25922ab3f",
+            "start": 78,
+            "end": 109,
+            "quote": "علما بأنه يترك الدابة في الطريق"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "owner referenced by pronoun",
+              "evidence": [
+                {
+                  "source_id": "islamqa.345284",
+                  "text_sha256": "82796a817eb9066622b4633b5cbe4a978e8c1b9c8376138f192272b25922ab3f",
+                  "start": 83,
+                  "end": 87,
+                  "quote": "بأنه"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "leave animal on road",
+              "evidence": [
+                {
+                  "source_id": "islamqa.345284",
+                  "text_sha256": "82796a817eb9066622b4633b5cbe4a978e8c1b9c8376138f192272b25922ab3f",
+                  "start": 88,
+                  "end": 109,
+                  "quote": "يترك الدابة في الطريق"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "animal",
+              "evidence": [
+                {
+                  "source_id": "islamqa.345284",
+                  "text_sha256": "82796a817eb9066622b4633b5cbe4a978e8c1b9c8376138f192272b25922ab3f",
+                  "start": 93,
+                  "end": 99,
+                  "quote": "الدابة"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        }
+      ],
+      "bank_mappings": [
+        {
+          "proposition_id": "islamqa.345284.p1",
+          "encoder": "itlaf",
+          "facts": {
+            "purpose": {
+              "proposition_id": "islamqa.345284.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            },
+            "mental": {
+              "proposition_id": "islamqa.345284.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.4588",
+      "text_sha256": "a28be0fc995f83fe88f3a9fb4bad87965d1255c0c8a86352975e054980bd8976",
+      "status": "candidate",
+      "propositions": [
+        {
+          "id": "islamqa.4588.p1",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.4588",
+            "text_sha256": "a28be0fc995f83fe88f3a9fb4bad87965d1255c0c8a86352975e054980bd8976",
+            "start": 11,
+            "end": 91,
+            "quote": "التقط أحد الأبناء ساعة من الحرم المكي ، وظلت معه حتى الآن منذ أكثر من أربع سنوات"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "one of the sons",
+              "evidence": [
+                {
+                  "source_id": "islamqa.4588",
+                  "text_sha256": "a28be0fc995f83fe88f3a9fb4bad87965d1255c0c8a86352975e054980bd8976",
+                  "start": 17,
+                  "end": 28,
+                  "quote": "أحد الأبناء"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "retain found watch",
+              "evidence": [
+                {
+                  "source_id": "islamqa.4588",
+                  "text_sha256": "a28be0fc995f83fe88f3a9fb4bad87965d1255c0c8a86352975e054980bd8976",
+                  "start": 51,
+                  "end": 68,
+                  "quote": "وظلت معه حتى الآن"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "watch",
+              "evidence": [
+                {
+                  "source_id": "islamqa.4588",
+                  "text_sha256": "a28be0fc995f83fe88f3a9fb4bad87965d1255c0c8a86352975e054980bd8976",
+                  "start": 29,
+                  "end": 33,
+                  "quote": "ساعة"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "candidate",
+              "value": "more than four years",
+              "evidence": [
+                {
+                  "source_id": "islamqa.4588",
+                  "text_sha256": "a28be0fc995f83fe88f3a9fb4bad87965d1255c0c8a86352975e054980bd8976",
+                  "start": 69,
+                  "end": 91,
+                  "quote": "منذ أكثر من أربع سنوات"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "bank_mappings": [
+        {
+          "proposition_id": "islamqa.4588.p1",
+          "encoder": "luqata",
+          "facts": {
+            "year_passed": {
+              "proposition_id": "islamqa.4588.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "The bank requires a year of announcement. More than four years of possession does not establish announcement; retain the temporal role but leave this field unknown."
+            },
+            "ownable": {
+              "proposition_id": "islamqa.4588.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.4652",
+      "text_sha256": "c75dc680002346fc3de7fa0f5d0e6f19a7ca4ec579fbe6335450b01d572f09d1",
+      "status": "candidate",
+      "propositions": [
+        {
+          "id": "islamqa.4652.p1",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.4652",
+            "text_sha256": "c75dc680002346fc3de7fa0f5d0e6f19a7ca4ec579fbe6335450b01d572f09d1",
+            "start": 45,
+            "end": 87,
+            "quote": "فحمّلني شخص مالا أمانة لإيصاله إلى قريب له"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "questioner as entrusted carrier",
+              "evidence": [
+                {
+                  "source_id": "islamqa.4652",
+                  "text_sha256": "c75dc680002346fc3de7fa0f5d0e6f19a7ca4ec579fbe6335450b01d572f09d1",
+                  "start": 46,
+                  "end": 52,
+                  "quote": "حمّلني"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "receive money entrusted for delivery",
+              "evidence": [
+                {
+                  "source_id": "islamqa.4652",
+                  "text_sha256": "c75dc680002346fc3de7fa0f5d0e6f19a7ca4ec579fbe6335450b01d572f09d1",
+                  "start": 46,
+                  "end": 75,
+                  "quote": "حمّلني شخص مالا أمانة لإيصاله"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "money",
+              "evidence": [
+                {
+                  "source_id": "islamqa.4652",
+                  "text_sha256": "c75dc680002346fc3de7fa0f5d0e6f19a7ca4ec579fbe6335450b01d572f09d1",
+                  "start": 57,
+                  "end": 61,
+                  "quote": "مالا"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "candidate",
+              "value": "intended recipient",
+              "evidence": [
+                {
+                  "source_id": "islamqa.4652",
+                  "text_sha256": "c75dc680002346fc3de7fa0f5d0e6f19a7ca4ec579fbe6335450b01d572f09d1",
+                  "start": 80,
+                  "end": 87,
+                  "quote": "قريب له"
+                }
+              ]
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        {
+          "id": "islamqa.4652.p2",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.4652",
+            "text_sha256": "c75dc680002346fc3de7fa0f5d0e6f19a7ca4ec579fbe6335450b01d572f09d1",
+            "start": 90,
+            "end": 156,
+            "quote": "فاستولت عليه سلطات المطار التي لا تسمح بخروج مبلغ زائد على حد معين"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "airport authorities",
+              "evidence": [
+                {
+                  "source_id": "islamqa.4652",
+                  "text_sha256": "c75dc680002346fc3de7fa0f5d0e6f19a7ca4ec579fbe6335450b01d572f09d1",
+                  "start": 103,
+                  "end": 115,
+                  "quote": "سلطات المطار"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "seize money",
+              "evidence": [
+                {
+                  "source_id": "islamqa.4652",
+                  "text_sha256": "c75dc680002346fc3de7fa0f5d0e6f19a7ca4ec579fbe6335450b01d572f09d1",
+                  "start": 91,
+                  "end": 102,
+                  "quote": "استولت عليه"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "money referenced by pronoun",
+              "evidence": [
+                {
+                  "source_id": "islamqa.4652",
+                  "text_sha256": "c75dc680002346fc3de7fa0f5d0e6f19a7ca4ec579fbe6335450b01d572f09d1",
+                  "start": 98,
+                  "end": 102,
+                  "quote": "عليه"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "condition": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        }
+      ],
+      "bank_mappings": [
+        {
+          "proposition_id": "islamqa.4652.p1",
+          "encoder": "trust_loss",
+          "facts": {
+            "hand": {
+              "proposition_id": "islamqa.4652.p1",
+              "status": "candidate",
+              "value": "trustee",
+              "evidence": {
+                "source_id": "islamqa.4652",
+                "text_sha256": "c75dc680002346fc3de7fa0f5d0e6f19a7ca4ec579fbe6335450b01d572f09d1",
+                "start": 57,
+                "end": 67,
+                "quote": "مالا أمانة"
+              },
+              "rationale": "The question explicitly describes money entrusted for delivery; candidate initial capacity only, not a conclusion about later liability."
+            },
+            "transgressed": {
+              "proposition_id": "islamqa.4652.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            },
+            "negligent": {
+              "proposition_id": "islamqa.4652.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.83827",
+      "text_sha256": "cde3f22d31d736abbd6cb3d166d84ecdb6918e96253df001d159561e1a8f39f0",
+      "status": "candidate",
+      "propositions": [
+        {
+          "id": "islamqa.83827.p1",
+          "status": "candidate",
+          "modality": "asserted",
+          "polarity": "positive",
+          "scope": {
+            "source_id": "islamqa.83827",
+            "text_sha256": "cde3f22d31d736abbd6cb3d166d84ecdb6918e96253df001d159561e1a8f39f0",
+            "start": 211,
+            "end": 258,
+            "quote": "ولكن أخي تصرف في هذه الوديعة دون استشارة صاحبها"
+          },
+          "roles": {
+            "actor": {
+              "status": "candidate",
+              "value": "questioner's brother",
+              "evidence": [
+                {
+                  "source_id": "islamqa.83827",
+                  "text_sha256": "cde3f22d31d736abbd6cb3d166d84ecdb6918e96253df001d159561e1a8f39f0",
+                  "start": 216,
+                  "end": 219,
+                  "quote": "أخي"
+                }
+              ]
+            },
+            "act": {
+              "status": "candidate",
+              "value": "use deposit without consulting owner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.83827",
+                  "text_sha256": "cde3f22d31d736abbd6cb3d166d84ecdb6918e96253df001d159561e1a8f39f0",
+                  "start": 220,
+                  "end": 239,
+                  "quote": "تصرف في هذه الوديعة"
+                }
+              ]
+            },
+            "object": {
+              "status": "candidate",
+              "value": "deposit",
+              "evidence": [
+                {
+                  "source_id": "islamqa.83827",
+                  "text_sha256": "cde3f22d31d736abbd6cb3d166d84ecdb6918e96253df001d159561e1a8f39f0",
+                  "start": 228,
+                  "end": 239,
+                  "quote": "هذه الوديعة"
+                }
+              ]
+            },
+            "affected_party": {
+              "status": "candidate",
+              "value": "depositor",
+              "evidence": [
+                {
+                  "source_id": "islamqa.83827",
+                  "text_sha256": "cde3f22d31d736abbd6cb3d166d84ecdb6918e96253df001d159561e1a8f39f0",
+                  "start": 252,
+                  "end": 258,
+                  "quote": "صاحبها"
+                }
+              ]
+            },
+            "condition": {
+              "status": "candidate",
+              "value": "without consulting owner",
+              "evidence": [
+                {
+                  "source_id": "islamqa.83827",
+                  "text_sha256": "cde3f22d31d736abbd6cb3d166d84ecdb6918e96253df001d159561e1a8f39f0",
+                  "start": 240,
+                  "end": 258,
+                  "quote": "دون استشارة صاحبها"
+                }
+              ]
+            },
+            "time": {
+              "status": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        }
+      ],
+      "bank_mappings": [
+        {
+          "proposition_id": "islamqa.83827.p1",
+          "encoder": "trust_loss",
+          "facts": {
+            "hand": {
+              "proposition_id": "islamqa.83827.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            },
+            "transgressed": {
+              "proposition_id": "islamqa.83827.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            },
+            "negligent": {
+              "proposition_id": "islamqa.83827.p1",
+              "status": "unknown",
+              "value": null,
+              "evidence": null,
+              "rationale": "Question body does not establish this encoder field."
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

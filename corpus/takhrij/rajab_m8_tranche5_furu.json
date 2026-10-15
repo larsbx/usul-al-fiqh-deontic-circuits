@@ -1,0 +1,448 @@
+{
+  "suite": "m8_rajab_tranche_5",
+  "status": "candidate",
+  "provenance": "M8 fifth tranche: every far record of Ibn Rajab's qawāʿid 25, 29, 30, 32, 33 and 34, annotated against readings formalised from each qāʿida's own statement (Usul.Refinements). Annotated by reading the full paragraph in the pinned witness; every claim of agreement is guarded by Lean (UsulTest/Takhrij.lean); classes and facts await human review (Review.tla).",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f000",
+      "encoder": "follows_proven_ownership",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "follows_in_sale": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī: does not follow",
+          "ruling": false
+        },
+        {
+          "who": "Ibn ʿAqīl's inclination: follows",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Ownership of a slave-woman in another's hand proven, with a child: does the child follow? al-Qāḍī: no, «لأنه لا يتبعها في بيع ولا غيره»; Ibn ʿAqīl inclines to yes, as part of her. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f001",
+      "encoder": "follows_proven_ownership",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "follows_in_sale": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Taqī al-Dīn, ẓāhir of al-Qāḍī and Ibn ʿAqīl: follows",
+          "ruling": true
+        },
+        {
+          "who": "the other takhrīj: does not",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Ownership of land proven, with trees standing in it: «يحتمل أن يخرج على وجهين بناء على أن الشجر هل يتبع في البيع»; Taqī al-Dīn: the land-holders' hand is on what is attached, the ẓāhir of al-Qāḍī and Ibn ʿAqīl in rahn."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f002",
+      "encoder": "follows_proven_ownership",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "follows_in_sale": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "possibility: what follows in sale follows",
+          "ruling": true
+        },
+        {
+          "who": "al-Kāfī, al-Targhīb: the holder's",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Ownership of a slave proven, the holder claiming his clothes: al-Kāfī and al-Targhīb: the holder's, his hand being on them; possibilities: what follows the slave in sale follows here, or by how long the hand lasted. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f003",
+      "encoder": "follows_proven_ownership",
+      "class": "derivable",
+      "facts": {
+        "follows_in_sale": true
+      },
+      "expected": true,
+      "note": "Lessor and lessee disputing a thing in the leased house: «ذكر الأصحاب أن ما يتبع في البيع فهو للمؤجر»; what does not follow but is customary is disputed, the manṣūṣ giving it to the lessor too."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f004",
+      "encoder": "follows_proven_ownership",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "follows_in_sale": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "ashhar: the contents only",
+          "ruling": false
+        },
+        {
+          "who": "the other wajh: both",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Acknowledging contents in a container (dates in a bag, a sword in its sheath): «أشهرهما يكون مقرا بالمظروف دون ظرفه» (Ibn Ḥāmid, al-Qāḍī and his followers); the other wajh: both."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f001",
+      "encoder": "tolerance_exceeded",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "at_fault": true
+      },
+      "expected": "all",
+      "positions": [
+        {
+          "who": "Ibn ʿAqīl: the whole shortfall",
+          "ruling": "all"
+        },
+        {
+          "who": "the other wajh: beyond the tolerated",
+          "ruling": "excess"
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The agent sells below what is tolerated: is he liable for the whole shortfall from the fair price, or only beyond the tolerated? Two wujūh; Ibn ʿAqīl prefers the whole. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f002",
+      "encoder": "tolerance_exceeded",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "at_fault": true
+      },
+      "expected": "all",
+      "positions": [
+        {
+          "who": "wajh: a third",
+          "ruling": "all"
+        },
+        {
+          "who": "wajh: what bears the name",
+          "ruling": "excess"
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The sacrificer eats his whole sacrifice: liable for a third, or for what bears the name? Two wujūh; Ibn Rajab groups him with the agent as at fault. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f003",
+      "encoder": "tolerance_exceeded",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "at_fault": false
+      },
+      "expected": "excess",
+      "positions": [
+        {
+          "who": "ashhar: the excess only",
+          "ruling": "excess"
+        },
+        {
+          "who": "Abū Yaʿlā the younger: all",
+          "ruling": "all"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Najāsa spreading beyond its usual place: «أشهرهما أن الواجب غسل المتعدى خاصة» (al-Qāḍī, attributed to Aḥmad's naṣṣ), «لأن هذا لا ينسب فيه إلى تفريط»; Abū Yaʿlā the younger: wash (ghasl) all."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f004",
+      "encoder": "tolerance_exceeded",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "at_fault": true
+      },
+      "expected": "all",
+      "positions": [
+        {
+          "who": "wajh: two-thirds",
+          "ruling": "all"
+        },
+        {
+          "who": "wajh: the least share",
+          "ruling": "excess"
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Zakāt paid to one when three are due: liable for two-thirds, or for the least share? Two wujūh. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f000",
+      "encoder": "failed_obligation_returns",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "failed_to_count": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "riwāya: returns",
+          "ruling": true
+        },
+        {
+          "who": "riwāya: does not",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A sacrifice designated for a due in his dhimma becomes blemished (ʿayb: «ثم تعيبت»): it no longer counts; does it return to his ownership? Two riwāyas. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f001",
+      "encoder": "failed_obligation_returns",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "failed_to_count": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "wajh: reclaims",
+          "ruling": true
+        },
+        {
+          "who": "wajh: does not",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Zakāt paid early to a poor man, then the wealth perishes: may he reclaim it? Two wujūh. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f002",
+      "encoder": "failed_obligation_returns",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "failed_to_count": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "wajh: reclaims",
+          "ruling": true
+        },
+        {
+          "who": "wajh: does not",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "An early tabīʿ for thirty cattle, then ten born before the year: if it counts for none of them, may he reclaim it? Derived on the two wujūh. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f001",
+      "encoder": "benefit_exception",
+      "class": "derivable",
+      "facts": {
+        "known_period": false,
+        "tolerates_uncertainty": true
+      },
+      "expected": true,
+      "note": "Waqf excepting its benefit for a known period or his life: valid, «لأن جهالة المدة هنا لا تؤثر»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f002",
+      "encoder": "benefit_exception",
+      "class": "derivable",
+      "facts": {
+        "known_period": true,
+        "tolerates_uncertainty": true
+      },
+      "expected": true,
+      "note": "Manumission excepting service for a known period: valid by naṣṣ (the ḥadīth of Safīna), and for his life too."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f003",
+      "encoder": "benefit_exception",
+      "class": "derivable",
+      "facts": {
+        "known_period": true,
+        "tolerates_uncertainty": false
+      },
+      "expected": true,
+      "note": "Kitāba of a slave-woman excepting intercourse: «يصح على المذهب المنصوص», since kitāba transfers her benefits, not her person."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f004",
+      "encoder": "benefit_exception",
+      "class": "derivable",
+      "facts": {
+        "known_period": true,
+        "tolerates_uncertainty": true
+      },
+      "expected": true,
+      "note": "Bequeathing a thing to one and its benefit to another, outright or for a known period, or its benefit to the heirs: valid."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f005",
+      "encoder": "benefit_exception",
+      "class": "derivable",
+      "facts": {
+        "known_period": true,
+        "tolerates_uncertainty": false
+      },
+      "expected": true,
+      "note": "A gift excepting its benefit for a known period: valid, as al-Muwaffaq answered."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f006",
+      "encoder": "benefit_exception",
+      "class": "derivable",
+      "facts": {
+        "known_period": true,
+        "tolerates_uncertainty": false
+      },
+      "expected": true,
+      "note": "The countervalue in ṣadāq, khulʿ and settlement for property: «وقياس المذهب صحة استثناء المنفعة فيها»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f000",
+      "encoder": "implicit_exception",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "implicit": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Mughnī's ṣaḥīḥ, qiyās al-madhhab: valid",
+          "ruling": true
+        },
+        {
+          "who": "al-Qāḍī: as the verbal exception",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Selling a slave-woman pregnant with a free child, where stating the exception of the foetus is valid: is the sale valid? Two wujūh; the qāʿida's «الصحيح … الصحة، وهو قياس المذهب, خلافا للقاضي»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f001",
+      "encoder": "implicit_exception",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "implicit": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Majd al-Dīn, qiyās al-madhhab: valid",
+          "ruling": true
+        },
+        {
+          "who": "al-Mughnī: not valid",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Selling property where the widow pregnant from the deceased has her residence: al-Mughnī: not valid, the period being unknown; Majd al-Dīn: «قياس المذهب صحة البيع»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f002",
+      "encoder": "implicit_exception",
+      "class": "derivable",
+      "facts": {
+        "implicit": true
+      },
+      "expected": true,
+      "note": "Selling a leased house: valid whether or not the buyer knew of the lease, Aḥmad's naṣṣ (Jaʿfar b. Muḥammad); his requirement to disclose (al-Maymūnī) is against deception, not for validity."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f003",
+      "encoder": "implicit_exception",
+      "class": "derivable",
+      "facts": {
+        "implicit": true
+      },
+      "expected": true,
+      "note": "Buying a married slave-woman: valid, the benefits of the marriage excepted by law, though stating that exception would not be valid."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f004",
+      "encoder": "implicit_exception",
+      "class": "derivable",
+      "facts": {
+        "implicit": true
+      },
+      "expected": true,
+      "note": "Buying trees with fruit, land with crops, a house with much food: valid, their remaining until cleared excepted by law, though that period is unknown."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f005",
+      "encoder": "implicit_exception",
+      "class": "derivable",
+      "facts": {
+        "implicit": true
+      },
+      "expected": true,
+      "note": "Buying a slave in iḥrām: valid, the iḥrām period excepted, «نص عليه أحمد»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f000",
+      "encoder": "manumission_spread",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "binding_contract": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the qāʿida: it does not reach the marriage's benefit",
+          "ruling": false
+        },
+        {
+          "who": "Taqī al-Dīn: it reaches it",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A married slave-woman freed does not come to own the benefit of the marriage; she has the option only under a slave husband. Taqī al-Dīn: the manumission spreads to it, so she has the option under a free husband too."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f001",
+      "encoder": "manumission_spread",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "binding_contract": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the madhhab: the lease stands",
+          "ruling": false
+        },
+        {
+          "who": "Taqī al-Dīn, al-Muqniʿ's takhrīj: dissolved",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A slave leased for a period, then freed within it: «لم تنفسخ الإجارة على المذهب»; Taqī al-Dīn: dissolved unless excepted; the author of al-Muqniʿ derives a wajh from the guardian's lapse of authority, which Ibn Rajab calls weak («وهذا ضعيف»: ḍaʿīf of a wajh)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f002",
+      "encoder": "manumission_spread",
+      "class": "derivable",
+      "facts": {
+        "binding_contract": true
+      },
+      "expected": false,
+      "note": "The heirs free a slave whose benefits were bequeathed: valid, and it does not reach the benefits."
+    }
+  ]
+}

@@ -20,9 +20,23 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install pytest jsonschema numpy pillow
-      - name: Fetch pinned opening-example witness
-        run: cd pipeline && python -m usul_corpus fetch --work ibn_rajab.taqrir_qawaid
-      - run: make test validate generated opening-replay
+      - name: Replay locked M5 command-schema evidence
+        run: cd pipeline && python -m usul_corpus m5-commands --fetch-source
+      - name: Verify required locked sources (fail closed)
+        run: make source-verify-fetch
+      - name: Corpus tests with explicit exclusion report
+        if: ${{ !cancelled() }}
+        run: cd pipeline && python -m pytest -q -rs --junitxml=../.cache/corpus-tests.xml
+      - run: make validate generated
+      - name: Retain source coverage and test exclusions
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-verification
+          path: |
+            .cache/source-verification.json
+            .cache/corpus-tests.xml
+          if-no-files-found: error
 
   lean:
     name: Lean 4 kernel (no sorry)
@@ -36,7 +50,7 @@ jobs:
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
       - run: make lean
       - name: Reject sorry
-        run: "! grep -rn --include=*.lean -w sorry formal/lean/Usul formal/lean/UsulTest"
+        run: "! grep -rn --include=*.lean -w sorry formal/lean/Usul formal/lean/UsulTest formal/lean/Hadith formal/lean/HadithTest"
 
   tla:
     name: TLA+ model checking (bounded)

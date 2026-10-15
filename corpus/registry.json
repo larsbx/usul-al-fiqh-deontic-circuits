@@ -1,10 +1,255 @@
 {
   "registry_version": "1",
   "policy": {
-    "full_text": "Full texts are fetched into .cache/corpus and never committed. Committed records carry short excerpts with edition-qualified locators.",
+    "full_text": "Full texts are fetched into .cache/corpus. Public-domain text witnesses (works with rights public_domain_text) are also committed, byte-identical to their pinned source, under corpus/texts via Git LFS; modern texts are never committed. Committed records carry short excerpts with edition-qualified locators.",
     "authority": "Records are candidates until reviewed. Nothing here is a fatwā."
   },
   "works": [
+    {
+      "id": "quran",
+      "title_ar": "القرآن الكريم",
+      "title_tr": "al-Qurʾān al-Karīm",
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "cc_by_verbatim",
+      "witnesses": [
+        {
+          "id": "tanzil-quran-simple",
+          "kind": "url",
+          "url": "https://tanzil.net/pub/download/index.php?quranType=simple&outType=txt-2&agree=true",
+          "format": "text",
+          "edition": "Tanzil Quran Text (Simple), v1.1: the ʿUthmānic muṣḥaf in standard orthography; verbatim, distributed with its licence footer"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "bukhari.sahih",
+      "title_ar": "الجامع المسند الصحيح",
+      "title_tr": "Ṣaḥīḥ al-Bukhārī",
+      "author": {
+        "name_tr": "Muḥammad b. Ismāʿīl al-Bukhārī",
+        "death_ah": 256
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-bukhari-shamela1681",
+          "kind": "openiti",
+          "repo": "0275AH",
+          "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+          "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.Shamela0001681-ara1",
+          "edition": "Shamela 1681, Dār Ṭawq al-Najāh, ed. al-Nāṣir (numbering of Fuʾād ʿAbd al-Bāqī)"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "muslim.sahih",
+      "title_ar": "المسند الصحيح المختصر",
+      "title_tr": "Ṣaḥīḥ Muslim",
+      "author": {
+        "name_tr": "Muslim b. al-Ḥajjāj",
+        "death_ah": 261
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-muslim-shamela1727",
+          "kind": "openiti",
+          "repo": "0275AH",
+          "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+          "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+          "edition": "Shamela 1727, ed. Muḥammad Fuʾād ʿAbd al-Bāqī"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "abu_dawud.sunan",
+      "title_ar": "سنن أبي داود",
+      "title_tr": "Sunan Abī Dāwūd",
+      "author": {
+        "name_tr": "Abū Dāwūd al-Sijistānī",
+        "death_ah": 275
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-abudawud-shamela1726",
+          "kind": "openiti",
+          "repo": "0275AH",
+          "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+          "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.Shamela0001726-ara1",
+          "edition": "Shamela 1726, ed. Muḥyī al-Dīn ʿAbd al-Ḥamīd"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "tirmidhi.jami",
+      "title_ar": "الجامع الكبير (سنن الترمذي)",
+      "title_tr": "Jāmiʿ al-Tirmidhī",
+      "author": {
+        "name_tr": "Muḥammad b. ʿĪsā al-Tirmidhī",
+        "death_ah": 279
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-tirmidhi-shamela7895",
+          "kind": "openiti",
+          "repo": "0300AH",
+          "commit": "01a1544130e0236850ef2698923ad01575c5bd7c",
+          "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.Shamela0007895-ara2",
+          "edition": "Shamela 7895, ed. Aḥmad Shākir et al."
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "nasai.sunan_sughra",
+      "title_ar": "السنن الصغرى (المجتبى)",
+      "title_tr": "Sunan al-Nasāʾī (al-Mujtabā)",
+      "author": {
+        "name_tr": "Aḥmad b. Shuʿayb al-Nasāʾī",
+        "death_ah": 303
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-nasai-shamela829",
+          "kind": "openiti",
+          "repo": "0325AH",
+          "commit": "089e665b4958e0f145a46941987fb81cf3dda1b8",
+          "path": "data/0303Nasai/0303Nasai.SunanSughra/0303Nasai.SunanSughra.Shamela0000829-ara1",
+          "edition": "Shamela 829, ed. ʿAbd al-Fattāḥ Abū Ghudda"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_maja.sunan",
+      "title_ar": "سنن ابن ماجه",
+      "title_tr": "Sunan Ibn Māja",
+      "author": {
+        "name_tr": "Muḥammad b. Yazīd Ibn Māja",
+        "death_ah": 273
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnmaja-shamela1198",
+          "kind": "openiti",
+          "repo": "0275AH",
+          "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+          "path": "data/0273IbnMaja/0273IbnMaja.Sunan/0273IbnMaja.Sunan.Shamela0001198-ara1",
+          "edition": "Shamela 1198, ed. Muḥammad Fuʾād ʿAbd al-Bāqī"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "malik.muwatta",
+      "title_ar": "الموطأ",
+      "title_tr": "al-Muwaṭṭaʾ",
+      "author": {
+        "name_tr": "Mālik b. Anas",
+        "death_ah": 179
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-muwatta-shamela1699",
+          "kind": "openiti",
+          "repo": "0200AH",
+          "commit": "599f22fe249871f602efe2e0ddc801d3742960a3",
+          "path": "data/0179MalikIbnAnas/0179MalikIbnAnas.Muwatta/0179MalikIbnAnas.Muwatta.Shamela0001699-ara1.completed",
+          "edition": "Shamela 1699, ed. Muḥammad Fuʾād ʿAbd al-Bāqī"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ahmad.musnad",
+      "title_ar": "المسند",
+      "title_tr": "Musnad Aḥmad",
+      "author": {
+        "name_tr": "Aḥmad b. Ḥanbal",
+        "death_ah": 241
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-musnad-shamela25794",
+          "kind": "openiti",
+          "repo": "0250AH",
+          "commit": "0cc00c0646c81988c75a3815fe6d9a5fa65ce592",
+          "path": "data/0241IbnHanbal/0241IbnHanbal.Musnad/0241IbnHanbal.Musnad.Shamela0025794-ara1.mARkdown",
+          "edition": "Shamela 25794, Muʾassasat al-Risāla, ed. al-Arnaʾūṭ et al."
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "darimi.sunan",
+      "title_ar": "سنن الدارمي",
+      "title_tr": "Sunan al-Dārimī",
+      "author": {
+        "name_tr": "ʿAbd Allāh b. ʿAbd al-Raḥmān al-Dārimī",
+        "death_ah": 255
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-darimi-shamela21795",
+          "kind": "openiti",
+          "repo": "0275AH",
+          "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+          "path": "data/0255CabdAllahDarimi/0255CabdAllahDarimi.Sunan/0255CabdAllahDarimi.Sunan.Shamela0021795-ara3",
+          "edition": "Shamela 21795"
+        }
+      ],
+      "status": "located"
+    },
     {
       "id": "ibn_uthaymin.usul",
       "title_ar": "الأصول من علم الأصول",
@@ -152,6 +397,14 @@
           },
           "edition": "Dār al-Waṭan, ed. Khālid al-Mushayqiḥ (same scan as archive-pdf1995)",
           "quality": "ocr_unreviewed"
+        },
+        {
+          "id": "islamhouse-qj-doc",
+          "kind": "url",
+          "url": "https://www.islamland.com/uploads/books/ar_university_rules_and_assets.doc",
+          "format": "doc",
+          "fetch": "on_demand",
+          "edition": "Dār al-Waṭan, ed. Khālid al-Mushayqiḥ, as typeset by IslamHouse (Maktabat Ibn Saʿdī 4, 2009): the same edition as archive-pdf1995, born-digital"
         }
       ],
       "segmenter": {
@@ -250,15 +503,24 @@
       ],
       "segmenter": {
         "kind": "headed",
-        "marker": "القاعدة",
-        "opening_examples": true
+        "marker": "القاعدة"
       },
       "expected_units": {
         "unit": "qāʿida",
         "count": 160,
         "claim_source": "recall"
       },
-      "status": "located"
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "qawaid",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "قواعد ابن رجب",
+          "القواعد لابن رجب",
+          "ابن رجب في القواعد"
+        ]
+      }
     },
     {
       "id": "ibn_taymiyya.qawaid_nuraniyya",
@@ -458,7 +720,15 @@
         "count": 99,
         "claim_source": "recall"
       },
-      "status": "located"
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "fatawa",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "اعلام الموقعين"
+        ]
+      }
     },
     {
       "id": "ibn_uthaymin.sharh_mumti",
@@ -481,7 +751,12 @@
           "fetch": "on_demand"
         }
       ],
-      "status": "located"
+      "status": "located",
+      "reception": {
+        "role": "citer",
+        "genre": "sharh",
+        "scholar": "ibn_uthaymin"
+      }
     },
     {
       "id": "shinqiti.adab_bahth",
@@ -653,7 +928,19 @@
           "edition": "Shamela 21609, taḥqīq al-Fiqī"
         }
       ],
-      "status": "located"
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "sharh",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "الانصاف"
+        ],
+        "not": [
+          "الانصاف في مسائل الخلاف",
+          "الانصاف فيما تضمنه الكشاف"
+        ]
+      }
     },
     {
       "id": "abu_yala.udda",
@@ -1269,6 +1556,2594 @@
           "commit": "cc9beb0d9645e8cdce892556423b9926a127054f",
           "path": "data/0456IbnHazm/0456IbnHazm.NubdhaKafiya/0456IbnHazm.NubdhaKafiya.Shamela0006321-ara1.mARkdown",
           "edition": "ed. Muḥammad Aḥmad ʿAbd al-ʿAzīz, Dār al-Kutub al-ʿIlmiyya, 1st ed. 1405"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "kawsaj.masail_ahmad",
+      "title_ar": "مسائل الإمام أحمد بن حنبل وإسحاق بن راهويه",
+      "title_tr": "Masāʾil al-Imām Aḥmad wa-Isḥāq b. Rāhawayh",
+      "author": {
+        "name_tr": "Isḥāq b. Manṣūr al-Kawsaj",
+        "death_ah": 251
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-kawsaj-masailahmad-shamela3125",
+          "kind": "openiti",
+          "repo": "0275AH",
+          "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+          "path": "data/0251IbnMansurKawsaj/0251IbnMansurKawsaj.Masail/0251IbnMansurKawsaj.Masail.Shamela0003125-ara1",
+          "edition": "Shamela 3125"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "masail",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "رواية الكوسج",
+          "مسائل الكوسج",
+          "مسائل اسحاق بن منصور"
+        ]
+      },
+      "segmenter": {
+        "kind": "masail",
+        "start": "\\[\\s*(?P<n>\\d+)\\s*-"
+      }
+    },
+    {
+      "id": "abu_dawud.masail_ahmad",
+      "title_ar": "مسائل الإمام أحمد رواية أبي داود السجستاني",
+      "title_tr": "Masāʾil al-Imām Aḥmad, riwāyat Abī Dāwūd",
+      "author": {
+        "name_tr": "Abū Dāwūd al-Sijistānī",
+        "death_ah": 275
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-abudawud-masailahmad-shamela21487",
+          "kind": "openiti",
+          "repo": "0275AH",
+          "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+          "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.MasailImamAhmad/0275AbuDawudSijistani.MasailImamAhmad.Shamela0021487-ara1",
+          "edition": "Shamela 21487"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "masail",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "مسائل ابي داود",
+          "رواية ابي داود عن احمد",
+          "مسائل الامام احمد لابي داود"
+        ]
+      },
+      "segmenter": {
+        "kind": "masail",
+        "start": "(?:و?سمعت أحمد|و?قلت لأحمد|و?سئل أحمد|و?قيل لأحمد|و?سألت أحمد)"
+      }
+    },
+    {
+      "id": "harb.masail",
+      "title_ar": "مسائل حرب بن إسماعيل الكرماني",
+      "title_tr": "Masāʾil Ḥarb al-Kirmānī",
+      "author": {
+        "name_tr": "Ḥarb b. Ismāʿīl al-Kirmānī",
+        "death_ah": 280
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-harb-masail-shamela12527",
+          "kind": "openiti",
+          "repo": "0300AH",
+          "commit": "01a1544130e0236850ef2698923ad01575c5bd7c",
+          "path": "data/0280IbnIsmacilKirmani/0280IbnIsmacilKirmani.MasailHarb/0280IbnIsmacilKirmani.MasailHarb.Shamela0012527-ara1",
+          "edition": "Shamela 12527"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "masail",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "مسائل حرب",
+          "رواية حرب"
+        ]
+      },
+      "segmenter": {
+        "kind": "masail",
+        "start": "(?:و?قلت لأحمد|و?سألت أحمد|و?سمعت أحمد|و?قيل لأحمد|و?قلت لإسحاق|و?سألت إسحاق|و?سمعت إسحاق)"
+      }
+    },
+    {
+      "id": "ibn_mundhir.ijma",
+      "title_ar": "الإجماع",
+      "title_tr": "al-Ijmāʿ",
+      "author": {
+        "name_tr": "Ibn al-Mundhir al-Naysābūrī",
+        "death_ah": 319
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnmundhir-ijma-shamela12445",
+          "kind": "openiti",
+          "repo": "0325AH",
+          "commit": "089e665b4958e0f145a46941987fb81cf3dda1b8",
+          "path": "data/0319IbnMundhirNaysaburi/0319IbnMundhirNaysaburi.Ijmac/0319IbnMundhirNaysaburi.Ijmac.Shamela0012445-ara1",
+          "edition": "Shamela 12445"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "ijma",
+        "madhhab": "mujtahid",
+        "cite_as": [
+          "الاجماع لابن المنذر",
+          "ابن المنذر في الاجماع"
+        ]
+      }
+    },
+    {
+      "id": "ibn_mundhir.awsat",
+      "title_ar": "الأوسط في السنن والإجماع والاختلاف",
+      "title_tr": "al-Awsaṭ fī al-Sunan wa'l-Ijmāʿ wa'l-Ikhtilāf",
+      "author": {
+        "name_tr": "Ibn al-Mundhir al-Naysābūrī",
+        "death_ah": 319
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnmundhir-awsat-shamela21113",
+          "kind": "openiti",
+          "repo": "0325AH",
+          "commit": "089e665b4958e0f145a46941987fb81cf3dda1b8",
+          "path": "data/0319IbnMundhirNaysaburi/0319IbnMundhirNaysaburi.AwsatFiSunan/0319IbnMundhirNaysaburi.AwsatFiSunan.Shamela0021113-ara1",
+          "edition": "Shamela 21113"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "khilaf",
+        "madhhab": "mujtahid",
+        "cite_as": [
+          "الاوسط لابن المنذر",
+          "ابن المنذر في الاوسط"
+        ]
+      }
+    },
+    {
+      "id": "ibn_mundhir.ishraf",
+      "title_ar": "الإشراف على مذاهب العلماء",
+      "title_tr": "al-Ishrāf ʿalā Madhāhib al-ʿUlamāʾ",
+      "author": {
+        "name_tr": "Ibn al-Mundhir al-Naysābūrī",
+        "death_ah": 319
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnmundhir-ishraf-shamela119492",
+          "kind": "openiti",
+          "repo": "0325AH",
+          "commit": "089e665b4958e0f145a46941987fb81cf3dda1b8",
+          "path": "data/0319IbnMundhirNaysaburi/0319IbnMundhirNaysaburi.IshrafCalaMadhahib/0319IbnMundhirNaysaburi.IshrafCalaMadhahib.Shamela0119492-ara1",
+          "edition": "Shamela 119492"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "khilaf",
+        "madhhab": "mujtahid",
+        "cite_as": [
+          "الاشراف لابن المنذر",
+          "ابن المنذر في الاشراف",
+          "الاشراف على مذاهب العلماء"
+        ]
+      }
+    },
+    {
+      "id": "ibn_hazm.maratib_ijma",
+      "title_ar": "مراتب الإجماع",
+      "title_tr": "Marātib al-Ijmāʿ",
+      "author": {
+        "name_tr": "Ibn Ḥazm al-Andalusī",
+        "death_ah": 456
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnhazm-maratibijma-shamela12446",
+          "kind": "openiti",
+          "repo": "0475AH",
+          "commit": "cc9beb0d9645e8cdce892556423b9926a127054f",
+          "path": "data/0456IbnHazm/0456IbnHazm.MaratibIjmac/0456IbnHazm.MaratibIjmac.Shamela0012446-ara1",
+          "edition": "Shamela 12446"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "ijma",
+        "madhhab": "zahiri",
+        "cite_as": [
+          "مراتب الاجماع"
+        ]
+      }
+    },
+    {
+      "id": "ibn_hazm.muhalla",
+      "title_ar": "المحلى بالآثار",
+      "title_tr": "al-Muḥallā bi'l-Āthār",
+      "author": {
+        "name_tr": "Ibn Ḥazm al-Andalusī",
+        "death_ah": 456
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnhazm-muhalla-shamela767",
+          "kind": "openiti",
+          "repo": "0475AH",
+          "commit": "cc9beb0d9645e8cdce892556423b9926a127054f",
+          "path": "data/0456IbnHazm/0456IbnHazm.MuhallaBiAthar/0456IbnHazm.MuhallaBiAthar.Shamela0000767-ara1.completed",
+          "edition": "Shamela 767",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "khilaf",
+        "madhhab": "zahiri",
+        "cite_as": [
+          "المحلى"
+        ]
+      }
+    },
+    {
+      "id": "ibn_abd_al_barr.tamhid",
+      "title_ar": "التمهيد لما في الموطأ من المعاني والأسانيد",
+      "title_tr": "al-Tamhīd li-mā fī al-Muwaṭṭaʾ min al-Maʿānī wa'l-Asānīd",
+      "author": {
+        "name_tr": "Ibn ʿAbd al-Barr",
+        "death_ah": 463
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnabdalbarr-tamhid-shamela1719",
+          "kind": "openiti",
+          "repo": "0475AH",
+          "commit": "cc9beb0d9645e8cdce892556423b9926a127054f",
+          "path": "data/0463IbnCabdBarr/0463IbnCabdBarr.TamhidMuwatta/0463IbnCabdBarr.TamhidMuwatta.Shamela0001719-ara1",
+          "edition": "Shamela 1719",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "ahkam_hadith",
+        "madhhab": "maliki",
+        "cite_as": [
+          "التمهيد لابن عبد البر",
+          "ابن عبد البر في التمهيد"
+        ]
+      }
+    },
+    {
+      "id": "ibn_abd_al_barr.istidhkar",
+      "title_ar": "الاستذكار الجامع لمذاهب فقهاء الأمصار",
+      "title_tr": "al-Istidhkār",
+      "author": {
+        "name_tr": "Ibn ʿAbd al-Barr",
+        "death_ah": 463
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnabdalbarr-istidhkar-shamela1722",
+          "kind": "openiti",
+          "repo": "0475AH",
+          "commit": "cc9beb0d9645e8cdce892556423b9926a127054f",
+          "path": "data/0463IbnCabdBarr/0463IbnCabdBarr.IstidhkarJamic/0463IbnCabdBarr.IstidhkarJamic.Shamela0001722-ara1",
+          "edition": "Shamela 1722",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "khilaf",
+        "madhhab": "maliki",
+        "cite_as": [
+          "الاستذكار"
+        ]
+      }
+    },
+    {
+      "id": "ibn_rushd.bidaya",
+      "title_ar": "بداية المجتهد ونهاية المقتصد",
+      "title_tr": "Bidāyat al-Mujtahid wa-Nihāyat al-Muqtaṣid",
+      "author": {
+        "name_tr": "Ibn Rushd al-Ḥafīd",
+        "death_ah": 595
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnrushd-bidaya-shamela21739",
+          "kind": "openiti",
+          "repo": "0600AH",
+          "commit": "ea4bdc6517a49d07106f223aa0869aa7c21b9589",
+          "path": "data/0595IbnRushdHafid/0595IbnRushdHafid.BidayatMujtahid/0595IbnRushdHafid.BidayatMujtahid.Shamela0021739-ara1",
+          "edition": "Shamela 21739"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "khilaf",
+        "madhhab": "maliki",
+        "cite_as": [
+          "بداية المجتهد"
+        ]
+      }
+    },
+    {
+      "id": "nawawi.majmu",
+      "title_ar": "المجموع شرح المهذب",
+      "title_tr": "al-Majmūʿ Sharḥ al-Muhadhdhab",
+      "author": {
+        "name_tr": "Muḥyī al-Dīn al-Nawawī",
+        "death_ah": 676
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "Witness includes the takmila of al-Subkī and al-Muṭīʿī.",
+      "witnesses": [
+        {
+          "id": "openiti-nawawi-majmu-shamela2186",
+          "kind": "openiti",
+          "repo": "0700AH",
+          "commit": "3d8ff4e7b035aaa4ca5dda52c7322645f3401dcf",
+          "path": "data/0676Nawawi/0676Nawawi.Majmuc/0676Nawawi.Majmuc.Shamela0002186-ara1",
+          "edition": "Shamela 2186",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "khilaf",
+        "madhhab": "shafii",
+        "cite_as": [
+          "المجموع شرح المهذب",
+          "النووي في المجموع",
+          "المجموع للنووي"
+        ]
+      }
+    },
+    {
+      "id": "khattabi.maalim_sunan",
+      "title_ar": "معالم السنن",
+      "title_tr": "Maʿālim al-Sunan",
+      "author": {
+        "name_tr": "Abū Sulaymān al-Khaṭṭābī",
+        "death_ah": 388
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-khattabi-maalimsunan-shamela1442",
+          "kind": "openiti",
+          "repo": "0400AH",
+          "commit": "5bb6966d8df2ed22b1bff5cdbe29bb9c24f3ca29",
+          "path": "data/0388AbuSulaymanKhattabi/0388AbuSulaymanKhattabi.MacalimSunan/0388AbuSulaymanKhattabi.MacalimSunan.Shamela0001442-ara1",
+          "edition": "Shamela 1442"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "ahkam_hadith",
+        "madhhab": "shafii",
+        "cite_as": [
+          "معالم السنن"
+        ]
+      }
+    },
+    {
+      "id": "nawawi.sharh_muslim",
+      "title_ar": "المنهاج شرح صحيح مسلم بن الحجاج",
+      "title_tr": "al-Minhāj Sharḥ Ṣaḥīḥ Muslim",
+      "author": {
+        "name_tr": "Muḥyī al-Dīn al-Nawawī",
+        "death_ah": 676
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-nawawi-sharhmuslim-shamela1711",
+          "kind": "openiti",
+          "repo": "0700AH",
+          "commit": "3d8ff4e7b035aaa4ca5dda52c7322645f3401dcf",
+          "path": "data/0676Nawawi/0676Nawawi.MinhajFiSharhMuslim/0676Nawawi.MinhajFiSharhMuslim.Shamela0001711-ara1",
+          "edition": "Shamela 1711",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "ahkam_hadith",
+        "madhhab": "shafii",
+        "cite_as": [
+          "النووي في شرح مسلم",
+          "شرح النووي على مسلم",
+          "شرح النووي لمسلم",
+          "النووي في شرح صحيح مسلم",
+          "شرح النووي"
+        ]
+      }
+    },
+    {
+      "id": "ibn_hajar.fath_bari",
+      "title_ar": "فتح الباري شرح صحيح البخاري",
+      "title_tr": "Fatḥ al-Bārī",
+      "author": {
+        "name_tr": "Ibn Ḥajar al-ʿAsqalānī",
+        "death_ah": 852
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnhajar-fathbari-shamela1673",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.FathBari/0852IbnHajarCasqalani.FathBari.Shamela0001673-ara1",
+          "edition": "Shamela 1673",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "ahkam_hadith",
+        "madhhab": "shafii",
+        "cite_as": [
+          "فتح الباري"
+        ]
+      }
+    },
+    {
+      "id": "ibn_hajar.bulugh",
+      "title_ar": "بلوغ المرام من أدلة الأحكام",
+      "title_tr": "Bulūgh al-Marām min Adillat al-Aḥkām",
+      "author": {
+        "name_tr": "Ibn Ḥajar al-ʿAsqalānī",
+        "death_ah": 852
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnhajar-bulugh-shamela9111",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.BulughMaram/0852IbnHajarCasqalani.BulughMaram.Shamela0009111-ara1",
+          "edition": "Shamela 9111"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "ahkam_hadith",
+        "madhhab": "shafii",
+        "cite_as": [
+          "بلوغ المرام"
+        ]
+      }
+    },
+    {
+      "id": "ibn_hajar.talkhis_habir",
+      "title_ar": "التلخيص الحبير في تخريج أحاديث الرافعي الكبير",
+      "title_tr": "al-Talkhīṣ al-Ḥabīr",
+      "author": {
+        "name_tr": "Ibn Ḥajar al-ʿAsqalānī",
+        "death_ah": 852
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnhajar-talkhishabir-shamela1581",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.TalkhisHabir/0852IbnHajarCasqalani.TalkhisHabir.Shamela0001581-ara1",
+          "edition": "Shamela 1581"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "takhrij",
+        "madhhab": "shafii",
+        "cite_as": [
+          "التلخيص الحبير"
+        ]
+      }
+    },
+    {
+      "id": "sanani.subul_salam",
+      "title_ar": "سبل السلام شرح بلوغ المرام",
+      "title_tr": "Subul al-Salām",
+      "author": {
+        "name_tr": "Muḥammad b. Ismāʿīl al-Ṣanʿānī",
+        "death_ah": 1182
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-sanani-subulsalam-shamela21590",
+          "kind": "openiti",
+          "repo": "1200AH",
+          "commit": "87a474ec27f0104af9bb0582f9c5561009c20e31",
+          "path": "data/1182IbnIsmacilSancani/1182IbnIsmacilSancani.SubulSalam/1182IbnIsmacilSancani.SubulSalam.Shamela0021590-ara1",
+          "edition": "Shamela 21590"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "ahkam_hadith",
+        "madhhab": "mujtahid",
+        "cite_as": [
+          "سبل السلام"
+        ]
+      }
+    },
+    {
+      "id": "shawkani.nayl_awtar",
+      "title_ar": "نيل الأوطار شرح منتقى الأخبار",
+      "title_tr": "Nayl al-Awṭār",
+      "author": {
+        "name_tr": "Muḥammad b. ʿAlī al-Shawkānī",
+        "death_ah": 1250
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-shawkani-naylawtar-shamela9242",
+          "kind": "openiti",
+          "repo": "1275AH",
+          "commit": "d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8",
+          "path": "data/1255Shawkani/1255Shawkani.NaylAwtar/1255Shawkani.NaylAwtar.Shamela0009242-ara1",
+          "edition": "Shamela 9242",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "ahkam_hadith",
+        "madhhab": "mujtahid",
+        "cite_as": [
+          "نيل الاوطار"
+        ]
+      }
+    },
+    {
+      "id": "shawkani.sayl_jarrar",
+      "title_ar": "السيل الجرار المتدفق على حدائق الأزهار",
+      "title_tr": "al-Sayl al-Jarrār",
+      "author": {
+        "name_tr": "Muḥammad b. ʿAlī al-Shawkānī",
+        "death_ah": 1250
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-shawkani-sayljarrar-shamela7342",
+          "kind": "openiti",
+          "repo": "1275AH",
+          "commit": "d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8",
+          "path": "data/1255Shawkani/1255Shawkani.SaylJarrar/1255Shawkani.SaylJarrar.Shamela0007342-ara1",
+          "edition": "Shamela 7342"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "khilaf",
+        "madhhab": "mujtahid",
+        "cite_as": [
+          "السيل الجرار"
+        ]
+      }
+    },
+    {
+      "id": "shawkani.fath_rabbani",
+      "title_ar": "الفتح الرباني من فتاوى الإمام الشوكاني",
+      "title_tr": "al-Fatḥ al-Rabbānī min Fatāwā al-Imām al-Shawkānī",
+      "author": {
+        "name_tr": "Muḥammad b. ʿAlī al-Shawkānī",
+        "death_ah": 1250
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-shawkani-fathrabbani-shamela36543",
+          "kind": "openiti",
+          "repo": "1275AH",
+          "commit": "d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8",
+          "path": "data/1255Shawkani/1255Shawkani.FathRabbaniMinFatawa/1255Shawkani.FathRabbaniMinFatawa.Shamela0036543-ara1",
+          "edition": "Shamela 36543",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "fatawa",
+        "madhhab": "mujtahid",
+        "cite_as": [
+          "الفتح الرباني من فتاوى"
+        ]
+      }
+    },
+    {
+      "id": "qannawji.rawda_nadiyya",
+      "title_ar": "الروضة الندية شرح الدرر البهية",
+      "title_tr": "al-Rawḍa al-Nadiyya",
+      "author": {
+        "name_tr": "Ṣiddīq Ḥasan Khān al-Qannawjī",
+        "death_ah": 1307
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "Witness includes al-Albānī's al-Taʿlīqāt al-Raḍiyya.",
+      "witnesses": [
+        {
+          "id": "openiti-qannawji-rawdanadiyya-shamela9293",
+          "kind": "openiti",
+          "repo": "1325AH",
+          "commit": "27121bbd8fd95b1c755758d0a5b2eecd418d8ba2",
+          "path": "data/1307Qannawji/1307Qannawji.RawdaNadiyya/1307Qannawji.RawdaNadiyya.Shamela0009293-ara1",
+          "edition": "Shamela 9293"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "khilaf",
+        "madhhab": "mujtahid",
+        "cite_as": [
+          "الروضة الندية"
+        ]
+      }
+    },
+    {
+      "id": "ibn_qudama.mughni",
+      "title_ar": "المغني",
+      "title_tr": "al-Mughnī",
+      "author": {
+        "name_tr": "Muwaffaq al-Dīn Ibn Qudāma",
+        "death_ah": 620
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnqudama-mughni-shamela8463",
+          "kind": "openiti",
+          "repo": "0625AH",
+          "commit": "f1e38210b32fd0d043949ff6471e869d658c3b16",
+          "path": "data/0620IbnQudamaMaqdisi/0620IbnQudamaMaqdisi.Mughni/0620IbnQudamaMaqdisi.Mughni.Shamela0008463-ara1",
+          "edition": "Shamela 8463",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "khilaf",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "المغني"
+        ],
+        "not": [
+          "الذهبي في المغني",
+          "المغني في الضعفاء",
+          "المغني عن حمل الاسفار",
+          "العراقي في المغني",
+          "المغني في الضعفاء للذهبي"
+        ]
+      }
+    },
+    {
+      "id": "ibn_qudama.kafi",
+      "title_ar": "الكافي في فقه الإمام أحمد",
+      "title_tr": "al-Kāfī fī Fiqh al-Imām Aḥmad",
+      "author": {
+        "name_tr": "Muwaffaq al-Dīn Ibn Qudāma",
+        "death_ah": 620
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnqudama-kafi-shamela21731",
+          "kind": "openiti",
+          "repo": "0625AH",
+          "commit": "f1e38210b32fd0d043949ff6471e869d658c3b16",
+          "path": "data/0620IbnQudamaMaqdisi/0620IbnQudamaMaqdisi.KafiFiFiqh/0620IbnQudamaMaqdisi.KafiFiFiqh.Shamela0021731-ara1",
+          "edition": "Shamela 21731"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "matn",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "الكافي"
+        ],
+        "not": [
+          "الكافي في فقه اهل المدينة",
+          "الكافي لابن عبد البر"
+        ]
+      }
+    },
+    {
+      "id": "ibn_qudama.muqni",
+      "title_ar": "المقنع في فقه الإمام أحمد",
+      "title_tr": "al-Muqniʿ",
+      "author": {
+        "name_tr": "Muwaffaq al-Dīn Ibn Qudāma",
+        "death_ah": 620
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnqudama-muqni-sham19y19233",
+          "kind": "openiti",
+          "repo": "0625AH",
+          "commit": "f1e38210b32fd0d043949ff6471e869d658c3b16",
+          "path": "data/0620IbnQudamaMaqdisi/0620IbnQudamaMaqdisi.MuqnicFiFiqh/0620IbnQudamaMaqdisi.MuqnicFiFiqh.Sham19Y0019233-ara1",
+          "edition": "Sham19Y 19233"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "matn",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "المقنع"
+        ]
+      },
+      "segmenter": {
+        "kind": "abwab",
+        "end": "خاتمة الكتاب"
+      }
+    },
+    {
+      "id": "ibn_qudama.umda",
+      "title_ar": "عمدة الفقه",
+      "title_tr": "ʿUmdat al-Fiqh",
+      "author": {
+        "name_tr": "Muwaffaq al-Dīn Ibn Qudāma",
+        "death_ah": 620
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnqudama-umda-shamela11315",
+          "kind": "openiti",
+          "repo": "0625AH",
+          "commit": "f1e38210b32fd0d043949ff6471e869d658c3b16",
+          "path": "data/0620IbnQudamaMaqdisi/0620IbnQudamaMaqdisi.CumdatFiqh/0620IbnQudamaMaqdisi.CumdatFiqh.Shamela0011315-ara1",
+          "edition": "Shamela 11315"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "matn",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "عمدة الفقه"
+        ]
+      },
+      "segmenter": {
+        "kind": "abwab"
+      }
+    },
+    {
+      "id": "majd.muharrar",
+      "title_ar": "المحرر في الفقه على مذهب الإمام أحمد",
+      "title_tr": "al-Muḥarrar",
+      "author": {
+        "name_tr": "Majd al-Dīn Ibn Taymiyya",
+        "death_ah": 652
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-majd-muharrar-shamela7460",
+          "kind": "openiti",
+          "repo": "0675AH",
+          "commit": "4b1d2886508b435eb0377ccab96e1da96cc8ee0a",
+          "path": "data/0652IbnTaymiyyaMajdDin/0652IbnTaymiyyaMajdDin.Muharrar/0652IbnTaymiyyaMajdDin.Muharrar.Shamela0007460-ara1",
+          "edition": "Shamela 7460"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "matn",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "المحرر"
+        ],
+        "not": [
+          "المحرر الوجيز",
+          "المحرر في الحديث",
+          "المحرر لابن عبد الهادي",
+          "المحرر للرافعي"
+        ]
+      },
+      "segmenter": {
+        "kind": "abwab"
+      }
+    },
+    {
+      "id": "shams_ibn_qudama.sharh_kabir",
+      "title_ar": "الشرح الكبير على متن المقنع",
+      "title_tr": "al-Sharḥ al-Kabīr",
+      "author": {
+        "name_tr": "Shams al-Dīn Ibn Qudāma",
+        "death_ah": 682
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-shamsibnqudama-sharhkabir-shamela1153",
+          "kind": "openiti",
+          "repo": "0700AH",
+          "commit": "3d8ff4e7b035aaa4ca5dda52c7322645f3401dcf",
+          "path": "data/0682CabdRahmanIbnQudama/0682CabdRahmanIbnQudama.SharhKabir/0682CabdRahmanIbnQudama.SharhKabir.Shamela0001153-ara1",
+          "edition": "Shamela 1153",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "sharh",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "الشرح الكبير"
+        ],
+        "not": [
+          "الرافعي في الشرح الكبير",
+          "الشرح الكبير للرافعي",
+          "الشرح الكبير للدردير",
+          "الدردير في الشرح الكبير"
+        ]
+      }
+    },
+    {
+      "id": "ibn_muflih.furu",
+      "title_ar": "الفروع ومعه تصحيح الفروع",
+      "title_tr": "al-Furūʿ",
+      "author": {
+        "name_tr": "Shams al-Dīn Ibn Mufliḥ",
+        "death_ah": 763
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnmuflih-furu-shamela12052",
+          "kind": "openiti",
+          "repo": "0775AH",
+          "commit": "61b0c7891699554aeff8dffdb8b1a2a59d2d22ab",
+          "path": "data/0763IbnMuflihMaqdisi/0763IbnMuflihMaqdisi.FurucWaTashihFuruc/0763IbnMuflihMaqdisi.FurucWaTashihFuruc.Shamela0012052-ara1",
+          "edition": "Shamela 12052",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "sharh",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "قال في الفروع",
+          "صاحب الفروع",
+          "كتاب الفروع",
+          "ذكره في الفروع",
+          "ابن مفلح في الفروع",
+          "وفي الفروع"
+        ]
+      }
+    },
+    {
+      "id": "burhan_ibn_muflih.mubdi",
+      "title_ar": "المبدع في شرح المقنع",
+      "title_tr": "al-Mubdiʿ fī Sharḥ al-Muqniʿ",
+      "author": {
+        "name_tr": "Burhān al-Dīn Ibn Mufliḥ",
+        "death_ah": 884
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-burhanibnmuflih-mubdi-shamela21619bk2",
+          "kind": "openiti",
+          "repo": "0900AH",
+          "commit": "271ff65bd8364d3a46b5806ca529617d1ffc3393",
+          "path": "data/0884AbuIshaqIbnMuflih/0884AbuIshaqIbnMuflih.MubdicFiSharhMuqnic/0884AbuIshaqIbnMuflih.MubdicFiSharhMuqnic.Shamela0021619BK2-ara1",
+          "edition": "Shamela 21619 BK2",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "sharh",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "المبدع"
+        ]
+      }
+    },
+    {
+      "id": "hajjawi.zad_mustaqni",
+      "title_ar": "زاد المستقنع في اختصار المقنع",
+      "title_tr": "Zād al-Mustaqniʿ",
+      "author": {
+        "name_tr": "Sharaf al-Dīn al-Ḥajjāwī",
+        "death_ah": 968
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-hajjawi-zadmustaqni-shamela11230",
+          "kind": "openiti",
+          "repo": "0975AH",
+          "commit": "c47ff1c47a9108eab999d7fa68ef30be16bc0f85",
+          "path": "data/0968IbnAhmadAbuNajaHajjawi/0968IbnAhmadAbuNajaHajjawi.ZadMustaqnic/0968IbnAhmadAbuNajaHajjawi.ZadMustaqnic.Shamela0011230-ara1",
+          "edition": "Shamela 11230"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "matn",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "زاد المستقنع"
+        ]
+      },
+      "segmenter": {
+        "kind": "abwab"
+      }
+    },
+    {
+      "id": "hajjawi.iqna",
+      "title_ar": "الإقناع لطالب الانتفاع",
+      "title_tr": "al-Iqnāʿ",
+      "author": {
+        "name_tr": "Sharaf al-Dīn al-Ḥajjāwī",
+        "death_ah": 968
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-hajjawi-iqna-shamela7360",
+          "kind": "openiti",
+          "repo": "0975AH",
+          "commit": "c47ff1c47a9108eab999d7fa68ef30be16bc0f85",
+          "path": "data/0968IbnAhmadAbuNajaHajjawi/0968IbnAhmadAbuNajaHajjawi.Iqnac/0968IbnAhmadAbuNajaHajjawi.Iqnac.Shamela0007360-ara1",
+          "edition": "Shamela 7360"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "matn",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "الاقناع"
+        ],
+        "not": [
+          "الاقناع لابن المنذر",
+          "الاقناع في حل الفاظ ابي شجاع",
+          "الاقناع للشربيني"
+        ]
+      },
+      "segmenter": {
+        "kind": "abwab"
+      }
+    },
+    {
+      "id": "ibn_najjar.muntaha",
+      "title_ar": "منتهى الإرادات",
+      "title_tr": "Muntahā al-Irādāt",
+      "author": {
+        "name_tr": "Ibn al-Najjār al-Futūḥī",
+        "death_ah": 972
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnnajjar-muntaha-sham19y13664",
+          "kind": "openiti",
+          "repo": "0975AH",
+          "commit": "c47ff1c47a9108eab999d7fa68ef30be16bc0f85",
+          "path": "data/0972IbnAhmadIbnNajjarHanbali/0972IbnAhmadIbnNajjarHanbali.MuntahaIradat/0972IbnAhmadIbnNajjarHanbali.MuntahaIradat.Sham19Y0013664-ara1",
+          "edition": "Sham19Y 13664"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "matn",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "منتهى الارادات",
+          "قال في المنتهى",
+          "صاحب المنتهى",
+          "وفي المنتهى"
+        ],
+        "not": [
+          "سدرة المنتهى"
+        ]
+      },
+      "segmenter": {
+        "kind": "abwab"
+      }
+    },
+    {
+      "id": "buhuti.rawd_murbi",
+      "title_ar": "الروض المربع شرح زاد المستقنع",
+      "title_tr": "al-Rawḍ al-Murbiʿ",
+      "author": {
+        "name_tr": "Manṣūr al-Buhūtī",
+        "death_ah": 1051
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-buhuti-rawdmurbi-shamela1679",
+          "kind": "openiti",
+          "repo": "1075AH",
+          "commit": "f2c1134cf9bea94a325ff37dafd91671d204ec69",
+          "path": "data/1051IbnYunusBuhutiHanbali/1051IbnYunusBuhutiHanbali.RawdMurbic/1051IbnYunusBuhutiHanbali.RawdMurbic.Shamela0001679-ara1",
+          "edition": "Shamela 1679"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "sharh",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "الروض المربع"
+        ]
+      }
+    },
+    {
+      "id": "buhuti.kashshaf",
+      "title_ar": "كشاف القناع عن متن الإقناع",
+      "title_tr": "Kashshāf al-Qināʿ",
+      "author": {
+        "name_tr": "Manṣūr al-Buhūtī",
+        "death_ah": 1051
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-buhuti-kashshaf-shamela21642",
+          "kind": "openiti",
+          "repo": "1075AH",
+          "commit": "f2c1134cf9bea94a325ff37dafd91671d204ec69",
+          "path": "data/1051IbnYunusBuhutiHanbali/1051IbnYunusBuhutiHanbali.KashshafQinac/1051IbnYunusBuhutiHanbali.KashshafQinac.Shamela0021642-ara1",
+          "edition": "Shamela 21642",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "sharh",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "كشاف القناع"
+        ]
+      }
+    },
+    {
+      "id": "buhuti.sharh_muntaha",
+      "title_ar": "شرح منتهى الإرادات (دقائق أولي النهى)",
+      "title_tr": "Sharḥ Muntahā al-Irādāt",
+      "author": {
+        "name_tr": "Manṣūr al-Buhūtī",
+        "death_ah": 1051
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-buhuti-sharhmuntaha-shamela21693",
+          "kind": "openiti",
+          "repo": "1075AH",
+          "commit": "f2c1134cf9bea94a325ff37dafd91671d204ec69",
+          "path": "data/1051IbnYunusBuhutiHanbali/1051IbnYunusBuhutiHanbali.SharhMuntahaIradat/1051IbnYunusBuhutiHanbali.SharhMuntahaIradat.Shamela0021693-ara1",
+          "edition": "Shamela 21693",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "sharh",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "شرح المنتهى"
+        ]
+      }
+    },
+    {
+      "id": "ibn_taymiyya.majmu_fatawa",
+      "title_ar": "مجموع الفتاوى",
+      "title_tr": "Majmūʿ al-Fatāwā",
+      "author": {
+        "name_tr": "Taqī al-Dīn Ibn Taymiyya",
+        "death_ah": 728
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "Same witness as ibn_taymiyya.risala_maana_al_qiyas, which registers only its v20 qiyās span.",
+      "witnesses": [
+        {
+          "id": "openiti-majmufatawa-shamela7289",
+          "kind": "openiti",
+          "repo": "0750AH",
+          "commit": "7c9c84d9f98581470aa2b7f8bee00ae285c5c707",
+          "path": "data/0728IbnTaymiyya/0728IbnTaymiyya.MajmucFatawa/0728IbnTaymiyya.MajmucFatawa.Shamela0007289-ara1",
+          "edition": "Majmūʿ al-Fatāwā, collected by ʿAbd al-Raḥmān b. Qāsim, Mujammaʿ al-Malik Fahd, Medina, 1416/1995, 35 vols",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "fatawa",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "مجموع الفتاوى"
+        ]
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "و?سئل\\s*(?:[-–:]|(?:شيخ|رحمه|أيضا|قدس))",
+        "answer": "(?:فأجاب)"
+      }
+    },
+    {
+      "id": "ibn_taymiyya.fatawa_kubra",
+      "title_ar": "الفتاوى الكبرى",
+      "title_tr": "al-Fatāwā al-Kubrā",
+      "author": {
+        "name_tr": "Taqī al-Dīn Ibn Taymiyya",
+        "death_ah": 728
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibntaymiyya-fatawakubra-shamela9690",
+          "kind": "openiti",
+          "repo": "0750AH",
+          "commit": "7c9c84d9f98581470aa2b7f8bee00ae285c5c707",
+          "path": "data/0728IbnTaymiyya/0728IbnTaymiyya.FatawaKubra/0728IbnTaymiyya.FatawaKubra.Shamela0009690-ara1",
+          "edition": "Shamela 9690",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "fatawa",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "الفتاوى الكبرى"
+        ]
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "(?:\\[?مسألة)",
+        "answer": "(?:الجواب)"
+      }
+    },
+    {
+      "id": "ibn_taymiyya.mustadrak",
+      "title_ar": "المستدرك على مجموع فتاوى شيخ الإسلام",
+      "title_tr": "al-Mustadrak ʿalā Majmūʿ al-Fatāwā",
+      "author": {
+        "name_tr": "Taqī al-Dīn Ibn Taymiyya",
+        "death_ah": 728
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibntaymiyya-mustadrak-shamela10284",
+          "kind": "openiti",
+          "repo": "0750AH",
+          "commit": "7c9c84d9f98581470aa2b7f8bee00ae285c5c707",
+          "path": "data/0728IbnTaymiyya/0728IbnTaymiyya.MustadrakCalaMajmucFatawa/0728IbnTaymiyya.MustadrakCalaMajmucFatawa.Shamela0010284-ara1",
+          "edition": "Shamela 10284"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "fatawa",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "المستدرك على مجموع الفتاوى",
+          "المستدرك على مجموع فتاوى"
+        ]
+      }
+    },
+    {
+      "id": "ibn_taymiyya.jami_masail",
+      "title_ar": "جامع المسائل",
+      "title_tr": "Jāmiʿ al-Masāʾil",
+      "author": {
+        "name_tr": "Taqī al-Dīn Ibn Taymiyya",
+        "death_ah": 728
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibntaymiyya-jamimasail-shamela22797",
+          "kind": "openiti",
+          "repo": "0750AH",
+          "commit": "7c9c84d9f98581470aa2b7f8bee00ae285c5c707",
+          "path": "data/0728IbnTaymiyya/0728IbnTaymiyya.JamicMasail/0728IbnTaymiyya.JamicMasail.Shamela0022797-ara1",
+          "edition": "Shamela 22797"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "fatawa",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "جامع المسائل"
+        ]
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "(?:\\[?مسألة)",
+        "answer": "(?:الجواب)"
+      }
+    },
+    {
+      "id": "bali.ikhtiyarat",
+      "title_ar": "الاختيارات الفقهية من فتاوى شيخ الإسلام ابن تيمية",
+      "title_tr": "al-Ikhtiyārāt al-Fiqhiyya",
+      "author": {
+        "name_tr": "ʿAlāʾ al-Dīn al-Baʿlī",
+        "death_ah": 803
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "JK witness with sparse page markers (last PageV01P049); completeness against the print unverified.",
+      "witnesses": [
+        {
+          "id": "openiti-bali-ikhtiyarat-jk380",
+          "kind": "openiti",
+          "repo": "0750AH",
+          "commit": "7c9c84d9f98581470aa2b7f8bee00ae285c5c707",
+          "path": "data/0728IbnTaymiyya/0728IbnTaymiyya.IkhtiyaratFiqhiyya/0728IbnTaymiyya.IkhtiyaratFiqhiyya.JK000380-ara1",
+          "edition": "JK 380"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "ikhtiyarat",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "الاختيارات"
+        ]
+      }
+    },
+    {
+      "id": "ibn_qayyim.zad_maad",
+      "title_ar": "زاد المعاد في هدي خير العباد",
+      "title_tr": "Zād al-Maʿād",
+      "author": {
+        "name_tr": "Ibn Qayyim al-Jawziyya",
+        "death_ah": 751
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnqayyim-zadmaad-shamela21713",
+          "kind": "openiti",
+          "repo": "0775AH",
+          "commit": "61b0c7891699554aeff8dffdb8b1a2a59d2d22ab",
+          "path": "data/0751IbnQayyimJawziyya/0751IbnQayyimJawziyya.ZadMacad/0751IbnQayyimJawziyya.ZadMacad.Shamela0021713-ara1",
+          "edition": "Shamela 21713",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "ahkam_hadith",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "زاد المعاد"
+        ]
+      }
+    },
+    {
+      "id": "ibn_qayyim.turuq_hukmiyya",
+      "title_ar": "الطرق الحكمية في السياسة الشرعية",
+      "title_tr": "al-Ṭuruq al-Ḥukmiyya",
+      "author": {
+        "name_tr": "Ibn Qayyim al-Jawziyya",
+        "death_ah": 751
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnqayyim-turuqhukmiyya-shamela11495",
+          "kind": "openiti",
+          "repo": "0775AH",
+          "commit": "61b0c7891699554aeff8dffdb8b1a2a59d2d22ab",
+          "path": "data/0751IbnQayyimJawziyya/0751IbnQayyimJawziyya.TuruqHukmiyya/0751IbnQayyimJawziyya.TuruqHukmiyya.Shamela0011495-ara1",
+          "edition": "Shamela 11495"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "fatawa",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "الطرق الحكمية"
+        ]
+      }
+    },
+    {
+      "id": "ibn_qayyim.ahkam_ahl_dhimma",
+      "title_ar": "أحكام أهل الذمة",
+      "title_tr": "Aḥkām Ahl al-Dhimma",
+      "author": {
+        "name_tr": "Ibn Qayyim al-Jawziyya",
+        "death_ah": 751
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnqayyim-ahkamahldhimma-shamela21747",
+          "kind": "openiti",
+          "repo": "0775AH",
+          "commit": "61b0c7891699554aeff8dffdb8b1a2a59d2d22ab",
+          "path": "data/0751IbnQayyimJawziyya/0751IbnQayyimJawziyya.AhkamAhlDhimma/0751IbnQayyimJawziyya.AhkamAhlDhimma.Shamela0021747-ara1",
+          "edition": "Shamela 21747"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "fatawa",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "احكام اهل الذمة"
+        ]
+      }
+    },
+    {
+      "id": "ibn_qayyim.ighatha",
+      "title_ar": "إغاثة اللهفان من مصايد الشيطان",
+      "title_tr": "Ighāthat al-Lahfān",
+      "author": {
+        "name_tr": "Ibn Qayyim al-Jawziyya",
+        "death_ah": 751
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnqayyim-ighatha-shamela11688",
+          "kind": "openiti",
+          "repo": "0775AH",
+          "commit": "61b0c7891699554aeff8dffdb8b1a2a59d2d22ab",
+          "path": "data/0751IbnQayyimJawziyya/0751IbnQayyimJawziyya.IghathatLahfan/0751IbnQayyimJawziyya.IghathatLahfan.Shamela0011688-ara1",
+          "edition": "Shamela 11688"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "fatawa",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "اغاثة اللهفان"
+        ]
+      }
+    },
+    {
+      "id": "ibn_qayyim.badai_fawaid",
+      "title_ar": "بدائع الفوائد",
+      "title_tr": "Badāʾiʿ al-Fawāʾid",
+      "author": {
+        "name_tr": "Ibn Qayyim al-Jawziyya",
+        "death_ah": 751
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "witnesses": [
+        {
+          "id": "openiti-ibnqayyim-badaifawaid-shamela12003",
+          "kind": "openiti",
+          "repo": "0775AH",
+          "commit": "61b0c7891699554aeff8dffdb8b1a2a59d2d22ab",
+          "path": "data/0751IbnQayyimJawziyya/0751IbnQayyimJawziyya.BadaicFawaid/0751IbnQayyimJawziyya.BadaicFawaid.Shamela0012003-ara1",
+          "edition": "Shamela 12003"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "fatawa",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "بدائع الفوائد"
+        ]
+      }
+    },
+    {
+      "id": "ulama_najd.durar_saniyya",
+      "title_ar": "الدرر السنية في الأجوبة النجدية",
+      "title_tr": "al-Durar al-Saniyya fī al-Ajwiba al-Najdiyya",
+      "author": {
+        "name_tr": "ʿUlamāʾ Najd, comp. ʿAbd al-Raḥmān b. Qāsim",
+        "death_ah": 1392
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "note": "Najdī ajwiba from Muḥammad b. ʿAbd al-Wahhāb onward, compiled by Ibn Qāsim (d. 1392).",
+      "witnesses": [
+        {
+          "id": "openiti-ulamanajd-durarsaniyya-shamela3055",
+          "kind": "openiti",
+          "repo": "1450AH",
+          "commit": "c35eac871bfcb6ff9677d8867ed544b973b7a5be",
+          "path": "data/1450CulamaNajd/1450CulamaNajd.DurarSaniyya/1450CulamaNajd.DurarSaniyya.Shamela0003055-ara1",
+          "edition": "Shamela 3055",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "fatawa",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "الدرر السنية"
+        ]
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "و?سئل\\s*(?:[-–:]|(?:الشيخ|أيضا|ابن|عن))",
+        "answer": "(?:فأجاب|و?أجاب)"
+      }
+    },
+    {
+      "id": "muhammad_ibn_ibrahim.fatawa",
+      "title_ar": "فتاوى ورسائل سماحة الشيخ محمد بن إبراهيم آل الشيخ",
+      "title_tr": "Fatāwā wa-Rasāʾil Muḥammad b. Ibrāhīm Āl al-Shaykh",
+      "author": {
+        "name_tr": "Muḥammad b. Ibrāhīm Āl al-Shaykh",
+        "death_ah": 1389
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "openiti-muhammadibnibrahim-fatawa-shamela8476",
+          "kind": "openiti",
+          "repo": "1400AH",
+          "commit": "6b4084ba42c8e0bd7c888a8c4b37c43ca771c322",
+          "path": "data/1389MuhammadAlShaykh/1389MuhammadAlShaykh.FatawaWaRasail/1389MuhammadAlShaykh.FatawaWaRasail.Shamela0008476-ara1",
+          "edition": "Shamela 8476",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "fatawa",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "فتاوى الشيخ محمد بن ابراهيم",
+          "فتاوى ورسائل الشيخ محمد بن ابراهيم",
+          "فتاوى محمد بن ابراهيم"
+        ]
+      },
+      "segmenter": {
+        "kind": "masail",
+        "start": "(?:\\((?=\\d)|(?=\\d+\\s*-\\s*$))(?P<n>\\d+)\\s*[-_]?\\s*(?:$|(?=[^\\W\\d_]|\\())",
+        "ordered": true
+      }
+    },
+    {
+      "id": "lajna_daima.fatawa",
+      "title_ar": "فتاوى اللجنة الدائمة للبحوث العلمية والإفتاء",
+      "title_tr": "Fatāwā al-Lajna al-Dāʾima",
+      "author": {
+        "name_tr": "al-Lajna al-Dāʾima (chair: ʿAbd al-ʿAzīz Ibn Bāz)",
+        "death_ah": 1420
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "note": "Witness is al-Majmūʿa al-Ūlā only. Committee fatāwā co-signed by Ibn Bāz; registered as cited, not as his citer.",
+      "witnesses": [
+        {
+          "id": "openiti-lajnadaima-fatawa-shamela8381",
+          "kind": "openiti",
+          "repo": "1450AH",
+          "commit": "c35eac871bfcb6ff9677d8867ed544b973b7a5be",
+          "path": "data/1450LajnaDaima/1450LajnaDaima.Fatawa/1450LajnaDaima.Fatawa.Shamela0008381-ara1",
+          "edition": "Shamela 8381",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "fatawa",
+        "madhhab": "hanbali",
+        "cite_as": [
+          "فتاوى اللجنة الدائمة"
+        ]
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "(?:السؤال|س\\s*\\d*\\s*:)",
+        "answer": "(?:ج\\s*\\d*\\s*:)"
+      }
+    },
+    {
+      "id": "ibn_baz.majmu_fatawa",
+      "title_ar": "مجموع فتاوى ومقالات متنوعة",
+      "title_tr": "Majmūʿ Fatāwā wa-Maqālāt Mutanawwiʿa",
+      "author": {
+        "name_tr": "ʿAbd al-ʿAzīz Ibn Bāz",
+        "death_ah": 1420
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "openiti-ibnbaz-majmufatawa-shamela21537",
+          "kind": "openiti",
+          "repo": "1425AH",
+          "commit": "6d71d2af1be5a49f1db3b52cdda15ea11da569de",
+          "path": "data/1420IbnBaz/1420IbnBaz.MajmucFatawa/1420IbnBaz.MajmucFatawa.Shamela0021537-ara1",
+          "edition": "Shamela 21537",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "citer",
+        "genre": "fatawa",
+        "scholar": "ibn_baz"
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "(?:س\\s*\\d*\\s*:)",
+        "answer": "(?:ج\\s*\\d*\\s*:)"
+      }
+    },
+    {
+      "id": "ibn_baz.nur_ala_darb",
+      "title_ar": "فتاوى نور على الدرب",
+      "title_tr": "Fatāwā Nūr ʿalā al-Darb (Ibn Bāz)",
+      "author": {
+        "name_tr": "ʿAbd al-ʿAzīz Ibn Bāz",
+        "death_ah": 1420
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "openiti-ibnbaz-nuraladarb-shamela107",
+          "kind": "openiti",
+          "repo": "1425AH",
+          "commit": "6d71d2af1be5a49f1db3b52cdda15ea11da569de",
+          "path": "data/1420IbnBaz/1420IbnBaz.FatawaNurCalaDarb/1420IbnBaz.FatawaNurCalaDarb.Shamela0000107-ara1",
+          "edition": "Shamela 107",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "citer",
+        "genre": "fatawa",
+        "scholar": "ibn_baz"
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "(?:س\\s*\\d*\\s*:)",
+        "answer": "(?:ج\\s*\\d*\\s*:)"
+      }
+    },
+    {
+      "id": "ibn_uthaymin.majmu_fatawa",
+      "title_ar": "مجموع فتاوى ورسائل فضيلة الشيخ محمد بن صالح العثيمين",
+      "title_tr": "Majmūʿ Fatāwā wa-Rasāʾil Ibn ʿUthaymīn",
+      "author": {
+        "name_tr": "Muḥammad b. Ṣāliḥ Ibn ʿUthaymīn",
+        "death_ah": 1421
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "openiti-ibnuthaymin-majmufatawa-shamela12293",
+          "kind": "openiti",
+          "repo": "1425AH",
+          "commit": "6d71d2af1be5a49f1db3b52cdda15ea11da569de",
+          "path": "data/1421MuhammadCuthaymin/1421MuhammadCuthaymin.MajmucFatawa/1421MuhammadCuthaymin.MajmucFatawa.Shamela0012293-ara1",
+          "edition": "Shamela 12293",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "citer",
+        "genre": "fatawa",
+        "scholar": "ibn_uthaymin"
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "و?سئل\\s+(?:فضيلة|الشيخ)",
+        "answer": "(?:فأجاب)"
+      }
+    },
+    {
+      "id": "ibn_uthaymin.nur_ala_darb",
+      "title_ar": "فتاوى نور على الدرب",
+      "title_tr": "Fatāwā Nūr ʿalā al-Darb (Ibn ʿUthaymīn)",
+      "author": {
+        "name_tr": "Muḥammad b. Ṣāliḥ Ibn ʿUthaymīn",
+        "death_ah": 1421
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "openiti-ibnuthaymin-nuraladarb-shamela2300",
+          "kind": "openiti",
+          "repo": "1425AH",
+          "commit": "6d71d2af1be5a49f1db3b52cdda15ea11da569de",
+          "path": "data/1421MuhammadCuthaymin/1421MuhammadCuthaymin.FatawaNurCalaDarb/1421MuhammadCuthaymin.FatawaNurCalaDarb.Shamela0002300-ara1",
+          "edition": "Shamela 2300",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "citer",
+        "genre": "fatawa",
+        "scholar": "ibn_uthaymin"
+      },
+      "segmenter": {
+        "kind": "qa",
+        "question": "(?:فضيلة الشيخ\\s*:)",
+        "question_heading": true,
+        "answer": "(?:فأجاب)"
+      }
+    },
+    {
+      "id": "albani.irwa",
+      "title_ar": "إرواء الغليل في تخريج أحاديث منار السبيل",
+      "title_tr": "Irwāʾ al-Ghalīl fī Takhrīj Aḥādīth Manār al-Sabīl",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "note": "base text is Ibn Ḍūyān's Ḥanbalī Manār al-Sabīl: the join with the uṣūl track (H8)",
+      "witnesses": [
+        {
+          "id": "shamela-22592",
+          "kind": "shamela",
+          "book_id": 22592,
+          "edition": "Shamela 22592",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "citer",
+        "genre": "takhrij",
+        "scholar": "albani"
+      }
+    },
+    {
+      "id": "albani.sahih_daif_tirmidhi",
+      "title_ar": "صحيح وضعيف سنن الترمذي",
+      "title_tr": "Ṣaḥīḥ wa-Ḍaʿīf Sunan al-Tirmidhī",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": false,
+      "track": "albani_hadith",
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "openiti-albani-sdtirmidhi-shamela782",
+          "kind": "openiti",
+          "repo": "1425AH",
+          "commit": "6d71d2af1be5a49f1db3b52cdda15ea11da569de",
+          "path": "data/1420MuhammadNasirDinAlbani/1420MuhammadNasirDinAlbani.SahihWaDacifSunanTirmidhi/1420MuhammadNasirDinAlbani.SahihWaDacifSunanTirmidhi.Shamela0000782-ara1",
+          "edition": "Shamela 782: al-Albānī's verdict on every ḥadīth of al-Tirmidhī, in al-Tirmidhī's numbering"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.tamam_minna",
+      "title_ar": "تمام المنة في التعليق على فقه السنة",
+      "title_tr": "Tamām al-Minna fī al-Taʿlīq ʿalā Fiqh al-Sunna",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "axioms",
+        "tests"
+      ],
+      "kernel": true,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-11122",
+          "kind": "shamela",
+          "book_id": 11122,
+          "edition": "Shamela 11122; the 15 qawāʿid of the muqaddima are pp. 15–41",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "citer",
+        "genre": "khilaf",
+        "scholar": "albani"
+      }
+    },
+    {
+      "id": "sadi.irshad",
+      "title_ar": "إرشاد أولي البصائر والألباب لنيل الفقه بأقرب الطرق وأيسر الأسباب",
+      "title_tr": "Irshād Ulī al-Baṣāʾir wa'l-Albāb",
+      "author": {
+        "name_tr": "ʿAbd al-Raḥmān b. Nāṣir al-Saʿdī",
+        "death_ah": 1376
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "shamela-1602",
+          "kind": "shamela",
+          "book_id": 1602,
+          "edition": "Shamela 1602"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "citer",
+        "genre": "fatawa",
+        "scholar": "sadi"
+      }
+    },
+    {
+      "id": "sadi.bahja",
+      "title_ar": "بهجة قلوب الأبرار وقرة عيون الأخيار",
+      "title_tr": "Bahjat Qulūb al-Abrār",
+      "author": {
+        "name_tr": "ʿAbd al-Raḥmān b. Nāṣir al-Saʿdī",
+        "death_ah": 1376
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "shamela-9945",
+          "kind": "shamela",
+          "book_id": 9945,
+          "edition": "Shamela 9945"
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "citer",
+        "genre": "ahkam_hadith",
+        "scholar": "sadi"
+      }
+    },
+    {
+      "id": "ibn_hajar.nuzha",
+      "title_ar": "نزهة النظر في توضيح نخبة الفكر",
+      "title_tr": "Nuzhat al-Naẓar fī Tawḍīḥ Nukhbat al-Fikar",
+      "author": {
+        "name_tr": "Ibn Ḥajar al-ʿAsqalānī",
+        "death_ah": 852
+      },
+      "layers": [
+        "signature"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "openiti-nuzha-shamela1565",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.NuzhatNazar/0852IbnHajarCasqalani.NuzhatNazar.Shamela0001565-ara1",
+          "edition": "Shamela 1565, Maṭbaʿat al-Ṣabāḥ, Damascus, 3rd ed., 1421/2000"
+        },
+        {
+          "id": "openiti-nuzha-shamela12115",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.NuzhatNazar/0852IbnHajarCasqalani.NuzhatNazar.Shamela0012115-ara1",
+          "edition": "Shamela 12115, ed. ʿAbd Allāh al-Ruḥaylī, Riyadh, 1422"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_hajar.nukhba",
+      "title_ar": "نخبة الفكر في مصطلح أهل الأثر",
+      "title_tr": "Nukhbat al-Fikar",
+      "author": {
+        "name_tr": "Ibn Ḥajar al-ʿAsqalānī",
+        "death_ah": 852
+      },
+      "layers": [
+        "signature"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "openiti-nukhba-shamela5940",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.NukhbatFikar/0852IbnHajarCasqalani.NukhbatFikar.Shamela0005940-ara1",
+          "edition": "Shamela 5940, printed with Subul al-Salām, Dār al-Ḥadīth, 5th ed., 1418/1997"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_hajar.nukat",
+      "title_ar": "النكت على كتاب ابن الصلاح",
+      "title_tr": "al-Nukat ʿalā Kitāb Ibn al-Ṣalāḥ",
+      "author": {
+        "name_tr": "Ibn Ḥajar al-ʿAsqalānī",
+        "death_ah": 852
+      },
+      "layers": [
+        "signature"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "openiti-nukat-shamela8316",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.NukatCalaIbnSalah/0852IbnHajarCasqalani.NukatCalaIbnSalah.Shamela0008316-ara1",
+          "edition": "Shamela 8316, ed. Rabīʿ al-Madkhalī, Islamic University of Madina, 1404/1984"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_salah.muqaddima",
+      "title_ar": "معرفة أنواع علوم الحديث (مقدمة ابن الصلاح)",
+      "title_tr": "Maʿrifat Anwāʿ ʿUlūm al-Ḥadīth (al-Muqaddima)",
+      "author": {
+        "name_tr": "Ibn al-Ṣalāḥ al-Shahrazūrī",
+        "death_ah": 643
+      },
+      "layers": [
+        "signature"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "openiti-ibn-salah-shamela22870",
+          "kind": "openiti",
+          "repo": "0650AH",
+          "commit": "287c0cc31845e7f63afb4c0e3c776fc13b45f00f",
+          "path": "data/0643IbnSalahShahrazuri/0643IbnSalahShahrazuri.MuqaddimatCulumHadith/0643IbnSalahShahrazuri.MuqaddimatCulumHadith.Shamela0022870-ara1",
+          "edition": "Shamela 22870, ed. Nūr al-Dīn ʿItr, Dār al-Fikr"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "dhahabi.muqiza",
+      "title_ar": "الموقظة في علم مصطلح الحديث",
+      "title_tr": "al-Mūqiẓa fī ʿIlm Muṣṭalaḥ al-Ḥadīth",
+      "author": {
+        "name_tr": "Shams al-Dīn al-Dhahabī",
+        "death_ah": 748
+      },
+      "layers": [
+        "signature"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "openiti-muqiza-shamela8195",
+          "kind": "openiti",
+          "repo": "0750AH",
+          "commit": "7c9c84d9f98581470aa2b7f8bee00ae285c5c707",
+          "path": "data/0748Dhahabi/0748Dhahabi.MuqizaFiCilmMustalahHadith/0748Dhahabi.MuqizaFiCilmMustalahHadith.Shamela0008195-ara1",
+          "edition": "Shamela 8195, ed. Abū Ghudda, Maktab al-Maṭbūʿāt al-Islāmiyya, Aleppo, 2nd ed., 1412"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "shakir.baith",
+      "title_ar": "الباعث الحثيث شرح اختصار علوم الحديث",
+      "title_tr": "al-Bāʿith al-Ḥathīth (Ibn Kathīr, Ikhtiṣār ʿUlūm al-Ḥadīth)",
+      "author": {
+        "name_tr": "Aḥmad Muḥammad Shākir",
+        "death_ah": 1377
+      },
+      "layers": [
+        "signature"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "note": "Ibn Kathīr's Ikhtiṣār with Shākir's sharḥ; the edition carrying al-Albānī's taʿlīqāt is not yet located",
+      "witnesses": [
+        {
+          "id": "openiti-baith-shamela21571",
+          "kind": "openiti",
+          "repo": "1400AH",
+          "commit": "6b4084ba42c8e0bd7c888a8c4b37c43ca771c322",
+          "path": "data/1377AhmadMuhammadShakir/1377AhmadMuhammadShakir.BacithHathith/1377AhmadMuhammadShakir.BacithHathith.Shamela0021571-ara1",
+          "edition": "Shamela 21571, Dār al-Kutub al-ʿIlmiyya, 2nd ed."
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_hajar.taqrib",
+      "title_ar": "تقريب التهذيب",
+      "title_tr": "Taqrīb al-Tahdhīb",
+      "author": {
+        "name_tr": "Ibn Ḥajar al-ʿAsqalānī",
+        "death_ah": 852
+      },
+      "layers": [
+        "axioms"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "note": "the 12 marātib are Ibn Ḥajar's default narrator valuation (Hadith.Grade)",
+      "witnesses": [
+        {
+          "id": "openiti-taqrib-jk121",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.TaqribTahdhib/0852IbnHajarCasqalani.TaqribTahdhib.JK000121-ara1.completed",
+          "edition": "JK 121, ed. Muḥammad ʿAwwāma, Dār al-Rashīd; carries the muqaddima with the 12 marātib (v01:p074–p075)",
+          "fetch": "on_demand"
+        },
+        {
+          "id": "openiti-taqrib-shamela8609",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.TaqribTahdhib/0852IbnHajarCasqalani.TaqribTahdhib.Shamela0008609-ara1",
+          "edition": "Shamela 8609, ed. ʿAwwāma, Dār al-Rashīd, 1406/1986; lacks the muqaddima before the ṭabaqāt",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_hajar.tarif",
+      "title_ar": "تعريف أهل التقديس بمراتب الموصوفين بالتدليس (طبقات المدلسين)",
+      "title_tr": "Taʿrīf Ahl al-Taqdīs bi-Marātib al-Mawṣūfīn bi'l-Tadlīs",
+      "author": {
+        "name_tr": "Ibn Ḥajar al-ʿAsqalānī",
+        "death_ah": 852
+      },
+      "layers": [
+        "axioms"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "openiti-tarif-shamela1186",
+          "kind": "openiti",
+          "repo": "0875AH",
+          "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+          "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.TacrifAhlTaqdis/0852IbnHajarCasqalani.TacrifAhlTaqdis.Shamela0001186BK1-ara1",
+          "edition": "Shamela 1186, ed. ʿĀṣim al-Qaryūtī, Maktabat al-Manār, Amman, 1403/1983"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "mualimi.tankil",
+      "title_ar": "التنكيل بما في تأنيب الكوثري من الأباطيل",
+      "title_tr": "al-Tankīl bi-mā fī Taʾnīb al-Kawtharī min al-Abāṭīl",
+      "author": {
+        "name_tr": "ʿAbd al-Raḥmān al-Muʿallimī",
+        "death_ah": 1386
+      },
+      "layers": [
+        "axioms"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-12767",
+          "kind": "shamela",
+          "book_id": 12767,
+          "edition": "Shamela 12767, al-Maktab al-Islāmī (with al-Albānī)",
+          "fetch": "on_demand"
+        },
+        {
+          "id": "shamela-337",
+          "kind": "shamela",
+          "book_id": 337,
+          "edition": "Shamela 337, within Āthār al-Muʿallimī",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.daifa",
+      "title_ar": "سلسلة الأحاديث الضعيفة والموضوعة وأثرها السيئ في الأمة",
+      "title_tr": "Silsilat al-Aḥādīth al-Ḍaʿīfa wa'l-Mawḍūʿa",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": true,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-12762",
+          "kind": "shamela",
+          "book_id": 12762,
+          "edition": "Shamela 12762",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.sahiha",
+      "title_ar": "سلسلة الأحاديث الصحيحة وشيء من فقهها وفوائدها",
+      "title_tr": "Silsilat al-Aḥādīth al-Ṣaḥīḥa",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-9442",
+          "kind": "shamela",
+          "book_id": 9442,
+          "edition": "Shamela 9442",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.sahih_abi_dawud",
+      "title_ar": "صحيح سنن أبي داود (الأم)",
+      "title_tr": "Ṣaḥīḥ Abī Dāwūd (al-Umm)",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-25881",
+          "kind": "shamela",
+          "book_id": 25881,
+          "edition": "Shamela 25881, Ghirās ed.",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.daif_abi_dawud",
+      "title_ar": "ضعيف أبي داود (الأم)",
+      "title_tr": "Ḍaʿīf Abī Dāwūd (al-Umm)",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-5914",
+          "kind": "shamela",
+          "book_id": 5914,
+          "edition": "Shamela 5914",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.hadith_hujja",
+      "title_ar": "الحديث حجة بنفسه في العقائد والأحكام",
+      "title_tr": "al-Ḥadīth Ḥujja bi-Nafsihi fī al-ʿAqāʾid wa'l-Aḥkām",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "inference"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-7607",
+          "kind": "shamela",
+          "book_id": 7607,
+          "edition": "Shamela 7607"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.manzila",
+      "title_ar": "منزلة السنة في الإسلام",
+      "title_tr": "Manzilat al-Sunna fī al-Islām",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "inference"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-705",
+          "kind": "shamela",
+          "book_id": 705,
+          "edition": "Shamela 705"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.sifat_salat",
+      "title_ar": "صفة صلاة النبي صلى الله عليه وسلم",
+      "title_tr": "Ṣifat Ṣalāt al-Nabī",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "inference"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-657",
+          "kind": "shamela",
+          "book_id": 657,
+          "edition": "Shamela 657 (the muqaddima is the method text)",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "shawkani.irshad",
+      "title_ar": "إرشاد الفحول إلى تحقيق الحق من علم الأصول",
+      "title_tr": "Irshād al-Fuḥūl",
+      "author": {
+        "name_tr": "Muḥammad b. ʿAlī al-Shawkānī",
+        "death_ah": 1250
+      },
+      "layers": [
+        "inference"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "openiti-irshad-shamela11437",
+          "kind": "openiti",
+          "repo": "1275AH",
+          "commit": "d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8",
+          "path": "data/1255Shawkani/1255Shawkani.IrshadFuhul/1255Shawkani.IrshadFuhul.Shamela0011437-ara1",
+          "edition": "Shamela 11437, ed. Aḥmad ʿAzw ʿInāya, Dār al-Kitāb al-ʿArabī, 1419/1999",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "siddiq_hasan.rawda_nadiyya",
+      "title_ar": "الدرر البهية والروضة الندية والتعليقات الرضية",
+      "title_tr": "al-Rawḍa al-Nadiyya (with al-Albānī's al-Taʿlīqāt al-Raḍiyya)",
+      "author": {
+        "name_tr": "Ṣiddīq Ḥasan Khān",
+        "death_ah": 1307
+      },
+      "layers": [
+        "inference"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-9293",
+          "kind": "shamela",
+          "book_id": 9293,
+          "edition": "Shamela 9293: al-Shawkānī's matn, Ṣiddīq Ḥasan Khān's sharḥ, al-Albānī's taʿlīqāt",
+          "fetch": "on_demand"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "ibn_rajab.sharh_ilal",
+      "title_ar": "شرح علل الترمذي",
+      "title_tr": "Sharḥ ʿIlal al-Tirmidhī",
+      "author": {
+        "name_tr": "Ibn Rajab al-Ḥanbalī",
+        "death_ah": 795
+      },
+      "layers": [
+        "inference"
+      ],
+      "kernel": true,
+      "rights": "public_domain_text",
+      "track": "albani_hadith",
+      "note": "proof theory: fixes which rules are defeasible (al-Albānī roadmap §0.1)",
+      "witnesses": [
+        {
+          "id": "openiti-sharh-ilal-shamela9552",
+          "kind": "openiti",
+          "repo": "0800AH",
+          "commit": "7b745ec7b83d6d4971f937364dbdec2fe0ba2a40",
+          "path": "data/0795IbnRajabHanbali/0795IbnRajabHanbali.SharhCilalTirmidhi/0795IbnRajabHanbali.SharhCilalTirmidhi.Shamela0009552-ara1",
+          "edition": "Shamela 9552, ed. Hammām Saʿīd, Maktabat al-Manār, Zarqāʾ, 1407/1987"
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.mukhtasar_uluww",
+      "title_ar": "مختصر العلو للعلي العظيم",
+      "title_tr": "Mukhtaṣar al-ʿUluww",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "aqida"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-7318",
+          "kind": "shamela",
+          "book_id": 7318,
+          "edition": "Shamela 7318",
+          "fetch": "on_demand"
         }
       ],
       "status": "located"

@@ -1,0 +1,97 @@
+{
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f000",
+   "grades": [
+    "jazm",
+    "takhrij",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The executor's renunciation where no ḥākim is found: the reading bars it with al-Majd and the riwāyāt; the majority's unrestricted permission is al-madhhab in al-Inṣāf and the Muntahā's jazm. Residue against the reading.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p293",
+     "excerpt_ar": "قوله (وله عزل نفسه متى شاء) . هذا المذهب مطلقا وعليه أكثر الأصحاب",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "al-Mardāwī calls the executor's renouncing whenever he wishes al-madhhab absolutely, quoting this qāʿida's «أطلق كثير من الأصحاب», and gives al-Majd's restriction (a ḥākim found) only as «وقيل»."
+    },
+    {
+     "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p497",
+     "excerpt_ar": "أو غيرها عاد إلى عمله وصح قبول وصي وعزله نفسه في حياة موص وبعد موته",
+     "position": 0,
+     "grade": "jazm",
+     "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+     "note": "The Muntahā states decisively that the executor may renounce in the testator's life and after his death, with no condition of a ḥākim."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f003",
+   "grades": [
+    "takhrij",
+    "ashab"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The mukātab released from the kitāba: the reading (release founds no recourse) sides with al-Mughnī; al-Furūʿ assimilates the case to the masʾala whose madhhab gives the return, and al-Inṣāf reports that as put first. Residue against the reading.",
+   "evidence": [
+    {
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p335",
+     "excerpt_ar": "ورجوع مكاتب أبرئ من كتابته بالإيتاء، واختار الشيخ فيه: لا يرجع.",
+     "position": 0,
+     "grade": "qiyas",
+     "who": "Ibn Mufliḥ, al-Furūʿ",
+     "note": "Ibn Mufliḥ makes the released mukātab's recourse for the īṭāʾ «مثله» of the dower paid by a stranger, whose returning half goes to the husband, so the mukātab recovers; al-Muwaffaq's denial is given as his choice."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f001",
+   "grades": [
+    "ashab",
+    "takhrij"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The ḥākim or his trustee over an orphan's property: the reading lets him eat (wilāya for the ward, no other pay stated); the Muntahā and the Iqnāʿ exclude him and al-Buhūtī gives the farq (his stipend from the treasury). Residue against the reading; the farq is the reading's own `compensated_otherwise`.",
+   "evidence": [
+    {
+     "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p508",
+     "excerpt_ar": "فصل: ولولي غير حاكم وأمينه الأكل لحاجة من مال موليه الأقل من أجرة مثله",
+     "position": 0,
+     "grade": "jazm",
+     "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+     "note": "The Muntahā grants eating in need to a guardian other than the ḥākim and his trustee, excluding them decisively."
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p228",
+     "excerpt_ar": "وللولي المحتاج غير الحاكم وأمينه أن يأكل من مال المولي عليه",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "The Iqnāʿ likewise excludes the ḥākim and his trustee from the needy guardian's eating."
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p455",
+     "excerpt_ar": "وأما الحاكم وأمينه فلا يأكلان شيئا لأنهما يستغنيان",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī: the ḥākim and his trustee eat nothing, since they are provided for from the treasury («بمالهما في بيت المال»)."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p341",
+     "excerpt_ar": "قلت: وهو الصواب. وهو داخل في عموم كلام المصنف وغيره.",
+     "position": 1,
+     "grade": "ashab",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "After al-Qāḍī's two views, al-Mardāwī prefers that the ḥākim or his trustee eats like the father's executor, as within the general wording of al-Muqniʿ; his own preference, not a statement of the madhhab."
+    }
+   ]
+  }
+ ]
+}

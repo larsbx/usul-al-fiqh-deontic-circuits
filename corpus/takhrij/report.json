@@ -1,32 +1,30 @@
 {
- "total": 237,
+ "total": 881,
  "classes": {
-  "derivable": 109,
-  "genuine_ikhtilaf": 119,
-  "missing_fact": 1,
-  "missing_rule": 7,
+  "derivable": 355,
+  "genuine_ikhtilaf": 482,
+  "missing_fact": 3,
+  "missing_rule": 40,
   "segmentation_error": 1
  },
- "coverage_basis": "annotated cases only, excluding annotated segmentation_error",
- "annotation_denominator": 236,
- "coverage": 0.966,
- "madhhab_coverage": 0.644,
+ "coverage": 0.951,
+ "madhhab_coverage": 0.707,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 43,
- "gaps_open": 11,
- "revisited": 29,
+ "ikhtilaf_matching_madhhab": 267,
+ "gaps_open": 43,
+ "revisited": 38,
  "revisit_queue": [],
  "per_encoder": {
   "itlaf": {
-   "derivable": 3,
+   "derivable": 4,
    "genuine_ikhtilaf": 2
   },
   "doubled": {
-   "derivable": 4,
+   "derivable": 5,
    "genuine_ikhtilaf": 1
   },
   "knowledge": {
-   "derivable": 1
+   "derivable": 2
   },
   "continuity": {
    "derivable": 7,
@@ -40,16 +38,18 @@
    "derivable": 1
   },
   "partners": {
-   "derivable": 1,
+   "derivable": 2,
    "genuine_ikhtilaf": 4
   },
   "recourse": {
    "derivable": 8,
-   "genuine_ikhtilaf": 7
+   "genuine_ikhtilaf": 8,
+   "missing_rule": 1
   },
   "lots": {
    "derivable": 22,
-   "genuine_ikhtilaf": 25
+   "genuine_ikhtilaf": 25,
+   "missing_rule": 2
   },
   "tadakhul": {
    "derivable": 4,
@@ -60,15 +60,15 @@
    "genuine_ikhtilaf": 1
   },
   "partial_capability": {
-   "derivable": 2,
+   "derivable": 3,
    "genuine_ikhtilaf": 2
   },
   "substitute": {
-   "derivable": 1,
-   "genuine_ikhtilaf": 5
+   "derivable": 2,
+   "missing_fact": 1
   },
   "asl_zahir": {
-   "derivable": 15,
+   "derivable": 16,
    "genuine_ikhtilaf": 24
   },
   "generality": {
@@ -88,7 +88,7 @@
    "genuine_ikhtilaf": 1
   },
   "trust_voidance": {
-   "genuine_ikhtilaf": 1
+   "genuine_ikhtilaf": 2
   },
   "abstention_under_possible_condition": {
    "derivable": 3
@@ -106,7 +106,8 @@
    "derivable": 1
   },
   "ihram_specification": {
-   "genuine_ikhtilaf": 1
+   "genuine_ikhtilaf": 1,
+   "missing_rule": 1
   },
   "residual_jawaz_after_sarf": {
    "genuine_ikhtilaf": 1
@@ -115,80 +116,523 @@
    "derivable": 1
   },
   "excused_error": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 2,
+   "missing_rule": 2
+  },
+  "istihlak": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 3,
+   "missing_fact": 1
+  },
+  "doubt_in_condition": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 5
+  },
+  "switch_to_original": {
+   "genuine_ikhtilaf": 3
+  },
+  "benefit_to_other": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 2
+  },
+  "concurrent_causes": {
+   "genuine_ikhtilaf": 6,
+   "missing_rule": 1
+  },
+  "running_water": {
+   "genuine_ikhtilaf": 3
+  },
+  "many_over_noble": {
+   "genuine_ikhtilaf": 5,
+   "missing_rule": 3
+  },
+  "mistaken_basis": {
+   "derivable": 2
+  },
+  "hand_liability": {
+   "derivable": 2
+  },
+  "taker_from_usurper": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 7
+  },
+  "hukm_against_own_ijtihad": {
+   "genuine_ikhtilaf": 1
+  },
+  "ayman_by_urf": {
+   "genuine_ikhtilaf": 1,
+   "missing_fact": 1,
+   "missing_rule": 1
+  },
+  "khalt_as_shirka": {
+   "genuine_ikhtilaf": 2
+  },
+  "mixed_haram_by_proportion": {
+   "genuine_ikhtilaf": 1,
+   "missing_rule": 1
+  },
+  "rukhsa_under_doubt": {
+   "genuine_ikhtilaf": 1
+  },
+  "taliq_al_bay": {
+   "genuine_ikhtilaf": 1
+  },
+  "qisas_belongs_to_whom": {
+   "genuine_ikhtilaf": 1,
+   "missing_rule": 2
+  },
+  "makeup_after_failure": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 2
+  },
+  "defective_compensation": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 3
+  },
+  "hair_detached": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 3,
+   "missing_rule": 2
+  },
+  "growth_from_substance": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 7
+  },
+  "right_after_transfer": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 4
+  },
+  "follows_proven_ownership": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 4
+  },
+  "tolerance_exceeded": {
+   "genuine_ikhtilaf": 4
+  },
+  "failed_obligation_returns": {
+   "genuine_ikhtilaf": 3,
+   "missing_rule": 1
+  },
+  "benefit_exception": {
+   "derivable": 6
+  },
+  "implicit_exception": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 2
+  },
+  "manumission_spread": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 2,
+   "missing_rule": 1
+  },
+  "benefit_then_thing": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 2
+  },
+  "successive_contracts": {
+   "missing_rule": 1
+  },
+  "successive_by_binding": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 4
+  },
+  "prohibited_worship": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 2,
+   "missing_rule": 1
+  },
+  "combining_forms": {
    "derivable": 3,
    "genuine_ikhtilaf": 2
   },
-  "istihlak": {
+  "advance_after_cause": {
+   "derivable": 9
+  },
+  "nafl_before_fard": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 3
+  },
+  "cause_from_one_of_two": {
+   "genuine_ikhtilaf": 2
+  },
+  "each_on_its_asl": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 1
+  },
+  "settles_without_ability": {
+   "genuine_ikhtilaf": 5
+  },
+  "lease_after_authority": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "return_of_held_property": {
+   "derivable": 3
+  },
+  "continued_holding": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "holding_after_contract_end": {
+   "genuine_ikhtilaf": 1
+  },
+  "void_contract_concluded": {
+   "derivable": 2
+  },
+  "qabd_in_contracts": {
+   "derivable": 2
+  },
+  "forced_acquisition_solvent": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "daman_without_qabd": {
+   "derivable": 2
+  },
+  "disposal_over_anothers_right": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "disposal_before_qabd_debt": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 2
+  },
+  "right_to_own_disposal": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 6
+  },
+  "concurrent_condition": {
+   "genuine_ikhtilaf": 6
+  },
+  "ruling_with_bar": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 7
+  },
+  "desisting_at_once": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "annulment_without_return": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 4
+  },
+  "deputy_of_qadi": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "removal_before_knowledge": {
+   "genuine_ikhtilaf": 3
+  },
+  "excess_in_following": {
+   "genuine_ikhtilaf": 4
+  },
+  "advanced_kaffara_at_obligation": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 4
+  },
+  "wording_need_not_learn": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 3
+  },
+  "substitute_at_obligation": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 6
+  },
+  "unknown_condition_in_fact": {
+   "genuine_ikhtilaf": 11
+  },
+  "words_out_of_nature": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 6
+  },
+  "contract_by_kinaya": {
+   "genuine_ikhtilaf": 2
+  },
+  "right_to_substitute": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 3
+  },
+  "umum_lafz": {
+   "derivable": 3,
+   "missing_rule": 1
+  },
+  "command_intended_usage": {
+   "missing_rule": 1
+  },
+  "cause_on_certainty": {
+   "genuine_ikhtilaf": 1
+  },
+  "mubashara_tasabbub": {
+   "derivable": 5,
+   "genuine_ikhtilaf": 4
+  },
+  "rescission_harm": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 5
+  },
+  "recourse_after_return": {
+   "genuine_ikhtilaf": 6
+  },
+  "delegating_work": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 4,
+   "missing_rule": 1
+  },
+  "eating_without_permission": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 4,
+   "missing_rule": 2
+  },
+  "vague_one_bars_all": {
+   "derivable": 9
+  },
+  "combination_bars_its_amount": {
+   "genuine_ikhtilaf": 5,
+   "missing_rule": 1
+  },
+  "simultaneous_combination_voids": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 3,
+   "missing_rule": 1
+  },
+  "common_amount_general": {
+   "genuine_ikhtilaf": 1
+  },
+  "alternative_proven_alone": {
+   "genuine_ikhtilaf": 3
+  },
+  "necessity_spares_lighter": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 1
+  },
+  "distribution_each_over_whole": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 6
+  },
+  "unqualified_sharika_halves": {
+   "genuine_ikhtilaf": 3
+  },
+  "shared_right_accrues_to_rest": {
+   "derivable": 7,
+   "genuine_ikhtilaf": 2,
+   "missing_rule": 1
+  },
+  "ownership_relates_back": {
+   "genuine_ikhtilaf": 6
+  },
+  "worship_ruled_from_start": {
+   "genuine_ikhtilaf": 2
+  },
+  "occurrence_state_governs": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 7
+  },
+  "cancel_on_existence_valid": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 3
+  },
+  "specific_singled_out": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 3
+  },
+  "takes_only_by_special": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 2
+  },
+  "entitlement_multiplies": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 1
+  },
+  "double_kinship_preferred": {
+   "genuine_ikhtilaf": 4
+  },
+  "custom_restricts_general": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 1
+  },
+  "cause_restricts_general": {
+   "genuine_ikhtilaf": 4
+  },
+  "urf_specialises_general": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 8
+  },
+  "shar_specialises_general": {
+   "genuine_ikhtilaf": 5
+  },
+  "unintended_instance_covered": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 6
+  },
+  "intention_shapes_wording": {
+   "derivable": 10,
+   "genuine_ikhtilaf": 5
+  },
+  "spread_follows_injury": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 3
+  },
+  "injury_state_measures": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 2
+  },
+  "hit_state_governs": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 4
+  },
+  "aqila_bears_across_change": {
+   "genuine_ikhtilaf": 1
+  },
+  "needed_item_is_surplus": {
+   "derivable": 6
+  },
+  "budh_capacity_is_wealth": {
+   "derivable": 1
+  },
+  "nafaqa_stipulated_in_contract": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 1
+  },
+  "nafaqa_taken_owned": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 1
+  },
+  "benefit_condition_against_compensation": {
+   "genuine_ikhtilaf": 3
+  },
+  "wage_without_stipulation": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 3
+  },
+  "crop_without_valid_permission": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "repeat_bearing_roots_as_trees": {
+   "genuine_ikhtilaf": 5
+  },
+  "attached_right_disposal": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 7
+  },
+  "rescue_loss_liability": {
+   "derivable": 8,
+   "genuine_ikhtilaf": 1
+  },
+  "attached_takeover_at_value": {
+   "derivable": 7,
+   "genuine_ikhtilaf": 3,
+   "missing_rule": 1
+  },
+  "attached_growth_follows": {
+   "genuine_ikhtilaf": 4
+  },
+  "cut_sale_left_to_ripen": {
+   "genuine_ikhtilaf": 1
+  },
+  "seizing_hand_liable": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 2
+  },
+  "hand_with_owner_liable": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 3
+  },
+  "second_receiver_liable": {
+   "derivable": 6,
+   "genuine_ikhtilaf": 1
+  },
+  "error_actor_liable": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 9
+  },
+  "dispose_without_judge": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 4,
+   "missing_rule": 1
+  },
+  "performed_without_leave_owned": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 3
+  },
+  "performed_without_leave_not_owned": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 1
+  },
+  "handover_by_description": {
+   "derivable": 5
+  },
+  "free_bestowal_of_needed_ayn": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 1
+  },
+  "free_bestowal_of_needed_benefit": {
+   "derivable": 4
+  },
+  "vowed_as_shar_obligation": {
+   "genuine_ikhtilaf": 5,
+   "missing_rule": 1
+  },
+  "split_halves_suffice": {
    "derivable": 1,
    "genuine_ikhtilaf": 5,
    "missing_rule": 1
   },
-  "doubt_in_condition": {
-   "derivable": 2,
-   "genuine_ikhtilaf": 6,
-   "missing_fact": 1,
+  "forbidden_cause_voided": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 4,
    "missing_rule": 1
   },
-  "umum_lafz": {
+  "hastened_right_forfeited": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 1
+  },
+  "unknown_consent_binds": {
+   "derivable": 3,
+   "genuine_ikhtilaf": 9
+  },
+  "vague_insha_valid": {
+   "derivable": 2
+  },
+  "vague_report_accepted": {
    "derivable": 3
-  }
- },
- "corpus_coverage": {
-  "basis": "All generated far records in each scope, including unannotated examples; exclude only explicitly annotated segmentation_error records. Structural segmentation is not an exhaustive semantic source census.",
-  "encoded_qawaid": {
-   "segmented_far": 252,
-   "annotated": 237,
-   "segmentation_error": 1,
-   "denominator": 251,
-   "unannotated": 15,
-   "qawaid_with_pending": 13,
-   "annotation_complete": false,
-   "coverage": 0.908,
-   "madhhab_coverage": 0.606,
-   "pending_ids": [
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f000_2",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063.f000_2",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000"
-   ]
   },
-  "rajab": {
-   "segmented_far": 1143,
-   "annotated": 210,
-   "segmentation_error": 0,
-   "denominator": 1143,
-   "unannotated": 933,
-   "qawaid_with_pending": 136,
-   "annotation_complete": false,
-   "coverage": 0.181,
-   "madhhab_coverage": 0.119
+  "shared_name_insha_valid": {
+   "derivable": 2
   },
-  "m8_tranche_1": {
-   "segmented_far": 26,
-   "annotated": 23,
-   "segmentation_error": 0,
-   "denominator": 26,
-   "unannotated": 3,
-   "qawaid_with_pending": 3,
-   "annotation_complete": false,
-   "coverage": 0.769,
-   "madhhab_coverage": 0.538,
-   "pending_ids": [
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f000",
-    "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f000"
-   ]
+  "lot_distinguishes_hidden_entitled": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1
+  },
+  "maadum_grant_valid": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 4
+  },
+  "unknown_order_judged_sequential": {
+   "genuine_ikhtilaf": 5,
+   "missing_rule": 1
+  },
+  "other_option_stands": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 1,
+   "missing_rule": 1
+  },
+  "refusal_exacted_for_him": {
+   "derivable": 1
+  },
+  "refusal_right_falls": {
+   "derivable": 2
+  },
+  "refusal_compelled_to_choose": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 1
+  },
+  "right_on_refuser_exacted": {
+   "genuine_ikhtilaf": 1
+  },
+  "substitute_refusal_judged_by_original": {
+   "derivable": 1
   }
  }
 }

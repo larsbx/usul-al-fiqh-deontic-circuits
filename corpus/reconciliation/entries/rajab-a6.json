@@ -1,0 +1,46 @@
+{
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f006",
+   "grades": [
+    "ashab",
+    "ashab"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The vowed specified charity given by another without leave: the reading (no liability) is Abū al-Khaṭṭāb's wajh with Ibn Rajab's preference; al-Qāḍī and Ibn ʿAqīl make him liable. Two named companions grade aṣḥāb, not jazm (one companion's choice each). No later work in the cache treats the masʾala; graded on Ibn Rajab's report alone. Tawaqquf; candidate farq al-Qāḍī's (the vow's discharge needs intention, like zakāt).",
+   "evidence": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f000",
+   "grades": [
+    [
+     "nass",
+     "ashab"
+    ],
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The sale of the cat: the reading (to be given freely, not sold) is Ibn Rajab's «أصح الروايتين»; the other riwāya permitting the sale is al-madhhab in al-Inṣāf and the jazm of Sharḥ al-Muntahā. Residue against the reading.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v04:p273",
+     "excerpt_ar": "الطير. في إحدى الروايتين) . هذا المذهب. صححه في التصحيح، والكافي،",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The label closes the Muqniʿ's «ويجوز بيع الهر والفيل وسباع البهائم التي تصلح للصيد … في إحدى الروايتين»: permitting the cat's sale is al-madhhab; al-Mardāwī then gives this qāʿida's «لا يجوز بيع الهر. في أصح الروايتين» under the other riwāya."
+    },
+    {
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p008",
+     "excerpt_ar": "بما فيها من عسل ونحل) للجهالة (وكهر) فيصح بيعه لما في الصحيح",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "The Muntahā with al-Buhūtī's sharḥ states decisively that the cat's sale is valid."
+    }
+   ]
+  }
+ ]
+}

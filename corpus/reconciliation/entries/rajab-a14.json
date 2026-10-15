@@ -1,0 +1,366 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f001",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ibn Rajab's two named wujūh; al-Inṣāf puts al-Qāḍī's ḥinth «وهو المذهب», and al-Muntahā states it. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p092",
+          "excerpt_ar": "وبيض السمك والجراد عند القاضي) . وهو المذهب. جزم به في الوجيز. وهو ظاهر",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ's «حنث بأكل رءوس الطيور والسمك، وبيض السمك والجراد عند القاضي»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p092",
+          "excerpt_ar": "يسمى رأسا عرفا. واختاره المصنف، والشارح في البيض وقال في الواضح،",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Muwaffaq and al-Shāriḥ, as al-Inṣāf reports",
+          "note": "They choose Abū al-Khaṭṭāb's view in eggs."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v05:p237",
+          "excerpt_ar": "بأكل رأس طير وسمك وجراد وبيض ذلك ولا يأكل من هذه البقرة لا يعم ولدا",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, al-Muntahā",
+          "note": "«ولا يأكل رأسا ولا بيضا حنث بأكل رأس طير وسمك وجراد وبيض ذلك»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f002",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ibn Abī Mūsā against al-Khiraqī; al-Inṣāf puts the ḥinth «وهو المذهب، تقديما للشرع واللغة», and al-Muntahā states it. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p091",
+          "excerpt_ar": "المذهب، تقديما للشرع واللغة. قال في المذهب: حنث في ظاهر المذهب. قال",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ's oath not to eat meat, then fish: «حنث عند الخرقي) . وهو المذهب»."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v05:p236",
+          "excerpt_ar": "فمن حلف لا يأكل لحما حنث بأكل سمك ولحم محرم لا بمرق لحم ولا مخ وكبد",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, al-Muntahā",
+          "note": "Ḥinth by fish, stated decisively."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f003",
+      "grades": [
+        "takhrij",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The aṣḥāb's extracted wajh against Aḥmad's naṣṣ (Muhannā); al-Inṣāf puts the ḥinth «وهو المذهب. نص عليه». Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p093",
+          "excerpt_ar": "أو \" لا يركب \" فركب سفينة: حنث عند أصحابنا) . وهو المذهب. نص عليه.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ's «وإن حلف لا يدخل بيتا فدخل مسجدا أو حماما ... حنث عند أصحابنا»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p093",
+          "excerpt_ar": "بدخول المسجد والحمام والكعبة: من مفردات المذهب. ويحتمل أن لا يحنث. وقال",
+          "position": 0,
+          "grade": "takhrij",
+          "who": "an iḥtimāl, as al-Inṣāf reports",
+          "note": "The iḥtimāl of no ḥinth beside the madhhab."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f004",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Qāḍī against Abū al-Khaṭṭāb; al-Inṣāf puts the ḥinth «وهو المذهب» (al-Furūʿ «في الأصح»). Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p091",
+          "excerpt_ar": "به في الوجيز. وقال بعض أصحابنا: يحنث. وهو المذهب. قال في الفروع: حنث في",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Ḥinth by the rose, the violet and the jasmine; «حنث في الأصح» from al-Furūʿ."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p091",
+          "excerpt_ar": "ولا يحنث إلا بشم الريحان الفارسي. واختاره القاضي، والمصنف، والشارح. وجزم",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Muwaffaq and al-Shāriḥ, as al-Inṣāf reports",
+          "note": "al-Muqniʿ's «فالقياس: أنه لا يحنث», only the Persian rayḥān."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f005",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two bare wujūh of al-Targhīb, and no later treatment of the oath. Each side has only a cognate: zakāt in wild cattle (Ibn Rajab's own link) for ḥinth, the domestic donkey before one praying for none. Unresolved: tawaqquf.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p004",
+          "excerpt_ar": "إحداهما: تجب فيها، وهي المذهب، وعليه جماهير الأصحاب، قال في الفروع: هو",
+          "position": 1,
+          "grade": "qiyas",
+          "who": "al-Mardāwī, al-Inṣāf (the cognate of zakāt)",
+          "note": "Zakāt is due in wild cattle, so they fall within «البقر»; Ibn Rajab: the oath's khilāf «يقرب أخذه من مسألة وجوب الزكاة في بقر الوحش»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v02:p107",
+          "excerpt_ar": "تنبيه: مراده بالحمار الحمار الأهلي، وهو الصحيح، وعليه أكثر الأصحاب،",
+          "position": 0,
+          "grade": "qiyas",
+          "who": "al-Mardāwī, al-Inṣāf (the cognate of the donkey before one praying)",
+          "note": "The unqualified name of the domestic kind does not take in the wild one; the cognate Ibn Rajab sets beside the oath."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f007",
+      "grades": [
+        "takhrij",
+        [
+          "ashab",
+          "nass"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Qāḍī's extracted riwāya against al-Khiraqī and Abū Bakr with Aḥmad's naṣṣ on the mukātab; al-Inṣāf has the mukātab freed «بلا نزاع». Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p426",
+          "excerpt_ar": "أولاده) . وكذا عبيد عبده التاجر. بلا نزاع في ذلك. وعتق عليه (شقص يملكه)",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «وإن قال: كل مملوك لي حر: عتق عليه مدبروه ومكاتبوه، وأمهات أولاده»: no dispute reported."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f008",
+      "grades": [
+        "nass",
+        "jazm"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Aḥmad's naṣṣ (al-Athram) against the aṣḥāb; al-Inṣāf gives al-Zarkashī that the majority make it general without intention. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p128",
+          "excerpt_ar": "على روايتين. قال الزركشي: ظاهر كلام الأكثر: أنه يعم كل مال إن لم يكن له",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Zarkashī, as al-Inṣāf reports",
+          "note": "The majority: «أنه يعم كل مال إن لم يكن له نية»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f009",
+      "grades": [
+        "zahir",
+        "jazm"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The ẓāhir of Aḥmad against the aṣḥāb; al-Inṣāf puts the ḥinth «هذا المذهب». Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p088",
+          "excerpt_ar": "هذا المذهب. جزم به في الوجيز، وشرح ابن منجا، والرعايتين، والحاوي الصغير،",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «وإن حلف لا مال له وله مال غير زكوي، أو دين على الناس: حنث»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p089",
+          "excerpt_ar": "قال الأصحاب: يحنث. وعنه: لا يحنث إلا بالنقد. وعنه: إذا نذر الصدقة بجميع",
+          "position": 0,
+          "grade": "nass",
+          "who": "a riwāya, as al-Inṣāf reports",
+          "note": "«وعنه: لا يحنث إلا بالنقد»: property other than coin is not «مال»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f001",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two bare wujūh; Taṣḥīḥ al-Furūʿ puts the ḥinth «وهو الصحيح», and al-Muntahā states it. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v11:p032",
+          "excerpt_ar": "أحدهما: يحنث وهو الصحيح قال في الكافي: ولو حلف لا يأكل لحما تناولت",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+          "note": "In meat that is not eaten (maṣʾala 17): al-Kāfī «تناولت يمينه أكل اللحم المحرم»."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v11:p033",
+          "excerpt_ar": "والوجه الثاني: لا يحنث وحكي عن ابن أبي موسى وهو قوي.",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ (his preference)",
+          "note": "«وهو قوي»: an author's preference, reported from Ibn Abī Mūsā."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v05:p236",
+          "excerpt_ar": "فمن حلف لا يأكل لحما حنث بأكل سمك ولحم محرم لا بمرق لحم ولا مخ وكبد",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, al-Muntahā",
+          "note": "Ḥinth by forbidden meat, stated decisively."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f002",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The ẓāhir of Ibn Abī Mūsā and Ibn ʿAqīl against that of al-Targhīb; al-Furūʿ puts the heir within «والأصح», and Kashshāf carries it. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v07:p383",
+          "excerpt_ar": "والأصح دخول وارثه في وصيته لقرابته، خلافا للمستوعب، ومن لم يجز من",
+          "position": 1,
+          "grade": "tashih",
+          "who": "Ibn Mufliḥ, al-Furūʿ",
+          "note": "The heir enters, and the bequest fails in the share of an heir who does not consent."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p291",
+          "excerpt_ar": "دخول وارثه في وصيته لقرابته، خلافا للمستوعب، ومن لم يجز من الورثة بطل في",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf",
+          "note": "Carried from al-Furūʿ in the bequest as in the waqf."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f003",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two wujūh (Ibn ʿAqīl, al-Majd); al-Iqnāʿ states that the deputy's divorce at a time of bidʿa takes effect, and Taṣḥīḥ al-Furūʿ gives it as the ẓāhir of many aṣḥāb. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p005",
+          "excerpt_ar": "ويحرم على الوكيل الطلاق وقت بدعة فإن فعل وقع كالموكل ويقبل دعوى الزوج",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "Forbidden but effective, as from the principal."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v09:p026",
+          "excerpt_ar": "أحدهما: يحرم ويقع، قدمه في الرعايتين والحاوي الصغير، وهو ظاهر كلام",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+          "note": "«وهو ظاهر كلام كثير من الأصحاب»."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v09:p026",
+          "excerpt_ar": "والوجه الثاني: يحرم ولا يقع، صححه الناظم، وهو قوي، لأنه ليس وكيلا فيه",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Nāẓim, with al-Mardāwī's «وهو قوي»",
+          "note": "Not effective, «لأنه ليس وكيلا فيه»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f001",
+      "grades": [
+        "takhrij",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ibn ʿAqīl's extracted riwāya against Aḥmad's naṣṣ; al-Inṣāf has the divorce on the naṣṣ, decided by a group. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p058",
+          "excerpt_ar": "جوابا لقولها \" تزوجت علي \" \" كل امرأة لي طالق \" تطلق على نصه. وقطع به",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "«تطلق على نصه. وقطع به جماعة، أخذا بالأعم من لفظ وسبب»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f004",
+      "grades": [
+        [
+          "nass",
+          "takhrij"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The riwāya Abū Bakr and Ibn Abī Mūsā report (and Ibn Rajab's takhrīj) against Aḥmad's naṣṣ; Kashshāf states the naṣṣ. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p511",
+          "excerpt_ar": "ولد لم يعلم بها قال: هذا به عندي تعتق أم ولده.",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf",
+          "note": "Cited for the rule that the explicit word frees without intention."
+        }
+      ]
+    }
+  ]
+}

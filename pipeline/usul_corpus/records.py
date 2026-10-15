@@ -2,18 +2,21 @@
 
 from __future__ import annotations
 
-import hashlib
-
 from .hudud import Hadd
-from .segment import Unit, source_excerpt
+from .segment import Unit
 
 PIPELINE = "usul_corpus/1"
-EXCERPT_LEN = {"public_domain_text": 400, "modern_cache_only": 160}
+EXCERPT_LEN = {"public_domain_text": 400, "modern_cache_only": 160, "cc_by_verbatim": 400}
 
 
 def _loc(witness: str, page: tuple[int, int] | None, anchor: str) -> str:
     where = f"/v{page[0]:02d}:p{page[1]:03d}" if page else ""
     return f"src:{witness}{where}#{anchor}"
+
+
+def _span(u) -> list[int] | None:
+    """The first and last page of a line-segmented unit; none when it sits on no numbered page."""
+    return [p[1] for p in (u.page, u.end_page) if p] or None
 
 
 def unit_tags(units: tuple[Unit, ...], prefix: str = "q") -> list[str]:
@@ -27,6 +30,8 @@ def qaida_records(work: dict, witness: str, method: str, tag: str, u: Unit) -> l
     """A qāʿida record followed by one candidate test record per farʿ (M4 seed)."""
     qid = f"{work['id']}.{witness.replace('-', '_')}.{tag}"
     cap = EXCERPT_LEN[work["rights"]]
+    cases = ([(0, u.opening, "opening_example")] if u.opening else []) + [
+        (k, case, "furu_minha") for k, case in enumerate(u.furu, 1)]
     furu = [
         {
             "id": f"{qid}.f{k:03d}",
@@ -37,40 +42,32 @@ def qaida_records(work: dict, witness: str, method: str, tag: str, u: Unit) -> l
             "locator": _loc(witness, u.page, f"{tag}.f{k:03d}"),
             "case_ar": case[:cap],
             "status": "candidate",
-            "extraction": {"pipeline": PIPELINE, "method": f"{method}+furu_minha"},
+            "extraction": {"pipeline": PIPELINE, "method": f"{method}+{how}"},
         }
-        for k, case in enumerate(u.furu, 1)
+        for k, case, how in cases
     ]
-    opening = [
-        {
-            "id": f"{qid}.{opening_tag(k)}",
-            "work": work["id"],
-            "witness": witness,
-            "record_type": "far",
-            "qaida": qid,
-            "locator": _loc(witness, u.page, f"{tag}.{opening_tag(k)}"),
-            "case_ar": source_excerpt(u.body[case.start:case.end])[:cap],
-            "status": "candidate",
-            "extraction": {
-                "pipeline": "usul_corpus/opening-furu-1",
-                "method": f"{method}+{case.method}",
-                "source_span": {
-                    "basis": "headed_unit_body/v1",
-                    "body_sha256": hashlib.sha256(u.body.encode()).hexdigest(),
-                    "start": case.start,
-                    "end": case.end,
-                    "sha256": hashlib.sha256(u.body[case.start:case.end].encode()).hexdigest(),
-                },
-            },
-        }
-        for k, case in enumerate(u.opening)
-    ]
-    return [_qaida(work, witness, method, qid, tag, u)] + opening + furu
+    return [_qaida(work, witness, method, qid, tag, u)] + furu
 
 
-def opening_tag(index: int) -> str:
-    """Reserve zero for recovered examples; never consume a legacy positive index."""
-    return "f000" if index == 0 else f"f000_{index + 1}"
+def with_recovered(records: list[dict], recovered: list[dict]) -> list[dict]:
+    """Recovered opening furūʿ (``corpus/segmentation/<witness>-opening.json``) placed after their
+    qāʿida's own .f000 (or the qāʿida, when it has none), each counted in its furu_count. No
+    existing id moves."""
+    extra: dict[str, list[dict]] = {}
+    for r in recovered:
+        extra.setdefault(r["qaida"], []).append(r)
+    opened = {r["qaida"] for r in records if r["id"].endswith(".f000")}
+    out: list[dict] = []
+    for r in records:
+        q = r["id"] if r["record_type"] == "qaida" else r.get("qaida")
+        if r["record_type"] == "qaida" and q in extra:
+            r = {**r, "furu_count": r["furu_count"] + len(extra[q])}
+        out.append(r)
+        if q in extra and r["id"] == (f"{q}.f000" if q in opened else q):
+            out += extra.pop(q)
+    if extra:
+        raise ValueError(f"recovered furūʿ without their qāʿida: {sorted(extra)}")
+    return out
 
 
 def _qaida(work: dict, witness: str, method: str, qid: str, tag: str, u: Unit) -> dict:
@@ -84,7 +81,7 @@ def _qaida(work: dict, witness: str, method: str, qid: str, tag: str, u: Unit) -
         "heading_ar": u.heading,
         "excerpt_ar": u.statement[: EXCERPT_LEN[work["rights"]]],
         "kind": "unclassified",
-        "furu_count": len(u.furu) + len(u.opening),
+        "furu_count": len(u.furu) + bool(u.opening),
         "ocr_corrected": u.ocr_corrected,
         "status": "candidate",
         "extraction": {"pipeline": PIPELINE, "method": method},
@@ -127,4 +124,65 @@ def sharh_record(work: dict, witness: str, link) -> dict:
         "similarity": link.similarity,
         "status": "candidate",
         "extraction": {"pipeline": PIPELINE, "method": "verse_trigram_chain"},
+    }
+
+
+def fatwa_record(work: dict, witness: str, idx: int, u) -> dict:
+    """One question-and-answer unit (``qa.QA``) of a fatāwā collection: excerpts within the
+    work's rights, the page span, and the sha256 receipt of the full unit text."""
+    cap = EXCERPT_LEN[work["rights"]]
+    tag = f"qa{idx:05d}"
+    return {
+        "id": f"{work['id']}.{witness.replace('-', '_')}.{tag}",
+        "work": work["id"],
+        "witness": witness,
+        "record_type": "fatwa",
+        "number": u.number,
+        "locator": _loc(witness, u.page, tag),
+        "page_span": _span(u),
+        "question_ar": u.question[:cap],
+        "answer_ar": u.answer[:cap] if u.answer else None,
+        "sha256": u.sha256,
+        "status": "candidate",
+        "extraction": {"pipeline": PIPELINE, "method": "qa"},
+    }
+
+
+def masala_record(work: dict, witness: str, idx: int, u) -> dict:
+    """One entry (``qa.Entry``) of a *Masāʾil* collection: its excerpt within the work's rights,
+    printed number, page span and the sha256 receipt of the whole entry."""
+    tag = f"m{idx:05d}"
+    return {
+        "id": f"{work['id']}.{witness.replace('-', '_')}.{tag}",
+        "work": work["id"],
+        "witness": witness,
+        "record_type": "masala",
+        "number": u.number,
+        "locator": _loc(witness, u.page, tag),
+        "page_span": _span(u),
+        "excerpt_ar": u.text[:EXCERPT_LEN[work["rights"]]],
+        "sha256": u.sha256,
+        "status": "candidate",
+        "extraction": {"pipeline": PIPELINE, "method": "masail"},
+    }
+
+
+def bab_record(work: dict, witness: str, idx: int, u) -> dict:
+    """One unit (``abwab.Bab``) of a matn: its heading, rank, path, excerpt within the work's rights,
+    page span and the sha256 receipt of the whole unit."""
+    tag = f"b{idx:05d}"
+    return {
+        "id": f"{work['id']}.{witness.replace('-', '_')}.{tag}",
+        "work": work["id"],
+        "witness": witness,
+        "record_type": "bab",
+        "rank": u.rank,
+        "heading_ar": u.heading[:EXCERPT_LEN[work["rights"]]],
+        "path_ar": list(u.path),
+        "locator": _loc(witness, u.page, tag),
+        "page_span": _span(u),
+        "excerpt_ar": u.text[:EXCERPT_LEN[work["rights"]]],
+        "sha256": u.sha256,
+        "status": "candidate",
+        "extraction": {"pipeline": PIPELINE, "method": "abwab"},
     }
