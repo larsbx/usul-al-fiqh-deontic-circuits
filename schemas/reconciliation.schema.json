@@ -96,7 +96,7 @@
               }
             ]
           },
-          "register": {
+          "adilla": {"type": "array", "minItems": 1, "description": "The adilla each position rests on, from corpus/nusus/foundation.json: tarjīḥ weighs these first (an āya; a ḥadīth or athar only through the ḥujja gate), and the madhhab's grades only where they decide nothing.", "items": {"type": "object", "required": ["position", "ref", "note"], "additionalProperties": false, "properties": {"position": {"type": "integer", "minimum": 0}, "ref": {"type": "string", "pattern": "^(Q[0-9]{3}:[0-9]{3}|H-[a-z0-9-]+|A-[a-z0-9-]+)$"}, "note": {"type": "string", "minLength": 1, "description": "How the dalīl bears on the facts of this position (its dalāla)."}}}}, "register": {
             "type": "string",
             "pattern": "^RQ-[0-9]{2}$",
             "description": "An open research question that leaves an on-madhhab case standing although its tarjīḥ goes the other way."

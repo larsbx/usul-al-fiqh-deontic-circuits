@@ -305,3 +305,38 @@ def test_the_ledger_holds_every_ikhtilaf():
     """Every ikhtilāf has a tarjīḥ: in the active ledger, or in the history a resolution retired it to."""
     entries = {e["far"] for e in LEDGER["entries"]} | set(reconcile._archived_tarjih())
     assert {c["far"] for c in CASES if c["class"] == "genuine_ikhtilaf"} <= entries
+
+
+def test_tarjih_weighs_the_dalil_before_the_madhhab():
+    """Mirrors the guards in Usul/Reconcile.lean: the basis is the Qurʾān and the Sunna."""
+    assert reconcile.dalil_prevail([("b", "nass", True)]) == "b"
+    assert reconcile.dalil_prevail([("b", "nass", False)]) is None  # a ḍaʿīf ḥadīth is not admitted
+    assert reconcile.dalil_prevail([("a", "fatwaSahabi", True), ("b", "nass", True)]) == "b"
+    assert reconcile.dalil_prevail([("a", "nass", True), ("b", "nass", True)]) is None
+    c = _ikh("x", True, [True, False], matches=True)
+    tashih_against = _entry("x", ["nass", "nass"])
+    tashih_against["evidence"] = [{"position": 1, "grade": "tashih"}]
+    assert reconcile.resolve(c, tashih_against) == ("tarjih", False) and reconcile.basis(c, tashih_against) == "madhhab"
+    with_aya = {**tashih_against, "adilla": [{"position": 0, "ref": "Q005:006", "note": "n"}]}
+    assert reconcile.resolve(c, with_aya) == ("tarjih", True) and reconcile.basis(c, with_aya) == "dalil"
+    with_daif = {**tashih_against, "adilla": [{"position": 0, "ref": "H-siwak-ashi", "note": "n"}]}
+    assert reconcile.resolve(c, with_daif) == ("tarjih", False)
+
+
+def test_a_cited_dalil_is_in_the_foundation():
+    c = _ikh("x", True, [True, False], matches=True)
+    e = {**_entry("x", ["tashih", "ashab"]), "adilla": [{"position": 0, "ref": "Q999:999", "note": "n"},
+                                                         {"position": 5, "ref": "Q005:006", "note": "n"}]}
+    assert reconcile.check([c], {"entries": [e]}, DOSSIER) == [
+        "x: dalīl Q999:999 is not in the textual foundation", "x: dalīl Q005:006 names no listed position"]
+
+
+def test_a_disagreement_between_works_has_a_tarjih():
+    """No work is the reference: where aligned works differ and no reading decides, the ledger still weighs them."""
+    gap = {"far": "z", "encoder": "tadakhul", "class": "missing_rule", "needs": ["rule:r"], "note": "n",
+           "aligned": [{"id": "u", "relation": "same"}],
+           "positions": [{"who": "Zād", "ruling": "a"}, {"who": "ʿUmda", "ruling": "b"}]}
+    assert reconcile.check([gap], {"entries": []}, DOSSIER) == ["z: a disagreement between works without a tarjīḥ in the ledger"]
+    e = {**_entry("z", ["jazm", "jazm"]), "adilla": [{"position": 1, "ref": "Q005:006", "note": "n"}]}
+    assert reconcile.check([gap], {"entries": [e]}, DOSSIER) == []
+    assert reconcile.resolve(gap, e) == ("tarjih", "b") and reconcile.standing(gap, e) == "no_reading"

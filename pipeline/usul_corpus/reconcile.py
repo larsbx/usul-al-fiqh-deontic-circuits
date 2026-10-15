@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import json
 import re
+from functools import lru_cache
 from collections import Counter
 from pathlib import Path
 
@@ -30,6 +31,41 @@ GRADES = ("tashih", "nass", "zahir", "qiyas", "jazm", "ashab", "takhrij", "wajh"
 RANK = {g: len(GRADES) - 1 - i for i, g in enumerate(GRADES)}
 MARKED = frozenset(g for g in GRADES if RANK[g] >= RANK["jazm"])
 STAGES = ("jam", "naskh", "tarjih", "tawaqquf")
+# A dalīl's kind in Aḥmad's order; mirrors `Usul.DalilKind.resort` (lower is resorted to first).
+RESORT = {"nass": 0, "fatwaSahabi": 1}
+HUJJA = frozenset({"sahih", "hasan"})  # `Usul.Seam.admitted`: the verdict is ḥujja
+
+
+FOUNDATION = Path(__file__).resolve().parents[2] / "corpus" / "nusus" / "foundation.json"
+
+
+@lru_cache(maxsize=1)
+def foundation() -> dict[str, tuple[str, bool]]:
+    """Every dalīl of the textual foundation by id: (its kind, whether it is admitted). An āya is
+    always admitted; a marfūʿ ḥadīth by al-Albānī's verdict; an athar only with a ḥujja verdict."""
+    d = json.loads(FOUNDATION.read_text(encoding="utf-8"))
+    return ({a["id"]: ("nass", True) for a in d["ayat"]}
+            | {h["id"]: ("nass", h.get("albani", {}).get("verdict") in HUJJA) for h in d["ahadith"]}
+            | {a["id"]: ("fatwaSahabi", a.get("verdict") in HUJJA) for a in d.get("athar", [])})
+
+
+def adilla(case: dict, entry: dict, found: dict | None = None) -> list[tuple[object, str, bool]]:
+    """(ruling, kind, admitted) for each dalīl the entry cites for a position."""
+    found = foundation() if found is None else found
+    ps = case["positions"]
+    return [(ps[d["position"]]["ruling"], *found[d["ref"]]) for d in entry.get("adilla", [])
+            if d["ref"] in found and 0 <= d["position"] < len(ps)]
+
+
+def dalil_prevail(ds: list[tuple[object, str, bool]]) -> object | None:
+    """Mirror of `Usul.Reconcile.dalilPrevail`: the one position whose best admitted dalīl is of a
+    stronger kind than every other position's; ties and unadmitted adilla decide nothing."""
+    best = {}
+    for r, k, ok in ds:
+        if ok:
+            best[r] = min(best.get(r, 99), RESORT[k])
+    rulings = list(dict.fromkeys(r for r, _, _ in ds))
+    return next((p for p in rulings if p in best and all(q == p or q not in best or best[p] < best[q] for q in rulings)), None)
 
 
 def candidates(cases: list[dict]) -> list[dict]:
@@ -67,13 +103,32 @@ def resolve(case: dict, entry: dict) -> tuple[str, object | None]:
         return "jam", case["expected"]
     if entry.get("naskh"):
         return "naskh", entry["naskh"]["ruling"]
-    p = prevail(graded(case, entry))
+    p = dalil_prevail(adilla(case, entry))
+    p = prevail(graded(case, entry)) if p is None else p
     return ("tarjih", p) if p is not None else ("tawaqquf", None)
+
+
+def basis(case: dict, entry: dict) -> str:
+    """What decided: the adilla ("dalil"), the madhhab's graded support ("madhhab"), or an earlier stage."""
+    stage, _ = resolve(case, entry)
+    if stage != "tarjih":
+        return stage
+    return "dalil" if dalil_prevail(adilla(case, entry)) is not None else "madhhab"
 
 
 def standing(case: dict, entry: dict) -> str:
     stage, r = resolve(case, entry)
-    return "tawaqquf" if stage == "tawaqquf" else "for_reading" if r == case["expected"] else "against_reading"
+    if stage == "tawaqquf":
+        return "tawaqquf"
+    if case["class"] != "genuine_ikhtilaf":
+        return "no_reading"  # works disagree where no reading decides: the tarjīḥ stands alone
+    return "for_reading" if r == case["expected"] else "against_reading"
+
+
+def disagreements(cases: list[dict]) -> list[dict]:
+    """Cases where aligned works state different rulings that no reading decides: each needs a tarjīḥ too."""
+    return [c for c in cases if c.get("aligned") and len(c.get("positions") or []) >= 2
+            and c["class"] not in ("genuine_ikhtilaf", "segmentation_error")]
 
 
 def _old(case: dict, frm: str) -> object:
@@ -89,15 +144,29 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
     errs += [f"{c['far']}: an ikhtilāf without a tarjīḥ in the ledger" for c in cases
              if c["class"] == "genuine_ikhtilaf" and c.get("matches_madhhab") and c["far"] not in entries
              and not (c["far"] in archived and resolve(c, archived[c["far"]])[1] == c["expected"])]
+    errs += [f"{c['far']}: a disagreement between works without a tarjīḥ in the ledger" for c in disagreements(cases)
+             if c["far"] not in entries]
     open_rq = _open_research_questions()
+    found = foundation()
+    for f, e in entries.items():
+        c = by.get(f)
+        for d in e.get("adilla", []):
+            if d["ref"] not in found:
+                errs.append(f"{f}: dalīl {d['ref']} is not in the textual foundation")
+            elif c is not None and not 0 <= d["position"] < len(c.get("positions") or []):
+                errs.append(f"{f}: dalīl {d['ref']} names no listed position")
     if len(entries) != len(ledger["entries"]):
         errs.append("duplicate ledger entries")
     conservative = {e["id"]: e["conservative"] for e in dossier["entries"]}
     jams: dict[str, list[dict]] = {}
+    between = {c["far"] for c in disagreements(cases)}
     for f, e in entries.items():
         c = by.get(f)
-        if c is None or c["class"] != "genuine_ikhtilaf":
-            errs.append(f"{f}: not an ikhtilāf case")
+        if c is None or (c["class"] != "genuine_ikhtilaf" and f not in between):
+            errs.append(f"{f}: not an ikhtilāf case or a disagreement between works")
+            continue
+        if f in between and (e.get("jam") or e.get("naskh")):
+            errs.append(f"{f}: no reading decides it, so no jamʿ of a reading")
             continue
         if len(e["grades"]) != len(c["positions"]) or not {x for g in e["grades"] for x in _grades(g)} <= set(GRADES):
             errs.append(f"{f}: one grade per position, from {GRADES}")
@@ -188,6 +257,7 @@ def _opt(v: object | None) -> str:
 
 def lean_file(cases: list[dict], ledger: dict) -> str:
     by = {c["far"]: c for c in cases}
+    found = foundation()
     lines = ["-- GENERATED by `python -m usul_corpus reconcile` from corpus/reconciliation/ledger.json. Do not edit.",
              "-- Each guard runs one apparent contradiction through the kernel's taʿāruḍ procedure.",
              "import Usul", "", "open Usul.Reconcile", ""]
@@ -197,9 +267,10 @@ def lean_file(cases: list[dict], ledger: dict) -> str:
         jam = c["expected"] if e.get("jam") else None
         naskh = e["naskh"]["ruling"] if e.get("naskh") else None
         ps = ", ".join(f"({_str(p)}, .{g})" for p, g in graded(c, e))
+        ds = ", ".join(f"({_str(p)}, .{k}, {str(ok).lower()})" for p, k, ok in adilla(c, e, found))
         out = ".tawaqquf" if stage == "tawaqquf" else f"(.{stage} {_str(r)})"
         lines.append(f"-- {e['far']}")
-        lines.append(f"#guard reconcile (P := String) {_opt(jam)} {_opt(naskh)} [{ps}] == {out}")
+        lines.append(f"#guard reconcile (P := String) {_opt(jam)} {_opt(naskh)} [{ps}]{f' [{ds}]' if ds else ''} == {out}")
     return "\n".join(lines) + "\n"
 
 
@@ -233,6 +304,7 @@ def report(cases: list[dict], ledger: dict) -> dict:
             "confirming": sum(1 for e, c in rows if c.get("matches_madhhab") and not e.get("jam")
                              and resolve(c, e)[1] == c["expected"]),
             "stages": dict(sorted(Counter(resolve(c, e)[0] for e, c in rows).items())),
+            "basis": dict(sorted(Counter(basis(c, e) for e, c in rows).items())),
             "standing": dict(sorted(Counter(standing(c, e) for e, c in rows).items())),
             "worklist": dict(sorted(residues.items(), key=lambda kv: (-len(kv[1]), kv[0]))),
             "review": [c["far"] for e, c in rows if marked_for_reading(c, e)]}
@@ -243,7 +315,7 @@ def marked_for_reading(case: dict, entry: dict) -> bool:
     a question for the human reviewer, never rewritten here."""
     stage, r = resolve(case, entry)
     top = max((RANK[g] for q, g in graded(case, entry) if q == r), default=-1)
-    return stage == "tarjih" and r == case["expected"] and top >= RANK["jazm"] and not case.get("matches_madhhab")
+    return stage == "tarjih" and r == case.get("expected") and top >= RANK["jazm"] and not case.get("matches_madhhab")
 
 
 # Drafting aid for new tranches: a grade proposed from the annotator's `who`, for review.
