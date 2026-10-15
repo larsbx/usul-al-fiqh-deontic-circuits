@@ -55,7 +55,7 @@ In 2 of the 5 resolved furūʿ the proofs side with the madhhab's label; in the 
 
 ## The full weighing (2026-10-15)
 
-Every ledger entry is now weighed: 596 entries, 1,855 proofs, 14 advantages, in `weighing/pilot.json` and `weighing/batch-00…38.json`. Each batch was drafted by an agent under one rulebook, every excerpt verified at its page through any qualifier that follows it (`make source-verify`: 4,444 excerpts), and every qaṭʿī or ijmāʿ claim reviewed. No human has reviewed the weighing yet.
+The #84 weighing covered all 596 ledger entries then present: 1,855 proofs and 14 advantages, in `weighing/pilot.json` and `weighing/batch-00…38.json`. Each batch was drafted by an agent under one rulebook, every excerpt verified at its page through any qualifier that follows it (`make source-verify`: 4,444 excerpts), and every qaṭʿī or ijmāʿ claim reviewed. No human has reviewed the weighing yet. The following figures describe that weighing. PR #86 adds 12 entries without proof records; they remain `unweighed`, bringing the current ledger to 608 entries without changing the proof-based resolver.
 
 | | By proof (`sources` policy) | By attribution (record) |
 |---|---|---|

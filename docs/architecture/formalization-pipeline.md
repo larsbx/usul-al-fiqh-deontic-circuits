@@ -130,12 +130,12 @@ Each invariant was mutation-checked once: a seeded bug in the spec makes TLC rep
 ### Required source replay (PR-06)
 
 `make source-verify-fetch` restores/downloads the required witnesses (the
-reconciliation subset and every witness of the textual foundation,
-`nusus.witnesses`) from the existing registry and checks complete source hashes, Arabic quotations,
+reconciliation subset, every witness of the textual foundation (`nusus.witnesses`),
+and every istidlāl witness in `dossier/qawaid_adilla.json`) from the existing registry and checks complete source hashes, Arabic quotations,
 closing-page locators and immediate qualifier boundaries. `make source-verify`
 runs the same gate without network fetching; `make all` includes it. Neither
 command creates or updates a source lock. A missing required witness is an error,
-including in `test_reconcile.py`, `test_nusus.py` and the required witness-integrity tests.
+including in `test_reconcile.py`, `test_nusus.py`, the qawāʿid dossier checks and the required witness-integrity tests.
 With `--fetch-source`, a cached file whose bytes differ from its lock (a CI cache
 of an earlier pin) is fetched again; without it, that file fails. CI caches
 `.cache/corpus` across runs, so al-Albānī's Irwāʾ (scraped from Shamela page by

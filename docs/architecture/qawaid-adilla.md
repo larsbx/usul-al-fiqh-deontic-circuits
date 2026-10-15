@@ -36,7 +36,7 @@ wording al-Saʿdī gives (Q58); al-Zumar 39:18 (Q33) is unreadable in both OCR w
 ## Required source replay (PR #86 correction)
 
 Every cited `istidlal.witness` is part of `source_verify.required_witnesses`, in addition to the
-reconciliation witnesses. Its `ref` must name that same witness and a closing-page locator. Missing
+reconciliation and textual-foundation witnesses. Its `ref` must name that same witness and a closing-page locator. Missing
 bytes, missing pins, altered bytes, invented excerpts, and wrong pages fail verification. The
 annotation checker also rejects unavailable witnesses and empty normalized excerpts.
 
