@@ -83,6 +83,16 @@ def test_fetch_is_pinned_and_does_not_update_the_lock(fixture, monkeypatch):
     assert (corpus / "lock.json").read_bytes() == before
 
 
+def test_a_stale_cached_witness_is_refetched_only_when_fetching(fixture, monkeypatch):
+    """A restored CI cache may hold bytes of an earlier pin: verification fails on them, a fetch replaces them."""
+    corpus, cache = fixture
+    (cache / "test-source.txt").write_text(TEXT + "earlier pin")
+    assert gate.verify(corpus, cache)["status"] == "failed"
+    monkeypatch.setattr(gate.fetch, "_get", lambda url: TEXT.encode())
+    assert gate.verify(corpus, cache, fetch_source=True)["status"] == "verified_required_subset"
+    assert (cache / "test-source.txt").read_text() == TEXT
+
+
 def test_fetch_failure_is_a_failure_not_an_exclusion(fixture, monkeypatch):
     corpus, cache = fixture
     (cache / "test-source.txt").unlink()
@@ -179,3 +189,19 @@ def test_shard_only_witness_is_required_and_cannot_hide_in_exclusions(fixture):
     assert report["status"] == "failed" and report["counts"] == {"failed": 1, "verified": 1}
     (cache / "shard-source.txt").write_text(TEXT)
     assert gate.verify(corpus, cache)["counts"] == {"verified": 2}
+
+
+def _foundation(corpus, wid="test-source"):
+    (corpus / "nusus").mkdir(exist_ok=True)
+    (corpus / "nusus/foundation.json").write_text(json.dumps({"ayat": [{"witness": wid}], "ahadith": [
+        {"sources": [{"witness": wid}], "albani": {"witness": wid}}], "athar": [{"witness": wid}]}))
+
+
+def test_foundation_witnesses_are_required(fixture):
+    """The foundation's āyāt, ḥadīth collections and al-Albānī works are provisioned fail-closed too."""
+    corpus, cache = fixture
+    _foundation(corpus, "foundation-source")
+    assert "foundation-source" in gate.required_witnesses(corpus)
+    report = gate.verify(corpus, cache)
+    assert report["status"] == "failed"
+    assert any(e.startswith("foundation-source:") for e in report["errors"])

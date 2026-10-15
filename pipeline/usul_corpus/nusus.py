@@ -141,6 +141,19 @@ def load(corpus: Path) -> dict:
     return json.loads((corpus / "nusus" / "foundation.json").read_text(encoding="utf-8"))
 
 
+def witnesses(corpus: Path) -> set[str]:
+    """Every witness the foundation is checked against: the āyāt, athar, ḥadīth collections, al-Albānī's
+    works, and the pinned al-Irwāʾ coverage. Empty when the corpus has no foundation."""
+    if not (corpus / "nusus" / "foundation.json").exists():
+        return set()
+    f = load(corpus)
+    irwa = corpus / "hadith" / "irwa_coverage.json"
+    return ({x["witness"] for k in ("ayat", "athar") for x in f.get(k, [])}
+            | {h["albani"]["witness"] for h in f.get("ahadith", [])}
+            | {s["witness"] for h in f.get("ahadith", []) for s in h["sources"]}
+            | ({json.loads(irwa.read_text(encoding="utf-8"))["witness"]} if irwa.exists() else set()))
+
+
 def table_lean(foundation: dict, glossary: dict, furuq_items: list[dict] = ()) -> str:
     """Guards: each ḥadīth a term or a farq rests on passes the gate in the naṣṣ slot; each ḥadīth a
     farq names as not sound fails it; each term's rulings are the Lean ones."""
