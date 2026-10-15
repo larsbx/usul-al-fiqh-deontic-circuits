@@ -2,7 +2,6 @@
 
 import json
 import re
-import shutil
 from pathlib import Path
 
 import pytest
@@ -58,12 +57,12 @@ def test_the_prolog_situations_are_current(ts):
     assert tr.prolog_file(ts, _data(ts)) == (ROOT / ts.prolog).read_text(encoding="utf-8")
 
 
-@pytest.mark.skipif(shutil.which("swipl") is None, reason="swipl not installed")
-@pytest.mark.parametrize("ts", SETS, ids=ids)
-def test_the_report_is_current(ts):
-    answers = ROOT / tr.routing.ANSWERS
-    if ts.name == "islamqa_tranche1" and (not answers.exists() or answers.stat().st_size < 1000):
-        pytest.skip("IslamQA answers not fetched (git lfs pull)")
+@pytest.mark.parametrize("ts", [pytest.param(ts, id=ts.name,
+                         marks=[pytest.mark.external_source] if ts.name == "islamqa_tranche1" else [])
+                         for ts in SETS])
+def test_the_report_is_current(ts, swipl, request):
+    if ts.name == "islamqa_tranche1":
+        request.getfixturevalue("islamqa_answers")
     assert json.dumps(tr.report(ROOT, ts, tr.coverage(ROOT, ts)), ensure_ascii=False, indent=2) + "\n" == \
         (ROOT / ts.report).read_text(encoding="utf-8")
 
@@ -84,8 +83,7 @@ def test_a_proposal_set_is_its_deterministic_sample_of_r2_units(ps):
     assert set(sample) <= inventoried
 
 
-@pytest.mark.skipif(shutil.which("swipl") is None, reason="swipl not installed")
 @pytest.mark.parametrize("ps", tr.present(ROOT, tr.PROPOSALS), ids=lambda ps: ps.name)
-def test_the_proposals_are_current(ps):
+def test_the_proposals_are_current(ps, swipl):
     assert json.dumps(tr.proposals(ROOT, ps, tr.coverage(ROOT, ps)), ensure_ascii=False, indent=2) + "\n" == \
         (ROOT / ps.proposals).read_text(encoding="utf-8")

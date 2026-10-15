@@ -1,0 +1,502 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b24: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the removable judge is in the sense of an agent, so he is removed before he knows, as the agent is on the riwāya that the agent is removed without knowledge.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p152",
+     "excerpt_ar": "على وجهين، بناء على الوكيل) لأنه في معناه، وجزم في الوجيز: بأنه ينعزل كالوكيل",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ gives this as the ground of the wajh of removal (al-Qāḍī, Abū al-Khaṭṭāb; al-Wajīz decides it). Qiyās on the agent."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: there is a right of God in the judge's office, and the abrogation of a ruling in God's rights does not take effect for one it has not reached; his dismissal is like that.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p293",
+     "excerpt_ar": "لأن الحق في الولاية لله وإن قلنا هو وكيل والنسخ في حقوق الله لا يثبت قبل العلم",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī for «ولا ينعزل القاضي حيث صح عزله قبل علمه», citing Taqī al-Dīn and «هذا هو المنصوص عن الإمام أحمد». Qiyās on naskh."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the judge's authority is general, with contracts and annulments of every kind resting on it, so voiding his acts before he knows would be a widespread hardship, unlike the agent's.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p115",
+     "excerpt_ar": "فإن ولاية القاضي عامة لما يترتب عليها من عموم العقود والفسوخ فتعظم البلوى بإبطالها قبل العلم بخلاف الوكالة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab adds this ground for the Talkhīṣ / Taqī al-Dīn view. A stated maṣlaḥa rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale (farq): people's cases and rulings depend on the judge, so removal before knowledge would cause hardship; the agent acts in one particular matter.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v08:p152",
+     "excerpt_ar": "والأشهر عدمه؛ لأنه يتعلق به قضايا الناس وأحكامهم فيشق، بخلاف الوكيل فإنه متصرف في أمر خاص",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ for the better-known view (not removed); Sharḥ al-Muntahā repeats it. Qiyās."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on agency: partnership and muḍāraba are dissolved by removal before the other party knows, as agency is.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p471",
+     "excerpt_ar": "وتنفسخ شركة ومضاربة بعزله) أي الشريك، أو رب المال (قبل العلم) بعزله كالوكيل",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī for the «المشهور» position. Qiyās."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: ending a contract that does not need the other party's consent does not need his knowledge, as with divorce; the partner and muḍārib are dismissed likewise.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p193",
+     "excerpt_ar": "لأن الوكالة لا يفتقر رفعها من أحدهما إلى رضا الآخر، فلم تفتقر إلى علمه كالطلاق",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Given for the agent and applied in the same sentence to the partner («كـ عزل شريك») and to the muḍārib. Qiyās."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale (Ibn ʿAqīl): the muḍārib may annul only once the capital is liquid and the owner knows, lest time pass with the capital idle and its profits lost to him.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p112",
+     "excerpt_ar": "ويعلم رب المال أنه أراد الفسخ لئلا يتمادى به الزمان فيتعطل عليه الأرباح",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn ʿAqīl's ground, reported by Ibn Rajab, for his position that the worker's annulment does not take effect until the owner knows. A stated maṣlaḥa ʿilla: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale (sadd al-dharīʿa): annulling while hiding it from the partner is a means to the utmost harm, idling the capital away from its gains.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p112",
+     "excerpt_ar": "لا يحل لأحد المتعاقدين في الشركة والمضاربات الفسخ مع كتم شريكه لأنه ذريعة إلى غاية الإضرار",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn ʿAqīl in his Mufradāt, via Ibn Rajab, for the same position. Stated ʿilla: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the deposit is a non-binding contract, so the keeper's dismissing himself takes effect at once, like the owner's dismissing him; what is in his hand is then a trust like a garment the wind blew into his house.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p167",
+     "excerpt_ar": "انعزل،؛ لأنها جائزة، أشبه ما لو عزله ربها",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī on the keeper who dismisses himself (the muʿtamad), on these facts. Qiyās."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: after the keeper dismisses himself the deposit remains a trust in his hand like a windblown garment, which he must return to its owner.",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p352",
+     "excerpt_ar": "وإن عزل نفسه فهي أمانة بيده كثوب أطارته الريح إلى داره يجب رده إلى مالكه",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā on the keeper's self-dismissal; the analogy al-Qāḍī uses (per Ibn Rajab). Qiyās."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale (farq): the owner's annulment takes the keeper out of the safekeeping, which the owner may do; the keeper has no disposal over the deposit except holding and guarding it, so he cannot end it while it is in his hand.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p115",
+     "excerpt_ar": "والأول أشبه لأن فسخ المودع إخراج للمودع عن الاستحفاظ وهو يملكه وأما المودع فليس له فيها تصرف سوى الإمساك والحفظ",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's preferred reading of al-Qāḍī's second statement (not by word, only by return or transgression) as a farq between the two parties' annulments. Qiyās."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the ṣadāq: as the husband recovers half the dower the wife had given him, because its return by the divorce is by a ground other than the one by which it first came back, so the buyer returns the defective thing and claims the price the seller had gifted him.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p146",
+     "excerpt_ar": "فله رد المبيع والمطالبة بالثمن) لما تقدم (أو أخذ أرش العيب مع إمساكه) أي المعيب كالصداق",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī rules return-and-price for exactly this sale case, citing «لما تقدم» (the ṣadāq rationale on the same page: «لأن عود نصف الصداق إلى الزوج بالطلاق وهو غير الجهة المستحق بها الصداق أولا») and «كالصداق». Qiyās."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās (binā'): the sale case is built on the two riwāyas on the dower given back by gift; on the riwāya of recourse there (the price came back by a fresh contract, which does not bar the later claim), the buyer returns and claims the price.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p258",
+     "excerpt_ar": "فهل له رد المبيع، والمطالبة بالثمن، أو أخذ أرش العيب مع إمساكه؟ على وجهين، بناء على الروايتين في الصداق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī gives no separate proof for the sale; it carries the ṣadāq khilāf over. Recorded for both sides, each taking its ṣadāq riwāya. Qiyās."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās (binā'): on the ṣadāq riwāya of no recourse (the thing returned to him already, and a gift contract entails no liability: «وعقد الهبة لا يقتضي ضمانا»), the buyer who was given the price has nothing to reclaim.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p258",
+     "excerpt_ar": "فهل له رد المبيع، والمطالبة بالثمن، أو أخذ أرش العيب مع إمساكه؟ على وجهين، بناء على الروايتين في الصداق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same building, for the no-return wajh. The aṣl's reasons are in the ṣadāq masʾala (f002). Qiyās."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f001",
+   "proofs": [],
+   "advantages": [],
+   "searched": "al-Mughnī v07 p257–258 (fasl 5632, the sale/ṣadāq/mukātab cases, no iqāla); al-Sharḥ al-Kabīr v08 (same faṣl); al-Kāfī (ṣadāq faṣl with the sale case); al-Mubdiʿ v06 p215; Kashshāf v05 p146; grep of all six works and Taqrīr al-Qawāʿid for iqāla after gift/release of the price («تقايلا», «أقاله», «الإقالة» with هبة/أبرأ): only Ibn Rajab lists the ṣūra, with no proof."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the thing came back to the husband by a fresh contract (the gift), which does not bar his entitlement by the divorce, as if it had come back to him by sale, or she had given it to a stranger who gave it to him.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p256",
+     "excerpt_ar": "يرجع عليها بنصف قيمتها. وهو اختيار أبي بكر وأحد قولي الشافعي لأنها عادت إلى الزوج بعقد مستأنف",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's reason for the riwāya of Abū Bakr (recovery of half the value) on these very facts: a specific dower given back by gift, then divorce before consummation. Qiyās with stated aṣl."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: half the dower returns to the husband by the divorce, a ground other than the one by which it came to him first (the gift), as when one releases a debtor and then becomes owed the like on another ground: the two do not cancel.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p146",
+     "excerpt_ar": "لأن عود نصف الصداق إلى الزوج بالطلاق وهو غير الجهة المستحق بها الصداق أولا",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī for the madhhab (recourse) on this masʾala. A stated ʿilla with an aṣl: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rationale: divorce before consummation entails the return of half the dower; that cause has occurred, and her earlier gift, being a fresh act, has no effect on it.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v06:p215",
+     "excerpt_ar": "لأن الطلاق قبل الدخول يقتضي الرجوع في نصف الصداق، وقد وجد، ولا أثر لكونها أبرأته أو وهبته له",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ for «رجع عليها بنصفه» «على المذهب». The rule of halving is the Qurʾānic one, but the source argues the gift case by rationale and by the stranger-gift analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās / rationale: the dower has already come back to him; had she not given it he would recover only it, and a gift contract entails no liability for its return.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p256",
+     "excerpt_ar": "لأن الصداق عاد إليه ولو لم تهبه لم يرجع بشيء، وعقد الهبة لا يقتضي ضمانا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's reason for the second riwāya (with Mālik, al-Muzanī, Abū Ḥanīfa); the Ḥanbalī riwāya shares the ruling. Stated ʿilla: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rationale: the half he would recover was paid to him in advance by her gift.",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p069",
+     "excerpt_ar": "والثانية: لا يرجع عليها بشيء؛ لأن نصف الصداق تعجل له بالهبة",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī for the no-recourse riwāya on these facts. Stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās (takhrīj): some aṣḥāb carry the mukātab released from the kitāba over to the dower given back to the husband, so that on the riwāya of recourse there he may still claim the obligatory īṭāʾ.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p258",
+     "excerpt_ar": "وخرجه بعض أصحابنا على وجهين، بناء على الروايتين في الصداق، ولا يصح",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The only argument the sources give for recourse here; al-Mughnī cites it and rejects it («ولا يصح»). The rejection is not a proof for the other side; the takhrīj itself is a qiyās."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās / rationale: the master's remission stands in place of the īṭāʾ («لأن إسقاطه عنه يقوم مقام الإيتاء»), as when he remits the quarter due and takes the rest, owing nothing further.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p258",
+     "excerpt_ar": "ولم يرجع على سيده بالقدر الذي كان يجب على السيد أن يؤتيه إياه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī on exactly these facts (kitāba remitted, slave freed). Stated ʿilla with an aṣl: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Farq-based qiyās: the wife remitted the dower before the cause of the husband's claim to half (the divorce) existed, whereas the master remitted after the cause of the īṭāʾ existed, so his remission counts as the īṭāʾ; hence, if he had collected it and then given it back, the slave could claim nothing.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p258",
+     "excerpt_ar": "وهاهنا أسقط السيد عن المكاتب ما وجد سبب إيتائه إياه، فكان إسقاطه مقام إيتائه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's reason why the ṣadāq takhrīj fails and the mukātab has no recourse. Qiyās."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās on the ṣadāq: as the wife who gave the dower back owes the husband half on divorce, the witnesses who retract owe the sum though the claimant gave it back to the defendant after receiving it.",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p443",
+     "excerpt_ar": "المال المشهود به كما لو تنصف الصداق بعد هبتها إياه لزوجها فإن المرأة تغرم للزوج نصفه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī for «غرماه» on these facts (received, then gifted back, then retraction). Qiyās."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās (al-Qāḍī, al-Khilāf, via Ibn Rajab): liability fell on them when the defendant was made to pay; the property's coming back to him from the claimant by gift does not discharge it, as a usurper is not discharged by returning the thing to its owner as a gift.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p120",
+     "excerpt_ar": "لأن الضمان لزمهما بوجوب التغريم وعود العين إلى الغارم من المحكوم له بهبة لا يوجب البراءة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab reports this as al-Qāḍī's reason for not putting the witness case on the khilāf. Stated ʿilla with an aṣl (the usurper): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās (takhrīj): the retracting witnesses admit that the claimant took the property wrongfully, then he returned it by gift; on the view that a usurper is discharged by giving the thing back to its owner, their liability falls.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p120",
+     "excerpt_ar": "نعم يتخرج القول بسقوط الضمان هنا إذا قلنا ببراءة الغاصب بإعادة المال إلى المغصوب منه هبة",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's takhrīj, the holder of this position; his stated ground is «لأنهما اعترفا بأنه قبضه عدوانا ثم رده إليه هبة». Qiyās."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the aṣḥāb treat the paying guarantor like a lender who recovers only what he actually lost; having been given back what he paid, he lost nothing and recovers nothing.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p120",
+     "excerpt_ar": "ولهذا قالوا لو قضى الدين بنقيضه لم يرجع إلا بما قضى وجعلوه كالمقرض لا يرجع إلا بما غرم لكن هذا في الإبراء والمسامحة ظاهر",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's account of why the ẓāhir of the aṣḥāb denies recourse when the creditor gives the guarantor back what he paid. Qiyās on the lender. Ibn Rajab adds that this is clear for release and remission, and that full payment followed by a gift may be put on the two wujūh (his takhrīj, position 1)."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās / rationale: the one who paid another's debt and was then given it back by the creditor has in the end lost nothing on the debtor's behalf.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p392",
+     "excerpt_ar": "ويحتمل أن لا يرجع عليه، لكونه ما غرم عنه شيئا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Stated by al-Mughnī for the parallel case of the payee on a ḥawāla where he owed nothing (in effect a lender paying another's debt) who paid and was then given it back; the structure is the guarantor's. Qiyās."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: he paid on the debtor's behalf, and the money came back to him only by a new contract (the gift), which does not cancel the recourse that payment gave him.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p392",
+     "excerpt_ar": "رجع المحال عليه على المحيل به؛ لأنه قد غرم عنه، وإنما عاد إليه المال بعقد مستأنف",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ruling and reason for the parallel case (a non-debtor who paid on a ḥawāla and was then given the payment back): recourse. Ibn Rajab's takhrīj for the guarantor who paid in full rests on the same separation of payment and later gift. Qiyās."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f012",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās / stated rationale: leaving the animals (here, the trees) while knowing they cannot do without upkeep is itself a tacit permission to spend on them, so the one who spends with intent of recourse may recover.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p384",
+     "excerpt_ar": "أحدهما، يرجع به؛ لأن ترك الجمال مع العلم بأنها لا بد لها من نفقة إذن في الإنفاق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given in the cameleer masʾala, which the record (Ibn Rajab) names as the model for the fled musāqī; al-Mughnī adds that where the ḥākim could have been asked and was not, «ففي رجوعه وجهان أيضا». Cited for recourse on these facts (no permission, not a gift). A stated ʿilla, hence qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: the madhhab gives recourse to one who spends on a runaway slave, on an absent man's dependants and wives, and on a pledged animal; spending on the fled party's charge is like these.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p384",
+     "excerpt_ar": "وقياس المذهب أن له الرجوع؛ لقولنا: يرجع بما أنفق على الآبق، وعلى عيال الغائب وزوجاته",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Qudāma's «قياس المذهب» for recourse in the cameleer case (spending without a witness, intending recourse); carried to the musāqī by the record's own analogy. Explicitly a qiyās on settled furūʿ."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās (binā'): the owner who could have asked the ḥākim but spent without his permission intending recourse is built on one who pays another's debt without his permission, where the madhhab gives recourse.",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v05:p570",
+     "excerpt_ar": "وأنفق بنية الرجوع ولم يستأذنه فهل يرجع بذلك؟ على وجهين بناء على ما إذا قضى دينه بغير إذنه",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "This is the musāqāt locus itself (worker fled, permission obtainable, not asked). The building is cited for both wujūh; recorded here for recourse, the side that matches the madhhab ruling in the aṣl of paying another's debt."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās / stated rationale: he would be establishing for himself a right against another without the other's or the ḥākim's authority, which he cannot do.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p384",
+     "excerpt_ar": "والثاني لا يرجع به؛ لأنه يثبت لنفسه حقا على غيره",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The reason al-Mughnī gives for the no-recourse wajh in the cameleer case, the model the record applies to the fled musāqī. A stated ʿilla: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: without the ḥākim's permission or witnessing he counts as a volunteer in spending, like one who volunteers a charity, and a volunteer has no recourse.",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p397",
+     "excerpt_ar": "وإلا فلا) أي لا رجوع له إذا لم يوجد إذن ولا إشهاد ; لأنه متبرع بالإنفاق كما لو تبرع بالصدقة",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Stated in the musāqāt chapter for the owner who works the trees after the worker fled without permission or witnesses: fits these facts (permission False). Qiyās on the volunteer."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: a root in which fruit recurs is like a tree, and trees may be sold alone without a condition of cutting.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p070",
+     "excerpt_ar": "ولا فرق بين كون الأصول صغارا أو كبارا، مثمرة أو غير مثمرة، لأنه أصل تكرر فيه الثمرة، فأشبه الشجر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī reporting al-Qāḍī: the roots of such plants may be sold without a condition of cutting. ʿIlla = repeated bearing: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: if they are classed with trees because they bear again and again, the roots may be sold alone.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p157",
+     "excerpt_ar": "إن ألحقناها بالشجر لتكرر حملها جاز فيه صرح القاضي وابن عقيل في موضع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab giving the ground of al-Qāḍī and Ibn ʿAqīl. Qiyās."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: melon beds and the like, roots included, are exposed to blights as crops are, so they may be sold only on condition of cutting, like crops.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p157",
+     "excerpt_ar": "لا يجوز بيعها إلا بشرط القطع فإنها مع أصولها معرضة للآفات كالزرع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The reason of the author of al-Talkhīṣ, via Ibn Rajab. Qiyās."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f001",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: leaving these roots in the ground is customary and they are not meant to be moved, so they follow the land like things laid into it, unlike trees.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p157",
+     "excerpt_ar": "أنها تتبع وجها واحدا بخلاف الشجر لأن تبقيتها في الأرض معتاد ولا يقصد نقلها وتحويلها فهي كالمنبوذات",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab on the way of Abū al-Khaṭṭāb and al-Mughnī. Qiyās."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "Qiyās: on the wajh that classes them with crops, they do not enter an unqualified sale of the land, as crops do not.",
+     "ref": "src:openiti-rajab-shamela21730/v01:p157",
+     "excerpt_ar": "يخرج فيها طريقة ثالثة أنها لا تتبع وجها واحدا كالزرع",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's own takhrīj. Qiyās on crops."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: what the usurper planted keeps its root in the ground and is cut again and again, so it takes the ruling of planting (trees): the owner has it uprooted.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p190",
+     "excerpt_ar": "واحتمل أن يكون حكمه حكم الغرس؛ لبقاء أصله وتكرر أخذه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's second iḥtimāl, on these facts (usurped land planted with a perennial, repeatedly-cut crop). Qiyās."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: analogy would give every crop the planting's ruling; it was left only for short-lived crops because of the athar, so beyond them the analogy stands.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p190",
+     "excerpt_ar": "ولأن القياس يقتضي أن يثبت لكل زرع مثل حكم الغرس، وإنما ترك فيما تقل مدته للأثر",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same iḥtimāl. Explicitly «القياس»: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The ḥadīth on the crop sown in another's land (the owner takes it and pays the sower «نفقته»), by the generality of the word «الزرع», which covers this plant.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p190",
+     "excerpt_ar": "احتمل أن يكون حكمه ما ذكرنا؛ لدخوله في عموم الزرع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's first iḥtimāl; the crop ruling rests on that ḥadīth (cited on the preceding page, which Aḥmad followed «للأثر» against qiyās). Its bearing here is by generality, not explicit: zanni."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: it has no strong trunk, so it is like wheat and barley.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p190",
+     "excerpt_ar": "لأنه ليس له فرع قوي، فأشبه الحنطة والشعير",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Same iḥtimāl. Qiyās."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: a plant whose root bears again and again is like a tree, and its fruit like a tree's fruit in the rules just given, including blight (a loss before cutting falls on the seller).",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v04:p166",
+     "excerpt_ar": "وما له أصل يتكرر حمله كقثاء ونحوه فكشجر وثمره كثمره فيما ذكرنا، لكن لا يؤخر البائع اللقطة الظاهرة",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ in the jāʾiḥa section; Sharḥ al-Muntahā and Kashshāf say the same («كشجر ... في جائحة وغيرها»). The base rule (blight on fruit at the seller's risk) is Jābir's ḥadīth; its carrying to these plants is the analogy: qiyas. The qualifier (the seller need not leave the visible picking on the plant) does not touch the blight rule."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f008",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Qiyās: what the husband is given a choice between two things in, the ḥākim cannot do in his place, as with choosing among more than four wives (or two sisters) on conversion to Islam; so the ḥākim imprisons and presses him until he returns or divorces.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p563",
+     "excerpt_ar": "ليس للحاكم الطلاق عليه؛ لأن ما خير الزوج فيه بين أمرين، لم يقم الحاكم مقامه فيه كالاختيار",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's reason for the riwāya that he is imprisoned until he returns or divorces (one of al-Shāfiʿī's two qawls too). Qiyās."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Qiyās: what admits agency, whose beneficiary is determinate, and which the obligated party refuses, the ḥākim performs in his place, as with paying a debt; it differs from the choice among wives, whose beneficiary is not determinate.",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p563",
+     "excerpt_ar": "ولنا، أن ما دخلته النيابة، وتعين مستحقه، وامتنع من هو عليه، قام الحاكم مقامه فيه، كقضاء الدين",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī («وهذا أصح في المذهب») for the ḥākim divorcing on his behalf; al-Sharḥ al-Kabīr repeats it. Qiyās with stated aṣl and farq."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

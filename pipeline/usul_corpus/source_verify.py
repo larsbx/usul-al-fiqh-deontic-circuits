@@ -1,6 +1,7 @@
 """Fail-closed replay of a declared subset, using the existing registry and locks.
 
-The required subset is every witness cited by the active reconciliation ledger.
+The required subset is every witness cited by the active reconciliation ledger, and every witness
+the textual foundation (`nusus/foundation.json`) is checked against in test_nusus.py.
 All paged ref/excerpt pairs in corpus JSON using those witnesses are replayed.
 Other references are inventoried as excluded, never silently counted as passes.
 This is source fidelity under the existing Arabic-letters comparison, not review.
@@ -40,12 +41,13 @@ def excerpts(corpus: Path):
 def check_quote(text: str, excerpt: str, locator: str) -> str | None:
     """Match an occurrence ending at the declared closing-page marker.
 
-    Like arabic.locate, retain Arabic letters (including negations), ignore
-    punctuation/diacritics/markup. Unlike locate, search every occurrence so a
+    Like arabic.locate, compare arabic.quote_key: Arabic letters (including
+    negations) and standalone numerals, ignoring punctuation, diacritics, page
+    markers and footnote anchors. Unlike locate, search every occurrence so a
     repeated passage cannot borrow the first occurrence's page or qualifier.
     """
-    needle = arabic.letters(excerpt)
-    if not needle:
+    needle = arabic.quote_key(excerpt)
+    if not arabic.letters(excerpt):
         return "empty Arabic quotation"
     text, indices, flat = arabic._indexed(text)
     start = flat.find(needle)
@@ -70,14 +72,22 @@ def required_witnesses(corpus: Path) -> set[str]:
     ledger = reconcile.load(corpus)  # same base-plus-shards view as tests and generators
     ids = set()
     for entry in ledger["entries"]:
-        for item in entry.get("evidence", []):
+        for item in entry.get("evidence", []) + entry.get("proofs", []) + entry.get("advantages", []):
             match = REF.fullmatch(item["ref"])
             if not match:
                 raise ValueError(f"invalid required evidence locator: {item['ref']}")
             ids.add(match[1])
     if not ids:
         raise ValueError("required reconciliation evidence set is empty")
-    return ids
+    return ids | nusus.witnesses(corpus)
+
+
+def _matches(data: bytes, lock: dict) -> bool:
+    return len(data) == lock.get("bytes") and hashlib.sha256(data).hexdigest() == lock.get("sha256")
+
+
+def _pin(lock: dict) -> str:
+    return json.dumps({k: lock.get(k) for k in ("url", "bytes", "sha256")}, sort_keys=True)
 
 
 def locked_text(wid: str, witness: dict, lock: dict, corpus: Path, cache: Path,
@@ -94,23 +104,32 @@ def locked_text(wid: str, witness: dict, lock: dict, corpus: Path, cache: Path,
     if witness["kind"] == "openiti" and not re.fullmatch(r"[0-9a-f]{40}", witness["commit"]):
         raise ValueError("OpenITI witness must pin a full commit SHA")
     path = cache / f"{wid}.txt"
+    if fetch_source and path.exists() and not _matches(path.read_bytes(), lock):
+        path.unlink()  # a restored cache of an earlier pin; only the fetched bytes are judged below
     if not path.exists():
         texts.restore(wid, {wid: lock}, corpus / "texts", cache)
     if not path.exists() and fetch_source:
+        # fetch resumes an interrupted Shamela walk from `<wid>.part`; a checkpoint restored from a
+        # cache of an earlier pin would splice its pages in, so it resumes only under its own pin.
+        part, pin = cache / f"{wid}.part", cache / f"{wid}.part.pin"
+        if part.exists() and not (pin.exists() and pin.read_text(encoding="utf-8") == _pin(lock)):
+            part.unlink()
+        pin.write_text(_pin(lock), encoding="utf-8")
         fetch.fetch(witness, cache)  # its returned candidate lock is deliberately discarded
+        pin.unlink()
     if not path.exists():
         raise ValueError("required locked witness unavailable")
     data = path.read_bytes()
-    if len(data) != lock.get("bytes") or hashlib.sha256(data).hexdigest() != lock.get("sha256"):
+    if not _matches(data, lock):
         raise ValueError("full source bytes differ from lock (including LFS pointers)")
     return data.decode("utf-8")
 
 
 def verify(corpus: Path, cache: Path, fetch_source: bool = False) -> dict:
-    report = {"schema_version": 1, "scope": "reconciliation-witnesses-v1",
-              "comparison": "Arabic letters; exact letter forms; closing-page locator",
+    report = {"schema_version": 1, "scope": "reconciliation-and-foundation-witnesses-v2",
+              "comparison": "Arabic letters and standalone numerals; exact letter forms; closing-page locator",
               "status": "failed", "witnesses": [], "checks": [], "errors": [],
-              "outside_scope": ["JSONL records and non-ref quotation fields", "Quran aya, hadith number and Albani verdict replay (test_nusus.py)",
+              "outside_scope": ["JSONL records and non-ref quotation fields", "Quran aya, hadith number and Albani verdict replay (witnesses provisioned here; replayed by test_nusus.py)",
                                 "interpretive relevance, formal correctness and scholarly validation"]}
     registry = json.loads((corpus / "registry.json").read_text(encoding="utf-8"))
     witnesses = {w["id"]: w for work in registry["works"] for w in work["witnesses"]}

@@ -1,0 +1,556 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b25: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "What remains after the wujūb is lifted is compounded of two parts: no blame on doing (from the command) and no blame on leaving (from the abrogating text); this is true of both the recommended and the permitted, so jawāz remains",
+     "ref": "src:openiti-kawkab-shamela12019/v01:p430",
+     "excerpt_ar": "لأن الماهية الحاصلة بعد النسخ مركبة من قيدين: أحدهما: زوال الحرج عن الفعل، وهو المستفاد من الأمر",
+     "who": "Ibn al-Najjār, Sharḥ al-Kawkab al-Munīr",
+     "note": "The rational ground in Sharḥ al-Kawkab for the majority (al-Majd, al-Rāzī) that jawāz remains, shared between nadb and ibāḥa: position 0. A rational/linguistic rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Nadb is part of wujūb; what is lifted is only the insistence of the demand, so the demand itself remains, which is nadb",
+     "ref": "src:openiti-tahbir-shamela6336/v03:p1040",
+     "excerpt_ar": "لأن الندب عندهم بعض الوجوب، فإذا زال الوجوب، بقي الندب، لأن المرتفع التحتم بالطلب، فإذا زال التحتم بقي أصل الطلب",
+     "who": "al-Mardāwī, al-Taḥbīr",
+     "note": "The ground of al-Qāḍī, Abū al-Khaṭṭāb, Ibn ʿAqīl and Ibn Ḥamdān that nadb remains: position 0 (the command still proves recommendation). A rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The wujūb contains the jawāz, as the general contains its particulars, so the jawāz survives the lifting of the wujūb",
+     "ref": "src:openiti-ibnmuflih-sham19y122256/v01:p250",
+     "excerpt_ar": "وجه الأول: تضمن الوجوب ذلك، كالعام",
+     "who": "Ibn Mufliḥ, Uṣūl al-Fiqh",
+     "note": "Ibn Mufliḥ's statement of the case for the first view (jawāz remains): position 0. An analogy on the general term: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Jawāz was established only as a consequence of the wujūb, so it follows it; or it is a part of the wujūb, and a portion of the genus cannot remain once its species is gone, the more general existing only in a particular",
+     "ref": "src:openiti-ibnmuflih-sham19y122256/v01:p250",
+     "excerpt_ar": "ثم: ثبت تبعا للوجوب فيتبعه، أو هو جزء الوجوب، ويستحيل بقاء حصة النوع من الجنس بعد عدم النوع",
+     "who": "Ibn Mufliḥ, Uṣūl al-Fiqh",
+     "note": "The argument Ibn Mufliḥ sets against the first view, for al-Tamīmī's report from Aḥmad that jawāz does not remain: position 1 (jawāz follows wujūb and falls with it). A rational rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Wujūb is not nadb plus something, since permission to leave enters the definition of nadb; so nadb is not left behind when wujūb is lifted",
+     "ref": "src:openiti-tahbir-shamela6336/v03:p1041",
+     "excerpt_ar": "ومنع الشيخ الموفق في الروضة في مسألة الأمر المطلق للوجوب أن الوجوب ندب وزيادة، لدخول جواز الترك في حد الندب",
+     "who": "al-Mardāwī, al-Taḥbīr",
+     "note": "al-Muwaffaq's (and al-Ghazālī's) objection, which al-Taḥbīr reports as an argument against nadb remaining: it supports position 1 in so far as no recommendation is proved. A linguistic/definitional rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The executor acts by permission, so he may resign as an agent may",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p248",
+     "excerpt_ar": "ليس له عزل نفسه بعد الموت لذلك. ولنا، أنه متصرف بالإذن، فكان له عزل نفسه، كالوكيل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's own proof («ولنا») for the unrestricted right to resign, in the testator's life and after: position 0. Analogy on the agent: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The waṣiyya is a permission to act, so either party may dissolve it, as in wakāla",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p293",
+     "excerpt_ar": "وللوصي عزل نفسه متى شاء في حياة الموصي، وبعد موته، لأنه إذن في التصرف، فملك كل واحد منهما فسخه كالوكالة",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's reason for position 0. Analogy on wakāla: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Resignation where no ḥākim is found wastes the trust and voids a Muslim's right",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p397",
+     "excerpt_ar": "ونقل الأثرم وحنبل: له عزل نفسه إن وجد حاكما كما قدمه في المحرر، وقطع به الحارثي لأن العزل تضييع للأمانة وإبطال لحق المسلم",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The reason al-Buhūtī gives for al-Muḥarrar's restriction (resignation only if a ḥākim is found): on these facts (harm, no remedy) it bars resignation, position 1. A stated rationale (preventing loss of the trust): qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "He deceived the testator by accepting, so resigning after the death harms him, and harm is to be repelled",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p293",
+     "excerpt_ar": "ليس للوصي عزل نفسه بعد موت الموصي، لأنه غره بقبول وصيته، فعزل نفسه إضرار به، والضرر مدفوع شرعا",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's reason for Ibn Abī Mūsā's riwāya barring resignation after the death: position 2. A stated rationale (taghrīr and the repelling of ḍarar): qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "By accepting he deceived the testator and kept him from appointing another",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p247",
+     "excerpt_ar": "وقال أبو حنيفة: لا يجوز له ذلك بعد الموت بحال، ولا يجوز في حياته إلا بحضرته؛ لأنه غره ب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī gives this reason for Abū Ḥanīfa and then for Ibn Abī Mūsā's riwāya («لذلك»): no resignation after the death, nor in life without the testator's knowledge, position 2 (the Ḥanafī holder of the same ruling counts). A stated rationale (taghrīr): qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Wakāla is a non-binding contract, so he need not remain in it, like other agencies; its being a right of the pledge does not make it binding",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p265",
+     "excerpt_ar": "والأول هو المنصوص عنه؛ لأن الوكالة عقد جائز، فلم يلزم المقام عليها، كسائر الوكالات",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's reason for the manṣūṣ that the pledgor's dismissal of the selling agent takes effect: position 0 (the remedy being the ḥākim's order to sell). Analogy on other agencies: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Wakāla is non-binding, as if he had appointed others or appointed them to sell something else",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p089",
+     "excerpt_ar": "فإن عزلهما الراهن، صح عزله؛ لأن الوكالة عقد جائز، فلم يلزم المقام عليهما، كما لو وكل غيرهما",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's reason for position 0. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Aḥmad barred stratagems in many places; permitting the dismissal opens a stratagem for the pledgor, who stipulates the sale to win the pledgee's consent and then dismisses the agent",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p265",
+     "excerpt_ar": "وقال ابن أبي موسى ويتوجه لنا مثل ذلك؛ فإن أحمد قد منع الحيلة في غير موضع من كتبه، وهذا يفتح باب الحيلة للراهن",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Ibn Abī Mūsā's takhrīj that the agent is not dismissed: position 1. A rationale from blocking stratagems (sadd al-dharāʾiʿ): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "His agency has become one of the rights of the pledge, which the pledgor may not drop, like its other rights",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p265",
+     "excerpt_ar": "وقال أبو حنيفة ومالك لا ينعزل؛ لأن وكالته صارت من حقوق الرهن، فلم يكن للراهن إسقاطه، كسائر حقوقه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given for Abū Ḥanīfa and Mālik, who hold the same ruling as Ibn Abī Mūsā (not dismissed): position 1. Analogy on the pledge's other rights: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Muḍāraba is a non-binding contract dissolved by either party's rescission, since the worker acts in another's property by his permission like an agent, whether before or after he has dealt",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p046",
+     "excerpt_ar": "والمضاربة من العقود الجائزة، تنفسخ بفسخ أحدهما، أيهما كان، وبموته، وجنونه، والحجر عليه لسفه؛ لأنه متصرف في مال غيره بإذنه، فهو كالوكيل",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground that the owner's rescission dissolves the muḍāraba even when the capital is in goods (then the goods are sold or divided): the dissolution half of position 0. Analogy on the agent: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The muḍārib may sell the goods after the rescission because his right attaches to his profit",
+     "ref": "src:openiti-rajab-shamela21730/v01:p111",
+     "excerpt_ar": "ومنها المضاربة تنفسخ بفسخ المالك لها ولو كان المال عرضا ولكن للمضارب بيعه بعد الفسخ لتعلق حقه بربحه",
+     "who": "Ibn Rajab, al-Qawāʿid",
+     "note": "al-Qāḍī's view (al-Khilāf) as Ibn Rajab reports it, with its stated ground for the remedy (sale after rescission): position 0 on these facts. A stated ʿilla: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Sharika is a non-binding contract and so resembles wakāla: each partner is dismissed by the other's word whatever the state of the capital",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p018",
+     "excerpt_ar": "وذكر أبو الخطاب أنه ينعزل مطلقا. وهو مذهب الشافعي؛ لأنه عقد جائز، فأشبه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Abū al-Khaṭṭāb's ground (and al-Shāfiʿī's) for dismissal even with the capital in goods: position 0. Analogy on wakāla (the excerpt ends at the page break before «الوكالة»): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Sharika is an agency, the partner's profit enters only incidentally, whereas the muḍārib's right is primary; so the muḍārib's case does not carry over",
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v07:p109",
+     "excerpt_ar": "وعنه: إن كان المال عرضا لم ينعزل كل منهما حتى ينض، والمذهب الأول، لأنها وكالة، والربح يدخل ضمنا، وحق المضارب أصلي",
+     "who": "Ibn Mufliḥ, al-Furūʿ",
+     "note": "Ibn Mufliḥ's reason for the madhhab (dissolution by either partner's word): position 0, with the farq that defeats the analogy on the muḍārib. A rationale with farq: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The partner is not dismissed while the capital is goods and may deal until it is liquid, like the muḍārib whom the owner dismisses",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p018",
+     "excerpt_ar": "فذكر القاضي أن ظاهر كلام أحمد، أنه لا ينعزل بالعزل، وله التصرف حتى ينض المال، كالمضارب إذا عزله رب المال",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Qāḍī's reading of Aḥmad for the case where the capital is goods: position 1. Analogy on the muḍārib: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "His pardon was not valid, for he pardoned when he could no longer remedy what he had delegated, like pardoning after the spear was thrown at the culprit; and pardon is a benefaction, which does not entail liability",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v07:p245",
+     "excerpt_ar": "لأنه عفا في حال لا يمكنه تلافي ما وكل فيه كالعفو بعد رمي الحربة إلى الجاني، ولأن العفو إحسان، فلا يقتضي وجوب الضمان",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's reasons for the first wajh (the pardoner is not liable): position 0. Analogy on pardon after the throw, and a rationale from iḥsān: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The pardon came when the act could not be recovered, so the killing fell due to him and he is not liable",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v09:p422",
+     "excerpt_ar": "(أحدهما) لا ضمان عليه لأن عفوه لم يصح لما ذكرنا من حصوله في حال لا يمكنه استدراك الفعل فوقع القتل مستحقا له فلم يلزمه ضمان",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr's reason for the first qawl: position 0. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The killing of the pardoned man came about by the principal's order and empowerment, with no fault in the one who did it, so liability lies on the one who ordered, as when one orders his non-Arab slave to kill an inviolable person",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v09:p422",
+     "excerpt_ar": "لأن قتل المعفو عنه حصل بأمره وتسليطه على وجه لا ذنب المباشر فيه فكان الضمان على الآمر كما لو أمره عبده الأعجمي بقتل معصوم",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr's reason for the second qawl (the pardoner liable): position 1. Analogy on ordering the ignorant slave: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f009",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is a loss brought onto another's property to free one's own, so he must make it good, as one who breaks another's inkwell to get his dinar out of it",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p256",
+     "excerpt_ar": "وذلك لأنه نقص دخل على ملك غيره لأجل تخليص ملكه، فلزمه ضمانه، كما لو كسر محبرة غيره لإخراج ديناره منها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's reason for the ẓāhir of al-Khiraqī that the buyer who uproots after the shafīʿ's taking owes the loss: position 0, the excerpt adding that the loss falls in the shafīʿ's property. Analogy on the inkwell: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The claim that the loss fell in his own property is false: the loss from uprooting falls in the shafīʿ's property",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p256",
+     "excerpt_ar": "وقولهم: إن النقص حصل في ملكه. ليس كذلك؛ فإن النقص الحاصل بالقلع إنما هو في ملك الشفيع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Part of al-Mughnī's case for position 0 on these facts (uprooting after the taking). A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He planted and built in his own property, and the loss arose in his property, which no price answers",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p256",
+     "excerpt_ar": "ذكره القاضي. وهو مذهب الشافعي؛ لأنه غرس وبنى في ملكه، وما حدث من النقص إنما حدث في ملكه، وذلك مما لا يقابله ثمن",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Qāḍī's and al-Shāfiʿī's reason that the uprooting buyer need not level the holes or pay the loss: position 1. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The loss arose in his property, so it is not answered by compensation",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p076",
+     "excerpt_ar": "نقص الأرض، قاله الأكثر؛ لأن النقص حدث في ملكه فلا يقابل بعوض",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's reason for «the majority» that he need not level the holes: position 1. A rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f004",
+   "proofs": [
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "These roots (cotton, cucurbits, aubergine and the like) are not trees, so musāqāh, which is on trees, does not hold on them; a muzāraʿa on them is valid",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p533",
+     "excerpt_ar": "(و) ك (الباذنجان ونحوه) لم تصح،؛ لأن ذلك ليس بشجر وتصح المزارعة عليه",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī's reason for al-Iqnāʿ's ruling that musāqāh on plants of repeated bearing is invalid and that the contract is a muzāraʿa: position 1 (crop wajh). A stated rationale (they are not trees, the aṣl of musāqāh): qiyas. No work consulted gives a proof for the tree wajh in musāqāh; al-Mughnī's «فأشبه الشجر» (v04 p070) is given for selling these roots, not for musāqāh, so it is not attached."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The tooth is part of him, and the human being is pure as a whole, living and dead, so his part is likewise",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p063",
+     "excerpt_ar": "وإن سقط سن من أسنانه فأعادها بحرارتها، فثبتت، فهي طاهرة؛ لأنها بعضه، والآدمي بجملته طاهر حيا وميتا، فكذلك بعضه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's reason for purity of the re-implanted tooth that took hold: position 0. Analogy of part on whole: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The parts of a human take the ruling of the whole, whether separated in life or after death, as with other pure and impure animals",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p478",
+     "excerpt_ar": "فهي طاهرة ولأن حكم أبعاض الآدمي حكم جملته سواء إنفصلت في حياته أو بعد موته",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr's reason for position 0. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "What is severed from the living is dead; the whole was judged pure for its sanctity, which is stronger than that of a part",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v02:p063",
+     "excerpt_ar": "وقال القاضي: هي نجسة، حكمها حكم سائر العظام النجسة؛ لأن ما أبين من حي فهو ميت. وإنما حكم بطهارة الجملة لحرمتها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Qāḍī's reasons for impurity: position 1. al-Mughnī states «ما أبين من حي فهو ميت» as a rule, not as a cited ḥadīth with chain, so it is taken as a stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The part has no sanctity, since no funeral prayer is said over it, and it was severed from a living being, so it is impure",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p346",
+     "excerpt_ar": "اختارها القاضي، لأنه لا حرمة لها، بدليل أنه لا يصلي عليها، وقد أبينت من حي فتكون نجسة",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's reasons for the riwāya of impurity: position 1. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is a tooth that returned, so the arsh lapses, as with the tooth of one who has not yet shed his milk teeth; the rarity of its return does not stop its ruling when it occurs",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p333",
+     "excerpt_ar": "ولنا، أنها سن عادت، فسقط الأرش، كسن من لم يثغر، وندرة وجودها لا يمنع ثبوت حكمها إذا وجدت",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's proof that the adult's tooth that grows back carries no diya and any arsh taken is returned: position 0. Analogy on the child's tooth: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Human limbs are not liable by destruction as property; liability is only for the loss to the whole, and there is none once the limb returns",
+     "ref": "src:openiti-rajab-shamela21730/v01:p313",
+     "excerpt_ar": "بحاله فلا ضمان بحال في المذهب لأن أطراف الآدمي لا تضمن بالإتلاف إذ ليست أموالا، فإنما يضمن بما نقص الجملة ولم يوجد نقص",
+     "who": "Ibn Rajab, al-Qawāʿid",
+     "note": "Ibn Rajab's ground for the madhhab of no liability when nail, tooth, hair, smell or sight returns: position 0. A stated rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "An adult's tooth is not replaced in the ordinary course, so if it returns it is a new gift; hence its return is not awaited for liability",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p333",
+     "excerpt_ar": "وقال في الآخر: لا يسقط الأرش، لأن هذه السن لا تستخلف عادة، فإذا عادت كانت هبة مجددة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Given in al-Mughnī for al-Shāfiʿī's other qawl, the same ruling al-Inṣāf reports from al-Qāḍī (the diya is due though it grew back): position 1. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "If the cut branch or grass regrows, its liability may lapse, as when one wounds game and it heals, or cuts a man's hair and it grows back",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p323",
+     "excerpt_ar": "فإن قطع غصنا أو حشيشا، فاستخلف، احتمل سقوط ضمانه، كما إذا جرح صيدا فاندمل، أو قطع شعر آدمي فنبت",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's first iḥtimāl, the madhhab per al-Inṣāf: position 0. Analogy on healed game and regrown hair: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The Ḥaram's game and plants are more like human beings, being inviolable by their place for all people, unlike the muḥrim's game, which resembles owned property",
+     "ref": "src:openiti-rajab-shamela21730/v01:p313",
+     "excerpt_ar": "والأشبه أن صيد الحرم ونباته ملحق بالآدميين لعصمته بمحله بالنسبة إلى جميع الناس، بخلاف صيد المحرم فإن تحريمه يختص به",
+     "who": "Ibn Rajab, al-Qawāʿid",
+     "note": "Ibn Rajab's preference, which puts the Ḥaram's plants with human limbs that are not liable once restored: position 0. A stated ʿilla (ʿiṣma by place): qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The second growth is other than the first, as when the muḥrim shaves hair and it grows back (he is still liable)",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v03:p368",
+     "excerpt_ar": "وفيه وجه آخر أنه لا يسقط لأن الثاني غير الأول فهو كما لو حلق المحرم شعرا فعاد",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr's reason for the other wajh (liability despite regrowth): position 1. Analogy on the muḥrim's hair: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "ʿĀriya is not binding; return was barred before the collapse only for the harm to the borrower in removing what was placed by permission, and that has gone; so he may not replace the beams whether the wall is rebuilt with its materials or others",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p171",
+     "excerpt_ar": "لم يملك إعادته، سواء بنى الحائط بآلته أو بغيرها؛ لأن العارية لا تلزم، وإنما امتنع الرجوع قبل انهدامه؛ لما فيه من الضرر بالمستعير",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's reason, expressly covering a wall rebuilt with its old materials: position 0 on these facts. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The permission covered that wall and does not extend to another",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p005",
+     "excerpt_ar": "(فإن سقط عنه لهدم أو غيره لم يملك رده) لأن الإذن تناول الحائط فلا يتعدى إلى غيره",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's reason for position 0; it adds that on this view it is the same whether rebuilt with its materials or others. A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The cause (the permission to place the beams) continues, so the entitlement continues",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p005",
+     "excerpt_ar": "وقال القاضي والمؤلف: له إعارته، وصححه الحارثي قال: وهو اللائق بالمذهب؛ لأن السبب مستمر، فكان الاستحقاق مستمرا",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Reported in al-Mubdiʿ for al-Qāḍī, the author (of al-Muqniʿ) and al-Ḥārithī: he may replace the beams. It is unrestricted, so it gives position 1's ruling on these facts (wall rebuilt with old materials), though it is not the restricted second wajh as Ibn Rajab states it. A rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f004",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The renewed wall is not what the lease was made on, so the lessor is not compelled to renew it",
+     "ref": "src:openiti-rajab-shamela21730/v01:p314",
+     "excerpt_ar": "فصرح به القاضي وابن عقيل بأن هذا المجدد لم يقع عليه العقد، وفرعا عليه أنه لا يجبر على التجديد",
+     "who": "Ibn Rajab, al-Qawāʿid",
+     "note": "al-Qāḍī's and Ibn ʿAqīl's ground as Ibn Rajab reports it: position 0. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The lessor is not compelled to build anew what the lease did not cover, because the contract did not include it",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p262",
+     "excerpt_ar": "(ولا يجبر) مؤجر (على تجديد) بيت زائد عما في الدار حال الإجارة ولا على هدم عامر وإعادته جديدا لأنه لم يتناوله العقد",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "al-Buhūtī's reason that the lessor is not compelled to renew (the matn's «ولا يجبر على تجديد»): position 0's ruling, by the same ʿilla (not under the contract). A rationale: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He is compelled to renew as he is compelled to repair",
+     "ref": "src:openiti-rajab-shamela21730/v01:p314",
+     "excerpt_ar": "وحكى وجها بإجباره على التجديد كما يجبر على الترميم",
+     "who": "Ibn Rajab, al-Qawāʿid",
+     "note": "The wajh al-Talkhīṣ reports: position 1. Analogy on the lessor's duty to repair: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The bequest is void by the loss of the name and does not return when the building returns, because the rebuilt house is other than the first",
+     "ref": "src:openiti-rajab-shamela21730/v01:p314",
+     "excerpt_ar": "فالمشهور بطلان الوصية بزوال الاسم ولا يعود بعود البناء لأنه غير الأول",
+     "who": "Ibn Rajab, al-Qawāʿid",
+     "note": "Ibn Rajab's reason for the mashhūr: position 0. A stated rationale: qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rebuilding a collapsed house, even with its old materials, indicates the testator's choice to revoke",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p350",
+     "excerpt_ar": "(أو أعادها) أي: أعاد الموصي دارا انهدمت. (ولو بآلتها القديمة) أو جعلها حماما ونحوه (فرجوع) لأن ذلك دليل على اختيار الرجوع",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "al-Buhūtī's reason for al-Iqnāʿ's ruling that the bequest does not survive the testator's rebuilding even with the old materials: position 0 on these facts. A rationale from indication of intent: qiyas."
+    },
+    {
+     "position": 2,
+     "tier": "qiyas",
+     "dalil": "The bequeathed thing remains, as when a garment is washed",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p247",
+     "excerpt_ar": "والثاني، واختاره أبو الخطاب: إنه ليس برجوع؛ لأن الموصى به باق أشبه غسل الثوب",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "Abū al-Khaṭṭāb's wajh, given in al-Mubdiʿ for the whole list that includes «أو انهدمت الدار وزال اسمها»: the bequest is not void, position 2. Analogy on washing a garment: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Kathīr b. Murra: I heard ʿUmar b. al-Khaṭṭāb say: the Messenger of God said «No church is built in Islam, and what of them falls into ruin is not renewed»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p356",
+     "excerpt_ar": "سمعت عمر بن الخطاب يقول قال: رسول الله صلى الله عليه وسلم «لا تبنى الكنيسة في الإسلام ولا يجدد ما خرب منها»",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's marfūʿ ḥadīth for barring the rebuilding of a wholly collapsed church: position 0. An āḥād marfūʿ report, explicit on the point; al-Mughnī gives no grade: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "In the covenant of the people of al-Jazīra with ʿIyāḍ b. Ghanm (on ʿUmar's terms): «and we shall not renew what falls into ruin of our churches»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p356",
+     "excerpt_ar": "ولنا، أن في كتاب أهل الجزيرة لعياض بن غنم: ولا نجدد ما خرب من كنائسنا",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The ṣaḥāba's settled terms with the dhimmīs, with no ṣaḥābī disagreeing in the source: position 0. Taken as the ṣaḥāba's ruling: fatwaSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is building a church in Dār al-Islām, so it is barred, as founding one would be; it differs from repairing, which is continuation, while this is a new founding",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p356",
+     "excerpt_ar": "ولأن هذا بناء كنيسة في دار الإسلام، فلم يجز، كما لو ابتدئ بناؤها. وفارق رم شعثها؛ فإنه إبقاء واستدامة، وهذا إحداث",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's analogy for position 0, which is the inshāʾ side of Ibn Rajab's «استدامة أو إنشاء». Analogy with farq: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "It is rebuilding what collapsed, like rebuilding a part that collapsed or repairing; and since keeping the church is permitted, rebuilding it is like keeping it",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p356",
+     "excerpt_ar": "وعن أحمد أنه يجوز. وهو قول أبي حنيفة، والشافعي؛ لأنه بناء لما استهدم فأشبه بناء بعضها إذا انهدم ورم شعثها، ولأن استدامتها جائزة وبناؤها كاستدامتها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's reason for the riwāya permitting it (also Abū Ḥanīfa and al-Shāfiʿī): position 1, the istidāma side. Analogy: qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Rebuilding preserves the church, like repairing what has decayed",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v04:p179",
+     "excerpt_ar": "وعنه: يجوز؛ لأنه أبقى لها، أشبه لم ما تشعث",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "al-Kāfī's reason for the riwāya permitting it: position 1. Analogy on repair: qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

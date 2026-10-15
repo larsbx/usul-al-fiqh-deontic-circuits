@@ -35,6 +35,35 @@ def test_check_case_rejects_bad_facts_domains_and_thin_ikhtilaf():
     assert takhrij.check_case(_case("missing_fact", None, None)) == []
 
 
+def test_check_case_requires_an_ikhtilaf_position_to_hold_the_kernel_ruling():
+    """The kernel sides with a reported position, as an encoder code; a gloss rides in `detail`."""
+    facts = {"entitled_known": False, "divisible": False, "confusion_category": False}
+    glossed = [{"who": "a", "ruling": "divide"}, {"who": "b", "ruling": "lot; whoever wins, his word"}]
+    coded = [glossed[0], {"who": "b", "ruling": "lot", "detail": "whoever wins, his word"}]
+    assert takhrij.check_case(_case("genuine_ikhtilaf", facts, "lot", positions=glossed, matches_madhhab=False)) == [
+        "no position holds the expected ruling"]
+    assert takhrij.check_case(_case("genuine_ikhtilaf", facts, "lot", positions=coded, matches_madhhab=False)) == []
+    abstain = {"suspended": True, "possible": True, "absence_known": False}
+    ints = [{"who": "a", "ruling": 1}, {"who": "b", "ruling": False}]
+    assert takhrij.check_case(_case("genuine_ikhtilaf", abstain, True, encoder="abstention_under_possible_condition",
+                                    positions=ints, matches_madhhab=False)) == ["no position holds the expected ruling"]
+
+
+def test_code_is_typed_identity():
+    """1 is not true, and key order is moot: one notion of equal rulings for every check."""
+    assert takhrij.code(1) != takhrij.code(True) and takhrij.code({"a": 1, "b": 2}) == takhrij.code({"b": 2, "a": 1})
+    assert takhrij.among(True, takhrij.B) and not takhrij.among(1, takhrij.B) and not takhrij.among(0, takhrij.B)
+
+
+def test_check_case_does_not_read_an_int_as_a_bool():
+    abstain = {"suspended": True, "possible": True, "absence_known": False}
+    assert takhrij.check_case(_case("derivable", abstain, True, encoder="abstention_under_possible_condition")) == []
+    assert takhrij.check_case(_case("derivable", {**abstain, "possible": 1}, True,
+                                    encoder="abstention_under_possible_condition")) == ["facts do not match the encoder"]
+    assert takhrij.check_case(_case("derivable", abstain, 1, encoder="abstention_under_possible_condition")) == [
+        "expected outside the encoder's output domain"]
+
+
 def test_report_coverage_excludes_segmentation_errors():
     cases = [_case("derivable", {}, None), _case("missing_fact", None, None), _case("segmentation_error", None, None)]
     rep = takhrij.report(cases)

@@ -1,5 +1,9 @@
 # The judgement form: what a question asks
 
+**Place in the stack.** Qawāʿid ([`schemata.md`](schemata.md)) are the foundation. Types come first on top of them: this document. Categories come next, downstream of the types: [`category-theory.md`](category-theory.md).
+
+*Types* here means the types the qawāʿid define (`Usul.Typing.Qaida`, `Usul.Typing`) and the judgement form over them. It does not mean Σ (`Usul.Hukm`, `Usul.Signature`), which sits below the qawāʿid: Σ is the vocabulary they are stated in (`Usul.Qawaid` imports `Usul.Signature`).
+
 `Usul.Judgement` (`formal/lean/Usul/Judgement.lean`) formalises the roadmap's judgement form `Γ ⊢ d : H(a, s) @ g` (§2.1). A question must be typed before its answer is compared with any other. Every type in the module comes from a ḥadd already in the corpus, and each is linked in `corpus/signature_map.json`, so the Lean build `#check`s it.
 
 | Type | What it is | Source |
@@ -67,7 +71,7 @@
     | milk | 9/10 | 0.60 |
 
     The judgements are the model's, not a person's.
-  - **At those lower bounds, at least 0.032 of taklīfī labels are type mismatches** (`labels.precision.mismatch_floor` in the report). Recall is not measured, so this is a floor. The flags are for review; nothing is relabelled automatically.
+  - **With 95% joint confidence, the expected share of taklīfī labels that are type mismatches is at least 0.030** (`labels.precision.mismatch_floor` in the report). Each flagged question counts once: 598 questions carry 602 cue hits, 4 of them two cues (`labels.by_cue_set`). A cue's bound holds for its flags pooled, not for each overlap group, so the floor is the fewest distinct questions that meet every cue's bound: a question with two cues meets at most two of them (`judgement._distinct_floor`). The cue bounds are one-sided Wilson bounds at 0.05/4 each (Bonferroni over the four cues, `lower_joint`), so all four hold together; the table's per-cue bounds hold only one at a time. Recall is not measured, so this is a floor. The flags are for review; nothing is relabelled automatically.
 
 **What this does not settle**
 - Whether the classification is right. Every entry is a candidate: classified with LLM assistance, adjudicated on the hard cases, not reviewed by a person.

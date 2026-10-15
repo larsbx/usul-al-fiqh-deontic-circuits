@@ -83,6 +83,35 @@ def test_fetch_is_pinned_and_does_not_update_the_lock(fixture, monkeypatch):
     assert (corpus / "lock.json").read_bytes() == before
 
 
+def test_a_stale_cached_witness_is_refetched_only_when_fetching(fixture, monkeypatch):
+    """A restored CI cache may hold bytes of an earlier pin: verification fails on them, a fetch replaces them."""
+    corpus, cache = fixture
+    (cache / "test-source.txt").write_text(TEXT + "earlier pin")
+    assert gate.verify(corpus, cache)["status"] == "failed"
+    monkeypatch.setattr(gate.fetch, "_get", lambda url: TEXT.encode())
+    assert gate.verify(corpus, cache, fetch_source=True)["status"] == "verified_required_subset"
+    assert (cache / "test-source.txt").read_text() == TEXT
+
+
+def test_a_checkpoint_resumes_only_under_its_own_pin(fixture, monkeypatch):
+    """A restored `.part` from an interrupted fetch resumes only for the pin it was started under."""
+    corpus, cache = fixture
+    (cache / "test-source.txt").unlink()
+    part, seen = cache / "test-source.part", []
+    def fetch(w, c):
+        seen.append(part.exists())
+        (c / "test-source.txt").write_text(TEXT)
+        part.unlink(missing_ok=True)
+    monkeypatch.setattr(gate.fetch, "fetch", fetch)
+    part.write_text("pages of an earlier pin")
+    assert gate.verify(corpus, cache, fetch_source=True)["status"] == "verified_required_subset"
+    (cache / "test-source.txt").unlink()
+    part.write_text("pages of this pin")
+    (cache / "test-source.part.pin").write_text(gate._pin(json.loads((corpus / "lock.json").read_text())["witnesses"]["test-source"]))
+    assert gate.verify(corpus, cache, fetch_source=True)["status"] == "verified_required_subset"
+    assert seen == [False, True]
+
+
 def test_fetch_failure_is_a_failure_not_an_exclusion(fixture, monkeypatch):
     corpus, cache = fixture
     (cache / "test-source.txt").unlink()
@@ -105,6 +134,36 @@ def test_repeated_quote_checks_the_declared_page():
     assert gate.check_quote(text, "هذا الحكم ثابت", "v01:p002") is None
     assert "qualifier" in gate.check_quote(text, "هذا الحكم ثابت", "v01:p001")
     assert "absent" in gate.check_quote(text, "هذا الحكم ثابت", "v01:p003")
+
+
+NUMERAL_TEXT = "# أقر أن عليه 100 درهم حالة\nPageV01P001\n"
+
+
+@pytest.mark.parametrize("quote", ["عليه 100 درهم", "عليه ١٠٠ درهم", "عليه ۱۰۰ درهم"])
+def test_a_numeral_is_matched_across_digit_scripts(quote):
+    assert gate.check_quote(NUMERAL_TEXT, quote, "v01:p001") is None
+
+
+@pytest.mark.parametrize("quote", ["عليه 999 درهم", "عليه ٩٩٩ درهم", "عليه 10 درهم", "عليه 1 00 درهم", "عليه درهم"])
+def test_a_changed_or_dropped_numeral_fails(quote):
+    """Audit: letters-only comparison accepted «عليه 999 درهم» against «عليه 100 درهم»."""
+    assert "absent" in gate.check_quote(NUMERAL_TEXT, quote, "v01:p001")
+
+
+def test_footnote_anchors_and_page_markers_are_markup():
+    """Shamela footnote anchors are digits glued to a word (`علماء1`); page markers carry digits too."""
+    text = "# قال أكثر العلماء1 بثبوته2 في 3 مواضع\nPageV01P007\n# وبه قال الموفق\nPageV01P008\n"
+    assert gate.check_quote(text, "قال أكثر العلماء بثبوته في 3 مواضع", "v01:p007") is None
+    assert gate.check_quote(text, "قال أكثر العلماء١ بثبوته في 3 مواضع", "v01:p007") is None
+    assert gate.check_quote(text, "في 3 مواضع وبه قال", "v01:p008") is None
+    assert "absent" in gate.check_quote(text, "قال أكثر العلماء بثبوته في 4 مواضع", "v01:p007")
+
+
+def test_negated_parenthesised_footnote_anchors_are_markup():
+    """al-Furūʿ's Shamela witness marks footnotes «(¬7)», with or without them in the excerpt."""
+    text = "# خلافا للحلواني (¬7) وبعض الشافعية\n~~(¬8)؛ لأن الله حكى عنهم\nPageV03P1011\n"
+    for quote in ("خلافا للحلواني وبعض الشافعية؛ لأن الله حكى عنهم", "خلافا للحلواني (¬7) وبعض الشافعية (¬8)؛ لأن الله حكى عنهم"):
+        assert gate.check_quote(text, quote, "v03:p1011") is None
 
 
 def test_page_break_does_not_hide_a_qualifier():
@@ -149,3 +208,19 @@ def test_shard_only_witness_is_required_and_cannot_hide_in_exclusions(fixture):
     assert report["status"] == "failed" and report["counts"] == {"failed": 1, "verified": 1}
     (cache / "shard-source.txt").write_text(TEXT)
     assert gate.verify(corpus, cache)["counts"] == {"verified": 2}
+
+
+def _foundation(corpus, wid="test-source"):
+    (corpus / "nusus").mkdir(exist_ok=True)
+    (corpus / "nusus/foundation.json").write_text(json.dumps({"ayat": [{"witness": wid}], "ahadith": [
+        {"sources": [{"witness": wid}], "albani": {"witness": wid}}], "athar": [{"witness": wid}]}))
+
+
+def test_foundation_witnesses_are_required(fixture):
+    """The foundation's āyāt, ḥadīth collections and al-Albānī works are provisioned fail-closed too."""
+    corpus, cache = fixture
+    _foundation(corpus, "foundation-source")
+    assert "foundation-source" in gate.required_witnesses(corpus)
+    report = gate.verify(corpus, cache)
+    assert report["status"] == "failed"
+    assert any(e.startswith("foundation-source:") for e in report["errors"])

@@ -150,19 +150,41 @@ def revolume(text: str) -> str:
     return _PAGE.sub(mark, text)
 
 
+# The quotation key: Arabic letters, and each standalone numeral as a delimited token in Western
+# digits. Recognized markup carries no key: page markers, and footnote anchors (digits glued to the
+# preceding word, Shamela's `العلماء1`, or negated in parentheses, `(¬7)`).
+_QUOTE = re.compile(r"PageV\d+P\d+|\(¬[0-9٠-٩۰-۹]+\)|(?<![ء-ي\u064b-\u06520-9٠-٩۰-۹])([0-9٠-٩۰-۹]+)|([ء-ي])")
+
+
+def _quote_pieces(s: str):
+    """(start, end, key piece) for each keyed unit of ``s``."""
+    for m in _QUOTE.finditer(s):
+        if m[1]:
+            yield m.start(), m.end(), f"#{m[1].translate(_DIGITS)}#"
+        elif m[2]:
+            yield m.start(), m.end(), m[2]
+
+
+def quote_key(s: str) -> str:
+    """The comparison key for verbatim excerpts: letters and substantive numerals."""
+    return "".join(k for _, _, k in _quote_pieces(re.sub(r"ms\d+", "", s)))
+
+
 @lru_cache(maxsize=4)
 def _indexed(text: str) -> tuple[str, list[int], str]:
-    """The revolumed text, the positions of its letters, and the letters alone."""
+    """The revolumed text, a source position for each character of its quotation key, and the key.
+    A numeral's delimiters map to its first and last digit, so a match's span covers it."""
     text = re.sub(r"ms\d+", "", revolume(text))
-    idx = [i for i, ch in enumerate(text) if "ء" <= ch <= "ي"]
-    return text, idx, "".join(text[i] for i in idx)
+    pieces = list(_quote_pieces(text))
+    idx = [i for a, b, k in pieces for i in ([a] if len(k) == 1 else [a] * (len(k) - 1) + [b - 1])]
+    return text, idx, "".join(k for _, _, k in pieces)
 
 
 def locate(text: str, excerpt: str) -> str | None:
     """`v<vol>:p<page>` of the page an excerpt ends on (the next page marker closes it), comparing
-    letters only; None when the excerpt is not in the text."""
+    quotation keys; None when the excerpt is not in the text."""
     text, idx, flat = _indexed(text)
-    e = letters(excerpt)
+    e = quote_key(excerpt)
     k = flat.find(e)
     if k < 0:
         return None

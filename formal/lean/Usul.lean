@@ -5,6 +5,7 @@ import Usul.Grounded
 import Usul.FiniteGrounded
 import Usul.Taarud
 import Usul.Reconcile
+import Usul.Tarjih
 import Usul.Qawaid
 import Usul.Sadi
 import Usul.Schema
@@ -29,3 +30,4 @@ import Usul.Typing.Relations
 import Usul.DerivedTypes
 import Usul.Judgement
 import Usul.Typing.Answers
+import Usul.Cat

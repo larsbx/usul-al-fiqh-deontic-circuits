@@ -1,0 +1,430 @@
+{
+ "suite": "reconciliation-weighing",
+ "status": "candidate",
+ "provenance": "Batch b23: the proofs al-Mughnī and its peers cite for each position, weighed by an agent under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390, murajjiḥāt per Rawḍa and al-Kawkab); every excerpt located verbatim; qaṭʿī and ijmāʿ tiers reviewed. No human review yet.",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f000",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is a payment that discharges a binding debt, so it falls on the debtor, as when the judge pays it for him when he refuses",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p411",
+     "excerpt_ar": "ووجه الأولى، أنه قضاء مبرئ من دين واجب، فكان من ضمان من هو عليه، كالحاكم إذا قضاه عنه عند امتناعه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the riwāya giving recourse to one who guaranteed and paid without the debtor's permission and intended recourse (position 0). Aṣl: the judge's payment. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The ḥadīth of ʿAlī and Abū Qatāda, who paid a dead man's debt so that the Prophet would pray over him: had they a right of recourse, the debt would have become theirs and his dhimma would still be occupied, and the Prophet would not have prayed over him",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p411",
+     "excerpt_ar": "بدليل حديث علي وأبي قتادة، فإنهما لو كانا يستحقان الرجوع على الميت، صار الدين لهما",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the no-recourse riwāya, held also by Abū Ḥanīfa, al-Shāfiʿī and Ibn al-Mundhir (position 1). A marfūʿ report used by inference: zanni. (al-Mughnī answers that they paid as volunteers.)"
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He volunteered it, as one who feeds another's animals or slaves without his order",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p411",
+     "excerpt_ar": "ولأنه تبرع بذلك، أشبه ما لو علف دوابه وأطعم عبيده بغير أمره",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The second proof for position 1 in the same passage. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "ʿUmar's letter to al-Sāʾib b. al-Aqraʿ about the Arab captives bought by the merchants of Māh: «any free man the merchants bought, they are repaid their capital, for the free man is neither sold nor bought»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p273",
+     "excerpt_ar": "وأيما حر اشتراه التجار، فإنه يرد عليهم رءوس أموالهم، فإن الحر لا يباع ولا يشترى",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "ʿUmar gives the buyer of a free Muslim captive his outlay without asking whether the captive had permitted it: position 0. A ṣaḥābī's ruling with no ṣaḥābī reported disagreeing: fatwaSahabi. Sharḥ al-Muntahā (v01:p640) cites the same report for «ولمشتر أسيرا رجوع بثمنه»."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The captive must ransom himself to escape the unbelievers' power; when another does it for him, he must repay it, as when another pays his debt",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p640",
+     "excerpt_ar": "ولأن الأسير يلزمه فداء نفسه ليتخلص من حكم الكفار. فإذا ناب عنه غيره فيه وجب عليه قضاؤه كقضاء دينه عنه",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā's rationale for recourse with the intention of recourse, permission or none (position 0). Aṣl: paying another's debt. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He paid what was owed by another, so he has recourse against the one who owed it, as the guarantor who pays for the principal",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p116",
+     "excerpt_ar": "ولنا أنه أدى ما وجب على غيره، فكان له الرجوع على من كان الوجوب عليه، كالضامن إذا قضى عن المضمون عنه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's proof that one who spends on the foundling without the judge's order, intending recourse, has recourse (position 0), against al-Shaʿbī, Mālik, Abū Ḥanīfa and al-Shāfiʿī who make him a volunteer. Aṣl: the guarantor. Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "fatwaSahabi",
+     "dalil": "ʿUmar to Abū Jamīla about the foundling: «Go, he is free, his walāʾ is yours, and his maintenance is on us» (in a version: from the bayt al-māl)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p115",
+     "excerpt_ar": "وتجب نفقته في بيت المال؛ لقول عمر - رضي الله عنه - في حديث أبي جميلة: اذهب فهو حر، ولك ولاؤه، وعلينا نفقته",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the foundling's maintenance lying on the bayt al-māl, the basis of Aḥmad's text that the spender is repaid from the bayt al-māl (position 0's ruling as the note frames it). A ṣaḥābī's ruling, none reported disagreeing: fatwaSahabi."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Spending on him is a farḍ kifāya owed out of solidarity (muwāsāt), so the spender has no recourse, as with maintenance of a relative and hospitality to a guest",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p227",
+     "excerpt_ar": "(ولا يرجع) المنفق بما أنفقه عليه (لأنها فرض كفاية) إذا قام بها البعض سقطت عن الباقين",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf (after al-Iqnāʿ) for the gratis spending, with no recourse, when the bayt al-māl cannot pay (position 1's ruling). A stated rationale with the analogy «فهي كنفقة القريب وقرى الضيف» in the same passage: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He spent on the found animal to preserve it, so it comes out of the owner's wealth, like the cost of drying found dates and grapes",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p105",
+     "excerpt_ar": "وذلك لأنه أنفق على اللقطة لحفظها، فكان من مال صاحبها، كمؤنة الرطب والعنب",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the riwāya giving recourse, stated right after Aḥmad's naṣṣ (al-Marrūdhī) on the bird that hatched at a people's house: recourse for the feed unless he volunteered: position 0. Aṣl: the cost of drying. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He spent on another's property without his permission, so he has no recourse, as if he had built the other's house",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p105",
+     "excerpt_ar": "ولم يعجب الشعبي قضاء عمر بن عبد العزيز؛ لأنه أنفق على مال غيره بغير إذنه، فلم يرجع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The ground for the other riwāya (al-Shaʿbī, al-Shāfiʿī) denying recourse, the ruling of al-Qāḍī's takhrīj (position 1); the aṣl «كما لو بنى داره» follows. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f008",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He spent when unable to ask the owner, so it is like one unable to ask the judge: he has recourse",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v04:p441",
+     "excerpt_ar": "(والثانية) يرجع عليه لأنه أنفق عليه عند العجز عن استئذانه أشبه مالو عجز عن إستئذان الحاكم",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "al-Sharḥ al-Kabīr's ground for the riwāya giving the pledgee recourse when he cannot ask the owner (position 0). Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "He stood in for the owner in what the owner was bound to do, so the case is built on paying another's debt without permission",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p291",
+     "excerpt_ar": "يخرج على روايتين، بناء على ما إذا قضى دينه بغير إذنه؛ لأنه ناب عنه فيما يلزمه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ʿilla for treating upkeep of the pledged animal as paying the owner's debt, the basis of recourse on the madhhab (position 0). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He asked neither the owner nor one standing in his place, so he is like one who spent with the owner present without asking him: a volunteer",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v04:p441",
+     "excerpt_ar": "(إحداهما أنه متبرع لأنه لم يستأذن مالكه ولا من يقوم مقامه أشبه مالو كان المالك حاضرا فلم يستأذنه",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "The ground for the riwāya making him a volunteer without recourse (position 1). Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f009",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Rebuilding the house is not owed by the pledgor, so no one may stand in for him in what does not bind him; one who does so volunteers, unlike upkeep of an animal, which its owner owes for its own sanctity",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p291",
+     "excerpt_ar": "فليس لغيره أن ينوب عنه فيما لا يلزمه، فإن فعل كان متبرعا، بخلاف الحيوان، فإنه يجب على مالكه الإنفاق عليه، لحرمته في نفسه",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for no recourse for the pledgee who rebuilt the ruined house (position 0, «رواية واحدة»). The ʿilla (not owed by the owner) with the farq from the animal: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f011",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The cameleer left the camels knowing they must be fed: that is permission to spend on them",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p384",
+     "excerpt_ar": "أحدهما، يرجع به؛ لأن ترك الجمال مع العلم بأنها لا بد لها من نفقة إذن في الإنفاق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for recourse where the lessee spent intending recourse without the judge (position 0). A stated rationale (implied permission): qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The analogy of the madhhab: recourse is given for spending on the runaway slave, on an absent man's dependants and wives, and on the pledged animal",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p384",
+     "excerpt_ar": "وقياس المذهب أن له الرجوع؛ لقولنا: يرجع بما أنفق على الآبق، وعلى عيال الغائب وزوجاته، والدابة المرهونة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's own preference for recourse (position 0) by analogy with established aṣl. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "He would be establishing for himself a claim against another (on his own word)",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p384",
+     "excerpt_ar": "والثاني لا يرجع به؛ لأنه يثبت لنفسه حقا على غيره",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The ground for the wajh denying recourse (position 1). A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f001",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "aqrabSahabi",
+     "dalil": "ʿAlī: «No one divorces according to the sunna and then regrets it» (al-Athram), with Ibn Sīrīn's report from him that God's ordained divorce is one pronouncement, then leaving her until three menstruations pass, taking her back if he wishes; Ibn Masʿūd likewise via Ibn ʿAbd al-Barr",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p365",
+     "excerpt_ar": "ولنا، ما روي عن علي - رضي الله عنه - أنه قال: لا يطلق أحد للسنة فيندم",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited by al-Mughnī for the Ḥanbalī view that following one divorce with another in later ṭuhrs before rajʿa is not the sunna (i.e. bidʿa, position 0). A ṣaḥābī's view; the same page reports Ibn Masʿūd (via al-Nasāʾī) for divorcing once in each ṭuhr, so the ṣaḥāba are reported to disagree: aqrabSahabi."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Following a divorce with another without an intervening rajʿa is like joining the three in one ṭuhr: it is not the sunna; and it brings about a prohibition (needing another husband) without need",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p366",
+     "excerpt_ar": "ولأن ما ذكروه إرداف طلاق من غير ارتجاع، فلم يكن للسنة، كجمع الثلاث في طهر واحد",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The stated ʿilla (irdāf ṭalāq min ghayr irtijāʿ) with the aṣl 'joining three in one ṭuhr': for position 0 on exactly these facts (the rajʿiyya divorced again in her ʿidda). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "zanni",
+     "dalil": "The Prophet's words in Ibn ʿUmar's other ḥadīth: «the sunna is that he awaits the ṭuhr and divorces for each qurʾ»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p365",
+     "excerpt_ar": "وقوله في حديثه الآخر: \" والسنة أن يستقبل الطهر، فيطلق لكل قرء \"",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited by Abū Ḥanīfa, al-Thawrī and the Kūfans for one divorce in each qurʾ being the sunna, i.e. divorcing the rajʿiyya again in her ʿidda is not bidʿa: the ruling of position 1 (a non-Ḥanbalī holder of the same ruling). A marfūʿ āḥād report as the source gives it (al-Mughnī reads it as after a rajʿa): zanni."
+    },
+    {
+     "position": 1,
+     "tier": "aqrabSahabi",
+     "dalil": "Ibn Masʿūd (al-Nasāʾī with his isnād): the sunna divorce is one pronouncement in a ṭuhr without intercourse; when she menstruates and becomes pure, another; then another",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p365",
+     "excerpt_ar": "وروى النسائي بإسناده عن عبد الله، قال: طلاق السنة أن يطلقها تطليقة، وهي طاهر، في غير جماع",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Cited for the Kūfan view that a further divorce in each later ṭuhr of the ʿidda is sunna (position 1's ruling). ʿAlī is reported on the other side (and Ibn Masʿūd himself in another report), so: aqrabSahabi."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f002",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "She is a wife to whom his divorce attaches, so his ilāʾ from her is valid, as from a wife not divorced",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p548",
+     "excerpt_ar": "ولنا، أنها زوجة يلحقها طلاقه، فصح إيلاؤه منها، كغير المطلقة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's own proof for the validity of ilāʾ from the rajʿiyya (position 0, also the view of Mālik, al-Shāfiʿī and the Ḥanafīs). Aṣl: the undivorced wife; ʿilla: being a wife whom his divorce reaches. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Divorce cuts off the ilāʾ period when it supervenes, so a fortiori it prevents the ilāʾ from being validly contracted in the first place",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p548",
+     "excerpt_ar": "وذكر ابن حامد، أن فيه رواية أخرى، أنه لا يصح إيلاؤه؛ لأن الطلاق يقطع مدة الإيلاء إذا طرأ، فلأن يمنع صحته ابتداء أولى",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The rationale Ibn Ḥāmid gives for the riwāya that ilāʾ from the rajʿiyya is invalid (position 1). An a fortiori analogy from the supervening divorce: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f003",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "It is a state in which her choosing to annul is valid, so her choosing to remain is valid too, as within an intact marriage",
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v03:p047",
+     "excerpt_ar": "وإن اختارت المقام معه بطل خيارها؛ لأنها حالة صح منها اختيار الفسخ، فصح اختيار المقام، كصلب النكاح",
+     "who": "Ibn Qudāma, al-Kāfī",
+     "note": "Ibn Qudāma's proof in al-Kāfī that the freed rajʿiyya's choice to stay is effective and voids her option (position 0). Aṣl: the subsisting marriage; ʿilla: a state in which faskh is valid. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "She is running toward separation (her ʿidda is ending in bayn), so her choosing to remain has no effect",
+     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v07:p560",
+     "excerpt_ar": "فإن اختارت المقام فهل يبطل خيارها؟ على وجهين) (أحدهما) لا يبطل وهو قول الشافعي لأنها جارية إلى بينوته",
+     "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+     "note": "The ground al-Sharḥ al-Kabīr gives for the wajh (also al-Shāfiʿī's view) that her choice during the ʿidda does not void her option: position 1. A stated rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f004",
+   "proofs": [],
+   "advantages": [],
+   "searched": "al-Mughnī v07:p516–518 (conditions for the thrice-divorced woman to become lawful to the first husband), v07:p532–533 and v08:p127–128 (intercourse with the rajʿiyya in the ʿidda); al-Sharḥ al-Kabīr v08:p481–482, v09:p142; al-Mubdiʿ v06:p420; al-Kāfī v03:p150–151; Kashshāf; regex searches for the khalwa-ʿidda intercourse with taḥlīl («يحلها», «الخلوة … لزوجها الأول»). None argues whether intercourse in an ʿidda established by khalwa makes her lawful to the first husband; only al-Inṣāf (v09:p166) records the two riwāyas and al-Mardāwī's «الصواب أنه يحلها» without a proof."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f005",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "She is in the ruling of wives in lodging, maintenance, divorce, ẓihār, ilāʾ and (on one riwāya) lawfulness, so the child is attached as before the divorce",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p081",
+     "excerpt_ar": "والثانية، يلحقه؛ لأنها في حكم الزوجات في السكنى والنفقة والطلاق والظهار والإيلاء والحل، في رواية، فأشبه ما قبل الطلاق",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's ground for the riwāya attaching the child born more than four years after a revocable divorce but within four years of the ʿidda's end (position 0). Aṣl: the time before divorce. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "She conceived after his divorce, not before it, so she resembles the irrevocably divorced woman, whose child is not attached",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p081",
+     "excerpt_ar": "ففيه روايتان: إحداهما - لا يلحقه؛ لأنها لم تعلق به قبل طلاقها، فأشبهت البائن",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The ground for the other riwāya (position 1) on the same facts. Aṣl: the bāʾin. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f006",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "She is a divorcée, so her right of custody returns as for the irrevocably divorced woman",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p248",
+     "excerpt_ar": "ولنا، أنها مطلقة، فعاد حقها من الحضانة، كالبائن",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's proof (with al-Shāfiʿī) that the mother's custody returns on a revocable divorce at once (position 0, ruling false: not as while a wife). Aṣl: the bāʾin. Qiyas."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Though still a wife, he has removed her from his bed: she has no turn with him nor is she occupied with him, and the cause of the marriage's end is in place, so she resembles the bāʾin in her ʿidda",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p248",
+     "excerpt_ar": "إلا أنه قد عزلها عن فراشه، ولم يبق لها عليه قسم، ولا لها به شغل، وعقد سبب زوال نكاحها، فأشبهت البائن في عدتها",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's answer to 'she is a wife', stating the operative ʿilla (no occupation with the husband) for the custody's return during the ʿidda: position 0. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "The marriage subsists, so it is as if she were still in the marriage: custody does not return before the ʿidda ends",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p248",
+     "excerpt_ar": "إن كان الطلاق رجعيا، لم يعد حقها؛ لأن الزوجية قائمة، فأشبه ما لو كانت في صلب النكاح",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The proof of Abū Ḥanīfa and al-Muzanī, non-Ḥanbalī holders of position 1's ruling; al-Mughnī immediately says the same is extracted in the madhhab («ويخرج عندنا مثل قولهما»). Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "Takhrīj: a marriage removes custody even before consummation, while there is no turn or occupation with the husband, so the subsisting marriage of the rajʿiyya should do so too",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p248",
+     "excerpt_ar": "ويخرج عندنا مثل قولهما، لكون النكاح قبل الدخول مزيلا لحق الحضانة، مع عدم القسم والشغل بالزوج",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's own extraction of position 1 in the madhhab: it undercuts the 'no occupation' ʿilla by the unconsummated marriage. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f007",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "She is a wife and so falls under the generality of «Those of you who die and leave wives» (al-Baqara 234)",
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v07:p076",
+     "excerpt_ar": "استأنفت عدة الوفاة من حين موته) لأنها زوجة فتدخل في عموم قوله تعالى: {والذين يتوفون منكم}",
+     "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+     "note": "al-Mubdiʿ's proof that the rajʿiyya moves to the ʿidda of death (position 0). The āya reaches her by its generality, not explicitly: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "Ibn al-Mundhir: «all from whom we have preserved anything among the people of knowledge agreed on it»",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p116",
+     "excerpt_ar": "استأنفت عدة الوفاة، أربعة أشهر وعشرا، بلا خلاف. وقال ابن المنذر أجمع كل من نحفظ عنه من أهل العلم على ذلك",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "An ijmāʿ reported by a single transmitter, and contradicted by the reported riwāya that she observes the longer term (al-Mubdiʿ «وعنه: تعتد أطول الأجلين»): per the rules, zanni, not ijma."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "The rajʿiyya is a wife whom his divorce reaches and who inherits from him, so she observes the ʿidda of death like an undivorced wife",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p116",
+     "excerpt_ar": "وذلك لأن الرجعية زوجة يلحقها طلاقه، وينالها ميراثه، فاعتدت للوفاة، كغير المطلقة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "al-Mughnī's rationale for position 0. Aṣl: the undivorced wife. Qiyas."
+    }
+   ],
+   "advantages": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f008",
+   "proofs": [
+    {
+     "position": 0,
+     "tier": "zanni",
+     "dalil": "«Do not turn them out of their houses, nor shall they go out» (al-Ṭalāq 1)",
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p435",
+     "excerpt_ar": "(وحكم الرجعية في العدة حكم المتوفى عنها في لزوم المنزل) وقوله تعالى {لا تخرجوهن من بيوتهن ولا يخرجن}",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Kashshāf cites the āya for the rajʿiyya's duty to keep to her home (position 0). The āya forbids divorced women in ʿidda going out but does not state explicitly that the husband's leave cannot lift it: zanni."
+    },
+    {
+     "position": 0,
+     "tier": "qiyas",
+     "dalil": "Keeping to the home is one of the rights of the ʿidda, which is God's right, so the husband cannot waive any of its rights, as he cannot waive the ʿidda itself; hence it holds whether or not he permits her to go out",
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p206",
+     "excerpt_ar": "وسواء أذن لها المطلق في الخروج أو لا ; لأنه من حقوق العدة وهي حق لله تعالى فلا يملك الزوج إسقاط شيء من حقوقها",
+     "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+     "note": "Sharḥ al-Muntahā's rationale, aimed exactly at the point in dispute (the husband's leave), for position 0. Qiyas."
+    },
+    {
+     "position": 1,
+     "tier": "qiyas",
+     "dalil": "In the rajʿī ʿidda the woman is as she is within the marriage, because she is a wife",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p232",
+     "excerpt_ar": "وأما عدة الرجعية، فالمرأة فيه بمنزلتها في طلب النكاح، لأنها زوجة",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "Said in al-Mughnī of going out for the ḥajj during the ʿidda (contrasted with the widow, who must keep to her home): the rajʿiyya is treated as a wife, whose going out depends on the husband. It supports position 1's ruling on going out, though in the ḥajj context rather than going about generally. A rationale: qiyas."
+    }
+   ],
+   "advantages": []
+  }
+ ]
+}

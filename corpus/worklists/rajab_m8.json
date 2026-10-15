@@ -11,7 +11,7 @@
     "bytes": 1660710
   },
   "input_sha256": {
-    "registry.json": "243124869e6ba32e09d7e62c826f2c4357ceda1a43d7d0b7dfb6c1ac1cae0980",
+    "registry.json": "576861287ae5541c01bc9c7998acee1d4ad5cbcc3b8a1c2f78f9c03bfc2e6dd2",
     "lock.json": "d93b3b2763061a7eef5c10d935b2603118fd78aced53e78881841900d4926219",
     "records/openiti-rajab-shamela21730.jsonl": "3ec424ea5e677a4bdaad4ce68295d411f0ea64bf3e4fe608781a60f36c835ca0",
     "takhrij/dalala_furu.json": "9f3591e7bc77c8a4302d6ef3af3e6237f9e05ff7276ccd036ea8939c46e1a4e8",
@@ -54,7 +54,7 @@
     "takhrij/rajab_m8_tranche7_furu.json": "1a11a26a6765c2e4abd93daf2bc7cb45f84aeeea5e79c6a8b6e1b3da83c6ec76",
     "takhrij/rajab_m8_tranche8_furu.json": "3931bd2b0415488c1f33f27da28d1f164c8355cbd2029d084eac7d374e8f05ee",
     "takhrij/rajab_m8_tranche9_furu.json": "65d72a6ad2b11ccfee124b7f7ea6449a412ceb430322e62567395335abb6c8e0",
-    "takhrij/sadi_furu.json": "bc25b22a9d6b49385c2c686d54b1ca223a8557f246d317c2d3cfb3814177f2bc"
+    "takhrij/sadi_furu.json": "77416f91c9861af89ae974759ade551cec62894c774f14519438e902ed3c8c08"
   },
   "summary": {
     "qawaid": 160,

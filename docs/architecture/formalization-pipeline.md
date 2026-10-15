@@ -47,7 +47,7 @@ Each witness is pinned: the OpenITI ones by commit SHA, the others by Shamela bo
 | 23 classical works on qiyās (8 Ḥanbalī, 13 other madhhabs, Ibn Ḥazm against) | OpenITI, pinned commits | located and fetched; see [`qiyas.md`](qiyas.md#sources) |
 | 49 fatāwā, masāʾil and aḥkām collections cited by Ibn Bāz, Ibn ʿUthaymīn, al-Albānī and al-Saʿdī (52 with three already registered), plus 8 of their own collections as citers (9 with *al-Sharḥ al-Mumtiʿ*) | OpenITI (pinned commits) and Shamela | located and fetched; titles and authors counted; see [`reception.md`](reception.md); mentions labelled for a classifier, see [`mentions.md`](mentions.md) |
 
-**Rights policy.** Full texts are fetched into `.cache/`. Text witnesses of public-domain works (`rights: public_domain_text`, 91) and of modern works cleared for non-commercial study (`rights: noncommercial_text`) are also committed under [`corpus/texts`](../../corpus/texts/README.md) via Git LFS, byte-identical to their pinned source; cleared texts must not be reproduced commercially, and pdf and doc witnesses are not committed. Committed records carry excerpts of at most 400 characters for pre-modern texts and at most 160 characters for modern authors (`records.EXCERPT_LEN`).
+**Rights policy.** Work-level rights do not grant blanket publication rights for modern editions. Full texts remain in `.cache/corpus` unless eligible under `texts.publishable`. The existing registry now holds byte-bound, per-witness publication decisions; noncommercial intent alone is insufficient, and a cache-only hold overrides work labels. The PR #88 audit holds 36 noncommercial text witnesses and two newly added modern-edition al-Shawkānī witnesses; 89 legacy files remain committed via Git LFS. Pointer oid/size validation is distinct from complete-object hashing (`make texts-verify-bytes`). See the [publication policy](../../corpus/texts/README.md) and [audit](pr88-source-publication-audit-2026-10-15.md). Existing excerpt caps remain 400 characters for pre-modern works and 160 for modern works; caps are project controls, not a universal permission to quote.
 
 ## 2. Rule counts checked against pinned editions (M0 exit)
 
@@ -100,6 +100,8 @@ Known extraction defect: h014 is labelled «فمن المخصص المتصل» b
 | `Usul.Muamalat` | al-Saʿdī's transaction rules over a small model of possession, liability and contract: `q10` (burden of proof), `q12_*` (mutual consent, via Q8's gate), `q13_q36_consistent` (strict liability for destruction applies exactly to destruction without right), `q14_*` (trustee vs. wrongdoer), `q18`/`q19` (compensation in kind or value), `q21_forbidden_iff` (gharar), `q24_first_has_priority` and `q37_strongest_prevails` (both instances of Q33's `best`), `q26_q43_consistent`, `q46_never_more_than_due`, `q49`, `q53_distinction`, `q54`–`q56`; co-ownership and motive: `q30_*`, `q32_*` (recourse, unless given as a gift), `q42_instance_of_q21`, `q45_*` (knowledge required only where consent is), `q51_valid_iff`, `q51_q54_consistent` |
 | `Usul.Kulliyyat` | the general maxims: `q05_both_foundations` (sincerity ∧ following, via Q8's gate); `q09_*` (custom fills undefined measures); `q15_*`; `q17_*`; `q29_attach_narrows` (qualifiers only narrow); `q31_each_cause_its_effect`; `q34_best_admissible` (Q33's `best` discharges a guardian's choice); `q39_*` (after the cause, before the condition); `q41_*` (merging of like worship); `q48_custom_monotone`; `q50_*`; `q57_*` (intent read where possible) |
 | `Usul.Qawaid` | `yaqin_la_yazul_bish_shakk`, `update_grade_mono`, `closure_respects_capacity` (*mā lā yatimm al-wājib…* is consistent with *lā wājib maʿa ʿajz*), `darura_bounded` |
+| `Usul.Typing.Qaida` / `Usul.Typing` / `Usul.Judgement` | **types, defined by the qawāʿid**: one structure per qāʿida with exactly the facts it states, `Situation` their join, encoders as `Typed S O` (`proj_embed`), and the judgement form with each encoder's question (see [`judgement.md`](judgement.md)) |
+| `Usul.Cat` | **categories, downstream of the types** (`Usul.Cat.Typing`: L-QIY-1 over typed encoders, the category of typed encoders; the stack is pinned by `test_layers.py`): scales, qiyās as factorization, gluing and obstruction, institutions across carriers (see [`category-theory.md`](category-theory.md)) |
 | `UsulTest` | 47 shared grounded-extension vectors checked with `#guard`; Σ-map and catalogue constants checked with `#check`; every catalogue schema tag pinned by a typed `example` (`Schemata.lean`) |
 
 ### TLA+ (`formal/tla`, TLC, bounded)
@@ -127,15 +129,58 @@ Each invariant was mutation-checked once: a seeded bug in the spec makes TLC rep
 
 ### Required source replay (PR-06)
 
-`make source-verify-fetch` restores/downloads the reconciliation witness subset
-from the existing registry and checks complete source hashes, Arabic quotations,
+`make source-verify-fetch` restores/downloads the required witnesses (the
+reconciliation subset and every witness of the textual foundation,
+`nusus.witnesses`) from the existing registry and checks complete source hashes, Arabic quotations,
 closing-page locators and immediate qualifier boundaries. `make source-verify`
 runs the same gate without network fetching; `make all` includes it. Neither
 command creates or updates a source lock. A missing required witness is an error,
-including in `test_reconcile.py` and the required witness-integrity tests.
+including in `test_reconcile.py`, `test_nusus.py` and the required witness-integrity tests.
+With `--fetch-source`, a cached file whose bytes differ from its lock (a CI cache
+of an earlier pin) is fetched again; without it, that file fails. CI caches
+`.cache/corpus` across runs, so al-Albānī's Irwāʾ (scraped from Shamela page by
+page) is fetched once, resuming from its `.part` checkpoint if a run stops; a
+checkpoint resumes only under the pin it was started for (`.part.pin`).
+
+Tests that need SWI-Prolog or the IslamQA answers (Git LFS) take the `swipl` and
+`islamqa_answers` fixtures (`pipeline/tests/conftest.py`): skipped where absent,
+a failure where `USUL_REQUIRE` names them. CI sets `USUL_REQUIRE=swipl,islamqa`,
+installs SWI-Prolog in the corpus job and pulls (then caches) the one LFS file.
+
+The same job also runs two focused integration gates on Ubuntu 24.04 with
+`swi-prolog-nox` (SWI 9+; locally replayed with 9.0.4):
+
+- `make integration` replays the committed oracle cases/report, classical typed
+  routing reports, proposals, generated Prolog situations and routing index. It
+  needs no downloaded witness or IslamQA archive. Only tests marked
+  `external_source` are deselected, explicitly, rather than skipped.
+- `make integration-external` runs those external-source checks after the LFS
+  fetch: IslamQA typed/lexical routing reports and post-hoc fact quotations.
+  The answers fixture checks the existing `signature_routing.ANSWERS_SHA256`
+  pin, including on cache hits. A pointer, absent archive or wrong hash fails.
+
+Both invoke pytest's `--integration-gate`: a bounded SWI startup/JSON goal must
+succeed, and any collection, setup or test skip fails the gate. No tests
+collected also fails. Subprocess regressions exercise missing/broken/no-op
+runtimes, unexpected skips, missing/corrupt external data and explicit external
+deselection. JUnit reports are retained as `.cache/integration-committed.xml`
+and `.cache/integration-external.xml`. Existing equality tests compare the
+reconstructed artifacts with the committed files; these targets do not rewrite
+reports. Oracle replay retains the original first-run snapshots, fitted
+IslamQA results and classical held-out results as distinct report fields.
+
+These integration checks do not replace `source-verify-fetch`, foundation
+verification or the full corpus suite. Optional source exclusions in that full
+suite remain separately reported; they cannot hide skips in either integration
+gate.
+
+Quotations compare `arabic.quote_key`: Arabic letters plus each standalone
+numeral (any digit script), so a changed or dropped number fails. Page markers and
+footnote anchors (digits glued to the preceding word, `العلماء1`, or `(¬7)`) are markup and
+carry no key.
 
 CI uploads `.cache/source-verification.json` and `.cache/corpus-tests.xml` even on
 failure. Read the verified/failed/excluded coverage and pytest skip reasons;
-green required-subset replay does not certify the excluded sources, foundation
-numbering checks, semantic adequacy, or independent scholarly review. See the
+green required-subset replay does not certify the excluded sources, semantic
+adequacy, or independent scholarly review. See the
 [PR-06 log](../problem-register.md) for scope, source corrections and limitations.

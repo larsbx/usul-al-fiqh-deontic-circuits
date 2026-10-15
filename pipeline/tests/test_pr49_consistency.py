@@ -35,16 +35,15 @@ def test_pr49_resolved_cases_retain_positions_sources_and_guards():
         rulings = [p["ruling"] for p in case["positions"]]
         assert rulings == (["neither", "lot", "each", "abstain"] if far.endswith("f001") else ["neither", "lot", "abstain"])
         assert len(entry["grades"]) == len(rulings)
-        assert reconcile.resolve(case, entry) == ("tarjih", "abstain")
-        assert reconcile.standing(case, entry) == "for_reading"
+        assert reconcile.attribution(case, entry) == ("tarjih", "abstain")  # the labels' record; unweighed by proof
+        assert reconcile.attribution_standing(case, entry) == "for_reading"
         assert far not in active and far not in candidates
         assert far in takhrij.lean_file([case])
         assert "#guard (Usul.Refinements.attachTo false) == .abstain" in takhrij.lean_file([case])
         assert far not in reconcile.lean_file(cases, ledger)
         # Changing only the expected reading back recreates the original residue.
         old = {**case, "expected": "neither", "matches_madhhab": False}
-        assert reconcile.standing(old, entry) == "against_reading"
-        assert reconcile.candidates([old]) == [old]
+        assert reconcile.attribution_standing(old, entry) == "against_reading"
     # The harmless purification case was a distinct residue; PR-28 closed it by jamʿ
     # (`cause_on_certainty`), and its pre-jamʿ reading still stands against the evidence.
     far = PREFIX + "q014.f000"
@@ -53,7 +52,7 @@ def test_pr49_resolved_cases_retain_positions_sources_and_guards():
     assert reconcile.resolve(by[far], entry) == ("jam", "neither")
     assert reconcile.standing(by[far], entry) == "for_reading"
     pre = {**by[far], "encoder": "cause_from_one_of_two", "expected": "each", "matches_madhhab": False}
-    assert reconcile.standing(pre, {k: v for k, v in entry.items() if k != "jam"}) == "against_reading"
+    assert reconcile.attribution_standing(pre, {k: v for k, v in entry.items() if k != "jam"}) == "against_reading"
 
 
 def test_pr49_tranche_and_current_generated_reports_are_consistent():
