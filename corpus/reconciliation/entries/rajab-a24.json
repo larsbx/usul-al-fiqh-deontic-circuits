@@ -1,0 +1,414 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f001",
+      "grades": [
+        "jazm",
+        [
+          "ashab",
+          "takhrij"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Halving by a divorce suspended on her own act is the aṣḥāb's, labelled «الصحيح من المذهب» in al-Inṣāf and stated in al-Iqnāʿ and Sharḥ al-Muntahā, against Taqī al-Dīn and Ibn Rajab's takhrīj.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p278",
+          "excerpt_ar": "وكذا تعليق طلاقها على فعلها، وتوكيلها فيه، ففعلته فيهما. على الصحيح من المذهب. وعليه الأصحاب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "He then reports Taqī al-Dīn's «فلا مهر لها» and «وقواه صاحب القواعد»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p219",
+          "excerpt_ar": "تنصف المهر وتجب بها المتعة لغير من سمى لها وكذا تعليق طلاقها على فعلها وكذا توكيلها في ففعلته",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn, then citing Taqī al-Dīn's dissent."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p021",
+          "excerpt_ar": "لأنه إنما يتم بجواب الزوج وكذا لو علق طلاقها على فعلها شيئا ففعلته.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ of the khulʿ clause, extending halving to a divorce suspended on her act."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f002",
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        [
+          "wajh",
+          "takhrij"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Khulʿ halves: Aḥmad's naṣṣ, labelled «وهو الصحيح» in Taṣḥīḥ al-Furūʿ and stated in al-Muntahā and al-Iqnāʿ «ولو بسؤالها», against the wajh that it drops.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p334",
+          "excerpt_ar": "أحدهما: يتنصف، وهو الصحيح، وهو ظاهر ما قطع به في الشرح وشرح ابن منجى وغيرهما",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+          "note": "Masʾala 19 of al-Furūʿ, «إذا تخالعا»."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p151",
+          "excerpt_ar": "ويتنصف بشرائها زوجها وفرقة من قبله كطلاقه وخلعه ولو بسؤالها وإسلامه ما عدا مختارات من أسلم",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The matn: halved by every separation from him, his khulʿ included even at her request."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p219",
+          "excerpt_ar": "وكل فرقة جاءت من قبل الزوج قبل الدخول كطلاقه وخلعه ولو بسؤالها وإسلامه وردته أو من أجنبي كرضاع ونحوه تنصف المهر",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f003",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "His Islam halves: the madhhab per al-Inṣāf «وعليه جمهور الأصحاب», stated in Sharḥ al-Muntahā, against the other riwāya.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p211",
+          "excerpt_ar": "وإن أسلم قبلها، فلها نصف المهر) هذا المذهب. وعليه جمهور الأصحاب أيضا. قاله في الفروع.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "He then gives «وعنه: لا شيء لها» and his own «قلت: وهو الصواب»."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p021",
+          "excerpt_ar": "(و) ك (إسلامه) أي: الزوج إن لم تكن كتابية (ما عدا مختارات من أسلم)",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Sharḥ of the matn's halving clause."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f008",
+      "grades": [
+        "nass",
+        [
+          "nass",
+          "ashab"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Her Islam drops it: Aḥmad's naṣṣ, labelled «هذا المذهب» in al-Inṣāf and stated in Sharḥ al-Muntahā, against the riwāya Abū Bakr chose.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p211",
+          "excerpt_ar": "فإن كانت هي المسلمة: فلا مهر لها) . هذا المذهب. نص عليه. وعليه جماهير الأصحاب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "He then reports «وعنه: لها نصف المهر. اختاره أبو بكر»."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p020",
+          "excerpt_ar": "(أو) فرقة (من قبلها كإسلامها تحت كافر) قبل دخول.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "Among the separations that drop the whole mahr."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f010",
+      "grades": [
+        "jazm",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Her annulment for his defect drops it: the aṣḥāb, «بلا خلاف في المذهب» in al-Inṣāf and stated in al-Muntahā, against Taqī al-Dīn's inference and Ibn Muflih's tawjīh.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p280",
+          "excerpt_ar": "وأما فسخها لعيبه، وفسخه لعيبها: فإن ذلك يسقط مهرها بلا خلاف في المذهب، إلا توجيه لصاحب الفروع.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The exception is Ibn Muflih's tawjīh, entered on the other side."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p331",
+          "excerpt_ar": "وبكل فرقة منها مطلقا، وعنه: يتنصف بفسخها لشرط، فيتوجه في فسخها لعيبه.",
+          "position": 1,
+          "grade": "takhrij",
+          "who": "Ibn Muflih, al-Furūʿ",
+          "note": "Ibn Muflih carries the riwāya for a lapsed condition over to her annulment for his defect."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p150",
+          "excerpt_ar": "ورضاعها من ينفسخ به نكاحها وفسخها لعيبه أو إعساره أو عدم وفائه بشرط",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The matn, among the separations that drop the whole mahr."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f012",
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        [
+          "nass",
+          "ashab"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The freed slave-woman's annulment drops it: «هذا المذهب» in al-Inṣāf with al-Khiraqī's jazm, and stated in al-Iqnāʿ, against Muhannā's riwāya and Abū Bakr.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p182",
+          "excerpt_ar": "وإن كان قبله فلا مهر) . هذا المذهب. جزم به الخرقي، وصاحب الوجيز، والمنور",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "He then reports Abū Bakr's half for the master, a riwāya Muhannā transmitted."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p220",
+          "excerpt_ar": "وفسخها لعيبه وبإعساره بمهر أو نفقة أو غيرهما أو لعتقها تحت عبد",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn, among the separations that drop the mahr."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f013",
+      "grades": [
+        "takhrij",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Liʿān drops the mahr: «وهو المذهب» in al-Inṣāf, «وهو الصحيح» in Taṣḥīḥ al-Furūʿ, stated in Kashshāf; the halving the reading's pinned side gives is only al-Mardāwī's «وهو قوي». Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p281",
+          "excerpt_ar": "إحداهما: يسقط بها المهر. وهو المذهب. صححه في التصحيح، وتصحيح المحرر، والنظم وغيرهم.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ «وفرقة اللعان تخرج على روايتين»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p150",
+          "excerpt_ar": "(وفرقة اللعان تسقط كل المهر) لأن الفسخ من قبلها",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The matn and sharḥ: the annulment is from her."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p332",
+          "excerpt_ar": "واختاره أبو بكر وغيره. والرواية الثانية: يتنصف بها المهر، وهو قوي.",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+          "note": "al-Mardāwī's assessment of the other riwāya."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f014",
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        [
+          "wajh",
+          "takhrij"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Khulʿ halves: Aḥmad's naṣṣ with al-Qāḍī and his companions, labelled «وهو الصحيح» in Taṣḥīḥ al-Furūʿ, al-Muqniʿ's jazm in al-Inṣāf, stated in al-Iqnāʿ; against the wajh and the takhrīj.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p334",
+          "excerpt_ar": "إذا تخالعا فهل يسقط المهر كله أو يتنصف؟ أطلق الخلاف فيه، وأطلقه في المحرر والرعايتين والحاوي الصغير وغيرهم: أحدهما: يتنصف، وهو الصحيح",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+          "note": "Masʾala 19."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p278",
+          "excerpt_ar": "أما إذا خالعها: فجزم المصنف بأنه يتنصف به؛ لأنه من قبله. وهو أحد الوجهين.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Muqniʿ's jazm, a muʿtamad matn."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p219",
+          "excerpt_ar": "وكل فرقة جاءت من قبل الزوج قبل الدخول كطلاقه وخلعه ولو بسؤالها وإسلامه وردته أو من أجنبي كرضاع ونحوه تنصف المهر",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn: «ولو بسؤالها»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f015",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Her buying her husband halves it: «وهو المذهب» in al-Inṣāf and «وهو الصحيح» in Taṣḥīḥ al-Furūʿ, stated in al-Iqnāʿ, against the bare second wajh.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p281",
+          "excerpt_ar": "إحداهما: يتنصف بها المهر. وهو المذهب. صححه في التصحيح، وتصحيح المحرر. وجزم به في الوجيز.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ «وفي فرقة بيع الزوجة من الزوج، وشرائها له: وجهان»."
+        },
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p333",
+          "excerpt_ar": "إحداهما: يتنصف به المهر، وهو الصحيح، صححه في التصحيح وتصحيح المحرر",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+          "note": "Masʾala 17, «إذا اشترت زوجها»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p220",
+          "excerpt_ar": "ويتنصف بشراء زوج لزوجته ولو من مستحق مهرها وبشرائها له",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f016",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Her yielding herself to the husband's father or son: al-Qāḍī and those who follow him drop the mahr; the halving is one wujūh of Taqī al-Dīn's takhrīj. No later treatment of these facts found; by the grade order the drop prevails, against the reading.",
+      "evidence": []
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f017",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The excess wives of a convert get nothing: al-Qāḍī, al-Mughnī and al-Muḥarrar, stated in al-Muntahā and Sharḥ al-Muntahā, against Ibn Rajab's takhrīj.",
+      "evidence": [
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p021",
+          "excerpt_ar": "(ما عدا مختارات من أسلم) للفراق مما زاد على أربع أو من نحو أختين أسلم عليهما",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "The sharḥ: those chosen for separation are excepted from halving."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p151",
+          "excerpt_ar": "كطلاقه وخلعه ولو بسؤالها وإسلامه ما عدا مختارات من أسلم وردته، وشرائه إياها",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f018",
+      "grades": [
+        [
+          "takhrij",
+          "zahir"
+        ],
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Half by lot is «الصحيح من المذهب» in al-Inṣāf, stated in Kashshāf and al-Muntahā, against Abū Bakr's second tawjīh and the riwāya Ibn ʿAqīl reports. Against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p124",
+          "excerpt_ar": "فعلى المذهب: يلزم أحدهما نصف المهر، يقترعان عليه. على الصحيح من المذهب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of two sisters in two contracts, the first unknown, annulled before consummation."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p124",
+          "excerpt_ar": "وذكر ابن عقيل رواية: لا يلزمه؛ لأنه مكره. واختاره أبو بكر.",
+          "position": 1,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf (Ibn ʿAqīl's riwāya)",
+          "note": "The riwāya Ibn ʿAqīl reports, with Abū Bakr's choice."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p075",
+          "excerpt_ar": "فعليه لإحداهما نصف المهر) لأن نكاح واحدة منهما صحيح وقد فارقها قبل الدخول",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The sharḥ, half by lot."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p088",
+          "excerpt_ar": "وفي زمنين يبطل متأخر فقط كواقع في عدة الأخرى ولو بائنا فإن جهل فسخا ولإحداهما نصف مهرها بقرعة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The matn."
+        }
+      ]
+    }
+  ]
+}
