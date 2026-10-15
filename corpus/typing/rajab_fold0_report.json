@@ -3,21 +3,21 @@
   "status": "candidate",
   "set": "rajab_fold0",
   "method": "blind typing into Usul.Typing situations; Prolog routing by coverage of each encoder's fields",
-  "answers": 157,
-  "situations": 206,
-  "fields_stated": 227,
+  "answers": 179,
+  "situations": 232,
+  "fields_stated": 259,
   "cases": 179,
   "encoders": 191,
   "applies": 0.3855,
   "recall": {
-    "1": 0.4916,
-    "5": 0.6369,
-    "10": 0.6369
+    "1": 0.514,
+    "5": 0.6872,
+    "10": 0.6872
   },
   "recall_with_named_rules": {
-    "1": 0.4916,
-    "5": 0.6369,
-    "10": 0.6369
+    "1": 0.514,
+    "5": 0.6872,
+    "10": 0.6872
   },
   "lexical_recall": {
     "1": 0.581,
@@ -25,8 +25,8 @@
     "10": 0.8771
   },
   "hybrid_recall": {
-    "1": 0.6983,
-    "5": 0.9274,
+    "1": 0.6704,
+    "5": 0.9218,
     "10": 0.9497
   },
   "hybrid": "types first: encoders by the share of their fields the situation settles, lexical rank breaking ties and ordering the rest",
@@ -35,8 +35,8 @@
     "5": 0.1453,
     "10": 0.2291
   },
-  "encoders_applying_per_answer": 0.61,
-  "encoders_touched_per_answer": 1.16,
+  "encoders_applying_per_answer": 0.55,
+  "encoders_touched_per_answer": 1.18,
   "by_encoder": {
     "advance_after_cause": {
       "cases": 1,
@@ -101,8 +101,8 @@
     "bain_in_idda_as_wife": {
       "cases": 1,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 1
+      "top5": 1,
+      "unrouted": 0
     },
     "benefit_exception": {
       "cases": 1,
@@ -173,8 +173,8 @@
     "craft_capacity_is_wealth": {
       "cases": 1,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 1
+      "top5": 1,
+      "unrouted": 0
     },
     "custom_restricts_general": {
       "cases": 3,
@@ -407,14 +407,14 @@
     "qawad_choice_forfeits_attached_right": {
       "cases": 6,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 6
+      "top5": 5,
+      "unrouted": 1
     },
     "rajiyya_takes_wife_rule": {
       "cases": 2,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 2
+      "top5": 2,
+      "unrouted": 0
     },
     "recourse": {
       "cases": 5,
@@ -1495,8 +1495,8 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f002",
       "encoder": "craft_capacity_is_wealth",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.3333,
+      "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f001",
@@ -1549,14 +1549,14 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f002",
       "encoder": "qawad_choice_forfeits_attached_right",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 3
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f003",
       "encoder": "qawad_choice_forfeits_attached_right",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f004",
@@ -1567,20 +1567,20 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f007",
       "encoder": "qawad_choice_forfeits_attached_right",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f008",
       "encoder": "qawad_choice_forfeits_attached_right",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f010",
       "encoder": "qawad_choice_forfeits_attached_right",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f016",
@@ -1633,20 +1633,20 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f004",
       "encoder": "bain_in_idda_as_wife",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f004",
       "encoder": "rajiyya_takes_wife_rule",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f008",
       "encoder": "rajiyya_takes_wife_rule",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005",
