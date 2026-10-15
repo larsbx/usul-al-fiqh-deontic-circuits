@@ -83,8 +83,10 @@ noncommercial witnesses plus the two new al-Shawkānī editions) were downloaded
 from their source provider and matched the lock SHA-256. This establishes source
 byte identity, **not GitHub LFS delivery**. Shamela's direct HTTP requests returned
 403 in the audit runtime; catalogue metadata was readable through web retrieval.
-Both Archive item metadata endpoints were readable. No complete Shamela or
-Archive text-byte recheck is claimed by this audit.
+Both Archive item metadata endpoints were readable. A later source download of
+`archive-pdf1995` also matched its lock (328,323 bytes); the other OCR source,
+`archive-manzuma-djvu`, returned HTTP 500. No complete Shamela byte recheck is
+claimed. These source-provider results still do not establish LFS delivery.
 
 After the holds, the retained LFS inventory is **89 files, 368,538,677 declared
 bytes** (about 0.343 GiB). The new `text-publication.yml` workflow downloads only
@@ -126,6 +128,7 @@ pass; the full integrated corpus, Lean and TLA checks remain CI obligations.
 To lift a hold, attach evidence to the **existing witness entry** that identifies
 the authorized grantor, the exact edition/content covered, full-file public
 redistribution scope, attribution and applicable conditions, and bind it to the
-current lock hash. Alternatively retain the hold and use the permitted local
-study workflow. No rights-holder contact or billing changes were made. Integration is conditioned on the corrected publication gate and
+current lock hash. For a modern work, also change its work classification to
+`noncommercial_text`; unapproved sibling witnesses must retain their individual
+holds. Alternatively retain the hold and use the permitted local study workflow. No rights-holder contact or billing changes were made. Integration is conditioned on the corrected publication gate and
 repository checks, not on silently asserting that missing rights were granted.
