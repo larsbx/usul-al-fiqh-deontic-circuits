@@ -15,14 +15,18 @@ All of them sit in `corpus/reconciliation/ledger.json`. When a new tranche adds 
 
 ## The four stages
 
-`reconcile jam naskh ps = resolve ⟨jam, naskh, prevail ps⟩`
+`reconcile jam naskh ps ds = resolve ⟨jam, naskh, tarjih ds ps⟩`, where `tarjih ds ps = (dalilPrevail ds).or (prevail ps)`
 
 | Stage | Offered when | Checked by |
 |---|---|---|
 | jamʿ | The source cites a farq. The case is re-encoded under a refinement whose dossier entry names a conservativity theorem over the earlier reading. | Python checks that every farʿ the refinement moves away from the earlier reading lands on its prevailing side, and that at least one farʿ moves. Lean checks the theorem and the re-encoded guards. |
 | naskh | A later riwāya or a retraction (rujūʿ) with reported chronology. | The ledger's `naskh.ref`. |
-| tarjīḥ | Some ruling's graded support strictly exceeds every other ruling's. | `prevail`, which carries `prevail_mem` (it never invents a ruling) and `prevail_unanimous`. |
+| tarjīḥ | **By dalīl first:** one ruling alone rests on an admitted dalīl of the strongest kind present. **Otherwise by the madhhab's grades:** some ruling's graded support strictly exceeds every other ruling's. | `dalilPrevail` (`dalilPrevail_mem`, `dalilPrevail_unadmitted`), `tarjih_dalil_first`, `tarjih_madhhab_fallback`; `prevail` (`prevail_mem`, `prevail_unanimous`). |
 | tawaqquf | Every earlier stage fails. | `reconcile_tawaqquf_iff`. |
+
+**The basis is the Qurʾān and the Sunna (the owner's principle, 2026-10-15).** No author is more authoritative for being cited, whether Ibn Rajab, Ibn Qudāma or al-Ḥajjāwī, and the grades below measure only who in the madhhab holds a position. So tarjīḥ weighs the adilla first. An entry's `adilla` cite, for each position, the texts of `corpus/nusus/foundation.json` it rests on, each with a note on how it bears on that position's facts (its dalāla). A dalīl is admitted as `Usul.Seam` admits it: an āya always; a marfūʿ ḥadīth when al-Albānī's verdict is ḥujja (ṣaḥīḥ or ḥasan, decision D4); an athar of a ṣaḥābī only with such a verdict. Among admitted adilla the strongest kind in Aḥmad's order (`DalilKind.resort`: the naṣṣ, then the ṣaḥābī's fatwā) decides when exactly one ruling has it. A ḍaʿīf ḥadīth is recorded but decides nothing. Qiyās is not a dalīl at this stage, and neither is ijmāʿ while RQ-01 stands ("as is": reports enter as evidence). Only when the adilla decide nothing (none cited, none admitted, or both sides with a naṣṣ of the same kind) do the madhhab's grades decide. The report records the `basis` of each tarjīḥ, `dalil` or `madhhab`.
+
+**No work is the reference.** A disagreement between aligned works that no reading decides, such as ʿUmda against Zād on the same masʾala, also needs a tarjīḥ (`disagreements`; its standing is `no_reading`).
 
 **Grades (`Usul.Reconcile.Grade`), strongest first.** The first five are the annotation convention's marked sides (`Grade.marked`):
 
