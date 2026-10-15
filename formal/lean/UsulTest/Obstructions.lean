@@ -859,6 +859,14 @@ open Usul.Cat.Sheaf
 #guard (obstructions [()] (positions [0, 1])).length == 2
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f006
 #guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f002
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f003
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f005
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f006
+#guard (obstructions [()] (positions [0, 1])).length == 2
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f004
 #guard (obstructions [()] (positions [0, 1])).length == 2
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f006
@@ -881,7 +889,113 @@ open Usul.Cat.Sheaf
 #guard (obstructions [()] (positions [0, 1])).length == 2
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f020
 #guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f000
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f001
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f002
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f003
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f004
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f001
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f004
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f008
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f009
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f010
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f011
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f014
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f015
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f016
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f017
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f003
+#guard (obstructions [()] (positions [0, 1])).length == 2
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f001
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f000
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f001
+#guard (obstructions [()] (positions [0, 1, 0])).length == 4
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f000
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f001
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f002
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f003
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f004
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f006
+#guard (obstructions [()] (positions [0, 1, 1])).length == 4
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f007
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f001
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f002
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f005
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f006
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f007
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f009
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f010
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f011
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f001
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f002
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f003
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f004
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f005
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f006
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f009
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f014
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f003
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f004
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f005
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f000
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f001
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f002
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f003
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f004
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f005
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f006
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f007
+#guard (obstructions [()] (positions [0, 1])).length == 2
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f008
 #guard (obstructions [()] (positions [0, 1])).length == 2
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004
 #guard (obstructions [()] (positions [0, 1])).length == 2
