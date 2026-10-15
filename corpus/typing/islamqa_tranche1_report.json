@@ -22,12 +22,12 @@
   "lexical_recall": {
     "1": 0.0,
     "5": 0.2195,
-    "10": 0.3171
+    "10": 0.3089
   },
   "hybrid_recall": {
     "1": 0.5203,
     "5": 0.6911,
-    "10": 0.7398
+    "10": 0.7561
   },
   "hybrid": "types first: encoders by the share of their fields the situation settles, lexical rank breaking ties and ordering the rest",
   "prior_recall": {

@@ -2,6 +2,7 @@ import Usul.Hukm
 import Usul.Signature
 import Usul.Dung
 import Usul.Grounded
+import Usul.FiniteGrounded
 import Usul.Taarud
 import Usul.Reconcile
 import Usul.Qawaid
@@ -15,6 +16,7 @@ import Usul.Jadal
 import Usul.QiyasLimits
 import Usul.Dalala
 import Usul.CommandSchemata
+import Usul.CommandDerivation
 import Usul.Refinements
 import Usul.Tanaqud
 import Usul.Furuq

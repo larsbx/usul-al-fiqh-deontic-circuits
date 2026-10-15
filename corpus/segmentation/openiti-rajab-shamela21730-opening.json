@@ -1,0 +1,226 @@
+{
+ "format": "opening-furu/v2",
+ "status": "candidate",
+ "source": {
+  "witness": "openiti-rajab-shamela21730",
+  "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0795IbnRajabHanbali/0795IbnRajabHanbali.Qawacid/0795IbnRajabHanbali.Qawacid.Shamela0021730-ara1.completed",
+  "bytes": 1660710,
+  "sha256": "f077fdf1ba4ec9cfecafed8b5e0023e850f57084e17463847cc238e3d1128e68"
+ },
+ "provenance": "Recovered by PR #28 (opening-furu/v1, 87 records). On merging into main, whose segmenter (PR #29) already yields .f000, only the records in a paragraph no main record of the same qāʿida starts in are kept (q057's inline «ومنها» is inside main's q057.f000). Main's ids are unchanged; where main already has a .f000, a recovered record takes .f000_2.",
+ "span_basis": "Unicode code-point offsets, end exclusive, in the full headed unit body: OpenITI parse_markdown section texts joined by newline, as in segment_headed. Hash UTF-8 bytes. Locators retain the parent qāʿida's page anchor.",
+ "review": "Source segmentation candidates only. No encoder facts, positions, rulings, or review approvals are inferred. Review.tla still governs promotion; unannotated recovered records remain in the coverage denominator.",
+ "boundary": "This is a conservative structural profile, not an exhaustive semantic case census. Bare pronouns, generic comparisons and ruling alternatives are not example introducers. Other unlabeled cases still require source review.",
+ "records": [
+  {
+   "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f000_2",
+   "work": "ibn_rajab.taqrir_qawaid",
+   "witness": "openiti-rajab-shamela21730",
+   "record_type": "far",
+   "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008",
+   "locator": "src:openiti-rajab-shamela21730/v01:p010#q008.f000_2",
+   "case_ar": "المريض إذا عجز في الصلاة عن وضع وجهه على الأرض وقدر على وضع بقية أعضاء السجود، فإنه لا يلزمه ذلك على الصحيح، لأن السجود على بقية الأعضاء إنما وجب تبعا للسجود على الوجه وتكميلا له. والقسم الثالث: ما هو جزء من العبادة وليس بعبادة في نفسه بانفراده، أو هو غير مأمور به لضرورة (فالأول) كصوم بعض اليوم لمن قدر عليه وعجز عن إتمامه فلا يلزمه بغير خلاف. (والثاني) كعتق بعض الرقبة في الكفارة فلا يلزم القادر عل",
+   "status": "candidate",
+   "extraction": {
+    "pipeline": "usul_corpus/opening-furu-1",
+    "method": "headed+opening_example",
+    "source_span": {
+     "basis": "headed_unit_body/v1",
+     "body_sha256": "dc77a2a5d1e6a0a54ca629f9f9d8af526e049e5f03b9cc7108b5ffe46f1dcfa5",
+     "start": 1107,
+     "end": 1752,
+     "sha256": "a1ca84ff71b82a87f382a3baf958a5846bfb69af7412c25c2d905b60f99d14af"
+    }
+   }
+  },
+  {
+   "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f000",
+   "work": "ibn_rajab.taqrir_qawaid",
+   "witness": "openiti-rajab-shamela21730",
+   "record_type": "far",
+   "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018",
+   "locator": "src:openiti-rajab-shamela21730/v01:p023#q018.f000",
+   "case_ar": "من عليه حدثان أصغر وأكبر فالمذهب أنه يكفيه أفعال الطهارة الكبرى إذا نوى الطهارتين [جميعا] بها وعنه لا يجزئه عن الأصغر حتى يأتي بالوضوء واختار أبو بكر أنه يجزئه عنهما إذا أتى بخصائص الوضوء من الترتيب والموالاة وإلا فلا، وجزم به صاحب المبهج ولو كان عادما للماء فتيمم تيمما واحدا ينوي به الحدثين أجزأه عنهما بغير خلاف ونص عليه أحمد في رواية مهنا.",
+   "status": "candidate",
+   "extraction": {
+    "pipeline": "usul_corpus/opening-furu-1",
+    "method": "headed+opening_example",
+    "source_span": {
+     "basis": "headed_unit_body/v1",
+     "body_sha256": "74aaab2e06f6cf32402512fa959503929235b4c2bcb571f5017a3eef78bd9be7",
+     "start": 268,
+     "end": 611,
+     "sha256": "e7c933627b7c9c72286a64a0fc15199413a0828701544eec06711649bb05efc1"
+    }
+   }
+  },
+  {
+   "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f000",
+   "work": "ibn_rajab.taqrir_qawaid",
+   "witness": "openiti-rajab-shamela21730",
+   "record_type": "far",
+   "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032",
+   "locator": "src:openiti-rajab-shamela21730/v01:p041#q032.f000",
+   "case_ar": "المبيع إذا استثنى البائع منفعته مدة معلومة صح، وحكي فيه رواية أخرى بعدم الصحة.",
+   "status": "candidate",
+   "extraction": {
+    "pipeline": "usul_corpus/opening-furu-1",
+    "method": "headed+opening_minha",
+    "source_span": {
+     "basis": "headed_unit_body/v1",
+     "body_sha256": "85468ff1c7e3b5f462a9eceb6d9217d7b468eb28ff09c735df34d40ac5ba6811",
+     "start": 93,
+     "end": 171,
+     "sha256": "0facfe2045ca816bcb9637a44d8df98094881df20c4353463f3de70814707c41"
+    }
+   }
+  },
+  {
+   "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f000",
+   "work": "ibn_rajab.taqrir_qawaid",
+   "witness": "openiti-rajab-shamela21730",
+   "record_type": "far",
+   "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078",
+   "locator": "src:openiti-rajab-shamela21730/v01:p150#q078.f000",
+   "case_ar": "لو باع دارا فيها ناقة لم تخرج من الباب إلا بهدمه فإنه يهدم ويضمن للمشتري النقص.",
+   "status": "candidate",
+   "extraction": {
+    "pipeline": "usul_corpus/opening-furu-1",
+    "method": "headed+opening_minha",
+    "source_span": {
+     "basis": "headed_unit_body/v1",
+     "body_sha256": "ef0adda90d62b9ed36cc3136542790fbb2d37037ae7089e783e6dcec87f204a3",
+     "start": 394,
+     "end": 473,
+     "sha256": "22f569cc6a5f2dfbd0e856a8be51667f5126ef1c26b564297e5e898b7f0ec85e"
+    }
+   }
+  },
+  {
+   "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f000",
+   "work": "ibn_rajab.taqrir_qawaid",
+   "witness": "openiti-rajab-shamela21730",
+   "record_type": "far",
+   "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095",
+   "locator": "src:openiti-rajab-shamela21730/v01:p217#q095.f000",
+   "case_ar": "أن يشهد شاهدان بموت زيد فيقسم ماله بين ورثته ثم يتبين بطلان الشهادة بقدومه حيا فنص [أحمد] في رواية الميموني أنهما يضمنان المال ولم يتعرض للورثة وظاهر كلامه استقرار الضمان على المشهور أو اختصاصهم به وهو في الجملة موافق لقوله المشهور عنه في تقرير الضمان على الغار كما سبق وقال القاضي يحتمل أن يكون أغرم الورثة ورجعوا بذلك على الشهود لتغريرهم ولا ضمان هنا على الحاكم ; لأنه ملجأ إلى الحكم من جهة الشهود ",
+   "status": "candidate",
+   "extraction": {
+    "pipeline": "usul_corpus/opening-furu-1",
+    "method": "headed+opening_minha",
+    "source_span": {
+     "basis": "headed_unit_body/v1",
+     "body_sha256": "869846a8baafb7d8382daa7dc603bdf2f65527a1874a3719b954e2abd6ea64de",
+     "start": 536,
+     "end": 1123,
+     "sha256": "09750ae8d9b23910c4be2964ec610c2132da346ba8df458c3021d7809ac8af3c"
+    }
+   }
+  },
+  {
+   "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f000",
+   "work": "ibn_rajab.taqrir_qawaid",
+   "witness": "openiti-rajab-shamela21730",
+   "record_type": "far",
+   "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121",
+   "locator": "src:openiti-rajab-shamela21730/v01:p273#q121.f000",
+   "case_ar": "لو حلف لا يأكل الرءوس فقال القاضي يحنث بأكل كل ما يسمى رأسا من رءوس الطيور والسمك، ونقله في موضع عن أحمد، وقال في موضع العرف يعتبر في تعميم الخاص لا في تخصيص العام. وقال أبو الخطاب: لا يحنث إلا برأس يؤكل في العادة مفردا، وكذلك ذكر القاضي في موضع من خلافه أن يمينه تختص بما يسمى رأسا عرفا، وحكى ابن الزاغوني ms358 في الإقناع روايتين. إحداهما: يحنث بأكل كل رأس. والثانية: لا يحنث إلا بأكل رأس بهيمة الأ",
+   "status": "candidate",
+   "extraction": {
+    "pipeline": "usul_corpus/opening-furu-1",
+    "method": "headed+opening_minha",
+    "source_span": {
+     "basis": "headed_unit_body/v1",
+     "body_sha256": "14be212cc50946ea6509e235787d5a54a7e4a7bf637545a92daeab37ae3aafec",
+     "start": 807,
+     "end": 1450,
+     "sha256": "721fe5534271e87a6b1a3320b26f432f52da199175fbf2539e162d2f2d62a432"
+    }
+   }
+  },
+  {
+   "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f000",
+   "work": "ibn_rajab.taqrir_qawaid",
+   "witness": "openiti-rajab-shamela21730",
+   "record_type": "far",
+   "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122",
+   "locator": "src:openiti-rajab-shamela21730/v01:p275#q122.f000",
+   "case_ar": "لو وصى لأقربائه أو أهل بيته، قال أحمد في رواية ابن القاسم: إذا قال لأهل بيتي أو قرابتي فهو على ما يعرف من مذهب الرجل، إن كان يصل عمته وخالته، ونقل سندي نحوه. وقال في رواية صالح في الوصية لأهل بيته: ينظر من كان يصل من أهل بيته من قبل أبيه وأمه، فإن كان لا يصل قرابته من قبل أمه فأهل بيته من قبل أبيه. واختلف الأصحاب في حكاية هذه الرواية على طريقين: أحدهما: أنها رواية ثالثة في قرابة الأم خاصة أنهم لا ",
+   "status": "candidate",
+   "extraction": {
+    "pipeline": "usul_corpus/opening-furu-1",
+    "method": "headed+opening_minha",
+    "source_span": {
+     "basis": "headed_unit_body/v1",
+     "body_sha256": "42273eb15ee797fa9b4aff53771b543fd4a87c8801674fd7f5c9def2be595009",
+     "start": 54,
+     "end": 1237,
+     "sha256": "ad111587d4a2b614a50fe344597a8ebe9343b48109885d8e7bd3d350899fc4e2"
+    }
+   }
+  },
+  {
+   "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f000",
+   "work": "ibn_rajab.taqrir_qawaid",
+   "witness": "openiti-rajab-shamela21730",
+   "record_type": "far",
+   "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128",
+   "locator": "src:openiti-rajab-shamela21730/v01:p288#q128.f000",
+   "case_ar": "لو جرح ذميا فأسلم ثم مات فلا قود، وهل يجب فيه دية مسلم أو دية ذمي؟ على وجهين، اختار القاضي وأبو الخطاب وجوب دية ذمي اعتبارا بحال الجناية، وابن حامد وجوب دية مسلم. وذكر ابن أبي موسى أنه نص أحمد، وبكل حال فالدية تكون لورثته من المسلمين ; لأنه استحق ms377 أرش جرحه حيا فملكه ثم أسلم فانتقل ما ملكه إلى ورثته المسلمين ذكره القاضي في خلافه وأبو الخطاب في الانتصار.",
+   "status": "candidate",
+   "extraction": {
+    "pipeline": "usul_corpus/opening-furu-1",
+    "method": "headed+opening_minha",
+    "source_span": {
+     "basis": "headed_unit_body/v1",
+     "body_sha256": "faed7f92a6c7c0e7e39922c04b66ef304326556cb2263bd0fca7997daf9013df",
+     "start": 454,
+     "end": 814,
+     "sha256": "26364afcf45d0ecbcf8f799522ab3b1be8543a2d432ad384ee0a6cf124da885e"
+    }
+   }
+  },
+  {
+   "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f000",
+   "work": "ibn_rajab.taqrir_qawaid",
+   "witness": "openiti-rajab-shamela21730",
+   "record_type": "far",
+   "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136",
+   "locator": "src:openiti-rajab-shamela21730/v01:p302#q136.f000",
+   "case_ar": "الحيض والنفاس يحرم بهما الوطء في الفرج ولا يحرم ما دونه في المذهب الصحيح وفيه رواية أخرى يمنع الاستمتاع ما بين السرة والركبة.",
+   "status": "candidate",
+   "extraction": {
+    "pipeline": "usul_corpus/opening-furu-1",
+    "method": "headed+opening_minha",
+    "source_span": {
+     "basis": "headed_unit_body/v1",
+     "body_sha256": "971082c9b318671de1d4b2dc327d96203c65078f7079ff0103c52f7f0e48892b",
+     "start": 684,
+     "end": 809,
+     "sha256": "1ffa7bddb138c4cd0e7ba31a3c42e2687e8556f4233d302dc2daefe760fcb7d3"
+    }
+   }
+  },
+  {
+   "id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f000",
+   "work": "ibn_rajab.taqrir_qawaid",
+   "witness": "openiti-rajab-shamela21730",
+   "record_type": "far",
+   "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142",
+   "locator": "src:openiti-rajab-shamela21730/v01:p312#q142.f000",
+   "case_ar": "لو قلع سنه أو قطع أذنه فأعاده في الحال فثبت والتحم كما كان لم يرح، فهل يحكم بطهارته أم لا نص أحمد على طهارته إذا ثبت والتحم، وعلى نجاسته إذا لم يثبت، وحكى القاضي المسألة على روايتين، وفرق ابن أبي موسى بين أن يثبت ويلتحم فيحكم بطهارته لعود الحياة إليه، وهذا بخلاف ما إذا لم يثبت وهذا حسن. فإن كان بجناية جان فالمنصوص عن أحمد أنه لا قود فيه ولا دية سوى حكومة نقصه. واختاره أبو بكر، وبناه كثير من الأصحا",
+   "status": "candidate",
+   "extraction": {
+    "pipeline": "usul_corpus/opening-furu-1",
+    "method": "headed+opening_minha",
+    "source_span": {
+     "basis": "headed_unit_body/v1",
+     "body_sha256": "b9dbbc223f36a721166294e17ad027cccce77e5483555e4b0e124e4048f1b4c0",
+     "start": 116,
+     "end": 748,
+     "sha256": "933b842763753831daf843eafebdac9fcd141803b5a40b954bf8b7e963c6d210"
+    }
+   }
+  }
+ ]
+}

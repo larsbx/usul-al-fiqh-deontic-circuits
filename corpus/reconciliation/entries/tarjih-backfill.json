@@ -1154,124 +1154,6 @@
       ]
     },
     {
-      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f001",
-      "grades": [
-        "ashab",
-        [
-          "ashab",
-          "qiyas"
-        ],
-        "takhrij",
-        "nass"
-      ],
-      "jam": null,
-      "naskh": null,
-      "note": "The two raven oaths (wives): neither is divorced and intercourse is forbidden to both unless one believes the other wrong, «في أصح الوجهين فيهما» (al-Inṣāf), «في الأصح فيهما» (al-Furūʿ, with Ibn al-Qāsim's naql «فليتقيا الشبهة»), and the muʿtamad states it: the abstention, not mere building on certainty.",
-      "evidence": [
-        {
-          "ref": "src:openiti-insaf-shamela21609/v09:p145",
-          "excerpt_ar": "أحدهما خطأ الآخر، في أصح الوجهين فيهما، نقل ابن القاسم \" فليتقيا الشبهة",
-          "position": 3,
-          "grade": "tashih",
-          "who": "al-Mardāwī in al-Inṣāf",
-          "note": "«لم تطلقا، ويحرم عليهما الوطء، إلا مع اعتقاد أحدهما خطأ الآخر، في أصح الوجهين فيهما»."
-        },
-        {
-          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p130",
-          "excerpt_ar": "الوطء إلا مع اعتقاد أحدهما خطأ الآخر، في الأصح فيهما، نقل ابن القاسم",
-          "position": 3,
-          "grade": "tashih",
-          "who": "Ibn Mufliḥ in al-Furūʿ",
-          "note": "«نظيرتها في النكاح أحكام الطلاق باقية، ويحرم عليهما الوطء ... في الأصح»."
-        },
-        {
-          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p064",
-          "excerpt_ar": "يعلماه لم تعتقا ولم تطلق وحرم عليها الوطء إلا مع اعتقاد أحدهما خطأ الآخر",
-          "position": 3,
-          "grade": "jazm",
-          "who": "al-Ḥajjāwī's al-Iqnāʿ",
-          "note": "The matn states it decisively for wives and slave-women alike."
-        },
-        {
-          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p339",
-          "excerpt_ar": "ووقوع طلاقها مشكوك فيه (وحرم عليهما الوطء) لأن أحدهما حانث بيقين",
-          "position": 3,
-          "grade": "jazm",
-          "who": "al-Buhūtī's Kashshāf",
-          "note": "Sharḥ of al-Iqnāʿ."
-        },
-        {
-          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p333",
-          "excerpt_ar": "ولم يعلما لم تطلقا ولم تعتقا ويحرم عليهما الوطء إلا مع اعتقاد أحدهما خطأ",
-          "position": 3,
-          "grade": "jazm",
-          "who": "Ibn al-Najjār's al-Muntahā",
-          "note": "The matn states it decisively."
-        },
-        {
-          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p144",
-          "excerpt_ar": "نكاحه وعلى كل منهما النفقة والكسوة والسكنى (ويحرم عليهما الوطء) ودواعيه",
-          "position": 3,
-          "grade": "jazm",
-          "who": "al-Buhūtī's Sharḥ al-Muntahā",
-          "note": "«لحنث أحدهما بيقين وتحريم امرأته عليه وقد أشكل»."
-        }
-      ]
-    },
-    {
-      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f002",
-      "grades": [
-        "wajh",
-        "wajh",
-        "qiyas"
-      ],
-      "jam": null,
-      "naskh": null,
-      "note": "The two raven oaths (slave-women freed): neither is freed and intercourse is forbidden to both, «في الأصح فيهما» in al-Furūʿ's own bāb of ʿitq, and the muʿtamad names the slave-woman with the wife («لم تعتقا ولم تطلق وحرم عليها الوطء»). al-Inṣāf here only relays this qāʿida.",
-      "evidence": [
-        {
-          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p130",
-          "excerpt_ar": "الوطء إلا مع اعتقاد أحدهما خطأ الآخر، في الأصح فيهما، نقل ابن القاسم",
-          "position": 2,
-          "grade": "tashih",
-          "who": "Ibn Mufliḥ in al-Furūʿ",
-          "note": "In the bāb of ʿitq, after the two slaves: «ويحرم عليهما الوطء ... في الأصح فيهما»."
-        },
-        {
-          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p064",
-          "excerpt_ar": "غرابا فأمتي حرة أو فامرأتي طالق ثلاثا وقال آخر إن لم يكن غرابا مثله ولم",
-          "position": 2,
-          "grade": "jazm",
-          "who": "al-Ḥajjāwī's al-Iqnāʿ",
-          "note": "«... لم تعتقا ولم تطلق وحرم عليها الوطء»."
-        },
-        {
-          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p339",
-          "excerpt_ar": "امرأتيه لا بعينها (إلا مع اعتقاد أحدهما خطأ الآخر) فإن من اعتقد خطأ",
-          "position": 2,
-          "grade": "jazm",
-          "who": "al-Buhūtī's Kashshāf",
-          "note": "«... لا يحرم عليه وطء زوجته أو أمته»: the prohibition covers the slave-woman."
-        },
-        {
-          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p333",
-          "excerpt_ar": "ولم يعلما لم تطلقا ولم تعتقا ويحرم عليهما الوطء إلا مع اعتقاد أحدهما خطأ",
-          "position": 2,
-          "grade": "jazm",
-          "who": "Ibn al-Najjār's al-Muntahā",
-          "note": "«إن كان غرابا فزوجتي طالق ثلاثا أو أمتي حرة»."
-        },
-        {
-          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p144",
-          "excerpt_ar": "خطأ رفيقه وطء زوجته أو أمته لتيقنه الحل وبقاء الزوجية أو الملك.",
-          "position": 2,
-          "grade": "jazm",
-          "who": "al-Buhūtī's Sharḥ al-Muntahā",
-          "note": "Names the slave-woman («أو أمته») under the prohibition."
-        }
-      ]
-    },
-    {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f002",
       "grades": [
         "tashih",
@@ -13320,6 +13202,74 @@
           "grade": "jazm",
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Continues «ونسلها وصوفها ... لأنه غير معلوم»."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f000",
+      "grades": [
+        "tashih",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ibn Rajab's «فالمذهب» against the riwāya; al-Inṣāf labels the greater ṭahāra's sufficiency for both «هذا المذهب مطلقا». Confirms the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p259",
+          "excerpt_ar": "قوله (وإن اغتسل ينوي الطهارتين أجزأه عنهما) هذا المذهب مطلقا. وعليه",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: a madhhab label on this farʿ."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f000",
+      "grades": [
+        "ashab",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ibn Rajab's own «صح» against the reported riwāya; al-Inṣāf's «هذا الصحيح من المذهب. وعليه الأصحاب» on the seller excepting a known benefit. Confirms the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p344",
+          "excerpt_ar": "حملان البعير إلى موضع معلوم) هذا الصحيح من المذهب. وعليه الأصحاب. وهو",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Inṣāf: a madhhab label on this farʿ."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f000",
+      "grades": [
+        "nass",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Aḥmad's naṣṣ (al-Maymūnī) puts the loss on the witnesses, against al-Qāḍī's iḥtimāl; Sharḥ al-Muntahā states the witnesses' liability decisively, with al-Buhūtī's own «قلت» for the direct agent first (graded aṣḥāb on the other side). Confirms the annotated side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p199",
+          "excerpt_ar": "البينة) التي شهدت بوفاته (ما تلف من ماله) لتلفه بسبب شهادتها.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ al-Muntahā (the Muntahā's matn)",
+          "note": "Sharḥ al-Muntahā: stated decisively in the muʿtamad."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p199",
+          "excerpt_ar": "البينة) التي شهدت بوفاته (ما تلف من ماله) لتلفه بسبب شهادتها. قلت: إن",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Buhūtī's own «قلت» (the direct agent first, if he can be made to pay)",
+          "note": "One author's own qualification, read toward the heirs paying first."
         }
       ]
     }

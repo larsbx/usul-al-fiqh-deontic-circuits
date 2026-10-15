@@ -85,8 +85,10 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
     by = {c["far"]: c for c in cases}
     entries = {e["far"]: e for e in ledger["entries"]}
     errs = [f"{f}: apparent contradiction not in the ledger" for f in (c["far"] for c in candidates(cases)) if f not in entries]
+    archived = _archived_tarjih()
     errs += [f"{c['far']}: an ikhtilāf without a tarjīḥ in the ledger" for c in cases
-             if c["class"] == "genuine_ikhtilaf" and c.get("matches_madhhab") and c["far"] not in entries]
+             if c["class"] == "genuine_ikhtilaf" and c.get("matches_madhhab") and c["far"] not in entries
+             and not (c["far"] in archived and resolve(c, archived[c["far"]])[1] == c["expected"])]
     open_rq = _open_research_questions()
     if len(entries) != len(ledger["entries"]):
         errs.append("duplicate ledger entries")
@@ -201,6 +203,13 @@ def lean_file(cases: list[dict], ledger: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
+def _archived_tarjih() -> dict[str, dict]:
+    """Entries a resolution retired from the active ledger (``reconciliation/history/*.json``, e.g.
+    PR #49's composite abstention): their tarjīḥ is kept there and still counts for the farʿ."""
+    d = Path(__file__).resolve().parents[2] / "corpus" / "reconciliation" / "history"
+    return {e["far"]: e for p in sorted(d.glob("*.json")) for e in json.loads(p.read_text(encoding="utf-8")).get("entries", [])}
+
+
 def _open_research_questions() -> set[str]:
     """Ids of the research register's questions not yet decided by a human: the only licence for an
     on-madhhab case whose tarjīḥ goes the other way to stand as annotated."""
@@ -234,7 +243,7 @@ def marked_for_reading(case: dict, entry: dict) -> bool:
 
 
 # Drafting aid for new tranches: a grade proposed from the annotator's `who`, for review.
-_DRAFT = (("tashih", r"madhhab|mashh|ashhar|aṣaḥḥ|ṣaḥīḥ|sahih|aẓhar|azhar"),
+_DRAFT = (("tashih", r"madhhab|mashh|ashhar|aṣaḥḥ|ṣaḥīḥ|sahih"),
           ("nass", r"naṣṣ|nass|manṣūṣ|mansus|riwāya|riwaya|Aḥmad \(|^Aḥmad"),
           ("zahir", r"ẓāhir (of|kalām) Aḥmad|zahir kalam Ahmad|apparent text of Ahmad"),
           ("qiyas", r"qiyās al-madhhab"),

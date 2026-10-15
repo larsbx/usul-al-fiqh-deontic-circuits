@@ -208,7 +208,7 @@ All six resolve by tarjīḥ against their readings and join the worklist. 1.f00
 - **One data repair:** 160.f041's position ruling named its conditions ("lot after the claimant's choice and the nearer judge") where the encoder's value is "lot"; the label is normalised, the conditions kept in the holder.
 - **Grading conventions confirmed:** Taṣḥīḥ al-Furūʿ's «الصواب» grades taṣḥīḥ (its verdict on the madhhab, as in 8 of the ledger's 9 such items; the ninth, 30.f002, is aligned, its outcome unchanged), while al-Mardāwī's «قلت» in al-Inṣāf stays `ashab`. 62.f000, 124.f001 and 124.f002 turn on that convention. An unlabelled statement in al-Furūʿ was graded `jazm` by some groups and `ashab` by others; no outcome depends on the difference.
 
-The ledger now holds all 482 ikhtilāf cases: 1,814 evidence items, 20 jamʿ, 1 naskh, 447 tarjīḥ and 14 tawaqquf; 136 resolve against the reading (the residues, with the two RQ-03 cases), 332 for it.
+With main merged (PR-30's eleven recovered furūʿ add three on-madhhab ikhtilāf, 18.f000, 32.f000 and 95.f000, given entries here; PR #49's 14.f001 and f002 keep their tarjīḥ in `reconciliation/history`, which the rule accepts), every one of the 488 ikhtilāf cases has a tarjīḥ: 486 in the active ledger, 1,812 evidence items, 20 jamʿ, 1 naskh, 451 tarjīḥ and 14 tawaqquf; 139 resolve against the reading (the residues, with the two RQ-03 cases), 333 for it; 249 entries confirm an on-madhhab annotation.
 
 **The register applied to the bank (sweep after round 3).** Following invariant 10 (apply the bank before asking the owner), every register question of lane A rounds 1–3, and those left from tranche 11 and lane D, was put through the bank's own procedure: the annotation convention (readings from the qāʿida's own statement; leading ruling; positions under the same facts; al-Inṣāf first, then the muʿtamad), the grade table, and `Usul.resolve` (jamʿ → naskh → tarjīḥ → tawaqquf). Everything stays `candidate`; what the procedure leaves open goes to the research register, `corpus/review/research_questions.json`.
 
@@ -269,3 +269,22 @@ The ledger now holds all 482 ikhtilāf cases: 1,814 evidence items, 20 jamʿ, 1 
 Everything here has status `candidate`. The grades are a reading of the annotated paragraph. A resolution is "derivable under the encoding", never a fatwā.
 
 The independent [lane-D acceptance audit](lane-d-acceptance-audit-2026-10-11.md) records the scope of all six discrepancies. Two qualified passages are preserved in `corpus/review/lane_d/qualified_evidence.json` outside graded reconciliation. The six outcomes remain candidates; textual applicability rationales require human review and are not proved by Lean.
+
+### Review audit, 2026-10-10
+
+The [follow-up audit](reconciliation-review-audit-2026-10-10.md) pins the original
+48-case review queue to PR #47's merge and records each original annotation, Arabic
+record, imported evidence and unresolved scholarly obligation in
+`corpus/reconciliation/review-audit-2026-10-10.json`. It does not promote later
+preferences into the original annotations.
+
+In 52.f001, denial of ijmāl is only indirect support for the encoded universal
+generality. Two imported grades therefore change from jazm to takhrīj; all excerpts
+and competing holders remain. At the audit's base the review queue fell from 54 to 53, with
+144 entries, 15 jamʿ, 121 tarjīḥ, 8 tawaqquf and 61 residues unchanged.
+The English subject/object error in 159.f035 is corrected without changing its
+facts or two riwāyas. Drafting no longer treats an author's own aẓhar as taṣḥīḥ.
+
+The audit's own locked-replay command was superseded on merge by `make source-verify`
+(`usul_corpus.source_verify`, PR-06), which replays every excerpt of the active ledger and its
+shards against complete locked witnesses and fails closed.
