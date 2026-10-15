@@ -30,6 +30,8 @@ example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.benefitThenThing
 -- benefit_to_other: wadi:sabab
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.benefitToOther
+-- bud_exit_charged: wadi:sabab
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.budExitCharged
 -- burdened_thing_compensated: wadi:sabab
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.burdenedThingCompensated
 -- cancel_on_existence_valid: wadi:validity
@@ -88,6 +90,8 @@ example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.forcedAcquisition
 -- forced_acquisition_solvent: wadi:sabab
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.forcedAcquisitionSolvent
+-- four_kinds_marriage_prohibition: wadi:mani
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .mani)) := Usul.Typing.fourKindsMarriageProhibition
 -- free_bestowal_of_needed_ayn: aspect:obligatory
 example : Usul.Typing.Typed Usul.Typing.Situation (Bool) := Usul.Typing.freeBestowalOfNeededAyn
 -- free_bestowal_of_needed_benefit: aspect:obligatory
@@ -118,6 +122,8 @@ example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.leaseAfterAuthority
 -- maadum_grant_valid: wadi:validity
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .validity)) := Usul.Typing.maadumGrantValid.mapRun Usul.Validity.ofEffects
+-- mahr_fully_established: wadi:sabab
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.mahrFullyEstablished
 -- manumission_spread: wadi:sabab
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.manumissionSpread
 -- mistaken_basis: wadi:validity

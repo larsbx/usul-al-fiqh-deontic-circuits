@@ -1,0 +1,373 @@
+{
+  "suite": "m8_rajab_rajab_a24",
+  "status": "candidate",
+  "provenance": "Shard rajab-a24 (lane A): every farʿ record of Ibn Rajab's qāʿida 156, annotated against a reading formalised from the qāʿida's own statement (Usul.Readings.RajabA24). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f001",
+      "encoder": "mahr_halved_by_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sep_by_husband": true,
+        "sep_by_stranger": false,
+        "sep_by_wife": false,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "halved: the divorce is his, suspended or not, even on a condition of her act (the aṣḥāb, «كذا ذكره الأصحاب»; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "no mahr where the condition is an act of hers she could avoid (Taqī al-Dīn; Ibn Rajab's takhrīj from the dying husband's suspended divorce)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: his divorce, outright or suspended, «وسواء كانت الصفة من فعلها أو لم تكن، كذا ذكره الأصحاب»; the khilāf arises only in the branch of a condition that is her own avoidable act, which is the branch annotated here. Ibn Rajab places it in the first kind (from the husband alone), so the reading halves. al-Inṣāf (v08:p278): «وكذا تعليق طلاقها على فعلها، وتوكيلها فيه، ففعلته فيهما. على الصحيح من المذهب. وعليه الأصحاب», reporting Taqī al-Dīn's dissent «وقواه صاحب القواعد». On the madhhab side. Follow-on: the takhyīr at her request (two riwāyāt per Ibn Abī Mūsā; Aḥmad's naṣṣ via Muhannā: no mahr), cited by Taqī al-Dīn as a witness for his view."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f002",
+      "encoder": "mahr_halved_by_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sep_by_husband": true,
+        "sep_by_stranger": false,
+        "sep_by_wife": false,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "halved (Aḥmad's naṣṣ in Muhannā's report; al-Qāḍī: khulʿ is the husband's alone)",
+          "ruling": true
+        },
+        {
+          "who": "it drops the mahr (a wajh: as an annulment, or as shared by both spouses since it is at her request)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Khulʿ in the first kind: «ونص عليه أحمد في رواية مهنا أنه يوجب نصف المهر». Facts by Ibn Rajab's placement (from the husband alone); the reading halves. Taṣḥīḥ al-Furūʿ (v08:p334): «أحدهما: يتنصف، وهو الصحيح»; al-Muntahā and al-Iqnāʿ state halving by khulʿ «ولو بسؤالها». On the madhhab side. Follow-on: a khulʿ with a stranger, if valid, halves «وجها واحدا». The same masʾala recurs at f014 under the fourth kind."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f003",
+      "encoder": "mahr_halved_by_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sep_by_husband": true,
+        "sep_by_stranger": false,
+        "sep_by_wife": false,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "halved: the separation is from his Islam (one riwāya; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "it drops: he did his duty (wājib) and the separation came from her refusal (the other riwāya)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "His Islam when the wife is not a kitābiyya: «في إحدى الروايتين، وفي الأخرى يسقط المهر». Placed in the first kind; the reading halves. al-Inṣāf (v08:p211): «وإن أسلم قبلها، فلها نصف المهر) هذا المذهب. وعليه جمهور الأصحاب», with al-Mardāwī's own «قلت: وهو الصواب» for the other riwāya, al-Mardāwī's own view and not a madhhab label. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f004",
+      "encoder": "mahr_halved_by_separation",
+      "class": "derivable",
+      "facts": {
+        "sep_by_husband": true,
+        "sep_by_stranger": false,
+        "sep_by_wife": false,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": true,
+      "note": "Leading ruling: his apostasy before consummation, in the first kind: halved. al-Inṣāf (v08:p215) on the same: «وإن كان هو المرتد: فلها نصف المهر) بلا نزاع». The record runs on through the following items of the first kind (his admission of a bar, f005; his intercourse with her mother or daughter, f006), and the exception of the husband's annulments (al-fusūkh) for a harm from her (her defect, a lapsed condition, sharṭ), which drop the mahr; and into the second and third kinds."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f005",
+      "encoder": "mahr_halved_by_separation",
+      "class": "derivable",
+      "facts": {
+        "sep_by_husband": true,
+        "sep_by_stranger": false,
+        "sep_by_wife": false,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": true,
+      "note": "His admission of kinship, fosterage or another bar: «فيقبل منه في انفساخ النكاح دون سقوط النصف». From the husband alone: halved. al-Inṣāf (v08:p279) and al-Iqnāʿ repeat it without dispute."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f006",
+      "encoder": "mahr_halved_by_separation",
+      "class": "derivable",
+      "facts": {
+        "sep_by_husband": true,
+        "sep_by_stranger": false,
+        "sep_by_wife": false,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": true,
+      "note": "His intercourse with her mother or daughter by shubha or zinā: «فينفسخ نكاح البنت ويجب لها نصف الصداق نص عليه أحمد في رواية ابن هانئ». From the husband alone: halved. Follow-on in the record: the exception «الفسوخ التي يملكها الزوج لضرر يلحقه إما لظهور عيب في الزوجة أو فوات شرط فيسقط بها المهر» (the reading's husband_fasakh_for_her_harm bar), and the opening of the second kind (the elder wife suckling the younger)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f007",
+      "encoder": "mahr_halved_by_separation",
+      "class": "derivable",
+      "facts": {
+        "sep_by_husband": false,
+        "sep_by_stranger": true,
+        "sep_by_wife": false,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": true,
+      "note": "Second kind, from a stranger alone: a man forcing his father's or son's wife to intercourse before consummation: halved. Sharḥ al-Muntahā lists «كوطء أبي الزوج» among separations from a stranger that halve. The record runs into the third kind (her apostasy, which drops the mahr)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f008",
+      "encoder": "mahr_halved_by_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sep_by_husband": false,
+        "sep_by_stranger": false,
+        "sep_by_wife": true,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "it drops: the separation is from her (the madhhab per al-Inṣāf, Aḥmad's naṣṣ)",
+          "ruling": false
+        },
+        {
+          "who": "halved: she did her duty (wājib) and the annulment (faskh) is ascribed to his refusal (the other riwāya; Abū Bakr's choice)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Third kind, her Islam: «فيه رواية أخرى أن لها نصف المهر». From the wife alone; the reading drops it. al-Inṣāf (v08:p211): «فإن كانت هي المسلمة: فلا مهر لها) . هذا المذهب. نص عليه. وعليه جماهير الأصحاب», with «وعنه: لها نصف المهر. اختاره أبو بكر». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f009",
+      "encoder": "mahr_halved_by_separation",
+      "class": "derivable",
+      "facts": {
+        "sep_by_husband": false,
+        "sep_by_stranger": false,
+        "sep_by_wife": true,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": false,
+      "note": "Her suckling one through whom maḥramiyya arises between her and the husband, or her being suckled as a minor: from the wife alone, so the mahr drops. al-Inṣāf (v08:p279) lists «وإرضاعها من ينفسخ به نكاحها» among separations from her that drop it."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f010",
+      "encoder": "mahr_halved_by_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sep_by_husband": false,
+        "sep_by_stranger": false,
+        "sep_by_wife": true,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "it drops: her annulment (faskh) is ascribed to her, not to him (the aṣḥāb)",
+          "ruling": false
+        },
+        {
+          "who": "halved: the cause (sabab) is his defect and she is excused (Taqī al-Dīn, from Aḥmad's answer on the majbūb in Muhannā's report)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Her annulment for his defect: «قال الأصحاب: هو منسوب إليها لا إليه فسقط المهر». From the wife alone; the reading drops it. al-Inṣāf (v08:p280): «فإن ذلك يسقط مهرها بلا خلاف في المذهب، إلا توجيه لصاحب الفروع»; al-Muntahā states it. On the madhhab side. Follow-on: Ibn Rajab's farq between the spouses' annulments (both remove a harm and return what was given intact, unlike divorce), and al-Qāḍī's reading of the majbūb report (consummation occurred, a bar kept the full mahr from being fixed)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f011",
+      "encoder": "mahr_halved_by_separation",
+      "class": "derivable",
+      "facts": {
+        "sep_by_husband": false,
+        "sep_by_stranger": false,
+        "sep_by_wife": true,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": false,
+      "note": "Leading ruling: her annulment for his insolvency in the mahr or maintenance: «قال القاضي والأكثرون: هو منسوب إليها فيسقط به مهرها», and even on Abū Bakr's line «وأما الفسخ لعسرته فهو كالفسخ لعيبه». From the wife alone: it drops. al-Inṣāf (v08:p281): «وأما فسخها لإعساره بالمهر، أو بالنفقة وغير ذلك: فهو من جهتها. فلا تستحق شيئا بلا نزاع أعلمه». Follow-on: her annulment (faskh) for a lapsed valid condition (sharṭ), where Abū Bakr in al-Tanbīh gives half (al-Inṣāf: the drop is «الصحيح من المذهب»), and its qiyās to withholding maintenance he could give; Taqī al-Dīn's consequence for whoever values the buḍʿ at mahr al-mithl."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f012",
+      "encoder": "mahr_halved_by_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sep_by_husband": false,
+        "sep_by_stranger": false,
+        "sep_by_wife": true,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "no mahr: she alone annuls (faskh) (one riwāya; al-Khiraqī and others; the madhhab per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "halved: the master is entitled to the mahr and it does not drop by another's annulment (the riwāya of Muhannā; Abū Bakr)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The freed slave-woman's annulment under a slave before consummation: «وفيه روايتان». From the wife alone; the reading drops it. al-Inṣāf (v08:p182): «وإن كان قبله فلا مهر) . هذا المذهب. جزم به الخرقي»; al-Iqnāʿ lists «أو لعتقها تحت عبد» among separations that drop it. On the madhhab side. Follow-on: Ibn Rajab's answer that the master's manumission caused the annulment and so drops his right."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f013",
+      "encoder": "mahr_halved_by_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sep_by_husband": true,
+        "sep_by_stranger": false,
+        "sep_by_wife": true,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "halved (one of the two riwāyāt al-Qāḍī extracts)",
+          "ruling": true
+        },
+        {
+          "who": "it drops: the separation of liʿān falls only by her liʿān, so it is from her (Abū Bakr)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Fourth kind, shared by the spouses: their liʿān. On the reading's pinned side for a shared separation (halved). al-Inṣāf (v08:p281): «إحداهما: يسقط بها المهر. وهو المذهب»; Taṣḥīḥ al-Furūʿ «وهو الصحيح», calling the halving «وهو قوي»; Kashshāf states the drop. Off the madhhab side; ledger entry. Follow-on: al-Qāḍī's base, the inheritance of a wife he cursed in his last illness. Candidate farq against the pinned side: the separation of liʿān is completed by her liʿān (Abū Bakr), so it is from her."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f014",
+      "encoder": "mahr_halved_by_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sep_by_husband": true,
+        "sep_by_stranger": false,
+        "sep_by_wife": true,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "halved (Aḥmad's naṣṣ; al-Qāḍī and his companions)",
+          "ruling": true
+        },
+        {
+          "who": "it drops: a wajh if khulʿ is an annulment, ascribed to both as liʿān is; and one extracted even if it is a divorce, since it comes at her request",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Fourth kind, khulʿ again: «وقد سبق أن المنصوص عن أحمد أن لها نصف الصداق وهو قول القاضي وأصحابه». Shared by the spouses; the reading's pinned side halves. Taṣḥīḥ al-Furūʿ (v08:p334): «أحدهما: يتنصف، وهو الصحيح»; al-Inṣāf reports al-Muqniʿ's jazm. On the madhhab side. Follow-on: Ibn Abī Mūsā's jazm that she does not inherit from a husband she took khulʿ from in his illness, and the riwāya that khulʿ drops all marital rights."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f015",
+      "encoder": "mahr_halved_by_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sep_by_husband": false,
+        "sep_by_stranger": true,
+        "sep_by_wife": true,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "halved, giving weight to the seller, a stranger (Abū Bakr, al-Qāḍī and his companions; «أشهرهما»)",
+          "ruling": true
+        },
+        {
+          "who": "it drops, giving weight to her side, since the annulment (infisākh) follows her acceptance (the second wajh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Fifth kind, from the wife with a stranger: her buying her husband. Ibn Rajab marks halving «أشهرهما» (an author's label); the reading's pinned side halves. al-Inṣāf (v08:p281): «إحداهما: يتنصف بها المهر. وهو المذهب»; Taṣḥīḥ al-Furūʿ «وهو الصحيح»; al-Iqnāʿ states it. On the madhhab side. Follow-on: the husband's buying her, where Abū Bakr drops it (the seller is the master entitled to her mahr) and al-Kāfī ascribes it to her as with annulment for a defect; al-Iqnāʿ and Sharḥ al-Muntahā halve there too."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f016",
+      "encoder": "mahr_halved_by_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sep_by_husband": false,
+        "sep_by_stranger": true,
+        "sep_by_wife": true,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "it drops: the annulment (faskh) is ascribed to her (al-Qāḍī and those who follow him)",
+          "ruling": false
+        },
+        {
+          "who": "halved: Taqī al-Dīn's takhrīj of two wujūh, the separation being from her and a stranger",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Fifth kind: her yielding herself to one whose intercourse annuls the marriage (the husband's father or son). Facts by Ibn Rajab's placement (from the wife with a stranger); the reading's pinned side halves, one of the two wujūh Taqī al-Dīn extracts. No later treatment of the mahr in these facts was found in al-Inṣāf, al-Furūʿ, Kashshāf, Sharḥ al-Muntahā, al-Iqnāʿ or al-Muntahā (Sharḥ al-Muntahā halves «كوطء أبي الزوج» as a stranger's act «لأنه لا فعل للزوجة في ذلك», a different set of facts). By the bank's grade order (al-Qāḍī's named companions over a takhrīj) the drop prevails: off the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f017",
+      "encoder": "mahr_halved_by_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sep_by_husband": false,
+        "sep_by_stranger": false,
+        "sep_by_wife": false,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "nothing of the mahr: he is barred from keeping them, as in a void marriage (al-Qāḍī in al-Jāmiʿ and al-Khilāf; stated decisively by al-Mughnī and al-Muḥarrar)",
+          "ruling": false
+        },
+        {
+          "who": "halved (a wajh Ibn Rajab extracts from the next masʾala)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Sixth kind, the compulsory separation: a kāfir who becomes Muslim with more wives than he may keep; the marriages of the excess are annulled (infisākh). From no party's side, so the reading does not halve. al-Muntahā halves by his Islam «ما عدا مختارات من أسلم», which Sharḥ al-Muntahā glosses «للفراق مما زاد على أربع». On the madhhab side. Follow-on: divorce in a fāsid marriage, where Ibn ʿAqīl gives a wajh of halving and «على المشهور» it drops."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f018",
+      "encoder": "mahr_halved_by_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "sep_by_husband": false,
+        "sep_by_stranger": false,
+        "sep_by_wife": false,
+        "husband_fasakh_for_her_harm": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "half the mahr, assigned by lot (Abū Bakr's first tawjīh; Aḥmad in Muhannā's report inclines to half shared between them, «وما أخلقه أن يكون كذلك»)",
+          "ruling": true
+        },
+        {
+          "who": "nothing: he is compelled to divorce (ṭalāq), so it is as if the annulment came from her (Abū Bakr's second tawjīh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Sixth kind: two sisters married in two contracts, the first unknown, the husband ordered to divorce. Facts by Ibn Rajab's placement (compulsory, from no party's side); the reading drops it. al-Inṣāf (v08:p124): «فعلى المذهب: يلزم أحدهما نصف المهر، يقترعان عليه. على الصحيح من المذهب»; Kashshāf and al-Muntahā state it. Off the madhhab side; ledger entry. Follow-on: two walīs marrying her to two husbands, the first unknown (two wujūh; Abū Bakr and Abū Yaʿlā al-Najjād: nothing), and Taqī al-Dīn's takhrīj for a wife who inherits her husband. Candidate farq: a compelled divorce by one whose marriage to one of them is certainly valid (Kashshāf: «لأن نكاح واحدة منهما صحيح وقد فارقها قبل الدخول») versus a separation from no one's side."
+    }
+  ]
+}

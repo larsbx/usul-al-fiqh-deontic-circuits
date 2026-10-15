@@ -696,6 +696,96 @@ import Usul
 #guard (Usul.Readings.RajabA20.wifeRuleApplies false true) == true
 #guard (Usul.Readings.RajabA20.wifeRuleApplies true false) == true
 #guard (Usul.Readings.RajabA20.wifeRuleApplies true true) == false
+#guard (Usul.Readings.RajabA21.womanHalf false false) == false
+#guard (Usul.Readings.RajabA21.womanHalf false true) == false
+#guard (Usul.Readings.RajabA21.womanHalf true false) == false
+#guard (Usul.Readings.RajabA21.womanHalf true true) == true
+#guard (Usul.Readings.RajabA21.determinateHolderRule false) == false
+#guard (Usul.Readings.RajabA21.determinateHolderRule true) == true
+#guard (Usul.Readings.RajabA21.causeGovernsTransfer false false) == false
+#guard (Usul.Readings.RajabA21.causeGovernsTransfer false true) == false
+#guard (Usul.Readings.RajabA21.causeGovernsTransfer true false) == true
+#guard (Usul.Readings.RajabA21.causeGovernsTransfer true true) == false
+#guard (Usul.Readings.RajabA21.marriageProhibited false false false false) == false
+#guard (Usul.Readings.RajabA21.marriageProhibited false false false true) == true
+#guard (Usul.Readings.RajabA21.marriageProhibited false false true false) == true
+#guard (Usul.Readings.RajabA21.marriageProhibited false false true true) == true
+#guard (Usul.Readings.RajabA21.marriageProhibited false true false false) == true
+#guard (Usul.Readings.RajabA21.marriageProhibited false true false true) == true
+#guard (Usul.Readings.RajabA21.marriageProhibited false true true false) == true
+#guard (Usul.Readings.RajabA21.marriageProhibited false true true true) == true
+#guard (Usul.Readings.RajabA21.marriageProhibited true false false false) == true
+#guard (Usul.Readings.RajabA21.marriageProhibited true false false true) == true
+#guard (Usul.Readings.RajabA21.marriageProhibited true false true false) == true
+#guard (Usul.Readings.RajabA21.marriageProhibited true false true true) == true
+#guard (Usul.Readings.RajabA21.marriageProhibited true true false false) == true
+#guard (Usul.Readings.RajabA21.marriageProhibited true true false true) == true
+#guard (Usul.Readings.RajabA21.marriageProhibited true true true false) == true
+#guard (Usul.Readings.RajabA21.marriageProhibited true true true true) == true
+#guard (Usul.Readings.RajabA21.mahrEstablished false false false false) == false
+#guard (Usul.Readings.RajabA21.mahrEstablished false false false true) == true
+#guard (Usul.Readings.RajabA21.mahrEstablished false false true false) == false
+#guard (Usul.Readings.RajabA21.mahrEstablished false false true true) == true
+#guard (Usul.Readings.RajabA21.mahrEstablished false true false false) == false
+#guard (Usul.Readings.RajabA21.mahrEstablished false true false true) == true
+#guard (Usul.Readings.RajabA21.mahrEstablished false true true false) == true
+#guard (Usul.Readings.RajabA21.mahrEstablished false true true true) == true
+#guard (Usul.Readings.RajabA21.mahrEstablished true false false false) == true
+#guard (Usul.Readings.RajabA21.mahrEstablished true false false true) == true
+#guard (Usul.Readings.RajabA21.mahrEstablished true false true false) == true
+#guard (Usul.Readings.RajabA21.mahrEstablished true false true true) == true
+#guard (Usul.Readings.RajabA21.mahrEstablished true true false false) == true
+#guard (Usul.Readings.RajabA21.mahrEstablished true true false true) == true
+#guard (Usul.Readings.RajabA21.mahrEstablished true true true false) == true
+#guard (Usul.Readings.RajabA21.mahrEstablished true true true true) == true
+#guard (Usul.Readings.RajabA22.halCarriesClaim false false) == false
+#guard (Usul.Readings.RajabA22.halCarriesClaim false true) == false
+#guard (Usul.Readings.RajabA22.halCarriesClaim true false) == true
+#guard (Usul.Readings.RajabA22.halCarriesClaim true true) == false
+#guard (Usul.Readings.RajabA22.budExitCharged false false false) == false
+#guard (Usul.Readings.RajabA22.budExitCharged false false true) == false
+#guard (Usul.Readings.RajabA22.budExitCharged false true false) == true
+#guard (Usul.Readings.RajabA22.budExitCharged false true true) == false
+#guard (Usul.Readings.RajabA22.budExitCharged true false false) == true
+#guard (Usul.Readings.RajabA22.budExitCharged true false true) == false
+#guard (Usul.Readings.RajabA22.budExitCharged true true false) == true
+#guard (Usul.Readings.RajabA22.budExitCharged true true true) == false
+#guard (Usul.Readings.RajabA23.grandchildCountsAsChild false false false) == false
+#guard (Usul.Readings.RajabA23.grandchildCountsAsChild false false true) == false
+#guard (Usul.Readings.RajabA23.grandchildCountsAsChild false true false) == true
+#guard (Usul.Readings.RajabA23.grandchildCountsAsChild false true true) == false
+#guard (Usul.Readings.RajabA23.grandchildCountsAsChild true false false) == true
+#guard (Usul.Readings.RajabA23.grandchildCountsAsChild true false true) == true
+#guard (Usul.Readings.RajabA23.grandchildCountsAsChild true true false) == true
+#guard (Usul.Readings.RajabA23.grandchildCountsAsChild true true true) == true
+#guard (Usul.Readings.RajabA23.transfersToNewIdda false false false) == false
+#guard (Usul.Readings.RajabA23.transfersToNewIdda false false true) == false
+#guard (Usul.Readings.RajabA23.transfersToNewIdda false true false) == false
+#guard (Usul.Readings.RajabA23.transfersToNewIdda false true true) == false
+#guard (Usul.Readings.RajabA23.transfersToNewIdda true false false) == false
+#guard (Usul.Readings.RajabA23.transfersToNewIdda true false true) == true
+#guard (Usul.Readings.RajabA23.transfersToNewIdda true true false) == true
+#guard (Usul.Readings.RajabA23.transfersToNewIdda true true true) == true
+#guard (Usul.Readings.RajabA24.mahrHalved false false false false) == false
+#guard (Usul.Readings.RajabA24.mahrHalved false false false true) == false
+#guard (Usul.Readings.RajabA24.mahrHalved false false true false) == false
+#guard (Usul.Readings.RajabA24.mahrHalved false false true true) == false
+#guard (Usul.Readings.RajabA24.mahrHalved false true false false) == true
+#guard (Usul.Readings.RajabA24.mahrHalved false true false true) == false
+#guard (Usul.Readings.RajabA24.mahrHalved false true true false) == true
+#guard (Usul.Readings.RajabA24.mahrHalved false true true true) == false
+#guard (Usul.Readings.RajabA24.mahrHalved true false false false) == true
+#guard (Usul.Readings.RajabA24.mahrHalved true false false true) == false
+#guard (Usul.Readings.RajabA24.mahrHalved true false true false) == true
+#guard (Usul.Readings.RajabA24.mahrHalved true false true true) == false
+#guard (Usul.Readings.RajabA24.mahrHalved true true false false) == true
+#guard (Usul.Readings.RajabA24.mahrHalved true true false true) == false
+#guard (Usul.Readings.RajabA24.mahrHalved true true true false) == true
+#guard (Usul.Readings.RajabA24.mahrHalved true true true true) == false
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+#guard (Usul.Readings.RajabA25.firstAslGoverns false true) == false
+#guard (Usul.Readings.RajabA25.firstAslGoverns true false) == true
+#guard (Usul.Readings.RajabA25.firstAslGoverns true true) == true
 #guard (Usul.Readings.RajabA3.disposalStands false false) == true
 #guard (Usul.Readings.RajabA3.disposalStands false true) == true
 #guard (Usul.Readings.RajabA3.disposalStands true false) == true

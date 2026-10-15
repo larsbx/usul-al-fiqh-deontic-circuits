@@ -1,0 +1,306 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f001",
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The non-qadhf explanation of a kināya is accepted: al-Inṣāf labels it «وهو المذهب» and al-Iqnāʿ and Kashshāf state it decisively, against Ibn Rajab's «على الصحيح», Ibn ʿAqīl and al-Qāḍī's riwāya that it is explicit.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p215",
+          "excerpt_ar": "فهذا كناية. إن فسره بما يحتمله غير القذف: قبل قوله في أحد الوجهين. وهما روايتان. وهو المذهب، صححه في المغني، والشرح، والتصحيح.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ's list of kināyāt, which includes words said «لمن يخاصمه»; he then reports «وفي الآخر: جميعه صريح. اختاره القاضي» and Ibn ʿAqīl's view with dalālat al-ḥāl."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p264",
+          "excerpt_ar": "لأمه فهذه كناية: إن فسره بالزنا فهو قذف وإن فسره بما يحتمله غير القذف قبل مع يمينه وعزر",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn, after a list that includes «أو يقول لمن يخاصمه»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p112",
+          "excerpt_ar": "لأنه أقر على نفسه بما هو الأغلظ عليه (وإن فسره بما يحتمله غير القذف قبل) لأنه يحتمل غير الزنا كما ذكرناه (مع يمينه) .",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Sharḥ of the same matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f003",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "No later work treats the mocking case; the muʿtamad's general rule (his later denial of meaning Islam is not accepted, «نصا») grades as qiyās and lands on the riwāya against the reading.",
+      "evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p304",
+          "excerpt_ar": "وإن أتى الكافر بالشهادتين ثم قال: لم أرد الإسلام صار مرتدا ويجبر",
+          "position": 1,
+          "grade": "qiyas",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn's general rule, without the qualifier of mockery or of a state showing his truth."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p181",
+          "excerpt_ar": "(وإن أتى الكافر بالشهادتين ثم قال لم أرد الإسلام صار مرتدا ويجبر على الإسلام نصا) لأنه قد حكم بإسلامه فلم يقبل رجوعه",
+          "position": 1,
+          "grade": "qiyas",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Sharḥ of the general rule, reporting it as Aḥmad's naṣṣ."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f007",
+      "grades": [
+        "nass",
+        "nass",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The thief who claims the thing is his is not cut: «هذا المذهب» in al-Inṣāf, and Kashshāf and al-Iqnāʿ state it even of one known for theft, against the riwāya of cutting and al-Targhīb's third.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p281",
+          "excerpt_ar": "قوله (ومن سرق عينا، وادعى أنها ملكه: لم يقطع) . هذا المذهب. وعليه أكثر الأصحاب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "He reports «وعنه: يقطع بحلف المسروق منه» and «وعنه: لا يقطع إلا أن يكون معروفا بالسرقة، اختاره في الترغيب»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v06:p143",
+          "excerpt_ar": "(ولا قطع عليه) أي السارق (ولو كان معروفا بالسرقة لأن صدقه محتمل) فيكون شبهة في درء الحد",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Explicitly of the branch annotated, the thief known for theft."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p283",
+          "excerpt_ar": "فالقول قول المسروق منه مع يمينه فإن حلف سقط دعوى السارق ولا قطع عليه ولو كان معروفا بالسرقة لأن صدقه محتمل",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn, of the same branch."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f009",
+      "grades": [
+        "nass",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The gift without stipulation calls for no thawāb even where custom shows he gave to be repaid: «هذا المذهب مطلقا» in al-Inṣāf, stated in al-Iqnāʿ and Kashshāf, against Ḥanbal's report.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p116",
+          "excerpt_ar": "قوله (وهي تمليك في حياته بغير عوض) . هذا المذهب مطلقا. وعليه الأصحاب. وقيل: الهبة تقتضي عوضا.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "He continues «وقيل: ما عرف. فلو أعطاه ليعاوضه ... فكالشرط. واختاره الشيخ تقي الدين»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p030",
+          "excerpt_ar": "ولا تقتضي عوضا ولو مع عرف كان يعطيه ليعارضه أو يقضي له حاجة",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn, of the gift whose circumstance shows it seeks a return."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p300",
+          "excerpt_ar": "(ولا تقتضي) الهبة (عوضا ولو مع عرف كأن يعطيه) أي: يعطي الأدنى أعلى منه (ليعاوضه أو يقضي له حاجة) ولم يصرح له بذلك؛ لأن مدلول اللفظ انتفاء العوض",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "It goes on «والقرينة لا تساويه فلا يصح إعمالها»: the circumstance is not given effect."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f013",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "In the dispute over the amount, the husband's word on oath is the madhhab in al-Inṣāf, stated in Kashshāf (even where his claim is not the mahr al-mithl) and al-Muntahā, against the riwāya for the claimant of the mahr al-mithl.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p289",
+          "excerpt_ar": "قوله (وإن اختلف الزوجان في قدر الصداق، فالقول قول الزوج، مع يمينه) . وهو المذهب.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "He then reports «وعنه: القول قول من يدعي مهر المثل منهما»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p154",
+          "excerpt_ar": "(فقول زوج) بيمينه (أو وارثه بيمينه) وكذا وليه. (ولو لم يكن) ما ادعاه الزوج أو وليه أو وارثه (مهر مثل) لأنه منكر لما يدعى عليه",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Explicitly of the branch annotated, where the husband's claim is not the mahr al-mithl."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p154",
+          "excerpt_ar": "وإذا اختلفا أو ورثتهما أو زوج، وولي صغيرة في قدر صداق أو عينه أو صفته أو جنسه أو ما يستقر به فقول زوج أو وارثه بيمينه،",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, al-Muntahā",
+          "note": "The matn."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f003",
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "On the riwāya that the second husband is more entitled, al-Inṣāf leaves the two wujūh but refers them to «الصحيح من المذهب: أن خروج البضع غير متقوم», the taṣḥīḥ of the general rule: she owes nothing, as the reading gives.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p160",
+          "excerpt_ar": "أحدهما: تضمن، اختاره القاضي؛ لأن خروج البضع متقوم. والثاني: لا تضمن، ويأتي في باب الرضاع: أن الصحيح من المذهب: أن خروج البضع غير متقوم.",
+          "position": 1,
+          "grade": "qiyas",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Preceded by «وأطلقهما في القواعد»: the taṣḥīḥ is of the general rule, not of this masʾala."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f004",
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        [
+          "nass",
+          "jazm"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The muhājira's mahr is not returned to her kāfir husband: «أكثر الأصحاب» as Ibn Rajab reports, and al-Iqnāʿ and Kashshāf state it, against the riwāya and Taqī al-Dīn's choice.",
+      "evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p041",
+          "excerpt_ar": "وإذا عقدها من غير شرط لم يجز لنا رد من جاءنا مسلما أو بأمان حرا كان أو عبدا رجلا أو امرأة ولا يجب رد مهر المرأة",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn on the hudna made without the stipulation."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p115",
+          "excerpt_ar": "(ولا يجب رد مهر المرأة) إليهم لأنها استحقته بما نيل منها فلا يرد لغيرها.",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Sharḥ of the same."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f005",
+      "grades": [
+        "jazm",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Khulʿ on a forbidden thing both know is as a khulʿ without ʿiwaḍ: «الصحيح من المذهب» in al-Inṣāf, with al-Iqnāʿ and Kashshāf, against Taqī al-Dīn's return to the mahr.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p398",
+          "excerpt_ar": "كالخلع بغير عوض، على ما مر. وهذا هو الصحيح من المذهب. جزم به في المغني، والمحرر، والشرح، والنظم، والفروع، وغيرهم.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «وإن خالعها بمحرم كالخمر، والحر فهو كالخلع بغير عوض»; he then quotes Ibn Rajab on Taqī al-Dīn."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p256",
+          "excerpt_ar": "وإن خالعها بمجرم: كالخمر والحر فكخلع بلا عوض إن كانا يعلمانه وإن كانا يجهلانه صح وكان له بدله",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn, of the case where both know it."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p219",
+          "excerpt_ar": "(وإن خالعها بمحرم كالخمر والحر فكخلع بلا عوض إن كانا يعلمانه) لأن الخلع على ذلك مع العلم بتحريمه يدل على رضا فاعله بغير شيء",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "He adds that the exit of the buḍʿ from the husband's ownership is not valued."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f006",
+      "grades": [
+        "nass",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The father may not make khulʿ for his minor daughter with her property: «هذا المذهب» in al-Inṣāf on Aḥmad's naṣṣ, stated in al-Iqnāʿ and Kashshāf, against the later scholars' takhrīj.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p388",
+          "excerpt_ar": "قوله (وليس له خلع ابنته الصغيرة بشيء من مالها) . هذا المذهب. وعليه أكثر الأصحاب. وجزم به في الهداية، والمذهب",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "He adds «فعليه: لو فعل كان الضمان عليه. نص عليه في رواية محمد بن الحكم»."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p253",
+          "excerpt_ar": "وليس لأب خلع ابنته الصغيرة ولا طلاقها بشيء من مالها ويصح الخلع مع الزوجة البالغة الرشيدة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p214",
+          "excerpt_ar": "(وليس لأب خلع ابنته الصغيرة) أو المجنونة أو السفيهة بشيء من مالها (ولإطلاقها بشيء من مالها) لأنه إنما يملك التصرف بما لها فيه الحظ",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Sharḥ: «وليس في هذا حظ»."
+        }
+      ]
+    }
+  ]
+}

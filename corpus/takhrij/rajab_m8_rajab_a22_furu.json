@@ -1,0 +1,442 @@
+{
+  "suite": "m8_rajab_rajab_a22",
+  "status": "candidate",
+  "provenance": "Shard rajab-a22 (lane A): every farʿ record of Ibn Rajab's qawāʿid 151 and 154, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA22). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f000",
+      "encoder": "dalalat_hal_carries_claim",
+      "class": "derivable",
+      "facts": {
+        "hal_supports_claim": false,
+        "hal_belies_claim": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the claim to have meant other than ṭalāq is not accepted in anger and dispute (Ibn Rajab, stated without dispute)",
+          "ruling": false
+        }
+      ],
+      "note": "The qāʿida's opening example: «كنايات الطلاق في حالة الغضب والخصومة لا يقبل دعوى إرادة غير الطلاق بها». The state of anger or dispute belies the claim that he meant something other than ṭalāq, so on the reading the claim is rejected. No dispute is reported in the record."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f001",
+      "encoder": "dalalat_hal_carries_claim",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "hal_supports_claim": false,
+        "hal_belies_claim": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "his explanation by a non-qadhf meaning is not accepted where the state indicates qadhf (Ibn Rajab «على الصحيح»; Ibn ʿAqīl: with the state they are explicit; al-Qāḍī and many of his companions: all of it is explicit, the other riwāya)",
+          "ruling": false
+        },
+        {
+          "who": "his explanation by a meaning other than qadhf is accepted (the riwāya al-Inṣāf labels «وهو المذهب»; the contrary «على الصحيح» implies)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Kināyāt of qadhf «وحكمها كذلك على الصحيح، حتى إن ابن عقيل جعلها مع دلالة الحال صرائح»: the state belies a non-qadhf explanation, so on the reading it is rejected. al-Inṣāf (v10:p215) labels the contrary the madhhab: «إن فسره بما يحتمله غير القذف: قبل قوله في أحد الوجهين. وهما روايتان. وهو المذهب», with al-Iqnāʿ and Kashshāf stating it decisively; their examples include words said «لمن يخاصمه», so the madhhab's acceptance covers the state of dispute. Off the madhhab side; ledger entry. al-Inṣāf's fāʾida that «القرينة هنا: ككناية الطلاق» (from al-Furūʿ, «ذكره جماعة») is noted but does not displace the taṣḥīḥ."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f002",
+      "encoder": "dalalat_hal_carries_claim",
+      "class": "derivable",
+      "facts": {
+        "hal_supports_claim": true,
+        "hal_belies_claim": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the captive's word that he spoke under compulsion is accepted (Ibn Rajab, stated without dispute)",
+          "ruling": true
+        }
+      ],
+      "note": "«لو تلفظ الأسير بكلمة الكفر ثم ادعى أنه كان كرها فالقول قوله ; لأن الأسر دليل الإكراه والتقية»: captivity supports the claim of compulsion, so it is accepted. No dispute is reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f003",
+      "encoder": "dalalat_hal_carries_claim",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "hal_supports_claim": true,
+        "hal_belies_claim": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "his claim not to have meant Islam is accepted, the state indicating his truth (one of the two riwāyas al-Qāḍī reports)",
+          "ruling": true
+        },
+        {
+          "who": "it is not accepted: he is judged a Muslim (the other riwāya; the muʿtamad's general rule, «صار مرتدا ويجبر على الإسلام نصا»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The kāfir who utters the two shahādas in mockery or by way of reporting and says he did not mean Islam, «مع دلالة الحال على صدقه، فهل يقبل منه؟ على روايتين»: the state supports his claim, so on the reading it is accepted. No later work treats the mocking case itself; al-Iqnāʿ and Kashshāf state the general rule decisively, «وإن أتى الكافر بالشهادتين ثم قال: لم أرد الإسلام صار مرتدا ويجبر» («نصا» in Kashshāf), graded as the general rule (qiyās). The bank's grade order then lands on the other riwāya: off the madhhab side; ledger entry. Follow-on: an iqrār of wealth in that state is extracted on the same two riwāyas, «وأفتى جماعة بلزوم ما أقر به»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f004",
+      "encoder": "dalalat_hal_carries_claim",
+      "class": "derivable",
+      "facts": {
+        "hal_supports_claim": true,
+        "hal_belies_claim": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the confession of one wrongfully imprisoned or beaten is not held against him when he claims compulsion (Aḥmad's naṣṣ)",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «لو أقر المحبوس أو المضروب عدوانا ثم ادعى الإكراه قبل قوله نص عليه»: wrongful imprisonment or beating supports the claim of compulsion. Follow-on: one brought before a sulṭān who confesses and claims bewilderment is not believed (also a naṣṣ), with Ibn Rajab's takhrīj that he is believed «إذا ظهرت منه أمارة ذلك من تلجلجه في كلام ورعدة ونحوها» — the same reading on other facts."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f005",
+      "encoder": "dalalat_hal_carries_claim",
+      "class": "derivable",
+      "facts": {
+        "hal_supports_claim": false,
+        "hal_belies_claim": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the ḥarbī entering armed who claims to have come seeking amān is not believed (Aḥmad's naṣṣ)",
+          "ruling": false
+        }
+      ],
+      "note": "Leading ruling: «لو دخل حربي إلينا ومعه سلاح فادعى أنه جاء مستأمنا لم يقبل قوله، وإن لم يكن معه سلاح قبل نص عليه»: the weapon belies the claim, so it is rejected; unarmed, the reading accepts it. Follow-on: a soldier brings a ḥarbī claiming to have captured him and the ḥarbī says he was given amān: two riwāyas, and a third, «أن القول قول من يدل الحال على صدقه لضعفه أو قوته» — the reading itself."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f006",
+      "encoder": "dalalat_hal_carries_claim",
+      "class": "derivable",
+      "facts": {
+        "hal_supports_claim": true,
+        "hal_belies_claim": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the master's word that he meant to report the ʿitq by payment is accepted, and the mukātab is not freed (al-Qāḍī in al-Mujarrad; Ibn ʿAqīl)",
+          "ruling": true
+        }
+      ],
+      "note": "The mukātab pays, the master says «أنت حر», the payment proves owed to another, and the master says he meant to report the ʿitq by payment: «فالقول قوله ذكره القاضي في المجرد وابن عقيل». The state (the payment just received) supports the claim of reporting. al-Inṣāf (v07:p454): «لم يعتق. قاله الأصحاب». Ibn Rajab sets beside it Aḥmad's naṣṣ in al-Marwazī's report on a different masʾala (the husband who saw his wife go out and said «قد فعلت أنت طالق»: his divorce falls, «ولم يدينه»), and the dispute between al-Qāḍī and Ibn Abī Mūsā on «أنت طالق أن دخلت»; he ends «وجعل السبب كالشرط اللفظي أولى», which agrees with the master's side. No contrary position on these facts is reported, so the case is derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f007",
+      "encoder": "dalalat_hal_carries_claim",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "hal_supports_claim": false,
+        "hal_belies_claim": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "he is not cut, his claim being possible (a riwāya; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "he is cut (a riwāya)",
+          "ruling": false
+        },
+        {
+          "who": "he is cut if known for theft, otherwise not (the third riwāya, which the author of al-Targhīb chose)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The thief who claims the stolen thing is his: «ففي قطعه روايتان. ثالثها: إن كان معروفا بالسرقة قطع وإلا فلا». The record does not say whether he is known for theft; the case is annotated on the branch where he is, the branch on which the qāʿida's own principle operates and the khilāf still stands: being known for theft belies the claim, so on the reading he is cut. al-Inṣāf (v10:p281): «لم يقطع) . هذا المذهب. وعليه أكثر الأصحاب»; Kashshāf and al-Iqnāʿ add «ولو كان معروفا بالسرقة لأن صدقه محتمل». Off the madhhab side; ledger entry. On the other branch the reading carries nothing and the general rule of ḥadd decides."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f008",
+      "encoder": "dalalat_hal_carries_claim",
+      "class": "derivable",
+      "facts": {
+        "hal_supports_claim": true,
+        "hal_belies_claim": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "one known to take a wage for the work is owed the wage (Ibn Rajab, stated without dispute)",
+          "ruling": true
+        }
+      ],
+      "note": "«لو ادعى دفع ثوبه إلى من يخيطه أو يقصره أو ركب سفينة وهو معروف بأخذ الأجرة على ذلك استحق الأجرة»: his being known to work for a wage supports the wage claim. No dispute is reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f009",
+      "encoder": "dalalat_hal_carries_claim",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "hal_supports_claim": true,
+        "hal_belies_claim": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the thawāb is due by the giver's evident state (what Ḥanbal transmits from Aḥmad)",
+          "ruling": true
+        },
+        {
+          "who": "it is not due without stipulation (Ibn Rajab's «والمشهور خلافه»; the madhhab per al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The gift by which the giver's state shows he seeks thawāb, without stipulation: «نقل حنبل عن أحمد ما يدل على وجوب [الثواب]، والمشهور خلافه». The state indicates the thawāb, so on the reading it attaches. al-Inṣāf (v07:p116) on the hiba as «تمليك ... بغير عوض»: «هذا المذهب مطلقا. وعليه الأصحاب», and al-Iqnāʿ «ولا تقتضي عوضا ولو مع عرف كان يعطيه ليعارضه أو يقضي له حاجة», with Kashshāf «والقرينة لا تساويه». Off the madhhab side; ledger entry. al-Inṣāf reports Taqī al-Dīn's choice of the contrary («فكالشرط»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f010",
+      "encoder": "dalalat_hal_carries_claim",
+      "class": "derivable",
+      "facts": {
+        "hal_supports_claim": true,
+        "hal_belies_claim": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the property found beside the foundling is ruled his (Ibn Rajab, stated without dispute)",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «لو وجد لقيط وبجنبه مال ظاهر أو مدفون طريا فإنه يحكم له به»: the property's position supports his ownership. Follow-ons: goods or food near a man or before him, and Ibn ʿAqīl's bundle of clothes beside the one standing by it; Ibn Rajab's restriction «وينبغي تقييده بمن كان يليق به حملها دون من لا يحملها مثله» is the reading's own bar where the state belies the claim."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f011",
+      "encoder": "dalalat_hal_carries_claim",
+      "class": "derivable",
+      "facts": {
+        "hal_supports_claim": true,
+        "hal_belies_claim": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "in the spouses' dispute over household goods, what suits the man is his and what suits women is hers (Ibn Rajab, stated without dispute)",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «لو تنازع الزوجان في متاع البيت فما صلح للرجل فهو للرجل وما صلح للنساء فهو للمرأة»: what suits one spouse supports that spouse's claim. Follow-ons in the same vein: two craftsmen over shop tools, the house owner and the tailor over a needle, lessor and lessee over a fitted shelf; and of this kind the lawth in qasāma, judgement by the ties of the reed fence (a riwāya Ibn Abī Mūsā reports), and attaching lineage by the qāfa."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f012",
+      "encoder": "dalalat_hal_carries_claim",
+      "class": "derivable",
+      "facts": {
+        "hal_supports_claim": false,
+        "hal_belies_claim": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "a claim the apparent state shows false is not heard (al-Qāḍī in his Khilāf, «بغير خلاف»)",
+          "ruling": false
+        }
+      ],
+      "note": "Leading ruling: «لو ادعى دعوى يشهد الظاهر بكذبها مثل أن ادعى على الخليفة أنه اشترى منه ما فيه ثقل وحملها بيده لم تسمع دعواه بغير خلاف»: the state belies the claim. Follow-on: an unspecified claim against him, two riwāyas on hearing it before he shows it has a basis, «لاحتمال معاملته بوكيله»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f013",
+      "encoder": "dalalat_hal_carries_claim",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "hal_supports_claim": true,
+        "hal_belies_claim": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the word is with the spouse who claims the mahr al-mithl, here the wife (the riwāya Ibn Rajab cites; al-Khiraqī and others state it)",
+          "ruling": true
+        },
+        {
+          "who": "the word is with the husband, on oath (the other riwāya; the madhhab per al-Inṣāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Spouses dispute the amount of the mahr: «فالقول قول من يدعي مهر المثل على إحدى الروايتين». The two riwāyas part only where the wife is the one claiming the mahr al-mithl (where the husband claims it, both give him the word); the case is annotated on that branch: her claim agrees with the mahr al-mithl, so on the reading it is accepted. al-Inṣāf (v08:p289): «فالقول قول الزوج، مع يمينه) . وهو المذهب», and Kashshāf «(ولو لم يكن) ما ادعاه الزوج ... (مهر مثل)», with al-Muntahā stating it decisively. Off the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f000",
+      "encoder": "bud_exit_charged",
+      "class": "derivable",
+      "facts": {
+        "charged_unconsummated_mahr": true,
+        "husband_elects_mahr": false,
+        "wife_bears_exit": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "one who corrupts a marriage before consummation owes the husband the half mahr he must pay (agreed; three maʾkhadhs)",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «لو أفسد مفسد نكاح امرأة قبل الدخول بها برضاع أو غيره فإنه يجب عليه نصف المهر حيث يلزم الزوج نصف المهر»; al-Inṣāf (v09:p340) «بلا نزاع». On the reading's marked side (not valued in itself) the half is owed by the second maʾkhadh: «المفسد قرر هذا النصف على الزوج». Follow-ons: where the husband owes nothing (the father or son who has intercourse with her before consummation, with her consent), two wujūh «متنزلان على أن البضع هو متقوم أم لا»; Muhannā's report of the daughter sent in her mother's place; after consummation two wujūh, Aḥmad's naṣṣ in Ibn al-Qāsim's report that the corrupter owes the mahr (labelled «وهو المذهب» in al-Inṣāf v09:p342) against Ibn Abī Mūsā's leaning and a group of later scholars — the candidate residue of this reading, not annotated here; the wife who corrupts it alone owes nothing «بغير خلاف» (al-aṣḥāb), Taqī al-Dīn holding she does."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f001",
+      "encoder": "bud_exit_charged",
+      "class": "derivable",
+      "facts": {
+        "charged_unconsummated_mahr": true,
+        "husband_elects_mahr": false,
+        "wife_bears_exit": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "witnesses to a ṭalāq who retract before consummation owe the half mahr (Ibn Rajab, stated without dispute)",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «شهود الطلاق إذا رجعوا قبل الدخول فإنهم يغرمون نصف المهر»: their testimony fixed on the husband the half of an unconsummated mahr. Follow-on: after consummation, «فهل يغرمون المهر كله أم لا يغرمون شيئا؟ على روايتين، مأخذهما تقويم البضع وعدمه», and on liability the named mahr or (a qīl) the mahr al-mithl."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f002",
+      "encoder": "bud_exit_charged",
+      "class": "derivable",
+      "facts": {
+        "charged_unconsummated_mahr": false,
+        "husband_elects_mahr": true,
+        "wife_bears_exit": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the returning husband who elects the mahr takes it from the second husband: the mahr he himself paid («على أصح الروايتين»)",
+          "ruling": true
+        },
+        {
+          "who": "he takes it from the second husband: the mahr the second paid her (the other riwāya)",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: the wife of the missing man remarries after the waiting period and he returns: «فإنه يخير بين زوجته وبين المهر، فإن اختار المهر أخذ من الزوج الثاني المهر». His marriage standing, he elects the mahr in its place, so on the reading the exit carries a mahr; the two riwāyas differ only on which mahr, both giving him one, so the case is derivable. Follow-on: «فهل يستقر ضمانه على الزوج الثاني أم يرجع به على المرأة؟ على روايتين» (recourse on her because the separation came from her; or none, because she earned it by the intercourse)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f003",
+      "encoder": "bud_exit_charged",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "charged_unconsummated_mahr": false,
+        "husband_elects_mahr": false,
+        "wife_bears_exit": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "she owes her husband the mahr (al-Qāḍī's choice, «لأن خروج البضع متقوم»)",
+          "ruling": true
+        },
+        {
+          "who": "she owes nothing (the other wajh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The husband takes her back in the ʿidda with witnesses, she does not learn of it, remarries and the second consummates; on the riwāya that the second is more entitled to her, «فهل تضمن المرأة لزوجها المهر أم لا؟ على وجهين، واختار القاضي الضمان». She herself bears the exit, so on the reading she owes nothing. al-Inṣāf (v09:p160) gives the two wujūh and refers to «أن الصحيح من المذهب: أن خروج البضع غير متقوم», the taṣḥīḥ of the general rule. On the madhhab side; ledger entry. The riwāya the case rests on (that the second husband is more entitled) is itself against the madhhab («ردت إليه», al-Inṣāf v09:p160)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f004",
+      "encoder": "bud_exit_charged",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "charged_unconsummated_mahr": false,
+        "husband_elects_mahr": false,
+        "wife_bears_exit": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the Muslim who marries her must return the kāfir husband's mahr (one of the two riwāyas Ibn Abī Mūsā reports; the ẓāhir of the Qurʾān; Taqī al-Dīn)",
+          "ruling": true
+        },
+        {
+          "who": "he need not (the other riwāya; «أكثر الأصحاب على عدم الوجوب»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The muhājira who marries a Muslim after her ʿidda: must he return to her kāfir husband the mahr he paid her? The exit came by her Islam and hijra; nothing fixed an unconsummated mahr on the kāfir husband and he elects nothing, so on the reading no mahr is charged. al-Iqnāʿ (v02:p041) «ولا يجب رد مهر المرأة», with Kashshāf «لأنها استحقته بما نيل منها فلا يرد لغيرها»; al-Furūʿ leaves the two riwāyas unweighted. On the madhhab side; ledger entry. Follow-on: the two sides' readings of the Ḥudaybiya peace and its sharṭ of returning the women («رد النساء»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f005",
+      "encoder": "bud_exit_charged",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "charged_unconsummated_mahr": false,
+        "husband_elects_mahr": false,
+        "wife_bears_exit": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "it is as a khulʿ without ʿiwaḍ: the husband takes nothing (Abū Bakr, al-Qāḍī and the aṣḥāb)",
+          "ruling": false
+        },
+        {
+          "who": "he returns to the mahr, as in nikāḥ (Taqī al-Dīn)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Khulʿ on a forbidden thing both know to be forbidden (wine, pork): «قال أبو بكر والقاضي والأصحاب: هو كالخلع الخالي عن العوض فإذا صححناه لم يلزم الزوج شيء ... وعند الشيخ تقي الدين يرجع إلى المهر كالنكاح». The wife bears the exit, so on the reading it carries no mahr. al-Inṣāf (v08:p398): «وهذا هو الصحيح من المذهب»; al-Iqnāʿ and Kashshāf state it, Kashshāf giving the reason «لأن خروج البضع من ملك الزوج غير متق[و]م». On the madhhab side; ledger entry. Follow-on: the iḥtimāl in al-Khiraqī's words on the slave-woman's khulʿ on goods in her hand."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f006",
+      "encoder": "bud_exit_charged",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "charged_unconsummated_mahr": false,
+        "husband_elects_mahr": false,
+        "wife_bears_exit": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the father may not, and is liable (the madhhab; Aḥmad's naṣṣ in Muḥammad b. al-Ḥakam's report)",
+          "ruling": false
+        },
+        {
+          "who": "he may, the exit being of value so that her property is not given away (a wajh some later scholars extracted; extracted also from the riwāya that the father may remit half the mahr)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The father's khulʿ of his minor daughter with her property: «فالمذهب أنه غير جائز وأن الضمان على الأب نص عليه أحمد». Her own property is to buy the exit, so on the reading it is not bought as a thing of value and the payment is a gift the father may not make. al-Inṣāf (v08:p388): «هذا المذهب. وعليه أكثر الأصحاب», with al-Iqnāʿ and Kashshāf stating it. On the madhhab side; ledger entry. Follow-on: al-Mughnī's iḥtimāl for the guardian of a minor, safīha or majnūna who sees her interest in it, and Ibn ʿAqīl's pointer in al-Fuṣūl (a different fact, the guardian's ḥaẓẓ, which the case does not state)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f007",
+      "encoder": "bud_exit_charged",
+      "class": "derivable",
+      "facts": {
+        "charged_unconsummated_mahr": false,
+        "husband_elects_mahr": false,
+        "wife_bears_exit": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "she is divorced revocably and owes nothing (Aḥmad's naṣṣ in Muhannā's report)",
+          "ruling": false
+        }
+      ],
+      "note": "Leading ruling: «إذا قال لزوجته أنت طالق بألف فلم تقبل طلقت رجعيا ولم يلزمها شيء»: the wife bears the exit and owes nothing. The contrast «ولو قال لعبده أنت حر بألف فلم يقبل لم يعتق عند الأصحاب» rests on «أن خروج البضع غير متقوم بخلاف العبد فإنه مال محض» (al-Inṣāf v07:p423 gives the farq «على الصحيح من المذهب»); Taqī al-Dīn's takhrīj frees the slave without anything, as in ṭalāq — a dispute over the slave, not over this ruling."
+    }
+  ]
+}

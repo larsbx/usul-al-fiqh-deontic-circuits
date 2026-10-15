@@ -1,0 +1,403 @@
+{
+  "suite": "m8_rajab_rajab_a25",
+  "status": "candidate",
+  "provenance": "Shard rajab-a25 (lane A): every farʿ record of Ibn Rajab's qāʿida 158, annotated against the reading formalised from the qāʿida's own statement (Usul.Readings.RajabA25). Typological records are annotated for their leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f001",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": false,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the water is najis: the aṣl in dung and carrion is najāsa (the first wajh)",
+          "ruling": true
+        },
+        {
+          "who": "the water is ṭāhir: the aṣl in water is purity («المرجح عند الأكثرين»; Aḥmad's naṣṣ in Muḥammad b. Abī Ḥarb's riwāya on dung of unknown origin)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Leading ruling: dung of unknown origin (from an edible animal or not) falls into little water. Two uṣūl conflict, najāsa in dung against purity in water, and the record names no reinforcement of either: «وفيه وجهان». The reading takes the first-stated wajh, najis. The later madhhab holds the second: al-Inṣāf (v01:p339) gives ṭahāra «على الصحيح من المذهب» for the animal not known to have a flowing soul, «وكذا الحكم لو وجد فيه روثة خلافا ومذهبا»; Taṣḥīḥ al-Furūʿ labels ṭahāra «وهو الصحيح» for the dung; al-Iqnāʿ and Kashshāf state «فطاهرة». Off the madhhab side; ledger entry. Follow-on: the animal of unknown flowing soul, same khilāf and same madhhab."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f002",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": false,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the garment is najis: the aṣl is that the wetness remains (Abū Bakr's report from Aḥmad)",
+          "ruling": true
+        },
+        {
+          "who": "the garment stays ṭāhir: the aṣl is its purity (the second wajh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A fly settles on wet najāsa, then falls on a garment, and it is doubted whether the najāsa had dried. Two uṣūl (wetness remaining, the garment's purity) with no reinforcement named: «ففيه وجهان». The reading takes the first-stated wajh, najis, which Abū Bakr reports from Aḥmad. No al-Inṣāf treatment; al-Iqnāʿ and Kashshāf state «فيحكم بعدم الجفاف», and al-Mardāwī in Taṣḥīḥ al-Furūʿ (masʾala 23) adds his own «قلت وهو الصواب» after noting Ibn Rajab leaves it open. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f003",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": false,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the rakʿa does not count: the aṣl is that he did not catch it («فالمذهب»; reported from Ibn ʿUmar)",
+          "ruling": true
+        },
+        {
+          "who": "it counts: the aṣl is that the imām stayed in rukūʿ (the iḥtimāl of the author of al-Talkhīṣ)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "He caught the imām in rukūʿ, said takbīr and bowed, and doubts whether the imām rose first. Two uṣūl (no catching; the imām remaining in rukūʿ), neither reinforced. The reading takes the first-stated ruling, which Ibn Rajab labels «فالمذهب»: the rakʿa does not count. al-Inṣāf (v02:p224): «لم يدرك الركعة، على الصحيح من المذهب عليه أكثر الأصحاب»; al-Iqnāʿ and al-Muntahā state it. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f004",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": false,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "sujūd al-sahw is due: the aṣl is that he did not perform the wājib (the first wajh)",
+          "ruling": true
+        },
+        {
+          "who": "it is not due: the aṣl is that sujūd is not owed (the second wajh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "He doubts whether he left a wājib of the prayer. Two uṣūl, neither reinforced: «على وجهين». The reading takes the first-stated wajh, that sujūd is due. al-Inṣāf (v02:p149) holds the second: «(إحداهما: لا يلزمه وهو المذهب) وعليه أكثر الأصحاب», noting that al-Qāḍī and others chose the first; al-Iqnāʿ and Kashshāf «ولا يسجد لشكه في ترك واجب». Off the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f005",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": false,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "payment is not due before he receives it (Aḥmad's naṣṣ in Muhannā's riwāya: «لا يدري لعل المال ذهب»)",
+          "ruling": true
+        },
+        {
+          "who": "payment is due before receipt: the aṣl is that the wealth survives (the other wajh; some aṣḥāb on zakāt in the dhimma)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: absent wealth whose news is not cut off (a deposit and the like): «ففي وجوب إخراج زكاته قبل قبضه وجهان», the first ruling stated being Aḥmad's naṣṣ that it is not due. No reinforcement named. The reading takes it: not due before receipt. al-Iqnāʿ and Kashshāf: «لو كان النصاب غائبا عن البلد لا يقدر على الإخراج منه لم يلزمه إخراج زكاته حتى يتمكن من الأداء منه»; al-Inṣāf (v03:p044) reports it «نص عليه» with al-Qāḍī and Ibn ʿAqīl against. On the madhhab side. Follow-ons: the binding on the locus of zakāt (ʿayn or dhimma), and Ibn Rajab's «ويتوجه عندي» on wealth whose news is cut off."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f006",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": false,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "no fiṭra: the aṣl is freedom of the dhimma (Aḥmad's naṣṣ in Ṣāliḥ's riwāya)",
+          "ruling": true
+        },
+        {
+          "who": "fiṭra is due: the aṣl is that the slave survives (Ibn Rajab's «ويتخرج لنا وجه»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The runaway slave whose news is cut off. The first ruling, Aḥmad's naṣṣ: no fiṭra, «لأن الأصل براءة الذمة»; against it the takhrīj from the validity of freeing him. The record names no reinforcement here (f007 names the ẓāhir of death for the kaffāra). The reading takes the first: not due. al-Inṣāf (v03:p173): «(إلا أن يشك في حياته، فتسقط) هذا المذهب، نص عليه في رواية صالح وعليه أكثر الأصحاب»; al-Iqnāʿ and al-Muntahā state it. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f007",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": true,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "not valid for the kaffāra: the aṣl is that the kaffāra stays owed, reinforced by the ẓāhir of his death («والمشهور عدمه»; Ibn Abī Mūsā's taṣḥīḥ)",
+          "ruling": true
+        },
+        {
+          "who": "valid: the aṣl is that the slave survives (Abū al-Khaṭṭāb's iḥtimāl)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Freeing the runaway slave whose news is cut off in a kaffāra. The record names the reinforcement: «وقد عضده الظاهر الدال على هلاك العبد من انقطاع خبره، فرجح هذا الأصل باعتضاده بهذا الظاهر». The first aṣl reinforced, the reading gives no ijzāʾ. al-Inṣāf (v09:p216): «(ولا غائب لا يعلم خبره) ، هذا المذهب، وعليه جماهير الأصحاب»; al-Iqnāʿ states it, adding that it suffices if he proves alive. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f008",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": false,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the seller's word: the aṣl is soundness of the goods and the sale's binding by separation (a riwāya)",
+          "ruling": true
+        },
+        {
+          "who": "the buyer's word: the aṣl is that no discharging delivery took place (a riwāya)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A defect appears and they dispute whether it arose with the buyer or the seller: «ففيه روايتان», no reinforcement named. The reading takes the first, the seller's word. The muʿtamad holds the buyer's: al-Muntahā «فقول مشتر بيمينه على البت», al-Iqnāʿ likewise; al-Inṣāf (v04:p431) lists the two without its own label (the buyer's «صححه في التصحيح، والنظم», the seller's «وهي أنصهما»). Off the madhhab side; ledger entry. Candidate farq: Ibn Rajab's report that some distinguish a specified ʿayn from goods in the dhimma (there «فالقول قول القابض وجها واحدا»); the record does not say which."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f009",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": false,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "his word: he is the one liable (ghārim) and the aṣl is freedom of his dhimma (the first wajh)",
+          "ruling": true
+        },
+        {
+          "who": "the claimant's word: the aṣl is absence of the defect (the second wajh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "One liable for the value of an item describes it with a value-reducing defect and the claimant denies: «على وجهين», no reinforcement. The reading takes the first, his word. The madhhab, on the usurper who owes the lost item's value: «وإن اختلفا في رده، أو عيب: فالقول قول المالك» (al-Inṣāf v06:p211, «بلا نزاع أعلمه»; al-Iqnāʿ «بعد تلفه فقول المالك»). Off the madhhab side; ledger entry. The excepted case there, a bayyina having seen the defect with the usurper, is about different facts (the defect is proven, only its time is disputed)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f010",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": false,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the lessor's word: the aṣl is no running away, and he owned the whole rent by the contract (Ḥanbal's riwāya)",
+          "ruling": true
+        },
+        {
+          "who": "the lessee's word: the aṣl is that the contracted benefit was not delivered (Ibn Manṣūr's riwāya)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "He leased a slave and delivered him; the lessee claims the slave ran away from him and the lessor denies: «روايتان», no reinforcement named. The reading takes the first, the lessor's word. al-Inṣāf (v06:p080) holds the lessee's: «لو ادعى مرض العبد، أو إباقه ... قبل قوله. على الصحيح من المذهب»; al-Muntahā and al-Iqnāʿ state it. Off the madhhab side; ledger entry. Follow-on: Aḥmad's naṣṣ that the lessor's word governs a claim of illness, «لأن المرض يمكن إقامة البينة عليه بخلاف الإباق»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f011",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": false,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the wife's word: the aṣl is no intercourse (a riwāya)",
+          "ruling": true
+        },
+        {
+          "who": "the husband's word: the aṣl is that no annulment (faskh) is established (a riwāya)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The impotent husband's term has been set, they dispute intercourse, and she is a thayyib: «على روايتين», no reinforcement named. The reading takes the first, her word. al-Inṣāf (v08:p191): on al-Muqniʿ «وإن كانت ثيبا. فالقول قوله», «وعنه: القول قولها. وهو المذهب»; al-Iqnāʿ, after the ʿunna is established: «وأنكرته فقولها». On the madhhab side. Follow-on: the third riwāya, al-Khiraqī's: he is left alone with her and told to produce his semen (manī), «وهذا يرجع إلى ترجيح الظاهر على الأصل», a procedure whose result is not stated in the record."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f012",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": false,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "his word: the aṣl is that the marriage continues (the first wajh)",
+          "ruling": true
+        },
+        {
+          "who": "her word: the aṣl is that he did not convert within the ʿidda (the second wajh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "After consummation he says «أسلمت في عدتك فالنكاح باق», she says after its end: «فوجهان», no reinforcement named. The reading takes the first, his word. No al-Inṣāf label for these facts; al-Iqnāʿ and Kashshāf state «فقوله», «لأن الأصل بقاء النكاح». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f013",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": false,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "her word: the aṣl is that maintenance is owed (the first wajh)",
+          "ruling": true
+        },
+        {
+          "who": "his word: maintenance is owed only for enabling, whose aṣl is absence (Ibn Qudāma in al-Kāfī; al-Qāḍī's day-by-day taʿlīl)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "He says he converted first so she has no maintenance; she says she converted first: «ففيه أيضا وجهان», no reinforcement named. The reading takes the first, her word. al-Inṣāf (v08:p215) on «وإن اختلفا في السابق منهما فالقول قولها، في أحد الوجهين»: «وهو المذهب»; al-Muntahā, al-Iqnāʿ and Kashshāf state it. On the madhhab side. Ibn Rajab notes both taʿlīls of the second wajh are broken by the dispute over nushūz."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f014",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": false,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "it does not occur: the aṣl is that the marriage remains («المذهب عند صاحب المحرر»)",
+          "ruling": true
+        },
+        {
+          "who": "it occurs: the aṣl is the condition, which is absence (Ibn Abī Mūsā, al-Shīrāzī, al-Sāmarrī, Ibn ʿAqīl; what Muhannā reports from Aḥmad on the mixed date «ما يدل عليه»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: ṭalāq suspended on the absence of something, then doubt whether it exists, the doubt continuing with nothing indicating either way: «على وجهين». The reading takes the first: it does not occur. No al-Inṣāf label of its own (it copies Ibn Rajab); al-Iqnāʿ «ولو كان الشرط عدميا ... وشك في فعله لم تطلق» and al-Muntahā «ولا يلزم بشك فيه أو فيما علق عليه ولو عدميا». On the madhhab side. Follow-ons: Ibn Rajab's branches where something indicates the absence remains (certainly, or by a sharʿī proof, or a mere amāra) or ceased."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f015",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": false,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the killer's word: the aṣl is that the victim's blood was protected, so retaliation needs certainty (reported from Abū Bakr)",
+          "ruling": true
+        },
+        {
+          "who": "the walī's word: the aṣl in killing is qiṣāṣ unless a bar is established («أشهرهما الثاني»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "He killed a man of unknown status, then claims he was a slave or an unbeliever; the walī denies: «على وجهين أشهرهما الثاني», no reinforcement named. The reading takes the first-stated wajh, the killer's word. al-Inṣāf (v09:p475): «وجب القصاص والقول قول المنكر هذا المذهب»; al-Iqnāʿ states it. Off the madhhab side; ledger entry. Follow-ons with the same khilāf: the limb claimed paralysed, the wrapped man claimed dead, the fetus's life at birth, and excess in retaliation."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f016",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": false,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the whole mahr: it fell due by the contract and no cause (sabab) of its lapse is established (the implication of Abū al-Khaṭṭāb and al-Majd)",
+          "ruling": true
+        },
+        {
+          "who": "half: the other half is settled only by consummation, whose aṣl is absence (al-Qāḍī)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A bayyina establishes the marriage and the ṭalāq is established, consummation unproven: «على وجهين», no reinforcement named. The reading takes the first, the whole mahr. Ibn Rajab adds al-Mughnī's tafṣīl: half if the husband denies consummation, otherwise the whole. The record does not say whether he denies it; the khilāf arises in either branch. No al-Inṣāf treatment of these facts; the muʿtamad's cognate case (a contract and a later one, the first ended by ṭalāq) gives half when he claims the lapse of half by ṭalāq before consummation, «لأن الأصل عدم لزومه له» (al-Iqnāʿ, Kashshāf), graded qiyās. By the bank's grade order the half prevails: off the reading's side; ledger entry. Candidate farq: al-Mughnī's denial of consummation."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f017",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": true,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "permitted: the aṣl is that no other cause shared in the kill, reinforced by the ẓāhir that it died of this cause (a riwāya)",
+          "ruling": true
+        },
+        {
+          "who": "forbidden: the aṣl is the animal's prohibition until the cause of permission is certain (a riwāya)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: he shot game and wounded it; it vanished and he found it dead with no trace but his arrow. The record names the reinforcement: «لكن الأصل الأول معتضد بأن الظاهر موته بهذا السبب دون غيره». The reading gives the reinforced first aṣl: permitted. al-Inṣāf (v10:p424): «(وإن رمى صيدا. فغاب عنه، ثم وجده ميتا لا أثر به غير سهمه: حل) ... هذا المذهب»; al-Iqnāʿ states it. On the madhhab side. Follow-on: the game mortally wounded that then falls into water, where al-Iqnāʿ forbids it if the water could kill it «ولو كان الجرح موحيا»: there the ẓāhir does not single out his cause."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f018",
+      "encoder": "two_usul_reinforced_governs",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "first_asl_reinforced": false,
+        "second_asl_reinforced": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the Muslim's word denying amān: the aṣl is no amān (a riwāya)",
+          "ruling": true
+        },
+        {
+          "who": "the mushrik's word: the aṣl in blood is prohibition unless permission is certain (a riwāya)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A soldier brings a mushrik who claims the Muslim gave him amān; he denies: «ففيه روايتان», with a third that the word is his whose state indicates his truth. The record states no such indication. The reading takes the first, the Muslim's word. al-Inṣāf (v04:p205): «(فالقول قوله) يعني المسلم هذا المذهب. وعليه أكثر الأصحاب»; al-Iqnāʿ and Kashshāf state it. On the madhhab side. Follow-ons: the third riwāya (reinforcement by the ḥāl), and the ḥarbī entering Islamic lands claiming amān."
+    }
+  ]
+}
