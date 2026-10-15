@@ -1,20 +1,20 @@
 {
   "entries": 596,
-  "weighed": 237,
-  "proofs": 782,
+  "weighed": 327,
+  "proofs": 1071,
   "advantages": 11,
   "stages": {
     "jam": 20,
     "naskh": 1,
-    "tarjih": 95,
-    "tawaqquf": 135,
-    "unweighed": 345
+    "tarjih": 130,
+    "tawaqquf": 190,
+    "unweighed": 255
   },
   "standing": {
-    "against_reading": 35,
-    "for_reading": 81,
-    "tawaqquf": 135,
-    "unweighed": 345
+    "against_reading": 46,
+    "for_reading": 105,
+    "tawaqquf": 190,
+    "unweighed": 255
   },
   "worklist": {
     "asl_zahir": [
@@ -32,6 +32,12 @@
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f005",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f006"
     ],
+    "lots": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f025",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f029",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f045",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f046"
+    ],
     "craft_capacity_is_wealth": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f002",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f003"
@@ -47,6 +53,10 @@
     "growth_from_substance": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f000",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f002"
+    ],
+    "maadum_grant_valid": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f006",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f005"
     ],
     "attached_growth_follows": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f002"
@@ -87,6 +97,21 @@
     "hastened_right_forfeited": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f009"
     ],
+    "hukm_against_own_ijtihad": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f009"
+    ],
+    "itlaf": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f005"
+    ],
+    "mahr_fully_established": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155.f001"
+    ],
+    "manumission_spread": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f000"
+    ],
+    "mubashara_tasabbub": [
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f005"
+    ],
     "two_usul_reinforced_governs": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f018"
     ],
@@ -98,16 +123,13 @@
     ]
   },
   "weighing_worklist": {
-    "lots": 25,
     "two_usul_reinforced_governs": 17,
-    "mahr_halved_by_separation": 12,
     "tabaa": 11,
     "tadakhul": 10,
     "rajiyya_takes_wife_rule": 9,
     "unknown_consent_binds": 9,
     "urf_specialises_general": 9,
     "recourse": 8,
-    "occurrence_state_governs": 7,
     "qawad_choice_forfeits_attached_right": 7,
     "returned_takes_first_ruling": 7,
     "ruling_with_bar": 7,
@@ -118,25 +140,17 @@
     "right_to_own_disposal": 6,
     "unintended_instance_covered": 6,
     "words_out_of_nature": 6,
-    "many_over_noble": 5,
     "repeat_bearing_roots_as_trees": 5,
     "rescission_harm": 5,
     "settles_without_ability": 5,
     "shar_specialises_general": 5,
     "split_halves_suffice": 5,
-    "intention_shapes_wording": 4,
-    "maadum_grant_valid": 4,
-    "mubashara_tasabbub": 4,
     "partners": 4,
     "right_after_transfer": 4,
     "supervening_bar_extends_to_preliminaries": 4,
     "tolerance_exceeded": 4,
     "unknown_order_judged_sequential": 4,
     "vowed_as_shar_obligation": 4,
-    "hit_state_governs": 3,
-    "injury_state_measures": 3,
-    "istihlak": 3,
-    "nafl_before_fard": 3,
     "performed_without_leave_owned": 3,
     "removal_before_knowledge": 3,
     "right_to_substitute": 3,
@@ -148,11 +162,7 @@
     "switch_to_original": 3,
     "unqualified_sharika_halves": 3,
     "wage_without_stipulation": 3,
-    "implicit_exception": 2,
-    "itlaf": 2,
-    "khalt_as_shirka": 2,
-    "makeup_after_failure": 2,
-    "manumission_spread": 2,
+    "occurrence_state_governs": 2,
     "partial_capability": 2,
     "prohibited_worship": 2,
     "seizing_hand_liable": 2,
@@ -161,15 +171,6 @@
     "takes_only_by_special": 2,
     "trust_voidance": 2,
     "worship_ruled_from_start": 2,
-    "holding_after_contract_end": 1,
-    "hukm_against_own_ijtihad": 1,
-    "ihram_specification": 1,
-    "lease_after_authority": 1,
-    "lot_distinguishes_hidden_entitled": 1,
-    "mahr_fully_established": 1,
-    "mixed_haram_by_proportion": 1,
-    "nafaqa_taken_owned": 1,
-    "necessity_spares_lighter": 1,
     "other_option_stands": 1,
     "performed_without_leave_not_owned": 1,
     "qisas_belongs_to_whom": 1,
@@ -246,7 +247,7 @@
       "for_reading": 411,
       "tawaqquf": 14
     },
-    "labels_agree_with_proofs": 73,
+    "labels_agree_with_proofs": 101,
     "review": [
       "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f006",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003",
