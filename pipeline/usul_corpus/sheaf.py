@@ -21,26 +21,21 @@ effect, dalāla, takyīf, epistemic or procedure encoder it is a disagreement of
 
 from __future__ import annotations
 
-import json
 from itertools import combinations
 from pathlib import Path
 
 from collections import Counter
 
 from . import judgement
-from .takhrij import ENCODERS
+from .takhrij import ENCODERS, among, code
 
 OUTPUT = Path("sheaf") / "obstructions.json"
 LEAN = "Obstructions.lean"
 
 
-def _key(r: object) -> str:
-    return json.dumps(r, ensure_ascii=False, sort_keys=True)
-
-
 def rulings(case: dict) -> list[int]:
     """Each position's ruling as the index of its first occurrence: equal rulings, equal codes."""
-    keys = [_key(p["ruling"]) for p in case["positions"]]
+    keys = [code(p["ruling"]) for p in case["positions"]]
     return [keys.index(k) for k in keys]
 
 
@@ -52,7 +47,7 @@ def obstructions(case: dict) -> list[list[int]]:
 def outside(case: dict) -> list[int]:
     """Positions whose ruling the case's encoder cannot output."""
     out = ENCODERS[case["encoder"]]["out"]
-    return [k for k, p in enumerate(case["positions"]) if p["ruling"] not in out]
+    return [k for k, p in enumerate(case["positions"]) if not among(p["ruling"], out)]
 
 
 def ikhtilaf(cases: list[dict]) -> list[dict]:

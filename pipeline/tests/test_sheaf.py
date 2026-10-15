@@ -24,12 +24,18 @@ def test_records_are_the_disagreeing_pairs():
 
 
 def test_outside_is_beyond_the_encoder_range():
-    for c in sheaf.ikhtilaf(CASES):
-        out = takhrij.ENCODERS[c["encoder"]]["out"]
-        assert sheaf.outside(c) == [k for k, p in enumerate(c["positions"]) if p["ruling"] not in out]
+    case = {"encoder": "lots", "positions": [{"ruling": "lot"}, {"ruling": "lot; whoever wins"}, {"ruling": "divide"}]}
+    assert sheaf.outside(case) == [1]
+    flag = next(e for e, v in takhrij.ENCODERS.items() if v["out"] == takhrij.B)
+    assert sheaf.outside({"encoder": flag, "positions": [{"ruling": True}, {"ruling": 1}, {"ruling": 0}]}) == [1, 2]
     # an outside position never equals the case's expected ruling
-    assert all(c["positions"][k]["ruling"] != c["expected"] for c in sheaf.ikhtilaf(CASES)
-               for k in sheaf.outside(c) if c["expected"] in takhrij.ENCODERS[c["encoder"]]["out"])
+    assert all(takhrij.code(c["positions"][k]["ruling"]) != takhrij.code(c["expected"])
+               for c in sheaf.ikhtilaf(CASES) for k in sheaf.outside(c))
+
+
+def test_detail_is_not_part_of_a_ruling():
+    case = {"positions": [{"ruling": "divide", "detail": "without oath"}, {"ruling": "divide"}, {"ruling": "lot"}]}
+    assert sheaf.rulings(case) == [0, 0, 2]
 
 
 def test_records_are_typed_by_the_types_layer():
