@@ -157,13 +157,15 @@ The takhrīj tranche tests the *bank* against the texts. The Prolog oracle asks 
 **This is a fit, not an accuracy** (`fit: in_sample` in the report). The rules were written and then revised against these same 122 texts.
 - **Revised rules.** After the first run, seven rules were added and four changed (`rule_revision/2` in the rules file). Each cites a text: Majmaʿ al-Fiqh's traffic-accident exemptions as quoted in islamqa.345284, «يضاف الحكم إلى المباشر», «البينة على المدعي». But they were chosen because cases failed.
 - **Post-hoc facts, unverified.** Six facts were added to 9 cases to rescue them: `unavoidable`, `other_direct_actor`, `later_death`, `muslim_buried`, `self_keeping`, `perishable` (`post_hoc` in the facts file). They were read from the annotators' notes and have not been checked against the answers.
-- **Without both: 95 of 122** (`first_pass`), against 119 with them.
+- **The first run scored 105 of 122** (`first_run`), against 119 after revision. This is a rerun, not a filter: the rules the tranche was first run with, without the post-hoc facts, over the same cases.
+  - Those rules were never committed. The snapshot [`rules_islamqa_first_run.pl`](../../corpus/fatawa/prolog/snapshots/rules_islamqa_first_run.pl) is today's rules with every `rule_revision/2` undone.
+  - It reproduces the recorded 105/122, and a test pins that.
 - **By sort** (`per_sort`), the three sorts in the tranche fare differently:
 
-  | sort | decided | oracle | first pass | bank |
+  | sort | decided | oracle (revised) | first run | bank |
   |---|---:|---:|---:|---:|
-  | sabab (ḍamān) | 48 | 48 | 43 | 18/18 answered |
-  | effect (finds, unknown owner) | 47 | 44 | 26 | 22/26 answered |
+  | sabab (ḍamān) | 48 | 48 | 44 | 18/18 answered |
+  | effect (finds, unknown owner) | 47 | 44 | 35 | 22/26 answered |
   | epistemic (aṣl / ẓāhir) | 27 | 27 | 26 | 24/24 answered |
 
   Most of the revision went into the effect domains.
@@ -206,7 +208,11 @@ The classical takhrīj banks (`corpus/takhrij`) total 461 cases: Saʿdī, dalāl
 
 ### The Prolog oracle on held-out classical cases
 
-**The first-pass rules did worse than the bank on held-out cases** (`fit: held_out`). On the 26 decided classical cases they agreed on 22 (`first_pass`); the bank alone agreed on 26. `itlaf_bi_haqq`, which closes the difference, was added *after* seeing these cases, so it is a revision too. So far the oracle adds nothing over the bank on cases it was not fitted to.
+**On held-out cases the oracle did worse than the bank.**
+- Rerun with the rules as they stood before these cases joined (the committed file at 3da8400, [`rules_before_classical.pl`](../../corpus/fatawa/prolog/snapshots/rules_before_classical.pl)), it agreed on 24 of the 26 decided classical cases (`first_run`). The bank alone agreed on all 26.
+- The two misses are Ibn Rajab's q026 repel-harm cases.
+- `itlaf_bi_haqq`, which closes the gap, was added *after* seeing these cases. So today's 26/26 is labelled `revised_after_held_out`, not held out.
+- So far the oracle adds nothing over the bank on cases it was not fitted to.
 
 [`classical_facts.json`](../../corpus/fatawa/prolog/classical_facts.json) brings into the oracle the 53 classical cases of its five encoders. The rules were never written against these cases.
 - **26 decided cases:** the stated ruling is the target (`agrees/1`).

@@ -1,12 +1,12 @@
 {
   "classical": {
-    "fit": "held_out",
+    "fit": "revised_after_held_out",
     "total": {
       "disputed": 27,
       "oracle_within_positions": 27,
       "decided": 26,
       "oracle": 26,
-      "first_pass": 22,
+      "first_run": 24,
       "bank_answers": 26,
       "bank": 26
     },
@@ -14,7 +14,7 @@
       "asl_zahir": {
         "decided": 16,
         "oracle": 16,
-        "first_pass": 16,
+        "first_run": 16,
         "bank_answers": 16,
         "bank": 16,
         "disputed": 24,
@@ -25,14 +25,14 @@
         "oracle_within_positions": 2,
         "decided": 4,
         "oracle": 4,
-        "first_pass": 0,
+        "first_run": 2,
         "bank_answers": 4,
         "bank": 4
       },
       "luqata": {
         "decided": 1,
         "oracle": 1,
-        "first_pass": 1,
+        "first_run": 1,
         "bank_answers": 1,
         "bank": 1
       },
@@ -41,14 +41,14 @@
         "oracle_within_positions": 1,
         "decided": 4,
         "oracle": 4,
-        "first_pass": 4,
+        "first_run": 4,
         "bank_answers": 4,
         "bank": 4
       },
       "unknown_owner": {
         "decided": 1,
         "oracle": 1,
-        "first_pass": 1,
+        "first_run": 1,
         "bank_answers": 1,
         "bank": 1
       }
@@ -57,14 +57,14 @@
       "effect": {
         "decided": 2,
         "oracle": 2,
-        "first_pass": 2,
+        "first_run": 2,
         "bank_answers": 2,
         "bank": 2
       },
       "epistemic": {
         "decided": 16,
         "oracle": 16,
-        "first_pass": 16,
+        "first_run": 16,
         "bank_answers": 16,
         "bank": 16,
         "disputed": 24,
@@ -75,7 +75,7 @@
         "oracle_within_positions": 3,
         "decided": 8,
         "oracle": 8,
-        "first_pass": 4,
+        "first_run": 6,
         "bank_answers": 8,
         "bank": 8
       }
@@ -93,7 +93,7 @@
     "total": {
       "decided": 122,
       "oracle": 119,
-      "first_pass": 95,
+      "first_run": 105,
       "bank_answers": 68,
       "bank": 64
     },
@@ -101,35 +101,35 @@
       "asl_zahir": {
         "decided": 27,
         "oracle": 27,
-        "first_pass": 26,
+        "first_run": 26,
         "bank_answers": 24,
         "bank": 24
       },
       "itlaf": {
         "decided": 27,
         "oracle": 27,
-        "first_pass": 22,
+        "first_run": 23,
         "bank_answers": 0,
         "bank": 0
       },
       "luqata": {
         "decided": 30,
         "oracle": 29,
-        "first_pass": 12,
+        "first_run": 21,
         "bank_answers": 14,
         "bank": 11
       },
       "trust_loss": {
         "decided": 21,
         "oracle": 21,
-        "first_pass": 21,
+        "first_run": 21,
         "bank_answers": 18,
         "bank": 18
       },
       "unknown_owner": {
         "decided": 17,
         "oracle": 15,
-        "first_pass": 14,
+        "first_run": 14,
         "bank_answers": 12,
         "bank": 11
       }
@@ -138,21 +138,21 @@
       "effect": {
         "decided": 47,
         "oracle": 44,
-        "first_pass": 26,
+        "first_run": 35,
         "bank_answers": 26,
         "bank": 22
       },
       "epistemic": {
         "decided": 27,
         "oracle": 27,
-        "first_pass": 26,
+        "first_run": 26,
         "bank_answers": 24,
         "bank": 24
       },
       "judgement/wadi:sabab": {
         "decided": 48,
         "oracle": 48,
-        "first_pass": 43,
+        "first_run": 44,
         "bank_answers": 18,
         "bank": 18
       }
@@ -186,6 +186,10 @@
       "illicit_exchange": 1,
       "family_recipient": 1
     }
+  },
+  "first_run_rules": {
+    "islamqa": "corpus/fatawa/prolog/snapshots/rules_islamqa_first_run.pl",
+    "classical": "corpus/fatawa/prolog/snapshots/rules_before_classical.pl"
   },
   "revised_rules": [
     "bayyina_in_qada",

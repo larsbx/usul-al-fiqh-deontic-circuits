@@ -753,8 +753,8 @@ def cmd_fatawa_prolog(_: argparse.Namespace) -> int:
         return 1
     records = fatawa_prolog.merge(cases, facts)
     (ROOT / fatawa_prolog.CASES).write_text(fatawa_prolog.prolog_file(records), encoding="utf-8")
-    rep = fatawa_prolog.report(records, fatawa_prolog.run(ROOT), frozenset(fatawa_prolog.revised_rules(ROOT)),
-                               fatawa_prolog.sorts(CORPUS))
+    rep = fatawa_prolog.report(records, fatawa_prolog.run(ROOT), fatawa_prolog.first_runs(ROOT, records),
+                               frozenset(fatawa_prolog.revised_rules(ROOT)), fatawa_prolog.sorts(CORPUS))
     _dump(CORPUS / "fatawa" / "prolog" / "report.json", rep)
     print(json.dumps({s: rep[s]["total"] for s in ("islamqa", "classical")}, ensure_ascii=False))
     return 0

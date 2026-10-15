@@ -26,6 +26,7 @@ from __future__ import annotations
 import json
 import re
 import subprocess
+import tempfile
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -124,12 +125,24 @@ def prolog_file(records: list[dict]) -> str:
     return "\n".join(lines) + "\n"
 
 
-def run(root: Path) -> dict[str, dict]:
-    """The oracle's answer per case: {far: {ruling, rule}} (needs swipl)."""
+def run(root: Path, rules: str | None = None, drop: dict[str, list[str]] | None = None) -> dict[str, dict]:
+    """The oracle's answer per case: {far: {ruling, rule}} (needs swipl).
+
+    By default the committed rules and cases (the fixture aggregator). With ``rules``, that rules file over
+    the committed cases less the facts in ``drop`` ({far: [fact names]}): how an earlier rule set answered."""
     goal = ("forall(encoder(C,_), ( oracle(C,R,Rule) -> format('~w\\t~w\\t~w~n',[C,R,Rule])"
             " ; format('~w\\t-\\t-~n',[C]) ))")
-    out = subprocess.run(["swipl", "-q", "-g", goal, "-t", "halt", str(root / FIXTURES)],
-                         capture_output=True, text=True, check=True).stdout
+    with tempfile.TemporaryDirectory() as tmp:
+        if rules is None:
+            files = [root / FIXTURES]
+        else:
+            gone = {f"fact({atom(f)}, {k}," for f, ks in (drop or {}).items() for k in ks}
+            cases = Path(tmp) / "cases.pl"
+            cases.write_text("".join(l for l in (root / CASES).read_text(encoding="utf-8").splitlines(True)
+                                     if not any(l.startswith(g) for g in gone)), encoding="utf-8")
+            files = [root / rules, cases]
+        out = subprocess.run(["swipl", "-q", "-g", goal, "-t", "halt", *map(str, files)],
+                             capture_output=True, text=True, check=True).stdout
     return {f: {"ruling": r, "rule": rule} for f, r, rule in (l.split("\t") for l in out.splitlines())}
 
 
@@ -151,37 +164,52 @@ def revised_rules(root: Path) -> set[str]:
     return {r for r, _ in _REVISION.findall((root / RULES).read_text(encoding="utf-8"))}
 
 
-def report(records: list[dict], answers: dict[str, dict], revised: frozenset[str] = frozenset(),
-           sorts: dict[str, str] | None = None) -> dict:
+# The rule sets each source was first run with: the oracle's agreement before it was revised against them.
+# IslamQA's first-run rules were never committed; the snapshot is today's rules with every rule_revision/2
+# undone, and reproduces the first run's 105/122 (test). The classical snapshot is the committed rules file
+# at 3da8400, the last commit before the classical cases joined.
+SNAPSHOTS = {"islamqa": "corpus/fatawa/prolog/snapshots/rules_islamqa_first_run.pl",
+             "classical": "corpus/fatawa/prolog/snapshots/rules_before_classical.pl"}
+FIT = {"islamqa": "in_sample", "classical": "revised_after_held_out"}
+
+
+def first_runs(root: Path, records: list[dict]) -> dict[str, dict]:
+    """Each source's answers under the rules it was first run with, without the post-hoc facts."""
+    drop = {r["far"]: r["post_hoc"] for r in records if r["post_hoc"]}
+    return {src: run(root, rules, drop) for src, rules in SNAPSHOTS.items()}
+
+
+def report(records: list[dict], answers: dict[str, dict], first: dict[str, dict] | None = None,
+           revised: frozenset[str] = frozenset(), sorts: dict[str, str] | None = None) -> dict:
     """Agreement with decided rulings, for the oracle and the bank alone; disputed cases apart.
 
-    The IslamQA figures are a fit (the rules were written and revised against those texts); the classical
-    ones are held out. ``first_pass`` counts the agreements that need no revised rule and no post-hoc fact.
-    ``per_sort`` splits by what the encoder's output answers (corpus/types/encoders.json), since agreement
-    on a sabab question and on an effect are not the same measure."""
-    sorts = sorts or {}
+    ``oracle`` is today's rules, revised against these very texts: a fit (``fit``). ``first_run`` is the
+    rules each source was first run with, rerun without the post-hoc facts: for the classical cases, the
+    held-out result. ``per_sort`` splits by what the encoder's output answers (corpus/types/encoders.json)."""
+    first, sorts = first or {}, sorts or {}
     per: dict[str, dict[str, Counter]] = defaultdict(lambda: defaultdict(Counter))
     by_sort: dict[str, dict[str, Counter]] = defaultdict(lambda: defaultdict(Counter))
     rules: dict[str, Counter] = defaultdict(Counter)
     for r in records:
         a, s = answers[r["far"]], source(r["far"])
+        before = first.get(s, {}).get(r["far"])
         for k in (per[s][r["encoder"]], per[s]["total"], by_sort[s][sorts.get(r["encoder"], "untyped")]):
             if r["positions"]:
                 k["disputed"] += 1
                 k["oracle_within_positions"] += any(_same(a["ruling"], p) for p in r["positions"])
                 continue
-            agree = _same(a["ruling"], r["ruling"])
             k["decided"] += 1
-            k["oracle"] += agree
-            k["first_pass"] += agree and a["rule"] not in revised and not r["post_hoc"]
+            k["oracle"] += _same(a["ruling"], r["ruling"])
+            if before is not None:
+                k["first_run"] += _same(before["ruling"], r["ruling"])
             k["bank_answers"] += r["kernel"] is not None
             k["bank"] += r["kernel"] is not None and _same(r["kernel"], r["ruling"])
         rules[s][a["rule"]] += 1
-    fit = {"islamqa": "in_sample", "classical": "held_out"}
-    return {s: {"fit": fit[s], "total": dict(p.pop("total")),
+    return {s: {"fit": FIT[s], "total": dict(p.pop("total")),
                 "per_encoder": {e: dict(k) for e, k in sorted(p.items())},
                 "per_sort": {t: dict(k) for t, k in sorted(by_sort[s].items())},
                 "rules_fired": dict(rules[s].most_common())} for s, p in sorted(per.items())} | {
+            "first_run_rules": SNAPSHOTS,
             "revised_rules": sorted(revised),
             "post_hoc_facts": {r["far"]: r["post_hoc"] for r in records if r["post_hoc"]},
             "gaps": {r["far"]: r["gap"] for r in records if r["gap"]},

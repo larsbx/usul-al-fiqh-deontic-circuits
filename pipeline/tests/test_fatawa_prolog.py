@@ -64,16 +64,17 @@ def test_vectors_bank_agreement_and_recorded_gaps():
     assert f"fixture_premise(agrees({c}), query(oracle({c}, _, _)))." in pl
 
 
-def test_first_pass_excludes_revised_rules_and_post_hoc_facts():
+def test_first_run_scores_the_earlier_rules_answers_not_todays_winners():
     recs = [{"far": f"islamqa.{i}.f001", "encoder": "trust_loss", "positions": [], "ruling": False, "kernel": False,
-             "post_hoc": ph, "gap": None} for i, ph in ((1, []), (2, ["unavoidable"]), (3, []))]
-    answers = {"islamqa.1.f001": {"ruling": "false", "rule": "hand_of_trust"},
-               "islamqa.2.f001": {"ruling": "false", "rule": "hand_of_trust"},
-               "islamqa.3.f001": {"ruling": "false", "rule": "quwwa_qahira"}}
-    rep = fatawa_prolog.report(recs, answers, frozenset({"quwwa_qahira"}), {"trust_loss": "judgement/wadi:sabab"})
+             "post_hoc": ph, "gap": None} for i, ph in ((1, []), (2, ["unavoidable"]))]
+    now = {f"islamqa.{i}.f001": {"ruling": "false", "rule": "quwwa_qahira"} for i in (1, 2)}
+    before = {"islamqa": {"islamqa.1.f001": {"ruling": "false", "rule": "mubashir_liable"},
+                          "islamqa.2.f001": {"ruling": "true", "rule": "mubashir_liable"}}}
+    rep = fatawa_prolog.report(recs, now, before, frozenset({"quwwa_qahira"}), {"trust_loss": "judgement/wadi:sabab"})
+    # a revised rule winning today does not hide an agreement the earlier rules already had
     assert rep["islamqa"]["fit"] == "in_sample"
-    assert rep["islamqa"]["total"] == {"decided": 3, "oracle": 3, "first_pass": 1, "bank_answers": 3, "bank": 3}
-    assert rep["islamqa"]["per_sort"]["judgement/wadi:sabab"]["first_pass"] == 1
+    assert rep["islamqa"]["total"] == {"decided": 2, "oracle": 2, "first_run": 1, "bank_answers": 2, "bank": 2}
+    assert rep["islamqa"]["per_sort"]["judgement/wadi:sabab"]["first_run"] == 1
     assert rep["post_hoc_facts"] == {"islamqa.2.f001": ["unavoidable"]}
 
 
@@ -91,6 +92,8 @@ def test_committed_cases_are_generated():
     assert (ROOT / fatawa_prolog.CASES).read_text(encoding="utf-8") == fatawa_prolog.prolog_file(records)
     if shutil.which("swipl") is None:
         pytest.skip("swipl not installed")
-    rep = fatawa_prolog.report(records, fatawa_prolog.run(ROOT), frozenset(fatawa_prolog.revised_rules(ROOT)),
-                               fatawa_prolog.sorts(ROOT / "corpus"))
+    rep = fatawa_prolog.report(records, fatawa_prolog.run(ROOT), fatawa_prolog.first_runs(ROOT, records),
+                               frozenset(fatawa_prolog.revised_rules(ROOT)), fatawa_prolog.sorts(ROOT / "corpus"))
+    # the reconstructed first-run rules reproduce the first run (105/122); the classical held-out run is 24/26
+    assert rep["islamqa"]["total"]["first_run"] == 105 and rep["classical"]["total"]["first_run"] == 24
     assert json.loads((ROOT / "corpus/fatawa/prolog/report.json").read_text()) == rep
