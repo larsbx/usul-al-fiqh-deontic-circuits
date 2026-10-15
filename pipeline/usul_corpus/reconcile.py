@@ -49,6 +49,11 @@ def prevail(ps: list[tuple[object, str]]) -> object | None:
     return next((p for p in rulings if all(q == p or support(ps, p) > support(ps, q) for q in rulings)), None)
 
 
+def _same(a: object, b: object) -> bool:
+    """Ruling equality without Python's `True == 1`."""
+    return type(a) is type(b) and a == b
+
+
 def _grades(g: str | list[str]) -> list[str]:
     return [g] if isinstance(g, str) else g
 
@@ -104,6 +109,15 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
             continue
         if any(not 0 <= v["position"] < len(c["positions"]) or v["grade"] not in GRADES for v in e.get("evidence", [])):
             errs.append(f"{f}: evidence must name a listed position and a grade")
+            continue
+        # A marked grade counts per holder, so a repeated report would weigh twice.
+        if len({(v["ref"], v["position"]) for v in e.get("evidence", [])}) != len(e.get("evidence", [])):
+            errs.append(f"{f}: evidence cites one page once per position")
+            continue
+        if (n := e.get("naskh")) and not any(
+                v["ref"] == n["ref"] and _same(c["positions"][v["position"]]["ruling"], n["ruling"])
+                for v in e.get("evidence", [])):
+            errs.append(f"{f}: naskh needs a reported ruling and a cited evidence item attesting it")
             continue
         if j := e.get("jam"):
             if c["encoder"] != j["encoder"] or not conservative.get(j["encoder"]) or j["from"] not in takhrij.ENCODERS:

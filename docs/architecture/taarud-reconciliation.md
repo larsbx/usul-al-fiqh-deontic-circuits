@@ -20,7 +20,7 @@ All of them sit in `corpus/reconciliation/ledger.json`. When a new tranche adds 
 | Stage | Offered when | Checked by |
 |---|---|---|
 | jamʿ | The source cites a farq. The case is re-encoded under a refinement whose dossier entry names a conservativity theorem over the earlier reading. | Python checks that every farʿ the refinement moves away from the earlier reading lands on its prevailing side, and that at least one farʿ moves. Lean checks the theorem and the re-encoded guards. |
-| naskh | A later riwāya or a retraction (rujūʿ) with reported chronology. | The ledger's `naskh.ref`. |
+| naskh | A later riwāya or a retraction (rujūʿ) with reported chronology. | The ledger's `naskh.ref`: the page of one of the entry's own evidence items, whose position holds `naskh.ruling` (`reconcile.check`). |
 | tarjīḥ | Some ruling's graded support strictly exceeds every other ruling's. | `prevail`, which carries `prevail_mem` (it never invents a ruling) and `prevail_unanimous`. |
 | tawaqquf | Every earlier stage fails. | `reconcile_tawaqquf_iff`. |
 
@@ -35,7 +35,7 @@ All of them sit in `corpus/reconciliation/ledger.json`. When a new tranche adds 
 7. **takhrīj:** a takhrīj or an iḥtimāl.
 8. **wajh:** a bare wajh.
 
-**Tarjīḥ.** Each position lists the distinct grades of the people who hold it. Positions with the same ruling pool their grades, and a ruling's support is its pooled grades sorted strongest first. Supports are compared lexicographically, so a weaker grade never outweighs a stronger one, however many hold it. When two supports share every grade, the longer one wins, following «الأكثرون». Unmarked grades (one companion, a takhrīj, a wajh) count once per ruling, however many hold them, so two named companions against one is still a tie. Marked grades count per holder.
+**Tarjīḥ.** Each position lists the distinct grades of the people who hold it. Positions with the same ruling pool their grades, and a ruling's support is its pooled grades sorted strongest first. Supports are compared lexicographically, so a weaker grade never outweighs a stronger one, however many hold it. When two supports share every grade, the longer one wins, following «الأكثرون». Unmarked grades (one companion, a takhrīj, a wajh) count once per ruling, however many hold them, so two named companions against one is still a tie. Marked grades count per holder, so a holder is counted once: an entry cites a page at most once per position (`reconcile.check` keys evidence on `(ref, position)`; the schema rejects exact copies). A page naming two holders of one position is graded once, at the stronger grade.
 
 **Lean is the authority.** `UsulTest/Reconcile.lean` holds one generated guard per entry, so the Python mirror cannot drift from `Usul.Reconcile.reconcile`. A test also pins the grade ranks to the Lean definition.
 
