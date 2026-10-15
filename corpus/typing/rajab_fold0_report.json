@@ -3,21 +3,21 @@
   "status": "candidate",
   "set": "rajab_fold0",
   "method": "blind typing into Usul.Typing situations; Prolog routing by coverage of each encoder's fields",
-  "answers": 156,
-  "situations": 205,
-  "fields_stated": 225,
+  "answers": 157,
+  "situations": 206,
+  "fields_stated": 227,
   "cases": 157,
   "encoders": 177,
-  "applies": 0.4331,
+  "applies": 0.4395,
   "recall": {
     "1": 0.5605,
-    "5": 0.7197,
-    "10": 0.7197
+    "5": 0.7261,
+    "10": 0.7261
   },
   "recall_with_named_rules": {
     "1": 0.5605,
-    "5": 0.7197,
-    "10": 0.7197
+    "5": 0.7261,
+    "10": 0.7261
   },
   "lexical_recall": {
     "1": 0.5987,
@@ -35,8 +35,8 @@
     "5": 0.1656,
     "10": 0.2548
   },
-  "encoders_applying_per_answer": 0.6,
-  "encoders_touched_per_answer": 1.15,
+  "encoders_applying_per_answer": 0.61,
+  "encoders_touched_per_answer": 1.16,
   "by_encoder": {
     "advance_after_cause": {
       "cases": 1,
@@ -268,9 +268,9 @@
     },
     "injury_state_measures": {
       "cases": 2,
-      "applies": 1,
-      "top5": 1,
-      "unrouted": 1
+      "applies": 2,
+      "top5": 2,
+      "unrouted": 0
     },
     "intention_shapes_wording": {
       "cases": 1,
@@ -1405,8 +1405,8 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f000",
       "encoder": "injury_state_measures",
-      "settled": 0.0,
-      "rank": null
+      "settled": 1.0,
+      "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f003",
