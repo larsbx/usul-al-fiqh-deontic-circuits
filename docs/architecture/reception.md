@@ -26,7 +26,7 @@ Citers: Ibn Bāz (*Majmūʿ Fatāwā*, *Nūr ʿalā al-Darb*), Ibn ʿUthaymīn (
 
 ## Witnesses
 
-The 49 new cited works and four of the citers (53 works in all) are on OpenITI. Each is pinned to the century repository's current commit, and its `#META#` title was checked against the registered title before it was added. The four al-Albānī and al-Saʿdī citers are not on OpenITI and come from Shamela (al-Albānī's author page is 414, al-Saʿdī's 128). Every witness is fetched, and its size and sha256 are in `corpus/lock.json`. Witnesses over 5 MB are `fetch: on_demand` (`make fetch` skips them; `fetch --work ID` gets them), as is *Irwāʾ*, whose page-by-page Shamela fetch takes hours. Works whose authors died after 1340 AH are `modern_cache_only`.
+The 49 new cited works and four of the citers (53 works in all) are on OpenITI. Each is pinned to the century repository's current commit, and its `#META#` title was checked against the registered title before it was added. The four al-Albānī and al-Saʿdī citers are not on OpenITI and come from Shamela (al-Albānī's author page is 414, al-Saʿdī's 128). Every witness is fetched, and its size and sha256 are in `corpus/lock.json`. Witnesses over 5 MB are `fetch: on_demand` (`make fetch` skips them; `fetch --work ID` gets them), as is *Irwāʾ*, whose page-by-page Shamela fetch takes hours. Works whose authors died after 1340 AH are `modern_cache_only`. The public-domain ones are also committed under [`corpus/texts`](../../corpus/texts/README.md) (Git LFS).
 
 Known witness limits, also in each work's `note`:
 - al-Baʿlī's *Ikhtiyārāt* is a JK text whose page markers end at V01P049, so its completeness is unverified;
@@ -46,11 +46,22 @@ The matching rules:
 1. Text is normalised with the same function used for segmentation (`arabic.normalize`), and quotes and brackets are dropped, so «المغني», (المغني) and المغنى all match.
 2. A **single-word form** counts only after a citation cue (في, صاحب, كتاب, كتابه, انظر, ينظر, راجع, optionally with و/ف before it). «قال في المغني» counts and «الله هو المغني» does not.
 3. A **multi-word form** counts as written. Ambiguous short titles are listed only in cued or author-qualified forms: *al-Furūʿ* as «قال في الفروع», «صاحب الفروع» and so on, because «في الفروع» is also the ordinary phrase "in the branch rulings"; *al-Awsaṭ* as «ابن المنذر في الأوسط», because the bare «في الأوسط» is al-Ṭabarānī's *Muʿjam*.
-4. **Leftmost-longest:** overlapping hits resolve to the longest at the earliest start, so each span counts once. «المستدرك على مجموع الفتاوى» is one hit for *al-Mustadrak*, not one for each work. The `not` phrases take part as hits for no work, so «الذهبي في المغني» silences *al-Mughnī*.
+4. **Leftmost-longest:** overlapping hits resolve to the longest at the earliest start, so each span counts once. «المستدرك على مجموع الفتاوى» is one hit for *al-Mustadrak*, not one for each work. The `not` phrases take part as hits for no work, so «الذهبي في المغني» silences *al-Mughnī*. On an identical span a named work beats a `not` phrase, so «ابن مفلح في المبدع» counts for Burhān al-Dīn although it is excluded for his grandfather.
+
+### Author mentions
+
+A second pass counts mentions by name from [`corpus/reception/authors.json`](../../corpus/reception/authors.json): one entry per author, keyed by the work-id prefix of that author's cited works (`ibn_qudama` for `ibn_qudama.mughni`, `ibn_qudama.kafi`, …). The rules are the same, except that a single-word form (النووي, الشوكاني) needs no cue, since a nisba is not an ordinary word. Namesakes are shadowed: «شيخ الإسلام محمد بن عبد الوهاب» is not Ibn Taymiyya, «ابن حجر الهيتمي» is not al-ʿAsqalānī, «المجد ابن تيمية» is Majd al-Dīn. Authors whose name cannot be told apart from a far more frequent namesake have no entry: Abū Dāwūd of the *Masāʾil* would be swamped by the *Sunan*.
+
+Author mentions are an order of magnitude more frequent than titles: «قال شيخ الإسلام» is how Ibn ʿUthaymīn cites Ibn Taymiyya. They are the better measure of reliance; titles show which book.
+
+### Fixed: exclusions were ignored before October 2026
+
+Until the author pass was added, `build()` passed the lexicon to `matcher()` as a generator, which compiled the forms and then found the generator empty when compiling the `not` phrases. Every exclusion was silently dropped from the committed report. The difference was four hits, all the intended namesakes (al-Dhahabī's *Mughnī*, al-Rāfiʿī's *Sharḥ al-Kabīr*). `test_exclusions_apply_when_the_lexicon_is_a_one_shot_iterator` keeps it fixed.
 
 Each count keeps its first three page locators, so a reviewer can spot-check precision.
 
 What the counts measure, and what they don't:
-- They count **title** citations. A citer naming an author («قال شيخ الإسلام», «ذكره ابن قدامة») is not counted, and that is how al-Saʿdī and the oral fatāwā mostly cite. A low count is not evidence that a work is unused; a high count is evidence that it is used.
+- Title counts miss citations by author only; the author pass covers those, but not mentions by honorific alone («قال الشيخ», «الحافظ») or by pronoun. A low count is not evidence that a work is unused; a high count is evidence that it is used.
 - Volume is skewed by genre. *al-Sharḥ al-Mumtiʿ* and *Irwāʾ* cite by title far more often than the fatāwā collections do.
+- The labelled dataset ([`mentions.md`](mentions.md)) measures the rules' precision against human review and is the route past their recall limits.
 - Zero rows stay in the report on purpose: they show which forms need widening or which citer is missing. They are not a reason to drop a work.

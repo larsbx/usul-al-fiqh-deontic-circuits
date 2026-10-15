@@ -47,7 +47,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "A sheep was due and he slaughtered a badana: is all of it obligatory, or a seventh? Two wujūh; likewise a camel for five camels (Abū Yaʿlā the younger), on which it would or would not also suffice for twenty. No madhhab marked."
+      "note": "A sheep was due and he slaughtered a badana: is all of it obligatory («واجبة»), or a seventh? Two wujūh; likewise a camel for five camels (Abū Yaʿlā the younger), on which it would or would not also suffice for twenty. No madhhab marked."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f002",
@@ -115,7 +115,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "Expiating by fasting before breaking the oath, then breaking it while well off: al-Mughnī: it does not suffice; «وإطلاق الأكثرين مخالف لذلك لأنه كان فرضه في الظاهر فبرئ به», the expiation having dissolved the oath (Abū Bakr ʿAbd al-ʿAzīz). Reconciled (jamʿ): a kaffāra is judged at its wujūb, so the advanced fast does not suffice once he breaks the oath well off (al-Iqnāʿ, Kashshāf, with al-Mughnī)."
+      "note": "Expiating by fasting before breaking the oath (ḥinth), then breaking it while well off: al-Mughnī: it does not suffice; «وإطلاق الأكثرين مخالف لذلك لأنه كان فرضه في الظاهر فبرئ به», the expiation having dissolved the oath (Abū Bakr ʿAbd al-ʿAzīz). Reconciled (jamʿ): a kaffāra is judged at its wujūb, so the advanced fast does not suffice once he breaks the oath well off (al-Iqnāʿ, Kashshāf, with al-Mughnī)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f002",
@@ -181,7 +181,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "The boy prays early in the time, then reaches puberty: «المنصوص أنه يجب» to repeat; al-Qāḍī in Sharḥ al-Madhhab: not, he did what was commanded. Unlike ḥajj, which was not commanded of him. (The paragraph then opens the second kind: a defect in a condition, «فالصحيح أنه يجزئه», e.g. zakāt advanced to a poor man who dies.)"
+      "note": "The boy prays early in the time, then reaches puberty: «المنصوص أنه يجب» to repeat; al-Qāḍī in Sharḥ al-Madhhab: not, he did what was commanded. Unlike ḥajj, which was not commanded of him. (The paragraph then opens the second kind: a defect in a condition (sharṭ), «فالصحيح أنه يجزئه», e.g. zakāt advanced to a poor man who dies.)"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f005",
@@ -192,7 +192,7 @@
         "kaffara_changed": false
       },
       "expected": true,
-      "note": "Joining two prayers in the time of the first by tayammum, then the second's time enters and he has water: the second kind, a defect in a condition, «فالصحيح أنه يجزئه»."
+      "note": "Joining two prayers in the time of the first by tayammum, then the second's time enters and he has water: the second kind, a defect in a condition (sharṭ), «فالصحيح أنه يجزئه»."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f006",
@@ -223,7 +223,7 @@
         "target": "essence"
       },
       "expected": false,
-      "note": "Prayer in the places of prohibition: invalid on the view that the prohibition is taḥrīm, «هذه طريقة المحققين». The record runs on through the other categories (tashrīq fasts; prayer with najāsa; the usurped water and garment, two riwāyas; the only garment usurped or silk)."
+      "note": "Prayer in the places of prohibition: invalid («فلا يصح») on the view that the prohibition is taḥrīm, «هذه طريقة المحققين». The record runs on through the other categories (tashrīq fasts; prayer with najāsa; the usurped water and garment, two riwāyas; the only garment usurped or silk)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f002",
@@ -235,7 +235,7 @@
       "expected": false,
       "positions": [
         {
-          "who": "the ashhar riwāya: invalid",
+          "who": "the ashhar riwāya: invalid (bāṭil)",
           "ruling": false
         },
         {
@@ -244,7 +244,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "Prayer on usurped land: «وفيها الخلاف», the third category (a condition not specific to the act), where the statement gives «روايتان أشهرهما عدمها»; the place is a condition, and the movements in it are the prohibited act itself."
+      "note": "Prayer on usurped land: «وفيها الخلاف», the third category (a condition not specific to the act), where the statement gives «روايتان أشهرهما عدمها»; the place is a condition («البقعة شرط للصلاة»), and the movements in it are the prohibited act itself."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f003",
@@ -277,7 +277,7 @@
         "need_not_learn": false
       },
       "expected": true,
-      "note": "Contract words and the words of divorce: «ما يعتبر معناه دون لفظه», valid in any tongue."
+      "note": "Contract words and the words of divorce (alfāẓ al-ṭalāq): «ما يعتبر معناه دون لفظه», valid in any tongue."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f002",
@@ -300,7 +300,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "Takbīr, tasbīḥ and duʿāʾ in prayer: no translation with ability; when unable, two wujūh: like the Qurʾān (it lapses) or like the meaning (said in his tongue). No madhhab marked. Annotated for the takbīr, an obligatory dhikr; the later works keep the recommended dhikr and duʿāʾ untranslated by naṣṣ, which this fact bundle does not cover."
+      "note": "Takbīr, tasbīḥ and duʿāʾ in prayer: no translation with ability; when unable, two wujūh: like the Qurʾān (it lapses) or like the meaning (said in his tongue). No madhhab marked. Annotated for the takbīr, an obligatory dhikr («ذكر واجب»); the later works keep the recommended dhikr and duʿāʾ untranslated by naṣṣ, which this fact bundle does not cover."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f003",
@@ -378,7 +378,7 @@
         "substitutes": true
       },
       "expected": false,
-      "note": "The opening supplication: «فالمذهب» subḥānaka allāhumma alone; Ibn Hubayra and Taqī al-Dīn combine, but the reports of combining are weak."
+      "note": "The opening supplication: «فالمذهب» subḥānaka allāhumma alone; Ibn Hubayra and Taqī al-Dīn combine, but the reports of combining are weak (ḍaʿīf: «وفيها ضعف»)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f002",

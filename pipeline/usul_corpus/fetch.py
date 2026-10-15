@@ -36,6 +36,8 @@ def witness_url(w: dict) -> str:
         return f"https://archive.org/download/{w['item']}/{urllib.parse.quote(w['file'])}"
     if kind == "shamela":
         return f"https://shamela.ws/book/{w['book_id']}/{w.get('pages', [1])[0]}"
+    if kind == "url":
+        return w["url"]
     if kind == "zadapps":
         return f"{w['base']}/{w['folder']}/{w['file']}"
     raise ValueError(f"no URL scheme for witness kind {kind!r}")
@@ -97,6 +99,14 @@ def _shamela(w: dict, max_pages: int | None, part: Path | None = None) -> bytes:
     return ("#META#Header#End#\n" + "\n".join(out) + "\n").encode()
 
 
+def doc_to_text(doc: Path) -> Path:
+    """A Word witness → UTF-8 text beside it (`<id>.txt`), by LibreOffice. The lock pins the .doc."""
+    import subprocess
+    subprocess.run(["soffice", "--headless", "--convert-to", "txt:Text (encoded):UTF8", str(doc), "--outdir", str(doc.parent)],
+                   check=True, capture_output=True, timeout=300)
+    return doc.with_suffix(".txt")
+
+
 def fetch(w: dict, cache: Path, max_pages: int | None = None, refresh: bool = False) -> dict:
     """Fetch one witness into ``cache`` and return its lock entry."""
     path = cache / f"{w['id']}.{'txt' if w.get('format', 'text') == 'text' else w['format']}"
@@ -109,6 +119,8 @@ def fetch(w: dict, cache: Path, max_pages: int | None = None, refresh: bool = Fa
         path.write_bytes(data)
         if part:
             part.unlink(missing_ok=True)
+        if w.get("format") == "doc":
+            doc_to_text(path)
     data = path.read_bytes()
     return {
         "witness": w["id"],
@@ -116,3 +128,13 @@ def fetch(w: dict, cache: Path, max_pages: int | None = None, refresh: bool = Fa
         "bytes": len(data),
         "sha256": hashlib.sha256(data).hexdigest(),
     }
+
+
+def merge_lock(old: dict | None, new: dict) -> tuple[dict, bool]:
+    """The lock entry after a fetch, and whether the content changed. Unchanged bytes keep the old
+    entry whole (derived hashes such as ``ocr_sha256`` included); changed bytes drop them."""
+    if old is None:
+        return new, False
+    if old["sha256"] == new["sha256"]:
+        return old, False
+    return new, True

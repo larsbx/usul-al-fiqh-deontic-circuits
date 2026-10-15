@@ -1,0 +1,88 @@
+{
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f010",
+   "grades": [
+    "nass",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Three riwāyas of Aḥmad: invalid where the released one knew it, or invalid save where knowing is impossible, against Ibn Rajab's «أشهر الروايات» that it is valid absolutely; al-Iqnāʿ and Kashshāf state the validity decisively, Kashshāf giving the farq «لأنه إسقاط حق». Against the reading.",
+   "evidence": [
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p032",
+     "excerpt_ar": "المبرأ منه مجهولا لهما أو لأحدهما سواء جهلا قدره أو وصفه أو هما ولو لم",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "Release, gift or remission of a debt is valid «ولو كان المبرأ منه مجهولا لهما أو لأحدهما», even where knowing it is possible."
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p304",
+     "excerpt_ar": "القدر والوصف، ويصح الإبراء من المجهول (ولو لم يتعذر علمه) لأنه إسقاط حق",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Release from the unknown is valid even where knowing it is possible, «لأنه إسقاط حق فينفذ مع العلم والجهل كالعتق والطلاق»."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f012",
+   "grades": [
+    "wajh",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Ibn Rajab's two bare wujūh. al-Inṣāf reports al-Muwaffaq's way that ratification of the unknown is not valid, and some aṣḥāb's that on execution it is; al-Muntahā decides the cognate case of the heir who ratified a share thinking the estate small, giving him back the excess. For the reading.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p197",
+     "excerpt_ar": "أن الإجازة لا تصح بالمجهول. ولكن هل يصدق في دعوى الجهالة؟ على وجهين. ومن",
+     "position": 0,
+     "grade": "ashab",
+     "who": "al-Muwaffaq (al-Mughnī), as al-Inṣāf reports him",
+     "note": "«وطريقة المصنف في المغني: أن الإجازة لا تصح بالمجهول»; whether he is believed in claiming ignorance is a further pair of wujūh."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p197",
+     "excerpt_ar": "الأصحاب من قال، إن قلنا: الإجازة تنفيذ: صحت بالمجهول، ولا رجوع وإن قلنا:",
+     "position": 1,
+     "grade": "ashab",
+     "who": "some aṣḥāb, as al-Inṣāf reports them",
+     "note": "On ratification as execution, which al-Inṣāf makes the madhhab, it is valid on the unknown with no recourse; on a fresh gift, two wujūh."
+    },
+    {
+     "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p441",
+     "excerpt_ar": "أجزت لأني ظننته قليلا قبل بيمينه وله الرجوع بما زاد على ظنه إلا أن يكون",
+     "position": 0,
+     "grade": "qiyas",
+     "who": "Ibn al-Najjār, al-Muntahā",
+     "note": "A cognate case: the heir who ratified a share and says he thought it small is believed on oath and takes back what exceeds his belief, so his ratification does not bind him to the unknown excess."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f009",
+   "grades": [
+    "wajh",
+    "ashab"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Taqī al-Dīn's iḥtimāl of a lot, with Ibn Rajab's qiyās al-madhhab for one entitled in fact but unknown to us, against Ibn ʿAqīl's division and Taqī al-Dīn's preferred iḥtimāl of the sons' sons. For the reading.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p235",
+     "excerpt_ar": "يصح الوصية بغير تردد ويخرج المستحق منهما بالقرعة على قياس المذهب في",
+     "position": 0,
+     "grade": "qiyas",
+     "who": "Ibn Rajab, al-Qawāʿid (q105.f006)",
+     "note": "The general rule: one entitled in fact whom we cannot identify is drawn by lot «على قياس المذهب في اشتباه المستحق للمال بغيره»."
+    }
+   ]
+  }
+ ]
+}

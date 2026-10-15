@@ -406,7 +406,7 @@
   },
   {
    "topic": "type:nafy_al_fariq",
-   "claim_en": "The equal case relies on knowing that the difference has no effect; its criterion is that no common cause need be cited, only negation of an effective difference; whether this is called qiyās is disputed.",
+   "claim_en": "The equal case relies on knowing that the difference has no effect; its criterion is that no uniting ʿilla need be cited («التعرض للعلة الجامعة»), only negation of an effective difference; whether this is called qiyās is disputed.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p188",
    "excerpt_ar": "وضابط هذا الجنس: أن لا يحتاج فيه إلى التعرض للعلة الجامعة، بل بنفي الفارق المؤثر",
@@ -422,7 +422,7 @@
   },
   {
    "topic": "masalik:nass_sarih",
-   "claim_en": "First textual mode: explicit (ṣarīḥ) — a word of causation appears (kay lā, li-kay lā, dhālika bi-annahum, min ajli dhālika).",
+   "claim_en": "First textual mode: explicit (ṣarīḥ) — a word of causation (taʿlīl) appears (kay lā, li-kay lā, dhālika bi-annahum, min ajli dhālika).",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p192",
    "excerpt_ar": "الأول- الصريح: وذلك أن يرد فيه لفظ التعليل",
@@ -470,7 +470,7 @@
   },
   {
    "topic": "masalik:sabr_taqsim",
-   "claim_en": "Sabr: Abū al-Khaṭṭāb says it is valid only where the umma agrees the aṣl is caused, differs over the cause, and all but one candidate is refuted; structure: the ruling is caused, the cause is X or Y, X is void, so Y.",
+   "claim_en": "Sabr: Abū al-Khaṭṭāb says it is valid only where the umma agrees the aṣl is muʿallal, differs over the ʿilla, and all but one candidate is refuted; structure: the ruling is muʿallal, the ʿilla is X or Y, X is void (buṭlān: «وقد بطل أحدهما»), so Y.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p221",
    "excerpt_ar": "فنقول: الحكم معلل، ولا علة إلا كذا أو كذا، وقد بطل أحدهما فيتعين الآخر",
@@ -478,7 +478,7 @@
   },
   {
    "topic": "masalik:sabr_taqsim",
-   "claim_en": "Conditions of sabr include that the enumeration be exhaustive (by the opponent's agreement or by searching until unable to find another).",
+   "claim_en": "The shurūṭ (sharṭ) of sabr include that the enumeration be exhaustive (by the opponent's agreement or by searching until unable to find another).",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p222",
    "excerpt_ar": "الأمر الثاني: أن يكون سبره حاصرا لجميع ما يعلل به",
@@ -486,7 +486,7 @@
   },
   {
    "topic": "masalik:sabr_taqsim",
-   "claim_en": "Naqḍ alone does not suffice to void the opponent's ʿilla in sabr, since the cancelled element may be a part or condition of the ʿilla.",
+   "claim_en": "Naqḍ alone does not suffice to void (ifsād: «في إفساد علة خصمه») the opponent's ʿilla in sabr, since the cancelled element may be a part or sharṭ of the ʿilla.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p224",
    "excerpt_ar": "ولا يكفيه في إفساد علة خصمه: النقض",
@@ -510,7 +510,7 @@
   },
   {
    "topic": "masalik:tard",
-   "claim_en": "Invalid maslak: proving an ʿilla by its mere concomitance (iṭṭirād) is void—absence of one defeater (naqḍ) is not proof of soundness.",
+   "claim_en": "Invalid maslak: proving an ʿilla's ṣiḥḥa by its mere concomitance (iṭṭirād) is fāsid («ففاسد»)—absence of one defeater (naqḍ) is not proof of soundness.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p233",
    "excerpt_ar": "فأما الدلالة على صحة العلة باطرادها ففاسد",
@@ -518,7 +518,7 @@
   },
   {
    "topic": "masalik:munasaba",
-   "claim_en": "If the suitable description entails an equal or greater mafsada: some say munāsaba lapses; Ibn Qudāma says this is not correct because maṣlaḥa is a real thing not annulled by an opposing factor.",
+   "claim_en": "If the suitable description entails an equal or greater mafsada: some say munāsaba lapses; Ibn Qudāma says this is not correct because maṣlaḥa is a real thing that does not cease to exist through an opposing factor («لا ينعدم بمعارض»).",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p235",
    "excerpt_ar": "متى لزم من الوصف المتضمن للمصلحة مفسدة مساوية للمصلحة، أو راجحة عليها",
@@ -534,7 +534,7 @@
   },
   {
    "topic": "type:shabah",
-   "claim_en": "Alternative definition: shabah unites aṣl and farʿ by a description suggestive (yuhim) of containing the wisdom—between the clearly suitable (qiyās al-ʿilla, valid) and the clearly irrelevant (ṭard, void).",
+   "claim_en": "Alternative definition: shabah unites aṣl and farʿ by a description suggestive (yuhim) of containing the wisdom—between the clearly suitable (qiyās al-ʿilla, «وهو صحيح») and the clearly irrelevant (ṭard, «باطل»).",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p243",
    "excerpt_ar": "فالقسم الأول: قياس العلة، وهو صحيح",
@@ -542,7 +542,7 @@
   },
   {
    "topic": "type:shabah",
-   "claim_en": "There are two reports from Aḥmad on qiyās al-shabah: valid, and invalid (chosen by al-Qāḍī); al-Shāfiʿī has two corresponding views. Ibn Qudāma gives the argument for its authority (it yields preponderant ẓann).",
+   "claim_en": "There are two reports from Aḥmad on qiyās al-shabah: ṣaḥīḥ («أنه صحيح»), and not ṣaḥīḥ (chosen by al-Qāḍī); al-Shāfiʿī has two corresponding views. Ibn Qudāma gives the argument for its authority (it yields preponderant ẓann).",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p243",
    "excerpt_ar": "واختلفت الرواية عن أحمد -رحمه الله- في قياس الشبه: فروي: أنه صحيح",
@@ -558,7 +558,7 @@
   },
   {
    "topic": "rukn:asl",
-   "claim_en": "First condition of the aṣl: it is established by text or agreement of both disputants; one cannot ground the aṣl itself by qiyās on another aṣl.",
+   "claim_en": "First sharṭ of the aṣl: it is established by text or agreement of both disputants; one cannot ground the aṣl itself by qiyās on another aṣl.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p249",
    "excerpt_ar": "أحدهما: أن يكون ثابتا بنص، أو اتفاق من الخصمين",
@@ -590,7 +590,7 @@
   },
   {
    "topic": "rukn:asl",
-   "claim_en": "Second condition: the ruling of the aṣl must be rationally intelligible (maʿqūl al-maʿnā); prayer times and numbers of rakʿas cannot be extended.",
+   "claim_en": "Second sharṭ: the ruling of the aṣl must be rationally intelligible (maʿqūl al-maʿnā); prayer times and numbers of rakʿas cannot be extended.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p256",
    "excerpt_ar": "أن يكون الحكم معقول المعنى، إذ القياس إنما هو: تعدية الحكم من محل إلى محل بواسطة تعدي المقتضى",
@@ -598,7 +598,7 @@
   },
   {
    "topic": "rukn:hukm",
-   "claim_en": "Conditions of the ḥukm: (1) the farʿ's ruling must equal the aṣl's (no extension with excess or deficiency, e.g. eclipse prayer rukūʿ argument rejected);",
+   "claim_en": "Shurūṭ (sharṭ) of the ḥukm: (1) the farʿ's ruling must equal the aṣl's (no extension with excess or deficiency, e.g. eclipse prayer rukūʿ argument rejected);",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p256",
    "excerpt_ar": "أحدهما: أن يكون حكم الفرع مساويا لحكم الأصل",
@@ -614,7 +614,7 @@
   },
   {
    "topic": "rukn:far",
-   "claim_en": "Condition of the farʿ: the ʿilla of the aṣl must be present in it; the precedence of the aṣl in time is required only for qiyās al-ʿilla, not qiyās al-dalāla; presence of the ʿilla in the farʿ need only be probable.",
+   "claim_en": "Sharṭ of the farʿ: the ʿilla of the aṣl must be present in it; the precedence of the aṣl in time is required only for qiyās al-ʿilla, not qiyās al-dalāla; presence of the ʿilla in the farʿ need only be probable.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p259",
    "excerpt_ar": "والصحيح: أن ذلك يشترط لقياس العلة، ولا يشترط لقياس الدلالة",
@@ -630,7 +630,7 @@
   },
   {
    "topic": "rukn:illa",
-   "claim_en": "Our companions say transitivity (taʿdiya) is a condition of the ʿilla, so a restricted (qāṣira) ʿilla like thamaniyya for gold/silver is invalid (also Ḥanafī view); Abū al-Khaṭṭāb, with the Shāfiʿīs, allows the qāṣira.",
+   "claim_en": "Our companions say transitivity (taʿdiya) is a sharṭ of the ʿilla's ṣiḥḥa («من شرط صحة العلة: أن تكون متعدية»), so a restricted (qāṣira) ʿilla like thamaniyya for gold/silver is not ṣaḥīḥ (also Ḥanafī view); Abū al-Khaṭṭāb, with the Shāfiʿīs, allows the qāṣira.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p260",
    "excerpt_ar": "قال أصحابنا: من شرط صحة العلة: أن تكون متعدية",
@@ -638,7 +638,7 @@
   },
   {
    "topic": "takhsis_illa",
-   "claim_en": "On iṭṭirād: al-Barmakī reports two wajhs — it is a condition (naqḍ voids an extracted ʿilla, or shows a texted one to be partial), supported by al-Qāḍī; or the ʿilla remains ḥujja elsewhere like a specified general term, chosen by Abū al-Khaṭṭāb (also Mālik, Ḥanafīs).",
+   "claim_en": "On iṭṭirād: al-Barmakī reports two wajhs — it is a sharṭ of its ṣiḥḥa («شرطا لصحتها»; naqḍ voids an extracted ʿilla, or shows a texted one to be partial), supported by al-Qāḍī; or the ʿilla remains ḥujja elsewhere like a specified general term, chosen by Abū al-Khaṭṭāb (also Mālik, Ḥanafīs).",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p271",
    "excerpt_ar": "حكى أبو حفص البرمكي في كون ذلك شرطا لصحتها وجهين",
@@ -646,7 +646,7 @@
   },
   {
    "topic": "takhsis_illa",
-   "claim_en": "A third view distinguishes: naqḍ of an extracted ʿilla invalidates it, but a text- or ijmāʿ-based ʿilla is not impaired by non-occurrence of the ruling (a missing condition or present impediment).",
+   "claim_en": "A third view distinguishes: naqḍ of an extracted ʿilla invalidates it («مبطلا لها»), but a text- or ijmāʿ-based ʿilla is not impaired by non-occurrence of the ruling (a missing sharṭ or present impediment).",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p274",
    "excerpt_ar": "وفرق قوم بين العلة المنصوص عليها، وبين المستنبطة، وجعل نقض المستنبطة مبطلا لها",
@@ -654,7 +654,7 @@
   },
   {
    "topic": "qadih:naqd",
-   "claim_en": "Four ways to escape naqḍ: deny the ʿilla in the case, deny the ruling, show the case is an exception against both principles, or show an impediment/missing condition there.",
+   "claim_en": "Four ways to escape naqḍ: deny the ʿilla in the case, deny the ruling, show the case is an exception against both principles, or show an impediment/missing sharṭ there.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p276",
    "excerpt_ar": "فإذا طريق الخروج عن عهدة النقض أربعة أمور",
@@ -662,7 +662,7 @@
   },
   {
    "topic": "takhsis_illa",
-   "claim_en": "Three kinds of non-occurrence of ruling that do not count as naqḍ: (1) exceptions to the qiyās rule (ʿāqila, muṣarrāt, ʿarāyā) which specify (yukhaṣṣiṣ) the ʿilla rather than void it; (2) a competing ʿilla; (3) absence of the proper locus or condition.",
+   "claim_en": "Three kinds of non-occurrence of ruling that do not count as naqḍ: (1) exceptions to the qiyās rule (ʿāqila, muṣarrāt, ʿarāyā) which specify (yukhaṣṣiṣ) the ʿilla rather than void it («ولا يفسد العلة»); (2) a competing ʿilla; (3) absence of the proper locus or sharṭ.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p278",
    "excerpt_ar": "فلا يوجب نقضا على القياس، ولا يفسد العلة، بل يخصصها بما وراء الاستثناء",
@@ -742,7 +742,7 @@
   },
   {
    "topic": "qadih:fasad_al_itibar",
-   "claim_en": "Fasād al-iʿtibār: the objection that the qiyās contradicts a text and so is void—the Companions did not resort to qiyās once they had a report.",
+   "claim_en": "Fasād al-iʿtibār: the objection that the qiyās contradicts a text and so is bāṭil («فيكون باطلا»)—the Companions did not resort to qiyās once they had a report.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p303",
    "excerpt_ar": "وهو أن يقول: هذا قياس يخالف نصا، فيكون باطلا",
@@ -766,7 +766,7 @@
   },
   {
    "topic": "qadih:taqsim",
-   "claim_en": "Taqsīm: has two conditions—the mustadill's term must divide into accepted and denied senses, and the division must be exhaustive.",
+   "claim_en": "Taqsīm: has two shurūṭ (sharṭ)—the mustadill's term must divide into accepted and denied senses, and the division must be exhaustive.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p306",
    "excerpt_ar": "ويشترط لصحته شرطان. أحدهما: أن يكون ما ذكره المستدل منقسما إلى",
@@ -790,7 +790,7 @@
   },
   {
    "topic": "qadih:kasr",
-   "claim_en": "Kasr—showing the ḥikma without the ruling—is not binding, since the ḥikma cannot be measured by opinion.",
+   "claim_en": "Kasr—showing the ḥikma without the ruling—is not binding («فغير لازم»), since the ḥikma cannot be measured by opinion.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p312",
    "excerpt_ar": "وهو إبداء الحكمة بدون الحكم: فغير لازم",
@@ -822,7 +822,7 @@
   },
   {
    "topic": "qadih:muarada",
-   "claim_en": "Muʿāraḍa in the farʿ: citing in the farʿ what prevents the ruling, either a stronger proof (text/ijmāʿ) or a description.",
+   "claim_en": "Muʿāraḍa in the farʿ: citing in the farʿ what prevents the ruling, either a stronger proof (text/ijmāʿ: «بدليل آكد منه») or a description.",
    "witness": "openiti-rawda-shamela12010",
    "locator": "src:openiti-rawda-shamela12010/v02:p323",
    "excerpt_ar": "وهو: أن يذكر في الفرع ما يمتنع معه ثبوت الحكم",
@@ -902,7 +902,7 @@
   },
   {
    "topic": "definition",
-   "claim_en": "Matn: qiyās is technically carrying a farʿ onto an aṣl in a ruling by a common factor; alternatives: establishing the like of a ruling outside its locus for a shared cause, or extending the text's ruling; defining it as ijtihād is wrong.",
+   "claim_en": "Matn: qiyās is technically carrying a farʿ onto an aṣl in a ruling by a common factor; alternatives: establishing the like of a ruling outside its locus for a shared muqtaḍī («لمقتض مشترك»), or extending the text's ruling; defining it as ijtihād is wrong.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p218",
    "excerpt_ar": "وشرعا: حمل فرع على أصل في حكم بجامع بينهما، وقيل: إثبات مثل الحكم في غير محله لمقتض مشترك",
@@ -950,7 +950,7 @@
   },
   {
    "topic": "hujjiyya",
-   "claim_en": "Al-Ṭūfī maps eight positions (rational/legal × permissible/obligatory/impossible/occurring); among those denying its actual occurrence: Dāwūd b. ʿAlī al-Iṣbahānī, al-Qāshānī and al-Nahrawānī.",
+   "claim_en": "Al-Ṭūfī maps eight positions (rational/legal × permissible/wājib/impossible/occurring); among those denying its actual occurrence: Dāwūd b. ʿAlī al-Iṣbahānī, al-Qāshānī and al-Nahrawānī.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p246",
    "excerpt_ar": "ومنعه داود بن علي الأصبهاني والقاشاني والنهرواني",
@@ -958,7 +958,7 @@
   },
   {
    "topic": "hujjiyya",
-   "claim_en": "Matn argument: qiyās involves warding off a presumed harm, which is rationally obligatory, so qiyās is rationally obligatory, and obligation entails permissibility.",
+   "claim_en": "Matn argument: qiyās involves warding off a presumed harm, which is rationally wājib («وهو واجب عقلا»), so qiyās is rationally obligatory, and obligation entails permissibility.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p247",
    "excerpt_ar": "القياس يتضمن دفع ضرر مظنون، وهو واجب عقلا، فالقياس واجب عقلا",
@@ -974,7 +974,7 @@
   },
   {
    "topic": "rukn:asl",
-   "claim_en": "Matn: condition of the aṣl—established by text (even if the parties dispute it) or agreed between the two, even if established by qiyās; not provable by qiyās on another aṣl.",
+   "claim_en": "Matn: sharṭ of the aṣl—established by text (even if the parties dispute it) or agreed between the two, even if established by qiyās; not provable by qiyās on another aṣl.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p291",
    "excerpt_ar": "فشرط الأصل ثبوته بنص، وإن اختلفا فيه ; أو اتفاق منهما ولو ثبت بقياس",
@@ -982,7 +982,7 @@
   },
   {
    "topic": "rukn:asl",
-   "claim_en": "Matn: further conditions—the aṣl's proof must not cover the farʿ, and the aṣl ruling must be rationally intelligible.",
+   "claim_en": "Matn: further shurūṭ (sharṭ)—the aṣl's proof must not cover the farʿ, and the aṣl ruling must be rationally intelligible.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p300",
    "excerpt_ar": "وأن لا يتناول دليل الأصل الفرع وإلا لاستغني عن القياس. وأن يكون معقول المعنى",
@@ -1018,7 +1018,7 @@
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p323",
    "excerpt_ar": "واشترطه القاضي وبعض الشافعية، خلافا لبعضهم، ولمالك، والحنفية، وأبي الخطاب، فتبقى بعد التخصيص حجة كالعموم",
-   "hanbali_position": "Al-Qāḍī: iṭṭirād is a condition (naqḍ invalidates); Abū al-Khaṭṭāb: takhṣīṣ al-ʿilla allowed."
+   "hanbali_position": "Al-Qāḍī: iṭṭirād is a sharṭ («واشترطه القاضي»; naqḍ invalidates: ibṭāl); Abū al-Khaṭṭāb: takhṣīṣ al-ʿilla allowed."
   },
   {
    "topic": "takhsis_illa",
@@ -1086,7 +1086,7 @@
   },
   {
    "topic": "masalik:sabr_taqsim",
-   "claim_en": "Matn: sabr—voiding every ʿilla proposed for a ruling agreed to be caused except one; the enumeration must be exhaustive; a description is not voided by naqḍ alone.",
+   "claim_en": "Matn: sabr—voiding (ibṭāl: «إبطال كل علة») every ʿilla proposed for a ruling agreed to be caused except one; the enumeration must be exhaustive; a description is not voided by naqḍ alone.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p404",
    "excerpt_ar": "النوع الثاني السبر: وهو إبطال كل علة علل بها الحكم المعلل إجماعا، إلا واحدة فتعين",
@@ -1094,7 +1094,7 @@
   },
   {
    "topic": "masalik:dawaran",
-   "claim_en": "Matn: dawarān—existence of the ruling with the description and absence with its absence; it yields ẓann of causality; al-Qāḍī and some Shāfiʿīs accept \"testimony of the uṣūl\".",
+   "claim_en": "Matn: dawarān—existence of the ruling with the description and absence with its absence; it yields ẓann of causality (ʿilliyya); al-Qāḍī and some Shāfiʿīs accept \"testimony of the uṣūl\".",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p412",
    "excerpt_ar": "النوع الثالث الدوران: وهو وجود الحكم بوجود الوصف، وعدمه بعدمه وخالف قوم",
@@ -1110,7 +1110,7 @@
   },
   {
    "topic": "type:shabah",
-   "claim_en": "Matn: qiyās al-shabah—two definitions; the shabahī description is between the suitable (qiyās al-ʿilla) and the ṭardī (void); two views each from Aḥmad and al-Shāfiʿī; \"the more apparent: yes (valid), as it yields ẓann—against al-Qāḍī\"; resemblance is in ruling not reality (against Ibn ʿUlayya).",
+   "claim_en": "Matn: qiyās al-shabah—two definitions; the shabahī description is between the suitable (qiyās al-ʿilla) and the ṭardī («طردي باطل»); two views each from Aḥmad and al-Shāfiʿī; \"the more apparent: yes\" (to the ṣiḥḥa of holding by it, «وفي صحة التمسك به»), as it yields ẓann—against al-Qāḍī\"; resemblance is in ruling not reality (against Ibn ʿUlayya).",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p424",
    "excerpt_ar": "والثالث: الشبه، وفي صحة التمسك به قولان لأحمد والشافعي - رضي الله عنهما -، والأظهر: نعم لإثارته الظن، خلافا للقاضي",
@@ -1182,7 +1182,7 @@
   },
   {
    "topic": "qadih:man",
-   "claim_en": "Matn: manʿ—denial of the aṣl ruling (the mustadill is not cut off by it, per the soundest view), of the ʿilla in the aṣl, of its causality, of its presence in the farʿ.",
+   "claim_en": "Matn: manʿ—denial of the aṣl ruling (the mustadill is not cut off by it, per al-aṣaḥḥ, «على الأصح»), of the ʿilla in the aṣl, of its causality, of its presence in the farʿ.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p481",
    "excerpt_ar": "المنع، وهو منع حكم الأصل، ولا ينقطع به المستدل على الأصح",
@@ -1198,7 +1198,7 @@
   },
   {
    "topic": "qadih:mutalaba",
-   "claim_en": "Matn: muṭālaba—demanding the proof of causality; concedes the ruling and the description in aṣl and farʿ; it is the third of the denials.",
+   "claim_en": "Matn: muṭālaba—demanding the proof of causality (ʿilliyya); concedes the ruling and the description in aṣl and farʿ; it is the third of the denials.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p498",
    "excerpt_ar": "وهي طلب دليل علية الوصف من المستدل",
@@ -1206,7 +1206,7 @@
   },
   {
    "topic": "qadih:naqd",
-   "claim_en": "Matn: naqḍ—the ʿilla without the ruling; whether it voids the ʿilla is disputed; the mustadill should guard against naqḍ cases; may answer \"I do not know the riwāya there\".",
+   "claim_en": "Matn: naqḍ—the ʿilla without the ruling; whether it voids the ʿilla is disputed («وفي بطلان العلة به خلاف»); the mustadill should guard against naqḍ cases; may answer \"I do not know the riwāya there\".",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p498",
    "excerpt_ar": "وهو إبداء العلة بدون الحكم، وفي بطلان العلة به خلاف",
@@ -1214,7 +1214,7 @@
   },
   {
    "topic": "qadih:kasr",
-   "claim_en": "Matn: kasr (the ḥikma without the ruling) is not binding since ḥikmas are not measurable by opinion; adding a non-effective description to avoid naqḍ fails; adding a condition in the ruling works per Abū al-Khaṭṭāb.",
+   "claim_en": "Matn: kasr (the ḥikma without the ruling) is not binding («غير لازم») since ḥikmas are not measurable by opinion; adding a non-effective description to avoid naqḍ fails; adding a sharṭ in the ruling works per Abū al-Khaṭṭāb.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p510",
    "excerpt_ar": "والكسر: وهو إبداء الحكمة بدون الحكم، غير لازم",
@@ -1230,7 +1230,7 @@
   },
   {
    "topic": "qadih:muarada",
-   "claim_en": "Matn: muʿāraḍa in the aṣl shows another cause for the ruling there; the soundest view obliges the mustadill to exclude it in his proof.",
+   "claim_en": "Matn: muʿāraḍa in the aṣl shows another cause for the ruling there (a muqtaḍī: «وجود مقتض للحكم فيه»); al-aṣaḥḥ («على الأصح») obliges the mustadill to exclude it in his proof.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p527",
    "excerpt_ar": "المعارضة، وهي إما في الأصل ببيان وجود مقتض للحكم فيه",
@@ -1262,7 +1262,7 @@
   },
   {
    "topic": "qadih:order",
-   "claim_en": "Matn: all objections reduce to manʿ or muʿāraḍa; some count 25; ordering them is agreed to be better, its obligatoriness is disputed.",
+   "claim_en": "Matn: all objections reduce to manʿ or muʿāraḍa; some count 25; ordering them is agreed to be better, its wujūb is disputed.",
    "witness": "openiti-tufi-shamela10781",
    "locator": "src:openiti-tufi-shamela10781/v03:p565",
    "excerpt_ar": "والأسئلة راجعة إلى منع، أو معارضة، وإلا لم يسمع",
@@ -1326,7 +1326,7 @@
   },
   {
    "topic": "rukn:hukm",
-   "claim_en": "Matn conditions of ḥukm al-aṣl: it must be sharʿī (if a sharʿī ruling is sought), not abrogated, not covering the farʿ's ruling, and not deviating from the course of qiyās.",
+   "claim_en": "Matn shurūṭ (sharṭ) of ḥukm al-aṣl: it must be sharʿī (if a sharʿī ruling is sought), not abrogated, not covering the farʿ's ruling, and not deviating from the course of qiyās.",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p017",
    "excerpt_ar": "وشرط حكم الأصل: كونه شرعيا إن استلحق شرعيا",
@@ -1342,7 +1342,7 @@
   },
   {
    "topic": "rukn:asl",
-   "claim_en": "Matn: what is specified out of qiyās may serve as an aṣl and be compared to another; Abū Yaʿlā cites Aḥmad on vowing to slaughter oneself (ransom with a ram, by analogy with vowing one's son); Ibn Mufliḥ: view of aṣḥābunā and Shāfiʿīs.",
+   "claim_en": "Matn: what is specified out of qiyās may serve as an aṣl and be compared to another; Abū Yaʿlā cites Aḥmad on vowing (nadhr) to slaughter oneself (he ransoms himself with a ram, «يفدي نفسه بكبش»: fidāʾ, by analogy with vowing one's son); Ibn Mufliḥ: view of aṣḥābunā and Shāfiʿīs.",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p022",
    "excerpt_ar": "وما خص من القياس يجوز القياس عليه و\" يجوز \"قياسه على غيره",
@@ -1350,7 +1350,7 @@
   },
   {
    "topic": "rukn:asl",
-   "claim_en": "The aṣl need only be agreed between the two disputants (the sound majority view); some require the umma's agreement; al-Muwaffaq rejected that due to the rarity of consensual rulings.",
+   "claim_en": "The aṣl need only be agreed between the two disputants (al-ṣaḥīḥ, «وهذا الصحيح الذي عليه الجمهور»); some require the umma's agreement; al-Muwaffaq rejected that due to the rarity of consensual rulings.",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p028",
    "excerpt_ar": "وضعفه الموفق كغيره لندرة المجمع عليه",
@@ -1366,7 +1366,7 @@
   },
   {
    "topic": "takhsis_illa",
-   "claim_en": "Matn: naqḍ, called takhṣīṣ al-ʿilla, is non-constancy—the ʿilla found without the ruling (fast without pre-dawn intention, contradicted by voluntary fasting).",
+   "claim_en": "Matn: naqḍ, called takhṣīṣ al-ʿilla, is non-constancy—the ʿilla found without the ruling (fast without pre-dawn intention, contradicted by voluntary (nafl) fasting).",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p056",
    "excerpt_ar": "والنقض، ويسمى تخصيص العلة\" هو \"عدم اطرادها",
@@ -1374,7 +1374,7 @@
   },
   {
    "topic": "takhsis_illa",
-   "claim_en": "Ten views on whether naqḍ impairs the ʿilla. First: it does not impair at all and the ʿilla is ḥujja in the rest, like a specified general term—al-Qāḍī and Abū al-Khaṭṭāb, attributed by al-Āmidī to most Ḥanbalīs; al-Qāḍī: the apparent view of Aḥmad.",
+   "claim_en": "Ten views on whether naqḍ impairs the ʿilla (qadḥ). First: it does not impair at all and the ʿilla is ḥujja in the rest, like a specified general term—al-Qāḍī and Abū al-Khaṭṭāb, attributed by al-Āmidī to most Ḥanbalīs; al-Qāḍī: the apparent view of Aḥmad.",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p058",
    "excerpt_ar": "وهذا قول القاضي وأبي الخطاب. وحكاه الآمدي عن أكثر أصحابنا",
@@ -1382,7 +1382,7 @@
   },
   {
    "topic": "takhsis_illa",
-   "claim_en": "Second view: naqḍ impairs the ʿilla—chosen among Ḥanbalīs by Ibn Ḥāmid and also by al-Qāḍī (two views), the Shāfiʿī position; al-Māturīdī: takhṣīṣ al-ʿilla is void.",
+   "claim_en": "Second view: naqḍ impairs the ʿilla («يقدح»)—chosen among Ḥanbalīs by Ibn Ḥāmid and also by al-Qāḍī (two views), the Shāfiʿī position; al-Māturīdī: takhṣīṣ al-ʿilla is void.",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p058",
    "excerpt_ar": "والقول الثاني: يقدح. اختاره من أصحابنا: ابن حامد وقاله القاضي أيضا",
@@ -1390,7 +1390,7 @@
   },
   {
    "topic": "takhsis_illa",
-   "claim_en": "Third view: naqḍ impairs the extracted ʿilla unless due to an impediment or missing condition, but not the textual one—the choice of al-Muwaffaq in the Rawḍa. Sixth view (al-Fakhr Ismāʿīl): not allowed in manṣūṣa or exceptions like muṣarrāt.",
+   "claim_en": "Third view: naqḍ impairs (qadḥ) the extracted ʿilla unless due to an impediment or missing sharṭ, but not the textual one—the choice of al-Muwaffaq in the Rawḍa. Sixth view (al-Fakhr Ismāʿīl): not allowed in manṣūṣa or exceptions like muṣarrāt.",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p059",
    "excerpt_ar": "وهذا اختيار الشيخ موفق الدين في الروضة",
@@ -1398,7 +1398,7 @@
   },
   {
    "topic": "qadih:kasr",
-   "claim_en": "Matn: kasr is the ḥikma existing without the ruling (a disobedient traveller vs one with arduous work at home); al-naqḍ al-maksūr is the naqḍ of some of the descriptions; the sound view among aṣḥābunā and most is that neither voids the ʿilla, since the ʿilla is the totality of descriptions.",
+   "claim_en": "Matn: kasr is the ḥikma existing without the ruling (a disobedient traveller vs one with arduous work at home); al-naqḍ al-maksūr is the naqḍ of some of the descriptions; al-ṣaḥīḥ among aṣḥābunā and most is that neither voids the ʿilla («لا يبطلانها»), since the ʿilla is the totality of descriptions.",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p067",
    "excerpt_ar": "الصحيح عند أصحابنا والأكثر: أن الكسر والنقض المكسور \"لا يبطلانها",
@@ -1406,7 +1406,7 @@
   },
   {
    "topic": "rukn:illa",
-   "claim_en": "Matn: reversibility (ʿaks)—absence of the ruling with absence of the ʿilla—is a condition.",
+   "claim_en": "Matn: reversibility (ʿaks)—absence of the ruling with absence of the ʿilla—is a sharṭ.",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p067",
    "excerpt_ar": "والعكس، وهو عدم الحكم لعدم العلة شرط",
@@ -1414,7 +1414,7 @@
   },
   {
    "topic": "rukn:illa",
-   "claim_en": "Condition: an extracted ʿilla must not be opposed by a contrary description in the aṣl absent from the farʿ; and must not contradict a text or ijmāʿ.",
+   "claim_en": "Sharṭ: an extracted ʿilla must not be opposed by a contrary description in the aṣl absent from the farʿ; and must not contradict a text or ijmāʿ.",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p085",
    "excerpt_ar": "لأن النص والإجماع لا يقاومهما القياس، بل يكون إذا خالفهما باطلا",
@@ -1454,7 +1454,7 @@
   },
   {
    "topic": "masalik:ijma",
-   "claim_en": "First maslak: ijmāʿ (placed first for its strength): the umma agrees that a ruling's ʿilla is X (the angry judge; the full brother's priority).",
+   "claim_en": "First maslak: ijmāʿ (placed first for its strength): the umma agrees that a ruling's (ḥukm's) ʿilla is X (the angry judge: why he may not judge; the full brother's priority).",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p116",
    "excerpt_ar": "والمراد بثبوت العلة بالإجماع: أن تجمع الأمة على أن هذا الحكم علته كذا",
@@ -1470,7 +1470,7 @@
   },
   {
    "topic": "masalik:ima",
-   "claim_en": "Text divides into ṣarīḥ, ẓāhir and īmāʾ/tanbīh; īmāʾ is coupling a description to a ruling such that, were it not causal, the coupling would be odd.",
+   "claim_en": "Text divides into ṣarīḥ, ẓāhir and īmāʾ/tanbīh; īmāʾ is coupling a description to a ruling such that, were it not the ʿilla, the coupling would be odd.",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p125",
    "excerpt_ar": "والإيماء: هو اقتران الوصف بحكم لو لم يكن الوصف",
@@ -1486,7 +1486,7 @@
   },
   {
    "topic": "masalik:sabr_taqsim",
-   "claim_en": "Al-Qāḍī: causation is the norm (taʿlīl al-aṣl) and acting on ẓann in ʿilal is obligatory by consensus.",
+   "claim_en": "Al-Qāḍī: causation is the norm (taʿlīl al-aṣl) and acting on ẓann in ʿilal is wājib by consensus («ويجب العمل بالظن فيها»).",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p152",
    "excerpt_ar": "ويجب العمل بالظن فيها\" أي في علل الأحكام \"إجماعا",
@@ -1558,7 +1558,7 @@
   },
   {
    "topic": "hujjiyya",
-   "claim_en": "Matn: worship by qiyās is rationally permissible per the four imams (al-Qāḍī, Abū al-Khaṭṭāb, al-Qaffāl and Abū al-Ḥusayn even held it rationally obligatory); it occurred legally per most aṣḥāb; denied by Dāwūd, his son, al-Qāshānī, al-Nahrawānī and some aṣḥāb—a riwāya from Aḥmad, interpreted by al-Qāḍī and Ibn ʿAqīl as qiyās against a text, and by Ibn Rajab as for one who did not search the proof.",
+   "claim_en": "Matn: worship by qiyās is rationally permissible per the four imams (al-Qāḍī, Abū al-Khaṭṭāb, al-Qaffāl and Abū al-Ḥusayn even held it rationally wājib); it occurred legally per most aṣḥāb; denied by Dāwūd, his son, al-Qāshānī, al-Nahrawānī and some aṣḥāb—a riwāya from Aḥmad, interpreted by al-Qāḍī and Ibn ʿAqīl as qiyās against a text, and by Ibn Rajab as for one who did not search the proof.",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p213",
    "excerpt_ar": "ومنعه داود وابنه والقاشاني والنهرواني وبعض أصحابنا وجمع، وهو رواية عن أحمد",
@@ -1582,7 +1582,7 @@
   },
   {
    "topic": "scope:asbab",
-   "claim_en": "Some deny qiyās in cause, condition and impediment (zinā as cause of ḥadd not extended to sodomy), as did al-Āmidī and Ibn al-Ḥājib; al-Āmidī reports most Shāfiʿīs allow it.",
+   "claim_en": "Some deny qiyās in sabab, sharṭ and impediment («في سبب وشرط ومانع»; zinā as sabab of ḥadd not extended to sodomy), as did al-Āmidī and Ibn al-Ḥājib; al-Āmidī reports most Shāfiʿīs allow it.",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p220",
    "excerpt_ar": "ومنعه جمع في سبب وشرط ومانع",
@@ -1646,7 +1646,7 @@
   },
   {
    "topic": "qadih:naqd",
-   "claim_en": "Matn: the mustadill should guard his proof against naqḍ; guarding by an effective-less description is not allowed; Abū al-Khaṭṭāb: guarding by deleting the ruling is invalid.",
+   "claim_en": "Matn: the mustadill should guard his proof against naqḍ; guarding by an effective-less description is not allowed; Abū al-Khaṭṭāb: guarding by deleting the ruling is not ṣaḥīḥ («بحذف الحكم لم يصح»).",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p292",
    "excerpt_ar": "ويجب أن يحترز المستدل في دليله عن النقض",
@@ -1670,7 +1670,7 @@
   },
   {
    "topic": "qadih:tarkib",
-   "claim_en": "Matn: tarkīb raised against al-qiyās al-murakkab; holding by it is \"the sounder\" view since it reduces to a dispute about the aṣl.",
+   "claim_en": "Matn: tarkīb raised against al-qiyās al-murakkab; holding by it is \"the sounder\" view (al-aṣaḥḥ, «وهو الأصح») since it reduces to a dispute about the aṣl.",
    "witness": "openiti-kawkab-shamela12019",
    "locator": "src:openiti-kawkab-shamela12019/v04:p314",
    "excerpt_ar": "وهو الأصح؛ لأن حاصله منازعة في الأصل",
@@ -1734,7 +1734,7 @@
   },
   {
    "topic": "ibn_qayyim:sahih_fasid",
-   "claim_en": "Ibn al-Qayyim: the sound qiyās is the \"balance\" (mīzān) revealed with the Book; the word qiyās is divisible into true and false, which is why the Qurʾān neither praises nor blames it; the false is e.g. likening ribā to sale.",
+   "claim_en": "Ibn al-Qayyim: the sound qiyās (al-qiyās al-ṣaḥīḥ) is the \"balance\" (mīzān) revealed with the Book; the word qiyās is divisible into true and false, which is why the Qurʾān neither praises nor blames it; the false is e.g. likening ribā to sale.",
    "witness": "openiti-ilam-shamela11496",
    "locator": "src:openiti-ilam-shamela11496/v01:p103",
    "excerpt_ar": "والقياس الصحيح هو الميزان؛ فالأولى تسميته بالاسم الذي سماه الله به",
@@ -1766,7 +1766,7 @@
   },
   {
    "topic": "type:shabah",
-   "claim_en": "Ibn al-Qayyim: God reports qiyās al-shabah only from the people of falsehood (Joseph's brothers; ribā like sale by formal resemblance); it is refuted as void of an effective ʿilla.",
+   "claim_en": "Ibn al-Qayyim: God reports qiyās al-shabah only from the people of falsehood (Joseph's brothers; ribā like sale by formal resemblance); it is refuted as devoid of an effective ʿilla.",
    "witness": "openiti-ilam-shamela11496",
    "locator": "src:openiti-ilam-shamela11496/v01:p115",
    "excerpt_ar": "وأما قياس الشبه فلم يحكه الله سبحانه إلا عن المبطلين",
@@ -1798,7 +1798,7 @@
   },
   {
    "topic": "ibn_qayyim:no_conflict",
-   "claim_en": "Neither sound texts nor sound qiyāses contradict each other; sound qiyās never contradicts sound text.",
+   "claim_en": "Neither ṣaḥīḥ texts nor sound qiyāses contradict each other; sound qiyās never contradicts sound text.",
    "witness": "openiti-ilam-shamela11496",
    "locator": "src:openiti-ilam-shamela11496/v01:p250",
    "excerpt_ar": "فلا يناقض القياس الصحيح النص الصحيح أبدا",
@@ -1806,7 +1806,7 @@
   },
   {
    "topic": "ibn_qayyim:nusus_kafiya",
-   "claim_en": "His middle position: the texts encompass all rulings; sound qiyās is true and conforms to the texts—\"the Book and the Balance\"—and one resorts to qiyās when a text's indication is hidden or has not reached the scholar.",
+   "claim_en": "His middle position: the texts encompass all rulings; sound qiyās (al-qiyās al-ṣaḥīḥ) is true and conforms to the texts—\"the Book and the Balance\"—and one resorts to qiyās when a text's indication is hidden or has not reached the scholar.",
    "witness": "openiti-ilam-shamela11496",
    "locator": "src:openiti-ilam-shamela11496/v01:p254",
    "excerpt_ar": "والقياس الصحيح حق مطابق للنصوص، فهما دليلان: الكتاب والميزان",
@@ -1814,7 +1814,7 @@
   },
   {
    "topic": "ibn_qayyim:errors",
-   "claim_en": "The qiyāsīs' five errors include believing many rulings are against the mīzān/qiyās, considering causes the Lawgiver did not consider and disregarding ones he did, and contradicting themselves.",
+   "claim_en": "The qiyāsīs' five errors include believing many rulings are against the mīzān/qiyās, considering ʿilal the Lawgiver did not consider and disregarding ones he did («اعتبارهم عللا وأوصافا لم يعلم اعتبار الشارع لها»), and contradicting themselves.",
    "witness": "openiti-ilam-shamela11496",
    "locator": "src:openiti-ilam-shamela11496/v01:p263",
    "excerpt_ar": "الرابع: اعتبارهم عللا وأوصافا لم يعلم اعتبار الشارع لها وإلغاؤهم عللا وأوصافا اعتبرها الشارع",
@@ -1822,7 +1822,7 @@
   },
   {
    "topic": "ibn_taymiyya:no_contra_qiyas",
-   "claim_en": "Ibn Taymiyya's answer (reported by Ibn al-Qayyim): \"qiyās\" is an ambiguous word covering sound and unsound; the sound is joining like cases (ṭard) and separating unlike (ʿaks)—justice.",
+   "claim_en": "Ibn Taymiyya's answer (reported by Ibn al-Qayyim): \"qiyās\" is an ambiguous word covering ṣaḥīḥ and fāsid; the sound is joining like cases (ṭard) and separating unlike (ʿaks)—justice.",
    "witness": "openiti-ilam-shamela11496",
    "locator": "src:openiti-ilam-shamela11496/v01:p290",
    "excerpt_ar": "والصحيح هو الذي وردت به الشريعة، وهو الجمع بين المتماثلين والفرق بين المختلفين، فالأول قياس الطرد، والثاني قياس العكس",
@@ -1830,7 +1830,7 @@
   },
   {
    "topic": "ibn_taymiyya:no_contra_qiyas",
-   "claim_en": "Sound qiyās: the ʿilla of the aṣl present in the farʿ without an impeding factor, or negation of any effective difference (ilghāʾ al-fāriq); the sharīʿa never contradicts it; where a text seems contrary, the qiyās is known to be unsound.",
+   "claim_en": "Sound qiyās (al-qiyās al-ṣaḥīḥ): the ʿilla of the aṣl present in the farʿ without an impeding factor, or negation of any effective difference (ilghāʾ al-fāriq); the sharīʿa never contradicts it; where a text seems contrary, the qiyās is known to be unsound.",
    "witness": "openiti-ilam-shamela11496",
    "locator": "src:openiti-ilam-shamela11496/v01:p290",
    "excerpt_ar": "وحيث علمنا أن النص ورد بخلاف قياس علمنا قطعا أنه قياس فاسد",
@@ -1854,7 +1854,7 @@
   },
   {
    "topic": "takhsis_illa",
-   "claim_en": "Ibn al-Qayyim: takhṣīṣ al-ʿilla is not impossible for want of a condition or presence of an impediment; whether these are parts of the ʿilla is a verbal dispute (complete vs requiring cause).",
+   "claim_en": "Ibn al-Qayyim: takhṣīṣ al-ʿilla is not impossible for want of a sharṭ or presence of an impediment; whether these are parts of the ʿilla is a verbal dispute (complete vs requiring cause).",
    "witness": "openiti-ilam-shamela11496",
    "locator": "src:openiti-ilam-shamela11496/v03:p027",
    "excerpt_ar": "وبالجملة فلا يمتنع تخصيص العلة لفوات شرط أو لقيام مانع",
@@ -1894,7 +1894,7 @@
   },
   {
    "topic": "ibn_taymiyya:no_contra_qiyas",
-   "claim_en": "Ibn Taymiyya: sound qiyās is part of the justice God revealed; a legal qiyās whose conditions are observed never contradicts a text; nothing in the sharīʿa is against sound qiyās, only against unsound.",
+   "claim_en": "Ibn Taymiyya: sound qiyās (al-qiyās al-ṣaḥīḥ) is part of the justice God revealed; a legal qiyās whose shurūṭ (sharṭ) are observed never contradicts a text; nothing in the sharīʿa is against sound qiyās, only against unsound.",
    "witness": "openiti-radd-shamela7626",
    "locator": "src:openiti-radd-shamela7626/v01:p373",
    "excerpt_ar": "وليس في الشريعة شيء على خلاف القياس الصحيح بل على خلاف القياس الفاسد",
@@ -1910,7 +1910,7 @@
   },
   {
    "topic": "ibn_taymiyya:no_contra_qiyas",
-   "claim_en": "Al-Nūrāniyya: those who held the ḥadīth on planting in another's land \"against qiyās\" did so from a qiyās they formed; what the sunna brought is the sound qiyās indicated by fiṭra.",
+   "claim_en": "Al-Nūrāniyya: those who held the ḥadīth on planting in another's land \"against qiyās\" did so from a qiyās they formed; what the sunna brought is the sound qiyās (al-qiyās al-ṣaḥīḥ) indicated by fiṭra.",
    "witness": "openiti-nuraniyya-shamela21729",
    "locator": "src:openiti-nuraniyya-shamela21729/v01:p254",
    "excerpt_ar": "وما جاءت به السنة هو القياس الصحيح الذي تدل عليه الفطرة",
@@ -1942,7 +1942,7 @@
   },
   {
    "topic": "takhsis_illa",
-   "claim_en": "Al-Shinqīṭī: the question whether iṭṭirād is a condition is the same as whether naqḍ impairs the ʿilla or specifies it.",
+   "claim_en": "Al-Shinqīṭī: the question whether iṭṭirād is a sharṭ is the same as whether naqḍ impairs the ʿilla or specifies it.",
    "witness": "shamela-282",
    "locator": "src:shamela-282/v01:p432",
    "excerpt_ar": "هو بعينه مبحثُ النقضِ هل هو قادحٌ في العلةِ أو مخصصٌ لعمومها",
@@ -1950,7 +1950,7 @@
   },
   {
    "topic": "takhsis_illa",
-   "claim_en": "Al-Shinqīṭī lists views (most: takhṣīṣ, not qadḥ; Mālik: takhṣīṣ in mustanbaṭa, qadḥ in manṣūṣa) and prefers the reverse—a text-based ʿilla is not voided by naqḍ.",
+   "claim_en": "Al-Shinqīṭī lists views (most: takhṣīṣ, not qadḥ; Mālik: takhṣīṣ in mustanbaṭa, qadḥ in manṣūṣa) and prefers the reverse—a text-based ʿilla is not impaired (qadḥ) by naqḍ.",
    "witness": "shamela-282",
    "locator": "src:shamela-282/v01:p454",
    "excerpt_ar": "وقال قومٌ بالعكس، وعزاهُ إمامُ الحرمين في البرهانِ للأكثر، وهو أوجه عندي مما قبله",
@@ -1958,7 +1958,7 @@
   },
   {
    "topic": "qadih:kasr",
-   "claim_en": "Al-Shinqīṭī disputes Ibn Qudāma's claim that kasr is not binding: it is like naqḍ, so it impairs where naqḍ does.",
+   "claim_en": "Al-Shinqīṭī disputes Ibn Qudāma's claim that kasr is not binding (lāzim): it is like naqḍ, so it impairs where naqḍ does.",
    "witness": "shamela-282",
    "locator": "src:shamela-282/v01:p459",
    "excerpt_ar": "فالظاهرُ أنَّ الكسر كالنقض، فعلى أنَّ النقضَ قادحٌ فالكسرُ كذلك",
@@ -2030,7 +2030,7 @@
   },
   {
    "topic": "qadih:kasr",
-   "claim_en": "Ādāb: kasr is showing a defect in part of the ʿilla: ruling without ḥikma, ḥikma without ruling, or voiding part of a compound ʿilla.",
+   "claim_en": "Ādāb: kasr is showing a defect in part of the ʿilla: ruling without ḥikma, ḥikma without ruling, or a defect (khalal) in part of a compound ʿilla.",
    "witness": "shamela-266",
    "locator": "src:shamela-266/v01:p303",
    "excerpt_ar": "هو أن يبيّن المعترض خللًا في بعض أجزاء العلة",
@@ -2134,7 +2134,7 @@
   },
   {
    "topic": "rukn:general",
-   "claim_en": "Ibn ʿUthaymīn, condition 1: the qiyās must not clash with a stronger proof (text, ijmāʿ, Companion's view if ḥujja)—else fāsid al-iʿtibār.",
+   "claim_en": "Ibn ʿUthaymīn, sharṭ 1: the qiyās must not clash with a stronger proof («دليلاً أقوى منه») (text, ijmāʿ, Companion's view if ḥujja)—else fāsid al-iʿtibār.",
    "witness": "shamela-9942",
    "locator": "src:shamela-9942/v01:p070",
    "excerpt_ar": "أن لا يصادم دليلاً أقوى منه",
@@ -2142,7 +2142,7 @@
   },
   {
    "topic": "rukn:asl",
-   "claim_en": "Ibn ʿUthaymīn, condition 2: the aṣl ruling must be established by text or ijmāʿ; one established by qiyās cannot be an aṣl.",
+   "claim_en": "Ibn ʿUthaymīn, sharṭ 2: the aṣl ruling must be established by text or ijmāʿ; one established by qiyās cannot be an aṣl.",
    "witness": "shamela-9942",
    "locator": "src:shamela-9942/v01:p070",
    "excerpt_ar": "أن يكون حكم الأصل ثابتاً بنص أو إجماع، فإن كان ثابتاً بقياس لم يصح القياس عليه",
@@ -2150,7 +2150,7 @@
   },
   {
    "topic": "rukn:hukm",
-   "claim_en": "Ibn ʿUthaymīn, condition 3: the aṣl ruling must have a known ʿilla; a purely taʿabbudī ruling (camel meat and wuḍūʾ) cannot be extended.",
+   "claim_en": "Ibn ʿUthaymīn, sharṭ 3: the aṣl ruling must have a known ʿilla; a purely taʿabbudī ruling (camel meat and wuḍūʾ) cannot be extended.",
    "witness": "shamela-9942",
    "locator": "src:shamela-9942/v01:p071",
    "excerpt_ar": "فإن كان حكم الأصل تعبديًّا محضاً لم يصح القياس عليه",
@@ -2158,7 +2158,7 @@
   },
   {
    "topic": "rukn:illa",
-   "claim_en": "Ibn ʿUthaymīn, condition 4: the ʿilla must contain a suitable meaning recognised by the sharʿ; a ṭardī description (black) cannot be a cause.",
+   "claim_en": "Ibn ʿUthaymīn, sharṭ 4: the ʿilla must contain a suitable meaning recognised by the sharʿ; a ṭardī description (black) cannot be a cause.",
    "witness": "shamela-9942",
    "locator": "src:shamela-9942/v01:p071",
    "excerpt_ar": "أن تكون العلة مشتملة على معنى مناسب للحكم يعلم من قواعد الشرع اعتباره",
@@ -2166,7 +2166,7 @@
   },
   {
    "topic": "rukn:far",
-   "claim_en": "Ibn ʿUthaymīn, condition 5: the ʿilla must exist in the farʿ as in the aṣl.",
+   "claim_en": "Ibn ʿUthaymīn, sharṭ 5: the ʿilla must exist in the farʿ as in the aṣl.",
    "witness": "shamela-9942",
    "locator": "src:shamela-9942/v01:p071",
    "excerpt_ar": "أن تكون العلة موجودة في الفرع كوجودها في الأصل",
@@ -2182,7 +2182,7 @@
   },
   {
    "topic": "type:shabah",
-   "claim_en": "Ibn ʿUthaymīn: qiyās al-shabah is weak, as there is no suitable ʿilla between farʿ and aṣl.",
+   "claim_en": "Ibn ʿUthaymīn: qiyās al-shabah is weak (ḍaʿīf: «وهذا القسم من القياس ضعيف»), as there is no suitable ʿilla between farʿ and aṣl.",
    "witness": "shamela-9942",
    "locator": "src:shamela-9942/v01:p073",
    "excerpt_ar": "وهذا القسم من القياس ضعيف إذ ليس بينه وبين الأصل علة مناسبة",
@@ -2206,7 +2206,7 @@
   },
   {
    "topic": "ibn_taymiyya:no_contra_qiyas",
-   "claim_en": "Al-Saʿdī (from Ibn Taymiyya): qiyās is blameworthy (lacking equality in manāṭ, or opposed by a text) or sound (aṣl and farʿ equal in manāṭ, unopposed by stronger proof).",
+   "claim_en": "Al-Saʿdī (from Ibn Taymiyya): qiyās is blameworthy (lacking equality in manāṭ, or opposed by a text) or ṣaḥīḥ (aṣl and farʿ equal in manāṭ, unopposed by stronger proof: «ما هو أرجح منه»).",
    "witness": "archive-tariq-tess",
    "locator": "src:archive-tariq-tess/v01:p064",
    "excerpt_ar": "وهو الذي يستوي فيه الأصل والفرع في مناط الحكم؛ ولم يعارضه ما هو أرجح منه",
@@ -2214,7 +2214,7 @@
   },
   {
    "topic": "ibn_taymiyya:no_contra_qiyas",
-   "claim_en": "Al-Saʿdī (extract): sound qiyās—the aṣl's ʿilla present in the farʿ without opposing factor; the sharīʿa never contradicts it.",
+   "claim_en": "Al-Saʿdī (extract): sound qiyās (al-qiyās al-ṣaḥīḥ)—the aṣl's ʿilla present in the farʿ without opposing factor; the sharīʿa never contradicts it.",
    "witness": "archive-tariq-tess",
    "locator": "src:archive-tariq-tess/v01:p098",
    "excerpt_ar": "القياس نوعان: صحيح وفاسدء فالصحيح أن تكون العلّة التى علق بها",

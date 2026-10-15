@@ -1,0 +1,427 @@
+{
+  "status": "candidate",
+  "base_commit": "cdebdb7a49642082ba39a191b7b707dcef44080b",
+  "provenance": "Derived engineering terminology mapped to the committed source glossary and Q-number catalogue. Source terminology is inherited; compound type names are implementation names, not quotations or newly admitted scholarly definitions.",
+  "entries": [
+    {
+      "type": "Admitted",
+      "source_term": "shart",
+      "arabic": "الشرط",
+      "scope": "Case satisfying a specified gate; not a blanket certificate of ṣihḥa.",
+      "refs": [
+        {
+          "ref": "src:openiti-rawda-shamela12010/v01:p179",
+          "note": "Ibn Qudāma's definition."
+        },
+        {
+          "ref": "src:openiti-kawkab-shamela12019/v01:p452",
+          "note": "Al-Kawkab's definition."
+        },
+        {
+          "ref": "src:archive-pdf1995-tess/v01:p051",
+          "note": "Al-Saʿdī Q8: a failed act lacks a required element or has a voiding impediment."
+        }
+      ],
+      "rules": [
+        {
+          "number": 8,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q008",
+          "locator": "src:archive-pdf1995#q008"
+        }
+      ]
+    },
+    {
+      "type": "Applicable",
+      "source_term": "hukm_wadi",
+      "arabic": "الحكم الوضعي",
+      "scope": "Premises of the existing taklīf application function; does not restrict all waḍʿī effects to mukallafs.",
+      "refs": [
+        {
+          "ref": "ibn_uthaymin.usul.shamela_9942.h002",
+          "note": "Definition of al-aḥkām includes «aw waḍʿ»."
+        },
+        {
+          "ref": "src:shamela-9942/v01:p013",
+          "note": "Definition of al-aḥkām al-waḍʿiyya as signs posited by the Lawgiver; ṣiḥḥa and fasād are among them."
+        },
+        {
+          "ref": "src:openiti-rawda-shamela12010/v01:p181",
+          "note": "Ibn Qudāma: the māniʿ as the converse of the sharṭ (the following sentence calls positing them a sharʿī ruling)."
+        },
+        {
+          "ref": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q002",
+          "note": "Khiṭāb al-waḍʿ attaches to the acts of those not under taklīf."
+        }
+      ],
+      "rules": [
+        {
+          "number": 7,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q007",
+          "locator": "src:archive-pdf1995#q007"
+        },
+        {
+          "number": 8,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q008",
+          "locator": "src:archive-pdf1995#q008"
+        }
+      ]
+    },
+    {
+      "type": "CertainHeld",
+      "source_term": "yaqin",
+      "arabic": "اليقين",
+      "scope": "Certainty for acting under YaqinFor; qaṭʿ or ẓann with known preponderance.",
+      "refs": [
+        {
+          "ref": "src:shamela-9942/v01:p015",
+          "note": "Definition of ʿilm (decisive perception)."
+        },
+        {
+          "ref": "src:archive-pdf1995-tess/v01:p057",
+          "note": "Certainty is not removed by doubt."
+        },
+        {
+          "ref": "src:openiti-rawda-shamela12010/v01:p311",
+          "note": "Ẓann a sign of the obligation, which is then known."
+        }
+      ],
+      "rules": [
+        {
+          "number": 11,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q011",
+          "locator": "src:archive-pdf1995#q011"
+        }
+      ]
+    },
+    {
+      "type": "GroundedHeld",
+      "source_term": "tawaqquf",
+      "arabic": "التوقف",
+      "scope": "Not suspended under Held.Suspended; includes weaker grades and therefore does not imply certainty.",
+      "refs": [
+        {
+          "ref": "src:shamela-9942/v01:p080",
+          "note": "Ibn ʿUthaymīn."
+        },
+        {
+          "ref": "src:openiti-rajab-shamela21730/v01:p019",
+          "note": "Ibn Rajab q14: Aḥmad's tawaqquf (and the iʿtizāl wajh)."
+        },
+        {
+          "ref": "src:openiti-majmufatawa-shamela7289/v13:p120",
+          "note": "Ibn Taymiyya: no known preponderance, no view."
+        }
+      ],
+      "rules": [
+        {
+          "number": 11,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q011",
+          "locator": "src:archive-pdf1995#q011"
+        },
+        {
+          "number": 52,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q052",
+          "locator": "src:archive-pdf1995#q052"
+        }
+      ]
+    },
+    {
+      "type": "NecessityAllowance",
+      "source_term": "rukhsa",
+      "arabic": "الرخصة",
+      "scope": "Quantitative bound only; need is supplied, not established by the type.",
+      "refs": [
+        {
+          "ref": "src:openiti-rawda-shamela12010/v01:p189",
+          "note": "First definition."
+        },
+        {
+          "ref": "src:openiti-rawda-shamela12010/v01:p190",
+          "note": "Second definition."
+        },
+        {
+          "ref": "src:archive-pdf1995-tess/v01:p038",
+          "note": "Al-Saʿdī Q4 (necessity lifts prohibition), the case the Lean readings model; the term rukhṣa itself is not a Lean constant."
+        }
+      ],
+      "rules": [
+        {
+          "number": 4,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q004",
+          "locator": "src:archive-pdf1995#q004"
+        }
+      ]
+    },
+    {
+      "type": "CoherentRequirement",
+      "source_term": "shart",
+      "arabic": "الشرط",
+      "scope": "Knowledge required implies consent required; source catalogue flags علمه as an OCR emendation awaiting scan check.",
+      "refs": [
+        {
+          "ref": "src:openiti-rawda-shamela12010/v01:p179",
+          "note": "Ibn Qudāma's definition."
+        },
+        {
+          "ref": "src:openiti-kawkab-shamela12019/v01:p452",
+          "note": "Al-Kawkab's definition."
+        },
+        {
+          "ref": "src:archive-pdf1995-tess/v01:p051",
+          "note": "Al-Saʿdī Q8: a failed act lacks a required element or has a voiding impediment."
+        }
+      ],
+      "rules": [
+        {
+          "number": 45,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q045",
+          "locator": "src:archive-pdf1995#q045"
+        }
+      ]
+    },
+    {
+      "type": "AdmittedDeal",
+      "source_term": "sahih",
+      "arabic": "الصحيح",
+      "scope": "Mutual consent and lawful motive in the modeled deal; other contract conditions are not supplied.",
+      "refs": [
+        {
+          "ref": "ibn_uthaymin.usul.shamela_9942.h008",
+          "note": "Definition."
+        },
+        {
+          "ref": "src:shamela-9942/v01:p013",
+          "note": "Validity fails if a condition is missing or an impediment present."
+        },
+        {
+          "ref": "src:openiti-rawda-shamela12010/v01:p181",
+          "note": "Ibn Qudāma's definition of ṣiḥḥa."
+        },
+        {
+          "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009",
+          "note": "Prohibition returning to the essence or a specific condition of worship voids it; otherwise two narrations or two wajhs."
+        }
+      ],
+      "rules": [
+        {
+          "number": 12,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.i012",
+          "locator": "src:archive-pdf1995#i012"
+        },
+        {
+          "number": 51,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q051",
+          "locator": "src:archive-pdf1995#q051"
+        }
+      ]
+    },
+    {
+      "type": "OptimalChoice",
+      "source_term": "tarjih",
+      "arabic": "الترجيح",
+      "scope": "Maximum on the supplied scale and candidate list; no certification of the scale's legal adequacy, exhaustive alternatives, or unique winner.",
+      "refs": [
+        {
+          "ref": "src:shamela-9942/v01:p082",
+          "note": "Ibn ʿUthaymīn."
+        },
+        {
+          "ref": "src:openiti-rawda-shamela12010/v02:p397",
+          "note": "Ibn Qudāma: ʿilla preferred as reports are."
+        },
+        {
+          "ref": "src:openiti-kawkab-shamela12019/v04:p718",
+          "note": "Al-Kawkab: sabr > munāsaba > shabah."
+        },
+        {
+          "ref": "src:shamela-9942/v01:p082",
+          "note": "Jalī over khafī."
+        }
+      ],
+      "rules": [
+        {
+          "number": 33,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q033",
+          "locator": "src:archive-pdf1995#q033"
+        }
+      ]
+    },
+    {
+      "type": "FactoredRuling",
+      "source_term": "illa",
+      "arabic": "العلة",
+      "scope": "Ruling evaluates through a sufficient feature. Generic computational factorization does not automatically establish a juristic ʿilla.",
+      "refs": [
+        {
+          "ref": "src:openiti-rawda-shamela12010/v02:p144",
+          "note": "ʿIlla as manāṭ al-ḥukm."
+        },
+        {
+          "ref": "src:openiti-rawda-shamela12010/v02:p259",
+          "note": "The sharʿī ʿilla is a sign; kinds of description it may be."
+        },
+        {
+          "ref": "src:openiti-tufi-shamela10781/v03:p313",
+          "note": "Al-Ṭūfī: sign; transitivity required (disputed)."
+        },
+        {
+          "ref": "src:shamela-9942/v01:p071",
+          "note": "Ibn ʿUthaymīn: must contain a suitable meaning."
+        },
+        {
+          "ref": "src:archive-pdf1995-tess/v01:p107",
+          "note": "Al-Saʿdī Q58: ʿilla identified with the ḥikma."
+        }
+      ],
+      "rules": [
+        {
+          "number": 13,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q013",
+          "locator": "src:archive-pdf1995#q013"
+        },
+        {
+          "number": 14,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q014",
+          "locator": "src:archive-pdf1995#q014"
+        },
+        {
+          "number": 54,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q054",
+          "locator": "src:archive-pdf1995#q054"
+        },
+        {
+          "number": 58,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q058",
+          "locator": "src:archive-pdf1995#q058"
+        }
+      ]
+    },
+    {
+      "type": "ObservedDawaran",
+      "source_term": "dawaran",
+      "arabic": "الدوران",
+      "scope": "Co-variation on given cases only; dawaran_not_unique blocks automatic transfer.",
+      "refs": [
+        {
+          "ref": "src:openiti-rawda-shamela12010/v02:p226",
+          "note": "Ibn Qudāma's definition."
+        },
+        {
+          "ref": "src:openiti-kawkab-shamela12019/v04:p193",
+          "note": "Al-Kawkab: yields ẓann per most aṣḥāb."
+        }
+      ],
+      "rules": [
+        {
+          "number": 58,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q058",
+          "locator": "src:archive-pdf1995#q058"
+        }
+      ]
+    },
+    {
+      "type": "AdmittedQiyas",
+      "source_term": "qiyas",
+      "arabic": "القياس",
+      "scope": "The existing gate holds: known aṣl ruling, description in aṣl/farʿ, no text on farʿ, and no modeled naqḍ.",
+      "refs": [
+        {
+          "ref": "ibn_uthaymin.usul.shamela_9942.h023",
+          "note": "Ibn ʿUthaymīn's definition."
+        },
+        {
+          "ref": "src:openiti-rawda-shamela12010/v02:p141",
+          "note": "Ibn Qudāma's definition."
+        },
+        {
+          "ref": "src:openiti-kawkab-shamela12019/v04:p006",
+          "note": "Al-Kawkab's definition."
+        },
+        {
+          "ref": "src:openiti-rawda-shamela12010/v02:p143",
+          "note": "Four arkān."
+        },
+        {
+          "ref": "src:openiti-ilam-shamela11496/v01:p290",
+          "note": "Ibn Taymiyya: sound vs unsound qiyās."
+        }
+      ],
+      "rules": [
+        {
+          "number": 58,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q058",
+          "locator": "src:archive-pdf1995#q058"
+        }
+      ]
+    },
+    {
+      "type": "CertifiedTransfer",
+      "source_term": "tahqiq_al_manat",
+      "arabic": "تحقيق المناط",
+      "scope": "Gate plus agreement and Factors for a specified H; conclusion remains conditional on that H.",
+      "refs": [
+        {
+          "ref": "src:openiti-rawda-shamela12010/v02:p145",
+          "note": "Ibn Qudāma."
+        },
+        {
+          "ref": "src:openiti-kawkab-shamela12019/v04:p200",
+          "note": "Al-Kawkab's definitions of the manāṭ operations."
+        },
+        {
+          "ref": "src:shamela-282/v01:p380",
+          "note": "Al-Shinqīṭī's remark."
+        }
+      ],
+      "rules": [
+        {
+          "number": 58,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q058",
+          "locator": "src:archive-pdf1995#q058"
+        }
+      ]
+    },
+    {
+      "type": "DischargePlan",
+      "source_term": "tadakhul",
+      "arabic": "التداخل",
+      "scope": "Directional coverage under a supplied relation; no equivalence or minimum cardinality claim.",
+      "refs": [
+        {
+          "ref": "src:archive-pdf1995-tess/v01:p093",
+          "note": "Al-Saʿdī Q41; same kind and purpose."
+        },
+        {
+          "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018",
+          "note": "Additional qualifications remain specific to this reading."
+        }
+      ],
+      "rules": [
+        {
+          "number": 41,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q041",
+          "locator": "src:archive-pdf1995#q041"
+        }
+      ]
+    },
+    {
+      "type": "TakingPermission",
+      "source_term": "Q46_evident_cause_refusal_bounded_taking",
+      "arabic": "سبب الحق الظاهر والأخذ بقدر الحق عند الامتناع",
+      "scope": "Derived compound name. Certifies the existing refusal branch only; the OCR witness also mentions inability to obtain permission. Supplied context facts and Nat amount units are not independently established.",
+      "refs": [
+        {
+          "ref": "src:archive-pdf1995#q046",
+          "note": "Committed OCR witness, candidate."
+        }
+      ],
+      "rules": [
+        {
+          "number": 46,
+          "record": "sadi.qawaid_jamia.archive_pdf1995.q046",
+          "locator": "src:archive-pdf1995#q046"
+        }
+      ]
+    }
+  ]
+}

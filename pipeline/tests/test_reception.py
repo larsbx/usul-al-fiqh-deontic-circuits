@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from usul_corpus.reception import Cited, citations, matcher, pages, report
+from usul_corpus.reception import Cited, authors, citations, matcher, pages, report, spans
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -65,10 +65,11 @@ def test_committed_report_agrees_with_the_registry():
     citer_witnesses = {x["id"]: w["reception"]["scholar"] for w in by_role["citer"].values() for x in w["witnesses"]}
     rep = json.loads((ROOT / "corpus/reception/report.json").read_text(encoding="utf-8"))
     assert set(rep["counts"]) == set(by_role["cited"])
+    assert set(rep["authors"]) == {a.work for a in authors(ROOT / "corpus/reception/authors.json")}
     assert set(rep["citers"]) <= set(citer_witnesses)
     for wid, c in rep["citers"].items():
         assert c["scholar"] == citer_witnesses[wid]
-    for work, c in rep["counts"].items():
+    for work, c in {**rep["counts"], **rep["authors"]}.items():
         assert c["total"] == sum(c["by_scholar"].values()) == sum(c["by_witness"].values()), work
         assert set(c["by_witness"]) <= set(rep["citers"]), work
 
@@ -91,3 +92,47 @@ def test_counts_page_ranks_by_total_and_names_every_scholar_column():
     assert page.index("| C |") < page.index("| A |")
     assert "Ibn Bāz | Ibn ʿUthaymīn | al-Albānī | al-Saʿdī" in page
     assert "`src:w1/PageV01P001`" in page
+
+
+TAYMIYYA = Cited("ibn_taymiyya", ("ابن تيمية", "شيخ الإسلام", "شيخ الإسلام ابن تيمية"), ("شيخ الإسلام محمد بن عبد الوهاب", "المجد ابن تيمية"))
+MAJD = Cited("majd", ("المجد ابن تيمية",))
+NAWAWI = Cited("nawawi", ("النووي",))
+AUTHORS = matcher((TAYMIYYA, MAJD, NAWAWI), cue_single=False)
+
+
+def test_author_forms_need_no_cue_and_count_once():
+    assert AUTHORS("قال النووي رحمه الله") == ("nawawi",)
+    assert AUTHORS("قال شيخ الإسلام ابن تيمية") == ("ibn_taymiyya",)
+
+
+def test_a_positive_form_beats_an_exclusion_on_the_same_span():
+    assert AUTHORS("واختاره المجد ابن تيمية") == ("majd",)
+    assert AUTHORS("قال شيخ الإسلام محمد بن عبد الوهاب") == ()
+
+
+def test_spans_expose_offsets_into_the_normalised_text():
+    t = "وقال في المغني"
+    assert spans(t, (MUGHNI,)) == ((8, 14, "ibn_qudama.mughni"),)
+
+
+def test_author_lexicon_is_keyed_by_cited_work_prefixes():
+    reg = json.loads((ROOT / "corpus/registry.json").read_text(encoding="utf-8"))
+    prefixes = {w["id"].split(".")[0] for w in reg["works"] if w.get("reception", {}).get("role") == "cited"}
+    lex = authors(ROOT / "corpus/reception/authors.json")
+    assert {a.work for a in lex} <= prefixes
+    forms = [f for a in lex for f in a.cite_as]
+    assert len(forms) == len(set(forms)), "an author form names one author only"
+
+
+def test_exclusions_apply_when_the_lexicon_is_a_one_shot_iterator():
+    """Regression: build() passes a generator; compiling forms and exclusions must not exhaust it first."""
+    match = matcher(c for c in (MUGHNI,))
+    assert match("وقال الذهبي في المغني") == ()
+    assert match("وقال في المغني") == ("ibn_qudama.mughni",)
+
+
+def test_the_grandfather_of_shaykh_al_islam_is_the_majd():
+    """«جد شيخ الإسلام ابن تيمية» names Majd al-Dīn; the trailing «ابن تيمية» must not count for the grandson."""
+    match = matcher(authors(ROOT / "corpus/reception/authors.json"), cue_single=False)
+    assert match("وصرح به المجد جد شيخ الإسلام ابن تيمية") == ("majd",)
+    assert match("ومنهم جد شيخ الإسلام ابن تيمية، وهو مجد الدين") == ("majd",)  # bare «مجد الدين» is not a form
