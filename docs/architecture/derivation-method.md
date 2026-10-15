@@ -171,7 +171,7 @@ Qₙ is the tranche's qawāʿid and Uₙ its units.
 - `selfapply` iterates to a fixed point: the revisit queue is empty.
 - `reconcile` is the kernel's own `resolve`, whose order is proved (`resolve_jam_first`, `resolve_naskh_before_tarjih`).
 
-The quantities that must not regress are the encoding errors (= 0), the guards (all hold) and the open gaps (only ones that name their need). Coverage figures are reported, not optimised. A refinement that raises madhhab coverage by picking a side of a policy point is barred by invariant 8.
+The quantities that must not regress are the encoding errors (= 0), the guards (all hold) and the open gaps (only ones that name their need). Coverage figures are reported, not optimised. A refinement that moves a disputed case onto one of its positions by picking a side of a policy point is barred by invariant 8: which position is right is settled by its evidence (tarjīḥ), not by the refinement.
 
 This fixed-point form is what makes parallelism possible. Within a phase, every shard's step reads the same base bank and only *adds* to it. The serial reduce (`selfapply` and `reconcile` over the union) is where shards interact.
 

@@ -1,0 +1,118 @@
+{
+ "contract": "taklif.behaviour",
+ "version": 1,
+ "spec": "formal/tla/Taklif.tla",
+ "duties": [
+  "salat",
+  "sawm"
+ ],
+ "actions": [
+  "Bulugh",
+  "Incapacity(sawm)",
+  "Depart",
+  "TakeRukhsa",
+  "Arrive",
+  "Recover(sawm)",
+  "LoseAql"
+ ],
+ "states": [
+  {
+   "baligh": false,
+   "aqil": true,
+   "travelling": false,
+   "rukhsa": false,
+   "capable": [
+    "salat",
+    "sawm"
+   ],
+   "bound": []
+  },
+  {
+   "baligh": true,
+   "aqil": true,
+   "travelling": false,
+   "rukhsa": false,
+   "capable": [
+    "salat",
+    "sawm"
+   ],
+   "bound": [
+    "salat",
+    "sawm"
+   ]
+  },
+  {
+   "baligh": true,
+   "aqil": true,
+   "travelling": false,
+   "rukhsa": false,
+   "capable": [
+    "salat"
+   ],
+   "bound": [
+    "salat"
+   ]
+  },
+  {
+   "baligh": true,
+   "aqil": true,
+   "travelling": true,
+   "rukhsa": false,
+   "capable": [
+    "salat"
+   ],
+   "bound": [
+    "salat"
+   ]
+  },
+  {
+   "baligh": true,
+   "aqil": true,
+   "travelling": true,
+   "rukhsa": true,
+   "capable": [
+    "salat"
+   ],
+   "bound": [
+    "salat"
+   ]
+  },
+  {
+   "baligh": true,
+   "aqil": true,
+   "travelling": false,
+   "rukhsa": false,
+   "capable": [
+    "salat"
+   ],
+   "bound": [
+    "salat"
+   ]
+  },
+  {
+   "baligh": true,
+   "aqil": true,
+   "travelling": false,
+   "rukhsa": false,
+   "capable": [
+    "salat",
+    "sawm"
+   ],
+   "bound": [
+    "salat",
+    "sawm"
+   ]
+  },
+  {
+   "baligh": true,
+   "aqil": false,
+   "travelling": false,
+   "rukhsa": false,
+   "capable": [
+    "salat",
+    "sawm"
+   ],
+   "bound": []
+  }
+ ]
+}

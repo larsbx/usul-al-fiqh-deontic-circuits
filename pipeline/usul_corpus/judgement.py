@@ -20,6 +20,7 @@ share it cannot yet. Every classification is a candidate, like the cases it type
 from __future__ import annotations
 
 import json
+import math
 import re
 from collections import Counter
 from pathlib import Path
@@ -27,6 +28,7 @@ from pathlib import Path
 from . import takhrij
 
 TYPES = Path("types") / "encoders.json"
+FLAG_SAMPLE = Path("types") / "label_flag_sample.json"
 SORTS = ("judgement", "effect", "dalala", "takyif", "epistemic", "procedure")
 # question → the Lean type its answer must have
 QUESTIONS = {"taklifi": "Usul.Question.Answer .taklifi",
@@ -112,11 +114,16 @@ def lean_file(types: dict[str, dict], typed: dict[str, str] | None = None) -> st
     return "\n".join(lines) + "\n"
 
 
+def sort_of(types: dict[str, dict], encoder: str) -> str:
+    """The encoder's sort, with its question for a judgement (``judgement/wadi:sabab``); ``untyped`` if none."""
+    t = types.get(encoder)
+    return "untyped" if t is None else t["sort"] if t["sort"] != "judgement" else f"judgement/{t['question']}"
+
+
 def report(types: dict[str, dict], encoders: dict[str, dict], cases: list[dict]) -> dict:
     """Encoders and cases by sort and question; untyped encoders are listed, never guessed."""
     def kind(n: str) -> str:
-        t = types.get(n)
-        return "untyped" if t is None else t["sort"] if t["sort"] != "judgement" else f"judgement/{t['question']}"
+        return sort_of(types, n)
     scoped = [c for c in cases if c["class"] != "segmentation_error"]
     by_case = Counter(kind(c["encoder"]) for c in scoped)
     typed = sum(v for k, v in by_case.items() if k.startswith("judgement/"))
@@ -128,11 +135,20 @@ def report(types: dict[str, dict], encoders: dict[str, dict], cases: list[dict])
 
 
 # Cues in a *question* that it asks about a posited sign, or about a report, not about a taklīfī status.
-# A flag is a candidate for review, never a relabelling.
-_FLAGS = {"wadi:validity": r"(يصح|صحة|صحيح|باطل|بطلان|فاسد|يبطل|تبطل|يفسد|تفسد|يجزئ|تجزئ|إجزاء)",
-          "wadi:sabab/daman": r"(يضمن|ضمان|ضامن|تعويض|الدية|يغرم)",
-          "wadi:sabab/milk": r"(يملك|تملك|ينعقد|انعقاد|يقع الطلاق|وقع الطلاق|تطلق)",
-          "riwaya": r"(صحة حديث|صحة الحديث|درجة حديث|درجة الحديث|تخريج حديث)"}
+# A flag is a candidate for review, never a relabelling. Each cue is anchored: validity words count only
+# next to an act or contract they can qualify (so «الصحة» health, «الصحيح» correct, «تجزئة» partition and
+# «هل يصح أن» may-he do not fire), ḍamān only as a liability, milk only as a question of ownership or of
+# the divorce taking effect. Precision is measured, not assumed: corpus/types/label_flag_sample.json.
+_ACTS = (r"(?:ال)?(?:صلاة|صلات\w*|صوم\w*|صيام\w*|وضوء\w*|غسل\w*|تيمم\w*|طهارة\w*|حج\w*|عمرة\w*|عمرت\w*|طواف\w*|"
+         r"سعي\w*|إحرام\w*|عقد\w*|بيع\w*|نكاح\w*|زواج\w*|طلاق\w*|خلع\w*|وقف\w*|وصية\w*|هبة\w*|إجارة\w*|"
+         r"رهن\w*|أضحية\w*|أضحيت\w*|عقيقة\w*|زكاة\w*|زكات\w*|كفارة\w*|كفارت\w*|اعتكاف\w*|نذر\w*|ذبيحة\w*|ذبح\w*|إمامة\w*|إمامت\w*)")
+_GAP = r"\s+(?:\S+\s+){0,2}?"
+_FLAGS = {"wadi:validity": rf"(?:(?:يصح|تصح|صحة|يبطل|تبطل|بطلان|يفسد|تفسد|فساد|يجزئ\w*|تجزئ(?!ة)\w*|إجزاء){_GAP}{_ACTS}"
+                           rf"|{_ACTS}{_GAP}(?:باطل|باطلة|فاسد|فاسدة|صحيح|صحيحة)\b|شروط صحة)",
+          "wadi:sabab/daman": r"(?:(?:هل|فهل) (?:ي|ت)ضمن|يضمنه\b|يضمنها\b|(?:فهو|هو|فهي|هي) ضامن|ضمان ما|عليه (?:ال)?ضمان"
+                              r"|(?:تجب|تلزم\w*|عليه|عليهم|على من) (?:ال)?دية|(?:يتحمل|تتحمل) (?:ال)?(?:ضمان|خسارة|تلف))",
+          "wadi:sabab/milk": r"(?:هل (?:ي|ت)ملك|(?:ي|ت)قع (?:ال)?طلاق|وقع (?:ال)?طلاق|هل تطلق|هل طلقت|(?:ي|ت)نعقد (?:ال)?(?:نكاح|زواج|عقد|بيع))",
+          "riwaya": r"(?:صحة (?:هذا )?(?:ال)?حديث|درجة (?:هذا )?(?:ال)?حديث|تخريج (?:ال)?حديث|حديث (?:موضوع|ضعيف|لا أصل له))"}
 _FLAG_RX = {k: re.compile(p) for k, p in _FLAGS.items()}
 
 
@@ -145,3 +161,25 @@ def label_flags(labels: list[dict], questions: dict[str, str]) -> dict:
             "share": round(len(flagged) / len(labelled), 3) if labelled else 0.0,
             "by_cue": dict(sorted(Counter(k for ks in flagged.values() for k in ks).items())),
             "riwaya": sorted(i for i, ks in flagged.items() if "riwaya" in ks)}
+
+
+def _wilson_low(k: int, n: int, z: float = 1.96) -> float:
+    if n == 0:
+        return 0.0
+    p = k / n
+    return (p + z * z / (2 * n) - z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n))) / (1 + z * z / n)
+
+
+def flag_precision(sample: dict, flags: dict) -> dict:
+    """Per-cue precision of the label flags on the evaluation sample, with a 95% Wilson lower bound, and
+    the share of taklīfī labels that are type mismatches at those lower bounds. Recall is not measured, so
+    the share is a floor, not an estimate of the whole."""
+    items = sample["evaluation"]["items"]
+    per = {}
+    for cue in sorted({x["cue"] for x in items}):
+        hits = [x["asks_that"] for x in items if x["cue"] == cue]
+        per[cue] = {"sample": len(hits), "correct": sum(hits), "precision": round(sum(hits) / len(hits), 3),
+                    "lower95": round(_wilson_low(sum(hits), len(hits)), 3)}
+    floor = sum(per[c]["lower95"] * n for c, n in flags["by_cue"].items() if c in per)
+    return {"judge": sample["judge"], "per_cue": per,
+            "mismatch_floor": round(floor / flags["taklifi_labels"], 3) if flags["taklifi_labels"] else 0.0}

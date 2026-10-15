@@ -1,5 +1,9 @@
 # The judgement form: what a question asks
 
+**Place in the stack.** Qawāʿid ([`schemata.md`](schemata.md)) are the foundation. Types come first on top of them: this document. Categories come next, downstream of the types: [`category-theory.md`](category-theory.md).
+
+*Types* here means the types the qawāʿid define (`Usul.Typing.Qaida`, `Usul.Typing`) and the judgement form over them. It does not mean Σ (`Usul.Hukm`, `Usul.Signature`), which sits below the qawāʿid: Σ is the vocabulary they are stated in (`Usul.Qawaid` imports `Usul.Signature`).
+
 `Usul.Judgement` (`formal/lean/Usul/Judgement.lean`) formalises the roadmap's judgement form `Γ ⊢ d : H(a, s) @ g` (§2.1). A question must be typed before its answer is compared with any other. Every type in the module comes from a ḥadd already in the corpus, and each is linked in `corpus/signature_map.json`, so the Lean build `#check`s it.
 
 | Type | What it is | Source |
@@ -53,13 +57,21 @@
 - **The IslamQA tranche is a case in point.** Its five encoders split three ways. `itlaf` and `trust_loss` are sabab questions (ḍamān). `luqata` and `unknown_owner` are effects (which outcome, to whom). `asl_zahir` is epistemic. So the Prolog oracle's agreement figure mixes three sorts.
 - **Classification is uncertain.** 84 of the 191 encoders carry an `alt`, a second defensible reading. The commonest splits are validity vs aspect:permitted («لا يجوز» in worship or disposal), sabab vs effect, and dalāla vs takyīf. These are the review items.
 - **Four encoders had their polarity reversed:** `trust_voidance`, `cut_sale_left_to_ripen` and `simultaneous_combination_voids` return true for *void*, and `supervening_bar_extends_to_preliminaries` true for *forbidden*. They are typed negated (validity, and may-he), rather than given a polarity that reads the other way.
-- **The IslamQA labels:** 2,326 of 14,352 taklīfī labels (0.162) sit on a question that asks about a posited sign or a report:
-  - validity: 1,772;
-  - milk: 357;
-  - ḍamān: 299;
-  - riwāya: 47, listed under `labels.riwaya` in [`report.json`](../../corpus/types/report.json).
+- **The IslamQA labels (corrected).** Some taklīfī labels sit on a question that asks something else: whether an act is valid, whether a liability or ownership arises, or whether a report is authentic.
+  - **The first figure was wrong.** It said 2,326 of 14,352 (0.162). Those cues were bare words. In a sample of 20 hits, about 6 asked what the cue claimed; the rest were «هل يصح» meaning *may he*, «الصحة» meaning health, «الصحيح» meaning *correct*, «تجزئة» (partition) and «يملكه» as a relative clause.
+  - **The cues are now anchored.** A validity word counts only next to an act or contract it can qualify, ḍamān only as a liability, and milk only as ownership or the divorce taking effect. Unit tests pin the false hits found in review.
+  - **They flag 598 labels (0.042):** validity 434, riwāya 93, milk 41, ḍamān 34.
+  - **Their precision is measured, not assumed,** on [`label_flag_sample.json`](../../corpus/types/label_flag_sample.json). A development sample was used to tighten the cues. A separate evaluation sample measures them:
 
-  These are flags for review, never relabelled automatically.
+    | cue | correct | 95% lower bound |
+    |---|---:|---:|
+    | validity | 15/15 | 0.80 |
+    | riwāya | 10/10 | 0.72 |
+    | ḍamān | 9/10 | 0.60 |
+    | milk | 9/10 | 0.60 |
+
+    The judgements are the model's, not a person's.
+  - **At those lower bounds, at least 0.032 of taklīfī labels are type mismatches** (`labels.precision.mismatch_floor` in the report). Recall is not measured, so this is a floor. The flags are for review; nothing is relabelled automatically.
 
 **What this does not settle**
 - Whether the classification is right. Every entry is a candidate: classified with LLM assistance, adjudicated on the hard cases, not reviewed by a person.

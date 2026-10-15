@@ -16,14 +16,14 @@ The method is specified in `docs/architecture/derivation-method.md`; this is how
    - Add link theorems to existing principles where the text draws the link.
    - Type the encoder in Lean (`formal/lean/Usul/Typing/`): its facts go into the type of the qāʿida that states them, extending an existing qāʿida type where the text builds on it, then `make lean` regenerates the Prolog export.
    - Register the encoder in `pipeline/usul_corpus/encoders/<shard>.py`: `ENCODERS = {name: dict(facts=…, out=…, lean=…, py=…, qawaid=[…], sadi=[…])}`, shaped like `takhrij.CORE`. Never edit `takhrij.CORE` or `Usul/Refinements.lean`, unless you are making a conservative refinement of an encoder they already hold, with its `*_conservative` theorem.
-4. **Annotate.** One case per obligation, in your own suite file `corpus/takhrij/<suite>.json`. Each case records: facts within the encoder's domains, the ruling the text states, positions with their attributions, the class, `matches_madhhab`, and `needs` on gaps.
+4. **Annotate.** One case per obligation, in your own suite file `corpus/takhrij/<suite>.json`. Each case records: facts within the encoder's domains, the ruling the text states, positions with their attributions, the class, `matches_madhhab` (descriptive only: whether the source labels the kernel's position the madhhab's; never a target, since a ruling stands by its proof), and `needs` on gaps.
    - Do not force a case. If no reading fits, it is `missing_rule` or `missing_fact` with the need named.
    - Do not invent a gap where a reading is due (§4, invariant 7).
 5. **Cite.** A closure or new principle gets a dossier entry in `corpus/dossier/entries/<shard>.json`, with verbatim excerpts, conditions, rationale, Lean constants, and `conservative` where it refines.
 6. **Evidence (lanes C/D/E).** Graded, verbatim evidence goes to `corpus/reconciliation/entries/<shard>.json`. Positions are added to cases as `revisions`, never by editing a case.
    - **The basis is the Qurʾān and the Sunna.** Cite each position's adilla (`adilla`, refs into `corpus/nusus/foundation.json`, each with its dalāla); an admitted dalīl decides before the madhhab's grades. No work is the reference: works are aligned as peers, and a disagreement between them needs a tarjīḥ even where no reading decides it.
    - **Every `genuine_ikhtilaf` case gets a ledger entry**, on the madhhab side or off it. On-madhhab entries must have a tarjīḥ that confirms the annotated side; if the evidence goes the other way, report it (the integrator decides between a `side_check` and an open research question).
-7. **Gate locally.** Run `check_case` on your cases through `python -m usul_corpus takhrij`. Inspect the generated Lean, then discard the shared generated files with `git checkout -- ../formal/lean/UsulTest ../corpus/takhrij/report.json`. Also run `python -m pytest -q tests/test_dossier.py tests/test_reconcile.py tests/test_shards.py`, and the Lean build of your module where Lean is available.
+7. **Gate locally.** Run `check_case` on your cases through `python -m usul_corpus takhrij`. Inspect the generated Lean, then discard the shared generated files with `git checkout -- ../formal/lean/UsulTest ../corpus/takhrij/report.json ../corpus/sheaf`. Also run `python -m pytest -q tests/test_dossier.py tests/test_reconcile.py tests/test_shards.py`, and the Lean build of your module where Lean is available.
 8. **Hand back.** Commit only the files you own: your claim, suite, encoder module, Lean module and fragments. Do not commit regenerated shared outputs, and put no totals in the report. List what you could not decide as register questions.
 
 ## As the integrator
@@ -31,12 +31,12 @@ The method is specified in `docs/architecture/derivation-method.md`; this is how
 Follow `docs/architecture/derivation-method.md` §5.3 for one round:
 - verify each contribution against its claim and base commit;
 - merge in a fixed order;
-- regenerate with `python -m usul_corpus takhrij`, `reconcile`, `worklist`, `routing`, `docs` and `signature`, and the type system's Prolog export with `make lean`;
+- regenerate with `python -m usul_corpus takhrij`, `reconcile`, `worklist`, `routing`, then the types (`judgement`) before the categories built on them (`sheaf`), then `docs` and `signature`, and the type system's Prolog export with `make lean`;
 - self-apply: the revisit queue must end empty;
 - reconcile over the union;
 - run `make all`;
 - remove the merged shards' claims;
-- report the regenerated figures and the batched register questions.
+- report the regenerated figures and the batched register questions. The figures are those of `corpus/takhrij/report.json`: coverage, decided coverage, the disputed count, encoding errors and open gaps. Madhhab coverage is retired; do not compute it by hand (`docs/architecture/takhrij.md` §Classes).
 
 Collisions:
 - **Duplicate principle:** keep both and prove them equivalent, or retire one through `revisions`.

@@ -406,6 +406,17 @@ def cmd_reconcile(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_sheaf(_: argparse.Namespace) -> int:
+    """M10: emit an obstruction record for every genuine ikhtilāf, and its Lean guards."""
+    from . import judgement, sheaf, takhrij
+    cases = takhrij.load(CORPUS)
+    rep = sheaf.render(cases, judgement.load(CORPUS))
+    _dump(CORPUS / sheaf.OUTPUT, rep)
+    (SIGNATURE_LEAN.parent / sheaf.LEAN).write_text(sheaf.lean_file(cases), encoding="utf-8")
+    print(json.dumps(rep["summary"]))
+    return 0
+
+
 def cmd_worklist(args: argparse.Namespace) -> int:
     """Regenerate (or ``--check``) every obligation inventory: Ibn Rajab's M8 worklist with its scope
     paragraphs, and the unit inventory of the line-segmented witnesses."""
@@ -759,14 +770,16 @@ def cmd_fatawa_prolog(_: argparse.Namespace) -> int:
         return 1
     records = fatawa_prolog.merge(cases, facts)
     (ROOT / fatawa_prolog.CASES).write_text(fatawa_prolog.prolog_file(records), encoding="utf-8")
-    rep = fatawa_prolog.report(records, fatawa_prolog.run(ROOT))
+    rep = fatawa_prolog.report(records, fatawa_prolog.run(ROOT), fatawa_prolog.first_runs(ROOT, records),
+                               frozenset(fatawa_prolog.revised_rules(ROOT)), fatawa_prolog.sorts(CORPUS))
     _dump(CORPUS / "fatawa" / "prolog" / "report.json", rep)
     print(json.dumps({s: rep[s]["total"] for s in ("islamqa", "classical")}, ensure_ascii=False))
     return 0
 
 
-def cmd_judgement(_: argparse.Namespace) -> int:
-    """Each encoder's sort and question (corpus/types/encoders.json), guarded in Lean and reported."""
+def cmd_judgement(args: argparse.Namespace) -> int:
+    """Each encoder's sort and question (corpus/types/encoders.json), guarded in Lean and reported.
+    `--check` validates the types and their Lean guards without writing, and needs no LFS data."""
     import gzip
 
     from . import fatawa_takhrij, judgement, takhrij
@@ -774,7 +787,14 @@ def cmd_judgement(_: argparse.Namespace) -> int:
     if errs := judgement.check(types, takhrij.ENCODERS):
         print("\n".join(errs))
         return 1
-    (SIGNATURE_LEAN.parent / "EncoderTypes.lean").write_text(judgement.lean_file(types, judgement.typed_names(ROOT)), encoding="utf-8")
+    lean, guards = SIGNATURE_LEAN.parent / "EncoderTypes.lean", judgement.lean_file(types, judgement.typed_names(ROOT))
+    if args.check:
+        if lean.read_text(encoding="utf-8") != guards:
+            print("types stale (formal/lean/UsulTest/EncoderTypes.lean): run python -m usul_corpus judgement", file=sys.stderr)
+            return 1
+        print(json.dumps({"encoders_typed": len(types)}))
+        return 0
+    lean.write_text(guards, encoding="utf-8")
     cases = takhrij.load(CORPUS) + fatawa_takhrij.load(CORPUS)
     rep = judgement.report(types, takhrij.ENCODERS, cases)
     labels = ISLAMQA / "labels" / "islamqa-ar.labels.jsonl.gz"
@@ -783,6 +803,8 @@ def cmd_judgement(_: argparse.Namespace) -> int:
             questions = {r["id"]: f"{r.get('title') or ''} {r.get('question') or ''}" for r in map(json.loads, f)}
         with gzip.open(labels, "rt", encoding="utf-8") as f:
             rep["labels"] = judgement.label_flags(list(map(json.loads, f)), questions)
+        if (CORPUS / judgement.FLAG_SAMPLE).exists():
+            rep["labels"]["precision"] = judgement.flag_precision(_load(CORPUS / judgement.FLAG_SAMPLE), rep["labels"])
     _dump(CORPUS / "types" / "report.json", rep)
     print(json.dumps({k: rep[k] for k in ("encoders", "cases", "cases_typed_by_judgement")}, ensure_ascii=False))
     return 0
@@ -830,6 +852,7 @@ def parser() -> argparse.ArgumentParser:
     sub.add_parser("validate").set_defaults(run=cmd_validate)
     sub.add_parser("signature").set_defaults(run=cmd_signature)
     sub.add_parser("takhrij").set_defaults(run=cmd_takhrij)
+    sub.add_parser("sheaf", help="M10: obstruction records for every genuine ikhtilaf").set_defaults(run=cmd_sheaf)
     rc = sub.add_parser("reconcile", help="resolve the bank's apparent contradictions by its own taʿāruḍ procedure")
     rc.add_argument("--draft", action="store_true", help="print draft ledger entries for unledgered contradictions")
     rc.set_defaults(run=cmd_reconcile)
@@ -858,7 +881,9 @@ def parser() -> argparse.ArgumentParser:
     sub.add_parser("oracle").set_defaults(run=cmd_oracle)
     sub.add_parser("fatawa-takhrij").set_defaults(run=cmd_fatawa_takhrij)
     sub.add_parser("fatawa-prolog").set_defaults(run=cmd_fatawa_prolog)
-    sub.add_parser("judgement").set_defaults(run=cmd_judgement)
+    jd = sub.add_parser("judgement", help="the types layer: each encoder's sort and question, guarded in Lean")
+    jd.add_argument("--check", action="store_true", help="validate the types and their Lean guards without writing")
+    jd.set_defaults(run=cmd_judgement)
     fa = sub.add_parser("fatawa")
     fa.add_argument("--lang")
     fa.add_argument("--refresh", action="store_true")
