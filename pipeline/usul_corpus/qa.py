@@ -49,20 +49,25 @@ class QA:
         return hashlib.sha256(self.text.encode()).hexdigest()
 
 
-def _lines(text: str) -> list[tuple[str, Page | None, bool]]:
-    """(cleaned line, the page it is on, is it a section heading) for every text line;
-    a page marker closes its page."""
+def _marked_lines(text: str) -> list[tuple[str, Page | None, bool, bool]]:
+    """``_lines`` with a fourth flag: does the raw line open a paragraph (``# ``, not a ``### `` heading)."""
     body = text.split("#META#Header#End#", 1)[-1].splitlines()
-    out: list[tuple[str, int, bool]] = []
+    out: list[tuple[str, int, bool, bool]] = []
     pages: list[Page | None] = []
     for raw in body:
         parts = _PAGE.split(_PREFIX.sub("", raw))  # text, (vol, page), text, …: markers may be inline
         line = " ".join(_MILESTONE.sub("", _TAG.sub("", " ".join(parts[0::3]))).split())
         if line:  # the line is on the page its next marker closes, inline or later
-            out.append((line, len(pages), raw.startswith("### ")))
+            out.append((line, len(pages), raw.startswith("### "), raw.startswith("# ")))
         pages += [(int(v), int(p)) if int(p) else None for v, p in zip(parts[1::3], parts[2::3])]  # P000: unnumbered
     pages.append(None)  # text after the last marker is on no closed page
-    return [(line, pages[i], head) for line, i, head in out]
+    return [(line, pages[i], head, para) for line, i, head, para in out]
+
+
+def _lines(text: str) -> list[tuple[str, Page | None, bool]]:
+    """(cleaned line, the page it is on, is it a section heading) for every text line;
+    a page marker closes its page."""
+    return [(line, page, head) for line, page, head, _ in _marked_lines(text)]
 
 
 def segment_qa(text: str, question: str | None, answer: str, question_heading: bool = False) -> tuple[QA, ...]:

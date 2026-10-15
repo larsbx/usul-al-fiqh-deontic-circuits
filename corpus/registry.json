@@ -2472,7 +2472,8 @@
         ]
       },
       "segmenter": {
-        "kind": "abwab"
+        "kind": "abwab",
+        "paragraphs": true
       }
     },
     {
@@ -2663,7 +2664,8 @@
         ]
       },
       "segmenter": {
-        "kind": "abwab"
+        "kind": "abwab",
+        "paragraphs": true
       }
     },
     {

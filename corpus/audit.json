@@ -1535,6 +1535,397 @@
       "kitab": 27
     }
   },
+  "openiti-hajjawi-zadmustaqni-shamela11230#masail": {
+    "work": "hajjawi.zad_mustaqni",
+    "units": 286,
+    "paragraphs": 1220,
+    "masail": 1166,
+    "duplicates": [
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00089",
+        "paragraph": 1,
+        "duplicates": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00088.p04",
+        "page_span": [
+          109,
+          109
+        ],
+        "excerpt_ar": "إذا باع دارا شمل أرضها وبناءها \"وسقفها\" والباب المنصوب1 والس"
+      }
+    ],
+    "titles": [
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001",
+        "paragraph": 2,
+        "text_ar": "كتاب الطهارة"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011",
+        "paragraph": 11,
+        "text_ar": "كتاب الصلاة"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00041",
+        "paragraph": 3,
+        "text_ar": "كتاب الزكاة"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00055",
+        "paragraph": 2,
+        "text_ar": "كتاب الصيام"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00061",
+        "paragraph": 2,
+        "text_ar": "كتاب المناسك"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00077",
+        "paragraph": 2,
+        "text_ar": "كتاب الجهاد"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00081",
+        "paragraph": 2,
+        "text_ar": "كتاب البيع"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00088",
+        "paragraph": 4,
+        "text_ar": "باب بيع الأصول والثمار"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00127",
+        "paragraph": 2,
+        "text_ar": "كتاب الوقف"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00133",
+        "paragraph": 2,
+        "text_ar": "كتاب الوصايا"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00138",
+        "paragraph": 2,
+        "text_ar": "كتاب الفرائض"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00158",
+        "paragraph": 2,
+        "text_ar": "كتاب العتق1"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00160",
+        "paragraph": 3,
+        "text_ar": "كتاب النكاح"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00187",
+        "paragraph": 2,
+        "text_ar": "كتاب الطلاق"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00218",
+        "paragraph": 2,
+        "text_ar": "كتاب العدد"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00226",
+        "paragraph": 2,
+        "text_ar": "كتاب النفقات"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00234",
+        "paragraph": 2,
+        "text_ar": "كتاب الجنايات"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00242",
+        "paragraph": 2,
+        "text_ar": "كتاب الديات"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00251",
+        "paragraph": 2,
+        "text_ar": "كتاب الحدود"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00261",
+        "paragraph": 2,
+        "text_ar": "كتاب الأطعمة"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00265",
+        "paragraph": 2,
+        "text_ar": "كتاب الأيمان"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00271",
+        "paragraph": 2,
+        "text_ar": "كتاب القضاء"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00278",
+        "paragraph": 2,
+        "text_ar": "كتاب الشهادات"
+      }
+    ],
+    "no_letters": [
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011",
+        "paragraph": 12,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00041",
+        "paragraph": 4,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00043",
+        "paragraph": 1,
+        "text_ar": "1"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00046",
+        "paragraph": 1,
+        "text_ar": "1"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00055",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00061",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00068",
+        "paragraph": 1,
+        "text_ar": "1"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00077",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00078",
+        "paragraph": 1,
+        "text_ar": "1"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00081",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00116",
+        "paragraph": 1,
+        "text_ar": "1"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00127",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00133",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00138",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00157",
+        "paragraph": 1,
+        "text_ar": "1"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00158",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00160",
+        "paragraph": 4,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00187",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00218",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00226",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00229",
+        "paragraph": 1,
+        "text_ar": "1"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00234",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00242",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00248",
+        "paragraph": 1,
+        "text_ar": "1"
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00251",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00261",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00265",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00271",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00278",
+        "paragraph": 1,
+        "text_ar": "..."
+      }
+    ],
+    "loose": [],
+    "page_break_candidates": [
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00001.p09",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00002.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00004.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00006.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00007.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00008.p07",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00009.p06",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00010.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00011.p07",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00013.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00014.p24",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00015.p06",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00016.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00017.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00019.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00020.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00021.p08",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00022.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00026.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00031.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00033.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00033.p08",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00034.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00035.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00037.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00038.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00039.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00043.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00047.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00049.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00051.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00054.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00055.p07",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00057.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00058.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00064.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00065.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00067.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00069.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00072.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00077.p06",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00079.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00081.p05",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00081.p11",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00082.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00084.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00084.p08",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00084.p14",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00086.p06",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00089.p01",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00090.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00091.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00092.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00093.p06",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00094.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00100.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00101.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00103.p05",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00105.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00108.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00111.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00113.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00116.p06",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00117.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00118.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00122.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00123.p05",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00128.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00139.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00146.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00148.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00162.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00167.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00170.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00179.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00191.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00195.p05",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00198.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00203.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00207.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00222.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00225.p05",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00227.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00228.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00234.p05",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00236.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00246.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00247.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00257.p09",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00262.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00263.p06",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00265.p08",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00267.p03",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00270.p08",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00273.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00274.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00276.p04",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00280.p02",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00281.p06",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00284.p06",
+      "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00285.p04"
+    ]
+  },
   "openiti-harb-masail-shamela12527": {
     "work": "harb.masail",
     "found": 540
@@ -1609,6 +2000,380 @@
       "fasl": 46,
       "kitab": 25
     }
+  },
+  "openiti-ibnqudama-umda-shamela11315#masail": {
+    "work": "ibn_qudama.umda",
+    "units": 207,
+    "paragraphs": 891,
+    "masail": 831,
+    "duplicates": [
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00041",
+        "paragraph": 1,
+        "duplicates": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00040.p01",
+        "page_span": [
+          42,
+          42
+        ],
+        "excerpt_ar": "أفضل الصيام صيام داود عليه السلام كان يصوم يوما ويفطر يوما1 "
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00041",
+        "paragraph": 2,
+        "duplicates": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00040.p02",
+        "page_span": [
+          42,
+          42
+        ],
+        "excerpt_ar": "والصائم المتطوع أمير نفسه إن شاء صام وإن شاء أفطر ولا قضاء ع"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00199",
+        "paragraph": 1,
+        "duplicates": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00190.p01",
+        "page_span": [
+          149,
+          149
+        ],
+        "excerpt_ar": "وهي نوعان:"
+      }
+    ],
+    "titles": [
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00001",
+        "paragraph": 2,
+        "text_ar": "باب أحكام المياه"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00011",
+        "paragraph": 2,
+        "text_ar": "كتاب الصلاة"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00027",
+        "paragraph": 2,
+        "text_ar": "كتاب الزكاة"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00037",
+        "paragraph": 2,
+        "text_ar": "كتاب الصيام"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00043",
+        "paragraph": 2,
+        "text_ar": "كتاب الحج والعمرة"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00054",
+        "paragraph": 2,
+        "text_ar": "كتاب البيوع"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00075",
+        "paragraph": 2,
+        "text_ar": "كتاب الإجارة"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00078",
+        "paragraph": 2,
+        "text_ar": "كتاب الوقف"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00081",
+        "paragraph": 2,
+        "text_ar": "كتاب الوصايا"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00086",
+        "paragraph": 2,
+        "text_ar": "كتاب الفرائض"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00100",
+        "paragraph": 2,
+        "text_ar": "باب تصحيح المسائل"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00111",
+        "paragraph": 2,
+        "text_ar": "كتاب النكاح"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00119",
+        "paragraph": 2,
+        "text_ar": "كتاب الرضاع"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00126",
+        "paragraph": 2,
+        "text_ar": "كتاب الصداق"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00135",
+        "paragraph": 2,
+        "text_ar": "كتاب الطلاق"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00145",
+        "paragraph": 2,
+        "text_ar": "كتاب اللعان"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00151",
+        "paragraph": 2,
+        "text_ar": "كتاب الأطعمة"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00155",
+        "paragraph": 2,
+        "text_ar": "كتاب الصيد"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00158",
+        "paragraph": 2,
+        "text_ar": "كتاب الأيمان"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00161",
+        "paragraph": 2,
+        "text_ar": "كتاب الجنايات"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00168",
+        "paragraph": 2,
+        "text_ar": "كتاب الديات"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00175",
+        "paragraph": 2,
+        "text_ar": "كتاب الحدود"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00187",
+        "paragraph": 2,
+        "text_ar": "كتاب الجهاد"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00195",
+        "paragraph": 2,
+        "text_ar": "كتاب القضاء"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00200",
+        "paragraph": 2,
+        "text_ar": "كتاب الشهادات"
+      }
+    ],
+    "no_letters": [
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00001",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00011",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00027",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00037",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00043",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00054",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00075",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00078",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00081",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00086",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00092",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00099",
+        "paragraph": 1,
+        "text_ar": "1"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00100",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00101",
+        "paragraph": 1,
+        "text_ar": "1"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00111",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00119",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00126",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00131",
+        "paragraph": 1,
+        "text_ar": "1"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00134",
+        "paragraph": 1,
+        "text_ar": "1"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00135",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00145",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00151",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00155",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00158",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00161",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00168",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00175",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00179",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00179",
+        "paragraph": 2,
+        "text_ar": "No pages"
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00187",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00195",
+        "paragraph": 1,
+        "text_ar": "..."
+      },
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00200",
+        "paragraph": 1,
+        "text_ar": "..."
+      }
+    ],
+    "loose": [
+      {
+        "bab": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00206",
+        "text_ar": "من غير جنسه لزمه كله."
+      }
+    ],
+    "page_break_candidates": [
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00003.p02",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00006.p02",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00013.p09",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00014.p02",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00015.p02",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00018.p08",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00020.p02",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00024.p02",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00026.p04",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00028.p05",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00038.p07",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00049.p02",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00050.p02",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00055.p02",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00059.p04",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00061.p02",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00062.p05",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00065.p02",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00071.p05",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00076.p05",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00077.p08",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00080.p06",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00081.p08",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00088.p02",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00096.p02",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00100.p02",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00104.p04",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00106.p03",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00129.p03",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00131.p04",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00136.p02",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00137.p07",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00140.p11",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00142.p03",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00159.p02",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00164.p05",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00166.p04",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00173.p03",
+      "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00183.p02"
+    ]
   },
   "openiti-ibntaymiyya-fatawakubra-shamela9690": {
     "work": "ibn_taymiyya.fatawa_kubra",

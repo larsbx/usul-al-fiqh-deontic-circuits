@@ -25,10 +25,13 @@ def test_the_committed_unit_inventory_is_current():
 
 def test_the_inventory_covers_every_unit_witness_exactly_once():
     reg = json.loads((CORPUS / "registry.json").read_text(encoding="utf-8"))
-    expected = sorted(x["id"] for w in reg["works"] if w.get("segmenter", {}).get("kind") in units.UNIT_SEGMENTERS
-                      for x in w["witnesses"])
+    expected = sorted((x["id"], f"records/{x['id']}{suffix}.jsonl") for w in reg["works"]
+                      if w.get("segmenter", {}).get("kind") in units.UNIT_SEGMENTERS for x in w["witnesses"]
+                      for suffix in ["", ".masail"][:1 + bool(x.get("segmenter", w["segmenter"]).get("paragraphs"))])
     rows = _committed()["witnesses"]
-    assert [r["witness"] for r in rows] == expected
+    assert [(r["witness"], r["records"]) for r in rows] == expected  # a matn's masāʾil are a row of their own
+    assert {r["kind"] for r in rows if r["records"].endswith(".masail.jsonl")} == {units.PARAGRAPHS}
+    assert _committed()["summary"]["witnesses"] == len({r["witness"] for r in rows})
     for r in rows:
         lines = (CORPUS / r["records"]).read_text(encoding="utf-8").splitlines()
         assert r["units"] == len(lines) and r["pending"] == r["units"] - len(r["annotated_ids"])
