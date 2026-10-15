@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/finite_deontic_boundary.schema.json",
+  "title": "Finite Deontic Boundary Fixture",
+  "type": "object",
+  "required": ["fixture_id", "verdicts", "projection_rules", "forbidden_collapses"],
+  "additionalProperties": false,
+  "properties": {
+    "fixture_id": {"$ref": "#/$defs/canonical_id"},
+    "note": {"type": "string"},
+    "verdicts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/finite_verdict"}
+    },
+    "projection_rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/projection_rule"}
+    },
+    "forbidden_collapses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/forbidden_collapse"}
+    }
+  },
+  "$defs": {
+    "canonical_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "hukm_tag": {
+      "enum": ["wajib", "mandub", "mubah", "makruh", "haram", "no_ruling"]
+    },
+    "operator": {
+      "enum": ["o", "r", "p", "d", "f", "n"]
+    },
+    "target": {
+      "type": "object",
+      "required": ["kind", "id"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"enum": ["root", "compound", "profile", "object_cluster", "external_concept", "path_constraint"]},
+        "id": {"$ref": "#/$defs/canonical_id"}
+      }
+    },
+    "context_condition": {
+      "type": "object",
+      "required": ["id", "description"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/canonical_id"},
+        "description": {"type": "string", "minLength": 1}
+      }
+    },
+    "finite_verdict": {
+      "type": "object",
+      "required": ["id", "target", "object", "subject", "operator", "verdict", "warrant_id"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/canonical_id"},
+        "target": {"$ref": "#/$defs/target"},
+        "object": {"type": "string", "minLength": 1},
+        "subject": {"type": "string", "minLength": 1},
+        "operator": {"$ref": "#/$defs/operator"},
+        "verdict": {"$ref": "#/$defs/hukm_tag"},
+        "condition": {"$ref": "#/$defs/context_condition"},
+        "warrant_id": {"$ref": "#/$defs/canonical_id"},
+        "projection_notes": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "projection_kind": {
+      "enum": [
+        "is_required",
+        "is_forbidden",
+        "is_recommended",
+        "is_discouraged",
+        "is_neutral",
+        "outside_taklif",
+        "weak_permissible",
+        "ideal_positive",
+        "path_excluding",
+        "path_demoting"
+      ]
+    },
+    "projection_rule": {
+      "type": "object",
+      "required": ["id", "projection", "true_for"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/canonical_id"},
+        "projection": {"$ref": "#/$defs/projection_kind"},
+        "true_for": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/hukm_tag"}
+        },
+        "note": {"type": "string"}
+      }
+    },
+    "forbidden_collapse": {
+      "type": "object",
+      "required": ["id", "invalid_equation", "reason"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/canonical_id"},
+        "invalid_equation": {"type": "string", "minLength": 1},
+        "reason": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}
