@@ -51,6 +51,36 @@ def _adv(winner, loser, by, basis="stated"):
             "note": "n"}
 
 
+def test_an_unproven_side_must_say_where_its_proofs_were_sought(monkeypatch):
+    """Audit PR-34: a ruling with a proof beats one with none, so an unproven side decides the tarjīḥ; the entry
+    records where that side's proofs were searched for, or stands on the pinned list of entries not yet searched."""
+    monkeypatch.setattr(reconcile, "_unsearched", lambda: set())
+    c = _ikh("x", True, [True, False])
+    one = {**_entry("x", ["ashab", "ashab"]), "proofs": [_proof(0, "qiyas")]}
+    assert reconcile.unproven(c, one) == [False]
+    assert reconcile.check([c], {"entries": [one]}, DOSSIER) == [
+        "x: position rulings [false] cite no proof: say where their proofs were searched for"]
+    assert reconcile.check([c], {"entries": [{**one, "searched": "al-Mughnī v04 p210, al-Mubdiʿ v04 p95"}]}, DOSSIER) == []
+    monkeypatch.setattr(reconcile, "_unsearched", lambda: {"x"})
+    assert reconcile.check([c], {"entries": [one]}, DOSSIER) == []
+    both = {**one, "proofs": [_proof(0, "qiyas"), _proof(1, "qiyas")]}
+    assert reconcile.check([c], {"entries": [both]}, DOSSIER) == ["x: pinned as unsearched but every ruling cites a proof"]
+
+
+def test_the_unsearched_list_is_pinned_and_only_shrinks():
+    """The 103 weighed entries with an unproven side and no search record when the rule came in (2026-10-15)."""
+    pinned = reconcile._unsearched()
+    assert len(pinned) <= 103
+    current = {e["far"] for e in LEDGER["entries"] if reconcile.unproven(next(c for c in CASES if c["far"] == e["far"]), e)
+               and not str(e.get("searched", "")).strip()}
+    assert current == pinned
+
+
+def test_the_report_counts_tarjih_won_against_unproven_sides():
+    rep = reconcile.report(CASES, LEDGER)["tarjih_against_unproven"]
+    assert rep["count"] == 104 and rep["against_reading"] == 23 and rep["unsearched"] == 93
+
+
 def test_attribution_is_a_record_and_decides_nothing():
     """A ruling stands by its proof: holders and labels alone leave the farʿ unweighed."""
     c = _ikh("x", True, [True, False])
@@ -127,7 +157,7 @@ def test_applied_advantages_are_kept_and_count_only_under_their_policy():
 
 def test_proofs_name_positions_tiers_and_their_source():
     c = _ikh("x", True, [True, False])
-    e = _entry("x", ["ashab", "ashab"])
+    e = {**_entry("x", ["ashab", "ashab"]), "searched": "al-Mughnī v05:p100"}
     assert reconcile.check([c], {"entries": [{**e, "proofs": [_proof(0, "zanni")]}]}, DOSSIER) == []
     assert reconcile.check([c], {"entries": [{**e, "proofs": [_proof(2, "zanni")]}]}, DOSSIER) == [
         f"x: a proof names a listed position, a tier from {reconcile.TIERS}, a ref and its excerpt"]
@@ -137,7 +167,7 @@ def test_proofs_name_positions_tiers_and_their_source():
         "x: an advantage names two listed positions, a murajjiḥ, its basis, a ref and its excerpt"]
     assert reconcile.check([c], {"entries": [{**e, "advantages": [_adv(0, 1, "muthbit")]}]}, DOSSIER) == [
         "x: advantages weigh proofs; record the proofs"]
-    assert reconcile.check([c], {"entries": [{**e, "proofs": []}]}, DOSSIER) == [
+    assert reconcile.check([c], {"entries": [{**_entry("x", ["ashab", "ashab"]), "proofs": []}]}, DOSSIER) == [
         "x: weighed with no proof: say where the proofs were searched for"]
     assert reconcile.check([c], {"entries": [{**e, "proofs": [], "searched": "al-Mughnī v05:p100"}]}, DOSSIER) == []
 
@@ -432,7 +462,7 @@ def test_every_ikhtilaf_has_an_entry_and_labels_are_no_target():
     against it is no error, and a cited register must be an open question."""
     c = _ikh("x", True, [True, False], matches=True)
     assert reconcile.check([c], {"entries": []}, DOSSIER) == ["x: an ikhtilāf not in the ledger"]
-    against = {**_entry("x", ["tashih", "ashab"]), "proofs": [_proof(1, "zanni")]}
+    against = {**_entry("x", ["tashih", "ashab"]), "proofs": [_proof(1, "zanni")], "searched": "al-Mughnī v05:p100"}
     assert reconcile.resolve(c, against) == ("tarjih", False)
     assert reconcile.check([c], {"entries": [against]}, DOSSIER) == []
     assert reconcile.check([c], {"entries": [{**against, "register": "RQ-99"}]}, DOSSIER) == [

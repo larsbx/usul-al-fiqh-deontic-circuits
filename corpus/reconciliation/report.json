@@ -187,6 +187,12 @@
     ]
   },
   "weighing_worklist": {},
+  "tarjih_against_unproven": {
+    "note": "tarjīḥ in which every other reported ruling cites no proof (Usul.Tarjih.beats_unproven)",
+    "count": 104,
+    "against_reading": 23,
+    "unsearched": 93
+  },
   "jam_pending": [],
   "policies": {
     "strict": {
