@@ -323,12 +323,12 @@
           "lexical_rank": 3
         },
         {
-          "encoder": "generality",
+          "encoder": "disposal_before_qabd_debt",
           "settled": null,
           "lexical_rank": 4
         },
         {
-          "encoder": "disposal_before_qabd_debt",
+          "encoder": "generality",
           "settled": null,
           "lexical_rank": 5
         }
@@ -345,7 +345,7 @@
             1,
             1
           ],
-          "lexical_rank": 70
+          "lexical_rank": 76
         },
         {
           "encoder": "needed_item_is_surplus",
@@ -363,7 +363,7 @@
           "lexical_rank": 3
         },
         {
-          "encoder": "intention_shapes_wording",
+          "encoder": "idda_transfer_on_change",
           "settled": null,
           "lexical_rank": 4
         }
@@ -375,27 +375,27 @@
       "typed": false,
       "proposals": [
         {
-          "encoder": "budh_capacity_is_wealth",
+          "encoder": "mahr_fully_established",
           "settled": null,
           "lexical_rank": 1
         },
         {
-          "encoder": "concurrent_causes",
+          "encoder": "mahr_halved_by_separation",
           "settled": null,
           "lexical_rank": 2
         },
         {
-          "encoder": "supervening_bar_extends_to_preliminaries",
+          "encoder": "bud_exit_charged",
           "settled": null,
           "lexical_rank": 3
         },
         {
-          "encoder": "defective_compensation",
+          "encoder": "budh_capacity_is_wealth",
           "settled": null,
           "lexical_rank": 4
         },
         {
-          "encoder": "rajiyya_takes_wife_rule",
+          "encoder": "concurrent_causes",
           "settled": null,
           "lexical_rank": 5
         }
@@ -452,7 +452,7 @@
             1,
             3
           ],
-          "lexical_rank": 44
+          "lexical_rank": 46
         },
         {
           "encoder": "cause_from_one_of_two",
@@ -482,7 +482,7 @@
             1,
             2
           ],
-          "lexical_rank": 118
+          "lexical_rank": 127
         },
         {
           "encoder": "abstention_under_possible_condition",
@@ -532,7 +532,7 @@
           "lexical_rank": 4
         },
         {
-          "encoder": "umum_lafz",
+          "encoder": "disposal_before_qabd_debt",
           "settled": null,
           "lexical_rank": 5
         }
@@ -581,7 +581,7 @@
             1,
             1
           ],
-          "lexical_rank": 131
+          "lexical_rank": 140
         },
         {
           "encoder": "many_over_noble",
@@ -695,7 +695,7 @@
           "lexical_rank": 4
         },
         {
-          "encoder": "excess_in_following",
+          "encoder": "mahr_fully_established",
           "settled": null,
           "lexical_rank": 5
         }
@@ -712,7 +712,7 @@
             1,
             1
           ],
-          "lexical_rank": 173
+          "lexical_rank": 183
         },
         {
           "encoder": "substitute_at_obligation",
@@ -720,7 +720,7 @@
             1,
             2
           ],
-          "lexical_rank": 28
+          "lexical_rank": 29
         },
         {
           "encoder": "combining_forms",
@@ -750,7 +750,7 @@
             1,
             1
           ],
-          "lexical_rank": 174
+          "lexical_rank": 185
         },
         {
           "encoder": "substitute_at_obligation",
@@ -758,7 +758,7 @@
             1,
             2
           ],
-          "lexical_rank": 46
+          "lexical_rank": 48
         },
         {
           "encoder": "tadakhul",
@@ -825,7 +825,7 @@
           "lexical_rank": 2
         },
         {
-          "encoder": "tabaa",
+          "encoder": "performed_without_leave_owned",
           "settled": null,
           "lexical_rank": 3
         },
@@ -835,7 +835,7 @@
           "lexical_rank": 4
         },
         {
-          "encoder": "performed_without_leave_owned",
+          "encoder": "tabaa",
           "settled": null,
           "lexical_rank": 5
         }
@@ -867,7 +867,7 @@
           "lexical_rank": 4
         },
         {
-          "encoder": "amr_mixed",
+          "encoder": "performed_without_leave_owned",
           "settled": null,
           "lexical_rank": 5
         }
@@ -889,17 +889,17 @@
           "lexical_rank": 2
         },
         {
-          "encoder": "tabaa",
+          "encoder": "needed_item_is_surplus",
           "settled": null,
           "lexical_rank": 3
         },
         {
-          "encoder": "needed_item_is_surplus",
+          "encoder": "tabaa",
           "settled": null,
           "lexical_rank": 4
         },
         {
-          "encoder": "manumission_spread",
+          "encoder": "refusal_compelled_to_choose",
           "settled": null,
           "lexical_rank": 5
         }
@@ -911,27 +911,27 @@
       "typed": false,
       "proposals": [
         {
-          "encoder": "bain_in_idda_as_wife",
+          "encoder": "idda_transfer_on_change",
           "settled": null,
           "lexical_rank": 1
         },
         {
-          "encoder": "cancel_on_existence_valid",
+          "encoder": "bain_in_idda_as_wife",
           "settled": null,
           "lexical_rank": 2
         },
         {
-          "encoder": "rajiyya_takes_wife_rule",
+          "encoder": "cancel_on_existence_valid",
           "settled": null,
           "lexical_rank": 3
         },
         {
-          "encoder": "combination_bars_its_amount",
+          "encoder": "rajiyya_takes_wife_rule",
           "settled": null,
           "lexical_rank": 4
         },
         {
-          "encoder": "refusal_compelled_to_choose",
+          "encoder": "combination_bars_its_amount",
           "settled": null,
           "lexical_rank": 5
         }
@@ -963,7 +963,7 @@
           "lexical_rank": 4
         },
         {
-          "encoder": "unknown_condition",
+          "encoder": "intention_shapes_wording",
           "settled": null,
           "lexical_rank": 5
         }
@@ -995,7 +995,7 @@
           "lexical_rank": 4
         },
         {
-          "encoder": "advanced_kaffara_at_obligation",
+          "encoder": "error_actor_liable",
           "settled": null,
           "lexical_rank": 5
         }
@@ -1017,17 +1017,17 @@
           "lexical_rank": 2
         },
         {
-          "encoder": "generality",
+          "encoder": "prohibited_worship",
           "settled": null,
           "lexical_rank": 3
         },
         {
-          "encoder": "prohibited_worship",
+          "encoder": "generality",
           "settled": null,
           "lexical_rank": 4
         },
         {
-          "encoder": "umum_lafz",
+          "encoder": "combining_forms",
           "settled": null,
           "lexical_rank": 5
         }
@@ -1044,7 +1044,7 @@
             1,
             2
           ],
-          "lexical_rank": 27
+          "lexical_rank": 29
         },
         {
           "encoder": "nafaqa_taken_owned",
@@ -1052,7 +1052,7 @@
             1,
             2
           ],
-          "lexical_rank": 63
+          "lexical_rank": 70
         },
         {
           "encoder": "wage_without_stipulation",
@@ -1060,7 +1060,7 @@
             1,
             2
           ],
-          "lexical_rank": 87
+          "lexical_rank": 96
         },
         {
           "encoder": "benefit_then_thing",
@@ -1095,7 +1095,7 @@
           "lexical_rank": 3
         },
         {
-          "encoder": "supervening_bar_extends_to_preliminaries",
+          "encoder": "eating_without_permission",
           "settled": null,
           "lexical_rank": 4
         },
@@ -1132,7 +1132,7 @@
           "lexical_rank": 4
         },
         {
-          "encoder": "ghulul_forfeiture",
+          "encoder": "grandchild_in_child_term",
           "settled": null,
           "lexical_rank": 5
         }
@@ -1159,7 +1159,7 @@
           "lexical_rank": 3
         },
         {
-          "encoder": "doubt_in_condition",
+          "encoder": "four_kinds_marriage_prohibition",
           "settled": null,
           "lexical_rank": 4
         },
@@ -1191,12 +1191,12 @@
           "lexical_rank": 3
         },
         {
-          "encoder": "ruling_with_bar",
+          "encoder": "taker_from_usurper",
           "settled": null,
           "lexical_rank": 4
         },
         {
-          "encoder": "taker_from_usurper",
+          "encoder": "ruling_with_bar",
           "settled": null,
           "lexical_rank": 5
         }
@@ -1213,7 +1213,7 @@
             1,
             1
           ],
-          "lexical_rank": 5
+          "lexical_rank": 6
         },
         {
           "encoder": "successive_contracts",
@@ -1221,7 +1221,7 @@
             1,
             1
           ],
-          "lexical_rank": 186
+          "lexical_rank": 197
         },
         {
           "encoder": "successive_by_binding",
@@ -1229,7 +1229,7 @@
             1,
             3
           ],
-          "lexical_rank": 2
+          "lexical_rank": 3
         },
         {
           "encoder": "occurrence_state_governs",
@@ -1237,9 +1237,9 @@
           "lexical_rank": 1
         },
         {
-          "encoder": "cancel_on_existence_valid",
+          "encoder": "woman_half_of_man",
           "settled": null,
-          "lexical_rank": 3
+          "lexical_rank": 2
         }
       ]
     },
@@ -1254,7 +1254,7 @@
             1,
             2
           ],
-          "lexical_rank": 12
+          "lexical_rank": 11
         },
         {
           "encoder": "generality",
@@ -1289,7 +1289,7 @@
             1,
             1
           ],
-          "lexical_rank": 179
+          "lexical_rank": 194
         },
         {
           "encoder": "substitute_at_obligation",
@@ -1297,7 +1297,7 @@
             1,
             2
           ],
-          "lexical_rank": 60
+          "lexical_rank": 64
         },
         {
           "encoder": "combining_forms",
@@ -1305,12 +1305,12 @@
           "lexical_rank": 1
         },
         {
-          "encoder": "umum_lafz",
+          "encoder": "generality",
           "settled": null,
           "lexical_rank": 2
         },
         {
-          "encoder": "generality",
+          "encoder": "umum_lafz",
           "settled": null,
           "lexical_rank": 3
         }

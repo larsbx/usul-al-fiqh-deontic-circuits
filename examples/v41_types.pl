@@ -295,6 +295,9 @@ qaida_type(rajab157, 'Ibn Rajab 157 «إذا تغير حال المرأة الت
 type_field(rajab157, idda_status_changes, 'Option Bool').
 type_field(rajab157, husband_can_remedy_in_idda, 'Option Bool').
 type_field(rajab157, sick_husband_ibana, 'Option Bool').
+qaida_type(rajab158, 'Ibn Rajab 158 «إذا تعارض معنا أصلان عمل بالأرجح منهما لاعتضاده بما يرجحه، فإن تساويا خرج في المسألة وجها غالبا. من صور ذلك: ما إذا وقع في الماء نجاسة وشك في بلوغه القلتين فهل يحكم بنجاسته أو طهارته على وجهين: أحدهما: يحكم …». Read by `two_usul_reinforced_governs`.').
+type_field(rajab158, first_asl_reinforced, 'Option Bool').
+type_field(rajab158, second_asl_reinforced, 'Option Bool').
 qaida_type(rajab17, 'Ibn Rajab 17 «إذا تقابل عملان أحدهما ذو شرف في نفسه ورفعة وهو واحد، والآخر ذو تعدد في نفسه وكثرة، فأيهما يرجح.». Read by `many_over_noble`.').
 type_field(rajab17, same_cost, 'Option Bool').
 qaida_type(rajab19, 'Ibn Rajab 19 «إمكان الأداء ليس بشرط في استقرار الواجبات بالشرع في الذمة على ظاهر المذهب ويندرج تحت ذلك صور: (منها) الطهارة فإذا وصل عادم الماء إلى الماء وقد ضاق الوقت فعليه أن يتطهر ويصلي بعد الوقت ذكره صاحب المغني.». Read by `settles_without_ability`.').
@@ -1044,6 +1047,9 @@ encoder_reads(trust_loss, 3, negligent).
 encoder_type(trust_voidance, 'Bool').
 encoder_reads(trust_voidance, 1, pure_trust).
 encoder_reads(trust_voidance, 2, transgressed).
+encoder_type(two_usul_reinforced_governs, 'Bool').
+encoder_reads(two_usul_reinforced_governs, 1, first_asl_reinforced).
+encoder_reads(two_usul_reinforced_governs, 2, second_asl_reinforced).
 encoder_type(umum_lafz, 'Bool').
 encoder_reads(umum_lafz, 1, in_occasion).
 encoder_reads(umum_lafz, 2, general_wording).

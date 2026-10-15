@@ -1486,6 +1486,14 @@ def iddaTransferOnChange : Typed Situation (Bool) where
   run | (x1, x2, x3) => Usul.Readings.RajabA23.transfersToNewIdda x1 x2 x3
   proj_embed := fun _ => rfl
 
+/-- `two_usul_reinforced_governs` reads `Qaida.Rajab158`. -/
+def twoUsulReinforcedGoverns : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.firstAslReinforced, ← s.secondAslReinforced)
+  embed | (x1, x2) => { firstAslReinforced := some x1, secondAslReinforced := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA25.firstAslGoverns x1 x2
+  proj_embed := fun _ => rfl
+
 /-! ## Integration: the jamʿ of Ibn Rajab 14's two readings -/
 
 /-- `cause_on_certainty` reads `Qaida.Rajab14Certainty`, which extends Ibn Rajab 14's type. -/

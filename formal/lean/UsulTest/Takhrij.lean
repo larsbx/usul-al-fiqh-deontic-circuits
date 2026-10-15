@@ -801,6 +801,42 @@ import Usul
 #guard (Usul.Readings.RajabA24.mahrHalved false false false false) == false
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f018 (genuine_ikhtilaf)
 #guard (Usul.Readings.RajabA24.mahrHalved false false false false) == false
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f001 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f002 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f003 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f004 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f005 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f006 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f007 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f008 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f009 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f010 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f011 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f012 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f013 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f014 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f015 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f016 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f017 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns true false) == true
+-- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f018 (genuine_ikhtilaf)
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f001 (genuine_ikhtilaf)
 #guard (Usul.Readings.RajabA2.nafaqaStipulable true true) == true
 -- ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f002 (derivable)

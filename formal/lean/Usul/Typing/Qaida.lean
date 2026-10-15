@@ -848,4 +848,9 @@ structure Rajab157 where
   husbandCanRemedyInIdda : Option (Bool) := none
   sickHusbandIbana : Option (Bool) := none
 
+/-- Ibn Rajab 158 «إذا تعارض معنا أصلان عمل بالأرجح منهما لاعتضاده بما يرجحه، فإن تساويا خرج في المسألة وجها غالبا. من صور ذلك: ما إذا وقع في الماء نجاسة وشك في بلوغه القلتين فهل يحكم بنجاسته أو طهارته على وجهين: أحدهما: يحكم …». Read by `two_usul_reinforced_governs`. -/
+structure Rajab158 where
+  firstAslReinforced : Option (Bool) := none
+  secondAslReinforced : Option (Bool) := none
+
 end Usul.Typing.Qaida

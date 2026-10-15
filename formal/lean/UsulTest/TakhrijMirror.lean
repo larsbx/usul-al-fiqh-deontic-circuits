@@ -782,6 +782,10 @@ import Usul
 #guard (Usul.Readings.RajabA24.mahrHalved true true false true) == false
 #guard (Usul.Readings.RajabA24.mahrHalved true true true false) == true
 #guard (Usul.Readings.RajabA24.mahrHalved true true true true) == false
+#guard (Usul.Readings.RajabA25.firstAslGoverns false false) == true
+#guard (Usul.Readings.RajabA25.firstAslGoverns false true) == false
+#guard (Usul.Readings.RajabA25.firstAslGoverns true false) == true
+#guard (Usul.Readings.RajabA25.firstAslGoverns true true) == true
 #guard (Usul.Readings.RajabA3.disposalStands false false) == true
 #guard (Usul.Readings.RajabA3.disposalStands false true) == true
 #guard (Usul.Readings.RajabA3.disposalStands true false) == true

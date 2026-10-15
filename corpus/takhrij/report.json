@@ -1,16 +1,16 @@
 {
- "total": 1066,
+ "total": 1084,
  "classes": {
   "derivable": 441,
-  "genuine_ikhtilaf": 580,
+  "genuine_ikhtilaf": 598,
   "missing_fact": 3,
   "missing_rule": 41,
   "segmentation_error": 1
  },
  "coverage": 0.959,
- "madhhab_coverage": 0.731,
+ "madhhab_coverage": 0.729,
  "encoding_error": 0,
- "ikhtilaf_matching_madhhab": 337,
+ "ikhtilaf_matching_madhhab": 348,
  "gaps_open": 44,
  "revisited": 38,
  "revisit_queue": [],
@@ -602,6 +602,9 @@
   "mahr_halved_by_separation": {
    "derivable": 6,
    "genuine_ikhtilaf": 12
+  },
+  "two_usul_reinforced_governs": {
+   "genuine_ikhtilaf": 18
   },
   "attached_right_disposal": {
    "derivable": 4,

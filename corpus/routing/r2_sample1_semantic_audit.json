@@ -50,9 +50,9 @@
           "reason": "Source decision: Ahmad requires wudu for genital touch, camel meat and a kiss with desire; not for the other listed acts. Encoder requires believed_basis, actual_basis and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
-          "encoder": "excess_in_following",
+          "encoder": "mahr_fully_established",
           "disposition": "not_established",
-          "reason": "Source decision: Ahmad requires wudu for genital touch, camel meat and a kiss with desire; not for the other listed acts. Encoder requires separable, lightened, following and returns [False, True]; the source does not establish this mapping to that decision."
+          "reason": "Source decision: Ahmad requires wudu for genital touch, camel meat and a kiss with desire; not for the other listed acts. Encoder requires intercourse_occurred, khalwa_occurred, husband_capable_of_intercourse, death_before_consummation and returns [False, True]; the source does not establish this mapping to that decision."
         }
       ],
       "classification": "missing_rule",
@@ -323,9 +323,9 @@
           "reason": "Source decision: Ishaq reads Ali's direction to distribute as permission. Encoder requires reading, imitation_established and returns ['literal', 'figurative', 'unsettled']; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
-          "encoder": "amr_mixed",
+          "encoder": "performed_without_leave_owned",
           "disposition": "not_established",
-          "reason": "Source decision: Ishaq reads Ali's direction to distribute as permission. Encoder requires per_item_status and returns ['wajib', 'mandub', 'mubah', 'makruh', 'haram']; the source does not establish this mapping to that decision. No facts are filled from silence."
+          "reason": "Source decision: Ishaq reads Ali's direction to distribute as permission. Encoder requires wilaya, distinct and returns [False, True]; the source does not establish this mapping to that decision."
         }
       ],
       "classification": "missing_rule",
@@ -361,9 +361,9 @@
           "reason": "Source decision: Divorce count follows the man's status; idda follows the woman's. Encoder requires with_bar and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
-          "encoder": "manumission_spread",
-          "disposition": "insufficient",
-          "reason": "Not manumission spreading to benefits. The encoder vocabulary lacks these separate status-indexed measures."
+          "encoder": "needed_item_is_surplus",
+          "disposition": "not_established",
+          "reason": "Source decision: Divorce count follows the man's status; idda follows the woman's. Encoder requires needed and returns [False, True] (Ibn Rajab 130); the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with Lane A round 4 (PR #71), in place of follows_proven_ownership, refusal_compelled_to_choose (reviewed not_established), which this unit no longer receives."
         },
         {
           "encoder": "tabaa",
@@ -371,9 +371,9 @@
           "reason": "Source decision: Divorce count follows the man's status; idda follows the woman's. Encoder requires independent_proof, follows_established and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
-          "encoder": "needed_item_is_surplus",
+          "encoder": "refusal_compelled_to_choose",
           "disposition": "not_established",
-          "reason": "Source decision: Divorce count follows the man's status; idda follows the woman's. Encoder requires needed and returns [False, True] (Ibn Rajab 130); the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with Lane A round 4 (PR #71), in place of follows_proven_ownership, refusal_compelled_to_choose (reviewed not_established), which this unit no longer receives."
+          "reason": "Source decision: Divorce count follows the man's status; idda follows the woman's. Encoder requires harms_other, financial, established and returns [False, True]; the source does not establish this mapping to that decision."
         }
       ],
       "classification": "missing_rule",
@@ -399,6 +399,11 @@
       "blind_situations": [],
       "proposal_review": [
         {
+          "encoder": "idda_transfer_on_change",
+          "disposition": "not_established",
+          "reason": "Source decision: A fifth marriage waits until the divorced wife's idda ends; death permits marriage. Encoder requires idda_status_changes, husband_can_remedy_in_idda, sick_husband_ibana and returns [False, True]; the source does not establish this mapping to that decision."
+        },
+        {
           "encoder": "bain_in_idda_as_wife",
           "disposition": "partial_support",
           "reason": "bain_in_idda_as_wife is a supported component: the ʿidda not yet ended («حتى تنقضي عدة التي طلق», in_idda) and death cutting the ties (ties_cut) are stated, and Ibn Rajab 145 keeps the wife's ruling in the ʿidda («ما دامت علق الزوجية قائمة»). Whether the divorce is bāʾin is not stated (a rajʿiyya is a wife in any case), and the bar on a fifth is combining_amount's, which this encoder does not supply; the unit stays missing_rule."
@@ -417,11 +422,6 @@
           "encoder": "combination_bars_its_amount",
           "disposition": "insufficient",
           "reason": "Combining_amount is too coarse to state idda persistence and the death exception. Ahmad and Ishaq agree; no simultaneous contracts are stated."
-        },
-        {
-          "encoder": "refusal_compelled_to_choose",
-          "disposition": "not_established",
-          "reason": "Source decision: A fifth marriage waits until the divorced wife's idda ends; death permits marriage. Encoder requires harms_other, financial, established and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         }
       ],
       "classification": "missing_rule",
@@ -476,9 +476,9 @@
           "reason": "Source decision: Ahmad says the condition persists until breached, whether triple or single divorce. Encoder requires due_at_performance and returns [False, True] (Ibn Rajab 5); the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with the PR-30 annotations, in place of intention_shapes_wording (reviewed not_established), which this unit no longer receives."
         },
         {
-          "encoder": "unknown_condition",
+          "encoder": "intention_shapes_wording",
           "disposition": "not_established",
-          "reason": "Source decision: Ahmad says the condition persists until breached, whether triple or single divorce. Encoder requires knew, liability_only and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
+          "reason": "Source decision: Ahmad says the condition persists until breached, whether triple or single divorce. Encoder requires restricts_absolute, excepts_from_text and returns [False, True]; the source does not establish this mapping to that decision."
         }
       ],
       "classification": "missing_rule",
@@ -524,9 +524,9 @@
           "reason": "Source decision: The stated hajj miqat after umra was Mecca. Encoder requires customary_usage and returns [False, True] (Ibn Rajab 122); the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with the PR-30 annotations, in place of error_actor_liable (reviewed not_established), which this unit no longer receives."
         },
         {
-          "encoder": "advanced_kaffara_at_obligation",
+          "encoder": "error_actor_liable",
           "disposition": "not_established",
-          "reason": "Source decision: The stated hajj miqat after umra was Mecca. Encoder requires due_at_performance, kaffara_changed and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
+          "reason": "Source decision: The stated hajj miqat after umra was Mecca. Encoder requires external_cause, basis_void, ruling_overturned, as_owner, negligent and returns [False, True]; the source does not establish this mapping to that decision."
         }
       ],
       "classification": "missing_rule",
@@ -1049,9 +1049,9 @@
           "reason": "Source decision: The earlier marriage stands; Ahmad says the grandfather is slightly closer. Encoder requires same_cost and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
-          "encoder": "intention_shapes_wording",
+          "encoder": "idda_transfer_on_change",
           "disposition": "not_established",
-          "reason": "Source decision: The earlier marriage stands; Ahmad says the grandfather is slightly closer. Encoder requires restricts_absolute, excepts_from_text and returns [False, True] (Ibn Rajab 125); the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with Lane A round 4 (PR #71), in place of abstention_under_possible_condition, distribution_each_over_whole (reviewed not_established), which this unit no longer receives."
+          "reason": "Source decision: The earlier marriage stands; Ahmad says the grandfather is slightly closer. Encoder requires idda_status_changes, husband_can_remedy_in_idda, sick_husband_ibana and returns [False, True]; the source does not establish this mapping to that decision."
         }
       ],
       "classification": "missing_rule",
@@ -1090,6 +1090,21 @@
       "blind_situations": [],
       "proposal_review": [
         {
+          "encoder": "mahr_fully_established",
+          "disposition": "partial_support",
+          "reason": "mahr_fully_established (Ibn Rajab 155) is a supported component: Isḥāq's main case states intimacy short of the farj among other slave-women, «فليس ذلك بخلوة» (intercourse_occurred and khalwa_occurred false, no death), and the reading gives the mahr not fully established, as he does; his variant, a khalwa or a closed door, gives the whole mahr, as the reading does when the husband is capable. Isḥāq's exceptions are impediments on her side («ممتنعة»، حيض، محرمة), which the reading's husband_capable_of_intercourse does not express (the impediment branch, a candidate farq of the round), and Ibn Masʿūd's and Ibn ʿAbbās's reports stay positions. The unit stays missing_rule."
+        },
+        {
+          "encoder": "mahr_halved_by_separation",
+          "disposition": "partial_support",
+          "reason": "mahr_halved_by_separation (Ibn Rajab 156) is a supported component: «ولا يجب المهر إن طلقها، إنما يجب نصف المهر» is a separation from the husband alone before the mahr is established (sep_by_husband), which the reading halves. Together with mahr_fully_established it derives Isḥāq's main ruling; the impediment branch and the reported positions remain. The unit stays missing_rule."
+        },
+        {
+          "encoder": "bud_exit_charged",
+          "disposition": "not_established",
+          "reason": "Source decision: Ishaq requires half the mahr without khalwa; valid seclusion can require all, with stated impediment exceptions. Encoder requires charged_unconsummated_mahr, husband_elects_mahr, wife_bears_exit and returns [False, True]; the source does not establish this mapping to that decision."
+        },
+        {
           "encoder": "budh_capacity_is_wealth",
           "disposition": "not_established",
           "reason": "Source decision: Ishaq requires half the mahr without khalwa; valid seclusion can require all, with stated impediment exceptions. Encoder requires has_wealth, can_earn_by_budh and returns [False, True] (Ibn Rajab 131); the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with Lane A round 4 (PR #71), in place of asl_zahir, return_of_held_property (reviewed not_established), which this unit no longer receives."
@@ -1098,21 +1113,6 @@
           "encoder": "concurrent_causes",
           "disposition": "insufficient",
           "reason": "Half/full outputs in concurrentShare concern concurrent causes (asbāb), not khalwa. Preserve reported Ibn Masud and Ibn Abbas distinctions; do not collapse the evidence into a single mahr rule."
-        },
-        {
-          "encoder": "supervening_bar_extends_to_preliminaries",
-          "disposition": "not_established",
-          "reason": "Source decision: Ishaq requires half the mahr without khalwa; valid seclusion can require all, with stated impediment exceptions. Encoder requires weak_ownership, worship, bars_indulgence and returns [False, True]; the source does not establish this mapping to that decision."
-        },
-        {
-          "encoder": "defective_compensation",
-          "disposition": "not_established",
-          "reason": "Source decision: Ishaq requires half the mahr without khalwa; valid seclusion can require all, with stated impediment exceptions. Encoder requires contract_liability and returns ['agreed', 'equivalent']; the source does not establish this mapping to that decision. No facts are filled from silence."
-        },
-        {
-          "encoder": "rajiyya_takes_wife_rule",
-          "disposition": "not_established",
-          "reason": "Source decision: Ishaq requires half the mahr without khalwa; valid seclusion can require all, with stated impediment exceptions. Encoder requires rajiyya, listed_difference and returns [False, True]; the source does not establish this mapping to that decision."
         }
       ],
       "classification": "missing_rule",
@@ -1333,14 +1333,14 @@
           "reason": "Recourse concerns expenditure or return of property, not revocation of delegated divorce (ṭalāq, «فأمرك بيدك»)."
         },
         {
-          "encoder": "recourse_after_return",
-          "disposition": "not_established",
-          "reason": "Source decision: Ahmad finds the absent husband's delegation uncontrolled because he may retract. Encoder requires returned_by_gift and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
-        },
-        {
           "encoder": "many_over_noble",
           "disposition": "not_established",
           "reason": "Source decision: Ahmad finds the absent husband's delegation uncontrolled because he may retract. Encoder requires same_cost and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
+        },
+        {
+          "encoder": "recourse_after_return",
+          "disposition": "not_established",
+          "reason": "Source decision: Ahmad finds the absent husband's delegation uncontrolled because he may retract. Encoder requires returned_by_gift and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
           "encoder": "needed_item_is_surplus",
@@ -1348,9 +1348,9 @@
           "reason": "Source decision: Ahmad finds the absent husband's delegation uncontrolled because he may retract. Encoder requires needed and returns [False, True] (Ibn Rajab 130); the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with Lane A round 4 (PR #71), in place of disposal_before_qabd_debt (reviewed not_established), which this unit no longer receives."
         },
         {
-          "encoder": "umum_lafz",
+          "encoder": "disposal_before_qabd_debt",
           "disposition": "not_established",
-          "reason": "Source decision: Ahmad finds the absent husband's delegation uncontrolled because he may retract. Encoder requires in_occasion, general_wording and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
+          "reason": "Source decision: Ahmad finds the absent husband's delegation uncontrolled because he may retract. Encoder requires mubham, settled, debt_to_third and returns [False, True]; the source does not establish this mapping to that decision."
         }
       ],
       "classification": "missing_rule",
@@ -1711,9 +1711,9 @@
           "reason": "Source decision: Tadbir and kitaba may coexist with stated payment/death/one-third consequences; offspring take the mother's status. Encoder requires suspension_barred, occurrence_barred and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
-          "encoder": "cancel_on_existence_valid",
+          "encoder": "woman_half_of_man",
           "disposition": "not_established",
-          "reason": "Source decision: Tadbir and kitaba may coexist with stated payment/death/one-third consequences; offspring take the mother's status. Encoder requires legitimate_purpose and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
+          "reason": "Source decision: Tadbir and kitaba may coexist with stated payment/death/one-third consequences; offspring take the mother's status. Encoder requires woman_party, listed_halving_point and returns [False, True]; the source does not establish this mapping to that decision."
         }
       ],
       "classification": "missing_rule",
@@ -1948,19 +1948,19 @@
           "reason": "Source decision: Itikaf is recommended, valid without fasting, and both become binding through a vow. Encoder requires failure and returns ['asBegun', 'baseline']; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
-          "encoder": "generality",
-          "disposition": "not_established",
-          "reason": "Source decision: Itikaf is recommended, valid without fasting, and both become binding through a vow. Encoder requires form, context, ahd and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
-        },
-        {
           "encoder": "prohibited_worship",
           "disposition": "not_established",
           "reason": "Source decision: Itikaf is recommended, valid without fasting, and both become binding through a vow. Encoder requires target and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
-          "encoder": "umum_lafz",
+          "encoder": "generality",
           "disposition": "not_established",
-          "reason": "Source decision: Itikaf is recommended, valid without fasting, and both become binding through a vow. Encoder requires in_occasion, general_wording and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
+          "reason": "Source decision: Itikaf is recommended, valid without fasting, and both become binding through a vow. Encoder requires form, context, ahd and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
+        },
+        {
+          "encoder": "combining_forms",
+          "disposition": "not_established",
+          "reason": "Source decision: Itikaf is recommended, valid without fasting, and both become binding through a vow. Encoder requires substitutes and returns [False, True]; the source does not establish this mapping to that decision."
         }
       ],
       "classification": "missing_rule",
@@ -2071,9 +2071,9 @@
           "reason": "Source decision: Eating requires explicit permission or an indicating circumstance; accepting invitation has separate conditions. Encoder requires known_simultaneous, known_sequential and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
-          "encoder": "supervening_bar_extends_to_preliminaries",
+          "encoder": "eating_without_permission",
           "disposition": "not_established",
-          "reason": "Source decision: Eating requires explicit permission or an indicating circumstance; accepting invitation has separate conditions. Encoder requires weak_ownership, worship, bars_indulgence and returns [False, True]; the source does not establish this mapping to that decision."
+          "reason": "Source decision: Eating requires explicit permission or an indicating circumstance; accepting invitation has separate conditions. Encoder requires necessity, ward_wilaya, compensated_otherwise, unguarded_craved and returns [False, True]; the source does not establish this mapping to that decision."
         },
         {
           "encoder": "injury_state_measures",
@@ -2124,9 +2124,9 @@
           "reason": "Source decision: The matn states immunity, capacity, equivalence and nonparenthood conditions for qisas. Encoder requires lapsed and returns [1, 2]; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
-          "encoder": "ghulul_forfeiture",
+          "encoder": "grandchild_in_child_term",
           "disposition": "not_established",
-          "reason": "Source decision: The matn states immunity, capacity, equivalence and nonparenthood conditions for qisas. Encoder requires as_ghulul and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
+          "reason": "Source decision: The matn states immunity, capacity, equivalence and nonparenthood conditions for qisas. Encoder requires included_with_or_without_child, included_only_absent_child, intermediate_child_present and returns [False, True]; the source does not establish this mapping to that decision."
         }
       ],
       "classification": "missing_rule",
@@ -2167,9 +2167,9 @@
           "reason": "Source decision: The text distinguishes ignorance requiring instruction from an asserted absence of such ignorance. Encoder requires in_occasion, general_wording and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
         },
         {
-          "encoder": "doubt_in_condition",
+          "encoder": "four_kinds_marriage_prohibition",
           "disposition": "not_established",
-          "reason": "Source decision: The text distinguishes ignorance requiring instruction from an asserted absence of such ignorance. Encoder requires needs_firm_intention, ghalaba, asl_mustashab and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
+          "reason": "Source decision: The text distinguishes ignorance requiring instruction from an asserted absence of such ignorance. Encoder requires nasab_dabit, sihr_class, jam_rahm_mahram, rada_counterpart and returns [False, True]; the source does not establish this mapping to that decision."
         },
         {
           "encoder": "excused_error",
