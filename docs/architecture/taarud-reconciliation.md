@@ -52,7 +52,7 @@ Ibn Rajab and Ibn al-Laḥḥām often report a dispute without marking the madh
 
 **The evidence item.** Each item in a ledger entry's `evidence` adds one graded holder to one listed position. It records:
 - a `src:` locator and a verbatim excerpt;
-- the excerpt is checked letter by letter against the pinned witness (`test_evidence_is_verbatim`, skipped where the witness is not cached), and it stays within the witness's excerpt limit.
+- the excerpt is checked letter by letter, numerals included, against the pinned witness (`test_evidence_is_verbatim`, skipped where the witness is not cached), and it stays within the witness's excerpt limit.
 
 **How evidence is graded.** The grades are the same as above:
 

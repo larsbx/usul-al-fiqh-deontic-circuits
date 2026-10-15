@@ -47762,7 +47762,7 @@
     "corpus/takhrij/rajab_m8_tranche9_furu.json": "65d72a6ad2b11ccfee124b7f7ea6449a412ceb430322e62567395335abb6c8e0",
     "corpus/takhrij/report.json": "4055edaa2c239921f1511242cedda1506321b7b4299948cadb2cd53214263c57",
     "corpus/takhrij/sadi_furu.json": "bc25b22a9d6b49385c2c686d54b1ca223a8557f246d317c2d3cfb3814177f2bc",
-    "pipeline/usul_corpus/arabic.py": "556b27861a39442ab2313e375edb903a0e5ce41e4b57777c5c2eea91c824001e",
+    "pipeline/usul_corpus/arabic.py": "725f2e09830655200e82b6724b31877e294800139842b235af27ab8f8af29b01",
     "pipeline/usul_corpus/encoders/__init__.py": "4a133416eed03eb1397708ac65895cf7802cd91866ab49428cd493a39d35fa11",
     "pipeline/usul_corpus/encoders/concordance.py": "f527d8841df4052aa40649f00d6837888777e02fcbf804832411f581effc3c39",
     "pipeline/usul_corpus/encoders/mubashara.py": "2b332735630e96fb6350f2179444e220cc2e66eadb4d537e9b67d0ac5ec1b31f",
