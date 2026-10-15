@@ -47859,14 +47859,14 @@
     "corpus/records/openiti-abudawud-masailahmad-shamela21487.jsonl": "b8b7aa9706ef75b3e4cd485549aab8d98e7285b2349b0fd2fe6cf5e12686a3dd",
     "corpus/records/openiti-hajjawi-iqna-shamela7360.jsonl": "96e82b742cf79a91fe347c6a16a63f8fce0b0ae579bef3a69917e29f74fcc913",
     "corpus/records/openiti-hajjawi-zadmustaqni-shamela11230.jsonl": "5bf0d9527a7e69c62718c9696c6485d039b212648d63b58d118a21e96dea5003",
-    "corpus/records/openiti-hajjawi-zadmustaqni-shamela11230.masail.jsonl": "f1ca065d75a8a35d4721b5ebf0da45200df597b8ff79afb26c2f8e05f320e551",
+    "corpus/records/openiti-hajjawi-zadmustaqni-shamela11230.masail.jsonl": "669386586f36c7cfbb0374a50da61986ca84f29384a49e7739ce9dc4a4f40bc7",
     "corpus/records/openiti-harb-masail-shamela12527.jsonl": "7cc1af01e595c1c303f7f14aed38adbb5179c02448c475607160341a137cf97f",
     "corpus/records/openiti-ibnbaz-majmufatawa-shamela21537.jsonl": "2c7f9dd3af15d30a7b1d6ecf543def75f35c6d6f560b07532ac8147d250de660",
     "corpus/records/openiti-ibnbaz-nuraladarb-shamela107.jsonl": "176b35e4e3ac3a12de44bc265e1892721a54caf0ffb1e245b9a52b457bb02d53",
     "corpus/records/openiti-ibnnajjar-muntaha-sham19y13664.jsonl": "0998911e9bc3686d99cb5fe369e0159b57a74a0610c50408589abe891da4a14b",
     "corpus/records/openiti-ibnqudama-muqni-sham19y19233.jsonl": "24974124711e5856e82f539e41b43c45af3e80c8278187f5ea32e032ac4a3658",
     "corpus/records/openiti-ibnqudama-umda-shamela11315.jsonl": "8b797eafb616fc735be27486333f541d049463505653d1192a519acea65a12eb",
-    "corpus/records/openiti-ibnqudama-umda-shamela11315.masail.jsonl": "e7858bdbe54b12a23900c7f699301b2171a1c7491383c0c14c3d842637c36bc8",
+    "corpus/records/openiti-ibnqudama-umda-shamela11315.masail.jsonl": "6f2ad361d4702e649ac4e528919dc662300f2174699451ece64fd73dd923ea7b",
     "corpus/records/openiti-ibntaymiyya-fatawakubra-shamela9690.jsonl": "a58134e33f093c741db13fddd015839e97b1833990e977c72bd50c576f637717",
     "corpus/records/openiti-ibntaymiyya-jamimasail-shamela22797.jsonl": "a307cc4c1462cb1b3559d72172c3d0467f0da9e92dde2bf01141df4fba64aed5",
     "corpus/records/openiti-ibnuthaymin-majmufatawa-shamela12293.jsonl": "64509cd6a62449344f6425a09f3b3456d3ae596a57c78a78abd900e435e9cb10",
@@ -47926,8 +47926,8 @@
     "corpus/takhrij/rajab_m8_tranche8_furu.json": "3931bd2b0415488c1f33f27da28d1f164c8355cbd2029d084eac7d374e8f05ee",
     "corpus/takhrij/rajab_m8_tranche9_furu.json": "65d72a6ad2b11ccfee124b7f7ea6449a412ceb430322e62567395335abb6c8e0",
     "corpus/takhrij/report.json": "6148e2640094340c5e83595c005b4dda2d3fd0a3414eb6df57a17ee3c77dfd66",
-    "corpus/takhrij/sadi_furu.json": "bc25b22a9d6b49385c2c686d54b1ca223a8557f246d317c2d3cfb3814177f2bc",
-    "pipeline/usul_corpus/arabic.py": "556b27861a39442ab2313e375edb903a0e5ce41e4b57777c5c2eea91c824001e",
+    "corpus/takhrij/sadi_furu.json": "77416f91c9861af89ae974759ade551cec62894c774f14519438e902ed3c8c08",
+    "pipeline/usul_corpus/arabic.py": "4a527931c6f3abfb1ccf7f0f300890244192a94c1d34034d79b18a1b98e07b1b",
     "pipeline/usul_corpus/encoders/__init__.py": "4a133416eed03eb1397708ac65895cf7802cd91866ab49428cd493a39d35fa11",
     "pipeline/usul_corpus/encoders/concordance.py": "f527d8841df4052aa40649f00d6837888777e02fcbf804832411f581effc3c39",
     "pipeline/usul_corpus/encoders/mubashara.py": "2b332735630e96fb6350f2179444e220cc2e66eadb4d537e9b67d0ac5ec1b31f",
@@ -47958,7 +47958,7 @@
     "pipeline/usul_corpus/encoders/rajab_a9.py": "6189b8b1dcc9767188b840594fbf74a052a68a7d90aa54f726c21eb25a674747",
     "pipeline/usul_corpus/routing.py": "c2821c220047c7d8882df6cdc66e051a5b2b7b972a2c3b6303a940d355a95d2d",
     "pipeline/usul_corpus/signature_routing.py": "b7353e5f684590f0b727eab6e326b4a3ca2e6fb6129f861fdf97d475beab6e32",
-    "pipeline/usul_corpus/takhrij.py": "67b893d7ef3457f7392326b71405fda0a5b9219a2b9609c2b5f536dc6ecdf957"
+    "pipeline/usul_corpus/takhrij.py": "edc45ba41affc919ec15179bd48434d8cfa905dd961cd6584f7d344fd105ae63"
   },
   "questions_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
 }

@@ -26,8 +26,24 @@ jobs:
         run: |
           sudo apt-get update -q
           sudo apt-get install -y -q tesseract-ocr poppler-utils
+      - name: Restore pinned OCR bytes
+        id: ocr-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            .cache/corpus/archive-pdf1995-tess.*
+            .cache/corpus/archive-manzuma-tess.*
+          key: ${{ runner.os }}-istidlal-ocr-${{ hashFiles('corpus/lock.json', 'pipeline/usul_corpus/ocr.py', 'pipeline/usul_corpus/verses.py', 'pipeline/usul_corpus/numbers.py') }}
       - name: Verify required locked sources (fail closed)
         run: make source-verify-fetch
+      - name: Cache verified OCR bytes
+        if: steps.ocr-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            .cache/corpus/archive-pdf1995-tess.*
+            .cache/corpus/archive-manzuma-tess.*
+          key: ${{ steps.ocr-cache.outputs.cache-primary-key }}
       - name: Corpus tests with explicit exclusion report
         if: ${{ !cancelled() }}
         run: cd pipeline && python -m pytest -q -rs --junitxml=../.cache/corpus-tests.xml
