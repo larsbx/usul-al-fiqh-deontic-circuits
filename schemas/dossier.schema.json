@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/dossier.schema.json",
+  "title": "Dossier: each principle the bank adopted to close a takhrīj gap, with its texts, conditions, rationale and Lean constants",
+  "type": "object",
+  "required": ["subject", "status", "provenance", "entries"],
+  "additionalProperties": false,
+  "properties": {
+    "subject": {"type": "string"},
+    "status": {"const": "candidate"},
+    "provenance": {"type": "string", "minLength": 1},
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "terms", "statement", "refs", "conditions", "rationale", "lean", "conservative", "closes", "iq"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+          "title": {"type": "string", "minLength": 1},
+          "terms": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9_]+$"}, "minItems": 1},
+          "statement": {"$ref": "#/$defs/ref"},
+          "refs": {"type": "array", "items": {"$ref": "#/$defs/ref"}, "minItems": 1},
+          "conditions": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+          "rationale": {"type": "string", "minLength": 1},
+          "lean": {"type": "array", "items": {"type": "string", "pattern": "^Usul\\."}, "minItems": 1},
+          "conservative": {"type": ["string", "null"], "pattern": "^Usul\\."},
+          "closes": {"type": "array", "items": {"type": "string", "pattern": "^(fact|rule):[a-z_]+$"}, "minItems": 1},
+          "iq": {"type": "array", "items": {"type": "string", "pattern": "^IQ-[0-9]{2}$"}}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "ref": {
+      "type": "object",
+      "required": ["ref", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "ref": {"type": "string", "minLength": 1},
+        "excerpt_ar": {"type": "string", "minLength": 1, "maxLength": 400},
+        "note": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

@@ -1,0 +1,2375 @@
+{
+  "archive-manzuma-djvu": {
+    "work": "ibn_uthaymin.manzuma",
+    "found": 104,
+    "numbered": 104,
+    "max_number": 151,
+    "expected": 103,
+    "missing": [
+      3,
+      6,
+      9,
+      11,
+      15,
+      16,
+      21,
+      23,
+      26,
+      30,
+      42,
+      44,
+      45,
+      51,
+      54,
+      56,
+      57,
+      59,
+      61,
+      63,
+      65,
+      67,
+      69,
+      75,
+      76,
+      78,
+      81,
+      83,
+      86,
+      94,
+      99,
+      103,
+      104,
+      106,
+      108,
+      109,
+      114,
+      115,
+      119,
+      120,
+      124,
+      129,
+      131,
+      132,
+      135,
+      145,
+      150
+    ],
+    "duplicates": [],
+    "unparsed": 0,
+    "matches_expected": false
+  },
+  "archive-manzuma-tess": {
+    "work": "ibn_uthaymin.manzuma",
+    "found": 103,
+    "numbered": 103,
+    "max_number": 103,
+    "expected": 103,
+    "missing": [],
+    "duplicates": [],
+    "unparsed": 0,
+    "matches_expected": true,
+    "printed_number_agrees": 27,
+    "commentary_linked": 102,
+    "commentary_unlinked": [
+      60
+    ],
+    "commentary_min_similarity": 0.3
+  },
+  "archive-pdf1995": {
+    "work": "sadi.qawaid_jamia",
+    "found": 54,
+    "numbered": 55,
+    "max_number": 60,
+    "expected": 60,
+    "missing": [
+      2,
+      3,
+      12,
+      32,
+      56
+    ],
+    "duplicates": [],
+    "unparsed": 0,
+    "matches_expected": false
+  },
+  "archive-pdf1995#index": {
+    "work": "sadi.qawaid_jamia",
+    "found": 55,
+    "numbered": 55,
+    "max_number": 60,
+    "expected": 60,
+    "missing": [
+      11,
+      22,
+      23,
+      31,
+      50
+    ],
+    "duplicates": [],
+    "unparsed": 0,
+    "matches_expected": false
+  },
+  "archive-pdf1995-tess": {
+    "work": "sadi.qawaid_jamia",
+    "found": 54,
+    "numbered": 55,
+    "max_number": 60,
+    "expected": 60,
+    "missing": [
+      9,
+      12,
+      30,
+      31,
+      32
+    ],
+    "duplicates": [],
+    "unparsed": 0,
+    "matches_expected": false
+  },
+  "archive-pdf1995-tess#index": {
+    "work": "sadi.qawaid_jamia",
+    "found": 57,
+    "numbered": 57,
+    "max_number": 60,
+    "expected": 60,
+    "missing": [
+      22,
+      23,
+      33
+    ],
+    "duplicates": [],
+    "unparsed": 0,
+    "matches_expected": false
+  },
+  "archive-tariq-tess": {
+    "work": "sadi.tariq_wusul",
+    "found": 997,
+    "numbered": 997,
+    "max_number": 1015,
+    "expected": 1015,
+    "missing": [
+      54,
+      215,
+      227,
+      242,
+      257,
+      399,
+      402,
+      497,
+      511,
+      558,
+      600,
+      692,
+      849,
+      892,
+      902,
+      962,
+      967,
+      1006
+    ],
+    "duplicates": [],
+    "unparsed": 0,
+    "matches_expected": false
+  },
+  "consensus:ibn_lahham.qawaid_fawaid": {
+    "expected": 66,
+    "found_by_any": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66
+    ],
+    "missing_in_all": [],
+    "beyond_expected": {},
+    "found_by": {
+      "1": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "2": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "3": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "4": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "5": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "6": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "7": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "8": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "9": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "10": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "11": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "12": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "13": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "14": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "15": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "16": [
+        "openiti-lahham-shamela8526"
+      ],
+      "17": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "18": [
+        "openiti-lahham-shamela8526"
+      ],
+      "19": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "20": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "21": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "22": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "23": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "24": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "25": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "26": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "27": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "28": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "29": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "30": [
+        "openiti-lahham-shamela8526"
+      ],
+      "31": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "32": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "33": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "34": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "35": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "36": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "37": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "38": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "39": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "40": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "41": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "42": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "43": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "44": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "45": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "46": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "47": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "48": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "49": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "50": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "51": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "52": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "53": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "54": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "55": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "56": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "57": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "58": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "59": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "60": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "61": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "62": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "63": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "64": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "65": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ],
+      "66": [
+        "openiti-lahham-shamay34193",
+        "openiti-lahham-shamela8526"
+      ]
+    },
+    "complete": true
+  },
+  "consensus:ibn_uthaymin.manzuma": {
+    "expected": 103,
+    "found_by_any": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103
+    ],
+    "missing_in_all": [],
+    "beyond_expected": {
+      "105": [
+        "archive-manzuma-djvu"
+      ],
+      "107": [
+        "archive-manzuma-djvu"
+      ],
+      "110": [
+        "archive-manzuma-djvu"
+      ],
+      "111": [
+        "archive-manzuma-djvu"
+      ],
+      "112": [
+        "archive-manzuma-djvu"
+      ],
+      "113": [
+        "archive-manzuma-djvu"
+      ],
+      "116": [
+        "archive-manzuma-djvu"
+      ],
+      "117": [
+        "archive-manzuma-djvu"
+      ],
+      "118": [
+        "archive-manzuma-djvu"
+      ],
+      "121": [
+        "archive-manzuma-djvu"
+      ],
+      "122": [
+        "archive-manzuma-djvu"
+      ],
+      "123": [
+        "archive-manzuma-djvu"
+      ],
+      "125": [
+        "archive-manzuma-djvu"
+      ],
+      "126": [
+        "archive-manzuma-djvu"
+      ],
+      "127": [
+        "archive-manzuma-djvu"
+      ],
+      "128": [
+        "archive-manzuma-djvu"
+      ],
+      "130": [
+        "archive-manzuma-djvu"
+      ],
+      "133": [
+        "archive-manzuma-djvu"
+      ],
+      "134": [
+        "archive-manzuma-djvu"
+      ],
+      "136": [
+        "archive-manzuma-djvu"
+      ],
+      "137": [
+        "archive-manzuma-djvu"
+      ],
+      "138": [
+        "archive-manzuma-djvu"
+      ],
+      "139": [
+        "archive-manzuma-djvu"
+      ],
+      "140": [
+        "archive-manzuma-djvu"
+      ],
+      "141": [
+        "archive-manzuma-djvu"
+      ],
+      "142": [
+        "archive-manzuma-djvu"
+      ],
+      "143": [
+        "archive-manzuma-djvu"
+      ],
+      "144": [
+        "archive-manzuma-djvu"
+      ],
+      "146": [
+        "archive-manzuma-djvu"
+      ],
+      "147": [
+        "archive-manzuma-djvu"
+      ],
+      "148": [
+        "archive-manzuma-djvu"
+      ],
+      "149": [
+        "archive-manzuma-djvu"
+      ],
+      "151": [
+        "archive-manzuma-djvu"
+      ]
+    },
+    "found_by": {
+      "1": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "2": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "3": [
+        "archive-manzuma-tess"
+      ],
+      "4": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "5": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "6": [
+        "archive-manzuma-tess"
+      ],
+      "7": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "8": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "9": [
+        "archive-manzuma-tess"
+      ],
+      "10": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "11": [
+        "archive-manzuma-tess"
+      ],
+      "12": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "13": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "14": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "15": [
+        "archive-manzuma-tess"
+      ],
+      "16": [
+        "archive-manzuma-tess"
+      ],
+      "17": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "18": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "19": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "20": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "21": [
+        "archive-manzuma-tess"
+      ],
+      "22": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "23": [
+        "archive-manzuma-tess"
+      ],
+      "24": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "25": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "26": [
+        "archive-manzuma-tess"
+      ],
+      "27": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "28": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "29": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "30": [
+        "archive-manzuma-tess"
+      ],
+      "31": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "32": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "33": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "34": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "35": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "36": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "37": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "38": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "39": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "40": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "41": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "42": [
+        "archive-manzuma-tess"
+      ],
+      "43": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "44": [
+        "archive-manzuma-tess"
+      ],
+      "45": [
+        "archive-manzuma-tess"
+      ],
+      "46": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "47": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "48": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "49": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "50": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "51": [
+        "archive-manzuma-tess"
+      ],
+      "52": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "53": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "54": [
+        "archive-manzuma-tess"
+      ],
+      "55": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "56": [
+        "archive-manzuma-tess"
+      ],
+      "57": [
+        "archive-manzuma-tess"
+      ],
+      "58": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "59": [
+        "archive-manzuma-tess"
+      ],
+      "60": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "61": [
+        "archive-manzuma-tess"
+      ],
+      "62": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "63": [
+        "archive-manzuma-tess"
+      ],
+      "64": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "65": [
+        "archive-manzuma-tess"
+      ],
+      "66": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "67": [
+        "archive-manzuma-tess"
+      ],
+      "68": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "69": [
+        "archive-manzuma-tess"
+      ],
+      "70": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "71": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "72": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "73": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "74": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "75": [
+        "archive-manzuma-tess"
+      ],
+      "76": [
+        "archive-manzuma-tess"
+      ],
+      "77": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "78": [
+        "archive-manzuma-tess"
+      ],
+      "79": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "80": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "81": [
+        "archive-manzuma-tess"
+      ],
+      "82": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "83": [
+        "archive-manzuma-tess"
+      ],
+      "84": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "85": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "86": [
+        "archive-manzuma-tess"
+      ],
+      "87": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "88": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "89": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "90": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "91": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "92": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "93": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "94": [
+        "archive-manzuma-tess"
+      ],
+      "95": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "96": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "97": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "98": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "99": [
+        "archive-manzuma-tess"
+      ],
+      "100": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "101": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "102": [
+        "archive-manzuma-djvu",
+        "archive-manzuma-tess"
+      ],
+      "103": [
+        "archive-manzuma-tess"
+      ]
+    },
+    "complete": true
+  },
+  "consensus:sadi.qawaid_jamia": {
+    "expected": 60,
+    "found_by_any": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "missing_in_all": [],
+    "beyond_expected": {},
+    "found_by": {
+      "1": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "2": [
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "3": [
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "4": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "5": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "6": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "7": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "8": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "9": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess#index"
+      ],
+      "10": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "11": [
+        "archive-pdf1995",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "12": [
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess#index"
+      ],
+      "13": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "14": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "15": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "16": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "17": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "18": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "19": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "20": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "21": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "22": [
+        "archive-pdf1995",
+        "archive-pdf1995-tess"
+      ],
+      "23": [
+        "archive-pdf1995",
+        "archive-pdf1995-tess"
+      ],
+      "24": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "25": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "26": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "27": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "28": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "29": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "30": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess#index"
+      ],
+      "31": [
+        "archive-pdf1995",
+        "archive-pdf1995-tess#index"
+      ],
+      "32": [
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess#index"
+      ],
+      "33": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess"
+      ],
+      "34": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "35": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "36": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "37": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "38": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "39": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "40": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "41": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "42": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "43": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "44": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "45": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "46": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "47": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "48": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "49": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "50": [
+        "archive-pdf1995",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "51": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "52": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "53": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "54": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "55": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "56": [
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "57": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "58": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "59": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ],
+      "60": [
+        "archive-pdf1995",
+        "archive-pdf1995#index",
+        "archive-pdf1995-tess",
+        "archive-pdf1995-tess#index"
+      ]
+    },
+    "complete": true
+  },
+  "openiti-abudawud-masailahmad-shamela21487": {
+    "work": "abu_dawud.masail_ahmad",
+    "found": 1585
+  },
+  "openiti-hajjawi-iqna-shamela7360": {
+    "work": "hajjawi.iqna",
+    "found": 894,
+    "ranks": {
+      "bab": 125,
+      "fasl": 742,
+      "kitab": 27
+    }
+  },
+  "openiti-hajjawi-zadmustaqni-shamela11230": {
+    "work": "hajjawi.zad_mustaqni",
+    "found": 286,
+    "ranks": {
+      "bab": 129,
+      "fasl": 130,
+      "kitab": 27
+    }
+  },
+  "openiti-harb-masail-shamela12527": {
+    "work": "harb.masail",
+    "found": 540
+  },
+  "openiti-ibnbaz-majmufatawa-shamela21537": {
+    "work": "ibn_baz.majmu_fatawa",
+    "found": 4597,
+    "answered": 4520,
+    "numbering": {
+      "numbered": 971,
+      "first": 1,
+      "last": 277,
+      "duplicates": 713,
+      "missing": [
+        53,
+        121,
+        131,
+        144,
+        146,
+        158,
+        193,
+        196,
+        199,
+        200,
+        221,
+        228,
+        230,
+        232,
+        236,
+        243,
+        246,
+        248,
+        266
+      ]
+    }
+  },
+  "openiti-ibnbaz-nuraladarb-shamela107": {
+    "work": "ibn_baz.nur_ala_darb",
+    "found": 7607,
+    "answered": 7582,
+    "numbering": {
+      "numbered": 3,
+      "first": 1,
+      "last": 3,
+      "duplicates": 0,
+      "missing": []
+    }
+  },
+  "openiti-ibnnajjar-muntaha-sham19y13664": {
+    "work": "ibn_najjar.muntaha",
+    "found": 383,
+    "ranks": {
+      "bab": 151,
+      "fasl": 195,
+      "kitab": 37
+    }
+  },
+  "openiti-ibnqudama-muqni-sham19y19233": {
+    "work": "ibn_qudama.muqni",
+    "found": 631,
+    "ranks": {
+      "bab": 151,
+      "fasl": 444,
+      "kitab": 36
+    }
+  },
+  "openiti-ibnqudama-umda-shamela11315": {
+    "work": "ibn_qudama.umda",
+    "found": 207,
+    "ranks": {
+      "bab": 136,
+      "fasl": 46,
+      "kitab": 25
+    }
+  },
+  "openiti-ibntaymiyya-fatawakubra-shamela9690": {
+    "work": "ibn_taymiyya.fatawa_kubra",
+    "found": 971,
+    "answered": 776
+  },
+  "openiti-ibntaymiyya-jamimasail-shamela22797": {
+    "work": "ibn_taymiyya.jami_masail",
+    "found": 122,
+    "answered": 89
+  },
+  "openiti-ibnuthaymin-majmufatawa-shamela12293": {
+    "work": "ibn_uthaymin.majmu_fatawa",
+    "found": 1543,
+    "answered": 1543
+  },
+  "openiti-ibnuthaymin-nuraladarb-shamela2300": {
+    "work": "ibn_uthaymin.nur_ala_darb",
+    "found": 7448,
+    "answered": 7428
+  },
+  "openiti-kawsaj-masailahmad-shamela3125": {
+    "work": "kawsaj.masail_ahmad",
+    "found": 3575,
+    "numbering": {
+      "numbered": 3575,
+      "first": 1,
+      "last": 3609,
+      "duplicates": 6,
+      "missing": [
+        148,
+        218,
+        315,
+        316,
+        338,
+        396,
+        402,
+        484,
+        551,
+        606,
+        610,
+        617,
+        629,
+        637,
+        642,
+        655,
+        672,
+        744,
+        745,
+        751,
+        967,
+        968,
+        1157,
+        1158,
+        1462,
+        1470,
+        1471,
+        1846,
+        1865,
+        1866,
+        1867,
+        1872,
+        2122,
+        2192,
+        2212,
+        2660,
+        2700,
+        2822,
+        2856,
+        3378
+      ]
+    }
+  },
+  "openiti-lahham-shamay34193": {
+    "work": "ibn_lahham.qawaid_fawaid",
+    "found": 64,
+    "numbered": 63,
+    "max_number": 66,
+    "expected": 66,
+    "missing": [
+      16,
+      18,
+      30
+    ],
+    "duplicates": [],
+    "unparsed": 1,
+    "matches_expected": false
+  },
+  "openiti-lahham-shamela8526": {
+    "work": "ibn_lahham.qawaid_fawaid",
+    "found": 66,
+    "numbered": 66,
+    "max_number": 66,
+    "expected": 66,
+    "missing": [],
+    "duplicates": [],
+    "unparsed": 0,
+    "matches_expected": true
+  },
+  "openiti-lajnadaima-fatawa-shamela8381": {
+    "work": "lajna_daima.fatawa",
+    "found": 10437,
+    "answered": 10124,
+    "numbering": {
+      "numbered": 6350,
+      "first": 1,
+      "last": 42,
+      "duplicates": 6312,
+      "missing": [
+        35,
+        36,
+        37,
+        41
+      ]
+    }
+  },
+  "openiti-majd-muharrar-shamela7460": {
+    "work": "majd.muharrar",
+    "found": 212,
+    "ranks": {
+      "bab": 174,
+      "fasl": 14,
+      "kitab": 24
+    }
+  },
+  "openiti-majmufatawa-shamela7289": {
+    "work": "ibn_taymiyya.majmu_fatawa",
+    "found": 1847,
+    "answered": 1825
+  },
+  "openiti-muhammadibnibrahim-fatawa-shamela8476": {
+    "work": "muhammad_ibn_ibrahim.fatawa",
+    "found": 3974,
+    "numbering": {
+      "numbered": 3974,
+      "first": 1,
+      "last": 4575,
+      "duplicates": 0,
+      "missing": [
+        37,
+        57,
+        73,
+        74,
+        101,
+        172,
+        320,
+        422,
+        554,
+        675,
+        684,
+        694,
+        717,
+        730,
+        733,
+        739,
+        745,
+        776,
+        777,
+        780,
+        799,
+        816,
+        817,
+        829,
+        838,
+        870,
+        882,
+        886,
+        898,
+        922,
+        943,
+        957,
+        958,
+        993,
+        996,
+        997,
+        998,
+        1003,
+        1065,
+        1080,
+        1112,
+        1113,
+        1119,
+        1180,
+        1212,
+        1246,
+        1265,
+        1275,
+        1292,
+        1295,
+        1344,
+        1364,
+        1366,
+        1367,
+        1376,
+        1425,
+        1441,
+        1452,
+        1466,
+        1479,
+        1489,
+        1504,
+        1508,
+        1509,
+        1511,
+        1514,
+        1532,
+        1565,
+        1567,
+        1594,
+        1602,
+        1615,
+        1642,
+        1698,
+        1709,
+        1714,
+        1734,
+        1744,
+        1751,
+        1753,
+        1796,
+        1823,
+        1850,
+        1851,
+        1854,
+        1871,
+        1876,
+        1879,
+        1897,
+        1935,
+        1938,
+        1939,
+        1959,
+        1960,
+        1961,
+        1983,
+        1984,
+        2010,
+        2013,
+        2051,
+        2098,
+        2108,
+        2130,
+        2131,
+        2132,
+        2133,
+        2134,
+        2142,
+        2153,
+        2165,
+        2180,
+        2181,
+        2205,
+        2207,
+        2233,
+        2234,
+        2236,
+        2238,
+        2247,
+        2277,
+        2283,
+        2284,
+        2304,
+        2336,
+        2340,
+        2350,
+        2416,
+        2423,
+        2433,
+        2448,
+        2453,
+        2459,
+        2462,
+        2488,
+        2516,
+        2517,
+        2520,
+        2521,
+        2551,
+        2552,
+        2554,
+        2556,
+        2594,
+        2598,
+        2614,
+        2620,
+        2621,
+        2622,
+        2623,
+        2624,
+        2625,
+        2626,
+        2627,
+        2628,
+        2629,
+        2630,
+        2631,
+        2632,
+        2633,
+        2634,
+        2635,
+        2636,
+        2637,
+        2638,
+        2639,
+        2640,
+        2641,
+        2642,
+        2643,
+        2644,
+        2645,
+        2646,
+        2647,
+        2648,
+        2649,
+        2650,
+        2651,
+        2652,
+        2653,
+        2654,
+        2655,
+        2656,
+        2657,
+        2658,
+        2659,
+        2660,
+        2661,
+        2662,
+        2663,
+        2664,
+        2665,
+        2666,
+        2667,
+        2668,
+        2669,
+        2670,
+        2671,
+        2672,
+        2673,
+        2674,
+        2675,
+        2676,
+        2677,
+        2678,
+        2679,
+        2680,
+        2681,
+        2682,
+        2683,
+        2684,
+        2685,
+        2686,
+        2687,
+        2688,
+        2689,
+        2690,
+        2691,
+        2692,
+        2693,
+        2694,
+        2695,
+        2696,
+        2697,
+        2698,
+        2699,
+        2700,
+        2701,
+        2702,
+        2703,
+        2704,
+        2705,
+        2706,
+        2707,
+        2708,
+        2709,
+        2710,
+        2711,
+        2712,
+        2713,
+        2714,
+        2715,
+        2716,
+        2717,
+        2718,
+        2719,
+        2720,
+        2721,
+        2722,
+        2723,
+        2724,
+        2725,
+        2726,
+        2727,
+        2728,
+        2729,
+        2730,
+        2731,
+        2732,
+        2733,
+        2734,
+        2735,
+        2736,
+        2737,
+        2738,
+        2739,
+        2740,
+        2741,
+        2742,
+        2743,
+        2744,
+        2745,
+        2746,
+        2747,
+        2748,
+        2749,
+        2750,
+        2751,
+        2752,
+        2753,
+        2754,
+        2755,
+        2756,
+        2757,
+        2758,
+        2759,
+        2760,
+        2761,
+        2762,
+        2763,
+        2764,
+        2765,
+        2766,
+        2767,
+        2768,
+        2769,
+        2770,
+        2771,
+        2772,
+        2773,
+        2774,
+        2775,
+        2776,
+        2777,
+        2778,
+        2779,
+        2780,
+        2781,
+        2782,
+        2783,
+        2784,
+        2785,
+        2786,
+        2787,
+        2788,
+        2789,
+        2790,
+        2791,
+        2792,
+        2793,
+        2794,
+        2795,
+        2796,
+        2797,
+        2798,
+        2799,
+        2800,
+        2801,
+        2802,
+        2803,
+        2804,
+        2805,
+        2806,
+        2807,
+        2808,
+        2809,
+        2810,
+        2811,
+        2812,
+        2813,
+        2814,
+        2815,
+        2816,
+        2817,
+        2818,
+        2819,
+        2820,
+        2821,
+        2822,
+        2823,
+        2824,
+        2825,
+        2826,
+        2827,
+        2828,
+        2829,
+        2830,
+        2831,
+        2832,
+        2833,
+        2834,
+        2835,
+        2836,
+        2837,
+        2838,
+        2839,
+        2840,
+        2841,
+        2842,
+        2843,
+        2844,
+        2845,
+        2846,
+        2847,
+        2848,
+        2849,
+        2850,
+        2851,
+        2852,
+        2853,
+        2854,
+        2855,
+        2856,
+        2857,
+        2858,
+        2859,
+        2860,
+        2861,
+        2862,
+        2863,
+        2864,
+        2865,
+        2867,
+        2868,
+        2869,
+        2870,
+        2871,
+        2872,
+        2873,
+        2874,
+        2875,
+        2876,
+        2877,
+        2878,
+        2879,
+        2880,
+        2881,
+        2882,
+        2883,
+        2884,
+        2885,
+        2886,
+        2887,
+        2888,
+        2889,
+        2890,
+        2891,
+        2892,
+        2893,
+        2894,
+        2895,
+        2896,
+        2897,
+        2898,
+        2899,
+        2900,
+        2901,
+        2902,
+        2903,
+        2904,
+        2905,
+        2906,
+        2907,
+        2908,
+        2909,
+        2910,
+        2911,
+        2912,
+        2913,
+        2914,
+        2915,
+        2916,
+        2917,
+        2918,
+        2919,
+        2920,
+        2921,
+        2922,
+        2923,
+        2924,
+        2925,
+        2926,
+        2927,
+        2928,
+        2929,
+        2930,
+        2931,
+        2932,
+        2933,
+        2934,
+        2935,
+        2936,
+        2937,
+        2938,
+        2939,
+        2940,
+        2941,
+        2942,
+        2943,
+        2944,
+        2945,
+        2946,
+        2947,
+        2948,
+        2949,
+        2950,
+        2951,
+        2952,
+        2953,
+        2954,
+        2955,
+        2956,
+        2957,
+        2958,
+        2959,
+        2960,
+        2961,
+        2962,
+        3021,
+        3088,
+        3152,
+        3224,
+        3464,
+        3465,
+        3472,
+        3581,
+        3582,
+        3614,
+        3615,
+        3616,
+        3617,
+        3618,
+        3619,
+        3620,
+        3621,
+        3622,
+        3623,
+        3624,
+        3625,
+        3626,
+        3627,
+        3628,
+        3629,
+        3630,
+        3631,
+        3632,
+        3633,
+        3634,
+        3635,
+        3636,
+        3637,
+        3638,
+        3639,
+        3640,
+        3648,
+        3668,
+        3714,
+        3721,
+        3762,
+        3817,
+        3818,
+        3831,
+        3836,
+        3840,
+        3848,
+        3852,
+        3856,
+        3869,
+        3873,
+        3874,
+        3875,
+        3876,
+        3908,
+        3932,
+        3963,
+        3978,
+        3982,
+        3999,
+        4015,
+        4020,
+        4032,
+        4061,
+        4063,
+        4064,
+        4066,
+        4067,
+        4068,
+        4069,
+        4070,
+        4071,
+        4072,
+        4073,
+        4074,
+        4101,
+        4116,
+        4119,
+        4126,
+        4129,
+        4141,
+        4166,
+        4172,
+        4192,
+        4194,
+        4200,
+        4207,
+        4208,
+        4210,
+        4213,
+        4223,
+        4224,
+        4225,
+        4228,
+        4233,
+        4246,
+        4247,
+        4261,
+        4262,
+        4264,
+        4270,
+        4272,
+        4274,
+        4278,
+        4307,
+        4366,
+        4391,
+        4460,
+        4481,
+        4486,
+        4501,
+        4518,
+        4532,
+        4566
+      ]
+    }
+  },
+  "openiti-rajab-shamela21730": {
+    "work": "ibn_rajab.taqrir_qawaid",
+    "found": 160,
+    "numbered": 160,
+    "max_number": 160,
+    "expected": 160,
+    "missing": [],
+    "duplicates": [],
+    "unparsed": 0,
+    "matches_expected": true
+  },
+  "openiti-ulamanajd-durarsaniyya-shamela3055": {
+    "work": "ulama_najd.durar_saniyya",
+    "found": 1651,
+    "answered": 1629
+  },
+  "shamela-9942": {
+    "work": "ibn_uthaymin.usul",
+    "found": 26
+  }
+}

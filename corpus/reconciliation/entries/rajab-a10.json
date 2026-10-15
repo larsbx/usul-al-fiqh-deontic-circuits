@@ -1,0 +1,87 @@
+{
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f011",
+   "grades": [
+    "ashab",
+    "ashab"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "al-Qāḍī in al-Mujarrad permits the first sister once the second has completed istibrāʾ (the reading: the bar falls on the amount by which the combination came about). Ibn Rajab prefers refraining from both, and al-Inṣāf makes that the madhhab, with al-Iqnāʿ, al-Muntahā and Kashshāf. Kashshāf gives the farq that the second has become firāsh. Against the reading.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v08:p126",
+     "excerpt_ar": "لزمه أن يمسك عنهما حتى يحرم إحداهما. على الصحيح من المذهب. قدمه في",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Having had the second sister against the rule, he must refrain from both until he makes one forbidden, «على الصحيح من المذهب»."
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p184",
+     "excerpt_ar": "حد فيه ولزمه أن يمسك عنهما حتى يحرم إحداهما",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "Stated decisively after intercourse with both, one after the other."
+    },
+    {
+     "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p089",
+     "excerpt_ar": "أو بيع بشرط خيار له فلو خالف ووطئ لزمه أن يمسك عنهما حتى يحرم إحداهما",
+     "position": 1,
+     "grade": "jazm",
+     "who": "Ibn al-Najjār, al-Muntahā",
+     "note": "Stated decisively: if he contravenes and has the second, he refrains from both."
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p078",
+     "excerpt_ar": "حتى يحرم إحداهما ويشتريها) لأن الثانية صارت فراشا له يلحقه نسب ولدها",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Refrain from both, because the second has become his firāsh, which forbids her sister as initial intercourse would."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f018",
+   "grades": [
+    "takhrij",
+    "takhrij"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Two iḥtimālāt of al-Majd, neither marked by Ibn Rajab, and no later treatment found. Tawaqquf. Integrator: an iḥtimāl grades takhrīj, not a bare wajh; still a tie.",
+   "evidence": []
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f000",
+   "grades": [
+    "nass",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Two riwāyas on the diya when the one claimed against in qasāma declines the oaths. al-Inṣāf and Taṣḥīḥ al-Furūʿ make it owed. Against the reading, which does not establish one alternative by a proof that does not establish the cause.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v10:p149",
+     "excerpt_ar": "والمستوعب، والخلاصة، والهادي، والفروع، والزركشي إحداهما: تلزمهم الدية.",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "On the defendants' declining the qasāma oaths: «إحداهما: تلزمهم الدية», followed by «وهو المذهب»."
+    },
+    {
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v10:p024",
+     "excerpt_ar": "تلزمه الدية, وهو الصحيح, قال المصنف هنا: وهو أظهر, واختاره",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+     "note": "The diya is owed by the one who declines, «وهو الصحيح»."
+    }
+   ]
+  }
+ ]
+}

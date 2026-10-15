@@ -1,0 +1,8 @@
+.cache/
+__pycache__/
+.pytest_cache/
+formal/lean/.lake/
+*.class
+states/
+*_TTrace_*
+corpus/lock.json.lk

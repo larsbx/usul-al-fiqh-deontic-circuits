@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/glossary.schema.json",
+  "title": "Glossary: the uṣūl terms the formalisation uses, each defined from the pinned sources and linked to its Lean constants",
+  "type": "object",
+  "required": [
+    "status",
+    "provenance",
+    "terms"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "status": {
+      "const": "candidate"
+    },
+    "provenance": {
+      "type": "string",
+      "minLength": 1
+    },
+    "terms": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "key",
+          "ar",
+          "tr",
+          "gloss",
+          "definition",
+          "refs"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "key": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "ar": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tr": {
+            "type": "string",
+            "minLength": 1
+          },
+          "gloss": {
+            "type": "string",
+            "minLength": 1
+          },
+          "definition": {
+            "type": "string",
+            "minLength": 1
+          },
+          "forms": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "description": "derived forms (Arabic or transliterated) that name the term in a field a term guard reads, e.g. «بطل» for al-bāṭil"
+          },
+          "sense": {
+            "type": "string",
+            "minLength": 1,
+            "description": "which sense of a polyseme this entry is; required of every term sharing its `ar` with another (PR-03)"
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "related": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9_]+$"
+            }
+          },
+          "lean": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^(Usul|Hadith)\\."
+            }
+          },
+          "refs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/ref"
+            },
+            "minItems": 1
+          },
+          "nusus": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^(Q[0-9]{3}:[0-9]{3}[a-z]?|H-[a-z0-9-]+|A-[a-z0-9-]+)$"
+            },
+            "description": "ids in corpus/nusus/foundation.json: the āyāt, ḥadīth and athar the term's rulings rest on"
+          },
+          "furuq": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^F[0-9]{2,3}$"
+            },
+            "description": "al-Saʿdī's furūq items that state the term's division in his words"
+          },
+          "rulings": {
+            "type": "object",
+            "additionalProperties": {
+              "type": [
+                "boolean",
+                "string"
+              ]
+            },
+            "description": "the term's rulings, each checked against `lean_value` in the generated UsulTest/NususTable.lean"
+          },
+          "lean_value": {
+            "type": "string",
+            "pattern": "^Usul\\.",
+            "description": "the Lean value the term names"
+          },
+          "distinct_from": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9_]+$"
+            },
+            "description": "terms whose transliteration folds to the same ASCII (homographs), or that an English gloss conflates with this one"
+          }
+        },
+        "dependentRequired": {
+          "rulings": [
+            "lean_value",
+            "nusus"
+          ]
+        }
+      }
+    }
+  },
+  "$defs": {
+    "ref": {
+      "type": "object",
+      "required": [
+        "ref",
+        "note"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "excerpt_ar": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 400
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

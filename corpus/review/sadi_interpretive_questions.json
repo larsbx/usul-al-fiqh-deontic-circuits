@@ -1,0 +1,1241 @@
+{
+ "register": "sadi.interpretive_questions",
+ "status": "candidate",
+ "provenance": "Surfaced while proving al-Saʿdī's readings to be instances of Usul.Schema. Each question names an interpretive commitment, the alternatives, the typed pins that fail if it changes, established answers cited from the pinned Ḥanbalī corpus (by record id or source locator), and analogies (internal ones licensed by a shared schema, illustrative ones non-evidential). LLM-drafted; awaiting human review (Review.tla).",
+ "authority": {
+  "gate": "SHARIAH-AUTHORITY",
+  "class": "C",
+  "basis": [
+   "halaqa shared/STUB-CLASSIFICATION.md: usul-k/ is class C, reserved to Sharīʿah authority",
+   "ICM-H §17: research agents may classify, compare, identify uncertainty and surface questions",
+   "ICM-H §32: analytical preparation never satisfies a SHARIAH-AUTHORITY gate",
+   "docs/architecture/deontic-circuits-harness.md: the LLM proposes; only human review admits"
+  ],
+  "this_register_may": [
+   "name the commitment an encoding makes",
+   "list alternatives found in the tradition",
+   "cite an established answer from a pinned source, with its relation to the commitment",
+   "offer analogies: internal ones licensed by a shared schema (qiyās), illustrative ones marked non-evidential",
+   "say which formal pins change if the commitment changes",
+   "suggest the usul-k home a ruling would eventually live in"
+  ],
+  "this_register_may_not": [
+   "adopt an answer or rank the alternatives",
+   "treat an analogy as outranking a cited text",
+   "write to halaqa shared/usul-k/",
+   "promote a reading past candidate"
+  ],
+  "decisions": "Recorded only on a human reviewer's instruction (Review.tla: accepted ⇒ reviewedBy = human), quoted verbatim, with the date and the Lean constants that now carry the reading. A decision fixes this repository's encoding E; it does not write to halaqa shared/usul-k/, whose class-C entry still needs the SHARIAH-AUTHORITY gate there."
+ },
+ "process": {
+  "note": "The review applies the project's principles to itself where this cannot deadlock (Usul.Process). Status is computed: referenced if an established answer is cited, else analogized if an internal analogy is offered, else open. Stratification is checked at the level of Lean constants: the process relies only on the undisputed core of each rule it uses (relies_on), and no live question may pin one of those constants.",
+  "uses": [
+   8,
+   11,
+   58
+  ],
+  "uses_why": {
+   "8": "adoption is a gate (SHARIAH-AUTHORITY), never a status here",
+   "11": "status persists until evidence on file changes it",
+   "58": "internal analogies are qiyās through a shared schema; manʿ (a missing tag) rejects one"
+  },
+  "avoids": {
+   "33": "IQ-10 is open on Q33's tie-break; choosing among cited answers by 'best' would wait on its own question"
+  },
+  "lean": [
+   "Usul.Process.status",
+   "Usul.Process.analogy_never_outranks_text",
+   "Usul.Process.order_is_resort",
+   "Usul.Process.never_adopts",
+   "Usul.Process.Licensed",
+   "Usul.Process.man",
+   "Usul.Process.Stratified",
+   "Usul.Process.no_deadlock_of_stratified",
+   "Usul.Process.no_cycle_of_rank"
+  ],
+  "relies_on": {
+   "8": [
+    "Usul.Sadi.Gate.Holds",
+    "Usul.Process.never_adopts"
+   ],
+   "11": [
+    "Usul.Schema.yaqin_doubts_inert",
+    "Usul.Process.status"
+   ],
+   "58": [
+    "Usul.Schema.Factors.qiyas",
+    "Usul.Process.Licensed",
+    "Usul.Process.man",
+    "Usul.Qiyas.man_defeats"
+   ]
+  }
+ },
+ "questions": [
+  {
+   "id": "IQ-01",
+   "rules": [
+    10
+   ],
+   "schemata": [
+    "S6-presumption"
+   ],
+   "pins": [
+    "Usul.Muamalat.q10_from_presumption"
+   ],
+   "commitment": "The operative presumption for a claim is barāʾat al-dhimma (no liability), so the denier is whoever agrees with it and the claimant whoever departs from it.",
+   "alternatives": [
+    "The apparent state (al-ẓāhir) as the presumption, which can place the claimant role on the party asserting freedom from liability.",
+    "A presumption fixed per bāb rather than one for all claims."
+   ],
+   "if_changed": "Change the presumption argument of burdenOf in q10_from_presumption; the S6 pin for Q10 fails until the new presumption is stated.",
+   "route": "halaqa:shared/usul-k/evidence-order.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159",
+     "relation": "refines",
+     "note": "When the presumption (aṣl) and the apparent state (ẓāhir) conflict: an apparent state that is a sharʿī proof (testimony, report) prevails without dispute; one resting on custom, habit, indications or preponderant belief sometimes yields, sometimes prevails, and sometimes the madhhab is divided. A single presumption covers one of these classes only."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 52,
+     "schema": "S6-presumption",
+     "transported": "Usul.Schema.burden_after_update",
+     "note": "As in Q52, an indication strong enough to displace the presumption moves the burden; IQ-01 asks which presumption is displaced."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "civil law",
+     "note": "actori incumbit probatio: the burden lies on whoever asserts a change from the status quo, which is S6 with the status quo as presumption."
+    }
+   ]
+  },
+  {
+   "id": "IQ-02",
+   "rules": [
+    26,
+    43
+   ],
+   "schemata": [
+    "S6-presumption"
+   ],
+   "pins": [
+    "Usul.Muamalat.returnPresumption",
+    "Usul.Muamalat.q26_q43_from_presumption"
+   ],
+   "commitment": "When sense or custom belies a trustee, the presumption that he returned the thing is displaced entirely, and he must bring evidence.",
+   "alternatives": [
+    "Being belied only weakens the presumption: the oath is still accepted, but with a stronger form or added conditions.",
+    "Only sense (ḥiss) displaces it; custom (ʿurf) does not."
+   ],
+   "if_changed": "returnPresumption would need a graded result (a Qawaid.Held with a Grade) instead of a Bool, and burden_after_update (Q52) would decide; the Q26/Q43 pins fail.",
+   "route": "halaqa:shared/usul-k/evidence-order.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q044",
+     "relation": "refines",
+     "note": "For loss, every trustee's word is accepted, since trust means no liability. For return, trustees fall into three classes; one who took the property for the owner's benefit alone is believed (the madhhab), but a narration through Abū Ṭālib and Ibn Manṣūr holds that a deposit proved by evidence is not discharged by a bare claim of return."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159",
+     "relation": "bears-on",
+     "note": "Displacement by custom or indication is the second class of aṣl/ẓāhir conflict, where the madhhab goes both ways."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 10,
+     "schema": "S6-presumption",
+     "transported": "Usul.Schema.burden_factors",
+     "note": "As for claimant and denier, the trustee's role is derived from whether his claim agrees with the presumption."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "common law of bailment",
+     "note": "A bailee for the bailor's sole benefit is held to a lighter standard than one who benefits himself."
+    }
+   ]
+  },
+  {
+   "id": "IQ-03",
+   "rules": [
+    55
+   ],
+   "schemata": [
+    "S5-inert"
+   ],
+   "pins": [
+    "Usul.Muamalat.plead",
+    "Usul.Muamalat.q55_confession_absorbs"
+   ],
+   "commitment": "After a confession, every later plea (a claim of error, a retraction) is inert. This reading is for the rights of persons (ḥuqūq al-ādamiyyīn).",
+   "alternatives": [
+    "In the ḥudūd (rights of God) a retraction is accepted, so retract is not inert there and needs its own plead.",
+    "A claim of error is inert but a retraction is not, in some domains."
+   ],
+   "if_changed": "A domain parameter on plead; q55_confession_absorbs then holds only for the persons domain, and a second S5 instance (without retract) is pinned for ḥudūd.",
+   "route": "halaqa:shared/usul-k/derogation.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v12:p009",
+     "relation": "refines",
+     "note": "The judge may invite one who confessed to a ḥadd to retract; al-Intiṣār: prompting the retraction is lawful. So in the ḥudūd a retraction is not inert.",
+     "excerpt_ar": "للحاكم أن يعرض للمقر بحد أن يرجع عن إقراره، وقال في الانتصار: تلقينه الرجوع مشروع"
+    },
+    {
+     "ref": "src:openiti-ilam-shamela11496/v03:p295",
+     "relation": "refines",
+     "note": "Retracting the confession drops the ḥadd (the case of Māʿiz: 'why did you not leave him to repent').",
+     "excerpt_ar": "فالحيلة أن يرجع عن إقراره فيسقط عنه الحد"
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 11,
+     "schema": "S5-inert",
+     "transported": "Usul.Schema.yaqin_doubts_inert",
+     "note": "As later doubts are inert on a certain judgement (Q11), later pleas are inert on a confession; both are absorbing states."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "evidence law",
+     "note": "An admission against interest binds in civil matters, while a criminal confession may be withdrawn before judgment: the same split as persons/ḥudūd."
+    }
+   ]
+  },
+  {
+   "id": "IQ-04",
+   "rules": [
+    41
+   ],
+   "schemata": [
+    "S7-merge"
+   ],
+   "pins": [
+    "Usul.Kulliyyat.Merges",
+    "Usul.Kulliyyat.q41_representatives"
+   ],
+   "commitment": "Two owed acts merge when kind and purpose are equal, whatever the occasion that made each owed. 'Purpose' is a label compared for equality.",
+   "alternatives": [
+    "Purpose as intention (niyya): merging needs the performer to intend both, or to intend the higher one.",
+    "Merging limited to listed kinds (ṭahāra, ḥudūd of one genus) instead of every kind."
+   ],
+   "if_changed": "Merges gains an intention argument or a kind whitelist; it must stay reflexive for reps_covers, and the S7 pin records whether it is still an equivalence.",
+   "route": "halaqa:shared/usul-k/operators.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018",
+     "relation": "contradicts",
+     "note": "Merging requires two acts of one genus at one time, neither performed as a make-up (qaḍāʾ) nor as a dependent of the other; and in the first type both must be intended, on the well-known view (two impurities: the major ablution suffices if both are intended). The reading ignores time, make-up, dependence and intention."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "illustrative",
+     "domain": "sentencing",
+     "note": "Concurrent sentences: one term covers several convictions only when ordered so and the offences are of a kind, which adds an intention-like condition to the merge relation."
+    }
+   ]
+  },
+  {
+   "id": "IQ-05",
+   "rules": [
+    13,
+    54
+   ],
+   "schemata": [
+    "S1-invariance"
+   ],
+   "pins": [
+    "Usul.Muamalat.q13_ignores_intent",
+    "Usul.Muamalat.q54_ignores_belief"
+   ],
+   "commitment": "Liability for destroying property ignores the destroyer's mental state (Q13), and the validity of a disposition ignores the actor's belief about his entitlement (Q54).",
+   "alternatives": [
+    "Mental state matters for sin and punishment but not for compensation (a two-output reading: liability ignores intent, sin does not).",
+    "Belief matters where the actor was misled by the other party."
+   ],
+   "if_changed": "Ignores no longer holds; the S1 pins for Q13 and Q54 fail, which is the intended signal that a coordinate became relevant.",
+   "route": "halaqa:shared/usul-k/operators.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095",
+     "relation": "refines",
+     "note": "Whoever destroys another's property believing it his own: if the belief rests on a visible cause from another who erred or admits intent, that other is liable; if on bare ijtihād, there are two views on liability. Belief can move liability between parties."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q089",
+     "relation": "agrees",
+     "note": "The causes of liability are three: contract, hand and destruction. Destruction is a cause by the act itself, not by the intent behind it."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 14,
+     "schema": "S1-invariance",
+     "transported": "Usul.Muamalat.q14_factors_through_authorization",
+     "note": "Loss liability factors through authorisation, not mental state, as destruction liability does in Q13."
+    },
+    {
+     "kind": "internal",
+     "asl": 47,
+     "schema": "S1-invariance",
+     "transported": "Usul.Schema.Factors.post",
+     "note": "Every consequence computed from an invariant ruling is invariant too; if intent were relevant to sin but not to liability, two outputs would be needed."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "tort law",
+     "note": "Strict liability: liability for the act regardless of fault, with fault relevant to other consequences."
+    }
+   ]
+  },
+  {
+   "id": "IQ-06",
+   "rules": [
+    15
+   ],
+   "schemata": [
+    "S1-invariance"
+   ],
+   "pins": [
+    "Usul.Kulliyyat.mayInflict",
+    "Usul.Kulliyyat.q15_ignores_received"
+   ],
+   "commitment": "Harm may be inflicted only if it is none, whatever harm was received. Prescribed retaliation (qiṣāṣ) and prescribed penalties are outside the reading, not exceptions inside it.",
+   "alternatives": [
+    "Retaliation modelled inside Q15 as a derogation with its own conditions (equality, authority of the ruler)."
+   ],
+   "if_changed": "mayInflict gains a derogation argument; q15_ignores_received holds only off the derogation.",
+   "route": "halaqa:shared/usul-k/derogation.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p443",
+     "relation": "agrees",
+     "note": "'No harm and no reciprocal harm' is a principle our companions reasoned with in many matters; rulings are either for securing benefits or for repelling harms.",
+     "excerpt_ar": "لا ضرر ولا ضرار\" 4 وفي رواية \"ولا إضرار\" 5 بزيادة همزة في أوله، وألف بين الراءين6. وقد علل أصحابنا بذلك في مسائل كثيرة"
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 13,
+     "schema": "S1-invariance",
+     "transported": "Usul.Muamalat.q13_ignores_intent",
+     "note": "The harm received is ignored as intent is ignored in Q13: both readings declare one coordinate irrelevant."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "public law",
+     "note": "Self-help is barred and retaliation reserved to the court, so the carve-out sits outside the private rule."
+    }
+   ]
+  },
+  {
+   "id": "IQ-07",
+   "rules": [
+    32
+   ],
+   "schemata": [
+    "S3-gate"
+   ],
+   "pins": [
+    "Usul.Muamalat.recourse",
+    "Usul.Muamalat.q32_is_gate"
+   ],
+   "commitment": "Whoever pays another's obligation has recourse unless he paid as a gift. The heading in the witness is lost to OCR (reading from the index stub).",
+   "alternatives": [
+    "Recourse only when he paid intending to reclaim it (the condition stated positively, which differs when intention is unknown).",
+    "Recourse only with the debtor's permission."
+   ],
+   "if_changed": "recourse gains an intention or permission argument, which becomes a second impediment or a condition in q32_is_gate; q32_never_more_than_paid must still hold.",
+   "route": "halaqa:shared/usul-k/derogation.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075",
+     "relation": "refines",
+     "note": "Recourse for paying another's due without his permission, in the sounder narration (the madhhab of al-Khiraqī, Abū Bakr, al-Qāḍī and most). Al-Qāḍī requires intending recourse and witnessing it at payment: intending a gift or leaving the intention unspecified gives no recourse. The reading grants recourse when the intention is unspecified."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 17,
+     "schema": "S3-gate",
+     "transported": "Usul.Kulliyyat.q17_is_gate",
+     "note": "Intention to reclaim as a condition and gift as an impediment, in the same gate algebra as entitlement and hastening in Q17."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "civil law",
+     "note": "Negotiorum gestio and subrogation: the payer's recourse depends on acting for the debtor without donative intent."
+    }
+   ]
+  },
+  {
+   "id": "IQ-08",
+   "rules": [
+    9
+   ],
+   "schemata": [
+    "S2-priority"
+   ],
+   "pins": [
+    "Usul.Kulliyyat.q09_is_priority"
+   ],
+   "commitment": "A measure defined by the law strictly precedes custom: custom decides only where the law is silent, and never overrides a defined measure.",
+   "alternatives": [
+    "Custom also specifies (takhṣīṣ) a general legal term, which is not a fallback but a refinement."
+   ],
+   "if_changed": "Custom as a refinement is an S1/S3 reading (a qualifier), not S2; the Q9 pin would move schema.",
+   "route": "halaqa:shared/usul-k/specificity.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121",
+     "relation": "refines",
+     "note": "Custom specifies a general term: where customary use has made one sense the real one, the general is restricted to it without dispute (an oath not to eat 'roast' covers roast meat only). Custom then refines a term rather than only filling a gap."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 57,
+     "schema": "S2-priority",
+     "transported": "Usul.Kulliyyat.q57_is_priority",
+     "note": "Law over custom has the shape of possible intent over the literal (Q57); the refinement alternative changes the shape for both."
+    },
+    {
+     "kind": "internal",
+     "asl": 6,
+     "schema": "S2-priority",
+     "transported": "Usul.Schema.ruled_is_priority",
+     "note": "The dalīl over the domain default, the same priority shape."
+    }
+   ]
+  },
+  {
+   "id": "IQ-09",
+   "rules": [
+    25
+   ],
+   "schemata": [
+    "S2-priority"
+   ],
+   "pins": [
+    "Usul.Muamalat.allocation",
+    "Usul.Muamalat.q25_lot_is_last_resort",
+    "Usul.Refinements.allocationFull",
+    "Usul.Refinements.confused_goes_to_lot"
+   ],
+   "commitment": "Allocation follows the order: the known entitled, then division, then lots. Lots are the last resort.",
+   "alternatives": [
+    "Division and lots ranked differently where division destroys value (e.g. an indivisible object)."
+   ],
+   "if_changed": "The order of sources in allocation changes; q25_lot_is_last_resort records when lots apply and fails if the order changes. A conservative refinement now exists (Usul.Refinements.allocationFull: a confused specific entitlement goes to lots whatever the divisibility; with confusion_category false it is the old reading, allocationFull_conservative); it closed four takhrīj cases. Adopting it as the reading of Q25 is the decision this question asks for.",
+   "route": "halaqa:shared/usul-k/resolution-schema.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160",
+     "relation": "refines",
+     "note": "Lots distinguish the entitled when entitlement attaches to an unspecified one among equals, or to recover a specific entitled person lost in confusion; not used for lineage. The reading lacks the equality condition and the lineage exclusion."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p350",
+     "relation": "contradicts",
+     "note": "Takhrīj evidence (corpus/takhrij, cases q160.f007, f012, f015, f044): where a specific entitled person is lost in confusion, Ibn Rajab prescribes lots even though the property could be divided between the claimants; the reading's order (division before lots) holds only for an unspecified entitlement among equals.",
+     "excerpt_ar": "إذا ادعى الوديعة اثنان فقال المودع: لا أعلم لمن هي منكما. فإنه يقرع بينهما، فمن قرع فصاحبه ، حلف وأخذها نص عليه أحمد، وهي من فروع مسألة تداعي عين بيد ثالث يعترف بأنها لأحدهما وسنذكرها إن شاء الله."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 28,
+     "schema": "S2-priority",
+     "transported": "Usul.Schema.substitute_is_priority",
+     "note": "Original before substitute, as entitled before division before lots."
+    },
+    {
+     "kind": "internal",
+     "asl": 19,
+     "schema": "S2-priority",
+     "transported": "Usul.Muamalat.q19_is_priority",
+     "note": "Stipulated price before value, the same fallback shape."
+    }
+   ]
+  },
+  {
+   "id": "IQ-10",
+   "rules": [
+    24,
+    33,
+    34,
+    37
+   ],
+   "schemata": [
+    "S8-optimal"
+   ],
+   "pins": [
+    "Usul.Schema.Optimal",
+    "Usul.Schema.best_optimal",
+    "Usul.Schema.Optimal.key_unique"
+   ],
+   "commitment": "Options are compared on one integer scale (benefit, harm, time, strength of evidence). Ties go to the earliest-listed option. The tie-break is an artefact of the encoding, not of the text.",
+   "alternatives": [
+    "Benefits and harms incommensurable in general (a partial order), so a choice may not exist.",
+    "Ties resolved by a second criterion (e.g. precaution) instead of list order."
+   ],
+   "if_changed": "A partial order replaces Int; best becomes a set of maximal options, and Optimal.key_unique no longer holds, which the S8 pins expose.",
+   "route": "halaqa:shared/usul-k/resolution-schema.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017",
+     "relation": "contradicts",
+     "note": "One noble act against many lesser: Aḥmad's apparent view prefers multiplicity; other narrations prefer the noble one, or equality. Two dimensions and genuine ties occur, where the reading assumes one scale and breaks ties by list order."
+    },
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158",
+     "relation": "refines",
+     "note": "Two conflicting presumptions: act on the stronger; if equal, the question is divided in the madhhab. Ties yield disagreement, not an order of listing."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "illustrative",
+     "domain": "decision theory",
+     "note": "A scalar ranking versus a Pareto (partial) order: under the second, 'the best' may not exist, and Optimal.key_unique fails."
+    }
+   ]
+  },
+  {
+   "id": "IQ-11",
+   "rules": [
+    50
+   ],
+   "schemata": [
+    "S4-closure"
+   ],
+   "pins": [
+    "Usul.Kulliyyat.Established",
+    "Usul.Kulliyyat.q50_least"
+   ],
+   "commitment": "Establishment by dependence is transitive: a dependent of a dependent of a proved thing is established.",
+   "alternatives": [
+    "Only one step of dependence (a dependent of a proved principal), not the transitive closure."
+   ],
+   "if_changed": "Established becomes one step of the step relation rather than Closure; q50_follower_established then needs a proved principal.",
+   "route": "halaqa:shared/usul-k/specificity.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133",
+     "relation": "agrees",
+     "note": "The same rule: what is not established independently is established as a dependent (women's testimony to birth establishes lineage). Its examples are one step; transitivity is not addressed."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 53,
+     "schema": "S4-closure",
+     "transported": "Usul.Muamalat.q53_void_propagates",
+     "note": "Voidness propagates transitively along 'built on'; IQ-11 asks whether establishment propagates the same way."
+    },
+    {
+     "kind": "internal",
+     "asl": 2,
+     "schema": "S4-closure",
+     "transported": "Usul.Schema.wajib_is_closure",
+     "note": "The means of a means of an obligation is obligatory: transitivity is accepted in Q2."
+    }
+   ]
+  },
+  {
+   "id": "IQ-12",
+   "rules": [
+    53
+   ],
+   "schemata": [
+    "S4-closure"
+   ],
+   "pins": [
+    "Usul.Muamalat.Voided",
+    "Usul.Muamalat.q53_void_propagates",
+    "Usul.Muamalat.q53_rescission_inert"
+   ],
+   "commitment": "Proved voidness propagates along 'built on' to every dependent contract, transitively. Rescinding a contract that was not proved void leaves the set of void contracts unchanged.",
+   "alternatives": [
+    "Propagation stops at a dependent acquired in good faith by a third party.",
+    "Rescission affects dependents concluded after it, which needs time on the relation."
+   ],
+   "if_changed": "A good-faith or time guard on builtOn; q53_rescission_inert still holds, q53_void_propagates gains a hypothesis.",
+   "route": "halaqa:shared/usul-k/derogation.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p045#q036",
+     "relation": "refines",
+     "note": "Al-Qāḍī and Ibn ʿAqīl: rescission for a defect lifts the contract from now; rescission by an option lifts it from its origin, since the option prevents bindingness altogether. 'Rescission is inert' fits rescission for a defect only.",
+     "excerpt_ar": "الفسخ بالعيب رفع للعقد من حينه، والفسخ بالخيار رفع للعقد من أصله"
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 50,
+     "schema": "S4-closure",
+     "transported": "Usul.Kulliyyat.q50_follower_established",
+     "note": "Establishment and voidness are the same closure with different seeds."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "civil law",
+     "note": "Void ab initio (ex tunc) versus voidable and rescinded (ex nunc)."
+    }
+   ]
+  },
+  {
+   "id": "IQ-13",
+   "rules": [
+    58
+   ],
+   "schemata": [
+    "S3-gate"
+   ],
+   "pins": [
+    "Usul.Qiyas.NaqdSucceedsBy",
+    "Usul.Qiyas.naqd_succeeds_without_takhsis",
+    "Usul.Qiyas.naqd_answered_by_takhsis",
+    "Usul.Qiyas.takhsis_repairs"
+   ],
+   "commitment": "Takhṣīṣ al-ʿilla is modelled as restricting the ʿilla by an impediment present in every counter-case, and its admissibility as a policy that may depend on whether the ʿilla is textual (manṣūṣa) or inferred (mustanbaṭa). The encoding takes no side.",
+   "alternatives": [
+    "Takhṣīṣ admitted for both kinds of ʿilla.",
+    "Takhṣīṣ admitted without a stated impediment (an exception by istiḥsān), which the repair theorem does not cover."
+   ],
+   "if_changed": "A policy is fixed (or the repair widened); naqd_succeeds_without_takhsis / naqd_answered_by_takhsis then decide each naqḍ, and their pins record which.",
+   "route": "halaqa:shared/usul-k/derogation.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-musawwada-shamela11814/v01:p412",
+     "relation": "refines",
+     "note": "Specifying an inferred ʿilla is not allowed, and specifying it is a naqḍ of it; Aḥmad stated it, and the companions report two views (Ibn Shāqlā, al-Kharazī, Abū Ḥafṣ al-Barmakī), one like the text, chosen by al-Qāḍī. The dispute is framed for the inferred ʿilla, which is why the policy depends on the source.",
+     "excerpt_ar": "مسألة: لا يجوز تخصيص العلة المستنبطة وتخصيصها نقض لها نص عليه واختلف فيه أصحابنا على وجهين"
+    },
+    {
+     "ref": "src:openiti-musawwada-shamela11814/v01:p389",
+     "relation": "bears-on",
+     "note": "Abū al-Khaṭṭāb, within the question of takhṣīṣ: a textual ʿilla is sound even if it does not extend to other branches, which the editor notes departs from the well-known view of the companions."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p271",
+     "relation": "bears-on",
+     "note": "Al-Barmakī reports two views on whether constancy (iṭṭirād) is a condition: naqḍ voids the ʿilla (supported by al-Qāḍī), or the ʿilla stays a proof elsewhere like a specified general term (Abū al-Khaṭṭāb).",
+     "excerpt_ar": "حكى أبو حفص البرمكي في كون ذلك شرطا لصحتها وجهين"
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p274",
+     "relation": "agrees",
+     "note": "A third view, which Ibn Qudāma defends: naqḍ voids an inferred ʿilla but not a textual one. This is the source-dependent policy the encoding allows.",
+     "excerpt_ar": "وفرق قوم بين العلة المنصوص عليها، وبين المستنبطة، وجعل نقض المستنبطة مبطلا لها"
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p058",
+     "relation": "contradicts",
+     "note": "Ten views. The first, that naqḍ does not impair the ʿilla at all, is ascribed to al-Qāḍī and Abū al-Khaṭṭāb and by al-Āmidī to most Ḥanbalīs; the second, that it does, to Ibn Ḥāmid and al-Qāḍī as well. The reports of al-Qāḍī's position conflict across the sources.",
+     "excerpt_ar": "وهذا قول القاضي وأبي الخطاب. وحكاه الآمدي عن أكثر أصحابنا"
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p325",
+     "relation": "bears-on",
+     "note": "Al-Ṭūfī: the dispute arises from two conflicting presumptions (an ʿilla with a proof is retained; absence of the ruling presumes absence of its cause).",
+     "excerpt_ar": "قلت: قد تعارض هنا أصلان، فخرج الخلاف لملاحظتهما"
+    },
+    {
+     "ref": "src:openiti-ilam-shamela11496/v03:p027",
+     "relation": "agrees",
+     "note": "Ibn al-Qayyim: takhṣīṣ for a missing condition or a present impediment is not impossible, and whether these belong to the ʿilla is a verbal dispute. This is the repair `takhsis_repairs` models.",
+     "excerpt_ar": "وبالجملة فلا يمتنع تخصيص العلة لفوات شرط أو لقيام مانع"
+    },
+    {
+     "ref": "src:shamela-282/v01:p454",
+     "relation": "contradicts",
+     "note": "Al-Shinqīṭī prefers the reverse of Mālik's split: a textual ʿilla is not voided by naqḍ (as Ibn Qudāma), against those who allow takhṣīṣ only of the inferred.",
+     "excerpt_ar": "وقال قومٌ بالعكس، وعزاهُ إمامُ الحرمين في البرهانِ للأكثر، وهو أوجه عندي مما قبله"
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 8,
+     "schema": "S3-gate",
+     "transported": "Usul.Sadi.Gate.holds_meet",
+     "note": "Takhṣīṣ adds an impediment to the ʿilla's gate, as Q8 adds impediments to a ruling's gate; meet only narrows."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "common law",
+     "note": "Distinguishing a precedent by a further fact (an impediment) versus treating the counter-case as overruling the ratio."
+    }
+   ]
+  },
+  {
+   "id": "IQ-14",
+   "rules": [
+    58
+   ],
+   "schemata": [
+    "S3-gate"
+   ],
+   "pins": [
+    "Usul.Qiyas.AdamTathirSucceeds",
+    "Usul.Qiyas.adamTathir_iff_not_aks"
+   ],
+   "commitment": "With plurality of ʿilal admitted, ʿadam al-taʾthīr (the ruling found without the waṣf) is answered when another ʿilla covers the case; the admission is a parameter.",
+   "alternatives": [
+    "Plurality admitted only for textual ʿilal.",
+    "Plurality refused, so ʿaks becomes a condition of every ʿilla (dawarān as a requirement)."
+   ],
+   "if_changed": "allowPlural is fixed; AdamTathirSucceeds then decides each objection.",
+   "route": "halaqa:shared/usul-k/resolution-schema.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-musawwada-shamela11814/v01:p328",
+     "relation": "agrees",
+     "note": "It is permissible to give the aṣl two ʿillas, as one proves a thing by two proofs, when what they require is one; if they conflict, it is not; some refused it.",
+     "excerpt_ar": "يجوز تعليل الأصل بعلتين كما يستدل على شيء بدليلين وهذا في العلتين إذا كان موجبهما واحدا فأما إذا تنافيا فلا يجوز"
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "illustrative",
+     "domain": "tort law",
+     "note": "Overdetermination: two independently sufficient causes, where the absence of one does not show the other inert."
+    }
+   ]
+  },
+  {
+   "id": "IQ-15",
+   "rules": [
+    58
+   ],
+   "schemata": [
+    "S3-gate"
+   ],
+   "pins": [
+    "Usul.Qiyas.naqd_gives_kasr",
+    "Usul.Qiyas.kasr_without_naqd"
+   ],
+   "commitment": "Kasr is modelled as a naqḍ against the ḥikma (the purpose the waṣf stands for). The encoding fixes only its logical relation to naqḍ (a naqḍ of the waṣf gives a kasr of its ḥikma, not conversely), not whether kasr is an admissible objection; in the debate gate its admission is the policy flag admitKasr.",
+   "alternatives": [
+    "Kasr admitted as an objection (it defeats the ʿilla through its purpose).",
+    "Kasr rejected because the ḥikma is not a fixed criterion (ghayr munḍabiṭa)."
+   ],
+   "if_changed": "An admissibility flag for kasr is added to the qiyās gate's impediments.",
+   "route": "halaqa:shared/usul-k/resolution-schema.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-musawwada-shamela11814/v01:p428",
+     "relation": "refines",
+     "note": "They disagree whether kasr, a naqḍ of the meaning of the ʿilla, is a valid objection; two views; Abū al-Khaṭṭāb chose that it is not.",
+     "excerpt_ar": "اختلفوا في الكسر هل هو سؤال صحيح وهو نقض لمعنى العلة فيه قولان اختار أبو الخطاب أنه ليس بسؤال صحيح"
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p312",
+     "relation": "bears-on",
+     "note": "Kasr, showing the ḥikma without the ruling, is not binding, since the ḥikma cannot be measured by opinion.",
+     "excerpt_ar": "وهو إبداء الحكمة بدون الحكم: فغير لازم"
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p510",
+     "relation": "bears-on",
+     "note": "The same: kasr is not binding.",
+     "excerpt_ar": "والكسر: وهو إبداء الحكمة بدون الحكم، غير لازم"
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p067",
+     "relation": "bears-on",
+     "note": "The sound view among the companions and most: kasr and the broken naqḍ do not void the ʿilla.",
+     "excerpt_ar": "الصحيح عند أصحابنا والأكثر: أن الكسر والنقض المكسور \"لا يبطلانها"
+    },
+    {
+     "ref": "src:shamela-282/v01:p459",
+     "relation": "bears-on",
+     "note": "Al-Shinqīṭī dissents: kasr is like naqḍ, so it impairs wherever naqḍ does.",
+     "excerpt_ar": "فالظاهرُ أنَّ الكسر كالنقض، فعلى أنَّ النقضَ قادحٌ فالكسرُ كذلك"
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "illustrative",
+     "domain": "statutory interpretation",
+     "note": "Arguing from a statute's purpose against its stated condition: purposive versus textual reading."
+    }
+   ]
+  },
+  {
+   "id": "IQ-16",
+   "rules": [
+    58
+   ],
+   "schemata": [
+    "S3-gate"
+   ],
+   "pins": [
+    "Usul.Qiyas.Recognition",
+    "Usul.Qiyas.Recognition.accepted",
+    "Usul.Qiyas.mulgha_never_accepted",
+    "Usul.Qiyas.munasaba_of_q01"
+   ],
+   "commitment": "A suitable waṣf is graded by legal recognition (muʾaththir, mulāʾim, gharīb, mursal, mulghā); the cancelled one is never accepted, and acceptance of the mursal is a parameter.",
+   "alternatives": [
+    "The mursal accepted when it is necessary, certain and general (the Ghazālian conditions).",
+    "The mursal accepted generally (the Mālikī position)."
+   ],
+   "if_changed": "acceptMursal is fixed; Recognition.accepted then decides each case.",
+   "route": "halaqa:shared/usul-k/evidence-order.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-musawwada-shamela11814/v01:p450",
+     "relation": "refines",
+     "note": "Rulings may not be built on maṣāliḥ mursala: so Ibn al-Bāqillānī and the theologians, and the view of the later Ḥanbalī uṣūlīs and dialecticians; Mālik permits it.",
+     "excerpt_ar": "مسألة: المصالح المرسلة لا يجوز بناء الاحكام عليها قاله ابن الباقلاني ني وجماعة المتكلمين وهوقول متأخري أصحابنا أهل الأصول والجدل وقال مالك يجوز ذلك"
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v01:p477",
+     "relation": "agrees",
+     "note": "Maṣlaḥa is threefold: what the law recognises (that is qiyās), what it cancels (making a king fast in expiation), and the mursal, which is disputed. The same division as Recognition.",
+     "excerpt_ar": "والمصلحة: هي جلب المنفعة، أو دفع المضرة. وهي ثلاثة أقسام: قسم شهد الشرع باعتبارها. فهذا هو القياس"
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "illustrative",
+     "domain": "common law",
+     "note": "Policy arguments accepted when anchored in an existing doctrine (the mulāʾim), not free-standing."
+    }
+   ]
+  },
+  {
+   "id": "IQ-17",
+   "rules": [
+    58
+   ],
+   "schemata": [
+    "S2-priority"
+   ],
+   "pins": [
+    "Usul.Jadal.farByOrder",
+    "Usul.Jadal.shabah_never_overrides_illa",
+    "Usul.Jadal.shabah_only_as_fallback",
+    "Usul.Jadal.shabah_rejected"
+   ],
+   "commitment": "Qiyās al-shabah is admitted only as a fallback: text, then qiyās al-ʿilla, then shabah if accepted, else suspension. Acceptance is a parameter.",
+   "alternatives": [
+    "Shabah rejected outright (al-Qāḍī; Ibn al-Qayyim: God reports it only from those in error).",
+    "Shabah not a separate kind but folded into qiyās al-ʿilla or al-dalāla (Ibn Taymiyya), which removes the third slot."
+   ],
+   "if_changed": "acceptShabah is fixed, or the third slot removed; the S2 pins record the order.",
+   "route": "halaqa:shared/usul-k/evidence-order.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p190",
+     "relation": "agrees",
+     "note": "Shabah is not resorted to where qiyās al-ʿilla is possible (al-Bāqillānī reports consensus); otherwise it is a proof for us and the Shāfiʿīs; not per al-Qāḍī, the Ḥanafīs, al-Bāqillānī and al-Shīrāzī.",
+     "excerpt_ar": "فإن عدم\" إمكان قياس العلة \"فحجة\" أي فقياس الشبه حجة عندنا"
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p243",
+     "relation": "bears-on",
+     "note": "Two reports from Aḥmad on shabah: valid, and invalid (chosen by al-Qāḍī); Ibn Qudāma argues for validity since it yields preponderant belief.",
+     "excerpt_ar": "واختلفت الرواية عن أحمد -رحمه الله- في قياس الشبه: فروي: أنه صحيح"
+    },
+    {
+     "ref": "src:openiti-ilam-shamela11496/v01:p115",
+     "relation": "contradicts",
+     "note": "Ibn al-Qayyim: God reports qiyās al-shabah only from the people of falsehood.",
+     "excerpt_ar": "وأما قياس الشبه فلم يحكه الله سبحانه إلا عن المبطلين"
+    },
+    {
+     "ref": "src:openiti-radd-shamela7626/v01:p203",
+     "relation": "refines",
+     "note": "Ibn Taymiyya: shabah, if accepted, does not fall outside qiyās al-ʿilla or al-dalāla.",
+     "excerpt_ar": "وأما قياس الشبة فإذا قيل به لم يخرج عن أحدهما"
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 57,
+     "schema": "S2-priority",
+     "transported": "Usul.Kulliyyat.q57_is_priority",
+     "note": "Possible intent before the literal, as qiyās al-ʿilla before shabah: a weaker source only as fallback."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "evidence law",
+     "note": "Circumstantial resemblance admitted only when no direct evidence of the operative fact exists."
+    }
+   ]
+  },
+  {
+   "id": "IQ-18",
+   "rules": [
+    58
+   ],
+   "schemata": [
+    "S3-gate"
+   ],
+   "pins": [
+    "Usul.Jadal.Qadih.kind",
+    "Usul.Jadal.kind_spec",
+    "Usul.Jadal.debateGate_holds_iff"
+   ],
+   "commitment": "Each objection is classified as manʿ (it denies something the qiyās needs: istifsār, manʿ, taqsīm, muṭālaba, al-qawl bi'l-mūjab, tarkīb, ikhtilāf al-ḍābiṭ, mukhālafat al-ḥukm, ifḍāʾ, inḍibāṭ) or muʿāraḍa (it brings a competing source: fasād al-iʿtibār, fasād al-waḍʿ, naqḍ, kasr, ʿadam al-taʾthīr, farq, qalb, muʿāraḍa). The sources state the reduction but do not tabulate it.",
+   "alternatives": [
+    "All objections reduce to manʿ (a view reported in Ādāb al-Baḥth), so the gate has conditions only.",
+    "Naqḍ classed as manʿ (denial of the ʿilla's constancy) rather than muʿāraḍa."
+   ],
+   "if_changed": "Qadih.kind changes; debateGate_holds_iff is unaffected (the gate is the absence of all objections either way), kind_spec records the new placement.",
+   "route": "halaqa:shared/usul-k/resolution-schema.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-tufi-shamela10781/v03:p565",
+     "relation": "agrees",
+     "note": "All objections reduce to manʿ or muʿāraḍa; some count twenty-five; ordering them is agreed to be better, its obligation disputed."
+    },
+    {
+     "ref": "src:shamela-266/v01:p351",
+     "relation": "refines",
+     "note": "All qawādiḥ reduce to manʿ and muʿāraḍa; some say all reduce to manʿ."
+    },
+    {
+     "ref": "src:shamela-266/v01:p344",
+     "relation": "agrees",
+     "note": "Muṭālaba and tarkīb are omitted as falling under manʿ, as the encoding classifies them."
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p229",
+     "relation": "agrees",
+     "note": "The objections reduce to manʿ of premises or muʿāraḍa in the ruling; most count twenty-five."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 8,
+     "schema": "S3-gate",
+     "transported": "Usul.Sadi.Gate.holds_meet",
+     "note": "A ruling's conditions and impediments (Q8) and a qiyās's manʿ and muʿāraḍa are the same gate algebra."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "argumentation theory",
+     "note": "Undercutting versus rebutting defeaters: denying a premise or the inference, versus offering a competing conclusion."
+    }
+   ]
+  },
+  {
+   "id": "IQ-19",
+   "rules": [
+    58
+   ],
+   "schemata": [
+    "S3-gate"
+   ],
+   "pins": [
+    "Usul.QiyasLimits.hanbaliAdmits",
+    "Usul.QiyasLimits.no_qiyas_without_rationale",
+    "Usul.QiyasLimits.hanafi_strictly_narrower"
+   ],
+   "commitment": "The Ḥanbalī scope of qiyās is intelligibility of the rationale alone (ḥudūd, kaffārāt and fixed amounts included), with original negation only by qiyās al-dalāla; qiyās in causes, conditions and impediments is a parameter.",
+   "alternatives": [
+    "Qiyās in causes affirmed (Ibn Qudāma, via tanqīḥ al-manāṭ and the ḥikma).",
+    "Qiyās in causes, conditions and impediments denied (al-Āmidī, Ibn al-Ḥājib)."
+   ],
+   "if_changed": "allowAsbab is fixed; hanbaliAdmits then decides asbāb, and no_qiyas_without_rationale is unaffected.",
+   "route": "halaqa:shared/usul-k/specificity.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-rawda-shamela12010/v02:p293",
+     "relation": "refines",
+     "note": "Qiyās in causes: some allow it (sodomy on zinā for stoning), others deny; Ibn Qudāma affirms it via tanqīḥ al-manāṭ and via the ḥikma (anger, then hunger and thirst, for judging).",
+     "excerpt_ar": "قال قوم: يجوز إجراء القياس في الأسباب"
+    },
+    {
+     "ref": "src:openiti-kawkab-shamela12019/v04:p220",
+     "relation": "refines",
+     "note": "Some deny qiyās in cause, condition and impediment, as did al-Āmidī and Ibn al-Ḥājib; al-Āmidī reports most Shāfiʿīs allow it. The same page reports the Ḥanafī exclusion of ḥudūd, kaffārāt, substitutes, rukhaṣ and fixed amounts, and the Ḥanbalī «for us» against it."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 8,
+     "schema": "S3-gate",
+     "transported": "Usul.Sadi.Gate.holds_meet",
+     "note": "Causes, conditions and impediments are the parts of Q8's gate; extending a cause by qiyās adds to the gate's conditions."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "criminal law",
+     "note": "Nullum crimen sine lege: analogy in criminal law barred in many systems, as the Ḥanafīs bar qiyās in ḥudūd."
+    }
+   ]
+  },
+  {
+   "id": "IQ-20",
+   "rules": [
+    52
+   ],
+   "schemata": [
+    "S6-presumption"
+   ],
+   "pins": [
+    "Usul.Sadi.q52_strong_qarina_prevails",
+    "Usul.Refinements.zahirPrevails",
+    "Usul.Refinements.tie_without_amara_keeps_asl"
+   ],
+   "commitment": "An indication displaces the presumption whenever its grade is at least the presumption's (ties go to the ẓāhir), with grades as the only input.",
+   "alternatives": [
+    "Ties go to the aṣl (certainty is not removed except by what is at least as strong and decisive).",
+    "Whether preponderant belief suffices depends on whether the matter has known indicators (amārāt), as Ibn Rajab says of sunset; this needs a field the reading lacks.",
+    "Equal aṣl and ẓāhir are left as khilāf (Ibn Rajab's fourth category), not decided."
+   ],
+   "if_changed": "Qawaid.update's tie rule or inputs change; q52_strong_qarina_prevails changes with it. The review process's own reliance on Q11 (yaqin_doubts_inert, doubts at shakk below a certain judgement) is unaffected, since shakk is strictly below zann. A conservative refinement now exists (Usul.Refinements.zahirPrevails: on equal grades the ẓāhir prevails only where the matter has indicators; with amara true it is the old reading, zahirPrevails_conservative); it closed two takhrīj cases. Adopting it is the decision this question asks for. Since IQ-21's amendment, q52_strong_qarina_prevails is stated on strength (a suspended ẓann counts as shakk) and requires the indication not to be suspended; for unsuspended judgements it is the earlier statement (Qawaid.update_conservative).",
+   "route": "halaqa:shared/usul-k/evidence-order.md",
+   "status": "referenced",
+   "established": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p340",
+     "relation": "contradicts",
+     "note": "Takhrīj evidence (cases q159.f007, f008): with a known state and preponderant belief of its removal, Ibn Rajab holds to the aṣl and says preponderant belief does not suffice; at f013 he allows breaking the fast on preponderant belief of sunset «because time has indicators by which it is known». Equal grades, opposite rulings: the deciding fact is the indicator, not the grade.",
+     "excerpt_ar": "إذا شك في طلوع الفجر في رمضان فإنه يباح له الأكل حتى يتيقن طلوعه نص عليه، أحمد، ولا عبرة في ذلك بغلبة الظن وبالقرائن ونحوها ما لم يكن مستندا إلى إخبار ثقة بالطلع."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 10,
+     "schema": "S6-presumption",
+     "transported": "Usul.Schema.burden_factors",
+     "note": "As the burden of proof follows the presumption (Q10), the presumption's displacement should follow what the law counts as proof, not a bare grade."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "evidence law",
+     "note": "Presumptions rebuttable only by particular kinds of evidence (e.g. documentary) rather than by any evidence of equal weight."
+    }
+   ]
+  },
+  {
+   "id": "IQ-21",
+   "rules": [
+    11
+   ],
+   "schemata": [
+    "S5-inert"
+   ],
+   "pins": [
+    "Usul.Grade.IsYaqin",
+    "Usul.Sadi.q11_yaqin",
+    "Usul.Refinements.yaqinForAmal",
+    "Usul.Refinements.zannSetAside"
+   ],
+   "commitment": "The 'yaqīn' that doubt does not remove is any grade from preponderant belief (ẓann) up: IsYaqin g := zann ≤ g.",
+   "alternatives": [
+    "Yaqīn is qaṭʿ only (Ibn ʿUthaymīn's ʿilm: decisive perception); a held ẓann is then displaceable by an equal ẓann, and Q11 protects fewer judgements.",
+    "Two thresholds: ẓann suffices to act (performing worship or a contract, Ibn Rajab 68) while only qaṭʿ is immune to later doubt; Q11 would take the second.",
+    "Ibn Taymiyya's second-order reading: the certainty acted on is knowledge that the ẓann preponderates (iʿtiqād al-rujḥān), not the ẓann itself (rujḥān al-iʿtiqād); an unknown preponderance suspends. Expressible as Refinements.yaqinForAmal, conservative over IsYaqin (yaqinForAmal_conservative)."
+   ],
+   "if_changed": "Grade.IsYaqin's threshold moves; every theorem taking it as hypothesis (q11_yaqin, yaqin_la_yazul_bish_shakk, yaqin_doubts_inert, Refinements.abstention_keeps_status) still holds, with a stronger hypothesis, so nothing proved is lost; fewer held judgements are protected. The review process relies on yaqin_doubts_inert only for its form (doubts at shakk are inert), which survives either threshold, so there is no bootstrap dependency. Takhrīj cases with a ẓann-grade aṣl (asl_zahir encoder) would need re-checking. Under the second-order reading Held would carry whether the preponderance is known; with it true everywhere the kernel is unchanged. Overturning is separate: a ẓann acted on is set aside only when its error is shown decisively (Refinements.zannSetAside; «الاجتهاد لا ينقض بالاجتهاد»).",
+   "route": "halaqa:shared/usul-k/evidence-order.md",
+   "status": "adopted",
+   "established": [
+    {
+     "ref": "src:shamela-9942/v01:p015",
+     "relation": "bears-on",
+     "excerpt_ar": "العلم: إدراك الشيء على ما هو عليه إدراكاً جازماً",
+     "note": "Ibn ʿUthaymīn: ʿilm is decisive perception; ẓann (p016) is perception with a weaker contrary possibility. Read strictly, yaqīn is qaṭʿ."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p007",
+     "relation": "bears-on",
+     "excerpt_ar": "العلم والظن؛ لأن إدراك الأحكام الفقهية قد يكون يقينيًّا، وقد يكون ظنيًّا",
+     "note": "But fiqh itself is ʿilm and ẓann: the knowledge the law acts on includes the preponderant."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p120",
+     "relation": "bears-on",
+     "excerpt_ar": "فلا يصح إيقاعه بهذا التردد ما لم يكن الشك غلبة ظن تكفي مثله في إيقاع العبادة أو العقد كغلبة الظن بدخول الوقت وطهارة الماء والثوب",
+     "note": "Ibn Rajab 68: preponderant belief suffices to perform worship or a contract (entry of the time, purity of water and garment): ẓann counts for acting."
+    },
+    {
+     "ref": "src:openiti-majmufatawa-shamela7289/v13:p117",
+     "relation": "refines",
+     "excerpt_ar": "فرق بين اعتقاد الرجحان ورجحان الاعتقاد أما اعتقاد الرجحان فهو علم والمجتهد ما عمل إلا بذلك العلم وهو اعتقاد رجحان هذا على هذا وأما رجحان هذا الاعتقاد على هذا الاعتقاد فهو الظن؛ لكن لم يكن ممن قال الله فيه: {إن يتبعون إلا الظن} بل هنا ظن رجحان هذا وظن رجحان ذاك وهذا الظن هو الراجح ورجحانه معلوم",
+     "note": "Ibn Taymiyya: the jurist acts on knowledge of preponderance; only the preponderance of one belief over another is ẓann."
+    },
+    {
+     "ref": "src:openiti-rawda-shamela12010/v01:p311",
+     "relation": "refines",
+     "excerpt_ar": "أي استحالة في أن يجعل الله -تعالى- الظن علامة للوجوب، والظن مدرك بالحس، فيكون الوجوب معلوما",
+     "note": "Al-Rawḍa: God makes ẓann a sign of the obligation, so the obligation is known."
+    },
+    {
+     "ref": "src:openiti-tufi-shamela10781/v01:p155",
+     "relation": "bears-on",
+     "excerpt_ar": "ولو قيل: ظن جملة من الأحكام الشرعية الفرعية، باستنباطها من أدلة تفصيلية، لحصل المقصود وخف الإشكال",
+     "note": "Al-Ṭūfī: the standard answers are contrived; define fiqh as ẓann instead."
+    },
+    {
+     "ref": "ibn_uthaymin.manzuma.archive_manzuma_tess.q090",
+     "relation": "bears-on",
+     "note": "Ibn ʿUthaymīn, bayt 90: where certainty is unattainable, build on preponderant belief; ghalabat al-ẓann is a fallback below yaqīn, not yaqīn."
+    },
+    {
+     "ref": "src:openiti-majmufatawa-shamela7289/v13:p120",
+     "relation": "agrees",
+     "excerpt_ar": "وحيث لا يعلم الرجحان فهو متوقف لا قول له",
+     "note": "Ibn Taymiyya: where preponderance is not known, the jurist suspends and holds no view; the ground for treating such a ẓann as inert in update."
+    }
+   ],
+   "analogies": [
+    {
+     "kind": "internal",
+     "asl": 55,
+     "schema": "S5-inert",
+     "transported": "Usul.Schema.inert_fold",
+     "note": "As a later claim of error leaves a confession binding (Q55), a later doubt leaves what is held: both are S5 folds over inert evidence. The analogy fixes the form; the threshold is what this question asks."
+    },
+    {
+     "kind": "illustrative",
+     "domain": "evidence law",
+     "note": "Standards of proof: balance of probabilities to act or decide, a higher standard for what later doubt may not reopen."
+    }
+   ],
+   "decision": {
+    "by": "human",
+    "date": "2026-10-07",
+    "instruction": "yes adopt it",
+    "adopted": "Ibn Taymiyya's second-order reading: a judgement is certain for acting when it is qaṭʿ, or a ẓann whose preponderance is itself known on a dalīl (iʿtiqād al-rujḥān is ʿilm, rujḥān al-iʿtiqād is ẓann); a ẓann of unknown preponderance is not yaqīn. Q11 protects exactly these judgements.",
+    "lean": [
+     "Usul.Grade.YaqinFor",
+     "Usul.Qawaid.Held.IsYaqin",
+     "Usul.Grade.yaqinFor_known",
+     "Usul.Grade.zann_unknown_not_yaqin",
+     "Usul.Refinements.yaqinForAmal_iff"
+    ],
+    "scope": "Encoding E of this repository: Held carries rujhanKnown, and q11_yaqin, yaqin_la_yazul_bish_shakk, yaqin_doubts_inert and abstention_keeps_status now take Held.IsYaqin. Grade.IsYaqin remains as the grade floor (YaqinFor.isYaqin). halaqa usul-k/evidence-order.md is not written.",
+    "follow_up": [
+     "The takhrīj encoders take grades only (asl_zahir); none constructs a ẓann of unknown preponderance, so no case changes.",
+     "That a suspended incumbent counts at shakk (rather than, say, yielding to any grounded judgement including wahm) is the formaliser's reading of «لا قول له» together with Ibn ʿUthaymīn's «الوهم… لا يعمل به»; it is recorded here as part of the amendment and may be revisited."
+    ],
+    "amendments": [
+     {
+      "by": "human",
+      "date": "2026-10-07",
+      "instruction": "treat unknown preponderance as tawaqquf in update",
+      "adopted": "In Qawaid.update a ẓann of unknown preponderance is suspended (tawaqquf, «لا قول له»): as a challenger it is inert; as the incumbent it counts at shakk strength and yields to any grounded judgement of at least shakk. Where neither side is suspended, update is the earlier grade-only rule (update_conservative).",
+      "lean": [
+       "Usul.Qawaid.Held.Suspended",
+       "Usul.Qawaid.Held.strength",
+       "Usul.Qawaid.update",
+       "Usul.Qawaid.updateByGrade",
+       "Usul.Qawaid.update_conservative",
+       "Usul.Qawaid.suspended_inert",
+       "Usul.Qawaid.suspended_yields",
+       "Usul.Qawaid.update_strength_mono"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "IQ-22",
+   "rules": [
+    24
+   ],
+   "schemata": [
+    "S8-optimal"
+   ],
+   "pins": [
+    "Usul.Muamalat.q24_first_has_priority",
+    "Usul.Muamalat.q24_is_optimal"
+   ],
+   "commitment": "Q24 is encoded as an established rule. The one ḥadīth al-Saʿdī cites for it («من سبق إلى ما لم يسبق إليه مسلم فهو أحق به») is graded ḍaʿīf by al-Albānī (al-Irwāʾ 1555), so under the ḥadīth track's single gate (Hadith.Verdict.Hujja) it is not a dalīl; under the uṣūl track's adilla order (roadmap §2.2: mursal / non-fabricated ḍaʿīf ≻ qiyās) it may be. Surfaced by the H8 join (corpus/hadith/irwa_join.json).",
+   "alternatives": [
+    "Aḥmad's fourth aṣl (Iʿlām): the ḍaʿīf that is not bāṭil, munkar or through a suspected narrator is acted on before qiyās when nothing in the chapter opposes it. On this reading the ḥadīth still supports Q24 within the Ḥanbalī track, and the two tracks' gates differ.",
+    "Ibn al-Qayyim's gloss on the same aṣl: Aḥmad's ḍaʿīf is «قسيم الصحيح وقسم من أقسام الحسن». If his usable ḍaʿīf is the later ḥasan, a ḥadīth al-Albānī grades ḍaʿīf (below ḥasan) falls outside it: the disagreement is terminological, and Q24 needs another dalīl.",
+    "Q24 stands without the ḥadīth: al-ibāḥa al-aṣliyya for what has no protected owner (al-Saʿdī's own gloss: «ما ليس له مالك محترم») with the general rule that the earlier claim prevails (S8). The rule survives; only its cited naṣṣ is lost."
+   ],
+   "if_changed": "Nothing proved changes: q24_first_has_priority and q24_is_optimal do not take the ḥadīth as a hypothesis. What changes is Q24's recorded support: the Ḥanbalī fourth aṣl (alternative 1), the ibāḥa aṣliyya and S8 (alternative 3), or no textual dalīl. The question also fixes how the seam is read across tracks: whether Hadith.Verdict.Hujja is the gate for the uṣūl track's ḥadīth dalīls, or only the ḥadīth track's.",
+   "route": "halaqa:shared/usul-k/evidence-order.md",
+   "status": "adopted",
+   "established": [
+    {
+     "ref": "src:shamela-22592/v06:p011",
+     "relation": "contradicts",
+     "excerpt_ar": "من سبق إلى ما لم يسبق إليه مسلم فهو أحق به \" رواه أبو داود (ص ٤٥٥) . * ضعيف",
+     "note": "al-Albānī, al-Irwāʾ 1555: the ḥadīth al-Saʿdī cites for Q24 is ḍaʿīf."
+    },
+    {
+     "ref": "sadi.qawaid_jamia.archive_pdf1995.q024",
+     "relation": "bears-on",
+     "note": "al-Saʿdī cites this ḥadīth as Q24's dalīl («لقوله ﷺ»)."
+    },
+    {
+     "ref": "src:openiti-ilam-shamela11496/v01:p025",
+     "relation": "refines",
+     "excerpt_ar": "الأصل الرابع: الأخذ بالمرسل والحديث الضعيف، إذا لم يكن في الباب شيء يدفعه، وهو الذي رجحه على القياس، وليس المراد بالضعيف عنده الباطل ولا المنكر ولا ما في روايته متهم بحيث لا يسوغ الذهاب إليه فالعمل به؛ بل الحديث الضعيف عنده قسيم الصحيح وقسم من أقسام الحسن",
+     "note": "Ibn al-Qayyim on Aḥmad's fourth aṣl: the non-fabricated ḍaʿīf before qiyās, where his ḍaʿīf includes the later ḥasan."
+    },
+    {
+     "ref": "src:shamela-11122/v01:p034",
+     "relation": "contradicts",
+     "excerpt_ar": "القاعدة الثانية عشرة ترك العمل بالحديث الضعيف في فضائل الأعمال",
+     "note": "al-Albānī, Tamām al-Minna Q12: no acting on a ḍaʿīf ḥadīth, even in faḍāʾil."
+    }
+   ],
+   "analogies": [],
+   "decision": {
+    "by": "human",
+    "date": "2026-10-10",
+    "instruction": "yes the gate does apply to the usul Hadith issues",
+    "adopted": "The ḥadīth gate (Hadith.Verdict.Hujja) applies to every ḥadīth offered as dalīl in the uṣūl track, in whatever slot of Aḥmad's order it is offered. Aḥmad's fourth aṣl keeps its place, read with Ibn al-Qayyim's gloss (his ḍaʿīf is «قسم من أقسام الحسن»): it admits ḥasan and above, nothing the gate rejects. Q24's cited ḥadīth (al-Irwāʾ 1555, ḍaʿīf) is therefore not a dalīl.",
+    "lean": [
+     "Usul.Seam.admitted",
+     "Usul.Seam.admitted_iff_yaqin",
+     "Usul.Seam.daif_not_admitted",
+     "Usul.Seam.mursalDaif_admits_only_hasan_up",
+     "Usul.Seam.q24_dalil_not_admitted"
+    ],
+    "scope": "Encoding E of this repository: Usul.Seam is the one import edge from the ḥadīth track into the uṣūl kernel. No proved theorem changes: q24_first_has_priority and q24_is_optimal never took the ḥadīth as a hypothesis. The seam check over joined dalīls is HadithTest/Seam.lean.",
+    "follow_up": [
+     "Q24's remaining support is not decided here: alternative 3 (al-ibāḥa al-aṣliyya for what has no protected owner, with S8) is the candidate, for review.",
+     "Every further ḥadīth dalīl the H8 join finds is subject to the same gate; a failing one is surfaced, not silently dropped."
+    ]
+   }
+  }
+ ]
+}

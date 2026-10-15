@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/corpus_registry.schema.json",
+  "title": "Uṣūl Corpus Registry",
+  "type": "object",
+  "required": ["registry_version", "works"],
+  "properties": {
+    "registry_version": {"const": "1"},
+    "policy": {"type": "object"},
+    "works": {"type": "array", "items": {"$ref": "#/$defs/work"}}
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)*$"},
+    "work": {
+      "type": "object",
+      "required": ["id", "title_ar", "title_tr", "layers", "kernel", "rights", "witnesses", "status"],
+      "additionalProperties": false,
+      "if": {"not": {"properties": {"layers": {"contains": {"const": "nusus"}}}}},
+      "then": {"required": ["author"]},
+      "$comment": "Every work names its author, except the revealed text: the layer nusus may omit it (the Qurʾān).",
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "title_ar": {"type": "string", "minLength": 1},
+        "title_tr": {"type": "string", "minLength": 1},
+        "author": {
+          "type": "object",
+          "required": ["name_tr", "death_ah"],
+          "properties": {"name_tr": {"type": "string"}, "death_ah": {"type": "integer", "minimum": 1}}
+        },
+        "layers": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": {"enum": ["nusus", "signature", "axioms", "inference", "tests", "dialectic", "aqida"]}, "description": "nusus: the Qurʾān and the ḥadīth collections, the foundation every other layer rests on"
+        },
+        "kernel": {"type": "boolean"},
+        "track": {"enum": ["hanbali_usul", "albani_hadith"], "description": "formalization track; absent = hanbali_usul"},
+        "rights": {"enum": ["public_domain_text", "modern_cache_only", "cc_by_verbatim"]},
+        "note": {"type": "string"},
+        "witnesses": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/witness"}},
+        "segmenter": {
+          "type": "object",
+          "required": ["kind"],
+          "properties": {"kind": {"enum": ["headed", "lines", "numbered", "verse_block", "hudud_brackets", "qa", "masail", "abwab"]}, "marker": {"type": "string"},
+                         "question": {"type": "string", "description": "qa: regex a question line starts with"}, "answer": {"type": "string", "description": "qa: regex an answer line starts with"},
+                         "question_heading": {"type": "boolean", "description": "qa: a section heading is a question line too"},
+                         "start": {"type": "string", "description": "masail: regex an entry's opening line starts with; a named group n is the printed number"},
+                         "end": {"type": "string", "description": "abwab: regex for the heading that closes the matn (closing matter, bibliography)"},
+                         "ordered": {"type": "boolean", "description": "masail: only the longest increasing run of printed numbers opens entries"},
+                         "anchor_step": {"type": "integer", "minimum": 1, "description": "numbered: full-length reads may bridge gaps up to this size"},
+                         "index": {"type": "boolean", "description": "also read the closing index «marker <ordinal>: statement»"}}
+        },
+        "expected_units": {
+          "type": "object",
+          "required": ["unit", "count", "claim_source"],
+          "properties": {"unit": {"type": "string"}, "count": {"type": "integer"}, "claim_source": {"type": "string"}}
+        },
+        "status": {"enum": ["located", "located_ocr", "pdf_only", "unlocated"]},
+        "reception": {"$ref": "#/$defs/reception"}
+      }
+    },
+    "reception": {
+      "description": "Place in the fatāwā corpus: a work the modern citers rely on (cited), or one of their own collections (citer). See docs/architecture/reception.md.",
+      "type": "object",
+      "required": ["role", "genre"],
+      "additionalProperties": false,
+      "properties": {
+        "role": {"enum": ["cited", "citer"]},
+        "genre": {"enum": ["fatawa", "masail", "ikhtiyarat", "matn", "sharh", "khilaf", "ijma", "ahkam_hadith", "takhrij", "qawaid"]},
+        "madhhab": {"enum": ["hanbali", "shafii", "maliki", "hanafi", "zahiri", "mujtahid"]},
+        "scholar": {"enum": ["ibn_baz", "ibn_uthaymin", "albani", "sadi"], "description": "citer: whose citations these are"},
+        "cite_as": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 2},
+                    "description": "cited: forms naming this work; a single-word form counts only after a citation cue"},
+        "not": {"type": "array", "items": {"type": "string", "minLength": 2},
+                "description": "cited: longer phrases that shadow a form (another book of that name)"}
+      },
+      "allOf": [
+        {"if": {"properties": {"role": {"const": "cited"}}}, "then": {"required": ["cite_as", "madhhab"]}},
+        {"if": {"properties": {"role": {"const": "citer"}}}, "then": {"required": ["scholar"]}}
+      ]
+    },
+    "witness": {
+      "type": "object",
+      "required": ["id", "kind"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "kind": {"enum": ["openiti", "shamela", "archive", "url"]},
+        "edition": {"type": "string"},
+        "quality": {"enum": ["ocr_unreviewed", "pdf_only"]},
+        "fetch": {"enum": ["default", "on_demand"]},
+        "segmenter": {"type": "object", "description": "overrides the work's segmenter for this witness"},
+        "ocr_note": {"type": "string"},
+        "format": {"enum": ["text", "pdf", "doc"]},
+        "url": {"type": "string", "pattern": "^https://"},
+        "ocr": {
+          "type": "object",
+          "required": ["engines", "dpi", "psm"],
+          "additionalProperties": false,
+          "properties": {
+            "engines": {"type": "array", "minItems": 1, "items": {"enum": ["ara_std", "ara_best", "arabic_script"]}},
+            "dpi": {"type": "integer", "minimum": 150},
+            "psm": {"type": "integer", "minimum": 0, "maximum": 13},
+            "verses": {"type": "boolean", "description": "detect verse lines and OCR each hemistich (verses.py)"},
+            "number_exemplars": {"type": "array", "items": {"type": "object", "required": ["page", "numbers"],
+                                 "properties": {"page": {"type": "integer"}, "numbers": {"type": "array", "items": {"type": "integer"}}}},
+                                 "description": "pages whose printed numbers were verified by eye: labels for the digit templates"},
+            "numbers": {"type": "boolean", "description": "re-read paragraph numbers from their crops with the arabic_script model (numbers.py)"},
+            "denoise": {"enum": ["median3"], "description": "median filter against scanner speckle before OCR"},
+            "frame": {"type": "boolean", "description": "crop each page inside its decorative border before OCR (ocr.frame_box)"},
+            "verse_pages": {"type": "array", "items": {"type": "integer", "minimum": 1}, "minItems": 2, "maxItems": 2,
+                            "description": "PDF page range for verse detection (excludes e.g. a two-column index)"}
+          }
+        }
+      },
+      "allOf": [
+        {"if": {"properties": {"kind": {"const": "openiti"}}},
+         "then": {"required": ["repo", "commit", "path"],
+                  "properties": {"commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"}}}},
+        {"if": {"properties": {"kind": {"const": "shamela"}}},
+         "then": {"required": ["book_id"]}},
+        {"if": {"properties": {"kind": {"const": "archive"}}},
+         "then": {"required": ["item"]}},
+        {"if": {"properties": {"kind": {"const": "url"}}},
+         "then": {"required": ["url", "format"]}},
+        {"if": {"properties": {"format": {"const": "pdf"}}, "required": ["format"]},
+         "then": {"required": ["ocr", "file"]}}
+      ]
+    }
+  }
+}

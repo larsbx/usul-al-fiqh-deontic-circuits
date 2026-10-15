@@ -1,0 +1,544 @@
+{
+  "suite": "m8_rajab_tranche_1",
+  "status": "candidate",
+  "provenance": "M8 first tranche: every far record of Ibn Rajab's qawāʿid 6, 22 and 68, annotated against readings formalised from each qāʿida's own statement (Usul.Refinements). Annotated by reading the full paragraph in the pinned witness; every claim of agreement is guarded by Lean (UsulTest/Takhrij.lean); classes and facts await human review (Review.tla).",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f001",
+      "encoder": "excused_error",
+      "class": "derivable",
+      "facts": {
+        "others_right": false,
+        "negligent": false
+      },
+      "expected": true,
+      "note": "Kaffāra by feeding («كفر … بالإطعام») for one unable to fast in despair of recovery, then recovered: no make-up fast. Done in its time as the wājib; no right of another, no negligence."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f002",
+      "encoder": "excused_error",
+      "class": "derivable",
+      "facts": {
+        "others_right": false,
+        "negligent": false
+      },
+      "expected": true,
+      "note": "Menses stopped for an unknown reason: a year's ʿidda, then menses return: no new ʿidda."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f003",
+      "encoder": "excused_error",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "others_right": false,
+        "negligent": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the madhhab as stated: no repetition",
+          "ruling": true
+        },
+        {
+          "who": "Abū Bakr: ẓuhr before the imam's jumuʿa does not suffice",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Ẓuhr prayed by one excused from jumuʿa, excuse lifted before the imam prays: no repetition. Abū Bakr's view (it does not suffice before the imam) rests, as Ibn Rajab notes, on a different maʾkhadh: the time of ẓuhr for him begins with the imam's jumuʿa."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f004",
+      "encoder": "excused_error",
+      "class": "derivable",
+      "facts": {
+        "others_right": false,
+        "negligent": false
+      },
+      "expected": true,
+      "note": "Joined to the qāʿida (a hidden defect in a sharṭ: here the qibla): qibla by ijtihād, then the error shown: no repetition «على الصحيح»; zakāt to one believed poor likewise «على أصح الروايتين»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f005",
+      "encoder": "excused_error",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "others_right": true,
+        "negligent": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-mashhūr: undone, since another's right is attached",
+          "ruling": false
+        },
+        {
+          "who": "Ibn ʿAqīl (al-Funūn), al-Qāḍī, al-Āmidī: not undone",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A ruling on two apparently upright witnesses, then their fisq shown: «والمشهور النقض لتعلق حق الغير به»; Ibn ʿAqīl, al-Qāḍī and al-Āmidī: not undone, so as not to undo ijtihād by ijtihād. The limit the reading carries: another's right is attached."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f001",
+      "encoder": "istihlak",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "consumed": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Qāḍī: it establishes the prohibition",
+          "ruling": false
+        },
+        {
+          "who": "the author of al-Mughnī: it does not",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Milk mixed into water and consumed: does it establish the prohibition of nursing? Al-Qāḍī: yes; the author of al-Mughnī: no. No madhhab marked; the reading (consumed as non-existent) takes al-Mughnī's side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f002",
+      "encoder": "istihlak",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "consumed": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-mashhūr: no ḥadd",
+          "ruling": true
+        },
+        {
+          "who": "Abū Bakr in al-Tanbīh: ḥadd",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Khamr mixed into water and consumed, then drunk: no ḥadd, «هذا هو المشهور»; Abū Bakr (al-Tanbīh): ḥadd, without distinguishing consumed from not."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f003",
+      "encoder": "khalt_as_shirka",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "same_kind": true,
+        "indistinct": true
+      },
+      "expected": "shared",
+      "positions": [
+        {
+          "who": "the manṣūṣ (ʿAbd Allāh, Abū al-Ḥārith), Ibn Ḥāmid, al-Qāḍī's Khilāf: partnership",
+          "ruling": "shared"
+        },
+        {
+          "who": "al-Mujarrad; al-Marrūdhī's riwāya: consumption",
+          "ruling": "consumed"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Oil mixed indistinguishably with another's: consumption or partnership? «المنصوص في رواية عبد الله وأبي الحارث أنه اشتراك» (Ibn Ḥāmid, al-Qāḍī in his Khilāf); al-Mujarrad: consumption. The reading lands on the minority: same-kind fungibles mixed become a partnership, which consumption-as-absence does not express. Round 5: the manṣūṣ is the bank's reading (khalt_as_shirka): mixed indistinguishably with its own kind, the oil is shared.",
+      "revisit": {
+        "from_class": "genuine_ikhtilaf",
+        "from_encoder": "istihlak",
+        "closed_by": [
+          "rule:khalt_as_shirka"
+        ]
+      }
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f004",
+      "encoder": "khalt_as_shirka",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "same_kind": true,
+        "indistinct": true
+      },
+      "expected": "shared",
+      "positions": [
+        {
+          "who": "on partnership (the manṣūṣ): the bequest stands",
+          "ruling": "shared"
+        },
+        {
+          "who": "on consumption: it lapses",
+          "ruling": "consumed"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A bequest of a raṭl of a specific oil, then mixed with other oil: on partnership the bequest stands, on consumption it lapses. It follows f003, so the kernel again takes the minority. Round 5: on the manṣūṣ the oil is shared, so the bequest stands.",
+      "revisit": {
+        "from_class": "genuine_ikhtilaf",
+        "from_encoder": "istihlak",
+        "closed_by": [
+          "rule:khalt_as_shirka"
+        ]
+      }
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f005",
+      "encoder": "istihlak",
+      "class": "derivable",
+      "facts": {
+        "consumed": true
+      },
+      "expected": true,
+      "note": "Sworn not to eat a thing, then eats it consumed in another: «قال الأصحاب لا يحنث», by custom; Ibn Rajab notes a possible wajh of breaking the oath, not transmitted as a view."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f006",
+      "encoder": "istihlak",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "consumed": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Targhīb: breaks the oath, the grain is not consumed",
+          "ruling": false
+        },
+        {
+          "who": "Abū al-Khaṭṭāb's other wajh: does not break it",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Sworn not to eat wheat, eats barley with grains of wheat: Abū al-Khaṭṭāb gives two wujūh; the author of al-Targhīb faults him: it breaks the oath without dispute («يحنث بلا خلاف»), since the grain is distinct and not consumed. The reading agrees with al-Targhīb; no madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f007",
+      "encoder": "mixed_haram_by_proportion",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "lawful_many": false
+      },
+      "expected": "suspend",
+      "positions": [
+        {
+          "who": "Aḥmad's naṣṣ (al-Marrūdhī): few, suspend until known",
+          "ruling": "suspend"
+        },
+        {
+          "who": "al-Qāḍī, Ibn ʿAqīl's Fuṣūl: take out the share in all",
+          "ruling": "takeOut"
+        },
+        {
+          "who": "Ibn ʿAqīl's Funūn: all forbidden",
+          "ruling": "suspend"
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Own dirhams mixed with usurped ones: Aḥmad (al-Marrūdhī): few (one in three) — suspend until known; many (one in thirty) — take one out and use the rest; al-Qāḍī: taking out the amount is due in all; Ibn ʿAqīl (al-Funūn): all forbidden. The ruling turns on the proportion, which consumption-as-absence does not express. Round 5: annotated for the disputed few (three with one unlawful); for the many (thirty with one) the naṣṣ takes one out and uses the rest, and al-Qāḍī agrees.",
+      "revisit": {
+        "from_class": "missing_rule",
+        "from_encoder": "istihlak",
+        "closed_by": [
+          "rule:mixed_haram_by_proportion"
+        ]
+      },
+      "side_check": {
+        "from_matches": true,
+        "refs": [
+          "src:openiti-ibnmuflih-furu-shamela12052/v04:p396"
+        ],
+        "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side.",
+        "contradictions": [
+          {
+            "evidence_index": 0,
+            "case_facts": {
+              "lawful_many": false
+            },
+            "rationale": "Tashih al-Furu masala 3 explicitly rejects Ahmad's numerical threshold and adopts extraction of the unlawful share. This contradicts the proportion-dependent suspend reading for lawful_many=false. Owner-knownness remains a missing scope distinction; Kashshaf is supplemental only."
+          }
+        ]
+      }
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008",
+      "encoder": "trust_loss",
+      "class": "genuine_ikhtilaf",
+      "home": "istihlak",
+      "facts": {
+        "hand": "trustee",
+        "transgressed": true,
+        "negligent": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-mashhūr: liable, the mixing is a transgression",
+          "ruling": true
+        },
+        {
+          "who": "a riwāya: not liable",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A deposit of dirhams mixed with his own money: «فالمشهور الضمان لعدوانه»; another riwāya: no liability, since coins are not wanted for themselves. Decided by the trust-loss reading (transgression), not by consumption: home qāʿida 22."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f001",
+      "encoder": "rukhsa_under_doubt",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "rukhsa_needs_certainty": true,
+        "permission_established": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the second wajh: the wuḍūʾ is repeated, the wiping a concession not established",
+          "ruling": false
+        },
+        {
+          "who": "al-Mughnī: not repeated, wuḍūʾ is valid with doubt in its cause",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Doubting whether the wiping period began in travel or residence, he wiped past the resident's period: the prayer is repeated; for the wuḍūʾ two wujūh — al-Mughnī: not repeated (wuḍūʾ is valid with doubt in its cause: «مع الشك في سببه»); the other: repeated, since wiping is a concession whose permission was not established. The second turns on a fact the reading lacks: whether a concession needs certainty of its permission. Round 5: a concession needs its permission established as a sharṭ («ولم تتحقق إباحتها») (rukhsa_is_firm_condition); the reading takes the second wajh. The prayer is repeated on both.",
+      "revisit": {
+        "from_class": "missing_fact",
+        "from_encoder": "doubt_in_condition",
+        "closed_by": [
+          "fact:rukhsa_needs_certainty"
+        ]
+      }
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f002",
+      "encoder": "doubt_in_condition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "needs_firm_intention": true,
+        "ghalaba": false,
+        "asl_mustashab": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-mashhūr: not valid",
+          "ruling": false
+        },
+        {
+          "who": "al-Qāḍī Abū al-Ḥusayn: valid",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Wuḍūʾ from a doubtful vessel, then found ṭahūr: not valid «في المشهور»; Abū al-Ḥusayn: valid, firmness not being a sharṭ («لا يشترط»). Firmness needed, no preponderant belief, no presumption to build on."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f003",
+      "encoder": "doubt_in_condition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "needs_firm_intention": true,
+        "ghalaba": true,
+        "asl_mustashab": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Ibn ʿAqīl: it suffices",
+          "ruling": true
+        },
+        {
+          "who": "an extracted wajh: it does not",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Wuḍūʾ while doubting ḥadath, or prayer on a preponderant belief that the time has entered, with an intention suspended on it (taʿlīq of the niyya: «ونوى الفرض إن كان محدثا»): Ibn ʿAqīl: it suffices; a wajh is extracted that it does not. The prayer rests on ghalabat al-ẓann. No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f004",
+      "encoder": "doubt_in_condition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "needs_firm_intention": true,
+        "ghalaba": false,
+        "asl_mustashab": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the madhhab as stated: it suffices",
+          "ruling": true
+        },
+        {
+          "who": "Abū Bakr: it does not",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Zakāt intended for the absent wealth if safe, else voluntary («وإلا فتطوع»), and it was safe: it suffices, built on a presumption (its continuance); Abū Bakr: it does not, the intention was not purely for the obligation."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f005",
+      "encoder": "doubt_in_condition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "needs_firm_intention": true,
+        "ghalaba": false,
+        "asl_mustashab": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-mashhūr: it does not suffice",
+          "ruling": false
+        },
+        {
+          "who": "Ṣāliḥ from Aḥmad: it suffices under cloud",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Intending on the night of doubt: obligatory if tomorrow is Ramaḍān, else voluntary («فهو فرض وإلا فهو نفل»): since specification is required «وهو المشهور في المذهب», it does not suffice — not firm, and «لم يبن على أصل مستصحب»; Ṣāliḥ's report from Aḥmad: the hesitant intention suffices under cloud."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f006",
+      "encoder": "doubt_in_condition",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "needs_firm_intention": false,
+        "ghalaba": false,
+        "asl_mustashab": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Ibn ʿAqīl: valid",
+          "ruling": true
+        },
+        {
+          "who": "al-Qāḍī in al-Mujarrad: not valid",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Exchanging deposited dinars while not knowing whether they remain: al-Qāḍī (al-Mujarrad): not valid; Ibn ʿAqīl: valid, since their remaining is the presumption. Of the second type, where «فالصحيح فيه الصحة»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f007",
+      "encoder": "taliq_al_bay",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "conditional": true,
+        "known_to_hold": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Qāḍī, Ibn ʿAqīl: not valid, a sale cannot be conditioned",
+          "ruling": false
+        },
+        {
+          "who": "al-Kāfī, with Aḥmad's naṣṣ on the absent sale: valid",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The agent who bought a slave girl, the principal denying the agency, then «إن كنت أذنت لك… فقد بعتكها»: al-Qāḍī and Ibn ʿAqīl: not valid, since a sale cannot be made conditional (taʿlīq: «لا يصح تعليقه»); al-Kāfī as a possibility: valid. The reading's second type gives validity; the first wajh (al-Qāḍī, Ibn ʿAqīl) rests on the bar on conditional sale, a different principle; Ibn Rajab marks neither as aṣaḥḥ («على وجهين»). Round 5: the condition is a fact both know to hold, so it adds nothing to the contract (al-Kāfī); no madhhab marked.",
+      "revisit": {
+        "from_class": "genuine_ikhtilaf",
+        "from_encoder": "doubt_in_condition",
+        "closed_by": [
+          "rule:taliq_al_bay"
+        ]
+      }
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f008",
+      "encoder": "doubt_in_condition",
+      "class": "derivable",
+      "facts": {
+        "needs_firm_intention": false,
+        "ghalaba": false,
+        "asl_mustashab": true
+      },
+      "expected": true,
+      "note": "Taking back a wife while doubting whether a ṭalāq occurred: «قال أصحابنا هي رجعة صحيحة رافعة للشك», the marriage being the presumption."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f009",
+      "encoder": "hukm_against_own_ijtihad",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "contradicts_nass": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "Ibn Abī Mūsā: he sins, the ruling is not undone unless it contradicts a clear text",
+          "ruling": false
+        },
+        {
+          "who": "al-Sāmirī: undone, the ruling must agree with his belief",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A judge ruling against what he believes right: he sins, and his verdict (ḥukm al-ḥākim, «ولم ينقض حكمه») is not undone unless it contradicts an explicit text (Ibn Abī Mūsā); al-Sāmirī: undone. Not a doubt about a sharṭ (al-Sāmirī's «شرط صحة الحكم موافقة الاعتقاد» is his reason, not the case); it turns on whether ijtihād undoes a ruling. Round 5: IQ-21's principle, «الاجتهاد لا ينقض بالاجتهاد» with «لا عبرة بالظن البين خطؤه» (rulingUndone); no madhhab marked.",
+      "revisit": {
+        "from_class": "missing_rule",
+        "from_encoder": "doubt_in_condition",
+        "closed_by": [
+          "rule:hukm_against_own_ijtihad"
+        ]
+      }
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f010",
+      "encoder": "doubt_in_condition",
+      "class": "derivable",
+      "facts": {
+        "needs_firm_intention": false,
+        "ghalaba": false,
+        "asl_mustashab": false
+      },
+      "expected": true,
+      "note": "Ruling that one accused of apostasy who denies it and says the two testimonies is a Muslim: a valid ruling despite the hesitation over its ground."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f000",
+      "encoder": "excused_error",
+      "class": "derivable",
+      "facts": {
+        "others_right": false,
+        "negligent": false
+      },
+      "expected": true,
+      "note": "The maʿḍūb who has someone perform the ḥajj for him, then recovers: it suffices «على المذهب», since he did the duty in its time («لأنه فعل الواجب عليه في وقته»). (Opening example, segmented as f000.)"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f000",
+      "encoder": "istihlak",
+      "class": "missing_fact",
+      "note": "Water in which najāsa is consumed: if the water is much, the najāsa's ruling falls «بغير خلاف»; if little, two riwāyas. The ruling turns on the quantity of water, which the reading (consumed as non-existent) does not express, so the record is not derivable as a whole. (Opening example, segmented as f000.)",
+      "needs": [
+        "fact:water_quantity"
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f000",
+      "encoder": "doubt_in_condition",
+      "class": "derivable",
+      "facts": {
+        "needs_firm_intention": true,
+        "ghalaba": false,
+        "asl_mustashab": false
+      },
+      "expected": false,
+      "note": "Praying while believing oneself in ḥadath, then found in ṭahāra: not valid, the example of type 1 (firm intention needed; the belief was against validity, with no presumption built on). (Opening example, segmented as f000.)"
+    }
+  ]
+}

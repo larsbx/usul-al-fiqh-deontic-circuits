@@ -1,0 +1,50 @@
+{
+  "total": 123,
+  "classes": {
+    "derivable": 63,
+    "encoding_error": 3,
+    "genuine_ikhtilaf": 2,
+    "missing_fact": 29,
+    "missing_rule": 25,
+    "segmentation_error": 1
+  },
+  "coverage": 0.533,
+  "madhhab_coverage": 0.525,
+  "encoding_error": 3,
+  "ikhtilaf_matching_madhhab": 1,
+  "gaps_open": 54,
+  "revisited": 0,
+  "revisit_queue": [
+    "islamqa.287215.f002"
+  ],
+  "per_encoder": {
+    "itlaf": {
+      "missing_fact": 11,
+      "missing_rule": 16
+    },
+    "unknown_owner": {
+      "derivable": 11,
+      "genuine_ikhtilaf": 1,
+      "missing_fact": 4,
+      "missing_rule": 1
+    },
+    "trust_loss": {
+      "derivable": 18,
+      "missing_fact": 1,
+      "missing_rule": 2,
+      "segmentation_error": 1
+    },
+    "asl_zahir": {
+      "derivable": 24,
+      "missing_fact": 1,
+      "missing_rule": 2
+    },
+    "luqata": {
+      "derivable": 10,
+      "encoding_error": 3,
+      "genuine_ikhtilaf": 1,
+      "missing_fact": 12,
+      "missing_rule": 4
+    }
+  }
+}

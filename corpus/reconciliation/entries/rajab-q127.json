@@ -1,0 +1,71 @@
+{
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f005",
+   "grades": [
+    "nass",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Two riwāyas on the holder. al-Inṣāf makes the killer's alone the madhhab, with al-Kharaqī and al-Wajīz stating it, and al-Iqnāʿ states it. Against the reading.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v09:p456",
+     "excerpt_ar": "وإن أمسك إنسانا لآخر ليقتله فقتله: قتل القاتل وحبس الممسك حتى يموت في إحدى الروايتين) وهو المذهب",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The killer is killed and the holder imprisoned until he dies: «وهو المذهب»."
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p172",
+     "excerpt_ar": "قتل القاتل وحبس الممسك حتى يموت ولا قود عليه ولا دية",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "The Iqnāʿ states it: no qawad and no diya on the holder."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f006",
+   "grades": [
+    "nass",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Two riwāyas on the stone beside the well. al-Inṣāf makes the placer's alone «المذهب المشهور», and al-Iqnāʿ states it, «كدافع إذا تعديا». Against the reading.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v10:p034",
+     "excerpt_ar": "فالضمان على واضع الحجر) . وهذا المذهب المشهور",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The placer alone: «وهذا المذهب المشهور»; against it «وعنه: الضمان عليهما»."
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p200",
+     "excerpt_ar": "ضمن واضع الحجر المال وعلى عاقلته دية الحر: كدافع إذا تعديا",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "The Iqnāʿ states it, the placer treated as the pusher where both transgressed."
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f008",
+   "grades": [
+    "wajh",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "al-Qāḍī's two iḥtimālāt in al-Mujarrad, reported by Ibn Rajab without preference. No later work in the bank states this case's side.",
+   "evidence": []
+  }
+ ]
+}

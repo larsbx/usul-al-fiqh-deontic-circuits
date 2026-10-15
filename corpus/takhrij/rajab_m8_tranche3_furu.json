@@ -1,0 +1,573 @@
+{
+  "suite": "m8_rajab_tranche_3",
+  "status": "candidate",
+  "provenance": "Consolidated M8 tranche 3: 21 list-and-division cases from PR #32 (q1, q17, q66, q91, q93) and eight existing-record cases from PR #31 (q31, q47). All 29 case objects and interpretation boundaries are preserved. M8 third tranche: every far record of Ibn Rajab's qawāʿid 1, 17, 66, 91 and 93, newly segmented by their lists and divisions, annotated against readings formalised from each qāʿida's own statement (Usul.Refinements). Annotated by reading the full paragraph in the pinned witness; every claim of agreement is guarded by Lean (UsulTest/Takhrij.lean); classes and facts await human review (Review.tla). Eight existing far records under Ibn Rajab qawāʿid 31 and 47, on main 86f457b9f283ba63444c49aef4c7bdd6165df027 after merged M8 tranche 2 (#30). Full source read in OpenITI/0800AH at 7b745ec7b83d6d4971f937364dbdec2fe0ba2a40, SHA-256 f077fdf1ba4ec9cfecafed8b5e0023e850f57084e17463847cc238e3d1128e68; record identifiers and source corpus untouched. Source receipts and unresolved interpretive questions are in corpus/worklists/rajab_m8_tranche3_plan.json. These LLM-assisted readings and classes await human review; Lean verifies derivability under the encoding, not scholarly adoption.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
+      "encoder": "running_water",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "running": true
+      },
+      "expected": "perJirya",
+      "positions": [
+        {
+          "who": "riwāya, al-Qāḍī's madhhab: each jirya",
+          "ruling": "perJirya"
+        },
+        {
+          "who": "riwāya: the whole",
+          "ruling": "whole"
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Najāsa falls into running water: is the whole reckoned, or each jirya by itself (two qullas or not)? Two riwāyas; «(والثانية) : المذهب عند القاضي».",
+      "side_check": {
+        "from_matches": true,
+        "refs": [
+          "src:openiti-buhuti-kashshaf-shamela21642/v01:p039",
+          "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p021",
+          "src:openiti-insaf-shamela21609/v01:p057"
+        ],
+        "note": "Lane D: the later madhhab (al-Inṣāf, the muʿtamad) holds the other side.",
+        "contradictions": [
+          {
+            "evidence_index": 0,
+            "case_facts": {
+              "running": true
+            },
+            "rationale": "Running water: al-Insaf marks whole-body accounting as the madhhab; Sharh al-Muntaha expressly contrasts the per-jirya report with the adopted whole-body rule. The opposing per-jirya tashih is retained in the full ledger, not selected as contradiction evidence."
+          },
+          {
+            "evidence_index": 2,
+            "case_facts": {
+              "running": true
+            },
+            "rationale": "Running water: al-Insaf marks whole-body accounting as the madhhab; Sharh al-Muntaha expressly contrasts the per-jirya report with the adopted whole-body rule. The opposing per-jirya tashih is retained in the full ledger, not selected as contradiction evidence."
+          },
+          {
+            "evidence_index": 3,
+            "case_facts": {
+              "running": true
+            },
+            "rationale": "Running water: al-Insaf marks whole-body accounting as the madhhab; Sharh al-Muntaha expressly contrasts the per-jirya report with the adopted whole-body rule. The opposing per-jirya tashih is retained in the full ledger, not selected as contradiction evidence."
+          }
+        ]
+      }
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001",
+      "encoder": "running_water",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "running": true
+      },
+      "expected": "perJirya",
+      "positions": [
+        {
+          "who": "ẓāhir of the aṣḥāb: one washing",
+          "ruling": "whole"
+        },
+        {
+          "who": "the other wajh: seven",
+          "ruling": "perJirya"
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A najis vessel dipped in running water as seven jiryas pass: one washing (ghasla) or seven? Two wujūh; the ẓāhir of the aṣḥāb is one ghasla, and al-Qāḍī's Sharḥ says Aḥmad's words point to it. Here the madhhab side is the whole."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f002",
+      "encoder": "running_water",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "running": true
+      },
+      "expected": "perJirya",
+      "positions": [
+        {
+          "who": "ashhar: lifted (each jirya a ghasla)",
+          "ruling": "perJirya"
+        },
+        {
+          "who": "Abū al-Khaṭṭāb; Aḥmad's naṣṣ per Ibn Rajab: not lifted",
+          "ruling": "whole"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "One in minor ḥadath immersed while four jiryas pass in sequence: is the ḥadath lifted? «أشهرهما عند الأصحاب أنه يرتفع»; Abū al-Khaṭṭāb: not, and Ibn Rajab cites Aḥmad's naṣṣ equating running and still water."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003",
+      "encoder": "ayman_by_urf",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "custom_one_body": true
+      },
+      "expected": "whole",
+      "positions": [
+        {
+          "who": "Abū al-Khaṭṭāb: not broken",
+          "ruling": "perJirya"
+        },
+        {
+          "who": "qiyās al-manṣūṣ (Ibn Rajab), al-Qāḍī's Jāmiʿ: broken, by custom",
+          "ruling": "whole"
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Oath not to stand in this water, and it is running: not broken (Abū al-Khaṭṭāb), since running water is renewed; «وقياس المنصوص أنه يحنث … والأيمان مرجعها إلى العرف», Ibn Rajab's preference. No madhhab marked; the oath turns on custom, which the reading does not express. Round 5: al-Saʿdī's Q9 measures the oath's object by custom (oathBody), which counts the river as one; the reading now follows Ibn Rajab. No madhhab marked.",
+      "revisit": {
+        "from_class": "genuine_ikhtilaf",
+        "from_encoder": "running_water",
+        "closed_by": [
+          "rule:ayman_by_urf"
+        ]
+      }
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f001",
+      "encoder": "many_over_noble",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "same_cost": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "mashhūr: the many",
+          "ruling": true
+        },
+        {
+          "who": "riwāya: the long",
+          "ruling": false
+        },
+        {
+          "who": "riwāya: equal",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Two long rakʿas against four in the same time: «فالمشهور أن الكثرة أفضل»; riwāyas for the reverse and for equality."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f002",
+      "encoder": "many_over_noble",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "same_cost": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Aḥmad's naṣṣ: two",
+          "ruling": true
+        },
+        {
+          "who": "Taqī al-Dīn: the fat one",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "One fat badana for ten against two for ten or less: Aḥmad (Ibn Manṣūr), «ثنتان أعجب إلي»; Taqī al-Dīn prefers the fat one, with a ḥadīth in Abū Dāwūd."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f003",
+      "encoder": "many_over_noble",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "same_cost": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Aḥmad (Jaʿfar): the many",
+          "ruling": true
+        },
+        {
+          "who": "Aḥmad (Muthannā), Taqī al-Dīn, the Companions: reflection",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Reciting one sūra with reflection against many in the same time: Aḥmad's answer to Jaʿfar is «ظاهر في ترجيح الكثرة»; other narrations favour reflection («تفكر ساعة خير من قيام ليلة»), Taqī al-Dīn's choice, «المنصوص صريحا عن الصحابة والتابعين». Aḥmad's narrations divide; no madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f004",
+      "encoder": "many_over_noble",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "same_cost": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "ẓāhir of Aḥmad: the one who strives (two works)",
+          "ruling": true
+        },
+        {
+          "who": "al-Junayd, Taqī al-Dīn: the glad one",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "One whose soul obeys gladly against one who forces himself: Aḥmad cites «فله أجران», «ظاهر في ترجيح المكره نفسه لأن له عملين»; al-Junayd and Taqī al-Dīn: the glad one is better."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f005",
+      "encoder": "many_over_noble",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "same_cost": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "al-Qāḍī, Ibn ʿAqīl: the many",
+          "ruling": true
+        },
+        {
+          "who": "Ibn Rajab: the precious one",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "One precious slave against several for the same money: al-Qāḍī and Ibn ʿAqīl, the many; Ibn Rajab: «وفيه أيضا نظر», with «خير الرقاب أنفسها عند أهلها وأغلاها ثمنا». No madhhab marked."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f001",
+      "encoder": "makeup_after_failure",
+      "class": "derivable",
+      "facts": {
+        "failure": "corruption"
+      },
+      "expected": "asBegun",
+      "note": "A traveller began behind a resident and the prayer was corrupted: make it up in full. Q31 explicitly requires the description of the undertaking made wājib («فإنه يجب عليه قضاؤها تامة»), rather than the lesser baseline."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f002",
+      "encoder": "makeup_after_failure",
+      "class": "derivable",
+      "facts": {
+        "failure": "corruption"
+      },
+      "expected": "asBegun",
+      "note": "A pilgrimage begun with ihram at the home place was corrupted by intercourse: its make-up starts there, by Ahmad's text. The same paragraph contrasts prevention (ihsar), where a subsequent make-up starts only at the miqat because completion did not become binding («لم يلزمه إتمامه»). The prevention contrast has a separate Lean guard; baseline describes form, not an independently inferred wujūb to make up."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f003",
+      "encoder": "makeup_after_failure",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "failure": "lossWithoutFault"
+      },
+      "expected": "baseline",
+      "note": "An offering designated above the minimum was lost without fault. Two wujuh are reported; this candidate selects the author of al-Mughni's baseline replacement. With fault the paragraph explicitly requires like-for-like replacement and the additional Lean guard checks it. No madhhab is independently identified for the no-fault dispute.",
+      "positions": [
+        {
+          "who": "author of al-Mughni: only the baseline due in the dhimma",
+          "ruling": "baseline"
+        },
+        {
+          "who": "other reported wajh: retain the enhanced designated description",
+          "ruling": "asBegun"
+        }
+      ],
+      "matches_madhhab": false
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004",
+      "encoder": "makeup_after_failure",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "failure": "corruption"
+      },
+      "expected": "asBegun",
+      "note": "A vowed (nadhr: «لو نذر اعتكافا») Ramadan retreat was corrupted. The selected position is the apparent text of Ahmad and Ibn Abi Musa: make it up in corresponding days. The full paragraph extends the reasoning to the last ten days of the following Ramadan. Two wujuh are reported; apparent Ahmad text is not silently promoted to an independently accepted madhhab classification.",
+      "positions": [
+        {
+          "who": "apparent text of Ahmad and Ibn Abi Musa: corresponding days",
+          "ruling": "asBegun"
+        },
+        {
+          "who": "other reported wajh: no requirement of corresponding days",
+          "ruling": "baseline"
+        }
+      ],
+      "matches_madhhab": false
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f000",
+      "encoder": "defective_compensation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "contract_liability": false
+      },
+      "expected": "equivalent",
+      "note": "A thing received under a fāsid sale: the known madhhab position requires equivalent/value, not the named price, because the ḍamān comes from loss under the hand, not this fāsid contract. Abu Bakr, followed here by Taqi al-Din, is reported as selecting the named consideration. Full paragraph read beyond the 400-character record cap.",
+      "positions": [
+        {
+          "who": "known madhhab; Ahmad in the cited transmissions: equivalent/value",
+          "ruling": "equivalent"
+        },
+        {
+          "who": "Abu Bakr Abd al-Aziz; Taqi al-Din: named consideration",
+          "ruling": "agreed"
+        }
+      ],
+      "matches_madhhab": true
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f001",
+      "encoder": "defective_compensation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "contract_liability": false
+      },
+      "expected": "equivalent",
+      "note": "Fāsid lease: the known madhhab requires equivalent rent. A named-rent alternative is derived from Abu Bakr's sale position. The source says its discussion is the same as sale; the Boolean fact denotes this explicit ḍamān basis, not a general classification of all leases.",
+      "positions": [
+        {
+          "who": "known madhhab: equivalent rent",
+          "ruling": "equivalent"
+        },
+        {
+          "who": "derived from Abu Bakr: named rent",
+          "ruling": "agreed"
+        }
+      ],
+      "matches_madhhab": true
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f002",
+      "encoder": "defective_compensation",
+      "class": "derivable",
+      "facts": {
+        "contract_liability": true
+      },
+      "expected": "agreed",
+      "note": "Fāsid kitāba with a lawful named consideration: the source expressly says the named amount, not the slave's value, and reports agreement on that outcome. The full paragraph distinguishes a fāsid undertaking with prohibited consideration, which is outside this encoding. The competing explanations (an exchange contract versus a taʿlīq bi-ṣifa, «تعليق بصفة») are retained for human review; the guard tests the stated amount basis only."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f003",
+      "encoder": "defective_compensation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "contract_liability": true
+      },
+      "expected": "agreed",
+      "note": "Fāsid nikāḥ after consummation: the selected well-known Ahmad transmission, identified as the madhhab by Abu Bakr and Ibn Abi Musa and chosen by al-Qadi, fixes the named mahr. Another transmission, chosen by al-Khiraqi and the author of al-Mughni, fixes equivalent mahr. The full source explains the selected branch as ḍamān under the contract; no blanket rule about validity, all nikah, or all relations is inferred.",
+      "positions": [
+        {
+          "who": "well-known Ahmad transmission; madhhab as identified by Abu Bakr and Ibn Abi Musa: named mahr",
+          "ruling": "agreed"
+        },
+        {
+          "who": "other Ahmad transmission; al-Khiraqi and author of al-Mughni: equivalent mahr",
+          "ruling": "equivalent"
+        }
+      ],
+      "matches_madhhab": true
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f000",
+      "encoder": "mistaken_basis",
+      "class": "derivable",
+      "facts": {
+        "believed_basis": true,
+        "actual_basis": true
+      },
+      "expected": true,
+      "note": "Facing a star he took for al-Jady, which was another star in line with it: the act stands, the basis he relied on being valid too («فالتصرف صحيح»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f001",
+      "encoder": "mistaken_basis",
+      "class": "derivable",
+      "facts": {
+        "believed_basis": true,
+        "actual_basis": true
+      },
+      "expected": true,
+      "note": "He disposed of what he had bought, the sale being fāsid («أن الشراء كان فاسدا»), and he had in fact inherited it: «والمذهب هنا الصحة بلا ريب», since he relied on a permitting cause («سبب مسوغ») and had another in fact (Taqī al-Dīn); Ibn Rajab adds the usurper's gift to the owner as support."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f000",
+      "encoder": "hand_liability",
+      "class": "derivable",
+      "facts": {
+        "property_like": true
+      },
+      "expected": true,
+      "note": "Umm al-walad, the mukātab and the mudabbar, which have a share of freedom's rulings but not its reality: «فيضمن باليد على ما ذكره القاضي والأصحاب», and by a fāsid contract in qiyās al-madhhab (Abū al-Barakāt)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f001",
+      "encoder": "hand_liability",
+      "class": "derivable",
+      "facts": {
+        "property_like": false
+      },
+      "expected": false,
+      "note": "The free person: «المعروف من المذهب أن الحر لا تثبت عليه اليد فلا يضمن بها بحال», even when a follower of what the hand holds. Two riwāyas on the free minor, and al-Qāḍī's view that the hand holds the adult's benefits by contract, are sub-cases."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f001",
+      "encoder": "taker_from_usurper",
+      "class": "derivable",
+      "facts": {
+        "entered_on_liability": true
+      },
+      "expected": false,
+      "note": "The usurping hand: «يتعلق بها الضمان كأصلها ويستقر عليها مع التلف تحتها»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f002",
+      "encoder": "taker_from_usurper",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "entered_on_liability": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "mashhūr: recourse on the usurper",
+          "ruling": true
+        },
+        {
+          "who": "wajh (al-Mujarrad): settles on it",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The hand taking for the giver's benefit (depositee, unpaid agent): «فالمشهور أن للمالك تضمينها ثم يرجع بما ضمن على الغاصب لتغريره»; a wajh: it settles on it; a takhrīj: it cannot be made liable at all."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f003",
+      "encoder": "taker_from_usurper",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "entered_on_liability": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "mashhūr: recourse",
+          "ruling": true
+        },
+        {
+          "who": "possibility: settles on it",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The hand taking for both (partner, muḍārib, paid agent, murtahin): «فالمشهور جواز تضمينها أيضا وترجع بما ضمنت لدخولها على الأمانة»; two possibilities: it settles on it, or it cannot be made liable, which Ibn Rajab thinks should be the madhhab."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f004",
+      "encoder": "taker_from_usurper",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "entered_on_liability": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "stated ruling: recourse for the benefit",
+          "ruling": true
+        },
+        {
+          "who": "second riwāya: settles, being consumed",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The hand taking for itself (borrower; ʿāriya for the benefit): for the benefit, which it did not undertake, «رجعت على الغاصب بضمان المنفعة»; a second riwāya: no recourse for benefit consumed. For the thing itself, which it undertook, no recourse."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f005",
+      "encoder": "taker_from_usurper",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "entered_on_liability": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the aṣḥāb: no recourse for the value",
+          "ruling": false
+        },
+        {
+          "who": "Ibn Rajab's qiyās al-madhhab: on the usurper",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The buyer from the usurper: no recourse for the value of the thing, having undertaken it, though he recovers the price; Ibn Rajab: «وهو عندي قياس المذهب» that it settles on the usurper; al-Talkhīṣ: recourse for any excess over the price."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f006",
+      "encoder": "taker_from_usurper",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "entered_on_liability": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī and followers: no recourse",
+          "ruling": false
+        },
+        {
+          "who": "takhrīj from sale: recourse",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The hand taking a countervalue due without sale (ṣadāq, khulʿ, settlement): for the value of the thing, «لا يرجع بها ; لأنه دخل على أنها مضمونة عليه بحقه» (al-Qāḍī and those following him); the takhrīj from sale gives recourse."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f007",
+      "encoder": "taker_from_usurper",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "entered_on_liability": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "al-Qāḍī and most: no recourse for the benefit",
+          "ruling": false
+        },
+        {
+          "who": "takhrīj: no liability at all",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The lessee: for the benefit, which it paid for, «فقال القاضي والأكثرون إذا ضمنت المنفعة لم يرجع بها»; for the thing itself it has recourse. Abū al-Barakāt derives two wujūh."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f008",
+      "encoder": "taker_from_usurper",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "entered_on_liability": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "mashhūr: recourse",
+          "ruling": true
+        },
+        {
+          "who": "wajh: no recourse",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The partners' hands (muḍārib, muzāriʿ, musāqī): «فقد دخلوا على أن لا ضمان عليهم بحال فإذا ضمنوا على المشهور رجعوا» except their share of the profit; a wajh: no recourse. The segment also holds hands 9 (recipient without countervalue: «فالمشهور أنها ترجع») and 10 (destroying for the usurper: «فلا قرار عليها»), which the segmenter did not cut: both agree with the reading."
+    }
+  ]
+}

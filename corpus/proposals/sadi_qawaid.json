@@ -1,0 +1,996 @@
+{
+ "work": "sadi.qawaid_jamia",
+ "status": "candidate",
+ "provenance": "Machine-normalised from two OCR witnesses (archive-pdf1995, archive-pdf1995-tess; body headings and closing index); statements cleaned of OCR noise, glosses and kinds proposed. Awaiting human review (Review.tla: only human review admits a record).",
+ "kinds": {
+  "meta": "about the law, its evidence or its weighing",
+  "default": "presumption or default status",
+  "closure": "closure of rulings under a relation",
+  "taqsim": "partition into cases",
+  "farq": "distinction between similar cases",
+  "rule": "substantive general rule",
+  "procedure": "procedure or proof",
+  "interpretation": "reading of utterances and acts"
+ },
+ "rules": [
+  {
+   "number": 1,
+   "statement_ar": "الشارع لا يأمر إلا بما مصلحته خالصة أو راجحة، ولا ينهى إلا عما مفسدته خالصة أو راجحة",
+   "gloss_en": "The Lawgiver commands only what is purely or preponderantly beneficial, and forbids only what is purely or preponderantly harmful.",
+   "kind": "meta",
+   "domain": "general",
+   "lean": [
+    "Usul.Sadi.Q01",
+    "Usul.Sadi.q01_balanced_is_mubah"
+   ]
+  },
+  {
+   "number": 2,
+   "statement_ar": "الوسائل لها أحكام المقاصد",
+   "gloss_en": "Means take the rulings of their ends.",
+   "kind": "closure",
+   "domain": "general",
+   "lean": [
+    "Usul.Sadi.q02_means_of_wajib",
+    "Usul.Qawaid.closure_respects_capacity",
+    "Usul.Schema.wajib_is_closure"
+   ],
+   "schemata": [
+    "S4-closure"
+   ]
+  },
+  {
+   "number": 3,
+   "statement_ar": "المشقة تجلب التيسير",
+   "gloss_en": "Hardship brings ease (all dispensations derive from this).",
+   "kind": "default",
+   "domain": "general",
+   "lean": [
+    "Usul.Sadi.q04_relief_never_binds"
+   ]
+  },
+  {
+   "number": 4,
+   "statement_ar": "الوجوب يتعلق بالاستطاعة؛ فلا واجب مع العجز، ولا محرم مع الضرورة",
+   "gloss_en": "Obligation (wujūb) depends on capacity: no obligation with inability, no prohibition with necessity.",
+   "kind": "default",
+   "domain": "general",
+   "lean": [
+    "Usul.Sadi.operative",
+    "Usul.Sadi.q04_no_wajib_with_inability",
+    "Usul.Sadi.q04_no_haram_with_necessity",
+    "Usul.Sadi.q04_ordinary_case",
+    "Usul.Schema.operative_is_gate"
+   ],
+   "schemata": [
+    "S3-gate"
+   ]
+  },
+  {
+   "number": 5,
+   "statement_ar": "الشريعة مبنية على أصلين: الإخلاص للمعبود، والمتابعة للرسول ﷺ",
+   "gloss_en": "The law rests on two foundations: sincerity towards the One worshipped, and following the Messenger.",
+   "kind": "meta",
+   "domain": "ibadat",
+   "lean": [
+    "Usul.Kulliyyat.Worship.gate",
+    "Usul.Kulliyyat.q05_both_foundations"
+   ],
+   "schemata": [
+    "S3-gate"
+   ]
+  },
+  {
+   "number": 6,
+   "statement_ar": "الأصل في العبادات الحظر، والأصل في العادات الإباحة",
+   "gloss_en": "The default in acts of worship is prohibition; in customs, permission.",
+   "kind": "default",
+   "domain": "general",
+   "lean": [
+    "Usul.Domain.default",
+    "Usul.Sadi.q06_no_worship_without_dalil",
+    "Usul.Sadi.q06_customs_permitted_by_default",
+    "Usul.Sadi.q06_dalil_prevails",
+    "Usul.Schema.ruled_is_priority"
+   ],
+   "schemata": [
+    "S2-priority"
+   ]
+  },
+  {
+   "number": 7,
+   "statement_ar": "التكليف وهو البلوغ والعقل شرط لوجوب العبادات، والتمييز شرط لصحتها إلا الحج والعمرة",
+   "gloss_en": "Legal responsibility (maturity and ʿaql) is a sharṭ of the wujūb of worship; discernment is a sharṭ of its validity, except ḥajj and ʿumra.",
+   "kind": "rule",
+   "domain": "ibadat",
+   "lean": [
+    "Usul.Subject.IsMukallaf",
+    "Usul.no_taklif_without_mukallaf"
+   ]
+  },
+  {
+   "number": 8,
+   "statement_ar": "الأحكام الأصولية والفروعية لا تتم إلا بأمرين: وجود شروطها وأركانها، وانتفاء موانعها",
+   "gloss_en": "Rulings, in principles and branches, hold only when their shurūṭ (sharṭ) and pillars are present and their impediments absent.",
+   "kind": "meta",
+   "domain": "general",
+   "lean": [
+    "Usul.Sadi.Gate.Holds",
+    "Usul.Sadi.q08_missing_condition",
+    "Usul.Sadi.q08_present_impediment",
+    "Usul.Sadi.Gate.holds_meet",
+    "Usul.Sadi.Gate.holds_comap",
+    "Usul.Sadi.Gate.holds_ofBools"
+   ],
+   "schemata": [
+    "S3-gate"
+   ]
+  },
+  {
+   "number": 9,
+   "statement_ar": "العرف والعادة يرجع إليه في كل حكم حكم به الشارع ولم يحده بحد",
+   "gloss_en": "Custom decides every ruling the Lawgiver set without defining its measure.",
+   "kind": "meta",
+   "domain": "general",
+   "lean": [
+    "Usul.Kulliyyat.measure",
+    "Usul.Kulliyyat.q09_law_prevails",
+    "Usul.Kulliyyat.q09_custom_decides",
+    "Usul.Kulliyyat.q09_follows_custom",
+    "Usul.Kulliyyat.q09_is_priority"
+   ],
+   "emendation": "OCR (both witnesses): «يرجح»; read «يرجع» (custom is the reference for undefined measures).",
+   "schemata": [
+    "S2-priority"
+   ]
+  },
+  {
+   "number": 10,
+   "statement_ar": "البينة على المدعي، واليمين على من أنكر",
+   "gloss_en": "Proof is on the claimant, the oath (the yamīn of a claim) on the one who denies.",
+   "kind": "procedure",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.burden",
+    "Usul.Muamalat.q10_burden_injective",
+    "Usul.Muamalat.Party.claim",
+    "Usul.Muamalat.q10_from_presumption"
+   ],
+   "schemata": [
+    "S1-invariance",
+    "S6-presumption"
+   ]
+  },
+  {
+   "number": 11,
+   "statement_ar": "الأصل بقاء ما كان على ما كان، واليقين لا يزول بالشك",
+   "gloss_en": "What was remains as it was; certainty is not removed by doubt.",
+   "kind": "default",
+   "domain": "general",
+   "lean": [
+    "Usul.Grade.IsYaqin",
+    "Usul.Sadi.q11_yaqin",
+    "Usul.Qawaid.yaqin_la_yazul_bish_shakk",
+    "Usul.Schema.yaqin_doubts_inert",
+    "Usul.Refinements.abstains",
+    "Usul.Refinements.abstention_keeps_status",
+    "Usul.Refinements.known_absence_ends_abstention",
+    "Usul.Refinements.hamlAlaAdna",
+    "Usul.Refinements.adna_is_certain",
+    "Usul.Refinements.yaqinForAmal",
+    "Usul.Refinements.zannSetAside"
+   ],
+   "schemata": [
+    "S5-inert"
+   ]
+  },
+  {
+   "number": 12,
+   "statement_ar": "لا بد من التراضي في عقود المعاوضات",
+   "gloss_en": "Mutual consent is required in contracts of exchange.",
+   "kind": "rule",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.Exchange.gate",
+    "Usul.Muamalat.q12_no_contract_without_consent",
+    "Usul.Muamalat.q12_mutual_consent_suffices",
+    "Usul.Muamalat.Deal.gate",
+    "Usul.Muamalat.deal_holds_iff"
+   ],
+   "schemata": [
+    "S3-gate"
+   ]
+  },
+  {
+   "number": 13,
+   "statement_ar": "الإتلاف يستوي فيه المتعمد والجاهل والناسي",
+   "gloss_en": "In destruction of property the deliberate, the ignorant and the forgetful are alike (liable).",
+   "kind": "rule",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.itlafLiable",
+    "Usul.Muamalat.q13_intent_irrelevant",
+    "Usul.Muamalat.q13_q36_consistent",
+    "Usul.Muamalat.q13_ignores_intent",
+    "Usul.Muamalat.q13_q36_factor_through_right",
+    "Usul.Muamalat.q13_liable_iff_unauthorized"
+   ],
+   "schemata": [
+    "S1-invariance"
+   ]
+  },
+  {
+   "number": 14,
+   "statement_ar": "التلف في يد الأمين غير مضمون إذا لم يتعد أو يفرط، وفي يد الظالم مضمون مطلقاً",
+   "gloss_en": "Loss in a trustee's hand is not compensable unless he transgressed or was negligent; in a wrongdoer's hand it is compensable absolutely.",
+   "kind": "farq",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.lossLiable",
+    "Usul.Muamalat.q14_trustee_without_fault",
+    "Usul.Muamalat.q14_wrongdoer_always",
+    "Usul.Muamalat.q14_fault_makes_trustee_liable",
+    "Usul.Muamalat.authorizedHold",
+    "Usul.Muamalat.q14_liable_iff_unauthorized",
+    "Usul.Muamalat.q14_factors_through_authorization",
+    "Usul.Refinements.trustVoided",
+    "Usul.Refinements.compound_trust_survives",
+    "Usul.Refinements.liability_independent_of_voidance"
+   ],
+   "schemata": [
+    "S1-invariance"
+   ]
+  },
+  {
+   "number": 15,
+   "statement_ar": "لا ضرر ولا ضرار",
+   "gloss_en": "No harm and no reciprocal harm.",
+   "kind": "rule",
+   "domain": "general",
+   "lean": [
+    "Usul.Kulliyyat.mayInflict",
+    "Usul.Kulliyyat.q15_no_harm",
+    "Usul.Kulliyyat.q15_no_reciprocal_harm",
+    "Usul.Kulliyyat.q15_ignores_received"
+   ],
+   "schemata": [
+    "S1-invariance"
+   ]
+  },
+  {
+   "number": 16,
+   "statement_ar": "العدل واجب في كل شيء، والفضل مسنون",
+   "gloss_en": "Justice is wājib in everything; generosity is masnūn («والفضل مسنون»).",
+   "kind": "taqsim",
+   "domain": "general",
+   "lean": [
+    "Usul.Sadi.Conduct.status",
+    "Usul.Sadi.q16_adl_binding_fadl_not"
+   ]
+  },
+  {
+   "number": 17,
+   "statement_ar": "من تعجل شيئاً قبل أوانه عوقب بحرمانه",
+   "gloss_en": "Whoever hastens a thing before its time is punished by being deprived of it.",
+   "kind": "rule",
+   "domain": "general",
+   "lean": [
+    "Usul.Kulliyyat.obtains",
+    "Usul.Kulliyyat.q17_hastening_deprives",
+    "Usul.Kulliyyat.q17_never_beyond_entitlement",
+    "Usul.Kulliyyat.q17_is_gate"
+   ],
+   "schemata": [
+    "S3-gate"
+   ]
+  },
+  {
+   "number": 18,
+   "statement_ar": "تضمن المثليات بمثلها، والمتقومات بقيمتها",
+   "gloss_en": "Fungibles are made good (ḍamān: «تضمن») with their like, non-fungibles with their value.",
+   "kind": "taqsim",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.compensation",
+    "Usul.Muamalat.q18_partition"
+   ]
+  },
+  {
+   "number": 19,
+   "statement_ar": "إذا تعذر المسمى رجع إلى القيمة",
+   "gloss_en": "When the named price (al-musammā) is unattainable, one reverts to the value.",
+   "kind": "default",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.priceDue",
+    "Usul.Muamalat.q19_unattainable_reverts_to_value",
+    "Usul.Muamalat.q19_stipulated_binds",
+    "Usul.Muamalat.q19_is_priority"
+   ],
+   "schemata": [
+    "S2-priority"
+   ]
+  },
+  {
+   "number": 20,
+   "statement_ar": "إذا تعذر معرفة من له الحق جعل كالمعدوم",
+   "gloss_en": "When the right-holder cannot be identified, he is treated as non-existent.",
+   "kind": "default",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.recipient",
+    "Usul.Muamalat.q20_unknown_owner",
+    "Usul.Muamalat.q20_is_priority",
+    "Usul.Refinements.treatedAsAbsent",
+    "Usul.Refinements.q20_is_instance",
+    "Usul.Refinements.knowable_not_set_aside"
+   ],
+   "schemata": [
+    "S2-priority"
+   ]
+  },
+  {
+   "number": 21,
+   "statement_ar": "الغرر والميسر محظور في المعاوضات والمغالبات",
+   "gloss_en": "Uncertainty (gharar) and gambling are forbidden in exchanges and contests.",
+   "kind": "rule",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.ghararForbidden",
+    "Usul.Muamalat.q21_forbidden_iff",
+    "Usul.Muamalat.q42_instance_of_q21",
+    "Usul.Muamalat.q21_is_gate"
+   ],
+   "schemata": [
+    "S3-gate"
+   ]
+  },
+  {
+   "number": 22,
+   "statement_ar": "الصلح جائز بين المسلمين إلا صلحاً أحل حراماً أو حرم حلالاً",
+   "gloss_en": "Settlement between Muslims is permitted, except a settlement that permits the forbidden or forbids the permitted.",
+   "kind": "rule",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Sadi.Voids",
+    "Usul.Sadi.q22_valid_iff_preserves_prohibition"
+   ]
+  },
+  {
+   "number": 23,
+   "statement_ar": "والمسلمون على شروطهم إلا شرطاً أحل حراماً أو حرم حلالاً",
+   "gloss_en": "Muslims are bound by their stipulations (al-shurūṭ fīhā), except a stipulation that permits the forbidden or forbids the permitted (printed under one heading with Q22).",
+   "kind": "rule",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Sadi.Voids",
+    "Usul.Sadi.q22_valid_iff_preserves_prohibition"
+   ]
+  },
+  {
+   "number": 24,
+   "statement_ar": "من سبق إلى المباحات فهو أحق بها",
+   "gloss_en": "Whoever reaches unowned permissible things first has the better right to them.",
+   "kind": "rule",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.firstClaimant",
+    "Usul.Muamalat.q24_first_has_priority",
+    "Usul.Muamalat.q24_is_optimal",
+    "Usul.Seam.admitted",
+    "Usul.Seam.admitted_iff_yaqin",
+    "Usul.Seam.daif_not_admitted",
+    "Usul.Seam.mursalDaif_admits_only_hasan_up",
+    "Usul.Seam.q24_dalil_not_admitted"
+   ],
+   "schemata": [
+    "S8-optimal"
+   ]
+  },
+  {
+   "number": 25,
+   "statement_ar": "تشرع القرعة إذا جهل المستحق وتعذرت القسمة",
+   "gloss_en": "Lots are prescribed when the entitled party is unknown and division is impossible.",
+   "kind": "procedure",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.lotPrescribed",
+    "Usul.Muamalat.q25_lot_iff",
+    "Usul.Muamalat.Allocation",
+    "Usul.Muamalat.allocation",
+    "Usul.Muamalat.q25_lot_is_last_resort",
+    "Usul.Refinements.allocationFull",
+    "Usul.Refinements.allocationFull_conservative",
+    "Usul.Refinements.confused_goes_to_lot"
+   ],
+   "schemata": [
+    "S2-priority"
+   ]
+  },
+  {
+   "number": 26,
+   "statement_ar": "يقبل قول الأمناء فيما تحت أيديهم من التصرفات والإتلاف وغيرها، إلا ما خالف الحس والعادة",
+   "gloss_en": "Trustees are believed about what is in their hands, except where sense and custom contradict them.",
+   "kind": "procedure",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.wordAccepted",
+    "Usul.Muamalat.q26_q43_consistent",
+    "Usul.Muamalat.returnPresumption",
+    "Usul.Muamalat.q26_q43_from_presumption"
+   ],
+   "schemata": [
+    "S6-presumption"
+   ]
+  },
+  {
+   "number": 27,
+   "statement_ar": "من ترك المأمور جهلاً أو نسياناً لم تبرأ ذمته إلا بفعله، ومن فعل المحظور وهو معذور بجهل أو نسيان برئت ذمته",
+   "gloss_en": "Omitting a command through ignorance or forgetfulness does not discharge it until performed; committing a prohibition excused by ignorance or forgetfulness is discharged.",
+   "kind": "farq",
+   "domain": "general",
+   "lean": [
+    "Usul.Sadi.dischargedByExcuse",
+    "Usul.Sadi.q27_asymmetry"
+   ]
+  },
+  {
+   "number": 28,
+   "statement_ar": "يقوم البدل مقام المبدل، ولكن لا يصار إليه إلا إذا تعذر الأصل",
+   "gloss_en": "The substitute stands in for the original, but is resorted to only when the original is impossible.",
+   "kind": "rule",
+   "domain": "general",
+   "lean": [
+    "Usul.Sadi.useSubstitute",
+    "Usul.Sadi.q28_substitute_only_when_needed",
+    "Usul.Schema.substitute_is_priority",
+    "Usul.Sadi.permits",
+    "Usul.Sadi.q28_stands_in_everything"
+   ],
+   "schemata": [
+    "S2-priority"
+   ]
+  },
+  {
+   "number": 29,
+   "statement_ar": "يجب تقييد اللفظ بملحقاته من وصف أو شرط أو استثناء أو غيرها",
+   "gloss_en": "An utterance must be qualified by its attachments: description, sharṭ (the linguistic one), exception and the like.",
+   "kind": "interpretation",
+   "domain": "lafz",
+   "lean": [
+    "Usul.Kulliyyat.Utterance.meaning",
+    "Usul.Kulliyyat.q29_unqualified",
+    "Usul.Kulliyyat.q29_qualifiers_narrow",
+    "Usul.Kulliyyat.q29_attach_narrows",
+    "Usul.Kulliyyat.q29_is_gate"
+   ],
+   "schemata": [
+    "S3-gate"
+   ]
+  },
+  {
+   "number": 30,
+   "statement_ar": "الشركاء في الأملاك والحقوق والمنافع يلزم الممتنع منهم بما يعود على المشترك من الأمور الضرورية",
+   "gloss_en": "Co-owners of property, rights and usufructs: the refusing partner is compelled to what the common holding necessarily requires.",
+   "kind": "rule",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.partnerMustJoin",
+    "Usul.Muamalat.q30_necessity_compels",
+    "Usul.Muamalat.q30_otherwise_by_consent"
+   ]
+  },
+  {
+   "number": 31,
+   "statement_ar": "الأحكام تتبعض بحسب تباين أسبابها، فيعمل كل سبب في مقتضاه",
+   "gloss_en": "Rulings divide according to their distinct asbāb; each sabab operates in its own effect.",
+   "kind": "meta",
+   "domain": "general",
+   "lean": [
+    "Usul.Kulliyyat.rulings",
+    "Usul.Kulliyyat.q31_each_cause_its_effect",
+    "Usul.Kulliyyat.q31_absent_cause_inert",
+    "Usul.Kulliyyat.q31_join",
+    "Usul.Kulliyyat.q31_monotone"
+   ]
+  },
+  {
+   "number": 32,
+   "statement_ar": "من أدى عن غيره واجباً رجع عليه",
+   "gloss_en": "Whoever pays another's wājib («من أدى عن غيره واجباً») has recourse against him (reading from the index stub; body heading lost to OCR).",
+   "kind": "rule",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.recourse",
+    "Usul.Muamalat.q32_recourse_for_paid",
+    "Usul.Muamalat.q32_gift_no_recourse",
+    "Usul.Muamalat.q32_never_more_than_paid",
+    "Usul.Muamalat.q32_is_gate",
+    "Usul.Refinements.recourseFull",
+    "Usul.Refinements.recourseFull_conservative",
+    "Usul.Refinements.no_recourse_unowed_unpermitted",
+    "Usul.Refinements.recourseNec",
+    "Usul.Refinements.recourseNec_conservative"
+   ],
+   "emendation": "Body heading lost to OCR; index stub reads «من أدى عن غيره واجبات…»; the completion «رجع عليه» is an editorial reading to be checked against the scan.",
+   "schemata": [
+    "S3-gate"
+   ]
+  },
+  {
+   "number": 33,
+   "statement_ar": "إذا تزاحمت المصالح قدم الأعلى منها، وإذا تزاحمت المفاسد قدم الأخف منها",
+   "gloss_en": "When benefits crowd, the higher is preferred; when harms crowd, the lighter.",
+   "kind": "meta",
+   "domain": "general",
+   "lean": [
+    "Usul.Sadi.best",
+    "Usul.Sadi.q33_higher_benefit",
+    "Usul.Sadi.q33_lighter_harm",
+    "Usul.Kulliyyat.q34_best_admissible",
+    "Usul.Schema.Optimal",
+    "Usul.Schema.best_optimal",
+    "Usul.Schema.q33_is_optimal",
+    "Usul.Schema.Optimal.key_unique"
+   ],
+   "schemata": [
+    "S8-optimal"
+   ]
+  },
+  {
+   "number": 34,
+   "statement_ar": "إذا خير العبد بين شيئين فأكثر: فإن كان التخيير لمصلحته فهو تخيير تشهٍّ، وإن كان لمصلحة غيره فهو تخيير اجتهاد",
+   "gloss_en": "A choice given for one's own benefit is free preference; a choice given for another's benefit obliges seeking that other's best interest.",
+   "kind": "taqsim",
+   "domain": "general",
+   "lean": [
+    "Usul.Kulliyyat.Admissible",
+    "Usul.Kulliyyat.q34_other_stricter",
+    "Usul.Kulliyyat.q34_best_admissible",
+    "Usul.Kulliyyat.q34_other_iff_optimal"
+   ],
+   "schemata": [
+    "S8-optimal"
+   ]
+  },
+  {
+   "number": 35,
+   "statement_ar": "من سقطت عنه العقوبة لموجب ضوعف عليه الضمان",
+   "gloss_en": "Whoever escapes punishment for a mūjib («لموجب») bears doubled ḍamān («ضوعف عليه الضمان»).",
+   "kind": "rule",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.compensationOwed",
+    "Usul.Muamalat.q35_doubled",
+    "Usul.Muamalat.q35_never_less"
+   ]
+  },
+  {
+   "number": 36,
+   "statement_ar": "من أتلف شيئاً لينتفع به ضمنه، ومن أتلفه دفعاً لمضرته فلا ضمان عليه",
+   "gloss_en": "Destroying a thing to benefit from it makes one liable; destroying it to repel its harm does not.",
+   "kind": "farq",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.withRight",
+    "Usul.Muamalat.q36_benefit_liable",
+    "Usul.Muamalat.q36_repel_not_liable",
+    "Usul.Muamalat.q13_q36_consistent",
+    "Usul.Muamalat.q13_q36_factor_through_right"
+   ],
+   "schemata": [
+    "S1-invariance"
+   ]
+  },
+  {
+   "number": 37,
+   "statement_ar": "إذا اختلف المتعاملان في صفة من صفات المعاملة رجح أقواهما دليلاً",
+   "gloss_en": "When contracting parties disagree on a term, the one with the stronger evidence prevails (tarjīḥ: «رجح أقواهما دليلاً»).",
+   "kind": "procedure",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.prevailing",
+    "Usul.Muamalat.q37_strongest_prevails",
+    "Usul.Muamalat.q37_is_optimal"
+   ],
+   "schemata": [
+    "S8-optimal"
+   ]
+  },
+  {
+   "number": 38,
+   "statement_ar": "إذا عاد التحريم إلى نفس العبادة أو شرطها فسدت، وإذا عاد إلى أمر خارج لم تفسد",
+   "gloss_en": "If the prohibition attaches to the act of worship itself or its sharṭ, it is fāsid («فسدت»); if to something external, it is not.",
+   "kind": "farq",
+   "domain": "ibadat",
+   "lean": [
+    "Usul.Sadi.validDespiteProhibition",
+    "Usul.Sadi.q38_voids_iff_intrinsic"
+   ]
+  },
+  {
+   "number": 39,
+   "statement_ar": "لا يجوز تقديم العبادات أو الكفارات على سبب الوجوب، ويجوز تقديمها بعد وجود السبب وقبل شرط الوجوب",
+   "gloss_en": "Acts of worship and kaffārāt may not precede the sabab of wujūb, but may precede its sharṭ once the sabab exists.",
+   "kind": "rule",
+   "domain": "ibadat",
+   "lean": [
+    "Usul.Kulliyyat.timelyPerformance",
+    "Usul.Kulliyyat.q39_not_before_cause",
+    "Usul.Kulliyyat.q39_before_condition_after_cause",
+    "Usul.Kulliyyat.q39_ignores_condition",
+    "Usul.Kulliyyat.q39_shift_invariant"
+   ],
+   "schemata": [
+    "S1-invariance"
+   ]
+  },
+  {
+   "number": 40,
+   "statement_ar": "يجب فعل المأمور به كله، فإن قدر على بعضه وعجز عن باقيه وجب عليه فعل ما قدر عليه",
+   "gloss_en": "The whole command must be done; whoever can do part of it must do that part.",
+   "kind": "rule",
+   "domain": "general",
+   "lean": [
+    "Usul.Sadi.obligedParts",
+    "Usul.Sadi.q40_only_capable_parts",
+    "Usul.Sadi.q40_every_capable_part",
+    "Usul.Schema.obligedParts_is_gate"
+   ],
+   "schemata": [
+    "S3-gate"
+   ]
+  },
+  {
+   "number": 41,
+   "statement_ar": "إذا اجتمعت عبادتان من جنس واحد تداخلت أفعالهما واكتفي عنهما بفعل واحد إذا كان مقصودهما واحداً",
+   "gloss_en": "Two acts of worship of one kind, with one purpose, merge into a single performance.",
+   "kind": "rule",
+   "domain": "ibadat",
+   "lean": [
+    "Usul.Kulliyyat.discharges",
+    "Usul.Kulliyyat.q41_one_performance",
+    "Usul.Kulliyyat.q41_distinct_purposes_stay_apart",
+    "Usul.Kulliyyat.Merges",
+    "Usul.Kulliyyat.q41_merges_refl",
+    "Usul.Kulliyyat.q41_merges_symm",
+    "Usul.Kulliyyat.q41_merges_trans",
+    "Usul.Kulliyyat.q41_representatives"
+   ],
+   "schemata": [
+    "S7-merge"
+   ]
+  },
+  {
+   "number": 42,
+   "statement_ar": "استثناء المنافع المعلومة في العين المنتقلة جائز في باب المعاوضات، ويجوز استثناء المعلومة والمجهولة في التبرعات",
+   "gloss_en": "Reserving a known usufruct in a transferred thing is valid in exchanges; known or unknown usufructs may be reserved in gifts.",
+   "kind": "farq",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.reservationValid",
+    "Usul.Muamalat.q42_instance_of_q21"
+   ]
+  },
+  {
+   "number": 43,
+   "statement_ar": "من قبض العين لحظ نفسه لم يقبل قوله في الرد، وإن قبضها لحظ مالكها قبل",
+   "gloss_en": "Whoever took possession for his own benefit is not believed about returning it; for the owner's benefit, he is.",
+   "kind": "farq",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.returnClaimAccepted",
+    "Usul.Muamalat.q43_self_interest_not_believed",
+    "Usul.Muamalat.q26_q43_consistent",
+    "Usul.Muamalat.returnPresumption",
+    "Usul.Muamalat.q26_q43_from_presumption"
+   ],
+   "schemata": [
+    "S6-presumption"
+   ]
+  },
+  {
+   "number": 44,
+   "statement_ar": "إذا أدى ما عليه وجب له ما جعل له",
+   "gloss_en": "Whoever performs what is due earns what was set for him.",
+   "kind": "rule",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.earned",
+    "Usul.Muamalat.q44_performance_earns"
+   ]
+  },
+  {
+   "number": 45,
+   "statement_ar": "من لا يعتبر رضاه في عقد أو فسخ لا يعتبر علمه",
+   "gloss_en": "Whose consent is not required for a contract or its faskh («في عقد أو فسخ»), his knowledge is not required either.",
+   "kind": "rule",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.Requirement.Coherent",
+    "Usul.Muamalat.q45_normalize_coherent",
+    "Usul.Muamalat.q45_normalize_fixes_coherent",
+    "Usul.Muamalat.q45_normalize_idem"
+   ],
+   "emendation": "OCR (tess) reads «عمله»; read «علمه» (knowledge), as the rule's commentary on option holders indicates — to be checked against the scan."
+  },
+  {
+   "number": 46,
+   "statement_ar": "من له الحق على الغير وكان سبب الحق ظاهراً فله الأخذ من ماله بقدر حقه إذا امتنع، وإن كان خفياً فليس له ذلك",
+   "gloss_en": "A creditor with an evident sabab of his right («سبب الحق ظاهراً») may take his due from a refusing debtor's property; with a hidden cause he may not.",
+   "kind": "farq",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.mayTake",
+    "Usul.Muamalat.q46_hidden_cause_forbids",
+    "Usul.Muamalat.q46_never_more_than_due"
+   ]
+  },
+  {
+   "number": 47,
+   "statement_ar": "الواجب بالنذر يلحق بالواجب بالشرع",
+   "gloss_en": "What is wājib by vow (nadhr) is assimilated to what is obligatory by the law.",
+   "kind": "rule",
+   "domain": "ibadat",
+   "lean": [
+    "Usul.Muamalat.obligationStatus",
+    "Usul.Muamalat.q47_vow_as_law",
+    "Usul.Muamalat.q47_ignores_source",
+    "Usul.Muamalat.q47_consequences"
+   ],
+   "schemata": [
+    "S1-invariance"
+   ]
+  },
+  {
+   "number": 48,
+   "statement_ar": "الفعل الواحد ينبني بعضه على بعض مع الاتصال المعتاد",
+   "gloss_en": "The parts of a single act build on one another when customarily continuous.",
+   "kind": "rule",
+   "domain": "general",
+   "lean": [
+    "Usul.Kulliyyat.continuous",
+    "Usul.Kulliyyat.q48_custom_monotone",
+    "Usul.Kulliyyat.q48_shift_invariant"
+   ]
+  },
+  {
+   "number": 49,
+   "statement_ar": "الحوائج الأصلية للإنسان لا تعد مالاً فاضلاً",
+   "gloss_en": "A person's basic needs do not count as surplus wealth.",
+   "kind": "rule",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.surplus",
+    "Usul.Muamalat.q49_needs_excluded"
+   ]
+  },
+  {
+   "number": 50,
+   "statement_ar": "يثبت تبعاً ما لا يثبت استقلالاً",
+   "gloss_en": "What is not established independently may be established as a dependent.",
+   "kind": "rule",
+   "domain": "general",
+   "lean": [
+    "Usul.Kulliyyat.established",
+    "Usul.Kulliyyat.q50_dependent_suffices",
+    "Usul.Kulliyyat.q50_independent_suffices",
+    "Usul.Kulliyyat.q50_neither_fails",
+    "Usul.Kulliyyat.Established",
+    "Usul.Kulliyyat.q50_follower_established",
+    "Usul.Kulliyyat.q50_least"
+   ],
+   "schemata": [
+    "S4-closure"
+   ]
+  },
+  {
+   "number": 51,
+   "statement_ar": "الأسباب والدواعي للعقود والتبرعات معتبرة",
+   "gloss_en": "The motives (asbāb and dawāʿī: «الأسباب والدواعي») of contracts and gifts are taken into account.",
+   "kind": "interpretation",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.contractValid",
+    "Usul.Muamalat.q51_form_insufficient",
+    "Usul.Muamalat.q51_valid_iff",
+    "Usul.Muamalat.q51_q54_consistent",
+    "Usul.Muamalat.Deal.gate",
+    "Usul.Muamalat.deal_holds_iff"
+   ],
+   "schemata": [
+    "S3-gate"
+   ]
+  },
+  {
+   "number": 52,
+   "statement_ar": "إذا قويت القرائن قدمت على الأصل",
+   "gloss_en": "When qarāʾin are strong («إذا قويت القرائن»), they take precedence over the presumption.",
+   "kind": "default",
+   "domain": "general",
+   "lean": [
+    "Usul.Sadi.q52_strong_qarina_prevails",
+    "Usul.Schema.burden_after_update",
+    "Usul.Refinements.zahirPrevails",
+    "Usul.Refinements.zahirPrevails_conservative",
+    "Usul.Refinements.tie_without_amara_keeps_asl",
+    "Usul.Refinements.stronger_prevails"
+   ],
+   "schemata": [
+    "S6-presumption"
+   ]
+  },
+  {
+   "number": 53,
+   "statement_ar": "إذا تبين فساد العقد بطل ما بني عليه، وإن فسخ فسخاً اختيارياً لم تبطل العقود الطارئة قبل الفسخ",
+   "gloss_en": "If a contract proves fāsid, what was built on it is bāṭil («إذا تبين فساد العقد بطل ما بني عليه»); if it is undone by a faskh by choice («وإن فسخ فسخاً اختيارياً»), contracts concluded before the faskh stand.",
+   "kind": "farq",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.dependentsSurvive",
+    "Usul.Muamalat.q53_distinction",
+    "Usul.Muamalat.Voided",
+    "Usul.Muamalat.q53_void_propagates",
+    "Usul.Muamalat.q53_rescission_inert"
+   ],
+   "schemata": [
+    "S4-closure"
+   ]
+  },
+  {
+   "number": 54,
+   "statement_ar": "العبرة في المعاملات بما في نفس الأمر",
+   "gloss_en": "In transactions what counts is the actual state of affairs.",
+   "kind": "interpretation",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.dispositionValid",
+    "Usul.Muamalat.q54_belief_irrelevant",
+    "Usul.Muamalat.q51_q54_consistent",
+    "Usul.Muamalat.q54_ignores_belief"
+   ],
+   "schemata": [
+    "S1-invariance"
+   ]
+  },
+  {
+   "number": 55,
+   "statement_ar": "لا عذر لمن أقر ولو ادعى غلطاً",
+   "gloss_en": "There is no excuse for one who has confessed, even if he claims error.",
+   "kind": "procedure",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.confessionBinds",
+    "Usul.Muamalat.q55_error_claim_irrelevant",
+    "Usul.Muamalat.plead",
+    "Usul.Muamalat.q55_confession_absorbs"
+   ],
+   "schemata": [
+    "S5-inert"
+   ]
+  },
+  {
+   "number": 56,
+   "statement_ar": "يقوم الوارث مقام مورثه في كل شيء يتعلق بتركته",
+   "gloss_en": "The heir stands in the place of the deceased in everything concerning the estate.",
+   "kind": "rule",
+   "domain": "muamalat",
+   "lean": [
+    "Usul.Muamalat.inherits",
+    "Usul.Muamalat.Q56Reading",
+    "Usul.Muamalat.q56_heir_in_everything",
+    "Usul.Muamalat.q56_mashhur_exceptions",
+    "Usul.Muamalat.q56_readings_differ_iff"
+   ]
+  },
+  {
+   "number": 57,
+   "statement_ar": "يجب حمل كلام الناطقين على مرادهم مهما أمكن",
+   "gloss_en": "Speakers' words must be read according to their intent wherever possible.",
+   "kind": "interpretation",
+   "domain": "lafz",
+   "lean": [
+    "Usul.Kulliyyat.reading",
+    "Usul.Kulliyyat.q57_possible_intent_prevails",
+    "Usul.Kulliyyat.q57_impossible_intent_falls_back",
+    "Usul.Kulliyyat.q57_unknown_intent_literal",
+    "Usul.Kulliyyat.q57_is_priority"
+   ],
+   "schemata": [
+    "S2-priority"
+   ]
+  },
+  {
+   "number": 58,
+   "statement_ar": "الحكم يدور مع علته ثبوتاً وعدماً",
+   "gloss_en": "The ruling turns on its ʿilla, in presence and absence.",
+   "kind": "meta",
+   "domain": "general",
+   "lean": [
+    "Usul.Sadi.DependsOn",
+    "Usul.Sadi.q58_qiyas",
+    "Usul.Sadi.q58_factors",
+    "Usul.Sadi.q58_naqd",
+    "Usul.Schema.dependsOn_iff_factors",
+    "Usul.Qiyas.dawaran",
+    "Usul.Qiyas.dawaran_iff",
+    "Usul.Qiyas.naqd_iff_not_tard",
+    "Usul.Qiyas.adamTathir_iff_not_aks",
+    "Usul.Qiyas.naqd_defeats",
+    "Usul.Qiyas.gate",
+    "Usul.Qiyas.qiyas_sound",
+    "Usul.Qiyas.gate_consistent",
+    "Usul.Qiyas.NaqdSucceedsBy",
+    "Usul.Qiyas.naqd_succeeds_without_takhsis",
+    "Usul.Qiyas.naqd_answered_by_takhsis",
+    "Usul.Qiyas.takhsis_repairs",
+    "Usul.Qiyas.AdamTathirSucceeds",
+    "Usul.Qiyas.naqd_gives_kasr",
+    "Usul.Qiyas.kasr_without_naqd",
+    "Usul.Qiyas.Recognition",
+    "Usul.Qiyas.Recognition.accepted",
+    "Usul.Qiyas.mulgha_never_accepted",
+    "Usul.Qiyas.munasaba_of_q01",
+    "Usul.Qiyas.man_defeats",
+    "Usul.Qiyas.farq_defeats",
+    "Usul.Qiyas.sabr_sound",
+    "Usul.Qiyas.shabah_optimal",
+    "Usul.Qiyas.tanqih_manat",
+    "Usul.Qiyas.qalb_defeats",
+    "Usul.Qiyas.qawlBiMujab_defeats",
+    "Usul.Qiyas.fasad_itibar",
+    "Usul.Qiyas.fasad_wad",
+    "Usul.Qiyas.dawaran_not_unique",
+    "Usul.Qiyas.tard_vacuous",
+    "Usul.Qiyas.sabr_needs_hasr",
+    "Usul.Jadal.farByOrder",
+    "Usul.Jadal.shabah_never_overrides_illa",
+    "Usul.Jadal.shabah_only_as_fallback",
+    "Usul.Jadal.shabah_rejected",
+    "Usul.Jadal.Qadih.kind",
+    "Usul.Jadal.kind_spec",
+    "Usul.Jadal.debateGate_holds_iff",
+    "Usul.Jadal.debateGate",
+    "Usul.Jadal.debateGate_sound",
+    "Usul.Jadal.objection_blocks",
+    "Usul.QiyasLimits.hanbaliAdmits",
+    "Usul.QiyasLimits.no_qiyas_without_rationale",
+    "Usul.QiyasLimits.hanafi_strictly_narrower"
+   ],
+   "schemata": [
+    "S1-invariance",
+    "S2-priority",
+    "S3-gate"
+   ]
+  },
+  {
+   "number": 59,
+   "statement_ar": "النكرة في سياق النفي أو النهي أو الشرط تفيد العموم",
+   "gloss_en": "An indefinite noun in the context of negation, prohibition or a conditional clause (al-sharṭ) is general.",
+   "kind": "interpretation",
+   "domain": "lafz",
+   "lean": [
+    "Usul.Sadi.IsGeneral",
+    "Usul.Sadi.q59_nakira_general_in_negation",
+    "Usul.Sadi.q59_nakira_absolute_in_affirmation",
+    "Usul.Dalala.IsGeneralIn",
+    "Usul.Dalala.isGeneralIn_no_ahd",
+    "Usul.Dalala.ahd_blocks"
+   ]
+  },
+  {
+   "number": 60,
+   "statement_ar": "من وما وأل وأي ومتى يدل كل واحد منها على العموم، وكذلك المفرد المضاف",
+   "gloss_en": "man, mā, al-, ayy and matā each indicate generality, as does the annexed singular.",
+   "kind": "interpretation",
+   "domain": "lafz",
+   "lean": [
+    "Usul.Sadi.IsGeneral",
+    "Usul.Sadi.q60_markers_general",
+    "Usul.Dalala.IsGeneralIn",
+    "Usul.Dalala.isGeneralIn_no_ahd",
+    "Usul.Dalala.ahd_blocks"
+   ]
+  }
+ ]
+}

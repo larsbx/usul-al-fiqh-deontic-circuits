@@ -4,6 +4,8 @@
 
 Turn the ADQ Prolog corpus into a database-backed, auditable deontic-circuit research harness.
 
+Long-range Ḥanbalī uṣūl formalization track (Lean 4, TLA+, Haskell, category theory, type theory): see [`roadmap-hanbali-usul-formalization.md`](roadmap-hanbali-usul-formalization.md).
+
 ## Working principle
 
 Natural language and LLM prompting are allowed at the authoring boundary. They may propose candidate records. They may not directly create accepted normative facts or verdicts.
@@ -17,6 +19,31 @@ Optional mathematical research lanes may consume explicit data and emit reproduc
 - Mark deprecated, generated, visualization-only, and test-only files.
 - Decide whether `v37_*` supersedes earlier modules or remains an overlay.
 
+## Milestone 1a — ADQ v37 contextual path lift
+
+- Treat `deontic_obligation/6` as the current strongest affect-deontic fact shape.
+- Keep behavioral signatures, somatic idioms, and tier discipline as context/evidence inputs.
+- Preserve the v3.6 capacity guard: bare involuntary affect is not the same as cultivated, endorsed, dominant, or action-guiding affect.
+- Lift `deontic_anti_pair/4` into path-level displacement constraints.
+- Add a thin `v38_contextual_affect_deontics.pl` bridge before attempting a database rewrite.
+- Keep `behavioral_deontic` outside the affect lattice rather than collapsing acts into affect-state facts.
+
+## Milestone 1b — Finite sheaf obstruction fixtures
+
+- Treat active local ADQ verdicts as sections over a finite context site.
+- Add gluable world/path predicates over tiny fixture cases.
+- Emit structured obstruction records for forbidden realization, missing required realization, anti-pair displacement, and same-scope operator conflict.
+- Keep involuntary somatic panic as context evidence rather than direct liability.
+- Preserve a clear fixture/source boundary: generated conflict facts prove the failure mode only; they are not source-derived deontic claims.
+
+## Milestone 1c — Concern extraction
+
+- Separate affect-deontic facts and local affect observations from temporal/path fixtures.
+- Separate temporal/world/path data from sheaf gluing and obstruction checks.
+- Keep `examples/v39_sheaf_obstruction_fixtures.pl` as a compatibility aggregator only.
+- Document the concern boundary in `docs/architecture/separated-concerns.md`.
+- Preserve independent promotion paths for affect imports, temporal case fixtures, and sheaf compatibility tests.
+
 ## Milestone 2 — Canonical schema
 
 - Stabilize canonical IDs.
@@ -24,6 +51,7 @@ Optional mathematical research lanes may consume explicit data and emit reproduc
 - Normalize warrant arities.
 - Introduce typed targets for roots, compounds, profiles, object clusters, and external concepts.
 - Define audit finding types.
+- Add canonical fields for `subject`, `operator`, `modality`, and `control_status` so the v37/v38 bridge is not flattened back into prose.
 
 ## Milestone 3 — Ash scaffold
 
@@ -37,6 +65,9 @@ Optional mathematical research lanes may consume explicit data and emit reproduc
 - Implement tier discipline.
 - Implement closure computations.
 - Implement defeat/blocking semantics.
+- Implement subject/object/modality matching before verdict derivation.
+- Implement path-level affect violations for forbidden facts, missing in-scope obligations, and anti-pair displacement.
+- Implement finite sheaf-style compatibility checks and obstruction reports before accepting glued verdicts.
 - Ensure every accepted derivation has a minimal trace.
 - Prevent quarantined evidence from supporting normative derivations.
 
@@ -79,6 +110,9 @@ Optional mathematical research lanes may consume explicit data and emit reproduc
 3. Add Ash resource skeleton.
 4. Add bundle validator and negative fixtures.
 5. Add LLM candidate extraction contract.
-6. Add the `F_7` Clifford-even research fixture and authority-firewall test.
-7. Add finite-valued Boolean-boundary validator fixtures.
-8. Add path-filter projection tests for required, excluded, preferred, demoted, and neutral paths.
+6. ~~Convert `fixture_expectation/3` records from `examples/v39_sheaf_concern.pl` into executable tests.~~ Done: `tests/run_all.sh`.
+7. Add canonical JSON import adapters for the v38/v39 bridge predicates.
+8. Mirror the affect, temporal/path, and sheaf concern split in the Ash resource design.
+9. Add the `F_7` Clifford-even research fixture and authority-firewall test.
+10. Add finite-valued Boolean-boundary validator fixtures.
+11. Add path-filter projection tests for required, excluded, preferred, demoted, and neutral paths.
