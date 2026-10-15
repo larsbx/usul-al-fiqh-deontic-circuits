@@ -391,7 +391,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p434",
      "excerpt_ar": "وقال في الآخر: القول قول الجاني؛ لأن الأصل براءة ذمته، وما ادعاه محتمل، فلا نزول عن اليقين بالشك",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Given in al-Mughnī for al-Shāfiʿī's other qawl, the same ruling as position 0 (the killer's word, Abū Bakr's report in the record). istishab. al-Mughnī rebuts it."
+     "note": "Given in al-Mughnī for al-Shāfiʿī's other qawl, the same ruling as position 0 (the killer's word, Abū Bakr's report in the record). istishab. al-Mughnī rebuts it.",
+     "rebuttal": {
+      "by": "muarada",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p434",
+      "excerpt_ar": "ولنا، أن الأصل حياة المجني عليه وحريته، فيجب الحكم ببقائه، كما لو قتل من كان مسلما، وادعى أنه ارتد قبل قتله. وبهذا يبطل ما ذكره",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī opposes the istiṣḥāb of the killer's free dhimma with the stronger aṣl of the victim's life and freedom, and says this defeats al-Shāfiʿī's argument."
+     }
     }
    ],
    "advantages": []

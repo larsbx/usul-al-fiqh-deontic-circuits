@@ -295,7 +295,14 @@
      "ref": "src:openiti-rajab-shamela21730/v01:p237",
      "excerpt_ar": "قال ابن عقيل في فنونه: يكون بينهما عندنا لتساويهما كما في تعارض البينات",
      "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
-     "note": "Ibn ʿAqīl's ground for division. Taqī al-Dīn answers that this is a single wavering bayyina, and that division on conflict is a weaker riwāya; that is a rebuttal, not a proof for the lot. qiyas."
+     "note": "Ibn ʿAqīl's ground for division. Taqī al-Dīn answers that this is a single wavering bayyina, and that division on conflict is a weaker riwāya; that is a rebuttal, not a proof for the lot. qiyas.",
+     "rebuttal": {
+      "by": "farq",
+      "ref": "src:openiti-rajab-shamela21730/v01:p237",
+      "excerpt_ar": "قال الشيخ تقي الدين: ليس هذا تعارض البينتين بل هو بمنزلة تردد البينة الواحدة ولو كان من تعارض البينتين فالقسمة عند التعارض رواية مرجوحة",
+      "who": "Ibn Rajab, Taqrīr al-Qawāʿid (quoting Taqī al-Dīn)",
+      "note": "Ibn Rajab quotes Taqī al-Dīn against Ibn ʿAqīl's analogy. The case is not a conflict of two bodies of evidence but one wavering document, and division on conflict is in any case a weaker riwāya."
+     }
     },
     {
      "position": 1,

@@ -1,5 +1,6 @@
 import Usul.Signature
 import Usul.Taarud
+import Usul.Jadal
 
 /-!
 # Tarjīḥ by proof
@@ -36,6 +37,12 @@ v02 p389–401). Who holds a position, the madhhab's label included, is kept as 
   policies run beside it. Each advantage also carries its `Basis`: stated by a source comparing the
   two proofs, or applied by the bank to properties the proofs show; by default only the stated
   decide.
+* **Rebuttal.** A source may cite a proof only to answer it: «وخرجه بعض أصحابنا على وجهين … ولا
+  يصح» (al-Mughnī v07:p258), «وقد أشار القاضي إلى الفرق … وهذا ممنوع» (Ibn Rajab, v01:p222). The
+  proof is kept with the objection that answers it (`Proof.rebuttal`, a `Jadal.Qadih`, so it reduces
+  to manʿ or muʿāraḍa), and the policy decides whether it still counts: by default what its own
+  source rebuts does not, under `all` it does. A rebuttal is the citing source's own answer, never
+  the bank's.
 * **Tawaqquf.** «فإن لم يمكن الجمع، ولا معرفة النسخ: رجحنا، فأخذنا الأقوى في أنفسنا» (p391):
   where the stated advantages do not settle it, the weighing is the mujtahid's own, and the
   bank suspends.
@@ -129,20 +136,24 @@ inductive Basis where
   | stated | applied
   deriving DecidableEq, Repr
 
-/-- Which advantages decide: by their standing in the uṣūl works, and whether an applied one counts. -/
+/-- Which advantages decide: by their standing in the uṣūl works, and whether an applied one counts;
+and which proofs: whether one its own source rebuts still counts. -/
 structure Policy where
   standing : Standing → Bool
   applied : Bool
+  rebutted : Bool
 
 namespace Policy
-/-- Only stated advantages that no cited source disputes. -/
-def strict : Policy := ⟨fun | .asserted => true | _ => false, false⟩
-/-- Stated advantages a cited source asserts as its own, disputed or not: the bank's default. -/
-def sources : Policy := ⟨fun | .asserted | .disputed => true | _ => false, false⟩
+/-- Only stated advantages that no cited source disputes, and only unrebutted proofs. -/
+def strict : Policy := ⟨fun | .asserted => true | _ => false, false, false⟩
+/-- Stated advantages a cited source asserts as its own, disputed or not, and the proofs no citing
+source rebuts: the bank's default. -/
+def sources : Policy := ⟨fun | .asserted | .disputed => true | _ => false, false, false⟩
 /-- As `sources`, and the bank's own applications of the murajjiḥāt too. -/
-def applying : Policy := ⟨sources.standing, true⟩
-/-- Every recorded advantage, the weak, the rejected and the applied included. -/
-def all : Policy := ⟨fun _ => true, true⟩
+def applying : Policy := ⟨sources.standing, true, false⟩
+/-- Every recorded advantage and every cited proof: the weak, the rejected, the applied and the
+rebutted included. -/
+def all : Policy := ⟨fun _ => true, true, true⟩
 
 /-- The policies are nested: strict ⊆ sources ⊆ applying ⊆ all. -/
 theorem strict_le_sources (s : Standing) (h : strict.standing s = true) : sources.standing s = true := by
@@ -150,7 +161,8 @@ theorem strict_le_sources (s : Standing) (h : strict.standing s = true) : source
 
 theorem sources_le_applied (s : Standing) : sources.standing s = applying.standing s := rfl
 
-theorem le_all (s : Standing) : all.standing s = true ∧ all.applied = true := ⟨rfl, rfl⟩
+theorem le_all (s : Standing) : all.standing s = true ∧ all.applied = true ∧ all.rebutted = true :=
+  ⟨rfl, rfl, rfl⟩
 
 /-- The default leaves out exactly what a cited source calls weak or rejects. -/
 theorem sources_false_iff (s : Standing) : sources.standing s = false ↔ s = .weak ∨ s = .rejected := by
@@ -158,7 +170,44 @@ theorem sources_false_iff (s : Standing) : sources.standing s = false ↔ s = .w
 
 /-- The default counts only what a source states. -/
 theorem sources_stated_only : sources.applied = false := rfl
+
+/-- The default leaves out a proof its own source rebuts; only `all` counts it. -/
+theorem sources_unrebutted : sources.rebutted = false := rfl
 end Policy
+
+/-- A proof cited for position `pos`, of tier `tier`, with the objection by which the source citing
+it answers it, if it does (`Jadal.Qadih`: «ولا يصح», «وهذا ممنوع», a farq, a naqḍ). -/
+structure Proof (P : Type) where
+  pos : P
+  tier : Tier
+  rebuttal : Option Jadal.Qadih
+  deriving DecidableEq, Repr
+
+/-- The policy counts the proof: unrebutted, or the policy keeps rebutted proofs. -/
+def Proof.counts {P : Type} (π : Policy) (x : Proof P) : Bool :=
+  x.rebuttal.isNone || π.rebutted
+
+/-- The proofs the policy weighs, each as (position, tier). -/
+def cited {P : Type} (π : Policy) (ps : List (Proof P)) : List (P × Tier) :=
+  (ps.filter (·.counts π)).map fun x => (x.pos, x.tier)
+
+/-- `all` weighs every cited proof. -/
+theorem cited_all {P : Type} (ps : List (Proof P)) :
+    cited Policy.all ps = ps.map fun x => (x.pos, x.tier) := by
+  simp only [cited, Proof.counts, Policy.all, Bool.or_true]
+  congr 1; exact List.filter_eq_self.2 fun _ _ => rfl
+
+/-- Where no proof is rebutted, which policy is run makes no difference to what is weighed. -/
+theorem cited_unrebutted {P : Type} {π π' : Policy} {ps : List (Proof P)}
+    (h : ∀ x ∈ ps, x.rebuttal = none) : cited π ps = cited π' ps := by
+  have : ∀ ρ : Policy, ps.filter (·.counts ρ) = ps := fun ρ =>
+    List.filter_eq_self.2 fun x hx => by simp [Proof.counts, h x hx]
+  simp [cited, this]
+
+/-- A rebutted proof is not weighed under a policy that leaves rebutted proofs out. -/
+theorem rebutted_not_cited {P : Type} {π : Policy} {ps : List (Proof P)} {x : Proof P}
+    (hπ : π.rebutted = false) (hx : x.rebuttal.isSome) : x ∉ ps.filter (·.counts π) := by
+  simp_all [Proof.counts, Option.isSome_iff_ne_none]
 
 /-- One advantage: the proof for `winner` is preferred to the proof for `loser`. -/
 structure Advantage (P : Type) where
@@ -194,10 +243,10 @@ def beats (π : Policy) (ps : List (P × Tier)) (as : List (Advantage P)) (p q :
 def prevail (π : Policy) (rs : List P) (ps : List (P × Tier)) (as : List (Advantage P)) : Option P :=
   rs.find? fun p => rs.all fun q => q = p || beats π ps as p q
 
-/-- The whole procedure: the kernel's `resolve`, its tarjīḥ by proof under a policy. -/
-def reconcile (π : Policy) (jam naskh : Option P) (rs : List P) (ps : List (P × Tier))
+/-- The whole procedure: the kernel's `resolve`, its tarjīḥ by the proofs the policy weighs. -/
+def reconcile (π : Policy) (jam naskh : Option P) (rs : List P) (ps : List (Proof P))
     (as : List (Advantage P)) : Resolution P :=
-  resolve ⟨jam, naskh, prevail π rs ps as⟩
+  resolve ⟨jam, naskh, prevail π rs (cited π ps) as⟩
 
 variable {π : Policy} {rs : List P} {ps : List (P × Tier)} {as : List (Advantage P)} {p q : P}
 
@@ -252,12 +301,23 @@ theorem favours_applied_ignored (hπ : π.applied = false) (h : ∀ a ∈ as, a.
     favours π as p q = false :=
   favours_uncounted fun a ha => by simp [Advantage.counts, hπ, h a ha]
 
-theorem reconcile_jam_first {jam : P} {naskh : Option P} : reconcile π (some jam) naskh rs ps as = .jam jam :=
+theorem reconcile_jam_first {jam : P} {naskh : Option P} {xs : List (Proof P)} :
+    reconcile π (some jam) naskh rs xs as = .jam jam :=
   rfl
 
-theorem reconcile_tawaqquf_iff {jam naskh : Option P} :
-    reconcile π jam naskh rs ps as = .tawaqquf ↔ jam = none ∧ naskh = none ∧ prevail π rs ps as = none :=
+theorem reconcile_tawaqquf_iff {jam naskh : Option P} {xs : List (Proof P)} :
+    reconcile π jam naskh rs xs as = .tawaqquf ↔ jam = none ∧ naskh = none ∧ prevail π rs (cited π xs) as = none :=
   resolve_tawaqquf_iff
+
+/-- A position whose every proof its source rebuts outweighs nothing under a policy that leaves the
+rebutted out: it stands as one that cites no proof. -/
+theorem beats_rebutted {xs : List (Proof P)} (hπ : π.rebutted = false)
+    (h : ∀ x ∈ xs, x.pos = p → x.rebuttal.isSome) : beats π (cited π xs) as p q = false :=
+  beats_unproven <| by
+    simp only [top, cited, List.filter_map, List.map_map, List.max?_eq_none_iff, List.map_eq_nil_iff,
+      List.filter_eq_nil_iff, List.mem_filter]
+    intro x ⟨hx, hc⟩ hp
+    simp_all [Proof.counts, Option.isSome_iff_ne_none]
 
 open Policy in
 section
@@ -280,7 +340,10 @@ section
 #guard prevail sources ["a", "b"] [("b", Tier.istishab)] [] == some "b"
 -- Nothing cited on either side: tawaqquf.
 #guard prevail sources ["a", "b"] ([] : List (String × Tier)) [] == none
-#guard reconcile sources none none ["a", "b"] [("a", Tier.qati), ("b", .zanni)] [] == .tarjih "a"
+#guard reconcile sources none none ["a", "b"] [⟨"a", Tier.qati, none⟩, ⟨"b", .zanni, none⟩] [] == .tarjih "a"
+-- A proof its own source rebuts is left out by default: the other side prevails; under `all` it counts.
+#guard reconcile sources none none ["a", "b"] [⟨"a", Tier.qiyas, some .man⟩, ⟨"b", .qiyas, none⟩] [] == .tarjih "b"
+#guard reconcile all none none ["a", "b"] [⟨"a", Tier.qiyas, some .man⟩, ⟨"b", .qiyas, none⟩] [] == .tawaqquf
 end
 
 end Usul.Tarjih

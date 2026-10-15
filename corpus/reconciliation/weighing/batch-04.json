@@ -569,7 +569,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p343",
      "excerpt_ar": "وقال الشافعي: له عليها مهر المثل؛ لأنه معاوضة بالبضع، فإذا كان العوض محرما وجب مهر المثل، كالنكاح",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Given for al-Shāfiʿī, a non-Ḥanbalī holder of the ruling that the khulʿ carries a mahr (Taqī al-Dīn: «يرجع إلى المهر كالنكاح»). Analogy to marriage: qiyas."
+     "note": "Given for al-Shāfiʿī, a non-Ḥanbalī holder of the ruling that the khulʿ carries a mahr (Taqī al-Dīn: «يرجع إلى المهر كالنكاح»). Analogy to marriage: qiyas.",
+     "rebuttal": {
+      "by": "farq",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p343",
+      "excerpt_ar": "ولنا، أن خروج البضع من ملك الزوج غير متقوم، على ما أسلفنا، فإذا رضي بغير عوض، لم يكن له شيء، كما لو طلقها أو علق طلاقها على فعل شيء، ففعلته، وفارق النكاح؛ فإن دخول البضع في ملك الزوج متقوم",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma answers al-Shāfiʿī's analogy to marriage with a farq: the buḍʿ leaving the husband's ownership has no value, whereas its entry into his ownership in marriage does."
+     }
     }
    ],
    "advantages": []

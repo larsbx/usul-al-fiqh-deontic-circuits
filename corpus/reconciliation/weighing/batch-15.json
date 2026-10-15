@@ -25,22 +25,13 @@
      "note": "An analogy with an aṣl the madhhab agrees on, cited for validity. The same argument is in al-Kāfī, Kashshāf (v03:p157) and Sharḥ al-Muntahā (v02:p015). Qiyas."
     },
     {
-     "position": 0,
-     "tier": "qiyas",
-     "dalil": "Built on the verbal exception (a fortiori): if excepting the foetus by words is valid, the sale of the slave-woman pregnant with a free child is valid here.",
-     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p021",
-     "excerpt_ar": "فإن باع جارية حاملا بحر، وقلنا: يصح استثناء الحمل صح هاهنا",
-     "who": "Ibn Qudāma, al-Kāfī",
-     "note": "On these facts (the verbal exception taken as valid), al-Kāfī states validity without giving two views. This is an analogy from the verbal exception: qiyas."
-    },
-    {
      "position": 1,
      "tier": "qiyas",
      "dalil": "al-Qāḍī's rationale: the free foetus does not enter the sale, so it is as if it were excepted, and is treated like the verbal exception.",
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p079",
      "excerpt_ar": "فقال القاضي: لا يصح. وهو مذهب الشافعي؛ لأنه لا يدخل في البيع، فكأنه مستثنى",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "The ground for al-Qāḍī's invalidity, which he shares with the Shāfiʿīs. A stated analogy to the exception: qiyas. On these facts, where the verbal exception is valid, the analogy does not lead to invalidity; the source gives it without that restriction."
+     "note": "The ground for al-Qāḍī's invalidity, which he shares with the Shāfiʿīs. A stated analogy to the exception: qiyas."
     },
     {
      "position": 1,
@@ -49,7 +40,7 @@
      "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p021",
      "excerpt_ar": "وإن قلنا: لا يصح ثم، ففيه وجهان: # أحدهما: لا يصح، لأنه استثناه في الحقيقة",
      "who": "Ibn Qudāma, al-Kāfī",
-     "note": "In al-Kāfī this wajh holds only on the view that the verbal exception is invalid. It is recorded as the stated ground of the invalidity ruling. Qiyas."
+     "note": "In al-Kāfī this wajh holds on the view that the verbal exception is invalid, the branch the case is annotated on. It is the stated ground of the invalidity ruling. Qiyas."
     }
    ],
    "advantages": []
@@ -442,7 +433,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p318",
      "excerpt_ar": "وحكى أبو الخطاب عن أحمد رواية أخرى، لا جزاء عليه في جميع ذلك؛ لأن القاتل حلال في الحل",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "The reason given for the riwāya Abū al-Khaṭṭāb reports (the same ruling as position 1). A stated rationale: qiyas. Ibn Rajab adds that the riwāya «ضعيف، ولا يثبت عن أحمد»; that weakens its attribution to Aḥmad, but no report is involved, so the tier stays qiyas."
+     "note": "The reason given for the riwāya Abū al-Khaṭṭāb reports (the same ruling as position 1). A stated rationale: qiyas. Ibn Rajab adds that the riwāya «ضعيف، ولا يثبت عن أحمد»; that weakens its attribution to Aḥmad, but no report is involved, so the tier stays qiyas.",
+     "rebuttal": {
+      "by": "fasadItibar",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p318",
+      "excerpt_ar": "وهذا لا يصح؛ فإن النبي - صلى الله عليه وسلم - قال: «لا ينفر صيدها» . ولم يفرق بين من هو في الحل والحرم",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī says the reasoning «the killer is ḥalāl in the ḥill» is unsound because the ḥadīth «لا ينفر صيدها» forbids the ḥaram's game without distinguishing the shooter's place."
+     }
     }
    ],
    "advantages": []

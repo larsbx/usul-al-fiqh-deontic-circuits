@@ -127,7 +127,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p249",
      "excerpt_ar": "وما رووه عن ابن عباس، لا يصح، قال أحمد: يرويه ليث، وليس بالقوي",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "The ṣaḥāba reports cited for this position, which the source itself calls unsound («لا يصح») and «منقطع»: mursalDaif."
+     "note": "The ṣaḥāba reports cited for this position, which the source itself calls unsound («لا يصح») and «منقطع»: mursalDaif.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p249",
+      "excerpt_ar": "وما رووه عن ابن عباس، لا يصح، قال أحمد: يرويه ليث، وليس بالقوي، وقد رواه حنظلة خلاف ما رواه ليث، وحنظلة أقوى من ليث. وحديث ابن مسعود منقطع",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī declares the Ibn ʿAbbās report unsound (Layth is weak and the stronger Ḥanẓala reports the opposite) and the Ibn Masʿūd report broken."
+     }
     }
    ],
    "advantages": []

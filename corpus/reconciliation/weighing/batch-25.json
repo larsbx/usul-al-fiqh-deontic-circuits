@@ -142,7 +142,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p265",
      "excerpt_ar": "وقال أبو حنيفة ومالك لا ينعزل؛ لأن وكالته صارت من حقوق الرهن، فلم يكن للراهن إسقاطه، كسائر حقوقه",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Given for Abū Ḥanīfa and Mālik, who hold the same ruling as Ibn Abī Mūsā (not dismissed): position 1. Analogy on the pledge's other rights: qiyas."
+     "note": "Given for Abū Ḥanīfa and Mālik, who hold the same ruling as Ibn Abī Mūsā (not dismissed): position 1. Analogy on the pledge's other rights: qiyas.",
+     "rebuttal": {
+      "by": "naqd",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p265",
+      "excerpt_ar": "والأول هو المنصوص عنه؛ لأن الوكالة عقد جائز، فلم يلزم المقام عليها، كسائر الوكالات، وكونه من حقوق الراهن لا يمنع من جوازه، كما لو شرطا الرهن في البيع، فإنه لا يصير لازما",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī answers that being one of the pledge's rights does not stop the agency being revocable, as a pledge stipulated in a sale is such a right yet does not become binding."
+     }
     }
    ],
    "advantages": []
@@ -199,7 +206,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p018",
      "excerpt_ar": "فذكر القاضي أن ظاهر كلام أحمد، أنه لا ينعزل بالعزل، وله التصرف حتى ينض المال، كالمضارب إذا عزله رب المال",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "al-Qāḍī's reading of Aḥmad for the case where the capital is goods: position 1. Analogy on the muḍārib: qiyas."
+     "note": "al-Qāḍī's reading of Aḥmad for the case where the capital is goods: position 1. Analogy on the muḍārib: qiyas.",
+     "rebuttal": {
+      "by": "farq",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p019",
+      "excerpt_ar": "فإن قيل: أليس إذا فسخ رب المال المضاربة، فطلب العامل البيع، أجيب إليه؟ فالجواب: أن حق العامل في الربح، ولا يظهر الربح إلا بالبيع، فاستحقه العامل لوقوف حصول حقه عليه، وفي مسألتنا، ما يحصل من الربح يستدركه كل واحد منهما في نصيبه من المتاع، فلم يجبر على البيع.",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma separates the partner from the muḍārib, who is the aṣl of al-Qāḍī's analogy. The muḍārib's right lies in a profit that only sale reveals, while each partner recovers his profit in his share of the goods."
+     }
     }
    ],
    "advantages": []
@@ -265,7 +279,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p256",
      "excerpt_ar": "ذكره القاضي. وهو مذهب الشافعي؛ لأنه غرس وبنى في ملكه، وما حدث من النقص إنما حدث في ملكه، وذلك مما لا يقابله ثمن",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "al-Qāḍī's and al-Shāfiʿī's reason that the uprooting buyer need not level the holes or pay the loss: position 1. A stated rationale: qiyas."
+     "note": "al-Qāḍī's and al-Shāfiʿī's reason that the uprooting buyer need not level the holes or pay the loss: position 1. A stated rationale: qiyas.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p256",
+      "excerpt_ar": "وقولهم: إن النقص حصل في ملكه. ليس كذلك؛ فإن النقص الحاصل بالقلع إنما هو في ملك الشفيع",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī denies the premise: the loss from uprooting falls in the shafīʿ's property, not the buyer's."
+     }
     },
     {
      "position": 1,

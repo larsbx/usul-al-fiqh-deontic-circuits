@@ -13,7 +13,7 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p306",
      "excerpt_ar": "ويحتمل أن يلزمه ضمان السراية كلها، فيما إذا اقتص بآلة مسمومة أو كالة؛ لأن الفعل كله محرم، بخلاف قطع الإصبعين",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "The sources treat this farʿ as retaliation exacted wrongfully (poisoned/blunt tool, extreme heat or cold) with death following; Ibn Qudāma's iḥtimāl for full liability rests on the act being wholly forbidden. A rationale, so qiyas."
+     "note": "From the cognate masʾala (retaliation exacted wrongfully: a poisoned or blunt tool, extreme heat or cold), not Ibn Rajab's facts (a fresh aggressive wound after the retaliation), which no source consulted treats. Ibn Qudāma's iḥtimāl for full liability rests on the act being wholly forbidden. A rationale, so qiyas."
     },
     {
      "position": 1,
@@ -22,7 +22,7 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p306",
      "excerpt_ar": "فقال القاضي: على المقتص نصف الدية؛ لأنه تلف بفعلين؛ جائز ومحرم، ومضمون وغير مضمون، فانقسم الواجب عليهما نصفين",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "al-Qāḍī's argument for half on exactly the qiṣāṣ-with-excess / poisoned-tool case; Ibn Qudāma notes it is also the Shāfiʿī view. An analogy with a stated ʿilla, so qiyas."
+     "note": "al-Qāḍī's argument for half in the same cognate masʾala (excess in retaliation, a poisoned tool); Ibn Qudāma notes it is also the Shāfiʿī view. An analogy with a stated ʿilla, so qiyas."
     }
    ],
    "advantages": []
@@ -88,7 +88,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p372",
      "excerpt_ar": "وإن تلفت تحت الراكب ففيه قولان أحدهما يلزمه نصف قيمتها؛ لأنها تلفت بفعل مضمون وغير مضمون، أشبه ما لو تلفت بجراحته وجراحة مالكها",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Given by Ibn Qudāma for the Shāfiʿīs, non-Ḥanbalī holders of the same half/share ruling; the Ḥanbalī wajh (Abū al-Khaṭṭāb's iḥtimāl of half) is reported without proof. Ibn Qudāma rebuts it with the thief whose hand is cut and then wounded. Analogy, so qiyas."
+     "note": "Given by Ibn Qudāma for the Shāfiʿīs, non-Ḥanbalī holders of the same half/share ruling; the Ḥanbalī wajh (Abū al-Khaṭṭāb's iḥtimāl of half) is reported without proof. Ibn Qudāma rebuts it with the thief whose hand is cut and then wounded. Analogy, so qiyas.",
+     "rebuttal": {
+      "by": "naqd",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p372",
+      "excerpt_ar": "وقولهم: تلفت بفعل مضمون وغير مضمون، أشبه ما لو تلفت بجراحتين يبطل بما إذا قطع السارق، ثم قطع آخر يده عدوانا، فمات منهما، وفارق ما إذا جرح نفسه وجرحه غيره؛ لأن الفعلين عدوان، فقسم الضمان عليهما.",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma breaks the 'guaranteed and unguaranteed act' ʿilla with the thief whose hand is cut by the ḥadd and then by an aggressor. He separates the two-wounds aṣl because there both acts are wrongful."
+     }
     }
    ],
    "advantages": []
@@ -454,7 +461,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p140",
      "excerpt_ar": "لا تفسدوا علينا سنة نبينا - صلى الله عليه وسلم - عدة أم الولد إذا توفي عنها سيدها أربعة أشهر وعشر",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Cited for the free woman's ʿidda; Ibn Qudāma says «فأما حديث عمرو بن العاص، فضعيف», Aḥmad: «لا يصح». So mursalDaif."
+     "note": "Cited for the free woman's ʿidda; Ibn Qudāma says «فأما حديث عمرو بن العاص، فضعيف», Aḥmad: «لا يصح». So mursalDaif.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p141",
+      "excerpt_ar": "فأما حديث عمرو بن العاص، فضعيف. قال ابن المنذر: ضعف أحمد وأبو عبيد حديث عمرو بن العاص",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma declares the report of ʿAmr b. al-ʿĀṣ weak, citing Ibn al-Mundhir that Aḥmad and Abū ʿUbayd weakened it and Aḥmad's «لا يصح»."
+     }
     },
     {
      "position": 1,
@@ -463,7 +477,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p140",
      "excerpt_ar": "ولأنها حرة تعتد للوفاة، فكانت عدتها أربعة أشهر وعشرا، كالزوجة الحرة",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "The concurrent-freedom rationale Ibn Rajab reports. Ibn Qudāma rejects it because she is not a wife. Analogy, so qiyas."
+     "note": "The concurrent-freedom rationale Ibn Rajab reports. Ibn Qudāma rejects it because she is not a wife. Analogy, so qiyas.",
+     "rebuttal": {
+      "by": "farq",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p141",
+      "excerpt_ar": "وأما قياسهم إياها على الزوجات، فلا يصح؛ لأن هذه ليست زوجة، ولا في حكم الزوجة، ولا مطلقة، ولا في حكم المطلقة.",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma says the analogy of the umm walad to the free wife is invalid. She is not a wife, nor in a wife's position."
+     }
     }
    ],
    "advantages": []

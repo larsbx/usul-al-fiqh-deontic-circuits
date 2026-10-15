@@ -31,7 +31,14 @@
      "excerpt_ar": "لأن إقباضه إياه إذن له في إتلافه بالعوض المسمى فأشبه ما لو قال له أتلفه بألف درهم",
      "note": "Cited by Ibn Rajab for Abū Bakr's view, chosen by Taqī al-Dīn, that it is guaranteed by the named price (the position holding the contract's own terms). Analogy: qiyas. Ibn Rajab answers it (the price was set against ownership, not destruction), which is a rebuttal, not a proof for the other side.",
      "ref": "src:openiti-rajab-shamela21730/v01:p068",
-     "who": "Ibn Rajab, Taqrīr al-Qawāʿid"
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-rajab-shamela21730/v01:p068",
+      "excerpt_ar": "وقد يجاب عن هذا بأن المسمى إنما جعل عوضا عن الملك لا عن الإتلاف ولم يتضمن العقد إذنا في الإتلاف إنما تضمن نقل ملك بعوض ولم يوجد نقل الملك فلا يثبت العوض",
+      "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+      "note": "Ibn Rajab answers (tentatively, «قد يجاب») that the named price was set against ownership, not destruction. The void contract contained no permission to destroy, so the named price does not apply."
+     }
     }
    ],
    "advantages": []
@@ -205,7 +212,14 @@
      "excerpt_ar": "وذكر القاضي، أن ظاهر كلام أحمد، جواز ذلك؛ لأن ابن عمر كان إذا اشترى شيئا يعجبه فارق صاحبه. متفق عليه",
      "note": "Cited by al-Qāḍī for the riwāya allowing departure lest the other annul. A ṣaḥābī's deed with no ṣaḥābī reported against him: fatwaSahabi. Ibn Qudāma ranks the Prophet's saying above it and suggests the ḥadīth did not reach him.",
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p485",
-     "who": "Ibn Qudāma, al-Mughnī"
+     "who": "Ibn Qudāma, al-Mughnī",
+     "rebuttal": {
+      "by": "fasadItibar",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p485",
+      "excerpt_ar": "والأول أصح؛ لأن قول النبي - صلى الله عليه وسلم - يقدم على فعل ابن عمر. والظاهر أن ابن عمر لم يبلغه هذا، ولو علمه لما خالفه",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma answers the appeal to Ibn ʿUmar's practice: the Prophet's saying (forbidding leaving lest the other annul) takes precedence over Ibn ʿUmar's deed, which he likely did without knowing the ḥadīth."
+     }
     },
     {
      "position": 1,
@@ -289,7 +303,14 @@
      "excerpt_ar": "وحكى ابن عقيل عن الأصحاب أنهم ينعزلون لأنهم نواب القاضي بخلاف القضاة فإنهم نواب للمسلمين",
      "note": "Ibn ʿAqīl's report from the aṣḥāb. Stated rationale: qiyas. Ibn Rajab's answer to it is a rebuttal, not a proof for position 0.",
      "ref": "src:openiti-rajab-shamela21730/v01:p114",
-     "who": "Ibn Rajab, Taqrīr al-Qawāʿid"
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-rajab-shamela21730/v01:p114",
+      "excerpt_ar": "ويجاب عنه بأن القضاء ليس بفرض كفاية على رواية ولا يجب نصب قاض بالكلية وبأن الوجوب لا يتعلق بمعين فلا أثر له في عدم نفوذ العزل",
+      "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+      "note": "Ibn Rajab answers the farq: on one riwāya judgeship is not a farḍ kifāya at all, and in any case an obligation not tied to a specific person has no bearing on whether dismissal takes effect."
+     }
     },
     {
      "position": 1,

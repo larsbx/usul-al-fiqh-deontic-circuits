@@ -327,7 +327,8 @@
         },
         {
           "who": "the wajh of ḍamān (al-Targhīb), the ẓāhir of al-Qāḍī's words: by a free man's diya",
-          "ruling": true
+          "ruling": true,
+          "detail": "The measure is Ibn Rajab's report of al-Qāḍī («وظاهر كلام القاضي أنه يضمنه بدية حر»). al-Mughnī (v08:p314) and Kashshāf (v05:p527), on the same side, measure the ḍamān as the diya less the arsh of the cut: «لكن يسقط أرش القطع؛ لأنه في ملكه», «بما زاد على أرش القطع من الدية لورثته»."
         }
       ],
       "matches_madhhab": false,

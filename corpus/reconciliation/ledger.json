@@ -1152,8 +1152,11 @@
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f005",
       "grades": [
-        "ashab",
-        "takhrij"
+        [
+          "nass",
+          "ashab"
+        ],
+        "nass"
       ],
       "jam": null,
       "naskh": null,

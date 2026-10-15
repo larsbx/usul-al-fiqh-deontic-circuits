@@ -325,7 +325,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p192",
      "excerpt_ar": "لما روى الأسود، عن عائشة، أن النبي - صلى الله عليه وسلم - «خير بريرة، وكان زوجها حرا.» رواه النسائي",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Cited for Ṭāwūs, al-Thawrī and the Ḥanafīs, who give her the option. That is the same ruling Taqī al-Dīn reaches, so it counts for it. A connected marfūʿ report: zanni. al-Mughnī answers that al-Aswad's narrations contradict each other."
+     "note": "Cited for Ṭāwūs, al-Thawrī and the Ḥanafīs, who give her the option. That is the same ruling Taqī al-Dīn reaches, so it counts for it. A connected marfūʿ report: zanni. al-Mughnī answers that al-Aswad's narrations contradict each other.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p192",
+      "excerpt_ar": "فأما خبر الأسود عن عائشة، فقد روى عنها القاسم بن محمد وعروة، أن زوج بريرة كان عبدا. وهما أخص بها من الأسود",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī rejects al-Aswad's report: al-Qāsim and ʿUrwa, closer to ʿĀʾisha, report that Barīra's husband was a slave, and al-Aswad's own narrations contradict each other."
+     }
     },
     {
      "position": 1,
@@ -394,7 +401,14 @@
      "ref": "src:openiti-rajab-shamela21730/v01:p042",
      "excerpt_ar": "صاحب المقنع ذلك وجها لنا لا بناء على السراية بل على زوال ولاية السيد عن عبده بعتقه، فيكون كما لو أجر الولي الصبي",
      "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
-     "note": "Ibn Rajab reports the takhrīj and then calls it weak («وهذا ضعيف»): a guardian's authority ends altogether, a master's does not. His verdict judges the analogy; it does not call a report weak, so the tier stays qiyas. No source gives a proof for Taqī al-Dīn's sirāya ground beyond his view itself."
+     "note": "Ibn Rajab reports the takhrīj and then calls it weak («وهذا ضعيف»): a guardian's authority ends altogether, a master's does not. His verdict judges the analogy; it does not call a report weak, so the tier stays qiyas. No source gives a proof for Taqī al-Dīn's sirāya ground beyond his view itself.",
+     "rebuttal": {
+      "by": "farq",
+      "ref": "src:openiti-rajab-shamela21730/v01:p042",
+      "excerpt_ar": "وهذا ضعيف فإن الولي تنقطع ولايته بالكلية عن الصبي ببلوغه رشيدا، بخلاف السيد فإن استثناء منافعه بالشرط",
+      "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+      "note": "Ibn Rajab calls the takhrīj weak: the guardian's authority ends altogether when the boy comes of age, whereas the master's use of the slave's benefits rests on what he reserved, so the aṣl and farʿ differ."
+     }
     }
    ],
    "advantages": []

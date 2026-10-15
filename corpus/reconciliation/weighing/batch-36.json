@@ -451,7 +451,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p137",
      "excerpt_ar": "وقال أبو يوسف: يكون مقرا بنصفه؛ لقوله تعالى",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Cited for Abū Yūsuf, a non-Ḥanbalī holder of the same ruling as al-Qāḍī (halves), so it counts for that ruling. The āya is about uterine siblings in inheritance and is carried over to the word «شركة» in an admission («كذا هاهنا»), so qiyas, not qati. Ibn Qudāma rebuts it: the equality in the āya rests on other evidence."
+     "note": "Cited for Abū Yūsuf, a non-Ḥanbalī holder of the same ruling as al-Qāḍī (halves), so it counts for that ruling. The āya is about uterine siblings in inheritance and is carried over to the word «شركة» in an admission («كذا هاهنا»), so qiyas, not qati. Ibn Qudāma rebuts it: the equality in the āya rests on other evidence.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p137",
+      "excerpt_ar": "ولنا، أن أي جزء كان له منه، فله فيه شركة، فكان له تفسيره بما شاء، كالنصف، وليس إطلاق لفظ الشركة على ما دون النصف مجازا، ولا مخالفا للظاهر، والآية تثبت التسوية فيها بدليل",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī answers that «شركة» covers any share, and the equality in the āya is proven by other evidence, not by the word «شركاء»."
+     }
     }
    ],
    "advantages": []

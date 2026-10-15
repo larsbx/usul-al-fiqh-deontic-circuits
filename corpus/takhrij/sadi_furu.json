@@ -888,7 +888,8 @@
     },
     {
      "who": "qila: only fruit and palm-pith",
-     "ruling": 1
+     "ruling": 1,
+     "detail": "Ibn Rajab reports the restriction as «وقيل يختص ذلك بالثمر والكثر». al-Mughnī (v09:p120) and al-Inṣāf (v10:p277) give the restricted view more widely: doubling for fruit and palm-pith and for livestock taken from pasture (ḥarīsat al-jabal), everything else compensated once, «هذا قول أصحابنا وغيرهم، إلا أبا بكر»; al-Inṣāf «على الصحيح من المذهب»."
     }
    ],
    "matches_madhhab": false,
@@ -3484,16 +3485,16 @@
    "expected": true,
    "positions": [
     {
-     "who": "al-Khiraqī, al-Mughnī",
+     "who": "a riwāya, the manṣūṣ in riwāyat Ibn al-Qāsim (Ibn Rajab); al-Khiraqī, al-Mughnī",
      "ruling": true
     },
     {
-     "who": "takhrīj from the takbīr case",
+     "who": "a riwāya: it does not count for the wadāʿ (Ibn Rajab «على روايتين»; al-Mughnī v03:p404 «وعنه، لا يجزئه»; al-Mubdiʿ v03:p234 «والثانية»)",
      "ruling": false
     }
    ],
    "matches_madhhab": false,
-   "note": "One departure ṭawāf intended as both ziyāra and wadāʿ suffices per al-Khiraqī and al-Mughnī, with a dissent derived (yatakharraj) from the next case; neither is marked."
+   "note": "The ziyāra ṭawāf delayed and done at departure: does it count for the wadāʿ? «على روايتين [ونص في رواية ابن القاسم على سقوطه» (Ibn Rajab; the bracketed words are the edition's): two riwāyāt, the naṣṣ for sufficing, which al-Khiraqī and al-Mughnī hold. Ibn Rajab labels neither the madhhab; al-Inṣāf labels sufficing «هذا المذهب وعليه الأصحاب»."
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f006",

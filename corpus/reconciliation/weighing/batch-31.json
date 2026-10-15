@@ -148,7 +148,7 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p404",
      "excerpt_ar": "وعنه، لا يجزئه عن طواف الوداع؛ لأنهما عبادتان واجبتان، فلم تجز إحداهما عن الأخرى، كالصلاتين الواجبتين",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "The case records this side as a takhrīj; al-Mughnī reports it as a riwāya and gives this reason. Analogy with two obligatory prayers: qiyas."
+     "note": "al-Mughnī's reason for the second riwāya. Analogy with two obligatory prayers: qiyas."
     },
     {
      "position": 1,
@@ -355,7 +355,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p429",
      "excerpt_ar": "فإن قيل: القصد بهذه الشهادة العتق، وهو مما لا يثبت بشاهد ويمين",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "al-Mughnī raises this as an objection («fa-in qīla») and answers it. It is the only reason given anywhere for the other wajh in al-Targhīb. A rationale: qiyas. al-Mughnī's answer is a rebuttal and is not recorded."
+     "note": "al-Mughnī raises this as an objection («fa-in qīla») and answers it. It is the only reason given anywhere for the other wajh in al-Targhīb. A rationale: qiyas. al-Mughnī's answer is a rebuttal and is not recorded.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p429",
+      "excerpt_ar": "قلنا: بل يثبت بشاهد ويمين، في رواية، وإن سلمنا أنه لا يثبت بذلك، لكن الشهادة هاهنا إنما هي بأداء المال",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma answers («قلنا») that manumission is in one riwāya proven by a witness and oath, and even granting otherwise, the testimony here is only to payment of money, from which the manumission follows."
+     }
     }
    ],
    "advantages": []

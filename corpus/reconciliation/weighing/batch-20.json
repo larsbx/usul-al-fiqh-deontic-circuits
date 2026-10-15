@@ -289,7 +289,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p331",
      "excerpt_ar": "وقال أبو الخطاب: فيه وجه آخر، أنه يعتق من رأس المال. وهو مذهب الشافعي؛ لأنه لا يتهم فيه فأشبه، العتق في صحته",
      "who": "Ibn Qudāma, al-Mughnī (Abū al-Khaṭṭāb's wajh; al-Shāfiʿī)",
-     "note": "The ground for the other wajh: position 1. Analogy: qiyas. al-Mughnī answers that the executed manumission is not suspected either, the bar being harm to heirs."
+     "note": "The ground for the other wajh: position 1. Analogy: qiyas. al-Mughnī answers that the executed manumission is not suspected either, the bar being harm to heirs.",
+     "rebuttal": {
+      "by": "naqd",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v10:p331",
+      "excerpt_ar": "وقولهم: لا يتهم فيه قلنا: وكذلك العتق المنجز، لا يتهم فيه؛ فإن الإنسان لا يتهم بمحاباة غير الوارث، وتقديمه على وارثه، وإنما منع منه، لما فيه من الضرر بالورثة، وهذا حاصل هاهنا",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī breaks the ʿilla: manumission executed in illness is equally free of suspicion yet counts from the third, because the bar is harm to the heirs, which is present here."
+     }
     }
    ],
    "advantages": []
@@ -439,7 +446,14 @@
      "ref": "src:openiti-rajab-shamela21730/v01:p286",
      "excerpt_ar": "وحكى احتمالا آخر: أن الضمان على المتلف وحده، كما لو اضطر إلى طعام الغير فأكله، وهذا ضعيف جدا",
      "who": "Ibn Rajab, al-Qawāʿid (q. 127), reporting al-Talkhīṣ",
-     "note": "The analogy offered for the iḥtimāl that the direct destroyer alone is liable: position 2. Ibn Rajab calls it very weak, because the muḍṭarr has no one forcing him to whom liability could pass; still an analogy, so qiyas."
+     "note": "The analogy offered for the iḥtimāl that the direct destroyer alone is liable: position 2. Ibn Rajab calls it very weak, because the muḍṭarr has no one forcing him to whom liability could pass; still an analogy, so qiyas.",
+     "rebuttal": {
+      "by": "farq",
+      "ref": "src:openiti-rajab-shamela21730/v01:p286",
+      "excerpt_ar": "وهذا ضعيف جدا ; لأن المضطر لم يلجئه إلى الإتلاف من يحال الضمان عليه",
+      "who": "Ibn Rajab, al-Qawāʿid",
+      "note": "Ibn Rajab calls the analogy very weak, because the man in dire need was not driven to destroy the food by someone onto whom liability could be shifted, unlike the coerced person."
+     }
     }
    ],
    "advantages": []

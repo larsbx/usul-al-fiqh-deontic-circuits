@@ -40,7 +40,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p167",
      "excerpt_ar": "وأما حديث: \" بلوا الشعر \". فيرويه الحارث بن وجيه وحده، وهو ضعيف",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Cited for the wajh of wujūb (the ẓāhir of the aṣḥāb, and al-Shāfiʿī's school). The Mughnī says its sole narrator is weak: mursalDaif."
+     "note": "Cited for the wajh of wujūb (the ẓāhir of the aṣḥāb, and al-Shāfiʿī's school). The Mughnī says its sole narrator is weak: mursalDaif.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p167",
+      "excerpt_ar": "وأما حديث: \" بلوا الشعر \". فيرويه الحارث بن وجيه وحده، وهو ضعيف الحديث عن مالك بن دينار",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī rejects the ḥadīth as not established: only al-Ḥārith b. Wajīh transmits it, and he is weak in ḥadīth from Mālik b. Dīnār."
+     }
     },
     {
      "position": 1,

@@ -70,7 +70,14 @@
      "ref": "src:openiti-rajab-shamela21730/v01:p121",
      "excerpt_ar": "ويتخرج منه وجه في التي قبلها أنه لا يصح وأولى لأن هناك لم يبن على أصل مستصحب",
      "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
-     "note": "The extracted wajh for insufficiency is a qiyās (awlā) from the following farʿ; Ibn Rajab himself notes it is answered by ghalabat al-ẓann on the time. Qiyas."
+     "note": "The extracted wajh for insufficiency is a qiyās (awlā) from the following farʿ; Ibn Rajab himself notes it is answered by ghalabat al-ẓann on the time. Qiyas.",
+     "rebuttal": {
+      "by": "farq",
+      "ref": "src:openiti-rajab-shamela21730/v01:p121",
+      "excerpt_ar": "ويتخرج منه وجه في التي قبلها أنه لا يصح وأولى لأن هناك لم يبن على أصل مستصحب ولكنه بنى على غلبة ظن بدخول الوقت وهو يكفي في صحة الصلاة",
+      "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+      "note": "Right after stating the a fortiori takhrīj, Ibn Rajab answers it. The prayer case rests on a probable belief that the time has begun, and that suffices for validity, so the a fortiori fails."
+     }
     }
    ],
    "advantages": []

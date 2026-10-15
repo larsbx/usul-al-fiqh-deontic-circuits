@@ -31,7 +31,14 @@
      "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p137",
      "excerpt_ar": "لأنه إنفاق على طفل، فلم يجز بغير إذن الحاكم كما لو أنفق على صغير مودع",
      "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
-     "note": "al-Mubdiʿ gives this as the ground for «وعنه: ما يدل على أنه لا ينفق عليه إلا بإذنه» and names Abū al-Ḥārith's text as its aṣl. Analogy: qiyas. al-Mughnī answers it (the finder has wilāya; the depositee does not, and the child's need must be proved before the judge), but that answer is a rebuttal, not a proof for position 0."
+     "note": "al-Mubdiʿ gives this as the ground for «وعنه: ما يدل على أنه لا ينفق عليه إلا بإذنه» and names Abū al-Ḥārith's text as its aṣl. Analogy: qiyas. al-Mughnī answers it (the finder has wilāya; the depositee does not, and the child's need must be proved before the judge), but that answer is a rebuttal, not a proof for position 0.",
+     "rebuttal": {
+      "by": "farq",
+      "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p137",
+      "excerpt_ar": "والصحيح أنه مخالف له من وجهين، أحدهما: أن الملتقط له ولاية على اللقيط وعلى ماله، والثاني: أنه ينفق على اللقيط من ماله، وهذا بخلافه؛ لأنه يشترط عنده إثبات حاجته لعدم ماله، وعدم نفقة متروكة برسمه",
+      "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ (citing al-Mughnī and al-Sharḥ)",
+      "note": "In the same passage al-Mubdiʿ cites al-Mughnī and al-Sharḥ: the depositee case differs in two ways. The finder has wilāya over the foundling and its property, and the depositee must first prove the child's need before the judge."
+     }
     },
     {
      "position": 1,
@@ -73,7 +80,14 @@
      "ref": "src:openiti-rajab-shamela21730/v01:p225",
      "excerpt_ar": "تعذر إذن الحاكم لما روى عنه أبو طالب أيضا إذا كان عنده رهن وصاحبه غائب وخاف فساده يأتي السلطان",
      "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
-     "note": "Ibn Rajab reports this as the ground of al-Qāḍī in al-Mujarrad and Ibn ʿAqīl for limiting the naṣṣ to where the judge's permission cannot be had. It carries a ruling on a known absent owner over to an unknown one: qiyas. Ibn Rajab records that al-Majd and others rejected the taʾwīl."
+     "note": "Ibn Rajab reports this as the ground of al-Qāḍī in al-Mujarrad and Ibn ʿAqīl for limiting the naṣṣ to where the judge's permission cannot be had. It carries a ruling on a known absent owner over to an unknown one: qiyas. Ibn Rajab records that al-Majd and others rejected the taʾwīl.",
+     "rebuttal": {
+      "by": "farq",
+      "ref": "src:openiti-rajab-shamela21730/v01:p225",
+      "excerpt_ar": "وأنكر ذلك الشيخ مجد الدين وغيره وأقروا النصوص على وجوهها فإن كان المالك معروفا لكنه غائب رفع أمره إلى السلطان وإن جهل جاز التصرف فيه بدون حاكم",
+      "who": "Ibn Rajab, Taqrīr al-Qawāʿid (reporting al-Majd)",
+      "note": "Right after giving al-Qāḍī's and Ibn ʿAqīl's reading, Ibn Rajab records al-Majd's and others' rejection of it: the Abū Ṭālib text is about a known absent owner, who is referred to the ruler, while property of an unknown owner may be disposed of without a judge."
+     }
     }
    ],
    "advantages": []
@@ -274,7 +288,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p264",
      "excerpt_ar": "وقال أبو حنيفة إن كان مما ينقسم، اقتسماه، وإلا فلكل واحد منهما إمساك جميعه؛ لأن اجتماعهما على حفظه يشق عليهما",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Cited in al-Mughnī for Abū Ḥanīfa, who holds position 1's ruling for a divisible pledge (they divide it). It counts for that ruling. al-Mughnī answers that a store with two locks removes the hardship. Rationale: qiyas."
+     "note": "Cited in al-Mughnī for Abū Ḥanīfa, who holds position 1's ruling for a divisible pledge (they divide it). It counts for that ruling. al-Mughnī answers that a store with two locks removes the hardship. Rationale: qiyas.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p264",
+      "excerpt_ar": "وقولهم: إن الاجتماع على الحفظ يشق. ليس كذلك؛ فإنه يمكن جعله في مخزن لكل واحد منهما عليه قفل",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma denies the premise that joint keeping is a hardship, since the pledge can be put in a store with a lock for each of them."
+     }
     }
    ],
    "advantages": []

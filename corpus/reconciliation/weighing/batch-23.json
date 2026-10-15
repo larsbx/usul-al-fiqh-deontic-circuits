@@ -22,7 +22,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p411",
      "excerpt_ar": "بدليل حديث علي وأبي قتادة، فإنهما لو كانا يستحقان الرجوع على الميت، صار الدين لهما",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Cited for the no-recourse riwāya, held also by Abū Ḥanīfa, al-Shāfiʿī and Ibn al-Mundhir (position 1). A marfūʿ report used by inference: zanni. (al-Mughnī answers that they paid as volunteers.)"
+     "note": "Cited for the no-recourse riwāya, held also by Abū Ḥanīfa, al-Shāfiʿī and Ibn al-Mundhir (position 1). A marfūʿ report used by inference: zanni. (al-Mughnī answers that they paid as volunteers.)",
+     "rebuttal": {
+      "by": "qawlBiMujab",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p411",
+      "excerpt_ar": "فأما علي وأبو قتادة، فإنهما تبرعا بالقضاء والضمان، فإنهما قضيا دينه قصدا لتبرئة ذمته، ليصلي عليه رسول الله - صلى الله عليه وسلم - مع علمهما بأنه لم يترك وفاء، والمتبرع لا يرجع بشيء، وإنما الخلاف في المحتسب بالرجوع",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī answers that ʿAlī and Abū Qatāda paid as volunteers, and a volunteer has no recourse; the dispute concerns one who pays intending recourse, which the report does not touch."
+     }
     },
     {
      "position": 1,

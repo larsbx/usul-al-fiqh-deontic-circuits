@@ -214,7 +214,14 @@
      "ref": "src:openiti-rajab-shamela21730/v01:p222",
      "excerpt_ar": "وقد أشار القاضي إلى الفرق بأن النذر يحتاج إخراجه إلى نية كالزكاة",
      "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
-     "note": "al-Qāḍī's farq for his and Ibn ʿAqīl's view that the giver is liable: position 1. Ibn Rajab rejects it («وهذا ممنوع»), but it is the ground cited for this side. Analogy to zakāt: qiyas."
+     "note": "al-Qāḍī's farq for his and Ibn ʿAqīl's view that the giver is liable: position 1. Ibn Rajab rejects it («وهذا ممنوع»), but it is the ground cited for this side. Analogy to zakāt: qiyas.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-rajab-shamela21730/v01:p222",
+      "excerpt_ar": "وقد أشار القاضي إلى الفرق بأن النذر يحتاج إخراجه إلى نية كالزكاة وهذا ممنوع بل نقول في نذر الصدقة بالمعين ما نقول في الأضحية المعينة",
+      "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+      "note": "Ibn Rajab rejects al-Qāḍī's farq («وهذا ممنوع»): a vow of charity with a specific item is treated like a designated sacrificial animal, which another may slaughter without liability."
+     }
     }
    ],
    "advantages": []

@@ -3290,6 +3290,14 @@
           "grade": "jazm",
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p483",
+          "excerpt_ar": "فإن كان في يده صيد قبل الإحرام، ثم أحرم، فأرسله من يده غيره بغير إذنه: لزمه ضمانه، سواء كان المرسل حلالا أو محرما",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Mubhij (al-Shīrāzī), as al-Inṣāf quotes it",
+          "note": "al-Inṣāf quotes al-Mubhij for liability and adds «ونقل هذا في القاعدة السادسة والتسعين»: Ibn Rajab's report read liability, so the printed «أنه لا يضمن» there (v01:p222) is a taṣḥīf."
         }
       ]
     },

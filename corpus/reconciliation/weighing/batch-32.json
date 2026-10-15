@@ -31,7 +31,14 @@
      "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v02:p009",
      "excerpt_ar": "وقال القاضي إن نوى بها تكبيرة الاحرام وحدها أجزاه وإن نواهما لم يجزه في الظاهر من قول أحمد لأنه شرك بين الواجب وغيره في النية",
      "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
-     "note": "al-Qāḍī's argument for denial on exactly these facts. Aṣl: the sneeze-ḥamd intended for both (naṣṣ of Aḥmad); ʿilla: tashrīk of the rukn with a non-rukn in one intention: qiyas. The Sharḥ and al-Mughnī reject the analogy as unlike (the sneeze-ḥamd is not part of the prayer), which is a rebuttal, not a proof for position 0."
+     "note": "al-Qāḍī's argument for denial on exactly these facts. Aṣl: the sneeze-ḥamd intended for both (naṣṣ of Aḥmad); ʿilla: tashrīk of the rukn with a non-rukn in one intention: qiyas. The Sharḥ and al-Mughnī reject the analogy as unlike (the sneeze-ḥamd is not part of the prayer), which is a rebuttal, not a proof for position 0.",
+     "rebuttal": {
+      "by": "farq",
+      "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v02:p010",
+      "excerpt_ar": "وهذا لا يشبه ما قاس عليه القاضي فان التكبيرتين من جملة العبادة بخلاف حمد الله في العطاس فإنه ليس من جملة الصلاة فقياسه على الطوافين أولى لكونهما من أجزاء العبادة",
+      "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
+      "note": "The Sharḥ says al-Qāḍī's view contradicts Aḥmad's naṣṣ. It also says the sneeze-ḥamd aṣl is unlike the case, since both takbīrs belong to the prayer and the ḥamd for sneezing does not."
+     }
     }
    ],
    "advantages": []

@@ -22,7 +22,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p379",
      "excerpt_ar": "والصحيح أن هذا إنما هو عن إياس نفسه، وأنه هو المسئول، وليس براوية عن النبي",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Some aṣḥāb cite it as marfūʿ for mutual inheritance; the source says it is not established as the Prophet's word, so mursalDaif."
+     "note": "Some aṣḥāb cite it as marfūʿ for mutual inheritance; the source says it is not established as the Prophet's word, so mursalDaif.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p379",
+      "excerpt_ar": "والصحيح أن هذا إنما هو عن إياس نفسه، وأنه هو المسئول، وليس براوية عن النبي - صلى الله عليه وسلم -. هكذا رواه سعيد في \" سننه \". وحكاه الإمام أحمد عنه.",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma says the report is really Iyās's own answer, not a report from the Prophet, as Saʿīd b. Manṣūr narrates it and Aḥmad relates. So the marfūʿ proof is not established."
+     }
     },
     {
      "position": 3,
@@ -100,7 +107,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p061",
      "excerpt_ar": "وقال الشافعي، وابن المنذر: النكاح مفسوخ؛ لأنه تعذر إمضاؤه",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Given for non-Ḥanbalī holders of the view that both marriages fall without a ruler's annulment, the ruling Ibn Abī Mūsā prefers. Ibn Qudāma rejects it. A stated reason, so qiyas."
+     "note": "Given for non-Ḥanbalī holders of the view that both marriages fall without a ruler's annulment, the ruling Ibn Abī Mūsā prefers. Ibn Qudāma rejects it. A stated reason, so qiyas.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p061",
+      "excerpt_ar": "وهذا لا يصح، فإن العقد الصحيح لا يبطل بمجرد إشكاله، كما لو اختلف المتبايعان في قدر الثمن، فإن العقد لا يزول إلا بفسخه، كذا هاهنا",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma says this is not valid: a valid contract is not void merely because it is unclear which came first, as with sellers disagreeing over the price; it ends only by annulment."
+     }
     }
    ],
    "advantages": []
@@ -208,7 +222,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p496",
      "excerpt_ar": "له أن يختار أيتهن شاء فيوقع عليها الطلاق؛ لأنه يملك إيقاعه ابتداء وتعيينه",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Given for non-Ḥanbalī holders of the ruling of the second riwāya (his own designation). A stated reason, so qiyas. Ibn Qudāma rejects it. No proof is given for Aḥmad's tawaqquf (position 2)."
+     "note": "Given for non-Ḥanbalī holders of the ruling of the second riwāya (his own designation). A stated reason, so qiyas. Ibn Qudāma rejects it. No proof is given for Aḥmad's tawaqquf (position 2).",
+     "rebuttal": {
+      "by": "naqd",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p496",
+      "excerpt_ar": "قولهم: إنه كان يملك الإيقاع والتعيين قلنا: ملكه للتعيين بالإيقاع لا يلزم أن يملكه بعده كما لو طلق واحدة بعينها وأنسيها",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma answers that owning designation at the time of pronouncing does not mean owning it afterwards. He breaks the argument with the man who divorced a specific wife and then forgot which."
+     }
     }
    ],
    "advantages": []
@@ -223,7 +244,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p498",
      "excerpt_ar": "قال علي - رضي الله عنه -: أقرع بين الأربع وأنذر منهن واحدة وأقسم بينهن الميراث",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "The aṣḥāb cite it for the madhhab that the forgotten divorcee is identified by lot («واحتجوا بما ذكرنا من حديث علي»). Ibn Qudāma replies that it concerns inheritance, not the lawfulness of the others. No ṣaḥābī disagreement is reported, so fatwaSahabi."
+     "note": "The aṣḥāb cite it for the madhhab that the forgotten divorcee is identified by lot («واحتجوا بما ذكرنا من حديث علي»). Ibn Qudāma replies that it concerns inheritance, not the lawfulness of the others. No ṣaḥābī disagreement is reported, so fatwaSahabi.",
+     "rebuttal": {
+      "by": "qawlBiMujab",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p499",
+      "excerpt_ar": "وأما حديث علي فهو في الميراث لا في الحل وما نعلم بالقول بها في الحل من الصحابة قائلا",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma answers that ʿAlī's report concerns lots for the inheritance, not for the lawfulness of the remaining wives, and no Companion is known to have used lot for that."
+     }
     },
     {
      "position": 0,
@@ -274,7 +302,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p494",
      "excerpt_ar": "لا يحرم على واحد منهما وطء امرأته؛ لأنه محكوم ببقاء نكاحه ولم يحكم بوقوع الطلاق عليه",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Given for non-Ḥanbalī holders who let each go on as before, the fuller form of position 0. Ibn Qudāma rejects this part. The original state, so istishab."
+     "note": "Given for non-Ḥanbalī holders who let each go on as before, the fuller form of position 0. Ibn Qudāma rejects this part. The original state, so istishab.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p494",
+      "excerpt_ar": "وكذلك هاهنا قد علمنا أن أحد هذين الرجلين قد طلقت امرأته وحرمت عليه وتعذر التمييز فيحرم الوطء عليهما",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma answers («قلنا») that although each marriage is presumed to remain, one of the two wives is certainly divorced and cannot be identified, so intercourse is forbidden to both, as with two vessels one of which is impure."
+     }
     },
     {
      "position": 2,
@@ -349,7 +384,14 @@
      "ref": "src:openiti-rajab-shamela21730/v01:p358",
      "excerpt_ar": "في حديث علي في ثلاثة وقعوا على امرأة فأقرع بينهم قال: لا أعرفه صحيحا وأوهنه",
      "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
-     "note": "The text behind the riwāya of lot in lineage (al-Mughnī, al-farāʾiḍ). Aḥmad himself weakens it, so mursalDaif."
+     "note": "The text behind the riwāya of lot in lineage (al-Mughnī, al-farāʾiḍ). Aḥmad himself weakens it, so mursalDaif.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-rajab-shamela21730/v01:p358",
+      "excerpt_ar": "وقد قال أحمد في رواية علي ابن سعد في حديث علي في ثلاثة وقعوا على امرأة فأقرع بينهم قال: لا أعرفه صحيحا وأوهنه",
+      "who": "Ibn Rajab, Taqrīr al-Qawāʿid (reporting Aḥmad)",
+      "note": "The same passage reports that Aḥmad did not know the lot ḥadīth of ʿAlī to be sound and weakened it. Ibn Rajab therefore keeps the well-known view that lineage is not established by lot."
+     }
     },
     {
      "position": 2,

@@ -220,7 +220,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p258",
      "excerpt_ar": "وخرجه بعض أصحابنا على وجهين، بناء على الروايتين في الصداق، ولا يصح",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "The only argument the sources give for recourse here; al-Mughnī cites it and rejects it («ولا يصح»). The rejection is not a proof for the other side; the takhrīj itself is a qiyās."
+     "note": "The only argument the sources give for recourse here; al-Mughnī cites it and rejects it («ولا يصح»). The rejection is not a proof for the other side; the takhrīj itself is a qiyās.",
+     "rebuttal": {
+      "by": "farq",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p258",
+      "excerpt_ar": "وخرجه بعض أصحابنا على وجهين، بناء على الروايتين في الصداق، ولا يصح؛ لأن المرأة أسقطت الصداق الواجب لها قبل وجود سبب استحقاق الزوج عليها نصفه، وهاهنا أسقط السيد عن المكاتب ما وجد سبب إيتائه إياه",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī rejects the takhrīj («ولا يصح») by a farq: the wife waived the dower before the cause of the husband's claim to half arose, whereas the master waived what the cause of īṭāʾ had already made due."
+     }
     },
     {
      "position": 1,

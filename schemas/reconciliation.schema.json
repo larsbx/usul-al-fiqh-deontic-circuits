@@ -84,6 +84,28 @@
         "fewerAwsaf",
         "dariHadd"
       ]
+    },
+    "qadih": {
+      "enum": [
+        "istifsar",
+        "fasadItibar",
+        "fasadWad",
+        "man",
+        "taqsim",
+        "mutalaba",
+        "naqd",
+        "qawlBiMujab",
+        "qalb",
+        "adamTathir",
+        "muarada",
+        "farq",
+        "tarkib",
+        "kasr",
+        "ikhtilafDabit",
+        "mukhalafatHukm",
+        "ifda",
+        "indibat"
+      ]
     }
   },
   "properties": {
@@ -274,6 +296,39 @@
                 "note": {
                   "type": "string",
                   "minLength": 1
+                },
+                "rebuttal": {
+                  "description": "The citing source's own answer to this proof (Usul.Tarjih.Proof.rebuttal): the objection (Usul.Jadal.Qadih) and its verbatim words. Left out of the weighing by default; counted under the `all` policy.",
+                  "type": "object",
+                  "required": [
+                    "by",
+                    "ref",
+                    "excerpt_ar",
+                    "who",
+                    "note"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "by": {
+                      "$ref": "#/$defs/qadih"
+                    },
+                    "ref": {
+                      "type": "string",
+                      "pattern": "^src:[^/]+/v\\d+:p\\d+$"
+                    },
+                    "excerpt_ar": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "who": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "note": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
                 }
               }
             }

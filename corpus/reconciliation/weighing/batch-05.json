@@ -182,7 +182,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p126",
      "excerpt_ar": "وقال القاضي، وأصحاب الشافعي: الأولى باقية على الحل؛ لأن الوطء الحرام لا يحرم الحلال . إلا أن القاضي قال: لا يطؤها حتى يستبرئ الثانية.",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Cited for position 0, that the first is permitted once the second has completed istibrāʾ (al-Qāḍī adds the istibrāʾ). Ibn Qudāma answers «وقولهم: إن الحرام لا يحرم الحلال. ليس بخبر صحيح» (same page). He treats it as a report and says it is not sound, so mursalDaif. The excerpt runs through the qualifier that follows in the source. Al-Qāḍī conditions it: «لا يطؤها حتى يستبرئ الثانية»."
+     "note": "Cited for position 0, that the first is permitted once the second has completed istibrāʾ (al-Qāḍī adds the istibrāʾ). Ibn Qudāma answers «وقولهم: إن الحرام لا يحرم الحلال. ليس بخبر صحيح» (same page). He treats it as a report and says it is not sound, so mursalDaif. The excerpt runs through the qualifier that follows in the source. Al-Qāḍī conditions it: «لا يطؤها حتى يستبرئ الثانية».",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p126",
+      "excerpt_ar": "وقولهم: إن الحرام لا يحرم الحلال. ليس بخبر صحيح، وهو متروك بما لو وطئ الأولى في حيض أو نفاس أو إحرام، حرمت عليه أختها",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma says «الحرام لا يحرم الحلال» is not a sound report. He adds that it is abandoned anyway: forbidden intercourse (in menses, nifās or iḥrām) still makes the sister forbidden."
+     }
     },
     {
      "position": 0,
@@ -314,7 +321,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p594",
      "excerpt_ar": "وقال الشافعي: تنحل، فلا يحنث بخروجها بعد ذلك؛ لأن اليمين تعلقت بخروج واحد، بحرف لا يقتضي التكرار",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "A non-Ḥanbalī proof for the same ruling as position 1 (going out with leave dissolves the oath, so a later going out without leave does not break it). It is on the cognate «إن خرجت بغير إذني», without «مرة». al-Mughnī rejects it. A linguistic rationale, so qiyas."
+     "note": "A non-Ḥanbalī proof for the same ruling as position 1 (going out with leave dissolves the oath, so a later going out without leave does not break it). It is on the cognate «إن خرجت بغير إذني», without «مرة». al-Mughnī rejects it. A linguistic rationale, so qiyas.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p594",
+      "excerpt_ar": "وقولهم: قد بر. غير صحيح؛ لوجهين؛ أحدهما، أن المأذون فيه مستثنى من يمينه، غير داخل فيها، فكيف يبر؟",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī rejects the claim that going out with leave fulfils the oath («غير صحيح»): the permitted going out is excepted from the oath, and the oath is on a going out with a quality, so it is not dissolved by a different one."
+     }
     }
    ],
    "advantages": []
@@ -461,7 +475,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p418",
      "excerpt_ar": "وحكي عن مالك، أن السائلة لا تطلق في هذه الصورة؛ لأن الخطاب العام يقصر على سببه الخاص، وسببه سؤال طلاق من سواها",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "A non-Ḥanbalī proof for the same ruling as position 0 (the asking wife is not divorced). It is on a cognate case, where she asks about other wives and he answers with a general word. No Ḥanbalī source here argues Ibn ʿAqīl's derived riwāya on the exact facts. A rationale, so qiyas."
+     "note": "A non-Ḥanbalī proof for the same ruling as position 0 (the asking wife is not divorced). It is on a cognate case, where she asks about other wives and he answers with a general word. No Ḥanbalī source here argues Ibn ʿAqīl's derived riwāya on the exact facts. A rationale, so qiyas.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p418",
+      "excerpt_ar": "والعمل بعموم اللفظ أولى من خصوص السبب؛ لأن دليل الحكم هو اللفظ، فيجب اتباعه، والعمل بمقتضاه في خصوصه وعمومه",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma rejects confining the general word to its specific cause: the operative proof is the wording, so its generality governs over the specificity of the cause."
+     }
     },
     {
      "position": 1,

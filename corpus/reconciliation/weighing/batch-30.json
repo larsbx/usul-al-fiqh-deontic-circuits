@@ -73,7 +73,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p197",
      "excerpt_ar": "واحتجوا بأنه وجد المبدل بعد التلبس بمقصود البدل، فلم يلزمه",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "For position 1. Qiyas (al-Mughnī rebuts it, but it is the argument given for that ruling)."
+     "note": "For position 1. Qiyas (al-Mughnī rebuts it, but it is the argument given for that ruling).",
+     "rebuttal": {
+      "by": "farq",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p198",
+      "excerpt_ar": "ولا يصح قياسهم؛ فإن الصوم هو البدل نفسه، فنظيره إذا قدر على الماء بعد تيممه، ولا خلاف في بطلانه. ثم الفرق بينهما أن مدة الصيام تطول، فيشق الخروج منه؛ لما فيه من الجمع بين فرضين شاقين، بخلاف مسألتنا.",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma rejects the analogy with the kaffāra fast. The fast is itself the substitute, so its counterpart is finding water after tayammum, and a long fast is hard to abandon, unlike prayer."
+     }
     }
    ],
    "advantages": [

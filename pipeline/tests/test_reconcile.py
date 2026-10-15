@@ -93,11 +93,15 @@ def test_tiers_and_murajjihat_mirror_the_kernel():
                 re.findall(r"\.(\w+)", names), st.strip().lstrip("."))
     for pol in ("strict", "sources"):
         line = lean[lean.index(f"def {pol} : Policy"):].split("\n")[0]
-        assert ({st for st in ("asserted", "disputed", "weak", "rejected") if f"| .{st}" in line},
-                line.rstrip("⟩").rsplit(", ", 1)[1] == "true") == (set(reconcile.POLICIES[pol][0]), reconcile.POLICIES[pol][1])
-    assert "def applying : Policy := ⟨sources.standing, true⟩" in lean and reconcile.POLICIES["applying"] == (
-        reconcile.POLICIES["sources"][0], True)
-    assert "def all : Policy := ⟨fun _ => true, true⟩" in lean
+        flags = [f == "true" for f in line.rstrip("⟩").rsplit(", ", 2)[1:]]
+        assert ({st for st in ("asserted", "disputed", "weak", "rejected") if f"| .{st}" in line}, *flags) == (
+            set(reconcile.POLICIES[pol][0]), *reconcile.POLICIES[pol][1:])
+    assert "def applying : Policy := ⟨sources.standing, true, false⟩" in lean and reconcile.POLICIES["applying"] == (
+        reconcile.POLICIES["sources"][0], True, False)
+    assert "def all : Policy := ⟨fun _ => true, true, true⟩" in lean
+    block = (ROOT / "formal/lean/Usul/Jadal.lean").read_text()
+    block = block[block.index("inductive Qadih"):block.index("deriving", block.index("inductive Qadih"))]
+    assert tuple(re.findall(r"\|\s*(\w+)", block)) == reconcile.QADIH
 
 
 def test_weak_and_rejected_advantages_are_formalised_and_run_under_their_policy():
@@ -111,6 +115,20 @@ def test_weak_and_rejected_advantages_are_formalised_and_run_under_their_policy(
         ("tawaqquf", None), ("tarjih", True), ("tarjih", True)]
     assert reconcile.report([c], {"entries": [weak]})["policies"]["all"]["differs_from_default"] == ["x"]
     assert set(reconcile.STANDING) == set(reconcile.MURAJJIH)
+
+
+def test_a_proof_its_own_source_rebuts_is_kept_and_counts_only_under_all():
+    """«ولا يصح»: a proof cited only to be answered stays recorded with its objection, is left out of
+    the weighing by default, and is weighed again under `all`."""
+    c = _ikh("x", True, [True, False])
+    reb = {"by": "man", "ref": "src:w/v01:p001", "excerpt_ar": "ولا يصح", "who": "w", "note": "n"}
+    e = {**_entry("x", ["ashab", "ashab"]), "proofs": [{**_proof(1, "qiyas"), "rebuttal": reb}, _proof(0, "qiyas")]}
+    assert [reconcile.resolve(c, e, p) for p in ("strict", "sources", "applying", "all")] == [
+        ("tarjih", True), ("tarjih", True), ("tarjih", True), ("tawaqquf", None)]
+    assert reconcile.report([c], {"entries": [e]})["rebutted"] == 1
+    assert reconcile.check([c], {"entries": [{**e, "proofs": [{**_proof(1, "qiyas"), "rebuttal": {**reb, "by": "radd"}}]}]},
+                           DOSSIER) == ["x: a rebuttal names the objection (from " + str(reconcile.QADIH) + "), a ref and its excerpt"]
+    assert "some .man" in reconcile.lean_file([c], {"entries": [e]})
 
 
 def test_applied_advantages_are_kept_and_count_only_under_their_policy():
@@ -204,7 +222,7 @@ def test_non_ijmal_is_only_indirect_support_for_generality():
 
 def _sans_english(case: dict) -> dict:
     return {**{k: v for k, v in case.items() if k != "note"},
-            "positions": [{k: v for k, v in p.items() if k != "who"} for p in case["positions"]]}
+            "positions": [{k: v for k, v in p.items() if k not in ("who", "detail")} for p in case["positions"]]}
 
 
 def test_review_audit_retains_originals_and_tracks_current_candidates():
@@ -216,10 +234,16 @@ def test_review_audit_retains_originals_and_tracks_current_candidates():
     locks = json.loads((ROOT / "corpus/lock.json").read_text())["witnesses"]
     for receipt in audit["source_receipts"]:
         assert all(receipt[k] == locks[receipt["witness"]][k] for k in ("url", "bytes", "sha256"))
+    # A later owner's decision supersedes an audited value through the revisions record, never silently.
+    revised = {(r["far"], r["field"]): r for r in
+               json.loads((ROOT / "corpus/reconciliation/revisions.json").read_text())["revisions"]}
     for row in audit["cases"]:
         c, e = cases[row["far"]], entries[row["far"]]
         assert row["scholarly_status"] == "open"
-        assert row["grades"] == e["grades"]
+        if r := revised.get((row["far"], "grades")):
+            assert (row["grades"], e["grades"]) == (r["from"], r["to"])
+        else:
+            assert row["grades"] == e["grades"]
         assert row["imported_evidence"] == e.get("evidence", [])
         assert row["current_resolution"] == list(reconcile.attribution(c, e))  # graded by attribution then
         assert row["current_review_member"] == reconcile.marked_for_reading(c, e)

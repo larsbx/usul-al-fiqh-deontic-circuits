@@ -331,7 +331,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p164",
      "excerpt_ar": "ولأن هذه شهادة على رؤية الهلال، فأشبهت الشهادة على هلال شوال",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Rational argument in al-Mughnī for two witnesses. Analogy on Shawwāl: qiyas. Al-Mughnī answers it with a distinction (entering the ʿibāda versus leaving it)."
+     "note": "Rational argument in al-Mughnī for two witnesses. Analogy on Shawwāl: qiyas. Al-Mughnī answers it with a distinction (entering the ʿibāda versus leaving it).",
+     "rebuttal": {
+      "by": "farq",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p164",
+      "excerpt_ar": "ويفارق الخبر عن هلال شوال، فإنه خروج من العبادة، وهذا دخول فيها",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma distinguishes the Shawwāl crescent from Ramaḍān's: reporting Shawwāl is leaving the ʿibāda, while Ramaḍān's is entering it, so the analogy fails."
+     }
     }
    ],
    "advantages": []

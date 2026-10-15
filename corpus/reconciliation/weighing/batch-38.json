@@ -109,7 +109,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p026",
      "excerpt_ar": "وقال أبو حنيفة: إذا قال: والربح كله لي كان إبضاعا صحيحا؛ لأنه أثبت له حكم الإبضاع فانصرف إليه",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Cited for a non-Ḥanbalī holder of the validity ruling (al-Mughnī itself answers it here). A stated rationale reading the contract by its rule: qiyas."
+     "note": "Cited for a non-Ḥanbalī holder of the validity ruling (al-Mughnī itself answers it here). A stated rationale reading the contract by its rule: qiyas.",
+     "rebuttal": {
+      "by": "farq",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v05:p026",
+      "excerpt_ar": "ويفارق ما إذا لم يقل مضاربة؛ لأن اللفظ يصلح لما أثبت حكمه من الإبضاع والقراض، بخلاف ما إذا صرح بالمضاربة",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī distinguishes Abū Ḥanīfa's aṣl: without the word muḍāraba the wording fits ibḍāʿ, but once muḍāraba is stated, giving one party all the profit contradicts the contract."
+     }
     },
     {
      "position": 1,

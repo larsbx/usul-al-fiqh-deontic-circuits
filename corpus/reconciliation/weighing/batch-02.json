@@ -366,7 +366,14 @@
      "ref": "src:openiti-rajab-shamela21730/v01:p159",
      "excerpt_ar": "وفرق بينه وبين البائع المفلس بأن فسخ البائع رفع للعقد من أصله والطلاق قاطع للنكاح من حينه",
      "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
-     "note": "This is al-Qāḍī's ground (al-Mujarrad) for the same ruling. Ibn Rajab rejects the farq, but al-Qāḍī cites it for this side, so it is recorded. It is a rationale, so qiyas."
+     "note": "This is al-Qāḍī's ground (al-Mujarrad) for the same ruling. Ibn Rajab rejects the farq, but al-Qāḍī cites it for this side, so it is recorded. It is a rationale, so qiyas.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-rajab-shamela21730/v01:p159",
+      "excerpt_ar": "وفرق بينه وبين البائع المفلس بأن فسخ البائع رفع للعقد من أصله والطلاق قاطع للنكاح من حينه فلا يكون للزوج حق في الزيادة وهذا ممنوع فإن الفسخ بالفلس رفع للعقد من حينه أيضا فهو كالطلاق",
+      "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+      "note": "Ibn Rajab reports al-Qāḍī's farq and answers it at once: «this is not conceded», since annulment for bankruptcy also only cuts the contract from now on, just like divorce."
+     }
     },
     {
      "position": 1,

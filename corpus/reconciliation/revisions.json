@@ -1,0 +1,342 @@
+{
+ "suite": "annotation-revisions",
+ "status": "candidate",
+ "provenance": "The weighers' open review items (docs/architecture/taarud-reconciliation.md, b06–b34), decided by the owner on 2026-10-15 after the sources were read. Each revision keeps the value it replaces, its reason, and the verbatim passages it rests on; tests/test_annotation_revisions.py checks every revision against the live record.",
+ "revisions": [
+  {
+   "item": "b19",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f017",
+   "file": "corpus/takhrij/rajab_m8_rajab_a24_furu.json",
+   "field": "note",
+   "from": "Sixth kind, the compulsory separation: a kāfir who becomes Muslim with more wives than he may keep; the marriages of the excess are annulled (infisākh). From no party's side, so the reading does not halve. al-Muntahā halves by his Islam «ما عدا مختارات من أسلم», which Sharḥ al-Muntahā glosses «للفراق مما زاد على أربع». On the madhhab side. Follow-on: divorce in a fāsid marriage, where Ibn ʿAqīl gives a wajh of halving and «على المشهور» it drops.",
+   "to": "Sixth kind, the compulsory separation: a kāfir who becomes Muslim with more wives than he may keep; the marriages of the excess are annulled (infisākh). From no party's side, so the reading does not halve. al-Muntahā halves the mahr on separation by his Islam except for the wives set aside («ما عدا مختارات من أسلم», glossed «للفراق مما زاد على أربع»), and for them before consummation Sharḥ al-Muntahā gives no mahr: «فلا مهر لها لتبين أن الفرقة وقعت بإسلامهم جميعا» (v02:p688). On the madhhab side. Follow-on: divorce in a fāsid marriage, where Ibn ʿAqīl gives a wajh of halving and «على المشهور» it drops.",
+   "reason": "The note read as though al-Muntahā halved the mahr of the excess wives; it excepts them from halving and its sharḥ gives them nothing.",
+   "refs": [
+    {
+     "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p688",
+     "excerpt_ar": "(وإلا) يكن دخل بها (فلا) مهر لها لتبين أن الفرقة وقعت بإسلامهم جميعا كفسخ النكاح لعيب أحد الزوجين"
+    }
+   ]
+  },
+  {
+   "item": "b06",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f001",
+   "file": "corpus/takhrij/rajab_m8_tranche2_furu.json",
+   "field": "note",
+   "from": "Retaliation taken, then he or another wounds the offender aggressively: the full diya; a wajh: half.",
+   "to": "Retaliation taken, then he or another wounds the offender aggressively: the full diya; a wajh: half («لو اقتص من الجاني ثم جرحه هو أو غيره عدوانا وجب كمال الدية وفيه وجه آخر أنه يجب نصفها»). No later work consulted treats these facts. The ledger's evidence and the weighed proofs come from the cognate masʾala, retaliation exacted wrongfully (a blunt or poisoned tool, extreme heat or cold; al-Mughnī v08:p306), where al-Qāḍī gives half and al-Inṣāf, al-Furūʿ and al-Iqnāʿ «بقية الدية»: full liability for the death, measured as the diya less what the retaliation took.",
+   "reason": "Ibn Rajab's facts (a fresh aggressive wound after the retaliation) differ from those of the evidence (retaliation exacted wrongfully); the note now says the evidence is from the cognate masʾala and what 'full' amounts to there.",
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p037",
+     "excerpt_ar": "لو اقتص من الجاني ثم جرحه هو أو غيره عدوانا وجب كمال الدية وفيه وجه آخر أنه يجب نصفها"
+    },
+    {
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p306",
+     "excerpt_ar": "أو اقتص منه بآلة كالة أو مسمومة، أو في حال حر مفرط، أو برد شديد، فسرى، فقال القاضي: على المقتص نصف الدية"
+    }
+   ]
+  },
+  {
+   "item": "b06",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f001",
+   "file": "corpus/reconciliation/weighing/batch-06.json",
+   "field": "proofs/0/note",
+   "from": "The sources treat this farʿ as retaliation exacted wrongfully (poisoned/blunt tool, extreme heat or cold) with death following; Ibn Qudāma's iḥtimāl for full liability rests on the act being wholly forbidden. A rationale, so qiyas.",
+   "to": "From the cognate masʾala (retaliation exacted wrongfully: a poisoned or blunt tool, extreme heat or cold), not Ibn Rajab's facts (a fresh aggressive wound after the retaliation), which no source consulted treats. Ibn Qudāma's iḥtimāl for full liability rests on the act being wholly forbidden. A rationale, so qiyas.",
+   "reason": "The note said the sources treat this farʿ as retaliation exacted wrongfully; they treat a cognate masʾala.",
+   "refs": []
+  },
+  {
+   "item": "b06",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f001",
+   "file": "corpus/reconciliation/weighing/batch-06.json",
+   "field": "proofs/1/note",
+   "from": "al-Qāḍī's argument for half on exactly the qiṣāṣ-with-excess / poisoned-tool case; Ibn Qudāma notes it is also the Shāfiʿī view. An analogy with a stated ʿilla, so qiyas.",
+   "to": "al-Qāḍī's argument for half in the same cognate masʾala (excess in retaliation, a poisoned tool); Ibn Qudāma notes it is also the Shāfiʿī view. An analogy with a stated ʿilla, so qiyas.",
+   "reason": "As above: the cognate masʾala, not Ibn Rajab's facts.",
+   "refs": []
+  },
+  {
+   "item": "b09",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f001",
+   "file": "corpus/takhrij/sadi_furu.json",
+   "field": "positions/1/detail",
+   "from": null,
+   "to": "Ibn Rajab reports the restriction as «وقيل يختص ذلك بالثمر والكثر». al-Mughnī (v09:p120) and al-Inṣāf (v10:p277) give the restricted view more widely: doubling for fruit and palm-pith and for livestock taken from pasture (ḥarīsat al-jabal), everything else compensated once, «هذا قول أصحابنا وغيرهم، إلا أبا بكر»; al-Inṣāf «على الصحيح من المذهب».",
+   "reason": "The position label follows Ibn Rajab's report; in al-Mughnī and al-Inṣāf the restricted view also covers livestock from pasture.",
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p311",
+     "excerpt_ar": "من سرق من غير حرز فإنه يتضاعف عليه الغرم نص عليه، وقيل يختص ذلك بالثمر والكثر"
+    },
+    {
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p120",
+     "excerpt_ar": "وما عدا هذين لا يغرم بأكثر من قيمته، أو مثله إن كان مثليا. هذا قول أصحابنا وغيرهم، إلا أبا بكر"
+    }
+   ]
+  },
+  {
+   "item": "b29",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f006",
+   "file": "corpus/takhrij/rajab_m8_rajab_a15_furu.json",
+   "field": "positions/1/detail",
+   "from": null,
+   "to": "The measure is Ibn Rajab's report of al-Qāḍī («وظاهر كلام القاضي أنه يضمنه بدية حر»). al-Mughnī (v08:p314) and Kashshāf (v05:p527), on the same side, measure the ḍamān as the diya less the arsh of the cut: «لكن يسقط أرش القطع؛ لأنه في ملكه», «بما زاد على أرش القطع من الدية لورثته».",
+   "reason": "Position 1's wording (a free man's diya) is al-Qāḍī's ẓāhir as Ibn Rajab reports it; al-Mughnī and Kashshāf hold the same side with a smaller measure. The ruling coded (ḍamān) is unchanged.",
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p290",
+     "excerpt_ar": "وظاهر كلام القاضي أنه يضمنه بدية حر"
+    },
+    {
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p314",
+     "excerpt_ar": "لأنه مات وهو حر بسراية قطع عدوان، فيضمن، كما لو كان القاطع أجنبيا، لكن يسقط أرش القطع؛ لأنه في ملكه"
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p527",
+     "excerpt_ar": "(ويضمنه بما زاد على أرش القطع من الدية لورثته) لأنه مات حرا"
+    }
+   ]
+  },
+  {
+   "item": "b31",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f005",
+   "file": "corpus/takhrij/sadi_furu.json",
+   "field": "positions/0/who",
+   "from": "al-Khiraqī, al-Mughnī",
+   "to": "a riwāya, the manṣūṣ in riwāyat Ibn al-Qāsim (Ibn Rajab); al-Khiraqī, al-Mughnī",
+   "reason": "Ibn Rajab gives two riwāyāt and names the naṣṣ for sufficing.",
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p025",
+     "excerpt_ar": "لو أخر طواف الزيارة إلى وقت خروجه فطاف فهل يسقط عنه طواف الوداع أم لا؟ على روايتين ونص في رواية ابن القاسم على سقوطه"
+    }
+   ]
+  },
+  {
+   "item": "b31",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f005",
+   "file": "corpus/takhrij/sadi_furu.json",
+   "field": "positions/1/who",
+   "from": "takhrīj from the takbīr case",
+   "to": "a riwāya: it does not count for the wadāʿ (Ibn Rajab «على روايتين»; al-Mughnī v03:p404 «وعنه، لا يجزئه»; al-Mubdiʿ v03:p234 «والثانية»)",
+   "reason": "Position 1 was labelled a takhrīj from the takbīr case; Ibn Rajab, al-Mughnī and al-Mubdiʿ report it as a riwāya.",
+   "refs": [
+    {
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p404",
+     "excerpt_ar": "وعنه، لا يجزئه عن طواف الوداع؛ لأنهما عبادتان واجبتان، فلم تجز إحداهما عن الأخرى"
+    }
+   ]
+  },
+  {
+   "item": "b31",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f005",
+   "file": "corpus/takhrij/sadi_furu.json",
+   "field": "note",
+   "from": "One departure ṭawāf intended as both ziyāra and wadāʿ suffices per al-Khiraqī and al-Mughnī, with a dissent derived (yatakharraj) from the next case; neither is marked.",
+   "to": "The ziyāra ṭawāf delayed and done at departure: does it count for the wadāʿ? «على روايتين [ونص في رواية ابن القاسم على سقوطه» (Ibn Rajab; the bracketed words are the edition's): two riwāyāt, the naṣṣ for sufficing, which al-Khiraqī and al-Mughnī hold. Ibn Rajab labels neither the madhhab; al-Inṣāf labels sufficing «هذا المذهب وعليه الأصحاب».",
+   "reason": "The note called the dissent a derivation (yatakharraj) from the next case; it is a riwāya.",
+   "refs": []
+  },
+  {
+   "item": "b31",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f005",
+   "file": "corpus/reconciliation/ledger.json",
+   "field": "grades",
+   "from": [
+    "ashab",
+    "takhrij"
+   ],
+   "to": [
+    [
+     "nass",
+     "ashab"
+    ],
+    "nass"
+   ],
+   "reason": "Both sides are riwāyāt and the first is the naṣṣ (Ibn Rajab), so the grades are nass, not takhrij; the attribution record is unchanged (al-Inṣāf's taṣḥīḥ still leads).",
+   "refs": []
+  },
+  {
+   "item": "b31",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f005",
+   "file": "corpus/reconciliation/weighing/batch-31.json",
+   "field": "proofs/2/note",
+   "from": "The case records this side as a takhrīj; al-Mughnī reports it as a riwāya and gives this reason. Analogy with two obligatory prayers: qiyas.",
+   "to": "al-Mughnī's reason for the second riwāya. Analogy with two obligatory prayers: qiyas.",
+   "reason": "The note pointed at the takhrīj label, now corrected.",
+   "refs": []
+  },
+  {
+   "item": "b34",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f016",
+   "file": "corpus/takhrij/rajab_m8_rajab_a25_furu.json",
+   "field": "note",
+   "from": "A bayyina establishes the marriage and the ṭalāq is established, consummation unproven: «على وجهين», no reinforcement named. The reading takes the first, the whole mahr. Ibn Rajab adds al-Mughnī's tafṣīl: half if the husband denies consummation, otherwise the whole. The record does not say whether he denies it; the khilāf arises in either branch. No al-Inṣāf treatment of these facts; the muʿtamad's cognate case (a contract and a later one, the first ended by ṭalāq) gives half when he claims the lapse of half by ṭalāq before consummation, «لأن الأصل عدم لزومه له» (al-Iqnāʿ, Kashshāf), graded qiyās. By the bank's grade order the half prevails: off the reading's side; ledger entry. Candidate farq: al-Mughnī's denial of consummation.",
+   "to": "A bayyina establishes the marriage and the ṭalāq is established, consummation unproven: «على وجهين», no reinforcement named. The reading takes the first, the whole mahr. Ibn Rajab adds al-Mughnī's tafṣīl: half if the husband denies consummation, otherwise the whole. The record does not say whether he denies it; the khilāf arises in either branch. No al-Inṣāf treatment of these facts; the muʿtamad's cognate case (a contract and a later one, the first ended by ṭalāq) gives half when he claims the lapse of half by ṭalāq before consummation (al-Iqnāʿ, Kashshāf). As attribution that ruling is graded qiyās, being given in a cognate case; the proof it rests on, «لأن الأصل عدم لزومه له», is istiṣḥāb, and is weighed as such. By the bank's grade order the half prevails: off the reading's side; ledger entry. Candidate farq: al-Mughnī's denial of consummation.",
+   "reason": "The note's «graded qiyās» read as the type of the proof; it is the attribution grade of a cognate ruling, and the proof is istiṣḥāb (already so tiered in the weighing).",
+   "refs": []
+  },
+  {
+   "item": "b28",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f004",
+   "file": "corpus/takhrij/rajab_m8_tranche8_furu.json",
+   "field": "note",
+   "from": "Fasting: the boy reaching puberty breaking his fast mid-day in Ramaḍān, the unbeliever converting, the menstruant becoming pure (ṭāhir, «طهرت حائض»): they make it up «في أصح الروايتين».",
+   "to": "Fasting: the boy reaching puberty breaking his fast mid-day in Ramaḍān, the unbeliever converting, the menstruant becoming ṭāhir («طهرت حائض»): they make it up «في أصح الروايتين» (Ibn Rajab). The two riwāyāt are on the boy, the convert and the recovered insane (al-Mughnī v03:p146); the menstruant's make-up is due «بغير خلاف» (al-Mughnī v03:p146; al-Furūʿ «كالقضاء ع»), so for her the case is not disputed.",
+   "reason": "Ibn Rajab lists the menstruant with the others, but her make-up is agreed; the khilāf covers the boy, the convert and the recovered insane.",
+   "refs": [
+    {
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p146",
+     "excerpt_ar": "ويلزم المسافر والحائض والمريض القضاء، إذا أفطروا، بغير خلاف"
+    },
+    {
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p146",
+     "excerpt_ar": "وإن أفاق المجنون، أو بلغ الصبي، أو أسلم الكافر، في أثناء النهار، والصبي مفطر، ففي وجوب القضاء روايتان"
+    }
+   ]
+  },
+  {
+   "item": "b15",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f000",
+   "file": "corpus/takhrij/rajab_m8_tranche5_furu.json",
+   "field": "note",
+   "from": "Selling a slave-woman pregnant with a free child, where stating the exception of the foetus is valid: is the sale valid? Two wujūh; the qāʿida's «الصحيح … الصحة، وهو قياس المذهب, خلافا للقاضي».",
+   "to": "Selling a slave-woman pregnant with a free child: is the sale valid? Two wujūh; the qāʿida's «الصحيح … الصحة، وهو قياس المذهب، خلافا للقاضي». Ibn Rajab's printed text puts it on the branch «وقلنا يصح استثناء الحمل لفظا», but the khilāf arises only where the verbal exception of the foetus is invalid: al-Kāfī «وقلنا: يصح استثناء الحمل صح هاهنا، وإن قلنا: لا يصح ثم، ففيه وجهان» (v02:p021), as the qāʿida's own heading presupposes («أم تغتفر فيه الجهالة بخلاف اللفظي»). al-Mughnī (v04:p079), al-Sharḥ al-Kabīr and al-Inṣāf (v04:p308–309) give the khilāf unrestricted, and the madhhab holds the verbal exception invalid («وعنه: لا يصح، وهو أصح للخبر», al-Kāfī). The case is annotated on that branch; the printed «يصح» is very likely a dropped «لا» (docs/architecture/taarud-reconciliation.md, textual issues).",
+   "reason": "The note followed Ibn Rajab's printed condition (the verbal exception valid), on which al-Kāfī gives validity without khilāf; the khilāf is on the other branch.",
+   "refs": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p041",
+     "excerpt_ar": "لو باعه أمة حاملا بحر وقلنا يصح استثناء الحمل لفظا فهل يصح أم لا؟ على وجهين"
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p041",
+     "excerpt_ar": "الاستثناء الحكمي هل هو كالاستثناء اللفظي أم تغتفر فيه الجهالة بخلاف اللفظي فيه وجهان"
+    },
+    {
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p021",
+     "excerpt_ar": "فإن باع جارية حاملا بحر، وقلنا: يصح استثناء الحمل صح هاهنا، وإن قلنا: لا يصح ثم، ففيه وجهان"
+    },
+    {
+     "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p021",
+     "excerpt_ar": "وإن استثنى حملها، فعنه أن يصح، لأن ابن عمر أعتق جارية، واستثنى ما في بطنها. وعنه: لا يصح، وهو أصح للخبر"
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v04:p308",
+     "excerpt_ar": "الثالثة: لو باع جارية حاملا بحر: صح البيع. على الصحيح. اختاره المصنف والشارح"
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v04:p309",
+     "excerpt_ar": "وقال القاضي: لا يصح. وقدمه في الرعاية الكبرى، وقال: إن فيه روايتين. وأطلقهما وأطلق وجهين في القاعدة الثالثة والثلاثين"
+    }
+   ]
+  },
+  {
+   "item": "b15",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f000",
+   "file": "corpus/reconciliation/weighing/batch-15.json",
+   "field": "proofs/«فإن باع جارية حاملا بحر، وقلنا: يصح استثناء الحمل صح هاهنا»",
+   "from": {
+    "position": 0,
+    "tier": "qiyas",
+    "dalil": "Built on the verbal exception (a fortiori): if excepting the foetus by words is valid, the sale of the slave-woman pregnant with a free child is valid here.",
+    "ref": "src:openiti-ibnqudama-kafi-shamela21731/v02:p021",
+    "excerpt_ar": "فإن باع جارية حاملا بحر، وقلنا: يصح استثناء الحمل صح هاهنا",
+    "who": "Ibn Qudāma, al-Kāfī",
+    "note": "On these facts (the verbal exception taken as valid), al-Kāfī states validity without giving two views. This is an analogy from the verbal exception: qiyas."
+   },
+   "removed": true,
+   "reason": "al-Kāfī's validity here is on the branch where the verbal exception is valid, on which there is no khilāf; it is no proof on the facts the case is annotated on.",
+   "refs": []
+  },
+  {
+   "item": "b15",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f000",
+   "file": "corpus/reconciliation/weighing/batch-15.json",
+   "field": "proofs/«فقال القاضي: لا يصح»/note",
+   "from": "The ground for al-Qāḍī's invalidity, which he shares with the Shāfiʿīs. A stated analogy to the exception: qiyas. On these facts, where the verbal exception is valid, the analogy does not lead to invalidity; the source gives it without that restriction.",
+   "to": "The ground for al-Qāḍī's invalidity, which he shares with the Shāfiʿīs. A stated analogy to the exception: qiyas.",
+   "reason": "The off-facts caveat followed the printed condition; on the corrected branch the analogy applies.",
+   "refs": []
+  },
+  {
+   "item": "b15",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f000",
+   "file": "corpus/reconciliation/weighing/batch-15.json",
+   "field": "proofs/«لأنه استثناه في الحقيقة»/note",
+   "from": "In al-Kāfī this wajh holds only on the view that the verbal exception is invalid. It is recorded as the stated ground of the invalidity ruling. Qiyas.",
+   "to": "In al-Kāfī this wajh holds on the view that the verbal exception is invalid, the branch the case is annotated on. It is the stated ground of the invalidity ruling. Qiyas.",
+   "reason": "As above.",
+   "refs": []
+  },
+  {
+   "item": "b18",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f003",
+   "file": "corpus/takhrij/rajab_m8_rajab_a9_furu.json",
+   "field": "positions/1/who",
+   "from": "al-Majd: the ẓāhir of Aḥmad (riwāyat Ṣāliḥ) gives its validity from the outset",
+   "to": "al-Majd: the ẓāhir of Aḥmad (riwāyat Ṣāliḥ) gives its validity from the outset; al-Mughnī in the bequest chapter (v06:p182), read as validity by al-Furūʿ (v07:p335) and al-Mubdiʿ (v05:p160)",
+   "reason": "al-Mughnī's bequest chapter accepts the waqf on whoever will be born, and al-Furūʿ and al-Mubdiʿ report it as al-Mughnī deeming it valid.",
+   "refs": [
+    {
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p182",
+     "excerpt_ar": "فإن قيل: فلو وقف على من يحدث من ولده أو ولد فلان صح، فالوصية أولى"
+    },
+    {
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v07:p335",
+     "excerpt_ar": "ومعدوم أصلا، ك: وقفته على من سيولد لي أو لفلان، وصححه فيه في المغني"
+    },
+    {
+     "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v05:p160",
+     "excerpt_ar": "ولا على معدوم أصلا كوقفه على من سيولد لي أو لفلان، وصححه فيه في \" المغني \"؛ لأنه يراد للدوام بخلاف الوصية"
+    }
+   ]
+  },
+  {
+   "item": "b18",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f003",
+   "file": "corpus/takhrij/rajab_m8_rajab_a9_furu.json",
+   "field": "positions/1/detail",
+   "from": null,
+   "to": "al-Mughnī is divided: its waqf chapter makes the waqf on the foetus invalid («ولا يصح الوقف على من لا يملك … والحمل», v06:p038), while its bequest chapter answers an objection by accepting the waqf on whoever will be born, with the farq «والوقف يراد للدوام، فمن ضرورته إثباته للمعدوم» (v06:p182). al-Inṣāf's «وصححه المصنف في المغني … وذكره المصنف: في مسألة الوصية» (v07:p023) is listed for invalidity but points to that same bequest passage; it is a weak witness on this point.",
+   "reason": "Records the tension within al-Mughnī and al-Inṣāf's contrary reading of it.",
+   "refs": [
+    {
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p038",
+     "excerpt_ar": "ولا يصح الوقف على من لا يملك، كالعبد القن، وأم الولد، والمدبر، والميت، والحمل"
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p023",
+     "excerpt_ar": "وصححه المصنف في المغني، وغيره. وذكره المصنف: في مسألة الوصية لمن تحمل هذه المرأة"
+    }
+   ]
+  },
+  {
+   "item": "b22",
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f005",
+   "file": "corpus/reconciliation/entries/tarjih-backfill.json",
+   "field": "evidence/+",
+   "from": null,
+   "to": {
+    "ref": "src:openiti-insaf-shamela21609/v03:p483",
+    "excerpt_ar": "فإن كان في يده صيد قبل الإحرام، ثم أحرم، فأرسله من يده غيره بغير إذنه: لزمه ضمانه، سواء كان المرسل حلالا أو محرما",
+    "position": 1,
+    "grade": "ashab",
+    "who": "al-Mubhij (al-Shīrāzī), as al-Inṣāf quotes it",
+    "note": "al-Inṣāf quotes al-Mubhij for liability and adds «ونقل هذا في القاعدة السادسة والتسعين»: Ibn Rajab's report read liability, so the printed «أنه لا يضمن» there (v01:p222) is a taṣḥīf."
+   },
+   "reason": "Records al-Mubhij's own words for position 1 and the textual variant in Ibn Rajab's printed text.",
+   "refs": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v03:p483",
+     "excerpt_ar": "انتهى. ونقل هذا في القاعدة السادسة والتسعين"
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p222",
+     "excerpt_ar": "للشيرازي أنه لا يضمن ; لأن ملكه لم يزل عنه وإرسال الغير إتلاف يوجب الضمان"
+    }
+   ]
+  }
+ ]
+}

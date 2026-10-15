@@ -40,7 +40,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p409",
      "excerpt_ar": "واحتج بعض من اختار ذلك بقول الله تعالى: {وأتموا الحج والعمرة لله} [البقرة: 196]",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Cited by those choosing two ṭawāfs and two saʿys (the second riwāya); an āya cited directly. The source answers that the acts done for both complete them. Reviewed: the āya's general command to complete both rites indicates two ṭawāfs only by its generality, not explicitly: zanni."
+     "note": "Cited by those choosing two ṭawāfs and two saʿys (the second riwāya); an āya cited directly. The source answers that the acts done for both complete them. Reviewed: the āya's general command to complete both rites indicates two ṭawāfs only by its generality, not explicitly: zanni.",
+     "rebuttal": {
+      "by": "qawlBiMujab",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p410",
+      "excerpt_ar": "وأما الآية، فإن الأفعال إذا وقعت لهما فقد تما.",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma answers the verse: completing ḥajj and ʿumra is achieved when the acts are done for both, so the command to complete does not require two ṭawāfs."
+     }
     },
     {
      "position": 1,
@@ -49,7 +56,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p410",
      "excerpt_ar": "فلا نعلم صحته، ورواه الدارقطني من طرق ضعيفة",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "The ḥadīth is cited at p409 for the second riwāya; the source grades it weak (al-Ḥasan b. ʿUmāra etc.), so mursalDaif."
+     "note": "The ḥadīth is cited at p409 for the second riwāya; the source grades it weak (al-Ḥasan b. ʿUmāra etc.), so mursalDaif.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p410",
+      "excerpt_ar": "وأما الحديث الذي احتجوا به، فلا نعلم صحته، ورواه الدارقطني من طرق ضعيفة، في بعضها الحسن بن عمارة، وفي بعضها عمر بن يزيد، وفي بعضها حفص بن أبي داود، وكلهم ضعفاء",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī says the ḥadīth is not known to be sound: al-Dāraquṭnī has it only through weak chains, and it contradicts the sound reports."
+     }
     },
     {
      "position": 1,
@@ -241,7 +255,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p379",
      "excerpt_ar": "لقول النبي - صلى الله عليه وسلم -: «كل الطلاق جائز، إلا طلاق المعتوه»",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Cited for divorce by the drunk taking effect. Faṣl 5840 extends the same ruling to his manumission, sale, apostasy, admission, killing, qadhf and theft, «لأن المعنى في الجميع واحد». Weak tier because of «وحديث أبي هريرة لا يثبت» (v07:p380)."
+     "note": "Cited for divorce by the drunk taking effect. Faṣl 5840 extends the same ruling to his manumission, sale, apostasy, admission, killing, qadhf and theft, «لأن المعنى في الجميع واحد». Weak tier because of «وحديث أبي هريرة لا يثبت» (v07:p380).",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v07:p380",
+      "excerpt_ar": "ولو ضرب رأسه فجن، سقط التكليف. وحديث أبي هريرة لا يثبت",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī states that Abū Hurayra's ḥadīth is not established."
+     }
     },
     {
      "position": 0,
@@ -312,7 +333,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p379",
      "excerpt_ar": "والصحيح أن هذا إنما هو عن إياس نفسه، وأنه هو المسئول، وليس براوية عن النبي",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "«بعض أصحابنا» argue from it for this position. The source denies that it is marfūʿ, so it counts as weak."
+     "note": "«بعض أصحابنا» argue from it for this position. The source denies that it is marfūʿ, so it counts as weak.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p379",
+      "excerpt_ar": "والصحيح أن هذا إنما هو عن إياس نفسه، وأنه هو المسئول، وليس براوية عن النبي - صلى الله عليه وسلم -. هكذا رواه سعيد في \" سننه \". وحكاه الإمام أحمد عنه.",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma says the report is really Iyās's own answer, not a report from the Prophet, as Saʿīd b. Manṣūr narrates it and Aḥmad relates. So the marfūʿ proof is not established."
+     }
     },
     {
      "position": 1,
@@ -423,7 +451,14 @@
      "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p232",
      "excerpt_ar": "قال: لك ما فوق الإزار» رواه أبو داود، وأجيب بأنه من رواية حزام بن حكيم، وقد ضعفه ابن حزم وغيره",
      "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
-     "note": "Cited for the riwāya of prohibition; the source reports its narrator weakened, so mursalDaif rather than ahad."
+     "note": "Cited for the riwāya of prohibition; the source reports its narrator weakened, so mursalDaif rather than ahad.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p232",
+      "excerpt_ar": "وأجيب بأنه من رواية حزام بن حكيم، وقد ضعفه ابن حزم وغيره. سلمنا صحته، فإنه يدل بالمفهوم، والمنطوق راجح عليه",
+      "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
+      "note": "al-Mubdiʿ answers that the ḥadīth comes through Ḥizām b. Ḥakīm, whom Ibn Ḥazm and others weakened, and even if sound it argues only by mafhūm, which the explicit texts outweigh."
+     }
     },
     {
      "position": 1,
@@ -432,7 +467,14 @@
      "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p232",
      "excerpt_ar": "كان يأمرني أن أتزر، فيباشرني وأنا حائض»",
      "who": "Burhān al-Dīn Ibn Mufliḥ, al-Mubdiʿ",
-     "note": "Connected marfūʿ (Bukhārī) cited in the same chain for the riwāya of prohibition; the source answers it as the Prophet leaving some permitted things out of distaste."
+     "note": "Connected marfūʿ (Bukhārī) cited in the same chain for the riwāya of prohibition; the source answers it as the Prophet leaving some permitted things out of distaste.",
+     "rebuttal": {
+      "by": "qawlBiMujab",
+      "ref": "src:openiti-burhanibnmuflih-mubdi-shamela21619bk2/v01:p232",
+      "excerpt_ar": "وما روى البخاري عن عائشة: «أن النبي - صلى الله عليه وسلم - كان يأمرني أن أتزر، فيباشرني وأنا حائض» لأنه كان يترك بعض المباح تقذرا كتركه أكل الضب",
+      "who": "Ibn Mufliḥ, Uṣūl al-Fiqh",
+      "note": "al-Mubdiʿ answers ʿĀʾisha's report by saying the Prophet would leave some permitted things out of distaste, as he left eating the lizard, so it does not show prohibition."
+     }
     }
    ],
    "advantages": []
@@ -498,7 +540,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p053",
      "excerpt_ar": "لأن النبي - صلى الله عليه وسلم - قال لبشير بن سعد: \" سو بينهم \"",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Cited for equal shares for sons and daughters (there attributed to Abū Ḥanīfa, Mālik and al-Shāfiʿī; it is the same position as Ibn ʿAqīl's riwāya). A connected marfūʿ report. Ibn Qudāma answers that it is a qaḍiyyat ʿayn with no general scope."
+     "note": "Cited for equal shares for sons and daughters (there attributed to Abū Ḥanīfa, Mālik and al-Shāfiʿī; it is the same position as Ibn ʿAqīl's riwāya). A connected marfūʿ report. Ibn Qudāma answers that it is a qaḍiyyat ʿayn with no general scope.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p054",
+      "excerpt_ar": "وحديث بشير قضية في عين، وحكاية حال لا عموم لها، وإنما ثبت حكمها فيما ماثلها، ولا نعلم حال أولاد بشير، هل كان فيهم أنثى أو لا؟",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī answers that Bashīr's case is a qaḍiyyat ʿayn with no general scope; it is not known whether Bashīr had any daughters."
+     }
     },
     {
      "position": 1,

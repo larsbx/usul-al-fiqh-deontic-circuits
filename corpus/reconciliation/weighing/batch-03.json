@@ -244,7 +244,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p450",
      "excerpt_ar": "وروي نحو هذا عن الأوزاعي؛ لأنه ينتفع به هو وغيره، فجرى مجرى تفريق اللحم",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "A non-Ḥanbalī holder of the same ruling; Ibn Qudāma answers it («يبطل باللحم»). Qiyas."
+     "note": "A non-Ḥanbalī holder of the same ruling; Ibn Qudāma answers it («يبطل باللحم»). Qiyas.",
+     "rebuttal": {
+      "by": "naqd",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p451",
+      "excerpt_ar": "وما ذكروه في شراء آلة البيت، يبطل باللحم، لا يجوز بيعه بآلة البيت وإن كان ينتفع به",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma answers that the ground (he and others benefit from it) is broken by the meat, which may not be sold for household goods even though it is beneficial."
+     }
     },
     {
      "position": 1,

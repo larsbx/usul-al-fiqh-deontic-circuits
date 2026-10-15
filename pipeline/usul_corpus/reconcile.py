@@ -49,11 +49,17 @@ MURAJJIH = ("kathratRuwat", "tayaqquz", "wara", "sahibWaqia", "mubashir",
 STANDING = {m: "asserted" for m in MURAJJIH} | dict.fromkeys(
     ("kathratRuwat", "mutaaddiya", "hazir", "qawl", "amr", "naqil"), "disputed") | dict.fromkeys(
     ("khiffa", "hissiyya", "fewerAwsaf"), "weak") | {"dariHadd": "rejected"}
-# Which advantages decide: (standings counted, whether the bank's applied advantages count). Mirrors
-# `Usul.Tarjih.Policy`; the bank resolves under `sources`, which counts only what a source states.
+# Which advantages and proofs decide: (standings counted, whether the bank's applied advantages count,
+# whether a proof its own source rebuts counts). Mirrors `Usul.Tarjih.Policy`; the bank resolves under
+# `sources`, which counts only what a source states and leaves out what it rebuts.
 _STANDINGS = ("asserted", "disputed", "weak", "rejected")
-POLICIES = {"strict": (frozenset({"asserted"}), False), "sources": (frozenset({"asserted", "disputed"}), False),
-            "applying": (frozenset({"asserted", "disputed"}), True), "all": (frozenset(_STANDINGS), True)}
+POLICIES = {"strict": (frozenset({"asserted"}), False, False),
+            "sources": (frozenset({"asserted", "disputed"}), False, False),
+            "applying": (frozenset({"asserted", "disputed"}), True, False),
+            "all": (frozenset(_STANDINGS), True, True)}
+# The objections by which a source answers a proof it cites; mirrors `Usul.Jadal.Qadih`.
+QADIH = ("istifsar", "fasadItibar", "fasadWad", "man", "taqsim", "mutalaba", "naqd", "qawlBiMujab", "qalb",
+         "adamTathir", "muarada", "farq", "tarkib", "kasr", "ikhtilafDabit", "mukhalafatHukm", "ifda", "indibat")
 BASES = ("stated", "applied")
 DEFAULT = "sources"
 
@@ -75,10 +81,15 @@ def rulings(case: dict) -> list[object]:
     return list(dict.fromkeys(p["ruling"] for p in case["positions"]))
 
 
-def proved(case: dict, entry: dict) -> list[tuple[object, str]]:
-    """One (ruling, tier) per proof cited for a position."""
+def counts(proof: dict, policy: str = DEFAULT) -> bool:
+    """Mirror of `Usul.Tarjih.Proof.counts`: unrebutted, or the policy keeps rebutted proofs."""
+    return "rebuttal" not in proof or POLICIES[policy][2]
+
+
+def proved(case: dict, entry: dict, policy: str = DEFAULT) -> list[tuple[object, str]]:
+    """Mirror of `Usul.Tarjih.cited`: one (ruling, tier) per proof the policy weighs."""
     ps = case["positions"]
-    return [(ps[x["position"]]["ruling"], x["tier"]) for x in entry.get("proofs", [])]
+    return [(ps[x["position"]]["ruling"], x["tier"]) for x in entry.get("proofs", []) if counts(x, policy)]
 
 
 def stated(case: dict, entry: dict) -> list[tuple[object, object, str, str]]:
@@ -92,7 +103,7 @@ def top(ps: list[tuple[object, str]], p: object) -> int | None:
 
 
 def favours(adv: list[tuple[object, object, str, str]], p: object, q: object, policy: str = DEFAULT) -> bool:
-    counted, applied = POLICIES[policy]
+    counted, applied, _ = POLICIES[policy]
     return any(w == p and l == q and STANDING[m] in counted and (b == "stated" or applied) for w, l, m, b in adv)
 
 
@@ -144,7 +155,7 @@ def resolve(case: dict, entry: dict, policy: str = DEFAULT) -> tuple[str, object
         return "naskh", entry["naskh"]["ruling"]
     if not weighed(entry):
         return "unweighed", None
-    p = weigh(rulings(case), proved(case, entry), stated(case, entry), policy)
+    p = weigh(rulings(case), proved(case, entry, policy), stated(case, entry), policy)
     return ("tarjih", p) if p is not None else ("tawaqquf", None)
 
 
@@ -182,6 +193,9 @@ def _proof_errors(f: str, case: dict, entry: dict) -> list[str]:
     if any(not ok(x.get("position")) or x.get("tier") not in TIERS or not x.get("ref") or not x.get("excerpt_ar")
            for x in entry.get("proofs", [])):
         errs.append(f"{f}: a proof names a listed position, a tier from {TIERS}, a ref and its excerpt")
+    if any((r := x["rebuttal"]).get("by") not in QADIH or not r.get("ref") or not r.get("excerpt_ar")
+           for x in entry.get("proofs", []) if "rebuttal" in x):
+        errs.append(f"{f}: a rebuttal names the objection (from {QADIH}), a ref and its excerpt")
     if any(not ok(a.get("for")) or not ok(a.get("over")) or a["for"] == a["over"] or a.get("by") not in MURAJJIH
            or a.get("basis") not in BASES or not a.get("ref") or not a.get("excerpt_ar")
            for a in entry.get("advantages", [])):
@@ -326,13 +340,14 @@ def lean_file(cases: list[dict], ledger: dict) -> str:
         lines.append(f"-- {e['far']}")
         if weighed(e):
             rs = ", ".join(map(_str, rulings(c)))
-            ps = ", ".join(f"({_str(p)}, .{t})" for p, t in proved(c, e))
+            ps = ", ".join(f"⟨{_str(c['positions'][x['position']]['ruling'])}, .{x['tier']}, "
+                           f"{'some .' + x['rebuttal']['by'] if 'rebuttal' in x else 'none'}⟩" for x in e["proofs"])
             adv = ", ".join(f"⟨{_str(w)}, {_str(l)}, .{m}, .{b}⟩" for w, l, m, b in stated(c, e))
             for pol in POLICIES:
                 stage, r = resolve(c, e, pol)
                 out = ".tawaqquf" if stage == "tawaqquf" else f"(.{stage} {_str(r)})"
                 lines.append(f"#guard Usul.Tarjih.reconcile Usul.Tarjih.Policy.{pol} (P := String) {_opt(jam)} {_opt(naskh)} "
-                             f"[{rs}] ([{ps}] : List (String × Usul.Tarjih.Tier)) [{adv}] == {out}")
+                             f"[{rs}] ([{ps}] : List (Usul.Tarjih.Proof String)) [{adv}] == {out}")
         stage, r = attribution(c, e)
         ps = ", ".join(f"({_str(p)}, .{g})" for p, g in graded(c, e))
         out = ".tawaqquf" if stage == "tawaqquf" else f"(.{stage} {_str(r)})"
@@ -370,12 +385,14 @@ def report(cases: list[dict], ledger: dict) -> dict:
             "weighed": sum(1 for e, _ in rows if weighed(e)),
             "proofs": sum(len(e.get("proofs", [])) for e, _ in rows),
             "advantages": sum(len(e.get("advantages", [])) for e, _ in rows),
+            "rebutted": sum(1 for e, _ in rows for x in e.get("proofs", []) if "rebuttal" in x),
             "stages": dict(sorted(Counter(resolve(c, e)[0] for e, c in rows).items())),
             "standing": dict(sorted(Counter(standing(c, e) for e, c in rows).items())),
             "worklist": dict(sorted(residues.items(), key=lambda kv: (-len(kv[1]), kv[0]))),
             "weighing_worklist": dict(sorted(unweighed.items(), key=lambda kv: (-kv[1], kv[0]))),
             "jam_pending": jam_pending(cases, ledger),
             "policies": {pol: {"counts": sorted(POLICIES[pol][0]), "applied": POLICIES[pol][1],
+                               "rebutted": POLICIES[pol][2],
                                "differs_from_default": sorted(c["far"] for e, c in rows
                                                               if resolve(c, e, pol) != resolve(c, e))}
                          for pol in POLICIES if pol != DEFAULT},

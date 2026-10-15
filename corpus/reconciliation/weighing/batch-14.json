@@ -388,7 +388,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p061",
      "excerpt_ar": "وقال أصحاب الشافعي يورث، وإن لم يكن طالب به؛ لقول النبي - صلى الله عليه وسلم -: «من ترك حقا فلورثته»",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Given for al-Shāfiʿī's companions, who hold the same ruling as Abū al-Khaṭṭāb's takhrīj (inherited without a claim). A general marfūʿ text: zanni. Al-Mughnī answers it, but a rebuttal is not a proof."
+     "note": "Given for al-Shāfiʿī's companions, who hold the same ruling as Abū al-Khaṭṭāb's takhrīj (inherited without a claim). A general marfūʿ text: zanni. Al-Mughnī answers it, but a rebuttal is not a proof.",
+     "rebuttal": {
+      "by": "qawlBiMujab",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v08:p061",
+      "excerpt_ar": "والحديث يدل على أن الحق المتروك يورث، وهذا ليس بمتروك",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "Ibn Qudāma accepts that the ḥadīth makes a left right inheritable. He denies it covers this case: a ḥadd of qadhf not claimed in life is not a right left behind."
+     }
     },
     {
      "position": 1,
@@ -505,7 +512,14 @@
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p327",
      "excerpt_ar": "لا يجوز بقاؤه في ذمة الميت لخرابها، وتعذر مطالبته بها، ولا ذمة الورثة؛ لأنهم لم يلتزموها",
      "who": "Ibn Qudāma, al-Mughnī",
-     "note": "Same side. Stated rationale: qiyas. Al-Mughnī calls it a ruling by maṣlaḥa mursala, but that is a rebuttal and does not change what the proof is."
+     "note": "Same side. Stated rationale: qiyas. Al-Mughnī calls it a ruling by maṣlaḥa mursala, but that is a rebuttal and does not change what the proof is.",
+     "rebuttal": {
+      "by": "man",
+      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p327",
+      "excerpt_ar": "وما ذكروه إثبات حكم بالمصلحة المرسلة، ولا يشهد لها شاهد الشرع باعتبار، ولا خلاف في فساد هذا",
+      "who": "Ibn Qudāma, al-Mughnī",
+      "note": "al-Mughnī rejects the elimination argument as establishing a ruling by an unattested maṣlaḥa mursala, which is agreed to be invalid."
+     }
     }
    ],
    "advantages": []
