@@ -11,6 +11,8 @@ An **apparent contradiction** is an ikhtilāf farʿ where the reading does not l
 
 All of them sit in `corpus/reconciliation/ledger.json`. When a new tranche adds one, `reconcile.check` fails until it gets a ledger entry, and `python -m usul_corpus reconcile --draft` proposes grades for the reviewer to correct.
 
+**Every ikhtilāf has a tarjīḥ** (the owner's rule, 2026-10-14). An ikhtilāf farʿ annotated on the madhhab side enters the ledger too, with its graded evidence, and `reconcile.check` requires its resolution to land on the annotated side (`expected`). Where it does not, the annotation is in question: the entry may stand only by citing an open research question (`register`, e.g. RQ-03), never silently. `test_the_ledger_holds_every_ikhtilaf` holds the whole bank to this, and the report counts the confirming entries (`confirming`).
+
 ## The four stages
 
 `reconcile jam naskh ps = resolve ⟨jam, naskh, prevail ps⟩`
@@ -200,7 +202,15 @@ All six resolve by tarjīḥ against their readings and join the worklist. 1.f00
 | 114.f003 (register) | which cognate governs the count, the sale's inshāʾ (halves) or the iqrār's vagueness |
 | 118.f004 (register) | `legitimate_purpose = false` rests on Taqī al-Dīn's own statement of the purpose |
 
-**The register applied to the bank (sweep after round 3).** Following invariant 9 (apply the bank before asking the owner), every register question of lane A rounds 1–3, and those left from tranche 11 and lane D, was put through the bank's own procedure: the annotation convention (readings from the qāʿida's own statement; leading ruling; positions under the same facts; al-Inṣāf first, then the muʿtamad), the grade table, and `Usul.resolve` (jamʿ → naskh → tarjīḥ → tawaqquf). Everything stays `candidate`; what the procedure leaves open goes to the research register, `corpus/review/research_questions.json`.
+**The tarjīḥ backfill.** The 248 on-madhhab ikhtilāf cases annotated before the rule were given entries by eight evidence groups, from al-Inṣāf, al-Furūʿ with Taṣḥīḥ al-Furūʿ, al-Iqnāʿ, al-Muntahā and their sharḥs (1,245 verbatim items, each located once in its witness). Results:
+- **245 confirm the annotated side.** Several rest only on a cognate or a premise (graded `qiyas` or `takhrij`), the later works not treating the farʿ itself: 17.f004, 25.f001, 55.f003, 56.f005, 59.f006, 72.f006, 79.f001, 95.f005, 101.f005, 104.f006, 107.f002, 109.f012, 109.f019, 159.f029.
+- **Two go the other way by the grade order alone**, a riwāya of Aḥmad on the same facts (naṣṣ) above the muʿtamad's unlabelled jazm: 65.f004 and 96.f009. Their annotations stand, citing RQ-03, which now covers naṣṣ as well as qiyās al-madhhab against the muʿtamad.
+- **One data repair:** 160.f041's position ruling named its conditions ("lot after the claimant's choice and the nearer judge") where the encoder's value is "lot"; the label is normalised, the conditions kept in the holder.
+- **Grading conventions confirmed:** Taṣḥīḥ al-Furūʿ's «الصواب» grades taṣḥīḥ (its verdict on the madhhab, as in 8 of the ledger's 9 such items; the ninth, 30.f002, is aligned, its outcome unchanged), while al-Mardāwī's «قلت» in al-Inṣāf stays `ashab`. 62.f000, 124.f001 and 124.f002 turn on that convention. An unlabelled statement in al-Furūʿ was graded `jazm` by some groups and `ashab` by others; no outcome depends on the difference.
+
+With main merged (PR-30's eleven recovered furūʿ add three on-madhhab ikhtilāf, 18.f000, 32.f000 and 95.f000, given entries here; PR #49's 14.f001 and f002 keep their tarjīḥ in `reconciliation/history`, which the rule accepts), every one of the 488 ikhtilāf cases has a tarjīḥ: 486 in the active ledger, 1,812 evidence items, 20 jamʿ, 1 naskh, 451 tarjīḥ and 14 tawaqquf; 139 resolve against the reading (the residues, with the two RQ-03 cases), 333 for it; 247 entries confirm an on-madhhab annotation (65.f004 and 96.f009 stand under RQ-03).
+
+**The register applied to the bank (sweep after round 3).** Following invariant 10 (apply the bank before asking the owner), every register question of lane A rounds 1–3, and those left from tranche 11 and lane D, was put through the bank's own procedure: the annotation convention (readings from the qāʿida's own statement; leading ruling; positions under the same facts; al-Inṣāf first, then the muʿtamad), the grade table, and `Usul.resolve` (jamʿ → naskh → tarjīḥ → tawaqquf). Everything stays `candidate`; what the procedure leaves open goes to the research register, `corpus/review/research_questions.json`.
 
 | Question | Procedure | Outcome |
 |---|---|---|
@@ -226,7 +236,7 @@ All six resolve by tarjīḥ against their readings and join the worklist. 1.f00
 | 59.f005 | the question is the grade order itself (qiyās above jazm) | **open: RQ-03** |
 | 53.f009 | the subject of al-Furūʿ's «ولا يتصرف» | **open: RQ-04** |
 
-**Lane A, round 4** added 21 contradictions and 38 evidence items: 17 residues, 2 resolved for the reading and 2 tawaqquf. No jamʿ was attempted. With main merged (rajab-q127's three entries) the ledger stands at 234 entries and 569 active evidence items, with 19 jamʿ, 1 naskh, 200 tarjīḥ (135 residues) and 14 tawaqquf. The round's register questions went through the bank's procedure first (invariant 9):
+**Lane A, round 4** added 21 contradictions and 38 evidence items: 17 residues, 2 resolved for the reading and 2 tawaqquf. No jamʿ was attempted. With main merged (rajab-q127's three entries) the ledger stands at 234 entries and 569 active evidence items, with 19 jamʿ, 1 naskh, 200 tarjīḥ (135 residues) and 14 tawaqquf. The round's register questions went through the bank's procedure first (invariant 10):
 
 | Farʿ / qāʿida | Candidate farq, or the procedure applied | Outcome |
 |---|---|---|

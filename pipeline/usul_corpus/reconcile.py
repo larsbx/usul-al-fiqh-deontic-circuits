@@ -1,7 +1,8 @@
 """Reconciliation: the bank works through its own apparent contradictions by its own kernel.
 
-An apparent contradiction is an ikhtilāf farʿ on which the reading does not land on the
-madhhab's marked side (`matches_madhhab` false). Each is entered in the ledger with a grade for
+Every ikhtilāf farʿ has a tarjīḥ. An apparent contradiction is one on which the reading does not land
+on the madhhab's marked side (`matches_madhhab` false); on the others the ledger's tarjīḥ must confirm
+the annotated side, or the entry cites the open research question that leaves it standing. Each is entered in the ledger with a grade for
 every reported position, and resolved by `Usul.Reconcile.reconcile` (= `Usul.resolve`): jamʿ by
 a conservative refinement whose farq the source cites, naskh by a reported later riwāya or
 retraction, tarjīḥ by the graded support, else tawaqquf. `lean_file` emits a guard per entry,
@@ -84,6 +85,11 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
     by = {c["far"]: c for c in cases}
     entries = {e["far"]: e for e in ledger["entries"]}
     errs = [f"{f}: apparent contradiction not in the ledger" for f in (c["far"] for c in candidates(cases)) if f not in entries]
+    archived = _archived_tarjih()
+    errs += [f"{c['far']}: an ikhtilāf without a tarjīḥ in the ledger" for c in cases
+             if c["class"] == "genuine_ikhtilaf" and c.get("matches_madhhab") and c["far"] not in entries
+             and not (c["far"] in archived and resolve(c, archived[c["far"]])[1] == c["expected"])]
+    open_rq = _open_research_questions()
     if len(entries) != len(ledger["entries"]):
         errs.append("duplicate ledger entries")
     conservative = {e["id"]: e["conservative"] for e in dossier["entries"]}
@@ -106,8 +112,10 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
             jams.setdefault(j["encoder"], []).append(c)
             if prevail(graded(c, e)) != c["expected"]:
                 errs.append(f"{f}: a jamʿ must land on the prevailing side")
-        if c.get("matches_madhhab") and not e.get("jam"):
-            errs.append(f"{f}: matches the madhhab without a jamʿ; nothing to reconcile")
+        if (rq := e.get("register")) is not None and rq not in open_rq:
+            errs.append(f"{f}: {rq} is not an open research question")
+        if c.get("matches_madhhab") and not e.get("jam") and resolve(c, e)[1] != c["expected"] and rq not in open_rq:
+            errs.append(f"{f}: the tarjīḥ goes against the annotated madhhab side without an open research question")
     for c in cases:
         if "side_check" not in c:
             continue
@@ -195,6 +203,23 @@ def lean_file(cases: list[dict], ledger: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
+def _archived_tarjih() -> dict[str, dict]:
+    """Entries a resolution retired from the active ledger (``reconciliation/history/*.json``, e.g.
+    PR #49's composite abstention): their tarjīḥ is kept there and still counts for the farʿ."""
+    d = Path(__file__).resolve().parents[2] / "corpus" / "reconciliation" / "history"
+    return {e["far"]: e for p in sorted(d.glob("*.json")) for e in json.loads(p.read_text(encoding="utf-8")).get("entries", [])}
+
+
+OPEN = frozenset({"open-research", "ready-for-decision"})
+
+
+def _open_research_questions() -> set[str]:
+    """Ids of the research register's questions not yet decided by a human: the only licence for an
+    on-madhhab case whose tarjīḥ goes the other way to stand as annotated."""
+    p = Path(__file__).resolve().parents[2] / "corpus" / "review" / "research_questions.json"
+    return {q["id"] for q in json.loads(p.read_text(encoding="utf-8"))["questions"] if q["status"] in OPEN} if p.exists() else set()
+
+
 def report(cases: list[dict], ledger: dict) -> dict:
     by = {c["far"]: c for c in cases}
     rows = [(e, by[e["far"]]) for e in ledger["entries"]]
@@ -205,6 +230,8 @@ def report(cases: list[dict], ledger: dict) -> dict:
     return {"entries": len(rows),
             "evidence_items": sum(len(e.get("evidence", [])) for e, _ in rows),
             "side_checks": sorted(c["far"] for _, c in rows if "side_check" in c),
+            "confirming": sum(1 for e, c in rows if c.get("matches_madhhab") and not e.get("jam")
+                             and resolve(c, e)[1] == c["expected"]),
             "stages": dict(sorted(Counter(resolve(c, e)[0] for e, c in rows).items())),
             "standing": dict(sorted(Counter(standing(c, e) for e, c in rows).items())),
             "worklist": dict(sorted(residues.items(), key=lambda kv: (-len(kv[1]), kv[0]))),

@@ -1,5 +1,6 @@
 """Reconciliation: the bank's apparent contradictions run through its own taʿāruḍ procedure."""
 
+import functools
 import json
 import re
 from pathlib import Path
@@ -143,7 +144,15 @@ def test_imported_evidence_adds_a_graded_holder():
     assert reconcile.check([c], {"entries": [bad]}, DOSSIER) == ["x: evidence must name a listed position and a grade"]
 
 
-EVIDENCE = [v for e in LEDGER["entries"] for v in e.get("evidence", [])]
+# Grouped by witness: `arabic._indexed` caches only a few texts, so interleaving re-indexes each book.
+EVIDENCE = sorted((v for e in LEDGER["entries"] for v in e.get("evidence", [])), key=lambda v: v["ref"].split("/")[0])
+
+
+@functools.cache
+def _witness(w: str) -> str | None:
+    """One text object per witness, so the index cache hits on identity, not a full comparison."""
+    src = ROOT / ".cache/corpus" / f"{w}.txt"
+    return src.read_text(encoding="utf-8") if src.exists() else None
 
 
 def test_evidence_cites_registered_witnesses_within_their_limits():
@@ -160,10 +169,9 @@ def test_evidence_is_verbatim(v):
     """Required reconciliation evidence: a missing witness is a failure, including offline."""
     from usul_corpus.arabic import locate
     w, loc = v["ref"][4:].split("/")
-    src = ROOT / ".cache/corpus" / f"{w}.txt"
-    if not src.exists():
+    if (text := _witness(w)) is None:
         pytest.fail(f"required witness {w} not cached; run make source-verify-fetch")
-    assert locate(src.read_text(encoding="utf-8"), v["excerpt_ar"]) == loc, v["ref"]
+    assert locate(text, v["excerpt_ar"]) == loc, v["ref"]
 
 
 def test_named_companions_count_once_per_ruling():
@@ -254,3 +262,37 @@ def test_six_reviewed_disagreements_preserve_their_original_annotations():
     assert reconcile.check(CASES, LEDGER, DOSSIER) == []
     assert all(c["side_check"]["from_matches"] is True and c["matches_madhhab"] is False for c in checked)
     assert all(reconcile.standing(c, next(e for e in LEDGER["entries"] if e["far"] == c["far"])) == "against_reading" for c in checked)
+
+
+def test_every_ikhtilaf_has_a_tarjih():
+    """The owner's rule: an on-madhhab ikhtilāf is in the ledger too, and its tarjīḥ confirms the
+    annotated side unless the entry cites an open research question."""
+    c = _ikh("x", True, [True, False], matches=True)
+    assert reconcile.check([c], {"entries": []}, DOSSIER) == ["x: an ikhtilāf without a tarjīḥ in the ledger"]
+    assert reconcile.check([c], {"entries": [_entry("x", ["tashih", "ashab"])]}, DOSSIER) == []
+    against = _entry("x", ["ashab", "nass"])
+    assert reconcile.check([c], {"entries": [against]}, DOSSIER) == [
+        "x: the tarjīḥ goes against the annotated madhhab side without an open research question"]
+    assert reconcile.check([c], {"entries": [{**against, "register": "RQ-03"}]}, DOSSIER) == []
+    assert reconcile.check([c], {"entries": [{**against, "register": "RQ-99"}]}, DOSSIER) == [
+        "x: RQ-99 is not an open research question",
+        "x: the tarjīḥ goes against the annotated madhhab side without an open research question"]
+
+
+def test_only_undecided_questions_license(monkeypatch, tmp_path):
+    """A withdrawn or decided question licenses nothing; a confirming count counts confirmations only."""
+    (tmp_path / "corpus" / "review").mkdir(parents=True)
+    (tmp_path / "corpus" / "review" / "research_questions.json").write_text(json.dumps({"questions": [
+        {"id": f"RQ-0{i}", "status": s} for i, s in
+        enumerate(["open-research", "ready-for-decision", "withdrawn", "decided"], 1)]}))
+    monkeypatch.setattr(reconcile, "__file__", str(tmp_path / "pipeline" / "usul_corpus" / "reconcile.py"))
+    assert reconcile._open_research_questions() == {"RQ-01", "RQ-02"}
+    c = _ikh("x", True, [True, False], matches=True)
+    against = {**_entry("x", ["ashab", "nass"]), "register": "RQ-01"}
+    assert reconcile.report([c], {"entries": [against]})["confirming"] == 0
+
+
+def test_the_ledger_holds_every_ikhtilaf():
+    """Every ikhtilāf has a tarjīḥ: in the active ledger, or in the history a resolution retired it to."""
+    entries = {e["far"] for e in LEDGER["entries"]} | set(reconcile._archived_tarjih())
+    assert {c["far"] for c in CASES if c["class"] == "genuine_ikhtilaf"} <= entries

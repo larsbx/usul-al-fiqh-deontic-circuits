@@ -88,10 +88,10 @@
     },
     {
       "id": "RQ-03",
-      "title": "Qiyās al-madhhab on the farʿ against the muʿtamad's decisive statements",
-      "raised_by": "docs/architecture/taarud-reconciliation.md, tranche 11 (59.f005) and the lane A register sweep",
-      "question": "The bank's grade order puts qiyās al-madhhab (4) above the jazm of the aṣḥāb or a muʿtamad matn (5), and tarjīḥ is lexicographic, so one «قياس المذهب» of al-Qāḍī outweighs the decisive statements of al-Muntahā, Sharḥ al-Muntahā and Kashshāf (59.f005, iqāla after the thing sold perishes). Is that order right where the qiyās is on the farʿ itself and al-Inṣāf is undecided?",
-      "policy_in_force": "As is: `Usul.Reconcile.Grade` and its mirror order taṣḥīḥ > naṣṣ > ẓāhir > qiyās > jazm > aṣḥāb > takhrīj > wajh; 59.f005 resolves for the reading and is listed for review. The bank cannot decide this: the question is its own grade order.",
+      "title": "Earlier marked grades (qiyās al-madhhab, a riwāya) against the muʿtamad's decisive statements",
+      "raised_by": "docs/architecture/taarud-reconciliation.md, tranche 11 (59.f005) and the lane A register sweep; the tarjīḥ backfill (65.f004, 96.f009)",
+      "question": "The bank's grade order puts qiyās al-madhhab (4) above the jazm of the aṣḥāb or a muʿtamad matn (5), and tarjīḥ is lexicographic, so one «قياس المذهب» of al-Qāḍī outweighs the decisive statements of al-Muntahā, Sharḥ al-Muntahā and Kashshāf (59.f005, iqāla after the thing sold perishes). Is that order right where the qiyās is on the farʿ itself and al-Inṣāf is undecided? The same order puts a riwāya of Aḥmad on the farʿ's own facts (naṣṣ, 2) above al-Iqnāʿ, al-Muntahā and their sharḥs stating the other side decisively without a madhhab label: in 65.f004 (a pardon of qiṣāṣ for a wound with no qawad) and 96.f009 (a stranger handing over a bequeathed thing) the tarjīḥ goes against an annotation that follows the muʿtamad.",
+      "policy_in_force": "As is: `Usul.Reconcile.Grade` and its mirror order taṣḥīḥ > naṣṣ > ẓāhir > qiyās > jazm > aṣḥāb > takhrīj > wajh; 59.f005 resolves for the reading and is listed for review. The bank cannot decide this: the question is its own grade order. For on-madhhab cases whose tarjīḥ goes the other way by this order alone (65.f004, 96.f009), the annotation stands and the ledger entry cites RQ-03 (`register`); `reconcile.check` admits such a disagreement only while RQ-03 is open.",
       "pins": [
         "Usul.Reconcile.Grade",
         "Usul.Reconcile.prevail"
@@ -106,6 +106,11 @@
           "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p250",
           "excerpt_ar": "(وتصح) الإقالة (مع تلف ثمن لا مع تلف مبيع) ، لتعذر الرد فيه.",
           "note": "The muʿtamad's jazm against it (al-Iqnāʿ in Kashshāf; al-Muntahā and its sharḥ likewise)."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p188",
+          "excerpt_ar": "وإن كان الجرح لا قصاص فيه كالجائفة فعفا عن القصاص ثم سرى إلى النفس فلوليه القصاص",
+          "note": "65.f004: the muʿtamad's jazm for the annotated side, against a riwāya al-Inṣāf reports on the same facts."
         }
       ],
       "alternatives": [
