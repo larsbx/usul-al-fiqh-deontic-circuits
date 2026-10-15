@@ -1,5 +1,6 @@
 """Reconciliation: the bank's apparent contradictions run through its own taʿāruḍ procedure."""
 
+import functools
 import json
 import re
 from pathlib import Path
@@ -143,7 +144,15 @@ def test_imported_evidence_adds_a_graded_holder():
     assert reconcile.check([c], {"entries": [bad]}, DOSSIER) == ["x: evidence must name a listed position and a grade"]
 
 
-EVIDENCE = [v for e in LEDGER["entries"] for v in e.get("evidence", [])]
+# Grouped by witness: `arabic._indexed` caches only a few texts, so interleaving re-indexes each book.
+EVIDENCE = sorted((v for e in LEDGER["entries"] for v in e.get("evidence", [])), key=lambda v: v["ref"].split("/")[0])
+
+
+@functools.cache
+def _witness(w: str) -> str | None:
+    """One text object per witness, so the index cache hits on identity, not a full comparison."""
+    src = ROOT / ".cache/corpus" / f"{w}.txt"
+    return src.read_text(encoding="utf-8") if src.exists() else None
 
 
 def test_evidence_cites_registered_witnesses_within_their_limits():
@@ -160,10 +169,9 @@ def test_evidence_is_verbatim(v):
     """Required reconciliation evidence: a missing witness is a failure, including offline."""
     from usul_corpus.arabic import locate
     w, loc = v["ref"][4:].split("/")
-    src = ROOT / ".cache/corpus" / f"{w}.txt"
-    if not src.exists():
+    if (text := _witness(w)) is None:
         pytest.fail(f"required witness {w} not cached; run make source-verify-fetch")
-    assert locate(src.read_text(encoding="utf-8"), v["excerpt_ar"]) == loc, v["ref"]
+    assert locate(text, v["excerpt_ar"]) == loc, v["ref"]
 
 
 def test_named_companions_count_once_per_ruling():
