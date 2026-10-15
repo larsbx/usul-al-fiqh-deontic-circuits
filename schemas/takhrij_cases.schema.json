@@ -35,7 +35,7 @@
         "properties": {
           "far": {
             "type": "string",
-            "pattern": "\\.(?:f[0-9]{3}|f000_[2-9]|qa[0-9]{5}|m[0-9]{5}|b[0-9]{5})$"
+            "pattern": "\\.(?:f[0-9]{3}|f000_[2-9]|qa[0-9]{5}|m[0-9]{5}|b[0-9]{5}(?:\\.p[0-9]{2})?)$"
           },
           "encoder": {
             "type": "string"
@@ -70,6 +70,21 @@
           "matches_madhhab": {
             "type": "boolean",
             "description": "Whether the source labels the kernel's position the madhhab's. Descriptive of the text; never a scoring target (a ruling stands by its proof)."
+          },
+          "aligned": {
+            "type": "array",
+            "minItems": 1,
+            "description": "The same question in other works: each a committed record id with its relation (same masʾala, a sub-case of it, or a cognate one). The interface between works; it decides nothing by itself.",
+            "items": {
+              "type": "object",
+              "required": ["id", "relation"],
+              "additionalProperties": false,
+              "properties": {
+                "id": {"type": "string"},
+                "relation": {"enum": ["same", "sub", "cognate"]},
+                "note": {"type": "string", "minLength": 1}
+              }
+            }
           },
           "routing_label": {
             "type": "boolean",

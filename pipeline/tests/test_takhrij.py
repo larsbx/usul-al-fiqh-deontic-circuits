@@ -115,3 +115,15 @@ def test_the_case_schema_admits_unit_ids():
     import re
     assert all(re.search(pattern, i) for i in ("a.b.q001.f001", "a.b.qa00001", "a.b.m00001", "a.b.b00001"))
     assert not re.search(pattern, "a.b.q001")
+
+
+def test_an_alignment_links_committed_records_of_other_works():
+    """`aligned` is the interface between works: each link names a committed record, never the case itself."""
+    masala = {"id": "w.z.b00001.p01", "record_type": "masala"}
+    case = {**_annotation("w.z.b00001.p01", "tabaa"), "aligned": [{"id": "w.x.q001.f001", "relation": "same"}]}
+    assert takhrij.annotation_errors([case], RECORDS + [masala]) == []
+    dangling = {**case, "aligned": [{"id": "w.x.q009.f001", "relation": "cognate"}]}
+    assert takhrij.annotation_errors([dangling], RECORDS + [masala]) == [
+        "w.z.b00001.p01: aligned to w.x.q009.f001, not a committed record"]
+    selfie = {**case, "aligned": [{"id": "w.z.b00001.p01", "relation": "same"}]}
+    assert takhrij.annotation_errors([selfie], RECORDS + [masala]) == ["w.z.b00001.p01: aligned to itself"]
