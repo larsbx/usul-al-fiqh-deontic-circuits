@@ -19,9 +19,9 @@ register question; it makes the alternatives expressible.
 * **The unknown as non-existent** (gap `rule:unknown_as_nonexistent`; Ibn Rajab 106).
 * **Reading toward the lowest** (gap `rule:haml_ala_adna`; Ibn al-Laḥḥām 52.f008, grounded in
   Aḥmad's naṣṣ that the least the name covers is due «because it is the certain»).
-* **Voidance of trust** (gap `rule:trust_voidance`; Ibn Rajab 45).
+* **Voidance of trust**, its becoming bāṭil (gap `rule:trust_voidance`; Ibn Rajab 45).
 * **Recourse when permission cannot be sought** (gap `fact:permission_unobtainable`; Ibn Rajab 75).
-* **Abstention while a divorce condition may have occurred** (gap
+* **Abstention while the event a divorce is suspended on (taʿlīq) may have occurred** (gap
   `rule:abstention_under_possible_condition`; Taqī al-Dīn on Aḥmad's texts, cited by Ibn Rajab).
 * **Round 4** (the open gaps' own texts): ghulūl forfeiture (Ibn Rajab 140.f006), the right for
   and against oneself after denial (Ibn al-Laḥḥām 54.f002), tie-breaks among fayʾ recipients (Ibn
@@ -32,7 +32,7 @@ register question; it makes the alternatives expressible.
   bayt 90 of Ibn ʿUthaymīn's manẓūma, «وإن تعذر اليقين فارجعا لغالب الظن»; and «لا عبرة بالظن البين
   خطؤه» limited by «الاجتهاد لا ينقض بالاجتهاد».
 * **Aṣl and ẓāhir** (gap `fact:amara`; Ibn Rajab 159, «because time has indicators by which it
-  is known, unlike what has no indicator: completing prayer, purity, ḥadath»): on equal grades
+  is known, unlike what has no indicator: completing prayer, ṭahāra, ḥadath»): on equal grades
   the ẓāhir prevails only where the matter has indicators. Related: IQ-20.
 -/
 
@@ -119,7 +119,7 @@ theorem adna_is_certain (covers : Nat → Nat → Bool)
     (hlo : ∀ l ∈ levels, lo ≤ l) : ∀ l ∈ levels, covers l lo = true :=
   fun l hl => mono l lo (hlo l hl)
 
-/-! ## Voidance of trust (Ibn Rajab 45)
+/-! ## Voidance of trust: when a trust becomes bāṭil (Ibn Rajab 45)
 
 «المذهب أن الأمانة المحضة تبطل بالتعدي والأمانة المتضمنة لأمر آخر لا تبطل على الصحيح»: a pure
 trust is voided by transgression; a trust that includes something else is not. -/
@@ -128,7 +128,7 @@ def trustVoided (pure transgressed : Bool) : Bool := pure && transgressed
 
 theorem compound_trust_survives (t : Bool) : trustVoided false t = false := by cases t <;> rfl
 
-/-- Voidance is about the contract; liability for loss (Q14) follows transgression either way. -/
+/-- Buṭlān (becoming bāṭil) is about the contract; liability for loss (Q14) follows transgression either way. -/
 theorem liability_independent_of_voidance (pure : Bool) :
     lossLiable .trustee true false = true ∧ trustVoided pure true = pure := by
   cases pure <;> exact ⟨rfl, rfl⟩
@@ -144,7 +144,7 @@ def recourseNec (gift owedByOther permission unobtainable : Bool) : Bool :=
 theorem recourseNec_conservative (g o p : Bool) : recourseNec g o p false = recourseFull g o p := by
   cases p <;> simp [recourseNec]
 
-/-! ## Abstention while a divorce condition may have occurred
+/-! ## Abstention while the event a divorce is suspended on (taʿlīq) may have occurred
 
 Taqī al-Dīn on Aḥmad's texts (Ibn Rajab, on qāʿida 160): «وحاصله أنه متى علق الطلاق بشرط وأمكن
 وجوده فإنه يعتزل امرأته حتى يعلم انتفاؤه». The marriage is not judged dissolved: the husband «is
@@ -196,7 +196,7 @@ def basis (yaqinAttainable ghalaba : Bool) : Basis :=
   if yaqinAttainable then .yaqin else if ghalaba then .ghalabatZann else .asl
 
 /-- Where certainty is attainable, a preponderant belief is not consulted (the manẓūma's
-example: certain of purity, believing a ḥadath, he stays on purity). -/
+example: certain of ṭahāra, believing a ḥadath, he stays on ṭahāra). -/
 theorem attainable_yaqin_excludes_ghalaba (g : Bool) : basis true g = .yaqin := by cases g <;> rfl
 
 /-- The order is S2's: `basis` is `resolveD` over [yaqīn, ghalaba] with the aṣl as default. -/
@@ -483,7 +483,7 @@ theorem q65_is_the_unbelieved_basis : validWithBasis false true = countsAsMet fa
 
 /-! ### Qāʿida 91: what the hand takes in
 
-«يضمن بالعقد وباليد الأموال المحضة»; of what is not pure property, what has a share of it (umm
+«يضمن بالعقد وباليد الأموال المحضة»; of what is not property outright (maḥḍ), what has a share of it (umm
 al-walad, the mukātab, the mudabbar) «فيضمن باليد», while «الحر لا تثبت عليه اليد». -/
 
 def handLiable (propertyLike : Bool) : Bool := propertyLike
@@ -502,9 +502,9 @@ theorem undertaken_settles : takerRecourse true = false := rfl
 These are candidate readings of the named source positions, not adopted rulings.
 Q31 distinguishes corruption after a binding start from prevention, and faulty from
 non-faulty loss. The non-faulty-loss branch follows the author of al-Mughnī; another
-position remains recorded in the annotation. Q47 distinguishes compensation under
-the contract from compensation for loss. It does not identify every defective contract
-with a void contract, or decide which contracts are binding. -/
+position remains recorded in the annotation. Q47 distinguishes ḍamān under
+the contract from ḍamān for loss. It does not identify every fāsid contract
+with a bāṭil one, or decide which contracts are binding. -/
 
 inductive MakeupFailure where
   | corruption | prevention | lossWithFault | lossWithoutFault
@@ -533,8 +533,8 @@ inductive CompensationBasis where
   | agreed | equivalent
   deriving DecidableEq, Repr
 
-/-- Q47's explanatory distinction: contract compensation uses the named consideration;
-loss compensation uses the equivalent. The annotation must establish which applies. -/
+/-- Q47's explanatory distinction: ḍamān under the contract uses the named consideration;
+ḍamān for loss uses the equivalent. The annotation must establish which applies. -/
 def defectiveCompensationBasis (contractLiability : Bool) : CompensationBasis :=
   if contractLiability then .agreed else .equivalent
 
@@ -619,7 +619,7 @@ lean on (the aṣl is the ʿazīma). -/
 theorem rukhsa_is_firm_condition (r p : Bool) : rukhsaValid r p = validUnderDoubt r p false := by
   cases r <;> cases p <;> rfl
 
-/-! ### A sale conditioned on a known fact (Ibn Rajab 68.f007)
+/-! ### A sale suspended (taʿlīq) on a known fact (Ibn Rajab 68.f007)
 
 al-Kāfī: «لأنه تعليق على شرط واقع يعلمانه فلا يؤثر ذكره في العقد», with Aḥmad's naṣṣ (Ibn Manṣūr)
 on selling the absent thing «إن كان سالما». -/
@@ -732,6 +732,61 @@ theorem binding_is_implicit_exception (b : Bool) :
 
 /-! ## M8 tranche 6 -/
 
+/-! ### Qāʿida 3: doing more than suffices
+
+«إن كانت الزيادة متميزة منفصلة فلا إشكال في أنها نفل بانفرادها … وأما إن لم تكن متميزة ففيه
+وجهان». On an excess over the due (an older animal in zakāt) al-Qāḍī: «بعضه تطوع وهو الصواب»;
+«فأما ما كان الأصل فرضيته ووجوبه ثم سقط بعضه تخفيفا فإذا فعل الأصل وصف الكل بالوجوب على
+الصحيح» (the traveller who prays four). -/
+
+/-- The whole is described as obligatory only when the excess cannot be told apart and the whole
+was the original duty, lightened. -/
+def wholeObligatory (separable originallyDue : Bool) : Bool := !separable && originallyDue
+
+theorem separable_excess_is_nafl (o : Bool) : wholeObligatory true o = false := rfl
+
+/-! ### Qāʿida 9: worship done in a prohibited way
+
+«إن كان التحريم عائدا إلى ذات العبادة … لم يصح، وإن كان عائدا إلى شرطها فإن كان على وجه يختص
+بها فكذلك أيضا، وإن كان لا يختص بها ففي الصحة روايتان أشهرهما عدمها، وإن عاد إلى ما ليس بشرط
+فيها ففي الصحة وجهان واختار أبو بكر عدم الصحة وخالفه الأكثرون». -/
+
+inductive ProhibitionSite where
+  | essence | specificCondition | generalCondition | external
+  deriving DecidableEq, Repr
+
+/-- The reading takes «أشهرهما» on the general condition and «الأكثرون» on what is not a condition. -/
+def worshipValidDespite : ProhibitionSite → Bool
+  | .external => true
+  | _ => false
+
+/-- al-Saʿdī's three sites (Q38): Ibn Rajab's two kinds of condition are one. -/
+def ProhibitionSite.toSadi : ProhibitionSite → Sadi.ProhibitionTarget
+  | .essence => .essence
+  | .specificCondition | .generalCondition => .condition
+  | .external => .external
+
+/-- Ibn Rajab 9 refines al-Saʿdī Q38 and agrees with it on every site: no clash. -/
+theorem q9_refines_q38 (s : ProhibitionSite) :
+    worshipValidDespite s = Sadi.validDespiteProhibition s.toSadi := by
+  cases s <;> rfl
+
+/-! ### Qāʿida 14: a cause from one of two, unknown which
+
+«فهل يلحق الحكم بكل منهما أو لا يلحق بواحد منهما شيء في المسألة خلاف». Each alone builds on his
+certainty («كل واحد منهما متيقن للطهارة شاك في الحدث»); taken together the certain occurrence
+counts: «فينظر إليهما مجتمعين في حكم يتعلق باجتماعهما» (one may not lead the other in prayer; the
+two slave-women in one ownership go to lots, «على أصح الوجهين»). -/
+
+def oneOfTwoAttaches (together : Bool) : Bool := together
+
+/-! ### Qāʿida 15: a presumption does not carry its consequence into another
+
+«وكان لازم ذلك تغير أصل آخر يجب استصحابه أو ترك العمل بظاهر آخر يجب إعماله لم يلتفت إلى ذلك
+اللازم على الصحيح». -/
+
+def consequenceCarries (altersAnotherAsl : Bool) : Bool := !altersAnotherAsl
+
 /-! ### Qāʿida 35: owning the benefit by contract, then the thing
 
 A perpetual commutative contract (nikāḥ) dissolves on owning the person; a lease does not, «لا
@@ -749,7 +804,7 @@ def laterContractGoverns (successive : Bool) : Bool := successive
 /-- Jamʿ (`corpus/reconciliation/ledger.json`): the later contract governs where it binds, or where
 the earlier one did not. Abū al-Barakāt's farq, «ويسقط ضمان العارية لأنها ليست لازمة، وعقد هذه الأمانة
 لازم» (37.f003), reconciles the reading with Majd's ẓāhir of Aḥmad: a non-binding permission does not
-turn a binding pledge into a loan (37.f000), and a void condition does not displace it (37.f006). -/
+turn a binding pledge into a loan (37.f000), and a fāsid condition («الشرط يفسد») does not displace it (37.f006). -/
 def laterBindingGoverns (successive earlierBinding laterBinding : Bool) : Bool :=
   successive && (laterBinding || !earlierBinding)
 
@@ -813,7 +868,7 @@ def advancedSuffices (dueAtPerformance : Bool) : Bool := dueAtPerformance
 
 /-! ### Qāʿida 9: worship performed in a prohibited way
 
-Invalid where the prohibition returns to the act itself, to a condition specific to it, or to a
+Invalid («لا يصح») where the prohibition returns to the act itself, to a condition specific to it, or to a
 condition not specific to it («روايتان أشهرهما عدمها»); valid where it returns to what is no
 condition («وخالفه الأكثرون», against Abū Bakr). -/
 
@@ -907,7 +962,7 @@ he is liable where he caused the ending or shared in it, «لأنه يسبب إ�
 where the other ended it alone (the ẓāhir of al-Mughnī on the ṣadāq). -/
 def liableAfterEnding (endedByHolder : Bool) : Bool := endedByHolder
 
-/-- Qāʿida 46: a void contract is concluded only where it binds and cannot be left by word
+/-- Qāʿida 46: a void (fāsid) contract is concluded only where it binds and cannot be left by word
 (iḥrām) or carries a pervasive effect (nikāḥ, kitāba); a void sale or lease «فالمعروف من المذهب
 أنه غير منعقد». -/
 def voidConcluded (binding pervasive : Bool) : Bool := binding && pervasive
@@ -1006,7 +1061,7 @@ theorem excessObligatoryIn_conservative (s l : Bool) :
     excessObligatoryIn s l false = excessObligatory s l := by
   cases s <;> cases l <;> rfl
 
-/-- Qāʿida 5 with the state at obligation for kaffārāt: an expiation advanced by fasting does not
+/-- Qāʿida 5 with the state at obligation for kaffārāt: an expiation (kaffāra) advanced by fasting does not
 suffice when the oath is broken while well off, «والاعتبار في الكفارات بحالة الوجوب» (al-Iqnāʿ;
 Kashshāf). -/
 def advancedSufficesIn (dueAtPerformance kaffaraChanged : Bool) : Bool :=
@@ -1060,7 +1115,7 @@ theorem removedWithPrincipalIn_conservative (g : Bool) :
     removedWithPrincipalIn g false = removedWithPrincipal g := by
   cases g <;> rfl
 
-/-- Qāʿida 59 with the madhhab on the defective thing that perishes: no return, the arsh fixed
+/-- Qāʿida 59 with the madhhab on the thing with an ʿayb that perishes: no return, the arsh fixed
 (al-Inṣāf: «وهذا المذهب. وعليه أكثر الأصحاب»), «وسقط الرد لتعذره» (Kashshāf). -/
 def annulsNonexistentIn (annulment defectReturn : Bool) : Bool :=
   annulsNonexistent annulment && !defectReturn

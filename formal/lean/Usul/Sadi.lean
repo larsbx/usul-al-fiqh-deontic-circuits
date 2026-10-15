@@ -13,7 +13,7 @@ namespace Usul.Sadi
 
 open Usul
 
-/-! ## Q1 — the Lawgiver commands only pure or preponderant benefit, forbids only pure or
+/-! ## Q1 — the Lawgiver commands only sheer (maḥḍ) or preponderant benefit, forbids only sheer or
 preponderant harm -/
 
 /-- Benefit and harm of an act, on a common scale. -/
@@ -117,7 +117,7 @@ def Conduct.status : Conduct → Hukm
 theorem q16_adl_binding_fadl_not : Conduct.adl.status.binding = true ∧ Conduct.fadl.status.binding = false :=
   ⟨rfl, rfl⟩
 
-/-! ## Q22 / Q23 — settlement and stipulations are valid unless they make the forbidden
+/-! ## Q22 / Q23 — settlement and stipulations (al-shurūṭ fīhā, «الشروط») are valid unless they make the forbidden
 permitted or the permitted forbidden -/
 
 /-- A settlement or stipulation that turns `before` into `after` for some act. -/
@@ -152,6 +152,19 @@ def useSubstitute (originalPossible : Bool) : Bool := !originalPossible
 
 theorem q28_substitute_only_when_needed (p : Bool) : useSubstitute p = true ↔ p = false := by
   cases p <;> simp [useSubstitute]
+
+/-- The original and the substitute that stands in for it. -/
+inductive Means where
+  | original | substitute
+  deriving DecidableEq, Repr
+
+/-- What a means permits: whatever the original permits, by either means. -/
+def permits {Act : Type} (byOriginal : Act → Bool) : Means → Act → Bool := fun _ => byOriginal
+
+/-- Q28's first half: «يستباح به ما يستباح بالماء من العبادات وغيرها، وأنه يقوم مقامه في كل شيء».
+Once in use, the substitute permits exactly what the original permits (tayammum and water: furūq F51). -/
+theorem q28_stands_in_everything {Act : Type} (byOriginal : Act → Bool) (a : Act) :
+    permits byOriginal .substitute a = permits byOriginal .original a := rfl
 
 /-! ## Q33 — when benefits crowd, the higher is preferred; when harms crowd and one must be
 done, the lighter -/
@@ -216,7 +229,7 @@ theorem q33_lighter_harm {α : Type} (harm : α → Nat) {xs : List α} {b : α}
     (h : best (fun x => -(harm x : Int)) xs = some b) : ∀ y ∈ xs, harm b ≤ harm y :=
   fun y hy => Int.ofNat_le.mp (Int.neg_le_neg_iff.mp (best_max _ h y hy))
 
-/-! ## Q38 — a prohibition aimed at the act of worship itself or at its condition voids it;
+/-! ## Q38 — a prohibition aimed at the act of worship itself or at its condition makes it fāsid («أخل بها وفسدت»);
 one aimed at something external does not (the act is valid, the transgression sinful) -/
 
 inductive ProhibitionTarget where
@@ -232,7 +245,7 @@ theorem q38_voids_iff_intrinsic (t : ProhibitionTarget) :
   cases t <;> simp [validDespiteProhibition]
 
 /-! ## Q40 — the whole command is due; whoever can do part must do that part, unless the
-part is a pure means or not worship by itself -/
+part is a pure means (wasīla maḥḍa) or not worship by itself -/
 
 def obligedParts {P : Type} (parts : List P) (can pureMeans : P → Bool) : List P :=
   parts.filter (fun p => can p && !pureMeans p)

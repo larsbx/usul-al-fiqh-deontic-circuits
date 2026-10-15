@@ -1,0 +1,212 @@
+{
+ "guards": [
+  {
+   "gloss_en": "\\b(semen|sperm|seminal|ejaculat\\w*)\\b",
+   "terms": [
+    "maniyy",
+    "madhy",
+    "wady"
+   ],
+   "why": "English «semen» covers al-manī (ṭāhir, ghusl), al-madhy and al-wadī (najis, wuḍūʾ): the rulings differ (Usul.Tahara.semen_conflates)."
+  },
+  {
+   "gloss_en": "\\b(impur\\w*|unclean)\\b",
+   "terms": [
+    "najasa",
+    "hadath"
+   ],
+   "why": "English «impurity» covers al-najāsa (removed, no tayammum) and al-ḥadath (lifted, with intention, tayammum for it): F68, F121."
+  },
+  {
+   "gloss_en": "\\b(pure|purity|purif\\w*)\\b",
+   "terms": [
+    "tahir",
+    "tahur",
+    "tahara",
+    "mahd",
+    "najasa"
+   ],
+   "why": "English «pure» covers al-ṭāhir (not najis), al-ṭahūr (purifying; the madhhab's ṭāhir water is not), al-ṭahāra (of a person: from ḥadath and from najāsa) and al-maḥḍ (sheer, not a purity term): F19, F68."
+  },
+  {
+   "gloss_en": "\\b(wash\\w*|bath(?!-house)\\w*)\\b",
+   "terms": [
+    "ghusl",
+    "ghasl"
+   ],
+   "why": "English «wash» covers al-ghusl (the full bath that lifts the major ḥadath) and al-ghasl (washing a limb or a najāsa); unvowelled Arabic الغسل is both (Ibn Rajab 14.f000 «غسل ولا وضوء» is ghusl; 8.f003 «غسل بعض أعضاء المحدث» is ghasl)."
+  },
+  {
+   "gloss_en": "\\b(void\\w*|invalid\\w*|defective|null)\\b",
+   "terms": [
+    "batil",
+    "fasid",
+    "sahih",
+    "ayb",
+    "ibtal",
+    "qadh"
+   ],
+   "why": "English «void», «invalid», «defective» cover al-bāṭil, al-fāsid (one in the madhhab except in ḥajj and nikāḥ, F98), «لا يصح» (not ṣaḥīḥ) and al-ʿayb (a defect in the thing, which leaves the contract ṣaḥīḥ: F138, Ibn Rajab 30). The «void» of an argument or ʿilla is al-ibṭāl or al-qadḥ (PR-03, PR-23).",
+   "scope": [
+    "registers",
+    "lean"
+   ]
+  },
+  {
+   "gloss_en": "\\b(expiat\\w*|compensat\\w*|ransom\\w*|blood-money|indemn\\w*)\\b",
+   "terms": [
+    "kaffara",
+    "fidya",
+    "jaza",
+    "diya",
+    "arsh",
+    "daman",
+    "fida"
+   ],
+   "scope": [
+    "registers",
+    "lean"
+   ],
+   "why": "English «expiation» and «compensation» cover al-kaffāra, al-fidya, al-jazāʾ, al-diya, al-arsh, al-ḍamān and al-fidāʾ, each with its own cause and measure (al-Māʾida 89 and 95, al-Baqara 196, al-Nisāʾ 92; F13, F17, F21, F49, F63)."
+  },
+  {
+   "gloss_en": "\\b(weak(?:er|est|ness|ly)?|sound(?:er|est|ness|ly)?|authentic\\w*)\\b",
+   "terms": [
+    "sahih",
+    "sahih_hadith",
+    "sahih_qawl",
+    "asahh",
+    "daif_hadith",
+    "daif_qawl",
+    "farq_sahih",
+    "farq_daif",
+    "qiyas_sahih"
+   ],
+   "why": "English «sound» and «weak» cover al-ṣaḥīḥ of an act (valid), of a ḥadīth (a grade: ḥujja), of a view (tarjīḥ: al-ṣaḥīḥ, al-aṣaḥḥ), of a farq (al-Saʿdī's grade), and al-ḍaʿīf of a ḥadīth, a view or a farq: a weak wajh is not a weak ḥadīth (PR-03). The Lean docs' «sound» of an inference is another sense, out of scope.",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
+  },
+  {
+   "gloss_en": "\\b(condition\\w*|stipulat\\w*)\\b",
+   "terms": [
+    "shart",
+    "shart_fiha",
+    "taliq"
+   ],
+   "why": "English «condition» covers al-sharṭ (a condition of the thing: «مقوماتها التي لا تتم ولا تصح إلا بها»), al-shurūṭ fīhā (a party's stipulation, binding when ṣaḥīḥ: F28) and al-taʿlīq (suspending a contract or divorce on an event: F23, F60). Whether a sale «cannot be made conditional» is a taʿlīq question, not a sharṭ one.",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
+  },
+  {
+   "gloss_en": "\\bjudge(?:s|'s)?\\b[^.]{0,60}\\brul\\w*|\\brul\\w*\\b[^.]{0,60}\\bjudge(?:s|'s)?\\b",
+   "terms": [
+    "hukm",
+    "hukm_hakim"
+   ],
+   "why": "English «ruling» beside a judge is either the sharʿī ḥukm the judge applies or his verdict, ḥukm al-ḥākim; only the verdict is «undone» (naqḍ al-ḥukm), and «الاجتهاد لا ينقض بالاجتهاد» is said of it (Ibn Rajab Q68).",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
+  },
+  {
+   "gloss_en": "\\b(charit\\w*|alms\\w*)\\b",
+   "terms": [
+    "zakat",
+    "sadaqa"
+   ],
+   "why": "English «charity» covers al-zakāt (the fixed due on a niṣāb) and al-ṣadaqa (voluntary, vowed, or a fidya): whether one payment discharges both is a khilāf (Ibn Rajab Q18).",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
+  },
+  {
+   "gloss_en": "\\b(strong\\w*)\\b",
+   "terms": [
+    "tarjih",
+    "zann",
+    "qarina"
+   ],
+   "why": "English «strong» says which weight: a proof's in tarjīḥ («أقوى», «أرجح», «آكد»), a ẓann's degree, or the qarāʾin's («إذا قويت القرائن»). Farḍ being «آكد» than wājib is emphasis, not a stronger proof.",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
+  },
+  {
+   "gloss_en": "\\b(cause|causes|causal\\w*|causation|causality)\\b",
+   "terms": [
+    "illa",
+    "sabab",
+    "hikma"
+   ],
+   "why": "English «cause» covers al-ʿilla (the anchor, manāṭ, of a ruling extended by qiyās), al-sabab (what the ruling attaches to: «الأحكام تتبعض بحسب تباين أسبابها», Q31; «بعد وجود السبب», Q39) and al-ḥikma (the wisdom, which kasr shows without the ruling). Al-Kawkab: a linguistic «condition» is really a sabab.",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
+  },
+  {
+   "gloss_en": "\\b(oaths?|vows?|vowed|vowing|swear\\w*|swore|sworn)\\b",
+   "terms": [
+    "yamin",
+    "yamin_daawa",
+    "nadhr",
+    "taliq"
+   ],
+   "why": "English «oath» covers al-yamīn (a binding oath, broken by ḥinth, released by kaffāra), the yamīn of a claim (a means of proof: «واليمين على من أنكر», «بشاهد ويمين») and the «divorce oath», which is a taʿlīq; «vow» is al-nadhr, fulfilled not expiated (F59). q014.f001's «إن كان هذا الطائر غرابا فامرأتي طالق» is a taʿlīq, not an oath.",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
+  },
+  {
+   "gloss_en": "\\b(divorc\\w*|annul\\w*|dissol\\w*|rescind\\w*|rescission)\\b",
+   "terms": [
+    "talaq",
+    "faskh",
+    "infisakh",
+    "khul",
+    "taliq"
+   ],
+   "why": "English «divorce», «annul», «dissolve» cover al-ṭalāq (the husband's word), al-faskh (a party's or judge's undoing: F99, Q63), al-infisākh (the contract ending of itself: «ويترتب على ذلك انفساخ النكاح», Q133) and al-khulʿ (disputed between ṭalāq and faskh). Q133.f003 read «annulment follows» for «انفساخ».",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
+  },
+  {
+   "gloss_en": "\\b(obligat\\w*|recommend\\w*|commendable|duty|duties|mandatory|supererogatory|voluntary)\\b",
+   "terms": [
+    "wajib",
+    "fard",
+    "mandub"
+   ],
+   "why": "English «obligatory» and «recommended» say which of the five: al-wājib (one with al-farḍ in the sounder riwāya; farḍ «آكد» in the other) or al-mandūb (mustaḥabb, sunna; nafl against the farḍ). A «duty» or «obligation» that is a contractual debt or a right of another is named as such.",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
+  },
+  {
+   "gloss_en": "\\b(binding|non-binding|binds?)\\b",
+   "terms": [
+    "wajib",
+    "luzum",
+    "yamin",
+    "nadhr"
+   ],
+   "why": "English «binding» covers ilzām (the wājib and the ḥarām bind the mukallaf), the luzūm of a contract (lāzim against jāʾiz: hire against juʿāla, F91; a pledge after possession, F144), the inʿiqād of an oath, and the «not binding» (غير لازم) of an objection such as kasr.",
+   "scope": [
+    "registers",
+    "glossary"
+   ]
+  }
+ ],
+ "note": "Every English text field of the corpus registers, and every Lean doc comment, that uses one of these glosses must also name the term it means, by its transliteration or its Arabic (tests/test_nusus.py). The English never feeds a derivation; this keeps it from hiding which term a case is about."
+}

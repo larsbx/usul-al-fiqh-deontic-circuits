@@ -47,9 +47,9 @@ example {H : Drink → Hukm} (hf : Schema.Factors H iskar) (ha : Agrees H given)
 
 /-! ## M10: Ibn Rajab Q2, farʿ 2 (`rajab_m8_tranche4_furu.json`, q002.f002)
 
-Washing hanging hair. In janāba: two wujūh, al-Mughnī's (not obligatory, «طردا للقاعدة») and the
+Washing (al-ghasl) the hanging hair in the ghusl and the wuḍūʾ. In janāba: two wujūh, al-Mughnī's (not obligatory, «طردا للقاعدة») and the
 other (obligatory taʿabbudan). In the minor ḥadath it is washed «على الصحيح». Verdict: is
-washing the hanging hair obligatory? -/
+its ghasl obligatory? -/
 
 inductive Hadath | janaba | asghar
   deriving DecidableEq, Repr

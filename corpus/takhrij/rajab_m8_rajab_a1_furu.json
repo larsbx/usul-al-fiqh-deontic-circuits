@@ -1,0 +1,513 @@
+{
+ "suite": "m8_rajab_rajab_a1",
+ "status": "candidate",
+ "provenance": "M8 lane-A shard rajab-a1: every far record of Ibn Rajab's qawāʿid 60, 67, 69 and 71, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA1). Typological records are annotated for their leading ruling, follow-on sub-questions in the note. Annotated by reading the full paragraph in the pinned witness; each madhhab side checked against al-Inṣāf and the muʿtamad (al-Furūʿ, the Muntahā and Iqnāʿ with al-Buhūtī); candidate, awaiting human review.",
+ "cases": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f000",
+   "encoder": "rescission_harm",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "harm": true,
+    "remediable": false
+   },
+   "expected": "barred",
+   "positions": [
+    {
+     "who": "many aṣḥāb (Ibn Rajab: «أطلق كثير من الأصحاب»): he may renounce after acceptance, in the testator's life and after",
+     "ruling": "free"
+    },
+    {
+     "who": "al-Majd (al-Muḥarrar), taken from Ḥanbal's riwāya on handing the waṣiyya to the ḥākim: only where a ḥākim is found, «لئلا يضيع إسنادها فيقع الضرر»",
+     "ruling": "barred"
+    },
+    {
+     "who": "riwāyāt (al-Qāḍī, al-Khilāf; Ibn Abī Mūsā): no renunciation after the death, nor before it if the testator is not told; or none at all once accepted",
+     "ruling": "barred"
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "The appointed executor who has accepted: may he renounce? The record does not say whether a ḥākim is found; the khilāf the qāʿida is about arises where none is, for there al-Majd's restriction and the riwāyāt bar renunciation because the trust would be lost («فيقع الضرر»), with no ḥākim to take it over: that branch is annotated (harm, not remediable), and the reading bars it. The majority's unrestricted permission is al-madhhab in al-Inṣāf («وله عزل نفسه متى شاء. هذا المذهب مطلقا وعليه أكثر الأصحاب») and the Muntahā («وصح قبول وصي وعزله نفسه في حياة موص وبعد موته»), so the case is off the madhhab and enters the ledger. Where a ḥākim is found the reading gives renunciation with the ḥākim taking over (withRemedy), al-Majd's side."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f001",
+   "encoder": "rescission_harm",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "harm": true,
+    "remediable": true
+   },
+   "expected": "withRemedy",
+   "positions": [
+    {
+     "who": "al-manṣūṣ: the dismissal of the agent for selling the pledge is valid, «لأن الحاكم يأمره بالبيع ويبيع عليه»",
+     "ruling": "withRemedy"
+    },
+    {
+     "who": "Ibn Abī Mūsā (takhrīj): he is not dismissed, «لأن فيه تغرير للمرتهن»",
+     "ruling": "barred"
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The pledgor dismisses the agent he appointed to sell the pledge. The harm to the pledgee is stated, and so is its remedy: the ḥākim orders the sale or sells («لأن الحاكم يأمره بالبيع ويبيع عليه»). So the reading gives effective dismissal with the remedy, the manṣūṣ, which al-Inṣāf holds («فإن عزلهما: صح عزله. هذا المذهب. نص عليه، وعليه جمهور الأصحاب»). Ibn Rajab adds a third takhrīj from the waṣiyya masʾala: distinguish whether a ḥākim is found to order the sale, which is the reading's own fact."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f002",
+   "encoder": "rescission_harm",
+   "class": "derivable",
+   "facts": {
+    "harm": true,
+    "remediable": true
+   },
+   "expected": "withRemedy",
+   "note": "The juʿāla may be rescinded, but the worker is owed a fair wage «لبطلان المسمى بالفسخ»: the harm to him is made good, so the rescission takes effect on that basis. Ibn Rajab's takhrīj that in the juʿl for returning a runaway slave the named fee is due once he has begun concerns the measure of the remedy, not the rescission."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f003",
+   "encoder": "rescission_harm",
+   "class": "derivable",
+   "facts": {
+    "harm": true,
+    "remediable": true
+   },
+   "expected": "withRemedy",
+   "note": "The owner rescinds the musāqāt (on the view that it is non-binding, jāʾiz) after the fruit has appeared: the worker's share stands, «لأنه يملكه بالظهور رواية واحدة». The rescission takes effect with his right preserved. Follow-on: rescinded before the fruit appears, by the worker nothing, by the owner a fair wage «لأنه منعه من إتمام عقد ... فلزمه ضمانه» (al-Inṣāf: «وإن فسخ رب المال ... فعليه للعامل أجرة عمله»); Ibn Rajab's tawajjuh on Ibn ʿAqīl's view in muḍāraba, that it dissolves for the owner but not the worker."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f004",
+   "encoder": "rescission_harm",
+   "class": "derivable",
+   "facts": {
+    "harm": true,
+    "remediable": true
+   },
+   "expected": "withRemedy",
+   "note": "The owner rescinds (faskh) the muzāraʿa after the ploughing and before the crop. Aḥmad's «لم يجب له شيء بعد» Ibn Manṣūr carries on the worker who leaves of his own accord, and gives the expelled worker his labour and outlay («فأما أن يكون يذهب عمل يديه وما أنفق في الأرض فلا»); Ibn Rajab agrees and reads the naṣṣ as barring sale of the improvements, not the right. No one is reported to deny the expelled worker his due, so the rescission takes effect with the remedy. Taqī al-Dīn's fatwās (a non-binding muzāraʿa ended by a lease: the farmer's wage) and Aḥmad's naṣṣ in Ṣāliḥ's riwāya on returning land ploughed follow."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f005",
+   "encoder": "rescission_harm",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "harm": true,
+    "remediable": true
+   },
+   "expected": "withRemedy",
+   "positions": [
+    {
+     "who": "al-Qāḍī (al-Khilāf), ẓāhir of Aḥmad in Ibn Manṣūr's riwāya: it dissolves even with the capital in goods, and the muḍārib may sell after it «لتعلق حقه بربحه»",
+     "ruling": "withRemedy"
+    },
+    {
+     "who": "al-Qāḍī (al-Mujarrad), Ibn ʿAqīl (bāb al-sharika), ẓāhir of Aḥmad in Ḥanbal's riwāya: he is not dismissed while it is goods, and the owner may not dismiss him",
+     "ruling": "barred"
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The owner rescinds the muḍāraba while the capital is in goods. The muḍārib's harm (his share of the profit) is stated and remedied by his selling after the rescission, so the reading gives effective rescission with the remedy, al-Qāḍī's Khilāf. al-Inṣāf: «لو فسخ المالك المضاربة، والمال عرض: انفسخت. وللمضارب بيعه بعد الفسخ، على الصحيح من المذهب». Follow-on: Ibn ʿAqīl on the owner's stratagem to cut off the profit and on the muḍārib's own rescission before the capital is liquid, which Ibn Rajab calls «حسن جار على قواعد المذهب في اعتبار المقاصد وسد الذرائع»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f006",
+   "encoder": "rescission_harm",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "harm": false,
+    "remediable": false
+   },
+   "expected": "free",
+   "positions": [
+    {
+     "who": "al-Qāḍī: it dissolves by either partner's word, the capital in cash or in goods",
+     "ruling": "free"
+    },
+    {
+     "who": "riwāya (al-Talkhīṣ, «وهو المذهب»): he is not dismissed until the capital is liquid, as with the muḍārib",
+     "ruling": "barred"
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "A partner rescinds the sharika. The text states the farq that removes the harm: «بأن الشريك وكيل والربح يدخل تبعا بخلاف حق المضارب فإنه أصلي», so no right of the other is harmed and the rescission is free, al-Qāḍī's view. al-Talkhīṣ calls the contrary riwāya al-madhhab, but the later works hold the first: al-Furūʿ «والمذهب الأول، لأنها وكالة، والربح يدخل ضمنا، وحق المضارب أصلي», Sharḥ al-Muntahā «وسواء كان المال نقدا أو عرضا», al-Buhūtī in the Kashshāf «والمذهب: أنه ينعزل مطلقا وإن كان عرضا» (the Iqnāʿ's matn has the other). `remediable` is idle without harm."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f007",
+   "encoder": "rescission_harm",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "harm": true,
+    "remediable": false
+   },
+   "expected": "barred",
+   "positions": [
+    {
+     "who": "Abū Bakr, first qawl: the principal is not liable, «عفوه لم يصح» since it came «على وجه لا يمكن استدراكه», and he is a benefactor in pardoning",
+     "ruling": "barred"
+    },
+    {
+     "who": "Abū Bakr, second qawl: the principal is liable, «لأنه سلطه على قتل معصوم لا يعلم بعصمته»",
+     "ruling": "withRemedy"
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The principal dismisses the agent for retaliation by pardoning, and the agent, not knowing, retaliates: is the principal liable? The pardon is the rescission (faskh of the agency, the qāʿida's «التفاسخ»); the text states that it came «على وجه لا يمكن استدراكه», so the reading bars it: the pardon does not take effect, the retaliation was due, and no one is liable. The other qawl lets the pardon take effect with the harm made good by the principal's liability. al-Inṣāf: «وهل يضمن العافي؟ ... أحدهما: لا يضمن. وهو المذهب» (the other jazm of al-Wajīz, put first in al-Furūʿ). The record goes on to the two further ṭarīqas (building on dismissal before knowledge), the agent's liability and recourse, and the agent's sale, waqf or manumission after an unknown dismissal (Taqī al-Dīn: no one liable)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f000",
+   "encoder": "recourse_after_return",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "returned_by_gift": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "wajh: he returns it and claims the price",
+     "ruling": true
+    },
+    {
+     "who": "wajh (riwāya in al-Inṣāf, «كمهر في رواية»): no return, «لا رد ولا أرش لمشتر وهبه بائع ثمنا، أو أبرأه منه»",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The seller gave the buyer the price as a gift (or released him from it), then a defect appears: may he return the thing and claim the price? «على وجهين». The record names both the gift and the release; the gift, named first, is annotated, and the reading (Ibn Rajab's takhrīj «فيرجع بالهبة دون الإبراء») gives recourse. al-Inṣāf in khiyār al-ʿayb holds return or arsh as the madhhab and gives the denial only as «وعنه: لا رد ولا أرش لمشتر وهبه بائع ثمنا، أو أبرأه منه»; and it puts the case with the ṣadāq «خلافا ومذهبا». On the release branch the reading would deny recourse against that madhhab (not annotated). Follow-on: release from part of the price (al-Qāḍī: no recourse for what was released) and the arsh where the thing was defected in his hand (two ṭarīqs; Ibn ʿAqīl: none)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f001",
+   "encoder": "recourse_after_return",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "returned_by_gift": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "wajh: after the iqāla he recovers the price he had been given",
+     "ruling": true
+    },
+    {
+     "who": "wajh: he recovers nothing, the price having already come back to him",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The parties revoke the sale (iqāla) after the price was given back as a gift or released: listed as a further ṣūra of the same two wajhs. The gift branch, named first, is annotated; the reading gives recourse. No later work treats the iqāla case; the cognate sale masʾala (f000) and the ṣadāq masʾala are given recourse as al-madhhab in al-Inṣāf, so the reading's side is the madhhab by their qiyās."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f002",
+   "encoder": "recourse_after_return",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "returned_by_gift": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "riwāya (Abū Bakr and others): he recovers the substitute of half",
+     "ruling": true
+    },
+    {
+     "who": "riwāya: nothing, «لأن عقد الهبة لا يقتضي ضمانا»",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The husband gave a specific thing as dower, the wife gave it back to him, then he divorced her («ثم طلقها») before consummation: does he recover the substitute of half? «على روايتين». It came back by gift, and the reading gives recourse. al-Inṣāf: «رجع عليها بنصفه. هذا المذهب. اختاره أبو بكر». Follow-on: a dower debt she released; Ibn Rajab: «أصحهما لا يرجع لأن ملكه لم يزل عنه», as the reading gives, though al-Inṣāf's madhhab gives recourse with release too (not annotated)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f003",
+   "encoder": "recourse_after_return",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "returned_by_gift": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "some aṣḥāb: on the khilāf of the qāʿida, he has recourse for the obligatory īṭāʾ (put first in al-Furūʿ)",
+     "ruling": true
+    },
+    {
+     "who": "al-Muwaffaq (al-Mughnī): none, «لأن إسقاطه عنه يقوم مقام إيتائه»",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "The master released his mukātab from the kitāba debt and he was freed: may the mukātab claim the obligatory īṭāʾ («الإيتاء الواجب»)? It came back by release, and the reading denies recourse, with al-Mughnī. al-Furūʿ puts the case with the masʾala whose madhhab gives the return («ومثله ... ورجوع مكاتب أبرئ من كتابته بالإيتاء، واختار الشيخ فيه: لا يرجع»), and al-Inṣāf reports that as «قدمه في الفروع. وضعف المصنف ذلك»: off the madhhab, in the ledger."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f004",
+   "encoder": "recourse_after_return",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "returned_by_gift": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "al-Qāḍī (al-Khilāf): the witnesses who retract stay liable, «وعود العين إلى الغارم من المحكوم له بهبة لا يوجب البراءة»",
+     "ruling": true
+    },
+    {
+     "who": "takhrīj (Ibn Rajab): liability falls if the usurper is freed by returning the property to its owner as a gift",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "Two witnesses for property, received by the claimant and then given back by him to the defendant, retract: are they liable? It came back by gift after receipt, and the reading keeps the claim. al-Inṣāf, from al-Mughnī: «ولو قبضه المشهود له، ثم وهبه المشهود عليه، ثم رجعا: غرما». Follow-on: a debt released before receipt, where they owe nothing «فلم يترتب على شهادتهما غرم», as the reading gives for a release."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f005",
+   "encoder": "recourse_after_return",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "returned_by_gift": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "ẓāhir of the aṣḥāb: the guarantor has no recourse against the principal debtor",
+     "ruling": false
+    },
+    {
+     "who": "takhrīj (Ibn Rajab): where he paid the debt in full and the creditor then gave it back, «فلا يبعد تخريجه على الوجهين»",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The guarantor paid the debt and the creditor, having received it, gave it back to him: has he recourse against the debtor? The record's case is payment in full followed by a gift, and the reading gives recourse. Sharḥ al-Muntahā takes exactly this as the settled base for a gift of the debt to the guarantor: «فيرجع على مضمون ... كما لو دفعه عنه ثم وهبه إياه». Ibn Rajab finds the aṣḥāb's denial clear in release and remission («لكن هذا في الإبراء والمسامحة ظاهر»), as the reading gives for a release."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f000",
+   "encoder": "delegating_work",
+   "class": "derivable",
+   "facts": {
+    "binding": true,
+    "personal_required": false,
+    "permission_indicated": false
+   },
+   "expected": true,
+   "note": "The common hired worker may delegate the work, «لأنه ضمن تحصيله لا عمله بنفسه». Ibn Rajab carries Aḥmad's naṣṣ that the tailor who passed the cloth to another is liable on a case where the circumstances show the contract was for his own skill (personal_required), and states «والمذهب الجواز بدون القرينة». Follow-on: the aṣḥāb's exception for work that differs in quality, partnership of labour, and hiring one who cannot do the work (two wajhs)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f001",
+   "encoder": "delegating_work",
+   "class": "derivable",
+   "facts": {
+    "binding": true,
+    "personal_required": false,
+    "permission_indicated": false
+   },
+   "expected": true,
+   "note": "Specified work given as dower, if valid, «فهو كالأجير المشترك»: a binding (lāzim) work in the dhimma, so it may be delegated. The record continues into the second kind, the agent (two known riwāyāt; delegation without dispute where he would not do it himself or cannot for its quantity, then two wajhs on all or only the excess)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f002",
+   "encoder": "delegating_work",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "binding": false,
+    "personal_required": false,
+    "permission_indicated": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "al-Talkhīṣ: no delegation without permission or custom, «بغير خلاف», for the slave's restricted capacity",
+     "ruling": false
+    },
+    {
+     "who": "al-Kāfī (and the jumhūr in bāb al-ḥajr): as the agent, on whose madhhab he may not delegate",
+     "ruling": false
+    },
+    {
+     "who": "al-Kāfī's ṭarīq, the agent's other riwāya: he may",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The slave permitted to trade: may he delegate what he would do himself? He acts by bare permission and none is indicated, so the reading denies it. al-Inṣāf builds it on the agent («وهما مبنيان على الخلاف في جواز توكيل الوكيل»), and of the agent: «ولا يجوز للوكيل التوكيل فيما يتولى مثله بنفسه. هذا المذهب»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f003",
+   "encoder": "delegating_work",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "binding": false,
+    "personal_required": false,
+    "permission_indicated": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "al-Kāfī: as the agent, on whose madhhab he may not delegate",
+     "ruling": false
+    },
+    {
+     "who": "the agent's other riwāya: he may",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The child permitted to trade is «كالوكيل ذكره في الكافي»: acting by permission with none indicated, the reading denies delegation, the agent's madhhab. al-Inṣāf adds «قلت: لو قيل بعدم جوازه مطلقا، لكان متجها». The record goes on to the partner and muḍārib, the guardian of the orphan, the ḥākim and the marriage guardian (their own records f004, f005)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f004",
+   "encoder": "delegating_work",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "binding": false,
+    "personal_required": false,
+    "permission_indicated": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "al-Qāḍī and most aṣḥāb: as the agent, on the khilāf in him (his madhhab: no)",
+     "ruling": false
+    },
+    {
+     "who": "al-Muḥarrar (jazm), Abū al-Khaṭṭāb (Ruʾūs al-Masāʾil): they may, their dealings' scope, quantity and length being «قرائن تدل على الإذن»",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The partner and the muḍārib delegating sale and purchase they would do themselves. Whether their contract's scope is an indication of permission is the point in dispute, not a stated fact; with no permission given the reading denies it, the first ṭarīq. al-Inṣāf: «وقد علمت الصحيح من المذهب: أنه لا يجوز للوكيل التوكيل ... فكذلك هنا»; al-Iqnāʿ of the partner: «وليس له أن يوكل فيما يتولى مثله بنفسه وهو كمضارب». Follow-on: Ibn ʿAqīl's farq between partner and muḍārib; the muḍārib giving the capital to another in muḍāraba (no, without explicit permission: naṣṣ; a riwāya permits)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f005",
+   "encoder": "delegating_work",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "binding": false,
+    "personal_required": false,
+    "permission_indicated": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "al-Qāḍī (al-Mujarrad, al-Khilāf): as the agent",
+     "ruling": false
+    },
+    {
+     "who": "al-Qāḍī (al-Aḥkām al-Sulṭāniyya), Ibn ʿAqīl, al-Muḥarrar, naṣṣ of Aḥmad (Muhannā): he may appoint a deputy «قولا واحدا»",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "May the ḥākim deputise another without permission? The khilāf is over what he could do himself; the second ṭarīq's grounds (he is the Muslims' nāẓir, not the imām's deputy; the burden of all the cases) are its claims, not stated facts of the case. With no permission the reading denies it, the first ṭarīq. al-Inṣāf: «وأما الحاكم: فقطع المصنف أيضا: أنه كالوكيل في جواز استنابة غيره. وهو المذهب». The record goes on to the marriage guardian (mujbir: may delegate; non-mujbir: two ṭarīqs)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f000",
+   "encoder": "eating_without_permission",
+   "class": "derivable",
+   "facts": {
+    "necessity": false,
+    "ward_wilaya": true,
+    "compensated_otherwise": false,
+    "unguarded_craved": false
+   },
+   "expected": true,
+   "note": "The orphan's guardian eats, in need, in proportion to his work: wilāya for the ward's benefit, not otherwise paid. Follow-on: repaying when he becomes rich (two riwāyāt), Ibn ʿAqīl's eating with or without need, and what the ḥākim assigns him, taken freely «بغير خلاف»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f001",
+   "encoder": "eating_without_permission",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "necessity": false,
+    "ward_wilaya": true,
+    "compensated_otherwise": false,
+    "unguarded_craved": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "al-Qāḍī, once: he does not eat, unlike the testator's executor (the father may pay an executor though a volunteer exists, the ḥākim may not)",
+     "ruling": false
+    },
+    {
+     "who": "al-Qāḍī, once: he eats like the father's executor, taken from Aḥmad's naṣṣ that the ḥākim takes a wage for judging «بقدر شغله»",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": false,
+   "note": "The ḥākim or his trustee administering an orphan's property. He holds a wilāya for the ward's benefit and the record states no other pay, so the reading lets him eat, al-Qāḍī's second view, which al-Mardāwī prefers («قلت: وهو الصواب»). The Muntahā and the Iqnāʿ exclude him («ولولي غير حاكم وأمينه الأكل لحاجة»), and al-Buhūtī gives the reason: «لأنهما يستغنيان بمالهما في بيت المال»: off the madhhab, in the ledger. Follow-on: the father, who per al-Qāḍī eats by right of appropriation, not for his work (Taqī al-Dīn weakened it)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f002",
+   "encoder": "eating_without_permission",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "necessity": false,
+    "ward_wilaya": true,
+    "compensated_otherwise": false,
+    "unguarded_craved": false
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "Aḥmad (Abū al-Ḥārith; Ḥarb): «إن أكل منه بالمعروف فلا بأس»",
+     "ruling": true
+    },
+    {
+     "who": "Aḥmad (al-Maymūnī), by mafhūm: «وليه يأكل منه بالمعروف إذا اشترط ذلك», so not without the stipulation",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The administrator of a waqf or charity (ṣadaqa, «ناظر الوقف والصدقات»). Where the founder stipulated it (al-shurūṭ fīhā) all agree; the khilāf arises where he did not, and that branch is annotated: a wilāya for the beneficiaries, with no pay, so the reading lets him eat. al-Iqnāʿ: «ويأكل ناظر وقف بمعروف نصا إذا لم يشترط الواقف له شيئا»; the Muntahā: «ولناظر وقف ولو لم يحتج أكل بمعروف». Follow-on: the agent for distributing alms eats nothing, «لأنه منفذ»."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f003",
+   "encoder": "eating_without_permission",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "necessity": false,
+    "ward_wilaya": true,
+    "compensated_otherwise": true,
+    "unguarded_craved": false
+   },
+   "expected": false,
+   "positions": [
+    {
+     "who": "al-maʿrūf: neither eats, «لاستغنائهما عنه بطلب الأجرة من المؤجر والموكل»",
+     "ruling": false
+    },
+    {
+     "who": "Aḥmad (Ḥanbal) on the guardian and executor «بمنزلة الوكيل والأجير»; al-Qāḍī: «وظاهر هذا جواز الأكل للوكيل»",
+     "ruling": true
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "The agent and the hired worker: the text states they can be paid by their principal («لاستغنائهما عنه بطلب الأجرة ... لا سيما والأجير قد أخذ الأجرة على عمله»), so the reading denies them, al-maʿrūf. al-Inṣāf reports al-Qāḍī's farq «لأنه لا يمكنه موافقته على الأجرة. والوكيل يمكنه». The record goes on to the second type (no wilāya): eating in need «بلا نزاع», and otherwise from what souls crave unguarded, as food in enemy territory and fodder (riwāyāt and ṭarīqas on mounts for trade or hunting, on the imām's securing it, on returning the surplus)."
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f004",
+   "encoder": "eating_without_permission",
+   "class": "genuine_ikhtilaf",
+   "facts": {
+    "necessity": false,
+    "ward_wilaya": false,
+    "compensated_otherwise": false,
+    "unguarded_craved": true
+   },
+   "expected": true,
+   "positions": [
+    {
+     "who": "«الصحيح المشهور من المذهب»: he eats from it with need or without and does not carry, fallen or on the tree",
+     "ruling": true
+    },
+    {
+     "who": "riwāya: only in need",
+     "ruling": false
+    },
+    {
+     "who": "riwāya (not affirmed by al-Qāḍī): only the fallen fruit, not what is on the tree",
+     "ruling": false
+    }
+   ],
+   "matches_madhhab": true,
+   "note": "Passing fruit with no wall and no watchman. Unguarded and craved, so the reading lets him eat without need. al-Inṣāf: «هذا المذهب مطلقا ... قال في القاعدة الحادية والسبعين: هذا الصحيح المشهور من المذهب». Follow-on: on the madhhab, crops and the milk of grazing animals (two riwāyāt)."
+  }
+ ]
+}

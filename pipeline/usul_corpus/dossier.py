@@ -59,7 +59,7 @@ def render_dossier(d: dict, records: dict[str, dict], glossary: dict[str, dict])
             + "\n".join(entry(e) for e in d["entries"]))
 
 
-def render_glossary(g: dict, records: dict[str, dict]) -> str:
+def render_glossary(g: dict, records: dict[str, dict], footer: str = "") -> str:
     def term(t: dict) -> str:
         return "\n".join([
             f"<a id=\"{t['key']}\"></a>\n\n## {t['tr']} ({t['ar']})",
@@ -77,4 +77,5 @@ def render_glossary(g: dict, records: dict[str, dict]) -> str:
     terms = sorted(g["terms"], key=lambda t: t["key"])
     return (HEADER.format(src="corpus/dossier/glossary.json")
             + f"# Glossary\n\nStatus: `{g['status']}`. {g['provenance']}\n\n"
-            + "\n".join(term(t) for t in terms))
+            + "\n".join(term(t) for t in terms)
+            + (f"\n---\n\n{footer}\n" if footer else ""))

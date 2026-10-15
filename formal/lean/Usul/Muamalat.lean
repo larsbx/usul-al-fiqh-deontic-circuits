@@ -137,8 +137,8 @@ theorem q14_fault_makes_trustee_liable (t n : Bool) (h : t = true ∨ n = true) 
     lossLiable .trustee t n = true := by
   rcases h with h | h <;> simp [lossLiable, h]
 
-/-! ## Q18 / Q19 — fungibles are compensated in kind, others by value; an unattainable
-stipulated price reverts to value -/
+/-! ## Q18 / Q19 — ḍamān: fungibles by their like, others by value; an unattainable
+named price (al-musammā, «إذا تعذر المسمى رجع إلى القيمة») reverts to value -/
 
 inductive Good where
   | fungible | valued
@@ -160,7 +160,7 @@ def priceDue (stipulated : Option Nat) (value : Nat) : Nat := stipulated.getD va
 theorem q19_unattainable_reverts_to_value (v : Nat) : priceDue none v = v := rfl
 theorem q19_stipulated_binds (p v : Nat) : priceDue (some p) v = p := rfl
 
-/-- Q19 is S2: the stipulated price, falling back to value. -/
+/-- Q19 is S2: the named price (al-musammā), falling back to value. -/
 theorem q19_is_priority (s : Option Nat) (v : Nat) : priceDue s v = resolveD [s] v := by
   cases s <;> rfl
 
@@ -261,7 +261,7 @@ theorem q26_q43_from_presumption (h : HeldFor) (c : Bool) :
     returnClaimAccepted h c = (burdenOf (returnPresumption h c) true == .yamin) := by
   cases h <;> cases c <;> rfl
 
-/-! ## Q35 — whoever escapes punishment for a reason owes doubled compensation -/
+/-! ## Q35 — whoever escapes punishment for a reason owes doubled ḍamān («ضوعف عليه الضمان») -/
 
 def compensationOwed (value : Nat) (punishmentLapsed : Bool) : Nat :=
   if punishmentLapsed then 2 * value else value
@@ -315,7 +315,7 @@ theorem q47_vow_as_law : obligationStatus .vow = obligationStatus .sharia := rfl
 theorem q47_ignores_source : Factors obligationStatus (fun _ => ()) :=
   Factors.of_eq (fun _ => .wajib) fun _ => rfl
 
-/-- … so every ruling computed from the status (making up, expiation, sin of omission, …)
+/-- … so every ruling computed from the status (making up, kaffāra, sin of omission, …)
 is the same for a vow as for the law. -/
 theorem q47_consequences {β : Type} (g : Hukm → β) :
     g (obligationStatus .vow) = g (obligationStatus .sharia) :=
@@ -328,7 +328,7 @@ def surplus (assets basicNeeds : Nat) : Nat := assets - basicNeeds
 theorem q49_needs_excluded (a n : Nat) : surplus a n + min a n = a := by
   unfold surplus; omega
 
-/-! ## Q53 — a contract that proves void voids what was built on it; a voluntary rescission
+/-! ## Q53 — when a contract proves fāsid, what was built on it is bāṭil («إذا تبين فساد العقد، بطل ما بني عليه»); a voluntary rescission
 leaves earlier dependent contracts standing -/
 
 inductive Ending where
@@ -346,7 +346,7 @@ section Voiding
 
 variable {C : Type}
 
-/-- Q53 is S4: the void contracts are the closure of those proved void under "built on". -/
+/-- Q53 is S4: the bāṭil contracts are the closure of those proved fāsid under "built on". -/
 def Voided (builtOn : C → C → Prop) (ending : C → Option Ending) : C → Prop :=
   Closure builtOn (fun c => ending c = some .provedVoid)
 
@@ -354,7 +354,7 @@ theorem q53_void_propagates {builtOn : C → C → Prop} {ending : C → Option 
     (ha : Voided builtOn ending a) (h : builtOn a b) : Voided builtOn ending b :=
   .step ha h
 
-/-- Rescinding a contract (that was not proved void) voids nothing: the closure is unchanged. -/
+/-- Rescinding a contract (not proved fāsid) makes nothing bāṭil: the closure is unchanged. -/
 theorem q53_rescission_inert [DecidableEq C] (builtOn : C → C → Prop) (ending : C → Option Ending)
     (c₀ : C) (h₀ : ending c₀ ≠ some .provedVoid) (c : C) :
     Voided builtOn (fun c => if c = c₀ then some .rescinded else ending c) c ↔ Voided builtOn ending c := by
@@ -399,18 +399,38 @@ theorem q55_confession_absorbs (pre post : List Plea) :
   rw [List.foldl_append, List.foldl_cons]
   exact inert_fold plead (· = true) true rfl post fun e _ s hs => by subst hs; cases e <;> rfl
 
-/-! ## Q56 — the heir stands in the deceased's place for the estate, except the listed rights -/
+/-! ## Q56 — the heir stands in the deceased's place in everything of the estate
+
+The statement goes on «إلا ما استثني من خيار الشرط والشفعة إذا لم يطالب المورث في قول ضعيف».
+The mashhūr from Aḥmad excepts the two; al-Saʿdī: «والصحيح: أنها مثل غيرها؛ لأن المقصود واحد …
+وما قيل فيها من التعليل موجود في غيرها», and again in the furūq (F37): «من الفروق الضعيفة جداً».
+Where the madhhab is divided the position is a parameter; `sahih` is al-Saʿdī's, and the rule as
+he states it. -/
 
 inductive EstateRight where
   | ownership | debtClaim | khiyarShart | shufaUnclaimed
   deriving DecidableEq, Repr
 
-def inherits : EstateRight → Bool
-  | .khiyarShart | .shufaUnclaimed => false
-  | _ => true
+inductive Q56Reading where
+  | sahih | mashhur
+  deriving DecidableEq, Repr
 
-theorem q56_exceptions_only (r : EstateRight) :
-    inherits r = false ↔ r = .khiyarShart ∨ r = .shufaUnclaimed := by
+def inherits : Q56Reading → EstateRight → Bool
+  | .mashhur, .khiyarShart | .mashhur, .shufaUnclaimed => false
+  | _, _ => true
+
+/-- al-Saʿdī: the heir inherits every right of the estate. -/
+theorem q56_heir_in_everything (r : EstateRight) : inherits .sahih r = true := by
+  cases r <;> rfl
+
+/-- The mashhūr, which he calls weak: everything but khiyār al-sharṭ and an unclaimed shufʿa. -/
+theorem q56_mashhur_exceptions (r : EstateRight) :
+    inherits .mashhur r = false ↔ r = .khiyarShart ∨ r = .shufaUnclaimed := by
+  cases r <;> simp [inherits]
+
+/-- The two readings part exactly on the two rights the mashhūr excepts. -/
+theorem q56_readings_differ_iff (r : EstateRight) :
+    inherits .sahih r ≠ inherits .mashhur r ↔ r = .khiyarShart ∨ r = .shufaUnclaimed := by
   cases r <;> simp [inherits]
 
 /-! ## Q30 — a refusing co-owner is compelled to what the common holding necessarily requires -/

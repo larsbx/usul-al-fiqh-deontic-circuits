@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Apparent contradictions inside the bank, resolved by the bank",
+  "type": "object",
+  "required": [
+    "register",
+    "method",
+    "witness",
+    "module",
+    "lean",
+    "proved_earlier",
+    "pairs"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "register": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string"
+    },
+    "witness": {
+      "type": "string"
+    },
+    "module": {
+      "type": "string"
+    },
+    "lean": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "proved_earlier": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "rules",
+          "lean"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "rules": {
+            "$ref": "#/$defs/pair"
+          },
+          "lean": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          }
+        }
+      }
+    },
+    "pairs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "rules",
+          "case_en",
+          "resolution",
+          "qayd_en",
+          "author",
+          "reading_rules",
+          "lean",
+          "table"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^T-[0-9]{2}$"
+          },
+          "rules": {
+            "$ref": "#/$defs/pair"
+          },
+          "case_en": {
+            "type": "string"
+          },
+          "resolution": {
+            "enum": [
+              "jam",
+              "naskh",
+              "tarjih",
+              "tawaqquf"
+            ]
+          },
+          "qayd_en": {
+            "type": "string"
+          },
+          "author": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "ref",
+                "excerpt_ar"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "ref": {
+                  "type": "string",
+                  "pattern": "^src:[a-z0-9-]+#q[0-9]{3}$"
+                },
+                "excerpt_ar": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "reading_rules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/rule"
+            }
+          },
+          "lean": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "table": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "required": [
+                "case",
+                "first",
+                "second",
+                "jam"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "case": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": [
+                      "string",
+                      "boolean",
+                      "integer"
+                    ]
+                  }
+                },
+                "first": {
+                  "type": [
+                    "string",
+                    "boolean",
+                    "integer"
+                  ]
+                },
+                "second": {
+                  "type": [
+                    "string",
+                    "boolean",
+                    "integer"
+                  ]
+                },
+                "jam": {
+                  "type": [
+                    "string",
+                    "boolean",
+                    "integer"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "rule": {
+      "oneOf": [
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 160,
+          "description": "a qāʿida of the register's own work"
+        },
+        {
+          "type": "string",
+          "pattern": "^[a-z_]+\\.[a-z_]+:[0-9]+$",
+          "description": "a qāʿida of another work in the bank, work:number"
+        }
+      ]
+    },
+    "pair": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/rule"
+      },
+      "minItems": 2,
+      "maxItems": 2
+    }
+  }
+}

@@ -1,0 +1,1355 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "set": "r2_sample1",
+  "method": "blind typing into Usul.Typing situations, Prolog coverage, then the hybrid: types first, lexical rank breaking ties and ordering the rest; a proposal for lane B, not a ruling",
+  "sample": {
+    "openiti-abudawud-masailahmad-shamela21487": 10,
+    "openiti-harb-masail-shamela12527": 10,
+    "openiti-kawsaj-masailahmad-shamela3125": 10,
+    "openiti-hajjawi-zadmustaqni-shamela11230": 5,
+    "openiti-ibnqudama-umda-shamela11315": 5
+  },
+  "units": 40,
+  "typed": 11,
+  "encoders_proposed_by_type": 14,
+  "units_detail": [
+    {
+      "unit": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00052",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "hair_detached",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "rukhsa_under_doubt",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "prohibited_worship",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "delegating_work",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00196",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "repeat_bearing_roots_as_trees",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "settles_without_ability",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "istihlak",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "removal_before_knowledge",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00355",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "custom_restricts_general",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "delegating_work",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "unknown_owner",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "unknown_as_nonexistent",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00529",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "many_over_noble",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "tadakhul",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "custom_restricts_general",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "hastened_right_forfeited",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00649",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "disposal_over_anothers_right",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "umum_lafz",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "disposal_before_qabd_debt",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "combining_forms",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "many_over_noble",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00683",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "disposal_before_qabd_debt",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "many_over_noble",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "handover_by_description",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "umum_lafz",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01051",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "urf_specialises_general",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "intention_shapes_wording",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "cause_restricts_general",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "shar_specialises_general",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01087",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "specific_singled_out",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "injury_state_measures",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "hand_with_owner_liable",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "delegating_work",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "aqila_bears_across_change",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01254",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "mixed_haram_by_proportion",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "prohibited_worship",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "common_amount_general",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "many_over_noble",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m01272",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "eating_without_permission",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "generality",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "disposal_before_qabd_debt",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "wording_in_other_tongue",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "harb.masail.openiti_harb_masail_shamela12527.m00014",
+      "situations": 1,
+      "typed": true,
+      "proposals": [
+        {
+          "encoder": "simultaneous_combination_voids",
+          "settled": [
+            1,
+            1
+          ],
+          "lexical_rank": 69
+        },
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "annulment_without_return",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "many_over_noble",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "intention_shapes_wording",
+          "settled": null,
+          "lexical_rank": 4
+        }
+      ]
+    },
+    {
+      "unit": "harb.masail.openiti_harb_masail_shamela12527.m00100",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "budh_capacity_is_wealth",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "concurrent_causes",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "defective_compensation",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "alternative_proven_alone",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "ruling_with_bar",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "harb.masail.openiti_harb_masail_shamela12527.m00102",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "intention_shapes_wording",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "disposal_before_qabd_debt",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "many_over_noble",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "dispose_without_judge",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "harb.masail.openiti_harb_masail_shamela12527.m00196",
+      "situations": 1,
+      "typed": true,
+      "proposals": [
+        {
+          "encoder": "lots",
+          "settled": [
+            1,
+            3
+          ],
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "shared_name_insha_valid",
+          "settled": [
+            1,
+            3
+          ],
+          "lexical_rank": 44
+        },
+        {
+          "encoder": "cause_from_one_of_two",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "abstention_under_possible_condition",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "common_amount_general",
+          "settled": null,
+          "lexical_rank": 4
+        }
+      ]
+    },
+    {
+      "unit": "harb.masail.openiti_harb_masail_shamela12527.m00245",
+      "situations": 3,
+      "typed": true,
+      "proposals": [
+        {
+          "encoder": "unknown_order_judged_sequential",
+          "settled": [
+            1,
+            2
+          ],
+          "lexical_rank": 112
+        },
+        {
+          "encoder": "abstention_under_possible_condition",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "entitlement_multiplies",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "ruling_with_bar",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "growth_from_substance",
+          "settled": null,
+          "lexical_rank": 4
+        }
+      ]
+    },
+    {
+      "unit": "harb.masail.openiti_harb_masail_shamela12527.m00283",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "recourse",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "recourse_after_return",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "many_over_noble",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "umum_lafz",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "harb.masail.openiti_harb_masail_shamela12527.m00323",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "excused_error",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "desisting_at_once",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "prohibited_worship",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "luqata",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "lots",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "harb.masail.openiti_harb_masail_shamela12527.m00390",
+      "situations": 3,
+      "typed": true,
+      "proposals": [
+        {
+          "encoder": "other_option_stands",
+          "settled": [
+            1,
+            1
+          ],
+          "lexical_rank": 118
+        },
+        {
+          "encoder": "many_over_noble",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "disposal_before_qabd_debt",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "command_intended_usage",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "command_nonverbal_usage",
+          "settled": null,
+          "lexical_rank": 4
+        }
+      ]
+    },
+    {
+      "unit": "harb.masail.openiti_harb_masail_shamela12527.m00435",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "disposal_before_qabd_debt",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "many_over_noble",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "umum_lafz",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "combining_forms",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "harb.masail.openiti_harb_masail_shamela12527.m00465",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "disposal_before_qabd_debt",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "many_over_noble",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "umum_lafz",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "disposal_over_anothers_right",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00029",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "hair_detached",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "rukhsa_under_doubt",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "istihlak",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "mistaken_basis",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "excused_error",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00425",
+      "situations": 1,
+      "typed": true,
+      "proposals": [
+        {
+          "encoder": "substitute",
+          "settled": [
+            1,
+            1
+          ],
+          "lexical_rank": 161
+        },
+        {
+          "encoder": "substitute_at_obligation",
+          "settled": [
+            1,
+            2
+          ],
+          "lexical_rank": 25
+        },
+        {
+          "encoder": "combining_forms",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "many_over_noble",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 3
+        }
+      ]
+    },
+    {
+      "unit": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00518",
+      "situations": 1,
+      "typed": true,
+      "proposals": [
+        {
+          "encoder": "substitute",
+          "settled": [
+            1,
+            1
+          ],
+          "lexical_rank": 162
+        },
+        {
+          "encoder": "substitute_at_obligation",
+          "settled": [
+            1,
+            2
+          ],
+          "lexical_rank": 40
+        },
+        {
+          "encoder": "tadakhul",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "prohibited_worship",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "excess_in_following",
+          "settled": null,
+          "lexical_rank": 3
+        }
+      ]
+    },
+    {
+      "unit": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00549",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "split_halves_suffice",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "recourse_after_return",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "performed_without_leave_owned",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "prohibited_worship",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00642",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "shared_right_accrues_to_rest",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "distribution_each_over_whole",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "tabaa",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "many_over_noble",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "performed_without_leave_owned",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00653",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "command_intended_usage",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "command_nonverbal_usage",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "command_obligation_status",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "command_prophetic_act_usage",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "amr_mixed",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00887",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "shar_specialises_general",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "ruling_with_bar",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "manumission_spread",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "tabaa",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00945",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "cancel_on_existence_valid",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "combination_bars_its_amount",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "refusal_compelled_to_choose",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "concurrent_condition",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "simultaneous_combination_voids",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m01212",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "urf_specialises_general",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "cause_restricts_general",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "distribution_each_over_whole",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "advanced_worship",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "unknown_condition",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m03427",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "tadakhul",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "needed_item_is_surplus",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "free_bestowal_of_needed_benefit",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "custom_restricts_general",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "advanced_kaffara_at_obligation",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00060",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "vowed_as_shar_obligation",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "makeup_after_failure",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "umum_lafz",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "prohibited_worship",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "generality",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00111",
+      "situations": 2,
+      "typed": true,
+      "proposals": [
+        {
+          "encoder": "nafaqa_stipulated_in_contract",
+          "settled": [
+            1,
+            2
+          ],
+          "lexical_rank": 26
+        },
+        {
+          "encoder": "nafaqa_taken_owned",
+          "settled": [
+            1,
+            2
+          ],
+          "lexical_rank": 60
+        },
+        {
+          "encoder": "wage_without_stipulation",
+          "settled": [
+            1,
+            2
+          ],
+          "lexical_rank": 76
+        },
+        {
+          "encoder": "benefit_then_thing",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "taker_from_usurper",
+          "settled": null,
+          "lexical_rank": 2
+        }
+      ]
+    },
+    {
+      "unit": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00179",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "implicit_exception",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "shar_specialises_general",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "unknown_order_judged_sequential",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "injury_state_measures",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "eating_without_permission",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00236",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "qisas_belongs_to_whom",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "injury_state_measures",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "doubled",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "ghulul_forfeiture",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "alternative_proven_alone",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00259",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "taliq_al_bay",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "hukm_against_own_ijtihad",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "umum_lafz",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "doubt_in_condition",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "excused_error",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00098",
+      "situations": 0,
+      "typed": false,
+      "proposals": [
+        {
+          "encoder": "mubashara_tasabbub",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "repeat_bearing_roots_as_trees",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "split_halves_suffice",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "taker_from_usurper",
+          "settled": null,
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "ruling_with_bar",
+          "settled": null,
+          "lexical_rank": 5
+        }
+      ]
+    },
+    {
+      "unit": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00108",
+      "situations": 2,
+      "typed": true,
+      "proposals": [
+        {
+          "encoder": "growth_from_substance",
+          "settled": [
+            1,
+            1
+          ],
+          "lexical_rank": 4
+        },
+        {
+          "encoder": "successive_contracts",
+          "settled": [
+            1,
+            1
+          ],
+          "lexical_rank": 169
+        },
+        {
+          "encoder": "successive_by_binding",
+          "settled": [
+            1,
+            3
+          ],
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "occurrence_state_governs",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "cancel_on_existence_valid",
+          "settled": null,
+          "lexical_rank": 3
+        }
+      ]
+    },
+    {
+      "unit": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00151",
+      "situations": 2,
+      "typed": true,
+      "proposals": [
+        {
+          "encoder": "forbidden_cause_voided",
+          "settled": [
+            1,
+            2
+          ],
+          "lexical_rank": 16
+        },
+        {
+          "encoder": "disposal_before_qabd_debt",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "generality",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "mixed_haram_by_proportion",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "combining_forms",
+          "settled": null,
+          "lexical_rank": 4
+        }
+      ]
+    },
+    {
+      "unit": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00176",
+      "situations": 2,
+      "typed": true,
+      "proposals": [
+        {
+          "encoder": "substitute",
+          "settled": [
+            1,
+            1
+          ],
+          "lexical_rank": 165
+        },
+        {
+          "encoder": "substitute_at_obligation",
+          "settled": [
+            1,
+            2
+          ],
+          "lexical_rank": 55
+        },
+        {
+          "encoder": "combining_forms",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "generality",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "umum_lafz",
+          "settled": null,
+          "lexical_rank": 3
+        }
+      ]
+    },
+    {
+      "unit": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00196",
+      "situations": 1,
+      "typed": true,
+      "proposals": [
+        {
+          "encoder": "lots",
+          "settled": [
+            1,
+            3
+          ],
+          "lexical_rank": 9
+        },
+        {
+          "encoder": "right_for_or_against_self",
+          "settled": null,
+          "lexical_rank": 1
+        },
+        {
+          "encoder": "vague_report_accepted",
+          "settled": null,
+          "lexical_rank": 2
+        },
+        {
+          "encoder": "hand_with_owner_liable",
+          "settled": null,
+          "lexical_rank": 3
+        },
+        {
+          "encoder": "right_on_refuser_exacted",
+          "settled": null,
+          "lexical_rank": 4
+        }
+      ]
+    }
+  ]
+}

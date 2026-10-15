@@ -108,6 +108,52 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
                 errs.append(f"{f}: a jamʿ must land on the prevailing side")
         if c.get("matches_madhhab") and not e.get("jam"):
             errs.append(f"{f}: matches the madhhab without a jamʿ; nothing to reconcile")
+    for c in cases:
+        if "side_check" not in c:
+            continue
+        sc = c["side_check"]
+        f = c["far"]
+        if sc.get("from_matches") is not True or c.get("matches_madhhab") is not False or c["class"] != "genuine_ikhtilaf":
+            errs.append(f"{f}: a failed side check preserves a true original annotation and a false current match")
+        e = entries.get(f)
+        if e is None:
+            errs.append(f"{f}: a failed side check must enter the ledger")
+            continue
+        ev = e.get("evidence", [])
+        refs = sc.get("refs", [])
+        if not refs or len(set(refs)) != len(refs) or not set(refs) <= {v["ref"] for v in ev}:
+            errs.append(f"{f}: a side check cites only the ledger's own evidence")
+            continue
+        witnesses = sc.get("contradictions", [])
+        indices = [w.get("evidence_index") for w in witnesses]
+        if (not witnesses or any(type(i) is not int or not 0 <= i < len(ev) for i in indices)
+                or len(set(indices)) != len(indices)):
+            errs.append(f"{f}: a side check needs distinct exact evidence items")
+            continue
+        selected = [ev[i] for i in indices]
+        if set(refs) != {v["ref"] for v in selected}:
+            errs.append(f"{f}: side-check refs must identify exactly the selected evidence")
+        if any(w.get("case_facts") != c["facts"] or not isinstance(w.get("rationale"), str)
+               or not w["rationale"].strip() for w in witnesses):
+            errs.append(f"{f}: contradiction evidence needs case-specific facts and an applicability rationale")
+        ps = c["positions"]
+        if any(type(v.get("position")) is not int or not 0 <= v["position"] < len(ps)
+               or v.get("grade") not in {"tashih", "jazm"} for v in selected):
+            errs.append(f"{f}: contradiction evidence needs a listed position and later tashih or jazm")
+            continue
+        rulings = [p["ruling"] for p in ps]
+        pairs = [(ps[v["position"]]["ruling"], v["grade"]) for v in selected]
+        winner = prevail(pairs)
+        if (c["expected"] not in rulings or any(r == c["expected"] for r, _ in pairs)
+                or winner is None):
+            errs.append(f"{f}: cited evidence must establish an unambiguous ruling against the original side")
+        # A selected subset cannot override a tie or a contrary outcome in the full ledger.
+        if (len(e["grades"]) == len(ps) and all(g in GRADES for gs in e["grades"] for g in _grades(gs))
+                and all(type(v.get("position")) is int and 0 <= v["position"] < len(ps)
+                        and v.get("grade") in GRADES for v in ev)):
+            stage, ruling = resolve(c, e)
+            if stage != "tarjih" or ruling != winner or ruling == c["expected"]:
+                errs.append(f"{f}: the full ledger must confirm the cited contradiction by tarjih")
     for enc, cs in jams.items():
         frm = {entries[c["far"]]["jam"]["from"] for c in cs}
         if len(frm) != 1:
@@ -157,6 +203,8 @@ def report(cases: list[dict], ledger: dict) -> dict:
         if standing(c, e) == "against_reading":
             residues.setdefault(c["encoder"], []).append(c["far"])
     return {"entries": len(rows),
+            "evidence_items": sum(len(e.get("evidence", [])) for e, _ in rows),
+            "side_checks": sorted(c["far"] for _, c in rows if "side_check" in c),
             "stages": dict(sorted(Counter(resolve(c, e)[0] for e, c in rows).items())),
             "standing": dict(sorted(Counter(standing(c, e) for e, c in rows).items())),
             "worklist": dict(sorted(residues.items(), key=lambda kv: (-len(kv[1]), kv[0]))),
@@ -172,7 +220,7 @@ def marked_for_reading(case: dict, entry: dict) -> bool:
 
 
 # Drafting aid for new tranches: a grade proposed from the annotator's `who`, for review.
-_DRAFT = (("tashih", r"madhhab|mashh|ashhar|aṣaḥḥ|ṣaḥīḥ|sahih|aẓhar|azhar"),
+_DRAFT = (("tashih", r"madhhab|mashh|ashhar|aṣaḥḥ|ṣaḥīḥ|sahih"),
           ("nass", r"naṣṣ|nass|manṣūṣ|mansus|riwāya|riwaya|Aḥmad \(|^Aḥmad"),
           ("zahir", r"ẓāhir (of|kalām) Aḥmad|zahir kalam Ahmad|apparent text of Ahmad"),
           ("qiyas", r"qiyās al-madhhab"),

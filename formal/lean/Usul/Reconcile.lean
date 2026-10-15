@@ -13,10 +13,11 @@ the madhhab disagree. The bank works it through its own `Usul.resolve`, in the k
 * *tawaqquf*: otherwise.
 
 Grades follow the annotation convention's marked sides, strongest first: taṣḥīḥ (a position
-labelled «المذهب», «الصحيح», «المشهور», «الأشهر», «الأظهر»), naṣṣ (a riwāya or manṣūṣ of
+labelled «المذهب», «الصحيح», «المشهور», «الأشهر»), naṣṣ (a riwāya or manṣūṣ of
 Aḥmad), ẓāhir of Aḥmad's words, qiyās al-madhhab, the jazm of al-Qāḍī and his followers (or
 of most aṣḥāb), then the unmarked: one named companion's choice, a takhrīj, a bare wajh or
-iḥtimāl.
+iḥtimāl. An author’s own «الأظهر» or «الصواب» is a named choice, not by itself
+a madhhab taṣḥīḥ; attribution and context must be reviewed.
 -/
 
 namespace Usul.Reconcile

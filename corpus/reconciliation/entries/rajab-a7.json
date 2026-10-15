@@ -1,0 +1,116 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f001",
+      "grades": [
+        "wajh",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "An unnamed wajh (the reading's sharʿ side, which al-Inṣāf reports as the jumhūr's) against Abū Bakr's choice, which the Muntahā and the Iqnāʿ state for the vowed udhiya.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p104",
+          "excerpt_ar": "أصح الوجهين. لكن جمهور الأصحاب على خلاف ذلك.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "After reporting Abū Bakr's, al-Qāḍī's and al-Muwaffaq's permission to eat from the vowed udhiya: the jumhūr of the aṣḥāb hold otherwise (no eating)."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p196",
+          "excerpt_ar": "صدقة بثمنها وسن أن يأكل منها ويهدي ويتصدق أثلاثا حتى من واجبة ولكافر من",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "On the udhiya, which «وتجب بنذر»: eating a third is sunna even from an obligatory one."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p408",
+          "excerpt_ar": "كان تطوعا والصدقة بثلثها ولو كانت منذورة أو معينة ويستحب أن يتصدق",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "On the udhiya: the sunna of eating, gifting and giving a third holds even if it is vowed or designated."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f003",
+      "grades": [
+        "wajh",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": {
+        "ruling": false,
+        "ref": "src:openiti-insaf-shamela21609/v03:p352",
+        "note": "On fasting the days of tashrīq for an obligation, al-Inṣāf reports al-Zarkashī: «وهي التي ذهب إليها أحمد أخيرا» of the riwāya barring it, a reported chronology. al-Inṣāf (v11:p124) ties the vowed fast to that question, so the later riwāya covers it: naskh by the bank's rule (a later riwāya with reported chronology), ahead of tarjīḥ. The outcome is unchanged (against the reading)."
+      },
+      "note": "An unnamed wajh (the reading's sharʿ side, resting on Aḥmad's riwāya permitting the vowed fast in tashrīq) against Ibn ʿAqīl's «كنذر المعصية», which the Muntahā and the Iqnāʿ state; Aḥmad's other riwāya, barring any farḍ fast in tashrīq, is reported by al-Zarkashī as his last. Register sweep: resolved by naskh (al-Zarkashī's chronology), not tarjīḥ.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v02:p204",
+          "excerpt_ar": "أحمد أجاز صوم النذر في أيام التشريق، على إحدى الروايتين، مع تأكد الصوم.",
+          "position": 0,
+          "grade": "nass",
+          "who": "Aḥmad's riwāya, cited by al-Qāḍī (al-Khilāf) in al-Inṣāf",
+          "note": "al-Qāḍī's ground for performing a vowed prayer in a time of prohibition: Aḥmad permitted the vowed fast in the days of tashrīq, on one of two riwāyas."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p352",
+          "excerpt_ar": "وابن رزين في شرحه. قال الزركشي: وهي التي ذهب إليها أحمد أخيرا، وجزم به",
+          "position": 1,
+          "grade": "nass",
+          "who": "Aḥmad's riwāya, reported by al-Zarkashī in al-Inṣāf",
+          "note": "On fasting the days of tashrīq for a farḍ: the riwāya «لا يجوز» is the one Aḥmad went to last; al-Inṣāf (v11:p124) makes the vow of them a vow of the ʿīd fast on that riwāya."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v05:p253",
+          "excerpt_ar": "كشرب خمر وصوم يوم عيد أو حيض أو أيام التشريق فيحرم الوفاء به ويكفر من لم",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "The vow of sin, among whose examples the fast of the days of tashrīq: its fulfilment is forbidden and he expiates."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p358",
+          "excerpt_ar": "وأيام التشريق فلا يجوز الوفاء به ويقضى الصوم ويكفر فإن وفى به أثم ولا",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The vow of sin, among whose examples the days of tashrīq: it may not be fulfilled; the fast is made up and he expiates."
+        }
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f009",
+      "grades": [
+        "nass",
+        "jazm"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "A riwāya of Aḥmad (the reading, under the attached qāʿida) against al-Khiraqī's jazm, which al-Inṣāf makes the madhhab and the Muntahā states.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p299",
+          "excerpt_ar": "قوله (وللثاني أن ينكحها بعد انقضاء العدتين) . هذا المذهب. جزم به في",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The second husband who married her in her ʿidda may marry her after both ʿiddas: «هذا المذهب»; the riwāya of perpetual prohibition follows as «وعنه»."
+        },
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p408",
+          "excerpt_ar": "أن ينكحها بعد العدتين وتتعدد بتعدد واطئ بشبهة لا بزنا وكذا أمة في",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "Of the woman married in her ʿidda: «وللثاني أن ينكحها بعد العدتين»."
+        }
+      ]
+    }
+  ]
+}

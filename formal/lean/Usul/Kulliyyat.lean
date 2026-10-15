@@ -164,7 +164,7 @@ theorem q34_other_iff_optimal {α : Type} (options : List α) (interest : α →
   · intro ⟨hm, h⟩
     exact ⟨hm, fun _ y hy => Int.ofNat_le.mp (h y hy)⟩
 
-/-! ## Q39 — worship and expiations may not precede the cause of obligation, but may precede
+/-! ## Q39 — worship and kaffārāt may not precede the cause of obligation, but may precede
 its condition once the cause exists -/
 
 /-- Performance at time `t`, cause at `cause`, condition at `cond`. -/

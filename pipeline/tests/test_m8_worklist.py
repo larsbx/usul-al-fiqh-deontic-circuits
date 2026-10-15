@@ -27,7 +27,7 @@ def test_worklist_is_generated_and_its_denominators_reconcile_independently():
     covered = {c["far"] for c in takhrij.load(CORPUS)} & fars.keys()
     pending = fars.keys() - covered
     summary = inventory["summary"]
-    assert summary["segmented_furu"] == len(fars) == 1179
+    assert summary["segmented_furu"] == len(fars) == 1189  # 1179 + the 10 PR-30 recovered
     assert summary["annotated_furu"] == len(covered)
     assert summary["pending_furu"] == len(pending)
     assert summary["qawaid_awaiting_annotation"] == len({fars[i] for i in pending})
@@ -112,7 +112,8 @@ def test_selected_tranche_has_exact_obligations_and_open_human_review():
     checked = (ROOT / "formal/lean/UsulTest/SignatureMap.lean").read_text()
     for q in plan["selection"]:
         assert all(f"#check @{n}\n" in checked for n in q["reading"])
-    revised = {r["far"]: r for r in plan.get("revisions", [])}
+    revised = {r["far"]: r for r in plan.get("revisions", []) if "closed_by" in r}
+    renoted = {r["far"]: r for r in plan.get("note_revisions", [])}
     for o in plan["obligations"]:
         record, case = records[o["far"]], cases[o["far"]]
         assert o["record_locator"] == record["locator"]
@@ -137,6 +138,7 @@ def test_both_pr_contributions_are_preserved_without_case_reinterpretation():
     assert not receipts[31].keys() & receipts[32].keys()
     assert receipts[31].keys() | receipts[32].keys() == cases.keys()
     revised = {r["far"]: r for r in plan.get("revisions", [])}
+    renoted = {r["far"]: r for r in plan.get("note_revisions", [])}
     for receipt in receipts.values():
         for far, expected_hash in receipt.items():
             encoded = json.dumps(cases[far], ensure_ascii=False, sort_keys=True, separators=(",", ":"))
@@ -144,9 +146,28 @@ def test_both_pr_contributions_are_preserved_without_case_reinterpretation():
             if far in revised:  # a revisit leaves a ledger entry from the receipt to the current case
                 rev = revised[far]
                 assert (rev["from_case_sha256"], rev["case_sha256"]) == (expected_hash, current), far
-                assert cases[far]["revisit"]["closed_by"] == rev["closed_by"], far
+                if "side_check" in rev:  # lane D: the side failed verification; the case keeps its annotation
+                    assert cases[far]["side_check"] == rev["side_check"], far
+                else:
+                    assert cases[far]["revisit"]["closed_by"] == rev["closed_by"], far
+            elif far in renoted:  # only English fields changed: restoring them gives the receipt back
+                rn = renoted[far]
+                old = dict(cases[far], note=rn.get("from_note", cases[far].get("note")))
+                if "from_who" in rn:
+                    old["positions"] = [dict(p, who=w) for p, w in zip(cases[far]["positions"], rn["from_who"], strict=True)]
+                was = json.dumps(old, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+                assert hashlib.sha256(was.encode()).hexdigest() == expected_hash and current == rn["case_sha256"], far
             else:
                 assert current == expected_hash, far
+
+
+def _without_recovered(records: list[dict]) -> list[dict]:
+    """The records before PR-30 recovered the furūʿ the segmenter drops (their receipt)."""
+    from collections import Counter
+    receipt = _json(CORPUS / f"segmentation/{m8_worklist.WITNESS}-opening.json")["records"]
+    ids, counts = {r["id"] for r in receipt}, Counter(r["qaida"] for r in receipt)
+    return [{**r, "furu_count": r["furu_count"] - counts[r["id"]]} if r["record_type"] == "qaida" and r["id"] in counts else r
+            for r in records if r["id"] not in ids]
 
 
 def test_new_segmentation_preserves_every_legacy_record_and_identifier():
@@ -156,9 +177,9 @@ def test_new_segmentation_preserves_every_legacy_record_and_identifier():
 
     plan = _json(CORPUS / "worklists/rajab_m8_tranche3_plan.json")
     receipt = plan["segmentation"]
-    raw = (CORPUS / m8_worklist.RECORDS).read_bytes()
+    records = _without_recovered([json.loads(line) for line in (CORPUS / m8_worklist.RECORDS).read_text().splitlines()])
+    raw = "".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records).encode()
     assert hashlib.sha256(raw).hexdigest() == receipt["current_records_sha256"]
-    records = [json.loads(line) for line in raw.decode().splitlines()]
     by_id = {r["id"]: r for r in records}
     added = set(receipt["added_far_ids"])
     assert len(added) == 43 and len(receipt["affected_qawaid"]) == 14

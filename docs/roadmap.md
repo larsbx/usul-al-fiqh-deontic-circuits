@@ -10,6 +10,8 @@ Long-range Ḥanbalī uṣūl formalization track (Lean 4, TLA+, Haskell, catego
 
 Natural language and LLM prompting are allowed at the authoring boundary. They may propose candidate records. They may not directly create accepted normative facts or verdicts.
 
+Optional mathematical research lanes may consume explicit data and emit reproducible findings, but they may not become hidden normative authorities.
+
 ## Milestone 1 — Corpus manifest
 
 - Inventory all uploaded ADQ files.
@@ -69,6 +71,14 @@ Natural language and LLM prompting are allowed at the authoring boundary. They m
 - Ensure every accepted derivation has a minimal trace.
 - Prevent quarantined evidence from supporting normative derivations.
 
+## Milestone 4A — Finite-valued Boolean boundary
+
+- Preserve five-fold hukm as finite verdict tags: `wajib`, `mandub`, `mubah`, `makruh`, `haram`, plus `no_ruling` outside taklif.
+- Permit Boolean circuits only as evidence gates, condition checks, admissibility predicates, projection views, and path filters.
+- Reject collapse rules such as `not_haram = mubah`, `not_wajib = haram`, `allowed = neutral`, and `ideal = not_haram`.
+- Add projection fixtures for `weak_permissible`, `ideal_positive`, `path_excluding`, and `path_demoting`.
+- Require accepted classifications to carry the original finite verdict in derivation traces even when a Boolean projection is also emitted.
+
 ## Milestone 5 — LLM harness
 
 - Add plain-text candidate extraction.
@@ -82,6 +92,17 @@ Natural language and LLM prompting are allowed at the authoring boundary. They m
 - Validate the bundles with a pure typed checker.
 - Treat Gleam output as independent deterministic evidence, not as the database authority.
 
+## Milestone 7 — Optional Clifford-even algebraic research lane
+
+- Keep the full mathematical development in a dedicated research note.
+- Add a machine-readable `F_7` rank-3 fixture for the seven attainable angle-invariant values.
+- Add a tiny reference implementation for the quadratic form, bilinear form, angle invariant, and `SL_2(F_7)` conjugation action.
+- Define a research-only `AlgebraicFinding` schema that is disjoint from warrants and hukm evidence.
+- Require provenance for field, quadratic form, basis/encoding version, operator, input hashes, and output invariants.
+- Add a fail-closed test proving that algebraic findings cannot enter normative derivations.
+- Demonstrate that disabling the algebraic lane leaves every accepted deontic derivation unchanged.
+- Do not promote this lane beyond research status until a concrete migration, replay, or representation-invariance benefit is demonstrated.
+
 ## First issues to open after this PR
 
 1. Add ADQ corpus manifest.
@@ -92,3 +113,6 @@ Natural language and LLM prompting are allowed at the authoring boundary. They m
 6. ~~Convert `fixture_expectation/3` records from `examples/v39_sheaf_concern.pl` into executable tests.~~ Done: `tests/run_all.sh`.
 7. Add canonical JSON import adapters for the v38/v39 bridge predicates.
 8. Mirror the affect, temporal/path, and sheaf concern split in the Ash resource design.
+9. Add the `F_7` Clifford-even research fixture and authority-firewall test.
+10. Add finite-valued Boolean-boundary validator fixtures.
+11. Add path-filter projection tests for required, excluded, preferred, demoted, and neutral paths.
