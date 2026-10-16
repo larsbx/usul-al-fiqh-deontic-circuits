@@ -23,6 +23,28 @@ witnesses remain unstaged. The schema and gate validate record structure and
 byte binding; reviewers must assess whether the cited evidence actually supports
 its claims. A repository owner's study authorization is not a third-party grant.
 
+## Where the LFS objects are
+
+- **Byte identity:** `corpus/lock.json` → `witnesses.<witness-id>.sha256` and
+  `bytes`. An LFS object's oid is that sha256, so the lock names every object.
+- **Retained (89):** the pointers are `corpus/texts/<witness-id>.txt` on the
+  current tree. Hydrate them with the `git lfs pull` line below.
+- **Held cache-only (38):** the pointers are no longer on the tree but remain at
+  the original PR #88 head `cfae12154bf92a7fec24a8e0f408fc0124bf6d9f`, and their
+  objects remain in the hosted LFS store. List them with
+  `git ls-tree --name-only cfae1215 corpus/texts/`. To fill the **local cache**
+  for study and quotation checks, which is much faster than a Shamela page walk:
+
+  ```sh
+  git fetch --depth=1 origin cfae12154bf92a7fec24a8e0f408fc0124bf6d9f
+  git lfs fetch origin cfae12154bf92a7fec24a8e0f408fc0124bf6d9f --include=corpus/texts/<id>.txt
+  git show cfae1215:corpus/texts/<id>.txt | git lfs smudge > .cache/corpus/<id>.txt
+  ```
+
+  Then check the result's sha256 against the lock. This is a cache route only:
+  it grants no publication, and `texts` will not stage a `cache_only` witness.
+  Agents must not re-add these pointers to the tree.
+
 ## Reproducible checks
 
 - `make texts-check`: publication eligibility and pointer oid **and size** against

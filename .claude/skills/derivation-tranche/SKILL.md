@@ -10,7 +10,7 @@ The method is specified in `docs/architecture/derivation-method.md`; this is how
 ## As a shard
 
 1. **Claim.** Write `corpus/worklists/claims/<shard>.json` with `shard`, `lane`, the full `base_commit` (`git rev-parse HEAD`) and the obligation ids. Run `python -m pytest -q tests/test_shards.py` from `pipeline/`. Work only on claimed ids.
-2. **Source.** Cache the witness (`python -m usul_corpus fetch --work <id>`) and confirm its lock hash. Every quote you use must be verbatim from it, with its page marker.
+2. **Source.** Cache the witness (`python -m usul_corpus fetch --work <id>`) and confirm its lock hash. For where each text's LFS object lives, including the cache-only witnesses that can be hydrated from history instead of re-fetched, see `corpus/texts/README.md` §Where the LFS objects are. Every quote you use must be verbatim from it, with its page marker.
 3. **Read (lane A).** Formalise each qāʿida from its own wording.
    - The reading goes in a new module `formal/lean/Usul/Readings/<Shard>.lean`. It imports the specific `Usul.*` modules it needs, never `Usul`.
    - Add link theorems to existing principles where the text draws the link.
