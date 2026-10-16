@@ -43,7 +43,8 @@
      "note": "al-Mubdiʿ for the better-known view (not removed); Sharḥ al-Muntahā repeats it. Qiyās."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "22d87d128076d96c7faac2dfced124a303d949972038f4a59e87c29c159a25c1"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f001",
@@ -85,7 +86,8 @@
      "note": "Ibn ʿAqīl in his Mufradāt, via Ibn Rajab, for the same position. Stated ʿilla: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "66751fc730415f45d2744aa89004098ec9801a37bf7f42d8f714cea7955cff29"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f002",
@@ -118,7 +120,8 @@
      "note": "Ibn Rajab's preferred reading of al-Qāḍī's second statement (not by word, only by return or transgression) as a farq between the two parties' annulments. Qiyās."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8fa3bede11c7702f9a9b48cd95c5f12f4987c5b55f13f4c0bc0c75c731f49141"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f000",
@@ -151,13 +154,15 @@
      "note": "Same building, for the no-return wajh. The aṣl's reasons are in the ṣadāq masʾala (f002). Qiyās."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3a66413eb9c0dcd1477b104ccdd213c5e4b2f1f8258b996f4a90c940f1fd3add"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f001",
    "proofs": [],
    "advantages": [],
-   "searched": "al-Mughnī v07 p257–258 (fasl 5632, the sale/ṣadāq/mukātab cases, no iqāla); al-Sharḥ al-Kabīr v08 (same faṣl); al-Kāfī (ṣadāq faṣl with the sale case); al-Mubdiʿ v06 p215; Kashshāf v05 p146; grep of all six works and Taqrīr al-Qawāʿid for iqāla after gift/release of the price («تقايلا», «أقاله», «الإقالة» with هبة/أبرأ): only Ibn Rajab lists the ṣūra, with no proof."
+   "searched": "al-Mughnī v07 p257–258 (fasl 5632, the sale/ṣadāq/mukātab cases, no iqāla); al-Sharḥ al-Kabīr v08 (same faṣl); al-Kāfī (ṣadāq faṣl with the sale case); al-Mubdiʿ v06 p215; Kashshāf v05 p146; grep of all six works and Taqrīr al-Qawāʿid for iqāla after gift/release of the price («تقايلا», «أقاله», «الإقالة» with هبة/أبرأ): only Ibn Rajab lists the ṣūra, with no proof.",
+   "positions_sha256": "6fab9f2a3204b0923e364e2c739b9312a0bb7f7541f9b73a26179c17076d8256"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f002",
@@ -208,7 +213,8 @@
      "note": "al-Kāfī for the no-recourse riwāya on these facts. Stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e3cba829b154045d645665d599f73c86f478c9a23d147607faa6b9fa08c0e8b4"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f003",
@@ -241,7 +247,8 @@
      "note": "al-Mughnī's reason why the ṣadāq takhrīj fails and the mukātab has no recourse. Qiyās."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "559154c2c2bc121f16644c8aa0cbedc0a023695d5f27f80e071c358756d698f0"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f004",
@@ -274,7 +281,8 @@
      "note": "Ibn Rajab's takhrīj, the holder of this position; his stated ground is «لأنهما اعترفا بأنه قبضه عدوانا ثم رده إليه هبة». Qiyās."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b2bcbb61ebae07b627823255e500df88a2c172f052e0fe42f32d6719c122bd66"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f005",
@@ -307,7 +315,8 @@
      "note": "al-Mughnī's ruling and reason for the parallel case (a non-debtor who paid on a ḥawāla and was then given the payment back): recourse. Ibn Rajab's takhrīj for the guarantor who paid in full rests on the same separation of payment and later gift. Qiyās."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e2ea2e7fd64fc0b5b9786c07ca986e4be29e16c3bb5738a305dde5ed640d39d8"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f012",
@@ -358,7 +367,8 @@
      "note": "Stated in the musāqāt chapter for the owner who works the trees after the worker fled without permission or witnesses: fits these facts (permission False). Qiyās on the volunteer."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e0d3d4fdf11dd417e4b2360a0acef6cb2a1bcd44ab3c3125e7a2638529a8d0d8"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f000",
@@ -391,7 +401,8 @@
      "note": "The reason of the author of al-Talkhīṣ, via Ibn Rajab. Qiyās."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ce1ba8aa9f4fafef76b09b4e27761c71d79e064b43e5c314c4eb2721e7c0dfab"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f001",
@@ -415,7 +426,8 @@
      "note": "Ibn Rajab's own takhrīj. Qiyās on crops."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ae08b7a451cfe69729d583fb79542ffdfaa9bbd7f91350eae49b46bfb455df36"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f002",
@@ -457,7 +469,8 @@
      "note": "Same iḥtimāl. Qiyās."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1edbafd0e6404eb0a9a3c8a9865b7c874e699ed1e2ae6fad38e10d01fcb24203"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f003",
@@ -472,7 +485,8 @@
      "note": "al-Mubdiʿ in the jāʾiḥa section; Sharḥ al-Muntahā and Kashshāf say the same («كشجر ... في جائحة وغيرها»). The base rule (blight on fruit at the seller's risk) is Jābir's ḥadīth; its carrying to these plants is the analogy: qiyas. The qualifier (the seller need not leave the visible picking on the plant) does not touch the blight rule."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "318f901ef14e76b74060223a04f35a346ccef94eb4d3626fa63870b957b678f8"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f008",
@@ -496,7 +510,8 @@
      "note": "al-Mughnī («وهذا أصح في المذهب») for the ḥākim divorcing on his behalf; al-Sharḥ al-Kabīr repeats it. Qiyās with stated aṣl and farq."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "2f3d8791d0ee06890d09cd55da372375d6f94259fad7b04b5c7a65a5f8fb318d"
   }
  ]
 }

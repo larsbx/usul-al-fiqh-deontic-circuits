@@ -7,7 +7,7 @@ from pathlib import Path
 import pytest
 import jsonschema
 
-from usul_corpus import reconcile, takhrij
+from usul_corpus import reconcile, takhrij, position_receipts
 from usul_corpus.__main__ import load_dossier
 
 ROOT = Path(__file__).parents[2]
@@ -69,8 +69,9 @@ def test_boolean_does_not_enter_an_integer_output_domain(monkeypatch):
 def test_all_reconciliation_comparisons_use_canonical_identity(a, b, monkeypatch):
     # Synthetic declared domain exercises both sides through the public boundary.
     monkeypatch.setitem(takhrij.ENCODERS, "typed_test", {"out": [a, b]})
-    c = {"encoder": "typed_test", "positions": [{"ruling": a}, {"ruling": b}], "expected": b}
+    c = {"far": "identity", "encoder": "typed_test", "positions": [{"ruling": a}, {"ruling": b}], "expected": b}
     e = {"grades": ["tashih", "wajh"], "proofs": [{"position": 0, "tier": "qiyas"}]}
+    e.update(far=c["far"], positions_sha256=position_receipts.digest(c))
     assert len(reconcile.rulings(c)) == 2
     assert reconcile.top([(a, "qiyas")], b) is None
     assert not reconcile.favours([(a, b, "muttasil", "stated")], b, a)

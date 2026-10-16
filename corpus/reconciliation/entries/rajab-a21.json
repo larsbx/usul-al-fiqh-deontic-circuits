@@ -42,7 +42,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The matn; the exception (maintenance) is outside the gift."
         }
-      ]
+      ],
+      "positions_sha256": "ffdb90234784ad6e6b0366e0c2fafb00a9fa9bc04eb3aca5224ee8edb4e49abe"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f003",
@@ -86,7 +87,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Sharḥ of al-Iqnāʿ."
         }
-      ]
+      ],
+      "positions_sha256": "a332e0ecb07ddbfaff1f4d1d54db9f219b905d0baf0818d4feccd2f4ac6b6c09"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q149.f001",
@@ -122,7 +124,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "The sharḥ gives the reason the qāʿida names: the third protects the heirs."
         }
-      ]
+      ],
+      "positions_sha256": "3a0b1d3017e48611ed05c9c5a3626328ba1bf7437917b0a87dbdac477b1dee7b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q149.f003",
@@ -150,7 +153,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Sharḥ of al-Iqnāʿ."
         }
-      ]
+      ],
+      "positions_sha256": "7cf39e727dccca45d40e4505880281251150b3702e80a918d5b26777fccc48bc"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f002",
@@ -186,7 +190,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "The sharḥ gives the cause: the gift is made for fear of the army."
         }
-      ]
+      ],
+      "positions_sha256": "211c7a6b8cb2e075b129caf2ef9823759f8e243d805d9c2e4643e30f9088a404"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152.f004",
@@ -225,7 +230,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Sharḥ of al-Iqnāʿ, citing «يحرم من الرضاع ما يحرم من النسب»."
         }
-      ]
+      ],
+      "positions_sha256": "a8e253c9f721dc10caae14f79b6f5c4361eaa57d96eb63adffdc27dabd4e9dfd"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155.f001",
@@ -269,7 +275,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Sharḥ of al-Iqnāʿ."
         }
-      ]
+      ],
+      "positions_sha256": "7afe0e528c4990823b216a215d647159eb872c6228fc41955c912a7dd701b459"
     }
   ]
 }

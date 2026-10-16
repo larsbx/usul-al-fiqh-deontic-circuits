@@ -26,7 +26,8 @@
           "who": "a wajh, as al-Inṣāf reports it",
           "note": "In pre-emption the pollinated fruit follows where it was unpollinated at the sale."
         }
-      ]
+      ],
+      "positions_sha256": "4d50929caab9ed0146d3f2df8789bc1d485abc369da7c00e89b3fda9734f71fd"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f002",
@@ -54,7 +55,8 @@
           "who": "al-Muqniʿ's iḥtimāl, put first in al-Riʿāyatayn, al-Ḥāwī al-Ṣaghīr, al-Khulāṣa, al-Muḥarrar and al-Fāʾiq",
           "note": "«ويحتمل أن يثبت الملك حين الموت»"
         }
-      ]
+      ],
+      "positions_sha256": "f568f195cf495eb78b660b4a1a0192fc9cf02e1becf53188739b775a83376ec4"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f006",
@@ -90,7 +92,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "The same, «لأن العتق لا ينفك عن الولاء، والولاء لا يوقف»."
         }
-      ]
+      ],
+      "positions_sha256": "c4aa6478aaac1d66fa32b309a6061a021c44b2c53e531a2d79e355093997530f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f007",
@@ -118,7 +121,8 @@
           "who": "al-Qāḍī (al-Mujarrad), Abū al-Khaṭṭāb (al-Hidāya), al-Majd, as al-Inṣāf reports them",
           "note": "«وقيل: يحكم بالصوم من أول النهار»"
         }
-      ]
+      ],
+      "positions_sha256": "2c759a9a3f47e8efbf9af3b5b12938d4f6c3c5d420a4da5eb793bb0e5eda50e0"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f003",
@@ -146,7 +150,8 @@
           "who": "a riwāya of Aḥmad, as al-Inṣāf reports it",
           "note": "«وعنه: أنه كمتهم فيه», so she inherits."
         }
-      ]
+      ],
+      "positions_sha256": "7ed11c3406d4cdf5fe41e8769ed8ef94a8b45b29d40742aeb0f975c0823a3f00"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f004",
@@ -190,7 +195,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "«(وتعتبر الصفات) ... (حين موت) موص (ووصية)», «لأنها شروط للعقد»."
         }
-      ]
+      ],
+      "positions_sha256": "d50ab04746fffda5feedebc7e2f8abf411f884a2b8595172e94048fb2af3dbe0"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f005",
@@ -226,7 +232,8 @@
           "who": "Ibn Ḥamdān (al-Riʿāya al-Kubrā), as al-Inṣāf reports him",
           "note": "«وقلت: الأنقاض له، والعمارة إرث»"
         }
-      ]
+      ],
+      "positions_sha256": "441782daa460a84527ccae025d063e0b92f3aace3cf780e2a76533bcbfe0e763"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f006",
@@ -254,7 +261,8 @@
           "who": "the second wajh, as al-Inṣāf reports it",
           "note": "«والوجه الثاني: يصح»"
         }
-      ]
+      ],
+      "positions_sha256": "b8c3d3b6e2890fc6b26af66c17956174d6de61d5eac16d5030345862f45afe58"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f004",
@@ -298,7 +306,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "«والفسخ المعلق صحيح كما تقدم»."
         }
-      ]
+      ],
+      "positions_sha256": "0d764159dac30126f8dcc275d8bcff431ccbc33310a0222b25cf5da744d58dc3"
     }
   ]
 }

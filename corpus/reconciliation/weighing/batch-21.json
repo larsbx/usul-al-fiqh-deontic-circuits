@@ -43,7 +43,8 @@
      "note": "Ground for the second wajh, with a farq from the junub. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "5dcc5b39c62553af6d528cc2c2a27139b0c45a88e9e159c1dd9bf941fa0d0556"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f004",
@@ -94,7 +95,8 @@
      "note": "Same analogy in al-Kāfī. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8776fecafa9a050f70c27b973a0d1be453dc0d2c963d4914f9d00a09ef6cf711"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f001",
@@ -136,7 +138,8 @@
      "note": "The non-compulsion riwāya for the wall, which the Mughnī calls «أقوى دليلا» and extends to the ceiling by «كالحائط بين البيتين». qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d54403449b0e9fa5a5dd0feb235e82b3218205765a800e918f36f9adb105395a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f002",
@@ -178,7 +181,8 @@
      "note": "The Mughnī's answer to the farq, extending the two riwāyas to the qanāt as al-Qāḍī and most do. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3104298e71b570546d494a79e44f1ded06afd99b0e9767e99963f8e33b8172b0"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f003",
@@ -211,7 +215,8 @@
      "note": "Taqī al-Dīn's a fortiori argument for compelling sale in qismat al-tarāḍī. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ec2b083d2338fc5a80f5242244aa21ed042e9385495794863a47920ba18d7e4b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f004",
@@ -244,7 +249,8 @@
      "note": "Ground for the wajh chosen by the author of al-Muḥarrar; aṣl: qismat al-aʿyān. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1b7648aa8650650eecd5e3dff2941c2dd944b9620834da981676e214dfafbec5"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f002",
@@ -286,7 +292,8 @@
      "note": "The Mubdiʿ's ground for «فلا شيء له» on disposal with knowledge, the head under which al-Inṣāf places use and offering for sale. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8c7eda0d19565bc8e61c08778b0bb8be2153f1e8b066d7657b7b80e6d6c75278"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f001",
@@ -319,7 +326,8 @@
      "note": "The Sharḥ repeats the Mughnī's ground and ruling. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "4d50929caab9ed0146d3f2df8789bc1d485abc369da7c00e89b3fda9734f71fd"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f002",
@@ -352,7 +360,8 @@
      "note": "The Mughnī's «ولنا» for ownership from acceptance (the madhhab). qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f568f195cf495eb78b660b4a1a0192fc9cf02e1becf53188739b775a83376ec4"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f003",
@@ -403,7 +412,8 @@
      "note": "Given (also for Mālik in the diya of ʿamd) for the riwāya that the diya does not enter the bequest, being the heirs'. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e09b5e89eb7fcb845f3d9ebbbd324954df7ad3b9c0f445f01ffe404ac5d366fd"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f004",
@@ -436,7 +446,8 @@
      "note": "Abū al-Khaṭṭāb's ground in al-Intiṣār as Ibn Rajab reports it; aṣl: the growth of inherited property. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "a20ee90d62eeee984607ce74b56a09502b6d459b83f7d34d8f3854b713c9ce3d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f005",
@@ -478,7 +489,8 @@
      "note": "Ground for the riwāya that the walāʾ is the heirs'; aṣl: purchase. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "690020cb32a0d62793adc1d7d46ec5c67293a1c0eb16d3a628389b4182bb7869"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f006",
@@ -538,7 +550,8 @@
      "note": "Abū Bakr's ʿilla in Ibn Rajab. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c4aa6478aaac1d66fa32b309a6061a021c44b2c53e531a2d79e355093997530f"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f006",
@@ -580,7 +593,8 @@
      "note": "Same rationale in al-Kāfī for the second wajh. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b8c3d3b6e2890fc6b26af66c17956174d6de61d5eac16d5030345862f45afe58"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f007",
@@ -613,7 +627,8 @@
      "note": "The Mubdiʿ reports the contrary wajh (qīla) with its analogy: the aṣl is suspending the three on his manumission, where only two fall; the farʿ is suspending on another condition met after manumission. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "391529ba2f8277ae7ed5c1ef6b0f022f3fb8b93299037a611f4403c2ae11f2ac"
   }
  ]
 }

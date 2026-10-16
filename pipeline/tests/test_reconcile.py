@@ -8,7 +8,7 @@ from pathlib import Path
 import jsonschema
 import pytest
 
-from usul_corpus import reconcile, takhrij
+from usul_corpus import reconcile, takhrij, position_receipts
 from usul_corpus.__main__ import load_dossier
 
 ROOT = Path(__file__).parents[2]
@@ -38,7 +38,8 @@ def _ikh(far, expected, rulings, matches=False, encoder="successive_contracts", 
 
 
 def _entry(far, grades, jam=None):
-    return {"far": far, "grades": grades, "jam": jam, "naskh": None}
+    return {"far": far, "grades": grades, "jam": jam, "naskh": None,
+            position_receipts.FIELD: position_receipts.digest(_ikh(far, True, [True, False]))}
 
 
 def _proof(position, tier):

@@ -37,7 +37,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Sharḥ of the same matn."
         }
-      ]
+      ],
+      "positions_sha256": "5ea9fe7fc0ca638a773e61f7d406252aa7cdc2ac20b47b7177c08e94ed2273b7"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f003",
@@ -65,7 +66,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Sharḥ of the general rule, reporting it as Aḥmad's naṣṣ."
         }
-      ]
+      ],
+      "positions_sha256": "e53878a684b0dedde737d648ed3313038aac873f7802154490e7182132286f34"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f007",
@@ -102,7 +104,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn, of the same branch."
         }
-      ]
+      ],
+      "positions_sha256": "10ae8bba1244bfecb95eae02bc8bab1b8c6f6eedec4c4cd15afb38332bda5412"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f009",
@@ -138,7 +141,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "It goes on «والقرينة لا تساويه فلا يصح إعمالها»: the circumstance is not given effect."
         }
-      ]
+      ],
+      "positions_sha256": "41e115c6e10937f2a23cef2e51488580b6eee4f941afeba9ca61d628dc809671"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f013",
@@ -174,7 +178,8 @@
           "who": "Ibn al-Najjār, al-Muntahā",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "9b3040587144e478c0836b51c5c3b703c499bb29559d8b32dc4651779b2876e1"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f003",
@@ -194,7 +199,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "Preceded by «وأطلقهما في القواعد»: the taṣḥīḥ is of the general rule, not of this masʾala."
         }
-      ]
+      ],
+      "positions_sha256": "4a223be0212be1af292e4defd19b93ef3b07a6d89f30c10e339a73a5c24df572"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f004",
@@ -228,7 +234,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Sharḥ of the same."
         }
-      ]
+      ],
+      "positions_sha256": "8367427fbff62e191cfc8fc3ab6191429692c0c05ad32f61de3c4f02b2ac4c72"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f005",
@@ -264,7 +271,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "He adds that the exit of the buḍʿ from the husband's ownership is not valued."
         }
-      ]
+      ],
+      "positions_sha256": "23376f66ed31b70a07b731510be27a78a98c1c254e19d0296c497eec71a75591"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f006",
@@ -300,7 +308,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Sharḥ: «وليس في هذا حظ»."
         }
-      ]
+      ],
+      "positions_sha256": "0615d8c32f2ecc6f47992c0323c0620b5e9bce46db505785251cd9514df6172f"
     }
   ]
 }

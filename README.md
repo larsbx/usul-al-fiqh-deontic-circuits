@@ -14,6 +14,8 @@ The first implementation isolates the pure reconciliation operations in
 `pipeline/usul_corpus/values.py`. `reconcile.py` remains the compatible corpus
 adapter and generator. Reported alternatives outside an encoder's domain remain
 explicit range gaps, and Boolean, numeric, and textual rulings remain distinct.
+Mandatory ordered-position receipts now prevent legacy evidence indices from
+silently changing subjects, checked independently before ledger/weighing overlays.
 
 The architecture and remaining migration gates are in the existing
 [separated concerns](docs/architecture/separated-concerns.md#repository-wide-authority-boundaries)

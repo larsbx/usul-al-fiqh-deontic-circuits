@@ -29,7 +29,8 @@
      "who": "Ibn al-Najjār, al-Muntahā",
      "note": "«ولا يأكل رأسا ولا بيضا حنث بأكل رأس طير وسمك»."
     }
-   ]
+   ],
+   "positions_sha256": "f3ceca9845cd54d2416d669b0524be18c87e32368dab3c1e59907862a71d967d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f000",
@@ -60,7 +61,8 @@
      "who": "al-Qāḍī and a group, as al-Inṣāf reports",
      "note": "The riwāya of ṣila, corrected (taṣḥīḥ) by al-Qāḍī and others, not the madhhab."
     }
-   ]
+   ],
+   "positions_sha256": "c4b6770cbe69f259b76a8b916bd63cc329f96cebe178e6a2df8fc5f6421d719b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f000",
@@ -83,7 +85,8 @@
      "who": "al-Mardāwī, al-Inṣāf",
      "note": "Of the dhimmī or slave wounded who becomes Muslim or is freed and dies: «وهو المذهب ... وجزم به في الوجيز وغيره وقدمه في الفروع»."
     }
-   ]
+   ],
+   "positions_sha256": "3b6cac00af6d0c56519ef267c4da306a2f5897ca325462d13962713fc9db4d77"
   }
  ]
 }

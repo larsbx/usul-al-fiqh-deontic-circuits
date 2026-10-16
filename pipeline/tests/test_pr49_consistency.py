@@ -3,7 +3,7 @@
 import json
 from pathlib import Path
 
-from usul_corpus import reconcile, takhrij
+from usul_corpus import reconcile, takhrij, position_receipts
 
 ROOT = Path(__file__).parents[2]
 PREFIX = "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730."
@@ -26,6 +26,8 @@ def test_pr49_resolved_cases_retain_positions_sources_and_guards():
     for entry in archive["entries"]:
         far = entry["far"]
         case = by[far]
+        # Explicit historical replay fixture; never modify the archived entry.
+        entry = {**entry, position_receipts.FIELD: position_receipts.digest(case)}
         assert far in records
         assert case["class"] == "genuine_ikhtilaf"
         assert case["facts"] == {"harmless": False}

@@ -134,3 +134,16 @@ suite with the declared exclusions, Lean build/export/no-sorry gate, and green
 workflow executions on the consolidated head (including Prolog and TLA+).
 Unprotected main is not permission to bypass those declared gates. No merge or
 human scholarly acceptance is claimed.
+
+
+## Subsequent R1 integrity gate
+
+The continuation after integration commit `a41612ff` preserves that consolidation
+and adds mandatory ordered-position receipts for every active ledger and weighing
+entry. This implements the interim PR-37 integrity gate; stable position IDs and
+the remaining evidence-admission work are still open. See the updated
+[authority boundaries](separated-concerns.md#remaining-structural-work) and the
+[existing roadmap](../roadmap-hanbali-usul-formalization.md#first-principles-refactor).
+The earlier validation record above applies to its named integration commit;
+subsequent validation is recorded in PR #92. No source, runtime or CI blocker is
+closed merely by preserving that record.

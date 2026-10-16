@@ -42,7 +42,8 @@
      "who": "al-Buhūtī, Kashshāf al-Qināʿ",
      "note": "Refrain from both, because the second has become his firāsh, which forbids her sister as initial intercourse would."
     }
-   ]
+   ],
+   "positions_sha256": "36844f6db8f9fc5ba1fc073fac996fef4fb749be85cc40ac5267559b2af22d99"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f018",
@@ -53,7 +54,8 @@
    "jam": null,
    "naskh": null,
    "note": "Two iḥtimālāt of al-Majd, neither marked by Ibn Rajab, and no later treatment found. Tawaqquf. Integrator: an iḥtimāl grades takhrīj, not a bare wajh; still a tie.",
-   "evidence": []
+   "evidence": [],
+   "positions_sha256": "2e71a96e976bb0c59cfd278c2baa8944918eaf2974ad504d9f32c0cf40387cf5"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f000",
@@ -81,7 +83,8 @@
      "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
      "note": "The diya is owed by the one who declines, «وهو الصحيح»."
     }
-   ]
+   ],
+   "positions_sha256": "930ea5b05d63d8ccbbb61d7eb3910db4f80cd61732e64c6d3c0ef32ebcb724d6"
   }
  ]
 }

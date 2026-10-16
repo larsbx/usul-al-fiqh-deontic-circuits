@@ -39,7 +39,8 @@
           "who": "Abū Bakr in al-Tanbīh, per al-Inṣāf",
           "note": "Continuing «وقال أبو بكر في التنبيه: إن»: if he did not know he is not liable, stated decisively in ʿUyūn al-Masāʾil."
         }
-      ]
+      ],
+      "positions_sha256": "8da7650cec5a2cbef7f6d2f72c718c2eacd7cd26273957169d0d164877fa438d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f007",
@@ -82,7 +83,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The fuller's handing the cloth to another than its owner: if the recipient cut it before knowing he pays («غرم أرش نقصه ولبسه») and has recourse on the fuller."
         }
-      ]
+      ],
+      "positions_sha256": "f8ba2180d0df2f9a999424606bcf35e819bc921706b4ef501023b815245ba186"
     }
   ]
 }

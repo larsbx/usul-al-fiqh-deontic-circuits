@@ -2,7 +2,10 @@
   "entries": [
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f006",
-      "grades": ["takhrij", "ashab"],
+      "grades": [
+        "takhrij",
+        "ashab"
+      ],
       "jam": null,
       "naskh": null,
       "note": "The one born into the degree after the share passed to those in it: the wajh takhrīj-ed from the later-born child (not sharing) against Ibn Rajab's «والدخول هنا أولى» and Shams al-Dīn's fatwā (sharing). al-Muntahā and Sharḥ al-Muntahā state the sharing decisively, al-Inṣāf «في أصح الاحتمالين». Against the reading, which leaves the qāʿida's khilāf branch unestablished.",
@@ -31,11 +34,15 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "He shares «لوجود الوصف فيه», the farq Ibn Rajab gives: the degree regards only the description, not the individuals."
         }
-      ]
+      ],
+      "positions_sha256": "cc139776177c82a91fbc62eb462c0bd5ecefb863d6de254b6acd2d551f9084ad"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f002",
-      "grades": ["ashab", "ashab"],
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
       "jam": null,
       "naskh": null,
       "note": "Use of the defective thing after knowing the defect: Ibn ʿAqīl keeps the arsh (one of two things), Ibn Abī Mūsā and al-Qāḍī drop it. al-Inṣāf, citing this qāʿida, labels the dropping the madhhab, with al-Iqnāʿ and Sharḥ al-Muntahā deciding it; al-Muwaffaq's qiyās al-madhhab is for the arsh. Against the reading.",
@@ -72,11 +79,15 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Use other than for trial drops the arsh as it drops the return."
         }
-      ]
+      ],
+      "positions_sha256": "8c7eda0d19565bc8e61c08778b0bb8be2153f1e8b066d7657b7b80e6d6c75278"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f008",
-      "grades": ["nass", "nass"],
+      "grades": [
+        "nass",
+        "nass"
+      ],
       "jam": null,
       "naskh": null,
       "note": "The one who swore īlāʾ refuses both return and divorce: a riwāya imprisons him until he chooses (the reading's compulsion), the other has the ḥākim separate them. al-Inṣāf labels the second the madhhab; al-Muntahā and al-Iqnāʿ state it. Against the reading.",
@@ -105,7 +116,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "Ordered to return, then to divorce; if he does not, the ḥākim divorces."
         }
-      ]
+      ],
+      "positions_sha256": "2f3d8791d0ee06890d09cd55da372375d6f94259fad7b04b5c7a65a5f8fb318d"
     }
   ]
 }

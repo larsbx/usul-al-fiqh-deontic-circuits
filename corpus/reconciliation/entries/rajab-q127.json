@@ -26,7 +26,8 @@
      "who": "al-Ḥajjāwī, al-Iqnāʿ",
      "note": "The Iqnāʿ states it: no qawad and no diya on the holder."
     }
-   ]
+   ],
+   "positions_sha256": "4c94f91b22912d9ed8fc59886efc8c9570e12d5f53c327b62c0979c4a59fb4d8"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f006",
@@ -54,7 +55,8 @@
      "who": "al-Ḥajjāwī, al-Iqnāʿ",
      "note": "The Iqnāʿ states it, the placer treated as the pusher where both transgressed."
     }
-   ]
+   ],
+   "positions_sha256": "ec8ccf1f93584b7a5c10e54dc2032579c704828bcde2cbe5403a8c9ccca912ba"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f008",
@@ -65,7 +67,8 @@
    "jam": null,
    "naskh": null,
    "note": "al-Qāḍī's two iḥtimālāt in al-Mujarrad, reported by Ibn Rajab without preference. No later work in the bank states this case's side.",
-   "evidence": []
+   "evidence": [],
+   "positions_sha256": "0bc317775a0ae94bd2053ecd0110f4efa0cab3ee017397b6688dd88d1777d6bf"
   }
  ]
 }

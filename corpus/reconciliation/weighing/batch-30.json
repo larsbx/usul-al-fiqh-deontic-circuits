@@ -34,7 +34,8 @@
      "note": "Given for Ibn Sīrīn, ʿAṭāʾ, al-Nakhaʿī, al-Thawrī and the Ḥanafīs, who hold the ruling of position 1 (the switch); the ḥanbalī wajh shares it. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6df97d4832e6b9b5ae56e0c6e81fe7832c533cf9e5ead7d0e4c4b7e581405f17"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f001",
@@ -87,7 +88,8 @@
      "note": "Both are zanni. The ḥadīth speaks to the very case of finding water after tayammum, while «ولا تبطلوا أعمالكم» is general over all deeds: the specific over the general. Basis: applied — the excerpt shows the property, but no source compares the two proofs; the bank applies the uṣūl murajjiḥ.",
      "basis": "applied"
     }
-   ]
+   ],
+   "positions_sha256": "515b399a20f57615fc455dddbb13d735cfe4d90767d80c120e8b0322a4b65e76"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f002",
@@ -129,7 +131,8 @@
      "note": "For position 1; al-Mughnī adds that if it were void by marrying a free woman it would be void by ability. ʿAlī against Ibn ʿAbbās: aqrabSahabi."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "af3df250fedafe3c0af37150de43570f6fb87d968bb6b7b1eba5fa22c534d744"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f006",
@@ -163,7 +166,8 @@
     }
    ],
    "advantages": [],
-   "searched": "Position 1 (the takhrīj ranking the seller with the creditors): no argument found in al-Mughnī v04 p321–325 (taflīs, fourth condition), al-Sharḥ al-Kabīr, al-Kāfī, Kashshāf v03 p427–428."
+   "searched": "Position 1 (the takhrīj ranking the seller with the creditors): no argument found in al-Mughnī v04 p321–325 (taflīs, fourth condition), al-Sharḥ al-Kabīr, al-Kāfī, Kashshāf v03 p427–428.",
+   "positions_sha256": "69a87edf20b10af4d4918a1ce2408bc31e2ee7dff670b42b552ef1601f4eb7b5"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f000",
@@ -188,7 +192,8 @@
     }
    ],
    "advantages": [],
-   "searched": "Position 1 (never liable, ẓāhir of Aḥmad per Majd): not argued in al-Mughnī v04 p288–289, al-Sharḥ al-Kabīr v04 p440, al-Kāfī v02 p084, al-Mubdiʿ v04 p226; Kashshāf v04 p166 states the pledge as liable. On review, Majd's ground was found in Ibn Rajab's own text (v01:p047) and added."
+   "searched": "Position 1 (never liable, ẓāhir of Aḥmad per Majd): not argued in al-Mughnī v04 p288–289, al-Sharḥ al-Kabīr v04 p440, al-Kāfī v02 p084, al-Mubdiʿ v04 p226; Kashshāf v04 p166 states the pledge as liable. On review, Majd's ground was found in Ibn Rajab's own text (v01:p047) and added.",
+   "positions_sha256": "453aeb9fc9f6b2005f4564273110eb125acd321e8ccdb9decb8f90445023847a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001",
@@ -204,7 +209,8 @@
     }
    ],
    "advantages": [],
-   "searched": "Position 1 (not liable, the later authors' ẓāhir of Aḥmad): no argument found in al-Mughnī (wadīʿa and rahn, v04 p289), al-Sharḥ al-Kabīr, al-Kāfī, al-Mubdiʿ, Kashshāf v04 p165–166."
+   "searched": "Position 1 (not liable, the later authors' ẓāhir of Aḥmad): no argument found in al-Mughnī (wadīʿa and rahn, v04 p289), al-Sharḥ al-Kabīr, al-Kāfī, al-Mubdiʿ, Kashshāf v04 p165–166.",
+   "positions_sha256": "69c613a58871f1f7bc845148100867eca0463bb51241159f6f0e859b1a05325a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f006",
@@ -228,7 +234,8 @@
      "note": "Kashshāf, quoting al-Qawāʿid for the naṣṣ of Aḥmad in the riwāya of Muḥammad b. al-Ḥasan b. Hārūn (position 1), gives this reason. A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1ffc1014a0da07c2dcf8fc19121a8aae62767fefdb1b73d19851eb42bb0aba37"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f007",
@@ -261,7 +268,8 @@
      "note": "The aṣḥāb's view (position 1: the heirs'). Stated rationale with the aṣl (the plain mudabbar): qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3e35e9e225c8037228042390207c1d31a238b6cda5464e622195cd47f625971a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f001",
@@ -294,7 +302,8 @@
      "note": "For position 1: the āya of ẓihār read by an interpretation (kināya) of its word, not explicit: zanni."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "fee68d211993aecad059ee11a6323aa1b079e6cabd2362e15320f2d95b2eb16b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f002",
@@ -327,7 +336,8 @@
      "note": "For position 1. A stated ʿilla confining the bar to intercourse: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "05bb362c18aad4aa615f1b45dbf6caa47cd5fa79d6363d5072d497eb43edef1d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f003",
@@ -351,7 +361,8 @@
      "note": "For position 1 (forbidden). Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "2db2b04dcbc97e215e3f7edffe31e687419afbac2f0ec48039c557dc18eab85f"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f004",
@@ -385,7 +396,8 @@
     }
    ],
    "advantages": [],
-   "searched": "Position 0 (Ibn ʿAqīl: disliked, not forbidden): Kashshāf v05 p077, al-Iqnāʿ v03 p184 state it without proof; nothing found in al-Mughnī, al-Sharḥ al-Kabīr, al-Kāfī, al-Mubdiʿ."
+   "searched": "Position 0 (Ibn ʿAqīl: disliked, not forbidden): Kashshāf v05 p077, al-Iqnāʿ v03 p184 state it without proof; nothing found in al-Mughnī, al-Sharḥ al-Kabīr, al-Kāfī, al-Mubdiʿ.",
+   "positions_sha256": "2c99d1d9cd31e730e2faa547ae6abf10dabeedeecabae640c9c5f45128d13192"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f015",
@@ -419,7 +431,8 @@
     }
    ],
    "advantages": [],
-   "searched": "Position 1 (Abū al-Khaṭṭāb's al-Intiṣār, not beyond the diya in its genus): no argument for deliberate killing found; al-Mughnī v04 p369 and al-Kāfī v02 p117 bar exceeding the diya only for khaṭaʾ, which is not these facts."
+   "searched": "Position 1 (Abū al-Khaṭṭāb's al-Intiṣār, not beyond the diya in its genus): no argument for deliberate killing found; al-Mughnī v04 p369 and al-Kāfī v02 p117 bar exceeding the diya only for khaṭaʾ, which is not these facts.",
+   "positions_sha256": "9e32544fc0de7262b99f4eda5a5cbfd59a1d2fc4c6bbf65552c7b2ec8b433d71"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f016",
@@ -452,7 +465,8 @@
      "note": "al-Mughnī's rationale for shufʿa on the aḥad shayʾayn reading (the ground position 1 rests on). Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "58b5d416958fec899f869bee54d886d12412d10d68e5022245a4dde0b45a23a4"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f017",
@@ -468,7 +482,8 @@
     }
    ],
    "advantages": [],
-   "searched": "Position 1 (not trade wealth without intention): no argument in al-Mughnī (zakāt al-tijāra), al-Sharḥ al-Kabīr, al-Mubdiʿ, al-Kāfī, Sharḥ al-Muntahā v01 p394; Kashshāf v02 p244 gives only position 0."
+   "searched": "Position 1 (not trade wealth without intention): no argument in al-Mughnī (zakāt al-tijāra), al-Sharḥ al-Kabīr, al-Mubdiʿ, al-Kāfī, Sharḥ al-Muntahā v01 p394; Kashshāf v02 p244 gives only position 0.",
+   "positions_sha256": "63fbb9cf7f73820e8e12448410e908cea7f759a9195d77911ab881162f06f1d6"
   }
  ]
 }

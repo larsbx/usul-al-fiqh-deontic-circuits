@@ -34,7 +34,8 @@
      "note": "For breach, by custom, Ibn Rajab's preference. A stated rationale and qiyās al-manṣūṣ, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d824afe45cda5b390833e0bd99a0c73d062cefd34b77ac2f6890c1f14ff106b6"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f010",
@@ -67,7 +68,8 @@
      "note": "Supports suspending the donee's position until the outcome is known, which is the basis of Taqī al-Dīn's objection. A stated rationale, so qiyas; it bears on disposal only by implication."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "dc912afe79f301ce2c902762ae22dd1f36bb7645e4b0b9331e8310d956ea1995"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f004",
@@ -91,7 +93,8 @@
      "note": "al-Qāḍī's reason for reading al-Khiraqī as mutual consent and denying compulsion. A stated rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "aa310ac3b75d474be03d0244d5144ba3da63ec033ba6c1f59bbc59b383f851db"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f006",
@@ -124,7 +127,8 @@
      "note": "al-Qāḍī's reading of the naṣṣ, followed by the later aṣḥāb (al-Inṣāf: «وعليه جماهير الأصحاب»). Aṣl: the maghrūr in marriage; ʿilla: loss caused by another's deception. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "a1ef6ed96537234d8fdc1a22346f54a360a0f95af364d55faf7bf7f7aec5f254"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f007",
@@ -166,7 +170,8 @@
      "note": "The only reason al-Inṣāf records for the riwāya, as al-Qāḍī and Ibn ʿAqīl report it. Aṣl: the musta'īr's planting. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ab3e7772fcc772e51b2797539f61ace961a7ad0ca0f35894f31f6683aefc9019"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f002",
@@ -199,7 +204,8 @@
      "note": "For Abū Bakr's riwāya (also Abū Ḥanīfa and al-Shāfiʿī's other view) that the return undoes the ṣarf. A stated rationale resting on the ṣarf's hand-to-hand condition, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "830329484721d3d439818c03afb8e4df584387f557b9e2451512568d3ff9c49a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f005",
@@ -223,7 +229,8 @@
      "note": "Recorded by al-Inṣāf as the ground of Aḥmad's naṣṣ. Qiyas. The excerpt runs through the qualifier that follows in the source."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3a201bf0bd34412f6caec60a29302aa8db3ea4a6a013306966321ac2b2399d72"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f006",
@@ -274,7 +281,8 @@
      "note": "Ibn Qudāma reports Ibn ʿUmar as selling the hide and giving its price in charity (v09:p451), so the ṣaḥāba differ: aqrabSahabi."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "50120ad134c0dad9201aa880f4d97b9dc312835008ab5ce2c7d078d07b27e838"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f007",
@@ -316,7 +324,8 @@
      "note": "Abū al-Khaṭṭāb's argument from the madhhab's own nuṣūṣ. A rational inference, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8842c65a7ea688649cb3fbe4bc80da127e40040cf4498980ab5a8a9f905f81a2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f009",
@@ -349,7 +358,8 @@
      "note": "Given as al-Shāfiʿī's view agreeing with al-Qāḍī. Aṣl: sale. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "9f49290bae63637a3f4ea5a2314c9a6f1e09d0b372e9a880e113b4867b0d1dd6"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f010",
@@ -373,7 +383,8 @@
      "note": "al-Qāḍī is the holder of 'not freed'; the invalid iʿtiyāḍ cannot free him. Aṣl: dayn al-salam; ʿilla: a debt not settled. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "669b6ecf0fd12f9e9ea8c3c5581a2640ec5dcc3d3f0d9acbc5ef9c32a2cc0df0"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f011",
@@ -397,7 +408,8 @@
      "note": "For breach. A linguistic rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "452fde79c08dc9909079c104c6abcb52600524fedc637e170f239ccea0920931"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f003",
@@ -439,7 +451,8 @@
      "note": "Given for Abū Ḥanīfa, a non-Ḥanbalī holder of merging; the source gives no reason for Abū Bakr's ẓāhir. A stated rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "27f214c52ceeb2b68228540a41c40469f5a6df7057b7f62de838807d1dbeb2db"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f004",
@@ -472,7 +485,8 @@
      "note": "For the other riwāya (also Abū Ḥanīfa) that she begins anew. Aṣl: the first divorce after consummation. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6f2da13e107dd04a1f5c20756af8fd88823d55f6440ce95f41c69e9566563d27"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f005",
@@ -543,7 +557,8 @@
      "note": "Between the two zanni ḥadīths: Ibn ʿAbbās's report is specific to an estate whose division Islam reaches, while «لا يرث الكافر المسلم» is general on unbelievers inheriting; the specific is preferred. The specificity is in the wording itself; the source does not name it khāṣṣ. Basis: applied — the excerpt shows the property, but no source compares the two proofs; the bank applies the uṣūl murajjiḥ.",
      "basis": "applied"
     }
-   ]
+   ],
+   "positions_sha256": "a3ffca3954a73ff08d6b2fdda68cccec81fafcaedf85ba8e26f437715f2fa994"
   }
  ]
 }

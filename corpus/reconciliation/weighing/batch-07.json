@@ -34,7 +34,8 @@
      "note": "Second rationale for the same wajh in al-Kāfī: the word does not fit continuation. Stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "158fecce91d5727e0f7ac86477712cd6bc9173b88ae0172133c08f9d67b2eaa2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q079.f001",
@@ -67,7 +68,8 @@
      "note": "Ibn Rajab's support for the tawjīh that the crop is the sower's, with rent recoverable from the usurper. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "da8e684afd05192b840699898c5ea779fd06eb2e7d2f3b841213ff263b7e5dcc"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f004",
@@ -100,7 +102,8 @@
      "note": "Cited for the riwāya (Aḥmad b. Saʿīd; most jurists) that the sale stands. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f27e339173acdab3ca540b7046c461ea3c51a6217c716d41a25604f0128c927b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f000",
@@ -133,7 +136,8 @@
      "note": "Given against Mālik and Abū Ḥanīfa for the lineage definition. Linguistic/stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c4b6770cbe69f259b76a8b916bd63cc329f96cebe178e6a2df8fc5f6421d719b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q122.f002",
@@ -166,7 +170,8 @@
      "note": "Ibn Rajab's account of why the naṣṣ generalises the second tier. Stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7623909491cac58b47ebf406e60ec7d85e0ef906db6ae8cc18c75db71e003b82"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f002",
@@ -208,7 +213,8 @@
      "note": "The direct argument for the obligation on these facts; aṣl the bankrupt compelled to earn, ʿilla capacity to earn as wealth. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3e9de0d0d229f6c0ed896296466be2c8339f2e8f60ce8e06b214683910e5b449"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f003",
@@ -270,7 +276,8 @@
      "note": "Both zanni: position 1's ḥadīth is the Prophet's saying («خذوا ما وجدتم، وليس لكم إلا ذلك»), position 0's Surraq report is of his deed (باع سرقا), so qawl over fiʿl. The source itself prefers position 0, calling Abū Saʿīd's report a qaḍiyyat ʿayn. Basis: applied — the excerpt shows the property, but no source compares the two proofs; the bank applies the uṣūl murajjiḥ. The source prefers the other side (Abū Saʿīd's report as a qaḍiyyat ʿayn), a consideration not yet modelled.",
      "basis": "applied"
     }
-   ]
+   ],
+   "positions_sha256": "e94513c6cd3a1eebb43147df1a64585426f1aea24aaf7f2049c20ec99a1ff40d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f005",
@@ -303,7 +310,8 @@
      "note": "Rationale for the madhhab, stated against the earner riwāya explicitly. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c6f8a2ac7fed27bbb5a6d696cd1fdac5008d2fded7418521a475466560488c44"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f006",
@@ -327,7 +335,8 @@
      "note": "Directly for these facts. Stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d34095a374fb41ef5780290d00b98eb80df7b0f90596d0450ac659ce12861a74"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f000",
@@ -351,7 +360,8 @@
      "note": "Cited for the riwāya that he is liable by its like fresh. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "16355e015b3e290e1f961b0026af2b0f73d9eeb694978fc6dfd4e86f0e3ed2a8"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f001",
@@ -393,7 +403,8 @@
      "note": "Same ruling (the greater of value or a like). Stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ef8ea650558bc8db284e51e04f665847c3d2ef86d6d9180696468c9df975eb63"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f001",
@@ -435,7 +446,8 @@
      "note": "The āya concerns marriage proposals and is carried over to qadhf: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "5ea9fe7fc0ca638a773e61f7d406252aa7cdc2ac20b47b7177c08e94ed2273b7"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f003",
@@ -459,7 +471,8 @@
      "note": "Cited for the naṣṣ that he becomes an apostate and is compelled to Islam. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e53878a684b0dedde737d648ed3313038aac873f7802154490e7182132286f34"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f007",
@@ -492,7 +505,8 @@
      "note": "The third riwāya; on the annotated branch (known for theft) it coincides with position 1's ruling. Stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "10ae8bba1244bfecb95eae02bc8bab1b8c6f6eedec4c4cd15afb38332bda5412"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f009",
@@ -516,7 +530,8 @@
      "note": "Cited for the madhhab that the unconditioned hiba entails no thawāb. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "41e115c6e10937f2a23cef2e51488580b6eee4f941afeba9ca61d628dc809671"
   }
  ]
 }

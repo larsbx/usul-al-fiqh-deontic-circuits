@@ -26,7 +26,8 @@
      "who": "Ibn Mufliḥ, al-Furūʿ",
      "note": "The buyer's stipulation that the seller carry or harvest the thing sold is valid «على الأصح»."
     }
-   ]
+   ],
+   "positions_sha256": "a00132ede3489d05d01a2acf61210b584b286136d4f7f33ccac42466a3aadcbf"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f002",
@@ -62,7 +63,8 @@
      "who": "al-Ḥajjāwī, al-Iqnāʿ",
      "note": "The Iqnāʿ rules decisively that the condition is valid in the place of contract, as emphasis, and elsewhere."
     }
-   ]
+   ],
+   "positions_sha256": "5de8c94ff5fc69742577dd6d50faf68c87687a4e0ab77aa0cc5e674885bfc678"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f001",
@@ -91,7 +93,8 @@
      "who": "al-Ḥajjāwī, al-Iqnāʿ",
      "note": "In a sale of land holding plants cut again and again or bearing again and again (raṭba, cucumber, aubergine), the roots go to the buyer, stated decisively without the tree's condition."
     }
-   ]
+   ],
+   "positions_sha256": "ae08b7a451cfe69729d583fb79542ffdfaa9bbd7f91350eae49b46bfb455df36"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f002",
@@ -127,7 +130,8 @@
      "who": "al-Buhūtī, Kashshāf al-qināʿ",
      "note": "al-Buhūtī glosses the Iqnāʿ's «ورطبة ونحوه» to include what bears again and again, cucumber and aubergine: the landowner may take it for its cost, like crops."
     }
-   ]
+   ],
+   "positions_sha256": "1edbafd0e6404eb0a9a3c8a9865b7c874e699ed1e2ae6fad38e10d01fcb24203"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f004",
@@ -147,7 +151,8 @@
      "who": "al-Buhūtī, Kashshāf al-qināʿ",
      "note": "A musāqāh on what bears again and again (cotton, melon beds, aubergine) is invalid, «لأن ذلك ليس بشجر», and a muzāraʿa on it is valid."
     }
-   ]
+   ],
+   "positions_sha256": "1480bb6bcc9e556bbe40f323abb9001cbca54366fbdb8ff4b1f6c8f872c310ad"
   }
  ]
 }

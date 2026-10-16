@@ -61,7 +61,8 @@
      "note": "Rational analogy for the second riwāya."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "81fe0aa9480c3e45ec549da1d3e004ad373a264058ac69d43a6810620fffdfa4"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f002",
@@ -103,7 +104,8 @@
      "note": "The «لأن… كما لو» rationale for the mashhūra, with an aṣl (two vowed ḥajjs, one performed). So qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e637ce4b24f410dafa8ce8dbd2dd34a4842fa8df22f481e53e4cabc20222756e"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f003",
@@ -145,7 +147,8 @@
      "note": "A rationale («ولأنهما اتفقا…») for the buyer's word on oath: the ordinary rule of claim and denial, with the ḥadīth-based exception kept to its own case («ففيما عداه يبقى على القياس»). The source itself calls it qiyās, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "9e0301a66cf9acf57e895aa9047eb3f362295a24430fd737052b72b047ab407d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f001",
@@ -196,7 +199,8 @@
      "note": "Same outcome (invalid) on the facts. The argument rests on a condition of the contract plus jahāla, so it is a rational argument (qiyās tier)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "76b741bbeead11459cbe0f1970eb271d2f5921a9bddc7ae350b25fdde6baeb4c"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f012",
@@ -229,7 +233,8 @@
      "note": "The second riwāya (the payment does not count, so he remains liable) is supported only by this rationale with stated aṣls (kāfir, relative, debts to people). So qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "5eae467ab8535f646bf30163279609b802292eda666ab60db3c19b97fc2f5285"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f005",
@@ -291,7 +296,8 @@
      "note": "Aḥmad prefers the ʿUthmān report as sounder than the ʿAlī report, because Manṣūr's chain does not carry it up to ʿAlī: the ʿUthmān report is connected and the other is not. The source also says Abū Hurayra's ḥadīth for position 0 «لا يثبت». Basis: stated — the source itself compares the two proofs in the excerpt.",
      "basis": "stated"
     }
-   ]
+   ],
+   "positions_sha256": "a186de86c8b7c49b4d4406ff76ee630ddb6b5284a3a5387378054719995c20b2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f001",
@@ -342,7 +348,8 @@
      "note": "An explicit «الأصل» argument for position 1."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8a12fb632f150603b2638357af5c339d58d09f222f1bf0bd964e496097b36d88"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f011",
@@ -375,7 +382,8 @@
      "note": "Further rational argument for the second riwāya."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "00b7f7e52b71a890c9f59208c41ae89015c6db9899ee42761d6ae091ca10e817"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f000",
@@ -435,7 +443,8 @@
      "note": "Connected marfūʿ (Bukhārī) cited in the same chain for the riwāya of prohibition; the source answers it as the Prophet leaving some permitted things out of distaste."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8f0b0db0e7a83446ec858bf36f38826d876f8746b58921f49e3d69ff93d9bc3f"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f001",
@@ -468,7 +477,8 @@
      "note": "Ibn Qudāma's «ولنا» for the voiding of the ṭahāra (answering those who require nothing); analogy on ḥadath."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c958f70ed326e94694fc42ca0da3067f19d28b1fa4f8b5135d85e9e236e607b3"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f002",
@@ -519,7 +529,8 @@
      "note": "Rational analogy given for the equality position."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ffdb90234784ad6e6b0366e0c2fafb00a9fa9bc04eb3aca5224ee8edb4e49abe"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f018",
@@ -543,7 +554,8 @@
      "note": "The proof given for the second riwāya (Abū Bakr's choice), that the mushrik's word holds. It is a rational argument (the doubt that averts killing), not a text, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "dbe99a6829169dd21ad3897be29c1df93da602f26041bf3656d37f8118fc0e51"
   }
  ]
 }

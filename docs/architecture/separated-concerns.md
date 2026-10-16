@@ -168,18 +168,39 @@ it as an encoder result. The annotation is not evidence of source fidelity or
 scholarly acceptance. Numeric/Boolean mismatches cannot use this escape hatch.
 
 The migration adds this metadata to all 53 existing out-of-domain textual positions:
-36 in the `lots` cases and 17 in the lane-B missing-rule cases. It preserves each
+36 in the `lots` cases and 17 in lane B (15 missing-rule positions and two scoped component positions). It preserves each
 ruling, holder, detail, fact, case classification and source reference. Historical
 audit snapshots stay unchanged. Current reconciliation report equality is a
 regression requirement, not an endorsement of its input adequacy.
 
 ### Remaining structural work
 
-Position indices still carry evidence associations. Replace them with stable,
-case-scoped position IDs plus versioned content receipts; a digest of the ordered
-legacy positions is an interim fail-closed migration gate. Never regenerate that
-digest merely to accept an unexplained reorder. Stable IDs survive reorder;
-changed content invalidates the receipt and requires evidence revalidation.
+Position indices still carry evidence associations. They are now protected by
+mandatory `positions_sha256` receipts in every active ledger and weighing entry.
+`position_receipts.digest` hashes canonical JSON containing the version tag
+`usul.positions.v1`, case ID, and complete ordered position records (including
+ruling, holder, detail and outside explanation). Key ordering is irrelevant;
+position ordering, types, holders and interpretation changes invalidate the receipt.
+
+`reconcile.load` checks the ledger and weighing sources independently before any
+overlay. `check`, `resolve` and `attribution` also reject missing or stale receipts.
+An overlay cannot supply a receipt on behalf of an unpinned ledger entry. This is
+an integrity check on an association, not a source-verification or acceptance step.
+
+`python -m usul_corpus.migrate_positions` adds receipts to 1,192 entries in 69 files
+for 596 active cases. Its source manifest pins the canonical pre-migration entry
+data, and a separate digest pins all ordered subject positions. All inputs are
+checked before writing. It is idempotent on its own output and refuses changed
+positions, changed entry data, or stale existing receipts. Normal loading never
+re-pins. Historical snapshots are preserved; a deliberate historical replay must
+explicitly bind its chosen fixture, without promoting it into the active ledger.
+
+This is the interim R1 safety gate. Replace indices with stable, case-scoped
+position IDs in the remaining migration. Stable IDs should survive reorder while
+changed interpretation content invalidates a versioned receipt. Until then,
+reorders fail closed and require explicit evidence revalidation; they are not
+automatically remapped. Receipts do not detect an initially wrong association or
+prove that a quoted text supports its assigned position.
 
 Admission must eventually return either an explicit blocked/pending result with
 obligations or validated kernel inputs with receipts. Keep these states distinct:
@@ -194,3 +215,17 @@ Do not start by moving all directories, introducing a database, or replacing the
 formal kernels. Extract a boundary with a compatibility adapter, replay its corpus,
 and remove the old path only after the new path demonstrates equivalent behavior
 on valid inputs and rejection of the audited invalid inputs.
+
+### Integration with the independent PR-33 correction
+
+PR #93 (`daeb7887`) independently addressed the same typed-ruling defect as #92.
+This branch incorporates its pinned `migrate_pr33` metadata migration, case-specific
+outside explanations, blank-marker schema guard, broader adversarial tests, and
+fixed `UsulTest.TypedRulings` Lean guards. It retains #92's extracted pure kernel
+and fail-closed direct resolution API. A malformed direct call raises `ValueError`
+instead of returning a conditional result. These branches must not be merged as
+two unrelated implementations; #92 contains the combined implementation.
+
+The original 2,384 policy outcomes and 596 attribution outcomes are preserved.
+The independently authored Lean guards still require an executed Lean build;
+failed or queued CI jobs without executed steps establish no compilation result.

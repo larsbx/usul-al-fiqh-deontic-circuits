@@ -34,19 +34,22 @@
      "note": "Ibn Rajab's reasoning (al-Qawāʿid, q. 5), quoted by al-Buhūtī, for the unqualified statements of most aṣḥāb that it suffices. A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e35b236e5ff6e28dd29927a19698d73f320a2b453d92a0060ba9b1505e565876"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f002",
    "proofs": [],
    "advantages": [],
-   "searched": "No proof argued for either side. Checked al-Mughnī v03:p420 (§§2613–2614, fasting then able to afford the hady: the case of fasting after wujūb only); Kashshāf v02:p454 (reports Ibn al-Zāghūnī against the unqualified statements of most aṣḥāb, with no proof); al-Mubdiʿ v03:p162; al-Inṣāf v03:p516 (reports only). Grepped al-Sharḥ al-Kabīr, al-Kāfī and Sharḥ al-Muntahā for the fast before wujūb with the hady affordable at wujūb."
+   "searched": "No proof argued for either side. Checked al-Mughnī v03:p420 (§§2613–2614, fasting then able to afford the hady: the case of fasting after wujūb only); Kashshāf v02:p454 (reports Ibn al-Zāghūnī against the unqualified statements of most aṣḥāb, with no proof); al-Mubdiʿ v03:p162; al-Inṣāf v03:p516 (reports only). Grepped al-Sharḥ al-Kabīr, al-Kāfī and Sharḥ al-Muntahā for the fast before wujūb with the hady affordable at wujūb.",
+   "positions_sha256": "65a82df755e1c7f771e8b4f816692c221f11e7895458d324785489e1eb15cf51"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f003",
    "proofs": [],
    "advantages": [],
-   "searched": "No source found arguing advanced sheep for twenty-four camels with a birth before the ḥawl. Checked al-Mughnī v02:p472–473 (§1751: advanced zakāt where a birth changes the farḍ, for 120 sheep → second sheep, not the change of kind from sheep to bint makhāḍ); al-Kāfī v01:p418; al-Mubdiʿ v02:p400–401; Kashshāf v02:p267; grepped al-Sharḥ al-Kabīr and Sharḥ al-Muntahā for «أربع شياه»/«أربعا وعشرين» with تعجيل/نتج."
+   "searched": "No source found arguing advanced sheep for twenty-four camels with a birth before the ḥawl. Checked al-Mughnī v02:p472–473 (§1751: advanced zakāt where a birth changes the farḍ, for 120 sheep → second sheep, not the change of kind from sheep to bint makhāḍ); al-Kāfī v01:p418; al-Mubdiʿ v02:p400–401; Kashshāf v02:p267; grepped al-Sharḥ al-Kabīr and Sharḥ al-Muntahā for «أربع شياه»/«أربعا وعشرين» with تعجيل/نتج.",
+   "positions_sha256": "92ae7b83ec9542a967edd8a91cb2ce71b74343fcb33d7b58f1671a6ab35efb94"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f004",
@@ -88,7 +91,8 @@
      "note": "Given in al-Mughnī for al-Shāfiʿī, a non-Ḥanbalī holder of al-Qāḍī's ruling (no repetition). It counts for that ruling. Analogy on the adult: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3e7fe47911c3dca4660e0215bc7e28dff149385e8cf8deb42152a0432c4c6274"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f004",
@@ -121,7 +125,8 @@
      "note": "Al-Mubdiʿ's rationale for fixing the arsh, which matches Ibn Rajab's «لأن الرد يستدعي مردودا». Al-Talkhīṣ's distinction from khiyār al-sharṭ follows in the same passage. A rational ʿilla: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8f4c584194db075299a6f3bfdedea80b776f353dbdd4b88ab2f1d29db161c9b8"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f005",
@@ -154,13 +159,15 @@
      "note": "Sharḥ al-Muntahā's reason for invalidity whether or not iqāla is faskh. A rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d8b347045e1d789599d799359cc777875ebec9189d1a41b5dedc2550dbd406e7"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f006",
    "proofs": [],
    "advantages": [],
-   "searched": "No proof found for the allocation of loss in «أشركتك في نصفه» on annulment. Checked al-Inṣāf v04:p436–437 (the ishrāk masʾala: shares only); al-Mughnī v05:p015–028 (waḍīʿa in shirka by capital, a different masʾala); grepped al-Mughnī, al-Sharḥ al-Kabīr, al-Mubdiʿ, Kashshāf, Sharḥ al-Muntahā and al-Kāfī for «أشركتك» with loss, profit or perishing, and for profit-shared/loss-on-one formulas."
+   "searched": "No proof found for the allocation of loss in «أشركتك في نصفه» on annulment. Checked al-Inṣāf v04:p436–437 (the ishrāk masʾala: shares only); al-Mughnī v05:p015–028 (waḍīʿa in shirka by capital, a different masʾala); grepped al-Mughnī, al-Sharḥ al-Kabīr, al-Mubdiʿ, Kashshāf, Sharḥ al-Muntahā and al-Kāfī for «أشركتك» with loss, profit or perishing, and for profit-shared/loss-on-one formulas.",
+   "positions_sha256": "883738c69fe5989e5dcecdfa52eb60d09a29a4d7f7a20c9caa7572670282b4c5"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f000",
@@ -202,7 +209,8 @@
      "note": "Al-Kāfī's reason for the third riwāya (the diya on the defendant). Aṣl: a claim of khaṭaʾ: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "930ea5b05d63d8ccbbb61d7eb3910db4f80cd61732e64c6d3c0ef32ebcb724d6"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f001",
@@ -226,7 +234,8 @@
      "note": "Second reason in al-Mughnī for denying the diya when the proof does not establish the deliberate crime. Ibn Rajab's «لئلا يلزم أن يجب بالقتل الدية عينا» is this reason. A rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "53734eecf2a852c413d1b641b85f86422778f1b060c18f7b06fe0e9fa89e165a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f002",
@@ -250,7 +259,8 @@
      "note": "Second reason in al-Mubdiʿ for the same ruling. It covers the value of a slave as the money due by the crime. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1256b5310b8393b88984beca1bfd88f03acdf75a67d45ce0d48ccedc11a64795"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f003",
@@ -274,7 +284,8 @@
      "note": "Al-Kāfī's parallel reasoning for the same ruling. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d5fea2d66bca7ec7b0414679956855b0edcd633c300ae463f8ed879ab1f698ec"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004",
@@ -334,7 +345,8 @@
      "note": "Rational argument in al-Mughnī for two witnesses. Analogy on Shawwāl: qiyas. Al-Mughnī answers it with a distinction (entering the ʿibāda versus leaving it)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "5a40fbfefe7bfb41e33c5b8ce83bcd80053414fefc4a3dbfc2e36925a6f2a226"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011",
@@ -367,7 +379,8 @@
      "note": "The iḥtimāl in al-Sharḥ al-Kabīr (as in al-Mughnī) for accepting the claim of minority, the other wajh. Grounded in «الأصل» (continuance of minority): istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8a7bc13920e4be9dcca723f0f2085b1a516d690cb7b021e80cb2e4851203373b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012",
@@ -400,7 +413,8 @@
      "note": "Al-Mughnī cites the marfūʿ ḥadīth on this question and reads it to cover entry of the time by preponderant belief. A connected āḥād report whose bearing here is by interpretation: zanni."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "02f81d7e63bdc3cf2256ad9b6a309016d269a2c3cb58e0a26e13ca151153b2de"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013",
@@ -424,7 +438,8 @@
      "note": "Second proof in al-Mubdiʿ (repeated in Kashshāf). Analogy on the qibla: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "84682bef75a5ea54645dcd2e30f716c2da1ce45e4143ca1ea89a7f3746e811b1"
   }
  ]
 }

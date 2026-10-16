@@ -23,7 +23,7 @@ from pathlib import Path
 
 from .shards import with_fragments
 
-from . import takhrij
+from . import takhrij, position_receipts
 from .values import same as _same, distinct
 # Compatibility facade: callers retain these names while the pure kernel is isolated.
 from .reconciliation_kernel import (
@@ -77,15 +77,15 @@ def graded(case: dict, entry: dict) -> list[tuple[object, str]]:
             + [(ps[v["position"]]["ruling"], v["grade"]) for v in entry.get("evidence", [])])
 
 
-def _require_positions(case: dict) -> None:
-    if errors := takhrij.position_errors(case):
+def _require_positions(case: dict, entry: dict) -> None:
+    if errors := takhrij.position_errors(case) + position_receipts.errors(case, entry):
         raise ValueError("; ".join(errors))
 
 
 def resolve(case: dict, entry: dict, policy: str = DEFAULT) -> tuple[str, object | None]:
     """Mirror of `Usul.Tarjih.reconcile`: the first stage that offers a ruling; ``unweighed`` while
     no proof is recorded, since holders alone decide nothing."""
-    _require_positions(case)
+    _require_positions(case, entry)
     if entry.get("jam"):
         return "jam", case["expected"]
     if entry.get("naskh"):
@@ -105,7 +105,7 @@ def standing(case: dict, entry: dict) -> str:
 
 def attribution(case: dict, entry: dict) -> tuple[str, object | None]:
     """Mirror of `Usul.Reconcile.byAttribution`: what the procedure would give if attribution were proof."""
-    _require_positions(case)
+    _require_positions(case, entry)
     if entry.get("jam"):
         return "jam", case["expected"]
     if entry.get("naskh"):
@@ -146,8 +146,8 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
     by = {c["far"]: c for c in cases}
     entries = {e["far"]: e for e in ledger["entries"]}
     errs = [f"{c['far']}: an ikhtilāf not in the ledger" for c in candidates(cases) if c["far"] not in entries]
-    invalid = {c["far"]: es for c in cases if (es := takhrij.position_errors(c))}
-    errs += [f"{far}: {err}" for far, es in invalid.items() for err in es]
+    invalid = {c["far"]: errors for c in cases if (errors := takhrij.position_errors(c))}
+    errs += [f"{far}: {error}" for far, errors in invalid.items() for error in errors]
     open_rq = _open_research_questions()
     if len(entries) != len(ledger["entries"]):
         errs.append("duplicate ledger entries")
@@ -159,6 +159,10 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
             errs.append(f"{f}: not an ikhtilāf case")
             continue
         if f in invalid:
+            continue
+        if errors := position_receipts.errors(c, e):
+            errs.extend(f"{f}: {error}" for error in errors)
+            invalid[f] = errors
             continue
         if len(e["grades"]) != len(c["positions"]) or not {x for g in e["grades"] for x in _grades(g)} <= set(GRADES):
             errs.append(f"{f}: one grade per position, from {GRADES}")
@@ -239,7 +243,7 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
             errs.append(f"{enc}: one earlier reading per refinement")
             continue
         frm = frm.pop()
-        for c in (c for c in cases if c["encoder"] == enc and not _same(_old(c, frm), c["expected"])):
+        for c in (c for c in cases if c["far"] not in invalid and c["encoder"] == enc and not _same(_old(c, frm), c["expected"])):
             e = entries.get(c["far"])
             if e is None or _against_proofs(c, e):
                 errs.append(f"{c['far']}: the refinement departs from {frm} against the side the proofs favour")
@@ -376,7 +380,7 @@ def draft_grade(who: str) -> str:
 
 def draft(cases: list[dict], ledger: dict) -> list[dict]:
     have = {e["far"] for e in ledger["entries"]}
-    return [{"far": c["far"], "grades": [draft_grade(p["who"]) for p in c["positions"]], "jam": None, "naskh": None, "note": ""}
+    return [{"far": c["far"], position_receipts.FIELD: position_receipts.digest(c), "grades": [draft_grade(p["who"]) for p in c["positions"]], "jam": None, "naskh": None, "note": ""}
             for c in candidates(cases) if c["far"] not in have]
 
 
@@ -391,6 +395,16 @@ def load(corpus: Path) -> dict:
     base = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {"entries": []}
     ledger = with_fragments(base, p.parent / "entries", key="far")
     over = with_fragments({"entries": []}, p.parent / "weighing", key="far")["entries"]
+    # Check each independent source before merging: an overlay may not hide a
+    # missing/stale ledger receipt, or inherit one in place of its own receipt.
+    cases = {c["far"]: c for c in takhrij.load(corpus)}
+    for origin, entries in (("ledger", ledger["entries"]), ("weighing", over)):
+        for entry in entries:
+            case = cases.get(entry["far"])
+            if case is None:
+                raise ValueError(f"{origin} {entry['far']}: no case for positions receipt")
+            if errors := position_receipts.errors(case, entry):
+                raise ValueError(f"{origin} {entry['far']}: {'; '.join(errors)}")
     by = {e["far"]: {k: e[k] for k in WEIGHED if k in e} for e in over}
     if missing := sorted(set(by) - {e["far"] for e in ledger["entries"]}):
         raise ValueError(f"weighed but not in the ledger: {', '.join(missing)}")

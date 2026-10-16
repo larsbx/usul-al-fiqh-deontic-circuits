@@ -34,7 +34,8 @@
      "note": "The second proof for position 1 in the same passage. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "31fa828b95f2a4cc0fe18e369e51c20bf23a90ecd71dacc6293a2b68a77d2e3a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f001",
@@ -58,7 +59,8 @@
      "note": "Sharḥ al-Muntahā's rationale for recourse with the intention of recourse, permission or none (position 0). Aṣl: paying another's debt. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6cdcd1aa998dedc0c8171e711b2842b4538b2ab57a7013782b4cea40cc52147f"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f005",
@@ -91,7 +93,8 @@
      "note": "Kashshāf (after al-Iqnāʿ) for the gratis spending, with no recourse, when the bayt al-māl cannot pay (position 1's ruling). A stated rationale with the analogy «فهي كنفقة القريب وقرى الضيف» in the same passage: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e38cfd9111bf0b82047763ec6c4ac062a8aea86197d3ddd5e08d65ef2953b17c"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f007",
@@ -115,7 +118,8 @@
      "note": "The ground for the other riwāya (al-Shaʿbī, al-Shāfiʿī) denying recourse, the ruling of al-Qāḍī's takhrīj (position 1); the aṣl «كما لو بنى داره» follows. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "84bf97a2b79ebdbcbf31fa65b6a128eeb1beb7fa662dd77b52a63cd319bd2fd1"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f008",
@@ -148,7 +152,8 @@
      "note": "The ground for the riwāya making him a volunteer without recourse (position 1). Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "df2201e86470820ada4dcf7dc2102611e456790412345294d31f693e493de98a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f009",
@@ -163,7 +168,8 @@
      "note": "al-Mughnī's ground for no recourse for the pledgee who rebuilt the ruined house (position 0, «رواية واحدة»). The ʿilla (not owed by the owner) with the farq from the animal: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f29fe41d66250174423e109dc97dd5828c909f003497d4add8d24564890938b5"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f011",
@@ -196,7 +202,8 @@
      "note": "The ground for the wajh denying recourse (position 1). A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "82ee99143324c04a2c9a1f7b2bf7330ddaadf44769fde6b0fd1f2d8bb90f6249"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f001",
@@ -238,7 +245,8 @@
      "note": "Cited for the Kūfan view that a further divorce in each later ṭuhr of the ʿidda is sunna (position 1's ruling). ʿAlī is reported on the other side (and Ibn Masʿūd himself in another report), so: aqrabSahabi."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "db10237776e08c33738a344ab3a60f8bcc381cb7d49fa51b463ed87f0eaa560b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f002",
@@ -262,7 +270,8 @@
      "note": "The rationale Ibn Ḥāmid gives for the riwāya that ilāʾ from the rajʿiyya is invalid (position 1). An a fortiori analogy from the supervening divorce: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f42c7ee002deb01563d0cb9c3e38b8a2761a68923a05d6b66e3489e54dcad211"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f003",
@@ -286,13 +295,15 @@
      "note": "The ground al-Sharḥ al-Kabīr gives for the wajh (also al-Shāfiʿī's view) that her choice during the ʿidda does not void her option: position 1. A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f0af230cf7349e85d7868743e838018ed97cf7c83d9917bcb06ece9e7eb9e0cc"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f004",
    "proofs": [],
    "advantages": [],
-   "searched": "al-Mughnī v07:p516–518 (conditions for the thrice-divorced woman to become lawful to the first husband), v07:p532–533 and v08:p127–128 (intercourse with the rajʿiyya in the ʿidda); al-Sharḥ al-Kabīr v08:p481–482, v09:p142; al-Mubdiʿ v06:p420; al-Kāfī v03:p150–151; Kashshāf; regex searches for the khalwa-ʿidda intercourse with taḥlīl («يحلها», «الخلوة … لزوجها الأول»). None argues whether intercourse in an ʿidda established by khalwa makes her lawful to the first husband; only al-Inṣāf (v09:p166) records the two riwāyas and al-Mardāwī's «الصواب أنه يحلها» without a proof."
+   "searched": "al-Mughnī v07:p516–518 (conditions for the thrice-divorced woman to become lawful to the first husband), v07:p532–533 and v08:p127–128 (intercourse with the rajʿiyya in the ʿidda); al-Sharḥ al-Kabīr v08:p481–482, v09:p142; al-Mubdiʿ v06:p420; al-Kāfī v03:p150–151; Kashshāf; regex searches for the khalwa-ʿidda intercourse with taḥlīl («يحلها», «الخلوة … لزوجها الأول»). None argues whether intercourse in an ʿidda established by khalwa makes her lawful to the first husband; only al-Inṣāf (v09:p166) records the two riwāyas and al-Mardāwī's «الصواب أنه يحلها» without a proof.",
+   "positions_sha256": "a9ca6e04c87fd6d4f64f4e9d449f1381fe7878a3e563324d2743e8bc199d8776"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f005",
@@ -316,7 +327,8 @@
      "note": "The ground for the other riwāya (position 1) on the same facts. Aṣl: the bāʾin. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "fa9bdcd720e54bae423913dcfce2a52d64b1cf75437c3c854874b9da597e4b89"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f006",
@@ -358,7 +370,8 @@
      "note": "al-Mughnī's own extraction of position 1 in the madhhab: it undercuts the 'no occupation' ʿilla by the unconsummated marriage. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "4c613eba02dff8bd5e63a7ef6f3f5667451e865de6f7d0f1a54b7756e905223b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f007",
@@ -391,7 +404,8 @@
      "note": "al-Mughnī's rationale for position 0. Aṣl: the undivorced wife. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b5a83c12132f3ca9aa9b5f707eb8bb4bc9b7507980fa66f9a2658321bc55733c"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f008",
@@ -424,7 +438,8 @@
      "note": "Said in al-Mughnī of going out for the ḥajj during the ʿidda (contrasted with the widow, who must keep to her home): the rajʿiyya is treated as a wife, whose going out depends on the husband. It supports position 1's ruling on going out, though in the ḥajj context rather than going about generally. A rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7817277f799b4d9f46f7a43ee31e685d3b1bb1430ab0728e1e2eb85a3525c365"
   }
  ]
 }

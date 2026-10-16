@@ -34,7 +34,8 @@
      "note": "al-Qāḍī's argument for denial on exactly these facts. Aṣl: the sneeze-ḥamd intended for both (naṣṣ of Aḥmad); ʿilla: tashrīk of the rukn with a non-rukn in one intention: qiyas. The Sharḥ and al-Mughnī reject the analogy as unlike (the sneeze-ḥamd is not part of the prayer), which is a rebuttal, not a proof for position 0."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "27fd70615cb956bbe79364040d3925a444c5892852dafbf31ab3cdd756e65130"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f008",
@@ -58,7 +59,8 @@
      "note": "Stated for repeating the prostration with repeated recitation and applied in the same breath to two sajdas heard together. Aṣl: ṭawāf rakʿas; ʿilla: causation: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c374d156ae7b279eae5612a033be8665d99662c95c899c7ff2cdf5de1442bf6f"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f010",
@@ -91,7 +93,8 @@
      "note": "The reason given for the riwāya that he prays the ṭawāf rakʿas after the maktūba, which Abū Bakr calls «أقيس» (also held by al-Zuhrī, Mālik, the Ḥanafīs). Aṣl: rakʿatā al-fajr: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b85547aeaff9be32a4ab2a17a11a2d557f163d888215111c859ce69f8d1d1d0e"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f011",
@@ -124,7 +127,8 @@
      "note": "The reason given for the other riwāya on these facts. Aṣl: two obligatory prayers: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3da9e55766e7c92cd3b703fd7af29198d2e7fed885f6b6ffd5fb3e9c88d40ac9"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f012",
@@ -157,7 +161,8 @@
      "note": "The reason al-Mubdiʿ gives for the other riwāya (declared correct by Ibn ʿAqīl and Ibn al-Jawzī). A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b2ef03f818f72ecf768657f4ed6f32f54b5f1c05d99294979ec331109a97fbb9"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f014",
@@ -181,7 +186,8 @@
      "note": "Quoted by al-Buhūtī for the manṣūṣ that one animal intended for both suffices. Aṣl: one prayer intended for two greetings/sunnas: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "4a6d65ca7e038bcd94d70e9a7f0eec9873c3fb875dfed87c09dbe60780920c84"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f002",
@@ -214,7 +220,8 @@
      "note": "The reason al-Mardāwī reports (from Ibn Rajab) for the wajh of al-Qāḍī's al-Mujarrad that liability settles on the depositee. A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "159156d81d56eeb871dca1e4ad046de75bc5fecac5dc8f48e496bccc939ce0b1"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f003",
@@ -247,7 +254,8 @@
      "note": "Cited in al-Mughnī for liability settling on the murtahin who did not know, which is the possibility (al-Mujarrad, Ibn ʿAqīl, al-Muwaffaq in al-rahn) that the hand bears it. Aṣl: the one who knew: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "a2d594499d87bac71a555d70b6e54b4e90b98d044889988065cde437ddcf3364"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f004",
@@ -280,7 +288,8 @@
      "note": "Al-Mardāwī's statement of the second riwāya with its reason on the borrower's facts. A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "9480a6b08ccade999d3b783b4a7c1de81d3cd06d875c904605a2ebc56050425e"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f005",
@@ -313,7 +322,8 @@
      "note": "Ibn Rajab's argument for settling the liability on the usurper (the riwāya al-Mughnī reports in al-rahn). Aṣl: the maghrūr in nikāḥ and the tadlīs of a defect; farʿ: buyer from a usurper: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6aefbf7aaa52b7119db30cfd50f3bba1c785efde62be25ab4422b77c0b0de3fe"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f006",
@@ -329,7 +339,8 @@
     }
    ],
    "advantages": [],
-   "searched": "For position 1 (the takhrīj from sale giving recourse for the value) Ibn Rajab only refers back to «الوجه المذكور في البيع» without a proof of its own here (Taqrīr al-Qawāʿid v01 p214); Kashshāf v04 p102, Sharḥ al-Muntahā v02 p314 and al-Inṣāf v06 p180 state the rule without argument; al-Mughnī's ghaṣb chapter (v05 p201–205) does not treat this hand."
+   "searched": "For position 1 (the takhrīj from sale giving recourse for the value) Ibn Rajab only refers back to «الوجه المذكور في البيع» without a proof of its own here (Taqrīr al-Qawāʿid v01 p214); Kashshāf v04 p102, Sharḥ al-Muntahā v02 p314 and al-Inṣāf v06 p180 state the rule without argument; al-Mughnī's ghaṣb chapter (v05 p201–205) does not treat this hand.",
+   "positions_sha256": "74c424d45917d95e4f2bdadfc1db9ad10829fbb110790f5f3d23f14eaf2f0c9a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f007",
@@ -354,7 +365,8 @@
     }
    ],
    "advantages": [],
-   "searched": "For position 1 (Abū al-Barakāt's takhrīj that the lessee bears no liability at all) Ibn Rajab only says it is built on the view that the maghrūr is not liable at all (Taqrīr al-Qawāʿid v01 p214); al-Inṣāf v06 p181 reports it without argument; al-Mughnī v05 p202–203 and Kashshāf v04 p100 give no proof for it."
+   "searched": "For position 1 (Abū al-Barakāt's takhrīj that the lessee bears no liability at all) Ibn Rajab only says it is built on the view that the maghrūr is not liable at all (Taqrīr al-Qawāʿid v01 p214); al-Inṣāf v06 p181 reports it without argument; al-Mughnī v05 p202–203 and Kashshāf v04 p100 give no proof for it.",
+   "positions_sha256": "e31f2167f09c5b78e2f469bcf0d40fd23f862ed0ec9813e82463b9a39052ee18"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f008",
@@ -387,7 +399,8 @@
      "note": "The wajh Ibn Rajab reports «في المضارب بغير إذن» that the worker has no recourse, with its reason. A stated rationale (loss under his hand): qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d21f5887fc21a494c59f1cdfe8cfc4c2ae19bdb6d96a78f3d989792ba2e41722"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f005",
@@ -420,7 +433,8 @@
      "note": "The analogy offered for the takhrīj. Aṣl: the zakāt collector who is poor takes by two titles: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "067b23462c544a4dae0ac30a08dd428acbaa6d2ba7d86d395ef30fee137b1841"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f006",
@@ -462,7 +476,8 @@
      "note": "The analogy offered for the takhrīj on the poor case. Aṣl: the poor zakāt collector: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d7a3d0e3349ff42ee0fa0cb1c8c27c52d7180213447b73c824b2cc5a7e09739c"
   }
  ]
 }

@@ -21,7 +21,8 @@
      "who": "al-Mardāwī, al-Inṣāf",
      "note": "On the buyer whose land proves another's: the owner uproots the planting and building, «هذا المذهب مطلقا», without making good the loss or taking it at value, «وعليه جماهير الأصحاب»."
     }
-   ]
+   ],
+   "positions_sha256": "a1ef6ed96537234d8fdc1a22346f54a360a0f95af364d55faf7bf7f7aec5f254"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f001",
@@ -56,7 +57,8 @@
      "who": "Ibn al-Najjār, Muntahā al-Irādāt",
      "note": "The Muntahā lists among the conditions of the seller's return that the goods have not increased with an attached increase."
     }
-   ]
+   ],
+   "positions_sha256": "3e2dcacfb08280b8508a1b47305e38954c97ce2eee73fb921bfb55cfbb4f30ea"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f002",
@@ -84,7 +86,8 @@
      "who": "al-Ḥajjāwī, al-Iqnāʿ",
      "note": "The third condition of the father's return: no attached increase that raises its value; the next line, «منع الرجوع»."
     }
-   ]
+   ],
+   "positions_sha256": "91d64d2fad7e38caa89a02f0d13379b129d7a278a9cfc75df905299076ef58b7"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f003",
@@ -113,7 +116,8 @@
      "who": "al-Ḥajjāwī, al-Iqnāʿ",
      "note": "An attached increase of the dower «فهي لها أيضا»; she chooses between giving the half increased or half its value."
     }
-   ]
+   ],
+   "positions_sha256": "3a7cebfa421a4de9ec3e252af665f3294a6410e8565111751fedd03c89eb60a6"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f002",
@@ -141,7 +145,8 @@
      "who": "Ibn al-Najjār, Muntahā al-Irādāt",
      "note": "After barring the son's claim for a debt or «قيمة متلف»: it is established for him in the father's dhimma."
     }
-   ]
+   ],
+   "positions_sha256": "0e890bf1837286a838923d8cb0599f82d32e7bb08a1a9f369fdec57bda3ec12c"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f002",
@@ -169,7 +174,8 @@
      "who": "Ibn al-Najjār, Muntahā al-Irādāt",
      "note": "If it perishes, its whole value, «ولو أنها بيد صاحبها» (the next line)."
     }
-   ]
+   ],
+   "positions_sha256": "6628d42b03430d06bf1505d364bc7ed307b8eaa9e39425852789a16bd9306224"
   }
  ]
 }

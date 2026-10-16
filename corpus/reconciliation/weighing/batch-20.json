@@ -25,7 +25,8 @@
      "note": "A takhrīj of this case on the missed-prayers case by the shared ʿilla of prohibition: position 0. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "60a1ebf6f7d01ca6dc9915c2dfff4a861576c977d097d338fe565ea9817f228c"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f001",
@@ -58,7 +59,8 @@
      "note": "Same ʿilla, stated for the more correct view: position 0. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "24ee88713be458ef4e72bed555ab98a2f0f5a41fae207498bd2d807fa612548d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f002",
@@ -100,7 +102,8 @@
      "note": "Cited for those (Abū Ḥanīfa and others) who permit the fajr sunna after the iqāma, which entails that it is concluded: the ruling of position 1, though only for the fajr sunna, not the unrestricted voluntary prayer. Ṣaḥāba disagree (Abū Hurayra, Ibn ʿUmar): aqrabSahabi."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0e44d08835436185729957f94aaf064082aa0e6ef60881e2bff33a3cc55564d1"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f007",
@@ -133,7 +136,8 @@
      "note": "The rationale the Sharḥ gives for Aḥmad's distinction between three with one unlawful (avoid all) and the many (take out the share); it supports withholding from the whole in the few (position 0), though the Sharḥ, following al-Qāḍī, makes it a matter of preference rather than duty. A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "63600180b0472fb309149f42ccc8271a5fab919ea665a6de07993bd4e29be51d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f006",
@@ -175,7 +179,8 @@
      "note": "The only ground cited for not reclaiming from the ḥājj: position 1. An explicit qiyās on the warrior: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "cabdf40e290c28ab412a2e2cd196ef8417727aadceb938d989e3d5a7b74ba1a9"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f004",
@@ -226,7 +231,8 @@
      "note": "Same riwāya, rationale stated: position 1. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "4c3618c8ca065c550d482408e443b0f907204c02e8b0a5c624ad59b65802bc03"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f001",
@@ -259,7 +265,8 @@
      "note": "Stated in the course of the acknowledgement-to-an-heir masʾala as the settled ground for the bequest: position 0. Rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "89058a252c1959738fd5eb7e9d8d9d47cf99e71735b9b0fc4c2ec497a1b80a61"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f002",
@@ -292,7 +299,8 @@
      "note": "The ground for the other wajh: position 1. Analogy: qiyas. al-Mughnī answers that the executed manumission is not suspected either, the bar being harm to heirs."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c07257d0be5b923e8945153d458582284a384bb83f9d2e537d2dbcb575a63fdc"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f003",
@@ -325,7 +333,8 @@
      "note": "The basis of the riwāya mukharraja that she does not inherit: position 1. Takhrīj is qiyās: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7ed11c3406d4cdf5fe41e8769ed8ef94a8b45b29d40742aeb0f975c0823a3f00"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f004",
@@ -349,7 +358,8 @@
      "note": "al-Mughnī's «ولنا» for requiring the qualities at both appointment and death (the madhhab per al-Inṣāf): position 1. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d50ab04746fffda5feedebc7e2f8abf411f884a2b8595172e94048fb2af3dbe0"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f005",
@@ -391,7 +401,8 @@
      "note": "Reason for al-Iqnāʿ's «لا المنهدم منها لأن الأنقاض منها»: position 1 (the muʿtamad). qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "441782daa460a84527ccae025d063e0b92f3aace3cf780e2a76533bcbfe0e763"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f004",
@@ -442,7 +453,8 @@
      "note": "The analogy offered for the iḥtimāl that the direct destroyer alone is liable: position 2. Ibn Rajab calls it very weak, because the muḍṭarr has no one forcing him to whom liability could pass; still an analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3b27fdebbbeb628ebe8ec82131b1cf31d000ca07f4cffafbac2da14c97713b55"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f005",
@@ -484,7 +496,8 @@
      "note": "Cited for the non-Ḥanbalīs who hold that the holder is not killed: the same ruling as position 1 (retaliation on the direct killer alone). al-Mughnī gives no grade; a marfūʿ ḥadīth used by its general sense: zanni."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "4c94f91b22912d9ed8fc59886efc8c9570e12d5f53c327b62c0979c4a59fb4d8"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f006",
@@ -508,7 +521,8 @@
      "note": "al-Mughnī's reason for liability on the stone-placer alone (also al-Shāfiʿī's view): position 1, the madhhab per al-Inṣāf. Analogy to the pusher: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ec8ccf1f93584b7a5c10e54dc2032579c704828bcde2cbe5403a8c9ccca912ba"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f008",
@@ -541,7 +555,8 @@
      "note": "Supports position 1 (liability on the holder as well as the killer) in the companion form of the case (game held in the ḥaram). A rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0bc317775a0ae94bd2053ecd0110f4efa0cab3ee017397b6688dd88d1777d6bf"
   }
  ]
 }

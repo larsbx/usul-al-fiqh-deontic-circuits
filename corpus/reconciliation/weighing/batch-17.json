@@ -61,7 +61,8 @@
      "note": "Cited for dividing the disputed share. A stated analogy, so qiyas. al-Inṣāf (v07 p346) gives the same analogy for Abū Bakr's view. No source gives a proof for lot (positions 0 and 2); al-Inṣāf only reports Ibn Abī Mūsā's view and Abū Bakr's weakening of it."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "302ca6e4719e3b991369411026d9daa58c8cc0861af40c9df19b1633f5073d83"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f017",
@@ -103,7 +104,8 @@
      "note": "Given for non-Ḥanbalī holders of the view that both marriages fall without a ruler's annulment, the ruling Ibn Abī Mūsā prefers. Ibn Qudāma rejects it. A stated reason, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "a3ac2e8d01484a082792233197dd6e16dfb1b5b9232e11e62574e5d43a5ba8f3"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f018",
@@ -136,7 +138,8 @@
      "note": "Mubdiʿ's reason for lot here. It also reports «وقيل: لا قرعة، ويحرمن إلا بعد زوج» with no proof. A stated rationale, so qiyas. No proof is given for al-Qāḍī's or Taqī al-Dīn's views."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1d80b171f695ba14abe94b5f4a4e357fa126a89607728e514cceac2dcdee7c45"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f019",
@@ -169,7 +172,8 @@
      "note": "The same rationale in Kashshāf. qiyas. No source gives a proof for the middle slave (position 1) beyond Aḥmad's naṣṣ («تعطى من أوسطهم»), or for Ibn ʿAqīl's wujūh."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "2098f36c4924d786536b0ec82cedc1eacdb4f9bcddf429589c18fc0f152d290b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f023",
@@ -211,7 +215,8 @@
      "note": "Given for non-Ḥanbalī holders of the ruling of the second riwāya (his own designation). A stated reason, so qiyas. Ibn Qudāma rejects it. No proof is given for Aḥmad's tawaqquf (position 2)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f9848397eb30c5c0cfcff81cffb32480bc0c794d278ce12913a07e0561a6ff32"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f024",
@@ -253,7 +258,8 @@
      "note": "Ibn Qudāma's distinction of the aṣḥāb's aṣl. A rationale with analogies, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1bfb7b2524d029945138cc720477e9e777a0dedc9217860c7adfada000bc4861"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f025",
@@ -286,7 +292,8 @@
      "note": "Cited for the naṣṣ that both abstain until certain. An analogy to the two vessels and to breaking an oath over one of two wives, so qiyas. No source gives a proof for lot (position 1)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "28112545e7c1026840eb0a7b00b8d574b63f641818cc47ce47c8858637f8b10e"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f029",
@@ -310,7 +317,8 @@
      "note": "The rationale on exactly these facts rests on the original absence of rajʿa, so istishab. No source gives a proof for lot (position 1), which Ibn Qudāma reports only as Abū al-Khaṭṭāb's iḥtimāl."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f58360836170e8251ca8d16ae779f5bd4959d12d1b57d3c0c77d5332501e2446"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f031",
@@ -361,7 +369,8 @@
      "note": "Ibn Rajab says the lot riwāya is taken from this answer. Apart from the weak child ḥadīth, it carries over the Prophet's lot in other matters (his wives), so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c011795d66d807a49dd0bceb833c7415cdc1cb8082a1c529e6afee2589852949"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f032",
@@ -394,7 +403,8 @@
      "note": "Cited for the wajh that the child goes to the mother. An analogy to the boy who comes of age without sound judgement, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8b7da1e15ff4e5803ba0e6bc8697a28a2e8916fb82677223b899b7bcc342da49"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f033",
@@ -418,7 +428,8 @@
      "note": "The same rationale in Sharḥ al-Muntahā. qiyas. No source gives a proof for Ibn Abī Mūsā's view that the imam designates (position 1); Kashshāf (v05 p538) only reports it."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e9e79657cb73914725c1e8782929eabc045e98d175968ee029286606c79150c6"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f034",
@@ -451,7 +462,8 @@
      "note": "Cited for Abū Bakr's and al-Khiraqī's lot. An analogy, so qiyas. al-Kāfī (v04 p165) gives the same analogy («لأنه اشتبه الحر بالرقيق»)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "cd256a99b5046df9bcf16156bc0f90f2e636ed0df689ce7b819b068d7f8a2107"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f035",
@@ -466,7 +478,8 @@
      "note": "Cited for dividing the reward between the two who each claim to have opened the fortress. A stated reason, so qiyas. No proof is given for the second qawl (lot)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ca6bce26371f38641b329d00a88387e1713a62e2123fe265c933644e488d0b88"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f036",
@@ -490,7 +503,8 @@
      "note": "Stated just after quoting al-Qāḍī's qiyās to cast lots among the oath types, though worded for the divorce-or-ẓihār case to which al-Furūʿ extends the forgotten oath. A stated rationale, so qiyas. No proof is given for tawaqquf (position 1) or for Ibn ʿAqīl's expiation of every oath (position 3)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "da260656352ce037952e204cdf0ba6607dd11f18371d8126a2c808a6d9c879d9"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f040",
@@ -514,7 +528,8 @@
      "note": "The takhrīj itself: an analogy from the two-marriages case (aṣl) to the imamate (farʿ), so qiyas. Ibn Rajab adds that the better-known first riwāya there is annulment."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "46a4129c6a5d6affba86cf562ea25b583d8910f4febce6b8a5929865a2258bed"
   }
  ]
 }

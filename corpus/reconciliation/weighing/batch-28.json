@@ -34,7 +34,8 @@
      "note": "Given in al-Mughnī for al-Shāfiʿī and Isḥāq and for Ibn Baṭṭa's choice (the riwāya also chosen by Ibn Abī Mūsā per al-Mubdiʿ): no make-up without time enough to perform it, position 1. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c4d4e5dbb02eac52de4142a08b8f59d71f749ffab168b96063eca7a03709413d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f003",
@@ -67,7 +68,8 @@
      "note": "Ibn Qudāma's own tarjīḥ in al-Mughnī: one who could not pay is not negligent, so his zakāt lapses with the wealth, position 1 on these facts. A rationale from the purpose of the obligation: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ed1824cc4dc7282e58cda80a8987772c37777e399b740a5b070f7998cd9a9599"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f004",
@@ -100,7 +102,8 @@
      "note": "al-Mughnī's ground for the other riwāya (no make-up): position 1. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "834a54bd8b54c4e897c094d4abc3e221acb78cbb741f78368c17c7a34bb0dec4"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f005",
@@ -142,7 +145,8 @@
      "note": "Second ground for position 1 in al-Mughnī. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "59088dee32cdea1ce4eb9d4b043c2c2be30623e4486e56e108628868fcb881b4"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f015",
@@ -184,7 +188,8 @@
      "note": "Ibn Rajab: the lot is supported by this riwāya (and Aḥmad's naṣṣ in Muhannā's report on «first slave/wife to appear»): position 1. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c1b35ce80a178704a88d0378a4f9776e37b8be97e455e383487f9519d52e1c3a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f018",
@@ -208,7 +213,8 @@
      "note": "al-Majd's first iḥtimāl: he chooses two, position 1. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "2e71a96e976bb0c59cfd278c2baa8944918eaf2974ad504d9f32c0cf40387cf5"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f019",
@@ -241,7 +247,8 @@
      "note": "al-Mughnī gives this for the riwāya (Abū Bakr's choice) voiding both: position 1. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c0cb118a612891f92b6a0650a44bb4ce1f03b86224d3cf36643f0c4a6fef6459"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f002",
@@ -283,7 +290,8 @@
      "note": "Ibn Rajab's ground for the second wajh: position 1. A rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "265c7ca767d0ee4ad71336b6e8227184bdad0f281b747d5031dcdb2423f326fb"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f003",
@@ -334,7 +342,8 @@
      "note": "Ibn Rajab's second maʾkhadh for half the sixth: position 1. A rationale with an analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "34099f6933f9f95c2bde4b265b49cf2c7734c767a224b77e5d7092137a43b767"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f001",
@@ -367,7 +376,8 @@
      "note": "Ibn Rajab's takhrīj on Ibn ʿAqīl's ground: the reservation is not accepted, position 1. A linguistic rationale with an analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "477af13b77a15a2a2e231e8f21ebd88816df748770e3a5ffad9042e0ee52f2e9"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f000",
@@ -409,7 +419,8 @@
      "note": "al-Sharḥ al-Kabīr cites it on the riwāya that the ʿĪds and tashrīq days enter the vow: he does not fast them, makes them up and expiates, the consequence position 1 names. A marfūʿ āḥād report, no grade given: zanni."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "40a6437e81bd0cdc649ccc77e2307078162854a5a9c0f97d671885d01a7aa1ca"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f001",
@@ -442,7 +453,8 @@
      "note": "al-Mughnī reports this for al-Shāfiʿī's one wajh, the same ruling as position 0 (forbidden meat outside the oath; the wajh al-Mardāwī calls «قوي»). It is a proof for that ruling though its holder here is non-Ḥanbalī. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1f16f2b999f431c7f1455fa81d82ad0a6b489b786d1d1b4049c1c7fd0ebdce6e"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f002",
@@ -457,7 +469,8 @@
      "note": "Ibn Rajab lists the wajh excluding heirs (the ẓāhir of Ibn Abī Mūsā and Ibn ʿAqīl) as an instance of this qāʿida: position 0. A stated rationale, not a quoted text: qiyas. No source found arguing position 1 (al-Furūʿ and Kashshāf state «والأصح دخول وارثه» without proof)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "30405f7434acd72373b5cabbfd717ececf7d660c8049fa24e66386865c4359bc"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f003",
@@ -481,7 +494,8 @@
      "note": "Kashshāf (on al-Iqnāʿ «فإن فعل وقع كالموكل»): position 1. Analogy to the principal: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "5baa600de0906d26bfa313b001677a17a80361fb15b854f18e96b4bbf6da9a3e"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f004",
@@ -523,7 +537,8 @@
      "note": "al-Mubdiʿ gives this for the wajh in al-Intiṣār that the iʿtikāf must be in the Friday mosque: position 1. A rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "57aec33dd5403801b875ba1db675dbcb67ef739d182479bac5a037323be1fe73"
   }
  ]
 }
