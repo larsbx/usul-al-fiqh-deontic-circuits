@@ -40,13 +40,16 @@ def test_check_case_requires_an_ikhtilaf_position_to_hold_the_kernel_ruling():
     facts = {"entitled_known": False, "divisible": False, "confusion_category": False}
     glossed = [{"who": "a", "ruling": "divide"}, {"who": "b", "ruling": "lot; whoever wins, his word"}]
     coded = [glossed[0], {"who": "b", "ruling": "lot", "detail": "whoever wins, his word"}]
-    assert takhrij.check_case(_case("genuine_ikhtilaf", facts, "lot", positions=glossed, matches_madhhab=False)) == [
-        "no position holds the expected ruling"]
+    errs = takhrij.check_case(_case("genuine_ikhtilaf", facts, "lot", positions=glossed, matches_madhhab=False))
+    assert "no position holds the expected ruling" in errs
+    assert any("position 1: ruling outside" in e for e in errs)
     assert takhrij.check_case(_case("genuine_ikhtilaf", facts, "lot", positions=coded, matches_madhhab=False)) == []
     abstain = {"suspended": True, "possible": True, "absence_known": False}
     ints = [{"who": "a", "ruling": 1}, {"who": "b", "ruling": False}]
-    assert takhrij.check_case(_case("genuine_ikhtilaf", abstain, True, encoder="abstention_under_possible_condition",
-                                    positions=ints, matches_madhhab=False)) == ["no position holds the expected ruling"]
+    errs = takhrij.check_case(_case("genuine_ikhtilaf", abstain, True, encoder="abstention_under_possible_condition",
+                                    positions=ints, matches_madhhab=False))
+    assert "no position holds the expected ruling" in errs
+    assert any("position 0: ruling outside" in e for e in errs)
 
 
 def test_code_is_typed_identity():

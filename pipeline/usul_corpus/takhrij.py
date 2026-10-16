@@ -517,6 +517,31 @@ def among(v: object, values) -> bool:
     return code(v) in map(code, values)
 
 
+def position_errors(case: dict) -> list[str]:
+    """Positions use encoder outputs or explicitly explained textual alternatives.
+
+    ``outside`` records a range gap; it neither extends ``out`` nor changes ruling
+    identity. It cannot license a mistyped scalar (notably 0/1 for false/true).
+    This check is shared with reconciliation, which can run independently.
+    """
+    enc = ENCODERS.get(case.get("encoder"))
+    if enc is None:
+        return [f"unknown encoder {case.get('encoder')}"]
+    errs = []
+    for i, p in enumerate(case.get("positions") or []):
+        if "ruling" not in p:
+            errs.append(f"position {i}: missing ruling")
+            continue
+        inside = among(p["ruling"], enc["out"])
+        if "outside" in p:
+            if (inside or not isinstance(p["ruling"], str) or not p["ruling"].strip()
+                    or not isinstance(p["outside"], str) or not p["outside"].strip()):
+                errs.append(f"position {i}: outside needs a nonempty textual alternative and explanation, not an encoder output")
+        elif not inside:
+            errs.append(f"position {i}: ruling outside the encoder's output domain; explain a textual alternative with outside")
+    return errs
+
+
 def check_case(case: dict) -> list[str]:
     """Structural problems with a case (empty when well-formed)."""
     errs = []
@@ -543,6 +568,7 @@ def check_case(case: dict) -> list[str]:
             errs.append(f"need {n} is neither fact: nor rule:")
     if "needs" in case and case["class"] not in GAPS and not (case["class"] == "genuine_ikhtilaf" and not case.get("matches_madhhab")):
         errs.append("needs on a case that is not a gap")
+    errs += position_errors(case)
     return errs
 
 

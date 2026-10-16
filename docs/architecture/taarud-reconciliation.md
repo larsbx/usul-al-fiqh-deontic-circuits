@@ -1,5 +1,7 @@
 # Reconciliation: the bank's taʿāruḍ procedure applied to its own furūʿ
 
+PR-33 implementation: [typed ruling identity and explicit range gaps](pr33-typed-rulings-2026-10-16.md).
+
 The bank's kernel already has a procedure for conflicting adilla: `Usul.resolve` (`formal/lean/Usul/Taarud.lean`), after Ibn ʿUthaymīn. It tries jamʿ first, then naskh, then tarjīḥ, and suspends judgement (tawaqquf) when all three fail. The reconciliation points that procedure at the bank's own disputed furūʿ.
 
 ## A ruling stands by its proof (redesign, 2026-10-15)

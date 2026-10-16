@@ -72,7 +72,7 @@ def weighed(entry: dict) -> bool:
 
 
 def rulings(case: dict) -> list[object]:
-    return list(dict.fromkeys(p["ruling"] for p in case["positions"]))
+    return _distinct(p["ruling"] for p in case["positions"])
 
 
 def proved(case: dict, entry: dict) -> list[tuple[object, str]]:
@@ -88,12 +88,12 @@ def stated(case: dict, entry: dict) -> list[tuple[object, object, str, str]]:
 
 
 def top(ps: list[tuple[object, str]], p: object) -> int | None:
-    return max((TIER_RANK[t] for r, t in ps if r == p), default=None)
+    return max((TIER_RANK[t] for r, t in ps if _same(r, p)), default=None)
 
 
 def favours(adv: list[tuple[object, object, str, str]], p: object, q: object, policy: str = DEFAULT) -> bool:
     counted, applied = POLICIES[policy]
-    return any(w == p and l == q and STANDING[m] in counted and (b == "stated" or applied) for w, l, m, b in adv)
+    return any(_same(w, p) and _same(l, q) and STANDING[m] in counted and (b == "stated" or applied) for w, l, m, b in adv)
 
 
 def beats(ps: list[tuple[object, str]], adv: list[tuple[object, object, str]], p: object, q: object,
@@ -107,25 +107,32 @@ def beats(ps: list[tuple[object, str]], adv: list[tuple[object, object, str]], p
 def weigh(rs: list[object], ps: list[tuple[object, str]], adv: list[tuple[object, object, str]],
           policy: str = DEFAULT) -> object | None:
     """Mirror of `Usul.Tarjih.prevail`: the reported ruling that outweighs every other, if any."""
-    return next((p for p in rs if all(q == p or beats(ps, adv, p, q, policy) for q in rs)), None)
+    return next((p for p in rs if all(_same(q, p) or beats(ps, adv, p, q, policy) for q in rs)), None)
 
 
 def support(ps: list[tuple[object, str]], p: object) -> list[int]:
     """Ranks for ruling `p`, strongest first; an unmarked grade counts once however many hold it."""
-    rs = [RANK[g] for r, g in ps if r == p]
+    rs = [RANK[g] for r, g in ps if _same(r, p)]
     return sorted([x for x in rs if x >= RANK["jazm"]] + list(dict.fromkeys(x for x in rs if x < RANK["jazm"])), reverse=True)
 
 
 def prevail(ps: list[tuple[object, str]]) -> object | None:
     """The ruling whose support (ranks, strongest first, compared lexicographically, longer
     beating its own prefix) strictly exceeds every other ruling's."""
-    rulings = list(dict.fromkeys(r for r, _ in ps))
-    return next((p for p in rulings if all(q == p or support(ps, p) > support(ps, q) for q in rulings)), None)
+    rulings = _distinct(r for r, _ in ps)
+    return next((p for p in rulings if all(_same(q, p) or support(ps, p) > support(ps, q) for q in rulings)), None)
+
+
+def _distinct(values) -> list[object]:
+    by_code = {}
+    for value in values:
+        by_code.setdefault(takhrij.code(value), value)
+    return list(by_code.values())
 
 
 def _same(a: object, b: object) -> bool:
-    """Ruling equality without Python's `True == 1`."""
-    return type(a) is type(b) and a == b
+    """The same canonical typed identity as takhrīj and sheaf (PR #90)."""
+    return takhrij.code(a) == takhrij.code(b)
 
 
 def _grades(g: str | list[str]) -> list[str]:
@@ -155,7 +162,7 @@ def resolve(case: dict, entry: dict, policy: str = DEFAULT) -> tuple[str, object
 
 def standing(case: dict, entry: dict) -> str:
     stage, r = resolve(case, entry)
-    return stage if stage in ("tawaqquf", "unweighed") else "for_reading" if r == case["expected"] else "against_reading"
+    return stage if stage in ("tawaqquf", "unweighed") else "for_reading" if _same(r, case["expected"]) else "against_reading"
 
 
 # --- the attribution record (`Usul.Reconcile`): what the labels favour, never a resolution ----------
@@ -172,7 +179,7 @@ def attribution(case: dict, entry: dict) -> tuple[str, object | None]:
 
 def attribution_standing(case: dict, entry: dict) -> str:
     stage, r = attribution(case, entry)
-    return "tawaqquf" if stage == "tawaqquf" else "for_reading" if r == case["expected"] else "against_reading"
+    return "tawaqquf" if stage == "tawaqquf" else "for_reading" if _same(r, case["expected"]) else "against_reading"
 
 
 def _old(case: dict, frm: str) -> object:
@@ -202,6 +209,8 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
     by = {c["far"]: c for c in cases}
     entries = {e["far"]: e for e in ledger["entries"]}
     errs = [f"{c['far']}: an ikhtilāf not in the ledger" for c in candidates(cases) if c["far"] not in entries]
+    invalid = {c["far"]: es for c in cases if (es := takhrij.position_errors(c))}
+    errs += [f"{far}: {err}" for far, es in invalid.items() for err in es]
     open_rq = _open_research_questions()
     if len(entries) != len(ledger["entries"]):
         errs.append("duplicate ledger entries")
@@ -211,6 +220,8 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
         c = by.get(f)
         if c is None or c["class"] != "genuine_ikhtilaf":
             errs.append(f"{f}: not an ikhtilāf case")
+            continue
+        if f in invalid:
             continue
         if len(e["grades"]) != len(c["positions"]) or not {x for g in e["grades"] for x in _grades(g)} <= set(GRADES):
             errs.append(f"{f}: one grade per position, from {GRADES}")
@@ -240,7 +251,7 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
         if (rq := e.get("register")) is not None and rq not in open_rq:
             errs.append(f"{f}: {rq} is not an open research question")
     for c in cases:
-        if "side_check" not in c:
+        if "side_check" not in c or c["far"] in invalid:
             continue
         sc = c["side_check"]
         f = c["far"]
@@ -275,7 +286,7 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
         rulings = [p["ruling"] for p in ps]
         pairs = [(ps[v["position"]]["ruling"], v["grade"]) for v in selected]
         winner = prevail(pairs)
-        if (c["expected"] not in rulings or any(r == c["expected"] for r, _ in pairs)
+        if (not takhrij.among(c["expected"], rulings) or any(_same(r, c["expected"]) for r, _ in pairs)
                 or winner is None):
             errs.append(f"{f}: cited evidence must establish an unambiguous ruling against the original side")
         # A selected subset cannot override a tie or a contrary outcome in the full ledger.
@@ -283,7 +294,7 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
                 and all(type(v.get("position")) is int and 0 <= v["position"] < len(ps)
                         and v.get("grade") in GRADES for v in ev)):
             stage, ruling = attribution(c, e)
-            if stage != "tarjih" or ruling != winner or ruling == c["expected"]:
+            if stage != "tarjih" or not _same(ruling, winner) or _same(ruling, c["expected"]):
                 errs.append(f"{f}: the full ledger must confirm the cited contradiction by tarjih")
     for enc, cs in jams.items():
         frm = {entries[c["far"]]["jam"]["from"] for c in cs}
@@ -291,11 +302,11 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
             errs.append(f"{enc}: one earlier reading per refinement")
             continue
         frm = frm.pop()
-        for c in (c for c in cases if c["encoder"] == enc and _old(c, frm) != c["expected"]):
+        for c in (c for c in cases if c["encoder"] == enc and not _same(_old(c, frm), c["expected"])):
             e = entries.get(c["far"])
             if e is None or _against_proofs(c, e):
                 errs.append(f"{c['far']}: the refinement departs from {frm} against the side the proofs favour")
-        if all(_old(c, frm) == c["expected"] for c in cs):
+        if all(_same(_old(c, frm), c["expected"]) for c in cs):
             errs.append(f"{enc}: a jamʿ must move some farʿ off {frm}")
     return errs
 
@@ -307,7 +318,7 @@ def _by_proof(case: dict, entry: dict) -> object | None:
 def _against_proofs(case: dict, entry: dict) -> bool:
     """The proofs favour a ruling other than the one the jamʿ gives. Tawaqquf does not refute a jamʿ: the
     proofs leave the farʿ open, and jamʿ comes before tarjīḥ."""
-    return weighed(entry) and (p := _by_proof(case, entry)) is not None and p != case["expected"]
+    return weighed(entry) and (p := _by_proof(case, entry)) is not None and not _same(p, case["expected"])
 
 
 def jam_pending(cases: list[dict], ledger: dict) -> list[str]:
@@ -316,11 +327,12 @@ def jam_pending(cases: list[dict], ledger: dict) -> list[str]:
     entries = {e["far"]: e for e in ledger["entries"]}
     frm = {e["jam"]["encoder"]: e["jam"]["from"] for e in ledger["entries"] if e.get("jam")}
     return sorted(c["far"] for c in cases if c["encoder"] in frm and c["far"] in entries
-                  and not weighed(entries[c["far"]]) and _old(c, frm[c["encoder"]]) != c["expected"])
+                  and not weighed(entries[c["far"]]) and not _same(_old(c, frm[c["encoder"]]), c["expected"]))
 
 
 def _str(v: object) -> str:
-    return json.dumps(v if isinstance(v, str) else takhrij._lit(v) if isinstance(v, bool) else str(v), ensure_ascii=False)
+    """A Lean String containing the canonical JSON key, injective across JSON types."""
+    return json.dumps(takhrij.code(v), ensure_ascii=False)
 
 
 def _opt(v: object | None) -> str:
@@ -391,7 +403,7 @@ def report(cases: list[dict], ledger: dict) -> dict:
             "jam_pending": jam_pending(cases, ledger),
             "policies": {pol: {"counts": sorted(POLICIES[pol][0]), "applied": POLICIES[pol][1],
                                "differs_from_default": sorted(c["far"] for e, c in rows
-                                                              if resolve(c, e, pol) != resolve(c, e))}
+                                                              if not _same(resolve(c, e, pol), resolve(c, e)))}
                          for pol in POLICIES if pol != DEFAULT},
             "attribution": {
                 "note": "what the reported holders' labels favour (Usul.Reconcile); a record, not a tarjīḥ",
@@ -400,7 +412,7 @@ def report(cases: list[dict], ledger: dict) -> dict:
                 "stages": dict(sorted(Counter(attribution(c, e)[0] for e, c in rows).items())),
                 "standing": dict(sorted(Counter(attribution_standing(c, e) for e, c in rows).items())),
                 "labels_agree_with_proofs": sum(1 for e, c in rows if weighed(e) and resolve(c, e)[0] == "tarjih"
-                                                and attribution(c, e) == resolve(c, e)),
+                                                and _same(attribution(c, e), resolve(c, e))),
                 "review": [c["far"] for e, c in rows if marked_for_reading(c, e)]}}
 
 
@@ -408,8 +420,8 @@ def marked_for_reading(case: dict, entry: dict) -> bool:
     """The labels give the reading a marked side while the annotation says no madhhab matches: a
     question about the annotation's description, for the human reviewer, never rewritten here."""
     stage, r = attribution(case, entry)
-    top_ = max((RANK[g] for q, g in graded(case, entry) if q == r), default=-1)
-    return stage == "tarjih" and r == case["expected"] and top_ >= RANK["jazm"] and not case.get("matches_madhhab")
+    top_ = max((RANK[g] for q, g in graded(case, entry) if _same(q, r)), default=-1)
+    return stage == "tarjih" and _same(r, case["expected"]) and top_ >= RANK["jazm"] and not case.get("matches_madhhab")
 
 
 # Drafting aid for new tranches: a grade proposed from the annotator's `who`, for review.

@@ -1449,7 +1449,8 @@
     },
     {
      "who": "al-Qāḍī, iḥtimāl 2",
-     "ruling": "mutual agreement (murāḍāt)"
+     "ruling": "mutual agreement (murāḍāt)",
+     "outside": "His slave confused with another's slave: al-Qāḍī gives lot, agreement, or (marked 'ajwad') selling both and dividing the price by value like mixed oil; as co-ownable property divisible=true so the kernel yields divide, the position al-Qāḍī prefers (no madhhab label as such)."
     },
     {
      "who": "al-Qāḍī, 'ajwad mā yuqāl'",
@@ -1523,7 +1524,8 @@
     },
     {
      "who": "wajh",
-     "ruling": "ruler prefers one by some tarjīḥ"
+     "ruling": "ruler prefers one by some tarjīḥ",
+     "outside": "Two arriving together at a public sitting place (and inns, ribāṭs, madrasas): the madhhab is lot, with a wajh that the ruler prefers one; indivisible spot."
     }
    ],
    "matches_madhhab": true,
@@ -1546,7 +1548,8 @@
     },
     {
      "who": "al-Qāḍī (trade)",
-     "ruling": "ruler rotates turns (muhāyaʾa)"
+     "ruling": "ruler rotates turns (muhāyaʾa)",
+     "outside": "Two reach a public mine whose place fits only one: wajhān (lot per al-Mughnī; al-Qāḍī's rotation/lot/appointee-divides/neediest); the slot is indivisible so kernel gives lot; the text marks no position as madhhab."
     },
     {
      "who": "al-Qāḍī (need), iḥtimāl",
@@ -1558,7 +1561,8 @@
     },
     {
      "who": "al-Qāḍī (need), iḥtimāl",
-     "ruling": "most needy first"
+     "ruling": "most needy first",
+     "outside": "Two reach a public mine whose place fits only one: wajhān (lot per al-Mughnī; al-Qāḍī's rotation/lot/appointee-divides/neediest); the slot is indivisible so kernel gives lot; the text marks no position as madhhab."
     }
    ],
    "matches_madhhab": false,
@@ -1620,7 +1624,8 @@
    "positions": [
     {
      "who": "voidness of the bequest",
-     "ruling": "void (outside the allocation domain)"
+     "ruling": "void (outside the allocation domain)",
+     "outside": "Bequest to 'my neighbour Muḥammad' with two neighbours so named: bāṭil, or ṣaḥīḥ with one picked by lot; the earlier fuller treatment gives validity as the naṣṣ and lot for the confused entitled per qiyās al-madhhab, which the refined reading derives."
     },
     {
      "who": "naṣṣ and qiyās al-madhhab (validity, lot)",
@@ -1694,7 +1699,8 @@
     },
     {
      "who": "Aḥmad, manṣūṣ (Ibn Manṣūr)",
-     "ruling": "the least of them (minimum the name covers)"
+     "ruling": "the least of them (minimum the name covers)",
+     "outside": "Bequest of 'one of my slaves' to Zayd: al-Khiraqī gives one by lot, the manṣūṣ gives the least valuable since the right is the legatee's and only the name's minimum is certain; kernel matches al-Khiraqī, not the manṣūṣ."
     }
    ],
    "matches_madhhab": false,
@@ -1717,7 +1723,8 @@
     },
     {
      "who": "al-madhhab / Abū al-Khaṭṭāb",
-     "ruling": "mutual inheritance as if unknown"
+     "ruling": "mutual inheritance as if unknown",
+     "outside": "Two mutual heirs died with order forgotten or disputed: the madhhab treats it as unknown (mutual inheritance), other wujūh are lot, the claimants' oaths (yamīn of a claim), or halving the disputed estate; estate is divisible so kernel gives divide = Abū Bakr's wajh, not the madhhab."
     },
     {
      "who": "Ibn Abī Mūsā",
@@ -1725,7 +1732,8 @@
     },
     {
      "who": "Aḥmad manṣūṣ, al-Khiraqī",
-     "ruling": "each side's heirs swear, no mutual inheritance"
+     "ruling": "each side's heirs swear, no mutual inheritance",
+     "outside": "Two mutual heirs died with order forgotten or disputed: the madhhab treats it as unknown (mutual inheritance), other wujūh are lot, the claimants' oaths (yamīn of a claim), or halving the disputed estate; estate is divisible so kernel gives divide = Abū Bakr's wajh, not the madhhab."
     },
     {
      "who": "Abū Bakr (Kitāb al-Khilāf)",
@@ -1783,11 +1791,13 @@
     },
     {
      "who": "Aḥmad (Abū al-Ḥārith, Muhannā), al-Khiraqī, Abū Bakr",
-     "ruling": "annul both marriages"
+     "ruling": "annul both marriages",
+     "outside": "Two guardians marry her to two men with the earlier unknown: riwāyatān lot vs annulment (faskh), or both bāṭil; Ibn Abī Mūsā marks both bāṭil as more correct, so the kernel's lot matches the non-preferred riwāya; the reading has no field for the inner validity of a marriage (abḍāʿ)."
     },
     {
      "who": "Ibn Abī Mūsā: 'aẓhar wa-aṣaḥḥ'",
-     "ruling": "both void"
+     "ruling": "both void",
+     "outside": "Two guardians marry her to two men with the earlier unknown: riwāyatān lot vs annulment (faskh), or both bāṭil; Ibn Abī Mūsā marks both bāṭil as more correct, so the kernel's lot matches the non-preferred riwāya; the reading has no field for the inner validity of a marriage (abḍāʿ)."
     }
    ],
    "matches_madhhab": false,
@@ -1810,11 +1820,13 @@
     },
     {
      "who": "al-Qāḍī (Khilāf)",
-     "ruling": "all divorced thrice"
+     "ruling": "all divorced thrice",
+     "outside": "Convert with more than four wives divorces (ṭalāq) all thrice: the mashhūr extracts four by lot as the chosen; kernel lot matches the mashhūr."
     },
     {
      "who": "Taqī al-Dīn",
-     "ruling": "divorce here is faskh"
+     "ruling": "divorce here is faskh",
+     "outside": "Convert with more than four wives divorces (ṭalāq) all thrice: the mashhūr extracts four by lot as the chosen; kernel lot matches the mashhūr."
     }
    ],
    "matches_madhhab": true,
@@ -1837,19 +1849,23 @@
     },
     {
      "who": "riwāya 2 / Aḥmad via Muhannā",
-     "ruling": "the middle one"
+     "ruling": "the middle one",
+     "outside": "Dower of 'one of his slaves': riwāyatān (lot vs middle) plus Ibn ʿAqīl's wujūh; the naṣṣ endorses both the middle one and lot, so no position is marked as the madhhab."
     },
     {
      "who": "Ibn ʿAqīl takhrīj",
-     "ruling": "husband chooses"
+     "ruling": "husband chooses",
+     "outside": "Dower of 'one of his slaves': riwāyatān (lot vs middle) plus Ibn ʿAqīl's wujūh; the naṣṣ endorses both the middle one and lot, so no position is marked as the madhhab."
     },
     {
      "who": "Ibn ʿAqīl takhrīj",
-     "ruling": "wife chooses"
+     "ruling": "wife chooses",
+     "outside": "Dower of 'one of his slaves': riwāyatān (lot vs middle) plus Ibn ʿAqīl's wujūh; the naṣṣ endorses both the middle one and lot, so no position is marked as the madhhab."
     },
     {
      "who": "Ibn ʿAqīl ikhtiyār",
-     "ruling": "lot if equal, else the middle"
+     "ruling": "lot if equal, else the middle",
+     "outside": "Dower of 'one of his slaves': riwāyatān (lot vs middle) plus Ibn ʿAqīl's wujūh; the naṣṣ endorses both the middle one and lot, so no position is marked as the madhhab."
     }
    ],
    "matches_madhhab": false,
@@ -1908,11 +1924,13 @@
     },
     {
      "who": "riwāya 2",
-     "ruling": "his own designation"
+     "ruling": "his own designation",
+     "outside": "Record excerpt is cut at the page break; the full case (p355) is an unspecified divorce 'one of you is divorced' («إحداكما طالق»): lot in ẓāhir al-madhhab, a riwāya lets him designate; kernel lot matches the madhhab."
     },
     {
      "who": "Aḥmad (Abū al-Ḥārith)",
-     "ruling": "tawaqquf"
+     "ruling": "tawaqquf",
+     "outside": "Record excerpt is cut at the page break; the full case (p355) is an unspecified divorce 'one of you is divorced' («إحداكما طالق»): lot in ẓāhir al-madhhab, a riwāya lets him designate; kernel lot matches the madhhab."
     }
    ],
    "matches_madhhab": true,
@@ -1935,7 +1953,8 @@
     },
     {
      "who": "Aḥmad (al-Shālanjī), chosen by al-Mughnī",
-     "ruling": "no lot; suspend until clear"
+     "ruling": "no lot; suspend until clear",
+     "outside": "A specific wife divorced (ṭalāq) then forgotten (or the raven case): the madhhab identifies her by lot and the others are permitted, against the riwāya of suspension; kernel lot matches."
     }
    ],
    "matches_madhhab": true,
@@ -1954,7 +1973,8 @@
    "positions": [
     {
      "who": "al-Qāḍī, Abū al-Khaṭṭāb, many later",
-     "ruling": "no divorce; each rests on certainty of his marriage"
+     "ruling": "no divorce; each rests on certainty of his marriage",
+     "outside": "Two men's opposite raven taʿlīqs («إن كان غرابا فامرأتي طالق ثلاثا»): wujūh no-divorce vs lot (naṣṣ: both abstain); the decisive fact (two different husbands, each certain of his own marriage) is not an encoder field; kernel matches the lot wajh, not marked as madhhab."
     },
     {
      "who": "al-Shīrāzī, Ibn ʿAqīl, al-Ḥulwānī, al-Qāḍī (Jāmiʿ)",
@@ -1962,7 +1982,8 @@
     },
     {
      "who": "Aḥmad (ʿAbd Allāh)",
-     "ruling": "both abstain until certain"
+     "ruling": "both abstain until certain",
+     "outside": "Two men's opposite raven taʿlīqs («إن كان غرابا فامرأتي طالق ثلاثا»): wujūh no-divorce vs lot (naṣṣ: both abstain); the decisive fact (two different husbands, each certain of his own marriage) is not an encoder field; kernel matches the lot wajh, not marked as madhhab."
     }
    ],
    "matches_madhhab": false,
@@ -2038,7 +2059,8 @@
    "positions": [
     {
      "who": "wajh 1",
-     "ruling": "the wife's word (she denies, he claims)"
+     "ruling": "the wife's word (she denies, he claims)",
+     "outside": "Husband claims rajʿa and wife claims the end of ʿidda simultaneously: wajhān (wife's word vs lot); no madhhab marked."
     },
     {
      "who": "wajh 2",
@@ -2074,11 +2096,13 @@
    "positions": [
     {
      "who": "al-mashhūr, wajh 1 (Abū Bakr)",
-     "ruling": "no lot; lineage lost"
+     "ruling": "no lot; lineage lost",
+     "outside": "Lineage unattainable by qāfa: the mashhūr denies qurʿa in nasab and then splits «على وجهين» (lost: Abū Bakr; left until puberty to choose: Ibn Ḥāmid), a riwāya attaches by lot; kernel gives lot (the reading lacks Ibn Rajab's nasab exclusion), matching only the non-mashhūr riwāya. Positions 0 and 3 were one glued position until 2026-10-15."
     },
     {
      "who": "Majd (al-Muḥarrar)",
-     "ruling": "attach to both claimants"
+     "ruling": "attach to both claimants",
+     "outside": "Lineage unattainable by qāfa: the mashhūr denies qurʿa in nasab and then splits «على وجهين» (lost: Abū Bakr; left until puberty to choose: Ibn Ḥāmid), a riwāya attaches by lot; kernel gives lot (the reading lacks Ibn Rajab's nasab exclusion), matching only the non-mashhūr riwāya. Positions 0 and 3 were one glued position until 2026-10-15."
     },
     {
      "who": "Aḥmad riwāya (al-Mughnī)",
@@ -2086,7 +2110,8 @@
     },
     {
      "who": "al-mashhūr, wajh 2 (Ibn Ḥāmid)",
-     "ruling": "no lot; chosen at puberty"
+     "ruling": "no lot; chosen at puberty",
+     "outside": "Lineage unattainable by qāfa: the mashhūr denies qurʿa in nasab and then splits «على وجهين» (lost: Abū Bakr; left until puberty to choose: Ibn Ḥāmid), a riwāya attaches by lot; kernel gives lot (the reading lacks Ibn Rajab's nasab exclusion), matching only the non-mashhūr riwāya. Positions 0 and 3 were one glued position until 2026-10-15."
     }
    ],
    "matches_madhhab": false,
@@ -2109,7 +2134,8 @@
     },
     {
      "who": "wajh",
-     "ruling": "to the mother"
+     "ruling": "to the mother",
+     "outside": "Child of seven chooses neither or both parents: lot on the mashhūr, a wajh gives the mother; also two equal custodians before seven take by lot."
     }
    ],
    "matches_madhhab": true,
@@ -2132,7 +2158,8 @@
     },
     {
      "who": "Ibn Abī Mūsā",
-     "ruling": "imam designates"
+     "ruling": "imam designates",
+     "outside": "Several holders of qawad dispute who executes: the more famous wajh is lot, the other the imam's designation; appended multi-victim sub-case adds lot / first-killed / Abū al-Khaṭṭāb's kill-for-all."
     }
    ],
    "matches_madhhab": true,
@@ -2151,7 +2178,8 @@
    "positions": [
     {
      "who": "Aḥmad manṣūṣ (Ibn Hāniʾ)",
-     "ruling": "none may be killed or enslaved"
+     "ruling": "none may be killed or enslaved",
+     "outside": "Excerpt cut at page break; full case: safe-conduct given to one fortress mushrik who then cannot be identified: manṣūṣ forbids enslaving any, the other wajh frees one by lot; the reading lacks the initiating-vs-continuing enslavement distinction."
     },
     {
      "who": "Abū Bakr, al-Khiraqī",
@@ -2197,11 +2225,13 @@
    "positions": [
     {
      "who": "Aḥmad manṣūṣ (Ibn Manṣūr)",
-     "ruling": "nothing binding"
+     "ruling": "nothing binding",
+     "outside": "Oath sworn but its kind forgotten («لو حلف بيمين ولم يدر أي الأيمان هي»): manṣūṣ nothing is due; al-Qāḍī's qiyās lots among oath-types; kernel lot matches only that (Ibn Rajab's introduction excludes lots for unspecified wājibāt, which the reading lacks)."
     },
     {
      "who": "Aḥmad (Ṣāliḥ)",
-     "ruling": "tawaqquf"
+     "ruling": "tawaqquf",
+     "outside": "Oath sworn but its kind forgotten («لو حلف بيمين ولم يدر أي الأيمان هي»): manṣūṣ nothing is due; al-Qāḍī's qiyās lots among oath-types; kernel lot matches only that (Ibn Rajab's introduction excludes lots for unspecified wājibāt, which the reading lacks)."
     },
     {
      "who": "Ibn ʿAqīl iḥtimāl / al-Qāḍī qiyās",
@@ -2210,7 +2240,8 @@
     },
     {
      "who": "Ibn ʿAqīl",
-     "ruling": "expiation for every oath"
+     "ruling": "expiation for every oath",
+     "outside": "Oath sworn but its kind forgotten («لو حلف بيمين ولم يدر أي الأيمان هي»): manṣūṣ nothing is due; al-Qāḍī's qiyās lots among oath-types; kernel lot matches only that (Ibn Rajab's introduction excludes lots for unspecified wājibāt, which the reading lacks)."
     }
    ],
    "matches_madhhab": false,
@@ -2270,7 +2301,8 @@
    "positions": [
     {
      "who": "al-Qāḍī takhrīj riwāya 1 (mashhūr analog: annulment)",
-     "ruling": "both void/annulled"
+     "ruling": "both void/annulled",
+     "outside": "Imamate contracted to two in succession, earlier unknown: takhrīj on the two-guardians case (bāṭil vs lot); Ibn Rajab says the mashhūr there is faskh of both («أنه يفسخ النكاحان»), so lot is the non-mashhūr."
     },
     {
      "who": "al-Qāḍī takhrīj riwāya 2",
@@ -2297,7 +2329,8 @@
     },
     {
      "who": "qīla",
-     "ruling": "both barred until they agree"
+     "ruling": "both barred until they agree",
+     "outside": "Excerpt cut at page break; full case: two judges over one jurisdiction, litigants equal in claim and distance: lot, against a view barring them until they agree; al-Qāḍī prefers the first."
     }
    ],
    "matches_madhhab": true,
@@ -2383,7 +2416,8 @@
    "positions": [
     {
      "who": "riwāya 1",
-     "ruling": "both proofs fall (then as no proof)"
+     "ruling": "both proofs fall (then as no proof)",
+     "outside": "Conflicting proofs over a thing: three riwāyāt (fall away / divide / lot) plus suspension; kernel divides = riwāya 2; no madhhab marked."
     },
     {
      "who": "riwāya 2",
@@ -2397,7 +2431,8 @@
     },
     {
      "who": "Ibn Shihāb",
-     "ruling": "suspend"
+     "ruling": "suspend",
+     "outside": "Conflicting proofs over a thing: three riwāyāt (fall away / divide / lot) plus suspension; kernel divides = riwāya 2; no madhhab marked."
     }
    ],
    "matches_madhhab": false,
@@ -2432,7 +2467,8 @@
     },
     {
      "who": "takhrīj from the ṭalāq riwāya",
-     "ruling": "his designation"
+     "ruling": "his designation",
+     "outside": "Freeing one unspecified slave (or a forgotten specific one): lot, against a takhrīj that he designates (or no lot for the forgotten one); appended two-owner raven case."
     }
    ],
    "matches_madhhab": true,
