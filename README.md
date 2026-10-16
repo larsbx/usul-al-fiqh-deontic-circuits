@@ -4,17 +4,25 @@ Research repository for crystallizing a database-backed, auditable deontic-circu
 
 ## Current research direction
 
-The first branch, `research/deontic-circuits-harness`, established the repository harness and was merged through PR #1.
+The active refactor starts from the authority of each object: pinned source bytes,
+textual occurrences, candidate interpretations, admissible evidence, deterministic
+inference, and generated views. A proof about an encoding does not establish that
+the encoding faithfully represents its source.
 
-The follow-up branch, `research/adq-affect-deontic-path-lift`, pulls the second ADQ source pass into the project. It treats the v37 `deontic_obligation/6` layer as the current strongest affect-deontic fact shape and specifies the missing v38 bridge from affect facts into contextual world/path filtering.
+The first implementation isolates the pure reconciliation operations in
+`pipeline/usul_corpus/reconciliation_kernel.py` and shared value identity in
+`pipeline/usul_corpus/values.py`. `reconcile.py` remains the compatible corpus
+adapter and generator. Reported alternatives outside an encoder's domain remain
+explicit range gaps, and Boolean, numeric, and textual rulings remain distinct.
 
-The migration is framed around three layers:
+The architecture and remaining migration gates are in the existing
+[separated concerns](docs/architecture/separated-concerns.md#repository-wide-authority-boundaries)
+note and [formalization roadmap](docs/roadmap-hanbali-usul-formalization.md#first-principles-refactor).
+This is the first implemented boundary, not a completed repository migration.
 
-1. **Plain-text and LLM authoring harness** for scholarly notes, extraction proposals, explanations, and review workflows.
-2. **Database-backed canonical fact graph** for affect roots, warrants, refinements, opposition, compounds, hukm classifications, defeaters, subjects, modalities, and audit history.
-3. **Small deterministic deontic kernel** for validity, tier discipline, closure, defeat/blocking semantics, quarantine, derivation traces, and path-level affect constraints.
-
-The guiding constraint is that the LLM may propose, normalize, query, and explain, but it must not become the hidden deontic authority.
+The ADQ v37/v38 affect and contextual-path harness remains a supported research
+track. The guiding constraint is unchanged: an LLM may propose, normalize, query,
+and explain, but it must not become the hidden deontic authority.
 
 ## Optional research substrates
 

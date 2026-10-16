@@ -15,7 +15,7 @@
     "lock.json": "fc19b73e603c4feb85e699fb3643d25c431c53a211238335aa25a5ef8ed52c0b",
     "records/openiti-rajab-shamela21730.jsonl": "3ec424ea5e677a4bdaad4ce68295d411f0ea64bf3e4fe608781a60f36c835ca0",
     "takhrij/dalala_furu.json": "9f3591e7bc77c8a4302d6ef3af3e6237f9e05ff7276ccd036ea8939c46e1a4e8",
-    "takhrij/r2_sample1_lane_b.json": "1b21e281eb6f369ad489574654977c7662aeaf09a3f06f45674ed56b81c91bda",
+    "takhrij/r2_sample1_lane_b.json": "c8b652b7f9831d9a952e7c19a9a6372c6b9283da45e896279ca7131e06e6c747",
     "takhrij/rajab_m8_furu.json": "cecff6e34886a3d8ef6b8977ba5f9dafbefbf036b3ccd141826f294be1adf395",
     "takhrij/rajab_m8_pr30_furu.json": "ef1b0ef138ea2a6416962d0d12419496a5aa92fc9db18b604bcf0a2e43cc2342",
     "takhrij/rajab_m8_q127_furu.json": "30b8235eb9b912b13748f15baab93d96bd18bbb146eb6e0639f20c435f1d740a",
@@ -54,7 +54,7 @@
     "takhrij/rajab_m8_tranche7_furu.json": "1a11a26a6765c2e4abd93daf2bc7cb45f84aeeea5e79c6a8b6e1b3da83c6ec76",
     "takhrij/rajab_m8_tranche8_furu.json": "3931bd2b0415488c1f33f27da28d1f164c8355cbd2029d084eac7d374e8f05ee",
     "takhrij/rajab_m8_tranche9_furu.json": "65d72a6ad2b11ccfee124b7f7ea6449a412ceb430322e62567395335abb6c8e0",
-    "takhrij/sadi_furu.json": "77416f91c9861af89ae974759ade551cec62894c774f14519438e902ed3c8c08"
+    "takhrij/sadi_furu.json": "fdad77e7b1f146ed63d8f6df392a022419e76e29ca800805fb7a8900b3497aff"
   },
   "summary": {
     "qawaid": 160,

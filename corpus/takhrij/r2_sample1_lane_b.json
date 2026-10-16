@@ -16,11 +16,13 @@
       "positions": [
         {
           "who": "Ahmad",
-          "ruling": "The listed positive nullifiers; hopes the other acts do not require wudu."
+          "ruling": "The listed positive nullifiers; hopes the other acts do not require wudu.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         },
         {
           "who": "Ishaq",
-          "ruling": "Agrees with all, without the qualification of hope."
+          "ruling": "Agrees with all, without the qualification of hope.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         }
       ],
       "routing_label": false,
@@ -53,11 +55,13 @@
       "positions": [
         {
           "who": "Ahmad",
-          "ruling": "Follow imam or prostrate on a man's back, with the stated restart condition."
+          "ruling": "Follow imam or prostrate on a man's back, with the stated restart condition.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         },
         {
           "who": "Ishaq",
-          "ruling": "Agrees with Ahmad."
+          "ruling": "Agrees with Ahmad.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         }
       ],
       "routing_label": false
@@ -140,11 +144,13 @@
       "positions": [
         {
           "who": "Sufyan (reported)",
-          "ruling": "A triple divorce removes the stated breach condition."
+          "ruling": "A triple divorce removes the stated breach condition.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         },
         {
           "who": "Ahmad; Ishaq agrees",
-          "ruling": "Triple and single are alike: the condition persists until breach."
+          "ruling": "Triple and single are alike: the condition persists until breach.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         }
       ],
       "routing_label": false,
@@ -320,15 +326,18 @@
       "positions": [
         {
           "who": "Ishaq",
-          "ruling": "Valid seclusion entails full mahr, subject to stated impediments."
+          "ruling": "Valid seclusion entails full mahr, subject to stated impediments.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         },
         {
           "who": "Ibn Masud (reported)",
-          "ruling": "Half mahr until intercourse, even if seated between her legs."
+          "ruling": "Half mahr until intercourse, even if seated between her legs.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         },
         {
           "who": "Ibn Abbas (reported)",
-          "ruling": "Half mahr until seclusion."
+          "ruling": "Half mahr until seclusion.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         }
       ],
       "routing_label": false,
@@ -347,11 +356,13 @@
       "positions": [
         {
           "who": "Ishaq",
-          "ruling": "The listed marriages do not restore eligibility for the former husband."
+          "ruling": "The listed marriages do not restore eligibility for the former husband.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         },
         {
           "who": "al-Hasan (reported)",
-          "ruling": "The slave is not a qualifying husband even in the reported permission variant."
+          "ruling": "The slave is not a qualifying husband even in the reported permission variant.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         }
       ],
       "routing_label": false,
@@ -413,11 +424,13 @@
       "positions": [
         {
           "who": "Ahmad",
-          "ruling": "Without illness or other cause, a year from cessation: nine months plus three."
+          "ruling": "Without illness or other cause, a year from cessation: nine months plus three.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         },
         {
           "who": "Unspecified people (قوم)",
-          "ruling": "Wait indefinitely until menstruation returns."
+          "ruling": "Wait indefinitely until menstruation returns.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         }
       ],
       "routing_label": false,
@@ -438,11 +451,13 @@
       "positions": [
         {
           "who": "Ahmad",
-          "ruling": "After intercourse following manumission, no option whether informed or uninformed."
+          "ruling": "After intercourse following manumission, no option whether informed or uninformed.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         },
         {
           "who": "Sufyan",
-          "ruling": "If uninformed she may swear and obtain the option; if informed she has no option."
+          "ruling": "If uninformed she may swear and obtain the option; if informed she has no option.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         }
       ],
       "routing_label": false,
@@ -474,11 +489,13 @@
       "positions": [
         {
           "who": "Ahmad",
-          "ruling": "A dhimmi may be addressed with a kunya."
+          "ruling": "A dhimmi may be addressed with a kunya.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         },
         {
           "who": "al-Awzai",
-          "ruling": "Do not give the Christian a kunya."
+          "ruling": "Do not give the Christian a kunya.",
+          "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
         }
       ],
       "routing_label": false,

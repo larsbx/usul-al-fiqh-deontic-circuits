@@ -1449,7 +1449,8 @@
     },
     {
      "who": "al-Qāḍī, iḥtimāl 2",
-     "ruling": "mutual agreement (murāḍāt)"
+     "ruling": "mutual agreement (murāḍāt)",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "al-Qāḍī, 'ajwad mā yuqāl'",
@@ -1523,7 +1524,8 @@
     },
     {
      "who": "wajh",
-     "ruling": "ruler prefers one by some tarjīḥ"
+     "ruling": "ruler prefers one by some tarjīḥ",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     }
    ],
    "matches_madhhab": true,
@@ -1546,7 +1548,8 @@
     },
     {
      "who": "al-Qāḍī (trade)",
-     "ruling": "ruler rotates turns (muhāyaʾa)"
+     "ruling": "ruler rotates turns (muhāyaʾa)",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "al-Qāḍī (need), iḥtimāl",
@@ -1558,7 +1561,8 @@
     },
     {
      "who": "al-Qāḍī (need), iḥtimāl",
-     "ruling": "most needy first"
+     "ruling": "most needy first",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     }
    ],
    "matches_madhhab": false,
@@ -1620,7 +1624,8 @@
    "positions": [
     {
      "who": "voidness of the bequest",
-     "ruling": "void (outside the allocation domain)"
+     "ruling": "void (outside the allocation domain)",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "naṣṣ and qiyās al-madhhab (validity, lot)",
@@ -1694,7 +1699,8 @@
     },
     {
      "who": "Aḥmad, manṣūṣ (Ibn Manṣūr)",
-     "ruling": "the least of them (minimum the name covers)"
+     "ruling": "the least of them (minimum the name covers)",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     }
    ],
    "matches_madhhab": false,
@@ -1717,7 +1723,8 @@
     },
     {
      "who": "al-madhhab / Abū al-Khaṭṭāb",
-     "ruling": "mutual inheritance as if unknown"
+     "ruling": "mutual inheritance as if unknown",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "Ibn Abī Mūsā",
@@ -1725,7 +1732,8 @@
     },
     {
      "who": "Aḥmad manṣūṣ, al-Khiraqī",
-     "ruling": "each side's heirs swear, no mutual inheritance"
+     "ruling": "each side's heirs swear, no mutual inheritance",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "Abū Bakr (Kitāb al-Khilāf)",
@@ -1783,11 +1791,13 @@
     },
     {
      "who": "Aḥmad (Abū al-Ḥārith, Muhannā), al-Khiraqī, Abū Bakr",
-     "ruling": "annul both marriages"
+     "ruling": "annul both marriages",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "Ibn Abī Mūsā: 'aẓhar wa-aṣaḥḥ'",
-     "ruling": "both void"
+     "ruling": "both void",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     }
    ],
    "matches_madhhab": false,
@@ -1810,11 +1820,13 @@
     },
     {
      "who": "al-Qāḍī (Khilāf)",
-     "ruling": "all divorced thrice"
+     "ruling": "all divorced thrice",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "Taqī al-Dīn",
-     "ruling": "divorce here is faskh"
+     "ruling": "divorce here is faskh",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     }
    ],
    "matches_madhhab": true,
@@ -1837,19 +1849,23 @@
     },
     {
      "who": "riwāya 2 / Aḥmad via Muhannā",
-     "ruling": "the middle one"
+     "ruling": "the middle one",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "Ibn ʿAqīl takhrīj",
-     "ruling": "husband chooses"
+     "ruling": "husband chooses",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "Ibn ʿAqīl takhrīj",
-     "ruling": "wife chooses"
+     "ruling": "wife chooses",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "Ibn ʿAqīl ikhtiyār",
-     "ruling": "lot if equal, else the middle"
+     "ruling": "lot if equal, else the middle",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     }
    ],
    "matches_madhhab": false,
@@ -1908,11 +1924,13 @@
     },
     {
      "who": "riwāya 2",
-     "ruling": "his own designation"
+     "ruling": "his own designation",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "Aḥmad (Abū al-Ḥārith)",
-     "ruling": "tawaqquf"
+     "ruling": "tawaqquf",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     }
    ],
    "matches_madhhab": true,
@@ -1935,7 +1953,8 @@
     },
     {
      "who": "Aḥmad (al-Shālanjī), chosen by al-Mughnī",
-     "ruling": "no lot; suspend until clear"
+     "ruling": "no lot; suspend until clear",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     }
    ],
    "matches_madhhab": true,
@@ -1954,7 +1973,8 @@
    "positions": [
     {
      "who": "al-Qāḍī, Abū al-Khaṭṭāb, many later",
-     "ruling": "no divorce; each rests on certainty of his marriage"
+     "ruling": "no divorce; each rests on certainty of his marriage",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "al-Shīrāzī, Ibn ʿAqīl, al-Ḥulwānī, al-Qāḍī (Jāmiʿ)",
@@ -1962,7 +1982,8 @@
     },
     {
      "who": "Aḥmad (ʿAbd Allāh)",
-     "ruling": "both abstain until certain"
+     "ruling": "both abstain until certain",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     }
    ],
    "matches_madhhab": false,
@@ -2038,7 +2059,8 @@
    "positions": [
     {
      "who": "wajh 1",
-     "ruling": "the wife's word (she denies, he claims)"
+     "ruling": "the wife's word (she denies, he claims)",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "wajh 2",
@@ -2074,11 +2096,13 @@
    "positions": [
     {
      "who": "al-mashhūr, wajh 1 (Abū Bakr)",
-     "ruling": "no lot; lineage lost"
+     "ruling": "no lot; lineage lost",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "Majd (al-Muḥarrar)",
-     "ruling": "attach to both claimants"
+     "ruling": "attach to both claimants",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "Aḥmad riwāya (al-Mughnī)",
@@ -2086,7 +2110,8 @@
     },
     {
      "who": "al-mashhūr, wajh 2 (Ibn Ḥāmid)",
-     "ruling": "no lot; chosen at puberty"
+     "ruling": "no lot; chosen at puberty",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     }
    ],
    "matches_madhhab": false,
@@ -2109,7 +2134,8 @@
     },
     {
      "who": "wajh",
-     "ruling": "to the mother"
+     "ruling": "to the mother",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     }
    ],
    "matches_madhhab": true,
@@ -2132,7 +2158,8 @@
     },
     {
      "who": "Ibn Abī Mūsā",
-     "ruling": "imam designates"
+     "ruling": "imam designates",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     }
    ],
    "matches_madhhab": true,
@@ -2151,7 +2178,8 @@
    "positions": [
     {
      "who": "Aḥmad manṣūṣ (Ibn Hāniʾ)",
-     "ruling": "none may be killed or enslaved"
+     "ruling": "none may be killed or enslaved",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "Abū Bakr, al-Khiraqī",
@@ -2197,11 +2225,13 @@
    "positions": [
     {
      "who": "Aḥmad manṣūṣ (Ibn Manṣūr)",
-     "ruling": "nothing binding"
+     "ruling": "nothing binding",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "Aḥmad (Ṣāliḥ)",
-     "ruling": "tawaqquf"
+     "ruling": "tawaqquf",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "Ibn ʿAqīl iḥtimāl / al-Qāḍī qiyās",
@@ -2210,7 +2240,8 @@
     },
     {
      "who": "Ibn ʿAqīl",
-     "ruling": "expiation for every oath"
+     "ruling": "expiation for every oath",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     }
    ],
    "matches_madhhab": false,
@@ -2270,7 +2301,8 @@
    "positions": [
     {
      "who": "al-Qāḍī takhrīj riwāya 1 (mashhūr analog: annulment)",
-     "ruling": "both void/annulled"
+     "ruling": "both void/annulled",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "al-Qāḍī takhrīj riwāya 2",
@@ -2297,7 +2329,8 @@
     },
     {
      "who": "qīla",
-     "ruling": "both barred until they agree"
+     "ruling": "both barred until they agree",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     }
    ],
    "matches_madhhab": true,
@@ -2383,7 +2416,8 @@
    "positions": [
     {
      "who": "riwāya 1",
-     "ruling": "both proofs fall (then as no proof)"
+     "ruling": "both proofs fall (then as no proof)",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     },
     {
      "who": "riwāya 2",
@@ -2397,7 +2431,8 @@
     },
     {
      "who": "Ibn Shihāb",
-     "ruling": "suspend"
+     "ruling": "suspend",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     }
    ],
    "matches_madhhab": false,
@@ -2432,7 +2467,8 @@
     },
     {
      "who": "takhrīj from the ṭalāq riwāya",
-     "ruling": "his designation"
+     "ruling": "his designation",
+     "outside": "Reported textual alternative outside this encoder's output domain; retained as a range gap."
     }
    ],
    "matches_madhhab": true,

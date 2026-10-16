@@ -204,7 +204,7 @@ def test_non_ijmal_is_only_indirect_support_for_generality():
 
 def _sans_english(case: dict) -> dict:
     return {**{k: v for k, v in case.items() if k != "note"},
-            "positions": [{k: v for k, v in p.items() if k != "who"} for p in case["positions"]]}
+            "positions": [{k: v for k, v in p.items() if k not in {"who", "outside"}} for p in case["positions"]]}
 
 
 def test_review_audit_retains_originals_and_tracks_current_candidates():
@@ -227,7 +227,7 @@ def test_review_audit_retains_originals_and_tracks_current_candidates():
             assert "a man of unknown lineage commits qadhf" in row["original_annotation"]["note"]
             assert "the accused person is enslaved" in c["note"]
         # Later English-only revisions (term guards) touch the note and a position's `who`;
-        # everything the kernel reads is the audited original.
+        # outside is explicit range-gap metadata; all ruling values remain the audited original.
         assert _sans_english(row["original_annotation"]) == _sans_english(c)
 
 
