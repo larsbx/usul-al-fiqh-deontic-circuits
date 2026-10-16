@@ -181,3 +181,14 @@ checkpoint. Partial pages are not evidence, and full required-source replay,
 the final corpus run and CI remain acceptance gates. Current results and any
 subsequent source recovery are recorded in PR #92; no source pin or exclusion
 has been changed.
+
+The complete `a57d4a1` collection then executed all 6,110 collected node IDs:
+5,520 passed, 555 explicitly skipped and 35 failed. Twenty-six failures require
+the remaining `shamela-22592` witness. Nine failures exposed source-verification
+test fixtures that predated the new ordered-position receipt requirement.
+Those fixtures now supply their case subjects and matching receipts, and assert
+a successful source replay before each negative control. All original source
+assertions remain; two additional controls reject missing/stale position receipts
+even when the source bytes are valid. The source-verification and receipt suites
+pass all 52 tests after this fixture repair. Production source verification,
+the receipt gate, locks and exclusion rules are unchanged.
