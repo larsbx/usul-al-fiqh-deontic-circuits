@@ -95,3 +95,14 @@ def test_all_policy_outcomes_match_the_pre_refactor_receipt():
     receipt = hashlib.sha256(json.dumps(rows, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
     assert len(rows) == 2384
     assert receipt == "05ce01715f4945eee8ed9c004fd7aabdbff7af15d8684cf33f6a4ece2edb1585"
+
+
+def test_all_attribution_outcomes_match_the_pre_refactor_receipt():
+    import hashlib
+    cases = {c["far"]: c for c in takhrij.load(ROOT / "corpus")}
+    ledger = reconcile.load(ROOT / "corpus")
+    rows = [[e["far"], reconcile.attribution(cases[e["far"]], e)]
+            for e in ledger["entries"]]
+    assert len(rows) == 596
+    receipt = hashlib.sha256(json.dumps(rows, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+    assert receipt == "6ce40ff5e69386698ca9d1aebe705b75d94ffe700116de360011ce279af83ea7"

@@ -375,3 +375,5 @@ facts or two riwāyas. Drafting no longer treats an author's own aẓhar as ta�
 The audit's own locked-replay command was superseded on merge by `make source-verify`
 (`usul_corpus.source_verify`, PR-06), which replays every excerpt of the active ledger and its
 shards against complete locked witnesses and fails closed.
+
+The [PR-33 integration record](pr33-typed-rulings-2026-10-16.md) consolidates #92/#93: one typed identity, one pinned range-gap migration, preserved resolution receipts and independent Lean guards. Merge remains gated by source replay, Lean compilation and CI.

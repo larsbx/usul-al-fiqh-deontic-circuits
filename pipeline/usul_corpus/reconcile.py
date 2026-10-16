@@ -146,6 +146,8 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
     by = {c["far"]: c for c in cases}
     entries = {e["far"]: e for e in ledger["entries"]}
     errs = [f"{c['far']}: an ikhtilāf not in the ledger" for c in candidates(cases) if c["far"] not in entries]
+    invalid = {c["far"]: es for c in cases if (es := takhrij.position_errors(c))}
+    errs += [f"{far}: {err}" for far, es in invalid.items() for err in es]
     open_rq = _open_research_questions()
     if len(entries) != len(ledger["entries"]):
         errs.append("duplicate ledger entries")
@@ -156,8 +158,7 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
         if c is None or c["class"] != "genuine_ikhtilaf":
             errs.append(f"{f}: not an ikhtilāf case")
             continue
-        if errors := takhrij.position_errors(c):
-            errs.extend(f"{f}: {error}" for error in errors)
+        if f in invalid:
             continue
         if len(e["grades"]) != len(c["positions"]) or not {x for g in e["grades"] for x in _grades(g)} <= set(GRADES):
             errs.append(f"{f}: one grade per position, from {GRADES}")
@@ -187,7 +188,7 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
         if (rq := e.get("register")) is not None and rq not in open_rq:
             errs.append(f"{f}: {rq} is not an open research question")
     for c in cases:
-        if takhrij.position_errors(c) or "side_check" not in c:
+        if c["far"] in invalid or "side_check" not in c:
             continue
         sc = c["side_check"]
         f = c["far"]

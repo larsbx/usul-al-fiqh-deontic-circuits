@@ -73,7 +73,7 @@
                 },
                 "outside": {
                   "type": "string",
-                  "minLength": 1,
+                  "pattern": "\\S",
                   "description": "Explicit explanation for a reported textual ruling outside the encoder output domain; preserves a range gap, not an accepted derivation."
                 }
               }
