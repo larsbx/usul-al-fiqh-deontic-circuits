@@ -147,3 +147,37 @@ the remaining evidence-admission work are still open. See the updated
 The earlier validation record above applies to its named integration commit;
 subsequent validation is recorded in PR #92. No source, runtime or CI blocker is
 closed merely by preserving that record.
+
+## Validation continuation and routing receipt repair
+
+The complete collection at `a41612ff` ran in fresh Python 3.11 processes per
+test file, with `USUL_REQUIRE=swipl,islamqa`. All 6,092 collected node IDs
+were matched against the resulting JUnit cases: 5,490 passed, 574 explicitly
+skipped under existing source rules, and 28 failed. Twenty-seven failures were
+missing required witnesses; the remaining failure was a stale generated
+classical routing report. This is a completed diagnostic, not a passing suite.
+An earlier combined-process run terminated with exit 137; no pass is inferred
+from that termination.
+
+Replaying `signature_routing.render(root, classical_only=True)` changes only
+three `inputs_sha256` receipts in `corpus/routing/type-aware.json`: the two
+migrated suites and `takhrij.py`. Every other report field is identical,
+including rankings, metrics, candidate status and blocked modern evaluation.
+The original failing replay test remains unchanged. Against `3d4d5d8d` plus
+this receipt repair, 69 tests passed across signature routing, typed rulings,
+the ruling boundary and position receipts. Schema and generated checks passed.
+
+`make lean` now passes all 111 jobs and the exported-type drift check on both
+`a41612ff` and `3d4d5d8d`. The local Lean 4.34.1 launcher needed a container
+compatibility shim: only `readlink("/proc/<getpid()>/exe", ...)` is redirected
+to the equivalent `/proc/self/exe`. No Lean source, kernel, elaborator, proof
+or build target was changed. `UsulTest.TypedRulings` and the generated
+reconciliation guards compiled. CI must still execute its ordinary build.
+
+The required `shamela-11122` source was recovered: 832,240 bytes, SHA-256
+`38c8158ec7222b650e99db50b0d185fd75663af7d15edbe75a255e9a3ac4f2c9`, exactly
+the existing lock. Recovery of `shamela-22592` remains in progress at this
+checkpoint. Partial pages are not evidence, and full required-source replay,
+the final corpus run and CI remain acceptance gates. Current results and any
+subsequent source recovery are recorded in PR #92; no source pin or exclusion
+has been changed.

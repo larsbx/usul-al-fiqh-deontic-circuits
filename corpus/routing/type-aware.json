@@ -47721,7 +47721,7 @@
     "corpus/records/shamela-9942.jsonl": "b55665119a973aa1dc17ba322406aa9757bc55a6c6375f4ce862838b71db8c33",
     "corpus/routing/ood.json": "50f1c66ddab050bcf5cf6b27e73b8fffd902bb42ddb97ac7096bdac1df26d02c",
     "corpus/takhrij/dalala_furu.json": "9f3591e7bc77c8a4302d6ef3af3e6237f9e05ff7276ccd036ea8939c46e1a4e8",
-    "corpus/takhrij/r2_sample1_lane_b.json": "1b21e281eb6f369ad489574654977c7662aeaf09a3f06f45674ed56b81c91bda",
+    "corpus/takhrij/r2_sample1_lane_b.json": "d6e2d4afc1a69bfbb605ce5ab8007df6c1d74f6d2b427d4f5fe5e41436947fe3",
     "corpus/takhrij/rajab_m8_furu.json": "cecff6e34886a3d8ef6b8977ba5f9dafbefbf036b3ccd141826f294be1adf395",
     "corpus/takhrij/rajab_m8_pr30_furu.json": "ef1b0ef138ea2a6416962d0d12419496a5aa92fc9db18b604bcf0a2e43cc2342",
     "corpus/takhrij/rajab_m8_q127_furu.json": "30b8235eb9b912b13748f15baab93d96bd18bbb146eb6e0639f20c435f1d740a",
@@ -47761,7 +47761,7 @@
     "corpus/takhrij/rajab_m8_tranche8_furu.json": "3931bd2b0415488c1f33f27da28d1f164c8355cbd2029d084eac7d374e8f05ee",
     "corpus/takhrij/rajab_m8_tranche9_furu.json": "65d72a6ad2b11ccfee124b7f7ea6449a412ceb430322e62567395335abb6c8e0",
     "corpus/takhrij/report.json": "4055edaa2c239921f1511242cedda1506321b7b4299948cadb2cd53214263c57",
-    "corpus/takhrij/sadi_furu.json": "77416f91c9861af89ae974759ade551cec62894c774f14519438e902ed3c8c08",
+    "corpus/takhrij/sadi_furu.json": "acc3c370ec9dcc3d52e1b53b1856223c7f5cd5bc96f3919d697329c5a13c660f",
     "pipeline/usul_corpus/arabic.py": "4a527931c6f3abfb1ccf7f0f300890244192a94c1d34034d79b18a1b98e07b1b",
     "pipeline/usul_corpus/encoders/__init__.py": "4a133416eed03eb1397708ac65895cf7802cd91866ab49428cd493a39d35fa11",
     "pipeline/usul_corpus/encoders/concordance.py": "f527d8841df4052aa40649f00d6837888777e02fcbf804832411f581effc3c39",
@@ -47793,7 +47793,7 @@
     "pipeline/usul_corpus/encoders/rajab_a9.py": "6189b8b1dcc9767188b840594fbf74a052a68a7d90aa54f726c21eb25a674747",
     "pipeline/usul_corpus/routing.py": "e207c68b0094a87a9b9c95b6ac0f62ce88ff7a0d4d53e14cb16b0a4a095bcf54",
     "pipeline/usul_corpus/signature_routing.py": "b7353e5f684590f0b727eab6e326b4a3ca2e6fb6129f861fdf97d475beab6e32",
-    "pipeline/usul_corpus/takhrij.py": "3c3b4711b49566a2fa2473dd78df6c2f16d18bd58d8fa5f18056077df1fb2249"
+    "pipeline/usul_corpus/takhrij.py": "75a765b274df38a62e5acc8e0c11d806c56b22318c3a3021895ce0550dfb2df6"
   },
   "questions_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
 }
