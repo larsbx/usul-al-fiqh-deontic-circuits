@@ -34,7 +34,8 @@
      "note": "The other riwāya with its stated rationale, on these facts (dirham deposit mixed with his money). Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ae28e694874afc056214147d516462c18213a50fe8241fcb716a3b6c2f6714d5"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f001",
@@ -67,7 +68,8 @@
      "note": "The second wajh with its stated rationale, given on these facts (the agent selling below the tolerated loss on the riwāya that the sale holds). Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "17501b61e254cba988780822fd3d2d112cb7cdbbdef55eb2be5e0b38191a636d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f002",
@@ -91,7 +93,8 @@
      "note": "Explains why only the obligatory minimum, not a third, is owed: position 1. The report of the other view («وفيه قول آخر إنه يجب عليه ضمان ثلثها») comes with no proof, and al-Sharḥ calls the first «أقيس وأصح». Analogy to the deposit: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "5459db1ed31f948fde064d49d2558edb18faf8d66a6ba56fb1f2967d58ead1ab"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f003",
@@ -124,7 +127,8 @@
      "note": "The analogy that keeps the usual place under the concession: position 0. Qiyas. No source checked gives a proof for washing all (al-Inṣāf and Ibn Rajab only report the wajh)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "002313cf93c2607cce2f1e95a99d8b09e577a3d826fa44f15faa9134a038a516"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f004",
@@ -148,7 +152,8 @@
      "note": "The second wajh with its ʿilla and an analogy to the sacrifice: position 1 (the least share). Stated for two recipients; the same rationale applies to one. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8553e4b96f99020ef7340692035401de19e1b7f5d503762e159aa8b2e432120c"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f000",
@@ -190,7 +195,8 @@
      "note": "Abū Ḥanīfa's proof for the same outcome as Ibn al-Zāghūnī (the trust resumes when he resumes keeping it): counted for position 1 as a non-Ḥanbalī holder of that ruling. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "421395fe39398e20314835bf3121ba8f509326a06d2d61824d0f591b20176b32"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005",
@@ -214,7 +220,8 @@
      "note": "The other possibility, by analogy to the agent whose agency survives transgression: position 1. Qiyas. («سبتية» is a corruption in the cached text, quoted as it stands.)"
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0d1624043b593dc2cc3d2bbf533af34d15d542d8829d9a96607beadc3eb44035"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f007",
@@ -238,7 +245,8 @@
      "note": "The second wajh on these very facts (the condition known to hold), the one al-Inṣāf and al-Furūʿ trace to al-Kāfī as an iḥtimāl. A stated ʿilla with an analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e7d84070c73581ab44ae8572c05cec270f60b18e4866d5330aea534876634e01"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f002",
@@ -271,7 +279,8 @@
      "note": "Abū Ḥanīfa's proof, and the riwāya from Aḥmad with the same ruling (the gift is his): position 1. Analogy to the gift in dār al-islām: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "211c7a6b8cb2e075b129caf2ef9823759f8e243d805d9c2e4643e30f9088a404"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f001",
@@ -295,7 +304,8 @@
      "note": "The second wajh, «المرجح عند الأكثرين», with its aṣl. Istishab. (Aḥmad's naṣṣ on stepping on unknown dung, cited after it, is the imām's ruling, not a separate dalīl.)"
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "9054c4b072acda98bd6af0ffb2b1c0972d2c9a7e1f2bb107951eadd0b637443a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f002",
@@ -328,7 +338,8 @@
      "note": "The second wajh with its aṣl: position 1. Istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "93716728bde11f574585ad4e75863552d09a204c6bd3a9828934340c56c273c8"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f003",
@@ -361,7 +372,8 @@
      "note": "The iḥtimāl of the author of al-Talkhīṣ with its aṣl: position 1. Istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "181246fb21369947e6268f58d02041633f1666eef1512f0fcd11ff3d18e7de12"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f004",
@@ -403,7 +415,8 @@
      "note": "The Iqnāʿ ruling with al-Buhūtī's aṣl: position 1. Istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d7b41cc98816c228642773207c92bf594085222602b5b582b969c6645c3bf12f"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f005",
@@ -445,7 +458,8 @@
      "note": "The binding on the locus of zakāt that the case note names; on the dhimma view payment is due before receipt: position 1. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7c60a79491ebdc1c4755aec46640a34da9d32192ceebda640356c33276cf4fff"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f006",
@@ -478,7 +492,8 @@
      "note": "Ibn Rajab's takhrīj for position 1, resting on the slave's survival as the aṣl. Istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d9e949321ed924adfc32015ff44c6aab5d37f10224f1b758c45fac4d28b13ca7"
   }
  ]
 }

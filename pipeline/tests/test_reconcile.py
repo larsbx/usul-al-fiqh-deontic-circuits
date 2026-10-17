@@ -8,7 +8,7 @@ from pathlib import Path
 import jsonschema
 import pytest
 
-from usul_corpus import reconcile, takhrij
+from usul_corpus import reconcile, takhrij, position_receipts
 from usul_corpus.__main__ import load_dossier
 
 ROOT = Path(__file__).parents[2]
@@ -38,7 +38,8 @@ def _ikh(far, expected, rulings, matches=False, encoder="successive_contracts", 
 
 
 def _entry(far, grades, jam=None):
-    return {"far": far, "grades": grades, "jam": jam, "naskh": None}
+    return {"far": far, "grades": grades, "jam": jam, "naskh": None,
+            position_receipts.FIELD: position_receipts.digest(_ikh(far, True, [True, False]))}
 
 
 def _proof(position, tier):
@@ -203,8 +204,15 @@ def test_non_ijmal_is_only_indirect_support_for_generality():
 
 
 def _sans_english(case: dict) -> dict:
+    # PR-33 adds only explanations copied from the already recorded case note.
+    # Check their content and range gap before excluding this metadata from the
+    # historical kernel-input comparison; the original receipt stays untouched.
+    for p in case["positions"]:
+        if "outside" in p:
+            assert p["outside"] == case["note"]
+            assert not takhrij.among(p["ruling"], takhrij.ENCODERS[case["encoder"]]["out"])
     return {**{k: v for k, v in case.items() if k != "note"},
-            "positions": [{k: v for k, v in p.items() if k != "who"} for p in case["positions"]]}
+            "positions": [{k: v for k, v in p.items() if k not in {"who", "outside"}} for p in case["positions"]]}
 
 
 def test_review_audit_retains_originals_and_tracks_current_candidates():

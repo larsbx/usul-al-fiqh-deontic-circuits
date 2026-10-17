@@ -7,7 +7,8 @@
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f002",
    "proofs": [],
    "advantages": [],
-   "searched": "No source argues the licence (ijāza) to whoever is born to Fulān. Checked al-Mughnī, al-Sharḥ al-Kabīr, al-Mubdiʿ, al-Kāfī, Kashshāf al-Qināʿ and Sharḥ al-Muntahā for الإجازة للمعدوم, أجزت لمن يولد, الإجازة لمن, لمن يولد لفلان: no hits. The waqf analogue (q107.f003) is argued in al-Mughnī v06:p182, Kashshāf v04:p250 and al-Mubdiʿ v05:p160, but not for the ijāza."
+   "searched": "No source argues the licence (ijāza) to whoever is born to Fulān. Checked al-Mughnī, al-Sharḥ al-Kabīr, al-Mubdiʿ, al-Kāfī, Kashshāf al-Qināʿ and Sharḥ al-Muntahā for الإجازة للمعدوم, أجزت لمن يولد, الإجازة لمن, لمن يولد لفلان: no hits. The waqf analogue (q107.f003) is argued in al-Mughnī v06:p182, Kashshāf v04:p250 and al-Mubdiʿ v05:p160, but not for the ijāza.",
+   "positions_sha256": "87d7da0b617bf9a8be787f9d0cef2f685e536848f0c0d75a434dac8c24a01c3a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f003",
@@ -40,7 +41,8 @@
      "note": "al-Mubdiʿ relays al-Mughnī's reason for validity of the waqf on the non-existent by origin. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "75734ec9f85e803a3b2c1d95594a90d62d00717e92c4d1525573fb88b6d73201"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f005",
@@ -55,7 +57,8 @@
      "note": "Given for the later-born child's inclusion (Ibn Abī Mūsā, Ibn al-Zāghūnī), against al-Tanqīḥ. The only reason given is that he follows the existing children: a stated rationale, qiyas. For position 0 (only those existing; al-Muntahā, Sharḥ al-Muntahā v02:p418 «نصا») no source gives a proof beyond Aḥmad's text."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e09a367882e25bf06078b48ee17df6b92314c14c887332db9e4534851da01e3b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f006",
@@ -79,7 +82,8 @@
      "note": "Same ruling; same kind of reasoning from the founder's wording. Qiyas. No source argues position 0 (the later one does not share)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "cc139776177c82a91fbc62eb462c0bd5ecefb863d6de254b6acd2d551f9084ad"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155.f001",
@@ -130,7 +134,8 @@
      "note": "The ṣaḥāba reports cited for this position, which the source itself calls unsound («لا يصح») and «منقطع»: mursalDaif."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7afe0e528c4990823b216a215d647159eb872c6228fc41955c912a7dd701b459"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f001",
@@ -172,7 +177,8 @@
      "note": "Kashshāf gives this as the support for Taqī al-Dīn's «فلا مهر لها» where the condition is an avoidable act of hers, and itself limits the likeness. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8997973c5387ad96ce3d374ebe02a69acb456835538be6066bd87eb8310e8727"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f002",
@@ -196,7 +202,8 @@
      "note": "Same rationale, given after the āya on divorce for khulʿ «ولو بسؤالها». Qiyas. No source argues position 1 (khulʿ drops the mahr) with a proof."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0f847fa55a7143c1b4de63ed845b56611cc6f930ce958cdb8e07e35625c1e2cc"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f003",
@@ -229,7 +236,8 @@
      "note": "The other riwāya with its reason, on these facts. Stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7fa52430b0b3802d79761ab3b3824b7fc26b262b734735b82e3192c81d49e151"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f008",
@@ -262,7 +270,8 @@
      "note": "Given for the other riwāya (Abū Bakr's choice; also Qatāda and al-Thawrī). Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "21dec26d1f971d01761dc4ab094a196b33f3f99a38aa6a5d94356dced59bbc4f"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f010",
@@ -286,7 +295,8 @@
      "note": "Same ruling, on these facts. Analogy to the sale: qiyas. No source argues position 1 (halving, Taqī al-Dīn) with a proof; al-Furūʿ only gives it as a tawjīh."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0ad7dd3fd51289c67473df326260deb869b90a82e73407c8ab2aba1e03b30568"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f012",
@@ -310,7 +320,8 @@
      "note": "The other riwāya (Muhannā; Abū Bakr) with its reason, on these facts. Stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "53786997274d69f7856d616f718bf532443f7de9d3ba58f1aba2cc8252e69bdf"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f041",
@@ -334,7 +345,8 @@
      "note": "Same facts, same ruling (the lot after the claimant's choice and the nearer judge). Stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7d05433711fd9d0b505161936cad61ab87468418feabd4e7ef38ce8343b94b74"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f045",
@@ -367,7 +379,8 @@
      "note": "Stated with the words «ولا يد», which fits a thing in neither claimant's hand. Analogy to the lot among the freed slaves: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f1512c2ab50463343cc83584fe750e7428e59c98d1c826a032a4252238236466"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f046",
@@ -436,7 +449,8 @@
      "note": "Given for Abū Thawr (and a fourth view of al-Shāfiʿī): a non-Ḥanbalī holder of the same ruling (suspension). Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "5019ba6552871ac070281fbd899d5c2e7d321eda2f690c218565b66b86f7f4a2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f048",
@@ -469,7 +483,8 @@
      "note": "Given for Abū Ḥanīfa and al-Shāfiʿī, non-Ḥanbalī holders of the same ruling; it is the analogy with ṭalāq on which the takhrīj rests. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1108747e576862c7fccbb963081f9bf6d5736c6d5b5ae202aeef0aab77e1b0fa"
   }
  ]
 }

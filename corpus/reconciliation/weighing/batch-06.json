@@ -25,7 +25,8 @@
      "note": "al-Qāḍī's argument for half on exactly the qiṣāṣ-with-excess / poisoned-tool case; Ibn Qudāma notes it is also the Shāfiʿī view. An analogy with a stated ʿilla, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7bd615a533a38e1cb098a5b06a6e6a11f8b50b4f5619e83afbbbc884f5a7a0a7"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f002",
@@ -58,7 +59,8 @@
      "note": "Argued for a share rather than the whole, but only in the sub-case where the first left slaughter while able; Ibn Rajab's half-wajh is derived from the rationale that only the second shot was aggressive. Rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "12a58ab574a8fba4d2ab10d26f01faad4be530cdd2a660084ecbe441d4e12403"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f003",
@@ -91,7 +93,8 @@
      "note": "Given by Ibn Qudāma for the Shāfiʿīs, non-Ḥanbalī holders of the same half/share ruling; the Ḥanbalī wajh (Abū al-Khaṭṭāb's iḥtimāl of half) is reported without proof. Ibn Qudāma rebuts it with the thief whose hand is cut and then wounded. Analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "9841a4e67f255cc5167db6d90693b65234da0ca044ecf9b511487ec83667738a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f004",
@@ -133,7 +136,8 @@
      "note": "The Ḥanbalī wajh for the share, carried over from two muḥrims. Analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "9f0ccb4e67da02cbabd5d3ec2dd3c5bccc83afa763f6f87573c39981f140df62"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f005",
@@ -175,7 +179,8 @@
      "note": "Given for Ḥanafī holders of the same full-dower ruling. Analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0b9605c59c7bd8ed873c8f5ff0db1997f9d6aa58d274f8e13019c3af983d8c00"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q039.f001",
@@ -217,7 +222,8 @@
      "note": "Second argument for invalidity. Analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7956610cef3bb3665c72b65383a83e16d99730ae96440d5b77f141bb0411bbdc"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f002",
@@ -250,7 +256,8 @@
      "note": "The wajh of trust (al-Muqniʿ). Rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b466d8ed6cecc004794490ef0348332ec517e418e85952b5dd6133ee43341ff5"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f001",
@@ -301,7 +308,8 @@
      "note": "One of al-Qāḍī's grounds for invalidity on these facts. Rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7cb2c125a50ec0d45d42bafe73c78f0c27c2f446f8ce1be67e73bb0fb94de4e2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f002",
@@ -334,7 +342,8 @@
      "note": "Same argument in al-Mubdiʿ (also in Kashshāf). Analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "bd5f3ec912541b0162bed006c387dc0545b9ac857251aa1da94c4b84aa31c879"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f003",
@@ -367,7 +376,8 @@
      "note": "Ibn Qudāma's proof that a claim for the principal is not heard before agency is established, which is what requires agency to come first. Rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0ae5946e63ce6731ce0df79309d0a7ba6d1ee0692b337ea909b70944b50033ea"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f004",
@@ -400,7 +410,8 @@
      "note": "Explains why this case is void. Rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "5f6abc62fe164b1834313a1704df0bc01b503f7bbdb381bbffba66d54f977224"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f005",
@@ -415,7 +426,8 @@
      "note": "al-Buhūtī validates the marriage on these facts. No source found arguing the takhrīj against it (Inṣāf and Ibn Rajab only report it). Rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "63872fd0d7e07023c5330249ca29f0507462b5eb58dec05b2b0af6aeae60c5bc"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f006",
@@ -466,7 +478,8 @@
      "note": "The concurrent-freedom rationale Ibn Rajab reports. Ibn Qudāma rejects it because she is not a wife. Analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "38fbc271bcb769e098b6db98d732f003a9dc0c68f684cf66337f72c0f7d7bbd2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f006",
@@ -499,7 +512,8 @@
      "note": "Supports building regardless of muwālāt's status. Analogy, so qiyas. No source argues the other ṭarīq; Mughnī's proofs that muwālāt is a condition are given for interruptions other than prayer and funerals."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "a0198b699ef8bc6c1977a15b39cdfe11c9dcc908a8927a72895e388a8dce8651"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f009",
@@ -541,7 +555,8 @@
      "note": "al-Buhūtī's reason for the madhhab of two. Rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "807f831cfb35a266ebc05139d276638a1b78596330e18dcf6618035b76e3ceb9"
   }
  ]
 }

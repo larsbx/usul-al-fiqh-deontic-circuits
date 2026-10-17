@@ -6,6 +6,14 @@ Turn the ADQ Prolog corpus into a database-backed, auditable deontic-circuit res
 
 Long-range Ḥanbalī uṣūl formalization track (Lean 4, TLA+, Haskell, category theory, type theory): see [`roadmap-hanbali-usul-formalization.md`](roadmap-hanbali-usul-formalization.md).
 
+## Active architecture migration
+
+The repository-wide [first-principles refactor](roadmap-hanbali-usul-formalization.md#first-principles-refactor)
+now organizes work by source, occurrence, interpretation, evidence admission,
+inference and derived-view boundaries. Its first tranche isolates reconciliation
+and typed value identity; the remaining stages have explicit migration gates.
+The ADQ milestones below remain track-specific, not a separate competing refactor.
+
 ## Working principle
 
 Natural language and LLM prompting are allowed at the authoring boundary. They may propose candidate records. They may not directly create accepted normative facts or verdicts.

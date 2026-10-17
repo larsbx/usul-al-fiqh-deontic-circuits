@@ -105,7 +105,8 @@
           "far",
           "grades",
           "jam",
-          "naskh"
+          "naskh",
+          "positions_sha256"
         ],
         "additionalProperties": false,
         "properties": {
@@ -344,6 +345,11 @@
             "type": "string",
             "minLength": 1,
             "description": "Where the weigher looked for the positions' proofs; required when none was found."
+          },
+          "positions_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$",
+            "description": "SHA-256 of usul.positions.v1 canonical JSON: case identity and ordered complete position records. Checked before overlay and resolution."
           }
         }
       }

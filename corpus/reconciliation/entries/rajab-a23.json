@@ -50,7 +50,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "The sharḥ continues with Aḥmad's «الجد لا يجر الولاء، ليس هو كالأب»."
         }
-      ]
+      ],
+      "positions_sha256": "f36c48c4c7386990493291ab094b12adf37e2abb923e52a171b7351283379a16"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f007",
@@ -121,7 +122,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Sharḥ of al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "843930872c8949011bdfecfcd83ce32fda19d09879b89334b7d808baa47e12c4"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f008",
@@ -168,7 +170,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Sharḥ of al-Muntahā, on «كوصية»."
         }
-      ]
+      ],
+      "positions_sha256": "3301a6aeaba138823dff134d6d503fc3a72f5387aacfb9d541cb55e6e0578eb6"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f010",
@@ -212,7 +215,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Sharḥ of al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "8e8613d2421df9b642d16ccbc827378175e31550c26d26c59b17aa0ebd88ecb6"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f011",
@@ -240,7 +244,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Sharḥ of al-Iqnāʿ «ثم أقرب العصبة»."
         }
-      ]
+      ],
+      "positions_sha256": "8074d5accdae967c26c6dc31b758b054d5cd966a72a463810e35aed643a22cfb"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f015",
@@ -292,7 +297,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Sharḥ of al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "c41f55ec3f2144f95a1e6e50f06d50cc1878a3142151d97b47ce1d0dec508192"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f018",
@@ -328,7 +334,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn, of an heir other than the father."
         }
-      ]
+      ],
+      "positions_sha256": "de7f3e33cbeff5ed3ad2f687251d33258ac5f666718696d40dcca7c51c69a01a"
     }
   ]
 }

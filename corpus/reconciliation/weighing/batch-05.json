@@ -45,7 +45,8 @@
      "note": "al-Mughnī says ʿUmar's ḥadīth (ḥawqala at the ḥayʿala) is more specific than Abū Saʿīd's general «say as he says», and so takes precedence. That is the specific over the general, between two zanni proofs. He also allows combining them, which is position 1's way, so the advantage is stated with that alternative left open. Basis: stated — the source itself compares the two proofs in the excerpt.",
      "basis": "stated"
     }
-   ]
+   ],
+   "positions_sha256": "d57f0b92e2d57d87421f6863edd96aaf09572d48b8ae6f25062df8b1724c5823"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f004",
@@ -89,7 +90,8 @@
      "note": "al-Sharḥ al-Kabīr prefers the single wording because its version of Kaʿb's ḥadīth is agreed upon by al-Bukhārī and Muslim and is «أصح شئ روي فيها». The combined wording is cited from al-Nasāʾī and al-Tirmidhī (al-Mughnī), or from al-Bukhārī alone (Ibn Rajab). Both proofs are zanni. Basis: stated — the source itself compares the two proofs in the excerpt.",
      "basis": "stated"
     }
-   ]
+   ],
+   "positions_sha256": "6d5675317fce2473e7966ec8e7ad1b80d4029107515d583b8c7e3b629f4dc3c7"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000",
@@ -113,7 +115,8 @@
      "note": "al-Kāfī states the ruling of position 1 on the same facts and rests it explicitly on «الأصل عدم وجوبه», so istishab. al-Sharḥ al-Kabīr (v01:p199) gives the same: «والأصل عدم وجوبه»."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8c85ae3c51418cb7375e1079451a0483e8d2d8494917bab9c0d55d0be560759f"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f000",
@@ -137,7 +140,8 @@
      "note": "The reason given for position 1, with an aṣl, so qiyas. al-Mughnī notes Abū Ḥanīfa, Mālik and one of al-Shāfiʿī's two views hold it."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "33f09ea2805ee06a038320a49fad01c08a81a6256e84ef959153d89f054e3690"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f010",
@@ -170,7 +174,8 @@
      "note": "Kashshāf's rationale for the madhhab ruling, which is position 0, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b16803ef10ebc44dcab6865636c48d4b9f4f60523f710da6fd4fe6b5ccd76132"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f011",
@@ -203,7 +208,8 @@
      "note": "al-Mughnī's «ولنا» for «لا يحل له وطء إحداهما حتى يحرم الأخرى ويستبرئها», which is position 1. The aṣl is intercourse with her alone, so qiyas. Ibn Rajab gives the same ground: «لثبوت الفراش لهما جميعا»."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "36844f6db8f9fc5ba1fc073fac996fef4fb749be85cc40ac5267559b2af22d99"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f012",
@@ -227,7 +233,8 @@
      "note": "Cited for the ruling that intercourse with one of the wives is choice, which is the second half of position 0 («ويكون اختيارا منه»). It does not separately rule on whether the act is permitted before choosing. Called «قياس المذهب», with an aṣl, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "41c0d9f5963f3e65782801367ae8bfae8cfeecc666ca23ecc88a27114101e052"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f013",
@@ -260,7 +267,8 @@
      "note": "Ibn Rajab's statement of the ground for position 1 (al-Qāḍī's Khilāf, Ibn ʿAqīl). A linguistic rationale about what the collective word refers to, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "a705883f0410e68def0cddb62c3a72b91b5100e23a4eb8a8881fdc75afec7fce"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f014",
@@ -284,7 +292,8 @@
      "note": "Kashshāf's rationale bars only the fourth, not all four, which is position 0. A rationale, so qiyas. Sharḥ al-Muntahā (v02:p658) gives the same «لئلا يجمع ماؤه في أكثر من أربع نسوة»."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7bf94851831e10c3ae1b02948f5c9b7c3bb040b60d45bb4dfa71fede79fa2dc2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f020",
@@ -317,7 +326,8 @@
      "note": "A non-Ḥanbalī proof for the same ruling as position 1 (going out with leave dissolves the oath, so a later going out without leave does not break it). It is on the cognate «إن خرجت بغير إذني», without «مرة». al-Mughnī rejects it. A linguistic rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "dce7ed7dc115d0c280f717910c235ad544b334b2bfa7a4963f9e241dcf3a51e3"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f004",
@@ -359,7 +369,8 @@
      "note": "This is the ground the facts turn on, that the suspension has no legitimate purpose. It is a rationale (purpose, and that revocation presupposes an existing contract), so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0d764159dac30126f8dcc275d8bcff431ccbc33310a0222b25cf5da744d58dc3"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f000",
@@ -392,7 +403,8 @@
      "note": "Given as «ووجه ذلك» for the riwāya that the oath is carried on its generality. That is position 1: he breaks it by any lunch. The aṣl is the Lawgiver's speech and the farʿ the swearer's, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "753a311dc52043bd55a3332e766d123cf6e99247536a9a9631426fbe56159efe"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f001",
@@ -425,7 +437,8 @@
      "note": "Given for the wajh that the oath does not lapse with the dismissal, which is position 1. Called «قياس المذهب», with the oath on a described individual as aṣl, so qiyas. al-Mughnī notes it is one of the Shāfiʿī wujūh too."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "a247385a5920d1b39dbf30084e945fa05a729ebc56b0cf4a6785efa2a0ab0383"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f002",
@@ -449,7 +462,8 @@
      "note": "al-Mughnī's «ووجه ذلك» for the riwāya that oaths are carried on their generality when there is no intention. al-Qāḍī's wife and slave case is set against it in the next breath, so it is the proof for position 1 (no dissolution) on these facts. The aṣl is the Lawgiver's speech, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c0bd98559dac9a54da32b3663549f195c74538b1efbf8aaa045f8697ad037b44"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f003",
@@ -482,7 +496,8 @@
      "note": "al-Mughnī's «ولنا» against Mālik on the cognate «طلق نساءك» case: the asker is divorced with the rest. That is the ruling of position 1 on a closely parallel set of facts. A rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b5616d13e6f9b8ee19f8bc0ffe5736d7a07fda6b050c8924f88a610f43e15396"
   }
  ]
 }

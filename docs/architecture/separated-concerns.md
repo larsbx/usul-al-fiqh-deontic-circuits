@@ -111,3 +111,121 @@ It loads the concern modules and contains only smoke-query documentation. This k
 3. Add import adapters that populate affect facts independently from temporal/case fixtures.
 4. Add test runners that can exercise the sheaf concern against multiple temporal fixtures.
 5. Preserve the aggregator file until no downstream scripts rely on it.
+
+## Repository-wide authority boundaries
+
+Refactor baseline: main `57a3b1c` (2026-10-16 inspection). The original ADQ concern
+split above remains valid. The corpus/Lean track now needs the same discipline
+across the entire evidence-to-inference path. PR #91's audit is an input to this
+migration, not a claim that all its proposed remedies have shipped.
+
+### First principles
+
+1. A witness attests bytes, not an interpretation. Verification must bind a quote
+   to a pinned witness and its context, including negation and qualifications.
+2. Equal text is not equal occurrence. Two bābs quoting the same words create two
+   source obligations; normalized text is a search key, never occurrence identity.
+3. A position is a reported interpretation, not a fact supplied to win a case.
+   Disputed causal characterizations stay disputed; holders' grades remain attribution.
+4. Missing evidence is epistemic state, not evidence against an opponent. A
+   derivation must disclose search coverage and unresolved applicability claims.
+5. A kernel proves the consequence of supplied premises under a named policy.
+   Source fidelity, admissibility and scholarly acceptance require separate receipts.
+6. A report, router, category-theoretic construction or LLM explanation cannot
+   promote its own inputs into accepted normative premises.
+
+### Ownership and allowed dependencies
+
+| Boundary | Owns | Existing location / migration target | Exit evidence |
+|---|---|---|---|
+| Witnesses | Bytes, pins, locators, restoration receipts | `fetch`, `source_verify`, `arabic`, `corpus/lock.json` | Hash and contextual quotation replay; unavailable required bytes fail |
+| Occurrences | Work/witness-local spans, segmentation and source obligations | `segment`, `units`, `records` | Every repeated occurrence accounted for; stable IDs and explicit redirects |
+| Interpretations | Cases, encoder domains, positions, attribution and review state | `takhrij`, `corpus/takhrij`, `corpus/review` | Typed values, explicit range gaps, preserved competing readings |
+| Evidence admission | Position-bound proofs, applicability, search coverage and policy inputs | `reconcile.check` now; dedicated admission adapter next | Reject stale references, unknown fields and unsupported strength claims |
+| Inference | Finite operations on supplied values and admissible premises | `reconciliation_kernel`, Lean `Usul.Tarjih` / `Usul.Reconcile` | Differential replay and adversarial vectors under each policy |
+| Views | Reports, routing proposals, exports, explanations and obstruction summaries | CLI/generators, routing and sheaf modules | Reproducible outputs tied to input receipts; no reverse authority edge |
+
+Dependencies point from adapters to the pure kernel and shared value vocabulary.
+The kernel imports neither the corpus registry nor file/network I/O, CLI, routing,
+report generators, or review workflows. Lean remains authoritative for the stated
+finite procedures. Exporting a Python expectation into a Lean guard verifies
+agreement on supplied premises; it does not independently verify those premises.
+
+### Implemented first boundary
+
+`values.code` gives encoded JSON values one representation identity; `same`,
+`among` and `distinct` use it. `takhrij.code/among` remain compatibility imports.
+This identity is local to an encoding, not semantic equivalence between encoders.
+The Python reconciliation operations and Lean String export use that identity:
+`false`, `0`, and `"false"` cannot collapse. The pure module retains the current
+proof-tier and murajjiḥ policies; extraction does not change their scholarly scope.
+
+Both case validation and the reconciliation adapter reject malformed position
+rulings. Direct calls to `resolve` and `attribution` also check this boundary.
+A nonempty textual alternative outside the encoder's output domain must carry a
+nonempty `outside` explanation. This retains a range gap without silently treating
+it as an encoder result. The annotation is not evidence of source fidelity or
+scholarly acceptance. Numeric/Boolean mismatches cannot use this escape hatch.
+
+The migration adds this metadata to all 53 existing out-of-domain textual positions:
+36 in the `lots` cases and 17 in lane B (15 missing-rule positions and two scoped component positions). It preserves each
+ruling, holder, detail, fact, case classification and source reference. Historical
+audit snapshots stay unchanged. Current reconciliation report equality is a
+regression requirement, not an endorsement of its input adequacy.
+
+### Remaining structural work
+
+Position indices still carry evidence associations. They are now protected by
+mandatory `positions_sha256` receipts in every active ledger and weighing entry.
+`position_receipts.digest` hashes canonical JSON containing the version tag
+`usul.positions.v1`, case ID, and complete ordered position records (including
+ruling, holder, detail and outside explanation). Key ordering is irrelevant;
+position ordering, types, holders and interpretation changes invalidate the receipt.
+
+`reconcile.load` checks the ledger and weighing sources independently before any
+overlay. `check`, `resolve` and `attribution` also reject missing or stale receipts.
+An overlay cannot supply a receipt on behalf of an unpinned ledger entry. This is
+an integrity check on an association, not a source-verification or acceptance step.
+
+`python -m usul_corpus.migrate_positions` adds receipts to 1,192 entries in 69 files
+for 596 active cases. Its source manifest pins the canonical pre-migration entry
+data, and a separate digest pins all ordered subject positions. All inputs are
+checked before writing. It is idempotent on its own output and refuses changed
+positions, changed entry data, or stale existing receipts. Normal loading never
+re-pins. Historical snapshots are preserved; a deliberate historical replay must
+explicitly bind its chosen fixture, without promoting it into the active ledger.
+
+This is the interim R1 safety gate. Replace indices with stable, case-scoped
+position IDs in the remaining migration. Stable IDs should survive reorder while
+changed interpretation content invalidates a versioned receipt. Until then,
+reorders fail closed and require explicit evidence revalidation; they are not
+automatically remapped. Receipts do not detect an initially wrong association or
+prove that a quoted text supports its assigned position.
+
+Admission must eventually return either an explicit blocked/pending result with
+obligations or validated kernel inputs with receipts. Keep these states distinct:
+unsearched, searched-with-no-proof, disputed applicability, rejected proof,
+admissible proof, and human-reviewed interpretation. Do not invent search records
+for the existing incomplete entries. Preserve current conditional outputs during
+migration, label their adequacy separately, and review policy changes in Lean and
+Python together. In particular, the existing rule that a proved side can beat a
+side without recorded proof remains in this tranche; PR #91's PR-34 is still open.
+
+Do not start by moving all directories, introducing a database, or replacing the
+formal kernels. Extract a boundary with a compatibility adapter, replay its corpus,
+and remove the old path only after the new path demonstrates equivalent behavior
+on valid inputs and rejection of the audited invalid inputs.
+
+### Integration with the independent PR-33 correction
+
+PR #93 (`daeb7887`) independently addressed the same typed-ruling defect as #92.
+This branch incorporates its pinned `migrate_pr33` metadata migration, case-specific
+outside explanations, blank-marker schema guard, broader adversarial tests, and
+fixed `UsulTest.TypedRulings` Lean guards. It retains #92's extracted pure kernel
+and fail-closed direct resolution API. A malformed direct call raises `ValueError`
+instead of returning a conditional result. These branches must not be merged as
+two unrelated implementations; #92 contains the combined implementation.
+
+The original 2,384 policy outcomes and 596 attribution outcomes are preserved.
+The independently authored Lean guards still require an executed Lean build;
+failed or queued CI jobs without executed steps establish no compilation result.

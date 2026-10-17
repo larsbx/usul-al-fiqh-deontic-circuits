@@ -34,7 +34,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "On the udhiya: the sunna of eating, gifting and giving a third holds even if it is vowed or designated."
         }
-      ]
+      ],
+      "positions_sha256": "7e04a0d4ee0087bc6cd8368832f177abfcd53ae2db459631ebe0d7ee94e9ef43"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f003",
@@ -82,7 +83,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The vow of sin, among whose examples the days of tashrīq: it may not be fulfilled; the fast is made up and he expiates."
         }
-      ]
+      ],
+      "positions_sha256": "0a37bac213dc1e3e91caf3b9f7631d41acb9c293acd6efee0bee93c59060f32c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f009",
@@ -110,7 +112,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "Of the woman married in her ʿidda: «وللثاني أن ينكحها بعد العدتين»."
         }
-      ]
+      ],
+      "positions_sha256": "80f481f112153c9a840ab24829a1bcbdc20977bdebc610585d6890c5edac139d"
     }
   ]
 }

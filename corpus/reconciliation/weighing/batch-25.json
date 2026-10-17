@@ -52,7 +52,8 @@
      "note": "al-Muwaffaq's (and al-Ghazālī's) objection, which al-Taḥbīr reports as an argument against nadb remaining: it supports position 1 in so far as no recommendation is proved. A linguistic/definitional rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ac35b79ad3eeabf5b76c1f342a727c8b48ee0e4e67b930d997e0c796d74ad241"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f000",
@@ -103,7 +104,8 @@
      "note": "al-Mughnī gives this reason for Abū Ḥanīfa and then for Ibn Abī Mūsā's riwāya («لذلك»): no resignation after the death, nor in life without the testator's knowledge, position 2 (the Ḥanafī holder of the same ruling counts). A stated rationale (taghrīr): qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "aeff236bd0bd36548732a1d638ec40f2abcdcd96c5438a52778029435f167f5b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f001",
@@ -145,7 +147,8 @@
      "note": "Given for Abū Ḥanīfa and Mālik, who hold the same ruling as Ibn Abī Mūsā (not dismissed): position 1. Analogy on the pledge's other rights: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c45253c1c05a33cc5c7d1f5962b4816497512e6627a9434e855d01faf7a244e0"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f005",
@@ -169,7 +172,8 @@
      "note": "al-Qāḍī's view (al-Khilāf) as Ibn Rajab reports it, with its stated ground for the remedy (sale after rescission): position 0 on these facts. A stated ʿilla: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b60ca6e1f8ef9e95b5770d28dccb4a1cf544ef19d41f0f07c8108e614a21cc43"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f006",
@@ -202,7 +206,8 @@
      "note": "al-Qāḍī's reading of Aḥmad for the case where the capital is goods: position 1. Analogy on the muḍārib: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "59ba0667d1147752260a467e1c03d6785294779d4af188c4e8e4342fd04ce6bf"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f007",
@@ -235,7 +240,8 @@
      "note": "al-Sharḥ al-Kabīr's reason for the second qawl (the pardoner liable): position 1. Analogy on ordering the ignorant slave: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "45bd64b4ddeedee94606d8db3f93a0835f499030f9fe06d049f2cf5410053ecb"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f009",
@@ -277,7 +283,8 @@
      "note": "al-Mubdiʿ's reason for «the majority» that he need not level the holes: position 1. A rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "fbabb7d8f89f55ae1406f56184fa050bc40fcccdb3b0b2e114dda4fa9333fe4a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f004",
@@ -292,7 +299,8 @@
      "note": "al-Buhūtī's reason for al-Iqnāʿ's ruling that musāqāh on plants of repeated bearing is invalid and that the contract is a muzāraʿa: position 1 (crop wajh). A stated rationale (they are not trees, the aṣl of musāqāh): qiyas. No work consulted gives a proof for the tree wajh in musāqāh; al-Mughnī's «فأشبه الشجر» (v04 p070) is given for selling these roots, not for musāqāh, so it is not attached."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1480bb6bcc9e556bbe40f323abb9001cbca54366fbdb8ff4b1f6c8f872c310ad"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f000",
@@ -334,7 +342,8 @@
      "note": "al-Mubdiʿ's reasons for the riwāya of impurity: position 1. A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "4daa4dacf41f7f7e96235e717a60955592e2567f5bf72dace49787130b875158"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f001",
@@ -367,7 +376,8 @@
      "note": "Given in al-Mughnī for al-Shāfiʿī's other qawl, the same ruling al-Inṣāf reports from al-Qāḍī (the diya is due though it grew back): position 1. A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6cff76a2f21b0a27a072cacdfe585a33e834a21738d34f282ca32b9043645986"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f002",
@@ -400,7 +410,8 @@
      "note": "al-Sharḥ al-Kabīr's reason for the other wajh (liability despite regrowth): position 1. Analogy on the muḥrim's hair: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e8414ea559fc2885e933a853d32e8113114d326a491ac04fe080e286bdedaaaf"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f003",
@@ -433,7 +444,8 @@
      "note": "Reported in al-Mubdiʿ for al-Qāḍī, the author (of al-Muqniʿ) and al-Ḥārithī: he may replace the beams. It is unrestricted, so it gives position 1's ruling on these facts (wall rebuilt with old materials), though it is not the restricted second wajh as Ibn Rajab states it. A rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "200d07893579560c4a4b97a130b00a86b5fa12d165a268f7db9cc2a8a2c23572"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f004",
@@ -466,7 +478,8 @@
      "note": "The wajh al-Talkhīṣ reports: position 1. Analogy on the lessor's duty to repair: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0a399557a62fb68d5d4b23077d5702dbb0c2212c3a8322846c554cca62bff28a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f006",
@@ -499,7 +512,8 @@
      "note": "Abū al-Khaṭṭāb's wajh, given in al-Mubdiʿ for the whole list that includes «أو انهدمت الدار وزال اسمها»: the bequest is not void, position 2. Analogy on washing a garment: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "4e52be31221e8eaaed6011812f82f5da85b317feb9b521619099feca342e5066"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f007",
@@ -550,7 +564,8 @@
      "note": "al-Kāfī's reason for the riwāya permitting it: position 1. Analogy on repair: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b17f02e033afe7c2011e52c6676bd4dc96e99533a93dfddbb34505f4237dcd1e"
   }
  ]
 }

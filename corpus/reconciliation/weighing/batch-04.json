@@ -17,7 +17,8 @@
     }
    ],
    "advantages": [],
-   "searched": "No proof found for al-Qāḍī's liability (position 0). Checked al-Mughnī v09:p183 (fasl 7385: aiding the attacked is allowed, no word on liability), al-Kāfī v04:p112–113, Kashshāf v04:p129 (states al-Qāḍī's view and the Rajabiyyāt without reasons), al-Mubdiʿ and al-Sharḥ al-Kabīr on dafʿ al-ṣāʾil."
+   "searched": "No proof found for al-Qāḍī's liability (position 0). Checked al-Mughnī v09:p183 (fasl 7385: aiding the attacked is allowed, no word on liability), al-Kāfī v04:p112–113, Kashshāf v04:p129 (states al-Qāḍī's view and the Rajabiyyāt without reasons), al-Mubdiʿ and al-Sharḥ al-Kabīr on dafʿ al-ṣāʾil.",
+   "positions_sha256": "a7dee70f8a07f73e38b51b950191aceec5db8e966f15720dc59a81fe64eb07e2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f003",
@@ -68,7 +69,8 @@
      "note": "Al-Mubdiʿ gives this for the madhhab that a forced oath does not bind. Marfūʿ report, no grade given: zanni."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "a926b6955751a8aa000d6825fe162c822b23cab0d249915c8a8cc27e457bb057"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f000",
@@ -119,7 +121,8 @@
      "note": "Given for al-Shāfiʿī and the Ḥanafīs (invalid), the same ruling as the riwāya. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "42387af10f3ac5b49e0060e26b94ed4de88ba6e6b30ab5101bd748b2a849ff14"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035.f000",
@@ -152,7 +155,8 @@
      "note": "Al-Mughnī's second wajh (dissolved). Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "5b47213335c316a0c5e2fa264456078d83622704d1f408a5c297194d8c479d93"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035.f001",
@@ -185,7 +189,8 @@
      "note": "Al-Mughnī ties the inheritance case to the purchase case on both wujūh, so the analogy for dissolution given there (v05:p350) is the proof for this side. Al-Mujarrad's own ground (inheritance being compulsory) is not argued in these works. Analogy: qiyas. The excerpt runs through the qualifier that follows in the source. Al-Mughnī adds «إلا أنه لا فرق في الحكم بين فسخ الإجارة وبقائها»: on his account the dispute has no practical consequence."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c8564fa22399feed845195e55057e2fe835b3945d0dcab57eb6e68c7b4b54654"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f000",
@@ -245,7 +250,8 @@
      "note": "Connected marfūʿ report used by its mafhūm for a single seller-benefit condition, which covers the harvest condition. Indication by implied sense: zanni."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "a00132ede3489d05d01a2acf61210b584b286136d4f7f33ccac42466a3aadcbf"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f001",
@@ -287,7 +293,8 @@
      "note": "Al-Kāfī extends the naṣṣ on jadhādh to every item of work stipulated on the other party. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1069a07f138f2ab147e0eb157973b327a021c691c0c565138808d0432d6759f6"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f002",
@@ -329,7 +336,8 @@
      "note": "Al-Mughnī's answer for validity against the gharar argument. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "5de8c94ff5fc69742577dd6d50faf68c87687a4e0ab77aa0cc5e674885bfc678"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f001",
@@ -371,7 +379,8 @@
      "note": "Given for the riwāya that indicates it takes effect and for al-Thawrī and the Ḥanafīs, holders of the same ruling. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "54cd3685cbc935aa4a02f0810d332b99ebd31f1a8f2727b8c25ceb3695bf6690"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f002",
@@ -422,7 +431,8 @@
      "note": "For the same riwāya. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "69b6ec899f18d0028915dd085988b7f631ac8f1af6d3cb7acb2474cc7bebc73a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f003",
@@ -455,7 +465,8 @@
      "note": "Given for al-Ḥasan and Mālik, non-Ḥanbalī holders of the same ruling (the right drops when the killer is killed); al-Shaykh Taqī al-Dīn's own takhrīj is not argued in these works. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "428ea26c7f1520bf258596746a720d98b10fa65ac6c2fd41b4f00650159f2300"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f003",
@@ -497,7 +508,8 @@
      "note": "Al-Mughnī's answer to al-Qāḍī in the parallel case (her admission while the second keeps her), on the same question of mahr owed to the first. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "4a223be0212be1af292e4defd19b93ef3b07a6d89f30c10e339a73a5c24df572"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f004",
@@ -539,7 +551,8 @@
      "note": "Kashshāf's reason for the madhhab. Rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8367427fbff62e191cfc8fc3ab6191429692c0c05ad32f61de3c4f02b2ac4c72"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f005",
@@ -572,7 +585,8 @@
      "note": "Given for al-Shāfiʿī, a non-Ḥanbalī holder of the ruling that the khulʿ carries a mahr (Taqī al-Dīn: «يرجع إلى المهر كالنكاح»). Analogy to marriage: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "23376f66ed31b70a07b731510be27a78a98c1c254e19d0296c497eec71a75591"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f006",
@@ -597,7 +611,8 @@
     }
    ],
    "advantages": [],
-   "searched": "No proof found for position 1 (the father may, the exit being of value). Al-Sharḥ al-Kabīr v08:p180 and al-Mubdiʿ v06:p270 give an iḥtimāl that he may when he sees her interest in it (ḥaẓẓ), a different ground the case does not state, so it is not recorded. Also checked al-Mughnī and al-Kāfī on the father's khulʿ."
+   "searched": "No proof found for position 1 (the father may, the exit being of value). Al-Sharḥ al-Kabīr v08:p180 and al-Mubdiʿ v06:p270 give an iḥtimāl that he may when he sees her interest in it (ḥaẓẓ), a different ground the case does not state, so it is not recorded. Also checked al-Mughnī and al-Kāfī on the father's khulʿ.",
+   "positions_sha256": "0615d8c32f2ecc6f47992c0323c0620b5e9bce46db505785251cd9514df6172f"
   }
  ]
 }

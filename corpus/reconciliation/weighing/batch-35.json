@@ -25,7 +25,8 @@
      "note": "The agent-unaware case, the form in which al-Inṣāf and al-Iqnāʿ carry this masʾala. A rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "788522b215c7a5377b6c28cc42a56d6d2ad64a820ced0f2401461d3d94756002"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f001",
@@ -58,13 +59,15 @@
      "note": "The reason for the possibility (put first by al-Ḥalwānī) that she is not divorced. A linguistic rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f0cf2a67714f18351fa4bcba620b5b6e8d5d6609a57e8ada03a784be04ff08c6"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f002",
    "proofs": [],
    "advantages": [],
-   "searched": "al-Mughnī (bayʿ al-khiyār and wakāla, incl. v05:p088-089 on the agent unaware of dismissal), al-Sharḥ al-Kabīr, al-Kāfī, al-Mubdiʿ, Kashshāf (v03:p157, v03:p462), Sharḥ al-Muntahā, al-Inṣāf and al-Furūʿ searched for the buyer acting in the option period after the seller's unknown permission (إذن البائع … لم يعلم / قبل العلم بالإذن): no source argues this farʿ. The ledger's reconciliation rests on the agency analogy only."
+   "searched": "al-Mughnī (bayʿ al-khiyār and wakāla, incl. v05:p088-089 on the agent unaware of dismissal), al-Sharḥ al-Kabīr, al-Kāfī, al-Mubdiʿ, Kashshāf (v03:p157, v03:p462), Sharḥ al-Muntahā, al-Inṣāf and al-Furūʿ searched for the buyer acting in the option period after the seller's unknown permission (إذن البائع … لم يعلم / قبل العلم بالإذن): no source argues this farʿ. The ledger's reconciliation rests on the agency analogy only.",
+   "positions_sha256": "42a7d87d8335de835f22f2581d467dd63c858650067942cdbb3f4b8b3909e1cb"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f003",
@@ -88,7 +91,8 @@
      "note": "Ibn Rajab (Qāʿida 64) quoted in al-Inṣāf, which calls it «الصواب». Analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3f8aec8d707b1b2a7554911783208406f01209550157a56749cbaf9d5b4de9b0"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f000",
@@ -130,7 +134,8 @@
      "note": "Given for al-Iqnāʿ's «كموت أبيه وهو وارثه», the facts of this case. A rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "a1d61d100545117792611e06e6aaa7cf8bd8837a118d17e941444c2640ff6fc4"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f001",
@@ -163,7 +168,8 @@
      "note": "al-Mughnī's possibility, distinguishing the wife from the slave-woman; it supports divorce on these facts. A rationale from custom, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "fb5005fd9e3bfe280fc92cb1ff34548d872fa6f8fcea0027b64bd6ca2cc5ebc6"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f002",
@@ -196,7 +202,8 @@
      "note": "Kashshāf gives the explicit-word principle with Aḥmad's naṣṣ on «تنحي يا حرة» to his own slave. The proof is the analogy to ṭalāq, so qiyas; the naṣṣ is the Imam's, not a sharʿī proof."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "2c0516fdd4d8600b1385e860b606f5027e7ef5dc20a17ec18dba29fcf1fe1b66"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f003",
@@ -220,7 +227,8 @@
      "note": "Given for validity on these facts; al-Mughnī roots both wujūh in selling an inheritance thought still the deceased's. Analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8f117b76877f2dc8ffb54c98292d780a501a5c3ed13c63224d71b12748de4c57"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f005",
@@ -253,7 +261,8 @@
      "note": "al-Qāḍī's first wajh on these facts. Analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3ac6970f339482a7f53eef376fe2c9451d835f5f09857b93b622ab522d76ead8"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f006",
@@ -277,7 +286,8 @@
      "note": "al-Talkhīṣ's first possibility, «يحتمل تخريجه على من أعتق عبدا في ظلمة», as Ibn Rajab reports it. An analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "97244e47222a45fc6bc5fa32ce53c81f99337d600eec0c0b160e42ccac31492e"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f007",
@@ -310,7 +320,8 @@
      "note": "al-Mughnī's first view for the buyer who thinks possession impossible and it proves possible. Analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ae2b5cc90aba5e01b65cb06e0b7965f8730ff2d8321cc3c0f5c0bdcb01f0b8ad"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f004",
@@ -343,7 +354,8 @@
      "note": "Given for the other wajh on these facts. Analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "bff4e592dc545675772748fd40cce26dacc43237751ae7a03134546244b2ab9a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f004",
@@ -376,7 +388,8 @@
      "note": "al-Mubdiʿ states the ruling and its reason while reporting the view allowing taḥarrī over vessels. A rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "4bedfe673f550dd0ca7dc0428a95eec3e10742e91b6d108f760369abd19cdc83"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f005",
@@ -418,7 +431,8 @@
      "note": "Same masʾala in the chapter on the ʿīlāʾ/oath of not speaking; al-Mughnī there suggests the ḥinth applies to oaths by ṭalāq and ʿitāq, where ignorance does not excuse. A rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d36933640280db0f9e5bfcc3214eebe40e0e4c2f4ea82bd38ca22bc59ee2abe3"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f007",
@@ -469,7 +483,8 @@
      "note": "al-Kāfī's reason for the wajh that rare earnings enter the turns. Analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "4be63d98e8d321f5743aaabaae7c9e70dc43e3160a534d5424ddfd2088f7aa0a"
   }
  ]
 }

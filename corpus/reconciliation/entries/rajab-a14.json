@@ -34,7 +34,8 @@
           "who": "Ibn al-Najjār, al-Muntahā",
           "note": "«ولا يأكل رأسا ولا بيضا حنث بأكل رأس طير وسمك وجراد وبيض ذلك»."
         }
-      ]
+      ],
+      "positions_sha256": "1fc5ca0e6667062afbac95e06b2ce10414bd411b504a396b0670bc5ce076ea58"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f002",
@@ -62,7 +63,8 @@
           "who": "Ibn al-Najjār, al-Muntahā",
           "note": "Ḥinth by fish, stated decisively."
         }
-      ]
+      ],
+      "positions_sha256": "6e4aabd035c1113a4f3f8329c9a007f4a683f511de250a27e3342e0d168c5b54"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f003",
@@ -90,7 +92,8 @@
           "who": "an iḥtimāl, as al-Inṣāf reports",
           "note": "The iḥtimāl of no ḥinth beside the madhhab."
         }
-      ]
+      ],
+      "positions_sha256": "81465bf0354128696298c1a3196098746047c2cede5a6d868db6c38ca5edafdc"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f004",
@@ -118,7 +121,8 @@
           "who": "al-Muwaffaq and al-Shāriḥ, as al-Inṣāf reports",
           "note": "al-Muqniʿ's «فالقياس: أنه لا يحنث», only the Persian rayḥān."
         }
-      ]
+      ],
+      "positions_sha256": "7712a57bef8d95aaff1c4a12666b4fdd3c257dff557be132917e470ba9ef3b9e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f005",
@@ -146,7 +150,8 @@
           "who": "al-Mardāwī, al-Inṣāf (the cognate of the donkey before one praying)",
           "note": "The unqualified name of the domestic kind does not take in the wild one; the cognate Ibn Rajab sets beside the oath."
         }
-      ]
+      ],
+      "positions_sha256": "85e3561fc30b40afb32f89f0ae7c8ea88c3fb245382ceef489487cae40b7a533"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f007",
@@ -169,7 +174,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "On «وإن قال: كل مملوك لي حر: عتق عليه مدبروه ومكاتبوه، وأمهات أولاده»: no dispute reported."
         }
-      ]
+      ],
+      "positions_sha256": "1e9d4bc5590aa8b737c8dd942a12909ff9ef6941e572e9f4aa747eda2187347c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f008",
@@ -189,7 +195,8 @@
           "who": "al-Zarkashī, as al-Inṣāf reports",
           "note": "The majority: «أنه يعم كل مال إن لم يكن له نية»."
         }
-      ]
+      ],
+      "positions_sha256": "ec5b0b8d95681beafe264223e40d7305cf1c62730b6faa65c13541ff3c5906be"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f009",
@@ -217,7 +224,8 @@
           "who": "a riwāya, as al-Inṣāf reports",
           "note": "«وعنه: لا يحنث إلا بالنقد»: property other than coin is not «مال»."
         }
-      ]
+      ],
+      "positions_sha256": "20d3aaefc1cbc15aee75dbde4b0148235395ac9fa541e6ef9d29df958874e2fd"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f001",
@@ -253,7 +261,8 @@
           "who": "Ibn al-Najjār, al-Muntahā",
           "note": "Ḥinth by forbidden meat, stated decisively."
         }
-      ]
+      ],
+      "positions_sha256": "1f16f2b999f431c7f1455fa81d82ad0a6b489b786d1d1b4049c1c7fd0ebdce6e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f002",
@@ -281,7 +290,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "Carried from al-Furūʿ in the bequest as in the waqf."
         }
-      ]
+      ],
+      "positions_sha256": "30405f7434acd72373b5cabbfd717ececf7d660c8049fa24e66386865c4359bc"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f003",
@@ -317,7 +327,8 @@
           "who": "al-Nāẓim, with al-Mardāwī's «وهو قوي»",
           "note": "Not effective, «لأنه ليس وكيلا فيه»."
         }
-      ]
+      ],
+      "positions_sha256": "5baa600de0906d26bfa313b001677a17a80361fb15b854f18e96b4bbf6da9a3e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f001",
@@ -337,7 +348,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "«تطلق على نصه. وقطع به جماعة، أخذا بالأعم من لفظ وسبب»."
         }
-      ]
+      ],
+      "positions_sha256": "bd5d63de26996ae2809454cccb10bdd17d8350eec640beaa7acc557c35bb9a57"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f004",
@@ -360,7 +372,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "Cited for the rule that the explicit word frees without intention."
         }
-      ]
+      ],
+      "positions_sha256": "b0daeff6c7d99bb684e850857727c8065c02413882472a0057ee574d9867ac97"
     }
   ]
 }

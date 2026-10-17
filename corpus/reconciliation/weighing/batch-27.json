@@ -45,7 +45,8 @@
      "note": "Both sides cite the qullatayn ḥadīth (zanni). The reckoning by the whole rests on its manṭūq (what reaches two qullas bears no impurity), the per-jirya reckoning on its mafhūm; the Mughnī says so expressly. Basis: stated — the source itself compares the two proofs in the excerpt.",
      "basis": "stated"
     }
-   ]
+   ],
+   "positions_sha256": "c362fbdabcd4def4d78178b2ccdc011373721a747813a75d6dcd41ade7c74f8a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001",
@@ -69,7 +70,8 @@
      "note": "Each jirya counts as a ghasla, so seven jiryas are seven washings: position 1. Stated ʿilla with analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "baf0a6c1e4fbea58b20bcc40f72825d98074ec55810ffcd2678e9888f8e6103c"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f002",
@@ -93,7 +95,8 @@
      "note": "On these very facts (four jiryas): not lifted, position 1, by assimilation of running to still water («كالراكد»; Sharḥ al-Muntahā: «أن الجاري، كالراكد»). The imam's naṣṣ is reported but the ground given is the analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "120e334d50cd8bcf6b4a05af61bda2353a113ebf73b30b6dff0deea1abe46542"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f001",
@@ -126,7 +129,8 @@
      "note": "On these very facts (a traveller reaching water as the time narrows): tayammum, position 1. The source names the ground as istiṣḥāb of his prior lack of water: istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1e5c1bb341a4c45d62f7b28b59949bcf9e42730a2ba01fccce5cf439d4510ac6"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f000",
@@ -159,7 +163,8 @@
      "note": "Ibn Ḥāmid's ground for divorce by the birth that ends the ʿidda: position 1. A rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1e24bbb6020d67df94b49209260a4cbf3e7826a4a88022bbb95a7586c171dcf9"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f002",
@@ -175,7 +180,8 @@
     }
    ],
    "advantages": [],
-   "searched": "al-Mughnī v07 p123, p136-139 (free and slave woman, the conditions of marrying a slave woman), al-Sharḥ al-Kabīr v07 p514-521, al-Mubdiʿ v04 p037-038: no proof for position 0 (both valid where the free woman suffices); Ibn Rajab's Qawāʿid (q057) states the two wujūh without a ground."
+   "searched": "al-Mughnī v07 p123, p136-139 (free and slave woman, the conditions of marrying a slave woman), al-Sharḥ al-Kabīr v07 p514-521, al-Mubdiʿ v04 p037-038: no proof for position 0 (both valid where the free woman suffices); Ibn Rajab's Qawāʿid (q057) states the two wujūh without a ground.",
+   "positions_sha256": "8b4d108bd7bb35e71fda2eaaa1d59ff04aa6f44dc4e57a7172cde2e302699b35"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f003",
@@ -199,7 +205,8 @@
      "note": "al-Qāḍī's (al-Mujarrad) ground: the divorce coincides with the bar: position 1. Stated ʿilla plus analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6e8371e15b21c5049be0934f366f12310a4882abb1b30e36d8eebec96bed34c3"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f004",
@@ -223,7 +230,8 @@
      "note": "Ibn ʿAqīl's ground for no breach by the repetition, which Ibn Rajab calls «أقوى»: position 1. A rationale from the oath's intent: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6a714de39ac76f98ffe953f480802f8aaf05cfb6ac0551911b119ea5f55f01ce"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f005",
@@ -247,7 +255,8 @@
      "note": "The Muḥarrar's ground for the favour executing and the father not freed: position 1. A rationale on the order of causes: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d913af69c3ec7c4c6063c702befe9a6e0ba0fb393d6e446cde6804ed6d24e918"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f006",
@@ -280,7 +289,8 @@
      "note": "The iḥtimāl for three quarters: position 1. A rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "5e01f7591f5690a65e144d9248ca23d20c3bc8143fdd8940b1dd7e989080a293"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f007",
@@ -304,7 +314,8 @@
      "note": "The two grounds Ibn Rajab proposes for the riwāya that the favour executes from the third: position 1. Rationales: qiyas. Ibn Rajab adds that the upshot «هو خلاف المذهب المعروف»."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "a55474290ea60e1a94329264c4c368c5988b78b75ab6a316c47fab89a24d1683"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f001",
@@ -328,7 +339,8 @@
      "note": "Stated for the parallel case of wiping while doubting whether the period remains; the «وقيل» carries the second wajh's ground (the wiping's permission not established, so the purification fails like the prayer). An analogy to the repeated prayer: qiyas. Applied here because the farʿ's second wajh turns on the same defect."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d723a3f0145fcbaeab5333694521ece067ddb65eefbb085ea561bdd83394a44a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f002",
@@ -352,7 +364,8 @@
      "note": "The ground on which the debt, including the value of what the father destroyed (al-Sharḥ al-Kabīr's «ولا قيمة متلف»), stands established in the father's dhimma though not demandable: position 1 (al-Inṣāf: «والمذهب منهما قدمه في المغني»). A rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0e890bf1837286a838923d8cb0599f82d32e7bb08a1a9f369fdec57bda3ec12c"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f003",
@@ -385,7 +398,8 @@
      "note": "Ground for liability for what is rescued from the usurper: position 1 (Ibn Rajab calls it «ضعيف»). Stated ʿilla: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "4a6a12e34c869830edb4c7ae53f814b872500f6aaef7227cbd22ab0132d6ec32"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q094.f006",
@@ -410,7 +424,8 @@
     }
    ],
    "advantages": [],
-   "searched": "For position 1 (liable as a borrower): al-Inṣāf v06 p049 and al-Furūʿ with Taṣḥīḥ v07 p169 report the wajh («وقيل: يضمنها»; «وهو ظاهر كلام كثير من الأصحاب») without a proof; al-Mughnī and al-Sharḥ al-Kabīr (ʿāriya, ijāra) do not argue the borrower from a lessee."
+   "searched": "For position 1 (liable as a borrower): al-Inṣāf v06 p049 and al-Furūʿ with Taṣḥīḥ v07 p169 report the wajh («وقيل: يضمنها»; «وهو ظاهر كلام كثير من الأصحاب») without a proof; al-Mughnī and al-Sharḥ al-Kabīr (ʿāriya, ijāra) do not argue the borrower from a lessee.",
+   "positions_sha256": "1e701282d3819c6843e44c33c2a749026bb758157bb8d42319ad8eeea024c69a"
   }
  ]
 }

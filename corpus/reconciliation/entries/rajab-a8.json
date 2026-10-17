@@ -26,7 +26,8 @@
      "who": "al-Buhūtī, Kashshāf al-Qināʿ",
      "note": "Release from the unknown is valid even where knowing it is possible, «لأنه إسقاط حق فينفذ مع العلم والجهل كالعتق والطلاق»."
     }
-   ]
+   ],
+   "positions_sha256": "4b26e78a3008c8284425e39d6d8e91e4fb4e21c0ca675d26b9db52a3a40bfca9"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f012",
@@ -62,7 +63,8 @@
      "who": "Ibn al-Najjār, al-Muntahā",
      "note": "A cognate case: the heir who ratified a share and says he thought it small is believed on oath and takes back what exceeds his belief, so his ratification does not bind him to the unknown excess."
     }
-   ]
+   ],
+   "positions_sha256": "d02cefb878270b963830f28dd19355357ce4f90c4443ad4f76bb7cdaa7a3ec06"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f009",
@@ -82,7 +84,8 @@
      "who": "Ibn Rajab, al-Qawāʿid (q105.f006)",
      "note": "The general rule: one entitled in fact whom we cannot identify is drawn by lot «على قياس المذهب في اشتباه المستحق للمال بغيره»."
     }
-   ]
+   ],
+   "positions_sha256": "add7794149a3cc9837e8877756b4f8a24e6881a0008216bcd2607ef1f186a97e"
   }
  ]
 }

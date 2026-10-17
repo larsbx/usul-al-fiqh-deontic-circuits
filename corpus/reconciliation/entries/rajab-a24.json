@@ -37,7 +37,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ of the khulʿ clause, extending halving to a divorce suspended on her act."
         }
-      ]
+      ],
+      "positions_sha256": "8997973c5387ad96ce3d374ebe02a69acb456835538be6066bd87eb8310e8727"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f002",
@@ -79,7 +80,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "0f847fa55a7143c1b4de63ed845b56611cc6f930ce958cdb8e07e35625c1e2cc"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f003",
@@ -107,7 +109,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ of the matn's halving clause."
         }
-      ]
+      ],
+      "positions_sha256": "7fa52430b0b3802d79761ab3b3824b7fc26b262b734735b82e3192c81d49e151"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f008",
@@ -138,7 +141,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Among the separations that drop the whole mahr."
         }
-      ]
+      ],
+      "positions_sha256": "21dec26d1f971d01761dc4ab094a196b33f3f99a38aa6a5d94356dced59bbc4f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f010",
@@ -174,7 +178,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The matn, among the separations that drop the whole mahr."
         }
-      ]
+      ],
+      "positions_sha256": "0ad7dd3fd51289c67473df326260deb869b90a82e73407c8ab2aba1e03b30568"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f012",
@@ -208,7 +213,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn, among the separations that drop the mahr."
         }
-      ]
+      ],
+      "positions_sha256": "53786997274d69f7856d616f718bf532443f7de9d3ba58f1aba2cc8252e69bdf"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f013",
@@ -244,7 +250,8 @@
           "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
           "note": "al-Mardāwī's assessment of the other riwāya."
         }
-      ]
+      ],
+      "positions_sha256": "c58c44fe82ada0ce44b1ed4103309ee7acd8848e73186a623864f308b25c0e2e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f014",
@@ -286,7 +293,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn: «ولو بسؤالها»."
         }
-      ]
+      ],
+      "positions_sha256": "5641e9f3223f8a0d7cc52ebf5cca08f1f8e935ae6d4ad537be776b18642fcd60"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f015",
@@ -322,7 +330,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "bb5d4fe78606fee1ae3b9fd40fed1de571bfa69041ec4752678e5f240d527cac"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f016",
@@ -333,7 +342,8 @@
       "jam": null,
       "naskh": null,
       "note": "Her yielding herself to the husband's father or son: al-Qāḍī and those who follow him drop the mahr; the halving is one wujūh of Taqī al-Dīn's takhrīj. No later treatment of these facts found; by the grade order the drop prevails, against the reading.",
-      "evidence": []
+      "evidence": [],
+      "positions_sha256": "3709282382a5174fa2bf5a9a6a036dabeab92b8817ea602f563b1d0d2f78201f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f017",
@@ -361,7 +371,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "2e8d48f7b98fa13ff98e4d993f2a8c8436337c0aa8fd8c55f656d822767e51bf"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f018",
@@ -408,7 +419,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "1fcf3991c87efbaf697f7090c7101d55be6cb2ed538d1187eaf8eb5b7ff15fa2"
     }
   ]
 }

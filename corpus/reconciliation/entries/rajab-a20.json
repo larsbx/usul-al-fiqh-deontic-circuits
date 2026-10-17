@@ -37,7 +37,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn: it lapses unless he claimed it."
         }
-      ]
+      ],
+      "positions_sha256": "8ea6de81bb374445667d9712418b59cc6f96226e761eb15d25f18e81602b7906"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f002",
@@ -73,7 +74,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "7e36b09ce9745c196e80d6b884f5883f49a626b55821cae99a88de67db24e042"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f003",
@@ -107,7 +109,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "On «فإن مات قبل ذلك) (ثبت للمعطى)»: the unequal gift is fixed for the recipient when the father dies before equalising; the cognate sub-question."
         }
-      ]
+      ],
+      "positions_sha256": "014c262d6be7162b1904592d074e6274c3b4812edb53acc851ddbd3f8c40839d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f004",
@@ -135,7 +138,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "The ḥadd of qadhf, like the shufʿa, is inherited only if claimed."
         }
-      ]
+      ],
+      "positions_sha256": "3b054a1d14df1fc8cfea178a6f60512aae91ba87c50b73bfd1543729a6be10a8"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f005",
@@ -163,7 +167,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The same cognate in the matn."
         }
-      ]
+      ],
+      "positions_sha256": "c2a53b1617a07765c0aa020f947b2332b8adb031c55a354d97209200c437765f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f006",
@@ -194,7 +199,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "437b5146f251f3c1041a466d972d2cdf9aabcfd26a975afa9812e6588acc6084"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f009",
@@ -238,7 +244,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The preceding words: «ولا يحل بجنون ولا موت»."
         }
-      ]
+      ],
+      "positions_sha256": "125b9b6c79a8c812bed4c89b17cc24d611066e4ceb695022217b5f897174f58c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f014",
@@ -277,7 +284,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "da4098fffa41371ba4eade1a13481454dd56ad9c4bd780a5833235aba024e165"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f000",
@@ -305,7 +313,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "«لأنها في حكم الزوجات كما قبل الطلاق»."
         }
-      ]
+      ],
+      "positions_sha256": "1ed87c2fb2dc6b638fed0b3c494999bd9819972ea5a1e51a6ddcfc270095fc58"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f001",
@@ -336,7 +345,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The triple in separate ṭuhrs before a rajʿa; cognate."
         }
-      ]
+      ],
+      "positions_sha256": "db10237776e08c33738a344ab3a60f8bcc381cb7d49fa51b463ed87f0eaa560b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f002",
@@ -364,7 +374,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "The matn of al-Iqnāʿ in the sharḥ."
         }
-      ]
+      ],
+      "positions_sha256": "f42c7ee002deb01563d0cb9c3e38b8a2761a68923a05d6b66e3489e54dcad211"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f003",
@@ -400,7 +411,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "f0af230cf7349e85d7868743e838018ed97cf7c83d9917bcb06ece9e7eb9e0cc"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f004",
@@ -420,7 +432,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "al-Mardāwī's own «قلت: الصواب», an author's preference (ashab)."
         }
-      ]
+      ],
+      "positions_sha256": "a9ca6e04c87fd6d4f64f4e9d449f1381fe7878a3e563324d2743e8bc199d8776"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f005",
@@ -448,7 +461,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Of the rajʿiyya delivering more than four years after the divorce."
         }
-      ]
+      ],
+      "positions_sha256": "fa9bdcd720e54bae423913dcfce2a52d64b1cf75437c3c854874b9da597e4b89"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f006",
@@ -484,7 +498,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "4c613eba02dff8bd5e63a7ef6f3f5667451e865de6f7d0f1a54b7756e905223b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f007",
@@ -512,7 +527,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "b5a83c12132f3ca9aa9b5f707eb8bb4bc9b7507980fa66f9a2658321bc55733c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f008",
@@ -559,7 +575,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "Continues «المتوفى عنها في لزوم المنزل»."
         }
-      ]
+      ],
+      "positions_sha256": "7817277f799b4d9f46f7a43ee31e685d3b1bb1430ab0728e1e2eb85a3525c365"
     }
   ]
 }

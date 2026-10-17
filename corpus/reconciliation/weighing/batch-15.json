@@ -52,7 +52,8 @@
      "note": "In al-Kāfī this wajh holds only on the view that the verbal exception is invalid. It is recorded as the stated ground of the invalidity ruling. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c7492ce83e904c6a8cae60923cfb44041ee2125e3162ac48acca8d1fb5133dd0"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f001",
@@ -76,7 +77,8 @@
      "note": "The Mughnī's ground for invalidity on these facts. The aṣl is the verbal exception of use for an unknown period: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "a75accd395051fa09a52705a9f906fbb7799a54e271e4a8f2512c5c1ea914cf5"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f001",
@@ -118,7 +120,8 @@
      "note": "The ground Ibn Rajab gives for Abū al-Khaṭṭāb's and al-Kāfī's way: measuring one guarantee by the other. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "024ae101b4e10ffe80d49784b2a914a8411fd136aee418c3baee4d9273678953"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f009",
@@ -142,7 +145,8 @@
      "note": "Cited for undoing the ruling on these facts. A stated rationale with an a fortiori analogy to the ignorant judge: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f18ecb0fef2ba33e8be14d63c3396604ab9c58e11a9e1bd43a4a5a10905839ad"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f007",
@@ -175,7 +179,8 @@
      "note": "Cited for the view that the ʿumra counts. It is a takhrīj from the case of adding an ʿumra for need: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3a4c7c4153f06332885ee329fe1ec2fd979b8a8e011dba7e8fcd30f41db28cf5"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f010",
@@ -208,7 +213,8 @@
      "note": "Cited for binding on these facts. An analogy from another vow: qiyas. Ibn ʿAqīl prefers binding in all such cases."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7107e360a4799cb79dc067accc9758e6dfe8e49c7dc4bdca74d8ea1eb0217f46"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f012",
@@ -232,7 +238,8 @@
      "note": "On exactly these facts (several daughters, both intending one). A stated rationale: qiyas. al-Inṣāf (v08:p051) gives the same maʾkhadh for Abū al-Khaṭṭāb's view."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "aa0dce603d782c632f8dd2f76394f84d468ce818969a729b1ca44ceddcc49fe9"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f013",
@@ -265,7 +272,8 @@
      "note": "Ibn Rajab carries this over to the four wives («فهي كالتي قبلها»). A linguistic rationale: qiyas. He adds Aḥmad's words «النية فيما خفي ليس فيما ظهر» as a shāhid; they are the imām's words, not a separate dalīl."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "a1619752395056f9a810c203144c6bf2279ac4aa286da79f04ee91f4e23938ed"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f014",
@@ -280,7 +288,8 @@
      "note": "Ibn Rajab's ground for preferring the riwāya of validity («ولكن صحة الاستثناء هنا أظهر») on these facts. He also cites a pointer in Aḥmad's words on the ashqāṣ, which is not a dalīl. A linguistic rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e99a7b2c617a5d4ed6cd6e2315dc48b503194e5c2623fabd9877bb27feeecd2c"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f000",
@@ -313,7 +322,8 @@
      "note": "Ibn Qudāma's answer to Abū al-Khaṭṭāb, preferring a Muslim's diya. An analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3b6cac00af6d0c56519ef267c4da306a2f5897ca325462d13962713fc9db4d77"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f001",
@@ -355,7 +365,8 @@
      "note": "For a free man's diya on these facts. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "34c747c804f371c99abc95276f645e1898717f09285ae927e6206224d462c800"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f002",
@@ -379,7 +390,8 @@
      "note": "For the ghurra of a free foetus (the madhhab) on these facts. A stated rationale: qiyas. The Mughnī gives the parallel ground «لأن الضمان معتبر بحال استقرار الجناية» for the kitābiyya case and applies the same split of views to the freed slave-woman."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "15babd96aa357b8b9db6e82e002546c98b4913a175228037ac81525c28e9c1c8"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f004",
@@ -412,7 +424,8 @@
      "note": "Ibn Rajab extracts non-liability for this very case from the ḥarbī ruling; he notes a possible farq himself. An analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "750ab8dc4b90b06c971aa06d044a40d62e1d99769513b2128188e8eb05a13b2e"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f005",
@@ -445,7 +458,8 @@
      "note": "The reason given for the riwāya Abū al-Khaṭṭāb reports (the same ruling as position 1). A stated rationale: qiyas. Ibn Rajab adds that the riwāya «ضعيف، ولا يثبت عن أحمد»; that weakens its attribution to Aḥmad, but no report is involved, so the tier stays qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "fb10bda5482c26fb92757c4466227eb88f394cf40f1b2c884e69b0691080f2b5"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f006",
@@ -469,7 +483,8 @@
      "note": "Same facts and the same stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "9992502c575fc92277758e1b00d051bb0065d658d8c6b883b4c626aae5f4b897"
   }
  ]
 }

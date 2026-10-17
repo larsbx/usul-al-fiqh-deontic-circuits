@@ -50,7 +50,8 @@
           "who": "Ibn al-Jawzī (Kashf al-Mushkil) and ʿAbd al-Ḥalīm son of al-Majd, as al-Inṣāf reports them",
           "note": "Obligatory for one who can walk and earn by a craft; ʿAbd al-Ḥalīm: «هذا ظاهر على أصلنا»."
         }
-      ]
+      ],
+      "positions_sha256": "3e9de0d0d229f6c0ed896296466be2c8339f2e8f60ce8e06b214683910e5b449"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f003",
@@ -94,7 +95,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "With the ḥadīth of Surraq."
         }
-      ]
+      ],
+      "positions_sha256": "e94513c6cd3a1eebb43147df1a64585426f1aea24aaf7f2049c20ec99a1ff40d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f005",
@@ -146,7 +148,8 @@
           "who": "al-Majd and others, as al-Inṣāf reports them",
           "note": "They restrict the riwāya that the poor bears to the earner; al-Zarkashī: «وهو حسن»."
         }
-      ]
+      ],
+      "positions_sha256": "c6f8a2ac7fed27bbb5a6d696cd1fdac5008d2fded7418521a475466560488c44"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f006",
@@ -182,7 +185,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Stated decisively, after ʿUmar's three classes whose lowest is «الفقير المعتمل»."
         }
-      ]
+      ],
+      "positions_sha256": "d34095a374fb41ef5780290d00b98eb80df7b0f90596d0450ac659ce12861a74"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f000",
@@ -210,7 +214,8 @@
           "who": "Ibn al-Najjār, al-Muntahā",
           "note": "Stated decisively."
         }
-      ]
+      ],
+      "positions_sha256": "8f0b0db0e7a83446ec858bf36f38826d876f8746b58921f49e3d69ff93d9bc3f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f001",
@@ -254,7 +259,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "«لأن ما حرم الوطء من القول حرم دواعيه كالطلاق والإحرام»."
         }
-      ]
+      ],
+      "positions_sha256": "fee68d211993aecad059ee11a6323aa1b079e6cabd2362e15320f2d95b2eb16b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f002",
@@ -301,7 +307,8 @@
           "who": "Ibn al-Bannāʾ and al-Shīrāzī, as al-Inṣāf reports them",
           "note": "«وصححه في البلغة، والقاضي في المجرد»."
         }
-      ]
+      ],
+      "positions_sha256": "05bb362c18aad4aa615f1b45dbf6caa47cd5fa79d6363d5072d497eb43edef1d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f003",
@@ -337,7 +344,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "On al-Muntahā's «ولا يحرم على زوج ... زمن عدة غير وطء في فرج»."
         }
-      ]
+      ],
+      "positions_sha256": "2db2b04dcbc97e215e3f7edffe31e687419afbac2f0ec48039c557dc18eab85f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f004",
@@ -373,7 +381,8 @@
           "who": "al-Qāḍī, as Kashshāf reports him",
           "note": "«وصححه في الإنصاف كما جزم به المصنف آنفا»; then «ولو حمل كلام ابن عقيل على ما قبل وطء إحداهما لم يعارض كلام القاضي»."
         }
-      ]
+      ],
+      "positions_sha256": "2c99d1d9cd31e730e2faa547ae6abf10dabeedeecabae640c9c5f45128d13192"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f000",
@@ -417,7 +426,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Stated decisively."
         }
-      ]
+      ],
+      "positions_sha256": "16355e015b3e290e1f961b0026af2b0f73d9eeb694978fc6dfd4e86f0e3ed2a8"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q141.f001",
@@ -478,7 +488,8 @@
           "who": "al-Muqniʿ with al-Hidāya, al-Madhhab, al-Khulāṣa, al-Kāfī and others, «قول أكثر الأصحاب» per al-Zarkashī",
           "note": "Reported in al-Inṣāf ahead of the taṣḥīḥ for the value on the day of destruction."
         }
-      ]
+      ],
+      "positions_sha256": "ef8ea650558bc8db284e51e04f665847c3d2ef86d6d9180696468c9df975eb63"
     }
   ]
 }

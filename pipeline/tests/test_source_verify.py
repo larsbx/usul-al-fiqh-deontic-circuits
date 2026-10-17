@@ -5,15 +5,21 @@ import json
 import pytest
 
 from usul_corpus import source_verify as gate
+from usul_corpus import position_receipts
 
 TEXT = "# هذا الحكم ثابت إلا عند الضرورة\nPageV01P001\n# لا إجمال في البيع\nPageV01P002\n"
 QUOTE = "لا إجمال في البيع"
+
+
+def receipt_case(far):
+    return {"far": far, "positions": [{"who": "fixture holder", "ruling": False}]}
 
 
 @pytest.fixture
 def fixture(tmp_path):
     corpus, cache = tmp_path / "corpus", tmp_path / "cache"
     (corpus / "reconciliation").mkdir(parents=True)
+    (corpus / "takhrij").mkdir()
     cache.mkdir()
     witness = {"id": "test-source", "kind": "openiti", "repo": "test",
                "commit": "a" * 40, "path": "source"}
@@ -21,10 +27,15 @@ def fixture(tmp_path):
     lock = {"witnesses": {"test-source": {"url": gate.fetch.witness_url(witness),
             "bytes": len(TEXT.encode()), "sha256": hashlib.sha256(TEXT.encode()).hexdigest()}}}
     evidence = {"ref": "src:test-source/v01:p002", "excerpt_ar": QUOTE}
-    ledger = {"entries": [{"far": "base-case", "evidence": [evidence]}]}
-    for name, data in (("registry.json", registry), ("lock.json", lock), ("reconciliation/ledger.json", ledger)):
+    cases = [receipt_case(far) for far in ("base-case", "shard-case")]
+    ledger = {"entries": [{"far": "base-case", "evidence": [evidence],
+                           position_receipts.FIELD: position_receipts.digest(cases[0])}]}
+    for name, data in (("registry.json", registry), ("lock.json", lock),
+                       ("takhrij/cases.json", {"cases": cases}), ("reconciliation/ledger.json", ledger)):
         (corpus / name).write_text(json.dumps(data), encoding="utf-8")
     (cache / "test-source.txt").write_text(TEXT, encoding="utf-8")
+    # Every negative control must begin with an admissible, passing source case.
+    assert gate.verify(corpus, cache)["status"] == "verified_required_subset"
     return corpus, cache
 
 
@@ -190,6 +201,21 @@ def test_empty_required_set_is_not_success(fixture):
     assert gate.verify(corpus, cache)["status"] == "failed"
 
 
+@pytest.mark.parametrize("mutation", ["missing", "stale"])
+def test_bad_position_receipt_cannot_be_hidden_by_verified_source(fixture, mutation):
+    corpus, cache = fixture
+    path = corpus / "reconciliation/ledger.json"
+    ledger = json.loads(path.read_text())
+    if mutation == "missing":
+        del ledger["entries"][0][position_receipts.FIELD]
+    else:
+        ledger["entries"][0][position_receipts.FIELD] = "0" * 64
+    path.write_text(json.dumps(ledger))
+    report = gate.verify(corpus, cache)
+    assert report["status"] == "failed"
+    assert any("positions receipt" in error for error in report["errors"])
+
+
 def test_shard_only_witness_is_required_and_cannot_hide_in_exclusions(fixture):
     corpus, cache = fixture
     registry = json.loads((corpus / "registry.json").read_text())
@@ -201,7 +227,8 @@ def test_shard_only_witness_is_required_and_cannot_hide_in_exclusions(fixture):
     (corpus / "lock.json").write_text(json.dumps(locks))
     fragments = corpus / "reconciliation/entries"
     fragments.mkdir()
-    (fragments / "new.json").write_text(json.dumps({"entries": [{"far": "shard-case", "evidence": [
+    (fragments / "new.json").write_text(json.dumps({"entries": [{"far": "shard-case",
+        position_receipts.FIELD: position_receipts.digest(receipt_case("shard-case")), "evidence": [
         {"ref": "src:shard-source/v01:p002", "excerpt_ar": QUOTE}]}]}))
     assert gate.required_witnesses(corpus) == {"test-source", "shard-source"}
     report = gate.verify(corpus, cache)

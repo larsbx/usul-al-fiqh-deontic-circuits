@@ -9,7 +9,8 @@
    "jam": null,
    "naskh": null,
    "note": "The vowed specified charity given by another without leave: the reading (no liability) is Abū al-Khaṭṭāb's wajh with Ibn Rajab's preference; al-Qāḍī and Ibn ʿAqīl make him liable. Two named companions grade aṣḥāb, not jazm (one companion's choice each). No later work in the cache treats the masʾala; graded on Ibn Rajab's report alone. Tawaqquf; candidate farq al-Qāḍī's (the vow's discharge needs intention, like zakāt).",
-   "evidence": []
+   "evidence": [],
+   "positions_sha256": "710af6eeb687a1d80477efe199819a9ee4dd078f9376ebc3563c1f9ffece97f4"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f000",
@@ -40,7 +41,8 @@
      "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
      "note": "The Muntahā with al-Buhūtī's sharḥ states decisively that the cat's sale is valid."
     }
-   ]
+   ],
+   "positions_sha256": "d2ced20034584fa9c5d00fac05d675755cb1889a84f8f2883d6111af23f55138"
   }
  ]
 }

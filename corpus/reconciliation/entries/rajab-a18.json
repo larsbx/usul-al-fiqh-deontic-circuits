@@ -53,7 +53,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "Sharḥ of al-Muntahā, the same ground."
         }
-      ]
+      ],
+      "positions_sha256": "6627c879dc9a27e5a65bc5354b2e967692389925d31b1b54d80119671ede0ed1"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f004",
@@ -113,7 +114,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "Sharḥ of al-Muntahā: «ولو بلا إذن سيده»."
         }
-      ]
+      ],
+      "positions_sha256": "0bf2249468959de620d606662da59137bc009189b635da78c5f499339f55525a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f008",
@@ -165,7 +167,8 @@
           "who": "al-Buhūtī's Kashshāf",
           "note": "al-Buhūtī, after the matn's «لا مجانا»: al-Muntahā and al-Mughnī validate it; then «والمذهب صحة العفو من هؤلاء مجانا»."
         }
-      ]
+      ],
+      "positions_sha256": "596e6e9050e8f71d178ba216f51c62416896c6ba31ee89fd3e4837dbf78c57af"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f009",
@@ -193,7 +196,8 @@
           "who": "al-Buhūtī's Kashshāf",
           "note": "Sharḥ of al-Iqnāʿ, continuing «صحة العفو من هؤلاء مجانا، لأن الدية لم تتعين»."
         }
-      ]
+      ],
+      "positions_sha256": "fbd1aa7b85fde73664c2f4e72b6ac530faf994bc91bb90aa6eebd7ee29331946"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f010",
@@ -237,7 +241,8 @@
           "who": "al-Buhūtī's Kashshāf",
           "note": "Sharḥ of al-Iqnāʿ: «ووارث المفلس ... والمذهب صحة العفو من هؤلاء مجانا»."
         }
-      ]
+      ],
+      "positions_sha256": "00646c88287886d55221eef2bdd382f959c488f1a6c05afb985367365d05ddc8"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f011",
@@ -281,7 +286,8 @@
           "who": "al-Buhūtī's Kashshāf",
           "note": "Sharḥ of al-Iqnāʿ: «وكذا المريض فيما زاد على الثلث) والمذهب صحة العفو من هؤلاء مجانا»."
         }
-      ]
+      ],
+      "positions_sha256": "1dce928453fe8be4568d01f7a41dc7e7ff1f93ff3247301f97c9ccc9b02b5a73"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f014",
@@ -309,7 +315,8 @@
           "who": "Ibn al-Najjār's al-Muntahā",
           "note": "The matn's general rule: a waived qawad «أنفذ من أصل التركة»."
         }
-      ]
+      ],
+      "positions_sha256": "cc32916754a82ea8c2d87f2d14abd67fd69cba107a3983a7023fb8cd4a7068b0"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f015",
@@ -340,7 +347,8 @@
           "who": "Ibn al-Najjār's al-Muntahā",
           "note": "The matn: «بفوق دية»."
         }
-      ]
+      ],
+      "positions_sha256": "9e32544fc0de7262b99f4eda5a5cbfd59a1d2fc4c6bbf65552c7b2ec8b433d71"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f016",
@@ -387,7 +395,8 @@
           "who": "al-Buhūtī's Kashshāf",
           "note": "Sharḥ of al-Iqnāʿ: «لأن ذلك ليس له عوض يمكن الأخذ به»."
         }
-      ]
+      ],
+      "positions_sha256": "58b5d416958fec899f869bee54d886d12412d10d68e5022245a4dde0b45a23a4"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f017",
@@ -423,7 +432,8 @@
           "who": "al-Buhūtī's Kashshāf",
           "note": "Sharḥ of al-Iqnāʿ: «باستصحاب نية التجارة، كما لو اعتاض عنه»."
         }
-      ]
+      ],
+      "positions_sha256": "63fbb9cf7f73820e8e12448410e908cea7f759a9195d77911ab881162f06f1d6"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f003",
@@ -462,7 +472,8 @@
           "who": "al-Buhūtī's Kashshāf",
           "note": "Sharḥ of al-Iqnāʿ: «لأنه تعذر استيفاء القود»."
         }
-      ]
+      ],
+      "positions_sha256": "428ea26c7f1520bf258596746a720d98b10fa65ac6c2fd41b4f00650159f2300"
     }
   ]
 }

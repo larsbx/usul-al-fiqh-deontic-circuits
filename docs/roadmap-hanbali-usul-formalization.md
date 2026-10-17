@@ -33,6 +33,35 @@ Ibn Taymiyya's critique fixes three design decisions **before** any axiom is wri
 
 This rejects Standard Deontic Logic (KD) as the core: it has no defeasibility and is open to the Chisholm/Ross paradoxes. KD remains a possible *fragment*, valid for strict (qaṭʿī) rules only.
 
+### First-principles refactor
+
+Baseline inspected: `57a3b1c`, 2026-10-16. This migration takes priority over
+expanding annotation volume. Existing proofs retain their stated scope; legacy
+milestone counts below are historical until regenerated. Architecture ownership
+and authority rules are in [separated concerns](architecture/separated-concerns.md#repository-wide-authority-boundaries).
+
+| Stage | Deliverable | Acceptance gate | Status |
+|---|---|---|---|
+| R0 — interpretation/inference seam | Pure reconciliation kernel; shared typed JSON identity; explicit textual range gaps; compatible adapters | Wrong-type q043.f005 mutation rejected at validation and execution; all existing reconciliation outcomes preserved; Python/Lean identity agrees | Implemented in this refactor; full CI required |
+| R1 — stable evidence subjects | Case-scoped position IDs, content receipts and legacy index migration | Reordering positions cannot reassign proof/grade/evidence; editing a position invalidates receipts; all associations accounted for | Interim gate implemented: 1,192 per-entry receipts checked before overlays and resolution; stable-ID migration remains open (PR-37 in #91) |
+| R2 — evidence admission | Strict weighing schema, per-position search coverage, proof-bound advantages, explicit applicability/strength claims | Typo fields rejected; unsearched sides remain pending; no unsupported qaṭʿī/ijmāʿ promotion; policy changes replay in Lean/Python | Open; PR-34/36 in #91 |
+| R3 — source and occurrence completeness | Context-aware quotation verification and occurrence-preserving segmentation | Negation/qualifier/word-boundary mutations rejected; repeated bāb obligations retained; every required witness replayed | Open; PR-35/40 in #91; integrate #86 on its own source gates |
+| R4 — application orchestration | Split CLI handlers from source services, admission, inference and output generation | No I/O or corpus dependency enters pure modules; public commands stay compatible; source and semantic checks reported separately | Open; current CLI remains adapter |
+| R5 — derived views and evaluation | Explicit generated-output inventory, grouped routing evaluation, receipt-bound explanations | Every generated file checked; held-out qāʿida metrics and prior disclosed; routing cannot assert a ruling | Open; PR-38/39 in #91 |
+| R6 — remove legacy authority paths | Retire index adapters after complete migration; review acceptance transitions | No silent coercion, inferred acceptance, source skip counted as verified, or view-to-premise promotion | Open |
+
+R0 and the R1 receipt gate do not close evidence completeness, source fidelity or scholarly acceptance.
+The 53 added `outside` annotations only make already-present range gaps explicit;
+no reported ruling changes. The combined #92/#93 implementation retains current proof-ranking
+semantics, including comparison against a side with no recorded proof. R2 must
+separate that conditional computation from evidence adequacy before promoting it.
+
+Each later stage needs its own behavior-preserving replay, negative controls, and
+explicitly reviewed semantic changes. Coordinate with open #86 (mutūn/source
+restoration), #88 (source publication) and #91 (audit plan); do not absorb their
+content or bypass their blockers as part of this refactor. Full source verification,
+Lean, Prolog and generated-output CI remain integration gates.
+
 ### Status (2026-10-13)
 
 | Milestone | State | Evidence |
