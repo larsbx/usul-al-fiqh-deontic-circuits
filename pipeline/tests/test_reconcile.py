@@ -51,6 +51,68 @@ def _adv(winner, loser, by, basis="stated"):
             "note": "n"}
 
 
+def test_a_weighing_file_may_hold_only_known_keys():
+    """Audit PR-36: `advantages` misspelt `advantage` was dropped on load, turning q012.f002's tarjīḥ to tawaqquf."""
+    entry = {"far": "x", "proofs": [], "advantage": [], position_receipts.FIELD: "0" * 64}
+    assert reconcile.overlay_errors("batch-x.json", {"suite": "s", "entries": [entry]}) == [
+        "batch-x.json x: unknown weighing keys ['advantage']"]
+    assert reconcile.overlay_errors("batch-x.json", {"entry": []}) == ["batch-x.json: unknown keys ['entry']"]
+
+
+def test_the_committed_weighing_files_hold_only_known_keys():
+    for path in sorted((ROOT / "corpus/reconciliation/weighing").glob("*.json")):
+        assert reconcile.overlay_errors(path.name, json.loads(path.read_text(encoding="utf-8"))) == []
+
+
+def test_a_weighing_entry_repeats_no_proof_or_advantage_and_weighs_distinct_rulings():
+    """Audit PR-36: duplicates, and an advantage between two positions with one ruling, passed every check."""
+    c = _ikh("x", True, [True, False, False])
+    e = {**_entry("x", ["ashab"] * 3), position_receipts.FIELD: position_receipts.digest(c),
+         "proofs": [_proof(0, "qiyas"), _proof(1, "qiyas"), _proof(2, "qiyas")], "searched": "s"}
+    assert reconcile.check([c], {"entries": [e]}, DOSSIER) == []
+    assert reconcile.check([c], {"entries": [{**e, "proofs": [*e["proofs"], _proof(0, "qiyas")]}]}, DOSSIER) == [
+        "x: a proof is recorded twice"]
+    twice = [_adv(0, 1, "qawl")] * 2
+    assert reconcile.check([c], {"entries": [{**e, "advantages": twice}]}, DOSSIER) == ["x: an advantage is recorded twice"]
+    # Review (#96): a duplicate differing only in its note or attribution is the same record.
+    renoted = [*e["proofs"], {**_proof(0, "qiyas"), "note": "again", "who": "w"}]
+    assert reconcile.check([c], {"entries": [{**e, "proofs": renoted}]}, DOSSIER) == ["x: a proof is recorded twice"]
+    readv = [_adv(0, 1, "qawl"), {**_adv(0, 1, "qawl"), "note": "again"}]
+    assert reconcile.check([c], {"entries": [{**e, "advantages": readv}]}, DOSSIER) == ["x: an advantage is recorded twice"]
+    assert reconcile.check([c], {"entries": [{**e, "advantages": [_adv(0, 1, "qawl"), _adv(0, 1, "amr")]}]}, DOSSIER) == []
+    assert reconcile.check([c], {"entries": [{**e, "advantages": [_adv(1, 2, "qawl")]}]}, DOSSIER) == [
+        "x: an advantage weighs positions 1 and 2, which hold one ruling"]
+
+
+def test_no_proof_claims_certainty_until_a_reviewed_claim_exists():
+    """The docs hold that no proof is a qaṭʿī text or a certain ijmāʿ; a proof of either tier needs review first."""
+    tiers = {p["tier"] for e in LEDGER["entries"] for p in e.get("proofs", [])}
+    assert not tiers & {"qati", "ijma"}
+
+
+def test_proof_and_advantage_excerpts_cite_registered_witnesses_within_their_limits():
+    from usul_corpus.records import EXCERPT_LEN
+    works = json.loads((ROOT / "corpus/registry.json").read_text())["works"]
+    rights = {w["id"]: work["rights"] for work in works for w in work["witnesses"]}
+    for v in (x for e in LEDGER["entries"] for k in ("proofs", "advantages") for x in e.get(k, [])):
+        w = v["ref"][4:].split("/")[0]
+        assert w in rights and 20 <= len(v["excerpt_ar"]) <= EXCERPT_LEN[rights[w]], v["ref"]
+
+
+def test_a_jam_holds_against_the_proofs_under_every_policy():
+    """Audit (low): jamʿ was checked against the default policy only; an applied advantage could favour the other side."""
+    jam = {"encoder": "successive_by_binding", "from": "successive_contracts", "farq": "r"}
+    facts = {"successive": True, "earlier_binding": True, "later_binding": False}
+    c = _ikh("x", False, [True, False], True, "successive_by_binding", facts)
+    e = {**_entry("x", ["ashab", "ashab"], jam), "proofs": [_proof(0, "qiyas"), _proof(1, "qiyas")]}
+    assert reconcile.check([c], {"entries": [e]}, DOSSIER) == []
+    applied = {**e, "advantages": [_adv(0, 1, "khass", "applied")]}
+    assert reconcile.resolve(c, applied) == ("jam", False)
+    assert reconcile.check([c], {"entries": [applied]}, DOSSIER) == [
+        "x: a jamʿ must not land against the side the proofs favour under the applying policy",
+        "x: the refinement departs from successive_contracts against the side the proofs favour under the applying policy"]
+
+
 def test_an_unproven_side_must_say_where_its_proofs_were_sought(monkeypatch):
     """Audit PR-34: a ruling with a proof beats one with none, so an unproven side decides the tarjīḥ; the entry
     records where that side's proofs were searched for, or stands on the pinned list of entries not yet searched."""

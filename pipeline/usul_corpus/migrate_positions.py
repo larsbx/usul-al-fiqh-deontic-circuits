@@ -16,6 +16,7 @@ from .values import code
 
 # Re-pinned for PR-35, which extended excerpt text only (entries, positions and indices unchanged):
 # docs/architecture/pr35-quote-repairs-2026-10-18.md.
+# Re-pinned for PR-36 (batch-01): three advantages between positions holding one ruling removed; no resolution changed.
 SOURCES = {
     "reconciliation/ledger.json": "ba72ed3df2527d81f9e16712b568207756a93aec11f84bfe3c70f45c5af6fe7d",
     "reconciliation/entries/pr30.json": "85c0665f226da22172df3b22b09f56ba2a602651aca5b156e74d61539d53cafd",
@@ -47,7 +48,7 @@ SOURCES = {
     "reconciliation/entries/rajab-q127.json": "3b44b805aa57cf9faa639742bff4c2366f0185c8fcb9980753381d05683cef10",
     "reconciliation/entries/tarjih-backfill.json": "0af621a4fc62de84a26130e3b7452f19362f7f0e5e8c78a69a225dcb1dcdf951",
     "reconciliation/weighing/batch-00.json": "0359e3e7d8560d7ec83069cd076e607e20623d8fef52a718048b4f9502af5c66",
-    "reconciliation/weighing/batch-01.json": "74172e9784316010b6fce1a1f6708311d1c6ca9b0060bbb1248e326a51da0594",
+    "reconciliation/weighing/batch-01.json": "663f4247d4cd684611726ab18bb9166a0c211915656443a990d48b2625107ea2",
     "reconciliation/weighing/batch-02.json": "4657c7ccaeaf668103bef37264f6e1c2ff69ea1af2b27ac2ba76649a6b7616cf",
     "reconciliation/weighing/batch-03.json": "c88fb05105d6f9fabfcf85cec1620b0cdba87dc43e1492ebbea3b45af1b1bda4",
     "reconciliation/weighing/batch-04.json": "09def227c8bd0379b89f1399fb30009db98228fa918043b443919dc2b2a4bb45",

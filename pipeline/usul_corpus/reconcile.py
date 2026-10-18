@@ -138,6 +138,11 @@ def _old(case: dict, frm: str) -> object:
     return enc["py"]({k: case["facts"][k] for k in enc["facts"]})
 
 
+# What makes a proof or advantage the record it is; `note` and `who` describe it (review, #96).
+_IDENTITY = {"proofs": ("position", "tier", "ref", "excerpt_ar"),
+             "advantages": ("for", "over", "by", "basis", "ref", "excerpt_ar")}
+
+
 def _proof_errors(f: str, case: dict, entry: dict) -> list[str]:
     n = len(case["positions"])
     ok = lambda i: type(i) is int and 0 <= i < n
@@ -151,6 +156,14 @@ def _proof_errors(f: str, case: dict, entry: dict) -> list[str]:
         errs.append(f"{f}: an advantage names two listed positions, a murajjiḥ, its basis, a ref and its excerpt")
     elif not weighed(entry) and entry.get("advantages"):
         errs.append(f"{f}: advantages weigh proofs; record the proofs")
+    for k, what in (("proofs", "a proof"), ("advantages", "an advantage")):
+        ids = [{i: x.get(i) for i in _IDENTITY[k]} for x in entry.get(k, [])]
+        if len(distinct(ids)) != len(ids):
+            errs.append(f"{f}: {what} is recorded twice")
+    if not errs:
+        ps = case["positions"]
+        errs += [f"{f}: an advantage weighs positions {a['for']} and {a['over']}, which hold one ruling"
+                 for a in entry.get("advantages", []) if _same(ps[a["for"]]["ruling"], ps[a["over"]]["ruling"])]
     if weighed(entry) and not entry["proofs"] and not str(entry.get("searched", "")).strip():
         errs.append(f"{f}: weighed with no proof: say where the proofs were searched for")
     if errs:
@@ -234,8 +247,8 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
                 errs.append(f"{f}: jamʿ needs the case under a refinement with a conservativity theorem")
                 continue
             jams.setdefault(j["encoder"], []).append(c)
-            if _against_proofs(c, e):
-                errs.append(f"{f}: a jamʿ must not land against the side the proofs favour")
+            if (pol := _against_proofs(c, e)) is not None:
+                errs.append(f"{f}: a jamʿ must not land against the side the proofs favour{_under(pol)}")
         if (rq := e.get("register")) is not None and rq not in open_rq:
             errs.append(f"{f}: {rq} is not an open research question")
     for c in cases:
@@ -292,21 +305,27 @@ def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
         frm = frm.pop()
         for c in (c for c in cases if c["far"] not in invalid and c["encoder"] == enc and not _same(_old(c, frm), c["expected"])):
             e = entries.get(c["far"])
-            if e is None or _against_proofs(c, e):
-                errs.append(f"{c['far']}: the refinement departs from {frm} against the side the proofs favour")
+            if e is None or (pol := _against_proofs(c, e)) is not None:
+                errs.append(f"{c['far']}: the refinement departs from {frm} against the side the proofs favour"
+                            f"{_under(pol) if e is not None else ''}")
         if all(_same(_old(c, frm), c["expected"]) for c in cs):
             errs.append(f"{enc}: a jamʿ must move some farʿ off {frm}")
     return errs
 
 
-def _by_proof(case: dict, entry: dict) -> object | None:
-    return weigh(rulings(case), proved(case, entry), stated(case, entry))
+def _by_proof(case: dict, entry: dict, policy: str = DEFAULT) -> object | None:
+    return weigh(rulings(case), proved(case, entry), stated(case, entry), policy)
 
 
-def _against_proofs(case: dict, entry: dict) -> bool:
-    """The proofs favour a ruling other than the one the jamʿ gives. Tawaqquf does not refute a jamʿ: the
-    proofs leave the farʿ open, and jamʿ comes before tarjīḥ."""
-    return weighed(entry) and (p := _by_proof(case, entry)) is not None and not _same(p, case["expected"])
+def _against_proofs(case: dict, entry: dict) -> str | None:
+    """The first policy, the default first, under which the proofs favour a ruling other than the one the jamʿ
+    gives. Tawaqquf does not refute a jamʿ: the proofs leave the farʿ open, and jamʿ comes before tarjīḥ."""
+    return next((pol for pol in (DEFAULT, *POLICIES) if weighed(entry)
+                 and (p := _by_proof(case, entry, pol)) is not None and not _same(p, case["expected"])), None)
+
+
+def _under(policy: str) -> str:
+    return "" if policy == DEFAULT else f" under the {policy} policy"
 
 
 def jam_pending(cases: list[dict], ledger: dict) -> list[str]:
@@ -437,6 +456,16 @@ def draft(cases: list[dict], ledger: dict) -> list[dict]:
 
 
 WEIGHED = ("proofs", "advantages", "searched")
+_OVERLAY_FILE = {"suite", "status", "provenance", "entries"}
+_OVERLAY_ENTRY = {"far", position_receipts.FIELD, *WEIGHED}
+
+
+def overlay_errors(name: str, data: dict) -> list[str]:
+    """Keys a weighing file may not hold: `load` lays only the known ones over the ledger, so any other would
+    be dropped unseen (audit PR-36)."""
+    errs = [f"{name}: unknown keys {sorted(set(data) - _OVERLAY_FILE)}"] if set(data) - _OVERLAY_FILE else []
+    return errs + [f"{name} {e.get('far')}: unknown weighing keys {sorted(set(e) - _OVERLAY_ENTRY)}"
+                   for e in data.get("entries", []) if set(e) - _OVERLAY_ENTRY]
 
 
 def load(corpus: Path) -> dict:
@@ -446,6 +475,9 @@ def load(corpus: Path) -> dict:
     p = corpus / LEDGER
     base = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {"entries": []}
     ledger = with_fragments(base, p.parent / "entries", key="far")
+    if errs := [x for f in sorted((p.parent / "weighing").glob("*.json"))
+                for x in overlay_errors(f.name, json.loads(f.read_text(encoding="utf-8")))]:
+        raise ValueError("; ".join(errs))
     over = with_fragments({"entries": []}, p.parent / "weighing", key="far")["entries"]
     # Check each independent source before merging: an overlay may not hide a
     # missing/stale ledger receipt, or inherit one in place of its own receipt.

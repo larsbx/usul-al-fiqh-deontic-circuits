@@ -231,28 +231,7 @@
      "note": "Cited for the strong-zahir riwaya: do not use these before washing. An analogy, so qiyas."
     }
    ],
-   "advantages": [
-    {
-     "for": 1,
-     "over": 0,
-     "by": "qawl",
-     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p061",
-     "excerpt_ar": "فقال رسول الله - صلى الله عليه وسلم -: إن وجدتم غيرها فلا تأكلوا فيها",
-     "who": "Ibn Qudama, al-Mughni",
-     "note": "Both are zanni. The proof for dislike (Abu Thaʿlaba) is the Prophet's own saying. The proof for permission (the mazāda report) is a report of his deed (توضئوا من مزادة مشركة). Basis: applied — the excerpt shows the property, but no source compares the two proofs; the bank applies the uṣūl murajjiḥ.",
-     "basis": "applied"
-    },
-    {
-     "for": 1,
-     "over": 0,
-     "by": "hazir",
-     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p061",
-     "excerpt_ar": "إن وجدتم غيرها فلا تأكلوا فيها، وإن لم تجدوا غيرها فاغسلوها وكلوا فيها",
-     "who": "Ibn Qudama, al-Mughni",
-     "note": "The Abu Thaʿlaba hadith is a prohibition («فلا تأكلوا فيها»). The proof for the first riwaya shows only permission (his wuḍūʾ from the polytheist woman's water-skin), so prohibition is preferred over permission. Basis: applied — the excerpt shows the property, but no source compares the two proofs; the bank applies the uṣūl murajjiḥ.",
-     "basis": "applied"
-    }
-   ],
+   "advantages": [],
    "positions_sha256": "df2d664798df15a930da8663f7a10f0d23601ceb610f6c05608562d73c460048"
   },
   {
@@ -304,18 +283,7 @@
      "note": "This is the only ground stated anywhere for the prohibition wajh, which is Ibn Abi Musa's choice. It is an ilḥāq, so qiyas."
     }
    ],
-   "advantages": [
-    {
-     "for": 1,
-     "over": 0,
-     "by": "sahihayn",
-     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p064",
-     "excerpt_ar": "صلى وهو حامل أمامة بنت أبي العاص بن الربيع متفق عليه",
-     "who": "Shams al-Din Ibn Qudama, al-Sharh al-Kabir",
-     "note": "Both are zanni. The Umama hadith cited for permissibility is agreed upon (al-Bukhari and Muslim). The ʿAʾisha report cited for avoidance is given only from Abu Dawud. Basis: applied — the excerpt shows the property, but no source compares the two proofs; the bank applies the uṣūl murajjiḥ.",
-     "basis": "applied"
-    }
-   ],
+   "advantages": [],
    "positions_sha256": "c7d95f3a64b5f5f1f43e1b552fff988b206f13a1cb7b71b60bf9285637ba4335"
   },
   {
