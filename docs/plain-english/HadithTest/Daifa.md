@@ -18,7 +18,7 @@ Each entry is tagged with how the verdict is reached. The file holds 67 guards o
 | Kind | Count | Plain English |
 | --- | --- | --- |
 | derivable | 33 | The rules alone reproduce al-Albānī's verdict. |
-| qarina | 11 | The rules give a weaker-than-final verdict; a cited ruling lowers it to al-Albānī's (11 `judgeRI` guards). |
+| qarina | 11 | The rules alone give a higher verdict; a cited ruling lowers it to al-Albānī's (11 `judgeRI` guards). |
 | missing_rule | 1 | The kernel cannot yet express the reason; the guard records what it does give. |
 
 ## 3. Representative checks

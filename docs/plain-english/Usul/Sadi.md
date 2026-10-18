@@ -43,7 +43,7 @@ Al-Saʿdī's *al-Qawāʿid wa'l-Uṣūl al-Jāmiʿa*, a book of 60 legal maxims,
 | Theorem | Plain English |
 | --- | --- |
 | `q11_yaqin` | Certainty (yaqīn) is not removed by doubt (shakk). |
-| `q52_strong_qarina_prevails` | A strong indicator (qarīna), at least as strong as the presumption, prevails over it. |
+| `q52_strong_qarina_prevails` | An indicator (qarīna) that is not suspended and is at least as strong as the presumption prevails over it. |
 
 ## 5. Justice, settlements, excuses and substitutes (Q16, Q22–23, Q27, Q28)
 

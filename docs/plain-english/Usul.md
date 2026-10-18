@@ -13,7 +13,7 @@ The root of the uṣūl al-fiqh (legal theory) kernel. Importing `Usul` brings i
 - **Process**: `Usul.Process` (the project's review process, read by its own principles).
 - **Analogy**: `Usul.Qiyas`, `Usul.Jadal`, `Usul.QiyasLimits` (establishing the ʿilla, the objections, and the limits of qiyās).
 - **Textual inference**: `Usul.Dalala`, `Usul.CommandSchemata`, `Usul.CommandDerivation`.
-- **Applications**: `Usul.Tahara` (ritual purity by its Arabic names), `Usul.Readings` (the formal readings of each maxim, one module per shard).
+- **Applications**: `Usul.Tahara` (bodily discharges and purity, by their Arabic names), `Usul.Readings` (the formal readings of each maxim, one module per shard).
 - **The ḥadīth seam**: `Usul.Seam`, the only edge into the ḥadīth track.
 - **Types**: `Usul.Typing`, `Usul.Typing.Encoders`, `Usul.Typing.Relations`, `Usul.Typing.Answers`, `Usul.DerivedTypes`.
 - **Categories**: `Usul.Cat`, which gathers the category-theory submodules.

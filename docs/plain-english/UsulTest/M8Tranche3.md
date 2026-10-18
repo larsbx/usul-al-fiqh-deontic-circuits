@@ -11,7 +11,7 @@ These hand-written guards sharpen the third M8 tranche of Ibn Rajab's qawāʿid 
 | Check | Plain English |
 | --- | --- |
 | `makeupAfterFailure .corruption == .asBegun` | One who corrupted the undertaking repeats it as begun. |
-| `makeupAfterFailure .prevention == .baseline` | One prevented from completing it does not. |
+| `makeupAfterFailure .prevention == .baseline` | For one prevented, any make-up takes the basic form. This names the form only, not a duty to make up. |
 | `makeupAfterFailure .lossWithFault == .asBegun` | Loss through one's own fault keeps the enhanced form. |
 | `makeupAfterFailure .lossWithoutFault == .baseline` | Loss without fault does not; this follows the author of al-Mughnī. |
 
