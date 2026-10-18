@@ -80,6 +80,8 @@ Known extraction defect: h014 is labelled «فمن المخصص المتصل» b
 
 ### Lean 4 (`formal/lean`, core only, no Mathlib, zero `sorry`)
 
+Mathlib is pinned beside the kernel in `formal/lean-mathlib`, never imported by it ([mathlib-pin.md](mathlib-pin.md)).
+
 | Module | Results |
 |---|---|
 | `Usul.Hukm` | `σ_involutive`, `σ_antitone`, `σ_valence`, `amr_nahy_didd`, `σ_fixed_iff` (only ibāḥa is fixed), `mode_binding_injective` (ṭalab/takhyīr × ilzām separates all five statuses), `σ_preserves_binding` |

@@ -1,6 +1,6 @@
 # Plain-English companions
 
-Every Lean module under `formal/lean/` has a plain-English companion here, at the same path with `.md` for `.lean`, and a Claude Docs copy linked in the Doc column (`pending` = not created yet). `pipeline/tests/test_plain_english.py` fails when a module lacks a companion, a companion outlives its module, or this index misses one; it does not check the Docs copies.
+Every Lean module under `formal/lean/` and `formal/lean-mathlib/` has a plain-English companion here, at the same path with `.md` for `.lean`, and a Claude Docs copy linked in the Doc column (`pending` = not created yet). `pipeline/tests/test_plain_english.py` fails when a module lacks a companion, a companion outlives its module, or this index misses one; it does not check the Docs copies.
 
 ## Usul
 
@@ -135,3 +135,12 @@ Every Lean module under `formal/lean/` has a plain-English companion here, at th
 | Module | Companion | Doc |
 | --- | --- | --- |
 | `scripts.ExportTypes` | [scripts/ExportTypes.md](scripts/ExportTypes.md) | [doc](https://claude.ai/code/artifact/f4d2dda9-792a-4bb1-8e15-8a236bb54a0e) |
+
+## UsulMathlib
+
+Pinned Mathlib bridge in `formal/lean-mathlib/`, outside the kernel build.
+
+| Module | Companion | Doc |
+| --- | --- | --- |
+| `UsulMathlib` | [UsulMathlib.md](UsulMathlib.md) | pending |
+| `UsulMathlib.Hukm` | [UsulMathlib/Hukm.md](UsulMathlib/Hukm.md) | pending |
