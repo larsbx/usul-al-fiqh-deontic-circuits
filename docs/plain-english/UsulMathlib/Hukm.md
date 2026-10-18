@@ -2,15 +2,15 @@
 
 Source: [`formal/lean-mathlib/UsulMathlib/Hukm.lean`](../../../formal/lean-mathlib/UsulMathlib/Hukm.lean)
 
-The five rulings form a Mathlib linear order, and a span of rulings is a Mathlib closed interval. Later work can use Mathlib's order theory on the kernel's types without the kernel importing Mathlib.
+The five rulings, ordered by their reward and liability for doing and leaving, form a Mathlib linear order, and a span of rulings is a Mathlib closed interval. Later work can use Mathlib's order theory on the kernel's types without the kernel importing Mathlib.
 
 ## 1. The scale as a Mathlib order
 
-- **`LinearOrder Hukm`**: the order ḥarām < makrūh < mubāḥ < mandūb < wājib, built from the 0–4 score. The score is one-to-one, so the order is total and antisymmetric.
+- **`LinearOrder Hukm`**: the order ḥarām < makrūh < mubāḥ < mandūb < wājib, built from the kernel's own laws (reflexive, transitive, antisymmetric, total). No numeric score is involved.
 
 | Theorem | Plain English |
 | --- | --- |
-| `hukm_le_iff` | a ≤ b ⟺ a's score ≤ b's score. The Mathlib order is the kernel's order. |
+| `hukm_le_iff` | a ≤ b ⟺ doing fares no worse under b and leaving no better. The Mathlib order is the kernel's order. |
 
 ## 2. Spans as intervals
 

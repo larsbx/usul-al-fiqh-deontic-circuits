@@ -27,7 +27,7 @@ in Mathlib is compiled locally. The download unpacks to several GB under
 
 | Result | Statement |
 |---|---|
-| `LinearOrder Hukm` | the valence chain Ḥ < K < M < N < W, lifted along the injective `Hukm.valence` |
+| `LinearOrder Hukm` | the chain Ḥ < K < M < N < W from the kernel's own laws (`Hukm.le_total` …), with no rank behind it |
 | `span_eq_Icc` | a kernel `Span` is `Set.Icc lo hi` |
 | `meets_iff_Icc` | spans meet ⟺ their `Set.Icc`s intersect |
 

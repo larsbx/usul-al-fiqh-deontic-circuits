@@ -11,7 +11,8 @@ or wājib. Forcing either to a point adds precision the source does not have, an
 then reports an ikhtilāf that is not there (*yajūz* beside *yustaḥabb*).
 See `docs/architecture/hukm-interval-verdicts.md`.
 
-* A **span** is a nonempty interval `[lo, hi]` of the valence chain Ḥ < K < M < N < W. A point
+* A **span** is a nonempty interval `[lo, hi]` of the chain Ḥ < K < M < N < W, the order read off
+  each status's reward and liability for doing and leaving (`Usul.Hukm`). A point
   verdict is a span with `lo = hi` (`point`). The khiṭāb's modes are spans (`talabFil`,
   `talabTark`, and `point mubah` for takhyīr), as are «يجوز» (`permitted`) and the
   uninformative `any`.
@@ -27,28 +28,30 @@ See `docs/architecture/hukm-interval-verdicts.md`.
 * `Span.σ` carries a span to the span of the omission. It reverses the interval because σ
   reverses the order (`mem_σ`).
 
-The chain order is used only through comparisons; nothing here adds or averages valences.
+The order is used only through comparisons, and there is no rank to add or average. Each named span
+is a condition on the definitions (`permitted`: no liability for doing; `talabFil`: reward for
+doing), so a span says which consequences a position fixes.
 -/
 
 namespace Usul.Cat.Interval
 
 open Usul Usul.Cat.Sheaf
 
-/-- A nonempty interval of the valence chain. -/
+/-- A nonempty interval of the chain. -/
 structure Span where
   lo : Hukm
   hi : Hukm
-  le : lo.valence ≤ hi.valence
+  le : lo ≤ hi
 
 namespace Span
 
 /-- `h` lies in the span. -/
-def Mem (h : Hukm) (s : Span) : Prop := s.lo.valence ≤ h.valence ∧ h.valence ≤ s.hi.valence
+def Mem (h : Hukm) (s : Span) : Prop := s.lo ≤ h ∧ h ≤ s.hi
 
 instance (h : Hukm) (s : Span) : Decidable (Mem h s) := inferInstanceAs (Decidable (_ ∧ _))
 
 /-- The span of exactly one status. -/
-def point (h : Hukm) : Span := ⟨h, h, Nat.le_refl _⟩
+def point (h : Hukm) : Span := ⟨h, h, Hukm.le_refl h⟩
 
 /-- Every status: the position fixes nothing. -/
 def any : Span := ⟨.haram, .wajib, by decide⟩
@@ -66,7 +69,7 @@ def talabFil : Span := ⟨.mandub, .wajib, by decide⟩
 def talabTark : Span := ⟨.haram, .makruh, by decide⟩
 
 theorem mem_point {a h : Hukm} : Mem a (point h) ↔ a = h :=
-  ⟨fun ⟨l, r⟩ => Hukm.valence_injective (Nat.le_antisymm r l), fun e => e ▸ ⟨Nat.le_refl _, Nat.le_refl _⟩⟩
+  ⟨fun ⟨l, r⟩ => Hukm.le_antisymm r l, fun e => e ▸ ⟨Hukm.le_refl _, Hukm.le_refl _⟩⟩
 
 theorem mem_any (h : Hukm) : Mem h any := by cases h <;> decide
 
@@ -82,26 +85,21 @@ theorem mem_talabTark (h : Hukm) : Mem h talabTark ↔ h.mode = .talabTark := by
 theorem mem_takhyir (h : Hukm) : Mem h (point .mubah) ↔ h.mode = .takhyir := by cases h <;> decide
 
 /-- The span of the omission: σ reverses the order, so the ends swap. -/
-def σ (s : Span) : Span :=
-  ⟨Hukm.σ s.hi, Hukm.σ s.lo, by
-    rw [Hukm.σ_valence, Hukm.σ_valence]; have := s.le; have := Hukm.valence_le_four s.hi; omega⟩
+def σ (s : Span) : Span := ⟨Hukm.σ s.hi, Hukm.σ s.lo, Hukm.σ_antitone s.le⟩
 
 theorem mem_σ {h : Hukm} {s : Span} : Mem (Hukm.σ h) (σ s) ↔ Mem h s := by
-  simp only [Mem, σ, Hukm.σ_valence]
-  have := Hukm.valence_le_four h; have := Hukm.valence_le_four s.lo
-  have := Hukm.valence_le_four s.hi; omega
+  simp only [Mem, σ, Hukm.σ_le_σ]; exact And.comm
 
 /-- The two spans share a status. -/
-def Meets (s t : Span) : Prop := s.lo.valence ≤ t.hi.valence ∧ t.lo.valence ≤ s.hi.valence
+def Meets (s t : Span) : Prop := s.lo ≤ t.hi ∧ t.lo ≤ s.hi
 
 instance (s t : Span) : Decidable (Meets s t) := inferInstanceAs (Decidable (_ ∧ _))
 
 theorem meets_iff_exists {s t : Span} : Meets s t ↔ ∃ h, Mem h s ∧ Mem h t := by
-  refine ⟨fun ⟨l, r⟩ => ?_, fun ⟨_, ⟨a, b⟩, c, d⟩ => ⟨by omega, by omega⟩⟩
-  have := s.le; have := t.le
-  by_cases hst : s.lo.valence ≤ t.lo.valence
-  · exact ⟨t.lo, ⟨hst, r⟩, Nat.le_refl _, t.le⟩
-  · exact ⟨s.lo, ⟨Nat.le_refl _, s.le⟩, by omega, l⟩
+  refine ⟨fun ⟨l, r⟩ => ?_, fun ⟨_, ⟨a, b⟩, c, d⟩ => ⟨Hukm.le_trans a d, Hukm.le_trans c b⟩⟩
+  rcases Hukm.le_total s.lo t.lo with hst | hts
+  · exact ⟨t.lo, ⟨hst, r⟩, Hukm.le_refl _, t.le⟩
+  · exact ⟨s.lo, ⟨Hukm.le_refl _, s.le⟩, hts, l⟩
 
 theorem meets_comm {s t : Span} : Meets s t ↔ Meets t s := ⟨fun ⟨a, b⟩ => ⟨b, a⟩, fun ⟨a, b⟩ => ⟨b, a⟩⟩
 
@@ -113,9 +111,7 @@ theorem meets_point {a b : Hukm} : Meets (point a) (point b) ↔ a = b := by
 
 /-- σ preserves meeting: a disagreement over an act is one over its omission. -/
 theorem meets_σ {s t : Span} : Meets (σ s) (σ t) ↔ Meets s t := by
-  simp only [Meets, σ, Hukm.σ_valence]
-  have := Hukm.valence_le_four s.lo; have := Hukm.valence_le_four s.hi
-  have := Hukm.valence_le_four t.lo; have := Hukm.valence_le_four t.hi; omega
+  simp only [Meets, σ, Hukm.σ_le_σ]; exact And.comm
 
 end Span
 
@@ -126,9 +122,9 @@ open Span
 /-- The greatest lower end of a list of spans (`haram` for none). -/
 def maxLo : List Span → Hukm
   | [] => .haram
-  | s :: l => if s.lo.valence ≤ (maxLo l).valence then maxLo l else s.lo
+  | s :: l => if s.lo ≤ maxLo l then maxLo l else s.lo
 
-theorem le_maxLo : ∀ {l : List Span}, ∀ s ∈ l, s.lo.valence ≤ (maxLo l).valence
+theorem le_maxLo : ∀ {l : List Span}, ∀ s ∈ l, s.lo ≤ maxLo l
   | t :: l, s, hs => by
     have ih := @le_maxLo l
     unfold maxLo
@@ -136,9 +132,10 @@ theorem le_maxLo : ∀ {l : List Span}, ∀ s ∈ l, s.lo.valence ≤ (maxLo l).
     · rcases List.mem_cons.1 hs with rfl | hs
       · assumption
       · exact ih s hs
-    · rcases List.mem_cons.1 hs with rfl | hs
-      · exact Nat.le_refl _
-      · have := ih s hs; omega
+    · rename_i hn
+      rcases List.mem_cons.1 hs with rfl | hs
+      · exact Hukm.le_refl _
+      · exact Hukm.le_trans (ih s hs) ((Hukm.le_total t.lo (maxLo l)).resolve_left hn)
 
 theorem maxLo_cases : ∀ l : List Span, maxLo l = .haram ∨ ∃ t ∈ l, maxLo l = t.lo
   | [] => .inl rfl
@@ -155,7 +152,7 @@ theorem helly {l : List Span} (h : ∀ s ∈ l, ∀ t ∈ l, Meets s t) : ∀ s 
   intro s hs
   refine ⟨le_maxLo s hs, ?_⟩
   rcases maxLo_cases l with e | ⟨t, ht, e⟩
-  · rw [e]; exact Nat.zero_le _
+  · rw [e]; exact Hukm.haram_le _
   · rw [e]; exact (h s hs t ht).2
 
 /-! ## Finite sites with interval patches -/

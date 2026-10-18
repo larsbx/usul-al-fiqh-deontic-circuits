@@ -1,14 +1,16 @@
 # Ḥukm as a verdict type: where the five-point chain loses meaning
 
 The five taklīfī statuses are the right carrier. Treating them as a single chain of point verdicts
-is what loses fidelity. As a set, {W, N, M, K, Ḥ} is the jumhūr inventory, and `Usul.Hukm` proves
-its faithful presentation:
+is what loses fidelity. As a set, {W, N, M, K, Ḥ} is the jumhūr inventory. Ibn ʿUthaymīn defines
+each status by what follows on doing and on leaving (`src:shamela-9942/v01:p010`–`p011`), and
+`Usul.Hukm` now takes that pair as the definition:
 
 ```
-(mode, binding) : Hukm ↪ {ṭalab al-fiʿl, ṭalab al-tark, takhyīr} × Bool   (mode_binding_injective)
+(fil, tark) : Hukm ↪ Jaza × Jaza,  Jaza = {thawāb, neither, ʿiqāb}       (jaza_injective)
+(mode, binding) : Hukm ↪ {ṭalab al-fiʿl, ṭalab al-tark, takhyīr} × Bool  (mode_binding_injective)
 ```
 
-The losses come from four choices layered on top: the chain order Ḥ < K < M < N < W, point-valued
+The losses come from four choices layered on top: a numeric rank (now removed), point-valued
 sections in `Usul.Cat.Sheaf`, the unary involution `σ`, and valuing each act on its own. This note
 records each loss, what it can do to a derivation, and what the code does about it. The register
 entries are PR-41 to PR-47 in [problem-register.md](../problem-register.md).
@@ -19,11 +21,11 @@ entries are PR-41 to PR-47 in [problem-register.md](../problem-register.md).
 |---|---|---|---|
 | PR-41 | A position that fixes a set of statuses is forced to a point | false ikhtilāf: «يجوز» encoded as M beside «يستحب» (N) is reported as an obstruction | prototyped: `Usul.Cat.Interval` |
 | PR-42 | Tawaqquf has no value in the verdict type | suspension defaulted to M reads as a ruling of ibāḥa and can obstruct, or be glued into, a real ruling | prototyped: `stances` makes suspension a hole in the cover |
-| PR-43 | `σ` builds in two contested readings | `σ mandub = makruh` sets aside khilāf al-awlā; `σ` models tark where the maxim speaks of ḍidd | recorded in `Usul.Hukm`'s header; no change to `σ` |
+| PR-43 | `σ` reads the maxim on statuses | `σ` models tark where the maxim speaks of ḍidd; khilāf al-awlā has the makrūh's consequences and differs only in its khiṭāb, which no status records | `σ` is now derived (the swap of doing and leaving, `σ_fil`, `σ_tark`); the ḍidd and khiṭāb gaps are recorded |
 | PR-44 | Valuing each act on its own cannot state some obligations | wājib mukhayyar (one of the kaffāra options) and wājib kifāʾī (depends on others' acts) have no faithful encoding | open |
 | PR-45 | Agreement in value is taken as agreement in ground | ḥarām li-dhātihi and li-ghayrihi glue, yet only the second yields to ḥāja; a narrower context splits them | open |
 | PR-46 | A scheme with more statuses mapped into the five is not injective | Ḥanafī farḍ / wājib and karāha taḥrīmiyya / tanzīhiyya collapse, giving false agreement | open; `Grade` is the axis that recovers most of it |
-| PR-47 | `valence : Hukm → ℕ` invites arithmetic | sums or averages of valences mean nothing | recorded: only comparisons and `4 − v` under `σ` are used |
+| PR-47 | A numeric rank (`valence`, 0–4) stood for the statuses | it made the mandūb a weaker wājib and the makrūh a weaker ḥarām, and every step of the chain one unit, though the steps change different things | closed: `valence` removed; statuses are defined by reward and liability for doing and leaving, and the order and `σ` are derived from them |
 
 ### PR-41: point-forcing
 
@@ -45,6 +47,43 @@ matching when their spans meet. The obstruction theory survives unchanged in sha
 in a line obey Helly's theorem: spans that meet pairwise share a status. Obstruction therefore
 stays a pairwise witness, and the finite sheaf condition keeps its form (`iglues_iff`).
 
+### PR-47: consequences, not ranks
+
+Ibn ʿUthaymīn's definitions say what follows on doing and on leaving:
+
+| Status | Doing | Leaving |
+|---|---|---|
+| wājib | «يثاب فاعله امتثالاً» | «يستحق العقاب تاركُه» |
+| mandūb | «يثاب فاعله امتثالاً» | «لا يعاقب تاركه» |
+| mubāḥ | «لا يترتب عليه ثواب ولا عقاب» | the same |
+| makrūh | «لا يعاقب فاعله» | «يثاب تاركه امتثالاً» |
+| ḥarām | «يستحق العقاب فاعله» | «يثاب تاركه امتثالاً» |
+
+A rank of 0 to 4 loses this. The mandūb is not "three quarters of a wājib". It is the wājib with
+no liability for leaving: whoever does it is rewarded, and whoever leaves it is not punished. The
+makrūh should be avoided, but doing it incurs no punishment; it is the ḥarām with no liability
+for doing. The four steps of the chain change four different things:
+
+| Step | Change |
+|---|---|
+| W → N | leaving is no longer liable |
+| N → M | doing is no longer rewarded |
+| M → K | leaving becomes rewarded |
+| K → Ḥ | doing becomes liable |
+
+`Usul.Hukm` now defines each status by `fil` and `tark` (`Jaza`: thawāb, neither, ʿiqāb). Several
+things are derived from that pair:
+
+* **The order.** b ≥ a when doing fares no worse under b and leaving no better. It is still a
+  chain (`le_total`), but there is no rank to add or average.
+* **σ.** The omission swaps doing and leaving (`σ_fil`, `σ_tark`).
+* **ilzām.** It is liability on one side (`binding_iff`).
+* **The modes.** Ṭalab is reward on the demanded side (`mode_talabFil_iff`, `mode_talabTark_iff`).
+
+Two caveats sit in the wording. Reward is conditioned on obedience («امتثالاً»), and punishment
+is liability («يستحق»), not its certain infliction. `Jaza` records what the Lawgiver attaches,
+not what befalls an agent.
+
 ### PR-42: tawaqquf
 
 Not-knowing is not ibāḥa. `UsulTest.Reconcile` already resolves 340 entries to tawaqquf under the default policy, outside the verdict type.
@@ -53,9 +92,10 @@ never read as M.
 
 ### PR-43: the contested readings in `σ`
 
-* **Khilāf al-awlā.** Leaving a mandūb is not makrūh for those who require a specific nahy for
-  karāha; later Shāfiʿīs name it khilāf al-awlā. `σ` is an involution only because that
-  category is merged into K.
+* **Khilāf al-awlā.** Leaving a mandūb has the makrūh's consequences (neither on doing, reward
+  on leaving), so `σ mandub = makruh` follows from the definitions. Later Shāfiʿīs still name it
+  khilāf al-awlā, because they require a specific nahy for karāha. The distinction is in the
+  khiṭāb, which a status does not record.
 * **Ḍidd vs tark.** *Al-amr bi'l-shayʾ nahy ʿan ḍiddih* speaks of the contrary acts. An act can
   have several contraries (a command to stand has sitting and lying as contraries), and a unary
   map on statuses cannot say which of them is forbidden.

@@ -6,7 +6,7 @@ Many positions fix a range of rulings, not one. Treating each as a range keeps r
 
 ## 1. Spans
 
-- **Span**: a nonempty range `[lo, hi]` on the scale ḥarām < makrūh < mubāḥ < mandūb < wājib. A position can say "somewhere in here" without picking a point.
+- **Span**: a nonempty range `[lo, hi]` on the chain ḥarām < makrūh < mubāḥ < mandūb < wājib, the order `Usul.Hukm` reads off each ruling's reward and liability for doing and leaving. A position can say "somewhere in here" without picking a point.
 - **`point h`**: the span of exactly one ruling, the old point verdict.
 - **Named spans**:
 

@@ -23,7 +23,7 @@ Each science that grades its judgements does so on a finite scale. A scale is a 
 category is thin: there is at most one arrow `a ⟶ b`, and it exists iff `rank a ≤ rank b`.
 
 ```text
-hukmCat     Ḥ < K < M < N < W          (Hukm.valence)
+hukmCat     Ḥ < K < M < N < W          (Hukm.fil, Hukm.tark: no rank)
 gradeCat    wahm < shakk < ẓann < qaṭʿ  (Grade.rank)
 verdictCat  mawḍūʿ < … < ṣaḥīḥ          (Hadith.Verdict.rank)
 ```

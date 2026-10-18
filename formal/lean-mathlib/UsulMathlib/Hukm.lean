@@ -6,8 +6,8 @@ import Usul.Cat.Interval
 # The hook: kernel scales as Mathlib orders
 
 The kernel stays Mathlib-free; this package shows the bridge works at the pinned revision. The
-taklīfī scale becomes a Mathlib `LinearOrder` through `Hukm.valence` (injective), and a kernel
-`Span` is exactly a Mathlib `Set.Icc`. Later work can reach Mathlib's order theory from here
+taklīfī order, read off each status's reward and liability for doing and leaving, is a Mathlib
+`LinearOrder` with no rank behind it, and a kernel `Span` is exactly a Mathlib `Set.Icc`. Later work can reach Mathlib's order theory from here
 without touching `usul`.
 -/
 
@@ -15,11 +15,17 @@ namespace UsulMathlib
 
 open Usul Usul.Cat.Interval
 
-/-- The valence chain Ḥ < K < M < N < W as a Mathlib linear order. -/
-instance : LinearOrder Hukm :=
-  LinearOrder.lift' Hukm.valence fun _ _ => Hukm.valence_injective
+/-- The chain Ḥ < K < M < N < W as a Mathlib linear order, from the kernel's own laws. -/
+instance : LinearOrder Hukm where
+  le := (· ≤ ·)
+  le_refl := Hukm.le_refl
+  le_trans _ _ _ := Hukm.le_trans
+  le_antisymm _ _ := Hukm.le_antisymm
+  le_total := Hukm.le_total
+  toDecidableLE := inferInstance
 
-theorem hukm_le_iff {a b : Hukm} : a ≤ b ↔ a.valence ≤ b.valence := Iff.rfl
+/-- The Mathlib order is the kernel's: doing fares no worse, leaving no better. -/
+theorem hukm_le_iff {a b : Hukm} : a ≤ b ↔ a.fil.leb b.fil = true ∧ b.tark.leb a.tark = true := Iff.rfl
 
 /-- A kernel span is the closed interval of its ends. -/
 theorem span_eq_Icc (s : Span) : {h | Span.Mem h s} = Set.Icc s.lo s.hi := rfl

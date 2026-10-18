@@ -84,7 +84,7 @@ Mathlib is pinned beside the kernel in `formal/lean-mathlib`, never imported by 
 
 | Module | Results |
 |---|---|
-| `Usul.Hukm` | `σ_involutive`, `σ_antitone`, `σ_valence`, `amr_nahy_didd`, `σ_fixed_iff` (only ibāḥa is fixed), `mode_binding_injective` (ṭalab/takhyīr × ilzām separates all five statuses), `σ_preserves_binding` |
+| `Usul.Hukm` | `jaza_injective` (reward and liability for doing and leaving define the five), `σ_fil`/`σ_tark` (σ swaps them), `le_total`, `σ_involutive`, `σ_antitone`, `amr_nahy_didd`, `σ_fixed_iff` (only ibāḥa is fixed), `mode_binding_injective` (ṭalab/takhyīr × ilzām separates all five statuses), `σ_preserves_binding` |
 | `Usul.Signature` | `Mukallaf` as a refinement type, `no_taklif_without_mukallaf`, `Grade`, `DalilKind.resort` with `qiyas_after_athar`, `Domain.default` (ʿāda → mubāḥ, ʿibāda → tawqīf), waḍʿī gate `applies` |
 | `Usul.Dung` | `F_mono`, `admissible_F`, `approx_admissible`, `approx_conflictFree`, `approx_succ`, `approx_sub_complete` (grounded ⊆ every complete extension), `unattacked_in_approx_one` |
 | `Usul.Grounded` | executable grounded extension; `defended_iff` and `mem_step_iff` show that one step equals `Dung.F` |

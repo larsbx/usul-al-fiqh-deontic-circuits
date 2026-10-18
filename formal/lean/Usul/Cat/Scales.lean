@@ -4,11 +4,11 @@ import Usul.Seam
 /-!
 # The sciences' scales as categories, and the seams between them as functors
 
-Three scales carry the kernel's judgements, each a thin category (`Cat.scale`):
+Three scales carry the kernel's judgements, each a thin category (`Cat.thin`; the grade and verdict scales through a rank, the taklīfī one through its definitions):
 
 | Science | Scale | Rank |
 |---|---|---|
-| fiqh (taklīf) | `hukmCat` : Ḥ < K < M < N < W | `Hukm.valence` |
+| fiqh (taklīf) | `hukmCat` : Ḥ < K < M < N < W | the order of `Hukm.fil`, `Hukm.tark` (no rank) |
 | uṣūl (epistemics) | `gradeCat` : wahm < shakk < ẓann < qaṭʿ | `Grade.rank` |
 | ḥadīth (al-Albānī) | `verdictCat` : mawḍūʿ < … < ṣaḥīḥ | `Verdict.rank` |
 
@@ -29,23 +29,25 @@ namespace Usul.Cat
 
 open Usul
 
-def hukmCat : Cat := Cat.scale Hukm.valence
+/-- The taklīfī statuses under the order read off their definitions (`Hukm.le_trans`). -/
+def hukmCat : Cat := Cat.thin (fun a b : Hukm => a ≤ b) Hukm.le_refl Hukm.le_trans
 def gradeCat : Cat := Cat.scale Grade.rank
 def verdictCat : Cat := Cat.scale Hadith.Verdict.rank
 
 /-! ## σ: the self-duality of the taklīfī scale -/
 
-/-- σ reverses valence (`Hukm.σ_antitone`): a functor `hukmCat ⥤ hukmCatᵒᵖ`. -/
-def sigma : Functor hukmCat hukmCat.op := Functor.ofAnti Hukm.σ fun h => Hukm.σ_antitone h
+/-- σ reverses the order (`Hukm.σ_antitone`): a functor `hukmCat ⥤ hukmCatᵒᵖ`. -/
+def sigma : Functor hukmCat hukmCat.op :=
+  Functor.intoThin (Cat.Thin.op Cat.thin_thin) Hukm.σ fun g => ⟨Hukm.σ_antitone g.down⟩
 
 /-- The same map read on the opposite side: `hukmCatᵒᵖ ⥤ hukmCat`. -/
 def sigmaOp : Functor hukmCat.op hukmCat :=
-  Functor.intoThin (Cat.scale_thin _) Hukm.σ fun g => ⟨Hukm.σ_antitone g.down⟩
+  Functor.intoThin Cat.thin_thin Hukm.σ fun g => ⟨Hukm.σ_antitone g.down⟩
 
 /-- σ is an isomorphism of the scale with its opposite. -/
 def sigmaIso : ObjIso hukmCat hukmCat.op := ⟨sigma, sigmaOp, Hukm.σ_σ, Hukm.σ_σ⟩
 
-/-- σ also *reflects* the order: the valence comparison is read off the omissions. -/
+/-- σ also *reflects* the order: the comparison is read off the omissions. -/
 theorem sigma_reflects (a b : Hukm) : a ≤ b ↔ Hukm.σ b ≤ Hukm.σ a :=
   ⟨Hukm.σ_antitone, fun h => by simpa using Hukm.σ_antitone h⟩
 

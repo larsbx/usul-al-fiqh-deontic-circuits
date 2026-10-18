@@ -4,7 +4,17 @@ Source: [`formal/lean/UsulTest/Interval.lean`](../../../formal/lean/UsulTest/Int
 
 The checks show the range-valued checker fixing what the single-ruling checker misreads, while keeping every real disagreement. Each runs when the kernel builds.
 
-## 1. Named spans
+## 1. The definitions behind the chain
+
+| Check | Plain English |
+| --- | --- |
+| mandūb vs wājib | Same consequence for doing (reward); only leaving differs. |
+| makrūh vs ḥarām | Same consequence for leaving (reward); only doing differs. |
+| mandūb's leaver, makrūh's doer | Neither is liable. |
+| the four steps | Each step changes one side only, and the sides alternate. |
+| σ | Doing the omission has the consequence of leaving the act, and vice versa. |
+
+## 2. Named spans
 
 | Check | Plain English |
 | --- | --- |
@@ -12,27 +22,27 @@ The checks show the range-valued checker fixing what the single-ruling checker m
 | `talabFil` | mandūb and wājib are inside a command of disputed strength; mubāḥ is not. |
 | `σ talabFil` | Omitting a commanded act lands in ḥarām … makrūh. |
 
-## 2. False ikhtilāf
+## 3. False ikhtilāf
 
 | Check | Plain English |
 | --- | --- |
 | `positions [mubah, mandub]` | Forced to single rulings, «يجوز» (as mubāḥ) and «يستحب» are reported as a disagreement. |
 | `stances [permitted, point mandub]` | As ranges, they agree: mandūb is allowed. |
 
-## 3. Real ikhtilāf is kept
+## 4. Real ikhtilāf is kept
 
 - wājib against mandūb.
 - A command against a prohibition, both of disputed strength.
 - «يجوز» against ḥarām.
 
-## 4. Suspension
+## 5. Suspension
 
 | Check | Plain English |
 | --- | --- |
 | `stances [none, point haram]` | Tawaqquf beside a prohibition is no disagreement. |
 | `positions [mubah, haram]` | Encoding the suspension as mubāḥ would have reported one. |
 
-## 5. Helly and conservativity
+## 6. Helly and conservativity
 
 - "Allowed", "commanded" and "not wājib" pairwise overlap, and all three contain mandūb (`maxLo`).
 - On single-ruling positions the range checker returns exactly the old checker's list.

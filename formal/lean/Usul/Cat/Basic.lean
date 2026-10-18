@@ -6,7 +6,7 @@ statements. This module is the minimal core that job needs, kept free of Mathlib
 the kernel: small categories, the opposite, thin categories of preorders, functors, and
 up-sets (the object part of a cosieve).
 
-Every scale in the kernel (ḥukm valence, epistemic grade, al-Albānī's verdicts) is a preorder,
+Every scale in the kernel (the ḥukm order, epistemic grade, al-Albānī's verdicts) is a preorder,
 so its category is thin: at most one arrow between two objects. In a thin category the functor
 laws hold automatically (`Functor.intoThin`), so a *monotone map is a functor*, and the seams
 between the sciences become functors.

@@ -743,7 +743,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 **Related:** [hukm](#hukm), [wajib](#wajib), [mandub](#mandub), [mubah](#mubah), [makruh](#makruh), [haram](#haram)
 
-**Lean:** `Usul.Hukm`, `Usul.Hukm.mode`, `Usul.Hukm.binding`, `Usul.Hukm.σ`, `Usul.Hukm.σ_involutive`, `Usul.Hukm.valence`, `Usul.Subject.IsMukallaf`
+**Lean:** `Usul.Hukm`, `Usul.Hukm.mode`, `Usul.Hukm.binding`, `Usul.Hukm.σ`, `Usul.Hukm.σ_involutive`, `Usul.Hukm.fil`, `Usul.Hukm.tark`, `Usul.Subject.IsMukallaf`
 
 **Texts**
 
