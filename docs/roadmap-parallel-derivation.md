@@ -158,8 +158,11 @@ Precedents:
       - `corpus/routing/r2_sample1_proposals.json` holds each unit's first five encoders as a lane-B proposal, not a ruling. `ProposalSet` reproduces the draw, and a test holds it to pending units.
     - **Next:** widen the R2 sample by the same draw, then annotate the proposals in lane B. Then repeat T3 on classical units (mutūn bābs, Masāʾil entries), where the routing index's lexical profiles were strong.
 - **P0.6 done, as a ranker:** `python -m usul_corpus routing` writes `corpus/routing/index.json`. Profiles are derived from the bank's evidence, never written: each of the 100 encoders gets the TF-IDF centroid of the records its annotated cases rest on plus its own qawāʿid, with words found in over 10 % of the evidence dropped. Per encoder the index gives its case support, its lexicon (the heaviest profile words) and its nearest matn units.
-  - **Held-out cases** (5 folds by record-id hash, 461 cases): the true encoder is in the top 1 / 5 / 10 for 0.61 / 0.86 / 0.91 of cases, against 0.08 / 0.29 / 0.37 for ranking encoders by frequency.
-  - **Out-of-domain** (`corpus/routing/ood.json`, the 123 IslamQA tranche cases, title and question): 0.09 / 0.29 / 0.37. The stopword share was chosen on the held-out folds, not on this set.
+  - **Held-out cases** (1044 cases, 5 folds; true encoder in the top 1 / 5 / 10, against ranking encoders by frequency under the same split; audit PR-38):
+    - **By qāʿida** (headline: whole qawāʿid held out, their formalised statements kept): 0.29 / 0.51 / 0.59, prior 0.00 / 0.00 / 0.00.
+    - **Within qāʿida** (folds by record-id hash, so a test farʿ's siblings train the model): 0.54 / 0.80 / 0.86, prior 0.04 / 0.12 / 0.19.
+    - **Unseen qāʿida** (its statement held out too): 0.01 / 0.02 / 0.03, prior 0.00 / 0.00 / 0.00. The index does not route a qāʿida the bank has not formalised.
+  - **Out-of-domain** (`corpus/routing/ood.json`, the 123 IslamQA tranche cases, title and question): 0.00 / 0.22 / 0.28, against the prior's 0.00 / 0.22 / 0.22: no better than frequency at k = 1 and 5. The stopword share was chosen on the held-out folds, not on this set.
   - 13 encoders have no annotated case and route by their qawāʿid alone.
 
 | # | Change | Gate |

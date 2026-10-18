@@ -47791,7 +47791,7 @@
     "pipeline/usul_corpus/encoders/rajab_a7.py": "2fdd56d0d1cf0926881a8c0f3909ae4bdd677718bc7c70691b32ab41469e4433",
     "pipeline/usul_corpus/encoders/rajab_a8.py": "6d173b6cfe687649dd063fa2f0b0b36145096608d2d1560a58c66df73cdff1a8",
     "pipeline/usul_corpus/encoders/rajab_a9.py": "6189b8b1dcc9767188b840594fbf74a052a68a7d90aa54f726c21eb25a674747",
-    "pipeline/usul_corpus/routing.py": "e207c68b0094a87a9b9c95b6ac0f62ce88ff7a0d4d53e14cb16b0a4a095bcf54",
+    "pipeline/usul_corpus/routing.py": "b07b68073775fe42e7b222a13fc329f144fa1c687a72973938b979e7d26c4a7f",
     "pipeline/usul_corpus/signature_routing.py": "b7353e5f684590f0b727eab6e326b4a3ca2e6fb6129f861fdf97d475beab6e32",
     "pipeline/usul_corpus/takhrij.py": "75a765b274df38a62e5acc8e0c11d806c56b22318c3a3021895ce0550dfb2df6"
   },

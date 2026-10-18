@@ -18,8 +18,13 @@ def test_the_committed_index_is_current():
 
 
 def test_held_out_cases_route_to_their_encoder_far_above_the_prior():
+    """Audit PR-38: the headline folds whole qawāʿid, so no sibling of a test farʿ trains the model."""
     r = INDEX["recall"]
-    assert r["held_out"]["5"] >= 0.8 and r["held_out"]["5"] > 2 * r["prior"]["5"]
+    head, within = r["by_qaida"], r["within_qaida"]
+    assert head["recall"]["5"] >= 0.5 and head["recall"]["5"] > 2 * head["prior"]["5"]
+    assert within["recall"]["5"] >= 0.8 and within["recall"]["5"] > 2 * within["prior"]["5"]
+    # Siblings in training inflate recall; a qāʿida the bank has not formalised is routed near the prior.
+    assert within["recall"]["1"] > head["recall"]["1"] > r["unseen_qaida"]["recall"]["1"]
 
 
 def test_every_lexicon_word_occurs_in_that_encoders_own_evidence():
