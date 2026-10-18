@@ -7,7 +7,7 @@ Each qāʿida (legal maxim) defines a type: the list of facts its statement rang
 ## 1. How the types are built
 
 - **One structure per qāʿida**: named after the maxim (e.g. `Yaqin` for al-Saʿdī Q11, `Rajab95` for Ibn Rajab 95). Its docstring quotes the maxim's Arabic statement from the committed records.
-- **Fields are `Option`**: each fact is `none` (unknown) by default. A text fills it with `some` value.
+- **Fields are `Option`**: each fact is `none` (unknown) by default. A text fills it with a `some` value.
 - **`extends`**: a maxim that builds on another inherits its fields. Q52's type `Qarain` extends Q11's type `Yaqin`.
 - **Shared vs. separate fields**: Lean merges same-named fields of parent types. So a field name is reused only when two maxims mean the same thing. Look-alikes get qualified names, such as `mixedSameKind` (Ibn Rajab 22) and `actsSameKind` (al-Saʿdī Q41), or `negligent` (Q14, safekeeping) and `negligentInquiry` (Ibn Rajab 6, inquiry).
 - **"Read by"**: most docstrings name the encoders that read the type, e.g. `Rajab53` is "Read by `attached_right_disposal`".

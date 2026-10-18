@@ -35,7 +35,7 @@ The texts fix the direction. 106's despair is wider than 97's (it covers the mus
 | `rukhsa_settles_firmness` | A rukhṣa that needs certainty needs firm intention. |
 | `stated_fact_kept` | If a text says the year passed but the owner is still hoped for, despair stays false. |
 | `consumed_is_unidentified` | Chains settle: consumed ⇒ unknown and despaired of ⇒ the right-holder cannot be identified. |
-| `luqata_routes_to_majhul` | After saturation, a luqaṭa past its year reaches 106's encoder `unknownAsNonexistent`. |
+| `luqata_routes_to_majhul` | After saturation, a luqaṭa past its year reaches 106's encoder `unknownAsNonexistent`, once the text states the remaining facts. |
 | `istihlak_agrees` | On a consumed thing, 106's encoder rules as the `istihlak` encoder does. The kernel already assumed this link. |
 
 ## 4. The look-alikes at work
