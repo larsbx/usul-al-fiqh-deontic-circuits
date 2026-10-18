@@ -60,7 +60,7 @@ In order of priority. The first two are needed before the guarantees above hold 
 1. **Restore CI** (account owner): check the Actions minutes and spending limit (Settings → Billing → Actions). The first cold corpus run will exceed its 120-minute timeout fetching al-Ḍaʿīfa (`shamela-12762`, 18.9 MB); the witness cache is saved `if: always()` and the `.part` checkpoint resumes, so the next run completes. Re-run the open PRs' checks once green.
 2. **Require the checks on `main`** (repository settings): branch protection with the four workflow checks required, so none of these gates can be bypassed by a merge.
 3. **Scholarly review** (a person, not the pipeline):
-   - the 57 excerpts that began just after a negation and were extended (PR-35); confirm each still supports its position ([list](pr35-quote-repairs-2026-10-18.md));
+   - 57 of the 59 excerpts that began just after a negation and were extended (PR-35), the other two already checked; confirm each still supports its position ([list](pr35-quote-repairs-2026-10-18.md));
    - the 103 entries in `corpus/reconciliation/unsearched.json`: record where each losing side's proofs were sought (`searched`); the list may only shrink;
    - the weighing as a whole, which no human has reviewed (`taarud-reconciliation.md`).
 4. **Pin text derivations** for the four DOC/PDF witnesses still outside the required set: `islamhouse-qj-doc` (al-Saʿdī), `archive-pdf1995-tess`, `archive-manzuma-tess`, `archive-tariq-tess`. Each becomes required once its text is locked.
@@ -74,7 +74,7 @@ In order of priority. The first two are needed before the guarantees above hold 
 
 - Step 1 (PR-33): closed by PR #92, which also landed the interim position receipts of step 5 (PR-37, partly closed).
 - Step 2 (PR-34): the `searched` gate and the `tarjih_against_unproven` report; 103 entries pinned in `corpus/reconciliation/unsearched.json` until their searches are recorded.
-- Step 3 (PR-35): the stricter quotation gate, and 77 excerpts extended from their witnesses; 59 that followed a negation await evidence review ([repairs](pr35-quote-repairs-2026-10-18.md)).
+- Step 3 (PR-35): the stricter quotation gate, and 77 excerpts extended from their witnesses; 59 that followed a negation, of which 57 await evidence review ([repairs](pr35-quote-repairs-2026-10-18.md)).
 - Step 4a (PR-36): weighing keys, duplicates, same-ruling advantages, the qaṭʿī/ijmāʿ pin, proof excerpt limits and jamʿ under every policy; step 4b (murajjiḥ to tier, mirrored in Lean) follows separately.
 - Step 4b (PR-36): murajjiḥ domains in `Usul.Tarjih` and its Python mirror; only q159.f035's rejected `dariHadd`, applied between qiyāsāt, falls outside, changing the `all` policy only.
 - Step 5 (PR-37): delivered by PR #92's position receipts; a regression test pins the audit's reversal.
