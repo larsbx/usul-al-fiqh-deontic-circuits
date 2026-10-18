@@ -74,6 +74,12 @@ def test_a_weighing_entry_repeats_no_proof_or_advantage_and_weighs_distinct_ruli
         "x: a proof is recorded twice"]
     twice = [_adv(0, 1, "qawl")] * 2
     assert reconcile.check([c], {"entries": [{**e, "advantages": twice}]}, DOSSIER) == ["x: an advantage is recorded twice"]
+    # Review (#96): a duplicate differing only in its note or attribution is the same record.
+    renoted = [*e["proofs"], {**_proof(0, "qiyas"), "note": "again", "who": "w"}]
+    assert reconcile.check([c], {"entries": [{**e, "proofs": renoted}]}, DOSSIER) == ["x: a proof is recorded twice"]
+    readv = [_adv(0, 1, "qawl"), {**_adv(0, 1, "qawl"), "note": "again"}]
+    assert reconcile.check([c], {"entries": [{**e, "advantages": readv}]}, DOSSIER) == ["x: an advantage is recorded twice"]
+    assert reconcile.check([c], {"entries": [{**e, "advantages": [_adv(0, 1, "qawl"), _adv(0, 1, "amr")]}]}, DOSSIER) == []
     assert reconcile.check([c], {"entries": [{**e, "advantages": [_adv(1, 2, "qawl")]}]}, DOSSIER) == [
         "x: an advantage weighs positions 1 and 2, which hold one ruling"]
 

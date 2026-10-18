@@ -138,6 +138,11 @@ def _old(case: dict, frm: str) -> object:
     return enc["py"]({k: case["facts"][k] for k in enc["facts"]})
 
 
+# What makes a proof or advantage the record it is; `note` and `who` describe it (review, #96).
+_IDENTITY = {"proofs": ("position", "tier", "ref", "excerpt_ar"),
+             "advantages": ("for", "over", "by", "basis", "ref", "excerpt_ar")}
+
+
 def _proof_errors(f: str, case: dict, entry: dict) -> list[str]:
     n = len(case["positions"])
     ok = lambda i: type(i) is int and 0 <= i < n
@@ -152,7 +157,8 @@ def _proof_errors(f: str, case: dict, entry: dict) -> list[str]:
     elif not weighed(entry) and entry.get("advantages"):
         errs.append(f"{f}: advantages weigh proofs; record the proofs")
     for k, what in (("proofs", "a proof"), ("advantages", "an advantage")):
-        if len(distinct(entry.get(k, []))) != len(entry.get(k, [])):
+        ids = [{i: x.get(i) for i in _IDENTITY[k]} for x in entry.get(k, [])]
+        if len(distinct(ids)) != len(ids):
             errs.append(f"{f}: {what} is recorded twice")
     if not errs:
         ps = case["positions"]
