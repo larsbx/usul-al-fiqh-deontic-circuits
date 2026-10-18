@@ -46,3 +46,4 @@ Steps 1 and 2 come first: each can change a ruling. Step 3 next: it can certify 
 - Step 4b (PR-36): murajjiḥ domains in `Usul.Tarjih` and its Python mirror; only q159.f035's rejected `dariHadd`, applied between qiyāsāt, falls outside, changing the `all` policy only.
 - Step 5 (PR-37): delivered by PR #92's position receipts; a regression test pins the audit's reversal.
 - Step 6 (PR-38): qāʿida-grouped routing recall is the headline, with within-qāʿida and unseen-qāʿida splits and each split's prior.
+- Step 7 (PR-39): stale figures corrected from the reports; `make generated` checks the fatawā takhrīj report and the type-aware routing report.
