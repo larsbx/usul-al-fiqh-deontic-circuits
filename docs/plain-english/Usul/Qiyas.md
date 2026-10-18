@@ -9,7 +9,7 @@ Qiyās (analogy) is sound when the ruling depends only on the ʿilla (ratio): a 
 - **`Wasf`**: a description (waṣf), a yes/no feature of cases.
 - **`Known`**: cases whose ruling is given by text (naṣṣ) or consensus (ijmāʿ).
 - **`Agrees H known`**: ruling H matches every given case.
-- **Factors H w**: H depends only on w. Cases alike in w get the same ruling.
+- **`Factors H w`**: H depends only on w. Cases alike in w get the same ruling.
 
 ## 2. Establishing the ʿilla: ṭard and dawarān
 
