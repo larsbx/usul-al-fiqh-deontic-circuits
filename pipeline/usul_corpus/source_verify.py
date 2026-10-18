@@ -38,34 +38,57 @@ def excerpts(corpus: Path):
                    "ref": item["ref"], "excerpt_ar": item["excerpt_ar"]}
 
 
+_MARKUP = re.compile(r"PageV\d+P\d+|ms\d+|[#~|]")
+_NEGATION = re.compile(r"(?<![ء-ي])(لا|لم|لن|ليس|ليست|ما|غير)[\s(«\"“]*\Z")
+
+
+def _plain(s: str) -> str:
+    """Witness text as read: markup to spaces, diacritics and invisibles gone, presentation forms unfolded."""
+    return "".join(map(arabic._unfold, arabic._INVISIBLE.sub("", arabic._DIACRITICS.sub("", _MARKUP.sub(" ", s)))))
+
+
+def _edge(text: str, start: int, end: int) -> str | None:
+    """Why an occurrence at text[start:end] misquotes its surroundings, if it does."""
+    before, after = _plain(text[max(0, start - 60):start]), _plain(text[end:end + 160])
+    if before and arabic.is_letter(before[-1]):
+        return "quotation starts mid-word"
+    if after and arabic.is_letter(after[0]):
+        return "quotation ends mid-word"
+    if neg := _NEGATION.search(before):
+        return f"quotation drops the negation «{neg[1]}» before it"
+    if nusus.qualified(after):
+        return "quotation stops before qualifier at declared page"
+    return None
+
+
 def check_quote(text: str, excerpt: str, locator: str) -> str | None:
     """Match an occurrence ending at the declared closing-page marker.
 
     Like arabic.locate, compare arabic.quote_key: Arabic letters (including
-    negations) and standalone numerals, ignoring punctuation, diacritics, page
-    markers and footnote anchors. Unlike locate, search every occurrence so a
-    repeated passage cannot borrow the first occurrence's page or qualifier.
+    negations, and presentation forms as their letters) and standalone numerals,
+    ignoring punctuation, diacritics, page markers and footnote anchors. Unlike
+    locate, search every occurrence so a repeated passage cannot borrow the
+    first occurrence's page or qualifier. Each occurrence must start and end on
+    a word boundary, keep a negation just before it, and not stop before a
+    qualifier: markup cannot hide any of these.
     """
-    needle = arabic.quote_key(excerpt)
     if not arabic.letters(excerpt):
         return "empty Arabic quotation"
+    if bad := arabic.stray(excerpt):
+        return f"letters outside the quotation key: {bad}"
+    needle = arabic.quote_key(excerpt)
     text, indices, flat = arabic._indexed(text)
     start = flat.find(needle)
-    matched = []
+    found = []
     while start >= 0:
         end = indices[start + len(needle) - 1] + 1
         page = arabic._PAGE.search(text, end)
         if page and locator == f"v{page[1]}:p{page[2]}":
-            # Page and paragraph markup cannot hide an immediately following qayd.
-            tail = re.sub(r"PageV\d+P\d+|ms\d+|[#~|]", " ", text[end:end + 160])
-            tail = arabic._DIACRITICS.sub("", tail)
-            matched.append(bool(nusus.QUALIFIER.match(tail)))
+            found.append(_edge(text, indices[start], end))
         start = flat.find(needle, start + 1)
-    if not matched:
+    if not found:
         return "quotation absent at declared page"
-    if any(matched):
-        return "quotation stops before qualifier at declared page"
-    return None
+    return next((e for e in found if e), None)
 
 
 def required_witnesses(corpus: Path) -> set[str]:
@@ -127,7 +150,7 @@ def locked_text(wid: str, witness: dict, lock: dict, corpus: Path, cache: Path,
 
 def verify(corpus: Path, cache: Path, fetch_source: bool = False) -> dict:
     report = {"schema_version": 1, "scope": "reconciliation-and-foundation-witnesses-v2",
-              "comparison": "Arabic letters and standalone numerals; exact letter forms; closing-page locator",
+              "comparison": "Arabic letters and standalone numerals; exact letter forms; whole words, no dropped negation before or qualifier after; closing-page locator",
               "status": "failed", "witnesses": [], "checks": [], "errors": [],
               "outside_scope": ["JSONL records and non-ref quotation fields", "Quran aya, hadith number and Albani verdict replay (witnesses provisioned here; replayed by test_nusus.py)",
                                 "interpretive relevance, formal correctness and scholarly validation"]}
