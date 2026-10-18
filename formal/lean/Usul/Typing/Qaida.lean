@@ -458,7 +458,7 @@ structure Sadi59 where
   context : Option (Usul.Sadi.Context) := none
   ahd : Option (Bool) := none
 
-/-! ## Ibn Rajab's qawāʿid read by the parallel shards (RajabA1–A16) -/
+/-! ## Ibn Rajab's qawāʿid read by the parallel shards (RajabA1–A25) -/
 
 /-- Ibn Rajab 53 «من تصرف في عين تعلق بها حق لله تعالى أو لآدمي معين إن كان الحق مستقرا فيها بمطالبة من له الحق بحقه أو يأخذه بحقه لم ينفذ التصرف ولم يوجد سوى تعلق الحق لاستيفائه منها صح التصرف على ظاهر المذهب، وقياس قول أبي بكر لا يصح …». Read by `attached_right_disposal`. -/
 structure Rajab53 where
