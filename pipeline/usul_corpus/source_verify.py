@@ -1,7 +1,9 @@
 """Fail-closed replay of a declared subset, using the existing registry and locks.
 
-The required subset is every witness cited by the active reconciliation ledger, and every witness
-the textual foundation (`nusus/foundation.json`) is checked against in test_nusus.py.
+The required subset is every witness cited by the active reconciliation ledger, every witness the
+textual foundation (`nusus/foundation.json`) is checked against in test_nusus.py, and every text witness
+the dossier and the ḥadīth methodology cite (PR-40). A DOC or PDF witness stays excluded until its text
+derivation is pinned.
 All paged ref/excerpt pairs in corpus JSON using those witnesses are replayed.
 Other references are inventoried as excluded, never silently counted as passes.
 This is source fidelity under the existing Arabic-letters comparison, not review.
@@ -103,7 +105,16 @@ def required_witnesses(corpus: Path) -> set[str]:
             ids.add(match[1])
     if not ids:
         raise ValueError("required reconciliation evidence set is empty")
-    return ids | nusus.witnesses(corpus)
+    return ids | nusus.witnesses(corpus) | cited_text(corpus, ("dossier", "hadith"))
+
+
+def cited_text(corpus: Path, dirs: tuple[str, ...]) -> set[str]:
+    """The registered text witnesses cited by `src:` refs in the JSON under these corpus directories."""
+    text = {w["id"] for work in json.loads((corpus / "registry.json").read_text(encoding="utf-8"))["works"]
+            for w in work["witnesses"] if w.get("format", "text") == "text"} if (corpus / "registry.json").exists() else set()
+    cited = {m[1] for d in dirs for path in (corpus / d).rglob("*.json")
+             for m in re.finditer(r"src:([a-z0-9-]+)\b", path.read_text(encoding="utf-8"))}
+    return cited & text
 
 
 def _matches(data: bytes, lock: dict) -> bool:
