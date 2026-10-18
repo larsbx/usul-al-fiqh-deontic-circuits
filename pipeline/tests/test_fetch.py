@@ -170,3 +170,9 @@ def test_a_checkpoint_cut_short_resumes_from_its_last_whole_page(monkeypatch, tm
     part.write_bytes(first.encode() + b'{"md": "\xd8')  # a second page whose write was cut short
     assert fetch_mod.fetch(w, tmp_path)["sha256"] == clean["sha256"]
     assert served == [2, 3, 4]
+    # Review (#101): a readable line without its next page is no whole page either.
+    served.clear()
+    (tmp_path / "shamela-1.txt").unlink()
+    part.write_bytes(first.encode() + b'{"md": "page"}\n')
+    assert fetch_mod.fetch(w, tmp_path)["sha256"] == clean["sha256"]
+    assert served == [2, 3, 4]

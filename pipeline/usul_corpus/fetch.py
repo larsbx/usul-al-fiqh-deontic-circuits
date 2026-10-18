@@ -100,7 +100,7 @@ def _checkpoint(part: Path | None) -> list[dict]:
             d = json.loads(line.decode("utf-8"))
         except (UnicodeDecodeError, json.JSONDecodeError):
             break
-        if not (isinstance(d, dict) and isinstance(d.get("md"), str) and (d.get("next") is None or type(d["next"]) is int)):
+        if not (isinstance(d, dict) and isinstance(d.get("md"), str) and "next" in d and (d["next"] is None or type(d["next"]) is int)):
             break
         done.append(d)
     if len(done) != len([l for l in raw if l]):
