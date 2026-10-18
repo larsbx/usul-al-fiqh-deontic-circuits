@@ -278,7 +278,7 @@
                 },
                 "excerpt_ar": {
                   "type": "string",
-                  "minLength": 1
+                  "minLength": 20
                 },
                 "who": {
                   "type": "string"
@@ -288,7 +288,8 @@
                   "minLength": 1
                 }
               }
-            }
+            },
+            "uniqueItems": true
           },
           "advantages": {
             "description": "Murajjiḥāt between two positions' proofs of one tier: stated by a source comparing them, or applied by the bank to properties the proofs show (Usul.Tarjih.Basis).",
@@ -323,7 +324,7 @@
                 },
                 "excerpt_ar": {
                   "type": "string",
-                  "minLength": 1
+                  "minLength": 20
                 },
                 "who": {
                   "type": "string"
@@ -339,7 +340,8 @@
                   ]
                 }
               }
-            }
+            },
+            "uniqueItems": true
           },
           "searched": {
             "type": "string",
