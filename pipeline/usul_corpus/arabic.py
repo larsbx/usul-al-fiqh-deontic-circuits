@@ -153,10 +153,10 @@ def revolume(text: str) -> str:
 
 # The quotation key: Arabic letters, and each standalone numeral as a delimited token in Western
 # digits. A presentation form (the ligature «ﻻ», U+FEFB) keys as its NFKC letters. Recognized markup
-# carries no key: page markers, footnote anchors (digits glued to the preceding word, Shamela's
-# `العلماء1`, or negated in parentheses, `(¬7)`), and the editor's placeholder `(0)` (Ibn Ḥajar's Taʿrīf).
+# carries no key: page markers, and footnote anchors (digits glued to the preceding word, Shamela's
+# `العلماء1`, or negated in parentheses, `(¬7)`).
 _FORMS = "\ufb50-\ufdff\ufe70-\ufefc"
-_QUOTE = re.compile(rf"PageV\d+P\d+|\(¬[0-9٠-٩۰-۹]+\)|\([0٠]\)|(?<![ء-ي\u064b-\u06520-9٠-٩۰-۹])([0-9٠-٩۰-۹]+)|([ء-ي])|([{_FORMS}])")
+_QUOTE = re.compile(rf"PageV\d+P\d+|\(¬[0-9٠-٩۰-۹]+\)|(?<![ء-ي\u064b-\u06520-9٠-٩۰-۹])([0-9٠-٩۰-۹]+)|([ء-ي])|([{_FORMS}])")
 _ARABIC_BLOCKS = re.compile(rf"[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff{_FORMS}]")
 
 

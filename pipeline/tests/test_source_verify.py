@@ -177,11 +177,11 @@ def test_negated_parenthesised_footnote_anchors_are_markup():
         assert gate.check_quote(text, quote, "v03:p1011") is None
 
 
-def test_a_parenthesised_zero_is_an_editorial_placeholder():
-    """Ibn Ḥajar's Taʿrīf marks each rank «الاولى (0) من …»; the excerpt quotes the words, and a real numeral counts."""
-    text = "# على خمس مراتب (0) الاولى (0) من لم يوصف بذلك الا نادرا\nPageV01P013\n# في 3 مواضع\nPageV01P014\n"
-    assert gate.check_quote(text, "الاولى من لم يوصف بذلك الا نادرا", "v01:p013") is None
-    assert "absent" in gate.check_quote(text, "في 4 مواضع", "v01:p014")
+def test_a_parenthesised_zero_is_a_numeral():
+    """Review (#104): «(0)» keys as a numeral in every witness; the Taʿrīf's rank excerpts quote it verbatim."""
+    text = "# على خمس مراتب (0) الاولى (0) من لم يوصف بذلك الا نادرا\nPageV01P013\n# المبلغ (0) درهم\nPageV01P014\n"
+    assert gate.check_quote(text, "الاولى (0) من لم يوصف بذلك الا نادرا", "v01:p013") is None
+    assert "absent" in gate.check_quote(text, "المبلغ درهم", "v01:p014")
 
 
 def test_page_break_does_not_hide_a_qualifier():
