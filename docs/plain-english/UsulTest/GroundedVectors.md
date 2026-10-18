@@ -26,7 +26,7 @@ Each entry in `groundedVectors` is (name, n, attacks, expected grounded set).
 
 ## 3. Random vectors (40)
 
-`random_00` to `random_39` are seeded random frameworks of 1 to 7 arguments. They cover empty results, self-attacks, cycles and long defence chains. For example, `random_22` has seven arguments and eleven attacks, and only argument 6 survives.
+`random_00` to `random_39` are seeded random frameworks of 1 to 7 arguments. They cover empty results, self-attacks, cycles and defence chains. For example, `random_22` has seven arguments and eleven attacks, and only argument 6 survives.
 
 ## 4. The check
 

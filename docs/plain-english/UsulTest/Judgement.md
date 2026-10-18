@@ -2,7 +2,7 @@
 
 Source: [`formal/lean/UsulTest/Judgement.lean`](../../../formal/lean/UsulTest/Judgement.lean)
 
-A legal judgement answers a specific question about a specific act and subject, and must rest on a dalīl (proof). These checks guard that shape: what khiṭāb (form of address) each status answers, what validity means, and when a judgement is well-typed. Liability and permissibility answer different questions, so they never conflict.
+A legal judgement answers a specific question about a specific act and subject, and must rest on a dalīl (proof). These checks guard that shape: what khiṭāb (form of address) each status answers, what validity means, and when a judgement is well-typed. Liability and taklīfī status answer different questions, so they never conflict.
 
 ## 1. The khiṭāb of each status
 
@@ -38,4 +38,4 @@ A legal judgement answers a specific question about a specific act and subject, 
 
 ## In one line
 
-A child who breaks a vessel can be liable without the act being ḥarām for him: different questions, different addressees, no contradiction.
+A child who breaks a vessel can be liable without the act being ḥarām for him: different questions, different kinds of address, no contradiction.
